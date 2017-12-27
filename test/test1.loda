@@ -1,0 +1,9 @@
+mov u,n
+mov v,n
+sub u,1
+sub v,u
+mov w,1
+lpb v
+ sub v,1
+  sub w,1
+lpe
