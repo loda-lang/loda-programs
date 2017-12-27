@@ -1,0 +1,38 @@
+mov m,0
+mov n,2
+
+lpb m,n
+
+  mov m_minus_one,m
+  sub m_minus_one,1
+
+  mov n_minus_one,n
+  sub n_minus_one,1
+
+  mov m_is_not_zero,m
+  sub m_is_not_zero,m_minus_one
+
+  mov n_is_not_zero,n
+  sub n_is_not_zero,n_minus_one
+
+  mov n_is_zero,1
+  mov n_tmp,n_is_not_zero
+  lpb n_tmp
+    sub n_is_zero,1
+    sub n_tmp,1
+  lpe
+
+  mov m_tmp,m_is_not_zero
+  mov n_tmp,n_is_zero
+  lpb m_tmp
+    lpb n_tmp
+      sub m,1
+      mov n,1
+      sub n_tmp,1
+    lpe
+    sub m_tmp,1
+  lpe
+
+  sub n,1
+
+lpe
