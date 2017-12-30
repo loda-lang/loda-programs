@@ -1,12 +1,12 @@
-mov n,6
+mov $0,6
 
-mov f1,0
-mov f2,1
-lpb n
-  mov f,f1
-  add f,f2
-  mov f1,f2
-  mov f2,f
-  sub n,1
+mov $1,0
+mov $2,1
+lpb $0
+  mov $3,$1
+  add $3,$2
+  mov $1,$2
+  mov $2,$3
+  sub $0,1
 lpe
-mov f,f2
+mov $3,$2
