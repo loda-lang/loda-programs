@@ -1,4 +1,4 @@
-mov $0,6
+mov $0,6	         ; foo
 
 mov $1,0
 mov $2,1
