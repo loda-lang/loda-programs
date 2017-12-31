@@ -5,29 +5,29 @@
 ;   $1 = n
 ;
 ; Output:
-;   $3 = A(i,n)
+;   $2 = A(i,n)
 ;
 ; Temporary:
-;   $4 = j
-;   $5 = value
-;   $6 = transferring
-;   $7..$(7+i) = diff (array)
-;   $(8+i)..$(8+2i) = next (array)
+;   $3 = j
+;   $4 = transferring
+;   $5..$(6+i) = diff (array)
+;   $(7+i)..$(8+2i) = next (array)
 
 
-mov $0,5
-mov $1,7
+mov $0,5      ; i := 5
+mov $1,7      ; n := 7
 
-mov $4,$0     ; j := i
-lpb 4,1       ; j := i..1
-  add $4,7
-  mov $$4,1   ; diff[j] := 1
-  add $4,$0
-  mov $$4,0   ; next[j] := 0
-  sub $4,$0
-  sub $4,8
+mov $3,$0     ; j := i
+add $3,1      ; j := i+1
+lpb 3,1       ; j := i+1..1
+  add $3,5
+  mov $$3,1   ; diff[j] := 1
+  add $3,$0
+  mov $$3,9   ; next[j] := 9
+  sub $3,$0
+  sub $3,6
 lpe
-add $8,$1     ; diff[0] := n + 1
+add $8,$1     ; diff[0] := n+1
 
 
 
