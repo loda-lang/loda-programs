@@ -37,10 +37,10 @@ lpe           ; end for
 add $6,$1     ; diff[0] = n+1
 
 ; main loop
-lpb $6,$3     ; begin of descent loop over diff array
+lpb $7,$3     ; begin of descent loop over diff array
 
-  ; update A using next array
-  mov $4,7
+  ; update A
+  mov $4,8
   add $4,$0
   add $4,$0
   mov $2,$$4
