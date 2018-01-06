@@ -47,7 +47,6 @@ lpb $7,$3     ; begin of descent loop over diff array
   add $2,1    ; A = next[i]+1
 
   mov $4,$3   ; j = i+1
-  mov $6,0    ; stop = 0
   lpb $4,1    ; for j = i+1..1 do
 
     add $4,6  ;
@@ -55,7 +54,20 @@ lpb $7,$3     ; begin of descent loop over diff array
     mov $5,$$4 ; k = diff[j]
     mov $6,$$4 ; stop = diff[j]
     sub $6,1   ; stop = diff[j]-1
+    sub $5,$6
+    mov $6,1   ; stop = 1
+    lpb $5,1   ; if k > 0
+      
+      mov $$4,$2 ; diff[j] = A
+      mov $6,$4
+      add $6,$0  ;
+      add $6,1   ;
+      sub $$4,$$6 ; diff[j] = A - next[j]
 
+      mov $6,0   ; stop = 0
+      
+      sub $5,1
+    lpe
     
     sub $$4,1 ;   diff[j]--
     add $4,$0 ;
