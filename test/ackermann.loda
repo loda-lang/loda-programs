@@ -11,9 +11,11 @@
 ;   $3 = i+1
 ;   $4 = j
 ;   $5 = k
-;   $6 = stop
-;   $7..$(7+i) = diff (array)
-;   $(8+i)..$(9+2i) = next (array)
+;   $6 = s
+;   $7 = t
+;   $8 = a
+;   $9..$(9+i) = diff (array)
+;   $(10+i)..$(11+2i) = next (array)
 
 ; set arguments
 mov $0,3      ; i = 3
@@ -26,21 +28,21 @@ add $3,1      ; $3 = i+1
 ; initialize diff and next arrays
 mov $4,$3     ; j = i+1
 lpb $4,1      ; for j = i+1..1 do
-  add $4,6    ;
+  add $4,8    ;
   mov $$4,1   ;   diff[j] = 1
   add $4,$0   ;
   add $4,1    ;
   mov $$4,0   ;   next[j] = 0
   sub $4,$0   ;
-  sub $4,8    ;   j--
+  sub $4,10   ;   j--
 lpe           ; end for
-add $7,$1     ; diff[0] = n+1
+add $9,$1     ; diff[0] = n+1
 
 ; main loop
-lpb $7,$3     ; begin of descent loop over diff array
+lpb $9,$3     ; begin of descent loop over diff array
 
   ; update A
-  mov $4,8
+  mov $4,10
   add $4,$0
   add $4,$0
   mov $2,$$4
@@ -49,32 +51,39 @@ lpb $7,$3     ; begin of descent loop over diff array
   mov $4,$3   ; j = i+1
   lpb $4,1    ; for j = i+1..1 do
 
-    add $4,6  ;
+    add $4,8  ;
 
+    ; compute s and t flags
     mov $5,$$4 ; k = diff[j]
-    mov $6,0   ; stop = 0
+    mov $6,0   ; s = 0
+    mov $7,1   ; t = 1
     lpb $5,1   ; if k > 0
-      mov $6,1   ; stop = 1
+      mov $6,1   ; s = 1
+      mov $7,0   ; t = 0
       sub $5,1
     lpe
  
-    ; IF NOT STOP
-    ;  mov $$4,$2 ; diff[j] = A
-    ;  mov $6,$4
-    ;  add $6,$0  ;
-    ;  add $6,1   ;
-    ;  sub $$4,$$6 ; diff[j] = A - next[j]
-
+    lpb $7,1      ; if t = 1
+      mov $$4,$2  ; diff[j] = A
+      mov $6,$4
+      add $6,$0   ;
+      add $6,1    ;
+      sub $$4,$$6 ; diff[j] = A - next[j]
+      sub $7,1    ; t--
+    lpe           ; end if
+ 
+    ; dec diff and inc next
     sub $$4,1 ;   diff[j]--
     add $4,$0 ;
     add $4,1  ;
     add $$4,1 ;   next[j]++
     sub $4,$0 ;
-    sub $4,8  ;   j--
-    
-    lpb $6,1  ; if stop = 1
+    sub $4,10  ;   j--
+
+    ; check s flag
+    lpb $6,1  ; if s = 1
       mov $4,0 ; j = 0
-      sub $6,1 ; stop--
+      sub $6,1 ; s--
     lpe       ; end if
 
   lpe         ; end for
