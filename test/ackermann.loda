@@ -41,6 +41,8 @@ add $9,$1     ; diff[0] = n+1
 ; main loop
 lpb $9,$3     ; begin of descent loop over diff array
 
+  dbg
+
   ; update A
   mov $4,10
   add $4,$0
@@ -79,7 +81,6 @@ lpb $9,$3     ; begin of descent loop over diff array
     add $$4,1 ;   next[j]++
     sub $4,$0 ;
     sub $4,10  ;   j--
-    dbg
 
     ; check s flag
     lpb $6,1  ; if s = 1
