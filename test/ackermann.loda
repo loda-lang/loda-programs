@@ -79,6 +79,7 @@ lpb $9,$3     ; begin of descent loop over diff array
     add $$4,1 ;   next[j]++
     sub $4,$0 ;
     sub $4,10  ;   j--
+    dbg
 
     ; check s flag
     lpb $6,1  ; if s = 1
