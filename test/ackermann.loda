@@ -41,8 +41,6 @@ add $9,$1     ; diff[0] = n+1
 ; main loop
 lpb $9,$3     ; begin of descent loop over diff array
 
-  dbg
-
   ; update A
   mov $8,10
   add $8,$0
@@ -52,6 +50,8 @@ lpb $9,$3     ; begin of descent loop over diff array
 
   mov $4,$3   ; j = i+1
   lpb $4,1    ; for j = i+1..1 do
+
+    dbg
 
     mov $8,8  ;
     add $8,$4 ;
@@ -67,12 +67,12 @@ lpb $9,$3     ; begin of descent loop over diff array
     lpe
  
     lpb $7,1      ; if t = 1
-      mov $$8,$2  ; diff[j] = A
-      mov $6,$8
-      add $6,$0   ;
-      add $6,1    ;
-      sub $$8,$$6 ; diff[j] = A - next[j]
-      sub $7,1    ; t--
+      mov $$8,$2  ;   diff[j] = A
+      mov $5,$8   ;
+      add $5,$0   ;
+      add $5,1    ;
+      sub $$8,$$5 ;   diff[j] = A - next[j]
+      mov $7,0    ;   t = 0
     lpe           ; end if
  
     ; dec diff and inc next
@@ -85,9 +85,10 @@ lpb $9,$3     ; begin of descent loop over diff array
     ; check s flag
     lpb $6,1  ; if s = 1
       mov $4,0 ; j = 0
-      sub $6,1 ; s--
+      mov $6,0 ; s = 0
     lpe       ; end if
 
   lpe         ; end for
+
 
 lpe           ; end of descent loop over diff array
