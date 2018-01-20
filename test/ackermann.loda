@@ -90,5 +90,10 @@ lpb $9,$3     ; begin of descent loop over diff array
 
   lpe         ; end for
 
+  ; check if diff[0] = 0
+  mov $5,1
+  sub $5,$9
+  lpb $5,1
+  lpe
 
 lpe           ; end of descent loop over diff array
