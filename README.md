@@ -3,9 +3,9 @@
 LODA is a minimalistic assembly language that is used as computational
 model. It is key characteristics are:
 
-* the LODA lnuage is **not** Turing-complete, 
-* all LODA programs are guaranteed to halt on every input,
-* it is more expressive that primitive-recursive functions.
+* The LODA language is **not** Turing-complete.
+* All LODA programs are guaranteed to halt on every input.
+* LODA is more expressive that primitive-recursive functions.
 
 The expressive power of LODA can be summarized as:
 

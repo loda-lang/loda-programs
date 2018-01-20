@@ -1,0 +1,15 @@
+; Exponentiation
+;
+; input:
+;   $0 = m
+;   $1 = n
+;
+; output:
+;   $2 = exp(m,n) = m^n
+
+;mov $2,0
+
+;lpb $1,1
+;  mov $3,$1
+;  sub $0,1
+;lpe
