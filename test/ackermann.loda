@@ -17,10 +17,6 @@
 ;   $9..$(9+i) = diff (array)
 ;   $(10+i)..$(11+2i) = next (array)
 
-; set arguments
-mov $0,3      ; i = 3
-mov $1,3      ; n = 3
-
 ; initialize i+1 variable
 mov $3,$0     ; $3 = i
 add $3,1      ; $3 = i+1
@@ -59,8 +55,6 @@ lpb $9,$3     ; begin of descent loop over diff array
 
 
   lpb $4,1    ; for j = i+1..1 do
-
-    dbg
 
     mov $8,8  ;
     add $8,$4 ;
