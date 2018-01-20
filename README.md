@@ -1,45 +1,36 @@
-# cm
+# LODA: Lexicographical Order Descent Assembly
+
+LODA is a minimalistic assembly language that is used as computational
+model. It is key characteristics are:
+
+* the LODA lnuage is **not** Turing-complete, 
+* all LODA programs are guaranteed to halt on every input,
+* it is more expressive that primitive-recursive functions.
+
+The expressive power of LODA can be summarized as:
+
+```
+  primitive recursion < LODA < mu-recursion
+```
+
+Here an example:
 
 ```assembly
-; Ackermann function
+; Fibonacci numbers
 ;
 ; input:
-;   $0 = i
-;   $1 = n
+;   $0 = n
 ;
 ; output:
-;   $2 = A(i,n)
-;
-; temporary variables:
-;   $3 = i+1
-;   $4 = j
-;   $5 = transferring
-;   $6..$(7+i) = diff (array)
-;   $(8+i)..$(9+2i) = next (array)
+;   $1 = fib(n)
 
-; set arguments
-mov $0,3      ; i = 3
-mov $1,3      ; n = 3
-
-; initialize i+1 variable
-mov $3,$0     ; $3 = i
-add $3,1      ; $3 = i+1
-
-; initialize diff and next arrays
-mov $4,$3     ; j = i+1
-lpb $4,1      ; for j = i+1..1 do
-  add $4,5    ;
-  mov $$4,1   ;   diff[j] := 1
-  add $4,$0   ;
-  add $4,1    ;
-  mov $$4,0   ;   next[j] := 0
-  sub $4,$0   ;
-  sub $4,7    ;
-lpe           ; end for
-add $6,$1     ; diff[0] := n+1
-
-; main descent loop 
-; lpb 5,
-
-; lpe
+mov $1,0           ; $1 = fib(0) = 0
+mov $2,1           ; $2 = fib(1) = 1
+lpb $0,1           ; begin descent loop over n 
+  mov $3,$1        ;   $3 = fib(i)
+  add $3,$2        ;   $3 = fib(i)+fib(i+1)
+  mov $1,$2        ;   $1 = new fib(i)
+  mov $2,$3        ;   $2 = new fib(i+1)
+  sub $0,1         ;   n--
+lpe                ; end descent loop over n
 ```
