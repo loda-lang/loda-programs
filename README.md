@@ -5,7 +5,7 @@ model. It is key characteristics are:
 
 * The LODA language is **not** Turing-complete.
 * All LODA programs are guaranteed to halt on every input.
-* LODA is more expressive that primitive-recursive functions.
+* LODA is more expressive than primitive-recursive functions.
 
 The expressive power of LODA can be summarized as:
 
