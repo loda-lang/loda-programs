@@ -1,14 +1,31 @@
 # LODA: Lexicographical Order Descent Assembly
 
 LODA is a minimalistic assembly language that is used as a computational
-model. Programs written in LODA operate on the natural numbers and are guaranteed to halt on every input. Therefore, the language and its inpretation as abstract machine describes a class of _total_ functions on the natural numbers. LODA is more expressive than primitive recursive functions and less expressive than &#956;-recursive functions. It can be used to implement the Ackermann function. Yet, all its programs are guaranteed to halt on every input. The expressive power of LODA can be summarized as:
+model. Programs written in LODA operate on the natural numbers and are guaranteed to halt on every input. Therefore, the language and its interpretation as abstract machine describes a class of _total_ functions on the natural numbers. LODA is more expressive than primitive recursive functions and less expressive than &#956;-recursive functions. The claim that it is more expressive than primitive recursion is shown by implementing the Ackermann function with it.
 
-|                | Primitive recursion | LODA  | &#956;-recursion |
-| -------------- |:-------------------:|:-----:|:----------------:|
-| Always halting |         yes         |  yes  |       no         |
-| Ackermann-ness |         no          |  yes  |       yes        |
+The key characterisitics of LODA are sumarized in the following table.
 
-Here an example:
+|                     | Always halting | Ackermann-ness |
+| -------------------:|:--------------:|:--------------:|
+| Primitive recursion |         yes    |       no       |
+| LODA                |         yes    |       yes      |
+| &#956;-recursion    |         no     |       yes      |
+
+## Language
+
+The LODA language is an assembly language with a minimal set of instructions. Programs operate on memory consisting of an unbounded sequence of registers `$0`,`$1`,`$2`,... each storing a natural number. There are three types of operands supported: constants, direct memory access and indirect memory access. A direct memory access, for example `$5`, reads or writes the value of register #5. An indirect memory access, for example `$$7`, takes the value at register #7 and interpretes it as an address. For instance, if the value of `$7` is 13, then `$$7` accesses register #13.
+
+There are only four instructions in LODA. In the following, let X be a direct or an indirect memory access, and let Y be a constant, a direct or an indirect memory access.
+
+The instruction `add X,Y` updates the register X by adding the value of Y to it. For example, `add $3,42` adds 42 to register #3. Similarily, `add $$5,$7` adds the value of register #7 to the register whose address is stored in register #5.
+
+The instruction `sub X,Y` updates the register X by subtracting the value of Y from it. If the result would be a negative number, the register X is set to 0.
+
+The instructions `lpb X,Y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. X marks the start of that memory region, whereas Y is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If Y is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
+
+## Examples
+
+The following example shows a LODA program for computing the Fibonacci numbers. It uses a lexicographical descent loop over a region of fixed size 1. For combuting the N-th Fibonacci number, we simply count down N in every iteration step.
 
 ```assembly
 ; Fibonacci numbers
@@ -33,7 +50,7 @@ lpb $0,1           ; begin descent loop over n
 lpe                ; end descent loop over n
 ```
 
-Here another example:
+The next example shows a program for calculating an exponentiation. The descent loop is over a memory region of fixed size 2. This corresponds to two nested for-loops.
 
 ```assembly
 ; Exponentiation
@@ -72,7 +89,7 @@ lpb $4,2           ; begin descent loop over i,j
 lpe                ; end descent loop over i,j
 ```
 
-An here comes Ackermann:
+And finally, we present the Ackermann function in LODA. In contrast to the previous programs, the main descent loop in this program is over a memory region whose size depends on one of the parameters. It is based on the algorithm by Grossman and Zeitman [1]. 
 
 ```assembly
 ; Ackermann function
@@ -169,3 +186,12 @@ lpb $9,$3          ; begin descent loop over diff array
 
 lpe                ; end descent loop over diff array
 ```
+
+## Future Work
+
+* Is the LODA language universal, i.e., is it possible to write a LODA program that interprets an arbitrary other LODA program based on some encoding in memory registers?
+* Is it possible to extend the expressive power of LODA _without_ losing the guarantee for termination?
+
+## Bibliography
+
+[1] Jerrold W. Grossman, R. Suzanne Zeitman: _An inherently iterative computation of Ackermann's function_. Theoretical Computer Science, Volume 57, Issues 2-3, May 1988, Pages 327-330.
