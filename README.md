@@ -21,6 +21,8 @@ The instruction `add X,Y` updates the register X by adding the value of Y to it.
 
 The instruction `sub X,Y` updates the register X by subtracting the value of Y from it. If the result would be a negative number, the register X is set to 0.
 
+We define the instruction `mov X,Y` by the two instructions `sub X,X` and `add X,Y`. It means we set a register by first resetting it to 0 and then adding the new value to it. So this is just syntactic sugar.
+
 The instructions `lpb X,Y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. X marks the start of that memory region, whereas Y is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If Y is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
 
 ## Examples
