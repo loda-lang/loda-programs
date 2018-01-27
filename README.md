@@ -1,17 +1,12 @@
 # LODA: Lexicographical Order Descent Assembly
 
-LODA is a minimalistic assembly language that is used as computational
-model. It is key characteristics are:
+LODA is a minimalistic assembly language that is used as a computational
+model. Programs written in LODA operate on the natural numbers and are guaranteed to halt on every input. Therefore, the language and its inpretation as abstract machine describes a class of _total_ functions on the natural numbers. LODA is more expressive than primitive recursive functions and less expressive than &#956;-recursive functions. It can be used to implement the Ackermann function. Yet, all its programs are guaranteed to halt on every input. The expressive power of LODA can be summarized as:
 
-* The LODA language is **not** Turing-complete.
-* All LODA programs are guaranteed to halt on every input.
-* LODA is more expressive than primitive-recursive functions.
-
-The expressive power of LODA can be summarized as:
-
-```
-  primitive recursion < LODA < mu-recursion
-```
+|                | Primitive recursion | LODA  | &#956;-recursion |
+| -------------- |:-------------------:|:-----:|:----------------:|
+| Always halting |         yes         |  yes  |       no         |
+| Ackermann-ness |         no          |  yes  |       yes        |
 
 Here an example:
 
