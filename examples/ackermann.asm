@@ -76,7 +76,7 @@ lpb $9,$3          ; begin descent loop over diff array
       mov $7,0     ;   transfer = 0
     lpe            ; end if
  
-    ; dec diff and inc next
+    ; decrement diff and increment next
     sub $$8,1      ; diff[j]--
     add $8,$0      ;
     add $8,1       ; a = adress of next[j]

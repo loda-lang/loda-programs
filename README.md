@@ -23,7 +23,11 @@ The instruction `sub X,Y` updates the register X by subtracting the value of Y f
 
 We define the instruction `mov X,Y` by the two instructions `sub X,X` and `add X,Y`. It means we set a register by first resetting it to 0 and then adding the new value to it. So this is just syntactic sugar.
 
-The instructions `lpb X,Y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. X marks the start of that memory region, whereas Y is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If Y is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
+The instructions `lpb X,Y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. X marks the start of that memory region, whereas Y is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If Y is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
+
+## Termination
+
+All LODA programs are guaranteed to halt on every input. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
 
 ## Examples
 
@@ -172,7 +176,7 @@ lpb $9,$3          ; begin descent loop over diff array
       mov $7,0     ;   transfer = 0
     lpe            ; end if
  
-    ; dec diff and inc next
+    ; decrement diff and increment next
     sub $$8,1      ; diff[j]--
     add $8,$0      ;
     add $8,1       ; a = adress of next[j]
@@ -189,10 +193,21 @@ lpb $9,$3          ; begin descent loop over diff array
 lpe                ; end descent loop over diff array
 ```
 
+## Implementation
+
+An interpreter for LODA programs written in C++ is available at https://github.com/ckrause/loda.
+
 ## Future Work
 
 * Is the LODA language universal, i.e., is it possible to write a LODA program that interprets an arbitrary other LODA program based on some encoding in memory registers?
 * Is it possible to extend the expressive power of LODA _without_ losing the guarantee for termination?
+
+## Remarks by the Author
+
+If you want to cite LODA, please use the following reference:
+
+Christian Krause: _LODA: Lexicographical Order Descent Assembly v1.0_. Available at https://github.com/ckrause/loda.
+
 
 ## Bibliography
 
