@@ -211,4 +211,5 @@ Christian Krause: _LODA: Lexicographical Order Descent Assembly v1.0_. Available
 ## Bibliography
 
 [1] Jerrold W. Grossman, R. Suzanne Zeitman: _An inherently iterative computation of Ackermann's function_. Theoretical Computer Science, Volume 57, Issues 2-3, May 1988, Pages 327-330.
+
 [2] LODA project at GitHub: https://github.com/ckrause/loda
