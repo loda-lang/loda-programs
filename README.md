@@ -195,7 +195,7 @@ lpe                ; end descent loop over diff array
 
 ## Implementation
 
-An interpreter for LODA programs written in C++ is available at https://github.com/ckrause/loda.
+An interpreter for LODA programs written in C++ is available at GitHub [2]. It is published under the terms of the Apache License 2.0.
 
 ## Future Work
 
@@ -206,9 +206,9 @@ An interpreter for LODA programs written in C++ is available at https://github.c
 
 If you want to cite LODA, please use the following reference:
 
-Christian Krause: _LODA: Lexicographical Order Descent Assembly v1.0_. Available at https://github.com/ckrause/loda.
-
+Christian Krause: _LODA: Lexicographical Order Descent Assembly v1.0_. Available at https://github.com/ckrause/loda/tree/v1.0
 
 ## Bibliography
 
 [1] Jerrold W. Grossman, R. Suzanne Zeitman: _An inherently iterative computation of Ackermann's function_. Theoretical Computer Science, Volume 57, Issues 2-3, May 1988, Pages 327-330.
+[2] LODA project at GitHub: https://github.com/ckrause/loda
