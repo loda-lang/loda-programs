@@ -206,7 +206,7 @@ An interpreter for LODA programs written in C++ is available at GitHub [2]. It i
 
 If you want to cite LODA, please use the following reference:
 
-Christian Krause: _LODA: Lexicographical Order Descent Assembly v1.0_. Available at https://github.com/ckrause/loda/tree/v1.0
+* Christian Krause: _LODA: Lexicographical Order Descent Assembly v1.0_. Available online at https://github.com/ckrause/loda/tree/v1.0
 
 ## Bibliography
 
