@@ -3,32 +3,3 @@
 
 add $1,$$7
 add $1,1
-sub $$6,$7
-sub $$2,$$3
-add $0,$$6
-lpb $$1,$4
-  sub $1,$7
-  add $$1,$$6
-  sub $$4,$$5
-  mov $4,6
-  mov $0,3
-  sub $4,$1
-  mov $$1,$$0
-  add $3,6
-  sub $$7,$$1
-  lpb $$4,3
-    add $2,$0
-  lpe
-  add $6,$4
-  mov $3,$$2
-  mov $6,$1
-  add $3,$3
-  sub $5,$$6
-  mov $$7,$5
-  sub $6,$$5
-lpe
-mov $5,$$5
-add $$7,$$0
-mov $0,$2
-mov $3,$$2
-mov $6,$$6
