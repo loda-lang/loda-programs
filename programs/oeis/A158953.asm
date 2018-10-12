@@ -3,8 +3,7 @@
 
 add $0,$0
 add $0,$0
-add $0,4
+add $0,3
 add $0,$0
 add $0,$0
-sub $0,4
 add $1,$0
