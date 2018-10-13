@@ -4,12 +4,6 @@
 add $0,$0
 add $0,$0
 add $0,2
-mov $1,$0
-mov $$0,$0
-lpb $$0,$$7
-  mov $2,$0
-  add $0,$$4
-lpe
-add $$0,$2
-add $1,$$0
-add $1,$$0
+add $1,$0
+add $0,$0
+add $1,$0
