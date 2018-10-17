@@ -3,8 +3,7 @@
 
 add $0,$0
 add $0,$0
-add $5,$0
 mov $1,$0
 add $0,$0
-add $0,5
 add $1,$0
+add $1,5
