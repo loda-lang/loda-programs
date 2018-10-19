@@ -3,16 +3,8 @@
 
 add $0,$0
 add $0,$0
-add $3,$0
-add $1,3
-add $0,$0
-add $0,$0
-add $0,$1
-add $0,7
-sub $1,5
-add $0,$3
-add $1,2
 add $1,$0
-mov $6,5
-add $7,4
-sub $0,$1
+add $0,3
+add $0,$0
+add $0,$0
+add $1,$0

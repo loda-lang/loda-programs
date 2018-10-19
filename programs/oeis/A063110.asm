@@ -4,11 +4,8 @@
 add $0,$0
 add $0,$0
 add $0,$0
-mov $$0,$0
-add $$5,$$7
-sub $$6,1
-lpb $5,$$7
-  mov $7,4
-lpe
-add $1,$$6
-add $1,5
+add $5,$0
+add $0,$5
+add $$5,1
+add $$1,4
+add $1,$$2
