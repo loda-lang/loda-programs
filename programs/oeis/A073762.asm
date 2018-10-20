@@ -3,10 +3,9 @@
 
 add $0,$0
 add $0,$0
+add $0,2
 add $0,$0
-mov $1,5
-mov $$1,3
 add $1,$0
-add $$4,$$7
-add $$2,7
-add $1,$0
+add $7,1
+add $0,$0
+add $$7,$0
