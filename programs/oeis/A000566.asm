@@ -4,8 +4,8 @@
 add $0,$0
 add $0,$0
 add $5,$0
-lpb $4,$$7
+lpb $4,$0
   sub $5,4
-  sub $$2,3
-  add $1,$$6
+  sub $0,3
+  add $1,$0
 lpe

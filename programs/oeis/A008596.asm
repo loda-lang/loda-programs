@@ -3,6 +3,6 @@
 
 add $0,$0
 lpb $0,1
-  sub $$5,1
+  sub $0,1
   add $1,7
 lpe
