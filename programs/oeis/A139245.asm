@@ -3,9 +3,8 @@
 
 add $0,$0
 add $0,$0
-add $1,$0
+mov $1,$0
 add $0,$0
-add $0,5
-sub $0,3
 add $0,$0
 add $1,$0
+add $1,4

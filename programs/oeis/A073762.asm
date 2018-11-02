@@ -3,9 +3,8 @@
 
 add $0,$0
 add $0,$0
-add $0,2
 add $0,$0
 add $1,$0
-add $7,1
+add $0,6
 add $0,$0
-add $$7,$0
+add $1,$0
