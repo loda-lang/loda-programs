@@ -3,10 +3,9 @@
 
 add $0,$0
 add $0,$0
-add $5,3
-add $0,$5
-add $1,$0
+add $0,3
+mov $4,$0
 add $0,$0
+add $0,$0
+add $0,$4
 add $1,$0
-mov $$1,$0
-add $1,$$1

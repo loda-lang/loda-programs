@@ -4,8 +4,7 @@
 add $0,$0
 add $0,$0
 add $0,$0
-add $5,$0
-add $0,$5
-add $$5,1
-add $$1,4
-add $1,$$2
+add $0,$0
+add $$0,1
+mov $1,$$4
+add $1,4

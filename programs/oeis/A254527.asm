@@ -4,14 +4,10 @@
 add $0,$0
 add $0,$0
 add $0,4
-mov $3,6
-mov $5,$0
-mov $$5,2
-add $0,$$6
-lpb $5,4
-  add $1,$$5
-  mov $6,$$7
-  sub $0,4
-  sub $$0,$1
-  sub $5,$$4
+add $4,1
+add $0,$0
+mov $1,2
+lpb $0,$0
+  sub $$3,4
+  add $1,$0
 lpe
