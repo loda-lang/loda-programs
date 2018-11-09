@@ -3,10 +3,8 @@
 
 add $0,3
 add $0,$0
-add $6,$0
-lpb $4,4
-  mov $$5,6
-  sub $$0,1
-  add $1,$6
-lpe
 add $1,7
+lpb $0,1
+  sub $0,1
+  add $1,$0
+lpe
