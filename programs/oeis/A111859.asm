@@ -1,0 +1,13 @@
+; A111859: Number of numbers m <= n such that 9 equals the first digit after decimal point of square root of n in decimal representation.
+; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5
+
+add $0,3
+lpb $0,1
+  mov $1,$2
+  add $2,2
+  sub $0,$1
+  add $4,1
+  sub $0,1
+lpe
+sub $1,$4
+sub $1,4
