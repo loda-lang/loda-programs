@@ -8,7 +8,5 @@ lpe
 add $$2,$$1
 mov $4,$0
 add $$4,1
-mov $$2,$2
-mov $3,0
 mov $$2,1
 mov $$0,$4

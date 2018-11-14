@@ -3,13 +3,10 @@
 
 add $0,$0
 mov $1,$0
-sub $0,$0
 add $1,$1
 mov $$1,7
-mov $7,$$6
 sub $$1,6
 add $$4,5
-mov $6,7
 mov $$3,$4
 mov $2,$$1
 add $$4,3

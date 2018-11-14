@@ -8,7 +8,4 @@ sub $0,$$6
 add $1,5
 mov $6,5
 sub $1,$0
-add $3,$0
 add $1,$6
-mov $0,$$3
-mov $3,3

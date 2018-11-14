@@ -4,7 +4,6 @@
 add $0,$0
 add $0,$0
 add $0,$0
-mov $4,6
 sub $0,1
 lpb $$7,1
   sub $$2,5

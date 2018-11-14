@@ -5,10 +5,6 @@ lpb $$4,$$4
   mov $3,$$3
   sub $$6,2
 lpe
-add $2,4
-add $0,4
-add $2,$$7
-sub $0,$$1
 mov $1,$3
 mov $3,1
 add $$5,$3

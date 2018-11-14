@@ -8,9 +8,4 @@ lpb $$3,4
   sub $4,$3
   sub $$2,1
 lpe
-lpb $$2,$0
-  lpb $2,3
-    add $3,$$0
-  lpe
-lpe
 add $1,$$4

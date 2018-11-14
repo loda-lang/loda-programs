@@ -5,7 +5,6 @@ add $0,$0
 add $0,$0
 add $0,$0
 add $0,7
-mov $2,$0
 add $1,$0
 add $0,$0
 add $1,$0

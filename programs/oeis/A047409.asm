@@ -5,7 +5,6 @@ mov $1,$0
 sub $0,$$0
 add $1,$0
 add $4,$0
-mov $3,$4
 lpb $3,$0
   sub $$4,1
   sub $4,4

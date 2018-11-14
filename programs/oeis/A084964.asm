@@ -9,4 +9,3 @@ lpb $$4,1
     sub $$4,$$0
   lpe
 lpe
-mov $$2,1

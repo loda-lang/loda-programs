@@ -5,11 +5,8 @@ mov $4,$0
 mov $0,4
 add $2,$4
 mov $1,3
-add $$2,$0
 add $2,$$2
 mov $$4,1
 add $$2,$4
-add $3,$2
 mov $$0,1
-sub $3,2
 add $$4,3

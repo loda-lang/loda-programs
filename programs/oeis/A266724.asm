@@ -9,16 +9,12 @@ mov $7,$$5
 mov $1,$$5
 add $3,7
 sub $$7,$$0
-add $$4,3
 mov $$6,$$7
 lpb $$3,1
-  sub $$5,4
   mov $5,$7
   sub $7,4
-  add $6,$$1
 lpe
 lpb $$5,1
   mov $1,$$1
 lpe
-mov $2,$5
 add $$5,$5
