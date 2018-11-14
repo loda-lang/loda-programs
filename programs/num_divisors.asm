@@ -1,7 +1,7 @@
-; Number of divisors
+; Number of divisors (A000005)
+; 1,2,2,3,2,4,2,4,3,4,2,6,2,4,4,5,2,6,2,6,4,4,2,8,3,4,4,6,2,8,2,6,4,4,4,9,2,4,4,8,...
 ; input:
 ;   $0 = n
-;
 ; output:
 ;   $1 = num_divisors(n)
 

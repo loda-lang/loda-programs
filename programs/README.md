@@ -1,9 +1,9 @@
 # LODA Examples
 
-* [fibonacci](fibonacci.asm): Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1
-* [exponentiation](exponentiation.asm): Exponentiation: E(m,n) = m^n
-* [ackermann](ackermann.asm): Ackermann function
-* [num_divisors](num_divisors.asm): Number of divisors
+* [Fibonacci numbers](fibonacci.asm)
+* [Exponentiation](exponentiation.asm)
+* [Ackermann function](ackermann.asm)
+* [Number of divisors](num_divisors.asm)
 
 # Integer Sequences from the OEIS
 
