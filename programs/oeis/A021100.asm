@@ -7,7 +7,6 @@ sub $$4,$2
 add $$4,1
 mov $2,$$3
 lpb $$2,$3
-  add $3,4
   mov $1,4
   add $$1,4
   add $2,2
