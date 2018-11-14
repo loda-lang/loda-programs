@@ -1,9 +1,7 @@
-; Exponentiation
-;
+; Exponentiation: E(m,n) = m^n
 ; input:
 ;   $0 = m
 ;   $1 = n
-;
 ; output:
 ;   $2 = exp(m,n) = e = m^n
 

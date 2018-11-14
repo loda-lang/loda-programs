@@ -90,8 +90,8 @@ The following example shows a LODA program for computing the Fibonacci numbers. 
 
 ```assembly
 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-; A shorter version can be found in [programs/oeis/A000045.asm](blob/master/programs/oeis/A000045.asm).
-; 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,...
+; A shorter version can be found in programs/oeis/A000045.asm
+; 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,...
 ; input:
 ;   $0 = n
 ; output:
