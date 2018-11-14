@@ -1,7 +1,7 @@
 # LODA: Lexicographical Order Descent Assembly
 
 LODA is a minimalistic assembly language that is used as a computational
-model. Programs written in LODA operate on the natural numbers and are guaranteed to halt on every input. Therefore, the language and its interpretation as abstract machine describes a class of _total_ functions on the natural numbers. LODA is more expressive than primitive recursive functions and less expressive than &#956;-recursive functions. The claim that it is more expressive than primitive recursion is shown by implementing the Ackermann function with it.
+model. Programs written in LODA operate on the natural numbers and are guaranteed to halt on every input. Therefore, the language and its interpretation as abstract machine describes a class of _total_ functions on the natural numbers. LODA is more expressive than primitive recursive functions and less expressive than &#956;-recursive functions. The claim that it is more expressive than primitive recursion can be shown by implementing the Ackermann function with it.
 
 The key characterisitics of LODA are sumarized in the following table.
 
@@ -10,6 +10,61 @@ The key characterisitics of LODA are sumarized in the following table.
 | Primitive recursion |         yes    |       no       |
 | LODA                |         yes    |       yes      |
 | &#956;-recursion    |         no     |       yes      |
+
+## Tool
+
+The LODA command-line tool is written in C++ and is published under the terms of the
+Apache License 2.0. It provides the following commands and options:
+
+```
+Usage:       loda <command> <options>
+Commands:
+  eval       Evaluate a program to a sequence
+  optimize   Optimize a program and print it
+  insert     Insert a program into the database
+  generate   Generate random programs and store them in the database
+  search     Search a program in the database
+  programs   Print all program in the database
+  sequences  Print all sequences in the database
+  test       Run test suite
+  help       Print this help text
+General options:
+  -l         Log level (values: debug, info, warn, error)
+  -t         Number of sequence terms (default: 40)
+Generator options:
+  -c         Maximum number of interpreter cycles (default: 10000)
+  -m         Maximum number of memory cells (default: 100000)
+  -n         Maximum constant (default: 4)
+  -o         Operation types (default: asml)
+  -a         Operand types (default: cdi)
+  -e         Program template
+  -p         Number of operations per program (default: 40)
+```
+
+### Evaluating a Program to an Integer Sequence
+
+```
+./loda eval programs/fibonacci.asm
+
+0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765,10946,17711,28657,46368,75025,121393,196418,317811,514229,832040,1346269,2178309,3524578,5702887,9227465,14930352,24157817,39088169,63245986
+```
+
+### Mining Programs for Integer Sequences from the OEIS
+
+You need to download the following files from the OEIS and unpack them in the LODA
+root directory:
+
+* https://oeis.org/stripped.gz
+* https://oeis.org/names.gz
+
+After that, you can mine programs for integer sequences by running the following command:
+
+```
+./loda generate
+```
+
+Found programs are written to `programs/oeis`. Existing programs are overriden if the new
+program is shorter than the existing one.
 
 ## Language
 
@@ -34,37 +89,32 @@ All LODA programs are guaranteed to halt on every input. An infinite loop cannot
 The following example shows a LODA program for computing the Fibonacci numbers. It uses a lexicographical descent loop over a region of fixed size 1. For combuting the N-th Fibonacci number, we simply count down N in every iteration step.
 
 ```assembly
-; Fibonacci numbers
-;
+; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+; A shorter version can be found in [programs/oeis/A000045.asm](blob/master/programs/oeis/A000045.asm).
+; 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,...
 ; input:
 ;   $0 = n
-;
 ; output:
 ;   $1 = fib(n)
 
 mov $1,0           ; f = fib(0) = 0
 mov $2,1           ; g = fib(1) = 1
-
 lpb $0,1           ; begin descent loop over n 
-
   mov $3,$1        ;   h = f
   add $3,$2        ;   h = f + g
   mov $1,$2        ;   f = g
   mov $2,$3        ;   g = h
   sub $0,1         ;   n = n - 1
-
 lpe                ; end descent loop over n
 ```
 
 The next example shows a program for calculating an exponentiation. The descent loop is over a memory region of fixed size 2. This corresponds to two nested for-loops.
 
 ```assembly
-; Exponentiation
-;
+; Exponentiation: E(m,n) = m^n
 ; input:
 ;   $0 = m
 ;   $1 = n
-;
 ; output:
 ;   $2 = exp(m,n) = e = m^n
 
@@ -192,10 +242,6 @@ lpb $9,$3          ; begin descent loop over diff array
 
 lpe                ; end descent loop over diff array
 ```
-
-## Implementation
-
-An interpreter for LODA programs written in C++ is available at GitHub [2]. It is published under the terms of the Apache License 2.0.
 
 ## Future Work
 
