@@ -88,16 +88,16 @@ All LODA programs are guaranteed to halt on every input. An infinite loop cannot
 
 The following example shows a LODA program for computing the Fibonacci numbers. It uses a lexicographical descent loop over a region of fixed size 1. For combuting the N-th Fibonacci number, we simply count down N in every iteration step.
 
-* [propgrams/fibonacci.asm](blob/master/programs/fibonacci.asm) or
-* [propgrams/oeis/A000045.asm](blob/master/programs/oeis/A000045.asm)
+* [programs/fibonacci.asm](programs/fibonacci.asm) or
+* [programs/oeis/A000045.asm](programs/oeis/A000045.asm)
 
 The next example shows a program for calculating an exponentiation. The descent loop is over a memory region of fixed size 2. This corresponds to two nested for-loops.
 
-* [propgrams/exponentiation.asm](blob/master/programs/exponentiation.asm)
+* [programs/exponentiation.asm](programs/exponentiation.asm)
 
 And finally, we present the Ackermann function in LODA. In contrast to the previous programs, the main descent loop in this program is over a memory region whose size depends on one of the parameters. It is based on the algorithm by Grossman and Zeitman [1]. 
 
-* [propgrams/ackermann.asm](blob/master/programs/ackermann.asm)
+* [programs/ackermann.asm](programs/ackermann.asm)
 
 ## Future Work
 
