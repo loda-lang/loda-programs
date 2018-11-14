@@ -1,9 +1,7 @@
 ; Ackermann function
-;
 ; input:
 ;   $0 = i
 ;   $1 = n
-;
 ; output:
 ;   $2 = ack(i,n)
 ;
