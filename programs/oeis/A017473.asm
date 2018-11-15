@@ -5,5 +5,4 @@ lpb $0,1
   sub $0,1
   add $1,11
 lpe
-add $2,7
-add $1,$2
+add $1,7
