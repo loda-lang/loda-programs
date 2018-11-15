@@ -8,7 +8,6 @@ lpb $0,1
   sub $0,$4
   sub $1,$4
   mov $4,4
-  sub $3,3
   sub $0,$4
   sub $0,1
 lpe
