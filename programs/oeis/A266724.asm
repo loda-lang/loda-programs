@@ -1,19 +1,15 @@
 ; A266724: Number of OFF (white) cells in the n-th iteration of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
 ; 0,1,3,1,7,1,11,1,15,1,19,1,23,1,27,1,31,1,35,1,39,1,43,1,47,1,51,1,55,1,59,1,63,1,67,1,71,1,75,1,79,1,83,1,87,1,91,1,95,1,99,1,103,1,107,1,111,1,115,1,119,1,123,1,127,1,131,1,135,1,139,1
 
-add $0,$0
-add $$0,1
-sub $$5,1
-mov $7,$$5
-mov $1,$$5
-add $3,7
-sub $$7,$$0
-mov $$6,$$7
-lpb $$3,1
-  mov $5,$7
-  sub $7,4
+mov $2,$0
+lpb $0,1
+  sub $0,1
+  add $1,$2
+  sub $2,$2
+  sub $1,$4
+  mov $3,$4
+  mov $4,$1
+  add $3,2
+  mov $1,$3
 lpe
-lpb $$5,1
-  mov $1,$$1
-lpe
-add $$5,$5
+sub $1,1
