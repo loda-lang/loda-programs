@@ -13,32 +13,29 @@ The key characterisitics of LODA are sumarized in the following table.
 
 ## Tool
 
-The LODA command-line tool is written in C++ and is published under the terms of the
-Apache License 2.0. It provides the following commands and options:
+The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0. It provides the following commands and options:
 
 ```
-Usage:       loda <command> <options>
+Usage:             loda <command> <options>
 Commands:
-  eval       Evaluate a program to a sequence
-  optimize   Optimize a program and print it
-  insert     Insert a program into the database
-  generate   Generate random programs and store them in the database
-  search     Search a program in the database
-  programs   Print all program in the database
-  sequences  Print all sequences in the database
-  test       Run test suite
-  help       Print this help text
+  evaluate <file>  Evaluate a program to a sequence
+  optimize <file>  Optimize a program and print it
+  generate         Generate a random program and print it
+  mine             Mine programs for OEIS sequences
+  test             Run test suite
+  help             Print this help text
 General options:
-  -l         Log level (values: debug, info, warn, error)
-  -t         Number of sequence terms (default: 40)
+  -l <string>      Log level (values:debug,info,warn,error)
+  -t <number>      Number of sequence terms (default:40)
+Interpeter options:
+  -c <number>      Maximum number of interpreter cycles (default:10000)
+  -m <number>      Maximum number of used memory cells (default:100000)
 Generator options:
-  -c         Maximum number of interpreter cycles (default: 10000)
-  -m         Maximum number of memory cells (default: 100000)
-  -n         Maximum constant (default: 4)
-  -o         Operation types (default: asml)
-  -a         Operand types (default: cdi)
-  -e         Program template
-  -p         Number of operations per program (default: 40)
+  -p <number>      Maximum number of operations (default:40)
+  -n <number>      Maximum constant (default:4)
+  -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,l:lpb/lpe)
+  -a <string>      Operand types (default:cdi;c:constant,d:direct mem,i:indirect mem)
+  -e <file>        Program template
 ```
 
 ### Evaluating a Program to an Integer Sequence
@@ -60,11 +57,10 @@ root directory:
 After that, you can mine programs for integer sequences by running the following command:
 
 ```
-./loda generate
+./loda mine
 ```
 
-Found programs are written to `programs/oeis`. Existing programs are overriden if the new
-program is shorter than the existing one.
+Found programs are written to `programs/oeis`. Existing programs are overriden if the new program is shorter than the existing one.
 
 ## Language
 
@@ -86,7 +82,7 @@ All LODA programs are guaranteed to halt on every input. An infinite loop cannot
 
 ## Examples
 
-The following example shows a LODA program for computing the Fibonacci numbers. It uses a lexicographical descent loop over a region of fixed size 1. For combuting the N-th Fibonacci number, we simply count down N in every iteration step.
+The following example shows a LODA program for computing the Fibonacci numbers. It uses a lexicographical descent loop over a region of fixed size 1. For computing the N-th Fibonacci number, we simply count down N in every iteration step.
 
 * [fibonacci.asm](programs/fibonacci.asm) or
 * [oeis/A000045.asm](programs/oeis/A000045.asm)
@@ -95,9 +91,11 @@ The next example shows a program for calculating an exponentiation. The descent 
 
 * [exponentiation.asm](programs/exponentiation.asm)
 
-And finally, we present the Ackermann function in LODA. In contrast to the previous programs, the main descent loop in this program is over a memory region whose size depends on one of the parameters. It is based on the algorithm by Grossman and Zeitman [1]. 
+The Ackermann function as a non-primitive recursive function can be expressed in LODA. In contrast to the previous programs, the main descent loop in this program is over a memory region whose size depends on one of the parameters. It is based on the algorithm by Grossman and Zeitman [1]. 
 
 * [ackermann.asm](programs/ackermann.asm)
+
+More programs can be found in the [programs](programs) folder.
 
 ## Future Work
 
