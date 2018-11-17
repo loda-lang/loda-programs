@@ -22,7 +22,6 @@ add $2,$2
 mov $1,$2
 sub $4,1
 sub $1,3
-mov $3,$0
 mov $2,4
 sub $1,4
 sub $2,$4

@@ -5,7 +5,6 @@ add $1,$0
 add $1,1
 sub $0,4
 lpb $0,1
-  sub $0,1
-  sub $0,4
+  sub $0,5
   add $1,2
 lpe

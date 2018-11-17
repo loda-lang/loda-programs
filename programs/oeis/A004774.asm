@@ -3,8 +3,7 @@
 
 add $4,6
 add $1,$0
-sub $0,4
-sub $0,4
+sub $0,8
 lpb $0,1
   sub $0,$4
   add $1,1

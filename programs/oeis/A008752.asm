@@ -14,5 +14,4 @@ lpb $0,1
   sub $0,1
   add $0,2
 lpe
-sub $3,$4
 add $1,1

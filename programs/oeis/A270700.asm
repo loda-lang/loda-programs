@@ -15,14 +15,10 @@ mov $1,$3
 add $2,$1
 add $3,3
 add $4,$0
-mov $0,2
 add $4,2
 sub $2,$3
-sub $0,$3
 add $3,$2
 add $4,$3
 add $4,4
-mov $2,$4
 add $4,$3
-sub $3,$2
 mov $1,$4
