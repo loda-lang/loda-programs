@@ -7,5 +7,4 @@ lpb $$4,1
   add $1,$$1
   sub $0,3
 lpe
-add $1,3
-sub $1,2
+add $1,1
