@@ -3,16 +3,15 @@
 
 mov $2,$0
 lpb $2,1
-  mov $3,2
-  sub $3,$2
-  add $0,4
-  mov $4,4
-  sub $0,3
   lpb $4,1
     sub $4,$3
+    add $0,4
+    sub $2,2
   lpe
-  sub $2,2
-  add $0,$4
+  add $4,$2
+  add $0,$2
+  mov $3,$4
   sub $2,1
+  sub $0,$2
 lpe
 mov $1,$0
