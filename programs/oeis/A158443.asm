@@ -3,17 +3,11 @@
 
 add $0,$0
 mov $2,$0
-mov $4,$0
-add $2,$4
 add $2,2
-mov $3,3
 lpb $2,1
-  lpb $4,1
-    add $4,2
-    add $1,1
-    sub $3,$1
-  lpe
+  add $1,$3
+  add $3,4
   sub $2,1
-  add $3,2
   add $1,$3
 lpe
+sub $1,4

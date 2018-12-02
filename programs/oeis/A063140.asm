@@ -3,16 +3,14 @@
 
 add $0,$0
 add $0,$0
-add $7,1
-add $0,$0
-mov $$7,$0
-add $1,$$7
-add $$6,$$7
-add $$0,5
-add $2,5
-mov $1,$$6
-add $$2,4
-mov $$4,$6
-mov $7,$1
-mov $$7,$$6
-add $1,$5
+mov $2,$0
+add $0,$2
+mov $1,$0
+lpb $0,1
+  sub $0,1
+  add $1,2
+lpe
+mov $2,1
+sub $1,$2
+add $1,4
+add $1,$2
