@@ -9,7 +9,6 @@ add $4,$0
 lpb $2,1
   add $1,$4
   lpb $4,1
-    sub $0,$1
     sub $4,2
     mov $3,4
     sub $4,4

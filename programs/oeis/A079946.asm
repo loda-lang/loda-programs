@@ -6,7 +6,6 @@ add $0,2
 add $4,$0
 mov $2,$0
 lpb $2,1
-  mov $0,$4
   add $3,$3
   lpb $4,1
     mov $2,$0

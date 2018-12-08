@@ -15,7 +15,6 @@ add $4,$4
 add $0,$4
 add $0,$4
 add $3,2
-sub $4,$0
 add $0,$3
 sub $0,3
 sub $1,$2

@@ -4,7 +4,6 @@
 lpb $0,1
   sub $0,3
   add $1,$0
-  sub $4,$4
   sub $0,4
   add $1,$0
   sub $0,3
