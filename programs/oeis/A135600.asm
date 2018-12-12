@@ -4,7 +4,6 @@
 add $1,$0
 add $2,10
 lpb $2,1
-  sub $5,3
   sub $2,1
   add $1,10
 lpe

@@ -10,19 +10,7 @@ lpb $2,1
   mov $3,3
   add $4,$0
   add $1,2
-  lpb $5,1
-    sub $5,$3
-    sub $4,1
-    mov $3,$4
-    sub $4,3
-    mov $3,4
-    sub $1,$2
-  lpe
   sub $3,1
-  lpb $6,1
-    mov $3,1
-    sub $6,$3
-  lpe
   add $0,$2
   sub $2,1
 lpe

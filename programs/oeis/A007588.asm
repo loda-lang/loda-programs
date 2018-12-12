@@ -13,7 +13,6 @@ lpb $2,1
     add $1,$5
   lpe
   add $5,$0
-  sub $6,$0
   add $0,$4
   add $4,3
   sub $2,1
