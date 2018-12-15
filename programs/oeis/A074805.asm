@@ -13,7 +13,6 @@ lpb $2,1
   sub $3,3
   lpb $4,1
     mov $1,$4
-    sub $2,$0
     sub $2,$5
     sub $4,$3
   lpe

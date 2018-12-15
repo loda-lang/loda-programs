@@ -7,9 +7,6 @@ mov $4,1
 add $1,$4
 lpb $2,1
   add $2,5
-  lpb $4,1
-    add $4,$2
-  lpe
   add $3,6
   mov $6,$3
   lpb $6,1
