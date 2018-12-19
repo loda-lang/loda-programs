@@ -3,22 +3,16 @@
 
 add $0,$0
 add $0,2
-add $4,$0
+add $6,$0
 mov $2,$0
+add $3,1
 lpb $2,1
-  add $3,$3
+  mov $4,$0
   lpb $4,1
-    mov $2,$0
-    mov $4,$3
-    mov $1,$3
     sub $4,$3
-    add $3,1
-    add $1,$1
+    add $3,$3
   lpe
-  sub $1,$3
-  add $4,$0
-  sub $2,$1
-  add $1,$0
-  sub $2,1
+  add $3,$6
+  sub $2,$2
 lpe
-add $1,3
+add $1,$3
