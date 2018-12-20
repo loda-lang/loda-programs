@@ -1,0 +1,12 @@
+; A208903: The sum over all bitstrings b of length n with at least two runs of the number of runs in b not immediately followed by a longer run.
+; 0,4,12,32,76,180,412,940,2108,4700,10364,22716,49404,106876,229884,492284,1049596,2229756,4720636,9964540,20975612,44046332,92282876,192950268,402669564,838885372,1744863228,3623927804,7516258300,15569354748,32212385788
+
+mov $2,$0
+lpb $2,1
+  sub $0,2
+  add $5,4
+  add $5,$1
+  add $5,$0
+  mov $1,$5
+  sub $2,1
+lpe
