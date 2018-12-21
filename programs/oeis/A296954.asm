@@ -6,7 +6,6 @@ sub $0,2
 sub $1,$0
 add $4,2
 lpb $0,1
-  sub $3,$3
   sub $0,1
   add $1,$4
   add $1,$1

@@ -5,9 +5,7 @@ add $3,$0
 add $3,$0
 add $0,$3
 add $3,$0
-add $3,4
-mov $0,0
-add $3,1
+add $3,5
 add $1,1
 mov $0,$3
 lpb $0,1

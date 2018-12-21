@@ -8,7 +8,6 @@ add $2,2
 lpb $0,1
   sub $0,1
   add $4,3
-  sub $3,$3
   add $2,$2
 lpe
 add $1,$2

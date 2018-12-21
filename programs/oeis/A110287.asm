@@ -4,6 +4,5 @@
 add $1,17
 lpb $0,2
   sub $0,1
-  mov $6,$0
   add $1,$1
 lpe
