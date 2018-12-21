@@ -1,0 +1,13 @@
+; A267604: Decimal representation of the middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
+; 1,3,6,13,27,55,111,223,447,895,1791,3583,7167,14335,28671,57343,114687,229375,458751,917503,1835007,3670015,7340031,14680063,29360127,58720255,117440511,234881023,469762047,939524095,1879048191,3758096383,7516192767
+
+add $3,2
+lpb $0,1
+  add $1,$1
+  sub $1,$3
+  add $1,2
+  sub $0,1
+  sub $3,1
+lpe
+sub $3,1
+add $1,1
