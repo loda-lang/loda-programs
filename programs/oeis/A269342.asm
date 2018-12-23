@@ -3,13 +3,10 @@
 
 add $2,$0
 add $0,$2
-mov $2,$0
 add $0,2
 mov $4,$0
 sub $4,1
 mov $0,$4
-mov $2,1
-sub $2,3
 lpb $0,1
   add $3,3
   add $1,$3
