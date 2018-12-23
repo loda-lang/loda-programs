@@ -79,6 +79,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A001670](oeis/A001670.asm): n appears n times (n even).
 * [A001787](oeis/A001787.asm): a(n) = n*2^(n-1).
 * [A001792](oeis/A001792.asm): a(n) = (n+2)*2^(n-1).
+* [A001815](oeis/A001815.asm): a(n) = C(n,2) * 2^(n-1).
 * [A001840](oeis/A001840.asm): Expansion of x /((1 - x)^2 * (1 - x^3)).
 * [A001844](oeis/A001844.asm): Centered square numbers: a(n) = 2*n*(n+1)+1. Sums of two consecutive squares. Also, consider all Pythagorean triples (X, Y, Z=Y+1) ordered by increasing Z; then sequence gives Z values.
 * [A001845](oeis/A001845.asm): Centered octahedral numbers (crystal ball sequence for cubic lattice).
@@ -170,6 +171,8 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A004776](oeis/A004776.asm): Numbers n not congruent to 5 (mod 8).
 * [A004919](oeis/A004919.asm): Floor of n*phi^4, where phi is the golden ratio, A001622.
 * [A004960](oeis/A004960.asm): Ceiling of n*phi^5, where phi is the golden ratio, A001622.
+* [A004963](oeis/A004963.asm): Ceiling of n*phi^8, where phi is the golden ratio, A001622.
+* [A004965](oeis/A004965.asm): Ceiling of n*phi^10, where phi is the golden ratio, A001622.
 * [A005009](oeis/A005009.asm): 7*2^n.
 * [A005015](oeis/A005015.asm): 11*2^n.
 * [A005029](oeis/A005029.asm): 13*2^n.
@@ -189,9 +192,11 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A005581](oeis/A005581.asm): a(n) = (n-1)*n*(n+4)/6.
 * [A005586](oeis/A005586.asm): a(n) = n(n+4)(n+5)/6.
 * [A005744](oeis/A005744.asm): G.f.: x*(1+x-x^2)/((1-x)^4*(1+x)).
+* [A005803](oeis/A005803.asm): Second-order Eulerian numbers: a(n) = 2^n - 2*n.
 * [A005818](oeis/A005818.asm): Numbers n that are primitive solutions to n^2 = a^2 + b^2 + c^2 (a,b,c > 0).
 * [A005843](oeis/A005843.asm): The nonnegative even numbers: a(n) = 2n.
 * [A005891](oeis/A005891.asm): Centered pentagonal numbers: (5n^2+5n+2)/2; crystal ball sequence for 3.3.3.4.4. planar net.
+* [A005892](oeis/A005892.asm): Truncated square numbers: 7*n^2 + 4*n + 1.
 * [A005893](oeis/A005893.asm): Number of points on surface of tetrahedron; coordination sequence for sodalite net (equals 2*n^2+2 for n > 0).
 * [A005894](oeis/A005894.asm): Centered tetrahedral numbers.
 * [A005897](oeis/A005897.asm): a(n) = 6*n^2 + 2 for n > 0, a(0)=1.
@@ -372,6 +377,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A016061](oeis/A016061.asm): a(n) = n*(n+1)*(4*n+5)/6.
 * [A016116](oeis/A016116.asm): a(n) = 2^floor(n/2).
 * [A016742](oeis/A016742.asm): Even squares: a(n) = (2n)^2.
+* [A016743](oeis/A016743.asm): Even cubes: a(n) = (2*n)^3.
 * [A016754](oeis/A016754.asm): Odd squares: a(n) = (2n+1)^2. Also centered octagonal numbers.
 * [A016766](oeis/A016766.asm): a(n) = (3*n)^2.
 * [A016777](oeis/A016777.asm): a(n) = 3*n + 1.
@@ -406,10 +412,12 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A017053](oeis/A017053.asm): a(n) = 7*n + 6.
 * [A017066](oeis/A017066.asm): a(n) = (8*n)^2.
 * [A017077](oeis/A017077.asm): a(n) = 8*n + 1.
+* [A017078](oeis/A017078.asm): a(n) = (8*n + 1)^2.
 * [A017089](oeis/A017089.asm): a(n) = 8*n+2.
 * [A017101](oeis/A017101.asm): a(n) = 8n + 3.
 * [A017113](oeis/A017113.asm): a(n) = 8*n + 4.
 * [A017114](oeis/A017114.asm): a(n) = (8*n + 4)^2.
+* [A017150](oeis/A017150.asm): a(n) = (8*n + 7)^2.
 * [A017173](oeis/A017173.asm): a(n) = 9*n + 1.
 * [A017185](oeis/A017185.asm): 9*n+2.
 * [A017197](oeis/A017197.asm): a(n) = 9*n + 3.
@@ -458,8 +466,10 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A019557](oeis/A019557.asm): Coordination sequence for G_2 lattice.
 * [A020695](oeis/A020695.asm): Pisot sequence E(2,3).
 * [A020705](oeis/A020705.asm): n+4
+* [A020706](oeis/A020706.asm): Pisot sequences L(4,6), E(4,6).
 * [A020707](oeis/A020707.asm): Pisot sequences E(4,8), L(4,8), P(4,8), T(4,8).
 * [A020710](oeis/A020710.asm): n+5.
+* [A020712](oeis/A020712.asm): Pisot sequences E(5,8), P(5,8).
 * [A020714](oeis/A020714.asm): a(n) = 5 * 2^n.
 * [A020715](oeis/A020715.asm): n+6.
 * [A020719](oeis/A020719.asm): a(n) = n+7.
@@ -517,6 +527,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A022275](oeis/A022275.asm): a(n) = n*(17*n + 1)/2.
 * [A022276](oeis/A022276.asm): a(n) = n*(19*n - 1)/2.
 * [A022277](oeis/A022277.asm): a(n) = n*(19*n + 1)/2.
+* [A022314](oeis/A022314.asm): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 0, a(1) = 9.
 * [A022346](oeis/A022346.asm): Fibonacci sequence beginning 0, 12.
 * [A022349](oeis/A022349.asm): Fibonacci sequence beginning 0, 15.
 * [A022403](oeis/A022403.asm): a(0)=a(1)=3; thereafter a(n) = a(n-1) + a(n-2) + 1.
@@ -566,6 +577,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A026037](oeis/A026037.asm): a(n) = dot_product(1,2,...,n)*(3,4,...,n,1,2).
 * [A026040](oeis/A026040.asm): a(n) = dot_product(1,2,...,n)*(4,5,...,n,1,2,3).
 * [A026041](oeis/A026041.asm): a(n) = d(n)/2, where d = A026040.
+* [A026043](oeis/A026043.asm): a(n) = dot_product(1,2,...,n)*(5,6,...,n,1,2,3,4).
 * [A026054](oeis/A026054.asm): dot_product(n,n-1,...2,1).(3,4,...,n,1,2).
 * [A026474](oeis/A026474.asm): a(n) = least positive integer > a(n-1) and not equal to a(i)+a(j) or a(i)+a(j)+a(k) for 1<=i<j<k<n (a 3-Stohr sequence).
 * [A026484](oeis/A026484.asm): Erroneous version of A026488.
@@ -582,6 +594,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A027468](oeis/A027468.asm): 9 times the triangular numbers A000217.
 * [A027480](oeis/A027480.asm): a(n) = n*(n+1)*(n+2)/2.
 * [A027575](oeis/A027575.asm): a(n) = n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2.
+* [A027578](oeis/A027578.asm): Sums of five consecutive squares: a(n) = n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2 + (n+4)^2.
 * [A027599](oeis/A027599.asm): a(n) = 3n^2 - 7n + 6.
 * [A027656](oeis/A027656.asm): Expansion of 1/(1-x^2)^2 (included only for completeness - the policy is always to omit the zeros from such sequences).
 * [A027688](oeis/A027688.asm): a(n) = n^2 + n + 3.
@@ -628,6 +641,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A030451](oeis/A030451.asm): a(2*n) = n, a(2*n+1) = n+2.
 * [A030503](oeis/A030503.asm): Graham-Sloane-type lower bound on the size of a ternary (n,3,3) constant-weight code.
 * [A030511](oeis/A030511.asm): Graham-Sloane-type lower bound on the size of a ternary (n,3,3) constant-weight code.
+* [A030530](oeis/A030530.asm): n appears A070939(n) times.
 * [A030978](oeis/A030978.asm): Maximal number of non-attacking knights on an n X n board.
 * [A031193](oeis/A031193.asm): Numbers having period-22 5-digitized sequences.
 * [A031876](oeis/A031876.asm): a(n) = Sum_{k=0..n} floor(k^(1/3)).
@@ -757,6 +771,8 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A044187](oeis/A044187.asm): Numbers n such that string 0,0 occurs in the base 8 representation of n but not of n-1.
 * [A044242](oeis/A044242.asm): Numbers n such that string 6,7 occurs in the base 8 representation of n but not of n-1.
 * [A044631](oeis/A044631.asm): Numbers n such that string 7,7 occurs in the base 8 representation of n but not of n+1.
+* [A044712](oeis/A044712.asm): Numbers n such that string 8,8 occurs in the base 9 representation of n but not of n+1.
+* [A045623](oeis/A045623.asm): Number of 1's in all compositions of n+1.
 * [A045925](oeis/A045925.asm): a(n) = n*Fibonacci(n).
 * [A045943](oeis/A045943.asm): Triangular matchstick numbers: a(n) = 3*n*(n+1)/2.
 * [A045944](oeis/A045944.asm): Rhombic matchstick numbers: a(n) = n*(3*n+2).
@@ -1106,6 +1122,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A047838](oeis/A047838.asm): a(n) = floor(n^2/2) - 1.
 * [A047859](oeis/A047859.asm): a(n) = T(2, n), array T given by A047858.
 * [A047861](oeis/A047861.asm): a(n) = T(4,n), array T given by A047858.
+* [A047862](oeis/A047862.asm): a(n) = T(5,n), array T given by A047858.
 * [A047915](oeis/A047915.asm): 3*n^2-2*n+6.
 * [A047927](oeis/A047927.asm): n*(n-1)*(n-2)^2.
 * [A048058](oeis/A048058.asm): a(n) = n^2 + n + 11.
@@ -1120,6 +1137,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A048490](oeis/A048490.asm): a(n)=T(7,n), array T given by A048483.
 * [A048493](oeis/A048493.asm): a(n) = (n+1)*2^n - n.
 * [A048499](oeis/A048499.asm): 2^(n-1)*(6*n-10)+6.
+* [A048501](oeis/A048501.asm): a(n) = 2^(n-1)*(8*n-14)+8.
 * [A048578](oeis/A048578.asm): Pisot sequence L(3,5).
 * [A048760](oeis/A048760.asm): Largest square <= n.
 * [A048761](oeis/A048761.asm): Smallest square greater than or equal to n.
@@ -1139,6 +1157,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A049778](oeis/A049778.asm): a(n)=Sum{T(n,2k-1): k=1,2,...,[(n+1)/2]}, array T as in A049777.
 * [A049779](oeis/A049779.asm): a(n) = Sum{T(n,2k): k=1,2,...,[ n/2 ]}, array T as in A049777.
 * [A050187](oeis/A050187.asm): a(n) = n * floor((n-1)/2).
+* [A050188](oeis/A050188.asm): T(n,3), array T as in A050186; a count of aperiodic binary words.
 * [A050271](oeis/A050271.asm): Numbers n such that n = floor(sqrt(n)*ceiling(sqrt(n))).
 * [A050407](oeis/A050407.asm): a(n) = n*(n^2 - 6*n + 11)/6.
 * [A050488](oeis/A050488.asm): a(n) = 3*(2^n-1) - 2*n.
@@ -1180,6 +1199,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A052153](oeis/A052153.asm): Rhombi (in 3 different orientations) in a rhombus with 60-degree acute angles.
 * [A052380](oeis/A052380.asm): a(n) = D is the smallest distance (D) between 2 non-overlapping prime twins differing by d=2n; these twins are [p,p+d] or [p+D,p+D+d] and p > 3.
 * [A052421](oeis/A052421.asm): Numbers without 8 as a digit.
+* [A052515](oeis/A052515.asm): Number of ordered pairs of complementary subsets of an n-set with both subsets of cardinality at least 2.
 * [A052548](oeis/A052548.asm): a(n) = 2^n + 2.
 * [A052549](oeis/A052549.asm): a(0)=1; a(n) = 5*2^(n-1) - 1, n>0.
 * [A052551](oeis/A052551.asm): Expansion of 1/((1-x)*(1-2*x^2)).
@@ -1192,20 +1212,26 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A052940](oeis/A052940.asm): a(0) = 1; a(n) = 3*2^n - 1, for n > 0.
 * [A052944](oeis/A052944.asm): a(n) = 2^n + n - 1.
 * [A052955](oeis/A052955.asm): a(2n) = 2*2^n - 1, a(2n+1) = 3*2^n - 1.
+* [A052968](oeis/A052968.asm): a(n) = 1 + 2^(n-1) + n for n > 0, a(0) = 2.
+* [A052992](oeis/A052992.asm): Expansion of 1/((1 - x)*(1 - 2*x)*(1 + 2*x)).
 * [A052995](oeis/A052995.asm): Expansion of 2*x*(1-x)/(1-3*x+x^2).
+* [A052996](oeis/A052996.asm): G.f.: (1+x^2-x^3)/((1-x)(1-2*x)).
 * [A053186](oeis/A053186.asm): Square excess of n: difference between n and largest square <= n.
 * [A053187](oeis/A053187.asm): Nearest square.
 * [A053208](oeis/A053208.asm): Row sums of A053207.
 * [A053209](oeis/A053209.asm): Row sums of A051598.
+* [A053220](oeis/A053220.asm): a(n) = (3*n-1) * 2^(n-2).
 * [A053438](oeis/A053438.asm): Expansion of (1+x+2*x^3)/((1-x)*(1-x^2)).
 * [A053439](oeis/A053439.asm): Expansion of (1+x+2*x^3)/((1-x)*(1-x^2)^2).
 * [A053599](oeis/A053599.asm): Number of nonempty subsequences {s(k)} of 1..n such that the difference sequence is palindromic.
+* [A053616](oeis/A053616.asm): Pyramidal sequence: distance to nearest triangular number.
 * [A053644](oeis/A053644.asm): Most significant bit of n, msb(n); largest power of 2 less than or equal to n; write n in binary and change all but the first digit to zero.
 * [A053645](oeis/A053645.asm): Distance to largest power of 2 less than or equal to n; write n in binary and change the first digit to zero.
 * [A053698](oeis/A053698.asm): a(n) = n^3 + n^2 + n + 1.
 * [A053742](oeis/A053742.asm): Sum of odd numbers in range 10n to 10n+9.
 * [A053754](oeis/A053754.asm): If n is in the sequence then 2n and 2n+1 are not (and 0 is in the sequence); when written in binary n has an even number of digits (0 has 0 digits).
 * [A053755](oeis/A053755.asm): a(n) = 4*n^2 + 1.
+* [A053836](oeis/A053836.asm): Sum of digits of n written in base 16.
 * [A054000](oeis/A054000.asm): a(n) = 2*n^2 - 2.
 * [A054135](oeis/A054135.asm): T(n,1), array T as in A054134.
 * [A054254](oeis/A054254.asm): a(n) is n plus the minimum of the a(i)*a(n-i) of the previous i=1..n-1.
@@ -1263,6 +1289,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A057358](oeis/A057358.asm): a(n) = floor(4*n/7).
 * [A057359](oeis/A057359.asm): a(n) = floor(5*n/7).
 * [A057360](oeis/A057360.asm): a(n) = floor(3*n/8).
+* [A057361](oeis/A057361.asm): a(n) = floor(5*n/8).
 * [A057544](oeis/A057544.asm): Maximum cycle length (orbit size) in the rotation permutation of n+2 side polygon triangularizations.
 * [A057569](oeis/A057569.asm): Numbers of the form k*(5*k+1)/2 or k*(5*k-1)/2.
 * [A057570](oeis/A057570.asm): Numbers of the form n*(7n+-1)/2.
@@ -1313,6 +1340,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A060626](oeis/A060626.asm): Number of right triangles of a given area required to form successively larger squares.
 * [A060762](oeis/A060762.asm): Number of conjugacy classes (the same as the number of irreducible representations) in the dihedral group with 2n elements.
 * [A060785](oeis/A060785.asm): a(n) = 3*(n-2)*(5*n -11).
+* [A060787](oeis/A060787.asm): a(n) = 18*(n-2)*(2*n-5).
 * [A060798](oeis/A060798.asm): Numbers k such that difference between the upper and lower central divisors of k is 1.
 * [A060820](oeis/A060820.asm): (2*n-1)^2 + (2*n)^2.
 * [A060831](oeis/A060831.asm): Number of sums less than or equal to n of sequences of consecutive positive integers (including sequences of length 1).
@@ -1325,6 +1353,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A061761](oeis/A061761.asm): a(n) = 2^n + 2*n - 1.
 * [A061793](oeis/A061793.asm): a(n) = 25*n*(n + 1)/2 + 3.
 * [A061800](oeis/A061800.asm): a(n) = n + (-1)^(n mod 3).
+* [A061804](oeis/A061804.asm): a(n) = 2*n*(2*n^2 + 1).
 * [A061885](oeis/A061885.asm): n + largest triangular number less than or equal to n.
 * [A061887](oeis/A061887.asm): n + largest square less than or equal to n; numbers in the range [2k^2,2k^2+2k] for some k.
 * [A061925](oeis/A061925.asm): a(n) = ceiling(n^2/2) + 1.
@@ -1410,6 +1439,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A064459](oeis/A064459.asm): a(n) = Sum_{k>=1} floor(n/12^k).
 * [A064680](oeis/A064680.asm): Halve every even number, double every odd number.
 * [A064718](oeis/A064718.asm): A Beatty sequence for 2^i + 2^-i where i = sqrt(-1).
+* [A064720](oeis/A064720.asm): A Beatty sequence for 3^i + 3^-i + 1.
 * [A064724](oeis/A064724.asm): A Beatty sequence for 2^sqrt(2).
 * [A064761](oeis/A064761.asm): a(n) = 15*n^2.
 * [A064763](oeis/A064763.asm): a(n) = 28*n^2.
@@ -1417,6 +1447,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A064801](oeis/A064801.asm): Take 1, skip 2, take 2, skip 3, take 3, etc.
 * [A064806](oeis/A064806.asm): a(n) = n + digital root of n.
 * [A064808](oeis/A064808.asm): The (n+1)st (n+2)-gonal number.
+* [A064842](oeis/A064842.asm): Maximal value of sum([p(i)-p(i+1)]^2,i=1..n), where p(n+1)=p(1), as p ranges over all permutations of {1,2,...,n}.
 * [A064999](oeis/A064999.asm): Partial sums of sequence (essentially A002378): 1, 2, 6, 12, 20, 30, 42, 56, 72, 90, ...
 * [A065033](oeis/A065033.asm): 1 appears three times, other numbers twice.
 * [A065034](oeis/A065034.asm): a(n) = Lucas(2*n) + 1.
@@ -1522,10 +1553,12 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A077221](oeis/A077221.asm): a(0) = 0 and then alternately even and odd numbers in increasing order such that the sum of any two successive terms is a square.
 * [A077414](oeis/A077414.asm): a(n) = n*(n - 1)*(n + 2)/2.
 * [A077415](oeis/A077415.asm): a(n) = n*(n+2)*(n-2)/3.
+* [A077552](oeis/A077552.asm): Consider the following triangle in which the n-th row contains n distinct numbers whose product is the smallest and has the least possible number of divisors. 1 is a member of only the first row. Sequence contains the final term of the rows (the leading diagonal).
 * [A077588](oeis/A077588.asm): Maximum number of regions into which the plane is divided by n triangles.
 * [A077591](oeis/A077591.asm): Maximum number of regions into which the plane can be divided using n (concave) quadrilaterals.
 * [A077597](oeis/A077597.asm): Coefficient of x in the n-th Moebius polynomial (A074586), M(n,x), which satisfies M(n,-1)=mu(n) the Moebius function of n.
 * [A077750](oeis/A077750.asm): Least significant digit of A077749(n).
+* [A077802](oeis/A077802.asm): Sum of products of parts increased by 1 in hook partitions of n, where hook partitions are of the form h*1^(n-h).
 * [A077858](oeis/A077858.asm): Expansion of (1-x)^(-1)/(1-2*x+2*x^2-2*x^3).
 * [A077859](oeis/A077859.asm): Expansion of (1-x)^(-1)/(1-2*x+2*x^2-x^3).
 * [A077866](oeis/A077866.asm): Expansion of (1-x)^(-1)/(1-x-2*x^2+2*x^3).
@@ -1545,6 +1578,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A079326](oeis/A079326.asm): a(n) = the largest number m such that if m monominoes are removed from an n X n square then an L-triomino must remain.
 * [A079524](oeis/A079524.asm): Expansion of (x + b x^2 - b x^3)/((1 - x^2)*(1 - x)^2) with b=2.
 * [A079859](oeis/A079859.asm): a(n) = n*2^(n-4).
+* [A079862](oeis/A079862.asm): a(i) = the number of occurrences of 9s in the palindromic compositions of n=2*i-1 = the number of occurrences of 10's in the palindromic compositions of n=2*i.
 * [A079946](oeis/A079946.asm): Binary expansion of n has form 11**...*0.
 * [A080036](oeis/A080036.asm): a(n) = n + round(sqrt(2*n)) + 1.
 * [A080079](oeis/A080079.asm): Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
@@ -1574,6 +1608,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A080883](oeis/A080883.asm): Distance of n to next square.
 * [A080957](oeis/A080957.asm): Expansion of (5 - 9*x + 6*x^2)/(1-x)^4.
 * [A081026](oeis/A081026.asm): Variation on Ulam numbers: a(1) = 1; a(2) = 2; for n>2, a(n) = smallest (n odd) or largest (n even) number > a(n-1) that is a unique sum of two distinct earlier terms.
+* [A081031](oeis/A081031.asm): Positions of white keys on piano keyboard.
 * [A081032](oeis/A081032.asm): Positions of black keys on piano keyboard.
 * [A081266](oeis/A081266.asm): Staggered diagonal of triangular spiral in A051682.
 * [A081267](oeis/A081267.asm): Diagonal of triangular spiral in A051682.
@@ -1581,6 +1616,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A081270](oeis/A081270.asm): Diagonal of triangular spiral in A051682.
 * [A081271](oeis/A081271.asm): Vertical of triangular spiral in A051682.
 * [A081272](oeis/A081272.asm): Downward vertical of triangular spiral in A051682.
+* [A081275](oeis/A081275.asm): Shallow diagonal of triangular spiral in A051682.
 * [A081311](oeis/A081311.asm): Numbers that can be written as sum of a prime and an 3-smooth number.
 * [A081351](oeis/A081351.asm): First row in square maze array of natural numbers A081349.
 * [A081352](oeis/A081352.asm): Main diagonal of square maze arrangement of natural numbers A081349.
@@ -1702,6 +1738,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A087811](oeis/A087811.asm): Numbers n such that ceiling(sqrt(n)) divides n.
 * [A087847](oeis/A087847.asm): a(n) = a(|n - a(n-1)|) + a(a(a(|n - a(n-4)|))).
 * [A088003](oeis/A088003.asm): Take the list t(n,0) = {1,...,n}; denote by t(n,j) this list after rotating to left (or right) by j positions. Calculate inner product of t(n,0) and t(n,j) and denote the value by s(n,j). Compute this inner product for all j = 1..n and choose the smallest. This is a(n).
+* [A088041](oeis/A088041.asm): Smallest k such that k^4 - 1 is divisible by an n-th power, k > 1.
 * [A088227](oeis/A088227.asm): Solutions x to x^n == 7 mod 13.
 * [A088333](oeis/A088333.asm): A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 3 places clockwise from i. Repeat, counting 3 places from the next undeleted integer, until only one integer remains.
 * [A088439](oeis/A088439.asm): a(3n) = 3n, otherwise a(n) = 1.
@@ -1766,6 +1803,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A093907](oeis/A093907.asm): Number of elements in the n-th period of the periodic table as predicted by the Aufbau principle.
 * [A093968](oeis/A093968.asm): Inverse binomial transform of n*Pell(n).
 * [A093995](oeis/A093995.asm): n^2 repeated n times, triangle read by rows.
+* [A094041](oeis/A094041.asm): Beatty sequence for e^Pi - Pi^e - i^i.
 * [A094042](oeis/A094042.asm): Beatty sequence for e^Pi - Pi^e - i^i.
 * [A094159](oeis/A094159.asm): 3 times hexagonal numbers: a(n) = 3*n*(2*n-1).
 * [A094373](oeis/A094373.asm): Expansion of (1-x-x^2)/((1-x)*(1-2*x)).
@@ -1851,6 +1889,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A100705](oeis/A100705.asm): a(n) = n^3 + (n+1)^2.
 * [A100764](oeis/A100764.asm): a(1) = 1, a(2) = 2, a(3) = 3, a(n) = least number not the sum of three or less previous terms.
 * [A100832](oeis/A100832.asm): Amenable numbers: n such that there exists a multiset of integers (s(1), ..., s(n)) whose size, sum and product are all n.
+* [A101103](oeis/A101103.asm): Partial sums of A101104. First differences of A005914.
 * [A101165](oeis/A101165.asm): a(n) = (7*n^3 + 6*n^2 + 5*n) / 6.
 * [A101272](oeis/A101272.asm): a(n)=n, n <=6; a(n)=6, n > 6.
 * [A101328](oeis/A101328.asm): Recurring numbers in the count of consecutive composite numbers between balanced primes and their lower or upper prime neighbors.
@@ -1933,7 +1972,9 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A109678](oeis/A109678.asm): Sequence and first differences include all square numbers exactly once.
 * [A109900](oeis/A109900.asm): The (n,r)-th term of the following triangle is T(n)-T(r) for r = 0 to n. The n-th row contains n+1 terms. T(n) = the n-th triangular number = n(n+1)/2. Sequence contains the sum of terms at a 45-degree angle.
 * [A110090](oeis/A110090.asm): Numerators of sequence of rationals defined by r(n) = n for n<=1 and for n>1: r(n) = (sum of denominators of r(n-1) and r(n-2))/(sum of numerators of r(n-1) and r(n-2)).
+* [A110286](oeis/A110286.asm): 15*2^n.
 * [A110287](oeis/A110287.asm): 17*2^n.
+* [A110288](oeis/A110288.asm): 19*2^n.
 * [A110349](oeis/A110349.asm): a(n) = n + (n+1) + (n-1) + (n+2) + (n-2) ... n terms.
 * [A110451](oeis/A110451.asm): a(n) = n*(4*n^2 + 2*n + 1).
 * [A110549](oeis/A110549.asm): Periodic {1,2,4,3,3,4,2,1}.
@@ -1945,6 +1986,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A110659](oeis/A110659.asm): a(n) = A028242(A110654(n)).
 * [A110660](oeis/A110660.asm): Promic numbers repeated.
 * [A110803](oeis/A110803.asm): n times the number of digits in the decimal expansion of n.
+* [A110831](oeis/A110831.asm): a(n) = 3*n^2 + 27*n + 1.
 * [A111284](oeis/A111284.asm): Number of permutations of [n] avoiding the patterns {2143, 2341, 2413, 2431, 3142, 3241, 3412, 3421, 4123, 4213, 4231, 4321, 4132, 4312}; number of strong sorting classes based on 2143.
 * [A111396](oeis/A111396.asm): a(n) = n(n+7)(n+8)/6.
 * [A111575](oeis/A111575.asm): Powers of 3 repeated four times.
@@ -1990,10 +2032,13 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A113805](oeis/A113805.asm): Numbers that are congruent to {5, 9} mod 14.
 * [A113806](oeis/A113806.asm): Numbers that are congruent to {6, 8} mod 14.
 * [A113909](oeis/A113909.asm): Square table of odd numbers which are neither squares nor one less than squares, read by antidiagonals.
+* [A114112](oeis/A114112.asm): a(1)=1, a(2)=2; thereafter a(n) = n+1 if n odd, n-1 if n even.
 * [A114113](oeis/A114113.asm): a(n) = sum{k=1 to n} (A114112(k)). (For n>=2, a(n) = sum{k=1 to n} (A014681(k)) =sum{k=1 to n} (A103889(k)).).
 * [A114119](oeis/A114119.asm): Row sums of triangle A114118.
 * [A114143](oeis/A114143.asm): The possible sums of the final scores of completed American football games where both teams score.
 * [A114209](oeis/A114209.asm): Number of permutations of [n] having exactly two fixed points and avoiding the patterns 123 and 231.
+* [A114211](oeis/A114211.asm): a(n) = (5*n^3+12*n^2+n+6)/6.
+* [A114220](oeis/A114220.asm): a(n) = Sum_{k=0..floor(n/2)} k-(k-1)*0^(n-2k).
 * [A114444](oeis/A114444.asm): a(n) = 16*n*(n+2).
 * [A114637](oeis/A114637.asm): Nonnegative numbers excluding 1 and 2.
 * [A114698](oeis/A114698.asm): Let M(n) be the n X n matrix m(i,j)=min(i,j) for 1<=i,j<=n then a(n) is the trace of M(n)^(-3).
@@ -2043,12 +2088,14 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A118239](oeis/A118239.asm): Engel expansion of cosh(1).
 * [A118286](oeis/A118286.asm): Numbers n such that n=0 (mod 4) or n=2 (mod 12).
 * [A118403](oeis/A118403.asm): Unsigned row sums of triangle A118401; a(n) = A118402(n^2-n+2), where A118402 is the row sums of triangle A118400.
+* [A118414](oeis/A118414.asm): a(n) = (2*n - 1) * (2^n - 1).
 * [A118417](oeis/A118417.asm): a(n) = (2*n + 1) * 2^(n + 1).
 * [A118517](oeis/A118517.asm): Define sequence S_m by: initial term = m, reverse digits and add 3 to get next term. Entry shows S_1. This reaches a cycle of length 3 in 1 step.
 * [A118658](oeis/A118658.asm): a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
 * [A118729](oeis/A118729.asm): Infinite square array which contains the 8 numbers 4*r^2 - 3*r, 4*r^2 - 2*r, ..., 4*r^2 + 4*r in row r.
 * [A119412](oeis/A119412.asm): a(n) = n*(n+11).
 * [A119413](oeis/A119413.asm): 16*n-12.
+* [A119789](oeis/A119789.asm): Fibonacci Logarithms used to get a triangular array.
 * [A120071](oeis/A120071.asm): a(n) = n*(n+20).
 * [A120328](oeis/A120328.asm): Sum of three consecutive squares: n^2 + (n + 1)^2 + (n + 2)^2.
 * [A120370](oeis/A120370.asm): a(1) = 2. a(n) = a(n-1) + (maximum number of distinct primes dividing any earlier terms).
@@ -2075,6 +2122,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A123108](oeis/A123108.asm): a(0)=1, a(1)=0, a(2)=1, a(3)=1, a(n)=a(n-1)+a(n-2)-a(n-3) for n>3.
 * [A123203](oeis/A123203.asm): A007318 * [1, 1, 4, 4, 4,...].
 * [A123208](oeis/A123208.asm): Start with 1, then alternately add 2 or double.
+* [A123296](oeis/A123296.asm): Number of permutations of n distinct letters (ABCD...) each of which appears 5 times and having n-2 fixed points.
 * [A123578](oeis/A123578.asm): The Kruskal-Macaulay function M_2(n).
 * [A123684](oeis/A123684.asm): Alternate A016777(n) with A000027(n).
 * [A123720](oeis/A123720.asm): a(n) = 2^n + 2^(n-1) - n.
@@ -2093,6 +2141,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A124625](oeis/A124625.asm): Even numbers sandwiched between 1's.
 * [A125128](oeis/A125128.asm): a(n) = 2^(n+1) - n - 2, or partial sums of main diagonal of array A125127 of k-step Lucas numbers.
 * [A125169](oeis/A125169.asm): a(n) = 16*n + 15.
+* [A125176](oeis/A125176.asm): Row sums of A125175.
 * [A125201](oeis/A125201.asm): a(n) = 8*n^2 - 7*n + 1.
 * [A125577](oeis/A125577.asm): a(0) = 1; for n >= 1, a(n) = n^2 - a(n-1).
 * [A125758](oeis/A125758.asm): Numbers congruent to 4 or 7 mod 9.
@@ -2144,6 +2193,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A129955](oeis/A129955.asm): Third differences of A129952.
 * [A129972](oeis/A129972.asm): a(n) = 2*floor(log_2(n)) + 1.
 * [A130053](oeis/A130053.asm): G.f. A(x) = (1-x+x^2)/(1-x)^3 - x*[Sum_{n>=0} x^(n + 2^n)]/(1-x)^2 .
+* [A130103](oeis/A130103.asm): Expansion of e^(2x)-(1+x)*e^x+x.
 * [A130259](oeis/A130259.asm): Maximal index k of an even Fibonacci number (A001906) such that A001906(k) = Fib(2k) <= n (the 'lower' even Fibonacci Inverse).
 * [A130260](oeis/A130260.asm): Minimal index k of an even Fibonacci number A001906 such that A001906(k) = Fib(2k) >= n (the 'upper' even Fibonacci Inverse).
 * [A130261](oeis/A130261.asm): Partial sums of the 'lower' even Fibonacci Inverse A130259.
@@ -2190,6 +2240,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A131229](oeis/A131229.asm): Numbers congruent to {1,7} mod 10.
 * [A131242](oeis/A131242.asm): Partial sums of A059995: a(n) = sum_{k=0..n} floor(k/10).
 * [A131294](oeis/A131294.asm): a(n)=ds_3(a(n-1))+ds_3(a(n-2)), a(0)=0, a(1)=1; where ds_3=digital sum base 3.
+* [A131352](oeis/A131352.asm): Row sums of triangle A133935.
 * [A131355](oeis/A131355.asm): Partial sums of A065423 plus one.
 * [A131360](oeis/A131360.asm): a(4n) = a(4n+1) = 0, a(4n+2) = 2n, a(4n+3) = 2n+1.
 * [A131380](oeis/A131380.asm): a(3n) = 2n, a(3n+1) = 2n+2, a(3n+2) = 2n+1.
@@ -2221,6 +2272,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A131912](oeis/A131912.asm): Row sums of triangle A131911.
 * [A131941](oeis/A131941.asm): Partial sums of ceiling(n^2/2) (A000982).
 * [A132109](oeis/A132109.asm): a(n) = (2^(n+1) + n^2 + n)/2.
+* [A132112](oeis/A132112.asm): a(n) = n*(n+1)*(11*n+1)/6.
 * [A132124](oeis/A132124.asm): n * (n + 1) * (8 * n + 1) / 6.
 * [A132145](oeis/A132145.asm): Numbers that can be presented as a sum of a prime number and a Fibonacci number (0 is considered to be a Fibonacci number).
 * [A132171](oeis/A132171.asm): 3^n repeated 3^n times.
@@ -2259,6 +2311,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A132770](oeis/A132770.asm): a(n) = n*(n + 28).
 * [A132771](oeis/A132771.asm): a(n) = n*(n + 29).
 * [A132773](oeis/A132773.asm): a(n) = n*(n + 31).
+* [A132925](oeis/A132925.asm): a(n) = 2^n - 1 + n*(n-1)/2.
 * [A133016](oeis/A133016.asm): Even imperfect numbers, divided by 2.
 * [A133043](oeis/A133043.asm): Number of segments needed to draw the spiral of equilateral triangles with side lengths which follow the Padovan sequence.
 * [A133086](oeis/A133086.asm): Row sums of triangle A133085.
@@ -2330,6 +2383,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A136272](oeis/A136272.asm): Waterbird take-off sequence. Complement of A166021.
 * [A136289](oeis/A136289.asm): Start with three pennies touching each other on a tabletop. In each generation, add pennies subject to the rule that a penny can be placed only when (at least) two pennies are already in position to determine its position; sequence gives number of pennies added at generation n.
 * [A136293](oeis/A136293.asm): Linear bound on the genera of Heegaard splittings of closed, orientable 3-manifolds that admit a generalized triangulation with n generalized tetrahedra.
+* [A136391](oeis/A136391.asm): a(n) = n*F(n) - (n-1)*F(n-1), where the F(j)'s are the Fibonacci numbers (F(0)=0, F(1)=1).
 * [A136392](oeis/A136392.asm): a(n) = 6*n^2 - 10*n + 5.
 * [A136399](oeis/A136399.asm): Numbers having in their decimal representation at least one digit greater than 1.
 * [A137235](oeis/A137235.asm): a(n) = (n+1)/2 if n is odd; a(n) = n/2 + 6 if n is even.
@@ -2342,6 +2396,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A138102](oeis/A138102.asm): The number 2*k^2 repeated 2*k^2 times, k=1 to 4.
 * [A138127](oeis/A138127.asm): Multiples of 127.
 * [A138591](oeis/A138591.asm): Sums of two or more consecutive nonnegative integers.
+* [A138830](oeis/A138830.asm): Bisection of imperfect numbers A132999.
 * [A138984](oeis/A138984.asm): a(n) = Frobenius number for 4 successive numbers = F(n+1,n+2,n+3,n+4).
 * [A138985](oeis/A138985.asm): a(n) = Frobenius number for 5 successive numbers = F(n+1,n+2,n+3,n+4,n+5).
 * [A138986](oeis/A138986.asm): a(n) = Frobenius number for 6 successive numbers = F(n+1,n+2,n+3,n+4,n+5,n+6).
@@ -2433,6 +2488,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A142241](oeis/A142241.asm): a(n) = 24*n + 14.
 * [A142717](oeis/A142717.asm): First (leftmost) odd term in the n-th row of triangle A120070.
 * [A142954](oeis/A142954.asm): a(n) = 2*n+3+3*(-1)^n.
+* [A142964](oeis/A142964.asm): One half of second column (m=1) of triangle A142963.
 * [A143097](oeis/A143097.asm): 3*k - 2 interleaved with 3*k - 1 and 3*k.
 * [A143166](oeis/A143166.asm): a(n) = n*(8*n^2 + 1)/3.
 * [A143371](oeis/A143371.asm): Duplicate of A131423.
@@ -2441,6 +2497,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A143698](oeis/A143698.asm): 12 times hexagonal numbers: 12*n*(2*n-1).
 * [A143730](oeis/A143730.asm): A141616(n) - A100181(n).
 * [A143795](oeis/A143795.asm): a(1) = 1, then for n > 1, a(n) = a(n - 1) + 1 for n even, or a(n) = a(n - 1) + 10 for n odd.
+* [A143838](oeis/A143838.asm): Ulam's spiral (SSW spoke).
 * [A143839](oeis/A143839.asm): Ulam's spiral (SSE spoke).
 * [A143854](oeis/A143854.asm): Ulam's spiral (WSW spoke).
 * [A143855](oeis/A143855.asm): Ulam's spiral (ESE spoke).
@@ -2465,6 +2522,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A144429](oeis/A144429.asm): Starts 1 2 3 then successive terms have differences 1 2 3.
 * [A144430](oeis/A144430.asm): a(n) = 1 + A144429(n).
 * [A144459](oeis/A144459.asm): a(n) = (3*n+1)*(5*n+1).
+* [A144468](oeis/A144468.asm): Final digit of multiples of 7.
 * [A144555](oeis/A144555.asm): a(n) = 14*n^2.
 * [A144560](oeis/A144560.asm): Ten times hexagonal numbers: 10*n*(2*n-1).
 * [A144619](oeis/A144619.asm): a(n) = 19n + 8.
@@ -2479,6 +2537,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A145066](oeis/A145066.asm): Partial sums of A002522, starting at n=1.
 * [A145068](oeis/A145068.asm): Zero followed by partial sums of A059100, starting at n=1.
 * [A145069](oeis/A145069.asm): a(n) = n*(n^2 + 3*n + 5)/3.
+* [A145070](oeis/A145070.asm): Partial sums of A006127, starting at n=1.
 * [A145071](oeis/A145071.asm): Partial sums of A000051, starting at n=1.
 * [A145287](oeis/A145287.asm): Duplicate of A016861.
 * [A145289](oeis/A145289.asm): a(n) = number of monomials in n-th power of polynomial x^3+x^2+x+1
@@ -2486,6 +2545,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A145751](oeis/A145751.asm): Duplicate of A063759.
 * [A145910](oeis/A145910.asm): a(n) = (1 + 3*n)*(4 + 3*n)/2.
 * [A145995](oeis/A145995.asm): a(n) = 8 - 12*n + 5*n^2.
+* [A146005](oeis/A146005.asm): a(n) = n*Lucas(n).
 * [A146082](oeis/A146082.asm): a(n) = A146081(n) mod 9.
 * [A146512](oeis/A146512.asm): Numbers congruent to {1, 3} mod 12.
 * [A146523](oeis/A146523.asm): Binomial transform of A010685.
@@ -2528,6 +2588,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A152751](oeis/A152751.asm): 3 times octagonal numbers: 3*n*(3*n-2).
 * [A152759](oeis/A152759.asm): 3 times 9-gonal (or nonagonal) numbers: 3n(7n-5)/2.
 * [A152760](oeis/A152760.asm): 4 times 9-gonal numbers: a(n) = 2*n*(7*n-5).
+* [A152767](oeis/A152767.asm): 3 times 10-gonal (or decagonal) numbers: 3n(4n-3).
 * [A152773](oeis/A152773.asm): 3 times heptagonal numbers: a(n) = 3n(5n-3)/2.
 * [A152811](oeis/A152811.asm): a(n) = 2*(n^2 + 2*n - 2).
 * [A152813](oeis/A152813.asm): a(n) = 2*n^2 + 10*n + 3.
@@ -2555,6 +2616,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A153792](oeis/A153792.asm): 12 times pentagonal numbers: a(n) = 6*n*(3*n-1).
 * [A153794](oeis/A153794.asm): 4 times octagonal numbers: a(n) = 4*n*(3*n-2).
 * [A153796](oeis/A153796.asm): 6 times octagonal numbers: a(n) = 6*n*(3*n-2).
+* [A153797](oeis/A153797.asm): 7 times octagonal numbers: a(n) = 7*n*(3*n-2).
 * [A153875](oeis/A153875.asm): 3 times 13-gonal (or tridecagonal) numbers: 3*n*(11*n - 9)/2.
 * [A153893](oeis/A153893.asm): a(n) = 3*2^n - 1.
 * [A153894](oeis/A153894.asm): a(n) = 5*2^n - 1.
@@ -2586,6 +2648,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A154708](oeis/A154708.asm): Numbers a such that b and c exist with b <= a < c and a*(a+1) + b^2 = c^2.
 * [A155095](oeis/A155095.asm): Numbers n such that n^2 == -1 mod (17)
 * [A155212](oeis/A155212.asm): a(n) = (n^2 + 9*n + 4)/2.
+* [A155450](oeis/A155450.asm): Numbers equal to 5 or 18 mod 23.
 * [A155559](oeis/A155559.asm): a(n) = 2*A131577(n).
 * [A155753](oeis/A155753.asm): (n^3 - n + 9)/3.
 * [A155757](oeis/A155757.asm): (n^3 - n + 15)/3.
@@ -2629,9 +2692,11 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A158187](oeis/A158187.asm): a(n) = 10*n^2 + 1.
 * [A158231](oeis/A158231.asm): a(n) = 256*n + 1.
 * [A158250](oeis/A158250.asm): 256n - 1.
+* [A158302](oeis/A158302.asm): "1" followed by repeats of 2^k deleting all 4^k, k>0
 * [A158405](oeis/A158405.asm): Triangle T(n,m) = 1+2*m of odd numbers read along rows, 0<=m<n.
 * [A158411](oeis/A158411.asm): Maximum number of colors required to paint a map having n regions.
 * [A158416](oeis/A158416.asm): Expansion of (1+x-x^3)/(1-x^2)^2.
+* [A158421](oeis/A158421.asm): 1024n - 1.
 * [A158443](oeis/A158443.asm): 16n^2 - 4.
 * [A158444](oeis/A158444.asm): 16n^2 + 4.
 * [A158447](oeis/A158447.asm): a(n) = 10*n^2 - 1.
@@ -2641,6 +2706,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A158482](oeis/A158482.asm): 14n^2 + 1.
 * [A158498](oeis/A158498.asm): a(n) = (1/2)*(n^3 - 6*n^2 + 13*n - 6).
 * [A158515](oeis/A158515.asm): Number of colors needed to paint a wheel graph on n nodes.
+* [A158563](oeis/A158563.asm): 32n^2 - 1.
 * [A158607](oeis/A158607.asm): Period 5: repeat 9,11,13,5,7.
 * [A158686](oeis/A158686.asm): 64n^2 + 1.
 * [A158772](oeis/A158772.asm): a(n) = A138635(n+18)-A138635(n).
@@ -2700,7 +2766,9 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A163761](oeis/A163761.asm): a(n) = 10*n*(n+1).
 * [A163815](oeis/A163815.asm): a(n) = n*(2*n^2 + 5*n + 3).
 * [A163864](oeis/A163864.asm): a(n) = 2*a(n-2) for n > 2; a(1) = 1, a(2) = 6.
+* [A163888](oeis/A163888.asm): a(n) = 2*a(n-2) for n > 2; a(1) = 5, a(2) = 4.
 * [A163978](oeis/A163978.asm): a(n) = 2*a(n-2) for n > 2; a(1) = 3, a(2) = 4.
+* [A163979](oeis/A163979.asm): a(n) = n*(n-1) + A144437(n+2).
 * [A163980](oeis/A163980.asm): a(n) = 2*n + (-1)^n.
 * [A163985](oeis/A163985.asm): Sum of all isolated parts of all partitions of n.
 * [A164004](oeis/A164004.asm): Zero together with row 4 of the array in A163280.
@@ -2721,6 +2789,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A164897](oeis/A164897.asm): a(n) = 4*n*(n+1) + 3.
 * [A164906](oeis/A164906.asm): a(n) = (3*2^n - (-2)^n)/2.
 * [A165063](oeis/A165063.asm): Length of cycle mentioned in A165062
+* [A165145](oeis/A165145.asm): Partial sums of A058183.
 * [A165157](oeis/A165157.asm): Zero followed by partial sums of A133622.
 * [A165351](oeis/A165351.asm): Numerator of 3n/2.
 * [A165453](oeis/A165453.asm): Linear interpolation of the sequence that maps an entry of A002378 to the corresponding entry of A006331.
@@ -2969,6 +3038,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A179904](oeis/A179904.asm): a(n) = A056520(n)+1 for n>0, a(0)=1.
 * [A179986](oeis/A179986.asm): Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.
 * [A180118](oeis/A180118.asm): a(n) = Sum_{k=1..n} (k+2)!/k! = Sum_{k=1..n} (k+2)*(k+1).
+* [A180221](oeis/A180221.asm): Numbers that can be written as sum of one or more distinct elements of A000043. Numbers n for which sigma(A180162(n))=2^n, n>=2.
 * [A180223](oeis/A180223.asm): a(n) = (11*n^2 - 7*n)/2.
 * [A180232](oeis/A180232.asm): a(n) = n*(17*n - 13)/2.
 * [A180291](oeis/A180291.asm): Number of arrangements of n indistinguishable balls in n boxes with the maximum number of balls in any box equal to n-1.
@@ -3003,6 +3073,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A182307](oeis/A182307.asm): a(n+1) = a(n) + floor(a(n)/6) with a(0)=6.
 * [A182461](oeis/A182461.asm): a(n) = 3*a(n-1) - 2*a(n-2) with a(0)=16 and a(1)=40.
 * [A182464](oeis/A182464.asm): a(n) = 3a(n-1) - 2a(n-2) with a(0)=24 and a(1)=60.
+* [A182466](oeis/A182466.asm): a(n) = 3a(n-1) - 2a(n-2) with a(0)=32 and a(1)=80.
 * [A182467](oeis/A182467.asm): a(n) = 3a(n-1) - 2a(n-2) with a(0)=36 and a(1)=90.
 * [A182531](oeis/A182531.asm): Extremal graph numbers for a triangle with an edge off it.
 * [A182568](oeis/A182568.asm): a(n) = 2*floor(n/4)*(n - 2*(1 + floor(n/4))).
@@ -3025,6 +3096,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A183297](oeis/A183297.asm): Complement of A005475.
 * [A183300](oeis/A183300.asm): Positive integers not of the form 2n^2.
 * [A183301](oeis/A183301.asm): Complement of A014105.
+* [A183302](oeis/A183302.asm): Complement of A014106.
 * [A183570](oeis/A183570.asm): n+floor(sqrt(n+1)).
 * [A183571](oeis/A183571.asm): n+floor(sqrt(n+2)).
 * [A183574](oeis/A183574.asm): n+Floor[sqrt(2n+2)].
@@ -3052,6 +3124,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A185212](oeis/A185212.asm): a(n) = 12*n^2 - 8*n + 1.
 * [A185438](oeis/A185438.asm): a(n) = 8*n^2 - 2*n + 1.
 * [A185452](oeis/A185452.asm): Image of n under the map n -> n/2 if n even, (5*n+1)/2 if n odd.
+* [A185647](oeis/A185647.asm): Expansion of (1+2x)*(1+2*x^2)/((1-x)*(1+x)*(1-2*x^2)).
 * [A185669](oeis/A185669.asm): a(n) = 4*n^2 + 3*n + 2.
 * [A185788](oeis/A185788.asm): Sum of the first k-1 numbers in the k-th column of the natural number array A000027, by antidiagonals.
 * [A185939](oeis/A185939.asm): a(n) = 9*n^2 - 6*n + 2.
@@ -3076,6 +3149,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A186683](oeis/A186683.asm): Total number of n-digit numbers requiring 18 positive biquadrates in their representation as sum of biquadrates.
 * [A186949](oeis/A186949.asm): a(n)=2^n-2*C(1,n)+2*C(0,n).
 * [A187156](oeis/A187156.asm): Number of 3-step one space at a time bishop's tours on an n X n board summed over all starting positions.
+* [A187173](oeis/A187173.asm): Number of 3-step left-handed knight's tours (moves only out two, left one) on an n X n board summed over all starting positions.
 * [A187180](oeis/A187180.asm): Parse the infinite string 0101010101... into distinct phrases 0, 1, 01, 010, 10, ...; a(n) = length of n-th phrase.
 * [A187206](oeis/A187206.asm): a(n) = 6*(24*n - 1).
 * [A187272](oeis/A187272.asm): a(n) = (n/4)*2^(n/2)*((1+sqrt(2))^2 + (-1)^n*(1-sqrt(2))^2).
@@ -3083,6 +3157,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A187287](oeis/A187287.asm): Number of 2-step one or two space at a time rook's tours on an n X n board summed over all starting positions.
 * [A187297](oeis/A187297.asm): Number of 2-step one space leftwards or up, two space rightwards or down asymmetric rook's tours on an n X n board summed over all starting positions
 * [A187321](oeis/A187321.asm): a(n) = floor(n/2) + floor(n/4).
+* [A187322](oeis/A187322.asm): a(n) = floor(n/2) + floor(3*n/4).
 * [A187324](oeis/A187324.asm): a(n) = floor(n/2) + floor(n/3) - floor(n/4).
 * [A187326](oeis/A187326.asm): Floor(n/4)+floor(n/2)+floor(3n/4).
 * [A187327](oeis/A187327.asm): Floor(n/5)+floor(2n/5)+floor(3n/5).
@@ -3144,6 +3219,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A194222](oeis/A194222.asm): [sum{(k/5) : 1<=k<=n}], where [ ]=floor, ( )=fractional part.
 * [A194225](oeis/A194225.asm): [sum{(k/7) : 1<=k<=n}], where [ ]=floor, ( )=fractional part.
 * [A194228](oeis/A194228.asm): Partial sums of A194227.
+* [A194229](oeis/A194229.asm): Partial sums of A057357.
 * [A194268](oeis/A194268.asm): 8*n^2 + 7*n + 1.
 * [A194272](oeis/A194272.asm): Array T(n,k) with 6 columns read by rows in which row n lists 3*n-2, 3*n-1, 3*n, 3*n, 3*n, 3*n.
 * [A194273](oeis/A194273.asm): Concentric triangular numbers (see Comments lines for definition).
@@ -3197,13 +3273,16 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A197985](oeis/A197985.asm): Round((n+1/n)^2)
 * [A198017](oeis/A198017.asm): a(n) = n*(7*n + 11)/2 + 1.
 * [A198274](oeis/A198274.asm): a(n) = 13*2^n-1.
+* [A198275](oeis/A198275.asm): 17*2^n - 1.
 * [A198395](oeis/A198395.asm): Ceiling(n*sqrt(17)).
 * [A198442](oeis/A198442.asm): Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,0).
 * [A198633](oeis/A198633.asm): Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
 * [A198834](oeis/A198834.asm): Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (0,1,1) or (1,1,1).
+* [A198954](oeis/A198954.asm): Expansion of the rotational partition function for a heteronuclear diatomic molecule.
 * [A199085](oeis/A199085.asm): Number of distinct values taken by 3rd derivative of x^x^...^x (with n x's and parentheses inserted in all possible ways) at x=1.
 * [A199969](oeis/A199969.asm): a(n) = the greatest non-divisor h of n (1<h<n), or 0 if no such h exists.
 * [A199972](oeis/A199972.asm):  a(n) = the sum of GCQ_B(n, k) for 1 <= k <= n (see definition in comments).
+* [A200039](oeis/A200039.asm): Number of -n..n arrays x(0..2) of 3 elements with sum zero and with zeroth through 2nd differences all nonzero.
 * [A200067](oeis/A200067.asm): Maximum sum of all products of absolute differences and distances between element pairs among the integer partitions of n.
 * [A200535](oeis/A200535.asm): G.f. satisfies: A(x) = exp( Sum_{n>=1} [Sum_{k=0..2*n} C(2*n,k)^2 * x^k] / A(x)^n * x^n/n ).
 * [A200672](oeis/A200672.asm): Partial sums of A173862.
@@ -3230,6 +3309,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A204904](oeis/A204904.asm): p(n)-q(n), where (p(n), q(n)) is the least pair of odd primes for which n divides p(n)-q(n).
 * [A206245](oeis/A206245.asm): Number of partitions of n into repunit powers, cf. A083278.
 * [A206332](oeis/A206332.asm): Complement of A092754.
+* [A206905](oeis/A206905.asm): n+[nr/t]+[ns/t], where []=floor, r=3, s=sqrt(3), t=1/s.
 * [A208903](oeis/A208903.asm): The sum over all bitstrings b of length n with at least two runs of the number of runs in b not immediately followed by a longer run.
 * [A208994](oeis/A208994.asm): Number of 3-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and first differences in -n..n.
 * [A209294](oeis/A209294.asm): a(n) = (7*n^2 - 7*n + 4)/2.
@@ -3240,6 +3320,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A209876](oeis/A209876.asm): a(n) = 36*n - 6.
 * [A209931](oeis/A209931.asm):  Numbers n such that smallest digit of all divisors of n is 1.
 * [A210032](oeis/A210032.asm): a(n)=n for n=1,2,3 and 4; a(n)=5 for n>=5.
+* [A210062](oeis/A210062.asm): Number of digits in 7^n.
 * [A210434](oeis/A210434.asm): Number of digits in 4^n.
 * [A210436](oeis/A210436.asm): Number of digits in 6^n.
 * [A210440](oeis/A210440.asm): a(n) = 2*n*(n+1)*(n+2)/3.
@@ -3274,6 +3355,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A212428](oeis/A212428.asm): a(n) = 18*n + A000217(n-1).
 * [A212561](oeis/A212561.asm): Number of (w,x,y,z) with all terms in {1,...,n} and w + x = 2y + 2z.
 * [A212656](oeis/A212656.asm): 5*n^2 + 1.
+* [A212684](oeis/A212684.asm): Number of (w,x,y,z) with all terms in {1,...,n} and  |x-y|=n-w+|y-z|.
 * [A212804](oeis/A212804.asm): Expansion of (1-x)/(1-x-x^2).
 * [A212831](oeis/A212831.asm): a(4*n) = 2*n, a(2*n+1) = 2*n+1, a(4*n+2) = 2*n+2.
 * [A212832](oeis/A212832.asm): Decimal expansion of 5/24.
@@ -3316,6 +3398,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A215459](oeis/A215459.asm): Arises in quick gossiping without duplicate transmission.
 * [A215537](oeis/A215537.asm): Lowest k such that k is representable as both the sum of n and of n+1 nonzero squares.
 * [A215862](oeis/A215862.asm): Number of simple labeled graphs on n+2 nodes with exactly n connected components that are trees or cycles.
+* [A215928](oeis/A215928.asm): a(n) = 2*a(n-1) + a(n-2) for n > 2, a(0) = a(1) = 1, a(2) = 2.
 * [A216209](oeis/A216209.asm): Triangle read by rows: T(n,k) = n+k with 0 <= k <= 2*n.
 * [A216256](oeis/A216256.asm): Minimum length of a longest unimodal subsequence of a permutation of n elements.
 * [A216972](oeis/A216972.asm): a(4n+2) = 2, otherwise a(n) = n.
@@ -3356,6 +3439,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A222465](oeis/A222465.asm): a(n) = 4*n^2 + 3.
 * [A222657](oeis/A222657.asm): a(n) = 2 * floor( (2*n + 1) / 3) + 1.
 * [A222945](oeis/A222945.asm): Number of distinct sums i+j+k with |i|, |j|, |k|, |i*j*k| <= n.
+* [A223082](oeis/A223082.asm): Number of n-digit numbers N with distinct digits such that N divides the reversal of N.
 * [A223134](oeis/A223134.asm): Number of distinct sums i+j+k with i,j,k >= 0, i*j*k <= n.
 * [A224141](oeis/A224141.asm): Number of n X 3 0..1 arrays with rows and antidiagonals unimodal and columns nondecreasing.
 * [A224317](oeis/A224317.asm): a(n) = a(n-1) + 3 - a(n-1)!.
@@ -3399,6 +3483,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A229446](oeis/A229446.asm): Number of 3 X n 0..2 arrays with horizontal differences mod 3 never 1, vertical differences mod 3 never -1, and rows and columns lexicographically nondecreasing.
 * [A229489](oeis/A229489.asm): Conjecturally, possible differences between prime(k)^2 and the next prime for some k.
 * [A229593](oeis/A229593.asm): Number of boomerang patterns appearing in n X n coins, rotation not allowed.
+* [A229788](oeis/A229788.asm): 6*2^n - n^2 - 5*n - 6.
 * [A229838](oeis/A229838.asm): Consider all primitive 60-degree triangles with sides A < B < C. The sequence gives the values of A.
 * [A229853](oeis/A229853.asm): 384*n + 1.
 * [A229855](oeis/A229855.asm): 384*n + 257.
@@ -3441,6 +3526,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A238705](oeis/A238705.asm): Number of partitions of 4n into 4 parts with smallest part = 1.
 * [A238806](oeis/A238806.asm): Number of n X 2 0..2 arrays with no element equal to one plus the sum of elements to its left or one plus the sum of the sum of elements above it, modulo 3.
 * [A239123](oeis/A239123.asm): a(n) = 128*n - 107 for n >= 1. Third column of triangle A238475.
+* [A239124](oeis/A239124.asm): a(n) = 64*n - 11 for n >= 1. Third column of triangle A238476.
 * [A239128](oeis/A239128.asm): a(n) = 32*n - 1, n >= 1. Fourth column of triangle A239126, related to the Collatz problem.
 * [A239129](oeis/A239129.asm): a(n) = 18*n - 1, n >= 1, the second column of triangle A239127 related to the Collatz problem.
 * [A239325](oeis/A239325.asm): a(n) = 6*n^2 + 8*n + 1.
@@ -3492,6 +3578,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A244630](oeis/A244630.asm): a(n) = 17*n^2.
 * [A244633](oeis/A244633.asm): a(n) = 26*n^2.
 * [A244634](oeis/A244634.asm): 27*n^2.
+* [A244636](oeis/A244636.asm): 30*n^2.
 * [A244802](oeis/A244802.asm): The 60º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244803](oeis/A244803.asm): The 360º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244804](oeis/A244804.asm): The 300º spoke (or ray) of a hexagonal spiral of Ulam.
@@ -3512,6 +3599,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A246638](oeis/A246638.asm): Sequence a(n) = 2 + 3*A001519(n+1) appearing in a certain four circle touching problem together with A246639.
 * [A246639](oeis/A246639.asm): Sequence a(n) = 3 + 5*A001519(n+1) appearing in a certain three circle touching problem, together with A246638.
 * [A246640](oeis/A246640.asm): Sequence a(n) = 1 + A001519(n+1) appearing in a certain touching problem for three circles and a chord, together with A246638.
+* [A246705](oeis/A246705.asm): Position of first n in A246694 (read as sequence with offset changed to 1); complement of A246706.
 * [A247018](oeis/A247018.asm): a(n) = 3*n^2 + n + 3.
 * [A247160](oeis/A247160.asm): Dynamic Betting Game D(n,4,3).
 * [A247375](oeis/A247375.asm): Numbers n such that floor(n/2) is a square.
@@ -3519,6 +3607,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A247618](oeis/A247618.asm): Start with a single square; at n-th generation add a square at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247620](oeis/A247620.asm): Start with a single hexagon; at n-th generation add a hexagon at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247792](oeis/A247792.asm): a(n) = 9*n^2 + 1.
+* [A247904](oeis/A247904.asm): Start with a single pentagon; at n-th generation add a pentagon at each expandable vertex (this is the "vertex to side" version); a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247983](oeis/A247983.asm): Least number k such that log(2) - sum{1/(h*2^h), h=1..k} < 1/2^n.
 * [A248148](oeis/A248148.asm): Least k such that r - sum{1/Binomial[2h, h], h = 0..k} < 1/3^n, where r = 1/3 + 2*Pi/Sqrt(243).
 * [A248339](oeis/A248339.asm): a(n) = 22*n+19.
@@ -3541,6 +3630,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A250352](oeis/A250352.asm): Number of length 3 arrays x(i), i=1..3 with x(i) in i..i+n and no value appearing more than 2 times.
 * [A250657](oeis/A250657.asm): Number of (3+1)X(n+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction
 * [A250737](oeis/A250737.asm): Number of (n+1) X (3+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nonincreasing x(i,j)-x(i-1,j) in the j direction.
+* [A250738](oeis/A250738.asm): Number of (n+1) X (4+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nonincreasing x(i,j)-x(i-1,j) in the j direction.
 * [A251630](oeis/A251630.asm): Column sums of the n X n square array filled with numbers from 1 to n^2, row by row, from left to right.
 * [A252994](oeis/A252994.asm): Multiples of 26.
 * [A253145](oeis/A253145.asm): Triangular numbers (A000217) omitting the term 1.
@@ -3590,6 +3680,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A258582](oeis/A258582.asm): a(n) = n*(2*n + 1)*(4*n + 1)/3.
 * [A258588](oeis/A258588.asm): Minimal most likely sum for a roll of n 10-sided dice.
 * [A258935](oeis/A258935.asm): Independence number of Keller graphs.
+* [A259054](oeis/A259054.asm): a(n) = 4*n^2 - 4*n + 19, n >= 1.
 * [A259055](oeis/A259055.asm): a(n) = 9*n^2 + 18*n + 7.
 * [A259110](oeis/A259110.asm): 2*A000447(n).
 * [A259225](oeis/A259225.asm): Smallest oblong number greater than or equal to n.
@@ -3657,6 +3748,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A266439](oeis/A266439.asm): Number of OFF (white) cells in the n-th iteration of the "Rule 23" elementary cellular automaton starting with a single ON (black) cell.
 * [A266440](oeis/A266440.asm): Total number of OFF (white) cells after n iterations of the "Rule 23" elementary cellular automaton starting with a single ON (black) cell.
 * [A266464](oeis/A266464.asm): Number of n X 2 binary arrays with rows and columns lexicographically nondecreasing and column sums nonincreasing.
+* [A266491](oeis/A266491.asm): a(n) = n*A130658(n).
 * [A266542](oeis/A266542.asm): Number of nX3 binary arrays with rows and columns lexicographically nondecreasing and row and column sums nonincreasing.
 * [A266550](oeis/A266550.asm): Independence number of the n-Mycielski graph.
 * [A266664](oeis/A266664.asm): Number of OFF (white) cells in the n-th iteration of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
@@ -3670,6 +3762,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A266977](oeis/A266977.asm): Number of ON (black) cells in the n-th iteration of the "Rule 78" elementary cellular automaton starting with a single ON (black) cell.
 * [A266981](oeis/A266981.asm): Number of ON (black) cells in the n-th iteration of the "Rule 79" elementary cellular automaton starting with a single ON (black) cell.
 * [A267031](oeis/A267031.asm): a(n) = (32*n^3 - 2*n)/3.
+* [A267182](oeis/A267182.asm): Row 2 of the square array in A267181.
 * [A267185](oeis/A267185.asm): Column 2 of the square array in A267181.
 * [A267317](oeis/A267317.asm): a(n) = final digit of 2^n-1.
 * [A267354](oeis/A267354.asm): Number of OFF (white) cells in the n-th iteration of the "Rule 123" elementary cellular automaton starting with a single ON (black) cell.
@@ -3705,6 +3798,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A269059](oeis/A269059.asm): Construct a hollow square of 1's of side n and fill its interior with 0's to create a stack of n binary numbers. Express the sum of the stack in decimal.
 * [A269100](oeis/A269100.asm): a(n) = 13*n + 11.
 * [A269132](oeis/A269132.asm): a(n) = n + floor(n*(2*n+1)/5).
+* [A269342](oeis/A269342.asm): a(n) = (n + 1)*(2*n + 1)*(4*n + 9)/3.
 * [A269445](oeis/A269445.asm): a(n) = Sum_{k=0..n} floor(k/13).
 * [A269457](oeis/A269457.asm): a(n) = 5*(n + 1)*(n + 4)/2.
 * [A270059](oeis/A270059.asm): Number of distinct digits needed to write n in all bases >= 2.
@@ -3755,6 +3849,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A273982](oeis/A273982.asm): Number of little cubes visible around an n X n X n cube with a face on a table.
 * [A274039](oeis/A274039.asm): Expansion of (x^4 + x^10) / (1 - 2*x + x^2).
 * [A274077](oeis/A274077.asm): a(n) = n^3 + 4.
+* [A274221](oeis/A274221.asm): List of quadruples: 3*n*(3*n-1), 3*n*(3*n+1), (3*n+1)^2, (3*n+2)^2.
 * [A274399](oeis/A274399.asm): a(n) = floor(n*Pi/3).
 * [A274406](oeis/A274406.asm): Numbers m such that 9 divides m*(m + 1).
 * [A274583](oeis/A274583.asm): Expansion of (1 + x + x^2 - x^3 - x^4 + x^6)/((1 - x)^3*(1 + x + x^2)^2).
@@ -3769,6 +3864,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A275709](oeis/A275709.asm): a(n) = 2*n^3 + 3*n^2.
 * [A275874](oeis/A275874.asm): a(n) = (n-4)*(n+1)*(n+3)/6.
 * [A275910](oeis/A275910.asm): Numbers not congruent to 0, 1 or 8 mod 9.
+* [A275970](oeis/A275970.asm): a(n) = 3*2^n + n - 1.
 * [A276278](oeis/A276278.asm): Complement of A026474.
 * [A276382](oeis/A276382.asm): a(1) = 1, and a(n) = a(n-1) + floor(3*n/2) + 1 for n >= 2.
 * [A276659](oeis/A276659.asm): Accumulation of the upper left triangle used in binomial transform of nonnegative integers.
@@ -3787,6 +3883,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A278816](oeis/A278816.asm): Numbers that can be produced from their own digits by applying one or more of the eight operations {+, -, *, /, sqrt(), ^, !, concat11()}, with no operation used more than once, where "concat11()" means the operation of concatenating two single digits.
 * [A279019](oeis/A279019.asm): Least possible number of diagonals of simple convex polyhedron with n faces.
 * [A279075](oeis/A279075.asm): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/5) requires n steps to reach 0.
+* [A279077](oeis/A279077.asm): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/7) requires n steps to reach 0.
 * [A279078](oeis/A279078.asm): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/8) requires n steps to reach 0.
 * [A279169](oeis/A279169.asm): a(n) = floor( 4*n^2/5 ).
 * [A279316](oeis/A279316.asm): Period 7: repeat [0, 1, 2, 3, 3, 2, 1].
@@ -3803,6 +3900,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A281258](oeis/A281258.asm): Digital root of n*(n+1)*(n+2)/2.
 * [A281376](oeis/A281376.asm): Total number of counts where floor(N/k) < floor((N+k)/n) for k = {1, 2, ..., n-1} and N >= n.
 * [A281381](oeis/A281381.asm): a(n) = n*(n + 1)*(4*n + 5)/2.
+* [A281387](oeis/A281387.asm): Pairs (x, y) of relatively prime positive integers such that (x^2 - 5)/y and (y^2 - 5)/x are both positive integers.
 * [A281445](oeis/A281445.asm): Nonnegative k for which (2*k^2 + 1)/11 is an integer.
 * [A281546](oeis/A281546.asm): a(n) = 27*n + 2.
 * [A281813](oeis/A281813.asm): a(0) = 3, a(n) = 8*n + 4 for n > 0.
@@ -3841,6 +3939,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A288383](oeis/A288383.asm): Positions of 1 in A288381; complement of A288382.
 * [A288658](oeis/A288658.asm): Numbers whose squares have an even number of digits.
 * [A288918](oeis/A288918.asm): Number of 4-cycles in the n X n king graph.
+* [A288933](oeis/A288933.asm): Positions of 0 in A288932; complement of A288934.
 * [A288937](oeis/A288937.asm): Positions of 0 in A288936; complement of A288938.
 * [A288958](oeis/A288958.asm): Number of cliques in the n X n rook graph.
 * [A289133](oeis/A289133.asm): a(n) is the number of odd integers divisible by 9 in ]2*(n-1)^2, 2*n^2[.
@@ -3849,6 +3948,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A289207](oeis/A289207.asm): a(n) = max(0, n-2).
 * [A289443](oeis/A289443.asm): a(0)=2, a(1)=6; thereafter a(n) = 3*n^2.
 * [A290113](oeis/A290113.asm): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
+* [A290114](oeis/A290114.asm): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
 * [A290168](oeis/A290168.asm): If n is even then a(n) = n^2*(n+2)/8, otherwise a(n) = (n-1)*n*(n+1)/8.
 * [A290325](oeis/A290325.asm): Number of minimal dominating sets (and maximal irredundant sets) in the complete tripartite graph K_{n,n,n}.
 * [A290561](oeis/A290561.asm): a(n) = n + cos(n*Pi/2).
@@ -3868,6 +3968,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A292666](oeis/A292666.asm): Rank of n*(e+1) when all the numbers j*(e-1) and k*(e+1), for j>=1, k>=1, are jointly ranked.
 * [A292740](oeis/A292740.asm): Indices k such that A292547(k) = 0.
 * [A293064](oeis/A293064.asm): Number of vertices of type B at level n of the hyperbolic Pascal pyramid PP_(4,5).
+* [A293065](oeis/A293065.asm): Number of vertices of type D at level n of the hyperbolic Pascal pyramid PP_(4,5).
 * [A293137](oeis/A293137.asm): a(0) = 0, and a(n) = floor(2*sqrt(n)) - 1 for n >= 1.
 * [A293292](oeis/A293292.asm): Numbers with last digit less than 5 (in base 10).
 * [A293481](oeis/A293481.asm): Numbers with last digit greater than or equal to 5 (in base 10).
@@ -3921,10 +4022,12 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A301654](oeis/A301654.asm): Circumference of the n-triangular honeycomb acute knight graph.
 * [A301694](oeis/A301694.asm): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)*(1 - x^3)).
 * [A301696](oeis/A301696.asm): Partial sums of A219529.
+* [A301729](oeis/A301729.asm): a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
 * [A301755](oeis/A301755.asm): Decimal expansion of 3/8.
 * [A302402](oeis/A302402.asm): Total domination number of the n-ladder graph.
 * [A302488](oeis/A302488.asm): Total domination number of the n X n grid graph.
 * [A302537](oeis/A302537.asm): a(n) = (n^2 + 13*n + 2)/2.
+* [A302689](oeis/A302689.asm): a(n) = 4 + 2^n - 4*n.
 * [A302906](oeis/A302906.asm): a(0) = 0; for n > 0, a(n) = a(n-1) + 5*n + 4.
 * [A304157](oeis/A304157.asm): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
 * [A304158](oeis/A304158.asm): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
@@ -3934,13 +4037,16 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A304517](oeis/A304517.asm): a(n) = 16*2^n - 11 (n>=1).
 * [A304579](oeis/A304579.asm): a(n) = (n^2 + 1)*(n^2 + 2).
 * [A304659](oeis/A304659.asm): a(n) = n*(n + 1)*(16*n - 1)/6.
+* [A304836](oeis/A304836.asm): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304840](oeis/A304840.asm): a(n) = 52*n - 2 (n>=1).
 * [A304993](oeis/A304993.asm): a(n) = n*(n + 1)*(7*n + 5)/6.
+* [A305060](oeis/A305060.asm): a(n) = 18*2^n + 10.
 * [A305061](oeis/A305061.asm): a(n) = 20*2^n + 14.
 * [A305065](oeis/A305065.asm): a(n) = 48*2^n - 24.
 * [A305068](oeis/A305068.asm): a(n) = 54*n - 18 (n>=1).
 * [A305074](oeis/A305074.asm): a(n) = 20*n - 8 (n>=1).
 * [A305075](oeis/A305075.asm): a(n) = 32*n - 24 (n>=1).
+* [A305154](oeis/A305154.asm): a(n) = 36*2^n + 9.
 * [A305155](oeis/A305155.asm): a(n) = 28*2^n - 15.
 * [A305158](oeis/A305158.asm): a(n) = 21*2^n - 15.
 * [A305163](oeis/A305163.asm): a(n) = 24*2^n - 18.
