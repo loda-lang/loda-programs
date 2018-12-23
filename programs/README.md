@@ -678,6 +678,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A033327](oeis/A033327.asm): [ 7/n ].
 * [A033328](oeis/A033328.asm): [ 8/n ].
 * [A033329](oeis/A033329.asm): [ 9/n ].
+* [A033335](oeis/A033335.asm): [ 15/n ].
 * [A033428](oeis/A033428.asm): a(n) = 3*n^2.
 * [A033429](oeis/A033429.asm): a(n) = 5*n^2.
 * [A033430](oeis/A033430.asm): a(n) = 4*n^3.
@@ -2278,6 +2279,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A132171](oeis/A132171.asm): 3^n repeated 3^n times.
 * [A132197](oeis/A132197.asm): 2^n-1 written 2^n-1 times.
 * [A132209](oeis/A132209.asm): a(0) = 0 and a(n) = 2*n^2 + 2*n - 1, for n>=1.
+* [A132226](oeis/A132226.asm): Placement sequence for the dense normalized fractal sequence A132224.
 * [A132270](oeis/A132270.asm): Floor((n^7-1)/(7*n^6)), which is the same as integers repeated 7 times.
 * [A132271](oeis/A132271.asm): Product{k>=0, 1+floor(n/10^k)}.
 * [A132292](oeis/A132292.asm): Integers repeated 8 times: a(n) = floor((n-1)/8).
@@ -3533,6 +3535,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A239449](oeis/A239449.asm): 7*n^2 - 5*n + 1.
 * [A239492](oeis/A239492.asm): The fifth bicycle lock sequence: a(n) is the maximum value of min{x*y, (5-x)*(n-y)} over 0 <= x <= 5, 0 <= y <= n for integers x, y.
 * [A239568](oeis/A239568.asm): Number of ways to place 2 points on a triangular grid of side n so that they are not adjacent.
+* [A239745](oeis/A239745.asm): a(n) = (3*2^(n+2) + n*(n+5))/2 - 6.
 * [A239767](oeis/A239767.asm): Degrees of polynomial on the fermionic side of the finite generalization of identity 46 from Slater's List.
 * [A240001](oeis/A240001.asm): Number of 2 X n 0..3 arrays with no element equal to one plus the sum of elements to its left or two plus the sum of the elements above it or one plus the sum of the elements diagonally to its northwest, modulo 4.
 * [A240438](oeis/A240438.asm): Greatest minimal difference between numbers of adjacent cells in a regular hexagonal honeycomb of order n with cells numbered from 1 through the total number of cells, the order n corresponding to the number of cells on one side of the honeycomb.
@@ -3923,6 +3926,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A285998](oeis/A285998.asm): a(n) = Sum_{k=0..floor(n/2)} (n-k)*(k+1).
 * [A286264](oeis/A286264.asm): a(n) = 2*(ceiling((n^2)/2)+1) - 1.
 * [A286429](oeis/A286429.asm): Highest elevation of an island above sea level in a number square.
+* [A286430](oeis/A286430.asm): Least volume of water to surround the largest possible island in a number square.
 * [A286716](oeis/A286716.asm): a(n) = floor(n/2) - floor((n+1)/5), n >= 0.
 * [A286717](oeis/A286717.asm): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-phi, +phi), with the golden section phi = (1 + sqrt(5))/2.
 * [A286809](oeis/A286809.asm): Positions of 1 in A286807; complement of A286808.
