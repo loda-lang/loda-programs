@@ -171,6 +171,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A004775](oeis/A004775.asm): Numbers n such that the binary expansion of n does not end 011.
 * [A004776](oeis/A004776.asm): Numbers n not congruent to 5 (mod 8).
 * [A004919](oeis/A004919.asm): Floor of n*phi^4, where phi is the golden ratio, A001622.
+* [A004944](oeis/A004944.asm): Nearest integer to n*phi^9, where phi is the golden ratio, A001622.
 * [A004960](oeis/A004960.asm): Ceiling of n*phi^5, where phi is the golden ratio, A001622.
 * [A004963](oeis/A004963.asm): Ceiling of n*phi^8, where phi is the golden ratio, A001622.
 * [A004965](oeis/A004965.asm): Ceiling of n*phi^10, where phi is the golden ratio, A001622.
@@ -503,6 +504,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A021300](oeis/A021300.asm): Decimal expansion of 1/296.
 * [A021373](oeis/A021373.asm): Decimal expansion of 1/369.
 * [A021433](oeis/A021433.asm): Decimal expansion of 1/429.
+* [A021509](oeis/A021509.asm): Decimal expansion of 1/505.
 * [A021610](oeis/A021610.asm): Decimal expansion of 1/606.
 * [A021679](oeis/A021679.asm): Decimal expansion of 1/675.
 * [A021742](oeis/A021742.asm): Decimal expansion of 1/738.
@@ -1781,6 +1783,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A091999](oeis/A091999.asm): Numbers that are congruent to {2, 10} mod 12.
 * [A092038](oeis/A092038.asm): a(n+1) = a(n) + (a(n) mod 2)^(n mod a(n)), a(1) = 1.
 * [A092076](oeis/A092076.asm): Expansion of (1+4*x^3+x^6)/((1-x)*(1-x^3)^2).
+* [A092139](oeis/A092139.asm): Duplicate of A084558.
 * [A092185](oeis/A092185.asm): a(n) = (5/6)*n^3+(5/2)*n^2+(8/3)*n.
 * [A092200](oeis/A092200.asm): Expansion of (1+2x)/((1-x)(1-x^3)).
 * [A092242](oeis/A092242.asm): Numbers that are congruent to {5, 7} mod 12.
@@ -1862,6 +1865,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A099048](oeis/A099048.asm): Number of 5 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (01;0), (10;0) and (11;0).
 * [A099392](oeis/A099392.asm): a(n) = floor((n^2 - 2*n + 3)/2).
 * [A099396](oeis/A099396.asm): [ log2 (2/3 * (n-1)) ].
+* [A099429](oeis/A099429.asm): A Jacobsthal-Lucas convolution.
 * [A099479](oeis/A099479.asm): Count, repeating 4n three times for n > 0.
 * [A099480](oeis/A099480.asm): Count from 1, repeating 2n five times.
 * [A099721](oeis/A099721.asm): a(n) = n^2*(2*n+1).
@@ -1992,6 +1996,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A110803](oeis/A110803.asm): n times the number of digits in the decimal expansion of n.
 * [A110831](oeis/A110831.asm): a(n) = 3*n^2 + 27*n + 1.
 * [A111284](oeis/A111284.asm): Number of permutations of [n] avoiding the patterns {2143, 2341, 2413, 2431, 3142, 3241, 3412, 3421, 4123, 4213, 4231, 4321, 4132, 4312}; number of strong sorting classes based on 2143.
+* [A111286](oeis/A111286.asm): Number of permutations avoiding the patterns {1342, 1432, 2341, 2431, 3142, 3241, 3412, 3421, 4132, 4231, 4312, 4321}; number of strong sorting class based on 1342.
 * [A111396](oeis/A111396.asm): a(n) = n(n+7)(n+8)/6.
 * [A111575](oeis/A111575.asm): Powers of 3 repeated four times.
 * [A111650](oeis/A111650.asm): 2n appears n times (n>0).
@@ -3079,14 +3084,17 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A182220](oeis/A182220.asm): Largest number k such that there exists an extensional acyclic digraph on n labeled nodes with k sources.
 * [A182307](oeis/A182307.asm): a(n+1) = a(n) + floor(a(n)/6) with a(0)=6.
 * [A182461](oeis/A182461.asm): a(n) = 3*a(n-1) - 2*a(n-2) with a(0)=16 and a(1)=40.
+* [A182462](oeis/A182462.asm): a(n) = 3a(n-1) - 2a(n-2) with a(0)=20 and a(1)=50.
 * [A182464](oeis/A182464.asm): a(n) = 3a(n-1) - 2a(n-2) with a(0)=24 and a(1)=60.
 * [A182466](oeis/A182466.asm): a(n) = 3a(n-1) - 2a(n-2) with a(0)=32 and a(1)=80.
 * [A182467](oeis/A182467.asm): a(n) = 3a(n-1) - 2a(n-2) with a(0)=36 and a(1)=90.
 * [A182531](oeis/A182531.asm): Extremal graph numbers for a triangle with an edge off it.
 * [A182568](oeis/A182568.asm): a(n) = 2*floor(n/4)*(n - 2*(1 + floor(n/4))).
+* [A182664](oeis/A182664.asm): a(n) = A088828(n) + A157502(n).
 * [A182687](oeis/A182687.asm): a(n) = the smallest 1-digit number with exactly n divisors, a(n) = 0 if no such number exists.
 * [A182688](oeis/A182688.asm): a(n) = the largest 1-digit number with exactly n divisors, a(n) = 0 if no such number exists.
 * [A182815](oeis/A182815.asm): The third row of table A182630.
+* [A182834](oeis/A182834.asm): Complement of A007590, except for initial zeros.
 * [A183041](oeis/A183041.asm): Least number of knight's moves from (0,0) to (n,1) on infinite chessboard.
 * [A183155](oeis/A183155.asm): The number of order-preserving partial isometries (of an n-chain) of fix zero (fix of alpha = 0)). Equivalently, the number of order-preserving partial derangement isometries (of an n-chain).
 * [A183199](oeis/A183199.asm): Least integer k such that Floor(k*f(n+1)>k*f(n), where f(n)=(n^2)/(1+n^2).
