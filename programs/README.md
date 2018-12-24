@@ -149,6 +149,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A004396](oeis/A004396.asm): One even number followed by two odd numbers.
 * [A004442](oeis/A004442.asm): Natural numbers, pairs reversed: a(n) = n + (-1)^n; also Nimsum n + 1.
 * [A004444](oeis/A004444.asm): Nimsum n + 3.
+* [A004466](oeis/A004466.asm): a(n) = n*(5*n^2 - 2)/3.
 * [A004482](oeis/A004482.asm): Tersum n + 1 (answer recorded in base 10).
 * [A004523](oeis/A004523.asm): Two even followed by one odd; or floor(2n/3).
 * [A004524](oeis/A004524.asm): Three even followed by one odd.
@@ -1105,6 +1106,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A047597](oeis/A047597.asm): Numbers that are congruent to {0, 2, 3, 4, 5} mod 8.
 * [A047598](oeis/A047598.asm): Numbers that are congruent to {3, 4, 5} mod 8.
 * [A047599](oeis/A047599.asm): Numbers that are congruent to {0, 3, 4, 5} mod 8.
+* [A047600](oeis/A047600.asm): Numbers that are congruent to {1, 3, 4, 5} mod 8.
 * [A047602](oeis/A047602.asm): Numbers that are congruent to {0, 1, 2, 3, 4, 5} mod 8.
 * [A047604](oeis/A047604.asm): Numbers that are congruent to {2, 3, 5} mod 8.
 * [A047607](oeis/A047607.asm): Numbers that are congruent to {0, 1, 2, 3, 5} mod 8.
@@ -1950,6 +1952,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A106505](oeis/A106505.asm): Ordered and uniqued length of side common to the two angles, one being the double of the other, of a primitive integer-sided triangle.
 * [A106648](oeis/A106648.asm): 3*n^2+6*n+8.
 * [A106742](oeis/A106742.asm): a[n] =a[a[a[a[a[n - a[n-1]]]]]] + a[n - a[n-2]].
+* [A106832](oeis/A106832.asm): 4n-2 and 6n alternatively.
 * [A106833](oeis/A106833.asm): 3n and 2n, alternating.
 * [A106839](oeis/A106839.asm): Numbers congruent to 11 mod 16.
 * [A107386](oeis/A107386.asm): a(n) = 2*a(n-1) - 2*a(n-3) + a(n-4), n>6.
@@ -2709,6 +2712,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A158498](oeis/A158498.asm): a(n) = (1/2)*(n^3 - 6*n^2 + 13*n - 6).
 * [A158515](oeis/A158515.asm): Number of colors needed to paint a wheel graph on n nodes.
 * [A158563](oeis/A158563.asm): 32n^2 - 1.
+* [A158575](oeis/A158575.asm): a(n) = 32*n^2 + 1.
 * [A158607](oeis/A158607.asm): Period 5: repeat 9,11,13,5,7.
 * [A158686](oeis/A158686.asm): 64n^2 + 1.
 * [A158772](oeis/A158772.asm): a(n) = A138635(n+18)-A138635(n).
@@ -2978,6 +2982,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A173036](oeis/A173036.asm): Triangular numbers + 13.
 * [A173102](oeis/A173102.asm): Number of partitions x+y=z with {x,y,z} in {1,2,3,..,3n} and z>y>=x.
 * [A173196](oeis/A173196.asm): Partial sums of A002620.
+* [A173263](oeis/A173263.asm): Successive numbers n such that ChebyshevT[n/2, n] is not an integer.
 * [A173276](oeis/A173276.asm): a(n) = a(n-2) + a(n-3) - floor(a(n-3)/2) - floor(a(n-4)/2).
 * [A173307](oeis/A173307.asm): a(n) = 13*n*(n+1).
 * [A173309](oeis/A173309.asm): 19*n*(n+1).
@@ -3190,6 +3195,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A189836](oeis/A189836.asm): a(n) = n^2 + 11.
 * [A189890](oeis/A189890.asm): a(n) = (n^3 - 2*n^2 + 3*n + 2)/2.
 * [A190035](oeis/A190035.asm): Number of nondecreasing arrangements of n+2 numbers in 0..3 with the last equal to 3 and each after the second equal to the sum of one or two of the preceding three.
+* [A190062](oeis/A190062.asm): a(n) = n*Fibonacci(n) - Sum_{i=0..n-1} Fibonacci(i).
 * [A190091](oeis/A190091.asm): Number of rhombuses on a (n+1) X 3 grid.
 * [A190576](oeis/A190576.asm): a(n) = n^2 + 5*n - 5.
 * [A190621](oeis/A190621.asm): a(n) = n if n is not divisible by 4, otherwise 0.
@@ -3381,6 +3387,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A213398](oeis/A213398.asm): Number of (w,x,y) with all terms in {0,...,n} and min(|w-x|,|x-y|) = x.
 * [A213484](oeis/A213484.asm): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| >= w+x+y.
 * [A214392](oeis/A214392.asm): If n mod 4 = 0 then a(n) = n/4, otherwise a(n) = n.
+* [A214394](oeis/A214394.asm): If n mod 6 = 0 then n/6 else n.
 * [A214659](oeis/A214659.asm): a(n) = n*(7*n^2 - 3*n - 1)/3.
 * [A214660](oeis/A214660.asm): 9*n^2 - 11*n + 3.
 * [A214675](oeis/A214675.asm): 9*n^2 - 13*n + 5.
@@ -3911,6 +3918,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A282513](oeis/A282513.asm): a(n) = floor((3*n + 2)^2/24 + 1/3).
 * [A282532](oeis/A282532.asm): Position where the discrete difference of the Poissonian probability distribution function with mean n takes its lowest value. In case of a tie, pick the smallest value.
 * [A282737](oeis/A282737.asm): Expansion of (x^6 - x^4 + x^3 - x - 1)/((x - 1)^3*(x + 1)^2).
+* [A282738](oeis/A282738.asm): First differences of A282737.
 * [A282848](oeis/A282848.asm): a(n) = 2*n + 1 + n mod 4.
 * [A282852](oeis/A282852.asm): 37-gonal numbers: a(n) = n*(35*n-33)/2.
 * [A282854](oeis/A282854.asm): 34-gonal numbers: a(n) = n*(32*n-30)/2.
