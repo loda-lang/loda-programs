@@ -3,15 +3,9 @@
 
 mov $2,$0
 lpb $2,1
-  add $4,4
-  lpb $4,1
-    add $1,$0
-    sub $1,1
-    add $1,$0
-    add $0,8
-    sub $4,$0
-  lpe
+  add $1,$0
+  add $0,8
   sub $1,$2
   sub $2,1
+  add $1,$0
 lpe
-add $1,$0
