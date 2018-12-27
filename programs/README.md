@@ -57,6 +57,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A000934](oeis/A000934.asm): Chromatic number (or Heawood number) Chi(n) of surface of genus n.
 * [A000960](oeis/A000960.asm): Flavius Josephus's sieve: Start with the natural numbers; at the k-th sieving step, remove every (k+1)-st term of the sequence remaining after the (k-1)-st sieving step; iterate.
 * [A000969](oeis/A000969.asm): Expansion of (1+x+2*x^2)/((1-x)^2*(1-x^3)).
+* [A000975](oeis/A000975.asm): a(2n) = 2*a(2n-1), a(2n+1) = 2*a(2n)+1 (also a(n) is the n-th number without consecutive equal binary digits).
 * [A000982](oeis/A000982.asm): a(n) = ceiling(n^2/2).
 * [A001060](oeis/A001060.asm): a(n) = a(n-1) + a(n-2) with a(0)=2, a(1)=5. Sometimes called the Evangelist Series.
 * [A001068](oeis/A001068.asm): a(n) = floor(5*n/4), numbers that are congruent to {0, 1, 2, 3} mod 5.
@@ -74,6 +75,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A001519](oeis/A001519.asm): a(n) = 3*a(n-1) - a(n-2), with a(0) = a(1) = 1.
 * [A001539](oeis/A001539.asm): a(n) = (4*n+1)*(4*n+3).
 * [A001588](oeis/A001588.asm): a(n) = a(n-1) + a(n-2) - 1.
+* [A001595](oeis/A001595.asm): a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
 * [A001614](oeis/A001614.asm): Connell sequence: 1 odd, 2 even, 3 odd, ...
 * [A001650](oeis/A001650.asm): n appears n times (n odd).
 * [A001670](oeis/A001670.asm): n appears n times (n even).
@@ -352,6 +354,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A011860](oeis/A011860.asm): Floor( n(n-1)/7 ).
 * [A011861](oeis/A011861.asm): a(n) = floor(n(n-1)/8).
 * [A011862](oeis/A011862.asm): a(n) = floor(n*(n-1)/9).
+* [A011866](oeis/A011866.asm): [ n(n-1)/13 ].
 * [A011867](oeis/A011867.asm): a(n) = floor(n*(n-1)/14).
 * [A011871](oeis/A011871.asm): [ n(n-1)/18 ].
 * [A011875](oeis/A011875.asm): Floor( n*(n-1)/22 ).
@@ -520,6 +523,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A021892](oeis/A021892.asm): Decimal expansion of 1/888.
 * [A022086](oeis/A022086.asm): Fibonacci sequence beginning 0, 3.
 * [A022087](oeis/A022087.asm): Fibonacci sequence beginning 0, 4.
+* [A022088](oeis/A022088.asm): Fibonacci sequence beginning 0, 5.
 * [A022089](oeis/A022089.asm): Fibonacci sequence beginning 0, 6.
 * [A022122](oeis/A022122.asm): Fibonacci sequence beginning 3, 10.
 * [A022136](oeis/A022136.asm): Fibonacci sequence beginning 5, 11.
@@ -538,6 +542,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A022275](oeis/A022275.asm): a(n) = n*(17*n + 1)/2.
 * [A022276](oeis/A022276.asm): a(n) = n*(19*n - 1)/2.
 * [A022277](oeis/A022277.asm): a(n) = n*(19*n + 1)/2.
+* [A022279](oeis/A022279.asm): a(n) = n*(21*n + 1)/2.
 * [A022308](oeis/A022308.asm): a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=0, a(1)=3.
 * [A022311](oeis/A022311.asm): a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=0, a(1)=1.
 * [A022313](oeis/A022313.asm): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 0 and a(1) = 8.
@@ -720,6 +725,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A033581](oeis/A033581.asm): a(n) = 6*n^2.
 * [A033582](oeis/A033582.asm): 7*n^2.
 * [A033583](oeis/A033583.asm): a(n) = 10*n^2.
+* [A033584](oeis/A033584.asm): 11n^2.
 * [A033585](oeis/A033585.asm): a(n) = 2*n*(4*n+1).
 * [A033586](oeis/A033586.asm): a(n) = 4*n*(2*n + 1).
 * [A033587](oeis/A033587.asm): a(n) = 2*n*(4*n + 3).
@@ -1950,6 +1956,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A102515](oeis/A102515.asm): a(n) = floor(1 + sqrt(2n + 1)).
 * [A102603](oeis/A102603.asm): 24n + 21.
 * [A102860](oeis/A102860.asm): Number of ways to change three non-identical letters in the word aabbccdd..., where there are n types of letters.
+* [A102899](oeis/A102899.asm): a(n) = ceiling(n/3)^2 - floor(n/3)^2.
 * [A103128](oeis/A103128.asm): n appears 2 * ceiling(n/2) times.
 * [A103192](oeis/A103192.asm): Trajectory of 1 under repeated application of the function n -> A102370(n).
 * [A103204](oeis/A103204.asm): a(1) = 2, a(2) = 4; a(n) = 2*a(n-1) - 1.
@@ -2378,6 +2385,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A133655](oeis/A133655.asm): a(n) = 2*A016777(n) + A016777(n-1) - (n+1).
 * [A133694](oeis/A133694.asm): a(n) = (3*n^2 + 3*n - 4)/2.
 * [A133851](oeis/A133851.asm): Sloping binary representation of powers of 4 (A000302), slope = -1 .
+* [A133874](oeis/A133874.asm): n modulo 4 repeated 4 times.
 * [A133876](oeis/A133876.asm): n modulo 6 repeated 6 times.
 * [A133893](oeis/A133893.asm): Numbers m such that binomial(m+3,m) mod 3 = 0.
 * [A133894](oeis/A133894.asm): Numbers m such that binomial(m+4,m) mod 4 = 0.
