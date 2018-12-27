@@ -112,6 +112,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A002620](oeis/A002620.asm): Quarter-squares: floor(n/2)*ceiling(n/2). Equivalently, floor(n^2/4).
 * [A002623](oeis/A002623.asm): G.f.: 1/((1-x)^4*(1+x)).
 * [A002817](oeis/A002817.asm): Doubly triangular numbers: a(n) = n*(n+1)*(n^2+n+2)/8.
+* [A002878](oeis/A002878.asm): Bisection of Lucas sequence: a(n) = L(2*n+1).
 * [A002939](oeis/A002939.asm): a(n) = 2*n*(2*n-1).
 * [A002943](oeis/A002943.asm): a(n) = 2*n*(2*n+1).
 * [A003057](oeis/A003057.asm): n appears n - 1 times.
@@ -1122,6 +1123,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A047600](oeis/A047600.asm): Numbers that are congruent to {1, 3, 4, 5} mod 8.
 * [A047602](oeis/A047602.asm): Numbers that are congruent to {0, 1, 2, 3, 4, 5} mod 8.
 * [A047604](oeis/A047604.asm): Numbers that are congruent to {2, 3, 5} mod 8.
+* [A047606](oeis/A047606.asm): Numbers that are congruent to {1, 2, 3, 5} mod 8.
 * [A047607](oeis/A047607.asm): Numbers that are congruent to {0, 1, 2, 3, 5} mod 8.
 * [A047608](oeis/A047608.asm): Numbers that are congruent to {4, 5} mod 8.
 * [A047609](oeis/A047609.asm): Numbers that are congruent to {0, 4, 5} mod 8.
@@ -1169,6 +1171,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A049453](oeis/A049453.asm): Second pentagonal numbers with even index: a(n) = n*(6*n+1).
 * [A049480](oeis/A049480.asm): a(n) = (2*n-1)*(n^2 -n +6)/6.
 * [A049598](oeis/A049598.asm): 12 times triangular numbers.
+* [A049610](oeis/A049610.asm): Sum( k*binomial(n,2*k), 0 <= k <= n/2) = floor( n*2^(n-3) ).
 * [A049636](oeis/A049636.asm): Congruent to 0 or 2 mod 3, but not equal to 0 or 3.
 * [A049778](oeis/A049778.asm): a(n)=Sum{T(n,2k-1): k=1,2,...,[(n+1)/2]}, array T as in A049777.
 * [A049779](oeis/A049779.asm): a(n) = Sum{T(n,2k): k=1,2,...,[ n/2 ]}, array T as in A049777.
@@ -1756,6 +1759,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A087475](oeis/A087475.asm): a(n) = n^2 + 4.
 * [A087483](oeis/A087483.asm): Row 0 of the order array of 3/2, i.e., row 0 of the transposable dispersion in A087465.
 * [A087508](oeis/A087508.asm): Number of k such that mod(k*n,3) = 1 for 0 <= k <= n.
+* [A087509](oeis/A087509.asm): a(n) = #{k=0..n, mod(kn,3) = 2}.
 * [A087811](oeis/A087811.asm): Numbers n such that ceiling(sqrt(n)) divides n.
 * [A087847](oeis/A087847.asm): a(n) = a(|n - a(n-1)|) + a(a(a(|n - a(n-4)|))).
 * [A087863](oeis/A087863.asm): (n^3+24*n^2+65*n+36)/6.
@@ -1864,6 +1868,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A097578](oeis/A097578.asm): a(n) = (2*n+1)*2^floor((n+1)/2).
 * [A097602](oeis/A097602.asm): a(n+1) = a(n) + number of squares so far; a(1) = 1.
 * [A097803](oeis/A097803.asm): a(n) = 3(2*n^2 + 1).
+* [A097810](oeis/A097810.asm): a(n) = 7*2^n - 3n - 6.
 * [A097813](oeis/A097813.asm): a(n) = 3*2^n - 2*n - 2.
 * [A097921](oeis/A097921.asm): G.f.: (1-x^6)*(1-x^8)/((1-x)*(1-x^2)*(1-x^3)^2*(1-x^4)).
 * [A097950](oeis/A097950.asm): G.f.: (1+x^5+x^10)/((1-x)*(1-x^3)).
@@ -2352,6 +2357,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A132769](oeis/A132769.asm): a(n) = n*(n + 27).
 * [A132770](oeis/A132770.asm): a(n) = n*(n + 28).
 * [A132771](oeis/A132771.asm): a(n) = n*(n + 29).
+* [A132772](oeis/A132772.asm): a(n) = n*(n + 30).
 * [A132773](oeis/A132773.asm): a(n) = n*(n + 31).
 * [A132925](oeis/A132925.asm): a(n) = 2^n - 1 + n*(n-1)/2.
 * [A133016](oeis/A133016.asm): Even imperfect numbers, divided by 2.
@@ -2625,6 +2631,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A152740](oeis/A152740.asm): 11 times triangular numbers.
 * [A152741](oeis/A152741.asm): 13 times triangular numbers.
 * [A152743](oeis/A152743.asm): 6 times pentagonal numbers: a(n) = 3*n*(3*n-1).
+* [A152744](oeis/A152744.asm): 7 times pentagonal numbers: a(n) = 7*n*(3*n-1)/2.
 * [A152745](oeis/A152745.asm): 5 times hexagonal numbers: 5*n*(2*n-1).
 * [A152746](oeis/A152746.asm): Six times hexagonal numbers: 6*n*(2*n-1).
 * [A152749](oeis/A152749.asm): a(n) = (n+1)*(3*n+1)/4 for n odd, a(n) = n*(3*n+2)/4 for n even.
@@ -2982,6 +2989,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A168670](oeis/A168670.asm): Numbers that are congruent to {1, 8} mod 11.
 * [A168671](oeis/A168671.asm): Numbers that are congruent to {1, 10} mod 13.
 * [A168672](oeis/A168672.asm): Numbers that are congruent to {2,13} mod 17.
+* [A169607](oeis/A169607.asm): 7*A000330(n).
 * [A169823](oeis/A169823.asm): Multiples of 60.
 * [A169831](oeis/A169831.asm): a(n) = 5*2^(n+1) - 3*(n+3).
 * [A169932](oeis/A169932.asm): a(n) = 0+n in the arithmetic defined in A169918.
@@ -3197,6 +3205,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A186357](oeis/A186357.asm): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186357.
 * [A186384](oeis/A186384.asm): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j(j+1)/2 (triangular number).  Complement of A186383.
 * [A186424](oeis/A186424.asm): Odd terms in A186423.
+* [A186497](oeis/A186497.asm): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i-2 and g(j)=j-th triangular number.  Complement of A186498.
 * [A186498](oeis/A186498.asm): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i-2 and g(j)=j-th triangular number.  Complement of A186497.
 * [A186682](oeis/A186682.asm): Total number of positive integers below 10^n requiring 18 positive biquadrates in their representation as sum of biquadrates.
 * [A186683](oeis/A186683.asm): Total number of n-digit numbers requiring 18 positive biquadrates in their representation as sum of biquadrates.
@@ -3449,6 +3458,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A214922](oeis/A214922.asm): Numbers of the form x^2 + y^2 + z^3 + w^3 (x, y, z, w >= 0).
 * [A214927](oeis/A214927.asm): Number of n-digit numbers N that do not end with 0 and are such that the reversal of N divides N but is different from N.
 * [A214972](oeis/A214972.asm): a(n) = a(floor(2*(n-1)/3)) + 1, where a(0) = 0.
+* [A215098](oeis/A215098.asm): a(0)=0, a(1)=1, a(n) = n*(n-1) - a(n-2).
 * [A215137](oeis/A215137.asm): a(n) = 17*n + 1.
 * [A215144](oeis/A215144.asm): a(n) = 19*n + 1.
 * [A215145](oeis/A215145.asm): a(n) = 20*n + 1.
@@ -3494,6 +3504,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A221882](oeis/A221882.asm): Number of order-preserving or order-reversing full contraction mappings of an n-chain.
 * [A221912](oeis/A221912.asm): Partial sums of floor(n/12).
 * [A222001](oeis/A222001.asm): Number of n X 3 arrays with each row a permutation of 1..3 having at least as many downsteps as the preceding row, with rows in lexicographically nonincreasing order.
+* [A222170](oeis/A222170.asm): a(n) = n^2 + 2*floor(n^2/3).
 * [A222256](oeis/A222256.asm): Lexicographically earliest injective sequence of nonnegative integers such that the sum of 6 consecutive terms is always divisible by 6.
 * [A222257](oeis/A222257.asm): Lexicographically earliest injective sequence of positive integers such that the sum of 6 consecutive terms is always divisible by 6.
 * [A222258](oeis/A222258.asm): Lexicographically earliest injective sequence of nonnegative integers such that the sum of 8 consecutive terms is always divisible by 8.
@@ -3834,6 +3845,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A267182](oeis/A267182.asm): Row 2 of the square array in A267181.
 * [A267185](oeis/A267185.asm): Column 2 of the square array in A267181.
 * [A267317](oeis/A267317.asm): a(n) = final digit of 2^n-1.
+* [A267352](oeis/A267352.asm): Number of ON (black) cells in the n-th iteration of the "Rule 123" elementary cellular automaton starting with a single ON (black) cell.
 * [A267354](oeis/A267354.asm): Number of OFF (white) cells in the n-th iteration of the "Rule 123" elementary cellular automaton starting with a single ON (black) cell.
 * [A267370](oeis/A267370.asm): Partial sums of A140091.
 * [A267458](oeis/A267458.asm): Number of ON (black) cells in the n-th iteration of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
@@ -4089,6 +4101,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A299232](oeis/A299232.asm): Ranks of {2,3}-power towers that start with 3; see Comments.
 * [A299641](oeis/A299641.asm): Solution (d(n)) of the system of 5 complementary equations in Comments.
 * [A299647](oeis/A299647.asm): Positive solutions to x^2 == -2 (mod 11).
+* [A300076](oeis/A300076.asm): A sequence based on the period 6 sequence A300075.
 * [A300293](oeis/A300293.asm): A sequence based on the period 6 sequence A151899.
 * [A300576](oeis/A300576.asm): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300659](oeis/A300659.asm): Product of digits of n!.
