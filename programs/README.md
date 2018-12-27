@@ -2204,6 +2204,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A127321](oeis/A127321.asm): First 4-dimensional hyper-tetrahedral coordinate; repeat m C(m+3,4) times; 4-D analog of A056556.
 * [A127419](oeis/A127419.asm): Recurrence: a(n) = a(n-1) + floor( (sqrt(8 * a(n-1) - 7) - 1)/2 ) for n>=2 with a(0)=1, a(1)=2.
 * [A127547](oeis/A127547.asm): a(n) = 13n + 4.
+* [A127648](oeis/A127648.asm): Triangle read by rows: row n consists of n zeros followed by n+1.
 * [A127736](oeis/A127736.asm): a(n) = n*(n^2+2*n-1)/2.
 * [A127739](oeis/A127739.asm): Triangle read by rows, in which row n contains the triangular number T(n) = A000217(n) repeated n times.
 * [A127773](oeis/A127773.asm): Triangle read by rows: row n consists of n-1 zeros followed by n(n+1)/2.
@@ -3119,6 +3120,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A180595](oeis/A180595.asm): Digital root of 5n.
 * [A180596](oeis/A180596.asm): Digital root of 6n.
 * [A180598](oeis/A180598.asm): Digital root of 8n.
+* [A180671](oeis/A180671.asm): a(n) = Fibonacci(n+6) - Fibonacci(6).
 * [A180863](oeis/A180863.asm): Wiener index of the n-sun graph.
 * [A181120](oeis/A181120.asm): Partial sums of round(n^2/12) (A069905).
 * [A181133](oeis/A181133.asm): a(n) = n + A003056(n).
@@ -3308,6 +3310,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A194960](oeis/A194960.asm): a(n) = floor((n+2)/3) + ((n-1) mod 3).
 * [A194999](oeis/A194999.asm): Number of lower triangles of a 3 X 3 0..n array with each element differing from all of its horizontal and vertical neighbors by one.
 * [A195014](oeis/A195014.asm): Vertex number of a square spiral whose edges have length A195013.
+* [A195016](oeis/A195016.asm): (n*(5*n+7)-(-1)^n+1)/2.
 * [A195018](oeis/A195018.asm): a(n) = n*(10*n-3).
 * [A195020](oeis/A195020.asm): Vertex number of a square spiral in which the length of the first two edges are the legs of the primitive Pythagorean triple [3, 4, 5]. The edges of the spiral have length A195019.
 * [A195021](oeis/A195021.asm): a(n) = n*(14*n - 11).
@@ -3684,6 +3687,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A246639](oeis/A246639.asm): Sequence a(n) = 3 + 5*A001519(n+1) appearing in a certain three circle touching problem, together with A246638.
 * [A246640](oeis/A246640.asm): Sequence a(n) = 1 + A001519(n+1) appearing in a certain touching problem for three circles and a chord, together with A246638.
 * [A246705](oeis/A246705.asm): Position of first n in A246694 (read as sequence with offset changed to 1); complement of A246706.
+* [A246706](oeis/A246706.asm): Position of last n in A246694 (read as a sequence, with offset changed to 1); complement of A246705.
 * [A247018](oeis/A247018.asm): a(n) = 3*n^2 + n + 3.
 * [A247160](oeis/A247160.asm): Dynamic Betting Game D(n,4,3).
 * [A247375](oeis/A247375.asm): Numbers n such that floor(n/2) is a square.

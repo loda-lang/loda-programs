@@ -7,7 +7,5 @@ add $0,$0
 add $0,$0
 add $0,$0
 sub $0,1
-mov $4,$0
-add $1,5
-add $1,$4
-add $1,4
+mov $1,$0
+add $1,9
