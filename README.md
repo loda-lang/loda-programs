@@ -48,19 +48,12 @@ Generator options:
 
 ### Mining Programs for Integer Sequences from the OEIS
 
-You need to download the following files from the OEIS and unpack them in the LODA
-root directory:
-
-* https://oeis.org/stripped.gz
-* https://oeis.org/names.gz
-
-After that, you can mine programs for integer sequences by running the following command:
-
-```
-./loda mine
-```
-
-Found programs are written to `programs/oeis`. Existing programs are overriden if the new program is shorter than the existing one.
+Before mining programs for integer sequences, you need to download files from the
+[https://oeis.org](OEIS website). Use the `get_oeis.sh` script to download the
+required files. After that, you may run `loda mine` to search for programs for
+integer sequences from OEIS. Found programs are written to `programs/oeis`.
+Existing programs are overriden if the new program is shorter than the existing
+one.
 
 ## Language
 
