@@ -16,5 +16,8 @@ for name in programs/oeis/*.asm; do
   filename=$(basename -- "$name")
   aname="${filename%.*}"
   bname=${aname/A/b}
-  wget -nv -O ${oeis_dir}/b/${bname}.txt https://oeis.org/${aname}/${bname}.txt
+  bfile=${oeis_dir}/b/${bname}.txt
+  if [ ! -f "${bfile}" ]; then
+    wget -nv -O ${bfile} https://oeis.org/${aname}/${bname}.txt
+  fi
 done
