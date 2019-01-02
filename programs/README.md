@@ -221,6 +221,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A006165](http://oeis.org/A006165) ([program](oeis/A006165.asm)): a(1) = a(2) = 1; thereafter a(2n+1) = a(n+1) + a(n), a(2n) = 2a(n).
 * [A006218](http://oeis.org/A006218) ([program](oeis/A006218.asm)): a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
 * [A006257](http://oeis.org/A006257) ([program](oeis/A006257.asm)): Josephus problem: a(2n) = 2*a(n)-1, a(2n+1) = 2*a(n)+1.
+* [A006327](http://oeis.org/A006327) ([program](oeis/A006327.asm)): Fibonacci numbers - 3. Number of total preorders.
 * [A006331](http://oeis.org/A006331) ([program](oeis/A006331.asm)): a(n) = n*(n+1)*(2*n+1)/3.
 * [A006416](http://oeis.org/A006416) ([program](oeis/A006416.asm)): Number of rooted planar maps. Also a(n)=T(4,n-3), array T as in A049600.
 * [A006446](http://oeis.org/A006446) ([program](oeis/A006446.asm)): Numbers n such that floor(sqrt(n)) divides n.
@@ -367,6 +368,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A014106](http://oeis.org/A014106) ([program](oeis/A014106.asm)): a(n) = n*(2*n + 3).
 * [A014125](http://oeis.org/A014125) ([program](oeis/A014125.asm)): Bisection of A001400.
 * [A014132](http://oeis.org/A014132) ([program](oeis/A014132.asm)): T(n,k) = ((n+k)^2 + n-k)/2, n, k > 0, read by antidiagonals.
+* [A014205](http://oeis.org/A014205) ([program](oeis/A014205.asm)): (1/12)*(n+5)*(n+1)*n^2.
 * [A014206](http://oeis.org/A014206) ([program](oeis/A014206.asm)): a(n) = n^2 + n + 2.
 * [A014255](http://oeis.org/A014255) ([program](oeis/A014255.asm)): Expansion of (1+2*x+3*x^2)/((1-x)*(1-x^2)^2).
 * [A014286](http://oeis.org/A014286) ([program](oeis/A014286.asm)): a(n) = Sum_{i=0..n} i*Fibonacci(i).
@@ -518,6 +520,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A021388](http://oeis.org/A021388) ([program](oeis/A021388.asm)): Decimal expansion of 1/384.
 * [A021433](http://oeis.org/A021433) ([program](oeis/A021433.asm)): Decimal expansion of 1/429.
 * [A021509](http://oeis.org/A021509) ([program](oeis/A021509.asm)): Decimal expansion of 1/505.
+* [A021546](http://oeis.org/A021546) ([program](oeis/A021546.asm)): Decimal expansion of 1/542.
 * [A021580](http://oeis.org/A021580) ([program](oeis/A021580.asm)): Decimal expansion of 1/576.
 * [A021610](http://oeis.org/A021610) ([program](oeis/A021610.asm)): Decimal expansion of 1/606.
 * [A021679](http://oeis.org/A021679) ([program](oeis/A021679.asm)): Decimal expansion of 1/675.
@@ -529,6 +532,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A022087](http://oeis.org/A022087) ([program](oeis/A022087.asm)): Fibonacci sequence beginning 0, 4.
 * [A022088](http://oeis.org/A022088) ([program](oeis/A022088.asm)): Fibonacci sequence beginning 0, 5.
 * [A022089](http://oeis.org/A022089) ([program](oeis/A022089.asm)): Fibonacci sequence beginning 0, 6.
+* [A022092](http://oeis.org/A022092) ([program](oeis/A022092.asm)): Fibonacci sequence beginning 0, 9.
 * [A022122](http://oeis.org/A022122) ([program](oeis/A022122.asm)): Fibonacci sequence beginning 3, 10.
 * [A022136](http://oeis.org/A022136) ([program](oeis/A022136.asm)): Fibonacci sequence beginning 5, 11.
 * [A022144](http://oeis.org/A022144) ([program](oeis/A022144.asm)): Coordination sequence for root lattice B_2.
@@ -1138,6 +1142,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A047622](http://oeis.org/A047622) ([program](oeis/A047622.asm)): Numbers that are congruent to {0, 3, 5} mod 8.
 * [A047623](http://oeis.org/A047623) ([program](oeis/A047623.asm)): Numbers that are congruent to {1, 3, 5} mod 8.
 * [A047624](http://oeis.org/A047624) ([program](oeis/A047624.asm)): Numbers that are congruent to {0, 1, 3, 5} mod 8.
+* [A047667](http://oeis.org/A047667) ([program](oeis/A047667.asm)): Row 3 of array in A047666.
 * [A047732](http://oeis.org/A047732) ([program](oeis/A047732.asm)): First differences are A005563.
 * [A047838](http://oeis.org/A047838) ([program](oeis/A047838.asm)): a(n) = floor(n^2/2) - 1.
 * [A047839](http://oeis.org/A047839) ([program](oeis/A047839.asm)): a(n) = n + floor( sqrt(2*n) ).
@@ -1385,6 +1390,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A062123](http://oeis.org/A062123) ([program](oeis/A062123.asm)): 2 + (n + n^2)*9/2.
 * [A062289](http://oeis.org/A062289) ([program](oeis/A062289.asm)): Numbers n such that n-th row in Pascal triangle contains an even number, i.e., A048967(n) > 0.
 * [A062318](http://oeis.org/A062318) ([program](oeis/A062318.asm)): Numbers of the form 3^m - 1 or 2*3^m - 1; i.e., the union of sequences A048473 and A024023.
+* [A062392](http://oeis.org/A062392) ([program](oeis/A062392.asm)): a(n) = n^4 - (n-1)^4 + (n-2)^4 - ... 0^4.
 * [A062545](http://oeis.org/A062545) ([program](oeis/A062545.asm)): Continued fraction for the 2nd Du Bois-Reymond constant.
 * [A062708](http://oeis.org/A062708) ([program](oeis/A062708.asm)): Write 0,1,2,3,4,... in a triangular spiral; then a(n) is the sequence found by reading the terms along the line from 0 in the direction 0,2,...
 * [A062709](http://oeis.org/A062709) ([program](oeis/A062709.asm)): a(n) = 2^n + 3.
@@ -1743,6 +1749,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A086514](http://oeis.org/A086514) ([program](oeis/A086514.asm)): Difference between the arithmetic mean of the neighbors of the terms and the term itself follows the pattern 0,1,2,3,4,5,...
 * [A086515](http://oeis.org/A086515) ([program](oeis/A086515.asm)): Duplicate of A047241.
 * [A086570](http://oeis.org/A086570) ([program](oeis/A086570.asm)): Expansion of (1 + 3x + 5x^2 + 7x^3...) / (1 - 2x + 3x^2 - 4x^3...).
+* [A086601](http://oeis.org/A086601) ([program](oeis/A086601.asm)): Triangular numbers + 1 squared.
 * [A086602](http://oeis.org/A086602) ([program](oeis/A086602.asm)): a(n) = A000217(A000217(n))-n^2.
 * [A086640](http://oeis.org/A086640) ([program](oeis/A086640.asm)): Arrange n^2 octagons that each have area 7 so that they leave (n-1)^2 square gaps each with area 2; a(n) is the total area of these polygons.
 * [A086653](http://oeis.org/A086653) ([program](oeis/A086653.asm)): 2^n + 3*n.
@@ -1795,6 +1802,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A090771](http://oeis.org/A090771) ([program](oeis/A090771.asm)): Numbers that are congruent to {1, 9} mod 10.
 * [A090772](http://oeis.org/A090772) ([program](oeis/A090772.asm)): Numbers that are congruent to {2, 8} mod 10.
 * [A090773](http://oeis.org/A090773) ([program](oeis/A090773.asm)): Numbers that are congruent to {4, 6} mod 10.
+* [A090809](http://oeis.org/A090809) ([program](oeis/A090809.asm)): Coefficient of the irreducible character of S_m indexed by (m-2n+2,2n-2) in the n-th Kronecker power of the representation indexed by (m-2,2).
 * [A090989](http://oeis.org/A090989) ([program](oeis/A090989.asm)): Number of meaningful differential operations of the n-th order on the space R^4.
 * [A091084](http://oeis.org/A091084) ([program](oeis/A091084.asm)): mod(A001045(n),10).
 * [A091086](http://oeis.org/A091086) ([program](oeis/A091086.asm)): a(n) = A000975(n) mod 10.
@@ -2624,6 +2632,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A147534](http://oeis.org/A147534) ([program](oeis/A147534.asm)): a(n) is congruent to (1,1,2) mod 3.
 * [A147587](http://oeis.org/A147587) ([program](oeis/A147587.asm)): a(n) = 14*n + 7.
 * [A147623](http://oeis.org/A147623) ([program](oeis/A147623.asm)): The 3rd Witt transform of A040000.
+* [A147651](http://oeis.org/A147651) ([program](oeis/A147651.asm)): First trisection of A028560.
 * [A147656](http://oeis.org/A147656) ([program](oeis/A147656.asm)): The arithmetic mean of the n-th and (n+1)-st cubes, rounded down.
 * [A147677](http://oeis.org/A147677) ([program](oeis/A147677.asm)): Subtract 5, add 8, repeat.
 * [A147685](http://oeis.org/A147685) ([program](oeis/A147685.asm)): Squares and centered square numbers interleaved.
@@ -2717,6 +2726,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A154612](http://oeis.org/A154612) ([program](oeis/A154612.asm)): 17n + 7.
 * [A154617](http://oeis.org/A154617) ([program](oeis/A154617.asm)): Eleven times hexagonal numbers: 11*n*(2*n-1).
 * [A154708](http://oeis.org/A154708) ([program](oeis/A154708.asm)): Numbers a such that b and c exist with b <= a < c and a*(a+1) + b^2 = c^2.
+* [A155086](http://oeis.org/A155086) ([program](oeis/A155086.asm)): Numbers n such that n^2 == -1 (mod 13).
 * [A155095](http://oeis.org/A155095) ([program](oeis/A155095.asm)): Numbers n such that n^2 == -1 mod (17)
 * [A155212](http://oeis.org/A155212) ([program](oeis/A155212.asm)): a(n) = (n^2 + 9*n + 4)/2.
 * [A155450](http://oeis.org/A155450) ([program](oeis/A155450.asm)): Numbers equal to 5 or 18 mod 23.
@@ -3053,6 +3063,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A172172](http://oeis.org/A172172) ([program](oeis/A172172.asm)): Sums of NW-SE diagonals of triangle A172171.
 * [A172268](http://oeis.org/A172268) ([program](oeis/A172268.asm)): a(n) = floor(n*(sqrt(7)-sqrt(3))).
 * [A172277](http://oeis.org/A172277) ([program](oeis/A172277.asm)): floor(n*(sqrt(13)-sqrt(3))).
+* [A172326](http://oeis.org/A172326) ([program](oeis/A172326.asm)): a(n) = floor(n*(sqrt(7) + sqrt(2))).
 * [A172331](http://oeis.org/A172331) ([program](oeis/A172331.asm)): Floor(n*(sqrt(13)+sqrt(7))).
 * [A172334](http://oeis.org/A172334) ([program](oeis/A172334.asm)): Floor(n*(sqrt(13)+sqrt(3))).
 * [A172338](http://oeis.org/A172338) ([program](oeis/A172338.asm)): a(n) = floor(n*(sqrt(5)+sqrt(3))).
@@ -3306,6 +3317,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A192543](http://oeis.org/A192543) ([program](oeis/A192543.asm)): Let r be the largest real zero of x^n - x^(n-1) - x^(n-2) - ... - 1 = 0. Then a(n) is the value of k which satisfies the equation 0.5/10^k < 2 - r < 5/10^k.
 * [A192544](http://oeis.org/A192544) ([program](oeis/A192544.asm)): Number bases n such that all integers m having the commuting property r(m)^2=r(m^2), where r is cyclic replacement of digits d->(d+1) mod n, are of the form m=A^kB, where B=n/2, A=B-1, and 0<=k<=n-3.
 * [A193356](http://oeis.org/A193356) ([program](oeis/A193356.asm)): If n is even then 0, otherwise n.
+* [A193448](http://oeis.org/A193448) ([program](oeis/A193448.asm)): a(n) = 4*(5*n^2 - 5*n + 1).
 * [A193449](http://oeis.org/A193449) ([program](oeis/A193449.asm)): Products of the Jacobsthal numbers and the integers: a(n) =  n * A001045(n+1).
 * [A193592](http://oeis.org/A193592) ([program](oeis/A193592.asm)): Triangle read by rows having n-th row 1, n, n-1, n-2,..., 2, 1 for n>=0.
 * [A193682](http://oeis.org/A193682) ([program](oeis/A193682.asm)): Period 8: repeat [0, 1, 2, 3, 0, 3, 2, 1].
@@ -3830,7 +3842,7 @@ database. Therefore, there is no guarantee that the program really generates the
 * [A262303](http://oeis.org/A262303) ([program](oeis/A262303.asm)): Length of sequence of lower halves of n: repeatedly apply x->floor(x/2) starting at n; a(n) = number of steps until reach one of 2,3,4.
 * [A262564](http://oeis.org/A262564) ([program](oeis/A262564.asm)): A politician's answer to the question "What comes next after 2,3,5?".
 * [A262773](http://oeis.org/A262773) ([program](oeis/A262773.asm)): A Beatty sequence: a(n)=floor(q*n) where q=A231187.
-* [A263053](http://oeis.org/A263053) ([program](oeis/A263053.asm)): Number of (n+1)X(1+1) 0..1 arrays with each row and column not divisible by 3, read as a binary number with top and left being the most significant bits.
+* [A263053](http://oeis.org/A263053) ([program](oeis/A263053.asm)): Number of (n+1) X (1+1) 0..1 arrays with each row and column not divisible by 3, read as a binary number with top and left being the most significant bits.
 * [A263226](http://oeis.org/A263226) ([program](oeis/A263226.asm)): a(n) = 15*n^2 - 13*n.
 * [A263228](http://oeis.org/A263228) ([program](oeis/A263228.asm)): a(n) = 2*n*(16*n - 13).
 * [A263511](http://oeis.org/A263511) ([program](oeis/A263511.asm)): Total number of ON (black) cells after n iterations of the "Rule 155" elementary cellular automaton starting with a single ON (black) cell.
