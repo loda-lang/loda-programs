@@ -33,20 +33,20 @@ For example, run `./loda eval programs/fibonacci.asm` to generate the first term
 
 ## Language
 
-The LODA language is an assembly language with a very small set of instructions. It supports an unbounded set of memory cells storing natural numbers, operations for adding, subtracting and setting the content of memory cells, as well as a loop based on a lexicographical descent on memory regions.
+The LODA language is an assembly language with a very small set of instructions. It supports an unbounded set of memory cells storing natural numbers, operations for adding, subtracting and setting the content of memory cells, as well as a loop based on a lexicographical order descent on memory regions.
 
-__Memory:__ Programs operate on memory consisting of an unbounded sequence of registers `$0`,`$1`,`$2`,... each storing a natural number. There are three types of operands supported:
+__Memory:__ Programs operate on memory consisting of an unbounded sequence of memory cells `$0`,`$1`,`$2`,... each storing a natural number. There are three types of operands supported:
 
 1. __Constants__, for example 5.
 2. __Direct memory access__, for example `$5`. Reads or writes the value of the fifth memory cell.
-3. __Indirect memory access__, for example `$$7`. Reads the value at memory cell no. 7 and interpretes it as an address. For instance, if the value of `$7` is 13, then `$$7` accesses the cell no. 13.
+3. __Indirect memory access__, for example `$$7`. Reads the value at memory cell #7 and interpretes it as an address. For instance, if the value of `$7` is 13, then `$$7` accesses the memory cell #13.
 
-__Instructions:__ There are only four instructions in LODA. In the following, let X be a direct or an indirect memory access, and let Y be a constant, a direct or an indirect memory access.
+__Instructions:__ There are only four instructions in LODA. In the following, let `x` be a direct or an indirect memory access, and let `y` be a constant, a direct or an indirect memory access.
 
-1. __Addition:__ The instruction `add X,Y` updates the register X by adding the value of Y to it. For example, `add $3,42` adds 42 to register #3. Similarily, `add $$5,$7` adds the value of register #7 to the register whose address is stored in register #5.
-2. __Subtraction:__ The instruction `sub X,Y` updates the register X by subtracting the value of Y from it. If the result would be a negative number, the register X is set to 0.
-3. __Assignment:__ We define the instruction `mov X,Y` by the two instructions `sub X,X` and `add X,Y`. It means we set a register by first resetting it to 0 and then adding the new value to it. So this is just syntactic sugar.
-4. __Lexicographical order descent loop:__ The instructions `lpb X,Y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. X marks the start of that memory region, whereas Y is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If Y is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
+1. __Addition:__ The instruction `add x,y` updates the memory cell `x` by adding the value of `y` to it. For example, `add $3,42` adds 42 to the memory cell #3. Similarily, `add $$5,$7` adds the value of register #7 to the register whose address is stored in cell #5.
+2. __Truncated Subtraction:__ The instruction `sub x,y` updates the cell `x` by subtracting the value of `y` from it. If the result would be a negative number, `x` is set to 0.
+3. __Assignment:__ We define the instruction `mov x,y` by the two instructions `sub x,x` and `add x,y`. It means we set a register by first resetting it to 0 and then adding the new value to it. So this is just syntactic sugar.
+4. __Lexicographical Order Descent Loop:__ The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
 __Termination:__ all LODA programs are guaranteed to halt on every input. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
 
