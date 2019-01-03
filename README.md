@@ -61,7 +61,7 @@ The following programs include some classical examples of sequences and function
 
 # Generating Programs for Integer Sequences
 
-This [oeis](oeis) folder contains programs that generate integer sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
+This [oeis](programs/oeis) folder contains programs that generate integer sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
 A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
 
 All programs in the [oeis](oeis) folder have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
