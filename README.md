@@ -50,6 +50,8 @@ __Instructions:__ There are only four instructions in LODA. In the following, le
 
 __Termination:__ all LODA programs are guaranteed to halt on every input. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
 
+__Integer Sequences:__ Programs can be used to generate integer sequences (actually, natural number sequences). A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
+
 # Example Programs
 
 The following programs include some classical examples of sequences and functions on the natural numbers.
@@ -61,8 +63,7 @@ The following programs include some classical examples of sequences and function
 
 # Generating Programs for Integer Sequences
 
-This [oeis](programs/oeis) folder contains programs that generate integer sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
-A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
+The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
 
 All programs in the [oeis](oeis) folder have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
