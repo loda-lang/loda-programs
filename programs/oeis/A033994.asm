@@ -6,9 +6,9 @@ add $2,1
 add $0,4
 lpb $2,1
   sub $0,2
-  add $5,$0
+  add $3,$0
   sub $2,1
   add $0,1
-  add $1,$5
+  add $1,$3
   add $0,3
 lpe

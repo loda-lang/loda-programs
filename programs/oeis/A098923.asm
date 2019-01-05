@@ -4,10 +4,10 @@
 mov $2,$0
 mov $3,1
 lpb $2,1
-  mov $6,$0
+  mov $4,$0
   add $5,4
   add $0,5
-  add $1,$6
+  add $1,$4
   lpb $5,1
     sub $5,$3
     add $0,6

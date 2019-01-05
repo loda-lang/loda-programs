@@ -3,7 +3,7 @@
 
 mov $2,$0
 lpb $2,1
-  add $8,15
-  add $1,$8
+  add $3,15
+  add $1,$3
   sub $2,1
 lpe

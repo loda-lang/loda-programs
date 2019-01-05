@@ -6,6 +6,6 @@ add $1,6
 lpb $2,1
   sub $2,1
   add $1,$1
-  sub $1,$6
-  add $6,4
+  sub $1,$3
+  add $3,4
 lpe

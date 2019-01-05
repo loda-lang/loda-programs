@@ -4,9 +4,9 @@
 mov $2,$0
 add $2,$2
 lpb $2,1
-  add $4,1
-  add $1,$4
-  add $4,5
+  add $3,1
+  add $1,$3
+  add $3,5
   sub $1,3
   sub $2,1
 lpe

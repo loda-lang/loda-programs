@@ -3,13 +3,13 @@
 
 lpb $0,1
   add $1,$0
-  add $4,$1
+  add $2,$1
   add $1,$0
   mov $3,$1
   sub $0,1
-  add $4,3
-  add $4,$3
-  add $4,$3
-  add $4,$0
+  add $2,3
+  add $2,$3
+  add $2,$3
+  add $2,$0
 lpe
-add $1,$4
+add $1,$2

@@ -4,9 +4,9 @@
 add $0,$0
 add $0,$0
 add $0,$0
-mov $3,$0
-add $3,$3
-add $0,$3
+mov $2,$0
+add $2,$2
+add $0,$2
 sub $0,1
 add $1,11
 add $1,$0

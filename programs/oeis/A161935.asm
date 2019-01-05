@@ -3,10 +3,10 @@
 
 mov $2,$0
 lpb $2,1
-  mov $6,3
+  mov $3,3
   add $1,$0
-  lpb $6,1
-    sub $6,1
+  lpb $3,1
+    sub $3,1
     add $0,8
   lpe
   sub $2,1

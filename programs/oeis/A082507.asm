@@ -7,13 +7,13 @@ add $2,1
 lpb $2,1
   sub $1,1
   add $1,4
-  sub $2,$4
+  sub $2,$3
   sub $1,2
-  sub $4,$2
-  lpb $4,1
-    mov $4,2
+  sub $3,$2
+  lpb $3,1
+    mov $3,2
     sub $1,$0
   lpe
-  mov $4,$0
+  mov $3,$0
   sub $2,1
 lpe

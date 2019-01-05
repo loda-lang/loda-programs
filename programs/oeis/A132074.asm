@@ -3,12 +3,12 @@
 
 mov $2,$0
 mov $1,1
-mov $6,1
-mov $5,$2
+mov $3,1
+mov $4,$2
 lpb $2,1
   add $1,2
-  add $6,$6
-  add $1,$5
-  mov $5,$6
+  add $3,$3
+  add $1,$4
+  mov $4,$3
   sub $2,1
 lpe

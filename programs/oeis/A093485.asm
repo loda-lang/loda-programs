@@ -6,7 +6,7 @@ add $2,$2
 add $1,1
 add $0,$2
 lpb $0,1
-  add $4,3
-  add $1,$4
+  add $3,3
+  add $1,$3
   sub $0,1
 lpe

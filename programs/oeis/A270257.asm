@@ -4,11 +4,11 @@
 mov $2,$0
 add $2,$2
 lpb $2,1
-  add $5,$2
-  lpb $5,1
+  add $4,$2
+  lpb $4,1
     add $1,6
     mov $3,4
-    sub $5,$3
+    sub $4,$3
   lpe
   sub $2,1
 lpe

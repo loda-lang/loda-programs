@@ -6,8 +6,8 @@ add $0,$0
 add $0,$0
 add $0,3
 mov $1,$0
-add $4,$0
-add $4,$1
-add $4,5
+add $2,$0
+add $2,$1
+add $2,5
 sub $1,4
-add $1,$4
+add $1,$2

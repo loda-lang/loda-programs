@@ -3,13 +3,13 @@
 
 mov $2,$0
 lpb $2,1
-  mov $6,6
+  mov $4,6
   add $0,1
   add $1,$0
-  lpb $6,1
+  lpb $4,1
     add $0,6
     add $3,1
-    sub $6,$3
+    sub $4,$3
   lpe
   sub $2,1
   sub $3,$2

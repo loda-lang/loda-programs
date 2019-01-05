@@ -6,14 +6,14 @@ add $1,$0
 add $0,4
 add $2,$0
 sub $2,3
-mov $4,$1
+mov $3,$1
 mov $0,$2
 add $1,$1
-add $4,$1
+add $3,$1
 sub $0,1
 lpb $0,1
-  add $4,1
+  add $3,1
   sub $0,2
-  add $4,$0
+  add $3,$0
 lpe
-mov $1,$4
+mov $1,$3

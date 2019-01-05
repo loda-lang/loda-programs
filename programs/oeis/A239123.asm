@@ -7,6 +7,6 @@ add $0,4
 lpb $0,1
   sub $0,1
   add $1,$1
-  add $3,$0
+  add $2,$0
 lpe
-add $1,$3
+add $1,$2

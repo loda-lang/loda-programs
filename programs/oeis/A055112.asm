@@ -5,7 +5,7 @@ mov $2,$0
 add $2,$2
 lpb $2,1
   add $1,$2
-  add $5,$0
-  add $1,$5
+  add $3,$0
+  add $1,$3
   sub $2,1
 lpe

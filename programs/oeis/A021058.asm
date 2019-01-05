@@ -9,14 +9,14 @@ lpb $0,1
   add $2,4
   sub $1,$0
   sub $1,1
-  mov $4,$2
+  mov $3,$2
   add $1,4
-  sub $4,4
+  sub $3,4
   sub $1,$0
   add $1,2
   mov $2,$0
-  sub $4,$2
-  add $1,$4
+  sub $3,$2
+  add $1,$3
   mov $2,$1
   sub $2,$0
   sub $0,1

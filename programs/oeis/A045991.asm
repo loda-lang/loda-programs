@@ -3,8 +3,8 @@
 
 add $2,$0
 lpb $0,1
-  add $1,$4
+  add $1,$3
   sub $0,1
-  add $4,$2
+  add $3,$2
 lpe
 add $1,$1

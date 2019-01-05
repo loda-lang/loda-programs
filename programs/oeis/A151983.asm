@@ -6,10 +6,10 @@ mov $1,$0
 lpb $2,1
   add $3,$4
   add $4,1
-  mov $6,5
-  lpb $6,1
+  mov $5,5
+  lpb $5,1
     add $1,6
-    sub $6,$3
+    sub $5,$3
     mov $4,0
   lpe
   sub $2,1

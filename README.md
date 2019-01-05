@@ -3605,6 +3605,7 @@ If you would like to get updates on new programs, you can check out the [@lodami
 * [A225539](http://oeis.org/A225539) ([program](programs/oeis/A225539.asm)): Numbers n where 2^n and n have the same digital root.
 * [A225553](http://oeis.org/A225553) ([program](programs/oeis/A225553.asm)): Longest checkmate in king and amazon versus king endgame on an n X n chessboard.
 * [A225875](http://oeis.org/A225875) ([program](programs/oeis/A225875.asm)): We write the 1 + 4*k numbers once and twice the others.
+* [A225972](http://oeis.org/A225972) ([program](programs/oeis/A225972.asm)): The number of binary pattern classes in the (2,n)-rectangular grid with 3 '1's and (2n-3) '0's: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
 * [A226233](http://oeis.org/A226233) ([program](programs/oeis/A226233.asm)): Ten copies of each positive integer.
 * [A226264](http://oeis.org/A226264) ([program](programs/oeis/A226264.asm)): Number of additive Z_2 Z_8 codes of a certain type (see Siap-Aydogdu for precise definition).
 * [A226292](http://oeis.org/A226292) ([program](programs/oeis/A226292.asm)): (10*n^2+4*n+(1-(-1)^n))/8.
