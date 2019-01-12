@@ -3,11 +3,11 @@
 
 mov $3,7
 add $0,$0
-add $8,$0
+add $2,$0
 add $1,$3
 add $1,5
-lpb $8,$8
-  sub $8,1
+lpb $2,1
+  sub $2,1
   add $1,8
 lpe
 add $1,$1

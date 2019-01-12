@@ -9,7 +9,7 @@ mov $3,$2
 lpb $1,$3
   sub $3,4
 lpe
-lpb $0,$0
+lpb $0,1
   sub $0,$4
 lpe
 lpb $0,$2

@@ -3,12 +3,12 @@
 
 add $0,$0
 mov $1,1
-mov $3,$0
+mov $2,$0
 add $0,$0
 add $0,$0
-sub $3,$1
+sub $2,$1
 add $0,$0
-lpb $3,4
-  sub $3,1
+lpb $2,1
+  sub $2,1
   add $1,$0
 lpe
