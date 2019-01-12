@@ -8,6 +8,7 @@ fi
 min_changes=10
 num_changes=$(git status programs -s | wc -l)
 if [ "$num_changes" -ge "$min_changes" ]; then
+  git pull
   git add programs
   git commit -m "updated $num_changes programs"
   git push
