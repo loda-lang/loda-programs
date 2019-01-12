@@ -3,7 +3,7 @@
 
 mov $1,$0
 sub $0,1
-lpb $$3,4
+lpb $$3,1
   sub $$3,4
   add $1,2
 lpe

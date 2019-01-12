@@ -10,7 +10,7 @@ lpe
 sub $$1,$$3
 add $7,$$4
 add $$1,1
-lpb $1,$7
+lpb $1,1
   sub $$2,$7
 lpe
 add $$3,3

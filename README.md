@@ -4387,4 +4387,4 @@ If you would like to get updates on new programs, you can check out the [@lodami
 * [A322042](http://oeis.org/A322042) ([program](programs/oeis/A322042.asm)): Maximum edge-distance of a point in the quotient graph E/nE from the origin (see A322041 for further information).
 * [A322489](http://oeis.org/A322489) ([program](programs/oeis/A322489.asm)): Numbers k such that k^k ends with 4.
 
-Total number of programs for OEIS sequences: 4317/319070 (1%)
+Total number of programs for OEIS sequences: 4313/319070 (1%)

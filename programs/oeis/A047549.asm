@@ -3,7 +3,7 @@
 
 add $1,$0
 sub $0,4
-lpb $$7,$$2
+lpb $$7,1
   sub $$3,6
   add $1,2
 lpe
