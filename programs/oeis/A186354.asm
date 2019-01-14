@@ -6,7 +6,7 @@ add $2,$2
 add $0,1
 add $2,$0
 add $1,1
-lpb $2,$2
+lpb $2,1
   add $0,1
   add $1,1
   sub $2,$1

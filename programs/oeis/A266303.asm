@@ -4,7 +4,7 @@
 add $0,$0
 add $$0,4
 mov $4,$0
-lpb $0,2
+lpb $0,1
   mov $$0,1
   sub $0,4
 lpe

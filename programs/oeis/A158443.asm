@@ -4,7 +4,7 @@
 add $0,$0
 add $0,1
 add $0,$0
-lpb $0,2
+lpb $0,1
   add $1,3
   add $1,$0
   add $1,$0
