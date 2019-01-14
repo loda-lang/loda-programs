@@ -73,9 +73,9 @@ If you would like to get updates on new programs, you can check out the [@lodami
 
 ## Available Programs
 
-* [1-100000](programs/oeis/list0.md)
-* [100001-200000](programs/oeis/list1.md)
-* [200001-300000](programs/oeis/list2.md)
-* [300001-400000](programs/oeis/list3.md)
+* [A000001-A100000](programs/oeis/list0.md)
+* [A100001-A200000](programs/oeis/list1.md)
+* [A200001-A300000](programs/oeis/list2.md)
+* [A300001-A400000](programs/oeis/list3.md)
 
-Total number of programs for OEIS sequences: 4356/319088 (1%)
+Total number of programs for OEIS sequences: 4374/319115 (1%)

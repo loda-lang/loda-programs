@@ -1,3 +1,5 @@
+# Programs for A000001-A100000
+
 * [A000037](http://oeis.org/A000037) ([program](programs/oeis/A000037.asm)): Numbers that are not squares (or, the nonsquares).
 * [A000045](http://oeis.org/A000045) ([program](programs/oeis/A000045.asm)): Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 * [A000051](http://oeis.org/A000051) ([program](programs/oeis/A000051.asm)): a(n) = 2^n + 1.
@@ -206,6 +208,7 @@
 * [A006003](http://oeis.org/A006003) ([program](programs/oeis/A006003.asm)): a(n) = n*(n^2 + 1)/2.
 * [A006004](http://oeis.org/A006004) ([program](programs/oeis/A006004.asm)): a(n) = C(n+2,3) + C(n,3) + C(n-1,3).
 * [A006011](http://oeis.org/A006011) ([program](programs/oeis/A006011.asm)): a(n) = n^2*(n^2 - 1)/4.
+* [A006054](http://oeis.org/A006054) ([program](programs/oeis/A006054.asm)): a(n) = 2*a(n-1) + a(n-2) - a(n-3), with a(0) = a(1) = 0, a(2) = 1.
 * [A006124](http://oeis.org/A006124) ([program](programs/oeis/A006124.asm)): a(n) = 3 + n/2 + 7n^2/2.
 * [A006127](http://oeis.org/A006127) ([program](programs/oeis/A006127.asm)): a(n) = 2^n + n.
 * [A006137](http://oeis.org/A006137) ([program](programs/oeis/A006137.asm)): a(n) = 1 + n/2 + 9*n^2/2.
@@ -567,7 +570,9 @@
 * [A022314](http://oeis.org/A022314) ([program](programs/oeis/A022314.asm)): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 0, a(1) = 9.
 * [A022315](http://oeis.org/A022315) ([program](programs/oeis/A022315.asm)): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 0 and a(1) = 10.
 * [A022319](http://oeis.org/A022319) ([program](programs/oeis/A022319.asm)): a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=1, a(1)=5.
+* [A022326](http://oeis.org/A022326) ([program](programs/oeis/A022326.asm)): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 12.
 * [A022346](http://oeis.org/A022346) ([program](programs/oeis/A022346.asm)): Fibonacci sequence beginning 0, 12.
+* [A022348](http://oeis.org/A022348) ([program](programs/oeis/A022348.asm)): Fibonacci sequence beginning 0, 14.
 * [A022349](http://oeis.org/A022349) ([program](programs/oeis/A022349.asm)): Fibonacci sequence beginning 0, 15.
 * [A022379](http://oeis.org/A022379) ([program](programs/oeis/A022379.asm)): Fibonacci sequence beginning 3, 9.
 * [A022403](http://oeis.org/A022403) ([program](programs/oeis/A022403.asm)): a(0)=a(1)=3; thereafter a(n) = a(n-1) + a(n-2) + 1.
@@ -737,6 +742,7 @@
 * [A033570](http://oeis.org/A033570) ([program](programs/oeis/A033570.asm)): Pentagonal numbers with odd index: a(n) = (2*n+1)*(3*n+1).
 * [A033571](http://oeis.org/A033571) ([program](programs/oeis/A033571.asm)): a(n) = (2*n + 1)*(5*n + 1).
 * [A033572](http://oeis.org/A033572) ([program](programs/oeis/A033572.asm)): a(n) = (2*n+1)*(7*n+1).
+* [A033573](http://oeis.org/A033573) ([program](programs/oeis/A033573.asm)): (2n+1)(9n+1).
 * [A033576](http://oeis.org/A033576) ([program](programs/oeis/A033576.asm)): (2*n+1)*(12*n+1).
 * [A033577](http://oeis.org/A033577) ([program](programs/oeis/A033577.asm)): a(n) = (3*n+1) * (4*n+1).
 * [A033579](http://oeis.org/A033579) ([program](programs/oeis/A033579.asm)): Four times pentagonal numbers: a(n) = 2*n*(3*n-1).
@@ -1222,6 +1228,7 @@
 * [A050188](http://oeis.org/A050188) ([program](programs/oeis/A050188.asm)): T(n,3), array T as in A050186; a count of aperiodic binary words.
 * [A050271](http://oeis.org/A050271) ([program](programs/oeis/A050271.asm)): Numbers n such that n = floor(sqrt(n)*ceiling(sqrt(n))).
 * [A050407](http://oeis.org/A050407) ([program](programs/oeis/A050407.asm)): a(n) = n*(n^2 - 6*n + 11)/6.
+* [A050409](http://oeis.org/A050409) ([program](programs/oeis/A050409.asm)): Truncated square pyramid numbers: a(n) = Sum_{k = n..2*n} k^2.
 * [A050441](http://oeis.org/A050441) ([program](programs/oeis/A050441.asm)): Partial sums of A051865.
 * [A050488](http://oeis.org/A050488) ([program](programs/oeis/A050488.asm)): a(n) = 3*(2^n-1) - 2*n.
 * [A050533](http://oeis.org/A050533) ([program](programs/oeis/A050533.asm)): Thickened pyramidal numbers: a(n) = sum(4*i*(i-1)+1, i=1..n) + 2*(n+1)*n.
@@ -1293,6 +1300,7 @@
 * [A053742](http://oeis.org/A053742) ([program](programs/oeis/A053742.asm)): Sum of odd numbers in range 10n to 10n+9.
 * [A053754](http://oeis.org/A053754) ([program](programs/oeis/A053754.asm)): If n is in the sequence then 2n and 2n+1 are not (and 0 is in the sequence); when written in binary n has an even number of digits (0 has 0 digits).
 * [A053755](http://oeis.org/A053755) ([program](programs/oeis/A053755.asm)): a(n) = 4*n^2 + 1.
+* [A053799](http://oeis.org/A053799) ([program](programs/oeis/A053799.asm)): Number of basis partitions of n+9 with Durfee square size 3.
 * [A053836](http://oeis.org/A053836) ([program](programs/oeis/A053836.asm)): Sum of digits of n written in base 16.
 * [A054000](http://oeis.org/A054000) ([program](programs/oeis/A054000.asm)): a(n) = 2*n^2 - 2.
 * [A054135](http://oeis.org/A054135) ([program](programs/oeis/A054135.asm)): T(n,1), array T as in A054134.

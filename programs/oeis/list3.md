@@ -1,3 +1,5 @@
+# Programs for A300001-A400000
+
 * [A300076](http://oeis.org/A300076) ([program](programs/oeis/A300076.asm)): A sequence based on the period 6 sequence A300075.
 * [A300293](http://oeis.org/A300293) ([program](programs/oeis/A300293.asm)): A sequence based on the period 6 sequence A151899.
 * [A300576](http://oeis.org/A300576) ([program](programs/oeis/A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).

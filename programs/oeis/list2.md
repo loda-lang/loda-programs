@@ -1,3 +1,5 @@
+# Programs for A200001-A300000
+
 * [A200039](http://oeis.org/A200039) ([program](programs/oeis/A200039.asm)): Number of -n..n arrays x(0..2) of 3 elements with sum zero and with zeroth through 2nd differences all nonzero.
 * [A200067](http://oeis.org/A200067) ([program](programs/oeis/A200067.asm)): Maximum sum of all products of absolute differences and distances between element pairs among the integer partitions of n.
 * [A200535](http://oeis.org/A200535) ([program](programs/oeis/A200535.asm)): G.f. satisfies: A(x) = exp( Sum_{n>=1} [Sum_{k=0..2*n} C(2*n,k)^2 * x^k] / A(x)^n * x^n/n ).
@@ -79,6 +81,7 @@
 * [A212578](http://oeis.org/A212578) ([program](programs/oeis/A212578.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and  |w-x|=2|x-y|-|y-z|.
 * [A212656](http://oeis.org/A212656) ([program](programs/oeis/A212656.asm)): 5*n^2 + 1.
 * [A212684](http://oeis.org/A212684) ([program](programs/oeis/A212684.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and  |x-y|=n-w+|y-z|.
+* [A212685](http://oeis.org/A212685) ([program](programs/oeis/A212685.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|=w+|y-z|.
 * [A212692](http://oeis.org/A212692) ([program](programs/oeis/A212692.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<|x-y|+|y-z|.
 * [A212804](http://oeis.org/A212804) ([program](programs/oeis/A212804.asm)): Expansion of (1-x)/(1-x-x^2).
 * [A212831](http://oeis.org/A212831) ([program](programs/oeis/A212831.asm)): a(4*n) = 2*n, a(2*n+1) = 2*n+1, a(4*n+2) = 2*n+2.
@@ -731,6 +734,7 @@
 * [A293497](http://oeis.org/A293497) ([program](programs/oeis/A293497.asm)): Triangular array read by rows: row n >= 1 is the list of integers from 0 to 2n-1
 * [A293754](http://oeis.org/A293754) ([program](programs/oeis/A293754.asm)): Numbers n such that c(n,0) < c(n,1), where c(n,d) = number of d's in the first n digits of the base-2 expansion of tau (the golden ratio, (1+sqrt(5))/2)).
 * [A293990](http://oeis.org/A293990) ([program](programs/oeis/A293990.asm)): a(n) = (3*n + ((n-2) mod 4))/2.
+* [A294157](http://oeis.org/A294157) ([program](programs/oeis/A294157.asm)): Fibonacci sequence beginning 2, 8.
 * [A294259](http://oeis.org/A294259) ([program](programs/oeis/A294259.asm)): a(n) = n*(n^3 + 2*n^2 - 5*n + 10)/8.
 * [A294317](http://oeis.org/A294317) ([program](programs/oeis/A294317.asm)): Triangle read by rows: T(n, k) = 2*n-k, k <= n.
 * [A294732](http://oeis.org/A294732) ([program](programs/oeis/A294732.asm)): Maximal diameter of the connected cubic graphs on 2*n vertices.
