@@ -69,12 +69,15 @@
 * [A211667](http://oeis.org/A211667) ([program](programs/oeis/A211667.asm)): Number of iterations sqrt(sqrt(sqrt(...(n)...))) such that the result is < 2.
 * [A211668](http://oeis.org/A211668) ([program](programs/oeis/A211668.asm)): Number of iterations sqrt(sqrt(sqrt(...(n)...))) such that the result is < 3.
 * [A211911](http://oeis.org/A211911) ([program](programs/oeis/A211911.asm)): Number of lower triangular n X n arrays colored with integers 0 upwards introduced in row major order, with no element equal to any horizontal, vertical, diagonal or antidiagonal neighbor, and containing the value n(n+1)/2-2.
+* [A212012](http://oeis.org/A212012) ([program](programs/oeis/A212012.asm)): Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
 * [A212133](http://oeis.org/A212133) ([program](programs/oeis/A212133.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and median=mean.
 * [A212160](http://oeis.org/A212160) ([program](programs/oeis/A212160.asm)): Numbers congruent to 2 or 10 modulo 13.
+* [A212161](http://oeis.org/A212161) ([program](programs/oeis/A212161.asm)): Numbers 6 or 10 modulo 17.
 * [A212294](http://oeis.org/A212294) ([program](programs/oeis/A212294.asm)): Sums of (zero or more) distinct twin primes.
 * [A212331](http://oeis.org/A212331) ([program](programs/oeis/A212331.asm)): a(n) = 5*n*(n+5)/2.
 * [A212342](http://oeis.org/A212342) ([program](programs/oeis/A212342.asm)): Sequence of coefficients of x^0 in marked mesh pattern generating function Q_{n,132}^(0,3,0,0)(x).
 * [A212343](http://oeis.org/A212343) ([program](programs/oeis/A212343.asm)): a(n) = (n+1)*(n-2)*(n-3)/2.
+* [A212415](http://oeis.org/A212415) ([program](programs/oeis/A212415.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<x>=y<=z.
 * [A212427](http://oeis.org/A212427) ([program](programs/oeis/A212427.asm)): a(n) = 17*n + A000217(n-1).
 * [A212428](http://oeis.org/A212428) ([program](programs/oeis/A212428.asm)): a(n) = 18*n + A000217(n-1).
 * [A212561](http://oeis.org/A212561) ([program](programs/oeis/A212561.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w + x = 2y + 2z.
@@ -309,6 +312,7 @@
 * [A243520](http://oeis.org/A243520) ([program](programs/oeis/A243520.asm)): Numbers that are congruent to {0, 8} mod 11.
 * [A243903](http://oeis.org/A243903) ([program](programs/oeis/A243903.asm)): Numbers n such that (number of primes <= n) is greater than or equal to (number of semiprimes <= n).
 * [A244048](http://oeis.org/A244048) ([program](programs/oeis/A244048.asm)): Antisigma(n) minus the sum of remainders of n mod k, for k = 1,2,3,...,n.
+* [A244049](http://oeis.org/A244049) ([program](programs/oeis/A244049.asm)): Sum of all proper divisors of all positive integers <= n.
 * [A244082](http://oeis.org/A244082) ([program](programs/oeis/A244082.asm)): a(n) = 32*n^2.
 * [A244151](http://oeis.org/A244151) ([program](programs/oeis/A244151.asm)): 0-additive sequence: start with a(1) = 2; thereafter, a(n) = smallest number not already in sequence which is not the sum of any previous two terms.
 * [A244328](http://oeis.org/A244328) ([program](programs/oeis/A244328.asm)): a(1) = a(2) = 0; for n >= 3: a(n) = floor((n*(n+1)/2) / antisigma(n)) = floor(A000217(n) / A024816(n)).
@@ -317,6 +321,7 @@
 * [A244633](http://oeis.org/A244633) ([program](programs/oeis/A244633.asm)): a(n) = 26*n^2.
 * [A244634](http://oeis.org/A244634) ([program](programs/oeis/A244634.asm)): 27*n^2.
 * [A244636](http://oeis.org/A244636) ([program](programs/oeis/A244636.asm)): 30*n^2.
+* [A244728](http://oeis.org/A244728) ([program](programs/oeis/A244728.asm)): a(n) = 9*n^3.
 * [A244802](http://oeis.org/A244802) ([program](programs/oeis/A244802.asm)): The 60º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244803](http://oeis.org/A244803) ([program](programs/oeis/A244803.asm)): The 360º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244804](http://oeis.org/A244804) ([program](programs/oeis/A244804.asm)): The 300º spoke (or ray) of a hexagonal spiral of Ulam.
@@ -414,6 +419,7 @@
 * [A256857](http://oeis.org/A256857) ([program](programs/oeis/A256857.asm)): a(n) = n*(n^2 + 3*n - 2)/2.
 * [A257063](http://oeis.org/A257063) ([program](programs/oeis/A257063.asm)): Number of length 1 1..(n+1) arrays with every leading partial sum divisible by 2 or 3.
 * [A257088](http://oeis.org/A257088) ([program](programs/oeis/A257088.asm)): a(2*n) = 4*n if n>0, a(2*n + 1) = 2*n + 1, a(0) = 1.
+* [A257113](http://oeis.org/A257113) ([program](programs/oeis/A257113.asm)): a(1) = 2, a(2) = 3; thereafter a(n) is the sum of all the previous terms.
 * [A257164](http://oeis.org/A257164) ([program](programs/oeis/A257164.asm)): Period 5 sequence: repeat [0, 2, 4, 1, 3].
 * [A257542](http://oeis.org/A257542) ([program](programs/oeis/A257542.asm)): Square-sum pairs: Numbers n such that 0,1, ..., 2n-1 can be partitioned into n pairs, where each pair adds up to a perfect square.
 * [A257645](http://oeis.org/A257645) ([program](programs/oeis/A257645.asm)): a(n) = 15*n + 14.
@@ -711,6 +717,7 @@
 * [A290631](http://oeis.org/A290631) ([program](programs/oeis/A290631.asm)): a(n) = (n^2 + 1) * (2*n - 1).
 * [A290699](http://oeis.org/A290699) ([program](programs/oeis/A290699.asm)): a(n) = 2^n - n + n^2.
 * [A290743](http://oeis.org/A290743) ([program](programs/oeis/A290743.asm)): Maximum number of distinct Lyndon factors that can appear in words of length n over an alphabet of size 2.
+* [A290744](http://oeis.org/A290744) ([program](programs/oeis/A290744.asm)): Maximum number of distinct Lyndon factors that can appear in words of length n over an alphabet of size 5.
 * [A290768](http://oeis.org/A290768) ([program](programs/oeis/A290768.asm)): a(n) = 3/2*(n^2 - n + 2).
 * [A290781](http://oeis.org/A290781) ([program](programs/oeis/A290781.asm)): a(n) = 20*n + 15.
 * [A291024](http://oeis.org/A291024) ([program](programs/oeis/A291024.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - 2 S^2)^2.

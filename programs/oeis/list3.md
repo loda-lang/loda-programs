@@ -14,18 +14,21 @@
 * [A302402](http://oeis.org/A302402) ([program](programs/oeis/A302402.asm)): Total domination number of the n-ladder graph.
 * [A302488](http://oeis.org/A302488) ([program](programs/oeis/A302488.asm)): Total domination number of the n X n grid graph.
 * [A302537](http://oeis.org/A302537) ([program](programs/oeis/A302537.asm)): a(n) = (n^2 + 13*n + 2)/2.
+* [A302650](http://oeis.org/A302650) ([program](programs/oeis/A302650.asm)): Number of minimal total dominating sets in the n-barbell graph.
 * [A302689](http://oeis.org/A302689) ([program](programs/oeis/A302689.asm)): a(n) = 4 + 2^n - 4*n.
 * [A302906](http://oeis.org/A302906) ([program](programs/oeis/A302906.asm)): a(0) = 0; for n > 0, a(n) = a(n-1) + 5*n + 4.
 * [A304157](http://oeis.org/A304157) ([program](programs/oeis/A304157.asm)): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
 * [A304158](http://oeis.org/A304158) ([program](programs/oeis/A304158.asm)): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
 * [A304163](http://oeis.org/A304163) ([program](programs/oeis/A304163.asm)): a(n) = 9*n^2 - 3*n + 1 with n>0.
 * [A304383](http://oeis.org/A304383) ([program](programs/oeis/A304383.asm)): a(n) = 36*2^n - 5 (n>=1).
+* [A304387](http://oeis.org/A304387) ([program](programs/oeis/A304387.asm)): a(n) = 27*2^n - 5.
 * [A304505](http://oeis.org/A304505) ([program](programs/oeis/A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
 * [A304517](http://oeis.org/A304517) ([program](programs/oeis/A304517.asm)): a(n) = 16*2^n - 11 (n>=1).
 * [A304579](http://oeis.org/A304579) ([program](programs/oeis/A304579.asm)): a(n) = (n^2 + 1)*(n^2 + 2).
 * [A304659](http://oeis.org/A304659) ([program](programs/oeis/A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
 * [A304836](http://oeis.org/A304836) ([program](programs/oeis/A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304840](http://oeis.org/A304840) ([program](programs/oeis/A304840.asm)): a(n) = 52*n - 2 (n>=1).
+* [A304841](http://oeis.org/A304841) ([program](programs/oeis/A304841.asm)): a(n) = 67*n - 10 (n>=1).
 * [A304993](http://oeis.org/A304993) ([program](programs/oeis/A304993.asm)): a(n) = n*(n + 1)*(7*n + 5)/6.
 * [A305060](http://oeis.org/A305060) ([program](programs/oeis/A305060.asm)): a(n) = 18*2^n + 10.
 * [A305061](http://oeis.org/A305061) ([program](programs/oeis/A305061.asm)): a(n) = 20*2^n + 14.
@@ -79,6 +82,7 @@
 * [A320281](http://oeis.org/A320281) ([program](programs/oeis/A320281.asm)): Terms that are on the positive x-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
 * [A320661](http://oeis.org/A320661) ([program](programs/oeis/A320661.asm)): a(n) = 2^(n+3) - 6*n - 7.
 * [A321212](http://oeis.org/A321212) ([program](programs/oeis/A321212.asm)): Numbers that are congruent to {2, 3} mod 16.
+* [A321220](http://oeis.org/A321220) ([program](programs/oeis/A321220.asm)): a(n) = n+2 if n is even, otherwise a(n) = 2*n+1 if n is odd.
 * [A321237](http://oeis.org/A321237) ([program](programs/oeis/A321237.asm)): Start with a square of dimension 1 X 1, and repeatedly append along the squares of the previous step squares with half their side length that do not overlap with any prior square; a(n) gives the number of squares appended at n-th step.
 * [A321883](http://oeis.org/A321883) ([program](programs/oeis/A321883.asm)): Nonnegative integers n for which n! + 1 is not a square.
 * [A322042](http://oeis.org/A322042) ([program](programs/oeis/A322042.asm)): Maximum edge-distance of a point in the quotient graph E/nE from the origin (see A322041 for further information).
