@@ -5,7 +5,7 @@ add $0,$0
 add $0,$0
 add $0,1
 add $0,$0
-lpb $$2,$$4
+lpb $$2,1
   add $1,3
   sub $$3,2
   add $1,$$3

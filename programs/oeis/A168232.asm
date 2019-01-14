@@ -3,7 +3,7 @@
 
 add $0,2
 mov $1,$0
-lpb $$7,$$5
+lpb $$7,1
   sub $$2,2
   sub $$0,3
 lpe

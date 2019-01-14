@@ -4,8 +4,8 @@
 add $0,$0
 add $0,1
 add $0,$0
-mov $3,$0
-lpb $3,3
-  sub $3,1
+mov $2,$0
+lpb $2,1
+  sub $2,1
   add $1,$0
 lpe
