@@ -5,7 +5,7 @@ add $0,$0
 mov $5,$0
 add $0,$0
 add $0,4
-lpb $$5,$$5
+lpb $$5,1
   sub $0,$$5
 lpe
 add $1,$0

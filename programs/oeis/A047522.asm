@@ -4,7 +4,7 @@
 add $0,$0
 add $1,$0
 add $1,1
-lpb $0,3
+lpb $0,1
   add $1,4
   sub $0,4
 lpe

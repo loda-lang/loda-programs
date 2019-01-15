@@ -14,7 +14,7 @@ add $6,6
 add $1,$6
 add $6,5
 add $3,$0
-lpb $6,4
+lpb $6,1
   sub $6,1
   add $1,$3
 lpe

@@ -3,7 +3,7 @@
 
 add $0,$0
 add $0,2
-lpb $0,$0
+lpb $0,1
   sub $0,1
   add $1,$2
   add $2,$0
