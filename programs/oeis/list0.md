@@ -1,11 +1,17 @@
 # Programs for A000001-A100000
 
+* [A000004](http://oeis.org/A000004) ([program](A000004.asm)): The zero sequence.
+* [A000007](http://oeis.org/A000007) ([program](A000007.asm)): The characteristic function of 0: a(n) = 0^n.
+* [A000012](http://oeis.org/A000012) ([program](A000012.asm)): The simplest sequence of positive numbers: the all 1's sequence.
+* [A000027](http://oeis.org/A000027) ([program](A000027.asm)): The positive integers. Also called the natural numbers, the whole numbers or the counting numbers, but these terms are ambiguous.
 * [A000032](http://oeis.org/A000032) ([program](A000032.asm)): Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
 * [A000037](http://oeis.org/A000037) ([program](A000037.asm)): Numbers that are not squares (or, the nonsquares).
+* [A000038](http://oeis.org/A000038) ([program](A000038.asm)): Twice A000007.
 * [A000045](http://oeis.org/A000045) ([program](A000045.asm)): Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 * [A000051](http://oeis.org/A000051) ([program](A000051.asm)): a(n) = 2^n + 1.
 * [A000071](http://oeis.org/A000071) ([program](A000071.asm)): a(n) = Fibonacci(n) - 1.
 * [A000079](http://oeis.org/A000079) ([program](A000079.asm)): Powers of 2: a(n) = 2^n.
+* [A000096](http://oeis.org/A000096) ([program](A000096.asm)): a(n) = n*(n+3)/2.
 * [A000124](http://oeis.org/A000124) ([program](A000124.asm)): Central polygonal numbers (the Lazy Caterer's sequence): n(n+1)/2 + 1; or, maximal number of pieces formed when slicing a pancake with n cuts.
 * [A000125](http://oeis.org/A000125) ([program](A000125.asm)): Cake numbers: maximal number of pieces resulting from n planar cuts through a cube (or cake): C(n+1,3)+n+1.
 * [A000129](http://oeis.org/A000129) ([program](A000129.asm)): Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
@@ -14,6 +20,7 @@
 * [A000204](http://oeis.org/A000204) ([program](A000204.asm)): Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
 * [A000211](http://oeis.org/A000211) ([program](A000211.asm)): a(n) = a(n-1) + a(n-2) - 2.
 * [A000212](http://oeis.org/A000212) ([program](A000212.asm)): a(n) = floor(n^2/3).
+* [A000217](http://oeis.org/A000217) ([program](A000217.asm)): Triangular numbers: a(n) = binomial(n+1,2) = n(n+1)/2 = 0 + 1 + 2 + ... + n.
 * [A000225](http://oeis.org/A000225) ([program](A000225.asm)): a(n) = 2^n - 1. (Sometimes called Mersenne numbers, although that name is usually reserved for A001348.)
 * [A000247](http://oeis.org/A000247) ([program](A000247.asm)): a(n) = 2^n - n - 2.
 * [A000267](http://oeis.org/A000267) ([program](A000267.asm)): Integer part of square root of 4n+1.
@@ -53,9 +60,11 @@
 * [A001318](http://oeis.org/A001318) ([program](A001318.asm)): Generalized pentagonal numbers: m*(3*m - 1)/2, m = 0, +-1, +-2, +-3, ....
 * [A001333](http://oeis.org/A001333) ([program](A001333.asm)): Numerators of continued fraction convergents to sqrt(2).
 * [A001399](http://oeis.org/A001399) ([program](A001399.asm)): a(n) = number of partitions of n into at most 3 parts; also partitions of n+3 in which the greatest part is 3; also number of multigraphs with 3 nodes and n edges.
+* [A001477](http://oeis.org/A001477) ([program](A001477.asm)): The nonnegative integers.
 * [A001504](http://oeis.org/A001504) ([program](A001504.asm)): a(n) = (3n+1)(3n+2).
 * [A001513](http://oeis.org/A001513) ([program](A001513.asm)): (6n+1)(6n+5).
 * [A001519](http://oeis.org/A001519) ([program](A001519.asm)): a(n) = 3*a(n-1) - a(n-2), with a(0) = a(1) = 1.
+* [A001533](http://oeis.org/A001533) ([program](A001533.asm)): (8n+1)(8n+7).
 * [A001539](http://oeis.org/A001539) ([program](A001539.asm)): a(n) = (4*n+1)*(4*n+3).
 * [A001545](http://oeis.org/A001545) ([program](A001545.asm)): (5n+1)(5n+4).
 * [A001588](http://oeis.org/A001588) ([program](A001588.asm)): a(n) = a(n-1) + a(n-2) - 1.
@@ -113,6 +122,7 @@
 * [A003314](http://oeis.org/A003314) ([program](A003314.asm)): Binary entropy function: a(1)=0; for n > 1, a(n) = n + min { a(k)+a(n-k) : 1 <= k <= n-1 }.
 * [A003453](http://oeis.org/A003453) ([program](A003453.asm)): Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals up to rotation and reflection.
 * [A003461](http://oeis.org/A003461) ([program](A003461.asm)): Bode numbers multiplied by 10: 4 + 3*floor(2^(n-1)).
+* [A003469](http://oeis.org/A003469) ([program](A003469.asm)): Number of minimal covers of an (n + 1)-set by a collection of n nonempty subsets, a(n) = A035348(n,n-1).
 * [A003600](http://oeis.org/A003600) ([program](A003600.asm)): Maximal number of pieces obtained by slicing a torus (or a bagel) with n cuts: (n^3 + 3*n^2 + 8*n)/6 (n > 0).
 * [A003682](http://oeis.org/A003682) ([program](A003682.asm)): Number of Hamiltonian paths in K_2 X P_n.
 * [A003777](http://oeis.org/A003777) ([program](A003777.asm)): a(n) = n^3 + n^2 - 1.
@@ -132,6 +142,7 @@
 * [A004274](http://oeis.org/A004274) ([program](A004274.asm)): 0, 2 and the odd numbers.
 * [A004275](http://oeis.org/A004275) ([program](A004275.asm)): 1 together with nonnegative even numbers.
 * [A004276](http://oeis.org/A004276) ([program](A004276.asm)): 0, 2, 4 and the odd numbers.
+* [A004277](http://oeis.org/A004277) ([program](A004277.asm)): 1 together with positive even numbers.
 * [A004278](http://oeis.org/A004278) ([program](A004278.asm)): 1, 3 and the positive even numbers.
 * [A004279](http://oeis.org/A004279) ([program](A004279.asm)): 1, 3, 5 and the even numbers.
 * [A004280](http://oeis.org/A004280) ([program](A004280.asm)): 2 together with the odd numbers (essentially the result of the first stage of the sieve of Eratosthenes).
@@ -154,6 +165,7 @@
 * [A004760](http://oeis.org/A004760) ([program](A004760.asm)): List of numbers whose binary expansion does not begin 10.
 * [A004761](http://oeis.org/A004761) ([program](A004761.asm)): Numbers n whose binary expansion does not begin with 11.
 * [A004766](http://oeis.org/A004766) ([program](A004766.asm)): Numbers whose binary expansion ends 01.
+* [A004767](http://oeis.org/A004767) ([program](A004767.asm)): a(n) = 4*n + 3.
 * [A004768](http://oeis.org/A004768) ([program](A004768.asm)): Binary expansion ends 001.
 * [A004769](http://oeis.org/A004769) ([program](A004769.asm)): Numbers whose binary expansion ends in 011.
 * [A004770](http://oeis.org/A004770) ([program](A004770.asm)): Numbers of form 8n+5; or, numbers whose binary expansion ends in 101.
@@ -180,6 +192,7 @@
 * [A005248](http://oeis.org/A005248) ([program](A005248.asm)): Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
 * [A005286](http://oeis.org/A005286) ([program](A005286.asm)): a(n) = (n + 3)*(n^2 + 6*n + 2)/6.
 * [A005377](http://oeis.org/A005377) ([program](A005377.asm)): Number of low discrepancy sequences in base 4.
+* [A005408](http://oeis.org/A005408) ([program](A005408.asm)): The odd numbers: a(n) = 2*n + 1.
 * [A005448](http://oeis.org/A005448) ([program](A005448.asm)): Centered triangular numbers: a(n) = 3n(n-1)/2 + 1.
 * [A005449](http://oeis.org/A005449) ([program](A005449.asm)): Second pentagonal numbers: a(n) = n*(3*n + 1)/2.
 * [A005475](http://oeis.org/A005475) ([program](A005475.asm)): a(n) = n*(5*n+1)/2.
@@ -187,6 +200,7 @@
 * [A005491](http://oeis.org/A005491) ([program](A005491.asm)): n^3 + 3n + 1.
 * [A005563](http://oeis.org/A005563) ([program](A005563.asm)): a(n) = n*(n+2) = (n+1)^2 - 1.
 * [A005564](http://oeis.org/A005564) ([program](A005564.asm)): Number of n-step walks on square lattice in the first quadrant which finish at distance n-3 from the x-axis.
+* [A005570](http://oeis.org/A005570) ([program](A005570.asm)): Number of walks on cubic lattice.
 * [A005581](http://oeis.org/A005581) ([program](A005581.asm)): a(n) = (n-1)*n*(n+4)/6.
 * [A005586](http://oeis.org/A005586) ([program](A005586.asm)): a(n) = n(n+4)(n+5)/6.
 * [A005592](http://oeis.org/A005592) ([program](A005592.asm)): a(n) = F(2n+1) + F(2n-1) - 1.
@@ -202,6 +216,7 @@
 * [A005898](http://oeis.org/A005898) ([program](A005898.asm)): Centered cube numbers: n^3 + (n+1)^3.
 * [A005899](http://oeis.org/A005899) ([program](A005899.asm)): Number of points on surface of octahedron; also coordination sequence for cubic lattice: a(0) = 1; for n > 0, a(n) = 4n^2 + 2,
 * [A005900](http://oeis.org/A005900) ([program](A005900.asm)): Octahedral numbers: a(n) = n*(2*n^2 + 1)/3.
+* [A005914](http://oeis.org/A005914) ([program](A005914.asm)): Number of points on surface of hexagonal prism: 12n^2 + 2 for n>0 (coordination sequence for W(2)).
 * [A005915](http://oeis.org/A005915) ([program](A005915.asm)): Hexagonal prism numbers: a(n) = (n + 1)*(3*n^2 + 3*n + 1).
 * [A005917](http://oeis.org/A005917) ([program](A005917.asm)): Rhombic dodecahedral numbers: a(n) = n^4 - (n - 1)^4.
 * [A005918](http://oeis.org/A005918) ([program](A005918.asm)): Number of points on surface of square pyramid: 3*n^2 + 2 (n>0).
@@ -237,6 +252,7 @@
 * [A007283](http://oeis.org/A007283) ([program](A007283.asm)): a(n) = 3*2^n.
 * [A007290](http://oeis.org/A007290) ([program](A007290.asm)): a(n) = 2*binomial(n,3).
 * [A007310](http://oeis.org/A007310) ([program](A007310.asm)): Numbers congruent to 1 or 5 mod 6.
+* [A007395](http://oeis.org/A007395) ([program](A007395.asm)): Constant sequence: the all 2's sequence.
 * [A007401](http://oeis.org/A007401) ([program](A007401.asm)): Add n-1 to n-th term of 'n appears n times' sequence (A002024).
 * [A007494](http://oeis.org/A007494) ([program](A007494.asm)): Numbers that are congruent to 0 or 2 mod 3.
 * [A007495](http://oeis.org/A007495) ([program](A007495.asm)): Josephus problem: survivors.
@@ -260,6 +276,7 @@
 * [A008130](http://oeis.org/A008130) ([program](A008130.asm)): a(n) = floor(n/3)*ceiling(n/3).
 * [A008133](http://oeis.org/A008133) ([program](A008133.asm)): a(n) = floor(n/3)*floor((n+1)/3).
 * [A008137](http://oeis.org/A008137) ([program](A008137.asm)): Coordination sequence T1 for Zeolite Code LTA and RHO.
+* [A008412](http://oeis.org/A008412) ([program](A008412.asm)): Coordination sequence for 4-dimensional cubic lattice (points on surface of 4-dimensional cross-polytope).
 * [A008458](http://oeis.org/A008458) ([program](A008458.asm)): Coordination sequence for hexagonal lattice.
 * [A008486](http://oeis.org/A008486) ([program](A008486.asm)): Expansion of (1 + x + x^2)/(1 - x)^2.
 * [A008487](http://oeis.org/A008487) ([program](A008487.asm)): Expansion of (1-x^5) / (1-x)^5.
@@ -271,6 +288,7 @@
 * [A008577](http://oeis.org/A008577) ([program](A008577.asm)): Crystal ball sequence for planar net 4.8.8.
 * [A008585](http://oeis.org/A008585) ([program](A008585.asm)): a(n) = 3*n.
 * [A008586](http://oeis.org/A008586) ([program](A008586.asm)): Multiples of 4.
+* [A008587](http://oeis.org/A008587) ([program](A008587.asm)): Multiples of 5.
 * [A008588](http://oeis.org/A008588) ([program](A008588.asm)): Nonnegative multiples of 6.
 * [A008589](http://oeis.org/A008589) ([program](A008589.asm)): Multiples of 7.
 * [A008590](http://oeis.org/A008590) ([program](A008590.asm)): Multiples of 8.
@@ -330,13 +348,38 @@
 * [A008851](http://oeis.org/A008851) ([program](A008851.asm)): Congruent to 0 or 1 mod 5.
 * [A008854](http://oeis.org/A008854) ([program](A008854.asm)): Numbers that are congruent to {0, 1, 4} mod 5.
 * [A008911](http://oeis.org/A008911) ([program](A008911.asm)): a(n) = n^2*(n^2 - 1)/6.
+* [A009005](http://oeis.org/A009005) ([program](A009005.asm)): All natural numbers except 1, 2 and 4.
 * [A009056](http://oeis.org/A009056) ([program](A009056.asm)): Numbers >= 3.
 * [A010000](http://oeis.org/A010000) ([program](A010000.asm)): a(0) = 1, a(n) = n^2 + 2 for n>0.
 * [A010001](http://oeis.org/A010001) ([program](A010001.asm)): a(0) = 1, a(n) = 5*n^2 + 2 for n>0.
 * [A010006](http://oeis.org/A010006) ([program](A010006.asm)): Coordination sequence for C_3 lattice: a(n)=16*n^2+2 (n>0), a(0)=1.
 * [A010008](http://oeis.org/A010008) ([program](A010008.asm)): a(0) = 1, a(n) = 18*n^2 + 2 for n>0.
 * [A010078](http://oeis.org/A010078) ([program](A010078.asm)): Shortest representation of -n in 2's-complement format.
+* [A010692](http://oeis.org/A010692) ([program](A010692.asm)): Constant sequence: a(n) = 10.
+* [A010701](http://oeis.org/A010701) ([program](A010701.asm)): Constant sequence: the all 3's sequence.
+* [A010709](http://oeis.org/A010709) ([program](A010709.asm)): Constant sequence: the all 4's sequence.
+* [A010713](http://oeis.org/A010713) ([program](A010713.asm)): Period 2: repeat (4,8).
+* [A010716](http://oeis.org/A010716) ([program](A010716.asm)): Constant sequence: the all 5's sequence.
+* [A010722](http://oeis.org/A010722) ([program](A010722.asm)): Constant sequence: the all 6's sequence.
+* [A010727](http://oeis.org/A010727) ([program](A010727.asm)): Constant sequence: the all 7's sequence.
+* [A010731](http://oeis.org/A010731) ([program](A010731.asm)): Constant sequence: the all 8's sequence.
+* [A010734](http://oeis.org/A010734) ([program](A010734.asm)): Constant sequence: the all 9's sequence.
 * [A010761](http://oeis.org/A010761) ([program](A010761.asm)): a(n) = floor(n/2) + floor(n/3).
+* [A010850](http://oeis.org/A010850) ([program](A010850.asm)): Constant sequence: a(n) = 11.
+* [A010851](http://oeis.org/A010851) ([program](A010851.asm)): Constant sequence: a(n) = 12.
+* [A010852](http://oeis.org/A010852) ([program](A010852.asm)): Constant sequence: a(n) = 13.
+* [A010853](http://oeis.org/A010853) ([program](A010853.asm)): Constant sequence: a(n) = 14.
+* [A010854](http://oeis.org/A010854) ([program](A010854.asm)): Constant sequence: a(n) = 15.
+* [A010855](http://oeis.org/A010855) ([program](A010855.asm)): Constant sequence: a(n) = 16.
+* [A010856](http://oeis.org/A010856) ([program](A010856.asm)): Constant sequence: a(n) = 17.
+* [A010857](http://oeis.org/A010857) ([program](A010857.asm)): Constant sequence: a(n) = 18.
+* [A010858](http://oeis.org/A010858) ([program](A010858.asm)): Constant sequence: a(n) = 19.
+* [A010859](http://oeis.org/A010859) ([program](A010859.asm)): Constant sequence: a(n) = 20.
+* [A010860](http://oeis.org/A010860) ([program](A010860.asm)): Constant sequence: a(n) = 21.
+* [A010861](http://oeis.org/A010861) ([program](A010861.asm)): Constant sequence: a(n) = 22.
+* [A010863](http://oeis.org/A010863) ([program](A010863.asm)): Constant sequence: a(n) = 24.
+* [A010865](http://oeis.org/A010865) ([program](A010865.asm)): Constant sequence: a(n) = 26.
+* [A010867](http://oeis.org/A010867) ([program](A010867.asm)): Constant sequence: a(n) = 28.
 * [A010873](http://oeis.org/A010873) ([program](A010873.asm)): a(n) = n mod 4.
 * [A010874](http://oeis.org/A010874) ([program](A010874.asm)): a(n) = n mod 5.
 * [A010875](http://oeis.org/A010875) ([program](A010875.asm)): a(n) = n mod 6.
@@ -381,6 +424,7 @@
 * [A014255](http://oeis.org/A014255) ([program](A014255.asm)): Expansion of (1+2*x+3*x^2)/((1-x)*(1-x^2)^2).
 * [A014286](http://oeis.org/A014286) ([program](A014286.asm)): a(n) = Sum_{i=0..n} i*Fibonacci(i).
 * [A014494](http://oeis.org/A014494) ([program](A014494.asm)): Even triangular numbers.
+* [A014590](http://oeis.org/A014590) ([program](A014590.asm)): Inverse of 581st cyclotomic polynomial.
 * [A014591](http://oeis.org/A014591) ([program](A014591.asm)): a(n) = floor(n^2/12 + 5/4).
 * [A014601](http://oeis.org/A014601) ([program](A014601.asm)): Numbers congruent to 0 or 3 mod 4.
 * [A014616](http://oeis.org/A014616) ([program](A014616.asm)): a(n) = solution to the postage stamp problem with 2 denominations and n stamps.
@@ -393,6 +437,7 @@
 * [A014833](http://oeis.org/A014833) ([program](A014833.asm)): 2^n - n(n+1)/2.
 * [A014844](http://oeis.org/A014844) ([program](A014844.asm)): a(n) = 2^n - n*(n-1)/2.
 * [A014848](http://oeis.org/A014848) ([program](A014848.asm)): n^2 - floor( n/2 ).
+* [A015088](http://oeis.org/A015088) ([program](A015088.asm)): Inverse of 1079th cyclotomic polynomial.
 * [A015237](http://oeis.org/A015237) ([program](A015237.asm)): a(n) = (2*n - 1)*n^2.
 * [A016028](http://oeis.org/A016028) ([program](A016028.asm)): Expansion of (1 - x + x^4) / (1 - x)^3.
 * [A016051](http://oeis.org/A016051) ([program](A016051.asm)): Numbers of the form 9n+3 or 9n+6.
@@ -443,6 +488,7 @@
 * [A017101](http://oeis.org/A017101) ([program](A017101.asm)): a(n) = 8n + 3.
 * [A017113](http://oeis.org/A017113) ([program](A017113.asm)): a(n) = 8*n + 4.
 * [A017114](http://oeis.org/A017114) ([program](A017114.asm)): a(n) = (8*n + 4)^2.
+* [A017137](http://oeis.org/A017137) ([program](A017137.asm)): a(n) = 8*n+6.
 * [A017150](http://oeis.org/A017150) ([program](A017150.asm)): a(n) = (8*n + 7)^2.
 * [A017173](http://oeis.org/A017173) ([program](A017173.asm)): a(n) = 9*n + 1.
 * [A017185](http://oeis.org/A017185) ([program](A017185.asm)): 9*n+2.
@@ -493,6 +539,7 @@
 * [A019427](http://oeis.org/A019427) ([program](A019427.asm)): Continued fraction for tan(1/4).
 * [A019442](http://oeis.org/A019442) ([program](A019442.asm)): Numbers n such that a Hadamard matrix of order n exists.
 * [A019557](http://oeis.org/A019557) ([program](A019557.asm)): Coordination sequence for G_2 lattice.
+* [A019590](http://oeis.org/A019590) ([program](A019590.asm)): Fermat's Last Theorem: a(n) = 1 if x^n + y^n = z^n has a nontrivial solution in integers, otherwise a(n) = 0.
 * [A020695](http://oeis.org/A020695) ([program](A020695.asm)): Pisot sequence E(2,3).
 * [A020701](http://oeis.org/A020701) ([program](A020701.asm)): Pisot sequences E(3,5), P(3,5).
 * [A020705](http://oeis.org/A020705) ([program](A020705.asm)): n+4
@@ -505,14 +552,20 @@
 * [A020719](http://oeis.org/A020719) ([program](A020719.asm)): a(n) = n+7.
 * [A020722](http://oeis.org/A020722) ([program](A020722.asm)): a(n) = n + 8.
 * [A020723](http://oeis.org/A020723) ([program](A020723.asm)): n+9.
+* [A020725](http://oeis.org/A020725) ([program](A020725.asm)): Integers >= 2. a(n) = n+1.
 * [A020732](http://oeis.org/A020732) ([program](A020732.asm)): Pisot sequence T(4,7).
 * [A020735](http://oeis.org/A020735) ([program](A020735.asm)): Odd numbers >= 5.
 * [A020737](http://oeis.org/A020737) ([program](A020737.asm)): Pisot sequence L(5,9).
 * [A020739](http://oeis.org/A020739) ([program](A020739.asm)): 2n + 6.
 * [A020742](http://oeis.org/A020742) ([program](A020742.asm)): Pisot sequence T(7,9).
+* [A020743](http://oeis.org/A020743) ([program](A020743.asm)): Pisot sequence L(7,10).
 * [A020744](http://oeis.org/A020744) ([program](A020744.asm)): Pisot sequences P(8,10), T(8,10).
+* [A020761](http://oeis.org/A020761) ([program](A020761.asm)): Decimal expansion of 1/2.
+* [A020793](http://oeis.org/A020793) ([program](A020793.asm)): Decimal expansion of 1/6.
 * [A020821](http://oeis.org/A020821) ([program](A020821.asm)): Decimal expansion of 1/8.
+* [A021019](http://oeis.org/A021019) ([program](A021019.asm)): Decimal expansion of 1/15.
 * [A021020](http://oeis.org/A021020) ([program](A021020.asm)): Decimal expansion of 1/16.
+* [A021022](http://oeis.org/A021022) ([program](A021022.asm)): Decimal expansion of 1/18.
 * [A021028](http://oeis.org/A021028) ([program](A021028.asm)): Decimal expansion of 1/24.
 * [A021036](http://oeis.org/A021036) ([program](A021036.asm)): Decimal expansion of 1/32.
 * [A021043](http://oeis.org/A021043) ([program](A021043.asm)): Decimal expansion of 1/39.
@@ -551,12 +604,14 @@
 * [A022092](http://oeis.org/A022092) ([program](A022092.asm)): Fibonacci sequence beginning 0, 9.
 * [A022093](http://oeis.org/A022093) ([program](A022093.asm)): Fibonacci sequence beginning 0, 10.
 * [A022095](http://oeis.org/A022095) ([program](A022095.asm)): Fibonacci sequence beginning 1, 5.
+* [A022096](http://oeis.org/A022096) ([program](A022096.asm)): Fibonacci sequence beginning 1, 6.
 * [A022098](http://oeis.org/A022098) ([program](A022098.asm)): Fibonacci sequence beginning 1, 8.
 * [A022099](http://oeis.org/A022099) ([program](A022099.asm)): Fibonacci sequence beginning 1, 9.
 * [A022114](http://oeis.org/A022114) ([program](A022114.asm)): Fibonacci sequence beginning 2 9.
 * [A022121](http://oeis.org/A022121) ([program](A022121.asm)): Fibonacci sequence beginning 3, 8.
 * [A022122](http://oeis.org/A022122) ([program](A022122.asm)): Fibonacci sequence beginning 3, 10.
 * [A022136](http://oeis.org/A022136) ([program](A022136.asm)): Fibonacci sequence beginning 5, 11.
+* [A022141](http://oeis.org/A022141) ([program](A022141.asm)): Fibonacci sequence beginning 5, 17.
 * [A022144](http://oeis.org/A022144) ([program](A022144.asm)): Coordination sequence for root lattice B_2.
 * [A022264](http://oeis.org/A022264) ([program](A022264.asm)): a(n) = n*(7*n - 1)/2.
 * [A022265](http://oeis.org/A022265) ([program](A022265.asm)): a(n) = n*(7*n + 1)/2.
@@ -579,11 +634,13 @@
 * [A022285](http://oeis.org/A022285) ([program](A022285.asm)): a(n) = n*(27*n + 1)/2.
 * [A022308](http://oeis.org/A022308) ([program](A022308.asm)): a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=0, a(1)=3.
 * [A022309](http://oeis.org/A022309) ([program](A022309.asm)): a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=0, a(1)=4.
+* [A022310](http://oeis.org/A022310) ([program](A022310.asm)): a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=0, a(1)=5.
 * [A022311](http://oeis.org/A022311) ([program](A022311.asm)): a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=0, a(1)=1.
 * [A022312](http://oeis.org/A022312) ([program](A022312.asm)): a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=0, a(1)=7.
 * [A022313](http://oeis.org/A022313) ([program](A022313.asm)): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 0 and a(1) = 8.
 * [A022314](http://oeis.org/A022314) ([program](A022314.asm)): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 0, a(1) = 9.
 * [A022315](http://oeis.org/A022315) ([program](A022315.asm)): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 0 and a(1) = 10.
+* [A022318](http://oeis.org/A022318) ([program](A022318.asm)): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 4.
 * [A022319](http://oeis.org/A022319) ([program](A022319.asm)): a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=1, a(1)=5.
 * [A022326](http://oeis.org/A022326) ([program](A022326.asm)): a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 12.
 * [A022345](http://oeis.org/A022345) ([program](A022345.asm)): Fibonacci sequence beginning 0, 11.
@@ -592,6 +649,7 @@
 * [A022349](http://oeis.org/A022349) ([program](A022349.asm)): Fibonacci sequence beginning 0, 15.
 * [A022372](http://oeis.org/A022372) ([program](A022372.asm)): Fibonacci sequence beginning 2, 20.
 * [A022379](http://oeis.org/A022379) ([program](A022379.asm)): Fibonacci sequence beginning 3, 9.
+* [A022381](http://oeis.org/A022381) ([program](A022381.asm)): Fibonacci sequence beginning 3, 15.
 * [A022403](http://oeis.org/A022403) ([program](A022403.asm)): a(0)=a(1)=3; thereafter a(n) = a(n-1) + a(n-2) + 1.
 * [A022406](http://oeis.org/A022406) ([program](A022406.asm)): a(0)=3, a(1)=7; thereafter a(n) = a(n-1) + a(n-2) + 1.
 * [A022407](http://oeis.org/A022407) ([program](A022407.asm)): a(n) = a(n-1) + a(n-2) + 1, with a(0)=3, a(1)=8.
@@ -640,6 +698,7 @@
 * [A026817](http://oeis.org/A026817) ([program](A026817.asm)): Number of sets which can be obtained by selecting unique elements from two sets with 2n and 3n elements respectively and n common elements.
 * [A026834](http://oeis.org/A026834) ([program](A026834.asm)): a(n) = number of numbers k such that only one partition of n into distinct parts has least part k.
 * [A026922](http://oeis.org/A026922) ([program](A026922.asm)): Number of partitions of n into an odd number of parts, the greatest being 2; also, a(n+3) = number of partitions of n+1 into an even number of parts, each <=2.
+* [A027180](http://oeis.org/A027180) ([program](A027180.asm)): a(n) = Sum{T(i,j)}, 0<=j<=i, 0<=i<=n, T given by A027170.
 * [A027378](http://oeis.org/A027378) ([program](A027378.asm)): Expansion of (1+x^2-x^3)/(1-x)^4.
 * [A027379](http://oeis.org/A027379) ([program](A027379.asm)): Expansion of (1+x^2-x^3)/(1-x)^3.
 * [A027383](http://oeis.org/A027383) ([program](A027383.asm)): Number of balanced strings of length n: let d(S) = #(1's) - #(0's), # == count in S, then S is balanced if every substring T of S has -2 <= d(T) <= 2.
@@ -652,6 +711,7 @@
 * [A027575](http://oeis.org/A027575) ([program](A027575.asm)): a(n) = n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2.
 * [A027578](http://oeis.org/A027578) ([program](A027578.asm)): Sums of five consecutive squares: a(n) = n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2 + (n+4)^2.
 * [A027599](http://oeis.org/A027599) ([program](A027599.asm)): a(n) = 3n^2 - 7n + 6.
+* [A027620](http://oeis.org/A027620) ([program](A027620.asm)): a(n) = n + (n+1)^2 + (n+2)^3.
 * [A027656](http://oeis.org/A027656) ([program](A027656.asm)): Expansion of 1/(1-x^2)^2 (included only for completeness - the policy is always to omit the zeros from such sequences).
 * [A027688](http://oeis.org/A027688) ([program](A027688.asm)): a(n) = n^2 + n + 3.
 * [A027689](http://oeis.org/A027689) ([program](A027689.asm)): a(n) = n^2 + n + 4.
@@ -734,6 +794,7 @@
 * [A033063](http://oeis.org/A033063) ([program](A033063.asm)): Numbers n such that base 12 representation Sum{d(i)*12^i: i=0,1,...,m} has odd d(i) for all odd i.
 * [A033065](http://oeis.org/A033065) ([program](A033065.asm)): Numbers n such that base 14 representation Sum{d(i)*14^i: i=0,1,...,m} has odd d(i) for all odd i.
 * [A033067](http://oeis.org/A033067) ([program](A033067.asm)): Numbers n such that base 16 representation Sum{d(i)*16^i: i=0,1,...,m} has odd d(i) for all odd i.
+* [A033322](http://oeis.org/A033322) ([program](A033322.asm)): [ 2/n ].
 * [A033324](http://oeis.org/A033324) ([program](A033324.asm)): [ 4/n ].
 * [A033325](http://oeis.org/A033325) ([program](A033325.asm)): [ 5/n ].
 * [A033326](http://oeis.org/A033326) ([program](A033326.asm)): [ 6/n ].
@@ -764,8 +825,10 @@
 * [A033571](http://oeis.org/A033571) ([program](A033571.asm)): a(n) = (2*n + 1)*(5*n + 1).
 * [A033572](http://oeis.org/A033572) ([program](A033572.asm)): a(n) = (2*n+1)*(7*n+1).
 * [A033573](http://oeis.org/A033573) ([program](A033573.asm)): (2n+1)(9n+1).
+* [A033575](http://oeis.org/A033575) ([program](A033575.asm)): (2n+1)(11n+1).
 * [A033576](http://oeis.org/A033576) ([program](A033576.asm)): (2*n+1)*(12*n+1).
 * [A033577](http://oeis.org/A033577) ([program](A033577.asm)): a(n) = (3*n+1) * (4*n+1).
+* [A033578](http://oeis.org/A033578) ([program](A033578.asm)): a(n) = (3*n - 1)*(4*n - 1).
 * [A033579](http://oeis.org/A033579) ([program](A033579.asm)): Four times pentagonal numbers: a(n) = 2*n*(3*n-1).
 * [A033580](http://oeis.org/A033580) ([program](A033580.asm)): Four times second pentagonal numbers: a(n) = 2*n*(3*n+1).
 * [A033581](http://oeis.org/A033581) ([program](A033581.asm)): a(n) = 6*n^2.
@@ -789,6 +852,7 @@
 * [A034111](http://oeis.org/A034111) ([program](A034111.asm)): Decimal part of square root of a(n) starts with 5: first term of runs.
 * [A034126](http://oeis.org/A034126) ([program](A034126.asm)): Decimal part of cube root of a(n) starts with 0: first term of runs (cubes excluded).
 * [A034262](http://oeis.org/A034262) ([program](A034262.asm)): a(n) = n^3 + n.
+* [A034324](http://oeis.org/A034324) ([program](A034324.asm)): (n-3)(n-2)(n-1)+n.
 * [A034326](http://oeis.org/A034326) ([program](A034326.asm)): Hours struck by a clock.
 * [A034828](http://oeis.org/A034828) ([program](A034828.asm)): a(n) = floor(n^2/4)*(n/2).
 * [A034856](http://oeis.org/A034856) ([program](A034856.asm)): a(n) = binomial(n+1, 2) + n - 1 = n(n + 3)/2 - 1.
@@ -823,6 +887,7 @@
 * [A038179](http://oeis.org/A038179) ([program](A038179.asm)): Result of second stage of sieve of Eratosthenes.
 * [A038707](http://oeis.org/A038707) ([program](A038707.asm)): a(n) = floor(n*(n+1/2)/2).
 * [A038714](http://oeis.org/A038714) ([program](A038714.asm)): Promic numbers repeated 4 times; a(n) = floor(n/4) * ceiling((n+1)/4).
+* [A038722](http://oeis.org/A038722) ([program](A038722.asm)): Take the sequence of natural numbers (A000027) and reverse successive subsequences of lengths 1,2,3,4,... .
 * [A038764](http://oeis.org/A038764) ([program](A038764.asm)): a(n) = (9*n^2 + 3*n + 2)/2.
 * [A038865](http://oeis.org/A038865) ([program](A038865.asm)): (n+3)^3 - n^3.
 * [A039207](http://oeis.org/A039207) ([program](A039207.asm)): Numbers n such that representation in base 11 has same number of 8's and 9's.
@@ -834,6 +899,9 @@
 * [A039623](http://oeis.org/A039623) ([program](A039623.asm)): a(n) = n^2*(n^2+3)/4.
 * [A039823](http://oeis.org/A039823) ([program](A039823.asm)): a(n) = ceiling( (n^2 + n + 2)/4 ).
 * [A039825](http://oeis.org/A039825) ([program](A039825.asm)): a(n) = floor((n^2 + n + 8) / 4).
+* [A040002](http://oeis.org/A040002) ([program](A040002.asm)): Continued fraction for sqrt(5).
+* [A040006](http://oeis.org/A040006) ([program](A040006.asm)): Continued fraction for sqrt(10).
+* [A040012](http://oeis.org/A040012) ([program](A040012.asm)): Continued fraction for sqrt(17).
 * [A042948](http://oeis.org/A042948) ([program](A042948.asm)): Numbers congruent to 0 or 1 mod 4.
 * [A042950](http://oeis.org/A042950) ([program](A042950.asm)): Row sums of the Lucas triangle A029635.
 * [A042963](http://oeis.org/A042963) ([program](A042963.asm)): Numbers congruent to 1 or 2 mod 4.
@@ -1205,6 +1273,7 @@
 * [A047623](http://oeis.org/A047623) ([program](A047623.asm)): Numbers that are congruent to {1, 3, 5} mod 8.
 * [A047624](http://oeis.org/A047624) ([program](A047624.asm)): Numbers that are congruent to {0, 1, 3, 5} mod 8.
 * [A047667](http://oeis.org/A047667) ([program](A047667.asm)): Row 3 of array in A047666.
+* [A047672](http://oeis.org/A047672) ([program](A047672.asm)): Row 3 of square array defined in A047671.
 * [A047732](http://oeis.org/A047732) ([program](A047732.asm)): First differences are A005563.
 * [A047838](http://oeis.org/A047838) ([program](A047838.asm)): a(n) = floor(n^2/2) - 1.
 * [A047839](http://oeis.org/A047839) ([program](A047839.asm)): a(n) = n + floor( sqrt(2*n) ).
@@ -1222,6 +1291,7 @@
 * [A048469](http://oeis.org/A048469) ([program](A048469.asm)): a(n) = T(8,n), array T given by A047858.
 * [A048476](http://oeis.org/A048476) ([program](A048476.asm)): a(n) = T(4,n), array T given by A048472.
 * [A048477](http://oeis.org/A048477) ([program](A048477.asm)): a(n) = T(5,n), array T given by A048472.
+* [A048478](http://oeis.org/A048478) ([program](A048478.asm)): a(n) = T(6,n), array T given by A048472.
 * [A048479](http://oeis.org/A048479) ([program](A048479.asm)): a(n) = T(7,n), array T given by A048472.
 * [A048481](http://oeis.org/A048481) ([program](A048481.asm)): a(n) = T(0,n)+T(1,n-1)+...+T(n,0), array T given by A048472.
 * [A048487](http://oeis.org/A048487) ([program](A048487.asm)): a(n) = T(4,n), array T given by A048483.
@@ -1232,6 +1302,7 @@
 * [A048506](http://oeis.org/A048506) ([program](A048506.asm)): a(n) = T(0,n), array T given by A048505.
 * [A048577](http://oeis.org/A048577) ([program](A048577.asm)): Pisot sequence L(3,4).
 * [A048578](http://oeis.org/A048578) ([program](A048578.asm)): Pisot sequence L(3,5).
+* [A048755](http://oeis.org/A048755) ([program](A048755.asm)): Partial sums of A048693.
 * [A048760](http://oeis.org/A048760) ([program](A048760.asm)): Largest square <= n.
 * [A048761](http://oeis.org/A048761) ([program](A048761.asm)): Smallest square greater than or equal to n.
 * [A048762](http://oeis.org/A048762) ([program](A048762.asm)): Largest cube <= n.
@@ -1319,6 +1390,7 @@
 * [A053208](http://oeis.org/A053208) ([program](A053208.asm)): Row sums of A053207.
 * [A053209](http://oeis.org/A053209) ([program](A053209.asm)): Row sums of A051598.
 * [A053220](http://oeis.org/A053220) ([program](A053220.asm)): a(n) = (3*n-1) * 2^(n-2).
+* [A053311](http://oeis.org/A053311) ([program](A053311.asm)): Partial sums of A000285.
 * [A053438](http://oeis.org/A053438) ([program](A053438.asm)): Expansion of (1+x+2*x^3)/((1-x)*(1-x^2)).
 * [A053439](http://oeis.org/A053439) ([program](A053439.asm)): Expansion of (1+x+2*x^3)/((1-x)*(1-x^2)^2).
 * [A053599](http://oeis.org/A053599) ([program](A053599.asm)): Number of nonempty subsequences {s(k)} of 1..n such that the difference sequence is palindromic.
@@ -1326,6 +1398,7 @@
 * [A053644](http://oeis.org/A053644) ([program](A053644.asm)): Most significant bit of n, msb(n); largest power of 2 less than or equal to n; write n in binary and change all but the first digit to zero.
 * [A053645](http://oeis.org/A053645) ([program](A053645.asm)): Distance to largest power of 2 less than or equal to n; write n in binary and change the first digit to zero.
 * [A053698](http://oeis.org/A053698) ([program](A053698.asm)): a(n) = n^3 + n^2 + n + 1.
+* [A053741](http://oeis.org/A053741) ([program](A053741.asm)): Sum of even numbers in range 10n to 10n+9.
 * [A053742](http://oeis.org/A053742) ([program](A053742.asm)): Sum of odd numbers in range 10n to 10n+9.
 * [A053754](http://oeis.org/A053754) ([program](A053754.asm)): If n is in the sequence then 2n and 2n+1 are not (and 0 is in the sequence); when written in binary n has an even number of digits (0 has 0 digits).
 * [A053755](http://oeis.org/A053755) ([program](A053755.asm)): a(n) = 4*n^2 + 1.
@@ -1346,6 +1419,7 @@
 * [A054900](http://oeis.org/A054900) ([program](A054900.asm)): (n) = floor(n/16) + floor(n/256) + floor(n/4096) + floor(n/65536) + ....
 * [A054925](http://oeis.org/A054925) ([program](A054925.asm)): a(n) = ceiling(n*(n-1)/4).
 * [A054967](http://oeis.org/A054967) ([program](A054967.asm)): Numbers that are congruent to {0, 1, 9} mod 10.
+* [A054977](http://oeis.org/A054977) ([program](A054977.asm)): a(0)=2, a(n)=1, n >= 1.
 * [A055010](http://oeis.org/A055010) ([program](A055010.asm)): a(0) = 0; for n > 0, a(n) = 3*2^(n-1) - 1.
 * [A055086](http://oeis.org/A055086) ([program](A055086.asm)): n appears 1+[n/2] times.
 * [A055087](http://oeis.org/A055087) ([program](A055087.asm)): Integers 0..n then 0..n then 0..n+1 then 0..n+1 etc.
@@ -1384,6 +1458,7 @@
 * [A056864](http://oeis.org/A056864) ([program](A056864.asm)): Nearest integer to n^2/10.
 * [A056865](http://oeis.org/A056865) ([program](A056865.asm)): a(n) = floor(n^2/10).
 * [A057036](http://oeis.org/A057036) ([program](A057036.asm)): Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057036(n)=i(2n-1).
+* [A057037](http://oeis.org/A057037) ([program](A057037.asm)): Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057037(n)=j(2n-1).
 * [A057038](http://oeis.org/A057038) ([program](A057038.asm)): Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057038(n)=i(2n).
 * [A057353](http://oeis.org/A057353) ([program](A057353.asm)): a(n) = floor(3n/4).
 * [A057354](http://oeis.org/A057354) ([program](A057354.asm)): a(n) = floor(2*n/5).
@@ -1393,6 +1468,7 @@
 * [A057359](http://oeis.org/A057359) ([program](A057359.asm)): a(n) = floor(5*n/7).
 * [A057360](http://oeis.org/A057360) ([program](A057360.asm)): a(n) = floor(3*n/8).
 * [A057361](http://oeis.org/A057361) ([program](A057361.asm)): a(n) = floor(5*n/8).
+* [A057427](http://oeis.org/A057427) ([program](A057427.asm)): Sign(n) or signum(n) (with offset 0): a(n) = 1 if n>0, = 0 if n=0, = -1 if n<0; series expansion of x/(1-x).
 * [A057544](http://oeis.org/A057544) ([program](A057544.asm)): Maximum cycle length (orbit size) in the rotation permutation of n+2 side polygon triangularizations.
 * [A057569](http://oeis.org/A057569) ([program](A057569.asm)): Numbers of the form k*(5*k+1)/2 or k*(5*k-1)/2.
 * [A057570](http://oeis.org/A057570) ([program](A057570.asm)): Numbers of the form n*(7n+-1)/2.
@@ -1439,6 +1515,7 @@
 * [A060488](http://oeis.org/A060488) ([program](A060488.asm)): Number of 4-block ordered tricoverings of an unlabeled n-set.
 * [A060511](http://oeis.org/A060511) ([program](A060511.asm)): Hexagonal excess: smallest amount by which n exceeds a hexagonal number (2k^2-k, A000384).
 * [A060544](http://oeis.org/A060544) ([program](A060544.asm)): Centered 9-gonal (also known as nonagonal or enneagonal) numbers. Every third triangular number, starting with a(1)=1.
+* [A060576](http://oeis.org/A060576) ([program](A060576.asm)): Number of homeomorphically irreducible general graphs on 1 labeled node and with n edges.
 * [A060577](http://oeis.org/A060577) ([program](A060577.asm)): Number of homeomorphically irreducible general graphs on 2 labeled nodes and with n edges.
 * [A060626](http://oeis.org/A060626) ([program](A060626.asm)): Number of right triangles of a given area required to form successively larger squares.
 * [A060762](http://oeis.org/A060762) ([program](A060762.asm)): Number of conjugacy classes (the same as the number of irreducible representations) in the dihedral group with 2n elements.
@@ -1534,6 +1611,7 @@
 * [A063488](http://oeis.org/A063488) ([program](A063488.asm)): a(n) = (2*n-1)*(n^2 -n +2)/2.
 * [A063521](http://oeis.org/A063521) ([program](A063521.asm)): a(n) = n*(7*n^2-4)/3.
 * [A063523](http://oeis.org/A063523) ([program](A063523.asm)): a(n) = n*(8*n^2 - 5)/3.
+* [A063524](http://oeis.org/A063524) ([program](A063524.asm)): Characteristic function of 1.
 * [A063656](http://oeis.org/A063656) ([program](A063656.asm)): Numbers k such that the truncated square root of k is equal to the rounded square root of k.
 * [A063657](http://oeis.org/A063657) ([program](A063657.asm)): Numbers with property that truncated square root is unequal to rounded square root.
 * [A063724](http://oeis.org/A063724) ([program](A063724.asm)): Consider problem of placing N queens on an n X n board so that each queen attacks precisely 4 others. Sequence gives maximal number of queens.
@@ -1658,6 +1736,7 @@
 * [A076877](http://oeis.org/A076877) ([program](A076877.asm)): a(n) = A020330(n) / n.
 * [A076878](http://oeis.org/A076878) ([program](A076878.asm)): a(n) = ceiling(n^(1/n))^n - n.
 * [A076921](http://oeis.org/A076921) ([program](A076921.asm)): Smallest number such that the highest common factor of pair of successive terms follows the pattern 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, ..., i.e., b(2n-1) = b(2n) = n given by A004526.
+* [A076938](http://oeis.org/A076938) ([program](A076938.asm)): Duplicate of A004526.
 * [A077043](http://oeis.org/A077043) ([program](A077043.asm)): "Three-quarter squares": a(n) = n^2 - A002620(n).
 * [A077169](http://oeis.org/A077169) ([program](A077169.asm)): Initial terms of rows of A077168.
 * [A077221](http://oeis.org/A077221) ([program](A077221.asm)): a(0) = 0 and then alternately even and odd numbers in increasing order such that the sum of any two successive terms is a square.
@@ -1677,6 +1756,7 @@
 * [A077958](http://oeis.org/A077958) ([program](A077958.asm)): Expansion of 1/(1-2*x^3).
 * [A078008](http://oeis.org/A078008) ([program](A078008.asm)): Expansion of (1-x)/(1 - x - 2*x^2).
 * [A078112](http://oeis.org/A078112) ([program](A078112.asm)): Coefficients a(n) in the unique expansion sin(1) = Sum[a(n)/n!, n>=1], where a(n) satisfies 0<=a(n)<n.
+* [A078113](http://oeis.org/A078113) ([program](A078113.asm)): Let u(1)=u(2)=1, u(3)=n, u(k) = (1/2)*abs(2*u(k-1) -u(k-2)-u(k-3)); sequence gives values of n such that sum(k>=1, u(k)) is an integer.
 * [A078309](http://oeis.org/A078309) ([program](A078309.asm)): Numbers that are congruent to {1, 4, 7} mod 10.
 * [A078358](http://oeis.org/A078358) ([program](A078358.asm)): Non-oblong numbers: Complement of A002378.
 * [A078370](http://oeis.org/A078370) ([program](A078370.asm)): a(n) = 4*(n+1)*n + 5.
@@ -1848,6 +1928,7 @@
 * [A086955](http://oeis.org/A086955) ([program](A086955.asm)): a(n) = n^2 + 2*n + 2 - (-1)^n.
 * [A086970](http://oeis.org/A086970) ([program](A086970.asm)): Fix 1, then exchange the subsequent odd numbers in pairs.
 * [A087099](http://oeis.org/A087099) ([program](A087099.asm)): Partial sums of A063914.
+* [A087156](http://oeis.org/A087156) ([program](A087156.asm)): Nonnegative numbers excluding 1.
 * [A087172](http://oeis.org/A087172) ([program](A087172.asm)): Greatest Fibonacci number that does not exceed n.
 * [A087278](http://oeis.org/A087278) ([program](A087278.asm)): Distance to nearest square is not greater than 1.
 * [A087279](http://oeis.org/A087279) ([program](A087279.asm)): Nonnegative numbers such that distance to nearest positive square equals exactly 1.
@@ -1868,6 +1949,7 @@
 * [A088003](http://oeis.org/A088003) ([program](A088003.asm)): Take the list t(n,0) = {1,...,n}; denote by t(n,j) this list after rotating to left (or right) by j positions. Calculate inner product of t(n,0) and t(n,j) and denote the value by s(n,j). Compute this inner product for all j = 1..n and choose the smallest. This is a(n).
 * [A088039](http://oeis.org/A088039) ([program](A088039.asm)): Smallest k such that k^3 == 1 (mod some n-th power), k > 1.
 * [A088041](http://oeis.org/A088041) ([program](A088041.asm)): Smallest k such that k^4 - 1 is divisible by an n-th power, k > 1.
+* [A088209](http://oeis.org/A088209) ([program](A088209.asm)): Numerators of convergents of the continued fraction with the n+1 partial quotients: [1;1,1,...(n 1's)...,1,n+1], starting with [1], [1;2], [1;1,3], [1;1,1,4], ...
 * [A088227](http://oeis.org/A088227) ([program](A088227.asm)): Solutions x to x^n == 7 mod 13.
 * [A088333](http://oeis.org/A088333) ([program](A088333.asm)): A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 3 places clockwise from i. Repeat, counting 3 places from the next undeleted integer, until only one integer remains.
 * [A088439](http://oeis.org/A088439) ([program](A088439.asm)): a(3n) = 3n, otherwise a(n) = 1.
@@ -1972,6 +2054,7 @@
 * [A097080](http://oeis.org/A097080) ([program](A097080.asm)): a(n) = 2*n^2 - 2*n + 3.
 * [A097110](http://oeis.org/A097110) ([program](A097110.asm)): Expansion of (1 + 2x - 2x^3) / (1 - 3x^2 + 2x^4).
 * [A097135](http://oeis.org/A097135) ([program](A097135.asm)): a(0) = 1; for n>0, a(n) = 3*Fibonacci(n).
+* [A097280](http://oeis.org/A097280) ([program](A097280.asm)): Perimeter of integer triangle (A001611(n), A001611(n+1), A001611(n+2)).
 * [A097362](http://oeis.org/A097362) ([program](A097362.asm)): a(n) = (n+1)/2 if n is odd, n+2 otherwise.
 * [A097430](http://oeis.org/A097430) ([program](A097430.asm)): Integer part of the radii of circles with area n.
 * [A097482](http://oeis.org/A097482) ([program](A097482.asm)): a(1) = 1, a(2) = 1, a(n) = floor(sqrt(a(n-2)*a(n-1))) + 3 for n > 2.

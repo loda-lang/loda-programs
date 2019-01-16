@@ -47,6 +47,7 @@
 * [A210530](http://oeis.org/A210530) ([program](A210530.asm)): T(n,k) = (k + 3*n - 2 - (k+n-2)*(-1)^(k+n))/2 n, k > 0, read by antidiagonals.
 * [A210569](http://oeis.org/A210569) ([program](A210569.asm)): a(n) = (n-3)*(n-2)*(n-1)*n*(n+1)/30.
 * [A210622](http://oeis.org/A210622) ([program](A210622.asm)): Decimal expansion of 377/120.
+* [A210731](http://oeis.org/A210731) ([program](A210731.asm)): a(n) = a(n-1)+a(n-2)+n+3 with n>1, a(0) = a(1) = 0.
 * [A210977](http://oeis.org/A210977) ([program](A210977.asm)): A005475 and positive terms of A000566 interleaved.
 * [A211010](http://oeis.org/A211010) ([program](A211010.asm)): Value on the axis "x" of the endpoint of the structure of A211000 at n-th stage.
 * [A211013](http://oeis.org/A211013) ([program](A211013.asm)): Second 13-gonal numbers: a(n) = n*(11*n+9)/2.
@@ -208,6 +209,7 @@
 * [A227380](http://oeis.org/A227380) ([program](A227380.asm)): Doubling the first two of every four nonnegative numbers.
 * [A227417](http://oeis.org/A227417) ([program](A227417.asm)): Integer triples a(3n-2) = n, a(3n-1) = n+4, and a(3n) = n+7.
 * [A227568](http://oeis.org/A227568) ([program](A227568.asm)): Largest k such that a partition of n into distinct parts with boundary size k exists.
+* [A227712](http://oeis.org/A227712) ([program](A227712.asm)): a(n) = 9*2^n - 3*n - 5.
 * [A227721](http://oeis.org/A227721) ([program](A227721.asm)): Floor(1/s(n)), where s(n) = (2n+1)/(2n+2) - n*log((n+1)/n).
 * [A227776](http://oeis.org/A227776) ([program](A227776.asm)): a(n) = 6*n^2 + 1.
 * [A227786](http://oeis.org/A227786) ([program](A227786.asm)): Take squares larger than 1, subtract 3 from even squares and 2 from odd squares; a(n) = a(n-1) + A168276(n+1) (with a(1) = 1).
@@ -396,6 +398,7 @@
 * [A254745](http://oeis.org/A254745) ([program](A254745.asm)): Chebyshev polynomials of the second kind, U(n,x)^2, evaluated at x = sqrt(3)/2.
 * [A254963](http://oeis.org/A254963) ([program](A254963.asm)): a(n) = n*(11*n + 3)/2.
 * [A255047](http://oeis.org/A255047) ([program](A255047.asm)): 1 together with the positive terms of A000225.
+* [A255176](http://oeis.org/A255176) ([program](A255176.asm)): a(n) = H_n(2,2) where H_n is the n-th hyperoperator.
 * [A255185](http://oeis.org/A255185) ([program](A255185.asm)): 26-gonal numbers: a(n) = n*(12*n-11).
 * [A255186](http://oeis.org/A255186) ([program](A255186.asm)): 27-gonal numbers: a(n) = n*(25*n-23)/2.
 * [A255187](http://oeis.org/A255187) ([program](A255187.asm)): 29-gonal numbers: a(n) = n*(27*n-25)/2.
@@ -424,6 +427,7 @@
 * [A257542](http://oeis.org/A257542) ([program](A257542.asm)): Square-sum pairs: Numbers n such that 0,1, ..., 2n-1 can be partitioned into n pairs, where each pair adds up to a perfect square.
 * [A257645](http://oeis.org/A257645) ([program](A257645.asm)): a(n) = 15*n + 14.
 * [A257844](http://oeis.org/A257844) ([program](A257844.asm)): a(n) = floor(n/4) * (n mod 4).
+* [A257936](http://oeis.org/A257936) ([program](A257936.asm)): Decimal expansion of 11/18.
 * [A258087](http://oeis.org/A258087) ([program](A258087.asm)): Start with all terms set to 0. Then add n to the next n+2 terms for n=0,1,2,... .
 * [A258582](http://oeis.org/A258582) ([program](A258582.asm)): a(n) = n*(2*n + 1)*(4*n + 1)/3.
 * [A258588](http://oeis.org/A258588) ([program](A258588.asm)): Minimal most likely sum for a roll of n 10-sided dice.
@@ -443,6 +447,7 @@
 * [A260484](http://oeis.org/A260484) ([program](A260484.asm)): Complement of the Beatty sequence for e^(1/Pi) = A179706.
 * [A260686](http://oeis.org/A260686) ([program](A260686.asm)): Period 6 zigzag sequence, repeat [0, 1, 2, 3, 2, 1].
 * [A260955](http://oeis.org/A260955) ([program](A260955.asm)): Differences of the increasing arithmetic progression a^2+a, b^2+b, c^2+c, where b = 5*a+2, c = 7*a+3 and a >= 0.
+* [A261143](http://oeis.org/A261143) ([program](A261143.asm)): a(n) = H_n(1,2) where H_n is the n-th hyperoperator.
 * [A261243](http://oeis.org/A261243) ([program](A261243.asm)): Row lengths of the irregular triangles A258643 and A261242: maximal number of 0-islands (holes) of certain bisymmetric n X n matrices with 0 or 1 entries only.
 * [A261343](http://oeis.org/A261343) ([program](A261343.asm)): 50-gonal numbers: a(n) = 48*n*(n-1)/2 + n.
 * [A261348](http://oeis.org/A261348) ([program](A261348.asm)): a(1)=0; a(2)=0; for n>2: a(n) = A237591(n,2) = A237593(n,2).
@@ -465,6 +470,7 @@
 * [A263997](http://oeis.org/A263997) ([program](A263997.asm)): Sequence of block lengths in a block spiral of width 1.
 * [A264120](http://oeis.org/A264120) ([program](A264120.asm)): Values of k such that A001163(k) is positive.
 * [A264443](http://oeis.org/A264443) ([program](A264443.asm)): a(n) = n*(n + 5)*(n + 10)/6.
+* [A264444](http://oeis.org/A264444) ([program](A264444.asm)): a(n) = n*(n + 7)*(n + 14)/6.
 * [A264754](http://oeis.org/A264754) ([program](A264754.asm)): Expansion of (1 + 2*x - 2*x^3 + x^4)/((1 - x)^3*(1 + x)^2).
 * [A265046](http://oeis.org/A265046) ([program](A265046.asm)): Coordination sequence for a 4.6.6 point in the 3-transitive tiling {4.6.6, 6.6.6, 6.6.6.6} of the plane by squares and dominoes (hexagons).
 * [A265056](http://oeis.org/A265056) ([program](A265056.asm)): Partial sums of A234275.
@@ -505,6 +511,7 @@
 * [A266550](http://oeis.org/A266550) ([program](A266550.asm)): Independence number of the n-Mycielski graph.
 * [A266664](http://oeis.org/A266664) ([program](A266664.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
 * [A266665](http://oeis.org/A266665) ([program](A266665.asm)): Total number of OFF (white) cells after n iterations of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
+* [A266678](http://oeis.org/A266678) ([program](A266678.asm)): Middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
 * [A266722](http://oeis.org/A266722) ([program](A266722.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
 * [A266723](http://oeis.org/A266723) ([program](A266723.asm)): Total number of ON (black) cells after n iterations of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
 * [A266724](http://oeis.org/A266724) ([program](A266724.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
@@ -532,6 +539,8 @@
 * [A267682](http://oeis.org/A267682) ([program](A267682.asm)): a(n) = 2*a(n-1) - 2*a(n-3) + a(n-4) for n > 3, with initial terms 1, 1, 4, 8.
 * [A267707](http://oeis.org/A267707) ([program](A267707.asm)): a(n) = A000217(A000217(n)+1).
 * [A267711](http://oeis.org/A267711) ([program](A267711.asm)): Numbers n such that n (mod 3) = n (mod 5).
+* [A267870](http://oeis.org/A267870) ([program](A267870.asm)): Triangle read by rows giving successive states of cellular automaton generated by "Rule 237" initiated with a single ON (black) cell.
+* [A267871](http://oeis.org/A267871) ([program](A267871.asm)): Triangle read by rows giving successive states of cellular automaton generated by "Rule 239" initiated with a single ON (black) cell.
 * [A267872](http://oeis.org/A267872) ([program](A267872.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 237" elementary cellular automaton starting with a single ON (black) cell.
 * [A267873](http://oeis.org/A267873) ([program](A267873.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 235" elementary cellular automaton starting with a single ON (black) cell.
 * [A267874](http://oeis.org/A267874) ([program](A267874.asm)): Total number of ON (black) cells after n iterations of the "Rule 235" elementary cellular automaton starting with a single ON (black) cell.
@@ -562,6 +571,7 @@
 * [A270704](http://oeis.org/A270704) ([program](A270704.asm)): Even 14-gonal (or tetradecagonal) numbers.
 * [A270743](http://oeis.org/A270743) ([program](A270743.asm)): Runlength sequence of the zero-one sequence A270742.
 * [A270809](http://oeis.org/A270809) ([program](A270809.asm)): a(n) = n^3/3 - 7*n/3 + 4.
+* [A270810](http://oeis.org/A270810) ([program](A270810.asm)): Expansion of (x - x^2 + 2*x^3 + 2*x^4)/(1 - 3*x + 2*x^2).
 * [A270841](http://oeis.org/A270841) ([program](A270841.asm)): a(1) = 5; a(n) is the sum of |a(m) - m| for m < n.
 * [A270867](http://oeis.org/A270867) ([program](A270867.asm)): a(n) = n^3 + 2*n^2 + 4*n + 1.
 * [A271114](http://oeis.org/A271114) ([program](A271114.asm)): Expansion of (1+x)*(2+x)/(1-x)^2.
@@ -610,6 +620,8 @@
 * [A274757](http://oeis.org/A274757) ([program](A274757.asm)): Numbers k such that 6*k+1 is a triangular number (A000217).
 * [A274830](http://oeis.org/A274830) ([program](A274830.asm)): Numbers n such that 7*n+1 is a triangular number (A000217).
 * [A274933](http://oeis.org/A274933) ([program](A274933.asm)): Maximal number of non-attacking queens on a quarter chessboard containing n^2 squares.
+* [A274981](http://oeis.org/A274981) ([program](A274981.asm)): Decimal expansion of gamma(2) = 7/5.
+* [A275163](http://oeis.org/A275163) ([program](A275163.asm)): a(n) = 13*2^(n+1) - 19.
 * [A275365](http://oeis.org/A275365) ([program](A275365.asm)): a(1)=2, a(2)=2; thereafter a(n) = a(n-a(n-1)) + a(n-a(n-2)).
 * [A275543](http://oeis.org/A275543) ([program](A275543.asm)): A081585 and A069129 interleaved.
 * [A275591](http://oeis.org/A275591) ([program](A275591.asm)): a(n) = n^2 + 9*n + 1.
@@ -720,6 +732,7 @@
 * [A290744](http://oeis.org/A290744) ([program](A290744.asm)): Maximum number of distinct Lyndon factors that can appear in words of length n over an alphabet of size 5.
 * [A290768](http://oeis.org/A290768) ([program](A290768.asm)): a(n) = 3/2*(n^2 - n + 2).
 * [A290781](http://oeis.org/A290781) ([program](A290781.asm)): a(n) = 20*n + 15.
+* [A290858](http://oeis.org/A290858) ([program](A290858.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 1006", based on the 5-celled von Neumann neighborhood.
 * [A291024](http://oeis.org/A291024) ([program](A291024.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - 2 S^2)^2.
 * [A291064](http://oeis.org/A291064) ([program](A291064.asm)): a(n) = 2^n*(n + 1) - 3*(n - 1).
 * [A291271](http://oeis.org/A291271) ([program](A291271.asm)): The arithmetic function v_4(n,2).
@@ -735,15 +748,18 @@
 * [A293004](http://oeis.org/A293004) ([program](A293004.asm)): Expansion of 2*x^2 / (x^3 + x^2 - 3x + 1).
 * [A293064](http://oeis.org/A293064) ([program](A293064.asm)): Number of vertices of type B at level n of the hyperbolic Pascal pyramid PP_(4,5).
 * [A293065](http://oeis.org/A293065) ([program](A293065.asm)): Number of vertices of type D at level n of the hyperbolic Pascal pyramid PP_(4,5).
+* [A293066](http://oeis.org/A293066) ([program](A293066.asm)): Number of vertices at level n of the hyperbolic Pascal pyramid PP_(4,5).
 * [A293137](http://oeis.org/A293137) ([program](A293137.asm)): a(0) = 0, and a(n) = floor(2*sqrt(n)) - 1 for n >= 1.
 * [A293292](http://oeis.org/A293292) ([program](A293292.asm)): Numbers with last digit less than 5 (in base 10).
 * [A293481](http://oeis.org/A293481) ([program](A293481.asm)): Numbers with last digit greater than or equal to 5 (in base 10).
 * [A293497](http://oeis.org/A293497) ([program](A293497.asm)): Triangular array read by rows: row n >= 1 is the list of integers from 0 to 2n-1
+* [A293706](http://oeis.org/A293706) ([program](A293706.asm)): a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
 * [A293754](http://oeis.org/A293754) ([program](A293754.asm)): Numbers n such that c(n,0) < c(n,1), where c(n,d) = number of d's in the first n digits of the base-2 expansion of tau (the golden ratio, (1+sqrt(5))/2)).
 * [A293990](http://oeis.org/A293990) ([program](A293990.asm)): a(n) = (3*n + ((n-2) mod 4))/2.
 * [A294157](http://oeis.org/A294157) ([program](A294157.asm)): Fibonacci sequence beginning 2, 8.
 * [A294259](http://oeis.org/A294259) ([program](A294259.asm)): a(n) = n*(n^3 + 2*n^2 - 5*n + 10)/8.
 * [A294317](http://oeis.org/A294317) ([program](A294317.asm)): Triangle read by rows: T(n, k) = 2*n-k, k <= n.
+* [A294619](http://oeis.org/A294619) ([program](A294619.asm)): a(0) = 0, a(1) = 1, a(2) = 2 and a(n) = 1 for n > 2.
 * [A294732](http://oeis.org/A294732) ([program](A294732.asm)): Maximal diameter of the connected cubic graphs on 2*n vertices.
 * [A294774](http://oeis.org/A294774) ([program](A294774.asm)): a(n) = 2*n^2 + 2*n + 5.
 * [A295077](http://oeis.org/A295077) ([program](A295077.asm)): a(n) = 2*n*(n-1) + 2^n - 1.

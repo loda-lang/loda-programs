@@ -10,14 +10,10 @@ add $1,1
 add $1,$$2
 mov $$0,1
 sub $1,4
-lpb $2,$1
+lpb $2,1
   sub $2,$1
-  add $4,1
 lpe
-add $$1,4
-mov $$1,$$2
 mov $0,0
 add $3,1
 mov $$3,$2
-sub $$4,$2
 mov $1,$$2

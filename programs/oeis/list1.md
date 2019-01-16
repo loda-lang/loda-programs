@@ -270,6 +270,7 @@
 * [A122391](http://oeis.org/A122391) ([program](A122391.asm)): Dimension of 2-variable non-commutative harmonics (Hausdorff derivative). The dimension of the space of non-commutative polynomials in 2 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( w ) = sum over all subwords of w deleting xi once).
 * [A122461](http://oeis.org/A122461) ([program](A122461.asm)): Repetitions of even numbers four times.
 * [A122491](http://oeis.org/A122491) ([program](A122491.asm)): a(n) = n * Fibonacci(n) - Sum_{i=0..n} Fibonacci(i).
+* [A122553](http://oeis.org/A122553) ([program](A122553.asm)): a(0)=1, a(n)=3 for n > 0.
 * [A122709](http://oeis.org/A122709) ([program](A122709.asm)): a(0)=1; thereafter a(n) = 9*n-3.
 * [A122797](http://oeis.org/A122797) ([program](A122797.asm)): A P_3-stuttered arithmetic progression with a(n+1)=a(n) if n is a triangular number, a(n+1)=a(n)+1 otherwise.
 * [A122798](http://oeis.org/A122798) ([program](A122798.asm)): A P_5-stuttered arithmetic progression with a(n+1) = a(n) if n is a pentagonal number, a(n+1) = a(n)+4 otherwise.
@@ -285,6 +286,7 @@
 * [A123753](http://oeis.org/A123753) ([program](A123753.asm)): Partial sums of A070941.
 * [A123860](http://oeis.org/A123860) ([program](A123860.asm)): Ceil( (7+sqrt(49+24*n))/2 ).
 * [A123919](http://oeis.org/A123919) ([program](A123919.asm)): Number of numbers congruent to 2 or 4 mod 6 and <= n.
+* [A123932](http://oeis.org/A123932) ([program](A123932.asm)): a(0)=1, a(n)=4 for n>0.
 * [A124011](http://oeis.org/A124011) ([program](A124011.asm)): Add three, add six, add nine, ....
 * [A124080](http://oeis.org/A124080) ([program](A124080.asm)): 10 times triangular numbers: a(n) = 5*n*(n + 1).
 * [A124158](http://oeis.org/A124158) ([program](A124158.asm)): Maximal number of edges in a rectangle visibility graph with n nodes.
@@ -301,6 +303,7 @@
 * [A125201](http://oeis.org/A125201) ([program](A125201.asm)): a(n) = 8*n^2 - 7*n + 1.
 * [A125577](http://oeis.org/A125577) ([program](A125577.asm)): a(0) = 1; for n >= 1, a(n) = n^2 - a(n-1).
 * [A125758](http://oeis.org/A125758) ([program](A125758.asm)): Numbers congruent to 4 or 7 mod 9.
+* [A125811](http://oeis.org/A125811) ([program](A125811.asm)): Number of coefficients in the n-th q-Bell number as a polynomial in q.
 * [A126235](http://oeis.org/A126235) ([program](A126235.asm)): Minimum length of a codeword in Huffman encoding of n symbols, where the k-th symbol has frequency k.
 * [A126264](http://oeis.org/A126264) ([program](A126264.asm)): a(n) = 5*n^2 + 3*n.
 * [A126562](http://oeis.org/A126562) ([program](A126562.asm)): Number of intersections of at least four edges in a cube of n X n X n smaller cubes.
@@ -337,6 +340,7 @@
 * [A128470](http://oeis.org/A128470) ([program](A128470.asm)): a(n) = 30*n + 1.
 * [A128471](http://oeis.org/A128471) ([program](A128471.asm)): 30*n+7.
 * [A128473](http://oeis.org/A128473) ([program](A128473.asm)): Numbers of the form 30*k+23 or numbers that cannot be part of a twin prime pair.
+* [A128588](http://oeis.org/A128588) ([program](A128588.asm)): A007318 * A128587.
 * [A128918](http://oeis.org/A128918) ([program](A128918.asm)): a(n) = n*(n+1)/2 if n is odd, otherwise (n-1)*n/2 + 1.
 * [A128929](http://oeis.org/A128929) ([program](A128929.asm)): Diameter of a special type of regular graph of degree 4 whose order maintain an increase in form of an arithmetic progression.
 * [A128999](http://oeis.org/A128999) ([program](A128999.asm)): Start with an integer (in this case 1). First, add 5 or 6 if the integer is odd or even, respectively. Then divide by 2. Notice any a(1)<=5 converges to 5 and any a(1)>=6 converges to 6.
@@ -352,6 +356,7 @@
 * [A129972](http://oeis.org/A129972) ([program](A129972.asm)): a(n) = 2*floor(log_2(n)) + 1.
 * [A130053](http://oeis.org/A130053) ([program](A130053.asm)): G.f. A(x) = (1-x+x^2)/(1-x)^3 - x*[Sum_{n>=0} x^(n + 2^n)]/(1-x)^2 .
 * [A130103](http://oeis.org/A130103) ([program](A130103.asm)): Expansion of e^(2x)-(1+x)*e^x+x.
+* [A130130](http://oeis.org/A130130) ([program](A130130.asm)): a(0)=0, a(1)=1, a(n)=2 for n >= 2.
 * [A130249](http://oeis.org/A130249) ([program](A130249.asm)): Maximal index k of a Jacobsthal number such that A001045(k)<=n (the 'lower' Jacobsthal inverse).
 * [A130255](http://oeis.org/A130255) ([program](A130255.asm)): Maximal index k of an odd Fibonacci number (A001519) such that A001519(k) = Fibonacci(2k-1) <= n (the 'lower' odd Fibonacci Inverse).
 * [A130259](http://oeis.org/A130259) ([program](A130259.asm)): Maximal index k of an even Fibonacci number (A001906) such that A001906(k) = Fib(2k) <= n (the 'lower' even Fibonacci Inverse).
@@ -373,11 +378,14 @@
 * [A130518](http://oeis.org/A130518) ([program](A130518.asm)): a(n) = Sum_{k=0..n} floor(k/3). (Partial sums of A002264.)
 * [A130519](http://oeis.org/A130519) ([program](A130519.asm)): a(n) = Sum_{k=0..n} floor(k/4). (Partial sums of A002265.)
 * [A130520](http://oeis.org/A130520) ([program](A130520.asm)): a(n) = Sum_{k=0..n} floor(k/5). (Partial sums of A002266).
+* [A130543](http://oeis.org/A130543) ([program](A130543.asm)): Multiplicative persistence of n!.
 * [A130656](http://oeis.org/A130656) ([program](A130656.asm)): Interlacing n^3/2 and n^2(n + 1)/2.
 * [A130659](http://oeis.org/A130659) ([program](A130659.asm)): Period 4: repeat [0, 1, 2, 4].
+* [A130706](http://oeis.org/A130706) ([program](A130706.asm)): a(0) = 1, a(1) = 2, a(n) = 0 for n > 1.
 * [A130727](http://oeis.org/A130727) ([program](A130727.asm)): List of triples 2n+1, 2n+3, 2n+2.
 * [A130766](http://oeis.org/A130766) ([program](A130766.asm)): 3n+2 sandwiched by tripled 3n+1 .
 * [A130773](http://oeis.org/A130773) ([program](A130773.asm)): a(0)=0, a(1)=2, a(n)=2n+1 for n >= 2.
+* [A130779](http://oeis.org/A130779) ([program](A130779.asm)): a(0)=a(1)=1, a(2)=2, a(n)=0 for n >= 3.
 * [A130809](http://oeis.org/A130809) ([program](A130809.asm)): If X_1, ..., X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 3-subsets of X containing none of X_i, (i=1,...,n).
 * [A130819](http://oeis.org/A130819) ([program](A130819.asm)): 2n appears 2n-1 times.
 * [A130821](http://oeis.org/A130821) ([program](A130821.asm)): 2n-1 appears 2n times.
@@ -553,6 +561,7 @@
 * [A135659](http://oeis.org/A135659) ([program](A135659.asm)): a(n) = 24*n + 7.
 * [A135668](http://oeis.org/A135668) ([program](A135668.asm)): a(n) = ceiling(n + sqrt(n)).
 * [A135703](http://oeis.org/A135703) ([program](A135703.asm)): a(n) = n*(7*n-2).
+* [A135704](http://oeis.org/A135704) ([program](A135704.asm)): a(n) = 7*n^2 + 4*n + 1.
 * [A135705](http://oeis.org/A135705) ([program](A135705.asm)): a(n) = 10*binomial(n,2) + 9*n.
 * [A135706](http://oeis.org/A135706) ([program](A135706.asm)): a(n) = n*(5*n-3).
 * [A135713](http://oeis.org/A135713) ([program](A135713.asm)): a(n) = n*(n+1)*(4*n+1)/2.
@@ -663,6 +672,7 @@
 * [A140823](http://oeis.org/A140823) ([program](A140823.asm)): Natural numbers which are not perfect fourth powers.
 * [A140833](http://oeis.org/A140833) ([program](A140833.asm)): Sum of Fibonacci numbers between F(-n)....F(n), inclusive.
 * [A141023](http://oeis.org/A141023) ([program](A141023.asm)): a(n) = 2^n - (3-(-1)^n)/2.
+* [A141044](http://oeis.org/A141044) ([program](A141044.asm)): Two 2's followed by all 1's.
 * [A141213](http://oeis.org/A141213) ([program](A141213.asm)): Defining A to be the interior angle of a regular polygon, the number of constructible regular polygons such that A is in a field extension = degree 2^n, starting with n=0. This is also the number of values of x such that phi(x)/2 = 2^n (where phi is Euler's phi function), also starting with n=0.
 * [A141310](http://oeis.org/A141310) ([program](A141310.asm)): The odd numbers interlaced with the constant-2 sequence.
 * [A141518](http://oeis.org/A141518) ([program](A141518.asm)): Period 5: repeat [1, 3, 5, 7, 9].
@@ -745,6 +755,7 @@
 * [A146512](http://oeis.org/A146512) ([program](A146512.asm)): Numbers congruent to {1, 3} mod 12.
 * [A146523](http://oeis.org/A146523) ([program](A146523.asm)): Binomial transform of A010685.
 * [A146528](http://oeis.org/A146528) ([program](A146528.asm)): Sequence related to A053016(n): a(n)=2*(If[n == 0, 0, 2^(n - 1)] + 2)
+* [A146529](http://oeis.org/A146529) ([program](A146529.asm)): A two level sequence: v(n)=2*(If[n == 0, 0, 2^(n - 1)] + 2); a(n)=If[n == 0, 6, (v[n] + v[n - 1] - 2)].
 * [A146541](http://oeis.org/A146541) ([program](A146541.asm)): Binomial transform of A010688.
 * [A146763](http://oeis.org/A146763) ([program](A146763.asm)): Rank of terms ending in 0 in A061039.
 * [A146951](http://oeis.org/A146951) ([program](A146951.asm)): Rank of terms of A061047 ending in with 0.
@@ -760,6 +771,7 @@
 * [A147874](http://oeis.org/A147874) ([program](A147874.asm)): a(n) = (5*n-7)*(n-1).
 * [A147875](http://oeis.org/A147875) ([program](A147875.asm)): Second heptagonal numbers: a(n) = n*(5*n+3)/2.
 * [A151542](http://oeis.org/A151542) ([program](A151542.asm)): Generalized pentagonal numbers: a(n) = 12*n + 3*n*(n-1)/2.
+* [A151798](http://oeis.org/A151798) ([program](A151798.asm)): a(0)=1, a(1)=2, a(n)=4 for n>=2.
 * [A151821](http://oeis.org/A151821) ([program](A151821.asm)): Powers of 2, omitting 2 itself.
 * [A151842](http://oeis.org/A151842) ([program](A151842.asm)): a(3n)=n, a(3n+1)=2n+1, a(3n+2)=n+1.
 * [A151977](http://oeis.org/A151977) ([program](A151977.asm)): Numbers that are congruent to {0, 1} mod 16.
@@ -815,6 +827,7 @@
 * [A153643](http://oeis.org/A153643) ([program](A153643.asm)): Jacobsthal numbers A001045 incremented by 2.
 * [A153644](http://oeis.org/A153644) ([program](A153644.asm)): a(n) = 4*n^2 + 28*n + 10.
 * [A153784](http://oeis.org/A153784) ([program](A153784.asm)): 4 times heptagonal numbers: 2n(5n-3).
+* [A153785](http://oeis.org/A153785) ([program](A153785.asm)): 5 times heptagonal numbers: a(n) = 5*n*(5*n-3)/2.
 * [A153786](http://oeis.org/A153786) ([program](A153786.asm)): 6 times heptagonal numbers: a(n) = 3*n*(5*n-3).
 * [A153792](http://oeis.org/A153792) ([program](A153792.asm)): 12 times pentagonal numbers: a(n) = 6*n*(3*n-1).
 * [A153794](http://oeis.org/A153794) ([program](A153794.asm)): 4 times octagonal numbers: a(n) = 4*n*(3*n-2).
@@ -838,6 +851,7 @@
 * [A154260](http://oeis.org/A154260) ([program](A154260.asm)): Numbers of the form m*(4*m +- 1)/2.
 * [A154266](http://oeis.org/A154266) ([program](A154266.asm)): a(n) = 27*n + 12.
 * [A154267](http://oeis.org/A154267) ([program](A154267.asm)): a(n) = 27*n + 15.
+* [A154272](http://oeis.org/A154272) ([program](A154272.asm)): 1,0,1 followed by 0,0,0...
 * [A154323](http://oeis.org/A154323) ([program](A154323.asm)): Central coefficients of number triangle A113582.
 * [A154516](http://oeis.org/A154516) ([program](A154516.asm)): a(n) = 9n^2 - n.
 * [A154517](http://oeis.org/A154517) ([program](A154517.asm)): a(n) = 9*n^2 + n.
@@ -878,10 +892,12 @@
 * [A157330](http://oeis.org/A157330) ([program](A157330.asm)): a(n) = 64*n - 8.
 * [A157336](http://oeis.org/A157336) ([program](A157336.asm)): a(n) = 8*(8*n + 1).
 * [A157432](http://oeis.org/A157432) ([program](A157432.asm)): 64n + 584.
+* [A157434](http://oeis.org/A157434) ([program](A157434.asm)): 4n^2 + 79n + 390.
 * [A157435](http://oeis.org/A157435) ([program](A157435.asm)): 64n + 632.
 * [A157446](http://oeis.org/A157446) ([program](A157446.asm)): a(n) = 16*n^2 - n.
 * [A157474](http://oeis.org/A157474) ([program](A157474.asm)): a(n) = 16n^2 + n.
 * [A157502](http://oeis.org/A157502) ([program](A157502.asm)): Even numbers without the squares.
+* [A157532](http://oeis.org/A157532) ([program](A157532.asm)): a(1) = 2; for n > 1, a(n) = 3.
 * [A157725](http://oeis.org/A157725) ([program](A157725.asm)): a(n) = Fibonacci(n) + 2.
 * [A157726](http://oeis.org/A157726) ([program](A157726.asm)): a(n) = Fibonacci(n) + 3.
 * [A157727](http://oeis.org/A157727) ([program](A157727.asm)): a(n) = Fibonacci(n) + 4.
@@ -889,6 +905,7 @@
 * [A157870](http://oeis.org/A157870) ([program](A157870.asm)): a(n) = (4n+1)(4n+2) = (4n+2)!/(4n)!.
 * [A157872](http://oeis.org/A157872) ([program](A157872.asm)): a(n) = 9*n^2 - 3.
 * [A157914](http://oeis.org/A157914) ([program](A157914.asm)): a(n) = 8*n^2 - 1.
+* [A157928](http://oeis.org/A157928) ([program](A157928.asm)): a(n) = 0 if n < 2, = 1 otherwise.
 * [A157932](http://oeis.org/A157932) ([program](A157932.asm)): Numbers n such that 3^(35n)+5^(21n)+7^(15n) mod 105 is prime.
 * [A157949](http://oeis.org/A157949) ([program](A157949.asm)): a(n) = 128*n - 1.
 * [A157951](http://oeis.org/A157951) ([program](A157951.asm)): a(n) = 128*n + 1.
@@ -921,6 +938,7 @@
 * [A158478](http://oeis.org/A158478) ([program](A158478.asm)): Number of colors needed to paint n sectors of a circle.
 * [A158480](http://oeis.org/A158480) ([program](A158480.asm)): 12n^2 + 1.
 * [A158482](http://oeis.org/A158482) ([program](A158482.asm)): 14n^2 + 1.
+* [A158493](http://oeis.org/A158493) ([program](A158493.asm)): a(n) = 20*n^2 + 1.
 * [A158498](http://oeis.org/A158498) ([program](A158498.asm)): a(n) = (1/2)*(n^3 - 6*n^2 + 13*n - 6).
 * [A158515](http://oeis.org/A158515) ([program](A158515.asm)): Number of colors needed to paint a wheel graph on n nodes.
 * [A158556](http://oeis.org/A158556) ([program](A158556.asm)): a(n) = 28*n^2 + 1.
@@ -928,10 +946,12 @@
 * [A158575](http://oeis.org/A158575) ([program](A158575.asm)): a(n) = 32*n^2 + 1.
 * [A158591](http://oeis.org/A158591) ([program](A158591.asm)): 36n^2 + 1.
 * [A158607](http://oeis.org/A158607) ([program](A158607.asm)): Period 5: repeat 9,11,13,5,7.
+* [A158638](http://oeis.org/A158638) ([program](A158638.asm)): a(n) = 48*n^2 + 1.
 * [A158686](http://oeis.org/A158686) ([program](A158686.asm)): 64n^2 + 1.
 * [A158740](http://oeis.org/A158740) ([program](A158740.asm)): a(n) = 72*n^2 + 1.
 * [A158772](http://oeis.org/A158772) ([program](A158772.asm)): a(n) = A138635(n+18)-A138635(n).
 * [A158780](http://oeis.org/A158780) ([program](A158780.asm)): a(2n) = A131577(n). a(2n+1) = A011782(n).
+* [A158799](http://oeis.org/A158799) ([program](A158799.asm)): a(0)=1, a(1)=2, a(n)=3 for n>=2.
 * [A158842](http://oeis.org/A158842) ([program](A158842.asm)): 1 + n*(n+1)*(n-1)/2.
 * [A158894](http://oeis.org/A158894) ([program](A158894.asm)): Sawtooth pattern of one, then two, then three, then four etc. consecutive odd numbers, starting each time at 3.
 * [A158953](http://oeis.org/A158953) ([program](A158953.asm)): Trajectory of 12 under repeated application of the map n --> A102370(n) .
@@ -1021,6 +1041,8 @@
 * [A164845](http://oeis.org/A164845) ([program](A164845.asm)): a(n) = (6 + 10*n + 5*n^2 + n^3)/2.
 * [A164897](http://oeis.org/A164897) ([program](A164897.asm)): a(n) = 4*n*(n+1) + 3.
 * [A164906](http://oeis.org/A164906) ([program](A164906.asm)): a(n) = (3*2^n - (-2)^n)/2.
+* [A165020](http://oeis.org/A165020) ([program](A165020.asm)): Length of cycle mentioned in A165019
+* [A165024](http://oeis.org/A165024) ([program](A165024.asm)): Length of cycle mentioned in A165023
 * [A165063](http://oeis.org/A165063) ([program](A165063.asm)): Length of cycle mentioned in A165062
 * [A165145](http://oeis.org/A165145) ([program](A165145.asm)): Partial sums of A058183.
 * [A165157](http://oeis.org/A165157) ([program](A165157.asm)): Zero followed by partial sums of A133622.
@@ -1059,6 +1081,7 @@
 * [A166621](http://oeis.org/A166621) ([program](A166621.asm)): a(n) = 10*n - a(n-1), with n>1, a(1)=5.
 * [A166830](http://oeis.org/A166830) ([program](A166830.asm)): Number of n X 3 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nonincreasing order.
 * [A166873](http://oeis.org/A166873) ([program](A166873.asm)): a(n) = a(n-1) + 12*n for n > 1; a(1) = 1.
+* [A166920](http://oeis.org/A166920) ([program](A166920.asm)): a(n) = 2^n - (1 + (-1)^n)/2.
 * [A166926](http://oeis.org/A166926) ([program](A166926.asm)): A000004 preceded by 1, 2, 4.
 * [A167381](http://oeis.org/A167381) ([program](A167381.asm)): The numbers read down the left-center column of an arrangement of the natural numbers in square blocks.
 * [A167420](http://oeis.org/A167420) ([program](A167420.asm)): 2^n mod 14.
@@ -1214,6 +1237,7 @@
 * [A171891](http://oeis.org/A171891) ([program](A171891.asm)): 1 and all numbers >= 10.
 * [A171892](http://oeis.org/A171892) ([program](A171892.asm)): 0, 1 and all numbers >= 9.
 * [A171893](http://oeis.org/A171893) ([program](A171893.asm)): 1, 2 and all numbers >= 10.
+* [A171905](http://oeis.org/A171905) ([program](A171905.asm)): a(1) = 1 and a(2) = 2, a(n) = |(sum of previous terms) - n|.
 * [A171950](http://oeis.org/A171950) ([program](A171950.asm)): a(1)=1. a(n) = the absolute difference between (the sum of previous terms) and A000217(n-2), n>1.
 * [A172043](http://oeis.org/A172043) ([program](A172043.asm)): 5n^2 - n + 1.
 * [A172044](http://oeis.org/A172044) ([program](A172044.asm)): 5*n^2+11*n+1.
@@ -1281,10 +1305,12 @@
 * [A178521](http://oeis.org/A178521) ([program](A178521.asm)): The cost of all leaves in the Fibonacci tree of order n.
 * [A178525](http://oeis.org/A178525) ([program](A178525.asm)): The sum of the costs of all nodes in the Fibonacci tree of order n.
 * [A178574](http://oeis.org/A178574) ([program](A178574.asm)): 2*n*(9*n-1).
+* [A178815](http://oeis.org/A178815) ([program](A178815.asm)): First base of a nonzero Fermat quotient mod the n-th prime.
 * [A178915](http://oeis.org/A178915) ([program](A178915.asm)): Rearrangement of natural numbers so that every partial sum is composite.
 * [A178977](http://oeis.org/A178977) ([program](A178977.asm)): (3*n+2)*(3*n+5)/2.
 * [A179023](http://oeis.org/A179023) ([program](A179023.asm)): a(n) = n(F(n+2) - 1) where F(n) is defined by A000045.
 * [A179070](http://oeis.org/A179070) ([program](A179070.asm)): a(1)=a(2)=a(3)=1, a(4)=3; thereafter a(n) = a(n-1) + a(n-3).
+* [A179184](http://oeis.org/A179184) ([program](A179184.asm)): Number of connected 2-regular simple graphs with n vertices.
 * [A179207](http://oeis.org/A179207) ([program](A179207.asm)): a(n) = n - 1 + ceiling((-3 + n^2)/2) if n > 1 with a(1)=1, complement of A182835.
 * [A179436](http://oeis.org/A179436) ([program](A179436.asm)): a(n) = (3*n+7)*(3*n+2)/2.
 * [A179526](http://oeis.org/A179526) ([program](A179526.asm)): (3^k - 1)/2 appears 3^(k-1) times, k>0.
@@ -1390,7 +1416,12 @@
 * [A184676](http://oeis.org/A184676) ([program](A184676.asm)): a(n) = n + floor((n/2-1/(4*n))^2); complement of A183867.
 * [A184750](http://oeis.org/A184750) ([program](A184750.asm)): a(n) = largest k such that A000326(n+1) = A000326(n) + (A000326(n) mod k), or 0 if no such k exists.
 * [A184985](http://oeis.org/A184985) ([program](A184985.asm)): Nonnegative integers excluding 2.
+* [A185012](http://oeis.org/A185012) ([program](A185012.asm)): Characteristic function of two.
+* [A185013](http://oeis.org/A185013) ([program](A185013.asm)): Characteristic function of three.
+* [A185014](http://oeis.org/A185014) ([program](A185014.asm)): Characteristic function of four.
+* [A185015](http://oeis.org/A185015) ([program](A185015.asm)): Characteristic function of 5.
 * [A185019](http://oeis.org/A185019) ([program](A185019.asm)): a(n) = n*(14*n-3).
+* [A185116](http://oeis.org/A185116) ([program](A185116.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 6.
 * [A185212](http://oeis.org/A185212) ([program](A185212.asm)): a(n) = 12*n^2 - 8*n + 1.
 * [A185438](http://oeis.org/A185438) ([program](A185438.asm)): a(n) = 8*n^2 - 2*n + 1.
 * [A185452](http://oeis.org/A185452) ([program](A185452.asm)): Image of n under the map n -> n/2 if n even, (5*n+1)/2 if n odd.
@@ -1440,6 +1471,7 @@
 * [A187508](http://oeis.org/A187508) ([program](A187508.asm)): Number of 3-step S, E, and NW-moving king's tours on an n X n board summed over all starting positions
 * [A187710](http://oeis.org/A187710) ([program](A187710.asm)): a(n) = n^2 + n + 10.
 * [A187715](http://oeis.org/A187715) ([program](A187715.asm)): a(n) = 5*n - (9 + (-1)^n)/2.
+* [A187890](http://oeis.org/A187890) ([program](A187890.asm)): a(0)=0, a(1)=4, a(n)=a(n-1)+a(n-2)-1.
 * [A187891](http://oeis.org/A187891) ([program](A187891.asm)): a(0)=0, a(1)=5, a(n)=a(n-1)+a(n-2)-1.
 * [A187892](http://oeis.org/A187892) ([program](A187892.asm)): a(0)=0, a(1)=6, a(n)=a(n-1)+a(n-2)-1.
 * [A188050](http://oeis.org/A188050) ([program](A188050.asm)): a(n) = A016755(n) - A001845(n).
@@ -1451,7 +1483,9 @@
 * [A188475](http://oeis.org/A188475) ([program](A188475.asm)): a(n) = (2*n^3 + 3*n^2 + n + 3)/3.
 * [A188511](http://oeis.org/A188511) ([program](A188511.asm)): Floor(7n/10).
 * [A188554](http://oeis.org/A188554) ([program](A188554.asm)): Number of 3Xn binary arrays without the pattern 0 1 diagonally, vertically, antidiagonally or horizontally
+* [A188589](http://oeis.org/A188589) ([program](A188589.asm)): Expansion of (1-3*x+6*x^2-3*x^3)/((1-x)^2*(1-2*x)).
 * [A188623](http://oeis.org/A188623) ([program](A188623.asm)): Number of reachable configurations in a chip-firing game on a triangle starting with n chips on one vertex.
+* [A188667](http://oeis.org/A188667) ([program](A188667.asm)): Ordered (2,2)-selections from the multiset {1,1,2,2,3,3,...,n,n}.
 * [A188716](http://oeis.org/A188716) ([program](A188716.asm)): a(n) = n + (n-1)*(2^n-2).
 * [A188861](http://oeis.org/A188861) ([program](A188861.asm)): Number of n X 4 binary arrays without the pattern 0 1 diagonally, vertically or antidiagonally.
 * [A188947](http://oeis.org/A188947) ([program](A188947.asm)): a(n) = n^3 - 2*n^2 + 2*n + 1.
@@ -1484,6 +1518,7 @@
 * [A192746](http://oeis.org/A192746) ([program](A192746.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined below in Comments.
 * [A192750](http://oeis.org/A192750) ([program](A192750.asm)): Define a pair of sequences c_n, d_n by c_0=0, d_0=1 and thereafter c_n = c_{n-1}+d_{n-1}, d_n = c_{n-1}+4*n+2; sequence here is d_n.
 * [A192752](http://oeis.org/A192752) ([program](A192752.asm)): Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
+* [A192754](http://oeis.org/A192754) ([program](A192754.asm)): Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
 * [A192858](http://oeis.org/A192858) ([program](A192858.asm)): Hosoya indices of the 2n-wheel graphs W_{2n}.
 * [A193356](http://oeis.org/A193356) ([program](A193356.asm)): If n is even then 0, otherwise n.
 * [A193448](http://oeis.org/A193448) ([program](A193448.asm)): a(n) = 4*(5*n^2 - 5*n + 1).

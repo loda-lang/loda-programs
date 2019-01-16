@@ -8,7 +8,5 @@ lpe
 mov $2,1
 sub $$3,$2
 add $$0,1
-add $0,2
 add $1,1
 add $1,$$1
-add $2,$1
