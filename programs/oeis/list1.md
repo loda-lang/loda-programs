@@ -230,6 +230,7 @@
 * [A115419](http://oeis.org/A115419) ([program](A115419.asm)): Numbers having a 1 in position 3 of their binary expansion.
 * [A115618](http://oeis.org/A115618) ([program](A115618.asm)): 1 + (n+6)*2^(n-1).
 * [A115789](http://oeis.org/A115789) ([program](A115789.asm)): (Floor((n+1)*pi)-Floor(n*pi)) mod 2.
+* [A115790](http://oeis.org/A115790) ([program](A115790.asm)): 1 - (Floor((n+1)*Pi)-Floor(n*Pi)) mod 2.
 * [A116453](http://oeis.org/A116453) ([program](A116453.asm)): Third smallest number with exactly n prime factors.
 * [A116454](http://oeis.org/A116454) ([program](A116454.asm)): Smallest m such that A116452(m) = n.
 * [A116471](http://oeis.org/A116471) ([program](A116471.asm)): Values 2*(n -+ 1)^2 sorted.
@@ -415,6 +416,7 @@
 * [A130659](http://oeis.org/A130659) ([program](A130659.asm)): Period 4: repeat [0, 1, 2, 4].
 * [A130706](http://oeis.org/A130706) ([program](A130706.asm)): a(0) = 1, a(1) = 2, a(n) = 0 for n > 1.
 * [A130713](http://oeis.org/A130713) ([program](A130713.asm)): a(0)=a(2)=1, a(1)=2, a(n)=0 for n>2.
+* [A130716](http://oeis.org/A130716) ([program](A130716.asm)): a(0)=a(1)=a(2)=1, a(n)=0 for n>2.
 * [A130727](http://oeis.org/A130727) ([program](A130727.asm)): List of triples 2n+1, 2n+3, 2n+2.
 * [A130731](http://oeis.org/A130731) ([program](A130731.asm)): Period 4: repeat [1, 2, 0, 0].
 * [A130766](http://oeis.org/A130766) ([program](A130766.asm)): 3n+2 sandwiched by tripled 3n+1 .
@@ -434,6 +436,7 @@
 * [A130877](http://oeis.org/A130877) ([program](A130877.asm)): Numbers that are congruent to {0, 5} mod 9.
 * [A130883](http://oeis.org/A130883) ([program](A130883.asm)): a(n) = 2*n^2 - n + 1.
 * [A130909](http://oeis.org/A130909) ([program](A130909.asm)): Simple periodic sequence (n mod 16).
+* [A131026](http://oeis.org/A131026) ([program](A131026.asm)): Periodic sequence (2, 2, 1, 0, 0, 1).
 * [A131027](http://oeis.org/A131027) ([program](A131027.asm)): Period 6: repeat [4, 3, 1, 0, 1, 3].
 * [A131051](http://oeis.org/A131051) ([program](A131051.asm)): Row sums of triangle A133805.
 * [A131055](http://oeis.org/A131055) ([program](A131055.asm)): 1 followed by repeats of 2*k.
@@ -596,6 +599,7 @@
 * [A135036](http://oeis.org/A135036) ([program](A135036.asm)): Sums of the products of n consecutive pairs of numbers.
 * [A135042](http://oeis.org/A135042) ([program](A135042.asm)): Binomial transform of [1, 1, 2, 0, -2, 4, -6, 8, -10, 12,...].
 * [A135043](http://oeis.org/A135043) ([program](A135043.asm)): Duplicate of A054966.
+* [A135064](http://oeis.org/A135064) ([program](A135064.asm)): Numbers n such that the quintic polynomial x^5 - 10*n*x^2 - 24*n has Galois group A_5 over rationals.
 * [A135092](http://oeis.org/A135092) ([program](A135092.asm)): Binomial transform of [1, 6, 1, 6, 1, 6, ...].
 * [A135276](http://oeis.org/A135276) ([program](A135276.asm)): a(0)=0, a(1)=1; for n>1, a(n) = a(n-1) + n^0 if n odd, a(n) = a(n-1) + n^1 if n is even.
 * [A135295](http://oeis.org/A135295) ([program](A135295.asm)): a(n) = n^(number of decimal digits of n).
@@ -1137,6 +1141,7 @@
 * [A166444](http://oeis.org/A166444) ([program](A166444.asm)): a(0) = 0, a(1) = 1 and for n > 1, a(n) = sum of all previous terms.
 * [A166447](http://oeis.org/A166447) ([program](A166447.asm)): a(n) = n*round(sqrt(n)).
 * [A166464](http://oeis.org/A166464) ([program](A166464.asm)): a(n) = (3+2n+6n^2+4n^3)/3.
+* [A166486](http://oeis.org/A166486) ([program](A166486.asm)): Periodic sequence [0,1,1,1] of length 4.
 * [A166517](http://oeis.org/A166517) ([program](A166517.asm)): a(n) = (3 + 5*(-1)^n + 6*n)/4.
 * [A166519](http://oeis.org/A166519) ([program](A166519.asm)): a(n) = 1 + 2*(-1)^n + 2*n.
 * [A166520](http://oeis.org/A166520) ([program](A166520.asm)): a(n) = (10*n + 11*(-1)^n + 5)/4.
@@ -1296,6 +1301,7 @@
 * [A171218](http://oeis.org/A171218) ([program](A171218.asm)): a(n) = sum(A109613(k)*A005843(n-k): 0<=k<=n).
 * [A171272](http://oeis.org/A171272) ([program](A171272.asm)): a(n) = 1 + 4*n*(1 + 2*n^2)/3.
 * [A171372](http://oeis.org/A171372) ([program](A171372.asm)): a(n) = Numerator of 1/(2*n)^2 - 1/(3*n)^2 for n > 0, a(0) = 1.
+* [A171386](http://oeis.org/A171386) ([program](A171386.asm)): The characteristic function of 2 and 3: 1 if n is prime such that either n-1 or n+1 is prime, else 0.
 * [A171397](http://oeis.org/A171397) ([program](A171397.asm)): Earliest sequence containing no 11-term arithmetic progression.
 * [A171452](http://oeis.org/A171452) ([program](A171452.asm)): a(n) = C(n,2) + floor(n/3).
 * [A171463](http://oeis.org/A171463) ([program](A171463.asm)): The natural numbers excluding 2 and 3.
@@ -1516,6 +1522,8 @@
 * [A185013](http://oeis.org/A185013) ([program](A185013.asm)): Characteristic function of three.
 * [A185014](http://oeis.org/A185014) ([program](A185014.asm)): Characteristic function of four.
 * [A185015](http://oeis.org/A185015) ([program](A185015.asm)): Characteristic function of 5.
+* [A185016](http://oeis.org/A185016) ([program](A185016.asm)): Characteristic function of 6.
+* [A185017](http://oeis.org/A185017) ([program](A185017.asm)): Characteristic function of 7.
 * [A185019](http://oeis.org/A185019) ([program](A185019.asm)): a(n) = n*(14*n-3).
 * [A185114](http://oeis.org/A185114) ([program](A185114.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 4.
 * [A185115](http://oeis.org/A185115) ([program](A185115.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 5.

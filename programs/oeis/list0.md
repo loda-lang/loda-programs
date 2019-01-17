@@ -969,6 +969,7 @@
 * [A036289](http://oeis.org/A036289) ([program](A036289.asm)): a(n) = n*2^n.
 * [A036406](http://oeis.org/A036406) ([program](A036406.asm)): Ceiling(n^2/8).
 * [A036407](http://oeis.org/A036407) ([program](A036407.asm)): Ceiling(n^2/9).
+* [A036453](http://oeis.org/A036453) ([program](A036453.asm)): a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function with initial value n.
 * [A036464](http://oeis.org/A036464) ([program](A036464.asm)): Number of ways to place two nonattacking queens on an n X n board.
 * [A036487](http://oeis.org/A036487) ([program](A036487.asm)): a(n) = floor((n^3)/2).
 * [A036498](http://oeis.org/A036498) ([program](A036498.asm)): Numbers of the form m*(6*m-1) and m*(6*m+1), where m is an integer.
@@ -1064,6 +1065,7 @@
 * [A046092](http://oeis.org/A046092) ([program](A046092.asm)): 4 times triangular numbers: a(n) = 2*n*(n+1).
 * [A046127](http://oeis.org/A046127) ([program](A046127.asm)): Maximal number of regions into which space can be divided by n spheres.
 * [A046698](http://oeis.org/A046698) ([program](A046698.asm)): a(0) = 0, a(1) = 1, a(n) = a(a(n-1)) + a(a(n-2)) if n > 1.
+* [A047201](http://oeis.org/A047201) ([program](A047201.asm)): Numbers not divisible by 5.
 * [A047202](http://oeis.org/A047202) ([program](A047202.asm)): Numbers that are congruent to {2, 3, 4} mod 5.
 * [A047203](http://oeis.org/A047203) ([program](A047203.asm)): Numbers that are congruent to {0, 2, 3, 4} mod 5.
 * [A047204](http://oeis.org/A047204) ([program](A047204.asm)): Numbers that are congruent to {3, 4} mod 5.
@@ -1315,6 +1317,7 @@
 * [A047491](http://oeis.org/A047491) ([program](A047491.asm)): Numbers that are congruent to {4, 5, 7} mod 8.
 * [A047492](http://oeis.org/A047492) ([program](A047492.asm)): Numbers that are congruent to {0, 4, 5, 7} mod 8.
 * [A047493](http://oeis.org/A047493) ([program](A047493.asm)): Numbers that are congruent to {1, 4, 5, 7} mod 8.
+* [A047496](http://oeis.org/A047496) ([program](A047496.asm)): Numbers that are congruent to {0, 2, 4, 5, 7} mod 8.
 * [A047497](http://oeis.org/A047497) ([program](A047497.asm)): Numbers that are congruent to {1, 2, 4, 5, 7} mod 8.
 * [A047498](http://oeis.org/A047498) ([program](A047498.asm)): Numbers that are congruent to {0, 1, 2, 4, 5, 7} mod 8.
 * [A047499](http://oeis.org/A047499) ([program](A047499.asm)): Numbers that are congruent to {3, 4, 5, 7} mod 8.
@@ -2119,6 +2122,7 @@
 * [A088333](http://oeis.org/A088333) ([program](A088333.asm)): A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 3 places clockwise from i. Repeat, counting 3 places from the next undeleted integer, until only one integer remains.
 * [A088439](http://oeis.org/A088439) ([program](A088439.asm)): a(3n) = 3n, otherwise a(n) = 1.
 * [A088440](http://oeis.org/A088440) ([program](A088440.asm)): a(4n) = 4n, otherwise a(n) = 1.
+* [A088475](http://oeis.org/A088475) ([program](A088475.asm)): Numbers n such that the lunar sum of the distinct lunar prime divisors of n is >= n.
 * [A088476](http://oeis.org/A088476) ([program](A088476.asm)): Numbers n such that the lunar sum of the distinct lunar prime divisors of n is > n.
 * [A088481](http://oeis.org/A088481) ([program](A088481.asm)): Numbers n such that the lunar product of the distinct lunar prime divisors of n is > n.
 * [A088578](http://oeis.org/A088578) ([program](A088578.asm)): a(n) = n*x^n + (n-1)*x^(n-1) + . . . + x + 1 for x=2.
