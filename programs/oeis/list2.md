@@ -466,7 +466,6 @@
 * [A259755](http://oeis.org/A259755) ([program](A259755.asm)): Numbers that are congruent to {4,20} mod 24.
 * [A260006](http://oeis.org/A260006) ([program](A260006.asm)): a(n) = f(1,n,n), where f is the Sudan function defined in A260002.
 * [A260113](http://oeis.org/A260113) ([program](A260113.asm)): Maximum number of queens on an n X n chessboard such that no queen attacks more than one other queen.
-* [A260484](http://oeis.org/A260484) ([program](A260484.asm)): Complement of the Beatty sequence for e^(1/Pi) = A179706.
 * [A260686](http://oeis.org/A260686) ([program](A260686.asm)): Period 6 zigzag sequence, repeat [0, 1, 2, 3, 2, 1].
 * [A260955](http://oeis.org/A260955) ([program](A260955.asm)): Differences of the increasing arithmetic progression a^2+a, b^2+b, c^2+c, where b = 5*a+2, c = 7*a+3 and a >= 0.
 * [A261143](http://oeis.org/A261143) ([program](A261143.asm)): a(n) = H_n(1,2) where H_n is the n-th hyperoperator.
@@ -826,7 +825,6 @@
 * [A296953](http://oeis.org/A296953) ([program](A296953.asm)): Number of bisymmetric, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
 * [A296954](http://oeis.org/A296954) ([program](A296954.asm)): Expansion of x*(1 - x + 4*x^2) / ((1 - x)*(1 - 2*x)).
 * [A296965](http://oeis.org/A296965) ([program](A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
-* [A297043](http://oeis.org/A297043) ([program](A297043.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-15 digits of n; see Comments.
 * [A297044](http://oeis.org/A297044) ([program](A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
 * [A297045](http://oeis.org/A297045) ([program](A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
 * [A297217](http://oeis.org/A297217) ([program](A297217.asm)): Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.

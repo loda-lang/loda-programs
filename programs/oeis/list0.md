@@ -769,6 +769,8 @@
 * [A023856](http://oeis.org/A023856) ([program](A023856.asm)): a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k = floor((n+1)/2), s = (natural numbers), t = (natural numbers >= 2).
 * [A023865](http://oeis.org/A023865) ([program](A023865.asm)): a(n) = s(1)t(n)+s(2)t(n-1)+...+s(k)t(n+1-k), where k=[ (n+1)/2 ], s = (natural numbers), t = (odd numbers).
 * [A023974](http://oeis.org/A023974) ([program](A023974.asm)): First bit in fractional part of binary expansion of 7th root of n.
+* [A023975](http://oeis.org/A023975) ([program](A023975.asm)): First bit in fractional part of binary expansion of 8th root of n.
+* [A023976](http://oeis.org/A023976) ([program](A023976.asm)): First bit in fractional part of binary expansion of 9th root of n.
 * [A024174](http://oeis.org/A024174) ([program](A024174.asm)): a(n) is floor((4th elementary symmetric function of 1,2,..,n)/(3rd elementary symmetric function of 1,2,...,n)).
 * [A024206](http://oeis.org/A024206) ([program](A024206.asm)): Expansion of x^2*(1+x-x^2)/((1-x^2)*(1-x)^2).
 * [A024219](http://oeis.org/A024219) ([program](A024219.asm)): a(n) = floor( (2nd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ), where S(n) = {first n+1 positive integers congruent to 1 mod 3}.
@@ -986,7 +988,6 @@
 * [A037270](http://oeis.org/A037270) ([program](A037270.asm)): a(n) = n^2*(n^2 + 1)/2.
 * [A037915](http://oeis.org/A037915) ([program](A037915.asm)): a(n) = floor((3*n + 4)/4).
 * [A038123](http://oeis.org/A038123) ([program](A038123.asm)): Beatty sequence for Feigenbaum's constant.
-* [A038127](http://oeis.org/A038127) ([program](A038127.asm)): a(n) = floor(n*2^sqrt(2)).
 * [A038130](http://oeis.org/A038130) ([program](A038130.asm)): Beatty sequence for 2*Pi.
 * [A038179](http://oeis.org/A038179) ([program](A038179.asm)): Result of second stage of sieve of Eratosthenes.
 * [A038707](http://oeis.org/A038707) ([program](A038707.asm)): a(n) = floor(n*(n+1/2)/2).
@@ -1813,7 +1814,6 @@
 * [A066628](http://oeis.org/A066628) ([program](A066628.asm)): a(n) = n - the largest Fibonacci number <= n.
 * [A066880](http://oeis.org/A066880) ([program](A066880.asm)): Biased numbers: n such that all terms of the sequence f(n), f(f(n)), f(f(f(n))), ..., 1, where f(k) = Floor(k/2), are odd.
 * [A067018](http://oeis.org/A067018) ([program](A067018.asm)): Start with a(0)=1, a(1)=4, a(2)=3, a(3)=2; for n>=3, a(n+1) = mex_i (nim-sum a(i)+a(n-i)), where mex means smallest nonnegative missing number.
-* [A067085](http://oeis.org/A067085) ([program](A067085.asm)): a(n) = floor(Sum_{k=1..n} 1/k^(1/2)).
 * [A067239](http://oeis.org/A067239) ([program](A067239.asm)): a(0)=1, a(n) = 8n*(2n-1).
 * [A067628](http://oeis.org/A067628) ([program](A067628.asm)): Minimal perimeter of polyiamond with n triangles.
 * [A067707](http://oeis.org/A067707) ([program](A067707.asm)): a(n) = 3*n^2 + 12*n.
