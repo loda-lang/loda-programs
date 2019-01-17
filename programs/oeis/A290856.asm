@@ -3,8 +3,6 @@
 
 lpb $0,1
   mov $0,3
-  mov $2,5
+  add $1,10
 lpe
 add $1,1
-add $2,$2
-add $1,$2

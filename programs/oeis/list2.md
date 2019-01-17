@@ -34,6 +34,7 @@
 * [A208638](http://oeis.org/A208638) ([program](A208638.asm)): Number of 3 X n 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward or right-upward antidiagonal neighbors.
 * [A208903](http://oeis.org/A208903) ([program](A208903.asm)): The sum over all bitstrings b of length n with at least two runs of the number of runs in b not immediately followed by a longer run.
 * [A208994](http://oeis.org/A208994) ([program](A208994.asm)): Number of 3-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and first differences in -n..n.
+* [A209229](http://oeis.org/A209229) ([program](A209229.asm)): Characteristic function of powers of 2, cf. A000079.
 * [A209294](http://oeis.org/A209294) ([program](A209294.asm)): a(n) = (7*n^2 - 7*n + 4)/2.
 * [A209721](http://oeis.org/A209721) ([program](A209721.asm)): 1/4 the number of (n+1)X3 0..2 arrays with every 2X2 subblock having distinct clockwise edge differences
 * [A209722](http://oeis.org/A209722) ([program](A209722.asm)): 1/4 the number of (n+1) X 4 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
@@ -152,6 +153,7 @@
 * [A217761](http://oeis.org/A217761) ([program](A217761.asm)): Numbers whose square has a square number of decimal digits.
 * [A217775](http://oeis.org/A217775) ([program](A217775.asm)): n(n+1) + (n+2)(n+3) + (n+4)(n+5).
 * [A217776](http://oeis.org/A217776) ([program](A217776.asm)): n(n+1) + (n+2)(n+3) + (n+4)(n+5) + (n+6)(n+7).
+* [A217789](http://oeis.org/A217789) ([program](A217789.asm)): Least difference between 2 palindromic numbers of length n.
 * [A217873](http://oeis.org/A217873) ([program](A217873.asm)): 4*n*(n^2+2)/3.
 * [A218152](http://oeis.org/A218152) ([program](A218152.asm)): a(n) = 1 + n + ((n-1)*n^2)/2.
 * [A218234](http://oeis.org/A218234) ([program](A218234.asm)): Infinitesimal generator for padded Pascal matrix A097805 (as lower triangular matrices).
@@ -196,6 +198,7 @@
 * [A225002](http://oeis.org/A225002) ([program](A225002.asm)): Duplicate of A047290.
 * [A225539](http://oeis.org/A225539) ([program](A225539.asm)): Numbers n where 2^n and n have the same digital root.
 * [A225553](http://oeis.org/A225553) ([program](A225553.asm)): Longest checkmate in king and amazon versus king endgame on an n X n chessboard.
+* [A225569](http://oeis.org/A225569) ([program](A225569.asm)): Decimal expansion of Sum_{n>=0} 1/10^(3^n), a transcendental number.
 * [A225875](http://oeis.org/A225875) ([program](A225875.asm)): We write the 1 + 4*k numbers once and twice the others.
 * [A225972](http://oeis.org/A225972) ([program](A225972.asm)): The number of binary pattern classes in the (2,n)-rectangular grid with 3 '1's and (2n-3) '0's: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
 * [A226233](http://oeis.org/A226233) ([program](A226233.asm)): Ten copies of each positive integer.
@@ -268,6 +271,7 @@
 * [A237420](http://oeis.org/A237420) ([program](A237420.asm)): If n is odd, then a(n) = 0; otherwise, a(n) = n.
 * [A237684](http://oeis.org/A237684) ([program](A237684.asm)): a(n) = floor(n*prime(n) / Sum_{i<=n} prime(i).
 * [A238290](http://oeis.org/A238290) ([program](A238290.asm)): a(n+1) = a(n) + 6 + 2*( n - 2*floor(n/2) ) for n>0, a(0)=0.
+* [A238303](http://oeis.org/A238303) ([program](A238303.asm)): Triangle T(n,k), 0<=k<=n, read by rows given by T(n,0) = 1, T(n,k) = 2 if k>0.
 * [A238377](http://oeis.org/A238377) ([program](A238377.asm)): Row sums of triangle in A204028.
 * [A238410](http://oeis.org/A238410) ([program](A238410.asm)): a(n) = floor((3(n-1)^2 + 1)/2).
 * [A238411](http://oeis.org/A238411) ([program](A238411.asm)): a(n) = 2*n*floor(n/2).
@@ -280,6 +284,7 @@
 * [A239124](http://oeis.org/A239124) ([program](A239124.asm)): a(n) = 64*n - 11 for n >= 1. Third column of triangle A238476.
 * [A239128](http://oeis.org/A239128) ([program](A239128.asm)): a(n) = 32*n - 1, n >= 1. Fourth column of triangle A239126, related to the Collatz problem.
 * [A239129](http://oeis.org/A239129) ([program](A239129.asm)): a(n) = 18*n - 1, n >= 1, the second column of triangle A239127 related to the Collatz problem.
+* [A239141](http://oeis.org/A239141) ([program](A239141.asm)): Number of strict partitions of n having standard deviation σ <= 1.
 * [A239325](http://oeis.org/A239325) ([program](A239325.asm)): a(n) = 6*n^2 + 8*n + 1.
 * [A239449](http://oeis.org/A239449) ([program](A239449.asm)): 7*n^2 - 5*n + 1.
 * [A239492](http://oeis.org/A239492) ([program](A239492.asm)): The fifth bicycle lock sequence: a(n) is the maximum value of min{x*y, (5-x)*(n-y)} over 0 <= x <= 5, 0 <= y <= n for integers x, y.
@@ -298,6 +303,7 @@
 * [A241749](http://oeis.org/A241749) ([program](A241749.asm)): a(n) = n^2 + 13.
 * [A241750](http://oeis.org/A241750) ([program](A241750.asm)): a(n) = n^2 + 15.
 * [A241751](http://oeis.org/A241751) ([program](A241751.asm)): a(n) = n^2 + 16.
+* [A241765](http://oeis.org/A241765) ([program](A241765.asm)): a(n) = n*(n + 1)*(n + 2)*(3*n + 17)/24.
 * [A241847](http://oeis.org/A241847) ([program](A241847.asm)): a(n) = n^2 + 17.
 * [A241848](http://oeis.org/A241848) ([program](A241848.asm)): a(n) = n^2 + 18.
 * [A241849](http://oeis.org/A241849) ([program](A241849.asm)): a(n) = n^2 + 19.
@@ -363,6 +369,7 @@
 * [A247018](http://oeis.org/A247018) ([program](A247018.asm)): a(n) = 3*n^2 + n + 3.
 * [A247049](http://oeis.org/A247049) ([program](A247049.asm)): Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,0) to (n,k), where 0 >= k <= 2, consisting of segments given by the vectors (1,1), (1,2), (1,-1).
 * [A247160](http://oeis.org/A247160) ([program](A247160.asm)): Dynamic Betting Game D(n,4,3).
+* [A247188](http://oeis.org/A247188) ([program](A247188.asm)): a(0) = 0. a(n) is the number of repeating sums in the collection of all sums of any k elements in [a(0), ... a(n-1)] chosen without replacement for 2 <= k <= n.
 * [A247375](http://oeis.org/A247375) ([program](A247375.asm)): Numbers n such that floor(n/2) is a square.
 * [A247541](http://oeis.org/A247541) ([program](A247541.asm)): 7*n^2 + 1.
 * [A247618](http://oeis.org/A247618) ([program](A247618.asm)): Start with a single square; at n-th generation add a square at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
@@ -400,6 +407,7 @@
 * [A253186](http://oeis.org/A253186) ([program](A253186.asm)): Number of connected unlabeled multigraphs with 3 vertices and n edges.
 * [A253195](http://oeis.org/A253195) ([program](A253195.asm)): Numbers congruent to 5 or 8 mod 9.
 * [A253472](http://oeis.org/A253472) ([program](A253472.asm)): Square Pairs: Numbers n such that 1, 2, ..., 2n can be partitioned into n pairs, where each pair adds up to a perfect square.
+* [A253513](http://oeis.org/A253513) ([program](A253513.asm)): The characteristic function of the multiples of eight.
 * [A253515](http://oeis.org/A253515) ([program](A253515.asm)): Count down from 2*k to 1, then from 2*(k+1) to 1 and so on.
 * [A253909](http://oeis.org/A253909) ([program](A253909.asm)): 1 together with the positive squares.
 * [A254407](http://oeis.org/A254407) ([program](A254407.asm)): a(n) = n*(n+1)*(11*n+10)/6.
@@ -423,6 +431,7 @@
 * [A255846](http://oeis.org/A255846) ([program](A255846.asm)): a(n) = 2*n^2 + 14.
 * [A255847](http://oeis.org/A255847) ([program](A255847.asm)): a(n) = 2*n^2 + 16.
 * [A255848](http://oeis.org/A255848) ([program](A255848.asm)): a(n) = 2*n^2 + 18.
+* [A255849](http://oeis.org/A255849) ([program](A255849.asm)): Characteristic function of pentagonal numbers.
 * [A255910](http://oeis.org/A255910) ([program](A255910.asm)): Decimal expansion of 16/9.
 * [A255993](http://oeis.org/A255993) ([program](A255993.asm)): Number of length n+2 0..1 arrays with at most one downstep in every n consecutive neighbor pairs.
 * [A256079](http://oeis.org/A256079) ([program](A256079.asm)): Increase each (decimal) digit of n by 1, with carry (i.e., '9' becomes '0' and a (further) increment of 1 of the digit to the left).
@@ -523,6 +532,7 @@
 * [A266542](http://oeis.org/A266542) ([program](A266542.asm)): Number of n X 3 binary arrays with rows and columns lexicographically nondecreasing and row and column sums nonincreasing.
 * [A266550](http://oeis.org/A266550) ([program](A266550.asm)): Independence number of the n-Mycielski graph.
 * [A266591](http://oeis.org/A266591) ([program](A266591.asm)): Middle column of the "Rule 37" elementary cellular automaton starting with a single ON (black) cell.
+* [A266611](http://oeis.org/A266611) ([program](A266611.asm)): Middle column of the "Rule 41" elementary cellular automaton starting with a single ON (black) cell.
 * [A266664](http://oeis.org/A266664) ([program](A266664.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
 * [A266665](http://oeis.org/A266665) ([program](A266665.asm)): Total number of OFF (white) cells after n iterations of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
 * [A266678](http://oeis.org/A266678) ([program](A266678.asm)): Middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
