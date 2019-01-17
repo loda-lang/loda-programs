@@ -11,8 +11,4 @@ mov $0,1
 sub $1,$3
 mov $$1,$1
 mov $$5,0
-add $4,$0
-lpb $$1,1
-  add $$5,$$1
-lpe
 add $$0,1
