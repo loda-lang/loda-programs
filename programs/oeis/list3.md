@@ -2,6 +2,9 @@
 
 * [A300076](http://oeis.org/A300076) ([program](A300076.asm)): A sequence based on the period 6 sequence A300075.
 * [A300293](http://oeis.org/A300293) ([program](A300293.asm)): A sequence based on the period 6 sequence A151899.
+* [A300402](http://oeis.org/A300402) ([program](A300402.asm)): Smallest integer i such that TREE(i) >= n.
+* [A300403](http://oeis.org/A300403) ([program](A300403.asm)): Smallest integer i such that SSCG(i) >= n.
+* [A300404](http://oeis.org/A300404) ([program](A300404.asm)): Smallest integer k such that the largest term in the Goodstein sequence starting at k is > n.
 * [A300576](http://oeis.org/A300576) ([program](A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300659](http://oeis.org/A300659) ([program](A300659.asm)): Product of digits of n!.
 * [A301298](http://oeis.org/A301298) ([program](A301298.asm)): Expansion of (1 + 4*x + 4*x^2 + 4*x^3 + x^4)/((1 - x)*(1 - x^3)).
