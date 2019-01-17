@@ -72,6 +72,7 @@
 * [A211615](http://oeis.org/A211615) ([program](A211615.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and -1<=w+x+y<=1.
 * [A211662](http://oeis.org/A211662) ([program](A211662.asm)): Number of iterations log_3(log_3(log_3(...(n)...))) such that the result is < 2.
 * [A211664](http://oeis.org/A211664) ([program](A211664.asm)): Number of iterations (...f_4(f_3(f_2(n))))...) such that the result is < 1, where f_j(x):=log_j(x).
+* [A211665](http://oeis.org/A211665) ([program](A211665.asm)): Minimal number of iterations of log_10 applied to n until the result is < 1.
 * [A211667](http://oeis.org/A211667) ([program](A211667.asm)): Number of iterations sqrt(sqrt(sqrt(...(n)...))) such that the result is < 2.
 * [A211668](http://oeis.org/A211668) ([program](A211668.asm)): Number of iterations sqrt(sqrt(sqrt(...(n)...))) such that the result is < 3.
 * [A211669](http://oeis.org/A211669) ([program](A211669.asm)): Number of iterations f(f(f(...(n)...))) such that the result is < 2, where f(x) = cube root of x.
@@ -211,7 +212,6 @@
 * [A226491](http://oeis.org/A226491) ([program](A226491.asm)): a(n) = n*(21*n-17)/2.
 * [A226492](http://oeis.org/A226492) ([program](A226492.asm)): a(n) = n*(11*n-5)/2.
 * [A226576](http://oeis.org/A226576) ([program](A226576.asm)): Smallest number of integer sided squares needed to tile a 3 X n rectangle.
-* [A226639](http://oeis.org/A226639) ([program](A226639.asm)): a(n) = n^4/8 + (5*n^3)/12 - n^2/8 - (5*n)/12 + 1.
 * [A227017](http://oeis.org/A227017) ([program](A227017.asm)): Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n(3n-1)/2 = A000326(n).
 * [A227177](http://oeis.org/A227177) ([program](A227177.asm)): n occurs n^2 - n + 1 times.
 * [A227179](http://oeis.org/A227179) ([program](A227179.asm)): After initial 0, integers from 0 to n(n-1) followed by integers from 0 to n(n+1) and so on.
@@ -346,6 +346,7 @@
 * [A244804](http://oeis.org/A244804) ([program](A244804.asm)): The 300º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244805](http://oeis.org/A244805) ([program](A244805.asm)): The 240º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244806](http://oeis.org/A244806) ([program](A244806.asm)): The 180º spoke (or ray) of a hexagonal spiral of Ulam.
+* [A244893](http://oeis.org/A244893) ([program](A244893.asm)): a(n) = a(n-a(n-1)) with initial values 2,3,2.
 * [A244953](http://oeis.org/A244953) ([program](A244953.asm)): a(n) = Sum_{i=0..n} (-i mod 4).
 * [A245301](http://oeis.org/A245301) ([program](A245301.asm)): a(n) = n*(7*n^2 + 15*n + 8)/6.
 * [A245336](http://oeis.org/A245336) ([program](A245336.asm)): Sum of digits of n written in fractional base 8/7.
@@ -475,6 +476,7 @@
 * [A261557](http://oeis.org/A261557) ([program](A261557.asm)): a(0) = a(1) = 0; for n>1, a(n) = 2*n - a(n-1) - a(n-2).
 * [A261693](http://oeis.org/A261693) ([program](A261693.asm)): Triangle read by rows: T(n,k), n>=1, 1<=k<=2^(n-1), in which row n lists the first 2n - 1 odd numbers in decreasing order starting with 2^n - 1, with T(0,1) = 0.
 * [A261723](http://oeis.org/A261723) ([program](A261723.asm)): Interleave 2^n + 2 and 2^n + 1.
+* [A261893](http://oeis.org/A261893) ([program](A261893.asm)): a(n) = (n+1)^3 - n^2.
 * [A261953](http://oeis.org/A261953) ([program](A261953.asm)): Start with a single equilateral triangle for n=0; for the odd n-th generation add a triangle at each expandable side of the triangles of the (n-1)-th generation (this is the "side to side" version); for the even n-th generation use the "vertex to vertex" version; a(n) is the number of triangles added in the n-th generation.
 * [A262221](http://oeis.org/A262221) ([program](A262221.asm)): a(n) = 25*n*(n + 1)/2 + 1.
 * [A262303](http://oeis.org/A262303) ([program](A262303.asm)): Length of sequence of lower halves of n: repeatedly apply x->floor(x/2) starting at n; a(n) = number of steps until reach one of 2,3,4.
@@ -771,6 +773,7 @@
 * [A290858](http://oeis.org/A290858) ([program](A290858.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 1006", based on the 5-celled von Neumann neighborhood.
 * [A291024](http://oeis.org/A291024) ([program](A291024.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - 2 S^2)^2.
 * [A291064](http://oeis.org/A291064) ([program](A291064.asm)): a(n) = 2^n*(n + 1) - 3*(n - 1).
+* [A291092](http://oeis.org/A291092) ([program](A291092.asm)): 1 followed by infinitely many 9's.
 * [A291271](http://oeis.org/A291271) ([program](A291271.asm)): The arithmetic function v_4(n,2).
 * [A291330](http://oeis.org/A291330) ([program](A291330.asm)): The arithmetic function v_4(n,1).
 * [A291510](http://oeis.org/A291510) ([program](A291510.asm)): The arithmetic function uhat(n,2,5), negated.
@@ -824,6 +827,8 @@
 * [A296954](http://oeis.org/A296954) ([program](A296954.asm)): Expansion of x*(1 - x + 4*x^2) / ((1 - x)*(1 - 2*x)).
 * [A296965](http://oeis.org/A296965) ([program](A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
 * [A297043](http://oeis.org/A297043) ([program](A297043.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-15 digits of n; see Comments.
+* [A297044](http://oeis.org/A297044) ([program](A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
+* [A297045](http://oeis.org/A297045) ([program](A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
 * [A297217](http://oeis.org/A297217) ([program](A297217.asm)): Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.
 * [A297464](http://oeis.org/A297464) ([program](A297464.asm)): Solution (a(n)) of the system of 4 complementary equations in Comments.
 * [A297663](http://oeis.org/A297663) ([program](A297663.asm)): a(n) = 5*n + 2^n.
@@ -833,6 +838,7 @@
 * [A298784](http://oeis.org/A298784) ([program](A298784.asm)): Expansion of (1 + x^2)*(1 + 3*x + x^2) / ((1 - x)*(1 - x^3)).
 * [A298785](http://oeis.org/A298785) ([program](A298785.asm)): Partial sums of A298784.
 * [A298786](http://oeis.org/A298786) ([program](A298786.asm)): Expansion of (x^4 + 2*x^3 + 4*x^2 + 2*x + 1) / ((1 - x)*(1 - x^3)).
+* [A299174](http://oeis.org/A299174) ([program](A299174.asm)): The even positive integers.
 * [A299231](http://oeis.org/A299231) ([program](A299231.asm)): Ranks of {2,3}-power towers that start with 2; see Comments.
 * [A299232](http://oeis.org/A299232) ([program](A299232.asm)): Ranks of {2,3}-power towers that start with 3; see Comments.
 * [A299641](http://oeis.org/A299641) ([program](A299641.asm)): Solution (d(n)) of the system of 5 complementary equations in Comments.
