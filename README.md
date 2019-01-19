@@ -58,9 +58,9 @@ __Integer Sequences:__ Programs can be used to generate integer sequences (actua
 
 The following programs include some classical examples of sequences and functions on the natural numbers.
 
-* [Fibonacci numbers](programs/fibonacci.asm) or [A000045](programs/oeis/A000045.asm). Uses a lexicographical descent loop over a region of fixed size 1. For computing the N-th Fibonacci number, we simply count down N in every iteration step.
+* [Fibonacci numbers (A000045)](programs/oeis/A000045.asm)
+* [Number of divisors (A000005)](programs/oeis/A000005.asm)
 * [Exponentiation](programs/exponentiation.asm): The descent loop is over a memory region of fixed size 2. This corresponds to two nested for-loops.
-* [Number of divisors](programs/num_divisors.asm): Iterates over all possible divisors and counts them.
 * [Ackermann function](programs/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. In contrast to the previous programs, the main descent loop in this program is over a memory region whose size depends on one of the parameters. It is based on an algorithm by Grossman and Zeitman. 
 
 # Generating Programs for Integer Sequences
@@ -80,4 +80,4 @@ If you would like to get updates on new programs, you can check out the [@lodami
 * [A200001-A300000](programs/oeis/list2.md)
 * [A300001-A400000](programs/oeis/list3.md)
 
-Total number of programs: 4971/319282 (1%)
+Total number of programs: 4972/319282 (1%)

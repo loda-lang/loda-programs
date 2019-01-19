@@ -1,6 +1,7 @@
 # Programs for A000001-A100000
 
 * [A000004](http://oeis.org/A000004) ([program](A000004.asm)): The zero sequence.
+* [A000005](http://oeis.org/A000005) ([program](A000005.asm)): d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 * [A000007](http://oeis.org/A000007) ([program](A000007.asm)): The characteristic function of 0: a(n) = 0^n.
 * [A000012](http://oeis.org/A000012) ([program](A000012.asm)): The simplest sequence of positive numbers: the all 1's sequence.
 * [A000027](http://oeis.org/A000027) ([program](A000027.asm)): The positive integers. Also called the natural numbers, the whole numbers or the counting numbers, but these terms are ambiguous.
@@ -31,6 +32,7 @@
 * [A000292](http://oeis.org/A000292) ([program](A000292.asm)): Tetrahedral (or triangular pyramidal) numbers: a(n) = C(n+2,3) = n*(n+1)*(n+2)/6.
 * [A000295](http://oeis.org/A000295) ([program](A000295.asm)): Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1 of A173018).
 * [A000297](http://oeis.org/A000297) ([program](A000297.asm)): a(n) = (n+1)*(n+3)*(n+8)/6.
+* [A000302](http://oeis.org/A000302) ([program](A000302.asm)): Powers of 4: a(n) = 4^n.
 * [A000325](http://oeis.org/A000325) ([program](A000325.asm)): a(n) = 2^n - n.
 * [A000326](http://oeis.org/A000326) ([program](A000326.asm)): Pentagonal numbers: a(n) = n*(3*n-1)/2.
 * [A000330](http://oeis.org/A000330) ([program](A000330.asm)): Square pyramidal numbers: a(n) = 0^2 + 1^2 + 2^2 + ... + n^2 = n*(n+1)*(2*n+1)/6.
@@ -1458,6 +1460,7 @@
 * [A048488](http://oeis.org/A048488) ([program](A048488.asm)): a(n) = 6*2^n - 5.
 * [A048490](http://oeis.org/A048490) ([program](A048490.asm)): a(n)=T(7,n), array T given by A048483.
 * [A048493](http://oeis.org/A048493) ([program](A048493.asm)): a(n) = (n+1)*2^n - n.
+* [A048495](http://oeis.org/A048495) ([program](A048495.asm)): (n-1)*2^n + 2.
 * [A048499](http://oeis.org/A048499) ([program](A048499.asm)): 2^(n-1)*(6*n-10)+6.
 * [A048501](http://oeis.org/A048501) ([program](A048501.asm)): a(n) = 2^(n-1)*(8*n-14)+8.
 * [A048506](http://oeis.org/A048506) ([program](A048506.asm)): a(n) = T(0,n), array T given by A048505.
@@ -1659,6 +1662,7 @@
 * [A058992](http://oeis.org/A058992) ([program](A058992.asm)): Gossip Problem: there are n people and each of them knows some item of gossip not known to the others. They communicate by telephone and whenever one person calls another, they tell each other all that they know at that time. How many calls are required before each gossip knows everything?
 * [A059029](http://oeis.org/A059029) ([program](A059029.asm)): a(n) = n if n is even, 2*n + 1 if n is odd.
 * [A059100](http://oeis.org/A059100) ([program](A059100.asm)): a(n) = n^2 + 2.
+* [A059165](http://oeis.org/A059165) ([program](A059165.asm)): a(n) = (n+1)*2^(n+4).
 * [A059169](http://oeis.org/A059169) ([program](A059169.asm)): Number of partitions of n into 3 parts which form the sides of a nondegenerate isosceles triangle.
 * [A059193](http://oeis.org/A059193) ([program](A059193.asm)): Engel expansion of 1/e = 0.367879... .
 * [A059270](http://oeis.org/A059270) ([program](A059270.asm)): Numbers which are both the sum of n+1 consecutive integers and the sum of the n immediately higher consecutive integers.
@@ -1861,6 +1865,7 @@
 * [A069173](http://oeis.org/A069173) ([program](A069173.asm)): Centered 22-gonal numbers.
 * [A069178](http://oeis.org/A069178) ([program](A069178.asm)): Centered 21-gonal numbers.
 * [A069190](http://oeis.org/A069190) ([program](A069190.asm)): Centered 24-gonal numbers.
+* [A069229](http://oeis.org/A069229) ([program](A069229.asm)): a(n) = n*(2^n + 1).
 * [A069306](http://oeis.org/A069306) ([program](A069306.asm)): Number of 2 X n binary arrays with a path of adjacent 1's from upper left corner to anywhere in right hand column.
 * [A069778](http://oeis.org/A069778) ([program](A069778.asm)): q-factorial numbers 3!_q.
 * [A069894](http://oeis.org/A069894) ([program](A069894.asm)): Centered square numbers: a(n) = 4*n^2 + 4*n + 2.
@@ -2144,6 +2149,7 @@
 * [A088041](http://oeis.org/A088041) ([program](A088041.asm)): Smallest k such that k^4 - 1 is divisible by an n-th power, k > 1.
 * [A088209](http://oeis.org/A088209) ([program](A088209.asm)): Numerators of convergents of the continued fraction with the n+1 partial quotients: [1;1,1,...(n 1's)...,1,n+1], starting with [1], [1;2], [1;1,3], [1;1,1,4], ...
 * [A088227](http://oeis.org/A088227) ([program](A088227.asm)): Solutions x to x^n == 7 mod 13.
+* [A088305](http://oeis.org/A088305) ([program](A088305.asm)): a(0)=1, a(n)=F(2*n) where F(n) = Fibonacci numbers A000045. Has the property: a(n) = 1*a(n-1) + 2*a(n-2) + 3*a(n-3) + 4*a(n-4) + ...
 * [A088333](http://oeis.org/A088333) ([program](A088333.asm)): A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 3 places clockwise from i. Repeat, counting 3 places from the next undeleted integer, until only one integer remains.
 * [A088439](http://oeis.org/A088439) ([program](A088439.asm)): a(3n) = 3n, otherwise a(n) = 1.
 * [A088440](http://oeis.org/A088440) ([program](A088440.asm)): a(4n) = 4n, otherwise a(n) = 1.
