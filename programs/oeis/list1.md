@@ -226,6 +226,7 @@
 * [A114964](http://oeis.org/A114964) ([program](A114964.asm)): a(n) = n^2 + 30.
 * [A115006](http://oeis.org/A115006) ([program](A115006.asm)): Row 2 of array in A114999.
 * [A115067](http://oeis.org/A115067) ([program](A115067.asm)): a(n) = (3*n^2 - n - 2)/2.
+* [A115098](http://oeis.org/A115098) ([program](A115098.asm)): a(0)=2, a(n)=3*a(n-1)-3.
 * [A115218](http://oeis.org/A115218) ([program](A115218.asm)): Triangle read by rows: zeroth row is 0; to get row n >= 1, append next 2^n numbers to end of previous row.
 * [A115273](http://oeis.org/A115273) ([program](A115273.asm)): Floor(n/3)*(n mod 3).
 * [A115291](http://oeis.org/A115291) ([program](A115291.asm)): Expansion of (1+x)^3/(1-x).
@@ -423,6 +424,7 @@
 * [A130716](http://oeis.org/A130716) ([program](A130716.asm)): a(0)=a(1)=a(2)=1, a(n)=0 for n>2.
 * [A130727](http://oeis.org/A130727) ([program](A130727.asm)): List of triples 2n+1, 2n+3, 2n+2.
 * [A130731](http://oeis.org/A130731) ([program](A130731.asm)): Period 4: repeat [1, 2, 0, 0].
+* [A130765](http://oeis.org/A130765) ([program](A130765.asm)): ASCII codes for lower case letters.
 * [A130766](http://oeis.org/A130766) ([program](A130766.asm)): 3n+2 sandwiched by tripled 3n+1 .
 * [A130773](http://oeis.org/A130773) ([program](A130773.asm)): a(0)=0, a(1)=2, a(n)=2n+1 for n >= 2.
 * [A130779](http://oeis.org/A130779) ([program](A130779.asm)): a(0)=a(1)=1, a(2)=2, a(n)=0 for n >= 3.
@@ -583,6 +585,7 @@
 * [A134341](http://oeis.org/A134341) ([program](A134341.asm)): Numbers whose fifth powers have a partition as a sum of fifth powers of four positive integers.
 * [A134351](http://oeis.org/A134351) ([program](A134351.asm)): Binomial transform of [1, 5, -1, 5, -1, 5,...]. Inverse binomial transform of A134350.
 * [A134353](http://oeis.org/A134353) ([program](A134353.asm)): Row sums of triangle A134352.
+* [A134401](http://oeis.org/A134401) ([program](A134401.asm)): Row sums of triangle A134400.
 * [A134451](http://oeis.org/A134451) ([program](A134451.asm)): Ternary digital root of n.
 * [A134465](http://oeis.org/A134465) ([program](A134465.asm)): Row sums of triangle A134464.
 * [A134478](http://oeis.org/A134478) ([program](A134478.asm)): Triangle read by rows, T(0,0) = 1; n-th row = (n+1) terms of n, n+1, n+2...
@@ -731,6 +734,7 @@
 * [A140681](http://oeis.org/A140681) ([program](A140681.asm)): a(n) = 3*n*(n+6).
 * [A140689](http://oeis.org/A140689) ([program](A140689.asm)): a(n) = n*(3*n + 20).
 * [A140758](http://oeis.org/A140758) ([program](A140758.asm)): Floor(n*Pi/2).
+* [A140788](http://oeis.org/A140788) ([program](A140788.asm)): a(n) = 6*4^n + 2.
 * [A140823](http://oeis.org/A140823) ([program](A140823.asm)): Natural numbers which are not perfect fourth powers.
 * [A140833](http://oeis.org/A140833) ([program](A140833.asm)): Sum of Fibonacci numbers between F(-n)....F(n), inclusive.
 * [A141023](http://oeis.org/A141023) ([program](A141023.asm)): a(n) = 2^n - (3-(-1)^n)/2.
@@ -899,6 +903,7 @@
 * [A153642](http://oeis.org/A153642) ([program](A153642.asm)): a(n) = 4*n^2 + 24*n + 8.
 * [A153643](http://oeis.org/A153643) ([program](A153643.asm)): Jacobsthal numbers A001045 incremented by 2.
 * [A153644](http://oeis.org/A153644) ([program](A153644.asm)): a(n) = 4*n^2 + 28*n + 10.
+* [A153727](http://oeis.org/A153727) ([program](A153727.asm)): Period 3: repeat [1, 4, 2] ; Trajectory of 3x+1 sequence starting at 1.
 * [A153784](http://oeis.org/A153784) ([program](A153784.asm)): 4 times heptagonal numbers: 2n(5n-3).
 * [A153785](http://oeis.org/A153785) ([program](A153785.asm)): 5 times heptagonal numbers: a(n) = 5*n*(5*n-3)/2.
 * [A153786](http://oeis.org/A153786) ([program](A153786.asm)): 6 times heptagonal numbers: a(n) = 3*n*(5*n-3).
@@ -1311,6 +1316,7 @@
 * [A171272](http://oeis.org/A171272) ([program](A171272.asm)): a(n) = 1 + 4*n*(1 + 2*n^2)/3.
 * [A171372](http://oeis.org/A171372) ([program](A171372.asm)): a(n) = Numerator of 1/(2*n)^2 - 1/(3*n)^2 for n > 0, a(0) = 1.
 * [A171386](http://oeis.org/A171386) ([program](A171386.asm)): The characteristic function of 2 and 3: 1 if n is prime such that either n-1 or n+1 is prime, else 0.
+* [A171389](http://oeis.org/A171389) ([program](A171389.asm)): a(n) = 21*2^n - 1.
 * [A171397](http://oeis.org/A171397) ([program](A171397.asm)): Earliest sequence containing no 11-term arithmetic progression.
 * [A171452](http://oeis.org/A171452) ([program](A171452.asm)): a(n) = C(n,2) + floor(n/3).
 * [A171463](http://oeis.org/A171463) ([program](A171463.asm)): The natural numbers excluding 2 and 3.
