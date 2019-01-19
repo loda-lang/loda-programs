@@ -66,6 +66,7 @@
 * [A317303](http://oeis.org/A317303) ([program](A317303.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
 * [A317304](http://oeis.org/A317304) ([program](A317304.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central valley.
 * [A317404](http://oeis.org/A317404) ([program](A317404.asm)): a(n) = 3*n*(2^n - 1).
+* [A317408](http://oeis.org/A317408) ([program](A317408.asm)): a(n) = n * Fibonacci(2n).
 * [A317439](http://oeis.org/A317439) ([program](A317439.asm)): Numbers missing from A317437.
 * [A317440](http://oeis.org/A317440) ([program](A317440.asm)): Numbers missing from A317438.
 * [A317633](http://oeis.org/A317633) ([program](A317633.asm)): Numbers congruent to {1, 7, 9} mod 10.

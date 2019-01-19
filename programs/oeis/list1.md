@@ -1031,6 +1031,7 @@
 * [A158894](http://oeis.org/A158894) ([program](A158894.asm)): Sawtooth pattern of one, then two, then three, then four etc. consecutive odd numbers, starting each time at 3.
 * [A158953](http://oeis.org/A158953) ([program](A158953.asm)): Trajectory of 12 under repeated application of the map n --> A102370(n) .
 * [A159469](http://oeis.org/A159469) ([program](A159469.asm)): Maximum remainder when (k + 1)^n + (k - 1)^n is divided by k^2 for variable n and k > 2.
+* [A159694](http://oeis.org/A159694) ([program](A159694.asm)): a(0)=6, a(n) = 2*a(n-1) + 2^(n-1) for n>0 .
 * [A159920](http://oeis.org/A159920) ([program](A159920.asm)): Sums of the antidiagonals of Sundaram's sieve (A159919).
 * [A159938](http://oeis.org/A159938) ([program](A159938.asm)): The number of homogeneous trisubstituted linear alkanes.
 * [A160378](http://oeis.org/A160378) ([program](A160378.asm)): a(n) = n^3 - n*(n+1)/2.
