@@ -8,6 +8,7 @@
 * [A200678](http://oeis.org/A200678) ([program](A200678.asm)): Partial sums of A200675.
 * [A200860](http://oeis.org/A200860) ([program](A200860.asm)): Multiples of 682.
 * [A200975](http://oeis.org/A200975) ([program](A200975.asm)): Numbers on the diagonals in Ulam's spiral.
+* [A201157](http://oeis.org/A201157) ([program](A201157.asm)): y-values in the solution to 5*x^2 - 20 = y^2.
 * [A201279](http://oeis.org/A201279) ([program](A201279.asm)): a(n) = 6n^2 + 10n + 5.
 * [A201471](http://oeis.org/A201471) ([program](A201471.asm)): Maximal diameter of a connected n-gamma_t-vertex-critical graph.
 * [A201629](http://oeis.org/A201629) ([program](A201629.asm)): a(n) = n if n is even and otherwise its nearest multiple of 4.
@@ -29,6 +30,7 @@
 * [A204675](http://oeis.org/A204675) ([program](A204675.asm)): a(n) = 16*n^2 + 2*n + 1.
 * [A204904](http://oeis.org/A204904) ([program](A204904.asm)): p(n)-q(n), where (p(n), q(n)) is the least pair of odd primes for which n divides p(n)-q(n).
 * [A206332](http://oeis.org/A206332) ([program](A206332.asm)): Complement of A092754.
+* [A206374](http://oeis.org/A206374) ([program](A206374.asm)): a(n) = (7*4^n - 1)/3.
 * [A206417](http://oeis.org/A206417) ([program](A206417.asm)): (5*F(n)+3*L(n)-8)/2.
 * [A206905](http://oeis.org/A206905) ([program](A206905.asm)): n+[nr/t]+[ns/t], where []=floor, r=3, s=sqrt(3), t=1/s.
 * [A208638](http://oeis.org/A208638) ([program](A208638.asm)): Number of 3 X n 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward or right-upward antidiagonal neighbors.
@@ -438,6 +440,7 @@
 * [A256079](http://oeis.org/A256079) ([program](A256079.asm)): Increase each (decimal) digit of n by 1, with carry (i.e., '9' becomes '0' and a (further) increment of 1 of the digit to the left).
 * [A256137](http://oeis.org/A256137) ([program](A256137.asm)): a(2) = 1; a(3) = 4; for n >= 4, a(n) = 2 + Sum_{i=4..n} d(i), where d(i) = i for even i, d(i) = i-3 for odd i.
 * [A256320](http://oeis.org/A256320) ([program](A256320.asm)): Number of partitions of 4n into exactly 3 parts.
+* [A256432](http://oeis.org/A256432) ([program](A256432.asm)): Characteristic function of octahedral numbers.
 * [A256654](http://oeis.org/A256654) ([program](A256654.asm)): Least Fibonacci number not less than n.
 * [A256680](http://oeis.org/A256680) ([program](A256680.asm)): Minimal most likely sum for a roll of n 4-sided dice.
 * [A256833](http://oeis.org/A256833) ([program](A256833.asm)): a(n) = (4*n+3)*(4*n+2).
@@ -479,6 +482,7 @@
 * [A261953](http://oeis.org/A261953) ([program](A261953.asm)): Start with a single equilateral triangle for n=0; for the odd n-th generation add a triangle at each expandable side of the triangles of the (n-1)-th generation (this is the "side to side" version); for the even n-th generation use the "vertex to vertex" version; a(n) is the number of triangles added in the n-th generation.
 * [A262221](http://oeis.org/A262221) ([program](A262221.asm)): a(n) = 25*n*(n + 1)/2 + 1.
 * [A262303](http://oeis.org/A262303) ([program](A262303.asm)): Length of sequence of lower halves of n: repeatedly apply x->floor(x/2) starting at n; a(n) = number of steps until reach one of 2,3,4.
+* [A262438](http://oeis.org/A262438) ([program](A262438.asm)): Number of digits of hexadecimal representation of n.
 * [A262564](http://oeis.org/A262564) ([program](A262564.asm)): A politician's answer to the question "What comes next after 2,3,5?".
 * [A262773](http://oeis.org/A262773) ([program](A262773.asm)): A Beatty sequence: a(n)=floor(q*n) where q=A231187.
 * [A263053](http://oeis.org/A263053) ([program](A263053.asm)): Number of (n+1) X (1+1) 0..1 arrays with each row and column not divisible by 3, read as a binary number with top and left being the most significant bits.
@@ -827,6 +831,7 @@
 * [A296965](http://oeis.org/A296965) ([program](A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
 * [A297044](http://oeis.org/A297044) ([program](A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
 * [A297045](http://oeis.org/A297045) ([program](A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
+* [A297046](http://oeis.org/A297046) ([program](A297046.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-60 digits of n; see Comments
 * [A297217](http://oeis.org/A297217) ([program](A297217.asm)): Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.
 * [A297464](http://oeis.org/A297464) ([program](A297464.asm)): Solution (a(n)) of the system of 4 complementary equations in Comments.
 * [A297663](http://oeis.org/A297663) ([program](A297663.asm)): a(n) = 5*n + 2^n.

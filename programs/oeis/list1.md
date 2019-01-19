@@ -85,6 +85,7 @@
 * [A104584](http://oeis.org/A104584) ([program](A104584.asm)): (1/2) * ( 3*n^2 + n*(-1)^n ).
 * [A104585](http://oeis.org/A104585) ([program](A104585.asm)): (1/2) * ( 3*n^2 - n*(-1)^n ).
 * [A104675](http://oeis.org/A104675) ([program](A104675.asm)): a(n) = C(n+1,n) * C(n+6,1).
+* [A104891](http://oeis.org/A104891) ([program](A104891.asm)): a(0) = 0; a(n) = 5*a(n-1) + 5.
 * [A105163](http://oeis.org/A105163) ([program](A105163.asm)): a(n) = (n^3 - 7*n + 12)/6.
 * [A105198](http://oeis.org/A105198) ([program](A105198.asm)): a(n) = n(n+1)/2 mod 4.
 * [A105340](http://oeis.org/A105340) ([program](A105340.asm)): a(n) = n*(n+1)/2 mod 2048.
@@ -102,6 +103,7 @@
 * [A106389](http://oeis.org/A106389) ([program](A106389.asm)): Numbers j such that 6j^2 + 6j + 1 = 13k.
 * [A106505](http://oeis.org/A106505) ([program](A106505.asm)): Ordered and uniqued length of side common to the two angles, one being the double of the other, of a primitive integer-sided triangle.
 * [A106648](http://oeis.org/A106648) ([program](A106648.asm)): 3*n^2+6*n+8.
+* [A106729](http://oeis.org/A106729) ([program](A106729.asm)): Sum of two consecutive squares of Lucas numbers (A001254).
 * [A106734](http://oeis.org/A106734) ([program](A106734.asm)): a(n) = n^3 - 7*n + 7.
 * [A106742](http://oeis.org/A106742) ([program](A106742.asm)): a[n] =a[a[a[a[a[n - a[n-1]]]]]] + a[n - a[n-2]].
 * [A106832](http://oeis.org/A106832) ([program](A106832.asm)): 4n-2 and 6n alternatively.
@@ -246,6 +248,7 @@
 * [A116939](http://oeis.org/A116939) ([program](A116939.asm)): Lexicographically earliest sequence such that each i occurs exactly i+1 times and succeeding terms differ exactly by -1 or +1.
 * [A116940](http://oeis.org/A116940) ([program](A116940.asm)): Greatest m such that A116939(m) = n.
 * [A117142](http://oeis.org/A117142) ([program](A117142.asm)): Number of partitions of n in which any two parts differ by at most 2.
+* [A117202](http://oeis.org/A117202) ([program](A117202.asm)): Binomial transform of n*F(n).
 * [A117230](http://oeis.org/A117230) ([program](A117230.asm)): Start with 1 and repeatedly reverse the digits and add 1 to get the next term.
 * [A117450](http://oeis.org/A117450) ([program](A117450.asm)): Expansion of (1-x+x^2+x^5)/((1-x)^2*(1-x^5)).
 * [A117560](http://oeis.org/A117560) ([program](A117560.asm)): a(n) = n*(n^2 - 1)/2 - 1.
@@ -271,6 +274,7 @@
 * [A118517](http://oeis.org/A118517) ([program](A118517.asm)): Define sequence S_m by: initial term = m, reverse digits and add 3 to get next term. Entry shows S_1. This reaches a cycle of length 3 in 1 step.
 * [A118658](http://oeis.org/A118658) ([program](A118658.asm)): a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
 * [A118729](http://oeis.org/A118729) ([program](A118729.asm)): Infinite square array which contains the 8 numbers 4*r^2 - 3*r, 4*r^2 - 2*r, ..., 4*r^2 + 4*r in row r.
+* [A118760](http://oeis.org/A118760) ([program](A118760.asm)): A118758(A118758(n)).
 * [A119412](http://oeis.org/A119412) ([program](A119412.asm)): a(n) = n*(n+11).
 * [A119413](http://oeis.org/A119413) ([program](A119413.asm)): 16*n-12.
 * [A119789](http://oeis.org/A119789) ([program](A119789.asm)): Fibonacci Logarithms used to get a triangular array.
@@ -481,6 +485,7 @@
 * [A131806](http://oeis.org/A131806) ([program](A131806.asm)): Period 4: repeat [0, 2, 4, 6].
 * [A131818](http://oeis.org/A131818) ([program](A131818.asm)): A130296 + A002260 - A000012. Triangle read by rows: row n consists of n, 2, 3, 4,...n.
 * [A131820](http://oeis.org/A131820) ([program](A131820.asm)): Row sums of triangle A131819.
+* [A131831](http://oeis.org/A131831) ([program](A131831.asm)): Duplicate of A100314
 * [A131833](http://oeis.org/A131833) ([program](A131833.asm)): 2^(n+1)-1+3*n.
 * [A131870](http://oeis.org/A131870) ([program](A131870.asm)): Period 8: repeat 1, 2, 3, 4, 6, 7, 8, 9.
 * [A131874](http://oeis.org/A131874) ([program](A131874.asm)): (7n^2 + 15n + 2) / 2.
@@ -688,6 +693,7 @@
 * [A139609](http://oeis.org/A139609) ([program](A139609.asm)): a(n) = 36*n + 9.
 * [A139611](http://oeis.org/A139611) ([program](A139611.asm)): 55n + 11.
 * [A139612](http://oeis.org/A139612) ([program](A139612.asm)): 66n + 12.
+* [A139634](http://oeis.org/A139634) ([program](A139634.asm)): 10*2^(n-1) - 9.
 * [A139635](http://oeis.org/A139635) ([program](A139635.asm)): Binomial transform of [1, 11, 11, 11,...].
 * [A139697](http://oeis.org/A139697) ([program](A139697.asm)): Binomial transform of [1, 12, 12, 12,...].
 * [A139698](http://oeis.org/A139698) ([program](A139698.asm)): Binomial transform of [1, 25, 25, 25, ...].
@@ -710,6 +716,7 @@
 * [A140229](http://oeis.org/A140229) ([program](A140229.asm)): Binomial transform of [1, 3, 3, 1, -2, 3, -4, 5, ...].
 * [A140252](http://oeis.org/A140252) ([program](A140252.asm)): Inverse binomial transform of A140420.
 * [A140282](http://oeis.org/A140282) ([program](A140282.asm)): Numbers n such that A000330(n) is multiple of 3.
+* [A140438](http://oeis.org/A140438) ([program](A140438.asm)): Number of letters in word for the number n in Tamil.
 * [A140504](http://oeis.org/A140504) ([program](A140504.asm)): a(n) = 2^n + 4.
 * [A140513](http://oeis.org/A140513) ([program](A140513.asm)): Repeat 2^n n times.
 * [A140672](http://oeis.org/A140672) ([program](A140672.asm)): a(n) = n*(3*n + 13)/2.
@@ -1100,6 +1107,7 @@
 * [A164136](http://oeis.org/A164136) ([program](A164136.asm)): a(n) = 11*n*(n+1).
 * [A164284](http://oeis.org/A164284) ([program](A164284.asm)): a(n) = 15*n-7.
 * [A164285](http://oeis.org/A164285) ([program](A164285.asm)): a(n) = 7*2^n + 3.
+* [A164346](http://oeis.org/A164346) ([program](A164346.asm)): a(n) = 3 * 4^n.
 * [A164358](http://oeis.org/A164358) ([program](A164358.asm)): Expansion of (1 - x^2)^2 * (1 - x^3) / ((1 - x)^3 * (1 - x^4)) in powers of x.
 * [A164359](http://oeis.org/A164359) ([program](A164359.asm)): Expansion of (1 - x^2)^3 / ((1 - x)^3 * (1 - x^3)) in powers of x.
 * [A164360](http://oeis.org/A164360) ([program](A164360.asm)): Period 3: repeat [5, 4, 3].
@@ -1326,6 +1334,7 @@
 * [A171950](http://oeis.org/A171950) ([program](A171950.asm)): a(1)=1. a(n) = the absolute difference between (the sum of previous terms) and A000217(n-2), n>1.
 * [A172043](http://oeis.org/A172043) ([program](A172043.asm)): 5n^2 - n + 1.
 * [A172044](http://oeis.org/A172044) ([program](A172044.asm)): 5*n^2+11*n+1.
+* [A172051](http://oeis.org/A172051) ([program](A172051.asm)): Decimal expansion of 1/999999.
 * [A172073](http://oeis.org/A172073) ([program](A172073.asm)): a(n) = (4*n^3 + n^2 - 3*n)/2.
 * [A172076](http://oeis.org/A172076) ([program](A172076.asm)): a(n) = n*(n+1)*(14*n-11)/6.
 * [A172097](http://oeis.org/A172097) ([program](A172097.asm)): Table T(n,k) read by rows which contains in row n the 2^n terms of A171968 starting at the (n+1)st 3.
@@ -1363,6 +1372,7 @@
 * [A174794](http://oeis.org/A174794) ([program](A174794.asm)): a(0) = 0 and a(n) = (4*n^3 - 12*n^2 + 20*n - 9)/3 for n >= 1.
 * [A174814](http://oeis.org/A174814) ([program](A174814.asm)): a(n) = n*(n+1)*(5*n+1)/3.
 * [A174902](http://oeis.org/A174902) ([program](A174902.asm)): Denominator of 1 - 1/n^2, using 0 at the pole where n=0.
+* [A175164](http://oeis.org/A175164) ([program](A175164.asm)): a(n) = 16*(2^n - 1).
 * [A175287](http://oeis.org/A175287) ([program](A175287.asm)): Partial sums of ceiling(n^2/4).
 * [A175631](http://oeis.org/A175631) ([program](A175631.asm)): a(n) = (n-th pentagonal number) modulo (n-th triangular number).
 * [A175676](http://oeis.org/A175676) ([program](A175676.asm)): a(n) = binomial(n,3) mod n.
@@ -1706,6 +1716,7 @@
 * [A196305](http://oeis.org/A196305) ([program](A196305.asm)): a(n) = 15*2^n - 1.
 * [A196382](http://oeis.org/A196382) ([program](A196382.asm)): Number of sequences of n coin flips, that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,1).
 * [A196410](http://oeis.org/A196410) ([program](A196410.asm)): a(n) = n*2^(n-5).
+* [A197649](http://oeis.org/A197649) ([program](A197649.asm)): Sum(k*Fibonacci(2*k), k=0..n), Fibonacci(n)=A000045(n)
 * [A197652](http://oeis.org/A197652) ([program](A197652.asm)): Numbers that are congruent to 0 or 1 mod 10.
 * [A197985](http://oeis.org/A197985) ([program](A197985.asm)): Round((n+1/n)^2)
 * [A198017](http://oeis.org/A198017) ([program](A198017.asm)): a(n) = n*(7*n + 11)/2 + 1.
