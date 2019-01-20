@@ -16,6 +16,7 @@
 * [A301755](http://oeis.org/A301755) ([program](A301755.asm)): Decimal expansion of 3/8.
 * [A302402](http://oeis.org/A302402) ([program](A302402.asm)): Total domination number of the n-ladder graph.
 * [A302488](http://oeis.org/A302488) ([program](A302488.asm)): Total domination number of the n X n grid graph.
+* [A302507](http://oeis.org/A302507) ([program](A302507.asm)): a(n) = 4*(3^n-1).
 * [A302537](http://oeis.org/A302537) ([program](A302537.asm)): a(n) = (n^2 + 13*n + 2)/2.
 * [A302650](http://oeis.org/A302650) ([program](A302650.asm)): Number of minimal total dominating sets in the n-barbell graph.
 * [A302689](http://oeis.org/A302689) ([program](A302689.asm)): a(n) = 4 + 2^n - 4*n.
@@ -56,7 +57,7 @@
 * [A316224](http://oeis.org/A316224) ([program](A316224.asm)): a(n) = n*(2*n + 1)*(4*n + 1).
 * [A316355](http://oeis.org/A316355) ([program](A316355.asm)): 2k-1 appears 2k times after 2k-2 appears once.
 * [A316466](http://oeis.org/A316466) ([program](A316466.asm)): a(n) = 2*n*(7*n - 3).
-* [A316571](http://oeis.org/A316571) ([program](A316571.asm)): The lexicographically earliest increasing sequence such that n divides the sum of the first n+1 terms.
+* [A316571](http://oeis.org/A316571) ([program](A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
 * [A316671](http://oeis.org/A316671) ([program](A316671.asm)): Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
 * [A316742](http://oeis.org/A316742) ([program](A316742.asm)): Stepping through the Mersenne sequence (A000225) one step back, two steps forward.
 * [A316966](http://oeis.org/A316966) ([program](A316966.asm)): Same as A316671, except numbering of the squares starting at 0 rather than 1.
