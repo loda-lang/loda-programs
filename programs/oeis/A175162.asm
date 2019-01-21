@@ -11,11 +11,9 @@ add $2,$2
 mov $1,5
 add $2,$3
 add $1,1
-add $5,$2
-sub $5,4
-mov $4,$1
-sub $5,1
-add $1,$5
+add $4,$2
+sub $4,5
+add $1,$4
 add $3,4
 add $3,$1
 sub $3,5
