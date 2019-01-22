@@ -12,14 +12,6 @@ sub $1,$0
 add $$0,$$0
 add $2,$$1
 mov $3,$$2
-lpb $1,1
-  sub $1,1
-  add $2,4
-lpe
 add $3,1
 mov $1,$$4
-lpb $2,1
-  add $3,$$3
-  sub $2,1
-lpe
 add $$3,1
