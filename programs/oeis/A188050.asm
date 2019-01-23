@@ -3,9 +3,8 @@
 
 add $0,$0
 lpb $0,1
-  add $3,5
-  add $1,$3
   sub $0,1
-  add $2,$1
+  add $2,5
+  add $3,$2
+  add $1,$3
 lpe
-mov $1,$2
