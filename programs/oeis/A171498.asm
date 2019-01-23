@@ -10,5 +10,3 @@ lpb $0,1
   sub $0,1
 lpe
 sub $1,1
-add $2,$2
-sub $3,$2

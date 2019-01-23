@@ -16,7 +16,6 @@ lpb $2,1
     sub $5,$3
     mov $4,$1
     add $4,$4
-    mov $0,$4
   lpe
   sub $2,1
 lpe
