@@ -20,21 +20,24 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301995](http://oeis.org/A301995) ([L07 program](A301995.asm)): Number of nX4 0..1 arrays with every element equal to 1, 2 or 4 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A302402](http://oeis.org/A302402) ([L04 program](A302402.asm)): Total domination number of the n-ladder graph.
 * [A302404](http://oeis.org/A302404) ([L12 program](A302404.asm)): Total domination number of the n-Moebius ladder.
+* [A302406](http://oeis.org/A302406) ([L11 program](A302406.asm)): Total domination number of the n X n torus grid graph.
 * [A302488](http://oeis.org/A302488) ([L08 program](A302488.asm)): Total domination number of the n X n grid graph.
 * [A302507](http://oeis.org/A302507) ([L07 program](A302507.asm)): a(n) = 4*(3^n-1).
 * [A302537](http://oeis.org/A302537) ([L06 program](A302537.asm)): a(n) = (n^2 + 13*n + 2)/2.
 * [A302650](http://oeis.org/A302650) ([L09 program](A302650.asm)): Number of minimal total dominating sets in the n-barbell graph.
 * [A302689](http://oeis.org/A302689) ([L07 program](A302689.asm)): a(n) = 4 + 2^n - 4*n.
 * [A302906](http://oeis.org/A302906) ([L06 program](A302906.asm)): a(0) = 0; for n > 0, a(n) = a(n-1) + 5*n + 4.
+* [A303609](http://oeis.org/A303609) ([L11 program](A303609.asm)): a(n) = 2*n^3 + 9*n^2 + 9*n.
 * [A304157](http://oeis.org/A304157) ([L11 program](A304157.asm)): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
 * [A304158](http://oeis.org/A304158) ([L11 program](A304158.asm)): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
 * [A304163](http://oeis.org/A304163) ([L11 program](A304163.asm)): a(n) = 9*n^2 - 3*n + 1 with n>0.
 * [A304383](http://oeis.org/A304383) ([L08 program](A304383.asm)): a(n) = 36*2^n - 5 (n>=1).
+* [A304385](http://oeis.org/A304385) ([L10 program](A304385.asm)): a(n) = 192*2^n - 31 (n>=1).
 * [A304387](http://oeis.org/A304387) ([L17 program](A304387.asm)): a(n) = 27*2^n - 5.
 * [A304505](http://oeis.org/A304505) ([L15 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
 * [A304517](http://oeis.org/A304517) ([L07 program](A304517.asm)): a(n) = 16*2^n - 11 (n>=1).
 * [A304519](http://oeis.org/A304519) ([L14 program](A304519.asm)): a(n) = 72*2^n -56 (n>=1).
-* [A304579](http://oeis.org/A304579) ([L14 program](A304579.asm)): a(n) = (n^2 + 1)*(n^2 + 2).
+* [A304579](http://oeis.org/A304579) ([L13 program](A304579.asm)): a(n) = (n^2 + 1)*(n^2 + 2).
 * [A304659](http://oeis.org/A304659) ([L10 program](A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
 * [A304836](http://oeis.org/A304836) ([L11 program](A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304840](http://oeis.org/A304840) ([L12 program](A304840.asm)): a(n) = 52*n - 2 (n>=1).
@@ -79,6 +82,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317408](http://oeis.org/A317408) ([L06 program](A317408.asm)): a(n) = n * Fibonacci(2n).
 * [A317439](http://oeis.org/A317439) ([L03 program](A317439.asm)): Numbers missing from A317437.
 * [A317440](http://oeis.org/A317440) ([L03 program](A317440.asm)): Numbers missing from A317438.
+* [A317614](http://oeis.org/A317614) ([L14 program](A317614.asm)): a(n) = (1/2)*(n^3 + n*(n mod 2)).
 * [A317633](http://oeis.org/A317633) ([L07 program](A317633.asm)): Numbers congruent to {1, 7, 9} mod 10.
 * [A317637](http://oeis.org/A317637) ([L07 program](A317637.asm)): a(n) = n*(n+1)*(n+3).
 * [A318054](http://oeis.org/A318054) ([L11 program](A318054.asm)): a(n) = n*(n+1)*(n^2+n+22)/24.
@@ -106,4 +110,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322042](http://oeis.org/A322042) ([L05 program](A322042.asm)): Maximum edge-distance of a point in the quotient graph E/nE from the origin (see A322041 for further information).
 * [A322489](http://oeis.org/A322489) ([L08 program](A322489.asm)): Numbers k such that k^k ends with 4.
 * [A322595](http://oeis.org/A322595) ([L09 program](A322595.asm)): a(n) = (n^3 + 9*n + 14*n + 9)/3.
-* [A323610](http://oeis.org/A323610) ([L35 program](A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
+* [A323610](http://oeis.org/A323610) ([L13 program](A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
