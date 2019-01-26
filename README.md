@@ -83,3 +83,5 @@ If you would like to get updates on new programs, you can check out the [@lodami
 Total number of programs: 5974/319428 (1%)
 
 ![LODA Program Length Distribution](https://raw.githubusercontent.com/ckrause/loda/master/lengths.png)
+
+![LODA Program Count](https://raw.githubusercontent.com/ckrause/loda/master/counts.png)

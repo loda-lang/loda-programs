@@ -35,3 +35,30 @@ EOF
 gnuplot lengths.gp
 rm lengths.gp
 rm lengths.dat
+
+echo "Counting programs"
+echo "" > counts.dat
+for commit in $(git rev-list master); do
+  date=$(git show -s --format="%ci" $commit)
+  date=${date/ +0100/}
+  count=$(git ls-tree --name-only -r $commit | grep "programs/oeis/A.*" | wc -l)
+  echo $date,$count >> counts.dat 
+done
+
+echo "Generating count chart"
+cat << EOF > counts.gp
+set terminal pngcairo font "arial,9" size 600,300
+set output 'counts.png'
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set format x "%b %Y"
+set xrange ["2018-09-20 00:00:00":*]
+unset key
+set datafile separator ','
+set title "Number of LODA Programs"
+plot "counts.dat" using 1:2 with lines linecolor rgb "#0000FF"
+EOF
+
+gnuplot counts.gp
+rm counts.gp
+rm counts.dat
