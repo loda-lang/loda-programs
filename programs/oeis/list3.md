@@ -2,7 +2,7 @@
 
 List of integer sequences with links to LODA programs. An _Ln_ program is a LODA program of length _n_.
 
-* [A300069](http://oeis.org/A300069) ([L21 program](A300069.asm)): Period 6: repeat [0, 0, 0, 1, 2, 1].
+* [A300069](http://oeis.org/A300069) ([L15 program](A300069.asm)): Period 6: repeat [0, 0, 0, 1, 2, 1].
 * [A300076](http://oeis.org/A300076) ([L17 program](A300076.asm)): A sequence based on the period 6 sequence A300075.
 * [A300293](http://oeis.org/A300293) ([L16 program](A300293.asm)): A sequence based on the period 6 sequence A151899.
 * [A300402](http://oeis.org/A300402) ([L07 program](A300402.asm)): Smallest integer i such that TREE(i) >= n.
@@ -31,9 +31,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304157](http://oeis.org/A304157) ([L11 program](A304157.asm)): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
 * [A304158](http://oeis.org/A304158) ([L11 program](A304158.asm)): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
 * [A304163](http://oeis.org/A304163) ([L11 program](A304163.asm)): a(n) = 9*n^2 - 3*n + 1 with n>0.
+* [A304378](http://oeis.org/A304378) ([L09 program](A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
 * [A304383](http://oeis.org/A304383) ([L07 program](A304383.asm)): a(n) = 36*2^n - 5 (n>=1).
 * [A304385](http://oeis.org/A304385) ([L10 program](A304385.asm)): a(n) = 192*2^n - 31 (n>=1).
-* [A304387](http://oeis.org/A304387) ([L17 program](A304387.asm)): a(n) = 27*2^n - 5.
+* [A304387](http://oeis.org/A304387) ([L11 program](A304387.asm)): a(n) = 27*2^n - 5.
 * [A304504](http://oeis.org/A304504) ([L23 program](A304504.asm)): a(n) = 3*(3*n+1)*(9*n+8)/2.
 * [A304505](http://oeis.org/A304505) ([L15 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
 * [A304517](http://oeis.org/A304517) ([L07 program](A304517.asm)): a(n) = 16*2^n - 11 (n>=1).
