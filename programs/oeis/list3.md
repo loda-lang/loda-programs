@@ -53,11 +53,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305074](http://oeis.org/A305074) ([L06 program](A305074.asm)): a(n) = 20*n - 8 (n>=1).
 * [A305075](http://oeis.org/A305075) ([L07 program](A305075.asm)): a(n) = 32*n - 24 (n>=1).
 * [A305153](http://oeis.org/A305153) ([L20 program](A305153.asm)): a(n) = 30*2^n + 12.
-* [A305154](http://oeis.org/A305154) ([L16 program](A305154.asm)): a(n) = 36*2^n + 9.
+* [A305154](http://oeis.org/A305154) ([L12 program](A305154.asm)): a(n) = 36*2^n + 9.
 * [A305155](http://oeis.org/A305155) ([L07 program](A305155.asm)): a(n) = 28*2^n - 15.
-* [A305158](http://oeis.org/A305158) ([L08 program](A305158.asm)): a(n) = 21*2^n - 15.
+* [A305158](http://oeis.org/A305158) ([L06 program](A305158.asm)): a(n) = 21*2^n - 15.
 * [A305163](http://oeis.org/A305163) ([L06 program](A305163.asm)): a(n) = 24*2^n - 18.
-* [A305164](http://oeis.org/A305164) ([L07 program](A305164.asm)): a(n) = 28*2^n - 22.
+* [A305164](http://oeis.org/A305164) ([L06 program](A305164.asm)): a(n) = 28*2^n - 22.
 * [A305503](http://oeis.org/A305503) ([L09 program](A305503.asm)): Largest cardinality of subsets A of {0,1,...,n-1} with |A + A| > |A - A|.
 * [A305548](http://oeis.org/A305548) ([L07 program](A305548.asm)): a(n) = 27*n.
 * [A305859](http://oeis.org/A305859) ([L08 program](A305859.asm)): Numbers that are congruent to {1, 3, 11} mod 12.
