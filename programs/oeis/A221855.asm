@@ -9,7 +9,6 @@ add $2,$0
 sub $4,2
 add $4,4
 sub $2,4
-sub $0,$0
 mov $0,$2
 mov $1,$4
 sub $3,4
