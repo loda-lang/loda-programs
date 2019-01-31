@@ -37,6 +37,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304383](http://oeis.org/A304383) ([L07 program](A304383.asm)): a(n) = 36*2^n - 5 (n>=1).
 * [A304385](http://oeis.org/A304385) ([L10 program](A304385.asm)): a(n) = 192*2^n - 31 (n>=1).
 * [A304387](http://oeis.org/A304387) ([L07 program](A304387.asm)): a(n) = 27*2^n - 5.
+* [A304388](http://oeis.org/A304388) ([L14 program](A304388.asm)): a(n) = 144*2^n - 20 (n>=1).
 * [A304504](http://oeis.org/A304504) ([L23 program](A304504.asm)): a(n) = 3*(3*n+1)*(9*n+8)/2.
 * [A304505](http://oeis.org/A304505) ([L15 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
 * [A304517](http://oeis.org/A304517) ([L07 program](A304517.asm)): a(n) = 16*2^n - 11 (n>=1).
@@ -50,7 +51,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305060](http://oeis.org/A305060) ([L08 program](A305060.asm)): a(n) = 18*2^n + 10.
 * [A305061](http://oeis.org/A305061) ([L11 program](A305061.asm)): a(n) = 20*2^n + 14.
 * [A305064](http://oeis.org/A305064) ([L08 program](A305064.asm)): a(n) = 42*2^n - 20.
-* [A305065](http://oeis.org/A305065) ([L07 program](A305065.asm)): a(n) = 48*2^n - 24.
+* [A305065](http://oeis.org/A305065) ([L06 program](A305065.asm)): a(n) = 48*2^n - 24.
 * [A305068](http://oeis.org/A305068) ([L13 program](A305068.asm)): a(n) = 54*n - 18 (n>=1).
 * [A305074](http://oeis.org/A305074) ([L06 program](A305074.asm)): a(n) = 20*n - 8 (n>=1).
 * [A305075](http://oeis.org/A305075) ([L07 program](A305075.asm)): a(n) = 32*n - 24 (n>=1).
