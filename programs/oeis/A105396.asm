@@ -9,6 +9,3 @@ lpb $0,1
   add $1,$$0
   sub $0,$1
 lpe
-lpb $4,1
-  mov $$4,$$2
-lpe
