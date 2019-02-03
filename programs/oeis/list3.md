@@ -38,7 +38,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304383](http://oeis.org/A304383) ([L07 program](A304383.asm)): a(n) = 36*2^n - 5 (n>=1).
 * [A304385](http://oeis.org/A304385) ([L10 program](A304385.asm)): a(n) = 192*2^n - 31 (n>=1).
 * [A304387](http://oeis.org/A304387) ([L07 program](A304387.asm)): a(n) = 27*2^n - 5.
-* [A304388](http://oeis.org/A304388) ([L14 program](A304388.asm)): a(n) = 144*2^n - 20 (n>=1).
+* [A304388](http://oeis.org/A304388) ([L10 program](A304388.asm)): a(n) = 144*2^n - 20 (n>=1).
 * [A304504](http://oeis.org/A304504) ([L23 program](A304504.asm)): a(n) = 3*(3*n+1)*(9*n+8)/2.
 * [A304505](http://oeis.org/A304505) ([L15 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
 * [A304517](http://oeis.org/A304517) ([L07 program](A304517.asm)): a(n) = 16*2^n - 11 (n>=1).
@@ -111,11 +111,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321212](http://oeis.org/A321212) ([L13 program](A321212.asm)): Numbers that are congruent to {2, 3} mod 16.
 * [A321220](http://oeis.org/A321220) ([L10 program](A321220.asm)): a(n) = n+2 if n is even, otherwise a(n) = 2*n+1 if n is odd.
 * [A321237](http://oeis.org/A321237) ([L07 program](A321237.asm)): Start with a square of dimension 1 X 1, and repeatedly append along the squares of the previous step squares with half their side length that do not overlap with any prior square; a(n) gives the number of squares appended at n-th step.
-* [A321358](http://oeis.org/A321358) ([L08 program](A321358.asm)): a(n) = (2*4^n + 7)/3.
+* [A321358](http://oeis.org/A321358) ([L07 program](A321358.asm)): a(n) = (2*4^n + 7)/3.
 * [A321421](http://oeis.org/A321421) ([L08 program](A321421.asm)): a(n) = 10*(4^n - 1)/3 + 1.
-* [A321672](http://oeis.org/A321672) ([L13 program](A321672.asm)): Number of chiral pairs of rows of length 5 using up to n colors.
+* [A321672](http://oeis.org/A321672) ([L12 program](A321672.asm)): Number of chiral pairs of rows of length 5 using up to n colors.
 * [A321883](http://oeis.org/A321883) ([L06 program](A321883.asm)): Nonnegative integers n for which n! + 1 is not a square.
 * [A322042](http://oeis.org/A322042) ([L05 program](A322042.asm)): Maximum edge-distance of a point in the quotient graph E/nE from the origin (see A322041 for further information).
 * [A322489](http://oeis.org/A322489) ([L08 program](A322489.asm)): Numbers k such that k^k ends with 4.
 * [A322595](http://oeis.org/A322595) ([L09 program](A322595.asm)): a(n) = (n^3 + 9*n + 14*n + 9)/3.
 * [A323610](http://oeis.org/A323610) ([L13 program](A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
+* [A323824](http://oeis.org/A323824) ([L07 program](A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
