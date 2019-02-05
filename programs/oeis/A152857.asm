@@ -7,7 +7,6 @@ lpb $3,1
   lpb $2,1
     sub $2,3
     add $2,$3
-    sub $3,$3
     add $1,1
   lpe
   sub $3,5
