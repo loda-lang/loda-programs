@@ -26,6 +26,7 @@ Generator options:
   -p <number>      Maximum number of operations (default:40)
   -n <number>      Maximum constant (default:6)
   -i <number>      Maximum index (default:6)
+  -x               Optimize and overwrite existing programs
   -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,l:lpb/lpe)
   -a <string>      Operand types (default:cdi;c:constant,d:direct mem,i:indirect mem)
   -e <file>        Program template
@@ -80,7 +81,7 @@ If you would like to get updates on new programs, you can check out the [@lodami
 * [A200001-A300000](programs/oeis/list2.md)
 * [A300001-A400000](programs/oeis/list3.md)
 
-Total number of programs: 6343/319729 (1%)
+Total number of programs: 6518/319749 (2%)
 
 ![LODA Program Length Distribution](https://raw.githubusercontent.com/ckrause/loda/master/lengths.png)
 ![LODA Program Counts](https://raw.githubusercontent.com/ckrause/loda/master/counts.png)
