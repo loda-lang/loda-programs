@@ -3,11 +3,7 @@
 
 mov $1,1
 mov $2,$0
-mov $5,4
 lpb $2,1
-  lpb $0,1
-    add $4,$5
-  lpe
   add $3,1
   lpb $5,1
     add $0,$4

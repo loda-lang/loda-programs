@@ -12,9 +12,7 @@ mov $2,$4
 mov $0,1
 add $0,1
 mov $1,1
-add $3,2
-sub $4,$4
-add $3,2
+add $3,4
 add $0,$2
 lpb $2,1
   sub $2,1

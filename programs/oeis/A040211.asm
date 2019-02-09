@@ -9,8 +9,7 @@ mov $$0,4
 add $3,$1
 sub $$6,1
 add $6,$$5
-lpb $$0,6
-  sub $2,4
+lpb $$0,1
   lpb $3,1
     sub $0,$$6
     mov $$0,$0
