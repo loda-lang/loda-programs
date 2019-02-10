@@ -27,6 +27,7 @@ set terminal pngcairo font "arial,9" size 600,300
 set output 'lengths.png'
 set boxwidth 0.75
 set style fill solid
+set xrange [0:25]
 unset key
 set title "LODA Program Length Distribution"
 plot "lengths.dat" using 2:xtic(1) with boxes linecolor rgb "#0000FF"
@@ -53,6 +54,9 @@ set xdata time
 set timefmt "%Y-%m-%d %H:%M:%S"
 set format x "%b %Y"
 set xrange ["2018-09-20 00:00:00":*]
+set xtics "2018-09-20 00:00:00",2592000
+set grid ytics lc rgb "#bbbbbb" lw 1 lt 0
+set grid xtics lc rgb "#bbbbbb" lw 1 lt 0
 unset key
 set datafile separator ','
 set title "Number of LODA Programs"
