@@ -48,12 +48,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304504](http://oeis.org/A304504) ([L23 program](A304504.asm)): a(n) = 3*(3*n+1)*(9*n+8)/2.
 * [A304505](http://oeis.org/A304505) ([L15 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
 * [A304513](http://oeis.org/A304513) ([L13 program](A304513.asm)): a(n) = 57*2^(n-1) - 38 (n >= 1).
+* [A304514](http://oeis.org/A304514) ([L12 program](A304514.asm)): a(n) = 33*2^n - 45 (n>=1).
 * [A304517](http://oeis.org/A304517) ([L07 program](A304517.asm)): a(n) = 16*2^n - 11 (n>=1).
 * [A304519](http://oeis.org/A304519) ([L14 program](A304519.asm)): a(n) = 72*2^n -56 (n>=1).
 * [A304579](http://oeis.org/A304579) ([L13 program](A304579.asm)): a(n) = (n^2 + 1)*(n^2 + 2).
 * [A304605](http://oeis.org/A304605) ([L15 program](A304605.asm)): a(n) = 48*2^n + 26 (n>=1).
 * [A304659](http://oeis.org/A304659) ([L10 program](A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
 * [A304832](http://oeis.org/A304832) ([L16 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
+* [A304833](http://oeis.org/A304833) ([L22 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
 * [A304836](http://oeis.org/A304836) ([L09 program](A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304840](http://oeis.org/A304840) ([L12 program](A304840.asm)): a(n) = 52*n - 2 (n>=1).
 * [A304841](http://oeis.org/A304841) ([L20 program](A304841.asm)): a(n) = 67*n - 10 (n>=1).
@@ -95,6 +97,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317108](http://oeis.org/A317108) ([L03 program](A317108.asm)): Numbers missing from A317106.
 * [A317186](http://oeis.org/A317186) ([L09 program](A317186.asm)): One of many square spiral sequences: a(n) = n^2 + n - floor((n-1)/2).
 * [A317297](http://oeis.org/A317297) ([L08 program](A317297.asm)): a(n) = (n - 1)*(4*n^2 - 8*n + 5).
+* [A317298](http://oeis.org/A317298) ([L13 program](A317298.asm)): a(n) = (1/2)*(1 + (-1)^n + 2*n + 4*n^2).
 * [A317303](http://oeis.org/A317303) ([L10 program](A317303.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
 * [A317304](http://oeis.org/A317304) ([L10 program](A317304.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central valley.
 * [A317404](http://oeis.org/A317404) ([L07 program](A317404.asm)): a(n) = 3*n*(2^n - 1).
