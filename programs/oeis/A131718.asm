@@ -13,7 +13,6 @@ lpb $0,1
   sub $0,$5
   add $1,$0
   sub $1,2
-  sub $3,$3
   sub $1,$2
   add $1,1
   mov $4,$3
