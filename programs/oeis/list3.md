@@ -6,6 +6,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300069](http://oeis.org/A300069) ([L15 program](A300069.asm)): Period 6: repeat [0, 0, 0, 1, 2, 1].
 * [A300075](http://oeis.org/A300075) ([L13 program](A300075.asm)): Period 6: repeat [0, 1, 1, 2, 2, 2].
 * [A300076](http://oeis.org/A300076) ([L17 program](A300076.asm)): A sequence based on the period 6 sequence A300075.
+* [A300290](http://oeis.org/A300290) ([L16 program](A300290.asm)): Period 6: repeat [0, 1, 2, 2, 3, 3].
 * [A300293](http://oeis.org/A300293) ([L16 program](A300293.asm)): A sequence based on the period 6 sequence A151899.
 * [A300402](http://oeis.org/A300402) ([L07 program](A300402.asm)): Smallest integer i such that TREE(i) >= n.
 * [A300403](http://oeis.org/A300403) ([L05 program](A300403.asm)): Smallest integer i such that SSCG(i) >= n.
@@ -41,6 +42,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304158](http://oeis.org/A304158) ([L11 program](A304158.asm)): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
 * [A304161](http://oeis.org/A304161) ([L12 program](A304161.asm)): a(n) = 2*n^3 - 4*n^2 + 10*n - 2 (n>=1).
 * [A304163](http://oeis.org/A304163) ([L11 program](A304163.asm)): a(n) = 9*n^2 - 3*n + 1 with n>0.
+* [A304164](http://oeis.org/A304164) ([L12 program](A304164.asm)): a(n) = 27*n^2 - 21*n + 6 (n>=1).
 * [A304374](http://oeis.org/A304374) ([L21 program](A304374.asm)): a(n) = 9*n^2 + 21*n - 6 (n>=1).
 * [A304376](http://oeis.org/A304376) ([L20 program](A304376.asm)): a(n) = 60*2^n - 48 (n>=1).
 * [A304377](http://oeis.org/A304377) ([L14 program](A304377.asm)): a(n) = 102*2^n - 96 (n>=1).
