@@ -14,15 +14,10 @@ lpb $2,1
   lpb $4,1
     sub $3,3
     sub $4,$3
-    mov $5,0
     mov $1,1
     add $2,$6
   lpe
-  sub $4,3
   sub $2,1
-  lpb $5,1
-    add $5,4
-  lpe
   add $3,3
   lpb $6,1
     sub $1,$3
