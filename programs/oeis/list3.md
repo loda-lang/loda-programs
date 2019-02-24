@@ -96,9 +96,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306277](http://oeis.org/A306277) ([L12 program](A306277.asm)): Numbers congruent to 1 or 8 mod 10.
 * [A306285](http://oeis.org/A306285) ([L21 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
 * [A310565](http://oeis.org/A310565) ([L14 program](A310565.asm)): Coordination sequence Gal.4.82.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A311807](http://oeis.org/A311807) ([L21 program](A311807.asm)): Coordination sequence Gal.3.12.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312901](http://oeis.org/A312901) ([L14 program](A312901.asm)): Coordination sequence Gal.3.10.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312928](http://oeis.org/A312928) ([L18 program](A312928.asm)): Coordination sequence Gal.3.16.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313090](http://oeis.org/A313090) ([L22 program](A313090.asm)): Coordination sequence Gal.5.114.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313477](http://oeis.org/A313477) ([L17 program](A313477.asm)): Coordination sequence Gal.5.54.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313568](http://oeis.org/A313568) ([L13 program](A313568.asm)): Coordination sequence Gal.3.14.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314838](http://oeis.org/A314838) ([L20 program](A314838.asm)): Coordination sequence Gal.4.52.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315032](http://oeis.org/A315032) ([L14 program](A315032.asm)): Coordination sequence Gal.4.72.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -133,6 +135,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317637](http://oeis.org/A317637) ([L07 program](A317637.asm)): a(n) = n*(n+1)*(n+3).
 * [A318054](http://oeis.org/A318054) ([L11 program](A318054.asm)): a(n) = n*(n+1)*(n^2+n+22)/24.
 * [A318274](http://oeis.org/A318274) ([L12 program](A318274.asm)): Triangle read by rows: T(n,k) = n for 0 < k < n and T(n,0) = T(n,n) = 1.
+* [A318919](http://oeis.org/A318919) ([L16 program](A318919.asm)): Define b(0)=0, b(1)[1]=1, b(1)[2]=1; and for n>=2, b(n)[1] = total number of digits in b(n-1), and b(n)[2] = total number of digits in b(0),...,b(n-1); a(n) = b(n)[2].
 * [A319127](http://oeis.org/A319127) ([L09 program](A319127.asm)): Crossing number of the complete bipartite graph K_{6,n}.
 * [A319279](http://oeis.org/A319279) ([L16 program](A319279.asm)): Numbers that are congruent to {0, 3, 7, 10} mod 12.
 * [A319280](http://oeis.org/A319280) ([L16 program](A319280.asm)): Numbers that are congruent to {0, 4, 7, 11} mod 12.
@@ -158,6 +161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321421](http://oeis.org/A321421) ([L08 program](A321421.asm)): a(n) = 10*(4^n - 1)/3 + 1.
 * [A321499](http://oeis.org/A321499) ([L12 program](A321499.asm)): Numbers of the form (x - y)(x^2 - y^2) with x > y > 0.
 * [A321501](http://oeis.org/A321501) ([L12 program](A321501.asm)): Numbers not of the form (x - y)(x^2 - y^2) with x > y > 0; complement of A321499.
+* [A321643](http://oeis.org/A321643) ([L18 program](A321643.asm)): a(n) = 5*2^n - (-1)^n.
 * [A321672](http://oeis.org/A321672) ([L12 program](A321672.asm)): Number of chiral pairs of rows of length 5 using up to n colors.
 * [A321883](http://oeis.org/A321883) ([L06 program](A321883.asm)): Nonnegative integers n for which n! + 1 is not a square.
 * [A322042](http://oeis.org/A322042) ([L05 program](A322042.asm)): Maximum edge-distance of a point in the quotient graph E/nE from the origin (see A322041 for further information).
