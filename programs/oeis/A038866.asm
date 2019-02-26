@@ -4,19 +4,17 @@
 add $0,1
 add $0,$0
 add $0,4
-add $5,2
-add $4,$5
-add $5,$4
+add $3,2
+add $4,$3
+add $3,$4
 lpb $0,1
   add $4,6
-  add $3,$4
   add $2,5
-  add $2,$5
+  add $2,$3
   sub $0,1
   mov $1,$2
   add $1,4
-  mov $5,$4
+  mov $3,$4
   sub $2,4
 lpe
-sub $5,$3
 add $1,6
