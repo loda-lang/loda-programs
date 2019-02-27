@@ -11,7 +11,6 @@ add $2,$0
 mov $0,$4
 mov $6,1
 add $0,$6
-sub $6,1
 mov $6,$2
 mov $5,$6
 sub $0,1
