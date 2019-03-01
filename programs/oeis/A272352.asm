@@ -1,0 +1,14 @@
+; A272352: a(n) is the number of ways of putting n labeled balls into 2 indistinguishable boxes such that each box contains at least 3 balls.
+; 10,35,91,210,456,957,1969,4004,8086,16263,32631,65382,130900,261953,524077,1048344,2096898,4194027,8388307,16776890,33554080,67108485,134217321,268435020,536870446,1073741327,2147483119,4294966734,8589933996,17179868553
+
+mov $3,3
+add $0,4
+lpb $0,1
+  mov $1,$2
+  sub $0,1
+  add $2,$1
+  add $4,$3
+  add $2,4
+  add $4,$0
+lpe
+sub $1,$4
