@@ -31,6 +31,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302255](http://oeis.org/A302255) ([L11 program](A302255.asm)): Total domination number of the n-antiprism graph.
 * [A302402](http://oeis.org/A302402) ([L04 program](A302402.asm)): Total domination number of the n-ladder graph.
 * [A302404](http://oeis.org/A302404) ([L12 program](A302404.asm)): Total domination number of the n-Moebius ladder.
+* [A302405](http://oeis.org/A302405) ([L17 program](A302405.asm)): Total domination number of the n-prism graph.
 * [A302406](http://oeis.org/A302406) ([L11 program](A302406.asm)): Total domination number of the n X n torus grid graph.
 * [A302488](http://oeis.org/A302488) ([L08 program](A302488.asm)): Total domination number of the n X n grid graph.
 * [A302507](http://oeis.org/A302507) ([L07 program](A302507.asm)): a(n) = 4*(3^n-1).
@@ -129,6 +130,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317298](http://oeis.org/A317298) ([L13 program](A317298.asm)): a(n) = (1/2)*(1 + (-1)^n + 2*n + 4*n^2).
 * [A317303](http://oeis.org/A317303) ([L10 program](A317303.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
 * [A317304](http://oeis.org/A317304) ([L10 program](A317304.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central valley.
+* [A317311](http://oeis.org/A317311) ([L14 program](A317311.asm)): Multiples of 11 and odd numbers interleaved.
 * [A317314](http://oeis.org/A317314) ([L16 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
 * [A317404](http://oeis.org/A317404) ([L07 program](A317404.asm)): a(n) = 3*n*(2^n - 1).
 * [A317405](http://oeis.org/A317405) ([L08 program](A317405.asm)): a(n) = n * A001353(n).
