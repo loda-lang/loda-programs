@@ -628,6 +628,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A128543](http://oeis.org/A128543) ([L09 program](A128543.asm)): Floor(2^(n-2)*3*n).
 * [A128588](http://oeis.org/A128588) ([L10 program](A128588.asm)): A007318 * A128587.
 * [A128624](http://oeis.org/A128624) ([L13 program](A128624.asm)): Row sums of A128623.
+* [A128625](http://oeis.org/A128625) ([L15 program](A128625.asm)): Expansion of (1+3x)/(1-5x).
 * [A128782](http://oeis.org/A128782) ([L12 program](A128782.asm)): n^2*4^n.
 * [A128789](http://oeis.org/A128789) ([L14 program](A128789.asm)): n^3*2^n.
 * [A128790](http://oeis.org/A128790) ([L16 program](A128790.asm)): n^3*4^n.
@@ -1256,11 +1257,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A146763](http://oeis.org/A146763) ([L08 program](A146763.asm)): Rank of terms ending in 0 in A061039.
 * [A146882](http://oeis.org/A146882) ([L07 program](A146882.asm)): a(n) = 5*(4^(n+1)-1)/3.
 * [A146883](http://oeis.org/A146883) ([L13 program](A146883.asm)): a(n) = 6 * Sum_{m=0..n} 5^m.
+* [A146884](http://oeis.org/A146884) ([L13 program](A146884.asm)): Sum of power terms sequence: a(n)=Sum[7*6^m, {m, 0, n}].
 * [A146951](http://oeis.org/A146951) ([L07 program](A146951.asm)): Rank of terms of A061047 ending in with 0.
 * [A146963](http://oeis.org/A146963) ([L10 program](A146963.asm)): a(n) = ((3 + sqrt(7))^n + (3 - sqrt(7))^n)/2.
 * [A147296](http://oeis.org/A147296) ([L07 program](A147296.asm)): n*(9*n+2).
 * [A147534](http://oeis.org/A147534) ([L06 program](A147534.asm)): a(n) is congruent to (1,1,2) mod 3.
 * [A147587](http://oeis.org/A147587) ([L05 program](A147587.asm)): a(n) = 14*n + 7.
+* [A147595](http://oeis.org/A147595) ([L15 program](A147595.asm)): a(n) is the number whose binary representation is A138144(n).
 * [A147623](http://oeis.org/A147623) ([L06 program](A147623.asm)): The 3rd Witt transform of A040000.
 * [A147651](http://oeis.org/A147651) ([L08 program](A147651.asm)): First trisection of A028560.
 * [A147656](http://oeis.org/A147656) ([L07 program](A147656.asm)): The arithmetic mean of the n-th and (n+1)-st cubes, rounded down.
@@ -1592,6 +1595,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160842](http://oeis.org/A160842) ([L06 program](A160842.asm)): Number of lines through at least 2 points of a 2 X n grid of points.
 * [A160912](http://oeis.org/A160912) ([L06 program](A160912.asm)): [1, 3, 5, 7,...] convolved with [1, 4, 0, 0, 0,...]
 * [A160941](http://oeis.org/A160941) ([L09 program](A160941.asm)): a(n)= n - digital sum(n-1)
+* [A161168](http://oeis.org/A161168) ([L14 program](A161168.asm)): a(n) = 2^n + 4^n.
 * [A161205](http://oeis.org/A161205) ([L09 program](A161205.asm)): Triangle read by rows in which row n lists 2n-1 followed by 2n numbers 2n.
 * [A161339](http://oeis.org/A161339) ([L08 program](A161339.asm)): Partial sums of A161205.
 * [A161365](http://oeis.org/A161365) ([L06 program](A161365.asm)): a(n) = 3/2 + 5*n - 5*(-1)^n/2.
@@ -1765,6 +1769,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166150](http://oeis.org/A166150) ([L08 program](A166150.asm)): a(n) = 5n^2 + 5n - 9.
 * [A166151](http://oeis.org/A166151) ([L07 program](A166151.asm)): (5n^2 + 5n - 6)/2.
 * [A166154](http://oeis.org/A166154) ([L07 program](A166154.asm)): 7*n*(n+1)/2 - 5.
+* [A166304](http://oeis.org/A166304) ([L17 program](A166304.asm)): Third trisection of A022998.
 * [A166444](http://oeis.org/A166444) ([L07 program](A166444.asm)): a(0) = 0, a(1) = 1 and for n > 1, a(n) = sum of all previous terms.
 * [A166447](http://oeis.org/A166447) ([L06 program](A166447.asm)): a(n) = n*round(sqrt(n)).
 * [A166464](http://oeis.org/A166464) ([L08 program](A166464.asm)): a(n) = (3+2n+6n^2+4n^3)/3.
@@ -2296,6 +2301,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180446](http://oeis.org/A180446) ([L07 program](A180446.asm)): Number of non-pentagonal numbers <= n.
 * [A180447](http://oeis.org/A180447) ([L06 program](A180447.asm)): n appears 3n+1 times.
 * [A180486](http://oeis.org/A180486) ([L04 program](A180486.asm)): Ceiling(A179896 / n) for n > 0 and remainder <> 0.
+* [A180516](http://oeis.org/A180516) ([L18 program](A180516.asm)): Numbers of the form i*4^j-1 (i=1..3, j >= 0).
 * [A180569](http://oeis.org/A180569) ([L14 program](A180569.asm)): The Wiener index of the P_3 x P_n grid, where P_m is the path graph on m nodes. The Wiener index of a connected graph is the sum of distances between all unordered pairs of nodes in the graph.
 * [A180577](http://oeis.org/A180577) ([L21 program](A180577.asm)): The Wiener index of the windmill graph D(6,n). The windmill graph D(m,n) is the graph obtained by taking n copies of the complete graph K_m with a vertex in common (i.e., a bouquet of n pieces of K_m graphs).
 * [A180579](http://oeis.org/A180579) ([L24 program](A180579.asm)): The Wiener index of the Dutch windmill graph D(5,n) (n>=1).
@@ -2577,6 +2583,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192447](http://oeis.org/A192447) ([L07 program](A192447.asm)): n*(n-1)/2 if this is even, otherwise (n*(n-1)/2)+1
 * [A192544](http://oeis.org/A192544) ([L04 program](A192544.asm)): Number bases n such that all integers m having the commuting property r(m)^2=r(m^2), where r is cyclic replacement of digits d->(d+1) mod n, are of the form m=A^kB, where B=n/2, A=B-1, and 0<=k<=n-3.
 * [A192746](http://oeis.org/A192746) ([L12 program](A192746.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined below in Comments.
+* [A192747](http://oeis.org/A192747) ([L11 program](A192747.asm)): Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
 * [A192748](http://oeis.org/A192748) ([L12 program](A192748.asm)): Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
 * [A192749](http://oeis.org/A192749) ([L10 program](A192749.asm)): Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
 * [A192750](http://oeis.org/A192750) ([L13 program](A192750.asm)): Define a pair of sequences c_n, d_n by c_0=0, d_0=1 and thereafter c_n = c_{n-1}+d_{n-1}, d_n = c_{n-1}+4*n+2; sequence here is d_n.
