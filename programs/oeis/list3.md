@@ -36,6 +36,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302488](http://oeis.org/A302488) ([L08 program](A302488.asm)): Total domination number of the n X n grid graph.
 * [A302507](http://oeis.org/A302507) ([L07 program](A302507.asm)): a(n) = 4*(3^n-1).
 * [A302537](http://oeis.org/A302537) ([L06 program](A302537.asm)): a(n) = (n^2 + 13*n + 2)/2.
+* [A302647](http://oeis.org/A302647) ([L18 program](A302647.asm)): a(n) = (2*n^2*(n^2 - 3) - (2*n^2 + 1)*(-1)^n + 1)/64.
 * [A302650](http://oeis.org/A302650) ([L09 program](A302650.asm)): Number of minimal total dominating sets in the n-barbell graph.
 * [A302689](http://oeis.org/A302689) ([L07 program](A302689.asm)): a(n) = 4 + 2^n - 4*n.
 * [A302709](http://oeis.org/A302709) ([L12 program](A302709.asm)): a(n) = Trinomial(2*n+1, 4) = (1/6)*n*(2*n + 1)*(2*n^2 + 9*n + 1), n >= 0.
