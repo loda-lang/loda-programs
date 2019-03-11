@@ -198,3 +198,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323824](http://oeis.org/A323824) ([L07 program](A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
 * [A324015](http://oeis.org/A324015) ([L10 program](A324015.asm)): Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
 * [A324172](http://oeis.org/A324172) ([L11 program](A324172.asm)): Number of subsets of {1,...,n} that cross their complement.
+* [A324560](http://oeis.org/A324560) ([L12 program](A324560.asm)): Numbers > 1 where the minimum prime index is less than or equal to the number of prime factors counted with multiplicity.

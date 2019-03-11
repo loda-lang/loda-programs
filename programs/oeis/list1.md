@@ -102,6 +102,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102446](http://oeis.org/A102446) ([L10 program](A102446.asm)): a(n) = a(n-1) + 4*a(n-2) for n>1, a(0) = a(1) = 2.
 * [A102515](http://oeis.org/A102515) ([L08 program](A102515.asm)): a(n) = floor(1 + sqrt(2n + 1)).
 * [A102518](http://oeis.org/A102518) ([L09 program](A102518.asm)): a(n) = Sum_{k=0..n} binomial(n, k) * Sum_{j=0..k} binomial(3k, 3j).
+* [A102572](http://oeis.org/A102572) ([L16 program](A102572.asm)): a(n) = floor(log_4(n)).
 * [A102591](http://oeis.org/A102591) ([L14 program](A102591.asm)): a(n)=sum k=0..n, C(2n+1,2k)3^(n-k).
 * [A102603](http://oeis.org/A102603) ([L07 program](A102603.asm)): 24n + 21.
 * [A102860](http://oeis.org/A102860) ([L07 program](A102860.asm)): Number of ways to change three non-identical letters in the word aabbccdd..., where there are n types of letters.
@@ -546,6 +547,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123720](http://oeis.org/A123720) ([L07 program](A123720.asm)): a(n) = 2^n + 2^(n-1) - n.
 * [A123753](http://oeis.org/A123753) ([L09 program](A123753.asm)): Partial sums of A070941.
 * [A123860](http://oeis.org/A123860) ([L10 program](A123860.asm)): Ceil( (7+sqrt(49+24*n))/2 ).
+* [A123865](http://oeis.org/A123865) ([L17 program](A123865.asm)): a(n) = n^4 - 1.
 * [A123919](http://oeis.org/A123919) ([L09 program](A123919.asm)): Number of numbers congruent to 2 or 4 mod 6 and <= n.
 * [A123932](http://oeis.org/A123932) ([L03 program](A123932.asm)): a(0)=1, a(n)=4 for n>0.
 * [A124011](http://oeis.org/A124011) ([L06 program](A124011.asm)): Add three, add six, add nine, ....
@@ -909,6 +911,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133546](http://oeis.org/A133546) ([L12 program](A133546.asm)): Binomial transform of [1,3,5,6,7,8,9,10,11,...] (i.e., positive integers except 2 and 4).
 * [A133572](http://oeis.org/A133572) ([L17 program](A133572.asm)): Row sums of triangle A133571.
 * [A133622](http://oeis.org/A133622) ([L09 program](A133622.asm)): a(n)=1 if n is odd, a(n)=n/2+1 if n is even.
+* [A133648](http://oeis.org/A133648) ([L24 program](A133648.asm)): a(n) = 2*3^n + 3^(n-1) - (n+1).
 * [A133653](http://oeis.org/A133653) ([L05 program](A133653.asm)): A007318^(-1) * A003261.
 * [A133654](http://oeis.org/A133654) ([L10 program](A133654.asm)): a(n) = 2*A000129(n) - 1.
 * [A133655](http://oeis.org/A133655) ([L06 program](A133655.asm)): a(n) = 2*A016777(n) + A016777(n-1) - (n+1).
@@ -1562,6 +1565,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158540](http://oeis.org/A158540) ([L15 program](A158540.asm)): a(n) = 22*n^2 - 1.
 * [A158544](http://oeis.org/A158544) ([L17 program](A158544.asm)): a(n) = 24*n^2 - 1.
 * [A158547](http://oeis.org/A158547) ([L10 program](A158547.asm)): a(n) = 24*n^2 + 1.
+* [A158549](http://oeis.org/A158549) ([L14 program](A158549.asm)): a(n) = 26*n^2 + 1.
 * [A158555](http://oeis.org/A158555) ([L20 program](A158555.asm)): a(n) = 196*n^2 + 14.
 * [A158556](http://oeis.org/A158556) ([L10 program](A158556.asm)): a(n) = 28*n^2 + 1.
 * [A158558](http://oeis.org/A158558) ([L20 program](A158558.asm)): a(n) = 30n^2 + 1.
@@ -1618,6 +1622,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160544](http://oeis.org/A160544) ([L10 program](A160544.asm)): Not divisible by 19.
 * [A160749](http://oeis.org/A160749) ([L10 program](A160749.asm)): a(n) = (11*n^2 + 19*n + 10)/2.
 * [A160755](http://oeis.org/A160755) ([L04 program](A160755.asm)): Number of correct digits of the MRB constant derived from the sequence of partial sums up to m=10^n terms as defined by S[n]= Sum[(-1)^k*(k^(1/k)-1),{k,m}].
+* [A160765](http://oeis.org/A160765) ([L16 program](A160765.asm)): Expansion of (1+13*x+32*x^2+13*x^3+x^4)/(1-x)^5.
 * [A160805](http://oeis.org/A160805) ([L07 program](A160805.asm)): a(n) = (2*n^3 + 9*n^2 + n + 24) / 6.
 * [A160811](http://oeis.org/A160811) ([L16 program](A160811.asm)): Numbers not dividing 24.
 * [A160842](http://oeis.org/A160842) ([L06 program](A160842.asm)): Number of lines through at least 2 points of a 2 X n grid of points.
@@ -2033,6 +2038,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169634](http://oeis.org/A169634) ([L09 program](A169634.asm)): a(n) = 3*7^n.
 * [A169695](http://oeis.org/A169695) ([L14 program](A169695.asm)): a(n) = 1 if n is a square, otherwise a(n) = 2.
 * [A169721](http://oeis.org/A169721) ([L11 program](A169721.asm)): a(n) = (2*(3*2^(n-1)-1))^2.
+* [A169727](http://oeis.org/A169727) ([L10 program](A169727.asm)): a(n) = 3*(2^(n+1)-2)*(2^(n+1)-1) + 1.
 * [A169801](http://oeis.org/A169801) ([L13 program](A169801.asm)): a(n) = ((n-1)^2*n^2*(n+1)^2)/6 - 2*Sum_{l=2..n}Sum_{k=2..n}(n-k+1)*(n-l+1)*(k-1)*(l-1).
 * [A169805](http://oeis.org/A169805) ([L14 program](A169805.asm)): Twice the sum of the digits of n.
 * [A169823](http://oeis.org/A169823) ([L07 program](A169823.asm)): Multiples of 60.
@@ -2417,6 +2423,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183219](http://oeis.org/A183219) ([L12 program](A183219.asm)): Complement of the heptagonal (7-gonal) numbers.
 * [A183220](http://oeis.org/A183220) ([L08 program](A183220.asm)): Complement of the octagonal numbers.
 * [A183221](http://oeis.org/A183221) ([L14 program](A183221.asm)): Complement of the 9-gonal numbers.
+* [A183222](http://oeis.org/A183222) ([L13 program](A183222.asm)): Complement of the 10-gonal numbers.
 * [A183292](http://oeis.org/A183292) ([L10 program](A183292.asm)): Complement of A055999.
 * [A183293](http://oeis.org/A183293) ([L08 program](A183293.asm)): Complement of A056000.
 * [A183294](http://oeis.org/A183294) ([L08 program](A183294.asm)): Complement of A005449.
@@ -2524,6 +2531,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186683](http://oeis.org/A186683) ([L07 program](A186683.asm)): Total number of n-digit numbers requiring 18 positive biquadrates in their representation as sum of biquadrates.
 * [A186684](http://oeis.org/A186684) ([L05 program](A186684.asm)): Total number of positive integers below 10^n requiring 19 positive biquadrates in their representation as sum of biquadrates.
 * [A186685](http://oeis.org/A186685) ([L02 program](A186685.asm)): Total number of n-digit numbers requiring 19 positive biquadrates in their representation as sum of biquadrates.
+* [A186862](http://oeis.org/A186862) ([L10 program](A186862.asm)): Number of 3-step king's tours on an n X n board summed over all starting positions
 * [A186948](http://oeis.org/A186948) ([L11 program](A186948.asm)): a(n) = 3^n - 2*n.
 * [A186949](http://oeis.org/A186949) ([L06 program](A186949.asm)): a(n)=2^n-2*C(1,n)+2*C(0,n).
 * [A187107](http://oeis.org/A187107) ([L10 program](A187107.asm)): Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
