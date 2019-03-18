@@ -4,7 +4,6 @@
 add $1,1
 lpb $0,1
   mov $4,$0
-  sub $0,$0
   sub $3,$2
   mov $5,$1
   add $6,3
