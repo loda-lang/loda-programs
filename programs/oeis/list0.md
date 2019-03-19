@@ -1436,6 +1436,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A030556](http://oeis.org/A030556) ([L07 program](A030556.asm)): run length of n-th run of digit 0 in A030548.
 * [A030575](http://oeis.org/A030575) ([L07 program](A030575.asm)): run length of n-th run of digit 0 in A030567.
 * [A030653](http://oeis.org/A030653) ([L11 program](A030653.asm)): n^3*a(n) is number of circles in complex projective plane tangent to three smooth curves of degree n in general position.
+* [A030696](http://oeis.org/A030696) ([L11 program](A030696.asm)): Cube root of A030695.
 * [A030978](http://oeis.org/A030978) ([L11 program](A030978.asm)): Maximal number of non-attacking knights on an n X n board.
 * [A031193](http://oeis.org/A031193) ([L04 program](A031193.asm)): Numbers having period-22 5-digitized sequences.
 * [A031506](http://oeis.org/A031506) ([L11 program](A031506.asm)): Number of consecutive integers placed in n bins under a certain packing scheme.
@@ -1722,6 +1723,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040272](http://oeis.org/A040272) ([L07 program](A040272.asm)): Continued fraction for sqrt(290).
 * [A040306](http://oeis.org/A040306) ([L06 program](A040306.asm)): Continued fraction for sqrt(325).
 * [A040342](http://oeis.org/A040342) ([L06 program](A040342.asm)): Continued fraction for sqrt(362).
+* [A040360](http://oeis.org/A040360) ([L23 program](A040360.asm)): Continued fraction for sqrt(380).
 * [A040380](http://oeis.org/A040380) ([L07 program](A040380.asm)): Continued fraction for sqrt(401).
 * [A040420](http://oeis.org/A040420) ([L06 program](A040420.asm)): Continued fraction for sqrt(442).
 * [A040462](http://oeis.org/A040462) ([L06 program](A040462.asm)): Continued fraction for sqrt(485).
@@ -2239,6 +2241,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048694](http://oeis.org/A048694) ([L10 program](A048694.asm)): Generalized Pellian with second term equal to 7.
 * [A048695](http://oeis.org/A048695) ([L21 program](A048695.asm)): Generalized Pellian with second term equal to 8.
 * [A048696](http://oeis.org/A048696) ([L11 program](A048696.asm)): Generalized Pellian with second term equal to 9.
+* [A048697](http://oeis.org/A048697) ([L17 program](A048697.asm)): Generalized Pellian with second term equal to 10.
 * [A048739](http://oeis.org/A048739) ([L21 program](A048739.asm)): Expansion of 1/((1 - x)*(1 - 2*x - x^2)).
 * [A048745](http://oeis.org/A048745) ([L09 program](A048745.asm)): Partial sums of A048654.
 * [A048746](http://oeis.org/A048746) ([L15 program](A048746.asm)): Partial sums of A048655.
@@ -3327,7 +3330,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084382](http://oeis.org/A084382) ([L08 program](A084382.asm)): a(n) = n^3 + 6.
 * [A084508](http://oeis.org/A084508) ([L12 program](A084508.asm)): Partial sums of A084509. Positions of ones in the first differences of A084506.
 * [A084509](http://oeis.org/A084509) ([L12 program](A084509.asm)): Number of ground-state 3-ball juggling sequences of period n.
+* [A084515](http://oeis.org/A084515) ([L14 program](A084515.asm)): Partial sums of A084516.
 * [A084537](http://oeis.org/A084537) ([L06 program](A084537.asm)): Duplicate of A002061.
+* [A084558](http://oeis.org/A084558) ([L13 program](A084558.asm)): a(0) = 0; for n >= 1: a(n) = largest m such that n >= m!.
 * [A084634](http://oeis.org/A084634) ([L08 program](A084634.asm)): Binomial transform of 1,1,1,2,2,2,2,...
 * [A084639](http://oeis.org/A084639) ([L10 program](A084639.asm)): Expansion of x*(1+2*x)/((1+x)*(1-x)*(1-2*x)).
 * [A084640](http://oeis.org/A084640) ([L10 program](A084640.asm)): Generalized Jacobsthal numbers.
