@@ -30,6 +30,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301995](http://oeis.org/A301995) ([L07 program](A301995.asm)): Number of nX4 0..1 arrays with every element equal to 1, 2 or 4 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A302254](http://oeis.org/A302254) ([L13 program](A302254.asm)): Exponent of the group of the Gaussian integers in a reduced system modulo (1+i)^n.
 * [A302255](http://oeis.org/A302255) ([L11 program](A302255.asm)): Total domination number of the n-antiprism graph.
+* [A302302](http://oeis.org/A302302) ([L08 program](A302302.asm)): Number of triples (i,j,k) such that i+j+k > 0 with -n <= i,j,k <= n.
 * [A302402](http://oeis.org/A302402) ([L04 program](A302402.asm)): Total domination number of the n-ladder graph.
 * [A302404](http://oeis.org/A302404) ([L12 program](A302404.asm)): Total domination number of the n-Moebius ladder.
 * [A302405](http://oeis.org/A302405) ([L17 program](A302405.asm)): Total domination number of the n-prism graph.
@@ -166,6 +167,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319572](http://oeis.org/A319572) ([L16 program](A319572.asm)): The x coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
 * [A319610](http://oeis.org/A319610) ([L21 program](A319610.asm)): a(n) is the minimal number of successive OFF cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
 * [A319702](http://oeis.org/A319702) ([L17 program](A319702.asm)): Filter sequence for sequences that are constant for all even terms >= 2.
+* [A320007](http://oeis.org/A320007) ([L21 program](A320007.asm)): If there is k >= 0 such that floor(n/4^k) is odd and A320006(k) is 1, then a(n) = 1, otherwise a(n) = 0.
 * [A320226](http://oeis.org/A320226) ([L17 program](A320226.asm)): Number of integer partitions of n whose non-1 parts are all equal.
 * [A320259](http://oeis.org/A320259) ([L05 program](A320259.asm)): Terms that are on the y-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
 * [A320281](http://oeis.org/A320281) ([L06 program](A320281.asm)): Terms that are on the positive x-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
