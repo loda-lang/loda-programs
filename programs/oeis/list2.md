@@ -44,6 +44,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204164](http://oeis.org/A204164) ([L07 program](A204164.asm)): Symmetric matrix based on f(i,j)=floor[(i+j)/2], by antidiagonals.
 * [A204166](http://oeis.org/A204166) ([L07 program](A204166.asm)): Symmetric matrix based on f(i,j)=ceiling[(i+j)/2], by antidiagonals.
 * [A204200](http://oeis.org/A204200) ([L08 program](A204200.asm)): INVERT transform of [1, 0, 1, 3, 9, 27, 81, ...].
+* [A204267](http://oeis.org/A204267) ([L17 program](A204267.asm)): Symmetric matrix: f(i,j)=(i+j+1 mod 3), by antidiagonals.
 * [A204418](http://oeis.org/A204418) ([L06 program](A204418.asm)): Periodic sequence 1,0,1,... , arranged in a triangle.
 * [A204454](http://oeis.org/A204454) ([L13 program](A204454.asm)): Odd numbers not divisible by 11.
 * [A204457](http://oeis.org/A204457) ([L17 program](A204457.asm)): Odd numbers not divisible by 13.
@@ -660,6 +661,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247061](http://oeis.org/A247061) ([L22 program](A247061.asm)): Dynamic Betting Game D(n,5,1).
 * [A247160](http://oeis.org/A247160) ([L10 program](A247160.asm)): Dynamic Betting Game D(n,4,3).
 * [A247188](http://oeis.org/A247188) ([L15 program](A247188.asm)): a(0) = 0. a(n) is the number of repeating sums in the collection of all sums of any k elements in [a(0), ... a(n-1)] chosen without replacement for 2 <= k <= n.
+* [A247281](http://oeis.org/A247281) ([L13 program](A247281.asm)): 4^n -(-1)^n.
 * [A247328](http://oeis.org/A247328) ([L03 program](A247328.asm)): Odd deficient numbers.
 * [A247375](http://oeis.org/A247375) ([L07 program](A247375.asm)): Numbers n such that floor(n/2) is a square.
 * [A247541](http://oeis.org/A247541) ([L08 program](A247541.asm)): 7*n^2 + 1.
@@ -734,6 +736,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253679](http://oeis.org/A253679) ([L12 program](A253679.asm)): Numbers a(n) that are the starting terms in the sum of an odd number of consecutive cubes equal to a square.
 * [A253811](http://oeis.org/A253811) ([L15 program](A253811.asm)): Part of the y solutions of the Pell equation x^2 - 2*y^2 = +7.
 * [A253909](http://oeis.org/A253909) ([L07 program](A253909.asm)): 1 together with the positive squares.
+* [A254006](http://oeis.org/A254006) ([L12 program](A254006.asm)): a(0) = 1, a(n) = 3*a(n-2) if n mod 2 = 0, otherwise a(n) = 0.
 * [A254371](http://oeis.org/A254371) ([L15 program](A254371.asm)): Sum of cubes of the first n even numbers (A016743).
 * [A254398](http://oeis.org/A254398) ([L16 program](A254398.asm)): Final digits of A237424 in decimal representation.
 * [A254407](http://oeis.org/A254407) ([L07 program](A254407.asm)): a(n) = n*(n+1)*(11*n+10)/6.
@@ -741,6 +744,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254527](http://oeis.org/A254527) ([L08 program](A254527.asm)): Total number of points on a sphere when both poles are on an x by x grid where x=8*n+1.
 * [A254667](http://oeis.org/A254667) ([L02 program](A254667.asm)): The nonnegative numbers with 2 instead of 1.
 * [A254745](http://oeis.org/A254745) ([L08 program](A254745.asm)): Chebyshev polynomials of the second kind, U(n,x)^2, evaluated at x = sqrt(3)/2.
+* [A254758](http://oeis.org/A254758) ([L12 program](A254758.asm)): Part of the positive proper solutions x of the Pell equation x^2 - 2*y^2 = - 7^2 based on the fundamental solution (x0, y0)= (1, 5).
 * [A254963](http://oeis.org/A254963) ([L06 program](A254963.asm)): a(n) = n*(11*n + 3)/2.
 * [A255043](http://oeis.org/A255043) ([L13 program](A255043.asm)): a(n) = (5*9^n - 1)/2.
 * [A255047](http://oeis.org/A255047) ([L07 program](A255047.asm)): 1 together with the positive terms of A000225.
@@ -1454,6 +1458,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296900](http://oeis.org/A296900) ([L02 program](A296900.asm)): Numbers n whose base-16 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
 * [A296903](http://oeis.org/A296903) ([L02 program](A296903.asm)): Numbers n whose base-20 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
 * [A296906](http://oeis.org/A296906) ([L02 program](A296906.asm)): Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+* [A296910](http://oeis.org/A296910) ([L23 program](A296910.asm)): a(0)=1, a(1)=4; thereafter a(n) = 4*n-2*(-1)^n.
 * [A296953](http://oeis.org/A296953) ([L07 program](A296953.asm)): Number of bisymmetric, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
 * [A296954](http://oeis.org/A296954) ([L08 program](A296954.asm)): Expansion of x*(1 - x + 4*x^2) / ((1 - x)*(1 - 2*x)).
 * [A296965](http://oeis.org/A296965) ([L07 program](A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).

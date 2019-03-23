@@ -83,6 +83,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101776](http://oeis.org/A101776) ([L07 program](A101776.asm)): Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
 * [A101825](http://oeis.org/A101825) ([L07 program](A101825.asm)): G.f.: x*(1+x)^2/(1-x^3).
 * [A101853](http://oeis.org/A101853) ([L10 program](A101853.asm)): a(n) = n*(20+15*n+n^2)/6.
+* [A101854](http://oeis.org/A101854) ([L13 program](A101854.asm)): a(n) = n*(n+1)*(n^2+21*n+50)/24.
 * [A101859](http://oeis.org/A101859) ([L05 program](A101859.asm)): a(n) = 11 + (23*n)/2 + n^2/2.
 * [A101860](http://oeis.org/A101860) ([L13 program](A101860.asm)): a(n) = (3+n)*(2 + 33*n + n^2)/6.
 * [A101879](http://oeis.org/A101879) ([L10 program](A101879.asm)): a(0) = 1, a(1) = 1, a(2) = 2; for n > 2, a(n) = 5*a(n-1) - 5*a(n-2) + a(n-3).
@@ -168,6 +169,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105150](http://oeis.org/A105150) ([L13 program](A105150.asm)): Approximation to leading digit of n-th Fibonacci number.
 * [A105163](http://oeis.org/A105163) ([L08 program](A105163.asm)): a(n) = (n^3 - 7*n + 12)/6.
 * [A105198](http://oeis.org/A105198) ([L10 program](A105198.asm)): a(n) = n(n+1)/2 mod 4.
+* [A105206](http://oeis.org/A105206) ([L24 program](A105206.asm)): Number of edges in a pancyclic graph on n+2 vertices with the fewest possible edges.
 * [A105279](http://oeis.org/A105279) ([L12 program](A105279.asm)): a(0)=0; a(n) = 10*a(n-1) + 10.
 * [A105281](http://oeis.org/A105281) ([L08 program](A105281.asm)): a(0)=0; a(n)=6*a(n-1)+6.
 * [A105332](http://oeis.org/A105332) ([L14 program](A105332.asm)): a(n) = n*(n+1)/2 mod 8.
@@ -295,6 +297,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A111277](http://oeis.org/A111277) ([L11 program](A111277.asm)): Number of permutations avoiding the patterns {2413,4213,2431,4231,4321}; also number of permutations avoiding the patterns {3142,3412,3421,4312,4321}; number of weak sorting class based on 2413 or 3142.
 * [A111282](http://oeis.org/A111282) ([L08 program](A111282.asm)): Number of permutations avoiding the patterns {1432,2431,3412,3421,4132,4231,4312,4321}; number of strong sorting class based on 1432.
 * [A111284](http://oeis.org/A111284) ([L05 program](A111284.asm)): Number of permutations of [n] avoiding the patterns {2143, 2341, 2413, 2431, 3142, 3241, 3412, 3421, 4123, 4213, 4231, 4321, 4132, 4312}; number of strong sorting classes based on 2143.
+* [A111285](http://oeis.org/A111285) ([L08 program](A111285.asm)): Number of permutations avoiding the patterns {2431, 3421, 4231, 4321, 24513, 42513, 34512, 43512}; number of strong sorting class based on 2431.
 * [A111286](http://oeis.org/A111286) ([L09 program](A111286.asm)): Number of permutations avoiding the patterns {1342, 1432, 2341, 2431, 3142, 3241, 3412, 3421, 4132, 4231, 4312, 4321}; number of strong sorting class based on 1342.
 * [A111314](http://oeis.org/A111314) ([L08 program](A111314.asm)): a(n) = a(n-1) + a(n-2) + 2 where a(0) = a(1) = 1.
 * [A111384](http://oeis.org/A111384) ([L15 program](A111384.asm)): a(n) = binomial(n,3) - binomial(floor(n/2),3) - binomial(ceiling(n/2),3).
@@ -791,6 +794,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131242](http://oeis.org/A131242) ([L05 program](A131242.asm)): Partial sums of A059995: a(n) = sum_{k=0..n} floor(k/10).
 * [A131282](http://oeis.org/A131282) ([L17 program](A131282.asm)): Period 6: repeat [1, 2, 3, 3, 4, 5].
 * [A131294](http://oeis.org/A131294) ([L11 program](A131294.asm)): a(n)=ds_3(a(n-1))+ds_3(a(n-2)), a(0)=0, a(1)=1; where ds_3=digital sum base 3.
+* [A131308](http://oeis.org/A131308) ([L15 program](A131308.asm)): Alternate A001477 and tripled 2*A000027.
 * [A131352](http://oeis.org/A131352) ([L09 program](A131352.asm)): Row sums of triangle A133935.
 * [A131355](http://oeis.org/A131355) ([L07 program](A131355.asm)): Partial sums of A065423 plus one.
 * [A131360](http://oeis.org/A131360) ([L10 program](A131360.asm)): a(4n) = a(4n+1) = 0, a(4n+2) = 2n, a(4n+3) = 2n+1.
@@ -855,6 +859,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132109](http://oeis.org/A132109) ([L07 program](A132109.asm)): a(n) = (2^(n+1) + n^2 + n)/2.
 * [A132112](http://oeis.org/A132112) ([L08 program](A132112.asm)): a(n) = n*(n+1)*(11*n+1)/6.
 * [A132117](http://oeis.org/A132117) ([L08 program](A132117.asm)): Binomial transform of [1, 7, 17, 17, 6, 0, 0, 0,...].
+* [A132123](http://oeis.org/A132123) ([L10 program](A132123.asm)): a(n) = n * (2*n + 1) * (6*n^2 + 4*n + 1) / 3.
 * [A132124](http://oeis.org/A132124) ([L07 program](A132124.asm)): a(n) = n*(n+1)*(8*n + 1)/6.
 * [A132171](http://oeis.org/A132171) ([L10 program](A132171.asm)): 3^n repeated 3^n times.
 * [A132197](http://oeis.org/A132197) ([L06 program](A132197.asm)): 2^n-1 written 2^n-1 times.
@@ -1192,6 +1197,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A141449](http://oeis.org/A141449) ([L15 program](A141449.asm)): A005439 mod 9.
 * [A141495](http://oeis.org/A141495) ([L14 program](A141495.asm)): a(n) = 3*a(n-1) for n>2; a(0)=1, a(1)=3, a(2)=7.
 * [A141518](http://oeis.org/A141518) ([L07 program](A141518.asm)): Period 5: repeat [1, 3, 5, 7, 9].
+* [A141523](http://oeis.org/A141523) ([L21 program](A141523.asm)): Expansion of (3-2*x-3*x^2)/(1-x-x^2-x^3).
 * [A141571](http://oeis.org/A141571) ([L11 program](A141571.asm)): Decimal expansion of 11999/99900.
 * [A141631](http://oeis.org/A141631) ([L07 program](A141631.asm)): 3*n^2 - 4*n + 3.
 * [A141694](http://oeis.org/A141694) ([L06 program](A141694.asm)): a(n) = 22*n + 12.
@@ -1527,6 +1533,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157319](http://oeis.org/A157319) ([L17 program](A157319.asm)): Possible total points for a single team in a game of American football, ignoring safeties (and time constraints).
 * [A157324](http://oeis.org/A157324) ([L20 program](A157324.asm)): a(n) = 36*n^2 + n.
 * [A157330](http://oeis.org/A157330) ([L08 program](A157330.asm)): a(n) = 64*n - 8.
+* [A157331](http://oeis.org/A157331) ([L21 program](A157331.asm)): a(n) = 128*n^2 - 32*n + 1.
 * [A157336](http://oeis.org/A157336) ([L09 program](A157336.asm)): a(n) = 8*(8*n + 1).
 * [A157431](http://oeis.org/A157431) ([L13 program](A157431.asm)): 4n^2 + 73n + 333.
 * [A157432](http://oeis.org/A157432) ([L08 program](A157432.asm)): 64n + 584.
@@ -1715,6 +1722,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162607](http://oeis.org/A162607) ([L08 program](A162607.asm)): a(n) = n*(n^2 - 4*n + 5)/2.
 * [A162626](http://oeis.org/A162626) ([L18 program](A162626.asm)): If 0 <= n <= 3 then a(n) = n(n+1)(n+2)/3, if n >= 4 then a(n) = n(n^2+5)/3.
 * [A162668](http://oeis.org/A162668) ([L08 program](A162668.asm)): n*(n+1)*(n+2)*(n+3)/3.
+* [A162673](http://oeis.org/A162673) ([L14 program](A162673.asm)): Number of different fixed (possibly) disconnected trominoes bounded (not necessarily tightly) by an n*n square
 * [A162699](http://oeis.org/A162699) ([L09 program](A162699.asm)): Odd numbers not divisible by 7.
 * [A162761](http://oeis.org/A162761) ([L07 program](A162761.asm)): Suppose a lift can hold only C people, and N people are waiting at floors 1, 2, ..., N, while their destinations are floors N, N - 1, ..., 2, 1 respectively. When C = 1 and the lift starts at floor 1, what is the minimal stairs the lift must move before everyone get to their destinations?
 * [A162771](http://oeis.org/A162771) ([L10 program](A162771.asm)): a(n) = ((2+sqrt(5))*(3+sqrt(5))^n + (2-sqrt(5))*(3-sqrt(5))^n)/2.
@@ -2695,6 +2703,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192304](http://oeis.org/A192304) ([L23 program](A192304.asm)): 0-sequence of reduction of (2n-1) by x^2 -> x+1.
 * [A192305](http://oeis.org/A192305) ([L13 program](A192305.asm)): 0-sequence of reduction of (2n) by x^2 -> x+1.
 * [A192306](http://oeis.org/A192306) ([L14 program](A192306.asm)): 1-sequence of reduction of (2n) by x^2 -> x+1.
+* [A192308](http://oeis.org/A192308) ([L13 program](A192308.asm)): 1-sequence of reduction of (3n) by x^2 -> x+1.
 * [A192309](http://oeis.org/A192309) ([L16 program](A192309.asm)): 0-sequence of reduction of (3n-1) by x^2 -> x+1.
 * [A192312](http://oeis.org/A192312) ([L12 program](A192312.asm)): 1-sequence of reduction of (3n-2) by x^2 -> x+1.
 * [A192333](http://oeis.org/A192333) ([L07 program](A192333.asm)): Numbers that are "unsafe" when playing the game Dollar Nim, which is a Nim game where users can remove 1, 5, 10, or 25 cents from an initial pile of money. The most common version of the game is played with an initial amount of $1, hence the name.
