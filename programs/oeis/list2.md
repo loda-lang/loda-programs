@@ -77,6 +77,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206419](http://oeis.org/A206419) ([L12 program](A206419.asm)): Fibonacci sequence beginning 11, 7.
 * [A206420](http://oeis.org/A206420) ([L17 program](A206420.asm)): Fibonacci sequence beginning 11, 8.
 * [A206423](http://oeis.org/A206423) ([L13 program](A206423.asm)): Fibonacci sequence beginning 12, 7.
+* [A206543](http://oeis.org/A206543) ([L19 program](A206543.asm)): Period 10: repeat 1, 3, 5, 7, 9, 9, 7, 5, 3, 1.
 * [A206544](http://oeis.org/A206544) ([L18 program](A206544.asm)): Period 12: repeat 1, 3, 5, 7, 9, 11, 11, 9, 7, 5, 3, 1.
 * [A206609](http://oeis.org/A206609) ([L11 program](A206609.asm)): Fibonacci sequence beginning 13, 9.
 * [A206610](http://oeis.org/A206610) ([L15 program](A206610.asm)): Fibonacci sequence beginning 13, 8.
@@ -325,6 +326,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A220033](http://oeis.org/A220033) ([L19 program](A220033.asm)): Number of 3 X n arrays of the minimum value of corresponding elements and their horizontal or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..1 3 X n array.
 * [A220083](http://oeis.org/A220083) ([L13 program](A220083.asm)): a(n) = (15*n^2 + 9*n + 2)/2.
 * [A220104](http://oeis.org/A220104) ([L07 program](A220104.asm)): n appears n*(n+1) times.
+* [A220154](http://oeis.org/A220154) ([L21 program](A220154.asm)): Number of 2 X n arrays of the minimum value of corresponding elements and their horizontal or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 2 X n array.
 * [A220212](http://oeis.org/A220212) ([L14 program](A220212.asm)): Convolution of natural numbers (A000027) with tetradecagonal numbers (A051866).
 * [A220425](http://oeis.org/A220425) ([L10 program](A220425.asm)): a(n) = n^2 + 2*n + 2^n.
 * [A220443](http://oeis.org/A220443) ([L07 program](A220443.asm)): a(n) = Sum_{i=1..n} (3i)^2.
@@ -1485,6 +1487,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A299174](http://oeis.org/A299174) ([L03 program](A299174.asm)): The even positive integers.
 * [A299231](http://oeis.org/A299231) ([L13 program](A299231.asm)): Ranks of {2,3}-power towers that start with 2; see Comments.
 * [A299232](http://oeis.org/A299232) ([L08 program](A299232.asm)): Ranks of {2,3}-power towers that start with 3; see Comments.
+* [A299256](http://oeis.org/A299256) ([L13 program](A299256.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 3.6.3.6 2D tiling (cf. A008579).
 * [A299641](http://oeis.org/A299641) ([L16 program](A299641.asm)): Solution (d(n)) of the system of 5 complementary equations in Comments.
 * [A299647](http://oeis.org/A299647) ([L11 program](A299647.asm)): Positive solutions to x^2 == -2 (mod 11).
 * [A299965](http://oeis.org/A299965) ([L14 program](A299965.asm)): Number of triangles in a Star of David of size n.

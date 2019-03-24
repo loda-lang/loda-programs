@@ -161,6 +161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002266](http://oeis.org/A002266) ([L05 program](A002266.asm)): Integers repeated 5 times.
 * [A002276](http://oeis.org/A002276) ([L11 program](A002276.asm)): a(n) = 2*(10^n - 1)/9.
 * [A002282](http://oeis.org/A002282) ([L13 program](A002282.asm)): a(n) = 8*(10^n - 1)/9.
+* [A002283](http://oeis.org/A002283) ([L16 program](A002283.asm)): a(n) = 10^n - 1.
 * [A002310](http://oeis.org/A002310) ([L08 program](A002310.asm)): a(n) = 5*a(n-1) - a(n-2).
 * [A002315](http://oeis.org/A002315) ([L15 program](A002315.asm)): NSW numbers: a(n) = 6*a(n-1) - a(n-2); also a(n)^2 - 2*b(n)^2 = -1 with b(n)=A001653(n+1).
 * [A002320](http://oeis.org/A002320) ([L08 program](A002320.asm)): a(n) = 5*a(n-1) - a(n-2).
@@ -701,6 +702,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011871](http://oeis.org/A011871) ([L08 program](A011871.asm)): [ n(n-1)/18 ].
 * [A011875](http://oeis.org/A011875) ([L20 program](A011875.asm)): Floor( n*(n-1)/22 ).
 * [A011888](http://oeis.org/A011888) ([L15 program](A011888.asm)): Partial sums of A011863.
+* [A011900](http://oeis.org/A011900) ([L13 program](A011900.asm)): a(n) = 6*a(n-1) - a(n-2) - 2 with a(0) = 1, a(1) = 3.
 * [A011934](http://oeis.org/A011934) ([L16 program](A011934.asm)): a(n) = |1^3 - 2^3 + 3^3 - 4^3 + ... + (-1)^(n+1)*n^3|.
 * [A011960](http://oeis.org/A011960) ([L08 program](A011960.asm)): Number of ferrites M_2Y_n that repeat after 6n+10 layers.
 * [A012493](http://oeis.org/A012493) ([L08 program](A012493.asm)): Take every 5th term of Padovan sequence A000931, beginning with the fifth term.
@@ -760,6 +762,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014915](http://oeis.org/A014915) ([L08 program](A014915.asm)): a(1)=1, a(n) = n*3^(n-1) + a(n-1).
 * [A014916](http://oeis.org/A014916) ([L13 program](A014916.asm)): a(1)=1, a(n) = n*4^(n-1) + a(n-1).
 * [A014917](http://oeis.org/A014917) ([L11 program](A014917.asm)): a(1)=1, a(n) = n*5^(n-1) + a(n-1).
+* [A014918](http://oeis.org/A014918) ([L10 program](A014918.asm)): a(1)=1, a(n) = n*6^(n-1) + a(n-1).
 * [A014922](http://oeis.org/A014922) ([L03 program](A014922.asm)): Inverse of 913th cyclotomic polynomial.
 * [A014988](http://oeis.org/A014988) ([L03 program](A014988.asm)): Inverse of 979th cyclotomic polynomial.
 * [A015076](http://oeis.org/A015076) ([L03 program](A015076.asm)): Inverse of 1067th cyclotomic polynomial.
