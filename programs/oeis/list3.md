@@ -129,6 +129,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316224](http://oeis.org/A316224) ([L08 program](A316224.asm)): a(n) = n*(2*n + 1)*(4*n + 1).
 * [A316355](http://oeis.org/A316355) ([L08 program](A316355.asm)): 2k-1 appears 2k times after 2k-2 appears once.
 * [A316466](http://oeis.org/A316466) ([L07 program](A316466.asm)): a(n) = 2*n*(7*n - 3).
+* [A316533](http://oeis.org/A316533) ([L24 program](A316533.asm)): a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
 * [A316571](http://oeis.org/A316571) ([L04 program](A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
 * [A316671](http://oeis.org/A316671) ([L10 program](A316671.asm)): Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
 * [A316742](http://oeis.org/A316742) ([L11 program](A316742.asm)): Stepping through the Mersenne sequence (A000225) one step back, two steps forward.

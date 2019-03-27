@@ -90,6 +90,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A207361](http://oeis.org/A207361) ([L08 program](A207361.asm)): Displacement under constant discrete unit surge.
 * [A207836](http://oeis.org/A207836) ([L09 program](A207836.asm)): a(n) = n*A052530(n)/2.
 * [A208309](http://oeis.org/A208309) ([L10 program](A208309.asm)): Number of n X 3 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward neighbors.
+* [A208528](http://oeis.org/A208528) ([L13 program](A208528.asm)): Number of permutations of n>1 having exactly 3 points P on the boundary of their bounding square.
 * [A208598](http://oeis.org/A208598) ([L12 program](A208598.asm)): Number of 4-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero.
 * [A208638](http://oeis.org/A208638) ([L08 program](A208638.asm)): Number of 3 X n 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward or right-upward antidiagonal neighbors.
 * [A208658](http://oeis.org/A208658) ([L08 program](A208658.asm)): Row sums of A208657.
@@ -692,6 +693,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248517](http://oeis.org/A248517) ([L17 program](A248517.asm)): Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
 * [A248572](http://oeis.org/A248572) ([L09 program](A248572.asm)): 29*n + 1.
 * [A248621](http://oeis.org/A248621) ([L15 program](A248621.asm)): Floor of sums of the squares of the non-integer cube roots of n, as partitioned by the integer roots: floor[sum(j from n^3+1 to (n+1)^3-1, j^(2/3))].
+* [A248646](http://oeis.org/A248646) ([L15 program](A248646.asm)): The Golden Book sequence.
 * [A248800](http://oeis.org/A248800) ([L08 program](A248800.asm)): n^2 + 3/2 + (1/2)*(-1)^n.
 * [A248825](http://oeis.org/A248825) ([L08 program](A248825.asm)): n^2 + 1 - (-1)^n.
 * [A248877](http://oeis.org/A248877) ([L16 program](A248877.asm)): a(1) = 23, a(2) = 71, a(n) = 3*a(n-1) - 2*a(n-2) for n>2.
@@ -1327,6 +1329,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288156](http://oeis.org/A288156) ([L06 program](A288156.asm)): Two even followed by three odd integers: the pattern is (0+2k,0+2k,1+2k,1+2k,1+2k) for k>=0.
 * [A288205](http://oeis.org/A288205) ([L18 program](A288205.asm)): Positions of 1 in A288203; complement of A288204.
 * [A288219](http://oeis.org/A288219) ([L16 program](A288219.asm)): a(n) = a(n-1) + a(n-2) for n >= 3, where a(0) = 2, a(1) = 4, a(2) = 7.
+* [A288309](http://oeis.org/A288309) ([L13 program](A288309.asm)): a(n) = 2*a(n-1) + 2*a(n-2) - 3*a(n-3), where a(0) = 2, a(1) = 4, a(2) = 8.
 * [A288382](http://oeis.org/A288382) ([L09 program](A288382.asm)): Positions of 0 in A288381; complement of A288383.
 * [A288383](http://oeis.org/A288383) ([L09 program](A288383.asm)): Positions of 1 in A288381; complement of A288382.
 * [A288443](http://oeis.org/A288443) ([L07 program](A288443.asm)): a(n) = (2n + 1)*2^(2n + 1); numbers k such that v(k)*2^v(k) = k, where v(n) = A007814(n) is 2-adic valuation of n.
