@@ -217,6 +217,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A107386](http://oeis.org/A107386) ([L09 program](A107386.asm)): a(n) = 2*a(n-1) - 2*a(n-3) + a(n-4), n>6.
 * [A107436](http://oeis.org/A107436) ([L06 program](A107436.asm)): a(n) = (a^5)(n-1) + a(n-a(n-1)) = a(a(a(a(a(n-1))))) + a(n-a(n-1)), a(1) = a(2) = 1.
 * [A107453](http://oeis.org/A107453) ([L06 program](A107453.asm)): 1 followed by repetitions of the period-4 sequence 1,1,1,2.
+* [A107464](http://oeis.org/A107464) ([L10 program](A107464.asm)): Number of fuzzy subgroups of rank 3 cyclic group of order (p^n)*q*r where p, q and r are three distinct prime.
 * [A107583](http://oeis.org/A107583) ([L10 program](A107583.asm)): a(n) = 3^n - 3*n.
 * [A107584](http://oeis.org/A107584) ([L10 program](A107584.asm)): a(n) = 4^n - 4*n.
 * [A107659](http://oeis.org/A107659) ([L10 program](A107659.asm)): a(n) = Sum_{k=0..n} 2^max(k, n-k).
@@ -2904,6 +2905,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198645](http://oeis.org/A198645) ([L11 program](A198645.asm)): 10*3^n-1.
 * [A198646](http://oeis.org/A198646) ([L10 program](A198646.asm)): 11*3^n-1.
 * [A198647](http://oeis.org/A198647) ([L16 program](A198647.asm)): 3*7^n-1
+* [A198687](http://oeis.org/A198687) ([L20 program](A198687.asm)): 5*7^n-1.
 * [A198693](http://oeis.org/A198693) ([L07 program](A198693.asm)): 3*4^n-1
 * [A198694](http://oeis.org/A198694) ([L07 program](A198694.asm)): 7*4^n-1.
 * [A198695](http://oeis.org/A198695) ([L09 program](A198695.asm)): 11*4^n-1

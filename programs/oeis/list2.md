@@ -67,6 +67,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A205354](http://oeis.org/A205354) ([L08 program](A205354.asm)): Number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having the same number of equal diagonal or antidiagonal elements, and new values 0..2 introduced in row major order.
 * [A205633](http://oeis.org/A205633) ([L33 program](A205633.asm)): Expansion of f(x^3, x^7) in powers of x where f() is Ramanujan's two-variable theta function.
 * [A205646](http://oeis.org/A205646) ([L10 program](A205646.asm)): Number of empty faces in Freij's family of Hansen polytopes.
+* [A205988](http://oeis.org/A205988) ([L12 program](A205988.asm)): Expansion of f(x^1, x^9) in powers of x where f(, ) is Ramanujan's general theta function.
 * [A206332](http://oeis.org/A206332) ([L07 program](A206332.asm)): Complement of A092754.
 * [A206351](http://oeis.org/A206351) ([L16 program](A206351.asm)): a(n) = 7*a(n-1) - a(n-2) - 4 with a(1)=1, a(2)=3.
 * [A206371](http://oeis.org/A206371) ([L16 program](A206371.asm)): 31*2^n + 1.
@@ -84,6 +85,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206609](http://oeis.org/A206609) ([L11 program](A206609.asm)): Fibonacci sequence beginning 13, 9.
 * [A206610](http://oeis.org/A206610) ([L15 program](A206610.asm)): Fibonacci sequence beginning 13, 8.
 * [A206612](http://oeis.org/A206612) ([L23 program](A206612.asm)): Fibonacci sequence beginning 13, 6.
+* [A206723](http://oeis.org/A206723) ([L15 program](A206723.asm)): a(n) = 7*( ((3 + sqrt(5))/2)^n + ((3 - sqrt(5))/2)^n - 2 ).
 * [A206776](http://oeis.org/A206776) ([L12 program](A206776.asm)): a(n) = 3*a(n-1) + 2*a(n-2) for n>1, a(0)=2, a(1)=3.
 * [A206905](http://oeis.org/A206905) ([L17 program](A206905.asm)): n+[nr/t]+[ns/t], where []=floor, r=3, s=sqrt(3), t=1/s.
 * [A207106](http://oeis.org/A207106) ([L13 program](A207106.asm)): Number of n X 3 0..1 arrays avoiding 0 0 0 and 0 1 1 horizontally and 0 0 1 and 1 1 0 vertically.
@@ -156,6 +158,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211543](http://oeis.org/A211543) ([L10 program](A211543.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w=3x+5y.
 * [A211546](http://oeis.org/A211546) ([L07 program](A211546.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=3x-3y.
 * [A211547](http://oeis.org/A211547) ([L08 program](A211547.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w=3x+3y.
+* [A211549](http://oeis.org/A211549) ([L21 program](A211549.asm)): Number of (n+1) X (n+1) -9..9 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
 * [A211562](http://oeis.org/A211562) ([L11 program](A211562.asm)): Number of nonnegative integer arrays of length n+2 with new values 0 upwards introduced in order, and containing the value n-1.
 * [A211612](http://oeis.org/A211612) ([L16 program](A211612.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and w+x+y>=0.
 * [A211615](http://oeis.org/A211615) ([L08 program](A211615.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and -1<=w+x+y<=1.
@@ -439,6 +442,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228693](http://oeis.org/A228693) ([L11 program](A228693.asm)): Largest number of maximal independent sets of nodes in any tree on n nodes.
 * [A228842](http://oeis.org/A228842) ([L09 program](A228842.asm)): Binomial transform of A014448.
 * [A228888](http://oeis.org/A228888) ([L10 program](A228888.asm)): a(n) = binomial(3*n + 2, 3).
+* [A228889](http://oeis.org/A228889) ([L13 program](A228889.asm)): a(n) = 3*n*(3*n + 1)*(3*n + 2).
 * [A228941](http://oeis.org/A228941) ([L09 program](A228941.asm)): The n-th convergent of CF(e) is the a(n)-th convergent of DCF(e), the delayed continued fraction of e.
 * [A229013](http://oeis.org/A229013) ([L11 program](A229013.asm)): Number of arrays of median of three adjacent elements of some length-5 0..n array, with no adjacent equal elements in the latter.
 * [A229135](http://oeis.org/A229135) ([L12 program](A229135.asm)): n * (2 + 2^(2*n - 1)).
@@ -787,6 +791,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256008](http://oeis.org/A256008) ([L14 program](A256008.asm)): Self-inverse permutation of positive integers: 4k+1 is swapped with 4k+3, and 4k+2 with 4k+4.
 * [A256079](http://oeis.org/A256079) ([L07 program](A256079.asm)): Increase each (decimal) digit of n by 1, with carry (i.e., '9' becomes '0' and a (further) increment of 1 of the digit to the left).
 * [A256137](http://oeis.org/A256137) ([L12 program](A256137.asm)): a(2) = 1; a(3) = 4; for n >= 4, a(n) = 2 + Sum_{i=4..n} d(i), where d(i) = i for even i, d(i) = i-3 for odd i.
+* [A256251](http://oeis.org/A256251) ([L18 program](A256251.asm)): First differences of A256250.
 * [A256302](http://oeis.org/A256302) ([L07 program](A256302.asm)): Least prime p such that p+3*k*(k+1) is prime for all k=0,...,n.
 * [A256320](http://oeis.org/A256320) ([L07 program](A256320.asm)): Number of partitions of 4n into exactly 3 parts.
 * [A256432](http://oeis.org/A256432) ([L11 program](A256432.asm)): Characteristic function of octahedral numbers.
@@ -1206,6 +1211,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277104](http://oeis.org/A277104) ([L23 program](A277104.asm)): a(n) = 9*3^n - 15.
 * [A277106](http://oeis.org/A277106) ([L17 program](A277106.asm)): a(n) = 8*3^n - 12.
 * [A277108](http://oeis.org/A277108) ([L09 program](A277108.asm)): a(n) = 4n*(n+5).
+* [A277228](http://oeis.org/A277228) ([L12 program](A277228.asm)): Convolution of the even-indexed triangular numbers (A014105) and the squares (A000290).
 * [A277229](http://oeis.org/A277229) ([L09 program](A277229.asm)): Convolution of the odd indexed triangular numbers (A000384(n+1)) and the squares (A000290).
 * [A277267](http://oeis.org/A277267) ([L10 program](A277267.asm)): Minimum number of single-direction edges in leveled binary trees with n nodes.
 * [A277369](http://oeis.org/A277369) ([L14 program](A277369.asm)): a(0) = 5, a(1) = 8; for n>1, a(n) = 2*a(n-1) + a(n-2).

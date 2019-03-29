@@ -109,6 +109,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306277](http://oeis.org/A306277) ([L12 program](A306277.asm)): Numbers congruent to 1 or 8 mod 10.
 * [A306285](http://oeis.org/A306285) ([L21 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
 * [A306390](http://oeis.org/A306390) ([L06 program](A306390.asm)): Size of one subtree in the unlabeled binary rooted tree shape of size n whose leaf-labeled trees have the largest number of coalescence sequences.
+* [A307136](http://oeis.org/A307136) ([L14 program](A307136.asm)): a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
 * [A310565](http://oeis.org/A310565) ([L14 program](A310565.asm)): Coordination sequence Gal.4.82.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A311804](http://oeis.org/A311804) ([L21 program](A311804.asm)): Coordination sequence Gal.6.216.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A311807](http://oeis.org/A311807) ([L21 program](A311807.asm)): Coordination sequence Gal.3.12.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
