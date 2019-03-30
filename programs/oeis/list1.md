@@ -478,6 +478,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117802](http://oeis.org/A117802) ([L10 program](A117802.asm)): Numbers with an "a" in Dutch.
 * [A117855](http://oeis.org/A117855) ([L08 program](A117855.asm)): Number of nonzero palindromes of length n (in base 3).
 * [A117856](http://oeis.org/A117856) ([L08 program](A117856.asm)): Number of palindromes of length n (in base 4).
+* [A117857](http://oeis.org/A117857) ([L09 program](A117857.asm)): Number of palindromes of length n (in base 5).
 * [A117862](http://oeis.org/A117862) ([L15 program](A117862.asm)): Number of palindromes (in base 3) below 3^n.
 * [A117863](http://oeis.org/A117863) ([L15 program](A117863.asm)): Number of palindromes (in base 4) below 4^n.
 * [A117909](http://oeis.org/A117909) ([L13 program](A117909.asm)): Count, inserting 0 after every even number.
@@ -544,6 +545,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122074](http://oeis.org/A122074) ([L08 program](A122074.asm)): a(0)=1, a(1)=6, a(n) = 7*a(n-1) - 2*a(n-2).
 * [A122088](http://oeis.org/A122088) ([L14 program](A122088.asm)): Add 10, subtract 5, add 10, subtract 5, ad infinitum.
 * [A122117](http://oeis.org/A122117) ([L10 program](A122117.asm)): a(0)=1, a(1)=2, a(n)=3*a(n-1)+4*a(n-2) for n>1.
+* [A122124](http://oeis.org/A122124) ([L13 program](A122124.asm)): Numbers n such that 25 divides Sum[ Prime[k]^n, {k,1,n}].
 * [A122197](http://oeis.org/A122197) ([L14 program](A122197.asm)): Fractal sequence: count up to successive integers twice.
 * [A122367](http://oeis.org/A122367) ([L06 program](A122367.asm)): Dimension of 3-variable non-commutative harmonics (twisted derivative). The dimension of the space of non-commutative polynomials in 3 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( xi w ) = w and d_{xi} ( xj w ) = 0 for i != j).
 * [A122391](http://oeis.org/A122391) ([L08 program](A122391.asm)): Dimension of 2-variable non-commutative harmonics (Hausdorff derivative). The dimension of the space of non-commutative polynomials in 2 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( w ) = sum over all subwords of w deleting xi once).
@@ -2822,6 +2824,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A194715](http://oeis.org/A194715) ([L05 program](A194715.asm)): 15 times triangular numbers.
 * [A194757](http://oeis.org/A194757) ([L13 program](A194757.asm)): Number of k such that {-k*pi} > {-n*pi}, where { } = fractional part.
 * [A194847](http://oeis.org/A194847) ([L07 program](A194847.asm)): Write n = C(i,3)+C(j,2)+C(k,1) with i>j>k>=0; sequence gives i values.
+* [A194882](http://oeis.org/A194882) ([L09 program](A194882.asm)): Write n = C(i,4)+C(j,3)+C(k,2)+C(l,1) with i>j>k>l>=0; sequence gives i values.
 * [A194960](http://oeis.org/A194960) ([L06 program](A194960.asm)): a(n) = floor((n+2)/3) + ((n-1) mod 3).
 * [A194999](http://oeis.org/A194999) ([L18 program](A194999.asm)): Number of lower triangles of a 3 X 3 0..n array with each element differing from all of its horizontal and vertical neighbors by one.
 * [A195013](http://oeis.org/A195013) ([L10 program](A195013.asm)): Multiples of 2 and of 3 interleaved: a(2n-1) = 2n, a(2n) = 3n.
@@ -2853,6 +2856,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195160](http://oeis.org/A195160) ([L09 program](A195160.asm)): Generalized 11-gonal (or hendecagonal) numbers: m*(9*m - 7)/2 with m = 0, 1, -1, 2, -2, 3, -3, ...
 * [A195161](http://oeis.org/A195161) ([L11 program](A195161.asm)): Multiples of 8 and odd numbers interleaved.
 * [A195162](http://oeis.org/A195162) ([L14 program](A195162.asm)): Generalized 12-gonal numbers: k*(5*k-4) for k = 0, +-1, +-2, ...
+* [A195313](http://oeis.org/A195313) ([L12 program](A195313.asm)): Generalized 13-gonal numbers: m*(11*m-9)/2 with m = 0, 1, -1, 2, -2, 3, -3, ...
 * [A195314](http://oeis.org/A195314) ([L16 program](A195314.asm)): Centered 28-gonal numbers.
 * [A195315](http://oeis.org/A195315) ([L09 program](A195315.asm)): Centered 32-gonal numbers.
 * [A195316](http://oeis.org/A195316) ([L17 program](A195316.asm)): Centered 36-gonal numbers.
@@ -2925,6 +2929,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198797](http://oeis.org/A198797) ([L12 program](A198797.asm)): 4*6^n-1.
 * [A198834](http://oeis.org/A198834) ([L07 program](A198834.asm)): Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (0,1,1) or (1,1,1).
 * [A198845](http://oeis.org/A198845) ([L11 program](A198845.asm)): 8*6^n-1.
+* [A198846](http://oeis.org/A198846) ([L13 program](A198846.asm)): 9*6^n-1.
 * [A198847](http://oeis.org/A198847) ([L11 program](A198847.asm)): 10*6^n-1.
 * [A198849](http://oeis.org/A198849) ([L15 program](A198849.asm)): (11*6^n-1)/5.
 * [A198954](http://oeis.org/A198954) ([L12 program](A198954.asm)): Expansion of the rotational partition function for a heteronuclear diatomic molecule.
@@ -2957,6 +2962,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199313](http://oeis.org/A199313) ([L20 program](A199313.asm)): 9*5^n+1.
 * [A199314](http://oeis.org/A199314) ([L10 program](A199314.asm)): (11*5^n+1)/4.
 * [A199315](http://oeis.org/A199315) ([L11 program](A199315.asm)): (11*5^n+1)/2.
+* [A199316](http://oeis.org/A199316) ([L18 program](A199316.asm)): 11*5^n+1.
 * [A199317](http://oeis.org/A199317) ([L10 program](A199317.asm)): 2*6^n+1.
 * [A199318](http://oeis.org/A199318) ([L13 program](A199318.asm)): 3*6^n+1.
 * [A199319](http://oeis.org/A199319) ([L10 program](A199319.asm)): 4*6^n+1.
