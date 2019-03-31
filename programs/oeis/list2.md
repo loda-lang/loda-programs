@@ -1448,6 +1448,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293727](http://oeis.org/A293727) ([L23 program](A293727.asm)): Numbers n such that c(n,0) < c(n,1), where c(n,d) = number of d's in the first n digits of the base-2 expansion of sqrt(2).
 * [A293754](http://oeis.org/A293754) ([L05 program](A293754.asm)): Numbers n such that c(n,0) < c(n,1), where c(n,d) = number of d's in the first n digits of the base-2 expansion of tau (the golden ratio, (1+sqrt(5))/2)).
 * [A293990](http://oeis.org/A293990) ([L07 program](A293990.asm)): a(n) = (3*n + ((n-2) mod 4))/2.
+* [A294070](http://oeis.org/A294070) ([L17 program](A294070.asm)): a(n) = (1/4)*(n^2 - 2*n)^2 + (9/4)*(n^2 - 2*n) + 6.
 * [A294152](http://oeis.org/A294152) ([L08 program](A294152.asm)): Chromatic invariant of the n-antiprism graph.
 * [A294157](http://oeis.org/A294157) ([L08 program](A294157.asm)): Fibonacci sequence beginning 2, 8.
 * [A294259](http://oeis.org/A294259) ([L08 program](A294259.asm)): a(n) = n*(n^3 + 2*n^2 - 5*n + 10)/8.

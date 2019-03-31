@@ -809,6 +809,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131242](http://oeis.org/A131242) ([L05 program](A131242.asm)): Partial sums of A059995: a(n) = sum_{k=0..n} floor(k/10).
 * [A131282](http://oeis.org/A131282) ([L17 program](A131282.asm)): Period 6: repeat [1, 2, 3, 3, 4, 5].
 * [A131294](http://oeis.org/A131294) ([L11 program](A131294.asm)): a(n)=ds_3(a(n-1))+ds_3(a(n-2)), a(0)=0, a(1)=1; where ds_3=digital sum base 3.
+* [A131300](http://oeis.org/A131300) ([L15 program](A131300.asm)): a(n) = 3*a(n-1) - 2*a(n-2) - a(n-3) + a(n-4) with n>3, a(0)=1, a(1)=2, a(2)=3, a(3)=7.
 * [A131308](http://oeis.org/A131308) ([L15 program](A131308.asm)): Alternate A001477 and tripled 2*A000027.
 * [A131352](http://oeis.org/A131352) ([L09 program](A131352.asm)): Row sums of triangle A133935.
 * [A131355](http://oeis.org/A131355) ([L07 program](A131355.asm)): Partial sums of A065423 plus one.
@@ -1874,6 +1875,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165775](http://oeis.org/A165775) ([L07 program](A165775.asm)): n + (least square >= n), i.e., n + A048761(n).
 * [A165776](http://oeis.org/A165776) ([L08 program](A165776.asm)): n + (least square > n), i.e., n + A048761(n+1).
 * [A165806](http://oeis.org/A165806) ([L14 program](A165806.asm)): a(n) = 15n^2 + 3n + 1.
+* [A165988](http://oeis.org/A165988) ([L14 program](A165988.asm)): First trisection of A022998.
 * [A165998](http://oeis.org/A165998) ([L12 program](A165998.asm)): Denominators of Taylor series expansion of 1/(3*x)*log((1+x)/(1-x)^2)
 * [A166021](http://oeis.org/A166021) ([L08 program](A166021.asm)): a(n) = 2*A000124(A003056(n-1)) if A002262(n-1)=0, otherwise a(n-1)+1.
 * [A166025](http://oeis.org/A166025) ([L13 program](A166025.asm)): a(0) = 6, a(1) = 17, a(n+1) = a(n) + a(n-1) for n>0.
@@ -2856,6 +2858,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195160](http://oeis.org/A195160) ([L09 program](A195160.asm)): Generalized 11-gonal (or hendecagonal) numbers: m*(9*m - 7)/2 with m = 0, 1, -1, 2, -2, 3, -3, ...
 * [A195161](http://oeis.org/A195161) ([L11 program](A195161.asm)): Multiples of 8 and odd numbers interleaved.
 * [A195162](http://oeis.org/A195162) ([L14 program](A195162.asm)): Generalized 12-gonal numbers: k*(5*k-4) for k = 0, +-1, +-2, ...
+* [A195311](http://oeis.org/A195311) ([L11 program](A195311.asm)): Row sums of A195310.
 * [A195313](http://oeis.org/A195313) ([L12 program](A195313.asm)): Generalized 13-gonal numbers: m*(11*m-9)/2 with m = 0, 1, -1, 2, -2, 3, -3, ...
 * [A195314](http://oeis.org/A195314) ([L16 program](A195314.asm)): Centered 28-gonal numbers.
 * [A195315](http://oeis.org/A195315) ([L09 program](A195315.asm)): Centered 32-gonal numbers.

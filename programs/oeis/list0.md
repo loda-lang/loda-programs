@@ -138,6 +138,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001855](http://oeis.org/A001855) ([L06 program](A001855.asm)): Sorting numbers: maximal number of comparisons for sorting n elements by binary insertion.
 * [A001859](http://oeis.org/A001859) ([L07 program](A001859.asm)): Triangular numbers plus quarter-squares: n*(n+1)/2 + floor((n+1)^2/4) (i.e., A000217(n) + A002620(n+1)).
 * [A001891](http://oeis.org/A001891) ([L09 program](A001891.asm)): Hit polynomials; convolution of natural numbers with Fibonacci numbers F(2), F(3), F(4),....
+* [A001903](http://oeis.org/A001903) ([L22 program](A001903.asm)): Final digit of 7^n.
 * [A001906](http://oeis.org/A001906) ([L06 program](A001906.asm)): F(2n) = bisection of Fibonacci sequence: a(n) = 3*a(n-1) - a(n-2).
 * [A001911](http://oeis.org/A001911) ([L07 program](A001911.asm)): a(n) = Fibonacci(n+3) - 2.
 * [A001924](http://oeis.org/A001924) ([L09 program](A001924.asm)): Apply partial sum operator twice to Fibonacci numbers.
@@ -376,6 +377,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005901](http://oeis.org/A005901) ([L13 program](A005901.asm)): Number of points on surface of cuboctahedron (or icosahedron): a(0) = 1; for n > 0, a(n) = 10n^2 + 2. Also coordination sequence for f.c.c. or A_3 or D_3 lattice.
 * [A005902](http://oeis.org/A005902) ([L11 program](A005902.asm)): Centered icosahedral (or cuboctahedral) numbers, also crystal ball sequence for f.c.c. lattice.
 * [A005903](http://oeis.org/A005903) ([L28 program](A005903.asm)): Number of points on surface of dodecahedron: 30n^2 + 2 for n > 0.
+* [A005905](http://oeis.org/A005905) ([L22 program](A005905.asm)): Number of points on surface of truncated tetrahedron: 14n^2 + 2 for n>0, a(0)=1.
 * [A005914](http://oeis.org/A005914) ([L12 program](A005914.asm)): Number of points on surface of hexagonal prism: 12n^2 + 2 for n>0 (coordination sequence for W(2)).
 * [A005915](http://oeis.org/A005915) ([L21 program](A005915.asm)): Hexagonal prism numbers: a(n) = (n + 1)*(3*n^2 + 3*n + 1).
 * [A005917](http://oeis.org/A005917) ([L10 program](A005917.asm)): Rhombic dodecahedral numbers: a(n) = n^4 - (n - 1)^4.
@@ -564,6 +566,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010006](http://oeis.org/A010006) ([L14 program](A010006.asm)): Coordination sequence for C_3 lattice: a(n)=16*n^2+2 (n>0), a(0)=1.
 * [A010008](http://oeis.org/A010008) ([L20 program](A010008.asm)): a(0) = 1, a(n) = 18*n^2 + 2 for n>0.
 * [A010010](http://oeis.org/A010010) ([L14 program](A010010.asm)): a(0) = 1, a(n) = 20*n^2 + 2 for n>0.
+* [A010011](http://oeis.org/A010011) ([L13 program](A010011.asm)): a(0) = 1, a(n) = 21*n^2 + 2 for n>0.
 * [A010014](http://oeis.org/A010014) ([L09 program](A010014.asm)): a(0) = 1, a(n) = 24*n^2 + 2 for n>0.
 * [A010015](http://oeis.org/A010015) ([L17 program](A010015.asm)): a(0) = 1, a(n) = 25*n^2 + 2 for n > 0.
 * [A010021](http://oeis.org/A010021) ([L15 program](A010021.asm)): a(0) = 1, a(n) = 32*n^2 + 2 for n>0.
@@ -1492,6 +1495,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032438](http://oeis.org/A032438) ([L07 program](A032438.asm)): a(n) = n^2 - floor((n+1)/2)^2.
 * [A032512](http://oeis.org/A032512) ([L03 program](A032512.asm)): Sum of the integer part of 4th roots of integers less than n.
 * [A032513](http://oeis.org/A032513) ([L10 program](A032513.asm)): Sum of the integer part of 5th roots of positive integers less than or equal to n.
+* [A032515](http://oeis.org/A032515) ([L12 program](A032515.asm)): Sum of the integer part of 5/2-th roots of integers less than or equal to n.
 * [A032516](http://oeis.org/A032516) ([L10 program](A032516.asm)): Sum of the integer part of 7/2-th roots of integers less than n.
 * [A032517](http://oeis.org/A032517) ([L04 program](A032517.asm)): Sum of the integer part of 9/2-th roots of integers less than n.
 * [A032518](http://oeis.org/A032518) ([L08 program](A032518.asm)): Sum of the integer part of 10/3-th roots of integers less than n.
@@ -3457,6 +3461,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A085540](http://oeis.org/A085540) ([L14 program](A085540.asm)): a(n) = n*(n+1)^3.
 * [A085600](http://oeis.org/A085600) ([L07 program](A085600.asm)): Number of simple graphs with 3 edges on n vertices.
 * [A085624](http://oeis.org/A085624) ([L23 program](A085624.asm)): Sum of the entries in the character table of the dihedral group D_{2n} of order 2n.
+* [A085680](http://oeis.org/A085680) ([L14 program](A085680.asm)): Size of largest code of length n and constant weight 2 that can correct a single adjacent transposition.
 * [A085717](http://oeis.org/A085717) ([L07 program](A085717.asm)): Consider the square lattice L and the sublattice K of index 5 spanned by (2,-1), (1,2); a(n) = number of points (x,y) in M with x >= 0, y >= 0, x+y <= n.
 * [A085740](http://oeis.org/A085740) ([L10 program](A085740.asm)): a(n) = T(n)^2 - n^2, where T(n) is a triangular number.
 * [A085786](http://oeis.org/A085786) ([L08 program](A085786.asm)): a(n) = A000217(n) + n^3.
@@ -3717,6 +3722,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A096777](http://oeis.org/A096777) ([L07 program](A096777.asm)): a(n) = a(n-1) + Sum_{k=1..n-1}(a(k) mod 2), a(1) = 1.
 * [A096886](http://oeis.org/A096886) ([L12 program](A096886.asm)): Expansion of (1+3x)/(1-8x^2).
 * [A096941](http://oeis.org/A096941) ([L09 program](A096941.asm)): Fourth column of (1,5)-Pascal triangle A096940.
+* [A096942](http://oeis.org/A096942) ([L17 program](A096942.asm)): Fifth column of (1,5)-Pascal triangle A096940.
 * [A096957](http://oeis.org/A096957) ([L08 program](A096957.asm)): Fourth column (m=3) of (1,6)-Pascal triangle A096956.
 * [A097039](http://oeis.org/A097039) ([L11 program](A097039.asm)): a(n) = Sum_{i=0..n} i*L(i), where L = A000032.
 * [A097043](http://oeis.org/A097043) ([L16 program](A097043.asm)): a(n) = n - a(floor(sqrt(n))) for n > 1; a(1) = 1.
