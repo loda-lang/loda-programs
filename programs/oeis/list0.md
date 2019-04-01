@@ -1758,6 +1758,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040133](http://oeis.org/A040133) ([L19 program](A040133.asm)): Continued fraction for sqrt(146).
 * [A040134](http://oeis.org/A040134) ([L14 program](A040134.asm)): Continued fraction for sqrt(147).
 * [A040137](http://oeis.org/A040137) ([L13 program](A040137.asm)): Continued fraction for sqrt(150).
+* [A040143](http://oeis.org/A040143) ([L23 program](A040143.asm)): Continued fraction for sqrt(156).
 * [A040156](http://oeis.org/A040156) ([L05 program](A040156.asm)): Continued fraction for sqrt(170).
 * [A040157](http://oeis.org/A040157) ([L14 program](A040157.asm)): Continued fraction for sqrt(171).
 * [A040182](http://oeis.org/A040182) ([L05 program](A040182.asm)): Continued fraction for sqrt(197).
@@ -2031,6 +2032,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047400](http://oeis.org/A047400) ([L07 program](A047400.asm)): Numbers that are congruent to {1, 3, 6} mod 8.
 * [A047401](http://oeis.org/A047401) ([L10 program](A047401.asm)): Numbers that are congruent to {0, 1, 3, 6} mod 8.
 * [A047403](http://oeis.org/A047403) ([L07 program](A047403.asm)): Numbers that are congruent to {0, 2, 3, 6} mod 8.
+* [A047405](http://oeis.org/A047405) ([L18 program](A047405.asm)): Numbers that are congruent to {0, 1, 2, 3, 6} mod 8.
 * [A047406](http://oeis.org/A047406) ([L07 program](A047406.asm)): Numbers that are congruent to {4, 6} mod 8.
 * [A047407](http://oeis.org/A047407) ([L06 program](A047407.asm)): Numbers that are congruent to {0, 4, 6} mod 8.
 * [A047408](http://oeis.org/A047408) ([L07 program](A047408.asm)): Numbers that are congruent to {1, 4, 6} mod 8.
@@ -2462,6 +2464,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052994](http://oeis.org/A052994) ([L12 program](A052994.asm)): Expansion of 2x(1-x)/(1-2x-x^2+x^3).
 * [A052995](http://oeis.org/A052995) ([L07 program](A052995.asm)): Expansion of 2*x*(1-x)/(1-3*x+x^2).
 * [A052996](http://oeis.org/A052996) ([L09 program](A052996.asm)): G.f.: (1+x^2-x^3)/((1-x)(1-2*x)).
+* [A052997](http://oeis.org/A052997) ([L11 program](A052997.asm)): Expansion of (1+x-x^3)/((1-2*x)*(1-x^2)).
 * [A053126](http://oeis.org/A053126) ([L22 program](A053126.asm)): Binomial coefficients binomial(2*n-3,4).
 * [A053134](http://oeis.org/A053134) ([L14 program](A053134.asm)): Binomial coefficients C(2*n+4,4).
 * [A053141](http://oeis.org/A053141) ([L12 program](A053141.asm)): a(0)=0, a(1)=2 then a(n) = a(n-2) + 2*sqrt(8*a(n-1)^2 + 8*a(n-1) + 1).
@@ -2521,6 +2524,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054602](http://oeis.org/A054602) ([L07 program](A054602.asm)): a(n) = Sum_{d|3} phi(d)*n^(3/d).
 * [A054603](http://oeis.org/A054603) ([L13 program](A054603.asm)): a(n) = Sum_{d|4} phi(d)*n^(4/d).
 * [A054776](http://oeis.org/A054776) ([L11 program](A054776.asm)): a(n) = 3*n*(3*n-1)*(3*n-2).
+* [A054879](http://oeis.org/A054879) ([L13 program](A054879.asm)): Closed walks of length 2n along the edges of a cube based at a vertex.
 * [A054880](http://oeis.org/A054880) ([L11 program](A054880.asm)): a(n) = 3*(9^n - 1)/4.
 * [A054886](http://oeis.org/A054886) ([L12 program](A054886.asm)): Layer counting sequence for hyperbolic tessellation by cuspidal triangles of angles (Pi/3,Pi/3,0) (this is the classical modular tessellation).
 * [A054888](http://oeis.org/A054888) ([L08 program](A054888.asm)): Layer counting sequence for hyperbolic tessellation by regular pentagons of angle Pi/2.
@@ -3011,8 +3015,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070402](http://oeis.org/A070402) ([L10 program](A070402.asm)): a(n) = 2^n mod 5.
 * [A070403](http://oeis.org/A070403) ([L14 program](A070403.asm)): a(n) = 7^n mod 9.
 * [A070419](http://oeis.org/A070419) ([L21 program](A070419.asm)): a(n) = 7^n mod 36.
+* [A070431](http://oeis.org/A070431) ([L13 program](A070431.asm)): a(n) = n^2 mod 6.
 * [A070432](http://oeis.org/A070432) ([L14 program](A070432.asm)): Period 4: repeat [0, 1, 4, 1]; a(n) = n^2 mod 8.
 * [A070434](http://oeis.org/A070434) ([L15 program](A070434.asm)): a(n) = n^2 mod 11.
+* [A070511](http://oeis.org/A070511) ([L13 program](A070511.asm)): a(n) = n^4 mod 6.
 * [A070690](http://oeis.org/A070690) ([L16 program](A070690.asm)): a(n) = n^7 mod 5.
 * [A070696](http://oeis.org/A070696) ([L08 program](A070696.asm)): a(n) = n mod 14.
 * [A070875](http://oeis.org/A070875) ([L11 program](A070875.asm)): Binary expansion is 1x100...0 where x = 0 or 1.
@@ -3559,6 +3565,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088828](http://oeis.org/A088828) ([L12 program](A088828.asm)): Nonsquare positive odd numbers.
 * [A088911](http://oeis.org/A088911) ([L07 program](A088911.asm)): Period 6: repeat [1, 1, 1, 0, 0, 0].
 * [A088948](http://oeis.org/A088948) ([L18 program](A088948.asm)): (A006530(x)+A020639(x))/2 is an integer; that is, arithmetic mean of least and largest prime factor is an integer.
+* [A089012](http://oeis.org/A089012) ([L33 program](A089012.asm)): a(n) = 1 if n is an exponent of the Weyl group W(E_6), 0 otherwise.
 * [A089071](http://oeis.org/A089071) ([L06 program](A089071.asm)): Number of liberties a big eye of size n gives in the game of Go.
 * [A089108](http://oeis.org/A089108) ([L06 program](A089108.asm)): Convoluted convolved Fibonacci numbers G_4^(r).
 * [A089128](http://oeis.org/A089128) ([L17 program](A089128.asm)): a(n) = gcd(6,n).
@@ -3814,6 +3821,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099856](http://oeis.org/A099856) ([L08 program](A099856.asm)): Expansion of (1+3x)/(1-3x).
 * [A099857](http://oeis.org/A099857) ([L08 program](A099857.asm)): Expansion of (1+3x+x^2)/(1-3x+x^2).
 * [A099867](http://oeis.org/A099867) ([L11 program](A099867.asm)): a(n) = 5*a(n-1) - a(n-2) for n>1, a(0)=1, a(1)=9.
+* [A099893](http://oeis.org/A099893) ([L20 program](A099893.asm)): XOR BINOMIAL transform of A006068 (inverse Gray code).
 * [A099894](http://oeis.org/A099894) ([L12 program](A099894.asm)): XOR BINOMIAL transform of A038712.
 * [A099903](http://oeis.org/A099903) ([L15 program](A099903.asm)): Sum of all matrix elements of n X n matrix M(i,j) = i^3+j^3, (i,j = 1..n). a(n) = n^3*(n+1)^2/2.
 * [A099919](http://oeis.org/A099919) ([L09 program](A099919.asm)): F(3) + F(6) + F(9) + ... + F(3n), F(n) = Fibonacci numbers A000045.
