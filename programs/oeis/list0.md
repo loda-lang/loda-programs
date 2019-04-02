@@ -312,6 +312,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004964](http://oeis.org/A004964) ([L26 program](A004964.asm)): Ceiling of n*phi^9, where phi is the golden ratio, A001622.
 * [A004965](http://oeis.org/A004965) ([L23 program](A004965.asm)): Ceiling of n*phi^10, where phi is the golden ratio, A001622.
 * [A004967](http://oeis.org/A004967) ([L09 program](A004967.asm)): Ceiling of n*phi^12, where phi is the golden ratio, A001622.
+* [A004968](http://oeis.org/A004968) ([L22 program](A004968.asm)): Ceiling of n*phi^13, where phi is the golden ratio, A001622.
 * [A005004](http://oeis.org/A005004) ([L12 program](A005004.asm)): Davenport-Schinzel numbers of degree n on 3 symbols.
 * [A005009](http://oeis.org/A005009) ([L05 program](A005009.asm)): 7*2^n.
 * [A005010](http://oeis.org/A005010) ([L05 program](A005010.asm)): a(n) = 9*2^n.
@@ -1340,6 +1341,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025782](http://oeis.org/A025782) ([L10 program](A025782.asm)): Expansion of 1/((1-x)*(1-x^6)*(1-x^7)).
 * [A025784](http://oeis.org/A025784) ([L13 program](A025784.asm)): Expansion of 1/((1-x)(1-x^7)(1-x^8)).
 * [A025795](http://oeis.org/A025795) ([L14 program](A025795.asm)): Expansion of 1/((1-x^2)*(1-x^3)*(1-x^5)).
+* [A025796](http://oeis.org/A025796) ([L11 program](A025796.asm)): Expansion of 1/((1-x^2)(1-x^3)(1-x^6)).
 * [A026037](http://oeis.org/A026037) ([L07 program](A026037.asm)): a(n) = dot_product(1,2,...,n)*(3,4,...,n,1,2).
 * [A026040](http://oeis.org/A026040) ([L08 program](A026040.asm)): a(n) = dot_product(1,2,...,n)*(4,5,...,n,1,2,3).
 * [A026041](http://oeis.org/A026041) ([L11 program](A026041.asm)): a(n) = d(n)/2, where d = A026040.
@@ -2523,6 +2525,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054569](http://oeis.org/A054569) ([L07 program](A054569.asm)): a(n) = 4*n^2 - 6*n + 3.
 * [A054602](http://oeis.org/A054602) ([L07 program](A054602.asm)): a(n) = Sum_{d|3} phi(d)*n^(3/d).
 * [A054603](http://oeis.org/A054603) ([L13 program](A054603.asm)): a(n) = Sum_{d|4} phi(d)*n^(4/d).
+* [A054604](http://oeis.org/A054604) ([L19 program](A054604.asm)): a(n) = Sum_{d|5} phi(d)*n^(5/d).
 * [A054776](http://oeis.org/A054776) ([L11 program](A054776.asm)): a(n) = 3*n*(3*n-1)*(3*n-2).
 * [A054879](http://oeis.org/A054879) ([L13 program](A054879.asm)): Closed walks of length 2n along the edges of a cube based at a vertex.
 * [A054880](http://oeis.org/A054880) ([L11 program](A054880.asm)): a(n) = 3*(9^n - 1)/4.
@@ -3441,6 +3444,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084850](http://oeis.org/A084850) ([L13 program](A084850.asm)): 2^(n-1)*(n^2+2n+2).
 * [A084857](http://oeis.org/A084857) ([L12 program](A084857.asm)): Inverse binomial transform of n^2*3^(n-1).
 * [A084858](http://oeis.org/A084858) ([L11 program](A084858.asm)): Binomial transform of A001651.
+* [A084859](http://oeis.org/A084859) ([L10 program](A084859.asm)): Binomial transform of Cullen numbers A002064.
 * [A084860](http://oeis.org/A084860) ([L11 program](A084860.asm)): Expansion of (1-2x+2x^2-x^3)/(1-2x)^2.
 * [A084964](http://oeis.org/A084964) ([L07 program](A084964.asm)): Follow n+2 by n. Also solution of a(n+2)=a(n)+1, a(0)=2, a(1)=0.
 * [A084967](http://oeis.org/A084967) ([L12 program](A084967.asm)): Multiples of 5 whose GCD's with 6 is 1.

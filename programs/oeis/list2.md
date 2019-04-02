@@ -114,6 +114,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A209726](http://oeis.org/A209726) ([L18 program](A209726.asm)): 1/4 the number of (n+1) X 8 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
 * [A209876](http://oeis.org/A209876) ([L09 program](A209876.asm)): a(n) = 36*n - 6.
 * [A209931](http://oeis.org/A209931) ([L06 program](A209931.asm)):  Numbers n such that smallest digit of all divisors of n is 1.
+* [A209971](http://oeis.org/A209971) ([L12 program](A209971.asm)): a(n) = A000129(n) + n.
 * [A210032](http://oeis.org/A210032) ([L04 program](A210032.asm)): a(n)=n for n=1,2,3 and 4; a(n)=5 for n>=5.
 * [A210062](http://oeis.org/A210062) ([L20 program](A210062.asm)): Number of digits in 7^n.
 * [A210100](http://oeis.org/A210100) ([L10 program](A210100.asm)): Number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having one or three distinct values, and new values 0..2 introduced in row major order.
