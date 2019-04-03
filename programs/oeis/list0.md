@@ -1435,6 +1435,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A028430](http://oeis.org/A028430) ([L16 program](A028430.asm)): Clog sequence in base 9. Right to left concatenation of n, int(log_9(n)), int(log_9(int(log_9(n)))),... in base9.
 * [A028431](http://oeis.org/A028431) ([L15 program](A028431.asm)): Clog sequence in base 10. Right to left concatenation of n, int(log_10(n)), int(log_10(int(log_10(n)))),... in base10.
 * [A028438](http://oeis.org/A028438) ([L22 program](A028438.asm)): Golc sequence in base 8. Left to right concatenation of n,int(log_8(n)),int(log_8(int(log_8(n)))),... in base8.
+* [A028440](http://oeis.org/A028440) ([L24 program](A028440.asm)): Golc sequence in base 10. Left to right concatenation of n,int(log_10(n)),int(log_10(int(log_10(n)))),... in base 10.
 * [A028552](http://oeis.org/A028552) ([L06 program](A028552.asm)): a(n) = n*(n+3).
 * [A028557](http://oeis.org/A028557) ([L06 program](A028557.asm)): a(n) = n*(n+5).
 * [A028560](http://oeis.org/A028560) ([L06 program](A028560.asm)): a(n) = n*(n + 6), also numbers a(n) such that 9*(9 + a(n)) is a perfect square.
@@ -2694,6 +2695,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059841](http://oeis.org/A059841) ([L05 program](A059841.asm)): Period 2: Repeat [1,0]. a(n) = 1 - (n mod 2).
 * [A059845](http://oeis.org/A059845) ([L06 program](A059845.asm)): a(n) = n*(3*n + 11)/2.
 * [A059855](http://oeis.org/A059855) ([L08 program](A059855.asm)): Quotient cycle lengths in continued fraction expansion of Sqrt(n^2+4).
+* [A059937](http://oeis.org/A059937) ([L15 program](A059937.asm)): Sum of binary numbers with n 1's and two (possibly leading) 0's.
 * [A059939](http://oeis.org/A059939) ([L07 program](A059939.asm)): a(n) = floor(log_2(n+1) - 1).
 * [A059953](http://oeis.org/A059953) ([L15 program](A059953.asm)): Ordering of a deck of 52 cards after an out-shuffle.
 * [A059986](http://oeis.org/A059986) ([L08 program](A059986.asm)): Number of rods required to make a 3-D cube of side length n.
@@ -3152,6 +3154,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A077750](http://oeis.org/A077750) ([L09 program](A077750.asm)): Least significant digit of A077749(n).
 * [A077802](http://oeis.org/A077802) ([L09 program](A077802.asm)): Sum of products of parts increased by 1 in hook partitions of n, where hook partitions are of the form h*1^(n-h).
 * [A077846](http://oeis.org/A077846) ([L14 program](A077846.asm)): Expansion of 1/(1-3*x+2*x^3).
+* [A077850](http://oeis.org/A077850) ([L11 program](A077850.asm)): Expansion of (1-x)^(-1)/(1 - 2*x - x^2 + x^3).
 * [A077855](http://oeis.org/A077855) ([L12 program](A077855.asm)): Expansion of (1-x)^(-1)/(1 - 2*x + x^2 - x^3).
 * [A077858](http://oeis.org/A077858) ([L12 program](A077858.asm)): Expansion of (1-x)^(-1)/(1-2*x+2*x^2-2*x^3).
 * [A077859](http://oeis.org/A077859) ([L08 program](A077859.asm)): Expansion of (1-x)^(-1)/(1-2*x+2*x^2-x^3).

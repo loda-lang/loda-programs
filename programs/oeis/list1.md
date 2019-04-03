@@ -467,6 +467,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117230](http://oeis.org/A117230) ([L05 program](A117230.asm)): Start with 1 and repeatedly reverse the digits and add 1 to get the next term.
 * [A117248](http://oeis.org/A117248) ([L11 program](A117248.asm)): Number of down steps at start of segment n of A079051.
 * [A117450](http://oeis.org/A117450) ([L12 program](A117450.asm)): Expansion of (1-x+x^2+x^5)/((1-x)^2*(1-x^5)).
+* [A117451](http://oeis.org/A117451) ([L15 program](A117451.asm)): Expansion of (1-x+x^2+x^5)/((1-x)(1-x^5)).
 * [A117560](http://oeis.org/A117560) ([L09 program](A117560.asm)): a(n) = n*(n^2 - 1)/2 - 1.
 * [A117571](http://oeis.org/A117571) ([L06 program](A117571.asm)): Expansion of (1+2*x^2)/((1-x)*(1-x^3)).
 * [A117572](http://oeis.org/A117572) ([L12 program](A117572.asm)): Expansion of (1+2x^2)/((1-x^2)(1-x^3)).
@@ -786,6 +787,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130863](http://oeis.org/A130863) ([L13 program](A130863.asm)): Ratio of quadruple Sum of k^2-1 to quadruple sum of k made into an integer sequence: (1/6)*(-1 + n)(2 + n)(3 + n)(7 + n).
 * [A130877](http://oeis.org/A130877) ([L07 program](A130877.asm)): Numbers that are congruent to {0, 5} mod 9.
 * [A130883](http://oeis.org/A130883) ([L06 program](A130883.asm)): a(n) = 2*n^2 - n + 1.
+* [A130884](http://oeis.org/A130884) ([L17 program](A130884.asm)): 3n^3 + 2n^2 + n + 1.
 * [A130885](http://oeis.org/A130885) ([L20 program](A130885.asm)): 3n^3 - 2n^2 + n - 1.
 * [A130909](http://oeis.org/A130909) ([L06 program](A130909.asm)): Simple periodic sequence (n mod 16).
 * [A130974](http://oeis.org/A130974) ([L15 program](A130974.asm)): Period 6: repeat [1, 1, 1, 3, 3, 3].
@@ -950,6 +952,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133124](http://oeis.org/A133124) ([L14 program](A133124.asm)): A007318 * [1, 2, 2, 3, 2, 3, 2, 3, 2,...].
 * [A133137](http://oeis.org/A133137) ([L08 program](A133137.asm)): a(1) = 1, a(2) = 2, a(n) = smallest number not the sum of 4th powers of 2 distinct earlier terms.
 * [A133140](http://oeis.org/A133140) ([L07 program](A133140.asm)): a(0) = 2, a(n) = 2^n + 2 for n>=1.
+* [A133145](http://oeis.org/A133145) ([L25 program](A133145.asm)): Period 4: repeat [1, 2, 4, 8].
 * [A133146](http://oeis.org/A133146) ([L09 program](A133146.asm)): Antidiagonal sums of the triangle A133128.
 * [A133161](http://oeis.org/A133161) ([L10 program](A133161.asm)): Indices of the triangular numbers which are also centered triangular number.
 * [A133196](http://oeis.org/A133196) ([L06 program](A133196.asm)): n+2 repeated n times.
@@ -1659,6 +1662,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158644](http://oeis.org/A158644) ([L13 program](A158644.asm)): a(n) = 52*n^2 + 1.
 * [A158646](http://oeis.org/A158646) ([L10 program](A158646.asm)): a(n) = 54*n^2 + 1.
 * [A158660](http://oeis.org/A158660) ([L15 program](A158660.asm)): a(n) = 56*n^2 + 1.
+* [A158670](http://oeis.org/A158670) ([L15 program](A158670.asm)): a(n) = 60*n^2 - 1.
 * [A158672](http://oeis.org/A158672) ([L24 program](A158672.asm)): a(n) = 900*n^2 + 30.
 * [A158673](http://oeis.org/A158673) ([L20 program](A158673.asm)): a(n) = 60*n^2 + 1.
 * [A158684](http://oeis.org/A158684) ([L33 program](A158684.asm)): a(n) = 64*n^2 - 1.
@@ -2665,6 +2669,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187190](http://oeis.org/A187190) ([L15 program](A187190.asm)): Number of 3-turn rook's tours on an n X n board summed over all starting positions
 * [A187206](http://oeis.org/A187206) ([L12 program](A187206.asm)): a(n) = 6*(24*n - 1).
 * [A187272](http://oeis.org/A187272) ([L10 program](A187272.asm)): a(n) = (n/4)*2^(n/2)*((1+sqrt(2))^2 + (-1)^n*(1-sqrt(2))^2).
+* [A187273](http://oeis.org/A187273) ([L12 program](A187273.asm)): a(n) = (n/4)*3^(n/2)*((1+sqrt(3))^2+(-1)^n*(1-sqrt(3))^2).
 * [A187277](http://oeis.org/A187277) ([L09 program](A187277.asm)): Let S denote the palindromes in the language {0,1,2,...,n-1}*; a(n) = number of words of length 4 in the language SS.
 * [A187287](http://oeis.org/A187287) ([L07 program](A187287.asm)): Number of 2-step one or two space at a time rook's tours on an n X n board summed over all starting positions.
 * [A187297](http://oeis.org/A187297) ([L06 program](A187297.asm)): Number of 2-step one space leftwards or up, two space rightwards or down asymmetric rook's tours on an n X n board summed over all starting positions
