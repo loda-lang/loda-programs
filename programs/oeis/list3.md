@@ -94,6 +94,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305064](http://oeis.org/A305064) ([L08 program](A305064.asm)): a(n) = 42*2^n - 20.
 * [A305065](http://oeis.org/A305065) ([L06 program](A305065.asm)): a(n) = 48*2^n - 24.
 * [A305068](http://oeis.org/A305068) ([L13 program](A305068.asm)): a(n) = 54*n - 18 (n>=1).
+* [A305072](http://oeis.org/A305072) ([L11 program](A305072.asm)): a(n) = 144*n^2 - 24*n (n>=1).
 * [A305074](http://oeis.org/A305074) ([L06 program](A305074.asm)): a(n) = 20*n - 8 (n>=1).
 * [A305075](http://oeis.org/A305075) ([L07 program](A305075.asm)): a(n) = 32*n - 24 (n>=1).
 * [A305153](http://oeis.org/A305153) ([L17 program](A305153.asm)): a(n) = 30*2^n + 12.

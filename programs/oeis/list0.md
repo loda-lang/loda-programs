@@ -521,6 +521,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008642](http://oeis.org/A008642) ([L14 program](A008642.asm)): Quarter-squares repeated.
 * [A008649](http://oeis.org/A008649) ([L19 program](A008649.asm)): Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
 * [A008652](http://oeis.org/A008652) ([L18 program](A008652.asm)): Molien series for group of 3 X 3 upper triangular matrices over GF( 4 ).
+* [A008676](http://oeis.org/A008676) ([L11 program](A008676.asm)): Expansion of 1/((1-x^3)(1-x^5)).
 * [A008679](http://oeis.org/A008679) ([L11 program](A008679.asm)): Expansion of 1/((1-x^3)(1-x^4)).
 * [A008706](http://oeis.org/A008706) ([L05 program](A008706.asm)): Coordination sequence for 3.3.3.4.4 planar net.
 * [A008720](http://oeis.org/A008720) ([L14 program](A008720.asm)): Molien series for 3-dimensional group [2,5] = *225.
@@ -1268,6 +1269,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A023562](http://oeis.org/A023562) ([L08 program](A023562.asm)): Convolution of A023531 and odd numbers.
 * [A023607](http://oeis.org/A023607) ([L07 program](A023607.asm)): n * Fibonacci(n+1).
 * [A023619](http://oeis.org/A023619) ([L15 program](A023619.asm)): Convolution of Lucas numbers and (F(2), F(3), F(4), ...).
+* [A023781](http://oeis.org/A023781) ([L15 program](A023781.asm)): Metadromes: digits in base 13 are in strict ascending order.
 * [A023782](http://oeis.org/A023782) ([L17 program](A023782.asm)): Metadromes: digits in base 14 are in strict ascending order.
 * [A023804](http://oeis.org/A023804) ([L06 program](A023804.asm)): Xenodromes: all digits in base 9 are different.
 * [A023805](http://oeis.org/A023805) ([L06 program](A023805.asm)): Xenodromes: all digits in base 11 are different.
@@ -3020,6 +3022,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070402](http://oeis.org/A070402) ([L10 program](A070402.asm)): a(n) = 2^n mod 5.
 * [A070403](http://oeis.org/A070403) ([L14 program](A070403.asm)): a(n) = 7^n mod 9.
 * [A070419](http://oeis.org/A070419) ([L21 program](A070419.asm)): a(n) = 7^n mod 36.
+* [A070421](http://oeis.org/A070421) ([L15 program](A070421.asm)): a(n) = 7^n mod 38.
+* [A070430](http://oeis.org/A070430) ([L19 program](A070430.asm)): a(n) = n^2 mod 5.
 * [A070431](http://oeis.org/A070431) ([L13 program](A070431.asm)): a(n) = n^2 mod 6.
 * [A070432](http://oeis.org/A070432) ([L14 program](A070432.asm)): Period 4: repeat [0, 1, 4, 1]; a(n) = n^2 mod 8.
 * [A070434](http://oeis.org/A070434) ([L15 program](A070434.asm)): a(n) = n^2 mod 11.
@@ -3165,6 +3169,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A077958](http://oeis.org/A077958) ([L14 program](A077958.asm)): Expansion of 1/(1-2*x^3).
 * [A078008](http://oeis.org/A078008) ([L08 program](A078008.asm)): Expansion of (1-x)/(1 - x - 2*x^2).
 * [A078057](http://oeis.org/A078057) ([L09 program](A078057.asm)): Expansion of (1+x)/(1-2*x-x^2).
+* [A078107](http://oeis.org/A078107) ([L14 program](A078107.asm)): Numbers n such that it is not possible to arrange the numbers from 1 to n in a chain with adjacent links summing to a square.
 * [A078112](http://oeis.org/A078112) ([L05 program](A078112.asm)): Coefficients a(n) in the unique expansion sin(1) = Sum[a(n)/n!, n>=1], where a(n) satisfies 0<=a(n)<n.
 * [A078113](http://oeis.org/A078113) ([L16 program](A078113.asm)): Let u(1)=u(2)=1, u(3)=n, u(k) = (1/2)*abs(2*u(k-1) -u(k-2)-u(k-3)); sequence gives values of n such that sum(k>=1, u(k)) is an integer.
 * [A078309](http://oeis.org/A078309) ([L08 program](A078309.asm)): Numbers that are congruent to {1, 4, 7} mod 10.
@@ -3607,6 +3612,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A090773](http://oeis.org/A090773) ([L08 program](A090773.asm)): Numbers that are congruent to {4, 6} mod 10.
 * [A090809](http://oeis.org/A090809) ([L07 program](A090809.asm)): Coefficient of the irreducible character of S_m indexed by (m-2n+2,2n-2) in the n-th Kronecker power of the representation indexed by (m-2,2).
 * [A090950](http://oeis.org/A090950) ([L12 program](A090950.asm)): a(n) = (1/24)*(n+1)*(n+3)*(n^2+22*n+88).
+* [A090965](http://oeis.org/A090965) ([L09 program](A090965.asm)): a(n) = 8*a(n-1) - 4*a(n-2), where a(0) = 1, a(1) = 4.
 * [A090989](http://oeis.org/A090989) ([L09 program](A090989.asm)): Number of meaningful differential operations of the n-th order on the space R^4.
 * [A090991](http://oeis.org/A090991) ([L09 program](A090991.asm)): Number of meaningful differential operations of the n-th order on the space R^6.
 * [A091084](http://oeis.org/A091084) ([L07 program](A091084.asm)): mod(A001045(n),10).
@@ -3636,6 +3642,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092297](http://oeis.org/A092297) ([L08 program](A092297.asm)): Number of ways of 3-coloring an annulus consisting of n zones joined like a pearl necklace.
 * [A092323](http://oeis.org/A092323) ([L06 program](A092323.asm)): 2^m - 1 appears 2^m times.
 * [A092364](http://oeis.org/A092364) ([L15 program](A092364.asm)): a(n) = n^2*binomial(n,2).
+* [A092365](http://oeis.org/A092365) ([L19 program](A092365.asm)): Coefficient of X^2 in expansion of (1 + n*X + n*X^2)^n.
 * [A092387](http://oeis.org/A092387) ([L08 program](A092387.asm)): a(n) = Fibonacci(2*n+1) + Fibonacci(2*n-1) + 2.
 * [A092440](http://oeis.org/A092440) ([L17 program](A092440.asm)): a(n) = 2^(2n+1) - 2^(n+1) + 1.
 * [A092442](http://oeis.org/A092442) ([L12 program](A092442.asm)): Sequence arising from enumeration of domino tilings of Aztec Pillow-like regions.
@@ -3733,6 +3740,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A096398](http://oeis.org/A096398) ([L08 program](A096398.asm)): Numbers n such that 0= #{ 1<=i<=n : k(n,i)=-1 } where k(n,i) is the Kronecker symbol.
 * [A096582](http://oeis.org/A096582) ([L10 program](A096582.asm)): From the "100 Green Bottles" song.
 * [A096748](http://oeis.org/A096748) ([L14 program](A096748.asm)): Expansion of (1+x)^2/(1-x^2-x^4).
+* [A096773](http://oeis.org/A096773) ([L11 program](A096773.asm)): a(n+2) = 4*a(n) + 1; a(1) = 0, a(2) = 3.
 * [A096777](http://oeis.org/A096777) ([L07 program](A096777.asm)): a(n) = a(n-1) + Sum_{k=1..n-1}(a(k) mod 2), a(1) = 1.
 * [A096886](http://oeis.org/A096886) ([L12 program](A096886.asm)): Expansion of (1+3x)/(1-8x^2).
 * [A096941](http://oeis.org/A096941) ([L09 program](A096941.asm)): Fourth column of (1,5)-Pascal triangle A096940.

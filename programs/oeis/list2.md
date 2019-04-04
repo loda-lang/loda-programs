@@ -136,6 +136,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210977](http://oeis.org/A210977) ([L07 program](A210977.asm)): A005475 and positive terms of A000566 interleaved.
 * [A210978](http://oeis.org/A210978) ([L15 program](A210978.asm)): A186029 and positive terms of A001106 interleaved.
 * [A211010](http://oeis.org/A211010) ([L05 program](A211010.asm)): Value on the axis "x" of the endpoint of the structure of A211000 at n-th stage.
+* [A211012](http://oeis.org/A211012) ([L11 program](A211012.asm)): Total area of all squares and rectangles after 2^n stages in the toothpick structure of A139250, assuming the toothpicks have length 2.
 * [A211013](http://oeis.org/A211013) ([L06 program](A211013.asm)): Second 13-gonal numbers: a(n) = n*(11*n+9)/2.
 * [A211014](http://oeis.org/A211014) ([L06 program](A211014.asm)): Second 14-gonal numbers: n(6n+5).
 * [A211253](http://oeis.org/A211253) ([L18 program](A211253.asm)): Number of (n+1) X (n+1) -6..6 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
@@ -414,6 +415,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227177](http://oeis.org/A227177) ([L07 program](A227177.asm)): n occurs n^2 - n + 1 times.
 * [A227179](http://oeis.org/A227179) ([L07 program](A227179.asm)): After initial 0, integers from 0 to n(n-1) followed by integers from 0 to n(n+1) and so on.
 * [A227181](http://oeis.org/A227181) ([L09 program](A227181.asm)): Irregular table: integers from n to n^2 followed by integers from (n+1) to (n+1)^2.
+* [A227265](http://oeis.org/A227265) ([L11 program](A227265.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of three or less, with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227353](http://oeis.org/A227353) ([L10 program](A227353.asm)): Number of lattice points in the closed region bounded by the graphs of y = 3*x/5, x = n, and y = 0, excluding points on the x-axis.
 * [A227380](http://oeis.org/A227380) ([L07 program](A227380.asm)): Doubling the first two of every four nonnegative numbers.
 * [A227417](http://oeis.org/A227417) ([L15 program](A227417.asm)): Integer triples a(3n-2) = n, a(3n-1) = n+4, and a(3n) = n+7.
@@ -537,6 +539,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A238276](http://oeis.org/A238276) ([L11 program](A238276.asm)): a(n) = (9*8^n - 2)/7.
 * [A238290](http://oeis.org/A238290) ([L08 program](A238290.asm)): a(n+1) = a(n) + 6 + 2*( n - 2*floor(n/2) ) for n>0, a(0)=0.
 * [A238303](http://oeis.org/A238303) ([L08 program](A238303.asm)): Triangle T(n,k), 0<=k<=n, read by rows given by T(n,0) = 1, T(n,k) = 2 if k>0.
+* [A238374](http://oeis.org/A238374) ([L13 program](A238374.asm)): Row sums of triangle in A204026.
 * [A238377](http://oeis.org/A238377) ([L08 program](A238377.asm)): Row sums of triangle in A204028.
 * [A238410](http://oeis.org/A238410) ([L08 program](A238410.asm)): a(n) = floor((3(n-1)^2 + 1)/2).
 * [A238411](http://oeis.org/A238411) ([L07 program](A238411.asm)): a(n) = 2*n*floor(n/2).
@@ -1171,6 +1174,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273745](http://oeis.org/A273745) ([L11 program](A273745.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 901", based on the 5-celled von Neumann neighborhood.
 * [A273789](http://oeis.org/A273789) ([L11 program](A273789.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
 * [A273791](http://oeis.org/A273791) ([L07 program](A273791.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
+* [A273981](http://oeis.org/A273981) ([L25 program](A273981.asm)): Erroneous version of A005897.
 * [A273982](http://oeis.org/A273982) ([L07 program](A273982.asm)): Number of little cubes visible around an n X n X n cube with a face on a table.
 * [A274039](http://oeis.org/A274039) ([L04 program](A274039.asm)): Expansion of (x^4 + x^10) / (1 - 2*x + x^2).
 * [A274047](http://oeis.org/A274047) ([L17 program](A274047.asm)): Diameter of Generalized Petersen Graph G(n, 2).

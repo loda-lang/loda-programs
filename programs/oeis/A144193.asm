@@ -8,7 +8,6 @@ lpb $3,1
   lpb $0,1
     add $0,$3
     sub $2,$2
-    sub $4,$4
     add $1,$0
     add $2,6
     sub $1,6
@@ -17,10 +16,10 @@ lpb $3,1
     add $2,3
     sub $0,$2
   lpe
-  mov $5,$0
-  lpb $5,1
+  mov $4,$0
+  lpb $4,1
     sub $3,6
-    sub $5,$3
+    sub $4,$3
   lpe
   sub $3,2
 lpe

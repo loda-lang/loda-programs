@@ -591,6 +591,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A124011](http://oeis.org/A124011) ([L06 program](A124011.asm)): Add three, add six, add nine, ....
 * [A124080](http://oeis.org/A124080) ([L05 program](A124080.asm)): 10 times triangular numbers: a(n) = 5*n*(n + 1).
 * [A124133](http://oeis.org/A124133) ([L08 program](A124133.asm)): a(n)=(-1/2)*sum_{i1+i2+i3=2n} ((2*n)!/(i1! i2! i3!))*B(i1) where B are the Bernoulli numbers.
+* [A124156](http://oeis.org/A124156) ([L18 program](A124156.asm)): Thickness of complete graph K_n.
 * [A124158](http://oeis.org/A124158) ([L08 program](A124158.asm)): Maximal number of edges in a rectangle visibility graph with n nodes.
 * [A124171](http://oeis.org/A124171) ([L12 program](A124171.asm)): Sequence obtained by reading the triangles shown below by rows.
 * [A124302](http://oeis.org/A124302) ([L08 program](A124302.asm)): Number of set partitions with at most 3 blocks; number of Dyck paths of height at most 4; dimension of space of symmetric polynomials in 3 noncommuting variables.
@@ -1021,6 +1022,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134593](http://oeis.org/A134593) ([L08 program](A134593.asm)): a(n) = 5*n^2 + 10*n + 1. Coefficients of the rational part of (1 + sqrt(n))^5.
 * [A134594](http://oeis.org/A134594) ([L07 program](A134594.asm)): a(n) = n^2 + 10*n + 5: coefficients of the irrational part of (1 + sqrt(n))^5.
 * [A134638](http://oeis.org/A134638) ([L12 program](A134638.asm)): Row sums of triangle A134637.
+* [A134693](http://oeis.org/A134693) ([L18 program](A134693.asm)): a(n)=A133806(n)+A133806(n+6).
 * [A134752](http://oeis.org/A134752) ([L18 program](A134752.asm)): a(n) = 3^(2*n-1) + 2.
 * [A134816](http://oeis.org/A134816) ([L12 program](A134816.asm)): Padovan's spiral numbers.
 * [A134868](http://oeis.org/A134868) ([L09 program](A134868.asm)): A103451 * A002260.
@@ -1280,6 +1282,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144112](http://oeis.org/A144112) ([L14 program](A144112.asm)): Weight array W={w(i,j)} of the natural number array A000027.
 * [A144129](http://oeis.org/A144129) ([L09 program](A144129.asm)): ChebyshevT(3, n).
 * [A144138](http://oeis.org/A144138) ([L13 program](A144138.asm)): Chebyshev polynomial of the second kind U(3,n).
+* [A144193](http://oeis.org/A144193) ([L22 program](A144193.asm)): Square array (5 X 5) read by rows.
 * [A144217](http://oeis.org/A144217) ([L12 program](A144217.asm)): Weight array of A144216: a rectangular array by antidiagonals.
 * [A144312](http://oeis.org/A144312) ([L08 program](A144312.asm)): 5*n*(5*n+1)/2.
 * [A144314](http://oeis.org/A144314) ([L07 program](A144314.asm)): a(n) = 3*n*(6*n+1).
@@ -1925,6 +1928,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166621](http://oeis.org/A166621) ([L05 program](A166621.asm)): a(n) = 10*n - a(n-1), with n>1, a(1)=5.
 * [A166639](http://oeis.org/A166639) ([L23 program](A166639.asm)): a(n) = 6*n + 3 + 4*(-1)^n.
 * [A166781](http://oeis.org/A166781) ([L10 program](A166781.asm)): Number of nX3 1..2 arrays containing at least one of each value, all equal values connected, and rows considered as a single number in nondecreasing order.
+* [A166796](http://oeis.org/A166796) ([L12 program](A166796.asm)): Number of nX2 1..3 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166814](http://oeis.org/A166814) ([L13 program](A166814.asm)): Number of nX2 1..3 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in increasing order.
 * [A166830](http://oeis.org/A166830) ([L10 program](A166830.asm)): Number of n X 3 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nonincreasing order.
 * [A166863](http://oeis.org/A166863) ([L10 program](A166863.asm)): a(1)= 1; a(2)= 5; thereafter a(n)= a(n-1) + a(n-2) + 5.
@@ -1980,6 +1984,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168104](http://oeis.org/A168104) ([L13 program](A168104.asm)): a(n) = sum of natural numbers m such that n - 5 <= m <= n + 5.
 * [A168105](http://oeis.org/A168105) ([L11 program](A168105.asm)): a(n) = sum of natural numbers m such that n - 6 <= m <= n + 6.
 * [A168106](http://oeis.org/A168106) ([L15 program](A168106.asm)): a(n) = sum of natural numbers m such that n - 7 <= m <= n + 7.
+* [A168107](http://oeis.org/A168107) ([L14 program](A168107.asm)): a(n) = sum of natural numbers m such that n - 8 <= m <= n + 8.
 * [A168178](http://oeis.org/A168178) ([L12 program](A168178.asm)): a(n) = n^3*(n^2 + 1)/2.
 * [A168181](http://oeis.org/A168181) ([L06 program](A168181.asm)): Characteristic function of numbers that are not multiples of 8.
 * [A168182](http://oeis.org/A168182) ([L06 program](A168182.asm)): Characteristic function of numbers that are not multiples of 9.
