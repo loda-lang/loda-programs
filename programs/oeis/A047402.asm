@@ -7,9 +7,6 @@ add $5,$0
 add $5,$4
 sub $5,$4
 add $5,$4
-mov $1,$0
-mov $2,$0
-sub $1,$5
 add $2,3
 add $4,$5
 add $2,6
