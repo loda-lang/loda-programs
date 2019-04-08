@@ -1,5 +1,6 @@
 ; A164950: 1 if there is a winning strategy for misère Sprouts with n initial points, else 0.
 ; 1,0,0,0,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 mov $1,1
 mov $2,$0

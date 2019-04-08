@@ -1,5 +1,6 @@
 ; A112561: Sieve performed by successive iterations of steps where step m is: keep m terms, remove the next 3 and repeat; as m = 1,2,3,.. the remaining terms form this sequence.
 ; 1,5,21,61,125,261,421,605,1101,1681,2525,2781,4201,5645,6741,9541,11765,13701,17641,21305,27981,29401,37265,43521,51541,59945,65781,78121,89345,99981,121381,124445,144321,173041,189965,212361,229381
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 add $1,1
 mov $2,$0

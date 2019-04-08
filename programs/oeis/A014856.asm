@@ -1,6 +1,6 @@
 ; A014856: Inverse of 847th cyclotomic polynomial.
 ; 1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; generated using -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T02.asm
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 add $1,1
 mov $2,$0

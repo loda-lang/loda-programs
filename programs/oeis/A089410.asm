@@ -1,5 +1,6 @@
 ; A089410: Least common multiple of all cycle sizes (also the maximum cycle size) in range [A014137(n-1)..A014138(n-1)] of permutation A074679/A074680.
 ; 1,1,2,5,14,18,22,26,30,34,38,42,46,50,54,58,62,66,70,74,78
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 add $3,$0
 mov $2,$3

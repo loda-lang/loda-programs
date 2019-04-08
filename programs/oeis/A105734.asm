@@ -1,5 +1,6 @@
 ; A105734: For n>2, a(n) > 0 is such that a(n-1)^2+4*a(n-2)*a(n) is a minimal square, with a(1)=1, a(2)=1.
 ; 1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 add $4,3
 add $0,$4

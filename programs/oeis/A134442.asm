@@ -1,5 +1,6 @@
 ; A134442: Last two digits of primes of form 4n+3 (A002145). Leading 0's omitted.
 ; 3,7,11,19,23,27,31,39,43,47,51,59,63,67,71,79,83,87,91,99
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 add $3,$0
 mov $0,6

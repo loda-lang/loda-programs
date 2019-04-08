@@ -1,5 +1,6 @@
 ; A278831: Minimal number of possible moves at the n-th ply of a chess game, excluding positions where no move is possible.
 ; 20,20,19,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 add $2,$0
 add $3,$0

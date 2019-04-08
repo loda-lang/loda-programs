@@ -1,5 +1,6 @@
 ; A322804: Number of different positions a sphinx tile can occupy in an equilateral triangle of order n.
 ; 0,0,6,18,42,78,126,186,258,342,438,546,666,798,942,1098,1266,1446,1638,1842
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 mov $4,3
 sub $0,1

@@ -1,6 +1,6 @@
 ; A203241: Second elementary symmetric function of the first n terms of (1,2,4,8,...).
 ; 2,14,70,310,1302,5334,21590,86870,348502,1396054,5588310,22361430,89462102,357881174,1431590230,5726491990,22906230102,91625444694,366502827350,1466013406550,5864057820502,23456239670614,93824975459670
-; generated using -p 20 -n 6 -i 6 -o asm -a cd -e programs/templates/T01.asm
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 add $0,1
 lpb $0,1

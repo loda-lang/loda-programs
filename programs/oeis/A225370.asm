@@ -1,5 +1,6 @@
 ; A225370: Let f(S) = maximal m such that the string S contains two disjoint identical (scattered) substrings of length m ("twins"); a(n) = min f(S) over all binary strings of length n.
 ; 0,0,1,1,1,2,2,2,3,3,4,4,5,5,5,6,6,7,7,8
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 mov $1,$0
 mov $2,$1

@@ -1,5 +1,6 @@
 ; A063197: Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 9 ).
 ; 0,1,1,3,3,4,5,6,6,8,8,9,10,11,11,13,13,14,15,16,16,18,18,19,20,21,21,23,23,24,25,26,26,28,28,29,30,31,31,33,33,34,35,36,36,38,38,39,40,41
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 mov $4,$0
 mov $2,$0

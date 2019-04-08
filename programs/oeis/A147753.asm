@@ -1,5 +1,6 @@
 ; A147753: Number of maximum-size subsets of {1,2,3,...,n} whose geometric means are an integer.
 ; 0,0,0,1,1,1,1,2,1,1,1,1,1,1,1,2,2,2,2,2
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 add $3,6
 mov $1,$0

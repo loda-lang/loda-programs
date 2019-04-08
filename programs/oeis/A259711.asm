@@ -1,5 +1,6 @@
 ; A259711: Number of positions the 7g heptiamond occupies in an equilateral triangle of order n.
 ; 0,0,3,9,21,39,63,93,129,171,219,273,333,399,471,549,633,723,819,921
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 sub $0,1
 mov $2,3

@@ -1,5 +1,6 @@
 ; A185437: The least number of colors required to color an n-bead necklace so that each bead can be identified.
 ; 1,2,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 add $1,$0
 add $0,1

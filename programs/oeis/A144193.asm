@@ -1,5 +1,6 @@
 ; A144193: Square array (5 X 5) read by rows.
 ; 0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0
+; generated using -p 40 -n 6 -i 6 -o asml -a cdi
 
 mov $2,$0
 add $3,$2
