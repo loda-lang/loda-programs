@@ -916,6 +916,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132433](http://oeis.org/A132433) ([L08 program](A132433.asm)): a(1) = 2; for n>=2, a(n) = 8*a(n-1) + 1.
 * [A132440](http://oeis.org/A132440) ([L13 program](A132440.asm)): Infinitesimal Pascal matrix: generator (lower triangular matrix representation) of the Pascal matrix, the classical operator xDx, iterated Laguerre transforms, associated matrices of the list partition transform and general Euler transformation for sequences.
 * [A132477](http://oeis.org/A132477) ([L08 program](A132477.asm)): Row sums of triangle A132476.
+* [A132681](http://oeis.org/A132681) ([L21 program](A132681.asm)): Infinitesimal generator matrix for a diagonally-shifted Pascal matrix, binomial(n+m,k+m), for m=1, related to Laguerre(n,x,m).
 * [A132720](http://oeis.org/A132720) ([L09 program](A132720.asm)): Sequence is identical to its second differences in absolute values.
 * [A132730](http://oeis.org/A132730) ([L09 program](A132730.asm)): Row sums of triangle A132729.
 * [A132732](http://oeis.org/A132732) ([L08 program](A132732.asm)): Row sums of triangle A132731.
@@ -1771,6 +1772,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162436](http://oeis.org/A162436) ([L07 program](A162436.asm)): a(n) = 3*a(n-2) for n > 2; a(1) = 1, a(2) = 3.
 * [A162483](http://oeis.org/A162483) ([L08 program](A162483.asm)): a(n) is the number of perfect matchings of an edge-labeled 2 X (2n+1) Mobius grid graph.
 * [A162540](http://oeis.org/A162540) ([L10 program](A162540.asm)): a(n) = (2*n+1)*(2*n+3)*(2*n+5)/3.
+* [A162559](http://oeis.org/A162559) ([L10 program](A162559.asm)): a(n) = ((4+sqrt(3))*(1+sqrt(3))^n + (4-sqrt(3))*(1-sqrt(3))^n)/2.
 * [A162562](http://oeis.org/A162562) ([L13 program](A162562.asm)): a(n) = ((5+sqrt(3))*(1+sqrt(3))^n + (5-sqrt(3))*(1-sqrt(3))^n)/2.
 * [A162563](http://oeis.org/A162563) ([L10 program](A162563.asm)): a(n) = ((5+sqrt(3))*(2+sqrt(3))^n + (5-sqrt(3))*(2-sqrt(3))^n)/2.
 * [A162607](http://oeis.org/A162607) ([L08 program](A162607.asm)): a(n) = n*(n^2 - 4*n + 5)/2.
@@ -2317,6 +2319,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173307](http://oeis.org/A173307) ([L09 program](A173307.asm)): a(n) = 13*n*(n+1).
 * [A173308](http://oeis.org/A173308) ([L10 program](A173308.asm)): 17*n*(n+1).
 * [A173309](http://oeis.org/A173309) ([L12 program](A173309.asm)): 19*n*(n+1).
+* [A173317](http://oeis.org/A173317) ([L19 program](A173317.asm)): 5*n! - 1.
 * [A173391](http://oeis.org/A173391) ([L15 program](A173391.asm)): a(n) = 6n + 3^n.
 * [A173511](http://oeis.org/A173511) ([L18 program](A173511.asm)): a(n) = 4*n^2 + floor(n/2).
 * [A173512](http://oeis.org/A173512) ([L11 program](A173512.asm)): a(n) = 8*n + 4 + n mod 2.
@@ -2415,6 +2418,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A177071](http://oeis.org/A177071) ([L15 program](A177071.asm)): (7n + 3)(7n + 4).
 * [A177073](http://oeis.org/A177073) ([L15 program](A177073.asm)): (9*n+4)*(9*n+5).
 * [A177154](http://oeis.org/A177154) ([L06 program](A177154.asm)): Fractional part of the conversion from degrees Centigrade (or Celsius) to Fahrenheit.
+* [A177206](http://oeis.org/A177206) ([L13 program](A177206.asm)): a(n) = 2*binomial(n+4, 4) + n + 4.
 * [A177239](http://oeis.org/A177239) ([L14 program](A177239.asm)): Partial sums of round(n^2/20).
 * [A177274](http://oeis.org/A177274) ([L05 program](A177274.asm)): Periodic sequence: Repeat 1, 2, 3, 4, 5, 6, 7, 8, 9.
 * [A177342](http://oeis.org/A177342) ([L09 program](A177342.asm)): a(n) = (4*n^3-3*n^2+5*n-3)/3.
@@ -2934,6 +2938,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A196661](http://oeis.org/A196661) ([L09 program](A196661.asm)): Expansion of (1-2x)/(1-7x).
 * [A197649](http://oeis.org/A197649) ([L06 program](A197649.asm)): Sum(k*Fibonacci(2*k), k=0..n), Fibonacci(n)=A000045(n)
 * [A197652](http://oeis.org/A197652) ([L06 program](A197652.asm)): Numbers that are congruent to 0 or 1 mod 10.
+* [A197916](http://oeis.org/A197916) ([L17 program](A197916.asm)): Related to the periodic sequence A171654.
 * [A197985](http://oeis.org/A197985) ([L08 program](A197985.asm)): Round((n+1/n)^2)
 * [A198017](http://oeis.org/A198017) ([L07 program](A198017.asm)): a(n) = n*(7*n + 11)/2 + 1.
 * [A198268](http://oeis.org/A198268) ([L24 program](A198268.asm)): Round(n*sqrt(12)).

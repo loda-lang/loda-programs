@@ -48,6 +48,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302709](http://oeis.org/A302709) ([L12 program](A302709.asm)): a(n) = Trinomial(2*n+1, 4) = (1/6)*n*(2*n + 1)*(2*n^2 + 9*n + 1), n >= 0.
 * [A302757](http://oeis.org/A302757) ([L09 program](A302757.asm)): a(n) is the smallest number whose greedy representation as a sum of terms of A126684 uses n terms.
 * [A302906](http://oeis.org/A302906) ([L06 program](A302906.asm)): a(0) = 0; for n > 0, a(n) = a(n-1) + 5*n + 4.
+* [A303295](http://oeis.org/A303295) ([L10 program](A303295.asm)): a(n) is the maximum water retention of a height-3 length-n number parallelogram with maximum water area.
 * [A303302](http://oeis.org/A303302) ([L14 program](A303302.asm)): a(n) = 34*n^2.
 * [A303609](http://oeis.org/A303609) ([L11 program](A303609.asm)): a(n) = 2*n^3 + 9*n^2 + 9*n.
 * [A303692](http://oeis.org/A303692) ([L15 program](A303692.asm)): a(n) = n^2*(2*n - 3 - (-1)^n)/4.
@@ -57,6 +58,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304161](http://oeis.org/A304161) ([L12 program](A304161.asm)): a(n) = 2*n^3 - 4*n^2 + 10*n - 2 (n>=1).
 * [A304163](http://oeis.org/A304163) ([L11 program](A304163.asm)): a(n) = 9*n^2 - 3*n + 1 with n>0.
 * [A304164](http://oeis.org/A304164) ([L12 program](A304164.asm)): a(n) = 27*n^2 - 21*n + 6 (n>=1).
+* [A304168](http://oeis.org/A304168) ([L11 program](A304168.asm)): a(n) = 2*3^n - 2^(n-1) (n>=1).
 * [A304374](http://oeis.org/A304374) ([L21 program](A304374.asm)): a(n) = 9*n^2 + 21*n - 6 (n>=1).
 * [A304375](http://oeis.org/A304375) ([L21 program](A304375.asm)): a(n) = 27*n^2/2 + 45*n/2 - 12 (n>=1).
 * [A304376](http://oeis.org/A304376) ([L20 program](A304376.asm)): a(n) = 60*2^n - 48 (n>=1).

@@ -196,6 +196,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002700](http://oeis.org/A002700) ([L17 program](A002700.asm)): Coefficients of Chebyshev polynomials: n(2n+1)2^(2n-2).
 * [A002717](http://oeis.org/A002717) ([L12 program](A002717.asm)): a(n) = floor(n(n+2)(2n+1)/8).
 * [A002783](http://oeis.org/A002783) ([L10 program](A002783.asm)): 2*(3^n - 2^n) + 1.
+* [A002789](http://oeis.org/A002789) ([L09 program](A002789.asm)): Number of integer points in a certain quadrilateral scaled by a factor of n.
 * [A002817](http://oeis.org/A002817) ([L07 program](A002817.asm)): Doubly triangular numbers: a(n) = n*(n+1)*(n^2+n+2)/8.
 * [A002878](http://oeis.org/A002878) ([L07 program](A002878.asm)): Bisection of Lucas sequence: a(n) = L(2*n+1).
 * [A002939](http://oeis.org/A002939) ([L06 program](A002939.asm)): a(n) = 2*n*(2*n-1).
@@ -748,6 +749,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014306](http://oeis.org/A014306) ([L11 program](A014306.asm)): a(n) = 0 if n of form m(m+1)(m+2)/6, otherwise 1.
 * [A014334](http://oeis.org/A014334) ([L12 program](A014334.asm)): Exponential convolution of Fibonacci numbers with themselves.
 * [A014445](http://oeis.org/A014445) ([L10 program](A014445.asm)): Even Fibonacci numbers; or, Fibonacci(3*n).
+* [A014448](http://oeis.org/A014448) ([L15 program](A014448.asm)): Even Lucas numbers: L(3n).
 * [A014477](http://oeis.org/A014477) ([L11 program](A014477.asm)): Expansion of (1 + 2*x)/(1 - 2*x)^3.
 * [A014480](http://oeis.org/A014480) ([L07 program](A014480.asm)): Expansion of (1+2*x)/(1-2*x)^2.
 * [A014493](http://oeis.org/A014493) ([L12 program](A014493.asm)): Odd triangular numbers.
@@ -1225,6 +1227,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022350](http://oeis.org/A022350) ([L09 program](A022350.asm)): Fibonacci sequence beginning 0, 16.
 * [A022351](http://oeis.org/A022351) ([L12 program](A022351.asm)): Fibonacci sequence beginning 0, 17.
 * [A022352](http://oeis.org/A022352) ([L12 program](A022352.asm)): Fibonacci sequence beginning 0, 18.
+* [A022353](http://oeis.org/A022353) ([L09 program](A022353.asm)): Fibonacci sequence beginning 0, 19.
 * [A022354](http://oeis.org/A022354) ([L11 program](A022354.asm)): Fibonacci sequence beginning 0, 20.
 * [A022356](http://oeis.org/A022356) ([L17 program](A022356.asm)): Fibonacci sequence beginning 0, 22.
 * [A022357](http://oeis.org/A022357) ([L14 program](A022357.asm)): Fibonacci sequence beginning 0, 23.
@@ -2465,6 +2468,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052925](http://oeis.org/A052925) ([L08 program](A052925.asm)): Expansion of (2-6x+4x^2-x^3)/((1-x)(1-3x+x^2)).
 * [A052928](http://oeis.org/A052928) ([L05 program](A052928.asm)): The even numbers repeated.
 * [A052934](http://oeis.org/A052934) ([L12 program](A052934.asm)): Expansion of (1-x)/(1-6x).
+* [A052936](http://oeis.org/A052936) ([L12 program](A052936.asm)): Expansion of (1-x)(1-2x)/(1-5x+5x^2).
 * [A052937](http://oeis.org/A052937) ([L12 program](A052937.asm)): Expansion of (2-3*x-x^2)/((1-x)*(1-2*x-x^2)).
 * [A052938](http://oeis.org/A052938) ([L07 program](A052938.asm)): Expansion of ( 1+2*x-2*x^2 ) / ( (1+x)*(x-1)^2 ).
 * [A052940](http://oeis.org/A052940) ([L07 program](A052940.asm)): a(0) = 1; a(n) = 3*2^n - 1, for n > 0.
@@ -3448,6 +3452,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083713](http://oeis.org/A083713) ([L10 program](A083713.asm)): a(n) = (8^n - 1)*3/7.
 * [A083884](http://oeis.org/A083884) ([L09 program](A083884.asm)): a(n) = (3^(2*n) + 1) / 2.
 * [A083920](http://oeis.org/A083920) ([L07 program](A083920.asm)): Number of nontriangular numbers <= n.
+* [A084059](http://oeis.org/A084059) ([L11 program](A084059.asm)): a(n) = 4*a(n-1)+2*a(n-2) for n>1, a(0)=1, a(1)=2.
 * [A084101](http://oeis.org/A084101) ([L07 program](A084101.asm)): Expansion of (1+x)^2/((1-x)*(1+x^2)).
 * [A084104](http://oeis.org/A084104) ([L08 program](A084104.asm)): A period 6 sequence.
 * [A084120](http://oeis.org/A084120) ([L10 program](A084120.asm)): a(n)=6a(n-1)-3a(n-2), a(0)=1,a(1)=3.
@@ -3720,6 +3725,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A094042](http://oeis.org/A094042) ([L09 program](A094042.asm)): Beatty sequence for e^Pi - Pi^e - i^i.
 * [A094125](http://oeis.org/A094125) ([L11 program](A094125.asm)): a(n) = 3*2^n + 2*3^n.
 * [A094159](http://oeis.org/A094159) ([L06 program](A094159.asm)): 3 times hexagonal numbers: a(n) = 3*n*(2*n-1).
+* [A094195](http://oeis.org/A094195) ([L11 program](A094195.asm)): G.f.: (1-4*x)/((1-5*x)*(1-x)^2).
 * [A094258](http://oeis.org/A094258) ([L15 program](A094258.asm)): a(1) = 1, a(n+1) = n*n! for n >= 1.
 * [A094284](http://oeis.org/A094284) ([L04 program](A094284.asm)): A094283(n+1)/A094283(n).
 * [A094373](http://oeis.org/A094373) ([L07 program](A094373.asm)): Expansion of (1-x-x^2)/((1-x)*(1-2*x)).
@@ -3766,6 +3772,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A096338](http://oeis.org/A096338) ([L10 program](A096338.asm)): a(n) = (2/(n-1))*a(n-1) + ((n+5)/(n-1))*a(n-2) with a(0)=0 and a(1)=1.
 * [A096365](http://oeis.org/A096365) ([L25 program](A096365.asm)): Maximum number of iterations of the RUNS transform needed to reduce any binary sequence of length n to a sequence of length 1.
 * [A096376](http://oeis.org/A096376) ([L06 program](A096376.asm)): a(n) = n + (n-1)^2 + (n+1)^2.
+* [A096382](http://oeis.org/A096382) ([L12 program](A096382.asm)): Consider a Pythagorean triangle with sides a=u^2-v^2, b=2uv, c=u^2+v^2. The sequence is the area of the triangle when v=2, u=3,4,5,...
 * [A096386](http://oeis.org/A096386) ([L09 program](A096386.asm)): Expansion of x^2(x^4+x^2+x+1)/(x^7-x^6-x+1).
 * [A096398](http://oeis.org/A096398) ([L08 program](A096398.asm)): Numbers n such that 0= #{ 1<=i<=n : k(n,i)=-1 } where k(n,i) is the Kronecker symbol.
 * [A096582](http://oeis.org/A096582) ([L10 program](A096582.asm)): From the "100 Green Bottles" song.
