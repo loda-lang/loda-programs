@@ -1,7 +1,5 @@
 ; A093383: One of the 16 sequences illustrating the fact that A093382(2) = 31.
 ; 0,0,0,1,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; generated using -p 40 -n 6 -i 6 -o asml -a cdi
-
 add $6,1
 mov $2,$0
 add $0,1

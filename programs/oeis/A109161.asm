@@ -1,7 +1,5 @@
 ; A109161: n: R^n real coefficient for exceptional Cartan groups as a triangular sequence: G2->R^5; F4->R^15; E6->R^16; E7->R^27; E7.5->R^28; E8->R^29; ...
 ; 5,15,16,27,28,29,41,42,43,44,57,58,59,60,61,75,76,77,78,79,80
-; generated using -p 40 -n 6 -i 6 -o asml -a cdi
-
 mov $1,5
 add $4,$0
 lpb $0,1

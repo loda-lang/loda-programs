@@ -1,7 +1,5 @@
 ; A105206: Number of edges in a pancyclic graph on n+2 vertices with the fewest possible edges.
 ; 3,5,6,8,9,10,12,13,14,15,16,17,19,20,21,22,23,24,25,26
-; generated using -p 40 -n 6 -i 6 -o asml -a cdi
-
 mov $3,3
 add $6,2
 add $5,$0

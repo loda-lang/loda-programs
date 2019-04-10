@@ -1,7 +1,5 @@
 ; A316533: a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
 ; 1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0
-; generated using -p 40 -n 6 -i 6 -o asml -a cdi
-
 add $6,1
 add $1,$6
 mov $2,$0

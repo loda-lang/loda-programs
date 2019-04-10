@@ -1,7 +1,5 @@
 ; A182688: a(n) = the largest 1-digit number with exactly n divisors, a(n) = 0 if no such number exists.
 ; 1,7,9,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; generated using -p 40 -n 6 -i 6 -o asml -a cdi
-
 add $6,3
 add $0,$0
 sub $0,$$0

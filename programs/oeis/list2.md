@@ -383,6 +383,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A224668](http://oeis.org/A224668) ([L29 program](A224668.asm)): Number of 6 X 6 0..n matrices with each 2 X 2 subblock idempotent.
 * [A224669](http://oeis.org/A224669) ([L18 program](A224669.asm)): Number of (n+1) X 2 0..2 matrices with each 2 X 2 subblock idempotent.
 * [A224692](http://oeis.org/A224692) ([L13 program](A224692.asm)): Expansion of (1+5*x+7*x^2-x^3)/((1-2*x^2)*(1-x)*(1+x)).
+* [A224779](http://oeis.org/A224779) ([L22 program](A224779.asm)): One half of the even numbers that are a primitive sum of four nonzero squares at least once.
 * [A224790](http://oeis.org/A224790) ([L11 program](A224790.asm)): 3*9^n + 8.
 * [A224999](http://oeis.org/A224999) ([L06 program](A224999.asm)): Duplicate of A001651.
 * [A225000](http://oeis.org/A225000) ([L07 program](A225000.asm)): Duplicate of A047211.
@@ -707,6 +708,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247817](http://oeis.org/A247817) ([L06 program](A247817.asm)): Sum(4^k, k=2..n).
 * [A247840](http://oeis.org/A247840) ([L08 program](A247840.asm)): Sum(6^k, k=2..n).
 * [A247841](http://oeis.org/A247841) ([L09 program](A247841.asm)): Sum(8^k, k=2..n).
+* [A247903](http://oeis.org/A247903) ([L18 program](A247903.asm)): Start with a single square; at n-th generation add a square at each expandable vertex (this is the "vertex to side" version); a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247904](http://oeis.org/A247904) ([L07 program](A247904.asm)): Start with a single pentagon; at n-th generation add a pentagon at each expandable vertex (this is the "vertex to side" version); a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247983](http://oeis.org/A247983) ([L08 program](A247983.asm)): Least number k such that log(2) - sum{1/(h*2^h), h=1..k} < 1/2^n.
 * [A248121](http://oeis.org/A248121) ([L15 program](A248121.asm)): Floor(1 / (1/n - Pi^2/6 + sum{1/h^2, h = 1..n})).
@@ -1127,6 +1129,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A270576](http://oeis.org/A270576) ([L14 program](A270576.asm)): Expansion of (1+2*x)/(1-6*x).
 * [A270700](http://oeis.org/A270700) ([L10 program](A270700.asm)): Triangular Star of David numbers (the figurate number of triangles framing a hexagram: a(0) = 12; thereafter a(n) = 36*n+6).
 * [A270704](http://oeis.org/A270704) ([L07 program](A270704.asm)): Even 14-gonal (or tetradecagonal) numbers.
+* [A270740](http://oeis.org/A270740) ([L12 program](A270740.asm)): Period 9: repeat 0,1,2,2,0,1,1,2,0.
 * [A270743](http://oeis.org/A270743) ([L10 program](A270743.asm)): Runlength sequence of the zero-one sequence A270742.
 * [A270809](http://oeis.org/A270809) ([L07 program](A270809.asm)): a(n) = n^3/3 - 7*n/3 + 4.
 * [A270810](http://oeis.org/A270810) ([L15 program](A270810.asm)): Expansion of (x - x^2 + 2*x^3 + 2*x^4)/(1 - 3*x + 2*x^2).

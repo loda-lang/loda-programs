@@ -1,7 +1,5 @@
 ; A138954: Number of complement symmetries in the rotations of the binary expansion of a number.
 ; 0,0,1,0,0,0,0,0,1,2,0,1,0,0,0,0,0,0,0,0
-; generated using -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T02.asm
-
 add $1,$0
 add $4,$1
 mov $5,4

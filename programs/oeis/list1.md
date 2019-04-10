@@ -1126,6 +1126,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A138829](http://oeis.org/A138829) ([L28 program](A138829.asm)): Bisection of imperfect numbers A132999.
 * [A138830](http://oeis.org/A138830) ([L17 program](A138830.asm)): Bisection of imperfect numbers A132999.
 * [A138888](http://oeis.org/A138888) ([L18 program](A138888.asm)): Non-Fermat numbers.
+* [A138954](http://oeis.org/A138954) ([L32 program](A138954.asm)): Number of complement symmetries in the rotations of the binary expansion of a number.
 * [A138984](http://oeis.org/A138984) ([L08 program](A138984.asm)): a(n) = Frobenius number for 4 successive numbers = F(n+1,n+2,n+3,n+4).
 * [A138985](http://oeis.org/A138985) ([L08 program](A138985.asm)): a(n) = Frobenius number for 5 successive numbers = F(n+1,n+2,n+3,n+4,n+5).
 * [A138986](http://oeis.org/A138986) ([L08 program](A138986.asm)): a(n) = Frobenius number for 6 successive numbers = F(n+1,n+2,n+3,n+4,n+5,n+6).
@@ -1375,6 +1376,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A147623](http://oeis.org/A147623) ([L06 program](A147623.asm)): The 3rd Witt transform of A040000.
 * [A147651](http://oeis.org/A147651) ([L08 program](A147651.asm)): First trisection of A028560.
 * [A147656](http://oeis.org/A147656) ([L07 program](A147656.asm)): The arithmetic mean of the n-th and (n+1)-st cubes, rounded down.
+* [A147675](http://oeis.org/A147675) ([L13 program](A147675.asm)): Divide by 2, multiply by 4, repeat.
 * [A147677](http://oeis.org/A147677) ([L11 program](A147677.asm)): Subtract 5, add 8, repeat.
 * [A147685](http://oeis.org/A147685) ([L06 program](A147685.asm)): Squares and centered square numbers interleaved.
 * [A147722](http://oeis.org/A147722) ([L09 program](A147722.asm)): Row sums of Riordan array ((1-3x)/(1-4x+x^2), x(1-x)/(1-4x+x^2)).
@@ -1953,6 +1955,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166959](http://oeis.org/A166959) ([L24 program](A166959.asm)): Numbers congruent to (12,32) mod 44.
 * [A166977](http://oeis.org/A166977) ([L16 program](A166977.asm)): Jacobsthal-Lucas numbers A014551, except a(0) = 0.
 * [A167176](http://oeis.org/A167176) ([L09 program](A167176.asm)): n^3 mod 9.
+* [A167179](http://oeis.org/A167179) ([L16 program](A167179.asm)): The number of additional armies one receives in Parker Brothers' (now part of Hasbro) game of Risk for turning in the n-th set of three different or alike cards.
 * [A167375](http://oeis.org/A167375) ([L11 program](A167375.asm)): a(n)=3*a(n-1)-a(n-2) with a(0)=1, a(1)=3, a(2)=11.
 * [A167381](http://oeis.org/A167381) ([L07 program](A167381.asm)): The numbers read down the left-center column of an arrangement of the natural numbers in square blocks.
 * [A167420](http://oeis.org/A167420) ([L08 program](A167420.asm)): 2^n mod 14.
@@ -2820,6 +2823,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192973](http://oeis.org/A192973) ([L12 program](A192973.asm)): Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined at Comments.
 * [A192981](http://oeis.org/A192981) ([L12 program](A192981.asm)): Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined at Comments.
 * [A193068](http://oeis.org/A193068) ([L10 program](A193068.asm)): Generating primitive Pythagorean triangles by using (n, n+1) gives perimeters for each n.  This sequence list the sum of these perimeters for each n triangles.
+* [A193218](http://oeis.org/A193218) ([L19 program](A193218.asm)): Number of vertices in truncated tetrahedron with faces that are centered polygons.
 * [A193228](http://oeis.org/A193228) ([L15 program](A193228.asm)): Truncated octahedron with faces of centered polygons.
 * [A193250](http://oeis.org/A193250) ([L19 program](A193250.asm)): Small rhombicuboctahedron with faces of centered polygons.
 * [A193356](http://oeis.org/A193356) ([L06 program](A193356.asm)): If n is even then 0, otherwise n.
@@ -2913,6 +2917,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195322](http://oeis.org/A195322) ([L07 program](A195322.asm)): a(n) = 20*n^2.
 * [A195323](http://oeis.org/A195323) ([L08 program](A195323.asm)): a(n) = 22*n^2.
 * [A195437](http://oeis.org/A195437) ([L11 program](A195437.asm)): Triangle formed by: 1 even, 2 odd, 3 even, 4 odd... starting with 2.
+* [A195460](http://oeis.org/A195460) ([L13 program](A195460.asm)): 2^(2*n+1) - 3*2^n - 1.
 * [A195463](http://oeis.org/A195463) ([L07 program](A195463.asm)): a(n) = 4^(n+1) + 7.
 * [A195503](http://oeis.org/A195503) ([L11 program](A195503.asm)): Numerators b(n) of Pythagorean approximations b(n)/a(n) to sqrt(3).
 * [A195590](http://oeis.org/A195590) ([L20 program](A195590.asm)): Number of ways to place 2n nonattacking kings on a vertical cylinder 4 X 2n.

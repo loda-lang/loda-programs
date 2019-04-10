@@ -1,7 +1,5 @@
 ; A278701: Characteristic function of base-n Wieferich primes: 1 if prime(k) is a base-n Wieferich prime, 0 otherwise, where k runs over the positive integers starting from 1. Square array A(n, k), read by antidiagonals.
 ; 0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
-; generated using -p 40 -n 6 -i 6 -o asml -a cdi
-
 add $6,$0
 mov $3,$6
 lpb $3,1
