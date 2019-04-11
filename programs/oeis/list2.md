@@ -223,6 +223,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212832](http://oeis.org/A212832) ([L07 program](A212832.asm)): Decimal expansion of 5/24.
 * [A212836](http://oeis.org/A212836) ([L17 program](A212836.asm)): Number of 0..n arrays of length 3 with 0 never adjacent to n.
 * [A212959](http://oeis.org/A212959) ([L10 program](A212959.asm)): Number of (w,x,y) such that w,x,y are all in {0,...,n} and |w-x| = |x-y|.
+* [A212960](http://oeis.org/A212960) ([L15 program](A212960.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x| != |x-y|.
 * [A212964](http://oeis.org/A212964) ([L09 program](A212964.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x| < |x-y| < |y-w|.
 * [A212967](http://oeis.org/A212967) ([L11 program](A212967.asm)): Number of (w,x,y) with all terms in {0,...,n} and w < range{w,x,y}.
 * [A212970](http://oeis.org/A212970) ([L08 program](A212970.asm)): Number of (w,x,y) with all terms in {0,...,n} and  w!=x and x>range{w,x,y}.
@@ -715,6 +716,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248333](http://oeis.org/A248333) ([L10 program](A248333.asm)): Number of unit squares enclosed by n lattice points in and along the first quadrant of the coordinate plane starting from (0,0) and moving along each square gnomon starting on the y-axis and ending on the x-axis.
 * [A248339](http://oeis.org/A248339) ([L09 program](A248339.asm)): a(n) = 22*n+19.
 * [A248375](http://oeis.org/A248375) ([L08 program](A248375.asm)): a(n) = floor(9*n/8).
+* [A248428](http://oeis.org/A248428) ([L20 program](A248428.asm)): Number of length n+2 0..3 arrays with every three consecutive terms having the sum of some two elements equal to twice the third.
 * [A248429](http://oeis.org/A248429) ([L16 program](A248429.asm)): Number of length n+2 0..4 arrays with every three consecutive terms having the sum of some two elements equal to twice the third.
 * [A248434](http://oeis.org/A248434) ([L12 program](A248434.asm)): Number of length 1+2 0..n arrays with every three consecutive terms having the sum of some two elements equal to twice the third
 * [A248474](http://oeis.org/A248474) ([L16 program](A248474.asm)): Numbers congruent to 13 or 17 mod 30.
@@ -898,6 +900,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261343](http://oeis.org/A261343) ([L11 program](A261343.asm)): 50-gonal numbers: a(n) = 48*n*(n-1)/2 + n.
 * [A261348](http://oeis.org/A261348) ([L10 program](A261348.asm)): a(1)=0; a(2)=0; for n>2: a(n) = A237591(n,2) = A237593(n,2).
 * [A261399](http://oeis.org/A261399) ([L10 program](A261399.asm)): a(1)=1; thereafter a(n) = (2/5)*(9*6^(n-2)+1).
+* [A261491](http://oeis.org/A261491) ([L15 program](A261491.asm)): a(n) = ceiling(2 + sqrt(8*n-4)).
 * [A261521](http://oeis.org/A261521) ([L15 program](A261521.asm)): a(n) =  n^2 + 2*n + 29.
 * [A261557](http://oeis.org/A261557) ([L09 program](A261557.asm)): a(0) = a(1) = 0; for n>1, a(n) = 2*n - a(n-1) - a(n-2).
 * [A261585](http://oeis.org/A261585) ([L16 program](A261585.asm)): Number of sexagesimal digits of Fibonacci numbers in base 60 representation.

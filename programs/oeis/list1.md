@@ -1098,6 +1098,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136376](http://oeis.org/A136376) ([L09 program](A136376.asm)): a(n) = n*F(n) + (n-1)*F(n-1).
 * [A136391](http://oeis.org/A136391) ([L09 program](A136391.asm)): a(n) = n*F(n) - (n-1)*F(n-1), where the F(j)'s are the Fibonacci numbers (F(0)=0, F(1)=1).
 * [A136392](http://oeis.org/A136392) ([L08 program](A136392.asm)): a(n) = 6*n^2 - 10*n + 5.
+* [A136395](http://oeis.org/A136395) ([L10 program](A136395.asm)): Binomial transform of [1, 3, 4, 3, 2, 0, 0, 0,...].
 * [A136396](http://oeis.org/A136396) ([L11 program](A136396.asm)): 1+n*(n+1)*(n^2-n+12)/12.
 * [A136412](http://oeis.org/A136412) ([L07 program](A136412.asm)): a(n) = (5*4^n+1)/3.
 * [A136521](http://oeis.org/A136521) ([L14 program](A136521.asm)): Triangle read by rows: (1, 2, 2, 2,...) on the main diagonal and the rest zeros.
@@ -1266,6 +1267,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A143371](http://oeis.org/A143371) ([L08 program](A143371.asm)): Duplicate of A131423.
 * [A143432](http://oeis.org/A143432) ([L13 program](A143432.asm)): Ultimately periodic length 4 sequence [ 2, 2, 0, 0, ...] with a(0) = a(1) = 1.
 * [A143616](http://oeis.org/A143616) ([L06 program](A143616.asm)): Record values in A010371.
+* [A143643](http://oeis.org/A143643) ([L10 program](A143643.asm)): Lower principal and intermediate convergents to 3^(1/2).
 * [A143689](http://oeis.org/A143689) ([L07 program](A143689.asm)): a(n) = (3*n^2 - n + 2)/2.
 * [A143690](http://oeis.org/A143690) ([L13 program](A143690.asm)): A007318 * [1, 6, 14, 9, 0, 0, 0,...].
 * [A143698](http://oeis.org/A143698) ([L07 program](A143698.asm)): 12 times hexagonal numbers: 12*n*(2*n-1).
@@ -2603,6 +2605,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183905](http://oeis.org/A183905) ([L07 program](A183905.asm)): Number of nondecreasing arrangements of n+2 numbers in 0..2 with each number being the sum mod 3 of two others.
 * [A183918](http://oeis.org/A183918) ([L05 program](A183918.asm)): Characteristic sequence for cos(2Pi/n) being rational.
 * [A183919](http://oeis.org/A183919) ([L11 program](A183919.asm)): Characteristic sequence for sin(2Pi/n) being rational.
+* [A183979](http://oeis.org/A183979) ([L18 program](A183979.asm)): 1/4 the number of (n+1) X 3 binary arrays with all 2 X 2 subblock sums the same.
 * [A184005](http://oeis.org/A184005) ([L09 program](A184005.asm)): a(n) = n - 1 + ceiling(3*n^2/4); complement of A184004.
 * [A184013](http://oeis.org/A184013) ([L10 program](A184013.asm)): n - 1 + ceiling((4+n^2)/5); complement of A184012.
 * [A184017](http://oeis.org/A184017) ([L25 program](A184017.asm)): n-1+ceiling((n/3)^2); complement of A184016.
