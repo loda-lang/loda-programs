@@ -1,5 +1,6 @@
 ; A134441: Last two digits of primes of form 4n+1 (A002144), excluding 5. Leading 0's omitted.
 ; 1,9,13,17,21,29,33,37,41,49,53,57,61,69,73,77,81,89,93,97
+
 mov $2,$0
 mov $1,1
 lpb $2,1

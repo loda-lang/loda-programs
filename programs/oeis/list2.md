@@ -275,6 +275,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214659](http://oeis.org/A214659) ([L10 program](A214659.asm)): a(n) = n*(7*n^2 - 3*n - 1)/3.
 * [A214660](http://oeis.org/A214660) ([L09 program](A214660.asm)): 9*n^2 - 11*n + 3.
 * [A214675](http://oeis.org/A214675) ([L10 program](A214675.asm)): 9*n^2 - 13*n + 5.
+* [A214857](http://oeis.org/A214857) ([L13 program](A214857.asm)): Number of triangular numbers in interval [0, n^2].
 * [A214863](http://oeis.org/A214863) ([L12 program](A214863.asm)): Numbers n such that n XOR 11 = n - 11.
 * [A214865](http://oeis.org/A214865) ([L09 program](A214865.asm)): n such that n XOR 9 = n - 9.
 * [A214922](http://oeis.org/A214922) ([L06 program](A214922.asm)): Numbers of the form x^2 + y^2 + z^3 + w^3 (x, y, z, w >= 0).
@@ -556,6 +557,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A238411](http://oeis.org/A238411) ([L07 program](A238411.asm)): a(n) = 2*n*floor(n/2).
 * [A238477](http://oeis.org/A238477) ([L06 program](A238477.asm)): a(n) = 32*n - 27 for n >= 1. Second column of triangle A238475.
 * [A238531](http://oeis.org/A238531) ([L07 program](A238531.asm)): Expansion of (1 - x + x^2)^2 / (1 - x)^3 in powers of x.
+* [A238549](http://oeis.org/A238549) ([L16 program](A238549.asm)): a(n) is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).
 * [A238598](http://oeis.org/A238598) ([L08 program](A238598.asm)): Largest integer k such that n >= k^2-k-1 = A165900(k).
 * [A238705](http://oeis.org/A238705) ([L08 program](A238705.asm)): Number of partitions of 4n into 4 parts with smallest part = 1.
 * [A238738](http://oeis.org/A238738) ([L08 program](A238738.asm)): Expansion of (1 + 2*x + 2*x^2)/(1 - x - 2*x^3 + 2*x^4 + x^6 - x^7).
@@ -742,6 +744,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A249453](http://oeis.org/A249453) ([L08 program](A249453.asm)): a(0) = 4; for n>0, a(n) = a(n-1) + 2^n - 3.
 * [A249547](http://oeis.org/A249547) ([L09 program](A249547.asm)): a(n) = (10*n^2+8*n-1+(-1)^n)/8.
 * [A249674](http://oeis.org/A249674) ([L05 program](A249674.asm)): a(n) = 30*n.
+* [A249852](http://oeis.org/A249852) ([L12 program](A249852.asm)): a(n) is the total number of pentagons on the left or the right of the vertical symmetry axis of a pentagon expansion (vertex to vertex) after n iterations.
 * [A250024](http://oeis.org/A250024) ([L10 program](A250024.asm)): 40n - 21.
 * [A250121](http://oeis.org/A250121) ([L15 program](A250121.asm)): Crystal ball sequence for planar net 3.3.3.3.6.
 * [A250352](http://oeis.org/A250352) ([L09 program](A250352.asm)): Number of length 3 arrays x(i), i=1..3 with x(i) in i..i+n and no value appearing more than 2 times.

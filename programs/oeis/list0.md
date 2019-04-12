@@ -1240,6 +1240,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022357](http://oeis.org/A022357) ([L14 program](A022357.asm)): Fibonacci sequence beginning 0, 23.
 * [A022358](http://oeis.org/A022358) ([L18 program](A022358.asm)): Fibonacci sequence beginning 0, 24.
 * [A022359](http://oeis.org/A022359) ([L15 program](A022359.asm)): Fibonacci sequence beginning 0, 25.
+* [A022362](http://oeis.org/A022362) ([L14 program](A022362.asm)): Fibonacci sequence beginning 0, 28.
 * [A022367](http://oeis.org/A022367) ([L18 program](A022367.asm)): Fibonacci sequence beginning 2, 10.
 * [A022368](http://oeis.org/A022368) ([L11 program](A022368.asm)): Fibonacci sequence beginning 2, 12.
 * [A022369](http://oeis.org/A022369) ([L10 program](A022369.asm)): Fibonacci sequence beginning 2, 14.
@@ -1319,6 +1320,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024174](http://oeis.org/A024174) ([L13 program](A024174.asm)): a(n) is floor((4th elementary symmetric function of 1,2,..,n)/(3rd elementary symmetric function of 1,2,...,n)).
 * [A024206](http://oeis.org/A024206) ([L06 program](A024206.asm)): Expansion of x^2*(1+x-x^2)/((1-x^2)*(1-x)^2).
 * [A024219](http://oeis.org/A024219) ([L11 program](A024219.asm)): a(n) = floor( (2nd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ), where S(n) = {first n+1 positive integers congruent to 1 mod 3}.
+* [A024224](http://oeis.org/A024224) ([L18 program](A024224.asm)): a(n) = floor((4th elementary symmetric function of S(n))/(3rd elementary symmetric function of S(n))), where S(n) = {first n+3 positive integers congruent to 1 mod 3}.
 * [A024305](http://oeis.org/A024305) ([L08 program](A024305.asm)): a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n+1-k), where k=[ (n+1)/2) ] and s = (natural numbers >= 2).
 * [A024306](http://oeis.org/A024306) ([L14 program](A024306.asm)): a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k=[ (n+1)/2) ], s = (natural numbers >= 2), t = (natural numbers >= 3).
 * [A024312](http://oeis.org/A024312) ([L15 program](A024312.asm)): a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n+1-k), where k=[ (n+1)/2) ], s = (natural numbers >= 3).
@@ -1552,6 +1554,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033156](http://oeis.org/A033156) ([L12 program](A033156.asm)): a(1) = 1; for m >= 2, a(n) = a(n-1) + floor(a(n-1)/(n-1)) + 2.
 * [A033182](http://oeis.org/A033182) ([L18 program](A033182.asm)): Number of pairs (p,q) such that 5*p + 6*q = n.
 * [A033275](http://oeis.org/A033275) ([L12 program](A033275.asm)): Number of diagonal dissections of an n-gon into 3 regions.
+* [A033303](http://oeis.org/A033303) ([L13 program](A033303.asm)): Expansion of (1 + x)/(1 - 2*x - x^2 + x^3).
 * [A033312](http://oeis.org/A033312) ([L15 program](A033312.asm)): a(n) = n! - 1.
 * [A033322](http://oeis.org/A033322) ([L02 program](A033322.asm)): [ 2/n ].
 * [A033324](http://oeis.org/A033324) ([L04 program](A033324.asm)): [ 4/n ].
@@ -2534,6 +2537,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A053831](http://oeis.org/A053831) ([L10 program](A053831.asm)): Sum of digits of n written in base 11.
 * [A053833](http://oeis.org/A053833) ([L28 program](A053833.asm)): Sum of digits of n written in base 13.
 * [A053834](http://oeis.org/A053834) ([L13 program](A053834.asm)): Sum of digits of n written in base 14.
+* [A053835](http://oeis.org/A053835) ([L14 program](A053835.asm)): Sum of digits of n written in base 15.
 * [A053836](http://oeis.org/A053836) ([L18 program](A053836.asm)): Sum of digits of n written in base 16.
 * [A054000](http://oeis.org/A054000) ([L06 program](A054000.asm)): a(n) = 2*n^2 - 2.
 * [A054027](http://oeis.org/A054027) ([L15 program](A054027.asm)): Numbers n such that sum of divisors of n is not divisible by n.
@@ -2753,6 +2757,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060416](http://oeis.org/A060416) ([L08 program](A060416.asm)): a(n) = n*4^n - 1.
 * [A060423](http://oeis.org/A060423) ([L07 program](A060423.asm)): Number of obtuse triangles made from vertices of a regular n-gon.
 * [A060432](http://oeis.org/A060432) ([L06 program](A060432.asm)): Partial sums of A002024.
+* [A060459](http://oeis.org/A060459) ([L20 program](A060459.asm)): a(n) = (n*(n+1))^3.
 * [A060464](http://oeis.org/A060464) ([L06 program](A060464.asm)): Numbers that are not congruent to 4 or 5 mod 9.
 * [A060482](http://oeis.org/A060482) ([L08 program](A060482.asm)): New record highs reached in A060030.
 * [A060488](http://oeis.org/A060488) ([L08 program](A060488.asm)): Number of 4-block ordered tricoverings of an unlabeled n-set.

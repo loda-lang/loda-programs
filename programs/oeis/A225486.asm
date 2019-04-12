@@ -1,5 +1,6 @@
 ; A225486: Maximal frequency depth for the partitions of n.
 ; 0,2,3,4,4,4,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
+
 mov $4,$0
 mov $3,2
 lpb $0,1

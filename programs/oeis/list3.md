@@ -219,6 +219,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323397](http://oeis.org/A323397) ([L13 program](A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323610](http://oeis.org/A323610) ([L13 program](A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
 * [A323614](http://oeis.org/A323614) ([L29 program](A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
+* [A323724](http://oeis.org/A323724) ([L15 program](A323724.asm)): a(n) = n*(2*(n - 2)*n + (-1)^n + 3)/4.
 * [A323824](http://oeis.org/A323824) ([L07 program](A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
 * [A324015](http://oeis.org/A324015) ([L10 program](A324015.asm)): Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
 * [A324172](http://oeis.org/A324172) ([L11 program](A324172.asm)): Number of subsets of {1,...,n} that cross their complement.

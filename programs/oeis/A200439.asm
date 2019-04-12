@@ -1,5 +1,6 @@
 ; A200439: Decimal expansion of constant arising in clubbed binomial approximation for the lightbulb process.
 ; 2,7,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3
+
 mov $1,2
 lpb $0,1
   mov $2,$0

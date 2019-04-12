@@ -59,6 +59,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100832](http://oeis.org/A100832) ([L09 program](A100832.asm)): Amenable numbers: n such that there exists a multiset of integers (s(1), ..., s(n)) whose size, sum and product are all n.
 * [A100855](http://oeis.org/A100855) ([L14 program](A100855.asm)): n*(n^3-n^2+n+1)/2.
 * [A101000](http://oeis.org/A101000) ([L07 program](A101000.asm)): Periodic sequence with period 3.
+* [A101052](http://oeis.org/A101052) ([L12 program](A101052.asm)): Number of preferential arrangements of n labeled elements when only k<=3 ranks are allowed.
 * [A101101](http://oeis.org/A101101) ([L06 program](A101101.asm)): a(1)=1, a(2)=5, and a(n)=6 for n>=3.
 * [A101103](http://oeis.org/A101103) ([L18 program](A101103.asm)): Partial sums of A101104. First differences of A005914.
 * [A101104](http://oeis.org/A101104) ([L16 program](A101104.asm)): a(1)=1, a(2)=12, a(3)=23, and a(n)=24 for n>=4.
@@ -245,6 +246,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108411](http://oeis.org/A108411) ([L08 program](A108411.asm)): a(n) = 3^floor(n/2). Powers of 3 repeated.
 * [A108581](http://oeis.org/A108581) ([L06 program](A108581.asm)): Positive triangular numbers repeated their own number of times.
 * [A108582](http://oeis.org/A108582) ([L13 program](A108582.asm)): n appears n^3 times.
+* [A108674](http://oeis.org/A108674) ([L13 program](A108674.asm)): a(n) = (n+1)^2 * (n+2)^2 * (2*n+3) / 12.
 * [A108678](http://oeis.org/A108678) ([L15 program](A108678.asm)): a(n) = (n+1)^2*(n+2)(2n+3)/6.
 * [A108765](http://oeis.org/A108765) ([L11 program](A108765.asm)): G.f. (1 - x + x^2)/((1-3*x)*(x-1)^2).
 * [A108872](http://oeis.org/A108872) ([L09 program](A108872.asm)): Sums of ordinal references for a triangular table read by columns, top to bottom.
@@ -662,6 +664,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127802](http://oeis.org/A127802) ([L29 program](A127802.asm)): a(0) = 1, a(n) = 3*A036987(n), n>1.
 * [A127854](http://oeis.org/A127854) ([L08 program](A127854.asm)): Largest number k such that k^2 divides A007781(6n+1).
 * [A127873](http://oeis.org/A127873) ([L11 program](A127873.asm)): a(n) = (n^3)/2 + (3*n^2)/2 + 3*n + 3.
+* [A127876](http://oeis.org/A127876) ([L14 program](A127876.asm)): Integers of the form (x^3)/6 + (x^2)/2 + x + 1.
 * [A127904](http://oeis.org/A127904) ([L08 program](A127904.asm)): Smallest m such that A008687(m) = n.
 * [A127932](http://oeis.org/A127932) ([L08 program](A127932.asm)): a(4*n) = 4*n+1, a(4*n+1) = a(4*n+2) = a(4*n+3) = 4*n+4.
 * [A127944](http://oeis.org/A127944) ([L12 program](A127944.asm)): Partial sums of A093049.
@@ -1964,6 +1967,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167426](http://oeis.org/A167426) ([L13 program](A167426.asm)): a(n) = 2^n mod 28.
 * [A167463](http://oeis.org/A167463) ([L06 program](A167463.asm)): a(n) = n mod 15.
 * [A167469](http://oeis.org/A167469) ([L09 program](A167469.asm)): a(n) = 3*n*(5*n-1)/2.
+* [A167471](http://oeis.org/A167471) ([L12 program](A167471.asm)): Janet periodic table of the elements and structured hexagonal diamond numbers. a(n) = A166911(2n) + A166911(2n+1).
 * [A167477](http://oeis.org/A167477) ([L07 program](A167477.asm)): Expansion of (1-3x+5x^2-x^3)/(1-3x+x^2)^2.
 * [A167478](http://oeis.org/A167478) ([L11 program](A167478.asm)): Expansion of (1-2x+6x^2-x^3)/(1-3x+x^2)^2.
 * [A167487](http://oeis.org/A167487) ([L06 program](A167487.asm)): a(n) = n*(n + 3)/2 + 8.
@@ -2240,6 +2244,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A170939](http://oeis.org/A170939) ([L16 program](A170939.asm)): 4^n-2^n+2.
 * [A170940](http://oeis.org/A170940) ([L09 program](A170940.asm)): 4^n-2^n-2.
 * [A171088](http://oeis.org/A171088) ([L09 program](A171088.asm)): To find 3 consecutive integers in the sequence, you have to take 4 consecutive terms, no more and no less.
+* [A171141](http://oeis.org/A171141) ([L13 program](A171141.asm)): Numbers that are congruent to {6,33} mod 41.
 * [A171160](http://oeis.org/A171160) ([L20 program](A171160.asm)): a(n) = a(n-1) + 2a(n-2) with a(0)=3, a(1)=4.
 * [A171218](http://oeis.org/A171218) ([L13 program](A171218.asm)): a(n) = sum(A109613(k)*A005843(n-k): 0<=k<=n).
 * [A171220](http://oeis.org/A171220) ([L13 program](A171220.asm)): a(n) = (2n + 1)*5^n.

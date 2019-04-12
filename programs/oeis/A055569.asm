@@ -1,5 +1,6 @@
 ; A055569: Sum of digits of a(n)^3 is greater than or equal to a(n).
 ; 0,1,2,3,4,5,6,7,8,9,12,13,14,15,16,17,18,19,26,27
+
 add $4,$0
 add $0,1
 lpb $0,1

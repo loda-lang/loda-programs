@@ -1,5 +1,6 @@
 ; A301426: Number of steps required in the worst case for three knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 ; 1,1,1,2,2,2,2,3,4,4,4,4,5,6,6,6,6,7,8,8
+
 mov $4,2
 add $2,$4
 add $0,$2
