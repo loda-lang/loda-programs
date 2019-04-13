@@ -1,0 +1,1 @@
+A195174: -p 20 -n 6 -i 6 -o asm -a cd -e programs/templates/T01.asm

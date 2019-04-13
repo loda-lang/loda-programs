@@ -277,6 +277,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109795](http://oeis.org/A109795) ([L10 program](A109795.asm)): a(n)= n*(1+floor(n/10)).
 * [A109808](http://oeis.org/A109808) ([L12 program](A109808.asm)): a(n) = 2*7^(n-1).
 * [A109900](http://oeis.org/A109900) ([L09 program](A109900.asm)): The (n,r)-th term of the following triangle is T(n)-T(r) for r = 0 to n. The n-th row contains n+1 terms. T(n) = the n-th triangular number = n(n+1)/2. Sequence contains the sum of terms at a 45-degree angle.
+* [A109961](http://oeis.org/A109961) ([L08 program](A109961.asm)): Expansion of (1-x)^3/(1-4x+5x^2-4x^3+x^4).
 * [A109975](http://oeis.org/A109975) ([L17 program](A109975.asm)): Second differences of A045623, prefixed by an initial 1.
 * [A110090](http://oeis.org/A110090) ([L07 program](A110090.asm)): Numerators of sequence of rationals defined by r(n) = n for n<=1 and for n>1: r(n) = (sum of denominators of r(n-1) and r(n-2))/(sum of numerators of r(n-1) and r(n-2)).
 * [A110270](http://oeis.org/A110270) ([L18 program](A110270.asm)): a(n) = (n mod 2)*(n mod 3).
@@ -368,6 +369,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A113497](http://oeis.org/A113497) ([L10 program](A113497.asm)): Ascending descending base exponent transform of sequence A000034(n) = 1 + n mod 2.
 * [A113541](http://oeis.org/A113541) ([L10 program](A113541.asm)): Numbers n such that 18n^2+1 is multiple of 19.
 * [A113655](http://oeis.org/A113655) ([L08 program](A113655.asm)): Invert blocks of three in the sequence of natural numbers.
+* [A113742](http://oeis.org/A113742) ([L18 program](A113742.asm)): Generalized Mancala solitaire (A002491); to get n-th term, start with n and successively round up to next 5 multiples of n-1, n-2, ..., 1, for n>=1.
 * [A113754](http://oeis.org/A113754) ([L14 program](A113754.asm)): Number of possible squares on an n^2 X n^2 grid.
 * [A113763](http://oeis.org/A113763) ([L06 program](A113763.asm)): Non-multiples of 13, or numbers not divisible by 13.
 * [A113770](http://oeis.org/A113770) ([L07 program](A113770.asm)): Partial sums of A113311(n)^2.
@@ -824,6 +826,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131209](http://oeis.org/A131209) ([L04 program](A131209.asm)): Maximal distance between two signed permutations of n elements.
 * [A131229](http://oeis.org/A131229) ([L08 program](A131229.asm)): Numbers congruent to {1,7} mod 10.
 * [A131242](http://oeis.org/A131242) ([L05 program](A131242.asm)): Partial sums of A059995: a(n) = sum_{k=0..n} floor(k/10).
+* [A131269](http://oeis.org/A131269) ([L13 program](A131269.asm)): a(n) = 3*a(n-1) - 2*a(n-2) - a(n-3) + a(n-4) with n>3, a(0)=1, a(1)=2, a(2)=3, a(3)=6.
 * [A131282](http://oeis.org/A131282) ([L17 program](A131282.asm)): Period 6: repeat [1, 2, 3, 3, 4, 5].
 * [A131294](http://oeis.org/A131294) ([L11 program](A131294.asm)): a(n)=ds_3(a(n-1))+ds_3(a(n-2)), a(0)=0, a(1)=1; where ds_3=digital sum base 3.
 * [A131300](http://oeis.org/A131300) ([L15 program](A131300.asm)): a(n) = 3*a(n-1) - 2*a(n-2) - a(n-3) + a(n-4) with n>3, a(0)=1, a(1)=2, a(2)=3, a(3)=7.
@@ -1094,6 +1097,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136254](http://oeis.org/A136254) ([L08 program](A136254.asm)): Generator for the finite sequence A053016.
 * [A136272](http://oeis.org/A136272) ([L07 program](A136272.asm)): Waterbird take-off sequence. Complement of A166021.
 * [A136289](http://oeis.org/A136289) ([L06 program](A136289.asm)): Start with three pennies touching each other on a tabletop. In each generation, add pennies subject to the rule that a penny can be placed only when (at least) two pennies are already in position to determine its position; sequence gives number of pennies added at generation n.
+* [A136290](http://oeis.org/A136290) ([L16 program](A136290.asm)): a(0)=1, a(1)=3, a(2)=9, a(3)=12, a(4)=15; thereafter a(n) = a(n-1)+a(n-3)-a(n-4).
 * [A136293](http://oeis.org/A136293) ([L12 program](A136293.asm)): Linear bound on the genera of Heegaard splittings of closed, orientable 3-manifolds that admit a generalized triangulation with n generalized tetrahedra.
 * [A136305](http://oeis.org/A136305) ([L12 program](A136305.asm)): Transform of A000027 by the T_{1,2} transformation (see link).
 * [A136320](http://oeis.org/A136320) ([L09 program](A136320.asm)): Terms of A047241 swapped in pairs.
@@ -1445,6 +1449,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152857](http://oeis.org/A152857) ([L10 program](A152857.asm)): Periodic sequence [0,2,3,0,0] of period 5
 * [A152889](http://oeis.org/A152889) ([L20 program](A152889.asm)): Periodic sequence [1,0,4,0,0] of period 5
 * [A152891](http://oeis.org/A152891) ([L07 program](A152891.asm)): a(1)=b(1)=0; for n > 1, b(n) = b(n-1) + n-1 + a(n-1); a(n) = a(n-1) + n-1 + b(n).
+* [A152893](http://oeis.org/A152893) ([L15 program](A152893.asm)): Periodic sequence [3, 3, 0, 0, 4] of period 5
 * [A152894](http://oeis.org/A152894) ([L12 program](A152894.asm)): Periodic sequence [0,0,1,4,0] of period 5.
 * [A152895](http://oeis.org/A152895) ([L08 program](A152895.asm)): Partial sums of A152891.
 * [A152896](http://oeis.org/A152896) ([L09 program](A152896.asm)): a=b=c=0;c(n)=c+n+a;b(n)=b+n+c;a(n)=a+n+b.
@@ -1672,6 +1677,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158563](http://oeis.org/A158563) ([L23 program](A158563.asm)): 32n^2 - 1.
 * [A158575](http://oeis.org/A158575) ([L09 program](A158575.asm)): a(n) = 32*n^2 + 1.
 * [A158586](http://oeis.org/A158586) ([L13 program](A158586.asm)): a(n) = 34*n^2 + 1.
+* [A158588](http://oeis.org/A158588) ([L15 program](A158588.asm)): a(n) = 34*n^2 - 1.
 * [A158591](http://oeis.org/A158591) ([L14 program](A158591.asm)): 36n^2 + 1.
 * [A158598](http://oeis.org/A158598) ([L13 program](A158598.asm)): a(n) = 40*n^2 - 1.
 * [A158602](http://oeis.org/A158602) ([L17 program](A158602.asm)): a(n) = 40*n^2 + 1.
@@ -2007,6 +2013,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168105](http://oeis.org/A168105) ([L11 program](A168105.asm)): a(n) = sum of natural numbers m such that n - 6 <= m <= n + 6.
 * [A168106](http://oeis.org/A168106) ([L15 program](A168106.asm)): a(n) = sum of natural numbers m such that n - 7 <= m <= n + 7.
 * [A168107](http://oeis.org/A168107) ([L14 program](A168107.asm)): a(n) = sum of natural numbers m such that n - 8 <= m <= n + 8.
+* [A168108](http://oeis.org/A168108) ([L20 program](A168108.asm)): a(n) = sum of natural numbers m such that n - 9 <= m <= n + 9.
 * [A168178](http://oeis.org/A168178) ([L12 program](A168178.asm)): a(n) = n^3*(n^2 + 1)/2.
 * [A168181](http://oeis.org/A168181) ([L06 program](A168181.asm)): Characteristic function of numbers that are not multiples of 8.
 * [A168182](http://oeis.org/A168182) ([L06 program](A168182.asm)): Characteristic function of numbers that are not multiples of 9.
@@ -2678,6 +2685,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186355](http://oeis.org/A186355) ([L06 program](A186355.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186354.
 * [A186356](http://oeis.org/A186356) ([L28 program](A186356.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186357.
 * [A186357](http://oeis.org/A186357) ([L08 program](A186357.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186357.
+* [A186379](http://oeis.org/A186379) ([L16 program](A186379.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186380.
 * [A186380](http://oeis.org/A186380) ([L12 program](A186380.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186379.
 * [A186384](http://oeis.org/A186384) ([L06 program](A186384.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j(j+1)/2 (triangular number).  Complement of A186383.
 * [A186386](http://oeis.org/A186386) ([L13 program](A186386.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=5i and g(j)=j(j+1)/2 (triangular number).  Complement of A186385.
@@ -2990,6 +2998,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198845](http://oeis.org/A198845) ([L11 program](A198845.asm)): 8*6^n-1.
 * [A198846](http://oeis.org/A198846) ([L13 program](A198846.asm)): 9*6^n-1.
 * [A198847](http://oeis.org/A198847) ([L11 program](A198847.asm)): 10*6^n-1.
+* [A198848](http://oeis.org/A198848) ([L11 program](A198848.asm)): 11*6^n-1.
 * [A198849](http://oeis.org/A198849) ([L15 program](A198849.asm)): (11*6^n-1)/5.
 * [A198954](http://oeis.org/A198954) ([L12 program](A198954.asm)): Expansion of the rotational partition function for a heteronuclear diatomic molecule.
 * [A199085](http://oeis.org/A199085) ([L08 program](A199085.asm)): Number of distinct values taken by 3rd derivative of x^x^...^x (with n x's and parentheses inserted in all possible ways) at x=1.
