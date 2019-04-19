@@ -112,6 +112,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305503](http://oeis.org/A305503) ([L09 program](A305503.asm)): Largest cardinality of subsets A of {0,1,...,n-1} with |A + A| > |A - A|.
 * [A305548](http://oeis.org/A305548) ([L07 program](A305548.asm)): a(n) = 27*n.
 * [A305859](http://oeis.org/A305859) ([L08 program](A305859.asm)): Numbers that are congruent to {1, 3, 11} mod 12.
+* [A306262](http://oeis.org/A306262) ([L12 program](A306262.asm)): Difference between maximum and minimum sum of products of successive pairs in permutations of [n].
 * [A306277](http://oeis.org/A306277) ([L12 program](A306277.asm)): Numbers congruent to 1 or 8 mod 10.
 * [A306285](http://oeis.org/A306285) ([L21 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
 * [A306390](http://oeis.org/A306390) ([L06 program](A306390.asm)): Size of one subtree in the unlabeled binary rooted tree shape of size n whose leaf-labeled trees have the largest number of coalescence sequences.
@@ -202,6 +203,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321257](http://oeis.org/A321257) ([L09 program](A321257.asm)): Start with an equilateral triangle, and repeatedly append along the triangles of the previous step equilateral triangles with half their side length that do not overlap with any prior triangle; a(n) gives the number of triangles appended at n-th step.
 * [A321358](http://oeis.org/A321358) ([L07 program](A321358.asm)): a(n) = (2*4^n + 7)/3.
 * [A321421](http://oeis.org/A321421) ([L08 program](A321421.asm)): a(n) = 10*(4^n - 1)/3 + 1.
+* [A321483](http://oeis.org/A321483) ([L17 program](A321483.asm)): a(n) = 7*2^n + (-1)^n.
 * [A321499](http://oeis.org/A321499) ([L12 program](A321499.asm)): Numbers of the form (x - y)(x^2 - y^2) with x > y > 0.
 * [A321501](http://oeis.org/A321501) ([L12 program](A321501.asm)): Numbers not of the form (x - y)(x^2 - y^2) with x > y > 0; complement of A321499.
 * [A321643](http://oeis.org/A321643) ([L18 program](A321643.asm)): a(n) = 5*2^n - (-1)^n.

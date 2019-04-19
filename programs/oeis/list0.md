@@ -47,6 +47,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000340](http://oeis.org/A000340) ([L11 program](A000340.asm)): a(0)=1, a(n) = 3*a(n-1) + n + 1.
 * [A000351](http://oeis.org/A000351) ([L08 program](A000351.asm)): Powers of 5: a(n) = 5^n.
 * [A000384](http://oeis.org/A000384) ([L05 program](A000384.asm)): Hexagonal numbers: a(n) = n*(2*n-1).
+* [A000392](http://oeis.org/A000392) ([L13 program](A000392.asm)): Stirling numbers of second kind S(n,3).
 * [A000400](http://oeis.org/A000400) ([L09 program](A000400.asm)): Powers of 6: a(n) = 6^n.
 * [A000420](http://oeis.org/A000420) ([L19 program](A000420.asm)): Powers of 7: a(n) = 7^n.
 * [A000447](http://oeis.org/A000447) ([L07 program](A000447.asm)): a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2*n-1)^2 = n*(4*n^2 - 1)/3.
@@ -554,6 +555,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008778](http://oeis.org/A008778) ([L08 program](A008778.asm)): a(n) = (n+1)*(n^2+8n+6)/6. Number of n-dimensional partitions of 4. Number of terms in 4th derivative of a function composed with itself n times.
 * [A008779](http://oeis.org/A008779) ([L13 program](A008779.asm)): Number of n-dimensional partitions of 5.
 * [A008794](http://oeis.org/A008794) ([L07 program](A008794.asm)): Squares repeated; a(n) = floor(n/2)^2.
+* [A008795](http://oeis.org/A008795) ([L15 program](A008795.asm)): Molien series for 3-dimensional representation of dihedral group D_6 of order 6.
 * [A008804](http://oeis.org/A008804) ([L11 program](A008804.asm)): Expansion of 1/((1-x)^2*(1-x^2)*(1-x^4)).
 * [A008805](http://oeis.org/A008805) ([L06 program](A008805.asm)): Triangular numbers repeated.
 * [A008810](http://oeis.org/A008810) ([L05 program](A008810.asm)): a(n) = ceiling(n^2 / 3).
@@ -2657,6 +2659,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056556](http://oeis.org/A056556) ([L06 program](A056556.asm)): First tetrahedral co-ordinate; repeat m (m+1)*(m+2)/2 times.
 * [A056827](http://oeis.org/A056827) ([L07 program](A056827.asm)): [n^2/6].
 * [A056829](http://oeis.org/A056829) ([L07 program](A056829.asm)): Nearest integer to n^2/6.
+* [A056833](http://oeis.org/A056833) ([L15 program](A056833.asm)): Nearest integer to n^2/7.
 * [A056834](http://oeis.org/A056834) ([L07 program](A056834.asm)): [n^2/7].
 * [A056837](http://oeis.org/A056837) ([L07 program](A056837.asm)): Duplicate of A001971.
 * [A056847](http://oeis.org/A056847) ([L06 program](A056847.asm)): Nearest integer to n - sqrt(n).
@@ -3507,6 +3510,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084509](http://oeis.org/A084509) ([L12 program](A084509.asm)): Number of ground-state 3-ball juggling sequences of period n.
 * [A084515](http://oeis.org/A084515) ([L14 program](A084515.asm)): Partial sums of A084516.
 * [A084537](http://oeis.org/A084537) ([L06 program](A084537.asm)): Duplicate of A002061.
+* [A084556](http://oeis.org/A084556) ([L11 program](A084556.asm)): n occurs n! times.
 * [A084558](http://oeis.org/A084558) ([L13 program](A084558.asm)): a(0) = 0; for n >= 1: a(n) = largest m such that n >= m!.
 * [A084634](http://oeis.org/A084634) ([L08 program](A084634.asm)): Binomial transform of 1,1,1,2,2,2,2,...
 * [A084639](http://oeis.org/A084639) ([L10 program](A084639.asm)): Expansion of x*(1+2*x)/((1+x)*(1-x)*(1-2*x)).

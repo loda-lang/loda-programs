@@ -312,6 +312,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A111284](http://oeis.org/A111284) ([L05 program](A111284.asm)): Number of permutations of [n] avoiding the patterns {2143, 2341, 2413, 2431, 3142, 3241, 3412, 3421, 4123, 4213, 4231, 4321, 4132, 4312}; number of strong sorting classes based on 2143.
 * [A111285](http://oeis.org/A111285) ([L08 program](A111285.asm)): Number of permutations avoiding the patterns {2431, 3421, 4231, 4321, 24513, 42513, 34512, 43512}; number of strong sorting class based on 2431.
 * [A111286](http://oeis.org/A111286) ([L09 program](A111286.asm)): Number of permutations avoiding the patterns {1342, 1432, 2341, 2431, 3142, 3241, 3412, 3421, 4132, 4231, 4312, 4321}; number of strong sorting class based on 1342.
+* [A111297](http://oeis.org/A111297) ([L15 program](A111297.asm)): First differences of A109975.
 * [A111314](http://oeis.org/A111314) ([L08 program](A111314.asm)): a(n) = a(n-1) + a(n-2) + 2 where a(0) = a(1) = 1.
 * [A111384](http://oeis.org/A111384) ([L15 program](A111384.asm)): a(n) = binomial(n,3) - binomial(floor(n/2),3) - binomial(ceiling(n/2),3).
 * [A111396](http://oeis.org/A111396) ([L09 program](A111396.asm)): a(n) = n(n+7)(n+8)/6.
@@ -591,6 +592,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123203](http://oeis.org/A123203) ([L07 program](A123203.asm)): A007318 * [1, 1, 4, 4, 4,...].
 * [A123208](http://oeis.org/A123208) ([L22 program](A123208.asm)): Start with 1, then alternately add 2 or double.
 * [A123296](http://oeis.org/A123296) ([L09 program](A123296.asm)): Number of permutations of n distinct letters (ABCD...) each of which appears 5 times and having n-2 fixed points.
+* [A123347](http://oeis.org/A123347) ([L12 program](A123347.asm)): Number of words of length n over the alphabet {1,2,3,4,5} such that 1 is not followed by an odd letter.
 * [A123350](http://oeis.org/A123350) ([L11 program](A123350.asm)): a(n) = (n^4 + 2n^3 + 5n^2 + 4)/4.
 * [A123578](http://oeis.org/A123578) ([L04 program](A123578.asm)): The Kruskal-Macaulay function M_2(n).
 * [A123663](http://oeis.org/A123663) ([L11 program](A123663.asm)): Number of shared edges in a spiral of n unit squares.
@@ -2322,6 +2324,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A172447](http://oeis.org/A172447) ([L09 program](A172447.asm)): a(n) = (-1 + 5*2^(2*n+1) - 3*n)/9.
 * [A172471](http://oeis.org/A172471) ([L07 program](A172471.asm)): a(n) = floor(sqrt(2*n)).
 * [A172482](http://oeis.org/A172482) ([L11 program](A172482.asm)): a(n) = (1+n)*(9 + 11*n + 4*n^2)/3.
+* [A172486](http://oeis.org/A172486) ([L22 program](A172486.asm)): Number of prime knots up to nine crossings with determinant 2n+1 and signature 6.
 * [A172968](http://oeis.org/A172968) ([L08 program](A172968.asm)): a(n) = 7*a(n-1) - a(n-2) for n>1, a(0)=1, a(1)=2.
 * [A173012](http://oeis.org/A173012) ([L03 program](A173012.asm)): a(1) = 1, for n >= 2; a(n) = the smallest number h such that sigma(h) = A000203(h) = a(n-1) + 2, a(n) = 0 if no such number exists.
 * [A173013](http://oeis.org/A173013) ([L14 program](A173013.asm)): a(1) = 1, for n >= 2; a(n) = the smallest number h such that sigma(h) = A000203(h) = a(n-1) + 3, a(n) = 0 if no such number exists.
@@ -2797,6 +2800,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190981](http://oeis.org/A190981) ([L10 program](A190981.asm)): a(n) = 9*a(n-1) - 4*a(n-2), with a(0)=0, a(1)=1.
 * [A190991](http://oeis.org/A190991) ([L05 program](A190991.asm)): a(n) = 13*n + 1.
 * [A190995](http://oeis.org/A190995) ([L09 program](A190995.asm)): Fibonacci sequence beginning 9, 7.
+* [A190996](http://oeis.org/A190996) ([L10 program](A190996.asm)): Fibonacci sequence beginning 10, 7.
 * [A191007](http://oeis.org/A191007) ([L11 program](A191007.asm)): Another renewal type of sequence: Let X, X(1),X(2),... denote independent random variables with pdf P(X=1) = P(X=2) = P(X=4) = 1/3. Let N(x) denote the first value of k such that X(1)*X(2)...*X(k) > x, and let H(x) = E(N(x)). The sequence a(n) is given by a(n) = 2^(n+1)*H(2^n).
 * [A191275](http://oeis.org/A191275) ([L08 program](A191275.asm)): Numbers that are congruent to {0, 1, 3, 5, 7, 9, 11} mod 12.
 * [A191341](http://oeis.org/A191341) ([L17 program](A191341.asm)): a(n) = 4^n - 2*2^n + 3.
@@ -2814,6 +2818,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192306](http://oeis.org/A192306) ([L14 program](A192306.asm)): 1-sequence of reduction of (2n) by x^2 -> x+1.
 * [A192308](http://oeis.org/A192308) ([L13 program](A192308.asm)): 1-sequence of reduction of (3n) by x^2 -> x+1.
 * [A192309](http://oeis.org/A192309) ([L16 program](A192309.asm)): 0-sequence of reduction of (3n-1) by x^2 -> x+1.
+* [A192311](http://oeis.org/A192311) ([L11 program](A192311.asm)): 0-sequence of reduction of (3n-2) by x^2 -> x+1.
 * [A192312](http://oeis.org/A192312) ([L12 program](A192312.asm)): 1-sequence of reduction of (3n-2) by x^2 -> x+1.
 * [A192333](http://oeis.org/A192333) ([L07 program](A192333.asm)): Numbers that are "unsafe" when playing the game Dollar Nim, which is a Nim game where users can remove 1, 5, 10, or 25 cents from an initial pile of money. The most common version of the game is played with an initial amount of $1, hence the name.
 * [A192418](http://oeis.org/A192418) ([L16 program](A192418.asm)): Molecular topological indices of the complete bipartite graphs K_{n,n}
@@ -2925,6 +2930,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195062](http://oeis.org/A195062) ([L15 program](A195062.asm)): Period 7: repeat [1, 0, 1, 0, 1, 0, 1].
 * [A195140](http://oeis.org/A195140) ([L13 program](A195140.asm)): Multiples of 5 and odd numbers interleaved.
 * [A195142](http://oeis.org/A195142) ([L11 program](A195142.asm)): Concentric 10-gonal numbers.
+* [A195143](http://oeis.org/A195143) ([L13 program](A195143.asm)): a(n) = n-th concentric 12-gonal number.
 * [A195145](http://oeis.org/A195145) ([L17 program](A195145.asm)): Concentric 14-gonal numbers.
 * [A195159](http://oeis.org/A195159) ([L15 program](A195159.asm)): Multiples of 7 and odd numbers interleaved.
 * [A195160](http://oeis.org/A195160) ([L09 program](A195160.asm)): Generalized 11-gonal (or hendecagonal) numbers: m*(9*m - 7)/2 with m = 0, 1, -1, 2, -2, 3, -3, ...

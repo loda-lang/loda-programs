@@ -101,6 +101,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A208704](http://oeis.org/A208704) ([L11 program](A208704.asm)): Number of nX3 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than two of its immediate leftward or upward or right-upward antidiagonal neighbors.
 * [A208902](http://oeis.org/A208902) ([L12 program](A208902.asm)): The sum over all bitstrings b of length n of the number of runs in b not immediately followed by a longer run.
 * [A208903](http://oeis.org/A208903) ([L08 program](A208903.asm)): The sum over all bitstrings b of length n with at least two runs of the number of runs in b not immediately followed by a longer run.
+* [A208971](http://oeis.org/A208971) ([L11 program](A208971.asm)): Number of 4-bead necklaces labeled with numbers -n..n allowing reversal, with sum zero and first and second differences in -n..n.
 * [A208994](http://oeis.org/A208994) ([L07 program](A208994.asm)): Number of 3-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and first differences in -n..n.
 * [A209008](http://oeis.org/A209008) ([L10 program](A209008.asm)): Number of 4-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and first and second differences in -n..n.
 * [A209084](http://oeis.org/A209084) ([L17 program](A209084.asm)): a(n) = 2*a(n-1) + 4*a(n-2) with n>1, a(0)=0, a(1)=4.
@@ -1395,6 +1396,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A287392](http://oeis.org/A287392) ([L06 program](A287392.asm)): Domination number for lion's graph on an n by n board.
 * [A287393](http://oeis.org/A287393) ([L08 program](A287393.asm)): Domination number for knight's graph on a 2 X n board.
 * [A287394](http://oeis.org/A287394) ([L15 program](A287394.asm)): Domination number for camel's graph on a 2 X n board.
+* [A287744](http://oeis.org/A287744) ([L18 program](A287744.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 342", based on the 5-celled von Neumann neighborhood.
 * [A287765](http://oeis.org/A287765) ([L18 program](A287765.asm)): Period 4: repeat [1, 3, 5, 3].
 * [A287866](http://oeis.org/A287866) ([L07 program](A287866.asm)): n - A274933(n).
 * [A288038](http://oeis.org/A288038) ([L08 program](A288038.asm)): Number of independent vertex sets in the n-Andrasfai graph.
@@ -1512,6 +1514,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A294070](http://oeis.org/A294070) ([L17 program](A294070.asm)): a(n) = (1/4)*(n^2 - 2*n)^2 + (9/4)*(n^2 - 2*n) + 6.
 * [A294152](http://oeis.org/A294152) ([L08 program](A294152.asm)): Chromatic invariant of the n-antiprism graph.
 * [A294157](http://oeis.org/A294157) ([L08 program](A294157.asm)): Fibonacci sequence beginning 2, 8.
+* [A294178](http://oeis.org/A294178) ([L12 program](A294178.asm)): a(2n) = 2*n + 1, a(2n+1) = 6*n + 3.
 * [A294259](http://oeis.org/A294259) ([L08 program](A294259.asm)): a(n) = n*(n^3 + 2*n^2 - 5*n + 10)/8.
 * [A294315](http://oeis.org/A294315) ([L12 program](A294315.asm)): a(n) = 3*n^3 + n^2.
 * [A294317](http://oeis.org/A294317) ([L08 program](A294317.asm)): Triangle read by rows: T(n, k) = 2*n-k, k <= n.
