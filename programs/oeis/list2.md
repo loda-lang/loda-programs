@@ -267,6 +267,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213772](http://oeis.org/A213772) ([L15 program](A213772.asm)): Principal diagonal of the convolution array A213771.
 * [A213776](http://oeis.org/A213776) ([L15 program](A213776.asm)): Antidiagonal sums of the convolution array A213774.
 * [A213820](http://oeis.org/A213820) ([L12 program](A213820.asm)): Principal diagonal of the convolution array A213819.
+* [A213826](http://oeis.org/A213826) ([L14 program](A213826.asm)): Principal diagonal of the convolution array A213825.
 * [A213827](http://oeis.org/A213827) ([L15 program](A213827.asm)): Antidiagonal sums of the convolution array A213825.
 * [A213837](http://oeis.org/A213837) ([L17 program](A213837.asm)): Principal diagonal of the convolution array A213836.
 * [A214068](http://oeis.org/A214068) ([L15 program](A214068.asm)): a(n) = floor((3/2)*floor((3/2)*n)).

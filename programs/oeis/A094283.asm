@@ -7,7 +7,6 @@ mov $1,$3
 mov $2,$0
 lpb $2,1
   mov $5,4
-  sub $3,6
   mov $4,$1
   lpb $5,1
     add $1,$4

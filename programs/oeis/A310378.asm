@@ -13,7 +13,6 @@ mov $6,$3
 add $4,$0
 sub $2,1
 add $4,$2
-sub $5,4
 add $1,$4
 mov $0,5
 add $0,$1

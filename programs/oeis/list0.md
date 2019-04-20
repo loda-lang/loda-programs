@@ -198,6 +198,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002717](http://oeis.org/A002717) ([L12 program](A002717.asm)): a(n) = floor(n(n+2)(2n+1)/8).
 * [A002783](http://oeis.org/A002783) ([L10 program](A002783.asm)): 2*(3^n - 2^n) + 1.
 * [A002789](http://oeis.org/A002789) ([L09 program](A002789.asm)): Number of integer points in a certain quadrilateral scaled by a factor of n.
+* [A002798](http://oeis.org/A002798) ([L22 program](A002798.asm)): a(n) = a(n-2)+a(n-3)-a(n-5).
 * [A002817](http://oeis.org/A002817) ([L07 program](A002817.asm)): Doubly triangular numbers: a(n) = n*(n+1)*(n^2+n+2)/8.
 * [A002878](http://oeis.org/A002878) ([L07 program](A002878.asm)): Bisection of Lucas sequence: a(n) = L(2*n+1).
 * [A002939](http://oeis.org/A002939) ([L06 program](A002939.asm)): a(n) = 2*n*(2*n-1).
@@ -237,6 +238,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A003946](http://oeis.org/A003946) ([L08 program](A003946.asm)): Expansion of (1+x)/(1-3*x).
 * [A003947](http://oeis.org/A003947) ([L09 program](A003947.asm)): Expansion of (1+x)/(1-4*x).
 * [A003948](http://oeis.org/A003948) ([L09 program](A003948.asm)): Expansion of (1+x)/(1-5*x).
+* [A003949](http://oeis.org/A003949) ([L10 program](A003949.asm)): G.f.: (1+x)/(1-6*x).
 * [A003952](http://oeis.org/A003952) ([L11 program](A003952.asm)): G.f.: (1+x)/(1-9*x).
 * [A003982](http://oeis.org/A003982) ([L09 program](A003982.asm)): Table read by rows: 1 if x = y, 0 otherwise, where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
 * [A003983](http://oeis.org/A003983) ([L09 program](A003983.asm)): Array read by antidiagonals with T(n,k) = min(n,k).
@@ -531,6 +533,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008642](http://oeis.org/A008642) ([L14 program](A008642.asm)): Quarter-squares repeated.
 * [A008649](http://oeis.org/A008649) ([L19 program](A008649.asm)): Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
 * [A008652](http://oeis.org/A008652) ([L18 program](A008652.asm)): Molien series for group of 3 X 3 upper triangular matrices over GF( 4 ).
+* [A008672](http://oeis.org/A008672) ([L22 program](A008672.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^5)).
 * [A008676](http://oeis.org/A008676) ([L11 program](A008676.asm)): Expansion of 1/((1-x^3)(1-x^5)).
 * [A008679](http://oeis.org/A008679) ([L11 program](A008679.asm)): Expansion of 1/((1-x^3)(1-x^4)).
 * [A008706](http://oeis.org/A008706) ([L05 program](A008706.asm)): Coordination sequence for 3.3.3.4.4 planar net.
@@ -581,6 +584,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010008](http://oeis.org/A010008) ([L20 program](A010008.asm)): a(0) = 1, a(n) = 18*n^2 + 2 for n>0.
 * [A010010](http://oeis.org/A010010) ([L14 program](A010010.asm)): a(0) = 1, a(n) = 20*n^2 + 2 for n>0.
 * [A010011](http://oeis.org/A010011) ([L13 program](A010011.asm)): a(0) = 1, a(n) = 21*n^2 + 2 for n>0.
+* [A010012](http://oeis.org/A010012) ([L18 program](A010012.asm)): a(0) = 1, a(n) = 22*n^2 + 2 for n>0.
 * [A010014](http://oeis.org/A010014) ([L09 program](A010014.asm)): a(0) = 1, a(n) = 24*n^2 + 2 for n>0.
 * [A010015](http://oeis.org/A010015) ([L17 program](A010015.asm)): a(0) = 1, a(n) = 25*n^2 + 2 for n > 0.
 * [A010021](http://oeis.org/A010021) ([L15 program](A010021.asm)): a(0) = 1, a(n) = 32*n^2 + 2 for n>0.
@@ -1324,6 +1328,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024075](http://oeis.org/A024075) ([L10 program](A024075.asm)): a(n) = 7^n-1.
 * [A024166](http://oeis.org/A024166) ([L14 program](A024166.asm)): a(n) = Sum_{1 <= i < j <= n} (j-i)^3.
 * [A024174](http://oeis.org/A024174) ([L13 program](A024174.asm)): a(n) is floor((4th elementary symmetric function of 1,2,..,n)/(3rd elementary symmetric function of 1,2,...,n)).
+* [A024183](http://oeis.org/A024183) ([L14 program](A024183.asm)): Second elementary symmetric function of 3,4,...,n+3.
 * [A024191](http://oeis.org/A024191) ([L10 program](A024191.asm)): [ (3rd elementary symmetric function of 3,4,...,n+4)/(3+4+...+n+4) ].
 * [A024206](http://oeis.org/A024206) ([L06 program](A024206.asm)): Expansion of x^2*(1+x-x^2)/((1-x^2)*(1-x)^2).
 * [A024219](http://oeis.org/A024219) ([L11 program](A024219.asm)): a(n) = floor( (2nd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ), where S(n) = {first n+1 positive integers congruent to 1 mod 3}.
@@ -3770,6 +3775,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A094159](http://oeis.org/A094159) ([L06 program](A094159.asm)): 3 times hexagonal numbers: a(n) = 3*n*(2*n-1).
 * [A094195](http://oeis.org/A094195) ([L11 program](A094195.asm)): G.f.: (1-4*x)/((1-5*x)*(1-x)^2).
 * [A094258](http://oeis.org/A094258) ([L15 program](A094258.asm)): a(1) = 1, a(n+1) = n*n! for n >= 1.
+* [A094283](http://oeis.org/A094283) ([L13 program](A094283.asm)): Row sums of triangle A094280.
 * [A094284](http://oeis.org/A094284) ([L04 program](A094284.asm)): A094283(n+1)/A094283(n).
 * [A094373](http://oeis.org/A094373) ([L07 program](A094373.asm)): Expansion of (1-x-x^2)/((1-x)*(1-2*x)).
 * [A094388](http://oeis.org/A094388) ([L08 program](A094388.asm)): Expansion of (1- 2x - x^2)/((1-x)*(1-3x)).
