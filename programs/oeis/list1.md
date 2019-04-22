@@ -2409,6 +2409,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174120](http://oeis.org/A174120) ([L09 program](A174120.asm)): Partial sums of A024012.
 * [A174121](http://oeis.org/A174121) ([L13 program](A174121.asm)): Partial sums of A001580.
 * [A174140](http://oeis.org/A174140) ([L17 program](A174140.asm)): Numbers congruent to k mod 25, where 10 <= k <= 24.
+* [A174141](http://oeis.org/A174141) ([L33 program](A174141.asm)): Numbers congruent to k mod 25, where 0 <= k <= 9.
 * [A174191](http://oeis.org/A174191) ([L12 program](A174191.asm)): Expansion of (1+x)*(2*x-1)/((1-x)*(x^2+2*x-1)).
 * [A174192](http://oeis.org/A174192) ([L18 program](A174192.asm)): Expansion of (1-x+2x^2)/ ((1-x)*(1-2x-x^2)).
 * [A174239](http://oeis.org/A174239) ([L12 program](A174239.asm)): a(n) = (3*n + 1 + (-1)^n*(n+3))/4.
@@ -3091,6 +3092,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199319](http://oeis.org/A199319) ([L10 program](A199319.asm)): 4*6^n+1.
 * [A199320](http://oeis.org/A199320) ([L10 program](A199320.asm)): 5*6^n+1.
 * [A199321](http://oeis.org/A199321) ([L10 program](A199321.asm)): 7*6^n+1.
+* [A199394](http://oeis.org/A199394) ([L12 program](A199394.asm)): The number of ways to color the vertices of all (11) simple unlabeled graphs on 4 nodes using at most n colors.
 * [A199411](http://oeis.org/A199411) ([L13 program](A199411.asm)): 8*6^n+1.
 * [A199412](http://oeis.org/A199412) ([L14 program](A199412.asm)): (9*6^n+1)/5.
 * [A199414](http://oeis.org/A199414) ([L15 program](A199414.asm)): 10*6^n+1.

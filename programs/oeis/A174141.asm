@@ -22,7 +22,6 @@ lpb $2,1
     sub $4,$3
     sub $2,$5
   lpe
-  add $0,1
   add $1,2
   add $5,5
   lpb $6,1

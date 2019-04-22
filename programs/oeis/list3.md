@@ -238,3 +238,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324471](http://oeis.org/A324471) ([L22 program](A324471.asm)): 10 mod n.
 * [A324560](http://oeis.org/A324560) ([L12 program](A324560.asm)): Numbers > 1 where the minimum prime index is less than or equal to the number of prime factors counted with multiplicity.
 * [A324969](http://oeis.org/A324969) ([L08 program](A324969.asm)): Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+* [A325168](http://oeis.org/A325168) ([L14 program](A325168.asm)): Number of integer partitions of n with origin-to-boundary graph-distance equal to 2.

@@ -696,6 +696,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245764](http://oeis.org/A245764) ([L15 program](A245764.asm)): a(n) = 2*(n^2 + 1) + n*(1 + (-1)^n).
 * [A245766](http://oeis.org/A245766) ([L11 program](A245766.asm)): a(n) = 2*(n^2 + 1) - n*(1 + (-1)^n).
 * [A245990](http://oeis.org/A245990) ([L18 program](A245990.asm)): Number of length n+2 0..3 arrays with no pair in any consecutive three terms totalling exactly 3.
+* [A245992](http://oeis.org/A245992) ([L20 program](A245992.asm)): Number of length n+2 0..5 arrays with no pair in any consecutive three terms totalling exactly 5
 * [A246058](http://oeis.org/A246058) ([L13 program](A246058.asm)): (16*10^n-7)/9.
 * [A246139](http://oeis.org/A246139) ([L06 program](A246139.asm)): 2^n + 10.
 * [A246172](http://oeis.org/A246172) ([L06 program](A246172.asm)): a(n) = (n^2+9*n-8)/2.
@@ -1310,6 +1311,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A279321](http://oeis.org/A279321) ([L18 program](A279321.asm)): Period 7: repeat [1, 3, 5, 7, 5, 3, 1].
 * [A279521](http://oeis.org/A279521) ([L09 program](A279521.asm)): Maximum numbers of single-direction edges in leveled binary trees with n nodes.
 * [A279704](http://oeis.org/A279704) ([L10 program](A279704.asm)): Number of n X 3 0..1 arrays with no element equal to a strict majority of its horizontal and antidiagonal neighbors and with new values introduced in order 0 sequentially upwards.
+* [A279872](http://oeis.org/A279872) ([L16 program](A279872.asm)): Decimal representation of the x-axis, from the left edge to the origin, (and also from the origin to the right edge) of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 209", based on the 5-celled von Neumann neighborhood.
 * [A279891](http://oeis.org/A279891) ([L06 program](A279891.asm)): Triangle read by rows, T(n,k) = 2*n, with n>=k>=0.
 * [A279895](http://oeis.org/A279895) ([L06 program](A279895.asm)): a(n) = n*(5*n + 11)/2.
 * [A280026](http://oeis.org/A280026) ([L14 program](A280026.asm)): Fill an infinite square array by following a spiral around the origin; in the n-th cell, enter the number of earlier cells that can be seen from that cell.
