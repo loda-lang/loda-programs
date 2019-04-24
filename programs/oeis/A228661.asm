@@ -1,0 +1,14 @@
+; A228661: Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
+; 2,2,8,14,38,80,194,434,1016,2318,5366,12320,28418,65378,150632,346766,798662,1838960,4234946,9751826,22456664,51712142,119082134,274218560,631464962,1454120642,3348515528,7710877454,17756424038,40889056400
+
+mov $1,2
+add $3,4
+add $4,$3
+lpb $0,1
+  add $2,$4
+  mov $4,$1
+  mov $1,$2
+  add $2,$1
+  sub $0,1
+  sub $1,$4
+lpe
