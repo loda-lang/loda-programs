@@ -257,6 +257,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213389](http://oeis.org/A213389) ([L09 program](A213389.asm)): Number of (w,x,y) with all terms in {0,...,n} and max(w,x,y) < 2*min(w,x,y).
 * [A213398](http://oeis.org/A213398) ([L12 program](A213398.asm)): Number of (w,x,y) with all terms in {0,...,n} and min(|w-x|,|x-y|) = x.
 * [A213484](http://oeis.org/A213484) ([L10 program](A213484.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| >= w+x+y.
+* [A213486](http://oeis.org/A213486) ([L13 program](A213486.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| > w+x+y.
 * [A213502](http://oeis.org/A213502) ([L17 program](A213502.asm)): Number of (w,x,y) with all terms in {0,...,n} and x != min(|w-x|,|x-y|)
 * [A213511](http://oeis.org/A213511) ([L09 program](A213511.asm)): The sequence N'(n) arising in the enumeration of balanced ternary trees.
 * [A213569](http://oeis.org/A213569) ([L08 program](A213569.asm)): Principal diagonal of the convolution array A213568.
@@ -426,6 +427,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226492](http://oeis.org/A226492) ([L06 program](A226492.asm)): a(n) = n*(11*n-5)/2.
 * [A226493](http://oeis.org/A226493) ([L09 program](A226493.asm)): Closed walks of length n in K_4 graph.
 * [A226514](http://oeis.org/A226514) ([L11 program](A226514.asm)): Column 3 of array in A226513.
+* [A226538](http://oeis.org/A226538) ([L11 program](A226538.asm)): a(2t) = a(2t-1) + 1, a(2t+1) = a(2t) + a(2t-2) for t >= 1, with a(0) = a(1) = 1.
 * [A226576](http://oeis.org/A226576) ([L07 program](A226576.asm)): Smallest number of integer sided squares needed to tile a 3 X n rectangle.
 * [A227017](http://oeis.org/A227017) ([L13 program](A227017.asm)): Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n(3n-1)/2 = A000326(n).
 * [A227161](http://oeis.org/A227161) ([L11 program](A227161.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of one or less, with rows and columns of the latter in lexicographically nondecreasing order.
@@ -1576,6 +1578,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297663](http://oeis.org/A297663) ([L07 program](A297663.asm)): a(n) = 5*n + 2^n.
 * [A297675](http://oeis.org/A297675) ([L07 program](A297675.asm)): a(n) = 3*(n^2+n-4)/2.
 * [A298024](http://oeis.org/A298024) ([L24 program](A298024.asm)): G.f.: (x^4+3*x^3+6*x^2+3*x+1)/((1-x)*(1-x^3)).
+* [A298025](http://oeis.org/A298025) ([L15 program](A298025.asm)): Partial sums of A298024.
 * [A298027](http://oeis.org/A298027) ([L10 program](A298027.asm)): Partial sums of A298026.
 * [A298033](http://oeis.org/A298033) ([L14 program](A298033.asm)): Coordination sequence of the Dual(3.4.6.4) tiling with respect to a hexavalent node.
 * [A298034](http://oeis.org/A298034) ([L21 program](A298034.asm)): Partial sums of A298033.

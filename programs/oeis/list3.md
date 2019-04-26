@@ -32,6 +32,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301729](http://oeis.org/A301729) ([L19 program](A301729.asm)): a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
 * [A301755](http://oeis.org/A301755) ([L05 program](A301755.asm)): Decimal expansion of 3/8.
 * [A301819](http://oeis.org/A301819) ([L10 program](A301819.asm)): Number of nX4 0..1 arrays with every element equal to 1 or 2 horizontally or antidiagonally adjacent elements, with upper left element zero.
+* [A301926](http://oeis.org/A301926) ([L10 program](A301926.asm)): a(n+3) = a(n) + 24*n + 32, a(0)=0, a(1)=3, a(2)=13.
 * [A301995](http://oeis.org/A301995) ([L07 program](A301995.asm)): Number of nX4 0..1 arrays with every element equal to 1, 2 or 4 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A302058](http://oeis.org/A302058) ([L11 program](A302058.asm)): Numbers that are not square pyramidal numbers.
 * [A302254](http://oeis.org/A302254) ([L13 program](A302254.asm)): Exponent of the group of the Gaussian integers in a reduced system modulo (1+i)^n.
