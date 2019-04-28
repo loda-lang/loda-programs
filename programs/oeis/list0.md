@@ -1186,6 +1186,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022131](http://oeis.org/A022131) ([L09 program](A022131.asm)): Fibonacci sequence beginning 4, 11.
 * [A022132](http://oeis.org/A022132) ([L17 program](A022132.asm)): Fibonacci sequence beginning 4, 13.
 * [A022133](http://oeis.org/A022133) ([L16 program](A022133.asm)): Fibonacci sequence beginning 4, 15.
+* [A022135](http://oeis.org/A022135) ([L11 program](A022135.asm)): Fibonacci sequence beginning 4, 19.
 * [A022136](http://oeis.org/A022136) ([L08 program](A022136.asm)): Fibonacci sequence beginning 5, 11.
 * [A022137](http://oeis.org/A022137) ([L10 program](A022137.asm)): Fibonacci sequence beginning 5, 12.
 * [A022138](http://oeis.org/A022138) ([L13 program](A022138.asm)): Fibonacci sequence beginning 5, 13.
@@ -2497,6 +2498,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052529](http://oeis.org/A052529) ([L10 program](A052529.asm)): Expansion of (x-1)^3/(-1+4*x-3*x^2+x^3).
 * [A052530](http://oeis.org/A052530) ([L07 program](A052530.asm)): a(n) = 4*a(n-1) - a(n-2), with a(0) = 0, a(1) = 2.
 * [A052531](http://oeis.org/A052531) ([L14 program](A052531.asm)): If n is even then 2^n+1 otherwise 2^n.
+* [A052533](http://oeis.org/A052533) ([L10 program](A052533.asm)): Expansion of (1-x)/(1-x-3x^2).
 * [A052534](http://oeis.org/A052534) ([L11 program](A052534.asm)): Expansion of (1-x)(1+x)/(1-2x-x^2+x^3).
 * [A052536](http://oeis.org/A052536) ([L11 program](A052536.asm)): Number of compositions of n when parts 1 and 2 are of two kinds.
 * [A052539](http://oeis.org/A052539) ([L07 program](A052539.asm)): a(n) = 4^n + 1.
@@ -3275,6 +3277,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A078485](http://oeis.org/A078485) ([L21 program](A078485.asm)): Number of irreducible indecomposable permutations of degree n.
 * [A078501](http://oeis.org/A078501) ([L12 program](A078501.asm)): a(n) = sum(k=1,n^2, A078446(k)).
 * [A078567](http://oeis.org/A078567) ([L10 program](A078567.asm)): Number of arithmetic subsequences of [1..n] with length > 1.
+* [A078633](http://oeis.org/A078633) ([L15 program](A078633.asm)): Smallest number of sticks of length 1 needed to construct n squares with sides of length 1.
 * [A078642](http://oeis.org/A078642) ([L08 program](A078642.asm)): Numbers with two representations as the sum of two Fibonacci numbers.
 * [A078689](http://oeis.org/A078689) ([L12 program](A078689.asm)): Continued fraction expansion of e^(1/3).
 * [A078832](http://oeis.org/A078832) ([L13 program](A078832.asm)): Smallest prime contained as binary substring in binary representation of n>1, a(1)=1.
