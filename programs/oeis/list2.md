@@ -148,6 +148,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211329](http://oeis.org/A211329) ([L14 program](A211329.asm)): Number of (n+1) X (n+1) -5..5 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
 * [A211430](http://oeis.org/A211430) ([L11 program](A211430.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w^2+x+y=0.
 * [A211435](http://oeis.org/A211435) ([L07 program](A211435.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+4x+5y=0.
+* [A211438](http://oeis.org/A211438) ([L11 program](A211438.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+2x+2y=0.
 * [A211441](http://oeis.org/A211441) ([L06 program](A211441.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w + x + y = 2.
 * [A211466](http://oeis.org/A211466) ([L15 program](A211466.asm)): Number of (n+1) X (n+1) -8..8 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
 * [A211480](http://oeis.org/A211480) ([L07 program](A211480.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w + 2x + 3y = 1.
@@ -156,6 +157,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211519](http://oeis.org/A211519) ([L11 program](A211519.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=2x+3y.
 * [A211521](http://oeis.org/A211521) ([L12 program](A211521.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w + 2x = 4y.
 * [A211522](http://oeis.org/A211522) ([L11 program](A211522.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w + 5y = 2x.
+* [A211523](http://oeis.org/A211523) ([L20 program](A211523.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w+2x=5y.
 * [A211533](http://oeis.org/A211533) ([L08 program](A211533.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=3x-5y.
 * [A211534](http://oeis.org/A211534) ([L06 program](A211534.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w = 3x + 3y.
 * [A211535](http://oeis.org/A211535) ([L12 program](A211535.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=4x+5y.
@@ -206,7 +208,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212415](http://oeis.org/A212415) ([L08 program](A212415.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<x>=y<=z.
 * [A212427](http://oeis.org/A212427) ([L05 program](A212427.asm)): a(n) = 17*n + A000217(n-1).
 * [A212428](http://oeis.org/A212428) ([L05 program](A212428.asm)): a(n) = 18*n + A000217(n-1).
-* [A212446](http://oeis.org/A212446) ([L20 program](A212446.asm)): Floor(2n + log(2n)).
 * [A212501](http://oeis.org/A212501) ([L11 program](A212501.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w > x < y >= z.
 * [A212523](http://oeis.org/A212523) ([L15 program](A212523.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<y+z.
 * [A212560](http://oeis.org/A212560) ([L11 program](A212560.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<=y+z.
@@ -789,6 +790,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250813](http://oeis.org/A250813) ([L13 program](A250813.asm)): Number of (1+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.
 * [A251599](http://oeis.org/A251599) ([L11 program](A251599.asm)): Centers of rows of the triangular array formed by the natural numbers.
 * [A251630](http://oeis.org/A251630) ([L08 program](A251630.asm)): Column sums of the n X n square array filled with numbers from 1 to n^2, row by row, from left to right.
+* [A251743](http://oeis.org/A251743) ([L11 program](A251743.asm)): Pairs of nodes in a complete binary tree that are at an absolute height difference of less than 2 from each other.
 * [A252870](http://oeis.org/A252870) ([L10 program](A252870.asm)): Number of n X 2 nonnegative integer arrays with upper left 0 and lower right n+2-4 and value increasing by 0 or 1 with every step right or down.
 * [A252994](http://oeis.org/A252994) ([L05 program](A252994.asm)): Multiples of 26.
 * [A253145](http://oeis.org/A253145) ([L06 program](A253145.asm)): Triangular numbers (A000217) omitting the term 1.
