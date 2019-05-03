@@ -1839,7 +1839,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162668](http://oeis.org/A162668) ([L08 program](A162668.asm)): n*(n+1)*(n+2)*(n+3)/3.
 * [A162673](http://oeis.org/A162673) ([L14 program](A162673.asm)): Number of different fixed (possibly) disconnected trominoes bounded (not necessarily tightly) by an n*n square
 * [A162699](http://oeis.org/A162699) ([L09 program](A162699.asm)): Odd numbers not divisible by 7.
-* [A162761](http://oeis.org/A162761) ([L07 program](A162761.asm)): Minimal number of stairs a lift must move to transport n people initially waiting at floor i = 1, ..., n to their destination floor n-i+1 (= n, ..., 1), when the lift can hold only one person at a time.
+* [A162761](http://oeis.org/A162761) ([L07 program](A162761.asm)): Minimal number of floors an elevator must move to transport n people initially waiting at floor i = 1, ..., n to their destination floor n-i+1 (= n, ..., 1), when the elevator can hold only one person at a time.
 * [A162771](http://oeis.org/A162771) ([L10 program](A162771.asm)): a(n) = ((2+sqrt(5))*(3+sqrt(5))^n + (2-sqrt(5))*(3-sqrt(5))^n)/2.
 * [A162897](http://oeis.org/A162897) ([L11 program](A162897.asm)): a(1)=a(2)=2. a(n) = the smallest integer >= 2 such that a(n-1)^a(n) > a(n-2)^a(n-1).
 * [A162917](http://oeis.org/A162917) ([L09 program](A162917.asm)): Numbers n which are not in A161983.
@@ -3173,6 +3173,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199412](http://oeis.org/A199412) ([L14 program](A199412.asm)): (9*6^n+1)/5.
 * [A199414](http://oeis.org/A199414) ([L15 program](A199414.asm)): 10*6^n+1.
 * [A199415](http://oeis.org/A199415) ([L15 program](A199415.asm)): 11*6^n+1.
+* [A199417](http://oeis.org/A199417) ([L11 program](A199417.asm)): (3*7^n+1)/2.
 * [A199418](http://oeis.org/A199418) ([L18 program](A199418.asm)): 3*7^n+1.
 * [A199419](http://oeis.org/A199419) ([L12 program](A199419.asm)): 4*7^n+1.
 * [A199420](http://oeis.org/A199420) ([L10 program](A199420.asm)): a(n) = (5*7^n+1)/3.

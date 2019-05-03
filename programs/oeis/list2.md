@@ -232,6 +232,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212831](http://oeis.org/A212831) ([L13 program](A212831.asm)): a(4*n) = 2*n, a(2*n+1) = 2*n+1, a(4*n+2) = 2*n+2.
 * [A212832](http://oeis.org/A212832) ([L07 program](A212832.asm)): Decimal expansion of 5/24.
 * [A212836](http://oeis.org/A212836) ([L17 program](A212836.asm)): Number of 0..n arrays of length 3 with 0 never adjacent to n.
+* [A212892](http://oeis.org/A212892) ([L17 program](A212892.asm)): a(n) = n^4/8 if n is even, a(n) = (n^2-1)^2/8 if n is odd.
 * [A212959](http://oeis.org/A212959) ([L10 program](A212959.asm)): Number of (w,x,y) such that w,x,y are all in {0,...,n} and |w-x| = |x-y|.
 * [A212960](http://oeis.org/A212960) ([L15 program](A212960.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x| != |x-y|.
 * [A212964](http://oeis.org/A212964) ([L09 program](A212964.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x| < |x-y| < |y-w|.
@@ -746,6 +747,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248333](http://oeis.org/A248333) ([L10 program](A248333.asm)): Number of unit squares enclosed by n lattice points in and along the first quadrant of the coordinate plane starting from (0,0) and moving along each square gnomon starting on the y-axis and ending on the x-axis.
 * [A248339](http://oeis.org/A248339) ([L09 program](A248339.asm)): a(n) = 22*n+19.
 * [A248375](http://oeis.org/A248375) ([L08 program](A248375.asm)): a(n) = floor(9*n/8).
+* [A248427](http://oeis.org/A248427) ([L27 program](A248427.asm)): Circumference of the (n,n)-knight graph.
 * [A248428](http://oeis.org/A248428) ([L20 program](A248428.asm)): Number of length n+2 0..3 arrays with every three consecutive terms having the sum of some two elements equal to twice the third.
 * [A248429](http://oeis.org/A248429) ([L16 program](A248429.asm)): Number of length n+2 0..4 arrays with every three consecutive terms having the sum of some two elements equal to twice the third.
 * [A248434](http://oeis.org/A248434) ([L12 program](A248434.asm)): Number of length 1+2 0..n arrays with every three consecutive terms having the sum of some two elements equal to twice the third
@@ -1595,6 +1597,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297045](http://oeis.org/A297045) ([L05 program](A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
 * [A297046](http://oeis.org/A297046) ([L10 program](A297046.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-60 digits of n; see Comments
 * [A297217](http://oeis.org/A297217) ([L09 program](A297217.asm)): Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.
+* [A297240](http://oeis.org/A297240) ([L23 program](A297240.asm)): Down-variation of the base-14 digits of n; see Comments.
 * [A297382](http://oeis.org/A297382) ([L11 program](A297382.asm)): Denominator of -A023900(n)/2.
 * [A297464](http://oeis.org/A297464) ([L09 program](A297464.asm)): Solution (a(n)) of the system of 4 complementary equations in Comments.
 * [A297662](http://oeis.org/A297662) ([L13 program](A297662.asm)): Number of chordless cycles in the complete tripartite graph K_n,n,n.
