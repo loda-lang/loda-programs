@@ -32,6 +32,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301723](http://oeis.org/A301723) ([L15 program](A301723.asm)): Partial sums of A301722.
 * [A301729](http://oeis.org/A301729) ([L19 program](A301729.asm)): a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
 * [A301755](http://oeis.org/A301755) ([L05 program](A301755.asm)): Decimal expansion of 3/8.
+* [A301791](http://oeis.org/A301791) ([L21 program](A301791.asm)): Number of 2Xn 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301819](http://oeis.org/A301819) ([L10 program](A301819.asm)): Number of nX4 0..1 arrays with every element equal to 1 or 2 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301926](http://oeis.org/A301926) ([L10 program](A301926.asm)): a(n+3) = a(n) + 24*n + 32, a(0)=0, a(1)=3, a(2)=13.
 * [A301995](http://oeis.org/A301995) ([L07 program](A301995.asm)): Number of nX4 0..1 arrays with every element equal to 1, 2 or 4 horizontally or antidiagonally adjacent elements, with upper left element zero.
@@ -102,6 +103,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304993](http://oeis.org/A304993) ([L07 program](A304993.asm)): a(n) = n*(n + 1)*(7*n + 5)/6.
 * [A305060](http://oeis.org/A305060) ([L08 program](A305060.asm)): a(n) = 18*2^n + 10.
 * [A305061](http://oeis.org/A305061) ([L11 program](A305061.asm)): a(n) = 20*2^n + 14.
+* [A305062](http://oeis.org/A305062) ([L19 program](A305062.asm)): a(n) = 96*2^n + 80.
 * [A305064](http://oeis.org/A305064) ([L08 program](A305064.asm)): a(n) = 42*2^n - 20.
 * [A305065](http://oeis.org/A305065) ([L06 program](A305065.asm)): a(n) = 48*2^n - 24.
 * [A305068](http://oeis.org/A305068) ([L13 program](A305068.asm)): a(n) = 54*n - 18 (n>=1).
