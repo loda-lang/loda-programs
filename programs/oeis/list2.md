@@ -101,6 +101,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A208638](http://oeis.org/A208638) ([L08 program](A208638.asm)): Number of 3 X n 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward or right-upward antidiagonal neighbors.
 * [A208658](http://oeis.org/A208658) ([L08 program](A208658.asm)): Row sums of A208657.
 * [A208704](http://oeis.org/A208704) ([L11 program](A208704.asm)): Number of nX3 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than two of its immediate leftward or upward or right-upward antidiagonal neighbors.
+* [A208901](http://oeis.org/A208901) ([L28 program](A208901.asm)): Number of bitstrings of length n (with at least two runs) where the last two runs have different lengths.
 * [A208902](http://oeis.org/A208902) ([L12 program](A208902.asm)): The sum over all bitstrings b of length n of the number of runs in b not immediately followed by a longer run.
 * [A208903](http://oeis.org/A208903) ([L08 program](A208903.asm)): The sum over all bitstrings b of length n with at least two runs of the number of runs in b not immediately followed by a longer run.
 * [A208971](http://oeis.org/A208971) ([L11 program](A208971.asm)): Number of 4-bead necklaces labeled with numbers -n..n allowing reversal, with sum zero and first and second differences in -n..n.
@@ -896,6 +897,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257846](http://oeis.org/A257846) ([L13 program](A257846.asm)): a(n) = floor(n/6) * (n mod 6).
 * [A257847](http://oeis.org/A257847) ([L09 program](A257847.asm)): a(n) = floor(n/7) * (n mod 7).
 * [A257936](http://oeis.org/A257936) ([L03 program](A257936.asm)): Decimal expansion of 11/18.
+* [A258016](http://oeis.org/A258016) ([L22 program](A258016.asm)): Unlucky numbers removed at the stage three of Lucky sieve.
 * [A258071](http://oeis.org/A258071) ([L01 program](A258071.asm)): Nonnegative integers that can be computed using exactly ten 10's and the four basic arithmetic operations {+, -, *, /}.
 * [A258087](http://oeis.org/A258087) ([L07 program](A258087.asm)): Start with all terms set to 0. Then add n to the next n+2 terms for n=0,1,2,... .
 * [A258109](http://oeis.org/A258109) ([L12 program](A258109.asm)): Number of balanced parenthesis expressions of length 2n and depth 3.
@@ -1270,6 +1272,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274077](http://oeis.org/A274077) ([L08 program](A274077.asm)): a(n) = n^3 + 4.
 * [A274179](http://oeis.org/A274179) ([L18 program](A274179.asm)): Expansion of f(x^1, x^6) in powers of x where f() is Ramanujan's general theta function.
 * [A274230](http://oeis.org/A274230) ([L12 program](A274230.asm)): Number of holes in a sheet of paper when you fold it n times and cut off the four corners.
+* [A274339](http://oeis.org/A274339) ([L15 program](A274339.asm)): The 3-cycle of the iterated sum of deficient divisors function.
 * [A274406](http://oeis.org/A274406) ([L05 program](A274406.asm)): Numbers m such that 9 divides m*(m + 1).
 * [A274497](http://oeis.org/A274497) ([L21 program](A274497.asm)): Sum of the degrees of asymmetry of all binary words of length n.
 * [A274583](http://oeis.org/A274583) ([L07 program](A274583.asm)): Expansion of (1 + x + x^2 - x^3 - x^4 + x^6)/((1 - x)^3*(1 + x + x^2)^2).

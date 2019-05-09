@@ -329,6 +329,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004965](http://oeis.org/A004965) ([L23 program](A004965.asm)): Ceiling of n*phi^10, where phi is the golden ratio, A001622.
 * [A004967](http://oeis.org/A004967) ([L09 program](A004967.asm)): Ceiling of n*phi^12, where phi is the golden ratio, A001622.
 * [A004968](http://oeis.org/A004968) ([L22 program](A004968.asm)): Ceiling of n*phi^13, where phi is the golden ratio, A001622.
+* [A004972](http://oeis.org/A004972) ([L22 program](A004972.asm)): Ceiling of n*phi^17, where phi is the golden ratio, A001622.
 * [A005004](http://oeis.org/A005004) ([L12 program](A005004.asm)): Davenport-Schinzel numbers of degree n on 3 symbols.
 * [A005009](http://oeis.org/A005009) ([L05 program](A005009.asm)): 7*2^n.
 * [A005010](http://oeis.org/A005010) ([L05 program](A005010.asm)): a(n) = 9*2^n.
@@ -1111,7 +1112,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021085](http://oeis.org/A021085) ([L14 program](A021085.asm)): Decimal expansion of 1/81.
 * [A021100](http://oeis.org/A021100) ([L08 program](A021100.asm)): Decimal expansion of 1/96.
 * [A021105](http://oeis.org/A021105) ([L18 program](A021105.asm)): Decimal expansion of 1/101.
-* [A021112](http://oeis.org/A021112) ([L18 program](A021112.asm)): Decimal expansion of 1/108.
 * [A021115](http://oeis.org/A021115) ([L06 program](A021115.asm)): Decimal expansion of 1/111.
 * [A021136](http://oeis.org/A021136) ([L11 program](A021136.asm)): Decimal expansion of 1/132.
 * [A021139](http://oeis.org/A021139) ([L13 program](A021139.asm)): Decimal expansion of 1/135.
@@ -2217,6 +2217,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047492](http://oeis.org/A047492) ([L14 program](A047492.asm)): Numbers that are congruent to {0, 4, 5, 7} mod 8.
 * [A047493](http://oeis.org/A047493) ([L09 program](A047493.asm)): Numbers that are congruent to {1, 4, 5, 7} mod 8.
 * [A047494](http://oeis.org/A047494) ([L13 program](A047494.asm)): Numbers that are congruent to {0, 1, 4, 5, 7} mod 8.
+* [A047495](http://oeis.org/A047495) ([L15 program](A047495.asm)): Numbers that are congruent to {2, 4, 5, 7} mod 8.
 * [A047496](http://oeis.org/A047496) ([L07 program](A047496.asm)): Numbers that are congruent to {0, 2, 4, 5, 7} mod 8.
 * [A047497](http://oeis.org/A047497) ([L07 program](A047497.asm)): Numbers that are congruent to {1, 2, 4, 5, 7} mod 8.
 * [A047498](http://oeis.org/A047498) ([L13 program](A047498.asm)): Numbers that are congruent to {0, 1, 2, 4, 5, 7} mod 8.
@@ -2543,7 +2544,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052548](http://oeis.org/A052548) ([L06 program](A052548.asm)): a(n) = 2^n + 2.
 * [A052549](http://oeis.org/A052549) ([L07 program](A052549.asm)): a(0)=1; a(n) = 5*2^(n-1) - 1, n>0.
 * [A052551](http://oeis.org/A052551) ([L06 program](A052551.asm)): Expansion of 1/((1 - x)*(1 - 2*x^2)).
-* [A052552](http://oeis.org/A052552) ([L11 program](A052552.asm)): a(2*n+1) = 1, a(2*n) = 2*a(2*n-2)-1.
+* [A052552](http://oeis.org/A052552) ([L11 program](A052552.asm)): a(2*n+1) = 1, a(2*n) = 2*a(2*n-2) - 1.
 * [A052578](http://oeis.org/A052578) ([L12 program](A052578.asm)): a(0) = 0, a(n) = 4*n! for n > 0.
 * [A052749](http://oeis.org/A052749) ([L07 program](A052749.asm)): 2n*S2(n-1,2).
 * [A052762](http://oeis.org/A052762) ([L15 program](A052762.asm)): Products of 4 consecutive integers: a(n) = n*(n-1)*(n-2)*(n-3).
@@ -2629,6 +2630,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054452](http://oeis.org/A054452) ([L07 program](A054452.asm)): Partial sums of A027941(n-1) with a(-1) = 0.
 * [A054485](http://oeis.org/A054485) ([L08 program](A054485.asm)): Expansion of (1+3*x)/(1-4*x+x^2).
 * [A054486](http://oeis.org/A054486) ([L07 program](A054486.asm)): Expansion of (1+2x)/(1-3x+x^2).
+* [A054489](http://oeis.org/A054489) ([L13 program](A054489.asm)): Expansion of (1+4x)/(1-6x+x^2).
 * [A054490](http://oeis.org/A054490) ([L20 program](A054490.asm)): Expansion of (1+5*x)/(1-6*x+x^2).
 * [A054491](http://oeis.org/A054491) ([L09 program](A054491.asm)): a(n) = 4a(n-1) - a(n-2), a(0)=1, a(1)=6.
 * [A054492](http://oeis.org/A054492) ([L07 program](A054492.asm)): a(n) = 3*a(n-1) - a(n-2), a(0)=1, a(1)=6.
@@ -2857,6 +2859,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060584](http://oeis.org/A060584) ([L09 program](A060584.asm)): Compare ultimate and penultimate digits of n base 3, i.e., 0 if n mod 3 = floor(n/3) mod 3, 1 otherwise; also 0 if (n mod 9) is a multiple of 4, 1 otherwise.
 * [A060588](http://oeis.org/A060588) ([L22 program](A060588.asm)): If the final two digits of n written in base 3 are the same then this digit, otherwise mod 3-sum of these two digits.
 * [A060626](http://oeis.org/A060626) ([L07 program](A060626.asm)): Number of right triangles of a given area required to form successively larger squares.
+* [A060641](http://oeis.org/A060641) ([L23 program](A060641.asm)): Surround numbers of a length 2n zig-zag.
 * [A060647](http://oeis.org/A060647) ([L09 program](A060647.asm)): Number of alpha-beta evaluations in a tree of depth n and branching factor b=3.
 * [A060762](http://oeis.org/A060762) ([L07 program](A060762.asm)): Number of conjugacy classes (the same as the number of irreducible representations) in the dihedral group with 2n elements.
 * [A060783](http://oeis.org/A060783) ([L12 program](A060783.asm)): Number of conics which pass through 3 points and are bitangent to a general curve of order n.
@@ -3867,6 +3870,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A094002](http://oeis.org/A094002) ([L08 program](A094002.asm)): a(n+3) = 3*a(n+2) - 2*a(n+1) + 1 with a(0)=1, a(1)=5.
 * [A094012](http://oeis.org/A094012) ([L13 program](A094012.asm)): Expansion of x(1-6x+10x^2)/(1-4x+2x^2)^2.
 * [A094015](http://oeis.org/A094015) ([L15 program](A094015.asm)): Expansion of (1+4x)/(1-8x^2).
+* [A094024](http://oeis.org/A094024) ([L11 program](A094024.asm)): Alternating 1 with one less than the powers of 2.
 * [A094025](http://oeis.org/A094025) ([L10 program](A094025.asm)): Expansion of (1+3x)/((1-x^2)(1-3x^2)).
 * [A094033](http://oeis.org/A094033) ([L15 program](A094033.asm)): Number of connected 2-element antichains on a labeled n-set.
 * [A094041](http://oeis.org/A094041) ([L11 program](A094041.asm)): Beatty sequence for e^Pi - Pi^e - i^i.

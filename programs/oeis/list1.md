@@ -1573,7 +1573,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154286](http://oeis.org/A154286) ([L11 program](A154286.asm)): a(n) = E(k)C(n+k,k) = Euler(k)*Pascal(n+k,k) for k=4.
 * [A154323](http://oeis.org/A154323) ([L08 program](A154323.asm)): Central coefficients of number triangle A113582.
 * [A154325](http://oeis.org/A154325) ([L10 program](A154325.asm)): Triangle with interior all 2's and borders 1.
+* [A154357](http://oeis.org/A154357) ([L13 program](A154357.asm)): a(n) = 25*n^2 - 14*n + 2.
 * [A154376](http://oeis.org/A154376) ([L18 program](A154376.asm)): a(n) = 25*n^2 - 2*n.
+* [A154377](http://oeis.org/A154377) ([L13 program](A154377.asm)): a(n) = 25*n^2 + 2*n.
 * [A154516](http://oeis.org/A154516) ([L10 program](A154516.asm)): a(n) = 9n^2 - n.
 * [A154517](http://oeis.org/A154517) ([L10 program](A154517.asm)): a(n) = 9*n^2 + n.
 * [A154533](http://oeis.org/A154533) ([L07 program](A154533.asm)): Number of constants of the form a^3*u + b*c*v, where a, b, c are linear, u of order n-3 and v of order n-2.
@@ -1690,6 +1692,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158070](http://oeis.org/A158070) ([L12 program](A158070.asm)): a(n) = 64*n^2 + 2*n.
 * [A158071](http://oeis.org/A158071) ([L08 program](A158071.asm)): a(n) = 64*n + 1.
 * [A158129](http://oeis.org/A158129) ([L11 program](A158129.asm)): 100n^2 - 2n.
+* [A158132](http://oeis.org/A158132) ([L14 program](A158132.asm)): 144n^2 + 2n.
 * [A158186](http://oeis.org/A158186) ([L08 program](A158186.asm)): a(n) = 10*n^2 - 7*n + 1.
 * [A158187](http://oeis.org/A158187) ([L09 program](A158187.asm)): a(n) = 10*n^2 + 1.
 * [A158231](http://oeis.org/A158231) ([L08 program](A158231.asm)): a(n) = 256*n + 1.
@@ -2629,6 +2632,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178674](http://oeis.org/A178674) ([L08 program](A178674.asm)): a(n) = 3^n + 3.
 * [A178675](http://oeis.org/A178675) ([L07 program](A178675.asm)): a(n) = 4^n + 4.
 * [A178676](http://oeis.org/A178676) ([L12 program](A178676.asm)): a(n) = 5^n + 5.
+* [A178681](http://oeis.org/A178681) ([L16 program](A178681.asm)): a(n) = 6^n + 6.
 * [A178789](http://oeis.org/A178789) ([L07 program](A178789.asm)): 4^(n-1) + 2 : Number of acute angles after n iterations of the Koch snowflake construction.
 * [A178815](http://oeis.org/A178815) ([L03 program](A178815.asm)): First base of a nonzero Fermat quotient mod the n-th prime.
 * [A178915](http://oeis.org/A178915) ([L04 program](A178915.asm)): Rearrangement of natural numbers so that every partial sum is composite.
@@ -2814,6 +2818,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185016](http://oeis.org/A185016) ([L02 program](A185016.asm)): Characteristic function of 6.
 * [A185017](http://oeis.org/A185017) ([L02 program](A185017.asm)): Characteristic function of 7.
 * [A185019](http://oeis.org/A185019) ([L07 program](A185019.asm)): a(n) = n*(14*n-3).
+* [A185039](http://oeis.org/A185039) ([L14 program](A185039.asm)): Numbers of the form 9*m^2 + 4*m, m an integer.
 * [A185049](http://oeis.org/A185049) ([L16 program](A185049.asm)): Last term in the continued fraction for floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n).
 * [A185055](http://oeis.org/A185055) ([L12 program](A185055.asm)): Number of representations of 5^(2n) as a sum a^2 + b^2 + c^2 with 0 < a <= b <= c.
 * [A185065](http://oeis.org/A185065) ([L15 program](A185065.asm)): a(n) = n*(n^3 + 2).
@@ -3010,6 +3015,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192790](http://oeis.org/A192790) ([L17 program](A192790.asm)): Molecular topological index of the Andrasfai graphs
 * [A192796](http://oeis.org/A192796) ([L11 program](A192796.asm)): Molecular topological indices of the crown graphs
 * [A192827](http://oeis.org/A192827) ([L11 program](A192827.asm)): Molecular topological indices of the gear graphs
+* [A192845](http://oeis.org/A192845) ([L19 program](A192845.asm)): Molecular topological indices of the sun graphs.
 * [A192848](http://oeis.org/A192848) ([L18 program](A192848.asm)): Molecular topological indices of the graph join C_n + C_n of cycle graphs.
 * [A192858](http://oeis.org/A192858) ([L09 program](A192858.asm)): Hosoya indices of the 2n-wheel graphs W_{2n}.
 * [A192908](http://oeis.org/A192908) ([L09 program](A192908.asm)): Constant term in the reduction by (x^2 -> x + 1) of the polynomial p(n,x) defined below at Comments.
