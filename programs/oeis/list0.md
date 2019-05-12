@@ -1767,6 +1767,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037250](http://oeis.org/A037250) ([L15 program](A037250.asm)): a(n) = n^2*(n^2 + 1)*(n-1).
 * [A037255](http://oeis.org/A037255) ([L07 program](A037255.asm)): For n weights, number of combinations when limited to two weights per pan.
 * [A037270](http://oeis.org/A037270) ([L09 program](A037270.asm)): a(n) = n^2*(n^2 + 1)/2.
+* [A037458](http://oeis.org/A037458) ([L11 program](A037458.asm)): a(1)=1; for n > 1, a(n)=n-a(n-sqrtint(n)) where sqrtint(n) denotes floor(sqrt(n)).
 * [A037479](http://oeis.org/A037479) ([L07 program](A037479.asm)): a(n)=Sum{d(i)*10^i: i=0,1,...,m}, where Sum{d(i)*9^i: i=0,1,...,m} is the base 9 representation of n.
 * [A037817](http://oeis.org/A037817) ([L14 program](A037817.asm)): Number of i such that d(i)<=d(i-1), where Sum{d(i)*10^i: i=0,1,...,m} is base 10 representation of n.
 * [A037878](http://oeis.org/A037878) ([L16 program](A037878.asm)): (1/2)*Sum{|d(i)-e(i)|}, where Sum{d(i)*10^i} is base 10 representation of n and e(i) are digits d(i) in nonincreasing order, for i=0,1,...,m.
@@ -2881,6 +2882,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060834](http://oeis.org/A060834) ([L18 program](A060834.asm)): a(n) = 6*n^2 + 6*n + 31.
 * [A060867](http://oeis.org/A060867) ([L12 program](A060867.asm)): a(n) = (2^n - 1)^2.
 * [A060886](http://oeis.org/A060886) ([L15 program](A060886.asm)): a(n) = n^4 - n^2 + 1.
+* [A060934](http://oeis.org/A060934) ([L15 program](A060934.asm)): Second column of Lucas bisection triangle (even part).
 * [A060973](http://oeis.org/A060973) ([L09 program](A060973.asm)): a(2*n+1) = a(n+1)+a(n), a(2*n) = 2*a(n), with a(1)=0 and a(2)=1.
 * [A060995](http://oeis.org/A060995) ([L07 program](A060995.asm)): Number of routes of length 2n on the sides of an octagon from a point to opposite point.
 * [A060999](http://oeis.org/A060999) ([L16 program](A060999.asm)): Nearest integer to (n+1)^3/9.
