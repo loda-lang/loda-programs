@@ -1136,6 +1136,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135713](http://oeis.org/A135713) ([L08 program](A135713.asm)): a(n) = n*(n+1)*(4*n+1)/2.
 * [A135854](http://oeis.org/A135854) ([L18 program](A135854.asm)): a(n) = (n+1)*(2^n+1) for n>0 with a(0)=1.
 * [A135859](http://oeis.org/A135859) ([L09 program](A135859.asm)): Row sums of triangle A135858.
+* [A135914](http://oeis.org/A135914) ([L11 program](A135914.asm)): 4*3^n-2*2^n-1.
 * [A135992](http://oeis.org/A135992) ([L15 program](A135992.asm)): Positive Fibonacci numbers swapped in pairs.
 * [A136008](http://oeis.org/A136008) ([L13 program](A136008.asm)): a(n) = n^6 - n^2.
 * [A136016](http://oeis.org/A136016) ([L10 program](A136016.asm)): a(n) = 9*n^2-1.
@@ -1150,6 +1151,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136289](http://oeis.org/A136289) ([L06 program](A136289.asm)): Start with three pennies touching each other on a tabletop. In each generation, add pennies subject to the rule that a penny can be placed only when (at least) two pennies are already in position to determine its position; sequence gives number of pennies added at generation n.
 * [A136290](http://oeis.org/A136290) ([L16 program](A136290.asm)): a(0)=1, a(1)=3, a(2)=9, a(3)=12, a(4)=15; thereafter a(n) = a(n-1)+a(n-3)-a(n-4).
 * [A136293](http://oeis.org/A136293) ([L12 program](A136293.asm)): Linear bound on the genera of Heegaard splittings of closed, orientable 3-manifolds that admit a generalized triangulation with n generalized tetrahedra.
+* [A136302](http://oeis.org/A136302) ([L19 program](A136302.asm)): Transform of A000027 by the T_{1,1} transformation (see link).
 * [A136305](http://oeis.org/A136305) ([L12 program](A136305.asm)): Transform of A000027 by the T_{1,2} transformation (see link).
 * [A136320](http://oeis.org/A136320) ([L09 program](A136320.asm)): Terms of A047241 swapped in pairs.
 * [A136324](http://oeis.org/A136324) ([L13 program](A136324.asm)): Interleaving of A002450(n), A002450(n) + 1.
@@ -1655,7 +1657,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157330](http://oeis.org/A157330) ([L08 program](A157330.asm)): a(n) = 64*n - 8.
 * [A157331](http://oeis.org/A157331) ([L21 program](A157331.asm)): a(n) = 128*n^2 - 32*n + 1.
 * [A157336](http://oeis.org/A157336) ([L09 program](A157336.asm)): a(n) = 8*(8*n + 1).
-* [A157431](http://oeis.org/A157431) ([L13 program](A157431.asm)): 4n^2 + 73n + 333.
+* [A157431](http://oeis.org/A157431) ([L13 program](A157431.asm)): a(n) = 4*n^2 + 73*n + 333.
 * [A157432](http://oeis.org/A157432) ([L08 program](A157432.asm)): 64n + 584.
 * [A157434](http://oeis.org/A157434) ([L10 program](A157434.asm)): a(n) = 4*n^2 + 79*n + 390.
 * [A157435](http://oeis.org/A157435) ([L12 program](A157435.asm)): 64n + 632.
@@ -2429,7 +2431,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171218](http://oeis.org/A171218) ([L13 program](A171218.asm)): a(n) = sum(A109613(k)*A005843(n-k): 0<=k<=n).
 * [A171220](http://oeis.org/A171220) ([L13 program](A171220.asm)): a(n) = (2n + 1)*5^n.
 * [A171231](http://oeis.org/A171231) ([L13 program](A171231.asm)): a(n) = (10*2^n + 3 - (-1)^n)/6.
-* [A171237](http://oeis.org/A171237) ([L09 program](A171237.asm)): a(0)=2, a(1)=3, a(n)=3+a(n-1)+a(n-2) for n>=2
+* [A171237](http://oeis.org/A171237) ([L09 program](A171237.asm)): a(0)=2, a(1)=3, a(n) = 3 + a(n-1) + a(n-2) for n >= 2.
 * [A171270](http://oeis.org/A171270) ([L25 program](A171270.asm)): a(n) is the only number m such that m = pi(1^(1/n)) + pi(2^(1/n)) + ... + pi(m^(1/n)).
 * [A171272](http://oeis.org/A171272) ([L08 program](A171272.asm)): a(n) = 1 + 4*n*(1 + 2*n^2)/3.
 * [A171369](http://oeis.org/A171369) ([L24 program](A171369.asm)): Triangle read by rows, replace 2's with 3's in A169695.
@@ -2854,6 +2856,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185437](http://oeis.org/A185437) ([L07 program](A185437.asm)): The least number of colors required to color an n-bead necklace so that each bead can be identified.
 * [A185438](http://oeis.org/A185438) ([L07 program](A185438.asm)): a(n) = 8*n^2 - 2*n + 1.
 * [A185452](http://oeis.org/A185452) ([L11 program](A185452.asm)): Image of n under the map n -> n/2 if n even, (5*n+1)/2 if n odd.
+* [A185456](http://oeis.org/A185456) ([L15 program](A185456.asm)): Pay phone packing sequence
 * [A185647](http://oeis.org/A185647) ([L13 program](A185647.asm)): Expansion of (1+2x)*(1+2*x^2)/((1-x)*(1+x)*(1-2*x^2)).
 * [A185669](http://oeis.org/A185669) ([L07 program](A185669.asm)): a(n) = 4*n^2 + 3*n + 2.
 * [A185679](http://oeis.org/A185679) ([L15 program](A185679.asm)): Number of digits in decimal expansion of n^2.
@@ -3267,6 +3270,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199419](http://oeis.org/A199419) ([L12 program](A199419.asm)): 4*7^n+1.
 * [A199420](http://oeis.org/A199420) ([L10 program](A199420.asm)): a(n) = (5*7^n+1)/3.
 * [A199421](http://oeis.org/A199421) ([L12 program](A199421.asm)): (5*7^n+1)/2.
+* [A199483](http://oeis.org/A199483) ([L16 program](A199483.asm)): 6*7^n+1.
 * [A199484](http://oeis.org/A199484) ([L22 program](A199484.asm)): (8*7^n+1)/3.
 * [A199486](http://oeis.org/A199486) ([L22 program](A199486.asm)): (9*7^n+1)/2.
 * [A199489](http://oeis.org/A199489) ([L15 program](A199489.asm)): (11*7^n+1)/6.
