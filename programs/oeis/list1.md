@@ -224,7 +224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106744](http://oeis.org/A106744) ([L13 program](A106744.asm)): Given n shoelaces, each with two aglets; sequence gives number of aglet pairs that must be picked up to guarantee that the probability that no shoelace is left behind is > 1/2.
 * [A106803](http://oeis.org/A106803) ([L09 program](A106803.asm)): Expansion of x*(1-x)/(1-2*x-x^2+x^3).
 * [A106805](http://oeis.org/A106805) ([L12 program](A106805.asm)): G.f.: 1 / (1-2*x-x^2+x^3).
-* [A106832](http://oeis.org/A106832) ([L14 program](A106832.asm)): 4n-2 and 6n alternatively.
+* [A106832](http://oeis.org/A106832) ([L14 program](A106832.asm)): 4*n-2 and 6*n alternatively.
 * [A106833](http://oeis.org/A106833) ([L09 program](A106833.asm)): 3n and 2n, alternating.
 * [A106839](http://oeis.org/A106839) ([L06 program](A106839.asm)): Numbers congruent to 11 mod 16.
 * [A107328](http://oeis.org/A107328) ([L07 program](A107328.asm)): Duplicate of A065034.
@@ -302,7 +302,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110450](http://oeis.org/A110450) ([L09 program](A110450.asm)): a(n) = n*(n+1)*(n^2+n+1)/2.
 * [A110451](http://oeis.org/A110451) ([L08 program](A110451.asm)): a(n) = n*(4*n^2 + 2*n + 1).
 * [A110532](http://oeis.org/A110532) ([L13 program](A110532.asm)): a(n) = floor(n/2) + floor(n/5).
-* [A110549](http://oeis.org/A110549) ([L11 program](A110549.asm)): Periodic {1,2,4,3,3,4,2,1}.
+* [A110549](http://oeis.org/A110549) ([L11 program](A110549.asm)): Period 8: repeat [1, 2, 4, 3, 3, 4, 2, 1].
 * [A110550](http://oeis.org/A110550) ([L13 program](A110550.asm)): Periodic {1,3,2,4,4,2,3,1}.
 * [A110551](http://oeis.org/A110551) ([L10 program](A110551.asm)): Period 6: repeat [1, 3, 5, 5, 3, 1].
 * [A110568](http://oeis.org/A110568) ([L18 program](A110568.asm)): Period 6: repeat [1, 0, 2, 2, 0, 1].
@@ -370,7 +370,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A112654](http://oeis.org/A112654) ([L06 program](A112654.asm)): Numbers n such that n^3 is congruent to n (mod 11).
 * [A112655](http://oeis.org/A112655) ([L06 program](A112655.asm)): a(n) cubed is congruent to a(n) (mod 13).
 * [A112689](http://oeis.org/A112689) ([L20 program](A112689.asm)): A modified Chebyshev transform of the Jacobsthal numbers.
-* [A112713](http://oeis.org/A112713) ([L06 program](A112713.asm)): Expansion of x/(1-x+x^5-x^6).
+* [A112713](http://oeis.org/A112713) ([L06 program](A112713.asm)): Expansion of x/(1 - x + x^5 - x^6).
 * [A112742](http://oeis.org/A112742) ([L08 program](A112742.asm)): a(n) = n^2*(n^2-1)/3.
 * [A112851](http://oeis.org/A112851) ([L14 program](A112851.asm)): a(n) = (n-1)*n*(n+1)*(n+2)*(2*n+1)/40.
 * [A112884](http://oeis.org/A112884) ([L10 program](A112884.asm)): Number of bits required to represent binomial(2^n, 2^(n-1)).
@@ -2609,6 +2609,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176448](http://oeis.org/A176448) ([L06 program](A176448.asm)): 7*2^n-2
 * [A176449](http://oeis.org/A176449) ([L06 program](A176449.asm)): a(n) = 9*2^n - 2.
 * [A176476](http://oeis.org/A176476) ([L12 program](A176476.asm)): Partial sums of A012814.
+* [A176542](http://oeis.org/A176542) ([L17 program](A176542.asm)): Numbers n such that there are only a finite nonzero number of sets of n consecutive triangular numbers that sum to a square.
 * [A176636](http://oeis.org/A176636) ([L26 program](A176636.asm)): Periodic sequence: Repeat 57, 71.
 * [A176691](http://oeis.org/A176691) ([L08 program](A176691.asm)): a(n) = 2^n + 2*n + 1.
 * [A176693](http://oeis.org/A176693) ([L10 program](A176693.asm)): Union of squares and the even numbers.
@@ -2900,6 +2901,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186424](http://oeis.org/A186424) ([L09 program](A186424.asm)): Odd terms in A186423.
 * [A186446](http://oeis.org/A186446) ([L10 program](A186446.asm)): Expansion of 1/(1 - 7*x + 2*x^2).
 * [A186494](http://oeis.org/A186494) ([L14 program](A186494.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j-th pentagonal number.  Complement of A186493.
+* [A186496](http://oeis.org/A186496) ([L18 program](A186496.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) aftere g(j) when f(i)=g(j), where f(i)=5i and g(j)=j-th pentagonal number.  Complement of A186495.
 * [A186497](http://oeis.org/A186497) ([L15 program](A186497.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i-2 and g(j)=j-th triangular number.  Complement of A186498.
 * [A186498](http://oeis.org/A186498) ([L08 program](A186498.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i-2 and g(j)=j-th triangular number.  Complement of A186497.
 * [A186620](http://oeis.org/A186620) ([L16 program](A186620.asm)): Fibonacci sequence beginning 12, 25.
