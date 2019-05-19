@@ -2435,7 +2435,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A170938](http://oeis.org/A170938) ([L13 program](A170938.asm)): 4^n+2^n+2.
 * [A170939](http://oeis.org/A170939) ([L16 program](A170939.asm)): 4^n-2^n+2.
 * [A170940](http://oeis.org/A170940) ([L09 program](A170940.asm)): 4^n-2^n-2.
-* [A170956](http://oeis.org/A170956) ([L27 program](A170956.asm)): Expansion of Prod((1+x^(4*i-1)),i=1..m) for m = 3.
+* [A170956](http://oeis.org/A170956) ([L26 program](A170956.asm)): Expansion of Prod((1+x^(4*i-1)),i=1..m) for m = 3.
 * [A171088](http://oeis.org/A171088) ([L09 program](A171088.asm)): To find 3 consecutive integers in the sequence, you have to take 4 consecutive terms, no more and no less.
 * [A171141](http://oeis.org/A171141) ([L13 program](A171141.asm)): Numbers that are congruent to {6,33} mod 41.
 * [A171160](http://oeis.org/A171160) ([L20 program](A171160.asm)): a(n) = a(n-1) + 2a(n-2) with a(0)=3, a(1)=4.
@@ -3203,6 +3203,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198442](http://oeis.org/A198442) ([L05 program](A198442.asm)): Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,0).
 * [A198480](http://oeis.org/A198480) ([L11 program](A198480.asm)): 2*7^n - 1.
 * [A198517](http://oeis.org/A198517) ([L12 program](A198517.asm)): Period 5: repeat [1,0,1,0,0].
+* [A198586](http://oeis.org/A198586) ([L12 program](A198586.asm)): a(n) = (4^A001651(n+1) - 1)/3: numbers (4^k-1)/3 for k > 1, not multiple of 3.
 * [A198633](http://oeis.org/A198633) ([L07 program](A198633.asm)): Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
 * [A198635](http://oeis.org/A198635) ([L09 program](A198635.asm)): Total number of round trips, each of length 2*n on the graph P_5 (o-o-o-o-o).
 * [A198643](http://oeis.org/A198643) ([L08 program](A198643.asm)): 5*3^n-1.
