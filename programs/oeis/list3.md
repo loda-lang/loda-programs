@@ -88,6 +88,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304513](http://oeis.org/A304513) ([L13 program](A304513.asm)): a(n) = 57*2^(n-1) - 38 (n >= 1).
 * [A304514](http://oeis.org/A304514) ([L12 program](A304514.asm)): a(n) = 33*2^n - 45 (n>=1).
 * [A304517](http://oeis.org/A304517) ([L07 program](A304517.asm)): a(n) = 16*2^n - 11 (n>=1).
+* [A304518](http://oeis.org/A304518) ([L21 program](A304518.asm)): a(n) = 68*2^n - 50 (n>=1).
 * [A304519](http://oeis.org/A304519) ([L14 program](A304519.asm)): a(n) = 72*2^n -56 (n>=1).
 * [A304579](http://oeis.org/A304579) ([L13 program](A304579.asm)): a(n) = (n^2 + 1)*(n^2 + 2).
 * [A304605](http://oeis.org/A304605) ([L15 program](A304605.asm)): a(n) = 48*2^n + 26 (n>=1).
@@ -222,6 +223,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A320281](http://oeis.org/A320281) ([L06 program](A320281.asm)): Terms that are on the positive x-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
 * [A320604](http://oeis.org/A320604) ([L14 program](A320604.asm)): Chromatic number of the n-polygon diagonal intersection graph.
 * [A320661](http://oeis.org/A320661) ([L08 program](A320661.asm)): a(n) = 2^(n+3) - 6*n - 7.
+* [A320933](http://oeis.org/A320933) ([L12 program](A320933.asm)): a(n) = 2^n - floor((n+3)/2).
 * [A321123](http://oeis.org/A321123) ([L16 program](A321123.asm)): a(n) = 2^n + 2*n^2 + 2*n + 1.
 * [A321124](http://oeis.org/A321124) ([L12 program](A321124.asm)): a(n) =  (4*n^3 - 6*n^2 + 14*n + 3)/3.
 * [A321212](http://oeis.org/A321212) ([L13 program](A321212.asm)): Numbers that are congruent to {2, 3} mod 16.

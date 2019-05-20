@@ -1059,6 +1059,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134119](http://oeis.org/A134119) ([L14 program](A134119.asm)): a(n) = floor(n^2/10) - floor((n-1)^2/10).
 * [A134153](http://oeis.org/A134153) ([L10 program](A134153.asm)): a(n) = 15n^2 + 9n + 1.
 * [A134154](http://oeis.org/A134154) ([L22 program](A134154.asm)): a(n) = 15n^2 - 9n + 1.
+* [A134169](http://oeis.org/A134169) ([L14 program](A134169.asm)): a(n) = 2^(n-1)*(2^n - 1) + 1.
 * [A134201](http://oeis.org/A134201) ([L06 program](A134201.asm)): Number of rigid hypergroups of order n.
 * [A134202](http://oeis.org/A134202) ([L11 program](A134202.asm)): Number of rigid Hv-groups of order n.
 * [A134227](http://oeis.org/A134227) ([L07 program](A134227.asm)): Row sums of triangle A134226.
@@ -1878,8 +1879,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162668](http://oeis.org/A162668) ([L08 program](A162668.asm)): n*(n+1)*(n+2)*(n+3)/3.
 * [A162673](http://oeis.org/A162673) ([L14 program](A162673.asm)): Number of different fixed (possibly) disconnected trominoes bounded (not necessarily tightly) by an n*n square
 * [A162699](http://oeis.org/A162699) ([L09 program](A162699.asm)): Odd numbers not divisible by 7.
-* [A162761](http://oeis.org/A162761) ([L07 program](A162761.asm)): Minimal total number of floors an elevator must move to transport n people initially waiting at floors i = 1, ..., n to their destination floors n-i+1 (= n, ..., 1), when the elevator can hold at most one person at a time, starts at floor 1, and no passenger may get off the elevator before reaching his/her destination.
+* [A162761](http://oeis.org/A162761) ([L07 program](A162761.asm)): Minimal total number of floors an elevator must move to transport n people initially waiting at floors i = 1, ..., n to their destination floors n-i+1 (= n, ..., 1), when the elevator can hold at most one person at a time and starts at floor 1, and no passenger may get off the elevator before reaching his/her destination.
 * [A162771](http://oeis.org/A162771) ([L10 program](A162771.asm)): a(n) = ((2+sqrt(5))*(3+sqrt(5))^n + (2-sqrt(5))*(3-sqrt(5))^n)/2.
+* [A162813](http://oeis.org/A162813) ([L19 program](A162813.asm)): a(n) = 3*a(n-2) for n > 2; a(1) = 5, a(2) = 3.
 * [A162897](http://oeis.org/A162897) ([L11 program](A162897.asm)): a(1)=a(2)=2. a(n) = the smallest integer >= 2 such that a(n-1)^a(n) > a(n-2)^a(n-1).
 * [A162917](http://oeis.org/A162917) ([L09 program](A162917.asm)): Numbers n which are not in A161983.
 * [A162940](http://oeis.org/A162940) ([L08 program](A162940.asm)): Binomial[n + 1, 2]*6^2 .
@@ -2812,6 +2814,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183574](http://oeis.org/A183574) ([L12 program](A183574.asm)): n+Floor[sqrt(2n+2)].
 * [A183575](http://oeis.org/A183575) ([L07 program](A183575.asm)): a(n) = n - 1 + ceiling((n^2-2)/2); complement of A183574.
 * [A183855](http://oeis.org/A183855) ([L15 program](A183855.asm)): n+floor(sqrt(3n-3)); complement of A128422.
+* [A183856](http://oeis.org/A183856) ([L13 program](A183856.asm)): n+floor(sqrt(3n-2)); complement of A143975.
 * [A183857](http://oeis.org/A183857) ([L07 program](A183857.asm)): n-1+ceiling((2/3)*n^2); complement of A183874.
 * [A183859](http://oeis.org/A183859) ([L07 program](A183859.asm)): n-1+ceiling((n^2)/3); complement of A183858.
 * [A183860](http://oeis.org/A183860) ([L17 program](A183860.asm)): n+floor(sqrt(3n+1)); complement of A183861.

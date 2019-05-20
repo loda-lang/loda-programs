@@ -2174,6 +2174,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047428](http://oeis.org/A047428) ([L26 program](A047428.asm)): Numbers that are congruent to {0, 1, 3, 4, 5, 6} mod 8.
 * [A047429](http://oeis.org/A047429) ([L07 program](A047429.asm)): Numbers that are congruent to {4, 5, 6} mod 8.
 * [A047430](http://oeis.org/A047430) ([L09 program](A047430.asm)): Numbers that are congruent to {0, 4, 5, 6} mod 8.
+* [A047431](http://oeis.org/A047431) ([L12 program](A047431.asm)): Numbers that are congruent to {1, 4, 5, 6} mod 8.
 * [A047432](http://oeis.org/A047432) ([L13 program](A047432.asm)): Numbers that are congruent to {0, 1, 4, 5, 6} mod 8.
 * [A047433](http://oeis.org/A047433) ([L09 program](A047433.asm)): Numbers that are congruent to {2, 4, 5, 6} mod 8.
 * [A047434](http://oeis.org/A047434) ([L08 program](A047434.asm)): Numbers that are congruent to {0, 2, 4, 5, 6} mod 8.
@@ -2462,7 +2463,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049474](http://oeis.org/A049474) ([L14 program](A049474.asm)): a(n) = ceiling(n/sqrt(2)).
 * [A049480](http://oeis.org/A049480) ([L07 program](A049480.asm)): a(n) = (2*n-1)*(n^2 -n +6)/6.
 * [A049598](http://oeis.org/A049598) ([L05 program](A049598.asm)): 12 times triangular numbers.
-* [A049610](http://oeis.org/A049610) ([L08 program](A049610.asm)): Sum( k*binomial(n,2*k), 0 <= k <= n/2) = floor( n*2^(n-3) ).
+* [A049610](http://oeis.org/A049610) ([L08 program](A049610.asm)): a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3)).
 * [A049624](http://oeis.org/A049624) ([L07 program](A049624.asm)): Essentially the same as A032766.
 * [A049636](http://oeis.org/A049636) ([L07 program](A049636.asm)): Congruent to 0 or 2 mod 3, but not equal to 0 or 3.
 * [A049651](http://oeis.org/A049651) ([L10 program](A049651.asm)): a(n) = (F(3*n+1) - 1)/2, where F=A000045 (the Fibonacci sequence).
@@ -3261,6 +3262,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073548](http://oeis.org/A073548) ([L15 program](A073548.asm)): Number of Fibonacci numbers F(k), k <= 10^n, which end in 2.
 * [A073549](http://oeis.org/A073549) ([L11 program](A073549.asm)): Number of Fibonacci numbers F(k), k <= 10^n, which end in 6.
 * [A073552](http://oeis.org/A073552) ([L12 program](A073552.asm)): Duplicate of A067275.
+* [A073553](http://oeis.org/A073553) ([L12 program](A073553.asm)): Number of Fibonacci numbers F(k), k <= 10^n, which end in 5.
 * [A073555](http://oeis.org/A073555) ([L11 program](A073555.asm)): Number of Fibonacci numbers F(k), k <= 10^n, which end in 8.
 * [A073577](http://oeis.org/A073577) ([L08 program](A073577.asm)): a(n) = 4*n^2 + 4*n - 1.
 * [A073636](http://oeis.org/A073636) ([L15 program](A073636.asm)): Period 3: repeat [1, 8, 9] ; Digital root of A000578(n) = n^3 for n >= 1.
