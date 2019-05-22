@@ -1752,6 +1752,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036407](http://oeis.org/A036407) ([L09 program](A036407.asm)): Ceiling(n^2/9).
 * [A036408](http://oeis.org/A036408) ([L13 program](A036408.asm)): Ceiling(n^2/10).
 * [A036409](http://oeis.org/A036409) ([L14 program](A036409.asm)): a(n) = ceiling(n^2/11).
+* [A036410](http://oeis.org/A036410) ([L14 program](A036410.asm)): G.f.: (1+x^6)/((1-x)*(1-x^3)*(1-x^4)).
 * [A036453](http://oeis.org/A036453) ([L03 program](A036453.asm)): a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function with initial value n.
 * [A036464](http://oeis.org/A036464) ([L08 program](A036464.asm)): Number of ways to place two nonattacking queens on an n X n board.
 * [A036486](http://oeis.org/A036486) ([L13 program](A036486.asm)): Ceiling((n^3)/2).
@@ -3478,6 +3479,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081039](http://oeis.org/A081039) ([L17 program](A081039.asm)): 4th binomial transform of (1,3,0,0,0,0,0,.....).
 * [A081040](http://oeis.org/A081040) ([L10 program](A081040.asm)): 5th binomial transform of (1,4,0,0,0,0,....).
 * [A081067](http://oeis.org/A081067) ([L09 program](A081067.asm)): Lucas(4n+2)+2, or 5*Fibonacci(2n+1)^2.
+* [A081068](http://oeis.org/A081068) ([L11 program](A081068.asm)): a(n) = (Lucas(4*n+2) + 2)/5, or Fibonacci(2*n+1)^2, or A081067(n)/5.
 * [A081069](http://oeis.org/A081069) ([L09 program](A081069.asm)): Lucas(4n)+2, or Lucas(2n)^2.
 * [A081070](http://oeis.org/A081070) ([L08 program](A081070.asm)): Lucas(4n)-2, or 5*Fibonacci(2n)^2.
 * [A081071](http://oeis.org/A081071) ([L11 program](A081071.asm)): a(n) = Lucas(4*n+2)-2, or Lucas(2*n+1)^2.

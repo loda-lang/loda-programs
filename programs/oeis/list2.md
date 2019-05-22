@@ -623,6 +623,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239568](http://oeis.org/A239568) ([L07 program](A239568.asm)): Number of ways to place 2 points on a triangular grid of side n so that they are not adjacent.
 * [A239607](http://oeis.org/A239607) ([L16 program](A239607.asm)): (1-2*n^2)^2.
 * [A239632](http://oeis.org/A239632) ([L09 program](A239632.asm)): Number of parts in all palindromic compositions of n.
+* [A239678](http://oeis.org/A239678) ([L15 program](A239678.asm)): Least numbers k such that k*2^n+1 is a square.
 * [A239745](http://oeis.org/A239745) ([L08 program](A239745.asm)): a(n) = (3*2^(n+2) + n*(n+5))/2 - 6.
 * [A239767](http://oeis.org/A239767) ([L12 program](A239767.asm)): Degrees of polynomial on the fermionic side of the finite generalization of identity 46 from Slater's List.
 * [A240001](http://oeis.org/A240001) ([L10 program](A240001.asm)): Number of 2 X n 0..3 arrays with no element equal to one plus the sum of elements to its left or two plus the sum of the elements above it or one plus the sum of the elements diagonally to its northwest, modulo 4.
@@ -783,6 +784,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248474](http://oeis.org/A248474) ([L16 program](A248474.asm)): Numbers congruent to 13 or 17 mod 30.
 * [A248517](http://oeis.org/A248517) ([L17 program](A248517.asm)): Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
 * [A248572](http://oeis.org/A248572) ([L09 program](A248572.asm)): 29*n + 1.
+* [A248604](http://oeis.org/A248604) ([L19 program](A248604.asm)): Numbers a(n) which are the minimum number of moves needed in a variation of the tower of Hanoi with 4 towers and n disks.
 * [A248621](http://oeis.org/A248621) ([L15 program](A248621.asm)): Floor of sums of the squares of the non-integer cube roots of n, as partitioned by the integer roots: floor[sum(j from n^3+1 to (n+1)^3-1, j^(2/3))].
 * [A248646](http://oeis.org/A248646) ([L15 program](A248646.asm)): The Golden Book sequence.
 * [A248800](http://oeis.org/A248800) ([L08 program](A248800.asm)): n^2 + 3/2 + (1/2)*(-1)^n.
@@ -898,6 +900,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256718](http://oeis.org/A256718) ([L14 program](A256718.asm)): a(n) = n*(n+1)*(7*n-6)/2.
 * [A256833](http://oeis.org/A256833) ([L08 program](A256833.asm)): a(n) = (4*n+3)*(4*n+2).
 * [A256857](http://oeis.org/A256857) ([L07 program](A256857.asm)): a(n) = n*(n^2 + 3*n - 2)/2.
+* [A256873](http://oeis.org/A256873) ([L20 program](A256873.asm)): a(n) = 2^(n-1)*(2^n+5).
 * [A256994](http://oeis.org/A256994) ([L20 program](A256994.asm)): a(n) = n + 1 when n <= 3, otherwise a(n) = 2^(n-2) + 3; also iterates of A005187 starting from a(1) = 2.
 * [A257042](http://oeis.org/A257042) ([L14 program](A257042.asm)): a(n) = (3*n+7)*n^2.
 * [A257051](http://oeis.org/A257051) ([L14 program](A257051.asm)): a(n) = cpg(n, 3) + cpg(n, 4) + ... + cpg(n, n) where cpg(n, m) is the m-th n-th-order centered polygonal number.

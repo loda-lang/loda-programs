@@ -587,7 +587,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122056](http://oeis.org/A122056) ([L11 program](A122056.asm)): A Somos 9 -Hone exponent type recursion:a(n) = (x^(n-1)*a(n - 1)a(n - 8) - a(n - 4)*a(n - 5))/a(n - 9).
 * [A122074](http://oeis.org/A122074) ([L08 program](A122074.asm)): a(0)=1, a(1)=6, a(n) = 7*a(n-1) - 2*a(n-2).
 * [A122088](http://oeis.org/A122088) ([L14 program](A122088.asm)): Add 10, subtract 5, add 10, subtract 5, ad infinitum.
-* [A122117](http://oeis.org/A122117) ([L10 program](A122117.asm)): a(0)=1, a(1)=2, a(n)=3*a(n-1)+4*a(n-2) for n>1.
+* [A122117](http://oeis.org/A122117) ([L10 program](A122117.asm)): a(n) = 3*a(n-1) + 4*a(n-2), with a(0)=1, a(1)=2.
 * [A122124](http://oeis.org/A122124) ([L13 program](A122124.asm)): Numbers n such that 25 divides Sum[ Prime[k]^n, {k,1,n}].
 * [A122197](http://oeis.org/A122197) ([L14 program](A122197.asm)): Fractal sequence: count up to successive integers twice.
 * [A122367](http://oeis.org/A122367) ([L06 program](A122367.asm)): Dimension of 3-variable non-commutative harmonics (twisted derivative). The dimension of the space of non-commutative polynomials in 3 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( xi w ) = w and d_{xi} ( xj w ) = 0 for i != j).
