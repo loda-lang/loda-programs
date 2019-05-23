@@ -174,7 +174,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104585](http://oeis.org/A104585) ([L08 program](A104585.asm)): (1/2) * ( 3*n^2 - n*(-1)^n ).
 * [A104661](http://oeis.org/A104661) ([L02 program](A104661.asm)): Duplicate of A020725.
 * [A104675](http://oeis.org/A104675) ([L06 program](A104675.asm)): a(n) = C(n+1,n) * C(n+6,1).
-* [A104743](http://oeis.org/A104743) ([L11 program](A104743.asm)): Numbers m=n+3^n such that equation x=3^(m-x) has solution x=3^n.
+* [A104743](http://oeis.org/A104743) ([L11 program](A104743.asm)): Numbers m = n + 3^n such that the equation x = 3^(m-x) has solution x = 3^n.
 * [A104747](http://oeis.org/A104747) ([L09 program](A104747.asm)): a(n) = (n-3)*2^n + n*(n+3)/2 + 3.
 * [A104891](http://oeis.org/A104891) ([L08 program](A104891.asm)): a(0) = 0; a(n) = 5*a(n-1) + 5.
 * [A104896](http://oeis.org/A104896) ([L10 program](A104896.asm)): a(0) = 0; a(n) = 7*a(n-1) + 7.
@@ -1519,6 +1519,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152857](http://oeis.org/A152857) ([L10 program](A152857.asm)): Periodic sequence [0,2,3,0,0] of period 5
 * [A152889](http://oeis.org/A152889) ([L20 program](A152889.asm)): Periodic sequence [1,0,4,0,0] of period 5
 * [A152891](http://oeis.org/A152891) ([L07 program](A152891.asm)): a(1)=b(1)=0; for n > 1, b(n) = b(n-1) + n-1 + a(n-1); a(n) = a(n-1) + n-1 + b(n).
+* [A152892](http://oeis.org/A152892) ([L30 program](A152892.asm)): Periodic sequence [0,3,1,0,1] of period 5.
 * [A152893](http://oeis.org/A152893) ([L15 program](A152893.asm)): Periodic sequence [3, 3, 0, 0, 4] of period 5
 * [A152894](http://oeis.org/A152894) ([L12 program](A152894.asm)): Periodic sequence [0,0,1,4,0] of period 5.
 * [A152895](http://oeis.org/A152895) ([L08 program](A152895.asm)): Partial sums of A152891.
@@ -3025,6 +3026,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191610](http://oeis.org/A191610) ([L16 program](A191610.asm)): Possible number of trailing zeros in n! (complement of A000966).
 * [A191681](http://oeis.org/A191681) ([L09 program](A191681.asm)): a(n) = (9^n - 1)/2.
 * [A191682](http://oeis.org/A191682) ([L08 program](A191682.asm)): Twice A113473.
+* [A191821](http://oeis.org/A191821) ([L13 program](A191821.asm)): a(n) = n*(2^n - n + 1) + 2^(n-1)*(n^2 - 3*n + 2).
 * [A191903](http://oeis.org/A191903) ([L13 program](A191903.asm)): Number of compositions of odd natural numbers into 4 parts <=n
 * [A191967](http://oeis.org/A191967) ([L09 program](A191967.asm)): n * (numbers that are not divisible by 3).
 * [A192021](http://oeis.org/A192021) ([L12 program](A192021.asm)): The Wiener index of the binomial tree of order n.

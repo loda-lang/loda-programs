@@ -269,6 +269,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213387](http://oeis.org/A213387) ([L07 program](A213387.asm)): a(n) = 5*2^(n-1)-2-3*n.
 * [A213389](http://oeis.org/A213389) ([L09 program](A213389.asm)): Number of (w,x,y) with all terms in {0,...,n} and max(w,x,y) < 2*min(w,x,y).
 * [A213398](http://oeis.org/A213398) ([L12 program](A213398.asm)): Number of (w,x,y) with all terms in {0,...,n} and min(|w-x|,|x-y|) = x.
+* [A213443](http://oeis.org/A213443) ([L15 program](A213443.asm)): a(0)=5, thereafter a(n) = chromatic number (or Heawood number) Chi(n) of surface of genus n.
 * [A213479](http://oeis.org/A213479) ([L21 program](A213479.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y| = w+x+y.
 * [A213484](http://oeis.org/A213484) ([L10 program](A213484.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| >= w+x+y.
 * [A213486](http://oeis.org/A213486) ([L13 program](A213486.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| > w+x+y.
@@ -1288,6 +1289,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273387](http://oeis.org/A273387) ([L16 program](A273387.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 659", based on the 5-celled von Neumann neighborhood.
 * [A273407](http://oeis.org/A273407) ([L30 program](A273407.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 673", based on the 5-celled von Neumann neighborhood.
 * [A273408](http://oeis.org/A273408) ([L10 program](A273408.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 675", based on the 5-celled von Neumann neighborhood.
+* [A273480](http://oeis.org/A273480) ([L14 program](A273480.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
 * [A273481](http://oeis.org/A273481) ([L13 program](A273481.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
 * [A273669](http://oeis.org/A273669) ([L08 program](A273669.asm)): Decimal representation ends with either 2 or 9.
 * [A273677](http://oeis.org/A273677) ([L18 program](A273677.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
@@ -1635,7 +1637,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A295906](http://oeis.org/A295906) ([L08 program](A295906.asm)): Number of (not necessarily maximum) cliques in the n X n king graph.
 * [A295911](http://oeis.org/A295911) ([L12 program](A295911.asm)): Number of (not necessarily minimum) cliques in the n-Hanoi graph.
 * [A295921](http://oeis.org/A295921) ([L31 program](A295921.asm)): Number of (not necessarily maximum) cliques in the n-folded cube graph.
-* [A295933](http://oeis.org/A295933) ([L13 program](A295933.asm)): Number of (not necessarily maximum) cliques in the n-Sieprinski sieve graph.
+* [A295933](http://oeis.org/A295933) ([L13 program](A295933.asm)): Number of (not necessarily maximum) cliques in the n-Sierpinski sieve graph.
 * [A296065](http://oeis.org/A296065) ([L06 program](A296065.asm)): Partial sums of A296064.
 * [A296066](http://oeis.org/A296066) ([L06 program](A296066.asm)): a(n) = A296065(n)/n.
 * [A296070](http://oeis.org/A296070) ([L08 program](A296070.asm)): Partial sums of A296069.
