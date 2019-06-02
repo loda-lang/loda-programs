@@ -1034,6 +1034,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017593](http://oeis.org/A017593) ([L05 program](A017593.asm)): a(n) = 12*n + 6.
 * [A017594](http://oeis.org/A017594) ([L16 program](A017594.asm)): a(n) = (12*n + 6)^2.
 * [A017605](http://oeis.org/A017605) ([L05 program](A017605.asm)): a(n) = 12*n + 7.
+* [A017606](http://oeis.org/A017606) ([L22 program](A017606.asm)): a(n) = (12*n + 7)^2.
 * [A017617](http://oeis.org/A017617) ([L05 program](A017617.asm)): a(n) = 12*n + 8.
 * [A017618](http://oeis.org/A017618) ([L32 program](A017618.asm)): (12n+8)^2.
 * [A017629](http://oeis.org/A017629) ([L05 program](A017629.asm)): a(n) = 12*n + 9.
@@ -1069,6 +1070,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A020698](http://oeis.org/A020698) ([L08 program](A020698.asm)): a(n) = 5*a(n-1) - 2*a(n-2), with a(0)=2, a(1)=9.
 * [A020699](http://oeis.org/A020699) ([L09 program](A020699.asm)): Expansion of (1-3*x)/(1-5*x).
 * [A020701](http://oeis.org/A020701) ([L08 program](A020701.asm)): Pisot sequences E(3,5), P(3,5).
+* [A020703](http://oeis.org/A020703) ([L23 program](A020703.asm)): Take the sequence of natural numbers (A000027) and reverse successive subsequences of lengths 1,3,5,7,...
 * [A020704](http://oeis.org/A020704) ([L11 program](A020704.asm)): Pisot sequences E(3,10), P(3,10).
 * [A020705](http://oeis.org/A020705) ([L02 program](A020705.asm)): n+4
 * [A020706](http://oeis.org/A020706) ([L10 program](A020706.asm)): Pisot sequences L(4,6), E(4,6).

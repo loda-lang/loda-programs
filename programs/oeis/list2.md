@@ -556,6 +556,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A233326](http://oeis.org/A233326) ([L14 program](A233326.asm)): (7^(n+1) - 4) / 3.
 * [A233328](http://oeis.org/A233328) ([L14 program](A233328.asm)): (2*8^(n+1) - 9) / 7.
 * [A233334](http://oeis.org/A233334) ([L09 program](A233334.asm)): a(1)=1; for n>1, a(n) is the smallest number > a(n-1) such that a(1) + a(2) +...+ a(n) is a composite number.
+* [A233411](http://oeis.org/A233411) ([L09 program](A233411.asm)): The number of length n binary words with some prefix which contains two more 1's than 0's or two more 0's than 1's.
 * [A233583](http://oeis.org/A233583) ([L02 program](A233583.asm)): Coefficients of the generalized continued fraction expansion e = a(1) +a(1)/(a(2) +a(2)/(a(3) +a(3)/(a(4) +a(4)/....))).
 * [A233656](http://oeis.org/A233656) ([L11 program](A233656.asm)): a(n) = 3*a(n-1) - 2*(n-1), with a(0) = 1.
 * [A233795](http://oeis.org/A233795) ([L18 program](A233795.asm)): Number of triangular numbers between triangular(n) and n^2.
@@ -1277,6 +1278,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272576](http://oeis.org/A272576) ([L06 program](A272576.asm)): a(n) = f(10, f(9, n)), where f(k,m) = floor(m*k/(k-1)).
 * [A272651](http://oeis.org/A272651) ([L04 program](A272651.asm)): The no-3-in-line problem: maximal number of points from an n X n square grid so that no three lie on a line.
 * [A272664](http://oeis.org/A272664) ([L20 program](A272664.asm)): (001)(001)(001)(10)*.
+* [A272708](http://oeis.org/A272708) ([L18 program](A272708.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 515", based on the 5-celled von Neumann neighborhood.
 * [A272850](http://oeis.org/A272850) ([L16 program](A272850.asm)): a(n) = (n^2 + (n+1)^2)*(n^2 + (n+1)^2 + 2*n*(n+1)).
 * [A272871](http://oeis.org/A272871) ([L14 program](A272871.asm)): Imaginary part of (n + i)^4.
 * [A272915](http://oeis.org/A272915) ([L06 program](A272915.asm)): a(n) = n + floor(5*n/6).
