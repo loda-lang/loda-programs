@@ -18,13 +18,11 @@ lpb $0,1
   add $2,$2
   add $2,$3
   add $6,$2
-  sub $3,5
   sub $1,$5
   mov $4,$1
   mov $2,1
   sub $6,$4
   add $2,$0
   add $2,$4
-  add $3,$6
 lpe
 mov $1,$6
