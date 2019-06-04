@@ -2303,6 +2303,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047543](http://oeis.org/A047543) ([L09 program](A047543.asm)): Numbers that are congruent to {3, 4, 7} mod 8.
 * [A047544](http://oeis.org/A047544) ([L12 program](A047544.asm)): Numbers that are congruent to {1, 3, 4, 7} mod 8.
 * [A047545](http://oeis.org/A047545) ([L25 program](A047545.asm)): Numbers that are congruent to {0, 1, 3, 4, 7} mod 8.
+* [A047546](http://oeis.org/A047546) ([L14 program](A047546.asm)): Numbers that are congruent to {2, 3, 4, 7} mod 8.
 * [A047547](http://oeis.org/A047547) ([L15 program](A047547.asm)): Numbers that are congruent to {0, 2, 3, 4, 7} mod 8.
 * [A047548](http://oeis.org/A047548) ([L12 program](A047548.asm)): Numbers that are congruent to {1, 2, 3, 4, 7} mod 8.
 * [A047549](http://oeis.org/A047549) ([L06 program](A047549.asm)): Numbers that are congruent to {0, 1, 2, 3, 4, 7} mod 8.
@@ -3516,6 +3517,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081079](http://oeis.org/A081079) ([L08 program](A081079.asm)): Lucas(4n+2) - 3, or 5*Fibonacci(2n)*Fibonacci(2n+2).
 * [A081105](http://oeis.org/A081105) ([L12 program](A081105.asm)): 5th Binomial transform of (1,1,0,0,0,0,.....).
 * [A081107](http://oeis.org/A081107) ([L19 program](A081107.asm)): 7th binomial transform of (1,1,0,0,0,0,.......).
+* [A081108](http://oeis.org/A081108) ([L10 program](A081108.asm)): 8th binomial transform of (1,1,0,0,0,0,.........).
+* [A081193](http://oeis.org/A081193) ([L15 program](A081193.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n>1, a(0)=1, a(1)=9.
 * [A081251](http://oeis.org/A081251) ([L16 program](A081251.asm)): Numbers n such that A081249(m)/m^2 has a local maximum for m = n.
 * [A081253](http://oeis.org/A081253) ([L11 program](A081253.asm)): Numbers n such that A081252(m)/m^2 has a local minimum for m = n.
 * [A081254](http://oeis.org/A081254) ([L15 program](A081254.asm)): Numbers k such that A081252(m)/m^2 has a local maximum for m = k.

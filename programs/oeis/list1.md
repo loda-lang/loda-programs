@@ -61,6 +61,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100705](http://oeis.org/A100705) ([L09 program](A100705.asm)): a(n) = n^3 + (n+1)^2.
 * [A100764](http://oeis.org/A100764) ([L08 program](A100764.asm)): a(1) = 1, a(2) = 2, a(3) = 3, a(n) = least number not the sum of three or less previous terms.
 * [A100774](http://oeis.org/A100774) ([L07 program](A100774.asm)): a(n) = 2*(3^n - 1).
+* [A100795](http://oeis.org/A100795) ([L10 program](A100795.asm)): n occurs n times, as early as possible subject to the constraint that no two successive terms are identical.
 * [A100832](http://oeis.org/A100832) ([L09 program](A100832.asm)): Amenable numbers: n such that there exists a multiset of integers (s(1), ..., s(n)) whose size, sum and product are all n.
 * [A100855](http://oeis.org/A100855) ([L14 program](A100855.asm)): n*(n^3-n^2+n+1)/2.
 * [A101000](http://oeis.org/A101000) ([L07 program](A101000.asm)): Periodic sequence with period 3.
@@ -1351,6 +1352,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A143097](http://oeis.org/A143097) ([L08 program](A143097.asm)): 3*k - 2 interleaved with 3*k - 1 and 3*k.
 * [A143101](http://oeis.org/A143101) ([L17 program](A143101.asm)): Partial sums of A143097.
 * [A143166](http://oeis.org/A143166) ([L07 program](A143166.asm)): a(n) = n*(8*n^2 + 1)/3.
+* [A143182](http://oeis.org/A143182) ([L19 program](A143182.asm)): Triangle t(n,m) = 1+abs(n-2m) read by rows, 0<=m<=n.
 * [A143371](http://oeis.org/A143371) ([L08 program](A143371.asm)): Duplicate of A131423.
 * [A143432](http://oeis.org/A143432) ([L13 program](A143432.asm)): Ultimately periodic length 4 sequence [ 2, 2, 0, 0, ...] with a(0) = a(1) = 1.
 * [A143616](http://oeis.org/A143616) ([L06 program](A143616.asm)): Record values in A010371.
@@ -1430,6 +1432,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145071](http://oeis.org/A145071) ([L08 program](A145071.asm)): Partial sums of A000051, starting at n=1.
 * [A145126](http://oeis.org/A145126) ([L08 program](A145126.asm)): a(n) = 1 + (6 + (11 + (6 + n)*n)*n)*n/24.
 * [A145287](http://oeis.org/A145287) ([L05 program](A145287.asm)): Duplicate of A016861.
+* [A145362](http://oeis.org/A145362) ([L17 program](A145362.asm)): Lower triangular array, called S1hat(-1), related to partition number array A145361.
 * [A145389](http://oeis.org/A145389) ([L10 program](A145389.asm)): Digital roots of triangular numbers.
 * [A145563](http://oeis.org/A145563) ([L10 program](A145563.asm)): a(0)=0 and a(n+1) = 3*a(n) + 2^(n+2).
 * [A145568](http://oeis.org/A145568) ([L06 program](A145568.asm)): Characteristic function of numbers relatively prime to 11.
@@ -1993,6 +1996,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164515](http://oeis.org/A164515) ([L11 program](A164515.asm)): Positive numbers not of the form n^2+2.
 * [A164541](http://oeis.org/A164541) ([L12 program](A164541.asm)): a(n) = 6*a(n-1) - a(n-2) for n > 1; a(0) = 1, a(1) = 15.
 * [A164542](http://oeis.org/A164542) ([L11 program](A164542.asm)): a(n) = 8*a(n-1) - 8*a(n-2) for n > 1; a(0) = 1, a(1) = 16.
+* [A164545](http://oeis.org/A164545) ([L22 program](A164545.asm)): a(n) = 4*a(n-1) + 4*a(n-2) for n > 1; a(0) = 1, a(1) = 8.
 * [A164549](http://oeis.org/A164549) ([L12 program](A164549.asm)): a(n) = 4*a(n-1)+2*a(n-2) for n > 1; a(0) = 1, a(1) = 6.
 * [A164550](http://oeis.org/A164550) ([L16 program](A164550.asm)): a(n) = 6*a(n-1)-3*a(n-2) for n > 1; a(0) = 1, a(1) = 7.
 * [A164559](http://oeis.org/A164559) ([L10 program](A164559.asm)): a(n) = 6^n/3 - 1.
@@ -2937,6 +2941,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186357](http://oeis.org/A186357) ([L08 program](A186357.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186357.
 * [A186379](http://oeis.org/A186379) ([L16 program](A186379.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186380.
 * [A186380](http://oeis.org/A186380) ([L12 program](A186380.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186379.
+* [A186381](http://oeis.org/A186381) ([L13 program](A186381.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186382.
 * [A186382](http://oeis.org/A186382) ([L16 program](A186382.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186381.
 * [A186383](http://oeis.org/A186383) ([L11 program](A186383.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j(j+1)/2 (triangular number).  Complement of A186384.
 * [A186384](http://oeis.org/A186384) ([L06 program](A186384.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j(j+1)/2 (triangular number).  Complement of A186383.
