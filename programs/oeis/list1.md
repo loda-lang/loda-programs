@@ -2254,6 +2254,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168610](http://oeis.org/A168610) ([L08 program](A168610.asm)): a(n) = 3^n + 5.
 * [A168614](http://oeis.org/A168614) ([L06 program](A168614.asm)): a(n) = 2^n + 5.
 * [A168617](http://oeis.org/A168617) ([L07 program](A168617.asm)): a(n) = 7*2^(n-1) - 2*n - 5.
+* [A168642](http://oeis.org/A168642) ([L19 program](A168642.asm)): a(n) = (8*2^n + (-1)^n)/3 for n > 0; a(0) = 1.
 * [A168648](http://oeis.org/A168648) ([L16 program](A168648.asm)): a(n) = (10*2^n + 2*(-1)^n)/3 for n > 0; a(0) = 1.
 * [A168668](http://oeis.org/A168668) ([L06 program](A168668.asm)): a(n) = n*(2 + 5*n).
 * [A168670](http://oeis.org/A168670) ([L08 program](A168670.asm)): Numbers that are congruent to {1, 8} mod 11.
@@ -2959,6 +2960,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186684](http://oeis.org/A186684) ([L05 program](A186684.asm)): Total number of positive integers below 10^n requiring 19 positive biquadrates in their representation as sum of biquadrates.
 * [A186685](http://oeis.org/A186685) ([L02 program](A186685.asm)): Total number of n-digit numbers requiring 19 positive biquadrates in their representation as sum of biquadrates.
 * [A186862](http://oeis.org/A186862) ([L10 program](A186862.asm)): Number of 3-step king's tours on an n X n board summed over all starting positions
+* [A186942](http://oeis.org/A186942) ([L12 program](A186942.asm)): a(n)=2(4^n-n*2^n)-1.
 * [A186948](http://oeis.org/A186948) ([L11 program](A186948.asm)): a(n) = 3^n - 2*n.
 * [A186949](http://oeis.org/A186949) ([L06 program](A186949.asm)): a(n)=2^n-2*C(1,n)+2*C(0,n).
 * [A187107](http://oeis.org/A187107) ([L10 program](A187107.asm)): Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.

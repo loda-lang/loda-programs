@@ -22,6 +22,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301571](http://oeis.org/A301571) ([L13 program](A301571.asm)): Number of vertices at distance 2 from a given vertex in the n-Keller graph.
 * [A301622](http://oeis.org/A301622) ([L16 program](A301622.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 4.
 * [A301654](http://oeis.org/A301654) ([L07 program](A301654.asm)): Circumference of the n-triangular honeycomb acute knight graph.
+* [A301657](http://oeis.org/A301657) ([L16 program](A301657.asm)): Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
 * [A301673](http://oeis.org/A301673) ([L13 program](A301673.asm)): Partial sums of A301672.
 * [A301694](http://oeis.org/A301694) ([L13 program](A301694.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)*(1 - x^3)).
 * [A301695](http://oeis.org/A301695) ([L10 program](A301695.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)^2*(1 - x^3)).
@@ -79,6 +80,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304385](http://oeis.org/A304385) ([L10 program](A304385.asm)): a(n) = 192*2^n - 31 (n>=1).
 * [A304387](http://oeis.org/A304387) ([L07 program](A304387.asm)): a(n) = 27*2^n - 5.
 * [A304388](http://oeis.org/A304388) ([L10 program](A304388.asm)): a(n) = 144*2^n - 20 (n>=1).
+* [A304389](http://oeis.org/A304389) ([L19 program](A304389.asm)): a(n) = 126*2^n - 22 (n>=1).
 * [A304503](http://oeis.org/A304503) ([L13 program](A304503.asm)): a(n) = 3*(n+1)*(9*n+4).
 * [A304504](http://oeis.org/A304504) ([L23 program](A304504.asm)): a(n) = 3*(3*n+1)*(9*n+8)/2.
 * [A304505](http://oeis.org/A304505) ([L15 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
@@ -138,7 +140,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307802](http://oeis.org/A307802) ([L05 program](A307802.asm)): Number of palindromic octagonal numbers of length n whose index is also palindromic.
 * [A307808](http://oeis.org/A307808) ([L15 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
-* [A307877](http://oeis.org/A307877) ([L16 program](A307877.asm)): a(n) = smallest m >= 0 such that n divides m+10.
 * [A310372](http://oeis.org/A310372) ([L17 program](A310372.asm)): Coordination sequence Gal.4.52.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310378](http://oeis.org/A310378) ([L21 program](A310378.asm)): Coordination sequence Gal.6.320.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310409](http://oeis.org/A310409) ([L16 program](A310409.asm)): Coordination sequence Gal.3.19.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.

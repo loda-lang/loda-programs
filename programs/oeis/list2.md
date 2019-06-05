@@ -377,6 +377,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A220104](http://oeis.org/A220104) ([L07 program](A220104.asm)): n appears n*(n+1) times.
 * [A220154](http://oeis.org/A220154) ([L21 program](A220154.asm)): Number of 2 X n arrays of the minimum value of corresponding elements and their horizontal or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 2 X n array.
 * [A220212](http://oeis.org/A220212) ([L14 program](A220212.asm)): Convolution of natural numbers (A000027) with tetradecagonal numbers (A051866).
+* [A220236](http://oeis.org/A220236) ([L15 program](A220236.asm)): Binary palindromic numbers with only two 0 bits, both in the middle.
 * [A220425](http://oeis.org/A220425) ([L10 program](A220425.asm)): a(n) = n^2 + 2*n + 2^n.
 * [A220443](http://oeis.org/A220443) ([L07 program](A220443.asm)): a(n) = Sum_{i=1..n} (3i)^2.
 * [A220657](http://oeis.org/A220657) ([L13 program](A220657.asm)): Partial sums of A084558+1.
@@ -447,6 +448,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226292](http://oeis.org/A226292) ([L09 program](A226292.asm)): (10*n^2+4*n+(1-(-1)^n))/8.
 * [A226293](http://oeis.org/A226293) ([L13 program](A226293.asm)): Class of sequences of (p-1)-tuples of reverse order of natural numbers for p = 7.
 * [A226294](http://oeis.org/A226294) ([L06 program](A226294.asm)): Period 2: repeat [6, 4].
+* [A226315](http://oeis.org/A226315) ([L11 program](A226315.asm)): (n^2/8+3*n/8-2)*2^n+3.
 * [A226449](http://oeis.org/A226449) ([L13 program](A226449.asm)): a(n) = n*(5*n^2-8*n+5)/2.
 * [A226450](http://oeis.org/A226450) ([L12 program](A226450.asm)): a(n) = n*(3*n^2 - 5*n + 3).
 * [A226488](http://oeis.org/A226488) ([L06 program](A226488.asm)): a(n) = n*(13*n-9)/2.
@@ -561,10 +563,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A233583](http://oeis.org/A233583) ([L02 program](A233583.asm)): Coefficients of the generalized continued fraction expansion e = a(1) +a(1)/(a(2) +a(2)/(a(3) +a(3)/(a(4) +a(4)/....))).
 * [A233656](http://oeis.org/A233656) ([L11 program](A233656.asm)): a(n) = 3*a(n-1) - 2*(n-1), with a(0) = 1.
 * [A233795](http://oeis.org/A233795) ([L18 program](A233795.asm)): Number of triangular numbers between triangular(n) and n^2.
+* [A233868](http://oeis.org/A233868) ([L12 program](A233868.asm)): Numbers that are not the sum of two evil numbers.
 * [A234272](http://oeis.org/A234272) ([L13 program](A234272.asm)): G.f.: (1+4*x+x^2)/(1-4*x+x^2).
 * [A234275](http://oeis.org/A234275) ([L06 program](A234275.asm)): Expansion of (1+2*x+9*x^2-4*x^3)/(1-x)^2.
 * [A234429](http://oeis.org/A234429) ([L08 program](A234429.asm)): Numbers which are the digital sum of the square of some prime.
-* [A234717](http://oeis.org/A234717) ([L24 program](A234717.asm)): Floor(n/(exp(1/(2*n))-1)).
+* [A234717](http://oeis.org/A234717) ([L21 program](A234717.asm)): Floor(n/(exp(1/(2*n))-1)).
 * [A234904](http://oeis.org/A234904) ([L16 program](A234904.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 1, 3) after n rotations.
 * [A235089](http://oeis.org/A235089) ([L08 program](A235089.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 1, 3, 4) after n rotations.
 * [A235332](http://oeis.org/A235332) ([L08 program](A235332.asm)): a(n) = n*(9*n + 25)/2 + 6.
@@ -707,6 +710,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244328](http://oeis.org/A244328) ([L06 program](A244328.asm)): a(1) = a(2) = 0; for n >= 3: a(n) = floor((n*(n+1)/2) / antisigma(n)) = floor(A000217(n) / A024816(n)).
 * [A244331](http://oeis.org/A244331) ([L07 program](A244331.asm)): Number of binary digits in the high-water marks of the terms of the continued fraction of the base 2 Champernowne constant.
 * [A244584](http://oeis.org/A244584) ([L06 program](A244584.asm)): a(n) = n OR 3.
+* [A244586](http://oeis.org/A244586) ([L15 program](A244586.asm)): a(n) = n OR 4.
 * [A244630](http://oeis.org/A244630) ([L09 program](A244630.asm)): a(n) = 17*n^2.
 * [A244631](http://oeis.org/A244631) ([L25 program](A244631.asm)): 19*n^2.
 * [A244632](http://oeis.org/A244632) ([L16 program](A244632.asm)): 23*n^2.
@@ -879,6 +883,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A255236](http://oeis.org/A255236) ([L18 program](A255236.asm)): All positive solutions x of the second class of the Pell equation x^2 - 2*y^2 = -7.
 * [A255270](http://oeis.org/A255270) ([L13 program](A255270.asm)): Integer part of fourth root of n.
 * [A255413](http://oeis.org/A255413) ([L18 program](A255413.asm)): Row 3 of Ludic array A255127: a(n) = A007310((5*n)-3).
+* [A255459](http://oeis.org/A255459) ([L13 program](A255459.asm)): a(n) = A255458(2^n-1).
 * [A255499](http://oeis.org/A255499) ([L12 program](A255499.asm)): a(n) = n^4/2+n^3-n^2/2.
 * [A255687](http://oeis.org/A255687) ([L07 program](A255687.asm)): a(n) = n*(n + 1)*(7*n + 11)/6.
 * [A255738](http://oeis.org/A255738) ([L09 program](A255738.asm)): a(1) = 1; for n > 1, a(n) = 1*0^{A000120(n-1) - 1}.
@@ -1026,6 +1031,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A264120](http://oeis.org/A264120) ([L06 program](A264120.asm)): Values of k such that A001163(k) is positive.
 * [A264443](http://oeis.org/A264443) ([L08 program](A264443.asm)): a(n) = n*(n + 5)*(n + 10)/6.
 * [A264444](http://oeis.org/A264444) ([L13 program](A264444.asm)): a(n) = n*(n + 7)*(n + 14)/6.
+* [A264445](http://oeis.org/A264445) ([L13 program](A264445.asm)): a(n) = n*(n + 11)*(n + 22)/6.
 * [A264750](http://oeis.org/A264750) ([L10 program](A264750.asm)): Number of sequences of 5 throws of an n-sided die (with faces numbered 1, 2, ..., n) in which the sum of the throws first reaches or exceeds n on the 5th throw.
 * [A264754](http://oeis.org/A264754) ([L08 program](A264754.asm)): Expansion of (1 + 2*x - 2*x^3 + x^4)/((1 - x)^3*(1 + x)^2).
 * [A264788](http://oeis.org/A264788) ([L11 program](A264788.asm)): a(n) is the number of circles added at n-th iteration of the pattern starting with 2 circles. (See comment.)

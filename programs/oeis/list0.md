@@ -262,6 +262,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004119](http://oeis.org/A004119) ([L07 program](A004119.asm)): a(0)=1; thereafter a(n) = 3*2^(n-1)+1.
 * [A004120](http://oeis.org/A004120) ([L11 program](A004120.asm)): Expansion of (1 + x - x^5) / (1 - x)^3.
 * [A004126](http://oeis.org/A004126) ([L08 program](A004126.asm)): a(n) = n*(7*n^2 - 1)/6.
+* [A004134](http://oeis.org/A004134) ([L13 program](A004134.asm)): Denominators in expansion of (1-x)^{-1/4} are 2^a(n).
 * [A004142](http://oeis.org/A004142) ([L12 program](A004142.asm)): n(3^n-2^n).
 * [A004146](http://oeis.org/A004146) ([L07 program](A004146.asm)): Alternate Lucas numbers - 2.
 * [A004171](http://oeis.org/A004171) ([L06 program](A004171.asm)): a(n) = 2^(2n+1).
@@ -557,6 +558,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008679](http://oeis.org/A008679) ([L11 program](A008679.asm)): Expansion of 1/((1-x^3)(1-x^4)).
 * [A008706](http://oeis.org/A008706) ([L05 program](A008706.asm)): Coordination sequence for 3.3.3.4.4 planar net.
 * [A008720](http://oeis.org/A008720) ([L14 program](A008720.asm)): Molien series for 3-dimensional group [2,5] = *225.
+* [A008722](http://oeis.org/A008722) ([L15 program](A008722.asm)): Molien series for 3-dimensional group [2,9] = *229.
 * [A008724](http://oeis.org/A008724) ([L05 program](A008724.asm)): a(n) = floor(n^2/12).
 * [A008725](http://oeis.org/A008725) ([L05 program](A008725.asm)): Molien series for 3-dimensional group [2,n] = *22n.
 * [A008726](http://oeis.org/A008726) ([L05 program](A008726.asm)): Molien series 1/((1-x)^2*(1-x^8)) for 3-dimensional group [2,n] = *22n.
@@ -1824,6 +1826,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A039207](http://oeis.org/A039207) ([L07 program](A039207.asm)): Numbers n such that representation in base 11 has same number of 8's and 9's.
 * [A039208](http://oeis.org/A039208) ([L10 program](A039208.asm)): Numbers n such that representation in base 11 has same number of 8's and 10's.
 * [A039209](http://oeis.org/A039209) ([L07 program](A039209.asm)): Numbers n such that representation in base 11 has same number of 9's and 10's.
+* [A039218](http://oeis.org/A039218) ([L15 program](A039218.asm)): Numbers n such that representation in base 12 has same number of 0's and 9's.
 * [A039265](http://oeis.org/A039265) ([L06 program](A039265.asm)): Numbers n such that representation in base 12 has same number of 7's and 8's.
 * [A039269](http://oeis.org/A039269) ([L06 program](A039269.asm)): Numbers n such that representation in base 12 has same number of 8's and 9's.
 * [A039272](http://oeis.org/A039272) ([L07 program](A039272.asm)): Numbers n such that representation in base 12 has same number of 9's and 10's.
@@ -2466,6 +2469,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048840](http://oeis.org/A048840) ([L17 program](A048840.asm)): Expansion of (1-x+2*x^2+2*x^3-x^4-x^5)/(1-x)^3.
 * [A048859](http://oeis.org/A048859) ([L21 program](A048859.asm)): A sieve: keep the first 2 numbers, delete the next 3 numbers; keep the next 3 numbers, delete the next 4 numbers; keep the next 4 numbers, delete the next 5 numbers; and so on. In other words, keep the next k numbers and delete the next k+1 numbers, for k = 2, 3, ...
 * [A048876](http://oeis.org/A048876) ([L19 program](A048876.asm)): a(n) = 4*a(n-1) + a(n-2); a(0)=1, a(1)=7.
+* [A048878](http://oeis.org/A048878) ([L12 program](A048878.asm)): Generalized Pellian with second term of 9.
 * [A048879](http://oeis.org/A048879) ([L15 program](A048879.asm)): Generalized Pellian with second term of 10.
 * [A048881](http://oeis.org/A048881) ([L13 program](A048881.asm)): a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
 * [A049013](http://oeis.org/A049013) ([L03 program](A049013.asm)): Duplicate of A020735.
@@ -3309,6 +3313,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A074280](http://oeis.org/A074280) ([L06 program](A074280.asm)): Duplicate of A000523.
 * [A074294](http://oeis.org/A074294) ([L06 program](A074294.asm)): Integers 1 to 2*k followed by integers 1 to 2*k + 2 and so on.
 * [A074323](http://oeis.org/A074323) ([L11 program](A074323.asm)): Coefficient of the highest power of q in the expansion of nu(0)=1, nu(1)=b and for n>=2, nu(n)=b*nu(n-1)+lambda*(n-1)_q*nu(n-2) with (b,lambda)=(1,2), where (n)_q=(1+q+...+q^(n-1)) and q is a root of unity.
+* [A074358](http://oeis.org/A074358) ([L19 program](A074358.asm)): Coefficient of q^1 in nu(n), where nu(0)=1, nu(1)=b and, for n >= 2, nu(n) = b*nu(n-1) + lambda*(1 + q + q^2 + ... + q^(n-2))*nu(n-2) with (b,lambda)=(2,2).
 * [A074377](http://oeis.org/A074377) ([L09 program](A074377.asm)): Generalized 10-gonal numbers: m*(4*m - 3) for m = 0, +- 1, +- 2, +- 3, ...
 * [A074378](http://oeis.org/A074378) ([L07 program](A074378.asm)): Even triangular numbers halved.
 * [A074494](http://oeis.org/A074494) ([L10 program](A074494.asm)): Number of 2-input gates used to synthesize parity function in disjunctive normal form (DNF) with n inputs.
@@ -3834,6 +3839,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A089108](http://oeis.org/A089108) ([L06 program](A089108.asm)): Convoluted convolved Fibonacci numbers G_4^(r).
 * [A089128](http://oeis.org/A089128) ([L17 program](A089128.asm)): a(n) = gcd(6,n).
 * [A089143](http://oeis.org/A089143) ([L06 program](A089143.asm)): a(n) = 9*2^n - 6.
+* [A089145](http://oeis.org/A089145) ([L21 program](A089145.asm)): Greatest common divisor of n^2-3 and n^2+3.
 * [A089146](http://oeis.org/A089146) ([L20 program](A089146.asm)): Greatest common divisor of n^2 - 4 and n^2 + 4.
 * [A089207](http://oeis.org/A089207) ([L10 program](A089207.asm)): a(n) = 4n^3 + 2n^2.
 * [A089262](http://oeis.org/A089262) ([L13 program](A089262.asm)): 2^[log2(n)] - 2^[log2(n*2/3)].
