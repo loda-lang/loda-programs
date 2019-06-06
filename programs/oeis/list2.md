@@ -497,6 +497,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228321](http://oeis.org/A228321) ([L25 program](A228321.asm)): The Wiener index of the graph obtained by applying Mycielski's construction to the path graph on n vertices (n>=2).
 * [A228344](http://oeis.org/A228344) ([L12 program](A228344.asm)): Floor(3*n^2/4) - 1.
 * [A228394](http://oeis.org/A228394) ([L11 program](A228394.asm)): The number of permutations of length n sortable by 2 prefix block transpositions.
+* [A228398](http://oeis.org/A228398) ([L19 program](A228398.asm)): The number of permutations of length n sortable by 3 prefix reversals (in the pancake sorting sense).
 * [A228568](http://oeis.org/A228568) ([L09 program](A228568.asm)): a(n) = 2^n*A056236(n).
 * [A228569](http://oeis.org/A228569) ([L10 program](A228569.asm)): Binomial transform of A006497.
 * [A228661](http://oeis.org/A228661) ([L11 program](A228661.asm)): Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
@@ -569,6 +570,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A234429](http://oeis.org/A234429) ([L08 program](A234429.asm)): Numbers which are the digital sum of the square of some prime.
 * [A234717](http://oeis.org/A234717) ([L21 program](A234717.asm)): Floor(n/(exp(1/(2*n))-1)).
 * [A234904](http://oeis.org/A234904) ([L16 program](A234904.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 1, 3) after n rotations.
+* [A235088](http://oeis.org/A235088) ([L18 program](A235088.asm)): a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3, 4) after n rotations.
 * [A235089](http://oeis.org/A235089) ([L08 program](A235089.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 1, 3, 4) after n rotations.
 * [A235332](http://oeis.org/A235332) ([L08 program](A235332.asm)): a(n) = n*(9*n + 25)/2 + 6.
 * [A235355](http://oeis.org/A235355) ([L09 program](A235355.asm)): 0 followed by the sum of (1),(2), (3,4),(5,6), (7,8,9),(10,11,12) from the natural numbers.
@@ -1384,6 +1386,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277425](http://oeis.org/A277425) ([L07 program](A277425.asm)): a(n) = sqrt(16*t^2 - 32*t + k^2 + 8*k - 8*k*t + 16), where t = ceiling((sqrt(n))) and k = t^2 - n.
 * [A277451](http://oeis.org/A277451) ([L10 program](A277451.asm)): Number of edges in geodesic dome generated from icosahedron by recursively dividing each triangle in 4.
 * [A277618](http://oeis.org/A277618) ([L08 program](A277618.asm)): Lexicographically earliest nonnegative sequence such that |a(n+1)-a(n)| is a prime number, and no number occurs twice; a(0) = 0.
+* [A277867](http://oeis.org/A277867) ([L11 program](A277867.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A277955](http://oeis.org/A277955) ([L12 program](A277955.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 14", based on the 5-celled von Neumann neighborhood.
 * [A277975](http://oeis.org/A277975) ([L09 program](A277975.asm)): a(n) = n*x^n + (n-1)*x^(n-1) + . . . + x + 1 for x=5.
 * [A277976](http://oeis.org/A277976) ([L08 program](A277976.asm)): a(n) = n*(3*n + 23).

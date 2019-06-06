@@ -3400,6 +3400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A078485](http://oeis.org/A078485) ([L21 program](A078485.asm)): Number of irreducible indecomposable permutations of degree n.
 * [A078501](http://oeis.org/A078501) ([L12 program](A078501.asm)): a(n) = sum(k=1,n^2, A078446(k)).
 * [A078567](http://oeis.org/A078567) ([L10 program](A078567.asm)): Number of arithmetic subsequences of [1..n] with length > 1.
+* [A078617](http://oeis.org/A078617) ([L21 program](A078617.asm)): Floor(average of first n squares).
 * [A078633](http://oeis.org/A078633) ([L15 program](A078633.asm)): Smallest number of sticks of length 1 needed to construct n squares with sides of length 1.
 * [A078642](http://oeis.org/A078642) ([L08 program](A078642.asm)): Numbers with two representations as the sum of two Fibonacci numbers.
 * [A078689](http://oeis.org/A078689) ([L12 program](A078689.asm)): Continued fraction expansion of e^(1/3).
@@ -3537,6 +3538,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081294](http://oeis.org/A081294) ([L07 program](A081294.asm)): Expansion of (1-2*x)/(1-4*x).
 * [A081341](http://oeis.org/A081341) ([L16 program](A081341.asm)): Expansion of exp(3*x)*cosh(3*x).
 * [A081345](http://oeis.org/A081345) ([L08 program](A081345.asm)): First row in maze arrangement of natural numbers A081344.
+* [A081346](http://oeis.org/A081346) ([L16 program](A081346.asm)): First column in maze arrangement of natural numbers A081344.
 * [A081347](http://oeis.org/A081347) ([L16 program](A081347.asm)): First column in maze arrangement of natural numbers.
 * [A081348](http://oeis.org/A081348) ([L09 program](A081348.asm)): First row in maze arrangement of natural numbers.
 * [A081350](http://oeis.org/A081350) ([L19 program](A081350.asm)): First column in maze array of natural numbers A081349.
@@ -3920,6 +3922,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092755](http://oeis.org/A092755) ([L10 program](A092755.asm)): Partial sums of A000195 (floor(log(n))).
 * [A092810](http://oeis.org/A092810) ([L12 program](A092810.asm)): Binomial transform of a Jacobsthal trisection.
 * [A092811](http://oeis.org/A092811) ([L09 program](A092811.asm)): Expansion of (1-4*x)/(1-8*x).
+* [A092841](http://oeis.org/A092841) ([L14 program](A092841.asm)): Numerator of I(n)=(integral_{x=0 to 1/(4^n)}(1-x^.5)^2 dx). E.g. I(3)=323/24576. The denominator is b(n)=96*16^(n-1). E.g. b(3)=24576.
 * [A092896](http://oeis.org/A092896) ([L10 program](A092896.asm)): Related to random walks on the 4-cube.
 * [A092899](http://oeis.org/A092899) ([L10 program](A092899.asm)): Expansion of (1+2x+3x^2+6x^3)/((1+x)(1-x)^2).
 * [A092919](http://oeis.org/A092919) ([L09 program](A092919.asm)): Partial sums of A000193 (round(log(n))).

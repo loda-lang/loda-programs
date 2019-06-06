@@ -806,6 +806,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130483](http://oeis.org/A130483) ([L12 program](A130483.asm)): a(n) = Sum_{k=0..n} (k mod 5) (Partial sums of A010874).
 * [A130484](http://oeis.org/A130484) ([L11 program](A130484.asm)): a(n) = Sum_{k=0..n} (k mod 6) (Partial sums of A010875).
 * [A130486](http://oeis.org/A130486) ([L13 program](A130486.asm)): a(n) = Sum_{k=0..n} (k mod 8) (Partial sums of A010877).
+* [A130494](http://oeis.org/A130494) ([L16 program](A130494.asm)): Row sums of triangle A130478.
 * [A130496](http://oeis.org/A130496) ([L05 program](A130496.asm)): Repetition of even numbers, with initial zeros, five times.
 * [A130497](http://oeis.org/A130497) ([L06 program](A130497.asm)): Repetition of odd numbers five times.
 * [A130508](http://oeis.org/A130508) ([L06 program](A130508.asm)): a(1)=2. a(2)=3. a(3)=1. a(n+3) = 3 + a(n), for all positive integers n.
@@ -1783,6 +1784,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158546](http://oeis.org/A158546) ([L18 program](A158546.asm)): a(n) = 144*n^2 + 12.
 * [A158547](http://oeis.org/A158547) ([L10 program](A158547.asm)): a(n) = 24*n^2 + 1.
 * [A158549](http://oeis.org/A158549) ([L14 program](A158549.asm)): a(n) = 26*n^2 + 1.
+* [A158554](http://oeis.org/A158554) ([L17 program](A158554.asm)): a(n) = 28*n^2 - 1.
 * [A158555](http://oeis.org/A158555) ([L20 program](A158555.asm)): a(n) = 196*n^2 + 14.
 * [A158556](http://oeis.org/A158556) ([L10 program](A158556.asm)): a(n) = 28*n^2 + 1.
 * [A158558](http://oeis.org/A158558) ([L20 program](A158558.asm)): a(n) = 30n^2 + 1.
@@ -1994,6 +1996,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164486](http://oeis.org/A164486) ([L08 program](A164486.asm)): Duplicate of A084684.
 * [A164514](http://oeis.org/A164514) ([L08 program](A164514.asm)): 1 followed by numbers that are not squares.
 * [A164515](http://oeis.org/A164515) ([L11 program](A164515.asm)): Positive numbers not of the form n^2+2.
+* [A164540](http://oeis.org/A164540) ([L20 program](A164540.asm)): a(n) = 4*a(n-1) + 4*a(n-2) for n > 1; a(0) = 1, a(1) = 14.
 * [A164541](http://oeis.org/A164541) ([L12 program](A164541.asm)): a(n) = 6*a(n-1) - a(n-2) for n > 1; a(0) = 1, a(1) = 15.
 * [A164542](http://oeis.org/A164542) ([L11 program](A164542.asm)): a(n) = 8*a(n-1) - 8*a(n-2) for n > 1; a(0) = 1, a(1) = 16.
 * [A164545](http://oeis.org/A164545) ([L22 program](A164545.asm)): a(n) = 4*a(n-1) + 4*a(n-2) for n > 1; a(0) = 1, a(1) = 8.
