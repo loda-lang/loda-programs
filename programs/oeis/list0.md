@@ -221,6 +221,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A003261](http://oeis.org/A003261) ([L07 program](A003261.asm)): Woodall (or Riesel) numbers: n*2^n - 1.
 * [A003314](http://oeis.org/A003314) ([L08 program](A003314.asm)): Binary entropy function: a(1)=0; for n > 1, a(n) = n + min { a(k)+a(n-k) : 1 <= k <= n-1 }.
 * [A003417](http://oeis.org/A003417) ([L20 program](A003417.asm)): Continued fraction for e.
+* [A003422](http://oeis.org/A003422) ([L17 program](A003422.asm)): Left factorials: !n = Sum_{k=0..n-1} k!.
 * [A003452](http://oeis.org/A003452) ([L10 program](A003452.asm)): Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals rooted at a cell up to rotation and reflection.
 * [A003453](http://oeis.org/A003453) ([L09 program](A003453.asm)): Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals up to rotation and reflection.
 * [A003461](http://oeis.org/A003461) ([L07 program](A003461.asm)): Bode numbers multiplied by 10: 4 + 3*floor(2^(n-1)).
@@ -850,6 +851,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A015518](http://oeis.org/A015518) ([L11 program](A015518.asm)): a(n) = 2*a(n-1) + 3*a(n-2), with a(0)=0, a(1)=1.
 * [A015522](http://oeis.org/A015522) ([L03 program](A015522.asm)): Inverse of 1513th cyclotomic polynomial.
 * [A015538](http://oeis.org/A015538) ([L03 program](A015538.asm)): Inverse of 1529th cyclotomic polynomial.
+* [A015559](http://oeis.org/A015559) ([L13 program](A015559.asm)): Expansion of x/(1 - 7*x - 3*x^2).
 * [A015582](http://oeis.org/A015582) ([L06 program](A015582.asm)): Inverse of 1573rd cyclotomic polynomial.
 * [A015586](http://oeis.org/A015586) ([L03 program](A015586.asm)): Inverse of 1577th cyclotomic polynomial.
 * [A015588](http://oeis.org/A015588) ([L17 program](A015588.asm)): Expansion of x/(1 - 10*x - 3*x^2).
@@ -2779,6 +2781,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056531](http://oeis.org/A056531) ([L14 program](A056531.asm)): Sequence remaining after fourth round of Flavius Josephus sieve; remove every fifth term of A056530.
 * [A056548](http://oeis.org/A056548) ([L11 program](A056548.asm)): a(n) = Sum_{k>=1} round(n/k) where round(1/2) = 0.
 * [A056556](http://oeis.org/A056556) ([L06 program](A056556.asm)): First tetrahedral co-ordinate; repeat m (m+1)*(m+2)/2 times.
+* [A056699](http://oeis.org/A056699) ([L21 program](A056699.asm)): First differences are 2,1,-2,3 (repeated).
 * [A056827](http://oeis.org/A056827) ([L07 program](A056827.asm)): [n^2/6].
 * [A056829](http://oeis.org/A056829) ([L07 program](A056829.asm)): Nearest integer to n^2/6.
 * [A056833](http://oeis.org/A056833) ([L15 program](A056833.asm)): Nearest integer to n^2/7.
@@ -2932,6 +2935,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060973](http://oeis.org/A060973) ([L09 program](A060973.asm)): a(2*n+1) = a(n+1)+a(n), a(2*n) = 2*a(n), with a(1)=0 and a(2)=1.
 * [A060995](http://oeis.org/A060995) ([L07 program](A060995.asm)): Number of routes of length 2n on the sides of an octagon from a point to opposite point.
 * [A060999](http://oeis.org/A060999) ([L16 program](A060999.asm)): Nearest integer to (n+1)^3/9.
+* [A061094](http://oeis.org/A061094) ([L12 program](A061094.asm)): The alternating group A_n contains an element x which is not conjugate to its inverse (equivalently not all the entries in the character table of A_n are real numbers).
 * [A061103](http://oeis.org/A061103) ([L18 program](A061103.asm)): Duplicate of A016791.
 * [A061168](http://oeis.org/A061168) ([L06 program](A061168.asm)): Partial sums of floor(log_2(k)) (= A000523(k)).
 * [A061171](http://oeis.org/A061171) ([L13 program](A061171.asm)): One half of second column of Lucas bisection triangle (odd part).
@@ -3361,6 +3365,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A077234](http://oeis.org/A077234) ([L12 program](A077234.asm)): Bisection (odd part) of Chebyshev sequence with Diophantine property.
 * [A077235](http://oeis.org/A077235) ([L08 program](A077235.asm)): Bisection (odd part) of Chebyshev sequence with Diophantine property.
 * [A077236](http://oeis.org/A077236) ([L09 program](A077236.asm)): a(n) = 4*a(n-1) - a(n-2) with a(0) = 4 and a(1) = 11.
+* [A077240](http://oeis.org/A077240) ([L14 program](A077240.asm)): Bisection (even part) of Chebyshev sequence with Diophantine property.
 * [A077265](http://oeis.org/A077265) ([L09 program](A077265.asm)): Number of cycles in the n-th order prism graph.
 * [A077414](http://oeis.org/A077414) ([L07 program](A077414.asm)): a(n) = n*(n - 1)*(n + 2)/2.
 * [A077415](http://oeis.org/A077415) ([L06 program](A077415.asm)): a(n) = n*(n+2)*(n-2)/3.
@@ -4023,6 +4028,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A096398](http://oeis.org/A096398) ([L08 program](A096398.asm)): Numbers n such that 0= #{ 1<=i<=n : k(n,i)=-1 } where k(n,i) is the Kronecker symbol.
 * [A096582](http://oeis.org/A096582) ([L10 program](A096582.asm)): From the "100 Green Bottles" song.
 * [A096603](http://oeis.org/A096603) ([L15 program](A096603.asm)): Numbers occurring twice in A096607.
+* [A096604](http://oeis.org/A096604) ([L14 program](A096604.asm)): Numbers that appear at most once in A096607.
 * [A096748](http://oeis.org/A096748) ([L14 program](A096748.asm)): Expansion of (1+x)^2/(1-x^2-x^4).
 * [A096773](http://oeis.org/A096773) ([L11 program](A096773.asm)): a(n+2) = 4*a(n) + 1; a(1) = 0, a(2) = 3.
 * [A096777](http://oeis.org/A096777) ([L07 program](A096777.asm)): a(n) = a(n-1) + Sum_{k=1..n-1}(a(k) mod 2), a(1) = 1.
