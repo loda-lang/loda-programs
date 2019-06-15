@@ -104,6 +104,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101946](http://oeis.org/A101946) ([L07 program](A101946.asm)): 6*2^n - 3*n - 5.
 * [A101986](http://oeis.org/A101986) ([L06 program](A101986.asm)): Maximum sum of products of successive pairs in a permutation of order n+1.
 * [A102083](http://oeis.org/A102083) ([L07 program](A102083.asm)): a(n) = 8*n^2 + 4*n + 1.
+* [A102091](http://oeis.org/A102091) ([L16 program](A102091.asm)): Number of perfect matchings in the C_{2n} X P_3 graph (C_{2n} is the cycle graph on 2n vertices and P_3 is the path graph on 3 vertices).
 * [A102094](http://oeis.org/A102094) ([L12 program](A102094.asm)): a(n) = (2*n-1)*(2*n+1)^2.
 * [A102126](http://oeis.org/A102126) ([L13 program](A102126.asm)): Minimum number of pieces needed to dissect a square into n smaller squares (not necessarily of the same size).
 * [A102206](http://oeis.org/A102206) ([L15 program](A102206.asm)): a(0) = 3, a(1) = 8, a(n+2) = 4*a(n+1) - a(n) - 2.
@@ -2593,6 +2594,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173562](http://oeis.org/A173562) ([L14 program](A173562.asm)): a(n) = n^2 + floor(n/4).
 * [A173633](http://oeis.org/A173633) ([L21 program](A173633.asm)): a(n) = a(n-2) + a(n-3) - [a(n-3)/4] - [a(n-4)/2] - [a(n-5)/4].
 * [A173635](http://oeis.org/A173635) ([L21 program](A173635.asm)): Period 5 sequence: 1, 1, 4, 4, 2, ...
+* [A173711](http://oeis.org/A173711) ([L20 program](A173711.asm)): Nonnegative integers, six even followed by two odd.
 * [A173785](http://oeis.org/A173785) ([L12 program](A173785.asm)): Expansion of 2*(9*x^4+4*x^3+14*x^2-4*x+1)/(1-x)^5.
 * [A173857](http://oeis.org/A173857) ([L07 program](A173857.asm)): Expansion of 3/2 in base phi.
 * [A173858](http://oeis.org/A173858) ([L23 program](A173858.asm)): Expansion of 4/3 in base phi.
