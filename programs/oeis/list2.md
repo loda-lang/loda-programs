@@ -383,6 +383,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A220154](http://oeis.org/A220154) ([L21 program](A220154.asm)): Number of 2 X n arrays of the minimum value of corresponding elements and their horizontal or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 2 X n array.
 * [A220212](http://oeis.org/A220212) ([L14 program](A220212.asm)): Convolution of natural numbers (A000027) with tetradecagonal numbers (A051866).
 * [A220236](http://oeis.org/A220236) ([L15 program](A220236.asm)): Binary palindromic numbers with only two 0 bits, both in the middle.
+* [A220414](http://oeis.org/A220414) ([L18 program](A220414.asm)): a(n) = 6*a(n-1) - a(n-2), with a(1) = 13, a(2) = 73.
 * [A220425](http://oeis.org/A220425) ([L10 program](A220425.asm)): a(n) = n^2 + 2*n + 2^n.
 * [A220443](http://oeis.org/A220443) ([L07 program](A220443.asm)): a(n) = Sum_{i=1..n} (3i)^2.
 * [A220657](http://oeis.org/A220657) ([L13 program](A220657.asm)): Partial sums of A084558+1.
@@ -439,6 +440,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225370](http://oeis.org/A225370) ([L23 program](A225370.asm)): Let f(S) = maximal m such that the string S contains two disjoint identical (scattered) substrings of length m ("twins"); a(n) = min f(S) over all binary strings of length n.
 * [A225486](http://oeis.org/A225486) ([L19 program](A225486.asm)): Maximal frequency depth for the partitions of n.
 * [A225539](http://oeis.org/A225539) ([L09 program](A225539.asm)): Numbers n where 2^n and n have the same digital root.
+* [A225551](http://oeis.org/A225551) ([L17 program](A225551.asm)): Longest checkmate in king and queen versus king endgame on an n X n chessboard.
 * [A225553](http://oeis.org/A225553) ([L11 program](A225553.asm)): Longest checkmate in king and amazon versus king endgame on an n X n chessboard.
 * [A225566](http://oeis.org/A225566) ([L12 program](A225566.asm)): The set of magic numbers for an idealized harmonic oscillator atomic nucleus with a biaxially deformed prolate ellipsoid shape and an oscillator ratio of 3:1
 * [A225569](http://oeis.org/A225569) ([L15 program](A225569.asm)): Decimal expansion of Sum_{n>=0} 1/10^(3^n), a transcendental number.
@@ -522,6 +524,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229439](http://oeis.org/A229439) ([L09 program](A229439.asm)): Number of n X 2 0..2 arrays with horizontal differences mod 3 never 1, vertical differences mod 3 never -1, and rows and columns lexicographically nondecreasing.
 * [A229446](http://oeis.org/A229446) ([L09 program](A229446.asm)): Number of 3 X n 0..2 arrays with horizontal differences mod 3 never 1, vertical differences mod 3 never -1, and rows and columns lexicographically nondecreasing.
 * [A229472](http://oeis.org/A229472) ([L11 program](A229472.asm)): Number of defective 4-colorings of an n X 1 0..3 array connected horizontally, antidiagonally and vertically with exactly one mistake, and colors introduced in row-major 0..3 order.
+* [A229473](http://oeis.org/A229473) ([L19 program](A229473.asm)): Number of defective 4-colorings of an n X 2 0..3 array connected horizontally, antidiagonally and vertically with exactly one mistake, and colors introduced in row-major 0..3 order.
 * [A229489](http://oeis.org/A229489) ([L09 program](A229489.asm)): Conjecturally, possible differences between prime(k)^2 and the next prime for some k.
 * [A229504](http://oeis.org/A229504) ([L08 program](A229504.asm)): Number of defective 3-colorings of an n X 2 0..2 array connected diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.
 * [A229572](http://oeis.org/A229572) ([L13 program](A229572.asm)): Number of defective 4-colorings of an n X 2 0..3 array connected horizontally, vertically, diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..3 order.
@@ -772,6 +775,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246640](http://oeis.org/A246640) ([L07 program](A246640.asm)): Sequence a(n) = 1 + A001519(n+1) appearing in a certain touching problem for three circles and a chord, together with A246638.
 * [A246705](http://oeis.org/A246705) ([L11 program](A246705.asm)): Position of first n in A246694 (read as sequence with offset changed to 1); complement of A246706.
 * [A246706](http://oeis.org/A246706) ([L12 program](A246706.asm)): Position of last n in A246694 (read as a sequence, with offset changed to 1); complement of A246705.
+* [A246715](http://oeis.org/A246715) ([L13 program](A246715.asm)): n * Lucas(n) - (n - 1) * Lucas(n - 1).
 * [A246780](http://oeis.org/A246780) ([L27 program](A246780.asm)): Strictly increasing terms of the sequence A246778: a(1)= A246778(1) and for n>0 a(n+1) is next term greater than a(n) after that a(n) appears in A246778 for the first time.
 * [A247018](http://oeis.org/A247018) ([L07 program](A247018.asm)): a(n) = 3*n^2 + n + 3.
 * [A247049](http://oeis.org/A247049) ([L07 program](A247049.asm)): Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,0) to (n,k), where 0 >= k <= 2, consisting of segments given by the vectors (1,1), (1,2), (1,-1).

@@ -1148,6 +1148,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135528](http://oeis.org/A135528) ([L05 program](A135528.asm)): 1, then repeat 1,0.
 * [A135530](http://oeis.org/A135530) ([L09 program](A135530.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3), with a(0)=2, a(1)=1.
 * [A135536](http://oeis.org/A135536) ([L11 program](A135536.asm)): a(n) = 8*a(n-2), with a(0) = 7, a(1) = 14.
+* [A135537](http://oeis.org/A135537) ([L17 program](A135537.asm)): Period 4: repeat [7, 5, 2, 4].
 * [A135556](http://oeis.org/A135556) ([L10 program](A135556.asm)): Squares of numbers not divisible by 3: a(n) = A001651(n)^2.
 * [A135583](http://oeis.org/A135583) ([L07 program](A135583.asm)): a(n) = 4*a(n-1) - 4 for n>0, a(0)=3.
 * [A135600](http://oeis.org/A135600) ([L06 program](A135600.asm)): Angled numbers with an internal digit as the vertex.
@@ -2600,7 +2601,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173785](http://oeis.org/A173785) ([L12 program](A173785.asm)): Expansion of 2*(9*x^4+4*x^3+14*x^2-4*x+1)/(1-x)^5.
 * [A173857](http://oeis.org/A173857) ([L07 program](A173857.asm)): Expansion of 3/2 in base phi.
 * [A173858](http://oeis.org/A173858) ([L23 program](A173858.asm)): Expansion of 4/3 in base phi.
-* [A173862](http://oeis.org/A173862) ([L06 program](A173862.asm)): a(n) = A158772(n)/21.
+* [A173862](http://oeis.org/A173862) ([L06 program](A173862.asm)): a(n) = A158772(n-1)/21.
 * [A173873](http://oeis.org/A173873) ([L06 program](A173873.asm)): a(n) = 2*a(n-1) + 13, a(1)=1.
 * [A173960](http://oeis.org/A173960) ([L08 program](A173960.asm)): Averages of four consecutive odd squares.
 * [A173961](http://oeis.org/A173961) ([L11 program](A173961.asm)): Averages of two consecutive even cubes: (n^3+(n+2)^3)/2.
@@ -2883,6 +2884,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183861](http://oeis.org/A183861) ([L10 program](A183861.asm)): n-1+ceiling((-1+n^2)/3); complement of A183860.
 * [A183863](http://oeis.org/A183863) ([L07 program](A183863.asm)): n-1+ceiling((2/5)(-1/2+n^2)); complement of A183862.
 * [A183865](http://oeis.org/A183865) ([L17 program](A183865.asm)): n-1+ceiling(3(n+2)/5); complement of A183864.
+* [A183867](http://oeis.org/A183867) ([L13 program](A183867.asm)): a(n) = n + floor(2*sqrt(n)); complement of A184676.
 * [A183897](http://oeis.org/A183897) ([L15 program](A183897.asm)): Number of nondecreasing arrangements of n+3 numbers in 0..2 with each number being the sum mod 3 of three others.
 * [A183905](http://oeis.org/A183905) ([L07 program](A183905.asm)): Number of nondecreasing arrangements of n+2 numbers in 0..2 with each number being the sum mod 3 of two others.
 * [A183918](http://oeis.org/A183918) ([L05 program](A183918.asm)): Characteristic sequence for cos(2Pi/n) being rational.
@@ -3100,6 +3102,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192306](http://oeis.org/A192306) ([L14 program](A192306.asm)): 1-sequence of reduction of (2n) by x^2 -> x+1.
 * [A192308](http://oeis.org/A192308) ([L13 program](A192308.asm)): 1-sequence of reduction of (3n) by x^2 -> x+1.
 * [A192309](http://oeis.org/A192309) ([L16 program](A192309.asm)): 0-sequence of reduction of (3n-1) by x^2 -> x+1.
+* [A192310](http://oeis.org/A192310) ([L20 program](A192310.asm)): 1-sequence of reduction of (3n-1) by x^2 -> x+1.
 * [A192311](http://oeis.org/A192311) ([L11 program](A192311.asm)): 0-sequence of reduction of (3n-2) by x^2 -> x+1.
 * [A192312](http://oeis.org/A192312) ([L12 program](A192312.asm)): 1-sequence of reduction of (3n-2) by x^2 -> x+1.
 * [A192333](http://oeis.org/A192333) ([L07 program](A192333.asm)): Numbers that are "unsafe" when playing the game Dollar Nim, which is a Nim game where users can remove 1, 5, 10, or 25 cents from an initial pile of money. The most common version of the game is played with an initial amount of $1, hence the name.

@@ -190,6 +190,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316533](http://oeis.org/A316533) ([L24 program](A316533.asm)): a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
 * [A316571](http://oeis.org/A316571) ([L04 program](A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
 * [A316671](http://oeis.org/A316671) ([L10 program](A316671.asm)): Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
+* [A316725](http://oeis.org/A316725) ([L22 program](A316725.asm)): Generalized 27-gonal (or icosiheptagonal) numbers: m*(25*m - 23)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A316742](http://oeis.org/A316742) ([L11 program](A316742.asm)): Stepping through the Mersenne sequence (A000225) one step back, two steps forward.
 * [A316966](http://oeis.org/A316966) ([L08 program](A316966.asm)): Same as A316671, except numbering of the squares starts at 0 rather than 1.
 * [A317095](http://oeis.org/A317095) ([L05 program](A317095.asm)): a(n) = 40*n.

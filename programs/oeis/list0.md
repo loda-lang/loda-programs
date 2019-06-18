@@ -548,6 +548,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008606](http://oeis.org/A008606) ([L04 program](A008606.asm)): Multiples of 24.
 * [A008607](http://oeis.org/A008607) ([L04 program](A008607.asm)): Multiples of 25.
 * [A008611](http://oeis.org/A008611) ([L06 program](A008611.asm)): a(n) = a(n-3) + 1, with a(0)=a(2)=1, a(1)=0.
+* [A008612](http://oeis.org/A008612) ([L23 program](A008612.asm)): Molien series of 2-dimensional representation of SL(2,3).
 * [A008615](http://oeis.org/A008615) ([L10 program](A008615.asm)): a(n) = floor(n/2) - floor(n/3).
 * [A008616](http://oeis.org/A008616) ([L21 program](A008616.asm)): Expansion of 1/((1-x^2)(1-x^5)).
 * [A008619](http://oeis.org/A008619) ([L05 program](A008619.asm)): Positive integers repeated.
@@ -1914,6 +1915,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040342](http://oeis.org/A040342) ([L06 program](A040342.asm)): Continued fraction for sqrt(362).
 * [A040360](http://oeis.org/A040360) ([L23 program](A040360.asm)): Continued fraction for sqrt(380).
 * [A040380](http://oeis.org/A040380) ([L07 program](A040380.asm)): Continued fraction for sqrt(401).
+* [A040381](http://oeis.org/A040381) ([L15 program](A040381.asm)): Continued fraction for sqrt(402).
 * [A040420](http://oeis.org/A040420) ([L06 program](A040420.asm)): Continued fraction for sqrt(442).
 * [A040462](http://oeis.org/A040462) ([L06 program](A040462.asm)): Continued fraction for sqrt(485).
 * [A040483](http://oeis.org/A040483) ([L17 program](A040483.asm)): Continued fraction for sqrt(506).
@@ -3026,6 +3028,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063121](http://oeis.org/A063121) ([L17 program](A063121.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 53 ).
 * [A063122](http://oeis.org/A063122) ([L07 program](A063122.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 54 ).
 * [A063125](http://oeis.org/A063125) ([L16 program](A063125.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 57 ).
+* [A063126](http://oeis.org/A063126) ([L25 program](A063126.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 58 ).
 * [A063128](http://oeis.org/A063128) ([L09 program](A063128.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 60 ).
 * [A063130](http://oeis.org/A063130) ([L07 program](A063130.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 62 ).
 * [A063133](http://oeis.org/A063133) ([L11 program](A063133.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 65 ).
@@ -3303,6 +3306,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073080](http://oeis.org/A073080) ([L06 program](A073080.asm)): 3 appears three times, 2*3=6 appears six times, 2*6=12 appears twelve times etc.
 * [A073188](http://oeis.org/A073188) ([L08 program](A073188.asm)): n appears 1+[n/3] times.
 * [A073357](http://oeis.org/A073357) ([L09 program](A073357.asm)): Binomial transform of tribonacci numbers.
+* [A073388](http://oeis.org/A073388) ([L15 program](A073388.asm)): Convolution of A002605(n) (generalized (2,2)-Fibonacci), n >= 0, with itself.
 * [A073423](http://oeis.org/A073423) ([L08 program](A073423.asm)): Sums of two powers of zero: triangle read by rows: T(m,n) = 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n
 * [A073424](http://oeis.org/A073424) ([L06 program](A073424.asm)): Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.
 * [A073548](http://oeis.org/A073548) ([L15 program](A073548.asm)): Number of Fibonacci numbers F(k), k <= 10^n, which end in 2.
@@ -3319,6 +3323,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073760](http://oeis.org/A073760) ([L04 program](A073760.asm)): Integers m such that A073758(m) = 4.
 * [A073762](http://oeis.org/A073762) ([L06 program](A073762.asm)): a(n) = 24*n - 12.
 * [A073763](http://oeis.org/A073763) ([L15 program](A073763.asm)): Least number of unrelated set belonging to these numbers is odd.
+* [A073773](http://oeis.org/A073773) ([L16 program](A073773.asm)): Number of plane binary trees of size n+2 and height n.
 * [A074066](http://oeis.org/A074066) ([L09 program](A074066.asm)): Zigzag modulo 3.
 * [A074148](http://oeis.org/A074148) ([L07 program](A074148.asm)): a(n) = n + floor(n^2/2).
 * [A074150](http://oeis.org/A074150) ([L06 program](A074150.asm)): Duplicate of A061925.
