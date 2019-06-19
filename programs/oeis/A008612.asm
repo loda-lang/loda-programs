@@ -18,9 +18,6 @@ lpb $2,1
     sub $1,$5
   lpe
   sub $1,$5
-  lpb $0,1
-    sub $2,1
-  lpe
   sub $2,1
   sub $2,$5
 lpe
