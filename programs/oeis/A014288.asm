@@ -3,9 +3,6 @@
 
 mov $2,$0
 lpb $2,1
-  lpb $1,1
-    sub $1,$1
-  lpe
   mov $0,$2
   mov $1,1
   lpb $0,1

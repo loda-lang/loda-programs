@@ -398,6 +398,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A113541](http://oeis.org/A113541) ([L10 program](A113541.asm)): Numbers n such that 18n^2+1 is multiple of 19.
 * [A113655](http://oeis.org/A113655) ([L08 program](A113655.asm)): Invert blocks of three in the sequence of natural numbers.
 * [A113742](http://oeis.org/A113742) ([L18 program](A113742.asm)): Generalized Mancala solitaire (A002491); to get n-th term, start with n and successively round up to next 5 multiples of n-1, n-2, ..., 1, for n>=1.
+* [A113744](http://oeis.org/A113744) ([L13 program](A113744.asm)): Generalized Mancala solitaire (A002491); to get n-th term, start with n and successively round up to next 7 multiples of n-1, n-2, ..., 1, for n>=1.
 * [A113754](http://oeis.org/A113754) ([L14 program](A113754.asm)): Number of possible squares on an n^2 X n^2 grid.
 * [A113763](http://oeis.org/A113763) ([L06 program](A113763.asm)): Non-multiples of 13, or numbers not divisible by 13.
 * [A113770](http://oeis.org/A113770) ([L07 program](A113770.asm)): Partial sums of A113311(n)^2.
@@ -1416,6 +1417,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144449](http://oeis.org/A144449) ([L15 program](A144449.asm)): a(n) = 36*n^2 + 60*n + 16.
 * [A144459](http://oeis.org/A144459) ([L10 program](A144459.asm)): a(n) = (3*n+1)*(5*n+1).
 * [A144468](http://oeis.org/A144468) ([L11 program](A144468.asm)): Final digit of multiples of 7.
+* [A144479](http://oeis.org/A144479) ([L10 program](A144479.asm)): a(0)=1, a(1)=3, a(n) = 8*a(n-1) - a(n-2).
+* [A144532](http://oeis.org/A144532) ([L20 program](A144532.asm)): Continued fraction for sqrt(8/9).
 * [A144555](http://oeis.org/A144555) ([L07 program](A144555.asm)): a(n) = 14*n^2.
 * [A144560](http://oeis.org/A144560) ([L06 program](A144560.asm)): Ten times hexagonal numbers: 10*n*(2*n-1).
 * [A144595](http://oeis.org/A144595) ([L14 program](A144595.asm)): Christoffel word of slope 4/7.
