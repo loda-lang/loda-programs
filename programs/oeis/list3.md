@@ -135,6 +135,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306672](http://oeis.org/A306672) ([L15 program](A306672.asm)): Partial sums of the even Lucas numbers (A014448).
 * [A306696](http://oeis.org/A306696) ([L11 program](A306696.asm)): Lexicographically earliest sequence of nonnegative terms such that for any n > 0 and k > 0, if a(n) >= a(n+k), then a(n+2*k) <> a(n+k).
 * [A306771](http://oeis.org/A306771) ([L09 program](A306771.asm)): Numbers m such that phi(m) = phi(i + j) = phi(i) + phi(j) and phi(m) = phi(k * l) = phi(k) * phi(l) for some i, j, k, l, where phi is the Euler totient function A000010.
+* [A307018](http://oeis.org/A307018) ([L11 program](A307018.asm)): Total number of parts of size 3 in the partitions of n into parts of size 2 and 3.
 * [A307136](http://oeis.org/A307136) ([L14 program](A307136.asm)): a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
 * [A307559](http://oeis.org/A307559) ([L12 program](A307559.asm)): a(n) = floor(n/3)*(n - floor(n/3))*(n - floor(n/3) - 1).
 * [A307702](http://oeis.org/A307702) ([L14 program](A307702.asm)): Clique covering number of the n-Sierpinski tetrahedron graph.
@@ -206,6 +207,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317312](http://oeis.org/A317312) ([L16 program](A317312.asm)): Multiples of 12 and odd numbers interleaved.
 * [A317314](http://oeis.org/A317314) ([L16 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
 * [A317317](http://oeis.org/A317317) ([L20 program](A317317.asm)): Multiples of 17 and odd numbers interleaved.
+* [A317324](http://oeis.org/A317324) ([L16 program](A317324.asm)): Multiples of 24 and odd numbers interleaved.
 * [A317404](http://oeis.org/A317404) ([L07 program](A317404.asm)): a(n) = 3*n*(2^n - 1).
 * [A317405](http://oeis.org/A317405) ([L08 program](A317405.asm)): a(n) = n * A001353(n).
 * [A317408](http://oeis.org/A317408) ([L06 program](A317408.asm)): a(n) = n * Fibonacci(2n).
