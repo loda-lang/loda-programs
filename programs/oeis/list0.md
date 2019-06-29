@@ -108,6 +108,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001526](http://oeis.org/A001526) ([L19 program](A001526.asm)): (7n+1)(7n+6).
 * [A001533](http://oeis.org/A001533) ([L23 program](A001533.asm)): (8n+1)(8n+7).
 * [A001534](http://oeis.org/A001534) ([L15 program](A001534.asm)): (9n+1)(9n+8).
+* [A001535](http://oeis.org/A001535) ([L23 program](A001535.asm)): (10n+1)(10n+9).
 * [A001539](http://oeis.org/A001539) ([L09 program](A001539.asm)): a(n) = (4*n+1)*(4*n+3).
 * [A001541](http://oeis.org/A001541) ([L11 program](A001541.asm)): a(0) = 1, a(1) = 3; for n > 1, a(n) = 6*a(n-1) - a(n-2).
 * [A001542](http://oeis.org/A001542) ([L09 program](A001542.asm)): a(n) = 6*a(n-1) - a(n-2) for n > 1, a(0)=0 and a(1)=2.
@@ -1168,6 +1169,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021433](http://oeis.org/A021433) ([L10 program](A021433.asm)): Decimal expansion of 1/429.
 * [A021444](http://oeis.org/A021444) ([L11 program](A021444.asm)): Decimal expansion of 1/440.
 * [A021448](http://oeis.org/A021448) ([L19 program](A021448.asm)): Decimal expansion of 1/444.
+* [A021472](http://oeis.org/A021472) ([L17 program](A021472.asm)): Decimal expansion of 1/468.
 * [A021499](http://oeis.org/A021499) ([L05 program](A021499.asm)): Decimal expansion of 1/495.
 * [A021509](http://oeis.org/A021509) ([L12 program](A021509.asm)): Decimal expansion of 1/505.
 * [A021546](http://oeis.org/A021546) ([L17 program](A021546.asm)): Decimal expansion of 1/542.
