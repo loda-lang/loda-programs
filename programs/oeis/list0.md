@@ -233,6 +233,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A003469](http://oeis.org/A003469) ([L10 program](A003469.asm)): Number of minimal covers of an (n + 1)-set by a collection of n nonempty subsets, a(n) = A035348(n,n-1).
 * [A003480](http://oeis.org/A003480) ([L11 program](A003480.asm)): a(n) = 4a(n-1) - 2a(n-2) (n >= 3).
 * [A003481](http://oeis.org/A003481) ([L08 program](A003481.asm)): a(n) = 7*a(n-1) - a(n-2) + 5.
+* [A003482](http://oeis.org/A003482) ([L10 program](A003482.asm)): a(n) = 7*a(n-1) - a(n-2) + 4, with a(0) = 0, a(1) = 5.
 * [A003485](http://oeis.org/A003485) ([L16 program](A003485.asm)): Hurwitz-Radon function at powers of 2.
 * [A003486](http://oeis.org/A003486) ([L15 program](A003486.asm)): a(n) = (n^2 + 1)*3^n.
 * [A003499](http://oeis.org/A003499) ([L08 program](A003499.asm)): a(0) = 2, a(1) = 6; for n >= 2, a(n) = 6*a(n-1) - a(n-2).
@@ -3330,6 +3331,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073080](http://oeis.org/A073080) ([L06 program](A073080.asm)): 3 appears three times, 2*3=6 appears six times, 2*6=12 appears twelve times etc.
 * [A073188](http://oeis.org/A073188) ([L08 program](A073188.asm)): n appears 1+[n/3] times.
 * [A073357](http://oeis.org/A073357) ([L09 program](A073357.asm)): Binomial transform of tribonacci numbers.
+* [A073359](http://oeis.org/A073359) ([L12 program](A073359.asm)): Nested floor product of n and fractions (2k+2)/(2k+1) for all k>=0, divided by 2.
 * [A073388](http://oeis.org/A073388) ([L15 program](A073388.asm)): Convolution of A002605(n) (generalized (2,2)-Fibonacci), n >= 0, with itself.
 * [A073423](http://oeis.org/A073423) ([L08 program](A073423.asm)): Sums of two powers of zero: triangle read by rows: T(m,n) = 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n
 * [A073424](http://oeis.org/A073424) ([L06 program](A073424.asm)): Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.
@@ -3515,6 +3517,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080663](http://oeis.org/A080663) ([L07 program](A080663.asm)): Numbers of the form 3*n^2 - 1.
 * [A080674](http://oeis.org/A080674) ([L06 program](A080674.asm)): a(n) = (4/3)*(4^n - 1).
 * [A080675](http://oeis.org/A080675) ([L07 program](A080675.asm)): a(n) = (5*4^n - 8)/6.
+* [A080676](http://oeis.org/A080676) ([L14 program](A080676.asm)): a(1) = 1; for n>1, a(n) is the smallest number > a(n-1) such that the first n terms of the sequence contain a total of a(n) digits.
 * [A080734](http://oeis.org/A080734) ([L16 program](A080734.asm)): a(1)=1, then a(n)=a(n-1)+2 if the final decimal digit of a(n) is 0, a(n)=a(n-1)+3 otherwise.
 * [A080750](http://oeis.org/A080750) ([L11 program](A080750.asm)): a(n) = largest number greater than a(n-1) such that the first n terms of the sequence contain a total of a(n) base-10 digits.
 * [A080782](http://oeis.org/A080782) ([L07 program](A080782.asm)): a(1)=1, a(n)=a(n-1)-1 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
@@ -3920,6 +3923,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A090288](http://oeis.org/A090288) ([L07 program](A090288.asm)): a(n) = 2*n^2 + 6*n + 2.
 * [A090294](http://oeis.org/A090294) ([L19 program](A090294.asm)): a(n) = K_3(n) = Sum_{k>=0} A090285(3,k)*2^k*binomial(n,k). a(n) = (4*n^3+30*n^2+56*n+15)/3.
 * [A090328](http://oeis.org/A090328) ([L12 program](A090328.asm)): Number of rules of a context-free grammar in Chomsky normal form that generates all permutations of n symbols.
+* [A090381](http://oeis.org/A090381) ([L22 program](A090381.asm)): Expansion of (1+4x+7x^2)/((1-x)^2*(1-x^2)).
 * [A090461](http://oeis.org/A090461) ([L21 program](A090461.asm)): Numbers n such that there is a permutation of the numbers 1 to n such that the sum of adjacent numbers is a square.
 * [A090570](http://oeis.org/A090570) ([L06 program](A090570.asm)): Numbers that are congruent to {0, 1} mod 9.
 * [A090638](http://oeis.org/A090638) ([L19 program](A090638.asm)): Duplicate of A073869.

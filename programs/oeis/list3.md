@@ -14,6 +14,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300404](http://oeis.org/A300404) ([L05 program](A300404.asm)): Smallest integer k such that the largest term in the Goodstein sequence starting at k is > n.
 * [A300576](http://oeis.org/A300576) ([L04 program](A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300659](http://oeis.org/A300659) ([L09 program](A300659.asm)): Product of digits of n!.
+* [A301291](http://oeis.org/A301291) ([L21 program](A301291.asm)): Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
 * [A301292](http://oeis.org/A301292) ([L09 program](A301292.asm)): Partial sums of A301291.
 * [A301293](http://oeis.org/A301293) ([L15 program](A301293.asm)): Expansion of (x^2+x+1)^2 / ((x^2+1)*(x-1)^2).
 * [A301298](http://oeis.org/A301298) ([L09 program](A301298.asm)): Expansion of (1 + 4*x + 4*x^2 + 4*x^3 + x^4)/((1 - x)*(1 - x^3)).

@@ -177,6 +177,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104661](http://oeis.org/A104661) ([L02 program](A104661.asm)): Duplicate of A020725.
 * [A104675](http://oeis.org/A104675) ([L06 program](A104675.asm)): a(n) = C(n+1,n) * C(n+6,1).
 * [A104721](http://oeis.org/A104721) ([L20 program](A104721.asm)): Expansion of (1+x)^2/(1-4x^2).
+* [A104738](http://oeis.org/A104738) ([L12 program](A104738.asm)): Positions of records in A104706.
 * [A104743](http://oeis.org/A104743) ([L11 program](A104743.asm)): Numbers m = n + 3^n such that the equation x = 3^(m-x) has solution x = 3^n.
 * [A104747](http://oeis.org/A104747) ([L09 program](A104747.asm)): a(n) = (n-3)*2^n + n*(n+3)/2 + 3.
 * [A104891](http://oeis.org/A104891) ([L08 program](A104891.asm)): a(0) = 0; a(n) = 5*a(n-1) + 5.
@@ -1732,6 +1733,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157502](http://oeis.org/A157502) ([L10 program](A157502.asm)): Even numbers without the squares.
 * [A157514](http://oeis.org/A157514) ([L19 program](A157514.asm)): a(n) = 25*n^2 - n.
 * [A157532](http://oeis.org/A157532) ([L03 program](A157532.asm)): a(1) = 2; for n > 1, a(n) = 3.
+* [A157639](http://oeis.org/A157639) ([L28 program](A157639.asm)): Least number of lattice points from which every point of a square n x n lattice is visible.
 * [A157671](http://oeis.org/A157671) ([L14 program](A157671.asm)): Numbers whose ternary representation begins with 2.
 * [A157681](http://oeis.org/A157681) ([L13 program](A157681.asm)): Fibonacci sequence beginning 29, 31.
 * [A157716](http://oeis.org/A157716) ([L10 program](A157716.asm)): One-eighth of triangular numbers (integers only).
@@ -1843,6 +1845,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158686](http://oeis.org/A158686) ([L10 program](A158686.asm)): 64n^2 + 1.
 * [A158689](http://oeis.org/A158689) ([L21 program](A158689.asm)): a(n) = 66*n^2 + 1.
 * [A158734](http://oeis.org/A158734) ([L17 program](A158734.asm)): a(n) = 70*n^2 + 1.
+* [A158738](http://oeis.org/A158738) ([L14 program](A158738.asm)): a(n) = 72*n^2 - 1.
 * [A158740](http://oeis.org/A158740) ([L17 program](A158740.asm)): a(n) = 72*n^2 + 1.
 * [A158772](http://oeis.org/A158772) ([L15 program](A158772.asm)): a(n) = A138635(n+18)-A138635(n).
 * [A158774](http://oeis.org/A158774) ([L20 program](A158774.asm)): a(n) = 80*n^2 - 1.
@@ -2910,8 +2913,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183860](http://oeis.org/A183860) ([L17 program](A183860.asm)): n+floor(sqrt(3n+1)); complement of A183861.
 * [A183861](http://oeis.org/A183861) ([L10 program](A183861.asm)): n-1+ceiling((-1+n^2)/3); complement of A183860.
 * [A183863](http://oeis.org/A183863) ([L07 program](A183863.asm)): n-1+ceiling((2/5)(-1/2+n^2)); complement of A183862.
+* [A183864](http://oeis.org/A183864) ([L16 program](A183864.asm)): n+floor(sqrt(5*n/3)); complement of A183865.
 * [A183865](http://oeis.org/A183865) ([L17 program](A183865.asm)): n-1+ceiling(3(n+2)/5); complement of A183864.
 * [A183867](http://oeis.org/A183867) ([L13 program](A183867.asm)): a(n) = n + floor(2*sqrt(n)); complement of A184676.
+* [A183868](http://oeis.org/A183868) ([L15 program](A183868.asm)): a(n) = n + floor(2*sqrt(n+1)); complement of A079524.
 * [A183897](http://oeis.org/A183897) ([L15 program](A183897.asm)): Number of nondecreasing arrangements of n+3 numbers in 0..2 with each number being the sum mod 3 of three others.
 * [A183905](http://oeis.org/A183905) ([L07 program](A183905.asm)): Number of nondecreasing arrangements of n+2 numbers in 0..2 with each number being the sum mod 3 of two others.
 * [A183918](http://oeis.org/A183918) ([L05 program](A183918.asm)): Characteristic sequence for cos(2Pi/n) being rational.
@@ -3105,6 +3110,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190876](http://oeis.org/A190876) ([L14 program](A190876.asm)): Numbers 1 through 8 together with numbers congruent to 9 mod 10.
 * [A190949](http://oeis.org/A190949) ([L18 program](A190949.asm)): Odd Fibonacci numbers with odd index.
 * [A190973](http://oeis.org/A190973) ([L09 program](A190973.asm)): a(n) = 7*a(n-1) - 4*a(n-2), with a(0)=0, a(1)=1.
+* [A190975](http://oeis.org/A190975) ([L14 program](A190975.asm)): a(n) = 8*a(n-1) - 2*a(n-2), with a(0)=0, a(1)=1.
 * [A190981](http://oeis.org/A190981) ([L10 program](A190981.asm)): a(n) = 9*a(n-1) - 4*a(n-2), with a(0)=0, a(1)=1.
 * [A190990](http://oeis.org/A190990) ([L12 program](A190990.asm)): a(n) = 10*a(n-1) - 8*a(n-2), with a(0)=0, a(1)=1.
 * [A190991](http://oeis.org/A190991) ([L05 program](A190991.asm)): a(n) = 13*n + 1.

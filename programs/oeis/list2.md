@@ -38,6 +38,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A202803](http://oeis.org/A202803) ([L06 program](A202803.asm)): a(n) = n*(5*n+1).
 * [A202804](http://oeis.org/A202804) ([L06 program](A202804.asm)): a(n) = n*(6*n+4).
 * [A203016](http://oeis.org/A203016) ([L14 program](A203016.asm)): Numbers congruent to {1, 2, 3, 4} mod 6, multiplied by 3.
+* [A203150](http://oeis.org/A203150) ([L15 program](A203150.asm)): (n-1)-st elementary symmetric function of the first n terms of (1,2,1,2,1,2,1,2,1,2,...)=A000034.
 * [A203241](http://oeis.org/A203241) ([L09 program](A203241.asm)): Second elementary symmetric function of the first n terms of (1,2,4,8,...).
 * [A203551](http://oeis.org/A203551) ([L08 program](A203551.asm)): a(n) = n*(5n^2 + 3n + 4) / 6.
 * [A203552](http://oeis.org/A203552) ([L08 program](A203552.asm)): a(n) = n*(5*n^2 - 3*n + 4) / 6.
@@ -147,6 +148,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210678](http://oeis.org/A210678) ([L11 program](A210678.asm)): a(n)=a(n-1)+a(n-2)+n+2, a(0)=a(1)=1.
 * [A210695](http://oeis.org/A210695) ([L20 program](A210695.asm)): a(n) = 6*a(n-1) - a(n-2) + 6 with n>1, a(0)=0, a(1)=1.
 * [A210709](http://oeis.org/A210709) ([L14 program](A210709.asm)): Number of trivalent connected simple graphs with 2n nodes and girth at least 9.
+* [A210728](http://oeis.org/A210728) ([L12 program](A210728.asm)): a(n) = a(n-1) + a(n-2) + n + 2 with n>1, a(0)=1, a(1)=2.
 * [A210730](http://oeis.org/A210730) ([L12 program](A210730.asm)): a(n) = a(n-1) + a(n-2) + n + 2 with n>1, a(0)=a(1)=0.
 * [A210731](http://oeis.org/A210731) ([L09 program](A210731.asm)): a(n) = a(n-1)+a(n-2)+n+3 with n>1, a(0) = a(1) = 0.
 * [A210977](http://oeis.org/A210977) ([L07 program](A210977.asm)): A005475 and positive terms of A000566 interleaved.
@@ -530,6 +532,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229183](http://oeis.org/A229183) ([L07 program](A229183.asm)): a(n) = n*(n^2 + 3)/2.
 * [A229277](http://oeis.org/A229277) ([L08 program](A229277.asm)): Number of ascending runs in {1,...,3}^n.
 * [A229279](http://oeis.org/A229279) ([L13 program](A229279.asm)): Number of ascending runs in {1,...,5}^n.
+* [A229283](http://oeis.org/A229283) ([L14 program](A229283.asm)): Number of ascending runs in {1,...,9}^n.
 * [A229439](http://oeis.org/A229439) ([L09 program](A229439.asm)): Number of n X 2 0..2 arrays with horizontal differences mod 3 never 1, vertical differences mod 3 never -1, and rows and columns lexicographically nondecreasing.
 * [A229446](http://oeis.org/A229446) ([L09 program](A229446.asm)): Number of 3 X n 0..2 arrays with horizontal differences mod 3 never 1, vertical differences mod 3 never -1, and rows and columns lexicographically nondecreasing.
 * [A229472](http://oeis.org/A229472) ([L11 program](A229472.asm)): Number of defective 4-colorings of an n X 1 0..3 array connected horizontally, antidiagonally and vertically with exactly one mistake, and colors introduced in row-major 0..3 order.
@@ -1027,7 +1030,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261491](http://oeis.org/A261491) ([L15 program](A261491.asm)): a(n) = ceiling(2 + sqrt(8*n-4)).
 * [A261521](http://oeis.org/A261521) ([L15 program](A261521.asm)): a(n) =  n^2 + 2*n + 29.
 * [A261557](http://oeis.org/A261557) ([L09 program](A261557.asm)): a(0) = a(1) = 0; for n>1, a(n) = 2*n - a(n-1) - a(n-2).
-* [A261585](http://oeis.org/A261585) ([L16 program](A261585.asm)): Number of sexagesimal digits of Fibonacci numbers in base 60 representation.
+* [A261585](http://oeis.org/A261585) ([L16 program](A261585.asm)): Number of sexagesimal digits of Fibonacci numbers in base-60 representation.
 * [A261693](http://oeis.org/A261693) ([L15 program](A261693.asm)): Triangle read by rows: T(n,k), n>=1, 1<=k<=2^(n-1), in which row n lists the first 2n - 1 odd numbers in decreasing order starting with 2^n - 1, with T(0,1) = 0.
 * [A261723](http://oeis.org/A261723) ([L09 program](A261723.asm)): Interleave 2^n + 2 and 2^n + 1.
 * [A261893](http://oeis.org/A261893) ([L11 program](A261893.asm)): a(n) = (n+1)^3 - n^2.
@@ -1084,6 +1087,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A265283](http://oeis.org/A265283) ([L09 program](A265283.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 94" elementary cellular automaton starting with a single ON (black) cell.
 * [A265284](http://oeis.org/A265284) ([L08 program](A265284.asm)): Total number of ON (black) cells after n iterations of the "Rule 94" elementary cellular automaton starting with a single ON (black) cell.
 * [A265382](http://oeis.org/A265382) ([L11 program](A265382.asm)): Total number of ON (black) cells after n iterations of the "Rule 158" elementary cellular automaton starting with a single ON (black) cell.
+* [A265413](http://oeis.org/A265413) ([L18 program](A265413.asm)): Positions of records in A265410: a(0) = 1; for n >= 1, a(n) = 1 + A265412(n-1).
 * [A265428](http://oeis.org/A265428) ([L11 program](A265428.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 188" elementary cellular automaton starting with a single ON (black) cell.
 * [A265429](http://oeis.org/A265429) ([L10 program](A265429.asm)): Total number of ON (black) cells after n iterations of the "Rule 188" elementary cellular automaton starting with a single ON (black) cell.
 * [A265430](http://oeis.org/A265430) ([L13 program](A265430.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 188" elementary cellular automaton starting with a single ON (black) cell.
@@ -1240,6 +1244,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268744](http://oeis.org/A268744) ([L13 program](A268744.asm)): Number of n X 2 binary arrays with some element plus some horizontally or vertically adjacent neighbor totalling two no more than once.
 * [A268775](http://oeis.org/A268775) ([L17 program](A268775.asm)): Number of n X 2 binary arrays with some element plus some horizontally, vertically, diagonally or antidiagonally adjacent neighbor totalling two no more than once.
 * [A268810](http://oeis.org/A268810) ([L12 program](A268810.asm)): a(n) = 2*floor(3*n*(n+1)/4).
+* [A268896](http://oeis.org/A268896) ([L12 program](A268896.asm)): Start at a(0)=1. a(n) = a(n-1)+2 if n == 1,2 (mod 3) and a(n)=a(n-1)+a(n-3) if n == 0 (mod 3).
 * [A268898](http://oeis.org/A268898) ([L10 program](A268898.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two exactly once.
 * [A268965](http://oeis.org/A268965) ([L18 program](A268965.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two not more than once.
 * [A269024](http://oeis.org/A269024) ([L12 program](A269024.asm)): a(n) = A269020(n) - n.
@@ -1545,6 +1550,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286809](http://oeis.org/A286809) ([L12 program](A286809.asm)): Positions of 1 in A286807; complement of A286808.
 * [A286810](http://oeis.org/A286810) ([L13 program](A286810.asm)): Number of non-attacking bishop positions on a cylindrical 2 X 2n chessboard.
 * [A286814](http://oeis.org/A286814) ([L18 program](A286814.asm)): Number of matchings in the n-helm graph.
+* [A286986](http://oeis.org/A286986) ([L18 program](A286986.asm)): Number of connected dominating sets in the n-antiprism graph.
 * [A287057](http://oeis.org/A287057) ([L15 program](A287057.asm)): a(n) = 2*n^2 + n - (n+1) mod 2.
 * [A287272](http://oeis.org/A287272) ([L06 program](A287272.asm)): a(n) is the number of zeros of the Laguerre L(n, x) polynomial in the open interval (-1, +1).
 * [A287335](http://oeis.org/A287335) ([L11 program](A287335.asm)): Nonnegative numbers k such that 3*k + 2 is a cube.
@@ -1705,6 +1711,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A295906](http://oeis.org/A295906) ([L08 program](A295906.asm)): Number of (not necessarily maximum) cliques in the n X n king graph.
 * [A295911](http://oeis.org/A295911) ([L12 program](A295911.asm)): Number of (not necessarily minimum) cliques in the n-Hanoi graph.
 * [A295921](http://oeis.org/A295921) ([L31 program](A295921.asm)): Number of (not necessarily maximum) cliques in the n-folded cube graph.
+* [A295926](http://oeis.org/A295926) ([L22 program](A295926.asm)): Number of (not necessarily maximum) cliques in the n-cube-connected cycle graph.
 * [A295933](http://oeis.org/A295933) ([L13 program](A295933.asm)): Number of (not necessarily maximum) cliques in the n-Sierpinski sieve graph.
 * [A296065](http://oeis.org/A296065) ([L06 program](A296065.asm)): Partial sums of A296064.
 * [A296066](http://oeis.org/A296066) ([L06 program](A296066.asm)): a(n) = A296065(n)/n.
