@@ -680,6 +680,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125201](http://oeis.org/A125201) ([L10 program](A125201.asm)): a(n) = 8*n^2 - 7*n + 1.
 * [A125577](http://oeis.org/A125577) ([L08 program](A125577.asm)): a(0) = 1; for n >= 1, a(n) = n^2 - a(n-1).
 * [A125641](http://oeis.org/A125641) ([L12 program](A125641.asm)): Square of the modulus of the (3,1)-entry of the 3 X 3 matrix M^n, where M = [1,0,0; 1,1,0, 1,i,1].
+* [A125651](http://oeis.org/A125651) ([L15 program](A125651.asm)): Numbers k such that A125650(k) is a perfect square.
 * [A125682](http://oeis.org/A125682) ([L17 program](A125682.asm)): a(n) = (6^n-1)*3/5.
 * [A125687](http://oeis.org/A125687) ([L10 program](A125687.asm)): The base 6 numbers 4 44 444 4444 44444 ... converted to base 10.
 * [A125725](http://oeis.org/A125725) ([L12 program](A125725.asm)): Numbers whose base 7 representation is 222....2.
@@ -1109,6 +1110,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134351](http://oeis.org/A134351) ([L07 program](A134351.asm)): Binomial transform of [1, 5, -1, 5, -1, 5, ...]. Inverse binomial transform of A134350.
 * [A134353](http://oeis.org/A134353) ([L16 program](A134353.asm)): Row sums of triangle A134352.
 * [A134401](http://oeis.org/A134401) ([L07 program](A134401.asm)): Row sums of triangle A134400.
+* [A134421](http://oeis.org/A134421) ([L20 program](A134421.asm)): Partial sums of A134021.
 * [A134441](http://oeis.org/A134441) ([L10 program](A134441.asm)): Last two digits of primes of form 4n+1 (A002144), excluding 5. Leading 0's omitted.
 * [A134442](http://oeis.org/A134442) ([L17 program](A134442.asm)): Last two digits of primes of form 4n+3 (A002145). Leading 0's omitted.
 * [A134451](http://oeis.org/A134451) ([L04 program](A134451.asm)): Ternary digital root of n.
