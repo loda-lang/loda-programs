@@ -580,6 +580,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A232991](http://oeis.org/A232991) ([L31 program](A232991.asm)): Period 6: repeat [1, 0, 0, 0, 1, 0].
 * [A233035](http://oeis.org/A233035) ([L07 program](A233035.asm)): a(n) = n * floor(n/4).
 * [A233036](http://oeis.org/A233036) ([L08 program](A233036.asm)): The maximum number of I-tetrominoes that can be packed into an n X n array of squares when rotation is allowed.
+* [A233083](http://oeis.org/A233083) ([L18 program](A233083.asm)): Number of 2 X n 0..3 arrays with no element x(i,j) adjacent to value 3-x(i,j) horizontally or antidiagonally, top left element zero, and 1 appearing before 2 in row major order.
 * [A233325](http://oeis.org/A233325) ([L14 program](A233325.asm)): (2*6^(n+1) - 7) / 5.
 * [A233326](http://oeis.org/A233326) ([L14 program](A233326.asm)): (7^(n+1) - 4) / 3.
 * [A233328](http://oeis.org/A233328) ([L14 program](A233328.asm)): (2*8^(n+1) - 9) / 7.
@@ -897,6 +898,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253903](http://oeis.org/A253903) ([L17 program](A253903.asm)): The characteristic function of square pyramidal numbers.
 * [A253909](http://oeis.org/A253909) ([L07 program](A253909.asm)): 1 together with the positive squares.
 * [A254006](http://oeis.org/A254006) ([L12 program](A254006.asm)): a(0) = 1, a(n) = 3*a(n-2) if n mod 2 = 0, otherwise a(n) = 0.
+* [A254028](http://oeis.org/A254028) ([L16 program](A254028.asm)): a(n) = 2^(n+1) + 3^n + 3.
 * [A254371](http://oeis.org/A254371) ([L15 program](A254371.asm)): Sum of cubes of the first n even numbers (A016743).
 * [A254398](http://oeis.org/A254398) ([L16 program](A254398.asm)): Final digits of A237424 in decimal representation.
 * [A254407](http://oeis.org/A254407) ([L07 program](A254407.asm)): a(n) = n*(n+1)*(11*n+10)/6.
