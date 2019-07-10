@@ -200,6 +200,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211669](http://oeis.org/A211669) ([L05 program](A211669.asm)): Number of iterations f(f(f(...(n)...))) such that the result is < 2, where f(x) = cube root of x.
 * [A211710](http://oeis.org/A211710) ([L18 program](A211710.asm)): Number of (n+1) X (n+1) -11..11 symmetric matrices with every 2 X 2 subblock having sum zero and two distinct values.
 * [A211715](http://oeis.org/A211715) ([L08 program](A211715.asm)): Number of (n+1) X (n+1) -11..11 symmetric matrices with every 2 X 2 subblock having sum zero and two or four distinct values.
+* [A211784](http://oeis.org/A211784) ([L15 program](A211784.asm)): n^2 + floor(n^2/2) + floor(n^2/3).
 * [A211813](http://oeis.org/A211813) ([L23 program](A211813.asm)): Number of (n+1) X (n+1) -10..10 symmetric matrices with every 2 X 2 subblock having sum zero and two distinct values.
 * [A211837](http://oeis.org/A211837) ([L20 program](A211837.asm)): Number of nonnegative integer arrays of length n+4 with new values 0 upwards introduced in order, no three adjacent elements equal, and containing the value n+1.
 * [A211866](http://oeis.org/A211866) ([L14 program](A211866.asm)): (9^n - 5) / 4.

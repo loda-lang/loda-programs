@@ -951,6 +951,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016897](http://oeis.org/A016897) ([L05 program](A016897.asm)): a(n) = 5n + 4.
 * [A016898](http://oeis.org/A016898) ([L12 program](A016898.asm)): a(n) = (5n + 4)^2.
 * [A016910](http://oeis.org/A016910) ([L09 program](A016910.asm)): a(n) = (6n)^2.
+* [A016911](http://oeis.org/A016911) ([L16 program](A016911.asm)): a(n) = (6*n)^3.
 * [A016921](http://oeis.org/A016921) ([L05 program](A016921.asm)): a(n) = 6n + 1.
 * [A016922](http://oeis.org/A016922) ([L10 program](A016922.asm)): (6n+1)^2.
 * [A016933](http://oeis.org/A016933) ([L05 program](A016933.asm)): a(n) = 6n + 2.
@@ -1954,6 +1955,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040756](http://oeis.org/A040756) ([L08 program](A040756.asm)): Continued fraction for sqrt(785).
 * [A040812](http://oeis.org/A040812) ([L12 program](A040812.asm)): Continued fraction for sqrt(842).
 * [A040870](http://oeis.org/A040870) ([L09 program](A040870.asm)): Continued fraction for sqrt(901).
+* [A040871](http://oeis.org/A040871) ([L22 program](A040871.asm)): Continued fraction for sqrt(902).
 * [A040930](http://oeis.org/A040930) ([L18 program](A040930.asm)): Continued fraction for sqrt(962).
 * [A042948](http://oeis.org/A042948) ([L06 program](A042948.asm)): Numbers congruent to 0 or 1 mod 4.
 * [A042950](http://oeis.org/A042950) ([L07 program](A042950.asm)): Row sums of the Lucas triangle A029635.
@@ -2240,6 +2242,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047439](http://oeis.org/A047439) ([L10 program](A047439.asm)): Numbers that are congruent to {0, 1, 5, 6} mod 8.
 * [A047440](http://oeis.org/A047440) ([L21 program](A047440.asm)): Numbers that are congruent to {2, 5, 6} mod 8.
 * [A047441](http://oeis.org/A047441) ([L10 program](A047441.asm)): Numbers that are congruent to {0, 2, 5, 6} mod 8.
+* [A047442](http://oeis.org/A047442) ([L15 program](A047442.asm)): Numbers that are congruent to {0, 1, 2, 5, 6} mod 8.
 * [A047443](http://oeis.org/A047443) ([L23 program](A047443.asm)): Numbers that are congruent to {3, 5, 6} mod 8.
 * [A047444](http://oeis.org/A047444) ([L17 program](A047444.asm)): Numbers that are congruent to {0, 3, 5, 6} mod 8.
 * [A047445](http://oeis.org/A047445) ([L10 program](A047445.asm)): Numbers that are congruent to {1, 3, 5, 6} mod 8.
@@ -2356,6 +2359,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047558](http://oeis.org/A047558) ([L15 program](A047558.asm)): Numbers that are congruent to {1, 3, 6, 7} mod 8.
 * [A047559](http://oeis.org/A047559) ([L15 program](A047559.asm)): Numbers that are congruent to {0, 1, 3, 6, 7} mod 8.
 * [A047560](http://oeis.org/A047560) ([L13 program](A047560.asm)): Numbers that are congruent to {0, 2, 3, 6, 7} mod 8.
+* [A047561](http://oeis.org/A047561) ([L17 program](A047561.asm)): Numbers that are congruent to {1, 2, 3, 6, 7} mod 8.
 * [A047562](http://oeis.org/A047562) ([L06 program](A047562.asm)): Numbers that are congruent to {3, 4, 5, 6, 7} mod 8.
 * [A047563](http://oeis.org/A047563) ([L05 program](A047563.asm)): Numbers that are congruent to {0, 3, 4, 5, 6, 7} mod 8.
 * [A047564](http://oeis.org/A047564) ([L10 program](A047564.asm)): Numbers that are congruent to {1, 3, 4, 5, 6, 7} mod 8.
@@ -2659,6 +2663,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052951](http://oeis.org/A052951) ([L08 program](A052951.asm)): Expansion of (1 + x - 2x^2)/(1 - 2x)^2.
 * [A052953](http://oeis.org/A052953) ([L12 program](A052953.asm)): Expansion of 2*(1-x-x^2)/((x-1)(2x-1)(1+x)).
 * [A052955](http://oeis.org/A052955) ([L08 program](A052955.asm)): a(2n) = 2*2^n - 1, a(2n+1) = 3*2^n - 1.
+* [A052961](http://oeis.org/A052961) ([L17 program](A052961.asm)): Expansion of (1 - 3*x) / (1 - 5*x + 3*x^2).
 * [A052963](http://oeis.org/A052963) ([L13 program](A052963.asm)): a(0)=1, a(1)=2, a(2)=5, a(n) = 3*a(n+2) - a(n+3).
 * [A052968](http://oeis.org/A052968) ([L09 program](A052968.asm)): a(n) = 1 + 2^(n-1) + n for n > 0, a(0) = 2.
 * [A052980](http://oeis.org/A052980) ([L18 program](A052980.asm)): G.f.: (1-x)/(1-2*x-x^3).
@@ -2955,6 +2960,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060511](http://oeis.org/A060511) ([L06 program](A060511.asm)): Hexagonal excess: smallest amount by which n exceeds a hexagonal number (2k^2-k, A000384).
 * [A060544](http://oeis.org/A060544) ([L06 program](A060544.asm)): Centered 9-gonal (also known as nonagonal or enneagonal) numbers. Every third triangular number, starting with a(1)=1.
 * [A060546](http://oeis.org/A060546) ([L05 program](A060546.asm)): a(n) = 2^ceiling(n/2).
+* [A060548](http://oeis.org/A060548) ([L15 program](A060548.asm)): a(n) is the number of D3-symmetric patterns that may be formed with a top-down equilateral triangular arrangement of closely packed black and white cells satisfying the local matching rule of Pascal's triangle modulo 2, where n is the number of cells in each edge of the arrangement. The matching rule is such that any elementary top-down triangle of three neighboring cells in the arrangement contains either one or three white cells.
 * [A060576](http://oeis.org/A060576) ([L02 program](A060576.asm)): Number of homeomorphically irreducible general graphs on 1 labeled node and with n edges.
 * [A060577](http://oeis.org/A060577) ([L12 program](A060577.asm)): Number of homeomorphically irreducible general graphs on 2 labeled nodes and with n edges.
 * [A060584](http://oeis.org/A060584) ([L09 program](A060584.asm)): Compare ultimate and penultimate digits of n base 3, i.e., 0 if n mod 3 = floor(n/3) mod 3, 1 otherwise; also 0 if (n mod 9) is a multiple of 4, 1 otherwise.
@@ -3727,6 +3733,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083582](http://oeis.org/A083582) ([L13 program](A083582.asm)): a(n) = (8*2^n-5*(-1)^n)/3.
 * [A083583](http://oeis.org/A083583) ([L08 program](A083583.asm)): a(n) = (8*3^n - 5*0^n)/3.
 * [A083584](http://oeis.org/A083584) ([L07 program](A083584.asm)): a(n) = (8*4^n - 5)/3.
+* [A083585](http://oeis.org/A083585) ([L12 program](A083585.asm)): (8*5^n - 5*2^n)/3.
 * [A083595](http://oeis.org/A083595) ([L11 program](A083595.asm)): a(n) = (7*2^n - 4(-1)^n)/3.
 * [A083597](http://oeis.org/A083597) ([L07 program](A083597.asm)): a(n) = (7*4^n - 4)/3.
 * [A083652](http://oeis.org/A083652) ([L08 program](A083652.asm)): Sum of lengths of binary expansions of 0 through n.
