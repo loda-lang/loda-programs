@@ -298,3 +298,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325413](http://oeis.org/A325413) ([L14 program](A325413.asm)): Largest sum of the omega-sequence of an integer partition of n.
 * [A325657](http://oeis.org/A325657) ([L12 program](A325657.asm)): a(n) = (1/2)*(-1 + (-1)^n)*(n-1) + n^2.
 * [A326178](http://oeis.org/A326178) ([L05 program](A326178.asm)): Number of subsets of {1..n} whose product is equal to their sum.
+* [A326494](http://oeis.org/A326494) ([L21 program](A326494.asm)): Number of subsets of {1..n} containing all differences and quotients of pairs of distinct elements.

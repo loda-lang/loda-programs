@@ -1226,6 +1226,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A137325](http://oeis.org/A137325) ([L18 program](A137325.asm)): Number of terms in the Janet periodic table of the elements 32 columns: ordered 14 2's, 10 4's, 6 6's, 2 8's.
 * [A137397](http://oeis.org/A137397) ([L09 program](A137397.asm)): Number of distinct palindromic subwords in the binary representation of n.
 * [A137483](http://oeis.org/A137483) ([L15 program](A137483.asm)): a(n+1) = 9*a(n) - 6, a(0) = 2.
+* [A137495](http://oeis.org/A137495) ([L16 program](A137495.asm)): A098601(2n)+A098601(2n+1)
 * [A137531](http://oeis.org/A137531) ([L10 program](A137531.asm)): a(n) = 3*a(n-1) - 2*a(n-2) + a(n-3).
 * [A137688](http://oeis.org/A137688) ([L07 program](A137688.asm)): 2^A003056: 2^n appears n+1 times.
 * [A137719](http://oeis.org/A137719) ([L11 program](A137719.asm)): Sequence based on the pattern [3n, 3n, 3n, 3n+2, 3n+1, 3n+2].
@@ -2239,6 +2240,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168235](http://oeis.org/A168235) ([L11 program](A168235.asm)): 1+5*n+7*n^2.
 * [A168236](http://oeis.org/A168236) ([L06 program](A168236.asm)): a(n) = (6*n - 3*(-1)^n - 1)/4.
 * [A168237](http://oeis.org/A168237) ([L04 program](A168237.asm)): a(n) = (6*n + 3*(-1)^n - 3)/4.
+* [A168240](http://oeis.org/A168240) ([L13 program](A168240.asm)): 1+7*n+13*n^2.
 * [A168255](http://oeis.org/A168255) ([L09 program](A168255.asm)): n appears n-th nonprime number times.
 * [A168269](http://oeis.org/A168269) ([L06 program](A168269.asm)): a(n) = 2*n - (-1)^n.
 * [A168273](http://oeis.org/A168273) ([L04 program](A168273.asm)): a(n) = 2*n + (-1)^n - 1.
@@ -3221,6 +3223,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193868](http://oeis.org/A193868) ([L14 program](A193868.asm)): Even central polygonal numbers.
 * [A193872](http://oeis.org/A193872) ([L07 program](A193872.asm)): Even dodecagonal numbers: 4*n*(5*n - 2).
 * [A193910](http://oeis.org/A193910) ([L08 program](A193910.asm)): Leap centuries in the revised Julian calendar.
+* [A194029](http://oeis.org/A194029) ([L20 program](A194029.asm)): Natural fractal sequence of the Fibonacci sequence (1,2,3,5,8,...).
 * [A194050](http://oeis.org/A194050) ([L15 program](A194050.asm)): Natural fractal sequence of A014739.
 * [A194055](http://oeis.org/A194055) ([L12 program](A194055.asm)): Natural fractal sequence of A000071 (Fibonacci numbers minus 1; a rectangular array, by antidiagonals.
 * [A194069](http://oeis.org/A194069) ([L08 program](A194069.asm)): 1+floor((2/3)*n^2).
@@ -3428,6 +3431,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199422](http://oeis.org/A199422) ([L20 program](A199422.asm)): 5*7^n+1.
 * [A199483](http://oeis.org/A199483) ([L16 program](A199483.asm)): 6*7^n+1.
 * [A199484](http://oeis.org/A199484) ([L22 program](A199484.asm)): (8*7^n+1)/3.
+* [A199485](http://oeis.org/A199485) ([L12 program](A199485.asm)): 8*7^n+1.
 * [A199486](http://oeis.org/A199486) ([L22 program](A199486.asm)): (9*7^n+1)/2.
 * [A199489](http://oeis.org/A199489) ([L15 program](A199489.asm)): (11*7^n+1)/6.
 * [A199490](http://oeis.org/A199490) ([L15 program](A199490.asm)): (11*7^n+1)/3.
