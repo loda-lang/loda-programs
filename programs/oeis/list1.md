@@ -2190,6 +2190,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167991](http://oeis.org/A167991) ([L07 program](A167991.asm)): Blocks of size 2n, each with 2n-1 replicas of 2n followed by 2n+1; n=1, 2, 3, ...
 * [A168038](http://oeis.org/A168038) ([L07 program](A168038.asm)): Squares closest to 2*n.
 * [A168039](http://oeis.org/A168039) ([L13 program](A168039.asm)): Squares closest to 3*n.
+* [A168043](http://oeis.org/A168043) ([L19 program](A168043.asm)): Let S(1)={1} and, for n>1 let S(n) be the smallest set containing x+1, x+2, and 2*x for each element x in S(n-1). a(n) is the number of elements in S(n).
 * [A168056](http://oeis.org/A168056) ([L07 program](A168056.asm)): Expansion of (1+2*x^2+x^3)/((1-x)^2*(1+x+x^2)).
 * [A168059](http://oeis.org/A168059) ([L07 program](A168059.asm)): Denominator of (n+2)/(n*(n+1)).
 * [A168074](http://oeis.org/A168074) ([L07 program](A168074.asm)): Duplicate of A061891.
@@ -2641,6 +2642,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173308](http://oeis.org/A173308) ([L10 program](A173308.asm)): 17*n*(n+1).
 * [A173309](http://oeis.org/A173309) ([L12 program](A173309.asm)): 19*n*(n+1).
 * [A173317](http://oeis.org/A173317) ([L19 program](A173317.asm)): 5*n! - 1.
+* [A173323](http://oeis.org/A173323) ([L13 program](A173323.asm)): 3*n! - 1.
 * [A173391](http://oeis.org/A173391) ([L15 program](A173391.asm)): a(n) = 6n + 3^n.
 * [A173432](http://oeis.org/A173432) ([L17 program](A173432.asm)): NW-SE diagonal sums of Riordan array A112468.
 * [A173511](http://oeis.org/A173511) ([L18 program](A173511.asm)): a(n) = 4*n^2 + floor(n/2).
@@ -3107,6 +3109,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189151](http://oeis.org/A189151) ([L14 program](A189151.asm)): Numbers n such that n < floor(sqrt(n)) * ceiling(sqrt(n)).
 * [A189274](http://oeis.org/A189274) ([L11 program](A189274.asm)): Number of nX3 array permutations with each element not moved or moved diagonally or antidiagonally by one
 * [A189320](http://oeis.org/A189320) ([L08 program](A189320.asm)): Number of nondecreasing arrangements of n+2 numbers in 0..3 with the last equal to 3 and each after the second equal to the sum of one or two of the preceding four
+* [A189327](http://oeis.org/A189327) ([L14 program](A189327.asm)): Number of nondecreasing arrangements of 4 numbers in 0..n with the last equal to n and each after the second equal to the sum of one or two of the preceding four
 * [A189573](http://oeis.org/A189573) ([L16 program](A189573.asm)): Positions of 0 in A189572; complement of A080652 (conjectured).
 * [A189604](http://oeis.org/A189604) ([L12 program](A189604.asm)): Number of nX3 array permutations with each element not moving, or moving one space E, S or NW.
 * [A189736](http://oeis.org/A189736) ([L10 program](A189736.asm)): a(1)=3,  a(2)=2, a(n)=3*a(n-1) + 2*a(n-2)
@@ -3438,6 +3441,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199486](http://oeis.org/A199486) ([L22 program](A199486.asm)): (9*7^n+1)/2.
 * [A199489](http://oeis.org/A199489) ([L15 program](A199489.asm)): (11*7^n+1)/6.
 * [A199490](http://oeis.org/A199490) ([L15 program](A199490.asm)): (11*7^n+1)/3.
+* [A199491](http://oeis.org/A199491) ([L18 program](A199491.asm)): (11*7^n+1)/2.
 * [A199531](http://oeis.org/A199531) ([L11 program](A199531.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two consecutive zero elements.
 * [A199572](http://oeis.org/A199572) ([L15 program](A199572.asm)): Number of round trips of length n on the cycle graph C_2 from any of the two vertices.
 * [A199573](http://oeis.org/A199573) ([L10 program](A199573.asm)): Number of round trips of length n from any of the four vertices of the cycle graph C_4.

@@ -769,6 +769,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244893](http://oeis.org/A244893) ([L10 program](A244893.asm)): a(n) = a(n-a(n-1)) with initial values 2,3,2.
 * [A244919](http://oeis.org/A244919) ([L03 program](A244919.asm)): For odd prime p, largest k such that binomial(2p-1, p-1) is congruent to 1 modulo p^k.
 * [A244953](http://oeis.org/A244953) ([L11 program](A244953.asm)): a(n) = Sum_{i=0..n} (-i mod 4).
+* [A245023](http://oeis.org/A245023) ([L11 program](A245023.asm)): Number of cases of tie (no winner) in the n-person rock-paper-scissors game.
 * [A245301](http://oeis.org/A245301) ([L07 program](A245301.asm)): a(n) = n*(7*n^2 + 15*n + 8)/6.
 * [A245336](http://oeis.org/A245336) ([L09 program](A245336.asm)): Sum of digits of n written in fractional base 8/7.
 * [A245338](http://oeis.org/A245338) ([L10 program](A245338.asm)): Sum of digits of n written in fractional base 9/8.
@@ -789,6 +790,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245992](http://oeis.org/A245992) ([L20 program](A245992.asm)): Number of length n+2 0..5 arrays with no pair in any consecutive three terms totalling exactly 5
 * [A246057](http://oeis.org/A246057) ([L22 program](A246057.asm)): a(n) = (5*10^n - 2)/3.
 * [A246058](http://oeis.org/A246058) ([L13 program](A246058.asm)): (16*10^n-7)/9.
+* [A246104](http://oeis.org/A246104) ([L14 program](A246104.asm)): Least m > 0 for which (s(m), ..., s(n+m-1) = (s(0), ..., s(n)), the first n+1 terms of the infinite Fibonacci word A003849.
 * [A246139](http://oeis.org/A246139) ([L06 program](A246139.asm)): 2^n + 10.
 * [A246172](http://oeis.org/A246172) ([L06 program](A246172.asm)): a(n) = (n^2+9*n-8)/2.
 * [A246360](http://oeis.org/A246360) ([L12 program](A246360.asm)): a(1) = 1, then A007051 ((3^n)+1)/2 interleaved with A057198 (5*3^(n-1)+1)/2.
@@ -913,6 +915,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254527](http://oeis.org/A254527) ([L08 program](A254527.asm)): Total number of points on a sphere when both poles are on an x by x grid where x=8*n+1.
 * [A254667](http://oeis.org/A254667) ([L02 program](A254667.asm)): The nonnegative numbers with 2 instead of 1.
 * [A254745](http://oeis.org/A254745) ([L08 program](A254745.asm)): Chebyshev polynomials of the second kind, U(n,x)^2, evaluated at x = sqrt(3)/2.
+* [A254757](http://oeis.org/A254757) ([L20 program](A254757.asm)): Part of the positive proper solutions x of the Pell equation x^2 - 2*y^2 = - 7^2 based on the fundamental solution (x0, y0)= (-1, 5).
 * [A254758](http://oeis.org/A254758) ([L12 program](A254758.asm)): Part of the positive proper solutions x of the Pell equation x^2 - 2*y^2 = - 7^2 based on the fundamental solution (x0, y0)= (1, 5).
 * [A254963](http://oeis.org/A254963) ([L06 program](A254963.asm)): a(n) = n*(11*n + 3)/2.
 * [A255043](http://oeis.org/A255043) ([L13 program](A255043.asm)): a(n) = (5*9^n - 1)/2.

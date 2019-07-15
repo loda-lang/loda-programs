@@ -448,7 +448,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006323](http://oeis.org/A006323) ([L10 program](A006323.asm)): 4-dimensional analog of centered polygonal numbers.
 * [A006324](http://oeis.org/A006324) ([L14 program](A006324.asm)): a(n) = n*(n + 1)*(2*n^2 + 2*n - 1)/6.
 * [A006325](http://oeis.org/A006325) ([L09 program](A006325.asm)): 4-dimensional analog of centered polygonal numbers.
-* [A006327](http://oeis.org/A006327) ([L08 program](A006327.asm)): Fibonacci numbers - 3. Number of total preorders.
+* [A006327](http://oeis.org/A006327) ([L08 program](A006327.asm)): a(n) = Fibonacci(n) - 3. Number of total preorders.
 * [A006331](http://oeis.org/A006331) ([L06 program](A006331.asm)): a(n) = n*(n+1)*(2*n+1)/3.
 * [A006355](http://oeis.org/A006355) ([L10 program](A006355.asm)): Number of binary vectors of length n containing no singletons.
 * [A006416](http://oeis.org/A006416) ([L09 program](A006416.asm)): Number of rooted planar maps. Also a(n)=T(4,n-3), array T as in A049600.
@@ -1474,6 +1474,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A026484](http://oeis.org/A026484) ([L06 program](A026484.asm)): Erroneous version of A026488.
 * [A026488](http://oeis.org/A026488) ([L12 program](A026488.asm)): a(n) = least positive integer > a(n-1) and not a(i)*a(j)-a(k) for 1<=i<=j<=k<=n.
 * [A026581](http://oeis.org/A026581) ([L18 program](A026581.asm)): Expansion of (1 + 2*x) / (1 - x - 4*x^2).
+* [A026583](http://oeis.org/A026583) ([L28 program](A026583.asm)): a(n) = Sum{T(i,j)}, 0<=j<=i, 0<=i<=2n, T given by A026568.
 * [A026599](http://oeis.org/A026599) ([L24 program](A026599.asm)): a(n) = Sum{T(i,j)}, 0<=j<=i, 0<=i<=2n, T given by A026584.
 * [A026622](http://oeis.org/A026622) ([L18 program](A026622.asm)): a(n) = T(n,0) + T(n,1) + ... + T(n,n), T given by A026615.
 * [A026624](http://oeis.org/A026624) ([L11 program](A026624.asm)): a(n) = Sum{T(i,j)}, 0<=i<=n, 0<=j<=n, T given by A026615.
@@ -4180,6 +4181,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A098181](http://oeis.org/A098181) ([L09 program](A098181.asm)): Two consecutive odd numbers separated by multiples of four, repeated twice, between them, written in increasing order.
 * [A098182](http://oeis.org/A098182) ([L08 program](A098182.asm)): a(n) = 3*a(n-1) - a(n-2) + a(n-3), a(0)=1,a(1)=1,a(2)=3.
 * [A098354](http://oeis.org/A098354) ([L07 program](A098354.asm)): Multiplication table of the powers of 2 read by antidiagonals.
+* [A098355](http://oeis.org/A098355) ([L10 program](A098355.asm)): Multiplication table of the powers of three read by antidiagonals.
 * [A098378](http://oeis.org/A098378) ([L07 program](A098378.asm)): Number of characters needed to write number n in the traditional Ethiopic (Geez) number system.
 * [A098457](http://oeis.org/A098457) ([L25 program](A098457.asm)): Farey Bisection Expansion of sqrt(7).
 * [A098502](http://oeis.org/A098502) ([L06 program](A098502.asm)): 16*n - 4.
