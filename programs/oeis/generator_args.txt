@@ -1062,3 +1062,30 @@ A060925: -p 30 -n 3 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A083079: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A001550: -p 30 -n 3 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A223950: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A136602: -p 40 -n 6 -i 6 -o asml -a cd
+A258070: -p 40 -n 6 -i 6 -o asml -a cd
+A266279: -p 40 -n 6 -i 6 -o asml -a cd
+A272813: -p 40 -n 6 -i 6 -o asml -a cd
+A130446: -p 40 -n 6 -i 6 -o asml -a cd
+A177949: -p 40 -n 6 -i 6 -o asml -a cd
+A189229: -p 40 -n 6 -i 6 -o asml -a cd
+A213182: -p 40 -n 6 -i 6 -o asml -a cd
+A213184: -p 40 -n 6 -i 6 -o asml -a cd
+A296879: -p 40 -n 6 -i 6 -o asml -a cd
+A296882: -p 40 -n 6 -i 6 -o asml -a cd
+A296885: -p 40 -n 6 -i 6 -o asml -a cd
+A296888: -p 40 -n 6 -i 6 -o asml -a cd
+A296891: -p 40 -n 6 -i 6 -o asml -a cd
+A296894: -p 40 -n 6 -i 6 -o asml -a cd
+A296897: -p 40 -n 6 -i 6 -o asml -a cd
+A296907: -p 40 -n 6 -i 6 -o asml -a cd
+A303502: -p 40 -n 6 -i 6 -o asml -a cd
+A317592: -p 40 -n 6 -i 6 -o asml -a cd
+A317594: -p 40 -n 6 -i 6 -o asml -a cd
+A317945: -p 40 -n 6 -i 6 -o asml -a cd
+A155557: -p 40 -n 6 -i 6 -o asml -a cd
+A297040: -p 40 -n 6 -i 6 -o asml -a cd
+A145289: -p 40 -n 6 -i 6 -o asml -a cd
+A259552: -p 40 -n 6 -i 6 -o asml -a cd
+A297038: -p 40 -n 6 -i 6 -o asml -a cd
+A297041: -p 40 -n 6 -i 6 -o asml -a cd -e programs/templates/T01.asm
