@@ -26,10 +26,11 @@ Generator options:
   -p <number>      Maximum number of operations (default:40)
   -n <number>      Maximum constant (default:6)
   -i <number>      Maximum index (default:6)
-  -x               Optimize and overwrite existing programs
   -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,l:lpb/lpe)
-  -a <string>      Operand types (default:cdi;c:constant,d:direct mem,i:indirect mem)
+  -a <string>      Operand types (default:cd;c:constant,d:direct mem,i:indirect mem)
   -e <file>        Program template
+  -r               Search for programs of linear sequences (slow)
+  -x               Optimize and overwrite existing programs
 ```
 
 For example, run `./loda eval programs/fibonacci.asm` to generate the first terms of the Fibonacci sequence.
