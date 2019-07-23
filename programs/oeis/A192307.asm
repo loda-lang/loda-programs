@@ -14,5 +14,3 @@ lpb $0,1
   add $2,$3
 lpe
 add $1,1
-mov $3,$2
-sub $2,$3
