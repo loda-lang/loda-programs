@@ -6,8 +6,6 @@ sub $0,4
 add $2,6
 add $1,$2
 add $4,$0
-mov $0,1
-sub $0,6
 sub $4,3
 add $3,1
 add $3,$4
