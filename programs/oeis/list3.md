@@ -95,6 +95,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304507](http://oeis.org/A304507) ([L16 program](A304507.asm)): a(n) = 5*(n+1)*(9*n+4).
 * [A304509](http://oeis.org/A304509) ([L15 program](A304509.asm)): a(n) = 63*2^n - 39 (n>=1).
 * [A304510](http://oeis.org/A304510) ([L19 program](A304510.asm)): a(n) = 69*2^n - 42 (n>=1).
+* [A304512](http://oeis.org/A304512) ([L20 program](A304512.asm)): a(n) = 366*2^n - 204 (n >= 1).
 * [A304513](http://oeis.org/A304513) ([L13 program](A304513.asm)): a(n) = 57*2^(n-1) - 38 (n >= 1).
 * [A304514](http://oeis.org/A304514) ([L12 program](A304514.asm)): a(n) = 33*2^n - 45 (n>=1).
 * [A304516](http://oeis.org/A304516) ([L19 program](A304516.asm)): a(n) = 192*2^n - 273 (n>=1).
@@ -108,6 +109,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304608](http://oeis.org/A304608) ([L15 program](A304608.asm)): a(n) = 288*2^n + 178 (n >= 1).
 * [A304612](http://oeis.org/A304612) ([L33 program](A304612.asm)): a(n) = 75*2^n - 38.
 * [A304613](http://oeis.org/A304613) ([L15 program](A304613.asm)): a(n) = 87*2^n - 45.
+* [A304618](http://oeis.org/A304618) ([L17 program](A304618.asm)): a(n) = 108*n^2 - 228*n + 114 (n>=2).
 * [A304659](http://oeis.org/A304659) ([L10 program](A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
 * [A304726](http://oeis.org/A304726) ([L15 program](A304726.asm)): a(n) = n^4 + 4*n^2 + 3.
 * [A304809](http://oeis.org/A304809) ([L11 program](A304809.asm)): Solution (a(n)) of the complementary equation a(n) = b(2n) + b(4n) ; see Comments.
@@ -144,12 +146,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305166](http://oeis.org/A305166) ([L19 program](A305166.asm)): a(n) = 164*2^n - 140.
 * [A305261](http://oeis.org/A305261) ([L14 program](A305261.asm)): a(n) = 120*2^n - 108.
 * [A305262](http://oeis.org/A305262) ([L18 program](A305262.asm)): a(n) = 140*2^n - 127.
+* [A305264](http://oeis.org/A305264) ([L19 program](A305264.asm)): a(n) = 836*2^n - 771.
 * [A305265](http://oeis.org/A305265) ([L24 program](A305265.asm)): a(n) = 12*2^n + 62.
 * [A305266](http://oeis.org/A305266) ([L11 program](A305266.asm)): a(n) = 14*2^n + 73.
 * [A305267](http://oeis.org/A305267) ([L19 program](A305267.asm)): a(n) = 68*2^n + 358.
 * [A305268](http://oeis.org/A305268) ([L19 program](A305268.asm)): a(n) = 82*2^n + 440.
 * [A305269](http://oeis.org/A305269) ([L17 program](A305269.asm)): a(n) = 120*2^n - 95.
 * [A305270](http://oeis.org/A305270) ([L12 program](A305270.asm)): a(n) = 140*2^n - 112.
+* [A305272](http://oeis.org/A305272) ([L19 program](A305272.asm)): a(n) = 836*2^n - 676.
 * [A305503](http://oeis.org/A305503) ([L09 program](A305503.asm)): Largest cardinality of subsets A of {0,1,...,n-1} with |A + A| > |A - A|.
 * [A305548](http://oeis.org/A305548) ([L07 program](A305548.asm)): a(n) = 27*n.
 * [A305750](http://oeis.org/A305750) ([L23 program](A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
@@ -180,6 +184,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308607](http://oeis.org/A308607) ([L12 program](A308607.asm)): Number of (not necessarily maximum) cliques in the wheel graph on n vertices.
 * [A309077](http://oeis.org/A309077) ([L19 program](A309077.asm)): Maximum sum of base lengths over all minimal factorizations of length-n binary strings.
 * [A309083](http://oeis.org/A309083) ([L15 program](A309083.asm)): a(n) = n - floor(n/2^4) + floor(n/3^4) - floor(n/4^4) + ...
+* [A309093](http://oeis.org/A309093) ([L10 program](A309093.asm)): The analogue of A309077(n), but allowing fractional powers.
 * [A310372](http://oeis.org/A310372) ([L17 program](A310372.asm)): Coordination sequence Gal.4.52.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310378](http://oeis.org/A310378) ([L21 program](A310378.asm)): Coordination sequence Gal.6.320.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310409](http://oeis.org/A310409) ([L16 program](A310409.asm)): Coordination sequence Gal.3.19.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -201,6 +206,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313280](http://oeis.org/A313280) ([L11 program](A313280.asm)): Coordination sequence Gal.3.15.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313477](http://oeis.org/A313477) ([L17 program](A313477.asm)): Coordination sequence Gal.5.54.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313568](http://oeis.org/A313568) ([L13 program](A313568.asm)): Coordination sequence Gal.3.14.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313694](http://oeis.org/A313694) ([L19 program](A313694.asm)): Coordination sequence Gal.4.63.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313780](http://oeis.org/A313780) ([L13 program](A313780.asm)): Coordination sequence Gal.3.23.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313799](http://oeis.org/A313799) ([L11 program](A313799.asm)): Coordination sequence Gal.3.53.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313873](http://oeis.org/A313873) ([L12 program](A313873.asm)): Coordination sequence Gal.3.21.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -209,6 +215,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A314838](http://oeis.org/A314838) ([L20 program](A314838.asm)): Coordination sequence Gal.4.52.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314840](http://oeis.org/A314840) ([L16 program](A314840.asm)): Coordination sequence Gal.5.66.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315032](http://oeis.org/A315032) ([L14 program](A315032.asm)): Coordination sequence Gal.4.72.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315211](http://oeis.org/A315211) ([L18 program](A315211.asm)): Coordination sequence Gal.3.20.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315309](http://oeis.org/A315309) ([L15 program](A315309.asm)): Coordination sequence Gal.4.133.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315311](http://oeis.org/A315311) ([L13 program](A315311.asm)): Coordination sequence Gal.3.51.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315469](http://oeis.org/A315469) ([L18 program](A315469.asm)): Coordination sequence Gal.4.134.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
