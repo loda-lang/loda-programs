@@ -3,24 +3,6 @@
 
 mov $2,$0
 lpb $2,1
-  add $5,3
-  mov $6,4
-  add $3,3
-  lpb $5,1
-    add $1,4
-    mov $0,$6
-    add $6,3
-    add $0,$6
-    mov $4,2
-    add $0,$4
-    sub $5,$3
-    sub $6,3
-  lpe
-  add $6,$0
-  lpb $6,1
-    add $1,7
-    mov $3,1
-    sub $6,$3
-  lpe
+  add $1,123
   sub $2,1
 lpe
