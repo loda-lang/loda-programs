@@ -3233,3 +3233,4 @@ A258048: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A240848: -p 50 -n 5 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A314896: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A134804: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T02.asm
+A058183: -p 40 -n 6 -i 6 -o asml -a cd
