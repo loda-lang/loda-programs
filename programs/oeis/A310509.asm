@@ -3,9 +3,7 @@
 
 mov $2,$0
 add $1,$0
-add $4,$1
 add $1,1
-mov $4,0
 add $4,$0
 add $1,$4
 add $0,$0

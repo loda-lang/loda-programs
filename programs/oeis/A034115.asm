@@ -11,17 +11,14 @@ add $4,4
 lpb $2,1
   lpb $4,1
     sub $4,$3
-    mov $5,4
     add $5,1
     add $1,$2
   lpe
-  mov $0,3
   sub $2,1
   add $2,2
   lpb $5,1
     mov $5,$4
     mov $4,$1
-    mov $0,$5
   lpe
   sub $1,$2
   sub $2,6

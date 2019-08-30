@@ -30,7 +30,6 @@ lpb $0,1
   add $1,$2
   add $1,$4
   mov $3,3
-  sub $5,$4
 lpe
 lpb $7,1
   add $1,1

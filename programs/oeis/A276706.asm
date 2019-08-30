@@ -7,7 +7,6 @@ sub $3,3
 mov $2,$0
 mov $0,4
 sub $3,3
-add $1,$2
 sub $0,4
 add $3,1
 add $0,1

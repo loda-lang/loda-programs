@@ -10,7 +10,6 @@ lpb $0,1
   add $5,$3
   add $2,$5
   add $4,5
-  sub $3,$2
   add $0,$5
   add $2,$4
   sub $0,$2

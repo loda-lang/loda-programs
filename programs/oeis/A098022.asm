@@ -15,7 +15,6 @@ add $0,$2
 mov $5,$0
 sub $3,$5
 add $1,4
-mov $6,$3
 sub $0,1
 sub $1,6
 lpb $0,1

@@ -17,6 +17,4 @@ lpe
 add $1,$2
 add $4,2
 sub $1,$4
-add $1,4
-sub $4,3
-sub $1,3
+add $1,1

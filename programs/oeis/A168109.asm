@@ -11,7 +11,6 @@ add $3,$0
 mov $0,0
 add $0,$3
 add $1,$0
-sub $3,$3
 mov $2,$4
 add $1,3
 add $1,$1

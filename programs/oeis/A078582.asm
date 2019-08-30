@@ -10,7 +10,6 @@ lpb $2,1
     add $1,$4
     sub $4,$3
   lpe
-  add $4,$1
   add $1,1
   sub $2,1
 lpe

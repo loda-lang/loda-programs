@@ -7,7 +7,6 @@ add $3,7
 add $2,$1
 add $0,$1
 add $1,$2
-sub $2,$3
 add $0,$1
 lpb $0,1
   sub $3,1

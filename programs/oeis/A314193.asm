@@ -12,12 +12,10 @@ add $0,$1
 lpb $0,1
   sub $1,$5
   sub $0,$4
-  sub $1,$4
   sub $0,1
   add $0,$4
   sub $0,1
   add $4,5
-  sub $3,$4
 lpe
 add $1,$0
 lpb $2,1

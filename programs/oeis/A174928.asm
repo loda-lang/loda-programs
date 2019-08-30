@@ -9,7 +9,6 @@ add $2,5
 lpb $0,1
   add $3,5
   sub $3,$5
-  mov $1,0
   sub $3,$5
   mov $4,$3
   add $3,$2

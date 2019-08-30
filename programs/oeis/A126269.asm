@@ -1,4 +1,4 @@
-; A126269: n's such that hcl(n,n) < hcl(n,n-1); about huffman coding; see comments.
+; A126269: Numbers n such that hcl(n,n) < hcl(n,n-1) where hcl(n,i) is the Huffman code length; see comments.
 ; 3,4,9,10,21,22,45,46,93,94,189,190,381,382,765,766,1533,1534,3069,3070
 
 add $1,$0

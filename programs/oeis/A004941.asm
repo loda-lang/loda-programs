@@ -23,7 +23,6 @@ lpb $0,1
   sub $2,$0
   add $2,$3
   add $2,$6
-  add $0,6
 lpe
 add $3,$6
 sub $3,2

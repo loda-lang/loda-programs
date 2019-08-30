@@ -20,8 +20,6 @@ lpe
 add $0,$4
 add $0,5
 mov $1,$0
-mov $2,1
-sub $2,$0
 lpb $3,1
   add $1,17
   sub $3,1

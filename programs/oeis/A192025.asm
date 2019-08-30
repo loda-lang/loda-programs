@@ -10,8 +10,6 @@ add $0,2
 add $1,$0
 mov $4,5
 add $4,$1
-mov $0,0
-mov $2,0
 add $4,$6
 add $4,3
 sub $4,$1

@@ -13,7 +13,6 @@ sub $2,3
 add $3,$6
 mov $0,1
 add $3,$0
-mov $1,$3
 mov $4,$3
 sub $2,4
 mov $0,2

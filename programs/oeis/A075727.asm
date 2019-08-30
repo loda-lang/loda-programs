@@ -9,7 +9,6 @@ lpb $0,1
   sub $0,$1
   sub $0,1
   add $3,2
-  sub $1,3
   sub $0,3
   mov $1,$3
   sub $3,1

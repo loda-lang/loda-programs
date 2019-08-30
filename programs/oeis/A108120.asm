@@ -10,16 +10,13 @@ mov $5,4
 add $2,$2
 mov $4,6
 add $5,$3
-add $2,3
-sub $0,$0
-add $2,5
+add $2,8
 sub $3,$3
 lpb $2,1
   lpb $4,1
     sub $4,$3
   lpe
   lpb $5,1
-    sub $0,6
     add $1,1
     sub $5,$3
   lpe
