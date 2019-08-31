@@ -10,7 +10,6 @@ add $4,5
 add $3,$4
 add $0,3
 sub $3,$1
-mov $2,5
 add $1,2
 lpb $0,1
   sub $0,$4
