@@ -2157,6 +2157,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158250](http://oeis.org/A158250) ([L08 program](A158250.asm)): 256n - 1.
 * [A158252](http://oeis.org/A158252) ([L20 program](A158252.asm)): 289n^2 - 2n.
 * [A158253](http://oeis.org/A158253) ([L24 program](A158253.asm)): 289n - 1.
+* [A158254](http://oeis.org/A158254) ([L26 program](A158254.asm)): 289n^2 + 2n.
 * [A158255](http://oeis.org/A158255) ([L06 program](A158255.asm)): 289n + 1.
 * [A158271](http://oeis.org/A158271) ([L23 program](A158271.asm)): 324n^2 + 2n.
 * [A158272](http://oeis.org/A158272) ([L06 program](A158272.asm)): 324n + 1.
@@ -3250,7 +3251,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175885](http://oeis.org/A175885) ([L07 program](A175885.asm)): Numbers that are congruent to {1, 10} mod 11.
 * [A175886](http://oeis.org/A175886) ([L07 program](A175886.asm)): Numbers that are congruent to {1, 12} mod 13.
 * [A175887](http://oeis.org/A175887) ([L10 program](A175887.asm)): Numbers that are congruent to {1, 14} mod 15.
+* [A175966](http://oeis.org/A175966) ([L19 program](A175966.asm)): Complement of A175965(n), where A175965(n) = the lexicographically earliest sequence with first differences as increasing sequence of noncomposites A008578.
 * [A175968](http://oeis.org/A175968) ([L15 program](A175968.asm)): Complement of A175967(n), where A175967(n) = the lexicographically earliest sequence with first differences as increasing sequence of nonprimes A018252(n).
+* [A175969](http://oeis.org/A175969) ([L19 program](A175969.asm)): Complement of A014284(n), where A014284(n) = the lexicographically earliest sequence with first differences as increasing sequence of primes A000040.
 * [A175970](http://oeis.org/A175970) ([L09 program](A175970.asm)): Complement of A051349(n), where A051349(n) = the lexicographically earliest sequence with first differences as increasing sequence of composites A002808(n).
 * [A175976](http://oeis.org/A175976) ([L15 program](A175976.asm)): 4^n-3*n+1.
 * [A176010](http://oeis.org/A176010) ([L39 program](A176010.asm)): Positive numbers n such that n^2=2 mod(97)
