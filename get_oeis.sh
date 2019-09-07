@@ -2,6 +2,13 @@
 
 oeis_dir=${HOME}/.loda/oeis
 
+for cmd in wget gzip; do
+  if ! [ -x "$(command -v $cmd)" ]; then
+    echo "Error: $cmd is not installed" >&2
+    exit 1
+  fi
+done
+
 mkdir -p ${oeis_dir}
 for name in stripped names; do
   if [ -f ${oeis_dir}/${name} ]; then
