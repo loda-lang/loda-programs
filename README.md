@@ -8,18 +8,20 @@ The LODA command-line tool is written in C++ and is published under the terms of
 
 ```
 Usage:             loda <command> <options>
-Commands:
+Core commands:
   evaluate <file>  Evaluate a program to a sequence
   optimize <file>  Optimize a program and print it
   minimize <file>  Minimize a program and print it (use -t to set the number of terms)
   generate         Generate a random program and print it
-  mine             Mine programs for OEIS sequences
   test             Run test suite
-  help             Print this help text
+OEIS commands:
+  mine             Mine programs for OEIS sequences
+  synthesize       Synthesize programs for OEIS sequences
+  maintain         Maintain programs for OEIS sequences
 General options:
   -l <string>      Log level (values:debug,info,warn,error,alert)
-  -t <number>      Number of sequence terms (default:30)
-Interpeter options:
+  -t <number>      Number of sequence terms (default:20)
+Interpreter options:
   -c <number>      Maximum number of interpreter cycles (default:10000000)
   -m <number>      Maximum number of used memory cells (default:100000)
 Generator options:
@@ -80,9 +82,10 @@ If you would like to get updates on new programs, you can check out the [@lodami
 * [A000001-A100000](programs/oeis/list0.md)
 * [A100001-A200000](programs/oeis/list1.md)
 * [A200001-A300000](programs/oeis/list2.md)
-* [A300001-A400000](programs/oeis/list3.md)
+* [A300001-A400000](programs/oeis/list2.md)
 
-Total number of programs: 11597/326776 (3%)
+Total number of programs: 11596/326776 (3%)
+
 
 ![LODA Program Length Distribution](https://raw.githubusercontent.com/ckrause/loda/master/lengths.png)
 ![LODA Program Counts](https://raw.githubusercontent.com/ckrause/loda/master/counts.png)

@@ -1,5 +1,12 @@
 #!/bin/bash
 
+for cmd in cat date git gnuplot grep seq; do
+  if ! [ -x "$(command -v $cmd)" ]; then
+    echo "Error: $cmd is not installed" >&2
+    exit 1
+  fi
+done
+
 echo "Calculating length distribution"
 max_length=100
 lengths=()
