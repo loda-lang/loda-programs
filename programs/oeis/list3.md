@@ -534,3 +534,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A326422](http://oeis.org/A326422) ([L33 program](A326422.asm)): Numbers k such that A000045(k) mod 5 is prime.
 * [A326494](http://oeis.org/A326494) ([L09 program](A326494.asm)): Number of subsets of {1..n} containing all differences and quotients of pairs of distinct elements.
 * [A327032](http://oeis.org/A327032) ([L15 program](A327032.asm)): a(n) = T(n, 4) with T(n, k) = Sum_{d|k} phi(d)*binomial(n - 1 + k/d, k/d).
+* [A327374](http://oeis.org/A327374) ([L14 program](A327374.asm)): BII-numbers of set-systems with vertex-connectivity 2.
+* [A327376](http://oeis.org/A327376) ([L14 program](A327376.asm)): BII-numbers of set-systems with vertex-connectivity 3.

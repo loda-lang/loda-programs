@@ -12,11 +12,9 @@ lpb $0,1
   lpe
   lpb $4,1
     add $1,1
-    mov $0,1
     sub $4,$1
   lpe
   add $1,4
-  sub $0,1
   mov $3,4
   sub $1,1
 lpe
