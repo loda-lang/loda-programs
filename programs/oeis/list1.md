@@ -772,6 +772,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A124156](http://oeis.org/A124156) ([L18 program](A124156.asm)): Thickness of complete graph K_n.
 * [A124158](http://oeis.org/A124158) ([L08 program](A124158.asm)): Maximal number of edges in a rectangle visibility graph with n nodes.
 * [A124171](http://oeis.org/A124171) ([L12 program](A124171.asm)): Sequence obtained by reading the triangles shown below by rows.
+* [A124197](http://oeis.org/A124197) ([L16 program](A124197.asm)): Number of subsets S of {1,2,3,...,n}, including the empty subset, such that if x and y are in S with x<y and x+y even, then (x+y)/2 is also in S.
 * [A124302](http://oeis.org/A124302) ([L08 program](A124302.asm)): Number of set partitions with at most 3 blocks; number of Dyck paths of height at most 4; dimension of space of symmetric polynomials in 3 noncommuting variables.
 * [A124349](http://oeis.org/A124349) ([L07 program](A124349.asm)): Numbers of directed Hamiltonian cycles on the n-prism graph.
 * [A124351](http://oeis.org/A124351) ([L07 program](A124351.asm)): Order of the automorphism group of the n-prism graph.
@@ -2401,6 +2402,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160543](http://oeis.org/A160543) ([L07 program](A160543.asm)): Not divisible by 17
 * [A160544](http://oeis.org/A160544) ([L10 program](A160544.asm)): Not divisible by 19.
 * [A160664](http://oeis.org/A160664) ([L11 program](A160664.asm)): a(n) = a(n-1) + A000203(n), a(0)=1.
+* [A160674](http://oeis.org/A160674) ([L28 program](A160674.asm)): A bisection of A063522.
 * [A160749](http://oeis.org/A160749) ([L10 program](A160749.asm)): a(n) = (11*n^2 + 19*n + 10)/2.
 * [A160755](http://oeis.org/A160755) ([L04 program](A160755.asm)): Number of correct digits of the MRB constant derived from the sequence of partial sums up to m=10^n terms as defined by S[n]= Sum[(-1)^k*(k^(1/k)-1),{k,m}].
 * [A160765](http://oeis.org/A160765) ([L16 program](A160765.asm)): Expansion of (1+13*x+32*x^2+13*x^3+x^4)/(1-x)^5.
@@ -2571,6 +2573,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164654](http://oeis.org/A164654) ([L12 program](A164654.asm)): a(n) = 2*a(n-2) for n > 2; a(1) = 3, a(2) = 8.
 * [A164682](http://oeis.org/A164682) ([L09 program](A164682.asm)): a(n) = 2*a(n-2) for n > 2; a(1) = 5, a(2) = 8.
 * [A164683](http://oeis.org/A164683) ([L07 program](A164683.asm)): a(n) = 8*a(n-2) for n > 2; a(1) = 1, a(2) = 8.
+* [A164737](http://oeis.org/A164737) ([L17 program](A164737.asm)): a(n) = 8*a(n-2) for n > 2; a(1) = 5, a(2) = 12.
 * [A164754](http://oeis.org/A164754) ([L08 program](A164754.asm)): Number of n X 2 1..4 arrays with all 1's connected, all 2's connected, all 3's connected, all 4's connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 2 neighbors with the same value.
 * [A164784](http://oeis.org/A164784) ([L12 program](A164784.asm)): a(n) = 6^n-5.
 * [A164785](http://oeis.org/A164785) ([L10 program](A164785.asm)): a(n) = 5^n-4.
@@ -3686,6 +3689,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186496](http://oeis.org/A186496) ([L18 program](A186496.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=5i and g(j)=j-th pentagonal number.  Complement of A186495.
 * [A186497](http://oeis.org/A186497) ([L15 program](A186497.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i-2 and g(j)=j-th triangular number.  Complement of A186498.
 * [A186498](http://oeis.org/A186498) ([L08 program](A186498.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i-2 and g(j)=j-th triangular number.  Complement of A186497.
+* [A186540](http://oeis.org/A186540) ([L34 program](A186540.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=-2+3j^2.  Complement of A186539.
 * [A186544](http://oeis.org/A186544) ([L24 program](A186544.asm)): a(n) = floor((Pi-2)*n/(Pi-3)); complement of A187320.
 * [A186620](http://oeis.org/A186620) ([L16 program](A186620.asm)): Fibonacci sequence beginning 12, 25.
 * [A186636](http://oeis.org/A186636) ([L13 program](A186636.asm)): a(n) = n*(n^3+n^2+2*n+1).

@@ -138,6 +138,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A208309](http://oeis.org/A208309) ([L10 program](A208309.asm)): Number of n X 3 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward neighbors.
 * [A208375](http://oeis.org/A208375) ([L21 program](A208375.asm)): Number of n X 4 0..1 arrays avoiding 0 0 0 and 1 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
 * [A208376](http://oeis.org/A208376) ([L28 program](A208376.asm)): Number of n X 5 0..1 arrays avoiding 0 0 0 and 1 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
+* [A208428](http://oeis.org/A208428) ([L26 program](A208428.asm)): Number of n X 2 0..2 arrays with new values 0..2 introduced in row major order and no element equal to any knight-move neighbor (colorings ignoring permutations of colors).
 * [A208528](http://oeis.org/A208528) ([L13 program](A208528.asm)): Number of permutations of n>1 having exactly 3 points P on the boundary of their bounding square.
 * [A208529](http://oeis.org/A208529) ([L15 program](A208529.asm)): Number of permutations of n > 1 having exactly 2 points on the boundary of their bounding square.
 * [A208598](http://oeis.org/A208598) ([L12 program](A208598.asm)): Number of 4-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero.
@@ -994,6 +995,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248598](http://oeis.org/A248598) ([L27 program](A248598.asm)): a(n) = (2*n+23)*n*(n-1), a coefficient appearing in the formula a(n)*Pi/324+n+1 giving the average number of regions into which n random planes divide the cube.
 * [A248604](http://oeis.org/A248604) ([L19 program](A248604.asm)): Numbers a(n) which are the minimum number of moves needed in a variation of the tower of Hanoi with 4 towers and n disks.
 * [A248621](http://oeis.org/A248621) ([L15 program](A248621.asm)): Floor of sums of the squares of the non-integer cube roots of n, as partitioned by the integer roots: floor[sum(j from n^3+1 to (n+1)^3-1, j^(2/3))].
+* [A248633](http://oeis.org/A248633) ([L17 program](A248633.asm)): Least k such that 20/27- sum{(h^2)/4^h, h = 1..k} < 1/8^n.
 * [A248646](http://oeis.org/A248646) ([L15 program](A248646.asm)): The Golden Book sequence.
 * [A248739](http://oeis.org/A248739) ([L19 program](A248739.asm)): 29*n + ceiling(n/29).
 * [A248800](http://oeis.org/A248800) ([L08 program](A248800.asm)): n^2 + 3/2 + (1/2)*(-1)^n.
@@ -1905,6 +1907,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A287392](http://oeis.org/A287392) ([L06 program](A287392.asm)): Domination number for lion's graph on an n X n board.
 * [A287393](http://oeis.org/A287393) ([L08 program](A287393.asm)): Domination number for knight's graph on a 2 X n board.
 * [A287394](http://oeis.org/A287394) ([L15 program](A287394.asm)): Domination number for camel's graph on a 2 X n board.
+* [A287426](http://oeis.org/A287426) ([L22 program](A287426.asm)): Number of connected induced subgraphs in the n-sun graph.
 * [A287431](http://oeis.org/A287431) ([L19 program](A287431.asm)): Number of connected dominating sets in the n-gear graph.
 * [A287744](http://oeis.org/A287744) ([L18 program](A287744.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 342", based on the 5-celled von Neumann neighborhood.
 * [A287765](http://oeis.org/A287765) ([L18 program](A287765.asm)): Period 4: repeat [1, 3, 5, 3].
