@@ -7,6 +7,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300069](http://oeis.org/A300069) ([L15 program](A300069.asm)): Period 6: repeat [0, 0, 0, 1, 2, 1].
 * [A300075](http://oeis.org/A300075) ([L13 program](A300075.asm)): Period 6: repeat [0, 1, 1, 2, 2, 2].
 * [A300076](http://oeis.org/A300076) ([L17 program](A300076.asm)): A sequence based on the period 6 sequence A300075.
+* [A300287](http://oeis.org/A300287) ([L23 program](A300287.asm)): a(n) = floor((1/n) * Sum_{k=1..n} sqrt(k)).
 * [A300290](http://oeis.org/A300290) ([L16 program](A300290.asm)): Period 6: repeat [0, 1, 2, 2, 3, 3].
 * [A300293](http://oeis.org/A300293) ([L16 program](A300293.asm)): A sequence based on the period 6 sequence A151899.
 * [A300402](http://oeis.org/A300402) ([L07 program](A300402.asm)): Smallest integer i such that TREE(i) >= n.

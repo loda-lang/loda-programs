@@ -688,8 +688,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008816](http://oeis.org/A008816) ([L10 program](A008816.asm)): Expansion of (1+x^9)/((1-x)^2*(1-x^9)).
 * [A008817](http://oeis.org/A008817) ([L11 program](A008817.asm)): Expansion of (1+x^10)/((1-x)^2*(1-x^10)).
 * [A008822](http://oeis.org/A008822) ([L08 program](A008822.asm)): Expansion of (1 + 2*x^2 + x^3)/((1 - x)^2*(1 - x^3)).
-* [A008823](http://oeis.org/A008823) ([L17 program](A008823.asm)): Expansion of (1+2*x^3+x^5)/(1-x)^2/(1-x^5).
-* [A008824](http://oeis.org/A008824) ([L21 program](A008824.asm)): Expansion of (1+2*x^4+x^7)/(1-x)^2/(1-x^7).
+* [A008823](http://oeis.org/A008823) ([L17 program](A008823.asm)): Expansion of (1+2*x^3+x^5)/((1-x)^2*(1-x^5)).
+* [A008824](http://oeis.org/A008824) ([L21 program](A008824.asm)): Expansion of (1+2*x^4+x^7)/((1-x)^2*(1-x^7)).
 * [A008825](http://oeis.org/A008825) ([L15 program](A008825.asm)): Expansion of (1+2*x^5+x^9)/(1-x)^2/(1-x^9).
 * [A008851](http://oeis.org/A008851) ([L06 program](A008851.asm)): Congruent to 0 or 1 mod 5.
 * [A008854](http://oeis.org/A008854) ([L06 program](A008854.asm)): Numbers that are congruent to {0, 1, 4} mod 5.

@@ -634,6 +634,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118239](http://oeis.org/A118239) ([L08 program](A118239.asm)): Engel expansion of cosh(1).
 * [A118277](http://oeis.org/A118277) ([L12 program](A118277.asm)): Generalized 9-gonal (or enneagonal) numbers: m*(7*m - 5)/2 with m = 0, 1, -1, 2, -2, 3, -3, ...
 * [A118286](http://oeis.org/A118286) ([L14 program](A118286.asm)): Numbers n such that n == 0 (mod 4) or n == 2 (mod 12).
+* [A118295](http://oeis.org/A118295) ([L12 program](A118295.asm)): Start with 20 and repeatedly reverse the digits and add 1 to get the next term.
 * [A118403](http://oeis.org/A118403) ([L07 program](A118403.asm)): Unsigned row sums of triangle A118401; a(n) = A118402(n^2-n+2), where A118402 is the row sums of triangle A118400.
 * [A118414](http://oeis.org/A118414) ([L08 program](A118414.asm)): a(n) = (2*n - 1) * (2^n - 1).
 * [A118415](http://oeis.org/A118415) ([L08 program](A118415.asm)): (4*n - 3) * 2^(n - 1).
@@ -2569,6 +2570,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164587](http://oeis.org/A164587) ([L11 program](A164587.asm)): a(n) = 2*a(n - 2) for n > 2; a(1) = 1, a(2) = 8.
 * [A164593](http://oeis.org/A164593) ([L10 program](A164593.asm)): a(n) = ((5 + sqrt(18))*(2 + sqrt(8))^n + (5 - sqrt(18))*(2 - sqrt(8))^n)/2.
 * [A164604](http://oeis.org/A164604) ([L17 program](A164604.asm)): a(n) = ((1+4*sqrt(2))*(3+2*sqrt(2))^n + (1-4*sqrt(2))*(3-2*sqrt(2))^n)/2.
+* [A164605](http://oeis.org/A164605) ([L20 program](A164605.asm)): a(n) = ((1+4*sqrt(2))*(4+2*sqrt(2))^n + (1-4*sqrt(2))*(4-2*sqrt(2))^n)/2.
 * [A164608](http://oeis.org/A164608) ([L15 program](A164608.asm)): Expansion of (1+4*x)/(1-8*x+8*x^2).
 * [A164632](http://oeis.org/A164632) ([L10 program](A164632.asm)): a(1)=1 followed by 2^k appearing 2^(2*k-1) times for k>0.
 * [A164654](http://oeis.org/A164654) ([L12 program](A164654.asm)): a(n) = 2*a(n-2) for n > 2; a(1) = 3, a(2) = 8.
@@ -3248,6 +3250,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174396](http://oeis.org/A174396) ([L16 program](A174396.asm)): Numbers congruent to {1,4,5,8} mod 9.
 * [A174398](http://oeis.org/A174398) ([L23 program](A174398.asm)): Numbers that are congruent to {1, 4, 5, 8} mod 12.
 * [A174438](http://oeis.org/A174438) ([L09 program](A174438.asm)): Numbers that are congruent to {0, 2, 5, 8} mod 9.
+* [A174655](http://oeis.org/A174655) ([L27 program](A174655.asm)): Partial sums of A049486.
 * [A174709](http://oeis.org/A174709) ([L05 program](A174709.asm)): Partial sums of floor(n/6).
 * [A174723](http://oeis.org/A174723) ([L08 program](A174723.asm)): a(n) = n*(4*n^2 - 3*n + 5)/6.
 * [A174724](http://oeis.org/A174724) ([L11 program](A174724.asm)): Sum_{k=1..n} Floor((k + 3*sqrt(k))/k).

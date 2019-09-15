@@ -34,7 +34,7 @@ set terminal pngcairo font "arial,9" size 600,300
 set output 'lengths.png'
 set boxwidth 0.75
 set style fill solid
-set xrange [0:25]
+set xrange [0:40]
 unset key
 set title "LODA Program Length Distribution"
 plot "lengths.dat" using 2:xtic(1) with boxes linecolor rgb "#0000FF"
@@ -73,3 +73,4 @@ EOF
 gnuplot counts.gp
 rm counts.gp
 rm counts.dat
+rm counts.png
