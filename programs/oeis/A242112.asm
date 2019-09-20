@@ -13,7 +13,5 @@ lpb $2,1
   lpe
   sub $2,$0
   add $1,1
-  add $4,$0
-  sub $0,2
   sub $2,1
 lpe
