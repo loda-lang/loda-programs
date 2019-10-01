@@ -674,6 +674,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120413](http://oeis.org/A120413) ([L08 program](A120413.asm)): Largest even number strictly less than n^2.
 * [A120462](http://oeis.org/A120462) ([L10 program](A120462.asm)): Expansion of -2*x*(-3-2*x+4*x^2) / ((x-1)*(2*x+1)*(2*x-1)*(1+x)).
 * [A120471](http://oeis.org/A120471) ([L14 program](A120471.asm)): 6 *A015518(n).
+* [A120512](http://oeis.org/A120512) ([L20 program](A120512.asm)): a(n) = min{j : A120501(j) = n}.
 * [A120513](http://oeis.org/A120513) ([L12 program](A120513.asm)): a(n) = min{j : A120502(j) = n}.
 * [A120515](http://oeis.org/A120515) ([L28 program](A120515.asm)): a(n) = min{j : A120504(j) = n}.
 * [A120518](http://oeis.org/A120518) ([L13 program](A120518.asm)): a(n) = min{j : A120507(j) = n}.
@@ -2615,7 +2616,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164785](http://oeis.org/A164785) ([L10 program](A164785.asm)): a(n) = 5^n-4.
 * [A164845](http://oeis.org/A164845) ([L09 program](A164845.asm)): a(n) = (6 + 10*n + 5*n^2 + n^3)/2.
 * [A164897](http://oeis.org/A164897) ([L06 program](A164897.asm)): a(n) = 4*n*(n+1) + 3.
-* [A164906](http://oeis.org/A164906) ([L06 program](A164906.asm)): a(n) = (3*2^n - (-2)^n)/2.
+* [A164906](http://oeis.org/A164906) ([L06 program](A164906.asm)): Duplicate of A056450
 * [A164907](http://oeis.org/A164907) ([L10 program](A164907.asm)): a(n) = (3*3^n-(-1)^n)/2.
 * [A164908](http://oeis.org/A164908) ([L08 program](A164908.asm)): a(n) = (3*4^n - 0^n)/2.
 * [A164950](http://oeis.org/A164950) ([L27 program](A164950.asm)): 1 if there is a winning strategy for misère Sprouts with n initial points, else 0.
@@ -4086,6 +4087,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A196305](http://oeis.org/A196305) ([L07 program](A196305.asm)): a(n) = 15*2^n - 1.
 * [A196382](http://oeis.org/A196382) ([L10 program](A196382.asm)): Number of sequences of n coin flips, that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,1).
 * [A196410](http://oeis.org/A196410) ([L06 program](A196410.asm)): a(n) = n*2^(n-5).
+* [A196472](http://oeis.org/A196472) ([L19 program](A196472.asm)): a(1)=1; a(n) = floor((3 + sqrt(21))*a(n-1)/2) for n > 1.
 * [A196506](http://oeis.org/A196506) ([L14 program](A196506.asm)): a(n) = 1*3*5 + 3*5*7 + 5*7*9 + ... (n terms).
 * [A196507](http://oeis.org/A196507) ([L11 program](A196507.asm)): a(n) = n*(3*n^2 + 6*n + 1).
 * [A196508](http://oeis.org/A196508) ([L09 program](A196508.asm)): a(n) = 2^n*(n^2 - n + 4)-4.

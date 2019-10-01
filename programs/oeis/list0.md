@@ -334,6 +334,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004736](http://oeis.org/A004736) ([L08 program](A004736.asm)): Triangle read by rows: row n lists the first n positive integers in decreasing order.
 * [A004738](http://oeis.org/A004738) ([L09 program](A004738.asm)): Concatenation of sequences (1,2,..,n-1,n,n-1,..,2) for n >= 2.
 * [A004739](http://oeis.org/A004739) ([L14 program](A004739.asm)): Concatenation of sequences (1,2,2,..,n-1,n-1,n,n,n-1,n-1,..,2,2,1) for n >= 1.
+* [A004741](http://oeis.org/A004741) ([L16 program](A004741.asm)): Concatenation of sequences (1,3,..,2n-1,2n,2n-2,..,2) for n >= 1.
 * [A004754](http://oeis.org/A004754) ([L10 program](A004754.asm)): Numbers n whose binary expansion starts 10.
 * [A004755](http://oeis.org/A004755) ([L10 program](A004755.asm)): Binary expansion starts 11.
 * [A004756](http://oeis.org/A004756) ([L13 program](A004756.asm)): Binary expansion starts 100.
@@ -3019,6 +3020,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052549](http://oeis.org/A052549) ([L07 program](A052549.asm)): a(n) = 5*2^(n-1) - 1, n>0, with a(0)=1.
 * [A052551](http://oeis.org/A052551) ([L06 program](A052551.asm)): Expansion of 1/((1 - x)*(1 - 2*x^2)).
 * [A052552](http://oeis.org/A052552) ([L11 program](A052552.asm)): a(2*n+1) = 1, a(2*n) = 2*a(2*n-2) - 1.
+* [A052560](http://oeis.org/A052560) ([L15 program](A052560.asm)): a(n) = 3*n!.
 * [A052578](http://oeis.org/A052578) ([L12 program](A052578.asm)): a(0) = 0, a(n) = 4*n! for n > 0.
 * [A052749](http://oeis.org/A052749) ([L07 program](A052749.asm)): 2n*S2(n-1,2).
 * [A052762](http://oeis.org/A052762) ([L15 program](A052762.asm)): Products of 4 consecutive integers: a(n) = n*(n-1)*(n-2)*(n-3).
@@ -3217,7 +3219,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056182](http://oeis.org/A056182) ([L11 program](A056182.asm)): First differences of A003063.
 * [A056236](http://oeis.org/A056236) ([L08 program](A056236.asm)): a(n) = (2+sqrt(2))^n + (2-sqrt(2))^n.
 * [A056449](http://oeis.org/A056449) ([L08 program](A056449.asm)): a(n) = 3^floor((n+1)/2).
-* [A056450](http://oeis.org/A056450) ([L06 program](A056450.asm)): Number of palindromes of length n using a maximum of four different symbols.
+* [A056450](http://oeis.org/A056450) ([L06 program](A056450.asm)): a(n) = (3*2^n - (-2)^n)/2.
 * [A056451](http://oeis.org/A056451) ([L20 program](A056451.asm)): Number of palindromes using a maximum of five different symbols.
 * [A056452](http://oeis.org/A056452) ([L11 program](A056452.asm)): a(n) = 6^floor((n+1)/2).
 * [A056453](http://oeis.org/A056453) ([L06 program](A056453.asm)): Number of palindromes of length n using exactly two different symbols.
@@ -3857,6 +3859,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073188](http://oeis.org/A073188) ([L08 program](A073188.asm)): n appears 1+[n/3] times.
 * [A073357](http://oeis.org/A073357) ([L09 program](A073357.asm)): Binomial transform of tribonacci numbers.
 * [A073359](http://oeis.org/A073359) ([L12 program](A073359.asm)): Nested floor product of n and fractions (2k+2)/(2k+1) for all k>=0, divided by 2.
+* [A073361](http://oeis.org/A073361) ([L22 program](A073361.asm)): Nested floor product of n and fractions (k+1)/k for all k>0 (mod 4), divided by 4.
 * [A073388](http://oeis.org/A073388) ([L15 program](A073388.asm)): Convolution of A002605(n) (generalized (2,2)-Fibonacci), n >= 0, with itself.
 * [A073423](http://oeis.org/A073423) ([L08 program](A073423.asm)): Sums of two powers of zero: triangle read by rows: T(m,n) = 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n
 * [A073424](http://oeis.org/A073424) ([L06 program](A073424.asm)): Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.

@@ -577,6 +577,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225690](http://oeis.org/A225690) ([L20 program](A225690.asm)): Number of Dyck paths of semilength n avoiding the pattern U^3 D^3 U D.
 * [A225773](http://oeis.org/A225773) ([L21 program](A225773.asm)): The squares on a chessboard that are black, counting from top left corner and down.
 * [A225875](http://oeis.org/A225875) ([L07 program](A225875.asm)): We write the 1 + 4*k numbers once and twice the others.
+* [A225894](http://oeis.org/A225894) ([L22 program](A225894.asm)): Number of n X 2 binary arrays whose sum with another n X 2 binary array containing no more than a single 1 has rows and columns in lexicographically nondecreasing order.
 * [A225972](http://oeis.org/A225972) ([L17 program](A225972.asm)): The number of binary pattern classes in the (2,n)-rectangular grid with 3 '1's and (2n-3) '0's: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
 * [A226023](http://oeis.org/A226023) ([L24 program](A226023.asm)): A142705 (numerators of 1/4-1/(4n^2)) sorted to natural order.
 * [A226096](http://oeis.org/A226096) ([L09 program](A226096.asm)): Squares with doubled (4*n+2)^2.
@@ -1103,6 +1104,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253503](http://oeis.org/A253503) ([L18 program](A253503.asm)): Number of (n+2) X (1+2) 0..1 arrays with every 2 X 2 and 3 X 3 subblock diagonal maximum minus antidiagonal minimum nondecreasing horizontally and vertically.
 * [A253513](http://oeis.org/A253513) ([L06 program](A253513.asm)): The characteristic function of the multiples of eight.
 * [A253515](http://oeis.org/A253515) ([L09 program](A253515.asm)): Count down from 2*k to 1, then from 2*(k+1) to 1 and so on.
+* [A253580](http://oeis.org/A253580) ([L15 program](A253580.asm)): A fractal tree, read by rows: for n > 1: T(n,0) = T(n-1,0)+2, T(n,2*n) = T(n-1,0)+3, and for k=1..2*n-1: T(n,k) = T(n-1,k-1).
 * [A253608](http://oeis.org/A253608) ([L18 program](A253608.asm)): The binary representation of a(n) is the concatenation of n and the binary complement of n, A035327(n).
 * [A253679](http://oeis.org/A253679) ([L12 program](A253679.asm)): Numbers a(n) that are the starting terms in the sum of an odd number of consecutive cubes equal to a square.
 * [A253707](http://oeis.org/A253707) ([L24 program](A253707.asm)): Numbers M(n) which are the number of terms in the sums of consecutive cubed integers equaling a squared integer, b^3 + (b+1)^3 + ... + (b+M-1)^3 = c^2, for a first term b(n) being an odd squared integer (A016754).
@@ -1966,6 +1968,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288938](http://oeis.org/A288938) ([L20 program](A288938.asm)): Positions of 1 in A288936; complement of A288937.
 * [A288958](http://oeis.org/A288958) ([L10 program](A288958.asm)): Number of cliques in the n X n rook graph.
 * [A288961](http://oeis.org/A288961) ([L10 program](A288961.asm)): Number of 3-cycles in the n X n rook graph.
+* [A289060](http://oeis.org/A289060) ([L31 program](A289060.asm)): a(n) = 3*a(n-1) - 3*a(n-2) + *a(n-3) for n >= 8, where a(0) = 2, a(1) = 4, a(2) = 7, a(3) = 11, a(4) = 17, a(5) = 25, a(6) = 36, a(7) = 51.
 * [A289121](http://oeis.org/A289121) ([L20 program](A289121.asm)): a(n) = (8 - 2*n + 11*n^2 - 6*n^3 + n^4)/4.
 * [A289133](http://oeis.org/A289133) ([L07 program](A289133.asm)): a(n) is the number of odd integers divisible by 9 in ]2*(n-1)^2, 2*n^2[.
 * [A289134](http://oeis.org/A289134) ([L13 program](A289134.asm)): a(n) = 21*n^2 - 33*n + 13.
@@ -2142,6 +2145,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298024](http://oeis.org/A298024) ([L13 program](A298024.asm)): G.f.: (x^4+3*x^3+6*x^2+3*x+1)/((1-x)*(1-x^3)).
 * [A298025](http://oeis.org/A298025) ([L15 program](A298025.asm)): Partial sums of A298024.
 * [A298027](http://oeis.org/A298027) ([L10 program](A298027.asm)): Partial sums of A298026.
+* [A298028](http://oeis.org/A298028) ([L23 program](A298028.asm)): Coordination sequence of Dual(3.6.3.6) tiling with respect to a trivalent node.
 * [A298029](http://oeis.org/A298029) ([L19 program](A298029.asm)): Coordination sequence of Dual(3.4.6.4) tiling with respect to a trivalent node.
 * [A298031](http://oeis.org/A298031) ([L23 program](A298031.asm)): Coordination sequence of Dual(3.4.6.4) tiling with respect to a tetravalent node.
 * [A298033](http://oeis.org/A298033) ([L14 program](A298033.asm)): Coordination sequence of the Dual(3.4.6.4) tiling with respect to a hexavalent node.
