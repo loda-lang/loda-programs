@@ -589,6 +589,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007758](http://oeis.org/A007758) ([L07 program](A007758.asm)): a(n) = 2^n*n^2.
 * [A007877](http://oeis.org/A007877) ([L08 program](A007877.asm)): Period 4 zigzag sequence: repeat [0,1,2,1].
 * [A007891](http://oeis.org/A007891) ([L18 program](A007891.asm)): A Kutz sequence.
+* [A007892](http://oeis.org/A007892) ([L17 program](A007892.asm)): A Kutz sequence.
 * [A007900](http://oeis.org/A007900) ([L24 program](A007900.asm)): Coordination sequence for D_4 lattice.
 * [A007909](http://oeis.org/A007909) ([L10 program](A007909.asm)): Expansion of (1-x)/(1-2*x+x^2-2*x^3).
 * [A007910](http://oeis.org/A007910) ([L22 program](A007910.asm)): Expansion of 1/((1-2*x)*(1+x^2)).
@@ -1202,6 +1203,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A019426](http://oeis.org/A019426) ([L19 program](A019426.asm)): Continued fraction for tan(1/3).
 * [A019427](http://oeis.org/A019427) ([L16 program](A019427.asm)): Continued fraction for tan(1/4).
 * [A019442](http://oeis.org/A019442) ([L05 program](A019442.asm)): Numbers n such that a Hadamard matrix of order n exists.
+* [A019485](http://oeis.org/A019485) ([L25 program](A019485.asm)): a(n) = 2*a(n-1) + 2*a(n-2) - 3*a(n-3).
 * [A019525](http://oeis.org/A019525) ([L13 program](A019525.asm)): Poincaré series [or Poincare series] for depths of roots in a certain root system.
 * [A019557](http://oeis.org/A019557) ([L08 program](A019557.asm)): Coordination sequence for G_2 lattice.
 * [A019559](http://oeis.org/A019559) ([L21 program](A019559.asm)): Distance between vowels when alphabet is written around a daisy wheel.
@@ -3117,6 +3119,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054088](http://oeis.org/A054088) ([L30 program](A054088.asm)): a(n) = A054086(3n); also a bisection of A003511.
 * [A054107](http://oeis.org/A054107) ([L24 program](A054107.asm)): T(n,n-3), array T as in A054106.
 * [A054111](http://oeis.org/A054111) ([L19 program](A054111.asm)): Row sums of array T as in A054110.
+* [A054116](http://oeis.org/A054116) ([L17 program](A054116.asm)): T(n,n-1), array T as in A054115.
 * [A054127](http://oeis.org/A054127) ([L17 program](A054127.asm)): a(1) = 2; a(n) = 9*2^(n-2) - n - 2, n>1.
 * [A054135](http://oeis.org/A054135) ([L07 program](A054135.asm)): T(n,1), array T as in A054134.
 * [A054254](http://oeis.org/A054254) ([L09 program](A054254.asm)): a(n) is n plus the minimum of the a(i)*a(n-i) of the previous i=1..n-1.
@@ -3349,6 +3352,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059841](http://oeis.org/A059841) ([L05 program](A059841.asm)): Period 2: Repeat [1,0]. a(n) = 1 - (n mod 2).
 * [A059845](http://oeis.org/A059845) ([L06 program](A059845.asm)): a(n) = n*(3*n + 11)/2.
 * [A059855](http://oeis.org/A059855) ([L08 program](A059855.asm)): Quotient cycle lengths in continued fraction expansion of Sqrt(n^2+4).
+* [A059924](http://oeis.org/A059924) ([L27 program](A059924.asm)): Write the numbers from 1 to n^2 in a spiraling square; a(n) is the total of the sums of the two diagonals.
 * [A059937](http://oeis.org/A059937) ([L15 program](A059937.asm)): Sum of binary numbers with n 1's and two (possibly leading) 0's.
 * [A059938](http://oeis.org/A059938) ([L10 program](A059938.asm)): Sum of binary numbers with n 1's and two (non-leading) 0's.
 * [A059939](http://oeis.org/A059939) ([L07 program](A059939.asm)): a(n) = floor(log_2(n+1) - 1).
@@ -4670,6 +4674,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A094283](http://oeis.org/A094283) ([L13 program](A094283.asm)): Row sums of triangle A094280.
 * [A094284](http://oeis.org/A094284) ([L04 program](A094284.asm)): A094283(n+1)/A094283(n).
 * [A094328](http://oeis.org/A094328) ([L13 program](A094328.asm)): Iterate the map in A006369 starting at 4.
+* [A094359](http://oeis.org/A094359) ([L11 program](A094359.asm)): Pair reversal of a Jacobsthal sequence.
 * [A094361](http://oeis.org/A094361) ([L13 program](A094361.asm)): Pair-reversal of 1,4,4,16,16...
 * [A094373](http://oeis.org/A094373) ([L07 program](A094373.asm)): Expansion of (1-x-x^2)/((1-x)*(1-2*x)).
 * [A094374](http://oeis.org/A094374) ([L11 program](A094374.asm)): a(n)=(3^n-1)/2+2^n.

@@ -419,6 +419,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315907](http://oeis.org/A315907) ([L09 program](A315907.asm)): Coordination sequence Gal.3.40.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A316026](http://oeis.org/A316026) ([L12 program](A316026.asm)): Coordination sequence Gal.3.36.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A316224](http://oeis.org/A316224) ([L08 program](A316224.asm)): a(n) = n*(2*n + 1)*(4*n + 1).
+* [A316320](http://oeis.org/A316320) ([L28 program](A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
 * [A316355](http://oeis.org/A316355) ([L08 program](A316355.asm)): 2k-1 appears 2k times after 2k-2 appears once.
 * [A316466](http://oeis.org/A316466) ([L07 program](A316466.asm)): a(n) = 2*n*(7*n - 3).
 * [A316533](http://oeis.org/A316533) ([L24 program](A316533.asm)): a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
@@ -534,6 +535,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323614](http://oeis.org/A323614) ([L14 program](A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
 * [A323629](http://oeis.org/A323629) ([L20 program](A323629.asm)): List of 6-powerful numbers (for the definition of k-powerful see A323395).
 * [A323724](http://oeis.org/A323724) ([L15 program](A323724.asm)): a(n) = n*(2*(n - 2)*n + (-1)^n + 3)/4.
+* [A323735](http://oeis.org/A323735) ([L14 program](A323735.asm)): a(n) is the largest minimal distance of a binary LCD [n,2] code.
 * [A323824](http://oeis.org/A323824) ([L07 program](A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
 * [A324015](http://oeis.org/A324015) ([L10 program](A324015.asm)): Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
 * [A324172](http://oeis.org/A324172) ([L11 program](A324172.asm)): Number of subsets of {1,...,n} that cross their complement.
