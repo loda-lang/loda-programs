@@ -1897,6 +1897,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033350](http://oeis.org/A033350) ([L17 program](A033350.asm)): [ 30/n ].
 * [A033351](http://oeis.org/A033351) ([L22 program](A033351.asm)): [ 31/n ].
 * [A033356](http://oeis.org/A033356) ([L37 program](A033356.asm)): [ 36/n ].
+* [A033376](http://oeis.org/A033376) ([L31 program](A033376.asm)): [ 56/n ].
 * [A033386](http://oeis.org/A033386) ([L23 program](A033386.asm)): [ 66/n ].
 * [A033428](http://oeis.org/A033428) ([L06 program](A033428.asm)): a(n) = 3*n^2.
 * [A033429](http://oeis.org/A033429) ([L06 program](A033429.asm)): a(n) = 5*n^2.
@@ -3649,6 +3650,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A064842](http://oeis.org/A064842) ([L13 program](A064842.asm)): Maximal value of sum([p(i)-p(i+1)]^2,i=1..n), where p(n+1)=p(1), as p ranges over all permutations of {1,2,...,n}.
 * [A064843](http://oeis.org/A064843) ([L12 program](A064843.asm)): A064842/2.
 * [A064866](http://oeis.org/A064866) ([L10 program](A064866.asm)): Write numbers 1, then 1 up to 2^2, then 1 up to 3^2, then 1 up to 4^2 and so on.
+* [A064997](http://oeis.org/A064997) ([L26 program](A064997.asm)): A Beatty sequence: [Pi^2 -8].
 * [A064999](http://oeis.org/A064999) ([L07 program](A064999.asm)): Partial sums of sequence (essentially A002378): 1, 2, 6, 12, 20, 30, 42, 56, 72, 90, ...
 * [A065033](http://oeis.org/A065033) ([L06 program](A065033.asm)): 1 appears three times, other numbers twice.
 * [A065034](http://oeis.org/A065034) ([L07 program](A065034.asm)): a(n) = Lucas(2*n) + 1.
