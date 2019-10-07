@@ -1638,7 +1638,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A026476](http://oeis.org/A026476) ([L19 program](A026476.asm)): For n>3, a(n) = 7*n - 21 + 2*(-1)^n.
 * [A026484](http://oeis.org/A026484) ([L06 program](A026484.asm)): Erroneous version of A026488.
 * [A026488](http://oeis.org/A026488) ([L12 program](A026488.asm)): a(n) = least positive integer > a(n-1) and not a(i)*a(j)-a(k) for 1<=i<=j<=k<=n.
-* [A026516](http://oeis.org/A026516) ([L31 program](A026516.asm)): a(n) = least positive integer > a(n-1) and not (a(i)+a(j))^2 + a(k)^2 for 1<=i<=j<=k<=n.
 * [A026581](http://oeis.org/A026581) ([L18 program](A026581.asm)): Expansion of (1 + 2*x) / (1 - x - 4*x^2).
 * [A026583](http://oeis.org/A026583) ([L28 program](A026583.asm)): a(n) = Sum{T(i,j)}, 0<=j<=i, 0<=i<=2n, T given by A026568.
 * [A026597](http://oeis.org/A026597) ([L15 program](A026597.asm)): Expansion of (1+x)/(1-x-4*x^2).
@@ -1890,6 +1889,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033341](http://oeis.org/A033341) ([L13 program](A033341.asm)): [ 21/n ].
 * [A033342](http://oeis.org/A033342) ([L18 program](A033342.asm)): [ 22/n ].
 * [A033343](http://oeis.org/A033343) ([L17 program](A033343.asm)): [ 23/n ].
+* [A033344](http://oeis.org/A033344) ([L20 program](A033344.asm)): [ 24/n ].
 * [A033345](http://oeis.org/A033345) ([L27 program](A033345.asm)): [ 25/n ].
 * [A033347](http://oeis.org/A033347) ([L15 program](A033347.asm)): [ 27/n ].
 * [A033348](http://oeis.org/A033348) ([L18 program](A033348.asm)): [ 28/n ].
@@ -2914,6 +2914,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049598](http://oeis.org/A049598) ([L05 program](A049598.asm)): 12 times triangular numbers.
 * [A049610](http://oeis.org/A049610) ([L08 program](A049610.asm)): a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3)).
 * [A049624](http://oeis.org/A049624) ([L07 program](A049624.asm)): Essentially the same as A032766.
+* [A049625](http://oeis.org/A049625) ([L20 program](A049625.asm)): Congruent to 1, 2, 4, 6, 8 or 9 mod 11, but with 2 instead of 1.
 * [A049636](http://oeis.org/A049636) ([L07 program](A049636.asm)): Congruent to 0 or 2 mod 3, but not equal to 0 or 3.
 * [A049637](http://oeis.org/A049637) ([L14 program](A049637.asm)): Congruent to 2, 3, 6, 8, 10 or 12 mod 13, but not equal to 3.
 * [A049638](http://oeis.org/A049638) ([L22 program](A049638.asm)): a(n)=T(n,4), array T as in A049627.
@@ -3518,6 +3519,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063125](http://oeis.org/A063125) ([L16 program](A063125.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 57 ).
 * [A063126](http://oeis.org/A063126) ([L25 program](A063126.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 58 ).
 * [A063128](http://oeis.org/A063128) ([L08 program](A063128.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 60 ).
+* [A063129](http://oeis.org/A063129) ([L30 program](A063129.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 61 ).
 * [A063130](http://oeis.org/A063130) ([L07 program](A063130.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 62 ).
 * [A063133](http://oeis.org/A063133) ([L11 program](A063133.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 65 ).
 * [A063134](http://oeis.org/A063134) ([L08 program](A063134.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 66 ).
@@ -3745,6 +3747,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A069072](http://oeis.org/A069072) ([L09 program](A069072.asm)): a(n) = (2n+1)*(2n+2)*(2n+3).
 * [A069074](http://oeis.org/A069074) ([L09 program](A069074.asm)): a(n) = (2*n+2)*(2*n+3)*(2*n+4) = 24*A000330(n+1).
 * [A069075](http://oeis.org/A069075) ([L14 program](A069075.asm)): a(n) = (4n^2-1)^2.
+* [A069078](http://oeis.org/A069078) ([L24 program](A069078.asm)): a(n) = n(4*n^4 + 1).
 * [A069099](http://oeis.org/A069099) ([L06 program](A069099.asm)): Centered heptagonal numbers.
 * [A069125](http://oeis.org/A069125) ([L06 program](A069125.asm)): a(n) = (11*n^2 - 11*n + 2)/2.
 * [A069126](http://oeis.org/A069126) ([L06 program](A069126.asm)): Centered 13-gonal numbers.
