@@ -1687,6 +1687,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027603](http://oeis.org/A027603) ([L21 program](A027603.asm)): a(n) = n^3 + (n+1)^3 + (n+2)^3 + (n+3)^3.
 * [A027604](http://oeis.org/A027604) ([L24 program](A027604.asm)): a(n) = n^3 + (n+1)^3 + (n+2)^3 + (n+3)^3 + (n+4)^3.
 * [A027620](http://oeis.org/A027620) ([L10 program](A027620.asm)): a(n) = n + (n+1)^2 + (n+2)^3.
+* [A027621](http://oeis.org/A027621) ([L20 program](A027621.asm)): a(n) = n + (n+1)^2 + (n+2)^3 + (n+3)^4.
 * [A027649](http://oeis.org/A027649) ([L19 program](A027649.asm)): a(n) = 2*(3^n) - 2^n.
 * [A027656](http://oeis.org/A027656) ([L06 program](A027656.asm)): Expansion of 1/(1-x^2)^2 (included only for completeness - the policy is always to omit the zeros from such sequences).
 * [A027688](http://oeis.org/A027688) ([L06 program](A027688.asm)): a(n) = n^2 + n + 3.
@@ -2226,6 +2227,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040553](http://oeis.org/A040553) ([L13 program](A040553.asm)): Continued fraction for sqrt(578).
 * [A040554](http://oeis.org/A040554) ([L16 program](A040554.asm)): Continued fraction for sqrt(579).
 * [A040555](http://oeis.org/A040555) ([L20 program](A040555.asm)): Continued fraction for sqrt(580).
+* [A040557](http://oeis.org/A040557) ([L16 program](A040557.asm)): Continued fraction for sqrt(582).
 * [A040559](http://oeis.org/A040559) ([L16 program](A040559.asm)): Continued fraction for sqrt(584).
 * [A040567](http://oeis.org/A040567) ([L20 program](A040567.asm)): Continued fraction for sqrt(592).
 * [A040600](http://oeis.org/A040600) ([L07 program](A040600.asm)): Continued fraction for sqrt(626).
@@ -2855,6 +2857,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048504](http://oeis.org/A048504) ([L12 program](A048504.asm)): a(n) = T(n,n), array T given by A048494.
 * [A048506](http://oeis.org/A048506) ([L16 program](A048506.asm)): a(n) = T(0,n), array T given by A048505.
 * [A048507](http://oeis.org/A048507) ([L14 program](A048507.asm)): a(n) = T(2,n), array T given by A048505.
+* [A048508](http://oeis.org/A048508) ([L13 program](A048508.asm)): a(n) = T(3,n), array T given by A048505.
 * [A048573](http://oeis.org/A048573) ([L15 program](A048573.asm)): a(n) = a(n-1) + 2*a(n-2), a(0)=2, a(1)=3.
 * [A048575](http://oeis.org/A048575) ([L07 program](A048575.asm)): Pisot sequences L(2,5), E(2,5).
 * [A048577](http://oeis.org/A048577) ([L08 program](A048577.asm)): Pisot sequence L(3,4).
@@ -4229,6 +4232,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081704](http://oeis.org/A081704) ([L10 program](A081704.asm)): Let f(0)=1, f(1)=t, f(n+1) = (f(n)^2+t^n)/f(n-1). f(t) is a polynomial with integer coefficients. Then a(n) = f(n) when t=3.
 * [A081714](http://oeis.org/A081714) ([L11 program](A081714.asm)): a(n) = F(n)*L(n+1) where F=Fibonacci and L=Lucas numbers.
 * [A081808](http://oeis.org/A081808) ([L05 program](A081808.asm)): Numbers n such that the largest prime power in the factorization of n equals phi(n).
+* [A081908](http://oeis.org/A081908) ([L16 program](A081908.asm)): a(n) = 2^n*(n^2 - n + 8)/8.
 * [A081956](http://oeis.org/A081956) ([L17 program](A081956.asm)): Duplicate of A056182.
 * [A082040](http://oeis.org/A082040) ([L09 program](A082040.asm)): a(n) = 9*n^2 + 3*n + 1.
 * [A082041](http://oeis.org/A082041) ([L08 program](A082041.asm)): 16n^2+4n+1.
