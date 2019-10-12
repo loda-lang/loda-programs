@@ -323,6 +323,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004443](http://oeis.org/A004443) ([L16 program](A004443.asm)): Nimsum n + 2.
 * [A004444](http://oeis.org/A004444) ([L08 program](A004444.asm)): Nimsum n + 3.
 * [A004445](http://oeis.org/A004445) ([L17 program](A004445.asm)): Nimsum n + 4.
+* [A004448](http://oeis.org/A004448) ([L29 program](A004448.asm)): Nimsum n + 7.
 * [A004466](http://oeis.org/A004466) ([L08 program](A004466.asm)): a(n) = n*(5*n^2 - 2)/3.
 * [A004467](http://oeis.org/A004467) ([L08 program](A004467.asm)): a(n) = n*(11*n^2 - 5)/6.
 * [A004482](http://oeis.org/A004482) ([L17 program](A004482.asm)): Tersum n + 1 (answer recorded in base 10).
