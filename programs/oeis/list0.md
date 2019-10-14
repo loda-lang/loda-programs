@@ -1060,6 +1060,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016839](http://oeis.org/A016839) ([L24 program](A016839.asm)): a(n) = (4*n+3)^3.
 * [A016850](http://oeis.org/A016850) ([L09 program](A016850.asm)): a(n) = (5n)^2.
 * [A016851](http://oeis.org/A016851) ([L16 program](A016851.asm)): a(n) = (5*n)^3.
+* [A016852](http://oeis.org/A016852) ([L18 program](A016852.asm)): (5n)^4.
 * [A016861](http://oeis.org/A016861) ([L05 program](A016861.asm)): a(n) = 5*n + 1.
 * [A016862](http://oeis.org/A016862) ([L11 program](A016862.asm)): (5n+1)^2.
 * [A016873](http://oeis.org/A016873) ([L05 program](A016873.asm)): a(n) = 5n + 2.
@@ -1208,6 +1209,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A019485](http://oeis.org/A019485) ([L25 program](A019485.asm)): a(n) = 2*a(n-1) + 2*a(n-2) - 3*a(n-3).
 * [A019525](http://oeis.org/A019525) ([L13 program](A019525.asm)): Poincaré series [or Poincare series] for depths of roots in a certain root system.
 * [A019557](http://oeis.org/A019557) ([L08 program](A019557.asm)): Coordination sequence for G_2 lattice.
+* [A019558](http://oeis.org/A019558) ([L19 program](A019558.asm)): Coordination sequence for F_4 lattice.
 * [A019559](http://oeis.org/A019559) ([L21 program](A019559.asm)): Distance between vowels when alphabet is written around a daisy wheel.
 * [A019560](http://oeis.org/A019560) ([L16 program](A019560.asm)): Coordination sequence for C_4 lattice.
 * [A019582](http://oeis.org/A019582) ([L14 program](A019582.asm)): n*(n-1)^3/2.
@@ -1925,17 +1927,17 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033538](http://oeis.org/A033538) ([L17 program](A033538.asm)): a(0)=1, a(1)=1, a(n) = 3*a(n-1)+a(n-2)+1.
 * [A033539](http://oeis.org/A033539) ([L19 program](A033539.asm)): a(0)=1, a(1)=1, a(2)=1, a(n) = 2*a(n-1) + a(n-2) + 1.
 * [A033547](http://oeis.org/A033547) ([L06 program](A033547.asm)): Otto Haxel's guess for magic numbers of nuclear shells.
-* [A033550](http://oeis.org/A033550) ([L08 program](A033550.asm)): A005248(n)-n.
+* [A033550](http://oeis.org/A033550) ([L08 program](A033550.asm)): a(n) = A005248(n) - n.
 * [A033562](http://oeis.org/A033562) ([L11 program](A033562.asm)): a(n) = 2*n^3 + 1.
 * [A033567](http://oeis.org/A033567) ([L08 program](A033567.asm)): a(n) = (2*n-1)*(4*n-1).
 * [A033568](http://oeis.org/A033568) ([L07 program](A033568.asm)): Second pentagonal numbers with odd index: (2*n-1)*(3*n-1).
 * [A033570](http://oeis.org/A033570) ([L07 program](A033570.asm)): Pentagonal numbers with odd index: a(n) = (2*n+1)*(3*n+1).
 * [A033571](http://oeis.org/A033571) ([L08 program](A033571.asm)): a(n) = (2*n + 1)*(5*n + 1).
 * [A033572](http://oeis.org/A033572) ([L08 program](A033572.asm)): a(n) = (2*n+1)*(7*n+1).
-* [A033573](http://oeis.org/A033573) ([L11 program](A033573.asm)): (2n+1)(9n+1).
-* [A033574](http://oeis.org/A033574) ([L11 program](A033574.asm)): (2n+1)(10n+1).
-* [A033575](http://oeis.org/A033575) ([L12 program](A033575.asm)): (2n+1)(11n+1).
-* [A033576](http://oeis.org/A033576) ([L10 program](A033576.asm)): (2*n+1)*(12*n+1).
+* [A033573](http://oeis.org/A033573) ([L11 program](A033573.asm)): a(n) = (2*n+1)*(9*n+1).
+* [A033574](http://oeis.org/A033574) ([L11 program](A033574.asm)): a(n) = (2*n+1)*(10*n+1).
+* [A033575](http://oeis.org/A033575) ([L12 program](A033575.asm)): a(n) = (2*n+1)*(11*n+1).
+* [A033576](http://oeis.org/A033576) ([L10 program](A033576.asm)): a(n) = (2*n+1)*(12*n+1).
 * [A033577](http://oeis.org/A033577) ([L08 program](A033577.asm)): a(n) = (3*n+1) * (4*n+1).
 * [A033578](http://oeis.org/A033578) ([L10 program](A033578.asm)): a(n) = (3*n - 1)*(4*n - 1).
 * [A033579](http://oeis.org/A033579) ([L06 program](A033579.asm)): Four times pentagonal numbers: a(n) = 2*n*(3*n-1).
@@ -1954,6 +1956,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033691](http://oeis.org/A033691) ([L12 program](A033691.asm)): Minimal number of vertices in 1-1 deficient regular graph where minimal degree is 1 and maximal degree is n.
 * [A033811](http://oeis.org/A033811) ([L21 program](A033811.asm)): Convolution of natural numbers n >= 1 with Lucas numbers L(k)(A000032) for k >= 2.
 * [A033813](http://oeis.org/A033813) ([L14 program](A033813.asm)): Convolution of natural numbers n >= 1 with Lucas numbers L(k)(A000032) for k >= 3.
+* [A033814](http://oeis.org/A033814) ([L29 program](A033814.asm)): Convolution of natural numbers n >= 1 with Lucas numbers L(k)(A000032) for k >= 4.
 * [A033816](http://oeis.org/A033816) ([L07 program](A033816.asm)): a(n) = 2*n^2 + 3*n + 3.
 * [A033818](http://oeis.org/A033818) ([L17 program](A033818.asm)): Convolution of natural numbers n >= 1 with Lucas numbers L(k) for k >= -2.
 * [A033887](http://oeis.org/A033887) ([L11 program](A033887.asm)): a(n) = Fibonacci(3n+1).
@@ -4311,6 +4314,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083375](http://oeis.org/A083375) ([L14 program](A083375.asm)): n appears prime(n) times.
 * [A083416](http://oeis.org/A083416) ([L10 program](A083416.asm)): Add 1, double, add 1, double, etc.
 * [A083420](http://oeis.org/A083420) ([L07 program](A083420.asm)): a(n) = 2*4^n - 1.
+* [A083456](http://oeis.org/A083456) ([L24 program](A083456.asm)): Smallest nontrivial k such that k^n + 1 is a palindrome (k>1 for n>1).
 * [A083457](http://oeis.org/A083457) ([L25 program](A083457.asm)): Smallest nontrivial k such that k^n - 1 is a palindrome (k >1 for n>1).
 * [A083479](http://oeis.org/A083479) ([L20 program](A083479.asm)): The natural numbers with all terms of A033638 inserted.
 * [A083575](http://oeis.org/A083575) ([L06 program](A083575.asm)): a(0) = 6; for n>0, a(n) = 2*a(n-1) - 1.
