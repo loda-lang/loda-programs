@@ -4188,3 +4188,4 @@ A033293: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T02.asm
 A022847: -p 60 -n 6 -i 6 -o asml -a cd
 A228949: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T02.asm
 A198264: -p 30 -n 3 -i 6 -o asm -a cd -e programs/templates/T02.asm
+A031138: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T01.asm
