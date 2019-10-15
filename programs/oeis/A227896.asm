@@ -1,0 +1,42 @@
+; A227896: 32-beat repeating palindromic sequence: digital roots of Fibonacci numbers indexed by the set of natural numbers not divisible by 2, 3 or 5 (A007775).
+; 1,4,8,8,4,5,1,5,4,8,4,5,1,1,5,8,8,5,1,1,5,4,8,4,5,1,5,4,8,8,4,1,1,4,8,8,4,5,1,5,4,8,4,5,1,1,5,8,8,5,1,1,5,4,8,4,5,1,5,4,8,8,4,1,1,4,8,8,4,5,1,5,4,8,4,5,1,1,5,8,8,5,1,1,5,4,8,4,5,1,5,4,8,8,4,1,1,4,8,8,4,5,1,5,4,8,4,5,1,1,5,8,8,5,1,1,5,4,8,4,5,1,5,4,8,8,4,1
+
+mov $33,$0
+lpb $2,$33
+  sub $33,32
+lpe
+mov $2,$33
+add $2,3
+mov $3,1
+mov $4,4
+mov $5,8
+mov $6,8
+mov $7,4
+mov $8,5
+mov $9,1
+mov $10,5
+mov $11,4
+mov $12,8
+mov $13,4
+mov $14,5
+mov $15,1
+mov $16,1
+mov $17,5
+mov $18,8
+mov $19,8
+mov $20,5
+mov $21,1
+mov $22,1
+mov $23,5
+mov $24,4
+mov $25,8
+mov $26,4
+mov $27,5
+mov $28,1
+mov $29,5
+mov $30,4
+mov $31,8
+mov $32,8
+mov $33,4
+mov $34,1
+mov $1,$$2

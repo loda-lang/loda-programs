@@ -1,0 +1,41 @@
+; A071792: Decimal expansion of the fourth (of 10) decimal selvage number; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
+; 3,7,1,4,8,2,6,9,3,7,0,4,8,2,5,9,3,6,0,4,8,1,5,9,2,6,0,4,7,1,5,8,2,6,0,3,7,1,4,8,2,6,9,3,7,0,4,8,2,5,9,3,6,0,4,8,1,5,9,2,6,0,4,7,1,5,8,2,6,0,3,7,1,4,8,2,6,9,3,7,0,4,8,2,5,9,3,6,0,4,8,1,5,9,2,6,0,4,7,1
+
+mov $36,$0
+lpb $2,$36
+  sub $36,35
+lpe
+mov $2,$36
+add $2,3
+mov $3,3
+mov $4,7
+mov $5,1
+mov $6,4
+mov $7,8
+mov $8,2
+mov $9,6
+mov $10,9
+mov $11,3
+mov $12,7
+mov $14,4
+mov $15,8
+mov $16,2
+mov $17,5
+mov $18,9
+mov $19,3
+mov $20,6
+mov $22,4
+mov $23,8
+mov $24,1
+mov $25,5
+mov $26,9
+mov $27,2
+mov $28,6
+mov $30,4
+mov $31,7
+mov $32,1
+mov $33,5
+mov $34,8
+mov $35,2
+mov $36,6
+mov $1,$$2

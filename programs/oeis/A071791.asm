@@ -1,0 +1,42 @@
+; A071791: Decimal expansion of the third (of 10) decimal selvage numbers; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
+; 2,5,7,0,2,5,7,0,3,5,8,0,3,5,8,1,3,6,8,1,3,6,9,1,4,6,9,1,4,7,9,2,4,7,9,2,5,7,0,2,5,7,0,3,5,8,0,3,5,8,1,3,6,8,1,3,6,9,1,4,6,9,1,4,7,9,2,4,7,9,2,5,7,0,2,5,7,0,3,5,8,0,3,5,8,1,3,6,8,1,3,6,9,1,4,6,9,1,4,7
+
+mov $36,$0
+lpb $2,$36
+  sub $36,35
+lpe
+mov $2,$36
+add $2,3
+mov $3,2
+mov $4,5
+mov $5,7
+mov $7,2
+mov $8,5
+mov $9,7
+mov $11,3
+mov $12,5
+mov $13,8
+mov $15,3
+mov $16,5
+mov $17,8
+mov $18,1
+mov $19,3
+mov $20,6
+mov $21,8
+mov $22,1
+mov $23,3
+mov $24,6
+mov $25,9
+mov $26,1
+mov $27,4
+mov $28,6
+mov $29,9
+mov $30,1
+mov $31,4
+mov $32,7
+mov $33,9
+mov $34,2
+mov $35,4
+mov $36,7
+mov $37,9
+mov $1,$$2
