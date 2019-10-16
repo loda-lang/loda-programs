@@ -6,7 +6,6 @@ add $5,5
 add $2,$5
 lpb $2,1
   add $0,1
-  sub $2,1
 lpe
 lpb $0,1
   add $2,1
