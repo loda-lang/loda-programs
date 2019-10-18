@@ -363,7 +363,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108922](http://oeis.org/A108922) ([L13 program](A108922.asm)): Expansion of 1/((x^8+1)*(x-1)^2).
 * [A108928](http://oeis.org/A108928) ([L08 program](A108928.asm)): a(n) = 8*n^2 - 3.
 * [A109007](http://oeis.org/A109007) ([L08 program](A109007.asm)): a(n) = gcd(n,3).
-* [A109008](http://oeis.org/A109008) ([L10 program](A109008.asm)): a(n) = GCD(n,4).
+* [A109008](http://oeis.org/A109008) ([L10 program](A109008.asm)): a(n) = gcd(n,4).
 * [A109009](http://oeis.org/A109009) ([L12 program](A109009.asm)): a(n) = GCD(n,5).
 * [A109010](http://oeis.org/A109010) ([L14 program](A109010.asm)): a(n) = GCD(n,7).
 * [A109011](http://oeis.org/A109011) ([L15 program](A109011.asm)): a(n) = gcd(n,8).
@@ -1855,6 +1855,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145070](http://oeis.org/A145070) ([L08 program](A145070.asm)): Partial sums of A006127, starting at n=1.
 * [A145071](http://oeis.org/A145071) ([L08 program](A145071.asm)): Partial sums of A000051, starting at n=1.
 * [A145126](http://oeis.org/A145126) ([L08 program](A145126.asm)): a(n) = 1 + (6 + (11 + (6 + n)*n)*n)*n/24.
+* [A145266](http://oeis.org/A145266) ([L20 program](A145266.asm)): A positive integer n is included if there does not exist a positive integer m such that Sum{k>=0} floor(n/(m+k)) = n.
 * [A145285](http://oeis.org/A145285) ([L33 program](A145285.asm)): a(n) = number of monomials in n-th power of polynomial x^4-x^3-x^2-x-1
 * [A145287](http://oeis.org/A145287) ([L05 program](A145287.asm)): Duplicate of A016861.
 * [A145289](http://oeis.org/A145289) ([L05 program](A145289.asm)): Duplicate of A016777.
@@ -2717,6 +2718,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162740](http://oeis.org/A162740) ([L17 program](A162740.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^3 = I.
 * [A162751](http://oeis.org/A162751) ([L15 program](A162751.asm)): Write down in binary the n-th positive (odd) integer that is a palindrome in base 2. Take only the leftmost half of the digits (including the middle digit if there are an odd number of digits). a(n) is the decimal equivalent of the result.
 * [A162761](http://oeis.org/A162761) ([L07 program](A162761.asm)): Minimal total number of floors an elevator must move to transport n people initially waiting at floors i = 1, ..., n to their destination floors n-i+1 (= n, ..., 1), when the elevator can hold at most one person at a time and starts at floor 1, and no passenger may get off the elevator before reaching his/her destination.
+* [A162770](http://oeis.org/A162770) ([L16 program](A162770.asm)): a(n) = ((2+sqrt(5))*(1+sqrt(5))^n + (2-sqrt(5))*(1-sqrt(5))^n)/2.
 * [A162771](http://oeis.org/A162771) ([L10 program](A162771.asm)): a(n) = ((2+sqrt(5))*(3+sqrt(5))^n + (2-sqrt(5))*(3-sqrt(5))^n)/2.
 * [A162813](http://oeis.org/A162813) ([L19 program](A162813.asm)): a(n) = 3*a(n-2) for n > 2; a(1) = 5, a(2) = 3.
 * [A162897](http://oeis.org/A162897) ([L11 program](A162897.asm)): a(1)=a(2)=2. a(n) = the smallest integer >= 2 such that a(n-1)^a(n) > a(n-2)^a(n-1).
@@ -4175,6 +4177,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190717](http://oeis.org/A190717) ([L08 program](A190717.asm)): Triplicated tetrahedral numbers A000292
 * [A190718](http://oeis.org/A190718) ([L07 program](A190718.asm)): Quadruplicated tetrahedral numbers A000292
 * [A190719](http://oeis.org/A190719) ([L21 program](A190719.asm)): Numbers that are congruent to {0, 1, 3, 5, 7, 8, 11} mod 12.
+* [A190727](http://oeis.org/A190727) ([L10 program](A190727.asm)): Product of (digits of n each incremented by 1) - 2.
 * [A190730](http://oeis.org/A190730) ([L09 program](A190730.asm)): Let b(n,0)=n and b(n,k)=2*b(n,k-1) + 1 for k > 0.  Then a(n) = b(n,1) + b(n,2) + ... + b(n,n).
 * [A190785](http://oeis.org/A190785) ([L11 program](A190785.asm)): Numbers that are congruent to {0, 2, 3, 5, 7, 9, 11} mod 12.
 * [A190816](http://oeis.org/A190816) ([L07 program](A190816.asm)): a(n) = 5*n^2 - 4*n + 1.

@@ -481,6 +481,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218245](http://oeis.org/A218245) ([L05 program](A218245.asm)): Nicolas's sequence, whose nonnegativity is equivalent to the Riemann hypothesis.
 * [A218272](http://oeis.org/A218272) ([L14 program](A218272.asm)): Infinitesimal generator for transpose of the Pascal matrix A007318 (as upper triangular matrices).
 * [A218324](http://oeis.org/A218324) ([L15 program](A218324.asm)): Odd heptagonal pyramidal numbers
+* [A218328](http://oeis.org/A218328) ([L30 program](A218328.asm)): Odd 9-gonal (nonagonal) pyramidal numbers.
 * [A218442](http://oeis.org/A218442) ([L10 program](A218442.asm)): a(n) = Sum_{k=0..n} floor(n/(3*k + 1)).
 * [A218444](http://oeis.org/A218444) ([L10 program](A218444.asm)): a(n) = Sum_{k>=0} floor(n/(5*k + 1)).
 * [A218461](http://oeis.org/A218461) ([L17 program](A218461.asm)): Floor( prime(prime(n))/ prime(n) ).
@@ -1280,12 +1281,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257175](http://oeis.org/A257175) ([L10 program](A257175.asm)): The smallest m such that the m-th triangular number is greater than or equal to half the n-th triangular number.
 * [A257198](http://oeis.org/A257198) ([L11 program](A257198.asm)): Number of permutations of length n having exactly one descent such that the first element of the permutation is an odd number.
 * [A257213](http://oeis.org/A257213) ([L17 program](A257213.asm)): Least d>0 such that floor(n/d) = floor(n/(d+1)).
+* [A257272](http://oeis.org/A257272) ([L15 program](A257272.asm)): a(n) = 2^(n-1)*(2^n+7).
 * [A257273](http://oeis.org/A257273) ([L11 program](A257273.asm)): a(n) = 2^(n-1)*(2^n+3).
 * [A257292](http://oeis.org/A257292) ([L16 program](A257292.asm)): Numbers whose square can be written as the sum of two consecutive nonsquares.
 * [A257352](http://oeis.org/A257352) ([L15 program](A257352.asm)): G.f.: (1-2*x+51*x^2)/(1-x)^3.
 * [A257448](http://oeis.org/A257448) ([L16 program](A257448.asm)): a(n) = 13*(2^n - 1) - 3*n^2 - 9*n.
 * [A257487](http://oeis.org/A257487) ([L11 program](A257487.asm)): Expansion of ( -4+15*x-8*x^2 ) / ( (x-1)*(x^2-4*x+1) ).
 * [A257542](http://oeis.org/A257542) ([L07 program](A257542.asm)): Square-sum pairs: Numbers n such that 0,1, ..., 2n-1 can be partitioned into n pairs, where each pair adds up to a perfect square.
+* [A257637](http://oeis.org/A257637) ([L43 program](A257637.asm)): Maximal number of edges in an n-vertex triangle-free graph with maximal degree at most 4.
 * [A257645](http://oeis.org/A257645) ([L05 program](A257645.asm)): a(n) = 15*n + 14.
 * [A257811](http://oeis.org/A257811) ([L19 program](A257811.asm)): Circle of fifths cycle (clockwise).
 * [A257844](http://oeis.org/A257844) ([L13 program](A257844.asm)): a(n) = floor(n/4) * (n mod 4).
