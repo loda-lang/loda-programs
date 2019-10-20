@@ -3250,10 +3250,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052919](http://oeis.org/A052919) ([L08 program](A052919.asm)): a(n) = 1 + 2*3^(n-1) with a(0)=2.
 * [A052921](http://oeis.org/A052921) ([L09 program](A052921.asm)): Expansion of (1-x)/(1 - 3*x + 2*x^2 - x^3).
 * [A052924](http://oeis.org/A052924) ([L18 program](A052924.asm)): Expansion of g.f.: (1-x)/(1 - 3*x - x^2).
-* [A052925](http://oeis.org/A052925) ([L08 program](A052925.asm)): Expansion of (2-6x+4x^2-x^3)/((1-x)(1-3x+x^2)).
+* [A052925](http://oeis.org/A052925) ([L08 program](A052925.asm)): Expansion of (2-6*x+4*x^2-x^3)/((1-x)*(1-3*x+x^2)).
 * [A052928](http://oeis.org/A052928) ([L05 program](A052928.asm)): The even numbers repeated.
 * [A052934](http://oeis.org/A052934) ([L12 program](A052934.asm)): Expansion of (1-x)/(1-6x).
-* [A052936](http://oeis.org/A052936) ([L12 program](A052936.asm)): Expansion of (1-x)(1-2x)/(1-5x+5x^2).
+* [A052936](http://oeis.org/A052936) ([L12 program](A052936.asm)): Expansion of (1-x)*(1-2*x)/(1-5*x+5*x^2).
 * [A052937](http://oeis.org/A052937) ([L12 program](A052937.asm)): Expansion of (2-3*x-x^2)/((1-x)*(1-2*x-x^2)).
 * [A052938](http://oeis.org/A052938) ([L07 program](A052938.asm)): Expansion of ( 1+2*x-2*x^2 ) / ( (1+x)*(x-1)^2 ).
 * [A052940](http://oeis.org/A052940) ([L07 program](A052940.asm)): a(0) = 1; a(n) = 3*2^n - 1, for n > 0.
@@ -4932,6 +4932,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A085540](http://oeis.org/A085540) ([L14 program](A085540.asm)): a(n) = n*(n+1)^3.
 * [A085600](http://oeis.org/A085600) ([L07 program](A085600.asm)): Number of simple graphs with 3 edges on n vertices.
 * [A085601](http://oeis.org/A085601) ([L12 program](A085601.asm)): a(n) = 2 * (4^n + 2^n) + 1.
+* [A085622](http://oeis.org/A085622) ([L20 program](A085622.asm)): Maximal number of segments (equivalently, corners) in a rook circuit of a 2n X 2n board.
 * [A085624](http://oeis.org/A085624) ([L23 program](A085624.asm)): Sum of the entries in the character table of the dihedral group D_{2n} of order 2n.
 * [A085680](http://oeis.org/A085680) ([L14 program](A085680.asm)): Size of largest code of length n and constant weight 2 that can correct a single adjacent transposition.
 * [A085717](http://oeis.org/A085717) ([L07 program](A085717.asm)): Consider the square lattice L and the sublattice K of index 5 spanned by (2,-1), (1,2); a(n) = number of points (x,y) in M with x >= 0, y >= 0, x+y <= n.

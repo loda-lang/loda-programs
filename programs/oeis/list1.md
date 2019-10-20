@@ -364,12 +364,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108928](http://oeis.org/A108928) ([L08 program](A108928.asm)): a(n) = 8*n^2 - 3.
 * [A109007](http://oeis.org/A109007) ([L08 program](A109007.asm)): a(n) = gcd(n,3).
 * [A109008](http://oeis.org/A109008) ([L10 program](A109008.asm)): a(n) = gcd(n,4).
-* [A109009](http://oeis.org/A109009) ([L12 program](A109009.asm)): a(n) = GCD(n,5).
+* [A109009](http://oeis.org/A109009) ([L12 program](A109009.asm)): a(n) = gcd(n,5).
 * [A109010](http://oeis.org/A109010) ([L14 program](A109010.asm)): a(n) = GCD(n,7).
 * [A109011](http://oeis.org/A109011) ([L15 program](A109011.asm)): a(n) = gcd(n,8).
 * [A109012](http://oeis.org/A109012) ([L16 program](A109012.asm)): a(n) = gcd(n,9).
-* [A109013](http://oeis.org/A109013) ([L17 program](A109013.asm)): a(n) = GCD(n,10).
-* [A109014](http://oeis.org/A109014) ([L18 program](A109014.asm)): a(n) = GCD(n,11).
+* [A109013](http://oeis.org/A109013) ([L17 program](A109013.asm)): a(n) = gcd(n,10).
+* [A109014](http://oeis.org/A109014) ([L18 program](A109014.asm)): a(n) = gcd(n,11).
 * [A109015](http://oeis.org/A109015) ([L19 program](A109015.asm)): a(n) = GCD(n,12).
 * [A109043](http://oeis.org/A109043) ([L05 program](A109043.asm)): a(n) = lcm(n,2).
 * [A109044](http://oeis.org/A109044) ([L19 program](A109044.asm)): a(n) = lcm(n,3).
@@ -930,6 +930,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127330](http://oeis.org/A127330) ([L09 program](A127330.asm)): Begin with the empty sequence and a starting number s = 0. At step k (k >= 1) append the k consecutive numbers s to s+k-1 and change the starting number (for the next step) to 2s+2.
 * [A127407](http://oeis.org/A127407) ([L10 program](A127407.asm)): Negative value of coefficient of x^(n-2) in the characteristic polynomial of a certain n X n integer circulant matrix.
 * [A127419](http://oeis.org/A127419) ([L14 program](A127419.asm)): Recurrence: a(n) = a(n-1) + floor( (sqrt(8 * a(n-1) - 7) - 1)/2 ) for n>=2 with a(0)=1, a(1)=2.
+* [A127427](http://oeis.org/A127427) ([L17 program](A127427.asm)): v_3( (6n)! ) - v_3( (3n)! ), where v_3(N) is the 3-adic valuation A007949(N).
 * [A127451](http://oeis.org/A127451) ([L17 program](A127451.asm)): Beatty sequence for n/(1 - e^Pi + Pi^e), complement of A127450.
 * [A127509](http://oeis.org/A127509) ([L12 program](A127509.asm)): Number of n-tuples where each entry is chosen from the subsets of {1,2,3} such that the intersection of all n entries contains exactly one element.
 * [A127547](http://oeis.org/A127547) ([L05 program](A127547.asm)): a(n) = 13n + 4.
@@ -1375,6 +1376,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134153](http://oeis.org/A134153) ([L10 program](A134153.asm)): a(n) = 15n^2 + 9n + 1.
 * [A134154](http://oeis.org/A134154) ([L22 program](A134154.asm)): a(n) = 15n^2 - 9n + 1.
 * [A134169](http://oeis.org/A134169) ([L14 program](A134169.asm)): a(n) = 2^(n-1)*(2^n - 1) + 1.
+* [A134171](http://oeis.org/A134171) ([L20 program](A134171.asm)): a(n) = (9/2)*(n-1)*(n-2)*(n-3).
 * [A134201](http://oeis.org/A134201) ([L06 program](A134201.asm)): Number of rigid hypergroups of order n.
 * [A134202](http://oeis.org/A134202) ([L11 program](A134202.asm)): Number of rigid Hv-groups of order n.
 * [A134227](http://oeis.org/A134227) ([L07 program](A134227.asm)): Row sums of triangle A134226.
@@ -3778,6 +3780,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181405](http://oeis.org/A181405) ([L04 program](A181405.asm)): Total number of n-digit numbers requiring 8 positive cubes in their representation as sum of cubes.
 * [A181407](http://oeis.org/A181407) ([L16 program](A181407.asm)): a(n) = (n-4)*(n-3)*2^(n-2).
 * [A181440](http://oeis.org/A181440) ([L03 program](A181440.asm)): a(1) = 2; for n > 1, a(n) = A000217(n)-(sum of previous terms).
+* [A181475](http://oeis.org/A181475) ([L16 program](A181475.asm)): a(n) = 3*n^4 + 6*n^3 - 3*n + 1.
 * [A181509](http://oeis.org/A181509) ([L24 program](A181509.asm)): a(1) = 2, a(n) = (n-th-even n^3) - (sum of previous terms)
 * [A181510](http://oeis.org/A181510) ([L07 program](A181510.asm)): Number of permutations of the multiset {1,1,2,2,3,3,...,n+1,n+1} avoiding the permutation patterns {132, 231, 2134}
 * [A181527](http://oeis.org/A181527) ([L08 program](A181527.asm)): Binomial transform of A113127; (1, 1, 3, 7, 15, 31,...) convolved with (1, 3, 7, 15, 31, 63,...).
