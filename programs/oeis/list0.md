@@ -303,7 +303,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004201](http://oeis.org/A004201) ([L07 program](A004201.asm)): Accept one, reject one, accept two, reject two, ...
 * [A004202](http://oeis.org/A004202) ([L07 program](A004202.asm)): Skip 1, take 1, skip 2, take 2, skip 3, take 3, etc.
 * [A004216](http://oeis.org/A004216) ([L21 program](A004216.asm)): a(n) =  floor(log_10(n)).
-* [A004253](http://oeis.org/A004253) ([L09 program](A004253.asm)): a(n) = 5*a(n-1) - a(n-2).
+* [A004253](http://oeis.org/A004253) ([L09 program](A004253.asm)): a(n) = 5*a(n-1) - a(n-2), with a(1)=1, a(2)=4.
 * [A004254](http://oeis.org/A004254) ([L08 program](A004254.asm)): a(n) = 5*a(n-1) - a(n-2) for n > 1, a(0) = 0, a(1) = 1.
 * [A004255](http://oeis.org/A004255) ([L09 program](A004255.asm)): n(n+1)(n^2 -3n + 6)/8.
 * [A004256](http://oeis.org/A004256) ([L16 program](A004256.asm)): n^2*(n+1)*(n+2)^2/6.
@@ -338,6 +338,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004526](http://oeis.org/A004526) ([L05 program](A004526.asm)): Nonnegative integers repeated, floor(n/2).
 * [A004652](http://oeis.org/A004652) ([L05 program](A004652.asm)): Expansion of x*(1+x^2+x^4)/((1-x)*(1-x^2)*(1-x^3)).
 * [A004736](http://oeis.org/A004736) ([L08 program](A004736.asm)): Triangle read by rows: row n lists the first n positive integers in decreasing order.
+* [A004737](http://oeis.org/A004737) ([L19 program](A004737.asm)): Concatenation of sequences (1,2,..,n-1,n,n-1,..,1) for n >= 1.
 * [A004738](http://oeis.org/A004738) ([L09 program](A004738.asm)): Concatenation of sequences (1,2,...,n-1,n,n-1,...,2) for n >= 2.
 * [A004739](http://oeis.org/A004739) ([L14 program](A004739.asm)): Concatenation of sequences (1,2,2,...,n-1,n-1,n,n,n-1,n-1,...,2,2,1) for n >= 1.
 * [A004741](http://oeis.org/A004741) ([L16 program](A004741.asm)): Concatenation of sequences (1,3,..,2n-1,2n,2n-2,..,2) for n >= 1.
@@ -1057,6 +1058,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016156](http://oeis.org/A016156) ([L03 program](A016156.asm)): Inverse of 2147th cyclotomic polynomial.
 * [A016168](http://oeis.org/A016168) ([L03 program](A016168.asm)): Inverse of 2159th cyclotomic polynomial.
 * [A016180](http://oeis.org/A016180) ([L03 program](A016180.asm)): Inverse of 2171st cyclotomic polynomial.
+* [A016198](http://oeis.org/A016198) ([L21 program](A016198.asm)): Expansion of 1/((1-x)(1-2x)(1-5x)).
 * [A016200](http://oeis.org/A016200) ([L17 program](A016200.asm)): Expansion of 1/((1-x)(1-2x)(1-6x)).
 * [A016236](http://oeis.org/A016236) ([L03 program](A016236.asm)): Inverse of 2227th cyclotomic polynomial.
 * [A016240](http://oeis.org/A016240) ([L11 program](A016240.asm)): Inverse of 2231st cyclotomic polynomial.
@@ -1825,10 +1827,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027000](http://oeis.org/A027000) ([L17 program](A027000.asm)): a(n) = Lucas(2n+3) - (6n+4).
 * [A027004](http://oeis.org/A027004) ([L08 program](A027004.asm)): a(n) = T(2*n+1,n+1), T given by A026998.
 * [A027016](http://oeis.org/A027016) ([L19 program](A027016.asm)): T(2n+1,n+1), T given by A027011.
-* [A027107](http://oeis.org/A027107) ([L10 program](A027107.asm)): a(n) = Sum{(k+1)*T(n,2n-k)}, 0<=k<=2n, T given by A027082.
-* [A027138](http://oeis.org/A027138) ([L16 program](A027138.asm)): a(n) = Sum{(k+1)*T(n,2n-k)}, 0<=k<=2n, T given by A027113.
+* [A027107](http://oeis.org/A027107) ([L10 program](A027107.asm)): a(n) = Sum_{k=0..2n} (k+1) * A027082(n, 2n-k).
+* [A027138](http://oeis.org/A027138) ([L16 program](A027138.asm)): a(n) = Sum_{k=0..2n} (k+1) * A027113(n, 2n-k).
 * [A027178](http://oeis.org/A027178) ([L07 program](A027178.asm)): a(n) = T(n,0) + T(n,1) + ... + T(n,n), T given by A027170.
-* [A027180](http://oeis.org/A027180) ([L12 program](A027180.asm)): a(n) = Sum{T(i,j)}, 0<=j<=i, 0<=i<=n, T given by A027170.
+* [A027180](http://oeis.org/A027180) ([L12 program](A027180.asm)): a(n) = Sum_{0<=j<=i<=n} A027170(i, j).
 * [A027181](http://oeis.org/A027181) ([L12 program](A027181.asm)): a(n) = Lucas(n+4) - 2*(n+3).
 * [A027261](http://oeis.org/A027261) ([L17 program](A027261.asm)): a(n) = Sum{(k+1)*T(n,k)}, 0<=k<=2n, T given by A025177.
 * [A027313](http://oeis.org/A027313) ([L18 program](A027313.asm)): a(n) = Sum{(k+1)*T(n,2n-k)}, 0<=k<=2n, T given by A026323.
@@ -3253,17 +3255,17 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052924](http://oeis.org/A052924) ([L18 program](A052924.asm)): Expansion of g.f.: (1-x)/(1 - 3*x - x^2).
 * [A052925](http://oeis.org/A052925) ([L08 program](A052925.asm)): Expansion of (2-6*x+4*x^2-x^3)/((1-x)*(1-3*x+x^2)).
 * [A052928](http://oeis.org/A052928) ([L05 program](A052928.asm)): The even numbers repeated.
-* [A052934](http://oeis.org/A052934) ([L12 program](A052934.asm)): Expansion of (1-x)/(1-6x).
+* [A052934](http://oeis.org/A052934) ([L12 program](A052934.asm)): Expansion of (1-x)/(1-6*x).
 * [A052936](http://oeis.org/A052936) ([L12 program](A052936.asm)): Expansion of (1-x)*(1-2*x)/(1-5*x+5*x^2).
 * [A052937](http://oeis.org/A052937) ([L12 program](A052937.asm)): Expansion of (2-3*x-x^2)/((1-x)*(1-2*x-x^2)).
-* [A052938](http://oeis.org/A052938) ([L07 program](A052938.asm)): Expansion of ( 1+2*x-2*x^2 ) / ( (1+x)*(x-1)^2 ).
+* [A052938](http://oeis.org/A052938) ([L07 program](A052938.asm)): Expansion of (1 + 2*x - 2*x^2)/( (1+x)*(1-x)^2 ).
 * [A052940](http://oeis.org/A052940) ([L07 program](A052940.asm)): a(0) = 1; a(n) = 3*2^n - 1, for n > 0.
 * [A052944](http://oeis.org/A052944) ([L07 program](A052944.asm)): a(n) = 2^n + n - 1.
 * [A052945](http://oeis.org/A052945) ([L09 program](A052945.asm)): Number of compositions of n when each odd part can be of two kinds.
-* [A052948](http://oeis.org/A052948) ([L10 program](A052948.asm)): G.f.: (1-2*x)/(1-3*x+2*x^3)
-* [A052950](http://oeis.org/A052950) ([L13 program](A052950.asm)): Expansion of (2-3x-x^2+x^3)/((1-x)(1+x)(1-2x)).
-* [A052951](http://oeis.org/A052951) ([L08 program](A052951.asm)): Expansion of (1 + x - 2x^2)/(1 - 2x)^2.
-* [A052953](http://oeis.org/A052953) ([L12 program](A052953.asm)): Expansion of 2*(1-x-x^2)/((x-1)(2x-1)(1+x)).
+* [A052948](http://oeis.org/A052948) ([L10 program](A052948.asm)): Expansion of g.f.: (1-2*x)/(1-3*x+2*x^3).
+* [A052950](http://oeis.org/A052950) ([L13 program](A052950.asm)): Expansion of (2-3*x-x^2+x^3)/((1-x)*(1+x)*(1-2*x)).
+* [A052951](http://oeis.org/A052951) ([L08 program](A052951.asm)): Expansion of (1 + x - 2*x^2)/(1 - 2*x)^2.
+* [A052953](http://oeis.org/A052953) ([L12 program](A052953.asm)): Expansion of 2*(1-x-x^2)/((1-x)*(1+x)*(1-2*x)).
 * [A052955](http://oeis.org/A052955) ([L08 program](A052955.asm)): a(2n) = 2*2^n - 1, a(2n+1) = 3*2^n - 1.
 * [A052961](http://oeis.org/A052961) ([L17 program](A052961.asm)): Expansion of (1 - 3*x) / (1 - 5*x + 3*x^2).
 * [A052963](http://oeis.org/A052963) ([L13 program](A052963.asm)): a(0)=1, a(1)=2, a(2)=5, a(n) = 3*a(n+2) - a(n+3).
@@ -3450,7 +3452,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056530](http://oeis.org/A056530) ([L12 program](A056530.asm)): Sequence remaining after third round of Flavius Josephus sieve; remove every fourth term of A047241.
 * [A056531](http://oeis.org/A056531) ([L14 program](A056531.asm)): Sequence remaining after fourth round of Flavius Josephus sieve; remove every fifth term of A056530.
 * [A056548](http://oeis.org/A056548) ([L11 program](A056548.asm)): a(n) = Sum_{k>=1} round(n/k) where round(1/2) = 0.
-* [A056556](http://oeis.org/A056556) ([L06 program](A056556.asm)): First tetrahedral co-ordinate; repeat m (m+1)*(m+2)/2 times.
+* [A056556](http://oeis.org/A056556) ([L06 program](A056556.asm)): First tetrahedral coordinate; repeat m (m+1)*(m+2)/2 times.
 * [A056578](http://oeis.org/A056578) ([L13 program](A056578.asm)): a(n) = 1 + 2n + 3n^2 + 4n^3.
 * [A056640](http://oeis.org/A056640) ([L17 program](A056640.asm)): At stage 1, start with a unit square. At each successive stage add 4*(n-1) new squares around outside with edge-to-edge contacts. Sequence gives number of squares (regardless of size) at n-th stage.
 * [A056699](http://oeis.org/A056699) ([L21 program](A056699.asm)): First differences are 2,1,-2,3 (repeated).
@@ -3824,6 +3826,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063249](http://oeis.org/A063249) ([L15 program](A063249.asm)): Doubly hexagonal numbers.
 * [A063258](http://oeis.org/A063258) ([L10 program](A063258.asm)): a(n) = binomial(n+5,4) - 1.
 * [A063376](http://oeis.org/A063376) ([L12 program](A063376.asm)): a(-1) = 1; for n >= 0, a(n) = 2^n + 4^n = 2^n*(1 + 2^n).
+* [A063396](http://oeis.org/A063396) ([L30 program](A063396.asm)): T(3,n) with T(n,m) as in A063394.
 * [A063436](http://oeis.org/A063436) ([L08 program](A063436.asm)): Write 1,2,3,4,... counterclockwise in a hexagonal spiral around 0 starting left down, then a(n) is the sequence found by reading from 0 in the vertical upward direction.
 * [A063438](http://oeis.org/A063438) ([L120 program](A063438.asm)): Floor((n+1)*Pi)-Floor(n*Pi).
 * [A063488](http://oeis.org/A063488) ([L11 program](A063488.asm)): a(n) = (2*n-1)*(n^2 -n +2)/2.

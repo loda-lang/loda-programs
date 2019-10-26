@@ -226,6 +226,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307268](http://oeis.org/A307268) ([L14 program](A307268.asm)): Partial sums of the Lucas numbers of the form L(3n+2) (A163063).
 * [A307559](http://oeis.org/A307559) ([L12 program](A307559.asm)): a(n) = floor(n/3)*(n - floor(n/3))*(n - floor(n/3) - 1).
 * [A307613](http://oeis.org/A307613) ([L14 program](A307613.asm)): Inverse of the permutation A307485: one odd, two even, four odd, eight even, etc; extended with a(0) = 0.
+* [A307621](http://oeis.org/A307621) ([L14 program](A307621.asm)): Number of cycles in the n-dipyramidal graph.
 * [A307702](http://oeis.org/A307702) ([L14 program](A307702.asm)): Clique covering number of the n-Sierpinski tetrahedron graph.
 * [A307753](http://oeis.org/A307753) ([L13 program](A307753.asm)): Number of palindromic pentagonal numbers of length n whose index is also palindromic.
 * [A307802](http://oeis.org/A307802) ([L02 program](A307802.asm)): Number of palindromic octagonal numbers of length n whose index is also palindromic.
@@ -576,6 +577,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325413](http://oeis.org/A325413) ([L14 program](A325413.asm)): Largest sum of the omega-sequence of an integer partition of n.
 * [A325475](http://oeis.org/A325475) ([L29 program](A325475.asm)): a(n) = (24*n)^2.
 * [A325657](http://oeis.org/A325657) ([L12 program](A325657.asm)): a(n) = (1/2)*(-1 + (-1)^n)*(n-1) + n^2.
+* [A325909](http://oeis.org/A325909) ([L26 program](A325909.asm)): Lexicographically earliest sequence of distinct positive terms such that for any n > 0, n divides Sum_{k = 1..n} (-1)^k * a(k).
 * [A325958](http://oeis.org/A325958) ([L14 program](A325958.asm)): Sum of corners of a 2n+1 X 2n+1 square spiral.
 * [A326178](http://oeis.org/A326178) ([L05 program](A326178.asm)): Number of subsets of {1..n} whose product is equal to their sum.
 * [A326247](http://oeis.org/A326247) ([L15 program](A326247.asm)): Number of labeled n-vertex 2-edge multigraphs that are neither crossing nor nesting.
