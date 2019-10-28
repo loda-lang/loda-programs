@@ -4,7 +4,6 @@
 add $4,3
 add $0,$4
 add $0,1
-mov $4,0
 mov $2,2
 add $0,$2
 lpb $0,1

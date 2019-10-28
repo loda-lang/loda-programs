@@ -10,6 +10,4 @@ lpb $0,1
   sub $0,3
   add $1,4
 lpe
-sub $1,4
-mov $2,0
-sub $1,16
+sub $1,20

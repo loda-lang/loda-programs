@@ -9,7 +9,6 @@ lpb $2,1
   mov $3,6
   add $3,6
   add $1,$3
-  mov $6,0
   add $2,3
   add $1,6
   sub $2,7
