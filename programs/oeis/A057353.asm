@@ -3,7 +3,6 @@
 
 mov $1,$0
 lpb $0,1
-  sub $0,3
   sub $1,1
-  sub $0,1
+  sub $0,4
 lpe

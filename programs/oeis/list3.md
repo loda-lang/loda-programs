@@ -158,7 +158,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304830](http://oeis.org/A304830) ([L24 program](A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
 * [A304831](http://oeis.org/A304831) ([L26 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
 * [A304832](http://oeis.org/A304832) ([L16 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
-* [A304833](http://oeis.org/A304833) ([L14 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
+* [A304833](http://oeis.org/A304833) ([L13 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
 * [A304834](http://oeis.org/A304834) ([L19 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L28 program](A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
 * [A304836](http://oeis.org/A304836) ([L09 program](A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
@@ -212,9 +212,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306262](http://oeis.org/A306262) ([L12 program](A306262.asm)): Difference between maximum and minimum sum of products of successive pairs in permutations of [n].
 * [A306277](http://oeis.org/A306277) ([L10 program](A306277.asm)): Numbers congruent to 1 or 8 mod 10.
 * [A306278](http://oeis.org/A306278) ([L10 program](A306278.asm)): Numbers congruent to 2 or 11 mod 14.
-* [A306279](http://oeis.org/A306279) ([L12 program](A306279.asm)): Numbers congruent to 3 or 18 mod 22.
+* [A306279](http://oeis.org/A306279) ([L11 program](A306279.asm)): Numbers congruent to 3 or 18 mod 22.
 * [A306285](http://oeis.org/A306285) ([L11 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
-* [A306331](http://oeis.org/A306331) ([L15 program](A306331.asm)): Numbers congruent to 6 or 31 mod 38.
+* [A306331](http://oeis.org/A306331) ([L11 program](A306331.asm)): Numbers congruent to 6 or 31 mod 38.
 * [A306390](http://oeis.org/A306390) ([L06 program](A306390.asm)): Size of one subtree in the unlabeled binary rooted tree shape of size n whose leaf-labeled trees have the largest number of coalescence sequences.
 * [A306672](http://oeis.org/A306672) ([L15 program](A306672.asm)): Partial sums of the even Lucas numbers (A014448).
 * [A306696](http://oeis.org/A306696) ([L11 program](A306696.asm)): Lexicographically earliest sequence of nonnegative terms such that for any n > 0 and k > 0, if a(n) >= a(n+k), then a(n+2*k) <> a(n+k).
@@ -251,14 +251,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309075](http://oeis.org/A309075) ([L20 program](A309075.asm)): Total number of black cells after n iterations of Langton's ant with two ants on the grid placed side-by-side on neighboring squares and initially looking in the same direction.
 * [A309077](http://oeis.org/A309077) ([L19 program](A309077.asm)): Maximum sum of base lengths over all minimal factorizations of length-n binary strings.
 * [A309083](http://oeis.org/A309083) ([L15 program](A309083.asm)): a(n) = n - floor(n/2^4) + floor(n/3^4) - floor(n/4^4) + ...
-* [A309093](http://oeis.org/A309093) ([L10 program](A309093.asm)): The analogue of A309077(n), but allowing fractional powers.
+* [A309093](http://oeis.org/A309093) ([L10 program](A309093.asm)): The analog of A309077(n), but allowing fractional powers.
 * [A309127](http://oeis.org/A309127) ([L24 program](A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309372](http://oeis.org/A309372) ([L19 program](A309372.asm)): a(n) = n^2 - n^3 + n^4.
 * [A309683](http://oeis.org/A309683) ([L20 program](A309683.asm)): Number of odd parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309685](http://oeis.org/A309685) ([L12 program](A309685.asm)): Number of even parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309687](http://oeis.org/A309687) ([L13 program](A309687.asm)): Number of odd parts appearing among the second largest parts of the partitions of n into 3 parts.
 * [A309689](http://oeis.org/A309689) ([L21 program](A309689.asm)): Number of even parts appearing among the second largest parts of the partitions of n into 3 parts.
-* [A309779](http://oeis.org/A309779) ([L23 program](A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
+* [A309779](http://oeis.org/A309779) ([L15 program](A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
 * [A309805](http://oeis.org/A309805) ([L18 program](A309805.asm)): Maximum number of nonattacking kings placeable on a hexagonal board with edge-length n in Glinski's hexagonal chess.
 * [A309945](http://oeis.org/A309945) ([L15 program](A309945.asm)): a(n) = floor(n - (2*n-1)^(1/2)).
 * [A310368](http://oeis.org/A310368) ([L21 program](A310368.asm)): Coordination sequence Gal.6.230.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -362,7 +362,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A314671](http://oeis.org/A314671) ([L31 program](A314671.asm)): Coordination sequence Gal.5.95.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314672](http://oeis.org/A314672) ([L21 program](A314672.asm)): Coordination sequence Gal.4.38.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314674](http://oeis.org/A314674) ([L19 program](A314674.asm)): Coordination sequence Gal.4.58.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A314677](http://oeis.org/A314677) ([L18 program](A314677.asm)): Coordination sequence Gal.3.10.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A314677](http://oeis.org/A314677) ([L17 program](A314677.asm)): Coordination sequence Gal.3.10.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314680](http://oeis.org/A314680) ([L21 program](A314680.asm)): Coordination sequence Gal.6.149.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314685](http://oeis.org/A314685) ([L21 program](A314685.asm)): Coordination sequence Gal.3.16.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314692](http://oeis.org/A314692) ([L29 program](A314692.asm)): Coordination sequence Gal.5.81.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
