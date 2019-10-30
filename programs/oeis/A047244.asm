@@ -12,4 +12,3 @@ lpb $0,1
 lpe
 add $2,$2
 sub $1,$2
-sub $2,2
