@@ -381,6 +381,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213826](http://oeis.org/A213826) ([L14 program](A213826.asm)): Principal diagonal of the convolution array A213825.
 * [A213827](http://oeis.org/A213827) ([L15 program](A213827.asm)): Antidiagonal sums of the convolution array A213825.
 * [A213829](http://oeis.org/A213829) ([L22 program](A213829.asm)): Principal diagonal of the convolution array A213828.
+* [A213832](http://oeis.org/A213832) ([L21 program](A213832.asm)): Principal diagonal of the convolution array A213831.
 * [A213837](http://oeis.org/A213837) ([L17 program](A213837.asm)): Principal diagonal of the convolution array A213836.
 * [A213839](http://oeis.org/A213839) ([L14 program](A213839.asm)): Principal diagonal of the convolution array A213838.
 * [A213842](http://oeis.org/A213842) ([L22 program](A213842.asm)): Principal diagonal of the convolution array A213841.
@@ -567,7 +568,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A222945](http://oeis.org/A222945) ([L10 program](A222945.asm)): Number of distinct sums i+j+k with |i|, |j|, |k|, |i*j*k| <= n.
 * [A223082](http://oeis.org/A223082) ([L07 program](A223082.asm)): Number of n-digit numbers N with distinct digits such that N divides the reversal of N.
 * [A223133](http://oeis.org/A223133) ([L18 program](A223133.asm)): Number of distinct sums i+j+k with i,j,k >= 0, i*j*k <= n and gcd(i,j,k) <= 1.
-* [A223134](http://oeis.org/A223134) ([L09 program](A223134.asm)): Number of distinct sums i+j+k with i,j,k >= 0, i*j*k <= n.
+* [A223134](http://oeis.org/A223134) ([L07 program](A223134.asm)): Number of distinct sums i+j+k with i,j,k >= 0, i*j*k <= n.
 * [A223249](http://oeis.org/A223249) ([L10 program](A223249.asm)): Two-loop graph coloring a rectangular array: number of n X 2 0..4 arrays where 0..4 label nodes of a graph with edges 0,1 1,2 2,0 0,3 3,4 4,0 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
 * [A223395](http://oeis.org/A223395) ([L24 program](A223395.asm)): 4 X 4 square grid graph coloring a rectangular array: number of n X 1 0..15 arrays where 0..15 label nodes of the square grid graph and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
 * [A223711](http://oeis.org/A223711) ([L11 program](A223711.asm)): Number of n X 2 0..1 arrays with row sums and column sums unimodal.
@@ -806,6 +807,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A235498](http://oeis.org/A235498) ([L06 program](A235498.asm)): For k in {2,3,...,9} define a sequence as follows: a(0)=0; for n>=0, a(n+1)=a(n)+1, unless a(n) ends in k, in which case a(n+1) is obtained by replacing the last digit of a(n) with the digit(s) of k^2. This is k(2).
 * [A235499](http://oeis.org/A235499) ([L06 program](A235499.asm)): For k in {2,3,...,9} define a sequence as follows: a(0)=0; for n>=0, a(n+1)=a(n)+1, unless a(n) ends in k, in which case a(n+1) is obtained by replacing the last digit of a(n) with the digit(s) of k^2. This is k(3).
 * [A235537](http://oeis.org/A235537) ([L16 program](A235537.asm)): Expansion of (6 + 13*x - 8*x^2 - 8*x^3 + 6*x^4)/((1 + x)^2*(1 - x)^3).
+* [A235700](http://oeis.org/A235700) ([L18 program](A235700.asm)): a(n+1) = a(n) + (a(n) mod 5), a(1)=1.
 * [A235702](http://oeis.org/A235702) ([L09 program](A235702.asm)): Fixed points of A001175 (Pisano periods).
 * [A235800](http://oeis.org/A235800) ([L27 program](A235800.asm)): Length of n-th vertical line segment from left to right in a diagram of a two-dimensional version of the Collatz (or 3x + 1) problem.
 * [A235801](http://oeis.org/A235801) ([L30 program](A235801.asm)): Length of n-th horizontal line segment in a diagram of a two-dimensional version of the Collatz (or 3x + 1) problem.
@@ -1139,7 +1141,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250756](http://oeis.org/A250756) ([L19 program](A250756.asm)): Number of (1+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250757](http://oeis.org/A250757) ([L20 program](A250757.asm)): Number of (2+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250759](http://oeis.org/A250759) ([L23 program](A250759.asm)): Number of (4+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
-* [A250764](http://oeis.org/A250764) ([L17 program](A250764.asm)): Number of (n+1) X (3+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing absolute value of x(i,j)-x(i-1,j) in the j direction.
+* [A250764](http://oeis.org/A250764) ([L16 program](A250764.asm)): Number of (n+1) X (3+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing absolute value of x(i,j)-x(i-1,j) in the j direction.
 * [A250765](http://oeis.org/A250765) ([L19 program](A250765.asm)): Number of (n+1) X (4+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing absolute value of x(i,j)-x(i-1,j) in the j direction.
 * [A250766](http://oeis.org/A250766) ([L25 program](A250766.asm)): Number of (n+1) X (5+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing absolute value of x(i,j)-x(i-1,j) in the j direction.
 * [A250767](http://oeis.org/A250767) ([L13 program](A250767.asm)): Number of (n+1) X (6+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing absolute value of x(i,j)-x(i-1,j) in the j direction.
@@ -1814,7 +1816,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274339](http://oeis.org/A274339) ([L10 program](A274339.asm)): The 3-cycle of the iterated sum of deficient divisors function.
 * [A274340](http://oeis.org/A274340) ([L11 program](A274340.asm)): A 4-cycle of the iterated sum of deficient divisors function.
 * [A274380](http://oeis.org/A274380) ([L11 program](A274380.asm)): A 4-cycle of the iterated sum of deficient divisors function.
-* [A274406](http://oeis.org/A274406) ([L09 program](A274406.asm)): Numbers m such that 9 divides m*(m + 1).
+* [A274406](http://oeis.org/A274406) ([L08 program](A274406.asm)): Numbers m such that 9 divides m*(m + 1).
 * [A274497](http://oeis.org/A274497) ([L21 program](A274497.asm)): Sum of the degrees of asymmetry of all binary words of length n.
 * [A274583](http://oeis.org/A274583) ([L07 program](A274583.asm)): Expansion of (1 + x + x^2 - x^3 - x^4 + x^6)/((1 - x)^3*(1 + x + x^2)^2).
 * [A274601](http://oeis.org/A274601) ([L17 program](A274601.asm)): a(n) = 2*3^(s-1) - n, where s is the number of trits of n in balanced ternary form.

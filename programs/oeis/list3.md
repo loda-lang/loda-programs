@@ -51,6 +51,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301723](http://oeis.org/A301723) ([L15 program](A301723.asm)): Partial sums of A301722.
 * [A301729](http://oeis.org/A301729) ([L19 program](A301729.asm)): a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
 * [A301755](http://oeis.org/A301755) ([L05 program](A301755.asm)): Decimal expansion of 3/8.
+* [A301787](http://oeis.org/A301787) ([L19 program](A301787.asm)): Number of nX5 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301791](http://oeis.org/A301791) ([L21 program](A301791.asm)): Number of 2Xn 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301819](http://oeis.org/A301819) ([L10 program](A301819.asm)): Number of nX4 0..1 arrays with every element equal to 1 or 2 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301926](http://oeis.org/A301926) ([L10 program](A301926.asm)): a(n+3) = a(n) + 24*n + 32, a(0)=0, a(1)=3, a(2)=13.
@@ -123,6 +124,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304508](http://oeis.org/A304508) ([L28 program](A304508.asm)): a(n) = 5*(3*n+1)*(9*n+8)/2 (n>=0).
 * [A304509](http://oeis.org/A304509) ([L15 program](A304509.asm)): a(n) = 63*2^n - 39 (n>=1).
 * [A304510](http://oeis.org/A304510) ([L19 program](A304510.asm)): a(n) = 69*2^n - 42 (n>=1).
+* [A304511](http://oeis.org/A304511) ([L33 program](A304511.asm)): a(n) = 318*2^n - 186 (n>=1).
 * [A304512](http://oeis.org/A304512) ([L20 program](A304512.asm)): a(n) = 366*2^n - 204 (n >= 1).
 * [A304513](http://oeis.org/A304513) ([L13 program](A304513.asm)): a(n) = 57*2^(n-1) - 38 (n >= 1).
 * [A304514](http://oeis.org/A304514) ([L12 program](A304514.asm)): a(n) = 33*2^n - 45 (n>=1).
@@ -597,3 +599,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328010](http://oeis.org/A328010) ([L17 program](A328010.asm)): The 5x + 1 sequence beginning at 17.
 * [A328011](http://oeis.org/A328011) ([L14 program](A328011.asm)): The 5x + 1 sequence beginning at 1.
 * [A328263](http://oeis.org/A328263) ([L07 program](A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
+* [A328890](http://oeis.org/A328890) ([L12 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.

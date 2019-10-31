@@ -3,20 +3,17 @@
 
 mov $3,$0
 add $0,$0
+add $0,$0
 add $2,$0
-add $0,$2
-add $2,$0
-mov $0,$2
+add $0,$0
+add $0,$0
+sub $0,$2
 lpb $0,1
-  sub $0,1
+  sub $0,2
   add $1,$0
-  sub $1,1
 lpe
-add $1,$1
-add $1,3
-add $1,$2
 lpb $3,1
-  add $1,60
+  add $1,54
   sub $3,1
 lpe
-add $1,4
+add $1,7
