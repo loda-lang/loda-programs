@@ -630,6 +630,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008574](http://oeis.org/A008574) ([L05 program](A008574.asm)): a(0)=1, thereafter a(n) = 4n.
 * [A008576](http://oeis.org/A008576) ([L08 program](A008576.asm)): Coordination sequence for planar net 4.8.8.
 * [A008577](http://oeis.org/A008577) ([L08 program](A008577.asm)): Crystal ball sequence for planar net 4.8.8.
+* [A008579](http://oeis.org/A008579) ([L25 program](A008579.asm)): Coordination sequence for planar net 3.6.3.6. Spherical growth function for a certain reflection group in plane.
 * [A008585](http://oeis.org/A008585) ([L03 program](A008585.asm)): a(n) = 3*n.
 * [A008586](http://oeis.org/A008586) ([L03 program](A008586.asm)): Multiples of 4.
 * [A008587](http://oeis.org/A008587) ([L04 program](A008587.asm)): Multiples of 5.

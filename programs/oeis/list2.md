@@ -508,6 +508,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A219395](http://oeis.org/A219395) ([L20 program](A219395.asm)): Numbers k such that 18*k+1 is a square.
 * [A219498](http://oeis.org/A219498) ([L22 program](A219498.asm)): Number of n X 4 arrays of the minimum value of corresponding elements and their horizontal or vertical neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..1 n X 4 array.
 * [A219529](http://oeis.org/A219529) ([L11 program](A219529.asm)): Coordination sequence for 3.3.4.3.4 Archimedean tiling.
+* [A219621](http://oeis.org/A219621) ([L18 program](A219621.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal or antidiagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and columns, 0..2 n X 2 array.
 * [A219721](http://oeis.org/A219721) ([L23 program](A219721.asm)): Expansion of (1+7*x+5*x^2+7*x^3+x^4)/(1-x-x^4+x^5).
 * [A219846](http://oeis.org/A219846) ([L15 program](A219846.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal or antidiagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 n X 2 array.
 * [A220000](http://oeis.org/A220000) ([L31 program](A220000.asm)): Sixty fourths of an inch in thousandths, rounded to nearest integer.
@@ -1976,6 +1977,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280523](http://oeis.org/A280523) ([L08 program](A280523.asm)): a(n) = Fibonacci(2n + 1) - n.
 * [A280682](http://oeis.org/A280682) ([L08 program](A280682.asm)): Integers m such that floor(sqrt(m)) is even.
 * [A280724](http://oeis.org/A280724) ([L17 program](A280724.asm)): Expansion of 1/(1 - x) + (1/(1 - x)^2)*Sum_{k>=0} x^(3^k).
+* [A280931](http://oeis.org/A280931) ([L29 program](A280931.asm)): a(n) = 2*F(n-1) + 9*F(n-4) + 9*F(n-7) where n >= 7 and F = A000045.
 * [A281026](http://oeis.org/A281026) ([L12 program](A281026.asm)): a(n) = floor(3*n*(n+1)/4).
 * [A281151](http://oeis.org/A281151) ([L18 program](A281151.asm)): a(n) = floor(4*n*(n+1)/5).
 * [A281200](http://oeis.org/A281200) ([L15 program](A281200.asm)): Number of n X 3 0..1 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.

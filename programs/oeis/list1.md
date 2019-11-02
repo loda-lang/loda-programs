@@ -875,6 +875,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A124625](http://oeis.org/A124625) ([L08 program](A124625.asm)): Even numbers sandwiched between 1's.
 * [A124647](http://oeis.org/A124647) ([L09 program](A124647.asm)): a(n) = (2n + 1)*3^n.
 * [A124696](http://oeis.org/A124696) ([L12 program](A124696.asm)): Number of base 3 circular n-digit numbers with adjacent digits differing by 1 or less.
+* [A124805](http://oeis.org/A124805) ([L21 program](A124805.asm)): Number of base 4 circular n-digit numbers with adjacent digits differing by 2 or less.
 * [A124820](http://oeis.org/A124820) ([L08 program](A124820.asm)): Expansion of (1-x)/(1-4*x+3*x^2-x^3).
 * [A124867](http://oeis.org/A124867) ([L14 program](A124867.asm)): Numbers that are the sum of 3 distinct primes.
 * [A125122](http://oeis.org/A125122) ([L29 program](A125122.asm)): First differences of A034888.
@@ -1166,6 +1167,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131471](http://oeis.org/A131471) ([L21 program](A131471.asm)): a(n)=n^5+n.
 * [A131474](http://oeis.org/A131474) ([L15 program](A131474.asm)): a(n) = ceiling(n/2)*ceiling(n^2/2).
 * [A131475](http://oeis.org/A131475) ([L12 program](A131475.asm)): a(n) = floor(n/2) * floor(n^2/2).
+* [A131476](http://oeis.org/A131476) ([L15 program](A131476.asm)): a(n) = floor(n^3/3).
 * [A131477](http://oeis.org/A131477) ([L12 program](A131477.asm)): a(n) = ceiling(n^3/3).
 * [A131478](http://oeis.org/A131478) ([L12 program](A131478.asm)): a(n) = ceiling(n^4/4).
 * [A131479](http://oeis.org/A131479) ([L12 program](A131479.asm)): a(n) = floor(n^4/4).
@@ -1772,7 +1774,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A143730](http://oeis.org/A143730) ([L07 program](A143730.asm)): A141616(n) - A100181(n).
 * [A143785](http://oeis.org/A143785) ([L17 program](A143785.asm)): Antidiagonal sums of the triangle A120070.
 * [A143795](http://oeis.org/A143795) ([L07 program](A143795.asm)): a(1) = 1, then for n > 1, a(n) = a(n - 1) + 1 for n even, or a(n) = a(n - 1) + 10 for n odd.
-* [A143803](http://oeis.org/A143803) ([L15 program](A143803.asm)): a(n) = twice the Connell numbers (A001614(n)) - 1
+* [A143803](http://oeis.org/A143803) ([L14 program](A143803.asm)): a(n) = twice the Connell numbers (A001614(n)) - 1
 * [A143804](http://oeis.org/A143804) ([L12 program](A143804.asm)): Triangle read by rows, thrice the Connell numbers (A001614) - 2.
 * [A143838](http://oeis.org/A143838) ([L09 program](A143838.asm)): Ulam's spiral (SSW spoke).
 * [A143839](http://oeis.org/A143839) ([L08 program](A143839.asm)): Ulam's spiral (SSE spoke).
@@ -1926,6 +1928,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A147534](http://oeis.org/A147534) ([L06 program](A147534.asm)): a(n) is congruent to (1,1,2) mod 3.
 * [A147575](http://oeis.org/A147575) ([L05 program](A147575.asm)): Numbers with exactly 8 distinct prime divisors {2,3,5,7,11,13,17,19}
 * [A147587](http://oeis.org/A147587) ([L05 program](A147587.asm)): a(n) = 14*n + 7.
+* [A147590](http://oeis.org/A147590) ([L12 program](A147590.asm)): Numbers whose binary representation is the concatenation of 2n-1 digits 1 and n-1 digits 0.
 * [A147595](http://oeis.org/A147595) ([L15 program](A147595.asm)): a(n) is the number whose binary representation is A138144(n).
 * [A147613](http://oeis.org/A147613) ([L17 program](A147613.asm)): Numbers that are not Jacobsthal numbers.
 * [A147623](http://oeis.org/A147623) ([L06 program](A147623.asm)): The 3rd Witt transform of A040000.
@@ -2860,7 +2863,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165145](http://oeis.org/A165145) ([L16 program](A165145.asm)): Partial sums of A058183.
 * [A165157](http://oeis.org/A165157) ([L07 program](A165157.asm)): Zero followed by partial sums of A133622.
 * [A165190](http://oeis.org/A165190) ([L12 program](A165190.asm)): G.f.: 1/((1-x^4)*(1-x^5)).
-* [A165207](http://oeis.org/A165207) ([L19 program](A165207.asm)): Period 4: repeat [2, 2, 4, 4].
+* [A165207](http://oeis.org/A165207) ([L11 program](A165207.asm)): Period 4: repeat [2, 2, 4, 4].
 * [A165211](http://oeis.org/A165211) ([L11 program](A165211.asm)): Period 8: repeat [0,1,0,1,1,0,1,0].
 * [A165220](http://oeis.org/A165220) ([L22 program](A165220.asm)): Numbers n such that 8*n+1 is a cube.
 * [A165240](http://oeis.org/A165240) ([L16 program](A165240.asm)): Integers of the form (a+b+c+..+z)/z where (a,b,c,..,z) is a list of 2 or more distinct consecutive nonprimes.
@@ -2972,6 +2975,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167426](http://oeis.org/A167426) ([L13 program](A167426.asm)): a(n) = 2^n mod 28.
 * [A167463](http://oeis.org/A167463) ([L06 program](A167463.asm)): a(n) = n mod 15.
 * [A167465](http://oeis.org/A167465) ([L16 program](A167465.asm)): n^5 mod 16.
+* [A167467](http://oeis.org/A167467) ([L23 program](A167467.asm)): a(n) = 25*n^3 - n*(5*n+1)/2 + 1.
 * [A167469](http://oeis.org/A167469) ([L09 program](A167469.asm)): a(n) = 3*n*(5*n-1)/2.
 * [A167471](http://oeis.org/A167471) ([L12 program](A167471.asm)): Janet periodic table of the elements and structured hexagonal diamond numbers. a(n) = A166911(2n) + A166911(2n+1).
 * [A167477](http://oeis.org/A167477) ([L07 program](A167477.asm)): Expansion of (1-3x+5x^2-x^3)/(1-3x+x^2)^2.
@@ -3500,6 +3504,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173321](http://oeis.org/A173321) ([L13 program](A173321.asm)): a(n) = 4*n! - 1.
 * [A173322](http://oeis.org/A173322) ([L13 program](A173322.asm)): 4*n! + 1.
 * [A173323](http://oeis.org/A173323) ([L13 program](A173323.asm)): 3*n! - 1.
+* [A173324](http://oeis.org/A173324) ([L13 program](A173324.asm)): 3*n! + 1.
 * [A173391](http://oeis.org/A173391) ([L15 program](A173391.asm)): a(n) = 6n + 3^n.
 * [A173432](http://oeis.org/A173432) ([L12 program](A173432.asm)): NW-SE diagonal sums of Riordan array A112468.
 * [A173511](http://oeis.org/A173511) ([L18 program](A173511.asm)): a(n) = 4*n^2 + floor(n/2).

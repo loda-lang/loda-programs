@@ -88,6 +88,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A303609](http://oeis.org/A303609) ([L11 program](A303609.asm)): a(n) = 2*n^3 + 9*n^2 + 9*n.
 * [A303611](http://oeis.org/A303611) ([L12 program](A303611.asm)): a(n) = (-1 - (-2)^(n-2)) mod 2^n.
 * [A303692](http://oeis.org/A303692) ([L15 program](A303692.asm)): a(n) = n^2*(2*n - 3 - (-1)^n)/4.
+* [A303814](http://oeis.org/A303814) ([L20 program](A303814.asm)): Generalized 24-gonal (or icositetragonal) numbers: m*(11*m - 10) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A304157](http://oeis.org/A304157) ([L05 program](A304157.asm)): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
 * [A304158](http://oeis.org/A304158) ([L05 program](A304158.asm)): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
 * [A304159](http://oeis.org/A304159) ([L14 program](A304159.asm)): a(n) = 2*n^3 - 4*n^2 + 6*n - 2 (n>=1).
@@ -600,3 +601,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328011](http://oeis.org/A328011) ([L14 program](A328011.asm)): The 5x + 1 sequence beginning at 1.
 * [A328263](http://oeis.org/A328263) ([L07 program](A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
+* [A328943](http://oeis.org/A328943) ([L08 program](A328943.asm)): a(n) = 2 + (n mod 4).
