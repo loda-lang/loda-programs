@@ -8898,3 +8898,14 @@ A273481: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T02.asm
 A021337: -p 20 -n 2 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A261557: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T02.asm
 A173035: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T02.asm
+A039210: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T02.asm
+A257601: -p 50 -n 5 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A091685: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T02.asm
+A184044: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A255465: -p 30 -n 3 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A270681: -p 20 -n 2 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A312143: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A108982: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A242709: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T02.asm
+A094404: -p 60 -n 6 -i 6 -o asml -a cdi
+A131922: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T02.asm

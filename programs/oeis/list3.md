@@ -4,7 +4,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 
 * [A300067](http://oeis.org/A300067) ([L09 program](A300067.asm)): Period 6: repeat [0, 0, 0, 1, 2, 2].
 * [A300068](http://oeis.org/A300068) ([L13 program](A300068.asm)): A sequence based on the period 6 sequence A300067.
-* [A300069](http://oeis.org/A300069) ([L10 program](A300069.asm)): Period 6: repeat [0, 0, 0, 1, 2, 1].
+* [A300069](http://oeis.org/A300069) ([L14 program](A300069.asm)): Period 6: repeat [0, 0, 0, 1, 2, 1].
 * [A300075](http://oeis.org/A300075) ([L12 program](A300075.asm)): Period 6: repeat [0, 1, 1, 2, 2, 2].
 * [A300076](http://oeis.org/A300076) ([L17 program](A300076.asm)): A sequence based on the period 6 sequence A300075.
 * [A300287](http://oeis.org/A300287) ([L23 program](A300287.asm)): a(n) = floor((1/n) * Sum_{k=1..n} sqrt(k)).
@@ -50,7 +50,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301722](http://oeis.org/A301722) ([L15 program](A301722.asm)): Coordination sequence for node of type V2 in "krb" 2-D tiling (or net).
 * [A301723](http://oeis.org/A301723) ([L15 program](A301723.asm)): Partial sums of A301722.
 * [A301729](http://oeis.org/A301729) ([L19 program](A301729.asm)): a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
-* [A301755](http://oeis.org/A301755) ([L05 program](A301755.asm)): Decimal expansion of 3/8.
+* [A301755](http://oeis.org/A301755) ([L15 program](A301755.asm)): Decimal expansion of 3/8.
 * [A301787](http://oeis.org/A301787) ([L19 program](A301787.asm)): Number of nX5 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301791](http://oeis.org/A301791) ([L21 program](A301791.asm)): Number of 2Xn 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301819](http://oeis.org/A301819) ([L10 program](A301819.asm)): Number of nX4 0..1 arrays with every element equal to 1 or 2 horizontally or antidiagonally adjacent elements, with upper left element zero.
@@ -170,7 +170,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304841](http://oeis.org/A304841) ([L05 program](A304841.asm)): a(n) = 67*n - 10 (n>=1).
 * [A304993](http://oeis.org/A304993) ([L07 program](A304993.asm)): a(n) = n*(n + 1)*(7*n + 5)/6.
 * [A305060](http://oeis.org/A305060) ([L08 program](A305060.asm)): a(n) = 18*2^n + 10.
-* [A305061](http://oeis.org/A305061) ([L09 program](A305061.asm)): a(n) = 20*2^n + 14.
+* [A305061](http://oeis.org/A305061) ([L08 program](A305061.asm)): a(n) = 20*2^n + 14.
 * [A305062](http://oeis.org/A305062) ([L07 program](A305062.asm)): a(n) = 96*2^n + 80.
 * [A305063](http://oeis.org/A305063) ([L16 program](A305063.asm)): a(n) = 110*2^n + 118.
 * [A305064](http://oeis.org/A305064) ([L08 program](A305064.asm)): a(n) = 42*2^n - 20.
@@ -201,7 +201,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305264](http://oeis.org/A305264) ([L19 program](A305264.asm)): a(n) = 836*2^n - 771.
 * [A305265](http://oeis.org/A305265) ([L24 program](A305265.asm)): a(n) = 12*2^n + 62.
 * [A305266](http://oeis.org/A305266) ([L08 program](A305266.asm)): a(n) = 14*2^n + 73.
-* [A305267](http://oeis.org/A305267) ([L19 program](A305267.asm)): a(n) = 68*2^n + 358.
+* [A305267](http://oeis.org/A305267) ([L18 program](A305267.asm)): a(n) = 68*2^n + 358.
 * [A305268](http://oeis.org/A305268) ([L19 program](A305268.asm)): a(n) = 82*2^n + 440.
 * [A305269](http://oeis.org/A305269) ([L17 program](A305269.asm)): a(n) = 120*2^n - 95.
 * [A305270](http://oeis.org/A305270) ([L12 program](A305270.asm)): a(n) = 140*2^n - 112.
@@ -596,9 +596,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327376](http://oeis.org/A327376) ([L06 program](A327376.asm)): BII-numbers of set-systems with vertex-connectivity 3.
 * [A327440](http://oeis.org/A327440) ([L18 program](A327440.asm)): a(n) = floor(3*n/10).
 * [A327470](http://oeis.org/A327470) ([L07 program](A327470.asm)): Maximum valency of the central line in a certain smooth 2D-polarized K3-surface in P^{n+1}.
-* [A327672](http://oeis.org/A327672) ([L17 program](A327672.asm)): a(n) = Sum_{k=0..n} ceiling(sqrt(k)).
+* [A327672](http://oeis.org/A327672) ([L12 program](A327672.asm)): a(n) = Sum_{k=0..n} ceiling(sqrt(k)).
 * [A328010](http://oeis.org/A328010) ([L17 program](A328010.asm)): The 5x + 1 sequence beginning at 17.
 * [A328011](http://oeis.org/A328011) ([L14 program](A328011.asm)): The 5x + 1 sequence beginning at 1.
 * [A328263](http://oeis.org/A328263) ([L07 program](A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
-* [A328943](http://oeis.org/A328943) ([L08 program](A328943.asm)): a(n) = 2 + (n mod 4).
+* [A328943](http://oeis.org/A328943) ([L06 program](A328943.asm)): a(n) = 2 + (n mod 4).

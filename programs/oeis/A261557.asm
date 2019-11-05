@@ -3,7 +3,6 @@
 
 add $3,$0
 lpb $3,1
-  sub $4,6
   add $1,1
   add $4,4
   lpb $4,1
