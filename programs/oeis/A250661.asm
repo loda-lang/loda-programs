@@ -4,17 +4,14 @@
 mov $2,$0
 add $0,$0
 add $0,$0
-add $1,1
-add $1,$1
 add $0,$0
 lpb $0,1
   sub $0,1
   add $1,$0
+  add $1,$0
 lpe
-add $1,1
-add $1,$1
 lpb $2,1
   add $1,455
   sub $2,1
 lpe
-add $1,633
+add $1,639

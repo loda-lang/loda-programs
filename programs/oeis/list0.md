@@ -2539,7 +2539,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044632](http://oeis.org/A044632) ([L17 program](A044632.asm)): Numbers n such that string 0,0 occurs in the base 9 representation of n but not of n+1.
 * [A044641](http://oeis.org/A044641) ([L40 program](A044641.asm)): Numbers n such that string 1,0 occurs in the base 9 representation of n but not of n+1.
 * [A044672](http://oeis.org/A044672) ([L18 program](A044672.asm)): Numbers n such that string 4,4 occurs in the base 9 representation of n but not of n+1.
-* [A044682](http://oeis.org/A044682) ([L29 program](A044682.asm)): Numbers n such that string 5,5 occurs in the base 9 representation of n but not of n+1.
+* [A044682](http://oeis.org/A044682) ([L23 program](A044682.asm)): Numbers n such that string 5,5 occurs in the base 9 representation of n but not of n+1.
 * [A044692](http://oeis.org/A044692) ([L21 program](A044692.asm)): Numbers n such that string 6,6 occurs in the base 9 representation of n but not of n+1.
 * [A044702](http://oeis.org/A044702) ([L15 program](A044702.asm)): Numbers n such that string 7,7 occurs in the base 9 representation of n but not of n+1.
 * [A044703](http://oeis.org/A044703) ([L28 program](A044703.asm)): Numbers n such that string 7,8 occurs in the base 9 representation of n but not of n+1.
@@ -3751,7 +3751,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063107](http://oeis.org/A063107) ([L16 program](A063107.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 39 ).
 * [A063109](http://oeis.org/A063109) ([L12 program](A063109.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 41 ).
 * [A063110](http://oeis.org/A063110) ([L07 program](A063110.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0(42).
-* [A063111](http://oeis.org/A063111) ([L19 program](A063111.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 43 ).
+* [A063111](http://oeis.org/A063111) ([L12 program](A063111.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 43 ).
 * [A063116](http://oeis.org/A063116) ([L12 program](A063116.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 48 ).
 * [A063117](http://oeis.org/A063117) ([L21 program](A063117.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 49 ).
 * [A063118](http://oeis.org/A063118) ([L11 program](A063118.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0(50).
@@ -3824,7 +3824,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063234](http://oeis.org/A063234) ([L12 program](A063234.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 82 ).
 * [A063236](http://oeis.org/A063236) ([L16 program](A063236.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 85 ).
 * [A063237](http://oeis.org/A063237) ([L14 program](A063237.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 86 ).
-* [A063238](http://oeis.org/A063238) ([L22 program](A063238.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 87 ).
+* [A063238](http://oeis.org/A063238) ([L18 program](A063238.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 87 ).
 * [A063240](http://oeis.org/A063240) ([L16 program](A063240.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 89 ).
 * [A063241](http://oeis.org/A063241) ([L08 program](A063241.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0(90).
 * [A063242](http://oeis.org/A063242) ([L17 program](A063242.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 92 ).
@@ -5257,6 +5257,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A094373](http://oeis.org/A094373) ([L07 program](A094373.asm)): Expansion of (1-x-x^2)/((1-x)*(1-2*x)).
 * [A094374](http://oeis.org/A094374) ([L11 program](A094374.asm)): a(n)=(3^n-1)/2+2^n.
 * [A094388](http://oeis.org/A094388) ([L08 program](A094388.asm)): Expansion of (1- 2x - x^2)/((1-x)*(1-3x)).
+* [A094404](http://oeis.org/A094404) ([L32 program](A094404.asm)): Numerators of low-water marks of mu(n)/n, where mu(n) is A002034.
 * [A094421](http://oeis.org/A094421) ([L24 program](A094421.asm)): a(n) = n * (6*n^2 + 6*n + 1).
 * [A094434](http://oeis.org/A094434) ([L10 program](A094434.asm)): a(n) = rightmost term of M^n * [1 0 0], with M = the 3 X 3 matrix [1 -1 0 / -1 3 -2 / 0 -2 2].
 * [A094561](http://oeis.org/A094561) ([L39 program](A094561.asm)): Final decimal digit of floor(pi*n), pi=3.1415...

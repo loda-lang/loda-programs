@@ -17,7 +17,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300576](http://oeis.org/A300576) ([L07 program](A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300659](http://oeis.org/A300659) ([L09 program](A300659.asm)): Product of digits of n!.
 * [A300758](http://oeis.org/A300758) ([L12 program](A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
-* [A301291](http://oeis.org/A301291) ([L21 program](A301291.asm)): Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
+* [A301291](http://oeis.org/A301291) ([L20 program](A301291.asm)): Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
 * [A301292](http://oeis.org/A301292) ([L09 program](A301292.asm)): Partial sums of A301291.
 * [A301293](http://oeis.org/A301293) ([L15 program](A301293.asm)): Expansion of (x^2+x+1)^2 / ((x^2+1)*(x-1)^2).
 * [A301294](http://oeis.org/A301294) ([L14 program](A301294.asm)): Partial sums of A301293.
@@ -289,6 +289,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A311816](http://oeis.org/A311816) ([L13 program](A311816.asm)): Coordination sequence Gal.5.95.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312065](http://oeis.org/A312065) ([L25 program](A312065.asm)): Coordination sequence Gal.3.10.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312140](http://oeis.org/A312140) ([L26 program](A312140.asm)): Coordination sequence Gal.4.41.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A312143](http://oeis.org/A312143) ([L23 program](A312143.asm)): Coordination sequence Gal.5.55.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312183](http://oeis.org/A312183) ([L34 program](A312183.asm)): Coordination sequence Gal.4.42.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312472](http://oeis.org/A312472) ([L18 program](A312472.asm)): Coordination sequence Gal.6.149.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312475](http://oeis.org/A312475) ([L15 program](A312475.asm)): Coordination sequence Gal.3.16.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
