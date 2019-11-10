@@ -161,7 +161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304830](http://oeis.org/A304830) ([L24 program](A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
 * [A304831](http://oeis.org/A304831) ([L26 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
 * [A304832](http://oeis.org/A304832) ([L16 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
-* [A304833](http://oeis.org/A304833) ([L13 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
+* [A304833](http://oeis.org/A304833) ([L11 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
 * [A304834](http://oeis.org/A304834) ([L19 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L28 program](A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
 * [A304836](http://oeis.org/A304836) ([L09 program](A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
@@ -184,7 +184,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305074](http://oeis.org/A305074) ([L05 program](A305074.asm)): a(n) = 20*n - 8 (n>=1).
 * [A305075](http://oeis.org/A305075) ([L05 program](A305075.asm)): a(n) = 32*n - 24 (n>=1).
 * [A305153](http://oeis.org/A305153) ([L17 program](A305153.asm)): a(n) = 30*2^n + 12.
-* [A305154](http://oeis.org/A305154) ([L10 program](A305154.asm)): a(n) = 36*2^n + 9.
+* [A305154](http://oeis.org/A305154) ([L07 program](A305154.asm)): a(n) = 36*2^n + 9.
 * [A305155](http://oeis.org/A305155) ([L07 program](A305155.asm)): a(n) = 28*2^n - 15.
 * [A305156](http://oeis.org/A305156) ([L14 program](A305156.asm)): a(n) = 136*2^n - 78 (n>=0).
 * [A305157](http://oeis.org/A305157) ([L19 program](A305157.asm)): a(n) = 164*2^n - 99.
@@ -224,7 +224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306764](http://oeis.org/A306764) ([L19 program](A306764.asm)): a(n) is a sequence of period 12: repeat [1, 1, 6, 2, 1, 3, 2, 2, 3, 1, 2, 6].
 * [A306771](http://oeis.org/A306771) ([L09 program](A306771.asm)): Numbers m such that phi(m) = phi(i + j) = phi(i) + phi(j) and phi(m) = phi(k * l) = phi(k) * phi(l) for some i, j, k, l, where phi is the Euler totient function A000010.
 * [A307018](http://oeis.org/A307018) ([L11 program](A307018.asm)): Total number of parts of size 3 in the partitions of n into parts of size 2 and 3.
-* [A307136](http://oeis.org/A307136) ([L12 program](A307136.asm)): a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
+* [A307136](http://oeis.org/A307136) ([L11 program](A307136.asm)): a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
 * [A307182](http://oeis.org/A307182) ([L14 program](A307182.asm)): Crossing number of the n-crown graph (conjectured).
 * [A307268](http://oeis.org/A307268) ([L14 program](A307268.asm)): Partial sums of the Lucas numbers of the form L(3n+2) (A163063).
 * [A307559](http://oeis.org/A307559) ([L12 program](A307559.asm)): a(n) = floor(n/3)*(n - floor(n/3))*(n - floor(n/3) - 1).
@@ -236,7 +236,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307808](http://oeis.org/A307808) ([L15 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
 * [A307921](http://oeis.org/A307921) ([L35 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
-* [A308124](http://oeis.org/A308124) ([L12 program](A308124.asm)): a(n) = (2 + 7*4^n)/3.
+* [A308124](http://oeis.org/A308124) ([L07 program](A308124.asm)): a(n) = (2 + 7*4^n)/3.
 * [A308136](http://oeis.org/A308136) ([L18 program](A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
 * [A308196](http://oeis.org/A308196) ([L09 program](A308196.asm)): Partial sums of A063808.
 * [A308287](http://oeis.org/A308287) ([L06 program](A308287.asm)): Length 20 arithmetic progression of primes (PAP-20).
@@ -590,7 +590,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A326247](http://oeis.org/A326247) ([L15 program](A326247.asm)): Number of labeled n-vertex 2-edge multigraphs that are neither crossing nor nesting.
 * [A326278](http://oeis.org/A326278) ([L12 program](A326278.asm)): Number of n-vertex, 2-edge multigraphs that are not nesting. Number of n-vertex, 2-edge multigraphs that are not crossing.
 * [A326422](http://oeis.org/A326422) ([L33 program](A326422.asm)): Numbers k such that A000045(k) mod 5 is prime.
-* [A326494](http://oeis.org/A326494) ([L09 program](A326494.asm)): Number of subsets of {1..n} containing all differences and quotients of pairs of distinct elements.
+* [A326494](http://oeis.org/A326494) ([L08 program](A326494.asm)): Number of subsets of {1..n} containing all differences and quotients of pairs of distinct elements.
 * [A326657](http://oeis.org/A326657) ([L16 program](A326657.asm)): a(n) = 4*floor(n/2) + ceiling((n-1)^2/2).
 * [A326658](http://oeis.org/A326658) ([L22 program](A326658.asm)): a(n) = 6*floor(n/2) + ceiling((n-1)^2/2).
 * [A327032](http://oeis.org/A327032) ([L15 program](A327032.asm)): a(n) = T(n, 4) with T(n, k) = Sum_{d|k} phi(d)*binomial(n - 1 + k/d, k/d).
