@@ -9781,3 +9781,8 @@ A002001: -p 20 -n 2 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A044692: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A056081: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T01.asm
 A167533: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A246075: -p 60 -n 6 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A329279: -p 50 -n 5 -i 6 -o asm -a cd -e programs/templates/T02.asm
+A117616: -p 30 -n 3 -i 6 -o asm -a cd -e programs/templates/T01.asm
+A272104: -p 40 -n 4 -i 6 -o asm -a cd -e programs/templates/T02.asm
+A244975: -p 50 -n 5 -i 6 -o asm -a cd -e programs/templates/T01.asm
