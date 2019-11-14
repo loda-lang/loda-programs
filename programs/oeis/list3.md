@@ -35,6 +35,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301622](http://oeis.org/A301622) ([L16 program](A301622.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 4.
 * [A301623](http://oeis.org/A301623) ([L30 program](A301623.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 5.
 * [A301628](http://oeis.org/A301628) ([L17 program](A301628.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 7.
+* [A301647](http://oeis.org/A301647) ([L39 program](A301647.asm)): a(n) = n^3 - (n mod 2).
 * [A301654](http://oeis.org/A301654) ([L07 program](A301654.asm)): Circumference of the n-triangular honeycomb acute knight graph.
 * [A301657](http://oeis.org/A301657) ([L16 program](A301657.asm)): Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
 * [A301673](http://oeis.org/A301673) ([L13 program](A301673.asm)): Partial sums of A301672.
@@ -236,8 +237,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307808](http://oeis.org/A307808) ([L12 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
 * [A307921](http://oeis.org/A307921) ([L35 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
+* [A307939](http://oeis.org/A307939) ([L37 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
 * [A308124](http://oeis.org/A308124) ([L07 program](A308124.asm)): a(n) = (2 + 7*4^n)/3.
 * [A308136](http://oeis.org/A308136) ([L18 program](A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
+* [A308137](http://oeis.org/A308137) ([L46 program](A308137.asm)): Number of (undirected) Hamiltonian paths on the n-prism graph.
 * [A308196](http://oeis.org/A308196) ([L09 program](A308196.asm)): Partial sums of A063808.
 * [A308287](http://oeis.org/A308287) ([L06 program](A308287.asm)): Length 20 arithmetic progression of primes (PAP-20).
 * [A308305](http://oeis.org/A308305) ([L14 program](A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
@@ -446,6 +449,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316224](http://oeis.org/A316224) ([L08 program](A316224.asm)): a(n) = n*(2*n + 1)*(4*n + 1).
 * [A316320](http://oeis.org/A316320) ([L14 program](A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
 * [A316355](http://oeis.org/A316355) ([L08 program](A316355.asm)): 2k-1 appears 2k times after 2k-2 appears once.
+* [A316459](http://oeis.org/A316459) ([L48 program](A316459.asm)): Expansion of 30*x*(1 + x) / (1 - x)^4.
 * [A316466](http://oeis.org/A316466) ([L07 program](A316466.asm)): a(n) = 2*n*(7*n - 3).
 * [A316533](http://oeis.org/A316533) ([L24 program](A316533.asm)): a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
 * [A316562](http://oeis.org/A316562) ([L13 program](A316562.asm)): Koechel number for the works of W. A. Mozart rounded from age 11.
@@ -542,7 +546,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321643](http://oeis.org/A321643) ([L18 program](A321643.asm)): a(n) = 5*2^n - (-1)^n.
 * [A321672](http://oeis.org/A321672) ([L12 program](A321672.asm)): Number of chiral pairs of rows of length 5 using up to n colors.
 * [A321883](http://oeis.org/A321883) ([L06 program](A321883.asm)): Nonnegative integers n for which n! + 1 is not a square.
+* [A322008](http://oeis.org/A322008) ([L33 program](A322008.asm)): 1/(1 - Integral_{x=0..1} x^(x^n) dx), rounded to the nearest integer.
 * [A322042](http://oeis.org/A322042) ([L05 program](A322042.asm)): Maximum edge-distance of a point in the quotient graph E/nE from the origin (see A322041 for further information).
+* [A322043](http://oeis.org/A322043) ([L34 program](A322043.asm)): Numbers k such that the coefficient of x^k in the expansion of Product_{m >= 1} (1-x^m)^15 is zero.
 * [A322129](http://oeis.org/A322129) ([L31 program](A322129.asm)): Digital roots of A057084.
 * [A322171](http://oeis.org/A322171) ([L18 program](A322171.asm)): Expansion of x*(3 + 5*x + x^2 + x^3)/((1 - x)^2*(1 + x^2)).
 * [A322417](http://oeis.org/A322417) ([L16 program](A322417.asm)): a(n) - 2*a(n-1) = period 2: repeat [3, 0] for n > 0, a(0)=5, a(1)=13.
@@ -604,3 +610,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328263](http://oeis.org/A328263) ([L07 program](A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L06 program](A328943.asm)): a(n) = 2 + (n mod 4).
+* [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
