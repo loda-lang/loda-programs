@@ -12,27 +12,26 @@ lpb $0,1
   sub $3,$1
   sub $0,1
   sub $3,$1
-  mov $6,$1
   add $3,1
   sub $0,$3
   mov $3,4
   add $3,$3
 lpe
 add $1,5
-mov $8,$7
+mov $6,$7
 mov $2,6
 lpb $2,1
-  add $1,$8
+  add $1,$6
   sub $2,1
 lpe
 mov $4,$7
 lpb $4,1
-  add $5,$8
+  add $5,$6
   sub $4,1
 lpe
-mov $8,$5
+mov $6,$5
 mov $2,1
 lpb $2,1
-  add $1,$8
+  add $1,$6
   sub $2,1
 lpe

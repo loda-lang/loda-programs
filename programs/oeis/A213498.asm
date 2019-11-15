@@ -7,38 +7,34 @@ lpb $2,1
   sub $2,1
   add $1,$0
   sub $1,$2
-  lpb $0,1
-    add $3,3
-    add $0,$3
-  lpe
   sub $2,1
 lpe
-mov $8,$7
+mov $3,$7
 mov $4,1
 lpb $4,1
-  add $1,$8
+  add $1,$3
   sub $4,1
 lpe
 mov $5,$7
 lpb $5,1
-  add $6,$8
+  add $6,$3
   sub $5,1
 lpe
-mov $8,$6
+mov $3,$6
 mov $4,1
 lpb $4,1
-  add $1,$8
+  add $1,$3
   sub $4,1
 lpe
 mov $5,$7
 mov $6,0
 lpb $5,1
-  add $6,$8
+  add $6,$3
   sub $5,1
 lpe
-mov $8,$6
+mov $3,$6
 mov $4,1
 lpb $4,1
-  add $1,$8
+  add $1,$3
   sub $4,1
 lpe
