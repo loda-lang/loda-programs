@@ -164,7 +164,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304827](http://oeis.org/A304827) ([L12 program](A304827.asm)): a(n) = 52*7^n/21 - 16/3 (n>=1).
 * [A304830](http://oeis.org/A304830) ([L24 program](A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
 * [A304831](http://oeis.org/A304831) ([L26 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
-* [A304832](http://oeis.org/A304832) ([L14 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
+* [A304832](http://oeis.org/A304832) ([L13 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
 * [A304833](http://oeis.org/A304833) ([L11 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
 * [A304834](http://oeis.org/A304834) ([L19 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L28 program](A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
@@ -239,7 +239,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307802](http://oeis.org/A307802) ([L04 program](A307802.asm)): Number of palindromic octagonal numbers of length n whose index is also palindromic.
 * [A307808](http://oeis.org/A307808) ([L12 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
-* [A307921](http://oeis.org/A307921) ([L31 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
+* [A307921](http://oeis.org/A307921) ([L28 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
 * [A307939](http://oeis.org/A307939) ([L35 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
 * [A308124](http://oeis.org/A308124) ([L07 program](A308124.asm)): a(n) = (2 + 7*4^n)/3.
 * [A308136](http://oeis.org/A308136) ([L18 program](A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
