@@ -1,66 +1,58 @@
 ; A053700: a(n) = 111111 in base n.
 ; 6,63,364,1365,3906,9331,19608,37449,66430,111111,177156,271453,402234,579195,813616,1118481,1508598,2000719,2613660,3368421,4288306,5399043,6728904,8308825,10172526,12356631,14900788,17847789,21243690,25137931
 
-mov $3,$0
-add $0,2
-lpb $0,1
-  mov $2,$0
-  sub $0,1
-  add $1,$2
-  add $1,$0
+mov $6,$0
+add $1,6
+mov $5,$6
+mov $2,15
+lpb $2,1
+  add $1,$5
+  sub $2,1
 lpe
-add $1,$1
-sub $1,2
-mov $4,$3
-mov $7,7
-lpb $7,1
-  add $1,$4
-  sub $7,1
+mov $3,$6
+lpb $3,1
+  add $4,$5
+  sub $3,1
 lpe
-mov $6,$3
-lpb $6,1
-  add $5,$4
-  sub $6,1
+mov $5,$4
+mov $2,20
+lpb $2,1
+  add $1,$5
+  sub $2,1
 lpe
-mov $4,$5
-mov $7,18
-lpb $7,1
-  add $1,$4
-  sub $7,1
+mov $3,$6
+mov $4,0
+lpb $3,1
+  add $4,$5
+  sub $3,1
 lpe
-mov $6,$3
-mov $5,0
-lpb $6,1
-  add $5,$4
-  sub $6,1
+mov $5,$4
+mov $2,15
+lpb $2,1
+  add $1,$5
+  sub $2,1
 lpe
-mov $4,$5
-mov $7,15
-lpb $7,1
-  add $1,$4
-  sub $7,1
+mov $3,$6
+mov $4,0
+lpb $3,1
+  add $4,$5
+  sub $3,1
 lpe
-mov $6,$3
-mov $5,0
-lpb $6,1
-  add $5,$4
-  sub $6,1
+mov $5,$4
+mov $2,6
+lpb $2,1
+  add $1,$5
+  sub $2,1
 lpe
-mov $4,$5
-mov $7,6
-lpb $7,1
-  add $1,$4
-  sub $7,1
+mov $3,$6
+mov $4,0
+lpb $3,1
+  add $4,$5
+  sub $3,1
 lpe
-mov $6,$3
-mov $5,0
-lpb $6,1
-  add $5,$4
-  sub $6,1
-lpe
-mov $4,$5
-mov $7,1
-lpb $7,1
-  add $1,$4
-  sub $7,1
+mov $5,$4
+mov $2,1
+lpb $2,1
+  add $1,$5
+  sub $2,1
 lpe

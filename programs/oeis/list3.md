@@ -617,4 +617,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L06 program](A328943.asm)): a(n) = 2 + (n mod 4).
 * [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
+* [A329502](http://oeis.org/A329502) ([L16 program](A329502.asm)): Expansion of (1 + x)*(1 + 2*x) / (1 - x).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
