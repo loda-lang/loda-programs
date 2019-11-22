@@ -304,7 +304,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106328](http://oeis.org/A106328) ([L12 program](A106328.asm)): Numbers j such that 8*(j^2) + 9 = k^2 for some positive number k.
 * [A106329](http://oeis.org/A106329) ([L13 program](A106329.asm)): Numbers k such that k^2 = 8*j^2 + 9.
 * [A106387](http://oeis.org/A106387) ([L08 program](A106387.asm)): Numbers j such that 6j^2 + 6j + 1 = 11k.
-* [A106389](http://oeis.org/A106389) ([L11 program](A106389.asm)): Numbers j such that 6j^2 + 6j + 1 = 13k.
+* [A106389](http://oeis.org/A106389) ([L09 program](A106389.asm)): Numbers j such that 6j^2 + 6j + 1 = 13k.
 * [A106434](http://oeis.org/A106434) ([L11 program](A106434.asm)): The (1,1)-entry of the matrix A^n, where A = [0,1;2,3].
 * [A106469](http://oeis.org/A106469) ([L07 program](A106469.asm)): Expansion of (1+x^2)(1+2x)/(1-x^2).
 * [A106505](http://oeis.org/A106505) ([L08 program](A106505.asm)): Ordered and uniqued length of side common to the two angles, one being the double of the other, of a primitive integer-sided triangle.
@@ -2011,7 +2011,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A151984](http://oeis.org/A151984) ([L29 program](A151984.asm)): Numbers that are congruent to {0, 1} mod 64.
 * [A151988](http://oeis.org/A151988) ([L09 program](A151988.asm)): G.f.: (x*(x^4+1)*(x^2-x+1)*(x^2+x+1))/((x^4+x^3+x^2+x+1)*(x^4-x^3+x^2-x+1)*(x-1)^2).
 * [A152009](http://oeis.org/A152009) ([L12 program](A152009.asm)): (L)-sieve transform of {1,4,7,10,...,3n-2,...} (A016777)
-* [A152031](http://oeis.org/A152031) ([L53 program](A152031.asm)): a(n) = n^5 + n^4 + n^3 + n^2 + n.
+* [A152031](http://oeis.org/A152031) ([L50 program](A152031.asm)): a(n) = n^5 + n^4 + n^3 + n^2 + n.
 * [A152035](http://oeis.org/A152035) ([L20 program](A152035.asm)): G.f.: (1-2*x^2)/(1-2*x-2*x^2).
 * [A152041](http://oeis.org/A152041) ([L15 program](A152041.asm)): A008893/2.
 * [A152064](http://oeis.org/A152064) ([L15 program](A152064.asm)): a(n) = 2*n^3 - 3*n^2 + 5.
@@ -3161,7 +3161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168332](http://oeis.org/A168332) ([L06 program](A168332.asm)): a(n) = 6 + 7 * floor((n-1)/2).
 * [A168333](http://oeis.org/A168333) ([L08 program](A168333.asm)): a(n) = (14*n + 7*(-1)^n + 1)/4.
 * [A168336](http://oeis.org/A168336) ([L06 program](A168336.asm)): a(n) = 5 + 7*floor((n-1)/2).
-* [A168337](http://oeis.org/A168337) ([L07 program](A168337.asm)): a(n) = 1 + 7*floor(n/2).
+* [A168337](http://oeis.org/A168337) ([L06 program](A168337.asm)): a(n) = 1 + 7*floor(n/2).
 * [A168373](http://oeis.org/A168373) ([L06 program](A168373.asm)): a(n) = 7*n - a(n-1) - 6 with n>1, a(1)=4.
 * [A168374](http://oeis.org/A168374) ([L04 program](A168374.asm)): a(n) = 7 * floor(n/2).
 * [A168376](http://oeis.org/A168376) ([L15 program](A168376.asm)): a(n) = (14*n - 7*(-1)^n - 9)/4.
@@ -4045,7 +4045,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184636](http://oeis.org/A184636) ([L08 program](A184636.asm)): floor(1/{(n^4+2*n)^(1/4)}), where {}=fractional part.
 * [A184637](http://oeis.org/A184637) ([L11 program](A184637.asm)): a(n) = floor(1/{(n^4+3*n)^(1/4)}), where {}=fractional part.
 * [A184674](http://oeis.org/A184674) ([L07 program](A184674.asm)): a(n) = n+floor((n/2-1/(2*n))^2); complement of A184675.
-* [A184675](http://oeis.org/A184675) ([L19 program](A184675.asm)): n + floor(sqrt(n) + sqrt(n+1)); complement of A184674.
+* [A184675](http://oeis.org/A184675) ([L17 program](A184675.asm)): n + floor(sqrt(n) + sqrt(n+1)); complement of A184674.
 * [A184676](http://oeis.org/A184676) ([L07 program](A184676.asm)): a(n) = n + floor((n/2-1/(4*n))^2); complement of A183867.
 * [A184732](http://oeis.org/A184732) ([L24 program](A184732.asm)): floor(nr+h), where r=(1+sqrt(5))/2, h=-1/4; complement of A184733.
 * [A184750](http://oeis.org/A184750) ([L09 program](A184750.asm)): a(n) = largest k such that A000326(n+1) = A000326(n) + (A000326(n) mod k), or 0 if no such k exists.
@@ -4055,7 +4055,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185013](http://oeis.org/A185013) ([L06 program](A185013.asm)): Characteristic function of {3}.
 * [A185014](http://oeis.org/A185014) ([L06 program](A185014.asm)): Characteristic function of four.
 * [A185015](http://oeis.org/A185015) ([L06 program](A185015.asm)): Characteristic function of 5.
-* [A185016](http://oeis.org/A185016) ([L06 program](A185016.asm)): Characteristic function of 6.
+* [A185016](http://oeis.org/A185016) ([L07 program](A185016.asm)): Characteristic function of 6.
 * [A185017](http://oeis.org/A185017) ([L08 program](A185017.asm)): Characteristic function of 7.
 * [A185019](http://oeis.org/A185019) ([L07 program](A185019.asm)): a(n) = n*(14*n-3).
 * [A185039](http://oeis.org/A185039) ([L14 program](A185039.asm)): Numbers of the form 9*m^2 + 4*m, m an integer.
@@ -4118,7 +4118,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186355](http://oeis.org/A186355) ([L06 program](A186355.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186354.
 * [A186356](http://oeis.org/A186356) ([L28 program](A186356.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186357.
 * [A186357](http://oeis.org/A186357) ([L08 program](A186357.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186357.
-* [A186379](http://oeis.org/A186379) ([L16 program](A186379.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186380.
+* [A186379](http://oeis.org/A186379) ([L15 program](A186379.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186380.
 * [A186380](http://oeis.org/A186380) ([L12 program](A186380.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186379.
 * [A186381](http://oeis.org/A186381) ([L13 program](A186381.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186382.
 * [A186382](http://oeis.org/A186382) ([L16 program](A186382.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=4i and g(j)=j(j+1)/2 (triangular number).  Complement of A186381.
@@ -4280,7 +4280,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190576](http://oeis.org/A190576) ([L07 program](A190576.asm)): a(n) = n^2 + 5*n - 5.
 * [A190577](http://oeis.org/A190577) ([L56 program](A190577.asm)): a(n) = n*(n+2)*(n+4)*(n+6).
 * [A190582](http://oeis.org/A190582) ([L19 program](A190582.asm)): Generalized McCarthy function: a(n) = n - s if n > c; otherwise, a(n) = a(a(n+t)) with d = t - s > 0, with parameters t=15, s=9, c=21.
-* [A190621](http://oeis.org/A190621) ([L06 program](A190621.asm)): a(n) = n if n is not divisible by 4, otherwise 0.
+* [A190621](http://oeis.org/A190621) ([L19 program](A190621.asm)): a(n) = n if n is not divisible by 4, otherwise 0.
 * [A190693](http://oeis.org/A190693) ([L49 program](A190693.asm)): [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(3),4,0) and [ ]=floor.
 * [A190705](http://oeis.org/A190705) ([L09 program](A190705.asm)): a(n) = 6*n^2*(2*n + 1).
 * [A190710](http://oeis.org/A190710) ([L52 program](A190710.asm)): [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(3),4,3) and [ ]=floor.

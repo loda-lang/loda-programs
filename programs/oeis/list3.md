@@ -566,7 +566,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322595](http://oeis.org/A322595) ([L08 program](A322595.asm)): a(n) = (n^3 + 9*n + 14*n + 9)/3.
 * [A322597](http://oeis.org/A322597) ([L15 program](A322597.asm)): a(n) = (4*n^3 - 6*n^2 + 20*n + 3)/3.
 * [A322675](http://oeis.org/A322675) ([L18 program](A322675.asm)): a(n) = n * (4*n + 3)^2.
-* [A322677](http://oeis.org/A322677) ([L51 program](A322677.asm)): a(n) = 16 * n * (n+1) * (2*n+1)^2.
+* [A322677](http://oeis.org/A322677) ([L49 program](A322677.asm)): a(n) = 16 * n * (n+1) * (2*n+1)^2.
 * [A322783](http://oeis.org/A322783) ([L15 program](A322783.asm)): a(n) = 1 - n + (2^(n+2) - (-1)^n)/3.
 * [A322804](http://oeis.org/A322804) ([L10 program](A322804.asm)): Number of different positions a sphinx tile can occupy in an equilateral triangle of order n.
 * [A322830](http://oeis.org/A322830) ([L12 program](A322830.asm)): a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
@@ -617,5 +617,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L06 program](A328943.asm)): a(n) = 2 + (n mod 4).
 * [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
-* [A329502](http://oeis.org/A329502) ([L16 program](A329502.asm)): Expansion of (1 + x)*(1 + 2*x) / (1 - x).
+* [A329502](http://oeis.org/A329502) ([L11 program](A329502.asm)): Expansion of (1 + x)*(1 + 2*x) / (1 - x).
+* [A329503](http://oeis.org/A329503) ([L10 program](A329503.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2) / (1 - x).
+* [A329505](http://oeis.org/A329505) ([L14 program](A329505.asm)): G.f. = (1+x)*(1+2*x-x^2)/(1-x).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
