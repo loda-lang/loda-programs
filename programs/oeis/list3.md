@@ -452,6 +452,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316224](http://oeis.org/A316224) ([L08 program](A316224.asm)): a(n) = n*(2*n + 1)*(4*n + 1).
 * [A316320](http://oeis.org/A316320) ([L14 program](A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
 * [A316355](http://oeis.org/A316355) ([L08 program](A316355.asm)): 2k-1 appears 2k times after 2k-2 appears once.
+* [A316457](http://oeis.org/A316457) ([L74 program](A316457.asm)): Expansion of x*(31 + 326*x + 336*x^2 + 26*x^3 + x^4) / (1 - x)^6.
 * [A316458](http://oeis.org/A316458) ([L43 program](A316458.asm)): Expansion of 60*x*(1 + 4*x + x^2) / (1 - x)^5.
 * [A316459](http://oeis.org/A316459) ([L31 program](A316459.asm)): Expansion of 30*x*(1 + x) / (1 - x)^4.
 * [A316466](http://oeis.org/A316466) ([L07 program](A316466.asm)): a(n) = 2*n*(7*n - 3).
@@ -617,7 +618,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L06 program](A328943.asm)): a(n) = 2 + (n mod 4).
 * [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
-* [A329502](http://oeis.org/A329502) ([L11 program](A329502.asm)): Expansion of (1 + x)*(1 + 2*x) / (1 - x).
+* [A329502](http://oeis.org/A329502) ([L08 program](A329502.asm)): Expansion of (1 + x)*(1 + 2*x) / (1 - x).
 * [A329503](http://oeis.org/A329503) ([L10 program](A329503.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2) / (1 - x).
-* [A329505](http://oeis.org/A329505) ([L14 program](A329505.asm)): G.f. = (1+x)*(1+2*x-x^2)/(1-x).
+* [A329505](http://oeis.org/A329505) ([L14 program](A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
+* [A329506](http://oeis.org/A329506) ([L11 program](A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).

@@ -3,6 +3,6 @@
 
 mov $1,5
 lpb $0,1
-  mov $1,0
-  sub $0,3
+  sub $1,6
+  mov $0,$1
 lpe
