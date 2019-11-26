@@ -269,6 +269,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309689](http://oeis.org/A309689) ([L21 program](A309689.asm)): Number of even parts appearing among the second largest parts of the partitions of n into 3 parts.
 * [A309779](http://oeis.org/A309779) ([L15 program](A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
 * [A309805](http://oeis.org/A309805) ([L18 program](A309805.asm)): Maximum number of nonattacking kings placeable on a hexagonal board with edge-length n in Glinski's hexagonal chess.
+* [A309842](http://oeis.org/A309842) ([L34 program](A309842.asm)): a(n) is the total surface area of a hollow cubic block (defined as a block with a shell thickness of 1 cube) where n is the edge length of the removed volume.
 * [A309945](http://oeis.org/A309945) ([L15 program](A309945.asm)): a(n) = floor(n - (2*n-1)^(1/2)).
 * [A310368](http://oeis.org/A310368) ([L21 program](A310368.asm)): Coordination sequence Gal.6.230.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310372](http://oeis.org/A310372) ([L17 program](A310372.asm)): Coordination sequence Gal.4.52.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -502,6 +503,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317849](http://oeis.org/A317849) ([L27 program](A317849.asm)): Number of states of the Finite State Automaton Gn accepting the language of maximal (or minimal) lexicographic representatives of elements in the positive braid monoid An.
 * [A318054](http://oeis.org/A318054) ([L11 program](A318054.asm)): a(n) = n*(n+1)*(n^2+n+22)/24.
 * [A318111](http://oeis.org/A318111) ([L12 program](A318111.asm)): Number of maximal 1-intersecting families of 2-sets of [n] = {1,2,...,n}.
+* [A318159](http://oeis.org/A318159) ([L47 program](A318159.asm)): Figurate numbers based on the small stellated dodecahedron: a(n) = n*(21*n^2 - 33*n + 14)/2.
 * [A318274](http://oeis.org/A318274) ([L12 program](A318274.asm)): Triangle read by rows: T(n,k) = n for 0 < k < n and T(n,0) = T(n,n) = 1.
 * [A318919](http://oeis.org/A318919) ([L16 program](A318919.asm)): Define b(0)=0, b(1)[1]=1, b(1)[2]=1; and for n>=2, b(n)[1] = total number of digits in b(n-1), and b(n)[2] = total number of digits in b(0),...,b(n-1); a(n) = b(n)[2].
 * [A318934](http://oeis.org/A318934) ([L24 program](A318934.asm)): Numbers whose binary expansion begins with exactly two 1's.

@@ -455,6 +455,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215147](http://oeis.org/A215147) ([L15 program](A215147.asm)): For n odd, a(n)= 1^2+2^2+3^2+...+n^2; for n even, a(n)=(1^2+2^2+3^2+...+n^2) + 1.
 * [A215148](http://oeis.org/A215148) ([L05 program](A215148.asm)): a(n) = 23*n + 1.
 * [A215149](http://oeis.org/A215149) ([L08 program](A215149.asm)): a(n) = n * (1 + 2^(n-1)).
+* [A215229](http://oeis.org/A215229) ([L69 program](A215229.asm)): Number of length-6 0..k arrays connected end-around, with no sequence of L<n elements immediately followed by itself (periodic "squarefree").
 * [A215459](http://oeis.org/A215459) ([L10 program](A215459.asm)): Arises in quick gossiping without duplicate transmission.
 * [A215532](http://oeis.org/A215532) ([L29 program](A215532.asm)): The limit of the string "0, 1" under the operation 'append first k terms, increment k' with k=2 initially.
 * [A215537](http://oeis.org/A215537) ([L20 program](A215537.asm)): Lowest k such that k is representable as both the sum of n and of n+1 nonzero squares.
@@ -1736,6 +1737,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268898](http://oeis.org/A268898) ([L10 program](A268898.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two exactly once.
 * [A268945](http://oeis.org/A268945) ([L24 program](A268945.asm)): Number of length-4 0..n arrays with no repeated value unequal to the previous repeated value plus one mod n+1.
 * [A268946](http://oeis.org/A268946) ([L55 program](A268946.asm)): Number of length-5 0..n arrays with no repeated value unequal to the previous repeated value plus one mod n+1.
+* [A268947](http://oeis.org/A268947) ([L82 program](A268947.asm)): Number of length-6 0..n arrays with no repeated value unequal to the previous repeated value plus one mod n+1.
 * [A268965](http://oeis.org/A268965) ([L18 program](A268965.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two not more than once.
 * [A269024](http://oeis.org/A269024) ([L12 program](A269024.asm)): a(n) = A269020(n) - n.
 * [A269044](http://oeis.org/A269044) ([L05 program](A269044.asm)): a(n) = 13*n + 7.
@@ -1762,6 +1764,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269496](http://oeis.org/A269496) ([L72 program](A269496.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by one.
 * [A269538](http://oeis.org/A269538) ([L43 program](A269538.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by other than one.
 * [A269539](http://oeis.org/A269539) ([L55 program](A269539.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by other than one.
+* [A269540](http://oeis.org/A269540) ([L70 program](A269540.asm)): Number of length-6 0..n arrays with no repeated value differing from the previous repeated value by other than one.
 * [A269584](http://oeis.org/A269584) ([L28 program](A269584.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by more than one.
 * [A269585](http://oeis.org/A269585) ([L65 program](A269585.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by more than one.
 * [A269607](http://oeis.org/A269607) ([L43 program](A269607.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by one or less.

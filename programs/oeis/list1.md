@@ -38,6 +38,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100165](http://oeis.org/A100165) ([L12 program](A100165.asm)): Structured rhombic triacontahedral numbers (vertex structure 7).
 * [A100166](http://oeis.org/A100166) ([L44 program](A100166.asm)): Structured deltoidal hexacontahedral numbers (vertex structure 9).
 * [A100167](http://oeis.org/A100167) ([L30 program](A100167.asm)): Structured pentagonal icositetrahedral numbers (vertex structure 13).
+* [A100168](http://oeis.org/A100168) ([L47 program](A100168.asm)): Structured pentagonal icositetrahedral numbers (vertex structure 10).
 * [A100169](http://oeis.org/A100169) ([L57 program](A100169.asm)): Structured pentagonal hexacontahedral numbers (vertex structure 16).
 * [A100170](http://oeis.org/A100170) ([L44 program](A100170.asm)): Structured pentagonal hexacontahedral numbers (vertex structure 10).
 * [A100171](http://oeis.org/A100171) ([L19 program](A100171.asm)): Structured triakis octahedral numbers (vertex structure 4).
@@ -887,6 +888,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123753](http://oeis.org/A123753) ([L09 program](A123753.asm)): Partial sums of A070941.
 * [A123860](http://oeis.org/A123860) ([L10 program](A123860.asm)): a(n) = ceiling( (7 + sqrt(49+24*n))/2 ).
 * [A123865](http://oeis.org/A123865) ([L17 program](A123865.asm)): a(n) = n^4 - 1.
+* [A123866](http://oeis.org/A123866) ([L82 program](A123866.asm)): a(n) = n^6 - 1.
 * [A123919](http://oeis.org/A123919) ([L09 program](A123919.asm)): Number of numbers congruent to 2 or 4 mod 6 and <= n.
 * [A123920](http://oeis.org/A123920) ([L12 program](A123920.asm)): Number of numbers congruent to 2 or 4 mod 6 between n and 2n inclusive.
 * [A123932](http://oeis.org/A123932) ([L05 program](A123932.asm)): a(0)=1, a(n)=4 for n>0.
@@ -4260,6 +4262,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189274](http://oeis.org/A189274) ([L11 program](A189274.asm)): Number of nX3 array permutations with each element not moved or moved diagonally or antidiagonally by one
 * [A189318](http://oeis.org/A189318) ([L13 program](A189318.asm)): Expansion of 5*(1-2*x)/(1-3*x-2*x^2+4*x^3)
 * [A189320](http://oeis.org/A189320) ([L08 program](A189320.asm)): Number of nondecreasing arrangements of n+2 numbers in 0..3 with the last equal to 3 and each after the second equal to the sum of one or two of the preceding four
+* [A189321](http://oeis.org/A189321) ([L35 program](A189321.asm)): Number of nondecreasing arrangements of n+2 numbers in 0..4 with the last equal to 4 and each after the second equal to the sum of one or two of the preceding four.
 * [A189327](http://oeis.org/A189327) ([L14 program](A189327.asm)): Number of nondecreasing arrangements of 4 numbers in 0..n with the last equal to n and each after the second equal to the sum of one or two of the preceding four
 * [A189479](http://oeis.org/A189479) ([L42 program](A189479.asm)): Fixed point starting with 0 of the morphism 0->01, 1->101.
 * [A189573](http://oeis.org/A189573) ([L16 program](A189573.asm)): Positions of 0 in A189572; complement of A080652 (conjectured).
