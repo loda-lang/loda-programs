@@ -619,15 +619,17 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328010](http://oeis.org/A328010) ([L17 program](A328010.asm)): The 5x + 1 sequence beginning at 17.
 * [A328011](http://oeis.org/A328011) ([L14 program](A328011.asm)): The 5x + 1 sequence beginning at 1.
 * [A328263](http://oeis.org/A328263) ([L07 program](A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
-* [A328865](http://oeis.org/A328865) ([L07 program](A328865.asm)): The first repeating term in the iteration of A329623 with starting value n. A term of -1 indicates the iteration diverges.
+* [A328865](http://oeis.org/A328865) ([L06 program](A328865.asm)): The first repeating term in the iteration of A329623 with starting value n, or -1 if the iteration diverges.
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L06 program](A328943.asm)): a(n) = 2 + (n mod 4).
 * [A328990](http://oeis.org/A328990) ([L13 program](A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
-* [A329502](http://oeis.org/A329502) ([L08 program](A329502.asm)): Expansion of (1 + x)*(1 + 2*x) / (1 - x).
-* [A329503](http://oeis.org/A329503) ([L10 program](A329503.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2) / (1 - x).
+* [A329502](http://oeis.org/A329502) ([L08 program](A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
+* [A329503](http://oeis.org/A329503) ([L10 program](A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
 * [A329505](http://oeis.org/A329505) ([L14 program](A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
 * [A329506](http://oeis.org/A329506) ([L11 program](A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
 * [A329509](http://oeis.org/A329509) ([L19 program](A329509.asm)): Expansion of (1 + x)*(1 + x + x^2 - x^3) / (1 - x).
+* [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
-* [A329822](http://oeis.org/A329822) ([L20 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
+* [A329624](http://oeis.org/A329624) ([L08 program](A329624.asm)): The number of iterations of A329623 for n before a repeated value appears. A term of -1 indicates the iteration diverges.
+* [A329822](http://oeis.org/A329822) ([L16 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
