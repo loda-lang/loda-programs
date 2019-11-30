@@ -7,7 +7,4 @@ sub $$5,$5
 add $1,$$3
 add $$2,$$5
 mov $$3,2
-lpb $$1,1
-  mov $0,4
-lpe
 sub $1,$0

@@ -237,7 +237,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307702](http://oeis.org/A307702) ([L14 program](A307702.asm)): Clique covering number of the n-Sierpinski tetrahedron graph.
 * [A307753](http://oeis.org/A307753) ([L13 program](A307753.asm)): Number of palindromic pentagonal numbers of length n whose index is also palindromic.
 * [A307802](http://oeis.org/A307802) ([L04 program](A307802.asm)): Number of palindromic octagonal numbers of length n whose index is also palindromic.
-* [A307808](http://oeis.org/A307808) ([L12 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
+* [A307808](http://oeis.org/A307808) ([L07 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
 * [A307921](http://oeis.org/A307921) ([L28 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
 * [A307939](http://oeis.org/A307939) ([L35 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
@@ -247,6 +247,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308196](http://oeis.org/A308196) ([L09 program](A308196.asm)): Partial sums of A063808.
 * [A308287](http://oeis.org/A308287) ([L06 program](A308287.asm)): Length 20 arithmetic progression of primes (PAP-20).
 * [A308305](http://oeis.org/A308305) ([L14 program](A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
+* [A308385](http://oeis.org/A308385) ([L27 program](A308385.asm)): a(n) is the last square visited by fers moves on a spirally numbered (2n-1) X (2n-1) board, moving to the lowest available unvisited square at each step.
 * [A308579](http://oeis.org/A308579) ([L11 program](A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
 * [A308580](http://oeis.org/A308580) ([L15 program](A308580.asm)): a(n) = 3*2^n + n^2 - n.
 * [A308585](http://oeis.org/A308585) ([L08 program](A308585.asm)): a(n) = 2^(n + 3) - 10*n - 6.

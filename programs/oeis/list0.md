@@ -3552,7 +3552,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056548](http://oeis.org/A056548) ([L11 program](A056548.asm)): a(n) = Sum_{k>=1} round(n/k) where round(1/2) = 0.
 * [A056556](http://oeis.org/A056556) ([L06 program](A056556.asm)): First tetrahedral coordinate; repeat m (m+1)*(m+2)/2 times.
 * [A056578](http://oeis.org/A056578) ([L13 program](A056578.asm)): a(n) = 1 + 2n + 3n^2 + 4n^3.
-* [A056579](http://oeis.org/A056579) ([L43 program](A056579.asm)): 1+2n+3n^2+4n^3+5n^4.
+* [A056579](http://oeis.org/A056579) ([L41 program](A056579.asm)): 1+2n+3n^2+4n^3+5n^4.
 * [A056640](http://oeis.org/A056640) ([L17 program](A056640.asm)): At stage 1, start with a unit square. At each successive stage add 4*(n-1) new squares around outside with edge-to-edge contacts. Sequence gives number of squares (regardless of size) at n-th stage.
 * [A056699](http://oeis.org/A056699) ([L21 program](A056699.asm)): First differences are 2,1,-2,3 (repeated).
 * [A056827](http://oeis.org/A056827) ([L07 program](A056827.asm)): a(n) = floor(n^2/6).
@@ -3722,7 +3722,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060544](http://oeis.org/A060544) ([L06 program](A060544.asm)): Centered 9-gonal (also known as nonagonal or enneagonal) numbers. Every third triangular number, starting with a(1)=1.
 * [A060546](http://oeis.org/A060546) ([L05 program](A060546.asm)): a(n) = 2^ceiling(n/2).
 * [A060548](http://oeis.org/A060548) ([L15 program](A060548.asm)): a(n) is the number of D3-symmetric patterns that may be formed with a top-down equilateral triangular arrangement of closely packed black and white cells satisfying the local matching rule of Pascal's triangle modulo 2, where n is the number of cells in each edge of the arrangement. The matching rule is such that any elementary top-down triangle of three neighboring cells in the arrangement contains either one or three white cells.
-* [A060576](http://oeis.org/A060576) ([L06 program](A060576.asm)): Number of homeomorphically irreducible general graphs on 1 labeled node and with n edges.
+* [A060576](http://oeis.org/A060576) ([L07 program](A060576.asm)): Number of homeomorphically irreducible general graphs on 1 labeled node and with n edges.
 * [A060577](http://oeis.org/A060577) ([L12 program](A060577.asm)): Number of homeomorphically irreducible general graphs on 2 labeled nodes and with n edges.
 * [A060584](http://oeis.org/A060584) ([L09 program](A060584.asm)): Compare ultimate and penultimate digits of n base 3, i.e., 0 if n mod 3 = floor(n/3) mod 3, 1 otherwise; also 0 if (n mod 9) is a multiple of 4, 1 otherwise.
 * [A060588](http://oeis.org/A060588) ([L14 program](A060588.asm)): If the final two digits of n written in base 3 are the same then this digit, otherwise mod 3-sum of these two digits.
@@ -3953,7 +3953,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063521](http://oeis.org/A063521) ([L08 program](A063521.asm)): a(n) = n*(7*n^2-4)/3.
 * [A063522](http://oeis.org/A063522) ([L09 program](A063522.asm)): a(n) = n*(5*n^2 - 3)/2.
 * [A063523](http://oeis.org/A063523) ([L08 program](A063523.asm)): a(n) = n*(8*n^2 - 5)/3.
-* [A063524](http://oeis.org/A063524) ([L11 program](A063524.asm)): Characteristic function of 1.
+* [A063524](http://oeis.org/A063524) ([L05 program](A063524.asm)): Characteristic function of 1.
 * [A063656](http://oeis.org/A063656) ([L07 program](A063656.asm)): Numbers k such that the truncated square root of k is equal to the rounded square root of k.
 * [A063657](http://oeis.org/A063657) ([L10 program](A063657.asm)): Numbers with property that truncated square root is unequal to rounded square root.
 * [A063712](http://oeis.org/A063712) ([L18 program](A063712.asm)): Table of bits required for product of n- and k-bit positive numbers read by antidiagonals.
@@ -5295,7 +5295,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092092](http://oeis.org/A092092) ([L10 program](A092092.asm)): Back and Forth Summant S(n, _3): a(n) = sum_{i = 0..floor(2n/3)} n-3i.
 * [A092093](http://oeis.org/A092093) ([L10 program](A092093.asm)): Back and Forth Summant S(n, _5): a(n) = sum_{i = 0..floor(2n/5)} n-5i.
 * [A092139](http://oeis.org/A092139) ([L13 program](A092139.asm)): Duplicate of A084558.
-* [A092181](http://oeis.org/A092181) ([L45 program](A092181.asm)): Figurate numbers based on the 24-cell (4-D polytope with Schlaefli symbol {3,4,3}).
+* [A092181](http://oeis.org/A092181) ([L44 program](A092181.asm)): Figurate numbers based on the 24-cell (4-D polytope with Schlaefli symbol {3,4,3}).
 * [A092184](http://oeis.org/A092184) ([L09 program](A092184.asm)): Sequence S_6 of the S_r family.
 * [A092185](http://oeis.org/A092185) ([L07 program](A092185.asm)): a(n) = (5/6)*n^3+(5/2)*n^2+(8/3)*n.
 * [A092200](http://oeis.org/A092200) ([L11 program](A092200.asm)): Expansion of (1+2x)/((1-x)(1-x^3)).
