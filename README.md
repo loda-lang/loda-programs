@@ -1,6 +1,6 @@
 # LODA: Lexicographical Order Descent Assembly
 
-LODA is a minimalistic assembly language and a computational model. Programs written in LODA operate on the natural numbers and are guaranteed to halt on every input. The language and its interpretation as abstract machine models a class of _total_ functions on the natural numbers. LODA is more expressive than primitive recursive functions and less expressive than &#956;-recursive functions. It is more expressive than primitive recursion as it can be used to implement the Ackermann function.
+LODA is an assembly language and a computational model. Programs written in LODA operate on the natural numbers and are guaranteed to halt on every input. The language and its interpretation as abstract machine models a class of _total_ functions on the natural numbers. LODA is more expressive than primitive recursive functions and less expressive than &#956;-recursive functions. It is more expressive than primitive recursion as it can be used to implement the Ackermann function.
 
 ## Tool
 
@@ -28,7 +28,7 @@ Generator options:
   -p <number>      Maximum number of operations (default:40)
   -n <number>      Maximum constant (default:6)
   -i <number>      Maximum index (default:6)
-  -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,l:lpb/lpe)
+  -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,u:mul,l:lpb/lpe)
   -a <string>      Operand types (default:cd;c:constant,d:direct mem,i:indirect mem)
   -e <file>        Program template
   -r               Search for programs of linear sequences (slow)
@@ -47,11 +47,12 @@ __Memory:__ Programs operate on memory consisting of an unbounded sequence of me
 2. __Direct memory access__, for example `$5`. Reads or writes the value of the fifth memory cell.
 3. __Indirect memory access__, for example `$$7`. Reads the value at memory cell #7 and interpretes it as an address. For instance, if the value of `$7` is 13, then `$$7` accesses the memory cell #13.
 
-__Instructions:__ There are only four instructions in LODA. In the following, let `x` be a direct or an indirect memory access, and let `y` be a constant, a direct or an indirect memory access.
+__Instructions:__ These are the instructions supported by LODA. In the following, let `x` be a direct or an indirect memory access, and let `y` be a constant, a direct or an indirect memory access.
 
-1. __Addition:__ The instruction `add x,y` updates the memory cell `x` by adding the value of `y` to it. For example, `add $3,42` adds 42 to the memory cell #3. Similarily, `add $$5,$7` adds the value of the memory cell #7 to the the cell whose address is stored in cell #5.
-2. __Truncated Subtraction:__ The instruction `sub x,y` updates the cell `x` by subtracting the value of `y` from it. If the result would be a negative number, `x` is set to 0.
-3. __Assignment:__ We define the instruction `mov x,y` by the two instructions `sub x,x` and `add x,y`. It means we set the content of a memory cell by first resetting it to 0 and then adding the new value to it. So this is just syntactic sugar.
+1. __Assignment:__ The instruction `mov x,y` assigns the value of `y` to the memory cell `x`.
+2. __Addition:__ The instruction `add x,y` updates the memory cell `x` by adding the value of `y` to it. For example, `add $3,42` adds 42 to the memory cell #3. Similarily, `add $$5,$7` adds the value of the memory cell #7 to the the cell whose address is stored in cell #5.
+3. __Truncated Subtraction:__ The instruction `sub x,y` updates the cell `x` by subtracting the value of `y` from it. If the result would be a negative number, `x` is set to 
+2. __Multiplication:__ The instruction `mul x,y` updates the memory cell `x` by multiplying the value of `y` with it.
 4. __Lexicographical Order Descent Loop:__ The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
 __Termination:__ all LODA programs are guaranteed to halt on every input. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
