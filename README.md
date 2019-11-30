@@ -1,6 +1,6 @@
 # LODA: Lexicographical Order Descent Assembly
 
-LODA is an assembly language and a computational model. Programs written in LODA operate on the natural numbers and are guaranteed to halt on every input. The language and its interpretation as abstract machine models a class of _total_ functions on the natural numbers. LODA is more expressive than primitive recursive functions and less expressive than &#956;-recursive functions. It is more expressive than primitive recursion as it can be used to implement the Ackermann function.
+LODA is an assembly language and a computational model.
 
 ## Tool
 
@@ -39,7 +39,7 @@ For example, run `./loda eval programs/fibonacci.asm` to generate the first term
 
 ## Language
 
-The LODA language is an assembly language with a very small set of instructions. It supports an unbounded set of memory cells storing natural numbers, operations for adding, subtracting and setting the content of memory cells, as well as a loop based on a lexicographical order descent on memory regions.
+The LODA language is an assembly language with a small set of instructions. It supports an unbounded set of memory cells storing natural numbers, arithmetic operations and a loop based on a lexicographical order descent on memory regions.
 
 __Memory:__ Programs operate on memory consisting of an unbounded sequence of memory cells `$0`,`$1`,`$2`,... each storing a natural number. There are three types of operands supported:
 
@@ -65,8 +65,7 @@ The following programs include some classical examples of sequences and function
 
 * [Fibonacci numbers (A000045)](programs/oeis/A000045.asm)
 * [Number of divisors (A000005)](programs/oeis/A000005.asm)
-* [Exponentiation](programs/exponentiation.asm): The descent loop is over a memory region of fixed size 2. This corresponds to two nested for-loops.
-* [Ackermann function](programs/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. In contrast to the previous programs, the main descent loop in this program is over a memory region whose size depends on one of the parameters. It is based on an algorithm by Grossman and Zeitman. 
+* [Ackermann function](programs/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
 
 # Generating Programs for Integer Sequences
 
