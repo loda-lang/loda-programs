@@ -10,7 +10,6 @@ mov $2,$0
 mul $2,2
 mul $2,3
 mul $1,$1
-mul $0,$1
 add $1,$1
 mul $1,$2
 add $1,16

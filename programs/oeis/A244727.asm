@@ -6,7 +6,3 @@ mov $1,$2
 mul $2,$2
 mul $1,$2
 mul $1,7
-mov $2,4
-lpb $0,1
-  mul $0,$2
-lpe

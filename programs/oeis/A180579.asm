@@ -7,7 +7,6 @@ add $3,$0
 add $1,$2
 mul $1,6
 mul $3,4
-sub $0,$1
 mul $1,$3
 add $1,15
 mov $5,$6
