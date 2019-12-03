@@ -6,27 +6,25 @@ add $1,5
 add $0,$1
 mov $2,$0
 lpb $2,1
-  mov $3,0
   add $0,6
-  add $5,$0
   mov $1,$0
   sub $2,2
 lpe
 sub $1,19
-mov $8,$7
+mov $5,$7
 mov $4,2
 lpb $4,1
-  add $1,$8
+  add $1,$5
   sub $4,1
 lpe
 mov $6,$7
 lpb $6,1
-  add $9,$8
+  add $3,$5
   sub $6,1
 lpe
-mov $8,$9
+mov $5,$3
 mov $4,2
 lpb $4,1
-  add $1,$8
+  add $1,$5
   sub $4,1
 lpe

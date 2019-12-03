@@ -8,7 +8,4 @@ mul $0,$2
 mul $0,$1
 sub $1,1
 mul $1,$0
-lpb $0,1
-  mul $2,$1
-lpe
 mul $1,$2
