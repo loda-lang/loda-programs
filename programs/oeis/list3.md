@@ -252,7 +252,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308585](http://oeis.org/A308585) ([L08 program](A308585.asm)): a(n) = 2^(n + 3) - 10*n - 6.
 * [A308600](http://oeis.org/A308600) ([L20 program](A308600.asm)): Number of (not necessarily maximum) cliques in the n X n antelope graph.
 * [A308602](http://oeis.org/A308602) ([L04 program](A308602.asm)): Number of (not necessarily maximum) cliques in the n-cycle graph.
-* [A308603](http://oeis.org/A308603) ([L06 program](A308603.asm)): Number of (not necessarily minimum) cliques in the n-dipyramidal graph.
+* [A308603](http://oeis.org/A308603) ([L04 program](A308603.asm)): Number of (not necessarily minimum) cliques in the n-dipyramidal graph.
 * [A308607](http://oeis.org/A308607) ([L05 program](A308607.asm)): Number of (not necessarily maximum) cliques in the wheel graph on n vertices.
 * [A308659](http://oeis.org/A308659) ([L20 program](A308659.asm)): a(1)=1; for n > 1, a(n) is the length of the longest palindromic suffix of (a(1), ..., a(n-1)).
 * [A308720](http://oeis.org/A308720) ([L23 program](A308720.asm)): The maximum value in the continued fraction of sqrt(n), or 0 if there is no fractional part.
@@ -573,7 +573,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322804](http://oeis.org/A322804) ([L10 program](A322804.asm)): Number of different positions a sphinx tile can occupy in an equilateral triangle of order n.
 * [A322830](http://oeis.org/A322830) ([L12 program](A322830.asm)): a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
 * [A322832](http://oeis.org/A322832) ([L10 program](A322832.asm)): Values x + y, where the ordered pairs (x,y) are sorted first by maximal coordinate and then lexicographically.
-* [A323178](http://oeis.org/A323178) ([L09 program](A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
+* [A323178](http://oeis.org/A323178) ([L06 program](A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
 * [A323218](http://oeis.org/A323218) ([L15 program](A323218.asm)): a(n) = (4*n^3 + 30*n^2 + 50*n)/3 + 1.
 * [A323221](http://oeis.org/A323221) ([L11 program](A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
 * [A323227](http://oeis.org/A323227) ([L11 program](A323227.asm)): a(n) = [x^n] (-x^4 + 2*x^3 - x^2 + 2*x - 1)/((x - 1)^2*(2*x - 1)).

@@ -4,7 +4,4 @@
 mul $0,3
 mul $0,3
 mul $0,$0
-lpb $0,1
-  mov $2,4
-lpe
 mov $1,$0

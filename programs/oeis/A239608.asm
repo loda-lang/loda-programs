@@ -9,6 +9,5 @@ lpb $0,1
   sub $1,3
   mul $1,$0
   mul $1,$1
-  mov $2,4
   sub $0,$1
 lpe

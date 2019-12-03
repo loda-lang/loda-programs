@@ -7,10 +7,6 @@ add $1,1
 mul $1,4
 add $5,$0
 add $2,$0
-mov $0,5
-lpb $0,1
-  add $0,$0
-lpe
 mul $1,$1
 add $1,$2
 mul $1,$5

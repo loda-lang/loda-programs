@@ -5,11 +5,6 @@ add $2,$0
 mul $0,$2
 mov $2,$0
 mul $0,$0
-mov $3,6
 add $2,$0
 add $1,$2
-add $3,$1
-lpb $0,1
-  mov $0,$3
-lpe
 mul $1,4

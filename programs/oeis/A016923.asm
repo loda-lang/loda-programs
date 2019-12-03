@@ -7,7 +7,6 @@ mul $1,6
 mul $1,$0
 mov $2,2
 add $2,1
-mov $0,0
 mul $1,6
 mul $1,$2
 add $1,1
