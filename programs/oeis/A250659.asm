@@ -7,8 +7,6 @@ mul $1,4
 mul $1,$1
 add $1,159
 mov $3,$4
-mov $2,111
-lpb $2,1
-  add $1,$3
-  sub $2,1
-lpe
+mov $2,$3
+mul $2,111
+add $1,$2

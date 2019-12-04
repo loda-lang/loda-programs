@@ -4,6 +4,5 @@
 add $2,$0
 mul $2,$0
 add $1,$2
-mul $1,2
-mul $1,4
+mul $1,8
 add $1,2
