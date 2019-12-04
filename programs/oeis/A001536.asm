@@ -7,9 +7,6 @@ add $0,1
 mul $0,$1
 mov $1,$0
 add $1,$1
-lpb $0,1
-  mul $0,6
-lpe
 mul $1,5
 add $1,$1
 mul $1,6
