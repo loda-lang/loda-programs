@@ -28,7 +28,7 @@ Generator options:
   -p <number>      Maximum number of operations (default:40)
   -n <number>      Maximum constant (default:6)
   -i <number>      Maximum index (default:6)
-  -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,u:mul,l:lpb/lpe)
+  -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,u:mul,d:div,l:lpb/lpe)
   -a <string>      Operand types (default:cd;c:constant,d:direct mem,i:indirect mem)
   -e <file>        Program template
   -r               Search for programs of linear sequences (slow)
@@ -53,6 +53,7 @@ __Instructions:__ These are the instructions supported by LODA. In the following
 2. __Addition:__ The instruction `add x,y` updates the memory cell `x` by adding the value of `y` to it. For example, `add $3,42` adds 42 to the memory cell #3. Similarily, `add $$5,$7` adds the value of the memory cell #7 to the the cell whose address is stored in cell #5.
 3. __Truncated Subtraction:__ The instruction `sub x,y` updates the cell `x` by subtracting the value of `y` from it. If the result would be a negative number, `x` is set to 
 2. __Multiplication:__ The instruction `mul x,y` updates the memory cell `x` by multiplying the value of `y` with it.
+2. __Division:__ The instruction `div x,y` updates the memory cell `x` by dividing it by the value of `y`.
 4. __Lexicographical Order Descent Loop:__ The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
 __Termination:__ all LODA programs are guaranteed to halt on every input. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
