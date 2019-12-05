@@ -5,8 +5,6 @@ mov $6,$0
 mov $2,$0
 mul $2,$2
 mov $5,2
-mov $0,5
-sub $0,5
 add $5,$2
 mov $1,$5
 mul $1,$5

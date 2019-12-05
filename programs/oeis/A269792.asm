@@ -3,9 +3,5 @@
 
 mul $0,$0
 add $1,$0
-lpb $0,1
-  sub $0,$1
-  add $0,$1
-lpe
 mul $1,$0
 mul $1,5

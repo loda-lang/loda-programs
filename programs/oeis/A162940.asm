@@ -3,8 +3,5 @@
 
 add $1,$0
 mul $1,$0
-lpb $0,1
-  add $2,6
-lpe
 add $1,$0
 mul $1,18
