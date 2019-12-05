@@ -3,15 +3,14 @@
 
 mov $4,$0
 add $1,$0
-mul $1,$1
 add $1,11
 mov $3,$4
 mov $2,$3
-mul $2,42
+mul $2,41
 add $1,$2
 mul $3,$4
 mov $2,$3
-mul $2,48
+mul $2,49
 add $1,$2
 mul $3,$4
 mov $2,$3

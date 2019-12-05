@@ -4,7 +4,6 @@
 add $2,$0
 add $1,4
 add $3,1
-div $0,$0
 add $4,$2
 add $3,$4
 mul $1,4

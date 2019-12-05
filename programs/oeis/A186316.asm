@@ -10,7 +10,6 @@ add $2,$0
 add $1,4
 sub $2,2
 add $2,3
-sub $3,5
 mul $2,6
 sub $2,4
 lpb $0,1

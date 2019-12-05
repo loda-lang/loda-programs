@@ -6,8 +6,6 @@ add $2,2
 div $2,3
 add $1,$2
 lpb $2,1
-  div $2,3
-  add $3,1
   lpb $0,1
     mul $1,$0
     sub $0,1

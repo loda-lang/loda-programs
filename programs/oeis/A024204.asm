@@ -13,9 +13,6 @@ mov $5,2
 add $3,4
 add $3,$5
 mul $5,3
-lpb $0,1
-  add $0,$1
-lpe
 sub $1,$5
 mul $5,$5
 mul $1,$1
