@@ -9,15 +9,11 @@ add $2,$0
 add $1,$6
 add $1,$2
 add $5,$0
-lpb $0,1
-  mov $0,$1
-lpe
-mov $3,$6
 mul $1,$5
 mul $1,24
-mov $8,$7
-mov $4,$8
+mov $3,$7
+mov $4,$3
 add $1,$4
-mul $8,$7
-mov $4,$8
+mul $3,$7
+mov $4,$3
 add $1,$4

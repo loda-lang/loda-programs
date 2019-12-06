@@ -10,7 +10,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300287](http://oeis.org/A300287) ([L23 program](A300287.asm)): a(n) = floor((1/n) * Sum_{k=1..n} sqrt(k)).
 * [A300290](http://oeis.org/A300290) ([L12 program](A300290.asm)): Period 6: repeat [0, 1, 2, 2, 3, 3].
 * [A300293](http://oeis.org/A300293) ([L16 program](A300293.asm)): A sequence based on the period 6 sequence A151899.
-* [A300402](http://oeis.org/A300402) ([L07 program](A300402.asm)): Smallest integer i such that TREE(i) >= n.
+* [A300402](http://oeis.org/A300402) ([L06 program](A300402.asm)): Smallest integer i such that TREE(i) >= n.
 * [A300403](http://oeis.org/A300403) ([L05 program](A300403.asm)): Smallest integer i such that SSCG(i) >= n.
 * [A300404](http://oeis.org/A300404) ([L05 program](A300404.asm)): Smallest integer k such that the largest term in the Goodstein sequence starting at k is > n.
 * [A300522](http://oeis.org/A300522) ([L42 program](A300522.asm)): a(n) = (5*n + 3)*(5*n + 4)*(5*n + 5)/6.
@@ -94,7 +94,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A303814](http://oeis.org/A303814) ([L20 program](A303814.asm)): Generalized 24-gonal (or icositetragonal) numbers: m*(11*m - 10) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A304157](http://oeis.org/A304157) ([L03 program](A304157.asm)): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
 * [A304158](http://oeis.org/A304158) ([L03 program](A304158.asm)): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
-* [A304159](http://oeis.org/A304159) ([L13 program](A304159.asm)): a(n) = 2*n^3 - 4*n^2 + 6*n - 2 (n>=1).
+* [A304159](http://oeis.org/A304159) ([L11 program](A304159.asm)): a(n) = 2*n^3 - 4*n^2 + 6*n - 2 (n>=1).
 * [A304160](http://oeis.org/A304160) ([L15 program](A304160.asm)): a(n) = n^4 - 3*n^3 + 6*n^2 - 5*n + 2 (n >= 1).
 * [A304161](http://oeis.org/A304161) ([L12 program](A304161.asm)): a(n) = 2*n^3 - 4*n^2 + 10*n - 2 (n>=1).
 * [A304162](http://oeis.org/A304162) ([L20 program](A304162.asm)): a(n) = n^4 - 3*n^3 + 9*n^2 - 7*n + 5 (n>=1).
@@ -125,7 +125,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304505](http://oeis.org/A304505) ([L15 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
 * [A304506](http://oeis.org/A304506) ([L17 program](A304506.asm)): a(n) = 2*(3*n+1)*(9*n+8).
 * [A304507](http://oeis.org/A304507) ([L16 program](A304507.asm)): a(n) = 5*(n+1)*(9*n+4).
-* [A304508](http://oeis.org/A304508) ([L22 program](A304508.asm)): a(n) = 5*(3*n+1)*(9*n+8)/2 (n>=0).
+* [A304508](http://oeis.org/A304508) ([L16 program](A304508.asm)): a(n) = 5*(3*n+1)*(9*n+8)/2 (n>=0).
 * [A304509](http://oeis.org/A304509) ([L15 program](A304509.asm)): a(n) = 63*2^n - 39 (n>=1).
 * [A304510](http://oeis.org/A304510) ([L19 program](A304510.asm)): a(n) = 69*2^n - 42 (n>=1).
 * [A304511](http://oeis.org/A304511) ([L33 program](A304511.asm)): a(n) = 318*2^n - 186 (n>=1).
@@ -635,6 +635,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
 * [A329624](http://oeis.org/A329624) ([L08 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
 * [A329683](http://oeis.org/A329683) ([L05 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
-* [A329684](http://oeis.org/A329684) ([L08 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
+* [A329684](http://oeis.org/A329684) ([L09 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
 * [A329773](http://oeis.org/A329773) ([L08 program](A329773.asm)): a(0)=3; thereafter a(n) = 3*a(n-1) + 1.
 * [A329822](http://oeis.org/A329822) ([L16 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.

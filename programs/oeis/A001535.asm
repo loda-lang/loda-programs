@@ -3,9 +3,6 @@
 
 mov $4,$0
 add $5,$0
-lpb $0,1
-  div $0,$1
-lpe
 add $5,$0
 add $5,5
 mov $1,$5

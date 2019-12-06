@@ -4,15 +4,10 @@
 add $3,$0
 mov $1,$0
 add $0,1
-add $4,$3
-add $4,$0
+add $2,$3
+add $2,$0
 mov $3,$0
-add $1,$4
-lpb $0,1
-  div $3,$2
-  mov $4,$3
-  sub $0,$4
-lpe
+add $1,$2
 add $1,2
 div $3,3
 add $1,$3

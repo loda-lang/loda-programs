@@ -4,6 +4,3 @@
 mul $0,8
 add $1,$0
 div $1,3
-lpb $0,1
-  div $0,$2
-lpe

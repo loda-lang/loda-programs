@@ -4,8 +4,4 @@
 add $1,$0
 mul $1,$1
 div $1,4
-lpb $0,1
-  div $2,$2
-  sub $3,$2
-lpe
 mul $1,$1

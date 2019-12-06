@@ -6,6 +6,3 @@ add $1,$0
 mul $0,$0
 mov $2,$0
 mul $1,$2
-lpb $2,1
-  div $2,$3
-lpe

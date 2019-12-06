@@ -9,6 +9,5 @@ lpb $0,1
   mul $2,$0
   sub $0,1
 lpe
-sub $3,$3
 add $1,$2
 add $1,1
