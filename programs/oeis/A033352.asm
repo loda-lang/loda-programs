@@ -8,7 +8,3 @@ mov $3,$0
 add $1,$2
 mul $1,8
 div $1,$3
-lpb $0,1
-  div $0,$4
-  div $4,$0
-lpe

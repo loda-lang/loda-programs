@@ -8,7 +8,6 @@ add $2,1
 mul $0,6
 lpb $0,1
   mul $4,56
-  div $1,$1
   div $6,$4
   div $0,$4
   add $6,$1

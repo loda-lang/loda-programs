@@ -7,7 +7,6 @@ add $1,2
 add $1,$2
 div $0,$2
 sub $1,$3
-div $3,$3
 mov $5,$2
 mul $5,3
 mov $2,$0

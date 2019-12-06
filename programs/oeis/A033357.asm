@@ -3,11 +3,8 @@
 
 add $1,5
 mul $1,6
-lpb $0,1
-  div $0,$2
-lpe
-add $3,5
+add $2,5
 add $0,1
-mul $1,$3
+mul $1,$2
 div $1,$0
 div $1,4
