@@ -13,7 +13,6 @@ add $3,$2
 mul $1,4
 mul $0,2
 add $4,$0
-div $2,$2
 mul $0,$3
 mul $1,8
 lpb $0,1

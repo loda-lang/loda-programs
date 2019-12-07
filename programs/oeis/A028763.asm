@@ -11,7 +11,6 @@ lpb $0,1
   sub $1,1
   add $1,$2
   mul $0,14
-  div $2,$2
   sub $0,$3
   sub $0,1
 lpe

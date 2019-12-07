@@ -13,7 +13,3 @@ sub $1,$4
 add $0,$3
 sub $0,$2
 div $1,$0
-add $5,6
-lpb $0,1
-  add $0,$4
-lpe
