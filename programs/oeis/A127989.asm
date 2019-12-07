@@ -9,7 +9,4 @@ mul $1,$0
 div $0,2
 add $0,1
 mul $1,$0
-lpb $0,1
-  div $0,$3
-lpe
 add $1,9
