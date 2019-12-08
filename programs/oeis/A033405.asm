@@ -6,10 +6,6 @@ mul $1,7
 div $1,5
 mul $1,$1
 mul $1,4
-lpb $0,1
-  add $2,$1
-lpe
-add $3,1
 div $1,3
 add $0,1
 div $1,$0

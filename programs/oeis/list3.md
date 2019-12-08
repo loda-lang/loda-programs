@@ -93,6 +93,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A303611](http://oeis.org/A303611) ([L12 program](A303611.asm)): a(n) = (-1 - (-2)^(n-2)) mod 2^n.
 * [A303692](http://oeis.org/A303692) ([L15 program](A303692.asm)): a(n) = n^2*(2*n - 3 - (-1)^n)/4.
 * [A303814](http://oeis.org/A303814) ([L20 program](A303814.asm)): Generalized 24-gonal (or icositetragonal) numbers: m*(11*m - 10) with m = 0, +1, -1, +2, -2, +3, -3, ...
+* [A304025](http://oeis.org/A304025) ([L09 program](A304025.asm)): a(n) is the largest integer that can be written with n digits in base 3/2.
 * [A304157](http://oeis.org/A304157) ([L03 program](A304157.asm)): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
 * [A304158](http://oeis.org/A304158) ([L03 program](A304158.asm)): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
 * [A304159](http://oeis.org/A304159) ([L11 program](A304159.asm)): a(n) = 2*n^3 - 4*n^2 + 6*n - 2 (n>=1).
@@ -514,11 +515,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318919](http://oeis.org/A318919) ([L16 program](A318919.asm)): Define b(0)=0, b(1)[1]=1, b(1)[2]=1; and for n>=2, b(n)[1] = total number of digits in b(n-1), and b(n)[2] = total number of digits in b(0),...,b(n-1); a(n) = b(n)[2].
 * [A318934](http://oeis.org/A318934) ([L24 program](A318934.asm)): Numbers whose binary expansion begins with exactly two 1's.
 * [A319013](http://oeis.org/A319013) ([L07 program](A319013.asm)): a(n) is the sum over each permutation of S_n of the least element of the descent set.
-* [A319127](http://oeis.org/A319127) ([L09 program](A319127.asm)): Crossing number of the complete bipartite graph K_{6,n}.
+* [A319127](http://oeis.org/A319127) ([L06 program](A319127.asm)): Crossing number of the complete bipartite graph K_{6,n}.
 * [A319279](http://oeis.org/A319279) ([L13 program](A319279.asm)): Numbers that are congruent to {0, 3, 7, 10} mod 12.
 * [A319280](http://oeis.org/A319280) ([L16 program](A319280.asm)): Numbers that are congruent to {0, 4, 7, 11} mod 12.
 * [A319288](http://oeis.org/A319288) ([L08 program](A319288.asm)): a(n) is the smallest k such that A319284(n, k) >= A319284(n, j) for all 0 <= j <= n.
-* [A319371](http://oeis.org/A319371) ([L07 program](A319371.asm)): Numbers k such that the characteristic polynomial of a wheel graph of k nodes has exactly one monomial with vanishing coefficient.
+* [A319371](http://oeis.org/A319371) ([L06 program](A319371.asm)): Numbers k such that the characteristic polynomial of a wheel graph of k nodes has exactly one monomial with vanishing coefficient.
 * [A319384](http://oeis.org/A319384) ([L08 program](A319384.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3) - a(n-4) + a(n-5), a(0)=1, a(1)=5, a(2)=9, a(3)=21, a(4)=29.
 * [A319390](http://oeis.org/A319390) ([L07 program](A319390.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3) - a(n-4) + a(n-5), a(0)=1, a(1)=2, a(2)=3, a(3)=6, a(4)=8.
 * [A319451](http://oeis.org/A319451) ([L07 program](A319451.asm)): Numbers that are congruent to {0, 3, 6} mod 12; a(n) = 3*floor(4*n/3).
