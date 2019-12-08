@@ -5,15 +5,6 @@ add $3,$0
 lpb $3,1
   lpb $0,1
     sub $0,1
-    add $1,3
-  lpe
-  add $6,3
-  lpb $6,1
-    mul $$1,$0
-    sub $6,$6
-    lpb $1,1
-      sub $1,1
-    lpe
   lpe
   mov $$3,$1
   sub $3,1

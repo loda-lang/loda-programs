@@ -4,10 +4,6 @@
 add $1,$0
 mul $0,$0
 mul $1,$0
-add $2,1
 mov $0,3
-lpb $0,1
-  mul $0,6
-lpe
 div $1,3
 div $1,$0

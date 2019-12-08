@@ -5,8 +5,6 @@ add $1,$0
 lpb $0,1
   add $2,2
   mul $2,8
-  add $3,$1
-  add $4,$3
   sub $2,5
   sub $0,$0
   mul $1,$2

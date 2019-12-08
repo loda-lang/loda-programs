@@ -337,6 +337,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313683](http://oeis.org/A313683) ([L18 program](A313683.asm)): Coordination sequence Gal.5.100.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313685](http://oeis.org/A313685) ([L19 program](A313685.asm)): Coordination sequence Gal.4.43.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313694](http://oeis.org/A313694) ([L19 program](A313694.asm)): Coordination sequence Gal.4.63.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313703](http://oeis.org/A313703) ([L20 program](A313703.asm)): Coordination sequence Gal.5.129.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313717](http://oeis.org/A313717) ([L20 program](A313717.asm)): Coordination sequence Gal.6.151.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313718](http://oeis.org/A313718) ([L16 program](A313718.asm)): Coordination sequence Gal.6.133.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313719](http://oeis.org/A313719) ([L30 program](A313719.asm)): Coordination sequence Gal.5.116.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -512,6 +513,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318274](http://oeis.org/A318274) ([L12 program](A318274.asm)): Triangle read by rows: T(n,k) = n for 0 < k < n and T(n,0) = T(n,n) = 1.
 * [A318919](http://oeis.org/A318919) ([L16 program](A318919.asm)): Define b(0)=0, b(1)[1]=1, b(1)[2]=1; and for n>=2, b(n)[1] = total number of digits in b(n-1), and b(n)[2] = total number of digits in b(0),...,b(n-1); a(n) = b(n)[2].
 * [A318934](http://oeis.org/A318934) ([L24 program](A318934.asm)): Numbers whose binary expansion begins with exactly two 1's.
+* [A319013](http://oeis.org/A319013) ([L07 program](A319013.asm)): a(n) is the sum over each permutation of S_n of the least element of the descent set.
 * [A319127](http://oeis.org/A319127) ([L09 program](A319127.asm)): Crossing number of the complete bipartite graph K_{6,n}.
 * [A319279](http://oeis.org/A319279) ([L13 program](A319279.asm)): Numbers that are congruent to {0, 3, 7, 10} mod 12.
 * [A319280](http://oeis.org/A319280) ([L16 program](A319280.asm)): Numbers that are congruent to {0, 4, 7, 11} mod 12.
@@ -639,7 +641,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
 * [A329624](http://oeis.org/A329624) ([L08 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
-* [A329670](http://oeis.org/A329670) ([L17 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
+* [A329670](http://oeis.org/A329670) ([L13 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
 * [A329680](http://oeis.org/A329680) ([L10 program](A329680.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD and DU.
 * [A329682](http://oeis.org/A329682) ([L09 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of lenght 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L05 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.

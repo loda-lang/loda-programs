@@ -4,9 +4,6 @@
 add $2,$0
 add $3,$2
 mul $3,4
-lpb $0,1
-  add $0,1
-lpe
 mul $3,$2
 mul $3,2
 mov $2,$3
