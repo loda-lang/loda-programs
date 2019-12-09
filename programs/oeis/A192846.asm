@@ -8,7 +8,6 @@ add $1,$2
 add $4,1
 div $2,2
 mul $1,2
-sub $0,$0
 add $4,$2
 mul $1,$4
 add $1,$1

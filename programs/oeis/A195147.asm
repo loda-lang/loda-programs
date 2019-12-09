@@ -6,7 +6,6 @@ mov $5,$0
 mul $5,$5
 div $5,2
 add $6,$5
-mov $0,$1
 mul $6,7
 mov $1,$6
 mov $3,$4
