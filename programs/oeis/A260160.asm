@@ -3,7 +3,6 @@
 
 add $2,$0
 add $2,2
-add $3,1
 mod $0,2
 lpb $0,1
   sub $0,1

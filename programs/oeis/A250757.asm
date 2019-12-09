@@ -3,12 +3,11 @@
 
 mov $4,$0
 mul $0,3
-mov $3,$0
-mul $0,$3
-mov $1,$0
+mul $0,$0
+add $1,$0
 mul $1,3
 add $1,105
-mov $5,$4
-mov $2,$5
+mov $3,$4
+mov $2,$3
 mul $2,105
 add $1,$2

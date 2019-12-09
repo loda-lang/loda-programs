@@ -3,9 +3,5 @@
 
 add $1,11
 add $0,1
-lpb $0,1
-  mov $2,4
-  mul $0,5
-lpe
 mul $1,7
 div $1,$0

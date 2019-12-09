@@ -1,12 +1,14 @@
 ; A121273: Number of different n-dimensional convex regular polytopes that can tile n-dimensional space.
 ; 1,3,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
-lpb $0,1
-  sub $0,1
-  add $1,2
+mov $2,$0
+mov $1,1
+mod $2,2
+lpb $2,1
+  mov $1,3
+  lpb $0,1
+    mov $2,$0
+    mov $0,1
+  lpe
+  sub $2,$1
 lpe
-add $6,1
-add $$1,2
-add $2,1
-mul $6,$2
-mov $1,$6

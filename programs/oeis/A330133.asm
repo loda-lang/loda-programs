@@ -4,7 +4,6 @@
 mul $0,$0
 add $2,1
 add $2,$0
-add $3,6
 lpb $0,1
   mul $2,5
   mod $0,1

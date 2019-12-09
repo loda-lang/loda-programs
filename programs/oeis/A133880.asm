@@ -5,9 +5,5 @@ add $2,2
 add $1,$0
 mul $2,5
 add $1,$2
-lpb $0,1
-  sub $2,$1
-  mod $0,$2
-lpe
 div $1,$2
 mod $1,$2

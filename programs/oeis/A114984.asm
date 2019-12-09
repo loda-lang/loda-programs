@@ -12,7 +12,6 @@ mul $1,8
 mov $2,$3
 mul $0,5
 lpb $0,1
-  mov $1,4
   mov $4,$0
   mov $0,$6
   sub $2,$4

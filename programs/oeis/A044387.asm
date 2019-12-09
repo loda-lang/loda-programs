@@ -10,7 +10,6 @@ sub $2,$1
 div $0,$2
 add $1,6
 mod $0,$1
-sub $0,5
 mod $1,1
 lpb $0,1
   mov $0,5
