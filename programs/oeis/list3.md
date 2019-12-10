@@ -161,7 +161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304659](http://oeis.org/A304659) ([L10 program](A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
 * [A304725](http://oeis.org/A304725) ([L07 program](A304725.asm)): a(n) = n^4 + 8*n^3 + 20*n^2 + 16*n + 2.
 * [A304726](http://oeis.org/A304726) ([L09 program](A304726.asm)): a(n) = n^4 + 4*n^2 + 3.
-* [A304809](http://oeis.org/A304809) ([L10 program](A304809.asm)): Solution (a(n)) of the complementary equation a(n) = b(2n) + b(4n) ; see Comments.
+* [A304809](http://oeis.org/A304809) ([L09 program](A304809.asm)): Solution (a(n)) of the complementary equation a(n) = b(2n) + b(4n) ; see Comments.
 * [A304826](http://oeis.org/A304826) ([L16 program](A304826.asm)): a(n) = 32*7^n/21 - 8/3, n>=1.
 * [A304827](http://oeis.org/A304827) ([L12 program](A304827.asm)): a(n) = 52*7^n/21 - 16/3 (n>=1).
 * [A304830](http://oeis.org/A304830) ([L24 program](A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
@@ -221,8 +221,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306262](http://oeis.org/A306262) ([L12 program](A306262.asm)): Difference between maximum and minimum sum of products of successive pairs in permutations of [n].
 * [A306277](http://oeis.org/A306277) ([L09 program](A306277.asm)): Numbers congruent to 1 or 8 mod 10.
 * [A306278](http://oeis.org/A306278) ([L09 program](A306278.asm)): Numbers congruent to 2 or 11 mod 14.
-* [A306279](http://oeis.org/A306279) ([L10 program](A306279.asm)): Numbers congruent to 3 or 18 mod 22.
-* [A306285](http://oeis.org/A306285) ([L10 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
+* [A306279](http://oeis.org/A306279) ([L09 program](A306279.asm)): Numbers congruent to 3 or 18 mod 22.
+* [A306285](http://oeis.org/A306285) ([L09 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
 * [A306331](http://oeis.org/A306331) ([L11 program](A306331.asm)): Numbers congruent to 6 or 31 mod 38.
 * [A306390](http://oeis.org/A306390) ([L06 program](A306390.asm)): Size of one subtree in the unlabeled binary rooted tree shape of size n whose leaf-labeled trees have the largest number of coalescence sequences.
 * [A306672](http://oeis.org/A306672) ([L15 program](A306672.asm)): Partial sums of the even Lucas numbers (A014448).
@@ -586,7 +586,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322804](http://oeis.org/A322804) ([L10 program](A322804.asm)): Number of different positions a sphinx tile can occupy in an equilateral triangle of order n.
 * [A322830](http://oeis.org/A322830) ([L12 program](A322830.asm)): a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
 * [A322832](http://oeis.org/A322832) ([L10 program](A322832.asm)): Values x + y, where the ordered pairs (x,y) are sorted first by maximal coordinate and then lexicographically.
-* [A323178](http://oeis.org/A323178) ([L06 program](A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
+* [A323178](http://oeis.org/A323178) ([L05 program](A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
 * [A323218](http://oeis.org/A323218) ([L15 program](A323218.asm)): a(n) = (4*n^3 + 30*n^2 + 50*n)/3 + 1.
 * [A323221](http://oeis.org/A323221) ([L11 program](A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
 * [A323227](http://oeis.org/A323227) ([L11 program](A323227.asm)): a(n) = [x^n] (-x^4 + 2*x^3 - x^2 + 2*x - 1)/((x - 1)^2*(2*x - 1)).
@@ -625,7 +625,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327032](http://oeis.org/A327032) ([L15 program](A327032.asm)): a(n) = T(n, 4) with T(n, k) = Sum_{d|k} phi(d)*binomial(n - 1 + k/d, k/d).
 * [A327374](http://oeis.org/A327374) ([L06 program](A327374.asm)): BII-numbers of set-systems with vertex-connectivity 2.
 * [A327376](http://oeis.org/A327376) ([L06 program](A327376.asm)): BII-numbers of set-systems with vertex-connectivity 3.
-* [A327440](http://oeis.org/A327440) ([L10 program](A327440.asm)): a(n) = floor(3*n/10).
+* [A327440](http://oeis.org/A327440) ([L08 program](A327440.asm)): a(n) = floor(3*n/10).
 * [A327470](http://oeis.org/A327470) ([L07 program](A327470.asm)): Maximum valency of the central line in a certain smooth 2D-polarized K3-surface in P^{n+1}.
 * [A327672](http://oeis.org/A327672) ([L12 program](A327672.asm)): a(n) = Sum_{k=0..n} ceiling(sqrt(k)).
 * [A327705](http://oeis.org/A327705) ([L07 program](A327705.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 5 parts can be obtained by coalescing the parts of lambda.
@@ -646,10 +646,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
 * [A329624](http://oeis.org/A329624) ([L05 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
-* [A329670](http://oeis.org/A329670) ([L13 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
+* [A329670](http://oeis.org/A329670) ([L10 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
 * [A329680](http://oeis.org/A329680) ([L08 program](A329680.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD and DU.
 * [A329682](http://oeis.org/A329682) ([L09 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of lenght 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L05 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
-* [A329684](http://oeis.org/A329684) ([L06 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
+* [A329684](http://oeis.org/A329684) ([L05 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
 * [A329822](http://oeis.org/A329822) ([L16 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
 * [A330133](http://oeis.org/A330133) ([L13 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).

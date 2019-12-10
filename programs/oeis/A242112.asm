@@ -7,8 +7,5 @@ mod $0,$4
 add $3,$2
 add $4,$0
 div $3,$4
-lpb $0,1
-  div $2,$2
-lpe
 mov $1,$3
 add $1,1

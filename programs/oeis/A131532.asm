@@ -3,8 +3,4 @@
 
 mov $1,$0
 mod $1,6
-add $0,4
 div $1,4
-lpb $0,1
-  mod $0,$2
-lpe

@@ -10,7 +10,6 @@ lpb $0,1
   mov $0,$2
   add $0,$4
   mod $0,$3
-  div $4,$1
   div $1,$0
   sub $1,$1
   sub $0,$1

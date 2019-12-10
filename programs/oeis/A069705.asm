@@ -4,6 +4,5 @@
 mov $1,$0
 mod $1,3
 add $1,$1
-mod $0,1
 sub $1,1
 add $1,1

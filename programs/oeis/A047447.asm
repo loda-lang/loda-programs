@@ -6,11 +6,6 @@ mov $1,5
 mod $0,4
 sub $1,$0
 sub $1,1
-lpb $0,1
-  add $0,$1
-  mod $0,3
-  sub $0,1
-lpe
 mul $1,2
 div $1,4
 mov $3,$4

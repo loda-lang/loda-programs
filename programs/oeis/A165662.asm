@@ -5,13 +5,10 @@ add $3,$0
 mov $5,6
 sub $3,1
 mov $4,$5
-mov $6,$3
-lpb $0,1
-  mod $0,$2
-lpe
-add $6,$4
-mul $6,$3
-add $6,$6
-mod $6,5
-mov $1,$6
+mov $2,$3
+add $2,$4
+mul $2,$3
+add $2,$2
+mod $2,5
+mov $1,$2
 add $1,4

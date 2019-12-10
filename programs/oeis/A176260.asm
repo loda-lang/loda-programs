@@ -5,12 +5,8 @@ add $1,4
 mov $2,$0
 lpb $2,1
   mul $2,$0
-  lpb $1,1
-    add $3,3
-  lpe
-  mov $0,0
   mod $2,4
-  mov $1,$4
+  mov $1,$3
   mod $2,$2
 lpe
 add $1,1

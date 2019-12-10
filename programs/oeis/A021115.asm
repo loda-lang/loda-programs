@@ -7,7 +7,3 @@ mov $0,3
 mul $0,$0
 sub $1,1
 mul $1,$0
-lpb $0,1
-  mod $1,$2
-  sub $0,$1
-lpe
