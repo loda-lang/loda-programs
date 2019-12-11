@@ -9,7 +9,6 @@ add $1,1
 mod $4,$1
 lpb $0,1
   mod $1,2
-  sub $0,5
   mod $0,$4
 lpe
 mov $3,$5

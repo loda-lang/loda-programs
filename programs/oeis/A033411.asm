@@ -7,8 +7,5 @@ add $0,$2
 sub $0,1
 mul $1,6
 sub $1,5
-lpb $0,1
-  add $0,$0
-lpe
 mul $1,7
 div $1,$0
