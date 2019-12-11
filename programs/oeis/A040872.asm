@@ -6,12 +6,10 @@ add $0,1
 mod $0,$1
 add $1,1
 mod $1,2
-mov $3,5
-mul $1,$3
+mov $2,5
+mul $1,$2
 lpb $0,1
-  add $2,$3
   sub $1,3
-  add $4,3
   mul $1,$1
   div $0,4
   mul $1,5

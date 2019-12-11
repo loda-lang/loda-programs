@@ -41,6 +41,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301654](http://oeis.org/A301654) ([L07 program](A301654.asm)): Circumference of the n-triangular honeycomb acute knight graph.
 * [A301657](http://oeis.org/A301657) ([L16 program](A301657.asm)): Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
 * [A301673](http://oeis.org/A301673) ([L13 program](A301673.asm)): Partial sums of A301672.
+* [A301677](http://oeis.org/A301677) ([L25 program](A301677.asm)): Partial sums of A301676.
 * [A301685](http://oeis.org/A301685) ([L31 program](A301685.asm)): Partial sums of A301684.
 * [A301689](http://oeis.org/A301689) ([L22 program](A301689.asm)): Partial sums of A301688.
 * [A301694](http://oeis.org/A301694) ([L11 program](A301694.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)*(1 - x^3)).
@@ -401,6 +402,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315032](http://oeis.org/A315032) ([L14 program](A315032.asm)): Coordination sequence Gal.4.72.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315033](http://oeis.org/A315033) ([L24 program](A315033.asm)): Coordination sequence Gal.5.129.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315036](http://oeis.org/A315036) ([L24 program](A315036.asm)): Coordination sequence Gal.4.122.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315050](http://oeis.org/A315050) ([L19 program](A315050.asm)): Coordination sequence Gal.5.140.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315075](http://oeis.org/A315075) ([L29 program](A315075.asm)): Coordination sequence Gal.6.350.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315170](http://oeis.org/A315170) ([L26 program](A315170.asm)): Coordination sequence Gal.6.119.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315172](http://oeis.org/A315172) ([L22 program](A315172.asm)): Coordination sequence Gal.5.54.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -587,6 +589,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322804](http://oeis.org/A322804) ([L10 program](A322804.asm)): Number of different positions a sphinx tile can occupy in an equilateral triangle of order n.
 * [A322830](http://oeis.org/A322830) ([L12 program](A322830.asm)): a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
 * [A322832](http://oeis.org/A322832) ([L10 program](A322832.asm)): Values x + y, where the ordered pairs (x,y) are sorted first by maximal coordinate and then lexicographically.
+* [A323048](http://oeis.org/A323048) ([L11 program](A323048.asm)): Sums of no more than two 5-smooth numbers.
 * [A323178](http://oeis.org/A323178) ([L05 program](A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
 * [A323218](http://oeis.org/A323218) ([L15 program](A323218.asm)): a(n) = (4*n^3 + 30*n^2 + 50*n)/3 + 1.
 * [A323221](http://oeis.org/A323221) ([L11 program](A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
@@ -626,7 +629,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327032](http://oeis.org/A327032) ([L15 program](A327032.asm)): a(n) = T(n, 4) with T(n, k) = Sum_{d|k} phi(d)*binomial(n - 1 + k/d, k/d).
 * [A327374](http://oeis.org/A327374) ([L06 program](A327374.asm)): BII-numbers of set-systems with vertex-connectivity 2.
 * [A327376](http://oeis.org/A327376) ([L06 program](A327376.asm)): BII-numbers of set-systems with vertex-connectivity 3.
-* [A327440](http://oeis.org/A327440) ([L08 program](A327440.asm)): a(n) = floor(3*n/10).
+* [A327440](http://oeis.org/A327440) ([L06 program](A327440.asm)): a(n) = floor(3*n/10).
 * [A327470](http://oeis.org/A327470) ([L07 program](A327470.asm)): Maximum valency of the central line in a certain smooth 2D-polarized K3-surface in P^{n+1}.
 * [A327672](http://oeis.org/A327672) ([L12 program](A327672.asm)): a(n) = Sum_{k=0..n} ceiling(sqrt(k)).
 * [A327705](http://oeis.org/A327705) ([L07 program](A327705.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 5 parts can be obtained by coalescing the parts of lambda.

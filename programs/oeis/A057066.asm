@@ -8,9 +8,5 @@ mul $1,$1
 mul $1,$1
 add $3,$2
 div $1,$3
-lpb $0,1
-  sub $0,$0
-  mod $0,$0
-lpe
 add $1,$2
 sub $1,1
