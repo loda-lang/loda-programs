@@ -489,11 +489,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317303](http://oeis.org/A317303) ([L10 program](A317303.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
 * [A317304](http://oeis.org/A317304) ([L10 program](A317304.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central valley.
 * [A317311](http://oeis.org/A317311) ([L14 program](A317311.asm)): Multiples of 11 and odd numbers interleaved.
-* [A317312](http://oeis.org/A317312) ([L16 program](A317312.asm)): Multiples of 12 and odd numbers interleaved.
+* [A317312](http://oeis.org/A317312) ([L12 program](A317312.asm)): Multiples of 12 and odd numbers interleaved.
 * [A317313](http://oeis.org/A317313) ([L26 program](A317313.asm)): Multiples of 13 and odd numbers interleaved.
 * [A317314](http://oeis.org/A317314) ([L16 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
 * [A317315](http://oeis.org/A317315) ([L33 program](A317315.asm)): Multiples of 15 and odd numbers interleaved.
-* [A317316](http://oeis.org/A317316) ([L26 program](A317316.asm)): Multiples of 16 and odd numbers interleaved.
+* [A317316](http://oeis.org/A317316) ([L14 program](A317316.asm)): Multiples of 16 and odd numbers interleaved.
 * [A317317](http://oeis.org/A317317) ([L20 program](A317317.asm)): Multiples of 17 and odd numbers interleaved.
 * [A317318](http://oeis.org/A317318) ([L13 program](A317318.asm)): Multiples of 18 and odd numbers interleaved.
 * [A317320](http://oeis.org/A317320) ([L21 program](A317320.asm)): Multiples of 20 and odd numbers interleaved.
@@ -635,6 +635,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327672](http://oeis.org/A327672) ([L12 program](A327672.asm)): a(n) = Sum_{k=0..n} ceiling(sqrt(k)).
 * [A327705](http://oeis.org/A327705) ([L07 program](A327705.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 5 parts can be obtained by coalescing the parts of lambda.
 * [A327706](http://oeis.org/A327706) ([L11 program](A327706.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 6 parts can be obtained by coalescing the parts of lambda.
+* [A327708](http://oeis.org/A327708) ([L15 program](A327708.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 8 parts can be obtained by coalescing the parts of lambda.
 * [A328010](http://oeis.org/A328010) ([L17 program](A328010.asm)): The 5x + 1 sequence beginning at 17.
 * [A328011](http://oeis.org/A328011) ([L14 program](A328011.asm)): The 5x + 1 sequence beginning at 1.
 * [A328263](http://oeis.org/A328263) ([L07 program](A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
@@ -658,4 +659,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329683](http://oeis.org/A329683) ([L05 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L05 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
 * [A329822](http://oeis.org/A329822) ([L10 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
+* [A329826](http://oeis.org/A329826) ([L15 program](A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
 * [A330133](http://oeis.org/A330133) ([L13 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).

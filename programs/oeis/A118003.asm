@@ -7,16 +7,12 @@ add $3,$0
 mod $0,3
 add $0,$0
 add $2,$3
-mod $3,$2
 lpb $0,1
   sub $2,4
-  add $2,1
   mov $0,$2
   add $4,2
   mul $4,6
-  div $0,3
   mul $0,$4
-  mov $1,$4
   add $0,1
   mod $1,$1
   add $0,3

@@ -1,11 +1,8 @@
 ; A217515: Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (123)*.
 ; 6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6,4,3,6
 
-add $0,10
-lpb $0,1
-  sub $1,$0
-  add $1,6
-  sub $0,3
-  sub $1,1
-lpe
-sub $1,4
+mod $0,3
+add $1,3
+mul $0,2
+sub $1,$0
+add $1,3

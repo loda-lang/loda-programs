@@ -10,8 +10,5 @@ lpb $3,1
     mod $0,$2
     add $1,2
   lpe
-  lpb $0,1
-    sub $0,1
-  lpe
 lpe
 mod $1,3
