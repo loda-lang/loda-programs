@@ -3,9 +3,6 @@
 
 mod $0,3
 mul $0,$0
-lpb $0,1
-  div $0,$1
-lpe
 mov $1,$0
 add $1,$0
 add $1,1

@@ -53,6 +53,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301710](http://oeis.org/A301710) ([L18 program](A301710.asm)): Coordination sequence for node of type V2 in "krc" 2-D tiling (or net).
 * [A301711](http://oeis.org/A301711) ([L16 program](A301711.asm)): Partial sums of A301710.
 * [A301718](http://oeis.org/A301718) ([L19 program](A301718.asm)): Coordination sequence for node of type V2 in "kre" 2-D tiling (or net).
+* [A301719](http://oeis.org/A301719) ([L22 program](A301719.asm)): Partial sums of A301718.
 * [A301722](http://oeis.org/A301722) ([L15 program](A301722.asm)): Coordination sequence for node of type V2 in "krb" 2-D tiling (or net).
 * [A301723](http://oeis.org/A301723) ([L15 program](A301723.asm)): Partial sums of A301722.
 * [A301729](http://oeis.org/A301729) ([L19 program](A301729.asm)): a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
@@ -547,7 +548,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A320281](http://oeis.org/A320281) ([L06 program](A320281.asm)): Terms that are on the positive x-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
 * [A320427](http://oeis.org/A320427) ([L24 program](A320427.asm)): a(n) = floor(3*n/2) + ceiling(n/6) + 9.
 * [A320523](http://oeis.org/A320523) ([L32 program](A320523.asm)): Smallest m > 1 such that either n^m == n (mod 25) or n^m == 0 (mod 25).
-* [A320604](http://oeis.org/A320604) ([L12 program](A320604.asm)): Chromatic number of the n-polygon diagonal intersection graph.
+* [A320604](http://oeis.org/A320604) ([L10 program](A320604.asm)): Chromatic number of the n-polygon diagonal intersection graph.
 * [A320661](http://oeis.org/A320661) ([L08 program](A320661.asm)): a(n) = 2^(n+3) - 6*n - 7.
 * [A320674](http://oeis.org/A320674) ([L14 program](A320674.asm)): Positive integers m with binary expansion (b_1, ..., b_k) (where k = A070939(m)) such that b_i = [m == 0 (mod prime(i))] for i = 1..k (where prime(i) denotes the i-th prime number and [] is an Iverson bracket).
 * [A320933](http://oeis.org/A320933) ([L12 program](A320933.asm)): a(n) = 2^n - floor((n+3)/2).
@@ -656,5 +657,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329682](http://oeis.org/A329682) ([L09 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of lenght 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L05 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L05 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
-* [A329822](http://oeis.org/A329822) ([L16 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
+* [A329822](http://oeis.org/A329822) ([L10 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
 * [A330133](http://oeis.org/A330133) ([L13 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).

@@ -5,9 +5,6 @@ mod $0,4
 mov $1,6
 mul $1,$0
 div $1,4
-lpb $0,1
-  div $3,$2
-lpe
 add $1,1
 mul $1,2
 sub $1,1
