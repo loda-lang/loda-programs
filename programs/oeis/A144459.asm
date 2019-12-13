@@ -8,5 +8,3 @@ add $1,1
 mul $2,$1
 mul $2,3
 add $1,$2
-mod $0,4
-sub $0,4

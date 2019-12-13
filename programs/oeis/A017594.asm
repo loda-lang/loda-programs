@@ -4,9 +4,5 @@
 add $0,$0
 add $0,1
 add $1,$0
-mul $1,6
-lpb $0,1
-  add $0,2
-lpe
-mul $1,6
+mul $1,36
 mul $1,$0

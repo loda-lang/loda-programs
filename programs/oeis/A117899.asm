@@ -10,7 +10,6 @@ add $1,$2
 sub $0,1
 lpb $0,1
   mul $1,2
-  mod $2,$2
   sub $0,1
 lpe
 div $1,3

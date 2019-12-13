@@ -8,11 +8,6 @@ div $2,$3
 add $2,5
 mod $2,$1
 mod $1,3
-mov $6,$2
-add $1,$6
-lpb $0,1
-  div $5,$4
-  mov $1,$5
-  sub $0,$1
-lpe
+mov $4,$2
+add $1,$4
 sub $1,1
