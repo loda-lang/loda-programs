@@ -3,12 +3,8 @@
 
 mul $0,$0
 mov $2,$0
-mov $3,1
 mod $2,6
 sub $2,3
 mov $1,3
 sub $1,$2
-lpb $0,1
-  add $0,$1
-lpe
 sub $1,2

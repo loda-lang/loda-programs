@@ -5,7 +5,6 @@ add $0,1
 add $1,$0
 add $1,4
 mul $1,$0
-mod $2,$2
 mul $1,12
 sub $1,4
 add $1,68
