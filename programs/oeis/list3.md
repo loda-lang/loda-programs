@@ -242,7 +242,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307621](http://oeis.org/A307621) ([L14 program](A307621.asm)): Number of cycles in the n-dipyramidal graph.
 * [A307702](http://oeis.org/A307702) ([L14 program](A307702.asm)): Clique covering number of the n-Sierpinski tetrahedron graph.
 * [A307753](http://oeis.org/A307753) ([L13 program](A307753.asm)): Number of palindromic pentagonal numbers of length n whose index is also palindromic.
-* [A307802](http://oeis.org/A307802) ([L03 program](A307802.asm)): Number of palindromic octagonal numbers of length n whose index is also palindromic.
+* [A307802](http://oeis.org/A307802) ([L02 program](A307802.asm)): Number of palindromic octagonal numbers of length n whose index is also palindromic.
 * [A307808](http://oeis.org/A307808) ([L14 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
 * [A307921](http://oeis.org/A307921) ([L14 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
