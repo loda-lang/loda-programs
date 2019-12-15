@@ -1920,7 +1920,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024049](http://oeis.org/A024049) ([L04 program](A024049.asm)): a(n) = 5^n - 1.
 * [A024050](http://oeis.org/A024050) ([L10 program](A024050.asm)): a(n) = 5^n - n.
 * [A024053](http://oeis.org/A024053) ([L04 program](A024053.asm)): a(n) = 5^n - n^4.
-* [A024062](http://oeis.org/A024062) ([L11 program](A024062.asm)): a(n) = 6^n - 1.
+* [A024062](http://oeis.org/A024062) ([L05 program](A024062.asm)): a(n) = 6^n - 1.
 * [A024063](http://oeis.org/A024063) ([L03 program](A024063.asm)): 6^n-n.
 * [A024075](http://oeis.org/A024075) ([L10 program](A024075.asm)): a(n) = 7^n-1.
 * [A024076](http://oeis.org/A024076) ([L14 program](A024076.asm)): 7^n-n.
@@ -2280,7 +2280,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033325](http://oeis.org/A033325) ([L03 program](A033325.asm)): [ 5/n ].
 * [A033326](http://oeis.org/A033326) ([L05 program](A033326.asm)): [ 6/n ].
 * [A033327](http://oeis.org/A033327) ([L06 program](A033327.asm)): [ 7/n ].
-* [A033328](http://oeis.org/A033328) ([L06 program](A033328.asm)): [ 8/n ].
+* [A033328](http://oeis.org/A033328) ([L05 program](A033328.asm)): [ 8/n ].
 * [A033329](http://oeis.org/A033329) ([L10 program](A033329.asm)): [ 9/n ].
 * [A033330](http://oeis.org/A033330) ([L09 program](A033330.asm)): Floor(10/n).
 * [A033331](http://oeis.org/A033331) ([L11 program](A033331.asm)): [ 11/n ].
@@ -4009,6 +4009,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060884](http://oeis.org/A060884) ([L14 program](A060884.asm)): a(n) = n^4 - n^3 + n^2 - n + 1.
 * [A060886](http://oeis.org/A060886) ([L15 program](A060886.asm)): a(n) = n^4 - n^2 + 1.
 * [A060890](http://oeis.org/A060890) ([L06 program](A060890.asm)): n^8 + 1.
+* [A060891](http://oeis.org/A060891) ([L16 program](A060891.asm)): a(n) = n^6 - n^3 + 1.
 * [A060893](http://oeis.org/A060893) ([L07 program](A060893.asm)): n^8 - n^4 + 1.
 * [A060901](http://oeis.org/A060901) ([L115 program](A060901.asm)): Exact power of 3 that divides the n-th Fibonacci number (sequence A000045).
 * [A060919](http://oeis.org/A060919) ([L12 program](A060919.asm)): Number of corners in a 4-sided fractal.
@@ -4228,7 +4229,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063521](http://oeis.org/A063521) ([L08 program](A063521.asm)): a(n) = n*(7*n^2-4)/3.
 * [A063522](http://oeis.org/A063522) ([L09 program](A063522.asm)): a(n) = n*(5*n^2 - 3)/2.
 * [A063523](http://oeis.org/A063523) ([L08 program](A063523.asm)): a(n) = n*(8*n^2 - 5)/3.
-* [A063524](http://oeis.org/A063524) ([L05 program](A063524.asm)): Characteristic function of 1.
+* [A063524](http://oeis.org/A063524) ([L06 program](A063524.asm)): Characteristic function of 1.
 * [A063656](http://oeis.org/A063656) ([L07 program](A063656.asm)): Numbers k such that the truncated square root of k is equal to the rounded square root of k.
 * [A063657](http://oeis.org/A063657) ([L10 program](A063657.asm)): Numbers with property that truncated square root is unequal to rounded square root.
 * [A063712](http://oeis.org/A063712) ([L18 program](A063712.asm)): Table of bits required for product of n- and k-bit positive numbers read by antidiagonals.

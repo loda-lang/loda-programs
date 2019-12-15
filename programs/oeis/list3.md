@@ -246,7 +246,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307808](http://oeis.org/A307808) ([L14 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
 * [A307921](http://oeis.org/A307921) ([L14 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
-* [A307939](http://oeis.org/A307939) ([L18 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
+* [A307939](http://oeis.org/A307939) ([L17 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
 * [A307985](http://oeis.org/A307985) ([L10 program](A307985.asm)): Number of integer-sided triangles with perimeter n and sides a, b, and c such that a <= b <= c and b|n.
 * [A308124](http://oeis.org/A308124) ([L07 program](A308124.asm)): a(n) = (2 + 7*4^n)/3.
 * [A308136](http://oeis.org/A308136) ([L18 program](A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
@@ -277,7 +277,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309685](http://oeis.org/A309685) ([L12 program](A309685.asm)): Number of even parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309687](http://oeis.org/A309687) ([L13 program](A309687.asm)): Number of odd parts appearing among the second largest parts of the partitions of n into 3 parts.
 * [A309689](http://oeis.org/A309689) ([L21 program](A309689.asm)): Number of even parts appearing among the second largest parts of the partitions of n into 3 parts.
-* [A309779](http://oeis.org/A309779) ([L15 program](A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
+* [A309779](http://oeis.org/A309779) ([L06 program](A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
 * [A309805](http://oeis.org/A309805) ([L18 program](A309805.asm)): Maximum number of nonattacking kings placeable on a hexagonal board with edge-length n in Glinski's hexagonal chess.
 * [A309842](http://oeis.org/A309842) ([L09 program](A309842.asm)): a(n) is the total surface area of a hollow cubic block (defined as a block with a shell thickness of 1 cube) where n is the edge length of the removed volume.
 * [A309945](http://oeis.org/A309945) ([L15 program](A309945.asm)): a(n) = floor(n - (2*n-1)^(1/2)).
@@ -595,7 +595,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322830](http://oeis.org/A322830) ([L12 program](A322830.asm)): a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
 * [A322832](http://oeis.org/A322832) ([L10 program](A322832.asm)): Values x + y, where the ordered pairs (x,y) are sorted first by maximal coordinate and then lexicographically.
 * [A323048](http://oeis.org/A323048) ([L11 program](A323048.asm)): Sums of no more than two 5-smooth numbers.
-* [A323178](http://oeis.org/A323178) ([L05 program](A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
+* [A323178](http://oeis.org/A323178) ([L04 program](A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
 * [A323218](http://oeis.org/A323218) ([L15 program](A323218.asm)): a(n) = (4*n^3 + 30*n^2 + 50*n)/3 + 1.
 * [A323221](http://oeis.org/A323221) ([L11 program](A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
 * [A323227](http://oeis.org/A323227) ([L11 program](A323227.asm)): a(n) = [x^n] (-x^4 + 2*x^3 - x^2 + 2*x - 1)/((x - 1)^2*(2*x - 1)).
@@ -657,10 +657,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
 * [A329624](http://oeis.org/A329624) ([L05 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
-* [A329670](http://oeis.org/A329670) ([L10 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
+* [A329670](http://oeis.org/A329670) ([L07 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
 * [A329680](http://oeis.org/A329680) ([L08 program](A329680.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD and DU.
 * [A329682](http://oeis.org/A329682) ([L09 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of lenght 2 except UH, UD, HU and DD.
-* [A329683](http://oeis.org/A329683) ([L05 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
+* [A329683](http://oeis.org/A329683) ([L04 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L05 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
 * [A329822](http://oeis.org/A329822) ([L10 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
 * [A329826](http://oeis.org/A329826) ([L15 program](A329826.asm)): Beatty sequence for (5+sqrt(17))/4.

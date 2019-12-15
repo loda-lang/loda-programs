@@ -3,8 +3,7 @@
 
 add $1,$0
 lpb $0,1
+  pow $0,6
   sub $0,1
-  mul $0,5
-  mov $2,2
-  mov $1,$2
+  mov $1,2
 lpe
