@@ -5,12 +5,10 @@ mov $6,$0
 sub $0,4
 mov $3,$0
 lpb $0,1
-  mov $3,$4
   mod $0,5
   div $5,$0
   pow $5,$4
   mod $0,$5
-  pow $3,$3
   mov $3,$4
 lpe
 mov $1,$3

@@ -3,12 +3,6 @@
 
 mov $2,$0
 mod $2,2
-add $3,$0
 mov $1,$0
-lpb $0,1
-  add $0,$0
-lpe
-add $2,$3
 div $1,2
-sub $2,$3
 pow $1,$2

@@ -7,6 +7,3 @@ add $3,$1
 pow $0,5
 mul $0,$3
 add $1,$0
-lpb $0,1
-  div $0,$4
-lpe

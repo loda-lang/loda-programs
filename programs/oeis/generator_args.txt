@@ -18829,3 +18829,4 @@ A076939: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A057781: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A084382: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A106832: -p 30 -n 3 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A060891: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T02.asm

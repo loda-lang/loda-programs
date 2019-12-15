@@ -4,10 +4,7 @@
 mov $3,5
 sub $0,5
 lpb $0,1
-  pow $3,2
   mov $2,$3
-  sub $0,1
-  mod $0,4
   pow $0,$1
 lpe
 mov $1,$0

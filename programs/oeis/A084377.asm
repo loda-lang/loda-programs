@@ -3,7 +3,6 @@
 
 add $2,4
 add $1,$0
-mul $0,$3
 pow $1,3
 add $1,$2
 add $1,3

@@ -4,9 +4,5 @@
 add $2,$0
 add $1,$0
 div $2,2
-lpb $0,1
-  mod $1,1
-  mov $2,$1
-lpe
 sub $1,$2
 pow $1,$2

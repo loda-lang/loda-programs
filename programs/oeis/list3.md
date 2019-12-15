@@ -258,7 +258,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308579](http://oeis.org/A308579) ([L11 program](A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
 * [A308580](http://oeis.org/A308580) ([L15 program](A308580.asm)): a(n) = 3*2^n + n^2 - n.
 * [A308585](http://oeis.org/A308585) ([L08 program](A308585.asm)): a(n) = 2^(n + 3) - 10*n - 6.
-* [A308600](http://oeis.org/A308600) ([L20 program](A308600.asm)): Number of (not necessarily maximum) cliques in the n X n antelope graph.
+* [A308600](http://oeis.org/A308600) ([L17 program](A308600.asm)): Number of (not necessarily maximum) cliques in the n X n antelope graph.
 * [A308602](http://oeis.org/A308602) ([L04 program](A308602.asm)): Number of (not necessarily maximum) cliques in the n-cycle graph.
 * [A308603](http://oeis.org/A308603) ([L04 program](A308603.asm)): Number of (not necessarily minimum) cliques in the n-dipyramidal graph.
 * [A308607](http://oeis.org/A308607) ([L05 program](A308607.asm)): Number of (not necessarily maximum) cliques in the wheel graph on n vertices.

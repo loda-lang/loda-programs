@@ -3,7 +3,6 @@
 
 lpb $0,1
   mod $2,$3
-  mov $0,$2
 lpe
 mov $1,$0
 mod $1,2
