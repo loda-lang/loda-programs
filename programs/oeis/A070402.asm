@@ -3,10 +3,6 @@
 
 mov $3,$0
 mod $3,4
-lpb $0,1
-  mod $0,$0
-  mod $0,$0
-lpe
 pow $3,3
 mod $3,5
 add $4,5

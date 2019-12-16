@@ -5,7 +5,6 @@ add $0,1
 mul $0,2
 lpb $0,1
   mul $1,$2
-  pow $3,$1
   div $0,2
   add $1,$0
   sub $0,1

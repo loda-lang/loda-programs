@@ -3,7 +3,6 @@
 
 add $1,4
 sub $1,$0
-mul $0,$2
 mul $1,2
 mod $1,4
 add $1,1

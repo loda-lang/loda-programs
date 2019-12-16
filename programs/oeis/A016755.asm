@@ -6,8 +6,4 @@ lpb $0,1
   add $1,2
 lpe
 add $1,1
-lpb $1,1
-  mod $3,$4
-  mov $3,$$3
-lpe
 pow $1,3

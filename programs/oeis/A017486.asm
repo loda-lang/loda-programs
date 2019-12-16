@@ -10,7 +10,4 @@ add $1,$1
 div $0,2
 add $1,$2
 sub $1,$0
-lpb $0,1
-  mul $0,2
-lpe
 pow $1,2

@@ -3,7 +3,6 @@
 
 mov $4,$0
 add $1,$0
-mov $0,0
 mul $1,2
 add $1,1
 pow $1,3

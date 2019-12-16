@@ -8,9 +8,5 @@ mod $3,$4
 lpb $3,1
   pow $2,$4
   mov $3,4
-  div $4,$1
-  lpb $2,1
-    add $3,$4
-  lpe
 lpe
 mov $1,$2
