@@ -112,7 +112,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304205](http://oeis.org/A304205) ([L03 program](A304205.asm)): Numbers k such that 24*k + 6 is congruent to 0 (mod 49).
 * [A304370](http://oeis.org/A304370) ([L22 program](A304370.asm)): Number of function calls of the first kind required to compute ack(3,n), where ack denotes the Ackermann function.
 * [A304371](http://oeis.org/A304371) ([L16 program](A304371.asm)): Number of function calls of the second kind required to compute ack(3,n), where ack denotes the Ackermann function.
-* [A304374](http://oeis.org/A304374) ([L12 program](A304374.asm)): a(n) = 9*n^2 + 21*n - 6 (n>=1).
+* [A304374](http://oeis.org/A304374) ([L10 program](A304374.asm)): a(n) = 9*n^2 + 21*n - 6 (n>=1).
 * [A304375](http://oeis.org/A304375) ([L21 program](A304375.asm)): a(n) = 27*n^2/2 + 45*n/2 - 12 (n>=1).
 * [A304376](http://oeis.org/A304376) ([L08 program](A304376.asm)): a(n) = 60*2^n - 48 (n>=1).
 * [A304377](http://oeis.org/A304377) ([L14 program](A304377.asm)): a(n) = 102*2^n - 96 (n>=1).
@@ -533,7 +533,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319371](http://oeis.org/A319371) ([L05 program](A319371.asm)): Numbers k such that the characteristic polynomial of a wheel graph of k nodes has exactly one monomial with vanishing coefficient.
 * [A319384](http://oeis.org/A319384) ([L08 program](A319384.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3) - a(n-4) + a(n-5), a(0)=1, a(1)=5, a(2)=9, a(3)=21, a(4)=29.
 * [A319390](http://oeis.org/A319390) ([L07 program](A319390.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3) - a(n-4) + a(n-5), a(0)=1, a(1)=2, a(2)=3, a(3)=6, a(4)=8.
-* [A319451](http://oeis.org/A319451) ([L07 program](A319451.asm)): Numbers that are congruent to {0, 3, 6} mod 12; a(n) = 3*floor(4*n/3).
+* [A319451](http://oeis.org/A319451) ([L04 program](A319451.asm)): Numbers that are congruent to {0, 3, 6} mod 12; a(n) = 3*floor(4*n/3).
 * [A319452](http://oeis.org/A319452) ([L11 program](A319452.asm)): Numbers that are congruent to {0, 3, 6, 10} mod 12.
 * [A319572](http://oeis.org/A319572) ([L16 program](A319572.asm)): The x coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
 * [A319573](http://oeis.org/A319573) ([L14 program](A319573.asm)): The y coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.

@@ -5,5 +5,3 @@ add $1,$0
 div $0,3
 add $1,$0
 mul $1,3
-mod $0,5
-div $0,5

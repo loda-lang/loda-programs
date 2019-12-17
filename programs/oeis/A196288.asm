@@ -5,9 +5,6 @@ add $3,$0
 add $1,$3
 lpb $0,1
   mul $0,$2
-  div $3,$0
-  mul $2,$3
-  mov $0,$2
 lpe
 pow $3,8
 add $1,$3

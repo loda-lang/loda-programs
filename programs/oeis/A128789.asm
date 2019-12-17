@@ -5,8 +5,4 @@ add $1,2
 add $2,$0
 pow $1,$0
 pow $2,3
-lpb $0,1
-  mul $0,$1
-  sub $0,1
-lpe
 mul $1,$2
