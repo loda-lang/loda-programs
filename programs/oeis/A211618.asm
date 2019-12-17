@@ -9,15 +9,13 @@ lpb $0,1
   sub $1,3
   div $0,3
   mod $0,$0
-  add $1,1
-  pow $0,$2
-  add $1,2
+  add $1,3
 lpe
 div $1,2
 add $1,$1
-mov $5,$4
-mul $5,$4
-mul $5,$4
-mov $3,$5
+mov $2,$4
+mul $2,$4
+mul $2,$4
+mov $3,$2
 mul $3,3
 add $1,$3
