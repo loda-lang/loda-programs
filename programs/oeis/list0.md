@@ -1208,6 +1208,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016838](http://oeis.org/A016838) ([L05 program](A016838.asm)): a(n) = (4n + 3)^2.
 * [A016839](http://oeis.org/A016839) ([L13 program](A016839.asm)): a(n) = (4*n+3)^3.
 * [A016840](http://oeis.org/A016840) ([L10 program](A016840.asm)): (4n+3)^4.
+* [A016841](http://oeis.org/A016841) ([L06 program](A016841.asm)): (4n+3)^5.
 * [A016850](http://oeis.org/A016850) ([L03 program](A016850.asm)): a(n) = (5n)^2.
 * [A016851](http://oeis.org/A016851) ([L03 program](A016851.asm)): a(n) = (5*n)^3.
 * [A016852](http://oeis.org/A016852) ([L04 program](A016852.asm)): (5n)^4.
@@ -1272,6 +1273,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017032](http://oeis.org/A017032) ([L07 program](A017032.asm)): a(n) = (7*n + 4)^4.
 * [A017041](http://oeis.org/A017041) ([L03 program](A017041.asm)): a(n) = 7*n + 5.
 * [A017042](http://oeis.org/A017042) ([L04 program](A017042.asm)): a(n) = (7*n + 5)^2.
+* [A017043](http://oeis.org/A017043) ([L06 program](A017043.asm)): a(n) = (7*n + 5)^3.
 * [A017044](http://oeis.org/A017044) ([L07 program](A017044.asm)): a(n) = (7*n + 5)^4.
 * [A017053](http://oeis.org/A017053) ([L03 program](A017053.asm)): a(n) = 7*n + 6.
 * [A017054](http://oeis.org/A017054) ([L09 program](A017054.asm)): a(n) = (7*n + 6)^2.
@@ -1356,6 +1358,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017332](http://oeis.org/A017332) ([L08 program](A017332.asm)): a(n) = (10*n + 5)^4.
 * [A017341](http://oeis.org/A017341) ([L03 program](A017341.asm)): a(n) = 10*n + 6.
 * [A017342](http://oeis.org/A017342) ([L08 program](A017342.asm)): a(n) = (10*n + 6)^2.
+* [A017343](http://oeis.org/A017343) ([L10 program](A017343.asm)): a(n) = (10*n + 6)^3.
 * [A017344](http://oeis.org/A017344) ([L09 program](A017344.asm)): a(n) = (10*n + 6)^4.
 * [A017353](http://oeis.org/A017353) ([L03 program](A017353.asm)): a(n) = 10n + 7.
 * [A017354](http://oeis.org/A017354) ([L14 program](A017354.asm)): a(n) = (10*n + 7)^2.
@@ -2556,6 +2559,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037489](http://oeis.org/A037489) ([L24 program](A037489.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
 * [A037577](http://oeis.org/A037577) ([L13 program](A037577.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
 * [A037584](http://oeis.org/A037584) ([L08 program](A037584.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 3,1.
+* [A037667](http://oeis.org/A037667) ([L06 program](A037667.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,2,0.
 * [A037817](http://oeis.org/A037817) ([L14 program](A037817.asm)): Number of i such that d(i)<=d(i-1), where Sum{d(i)*10^i: i=0,1,...,m} is base 10 representation of n.
 * [A037825](http://oeis.org/A037825) ([L22 program](A037825.asm)): Number of i such that d(i)>d(i-1), where Sum{d(i)*10^i: i=0,1,....,m} is base 10 representation of n.
 * [A037878](http://oeis.org/A037878) ([L16 program](A037878.asm)): (1/2)*Sum{|d(i)-e(i)|}, where Sum{d(i)*10^i} is base 10 representation of n and e(i) are digits d(i) in nonincreasing order, for i=0,1,...,m.
@@ -3955,6 +3959,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059845](http://oeis.org/A059845) ([L06 program](A059845.asm)): a(n) = n*(3*n + 11)/2.
 * [A059855](http://oeis.org/A059855) ([L08 program](A059855.asm)): Quotient cycle lengths in continued fraction expansion of Sqrt(n^2+4).
 * [A059857](http://oeis.org/A059857) ([L31 program](A059857.asm)): Alternating clock-face numbers.
+* [A059860](http://oeis.org/A059860) ([L08 program](A059860.asm)): a(n) = binomial(n+1, 2)^5.
 * [A059924](http://oeis.org/A059924) ([L27 program](A059924.asm)): Write the numbers from 1 to n^2 in a spiraling square; a(n) is the total of the sums of the two diagonals.
 * [A059937](http://oeis.org/A059937) ([L15 program](A059937.asm)): Sum of binary numbers with n 1's and two (possibly leading) 0's.
 * [A059938](http://oeis.org/A059938) ([L10 program](A059938.asm)): Sum of binary numbers with n 1's and two (non-leading) 0's.
@@ -4179,6 +4184,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063196](http://oeis.org/A063196) ([L04 program](A063196.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 7 ).
 * [A063197](http://oeis.org/A063197) ([L14 program](A063197.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 9 ).
 * [A063198](http://oeis.org/A063198) ([L08 program](A063198.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 10 ).
+* [A063199](http://oeis.org/A063199) ([L13 program](A063199.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 11 ).
 * [A063200](http://oeis.org/A063200) ([L07 program](A063200.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 15 ).
 * [A063201](http://oeis.org/A063201) ([L11 program](A063201.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 18 ).
 * [A063204](http://oeis.org/A063204) ([L23 program](A063204.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 25 ).
@@ -5203,7 +5209,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081631](http://oeis.org/A081631) ([L13 program](A081631.asm)): 2*2^n-(-2)^n.
 * [A081632](http://oeis.org/A081632) ([L10 program](A081632.asm)): 2*3^n-(-1)^n.
 * [A081654](http://oeis.org/A081654) ([L08 program](A081654.asm)): a(n) = 2*4^n - 0^n.
-* [A081655](http://oeis.org/A081655) ([L11 program](A081655.asm)): 2*5^n-1.
+* [A081655](http://oeis.org/A081655) ([L06 program](A081655.asm)): 2*5^n-1.
 * [A081659](http://oeis.org/A081659) ([L12 program](A081659.asm)): a(n) = n + Fibonacci(n+1).
 * [A081660](http://oeis.org/A081660) ([L19 program](A081660.asm)): n+A001045(n+1).
 * [A081662](http://oeis.org/A081662) ([L21 program](A081662.asm)): Partial sums of n + Fibonacci(n+1).

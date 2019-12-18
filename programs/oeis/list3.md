@@ -658,7 +658,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
 * [A329624](http://oeis.org/A329624) ([L05 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
 * [A329670](http://oeis.org/A329670) ([L15 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
-* [A329677](http://oeis.org/A329677) ([L12 program](A329677.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD, and DH.
+* [A329677](http://oeis.org/A329677) ([L11 program](A329677.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD, and DH.
+* [A329678](http://oeis.org/A329678) ([L02 program](A329678.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UD and DH.
 * [A329680](http://oeis.org/A329680) ([L06 program](A329680.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD and DU.
 * [A329682](http://oeis.org/A329682) ([L09 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L04 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.

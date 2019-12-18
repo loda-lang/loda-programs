@@ -3,7 +3,6 @@
 
 add $1,4
 mul $1,$0
-add $2,2
 mov $0,0
 add $0,3
 add $1,$0
