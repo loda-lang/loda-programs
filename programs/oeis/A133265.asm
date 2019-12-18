@@ -7,6 +7,3 @@ mod $1,4
 mul $1,$0
 sub $1,1
 add $1,2
-lpb $0,1
-  mod $0,$2
-lpe

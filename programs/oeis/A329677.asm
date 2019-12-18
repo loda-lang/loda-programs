@@ -9,7 +9,6 @@ mul $2,$2
 mov $3,2
 mod $2,3
 lpb $0,1
-  mod $0,$3
   div $0,3
   mov $2,0
 lpe

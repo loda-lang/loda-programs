@@ -4,7 +4,4 @@
 add $1,$0
 pow $0,5
 mul $0,$0
-lpb $0,1
-  mod $2,$3
-lpe
 mul $1,$0
