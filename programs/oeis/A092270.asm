@@ -3,9 +3,6 @@
 
 add $2,$0
 mod $2,2
-lpb $0,1
-  mul $0,2
-lpe
 pow $1,$2
 add $1,2
 pow $1,$0
