@@ -7,11 +7,8 @@ mov $2,$0
 mov $5,$4
 mul $2,6
 mul $5,$2
-add $3,4
 add $1,$5
-mod $0,6
-sub $0,$3
 add $1,4
-add $6,1
-add $1,$6
+add $3,1
+add $1,$3
 pow $1,3

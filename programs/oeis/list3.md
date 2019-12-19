@@ -222,7 +222,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305859](http://oeis.org/A305859) ([L08 program](A305859.asm)): Numbers that are congruent to {1, 3, 11} mod 12.
 * [A305861](http://oeis.org/A305861) ([L12 program](A305861.asm)): a(n) = 32*3^n - 2^(n+5) + 5.
 * [A306262](http://oeis.org/A306262) ([L12 program](A306262.asm)): Difference between maximum and minimum sum of products of successive pairs in permutations of [n].
-* [A306277](http://oeis.org/A306277) ([L09 program](A306277.asm)): Numbers congruent to 1 or 8 mod 10.
+* [A306277](http://oeis.org/A306277) ([L08 program](A306277.asm)): Numbers congruent to 1 or 8 mod 10.
 * [A306278](http://oeis.org/A306278) ([L09 program](A306278.asm)): Numbers congruent to 2 or 11 mod 14.
 * [A306279](http://oeis.org/A306279) ([L09 program](A306279.asm)): Numbers congruent to 3 or 18 mod 22.
 * [A306285](http://oeis.org/A306285) ([L09 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
@@ -649,7 +649,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328990](http://oeis.org/A328990) ([L13 program](A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A329202](http://oeis.org/A329202) ([L08 program](A329202.asm)): a(n) = floor(2*log_2(n)) = floor(log_2(n^2)).
 * [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
-* [A329502](http://oeis.org/A329502) ([L08 program](A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
+* [A329502](http://oeis.org/A329502) ([L07 program](A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
 * [A329503](http://oeis.org/A329503) ([L10 program](A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
 * [A329505](http://oeis.org/A329505) ([L14 program](A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
 * [A329506](http://oeis.org/A329506) ([L11 program](A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
@@ -657,9 +657,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
 * [A329624](http://oeis.org/A329624) ([L05 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
-* [A329670](http://oeis.org/A329670) ([L15 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
+* [A329670](http://oeis.org/A329670) ([L07 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
 * [A329677](http://oeis.org/A329677) ([L11 program](A329677.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD, and DH.
 * [A329678](http://oeis.org/A329678) ([L02 program](A329678.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UD and DH.
+* [A329679](http://oeis.org/A329679) ([L13 program](A329679.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, UD, HD and DH.
 * [A329680](http://oeis.org/A329680) ([L06 program](A329680.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD and DU.
 * [A329682](http://oeis.org/A329682) ([L09 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L04 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.

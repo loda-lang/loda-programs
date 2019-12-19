@@ -9,7 +9,6 @@ pow $0,2
 mov $1,$0
 lpb $0,1
   div $2,$2
-  mov $0,$2
 lpe
 mod $0,4
 mul $1,$0

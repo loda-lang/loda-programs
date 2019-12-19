@@ -4,7 +4,6 @@
 mov $1,$0
 lpb $0,1
   mod $2,$2
-  mov $0,$2
 lpe
 mod $1,2
 mul $1,$0

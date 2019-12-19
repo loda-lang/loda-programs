@@ -7,6 +7,3 @@ add $1,5
 add $2,4
 div $2,$1
 mov $1,$2
-lpb $0,1
-  mul $0,$3
-lpe

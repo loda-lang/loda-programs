@@ -4,12 +4,6 @@
 add $0,$0
 mov $2,$0
 lpb $2,1
-  lpb $0,1
-    mul $0,2
-  lpe
-  lpb $0,1
-    mul $0,$0
-  lpe
   add $0,$2
   lpb $0,1
     add $1,$0
