@@ -651,7 +651,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
 * [A329502](http://oeis.org/A329502) ([L07 program](A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
 * [A329503](http://oeis.org/A329503) ([L10 program](A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
-* [A329505](http://oeis.org/A329505) ([L14 program](A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
+* [A329505](http://oeis.org/A329505) ([L11 program](A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
 * [A329506](http://oeis.org/A329506) ([L11 program](A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
 * [A329509](http://oeis.org/A329509) ([L19 program](A329509.asm)): Expansion of (1 + x)*(1 + x + x^2 - x^3) / (1 - x).
 * [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).

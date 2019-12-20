@@ -4,7 +4,4 @@
 mov $1,4
 mul $1,$0
 add $1,3
-lpb $0,1
-  mov $2,$1
-lpe
 pow $1,4

@@ -3,13 +3,9 @@
 
 add $4,2
 mov $2,$0
-pow $2,2
-mov $3,$2
-pow $2,2
+pow $2,4
 lpb $0,1
   add $3,6
-  mul $0,$3
-  pow $4,$3
 lpe
 mov $1,$2
 pow $4,5

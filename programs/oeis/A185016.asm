@@ -7,7 +7,6 @@ pow $3,$3
 mul $0,4
 mov $2,3
 lpb $0,1
-  mul $3,$2
   mov $4,$0
   sub $4,5
   mul $2,2
