@@ -5,12 +5,10 @@ lpb $0,1
   sub $0,1
   add $1,5
 lpe
-add $3,2
 add $1,$1
 add $$2,3
 add $$6,6
 sub $$6,1
 add $0,5
-add $2,5
 mul $$6,2
 div $1,$$6

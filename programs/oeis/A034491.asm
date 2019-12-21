@@ -3,9 +3,4 @@
 
 add $1,7
 pow $1,$0
-pow $0,$2
-lpb $0,1
-  add $3,1
-  add $4,$3
-lpe
 add $1,1

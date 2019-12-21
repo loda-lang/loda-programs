@@ -3,6 +3,3 @@
 
 add $1,7
 pow $1,$0
-lpb $0,1
-  mod $1,$2
-lpe
