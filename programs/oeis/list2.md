@@ -535,7 +535,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A217873](http://oeis.org/A217873) ([L08 program](A217873.asm)): 4*n*(n^2+2)/3.
 * [A217923](http://oeis.org/A217923) ([L12 program](A217923.asm)): F-block elements for Janet periodic table.
 * [A218078](http://oeis.org/A218078) ([L20 program](A218078.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal, vertical or antidiagonal neighbors in a random 0..1 n X 2 array.
-* [A218131](http://oeis.org/A218131) ([L06 program](A218131.asm)): Number of length 8 primitive (=aperiodic or period 8) n-ary words.
+* [A218131](http://oeis.org/A218131) ([L05 program](A218131.asm)): Number of length 8 primitive (=aperiodic or period 8) n-ary words.
 * [A218132](http://oeis.org/A218132) ([L07 program](A218132.asm)): Number of length 9 primitive (=aperiodic or period 9) n-ary words.
 * [A218152](http://oeis.org/A218152) ([L08 program](A218152.asm)): a(n) = 1 + n + ((n-1)*n^2)/2.
 * [A218155](http://oeis.org/A218155) ([L13 program](A218155.asm)): Curvatures of tangents circle in circle of curvature -1-1.
@@ -1871,6 +1871,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269680](http://oeis.org/A269680) ([L59 program](A269680.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by other than plus or minus one modulo n+1.
 * [A269681](http://oeis.org/A269681) ([L74 program](A269681.asm)): Number of length-6 0..n arrays with no repeated value differing from the previous repeated value by other than plus or minus one modulo n+1.
 * [A269691](http://oeis.org/A269691) ([L60 program](A269691.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by plus or minus one modulo n+1.
+* [A269723](http://oeis.org/A269723) ([L09 program](A269723.asm)): Start with A_0 = 0, then extend by setting B_k = complement of A_k and A_{k+1} = A_k A_k B_k B_k; sequence is limit of A_k as k -> infinity.
 * [A269760](http://oeis.org/A269760) ([L15 program](A269760.asm)): Number of n X 1 0..5 arrays with some element plus some horizontally or vertically adjacent neighbor totalling five exactly once.
 * [A269777](http://oeis.org/A269777) ([L55 program](A269777.asm)): Number of length-5 0..n arrays with every repeated value unequal to the previous repeated value plus one mod n+1.
 * [A269792](http://oeis.org/A269792) ([L03 program](A269792.asm)): a(n) = 5*n^4.
@@ -2042,6 +2043,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274119](http://oeis.org/A274119) ([L15 program](A274119.asm)): a(n) = (Product_{i=0..4}(i*n+2) - Product_{i=0..4}(-i*n-1))/(4*n+3).
 * [A274179](http://oeis.org/A274179) ([L18 program](A274179.asm)): Expansion of f(x^1, x^6) in powers of x where f() is Ramanujan's general theta function.
 * [A274230](http://oeis.org/A274230) ([L12 program](A274230.asm)): Number of holes in a sheet of paper when you fold it n times and cut off the four corners.
+* [A274250](http://oeis.org/A274250) ([L14 program](A274250.asm)): Number of partitions of n^2 into at most three parts.
 * [A274309](http://oeis.org/A274309) ([L23 program](A274309.asm)): Related to integral generalized binomial coefficients of multiplicative functions (see Comments for precise definition).
 * [A274323](http://oeis.org/A274323) ([L05 program](A274323.asm)): Number of partitions of n^4 into at most two parts.
 * [A274324](http://oeis.org/A274324) ([L05 program](A274324.asm)): Number of partitions of n^3 into at most two parts.
