@@ -7,7 +7,6 @@ mul $2,$3
 mov $1,$0
 sub $2,$1
 mul $1,$3
-mod $3,1
 pow $1,2
 mul $1,$1
 mul $1,$2

@@ -505,6 +505,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A216209](http://oeis.org/A216209) ([L07 program](A216209.asm)): Triangle read by rows: T(n,k) = n+k with 0 <= k <= 2*n.
 * [A216230](http://oeis.org/A216230) ([L11 program](A216230.asm)): Square array T, read by antidiagonals: T(n,k) = 0 if n-k>=1 or if k-n>=2, T(0,0) = T(0,1) = 1, T(n,k) = T(n-1,k) + T(n,k-1).
 * [A216256](http://oeis.org/A216256) ([L12 program](A216256.asm)): Minimum length of a longest unimodal subsequence of a permutation of n elements.
+* [A216466](http://oeis.org/A216466) ([L12 program](A216466.asm)): n!! mod n!
 * [A216491](http://oeis.org/A216491) ([L14 program](A216491.asm)): 12*5^n.
 * [A216522](http://oeis.org/A216522) ([L16 program](A216522.asm)): Integers of the form 2*x + 3*y with nonnegative x and y, with repetitions.
 * [A216676](http://oeis.org/A216676) ([L19 program](A216676.asm)): Digital roots of squares of Fibonacci numbers.
@@ -618,7 +619,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A221882](http://oeis.org/A221882) ([L08 program](A221882.asm)): Number of order-preserving or order-reversing full contraction mappings of an n-chain.
 * [A221905](http://oeis.org/A221905) ([L11 program](A221905.asm)): 3^n + 3*n.
 * [A221906](http://oeis.org/A221906) ([L09 program](A221906.asm)): 4^n + 4*n.
-* [A221907](http://oeis.org/A221907) ([L15 program](A221907.asm)): 5^n + 5*n.
+* [A221907](http://oeis.org/A221907) ([L10 program](A221907.asm)): 5^n + 5*n.
 * [A221908](http://oeis.org/A221908) ([L18 program](A221908.asm)): 6^n + 6*n.
 * [A221912](http://oeis.org/A221912) ([L05 program](A221912.asm)): Partial sums of floor(n/12).
 * [A222001](http://oeis.org/A222001) ([L10 program](A222001.asm)): Number of n X 3 arrays with each row a permutation of 1..3 having at least as many downsteps as the preceding row, with rows in lexicographically nonincreasing order.
@@ -654,6 +655,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A224328](http://oeis.org/A224328) ([L12 program](A224328.asm)): Number of idempotent n X n 0..3 matrices of rank n-1
 * [A224334](http://oeis.org/A224334) ([L06 program](A224334.asm)): Number of idempotent 3 X 3 0..n matrices of rank 2.
 * [A224335](http://oeis.org/A224335) ([L05 program](A224335.asm)): Number of idempotent 4X4 0..n matrices of rank 3.
+* [A224336](http://oeis.org/A224336) ([L06 program](A224336.asm)): Number of idempotent 5X5 0..n matrices of rank 4.
 * [A224454](http://oeis.org/A224454) ([L14 program](A224454.asm)): The Wiener index of the linear phenylene with n hexagons.
 * [A224459](http://oeis.org/A224459) ([L33 program](A224459.asm)): The Wiener index of the straight pentachain of n pentagonal rings (see Fig. 2.1 in the A. A. Ali et al. reference).
 * [A224535](http://oeis.org/A224535) ([L05 program](A224535.asm)): Odd numbers that are the sum of three distinct prime numbers.
@@ -867,7 +869,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231643](http://oeis.org/A231643) ([L06 program](A231643.asm)): 5*2^n + 5.
 * [A231896](http://oeis.org/A231896) ([L07 program](A231896.asm)): a(n) = 4*a(n-1) - a(n-2) with a(0) = 0, a(1) = 4.
 * [A232495](http://oeis.org/A232495) ([L15 program](A232495.asm)): 9*n^3/2 - 21*n^2/2 + 8*n - 4.
-* [A232582](http://oeis.org/A232582) ([L09 program](A232582.asm)): Number of (n+1)X(1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal
+* [A232582](http://oeis.org/A232582) ([L09 program](A232582.asm)): Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal.
 * [A232584](http://oeis.org/A232584) ([L07 program](A232584.asm)): Number of (n+1)X(3+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal
 * [A232713](http://oeis.org/A232713) ([L14 program](A232713.asm)): Doubly pentagonal numbers: a(n) = n*(3*n-2)*(3*n-1)*(3*n+1)/8.
 * [A232765](http://oeis.org/A232765) ([L13 program](A232765.asm)): Values of y solving x^2 = floor(y^2/3 + y).
@@ -1013,6 +1015,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240930](http://oeis.org/A240930) ([L07 program](A240930.asm)): a(n) = n^7 - n^6.
 * [A240931](http://oeis.org/A240931) ([L08 program](A240931.asm)): n^8 - n^7.
 * [A240932](http://oeis.org/A240932) ([L09 program](A240932.asm)): a(n) = n^9 - n^8.
+* [A240933](http://oeis.org/A240933) ([L09 program](A240933.asm)): n^10 - n^9.
 * [A240951](http://oeis.org/A240951) ([L13 program](A240951.asm)): Maximum number of dividing subsets of a set of n natural numbers.
 * [A241151](http://oeis.org/A241151) ([L14 program](A241151.asm)): Number of distinct degrees in the partition graph G(n) defined at A241150.
 * [A241170](http://oeis.org/A241170) ([L08 program](A241170.asm)): Steffensen's bracket function [n,n-3].
@@ -1397,7 +1400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A255848](http://oeis.org/A255848) ([L04 program](A255848.asm)): a(n) = 2*n^2 + 18.
 * [A255849](http://oeis.org/A255849) ([L08 program](A255849.asm)): Characteristic function of pentagonal numbers.
 * [A255875](http://oeis.org/A255875) ([L11 program](A255875.asm)): a(n) = Fibonacci(n+2) + n - 2.
-* [A255876](http://oeis.org/A255876) ([L21 program](A255876.asm)): a(n) = (4*n^2 + 4*n - 3 - 3*(-1)^n)/2.
+* [A255876](http://oeis.org/A255876) ([L15 program](A255876.asm)): a(n) = (4*n^2 + 4*n - 3 - 3*(-1)^n)/2.
 * [A255910](http://oeis.org/A255910) ([L04 program](A255910.asm)): Decimal expansion of 16/9.
 * [A255993](http://oeis.org/A255993) ([L10 program](A255993.asm)): Number of length n+2 0..1 arrays with at most one downstep in every n consecutive neighbor pairs.
 * [A255994](http://oeis.org/A255994) ([L15 program](A255994.asm)): Number of length n+3 0..1 arrays with at most one downstep in every n consecutive neighbor pairs.
@@ -2511,6 +2514,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293475](http://oeis.org/A293475) ([L15 program](A293475.asm)): a(n) = (3*n + 4)*Pochhammer(n, 4) / 4!.
 * [A293481](http://oeis.org/A293481) ([L06 program](A293481.asm)): Numbers with last digit greater than or equal to 5 (in base 10).
 * [A293497](http://oeis.org/A293497) ([L07 program](A293497.asm)): Triangular array read by rows: row n >= 1 is the list of integers from 0 to 2n-1.
+* [A293504](http://oeis.org/A293504) ([L07 program](A293504.asm)): The integer k that minimizes |k/n^2 - sqrt(2)|.
 * [A293699](http://oeis.org/A293699) ([L44 program](A293699.asm)): First differences of A293751.
 * [A293700](http://oeis.org/A293700) ([L44 program](A293700.asm)): First differences of A293698.
 * [A293703](http://oeis.org/A293703) ([L22 program](A293703.asm)): a(n) is the length of the longest palindromic subsequence in the first differences of the list of the first n negative and positive roots of floor(tan(k))=1.

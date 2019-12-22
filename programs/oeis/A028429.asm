@@ -3,11 +3,10 @@
 
 mov $4,$0
 lpb $0,1
+  mov $1,4
   mov $0,3
-  mov $1,2
-  add $0,3
+  add $0,$0
 lpe
-mul $1,2
 pow $1,3
 add $1,1
 mov $3,$4

@@ -1279,6 +1279,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017044](http://oeis.org/A017044) ([L07 program](A017044.asm)): a(n) = (7*n + 5)^4.
 * [A017053](http://oeis.org/A017053) ([L03 program](A017053.asm)): a(n) = 7*n + 6.
 * [A017054](http://oeis.org/A017054) ([L09 program](A017054.asm)): a(n) = (7*n + 6)^2.
+* [A017055](http://oeis.org/A017055) ([L05 program](A017055.asm)): a(n) = (7*n + 6)^3.
 * [A017056](http://oeis.org/A017056) ([L06 program](A017056.asm)): a(n) = (7*n + 6)^4.
 * [A017066](http://oeis.org/A017066) ([L03 program](A017066.asm)): a(n) = (8*n)^2.
 * [A017067](http://oeis.org/A017067) ([L04 program](A017067.asm)): a(n) = (8*n)^3.
@@ -2364,6 +2365,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033395](http://oeis.org/A033395) ([L05 program](A033395.asm)): [ 75/n ].
 * [A033397](http://oeis.org/A033397) ([L04 program](A033397.asm)): [ 77/n ].
 * [A033398](http://oeis.org/A033398) ([L14 program](A033398.asm)): [ 78/n ].
+* [A033399](http://oeis.org/A033399) ([L07 program](A033399.asm)): [ 79/n ].
 * [A033400](http://oeis.org/A033400) ([L06 program](A033400.asm)): [ 80/n ].
 * [A033401](http://oeis.org/A033401) ([L21 program](A033401.asm)): [ 81/n ].
 * [A033402](http://oeis.org/A033402) ([L14 program](A033402.asm)): [ 82/n ].
@@ -3859,6 +3861,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A057066](http://oeis.org/A057066) ([L09 program](A057066.asm)): Floor[4^4/n].
 * [A057067](http://oeis.org/A057067) ([L05 program](A057067.asm)): a(n) = floor(5^5/n).
 * [A057068](http://oeis.org/A057068) ([L07 program](A057068.asm)): floor[6^6/n].
+* [A057070](http://oeis.org/A057070) ([L05 program](A057070.asm)): floor[8^8/n].
 * [A057071](http://oeis.org/A057071) ([L05 program](A057071.asm)): floor[9^9/n].
 * [A057084](http://oeis.org/A057084) ([L15 program](A057084.asm)): Scaled Chebyshev U-polynomials evaluated at sqrt(2).
 * [A057087](http://oeis.org/A057087) ([L13 program](A057087.asm)): Scaled Chebyshev U-polynomials evaluated at i. Generalized Fibonacci sequence.
@@ -4227,7 +4230,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063225](http://oeis.org/A063225) ([L10 program](A063225.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 62 ).
 * [A063226](http://oeis.org/A063226) ([L09 program](A063226.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0(63).
 * [A063228](http://oeis.org/A063228) ([L17 program](A063228.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 67 ).
-* [A063231](http://oeis.org/A063231) ([L27 program](A063231.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 75 ).
+* [A063231](http://oeis.org/A063231) ([L12 program](A063231.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 75 ).
 * [A063232](http://oeis.org/A063232) ([L10 program](A063232.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 77 ).
 * [A063233](http://oeis.org/A063233) ([L17 program](A063233.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 79 ).
 * [A063234](http://oeis.org/A063234) ([L12 program](A063234.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 82 ).
@@ -4598,6 +4601,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070460](http://oeis.org/A070460) ([L44 program](A070460.asm)): a(n) = n^2 mod 38.
 * [A070462](http://oeis.org/A070462) ([L26 program](A070462.asm)): a(n) = n^2 mod 40.
 * [A070464](http://oeis.org/A070464) ([L06 program](A070464.asm)): a(n) = n^2 mod 42.
+* [A070465](http://oeis.org/A070465) ([L11 program](A070465.asm)): a(n) = n^2 mod 43.
 * [A070466](http://oeis.org/A070466) ([L28 program](A070466.asm)): a(n) = n^2 mod 44.
 * [A070467](http://oeis.org/A070467) ([L06 program](A070467.asm)): a(n) = n^2 mod 45.
 * [A070470](http://oeis.org/A070470) ([L29 program](A070470.asm)): a(n) = n^2 mod 48.
@@ -5992,7 +5996,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099762](http://oeis.org/A099762) ([L07 program](A099762.asm)): a(n) = n^2 * (n+1)^3.
 * [A099764](http://oeis.org/A099764) ([L66 program](A099764.asm)): a(n) = n^2 * (n+1)^2 * (n+2)^2 = 36*A001249(n-1).
 * [A099776](http://oeis.org/A099776) ([L05 program](A099776.asm)): Length of the hypotenuse of an integer right triangle with the hypotenuse being one more than the longer side. The shorter sides are just consecutive odd numbers 3, 5, 7, ...
-* [A099856](http://oeis.org/A099856) ([L08 program](A099856.asm)): Expansion of (1+3x)/(1-3x).
+* [A099856](http://oeis.org/A099856) ([L06 program](A099856.asm)): Expansion of (1+3x)/(1-3x).
 * [A099857](http://oeis.org/A099857) ([L08 program](A099857.asm)): Expansion of (1+3x+x^2)/(1-3x+x^2).
 * [A099867](http://oeis.org/A099867) ([L11 program](A099867.asm)): a(n) = 5*a(n-1) - a(n-2) for n>1, a(0)=1, a(1)=9.
 * [A099868](http://oeis.org/A099868) ([L21 program](A099868.asm)): a(n) = 5*a(n-1) - a(n-2), a(0) = 3, a(1) = 25.

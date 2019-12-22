@@ -500,7 +500,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317318](http://oeis.org/A317318) ([L13 program](A317318.asm)): Multiples of 18 and odd numbers interleaved.
 * [A317320](http://oeis.org/A317320) ([L21 program](A317320.asm)): Multiples of 20 and odd numbers interleaved.
 * [A317321](http://oeis.org/A317321) ([L37 program](A317321.asm)): Multiples of 21 and odd numbers interleaved.
-* [A317322](http://oeis.org/A317322) ([L33 program](A317322.asm)): Multiples of 22 and odd numbers interleaved.
+* [A317322](http://oeis.org/A317322) ([L16 program](A317322.asm)): Multiples of 22 and odd numbers interleaved.
 * [A317323](http://oeis.org/A317323) ([L13 program](A317323.asm)): Multiples of 23 and odd numbers interleaved.
 * [A317324](http://oeis.org/A317324) ([L16 program](A317324.asm)): Multiples of 24 and odd numbers interleaved.
 * [A317325](http://oeis.org/A317325) ([L08 program](A317325.asm)): Multiples of 25 and odd numbers interleaved.
@@ -669,4 +669,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329822](http://oeis.org/A329822) ([L10 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
 * [A329826](http://oeis.org/A329826) ([L15 program](A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
 * [A330133](http://oeis.org/A330133) ([L13 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
-* [A330357](http://oeis.org/A330357) ([L06 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
+* [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
