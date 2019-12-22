@@ -7,7 +7,4 @@ mov $2,5
 pow $0,3
 mul $3,$2
 mod $0,$3
-lpb $0,1
-  mul $0,$2
-lpe
 mov $1,$0

@@ -10,7 +10,6 @@ mul $1,$4
 add $0,$1
 lpb $0,1
   div $2,$3
-  mov $0,$2
 lpe
 mov $1,$5
 add $1,$0

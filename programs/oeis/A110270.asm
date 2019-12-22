@@ -4,11 +4,8 @@
 mov $1,$0
 mov $3,1
 mul $3,$1
-add $5,3
+add $4,3
 add $2,$3
 mod $2,2
 mul $1,$2
-mod $1,$5
-lpb $0,1
-  mod $4,$4
-lpe
+mod $1,$4
