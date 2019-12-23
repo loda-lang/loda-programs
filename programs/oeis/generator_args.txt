@@ -19774,3 +19774,10 @@ A259821: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A010696: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A103455: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T02.asm
 A010688: -p 30 -n 3 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A229149: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A167963: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A214877: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017235: -p 30 -n 3 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A152291: -p 30 -n 3 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017236: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017379: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm

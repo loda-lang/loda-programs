@@ -6,8 +6,5 @@ add $2,$0
 pow $1,$2
 pow $0,3
 add $1,1
-lpb $0,1
-  mul $0,2
-lpe
 add $1,$0
 sub $1,1

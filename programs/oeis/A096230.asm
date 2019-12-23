@@ -6,7 +6,4 @@ add $0,$0
 add $1,5
 pow $1,2
 sub $1,$0
-lpb $0,1
-  div $2,$3
-lpe
 sub $1,16

@@ -3,7 +3,6 @@
 
 mul $0,2
 add $0,$0
-add $2,$0
 mul $0,2
 add $1,2
 add $1,$0

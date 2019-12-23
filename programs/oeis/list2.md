@@ -78,7 +78,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204263](http://oeis.org/A204263) ([L08 program](A204263.asm)): Symmetric matrix: f(i,j)=(i+j mod 3), by antidiagonals.
 * [A204267](http://oeis.org/A204267) ([L17 program](A204267.asm)): Symmetric matrix: f(i,j)=(i+j+1 mod 3), by antidiagonals.
 * [A204269](http://oeis.org/A204269) ([L19 program](A204269.asm)): Symmetric matrix: f(i,j)=floor[(i+j+2)/4]-floor[(i+j)/4], by (constant) antidiagonals.
-* [A204418](http://oeis.org/A204418) ([L04 program](A204418.asm)): Periodic sequence 1,0,1,..., arranged in a triangle.
+* [A204418](http://oeis.org/A204418) ([L03 program](A204418.asm)): Periodic sequence 1,0,1,..., arranged in a triangle.
 * [A204421](http://oeis.org/A204421) ([L23 program](A204421.asm)): Symmetric matrix: f(i,j)=(i+j+2 mod 3), by antidiagonals.
 * [A204429](http://oeis.org/A204429) ([L13 program](A204429.asm)): Symmetric matrix: f(i,j)=(2i+j mod 3), by antidiagonals.
 * [A204433](http://oeis.org/A204433) ([L11 program](A204433.asm)): Symmetric matrix: f(i,j)=(2i+j+2 mod 3), by antidiagonals.
@@ -544,7 +544,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218245](http://oeis.org/A218245) ([L05 program](A218245.asm)): Nicolas's sequence, whose nonnegativity is equivalent to the Riemann hypothesis.
 * [A218272](http://oeis.org/A218272) ([L14 program](A218272.asm)): Infinitesimal generator for transpose of the Pascal matrix A007318 (as upper triangular matrices).
 * [A218324](http://oeis.org/A218324) ([L15 program](A218324.asm)): Odd heptagonal pyramidal numbers
-* [A218328](http://oeis.org/A218328) ([L30 program](A218328.asm)): Odd 9-gonal (nonagonal) pyramidal numbers.
+* [A218328](http://oeis.org/A218328) ([L23 program](A218328.asm)): Odd 9-gonal (nonagonal) pyramidal numbers.
 * [A218442](http://oeis.org/A218442) ([L10 program](A218442.asm)): a(n) = Sum_{k=0..n} floor(n/(3*k + 1)).
 * [A218444](http://oeis.org/A218444) ([L10 program](A218444.asm)): a(n) = Sum_{k>=0} floor(n/(5*k + 1)).
 * [A218461](http://oeis.org/A218461) ([L17 program](A218461.asm)): Floor( prime(prime(n))/ prime(n) ).
@@ -1181,7 +1181,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247112](http://oeis.org/A247112) ([L40 program](A247112.asm)): Floor of sums of the cubes of the non-integer square roots of n, as partitioned by the integer roots: floor( sum( j from n^2+1 to (n+1)^2-1, j^(3/2) ) ).
 * [A247128](http://oeis.org/A247128) ([L11 program](A247128.asm)): Positive numbers that are congruent to {0,5,9,13,17} mod 22.
 * [A247155](http://oeis.org/A247155) ([L10 program](A247155.asm)): 31n^2 + 1
-* [A247160](http://oeis.org/A247160) ([L10 program](A247160.asm)): Dynamic Betting Game D(n,4,3).
+* [A247160](http://oeis.org/A247160) ([L08 program](A247160.asm)): Dynamic Betting Game D(n,4,3).
 * [A247188](http://oeis.org/A247188) ([L15 program](A247188.asm)): a(0) = 0. a(n) is the number of repeating sums in the collection of all sums of any k elements in [a(0), ... a(n-1)] chosen without replacement for 2 <= k <= n.
 * [A247281](http://oeis.org/A247281) ([L13 program](A247281.asm)): 4^n -(-1)^n.
 * [A247309](http://oeis.org/A247309) ([L19 program](A247309.asm)): Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,1) to (n,k), where 0 <= k <= 2, consisting of segments given by the vectors (1,1), (1,0), (1,-1), (1,-2).
@@ -1517,7 +1517,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A259752](http://oeis.org/A259752) ([L03 program](A259752.asm)): a(n) = 24n + 6.
 * [A259754](http://oeis.org/A259754) ([L22 program](A259754.asm)): Numbers that are congruent to {3,9,15,18,21} mod 24.
 * [A259755](http://oeis.org/A259755) ([L09 program](A259755.asm)): Numbers that are congruent to {4,20} mod 24.
-* [A259821](http://oeis.org/A259821) ([L09 program](A259821.asm)): a(n) = floor( (3^n+1)^2/3^n ).
+* [A259821](http://oeis.org/A259821) ([L06 program](A259821.asm)): a(n) = floor( (3^n+1)^2/3^n ).
 * [A259968](http://oeis.org/A259968) ([L10 program](A259968.asm)): a(n) = a(n-1) + a(n-2) + a(n-4), with a(1)=1, a(2)=1, a(3)=3, a(4)=6.
 * [A259969](http://oeis.org/A259969) ([L12 program](A259969.asm)): a(n) = n*A259968(n).
 * [A260006](http://oeis.org/A260006) ([L07 program](A260006.asm)): a(n) = f(1,n,n), where f is the Sudan function defined in A260002.
@@ -1868,7 +1868,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269641](http://oeis.org/A269641) ([L43 program](A269641.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by other than plus two or minus 1.
 * [A269642](http://oeis.org/A269642) ([L55 program](A269642.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by other than plus two or minus 1.
 * [A269643](http://oeis.org/A269643) ([L69 program](A269643.asm)): Number of length-6 0..n arrays with no repeated value differing from the previous repeated value by other than plus two or minus 1.
-* [A269657](http://oeis.org/A269657) ([L16 program](A269657.asm)): Number of length-4 0..n arrays with no adjacent pair x,x+1 repeated.
+* [A269657](http://oeis.org/A269657) ([L10 program](A269657.asm)): Number of length-4 0..n arrays with no adjacent pair x,x+1 repeated.
 * [A269658](http://oeis.org/A269658) ([L65 program](A269658.asm)): Number of length-5 0..n arrays with no adjacent pair x,x+1 repeated.
 * [A269679](http://oeis.org/A269679) ([L47 program](A269679.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by other than plus or minus one modulo n+1.
 * [A269680](http://oeis.org/A269680) ([L59 program](A269680.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by other than plus or minus one modulo n+1.
@@ -1893,7 +1893,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A270296](http://oeis.org/A270296) ([L10 program](A270296.asm)): Numbers which are representable as a sum of five but no fewer consecutive nonnegative integers.
 * [A270369](http://oeis.org/A270369) ([L09 program](A270369.asm)): Expansion of (1-7*x)/(1-9*x).
 * [A270444](http://oeis.org/A270444) ([L20 program](A270444.asm)): Expansion of 2*(1+2*x) / (1-8*x+4*x^2).
-* [A270454](http://oeis.org/A270454) ([L22 program](A270454.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 163", based on the 5-celled von Neumann neighborhood.
+* [A270454](http://oeis.org/A270454) ([L19 program](A270454.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 163", based on the 5-celled von Neumann neighborhood.
 * [A270455](http://oeis.org/A270455) ([L19 program](A270455.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 163", based on the 5-celled von Neumann neighborhood.
 * [A270471](http://oeis.org/A270471) ([L13 program](A270471.asm)): Expansion of (1-3*x)/(1-7*x).
 * [A270472](http://oeis.org/A270472) ([L15 program](A270472.asm)): Expansion of (1-2*x)/(1-9*x).
@@ -2620,7 +2620,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298881](http://oeis.org/A298881) ([L10 program](A298881.asm)): a(0) = 0; for n>0, a(n) = 6*n!.
 * [A298950](http://oeis.org/A298950) ([L13 program](A298950.asm)): Numbers k such that 5*k - 4 is a square.
 * [A299174](http://oeis.org/A299174) ([L03 program](A299174.asm)): The even positive integers.
-* [A299231](http://oeis.org/A299231) ([L17 program](A299231.asm)): Ranks of {2,3}-power towers that start with 2; see Comments.
+* [A299231](http://oeis.org/A299231) ([L15 program](A299231.asm)): Ranks of {2,3}-power towers that start with 2; see Comments.
 * [A299232](http://oeis.org/A299232) ([L12 program](A299232.asm)): Ranks of {2,3}-power towers that start with 3; see Comments.
 * [A299250](http://oeis.org/A299250) ([L27 program](A299250.asm)): Numbers congruent to {9, 11, 21, 29} mod 30.
 * [A299254](http://oeis.org/A299254) ([L24 program](A299254.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 3^4.6 2D tiling (cf. A250120).

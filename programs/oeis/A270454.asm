@@ -6,8 +6,6 @@ mov $4,$0
 add $2,$0
 add $1,$0
 mul $1,$2
-sub $0,$4
-mul $2,$0
 mod $4,2
 add $4,$4
 mul $1,$4
