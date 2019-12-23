@@ -1,14 +1,12 @@
 ; A130198: Single paradiddle. In percussion, the paradiddle is a four-note drum sticking pattern consisting of two alternating notes followed by two notes on the same hand.
 ; 0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1
 
-mov $9,$0
-lpb $2,$9
-  sub $9,8
-lpe
-mov $2,$9
-add $2,3
-mov $4,1
-mov $7,1
-mov $9,1
-mov $10,1
-mov $1,$$2
+mul $0,3
+div $0,2
+add $3,$0
+mul $0,$2
+add $3,3
+add $1,$3
+div $1,2
+gcd $1,2
+sub $1,1

@@ -3,9 +3,8 @@
 
 mov $4,$0
 div $0,4
-mod $0,2
-pow $1,$0
-add $1,1
+add $1,$0
+gcd $1,2
 mov $3,$4
 mov $2,$3
 mul $2,2

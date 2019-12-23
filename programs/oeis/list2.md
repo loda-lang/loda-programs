@@ -12,7 +12,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A200311](http://oeis.org/A200311) ([L17 program](A200311.asm)): Number of comparisons needed for optimal merging of 2 elements with n elements.
 * [A200431](http://oeis.org/A200431) ([L14 program](A200431.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two or three adjacent elements summing to zero.
 * [A200439](http://oeis.org/A200439) ([L14 program](A200439.asm)): Decimal expansion of constant arising in clubbed binomial approximation for the lightbulb process.
-* [A200455](http://oeis.org/A200455) ([L13 program](A200455.asm)): Number of -n..n arrays x(0..2) of 3 elements with zero sum and nonzero first and second differences
+* [A200455](http://oeis.org/A200455) ([L12 program](A200455.asm)): Number of -n..n arrays x(0..2) of 3 elements with zero sum and nonzero first and second differences
 * [A200535](http://oeis.org/A200535) ([L16 program](A200535.asm)): G.f. satisfies: A(x) = exp( Sum_{n>=1} [Sum_{k=0..2*n} C(2*n,k)^2 * x^k] / A(x)^n * x^n/n ).
 * [A200672](http://oeis.org/A200672) ([L09 program](A200672.asm)): Partial sums of A173862.
 * [A200675](http://oeis.org/A200675) ([L06 program](A200675.asm)): Powers of 2 repeated 4 times.
@@ -127,7 +127,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206372](http://oeis.org/A206372) ([L08 program](A206372.asm)): 14*4^n - 1.
 * [A206373](http://oeis.org/A206373) ([L07 program](A206373.asm)): (14*4^n + 1)/3.
 * [A206374](http://oeis.org/A206374) ([L07 program](A206374.asm)): a(n) = (7*4^n - 1)/3.
-* [A206399](http://oeis.org/A206399) ([L09 program](A206399.asm)): a(0) = 1; for n>0, a(n) = 41*n^2 + 2.
+* [A206399](http://oeis.org/A206399) ([L08 program](A206399.asm)): a(0) = 1; for n>0, a(n) = 41*n^2 + 2.
 * [A206417](http://oeis.org/A206417) ([L08 program](A206417.asm)): (5*F(n)+3*L(n)-8)/2.
 * [A206419](http://oeis.org/A206419) ([L12 program](A206419.asm)): Fibonacci sequence beginning 11, 7.
 * [A206420](http://oeis.org/A206420) ([L17 program](A206420.asm)): Fibonacci sequence beginning 11, 8.
@@ -468,6 +468,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214863](http://oeis.org/A214863) ([L09 program](A214863.asm)): Numbers n such that n XOR 11 = n - 11.
 * [A214864](http://oeis.org/A214864) ([L20 program](A214864.asm)): Numbers n such that n XOR 10 = n - 10.
 * [A214865](http://oeis.org/A214865) ([L09 program](A214865.asm)): n such that n XOR 9 = n - 9.
+* [A214877](http://oeis.org/A214877) ([L08 program](A214877.asm)): n ^ (last digit of n).
 * [A214922](http://oeis.org/A214922) ([L06 program](A214922.asm)): Numbers of the form x^2 + y^2 + z^3 + w^3 (x, y, z, w >= 0).
 * [A214927](http://oeis.org/A214927) ([L07 program](A214927.asm)): Number of n-digit numbers N that do not end with 0 and are such that the reversal of N divides N but is different from N.
 * [A214944](http://oeis.org/A214944) ([L52 program](A214944.asm)): Number of squarefree words of length 5 in an (n+1)-ary alphabet.
@@ -807,6 +808,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229135](http://oeis.org/A229135) ([L12 program](A229135.asm)): n * (2 + 2^(2*n - 1)).
 * [A229146](http://oeis.org/A229146) ([L16 program](A229146.asm)): a(n) = n^3*(5*n+3)/2.
 * [A229147](http://oeis.org/A229147) ([L39 program](A229147.asm)): a(n) = n^4*(3*n+2).
+* [A229149](http://oeis.org/A229149) ([L12 program](A229149.asm)): a(n) = n^6*(4*n+3).
 * [A229154](http://oeis.org/A229154) ([L17 program](A229154.asm)): The clubs patterns appearing in n X n coins, with rotation allowed.
 * [A229183](http://oeis.org/A229183) ([L07 program](A229183.asm)): a(n) = n*(n^2 + 3)/2.
 * [A229277](http://oeis.org/A229277) ([L08 program](A229277.asm)): Number of ascending runs in {1,...,3}^n.
@@ -1647,10 +1649,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266222](http://oeis.org/A266222) ([L11 program](A266222.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
 * [A266223](http://oeis.org/A266223) ([L09 program](A266223.asm)): Total number of OFF (white) cells after n iterations of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
 * [A266242](http://oeis.org/A266242) ([L32 program](A266242.asm)): Numbers n such that the initial digit of the fractional part of n*Pi is 0.
-* [A266246](http://oeis.org/A266246) ([L09 program](A266246.asm)): Middle column of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
+* [A266246](http://oeis.org/A266246) ([L08 program](A266246.asm)): Middle column of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
 * [A266252](http://oeis.org/A266252) ([L24 program](A266252.asm)): Total number of OFF (white) cells after n iterations of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
 * [A266253](http://oeis.org/A266253) ([L17 program](A266253.asm)): Triangle read by rows giving successive states of cellular automaton generated by "Rule 11" initiated with a single ON (black) cell.
-* [A266256](http://oeis.org/A266256) ([L16 program](A266256.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 11" elementary cellular automaton starting with a single ON (black) cell.
+* [A266256](http://oeis.org/A266256) ([L11 program](A266256.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 11" elementary cellular automaton starting with a single ON (black) cell.
 * [A266257](http://oeis.org/A266257) ([L14 program](A266257.asm)): Total number of ON (black) cells after n iterations of the "Rule 11" elementary cellular automaton starting with a single ON (black) cell.
 * [A266258](http://oeis.org/A266258) ([L08 program](A266258.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 11" elementary cellular automaton starting with a single ON (black) cell.
 * [A266259](http://oeis.org/A266259) ([L10 program](A266259.asm)): Total number of OFF (white) cells after n iterations of the "Rule 11" elementary cellular automaton starting with a single ON (black) cell.
@@ -1984,7 +1986,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272664](http://oeis.org/A272664) ([L20 program](A272664.asm)): (001)(001)(001)(10)*.
 * [A272666](http://oeis.org/A272666) ([L13 program](A272666.asm)): a(n) = A011371(n) + 5*n.
 * [A272705](http://oeis.org/A272705) ([L20 program](A272705.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 515", based on the 5-celled von Neumann neighborhood.
-* [A272707](http://oeis.org/A272707) ([L17 program](A272707.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 515", based on the 5-celled von Neumann neighborhood.
+* [A272707](http://oeis.org/A272707) ([L15 program](A272707.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 515", based on the 5-celled von Neumann neighborhood.
 * [A272708](http://oeis.org/A272708) ([L18 program](A272708.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 515", based on the 5-celled von Neumann neighborhood.
 * [A272850](http://oeis.org/A272850) ([L13 program](A272850.asm)): a(n) = (n^2 + (n+1)^2)*(n^2 + (n+1)^2 + 2*n*(n+1)).
 * [A272871](http://oeis.org/A272871) ([L14 program](A272871.asm)): Imaginary part of (n + i)^4.
@@ -2296,6 +2298,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285173](http://oeis.org/A285173) ([L04 program](A285173.asm)): Numbers n such that A002496(n+1) < A002496(n)^(1+1/n).
 * [A285193](http://oeis.org/A285193) ([L13 program](A285193.asm)): Expansion of 1/(1+x+2*x^2) mod 3.
 * [A285194](http://oeis.org/A285194) ([L17 program](A285194.asm)): Expansion of (1+x^2)/(1+x+x^4) mod 3.
+* [A285326](http://oeis.org/A285326) ([L11 program](A285326.asm)): a(0) = 0, for n > 0, a(n) = n + A006519(n).
 * [A285345](http://oeis.org/A285345) ([L61 program](A285345.asm)): Fixed point of the morphism 0 -> 10, 1 -> 1100.
 * [A285440](http://oeis.org/A285440) ([L25 program](A285440.asm)): Consider the sums of the numbers < n that share the same greatest common divisor with n. Sequence lists numbers that have only one of those sums equal to n.
 * [A285475](http://oeis.org/A285475) ([L12 program](A285475.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.

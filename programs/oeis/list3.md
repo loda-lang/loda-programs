@@ -3,7 +3,7 @@
 List of integer sequences with links to LODA programs. An _Ln_ program is a LODA program of length _n_.
 
 * [A300067](http://oeis.org/A300067) ([L09 program](A300067.asm)): Period 6: repeat [0, 0, 0, 1, 2, 2].
-* [A300068](http://oeis.org/A300068) ([L13 program](A300068.asm)): A sequence based on the period 6 sequence A300067.
+* [A300068](http://oeis.org/A300068) ([L10 program](A300068.asm)): A sequence based on the period 6 sequence A300067.
 * [A300069](http://oeis.org/A300069) ([L08 program](A300069.asm)): Period 6: repeat [0, 0, 0, 1, 2, 1].
 * [A300075](http://oeis.org/A300075) ([L12 program](A300075.asm)): Period 6: repeat [0, 1, 1, 2, 2, 2].
 * [A300076](http://oeis.org/A300076) ([L17 program](A300076.asm)): A sequence based on the period 6 sequence A300075.

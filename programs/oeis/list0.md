@@ -1335,6 +1335,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017222](http://oeis.org/A017222) ([L14 program](A017222.asm)): a(n) = (9*n + 5)^2.
 * [A017233](http://oeis.org/A017233) ([L03 program](A017233.asm)): a(n) = 9*n + 6.
 * [A017234](http://oeis.org/A017234) ([L14 program](A017234.asm)): a(n) = (9*n + 6)^2.
+* [A017235](http://oeis.org/A017235) ([L05 program](A017235.asm)): a(n) = (9*n + 6)^3.
+* [A017236](http://oeis.org/A017236) ([L09 program](A017236.asm)): a(n) = (9*n + 6)^4.
 * [A017245](http://oeis.org/A017245) ([L03 program](A017245.asm)): a(n) = 9*n + 7.
 * [A017246](http://oeis.org/A017246) ([L10 program](A017246.asm)): a(n) = (9*n + 7)^2.
 * [A017248](http://oeis.org/A017248) ([L11 program](A017248.asm)): a(n) = (9*n + 7)^4.
@@ -1379,6 +1381,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017368](http://oeis.org/A017368) ([L19 program](A017368.asm)): a(n) = (10*n + 8)^4.
 * [A017377](http://oeis.org/A017377) ([L03 program](A017377.asm)): a(n) = 10*n + 9.
 * [A017378](http://oeis.org/A017378) ([L15 program](A017378.asm)): a(n) = (10*n + 9)^2.
+* [A017379](http://oeis.org/A017379) ([L17 program](A017379.asm)): a(n) = (10*n + 9)^3.
 * [A017380](http://oeis.org/A017380) ([L17 program](A017380.asm)): a(n) = (10*n + 9)^4.
 * [A017390](http://oeis.org/A017390) ([L04 program](A017390.asm)): a(n) = (11*n)^2.
 * [A017391](http://oeis.org/A017391) ([L12 program](A017391.asm)): a(n) = (11*n)^3.
@@ -2650,7 +2653,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040002](http://oeis.org/A040002) ([L04 program](A040002.asm)): Continued fraction for sqrt(5).
 * [A040003](http://oeis.org/A040003) ([L05 program](A040003.asm)): Continued fraction for sqrt(6).
 * [A040005](http://oeis.org/A040005) ([L08 program](A040005.asm)): Continued fraction for sqrt(8).
-* [A040006](http://oeis.org/A040006) ([L04 program](A040006.asm)): Continued fraction for sqrt(10).
+* [A040006](http://oeis.org/A040006) ([L03 program](A040006.asm)): Continued fraction for sqrt(10).
 * [A040007](http://oeis.org/A040007) ([L05 program](A040007.asm)): Continued fraction for sqrt(11).
 * [A040008](http://oeis.org/A040008) ([L08 program](A040008.asm)): Continued fraction for sqrt(12).
 * [A040011](http://oeis.org/A040011) ([L10 program](A040011.asm)): Continued fraction for sqrt(15).
@@ -2658,7 +2661,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040013](http://oeis.org/A040013) ([L07 program](A040013.asm)): Continued fraction for sqrt(18).
 * [A040015](http://oeis.org/A040015) ([L11 program](A040015.asm)): Continued fraction for sqrt(20).
 * [A040019](http://oeis.org/A040019) ([L17 program](A040019.asm)): Continued fraction for sqrt(24).
-* [A040020](http://oeis.org/A040020) ([L04 program](A040020.asm)): Continued fraction for sqrt(26).
+* [A040020](http://oeis.org/A040020) ([L03 program](A040020.asm)): Continued fraction for sqrt(26).
 * [A040021](http://oeis.org/A040021) ([L06 program](A040021.asm)): Continued fraction for sqrt(27).
 * [A040024](http://oeis.org/A040024) ([L12 program](A040024.asm)): Continued fraction for sqrt(30).
 * [A040029](http://oeis.org/A040029) ([L09 program](A040029.asm)): Continued fraction for sqrt(35).
@@ -3333,7 +3336,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047614](http://oeis.org/A047614) ([L24 program](A047614.asm)): Numbers that are congruent to {0, 1, 2, 4, 5} mod 8.
 * [A047615](http://oeis.org/A047615) ([L07 program](A047615.asm)): Numbers that are congruent to {0, 5} mod 8.
 * [A047616](http://oeis.org/A047616) ([L15 program](A047616.asm)): Numbers that are congruent to {0, 1, 5} mod 8.
-* [A047617](http://oeis.org/A047617) ([L08 program](A047617.asm)): Numbers that are congruent to {2, 5} mod 8.
+* [A047617](http://oeis.org/A047617) ([L07 program](A047617.asm)): Numbers that are congruent to {2, 5} mod 8.
 * [A047618](http://oeis.org/A047618) ([L03 program](A047618.asm)): Numbers that are congruent to {0, 2, 5} mod 8.
 * [A047619](http://oeis.org/A047619) ([L12 program](A047619.asm)): Numbers that are congruent to {1, 2, 5} mod 8.
 * [A047620](http://oeis.org/A047620) ([L10 program](A047620.asm)): Numbers that are congruent to {0, 1, 2, 5} mod 8.
@@ -5585,7 +5588,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A089105](http://oeis.org/A089105) ([L21 program](A089105.asm)): Values taken by least witness function W(n).
 * [A089108](http://oeis.org/A089108) ([L06 program](A089108.asm)): Convoluted convolved Fibonacci numbers G_4^(r).
 * [A089109](http://oeis.org/A089109) ([L21 program](A089109.asm)): Convoluted convolved Fibonacci numbers G_5^(r).
-* [A089128](http://oeis.org/A089128) ([L13 program](A089128.asm)): a(n) = gcd(6,n).
+* [A089128](http://oeis.org/A089128) ([L02 program](A089128.asm)): a(n) = gcd(6,n).
 * [A089129](http://oeis.org/A089129) ([L21 program](A089129.asm)): Greatest common divisor of n^2 - 7 and n^2 + 7.
 * [A089143](http://oeis.org/A089143) ([L06 program](A089143.asm)): a(n) = 9*2^n - 6.
 * [A089145](http://oeis.org/A089145) ([L13 program](A089145.asm)): Greatest common divisor of n^2-3 and n^2+3.
@@ -5665,7 +5668,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A091574](http://oeis.org/A091574) ([L14 program](A091574.asm)): Poincaré series [or Poincare series] of the preprojective algebra of an extended Dynkin diagram of type D_4.
 * [A091629](http://oeis.org/A091629) ([L05 program](A091629.asm)): Product of digits associated with A091628(n). Essentially the same as A007283.
 * [A091684](http://oeis.org/A091684) ([L04 program](A091684.asm)): a(n) = 0 if n is divisible by 3, otherwise a(n) = n.
-* [A091685](http://oeis.org/A091685) ([L21 program](A091685.asm)): Sieve out 6n+1 and 6n-1.
+* [A091685](http://oeis.org/A091685) ([L11 program](A091685.asm)): Sieve out 6n+1 and 6n-1.
 * [A091703](http://oeis.org/A091703) ([L05 program](A091703.asm)): Count, setting 5n to zero.
 * [A091720](http://oeis.org/A091720) ([L10 program](A091720.asm)): Babylonian sexagesimal (base 60) expansion of 1/7.
 * [A091721](http://oeis.org/A091721) ([L12 program](A091721.asm)): Babylonian sexagesimal (base 60) expansion of 1/11.
