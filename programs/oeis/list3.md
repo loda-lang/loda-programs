@@ -110,6 +110,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304171](http://oeis.org/A304171) ([L24 program](A304171.asm)): a(n) = 87*2^n - 38 (n>=0).
 * [A304172](http://oeis.org/A304172) ([L25 program](A304172.asm)): a(n) = 99*2^n - 45 (n>=0).
 * [A304205](http://oeis.org/A304205) ([L03 program](A304205.asm)): Numbers k such that 24*k + 6 is congruent to 0 (mod 49).
+* [A304274](http://oeis.org/A304274) ([L08 program](A304274.asm)): The concatenation of the first n elements is the largest positive even number with n digits when written in base 3/2.
 * [A304370](http://oeis.org/A304370) ([L22 program](A304370.asm)): Number of function calls of the first kind required to compute ack(3,n), where ack denotes the Ackermann function.
 * [A304371](http://oeis.org/A304371) ([L16 program](A304371.asm)): Number of function calls of the second kind required to compute ack(3,n), where ack denotes the Ackermann function.
 * [A304374](http://oeis.org/A304374) ([L10 program](A304374.asm)): a(n) = 9*n^2 + 21*n - 6 (n>=1).
@@ -500,7 +501,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317318](http://oeis.org/A317318) ([L13 program](A317318.asm)): Multiples of 18 and odd numbers interleaved.
 * [A317320](http://oeis.org/A317320) ([L21 program](A317320.asm)): Multiples of 20 and odd numbers interleaved.
 * [A317321](http://oeis.org/A317321) ([L37 program](A317321.asm)): Multiples of 21 and odd numbers interleaved.
-* [A317322](http://oeis.org/A317322) ([L16 program](A317322.asm)): Multiples of 22 and odd numbers interleaved.
+* [A317322](http://oeis.org/A317322) ([L13 program](A317322.asm)): Multiples of 22 and odd numbers interleaved.
 * [A317323](http://oeis.org/A317323) ([L13 program](A317323.asm)): Multiples of 23 and odd numbers interleaved.
 * [A317324](http://oeis.org/A317324) ([L16 program](A317324.asm)): Multiples of 24 and odd numbers interleaved.
 * [A317325](http://oeis.org/A317325) ([L08 program](A317325.asm)): Multiples of 25 and odd numbers interleaved.
@@ -651,6 +652,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328990](http://oeis.org/A328990) ([L13 program](A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A329202](http://oeis.org/A329202) ([L08 program](A329202.asm)): a(n) = floor(2*log_2(n)) = floor(log_2(n^2)).
 * [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
+* [A329404](http://oeis.org/A329404) ([L17 program](A329404.asm)): Interleave 2*n*(3*n-1) , (2*n+1)*(6*n+1) for n>=0.
 * [A329502](http://oeis.org/A329502) ([L06 program](A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
 * [A329503](http://oeis.org/A329503) ([L10 program](A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
 * [A329505](http://oeis.org/A329505) ([L11 program](A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).

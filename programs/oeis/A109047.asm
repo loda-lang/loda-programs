@@ -9,6 +9,5 @@ lpb $0,1
   gcd $0,$1
   div $1,$0
   pow $0,$2
-  sub $0,1
   mul $1,6
 lpe

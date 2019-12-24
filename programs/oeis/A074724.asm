@@ -5,8 +5,5 @@ add $2,3
 add $0,1
 mul $0,$2
 add $1,3
-lpb $0,1
-  pow $0,3
-lpe
 pow $1,5
 gcd $1,$0

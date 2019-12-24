@@ -6,10 +6,3 @@ add $0,1
 pow $1,$1
 mov $2,$0
 gcd $1,$2
-add $1,1
-lpb $0,1
-  div $2,$3
-  mod $4,$2
-  sub $5,$4
-lpe
-sub $1,1

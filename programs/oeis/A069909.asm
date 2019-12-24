@@ -9,12 +9,11 @@ mod $0,2
 gcd $1,4
 mod $4,$1
 lpb $0,1
-  add $3,2
   mod $4,2
   sub $0,1
 lpe
 mov $1,$4
-mov $6,$5
-mov $2,$6
+mov $3,$5
+mov $2,$3
 mul $2,2
 add $1,$2

@@ -14,6 +14,3 @@ lpb $3,1
   mul $1,3
   div $3,$3
 lpe
-lpb $3,1
-  sub $3,1
-lpe
