@@ -4,7 +4,6 @@
 mov $2,$0
 add $1,$0
 lpb $2,1
-  mod $0,$0
   sub $2,1
   div $2,2
   gcd $1,$2

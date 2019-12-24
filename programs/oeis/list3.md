@@ -647,10 +647,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328865](http://oeis.org/A328865) ([L05 program](A328865.asm)): The first repeating term in the trajectory of n under iterations of A329623, or -1 if no such terms exists.
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L03 program](A328943.asm)): a(n) = 2 + (n mod 4).
+* [A328979](http://oeis.org/A328979) ([L06 program](A328979.asm)): Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
 * [A328990](http://oeis.org/A328990) ([L13 program](A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A329202](http://oeis.org/A329202) ([L08 program](A329202.asm)): a(n) = floor(2*log_2(n)) = floor(log_2(n^2)).
 * [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
-* [A329502](http://oeis.org/A329502) ([L07 program](A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
+* [A329502](http://oeis.org/A329502) ([L06 program](A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
 * [A329503](http://oeis.org/A329503) ([L10 program](A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
 * [A329505](http://oeis.org/A329505) ([L11 program](A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
 * [A329506](http://oeis.org/A329506) ([L11 program](A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
@@ -664,7 +665,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329679](http://oeis.org/A329679) ([L13 program](A329679.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, UD, HD and DH.
 * [A329680](http://oeis.org/A329680) ([L05 program](A329680.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD and DU.
 * [A329682](http://oeis.org/A329682) ([L09 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
-* [A329683](http://oeis.org/A329683) ([L04 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
+* [A329683](http://oeis.org/A329683) ([L03 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L05 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
 * [A329822](http://oeis.org/A329822) ([L10 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
 * [A329826](http://oeis.org/A329826) ([L15 program](A329826.asm)): Beatty sequence for (5+sqrt(17))/4.

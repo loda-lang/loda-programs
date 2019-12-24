@@ -3,10 +3,9 @@
 
 mul $0,3
 div $0,2
-add $3,$0
-mul $0,$2
-add $3,3
-add $1,$3
+add $2,$0
+add $2,3
+add $1,$2
 div $1,2
 gcd $1,2
 sub $1,1

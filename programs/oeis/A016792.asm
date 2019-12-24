@@ -4,8 +4,4 @@
 gcd $1,$0
 mul $1,3
 add $1,2
-div $3,$2
 pow $1,4
-lpb $0,1
-  pow $0,$3
-lpe

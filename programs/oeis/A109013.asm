@@ -10,8 +10,4 @@ mod $3,4
 add $1,$1
 gcd $1,$0
 add $1,$3
-lpb $0,1
-  mul $0,3
-  gcd $2,$3
-lpe
 sub $1,1
