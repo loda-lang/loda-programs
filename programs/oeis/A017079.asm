@@ -4,7 +4,6 @@
 add $1,$0
 add $2,$1
 add $1,$2
-mul $0,$3
 mul $1,4
 add $1,1
 pow $1,3

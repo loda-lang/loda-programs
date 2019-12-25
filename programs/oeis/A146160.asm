@@ -6,6 +6,3 @@ add $0,$2
 gcd $0,4
 pow $0,2
 mov $1,$0
-lpb $0,1
-  mul $0,4
-lpe

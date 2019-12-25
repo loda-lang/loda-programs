@@ -70,6 +70,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302254](http://oeis.org/A302254) ([L13 program](A302254.asm)): Exponent of the group of the Gaussian integers in a reduced system modulo (1+i)^n.
 * [A302255](http://oeis.org/A302255) ([L11 program](A302255.asm)): Total domination number of the n-antiprism graph.
 * [A302302](http://oeis.org/A302302) ([L08 program](A302302.asm)): Number of triples (i,j,k) such that i+j+k > 0 with -n <= i,j,k <= n.
+* [A302338](http://oeis.org/A302338) ([L11 program](A302338.asm)): a(n) = 3*n + 2^v(n) where v(n) denotes the 2-adic valuation of n.
 * [A302390](http://oeis.org/A302390) ([L17 program](A302390.asm)): Triameter of the n-cube-connected cycle graph.
 * [A302402](http://oeis.org/A302402) ([L04 program](A302402.asm)): Total domination number of the n-ladder graph.
 * [A302404](http://oeis.org/A302404) ([L12 program](A302404.asm)): Total domination number of the n-Moebius ladder.
@@ -94,7 +95,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A303590](http://oeis.org/A303590) ([L22 program](A303590.asm)): Floor(n*beta)-1, where 1/alpha+1/beta=1, alpha being the number with continued fraction expansion [1;1,2,3,4,5,...] (A247844).
 * [A303609](http://oeis.org/A303609) ([L11 program](A303609.asm)): a(n) = 2*n^3 + 9*n^2 + 9*n.
 * [A303611](http://oeis.org/A303611) ([L12 program](A303611.asm)): a(n) = (-1 - (-2)^(n-2)) mod 2^n.
-* [A303692](http://oeis.org/A303692) ([L15 program](A303692.asm)): a(n) = n^2*(2*n - 3 - (-1)^n)/4.
+* [A303692](http://oeis.org/A303692) ([L05 program](A303692.asm)): a(n) = n^2*(2*n - 3 - (-1)^n)/4.
 * [A303814](http://oeis.org/A303814) ([L20 program](A303814.asm)): Generalized 24-gonal (or icositetragonal) numbers: m*(11*m - 10) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A304025](http://oeis.org/A304025) ([L09 program](A304025.asm)): a(n) is the largest integer that can be written with n digits in base 3/2.
 * [A304157](http://oeis.org/A304157) ([L03 program](A304157.asm)): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
@@ -217,6 +218,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305270](http://oeis.org/A305270) ([L12 program](A305270.asm)): a(n) = 140*2^n - 112.
 * [A305271](http://oeis.org/A305271) ([L20 program](A305271.asm)): a(n) = 680*2^n - 548.
 * [A305272](http://oeis.org/A305272) ([L19 program](A305272.asm)): a(n) = 836*2^n - 676.
+* [A305498](http://oeis.org/A305498) ([L10 program](A305498.asm)): The smallest positive even integer that can be represented with n digits in base 3/2.
 * [A305503](http://oeis.org/A305503) ([L09 program](A305503.asm)): Largest cardinality of subsets A of {0,1,...,n-1} with |A + A| > |A - A|.
 * [A305548](http://oeis.org/A305548) ([L02 program](A305548.asm)): a(n) = 27*n.
 * [A305750](http://oeis.org/A305750) ([L23 program](A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
@@ -552,7 +554,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A320281](http://oeis.org/A320281) ([L06 program](A320281.asm)): Terms that are on the positive x-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
 * [A320427](http://oeis.org/A320427) ([L24 program](A320427.asm)): a(n) = floor(3*n/2) + ceiling(n/6) + 9.
 * [A320523](http://oeis.org/A320523) ([L32 program](A320523.asm)): Smallest m > 1 such that either n^m == n (mod 25) or n^m == 0 (mod 25).
-* [A320604](http://oeis.org/A320604) ([L10 program](A320604.asm)): Chromatic number of the n-polygon diagonal intersection graph.
+* [A320604](http://oeis.org/A320604) ([L07 program](A320604.asm)): Chromatic number of the n-polygon diagonal intersection graph.
 * [A320661](http://oeis.org/A320661) ([L08 program](A320661.asm)): a(n) = 2^(n+3) - 6*n - 7.
 * [A320674](http://oeis.org/A320674) ([L14 program](A320674.asm)): Positive integers m with binary expansion (b_1, ..., b_k) (where k = A070939(m)) such that b_i = [m == 0 (mod prime(i))] for i = 1..k (where prime(i) denotes the i-th prime number and [] is an Iverson bracket).
 * [A320933](http://oeis.org/A320933) ([L12 program](A320933.asm)): a(n) = 2^n - floor((n+3)/2).
@@ -666,7 +668,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329678](http://oeis.org/A329678) ([L02 program](A329678.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UD and DH.
 * [A329679](http://oeis.org/A329679) ([L13 program](A329679.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, UD, HD and DH.
 * [A329680](http://oeis.org/A329680) ([L05 program](A329680.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD and DU.
-* [A329682](http://oeis.org/A329682) ([L09 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
+* [A329682](http://oeis.org/A329682) ([L07 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L03 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L05 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
 * [A329822](http://oeis.org/A329822) ([L10 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
