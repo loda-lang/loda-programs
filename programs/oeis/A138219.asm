@@ -4,9 +4,6 @@
 add $3,$0
 add $2,$0
 gcd $1,$3
-gcd $0,2
-mov $4,$0
-sub $4,3
 lpb $0,1
   div $3,2
   mod $1,2

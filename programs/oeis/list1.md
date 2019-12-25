@@ -1110,7 +1110,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A129184](http://oeis.org/A129184) ([L07 program](A129184.asm)): Shift operator, right.
 * [A129185](http://oeis.org/A129185) ([L07 program](A129185.asm)): Shift operator, left.
 * [A129186](http://oeis.org/A129186) ([L11 program](A129186.asm)): Right shift operator generating 1's in shifted spaces.
-* [A129194](http://oeis.org/A129194) ([L11 program](A129194.asm)): a(n) = n^2*(3/4 - (-1)^n/4).
+* [A129194](http://oeis.org/A129194) ([L04 program](A129194.asm)): a(n) = n^2*(3/4 - (-1)^n/4).
 * [A129197](http://oeis.org/A129197) ([L13 program](A129197.asm)): a(n) = numerator( 3*(3+(-1)^n)/(n+1)^3 ).
 * [A129203](http://oeis.org/A129203) ([L13 program](A129203.asm)): a(n) = numerator(3/(n+1)^3)*(3/2 + (-1)^n/2).
 * [A129254](http://oeis.org/A129254) ([L08 program](A129254.asm)): Numbers n such that both n and n+1 have at least one divisor of the form p^e with p<=e, p prime.
@@ -1699,6 +1699,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A138129](http://oeis.org/A138129) ([L02 program](A138129.asm)): Multiples of 1729, the Hardy-Ramanujan number.
 * [A138179](http://oeis.org/A138179) ([L10 program](A138179.asm)): Wiener index of the prism graph Y_n on 2n nodes.
 * [A138191](http://oeis.org/A138191) ([L05 program](A138191.asm)): Denominator of (n-1)n(n+1)/12.
+* [A138219](http://oeis.org/A138219) ([L14 program](A138219.asm)): Integer volume numbers for n dimensions from Sommervillie recursion formula: k(n)=k(n-1)*Beta[(n+1)/2,1/2].
 * [A138251](http://oeis.org/A138251) ([L19 program](A138251.asm)): Beatty sequence of the positive root of x^3 - x^2 - 1.
 * [A138252](http://oeis.org/A138252) ([L21 program](A138252.asm)): Beatty sequence of the number t satisfying 1/s + 1/t = 1, where s is the positive root of x^3 - x^2 - 1.
 * [A138279](http://oeis.org/A138279) ([L18 program](A138279.asm)): Last digit of A136324. After 0, 1, period 4: repeat [1, 2, 5, 6] = A131800.
@@ -3113,7 +3114,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166150](http://oeis.org/A166150) ([L08 program](A166150.asm)): a(n) = 5n^2 + 5n - 9.
 * [A166151](http://oeis.org/A166151) ([L07 program](A166151.asm)): (5n^2 + 5n - 6)/2.
 * [A166154](http://oeis.org/A166154) ([L07 program](A166154.asm)): 7*n*(n+1)/2 - 5.
-* [A166304](http://oeis.org/A166304) ([L17 program](A166304.asm)): Third trisection of A022998.
+* [A166304](http://oeis.org/A166304) ([L14 program](A166304.asm)): Third trisection of A022998.
 * [A166444](http://oeis.org/A166444) ([L07 program](A166444.asm)): a(0) = 0, a(1) = 1 and for n > 1, a(n) = sum of all previous terms.
 * [A166447](http://oeis.org/A166447) ([L06 program](A166447.asm)): a(n) = n*round(sqrt(n)).
 * [A166464](http://oeis.org/A166464) ([L08 program](A166464.asm)): a(n) = (3+2n+6n^2+4n^3)/3.
@@ -3276,6 +3277,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168236](http://oeis.org/A168236) ([L06 program](A168236.asm)): a(n) = (6*n - 3*(-1)^n - 1)/4.
 * [A168237](http://oeis.org/A168237) ([L04 program](A168237.asm)): a(n) = (6*n + 3*(-1)^n - 3)/4.
 * [A168240](http://oeis.org/A168240) ([L13 program](A168240.asm)): 1+7*n+13*n^2.
+* [A168251](http://oeis.org/A168251) ([L11 program](A168251.asm)): a(n) = n^2 if n is odd, n^2*2^(n-2) if n is even.
 * [A168255](http://oeis.org/A168255) ([L09 program](A168255.asm)): n appears n-th nonprime number times.
 * [A168269](http://oeis.org/A168269) ([L06 program](A168269.asm)): a(n) = 2*n - (-1)^n.
 * [A168273](http://oeis.org/A168273) ([L04 program](A168273.asm)): a(n) = 2*n + (-1)^n - 1.
@@ -3683,7 +3685,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A172193](http://oeis.org/A172193) ([L10 program](A172193.asm)): 5*n^2+31*n+1.
 * [A172200](http://oeis.org/A172200) ([L15 program](A172200.asm)): Number of ways to place 2 nonattacking amazons (superqueens) on an n X n board
 * [A172225](http://oeis.org/A172225) ([L11 program](A172225.asm)): Number of ways to place 2 nonattacking wazirs on an n X n board.
-* [A172276](http://oeis.org/A172276) ([L24 program](A172276.asm)): a(n) = floor(n*(sqrt(13)-sqrt(5))).
 * [A172325](http://oeis.org/A172325) ([L22 program](A172325.asm)): Floor(n*(sqrt(7)+sqrt(3))).
 * [A172326](http://oeis.org/A172326) ([L17 program](A172326.asm)): a(n) = floor(n*(sqrt(7) + sqrt(2))).
 * [A172423](http://oeis.org/A172423) ([L15 program](A172423.asm)): Period length 10: repeat 0,9,2,7,4,5,6,3,8,1.
@@ -3728,7 +3729,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173317](http://oeis.org/A173317) ([L19 program](A173317.asm)): 5*n! - 1.
 * [A173319](http://oeis.org/A173319) ([L08 program](A173319.asm)): 5*n! + 1.
 * [A173321](http://oeis.org/A173321) ([L13 program](A173321.asm)): a(n) = 4*n! - 1.
-* [A173322](http://oeis.org/A173322) ([L13 program](A173322.asm)): 4*n! + 1.
+* [A173322](http://oeis.org/A173322) ([L09 program](A173322.asm)): 4*n! + 1.
 * [A173323](http://oeis.org/A173323) ([L13 program](A173323.asm)): 3*n! - 1.
 * [A173324](http://oeis.org/A173324) ([L13 program](A173324.asm)): 3*n! + 1.
 * [A173391](http://oeis.org/A173391) ([L15 program](A173391.asm)): a(n) = 6n + 3^n.
@@ -4231,7 +4232,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184959](http://oeis.org/A184959) ([L12 program](A184959.asm)): Fibonacci sequence beginning 10, 9.
 * [A184985](http://oeis.org/A184985) ([L05 program](A184985.asm)): Nonnegative integers excluding 2.
 * [A185012](http://oeis.org/A185012) ([L04 program](A185012.asm)): Characteristic function of two.
-* [A185013](http://oeis.org/A185013) ([L06 program](A185013.asm)): Characteristic function of {3}.
+* [A185013](http://oeis.org/A185013) ([L04 program](A185013.asm)): Characteristic function of {3}.
 * [A185014](http://oeis.org/A185014) ([L05 program](A185014.asm)): Characteristic function of four.
 * [A185015](http://oeis.org/A185015) ([L04 program](A185015.asm)): Characteristic function of 5.
 * [A185016](http://oeis.org/A185016) ([L05 program](A185016.asm)): Characteristic function of 6.

@@ -478,6 +478,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316533](http://oeis.org/A316533) ([L24 program](A316533.asm)): a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
 * [A316562](http://oeis.org/A316562) ([L09 program](A316562.asm)): Koechel number for the works of W. A. Mozart rounded from age 11.
 * [A316571](http://oeis.org/A316571) ([L07 program](A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
+* [A316631](http://oeis.org/A316631) ([L12 program](A316631.asm)): Expansion of A(x) = x*(1+3*x^2+x^3+3*x^4+x^6)/(1-x^4)^2.
 * [A316671](http://oeis.org/A316671) ([L10 program](A316671.asm)): Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
 * [A316725](http://oeis.org/A316725) ([L22 program](A316725.asm)): Generalized 27-gonal (or icosiheptagonal) numbers: m*(25*m - 23)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A316742](http://oeis.org/A316742) ([L11 program](A316742.asm)): Stepping through the Mersenne sequence (A000225) one step back, two steps forward.
@@ -496,7 +497,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317311](http://oeis.org/A317311) ([L14 program](A317311.asm)): Multiples of 11 and odd numbers interleaved.
 * [A317312](http://oeis.org/A317312) ([L12 program](A317312.asm)): Multiples of 12 and odd numbers interleaved.
 * [A317313](http://oeis.org/A317313) ([L26 program](A317313.asm)): Multiples of 13 and odd numbers interleaved.
-* [A317314](http://oeis.org/A317314) ([L16 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
+* [A317314](http://oeis.org/A317314) ([L12 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
 * [A317315](http://oeis.org/A317315) ([L33 program](A317315.asm)): Multiples of 15 and odd numbers interleaved.
 * [A317316](http://oeis.org/A317316) ([L14 program](A317316.asm)): Multiples of 16 and odd numbers interleaved.
 * [A317317](http://oeis.org/A317317) ([L20 program](A317317.asm)): Multiples of 17 and odd numbers interleaved.

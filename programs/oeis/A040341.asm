@@ -4,7 +4,6 @@
 gcd $1,6
 mov $2,$0
 lpb $2,1
-  add $2,$0
   mul $1,2
   mod $2,$2
 lpe
