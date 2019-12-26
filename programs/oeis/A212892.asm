@@ -3,7 +3,6 @@
 
 pow $0,2
 add $0,$0
-add $2,2
 add $1,$0
 div $1,4
 pow $1,2
