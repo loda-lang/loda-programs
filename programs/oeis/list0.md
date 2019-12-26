@@ -838,6 +838,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010132](http://oeis.org/A010132) ([L11 program](A010132.asm)): Continued fraction for sqrt(34).
 * [A010133](http://oeis.org/A010133) ([L26 program](A010133.asm)): Continued fraction for sqrt(41).
 * [A010141](http://oeis.org/A010141) ([L20 program](A010141.asm)): Continued fraction for sqrt(55).
+* [A010156](http://oeis.org/A010156) ([L08 program](A010156.asm)): Continued fraction for sqrt(78).
 * [A010170](http://oeis.org/A010170) ([L15 program](A010170.asm)): Continued fraction for sqrt(99).
 * [A010410](http://oeis.org/A010410) ([L09 program](A010410.asm)): Squares mod 49.
 * [A010673](http://oeis.org/A010673) ([L03 program](A010673.asm)): Period 2: repeat [0, 2].
@@ -1338,6 +1339,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017212](http://oeis.org/A017212) ([L04 program](A017212.asm)): a(n) = (9*n + 4)^4.
 * [A017221](http://oeis.org/A017221) ([L03 program](A017221.asm)): a(n) = 9*n + 5.
 * [A017222](http://oeis.org/A017222) ([L14 program](A017222.asm)): a(n) = (9*n + 5)^2.
+* [A017224](http://oeis.org/A017224) ([L11 program](A017224.asm)): a(n) = (9*n + 5)^4.
 * [A017233](http://oeis.org/A017233) ([L03 program](A017233.asm)): a(n) = 9*n + 6.
 * [A017234](http://oeis.org/A017234) ([L14 program](A017234.asm)): a(n) = (9*n + 6)^2.
 * [A017235](http://oeis.org/A017235) ([L05 program](A017235.asm)): a(n) = (9*n + 6)^3.
@@ -2776,12 +2778,16 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040756](http://oeis.org/A040756) ([L06 program](A040756.asm)): Continued fraction for sqrt(785).
 * [A040757](http://oeis.org/A040757) ([L14 program](A040757.asm)): Continued fraction for sqrt(786).
 * [A040759](http://oeis.org/A040759) ([L10 program](A040759.asm)): Continued fraction for sqrt(788).
+* [A040762](http://oeis.org/A040762) ([L10 program](A040762.asm)): Continued fraction for sqrt(791).
 * [A040769](http://oeis.org/A040769) ([L25 program](A040769.asm)): Continued fraction for sqrt(798).
+* [A040783](http://oeis.org/A040783) ([L16 program](A040783.asm)): Continued fraction for sqrt(812).
+* [A040811](http://oeis.org/A040811) ([L13 program](A040811.asm)): Continued fraction for sqrt(840).
 * [A040812](http://oeis.org/A040812) ([L08 program](A040812.asm)): Continued fraction for sqrt(842).
 * [A040813](http://oeis.org/A040813) ([L19 program](A040813.asm)): Continued fraction for sqrt(843).
 * [A040870](http://oeis.org/A040870) ([L06 program](A040870.asm)): Continued fraction for sqrt(901).
 * [A040871](http://oeis.org/A040871) ([L13 program](A040871.asm)): Continued fraction for sqrt(902).
 * [A040872](http://oeis.org/A040872) ([L15 program](A040872.asm)): Continued fraction for sqrt(903).
+* [A040879](http://oeis.org/A040879) ([L08 program](A040879.asm)): Continued fraction for sqrt(910).
 * [A040929](http://oeis.org/A040929) ([L28 program](A040929.asm)): Continued fraction for sqrt(960).
 * [A040930](http://oeis.org/A040930) ([L08 program](A040930.asm)): Continued fraction for sqrt(962).
 * [A040931](http://oeis.org/A040931) ([L22 program](A040931.asm)): Continued fraction for sqrt(963).
@@ -2877,6 +2883,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044421](http://oeis.org/A044421) ([L03 program](A044421.asm)): Numbers n such that string 8,9 occurs in the base 10 representation of n but not of n-1.
 * [A044431](http://oeis.org/A044431) ([L16 program](A044431.asm)): Numbers n such that string 9,9 occurs in the base 10 representation of n but not of n-1.
 * [A044457](http://oeis.org/A044457) ([L32 program](A044457.asm)): Numbers n such that string 3,3 occurs in the base 4 representation of n but not of n+1.
+* [A044470](http://oeis.org/A044470) ([L20 program](A044470.asm)): Numbers n such that string 2,2 occurs in the base 5 representation of n but not of n+1.
 * [A044519](http://oeis.org/A044519) ([L34 program](A044519.asm)): Numbers n such that string 0,0 occurs in the base 7 representation of n but not of n+1.
 * [A044526](http://oeis.org/A044526) ([L17 program](A044526.asm)): Numbers n such that string 1,0 occurs in the base 7 representation of n but not of n+1.
 * [A044567](http://oeis.org/A044567) ([L03 program](A044567.asm)): Numbers n such that string 6,6 occurs in the base 7 representation of n but not of n+1.
@@ -3879,6 +3886,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A057066](http://oeis.org/A057066) ([L09 program](A057066.asm)): Floor[4^4/n].
 * [A057067](http://oeis.org/A057067) ([L05 program](A057067.asm)): a(n) = floor(5^5/n).
 * [A057068](http://oeis.org/A057068) ([L07 program](A057068.asm)): floor[6^6/n].
+* [A057069](http://oeis.org/A057069) ([L10 program](A057069.asm)): floor[7^7/n].
 * [A057070](http://oeis.org/A057070) ([L05 program](A057070.asm)): floor[8^8/n].
 * [A057071](http://oeis.org/A057071) ([L05 program](A057071.asm)): floor[9^9/n].
 * [A057084](http://oeis.org/A057084) ([L15 program](A057084.asm)): Scaled Chebyshev U-polynomials evaluated at sqrt(2).
@@ -4784,6 +4792,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071229](http://oeis.org/A071229) ([L10 program](A071229.asm)): a(n) = n*(14*n^2-21*n+13)/6.
 * [A071230](http://oeis.org/A071230) ([L14 program](A071230.asm)): a(n) = n*(6*n^2 - 7*n + 3)/2.
 * [A071231](http://oeis.org/A071231) ([L10 program](A071231.asm)): a(n) = (n^8 + n^4)/2.
+* [A071232](http://oeis.org/A071232) ([L06 program](A071232.asm)): a(n) = (n^6 + n^3)/2.
 * [A071233](http://oeis.org/A071233) ([L10 program](A071233.asm)): a(n) = 2*(n-1)*(n^2 + 1).
 * [A071237](http://oeis.org/A071237) ([L12 program](A071237.asm)): n*(n+1)*(n^2+1)/2.
 * [A071238](http://oeis.org/A071238) ([L10 program](A071238.asm)): a(n) = n*(n+1)*(2*n^2+1)/6.

@@ -934,6 +934,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123357](http://oeis.org/A123357) ([L12 program](A123357.asm)): Kekulé numbers for certain benzenoids (see the Cyvin-Gutman book for details).
 * [A123384](http://oeis.org/A123384) ([L14 program](A123384.asm)): Number of bits in binary expansion of 10^n.
 * [A123578](http://oeis.org/A123578) ([L04 program](A123578.asm)): The Kruskal-Macaulay function M_2(n).
+* [A123596](http://oeis.org/A123596) ([L14 program](A123596.asm)): Squares alternating with triangular numbers.
 * [A123650](http://oeis.org/A123650) ([L55 program](A123650.asm)): a(n) = 1 + n^2 + n^3 + n^5.
 * [A123656](http://oeis.org/A123656) ([L75 program](A123656.asm)): a(n) = 1 + n^4 + n^6.
 * [A123663](http://oeis.org/A123663) ([L11 program](A123663.asm)): Number of shared edges in a spiral of n unit squares.
@@ -4497,7 +4498,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190816](http://oeis.org/A190816) ([L07 program](A190816.asm)): a(n) = 5*n^2 - 4*n + 1.
 * [A190876](http://oeis.org/A190876) ([L11 program](A190876.asm)): Numbers 1 through 8 together with numbers congruent to 9 mod 10.
 * [A190949](http://oeis.org/A190949) ([L18 program](A190949.asm)): Odd Fibonacci numbers with odd index.
-* [A190973](http://oeis.org/A190973) ([L09 program](A190973.asm)): a(n) = 7*a(n-1) - 4*a(n-2), with a(0)=0, a(1)=1.
+* [A190973](http://oeis.org/A190973) ([L09 program](A190973.asm)): a(n) = 7*a(n-1) - 4*a(n-2), with a(0) = 0, a(1) = 1.
 * [A190975](http://oeis.org/A190975) ([L14 program](A190975.asm)): a(n) = 8*a(n-1) - 2*a(n-2), with a(0)=0, a(1)=1.
 * [A190981](http://oeis.org/A190981) ([L10 program](A190981.asm)): a(n) = 9*a(n-1) - 4*a(n-2), with a(0)=0, a(1)=1.
 * [A190990](http://oeis.org/A190990) ([L12 program](A190990.asm)): a(n) = 10*a(n-1) - 8*a(n-2), with a(0)=0, a(1)=1.
@@ -4505,12 +4506,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190995](http://oeis.org/A190995) ([L09 program](A190995.asm)): Fibonacci sequence beginning 9, 7.
 * [A190996](http://oeis.org/A190996) ([L10 program](A190996.asm)): Fibonacci sequence beginning 10, 7.
 * [A191007](http://oeis.org/A191007) ([L11 program](A191007.asm)): Another renewal type of sequence: Let X, X(1),X(2),... denote independent random variables with pdf P(X=1) = P(X=2) = P(X=4) = 1/3. Let N(x) denote the first value of k such that X(1)*X(2)...*X(k) > x, and let H(x) = E(N(x)). The sequence a(n) is given by a(n) = 2^(n+1)*H(2^n).
+* [A191254](http://oeis.org/A191254) ([L07 program](A191254.asm)): Fixed point of the morphism 0 -> 01, 1 -> 02, 2 -> 01.
 * [A191269](http://oeis.org/A191269) ([L29 program](A191269.asm)): Fixed point of the morphism 0 -> 001, 1 -> 02, 2 -> 01.
 * [A191275](http://oeis.org/A191275) ([L08 program](A191275.asm)): Numbers that are congruent to {0, 1, 3, 5, 7, 9, 11} mod 12.
 * [A191296](http://oeis.org/A191296) ([L20 program](A191296.asm)): Least k such that k-1 and k+1 in binary representation have same number n of 0's as 1's.
 * [A191341](http://oeis.org/A191341) ([L17 program](A191341.asm)): a(n) = 4^n - 2*2^n + 3.
 * [A191413](http://oeis.org/A191413) ([L07 program](A191413.asm)): a(n) = 3*n^2 - 2*n + 7.
 * [A191484](http://oeis.org/A191484) ([L14 program](A191484.asm)): Number of compositions of even natural numbers into 5 parts <= n.
+* [A191495](http://oeis.org/A191495) ([L10 program](A191495.asm)): Number of compositions of even natural numbers into 8 parts <= n.
 * [A191593](http://oeis.org/A191593) ([L14 program](A191593.asm)): Number of partitions of 12*n into parts < 5.
 * [A191610](http://oeis.org/A191610) ([L08 program](A191610.asm)): Possible number of trailing zeros in n! (complement of A000966).
 * [A191680](http://oeis.org/A191680) ([L09 program](A191680.asm)): Number of compositions of odd natural numbers into 9 parts <= n.

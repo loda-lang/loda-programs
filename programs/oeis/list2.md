@@ -908,6 +908,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A234904](http://oeis.org/A234904) ([L10 program](A234904.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 1, 3) after n rotations.
 * [A235088](http://oeis.org/A235088) ([L11 program](A235088.asm)): a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3, 4) after n rotations.
 * [A235089](http://oeis.org/A235089) ([L08 program](A235089.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 1, 3, 4) after n rotations.
+* [A235136](http://oeis.org/A235136) ([L08 program](A235136.asm)): a(n) = (2*n - 1) * a(n-2) for n>1, a(0) = a(1) = 1.
 * [A235224](http://oeis.org/A235224) ([L15 program](A235224.asm)): a(0) = 0, and for n > 0, a(n) = largest k such that A002110(k-1) <= n, where A002110(k) gives the k-th primorial number.
 * [A235332](http://oeis.org/A235332) ([L08 program](A235332.asm)): a(n) = n*(9*n + 25)/2 + 6.
 * [A235355](http://oeis.org/A235355) ([L09 program](A235355.asm)): 0 followed by the sum of (1),(2), (3,4),(5,6), (7,8,9),(10,11,12) from the natural numbers.
@@ -1213,7 +1214,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247974](http://oeis.org/A247974) ([L24 program](A247974.asm)): Numbers k such that A247973(k+1) = A247973(k).
 * [A247983](http://oeis.org/A247983) ([L08 program](A247983.asm)): Least number k such that log(2) - sum{1/(h*2^h), h=1..k} < 1/2^n.
 * [A248121](http://oeis.org/A248121) ([L13 program](A248121.asm)): Floor(1 / (1/n - Pi^2/6 + sum{1/h^2, h = 1..n})).
-* [A248180](http://oeis.org/A248180) ([L11 program](A248180.asm)): Least k such that r - sum{1/C(2h+1,h), h = 0..k} < 1/2^n, where r = (2/27)*(9 + 2*sqrt(3)*Pi).
 * [A248216](http://oeis.org/A248216) ([L13 program](A248216.asm)): 6^n - 2^n.
 * [A248217](http://oeis.org/A248217) ([L10 program](A248217.asm)): a(n) = 8^n - 2^n.
 * [A248230](http://oeis.org/A248230) ([L46 program](A248230.asm)): a(n) = floor(1/(zeta(4) - Sum_{h=1..n} 1/h^4)).
@@ -1933,6 +1933,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A270993](http://oeis.org/A270993) ([L03 program](A270993.asm)): Values of A076336(n) such that A076336(n) = A076336(n+1) - 14.
 * [A270994](http://oeis.org/A270994) ([L03 program](A270994.asm)): a(n) = 9454129 + 11184810*n.
 * [A271027](http://oeis.org/A271027) ([L03 program](A271027.asm)): a(n) = 3661529 + 11184810*n.
+* [A271060](http://oeis.org/A271060) ([L16 program](A271060.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 261", based on the 5-celled von Neumann neighborhood.
 * [A271114](http://oeis.org/A271114) ([L04 program](A271114.asm)): Expansion of (1+x)*(2+x)/(1-x)^2.
 * [A271209](http://oeis.org/A271209) ([L20 program](A271209.asm)): a(n) = n^5 + n + 1.
 * [A271324](http://oeis.org/A271324) ([L07 program](A271324.asm)): a(n) = n + floor(n/4) + (n mod 4).
@@ -2048,6 +2049,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273791](http://oeis.org/A273791) ([L11 program](A273791.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
 * [A273834](http://oeis.org/A273834) ([L22 program](A273834.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
 * [A273850](http://oeis.org/A273850) ([L18 program](A273850.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 969", based on the 5-celled von Neumann neighborhood.
+* [A273893](http://oeis.org/A273893) ([L09 program](A273893.asm)): Denominator of n/3^n.
 * [A273981](http://oeis.org/A273981) ([L25 program](A273981.asm)): Erroneous version of A005897.
 * [A273982](http://oeis.org/A273982) ([L07 program](A273982.asm)): Number of little cubes visible around an n X n X n cube with a face on a table.
 * [A274039](http://oeis.org/A274039) ([L04 program](A274039.asm)): Expansion of (x^4 + x^10) / (1 - 2*x + x^2).
