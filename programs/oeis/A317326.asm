@@ -3,7 +3,6 @@
 
 mov $7,$0
 add $1,$0
-mov $4,5
 mod $1,2
 add $1,$0
 gcd $3,2
@@ -26,5 +25,5 @@ lpb $0,1
   sub $0,1
 lpe
 mov $8,$7
-mov $9,$8
-add $1,$9
+mov $4,$8
+add $1,$4

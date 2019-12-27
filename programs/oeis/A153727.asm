@@ -3,8 +3,7 @@
 
 mov $3,2
 mul $0,2
-mov $4,$0
-mod $4,3
-pow $3,$4
-mov $0,$2
+mov $2,$0
+mod $2,3
+pow $3,$2
 mov $1,$3

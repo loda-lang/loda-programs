@@ -8,7 +8,6 @@ mod $0,2
 gcd $1,2
 gcd $4,$0
 add $1,$4
-sub $0,3
 add $1,11
 mov $3,$5
 mov $2,$3
