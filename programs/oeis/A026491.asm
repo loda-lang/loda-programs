@@ -5,13 +5,11 @@ mov $5,$0
 gcd $3,$0
 gcd $1,2
 mul $3,6
-mul $0,$3
 mov $2,4
 mul $1,2
 pow $2,$1
 gcd $3,$2
 mod $3,3
-mov $0,0
 mov $1,$3
 mov $6,$5
 mov $4,$6

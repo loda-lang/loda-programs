@@ -417,6 +417,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315187](http://oeis.org/A315187) ([L15 program](A315187.asm)): Coordination sequence Gal.3.14.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315198](http://oeis.org/A315198) ([L22 program](A315198.asm)): Coordination sequence Gal.5.86.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315211](http://oeis.org/A315211) ([L18 program](A315211.asm)): Coordination sequence Gal.3.20.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315247](http://oeis.org/A315247) ([L20 program](A315247.asm)): Coordination sequence Gal.5.87.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315273](http://oeis.org/A315273) ([L23 program](A315273.asm)): Coordination sequence Gal.4.73.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315308](http://oeis.org/A315308) ([L22 program](A315308.asm)): Coordination sequence Gal.5.299.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315309](http://oeis.org/A315309) ([L15 program](A315309.asm)): Coordination sequence Gal.4.133.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -495,7 +496,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317303](http://oeis.org/A317303) ([L10 program](A317303.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
 * [A317304](http://oeis.org/A317304) ([L10 program](A317304.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central valley.
 * [A317311](http://oeis.org/A317311) ([L14 program](A317311.asm)): Multiples of 11 and odd numbers interleaved.
-* [A317312](http://oeis.org/A317312) ([L12 program](A317312.asm)): Multiples of 12 and odd numbers interleaved.
+* [A317312](http://oeis.org/A317312) ([L09 program](A317312.asm)): Multiples of 12 and odd numbers interleaved.
 * [A317313](http://oeis.org/A317313) ([L26 program](A317313.asm)): Multiples of 13 and odd numbers interleaved.
 * [A317314](http://oeis.org/A317314) ([L12 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
 * [A317315](http://oeis.org/A317315) ([L33 program](A317315.asm)): Multiples of 15 and odd numbers interleaved.

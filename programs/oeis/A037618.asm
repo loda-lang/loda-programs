@@ -9,6 +9,5 @@ lpb $2,1
 lpe
 add $1,1
 add $3,6
-add $4,1
 div $3,3
 mul $1,$3
