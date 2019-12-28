@@ -483,6 +483,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316671](http://oeis.org/A316671) ([L10 program](A316671.asm)): Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
 * [A316725](http://oeis.org/A316725) ([L22 program](A316725.asm)): Generalized 27-gonal (or icosiheptagonal) numbers: m*(25*m - 23)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A316742](http://oeis.org/A316742) ([L11 program](A316742.asm)): Stepping through the Mersenne sequence (A000225) one step back, two steps forward.
+* [A316824](http://oeis.org/A316824) ([L12 program](A316824.asm)): A second example of a word that is uniform morphic and recurrent, but neither pure morphic nor primitive morphic.
 * [A316829](http://oeis.org/A316829) ([L08 program](A316829.asm)): Image of 0 under repeated application of the morphism 0 -> 0,1,0, 1 -> 1,1,1.
 * [A316843](http://oeis.org/A316843) ([L15 program](A316843.asm)): Column 1 of table A316841.
 * [A316966](http://oeis.org/A316966) ([L08 program](A316966.asm)): Same as A316671, except numbering of the squares starts at 0 rather than 1.

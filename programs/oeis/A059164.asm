@@ -7,7 +7,6 @@ pow $3,2
 mul $3,$0
 sub $3,1
 add $1,$0
-div $0,2
 add $1,1
 pow $1,2
 mul $3,2
