@@ -7,7 +7,6 @@ add $1,$3
 div $3,$3
 mul $1,$1
 lpb $0,1
-  add $0,$3
   gcd $1,2
   div $0,$1
 lpe

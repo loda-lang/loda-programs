@@ -4,7 +4,6 @@
 add $3,$0
 gcd $2,$0
 gcd $0,5
-mul $2,2
 gcd $1,$3
 lpb $0,1
   pow $0,$2

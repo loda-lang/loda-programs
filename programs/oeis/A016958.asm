@@ -4,7 +4,6 @@
 add $2,6
 mul $0,6
 add $2,$0
-add $3,6
 sub $2,2
 mul $2,$2
 add $2,3

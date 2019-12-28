@@ -37,7 +37,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301622](http://oeis.org/A301622) ([L16 program](A301622.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 4.
 * [A301623](http://oeis.org/A301623) ([L30 program](A301623.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 5.
 * [A301628](http://oeis.org/A301628) ([L17 program](A301628.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 7.
-* [A301647](http://oeis.org/A301647) ([L14 program](A301647.asm)): a(n) = n^3 - (n mod 2).
+* [A301647](http://oeis.org/A301647) ([L13 program](A301647.asm)): a(n) = n^3 - (n mod 2).
 * [A301654](http://oeis.org/A301654) ([L07 program](A301654.asm)): Circumference of the n-triangular honeycomb acute knight graph.
 * [A301657](http://oeis.org/A301657) ([L16 program](A301657.asm)): Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
 * [A301673](http://oeis.org/A301673) ([L13 program](A301673.asm)): Partial sums of A301672.
@@ -499,7 +499,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317311](http://oeis.org/A317311) ([L14 program](A317311.asm)): Multiples of 11 and odd numbers interleaved.
 * [A317312](http://oeis.org/A317312) ([L06 program](A317312.asm)): Multiples of 12 and odd numbers interleaved.
 * [A317313](http://oeis.org/A317313) ([L26 program](A317313.asm)): Multiples of 13 and odd numbers interleaved.
-* [A317314](http://oeis.org/A317314) ([L12 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
+* [A317314](http://oeis.org/A317314) ([L07 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
 * [A317315](http://oeis.org/A317315) ([L33 program](A317315.asm)): Multiples of 15 and odd numbers interleaved.
 * [A317316](http://oeis.org/A317316) ([L14 program](A317316.asm)): Multiples of 16 and odd numbers interleaved.
 * [A317317](http://oeis.org/A317317) ([L20 program](A317317.asm)): Multiples of 17 and odd numbers interleaved.
@@ -654,6 +654,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L03 program](A328943.asm)): a(n) = 2 + (n mod 4).
 * [A328979](http://oeis.org/A328979) ([L06 program](A328979.asm)): Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
+* [A328981](http://oeis.org/A328981) ([L11 program](A328981.asm)): Indicator function of numbers whose binary representation ends in an even positive number of 0's.
 * [A328990](http://oeis.org/A328990) ([L13 program](A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A329202](http://oeis.org/A329202) ([L08 program](A329202.asm)): a(n) = floor(2*log_2(n)) = floor(log_2(n^2)).
 * [A329279](http://oeis.org/A329279) ([L19 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.

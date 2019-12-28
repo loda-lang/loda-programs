@@ -6,9 +6,6 @@ gcd $1,2
 gcd $1,$0
 pow $0,$1
 add $1,$1
-lpb $0,1
-  mul $0,4
-lpe
 mod $1,3
 add $1,$0
 sub $1,1

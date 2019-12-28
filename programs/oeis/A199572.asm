@@ -3,10 +3,8 @@
 
 add $4,$0
 mod $0,2
-mov $3,1
 gcd $2,2
 pow $2,$4
-sub $3,$2
 lpb $0,1
   mov $2,$3
   sub $0,5

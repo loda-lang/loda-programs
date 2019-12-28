@@ -3,7 +3,6 @@
 
 lpb $0,1
   add $2,3
-  pow $2,5
   sub $0,1
   mod $0,2
   gcd $3,$0

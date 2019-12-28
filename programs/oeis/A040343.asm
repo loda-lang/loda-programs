@@ -7,7 +7,6 @@ pow $4,$2
 add $0,$4
 div $5,2
 gcd $3,2
-mod $2,2
 gcd $0,$3
 mov $2,$0
 add $5,$2
