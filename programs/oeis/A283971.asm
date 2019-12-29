@@ -5,7 +5,6 @@ add $2,$0
 gcd $0,4
 lpb $0,1
   div $1,$3
-  pow $0,$1
 lpe
 mov $3,$2
 mod $0,3

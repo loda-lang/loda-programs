@@ -491,7 +491,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317107](http://oeis.org/A317107) ([L03 program](A317107.asm)): Numbers missing from A317105.
 * [A317108](http://oeis.org/A317108) ([L03 program](A317108.asm)): Numbers missing from A317106.
 * [A317186](http://oeis.org/A317186) ([L05 program](A317186.asm)): One of many square spiral sequences: a(n) = n^2 + n - floor((n-1)/2).
-* [A317203](http://oeis.org/A317203) ([L49 program](A317203.asm)): Fixed under the morphism 1 -> 1,3,2; 2 -> 1; 3 -> 3.
+* [A317203](http://oeis.org/A317203) ([L49 program](A317203.asm)): Fixed under the morphism 1 -> 132, 2 -> 1, 3 -> 3.
 * [A317297](http://oeis.org/A317297) ([L08 program](A317297.asm)): a(n) = (n - 1)*(4*n^2 - 8*n + 5).
 * [A317298](http://oeis.org/A317298) ([L13 program](A317298.asm)): a(n) = (1/2)*(1 + (-1)^n + 2*n + 4*n^2).
 * [A317303](http://oeis.org/A317303) ([L10 program](A317303.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
@@ -501,7 +501,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317313](http://oeis.org/A317313) ([L26 program](A317313.asm)): Multiples of 13 and odd numbers interleaved.
 * [A317314](http://oeis.org/A317314) ([L07 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
 * [A317315](http://oeis.org/A317315) ([L33 program](A317315.asm)): Multiples of 15 and odd numbers interleaved.
-* [A317316](http://oeis.org/A317316) ([L14 program](A317316.asm)): Multiples of 16 and odd numbers interleaved.
+* [A317316](http://oeis.org/A317316) ([L05 program](A317316.asm)): Multiples of 16 and odd numbers interleaved.
 * [A317317](http://oeis.org/A317317) ([L20 program](A317317.asm)): Multiples of 17 and odd numbers interleaved.
 * [A317318](http://oeis.org/A317318) ([L13 program](A317318.asm)): Multiples of 18 and odd numbers interleaved.
 * [A317320](http://oeis.org/A317320) ([L21 program](A317320.asm)): Multiples of 20 and odd numbers interleaved.

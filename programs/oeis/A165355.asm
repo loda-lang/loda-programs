@@ -4,7 +4,6 @@
 mov $2,$0
 mul $2,3
 gcd $1,$2
-mod $2,2
 div $1,2
 gcd $2,2
 mul $2,$1

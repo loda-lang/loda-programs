@@ -5,12 +5,10 @@ add $3,$0
 gcd $1,2
 pow $1,$0
 mul $1,2
-add $2,1
 lpb $0,1
   sub $3,1
   mod $3,2
   gcd $1,2
-  sub $2,3
   add $2,$3
   mul $0,$2
 lpe

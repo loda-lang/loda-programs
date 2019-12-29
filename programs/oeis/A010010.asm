@@ -5,9 +5,7 @@ add $2,1
 mov $1,$0
 lpb $0,1
   mul $0,$3
-  gcd $3,2
   mul $1,2
-  sub $3,1
   pow $1,2
   add $2,4
   mul $1,$2
