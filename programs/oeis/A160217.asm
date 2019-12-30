@@ -3,15 +3,10 @@
 
 mov $6,$0
 add $0,1
-mov $1,$0
-div $1,$1
 gcd $5,6
 mov $2,$5
 mov $5,$0
 mov $1,2
-mov $0,$1
-add $1,$2
-div $0,$2
 pow $1,$2
 gcd $1,$5
 mod $1,3

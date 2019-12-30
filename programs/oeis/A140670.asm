@@ -7,7 +7,4 @@ pow $1,4
 add $0,1
 gcd $1,$0
 sub $1,$2
-lpb $0,1
-  add $2,$0
-lpe
 add $1,1
