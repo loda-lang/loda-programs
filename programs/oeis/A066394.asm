@@ -10,13 +10,12 @@ lpb $0,1
   gcd $5,2
   mod $0,$5
   mod $5,$0
-  pow $3,$2
   mod $1,$3
   add $0,$5
 lpe
 sub $1,3
 add $1,1
-mov $7,$6
-mul $7,$6
-mov $4,$7
+mov $2,$6
+mul $2,$6
+mov $4,$2
 add $1,$4

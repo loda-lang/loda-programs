@@ -8,13 +8,10 @@ gcd $1,$0
 mov $3,3
 mul $1,$3
 mul $3,$1
-lpb $0,1
-  div $0,$2
-lpe
 mul $1,$3
 sub $1,27
 mov $5,$4
 mul $5,$4
-mov $6,$5
-mul $6,36
-add $1,$6
+mov $2,$5
+mul $2,36
+add $1,$2
