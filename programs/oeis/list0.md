@@ -1448,6 +1448,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017619](http://oeis.org/A017619) ([L11 program](A017619.asm)): a(n) = (12*n + 8)^3.
 * [A017629](http://oeis.org/A017629) ([L03 program](A017629.asm)): a(n) = 12*n + 9.
 * [A017630](http://oeis.org/A017630) ([L14 program](A017630.asm)): (12n+9)^2.
+* [A017631](http://oeis.org/A017631) ([L18 program](A017631.asm)): a(n) = (12*n+9)^3.
 * [A017641](http://oeis.org/A017641) ([L03 program](A017641.asm)): a(n) = 12n + 10.
 * [A017642](http://oeis.org/A017642) ([L06 program](A017642.asm)): (12n+10)^2.
 * [A017643](http://oeis.org/A017643) ([L14 program](A017643.asm)): (12n+10)^3.
@@ -4938,6 +4939,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A074581](http://oeis.org/A074581) ([L10 program](A074581.asm)): a(n)=T(3n+1), where T(n) are tribonacci numbers A000073.
 * [A074603](http://oeis.org/A074603) ([L12 program](A074603.asm)): a(n) = 2^n + 8^n.
 * [A074606](http://oeis.org/A074606) ([L06 program](A074606.asm)): a(n) = 3^n + 5^n.
+* [A074607](http://oeis.org/A074607) ([L07 program](A074607.asm)): a(n) = 3^n + 6^n.
 * [A074701](http://oeis.org/A074701) ([L20 program](A074701.asm)): Numbers n such that n = sum( d dividing phi(n), mu(phi(d))*phi(n)/d ).
 * [A074724](http://oeis.org/A074724) ([L06 program](A074724.asm)): Largest power of 3 dividing F(4n) where F(k) is the k-th Fibonacci number.
 * [A074742](http://oeis.org/A074742) ([L08 program](A074742.asm)): a(n) = (n^3 + 6n^2 - n + 12)/6.
@@ -5765,7 +5767,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092364](http://oeis.org/A092364) ([L15 program](A092364.asm)): a(n) = n^2*binomial(n,2).
 * [A092365](http://oeis.org/A092365) ([L19 program](A092365.asm)): Coefficient of X^2 in expansion of (1 + n*X + n*X^2)^n.
 * [A092387](http://oeis.org/A092387) ([L08 program](A092387.asm)): a(n) = Fibonacci(2*n+1) + Fibonacci(2*n-1) + 2.
-* [A092391](http://oeis.org/A092391) ([L16 program](A092391.asm)): a(n) = n + wt(n), where wt(n) = A000120(n) = binary weight of n.
+* [A092391](http://oeis.org/A092391) ([L13 program](A092391.asm)): a(n) = n + wt(n), where wt(n) = A000120(n) = binary weight of n.
 * [A092431](http://oeis.org/A092431) ([L12 program](A092431.asm)): Numbers having in binary representation a leading 1 followed by n zeros and n-1 ones.
 * [A092436](http://oeis.org/A092436) ([L09 program](A092436.asm)): a(n) = 1/2 + (-1)^n*(1/2 - A010060(floor(n/2))).
 * [A092440](http://oeis.org/A092440) ([L17 program](A092440.asm)): a(n) = 2^(2n+1) - 2^(n+1) + 1.

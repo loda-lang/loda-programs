@@ -898,7 +898,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122650](http://oeis.org/A122650) ([L20 program](A122650.asm)): Fibonacci numbers starting at F(23).
 * [A122652](http://oeis.org/A122652) ([L14 program](A122652.asm)): a(0) = 0, a(1) = 4; for n > 1, a(n) = 10*a(n-1) - a(n-2).
 * [A122653](http://oeis.org/A122653) ([L09 program](A122653.asm)): a(n) = 10*a(n-1) - a(n-2) with a(0)=0, a(1)=6.
-* [A122656](http://oeis.org/A122656) ([L09 program](A122656.asm)): n*floor(n/2)^2.
+* [A122656](http://oeis.org/A122656) ([L04 program](A122656.asm)): n*floor(n/2)^2.
 * [A122657](http://oeis.org/A122657) ([L10 program](A122657.asm)): a(n) = if n mod 2 = 1 then (n^2-1)*n^3/4 else n^5/4.
 * [A122658](http://oeis.org/A122658) ([L08 program](A122658.asm)): a(n) = if n mod 2 = 1 then n^3*(n-1)^2/2 else n^5/2.
 * [A122678](http://oeis.org/A122678) ([L07 program](A122678.asm)): Related to number of n-circum-C_5 H_5 systems.
@@ -3107,7 +3107,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165806](http://oeis.org/A165806) ([L14 program](A165806.asm)): a(n) = 15n^2 + 3n + 1.
 * [A165942](http://oeis.org/A165942) ([L10 program](A165942.asm)): For a nonnegative integer n, define dsf(n) = n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the digits of an integer n. Then a(n+1) = dsf(a(n)).
 * [A165983](http://oeis.org/A165983) ([L23 program](A165983.asm)): Period 16: repeat 1,1,1,2,1,1,1,2,1,1,1,4,1,1,1,4.
-* [A165988](http://oeis.org/A165988) ([L07 program](A165988.asm)): First trisection of A022998.
+* [A165988](http://oeis.org/A165988) ([L04 program](A165988.asm)): First trisection of A022998.
 * [A165998](http://oeis.org/A165998) ([L12 program](A165998.asm)): Denominators of Taylor series expansion of 1/(3*x)*log((1+x)/(1-x)^2)
 * [A166021](http://oeis.org/A166021) ([L08 program](A166021.asm)): a(n) = 2*A000124(A003056(n-1)) if A002262(n-1)=0, otherwise a(n-1)+1.
 * [A166024](http://oeis.org/A166024) ([L09 program](A166024.asm)): Define dsf(n) = A045503(n) = n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the decimal digits of n. dsf(421845123) = 16780890 and dsf(16780890) = 421845123, so these 2 numbers make a loop for the function dsf.
@@ -3820,7 +3820,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174814](http://oeis.org/A174814) ([L07 program](A174814.asm)): a(n) = n*(n+1)*(5*n+1)/3.
 * [A174836](http://oeis.org/A174836) ([L16 program](A174836.asm)): a(n) = 1 + ((6*n-1)*2^n + (-1)^n)/3.
 * [A174887](http://oeis.org/A174887) ([L18 program](A174887.asm)): Numbers n such that sum of cubes of their digits > n.
-* [A174902](http://oeis.org/A174902) ([L07 program](A174902.asm)): Denominator of 1 - 1/n^2, using 0 at the pole where n=0.
+* [A174902](http://oeis.org/A174902) ([L04 program](A174902.asm)): Denominator of 1 - 1/n^2, using 0 at the pole where n=0.
 * [A174927](http://oeis.org/A174927) ([L04 program](A174927.asm)): Periodic sequence: Repeat 1, 64.
 * [A174928](http://oeis.org/A174928) ([L24 program](A174928.asm)): Partial sums of A174927.
 * [A174984](http://oeis.org/A174984) ([L17 program](A174984.asm)): Start with n, iterate the map k -> A167507(k) until we reach 3; a(n) = number of steps required.
@@ -3930,6 +3930,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A177940](http://oeis.org/A177940) ([L48 program](A177940.asm)): Decimal expansion of 190/89.
 * [A177949](http://oeis.org/A177949) ([L02 program](A177949.asm)): First string of 43 consecutive composite numbers.
 * [A177964](http://oeis.org/A177964) ([L10 program](A177964.asm)): Indices m for which A177961(m) = 4.
+* [A177990](http://oeis.org/A177990) ([L09 program](A177990.asm)): Triangle read by rows, variant of A070909, a cellular automaton
 * [A178027](http://oeis.org/A178027) ([L02 program](A178027.asm)): Multiples of 5291.
 * [A178055](http://oeis.org/A178055) ([L52 program](A178055.asm)): Numbers representing the number of days in a month in the Gregorian calendar (modulus 7).
 * [A178073](http://oeis.org/A178073) ([L25 program](A178073.asm)): Partial sums of sequence A177342.
@@ -4261,7 +4262,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185017](http://oeis.org/A185017) ([L06 program](A185017.asm)): Characteristic function of 7.
 * [A185019](http://oeis.org/A185019) ([L07 program](A185019.asm)): a(n) = n*(14*n-3).
 * [A185039](http://oeis.org/A185039) ([L14 program](A185039.asm)): Numbers of the form 9*m^2 + 4*m, m an integer.
-* [A185049](http://oeis.org/A185049) ([L11 program](A185049.asm)): Last term in the continued fraction for floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n).
+* [A185049](http://oeis.org/A185049) ([L10 program](A185049.asm)): Last term in the continued fraction for floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n).
 * [A185055](http://oeis.org/A185055) ([L12 program](A185055.asm)): Number of representations of 5^(2n) as a sum a^2 + b^2 + c^2 with 0 < a <= b <= c.
 * [A185057](http://oeis.org/A185057) ([L08 program](A185057.asm)): a(n) = n^n! (mod 5).
 * [A185058](http://oeis.org/A185058) ([L19 program](A185058.asm)): a(n) = n^n! mod 7.
@@ -4423,6 +4424,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188086](http://oeis.org/A188086) ([L19 program](A188086.asm)): [nr+kr]-[nr]-[kr], where r=sqrt(3), k=3, [ ]=floor.
 * [A188093](http://oeis.org/A188093) ([L30 program](A188093.asm)): [nr+kr]-[nr]-[kr], where r=sqrt(3), k=6, [ ]=floor.
 * [A188129](http://oeis.org/A188129) ([L12 program](A188129.asm)): a(n) = (2^n+3)^2-8.
+* [A188134](http://oeis.org/A188134) ([L10 program](A188134.asm)): a(4*n) = n, a(1+2*n) = 4+8*n, a(2+4*n) = 2+4*n.
 * [A188135](http://oeis.org/A188135) ([L07 program](A188135.asm)): a(n) = 8*n^2 + 2*n + 1.
 * [A188148](http://oeis.org/A188148) ([L07 program](A188148.asm)): Number of 3-step self-avoiding walks on an n X n square summed over all starting positions.
 * [A188161](http://oeis.org/A188161) ([L07 program](A188161.asm)): 2*4^n + 3.
