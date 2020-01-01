@@ -5,8 +5,4 @@ gcd $2,$0
 add $1,6
 pow $1,$2
 div $1,5
-add $1,2
-lpb $0,1
-  div $0,$3
-lpe
-sub $1,1
+add $1,1

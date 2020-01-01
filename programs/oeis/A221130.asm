@@ -6,7 +6,4 @@ add $1,$0
 pow $2,$0
 mul $2,2
 add $1,$2
-pow $2,4
-gcd $3,$0
-mod $0,$3
 add $1,1

@@ -3,10 +3,6 @@
 
 add $1,$0
 mul $1,5
-add $3,5
-gcd $0,$3
+add $2,5
+gcd $0,$2
 div $1,$0
-lpb $0,1
-  add $2,$3
-  mul $0,$2
-lpe

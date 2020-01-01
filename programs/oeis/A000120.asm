@@ -6,9 +6,7 @@ mov $2,$0
 lpb $2,1
   lpb $1,1
     div $0,2
-    gcd $2,4
     sub $1,$0
   lpe
-  gcd $3,$1
   sub $2,2
 lpe
