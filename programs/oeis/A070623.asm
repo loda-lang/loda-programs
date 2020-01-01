@@ -3,14 +3,10 @@
 
 pow $0,5
 add $2,3
-gcd $3,$0
-mov $4,5
-div $4,$4
-mul $4,$2
-add $4,5
-lpb $0,1
-  div $0,$1
-lpe
+mov $3,5
+div $3,$3
+mul $3,$2
+add $3,5
 mov $1,$0
-mul $4,5
-mod $1,$4
+mul $3,5
+mod $1,$3

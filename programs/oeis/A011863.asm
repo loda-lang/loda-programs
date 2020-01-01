@@ -4,9 +4,6 @@
 pow $0,4
 gcd $2,2
 div $0,2
-lpb $0,1
-  mul $0,$2
-lpe
 gcd $1,$0
 div $1,$2
 div $1,4

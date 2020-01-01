@@ -7,10 +7,6 @@ add $4,$0
 pow $2,$4
 div $4,3
 sub $1,1
-lpb $0,1
-  pow $0,5
-  div $2,$1
-lpe
 mod $1,2
 gcd $4,$2
 add $1,$2
