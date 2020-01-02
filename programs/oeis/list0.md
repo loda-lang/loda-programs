@@ -737,7 +737,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008620](http://oeis.org/A008620) ([L03 program](A008620.asm)): Positive integers repeated three times.
 * [A008621](http://oeis.org/A008621) ([L03 program](A008621.asm)): Expansion of 1/((1-x)*(1-x^4)).
 * [A008624](http://oeis.org/A008624) ([L09 program](A008624.asm)): Expansion of (1+x^3)/((1-x^2)*(1-x^4)) = (1-x+x^2)/((1+x)*(1-x)^2*(1+x^2)).
-* [A008642](http://oeis.org/A008642) ([L14 program](A008642.asm)): Quarter-squares repeated.
+* [A008642](http://oeis.org/A008642) ([L05 program](A008642.asm)): Quarter-squares repeated.
 * [A008648](http://oeis.org/A008648) ([L20 program](A008648.asm)): Molien series of 3 X 3 upper triangular matrices over GF( 5 ).
 * [A008649](http://oeis.org/A008649) ([L19 program](A008649.asm)): Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
 * [A008652](http://oeis.org/A008652) ([L18 program](A008652.asm)): Molien series for group of 3 X 3 upper triangular matrices over GF( 4 ).
@@ -1220,7 +1220,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016838](http://oeis.org/A016838) ([L04 program](A016838.asm)): a(n) = (4n + 3)^2.
 * [A016839](http://oeis.org/A016839) ([L04 program](A016839.asm)): a(n) = (4*n+3)^3.
 * [A016840](http://oeis.org/A016840) ([L04 program](A016840.asm)): (4n+3)^4.
-* [A016841](http://oeis.org/A016841) ([L06 program](A016841.asm)): (4n+3)^5.
+* [A016841](http://oeis.org/A016841) ([L04 program](A016841.asm)): (4n+3)^5.
 * [A016850](http://oeis.org/A016850) ([L03 program](A016850.asm)): a(n) = (5n)^2.
 * [A016851](http://oeis.org/A016851) ([L03 program](A016851.asm)): a(n) = (5*n)^3.
 * [A016852](http://oeis.org/A016852) ([L03 program](A016852.asm)): (5n)^4.
@@ -1952,7 +1952,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024025](http://oeis.org/A024025) ([L12 program](A024025.asm)): a(n) = 3^n-n^2.
 * [A024026](http://oeis.org/A024026) ([L05 program](A024026.asm)): a(n) = 3^n - n^3.
 * [A024036](http://oeis.org/A024036) ([L03 program](A024036.asm)): a(n) = 4^n - 1.
-* [A024037](http://oeis.org/A024037) ([L06 program](A024037.asm)): a(n) = 4^n - n.
+* [A024037](http://oeis.org/A024037) ([L03 program](A024037.asm)): a(n) = 4^n - n.
 * [A024038](http://oeis.org/A024038) ([L09 program](A024038.asm)): a(n) = 4^n - n^2.
 * [A024039](http://oeis.org/A024039) ([L07 program](A024039.asm)): a(n) = 4^n - n^3.
 * [A024049](http://oeis.org/A024049) ([L03 program](A024049.asm)): a(n) = 5^n - 1.
@@ -2701,7 +2701,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040056](http://oeis.org/A040056) ([L04 program](A040056.asm)): Continued fraction for sqrt(65).
 * [A040057](http://oeis.org/A040057) ([L08 program](A040057.asm)): Continued fraction for sqrt(66).
 * [A040059](http://oeis.org/A040059) ([L10 program](A040059.asm)): Continued fraction for sqrt(68).
-* [A040063](http://oeis.org/A040063) ([L19 program](A040063.asm)): Continued fraction for sqrt(72).
+* [A040063](http://oeis.org/A040063) ([L11 program](A040063.asm)): Continued fraction for sqrt(72).
 * [A040071](http://oeis.org/A040071) ([L22 program](A040071.asm)): Continued fraction for sqrt(80).
 * [A040072](http://oeis.org/A040072) ([L04 program](A040072.asm)): Continued fraction for sqrt(82).
 * [A040073](http://oeis.org/A040073) ([L09 program](A040073.asm)): Continued fraction for sqrt(83).
@@ -4635,7 +4635,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070432](http://oeis.org/A070432) ([L04 program](A070432.asm)): Period 4: repeat [0, 1, 4, 1]; a(n) = n^2 mod 8.
 * [A070433](http://oeis.org/A070433) ([L07 program](A070433.asm)): a(n) = n^2 mod 9.
 * [A070434](http://oeis.org/A070434) ([L15 program](A070434.asm)): a(n) = n^2 mod 11.
-* [A070435](http://oeis.org/A070435) ([L05 program](A070435.asm)): a(n) = n^2 mod 12, or alternately n^4 mod 12.
+* [A070435](http://oeis.org/A070435) ([L04 program](A070435.asm)): a(n) = n^2 mod 12, or alternately n^4 mod 12.
 * [A070436](http://oeis.org/A070436) ([L19 program](A070436.asm)): a(n) = n^2 mod 13.
 * [A070437](http://oeis.org/A070437) ([L20 program](A070437.asm)): a(n) = n^2 mod 14.
 * [A070438](http://oeis.org/A070438) ([L10 program](A070438.asm)): a(n) = n^2 mod 15.
@@ -4702,7 +4702,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070513](http://oeis.org/A070513) ([L12 program](A070513.asm)): a(n) = n^4 mod 9.
 * [A070514](http://oeis.org/A070514) ([L16 program](A070514.asm)): Final digit of n^4: n^4 mod 10.
 * [A070515](http://oeis.org/A070515) ([L17 program](A070515.asm)): a(n) = n^4 mod 11.
-* [A070516](http://oeis.org/A070516) ([L05 program](A070516.asm)): Duplicate of A070435.
+* [A070516](http://oeis.org/A070516) ([L04 program](A070516.asm)): Duplicate of A070435.
 * [A070517](http://oeis.org/A070517) ([L19 program](A070517.asm)): a(n) = n^4 mod 13.
 * [A070532](http://oeis.org/A070532) ([L20 program](A070532.asm)): a(n) = n^4 mod 14.
 * [A070533](http://oeis.org/A070533) ([L21 program](A070533.asm)): n^4 mod 15.
@@ -5631,7 +5631,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088305](http://oeis.org/A088305) ([L07 program](A088305.asm)): a(0) = 1, a(n) = Fibonacci(2*n). It has the property: a(n) = 1*a(n-1) + 2*a(n-2) + 3*a(n-3) + 4*a(n-4) + ...
 * [A088333](http://oeis.org/A088333) ([L12 program](A088333.asm)): A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 3 places clockwise from i. Repeat, counting 3 places from the next undeleted integer, until only one integer remains.
 * [A088381](http://oeis.org/A088381) ([L19 program](A088381.asm)): Numbers greater than the cube of their smallest prime-factor.
-* [A088439](http://oeis.org/A088439) ([L06 program](A088439.asm)): a(3n) = 3n, otherwise a(n) = 1.
+* [A088439](http://oeis.org/A088439) ([L04 program](A088439.asm)): a(3n) = 3n, otherwise a(n) = 1.
 * [A088440](http://oeis.org/A088440) ([L05 program](A088440.asm)): a(4n) = 4n, otherwise a(n) = 1.
 * [A088475](http://oeis.org/A088475) ([L02 program](A088475.asm)): Numbers n such that the lunar sum of the distinct lunar prime divisors of n is >= n.
 * [A088476](http://oeis.org/A088476) ([L07 program](A088476.asm)): Numbers n such that the lunar sum of the distinct lunar prime divisors of n is > n.
