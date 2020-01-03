@@ -3,13 +3,10 @@
 
 mov $5,$0
 add $4,$0
-add $1,2
 div $0,$0
 pow $4,2
 add $0,$4
 mov $3,$0
-pow $0,4
-mod $1,2
 lpb $0,1
   div $2,$3
   add $3,$3
