@@ -3,7 +3,5 @@
 
 gcd $1,4
 pow $1,$0
-gcd $0,2
-sub $0,4
 mul $1,2
 add $1,1

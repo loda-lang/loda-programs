@@ -6,7 +6,6 @@ add $2,1
 lpb $0,1
   add $1,$2
   gcd $3,$1
-  sub $1,$1
   div $0,$2
   gcd $0,$3
 lpe

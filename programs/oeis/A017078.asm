@@ -4,8 +4,5 @@
 mul $0,8
 add $0,1
 pow $0,2
-lpb $0,1
-  mod $0,$2
-lpe
 mov $2,$0
 gcd $1,$2
