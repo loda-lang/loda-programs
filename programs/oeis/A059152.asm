@@ -8,7 +8,4 @@ mov $1,4
 mul $1,2
 pow $1,4
 gcd $1,$2
-lpb $0,1
-  div $0,$3
-lpe
 mul $1,4

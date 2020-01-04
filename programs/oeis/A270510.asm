@@ -3,10 +3,9 @@
 
 mov $4,$0
 add $1,$0
-add $1,6
 div $1,2
 mul $1,6
-sub $1,15
+add $1,3
 mov $3,$4
 mul $3,$4
 mov $2,$3
