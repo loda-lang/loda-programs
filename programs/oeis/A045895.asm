@@ -7,11 +7,8 @@ gcd $0,2
 gcd $1,$4
 add $1,1
 pow $1,$0
-lpb $0,1
-  div $4,$2
-lpe
 sub $1,1
-mov $6,$5
-mul $6,$5
-mov $3,$6
+mov $2,$5
+mul $2,$5
+mov $3,$2
 add $1,$3

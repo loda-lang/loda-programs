@@ -3,9 +3,7 @@
 
 mov $3,$0
 gcd $2,$3
-sub $0,$0
 mul $3,4
-mov $0,$2
 mod $0,2
 add $3,$0
 mov $1,$3

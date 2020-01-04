@@ -3,11 +3,10 @@
 
 add $2,$0
 lpb $0,1
-  gcd $3,$2
-  pow $1,$4
-  mov $4,$1
+  pow $1,$3
+  mov $3,$1
   mod $2,4
-  mod $0,$4
+  mod $0,$3
   pow $2,3
   mod $2,5
 lpe
