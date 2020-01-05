@@ -6,9 +6,6 @@ pow $1,$0
 gcd $3,2
 add $2,$0
 mul $2,2
-lpb $0,1
-  mod $1,$4
-lpe
 gcd $1,$3
 gcd $2,4
 add $1,$2

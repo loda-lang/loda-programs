@@ -785,7 +785,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118175](http://oeis.org/A118175) ([L11 program](A118175.asm)): Binary representation of n-th iteration of the Rule 220 elementary cellular automaton starting with a single black cell.
 * [A118239](http://oeis.org/A118239) ([L08 program](A118239.asm)): Engel expansion of cosh(1).
 * [A118277](http://oeis.org/A118277) ([L12 program](A118277.asm)): Generalized 9-gonal (or enneagonal) numbers: m*(7*m - 5)/2 with m = 0, 1, -1, 2, -2, 3, -3, ...
-* [A118286](http://oeis.org/A118286) ([L14 program](A118286.asm)): Numbers n such that n == 0 (mod 4) or n == 2 (mod 12).
+* [A118286](http://oeis.org/A118286) ([L11 program](A118286.asm)): Numbers n such that n == 0 (mod 4) or n == 2 (mod 12).
 * [A118295](http://oeis.org/A118295) ([L12 program](A118295.asm)): Start with 20 and repeatedly reverse the digits and add 1 to get the next term.
 * [A118312](http://oeis.org/A118312) ([L25 program](A118312.asm)): Number of squares on infinite chessboard that a knight can reach in n moves from a fixed square.
 * [A118403](http://oeis.org/A118403) ([L07 program](A118403.asm)): Unsigned row sums of triangle A118401; a(n) = A118402(n^2-n+2), where A118402 is the row sums of triangle A118400.
@@ -970,7 +970,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A124302](http://oeis.org/A124302) ([L08 program](A124302.asm)): Number of set partitions with at most 3 blocks; number of Dyck paths of height at most 4; dimension of space of symmetric polynomials in 3 noncommuting variables.
 * [A124349](http://oeis.org/A124349) ([L09 program](A124349.asm)): Numbers of directed Hamiltonian cycles on the n-prism graph.
 * [A124350](http://oeis.org/A124350) ([L12 program](A124350.asm)): a(n) = 4*n*(floor(n^2/2)+1). For n>=3, this is the number of directed Hamiltonian paths on the n-prism graph.
-* [A124351](http://oeis.org/A124351) ([L13 program](A124351.asm)): Order of the automorphism group of the n-prism graph.
+* [A124351](http://oeis.org/A124351) ([L12 program](A124351.asm)): Order of the automorphism group of the n-prism graph.
 * [A124354](http://oeis.org/A124354) ([L09 program](A124354.asm)): Orders of the automorphisms groups of the n-antiprism graph.
 * [A124355](http://oeis.org/A124355) ([L12 program](A124355.asm)): Number of (directed) Hamiltonian cycles on the complete graph K_n.
 * [A124356](http://oeis.org/A124356) ([L09 program](A124356.asm)): Number of (directed) Hamiltonian cycles on the Moebius ladder graph M_n (for n>=4).
@@ -1923,7 +1923,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A143182](http://oeis.org/A143182) ([L19 program](A143182.asm)): Triangle T(n,m) = 1 + abs(n-2*m), read by rows, 0<=m<=n.
 * [A143234](http://oeis.org/A143234) ([L39 program](A143234.asm)): a(n) = (2^(-n)*A004003(n)) mod 32.
 * [A143371](http://oeis.org/A143371) ([L08 program](A143371.asm)): Duplicate of A131423.
-* [A143432](http://oeis.org/A143432) ([L13 program](A143432.asm)): Ultimately periodic length 4 sequence [ 2, 2, 0, 0, ...] with a(0) = a(1) = 1.
+* [A143432](http://oeis.org/A143432) ([L09 program](A143432.asm)): Ultimately periodic length 4 sequence [ 2, 2, 0, 0, ...] with a(0) = a(1) = 1.
 * [A143484](http://oeis.org/A143484) ([L31 program](A143484.asm)): "Fourth down, Extream [sic] between the two farthest Bells from it" in bell-ringing is a sequence of permutations p_1=(1,2,3,4), p_2=(1,2,4,3), .. which runs through all permutations of {1,2,3,4} with period 24; sequence gives number in position 1 of n-th permutation.
 * [A143485](http://oeis.org/A143485) ([L31 program](A143485.asm)): "Fourth down, Extream [sic] between the two farthest Bells from it" in bell-ringing is a sequence of permutations p_1=(1,2,3,4), p_2=(1,2,4,3), .. which runs through all permutations of {1,2,3,4} with period 24; sequence gives number in position 2 of n-th permutation.
 * [A143486](http://oeis.org/A143486) ([L31 program](A143486.asm)): "Fourth down, Extream [sic] between the two farthest Bells from it" in bell-ringing is a sequence of permutations p_1=(1,2,3,4), p_2=(1,2,4,3), .. which runs through all permutations of {1,2,3,4} with period 24; sequence gives number in position 3 of n-th permutation.
@@ -2137,7 +2137,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A151973](http://oeis.org/A151973) ([L17 program](A151973.asm)): Numbers n such that n^2 - n is divisible by 24.
 * [A151976](http://oeis.org/A151976) ([L21 program](A151976.asm)): Minimal recursive sequence beginning with 5 similar to N with respect to property of integer to be or not to be in A079523.
 * [A151977](http://oeis.org/A151977) ([L07 program](A151977.asm)): Numbers that are congruent to {0, 1} mod 16.
-* [A151978](http://oeis.org/A151978) ([L09 program](A151978.asm)): Numbers that are congruent to {0, 1} mod 17.
+* [A151978](http://oeis.org/A151978) ([L08 program](A151978.asm)): Numbers that are congruent to {0, 1} mod 17.
 * [A151979](http://oeis.org/A151979) ([L11 program](A151979.asm)): Numbers congruent to {0, 1} mod 19.
 * [A151983](http://oeis.org/A151983) ([L07 program](A151983.asm)): Numbers congruent to {0, 1} mod 32.
 * [A151984](http://oeis.org/A151984) ([L29 program](A151984.asm)): Numbers that are congruent to {0, 1} mod 64.
@@ -2958,7 +2958,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162940](http://oeis.org/A162940) ([L04 program](A162940.asm)): Binomial[n + 1, 2]*6^2 .
 * [A162942](http://oeis.org/A162942) ([L10 program](A162942.asm)): Binomial[n + 1, 2]*7^2 .
 * [A162959](http://oeis.org/A162959) ([L07 program](A162959.asm)): The pairs (x,y) such that (x^2 + y^2)/(x*y + 1) is a perfect square, i.e., 4.
-* [A162962](http://oeis.org/A162962) ([L20 program](A162962.asm)): a(n) = 5*a(n-2) for n > 2; a(1) = 1, a(2) = 5.
+* [A162962](http://oeis.org/A162962) ([L08 program](A162962.asm)): a(n) = 5*a(n-2) for n > 2; a(1) = 1, a(2) = 5.
 * [A163062](http://oeis.org/A163062) ([L18 program](A163062.asm)): a(n) = ((3+sqrt(5))*(1+sqrt(5))^n + (3-sqrt(5))*(1-sqrt(5))^n)/2.
 * [A163063](http://oeis.org/A163063) ([L12 program](A163063.asm)): Lucas(3n+2) = Fibonacci(3n+1) + Fibonacci(3n+3).
 * [A163070](http://oeis.org/A163070) ([L17 program](A163070.asm)): a(n) = ((4+sqrt(5))*(2+sqrt(5))^n + (4-sqrt(5))*(2-sqrt(5))^n)/2.
@@ -4443,7 +4443,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188135](http://oeis.org/A188135) ([L07 program](A188135.asm)): a(n) = 8*n^2 + 2*n + 1.
 * [A188148](http://oeis.org/A188148) ([L07 program](A188148.asm)): Number of 3-step self-avoiding walks on an n X n square summed over all starting positions.
 * [A188161](http://oeis.org/A188161) ([L07 program](A188161.asm)): 2*4^n + 3.
-* [A188165](http://oeis.org/A188165) ([L06 program](A188165.asm)): 2^n + 9.
+* [A188165](http://oeis.org/A188165) ([L03 program](A188165.asm)): 2^n + 9.
 * [A188167](http://oeis.org/A188167) ([L30 program](A188167.asm)): a(2+4*n)=1+2*n, otherwise a(n)=2*n.
 * [A188219](http://oeis.org/A188219) ([L23 program](A188219.asm)): Positions of 0 in the zero-one sequence [nr]-[4r]-[nr-4r], where r=sqrt(5), n>=1.
 * [A188221](http://oeis.org/A188221) ([L25 program](A188221.asm)): [nr+kr]-[nr]-[kr], where r=sqrt(5), k=1, [ ]=floor.
@@ -4654,7 +4654,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193391](http://oeis.org/A193391) ([L23 program](A193391.asm)): Wiener index of a benzenoid consisting of a spiral chain of n hexagons (s=1; see the Gutman et al. reference).
 * [A193393](http://oeis.org/A193393) ([L22 program](A193393.asm)): Wiener index of a benzenoid consisting of a zig-zag chain of n hexagons (s=13; see the Gutman et al. reference).
 * [A193394](http://oeis.org/A193394) ([L27 program](A193394.asm)): Hyper-Wiener index of a benzenoid consisting of a zig-zag chain of n hexagons (s=13; see the Gutman et al. reference).
-* [A193397](http://oeis.org/A193397) ([L20 program](A193397.asm)): Wiener index of a benzenoid consisting of a double-step spiral chain of n hexagons (n>=2, s=21; see the Gutman et al. reference).
+* [A193397](http://oeis.org/A193397) ([L18 program](A193397.asm)): Wiener index of a benzenoid consisting of a double-step spiral chain of n hexagons (n>=2, s=21; see the Gutman et al. reference).
 * [A193399](http://oeis.org/A193399) ([L21 program](A193399.asm)): Wiener index of a benzenoid consisting of a chain of n hexagons characterized by the encoding s = 1133 (see the Gutman et al. reference, Sec. 5).
 * [A193422](http://oeis.org/A193422) ([L15 program](A193422.asm)): Smallest number m such that A193358(m) = n.
 * [A193448](http://oeis.org/A193448) ([L11 program](A193448.asm)): a(n) = 4*(5*n^2 - 5*n + 1).
@@ -4775,7 +4775,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195158](http://oeis.org/A195158) ([L11 program](A195158.asm)): Concentric 24-gonal numbers.
 * [A195159](http://oeis.org/A195159) ([L15 program](A195159.asm)): Multiples of 7 and odd numbers interleaved.
 * [A195160](http://oeis.org/A195160) ([L09 program](A195160.asm)): Generalized 11-gonal (or hendecagonal) numbers: m*(9*m - 7)/2 with m = 0, 1, -1, 2, -2, 3, -3, ...
-* [A195161](http://oeis.org/A195161) ([L08 program](A195161.asm)): Multiples of 8 and odd numbers interleaved.
+* [A195161](http://oeis.org/A195161) ([L04 program](A195161.asm)): Multiples of 8 and odd numbers interleaved.
 * [A195162](http://oeis.org/A195162) ([L14 program](A195162.asm)): Generalized 12-gonal numbers: k*(5*k-4) for k = 0, +-1, +-2, ...
 * [A195233](http://oeis.org/A195233) ([L03 program](A195233.asm)): Number of lower triangles of a 3 X 3 0..n array with each element differing from all of its diagonal, vertical, antidiagonal and horizontal neighbors by one or less.
 * [A195234](http://oeis.org/A195234) ([L26 program](A195234.asm)): Number of lower triangles of a 4 X 4 0..n array with each element differing from all of its diagonal, vertical, antidiagonal and horizontal neighbors by one or less.

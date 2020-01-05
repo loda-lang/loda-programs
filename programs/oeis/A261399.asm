@@ -7,4 +7,3 @@ lpb $0,1
   sub $0,1
   sub $1,2
 lpe
-pow $0,$2

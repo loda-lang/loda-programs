@@ -4,9 +4,6 @@
 gcd $3,$0
 mov $2,$3
 mov $6,$2
-lpb $0,1
-  div $2,$6
-lpe
 mov $5,5
 pow $5,3
 sub $5,$6

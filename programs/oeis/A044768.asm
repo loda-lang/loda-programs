@@ -9,14 +9,9 @@ div $5,2
 gcd $0,5
 gcd $0,$5
 mov $1,4
-pow $3,0
-add $3,5
-lpb $0,1
-  mul $0,4
-lpe
 add $1,$0
 add $1,50
-mov $7,$6
-mov $4,$7
+mov $3,$6
+mov $4,$3
 mul $4,100
 add $1,$4

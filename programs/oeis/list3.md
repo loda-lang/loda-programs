@@ -656,7 +656,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328865](http://oeis.org/A328865) ([L05 program](A328865.asm)): The first repeating term in the trajectory of n under iterations of A329623, or -1 if no such terms exists.
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L03 program](A328943.asm)): a(n) = 2 + (n mod 4).
-* [A328979](http://oeis.org/A328979) ([L06 program](A328979.asm)): Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
+* [A328979](http://oeis.org/A328979) ([L05 program](A328979.asm)): Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
 * [A328981](http://oeis.org/A328981) ([L11 program](A328981.asm)): Indicator function of numbers whose binary representation ends in an even positive number of 0's.
 * [A328990](http://oeis.org/A328990) ([L13 program](A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A329202](http://oeis.org/A329202) ([L08 program](A329202.asm)): a(n) = floor(2*log_2(n)) = floor(log_2(n^2)).
@@ -676,7 +676,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329678](http://oeis.org/A329678) ([L02 program](A329678.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UD and DH.
 * [A329679](http://oeis.org/A329679) ([L09 program](A329679.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, UD, HD and DH.
 * [A329680](http://oeis.org/A329680) ([L05 program](A329680.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD and DU.
-* [A329682](http://oeis.org/A329682) ([L07 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
+* [A329682](http://oeis.org/A329682) ([L06 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L03 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L05 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
 * [A329822](http://oeis.org/A329822) ([L10 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
@@ -685,5 +685,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329834](http://oeis.org/A329834) ([L15 program](A329834.asm)): Beatty sequence for (11+sqrt(73))/8.
 * [A329939](http://oeis.org/A329939) ([L19 program](A329939.asm)): Beatty sequence for cosh x,  where csch x + sech x = 1 .
 * [A329975](http://oeis.org/A329975) ([L12 program](A329975.asm)): Beatty sequence for 1 + x + x^2, where x is the real solution of 1/x + 1/(1+x+x^2) = 1.
+* [A330002](http://oeis.org/A330002) ([L07 program](A330002.asm)): Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
+* [A330003](http://oeis.org/A330003) ([L08 program](A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
 * [A330133](http://oeis.org/A330133) ([L13 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.

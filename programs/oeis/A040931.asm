@@ -6,8 +6,5 @@ sub $1,2
 mov $2,$0
 gcd $1,$2
 pow $1,5
-lpb $0,1
-  mul $0,2
-lpe
 sub $1,1
 add $1,31

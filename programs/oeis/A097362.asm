@@ -3,10 +3,6 @@
 
 add $1,3
 add $1,$0
-lpb $0,1
-  div $1,$3
-  mul $2,$1
-lpe
 gcd $0,2
 add $1,1
 div $1,$0
