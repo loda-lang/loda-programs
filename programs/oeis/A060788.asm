@@ -6,24 +6,24 @@ add $1,3
 mul $1,$0
 mul $1,$0
 mov $0,$1
-mov $1,$3
+mov $1,0
 add $1,$0
 sub $1,2
 add $4,$0
 mul $1,$4
 sub $1,$4
 mov $6,$5
-mov $8,$5
-lpb $8,1
+mov $3,$5
+lpb $3,1
   add $7,$6
-  sub $8,1
+  sub $3,1
 lpe
 mov $6,$7
-mov $8,$5
+mov $3,$5
 mov $7,0
-lpb $8,1
+lpb $3,1
   add $7,$6
-  sub $8,1
+  sub $3,1
 lpe
 mov $6,$7
 mov $2,18

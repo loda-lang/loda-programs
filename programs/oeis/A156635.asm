@@ -10,7 +10,7 @@ add $0,1
 mov $2,$0
 add $0,$2
 mul $4,5
-mul $2,$1
+mul $2,0
 mul $0,4
 lpb $0,1
   add $2,$4

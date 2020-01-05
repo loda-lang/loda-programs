@@ -3,7 +3,7 @@
 
 mov $1,6
 sub $1,1
-pow $2,$3
+pow $2,0
 lpb $0,1
   gcd $1,3
   add $1,$2

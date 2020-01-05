@@ -3,7 +3,7 @@
 
 add $0,4
 add $0,$0
-pow $1,$1
+pow $1,0
 mul $1,$0
 sub $1,1
 mul $1,$1

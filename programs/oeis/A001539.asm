@@ -5,7 +5,7 @@ add $2,$0
 mul $2,4
 add $2,2
 pow $2,2
-pow $4,$3
-mul $4,$2
-sub $4,1
-add $1,$4
+pow $3,0
+mul $3,$2
+sub $3,1
+add $1,$3
