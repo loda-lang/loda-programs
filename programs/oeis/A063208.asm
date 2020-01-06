@@ -7,6 +7,5 @@ gcd $3,$4
 div $4,3
 div $3,2
 add $4,$3
-div $3,0
 mov $1,$4
 add $1,1
