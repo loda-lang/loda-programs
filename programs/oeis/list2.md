@@ -703,7 +703,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226107](http://oeis.org/A226107) ([L16 program](A226107.asm)): Number of strict partitions of n with Cookie Monster number 2.
 * [A226199](http://oeis.org/A226199) ([L15 program](A226199.asm)): 7^n + n.
 * [A226200](http://oeis.org/A226200) ([L03 program](A226200.asm)): 6^n + n.
-* [A226201](http://oeis.org/A226201) ([L11 program](A226201.asm)): 8^n + n.
+* [A226201](http://oeis.org/A226201) ([L05 program](A226201.asm)): 8^n + n.
 * [A226233](http://oeis.org/A226233) ([L03 program](A226233.asm)): Ten copies of each positive integer.
 * [A226251](http://oeis.org/A226251) ([L17 program](A226251.asm)): Concatenated cyclical sequence starting from Fibonacci sequence.
 * [A226264](http://oeis.org/A226264) ([L06 program](A226264.asm)): Number of additive Z_2 Z_8 codes of a certain type (see Siap-Aydogdu for precise definition).
@@ -1323,6 +1323,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250814](http://oeis.org/A250814) ([L51 program](A250814.asm)): Number of (2+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.
 * [A250878](http://oeis.org/A250878) ([L43 program](A250878.asm)): Number of (1+1) X (n+1) 0..3 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250879](http://oeis.org/A250879) ([L40 program](A250879.asm)): Number of (2+1) X (n+1) 0..3 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
+* [A251091](http://oeis.org/A251091) ([L10 program](A251091.asm)): a(n) = n^2 / gcd(n+2, 4).
 * [A251599](http://oeis.org/A251599) ([L11 program](A251599.asm)): Centers of rows of the triangular array formed by the natural numbers.
 * [A251630](http://oeis.org/A251630) ([L08 program](A251630.asm)): Column sums of the n X n square array filled with numbers from 1 to n^2, row by row, from left to right.
 * [A251701](http://oeis.org/A251701) ([L07 program](A251701.asm)): a(n) = 3^n + n^2.
@@ -1825,7 +1826,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267958](http://oeis.org/A267958) ([L08 program](A267958.asm)): 4 times A042965.
 * [A267984](http://oeis.org/A267984) ([L09 program](A267984.asm)): Numbers congruent to {17, 23} mod 30.
 * [A267985](http://oeis.org/A267985) ([L13 program](A267985.asm)): Numbers congruent to {7, 13} mod 30.
-* [A268044](http://oeis.org/A268044) ([L08 program](A268044.asm)): The odd numbers congruent to {3, 4} mod 5.
+* [A268044](http://oeis.org/A268044) ([L05 program](A268044.asm)): The odd numbers congruent to {3, 4} mod 5.
 * [A268201](http://oeis.org/A268201) ([L08 program](A268201.asm)): a(n) = 4*n^3 - 6*n^2 + 3*n - 1.
 * [A268226](http://oeis.org/A268226) ([L18 program](A268226.asm)): Complement of A056991.
 * [A268262](http://oeis.org/A268262) ([L43 program](A268262.asm)): Number of length-(3+1) 0..n arrays with new repeated values introduced in sequential order starting with zero.

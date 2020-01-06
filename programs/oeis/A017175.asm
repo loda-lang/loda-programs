@@ -3,11 +3,9 @@
 
 mul $0,3
 add $2,$0
-div $0,$0
 mov $1,$2
 mul $1,3
 add $1,1
 pow $1,3
-sub $0,1
 sub $1,1
 add $1,1

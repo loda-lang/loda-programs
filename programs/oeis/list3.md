@@ -37,7 +37,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301622](http://oeis.org/A301622) ([L16 program](A301622.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 4.
 * [A301623](http://oeis.org/A301623) ([L30 program](A301623.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 5.
 * [A301628](http://oeis.org/A301628) ([L17 program](A301628.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 7.
-* [A301647](http://oeis.org/A301647) ([L09 program](A301647.asm)): a(n) = n^3 - (n mod 2).
+* [A301647](http://oeis.org/A301647) ([L08 program](A301647.asm)): a(n) = n^3 - (n mod 2).
 * [A301654](http://oeis.org/A301654) ([L07 program](A301654.asm)): Circumference of the n-triangular honeycomb acute knight graph.
 * [A301657](http://oeis.org/A301657) ([L16 program](A301657.asm)): Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
 * [A301673](http://oeis.org/A301673) ([L13 program](A301673.asm)): Partial sums of A301672.

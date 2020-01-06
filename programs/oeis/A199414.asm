@@ -4,7 +4,6 @@
 gcd $2,6
 gcd $1,5
 pow $2,$0
-sub $0,$2
 mul $2,2
 mul $1,$2
 add $1,1
