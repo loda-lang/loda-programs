@@ -1620,7 +1620,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A263942](http://oeis.org/A263942) ([L12 program](A263942.asm)): Positive integers n such that (n+4)^3 - n^3 is a square.
 * [A263997](http://oeis.org/A263997) ([L06 program](A263997.asm)): Sequence of block lengths in a block spiral of width 1.
 * [A264080](http://oeis.org/A264080) ([L17 program](A264080.asm)): a(n) = 6*F(n)*F(n+1) + (-1)^n, where F = A000045.
-* [A264120](http://oeis.org/A264120) ([L06 program](A264120.asm)): Values of k such that A001163(k) is positive.
+* [A264120](http://oeis.org/A264120) ([L04 program](A264120.asm)): Values of k such that A001163(k) is positive.
 * [A264443](http://oeis.org/A264443) ([L08 program](A264443.asm)): a(n) = n*(n + 5)*(n + 10)/6.
 * [A264444](http://oeis.org/A264444) ([L13 program](A264444.asm)): a(n) = n*(n + 7)*(n + 14)/6.
 * [A264445](http://oeis.org/A264445) ([L13 program](A264445.asm)): a(n) = n*(n + 11)*(n + 22)/6.

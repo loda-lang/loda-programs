@@ -509,7 +509,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317321](http://oeis.org/A317321) ([L37 program](A317321.asm)): Multiples of 21 and odd numbers interleaved.
 * [A317322](http://oeis.org/A317322) ([L13 program](A317322.asm)): Multiples of 22 and odd numbers interleaved.
 * [A317323](http://oeis.org/A317323) ([L13 program](A317323.asm)): Multiples of 23 and odd numbers interleaved.
-* [A317324](http://oeis.org/A317324) ([L16 program](A317324.asm)): Multiples of 24 and odd numbers interleaved.
+* [A317324](http://oeis.org/A317324) ([L10 program](A317324.asm)): Multiples of 24 and odd numbers interleaved.
 * [A317325](http://oeis.org/A317325) ([L08 program](A317325.asm)): Multiples of 25 and odd numbers interleaved.
 * [A317326](http://oeis.org/A317326) ([L26 program](A317326.asm)): Multiples of 26 and odd numbers interleaved.
 * [A317404](http://oeis.org/A317404) ([L07 program](A317404.asm)): a(n) = 3*n*(2^n - 1).

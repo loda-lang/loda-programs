@@ -4,10 +4,8 @@
 add $1,$0
 lpb $0,1
   mod $0,2
-  add $2,$0
   mul $1,4
   mul $0,4
-  sub $2,$0
   gcd $2,$0
   pow $2,$2
   mul $1,3

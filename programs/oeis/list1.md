@@ -104,7 +104,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100705](http://oeis.org/A100705) ([L09 program](A100705.asm)): a(n) = n^3 + (n+1)^2.
 * [A100710](http://oeis.org/A100710) ([L13 program](A100710.asm)): Characterized by a(n) XOR (a(n) + 1) = a(n) - n.
 * [A100764](http://oeis.org/A100764) ([L08 program](A100764.asm)): a(1) = 1, a(2) = 2, a(3) = 3, a(n) = least number not the sum of three or fewer previous terms.
-* [A100774](http://oeis.org/A100774) ([L07 program](A100774.asm)): a(n) = 2*(3^n - 1).
+* [A100774](http://oeis.org/A100774) ([L05 program](A100774.asm)): a(n) = 2*(3^n - 1).
 * [A100775](http://oeis.org/A100775) ([L03 program](A100775.asm)): a(n) = 97*n + 101.
 * [A100776](http://oeis.org/A100776) ([L03 program](A100776.asm)): a(n) = 997 * n + 1009.
 * [A100795](http://oeis.org/A100795) ([L10 program](A100795.asm)): n occurs n times, as early as possible subject to the constraint that no two successive terms are identical.
@@ -1376,7 +1376,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132171](http://oeis.org/A132171) ([L10 program](A132171.asm)): 3^n repeated 3^n times.
 * [A132173](http://oeis.org/A132173) ([L21 program](A132173.asm)): Maternal generation number of A063882(n).
 * [A132197](http://oeis.org/A132197) ([L06 program](A132197.asm)): 2^n-1 written 2^n-1 times.
-* [A132208](http://oeis.org/A132208) ([L10 program](A132208.asm)): a(n) = 15n(n+1) + 11.
+* [A132208](http://oeis.org/A132208) ([L09 program](A132208.asm)): a(n) = 15n(n+1) + 11.
 * [A132209](http://oeis.org/A132209) ([L06 program](A132209.asm)): a(0) = 0 and a(n) = 2*n^2 + 2*n - 1, for n>=1.
 * [A132222](http://oeis.org/A132222) ([L12 program](A132222.asm)): Beatty sequence 1+2*floor(n*Pi/2), which contains infinitely many primes.
 * [A132226](http://oeis.org/A132226) ([L12 program](A132226.asm)): Placement sequence for the dense normalized fractal sequence A132224.
@@ -1525,7 +1525,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134063](http://oeis.org/A134063) ([L14 program](A134063.asm)): a(n) = (1/2)*(3^n - 2^(n+1) + 3).
 * [A134067](http://oeis.org/A134067) ([L07 program](A134067.asm)): Row sums of triangle A134066.
 * [A134119](http://oeis.org/A134119) ([L10 program](A134119.asm)): a(n) = floor(n^2/10) - floor((n-1)^2/10).
-* [A134153](http://oeis.org/A134153) ([L10 program](A134153.asm)): a(n) = 15n^2 + 9n + 1.
+* [A134153](http://oeis.org/A134153) ([L09 program](A134153.asm)): a(n) = 15n^2 + 9n + 1.
 * [A134154](http://oeis.org/A134154) ([L22 program](A134154.asm)): a(n) = 15n^2 - 9n + 1.
 * [A134169](http://oeis.org/A134169) ([L14 program](A134169.asm)): a(n) = 2^(n-1)*(2^n - 1) + 1.
 * [A134171](http://oeis.org/A134171) ([L20 program](A134171.asm)): a(n) = (9/2)*(n-1)*(n-2)*(n-3).
@@ -1875,11 +1875,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A141104](http://oeis.org/A141104) ([L13 program](A141104.asm)): Lower Even Swappage of Upper Wythoff Sequence.
 * [A141107](http://oeis.org/A141107) ([L26 program](A141107.asm)): Upper Odd Swappage of Upper Wythoff Sequence.
 * [A141135](http://oeis.org/A141135) ([L19 program](A141135.asm)): Minimal number of unit edges required to construct n regular pentagons when allowing edge-sharing.
-* [A141212](http://oeis.org/A141212) ([L11 program](A141212.asm)): a(n) = 1, if n == {1,3,4} mod 6; otherwise 0.
+* [A141212](http://oeis.org/A141212) ([L09 program](A141212.asm)): a(n) = 1, if n == {1,3,4} mod 6; otherwise 0.
 * [A141213](http://oeis.org/A141213) ([L09 program](A141213.asm)): Defining A to be the interior angle of a regular polygon, the number of constructible regular polygons such that A is in a field extension = degree 2^n, starting with n=0. This is also the number of values of x such that phi(x)/2 = 2^n (where phi is Euler's phi function), also starting with n=0.
 * [A141214](http://oeis.org/A141214) ([L18 program](A141214.asm)): Defining A to be the interior angle of a regular polygon, the number of constructible regular polygons such that A is in a field extension <= degree 2^n, starting with n=0. This is also the number of values of x such that phi(x)/2 is a power of 2 <= 2^n (where phi is Euler's phi function), also starting with n=0.
 * [A141259](http://oeis.org/A141259) ([L18 program](A141259.asm)): a(n) == {0,1,3,4,5,7,9,11} mod 12; n>0.
-* [A141260](http://oeis.org/A141260) ([L15 program](A141260.asm)): a(n) = 1 if n == {0,1,3,4,5,7,9,11} mod 12, otherwise a(n) = 0.
+* [A141260](http://oeis.org/A141260) ([L10 program](A141260.asm)): a(n) = 1 if n == {0,1,3,4,5,7,9,11} mod 12, otherwise a(n) = 0.
 * [A141291](http://oeis.org/A141291) ([L08 program](A141291.asm)): a(n) = 4*a(n-1) + 2*n-1
 * [A141310](http://oeis.org/A141310) ([L04 program](A141310.asm)): The odd numbers interlaced with the constant-2 sequence.
 * [A141317](http://oeis.org/A141317) ([L05 program](A141317.asm)): A000244(n) - A010684(n).
@@ -1901,7 +1901,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A141752](http://oeis.org/A141752) ([L12 program](A141752.asm)): a(n) = Sum_{k=0..n} [ Fibonacci(2k-1) + (n-k)*Fibonacci(2k) ].
 * [A141759](http://oeis.org/A141759) ([L07 program](A141759.asm)): a(n) = 16n^2 + 32n + 15.
 * [A142069](http://oeis.org/A142069) ([L11 program](A142069.asm)): Period length 9: repeat 3, 7, 2, 6, 1, 5, 0, 4, 8 .
-* [A142150](http://oeis.org/A142150) ([L05 program](A142150.asm)): The nonnegative integers interleaved with zeros.
+* [A142150](http://oeis.org/A142150) ([L04 program](A142150.asm)): The nonnegative integers interleaved with zeros.
 * [A142241](http://oeis.org/A142241) ([L03 program](A142241.asm)): a(n) = 24*n + 14.
 * [A142245](http://oeis.org/A142245) ([L09 program](A142245.asm)): Expansion of 2*x*(6 + 5*x) / ((1 - x)*(1 - x - x^2)).
 * [A142464](http://oeis.org/A142464) ([L07 program](A142464.asm)): Decimal expansion of 13/36.
@@ -2668,7 +2668,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158412](http://oeis.org/A158412) ([L03 program](A158412.asm)): 961n - 1.
 * [A158413](http://oeis.org/A158413) ([L32 program](A158413.asm)): 961n^2 + 2n.
 * [A158414](http://oeis.org/A158414) ([L03 program](A158414.asm)): 961n + 1.
-* [A158416](http://oeis.org/A158416) ([L06 program](A158416.asm)): Expansion of (1+x-x^3)/(1-x^2)^2.
+* [A158416](http://oeis.org/A158416) ([L05 program](A158416.asm)): Expansion of (1+x-x^3)/(1-x^2)^2.
 * [A158421](http://oeis.org/A158421) ([L03 program](A158421.asm)): 1024n - 1.
 * [A158443](http://oeis.org/A158443) ([L09 program](A158443.asm)): 16n^2 - 4.
 * [A158444](http://oeis.org/A158444) ([L09 program](A158444.asm)): 16n^2 + 4.
@@ -2701,7 +2701,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158544](http://oeis.org/A158544) ([L17 program](A158544.asm)): a(n) = 24*n^2 - 1.
 * [A158546](http://oeis.org/A158546) ([L18 program](A158546.asm)): a(n) = 144*n^2 + 12.
 * [A158547](http://oeis.org/A158547) ([L05 program](A158547.asm)): a(n) = 24*n^2 + 1.
-* [A158548](http://oeis.org/A158548) ([L12 program](A158548.asm)): a(n) = 169*n^2 + 13.
+* [A158548](http://oeis.org/A158548) ([L06 program](A158548.asm)): a(n) = 169*n^2 + 13.
 * [A158549](http://oeis.org/A158549) ([L14 program](A158549.asm)): a(n) = 26*n^2 + 1.
 * [A158551](http://oeis.org/A158551) ([L32 program](A158551.asm)): a(n) = 26*n^2 - 1.
 * [A158553](http://oeis.org/A158553) ([L16 program](A158553.asm)): a(n) = 196*n^2 - 14.
@@ -3230,7 +3230,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167586](http://oeis.org/A167586) ([L19 program](A167586.asm)): The fourth row of the ED4 array A167584.
 * [A167614](http://oeis.org/A167614) ([L06 program](A167614.asm)): (n^2 + 3*n + 8)/2.
 * [A167616](http://oeis.org/A167616) ([L08 program](A167616.asm)): a(n) = Fibonacci(n) - 5.
-* [A167624](http://oeis.org/A167624) ([L16 program](A167624.asm)): n^6 mod 32.
+* [A167624](http://oeis.org/A167624) ([L16 program](A167624.asm)): a(n) = n^6 mod 32.
 * [A167628](http://oeis.org/A167628) ([L19 program](A167628.asm)): n^11 mod 13.
 * [A167632](http://oeis.org/A167632) ([L16 program](A167632.asm)): Smallest m such that A033183(m) = n.
 * [A167667](http://oeis.org/A167667) ([L08 program](A167667.asm)): Expansion of (1-x+4*x^2)/(1-2*x)^2.
@@ -3314,7 +3314,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168269](http://oeis.org/A168269) ([L06 program](A168269.asm)): a(n) = 2*n - (-1)^n.
 * [A168273](http://oeis.org/A168273) ([L04 program](A168273.asm)): a(n) = 2*n + (-1)^n - 1.
 * [A168276](http://oeis.org/A168276) ([L06 program](A168276.asm)): a(n) = 2*n - (-1)^n - 1.
-* [A168277](http://oeis.org/A168277) ([L06 program](A168277.asm)): a(n) = 2*n - (-1)^n - 2.
+* [A168277](http://oeis.org/A168277) ([L04 program](A168277.asm)): a(n) = 2*n - (-1)^n - 2.
 * [A168278](http://oeis.org/A168278) ([L05 program](A168278.asm)): (10*n + 5*(-1)^n + 3)/4.
 * [A168280](http://oeis.org/A168280) ([L06 program](A168280.asm)): (1 - 5*(-1)^n + 10*n)/4.
 * [A168282](http://oeis.org/A168282) ([L05 program](A168282.asm)): (10*n + 5*(-1)^n - 1)/4.
@@ -3465,21 +3465,21 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169404](http://oeis.org/A169404) ([L10 program](A169404.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^32 = I.
 * [A169405](http://oeis.org/A169405) ([L12 program](A169405.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^32 = I.
 * [A169406](http://oeis.org/A169406) ([L23 program](A169406.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^32 = I.
-* [A169448](http://oeis.org/A169448) ([L07 program](A169448.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^33 = I.
+* [A169448](http://oeis.org/A169448) ([L06 program](A169448.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^33 = I.
 * [A169449](http://oeis.org/A169449) ([L08 program](A169449.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^33 = I.
 * [A169450](http://oeis.org/A169450) ([L09 program](A169450.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^33 = I.
 * [A169451](http://oeis.org/A169451) ([L19 program](A169451.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^33 = I.
 * [A169452](http://oeis.org/A169452) ([L10 program](A169452.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^33 = I.
 * [A169453](http://oeis.org/A169453) ([L12 program](A169453.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^33 = I.
 * [A169454](http://oeis.org/A169454) ([L23 program](A169454.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^33 = I.
-* [A169496](http://oeis.org/A169496) ([L07 program](A169496.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^34 = I.
+* [A169496](http://oeis.org/A169496) ([L06 program](A169496.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^34 = I.
 * [A169497](http://oeis.org/A169497) ([L08 program](A169497.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^34 = I.
 * [A169498](http://oeis.org/A169498) ([L09 program](A169498.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^34 = I.
 * [A169499](http://oeis.org/A169499) ([L19 program](A169499.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^34 = I.
 * [A169500](http://oeis.org/A169500) ([L10 program](A169500.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^34 = I.
 * [A169501](http://oeis.org/A169501) ([L12 program](A169501.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^34 = I.
 * [A169502](http://oeis.org/A169502) ([L23 program](A169502.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^34 = I.
-* [A169544](http://oeis.org/A169544) ([L07 program](A169544.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^35 = I.
+* [A169544](http://oeis.org/A169544) ([L06 program](A169544.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^35 = I.
 * [A169545](http://oeis.org/A169545) ([L08 program](A169545.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^35 = I.
 * [A169546](http://oeis.org/A169546) ([L09 program](A169546.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^35 = I.
 * [A169547](http://oeis.org/A169547) ([L19 program](A169547.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^35 = I.
@@ -3526,97 +3526,97 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169933](http://oeis.org/A169933) ([L10 program](A169933.asm)): a(n) = 2+n in the arithmetic defined in A169918.
 * [A169938](http://oeis.org/A169938) ([L13 program](A169938.asm)): a(n) = n*(n+1)*(n*(n+1)+1).
 * [A169985](http://oeis.org/A169985) ([L15 program](A169985.asm)): Round phi^n to the nearest integer.
-* [A170012](http://oeis.org/A170012) ([L07 program](A170012.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
+* [A170012](http://oeis.org/A170012) ([L06 program](A170012.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
 * [A170013](http://oeis.org/A170013) ([L08 program](A170013.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
 * [A170014](http://oeis.org/A170014) ([L09 program](A170014.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
 * [A170015](http://oeis.org/A170015) ([L19 program](A170015.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
 * [A170016](http://oeis.org/A170016) ([L10 program](A170016.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
 * [A170017](http://oeis.org/A170017) ([L12 program](A170017.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
 * [A170018](http://oeis.org/A170018) ([L23 program](A170018.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
-* [A170060](http://oeis.org/A170060) ([L07 program](A170060.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
+* [A170060](http://oeis.org/A170060) ([L06 program](A170060.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
 * [A170061](http://oeis.org/A170061) ([L08 program](A170061.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
 * [A170062](http://oeis.org/A170062) ([L09 program](A170062.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
 * [A170063](http://oeis.org/A170063) ([L19 program](A170063.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
 * [A170064](http://oeis.org/A170064) ([L10 program](A170064.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
 * [A170065](http://oeis.org/A170065) ([L12 program](A170065.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
 * [A170066](http://oeis.org/A170066) ([L23 program](A170066.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
-* [A170108](http://oeis.org/A170108) ([L07 program](A170108.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^38 = I.
+* [A170108](http://oeis.org/A170108) ([L06 program](A170108.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^38 = I.
 * [A170110](http://oeis.org/A170110) ([L09 program](A170110.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^38 = I.
 * [A170111](http://oeis.org/A170111) ([L19 program](A170111.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^38 = I.
 * [A170112](http://oeis.org/A170112) ([L10 program](A170112.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^38 = I.
 * [A170113](http://oeis.org/A170113) ([L12 program](A170113.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^38 = I.
 * [A170114](http://oeis.org/A170114) ([L23 program](A170114.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^38 = I.
-* [A170156](http://oeis.org/A170156) ([L07 program](A170156.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
+* [A170156](http://oeis.org/A170156) ([L06 program](A170156.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
 * [A170157](http://oeis.org/A170157) ([L08 program](A170157.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
 * [A170158](http://oeis.org/A170158) ([L09 program](A170158.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
 * [A170159](http://oeis.org/A170159) ([L19 program](A170159.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
 * [A170160](http://oeis.org/A170160) ([L10 program](A170160.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
 * [A170161](http://oeis.org/A170161) ([L12 program](A170161.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
 * [A170162](http://oeis.org/A170162) ([L23 program](A170162.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
-* [A170204](http://oeis.org/A170204) ([L07 program](A170204.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^40 = I.
+* [A170204](http://oeis.org/A170204) ([L06 program](A170204.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^40 = I.
 * [A170205](http://oeis.org/A170205) ([L08 program](A170205.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^40 = I.
 * [A170206](http://oeis.org/A170206) ([L09 program](A170206.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^40 = I.
 * [A170207](http://oeis.org/A170207) ([L19 program](A170207.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^40 = I.
 * [A170208](http://oeis.org/A170208) ([L10 program](A170208.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^40 = I.
 * [A170209](http://oeis.org/A170209) ([L12 program](A170209.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^40 = I.
 * [A170210](http://oeis.org/A170210) ([L23 program](A170210.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^40 = I.
-* [A170252](http://oeis.org/A170252) ([L07 program](A170252.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
+* [A170252](http://oeis.org/A170252) ([L06 program](A170252.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
 * [A170253](http://oeis.org/A170253) ([L08 program](A170253.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
 * [A170254](http://oeis.org/A170254) ([L09 program](A170254.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
 * [A170255](http://oeis.org/A170255) ([L19 program](A170255.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
 * [A170256](http://oeis.org/A170256) ([L10 program](A170256.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
 * [A170257](http://oeis.org/A170257) ([L12 program](A170257.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
 * [A170258](http://oeis.org/A170258) ([L23 program](A170258.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
-* [A170300](http://oeis.org/A170300) ([L07 program](A170300.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
+* [A170300](http://oeis.org/A170300) ([L06 program](A170300.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
 * [A170301](http://oeis.org/A170301) ([L08 program](A170301.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
 * [A170302](http://oeis.org/A170302) ([L09 program](A170302.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
 * [A170303](http://oeis.org/A170303) ([L19 program](A170303.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
 * [A170304](http://oeis.org/A170304) ([L10 program](A170304.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
 * [A170305](http://oeis.org/A170305) ([L12 program](A170305.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
 * [A170306](http://oeis.org/A170306) ([L23 program](A170306.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
-* [A170348](http://oeis.org/A170348) ([L07 program](A170348.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^43 = I.
+* [A170348](http://oeis.org/A170348) ([L06 program](A170348.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^43 = I.
 * [A170349](http://oeis.org/A170349) ([L08 program](A170349.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^43 = I.
 * [A170350](http://oeis.org/A170350) ([L09 program](A170350.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^43 = I.
 * [A170351](http://oeis.org/A170351) ([L19 program](A170351.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^43 = I.
 * [A170352](http://oeis.org/A170352) ([L10 program](A170352.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^43 = I.
 * [A170353](http://oeis.org/A170353) ([L12 program](A170353.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^43 = I.
 * [A170354](http://oeis.org/A170354) ([L23 program](A170354.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^43 = I.
-* [A170396](http://oeis.org/A170396) ([L07 program](A170396.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^44 = I.
+* [A170396](http://oeis.org/A170396) ([L06 program](A170396.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^44 = I.
 * [A170397](http://oeis.org/A170397) ([L08 program](A170397.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^44 = I.
 * [A170398](http://oeis.org/A170398) ([L09 program](A170398.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^44 = I.
 * [A170399](http://oeis.org/A170399) ([L19 program](A170399.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^44 = I.
 * [A170400](http://oeis.org/A170400) ([L10 program](A170400.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^44 = I.
 * [A170401](http://oeis.org/A170401) ([L12 program](A170401.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^44 = I.
 * [A170402](http://oeis.org/A170402) ([L23 program](A170402.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^44 = I.
-* [A170444](http://oeis.org/A170444) ([L07 program](A170444.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^45 = I.
+* [A170444](http://oeis.org/A170444) ([L06 program](A170444.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^45 = I.
 * [A170445](http://oeis.org/A170445) ([L08 program](A170445.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^45 = I.
 * [A170446](http://oeis.org/A170446) ([L09 program](A170446.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^45 = I.
 * [A170447](http://oeis.org/A170447) ([L19 program](A170447.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^45 = I.
 * [A170448](http://oeis.org/A170448) ([L10 program](A170448.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^45 = I.
 * [A170449](http://oeis.org/A170449) ([L12 program](A170449.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^45 = I.
 * [A170450](http://oeis.org/A170450) ([L23 program](A170450.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^45 = I.
-* [A170492](http://oeis.org/A170492) ([L07 program](A170492.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^46 = I.
+* [A170492](http://oeis.org/A170492) ([L06 program](A170492.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^46 = I.
 * [A170493](http://oeis.org/A170493) ([L08 program](A170493.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^46 = I.
 * [A170494](http://oeis.org/A170494) ([L09 program](A170494.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^46 = I.
 * [A170495](http://oeis.org/A170495) ([L19 program](A170495.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^46 = I.
 * [A170496](http://oeis.org/A170496) ([L10 program](A170496.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^46 = I.
 * [A170497](http://oeis.org/A170497) ([L12 program](A170497.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^46 = I.
 * [A170498](http://oeis.org/A170498) ([L23 program](A170498.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^46 = I.
-* [A170540](http://oeis.org/A170540) ([L07 program](A170540.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^47 = I.
+* [A170540](http://oeis.org/A170540) ([L06 program](A170540.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^47 = I.
 * [A170541](http://oeis.org/A170541) ([L08 program](A170541.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^47 = I.
 * [A170542](http://oeis.org/A170542) ([L09 program](A170542.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^47 = I.
 * [A170543](http://oeis.org/A170543) ([L19 program](A170543.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^47 = I.
 * [A170544](http://oeis.org/A170544) ([L10 program](A170544.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^47 = I.
 * [A170545](http://oeis.org/A170545) ([L12 program](A170545.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^47 = I.
 * [A170546](http://oeis.org/A170546) ([L23 program](A170546.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^47 = I.
-* [A170588](http://oeis.org/A170588) ([L07 program](A170588.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^48 = I.
+* [A170588](http://oeis.org/A170588) ([L06 program](A170588.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^48 = I.
 * [A170589](http://oeis.org/A170589) ([L08 program](A170589.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^48 = I.
 * [A170590](http://oeis.org/A170590) ([L09 program](A170590.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^48 = I.
 * [A170591](http://oeis.org/A170591) ([L19 program](A170591.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^48 = I.
 * [A170592](http://oeis.org/A170592) ([L10 program](A170592.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^48 = I.
 * [A170593](http://oeis.org/A170593) ([L12 program](A170593.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^48 = I.
 * [A170594](http://oeis.org/A170594) ([L23 program](A170594.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^48 = I.
-* [A170636](http://oeis.org/A170636) ([L07 program](A170636.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^49 = I.
+* [A170636](http://oeis.org/A170636) ([L06 program](A170636.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^49 = I.
 * [A170637](http://oeis.org/A170637) ([L08 program](A170637.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^49 = I.
 * [A170638](http://oeis.org/A170638) ([L09 program](A170638.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^49 = I.
 * [A170639](http://oeis.org/A170639) ([L19 program](A170639.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^49 = I.
@@ -3822,7 +3822,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174339](http://oeis.org/A174339) ([L13 program](A174339.asm)): a(n) = 109*n^2.
 * [A174371](http://oeis.org/A174371) ([L16 program](A174371.asm)): a(n) = (6*n-1)^2.
 * [A174396](http://oeis.org/A174396) ([L16 program](A174396.asm)): Numbers congruent to {1,4,5,8} mod 9.
-* [A174398](http://oeis.org/A174398) ([L23 program](A174398.asm)): Numbers that are congruent to {1, 4, 5, 8} mod 12.
+* [A174398](http://oeis.org/A174398) ([L11 program](A174398.asm)): Numbers that are congruent to {1, 4, 5, 8} mod 12.
 * [A174438](http://oeis.org/A174438) ([L09 program](A174438.asm)): Numbers that are congruent to {0, 2, 5, 8} mod 9.
 * [A174595](http://oeis.org/A174595) ([L06 program](A174595.asm)): a(n) = 5*n^2/8 - n + 1/2 + (-1)^n*(-3*n^2/8 + n - 1/2).
 * [A174655](http://oeis.org/A174655) ([L27 program](A174655.asm)): Partial sums of A049486.
@@ -3907,7 +3907,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176780](http://oeis.org/A176780) ([L13 program](A176780.asm)): n^4 + 6n^3 + 14n^2 + 15n + 6.
 * [A176805](http://oeis.org/A176805) ([L13 program](A176805.asm)): a(n) = 3^n + 3*n + 1.
 * [A176889](http://oeis.org/A176889) ([L15 program](A176889.asm)): a(2*k-1)=1, a(2*k)=2*k^2 (definition by T. M. Apostol, see References).
-* [A176895](http://oeis.org/A176895) ([L06 program](A176895.asm)): Period 4: repeat [1, 4, 2, 4].
+* [A176895](http://oeis.org/A176895) ([L03 program](A176895.asm)): Period 4: repeat [1, 4, 2, 4].
 * [A176916](http://oeis.org/A176916) ([L19 program](A176916.asm)): 5^n + 5n + 1.
 * [A176961](http://oeis.org/A176961) ([L14 program](A176961.asm)): a(n) = (3*2^(n+1) - 8 - (-2)^n)/6.
 * [A176965](http://oeis.org/A176965) ([L11 program](A176965.asm)): a(n) = 2^(n-1) - (2^n*(-1)^n + 2)/3.
@@ -4256,7 +4256,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184589](http://oeis.org/A184589) ([L12 program](A184589.asm)): floor(n*e-1); complement of A184590.
 * [A184591](http://oeis.org/A184591) ([L29 program](A184591.asm)): floor[(n*(pi-1)-1]; complement of A184592.
 * [A184592](http://oeis.org/A184592) ([L10 program](A184592.asm)): floor[(n*(pi-1)+1)/(pi-2)]; complement of A184591.
-* [A184628](http://oeis.org/A184628) ([L08 program](A184628.asm)): Floor(1/frac((4+n^4)^(1/4))), where frac(x) is the fractional part of x.
+* [A184628](http://oeis.org/A184628) ([L04 program](A184628.asm)): Floor(1/frac((4+n^4)^(1/4))), where frac(x) is the fractional part of x.
 * [A184632](http://oeis.org/A184632) ([L15 program](A184632.asm)): Floor(1/{(8+n^4)^(1/4)}), where {}=fractional part.
 * [A184635](http://oeis.org/A184635) ([L09 program](A184635.asm)): a(n) = floor(1/{(n+n^4)^(1/4)}), where {} = fractional part.
 * [A184636](http://oeis.org/A184636) ([L08 program](A184636.asm)): floor(1/{(n^4+2*n)^(1/4)}), where {}=fractional part.
@@ -4706,7 +4706,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A194274](http://oeis.org/A194274) ([L11 program](A194274.asm)): Concentric square numbers (see Comments lines for definition).
 * [A194275](http://oeis.org/A194275) ([L10 program](A194275.asm)): Concentric pentagonal numbers of the second kind: a(n) = floor(5*n*(n+1)/6).
 * [A194374](http://oeis.org/A194374) ([L21 program](A194374.asm)): Numbers n such that sum{<1/2+k*r>-<k*r> : 1<=k<=n}=0, where r=sqrt(5) and < > denotes fractional part.
-* [A194386](http://oeis.org/A194386) ([L12 program](A194386.asm)): Numbers n such that sum{<1/2+k*r>-<k*r> : 1<=k<=n}>0, where r=sqrt(10) and < > denotes fractional part.
+* [A194386](http://oeis.org/A194386) ([L10 program](A194386.asm)): Numbers n such that sum{<1/2+k*r>-<k*r> : 1<=k<=n}>0, where r=sqrt(10) and < > denotes fractional part.
 * [A194390](http://oeis.org/A194390) ([L13 program](A194390.asm)): Numbers n such that sum{<1/2+k*r>-<k*r> : 1<=k<=n}=0, where r=sqrt(12) and < > denotes fractional part.
 * [A194408](http://oeis.org/A194408) ([L17 program](A194408.asm)): Numbers n such that sum{<1/2+k*r>-<k*r> : 1<=k<=n}<0, where r=pi and < > denotes fractional part.
 * [A194431](http://oeis.org/A194431) ([L08 program](A194431.asm)): a(n) = 8*n^2 - 6*n - 1.
@@ -4878,7 +4878,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198771](http://oeis.org/A198771) ([L15 program](A198771.asm)): (11*5^n-1)/2.
 * [A198794](http://oeis.org/A198794) ([L14 program](A198794.asm)): 5*6^n-1.
 * [A198795](http://oeis.org/A198795) ([L10 program](A198795.asm)): 7*6^n-1.
-* [A198796](http://oeis.org/A198796) ([L10 program](A198796.asm)): 3*6^n-1.
+* [A198796](http://oeis.org/A198796) ([L05 program](A198796.asm)): 3*6^n-1.
 * [A198797](http://oeis.org/A198797) ([L10 program](A198797.asm)): 4*6^n-1.
 * [A198834](http://oeis.org/A198834) ([L07 program](A198834.asm)): Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (0,1,1) or (1,1,1).
 * [A198845](http://oeis.org/A198845) ([L11 program](A198845.asm)): 8*6^n-1.
@@ -4895,7 +4895,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199112](http://oeis.org/A199112) ([L10 program](A199112.asm)): 10*3^n+1.
 * [A199113](http://oeis.org/A199113) ([L08 program](A199113.asm)): (11*3^n+1)/2.
 * [A199114](http://oeis.org/A199114) ([L15 program](A199114.asm)): 11*3^n+1.
-* [A199115](http://oeis.org/A199115) ([L06 program](A199115.asm)): 5*4^n+1.
+* [A199115](http://oeis.org/A199115) ([L04 program](A199115.asm)): 5*4^n+1.
 * [A199116](http://oeis.org/A199116) ([L07 program](A199116.asm)): 6*4^n+1.
 * [A199207](http://oeis.org/A199207) ([L07 program](A199207.asm)): 7*4^n+1.
 * [A199208](http://oeis.org/A199208) ([L08 program](A199208.asm)): 9*4^n+1.
