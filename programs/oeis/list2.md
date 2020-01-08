@@ -102,7 +102,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204562](http://oeis.org/A204562) ([L09 program](A204562.asm)): Symmetric matrix: f(i,j)=floor[(2i+2j+6)/4]-floor[(i+j+3)/4], by (constant) antidiagonals.
 * [A204644](http://oeis.org/A204644) ([L10 program](A204644.asm)): Number of (n+1) X 2 0..1 arrays with column and row pair sums b(i,j)=a(i,j)+a(i,j-1) and c(i,j)=a(i,j)+a(i-1,j) nondecreasing in column and row directions, respectively.
 * [A204671](http://oeis.org/A204671) ([L08 program](A204671.asm)): a(n) = n^n (mod 6).
-* [A204674](http://oeis.org/A204674) ([L13 program](A204674.asm)): 4*n^3 + 5*n^2 + 2*n + 1
+* [A204674](http://oeis.org/A204674) ([L13 program](A204674.asm)): a(n) = 4*n^3 + 5*n^2 + 2*n + 1.
 * [A204675](http://oeis.org/A204675) ([L08 program](A204675.asm)): a(n) = 16*n^2 + 2*n + 1.
 * [A204688](http://oeis.org/A204688) ([L22 program](A204688.asm)): a(n) = n^n (mod 3).
 * [A204689](http://oeis.org/A204689) ([L05 program](A204689.asm)): a(n) = n^n (mod 4).
@@ -733,7 +733,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227013](http://oeis.org/A227013) ([L57 program](A227013.asm)): Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n^4.
 * [A227017](http://oeis.org/A227017) ([L13 program](A227017.asm)): Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n(3n-1)/2 = A000326(n).
 * [A227121](http://oeis.org/A227121) ([L15 program](A227121.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of zero, with rows and columns of the latter in lexicographically nondecreasing order.
-* [A227148](http://oeis.org/A227148) ([L22 program](A227148.asm)): Numbers n for which the sum of digits is even when n is written in the factorial base (A007623).
+* [A227148](http://oeis.org/A227148) ([L09 program](A227148.asm)): Numbers n for which the sum of digits is even when n is written in the factorial base (A007623).
 * [A227149](http://oeis.org/A227149) ([L12 program](A227149.asm)): Numbers n for which the sum of digits is odd when n is written in the factorial base (A007623).
 * [A227161](http://oeis.org/A227161) ([L11 program](A227161.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of one or less, with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227177](http://oeis.org/A227177) ([L07 program](A227177.asm)): n occurs n^2 - n + 1 times.
@@ -1508,7 +1508,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258806](http://oeis.org/A258806) ([L07 program](A258806.asm)): a(n) = n^7 + 1.
 * [A258807](http://oeis.org/A258807) ([L04 program](A258807.asm)): a(n) = n^5 - 1.
 * [A258808](http://oeis.org/A258808) ([L09 program](A258808.asm)): a(n) = n^7 - 1.
-* [A258809](http://oeis.org/A258809) ([L14 program](A258809.asm)): a(n) = n^8 - 1.
+* [A258809](http://oeis.org/A258809) ([L06 program](A258809.asm)): a(n) = n^8 - 1.
 * [A258810](http://oeis.org/A258810) ([L12 program](A258810.asm)): a(n) = n^9 - 1.
 * [A258935](http://oeis.org/A258935) ([L09 program](A258935.asm)): Independence number of Keller graphs.
 * [A259042](http://oeis.org/A259042) ([L14 program](A259042.asm)): Period 8 sequence [0, 1, 1, 1, 2, 1, 1, 1, ...].
@@ -1955,7 +1955,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271027](http://oeis.org/A271027) ([L03 program](A271027.asm)): a(n) = 3661529 + 11184810*n.
 * [A271060](http://oeis.org/A271060) ([L16 program](A271060.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 261", based on the 5-celled von Neumann neighborhood.
 * [A271114](http://oeis.org/A271114) ([L04 program](A271114.asm)): Expansion of (1+x)*(2+x)/(1-x)^2.
-* [A271209](http://oeis.org/A271209) ([L20 program](A271209.asm)): a(n) = n^5 + n + 1.
+* [A271209](http://oeis.org/A271209) ([L04 program](A271209.asm)): a(n) = n^5 + n + 1.
 * [A271324](http://oeis.org/A271324) ([L07 program](A271324.asm)): a(n) = n + floor(n/4) + (n mod 4).
 * [A271342](http://oeis.org/A271342) ([L09 program](A271342.asm)): Sum of all even divisors of all positive integers <= n.
 * [A271346](http://oeis.org/A271346) ([L22 program](A271346.asm)): Numbers k such that the final digit of k^k is 6.
@@ -2512,14 +2512,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291305](http://oeis.org/A291305) ([L15 program](A291305.asm)): The arithmetic function v_5(n,1).
 * [A291330](http://oeis.org/A291330) ([L13 program](A291330.asm)): The arithmetic function v_4(n,1).
 * [A291357](http://oeis.org/A291357) ([L12 program](A291357.asm)): The arithmetic function u(n,2,3).
-* [A291358](http://oeis.org/A291358) ([L05 program](A291358.asm)): The arithmetic function u(n,2,4).
+* [A291358](http://oeis.org/A291358) ([L04 program](A291358.asm)): The arithmetic function u(n,2,4).
 * [A291359](http://oeis.org/A291359) ([L37 program](A291359.asm)): The arithmetic function u(n,2,5).
 * [A291361](http://oeis.org/A291361) ([L37 program](A291361.asm)): The arithmetic function u(n,2,6).
 * [A291423](http://oeis.org/A291423) ([L27 program](A291423.asm)): The arithmetic function u(n,4,2).
 * [A291454](http://oeis.org/A291454) ([L11 program](A291454.asm)): Number of half tones between successive pitches in a major scale.
 * [A291510](http://oeis.org/A291510) ([L04 program](A291510.asm)): The arithmetic function uhat(n,2,5), negated.
 * [A291516](http://oeis.org/A291516) ([L05 program](A291516.asm)): The arithmetic function uhat(n,3,7), negated.
-* [A291520](http://oeis.org/A291520) ([L07 program](A291520.asm)): The arithmetic function uhat(n,4,2).
+* [A291520](http://oeis.org/A291520) ([L06 program](A291520.asm)): The arithmetic function uhat(n,4,2).
 * [A291526](http://oeis.org/A291526) ([L05 program](A291526.asm)): a(n) = 2^n*(n - 3) + 4.
 * [A291557](http://oeis.org/A291557) ([L09 program](A291557.asm)): a(n) = 23*2^n - 1.
 * [A291582](http://oeis.org/A291582) ([L09 program](A291582.asm)): Maximum number of 6 sphinx tile shapes in a sphinx tiled hexagon of order n.

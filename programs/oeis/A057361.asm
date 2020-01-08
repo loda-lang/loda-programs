@@ -3,7 +3,4 @@
 
 mul $0,5
 add $1,$0
-lpb $0,1
-  gcd $2,$1
-lpe
 div $1,8

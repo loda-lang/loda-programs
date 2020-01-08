@@ -7,8 +7,4 @@ div $2,4
 mul $0,4
 add $2,$0
 pow $2,4
-lpb $0,1
-  gcd $3,$0
-  mod $0,$3
-lpe
 gcd $1,$2
