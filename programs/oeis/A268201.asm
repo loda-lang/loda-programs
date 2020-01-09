@@ -3,7 +3,7 @@
 
 lpb $0,1
   gcd $1,$0
-  add $1,$1
+  mul $1,2
   add $1,1
   mov $0,$2
   pow $1,3

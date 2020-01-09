@@ -14,4 +14,4 @@ lpb $2,1
   mov $1,$3
   sub $2,1
 lpe
-add $1,$1
+mul $1,2

@@ -3,7 +3,7 @@
 
 add $0,2
 lpb $0,1
-  mul $0,$0
+  pow $0,2
   sub $0,1
   div $0,2
   mod $0,3

@@ -4,7 +4,6 @@
 lpb $0,1
   add $1,2
   sub $0,1
-  add $1,$1
-  add $1,$1
+  mul $1,4
 lpe
 add $1,1

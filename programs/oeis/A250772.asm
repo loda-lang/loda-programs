@@ -10,16 +10,16 @@ lpb $0,1
   add $4,$3
   add $3,2
   add $1,$5
-  add $5,$5
+  mul $5,2
   add $5,5
-  add $1,$1
+  mul $1,2
   sub $0,1
 lpe
 add $1,$4
 sub $1,2
 add $1,$4
 sub $1,1
-add $1,$1
+mul $1,2
 lpb $2,1
   add $1,22
   sub $2,1

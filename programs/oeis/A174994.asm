@@ -10,4 +10,4 @@ lpb $0,1
   mul $1,2
 lpe
 add $1,4
-mul $1,$1
+pow $1,2

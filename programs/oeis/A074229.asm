@@ -5,8 +5,8 @@ mov $5,$0
 add $0,1
 mov $1,4
 add $0,$1
-add $3,3
-add $2,$3
+mov $3,3
+mov $2,$3
 mov $4,3
 add $2,$4
 sub $2,4

@@ -4,6 +4,6 @@
 gcd $2,2
 sub $0,$2
 sub $2,$0
-add $1,$2
+mov $1,$2
 gcd $1,2
 sub $1,1

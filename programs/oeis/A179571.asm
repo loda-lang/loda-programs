@@ -5,7 +5,7 @@ add $0,2
 lpb $0,1
   add $1,$0
   add $2,4
-  add $2,$2
+  mul $2,2
   sub $0,1
 lpe
 add $1,4

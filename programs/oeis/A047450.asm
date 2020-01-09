@@ -4,7 +4,7 @@
 mov $4,$0
 div $0,2
 gcd $1,$0
-add $1,$1
+mul $1,2
 div $1,3
 mov $3,$4
 mov $2,$3

@@ -6,7 +6,7 @@ gcd $3,$2
 mov $2,3
 add $3,1
 mod $3,2
-add $1,1
+mov $1,1
 div $2,2
 div $0,2
 add $1,$3

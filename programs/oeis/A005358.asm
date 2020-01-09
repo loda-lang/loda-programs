@@ -14,7 +14,7 @@ lpb $0,1
   add $5,$4
   mov $4,0
   add $4,5
-  add $6,$6
+  mul $6,2
   sub $5,$3
   add $5,1
   add $6,4
@@ -23,7 +23,7 @@ lpb $0,1
   add $4,$6
   add $4,$5
   add $3,2
-  add $5,$5
+  mul $5,2
   add $1,$0
   add $5,$2
   sub $4,$3

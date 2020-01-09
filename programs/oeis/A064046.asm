@@ -4,13 +4,13 @@
 mov $6,$0
 mov $2,$0
 sub $0,1
-add $3,$2
-add $4,$3
+mov $3,$2
+mov $4,$3
 add $0,$2
 mul $0,$4
 sub $4,1
 mul $4,$0
-add $1,$4
+mov $1,$4
 mul $1,5
 mov $7,$6
 mul $7,$6

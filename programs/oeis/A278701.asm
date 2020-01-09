@@ -1,7 +1,7 @@
 ; A278701: Square array A(n, k) read by antidiagonals downwards: A(n,k) =  characteristic function of base-n Wieferich primes: 1 if prime(k) is a base-n Wieferich prime, 0 otherwise, where k runs over the positive integers starting from 1.
 ; 0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
 
-add $6,$0
+mov $6,$0
 mov $3,$6
 lpb $3,1
   lpb $0,1

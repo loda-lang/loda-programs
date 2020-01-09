@@ -7,7 +7,7 @@ lpb $0,1
   sub $0,1
   sub $0,$1
 lpe
-add $1,$1
+mul $1,2
 lpb $2,1
   add $1,4
   sub $2,1

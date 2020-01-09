@@ -7,7 +7,7 @@ lpb $2,1
   add $1,$0
   add $3,$0
   add $1,5
-  add $1,$1
+  mul $1,2
   sub $2,1
   sub $1,1
   lpb $3,1

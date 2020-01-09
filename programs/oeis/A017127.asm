@@ -6,7 +6,7 @@ mul $0,4
 mov $1,$0
 mov $4,5
 add $4,$1
-mul $4,$4
+pow $4,2
 mul $1,$4
 mul $1,6
 add $1,125

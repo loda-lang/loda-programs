@@ -9,5 +9,5 @@ lpb $0,1
   add $2,$4
   add $3,2
   mov $1,$3
-  add $3,$3
+  mul $3,2
 lpe

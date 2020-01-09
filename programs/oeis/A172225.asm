@@ -11,4 +11,4 @@ lpb $0,1
   add $3,4
   add $2,$0
 lpe
-add $1,$1
+mul $1,2

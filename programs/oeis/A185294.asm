@@ -1,7 +1,7 @@
 ; A185294: Number of disconnected 9-regular simple graphs on 2n vertices with girth at least 4.
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,15
 
-add $4,$0
+mov $4,$0
 lpb $0,1
   add $4,5
   sub $4,$0

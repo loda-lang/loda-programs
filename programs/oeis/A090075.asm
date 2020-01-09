@@ -1,7 +1,7 @@
 ; A090075: (Presumed) number of palindromes in the Reverse and Add! trajectory of 10^n.
 ; 11,9,8,9,12,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
 
-add $6,6
+mov $6,6
 mov $5,$6
 mov $2,$0
 lpb $5,1

@@ -12,6 +12,6 @@ lpb $0,1
   add $1,$3
   mul $1,7
 lpe
-mul $1,$1
+pow $1,2
 add $1,4
 div $1,$2

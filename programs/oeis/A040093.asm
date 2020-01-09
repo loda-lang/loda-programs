@@ -3,7 +3,7 @@
 
 div $2,$0
 gcd $0,2
-add $1,$0
+mov $1,$0
 lpb $0,1
   div $0,3
   add $0,$2

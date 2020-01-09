@@ -8,6 +8,6 @@ mov $1,0
 lpb $1,$3
   sub $3,4
 lpe
-add $0,$0
+mul $0,2
 sub $0,$3
 mov $1,$0

@@ -3,9 +3,9 @@
 
 gcd $5,$0
 gcd $3,2
-add $2,$5
+mov $2,$5
 pow $2,5
-add $4,$2
+mov $4,$2
 add $4,$3
 mov $6,$4
 mov $1,$6

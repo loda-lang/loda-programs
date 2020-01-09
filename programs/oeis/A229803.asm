@@ -1,8 +1,8 @@
 ; A229803: Domination number for rook graph HR(n) on a triangular board of hexagonal cells. The rook can move along any row of adjacent cells, in any of the three directions.
 ; 1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,9,9
 
-add $0,$0
-add $3,$0
+mul $0,2
+mov $3,$0
 add $0,$3
 mov $2,3
 add $2,$3

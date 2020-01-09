@@ -11,7 +11,7 @@ lpb $0,1
   div $0,3
   mul $1,$0
   div $0,$0
-  mul $1,$1
+  pow $1,2
 lpe
 mul $1,$2
 mul $1,3

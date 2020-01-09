@@ -19,7 +19,7 @@ lpb $2,1
   add $1,5
   lpb $6,1
     add $2,$6
-    add $1,$1
+    mul $1,2
     sub $6,$3
   lpe
   sub $2,1

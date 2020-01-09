@@ -9,10 +9,10 @@ lpb $0,1
 lpe
 add $2,1
 add $1,$2
-add $1,$1
+mul $1,2
 add $1,$2
 add $1,2
-add $1,$1
+mul $1,2
 lpb $3,1
   add $1,20
   sub $3,1

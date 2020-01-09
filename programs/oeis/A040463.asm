@@ -7,6 +7,6 @@ lpb $0,1
   mod $0,2
   div $0,$0
 lpe
-mul $1,$1
+pow $1,2
 sub $1,3
 add $1,22

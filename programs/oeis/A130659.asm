@@ -3,6 +3,6 @@
 
 mov $2,$0
 mod $2,4
-add $1,4
+mov $1,4
 mul $1,$2
 div $1,3

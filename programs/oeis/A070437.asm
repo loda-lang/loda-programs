@@ -6,5 +6,5 @@ mov $3,$0
 pow $3,2
 mul $2,5
 add $2,4
-add $1,$3
+mov $1,$3
 mod $1,$2

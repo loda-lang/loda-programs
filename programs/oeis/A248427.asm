@@ -3,7 +3,7 @@
 
 mov $5,$0
 lpb $0,1
-  mul $0,$0
+  pow $0,2
   add $1,1
   add $1,$0
   sub $0,1

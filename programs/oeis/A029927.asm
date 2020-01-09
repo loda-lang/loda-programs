@@ -3,16 +3,16 @@
 
 mov $7,$0
 add $0,6
-add $5,$0
-add $5,$5
+mov $5,$0
+mul $5,2
 add $0,$5
-add $4,2
+mov $4,2
 sub $0,$4
 mov $3,3
 sub $0,2
 mov $1,3
 sub $1,1
-add $3,$3
+mul $3,2
 mov $6,3
 lpb $0,1
   add $6,4

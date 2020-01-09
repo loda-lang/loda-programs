@@ -7,7 +7,7 @@ gcd $5,$2
 lpb $0,1
   mov $4,$5
   mov $2,4
-  add $4,$4
+  mul $4,2
   pow $5,4
   gcd $1,2
   add $1,6

@@ -3,8 +3,8 @@
 
 mul $0,7
 add $0,5
-mul $0,$0
-add $2,$0
-add $3,$2
-mul $3,$3
+pow $0,2
+mov $2,$0
+mov $3,$2
+pow $3,2
 mov $1,$3

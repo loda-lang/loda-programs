@@ -4,6 +4,6 @@
 lpb $0,1
   mov $0,$2
   add $1,14
-  add $1,$1
+  mul $1,2
 lpe
 add $1,28

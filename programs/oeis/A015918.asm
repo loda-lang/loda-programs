@@ -7,6 +7,6 @@ sub $2,4
 lpb $2,1
   sub $2,$0
   add $2,9
-  add $2,$2
+  mul $2,2
   mov $1,$3
 lpe

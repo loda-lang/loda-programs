@@ -8,14 +8,14 @@ add $2,3
 sub $2,$0
 mov $0,$2
 add $0,$2
-add $0,$0
+mul $0,2
 lpb $0,1
   sub $0,3
   mov $3,2
   add $1,$3
-  add $3,$3
+  mul $3,2
   add $3,$1
-  add $3,$3
+  mul $3,2
   sub $0,1
   mov $1,$3
 lpe

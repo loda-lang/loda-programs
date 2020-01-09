@@ -20,10 +20,10 @@ lpb $0,1
   add $0,2
   add $5,$3
   add $5,3
-  add $5,$5
+  mul $5,2
   sub $0,2
   sub $2,5
-  add $5,$5
+  mul $5,2
   sub $5,$2
   mov $4,2
   mov $1,$5

@@ -12,5 +12,5 @@ lpb $0,1
 lpe
 mov $1,$$0
 mov $5,$$0
-add $1,$1
+mul $1,2
 sub $1,$5

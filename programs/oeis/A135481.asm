@@ -4,7 +4,7 @@
 gcd $2,4
 mov $3,$2
 pow $3,6
-add $1,1
+mov $1,1
 add $1,$0
 gcd $1,$3
 sub $1,1

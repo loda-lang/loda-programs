@@ -3,7 +3,7 @@
 
 mov $3,3
 add $3,5
-add $2,$0
+mov $2,$0
 lpb $0,1
   sub $1,$0
   sub $1,$0

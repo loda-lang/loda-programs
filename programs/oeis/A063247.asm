@@ -3,7 +3,7 @@
 
 mov $5,$0
 mov $1,$0
-add $3,$1
+mov $3,$1
 div $3,3
 div $0,2
 add $3,$0

@@ -9,6 +9,6 @@ lpb $0,1
 lpe
 mul $2,2
 sub $2,5
-mul $2,$2
+pow $2,2
 mul $1,$2
 add $1,6

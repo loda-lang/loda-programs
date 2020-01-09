@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $1,$3
-add $2,4
+mov $2,4
 mul $2,2
 gcd $2,$1
 div $1,$2

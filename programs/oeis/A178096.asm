@@ -3,9 +3,9 @@
 
 mov $7,$0
 div $0,3
-add $5,$0
+mov $5,$0
 mov $2,$0
-mul $5,$5
+pow $5,2
 lpb $2,1
   add $1,$2
   lpb $5,1

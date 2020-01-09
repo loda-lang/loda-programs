@@ -11,7 +11,7 @@ lpb $0,1
 lpe
 gcd $1,2
 mov $3,2
-mul $3,$3
+pow $3,2
 add $1,$3
 sub $1,5
 mov $5,$4

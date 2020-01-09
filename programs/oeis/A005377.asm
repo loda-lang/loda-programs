@@ -8,6 +8,6 @@ lpb $2,1
   add $3,3
   add $1,$2
   sub $2,1
-  add $3,$3
+  mul $3,2
 lpe
 sub $1,2

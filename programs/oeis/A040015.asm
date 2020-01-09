@@ -5,5 +5,5 @@ pow $2,$0
 gcd $2,2
 gcd $0,2
 gcd $1,$0
-mul $1,$1
+pow $1,2
 mul $1,$2

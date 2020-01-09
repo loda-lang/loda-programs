@@ -9,7 +9,7 @@ lpb $0,1
   mov $1,$0
   div $0,$4
   mul $2,2
-  mul $1,$1
+  pow $1,2
   sub $0,1
   mod $1,$2
   div $4,$3

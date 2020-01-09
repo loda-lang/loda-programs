@@ -7,7 +7,7 @@ lpb $0,1
   add $1,3
   sub $0,1
 lpe
-mul $1,$1
+pow $1,2
 add $1,4
 mov $5,$4
 mov $2,18

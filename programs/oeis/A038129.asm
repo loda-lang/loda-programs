@@ -3,7 +3,7 @@
 
 mov $6,$0
 mul $0,7
-add $2,3
+mov $2,3
 div $0,3
 mov $3,$2
 mov $1,$2

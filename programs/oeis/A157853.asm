@@ -11,7 +11,7 @@ lpb $4,1
   add $5,5
 lpe
 add $5,5
-add $5,$5
+mul $5,2
 mov $3,$5
 lpb $3,1
   sub $3,1

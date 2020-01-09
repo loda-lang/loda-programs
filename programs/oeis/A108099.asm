@@ -7,4 +7,4 @@ lpb $0,1
   add $2,8
   add $1,$2
 lpe
-add $1,$1
+mul $1,2

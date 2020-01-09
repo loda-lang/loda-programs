@@ -4,7 +4,7 @@
 mul $0,2
 gcd $2,3
 mov $1,$2
-add $0,$0
+mul $0,2
 sub $2,1
 lpb $0,1
   div $0,2

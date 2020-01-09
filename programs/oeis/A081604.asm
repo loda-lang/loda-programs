@@ -4,7 +4,7 @@
 lpb $0,1
   add $3,1
   add $0,$3
-  add $3,$3
+  mul $3,2
   add $2,$3
   mov $3,$2
   add $1,1

@@ -3,8 +3,8 @@
 
 div $0,5
 add $0,2
-add $6,5
-mul $0,$0
+mov $6,5
+pow $0,2
 mul $0,3
 div $0,12
 lpb $4,5

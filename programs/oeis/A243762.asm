@@ -7,15 +7,15 @@ lpb $0,1
   add $2,$0
   add $4,$2
 lpe
-add $2,$2
+mul $2,2
 sub $4,$2
-add $4,$4
+mul $4,2
 add $3,4
 mov $1,$4
 add $1,$3
-add $1,$1
+mul $1,2
 mov $3,$1
-add $3,$3
+mul $3,2
 sub $3,$2
 sub $1,3
 add $3,$2

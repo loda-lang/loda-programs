@@ -3,8 +3,8 @@
 
 mov $5,5
 sub $5,4
-add $2,$5
-add $0,$0
+mov $2,$5
+mul $0,2
 lpb $0,1
   add $4,$2
   add $1,2

@@ -17,7 +17,7 @@ lpb $0,1
   add $1,5
 lpe
 add $1,6
-add $4,$4
+mul $4,2
 lpb $4,1
   sub $4,1
   add $5,5

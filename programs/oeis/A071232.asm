@@ -3,7 +3,7 @@
 
 mov $1,$0
 pow $1,3
-add $2,$1
+mov $2,$1
 pow $2,2
 add $1,$2
 div $1,2

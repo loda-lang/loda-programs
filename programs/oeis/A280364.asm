@@ -9,7 +9,7 @@ lpb $0,1
   add $3,1
   add $2,$3
   add $1,$2
-  mul $1,$1
+  pow $1,2
   sub $0,$0
   add $1,2
 lpe

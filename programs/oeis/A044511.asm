@@ -5,7 +5,6 @@ mov $7,$0
 gcd $5,$0
 mov $3,$5
 mod $0,6
-mul $5,5
 mov $2,$0
 sub $2,3
 lpb $0,1

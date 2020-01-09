@@ -6,6 +6,5 @@ mul $2,3
 add $2,1
 mul $2,$0
 add $2,5
-add $1,$2
-mul $1,$1
-mul $1,$1
+mov $1,$2
+pow $1,4

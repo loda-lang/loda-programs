@@ -11,5 +11,5 @@ lpb $1,1
   sub $1,1
   add $2,2
 lpe
-add $2,$2
+mul $2,2
 mov $1,$2

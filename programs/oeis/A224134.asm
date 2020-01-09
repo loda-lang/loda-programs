@@ -11,7 +11,7 @@ lpb $0,1
   add $3,$1
 lpe
 add $1,4
-add $3,$3
+mul $3,2
 add $2,$3
 add $1,$2
 add $1,1

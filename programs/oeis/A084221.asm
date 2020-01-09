@@ -4,10 +4,10 @@
 lpb $0,1
   mov $4,1
   add $2,$4
-  add $2,$2
+  mul $2,2
   sub $4,$2
   sub $0,1
-  add $2,$2
+  mul $2,2
   add $1,$2
   add $4,$1
   add $3,1

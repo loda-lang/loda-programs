@@ -1,11 +1,11 @@
 ; A093383: One of the 16 sequences illustrating the fact that A093382(2) = 31.
 ; 0,0,0,1,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-add $6,1
+mov $6,1
 mov $2,$0
 add $0,1
-add $1,$0
-add $3,$6
+mov $1,$0
+mov $3,$6
 mov $6,3
 sub $2,$6
 lpb $2,1
@@ -29,6 +29,6 @@ lpb $2,1
   mov $3,3
   mov $1,1
   sub $2,1
-  add $3,$3
+  mul $3,2
 lpe
 sub $1,$6

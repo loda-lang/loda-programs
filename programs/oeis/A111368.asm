@@ -10,5 +10,5 @@ lpb $0,1
   sub $1,2
   sub $2,$0
 lpe
-add $1,$1
+mul $1,2
 add $1,1

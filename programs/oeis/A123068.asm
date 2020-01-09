@@ -6,5 +6,5 @@ lpb $0,1
   mov $0,6
   add $1,1
   add $0,9
-  add $0,$0
+  mul $0,2
 lpe

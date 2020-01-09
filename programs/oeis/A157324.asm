@@ -13,10 +13,10 @@ sub $5,3
 sub $5,$0
 mov $1,$3
 add $0,$1
-add $0,$0
+mul $0,2
 sub $0,$5
-add $0,$0
-add $2,$0
+mul $0,2
+mov $2,$0
 lpb $0,1
   add $1,$2
   sub $0,1

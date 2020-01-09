@@ -1,7 +1,7 @@
 ; A186683: Total number of n-digit numbers requiring 18 positive biquadrates in their representation as sum of biquadrates.
 ; 0,2,17,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-add $0,$0
+mul $0,2
 mov $3,$0
 lpb $3,1
   sub $0,3

@@ -4,10 +4,10 @@
 lpb $0,1
   add $1,1
   mov $2,$0
-  add $1,$1
+  mul $1,2
   sub $0,2
   sub $2,$0
-  add $1,$1
+  mul $1,2
   sub $1,$2
 lpe
-add $1,$1
+mul $1,2

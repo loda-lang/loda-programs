@@ -7,7 +7,7 @@ mov $2,$4
 lpb $0,1
   sub $0,1
   add $2,$4
-  add $4,$4
+  mul $4,2
   add $5,2
   add $5,$0
   add $4,$3

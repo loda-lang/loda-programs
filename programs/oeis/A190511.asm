@@ -4,12 +4,12 @@
 mov $3,$0
 add $0,5
 mov $4,1
-add $5,$4
-add $6,1
-add $0,$0
+mov $5,$4
+mov $6,1
+mul $0,2
 add $4,$5
 add $0,$4
-add $0,$0
+mul $0,2
 add $6,6
 add $5,$0
 mov $0,$5
@@ -17,7 +17,7 @@ sub $0,5
 add $0,2
 sub $6,2
 mov $2,1
-add $6,$6
+mul $6,2
 lpb $0,1
   sub $0,1
   add $2,1

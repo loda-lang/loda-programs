@@ -3,10 +3,10 @@
 
 mov $4,$0
 mov $2,$4
-add $5,4
+mov $5,4
 add $0,3
 add $2,$5
-add $3,$2
+mov $3,$2
 mov $1,$2
 lpb $0,1
   add $1,$3

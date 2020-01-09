@@ -4,8 +4,8 @@
 mov $4,6
 mov $3,$4
 add $3,$0
-add $2,4
-add $5,$3
+mov $2,4
+mov $5,$3
 sub $5,$2
 add $3,2
 sub $3,$0

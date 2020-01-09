@@ -13,7 +13,7 @@ lpb $5,1
   lpe
   sub $3,1
   sub $5,5
-  add $5,$5
+  mul $5,2
   lpb $5,1
     add $0,$4
     sub $5,$3

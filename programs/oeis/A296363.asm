@@ -6,7 +6,7 @@ lpb $0,1
   mov $3,3
   mul $3,$0
   div $0,$3
-  mul $3,$3
+  pow $3,2
   add $3,2
 lpe
 mov $1,$3

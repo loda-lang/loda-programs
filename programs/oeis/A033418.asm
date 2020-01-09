@@ -8,7 +8,7 @@ lpb $0,1
   add $1,2
   mul $1,5
 lpe
-mul $1,$1
+pow $1,2
 sub $1,4
 add $1,2
 div $1,$3

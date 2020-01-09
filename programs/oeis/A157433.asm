@@ -3,11 +3,9 @@
 
 mov $3,$0
 add $0,1
-add $0,$0
+mul $0,2
 add $0,2
-add $0,$0
-add $0,$0
-add $0,$0
+mul $0,8
 lpb $0,1
   add $2,$0
   sub $0,1

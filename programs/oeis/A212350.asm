@@ -1,7 +1,7 @@
 ; A212350: Maximal number of "good" manifolds in an n-serial polytope.
 ; 6,8,12,20,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072,262144,524288,1048576
 
-add $3,2
+mov $3,2
 mov $4,$3
 mov $1,4
 sub $1,$0

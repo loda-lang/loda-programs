@@ -5,4 +5,4 @@ lpb $0,1
   add $1,$0
   sub $0,1
 lpe
-mul $1,$1
+pow $1,2

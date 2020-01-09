@@ -3,8 +3,7 @@
 
 lpb $0,1
   add $2,6
-  add $2,$2
-  add $2,$2
+  mul $2,4
   sub $0,1
   add $3,6
   add $4,$3

@@ -5,7 +5,7 @@ mov $2,$0
 mul $0,2
 mov $1,$0
 div $1,20
-add $1,$1
+mul $1,2
 mov $4,$2
 mov $3,$4
 add $1,$3

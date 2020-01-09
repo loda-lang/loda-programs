@@ -6,8 +6,7 @@ add $0,1
 mul $0,4
 lpb $0,1
   add $1,$0
-  add $1,$1
-  mul $1,4
+  mul $1,8
   div $1,4
   add $2,1
   mod $0,$2

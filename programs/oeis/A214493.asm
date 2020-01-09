@@ -18,7 +18,7 @@ sub $2,1
 add $1,$2
 add $2,$1
 mov $1,$2
-add $2,$2
+mul $2,2
 sub $1,2
 add $1,$2
 add $1,7

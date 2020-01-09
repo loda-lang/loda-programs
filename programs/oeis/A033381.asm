@@ -8,5 +8,5 @@ mul $1,7
 sub $1,$2
 mul $1,2
 sub $1,5
-add $3,$0
+mov $3,$0
 div $1,$3

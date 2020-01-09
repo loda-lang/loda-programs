@@ -9,7 +9,7 @@ lpb $0,1
   add $1,$0
 lpe
 add $1,1
-add $1,$1
+mul $1,2
 add $1,127
 mov $6,$5
 mov $2,160

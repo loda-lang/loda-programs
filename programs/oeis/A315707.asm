@@ -12,7 +12,7 @@ mov $3,$0
 add $4,$3
 sub $1,2
 mov $0,$1
-add $0,$0
+mul $0,2
 sub $0,1
 add $0,3
 lpb $0,1

@@ -9,7 +9,7 @@ mov $3,$4
 mod $0,$3
 add $1,$4
 sub $1,$0
-add $1,$1
+mul $1,2
 sub $1,10
 mov $6,$5
 mov $2,$6

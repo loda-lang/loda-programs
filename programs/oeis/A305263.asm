@@ -4,9 +4,9 @@
 mov $3,3
 add $3,5
 mov $5,$3
-add $1,3
+mov $1,3
 add $0,5
-add $2,5
+mov $2,5
 add $5,$2
 add $1,$5
 add $5,2

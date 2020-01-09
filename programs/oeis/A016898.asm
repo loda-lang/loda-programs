@@ -6,4 +6,4 @@ lpb $0,1
   add $1,5
 lpe
 add $1,4
-mul $1,$1
+pow $1,2

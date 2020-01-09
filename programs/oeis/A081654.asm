@@ -6,5 +6,5 @@ mov $2,$0
 pow $1,$0
 lpb $2,1
   mod $2,$0
-  add $1,$1
+  mul $1,2
 lpe

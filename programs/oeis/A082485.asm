@@ -16,7 +16,7 @@ lpe
 sub $1,$0
 sub $2,6
 add $1,$2
-add $1,$1
+mul $1,2
 add $1,3
 mov $8,$7
 mov $3,7

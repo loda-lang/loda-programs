@@ -5,8 +5,8 @@ lpb $0,1
   add $1,5
   sub $0,1
 lpe
-add $1,$1
+mul $1,2
 add $1,2
-mul $1,$1
+pow $1,2
 add $2,$1
 mul $1,$2

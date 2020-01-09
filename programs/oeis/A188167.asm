@@ -4,7 +4,7 @@
 mov $2,$0
 gcd $1,$0
 add $1,$0
-add $4,$0
+mov $4,$0
 gcd $3,$0
 mod $2,4
 lpb $2,1

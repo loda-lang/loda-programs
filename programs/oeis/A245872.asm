@@ -7,7 +7,7 @@ mov $2,$0
 gcd $1,2
 lpb $2,1
   add $1,$2
-  add $1,$1
+  mul $1,2
   gcd $2,2
   sub $2,1
 lpe

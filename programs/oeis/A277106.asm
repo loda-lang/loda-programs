@@ -9,6 +9,6 @@ lpb $0,1
   add $1,4
   mov $2,$3
   add $2,$1
-  add $2,$2
+  mul $2,2
 lpe
 sub $1,10

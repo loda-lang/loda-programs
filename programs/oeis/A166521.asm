@@ -15,5 +15,5 @@ lpb $0,1
 lpe
 add $2,1
 add $3,$2
-add $1,$1
+mul $1,2
 add $1,$3

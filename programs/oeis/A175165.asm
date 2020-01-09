@@ -4,5 +4,5 @@
 lpb $0,1
   sub $0,1
   add $1,16
-  add $1,$1
+  mul $1,2
 lpe

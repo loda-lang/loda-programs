@@ -4,5 +4,5 @@
 mul $0,2
 mov $1,1
 add $1,$0
-mul $1,$1
+pow $1,2
 add $1,2

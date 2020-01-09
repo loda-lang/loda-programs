@@ -14,5 +14,5 @@ lpe
 add $4,$2
 mov $1,0
 add $1,$4
-add $1,$1
+mul $1,2
 add $1,7

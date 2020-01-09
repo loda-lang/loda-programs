@@ -13,6 +13,6 @@ lpb $0,1
   div $2,$3
   div $1,6
   sub $2,$1
-  mul $2,$2
+  pow $2,2
 lpe
 mul $1,$2

@@ -13,7 +13,7 @@ lpb $2,1
     sub $0,6
     sub $1,2
   lpe
-  add $4,$4
+  mul $4,2
   lpb $4,1
     add $3,$1
     sub $4,1

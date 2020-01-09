@@ -14,7 +14,7 @@ lpb $0,1
     add $1,$3
     sub $4,1
   lpe
-  add $1,$1
+  mul $1,2
   add $1,$3
 lpe
 lpb $5,1

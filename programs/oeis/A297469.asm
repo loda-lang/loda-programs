@@ -4,11 +4,11 @@
 mov $6,$0
 mov $4,4
 pow $4,4
-add $2,$4
-add $3,$2
+mov $2,$4
+mov $3,$2
 gcd $3,$0
 mod $3,3
-add $1,$3
+mov $1,$3
 sub $1,1
 gcd $1,2
 mov $7,$6

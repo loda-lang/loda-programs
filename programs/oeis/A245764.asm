@@ -9,7 +9,7 @@ lpb $2,1
   add $1,$0
   sub $4,$2
   lpb $0,1
-    add $1,$1
+    mul $1,2
     lpb $3,$4
       mov $0,$2
       mov $4,$3

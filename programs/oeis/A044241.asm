@@ -17,7 +17,7 @@ mov $2,5
 add $1,$2
 div $3,3
 mod $0,$3
-add $1,$1
+mul $1,2
 sub $1,$2
 div $0,$0
 lpb $0,1

@@ -7,6 +7,6 @@ mov $4,3
 pow $4,4
 gcd $3,$4
 div $3,2
-add $2,4
+mov $2,4
 mov $1,$3
 mod $1,$2

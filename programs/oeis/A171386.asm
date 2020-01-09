@@ -4,5 +4,5 @@
 lpb $0,1
   sub $0,1
   mov $1,1
-  mul $0,$0
+  pow $0,2
 lpe

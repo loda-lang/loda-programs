@@ -5,9 +5,9 @@ mov $5,4
 mov $4,$0
 sub $5,$4
 sub $5,$0
-add $2,$4
+mov $2,$4
 sub $5,$2
-add $1,1
+mov $1,1
 add $5,$1
 mov $2,2
 sub $4,$4

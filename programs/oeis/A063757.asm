@@ -11,6 +11,6 @@ lpb $0,1
   mov $5,$3
   add $3,1
   mov $2,$3
-  add $2,$2
+  mul $2,2
 lpe
 mov $1,$5

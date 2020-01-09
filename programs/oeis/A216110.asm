@@ -5,7 +5,7 @@ mov $4,$0
 gcd $1,$0
 mul $1,2
 add $1,$0
-mul $1,$1
+pow $1,2
 mul $1,$0
 mul $1,2
 add $1,27

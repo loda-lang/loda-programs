@@ -4,8 +4,8 @@
 mov $4,$0
 mov $1,$0
 mul $1,5
-add $0,$0
-mul $0,$0
+mul $0,2
+pow $0,2
 mul $1,$0
 add $1,51
 mov $3,$4

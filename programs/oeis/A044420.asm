@@ -8,7 +8,7 @@ mod $0,$1
 add $1,3
 lpb $0,1
   mov $2,2
-  add $0,$0
+  mul $0,2
   mul $3,2
   add $0,$3
   add $1,2

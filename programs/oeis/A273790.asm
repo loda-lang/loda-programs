@@ -13,7 +13,7 @@ lpe
 mov $4,$1
 add $0,$4
 sub $3,$2
-add $4,$4
+mul $4,2
 add $3,$4
 add $1,1
 sub $3,4

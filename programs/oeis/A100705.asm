@@ -8,5 +8,5 @@ lpb $2,1
   add $1,$3
   sub $2,1
 lpe
-add $1,$1
+mul $1,2
 add $1,1
