@@ -3,6 +3,5 @@
 
 mov $1,$0
 fac $1
-div $2,0
 mul $1,2
 add $1,1

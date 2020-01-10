@@ -152,6 +152,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206723](http://oeis.org/A206723) ([L15 program](A206723.asm)): a(n) = 7*( ((3 + sqrt(5))/2)^n + ((3 - sqrt(5))/2)^n - 2 ).
 * [A206776](http://oeis.org/A206776) ([L12 program](A206776.asm)): a(n) = 3*a(n-1) + 2*a(n-2) for n>1, a(0)=2, a(1)=3.
 * [A206905](http://oeis.org/A206905) ([L08 program](A206905.asm)): n+[nr/t]+[ns/t], where []=floor, r=3, s=sqrt(3), t=1/s.
+* [A206906](http://oeis.org/A206906) ([L14 program](A206906.asm)): n+[ns/r]+[nt/r], where []=floor, r=1/3, s=sqrt(3), t=1/s.
 * [A206917](http://oeis.org/A206917) ([L14 program](A206917.asm)): Sum of binary palindromes in the half-open interval [2^(n-1), 2^n).
 * [A207020](http://oeis.org/A207020) ([L18 program](A207020.asm)): Number of n X 4 0..1 arrays avoiding 0 0 0 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
 * [A207106](http://oeis.org/A207106) ([L13 program](A207106.asm)): Number of n X 3 0..1 arrays avoiding 0 0 0 and 0 1 1 horizontally and 0 0 1 and 1 1 0 vertically.
@@ -230,7 +231,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210530](http://oeis.org/A210530) ([L07 program](A210530.asm)): T(n,k) = (k + 3*n - 2 - (k+n-2)*(-1)^(k+n))/2 n, k > 0, read by antidiagonals.
 * [A210569](http://oeis.org/A210569) ([L08 program](A210569.asm)): a(n) = (n-3)*(n-2)*(n-1)*n*(n+1)/30.
 * [A210622](http://oeis.org/A210622) ([L15 program](A210622.asm)): Decimal expansion of 377/120.
-* [A210645](http://oeis.org/A210645) ([L19 program](A210645.asm)): Area A of the  triangles such that A, the sides and one of the altitudes are four consecutive integers of an arithmetic progression d.
+* [A210645](http://oeis.org/A210645) ([L15 program](A210645.asm)): Area A of the  triangles such that A, the sides and one of the altitudes are four consecutive integers of an arithmetic progression d.
 * [A210675](http://oeis.org/A210675) ([L10 program](A210675.asm)): a(n)=a(n-1)+a(n-2)+n+4, a(0)=0, a(1)=1.
 * [A210678](http://oeis.org/A210678) ([L11 program](A210678.asm)): a(n)=a(n-1)+a(n-2)+n+2, a(0)=a(1)=1.
 * [A210695](http://oeis.org/A210695) ([L20 program](A210695.asm)): a(n) = 6*a(n-1) - a(n-2) + 6 with n>1, a(0)=0, a(1)=1.
@@ -2082,7 +2083,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274250](http://oeis.org/A274250) ([L14 program](A274250.asm)): Number of partitions of n^2 into at most three parts.
 * [A274309](http://oeis.org/A274309) ([L23 program](A274309.asm)): Related to integral generalized binomial coefficients of multiplicative functions (see Comments for precise definition).
 * [A274323](http://oeis.org/A274323) ([L05 program](A274323.asm)): Number of partitions of n^4 into at most two parts.
-* [A274324](http://oeis.org/A274324) ([L05 program](A274324.asm)): Number of partitions of n^3 into at most two parts.
+* [A274324](http://oeis.org/A274324) ([L04 program](A274324.asm)): Number of partitions of n^3 into at most two parts.
 * [A274325](http://oeis.org/A274325) ([L04 program](A274325.asm)): Number of partitions of n^5 into at most two parts.
 * [A274338](http://oeis.org/A274338) ([L17 program](A274338.asm)): The 10-cycle of the iterated sum of deficient divisors function.
 * [A274339](http://oeis.org/A274339) ([L10 program](A274339.asm)): The 3-cycle of the iterated sum of deficient divisors function.
@@ -2125,7 +2126,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A275796](http://oeis.org/A275796) ([L16 program](A275796.asm)): One half of the y members of the positive proper solutions (x = x2(n), y = y2(n)) of the second class for the Pell equation x^2 - 2*y^2 = +7^2.
 * [A275874](http://oeis.org/A275874) ([L08 program](A275874.asm)): a(n) = (n-4)*(n+1)*(n+3)/6.
 * [A275910](http://oeis.org/A275910) ([L07 program](A275910.asm)): Numbers not congruent to 0, 1 or 8 mod 9.
-* [A275929](http://oeis.org/A275929) ([L12 program](A275929.asm)): a(n) = 2*(n-1)! + n + 1.
+* [A275929](http://oeis.org/A275929) ([L09 program](A275929.asm)): a(n) = 2*(n-1)! + n + 1.
 * [A275970](http://oeis.org/A275970) ([L08 program](A275970.asm)): a(n) = 3*2^n + n - 1.
 * [A275973](http://oeis.org/A275973) ([L14 program](A275973.asm)): A binary sequence due to Harold Jeffreys.
 * [A276026](http://oeis.org/A276026) ([L09 program](A276026.asm)): a(n) = Sum_{k=0..7} (n + k)^2.
@@ -2668,6 +2669,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298785](http://oeis.org/A298785) ([L12 program](A298785.asm)): Partial sums of A298784.
 * [A298786](http://oeis.org/A298786) ([L09 program](A298786.asm)): Expansion of (x^4 + 2*x^3 + 4*x^2 + 2*x + 1) / ((1 - x)*(1 - x^3)).
 * [A298787](http://oeis.org/A298787) ([L14 program](A298787.asm)): Partial sums of A298786.
+* [A298788](http://oeis.org/A298788) ([L17 program](A298788.asm)): Coordination sequence for bey tiling (or net) with respect to a trivalent node.
 * [A298789](http://oeis.org/A298789) ([L23 program](A298789.asm)): Coordination sequence for bey tiling (or net) with respect to a tetravalent node.
 * [A298791](http://oeis.org/A298791) ([L14 program](A298791.asm)): Partial sums of A298789.
 * [A298881](http://oeis.org/A298881) ([L10 program](A298881.asm)): a(0) = 0; for n>0, a(n) = 6*n!.

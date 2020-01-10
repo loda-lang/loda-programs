@@ -5,7 +5,4 @@ gcd $2,$0
 fac $2
 mov $1,$2
 add $1,1
-sub $0,$0
-sub $2,1
 div $1,2
-gcd $2,4

@@ -1894,7 +1894,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A141518](http://oeis.org/A141518) ([L04 program](A141518.asm)): Period 5: repeat [1, 3, 5, 7, 9].
 * [A141523](http://oeis.org/A141523) ([L21 program](A141523.asm)): Expansion of (3-2*x-3*x^2)/(1-x-x^2-x^3).
 * [A141529](http://oeis.org/A141529) ([L18 program](A141529.asm)): A cyclotomic Binet solution for the first 11 primes: solution of a set of linear equations with cyclotomic polynomial roots; roots: r[i]->(x^11-1): a(n)=Sum[r(i)^n*c(i),{i,1,11}].
-* [A141571](http://oeis.org/A141571) ([L11 program](A141571.asm)): Decimal expansion of 11999/99900.
+* [A141571](http://oeis.org/A141571) ([L10 program](A141571.asm)): Decimal expansion of 11999/99900.
 * [A141631](http://oeis.org/A141631) ([L07 program](A141631.asm)): 3*n^2 - 4*n + 3.
 * [A141694](http://oeis.org/A141694) ([L03 program](A141694.asm)): a(n) = 22*n + 12.
 * [A141721](http://oeis.org/A141721) ([L17 program](A141721.asm)): A141631(n) mod 10.
@@ -2818,8 +2818,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158953](http://oeis.org/A158953) ([L03 program](A158953.asm)): Trajectory of 12 under repeated application of the map n --> A102370(n) .
 * [A159007](http://oeis.org/A159007) ([L33 program](A159007.asm)): Numbers k such that k == 32 or 41 (mod 73).
 * [A159008](http://oeis.org/A159008) ([L17 program](A159008.asm)): Positive numbers k such that k^2 == 2 (mod 89).
-* [A159026](http://oeis.org/A159026) ([L26 program](A159026.asm)): a(0)=89; a(n)=a(n-1)+[sqrt(a(n-1)], n>0 .
-* [A159027](http://oeis.org/A159027) ([L24 program](A159027.asm)): a(0)=109; a(n)=a(n-1)+[sqrt(a(n-1)], n>0 .
+* [A159026](http://oeis.org/A159026) ([L26 program](A159026.asm)): a(0)=89; a(n) = a(n-1) + floor(sqrt(a(n-1))), n > 0.
+* [A159027](http://oeis.org/A159027) ([L24 program](A159027.asm)): a(0)=109; a(n) = a(n-1) + floor(sqrt(a(n-1))), n > 0.
 * [A159035](http://oeis.org/A159035) ([L09 program](A159035.asm)): a(0)=1=a(1), a(2)=2, a(3)=5; thereafter a(n+3)=4*a(n+2)-4*a(n+1)+2*a(n) for n>=1.
 * [A159058](http://oeis.org/A159058) ([L14 program](A159058.asm)): A102370(n) modulo 8 .
 * [A159217](http://oeis.org/A159217) ([L11 program](A159217.asm)): 1/8 the number of n X n arrays of squares of integers with every 2X2 subblock summing to 17
@@ -3212,7 +3212,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167426](http://oeis.org/A167426) ([L13 program](A167426.asm)): a(n) = 2^n mod 28.
 * [A167463](http://oeis.org/A167463) ([L05 program](A167463.asm)): a(n) = n mod 15.
 * [A167465](http://oeis.org/A167465) ([L16 program](A167465.asm)): n^5 mod 16.
-* [A167467](http://oeis.org/A167467) ([L23 program](A167467.asm)): a(n) = 25*n^3 - n*(5*n+1)/2 + 1.
+* [A167467](http://oeis.org/A167467) ([L20 program](A167467.asm)): a(n) = 25*n^3 - n*(5*n+1)/2 + 1.
 * [A167469](http://oeis.org/A167469) ([L09 program](A167469.asm)): a(n) = 3*n*(5*n-1)/2.
 * [A167471](http://oeis.org/A167471) ([L12 program](A167471.asm)): Janet periodic table of the elements and structured hexagonal diamond numbers. a(n) = A166911(2n) + A166911(2n+1).
 * [A167477](http://oeis.org/A167477) ([L07 program](A167477.asm)): Expansion of (1-3x+5x^2-x^3)/(1-3x+x^2)^2.
@@ -4565,6 +4565,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191489](http://oeis.org/A191489) ([L11 program](A191489.asm)): Number of compositions of even natural numbers into 6 parts <= n.
 * [A191593](http://oeis.org/A191593) ([L14 program](A191593.asm)): Number of partitions of 12*n into parts < 5.
 * [A191610](http://oeis.org/A191610) ([L08 program](A191610.asm)): Possible number of trailing zeros in n! (complement of A000966).
+* [A191662](http://oeis.org/A191662) ([L08 program](A191662.asm)): a(n) = n! / A000034(n-1).
 * [A191680](http://oeis.org/A191680) ([L09 program](A191680.asm)): Number of compositions of odd natural numbers into 9 parts <= n.
 * [A191681](http://oeis.org/A191681) ([L04 program](A191681.asm)): a(n) = (9^n - 1)/2.
 * [A191682](http://oeis.org/A191682) ([L07 program](A191682.asm)): Twice A113473.

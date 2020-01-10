@@ -3,7 +3,6 @@
 
 mov $2,$0
 gcd $1,$2
-mul $2,2
 fac $0
 mov $3,$2
 fac $1
@@ -16,8 +15,5 @@ lpb $2,1
     gcd $1,$0
     sub $4,$3
     pow $4,$0
-  lpe
-  lpb $0,1
-    sub $0,1
   lpe
 lpe

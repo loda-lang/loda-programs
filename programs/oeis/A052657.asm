@@ -4,7 +4,4 @@
 mov $1,$0
 div $0,2
 fac $1
-lpb $0,1
-  div $3,$2
-lpe
 mul $1,$0
