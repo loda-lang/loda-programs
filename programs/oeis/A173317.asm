@@ -5,11 +5,6 @@ fac $0
 mov $1,5
 lpb $0,1
   pow $2,$3
-  fac $1
-  mul $1,4
-  sub $0,1
-  add $3,2
-  add $0,$2
 lpe
 mul $1,$0
 sub $1,1

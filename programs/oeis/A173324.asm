@@ -5,7 +5,3 @@ fac $0
 mov $1,3
 mul $1,$0
 add $1,1
-lpb $0,1
-  mul $0,$2
-  mod $0,$0
-lpe

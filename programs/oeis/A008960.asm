@@ -5,7 +5,4 @@ mov $1,$0
 mov $2,5
 mul $2,2
 pow $1,3
-lpb $0,1
-  mod $0,$3
-lpe
 mod $1,$2

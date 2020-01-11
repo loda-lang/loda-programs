@@ -5,8 +5,5 @@ mul $0,2
 add $0,1
 pow $0,4
 div $0,2
-lpb $0,1
-  div $2,$1
-lpe
 gcd $1,$0
 add $1,1

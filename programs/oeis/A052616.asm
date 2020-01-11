@@ -8,8 +8,3 @@ gcd $0,2
 mov $2,$0
 mul $3,$2
 add $1,$3
-add $1,2
-lpb $0,1
-  mul $0,2
-lpe
-sub $1,2

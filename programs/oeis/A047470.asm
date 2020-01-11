@@ -4,7 +4,4 @@
 mov $1,4
 mul $1,$0
 mod $0,2
-lpb $0,1
-  mod $0,$2
-lpe
 sub $1,$0

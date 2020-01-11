@@ -5,5 +5,4 @@ gcd $1,$0
 mod $0,3
 add $1,$0
 sub $1,1
-mod $0,$0
 add $1,1
