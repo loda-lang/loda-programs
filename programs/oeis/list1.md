@@ -124,6 +124,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101213](http://oeis.org/A101213) ([L66 program](A101213.asm)): a(n) = n * (n+1)^2 * (n+2)^3.
 * [A101265](http://oeis.org/A101265) ([L09 program](A101265.asm)): a(1) = 1, a(2) = 2, a(3) = 6; a(n) = 5*a(n-1) - 5*a(n-2) + a(n-3) for n>3.
 * [A101272](http://oeis.org/A101272) ([L04 program](A101272.asm)): a(n)=n, n <=6; a(n)=6, n > 6.
+* [A101292](http://oeis.org/A101292) ([L14 program](A101292.asm)): a(n) = n! + Sum_{i=1..n} i.
 * [A101328](http://oeis.org/A101328) ([L06 program](A101328.asm)): Recurring numbers in the count of consecutive composite numbers between balanced primes and their lower or upper prime neighbors.
 * [A101338](http://oeis.org/A101338) ([L10 program](A101338.asm)): Antidiagonal sums in A101321.
 * [A101357](http://oeis.org/A101357) ([L07 program](A101357.asm)): Partial sums of A060354.
@@ -434,6 +435,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109045](http://oeis.org/A109045) ([L04 program](A109045.asm)): a(n) = lcm(n,4).
 * [A109046](http://oeis.org/A109046) ([L05 program](A109046.asm)): a(n) = lcm(n, 5).
 * [A109047](http://oeis.org/A109047) ([L10 program](A109047.asm)): a(n) = lcm(n, 6).
+* [A109048](http://oeis.org/A109048) ([L13 program](A109048.asm)): a(n) = lcm(n, 7).
 * [A109094](http://oeis.org/A109094) ([L12 program](A109094.asm)): Length of the longest path (repeated edges not allowed) between two arbitrary, distinct nodes in K_n, the complete graph on n vertices.
 * [A109112](http://oeis.org/A109112) ([L10 program](A109112.asm)): a(n) = 6*a(n-1) - 3*a(n-2), a(0)=2, a(1)=13.
 * [A109114](http://oeis.org/A109114) ([L12 program](A109114.asm)): a(n) = 5*a(n-1) - 3*a(n-2), a(0)=1, a(1)=6.
@@ -558,6 +560,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A112415](http://oeis.org/A112415) ([L11 program](A112415.asm)): a(n) = C(1+n,1) * C(2+n,1) * C(4+n,2).
 * [A112421](http://oeis.org/A112421) ([L06 program](A112421.asm)): Number of 6 element subsets of {1,2,3,...,n} for which the sum-set has 12 elements.
 * [A112524](http://oeis.org/A112524) ([L08 program](A112524.asm)): a(1)=1; a(n) = a(n-1) + 2*n^2.
+* [A112539](http://oeis.org/A112539) ([L11 program](A112539.asm)): Half-baked Thue-Morse: at successive steps the sequence or its bit-inverted form is appended to itself.
 * [A112557](http://oeis.org/A112557) ([L14 program](A112557.asm)): Smallest number of stones in Tchoukaillon (or Mancala, or Kalahari) solitaire which make use of (2*n-1)-th hole for n>=1; a bisection of A002491.
 * [A112558](http://oeis.org/A112558) ([L11 program](A112558.asm)): Generalized Mancala solitaire (A002491); to get n-th term, start with n and successively round up to next 4 multiples of n-1, n-2, ..., 1, for n>=1.
 * [A112560](http://oeis.org/A112560) ([L14 program](A112560.asm)): Sieve performed by successive iterations of steps where step m is: keep m terms, remove the next 2 and repeat; as m = 1,2,3,.. the remaining terms form this sequence.
@@ -640,6 +643,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A114752](http://oeis.org/A114752) ([L10 program](A114752.asm)): a(2n)=2n, a(2n+1)=4n+1.
 * [A114753](http://oeis.org/A114753) ([L05 program](A114753.asm)): First column of A114751.
 * [A114799](http://oeis.org/A114799) ([L07 program](A114799.asm)): Septuple factorial, 7-factorial, n!7, n!!!!!!!, a(n) = n*a(n-7) if n > 1, else 1.
+* [A114806](http://oeis.org/A114806) ([L06 program](A114806.asm)): Nonuple factorial, 9-factorial, n!9, n!!!!!!!!!.
 * [A114948](http://oeis.org/A114948) ([L04 program](A114948.asm)): n^2 + 10.
 * [A114949](http://oeis.org/A114949) ([L03 program](A114949.asm)): a(n) = n^2 + 6.
 * [A114955](http://oeis.org/A114955) ([L15 program](A114955.asm)): A 2/3-power Fibonacci sequence.
@@ -1072,6 +1076,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127980](http://oeis.org/A127980) ([L16 program](A127980.asm)): a(n) = (n + 2/3)*2^(n-1) - 1/2 - (-1)^(n-1)*(1/6).
 * [A127981](http://oeis.org/A127981) ([L17 program](A127981.asm)): a(n) = (n + 1/3)*2^(n-1) - 1/2 + (-1)^(n-1)*(1/6).
 * [A127985](http://oeis.org/A127985) ([L14 program](A127985.asm)): a(n) = floor(2^n*(n/3 + 4/9)).
+* [A127986](http://oeis.org/A127986) ([L08 program](A127986.asm)): a(n) = n! + 2^n - 1.
 * [A127989](http://oeis.org/A127989) ([L09 program](A127989.asm)): a(n) = 2*n^3 - 2*n + 9.
 * [A128012](http://oeis.org/A128012) ([L14 program](A128012.asm)): 3*A001399(n).
 * [A128054](http://oeis.org/A128054) ([L09 program](A128054.asm)): Count, omitting numbers of the form 6k+4 and doubling multiples of 6.
@@ -3211,7 +3216,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167381](http://oeis.org/A167381) ([L07 program](A167381.asm)): The numbers read down the left-center column of an arrangement of the natural numbers in square blocks.
 * [A167420](http://oeis.org/A167420) ([L08 program](A167420.asm)): 2^n mod 14.
 * [A167426](http://oeis.org/A167426) ([L13 program](A167426.asm)): a(n) = 2^n mod 28.
-* [A167463](http://oeis.org/A167463) ([L05 program](A167463.asm)): a(n) = n mod 15.
+* [A167463](http://oeis.org/A167463) ([L04 program](A167463.asm)): a(n) = n mod 15.
 * [A167465](http://oeis.org/A167465) ([L16 program](A167465.asm)): n^5 mod 16.
 * [A167467](http://oeis.org/A167467) ([L20 program](A167467.asm)): a(n) = 25*n^3 - n*(5*n+1)/2 + 1.
 * [A167469](http://oeis.org/A167469) ([L09 program](A167469.asm)): a(n) = 3*n*(5*n-1)/2.
@@ -3736,6 +3741,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A172513](http://oeis.org/A172513) ([L17 program](A172513.asm)): Complement of A167389.
 * [A172968](http://oeis.org/A172968) ([L08 program](A172968.asm)): a(n) = 7*a(n-1) - a(n-2) for n>1, a(0)=1, a(1)=2.
 * [A173009](http://oeis.org/A173009) ([L13 program](A173009.asm)): The mean value m(n) = sum(k*p(n,k), k = 0 .. 2^n-n-1) of the distribution function p(n,k) := binomial(2^n-n-1, k)/2^(2^n-n-1) is 0., 0.5, 2., 5.5, 13., 28.5, 60., 123.5, 251., 506.5, 1018., 2041.5, 4089., 8184.5... We set A173009(n)=round(m(n)).
+* [A173010](http://oeis.org/A173010) ([L10 program](A173010.asm)): The variance v(n) = sum((k-m(n))^2*p(n,k), k = 0 .. 2^n-n-1) of the distribution function p(n,k) := binomial(2^n-n-1, k)/2^(2^n-n-1) with m(n) its mean value is 0., 0.25, 1., 2.75, 6.5, 14.25, 30., 61.75, 125.5, 253.25, 509., 1020.75, 2044.5, 4092.25, 8188... We set A173010(n)= round(v(n)).
 * [A173012](http://oeis.org/A173012) ([L06 program](A173012.asm)): a(1) = 1, for n >= 2; a(n) = the smallest number h such that sigma(h) = A000203(h) = a(n-1) + 2, a(n) = 0 if no such number exists.
 * [A173013](http://oeis.org/A173013) ([L14 program](A173013.asm)): a(1) = 1, for n >= 2; a(n) = the smallest number h such that sigma(h) = A000203(h) = a(n-1) + 3, a(n) = 0 if no such number exists.
 * [A173033](http://oeis.org/A173033) ([L07 program](A173033.asm)): Second diagonal under the main diagonal in A172119 written in a square (see comment).
@@ -3766,7 +3772,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173309](http://oeis.org/A173309) ([L12 program](A173309.asm)): 19*n*(n+1).
 * [A173314](http://oeis.org/A173314) ([L04 program](A173314.asm)): a(n) = 6*n!+1.
 * [A173316](http://oeis.org/A173316) ([L09 program](A173316.asm)): 6*n! - 1.
-* [A173317](http://oeis.org/A173317) ([L07 program](A173317.asm)): 5*n! - 1.
+* [A173317](http://oeis.org/A173317) ([L04 program](A173317.asm)): 5*n! - 1.
 * [A173319](http://oeis.org/A173319) ([L04 program](A173319.asm)): 5*n! + 1.
 * [A173321](http://oeis.org/A173321) ([L05 program](A173321.asm)): a(n) = 4*n! - 1.
 * [A173322](http://oeis.org/A173322) ([L04 program](A173322.asm)): 4*n! + 1.
@@ -4775,7 +4781,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195048](http://oeis.org/A195048) ([L13 program](A195048.asm)): Concentric 19-gonal numbers.
 * [A195049](http://oeis.org/A195049) ([L12 program](A195049.asm)): Concentric 21-gonal numbers.
 * [A195058](http://oeis.org/A195058) ([L13 program](A195058.asm)): Concentric 23-gonal numbers.
-* [A195062](http://oeis.org/A195062) ([L12 program](A195062.asm)): Period 7: repeat [1, 0, 1, 0, 1, 0, 1].
+* [A195062](http://oeis.org/A195062) ([L04 program](A195062.asm)): Period 7: repeat [1, 0, 1, 0, 1, 0, 1].
 * [A195140](http://oeis.org/A195140) ([L12 program](A195140.asm)): Multiples of 5 and odd numbers interleaved.
 * [A195142](http://oeis.org/A195142) ([L09 program](A195142.asm)): Concentric 10-gonal numbers.
 * [A195143](http://oeis.org/A195143) ([L09 program](A195143.asm)): a(n) = n-th concentric 12-gonal number.

@@ -250,7 +250,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307808](http://oeis.org/A307808) ([L11 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
 * [A307921](http://oeis.org/A307921) ([L14 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
-* [A307939](http://oeis.org/A307939) ([L17 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
+* [A307939](http://oeis.org/A307939) ([L16 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
 * [A307985](http://oeis.org/A307985) ([L10 program](A307985.asm)): Number of integer-sided triangles with perimeter n and sides a, b, and c such that a <= b <= c and b|n.
 * [A308124](http://oeis.org/A308124) ([L06 program](A308124.asm)): a(n) = (2 + 7*4^n)/3.
 * [A308136](http://oeis.org/A308136) ([L18 program](A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.

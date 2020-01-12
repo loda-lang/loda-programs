@@ -4,7 +4,6 @@
 mov $1,$0
 mov $2,$0
 fac $0
-fac $3
 add $1,2
 mul $1,$0
 lpb $2,1
@@ -12,6 +11,5 @@ lpb $2,1
   mov $2,$3
   fac $4
   add $1,$4
-  sub $2,1
 lpe
 sub $1,1

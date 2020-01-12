@@ -9,8 +9,5 @@ pow $1,$0
 add $1,$2
 gcd $3,2
 sub $1,$0
-lpb $0,1
-  add $0,2
-lpe
 div $1,$3
 div $1,2
