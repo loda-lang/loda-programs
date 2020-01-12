@@ -460,6 +460,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214411](http://oeis.org/A214411) ([L15 program](A214411.asm)): The maximum exponent k of 7 such that 7^k divides n.
 * [A214489](http://oeis.org/A214489) ([L16 program](A214489.asm)): Numbers m such that A070939(m) = A070939(m + A070939(m)), A070939 = length of binary representation.
 * [A214493](http://oeis.org/A214493) ([L21 program](A214493.asm)): Numbers of the form ((6k+5)^2+9)/2 or 2(3k+4)^2-9.
+* [A214587](http://oeis.org/A214587) ([L06 program](A214587.asm)): Greatest common divisor of a number and its last decimal digit: a(n) = gcd(n, n mod 10).
 * [A214656](http://oeis.org/A214656) ([L03 program](A214656.asm)): Floor of the imaginary part of the zeros of the complex Fibonacci function on the left half plane.
 * [A214659](http://oeis.org/A214659) ([L10 program](A214659.asm)): a(n) = n*(7*n^2 - 3*n - 1)/3.
 * [A214660](http://oeis.org/A214660) ([L08 program](A214660.asm)): 9*n^2 - 11*n + 3.
@@ -834,7 +835,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229489](http://oeis.org/A229489) ([L09 program](A229489.asm)): Conjecturally, possible differences between prime(k)^2 and the next prime for some k.
 * [A229504](http://oeis.org/A229504) ([L08 program](A229504.asm)): Number of defective 3-colorings of an n X 2 0..2 array connected diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.
 * [A229522](http://oeis.org/A229522) ([L16 program](A229522.asm)): Final digit (in decimal system) of (n^n)^n, i.e., (n^n)^n mod 10.
-* [A229554](http://oeis.org/A229554) ([L05 program](A229554.asm)): 7*n! + 1.
+* [A229554](http://oeis.org/A229554) ([L04 program](A229554.asm)): 7*n! + 1.
 * [A229572](http://oeis.org/A229572) ([L13 program](A229572.asm)): Number of defective 4-colorings of an n X 2 0..3 array connected horizontally, vertically, diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..3 order.
 * [A229573](http://oeis.org/A229573) ([L25 program](A229573.asm)): Number of defective 4-colorings of an n X 3 0..3 array connected horizontally, vertically, diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..3 order.
 * [A229580](http://oeis.org/A229580) ([L08 program](A229580.asm)): Number of defective 3-colorings of an n X 2 0..2 array connected horizontally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.
@@ -1143,6 +1144,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245023](http://oeis.org/A245023) ([L11 program](A245023.asm)): Number of cases of tie (no winner) in the n-person rock-paper-scissors game.
 * [A245033](http://oeis.org/A245033) ([L26 program](A245033.asm)): 4*(n + 7)^3 - 27*(n + 7)^2 = (4*n +1)*(n+7)^2.
 * [A245070](http://oeis.org/A245070) ([L19 program](A245070.asm)): Smallest positive non-divisor of the n-th Lucas number (A000032).
+* [A245087](http://oeis.org/A245087) ([L10 program](A245087.asm)): Largest number such that 2^a(n) is a divisor of (n!)!.
 * [A245301](http://oeis.org/A245301) ([L07 program](A245301.asm)): a(n) = n*(7*n^2 + 15*n + 8)/6.
 * [A245336](http://oeis.org/A245336) ([L09 program](A245336.asm)): Sum of digits of n written in fractional base 8/7.
 * [A245338](http://oeis.org/A245338) ([L10 program](A245338.asm)): Sum of digits of n written in fractional base 9/8.
@@ -1508,7 +1510,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258618](http://oeis.org/A258618) ([L10 program](A258618.asm)): a(n) = (4*n+9)*n^2.
 * [A258717](http://oeis.org/A258717) ([L11 program](A258717.asm)): If n even then 2*n^2-4*n else 2*n^2-4*n-3.
 * [A258721](http://oeis.org/A258721) ([L10 program](A258721.asm)): a(n) = 24*n^2 + 52*n + 29.
-* [A258806](http://oeis.org/A258806) ([L07 program](A258806.asm)): a(n) = n^7 + 1.
+* [A258806](http://oeis.org/A258806) ([L03 program](A258806.asm)): a(n) = n^7 + 1.
 * [A258807](http://oeis.org/A258807) ([L04 program](A258807.asm)): a(n) = n^5 - 1.
 * [A258808](http://oeis.org/A258808) ([L05 program](A258808.asm)): a(n) = n^7 - 1.
 * [A258809](http://oeis.org/A258809) ([L06 program](A258809.asm)): a(n) = n^8 - 1.
@@ -1539,7 +1541,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A259752](http://oeis.org/A259752) ([L03 program](A259752.asm)): a(n) = 24n + 6.
 * [A259754](http://oeis.org/A259754) ([L22 program](A259754.asm)): Numbers that are congruent to {3,9,15,18,21} mod 24.
 * [A259755](http://oeis.org/A259755) ([L09 program](A259755.asm)): Numbers that are congruent to {4,20} mod 24.
-* [A259821](http://oeis.org/A259821) ([L06 program](A259821.asm)): a(n) = floor( (3^n+1)^2/3^n ).
+* [A259821](http://oeis.org/A259821) ([L04 program](A259821.asm)): a(n) = floor( (3^n+1)^2/3^n ).
 * [A259968](http://oeis.org/A259968) ([L10 program](A259968.asm)): a(n) = a(n-1) + a(n-2) + a(n-4), with a(1)=1, a(2)=1, a(3)=3, a(4)=6.
 * [A259969](http://oeis.org/A259969) ([L12 program](A259969.asm)): a(n) = n*A259968(n).
 * [A260006](http://oeis.org/A260006) ([L07 program](A260006.asm)): a(n) = f(1,n,n), where f is the Sudan function defined in A260002.

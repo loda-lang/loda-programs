@@ -6,7 +6,3 @@ sub $0,2
 fac $1
 mov $2,$0
 mul $1,$2
-lpb $2,1
-  mod $0,$3
-  mul $1,$0
-lpe

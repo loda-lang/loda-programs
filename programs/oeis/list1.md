@@ -393,7 +393,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108051](http://oeis.org/A108051) ([L23 program](A108051.asm)): a(n+1) = 4*(a(n)+a(n-1)) for n>1, a(1)=1, a(2)=6.
 * [A108099](http://oeis.org/A108099) ([L07 program](A108099.asm)): a(n) = 8n^2 + 8n + 4.
 * [A108100](http://oeis.org/A108100) ([L05 program](A108100.asm)): (2*n-1)^2+(2*n+1)^2.
-* [A108105](http://oeis.org/A108105) ([L06 program](A108105.asm)): 2^floor(n/5).
+* [A108105](http://oeis.org/A108105) ([L04 program](A108105.asm)): 2^floor(n/5).
 * [A108118](http://oeis.org/A108118) ([L14 program](A108118.asm)): Integers not divisible by 3 or 4.
 * [A108120](http://oeis.org/A108120) ([L09 program](A108120.asm)): Floor[n*1/Sin[1]], or Beatty sequence for 1/sin(1).
 * [A108171](http://oeis.org/A108171) ([L54 program](A108171.asm)): Tribonacci version of A076662 using beta positive real Pisot root of x^3 - x^2 - x - 1.
@@ -458,12 +458,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109622](http://oeis.org/A109622) ([L17 program](A109622.asm)): Number of different isotemporal classes of diasters with n peripheral edges.
 * [A109678](http://oeis.org/A109678) ([L06 program](A109678.asm)): Sequence and first differences include all square numbers exactly once.
 * [A109718](http://oeis.org/A109718) ([L03 program](A109718.asm)): Periodic sequence with period {0,1,0,3}, or n^3 mod 4.
-* [A109720](http://oeis.org/A109720) ([L06 program](A109720.asm)): Periodic sequence {0,1,1,1,1,1,1} or n^6 mod 7.
+* [A109720](http://oeis.org/A109720) ([L03 program](A109720.asm)): Periodic sequence {0,1,1,1,1,1,1} or n^6 mod 7.
 * [A109753](http://oeis.org/A109753) ([L12 program](A109753.asm)): n^3 mod 8; the periodic sequence {0,1,0,3,0,5,0,7}.
 * [A109764](http://oeis.org/A109764) ([L13 program](A109764.asm)): Sum of the first n^2 squares.
 * [A109768](http://oeis.org/A109768) ([L05 program](A109768.asm)): a(n) = gcd(3^n-2,2^n-3).
 * [A109795](http://oeis.org/A109795) ([L10 program](A109795.asm)): a(n)= n*(1+floor(n/10)).
-* [A109808](http://oeis.org/A109808) ([L07 program](A109808.asm)): a(n) = 2*7^(n-1).
+* [A109808](http://oeis.org/A109808) ([L04 program](A109808.asm)): a(n) = 2*7^(n-1).
 * [A109900](http://oeis.org/A109900) ([L09 program](A109900.asm)): The (n,r)-th term of the following triangle is T(n)-T(r) for r = 0 to n. The n-th row contains n+1 terms. T(n) = the n-th triangular number = n(n+1)/2. Sequence contains the sum of terms at a 45-degree angle.
 * [A109961](http://oeis.org/A109961) ([L08 program](A109961.asm)): Expansion of (1-x)^3/(1-4x+5x^2-4x^3+x^4).
 * [A109975](http://oeis.org/A109975) ([L17 program](A109975.asm)): Second differences of A045623, prefixed by an initial 1.
@@ -1389,7 +1389,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132209](http://oeis.org/A132209) ([L06 program](A132209.asm)): a(0) = 0 and a(n) = 2*n^2 + 2*n - 1, for n>=1.
 * [A132222](http://oeis.org/A132222) ([L12 program](A132222.asm)): Beatty sequence 1+2*floor(n*Pi/2), which contains infinitely many primes.
 * [A132226](http://oeis.org/A132226) ([L12 program](A132226.asm)): Placement sequence for the dense normalized fractal sequence A132224.
-* [A132270](http://oeis.org/A132270) ([L03 program](A132270.asm)): a(n) = floor((n^7-1)/(7*n^6)), which is the same as integers repeated 7 times.
+* [A132270](http://oeis.org/A132270) ([L02 program](A132270.asm)): a(n) = floor((n^7-1)/(7*n^6)), which is the same as integers repeated 7 times.
 * [A132271](http://oeis.org/A132271) ([L06 program](A132271.asm)): Product{k>=0, 1+floor(n/10^k)}.
 * [A132272](http://oeis.org/A132272) ([L03 program](A132272.asm)): Product{k>0, 1+floor(n/10^k)}.
 * [A132292](http://oeis.org/A132292) ([L02 program](A132292.asm)): Integers repeated 8 times: a(n) = floor((n-1)/8).
@@ -1435,7 +1435,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132765](http://oeis.org/A132765) ([L06 program](A132765.asm)): a(n) = n*(n + 23).
 * [A132766](http://oeis.org/A132766) ([L05 program](A132766.asm)): a(n) = n*(n+24).
 * [A132767](http://oeis.org/A132767) ([L07 program](A132767.asm)): a(n) = n*(n + 25).
-* [A132768](http://oeis.org/A132768) ([L09 program](A132768.asm)): a(n) = n*(n + 26).
+* [A132768](http://oeis.org/A132768) ([L05 program](A132768.asm)): a(n) = n*(n + 26).
 * [A132769](http://oeis.org/A132769) ([L07 program](A132769.asm)): a(n) = n*(n + 27).
 * [A132770](http://oeis.org/A132770) ([L07 program](A132770.asm)): a(n) = n*(n + 28).
 * [A132771](http://oeis.org/A132771) ([L07 program](A132771.asm)): a(n) = n*(n + 29).
@@ -1682,6 +1682,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136396](http://oeis.org/A136396) ([L11 program](A136396.asm)): 1+n*(n+1)*(n^2-n+12)/12.
 * [A136412](http://oeis.org/A136412) ([L07 program](A136412.asm)): a(n) = (5*4^n+1)/3.
 * [A136521](http://oeis.org/A136521) ([L14 program](A136521.asm)): Triangle read by rows: (1, 2, 2, 2,...) on the main diagonal and the rest zeros.
+* [A136580](http://oeis.org/A136580) ([L12 program](A136580.asm)): Row sums of triangle A136579.
 * [A136616](http://oeis.org/A136616) ([L27 program](A136616.asm)): a(n) = largest m with H(m) - H(n) <= 1, where H(i) = sum{j=1 to i} 1/j, the i-th harmonic number, H(0)=0.
 * [A136619](http://oeis.org/A136619) ([L06 program](A136619.asm)): a(1) = 1, then repeat period 3: [1, 4, 2].
 * [A136724](http://oeis.org/A136724) ([L12 program](A136724.asm)): Numbers divisible by 4 that are not powers of 2.
@@ -2085,7 +2086,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A146099](http://oeis.org/A146099) ([L44 program](A146099.asm)): Bell numbers (A000110) read mod 9.
 * [A146108](http://oeis.org/A146108) ([L44 program](A146108.asm)): Bell numbers (A000110) read mod 18.
 * [A146160](http://oeis.org/A146160) ([L05 program](A146160.asm)): Period 4: repeat [1, 4, 1, 16].
-* [A146301](http://oeis.org/A146301) ([L09 program](A146301.asm)): a(n) = (8*n+3)*(8*n+7)
+* [A146301](http://oeis.org/A146301) ([L07 program](A146301.asm)): a(n) = (8*n+3)*(8*n+7)
 * [A146302](http://oeis.org/A146302) ([L07 program](A146302.asm)): a(n) = (8*n+5)*(8*n+9).
 * [A146308](http://oeis.org/A146308) ([L09 program](A146308.asm)): a(n) is the smallest k such that the numerator of (k-6)/(2k) equals n.
 * [A146325](http://oeis.org/A146325) ([L04 program](A146325.asm)): Period 3: repeat [1, 4, 1].
@@ -4539,7 +4540,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190577](http://oeis.org/A190577) ([L56 program](A190577.asm)): a(n) = n*(n+2)*(n+4)*(n+6).
 * [A190578](http://oeis.org/A190578) ([L04 program](A190578.asm)): a(n) = n^7 + n.
 * [A190582](http://oeis.org/A190582) ([L19 program](A190582.asm)): Generalized McCarthy function: a(n) = n - s if n > c; otherwise, a(n) = a(a(n+t)) with d = t - s > 0, with parameters t=15, s=9, c=21.
-* [A190621](http://oeis.org/A190621) ([L07 program](A190621.asm)): a(n) = n if n is not divisible by 4, otherwise 0.
+* [A190621](http://oeis.org/A190621) ([L05 program](A190621.asm)): a(n) = n if n is not divisible by 4, otherwise 0.
 * [A190693](http://oeis.org/A190693) ([L49 program](A190693.asm)): [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(3),4,0) and [ ]=floor.
 * [A190705](http://oeis.org/A190705) ([L09 program](A190705.asm)): a(n) = 6*n^2*(2*n + 1).
 * [A190710](http://oeis.org/A190710) ([L52 program](A190710.asm)): [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(3),4,3) and [ ]=floor.

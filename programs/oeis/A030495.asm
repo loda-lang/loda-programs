@@ -8,7 +8,4 @@ add $0,$3
 fac $0
 add $2,$0
 mod $0,2
-lpb $0,1
-  sub $0,4
-lpe
 mov $1,$2

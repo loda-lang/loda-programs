@@ -21111,3 +21111,10 @@ A056833: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T02.asm
 A317326: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A259821: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A229554: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A052633: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A245087: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A136580: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A214587: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A052778: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A052628: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A051712: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T02.asm

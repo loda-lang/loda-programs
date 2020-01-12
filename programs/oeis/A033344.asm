@@ -6,9 +6,6 @@ mov $1,2
 gcd $2,$1
 add $1,$2
 fac $1
-lpb $0,1
-  div $2,4
-lpe
 add $1,$0
 div $1,$0
 sub $1,1
