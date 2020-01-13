@@ -73,4 +73,3 @@ EOF
 gnuplot counts.gp
 rm counts.gp
 rm counts.dat
-rm counts.png

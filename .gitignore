@@ -1,4 +1,3 @@
+*.o
 /loda
-/loda.db
-/names
-/stripped
+/counts.png
