@@ -61,7 +61,7 @@ set xdata time
 set timefmt "%Y-%m-%d %H:%M:%S"
 set format x "%b %Y"
 set xrange ["2018-09-20 00:00:00":*]
-set xtics "2018-09-20 00:00:00",2592000
+set xtics "2018-09-20 00:00:00",7776000
 set grid ytics lc rgb "#bbbbbb" lw 1 lt 0
 set grid xtics lc rgb "#bbbbbb" lw 1 lt 0
 unset key
