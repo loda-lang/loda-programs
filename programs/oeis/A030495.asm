@@ -7,5 +7,4 @@ fac $3
 add $0,$3
 fac $0
 add $2,$0
-mod $0,2
 mov $1,$2

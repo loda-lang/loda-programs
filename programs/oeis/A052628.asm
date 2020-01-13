@@ -4,13 +4,11 @@
 mov $4,1
 fac $1
 fac $0
-fac $5
 add $1,$4
 mov $2,$0
 fac $2
 lpb $2,1
   sub $1,3
-  sub $5,$0
   add $5,$2
   lpb $5,1
     gcd $1,$3

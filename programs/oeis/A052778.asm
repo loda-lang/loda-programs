@@ -6,7 +6,6 @@ lpb $0,1
   fac $1
   sub $0,4
   div $1,$0
-  mul $3,$1
-  gcd $2,2
-  pow $0,$3
+  mul $2,$1
+  pow $0,$2
 lpe
