@@ -3,9 +3,5 @@
 
 pow $0,5
 mov $2,$0
-lpb $0,1
-  mov $2,$3
-  div $0,$3
-lpe
 mov $1,$2
 mod $1,7

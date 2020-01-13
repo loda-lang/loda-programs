@@ -7,7 +7,6 @@ gcd $2,$0
 mul $2,2
 div $2,3
 add $1,1
-mod $0,0
 add $2,$1
 gcd $2,2
 sub $1,$2
