@@ -4,6 +4,5 @@
 gcd $2,$0
 fac $1
 add $1,$2
-mod $0,0
 fac $1
 add $1,$2
