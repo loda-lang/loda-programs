@@ -5,9 +5,6 @@ mov $4,$0
 gcd $1,$0
 mul $1,2
 div $1,21
-lpb $0,1
-  mul $0,2
-lpe
 add $1,1
 mov $3,$4
 mov $2,$3

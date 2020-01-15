@@ -6,7 +6,6 @@ lpb $0,1
   sub $0,1
   add $1,3
 lpe
-add $5,3
 div $1,2
 add $1,1
 gcd $0,5

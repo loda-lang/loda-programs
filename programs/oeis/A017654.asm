@@ -3,11 +3,7 @@
 
 mov $2,$0
 add $2,$0
-add $0,6
 add $2,1
-lpb $0,1
-  mul $0,2
-lpe
 mov $1,6
 mul $1,$2
 add $1,5

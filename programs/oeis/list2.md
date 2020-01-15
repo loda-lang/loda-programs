@@ -844,7 +844,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229620](http://oeis.org/A229620) ([L19 program](A229620.asm)): Incorrect version of A045949.
 * [A229788](http://oeis.org/A229788) ([L08 program](A229788.asm)): 6*2^n - n^2 - 5*n - 6.
 * [A229803](http://oeis.org/A229803) ([L12 program](A229803.asm)): Domination number for rook graph HR(n) on a triangular board of hexagonal cells. The rook can move along any row of adjacent cells, in any of the three directions.
-* [A229828](http://oeis.org/A229828) ([L05 program](A229828.asm)): 7*n! - 1.
+* [A229828](http://oeis.org/A229828) ([L04 program](A229828.asm)): 7*n! - 1.
 * [A229838](http://oeis.org/A229838) ([L13 program](A229838.asm)): Consider all primitive 60-degree triangles with sides A < B < C. The sequence gives the values of A.
 * [A229852](http://oeis.org/A229852) ([L40 program](A229852.asm)): 3*h^2, where h is an odd integer not divisible by 3.
 * [A229853](http://oeis.org/A229853) ([L03 program](A229853.asm)): 384*n + 1.
@@ -1062,7 +1062,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241849](http://oeis.org/A241849) ([L07 program](A241849.asm)): a(n) = n^2 + 19.
 * [A241850](http://oeis.org/A241850) ([L07 program](A241850.asm)): a(n) = n^2 + 20.
 * [A241851](http://oeis.org/A241851) ([L07 program](A241851.asm)): a(n) = n^2 + 21.
-* [A241889](http://oeis.org/A241889) ([L10 program](A241889.asm)): a(n) = n^2 + 23.
+* [A241889](http://oeis.org/A241889) ([L08 program](A241889.asm)): a(n) = n^2 + 23.
 * [A241890](http://oeis.org/A241890) ([L07 program](A241890.asm)): a(n) = n^2 + 24.
 * [A241976](http://oeis.org/A241976) ([L12 program](A241976.asm)): Values of k such that k^2 + (k+3)^2 is a square.
 * [A241979](http://oeis.org/A241979) ([L11 program](A241979.asm)): (0,1) sequence such that lengths of three consecutive runs are always distinct.
@@ -1240,7 +1240,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248428](http://oeis.org/A248428) ([L15 program](A248428.asm)): Number of length n+2 0..3 arrays with every three consecutive terms having the sum of some two elements equal to twice the third.
 * [A248429](http://oeis.org/A248429) ([L16 program](A248429.asm)): Number of length n+2 0..4 arrays with every three consecutive terms having the sum of some two elements equal to twice the third.
 * [A248434](http://oeis.org/A248434) ([L12 program](A248434.asm)): Number of length 1+2 0..n arrays with every three consecutive terms having the sum of some two elements equal to twice the third
-* [A248462](http://oeis.org/A248462) ([L39 program](A248462.asm)): Number of length 1+2 0..n arrays with no three consecutive terms having the sum of any two elements equal to twice the third.
+* [A248462](http://oeis.org/A248462) ([L17 program](A248462.asm)): Number of length 1+2 0..n arrays with no three consecutive terms having the sum of any two elements equal to twice the third.
 * [A248474](http://oeis.org/A248474) ([L10 program](A248474.asm)): Numbers congruent to 13 or 17 mod 30.
 * [A248517](http://oeis.org/A248517) ([L17 program](A248517.asm)): Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
 * [A248522](http://oeis.org/A248522) ([L21 program](A248522.asm)): Beatty sequence for 1/(1-exp(-1/3)): a(n) = floor(n/(1-exp(-1/3))).
@@ -2009,7 +2009,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272162](http://oeis.org/A272162) ([L17 program](A272162.asm)): a(n) = n^5-n+1.
 * [A272188](http://oeis.org/A272188) ([L11 program](A272188.asm)): Triangle with 2*n+1 terms per row, read by rows: the first row is 1 (by decree), following rows contain 0 to 2n+1 but omitting 2n.
 * [A272263](http://oeis.org/A272263) ([L24 program](A272263.asm)): a(n) = numerator of A000032(n) - 1/2^n.
-* [A272297](http://oeis.org/A272297) ([L16 program](A272297.asm)): a(n) = n^4 + 64.
+* [A272297](http://oeis.org/A272297) ([L06 program](A272297.asm)): a(n) = n^4 + 64.
 * [A272298](http://oeis.org/A272298) ([L13 program](A272298.asm)): a(n) = n^4 + 324.
 * [A272299](http://oeis.org/A272299) ([L28 program](A272299.asm)): a(n) = n + 2*floor(n/2) + 3*floor(n/3).
 * [A272303](http://oeis.org/A272303) ([L27 program](A272303.asm)): Magic sums of 4 X 4 semimagic squares composed of primes.
