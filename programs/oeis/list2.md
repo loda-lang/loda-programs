@@ -526,7 +526,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A217518](http://oeis.org/A217518) ([L13 program](A217518.asm)): Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (123456)*.
 * [A217527](http://oeis.org/A217527) ([L12 program](A217527.asm)): a(n) = 2^(n-2)*(n-2)^2+2^(n-1).
 * [A217528](http://oeis.org/A217528) ([L10 program](A217528.asm)): a(n) = (n-2)*(n-3)*2^(n-2)+2^n-2.
-* [A217562](http://oeis.org/A217562) ([L06 program](A217562.asm)): Even numbers not divisible by 5.
+* [A217562](http://oeis.org/A217562) ([L05 program](A217562.asm)): Even numbers not divisible by 5.
 * [A217570](http://oeis.org/A217570) ([L15 program](A217570.asm)): Numbers n such that floor(sqrt(n)) = floor(n/(floor(sqrt(n))-1))-1.
 * [A217571](http://oeis.org/A217571) ([L07 program](A217571.asm)): a(n) = (2*n*(n+5) + (2*n+1)*(-1)^n - 1)/8.
 * [A217573](http://oeis.org/A217573) ([L33 program](A217573.asm)): Number of integers between -(2*n+1)*Pi and (2*n+2)*Pi.
@@ -1491,6 +1491,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257847](http://oeis.org/A257847) ([L09 program](A257847.asm)): a(n) = floor(n/7) * (n mod 7).
 * [A257925](http://oeis.org/A257925) ([L19 program](A257925.asm)): a(n) = (n^2 - n + 1)*(n^2 + n - 1).
 * [A257936](http://oeis.org/A257936) ([L03 program](A257936.asm)): Decimal expansion of 11/18.
+* [A257942](http://oeis.org/A257942) ([L08 program](A257942.asm)): a(n) = (n+1)*(n+2)/A014695(n+1), where A014695 is repeat (1, 2, 2, 1).
 * [A258016](http://oeis.org/A258016) ([L22 program](A258016.asm)): Unlucky numbers removed at the stage three of Lucky sieve.
 * [A258054](http://oeis.org/A258054) ([L18 program](A258054.asm)): Circle of fifths cycle (counterclockwise).
 * [A258071](http://oeis.org/A258071) ([L01 program](A258071.asm)): Nonnegative integers that can be computed using exactly ten 10's and the four basic arithmetic operations {+, -, *, /}.
@@ -2004,7 +2005,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272124](http://oeis.org/A272124) ([L42 program](A272124.asm)): a(n) = 12*n^4 + 16*n^3 + 10*n^2 + 4*n + 1.
 * [A272125](http://oeis.org/A272125) ([L14 program](A272125.asm)): a(n) = n^3*(2*n^2+1)/3.
 * [A272126](http://oeis.org/A272126) ([L13 program](A272126.asm)): a(n) = 120*n^3 + 60*n^2 + 2*n + 1.
-* [A272130](http://oeis.org/A272130) ([L14 program](A272130.asm)): a(n) = 16*n^3 + 10*n^2 + 4*n + 1.
+* [A272130](http://oeis.org/A272130) ([L13 program](A272130.asm)): a(n) = 16*n^3 + 10*n^2 + 4*n + 1.
 * [A272162](http://oeis.org/A272162) ([L17 program](A272162.asm)): a(n) = n^5-n+1.
 * [A272188](http://oeis.org/A272188) ([L11 program](A272188.asm)): Triangle with 2*n+1 terms per row, read by rows: the first row is 1 (by decree), following rows contain 0 to 2n+1 but omitting 2n.
 * [A272263](http://oeis.org/A272263) ([L24 program](A272263.asm)): a(n) = numerator of A000032(n) - 1/2^n.
@@ -2585,6 +2586,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293990](http://oeis.org/A293990) ([L07 program](A293990.asm)): a(n) = (3*n + ((n-2) mod 4))/2.
 * [A294070](http://oeis.org/A294070) ([L17 program](A294070.asm)): a(n) = (1/4)*(n^2 - 2*n)^2 + (9/4)*(n^2 - 2*n) + 6.
 * [A294116](http://oeis.org/A294116) ([L22 program](A294116.asm)): Fibonacci sequence beginning 2, 21.
+* [A294140](http://oeis.org/A294140) ([L12 program](A294140.asm)): Number of total dominating sets in the n-crown graph.
 * [A294152](http://oeis.org/A294152) ([L08 program](A294152.asm)): Chromatic invariant of the n-antiprism graph.
 * [A294157](http://oeis.org/A294157) ([L08 program](A294157.asm)): Fibonacci sequence beginning 2, 8.
 * [A294178](http://oeis.org/A294178) ([L12 program](A294178.asm)): a(2n) = 2*n + 1, a(2n+1) = 6*n + 3.

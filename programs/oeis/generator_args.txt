@@ -21219,3 +21219,32 @@ A258186: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A178703: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A294140: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A257942: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A272130: -p 40 -n 6 -i 6 -o ^ -a cd -r
+A004083: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A185114: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A064997: -p 80 -n 8 -i 6 -o ^ -a cd
+A331190: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A057349: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A217562: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A185939: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A193249: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A047222: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017654: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A047850: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A007742: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017234: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A119536: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A241889: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A027603: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A248462: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A114962: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A146160: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A119412: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A180356: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017018: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A158333: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A019303: -p 40 -n 4 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A171623: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A229828: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A272297: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A175884: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm

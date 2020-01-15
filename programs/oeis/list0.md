@@ -2751,6 +2751,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040185](http://oeis.org/A040185) ([L14 program](A040185.asm)): Continued fraction for sqrt(200).
 * [A040188](http://oeis.org/A040188) ([L11 program](A040188.asm)): Continued fraction for sqrt(203).
 * [A040195](http://oeis.org/A040195) ([L24 program](A040195.asm)): Continued fraction for sqrt(210).
+* [A040209](http://oeis.org/A040209) ([L18 program](A040209.asm)): Continued fraction for sqrt(224).
 * [A040210](http://oeis.org/A040210) ([L05 program](A040210.asm)): Continued fraction for sqrt(226).
 * [A040211](http://oeis.org/A040211) ([L06 program](A040211.asm)): Continued fraction for sqrt(227).
 * [A040212](http://oeis.org/A040212) ([L13 program](A040212.asm)): Continued fraction for sqrt(228).
@@ -4429,7 +4430,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A064866](http://oeis.org/A064866) ([L10 program](A064866.asm)): Write numbers 1, then 1 up to 2^2, then 1 up to 3^2, then 1 up to 4^2 and so on.
 * [A064873](http://oeis.org/A064873) ([L13 program](A064873.asm)): First of four sequences representing the lexicographical minimal decomposition of n in 4 squares: n = a(n)^2 + A064874(n)^2 + A064875(n)^2 + A064876(n)^2.
 * [A064995](http://oeis.org/A064995) ([L15 program](A064995.asm)): A Beatty sequence from Khintchine's constant (A002210).
-* [A064997](http://oeis.org/A064997) ([L26 program](A064997.asm)): A Beatty sequence: [Pi^2 -8].
+* [A064997](http://oeis.org/A064997) ([L16 program](A064997.asm)): A Beatty sequence: [Pi^2 -8].
 * [A064999](http://oeis.org/A064999) ([L07 program](A064999.asm)): Partial sums of sequence (essentially A002378): 1, 2, 6, 12, 20, 30, 42, 56, 72, 90, ...
 * [A065033](http://oeis.org/A065033) ([L04 program](A065033.asm)): 1 appears three times, other numbers twice.
 * [A065034](http://oeis.org/A065034) ([L07 program](A065034.asm)): a(n) = Lucas(2*n) + 1.

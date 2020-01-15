@@ -4305,7 +4305,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185061](http://oeis.org/A185061) ([L15 program](A185061.asm)): Position of the first occurrence of n in A193358 when it is considered to have the starting offset 1 instead of 0.
 * [A185065](http://oeis.org/A185065) ([L04 program](A185065.asm)): a(n) = n*(n^3 + 2).
 * [A185096](http://oeis.org/A185096) ([L13 program](A185096.asm)): Let T(n) = n(n+1)/2 be the n-th triangular number (A000217); a(n) = T(8T(n)).
-* [A185114](http://oeis.org/A185114) ([L05 program](A185114.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 4.
+* [A185114](http://oeis.org/A185114) ([L04 program](A185114.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 4.
 * [A185115](http://oeis.org/A185115) ([L05 program](A185115.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 5.
 * [A185116](http://oeis.org/A185116) ([L05 program](A185116.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 6.
 * [A185117](http://oeis.org/A185117) ([L05 program](A185117.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 7.
@@ -4338,7 +4338,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185871](http://oeis.org/A185871) ([L11 program](A185871.asm)): (Even,even)-polka dot array in the natural number array A000027, by antidiagonals.
 * [A185908](http://oeis.org/A185908) ([L10 program](A185908.asm)): Array: T(n,k) = n-1 + min{n,k}, by antidiagonals.
 * [A185914](http://oeis.org/A185914) ([L11 program](A185914.asm)): Array: T(n,k)=k-n+1 for k>=n; T(n,k)=0 for k<n; by antidiagonals.
-* [A185939](http://oeis.org/A185939) ([L11 program](A185939.asm)): a(n) = 9*n^2 - 6*n + 2.
+* [A185939](http://oeis.org/A185939) ([L07 program](A185939.asm)): a(n) = 9*n^2 - 6*n + 2.
 * [A186029](http://oeis.org/A186029) ([L06 program](A186029.asm)): a(n) = n*(7*n+3)/2.
 * [A186030](http://oeis.org/A186030) ([L06 program](A186030.asm)): a(n) = n*(13*n-3)/2.
 * [A186101](http://oeis.org/A186101) ([L11 program](A186101.asm)): a(n) = 2*n / 3 if n divisible by 3, a(n) = n otherwise.
@@ -4665,7 +4665,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193218](http://oeis.org/A193218) ([L14 program](A193218.asm)): Number of vertices in truncated tetrahedron with faces that are centered polygons.
 * [A193228](http://oeis.org/A193228) ([L15 program](A193228.asm)): Truncated octahedron with faces of centered polygons.
 * [A193248](http://oeis.org/A193248) ([L15 program](A193248.asm)): Truncated dodecahedron, and truncated icosahedron with faces of centered polygons.
-* [A193249](http://oeis.org/A193249) ([L17 program](A193249.asm)): Snub dodecahedron with faces of centered polygons.
+* [A193249](http://oeis.org/A193249) ([L15 program](A193249.asm)): Snub dodecahedron with faces of centered polygons.
 * [A193250](http://oeis.org/A193250) ([L19 program](A193250.asm)): Small rhombicuboctahedron with faces of centered polygons.
 * [A193251](http://oeis.org/A193251) ([L42 program](A193251.asm)): Small rhombicosidodecahedron with faces of centered polygons.
 * [A193252](http://oeis.org/A193252) ([L19 program](A193252.asm)): Great rhombicuboctahedron with faces of centered polygons.

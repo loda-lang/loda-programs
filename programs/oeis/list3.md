@@ -696,4 +696,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330003](http://oeis.org/A330003) ([L08 program](A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
 * [A330133](http://oeis.org/A330133) ([L13 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
-* [A331190](http://oeis.org/A331190) ([L25 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
+* [A331190](http://oeis.org/A331190) ([L18 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
