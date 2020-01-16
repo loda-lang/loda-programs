@@ -7,7 +7,6 @@ gcd $1,$3
 mov $2,$3
 gcd $0,2
 pow $0,2
-mov $3,4
 div $1,2
 gcd $2,2
 lpb $0,1

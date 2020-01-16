@@ -9,7 +9,4 @@ gcd $2,$3
 mul $0,5
 add $2,$0
 pow $2,4
-lpb $0,1
-  pow $0,2
-lpe
 mov $1,$2

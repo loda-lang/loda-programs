@@ -5,7 +5,6 @@ mov $6,$0
 mov $2,$0
 sub $2,1
 pow $2,2
-add $0,3
 div $2,7
 mov $5,1
 add $2,$5

@@ -1609,7 +1609,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135231](http://oeis.org/A135231) ([L10 program](A135231.asm)): Row sums of triangle A135230.
 * [A135265](http://oeis.org/A135265) ([L04 program](A135265.asm)): Period 6: repeat [1, 1, 1, 2, 2, 2].
 * [A135276](http://oeis.org/A135276) ([L04 program](A135276.asm)): a(0)=0, a(1)=1; for n>1, a(n) = a(n-1) + n^0 if n odd, a(n) = a(n-1) + n^1 if n is even.
-* [A135295](http://oeis.org/A135295) ([L09 program](A135295.asm)): a(n) = n^(number of decimal digits of n).
+* [A135295](http://oeis.org/A135295) ([L07 program](A135295.asm)): a(n) = n^(number of decimal digits of n).
 * [A135300](http://oeis.org/A135300) ([L08 program](A135300.asm)): Positive X-values of solutions to the equation 1!*X^4 - 2!*(X + 1)^3 + 3!*(X + 2)^2 - (4^2)*(X + 3) + 5^2 = Y^3.
 * [A135318](http://oeis.org/A135318) ([L17 program](A135318.asm)): a(n) = a(n-2) + 2*a(n-4), with a[0..3] = [1, 1, 1, 2].
 * [A135351](http://oeis.org/A135351) ([L13 program](A135351.asm)): a(n) = (2^n + 3 - 7*(-1)^n + 3*0^n)/6; or a(0) = 0 and for n > 0, a(n) = A005578(n-1) - (-1)^n.
@@ -2785,7 +2785,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158683](http://oeis.org/A158683) ([L18 program](A158683.asm)): 1024*n^2 - 32.
 * [A158684](http://oeis.org/A158684) ([L33 program](A158684.asm)): a(n) = 64*n^2 - 1.
 * [A158685](http://oeis.org/A158685) ([L05 program](A158685.asm)): 32*(32*n^2+1).
-* [A158686](http://oeis.org/A158686) ([L05 program](A158686.asm)): 64n^2 + 1.
+* [A158686](http://oeis.org/A158686) ([L04 program](A158686.asm)): 64n^2 + 1.
 * [A158688](http://oeis.org/A158688) ([L08 program](A158688.asm)): a(n) = 1089*n^2 + 33.
 * [A158689](http://oeis.org/A158689) ([L21 program](A158689.asm)): a(n) = 66*n^2 + 1.
 * [A158692](http://oeis.org/A158692) ([L27 program](A158692.asm)): a(n) = 1089*n^2 - 33.
@@ -3111,7 +3111,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165355](http://oeis.org/A165355) ([L07 program](A165355.asm)): a(n) = 3n + 1 if n is even, or a(n) = (3n + 1)/2 if n is odd.
 * [A165367](http://oeis.org/A165367) ([L12 program](A165367.asm)): Trisection a(n) = A026741(3n + 2).
 * [A165372](http://oeis.org/A165372) ([L18 program](A165372.asm)): Number of slanted n X 3 (i=1..n) X (j=i..3+i-1) 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, and 4 in the lower right corner.
-* [A165378](http://oeis.org/A165378) ([L23 program](A165378.asm)): Number of slanted n X 4 (i=1..n) X (j=i..4+i-1) 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 2 neighbors with the same value.
+* [A165378](http://oeis.org/A165378) ([L21 program](A165378.asm)): Number of slanted n X 4 (i=1..n) X (j=i..4+i-1) 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 2 neighbors with the same value.
 * [A165394](http://oeis.org/A165394) ([L20 program](A165394.asm)): Number of slanted 2 X n (i=1..2) X (j=i..n+i-1) 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 3 neighbors with the same value.
 * [A165453](http://oeis.org/A165453) ([L07 program](A165453.asm)): Linear interpolation of the sequence that maps an entry of A002378 to the corresponding entry of A006331.
 * [A165556](http://oeis.org/A165556) ([L16 program](A165556.asm)): A symmetric version of the Josephus problem read modulo 2.

@@ -7,10 +7,6 @@ pow $1,$0
 mov $2,7
 pow $2,$0
 add $1,2
-lpb $0,1
-  fac $1
-  sub $6,$1
-lpe
 add $1,$2
 sub $1,$0
 sub $1,1
