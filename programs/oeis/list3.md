@@ -673,7 +673,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329509](http://oeis.org/A329509) ([L19 program](A329509.asm)): Expansion of (1 + x)*(1 + x + x^2 - x^3) / (1 - x).
 * [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
-* [A329624](http://oeis.org/A329624) ([L05 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
+* [A329624](http://oeis.org/A329624) ([L04 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
 * [A329670](http://oeis.org/A329670) ([L05 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
 * [A329677](http://oeis.org/A329677) ([L08 program](A329677.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD, and DH.
 * [A329678](http://oeis.org/A329678) ([L02 program](A329678.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UD and DH.
@@ -687,6 +687,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329832](http://oeis.org/A329832) ([L19 program](A329832.asm)): Beatty sequence for (9+sqrt(65))/8.
 * [A329834](http://oeis.org/A329834) ([L15 program](A329834.asm)): Beatty sequence for (11+sqrt(73))/8.
 * [A329836](http://oeis.org/A329836) ([L11 program](A329836.asm)): Beatty sequence for (11+sqrt(101))/10.
+* [A329847](http://oeis.org/A329847) ([L09 program](A329847.asm)): Beatty sequence for (3+sqrt(89))/8.
 * [A329926](http://oeis.org/A329926) ([L11 program](A329926.asm)): Beatty sequence for (8+sqrt(41))/5.
 * [A329939](http://oeis.org/A329939) ([L19 program](A329939.asm)): Beatty sequence for cosh x,  where csch x + sech x = 1 .
 * [A329975](http://oeis.org/A329975) ([L12 program](A329975.asm)): Beatty sequence for 1 + x + x^2, where x is the real solution of 1/x + 1/(1+x+x^2) = 1.
