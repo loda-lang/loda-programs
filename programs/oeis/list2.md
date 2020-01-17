@@ -1300,7 +1300,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250554](http://oeis.org/A250554) ([L14 program](A250554.asm)): Number of length n+2 0..1 arrays with the sum of second differences multiplied by some arrangement of +-1 equal to zero.
 * [A250605](http://oeis.org/A250605) ([L14 program](A250605.asm)): Number of (n+1) X (2+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)-x(i-1,j) in the j direction.
 * [A250653](http://oeis.org/A250653) ([L09 program](A250653.asm)): Number of (n+1)X(5+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction
-* [A250654](http://oeis.org/A250654) ([L17 program](A250654.asm)): Number of (n+1) X (6+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.
+* [A250654](http://oeis.org/A250654) ([L13 program](A250654.asm)): Number of (n+1) X (6+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.
 * [A250655](http://oeis.org/A250655) ([L07 program](A250655.asm)): Number of (n+1) X (7+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.
 * [A250657](http://oeis.org/A250657) ([L08 program](A250657.asm)): Number of (3+1)X(n+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction
 * [A250658](http://oeis.org/A250658) ([L09 program](A250658.asm)): Number of (4+1) X (n+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.

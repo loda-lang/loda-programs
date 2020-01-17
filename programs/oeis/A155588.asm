@@ -3,12 +3,8 @@
 
 mov $2,$0
 mov $1,5
-mov $4,2
-pow $4,$2
+mov $3,2
+pow $3,$2
 pow $1,$0
-add $1,$4
-lpb $0,1
-  div $2,$3
-  sub $0,$2
-lpe
+add $1,$3
 sub $1,1

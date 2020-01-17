@@ -11,8 +11,4 @@ mov $3,$2
 mul $1,$3
 div $1,6
 mul $1,$0
-lpb $0,1
-  sub $1,1
-  add $1,1
-lpe
 div $1,21
