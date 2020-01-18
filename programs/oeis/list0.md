@@ -1425,6 +1425,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017450](http://oeis.org/A017450) ([L12 program](A017450.asm)): a(n) = (11*n + 5)^2.
 * [A017461](http://oeis.org/A017461) ([L03 program](A017461.asm)): a(n) = 11*n + 6.
 * [A017462](http://oeis.org/A017462) ([L18 program](A017462.asm)): a(n) = (11*n + 6)^2.
+* [A017464](http://oeis.org/A017464) ([L08 program](A017464.asm)): a(n) = (11*n + 6)^4.
 * [A017473](http://oeis.org/A017473) ([L03 program](A017473.asm)): a(n) = 11*n + 7.
 * [A017474](http://oeis.org/A017474) ([L26 program](A017474.asm)): a(n) = (11*n + 7)^2.
 * [A017485](http://oeis.org/A017485) ([L03 program](A017485.asm)): a(n) = 11*n + 8.
@@ -3673,6 +3674,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052572](http://oeis.org/A052572) ([L12 program](A052572.asm)): E.g.f. (1+2x-2x^2)/(1-x)^2.
 * [A052578](http://oeis.org/A052578) ([L07 program](A052578.asm)): a(0) = 0, a(n) = 4*n! for n > 0.
 * [A052579](http://oeis.org/A052579) ([L08 program](A052579.asm)): E.g.f. (2+x+x^2)/((1-x)(1+x+x^2)).
+* [A052591](http://oeis.org/A052591) ([L06 program](A052591.asm)): E.g.f. x/((1-x)(1-x^2)).
 * [A052596](http://oeis.org/A052596) ([L09 program](A052596.asm)): E.g.f. (1+x^4-x^5)/(1-x).
 * [A052612](http://oeis.org/A052612) ([L09 program](A052612.asm)): E.g.f. x*(2+x)/(1-x^2).
 * [A052614](http://oeis.org/A052614) ([L10 program](A052614.asm)): E.g.f. 1/((1-x)(1-x^4)).
@@ -4884,6 +4886,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071231](http://oeis.org/A071231) ([L09 program](A071231.asm)): a(n) = (n^8 + n^4)/2.
 * [A071232](http://oeis.org/A071232) ([L06 program](A071232.asm)): a(n) = (n^6 + n^3)/2.
 * [A071233](http://oeis.org/A071233) ([L10 program](A071233.asm)): a(n) = 2*(n-1)*(n^2 + 1).
+* [A071235](http://oeis.org/A071235) ([L07 program](A071235.asm)): a(n) = (n^12 + n^6)/2.
 * [A071236](http://oeis.org/A071236) ([L11 program](A071236.asm)): a(n) = (n^10 + n^5)/2.
 * [A071237](http://oeis.org/A071237) ([L12 program](A071237.asm)): n*(n+1)*(n^2+1)/2.
 * [A071238](http://oeis.org/A071238) ([L10 program](A071238.asm)): a(n) = n*(n+1)*(2*n^2+1)/6.
@@ -5234,6 +5237,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080645](http://oeis.org/A080645) ([L19 program](A080645.asm)): a(1) = 1; for n>1, a(n) is taken to be the smallest integer greater than a(n-1) which is consistent with the condition "for n>1, if n is a member of the sequence then a(n) is even".
 * [A080653](http://oeis.org/A080653) ([L16 program](A080653.asm)): a(1) = 2; for n>1, a(n) is taken to be the smallest integer greater than a(n-1) such that the condition "a(a(n)) is always even" is satisfied.
 * [A080663](http://oeis.org/A080663) ([L07 program](A080663.asm)): Numbers of the form 3*n^2 - 1.
+* [A080668](http://oeis.org/A080668) ([L07 program](A080668.asm)): Numbers of the form n!+n^3.
 * [A080674](http://oeis.org/A080674) ([L05 program](A080674.asm)): a(n) = (4/3)*(4^n - 1).
 * [A080675](http://oeis.org/A080675) ([L07 program](A080675.asm)): a(n) = (5*4^n - 8)/6.
 * [A080676](http://oeis.org/A080676) ([L14 program](A080676.asm)): a(1) = 1; for n>1, a(n) is the smallest number > a(n-1) such that the first n terms of the sequence contain a total of a(n) digits.
