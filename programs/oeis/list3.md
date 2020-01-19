@@ -36,7 +36,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301621](http://oeis.org/A301621) ([L14 program](A301621.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 2.
 * [A301622](http://oeis.org/A301622) ([L16 program](A301622.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 4.
 * [A301623](http://oeis.org/A301623) ([L30 program](A301623.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 5.
-* [A301628](http://oeis.org/A301628) ([L17 program](A301628.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 7.
+* [A301628](http://oeis.org/A301628) ([L14 program](A301628.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 7.
 * [A301647](http://oeis.org/A301647) ([L08 program](A301647.asm)): a(n) = n^3 - (n mod 2).
 * [A301654](http://oeis.org/A301654) ([L04 program](A301654.asm)): Circumference of the n-triangular honeycomb acute knight graph.
 * [A301657](http://oeis.org/A301657) ([L16 program](A301657.asm)): Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
@@ -650,6 +650,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327470](http://oeis.org/A327470) ([L07 program](A327470.asm)): Maximum valency of the central line in a certain smooth 2D-polarized K3-surface in P^{n+1}.
 * [A327492](http://oeis.org/A327492) ([L11 program](A327492.asm)): Partial sums of A327491.
 * [A327672](http://oeis.org/A327672) ([L12 program](A327672.asm)): a(n) = Sum_{k=0..n} ceiling(sqrt(k)).
+* [A327704](http://oeis.org/A327704) ([L10 program](A327704.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 4 parts can be obtained by coalescing the parts of lambda.
 * [A327705](http://oeis.org/A327705) ([L07 program](A327705.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 5 parts can be obtained by coalescing the parts of lambda.
 * [A327706](http://oeis.org/A327706) ([L11 program](A327706.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 6 parts can be obtained by coalescing the parts of lambda.
 * [A327708](http://oeis.org/A327708) ([L15 program](A327708.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 8 parts can be obtained by coalescing the parts of lambda.
@@ -695,6 +696,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329978](http://oeis.org/A329978) ([L09 program](A329978.asm)): Beatty sequence for log x, where 1/x + 1/(log x) = 1.
 * [A329988](http://oeis.org/A329988) ([L15 program](A329988.asm)): Beatty sequence for 2^x, where 1/x + 1/2^x = 1.
 * [A329994](http://oeis.org/A329994) ([L10 program](A329994.asm)): Beatty sequence for 2^x, where 1/x^2 + 1/2^x = 1.
+* [A329997](http://oeis.org/A329997) ([L05 program](A329997.asm)): Beatty sequence for 3^x, where 1/x^3 + 1/3^x = 1.
 * [A330002](http://oeis.org/A330002) ([L04 program](A330002.asm)): Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
 * [A330003](http://oeis.org/A330003) ([L08 program](A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
 * [A330115](http://oeis.org/A330115) ([L19 program](A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
