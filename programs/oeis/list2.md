@@ -224,7 +224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210379](http://oeis.org/A210379) ([L11 program](A210379.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
 * [A210433](http://oeis.org/A210433) ([L12 program](A210433.asm)): Natural numbers k such that floor(v) * ceiling(v)^2 = k, where v = k^(1/3).
 * [A210435](http://oeis.org/A210435) ([L24 program](A210435.asm)): Number of digits in 5^n.
-* [A210436](http://oeis.org/A210436) ([L07 program](A210436.asm)): Number of digits in 6^n.
+* [A210436](http://oeis.org/A210436) ([L05 program](A210436.asm)): Number of digits in 6^n.
 * [A210440](http://oeis.org/A210440) ([L06 program](A210440.asm)): a(n) = 2*n*(n+1)*(n+2)/3.
 * [A210448](http://oeis.org/A210448) ([L09 program](A210448.asm)): Total number of different letters summed over all ternary words of length n.
 * [A210464](http://oeis.org/A210464) ([L20 program](A210464.asm)): Number of bracelets with 2 blue, 2 red, and n black beads.
@@ -1043,7 +1043,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241204](http://oeis.org/A241204) ([L08 program](A241204.asm)): Expansion of (1 + 2*x)^2/(1 - 2*x)^2.
 * [A241219](http://oeis.org/A241219) ([L12 program](A241219.asm)): Number of ways to choose two points on a centered hexagonal grid of size n.
 * [A241406](http://oeis.org/A241406) ([L19 program](A241406.asm)): Numbers n such that n^2 == -1 (mod 61).
-* [A241407](http://oeis.org/A241407) ([L12 program](A241407.asm)): Numbers n such that n^2 == -1 (mod 73).
+* [A241407](http://oeis.org/A241407) ([L11 program](A241407.asm)): Numbers n such that n^2 == -1 (mod 73).
 * [A241452](http://oeis.org/A241452) ([L13 program](A241452.asm)): a(n) = pg(3, n) + pg(4, n) + ... + pg(n, n) where pg(m, n) is the n-th m-th-order polygonal number.
 * [A241496](http://oeis.org/A241496) ([L07 program](A241496.asm)): Expansion of (1 + 4*x + x^2) / (1 - x^2)^3.
 * [A241520](http://oeis.org/A241520) ([L30 program](A241520.asm)): Numbers n such that n^2 == -1 (mod 89).
@@ -1718,6 +1718,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266591](http://oeis.org/A266591) ([L03 program](A266591.asm)): Middle column of the "Rule 37" elementary cellular automaton starting with a single ON (black) cell.
 * [A266593](http://oeis.org/A266593) ([L22 program](A266593.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 37" elementary cellular automaton starting with a single ON (black) cell.
 * [A266594](http://oeis.org/A266594) ([L28 program](A266594.asm)): Total number of ON (black) cells after n iterations of the "Rule 37" elementary cellular automaton starting with a single ON (black) cell.
+* [A266596](http://oeis.org/A266596) ([L20 program](A266596.asm)): Total number of OFF (white) cells after n iterations of the "Rule 37" elementary cellular automaton starting with a single ON (black) cell.
 * [A266611](http://oeis.org/A266611) ([L08 program](A266611.asm)): Middle column of the "Rule 41" elementary cellular automaton starting with a single ON (black) cell.
 * [A266662](http://oeis.org/A266662) ([L20 program](A266662.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
 * [A266663](http://oeis.org/A266663) ([L11 program](A266663.asm)): Total number of ON (black) cells after n iterations of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
@@ -2526,6 +2527,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291271](http://oeis.org/A291271) ([L08 program](A291271.asm)): The arithmetic function v_4(n,2).
 * [A291305](http://oeis.org/A291305) ([L15 program](A291305.asm)): The arithmetic function v_5(n,1).
 * [A291306](http://oeis.org/A291306) ([L06 program](A291306.asm)): The arithmetic function v_6(n,1).
+* [A291307](http://oeis.org/A291307) ([L11 program](A291307.asm)): The arithmetic function v_6(n,2).
 * [A291330](http://oeis.org/A291330) ([L13 program](A291330.asm)): The arithmetic function v_4(n,1).
 * [A291357](http://oeis.org/A291357) ([L09 program](A291357.asm)): The arithmetic function u(n,2,3).
 * [A291358](http://oeis.org/A291358) ([L04 program](A291358.asm)): The arithmetic function u(n,2,4).
