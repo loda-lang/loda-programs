@@ -178,6 +178,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A208528](http://oeis.org/A208528) ([L07 program](A208528.asm)): Number of permutations of n>1 having exactly 3 points P on the boundary of their bounding square.
 * [A208529](http://oeis.org/A208529) ([L03 program](A208529.asm)): Number of permutations of n > 1 having exactly 2 points on the boundary of their bounding square.
 * [A208536](http://oeis.org/A208536) ([L05 program](A208536.asm)): Number of 5-bead necklaces of n colors not allowing reversal, with no adjacent beads having the same color.
+* [A208537](http://oeis.org/A208537) ([L14 program](A208537.asm)): Number of 7-bead necklaces of n colors not allowing reversal, with no adjacent beads having the same color.
 * [A208598](http://oeis.org/A208598) ([L12 program](A208598.asm)): Number of 4-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero.
 * [A208638](http://oeis.org/A208638) ([L08 program](A208638.asm)): Number of 3 X n 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward or right-upward antidiagonal neighbors.
 * [A208658](http://oeis.org/A208658) ([L08 program](A208658.asm)): Row sums of A208657.
@@ -1878,7 +1879,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269059](http://oeis.org/A269059) ([L13 program](A269059.asm)): Construct a hollow square of 1's of side n and fill its interior with 0's to create a stack of n binary numbers. Express the sum of the stack in decimal.
 * [A269100](http://oeis.org/A269100) ([L03 program](A269100.asm)): a(n) = 13*n + 11.
 * [A269112](http://oeis.org/A269112) ([L16 program](A269112.asm)): a(n) = (3*(n-1)*n + (-1)^((n-1)*n/2) + 5)/2.
-* [A269132](http://oeis.org/A269132) ([L07 program](A269132.asm)): a(n) = n + floor(n*(2*n+1)/5).
+* [A269132](http://oeis.org/A269132) ([L06 program](A269132.asm)): a(n) = n + floor(n*(2*n+1)/5).
 * [A269222](http://oeis.org/A269222) ([L11 program](A269222.asm)): Period 4: repeat [1,9,8,9].
 * [A269226](http://oeis.org/A269226) ([L13 program](A269226.asm)): Period 6: repeat [3, 9, 6, 6, 9, 3].
 * [A269232](http://oeis.org/A269232) ([L24 program](A269232.asm)): a(n) = (n + 1)*(6*n^2 + 15*n + 4)/2.
@@ -2497,7 +2498,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A290604](http://oeis.org/A290604) ([L17 program](A290604.asm)): a(0) = 2, a(1) = 2; for n > 1, a(n) = a(n-1) + 2*a(n-2) + 3.
 * [A290631](http://oeis.org/A290631) ([L11 program](A290631.asm)): a(n) = (n^2 + 1) * (2*n - 1).
 * [A290683](http://oeis.org/A290683) ([L16 program](A290683.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
-* [A290699](http://oeis.org/A290699) ([L19 program](A290699.asm)): a(n) = 2^n - n + n^2.
+* [A290699](http://oeis.org/A290699) ([L11 program](A290699.asm)): a(n) = 2^n - n + n^2.
 * [A290707](http://oeis.org/A290707) ([L10 program](A290707.asm)): a(n) = 2^(n+1) + n^2 - 1.
 * [A290709](http://oeis.org/A290709) ([L27 program](A290709.asm)): Number of irredundant sets in the complete tripartite graph K_{n,n,n}.
 * [A290718](http://oeis.org/A290718) ([L11 program](A290718.asm)): a(n) = 2^(n + 1) + 4^(n - 1) - 2.

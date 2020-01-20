@@ -6,7 +6,5 @@ lpb $0,1
   sub $0,1
   add $1,3
 lpe
-pow $3,$2
-sub $3,2
 add $1,4
 pow $1,2

@@ -247,7 +247,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307702](http://oeis.org/A307702) ([L14 program](A307702.asm)): Clique covering number of the n-Sierpinski tetrahedron graph.
 * [A307753](http://oeis.org/A307753) ([L13 program](A307753.asm)): Number of palindromic pentagonal numbers of length n whose index is also palindromic.
 * [A307802](http://oeis.org/A307802) ([L02 program](A307802.asm)): Number of palindromic octagonal numbers of length n whose index is also palindromic.
-* [A307808](http://oeis.org/A307808) ([L11 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
+* [A307808](http://oeis.org/A307808) ([L08 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
 * [A307921](http://oeis.org/A307921) ([L14 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
 * [A307939](http://oeis.org/A307939) ([L16 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
@@ -701,5 +701,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330003](http://oeis.org/A330003) ([L08 program](A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
 * [A330115](http://oeis.org/A330115) ([L19 program](A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
 * [A330133](http://oeis.org/A330133) ([L13 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
+* [A330246](http://oeis.org/A330246) ([L08 program](A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A331190](http://oeis.org/A331190) ([L18 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.

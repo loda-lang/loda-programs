@@ -8,13 +8,11 @@ mov $3,$4
 mul $3,5
 mov $2,$5
 sub $1,$2
-mov $2,0
 fac $1
 mov $4,6
 mul $1,$4
 mul $1,$5
 mul $1,$3
-mov $0,$3
 lpb $0,1
   mov $0,0
   mul $1,2
