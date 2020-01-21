@@ -4,6 +4,5 @@
 mov $1,$0
 mul $1,2
 div $1,7
-mov $0,0
 gcd $1,2
 sub $1,1
