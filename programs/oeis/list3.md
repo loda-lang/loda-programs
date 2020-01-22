@@ -45,7 +45,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301685](http://oeis.org/A301685) ([L31 program](A301685.asm)): Partial sums of A301684.
 * [A301689](http://oeis.org/A301689) ([L22 program](A301689.asm)): Partial sums of A301688.
 * [A301694](http://oeis.org/A301694) ([L11 program](A301694.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)*(1 - x^3)).
-* [A301695](http://oeis.org/A301695) ([L09 program](A301695.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)^2*(1 - x^3)).
+* [A301695](http://oeis.org/A301695) ([L07 program](A301695.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)^2*(1 - x^3)).
 * [A301696](http://oeis.org/A301696) ([L09 program](A301696.asm)): Partial sums of A219529.
 * [A301697](http://oeis.org/A301697) ([L25 program](A301697.asm)): Coordination sequence for node of type V2 in "krj" 2-D tiling (or net).
 * [A301708](http://oeis.org/A301708) ([L22 program](A301708.asm)): Coordination sequence for node of type V1 in "krc" 2-D tiling (or net).
