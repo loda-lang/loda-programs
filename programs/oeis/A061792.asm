@@ -5,7 +5,6 @@ fac $2
 mul $0,2
 add $2,$0
 mov $3,$2
-mul $0,0
 gcd $1,$3
 pow $1,2
 div $1,8
