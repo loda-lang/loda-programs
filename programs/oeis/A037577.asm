@@ -5,7 +5,6 @@ mov $2,5
 pow $2,$0
 mul $2,2
 div $2,3
-mul $0,0
 mul $2,5
 div $2,2
 mov $1,$2

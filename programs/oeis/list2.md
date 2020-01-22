@@ -86,7 +86,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204439](http://oeis.org/A204439) ([L13 program](A204439.asm)): Symmetric matrix: f(i,j)=((i+j+2)^2 mod 3), by (constant) antidiagonals.
 * [A204445](http://oeis.org/A204445) ([L16 program](A204445.asm)): Symmetric matrix: f(i,j)=floor[(i+j+4)/4]-floor[(i+j+1)/4], by (constant) antidiagonals.
 * [A204453](http://oeis.org/A204453) ([L19 program](A204453.asm)): Period length 14: [0, 1, 2, 3, 4, 5, 6, 0, 6, 5, 4, 3, 2, 1] repeated.
-* [A204454](http://oeis.org/A204454) ([L13 program](A204454.asm)): Odd numbers not divisible by 11.
+* [A204454](http://oeis.org/A204454) ([L11 program](A204454.asm)): Odd numbers not divisible by 11.
 * [A204457](http://oeis.org/A204457) ([L16 program](A204457.asm)): Odd numbers not divisible by 13.
 * [A204458](http://oeis.org/A204458) ([L24 program](A204458.asm)): Odd numbers not divisible by 17.
 * [A204467](http://oeis.org/A204467) ([L10 program](A204467.asm)): Number of 3-element subsets that can be chosen from {1,2,...,6*n+3} having element sum 9*n+6.
@@ -1496,7 +1496,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257936](http://oeis.org/A257936) ([L03 program](A257936.asm)): Decimal expansion of 11/18.
 * [A257942](http://oeis.org/A257942) ([L08 program](A257942.asm)): a(n) = (n+1)*(n+2)/A014695(n+1), where A014695 is repeat (1, 2, 2, 1).
 * [A258016](http://oeis.org/A258016) ([L13 program](A258016.asm)): Unlucky numbers removed at the stage three of Lucky sieve.
-* [A258054](http://oeis.org/A258054) ([L18 program](A258054.asm)): Circle of fifths cycle (counterclockwise).
+* [A258054](http://oeis.org/A258054) ([L06 program](A258054.asm)): Circle of fifths cycle (counterclockwise).
 * [A258071](http://oeis.org/A258071) ([L01 program](A258071.asm)): Nonnegative integers that can be computed using exactly ten 10's and the four basic arithmetic operations {+, -, *, /}.
 * [A258085](http://oeis.org/A258085) ([L13 program](A258085.asm)): Strictly increasing list of F and F - 1, where F = A000045, the Fibonacci numbers.
 * [A258087](http://oeis.org/A258087) ([L07 program](A258087.asm)): Start with all terms set to 0. Then add n to the next n+2 terms for n=0,1,2,... .
@@ -2129,7 +2129,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A275365](http://oeis.org/A275365) ([L06 program](A275365.asm)): a(1)=2, a(2)=2; thereafter a(n) = a(n-a(n-1)) + a(n-a(n-2)).
 * [A275437](http://oeis.org/A275437) ([L11 program](A275437.asm)): Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
 * [A275543](http://oeis.org/A275543) ([L12 program](A275543.asm)): A081585 and A069129 interleaved.
-* [A275591](http://oeis.org/A275591) ([L05 program](A275591.asm)): a(n) = n^2 + 9*n + 1.
+* [A275591](http://oeis.org/A275591) ([L04 program](A275591.asm)): a(n) = n^2 + 9*n + 1.
 * [A275615](http://oeis.org/A275615) ([L10 program](A275615.asm)): Decimal expansion of 22/111.
 * [A275673](http://oeis.org/A275673) ([L05 program](A275673.asm)): List of numbers that are in a spoke of a hexagonal spiral.
 * [A275704](http://oeis.org/A275704) ([L06 program](A275704.asm)): Digital root of n + (n+1)^2.
@@ -2279,7 +2279,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280724](http://oeis.org/A280724) ([L17 program](A280724.asm)): Expansion of 1/(1 - x) + (1/(1 - x)^2)*Sum_{k>=0} x^(3^k).
 * [A281026](http://oeis.org/A281026) ([L06 program](A281026.asm)): a(n) = floor(3*n*(n+1)/4).
 * [A281098](http://oeis.org/A281098) ([L10 program](A281098.asm)): a(n) is the GCD of the sequence d(n) = A261327(k+n) - A261327(k) for all k.
-* [A281151](http://oeis.org/A281151) ([L18 program](A281151.asm)): a(n) = floor(4*n*(n+1)/5).
+* [A281151](http://oeis.org/A281151) ([L06 program](A281151.asm)): a(n) = floor(4*n*(n+1)/5).
 * [A281200](http://oeis.org/A281200) ([L15 program](A281200.asm)): Number of n X 3 0..1 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
 * [A281258](http://oeis.org/A281258) ([L11 program](A281258.asm)): Digital root of n*(n+1)*(n+2)/2.
 * [A281333](http://oeis.org/A281333) ([L16 program](A281333.asm)): a(n) = 1 + floor(n/2) + floor(n^2/3).
