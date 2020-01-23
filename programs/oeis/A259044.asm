@@ -6,10 +6,5 @@ mov $1,4
 pow $2,0
 add $2,2
 mod $0,$2
-mov $2,0
-lpb $0,1
-  div $1,$2
-  mov $3,$1
-lpe
 sub $1,$0
 sub $1,2

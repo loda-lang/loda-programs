@@ -5,7 +5,6 @@ div $2,0
 mov $1,8
 lpb $0,1
   sub $1,$2
-  mov $0,$1
 lpe
 pow $1,$0
 div $1,7

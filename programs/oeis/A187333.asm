@@ -7,7 +7,6 @@ pow $1,$0
 add $2,4
 add $1,$2
 mul $1,2
-mul $0,0
 sub $1,10
 div $1,2
 mul $1,2
