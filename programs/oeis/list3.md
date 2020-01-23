@@ -277,6 +277,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309093](http://oeis.org/A309093) ([L10 program](A309093.asm)): The analog of A309077(n), but allowing fractional powers.
 * [A309127](http://oeis.org/A309127) ([L24 program](A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309198](http://oeis.org/A309198) ([L130 program](A309198.asm)): Fixed point of the morphism 1 -> 12, 2 -> 3, 3 -> 4, 4 -> 123.
+* [A309338](http://oeis.org/A309338) ([L18 program](A309338.asm)): a(n) = n^4 if n odd, 7*n^4/8 if n even.
 * [A309372](http://oeis.org/A309372) ([L19 program](A309372.asm)): a(n) = n^2 - n^3 + n^4.
 * [A309683](http://oeis.org/A309683) ([L20 program](A309683.asm)): Number of odd parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309685](http://oeis.org/A309685) ([L12 program](A309685.asm)): Number of even parts appearing among the smallest parts of the partitions of n into 3 parts.
@@ -528,6 +529,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317657](http://oeis.org/A317657) ([L17 program](A317657.asm)): Numbers congruent to {15, 75, 95} mod 100.
 * [A317790](http://oeis.org/A317790) ([L11 program](A317790.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-4) - 2*(n-5) + a(n-6) for n>5, a(0)=a(1)=1, a(2)=a(3)=7, a(4)=13, a(5)=19.
 * [A317849](http://oeis.org/A317849) ([L27 program](A317849.asm)): Number of states of the Finite State Automaton Gn accepting the language of maximal (or minimal) lexicographic representatives of elements in the positive braid monoid An.
+* [A317984](http://oeis.org/A317984) ([L12 program](A317984.asm)): Expansion of 140*x*(1 + 4*x + x^2) / (1 - x)^5.
 * [A318054](http://oeis.org/A318054) ([L11 program](A318054.asm)): a(n) = n*(n+1)*(n^2+n+22)/24.
 * [A318111](http://oeis.org/A318111) ([L12 program](A318111.asm)): Number of maximal 1-intersecting families of 2-sets of [n] = {1,2,...,n}.
 * [A318159](http://oeis.org/A318159) ([L47 program](A318159.asm)): Figurate numbers based on the small stellated dodecahedron: a(n) = n*(21*n^2 - 33*n + 14)/2.

@@ -7,19 +7,14 @@ mul $0,2
 lpb $0,1
   add $0,$1
   gcd $0,4
-  add $2,5
   fac $5
   sub $0,$5
   pow $0,6
-  fac $6
-  mul $0,2
-  sub $6,$0
-  add $4,$6
+  fac $2
+  sub $2,$0
   add $4,$0
   add $1,$4
-  mod $1,6
   sub $0,1
-  mul $4,2
 lpe
 mov $3,$1
 sub $3,$0

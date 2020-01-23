@@ -4,10 +4,5 @@
 mov $2,$0
 pow $2,7
 sub $2,$0
-lpb $0,1
-  div $5,$3
-  add $4,$5
-  pow $0,$4
-lpe
-add $1,$2
+mov $1,$2
 div $1,42
