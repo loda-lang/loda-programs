@@ -8,7 +8,6 @@ add $2,3
 add $1,$2
 mul $1,7
 sub $0,1
-mov $3,$1
 gcd $1,$0
 div $1,6
 mul $1,49

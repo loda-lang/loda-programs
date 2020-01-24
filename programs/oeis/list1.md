@@ -173,7 +173,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102296](http://oeis.org/A102296) ([L10 program](A102296.asm)): a(n) = (1/6)*(n+1)*(10*n^2 + 17*n + 12).
 * [A102302](http://oeis.org/A102302) ([L17 program](A102302.asm)): Largest number < n/2 coprime to n.
 * [A102305](http://oeis.org/A102305) ([L04 program](A102305.asm)): a(n) = n^2 + 2*n + 3.
-* [A102345](http://oeis.org/A102345) ([L17 program](A102345.asm)): a(n) = 3^n + (-1)^n.
+* [A102345](http://oeis.org/A102345) ([L05 program](A102345.asm)): a(n) = 3^n + (-1)^n.
 * [A102352](http://oeis.org/A102352) ([L06 program](A102352.asm)): Numbers n such that n^3 can be partitioned into n primes such that n-1 are consecutive primes and the remaining prime is larger than the sum of the n-1 consecutive primes.
 * [A102438](http://oeis.org/A102438) ([L03 program](A102438.asm)): a(n) = 100*n + 44.
 * [A102439](http://oeis.org/A102439) ([L03 program](A102439.asm)): a(n) = 100*n + 4.
@@ -834,6 +834,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120413](http://oeis.org/A120413) ([L06 program](A120413.asm)): Largest even number strictly less than n^2.
 * [A120462](http://oeis.org/A120462) ([L10 program](A120462.asm)): Expansion of -2*x*(-3-2*x+4*x^2) / ((x-1)*(2*x+1)*(2*x-1)*(1+x)).
 * [A120471](http://oeis.org/A120471) ([L14 program](A120471.asm)): 6 *A015518(n).
+* [A120478](http://oeis.org/A120478) ([L20 program](A120478.asm)): Binomial(n+6,5)-binomial(n,5).
 * [A120511](http://oeis.org/A120511) ([L20 program](A120511.asm)): a(n) = min{j>0 : A006949(j) = n}.
 * [A120512](http://oeis.org/A120512) ([L20 program](A120512.asm)): a(n) = min{j : A120501(j) = n}.
 * [A120513](http://oeis.org/A120513) ([L12 program](A120513.asm)): a(n) = min{j : A120502(j) = n}.
@@ -1516,7 +1517,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133878](http://oeis.org/A133878) ([L07 program](A133878.asm)): n modulo 8 repeated 8 times.
 * [A133879](http://oeis.org/A133879) ([L19 program](A133879.asm)): n modulo 9 repeated 9 times.
 * [A133880](http://oeis.org/A133880) ([L06 program](A133880.asm)): n modulo p repeated p times (where p=10).
-* [A133882](http://oeis.org/A133882) ([L14 program](A133882.asm)): a(n) = binomial(n+2,n) mod 2^2.
+* [A133882](http://oeis.org/A133882) ([L08 program](A133882.asm)): a(n) = binomial(n+2,n) mod 2^2.
 * [A133883](http://oeis.org/A133883) ([L32 program](A133883.asm)): a(n) = binomial(n+3,n) mod 3^2.
 * [A133884](http://oeis.org/A133884) ([L20 program](A133884.asm)): a(n) = binomial(n+4,n) mod 4.
 * [A133893](http://oeis.org/A133893) ([L06 program](A133893.asm)): Numbers m such that binomial(m+3,m) mod 3 = 0.
@@ -3114,6 +3115,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164906](http://oeis.org/A164906) ([L05 program](A164906.asm)): Duplicate of A056450
 * [A164907](http://oeis.org/A164907) ([L10 program](A164907.asm)): a(n) = (3*3^n-(-1)^n)/2.
 * [A164908](http://oeis.org/A164908) ([L08 program](A164908.asm)): a(n) = (3*4^n - 0^n)/2.
+* [A164938](http://oeis.org/A164938) ([L09 program](A164938.asm)): a(n) = (n^5-n)/10, which is always an integer.
 * [A164950](http://oeis.org/A164950) ([L27 program](A164950.asm)): 1 if there is a winning strategy for misère Sprouts with n initial points, else 0.
 * [A164965](http://oeis.org/A164965) ([L08 program](A164965.asm)): Cumulative sums of A010892.
 * [A165020](http://oeis.org/A165020) ([L04 program](A165020.asm)): Length of cycle mentioned in A165019
@@ -3800,6 +3802,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173267](http://oeis.org/A173267) ([L22 program](A173267.asm)): a(n) = 121*n^2 + n.
 * [A173275](http://oeis.org/A173275) ([L18 program](A173275.asm)): a(n) = 169*n^2 + n.
 * [A173276](http://oeis.org/A173276) ([L04 program](A173276.asm)): a(n) = a(n-2) + a(n-3) - floor(a(n-3)/2) - floor(a(n-4)/2).
+* [A173294](http://oeis.org/A173294) ([L12 program](A173294.asm)): Values of 16*n^2+24*n+7, n>=0, each duplicated.
 * [A173307](http://oeis.org/A173307) ([L05 program](A173307.asm)): a(n) = 13*n*(n+1).
 * [A173308](http://oeis.org/A173308) ([L10 program](A173308.asm)): 17*n*(n+1).
 * [A173309](http://oeis.org/A173309) ([L12 program](A173309.asm)): 19*n*(n+1).

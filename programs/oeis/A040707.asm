@@ -7,11 +7,9 @@ lpb $0,1
   add $1,$0
   gcd $1,2
   mov $0,$2
-  add $0,1
   mul $1,6
   sub $1,7
   add $3,1
-  sub $0,1
   add $1,$3
 lpe
 sub $1,1
