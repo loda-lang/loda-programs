@@ -3,13 +3,9 @@
 
 mul $0,2
 mov $1,$0
-mov $3,$1
-add $3,3
-mul $1,$3
-lpb $0,1
-  div $3,$2
-  mod $0,$3
-lpe
+mov $2,$1
+add $2,3
+mul $1,$2
 div $1,2
 mul $1,72
 add $1,81

@@ -7,11 +7,9 @@ mul $0,2
 lpb $0,1
   add $0,$1
   gcd $0,4
-  fac $5
-  sub $0,$5
-  pow $0,6
   fac $2
-  sub $2,$0
+  sub $0,$2
+  pow $0,6
   add $4,$0
   add $1,$4
   sub $0,1

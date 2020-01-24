@@ -5,8 +5,5 @@ pow $0,2
 mov $1,$0
 mov $2,$1
 mul $1,$2
-lpb $0,1
-  div $2,$3
-lpe
 sub $1,$2
 div $1,12

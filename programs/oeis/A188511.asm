@@ -4,6 +4,3 @@
 mul $0,7
 mov $1,$0
 div $1,10
-lpb $0,1
-  mod $0,$2
-lpe
