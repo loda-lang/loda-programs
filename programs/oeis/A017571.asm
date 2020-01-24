@@ -7,9 +7,7 @@ mul $2,3
 mul $1,$2
 div $1,2
 add $1,2
-mod $0,0
 pow $1,3
-sub $3,$0
 div $1,72
 mul $1,576
 add $1,64
