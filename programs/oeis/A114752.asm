@@ -6,6 +6,3 @@ mov $1,1
 gcd $0,2
 mul $0,$2
 add $1,$0
-lpb $0,1
-  add $0,5
-lpe

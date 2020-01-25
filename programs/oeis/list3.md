@@ -16,6 +16,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300522](http://oeis.org/A300522) ([L42 program](A300522.asm)): a(n) = (5*n + 3)*(5*n + 4)*(5*n + 5)/6.
 * [A300523](http://oeis.org/A300523) ([L31 program](A300523.asm)): a(n) = (5*n + 5)*(5*n + 6)*(5*n + 7)/6.
 * [A300576](http://oeis.org/A300576) ([L07 program](A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
+* [A300622](http://oeis.org/A300622) ([L12 program](A300622.asm)): Denominators of sequence whose exponential self-convolution yields sequence 1, 2, 3, 5, 7, 11, 13, ... (1 with primes).
 * [A300659](http://oeis.org/A300659) ([L09 program](A300659.asm)): Product of digits of n!.
 * [A300758](http://oeis.org/A300758) ([L12 program](A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
 * [A300846](http://oeis.org/A300846) ([L08 program](A300846.asm)): a(n) = 3*(n - 1)^2*n^3.
@@ -166,7 +167,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304619](http://oeis.org/A304619) ([L25 program](A304619.asm)): a(n) = 324*n^2 - 804*n + 468 (n>=2).
 * [A304659](http://oeis.org/A304659) ([L10 program](A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
 * [A304725](http://oeis.org/A304725) ([L07 program](A304725.asm)): a(n) = n^4 + 8*n^3 + 20*n^2 + 16*n + 2.
-* [A304726](http://oeis.org/A304726) ([L09 program](A304726.asm)): a(n) = n^4 + 4*n^2 + 3.
+* [A304726](http://oeis.org/A304726) ([L07 program](A304726.asm)): a(n) = n^4 + 4*n^2 + 3.
 * [A304809](http://oeis.org/A304809) ([L09 program](A304809.asm)): Solution (a(n)) of the complementary equation a(n) = b(2n) + b(4n) ; see Comments.
 * [A304826](http://oeis.org/A304826) ([L16 program](A304826.asm)): a(n) = 32*7^n/21 - 8/3, n>=1.
 * [A304827](http://oeis.org/A304827) ([L12 program](A304827.asm)): a(n) = 52*7^n/21 - 16/3 (n>=1).
@@ -260,6 +261,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308287](http://oeis.org/A308287) ([L06 program](A308287.asm)): Length 20 arithmetic progression of primes (PAP-20).
 * [A308305](http://oeis.org/A308305) ([L14 program](A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
 * [A308385](http://oeis.org/A308385) ([L27 program](A308385.asm)): a(n) is the last square visited by fers moves on a spirally numbered (2n-1) X (2n-1) board, moving to the lowest available unvisited square at each step.
+* [A308422](http://oeis.org/A308422) ([L08 program](A308422.asm)): a(n) = n^2 if n odd, 3*n^2/4 if n even.
 * [A308579](http://oeis.org/A308579) ([L11 program](A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
 * [A308580](http://oeis.org/A308580) ([L15 program](A308580.asm)): a(n) = 3*2^n + n^2 - n.
 * [A308585](http://oeis.org/A308585) ([L08 program](A308585.asm)): a(n) = 2^(n + 3) - 10*n - 6.
@@ -704,7 +706,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329997](http://oeis.org/A329997) ([L05 program](A329997.asm)): Beatty sequence for 3^x, where 1/x^3 + 1/3^x = 1.
 * [A330002](http://oeis.org/A330002) ([L04 program](A330002.asm)): Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
 * [A330003](http://oeis.org/A330003) ([L08 program](A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
-* [A330115](http://oeis.org/A330115) ([L19 program](A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
+* [A330115](http://oeis.org/A330115) ([L13 program](A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
 * [A330133](http://oeis.org/A330133) ([L13 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330144](http://oeis.org/A330144) ([L20 program](A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
 * [A330246](http://oeis.org/A330246) ([L08 program](A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
