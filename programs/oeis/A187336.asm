@@ -4,9 +4,6 @@
 mul $0,5
 mov $1,$0
 gcd $1,6
-lpb $0,1
-  add $2,8
-lpe
 add $1,$0
 mul $1,5
 sub $1,30
