@@ -3,16 +3,11 @@
 
 add $0,4
 fac $1
-mov $4,$1
+mov $2,$1
 mov $1,5
 sub $0,3
-add $4,2
+add $2,2
 fac $1
-fac $4
-mul $4,$0
-div $1,$4
-lpb $0,1
-  mov $0,3
-  div $2,$3
-  pow $0,$2
-lpe
+fac $2
+mul $2,$0
+div $1,$2
