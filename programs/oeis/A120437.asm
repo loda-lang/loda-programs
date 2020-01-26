@@ -9,13 +9,6 @@ sub $1,5
 pow $1,4
 gcd $1,$2
 pow $1,2
-mod $4,0
-mul $5,$4
-lpb $0,1
-  pow $6,$5
-  gcd $1,$6
-  add $3,$4
-lpe
 div $1,8
 mul $1,6
 add $1,1

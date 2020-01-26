@@ -3,10 +3,9 @@
 
 mov $4,$0
 fac $0
-fac $1
-add $1,$0
+mov $1,$0
 mul $1,4
-add $1,1
+add $1,5
 mov $3,$4
 mov $2,$3
 add $1,$2

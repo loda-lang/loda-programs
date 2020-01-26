@@ -4,10 +4,8 @@
 mov $1,2
 lpb $0,1
   sub $0,1
-  sub $3,$3
   mov $1,$0
   sub $0,1
-  mov $2,4
   mul $1,3
 lpe
 pow $1,2

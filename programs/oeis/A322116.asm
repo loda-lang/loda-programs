@@ -8,11 +8,7 @@ add $1,1
 pow $1,$0
 add $1,$2
 mul $1,$2
-mul $0,2
 div $1,4
-lpb $0,1
-  pow $0,$1
-lpe
 sub $1,3
 mul $1,4
 add $1,2

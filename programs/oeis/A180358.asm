@@ -11,7 +11,4 @@ gcd $4,$0
 add $1,$4
 mov $3,$2
 mul $1,$3
-lpb $0,1
-  add $0,1
-lpe
 div $1,4
