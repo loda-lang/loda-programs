@@ -3,9 +3,6 @@
 
 fac $1
 mul $0,2
-lpb $0,1
-  mul $0,4
-lpe
 add $1,$0
 pow $1,3
 div $1,2

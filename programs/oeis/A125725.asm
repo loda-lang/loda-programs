@@ -5,6 +5,3 @@ mov $1,7
 mov $2,$0
 pow $1,$2
 div $1,3
-lpb $0,1
-  add $0,$2
-lpe

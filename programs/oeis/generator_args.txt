@@ -22385,3 +22385,10 @@ A162436: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A228105: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A093544: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A188148: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A168179: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A262333: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A244590: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A060008: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A183355: -p 60 -n 6 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A066606: -p 50 -n 5 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A109053: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
