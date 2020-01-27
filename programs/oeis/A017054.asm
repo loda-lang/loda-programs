@@ -3,8 +3,5 @@
 
 mul $0,7
 mov $1,6
-lpb $0,1
-  mov $2,6
-lpe
 add $1,$0
 pow $1,2

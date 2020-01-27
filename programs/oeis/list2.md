@@ -365,6 +365,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212839](http://oeis.org/A212839) ([L74 program](A212839.asm)): Number of 0..n arrays of length 6 with 0 never adjacent to n.
 * [A212892](http://oeis.org/A212892) ([L06 program](A212892.asm)): a(n) = n^4/8 if n is even, a(n) = (n^2-1)^2/8 if n is odd.
 * [A212893](http://oeis.org/A212893) ([L16 program](A212893.asm)): Number of quadruples (w,x,y,z) with all terms in {0,...,n} such that w-x, x-y, and y-z all have the same parity.
+* [A212894](http://oeis.org/A212894) ([L19 program](A212894.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)=1.
 * [A212959](http://oeis.org/A212959) ([L10 program](A212959.asm)): Number of (w,x,y) such that w,x,y are all in {0,...,n} and |w-x| = |x-y|.
 * [A212960](http://oeis.org/A212960) ([L12 program](A212960.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x| != |x-y|.
 * [A212964](http://oeis.org/A212964) ([L09 program](A212964.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x| < |x-y| < |y-w|.
@@ -1096,7 +1097,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242774](http://oeis.org/A242774) ([L11 program](A242774.asm)): a(n) = ceiling( n / 2 ) + ceiling( n / 3 ).
 * [A242856](http://oeis.org/A242856) ([L21 program](A242856.asm)): Number of 2-matchings of the n X n grid graph.
 * [A242963](http://oeis.org/A242963) ([L04 program](A242963.asm)): Numbers n such that A242962(n) = sigma(n) = A000203(n).
-* [A242985](http://oeis.org/A242985) ([L11 program](A242985.asm)): a(n) = 4^n + 2^(n+1).
+* [A242985](http://oeis.org/A242985) ([L08 program](A242985.asm)): a(n) = 4^n + 2^(n+1).
 * [A242998](http://oeis.org/A242998) ([L20 program](A242998.asm)): Number of integers k such that R = (2^k*Q - Q - 1)/(Q + 1 - 2^k) is a prime number, when Q = A000668(n) is the n-th Mersenne prime.
 * [A243138](http://oeis.org/A243138) ([L08 program](A243138.asm)): n^2 + 15*n + 13.
 * [A243201](http://oeis.org/A243201) ([L13 program](A243201.asm)): Odd octagonal numbers indexed by triangular numbers.

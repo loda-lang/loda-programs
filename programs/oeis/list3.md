@@ -109,6 +109,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304163](http://oeis.org/A304163) ([L09 program](A304163.asm)): a(n) = 9*n^2 - 3*n + 1 with n>0.
 * [A304164](http://oeis.org/A304164) ([L12 program](A304164.asm)): a(n) = 27*n^2 - 21*n + 6 (n>=1).
 * [A304165](http://oeis.org/A304165) ([L27 program](A304165.asm)): a(n) = 324*n^2 - 336*n + 102 (n >= 1).
+* [A304166](http://oeis.org/A304166) ([L12 program](A304166.asm)): a(n) = 972*n^2 - 1224*n + 414 with n > 0.
 * [A304168](http://oeis.org/A304168) ([L11 program](A304168.asm)): a(n) = 2*3^n - 2^(n-1) (n>=1).
 * [A304171](http://oeis.org/A304171) ([L05 program](A304171.asm)): a(n) = 87*2^n - 38 (n>=0).
 * [A304172](http://oeis.org/A304172) ([L25 program](A304172.asm)): a(n) = 99*2^n - 45 (n>=0).
@@ -193,6 +194,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305067](http://oeis.org/A305067) ([L05 program](A305067.asm)): a(n) = 282*2^n - 150.
 * [A305068](http://oeis.org/A305068) ([L03 program](A305068.asm)): a(n) = 54*n - 18 (n>=1).
 * [A305069](http://oeis.org/A305069) ([L03 program](A305069.asm)): a(n) = 117*n - 72 (n>=1).
+* [A305070](http://oeis.org/A305070) ([L14 program](A305070.asm)): a(n) = 378*n^2 - 54*n (n>=1).
 * [A305072](http://oeis.org/A305072) ([L11 program](A305072.asm)): a(n) = 144*n^2 - 24*n (n>=1).
 * [A305073](http://oeis.org/A305073) ([L15 program](A305073.asm)): a(n) = 288*n^2 - 96*n (n>=1).
 * [A305074](http://oeis.org/A305074) ([L03 program](A305074.asm)): a(n) = 20*n - 8 (n>=1).
@@ -266,7 +268,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308579](http://oeis.org/A308579) ([L11 program](A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
 * [A308580](http://oeis.org/A308580) ([L15 program](A308580.asm)): a(n) = 3*2^n + n^2 - n.
 * [A308585](http://oeis.org/A308585) ([L08 program](A308585.asm)): a(n) = 2^(n + 3) - 10*n - 6.
-* [A308600](http://oeis.org/A308600) ([L17 program](A308600.asm)): Number of (not necessarily maximum) cliques in the n X n antelope graph.
+* [A308600](http://oeis.org/A308600) ([L15 program](A308600.asm)): Number of (not necessarily maximum) cliques in the n X n antelope graph.
 * [A308602](http://oeis.org/A308602) ([L04 program](A308602.asm)): Number of (not necessarily maximum) cliques in the n-cycle graph.
 * [A308603](http://oeis.org/A308603) ([L04 program](A308603.asm)): Number of (not necessarily minimum) cliques in the n-dipyramidal graph.
 * [A308607](http://oeis.org/A308607) ([L05 program](A308607.asm)): Number of (not necessarily maximum) cliques in the wheel graph on n vertices.
