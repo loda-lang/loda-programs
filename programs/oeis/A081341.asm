@@ -7,7 +7,6 @@ mov $3,6
 pow $3,$4
 mov $1,$3
 lpb $2,1
-  div $4,5
   mod $2,2
   sub $2,1
   div $1,2
