@@ -2708,7 +2708,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298788](http://oeis.org/A298788) ([L17 program](A298788.asm)): Coordination sequence for bey tiling (or net) with respect to a trivalent node.
 * [A298789](http://oeis.org/A298789) ([L23 program](A298789.asm)): Coordination sequence for bey tiling (or net) with respect to a tetravalent node.
 * [A298791](http://oeis.org/A298791) ([L14 program](A298791.asm)): Partial sums of A298789.
-* [A298881](http://oeis.org/A298881) ([L07 program](A298881.asm)): a(0) = 0; for n>0, a(n) = 6*n!.
+* [A298881](http://oeis.org/A298881) ([L06 program](A298881.asm)): a(0) = 0; for n>0, a(n) = 6*n!.
 * [A298950](http://oeis.org/A298950) ([L13 program](A298950.asm)): Numbers k such that 5*k - 4 is a square.
 * [A298952](http://oeis.org/A298952) ([L12 program](A298952.asm)): Start with a(0) = 1 and add at step n >= 0 the term 1 at position 2*n + a(n).
 * [A299174](http://oeis.org/A299174) ([L03 program](A299174.asm)): The even positive integers.

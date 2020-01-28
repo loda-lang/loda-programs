@@ -306,6 +306,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105637](http://oeis.org/A105637) ([L17 program](A105637.asm)): a(n) = a(n-2)+a(n-3)-a(n-5).
 * [A105638](http://oeis.org/A105638) ([L07 program](A105638.asm)): Maximum number of intersections in self-intersecting n-gon.
 * [A105644](http://oeis.org/A105644) ([L08 program](A105644.asm)): a(n) = floor((Pi+e)*n).
+* [A105674](http://oeis.org/A105674) ([L16 program](A105674.asm)): Highest minimal distance of any Type I (strictly) singly-even binary self-dual code of length 2n.
 * [A105693](http://oeis.org/A105693) ([L08 program](A105693.asm)): a(n) = Fibonacci(2n+2)-2^n.
 * [A105723](http://oeis.org/A105723) ([L08 program](A105723.asm)): a(n) = 3^n - (-1)^n.
 * [A105734](http://oeis.org/A105734) ([L08 program](A105734.asm)): For n>2, a(n) > 0 is such that a(n-1)^2+4*a(n-2)*a(n) is a minimal square, with a(1)=1, a(2)=1.
@@ -1021,7 +1022,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125823](http://oeis.org/A125823) ([L08 program](A125823.asm)): Numbers whose base 7 representation is 4444....4.
 * [A125829](http://oeis.org/A125829) ([L20 program](A125829.asm)): Sprague-Grundy values for octal game .115.
 * [A125831](http://oeis.org/A125831) ([L03 program](A125831.asm)): a(n) = (5^n - 1)/2.
-* [A125833](http://oeis.org/A125833) ([L07 program](A125833.asm)): Numbers whose base 5 representation is 333333.......3.
+* [A125833](http://oeis.org/A125833) ([L05 program](A125833.asm)): Numbers whose base 5 representation is 333333.......3.
 * [A125835](http://oeis.org/A125835) ([L13 program](A125835.asm)): Numbers whose base 8 or octal representation is 22222222.......2.
 * [A125836](http://oeis.org/A125836) ([L16 program](A125836.asm)): Numbers whose base 8 or octal representation is 555555555......5.
 * [A125837](http://oeis.org/A125837) ([L06 program](A125837.asm)): Numbers whose base 8 or octal representation is 6666666......6.
@@ -1042,7 +1043,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126560](http://oeis.org/A126560) ([L15 program](A126560.asm)): a(n) = gcd(4(n+1)(n+2), n(n+3)), periodic with 8-cycle 4,2,2,4,8,2,2,8.
 * [A126562](http://oeis.org/A126562) ([L05 program](A126562.asm)): Number of intersections of at least four edges in a cube of n X n X n smaller cubes.
 * [A126565](http://oeis.org/A126565) ([L15 program](A126565.asm)): a(n) = ceiling(sin(n)*cos(n)).
-* [A126587](http://oeis.org/A126587) ([L09 program](A126587.asm)): a(n) is the number of integer lattice points inside the right triangle with legs 3n and 4n (and hypotenuse 5n).
+* [A126587](http://oeis.org/A126587) ([L08 program](A126587.asm)): a(n) is the number of integer lattice points inside the right triangle with legs 3n and 4n (and hypotenuse 5n).
 * [A126602](http://oeis.org/A126602) ([L15 program](A126602.asm)): a(1)=2^3*5*7*29=8120; for n>1, a(n) = (-1)sigma(a(n-1)).
 * [A126644](http://oeis.org/A126644) ([L15 program](A126644.asm)): a(n) is the number of integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4,5,6 and at least one of digits 7,8,9.
 * [A126645](http://oeis.org/A126645) ([L12 program](A126645.asm)): a(n) is the number of integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4 and 5, at least one of digits 6,7 and at least one of digits 8,9.
@@ -2071,7 +2072,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145397](http://oeis.org/A145397) ([L17 program](A145397.asm)): Numbers not of the form 1/6*m*(m+1)*(m+2), the non-tetrahedral numbers.
 * [A145563](http://oeis.org/A145563) ([L10 program](A145563.asm)): a(0)=0 and a(n+1) = 3*a(n) + 2^(n+2).
 * [A145568](http://oeis.org/A145568) ([L06 program](A145568.asm)): Characteristic function of numbers relatively prime to 11.
-* [A145569](http://oeis.org/A145569) ([L05 program](A145569.asm)): Multiples of 6 appear in pairs.
+* [A145569](http://oeis.org/A145569) ([L04 program](A145569.asm)): Multiples of 6 appear in pairs.
 * [A145577](http://oeis.org/A145577) ([L15 program](A145577.asm)): A045944 mod 9. Period 9: repeat 0,5,7,6,2,4,3,8,1.
 * [A145594](http://oeis.org/A145594) ([L16 program](A145594.asm)): A145593(n) mod 9.
 * [A145608](http://oeis.org/A145608) ([L13 program](A145608.asm)): Numbers a(n)=k such that (1/3)*(5*(2k+1)^2-2) is A057080(n)^2
@@ -3323,11 +3324,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168122](http://oeis.org/A168122) ([L17 program](A168122.asm)): n^2*(n^4+1)/2.
 * [A168123](http://oeis.org/A168123) ([L06 program](A168123.asm)): n^2*(n^5+1)/2.
 * [A168124](http://oeis.org/A168124) ([L09 program](A168124.asm)): a(n) = n^2*(n^6+1)/2.
-* [A168125](http://oeis.org/A168125) ([L09 program](A168125.asm)): a(n) = n^2*(n^7+1)/2.
+* [A168125](http://oeis.org/A168125) ([L06 program](A168125.asm)): a(n) = n^2*(n^7+1)/2.
 * [A168126](http://oeis.org/A168126) ([L07 program](A168126.asm)): a(n) = n^2*(n^8+1)/2.
 * [A168176](http://oeis.org/A168176) ([L07 program](A168176.asm)): a(n) = n^2*(n^10 + 1)/2.
 * [A168178](http://oeis.org/A168178) ([L12 program](A168178.asm)): a(n) = n^3*(n^2 + 1)/2.
 * [A168179](http://oeis.org/A168179) ([L05 program](A168179.asm)): a(n) = n^3*(n^4 + 1)/2.
+* [A168180](http://oeis.org/A168180) ([L08 program](A168180.asm)): a(n) = n^3*(n^5 + 1)/2.
 * [A168181](http://oeis.org/A168181) ([L05 program](A168181.asm)): Characteristic function of numbers that are not multiples of 8.
 * [A168182](http://oeis.org/A168182) ([L06 program](A168182.asm)): Characteristic function of numbers that are not multiples of 9.
 * [A168183](http://oeis.org/A168183) ([L05 program](A168183.asm)): Numbers that are not multiples of 9.
