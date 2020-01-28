@@ -282,6 +282,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309093](http://oeis.org/A309093) ([L10 program](A309093.asm)): The analog of A309077(n), but allowing fractional powers.
 * [A309127](http://oeis.org/A309127) ([L24 program](A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309198](http://oeis.org/A309198) ([L130 program](A309198.asm)): Fixed point of the morphism 1 -> 12, 2 -> 3, 3 -> 4, 4 -> 123.
+* [A309337](http://oeis.org/A309337) ([L08 program](A309337.asm)): a(n) = n^3 if n odd, 3*n^3/4 if n even.
 * [A309338](http://oeis.org/A309338) ([L18 program](A309338.asm)): a(n) = n^4 if n odd, 7*n^4/8 if n even.
 * [A309372](http://oeis.org/A309372) ([L19 program](A309372.asm)): a(n) = n^2 - n^3 + n^4.
 * [A309683](http://oeis.org/A309683) ([L20 program](A309683.asm)): Number of odd parts appearing among the smallest parts of the partitions of n into 3 parts.
@@ -716,4 +717,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330246](http://oeis.org/A330246) ([L08 program](A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A330938](http://oeis.org/A330938) ([L17 program](A330938.asm)): Numbers that cannot be written as the sum of four proper powers. A proper power is an integer number m of the form a^b where a,b are integers greater than or equal to 2.
+* [A331162](http://oeis.org/A331162) ([L15 program](A331162.asm)): a(n) is the number of digits in the concatenation of a(0) to a(n-1) that are equal to the corresponding digit in the concatenation of all integers >= 0, with a(0) = 0.
 * [A331190](http://oeis.org/A331190) ([L18 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.

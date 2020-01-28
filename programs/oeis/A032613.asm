@@ -4,9 +4,8 @@
 mov $4,$0
 pow $1,$0
 gcd $1,2
-pow $1,4
-mul $1,6
-add $1,13
+mul $1,90
+sub $1,71
 mov $3,$4
 mov $2,$3
 mul $2,101

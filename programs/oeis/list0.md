@@ -556,7 +556,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006003](http://oeis.org/A006003) ([L05 program](A006003.asm)): a(n) = n*(n^2 + 1)/2.
 * [A006004](http://oeis.org/A006004) ([L08 program](A006004.asm)): a(n) = C(n+2,3) + C(n,3) + C(n-1,3).
 * [A006007](http://oeis.org/A006007) ([L12 program](A006007.asm)): 4-dimensional analog of centered polygonal numbers: a(n) = n(n+1)*(n^2+n+4)/12.
-* [A006008](http://oeis.org/A006008) ([L09 program](A006008.asm)): Number of inequivalent ways to color vertices of a tetrahedron using <= n colors.
+* [A006008](http://oeis.org/A006008) ([L09 program](A006008.asm)): Number of inequivalent ways to color vertices of a regular tetrahedron using <= n colors.
 * [A006011](http://oeis.org/A006011) ([L07 program](A006011.asm)): a(n) = n^2*(n^2 - 1)/4.
 * [A006012](http://oeis.org/A006012) ([L07 program](A006012.asm)): a(0) = 1, a(1) = 2, a(n) = 4*a(n-1) - 2*a(n-2), n >= 2.
 * [A006054](http://oeis.org/A006054) ([L11 program](A006054.asm)): a(n) = 2*a(n-1) + a(n-2) - a(n-3), with a(0) = a(1) = 0, a(2) = 1.
@@ -1069,6 +1069,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014494](http://oeis.org/A014494) ([L08 program](A014494.asm)): Even triangular numbers.
 * [A014551](http://oeis.org/A014551) ([L20 program](A014551.asm)): Jacobsthal-Lucas numbers.
 * [A014557](http://oeis.org/A014557) ([L16 program](A014557.asm)): Multiplicity of K_3 in K_n.
+* [A014578](http://oeis.org/A014578) ([L12 program](A014578.asm)): Binary expansion of Thue constant (or Roth's constant).
 * [A014587](http://oeis.org/A014587) ([L25 program](A014587.asm)): Nim function for Take-a-Factorial-Game (a subtraction game).
 * [A014590](http://oeis.org/A014590) ([L02 program](A014590.asm)): Inverse of 581st cyclotomic polynomial.
 * [A014591](http://oeis.org/A014591) ([L07 program](A014591.asm)): a(n) = floor(n^2/12 + 5/4).
@@ -4079,6 +4080,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059152](http://oeis.org/A059152) ([L08 program](A059152.asm)): A hierarchical sequence (W'2{2}c - see A059126).
 * [A059153](http://oeis.org/A059153) ([L11 program](A059153.asm)): a(n) = 2^(n+2)*(2^(n+1)-1).
 * [A059154](http://oeis.org/A059154) ([L10 program](A059154.asm)): A hierarchical sequence (W'2{3}c - see A059126).
+* [A059157](http://oeis.org/A059157) ([L16 program](A059157.asm)): A hierarchical sequence (W'3{2,2}cc - see A059126).
 * [A059159](http://oeis.org/A059159) ([L08 program](A059159.asm)): A hierarchical sequence (W'2{2}*c) - see A059126).
 * [A059161](http://oeis.org/A059161) ([L08 program](A059161.asm)): A hierarchical sequence (W'2{3}*c - see A059126).
 * [A059162](http://oeis.org/A059162) ([L08 program](A059162.asm)): A hierarchical sequence (S(W'2{3}*c) - see A059126).

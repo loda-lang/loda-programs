@@ -267,7 +267,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211481](http://oeis.org/A211481) ([L33 program](A211481.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+2x+3y=n.
 * [A211483](http://oeis.org/A211483) ([L09 program](A211483.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and (w+n)^2=x+y.
 * [A211490](http://oeis.org/A211490) ([L21 program](A211490.asm)): Number of (n+1) X (n+1) -4..4 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
-* [A211519](http://oeis.org/A211519) ([L11 program](A211519.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=2x+3y.
+* [A211519](http://oeis.org/A211519) ([L11 program](A211519.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=2x-3y.
 * [A211521](http://oeis.org/A211521) ([L12 program](A211521.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w + 2x = 4y.
 * [A211522](http://oeis.org/A211522) ([L11 program](A211522.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w + 5y = 2x.
 * [A211523](http://oeis.org/A211523) ([L20 program](A211523.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w+2x=5y.
@@ -883,6 +883,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231002](http://oeis.org/A231002) ([L09 program](A231002.asm)): Number of years after which it is possible to have a date falling on same day of the week, but the entire year does not have the same calendar, in the Julian calendar.
 * [A231087](http://oeis.org/A231087) ([L17 program](A231087.asm)): Number of perfect matchings in graph C_3 x C_{2n}
 * [A231103](http://oeis.org/A231103) ([L08 program](A231103.asm)): Number of n X 3 0..3 arrays x(i,j) with each element horizontally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
+* [A231104](http://oeis.org/A231104) ([L09 program](A231104.asm)): Number of n X 4 0..3 arrays x(i,j) with each element horizontally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
 * [A231303](http://oeis.org/A231303) ([L16 program](A231303.asm)): Recurrence a(n) = a(n-2) + n^M for M=4, starting with a(0)=0, a(1)=1.
 * [A231470](http://oeis.org/A231470) ([L49 program](A231470.asm)): Largest integer less than 10, coprime to n.
 * [A231475](http://oeis.org/A231475) ([L12 program](A231475.asm)): Largest integer less than 5 and coprime to n.

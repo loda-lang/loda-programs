@@ -6,13 +6,8 @@ pow $0,2
 gcd $2,$0
 mov $3,$0
 sub $2,3
-mov $4,$3
-mul $4,6
 mul $2,$3
 mov $1,$2
-lpb $0,1
-  fac $4
-lpe
 sub $1,54
 div $1,2
 mul $1,10

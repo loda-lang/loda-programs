@@ -9,7 +9,6 @@ add $4,1
 mov $2,$4
 add $1,1
 pow $1,$2
-mov $2,0
 mov $3,4
 add $1,6
 div $1,4
