@@ -4,8 +4,3 @@
 mov $1,$0
 pow $1,5
 mod $1,8
-lpb $0,1
-  mod $4,$2
-  mov $3,$4
-  pow $0,$3
-lpe
