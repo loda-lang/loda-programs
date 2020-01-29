@@ -443,6 +443,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109047](http://oeis.org/A109047) ([L10 program](A109047.asm)): a(n) = lcm(n, 6).
 * [A109048](http://oeis.org/A109048) ([L05 program](A109048.asm)): a(n) = lcm(n, 7).
 * [A109049](http://oeis.org/A109049) ([L07 program](A109049.asm)): a(n) = lcm(n, 8).
+* [A109052](http://oeis.org/A109052) ([L10 program](A109052.asm)): a(n) = lcm(n,11).
 * [A109053](http://oeis.org/A109053) ([L08 program](A109053.asm)): a(n) = lcm(n,12).
 * [A109094](http://oeis.org/A109094) ([L12 program](A109094.asm)): Length of the longest path (repeated edges not allowed) between two arbitrary, distinct nodes in K_n, the complete graph on n vertices.
 * [A109112](http://oeis.org/A109112) ([L10 program](A109112.asm)): a(n) = 6*a(n-1) - 3*a(n-2), a(0)=2, a(1)=13.
@@ -3020,6 +3021,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A163303](http://oeis.org/A163303) ([L10 program](A163303.asm)): a(n) = n^3 + 73*n^2 + n + 67.
 * [A163403](http://oeis.org/A163403) ([L05 program](A163403.asm)): a(n) = 2*a(n-2) for n > 2; a(1) = 1, a(2) = 2.
 * [A163433](http://oeis.org/A163433) ([L04 program](A163433.asm)): Number of different fixed (possibly) disconnected trominoes bounded tightly by an n*n square
+* [A163434](http://oeis.org/A163434) ([L12 program](A163434.asm)): Number of different fixed (possibly) disconnected tetrominoes bounded tightly by an n X n square.
 * [A163522](http://oeis.org/A163522) ([L22 program](A163522.asm)): a(1)=2; for n>1, a(n) = sum of digits of a(n-1)^2.
 * [A163581](http://oeis.org/A163581) ([L15 program](A163581.asm)): Number of zeros of sin(x) in integer intervals starting with (0,1).
 * [A163584](http://oeis.org/A163584) ([L14 program](A163584.asm)): Number of singularities of tan(x) in integer intervals starting with (0,1).

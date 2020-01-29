@@ -907,7 +907,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010726](http://oeis.org/A010726) ([L04 program](A010726.asm)): Period 2: repeat (6,10).
 * [A010727](http://oeis.org/A010727) ([L01 program](A010727.asm)): Constant sequence: the all 7's sequence.
 * [A010728](http://oeis.org/A010728) ([L03 program](A010728.asm)): Period 2: repeat (7,8).
-* [A010729](http://oeis.org/A010729) ([L05 program](A010729.asm)): 8-(-1)^n.
+* [A010729](http://oeis.org/A010729) ([L04 program](A010729.asm)): 8-(-1)^n.
 * [A010730](http://oeis.org/A010730) ([L04 program](A010730.asm)): (17 -3*(-1)^n)/2.
 * [A010731](http://oeis.org/A010731) ([L01 program](A010731.asm)): Constant sequence: the all 8's sequence.
 * [A010732](http://oeis.org/A010732) ([L03 program](A010732.asm)): (17-(-1)^n)/2.
@@ -2627,6 +2627,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037479](http://oeis.org/A037479) ([L07 program](A037479.asm)): a(n)=Sum{d(i)*10^i: i=0,1,...,m}, where Sum{d(i)*9^i: i=0,1,...,m} is the base 9 representation of n.
 * [A037488](http://oeis.org/A037488) ([L19 program](A037488.asm)): Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
 * [A037489](http://oeis.org/A037489) ([L24 program](A037489.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
+* [A037490](http://oeis.org/A037490) ([L12 program](A037490.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
 * [A037577](http://oeis.org/A037577) ([L08 program](A037577.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
 * [A037584](http://oeis.org/A037584) ([L08 program](A037584.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 3,1.
 * [A037618](http://oeis.org/A037618) ([L10 program](A037618.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,3.
@@ -2856,6 +2857,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040875](http://oeis.org/A040875) ([L13 program](A040875.asm)): Continued fraction for sqrt(906).
 * [A040879](http://oeis.org/A040879) ([L08 program](A040879.asm)): Continued fraction for sqrt(910).
 * [A040884](http://oeis.org/A040884) ([L18 program](A040884.asm)): Continued fraction for sqrt(915).
+* [A040899](http://oeis.org/A040899) ([L13 program](A040899.asm)): Continued fraction for sqrt(930).
 * [A040929](http://oeis.org/A040929) ([L28 program](A040929.asm)): Continued fraction for sqrt(960).
 * [A040930](http://oeis.org/A040930) ([L08 program](A040930.asm)): Continued fraction for sqrt(962).
 * [A040931](http://oeis.org/A040931) ([L07 program](A040931.asm)): Continued fraction for sqrt(963).
@@ -5184,7 +5186,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A079003](http://oeis.org/A079003) ([L08 program](A079003.asm)): Least k >= 3 such that Fibonacci(k) == -1 (mod 3^n).
 * [A079004](http://oeis.org/A079004) ([L17 program](A079004.asm)): Least x>=3 such that F(x)==1 (mod 3^n) where F(x) denotes the x-th Fibonacci number (A000045).
 * [A079027](http://oeis.org/A079027) ([L05 program](A079027.asm)): a(n)=det(M(n)) where M(n) is the n X n matrix defined by m(i,i)=6, m(i,j)=i/j.
-* [A079028](http://oeis.org/A079028) ([L14 program](A079028.asm)): a(0) = 1, a(n) = (n+4)*4^(n-1) for n >= 1.
+* [A079028](http://oeis.org/A079028) ([L11 program](A079028.asm)): a(0) = 1, a(n) = (n+4)*4^(n-1) for n >= 1.
 * [A079034](http://oeis.org/A079034) ([L11 program](A079034.asm)): Determinant of M(n), the n X n matrix defined by m(i,i)=1, m(i,j)=i-j.
 * [A079043](http://oeis.org/A079043) ([L30 program](A079043.asm)): a(0)=1, then the fractional part of Pi*a(n) decreases monotonically to zero.
 * [A079097](http://oeis.org/A079097) ([L15 program](A079097.asm)): Mix odd numbers and squares.

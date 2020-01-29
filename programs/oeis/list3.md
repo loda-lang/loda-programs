@@ -484,7 +484,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316320](http://oeis.org/A316320) ([L14 program](A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
 * [A316355](http://oeis.org/A316355) ([L08 program](A316355.asm)): 2k-1 appears 2k times after 2k-2 appears once.
 * [A316457](http://oeis.org/A316457) ([L74 program](A316457.asm)): Expansion of x*(31 + 326*x + 336*x^2 + 26*x^3 + x^4) / (1 - x)^6.
-* [A316458](http://oeis.org/A316458) ([L43 program](A316458.asm)): Expansion of 60*x*(1 + 4*x + x^2) / (1 - x)^5.
+* [A316458](http://oeis.org/A316458) ([L11 program](A316458.asm)): Expansion of 60*x*(1 + 4*x + x^2) / (1 - x)^5.
 * [A316459](http://oeis.org/A316459) ([L14 program](A316459.asm)): Expansion of 30*x*(1 + x) / (1 - x)^4.
 * [A316466](http://oeis.org/A316466) ([L07 program](A316466.asm)): a(n) = 2*n*(7*n - 3).
 * [A316533](http://oeis.org/A316533) ([L24 program](A316533.asm)): a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
@@ -625,6 +625,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323610](http://oeis.org/A323610) ([L05 program](A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
 * [A323614](http://oeis.org/A323614) ([L07 program](A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
 * [A323629](http://oeis.org/A323629) ([L19 program](A323629.asm)): List of 6-powerful numbers (for the definition of k-powerful see A323395).
+* [A323723](http://oeis.org/A323723) ([L12 program](A323723.asm)): a(n) = (-2 - (-1)^n*(-2 + n) + n + 2*n^3)/4.
 * [A323724](http://oeis.org/A323724) ([L15 program](A323724.asm)): a(n) = n*(2*(n - 2)*n + (-1)^n + 3)/4.
 * [A323735](http://oeis.org/A323735) ([L14 program](A323735.asm)): a(n) is the largest minimal distance of a binary LCD [n,2] code.
 * [A323824](http://oeis.org/A323824) ([L06 program](A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
