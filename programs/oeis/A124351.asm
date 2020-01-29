@@ -7,7 +7,6 @@ lpb $0,1
   sub $0,1
   add $1,4
   mul $0,2
-  pow $0,4
 lpe
 mul $1,4
 add $1,12

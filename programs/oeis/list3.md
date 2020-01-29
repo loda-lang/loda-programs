@@ -240,7 +240,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306672](http://oeis.org/A306672) ([L15 program](A306672.asm)): Partial sums of the even Lucas numbers (A014448).
 * [A306696](http://oeis.org/A306696) ([L11 program](A306696.asm)): Lexicographically earliest sequence of nonnegative terms such that for any n > 0 and k > 0, if a(n) >= a(n+k), then a(n+2*k) <> a(n+k).
 * [A306764](http://oeis.org/A306764) ([L19 program](A306764.asm)): a(n) is a sequence of period 12: repeat [1, 1, 6, 2, 1, 3, 2, 2, 3, 1, 2, 6].
-* [A306771](http://oeis.org/A306771) ([L07 program](A306771.asm)): Numbers m such that phi(m) = phi(i + j) = phi(i) + phi(j) and phi(m) = phi(k * l) = phi(k) * phi(l) for some i, j, k, l, where phi is the Euler totient function A000010.
+* [A306771](http://oeis.org/A306771) ([L06 program](A306771.asm)): Numbers m such that phi(m) = phi(i + j) = phi(i) + phi(j) and phi(m) = phi(k * l) = phi(k) * phi(l) for some i, j, k, l, where phi is the Euler totient function A000010.
 * [A307018](http://oeis.org/A307018) ([L11 program](A307018.asm)): Total number of parts of size 3 in the partitions of n into parts of size 2 and 3.
 * [A307136](http://oeis.org/A307136) ([L11 program](A307136.asm)): a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
 * [A307182](http://oeis.org/A307182) ([L14 program](A307182.asm)): Crossing number of the n-crown graph (conjectured).
@@ -695,7 +695,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329682](http://oeis.org/A329682) ([L05 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L03 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L05 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
-* [A329822](http://oeis.org/A329822) ([L10 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
+* [A329822](http://oeis.org/A329822) ([L09 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
 * [A329826](http://oeis.org/A329826) ([L15 program](A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
 * [A329828](http://oeis.org/A329828) ([L18 program](A329828.asm)): Beatty sequence for (7+sqrt(37))/6.
 * [A329832](http://oeis.org/A329832) ([L10 program](A329832.asm)): Beatty sequence for (9+sqrt(65))/8.

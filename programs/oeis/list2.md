@@ -1559,7 +1559,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A259751](http://oeis.org/A259751) ([L08 program](A259751.asm)): Numbers that are congruent to {8,16} mod 24.
 * [A259752](http://oeis.org/A259752) ([L03 program](A259752.asm)): a(n) = 24n + 6.
 * [A259754](http://oeis.org/A259754) ([L22 program](A259754.asm)): Numbers that are congruent to {3,9,15,18,21} mod 24.
-* [A259755](http://oeis.org/A259755) ([L07 program](A259755.asm)): Numbers that are congruent to {4,20} mod 24.
+* [A259755](http://oeis.org/A259755) ([L06 program](A259755.asm)): Numbers that are congruent to {4,20} mod 24.
 * [A259821](http://oeis.org/A259821) ([L04 program](A259821.asm)): a(n) = floor( (3^n+1)^2/3^n ).
 * [A259968](http://oeis.org/A259968) ([L10 program](A259968.asm)): a(n) = a(n-1) + a(n-2) + a(n-4), with a(1)=1, a(2)=1, a(3)=3, a(4)=6.
 * [A259969](http://oeis.org/A259969) ([L12 program](A259969.asm)): a(n) = n*A259968(n).
@@ -1852,7 +1852,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267938](http://oeis.org/A267938) ([L14 program](A267938.asm)): Decimal representation of the n-th iteration of the "Rule 251" elementary cellular automaton starting with a single ON (black) cell.
 * [A267941](http://oeis.org/A267941) ([L21 program](A267941.asm)): Decimal representation of the n-th iteration of the "Rule 253" elementary cellular automaton starting with a single ON (black) cell.
 * [A267942](http://oeis.org/A267942) ([L16 program](A267942.asm)): Interleave (n-1)^2 + 2 and (n+1)^2 + 2.
-* [A267958](http://oeis.org/A267958) ([L07 program](A267958.asm)): 4 times A042965.
+* [A267958](http://oeis.org/A267958) ([L06 program](A267958.asm)): 4 times A042965.
 * [A267984](http://oeis.org/A267984) ([L08 program](A267984.asm)): Numbers congruent to {17, 23} mod 30.
 * [A267985](http://oeis.org/A267985) ([L13 program](A267985.asm)): Numbers congruent to {7, 13} mod 30.
 * [A268044](http://oeis.org/A268044) ([L05 program](A268044.asm)): The odd numbers congruent to {3, 4} mod 5.
