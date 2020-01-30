@@ -2630,6 +2630,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037490](http://oeis.org/A037490) ([L12 program](A037490.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
 * [A037577](http://oeis.org/A037577) ([L08 program](A037577.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
 * [A037584](http://oeis.org/A037584) ([L08 program](A037584.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 3,1.
+* [A037604](http://oeis.org/A037604) ([L04 program](A037604.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,3.
 * [A037618](http://oeis.org/A037618) ([L10 program](A037618.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,3.
 * [A037667](http://oeis.org/A037667) ([L06 program](A037667.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,2,0.
 * [A037817](http://oeis.org/A037817) ([L14 program](A037817.asm)): Number of i such that d(i)<=d(i-1), where Sum{d(i)*10^i: i=0,1,...,m} is base 10 representation of n.
@@ -2878,6 +2879,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A043545](http://oeis.org/A043545) ([L07 program](A043545.asm)): (Maximal base 2 digit of n) - (minimal base 2 digit of n).
 * [A043547](http://oeis.org/A043547) ([L07 program](A043547.asm)): Odd numbers interspersed with double the previous odd number.
 * [A043563](http://oeis.org/A043563) ([L16 program](A043563.asm)): Number of runs in base 11 representation of n.
+* [A043564](http://oeis.org/A043564) ([L16 program](A043564.asm)): Number of runs in base 12 representation of n.
 * [A043620](http://oeis.org/A043620) ([L29 program](A043620.asm)): Numbers n such that base 7 representation has exactly 5 runs.
 * [A043621](http://oeis.org/A043621) ([L06 program](A043621.asm)): Numbers n such that base 7 representation has exactly 6 runs.
 * [A043622](http://oeis.org/A043622) ([L29 program](A043622.asm)): Numbers n such that base 7 representation has exactly 7 runs.
@@ -4291,6 +4293,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062781](http://oeis.org/A062781) ([L05 program](A062781.asm)): Number of arithmetic progressions of four terms and any mean which can be extracted from the set of the first n positive integers.
 * [A062783](http://oeis.org/A062783) ([L08 program](A062783.asm)): a(n) = 3*n*(4*n-1).
 * [A062786](http://oeis.org/A062786) ([L06 program](A062786.asm)): Centered 10-gonal numbers.
+* [A062828](http://oeis.org/A062828) ([L11 program](A062828.asm)): a(n) = gcd(2n, n(n+1)/2).
 * [A062938](http://oeis.org/A062938) ([L12 program](A062938.asm)): a(n) = n*(n+1)*(n+2)*(n+3)+1, which equals (n^2 +3*n + 1)^2.
 * [A063042](http://oeis.org/A063042) ([L12 program](A063042.asm)): Collatz-2 (A063041) trajectory starting at 3.
 * [A063081](http://oeis.org/A063081) ([L19 program](A063081.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 13 ).
@@ -5646,6 +5649,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086159](http://oeis.org/A086159) ([L07 program](A086159.asm)): Number of partitions of n into the first three triangular numbers, 1, 3 and 6.
 * [A086161](http://oeis.org/A086161) ([L03 program](A086161.asm)): Number of monomial ideals in two variables x, y that are Artinian, integrally closed, of colength n and contain x^2.
 * [A086162](http://oeis.org/A086162) ([L14 program](A086162.asm)): Number of monomial ideals in two variables x, y that are Artinian, integrally closed, of colength n and contain x^3.
+* [A086221](http://oeis.org/A086221) ([L10 program](A086221.asm)): Bisection of A086652.
 * [A086224](http://oeis.org/A086224) ([L05 program](A086224.asm)): a(n) = 7*2^n-1.
 * [A086225](http://oeis.org/A086225) ([L05 program](A086225.asm)): a(n) = 11*2^n - 1.
 * [A086274](http://oeis.org/A086274) ([L10 program](A086274.asm)): Antidiagonal sums of A086272 (and of A086273).
@@ -5763,6 +5767,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088795](http://oeis.org/A088795) ([L11 program](A088795.asm)): Fibonacci(n) as n runs through the quarter-squares.
 * [A088828](http://oeis.org/A088828) ([L12 program](A088828.asm)): Nonsquare positive odd numbers.
 * [A088837](http://oeis.org/A088837) ([L09 program](A088837.asm)): Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
+* [A088838](http://oeis.org/A088838) ([L12 program](A088838.asm)): Numerator of the quotient sigma(3n)/sigma(n).
 * [A088841](http://oeis.org/A088841) ([L11 program](A088841.asm)): Numerator of quotient=sigma[7n]/sigma[n].
 * [A088842](http://oeis.org/A088842) ([L12 program](A088842.asm)): Denominator of quotient=sigma(7n)/sigma(n).
 * [A088911](http://oeis.org/A088911) ([L03 program](A088911.asm)): Period 6: repeat [1, 1, 1, 0, 0, 0].

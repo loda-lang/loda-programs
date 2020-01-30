@@ -5,10 +5,6 @@ mov $1,2
 add $0,5
 pow $1,$0
 sub $1,3
-lpb $0,1
-  sub $0,$0
-  div $0,$0
-lpe
 pow $1,2
 mul $1,3
 sub $1,2523

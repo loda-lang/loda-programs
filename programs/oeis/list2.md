@@ -1132,7 +1132,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244632](http://oeis.org/A244632) ([L09 program](A244632.asm)): 23*n^2.
 * [A244633](http://oeis.org/A244633) ([L08 program](A244633.asm)): a(n) = 26*n^2.
 * [A244634](http://oeis.org/A244634) ([L04 program](A244634.asm)): 27*n^2.
-* [A244635](http://oeis.org/A244635) ([L10 program](A244635.asm)): 29*n^2.
+* [A244635](http://oeis.org/A244635) ([L09 program](A244635.asm)): 29*n^2.
 * [A244636](http://oeis.org/A244636) ([L03 program](A244636.asm)): 30*n^2.
 * [A244725](http://oeis.org/A244725) ([L03 program](A244725.asm)): a(n) = 5*n^3.
 * [A244726](http://oeis.org/A244726) ([L03 program](A244726.asm)): 6*n^3.
@@ -1265,7 +1265,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248698](http://oeis.org/A248698) ([L42 program](A248698.asm)): Floor of sums of the non-integer fourth roots of n, as partitioned by the integer roots: floor[sum(j from n^4+1 to (n+1)^4-1, j^(1/4))].
 * [A248720](http://oeis.org/A248720) ([L05 program](A248720.asm)): a(n) = (n*(n+1))^5.
 * [A248739](http://oeis.org/A248739) ([L19 program](A248739.asm)): a(n) = 29*n + ceiling(n/29).
-* [A248800](http://oeis.org/A248800) ([L05 program](A248800.asm)): n^2 + 3/2 + (1/2)*(-1)^n.
+* [A248800](http://oeis.org/A248800) ([L04 program](A248800.asm)): n^2 + 3/2 + (1/2)*(-1)^n.
 * [A248812](http://oeis.org/A248812) ([L04 program](A248812.asm)): Repeated terms of (2n)! (A010050).
 * [A248825](http://oeis.org/A248825) ([L08 program](A248825.asm)): n^2 + 1 - (-1)^n.
 * [A248877](http://oeis.org/A248877) ([L05 program](A248877.asm)): a(1) = 23, a(2) = 71, a(n) = 3*a(n-1) - 2*a(n-2) for n>2.
@@ -1622,6 +1622,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A262699](http://oeis.org/A262699) ([L14 program](A262699.asm)): List of currency denominations such that any value x > 0 is represented in exactly x ways as a sum of distinct denominations, where a repeated value represents a bill and a coin which count as distinct denominations.
 * [A262734](http://oeis.org/A262734) ([L23 program](A262734.asm)): Period 16: repeat (1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3, 2).
 * [A262773](http://oeis.org/A262773) ([L07 program](A262773.asm)): A Beatty sequence: a(n)=floor(q*n) where q=A231187.
+* [A262789](http://oeis.org/A262789) ([L10 program](A262789.asm)): Number of (n+2) X (2+2) 0..1 arrays with each row divisible by 5 and column not divisible by 5, read as a binary number with top and left being the most significant bits.
 * [A262864](http://oeis.org/A262864) ([L06 program](A262864.asm)): Decimal representation of the middle column of the "Rule 147" elementary cellular automaton starting with a single ON (black) cell.
 * [A262997](http://oeis.org/A262997) ([L21 program](A262997.asm)): a(n+3) = a(n) + 24*n + 40, a(0)=0, a(1)=5, a(2)=19.
 * [A263053](http://oeis.org/A263053) ([L07 program](A263053.asm)): Number of (n+1) X (1+1) 0..1 arrays with each row and column not divisible by 3, read as a binary number with top and left being the most significant bits.

@@ -589,6 +589,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A112884](http://oeis.org/A112884) ([L10 program](A112884.asm)): Number of bits required to represent binomial(2^n, 2^(n-1)).
 * [A112986](http://oeis.org/A112986) ([L08 program](A112986.asm)): Crossing number of K_{4,n} on the real projective plane.
 * [A113047](http://oeis.org/A113047) ([L25 program](A113047.asm)): a(n) = C(3n,n)/(2n+1) mod 3.
+* [A113052](http://oeis.org/A113052) ([L11 program](A113052.asm)): Binomial(5n,n)/(4n+1) mod 5.
 * [A113070](http://oeis.org/A113070) ([L14 program](A113070.asm)): Expansion of ((1+x)/(1-2x))^2.
 * [A113071](http://oeis.org/A113071) ([L13 program](A113071.asm)): Expansion of ((1+x)/(1-3*x))^2.
 * [A113125](http://oeis.org/A113125) ([L16 program](A113125.asm)): A simple tri-diagonal matrix.
@@ -2004,7 +2005,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144139](http://oeis.org/A144139) ([L12 program](A144139.asm)): Chebyshev polynomial of the second kind U(4,n).
 * [A144193](http://oeis.org/A144193) ([L22 program](A144193.asm)): Square array (5 X 5) read by rows.
 * [A144217](http://oeis.org/A144217) ([L12 program](A144217.asm)): Weight array of A144216: a rectangular array by antidiagonals.
-* [A144312](http://oeis.org/A144312) ([L07 program](A144312.asm)): 5*n*(5*n+1)/2.
+* [A144312](http://oeis.org/A144312) ([L06 program](A144312.asm)): 5*n*(5*n+1)/2.
 * [A144314](http://oeis.org/A144314) ([L07 program](A144314.asm)): a(n) = 3*n*(6*n+1).
 * [A144328](http://oeis.org/A144328) ([L07 program](A144328.asm)): A002260 preceded by a column of 1's: a (1, 1, 2, 3, 4, 5,...) crescendo triangle by rows.
 * [A144335](http://oeis.org/A144335) ([L08 program](A144335.asm)): Row sums of triangle A144334, binomial transform of [1, 2, 6, 7, 3, 0, 0, 0,...]
