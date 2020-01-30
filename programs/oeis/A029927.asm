@@ -7,9 +7,7 @@ div $0,2
 add $0,$4
 mov $1,$0
 add $1,5
-div $1,2
-mod $0,$0
-div $1,5
+div $1,10
 mov $3,$5
 mov $2,$3
 add $1,$2

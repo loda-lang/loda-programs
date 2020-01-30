@@ -7,9 +7,5 @@ mul $0,4
 mov $1,$0
 pow $1,2
 mul $1,$2
-lpb $0,1
-  div $1,2
-  mul $1,2
-lpe
 div $1,32
 mul $1,6
