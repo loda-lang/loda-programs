@@ -10,10 +10,6 @@ lpb $2,1
   add $3,1
   gcd $4,2
   mov $1,$4
-  gcd $5,2
-  lpb $4,1
-    mod $4,$5
-  lpe
   mov $2,1
 lpe
 add $1,$3
