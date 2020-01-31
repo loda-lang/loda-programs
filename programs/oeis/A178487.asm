@@ -12,6 +12,5 @@ lpb $0,1
   mul $1,2
   gcd $2,5
   div $0,$2
-  sub $2,$2
 lpe
 div $1,2

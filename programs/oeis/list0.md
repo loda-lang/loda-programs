@@ -65,7 +65,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000463](http://oeis.org/A000463) ([L07 program](A000463.asm)): n followed by n^2.
 * [A000520](http://oeis.org/A000520) ([L20 program](A000520.asm)): Nearest integer to log_10(n).
 * [A000522](http://oeis.org/A000522) ([L10 program](A000522.asm)): Total number of arrangements of a set with n elements: a(n) = Sum_{k=0..n} n!/k!.
-* [A000523](http://oeis.org/A000523) ([L06 program](A000523.asm)): a(n) = floor(log_2(n)).
+* [A000523](http://oeis.org/A000523) ([L05 program](A000523.asm)): a(n) = floor(log_2(n)).
 * [A000537](http://oeis.org/A000537) ([L05 program](A000537.asm)): Sum of first n cubes; or n-th triangular number squared.
 * [A000538](http://oeis.org/A000538) ([L16 program](A000538.asm)): Sum of fourth powers: 0^4 + 1^4 + ... + n^4.
 * [A000561](http://oeis.org/A000561) ([L18 program](A000561.asm)): Number of discordant permutations.
@@ -797,7 +797,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008854](http://oeis.org/A008854) ([L06 program](A008854.asm)): Numbers that are congruent to {0, 1, 4} mod 5.
 * [A008911](http://oeis.org/A008911) ([L06 program](A008911.asm)): a(n) = n^2*(n^2 - 1)/6.
 * [A008954](http://oeis.org/A008954) ([L23 program](A008954.asm)): Final digit of triangular number n*(n+1)/2.
-* [A008959](http://oeis.org/A008959) ([L08 program](A008959.asm)): Final digit of squares: n^2 mod 10.
+* [A008959](http://oeis.org/A008959) ([L05 program](A008959.asm)): Final digit of squares: n^2 mod 10.
 * [A008960](http://oeis.org/A008960) ([L05 program](A008960.asm)): Final digit of cubes: n^3 mod 10.
 * [A008998](http://oeis.org/A008998) ([L11 program](A008998.asm)): a(n) = 2*a(n-1) + a(n-3).
 * [A009005](http://oeis.org/A009005) ([L04 program](A009005.asm)): All natural numbers except 1, 2 and 4.
@@ -1110,26 +1110,26 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014922](http://oeis.org/A014922) ([L02 program](A014922.asm)): Inverse of 913th cyclotomic polynomial.
 * [A014988](http://oeis.org/A014988) ([L02 program](A014988.asm)): Inverse of 979th cyclotomic polynomial.
 * [A015076](http://oeis.org/A015076) ([L02 program](A015076.asm)): Inverse of 1067th cyclotomic polynomial.
-* [A015088](http://oeis.org/A015088) ([L03 program](A015088.asm)): Inverse of 1079th cyclotomic polynomial.
+* [A015088](http://oeis.org/A015088) ([L02 program](A015088.asm)): Inverse of 1079th cyclotomic polynomial.
 * [A015120](http://oeis.org/A015120) ([L02 program](A015120.asm)): Inverse of 1111th cyclotomic polynomial.
 * [A015142](http://oeis.org/A015142) ([L02 program](A015142.asm)): Inverse of 1133rd cyclotomic polynomial.
-* [A015166](http://oeis.org/A015166) ([L03 program](A015166.asm)): Inverse of 1157th cyclotomic polynomial.
+* [A015166](http://oeis.org/A015166) ([L02 program](A015166.asm)): Inverse of 1157th cyclotomic polynomial.
 * [A015186](http://oeis.org/A015186) ([L02 program](A015186.asm)): Inverse of 1177th cyclotomic polynomial.
 * [A015208](http://oeis.org/A015208) ([L02 program](A015208.asm)): Inverse of 1199th cyclotomic polynomial.
 * [A015219](http://oeis.org/A015219) ([L10 program](A015219.asm)): Odd tetrahedral numbers: a(n) = (4*n+1)*(4*n+2)*(4*n+3)/6.
 * [A015223](http://oeis.org/A015223) ([L14 program](A015223.asm)): Odd pentagonal pyramidal numbers.
 * [A015237](http://oeis.org/A015237) ([L05 program](A015237.asm)): a(n) = (2*n - 1)*n^2.
 * [A015252](http://oeis.org/A015252) ([L02 program](A015252.asm)): Inverse of 1243rd cyclotomic polynomial.
-* [A015270](http://oeis.org/A015270) ([L03 program](A015270.asm)): Inverse of 1261st cyclotomic polynomial.
-* [A015322](http://oeis.org/A015322) ([L03 program](A015322.asm)): Inverse of 1313th cyclotomic polynomial.
-* [A015348](http://oeis.org/A015348) ([L03 program](A015348.asm)): Inverse of 1339th cyclotomic polynomial.
-* [A015400](http://oeis.org/A015400) ([L03 program](A015400.asm)): Inverse of 1391st cyclotomic polynomial.
+* [A015270](http://oeis.org/A015270) ([L02 program](A015270.asm)): Inverse of 1261st cyclotomic polynomial.
+* [A015322](http://oeis.org/A015322) ([L02 program](A015322.asm)): Inverse of 1313th cyclotomic polynomial.
+* [A015348](http://oeis.org/A015348) ([L02 program](A015348.asm)): Inverse of 1339th cyclotomic polynomial.
+* [A015400](http://oeis.org/A015400) ([L02 program](A015400.asm)): Inverse of 1391st cyclotomic polynomial.
 * [A015406](http://oeis.org/A015406) ([L02 program](A015406.asm)): Inverse of 1397th cyclotomic polynomial.
 * [A015420](http://oeis.org/A015420) ([L03 program](A015420.asm)): Inverse of 1411th cyclotomic polynomial.
-* [A015426](http://oeis.org/A015426) ([L03 program](A015426.asm)): Inverse of 1417th cyclotomic polynomial.
+* [A015426](http://oeis.org/A015426) ([L02 program](A015426.asm)): Inverse of 1417th cyclotomic polynomial.
 * [A015448](http://oeis.org/A015448) ([L12 program](A015448.asm)): a(0) = 1, a(1) = 1, and a(n) = 4*a(n-1) + a(n-2) for n >= 2.
 * [A015450](http://oeis.org/A015450) ([L02 program](A015450.asm)): Inverse of 1441st cyclotomic polynomial.
-* [A015478](http://oeis.org/A015478) ([L03 program](A015478.asm)): Inverse of 1469th cyclotomic polynomial.
+* [A015478](http://oeis.org/A015478) ([L02 program](A015478.asm)): Inverse of 1469th cyclotomic polynomial.
 * [A015516](http://oeis.org/A015516) ([L02 program](A015516.asm)): Inverse of 1507th cyclotomic polynomial.
 * [A015518](http://oeis.org/A015518) ([L11 program](A015518.asm)): a(n) = 2*a(n-1) + 3*a(n-2), with a(0)=0, a(1)=1.
 * [A015522](http://oeis.org/A015522) ([L03 program](A015522.asm)): Inverse of 1513th cyclotomic polynomial.
@@ -1141,16 +1141,16 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A015588](http://oeis.org/A015588) ([L17 program](A015588.asm)): Expansion of x/(1 - 10*x - 3*x^2).
 * [A015648](http://oeis.org/A015648) ([L02 program](A015648.asm)): Inverse of 1639th cyclotomic polynomial.
 * [A015658](http://oeis.org/A015658) ([L03 program](A015658.asm)): Inverse of 1649th cyclotomic polynomial.
-* [A015660](http://oeis.org/A015660) ([L03 program](A015660.asm)): Inverse of 1651st cyclotomic polynomial.
+* [A015660](http://oeis.org/A015660) ([L02 program](A015660.asm)): Inverse of 1651st cyclotomic polynomial.
 * [A015670](http://oeis.org/A015670) ([L02 program](A015670.asm)): Inverse of 1661st cyclotomic polynomial.
 * [A015700](http://oeis.org/A015700) ([L03 program](A015700.asm)): Inverse of 1691st cyclotomic polynomial.
-* [A015712](http://oeis.org/A015712) ([L03 program](A015712.asm)): Inverse of 1703rd cyclotomic polynomial.
+* [A015712](http://oeis.org/A015712) ([L02 program](A015712.asm)): Inverse of 1703rd cyclotomic polynomial.
 * [A015726](http://oeis.org/A015726) ([L03 program](A015726.asm)): Inverse of 1717th cyclotomic polynomial.
 * [A015736](http://oeis.org/A015736) ([L02 program](A015736.asm)): Inverse of 1727th cyclotomic polynomial.
 * [A015760](http://oeis.org/A015760) ([L03 program](A015760.asm)): Inverse of 1751st cyclotomic polynomial.
-* [A015790](http://oeis.org/A015790) ([L03 program](A015790.asm)): Inverse of 1781st cyclotomic polynomial.
+* [A015790](http://oeis.org/A015790) ([L02 program](A015790.asm)): Inverse of 1781st cyclotomic polynomial.
 * [A015802](http://oeis.org/A015802) ([L02 program](A015802.asm)): Inverse of 1793rd cyclotomic polynomial.
-* [A015816](http://oeis.org/A015816) ([L03 program](A015816.asm)): Inverse of 1807th cyclotomic polynomial.
+* [A015816](http://oeis.org/A015816) ([L02 program](A015816.asm)): Inverse of 1807th cyclotomic polynomial.
 * [A015828](http://oeis.org/A015828) ([L03 program](A015828.asm)): Inverse of 1819th cyclotomic polynomial.
 * [A015846](http://oeis.org/A015846) ([L02 program](A015846.asm)): Inverse of 1837th cyclotomic polynomial.
 * [A015852](http://oeis.org/A015852) ([L03 program](A015852.asm)): Inverse of 1843rd cyclotomic polynomial.
@@ -1160,16 +1160,16 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A015918](http://oeis.org/A015918) ([L09 program](A015918.asm)): Inverse of 1909th cyclotomic polynomial.
 * [A015928](http://oeis.org/A015928) ([L03 program](A015928.asm)): Inverse of 1919th cyclotomic polynomial.
 * [A015930](http://oeis.org/A015930) ([L03 program](A015930.asm)): Inverse of 1921st cyclotomic polynomial.
-* [A015946](http://oeis.org/A015946) ([L03 program](A015946.asm)): Inverse of 1937th cyclotomic polynomial.
+* [A015946](http://oeis.org/A015946) ([L02 program](A015946.asm)): Inverse of 1937th cyclotomic polynomial.
 * [A015966](http://oeis.org/A015966) ([L03 program](A015966.asm)): Inverse of 1957th cyclotomic polynomial.
-* [A015972](http://oeis.org/A015972) ([L03 program](A015972.asm)): Inverse of 1963rd cyclotomic polynomial.
+* [A015972](http://oeis.org/A015972) ([L02 program](A015972.asm)): Inverse of 1963rd cyclotomic polynomial.
 * [A015978](http://oeis.org/A015978) ([L02 program](A015978.asm)): Inverse of 1969th cyclotomic polynomial.
 * [A015993](http://oeis.org/A015993) ([L14 program](A015993.asm)): Twelve iterations of Reverse and Add are needed to reach a palindrome.
 * [A016000](http://oeis.org/A016000) ([L02 program](A016000.asm)): Inverse of 1991st cyclotomic polynomial.
 * [A016028](http://oeis.org/A016028) ([L07 program](A016028.asm)): Expansion of (1 - x + x^4) / (1 - x)^3.
 * [A016029](http://oeis.org/A016029) ([L08 program](A016029.asm)): a(1) = a(2) = 1, a(2n + 1) = 2*a(2n) and a(2n) = 2*a(2n - 1) + (-1)^n.
 * [A016042](http://oeis.org/A016042) ([L03 program](A016042.asm)): Inverse of 2033rd cyclotomic polynomial.
-* [A016050](http://oeis.org/A016050) ([L03 program](A016050.asm)): Inverse of 2041st cyclotomic polynomial.
+* [A016050](http://oeis.org/A016050) ([L02 program](A016050.asm)): Inverse of 2041st cyclotomic polynomial.
 * [A016051](http://oeis.org/A016051) ([L05 program](A016051.asm)): Numbers of the form 9n+3 or 9n+6.
 * [A016056](http://oeis.org/A016056) ([L11 program](A016056.asm)): Inverse of 2047th cyclotomic polynomial.
 * [A016061](http://oeis.org/A016061) ([L07 program](A016061.asm)): a(n) = n*(n+1)*(4*n+5)/6.
@@ -1177,18 +1177,18 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016080](http://oeis.org/A016080) ([L03 program](A016080.asm)): Inverse of 2071st cyclotomic polynomial.
 * [A016110](http://oeis.org/A016110) ([L02 program](A016110.asm)): Inverse of 2101st cyclotomic polynomial.
 * [A016116](http://oeis.org/A016116) ([L03 program](A016116.asm)): a(n) = 2^floor(n/2).
-* [A016128](http://oeis.org/A016128) ([L03 program](A016128.asm)): Inverse of 2119th cyclotomic polynomial.
+* [A016128](http://oeis.org/A016128) ([L02 program](A016128.asm)): Inverse of 2119th cyclotomic polynomial.
 * [A016131](http://oeis.org/A016131) ([L09 program](A016131.asm)): Expansion of 1/((1-2x)(1-8x)).
 * [A016132](http://oeis.org/A016132) ([L02 program](A016132.asm)): Inverse of 2123rd cyclotomic polynomial.
 * [A016152](http://oeis.org/A016152) ([L10 program](A016152.asm)): a(n) = 4^(n-1)*(2^n-1).
 * [A016156](http://oeis.org/A016156) ([L03 program](A016156.asm)): Inverse of 2147th cyclotomic polynomial.
 * [A016168](http://oeis.org/A016168) ([L03 program](A016168.asm)): Inverse of 2159th cyclotomic polynomial.
-* [A016180](http://oeis.org/A016180) ([L03 program](A016180.asm)): Inverse of 2171st cyclotomic polynomial.
+* [A016180](http://oeis.org/A016180) ([L02 program](A016180.asm)): Inverse of 2171st cyclotomic polynomial.
 * [A016198](http://oeis.org/A016198) ([L21 program](A016198.asm)): Expansion of 1/((1-x)(1-2x)(1-5x)).
 * [A016200](http://oeis.org/A016200) ([L17 program](A016200.asm)): Expansion of 1/((1-x)(1-2x)(1-6x)).
 * [A016236](http://oeis.org/A016236) ([L03 program](A016236.asm)): Inverse of 2227th cyclotomic polynomial.
 * [A016240](http://oeis.org/A016240) ([L11 program](A016240.asm)): Inverse of 2231st cyclotomic polynomial.
-* [A016258](http://oeis.org/A016258) ([L03 program](A016258.asm)): Inverse of 2249th cyclotomic polynomial.
+* [A016258](http://oeis.org/A016258) ([L02 program](A016258.asm)): Inverse of 2249th cyclotomic polynomial.
 * [A016724](http://oeis.org/A016724) ([L22 program](A016724.asm)): Expansion of (2-2*x-x^2)/((1-2*x^2)*(1-x)^2).
 * [A016729](http://oeis.org/A016729) ([L11 program](A016729.asm)): Highest minimal Hamming distance of any Type 4^H+ Hermitian additive self-dual code over GF(4) of length n.
 * [A016742](http://oeis.org/A016742) ([L03 program](A016742.asm)): Even squares: a(n) = (2n)^2.
@@ -2791,7 +2791,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040273](http://oeis.org/A040273) ([L10 program](A040273.asm)): Continued fraction for sqrt(291).
 * [A040306](http://oeis.org/A040306) ([L04 program](A040306.asm)): Continued fraction for sqrt(325).
 * [A040307](http://oeis.org/A040307) ([L08 program](A040307.asm)): Continued fraction for sqrt(326).
-* [A040308](http://oeis.org/A040308) ([L28 program](A040308.asm)): Continued fraction for sqrt(327).
+* [A040308](http://oeis.org/A040308) ([L16 program](A040308.asm)): Continued fraction for sqrt(327).
 * [A040309](http://oeis.org/A040309) ([L19 program](A040309.asm)): Continued fraction for sqrt(328).
 * [A040311](http://oeis.org/A040311) ([L16 program](A040311.asm)): Continued fraction for sqrt(330).
 * [A040314](http://oeis.org/A040314) ([L20 program](A040314.asm)): Continued fraction for sqrt(333).
@@ -3112,7 +3112,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047295](http://oeis.org/A047295) ([L10 program](A047295.asm)): Numbers that are congruent to {0, 1, 2, 4, 6} mod 7.
 * [A047296](http://oeis.org/A047296) ([L11 program](A047296.asm)): Numbers that are congruent to {3, 4, 6} mod 7.
 * [A047297](http://oeis.org/A047297) ([L14 program](A047297.asm)): Numbers that are congruent to {0, 3, 4, 6} mod 7.
-* [A047298](http://oeis.org/A047298) ([L08 program](A047298.asm)): Numbers that are congruent to {1, 3, 4, 6} mod 7.
+* [A047298](http://oeis.org/A047298) ([L05 program](A047298.asm)): Numbers that are congruent to {1, 3, 4, 6} mod 7.
 * [A047299](http://oeis.org/A047299) ([L07 program](A047299.asm)): Numbers that are congruent to {0, 1, 3, 4, 6} mod 7.
 * [A047300](http://oeis.org/A047300) ([L11 program](A047300.asm)): Numbers that are congruent to {2, 3, 4, 6} mod 7.
 * [A047301](http://oeis.org/A047301) ([L04 program](A047301.asm)): Numbers that are congruent to {0, 2, 3, 4, 6} mod 7.
@@ -3185,7 +3185,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047368](http://oeis.org/A047368) ([L03 program](A047368.asm)): Numbers that are congruent to {0, 1, 2, 3, 4, 5} mod 7; a(n)=floor(7(n-1)/6).
 * [A047369](http://oeis.org/A047369) ([L07 program](A047369.asm)): Numbers that are congruent to {1, 2, 3, 4, 5} mod 7.
 * [A047370](http://oeis.org/A047370) ([L10 program](A047370.asm)): Numbers that are congruent to {2, 3, 5} mod 7.
-* [A047371](http://oeis.org/A047371) ([L07 program](A047371.asm)): Numbers that are congruent to {0, 2, 3, 5} mod 7.
+* [A047371](http://oeis.org/A047371) ([L04 program](A047371.asm)): Numbers that are congruent to {0, 2, 3, 5} mod 7.
 * [A047372](http://oeis.org/A047372) ([L11 program](A047372.asm)): Numbers that are congruent to {1, 2, 3, 5} mod 7.
 * [A047373](http://oeis.org/A047373) ([L07 program](A047373.asm)): Numbers that are congruent to {0, 1, 2, 3, 5} mod 7.
 * [A047374](http://oeis.org/A047374) ([L07 program](A047374.asm)): Numbers that are congruent to {4, 5} mod 7.
@@ -5042,7 +5042,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A074231](http://oeis.org/A074231) ([L09 program](A074231.asm)): Numbers n such that Kronecker(8,n) = mu(gcd(8,n)).
 * [A074232](http://oeis.org/A074232) ([L20 program](A074232.asm)): Positive numbers that are not 3 or 6 (mod 9).
 * [A074279](http://oeis.org/A074279) ([L08 program](A074279.asm)): n appears n^2 times.
-* [A074280](http://oeis.org/A074280) ([L06 program](A074280.asm)): Duplicate of A000523.
+* [A074280](http://oeis.org/A074280) ([L05 program](A074280.asm)): Duplicate of A000523.
 * [A074294](http://oeis.org/A074294) ([L06 program](A074294.asm)): Integers 1 to 2*k followed by integers 1 to 2*k + 2 and so on.
 * [A074323](http://oeis.org/A074323) ([L11 program](A074323.asm)): Coefficient of the highest power of q in the expansion of nu(0)=1, nu(1)=b and for n>=2, nu(n)=b*nu(n-1)+lambda*(n-1)_q*nu(n-2) with (b,lambda)=(1,2), where (n)_q=(1+q+...+q^(n-1)) and q is a root of unity.
 * [A074358](http://oeis.org/A074358) ([L19 program](A074358.asm)): Coefficient of q^1 in nu(n), where nu(0)=1, nu(1)=b and, for n >= 2, nu(n) = b*nu(n-1) + lambda*(1 + q + q^2 + ... + q^(n-2))*nu(n-2) with (b,lambda)=(2,2).
@@ -5618,7 +5618,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A085259](http://oeis.org/A085259) ([L07 program](A085259.asm)): Integer part of the conversion from Centigrade to Fahrenheit.
 * [A085265](http://oeis.org/A085265) ([L07 program](A085265.asm)): Numbers that can be written as sum of a positive squarefree number and a positive square.
 * [A085268](http://oeis.org/A085268) ([L04 program](A085268.asm)): Integer part of the conversion from Fahrenheit to Centigrade.
-* [A085278](http://oeis.org/A085278) ([L18 program](A085278.asm)): Expansion of (1+2x)^2/((1-x^2)(1-2x)).
+* [A085278](http://oeis.org/A085278) ([L07 program](A085278.asm)): Expansion of (1+2x)^2/((1-x^2)(1-2x)).
 * [A085279](http://oeis.org/A085279) ([L11 program](A085279.asm)): Expansion of (1 - 2*x - 2*x^2)/((1 - 2*x)*(1 - 3*x)).
 * [A085287](http://oeis.org/A085287) ([L13 program](A085287.asm)): Expansion of (1+4x)/((1-x^2)(1-3x)).
 * [A085357](http://oeis.org/A085357) ([L14 program](A085357.asm)): Common residues of binomial(3n,n)/(2n+1) modulo 2: relates ternary trees (A001764) to the infinite Fibonacci word (A003849).
@@ -5678,7 +5678,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086652](http://oeis.org/A086652) ([L10 program](A086652.asm)): a(n) = A000225(n+3)-A052955(n).
 * [A086653](http://oeis.org/A086653) ([L08 program](A086653.asm)): 2^n + 3*n.
 * [A086663](http://oeis.org/A086663) ([L18 program](A086663.asm)): Number of non-attacking knights on a n*n board with all non-perimeteral squares removed.
-* [A086694](http://oeis.org/A086694) ([L08 program](A086694.asm)): A run of 2^n 1's followed by a run of 2^n 0's, for n=0, 1, 2, ...
+* [A086694](http://oeis.org/A086694) ([L07 program](A086694.asm)): A run of 2^n 1's followed by a run of 2^n 0's, for n=0, 1, 2, ...
 * [A086746](http://oeis.org/A086746) ([L03 program](A086746.asm)): Multiples of 3018.
 * [A086760](http://oeis.org/A086760) ([L08 program](A086760.asm)): a(n) = 8n^2 + 88n + 43.
 * [A086767](http://oeis.org/A086767) ([L09 program](A086767.asm)): Last coefficient of the last term in the numerator of the simplified expansion of the solutions of FLT for n=2 for FLT n=1,2,3,..
@@ -5851,7 +5851,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A090651](http://oeis.org/A090651) ([L35 program](A090651.asm)): Perpetual calendar sequence: There are 14 basic year calendars, 7 for normal years and 7 for leap years. This sequence identifies the calendars for years 1901 through 2099, when it reinitializes because 2100 is not a leap year.
 * [A090702](http://oeis.org/A090702) ([L14 program](A090702.asm)): a(n) is the minimal number k such that every binary word of length n can be transformed into a palindrome or an antipalindrome by deleting at most k letters.
 * [A090771](http://oeis.org/A090771) ([L07 program](A090771.asm)): Numbers that are congruent to {1, 9} mod 10.
-* [A090772](http://oeis.org/A090772) ([L07 program](A090772.asm)): Numbers that are congruent to {2, 8} mod 10.
+* [A090772](http://oeis.org/A090772) ([L06 program](A090772.asm)): Numbers that are congruent to {2, 8} mod 10.
 * [A090773](http://oeis.org/A090773) ([L08 program](A090773.asm)): Numbers that are congruent to {4, 6} mod 10.
 * [A090809](http://oeis.org/A090809) ([L07 program](A090809.asm)): Coefficient of the irreducible character of S_m indexed by (m-2n+2,2n-2) in the n-th Kronecker power of the representation indexed by (m-2,2).
 * [A090860](http://oeis.org/A090860) ([L12 program](A090860.asm)): Number of ways of 4-coloring a map in which there is a central circle surrounded by an annulus divided into n-1 regions. There are n regions in all.
@@ -5886,6 +5886,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092092](http://oeis.org/A092092) ([L10 program](A092092.asm)): Back and Forth Summant S(n, _3): a(n) = sum_{i = 0..floor(2n/3)} n-3i.
 * [A092093](http://oeis.org/A092093) ([L10 program](A092093.asm)): Back and Forth Summant S(n, _5): a(n) = sum_{i = 0..floor(2n/5)} n-5i.
 * [A092139](http://oeis.org/A092139) ([L13 program](A092139.asm)): Duplicate of A084558.
+* [A092164](http://oeis.org/A092164) ([L09 program](A092164.asm)): Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (1,1) entry of M^n.
 * [A092165](http://oeis.org/A092165) ([L10 program](A092165.asm)): Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (1,2) entry of M^n.
 * [A092181](http://oeis.org/A092181) ([L43 program](A092181.asm)): Figurate numbers based on the 24-cell (4-D polytope with Schlaefli symbol {3,4,3}).
 * [A092184](http://oeis.org/A092184) ([L09 program](A092184.asm)): Sequence S_6 of the S_r family.
@@ -5897,7 +5898,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092270](http://oeis.org/A092270) ([L05 program](A092270.asm)): If n mod 2 == 0 then 3^n else 2^n.
 * [A092277](http://oeis.org/A092277) ([L06 program](A092277.asm)): a(n) = 7*n^2 + n.
 * [A092278](http://oeis.org/A092278) ([L13 program](A092278.asm)): Floor( (3*n+4)/16 ).
-* [A092279](http://oeis.org/A092279) ([L29 program](A092279.asm)): a(n) = floor(7*n/16) + 5.
+* [A092279](http://oeis.org/A092279) ([L13 program](A092279.asm)): a(n) = floor(7*n/16) + 5.
 * [A092286](http://oeis.org/A092286) ([L08 program](A092286.asm)): Fourth diagonal (m=3) of triangle A084938; a(n) = A084938(n+3,n) = (n^3 + 9*n^2 + 26*n)/6.
 * [A092292](http://oeis.org/A092292) ([L12 program](A092292.asm)): a(n) = 3*n + A053838(n).
 * [A092297](http://oeis.org/A092297) ([L08 program](A092297.asm)): Number of ways of 3-coloring an annulus consisting of n zones joined like a pearl necklace.
