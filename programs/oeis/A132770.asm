@@ -5,5 +5,4 @@ fac $1
 add $0,14
 pow $0,2
 add $1,$0
-mov $0,0
 sub $1,197

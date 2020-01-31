@@ -162,7 +162,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A207361](http://oeis.org/A207361) ([L08 program](A207361.asm)): Displacement under constant discrete unit surge.
 * [A207399](http://oeis.org/A207399) ([L43 program](A207399.asm)): Number of n X 4 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 1 0 vertically.
 * [A207449](http://oeis.org/A207449) ([L10 program](A207449.asm)): Number of n X 4 0..1 arrays avoiding 0 0 0 and 0 0 1 horizontally and 0 0 1 and 1 0 1 vertically.
-* [A207450](http://oeis.org/A207450) ([L15 program](A207450.asm)): Number of n X 5 0..1 arrays avoiding 0 0 0 and 0 0 1 horizontally and 0 0 1 and 1 0 1 vertically.
+* [A207450](http://oeis.org/A207450) ([L14 program](A207450.asm)): Number of n X 5 0..1 arrays avoiding 0 0 0 and 0 0 1 horizontally and 0 0 1 and 1 0 1 vertically.
 * [A207596](http://oeis.org/A207596) ([L48 program](A207596.asm)): Number of n X 5 0..1 arrays avoiding 0 0 0 and 0 1 0 horizontally and 0 0 1 and 1 0 1 vertically.
 * [A207597](http://oeis.org/A207597) ([L12 program](A207597.asm)): Number of n X 6 0..1 arrays avoiding 0 0 0 and 0 1 0 horizontally and 0 0 1 and 1 0 1 vertically.
 * [A207836](http://oeis.org/A207836) ([L09 program](A207836.asm)): a(n) = n*A052530(n)/2.
@@ -1070,7 +1070,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241847](http://oeis.org/A241847) ([L06 program](A241847.asm)): a(n) = n^2 + 17.
 * [A241848](http://oeis.org/A241848) ([L05 program](A241848.asm)): a(n) = n^2 + 18.
 * [A241849](http://oeis.org/A241849) ([L07 program](A241849.asm)): a(n) = n^2 + 19.
-* [A241850](http://oeis.org/A241850) ([L07 program](A241850.asm)): a(n) = n^2 + 20.
+* [A241850](http://oeis.org/A241850) ([L05 program](A241850.asm)): a(n) = n^2 + 20.
 * [A241851](http://oeis.org/A241851) ([L07 program](A241851.asm)): a(n) = n^2 + 21.
 * [A241889](http://oeis.org/A241889) ([L08 program](A241889.asm)): a(n) = n^2 + 23.
 * [A241890](http://oeis.org/A241890) ([L06 program](A241890.asm)): a(n) = n^2 + 24.
@@ -2493,7 +2493,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A289139](http://oeis.org/A289139) ([L19 program](A289139.asm)): a(n) is the number of odd integers divisible by 7 in ]4*(n-1)^2, 4*n^2[.
 * [A289179](http://oeis.org/A289179) ([L10 program](A289179.asm)): Edge count of the n X n white bishop graph.
 * [A289189](http://oeis.org/A289189) ([L07 program](A289189.asm)): Upper bound for certain restricted sumsets.
-* [A289195](http://oeis.org/A289195) ([L06 program](A289195.asm)): a(n) is the number of odd integers divisible by 5 in ]4*(n-1)^2, 4*n^2[.
+* [A289195](http://oeis.org/A289195) ([L05 program](A289195.asm)): a(n) is the number of odd integers divisible by 5 in ]4*(n-1)^2, 4*n^2[.
 * [A289203](http://oeis.org/A289203) ([L19 program](A289203.asm)): Number of maximum independent vertex sets in the n X n knight graph.
 * [A289207](http://oeis.org/A289207) ([L02 program](A289207.asm)): a(n) = max(0, n-2).
 * [A289223](http://oeis.org/A289223) ([L14 program](A289223.asm)): Number of ways to select 2 disjoint point triples from an n X n X n triangular point grid, each point triple forming an 2 X 2 X 2 triangle.

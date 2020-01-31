@@ -170,6 +170,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102206](http://oeis.org/A102206) ([L15 program](A102206.asm)): a(0) = 3, a(1) = 8, a(n+2) = 4*a(n+1) - a(n) - 2.
 * [A102207](http://oeis.org/A102207) ([L12 program](A102207.asm)): a(n) = 5a(n-1) - 5a(n-2) + a(n-3) with a(0) = 4, a(1) = 17, a(2) = 65.
 * [A102214](http://oeis.org/A102214) ([L08 program](A102214.asm)): Expansion of (1 + 4*x + 4*x^2)/((1+x)*(1-x)^3).
+* [A102239](http://oeis.org/A102239) ([L08 program](A102239.asm)): a(n) = Sum[5^i, {i, 0, n}] + 1 - Mod[Sum[5^i, {i, 0, n}], 2]
 * [A102296](http://oeis.org/A102296) ([L10 program](A102296.asm)): a(n) = (1/6)*(n+1)*(10*n^2 + 17*n + 12).
 * [A102302](http://oeis.org/A102302) ([L06 program](A102302.asm)): Largest number < n/2 coprime to n.
 * [A102303](http://oeis.org/A102303) ([L13 program](A102303.asm)): (1/6)*[7^(n+1) - 3*(-1)^n + 2 ].
@@ -882,7 +883,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A121509](http://oeis.org/A121509) ([L06 program](A121509.asm)): 5*n^2/2 -5*n +13/4 -(-1)^n/4.
 * [A121511](http://oeis.org/A121511) ([L13 program](A121511.asm)): a(n)= a(n-1) +a(n-4) -a(n-5) .
 * [A121512](http://oeis.org/A121512) ([L10 program](A121512.asm)): a(n) = a(n-1) + a(n-3) - a(n-4) for n>4, with a(1)=1, a(2)=4, a(3)=10, a(4)=4.
-* [A121628](http://oeis.org/A121628) ([L09 program](A121628.asm)): Nonnegative k such that 3*k + 1 is a perfect cube.
+* [A121628](http://oeis.org/A121628) ([L08 program](A121628.asm)): Nonnegative k such that 3*k + 1 is a perfect cube.
 * [A121726](http://oeis.org/A121726) ([L08 program](A121726.asm)): Sum sequence A000522 then subtract 0,1,2,3,4,5,...
 * [A121816](http://oeis.org/A121816) ([L07 program](A121816.asm)): Conjectured chromatic number of the square of an outerplanar graph G^2 as a function of the maximum degree of a vertex of G.
 * [A121900](http://oeis.org/A121900) ([L16 program](A121900.asm)): a(n) = ceiling((Pi - e)*sqrt(n)).
@@ -1455,7 +1456,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132767](http://oeis.org/A132767) ([L07 program](A132767.asm)): a(n) = n*(n + 25).
 * [A132768](http://oeis.org/A132768) ([L05 program](A132768.asm)): a(n) = n*(n + 26).
 * [A132769](http://oeis.org/A132769) ([L07 program](A132769.asm)): a(n) = n*(n + 27).
-* [A132770](http://oeis.org/A132770) ([L07 program](A132770.asm)): a(n) = n*(n + 28).
+* [A132770](http://oeis.org/A132770) ([L05 program](A132770.asm)): a(n) = n*(n + 28).
 * [A132771](http://oeis.org/A132771) ([L07 program](A132771.asm)): a(n) = n*(n + 29).
 * [A132772](http://oeis.org/A132772) ([L07 program](A132772.asm)): a(n) = n*(n + 30).
 * [A132773](http://oeis.org/A132773) ([L07 program](A132773.asm)): a(n) = n*(n + 31).
@@ -1935,7 +1936,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A142241](http://oeis.org/A142241) ([L03 program](A142241.asm)): a(n) = 24*n + 14.
 * [A142245](http://oeis.org/A142245) ([L09 program](A142245.asm)): Expansion of 2*x*(6 + 5*x) / ((1 - x)*(1 - x - x^2)).
 * [A142464](http://oeis.org/A142464) ([L07 program](A142464.asm)): Decimal expansion of 13/36.
-* [A142702](http://oeis.org/A142702) ([L11 program](A142702.asm)): Period 4: repeat [5, 2, 5, 8].
+* [A142702](http://oeis.org/A142702) ([L07 program](A142702.asm)): Period 4: repeat [5, 2, 5, 8].
 * [A142705](http://oeis.org/A142705) ([L11 program](A142705.asm)): Numerator of 1/4 - 1/(2n)^2.
 * [A142717](http://oeis.org/A142717) ([L10 program](A142717.asm)): First (leftmost) odd term in the n-th row of triangle A120070.
 * [A142880](http://oeis.org/A142880) ([L08 program](A142880.asm)): a(n) = 7*a(n-3) - a(n-6).
@@ -5022,7 +5023,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199317](http://oeis.org/A199317) ([L04 program](A199317.asm)): 2*6^n+1.
 * [A199318](http://oeis.org/A199318) ([L13 program](A199318.asm)): 3*6^n+1.
 * [A199319](http://oeis.org/A199319) ([L04 program](A199319.asm)): 4*6^n+1.
-* [A199320](http://oeis.org/A199320) ([L05 program](A199320.asm)): 5*6^n+1.
+* [A199320](http://oeis.org/A199320) ([L04 program](A199320.asm)): 5*6^n+1.
 * [A199321](http://oeis.org/A199321) ([L10 program](A199321.asm)): 7*6^n+1.
 * [A199344](http://oeis.org/A199344) ([L15 program](A199344.asm)): Least integer > n having a digital sum larger than that of n.
 * [A199394](http://oeis.org/A199394) ([L12 program](A199394.asm)): The number of ways to color the vertices of all (11) simple unlabeled graphs on 4 nodes using at most n colors.

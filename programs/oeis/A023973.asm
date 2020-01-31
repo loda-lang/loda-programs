@@ -6,7 +6,6 @@ div $0,4
 pow $1,0
 add $0,1
 mov $4,$0
-div $0,$0
 pow $4,$4
 lpb $0,1
   sub $4,$0

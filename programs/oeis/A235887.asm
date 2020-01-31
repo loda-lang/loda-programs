@@ -1,0 +1,17 @@
+; A235887: Number of (n+1) X (2+1) 0..3 arrays with the minimum plus the upper median equal to the lower median plus the maximum in every 2 X 2 subblock.
+; 112,232,568,1624,5272,18712,70168,271384,1067032,4231192,16850968,67256344,268730392,1074331672,4296146968,17182228504,68724195352,274887344152,1099530502168,4398084259864,17592261541912,70368895172632
+
+mov $1,2
+pow $1,$0
+mov $4,$1
+add $1,3
+lpb $0,1
+  mod $0,$2
+lpe
+add $4,$1
+add $3,7
+mod $3,2
+mul $1,$4
+sub $1,20
+mul $1,8
+add $1,112

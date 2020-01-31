@@ -7,5 +7,4 @@ mul $1,8
 div $2,6
 add $1,$2
 add $1,6
-mul $0,0
 div $1,5
