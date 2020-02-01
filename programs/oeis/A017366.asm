@@ -4,7 +4,5 @@
 mul $0,5
 gcd $1,2
 add $0,4
-fac $2
 mul $1,$0
-sub $0,$0
 pow $1,2
