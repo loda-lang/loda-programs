@@ -4960,7 +4960,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198646](http://oeis.org/A198646) ([L10 program](A198646.asm)): 11*3^n-1.
 * [A198647](http://oeis.org/A198647) ([L16 program](A198647.asm)): 3*7^n-1
 * [A198686](http://oeis.org/A198686) ([L05 program](A198686.asm)): 4*7^n-1.
-* [A198687](http://oeis.org/A198687) ([L20 program](A198687.asm)): 5*7^n-1.
+* [A198687](http://oeis.org/A198687) ([L06 program](A198687.asm)): 5*7^n-1.
 * [A198688](http://oeis.org/A198688) ([L16 program](A198688.asm)): 6*7^n-1.
 * [A198689](http://oeis.org/A198689) ([L13 program](A198689.asm)): 8*7^n-1.
 * [A198690](http://oeis.org/A198690) ([L09 program](A198690.asm)): 9*7^n-1.

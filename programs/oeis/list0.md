@@ -2075,6 +2075,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A026058](http://oeis.org/A026058) ([L22 program](A026058.asm)): a(n) = (d(n)-r(n))/2, where d = A026057 and r is the periodic sequence with fundamental period (0,0,1,0).
 * [A026060](http://oeis.org/A026060) ([L13 program](A026060.asm)): a(n) = dot_product(n,n-1,...2,1)*(5,6,...,n,1,2,3,4).
 * [A026063](http://oeis.org/A026063) ([L15 program](A026063.asm)): dot_product(n,n-1,...2,1)*(6,7,...,n,1,2,3,4,5).
+* [A026066](http://oeis.org/A026066) ([L15 program](A026066.asm)): dot_product(n,n-1,...2,1)*(7,8,...,n,1,2,3,4,5,6).
 * [A026097](http://oeis.org/A026097) ([L11 program](A026097.asm)): a(n) = number of (s(0), s(1), ..., s(n)) such that every s(i) is an integer, s(0) = 0, |s(i) - s(i-1)| = 1 for i = 1,2,3; |s(i) - s(i-1)| <= 1 for i >= 4. Also a(n) = sum of numbers in row n+1 of the array T defined in A026082 and a(n) = 24*3^(n-4) for n >= 4.
 * [A026147](http://oeis.org/A026147) ([L14 program](A026147.asm)): a(n) = position of n-th 1 in A001285 or A010059 (Thue-Morse sequence).
 * [A026150](http://oeis.org/A026150) ([L11 program](A026150.asm)): a(0) = a(1) = 1; a(n+2) = 2*a(n+1) + 2*a(n).
@@ -2395,6 +2396,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033369](http://oeis.org/A033369) ([L07 program](A033369.asm)): [ 49/n ].
 * [A033370](http://oeis.org/A033370) ([L09 program](A033370.asm)): [ 50/n ].
 * [A033371](http://oeis.org/A033371) ([L08 program](A033371.asm)): a(n) = floor(51/n).
+* [A033372](http://oeis.org/A033372) ([L08 program](A033372.asm)): [ 52/n ].
 * [A033373](http://oeis.org/A033373) ([L12 program](A033373.asm)): [ 53/n ].
 * [A033374](http://oeis.org/A033374) ([L07 program](A033374.asm)): [ 54/n ].
 * [A033376](http://oeis.org/A033376) ([L31 program](A033376.asm)): [ 56/n ].
@@ -2933,6 +2935,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A043704](http://oeis.org/A043704) ([L08 program](A043704.asm)): Numbers n such that number of runs in the base 15 representation of n is even.
 * [A043705](http://oeis.org/A043705) ([L13 program](A043705.asm)): Numbers n such that number of runs in the base 16 representation of n is even.
 * [A044061](http://oeis.org/A044061) ([L21 program](A044061.asm)): Numbers n such that string 0,0 occurs in the base 4 representation of n but not of n-1.
+* [A044096](http://oeis.org/A044096) ([L15 program](A044096.asm)): Numbers n such that string 3,4 occurs in the base 5 representation of n but not of n-1.
 * [A044102](http://oeis.org/A044102) ([L02 program](A044102.asm)): Multiples of 36.
 * [A044138](http://oeis.org/A044138) ([L03 program](A044138.asm)): Numbers n such that string 0,0 occurs in the base 7 representation of n but not of n-1.
 * [A044179](http://oeis.org/A044179) ([L03 program](A044179.asm)): Numbers n such that string 5,6 occurs in the base 7 representation of n but not of n-1.
@@ -3858,6 +3861,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054620](http://oeis.org/A054620) ([L09 program](A054620.asm)): Number of ways to color vertices of a pentagon using <= n colors, allowing only rotations.
 * [A054621](http://oeis.org/A054621) ([L08 program](A054621.asm)): Number of ways to color vertices of a heptagon using <= n colors, allowing only rotations.
 * [A054776](http://oeis.org/A054776) ([L11 program](A054776.asm)): a(n) = 3*n*(3*n-1)*(3*n-2).
+* [A054777](http://oeis.org/A054777) ([L18 program](A054777.asm)): a(n) = 4*n*(4*n-1)*(4*n-2)*(4*n-3).
 * [A054861](http://oeis.org/A054861) ([L04 program](A054861.asm)): Highest power of 3 dividing n!.
 * [A054879](http://oeis.org/A054879) ([L13 program](A054879.asm)): Closed walks of length 2n along the edges of a cube based at a vertex.
 * [A054880](http://oeis.org/A054880) ([L11 program](A054880.asm)): a(n) = 3*(9^n - 1)/4.
@@ -4353,7 +4357,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063168](http://oeis.org/A063168) ([L06 program](A063168.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 100 ).
 * [A063195](http://oeis.org/A063195) ([L14 program](A063195.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 6 ).
 * [A063196](http://oeis.org/A063196) ([L04 program](A063196.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 7 ).
-* [A063197](http://oeis.org/A063197) ([L14 program](A063197.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 9 ).
+* [A063197](http://oeis.org/A063197) ([L07 program](A063197.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 9 ).
 * [A063198](http://oeis.org/A063198) ([L08 program](A063198.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 10 ).
 * [A063199](http://oeis.org/A063199) ([L13 program](A063199.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 11 ).
 * [A063200](http://oeis.org/A063200) ([L07 program](A063200.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 15 ).

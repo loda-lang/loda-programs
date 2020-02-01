@@ -946,6 +946,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A235801](http://oeis.org/A235801) ([L30 program](A235801.asm)): Length of n-th horizontal line segment in a diagram of a two-dimensional version of the Collatz (or 3x + 1) problem.
 * [A235877](http://oeis.org/A235877) ([L17 program](A235877.asm)): Number of (n+1) X (1+1) 0..2 arrays with the minimum plus the upper median equal to the lower median plus the maximum in every 2 X 2 subblock.
 * [A235886](http://oeis.org/A235886) ([L15 program](A235886.asm)): Number of (n+1) X (1+1) 0..3 arrays with the minimum plus the upper median equal to the lower median plus the maximum in every 2 X 2 subblock.
+* [A235887](http://oeis.org/A235887) ([L09 program](A235887.asm)): Number of (n+1) X (2+1) 0..3 arrays with the minimum plus the upper median equal to the lower median plus the maximum in every 2 X 2 subblock.
 * [A235921](http://oeis.org/A235921) ([L03 program](A235921.asm)): Numbers n such that smallest number not dividing n^2 (A236454) is different from smallest prime not dividing n (A053669).
 * [A235944](http://oeis.org/A235944) ([L19 program](A235944.asm)): Digital roots of squares of Lucas numbers.
 * [A235963](http://oeis.org/A235963) ([L12 program](A235963.asm)): n appears (n+1)/(1 + (n mod 2)) times.
@@ -998,6 +999,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A238377](http://oeis.org/A238377) ([L08 program](A238377.asm)): Row sums of triangle in A204028.
 * [A238410](http://oeis.org/A238410) ([L07 program](A238410.asm)): a(n) = floor((3(n-1)^2 + 1)/2).
 * [A238411](http://oeis.org/A238411) ([L07 program](A238411.asm)): a(n) = 2*n*floor(n/2).
+* [A238471](http://oeis.org/A238471) ([L25 program](A238471.asm)): C(5n+6, 4)/5 for n >= 0.
 * [A238477](http://oeis.org/A238477) ([L03 program](A238477.asm)): a(n) = 32*n - 27 for n >= 1. Second column of triangle A238475.
 * [A238531](http://oeis.org/A238531) ([L07 program](A238531.asm)): Expansion of (1 - x + x^2)^2 / (1 - x)^3 in powers of x.
 * [A238549](http://oeis.org/A238549) ([L16 program](A238549.asm)): a(n) is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).
@@ -1997,6 +1999,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271378](http://oeis.org/A271378) ([L03 program](A271378.asm)): a(n) = 5^n mod 31.
 * [A271379](http://oeis.org/A271379) ([L32 program](A271379.asm)): a(n) = 5^n mod 101.
 * [A271389](http://oeis.org/A271389) ([L11 program](A271389.asm)): a(n) = 2*a(n-1) + a(n-2) + n^2 for n>1, with  a(0)=0, a(1)=1.
+* [A271427](http://oeis.org/A271427) ([L05 program](A271427.asm)): a(n) = 7^n - a(n-1) for n>0, a(0)=0.
 * [A271478](http://oeis.org/A271478) ([L15 program](A271478.asm)): If n is even, a(n)=n/2, otherwise 2*n+2.
 * [A271479](http://oeis.org/A271479) ([L11 program](A271479.asm)): Number of steps for the trajectory of n under the map k -> A271478(k) to reach 1.
 * [A271508](http://oeis.org/A271508) ([L09 program](A271508.asm)): Numbers that are congruent to {1,4} mod 10.
@@ -2587,7 +2590,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A292537](http://oeis.org/A292537) ([L11 program](A292537.asm)): Number of cliques in the n-Sierpinski tetrahedron graph.
 * [A292540](http://oeis.org/A292540) ([L08 program](A292540.asm)): Number of 3-cycles in the n-Sierpinski tetrahedron graph.
 * [A292542](http://oeis.org/A292542) ([L15 program](A292542.asm)): Number of 4-cycles in the n-Sierpinski tetrahedron graph.
-* [A292543](http://oeis.org/A292543) ([L05 program](A292543.asm)): Number of 5-cycles in the n-Sierpinski tetrahedron graph.
+* [A292543](http://oeis.org/A292543) ([L04 program](A292543.asm)): Number of 5-cycles in the n-Sierpinski tetrahedron graph.
 * [A292564](http://oeis.org/A292564) ([L09 program](A292564.asm)): Take 1, skip 3 * 1 - 1, take 2, skip 3 * 2 - 1, take 3, skip 3 * 3 - 1, ...
 * [A292565](http://oeis.org/A292565) ([L10 program](A292565.asm)): Take 0, skip 3 * 1 + 1, take 1, skip 3 * 2 + 1, take 2, skip 3 * 3 + 1, ...
 * [A292576](http://oeis.org/A292576) ([L12 program](A292576.asm)): Permutation of the natural numbers partitioned into quadruples [4k-1, 4k-3, 4k-2, 4k], k > 0.
