@@ -7,10 +7,8 @@ add $3,4
 add $4,$0
 mov $2,2
 mul $2,$3
-sub $0,$4
 mul $4,5
 pow $4,2
-sub $3,$4
 add $2,2
 mov $1,$2
 add $1,$4

@@ -3,17 +3,14 @@
 
 pow $0,6
 mul $0,2
-fac $4
+fac $3
 gcd $1,2
-add $1,$4
+add $1,$3
 pow $1,2
 mul $1,$0
 mov $2,$0
 lpb $2,1
   mul $1,3
-  lpb $4,1
-    fac $3
-  lpe
   gcd $2,2
   sub $2,1
 lpe

@@ -172,7 +172,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304726](http://oeis.org/A304726) ([L07 program](A304726.asm)): a(n) = n^4 + 4*n^2 + 3.
 * [A304809](http://oeis.org/A304809) ([L09 program](A304809.asm)): Solution (a(n)) of the complementary equation a(n) = b(2n) + b(4n) ; see Comments.
 * [A304826](http://oeis.org/A304826) ([L06 program](A304826.asm)): a(n) = 32*7^n/21 - 8/3, n>=1.
-* [A304827](http://oeis.org/A304827) ([L12 program](A304827.asm)): a(n) = 52*7^n/21 - 16/3 (n>=1).
+* [A304827](http://oeis.org/A304827) ([L05 program](A304827.asm)): a(n) = 52*7^n/21 - 16/3 (n>=1).
 * [A304828](http://oeis.org/A304828) ([L11 program](A304828.asm)): a(n) = 344*7^n/21 - 128/3 (n>=1).
 * [A304830](http://oeis.org/A304830) ([L05 program](A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
 * [A304831](http://oeis.org/A304831) ([L26 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
@@ -588,7 +588,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321341](http://oeis.org/A321341) ([L20 program](A321341.asm)): An unbounded sequence which is 1 infinitely often, with the property that for any four consecutive terms the maximum term is the sum of the two minimum terms.
 * [A321358](http://oeis.org/A321358) ([L05 program](A321358.asm)): a(n) = (2*4^n + 7)/3.
 * [A321383](http://oeis.org/A321383) ([L34 program](A321383.asm)): Numbers k such that the concatenation k21 is a square.
-* [A321421](http://oeis.org/A321421) ([L08 program](A321421.asm)): a(n) = 10*(4^n - 1)/3 + 1.
+* [A321421](http://oeis.org/A321421) ([L05 program](A321421.asm)): a(n) = 10*(4^n - 1)/3 + 1.
 * [A321483](http://oeis.org/A321483) ([L17 program](A321483.asm)): a(n) = 7*2^n + (-1)^n.
 * [A321499](http://oeis.org/A321499) ([L12 program](A321499.asm)): Numbers of the form (x - y)(x^2 - y^2) with x > y > 0.
 * [A321501](http://oeis.org/A321501) ([L12 program](A321501.asm)): Numbers not of the form (x - y)(x^2 - y^2) with x > y > 0; complement of A321499.
@@ -705,11 +705,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329834](http://oeis.org/A329834) ([L15 program](A329834.asm)): Beatty sequence for (11+sqrt(73))/8.
 * [A329835](http://oeis.org/A329835) ([L05 program](A329835.asm)): Beatty sequence for (9+sqrt(101))/10.
 * [A329836](http://oeis.org/A329836) ([L11 program](A329836.asm)): Beatty sequence for (11+sqrt(101))/10.
+* [A329839](http://oeis.org/A329839) ([L14 program](A329839.asm)): Beatty sequence for (-1+sqrt(41))/4.
 * [A329847](http://oeis.org/A329847) ([L09 program](A329847.asm)): Beatty sequence for (3+sqrt(89))/8.
 * [A329926](http://oeis.org/A329926) ([L11 program](A329926.asm)): Beatty sequence for (8+sqrt(41))/5.
 * [A329939](http://oeis.org/A329939) ([L10 program](A329939.asm)): Beatty sequence for cosh x,  where csch x + sech x = 1 .
 * [A329975](http://oeis.org/A329975) ([L12 program](A329975.asm)): Beatty sequence for 1 + x + x^2, where x is the real solution of 1/x + 1/(1+x+x^2) = 1.
-* [A329977](http://oeis.org/A329977) ([L13 program](A329977.asm)): Beatty sequence for the number x satisfying 1/x + 1/(log x) = 1.
+* [A329977](http://oeis.org/A329977) ([L11 program](A329977.asm)): Beatty sequence for the number x satisfying 1/x + 1/(log x) = 1.
 * [A329978](http://oeis.org/A329978) ([L09 program](A329978.asm)): Beatty sequence for log x, where 1/x + 1/(log x) = 1.
 * [A329988](http://oeis.org/A329988) ([L15 program](A329988.asm)): Beatty sequence for 2^x, where 1/x + 1/2^x = 1.
 * [A329994](http://oeis.org/A329994) ([L10 program](A329994.asm)): Beatty sequence for 2^x, where 1/x^2 + 1/2^x = 1.
@@ -719,7 +720,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330115](http://oeis.org/A330115) ([L13 program](A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
 * [A330133](http://oeis.org/A330133) ([L13 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330144](http://oeis.org/A330144) ([L20 program](A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
-* [A330246](http://oeis.org/A330246) ([L08 program](A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
+* [A330246](http://oeis.org/A330246) ([L05 program](A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A330938](http://oeis.org/A330938) ([L17 program](A330938.asm)): Numbers that cannot be written as the sum of four proper powers. A proper power is an integer number m of the form a^b where a,b are integers greater than or equal to 2.
 * [A331162](http://oeis.org/A331162) ([L15 program](A331162.asm)): a(n) is the number of digits in the concatenation of a(0) to a(n-1) that are equal to the corresponding digit in the concatenation of all integers >= 0, with a(0) = 0.
