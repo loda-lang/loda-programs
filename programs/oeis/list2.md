@@ -1093,7 +1093,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242475](http://oeis.org/A242475) ([L03 program](A242475.asm)): a(n) = 2^n + 8.
 * [A242477](http://oeis.org/A242477) ([L04 program](A242477.asm)): Floor(3*n^2/4).
 * [A242570](http://oeis.org/A242570) ([L02 program](A242570.asm)): Multiples of 252.
-* [A242604](http://oeis.org/A242604) ([L12 program](A242604.asm)): (n - 1)*(n^3 + 1) = n^4 - n^3 + n - 1, for n >= 1.
+* [A242604](http://oeis.org/A242604) ([L12 program](A242604.asm)): a(n) = (n - 1)*(n^3 + 1) = n^4 - n^3 + n - 1, for n >= 1.
 * [A242658](http://oeis.org/A242658) ([L06 program](A242658.asm)): a(n) = 3n^2-3n+2.
 * [A242659](http://oeis.org/A242659) ([L08 program](A242659.asm)): a(n) = n*(n^2 - 3*n + 4).
 * [A242660](http://oeis.org/A242660) ([L10 program](A242660.asm)): Nonnegative numbers of the form x^2+xy-2y^2.
@@ -1367,7 +1367,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253208](http://oeis.org/A253208) ([L03 program](A253208.asm)): a(n) = 4^n + 3.
 * [A253209](http://oeis.org/A253209) ([L03 program](A253209.asm)): a(n) = 6^n + 5.
 * [A253210](http://oeis.org/A253210) ([L03 program](A253210.asm)): a(n) = 7^n + 6.
-* [A253211](http://oeis.org/A253211) ([L05 program](A253211.asm)): a(n) = 8^n + 7.
+* [A253211](http://oeis.org/A253211) ([L04 program](A253211.asm)): a(n) = 8^n + 7.
 * [A253212](http://oeis.org/A253212) ([L06 program](A253212.asm)): a(n) = 9^n + 8.
 * [A253213](http://oeis.org/A253213) ([L13 program](A253213.asm)): a(n) = 10^n + 9.
 * [A253298](http://oeis.org/A253298) ([L25 program](A253298.asm)): Digital root for the following sequences, F(4*n)/F(4); F(12*n)/F(12); F(20*n)/F(20), where the pattern increases by 8, ad infinitum, with the Fibonacci numbers F = A000045.
@@ -2294,7 +2294,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280186](http://oeis.org/A280186) ([L08 program](A280186.asm)): Number of 3-element subsets of S = {1..n} whose sum is odd.
 * [A280293](http://oeis.org/A280293) ([L12 program](A280293.asm)): a(0) = 3, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [-5, 4].
 * [A280304](http://oeis.org/A280304) ([L09 program](A280304.asm)): a(n) = 3*n*(n^2 + 3*n + 4).
-* [A280321](http://oeis.org/A280321) ([L14 program](A280321.asm)): Number of 2 X 2 matrices with all elements in {0,..,n} having determinant = n*permanent.
+* [A280321](http://oeis.org/A280321) ([L13 program](A280321.asm)): Number of 2 X 2 matrices with all elements in {0,..,n} having determinant = n*permanent.
 * [A280344](http://oeis.org/A280344) ([L08 program](A280344.asm)): Number of 2 X 2 matrices with all elements in {0,...,n} with determinant = permanent^n.
 * [A280345](http://oeis.org/A280345) ([L23 program](A280345.asm)): a(0) = 3, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [1, -2].
 * [A280364](http://oeis.org/A280364) ([L20 program](A280364.asm)): Number of 2 X 2 matrices with all elements in {0,...,n} with permanent = determinant^n.

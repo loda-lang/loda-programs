@@ -796,6 +796,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008825](http://oeis.org/A008825) ([L15 program](A008825.asm)): Expansion of (1+2*x^5+x^9)/((1-x)^2*(1-x^9)).
 * [A008851](http://oeis.org/A008851) ([L06 program](A008851.asm)): Congruent to 0 or 1 mod 5.
 * [A008854](http://oeis.org/A008854) ([L06 program](A008854.asm)): Numbers that are congruent to {0, 1, 4} mod 5.
+* [A008893](http://oeis.org/A008893) ([L13 program](A008893.asm)): Number of equilateral triangles formed by triples of points taken from a hexagonal chunk of side n in the hexagonal lattice.
 * [A008911](http://oeis.org/A008911) ([L06 program](A008911.asm)): a(n) = n^2*(n^2 - 1)/6.
 * [A008954](http://oeis.org/A008954) ([L23 program](A008954.asm)): Final digit of triangular number n*(n+1)/2.
 * [A008959](http://oeis.org/A008959) ([L05 program](A008959.asm)): Final digit of squares: n^2 mod 10.
@@ -1010,6 +1011,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011868](http://oeis.org/A011868) ([L08 program](A011868.asm)): [ n(n-1)/15 ].
 * [A011869](http://oeis.org/A011869) ([L07 program](A011869.asm)): a(n) = floor(n*(n-1)/16).
 * [A011871](http://oeis.org/A011871) ([L08 program](A011871.asm)): [ n(n-1)/18 ].
+* [A011872](http://oeis.org/A011872) ([L08 program](A011872.asm)): [ n(n-1)/19 ].
 * [A011873](http://oeis.org/A011873) ([L09 program](A011873.asm)): a(n) = floor(n(n-1)/20).
 * [A011874](http://oeis.org/A011874) ([L18 program](A011874.asm)): [ n(n-1)/21 ].
 * [A011875](http://oeis.org/A011875) ([L20 program](A011875.asm)): Floor( n*(n-1)/22 ).
@@ -3717,6 +3719,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052619](http://oeis.org/A052619) ([L04 program](A052619.asm)): E.g.f. 3x^3/(1-x).
 * [A052628](http://oeis.org/A052628) ([L21 program](A052628.asm)): E.g.f. (2+x^3-x^4)/(1-x).
 * [A052633](http://oeis.org/A052633) ([L23 program](A052633.asm)): E.g.f. x^2*(1+x-x^2)/(1-x)^2.
+* [A052637](http://oeis.org/A052637) ([L20 program](A052637.asm)): E.g.f. 3x(1+x-x^2)/(1-x).
 * [A052645](http://oeis.org/A052645) ([L13 program](A052645.asm)): E.g.f. 2*x^2*(1+x-x^2)/(1-x).
 * [A052648](http://oeis.org/A052648) ([L08 program](A052648.asm)): Expansion of e.g.f. 5*x/(1-x).
 * [A052655](http://oeis.org/A052655) ([L13 program](A052655.asm)): a(2) = 6, otherwise a(n) = n*n!.
@@ -4352,7 +4355,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063154](http://oeis.org/A063154) ([L07 program](A063154.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 86 ).
 * [A063155](http://oeis.org/A063155) ([L06 program](A063155.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 87 ).
 * [A063157](http://oeis.org/A063157) ([L09 program](A063157.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 89 ).
-* [A063158](http://oeis.org/A063158) ([L07 program](A063158.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 90 ).
+* [A063158](http://oeis.org/A063158) ([L05 program](A063158.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 90 ).
 * [A063159](http://oeis.org/A063159) ([L12 program](A063159.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 91 ).
 * [A063160](http://oeis.org/A063160) ([L06 program](A063160.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 92 ).
 * [A063161](http://oeis.org/A063161) ([L12 program](A063161.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 93 ).
@@ -5372,6 +5375,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081168](http://oeis.org/A081168) ([L44 program](A081168.asm)): Differences of Beatty sequence for square root of 10.
 * [A081186](http://oeis.org/A081186) ([L08 program](A081186.asm)): 4th binomial transform of (1,0,1,0,1,...), A059841.
 * [A081193](http://oeis.org/A081193) ([L15 program](A081193.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n>1, a(0)=1, a(1)=9.
+* [A081219](http://oeis.org/A081219) ([L20 program](A081219.asm)): One sixtieth the product of primitive Pythagorean triangles' sides whose odd values differ by 2.
 * [A081223](http://oeis.org/A081223) ([L25 program](A081223.asm)): Smallest k such that floor(k*gamma) begins with n (gamma=0.5772156649...).
 * [A081245](http://oeis.org/A081245) ([L26 program](A081245.asm)): Number of days in months in the Haab year of Mayan/mesoamerican calendars.
 * [A081250](http://oeis.org/A081250) ([L08 program](A081250.asm)): Numbers k such that A081249(m)/m^2 has a local minimum for m = k.
@@ -5740,7 +5744,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087475](http://oeis.org/A087475) ([L03 program](A087475.asm)): a(n) = n^2 + 4.
 * [A087483](http://oeis.org/A087483) ([L07 program](A087483.asm)): Row 0 of the order array of 3/2, i.e., row 0 of the transposable dispersion in A087465.
 * [A087503](http://oeis.org/A087503) ([L13 program](A087503.asm)): a(n) = 3(a(n-2) + 1), with a(0) = 1, a(1) = 3.
-* [A087507](http://oeis.org/A087507) ([L19 program](A087507.asm)): #{0<=k<=n: k*n is divisible by 3}.
+* [A087507](http://oeis.org/A087507) ([L07 program](A087507.asm)): #{0<=k<=n: k*n is divisible by 3}.
 * [A087508](http://oeis.org/A087508) ([L08 program](A087508.asm)): Number of k such that mod(k*n,3) = 1 for 0 <= k <= n.
 * [A087509](http://oeis.org/A087509) ([L08 program](A087509.asm)): a(n) = #{k=0..n, mod(kn,3) = 2}.
 * [A087620](http://oeis.org/A087620) ([L07 program](A087620.asm)): #{0<=k<=n: k*n is divisible by 4}.
@@ -5898,6 +5902,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092139](http://oeis.org/A092139) ([L13 program](A092139.asm)): Duplicate of A084558.
 * [A092164](http://oeis.org/A092164) ([L09 program](A092164.asm)): Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (1,1) entry of M^n.
 * [A092165](http://oeis.org/A092165) ([L10 program](A092165.asm)): Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (1,2) entry of M^n.
+* [A092166](http://oeis.org/A092166) ([L07 program](A092166.asm)): Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (2,1) entry of M^n.
 * [A092181](http://oeis.org/A092181) ([L43 program](A092181.asm)): Figurate numbers based on the 24-cell (4-D polytope with Schlaefli symbol {3,4,3}).
 * [A092184](http://oeis.org/A092184) ([L09 program](A092184.asm)): Sequence S_6 of the S_r family.
 * [A092185](http://oeis.org/A092185) ([L07 program](A092185.asm)): a(n) = (5/6)*n^3+(5/2)*n^2+(8/3)*n.

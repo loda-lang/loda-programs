@@ -7,15 +7,13 @@ mov $1,$0
 lpb $0,1
   pow $0,4
   sub $0,1
-  mov $4,1
+  mov $3,1
   mul $0,$1
-  mul $4,2
+  mul $3,2
   sub $0,$1
   add $1,$0
-  mov $2,$4
-  pow $2,5
+  mov $2,$3
   mov $0,4
-  fac $3
   div $0,$2
 lpe
 div $1,2
