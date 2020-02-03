@@ -231,6 +231,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305750](http://oeis.org/A305750) ([L23 program](A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
 * [A305859](http://oeis.org/A305859) ([L08 program](A305859.asm)): Numbers that are congruent to {1, 3, 11} mod 12.
 * [A305861](http://oeis.org/A305861) ([L12 program](A305861.asm)): a(n) = 32*3^n - 2^(n+5) + 5.
+* [A305880](http://oeis.org/A305880) ([L07 program](A305880.asm)): A base 3/2 reverse sorted Fibonacci sequence that starts with terms 2211 and 2211. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the digits into decreasing order, omitting all zeros.
 * [A306258](http://oeis.org/A306258) ([L06 program](A306258.asm)): a(n) = floor(n^2/4)*n!.
 * [A306262](http://oeis.org/A306262) ([L12 program](A306262.asm)): Difference between maximum and minimum sum of products of successive pairs in permutations of [n].
 * [A306277](http://oeis.org/A306277) ([L08 program](A306277.asm)): Numbers congruent to 1 or 8 mod 10.

@@ -5,5 +5,4 @@ pow $0,4
 mov $1,$0
 mov $2,5
 mul $2,4
-mul $0,0
 mod $1,$2
