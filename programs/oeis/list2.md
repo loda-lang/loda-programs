@@ -1316,7 +1316,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250362](http://oeis.org/A250362) ([L56 program](A250362.asm)): Number of length 4 arrays x(i), i=1..4 with x(i) in i..i+n and no value appearing more than 3 times.
 * [A250363](http://oeis.org/A250363) ([L65 program](A250363.asm)): Number of length 5 arrays x(i), i=1..5 with x(i) in i..i+n and no value appearing more than 3 times.
 * [A250461](http://oeis.org/A250461) ([L14 program](A250461.asm)): Number of (n+1)X(1+1) 0..1 arrays with nondecreasing min(x(i,j),x(i,j-1)) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.
-* [A250554](http://oeis.org/A250554) ([L12 program](A250554.asm)): Number of length n+2 0..1 arrays with the sum of second differences multiplied by some arrangement of +-1 equal to zero.
+* [A250554](http://oeis.org/A250554) ([L07 program](A250554.asm)): Number of length n+2 0..1 arrays with the sum of second differences multiplied by some arrangement of +-1 equal to zero.
 * [A250605](http://oeis.org/A250605) ([L14 program](A250605.asm)): Number of (n+1) X (2+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)-x(i-1,j) in the j direction.
 * [A250653](http://oeis.org/A250653) ([L05 program](A250653.asm)): Number of (n+1)X(5+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction
 * [A250654](http://oeis.org/A250654) ([L05 program](A250654.asm)): Number of (n+1) X (6+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.
@@ -1563,7 +1563,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A259711](http://oeis.org/A259711) ([L08 program](A259711.asm)): Number of positions the 7g heptiamond occupies in an equilateral triangle of order n.
 * [A259713](http://oeis.org/A259713) ([L11 program](A259713.asm)): a(n) = 3*2^n - 2*(-1)^n.
 * [A259750](http://oeis.org/A259750) ([L09 program](A259750.asm)): Numbers that are congruent to {14,22} mod 24.
-* [A259751](http://oeis.org/A259751) ([L06 program](A259751.asm)): Numbers that are congruent to {8,16} mod 24.
+* [A259751](http://oeis.org/A259751) ([L05 program](A259751.asm)): Numbers that are congruent to {8,16} mod 24.
 * [A259752](http://oeis.org/A259752) ([L03 program](A259752.asm)): a(n) = 24n + 6.
 * [A259754](http://oeis.org/A259754) ([L22 program](A259754.asm)): Numbers that are congruent to {3,9,15,18,21} mod 24.
 * [A259755](http://oeis.org/A259755) ([L06 program](A259755.asm)): Numbers that are congruent to {4,20} mod 24.
@@ -2208,7 +2208,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277104](http://oeis.org/A277104) ([L09 program](A277104.asm)): a(n) = 9*3^n - 15.
 * [A277105](http://oeis.org/A277105) ([L05 program](A277105.asm)): a(n) = (27*3^n - 63)/2.
 * [A277106](http://oeis.org/A277106) ([L05 program](A277106.asm)): a(n) = 8*3^n - 12.
-* [A277107](http://oeis.org/A277107) ([L17 program](A277107.asm)): a(n) = 16*3^n - 48.
+* [A277107](http://oeis.org/A277107) ([L06 program](A277107.asm)): a(n) = 16*3^n - 48.
 * [A277108](http://oeis.org/A277108) ([L05 program](A277108.asm)): a(n) = 4n*(n+5).
 * [A277131](http://oeis.org/A277131) ([L25 program](A277131.asm)): Magic numbers of anti-Mackay icosahedra.
 * [A277155](http://oeis.org/A277155) ([L12 program](A277155.asm)): Lexicographically least sequence of nonnegative integers that avoids 11/7-powers.
@@ -2362,7 +2362,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A283523](http://oeis.org/A283523) ([L13 program](A283523.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 913", based on the 5-celled von Neumann neighborhood.
 * [A283591](http://oeis.org/A283591) ([L15 program](A283591.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
 * [A283592](http://oeis.org/A283592) ([L13 program](A283592.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
-* [A283642](http://oeis.org/A283642) ([L11 program](A283642.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 678", based on the 5-celled von Neumann neighborhood.
+* [A283642](http://oeis.org/A283642) ([L07 program](A283642.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 678", based on the 5-celled von Neumann neighborhood.
 * [A283833](http://oeis.org/A283833) ([L14 program](A283833.asm)): For t >= 0, if 2^t + t - 3 <= n <= 2^t + t - 1 then a(n) = 2^t - 1, while if 2^t + t - 1 < n < 2^(t+1) + t - 3 then a(n) = 2^(t+1) + t - 2 - n.
 * [A283963](http://oeis.org/A283963) ([L67 program](A283963.asm)): Fixed point of the morphism 0 -> 1, 1 -> 1010.
 * [A283971](http://oeis.org/A283971) ([L08 program](A283971.asm)): a(n) = n except a(4*n + 2) = 2*n + 1.
