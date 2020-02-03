@@ -6,11 +6,5 @@ sub $0,$0
 gcd $0,2
 pow $1,$0
 mul $0,5
-gcd $2,4
 pow $1,2
-mov $3,2
 mod $1,$0
-lpb $0,1
-  sub $0,1
-  mul $0,$2
-lpe
