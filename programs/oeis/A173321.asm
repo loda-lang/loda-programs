@@ -4,5 +4,5 @@
 fac $0
 gcd $1,4
 mul $1,$0
-mov $2,0
+fac $2
 sub $1,$2

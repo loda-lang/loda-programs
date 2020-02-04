@@ -5,7 +5,7 @@ mov $1,$0
 add $0,3
 fac $1
 div $0,2
-mov $2,0
+fac $2
 mul $1,$0
 add $1,$2
 sub $1,1
