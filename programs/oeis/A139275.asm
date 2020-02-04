@@ -4,7 +4,7 @@
 mov $2,4
 mul $0,4
 mul $2,$0
-fac $1
+mov $1,0
 add $1,$2
 pow $1,2
 div $1,32

@@ -3,7 +3,7 @@
 
 pow $0,6
 mul $0,2
-fac $3
+mov $3,0
 gcd $1,2
 add $1,$3
 pow $1,2
