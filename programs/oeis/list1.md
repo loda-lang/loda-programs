@@ -976,7 +976,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123860](http://oeis.org/A123860) ([L10 program](A123860.asm)): a(n) = ceiling( (7 + sqrt(49+24*n))/2 ).
 * [A123865](http://oeis.org/A123865) ([L04 program](A123865.asm)): a(n) = n^4 - 1.
 * [A123866](http://oeis.org/A123866) ([L05 program](A123866.asm)): a(n) = n^6 - 1.
-* [A123867](http://oeis.org/A123867) ([L05 program](A123867.asm)): a(n) = n^10 - 1.
+* [A123867](http://oeis.org/A123867) ([L04 program](A123867.asm)): a(n) = n^10 - 1.
 * [A123919](http://oeis.org/A123919) ([L09 program](A123919.asm)): Number of numbers congruent to 2 or 4 mod 6 and <= n.
 * [A123920](http://oeis.org/A123920) ([L12 program](A123920.asm)): Number of numbers congruent to 2 or 4 mod 6 between n and 2n inclusive.
 * [A123932](http://oeis.org/A123932) ([L02 program](A123932.asm)): a(0) = 1, a(n) = 4 for n > 0.
@@ -3381,7 +3381,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168240](http://oeis.org/A168240) ([L13 program](A168240.asm)): 1+7*n+13*n^2.
 * [A168251](http://oeis.org/A168251) ([L11 program](A168251.asm)): a(n) = n^2 if n is odd, n^2*2^(n-2) if n is even.
 * [A168255](http://oeis.org/A168255) ([L09 program](A168255.asm)): n appears n-th nonprime number times.
-* [A168269](http://oeis.org/A168269) ([L06 program](A168269.asm)): a(n) = 2*n - (-1)^n.
+* [A168269](http://oeis.org/A168269) ([L04 program](A168269.asm)): a(n) = 2*n - (-1)^n.
 * [A168273](http://oeis.org/A168273) ([L04 program](A168273.asm)): a(n) = 2*n + (-1)^n - 1.
 * [A168276](http://oeis.org/A168276) ([L06 program](A168276.asm)): a(n) = 2*n - (-1)^n - 1.
 * [A168277](http://oeis.org/A168277) ([L04 program](A168277.asm)): a(n) = 2*n - (-1)^n - 2.
@@ -4054,7 +4054,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178390](http://oeis.org/A178390) ([L05 program](A178390.asm)): a(n) = (n^2+1)^2+1.
 * [A178414](http://oeis.org/A178414) ([L05 program](A178414.asm)): Least odd number in the Collatz (3x+1) preimage of odd numbers not a multiple of 3.
 * [A178420](http://oeis.org/A178420) ([L09 program](A178420.asm)): Partial sums of floor(2^n/3).
-* [A178487](http://oeis.org/A178487) ([L13 program](A178487.asm)): a(n) = floor(n^(1/5)): integer part of fifth root of n.
+* [A178487](http://oeis.org/A178487) ([L10 program](A178487.asm)): a(n) = floor(n^(1/5)): integer part of fifth root of n.
 * [A178489](http://oeis.org/A178489) ([L09 program](A178489.asm)): a(n) = floor(n^(1/6)): integer part of sixth root of n.
 * [A178521](http://oeis.org/A178521) ([L08 program](A178521.asm)): The cost of all leaves in the Fibonacci tree of order n.
 * [A178525](http://oeis.org/A178525) ([L08 program](A178525.asm)): The sum of the costs of all nodes in the Fibonacci tree of order n.
@@ -4078,6 +4078,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179054](http://oeis.org/A179054) ([L20 program](A179054.asm)): a(n) = (1^k + 2^k + ... + n^k) modulo (n+2), where k is any odd integer greater than or equal to 3.
 * [A179058](http://oeis.org/A179058) ([L11 program](A179058.asm)): Number of non-attacking placements of 3 rooks on an n X n board.
 * [A179070](http://oeis.org/A179070) ([L14 program](A179070.asm)): a(1)=a(2)=a(3)=1, a(4)=3; thereafter a(n) = a(n-1) + a(n-3).
+* [A179081](http://oeis.org/A179081) ([L06 program](A179081.asm)): Parity of sum of digits of n.
 * [A179167](http://oeis.org/A179167) ([L11 program](A179167.asm)): a(n) red and b(n) blue balls in an urn; draw 3 balls without replacement; Probability(3 red balls) = Probability(1 red and 2 blue balls); binomial(a(n),3) = binomial(a(n),1)*binomial(b(n),2).
 * [A179178](http://oeis.org/A179178) ([L22 program](A179178.asm)): The number of equal-sized equilateral triangles visible (when viewed from above) in successive Genealodrons formed from 2^n -1 same size equilateral triangles.
 * [A179184](http://oeis.org/A179184) ([L04 program](A179184.asm)): Number of connected 2-regular simple graphs with n vertices.

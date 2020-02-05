@@ -3,7 +3,6 @@
 
 mov $1,$0
 pow $3,$0
-mod $0,$3
 fac $1
 mov $2,$3
 mul $1,2

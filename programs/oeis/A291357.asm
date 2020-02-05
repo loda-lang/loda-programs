@@ -3,7 +3,6 @@
 
 mod $0,6
 mov $1,$0
-div $2,0
 gcd $1,4
 mul $1,2
 div $1,3
