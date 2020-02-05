@@ -1443,6 +1443,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017486](http://oeis.org/A017486) ([L10 program](A017486.asm)): a(n) = (11*n + 8)^2.
 * [A017497](http://oeis.org/A017497) ([L03 program](A017497.asm)): a(n) = 11*n + 9.
 * [A017498](http://oeis.org/A017498) ([L15 program](A017498.asm)): a(n) = (11*n + 9)^2.
+* [A017499](http://oeis.org/A017499) ([L10 program](A017499.asm)): a(n) = (11*n + 9)^3.
 * [A017509](http://oeis.org/A017509) ([L03 program](A017509.asm)): a(n) = 11*n + 10.
 * [A017510](http://oeis.org/A017510) ([L17 program](A017510.asm)): a(n) = (11*n + 10)^2.
 * [A017522](http://oeis.org/A017522) ([L03 program](A017522.asm)): a(n) = (12*n)^2.
@@ -2425,6 +2426,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033400](http://oeis.org/A033400) ([L05 program](A033400.asm)): [ 80/n ].
 * [A033401](http://oeis.org/A033401) ([L05 program](A033401.asm)): [ 81/n ].
 * [A033402](http://oeis.org/A033402) ([L14 program](A033402.asm)): [ 82/n ].
+* [A033403](http://oeis.org/A033403) ([L09 program](A033403.asm)): [ 83/n ].
 * [A033404](http://oeis.org/A033404) ([L07 program](A033404.asm)): [ 84/n ].
 * [A033405](http://oeis.org/A033405) ([L08 program](A033405.asm)): [ 85/n ].
 * [A033407](http://oeis.org/A033407) ([L14 program](A033407.asm)): [ 87/n ].
@@ -2635,6 +2637,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037488](http://oeis.org/A037488) ([L19 program](A037488.asm)): Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
 * [A037489](http://oeis.org/A037489) ([L24 program](A037489.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
 * [A037490](http://oeis.org/A037490) ([L12 program](A037490.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
+* [A037497](http://oeis.org/A037497) ([L06 program](A037497.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,2.
 * [A037577](http://oeis.org/A037577) ([L08 program](A037577.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
 * [A037584](http://oeis.org/A037584) ([L08 program](A037584.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 3,1.
 * [A037604](http://oeis.org/A037604) ([L04 program](A037604.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,3.
@@ -2847,6 +2850,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040703](http://oeis.org/A040703) ([L09 program](A040703.asm)): Continued fraction for sqrt(731).
 * [A040704](http://oeis.org/A040704) ([L12 program](A040704.asm)): Continued fraction for sqrt(732).
 * [A040707](http://oeis.org/A040707) ([L14 program](A040707.asm)): Continued fraction for sqrt(735).
+* [A040710](http://oeis.org/A040710) ([L17 program](A040710.asm)): Continued fraction for sqrt(738).
 * [A040728](http://oeis.org/A040728) ([L10 program](A040728.asm)): Continued fraction for sqrt(756).
 * [A040756](http://oeis.org/A040756) ([L05 program](A040756.asm)): Continued fraction for sqrt(785).
 * [A040757](http://oeis.org/A040757) ([L10 program](A040757.asm)): Continued fraction for sqrt(786).
@@ -4931,6 +4935,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070728](http://oeis.org/A070728) ([L08 program](A070728.asm)): n^7 mod 48.
 * [A070875](http://oeis.org/A070875) ([L11 program](A070875.asm)): Binary expansion is 1x100...0 where x = 0 or 1.
 * [A070876](http://oeis.org/A070876) ([L13 program](A070876.asm)): Binary expansion is 1xx100...0 where xx = 00 or 11.
+* [A070885](http://oeis.org/A070885) ([L10 program](A070885.asm)): a(n) = (3/2)*a(n-1) if a(n-1) is even; (3/2)*(a(n-1)+1) if a(n-1) is odd.
 * [A070893](http://oeis.org/A070893) ([L48 program](A070893.asm)): Let r, s, t be three permutations of the set {1,2,3,..,n}; a(n) = value of Sum_{i=1..n} r(i)*s(i)*t(i), with r={1,2,3,..,n}; s={n,n-1,..,1} and t={n,n-2,n-4,...,1,...,n-3,n-1}.
 * [A070939](http://oeis.org/A070939) ([L09 program](A070939.asm)): Length of binary representation of n.
 * [A070941](http://oeis.org/A070941) ([L05 program](A070941.asm)): Length of binary representation of 2n+1.

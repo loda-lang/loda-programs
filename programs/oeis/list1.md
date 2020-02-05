@@ -297,7 +297,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105332](http://oeis.org/A105332) ([L14 program](A105332.asm)): a(n) = n*(n+1)/2 mod 8.
 * [A105333](http://oeis.org/A105333) ([L37 program](A105333.asm)): a(n) = n*(n+1)/2 mod 16.
 * [A105343](http://oeis.org/A105343) ([L08 program](A105343.asm)): Elements of even index in the sequence gives A005893, points on surface of tetrahedron: 2n^2 + 2 for n > 1.
-* [A105374](http://oeis.org/A105374) ([L07 program](A105374.asm)): a(n) = 4*n^3 + 4*n.
+* [A105374](http://oeis.org/A105374) ([L05 program](A105374.asm)): a(n) = 4*n^3 + 4*n.
 * [A105395](http://oeis.org/A105395) ([L06 program](A105395.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105396](http://oeis.org/A105396) ([L04 program](A105396.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105397](http://oeis.org/A105397) ([L03 program](A105397.asm)): Periodic with period 2: repeat [4,2].
@@ -3283,7 +3283,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167548](http://oeis.org/A167548) ([L49 program](A167548.asm)): The fifth row of the ED1 array A167546
 * [A167561](http://oeis.org/A167561) ([L11 program](A167561.asm)): The fourth row of the ED2 array A167560.
 * [A167562](http://oeis.org/A167562) ([L58 program](A167562.asm)): The fifth row of the ED2 array A167560.
-* [A167573](http://oeis.org/A167573) ([L23 program](A167573.asm)): The third row of the ED3 array A167572.
+* [A167573](http://oeis.org/A167573) ([L15 program](A167573.asm)): The third row of the ED3 array A167572.
 * [A167574](http://oeis.org/A167574) ([L41 program](A167574.asm)): The fourth row of the ED3 array A167572.
 * [A167585](http://oeis.org/A167585) ([L12 program](A167585.asm)): a(n) = 12*n^2 - 8*n + 9.
 * [A167586](http://oeis.org/A167586) ([L19 program](A167586.asm)): The fourth row of the ED4 array A167584.
@@ -3408,6 +3408,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168351](http://oeis.org/A168351) ([L06 program](A168351.asm)): a(n) = n^5*(n+1)/2.
 * [A168364](http://oeis.org/A168364) ([L07 program](A168364.asm)): a(n) = n^5*(n^2 + 1)/2.
 * [A168371](http://oeis.org/A168371) ([L06 program](A168371.asm)): a(n) = n^5*(n^3 + 1)/2.
+* [A168372](http://oeis.org/A168372) ([L08 program](A168372.asm)): a(n) = n^5*(n^4 + 1)/2.
 * [A168373](http://oeis.org/A168373) ([L05 program](A168373.asm)): a(n) = 7*n - a(n-1) - 6 with n>1, a(1)=4.
 * [A168374](http://oeis.org/A168374) ([L04 program](A168374.asm)): a(n) = 7 * floor(n/2).
 * [A168376](http://oeis.org/A168376) ([L05 program](A168376.asm)): a(n) = (14*n - 7*(-1)^n - 9)/4.
@@ -3452,6 +3453,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168527](http://oeis.org/A168527) ([L10 program](A168527.asm)): a(n) = n^6*(n^2 + 1)/2.
 * [A168538](http://oeis.org/A168538) ([L12 program](A168538.asm)): a(n) = (n+6)*(n+1)*(n^2 + 7*n + 16)/4.
 * [A168547](http://oeis.org/A168547) ([L08 program](A168547.asm)): a(n) = 1 - 2*n^2 + 4*n*(1 + 2*n^2)/3.
+* [A168555](http://oeis.org/A168555) ([L06 program](A168555.asm)): a(n) = n^6*(n^3 + 1)/2.
 * [A168559](http://oeis.org/A168559) ([L06 program](A168559.asm)): a(n) = n^2 + a(n-1), with a(1)=0.
 * [A168564](http://oeis.org/A168564) ([L06 program](A168564.asm)): a(n) = n^6*(n^4 + 1)/2.
 * [A168566](http://oeis.org/A168566) ([L11 program](A168566.asm)): a(n) = (n-1)*(n+2)*(n^2 + n + 2)/4.
@@ -4971,7 +4973,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198647](http://oeis.org/A198647) ([L05 program](A198647.asm)): 3*7^n-1
 * [A198686](http://oeis.org/A198686) ([L05 program](A198686.asm)): 4*7^n-1.
 * [A198687](http://oeis.org/A198687) ([L06 program](A198687.asm)): 5*7^n-1.
-* [A198688](http://oeis.org/A198688) ([L16 program](A198688.asm)): 6*7^n-1.
+* [A198688](http://oeis.org/A198688) ([L09 program](A198688.asm)): 6*7^n-1.
 * [A198689](http://oeis.org/A198689) ([L13 program](A198689.asm)): 8*7^n-1.
 * [A198690](http://oeis.org/A198690) ([L09 program](A198690.asm)): 9*7^n-1.
 * [A198691](http://oeis.org/A198691) ([L12 program](A198691.asm)): 10*7^n-1.
