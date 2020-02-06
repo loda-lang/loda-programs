@@ -105,7 +105,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204674](http://oeis.org/A204674) ([L13 program](A204674.asm)): a(n) = 4*n^3 + 5*n^2 + 2*n + 1.
 * [A204675](http://oeis.org/A204675) ([L08 program](A204675.asm)): a(n) = 16*n^2 + 2*n + 1.
 * [A204688](http://oeis.org/A204688) ([L22 program](A204688.asm)): a(n) = n^n (mod 3).
-* [A204689](http://oeis.org/A204689) ([L05 program](A204689.asm)): a(n) = n^n (mod 4).
+* [A204689](http://oeis.org/A204689) ([L04 program](A204689.asm)): a(n) = n^n (mod 4).
 * [A204708](http://oeis.org/A204708) ([L20 program](A204708.asm)): Number of (n+1) X 4 0..1 arrays with the permanents of all 2 X 2 subblocks equal and nonzero.
 * [A204769](http://oeis.org/A204769) ([L22 program](A204769.asm)): a(n) = 151*(n-1) - a(n-1) with n>1, a(1)=46.
 * [A204904](http://oeis.org/A204904) ([L04 program](A204904.asm)): p(n)-q(n), where (p(n), q(n)) is the least pair of odd primes for which n divides p(n)-q(n).
@@ -984,7 +984,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A237416](http://oeis.org/A237416) ([L16 program](A237416.asm)): Smallest multiple of 5 beginning with n.
 * [A237420](http://oeis.org/A237420) ([L04 program](A237420.asm)): If n is odd, then a(n) = 0; otherwise, a(n) = n.
 * [A237514](http://oeis.org/A237514) ([L21 program](A237514.asm)): Numbers k such that 2^(k-1) < 3^(m-1) < 2^k < 3^m < 2^(k+1), for some m > 2, a(1) = 1.
-* [A237516](http://oeis.org/A237516) ([L15 program](A237516.asm)): Pyramidal centered square numbers.
+* [A237516](http://oeis.org/A237516) ([L12 program](A237516.asm)): Pyramidal centered square numbers.
 * [A237616](http://oeis.org/A237616) ([L09 program](A237616.asm)): a(n) = n*(n + 1)*(5*n - 4)/2.
 * [A237617](http://oeis.org/A237617) ([L10 program](A237617.asm)): a(n) = n*(n + 1)*(17*n - 14)/6.
 * [A237618](http://oeis.org/A237618) ([L11 program](A237618.asm)): a(n) = n*(n + 1)*(19*n - 16)/6.
@@ -1239,7 +1239,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247817](http://oeis.org/A247817) ([L04 program](A247817.asm)): Sum(4^k, k=2..n).
 * [A247840](http://oeis.org/A247840) ([L08 program](A247840.asm)): Sum(6^k, k=2..n).
 * [A247841](http://oeis.org/A247841) ([L04 program](A247841.asm)): Sum(8^k, k=2..n).
-* [A247842](http://oeis.org/A247842) ([L06 program](A247842.asm)): Sum(9^k, k=2..n).
+* [A247842](http://oeis.org/A247842) ([L05 program](A247842.asm)): Sum(9^k, k=2..n).
 * [A247903](http://oeis.org/A247903) ([L18 program](A247903.asm)): Start with a single square; at n-th generation add a square at each expandable vertex (this is the "vertex to side" version); a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247904](http://oeis.org/A247904) ([L07 program](A247904.asm)): Start with a single pentagon; at n-th generation add a pentagon at each expandable vertex (this is the "vertex to side" version); a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247964](http://oeis.org/A247964) ([L21 program](A247964.asm)): Beatty sequence for e^(1/3): a(n)=floor(n*(e^(1/3)))
@@ -1369,7 +1369,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253209](http://oeis.org/A253209) ([L03 program](A253209.asm)): a(n) = 6^n + 5.
 * [A253210](http://oeis.org/A253210) ([L03 program](A253210.asm)): a(n) = 7^n + 6.
 * [A253211](http://oeis.org/A253211) ([L04 program](A253211.asm)): a(n) = 8^n + 7.
-* [A253212](http://oeis.org/A253212) ([L06 program](A253212.asm)): a(n) = 9^n + 8.
+* [A253212](http://oeis.org/A253212) ([L05 program](A253212.asm)): a(n) = 9^n + 8.
 * [A253213](http://oeis.org/A253213) ([L13 program](A253213.asm)): a(n) = 10^n + 9.
 * [A253298](http://oeis.org/A253298) ([L25 program](A253298.asm)): Digital root for the following sequences, F(4*n)/F(4); F(12*n)/F(12); F(20*n)/F(20), where the pattern increases by 8, ad infinitum, with the Fibonacci numbers F = A000045.
 * [A253430](http://oeis.org/A253430) ([L12 program](A253430.asm)): Number of (n+1) X (3+1) 0..1 arrays with every 2 X 2 subblock diagonal minus antidiagonal sum nondecreasing horizontally, vertically and ne-to-sw antidiagonally.
@@ -1546,8 +1546,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A259044](http://oeis.org/A259044) ([L07 program](A259044.asm)): Period 8 sequence [ 0, 1, 0, 1, 1, 1, 0, 1, ...].
 * [A259054](http://oeis.org/A259054) ([L05 program](A259054.asm)): a(n) = 4*n^2 - 4*n + 19, n >= 1.
 * [A259055](http://oeis.org/A259055) ([L05 program](A259055.asm)): a(n) = 9*n^2 + 18*n + 7.
-* [A259058](http://oeis.org/A259058) ([L08 program](A259058.asm)): Numbers that are representable in at least two ways as sums of four distinct nonvanishing squares.
-* [A259059](http://oeis.org/A259059) ([L08 program](A259059.asm)): One half of numbers representable in at least two different ways as sums of four distinct nonvanishing squares. See A259058 for these numbers and their representations.
+* [A259058](http://oeis.org/A259058) ([L06 program](A259058.asm)): Numbers that are representable in at least two ways as sums of four distinct nonvanishing squares.
+* [A259059](http://oeis.org/A259059) ([L06 program](A259059.asm)): One half of numbers representable in at least two different ways as sums of four distinct nonvanishing squares. See A259058 for these numbers and their representations.
 * [A259060](http://oeis.org/A259060) ([L31 program](A259060.asm)): Numbers that are representable in at least two ways as sums of four distinct nonvanishing cubes.
 * [A259108](http://oeis.org/A259108) ([L08 program](A259108.asm)): a(n) = 2 * A000538(n).
 * [A259110](http://oeis.org/A259110) ([L06 program](A259110.asm)): 2*A000447(n).
@@ -2211,7 +2211,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277104](http://oeis.org/A277104) ([L09 program](A277104.asm)): a(n) = 9*3^n - 15.
 * [A277105](http://oeis.org/A277105) ([L05 program](A277105.asm)): a(n) = (27*3^n - 63)/2.
 * [A277106](http://oeis.org/A277106) ([L05 program](A277106.asm)): a(n) = 8*3^n - 12.
-* [A277107](http://oeis.org/A277107) ([L06 program](A277107.asm)): a(n) = 16*3^n - 48.
+* [A277107](http://oeis.org/A277107) ([L05 program](A277107.asm)): a(n) = 16*3^n - 48.
 * [A277108](http://oeis.org/A277108) ([L05 program](A277108.asm)): a(n) = 4n*(n+5).
 * [A277131](http://oeis.org/A277131) ([L25 program](A277131.asm)): Magic numbers of anti-Mackay icosahedra.
 * [A277155](http://oeis.org/A277155) ([L12 program](A277155.asm)): Lexicographically least sequence of nonnegative integers that avoids 11/7-powers.

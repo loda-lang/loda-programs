@@ -176,7 +176,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304828](http://oeis.org/A304828) ([L11 program](A304828.asm)): a(n) = 344*7^n/21 - 128/3 (n>=1).
 * [A304830](http://oeis.org/A304830) ([L05 program](A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
 * [A304831](http://oeis.org/A304831) ([L26 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
-* [A304832](http://oeis.org/A304832) ([L13 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
+* [A304832](http://oeis.org/A304832) ([L10 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
 * [A304833](http://oeis.org/A304833) ([L11 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
 * [A304834](http://oeis.org/A304834) ([L19 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L32 program](A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
@@ -726,4 +726,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A330938](http://oeis.org/A330938) ([L17 program](A330938.asm)): Numbers that cannot be written as the sum of four proper powers. A proper power is an integer number m of the form a^b where a,b are integers greater than or equal to 2.
 * [A331162](http://oeis.org/A331162) ([L15 program](A331162.asm)): a(n) is the number of digits in the concatenation of a(0) to a(n-1) that are equal to the corresponding digit in the concatenation of all integers >= 0, with a(0) = 0.
-* [A331190](http://oeis.org/A331190) ([L18 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
+* [A331190](http://oeis.org/A331190) ([L17 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
