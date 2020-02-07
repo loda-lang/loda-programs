@@ -3588,6 +3588,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169711](http://oeis.org/A169711) ([L11 program](A169711.asm)): The function W_n(6) (see Borwein et al. reference for definition).
 * [A169712](http://oeis.org/A169712) ([L49 program](A169712.asm)): The function W_n(8) (see Borwein et al. reference for definition).
 * [A169713](http://oeis.org/A169713) ([L64 program](A169713.asm)): The function W_n(10) (see Borwein et al. reference for definition).
+* [A169720](http://oeis.org/A169720) ([L09 program](A169720.asm)): a(n) = (3*2^(n-1)-1)*(3*2^n-1).
 * [A169721](http://oeis.org/A169721) ([L11 program](A169721.asm)): a(n) = (2*(3*2^(n-1)-1))^2.
 * [A169724](http://oeis.org/A169724) ([L10 program](A169724.asm)): (2*3^(n-1)+1)^2.
 * [A169726](http://oeis.org/A169726) ([L09 program](A169726.asm)): a(n) = 3*2^n*(2^n-1) + 1.
@@ -3745,6 +3746,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171476](http://oeis.org/A171476) ([L10 program](A171476.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n>1, a(0)=1, a(1)=6.
 * [A171477](http://oeis.org/A171477) ([L13 program](A171477.asm)): a(n) = 6*a(n-1) - 8*a(n-2) + 1 for n > 1; a(0) = 1, a(1) = 7.
 * [A171478](http://oeis.org/A171478) ([L13 program](A171478.asm)): a(n) = 6*a(n-1) - 8*a(n-2) + 2 for n > 1; a(0) = 1, a(1) = 8.
+* [A171479](http://oeis.org/A171479) ([L09 program](A171479.asm)): a(n) = 6*a(n-1)-8*a(n-2)+3 for n > 1; a(0) = 1, a(1) = 8.
 * [A171480](http://oeis.org/A171480) ([L17 program](A171480.asm)): a(n) = 6*a(n-1) - 8*a(n-2) + 4 for n > 1; a(0) = 1, a(1) = 9.
 * [A171494](http://oeis.org/A171494) ([L08 program](A171494.asm)): a(n) = 2*a(n-1) for n > 1; a(0) = 6, a(1) = 16.
 * [A171495](http://oeis.org/A171495) ([L05 program](A171495.asm)): a(n) = 3*a(n-1)+4 for n > 0; a(0) = 6.

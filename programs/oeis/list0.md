@@ -4383,7 +4383,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063208](http://oeis.org/A063208) ([L08 program](A063208.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 36 ).
 * [A063209](http://oeis.org/A063209) ([L17 program](A063209.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 41 ).
 * [A063210](http://oeis.org/A063210) ([L07 program](A063210.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 42 ).
-* [A063211](http://oeis.org/A063211) ([L17 program](A063211.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 43 ).
+* [A063211](http://oeis.org/A063211) ([L12 program](A063211.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 43 ).
 * [A063212](http://oeis.org/A063212) ([L16 program](A063212.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 44 ).
 * [A063213](http://oeis.org/A063213) ([L07 program](A063213.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0(45).
 * [A063216](http://oeis.org/A063216) ([L27 program](A063216.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 49 ).
@@ -4503,6 +4503,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065113](http://oeis.org/A065113) ([L14 program](A065113.asm)): Sum of the squares of the n-th and the (n+1)st triangular numbers (A000217) is a perfect square.
 * [A065164](http://oeis.org/A065164) ([L14 program](A065164.asm)): Permutation t->t+1 of Z, folded to N.
 * [A065168](http://oeis.org/A065168) ([L13 program](A065168.asm)): Permutation t->t-1 of Z, folded to N.
+* [A065176](http://oeis.org/A065176) ([L11 program](A065176.asm)): Site swap sequence associated with the permutation A065174 of Z.
 * [A065186](http://oeis.org/A065186) ([L08 program](A065186.asm)): a(1)=1, a(2)=3, a(3)=5, a(4)=2, a(5)=4; for n > 5, a(n) = a(n-5) + 5.
 * [A065187](http://oeis.org/A065187) ([L09 program](A065187.asm)): "Greedy Dragons" permutation of the natural numbers, inverse of A065186.
 * [A065190](http://oeis.org/A065190) ([L06 program](A065190.asm)): Self-inverse permutation of natural numbers: 1 is fixed, followed by infinite number of adjacent transpositions (n n+1).

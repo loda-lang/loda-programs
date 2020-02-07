@@ -363,7 +363,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212837](http://oeis.org/A212837) ([L43 program](A212837.asm)): Number of 0..n arrays of length 4 with 0 never adjacent to n.
 * [A212838](http://oeis.org/A212838) ([L63 program](A212838.asm)): Number of 0..n arrays of length 5 with 0 never adjacent to n.
 * [A212839](http://oeis.org/A212839) ([L74 program](A212839.asm)): Number of 0..n arrays of length 6 with 0 never adjacent to n.
-* [A212892](http://oeis.org/A212892) ([L06 program](A212892.asm)): a(n) = n^4/8 if n is even, a(n) = (n^2-1)^2/8 if n is odd.
+* [A212892](http://oeis.org/A212892) ([L05 program](A212892.asm)): a(n) = n^4/8 if n is even, a(n) = (n^2-1)^2/8 if n is odd.
 * [A212893](http://oeis.org/A212893) ([L16 program](A212893.asm)): Number of quadruples (w,x,y,z) with all terms in {0,...,n} such that w-x, x-y, and y-z all have the same parity.
 * [A212894](http://oeis.org/A212894) ([L19 program](A212894.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)=1.
 * [A212959](http://oeis.org/A212959) ([L10 program](A212959.asm)): Number of (w,x,y) such that w,x,y are all in {0,...,n} and |w-x| = |x-y|.
@@ -1251,6 +1251,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248230](http://oeis.org/A248230) ([L46 program](A248230.asm)): a(n) = floor(1/(zeta(4) - Sum_{h=1..n} 1/h^4)).
 * [A248231](http://oeis.org/A248231) ([L16 program](A248231.asm)): Least k such that zeta(5) - sum{1/h^5, h = 1..k} < 1/n^4.
 * [A248333](http://oeis.org/A248333) ([L10 program](A248333.asm)): Number of unit squares enclosed by n lattice points in and along the first quadrant of the coordinate plane starting from (0,0) and moving along each square gnomon starting on the y-axis and ending on the x-axis.
+* [A248337](http://oeis.org/A248337) ([L11 program](A248337.asm)): 6^n - 4^n.
 * [A248339](http://oeis.org/A248339) ([L03 program](A248339.asm)): a(n) = 22*n+19.
 * [A248375](http://oeis.org/A248375) ([L04 program](A248375.asm)): a(n) = floor(9*n/8).
 * [A248427](http://oeis.org/A248427) ([L16 program](A248427.asm)): Circumference of the (n,n)-knight graph.
@@ -2244,7 +2245,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277979](http://oeis.org/A277979) ([L06 program](A277979.asm)): a(n) = 4*n^2 + 18*n.
 * [A277980](http://oeis.org/A277980) ([L07 program](A277980.asm)): a(n) = 12*n^2 + 18*n.
 * [A277984](http://oeis.org/A277984) ([L15 program](A277984.asm)): a(n) = 6*n*(9*n-5).
-* [A277985](http://oeis.org/A277985) ([L16 program](A277985.asm)): a(n) = 3*(9*n - 1)*(3*n - 2).
+* [A277985](http://oeis.org/A277985) ([L12 program](A277985.asm)): a(n) = 3*(9*n - 1)*(3*n - 2).
 * [A277988](http://oeis.org/A277988) ([L05 program](A277988.asm)): a(n) = 352*2^n + 34.
 * [A277989](http://oeis.org/A277989) ([L26 program](A277989.asm)): a(n) = 424*2^n + 37.
 * [A277990](http://oeis.org/A277990) ([L07 program](A277990.asm)): a(n) = 54*n^2 + 6*n.
@@ -2649,7 +2650,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A295317](http://oeis.org/A295317) ([L09 program](A295317.asm)): Sum of the products of the smaller and larger parts of the partitions of n into two distinct parts with the smaller part odd.
 * [A295318](http://oeis.org/A295318) ([L12 program](A295318.asm)): Sum of the products of the smaller and larger parts of the partitions of n into two distinct parts with the smaller part even.
 * [A295340](http://oeis.org/A295340) ([L09 program](A295340.asm)): Numbers congruent to 11 or 13 mod 15.
-* [A295473](http://oeis.org/A295473) ([L08 program](A295473.asm)): a(0) = 0; for n>0, a(n) = 9*n!.
+* [A295473](http://oeis.org/A295473) ([L07 program](A295473.asm)): a(0) = 0; for n>0, a(n) = 9*n!.
 * [A295514](http://oeis.org/A295514) ([L09 program](A295514.asm)): a(n) = 2^bil(n) - bil(n) where bil(0) = 0 and bil(n) = floor(log_2(n)) + 1 for n > 0.
 * [A295643](http://oeis.org/A295643) ([L03 program](A295643.asm)): Squares repeated 4 times; a(n) = (floor(n/4))^2.
 * [A295774](http://oeis.org/A295774) ([L03 program](A295774.asm)): a(n) is the minimum size of a restricted planar additive basis for the square [0,2n]^2.
