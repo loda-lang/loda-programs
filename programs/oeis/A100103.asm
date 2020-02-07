@@ -5,6 +5,3 @@ mul $0,2
 mov $1,2
 pow $1,$0
 sub $1,$0
-lpb $0,1
-  div $1,$2
-lpe
