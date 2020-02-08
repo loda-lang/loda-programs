@@ -4,14 +4,9 @@
 mov $3,1
 mov $1,$3
 mov $2,4
-mul $3,2
 pow $2,$0
 lpb $0,1
-  mov $3,3
   sub $0,1
   add $2,$1
   mov $1,$2
 lpe
-pow $3,5
-mod $3,4
-div $3,$1

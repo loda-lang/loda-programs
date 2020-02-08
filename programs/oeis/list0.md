@@ -4227,6 +4227,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061094](http://oeis.org/A061094) ([L12 program](A061094.asm)): The alternating group A_n contains an element x which is not conjugate to its inverse (equivalently not all the entries in the character table of A_n are real numbers).
 * [A061099](http://oeis.org/A061099) ([L19 program](A061099.asm)): Squares with digital root 1.
 * [A061100](http://oeis.org/A061100) ([L25 program](A061100.asm)): Squares with digital root 4.
+* [A061101](http://oeis.org/A061101) ([L13 program](A061101.asm)): Squares with digital root 7.
 * [A061102](http://oeis.org/A061102) ([L04 program](A061102.asm)): Duplicate of A016779.
 * [A061103](http://oeis.org/A061103) ([L04 program](A061103.asm)): Duplicate of A016791.
 * [A061165](http://oeis.org/A061165) ([L23 program](A061165.asm)): Polynomial extrapolation of 2, 3, 5, 7, 11.
@@ -4854,6 +4855,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070582](http://oeis.org/A070582) ([L45 program](A070582.asm)): n^4 mod 39.
 * [A070583](http://oeis.org/A070583) ([L16 program](A070583.asm)): n^4 mod 40.
 * [A070585](http://oeis.org/A070585) ([L13 program](A070585.asm)): n^4 mod 42.
+* [A070586](http://oeis.org/A070586) ([L07 program](A070586.asm)): a(n) = n^4 mod 43.
 * [A070587](http://oeis.org/A070587) ([L28 program](A070587.asm)): n^4 mod 44.
 * [A070591](http://oeis.org/A070591) ([L12 program](A070591.asm)): n^4 mod 48.
 * [A070593](http://oeis.org/A070593) ([L03 program](A070593.asm)): a(n) = n^5 mod 7.
@@ -5081,6 +5083,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A074605](http://oeis.org/A074605) ([L05 program](A074605.asm)): a(n) = 3^n + 4^n.
 * [A074606](http://oeis.org/A074606) ([L06 program](A074606.asm)): a(n) = 3^n + 5^n.
 * [A074607](http://oeis.org/A074607) ([L07 program](A074607.asm)): a(n) = 3^n + 6^n.
+* [A074616](http://oeis.org/A074616) ([L07 program](A074616.asm)): a(n) = 5^n + 7^n.
 * [A074701](http://oeis.org/A074701) ([L20 program](A074701.asm)): Numbers n such that n = sum( d dividing phi(n), mu(phi(d))*phi(n)/d ).
 * [A074724](http://oeis.org/A074724) ([L06 program](A074724.asm)): Largest power of 3 dividing F(4n) where F(k) is the k-th Fibonacci number.
 * [A074742](http://oeis.org/A074742) ([L08 program](A074742.asm)): a(n) = (n^3 + 6n^2 - n + 12)/6.
@@ -5381,7 +5384,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081107](http://oeis.org/A081107) ([L19 program](A081107.asm)): 7th binomial transform of (1,1,0,0,0,0,.......).
 * [A081108](http://oeis.org/A081108) ([L09 program](A081108.asm)): 8th binomial transform of (1,1,0,0,0,0,.........).
 * [A081123](http://oeis.org/A081123) ([L03 program](A081123.asm)): a(n) = floor(n/2)!.
-* [A081136](http://oeis.org/A081136) ([L10 program](A081136.asm)): 6th binomial transform of (0,0,1,0,0,0,........).
 * [A081168](http://oeis.org/A081168) ([L44 program](A081168.asm)): Differences of Beatty sequence for square root of 10.
 * [A081186](http://oeis.org/A081186) ([L08 program](A081186.asm)): 4th binomial transform of (1,0,1,0,1,...), A059841.
 * [A081193](http://oeis.org/A081193) ([L15 program](A081193.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n>1, a(0)=1, a(1)=9.
@@ -5403,6 +5405,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081294](http://oeis.org/A081294) ([L05 program](A081294.asm)): Expansion of (1-2*x)/(1-4*x).
 * [A081340](http://oeis.org/A081340) ([L08 program](A081340.asm)): (5^n+(-1)^n)/2.
 * [A081341](http://oeis.org/A081341) ([L06 program](A081341.asm)): Expansion of exp(3*x)*cosh(3*x).
+* [A081342](http://oeis.org/A081342) ([L09 program](A081342.asm)): a(n) = (8^n + 2^n)/2.
 * [A081345](http://oeis.org/A081345) ([L08 program](A081345.asm)): First row in maze arrangement of natural numbers A081344.
 * [A081346](http://oeis.org/A081346) ([L11 program](A081346.asm)): First column in maze arrangement of natural numbers A081344.
 * [A081347](http://oeis.org/A081347) ([L10 program](A081347.asm)): First column in maze arrangement of natural numbers.
