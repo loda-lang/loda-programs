@@ -5,10 +5,4 @@ gcd $1,5
 pow $1,$0
 mul $1,2
 add $1,$0
-gcd $2,4
-fac $2
-lpb $0,1
-  pow $1,$2
-  div $0,$1
-lpe
 add $1,1
