@@ -2027,7 +2027,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144437](http://oeis.org/A144437) ([L04 program](A144437.asm)): Period 3: repeat [3, 3, 1].
 * [A144449](http://oeis.org/A144449) ([L15 program](A144449.asm)): a(n) = 36*n^2 + 60*n + 16.
 * [A144459](http://oeis.org/A144459) ([L07 program](A144459.asm)): a(n) = (3*n+1)*(5*n+1).
-* [A144468](http://oeis.org/A144468) ([L08 program](A144468.asm)): Final digit of multiples of 7.
+* [A144468](http://oeis.org/A144468) ([L05 program](A144468.asm)): Final digit of multiples of 7.
 * [A144478](http://oeis.org/A144478) ([L15 program](A144478.asm)): Period 9: repeat 1,0,5,7,6,2,4,3,8.
 * [A144479](http://oeis.org/A144479) ([L10 program](A144479.asm)): a(0)=1, a(1)=3, a(n) = 8*a(n-1) - a(n-2).
 * [A144481](http://oeis.org/A144481) ([L14 program](A144481.asm)): A078371(n-1) mod 9.
@@ -3579,7 +3579,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169610](http://oeis.org/A169610) ([L23 program](A169610.asm)): Numbers that are congruent to {5, 30} mod 37.
 * [A169622](http://oeis.org/A169622) ([L11 program](A169622.asm)): a(n) = a(n-1) + Fibonacci(n), a(1)=5.
 * [A169634](http://oeis.org/A169634) ([L04 program](A169634.asm)): a(n) = 3*7^n.
-* [A169642](http://oeis.org/A169642) ([L16 program](A169642.asm)): a(n) = A005408(n) * A022998(n).
+* [A169642](http://oeis.org/A169642) ([L10 program](A169642.asm)): a(n) = A005408(n) * A022998(n).
 * [A169650](http://oeis.org/A169650) ([L26 program](A169650.asm)): a(1) = 3; thereafter a(n) = 3*a(n-1)+2^n-6.
 * [A169672](http://oeis.org/A169672) ([L23 program](A169672.asm)): Lexicographically earliest de Bruijn sequence for n = 5 and k = 2.
 * [A169675](http://oeis.org/A169675) ([L11 program](A169675.asm)): Lexicographically earliest de Bruijn sequence for n = 3 and k = 2.
@@ -4963,6 +4963,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198276](http://oeis.org/A198276) ([L07 program](A198276.asm)): 19*2^n-1.
 * [A198392](http://oeis.org/A198392) ([L15 program](A198392.asm)): a(n) = (6*n*(3*n+7)+(2*n+13)*(-1)^n+3)/16 + 1.
 * [A198396](http://oeis.org/A198396) ([L06 program](A198396.asm)): a(n) = 6^n-6*n.
+* [A198398](http://oeis.org/A198398) ([L10 program](A198398.asm)): 8^n - 8*n.
 * [A198410](http://oeis.org/A198410) ([L16 program](A198410.asm)): ((3^(n-1) + 1)^3 -1)/3^n.
 * [A198442](http://oeis.org/A198442) ([L05 program](A198442.asm)): Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,0).
 * [A198480](http://oeis.org/A198480) ([L05 program](A198480.asm)): 2*7^n - 1.

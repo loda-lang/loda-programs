@@ -12,7 +12,6 @@ lpb $0,1
   gcd $1,$2
   pow $2,2
   mul $2,$1
-  gcd $5,5
   add $1,$2
   mul $0,$4
 lpe

@@ -1560,7 +1560,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A020988](http://oeis.org/A020988) ([L05 program](A020988.asm)): a(n) = (2/3)*(4^n-1).
 * [A020989](http://oeis.org/A020989) ([L07 program](A020989.asm)): a(n) = (5*4^n - 2)/3.
 * [A021001](http://oeis.org/A021001) ([L15 program](A021001.asm)): Pisot sequence P(2,9).
-* [A021003](http://oeis.org/A021003) ([L05 program](A021003.asm)): a(n) = (n/2)*(n^4+1).
+* [A021003](http://oeis.org/A021003) ([L04 program](A021003.asm)): a(n) = (n/2)*(n^4+1).
 * [A021006](http://oeis.org/A021006) ([L18 program](A021006.asm)): Pisot sequence P(4,11), a(0)=4, a(1)=11, a(n+1) is the nearest integer to a(n)^2/a(n-1). Evidently satisfies a(n) = 2*a(n-1)+2*a(n-2).
 * [A021015](http://oeis.org/A021015) ([L03 program](A021015.asm)): Duplicate of A010680.
 * [A021016](http://oeis.org/A021016) ([L08 program](A021016.asm)): Decimal expansion of 1/12.
@@ -2786,7 +2786,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040210](http://oeis.org/A040210) ([L04 program](A040210.asm)): Continued fraction for sqrt(226).
 * [A040211](http://oeis.org/A040211) ([L05 program](A040211.asm)): Continued fraction for sqrt(227).
 * [A040212](http://oeis.org/A040212) ([L10 program](A040212.asm)): Continued fraction for sqrt(228).
-* [A040214](http://oeis.org/A040214) ([L30 program](A040214.asm)): Continued fraction for sqrt(230).
+* [A040214](http://oeis.org/A040214) ([L17 program](A040214.asm)): Continued fraction for sqrt(230).
 * [A040215](http://oeis.org/A040215) ([L25 program](A040215.asm)): Continued fraction for sqrt(231).
 * [A040219](http://oeis.org/A040219) ([L12 program](A040219.asm)): Continued fraction for sqrt(235).
 * [A040224](http://oeis.org/A040224) ([L16 program](A040224.asm)): Continued fraction for sqrt(240).
@@ -2841,7 +2841,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040575](http://oeis.org/A040575) ([L13 program](A040575.asm)): Continued fraction for sqrt(600).
 * [A040600](http://oeis.org/A040600) ([L05 program](A040600.asm)): Continued fraction for sqrt(626).
 * [A040601](http://oeis.org/A040601) ([L08 program](A040601.asm)): Continued fraction for sqrt(627).
-* [A040604](http://oeis.org/A040604) ([L19 program](A040604.asm)): Continued fraction for sqrt(630).
+* [A040604](http://oeis.org/A040604) ([L17 program](A040604.asm)): Continued fraction for sqrt(630).
 * [A040609](http://oeis.org/A040609) ([L10 program](A040609.asm)): Continued fraction for sqrt(635).
 * [A040650](http://oeis.org/A040650) ([L04 program](A040650.asm)): Continued fraction for sqrt(677).
 * [A040651](http://oeis.org/A040651) ([L07 program](A040651.asm)): Continued fraction for sqrt(678).
@@ -3879,7 +3879,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054777](http://oeis.org/A054777) ([L18 program](A054777.asm)): a(n) = 4*n*(4*n-1)*(4*n-2)*(4*n-3).
 * [A054861](http://oeis.org/A054861) ([L04 program](A054861.asm)): Highest power of 3 dividing n!.
 * [A054879](http://oeis.org/A054879) ([L05 program](A054879.asm)): Closed walks of length 2n along the edges of a cube based at a vertex.
-* [A054880](http://oeis.org/A054880) ([L11 program](A054880.asm)): a(n) = 3*(9^n - 1)/4.
+* [A054880](http://oeis.org/A054880) ([L05 program](A054880.asm)): a(n) = 3*(9^n - 1)/4.
 * [A054886](http://oeis.org/A054886) ([L12 program](A054886.asm)): Layer counting sequence for hyperbolic tessellation by cuspidal triangles of angles (Pi/3,Pi/3,0) (this is the classical modular tessellation).
 * [A054888](http://oeis.org/A054888) ([L08 program](A054888.asm)): Layer counting sequence for hyperbolic tessellation by regular pentagons of angle Pi/2.
 * [A054890](http://oeis.org/A054890) ([L18 program](A054890.asm)): Layer counting sequence for hyperbolic tessellation by regular heptagons of angle Pi/3.
@@ -5381,6 +5381,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081107](http://oeis.org/A081107) ([L19 program](A081107.asm)): 7th binomial transform of (1,1,0,0,0,0,.......).
 * [A081108](http://oeis.org/A081108) ([L09 program](A081108.asm)): 8th binomial transform of (1,1,0,0,0,0,.........).
 * [A081123](http://oeis.org/A081123) ([L03 program](A081123.asm)): a(n) = floor(n/2)!.
+* [A081136](http://oeis.org/A081136) ([L10 program](A081136.asm)): 6th binomial transform of (0,0,1,0,0,0,........).
 * [A081168](http://oeis.org/A081168) ([L44 program](A081168.asm)): Differences of Beatty sequence for square root of 10.
 * [A081186](http://oeis.org/A081186) ([L08 program](A081186.asm)): 4th binomial transform of (1,0,1,0,1,...), A059841.
 * [A081193](http://oeis.org/A081193) ([L15 program](A081193.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n>1, a(0)=1, a(1)=9.
@@ -5714,7 +5715,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086858](http://oeis.org/A086858) ([L19 program](A086858.asm)): Let f(n) be the inverse of the function g(x) = x^x. Then a(n) = floor(f(n)).
 * [A086893](http://oeis.org/A086893) ([L13 program](A086893.asm)): a(n) is the index of F(n+1) at the unique occurrence of the ordered pair of reversed consecutive terms (F(n+1),F(n)) in Stern's diatomic sequence A002487, where F(k) denotes the k-th term of the Fibonacci sequence A000045.
 * [A086950](http://oeis.org/A086950) ([L12 program](A086950.asm)): Binomial transform of decagonal numbers A001107.
-* [A086952](http://oeis.org/A086952) ([L12 program](A086952.asm)): n^2*4^n/4.
+* [A086952](http://oeis.org/A086952) ([L09 program](A086952.asm)): n^2*4^n/4.
 * [A086953](http://oeis.org/A086953) ([L11 program](A086953.asm)): Binomial transform of (-1)^mod(n,3) (A257075).
 * [A086955](http://oeis.org/A086955) ([L11 program](A086955.asm)): a(n) = n^2 + 2*n + 2 - (-1)^n.
 * [A086970](http://oeis.org/A086970) ([L12 program](A086970.asm)): Fix 1, then exchange the subsequent odd numbers in pairs.
@@ -5801,7 +5802,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088837](http://oeis.org/A088837) ([L09 program](A088837.asm)): Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 * [A088838](http://oeis.org/A088838) ([L12 program](A088838.asm)): Numerator of the quotient sigma(3n)/sigma(n).
 * [A088841](http://oeis.org/A088841) ([L11 program](A088841.asm)): Numerator of quotient=sigma[7n]/sigma[n].
-* [A088842](http://oeis.org/A088842) ([L12 program](A088842.asm)): Denominator of quotient=sigma(7n)/sigma(n).
+* [A088842](http://oeis.org/A088842) ([L07 program](A088842.asm)): Denominator of quotient=sigma(7n)/sigma(n).
 * [A088911](http://oeis.org/A088911) ([L03 program](A088911.asm)): Period 6: repeat [1, 1, 1, 0, 0, 0].
 * [A088917](http://oeis.org/A088917) ([L12 program](A088917.asm)): Central Delannoy numbers (mod 3); Characteristic function for Cantor set.
 * [A088921](http://oeis.org/A088921) ([L16 program](A088921.asm)): The number of 321- and 2143-avoiding permutations of length n.

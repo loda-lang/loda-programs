@@ -1876,7 +1876,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268292](http://oeis.org/A268292) ([L06 program](A268292.asm)): a(n) is the total number of isolated 1's at the boundary between n-th and (n-1)-th iterations in the pattern of A267489.
 * [A268315](http://oeis.org/A268315) ([L16 program](A268315.asm)): Decimal expansion of 256/27.
 * [A268351](http://oeis.org/A268351) ([L09 program](A268351.asm)): a(n) = 3*n*(9*n - 1)/2.
-* [A268354](http://oeis.org/A268354) ([L09 program](A268354.asm)): Highest power of 7 dividing n.
+* [A268354](http://oeis.org/A268354) ([L04 program](A268354.asm)): Highest power of 7 dividing n.
 * [A268357](http://oeis.org/A268357) ([L10 program](A268357.asm)): Highest power of 11 dividing n.
 * [A268414](http://oeis.org/A268414) ([L20 program](A268414.asm)): a(n) = 5*a(n - 1) - 2*n for n>0, a(0) = 1.
 * [A268428](http://oeis.org/A268428) ([L19 program](A268428.asm)): a(n) = (3*(n^2+n+99)+cos(Pi*n/2)-sin(Pi*n/2))/2.

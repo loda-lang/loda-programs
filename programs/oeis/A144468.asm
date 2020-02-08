@@ -3,9 +3,6 @@
 
 mov $1,$0
 mul $1,7
-lpb $0,1
-  div $3,$4
-lpe
 gcd $2,2
 add $2,8
 mod $1,$2
