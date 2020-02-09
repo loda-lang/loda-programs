@@ -10,7 +10,4 @@ mov $3,6
 mul $1,$3
 add $4,3
 gcd $5,$4
-lpb $0,1
-  mul $0,5
-lpe
 div $1,$5

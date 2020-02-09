@@ -428,7 +428,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108928](http://oeis.org/A108928) ([L08 program](A108928.asm)): a(n) = 8*n^2 - 3.
 * [A108981](http://oeis.org/A108981) ([L06 program](A108981.asm)): a(n) = 3a(n-1) + 4a(n-2), a(0) = 1, a(1) = 5.
 * [A108982](http://oeis.org/A108982) ([L25 program](A108982.asm)): Inverse binomial of A003949.
-* [A108983](http://oeis.org/A108983) ([L08 program](A108983.asm)): Inverse binomial transform of A003950.
 * [A108984](http://oeis.org/A108984) ([L13 program](A108984.asm)): Inverse binomial transform of A003951.
 * [A109007](http://oeis.org/A109007) ([L02 program](A109007.asm)): a(n) = gcd(n,3).
 * [A109008](http://oeis.org/A109008) ([L02 program](A109008.asm)): a(n) = gcd(n,4).
@@ -3578,7 +3577,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169598](http://oeis.org/A169598) ([L10 program](A169598.asm)): Numbers that are congruent to {3,18} mod 23.
 * [A169599](http://oeis.org/A169599) ([L16 program](A169599.asm)): Numbers that are congruent to {4, 23} mod 29.
 * [A169600](http://oeis.org/A169600) ([L13 program](A169600.asm)): Numbers that are congruent to {4, 25} mod 31.
-* [A169604](http://oeis.org/A169604) ([L05 program](A169604.asm)): a(n) = 3*6^n.
+* [A169604](http://oeis.org/A169604) ([L03 program](A169604.asm)): a(n) = 3*6^n.
 * [A169607](http://oeis.org/A169607) ([L10 program](A169607.asm)): 7*A000330(n).
 * [A169609](http://oeis.org/A169609) ([L03 program](A169609.asm)): Period 3: repeat [1, 3, 3].
 * [A169610](http://oeis.org/A169610) ([L23 program](A169610.asm)): Numbers that are congruent to {5, 30} mod 37.
@@ -4058,7 +4057,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178144](http://oeis.org/A178144) ([L30 program](A178144.asm)): Sum of divisors d of n which are d=2, 3 or 5.
 * [A178146](http://oeis.org/A178146) ([L30 program](A178146.asm)): a(n) is the number of distinct divisors d of n of the form d=2,3 or 5
 * [A178147](http://oeis.org/A178147) ([L30 program](A178147.asm)): Sum of squares d^2 of distinct divisors of n, d in {2, 3, 5}.
-* [A178207](http://oeis.org/A178207) ([L21 program](A178207.asm)): a(n) = 4*n - 2*A000120(n) + 1 where A000120(n) = number of nonzero digits in the binary representation of n.
+* [A178207](http://oeis.org/A178207) ([L06 program](A178207.asm)): a(n) = 4*n - 2*A000120(n) + 1 where A000120(n) = number of nonzero digits in the binary representation of n.
 * [A178208](http://oeis.org/A178208) ([L15 program](A178208.asm)): Number of ways to choose three points in an (n X n)-grid (or geoplane).
 * [A178218](http://oeis.org/A178218) ([L07 program](A178218.asm)): Numbers of the form 2k^2-2k+1 or 2k^2-1.
 * [A178312](http://oeis.org/A178312) ([L06 program](A178312.asm)): a(n) = n * T(ceiling(n/2)), where T are the triangular numbers, A000217.
