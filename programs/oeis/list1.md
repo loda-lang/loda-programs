@@ -442,7 +442,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109044](http://oeis.org/A109044) ([L09 program](A109044.asm)): a(n) = lcm(n,3).
 * [A109045](http://oeis.org/A109045) ([L04 program](A109045.asm)): a(n) = lcm(n,4).
 * [A109046](http://oeis.org/A109046) ([L05 program](A109046.asm)): a(n) = lcm(n, 5).
-* [A109047](http://oeis.org/A109047) ([L10 program](A109047.asm)): a(n) = lcm(n, 6).
+* [A109047](http://oeis.org/A109047) ([L08 program](A109047.asm)): a(n) = lcm(n, 6).
 * [A109048](http://oeis.org/A109048) ([L05 program](A109048.asm)): a(n) = lcm(n, 7).
 * [A109049](http://oeis.org/A109049) ([L07 program](A109049.asm)): a(n) = lcm(n, 8).
 * [A109052](http://oeis.org/A109052) ([L10 program](A109052.asm)): a(n) = lcm(n,11).
@@ -455,6 +455,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109118](http://oeis.org/A109118) ([L67 program](A109118.asm)): a(n) = 2*(n^2 + 3*n + 1)^3.
 * [A109161](http://oeis.org/A109161) ([L15 program](A109161.asm)): n: R^n real coefficient for exceptional Cartan groups as a triangular sequence: G2->R^5; F4->R^15; E6->R^16; E7->R^27; E7.5->R^28; E8->R^29; ...
 * [A109164](http://oeis.org/A109164) ([L08 program](A109164.asm)): a(n) = 4*a(n-1) - 4*a(n-2) + a(n-3), n >= 3; a(0)=1, a(1)=6, a(2)=20.
+* [A109168](http://oeis.org/A109168) ([L12 program](A109168.asm)): Continued fraction expansion of the constant x (A109169) such that the continued fraction of 2*x yields the continued fraction of x interleaved with the positive even numbers.
 * [A109232](http://oeis.org/A109232) ([L18 program](A109232.asm)): Floor(n*(e^2+1)/(e-1)^2).
 * [A109234](http://oeis.org/A109234) ([L12 program](A109234.asm)): Floor(n*sinh(1)).
 * [A109237](http://oeis.org/A109237) ([L10 program](A109237.asm)): Floor(n*coth(1)).
@@ -846,7 +847,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120413](http://oeis.org/A120413) ([L06 program](A120413.asm)): Largest even number strictly less than n^2.
 * [A120437](http://oeis.org/A120437) ([L11 program](A120437.asm)): Differences of A037314 (sum of base-3 digits of n = sum of base-9 digits of n).
 * [A120462](http://oeis.org/A120462) ([L10 program](A120462.asm)): Expansion of -2*x*(-3-2*x+4*x^2) / ((x-1)*(2*x+1)*(2*x-1)*(1+x)).
-* [A120471](http://oeis.org/A120471) ([L12 program](A120471.asm)): 6 *A015518(n).
+* [A120471](http://oeis.org/A120471) ([L09 program](A120471.asm)): 6 *A015518(n).
 * [A120478](http://oeis.org/A120478) ([L20 program](A120478.asm)): Binomial(n+6,5)-binomial(n,5).
 * [A120511](http://oeis.org/A120511) ([L20 program](A120511.asm)): a(n) = min{j>0 : A006949(j) = n}.
 * [A120512](http://oeis.org/A120512) ([L20 program](A120512.asm)): a(n) = min{j : A120501(j) = n}.
@@ -1848,7 +1849,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140063](http://oeis.org/A140063) ([L07 program](A140063.asm)): Binomial transform of [1, 3, 7, 0, 0, 0, ...].
 * [A140064](http://oeis.org/A140064) ([L08 program](A140064.asm)): a(n) = (9*n^2 - 23*n + 16)/2.
 * [A140065](http://oeis.org/A140065) ([L07 program](A140065.asm)): a(n) = (7*n^2 - 17*n + 12)/2.
-* [A140066](http://oeis.org/A140066) ([L07 program](A140066.asm)): a(n) = (5*n^2 - 11*n + 8)/2.
+* [A140066](http://oeis.org/A140066) ([L06 program](A140066.asm)): a(n) = (5*n^2 - 11*n + 8)/2.
 * [A140081](http://oeis.org/A140081) ([L04 program](A140081.asm)): Period 4: repeat [0, 1, 1, 2].
 * [A140085](http://oeis.org/A140085) ([L14 program](A140085.asm)): Period 8: repeat [0,1,1,2,1,2,2,3].
 * [A140090](http://oeis.org/A140090) ([L06 program](A140090.asm)): a(n) = n*(3*n+7)/2.
@@ -4671,7 +4672,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191296](http://oeis.org/A191296) ([L20 program](A191296.asm)): Least k such that k-1 and k+1 in binary representation have same number n of 0's as 1's.
 * [A191341](http://oeis.org/A191341) ([L10 program](A191341.asm)): a(n) = 4^n - 2*2^n + 3.
 * [A191413](http://oeis.org/A191413) ([L07 program](A191413.asm)): a(n) = 3*n^2 - 2*n + 7.
-* [A191484](http://oeis.org/A191484) ([L14 program](A191484.asm)): Number of compositions of even natural numbers into 5 parts <= n.
+* [A191484](http://oeis.org/A191484) ([L10 program](A191484.asm)): Number of compositions of even natural numbers into 5 parts <= n.
 * [A191489](http://oeis.org/A191489) ([L11 program](A191489.asm)): Number of compositions of even natural numbers into 6 parts <= n.
 * [A191494](http://oeis.org/A191494) ([L10 program](A191494.asm)): Number of compositions of even natural numbers in 7 parts <= n.
 * [A191495](http://oeis.org/A191495) ([L13 program](A191495.asm)): Number of compositions of even natural numbers into 8 parts <= n.

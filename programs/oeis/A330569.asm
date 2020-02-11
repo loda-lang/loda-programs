@@ -9,10 +9,6 @@ mov $3,5
 add $1,$3
 pow $1,4
 add $2,$0
-add $0,1
 gcd $1,$2
-lpb $0,1
-  pow $0,2
-lpe
 div $1,2
 add $1,1

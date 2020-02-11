@@ -499,7 +499,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005448](http://oeis.org/A005448) ([L06 program](A005448.asm)): Centered triangular numbers: a(n) = 3n(n-1)/2 + 1.
 * [A005449](http://oeis.org/A005449) ([L06 program](A005449.asm)): Second pentagonal numbers: a(n) = n*(3*n + 1)/2.
 * [A005475](http://oeis.org/A005475) ([L05 program](A005475.asm)): a(n) = n*(5*n+1)/2.
-* [A005476](http://oeis.org/A005476) ([L06 program](A005476.asm)): a(n) = n*(5*n - 1)/2.
+* [A005476](http://oeis.org/A005476) ([L05 program](A005476.asm)): a(n) = n*(5*n - 1)/2.
 * [A005491](http://oeis.org/A005491) ([L09 program](A005491.asm)): n^3 + 3n + 1.
 * [A005492](http://oeis.org/A005492) ([L25 program](A005492.asm)): From expansion of falling factorials.
 * [A005563](http://oeis.org/A005563) ([L03 program](A005563.asm)): a(n) = n*(n+2) = (n+1)^2 - 1.
@@ -1648,7 +1648,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021221](http://oeis.org/A021221) ([L32 program](A021221.asm)): Decimal expansion of 1/217.
 * [A021223](http://oeis.org/A021223) ([L13 program](A021223.asm)): Decimal expansion of 1/219.
 * [A021225](http://oeis.org/A021225) ([L50 program](A021225.asm)): Decimal expansion of 1/221.
-* [A021226](http://oeis.org/A021226) ([L20 program](A021226.asm)): Decimal expansion of 1/222.
+* [A021226](http://oeis.org/A021226) ([L11 program](A021226.asm)): Decimal expansion of 1/222.
 * [A021235](http://oeis.org/A021235) ([L11 program](A021235.asm)): Decimal expansion of 1/231.
 * [A021241](http://oeis.org/A021241) ([L17 program](A021241.asm)): Decimal expansion of 1/237.
 * [A021243](http://oeis.org/A021243) ([L12 program](A021243.asm)): Decimal expansion of 1/239.
@@ -4201,7 +4201,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060647](http://oeis.org/A060647) ([L09 program](A060647.asm)): Number of alpha-beta evaluations in a tree of depth n and branching factor b=3.
 * [A060762](http://oeis.org/A060762) ([L07 program](A060762.asm)): Number of conjugacy classes (the same as the number of irreducible representations) in the dihedral group with 2n elements.
 * [A060783](http://oeis.org/A060783) ([L11 program](A060783.asm)): Number of conics which pass through 3 points and are bitangent to a general curve of order n.
-* [A060785](http://oeis.org/A060785) ([L08 program](A060785.asm)): a(n) = 3*(n-2)*(5*n -11).
+* [A060785](http://oeis.org/A060785) ([L06 program](A060785.asm)): a(n) = 3*(n-2)*(5*n -11).
 * [A060787](http://oeis.org/A060787) ([L07 program](A060787.asm)): a(n) = 18*(n-2)*(2*n-5).
 * [A060788](http://oeis.org/A060788) ([L30 program](A060788.asm)): a(n) = 9*(n-2)^2 * (n^2 - 2*n - 1).
 * [A060789](http://oeis.org/A060789) ([L05 program](A060789.asm)): a(n) = n / (gcd(n,2) * gcd(n,3)).
@@ -5440,7 +5440,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081583](http://oeis.org/A081583) ([L06 program](A081583.asm)): Third row of Pascal-(1,2,1) array A081577.
 * [A081585](http://oeis.org/A081585) ([L04 program](A081585.asm)): Third row of Pascal-(1,3,1) array A081578.
 * [A081586](http://oeis.org/A081586) ([L12 program](A081586.asm)): Fourth row of Pascal-(1,3,1) array A081578.
-* [A081587](http://oeis.org/A081587) ([L09 program](A081587.asm)): Third row of Pascal-(1,4,1) array A081579.
+* [A081587](http://oeis.org/A081587) ([L07 program](A081587.asm)): Third row of Pascal-(1,4,1) array A081579.
 * [A081589](http://oeis.org/A081589) ([L09 program](A081589.asm)): Third row of Pascal-(1,5,1) array A081580.
 * [A081590](http://oeis.org/A081590) ([L17 program](A081590.asm)): Fourth row of Pascal-(1,5,1) array A081580.
 * [A081591](http://oeis.org/A081591) ([L09 program](A081591.asm)): Third row of Pascal-(1,6,1) array A081581.
@@ -5666,7 +5666,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A085473](http://oeis.org/A085473) ([L05 program](A085473.asm)): a(n) = 6*n^2 + 3*n + 1.
 * [A085474](http://oeis.org/A085474) ([L12 program](A085474.asm)): C(2*n+4,4)-C(2*n,4).
 * [A085490](http://oeis.org/A085490) ([L07 program](A085490.asm)): Number of pairs with two different elements which can be obtained by selecting unique elements from two sets with n+1 and n^2 elements respectively and n common elements.
-* [A085537](http://oeis.org/A085537) ([L06 program](A085537.asm)): a(n) = n^4 - n^3.
+* [A085537](http://oeis.org/A085537) ([L04 program](A085537.asm)): a(n) = n^4 - n^3.
 * [A085538](http://oeis.org/A085538) ([L05 program](A085538.asm)): a(n) = n^5 - n^4.
 * [A085539](http://oeis.org/A085539) ([L07 program](A085539.asm)): a(n) = n^6 - n^5.
 * [A085540](http://oeis.org/A085540) ([L11 program](A085540.asm)): a(n) = n*(n+1)^3.
@@ -5708,8 +5708,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086570](http://oeis.org/A086570) ([L05 program](A086570.asm)): Expansion of (1 + 3x + 5x^2 + 7x^3...) / (1 - 2x + 3x^2 - 4x^3...).
 * [A086601](http://oeis.org/A086601) ([L06 program](A086601.asm)): Triangular numbers + 1 squared.
 * [A086602](http://oeis.org/A086602) ([L07 program](A086602.asm)): a(n) = A000217(A000217(n))-n^2.
-* [A086603](http://oeis.org/A086603) ([L08 program](A086603.asm)): n^3*3^(n-1).
-* [A086605](http://oeis.org/A086605) ([L19 program](A086605.asm)): 9n^3-18n^2+10n.
+* [A086603](http://oeis.org/A086603) ([L08 program](A086603.asm)): a(n) = n^3*3^(n-1).
+* [A086605](http://oeis.org/A086605) ([L19 program](A086605.asm)): a(n) = 9*n^3 - 18*n^2 + 10*n.
 * [A086640](http://oeis.org/A086640) ([L09 program](A086640.asm)): Arrange n^2 octagons that each have area 7 so that they leave (n-1)^2 square gaps each with area 2; a(n) is the total area of these polygons.
 * [A086652](http://oeis.org/A086652) ([L10 program](A086652.asm)): a(n) = A000225(n+3)-A052955(n).
 * [A086653](http://oeis.org/A086653) ([L08 program](A086653.asm)): 2^n + 3*n.
