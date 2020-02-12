@@ -3,10 +3,9 @@
 
 mov $2,1
 add $0,$2
-mov $1,$2
 mul $0,5
-pow $0,2
-add $1,$0
-sub $1,26
+mov $1,$0
+pow $1,2
+sub $1,25
 add $1,26
 mul $1,25
