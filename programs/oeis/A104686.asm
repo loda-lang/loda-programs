@@ -4,14 +4,7 @@
 mov $2,$0
 lpb $2,1
   add $1,$2
+  div $3,14
   sub $2,1
+  mod $1,6
 lpe
-add $3,$1
-mov $0,$3
-mov $2,1
-add $2,$0
-lpb $2,1
-  mov $1,$2
-  sub $2,6
-lpe
-sub $1,1
