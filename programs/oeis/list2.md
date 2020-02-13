@@ -749,7 +749,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227012](http://oeis.org/A227012) ([L37 program](A227012.asm)): a(n) = floor(M(g(n-1)+1, ..., g(n))), where M = harmonic mean and g(n) = n^3.
 * [A227013](http://oeis.org/A227013) ([L57 program](A227013.asm)): Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n^4.
 * [A227017](http://oeis.org/A227017) ([L13 program](A227017.asm)): Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n(3n-1)/2 = A000326(n).
-* [A227071](http://oeis.org/A227071) ([L11 program](A227071.asm)): Let s(m) = the set of k > 0 such that k^m ends with k. Then a(n) = least m such that s(m) = s(n).
+* [A227071](http://oeis.org/A227071) ([L08 program](A227071.asm)): Let s(m) = the set of k > 0 such that k^m ends with k. Then a(n) = least m such that s(m) = s(n).
 * [A227106](http://oeis.org/A227106) ([L10 program](A227106.asm)): Numerators of harmonic mean H(n,3), n >= 0.
 * [A227121](http://oeis.org/A227121) ([L15 program](A227121.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of zero, with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227148](http://oeis.org/A227148) ([L09 program](A227148.asm)): Numbers n for which the sum of digits is even when n is written in the factorial base (A007623).
@@ -2366,7 +2366,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A282854](http://oeis.org/A282854) ([L10 program](A282854.asm)): 34-gonal numbers: a(n) = n*(32*n-30)/2.
 * [A282939](http://oeis.org/A282939) ([L09 program](A282939.asm)): Maximum number of straight lines required to draw the boundary of any polyomino with n squares.
 * [A283070](http://oeis.org/A283070) ([L04 program](A283070.asm)): Sierpinski tetrahedron or tetrix numbers: a(n) = 2*4^n + 2.
-* [A283208](http://oeis.org/A283208) ([L07 program](A283208.asm)): Minimal exponent integer sequence associated with Vietoris sequence.
+* [A283208](http://oeis.org/A283208) ([L06 program](A283208.asm)): Minimal exponent integer sequence associated with Vietoris sequence.
 * [A283353](http://oeis.org/A283353) ([L14 program](A283353.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 619", based on the 5-celled von Neumann neighborhood.
 * [A283393](http://oeis.org/A283393) ([L07 program](A283393.asm)): a(n) = gcd(n^2-1, n^2+9).
 * [A283394](http://oeis.org/A283394) ([L07 program](A283394.asm)): a(n) = 3*n*(3*n + 7)/2 + 4.

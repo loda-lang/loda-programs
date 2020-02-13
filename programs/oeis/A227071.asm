@@ -4,9 +4,6 @@
 mov $2,$0
 mul $0,2
 sub $0,4
-lpb $0,1
-  pow $0,2
-lpe
 mov $1,5
 mul $1,$0
 pow $1,5

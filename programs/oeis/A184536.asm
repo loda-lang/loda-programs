@@ -8,9 +8,6 @@ mov $3,$0
 pow $0,$2
 mul $1,$0
 div $1,$3
-lpb $0,1
-  pow $1,5
-lpe
 mov $0,5
 sub $1,$0
 add $1,5

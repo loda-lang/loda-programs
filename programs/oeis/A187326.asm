@@ -8,6 +8,5 @@ gcd $3,4
 add $2,$3
 mov $1,6
 add $1,$2
-mod $0,2
 sub $1,10
 div $1,2

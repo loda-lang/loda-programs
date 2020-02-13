@@ -4,7 +4,6 @@
 mov $2,$0
 lpb $2,1
   add $1,$2
-  div $3,14
   sub $2,1
   mod $1,6
 lpe
