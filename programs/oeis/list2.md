@@ -1494,7 +1494,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257042](http://oeis.org/A257042) ([L09 program](A257042.asm)): a(n) = (3*n+7)*n^2.
 * [A257051](http://oeis.org/A257051) ([L14 program](A257051.asm)): a(n) = cpg(n, 3) + cpg(n, 4) + ... + cpg(n, n) where cpg(n, m) is the m-th n-th-order centered polygonal number.
 * [A257055](http://oeis.org/A257055) ([L11 program](A257055.asm)): a(n) = n*(n + 1)*(n^2 - n + 3)/6.
-* [A257063](http://oeis.org/A257063) ([L15 program](A257063.asm)): Number of length 1 1..(n+1) arrays with every leading partial sum divisible by 2 or 3.
+* [A257063](http://oeis.org/A257063) ([L13 program](A257063.asm)): Number of length 1 1..(n+1) arrays with every leading partial sum divisible by 2 or 3.
 * [A257083](http://oeis.org/A257083) ([L08 program](A257083.asm)): Partial sums of A257088.
 * [A257088](http://oeis.org/A257088) ([L08 program](A257088.asm)): a(2*n) = 4*n if n>0, a(2*n + 1) = 2*n + 1, a(0) = 1.
 * [A257113](http://oeis.org/A257113) ([L09 program](A257113.asm)): a(1) = 2, a(2) = 3; thereafter a(n) is the sum of all the previous terms.
@@ -1517,7 +1517,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257645](http://oeis.org/A257645) ([L03 program](A257645.asm)): a(n) = 15*n + 14.
 * [A257811](http://oeis.org/A257811) ([L19 program](A257811.asm)): Circle of fifths cycle (clockwise).
 * [A257844](http://oeis.org/A257844) ([L06 program](A257844.asm)): a(n) = floor(n/4) * (n mod 4).
-* [A257845](http://oeis.org/A257845) ([L10 program](A257845.asm)): a(n) = floor(n/5) * (n mod 5).
+* [A257845](http://oeis.org/A257845) ([L06 program](A257845.asm)): a(n) = floor(n/5) * (n mod 5).
 * [A257846](http://oeis.org/A257846) ([L13 program](A257846.asm)): a(n) = floor(n/6) * (n mod 6).
 * [A257847](http://oeis.org/A257847) ([L09 program](A257847.asm)): a(n) = floor(n/7) * (n mod 7).
 * [A257925](http://oeis.org/A257925) ([L19 program](A257925.asm)): a(n) = (n^2 - n + 1)*(n^2 + n - 1).
