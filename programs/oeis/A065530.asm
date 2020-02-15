@@ -8,9 +8,6 @@ sub $2,1
 sub $1,3
 gcd $2,$0
 pow $1,$2
-lpb $0,1
-  div $0,$3
-lpe
 mul $1,6
 sub $1,6
 div $1,6
