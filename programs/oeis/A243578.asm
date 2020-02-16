@@ -3,14 +3,13 @@
 
 mov $4,$0
 mov $1,$0
-pow $1,2
-mul $1,7
+mul $1,30
 add $1,39
 mov $3,$4
 mov $2,$3
-mul $2,88
+mul $2,58
 add $1,$2
 mul $3,$4
 mov $2,$3
-mul $2,57
+mul $2,64
 add $1,$2

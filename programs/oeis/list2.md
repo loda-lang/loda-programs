@@ -651,7 +651,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A222408](http://oeis.org/A222408) ([L08 program](A222408.asm)): Partial sums of A008531, or crystal ball sequence for {A_4}* lattice.
 * [A222465](http://oeis.org/A222465) ([L04 program](A222465.asm)): a(n) = 4*n^2 + 3.
 * [A222655](http://oeis.org/A222655) ([L04 program](A222655.asm)): a(n) = 16n^4 + 4.
-* [A222657](http://oeis.org/A222657) ([L07 program](A222657.asm)): a(n) = 2 * floor( (2*n + 1) / 3) + 1.
+* [A222657](http://oeis.org/A222657) ([L06 program](A222657.asm)): a(n) = 2 * floor( (2*n + 1) / 3) + 1.
 * [A222940](http://oeis.org/A222940) ([L19 program](A222940.asm)): Number of n X 2 0..4 arrays with no element equal to another at a city block distance of exactly two, and new values 0..4 introduced in row major order.
 * [A222945](http://oeis.org/A222945) ([L08 program](A222945.asm)): Number of distinct sums i+j+k with |i|, |j|, |k|, |i*j*k| <= n.
 * [A222964](http://oeis.org/A222964) ([L13 program](A222964.asm)): Numbers n such that 25n+36 is a square.
@@ -1118,7 +1118,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A243427](http://oeis.org/A243427) ([L03 program](A243427.asm)): Floored (rational) values of sqrt(xy) such that sqrt(x) + sqrt(y) = sqrt(xy).
 * [A243513](http://oeis.org/A243513) ([L15 program](A243513.asm)): Number of length n+2 0..4 arrays with no three elements in a row with pattern aba or abb (with a!=b) and new values 0..4 introduced in 0..4 order.
 * [A243520](http://oeis.org/A243520) ([L07 program](A243520.asm)): Numbers that are congruent to {0, 8} mod 11.
-* [A243578](http://oeis.org/A243578) ([L13 program](A243578.asm)): Integers n of the form 8k+7 that are sum of distinct squares of the form m, m+1, m+2, m+4, where m == 1 (mod 4).
+* [A243578](http://oeis.org/A243578) ([L12 program](A243578.asm)): Integers n of the form 8k+7 that are sum of distinct squares of the form m, m+1, m+2, m+4, where m == 1 (mod 4).
 * [A243579](http://oeis.org/A243579) ([L17 program](A243579.asm)): Integers of the form 8k+7 that can be written as a sum of four distinct squares of the form m, m+2, m+4, m+5, where m == 1 (mod 4).
 * [A243580](http://oeis.org/A243580) ([L19 program](A243580.asm)): Integers of the form 8k + 7 that can be written as a sum of four distinct squares of the form m, m + 1, m + 3, m + 5, where m == 2 (mod 4).
 * [A243581](http://oeis.org/A243581) ([L18 program](A243581.asm)): Integers of the form 8k + 7 that can be written as a sum of four distinct squares of the form m, m + 2, m + 3, m + 4, where m == 2 (mod 4).
@@ -1492,7 +1492,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256888](http://oeis.org/A256888) ([L17 program](A256888.asm)): Terms of the continued fraction expansion of 1 + sqrt(64 / 37).
 * [A256994](http://oeis.org/A256994) ([L20 program](A256994.asm)): a(n) = n + 1 when n <= 3, otherwise a(n) = 2^(n-2) + 3; also iterates of A005187 starting from a(1) = 2.
 * [A257042](http://oeis.org/A257042) ([L09 program](A257042.asm)): a(n) = (3*n+7)*n^2.
-* [A257051](http://oeis.org/A257051) ([L14 program](A257051.asm)): a(n) = cpg(n, 3) + cpg(n, 4) + ... + cpg(n, n) where cpg(n, m) is the m-th n-th-order centered polygonal number.
+* [A257051](http://oeis.org/A257051) ([L07 program](A257051.asm)): a(n) = cpg(n, 3) + cpg(n, 4) + ... + cpg(n, n) where cpg(n, m) is the m-th n-th-order centered polygonal number.
 * [A257055](http://oeis.org/A257055) ([L11 program](A257055.asm)): a(n) = n*(n + 1)*(n^2 - n + 3)/6.
 * [A257063](http://oeis.org/A257063) ([L13 program](A257063.asm)): Number of length 1 1..(n+1) arrays with every leading partial sum divisible by 2 or 3.
 * [A257083](http://oeis.org/A257083) ([L08 program](A257083.asm)): Partial sums of A257088.
@@ -1961,7 +1961,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269819](http://oeis.org/A269819) ([L09 program](A269819.asm)): Numbers that are congruent to {5, 11, 13, 19} mod 24.
 * [A269822](http://oeis.org/A269822) ([L09 program](A269822.asm)): Number of n X 1 0..4 arrays with some element plus some horizontally, diagonally, antidiagonally or vertically adjacent neighbor totalling four exactly once.
 * [A269878](http://oeis.org/A269878) ([L20 program](A269878.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 43", based on the 5-celled von Neumann neighborhood.
-* [A269895](http://oeis.org/A269895) ([L09 program](A269895.asm)): Number of n X 1 0..6 arrays with some element plus some horizontally or vertically adjacent neighbor totalling six exactly once.
+* [A269895](http://oeis.org/A269895) ([L08 program](A269895.asm)): Number of n X 1 0..6 arrays with some element plus some horizontally or vertically adjacent neighbor totalling six exactly once.
 * [A269906](http://oeis.org/A269906) ([L23 program](A269906.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 1", based on the 5-celled von Neumann neighborhood.
 * [A269910](http://oeis.org/A269910) ([L12 program](A269910.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A270010](http://oeis.org/A270010) ([L18 program](A270010.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.

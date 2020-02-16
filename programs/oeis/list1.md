@@ -348,7 +348,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106586](http://oeis.org/A106586) ([L17 program](A106586.asm)): Digit next to last in squares ending in 6.
 * [A106590](http://oeis.org/A106590) ([L56 program](A106590.asm)): Trajectory of 1 under the morphism 1->{2}, 2->{3,3,3}, 3->{1,2,3}.
 * [A106608](http://oeis.org/A106608) ([L04 program](A106608.asm)): a(n) = numerator of n/(n+7).
-* [A106609](http://oeis.org/A106609) ([L06 program](A106609.asm)): Numerator of n/(n+8).
+* [A106609](http://oeis.org/A106609) ([L03 program](A106609.asm)): Numerator of n/(n+8).
 * [A106610](http://oeis.org/A106610) ([L06 program](A106610.asm)): Numerator of n/(n+9).
 * [A106611](http://oeis.org/A106611) ([L08 program](A106611.asm)): a(n) = numerator of n/(n+10).
 * [A106612](http://oeis.org/A106612) ([L07 program](A106612.asm)): a(n) = numerator of n/(n+11).
@@ -357,6 +357,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106619](http://oeis.org/A106619) ([L07 program](A106619.asm)): a(n) = numerator of n/(n+18).
 * [A106624](http://oeis.org/A106624) ([L10 program](A106624.asm)): Expansion of g.f.: (1 - x^2 + x^3)/((1-x^2)*(1-2*x^2)).
 * [A106633](http://oeis.org/A106633) ([L19 program](A106633.asm)): Number of ways to express n as k+lm, with k, l, m all in the range [0..n].
+* [A106637](http://oeis.org/A106637) ([L17 program](A106637.asm)): Accumulation of permutation sequence on three symbols such that the a[n+2]-2*a[n+1]-a[n]=0 overall.
 * [A106648](http://oeis.org/A106648) ([L05 program](A106648.asm)): 3*n^2+6*n+8.
 * [A106655](http://oeis.org/A106655) ([L57 program](A106655.asm)): Four-symbol substitution, characteristic polynomial: x^4-x^3-1.
 * [A106729](http://oeis.org/A106729) ([L06 program](A106729.asm)): Sum of two consecutive squares of Lucas numbers (A001254).
@@ -447,7 +448,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109046](http://oeis.org/A109046) ([L05 program](A109046.asm)): a(n) = lcm(n, 5).
 * [A109047](http://oeis.org/A109047) ([L08 program](A109047.asm)): a(n) = lcm(n, 6).
 * [A109048](http://oeis.org/A109048) ([L05 program](A109048.asm)): a(n) = lcm(n, 7).
-* [A109049](http://oeis.org/A109049) ([L07 program](A109049.asm)): a(n) = lcm(n, 8).
+* [A109049](http://oeis.org/A109049) ([L04 program](A109049.asm)): a(n) = lcm(n, 8).
 * [A109052](http://oeis.org/A109052) ([L10 program](A109052.asm)): a(n) = lcm(n,11).
 * [A109053](http://oeis.org/A109053) ([L08 program](A109053.asm)): a(n) = lcm(n,12).
 * [A109094](http://oeis.org/A109094) ([L12 program](A109094.asm)): Length of the longest path (repeated edges not allowed) between two arbitrary, distinct nodes in K_n, the complete graph on n vertices.
@@ -806,7 +807,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118011](http://oeis.org/A118011) ([L09 program](A118011.asm)): Complement of the Connell sequence (A001614); a(n) = 4*n - A001614(n).
 * [A118015](http://oeis.org/A118015) ([L03 program](A118015.asm)): a(n) = floor(n^2/5).
 * [A118057](http://oeis.org/A118057) ([L08 program](A118057.asm)): 8*n^2-4*n-3.
-* [A118058](http://oeis.org/A118058) ([L13 program](A118058.asm)): a(n) = 49n^2 - 28n - 20.
+* [A118058](http://oeis.org/A118058) ([L12 program](A118058.asm)): a(n) = 49n^2 - 28n - 20.
 * [A118059](http://oeis.org/A118059) ([L14 program](A118059.asm)): 288*n^2 - 168*n - 119.
 * [A118061](http://oeis.org/A118061) ([L35 program](A118061.asm)): 9800*n^2-5740*n-4059
 * [A118070](http://oeis.org/A118070) ([L09 program](A118070.asm)): Numbers with exactly one even decimal digit.
@@ -2130,7 +2131,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A146325](http://oeis.org/A146325) ([L04 program](A146325.asm)): Period 3: repeat [1, 4, 1].
 * [A146501](http://oeis.org/A146501) ([L13 program](A146501.asm)): Period 6: 4,8,7,5,1,2.
 * [A146507](http://oeis.org/A146507) ([L17 program](A146507.asm)): Numbers congruent to {1, 13} mod 42.
-* [A146509](http://oeis.org/A146509) ([L12 program](A146509.asm)): Numbers that are congruent to {1, 5} mod 18.
+* [A146509](http://oeis.org/A146509) ([L11 program](A146509.asm)): Numbers that are congruent to {1, 5} mod 18.
 * [A146510](http://oeis.org/A146510) ([L08 program](A146510.asm)): Numbers congruent to {1, 4} mod 15.
 * [A146511](http://oeis.org/A146511) ([L12 program](A146511.asm)): Numbers congruent to {5, 17} modulo 66.
 * [A146512](http://oeis.org/A146512) ([L08 program](A146512.asm)): Numbers congruent to {1, 3} mod 12.
@@ -2197,7 +2198,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152031](http://oeis.org/A152031) ([L49 program](A152031.asm)): a(n) = n^5 + n^4 + n^3 + n^2 + n.
 * [A152035](http://oeis.org/A152035) ([L20 program](A152035.asm)): G.f.: (1-2*x^2)/(1-2*x-2*x^2).
 * [A152041](http://oeis.org/A152041) ([L15 program](A152041.asm)): A008893/2.
-* [A152046](http://oeis.org/A152046) ([L08 program](A152046.asm)): a(n) = Product_{k=1..floor((n-1)/2)} (1 + 8*cos(k*Pi/n)^2) for n >= 0.
+* [A152046](http://oeis.org/A152046) ([L06 program](A152046.asm)): a(n) = Product_{k=1..floor((n-1)/2)} (1 + 8*cos(k*Pi/n)^2) for n >= 0.
 * [A152053](http://oeis.org/A152053) ([L14 program](A152053.asm)): a(n) = A144433(3n+1) + A144433(3n+2) + A144433(3n+3).
 * [A152064](http://oeis.org/A152064) ([L15 program](A152064.asm)): a(n) = 2*n^3 - 3*n^2 + 5.
 * [A152083](http://oeis.org/A152083) ([L16 program](A152083.asm)): Number of occurrences of "I" in all Roman numerals of numbers from 1 to n
@@ -3153,7 +3154,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164906](http://oeis.org/A164906) ([L05 program](A164906.asm)): Duplicate of A056450
 * [A164907](http://oeis.org/A164907) ([L10 program](A164907.asm)): a(n) = (3*3^n-(-1)^n)/2.
 * [A164908](http://oeis.org/A164908) ([L05 program](A164908.asm)): a(n) = (3*4^n - 0^n)/2.
-* [A164938](http://oeis.org/A164938) ([L09 program](A164938.asm)): a(n) = (n^5-n)/10, which is always an integer.
+* [A164938](http://oeis.org/A164938) ([L07 program](A164938.asm)): a(n) = (n^5-n)/10, which is always an integer.
 * [A164950](http://oeis.org/A164950) ([L27 program](A164950.asm)): 1 if there is a winning strategy for misère Sprouts with n initial points, else 0.
 * [A164965](http://oeis.org/A164965) ([L08 program](A164965.asm)): Cumulative sums of A010892.
 * [A165020](http://oeis.org/A165020) ([L04 program](A165020.asm)): Length of cycle mentioned in A165019
