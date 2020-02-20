@@ -508,7 +508,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317186](http://oeis.org/A317186) ([L05 program](A317186.asm)): One of many square spiral sequences: a(n) = n^2 + n - floor((n-1)/2).
 * [A317203](http://oeis.org/A317203) ([L49 program](A317203.asm)): Fixed under the morphism 1 -> 132, 2 -> 1, 3 -> 3.
 * [A317297](http://oeis.org/A317297) ([L08 program](A317297.asm)): a(n) = (n - 1)*(4*n^2 - 8*n + 5).
-* [A317298](http://oeis.org/A317298) ([L07 program](A317298.asm)): a(n) = (1/2)*(1 + (-1)^n + 2*n + 4*n^2).
+* [A317298](http://oeis.org/A317298) ([L06 program](A317298.asm)): a(n) = (1/2)*(1 + (-1)^n + 2*n + 4*n^2).
 * [A317303](http://oeis.org/A317303) ([L10 program](A317303.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
 * [A317304](http://oeis.org/A317304) ([L10 program](A317304.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central valley.
 * [A317311](http://oeis.org/A317311) ([L14 program](A317311.asm)): Multiples of 11 and odd numbers interleaved.
@@ -527,7 +527,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317324](http://oeis.org/A317324) ([L10 program](A317324.asm)): Multiples of 24 and odd numbers interleaved.
 * [A317325](http://oeis.org/A317325) ([L08 program](A317325.asm)): Multiples of 25 and odd numbers interleaved.
 * [A317326](http://oeis.org/A317326) ([L13 program](A317326.asm)): Multiples of 26 and odd numbers interleaved.
-* [A317404](http://oeis.org/A317404) ([L07 program](A317404.asm)): a(n) = 3*n*(2^n - 1).
+* [A317404](http://oeis.org/A317404) ([L05 program](A317404.asm)): a(n) = 3*n*(2^n - 1).
 * [A317405](http://oeis.org/A317405) ([L08 program](A317405.asm)): a(n) = n * A001353(n).
 * [A317408](http://oeis.org/A317408) ([L06 program](A317408.asm)): a(n) = n * Fibonacci(2n).
 * [A317439](http://oeis.org/A317439) ([L03 program](A317439.asm)): Numbers missing from A317437.
