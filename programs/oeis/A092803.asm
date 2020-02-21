@@ -11,7 +11,6 @@ lpb $2,1
     sub $0,1
     mul $1,2
   lpe
-  pow $5,$0
   mul $2,$3
 lpe
 sub $1,4

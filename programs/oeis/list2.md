@@ -1225,7 +1225,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247155](http://oeis.org/A247155) ([L05 program](A247155.asm)): 31n^2 + 1
 * [A247160](http://oeis.org/A247160) ([L08 program](A247160.asm)): Dynamic Betting Game D(n,4,3).
 * [A247188](http://oeis.org/A247188) ([L15 program](A247188.asm)): a(0) = 0. a(n) is the number of repeating sums in the collection of all sums of any k elements in [a(0), ... a(n-1)] chosen without replacement for 2 <= k <= n.
-* [A247281](http://oeis.org/A247281) ([L12 program](A247281.asm)): 4^n -(-1)^n.
+* [A247281](http://oeis.org/A247281) ([L06 program](A247281.asm)): 4^n -(-1)^n.
 * [A247309](http://oeis.org/A247309) ([L19 program](A247309.asm)): Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,1) to (n,k), where 0 <= k <= 2, consisting of segments given by the vectors (1,1), (1,0), (1,-1), (1,-2).
 * [A247328](http://oeis.org/A247328) ([L03 program](A247328.asm)): Odd deficient numbers.
 * [A247375](http://oeis.org/A247375) ([L07 program](A247375.asm)): Numbers n such that floor(n/2) is a square.
@@ -2450,7 +2450,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286865](http://oeis.org/A286865) ([L14 program](A286865.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 814", based on the 5-celled von Neumann neighborhood.
 * [A286907](http://oeis.org/A286907) ([L37 program](A286907.asm)): {0->00,1->01}-transform of the Sturmian word A080764.
 * [A286925](http://oeis.org/A286925) ([L20 program](A286925.asm)): {0->01,1->00}-transform of the Sturmian word A080764.
-* [A286930](http://oeis.org/A286930) ([L41 program](A286930.asm)): Integers whose double is a square and whose triple is a cube.
+* [A286930](http://oeis.org/A286930) ([L13 program](A286930.asm)): Integers whose double is a square and whose triple is a cube.
 * [A286986](http://oeis.org/A286986) ([L18 program](A286986.asm)): Number of connected dominating sets in the n-antiprism graph.
 * [A286996](http://oeis.org/A286996) ([L20 program](A286996.asm)): {0->000, 11->null}-transform of the Sturmian word A080764.
 * [A287057](http://oeis.org/A287057) ([L15 program](A287057.asm)): a(n) = 2*n^2 + n - (n+1) mod 2.
@@ -2618,7 +2618,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A292543](http://oeis.org/A292543) ([L04 program](A292543.asm)): Number of 5-cycles in the n-Sierpinski tetrahedron graph.
 * [A292564](http://oeis.org/A292564) ([L09 program](A292564.asm)): Take 1, skip 3 * 1 - 1, take 2, skip 3 * 2 - 1, take 3, skip 3 * 3 - 1, ...
 * [A292565](http://oeis.org/A292565) ([L10 program](A292565.asm)): Take 0, skip 3 * 1 + 1, take 1, skip 3 * 2 + 1, take 2, skip 3 * 3 + 1, ...
-* [A292576](http://oeis.org/A292576) ([L12 program](A292576.asm)): Permutation of the natural numbers partitioned into quadruples [4k-1, 4k-3, 4k-2, 4k], k > 0.
+* [A292576](http://oeis.org/A292576) ([L11 program](A292576.asm)): Permutation of the natural numbers partitioned into quadruples [4k-1, 4k-3, 4k-2, 4k], k > 0.
 * [A292638](http://oeis.org/A292638) ([L16 program](A292638.asm)): Rank of (3-r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
 * [A292641](http://oeis.org/A292641) ([L14 program](A292641.asm)): Rank of (4+r)*n when all the numbers (4-r)*j and (4+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
 * [A293004](http://oeis.org/A293004) ([L08 program](A293004.asm)): Expansion of 2*x^2 / (x^3 + x^2 - 3x + 1).
