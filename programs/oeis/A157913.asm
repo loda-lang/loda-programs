@@ -6,7 +6,6 @@ add $0,3
 mov $2,$0
 mul $2,2
 mov $1,$2
-mul $0,0
 sub $1,4
 mul $2,4
 mul $1,$2

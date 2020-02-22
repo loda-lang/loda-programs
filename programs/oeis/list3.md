@@ -733,4 +733,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331190](http://oeis.org/A331190) ([L17 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
 * [A331943](http://oeis.org/A331943) ([L09 program](A331943.asm)): Related to expansion of exp(2*(H_k-gamma))/k^2 in powers of 1/k as given by A331777/A331778.
 * [A332044](http://oeis.org/A332044) ([L13 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
-* [A332519](http://oeis.org/A332519) ([L08 program](A332519.asm)): a(n) = 4*(n^2+n-2).
+* [A332519](http://oeis.org/A332519) ([L07 program](A332519.asm)): a(n) = 4*(n^2+n-2).
