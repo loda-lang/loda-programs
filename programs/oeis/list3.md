@@ -262,7 +262,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307985](http://oeis.org/A307985) ([L10 program](A307985.asm)): Number of integer-sided triangles with perimeter n and sides a, b, and c such that a <= b <= c and b|n.
 * [A308124](http://oeis.org/A308124) ([L06 program](A308124.asm)): a(n) = (2 + 7*4^n)/3.
 * [A308136](http://oeis.org/A308136) ([L18 program](A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
-* [A308137](http://oeis.org/A308137) ([L46 program](A308137.asm)): Number of (undirected) Hamiltonian paths on the n-prism graph.
+* [A308137](http://oeis.org/A308137) ([L20 program](A308137.asm)): Number of (undirected) Hamiltonian paths on the n-prism graph.
 * [A308196](http://oeis.org/A308196) ([L09 program](A308196.asm)): Partial sums of A063808.
 * [A308287](http://oeis.org/A308287) ([L06 program](A308287.asm)): Length 20 arithmetic progression of primes (PAP-20).
 * [A308305](http://oeis.org/A308305) ([L14 program](A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
@@ -734,4 +734,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331528](http://oeis.org/A331528) ([L14 program](A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
 * [A331943](http://oeis.org/A331943) ([L09 program](A331943.asm)): Related to expansion of exp(2*(H_k-gamma))/k^2 in powers of 1/k as given by A331777/A331778.
 * [A332044](http://oeis.org/A332044) ([L13 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
-* [A332519](http://oeis.org/A332519) ([L07 program](A332519.asm)): a(n) = 4*(n^2+n-2).
+* [A332519](http://oeis.org/A332519) ([L05 program](A332519.asm)): a(n) = 4*(n^2+n-2).

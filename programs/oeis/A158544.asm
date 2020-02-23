@@ -10,6 +10,5 @@ add $3,$2
 pow $3,2
 mul $1,2
 mul $1,$3
-div $0,0
 sub $1,24
 add $1,23

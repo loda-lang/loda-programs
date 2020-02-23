@@ -1122,7 +1122,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A243578](http://oeis.org/A243578) ([L12 program](A243578.asm)): Integers n of the form 8k+7 that are sum of distinct squares of the form m, m+1, m+2, m+4, where m == 1 (mod 4).
 * [A243579](http://oeis.org/A243579) ([L17 program](A243579.asm)): Integers of the form 8k+7 that can be written as a sum of four distinct squares of the form m, m+2, m+4, m+5, where m == 1 (mod 4).
 * [A243580](http://oeis.org/A243580) ([L19 program](A243580.asm)): Integers of the form 8k + 7 that can be written as a sum of four distinct squares of the form m, m + 1, m + 3, m + 5, where m == 2 (mod 4).
-* [A243581](http://oeis.org/A243581) ([L18 program](A243581.asm)): Integers of the form 8k + 7 that can be written as a sum of four distinct squares of the form m, m + 2, m + 3, m + 4, where m == 2 (mod 4).
+* [A243581](http://oeis.org/A243581) ([L12 program](A243581.asm)): Integers of the form 8k + 7 that can be written as a sum of four distinct squares of the form m, m + 2, m + 3, m + 4, where m == 2 (mod 4).
 * [A243762](http://oeis.org/A243762) ([L26 program](A243762.asm)): 4*n^3 + 5.
 * [A243860](http://oeis.org/A243860) ([L18 program](A243860.asm)): 2^(n+1) - (n-1)^2.
 * [A243903](http://oeis.org/A243903) ([L10 program](A243903.asm)): Numbers n such that (number of primes <= n) is greater than or equal to (number of semiprimes <= n).
@@ -1963,7 +1963,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269819](http://oeis.org/A269819) ([L09 program](A269819.asm)): Numbers that are congruent to {5, 11, 13, 19} mod 24.
 * [A269822](http://oeis.org/A269822) ([L09 program](A269822.asm)): Number of n X 1 0..4 arrays with some element plus some horizontally, diagonally, antidiagonally or vertically adjacent neighbor totalling four exactly once.
 * [A269878](http://oeis.org/A269878) ([L20 program](A269878.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 43", based on the 5-celled von Neumann neighborhood.
-* [A269895](http://oeis.org/A269895) ([L08 program](A269895.asm)): Number of n X 1 0..6 arrays with some element plus some horizontally or vertically adjacent neighbor totalling six exactly once.
+* [A269895](http://oeis.org/A269895) ([L06 program](A269895.asm)): Number of n X 1 0..6 arrays with some element plus some horizontally or vertically adjacent neighbor totalling six exactly once.
 * [A269906](http://oeis.org/A269906) ([L23 program](A269906.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 1", based on the 5-celled von Neumann neighborhood.
 * [A269910](http://oeis.org/A269910) ([L12 program](A269910.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A270010](http://oeis.org/A270010) ([L18 program](A270010.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.
@@ -2239,7 +2239,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277411](http://oeis.org/A277411) ([L08 program](A277411.asm)): Column 1 of triangle A277410.
 * [A277425](http://oeis.org/A277425) ([L07 program](A277425.asm)): a(n) = sqrt(16*t^2 - 32*t + k^2 + 8*k - 8*k*t + 16), where t = ceiling((sqrt(n))) and k = t^2 - n.
 * [A277451](http://oeis.org/A277451) ([L10 program](A277451.asm)): Number of edges in geodesic dome generated from icosahedron by recursively dividing each triangle in 4.
-* [A277618](http://oeis.org/A277618) ([L08 program](A277618.asm)): Lexicographically earliest nonnegative sequence such that |a(n+1)-a(n)| is a prime number, and no number occurs twice; a(0) = 0.
+* [A277618](http://oeis.org/A277618) ([L06 program](A277618.asm)): Lexicographically earliest nonnegative sequence such that |a(n+1)-a(n)| is a prime number, and no number occurs twice; a(0) = 0.
 * [A277636](http://oeis.org/A277636) ([L67 program](A277636.asm)): Number of 3 X 3 matrices having all elements in {0,...,n} with determinant = permanent.
 * [A277690](http://oeis.org/A277690) ([L25 program](A277690.asm)): Smallest possible number of sides of a regular polygon with unit sides and circumradius n.
 * [A277723](http://oeis.org/A277723) ([L08 program](A277723.asm)): a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265).

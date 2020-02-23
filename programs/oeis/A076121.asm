@@ -7,8 +7,6 @@ sub $3,7
 mov $1,$3
 sub $1,7
 div $1,5
-gcd $0,8
-sub $0,$3
 pow $1,2
 mov $4,$5
 mov $2,$4
