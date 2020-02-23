@@ -12,7 +12,6 @@ lpb $0,1
   div $2,4
   pow $2,2
   mul $1,$2
-  add $1,1
   mov $0,2
 lpe
 div $1,3
