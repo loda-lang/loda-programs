@@ -3,12 +3,6 @@
 
 mov $2,$0
 add $2,1
-lpb $0,1
-  add $1,$2
-  gcd $3,$1
-  div $0,$2
-  gcd $0,$3
-lpe
+mov $1,$0
 pow $2,3
-mul $2,$0
-add $1,$2
+mul $1,$2

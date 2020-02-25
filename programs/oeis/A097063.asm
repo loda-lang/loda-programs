@@ -6,6 +6,5 @@ mov $1,$0
 gcd $0,4
 add $1,4
 add $1,$0
-pow $0,0
 sub $1,6
 div $1,2

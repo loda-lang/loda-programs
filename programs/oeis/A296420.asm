@@ -6,9 +6,6 @@ add $1,9
 gcd $0,$1
 div $1,$0
 mul $1,2
-lpb $0,1
-  div $0,$2
-lpe
 sub $1,2
 div $1,2
 add $1,1

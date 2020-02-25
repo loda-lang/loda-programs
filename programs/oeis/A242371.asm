@@ -7,6 +7,3 @@ mul $0,2
 div $1,2
 mul $0,2
 mul $1,$0
-lpb $0,1
-  mul $0,6
-lpe

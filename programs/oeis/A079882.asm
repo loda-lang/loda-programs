@@ -4,7 +4,6 @@
 mov $2,$0
 lpb $2,1
   div $2,2
-  mov $3,1
   pow $1,$2
   sub $2,1
 lpe
