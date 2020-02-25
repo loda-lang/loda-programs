@@ -10,7 +10,6 @@ add $3,7
 mod $2,$3
 mov $4,8
 mul $4,$2
-add $4,5
 mul $4,8
 mov $1,$4
 div $1,64
