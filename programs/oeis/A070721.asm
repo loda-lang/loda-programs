@@ -3,7 +3,6 @@
 
 gcd $2,$0
 mov $3,$2
-mov $4,8
 mov $1,$3
 pow $1,3
 mov $3,8
