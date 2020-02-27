@@ -30,7 +30,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301426](http://oeis.org/A301426) ([L14 program](A301426.asm)): Number of steps required in the worst case for three knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A301451](http://oeis.org/A301451) ([L08 program](A301451.asm)): Numbers congruent to {1, 7} mod 9.
 * [A301454](http://oeis.org/A301454) ([L17 program](A301454.asm)): Number of strictly log-concave permutations of {1,...,n}.
-* [A301516](http://oeis.org/A301516) ([L11 program](A301516.asm)): Numbers n with decimal expansion (d_1, ..., d_k) such that the convex hull of the set of points { (i, d_i), i = 1..k } has positive area.
+* [A301516](http://oeis.org/A301516) ([L09 program](A301516.asm)): Numbers n with decimal expansion (d_1, ..., d_k) such that the convex hull of the set of points { (i, d_i), i = 1..k } has positive area.
 * [A301571](http://oeis.org/A301571) ([L13 program](A301571.asm)): Number of vertices at distance 2 from a given vertex in the n-Keller graph.
 * [A301601](http://oeis.org/A301601) ([L16 program](A301601.asm)): Numbers k such that k^6 can be written as a sum of 11 positive 6th powers.
 * [A301617](http://oeis.org/A301617) ([L07 program](A301617.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 1.
@@ -734,6 +734,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331190](http://oeis.org/A331190) ([L17 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
 * [A331528](http://oeis.org/A331528) ([L14 program](A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
 * [A331943](http://oeis.org/A331943) ([L09 program](A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
-* [A332044](http://oeis.org/A332044) ([L13 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
+* [A332044](http://oeis.org/A332044) ([L08 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332519](http://oeis.org/A332519) ([L05 program](A332519.asm)): a(n) = 4*(n^2+n-2).
 * [A332756](http://oeis.org/A332756) ([L12 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.

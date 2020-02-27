@@ -1110,6 +1110,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242771](http://oeis.org/A242771) ([L08 program](A242771.asm)): Number of integer points in a certain quadrilateral scaled by a factor of n (another version).
 * [A242774](http://oeis.org/A242774) ([L11 program](A242774.asm)): a(n) = ceiling( n / 2 ) + ceiling( n / 3 ).
 * [A242856](http://oeis.org/A242856) ([L21 program](A242856.asm)): Number of 2-matchings of the n X n grid graph.
+* [A242954](http://oeis.org/A242954) ([L10 program](A242954.asm)): a(n) = Product_{i=1..n} A234957(i).
 * [A242963](http://oeis.org/A242963) ([L04 program](A242963.asm)): Numbers n such that A242962(n) = sigma(n) = A000203(n).
 * [A242985](http://oeis.org/A242985) ([L08 program](A242985.asm)): a(n) = 4^n + 2^(n+1).
 * [A242998](http://oeis.org/A242998) ([L20 program](A242998.asm)): Number of integers k such that R = (2^k*Q - Q - 1)/(Q + 1 - 2^k) is a prime number, when Q = A000668(n) is the n-th Mersenne prime.
@@ -2144,7 +2145,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274324](http://oeis.org/A274324) ([L04 program](A274324.asm)): Number of partitions of n^3 into at most two parts.
 * [A274325](http://oeis.org/A274325) ([L04 program](A274325.asm)): Number of partitions of n^5 into at most two parts.
 * [A274338](http://oeis.org/A274338) ([L17 program](A274338.asm)): The 10-cycle of the iterated sum of deficient divisors function.
-* [A274339](http://oeis.org/A274339) ([L09 program](A274339.asm)): The 3-cycle of the iterated sum of deficient divisors function.
+* [A274339](http://oeis.org/A274339) ([L08 program](A274339.asm)): The 3-cycle of the iterated sum of deficient divisors function.
 * [A274340](http://oeis.org/A274340) ([L11 program](A274340.asm)): A 4-cycle of the iterated sum of deficient divisors function.
 * [A274380](http://oeis.org/A274380) ([L11 program](A274380.asm)): A 4-cycle of the iterated sum of deficient divisors function.
 * [A274406](http://oeis.org/A274406) ([L08 program](A274406.asm)): Numbers m such that 9 divides m*(m + 1).
@@ -2722,7 +2723,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297996](http://oeis.org/A297996) ([L29 program](A297996.asm)): a(1)=2, a(2)=3, a(3)=5 and a(n) = (a(1) + a(2) + a(3) + ... + a(n-1))/a(n-1).
 * [A298019](http://oeis.org/A298019) ([L18 program](A298019.asm)): Partial sums of A298016.
 * [A298024](http://oeis.org/A298024) ([L12 program](A298024.asm)): G.f.: (x^4+3*x^3+6*x^2+3*x+1)/((1-x)*(1-x^3)).
-* [A298025](http://oeis.org/A298025) ([L15 program](A298025.asm)): Partial sums of A298024.
+* [A298025](http://oeis.org/A298025) ([L13 program](A298025.asm)): Partial sums of A298024.
 * [A298026](http://oeis.org/A298026) ([L27 program](A298026.asm)): Coordination sequence of Dual(3.6.3.6) tiling with respect to a hexavalent node.
 * [A298027](http://oeis.org/A298027) ([L10 program](A298027.asm)): Partial sums of A298026.
 * [A298028](http://oeis.org/A298028) ([L23 program](A298028.asm)): Coordination sequence of Dual(3.6.3.6) tiling with respect to a trivalent node.
