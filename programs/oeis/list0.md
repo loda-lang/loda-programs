@@ -1379,7 +1379,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017247](http://oeis.org/A017247) ([L08 program](A017247.asm)): a(n) = (9*n + 7)^3.
 * [A017248](http://oeis.org/A017248) ([L11 program](A017248.asm)): a(n) = (9*n + 7)^4.
 * [A017257](http://oeis.org/A017257) ([L03 program](A017257.asm)): a(n) = 9n+8.
-* [A017258](http://oeis.org/A017258) ([L10 program](A017258.asm)): a(n) = (9*n + 8)^2.
+* [A017258](http://oeis.org/A017258) ([L08 program](A017258.asm)): a(n) = (9*n + 8)^2.
 * [A017259](http://oeis.org/A017259) ([L10 program](A017259.asm)): a(n) = (9*n + 8)^3.
 * [A017260](http://oeis.org/A017260) ([L17 program](A017260.asm)): a(n) = (9*n + 8)^4.
 * [A017270](http://oeis.org/A017270) ([L03 program](A017270.asm)): a(n) = (10*n)^2.
@@ -3467,7 +3467,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047613](http://oeis.org/A047613) ([L19 program](A047613.asm)): Numbers that are congruent to {1, 2, 4, 5} mod 8.
 * [A047614](http://oeis.org/A047614) ([L24 program](A047614.asm)): Numbers that are congruent to {0, 1, 2, 4, 5} mod 8.
 * [A047615](http://oeis.org/A047615) ([L05 program](A047615.asm)): Numbers that are congruent to {0, 5} mod 8.
-* [A047616](http://oeis.org/A047616) ([L15 program](A047616.asm)): Numbers that are congruent to {0, 1, 5} mod 8.
+* [A047616](http://oeis.org/A047616) ([L10 program](A047616.asm)): Numbers that are congruent to {0, 1, 5} mod 8.
 * [A047617](http://oeis.org/A047617) ([L06 program](A047617.asm)): Numbers that are congruent to {2, 5} mod 8.
 * [A047618](http://oeis.org/A047618) ([L03 program](A047618.asm)): Numbers that are congruent to {0, 2, 5} mod 8.
 * [A047619](http://oeis.org/A047619) ([L12 program](A047619.asm)): Numbers that are congruent to {1, 2, 5} mod 8.
@@ -4813,6 +4813,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070460](http://oeis.org/A070460) ([L44 program](A070460.asm)): a(n) = n^2 mod 38.
 * [A070461](http://oeis.org/A070461) ([L08 program](A070461.asm)): a(n) = n^2 mod 39.
 * [A070462](http://oeis.org/A070462) ([L26 program](A070462.asm)): a(n) = n^2 mod 40.
+* [A070463](http://oeis.org/A070463) ([L06 program](A070463.asm)): a(n) = n^2 mod 41.
 * [A070464](http://oeis.org/A070464) ([L06 program](A070464.asm)): a(n) = n^2 mod 42.
 * [A070465](http://oeis.org/A070465) ([L10 program](A070465.asm)): a(n) = n^2 mod 43.
 * [A070466](http://oeis.org/A070466) ([L28 program](A070466.asm)): a(n) = n^2 mod 44.
@@ -5042,7 +5043,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A072674](http://oeis.org/A072674) ([L11 program](A072674.asm)): 3^n+2*2^n-3.
 * [A072689](http://oeis.org/A072689) ([L12 program](A072689.asm)): Difference between (least square >= n) and (largest square <= n).
 * [A072703](http://oeis.org/A072703) ([L05 program](A072703.asm)): Indices of Fibonacci numbers whose last digit is 5.
-* [A072819](http://oeis.org/A072819) ([L17 program](A072819.asm)): Variance of time for a random walk starting at 0 to reach one of the boundaries at +n or -n for the first time.
+* [A072819](http://oeis.org/A072819) ([L11 program](A072819.asm)): Variance of time for a random walk starting at 0 to reach one of the boundaries at +n or -n for the first time.
 * [A072833](http://oeis.org/A072833) ([L09 program](A072833.asm)): Exponents occurring in expansion of F_6(q^2).
 * [A072834](http://oeis.org/A072834) ([L11 program](A072834.asm)): Exponents occurring in expansion of F_8(q^2).
 * [A072944](http://oeis.org/A072944) ([L17 program](A072944.asm)): a(1)=2, a(n+1) = 2*a(n) - phi(a(n)) where phi is the Euler totient function A000010.
@@ -5503,7 +5504,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A082109](http://oeis.org/A082109) ([L05 program](A082109.asm)): Third row of number array A082105.
 * [A082111](http://oeis.org/A082111) ([L04 program](A082111.asm)): A row of number array A082110.
 * [A082112](http://oeis.org/A082112) ([L06 program](A082112.asm)): a(n) = 4n^2 + 10n + 1.
-* [A082113](http://oeis.org/A082113) ([L06 program](A082113.asm)): n^4+5n^2+1.
+* [A082113](http://oeis.org/A082113) ([L05 program](A082113.asm)): n^4+5n^2+1.
 * [A082115](http://oeis.org/A082115) ([L13 program](A082115.asm)): Fibonacci sequence (mod 3).
 * [A082116](http://oeis.org/A082116) ([L23 program](A082116.asm)): Fibonacci sequence (mod 5).
 * [A082117](http://oeis.org/A082117) ([L29 program](A082117.asm)): Fibonacci sequence (mod 6).
