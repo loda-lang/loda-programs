@@ -729,6 +729,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A330569](http://oeis.org/A330569) ([L11 program](A330569.asm)): a(n) = 1 if n is odd, otherwise a(n) = 2^(v-1)+1 where v is the 2-adic valuation of n (A007814(n)).
 * [A330707](http://oeis.org/A330707) ([L13 program](A330707.asm)): a(n) = ( 3*n^2 + n - 1 + (-1)^floor(n/2) )/4.
+* [A330770](http://oeis.org/A330770) ([L05 program](A330770.asm)): a(n) = 19 * 8^n + 17 for n >= 0.
 * [A330938](http://oeis.org/A330938) ([L17 program](A330938.asm)): Numbers that cannot be written as the sum of four proper powers. A proper power is an integer number m of the form a^b where a,b are integers greater than or equal to 2.
 * [A331162](http://oeis.org/A331162) ([L15 program](A331162.asm)): a(n) is the number of digits in the concatenation of a(0) to a(n-1) that are equal to the corresponding digit in the concatenation of all integers >= 0, with a(0) = 0.
 * [A331190](http://oeis.org/A331190) ([L17 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
