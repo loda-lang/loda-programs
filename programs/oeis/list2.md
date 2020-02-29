@@ -515,7 +515,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A216108](http://oeis.org/A216108) ([L14 program](A216108.asm)): The Wiener index of the ortho-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
 * [A216109](http://oeis.org/A216109) ([L50 program](A216109.asm)): The hyper-Wiener index of the ortho-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
 * [A216110](http://oeis.org/A216110) ([L13 program](A216110.asm)): The Wiener index of the meta-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
-* [A216112](http://oeis.org/A216112) ([L14 program](A216112.asm)): The Wiener index of the para-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
+* [A216112](http://oeis.org/A216112) ([L12 program](A216112.asm)): The Wiener index of the para-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
 * [A216113](http://oeis.org/A216113) ([L58 program](A216113.asm)): The hyper-Wiener index of the meta-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
 * [A216114](http://oeis.org/A216114) ([L15 program](A216114.asm)): The Wiener index of a link of n fullerenes C_{20} (see the Ghorbani and Hosseinzadeh reference).
 * [A216129](http://oeis.org/A216129) ([L27 program](A216129.asm)): a(n) = 7^n mod 1000.
@@ -2710,7 +2710,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296953](http://oeis.org/A296953) ([L07 program](A296953.asm)): Number of bisymmetric, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
 * [A296954](http://oeis.org/A296954) ([L08 program](A296954.asm)): Expansion of x*(1 - x + 4*x^2) / ((1 - x)*(1 - 2*x)).
 * [A296965](http://oeis.org/A296965) ([L07 program](A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
-* [A297044](http://oeis.org/A297044) ([L05 program](A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
+* [A297044](http://oeis.org/A297044) ([L04 program](A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
 * [A297045](http://oeis.org/A297045) ([L05 program](A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
 * [A297217](http://oeis.org/A297217) ([L09 program](A297217.asm)): Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.
 * [A297251](http://oeis.org/A297251) ([L19 program](A297251.asm)): Numbers whose base-3 digits have greater up-variation than down-variation; see Comments.

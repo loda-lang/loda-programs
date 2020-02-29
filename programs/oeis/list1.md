@@ -271,7 +271,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104449](http://oeis.org/A104449) ([L08 program](A104449.asm)): Fibonacci sequence with initial values a(0) = 3 and a(1) = 1.
 * [A104473](http://oeis.org/A104473) ([L27 program](A104473.asm)): a(n) = binomial(n+2,2)*binomial(n+6,2).
 * [A104563](http://oeis.org/A104563) ([L10 program](A104563.asm)): A floretion-generated sequence relating to centered square numbers.
-* [A104584](http://oeis.org/A104584) ([L16 program](A104584.asm)): (1/2) * ( 3*n^2 + n*(-1)^n ).
+* [A104584](http://oeis.org/A104584) ([L07 program](A104584.asm)): (1/2) * ( 3*n^2 + n*(-1)^n ).
 * [A104585](http://oeis.org/A104585) ([L08 program](A104585.asm)): (1/2) * ( 3*n^2 - n*(-1)^n ).
 * [A104626](http://oeis.org/A104626) ([L22 program](A104626.asm)): Numbers having three 1's in their base-phi representation.
 * [A104661](http://oeis.org/A104661) ([L02 program](A104661.asm)): Duplicate of A020725.
@@ -2302,7 +2302,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A153465](http://oeis.org/A153465) ([L05 program](A153465.asm)): 9*4^n - 2.
 * [A153466](http://oeis.org/A153466) ([L23 program](A153466.asm)): a(n) = A027941(n) + A027941(n+6).
 * [A153485](http://oeis.org/A153485) ([L10 program](A153485.asm)): Sum of all aliquot divisors of all positive integers <= n.
-* [A153509](http://oeis.org/A153509) ([L14 program](A153509.asm)): Period 9: repeat 6,6,6,3,3,3,0,0,0.
+* [A153509](http://oeis.org/A153509) ([L11 program](A153509.asm)): Period 9: repeat 6,6,6,3,3,3,0,0,0.
 * [A153642](http://oeis.org/A153642) ([L10 program](A153642.asm)): a(n) = 4*n^2 + 24*n + 8.
 * [A153643](http://oeis.org/A153643) ([L09 program](A153643.asm)): Jacobsthal numbers A001045 incremented by 2.
 * [A153644](http://oeis.org/A153644) ([L12 program](A153644.asm)): a(n) = 4*n^2 + 28*n + 10.
@@ -2673,7 +2673,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158135](http://oeis.org/A158135) ([L30 program](A158135.asm)): a(n) = 144*n^2 - 2*n.
 * [A158136](http://oeis.org/A158136) ([L03 program](A158136.asm)): a(n) = 144*n - 1.
 * [A158186](http://oeis.org/A158186) ([L08 program](A158186.asm)): a(n) = 10*n^2 - 7*n + 1.
-* [A158187](http://oeis.org/A158187) ([L06 program](A158187.asm)): a(n) = 10*n^2 + 1.
+* [A158187](http://oeis.org/A158187) ([L04 program](A158187.asm)): a(n) = 10*n^2 + 1.
 * [A158218](http://oeis.org/A158218) ([L15 program](A158218.asm)): 169n^2 - 2n.
 * [A158219](http://oeis.org/A158219) ([L03 program](A158219.asm)): 169n - 1.
 * [A158220](http://oeis.org/A158220) ([L41 program](A158220.asm)): a(n) = 169*n^2 + 2*n.
@@ -2877,7 +2877,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158764](http://oeis.org/A158764) ([L10 program](A158764.asm)): 38*(38*n^2-1).
 * [A158765](http://oeis.org/A158765) ([L10 program](A158765.asm)): a(n) = 76*n^2 - 1.
 * [A158766](http://oeis.org/A158766) ([L15 program](A158766.asm)): a(n) = 1444*n^2 + 38.
-* [A158767](http://oeis.org/A158767) ([L28 program](A158767.asm)): a(n) = 76*n^2 + 1.
+* [A158767](http://oeis.org/A158767) ([L08 program](A158767.asm)): a(n) = 76*n^2 + 1.
 * [A158768](http://oeis.org/A158768) ([L32 program](A158768.asm)): a(n) = 1521*n^2 + 39.
 * [A158769](http://oeis.org/A158769) ([L17 program](A158769.asm)): a(n) = 78*n^2 + 1.
 * [A158770](http://oeis.org/A158770) ([L32 program](A158770.asm)): a(n) = 1521*n^2 - 39.
@@ -3801,7 +3801,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171624](http://oeis.org/A171624) ([L05 program](A171624.asm)): Floor(n-th nonprime / n).
 * [A171627](http://oeis.org/A171627) ([L04 program](A171627.asm)): Ceiling(n-th composite/n).
 * [A171647](http://oeis.org/A171647) ([L11 program](A171647.asm)): a(1) = 1; for n > 1, a(n) = 2*a(n-1) if n is even, a(n) = ((n+1)/(n-1))*a(n-1) if n is odd.
-* [A171654](http://oeis.org/A171654) ([L16 program](A171654.asm)): Period length 10: repeat 0, 1, 6, 7, 2, 3, 8, 9, 4, 5.
+* [A171654](http://oeis.org/A171654) ([L16 program](A171654.asm)): Period 10: repeat 0, 1, 6, 7, 2, 3, 8, 9, 4, 5.
 * [A171662](http://oeis.org/A171662) ([L11 program](A171662.asm)): a(n) = floor((2*n^2 + n)/6).
 * [A171677](http://oeis.org/A171677) ([L16 program](A171677.asm)): Period 9:repeat 7,5,7,4,2,4,1,8,1.
 * [A171714](http://oeis.org/A171714) ([L07 program](A171714.asm)): a(n) = ceiling((n+1)^4/2).

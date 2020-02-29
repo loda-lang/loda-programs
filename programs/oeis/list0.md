@@ -370,6 +370,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004467](http://oeis.org/A004467) ([L08 program](A004467.asm)): a(n) = n*(11*n^2 - 5)/6.
 * [A004482](http://oeis.org/A004482) ([L17 program](A004482.asm)): Tersum n + 1 (answer recorded in base 10).
 * [A004483](http://oeis.org/A004483) ([L12 program](A004483.asm)): Tersum n + 2.
+* [A004495](http://oeis.org/A004495) ([L07 program](A004495.asm)): Tersum n + 6.
 * [A004522](http://oeis.org/A004522) ([L13 program](A004522.asm)): Generalized nim sum n + n in base 12.
 * [A004523](http://oeis.org/A004523) ([L03 program](A004523.asm)): Two even followed by one odd; or floor(2n/3).
 * [A004524](http://oeis.org/A004524) ([L06 program](A004524.asm)): Three even followed by one odd.
@@ -1439,6 +1440,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017437](http://oeis.org/A017437) ([L03 program](A017437.asm)): a(n) = 11*n + 4.
 * [A017438](http://oeis.org/A017438) ([L10 program](A017438.asm)): a(n) = (11*n + 4)^2.
 * [A017439](http://oeis.org/A017439) ([L09 program](A017439.asm)): a(n) = (11*n + 4)^3.
+* [A017440](http://oeis.org/A017440) ([L07 program](A017440.asm)): a(n) = (11*n + 4)^4.
 * [A017449](http://oeis.org/A017449) ([L03 program](A017449.asm)): a(n) = 11*n + 5.
 * [A017450](http://oeis.org/A017450) ([L12 program](A017450.asm)): a(n) = (11*n + 5)^2.
 * [A017461](http://oeis.org/A017461) ([L03 program](A017461.asm)): a(n) = 11*n + 6.
@@ -4318,7 +4320,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062124](http://oeis.org/A062124) ([L20 program](A062124.asm)): Fourth column of A046741.
 * [A062153](http://oeis.org/A062153) ([L11 program](A062153.asm)): a(n) = floor(log_3(n)).
 * [A062289](http://oeis.org/A062289) ([L07 program](A062289.asm)): Numbers n such that n-th row in Pascal triangle contains an even number, i.e., A048967(n) > 0.
-* [A062317](http://oeis.org/A062317) ([L13 program](A062317.asm)): Numbers n such that 5*n-1 is a perfect square.
+* [A062317](http://oeis.org/A062317) ([L13 program](A062317.asm)): Numbers k such that 5*k-1 is a perfect square.
 * [A062318](http://oeis.org/A062318) ([L08 program](A062318.asm)): Numbers of the form 3^m - 1 or 2*3^m - 1; i.e., the union of sequences A048473 and A024023.
 * [A062346](http://oeis.org/A062346) ([L13 program](A062346.asm)): Consider 2n tennis players; a(n) is the number of matches needed to let every possible pair play each other.
 * [A062383](http://oeis.org/A062383) ([L05 program](A062383.asm)): a(0) = 1: for n>0, a(n) = 2^floor(log_2(n)+1) or a(n) = 2*a(floor(n/2)).
@@ -5578,7 +5580,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083127](http://oeis.org/A083127) ([L15 program](A083127.asm)): 3*n^3+n^2-4*n.
 * [A083196](http://oeis.org/A083196) ([L33 program](A083196.asm)): 8*n^4+9*n^2+2.
 * [A083217](http://oeis.org/A083217) ([L05 program](A083217.asm)): a(n) = (2*5^n+(-1)^n)/3.
-* [A083219](http://oeis.org/A083219) ([L06 program](A083219.asm)): a(n) = n - 2*floor(n/4).
+* [A083219](http://oeis.org/A083219) ([L05 program](A083219.asm)): a(n) = n - 2*floor(n/4).
 * [A083220](http://oeis.org/A083220) ([L03 program](A083220.asm)): a(n) = n + (n mod 4).
 * [A083232](http://oeis.org/A083232) ([L06 program](A083232.asm)): a(n) = (3*7^n+(-1)^n)/4.
 * [A083233](http://oeis.org/A083233) ([L06 program](A083233.asm)): a(n) = (3*8^n + 0^n)/4.
