@@ -628,7 +628,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323227](http://oeis.org/A323227) ([L11 program](A323227.asm)): a(n) = [x^n] (-x^4 + 2*x^3 - x^2 + 2*x - 1)/((x - 1)^2*(2*x - 1)).
 * [A323397](http://oeis.org/A323397) ([L13 program](A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323610](http://oeis.org/A323610) ([L05 program](A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
-* [A323614](http://oeis.org/A323614) ([L07 program](A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
+* [A323614](http://oeis.org/A323614) ([L06 program](A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
 * [A323629](http://oeis.org/A323629) ([L19 program](A323629.asm)): List of 6-powerful numbers (for the definition of k-powerful see A323395).
 * [A323723](http://oeis.org/A323723) ([L12 program](A323723.asm)): a(n) = (-2 - (-1)^n*(-2 + n) + n + 2*n^3)/4.
 * [A323724](http://oeis.org/A323724) ([L15 program](A323724.asm)): a(n) = n*(2*(n - 2)*n + (-1)^n + 3)/4.
@@ -736,5 +736,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331528](http://oeis.org/A331528) ([L14 program](A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
 * [A331943](http://oeis.org/A331943) ([L09 program](A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
 * [A332044](http://oeis.org/A332044) ([L08 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
+* [A332495](http://oeis.org/A332495) ([L14 program](A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
 * [A332519](http://oeis.org/A332519) ([L05 program](A332519.asm)): a(n) = 4*(n^2+n-2).
 * [A332756](http://oeis.org/A332756) ([L12 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.

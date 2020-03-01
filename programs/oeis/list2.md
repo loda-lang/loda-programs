@@ -2747,9 +2747,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298784](http://oeis.org/A298784) ([L08 program](A298784.asm)): Expansion of (1 + x^2)*(1 + 3*x + x^2) / ((1 - x)*(1 - x^3)).
 * [A298785](http://oeis.org/A298785) ([L12 program](A298785.asm)): Partial sums of A298784.
 * [A298786](http://oeis.org/A298786) ([L06 program](A298786.asm)): Expansion of (x^4 + 2*x^3 + 4*x^2 + 2*x + 1) / ((1 - x)*(1 - x^3)).
-* [A298787](http://oeis.org/A298787) ([L14 program](A298787.asm)): Partial sums of A298786.
+* [A298787](http://oeis.org/A298787) ([L07 program](A298787.asm)): Partial sums of A298786.
 * [A298788](http://oeis.org/A298788) ([L17 program](A298788.asm)): Coordination sequence for bey tiling (or net) with respect to a trivalent node.
 * [A298789](http://oeis.org/A298789) ([L23 program](A298789.asm)): Coordination sequence for bey tiling (or net) with respect to a tetravalent node.
+* [A298790](http://oeis.org/A298790) ([L17 program](A298790.asm)): Partial sums of A298788.
 * [A298791](http://oeis.org/A298791) ([L14 program](A298791.asm)): Partial sums of A298789.
 * [A298881](http://oeis.org/A298881) ([L06 program](A298881.asm)): a(0) = 0; for n>0, a(n) = 6*n!.
 * [A298950](http://oeis.org/A298950) ([L13 program](A298950.asm)): Numbers k such that 5*k - 4 is a square.

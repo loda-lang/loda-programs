@@ -188,7 +188,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102591](http://oeis.org/A102591) ([L14 program](A102591.asm)): a(n)=sum k=0..n, C(2n+1,2k)3^(n-k).
 * [A102603](http://oeis.org/A102603) ([L03 program](A102603.asm)): 24n + 21.
 * [A102620](http://oeis.org/A102620) ([L17 program](A102620.asm)): Number of legal Go positions on a 1 X n board (for which 3^n is a trivial upper bound).
-* [A102652](http://oeis.org/A102652) ([L25 program](A102652.asm)): a(n) = 4 * floor(24*2^n/15) = 4*A077854(n).
+* [A102652](http://oeis.org/A102652) ([L08 program](A102652.asm)): a(n) = 4 * floor(24*2^n/15) = 4*A077854(n).
 * [A102653](http://oeis.org/A102653) ([L12 program](A102653.asm)): a(n) = 4 * floor(27*2^n/15).
 * [A102689](http://oeis.org/A102689) ([L03 program](A102689.asm)): a(n) = 10000*n + 2468.
 * [A102690](http://oeis.org/A102690) ([L17 program](A102690.asm)): Number of n-expodigital numbers (i.e., numbers m such that m^n has exactly n decimal digits).
@@ -514,8 +514,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110549](http://oeis.org/A110549) ([L11 program](A110549.asm)): Period 8: repeat [1, 2, 4, 3, 3, 4, 2, 1].
 * [A110550](http://oeis.org/A110550) ([L13 program](A110550.asm)): Periodic {1,3,2,4,4,2,3,1}.
 * [A110551](http://oeis.org/A110551) ([L10 program](A110551.asm)): Period 6: repeat [1, 3, 5, 5, 3, 1].
-* [A110568](http://oeis.org/A110568) ([L12 program](A110568.asm)): Period 6: repeat [1, 0, 2, 2, 0, 1].
-* [A110569](http://oeis.org/A110569) ([L13 program](A110569.asm)): Period 6: repeat [2, 1, 3, 3, 1, 2].
+* [A110568](http://oeis.org/A110568) ([L09 program](A110568.asm)): Period 6: repeat [1, 0, 2, 2, 0, 1].
+* [A110569](http://oeis.org/A110569) ([L10 program](A110569.asm)): Period 6: repeat [2, 1, 3, 3, 1, 2].
 * [A110591](http://oeis.org/A110591) ([L07 program](A110591.asm)): Number of digits in base-4 representation of n.
 * [A110592](http://oeis.org/A110592) ([L31 program](A110592.asm)): Number of digits in base-5 representation of n. String length of A007091.
 * [A110593](http://oeis.org/A110593) ([L07 program](A110593.asm)): a(1) = 3, a(n+1) = 2*(3^n).
@@ -4404,7 +4404,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184591](http://oeis.org/A184591) ([L29 program](A184591.asm)): floor[(n*(pi-1)-1]; complement of A184592.
 * [A184592](http://oeis.org/A184592) ([L10 program](A184592.asm)): floor[(n*(pi-1)+1)/(pi-2)]; complement of A184591.
 * [A184628](http://oeis.org/A184628) ([L04 program](A184628.asm)): Floor(1/frac((4+n^4)^(1/4))), where frac(x) is the fractional part of x.
-* [A184632](http://oeis.org/A184632) ([L11 program](A184632.asm)): Floor(1/{(8+n^4)^(1/4)}), where {}=fractional part.
+* [A184632](http://oeis.org/A184632) ([L10 program](A184632.asm)): Floor(1/{(8+n^4)^(1/4)}), where {}=fractional part.
 * [A184635](http://oeis.org/A184635) ([L06 program](A184635.asm)): a(n) = floor(1/{(n+n^4)^(1/4)}), where {} = fractional part.
 * [A184636](http://oeis.org/A184636) ([L07 program](A184636.asm)): floor(1/{(n^4+2*n)^(1/4)}), where {}=fractional part.
 * [A184637](http://oeis.org/A184637) ([L11 program](A184637.asm)): a(n) = floor(1/{(n^4+3*n)^(1/4)}), where {}=fractional part.
@@ -4432,7 +4432,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185065](http://oeis.org/A185065) ([L04 program](A185065.asm)): a(n) = n*(n^3 + 2).
 * [A185096](http://oeis.org/A185096) ([L13 program](A185096.asm)): Let T(n) = n(n+1)/2 be the n-th triangular number (A000217); a(n) = T(8T(n)).
 * [A185114](http://oeis.org/A185114) ([L04 program](A185114.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 4.
-* [A185115](http://oeis.org/A185115) ([L05 program](A185115.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 5.
+* [A185115](http://oeis.org/A185115) ([L04 program](A185115.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 5.
 * [A185116](http://oeis.org/A185116) ([L05 program](A185116.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 6.
 * [A185117](http://oeis.org/A185117) ([L05 program](A185117.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 7.
 * [A185118](http://oeis.org/A185118) ([L05 program](A185118.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 8.
@@ -5087,7 +5087,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199318](http://oeis.org/A199318) ([L06 program](A199318.asm)): 3*6^n+1.
 * [A199319](http://oeis.org/A199319) ([L04 program](A199319.asm)): 4*6^n+1.
 * [A199320](http://oeis.org/A199320) ([L04 program](A199320.asm)): 5*6^n+1.
-* [A199321](http://oeis.org/A199321) ([L05 program](A199321.asm)): 7*6^n+1.
+* [A199321](http://oeis.org/A199321) ([L04 program](A199321.asm)): 7*6^n+1.
 * [A199344](http://oeis.org/A199344) ([L15 program](A199344.asm)): Least integer > n having a digital sum larger than that of n.
 * [A199394](http://oeis.org/A199394) ([L12 program](A199394.asm)): The number of ways to color the vertices of all (11) simple unlabeled graphs on 4 nodes using at most n colors.
 * [A199411](http://oeis.org/A199411) ([L04 program](A199411.asm)): 8*6^n+1.

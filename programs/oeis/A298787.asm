@@ -5,11 +5,6 @@ mov $2,$0
 mov $1,5
 add $2,1
 mul $2,$0
-mov $4,6
-gcd $3,6
 mul $1,$2
 div $1,3
-lpb $0,1
-  mod $4,6
-lpe
 add $1,1
