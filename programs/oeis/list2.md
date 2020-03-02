@@ -110,6 +110,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204708](http://oeis.org/A204708) ([L20 program](A204708.asm)): Number of (n+1) X 4 0..1 arrays with the permanents of all 2 X 2 subblocks equal and nonzero.
 * [A204769](http://oeis.org/A204769) ([L22 program](A204769.asm)): a(n) = 151*(n-1) - a(n-1) with n>1, a(1)=46.
 * [A204904](http://oeis.org/A204904) ([L04 program](A204904.asm)): p(n)-q(n), where (p(n), q(n)) is the least pair of odd primes for which n divides p(n)-q(n).
+* [A204988](http://oeis.org/A204988) ([L13 program](A204988.asm)): The index j < k such that n divides 2^k - 2^j, where k is the least index (A204987) for which such j exists.
 * [A205184](http://oeis.org/A205184) ([L19 program](A205184.asm)): Period 12: repeat (1, 8, 4, 9, 7, 8, 7, 9, 4, 8, 1, 9).
 * [A205185](http://oeis.org/A205185) ([L12 program](A205185.asm)): Period 6: repeat [1, 8, 9, 8, 1, 0].
 * [A205248](http://oeis.org/A205248) ([L07 program](A205248.asm)): Number of (n+1) X 2 0..1 arrays with the number of clockwise edge increases in every 2 X 2 subblock the same.
@@ -1110,7 +1111,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242669](http://oeis.org/A242669) ([L03 program](A242669.asm)): a(n) = n*floor(n/3).
 * [A242709](http://oeis.org/A242709) ([L18 program](A242709.asm)): Nonequivalent ways to place two different markers (e.g., a pair of Go stones, black and white) on an n X n grid.
 * [A242771](http://oeis.org/A242771) ([L08 program](A242771.asm)): Number of integer points in a certain quadrilateral scaled by a factor of n (another version).
-* [A242774](http://oeis.org/A242774) ([L11 program](A242774.asm)): a(n) = ceiling( n / 2 ) + ceiling( n / 3 ).
+* [A242774](http://oeis.org/A242774) ([L10 program](A242774.asm)): a(n) = ceiling( n / 2 ) + ceiling( n / 3 ).
 * [A242856](http://oeis.org/A242856) ([L21 program](A242856.asm)): Number of 2-matchings of the n X n grid graph.
 * [A242954](http://oeis.org/A242954) ([L10 program](A242954.asm)): a(n) = Product_{i=1..n} A234957(i).
 * [A242963](http://oeis.org/A242963) ([L04 program](A242963.asm)): Numbers n such that A242962(n) = sigma(n) = A000203(n).
@@ -2014,6 +2015,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271060](http://oeis.org/A271060) ([L15 program](A271060.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 261", based on the 5-celled von Neumann neighborhood.
 * [A271114](http://oeis.org/A271114) ([L04 program](A271114.asm)): Expansion of (1+x)*(2+x)/(1-x)^2.
 * [A271209](http://oeis.org/A271209) ([L04 program](A271209.asm)): a(n) = n^5 + n + 1.
+* [A271216](http://oeis.org/A271216) ([L15 program](A271216.asm)): a(n) = 2^n floor(n/2)!
 * [A271220](http://oeis.org/A271220) ([L20 program](A271220.asm)): Concatenate sum of digits of previous term and product of digits of previous term, starting with 6.
 * [A271324](http://oeis.org/A271324) ([L07 program](A271324.asm)): a(n) = n + floor(n/4) + (n mod 4).
 * [A271342](http://oeis.org/A271342) ([L09 program](A271342.asm)): Sum of all even divisors of all positive integers <= n.
@@ -2517,6 +2519,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288937](http://oeis.org/A288937) ([L14 program](A288937.asm)): Positions of 0 in A288936; complement of A288938.
 * [A288938](http://oeis.org/A288938) ([L20 program](A288938.asm)): Positions of 1 in A288936; complement of A288937.
 * [A288958](http://oeis.org/A288958) ([L10 program](A288958.asm)): Number of cliques in the n X n rook graph.
+* [A288959](http://oeis.org/A288959) ([L10 program](A288959.asm)): a(n) = n^2*(n^2 - 1)^2/2.
 * [A288961](http://oeis.org/A288961) ([L10 program](A288961.asm)): Number of 3-cycles in the n X n rook graph.
 * [A288997](http://oeis.org/A288997) ([L37 program](A288997.asm)): Fixed point of the mapping 00->0010, 01->001, 10->001, starting with 00.
 * [A289001](http://oeis.org/A289001) ([L37 program](A289001.asm)): Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.

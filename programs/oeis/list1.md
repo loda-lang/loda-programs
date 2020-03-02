@@ -2225,7 +2225,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152271](http://oeis.org/A152271) ([L05 program](A152271.asm)): a(n)=1 for even n and (n+1)/2 for odd n.
 * [A152291](http://oeis.org/A152291) ([L07 program](A152291.asm)): a(n) = (n+1)^floor((n-1)/2).
 * [A152390](http://oeis.org/A152390) ([L43 program](A152390.asm)): Arises in enumerating non-degenerate colorings in Brook's Theorem.
-* [A152423](http://oeis.org/A152423) ([L08 program](A152423.asm)): A version of the Jacobus problem. Counting people out of a circle. Who will be the survivor?
+* [A152423](http://oeis.org/A152423) ([L08 program](A152423.asm)): A variation of the Josephus problem, removing every other person, starting with person 1; a(n) is the last person remaining.
 * [A152457](http://oeis.org/A152457) ([L08 program](A152457.asm)): Partial sums of A027444.
 * [A152467](http://oeis.org/A152467) ([L02 program](A152467.asm)): a(n) = floor(n/6).
 * [A152524](http://oeis.org/A152524) ([L14 program](A152524.asm)): a(n) is the number of L-bit words in which, if up to k bits are perturbed, the resulting change in unsigned L-bit value is n, for L=8 and k=7.
@@ -2304,7 +2304,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A153465](http://oeis.org/A153465) ([L05 program](A153465.asm)): 9*4^n - 2.
 * [A153466](http://oeis.org/A153466) ([L23 program](A153466.asm)): a(n) = A027941(n) + A027941(n+6).
 * [A153485](http://oeis.org/A153485) ([L10 program](A153485.asm)): Sum of all aliquot divisors of all positive integers <= n.
-* [A153509](http://oeis.org/A153509) ([L11 program](A153509.asm)): Period 9: repeat 6,6,6,3,3,3,0,0,0.
+* [A153509](http://oeis.org/A153509) ([L06 program](A153509.asm)): Period 9: repeat 6,6,6,3,3,3,0,0,0.
 * [A153642](http://oeis.org/A153642) ([L10 program](A153642.asm)): a(n) = 4*n^2 + 24*n + 8.
 * [A153643](http://oeis.org/A153643) ([L09 program](A153643.asm)): Jacobsthal numbers A001045 incremented by 2.
 * [A153644](http://oeis.org/A153644) ([L12 program](A153644.asm)): a(n) = 4*n^2 + 28*n + 10.
@@ -3376,7 +3376,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168123](http://oeis.org/A168123) ([L06 program](A168123.asm)): n^2*(n^5+1)/2.
 * [A168124](http://oeis.org/A168124) ([L09 program](A168124.asm)): a(n) = n^2*(n^6+1)/2.
 * [A168125](http://oeis.org/A168125) ([L06 program](A168125.asm)): a(n) = n^2*(n^7+1)/2.
-* [A168126](http://oeis.org/A168126) ([L07 program](A168126.asm)): a(n) = n^2*(n^8+1)/2.
+* [A168126](http://oeis.org/A168126) ([L05 program](A168126.asm)): a(n) = n^2*(n^8+1)/2.
 * [A168176](http://oeis.org/A168176) ([L07 program](A168176.asm)): a(n) = n^2*(n^10 + 1)/2.
 * [A168178](http://oeis.org/A168178) ([L12 program](A168178.asm)): a(n) = n^3*(n^2 + 1)/2.
 * [A168179](http://oeis.org/A168179) ([L05 program](A168179.asm)): a(n) = n^3*(n^4 + 1)/2.
@@ -4012,7 +4012,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175968](http://oeis.org/A175968) ([L15 program](A175968.asm)): Complement of A175967(n), where A175967(n) = the lexicographically earliest sequence with first differences as increasing sequence of nonprimes A018252(n).
 * [A175969](http://oeis.org/A175969) ([L19 program](A175969.asm)): Complement of A014284(n), where A014284(n) = the lexicographically earliest sequence with first differences as increasing sequence of primes A000040.
 * [A175970](http://oeis.org/A175970) ([L09 program](A175970.asm)): Complement of A051349(n), where A051349(n) = the lexicographically earliest sequence with first differences as increasing sequence of composites A002808(n).
-* [A175976](http://oeis.org/A175976) ([L15 program](A175976.asm)): 4^n-3*n+1.
+* [A175976](http://oeis.org/A175976) ([L09 program](A175976.asm)): 4^n-3*n+1.
 * [A176010](http://oeis.org/A176010) ([L39 program](A176010.asm)): Positive numbers n such that n^2=2 mod(97)
 * [A176027](http://oeis.org/A176027) ([L10 program](A176027.asm)): Binomial transform of A005563.
 * [A176040](http://oeis.org/A176040) ([L03 program](A176040.asm)): Periodic sequence: Repeat 3, 1.
@@ -4847,7 +4847,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A194050](http://oeis.org/A194050) ([L15 program](A194050.asm)): Natural fractal sequence of A014739.
 * [A194055](http://oeis.org/A194055) ([L12 program](A194055.asm)): Natural fractal sequence of A000071 (Fibonacci numbers minus 1; a rectangular array, by antidiagonals.
 * [A194063](http://oeis.org/A194063) ([L17 program](A194063.asm)): Natural fractal sequence of A006578.
-* [A194069](http://oeis.org/A194069) ([L08 program](A194069.asm)): 1+floor((2/3)*n^2).
+* [A194069](http://oeis.org/A194069) ([L06 program](A194069.asm)): 1+floor((2/3)*n^2).
 * [A194073](http://oeis.org/A194073) ([L06 program](A194073.asm)): a(n) = 1 + floor((3/4)*n^2).
 * [A194074](http://oeis.org/A194074) ([L16 program](A194074.asm)): Natural fractal sequence of A194073.
 * [A194145](http://oeis.org/A194145) ([L23 program](A194145.asm)): Beatty sequence for -1+sqrt(6), a(n)=floor(n*(-1+sqrt(6))); complement of A194146.
