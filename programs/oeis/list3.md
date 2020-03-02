@@ -537,11 +537,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317614](http://oeis.org/A317614) ([L14 program](A317614.asm)): a(n) = (1/2)*(n^3 + n*(n mod 2)).
 * [A317633](http://oeis.org/A317633) ([L07 program](A317633.asm)): Numbers congruent to {1, 7, 9} mod 10.
 * [A317637](http://oeis.org/A317637) ([L07 program](A317637.asm)): a(n) = n*(n+1)*(n+3).
-* [A317657](http://oeis.org/A317657) ([L17 program](A317657.asm)): Numbers congruent to {15, 75, 95} mod 100.
+* [A317657](http://oeis.org/A317657) ([L08 program](A317657.asm)): Numbers congruent to {15, 75, 95} mod 100.
 * [A317790](http://oeis.org/A317790) ([L06 program](A317790.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-4) - 2*(n-5) + a(n-6) for n>5, a(0)=a(1)=1, a(2)=a(3)=7, a(4)=13, a(5)=19.
 * [A317849](http://oeis.org/A317849) ([L27 program](A317849.asm)): Number of states of the Finite State Automaton Gn accepting the language of maximal (or minimal) lexicographic representatives of elements in the positive braid monoid An.
 * [A317984](http://oeis.org/A317984) ([L12 program](A317984.asm)): Expansion of 140*x*(1 + 4*x + x^2) / (1 - x)^5.
-* [A318054](http://oeis.org/A318054) ([L11 program](A318054.asm)): a(n) = n*(n+1)*(n^2+n+22)/24.
+* [A318054](http://oeis.org/A318054) ([L11 program](A318054.asm)): a(n) = n*(n + 1)*(n^2 + n + 22)/24.
 * [A318111](http://oeis.org/A318111) ([L12 program](A318111.asm)): Number of maximal 1-intersecting families of 2-sets of [n] = {1,2,...,n}.
 * [A318159](http://oeis.org/A318159) ([L47 program](A318159.asm)): Figurate numbers based on the small stellated dodecahedron: a(n) = n*(21*n^2 - 33*n + 14)/2.
 * [A318274](http://oeis.org/A318274) ([L12 program](A318274.asm)): Triangle read by rows: T(n,k) = n for 0 < k < n and T(n,0) = T(n,n) = 1.

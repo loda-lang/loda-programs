@@ -1743,7 +1743,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A137325](http://oeis.org/A137325) ([L18 program](A137325.asm)): Number of terms in the Janet periodic table of the elements 32 columns: ordered 14 2's, 10 4's, 6 6's, 2 8's.
 * [A137344](http://oeis.org/A137344) ([L18 program](A137344.asm)): a(n)=4a(n-2). Also 3*A084221.
 * [A137362](http://oeis.org/A137362) ([L18 program](A137362.asm)): Positions at which the truncated square root of triangular numbers is unique.
-* [A137397](http://oeis.org/A137397) ([L09 program](A137397.asm)): Number of distinct palindromic subwords in the binary representation of n.
+* [A137397](http://oeis.org/A137397) ([L07 program](A137397.asm)): Number of distinct palindromic subwords in the binary representation of n.
 * [A137483](http://oeis.org/A137483) ([L07 program](A137483.asm)): a(n+1) = 9*a(n) - 6, a(0) = 2.
 * [A137495](http://oeis.org/A137495) ([L16 program](A137495.asm)): A098601(2n)+A098601(2n+1)
 * [A137531](http://oeis.org/A137531) ([L10 program](A137531.asm)): a(n) = 3*a(n-1) - 2*a(n-2) + a(n-3).
@@ -3056,7 +3056,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A163071](http://oeis.org/A163071) ([L12 program](A163071.asm)): a(n) = ((4+sqrt(5))*(3+sqrt(5))^n + (4-sqrt(5))*(3-sqrt(5))^n)/2.
 * [A163102](http://oeis.org/A163102) ([L06 program](A163102.asm)): a(n) = n^2*(n+1)^2/2.
 * [A163114](http://oeis.org/A163114) ([L13 program](A163114.asm)): a(n) = 5*a(n-2) for n > 2; a(1) = 3, a(2) = 5.
-* [A163139](http://oeis.org/A163139) ([L19 program](A163139.asm)): First differences of A163128.
+* [A163139](http://oeis.org/A163139) ([L12 program](A163139.asm)): First differences of A163128.
 * [A163271](http://oeis.org/A163271) ([L08 program](A163271.asm)): Numerators of fractions in a 'zero-transform' approximation of sqrt(2) by means of a(n) = (a(n-1) + c)/(a(n-1) + 1) with c=2 and a(1)=0.
 * [A163274](http://oeis.org/A163274) ([L15 program](A163274.asm)): a(n) = n^4*(n+1)^2/2.
 * [A163276](http://oeis.org/A163276) ([L06 program](A163276.asm)): a(n) = n^6*(n+1)^2/2.
@@ -3388,6 +3388,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168185](http://oeis.org/A168185) ([L06 program](A168185.asm)): Characteristic function of numbers that are not multiples of 12.
 * [A168186](http://oeis.org/A168186) ([L06 program](A168186.asm)): Positive numbers that are not multiples of 12.
 * [A168187](http://oeis.org/A168187) ([L11 program](A168187.asm)): a(n) = n^3*(n^6 + 1)/2.
+* [A168188](http://oeis.org/A168188) ([L07 program](A168188.asm)): a(n) = n^3*(n^7 + 1)/2.
 * [A168189](http://oeis.org/A168189) ([L09 program](A168189.asm)): a(n) = n^3*(n^8 + 1)/2.
 * [A168190](http://oeis.org/A168190) ([L06 program](A168190.asm)): a(n) = n^3*(n^9 + 1)/2.
 * [A168192](http://oeis.org/A168192) ([L07 program](A168192.asm)): a(n) = n^4*(n^2 + 1)/2.
@@ -3490,7 +3491,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168486](http://oeis.org/A168486) ([L11 program](A168486.asm)): Numbers that are congruent to {2, 5} mod 11.
 * [A168489](http://oeis.org/A168489) ([L05 program](A168489.asm)): Numbers that are congruent to {7,11} mod 12.
 * [A168526](http://oeis.org/A168526) ([L07 program](A168526.asm)): a(n) = n^6*(n + 1)/2.
-* [A168527](http://oeis.org/A168527) ([L10 program](A168527.asm)): a(n) = n^6*(n^2 + 1)/2.
+* [A168527](http://oeis.org/A168527) ([L05 program](A168527.asm)): a(n) = n^6*(n^2 + 1)/2.
 * [A168538](http://oeis.org/A168538) ([L12 program](A168538.asm)): a(n) = (n+6)*(n+1)*(n^2 + 7*n + 16)/4.
 * [A168547](http://oeis.org/A168547) ([L08 program](A168547.asm)): a(n) = 1 - 2*n^2 + 4*n*(1 + 2*n^2)/3.
 * [A168555](http://oeis.org/A168555) ([L06 program](A168555.asm)): a(n) = n^6*(n^3 + 1)/2.
@@ -4439,7 +4440,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185119](http://oeis.org/A185119) ([L06 program](A185119.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 9.
 * [A185170](http://oeis.org/A185170) ([L14 program](A185170.asm)): a(n) = floor( (2*n^2 - 6*n + 9) / 5).
 * [A185212](http://oeis.org/A185212) ([L09 program](A185212.asm)): a(n) = 12*n^2 - 8*n + 1.
-* [A185270](http://oeis.org/A185270) ([L15 program](A185270.asm)): a(n) = 648 * n^6.
+* [A185270](http://oeis.org/A185270) ([L13 program](A185270.asm)): a(n) = 648 * n^6.
 * [A185273](http://oeis.org/A185273) ([L12 program](A185273.asm)): Period 6: repeat [1, 6, 5, 6, 1, 0].
 * [A185294](http://oeis.org/A185294) ([L15 program](A185294.asm)): Number of disconnected 9-regular simple graphs on 2n vertices with girth at least 4.
 * [A185355](http://oeis.org/A185355) ([L12 program](A185355.asm)): Number of n X n symmetric (0,1)-matrices containing four ones.
@@ -4592,7 +4593,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188083](http://oeis.org/A188083) ([L34 program](A188083.asm)): [nr+kr]-[nr]-[kr], where r=sqrt(3), k=2, [ ]=floor.
 * [A188086](http://oeis.org/A188086) ([L19 program](A188086.asm)): [nr+kr]-[nr]-[kr], where r=sqrt(3), k=3, [ ]=floor.
 * [A188093](http://oeis.org/A188093) ([L30 program](A188093.asm)): [nr+kr]-[nr]-[kr], where r=sqrt(3), k=6, [ ]=floor.
-* [A188129](http://oeis.org/A188129) ([L12 program](A188129.asm)): a(n) = (2^n+3)^2-8.
+* [A188129](http://oeis.org/A188129) ([L08 program](A188129.asm)): a(n) = (2^n+3)^2-8.
 * [A188134](http://oeis.org/A188134) ([L09 program](A188134.asm)): a(4*n) = n, a(1+2*n) = 4+8*n, a(2+4*n) = 2+4*n.
 * [A188135](http://oeis.org/A188135) ([L06 program](A188135.asm)): a(n) = 8*n^2 + 2*n + 1.
 * [A188148](http://oeis.org/A188148) ([L05 program](A188148.asm)): Number of 3-step self-avoiding walks on an n X n square summed over all starting positions.
@@ -4731,7 +4732,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191821](http://oeis.org/A191821) ([L13 program](A191821.asm)): a(n) = n*(2^n - n + 1) + 2^(n-1)*(n^2 - 3*n + 2).
 * [A191871](http://oeis.org/A191871) ([L10 program](A191871.asm)): a(n) = numerator(n^2 / 2^n).
 * [A191899](http://oeis.org/A191899) ([L05 program](A191899.asm)): Number of compositions of odd natural numbers into 8 parts <=n
-* [A191900](http://oeis.org/A191900) ([L06 program](A191900.asm)): Number of compositions of odd natural numbers into 7 parts <=n
+* [A191900](http://oeis.org/A191900) ([L04 program](A191900.asm)): Number of compositions of odd natural numbers into 7 parts <=n
 * [A191901](http://oeis.org/A191901) ([L04 program](A191901.asm)): Number of compositions of odd natural numbers into 6 parts <= n.
 * [A191902](http://oeis.org/A191902) ([L04 program](A191902.asm)): Number of compositions of odd positive integers into 5 parts <= n.
 * [A191903](http://oeis.org/A191903) ([L04 program](A191903.asm)): Number of compositions of odd natural numbers into 4 parts <=n

@@ -7,8 +7,5 @@ pow $1,$2
 gcd $3,3
 add $1,$3
 pow $1,2
-lpb $0,1
-  mul $0,5
-lpe
 sub $1,16
 add $1,8
