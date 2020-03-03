@@ -6,7 +6,4 @@ mov $1,$2
 pow $1,2
 mul $2,$1
 mul $1,$2
-lpb $0,1
-  div $2,$3
-lpe
 add $1,$2
