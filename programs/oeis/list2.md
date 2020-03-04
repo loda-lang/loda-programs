@@ -756,6 +756,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227071](http://oeis.org/A227071) ([L08 program](A227071.asm)): Let s(m) = the set of k > 0 such that k^m ends with k. Then a(n) = least m such that s(m) = s(n).
 * [A227106](http://oeis.org/A227106) ([L10 program](A227106.asm)): Numerators of harmonic mean H(n,3), n >= 0.
 * [A227121](http://oeis.org/A227121) ([L15 program](A227121.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of zero, with rows and columns of the latter in lexicographically nondecreasing order.
+* [A227140](http://oeis.org/A227140) ([L06 program](A227140.asm)): a(n) = n/gcd(n,2^5), n >= 0.
 * [A227148](http://oeis.org/A227148) ([L09 program](A227148.asm)): Numbers n for which the sum of digits is even when n is written in the factorial base (A007623).
 * [A227149](http://oeis.org/A227149) ([L12 program](A227149.asm)): Numbers n for which the sum of digits is odd when n is written in the factorial base (A007623).
 * [A227161](http://oeis.org/A227161) ([L11 program](A227161.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of one or less, with rows and columns of the latter in lexicographically nondecreasing order.
@@ -1366,7 +1367,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A251091](http://oeis.org/A251091) ([L10 program](A251091.asm)): a(n) = n^2 / gcd(n+2, 4).
 * [A251599](http://oeis.org/A251599) ([L11 program](A251599.asm)): Centers of rows of the triangular array formed by the natural numbers.
 * [A251630](http://oeis.org/A251630) ([L08 program](A251630.asm)): Column sums of the n X n square array filled with numbers from 1 to n^2, row by row, from left to right.
-* [A251701](http://oeis.org/A251701) ([L07 program](A251701.asm)): a(n) = 3^n + n^2.
+* [A251701](http://oeis.org/A251701) ([L05 program](A251701.asm)): a(n) = 3^n + n^2.
 * [A251743](http://oeis.org/A251743) ([L11 program](A251743.asm)): Pairs of nodes in a complete binary tree that are at an absolute height difference of less than 2 from each other.
 * [A251754](http://oeis.org/A251754) ([L16 program](A251754.asm)): Digital root of A027444(n) = n + n^2 + n^3, n>=1. Repeat(3, 5, 3, 3, 2, 6, 3, 8, 9).
 * [A251780](http://oeis.org/A251780) ([L16 program](A251780.asm)): Digital root of A069778(n-1) = n^3 - n^2 + 1, n >= 1. Repeat(1, 6, 3, 7, 6, 6, 4, 6, 9).

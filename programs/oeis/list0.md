@@ -1358,7 +1358,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017185](http://oeis.org/A017185) ([L03 program](A017185.asm)): 9*n+2.
 * [A017186](http://oeis.org/A017186) ([L04 program](A017186.asm)): a(n) = (9*n + 2)^2.
 * [A017187](http://oeis.org/A017187) ([L51 program](A017187.asm)): a(n) = (9*n + 2)^3.
-* [A017188](http://oeis.org/A017188) ([L10 program](A017188.asm)): a(n) = (9*n + 2)^4.
+* [A017188](http://oeis.org/A017188) ([L09 program](A017188.asm)): a(n) = (9*n + 2)^4.
 * [A017197](http://oeis.org/A017197) ([L03 program](A017197.asm)): a(n) = 9*n + 3.
 * [A017198](http://oeis.org/A017198) ([L05 program](A017198.asm)): a(n) = (9*n + 3)^2.
 * [A017199](http://oeis.org/A017199) ([L06 program](A017199.asm)): a(n) = (9*n + 3)^3.
@@ -2275,7 +2275,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A030241](http://oeis.org/A030241) ([L10 program](A030241.asm)): Minimal determinant of any n-dimensional even lattice.
 * [A030297](http://oeis.org/A030297) ([L07 program](A030297.asm)): a(n) = n*(n + a(n-1)).
 * [A030300](http://oeis.org/A030300) ([L07 program](A030300.asm)): Runs have lengths 2^n, n >= 0.
-* [A030301](http://oeis.org/A030301) ([L10 program](A030301.asm)): n-th run has length 2^(n-1).
+* [A030301](http://oeis.org/A030301) ([L09 program](A030301.asm)): n-th run has length 2^(n-1).
 * [A030379](http://oeis.org/A030379) ([L47 program](A030379.asm)): Length of n-th run of digit 0 in A030373.
 * [A030392](http://oeis.org/A030392) ([L47 program](A030392.asm)): Length of n-th run of digit 0 in A030386.
 * [A030439](http://oeis.org/A030439) ([L15 program](A030439.asm)): a(n+1) = smallest number not containing any digits of a(n), working in base 3.
@@ -2876,7 +2876,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040719](http://oeis.org/A040719) ([L15 program](A040719.asm)): Continued fraction for sqrt(747).
 * [A040728](http://oeis.org/A040728) ([L10 program](A040728.asm)): Continued fraction for sqrt(756).
 * [A040756](http://oeis.org/A040756) ([L04 program](A040756.asm)): Continued fraction for sqrt(785).
-* [A040757](http://oeis.org/A040757) ([L10 program](A040757.asm)): Continued fraction for sqrt(786).
+* [A040757](http://oeis.org/A040757) ([L07 program](A040757.asm)): Continued fraction for sqrt(786).
 * [A040759](http://oeis.org/A040759) ([L10 program](A040759.asm)): Continued fraction for sqrt(788).
 * [A040762](http://oeis.org/A040762) ([L10 program](A040762.asm)): Continued fraction for sqrt(791).
 * [A040763](http://oeis.org/A040763) ([L17 program](A040763.asm)): Continued fraction for sqrt(792).
@@ -4236,7 +4236,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060832](http://oeis.org/A060832) ([L10 program](A060832.asm)): a(n) = Sum_{k>0} floor(n/k!).
 * [A060834](http://oeis.org/A060834) ([L18 program](A060834.asm)): a(n) = 6*n^2 + 6*n + 31.
 * [A060867](http://oeis.org/A060867) ([L12 program](A060867.asm)): a(n) = (2^n - 1)^2.
-* [A060883](http://oeis.org/A060883) ([L08 program](A060883.asm)): a(n) = n^6 + n^3 + 1.
+* [A060883](http://oeis.org/A060883) ([L05 program](A060883.asm)): a(n) = n^6 + n^3 + 1.
 * [A060884](http://oeis.org/A060884) ([L11 program](A060884.asm)): a(n) = n^4 - n^3 + n^2 - n + 1.
 * [A060886](http://oeis.org/A060886) ([L06 program](A060886.asm)): a(n) = n^4 - n^2 + 1.
 * [A060888](http://oeis.org/A060888) ([L06 program](A060888.asm)): a(n) = n^6 - n^5 + n^4 - n^3 + n^2 - n + 1.
@@ -4692,6 +4692,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A069996](http://oeis.org/A069996) ([L20 program](A069996.asm)): Number of spanning trees on the bipartite graph K_{3,n}.
 * [A070004](http://oeis.org/A070004) ([L11 program](A070004.asm)): Numbers of the form 5*2^n or 5*3*2^n; a(n) = 5*A029744(n).
 * [A070189](http://oeis.org/A070189) ([L02 program](A070189.asm)): 12345679n.
+* [A070260](http://oeis.org/A070260) ([L14 program](A070260.asm)): Third diagonal of triangle defined in A051537.
 * [A070335](http://oeis.org/A070335) ([L18 program](A070335.asm)): a(n) = 2^n mod 23.
 * [A070336](http://oeis.org/A070336) ([L27 program](A070336.asm)): a(n) = 2^n mod 25.
 * [A070337](http://oeis.org/A070337) ([L25 program](A070337.asm)): a(n) = 2^n mod 27.
@@ -4943,6 +4944,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070658](http://oeis.org/A070658) ([L41 program](A070658.asm)): n^6 mod 35.
 * [A070659](http://oeis.org/A070659) ([L12 program](A070659.asm)): n^6 mod 36.
 * [A070661](http://oeis.org/A070661) ([L44 program](A070661.asm)): n^6 mod 38.
+* [A070662](http://oeis.org/A070662) ([L07 program](A070662.asm)): n^6 mod 39.
 * [A070663](http://oeis.org/A070663) ([L10 program](A070663.asm)): n^6 mod 40.
 * [A070665](http://oeis.org/A070665) ([L09 program](A070665.asm)): n^6 mod 42.
 * [A070684](http://oeis.org/A070684) ([L27 program](A070684.asm)): n^6 mod 44.
@@ -5049,6 +5051,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A072819](http://oeis.org/A072819) ([L11 program](A072819.asm)): Variance of time for a random walk starting at 0 to reach one of the boundaries at +n or -n for the first time.
 * [A072833](http://oeis.org/A072833) ([L09 program](A072833.asm)): Exponents occurring in expansion of F_6(q^2).
 * [A072834](http://oeis.org/A072834) ([L11 program](A072834.asm)): Exponents occurring in expansion of F_8(q^2).
+* [A072863](http://oeis.org/A072863) ([L17 program](A072863.asm)): a(n) = 2^(n-3)*(n^2+3*n+8).
 * [A072944](http://oeis.org/A072944) ([L17 program](A072944.asm)): a(1)=2, a(n+1) = 2*a(n) - phi(a(n)) where phi is the Euler totient function A000010.
 * [A072946](http://oeis.org/A072946) ([L18 program](A072946.asm)): Coefficient of the highest power of q in the expansion of nu(0)=1, nu(1)=b and for n>=2, nu(n)=b*nu(n-1)+lambda*(n-1)_q*nu(n-2) with (b,lambda)=(2,2), where (n)_q=(1+q+...+q^(n-1)) and q is a root of unity.
 * [A072968](http://oeis.org/A072968) ([L27 program](A072968.asm)): Least k>0 such that the last digit of (n+k)^(n+k) is the same as the last digit of n^n.
