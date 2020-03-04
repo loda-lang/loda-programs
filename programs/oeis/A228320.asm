@@ -9,7 +9,6 @@ mul $2,$3
 sub $2,2
 mov $1,$2
 pow $1,2
-div $0,0
 sub $1,20164
 div $1,96
 add $1,203

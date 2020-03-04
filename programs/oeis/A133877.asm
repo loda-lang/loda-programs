@@ -4,8 +4,4 @@
 mov $1,$0
 div $1,7
 add $1,1
-lpb $0,1
-  mod $2,$3
-  sub $4,$2
-lpe
 mod $1,7
