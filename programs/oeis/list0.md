@@ -3349,7 +3349,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047493](http://oeis.org/A047493) ([L09 program](A047493.asm)): Numbers that are congruent to {1, 4, 5, 7} mod 8.
 * [A047494](http://oeis.org/A047494) ([L13 program](A047494.asm)): Numbers that are congruent to {0, 1, 4, 5, 7} mod 8.
 * [A047495](http://oeis.org/A047495) ([L08 program](A047495.asm)): Numbers that are congruent to {2, 4, 5, 7} mod 8.
-* [A047496](http://oeis.org/A047496) ([L07 program](A047496.asm)): Numbers that are congruent to {0, 2, 4, 5, 7} mod 8.
+* [A047496](http://oeis.org/A047496) ([L05 program](A047496.asm)): Numbers that are congruent to {0, 2, 4, 5, 7} mod 8.
 * [A047497](http://oeis.org/A047497) ([L04 program](A047497.asm)): Numbers that are congruent to {1, 2, 4, 5, 7} mod 8.
 * [A047498](http://oeis.org/A047498) ([L06 program](A047498.asm)): Numbers that are congruent to {0, 1, 2, 4, 5, 7} mod 8.
 * [A047499](http://oeis.org/A047499) ([L12 program](A047499.asm)): Numbers that are congruent to {3, 4, 5, 7} mod 8.

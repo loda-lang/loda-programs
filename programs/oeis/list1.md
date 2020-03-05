@@ -276,6 +276,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104626](http://oeis.org/A104626) ([L22 program](A104626.asm)): Numbers having three 1's in their base-phi representation.
 * [A104661](http://oeis.org/A104661) ([L02 program](A104661.asm)): Duplicate of A020725.
 * [A104675](http://oeis.org/A104675) ([L04 program](A104675.asm)): a(n) = C(n+1,n) * C(n+6,1).
+* [A104676](http://oeis.org/A104676) ([L15 program](A104676.asm)): a(n) = binomial(n+2,2) * binomial(n+7,2).
 * [A104686](http://oeis.org/A104686) ([L06 program](A104686.asm)): n*(n+1)/2 (mod 6).
 * [A104721](http://oeis.org/A104721) ([L20 program](A104721.asm)): Expansion of (1+x)^2/(1-4*x^2).
 * [A104738](http://oeis.org/A104738) ([L12 program](A104738.asm)): Positions of records in A104706.
@@ -1054,7 +1055,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125837](http://oeis.org/A125837) ([L06 program](A125837.asm)): Numbers whose base 8 or octal representation is 6666666......6.
 * [A125857](http://oeis.org/A125857) ([L04 program](A125857.asm)): Numbers whose base-9 representation is 22222222.......2.
 * [A125925](http://oeis.org/A125925) ([L14 program](A125925.asm)): Sprague-Grundy values for octal game .351.
-* [A125962](http://oeis.org/A125962) ([L05 program](A125962.asm)): Numbers whose base-9 representation is 555555555......5.
+* [A125962](http://oeis.org/A125962) ([L04 program](A125962.asm)): Numbers whose base-9 representation is 555555555......5.
 * [A126129](http://oeis.org/A126129) ([L39 program](A126129.asm)): y-coordinate of n in the magic square A124472.
 * [A126184](http://oeis.org/A126184) ([L19 program](A126184.asm)): Number of hex trees with n edges and having no nonroot nodes of outdegree 2.
 * [A126235](http://oeis.org/A126235) ([L07 program](A126235.asm)): Minimum length of a codeword in Huffman encoding of n symbols, where the k-th symbol has frequency k.
@@ -3189,7 +3190,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165240](http://oeis.org/A165240) ([L16 program](A165240.asm)): Integers of the form (a+b+c+..+z)/z where (a,b,c,..,z) is a list of 2 or more distinct consecutive nonprimes.
 * [A165351](http://oeis.org/A165351) ([L04 program](A165351.asm)): Numerator of 3n/2.
 * [A165355](http://oeis.org/A165355) ([L07 program](A165355.asm)): a(n) = 3n + 1 if n is even, or a(n) = (3n + 1)/2 if n is odd.
-* [A165367](http://oeis.org/A165367) ([L12 program](A165367.asm)): Trisection a(n) = A026741(3n + 2).
+* [A165367](http://oeis.org/A165367) ([L05 program](A165367.asm)): Trisection a(n) = A026741(3n + 2).
 * [A165372](http://oeis.org/A165372) ([L18 program](A165372.asm)): Number of slanted n X 3 (i=1..n) X (j=i..3+i-1) 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, and 4 in the lower right corner.
 * [A165378](http://oeis.org/A165378) ([L21 program](A165378.asm)): Number of slanted n X 4 (i=1..n) X (j=i..4+i-1) 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 2 neighbors with the same value.
 * [A165394](http://oeis.org/A165394) ([L20 program](A165394.asm)): Number of slanted 2 X n (i=1..2) X (j=i..n+i-1) 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 3 neighbors with the same value.
@@ -4786,7 +4787,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192833](http://oeis.org/A192833) ([L24 program](A192833.asm)): Molecular topological indices of the Moebius ladders.
 * [A192838](http://oeis.org/A192838) ([L20 program](A192838.asm)): Molecular topological indices of the prism graphs Y_n.
 * [A192839](http://oeis.org/A192839) ([L44 program](A192839.asm)): Molecular topological indices of the square graphs.
-* [A192845](http://oeis.org/A192845) ([L14 program](A192845.asm)): Molecular topological indices of the sun graphs.
+* [A192845](http://oeis.org/A192845) ([L13 program](A192845.asm)): Molecular topological indices of the sun graphs.
 * [A192846](http://oeis.org/A192846) ([L23 program](A192846.asm)): Molecular topological indices of the sunlet graphs.
 * [A192848](http://oeis.org/A192848) ([L14 program](A192848.asm)): Molecular topological indices of the graph join C_n + C_n of cycle graphs.
 * [A192850](http://oeis.org/A192850) ([L22 program](A192850.asm)): Molecular topological indices of the web graphs.
@@ -5004,7 +5005,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A197903](http://oeis.org/A197903) ([L48 program](A197903.asm)): Ceiling((n+1/n)^4).
 * [A197916](http://oeis.org/A197916) ([L17 program](A197916.asm)): Related to the periodic sequence A171654.
 * [A197985](http://oeis.org/A197985) ([L05 program](A197985.asm)): Round((n+1/n)^2)
-* [A197986](http://oeis.org/A197986) ([L29 program](A197986.asm)): Round((n+1/n)^3).
+* [A197986](http://oeis.org/A197986) ([L24 program](A197986.asm)): Round((n+1/n)^3).
 * [A198017](http://oeis.org/A198017) ([L07 program](A198017.asm)): a(n) = n*(7*n + 11)/2 + 1.
 * [A198264](http://oeis.org/A198264) ([L13 program](A198264.asm)): Round(n*sqrt(10)).
 * [A198268](http://oeis.org/A198268) ([L24 program](A198268.asm)): Round(n*sqrt(12)).

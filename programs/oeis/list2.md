@@ -33,7 +33,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A201629](http://oeis.org/A201629) ([L08 program](A201629.asm)): a(n) = n if n is even and otherwise its nearest multiple of 4.
 * [A201630](http://oeis.org/A201630) ([L11 program](A201630.asm)): a(n) = a(n-1)+2*a(n-2) with n>1, a(0)=2, a(1)=7.
 * [A201722](http://oeis.org/A201722) ([L12 program](A201722.asm)): Number of n X 1 0..4 arrays with rows and columns lexicographically nondecreasing and no element equal to the number of horizontal and vertical neighbors equal to itself.
-* [A201812](http://oeis.org/A201812) ([L11 program](A201812.asm)): Number of arrays of 4 integers in -n..n with sum zero and equal numbers of elements greater than zero and less than zero.
+* [A201812](http://oeis.org/A201812) ([L10 program](A201812.asm)): Number of arrays of 4 integers in -n..n with sum zero and equal numbers of elements greater than zero and less than zero.
 * [A201813](http://oeis.org/A201813) ([L14 program](A201813.asm)): Number of arrays of 5 integers in -n..n with sum zero and equal numbers of elements greater than zero and less than zero.
 * [A201874](http://oeis.org/A201874) ([L19 program](A201874.asm)): Number of zero-sum -n..n arrays of 3 elements with first and second differences also in -n..n.
 * [A201975](http://oeis.org/A201975) ([L19 program](A201975.asm)): Number of n X 2 0..3 arrays with rows and columns lexicographically nondecreasing read forwards and nonincreasing read backwards.
@@ -332,6 +332,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212342](http://oeis.org/A212342) ([L06 program](A212342.asm)): Sequence of coefficients of x^0 in marked mesh pattern generating function Q_{n,132}^(0,3,0,0)(x).
 * [A212343](http://oeis.org/A212343) ([L07 program](A212343.asm)): a(n) = (n+1)*(n-2)*(n-3)/2.
 * [A212346](http://oeis.org/A212346) ([L15 program](A212346.asm)): Sequence of coefficients of x^0 in marked mesh pattern generating function Q_{n,132}^(0,4,0,0)(x).
+* [A212347](http://oeis.org/A212347) ([L15 program](A212347.asm)): Sequence of coefficients of x^1 in marked mesh pattern generating function Q_{n,132}^(0,4,0,0)(x).
 * [A212350](http://oeis.org/A212350) ([L12 program](A212350.asm)): Maximal number of "good" manifolds in an n-serial polytope.
 * [A212415](http://oeis.org/A212415) ([L08 program](A212415.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<x>=y<=z.
 * [A212427](http://oeis.org/A212427) ([L05 program](A212427.asm)): a(n) = 17*n + A000217(n-1).
@@ -1252,7 +1253,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247817](http://oeis.org/A247817) ([L04 program](A247817.asm)): Sum(4^k, k=2..n).
 * [A247840](http://oeis.org/A247840) ([L08 program](A247840.asm)): Sum(6^k, k=2..n).
 * [A247841](http://oeis.org/A247841) ([L04 program](A247841.asm)): Sum(8^k, k=2..n).
-* [A247842](http://oeis.org/A247842) ([L05 program](A247842.asm)): Sum(9^k, k=2..n).
+* [A247842](http://oeis.org/A247842) ([L04 program](A247842.asm)): Sum(9^k, k=2..n).
 * [A247903](http://oeis.org/A247903) ([L18 program](A247903.asm)): Start with a single square; at n-th generation add a square at each expandable vertex (this is the "vertex to side" version); a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247904](http://oeis.org/A247904) ([L07 program](A247904.asm)): Start with a single pentagon; at n-th generation add a pentagon at each expandable vertex (this is the "vertex to side" version); a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247964](http://oeis.org/A247964) ([L21 program](A247964.asm)): Beatty sequence for e^(1/3): a(n)=floor(n*(e^(1/3)))
@@ -1383,8 +1384,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253208](http://oeis.org/A253208) ([L03 program](A253208.asm)): a(n) = 4^n + 3.
 * [A253209](http://oeis.org/A253209) ([L03 program](A253209.asm)): a(n) = 6^n + 5.
 * [A253210](http://oeis.org/A253210) ([L03 program](A253210.asm)): a(n) = 7^n + 6.
-* [A253211](http://oeis.org/A253211) ([L04 program](A253211.asm)): a(n) = 8^n + 7.
-* [A253212](http://oeis.org/A253212) ([L05 program](A253212.asm)): a(n) = 9^n + 8.
+* [A253211](http://oeis.org/A253211) ([L03 program](A253211.asm)): a(n) = 8^n + 7.
+* [A253212](http://oeis.org/A253212) ([L04 program](A253212.asm)): a(n) = 9^n + 8.
 * [A253213](http://oeis.org/A253213) ([L13 program](A253213.asm)): a(n) = 10^n + 9.
 * [A253298](http://oeis.org/A253298) ([L25 program](A253298.asm)): Digital root for the following sequences, F(4*n)/F(4); F(12*n)/F(12); F(20*n)/F(20), where the pattern increases by 8, ad infinitum, with the Fibonacci numbers F = A000045.
 * [A253430](http://oeis.org/A253430) ([L12 program](A253430.asm)): Number of (n+1) X (3+1) 0..1 arrays with every 2 X 2 subblock diagonal minus antidiagonal sum nondecreasing horizontally, vertically and ne-to-sw antidiagonally.
@@ -2608,7 +2609,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291832](http://oeis.org/A291832) ([L05 program](A291832.asm)): Numbers k such that k^6 is sum of two positive 7th powers.
 * [A291938](http://oeis.org/A291938) ([L09 program](A291938.asm)): a(n) = 2^(n - 1) (n - mod(n, 2)).
 * [A292018](http://oeis.org/A292018) ([L10 program](A292018.asm)): Wiener index for the n-Andrasfai graph.
-* [A292022](http://oeis.org/A292022) ([L11 program](A292022.asm)): a(n) = 4n(n^2+2).
+* [A292022](http://oeis.org/A292022) ([L10 program](A292022.asm)): a(n) = 4n(n^2+2).
 * [A292044](http://oeis.org/A292044) ([L13 program](A292044.asm)): Wiener index of the n-halved cube graph.
 * [A292057](http://oeis.org/A292057) ([L41 program](A292057.asm)): Wiener index of the n X n queen graph.
 * [A292058](http://oeis.org/A292058) ([L17 program](A292058.asm)): Wiener index of the n X n rook complement graph.

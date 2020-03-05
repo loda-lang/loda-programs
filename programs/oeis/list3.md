@@ -735,6 +735,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331190](http://oeis.org/A331190) ([L17 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
 * [A331528](http://oeis.org/A331528) ([L14 program](A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
 * [A331943](http://oeis.org/A331943) ([L09 program](A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
+* [A331987](http://oeis.org/A331987) ([L16 program](A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
 * [A332044](http://oeis.org/A332044) ([L08 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332495](http://oeis.org/A332495) ([L14 program](A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
 * [A332519](http://oeis.org/A332519) ([L05 program](A332519.asm)): a(n) = 4*(n^2+n-2).
