@@ -1552,7 +1552,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258589](http://oeis.org/A258589) ([L13 program](A258589.asm)): Minimal most likely sum for a roll of n 12-sided dice.
 * [A258597](http://oeis.org/A258597) ([L05 program](A258597.asm)): a(n) = 13*3^n.
 * [A258598](http://oeis.org/A258598) ([L05 program](A258598.asm)): a(n) = 17*3^n.
-* [A258617](http://oeis.org/A258617) ([L06 program](A258617.asm)): a(n) = (4*n+8)*n^2.
+* [A258617](http://oeis.org/A258617) ([L05 program](A258617.asm)): a(n) = (4*n+8)*n^2.
 * [A258618](http://oeis.org/A258618) ([L10 program](A258618.asm)): a(n) = (4*n+9)*n^2.
 * [A258717](http://oeis.org/A258717) ([L11 program](A258717.asm)): If n even then 2*n^2-4*n else 2*n^2-4*n-3.
 * [A258721](http://oeis.org/A258721) ([L10 program](A258721.asm)): a(n) = 24*n^2 + 52*n + 29.
@@ -2230,7 +2230,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277051](http://oeis.org/A277051) ([L10 program](A277051.asm)): a(n) = floor(n/(1-3/Pi)).
 * [A277052](http://oeis.org/A277052) ([L23 program](A277052.asm)): a(n) = n+floor(n/(2/sqrt(Pi)-1)).
 * [A277082](http://oeis.org/A277082) ([L12 program](A277082.asm)): Generalized 15-gonal (or pentadecagonal) numbers: n*(13*n - 11)/2, n = 0,+1,-1,+2,-2,+3,-3, ...
-* [A277104](http://oeis.org/A277104) ([L09 program](A277104.asm)): a(n) = 9*3^n - 15.
+* [A277104](http://oeis.org/A277104) ([L07 program](A277104.asm)): a(n) = 9*3^n - 15.
 * [A277105](http://oeis.org/A277105) ([L05 program](A277105.asm)): a(n) = (27*3^n - 63)/2.
 * [A277106](http://oeis.org/A277106) ([L05 program](A277106.asm)): a(n) = 8*3^n - 12.
 * [A277107](http://oeis.org/A277107) ([L04 program](A277107.asm)): a(n) = 16*3^n - 48.
