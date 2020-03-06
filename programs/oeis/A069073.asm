@@ -10,10 +10,6 @@ mul $0,$3
 mov $3,2
 mul $0,$2
 mov $1,$0
-mul $3,7
-mul $1,3
-add $1,$3
-mul $1,2
-mov $0,0
+mul $1,6
 div $1,36
 mul $1,3

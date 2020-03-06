@@ -482,7 +482,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214857](http://oeis.org/A214857) ([L13 program](A214857.asm)): Number of triangular numbers in interval [0, n^2].
 * [A214858](http://oeis.org/A214858) ([L23 program](A214858.asm)): Natural numbers missing from A214857.
 * [A214861](http://oeis.org/A214861) ([L45 program](A214861.asm)): First differences of round(n*sqrt(5)) (A022848).
-* [A214863](http://oeis.org/A214863) ([L07 program](A214863.asm)): Numbers n such that n XOR 11 = n - 11.
+* [A214863](http://oeis.org/A214863) ([L06 program](A214863.asm)): Numbers n such that n XOR 11 = n - 11.
 * [A214864](http://oeis.org/A214864) ([L20 program](A214864.asm)): Numbers n such that n XOR 10 = n - 10.
 * [A214865](http://oeis.org/A214865) ([L09 program](A214865.asm)): n such that n XOR 9 = n - 9.
 * [A214877](http://oeis.org/A214877) ([L08 program](A214877.asm)): n ^ (last digit of n).
@@ -744,7 +744,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226490](http://oeis.org/A226490) ([L10 program](A226490.asm)): a(n) = n*(19*n-15)/2.
 * [A226491](http://oeis.org/A226491) ([L13 program](A226491.asm)): a(n) = n*(21*n-17)/2.
 * [A226492](http://oeis.org/A226492) ([L06 program](A226492.asm)): a(n) = n*(11*n-5)/2.
-* [A226493](http://oeis.org/A226493) ([L09 program](A226493.asm)): Closed walks of length n in K_4 graph.
+* [A226493](http://oeis.org/A226493) ([L07 program](A226493.asm)): Closed walks of length n in K_4 graph.
 * [A226514](http://oeis.org/A226514) ([L11 program](A226514.asm)): Column 3 of array in A226513.
 * [A226538](http://oeis.org/A226538) ([L11 program](A226538.asm)): a(2t) = a(2t-1) + 1, a(2t+1) = a(2t) + a(2t-2) for t >= 1, with a(0) = a(1) = 1.
 * [A226576](http://oeis.org/A226576) ([L07 program](A226576.asm)): Smallest number of integer sided squares needed to tile a 3 X n rectangle.
@@ -796,7 +796,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228025](http://oeis.org/A228025) ([L08 program](A228025.asm)): a(1) = least k such that 1/2+1/3+1/4+1/5 < H(k) - H(5); a(2) = least k such that H(a(1)) - H(5) < H(k) -H(a(1)), and for n > 2, a(n) = least k such that H(a(n-1)) - H(a(n-2) > H(k) - H(a(n-1)), where H = harmonic number.
 * [A228039](http://oeis.org/A228039) ([L07 program](A228039.asm)): Thue-Morse sequence along the squares: A010060(n^2).
 * [A228105](http://oeis.org/A228105) ([L05 program](A228105.asm)): a(n) = 432*n^6.
-* [A228137](http://oeis.org/A228137) ([L07 program](A228137.asm)): Numbers that are congruent to {1, 4} mod 12.
+* [A228137](http://oeis.org/A228137) ([L06 program](A228137.asm)): Numbers that are congruent to {1, 4} mod 12.
 * [A228138](http://oeis.org/A228138) ([L25 program](A228138.asm)): Number of blocks in a Steiner system S(2, 4, A228137(n+1)).
 * [A228141](http://oeis.org/A228141) ([L08 program](A228141.asm)): Numbers that are congruent to {1, 5} mod 20.
 * [A228157](http://oeis.org/A228157) ([L09 program](A228157.asm)): Numbers n which are anagrams of n+9.

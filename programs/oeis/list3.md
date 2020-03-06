@@ -280,7 +280,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308807](http://oeis.org/A308807) ([L07 program](A308807.asm)): a(n) = 4*5^(n-1) + n.
 * [A308898](http://oeis.org/A308898) ([L96 program](A308898.asm)): Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
 * [A309075](http://oeis.org/A309075) ([L20 program](A309075.asm)): Total number of black cells after n iterations of Langton's ant with two ants on the grid placed side-by-side on neighboring squares and initially looking in the same direction.
-* [A309077](http://oeis.org/A309077) ([L12 program](A309077.asm)): Maximum sum of base lengths over all minimal factorizations of length-n binary strings.
+* [A309077](http://oeis.org/A309077) ([L07 program](A309077.asm)): Maximum sum of base lengths over all minimal factorizations of length-n binary strings.
 * [A309083](http://oeis.org/A309083) ([L15 program](A309083.asm)): a(n) = n - floor(n/2^4) + floor(n/3^4) - floor(n/4^4) + ...
 * [A309093](http://oeis.org/A309093) ([L10 program](A309093.asm)): The analog of A309077(n), but allowing fractional powers.
 * [A309127](http://oeis.org/A309127) ([L24 program](A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
