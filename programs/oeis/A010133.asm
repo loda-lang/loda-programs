@@ -3,9 +3,8 @@
 
 pow $1,$0
 mul $1,2
-mov $4,$1
-pow $1,$4
-mov $3,1
+mov $3,$1
+pow $1,$3
 mod $0,3
 add $1,4
 lpb $0,1
