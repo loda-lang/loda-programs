@@ -6,8 +6,5 @@ mov $1,$0
 gcd $1,4
 add $1,4
 mod $1,3
-lpb $0,1
-  mul $0,$1
-lpe
 div $1,2
 add $1,1
