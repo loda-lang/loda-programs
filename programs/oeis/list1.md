@@ -268,6 +268,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104270](http://oeis.org/A104270) ([L11 program](A104270.asm)): a(n) = 2^(n-2)*(C(n,2)+2).
 * [A104356](http://oeis.org/A104356) ([L11 program](A104356.asm)): Smallest m such that A104350(m) has exactly n trailing zeros in decimal representation.
 * [A104401](http://oeis.org/A104401) ([L17 program](A104401.asm)): A104235(n)/4.
+* [A104407](http://oeis.org/A104407) ([L10 program](A104407.asm)): Number of hamiltonian groups of order <= n.
 * [A104449](http://oeis.org/A104449) ([L08 program](A104449.asm)): Fibonacci sequence with initial values a(0) = 3 and a(1) = 1.
 * [A104473](http://oeis.org/A104473) ([L27 program](A104473.asm)): a(n) = binomial(n+2,2)*binomial(n+6,2).
 * [A104563](http://oeis.org/A104563) ([L10 program](A104563.asm)): A floretion-generated sequence relating to centered square numbers.
@@ -704,7 +705,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115357](http://oeis.org/A115357) ([L11 program](A115357.asm)): Periodic {1,1,1,0,2,0}.
 * [A115390](http://oeis.org/A115390) ([L14 program](A115390.asm)): Binomial transform of tribonacci sequence A000073.
 * [A115419](http://oeis.org/A115419) ([L06 program](A115419.asm)): Numbers having a 1 in position 3 of their binary expansion.
-* [A115420](http://oeis.org/A115420) ([L11 program](A115420.asm)): Numbers having a 1 in position 4 of their binary expansion.
+* [A115420](http://oeis.org/A115420) ([L08 program](A115420.asm)): Numbers having a 1 in position 4 of their binary expansion.
 * [A115519](http://oeis.org/A115519) ([L12 program](A115519.asm)): n*(1+3*n+6*n^2)/2.
 * [A115535](http://oeis.org/A115535) ([L11 program](A115535.asm)): Numbers n such that the concatenation of n with 4*n gives a square.
 * [A115536](http://oeis.org/A115536) ([L03 program](A115536.asm)): Numbers n such that the square of n is the concatenation of two numbers m and 4*m.
@@ -3810,7 +3811,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171627](http://oeis.org/A171627) ([L04 program](A171627.asm)): Ceiling(n-th composite/n).
 * [A171647](http://oeis.org/A171647) ([L11 program](A171647.asm)): a(1) = 1; for n > 1, a(n) = 2*a(n-1) if n is even, a(n) = ((n+1)/(n-1))*a(n-1) if n is odd.
 * [A171654](http://oeis.org/A171654) ([L16 program](A171654.asm)): Period 10: repeat 0, 1, 6, 7, 2, 3, 8, 9, 4, 5.
-* [A171662](http://oeis.org/A171662) ([L11 program](A171662.asm)): a(n) = floor((2*n^2 + n)/6).
+* [A171662](http://oeis.org/A171662) ([L06 program](A171662.asm)): a(n) = floor((2*n^2 + n)/6).
 * [A171677](http://oeis.org/A171677) ([L16 program](A171677.asm)): Period 9:repeat 7,5,7,4,2,4,1,8,1.
 * [A171714](http://oeis.org/A171714) ([L07 program](A171714.asm)): a(n) = ceiling((n+1)^4/2).
 * [A171722](http://oeis.org/A171722) ([L14 program](A171722.asm)): a(n) = 0+1+2+...+n in lunar arithmetic in base 9 written in base 10.

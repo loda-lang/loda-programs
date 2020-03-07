@@ -6,6 +6,5 @@ mov $1,$0
 add $0,5
 pow $0,2
 add $1,$0
-mul $0,0
 sub $1,25
 div $1,12

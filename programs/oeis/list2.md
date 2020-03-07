@@ -577,7 +577,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218989](http://oeis.org/A218989) ([L17 program](A218989.asm)): Power ceiling sequence of 2+sqrt(8).
 * [A219054](http://oeis.org/A219054) ([L11 program](A219054.asm)): (8*n^3 + 3*n^2 + n) / 6.
 * [A219056](http://oeis.org/A219056) ([L03 program](A219056.asm)): 3*n^4.
-* [A219085](http://oeis.org/A219085) ([L16 program](A219085.asm)): Floor((n + 1/2)^3).
+* [A219085](http://oeis.org/A219085) ([L11 program](A219085.asm)): Floor((n + 1/2)^3).
 * [A219086](http://oeis.org/A219086) ([L14 program](A219086.asm)): a(n) = floor((n + 1/2)^4).
 * [A219167](http://oeis.org/A219167) ([L25 program](A219167.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal or vertical neighbors in a random, but sorted with lexicographically nondecreasing rows and columns, 0..2 n X 2 array.
 * [A219190](http://oeis.org/A219190) ([L07 program](A219190.asm)): Numbers of the form n*(5*n+1), where n = 0,-1,1,-2,2,-3,3,...
@@ -1688,6 +1688,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A264853](http://oeis.org/A264853) ([L11 program](A264853.asm)): a(n) = n*(n + 1)*(5*n^2 + 5*n - 4)/12.
 * [A264854](http://oeis.org/A264854) ([L11 program](A264854.asm)): a(n) = n*(n + 1)*(11*n^2 + 11*n - 10)/24.
 * [A264938](http://oeis.org/A264938) ([L11 program](A264938.asm)): a(n) = n*(2*n-1) + floor(n/3).
+* [A264981](http://oeis.org/A264981) ([L21 program](A264981.asm)): Highest power of 9 dividing n.
 * [A265045](http://oeis.org/A265045) ([L28 program](A265045.asm)): Coordination sequence for a 6.6.6 point in the 3-transitive tiling {4.6.6, 6.6.6, 6.6.6.6} of the plane by squares and dominoes (hexagons).
 * [A265046](http://oeis.org/A265046) ([L12 program](A265046.asm)): Coordination sequence for a 4.6.6 point in the 3-transitive tiling {4.6.6, 6.6.6, 6.6.6.6} of the plane by squares and dominoes (hexagons).
 * [A265056](http://oeis.org/A265056) ([L06 program](A265056.asm)): Partial sums of A234275.
