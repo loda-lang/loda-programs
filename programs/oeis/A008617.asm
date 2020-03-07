@@ -4,7 +4,7 @@
 gcd $2,2
 mov $4,1
 mul $4,2
-mov $3,$4
+mov $3,2
 mov $1,$0
 gcd $2,$1
 div $1,7

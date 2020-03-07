@@ -3,7 +3,7 @@
 
 mov $2,6
 mov $1,6
-div $2,$1
+mov $2,1
 lpb $0,1
   gcd $1,$0
   mov $0,1

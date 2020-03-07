@@ -4,7 +4,7 @@
 mul $0,5
 pow $2,0
 mul $0,2
-mov $1,$2
+mov $1,1
 mul $1,$0
 add $1,3
 pow $1,2
