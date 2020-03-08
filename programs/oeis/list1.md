@@ -337,7 +337,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106251](http://oeis.org/A106251) ([L14 program](A106251.asm)): Expansion of (1-x+x^2+x^3+x^5)/(1-x-x^6+x^7).
 * [A106252](http://oeis.org/A106252) ([L13 program](A106252.asm)): Number of positive integer triples (x,y,z), with x<=y<=z<=n, such that each of x,y and z divides the sum of the other two.
 * [A106253](http://oeis.org/A106253) ([L11 program](A106253.asm)): First difference of A106252.
-* [A106318](http://oeis.org/A106318) ([L06 program](A106318.asm)): Bhaskara twins: n such that 2*n^2 = X^3 and 2*n^3 = Y^2.
+* [A106318](http://oeis.org/A106318) ([L05 program](A106318.asm)): Bhaskara twins: n such that 2*n^2 = X^3 and 2*n^3 = Y^2.
 * [A106328](http://oeis.org/A106328) ([L12 program](A106328.asm)): Numbers j such that 8*(j^2) + 9 = k^2 for some positive number k.
 * [A106329](http://oeis.org/A106329) ([L13 program](A106329.asm)): Numbers k such that k^2 = 8*j^2 + 9.
 * [A106387](http://oeis.org/A106387) ([L08 program](A106387.asm)): Numbers j such that 6j^2 + 6j + 1 = 11k.
@@ -2931,7 +2931,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A159697](http://oeis.org/A159697) ([L08 program](A159697.asm)): a(0)=9, a(n) = 2*a(n-1) + 2^(n-1) for n > 0.
 * [A159715](http://oeis.org/A159715) ([L09 program](A159715.asm)): Number of permutations of 2 indistinguishable copies of 1..n arranged in a circle with exactly 1 local maximum.
 * [A159721](http://oeis.org/A159721) ([L08 program](A159721.asm)): Number of permutations of 3 indistinguishable copies of 1..n arranged in a circle with exactly 1 local maximum.
-* [A159727](http://oeis.org/A159727) ([L11 program](A159727.asm)): Number of permutations of 4 indistinguishable copies of 1..n arranged in a circle with exactly 1 local maximum.
+* [A159727](http://oeis.org/A159727) ([L08 program](A159727.asm)): Number of permutations of 4 indistinguishable copies of 1..n arranged in a circle with exactly 1 local maximum.
 * [A159741](http://oeis.org/A159741) ([L05 program](A159741.asm)): a(n) = 8*(2^n - 1).
 * [A159742](http://oeis.org/A159742) ([L12 program](A159742.asm)): If an array is made of columns of -nacci sequences (Fibonacci, tribonacci, etc.), all starting with 1,1,2,..., the NW-to-SE diagonals can be extended by computation. This sequence is diagonal 6. See A159741 for details.
 * [A159754](http://oeis.org/A159754) ([L09 program](A159754.asm)): Numbers n with property that n^2 ends with 81.
@@ -3067,6 +3067,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A163271](http://oeis.org/A163271) ([L08 program](A163271.asm)): Numerators of fractions in a 'zero-transform' approximation of sqrt(2) by means of a(n) = (a(n-1) + c)/(a(n-1) + 1) with c=2 and a(1)=0.
 * [A163274](http://oeis.org/A163274) ([L15 program](A163274.asm)): a(n) = n^4*(n+1)^2/2.
 * [A163276](http://oeis.org/A163276) ([L06 program](A163276.asm)): a(n) = n^6*(n+1)^2/2.
+* [A163277](http://oeis.org/A163277) ([L08 program](A163277.asm)): a(n) = n^7*(n+1)^2/2.
 * [A163300](http://oeis.org/A163300) ([L04 program](A163300.asm)): Zero together with the even nonprimes.
 * [A163302](http://oeis.org/A163302) ([L22 program](A163302.asm)): Duplicate of A084057.
 * [A163303](http://oeis.org/A163303) ([L10 program](A163303.asm)): a(n) = n^3 + 73*n^2 + n + 67.
