@@ -4,7 +4,7 @@
 mov $1,4
 pow $1,$0
 mov $2,7
-mov $3,$2
+mov $3,7
 div $3,$1
 sub $1,1
 sub $1,$3

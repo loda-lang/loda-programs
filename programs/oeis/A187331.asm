@@ -6,7 +6,7 @@ mov $3,2
 mul $2,5
 mov $0,$2
 mul $3,2
-mov $1,$3
+mov $1,4
 gcd $1,$0
 add $1,$0
 sub $1,4

@@ -5,7 +5,7 @@ mov $6,$0
 mov $3,$0
 div $3,2
 gcd $5,3
-mov $1,$5
+mov $1,3
 gcd $4,$3
 pow $1,$4
 sub $5,4

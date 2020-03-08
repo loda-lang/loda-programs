@@ -6,5 +6,5 @@ mov $2,2
 add $0,5
 mul $2,5
 add $0,4
-mov $1,$2
+mov $1,10
 gcd $1,$0

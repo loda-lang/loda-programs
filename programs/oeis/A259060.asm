@@ -6,14 +6,14 @@ mov $6,6
 add $0,4
 mov $1,2
 mul $0,2
-add $6,$1
+mov $6,8
 add $0,3
 mov $3,$0
 add $3,1
-mov $5,$6
+mov $5,8
 mov $4,4
 mul $6,2
-sub $1,$4
+mov $1,0
 add $1,$3
 add $0,1
 add $0,$5

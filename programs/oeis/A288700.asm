@@ -7,7 +7,7 @@ mov $3,1
 mov $5,2
 mod $4,4
 mov $2,6
-mul $3,$5
+mov $3,2
 pow $3,$4
 mul $2,4
 lpb $0,1

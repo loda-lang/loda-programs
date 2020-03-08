@@ -3,9 +3,7 @@
 
 pow $0,5
 mov $2,3
-mov $3,5
-div $3,$3
-mul $3,$2
+mov $3,3
 add $3,5
 mov $1,$0
 mul $3,5

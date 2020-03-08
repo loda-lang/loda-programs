@@ -6,7 +6,7 @@ add $1,3
 pow $1,2
 sub $1,5
 mov $2,5
-mov $0,$2
+mov $0,5
 mul $1,2
 add $1,4
 lpb $0,1

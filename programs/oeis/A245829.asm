@@ -6,7 +6,7 @@ pow $1,0
 gcd $4,2
 sub $4,1
 add $0,3
-add $1,$4
+mov $1,2
 mul $1,$0
 gcd $0,2
 pow $1,$0

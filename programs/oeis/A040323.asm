@@ -7,7 +7,7 @@ mov $1,2
 gcd $2,$1
 mul $2,2
 add $0,$4
-mov $3,$4
+mov $3,5
 lpb $0,1
   div $0,2
   mov $4,2

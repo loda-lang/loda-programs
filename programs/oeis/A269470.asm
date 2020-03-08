@@ -3,7 +3,7 @@
 
 mov $7,$0
 mov $5,3
-mov $1,$5
+mov $1,3
 add $1,19
 mov $6,$7
 mov $2,91

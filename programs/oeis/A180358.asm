@@ -5,7 +5,7 @@ mov $2,$0
 mov $1,$0
 mov $3,8
 mul $2,4
-mov $0,$3
+mov $0,8
 pow $1,7
 gcd $4,$0
 add $1,$4

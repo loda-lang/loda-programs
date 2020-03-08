@@ -3,7 +3,7 @@
 
 mov $4,5
 mov $3,$0
-mov $0,$4
+mov $0,5
 add $3,1
 mov $2,5
 div $0,2

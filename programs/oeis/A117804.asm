@@ -9,13 +9,13 @@ sub $3,3
 mov $5,1
 mov $1,5
 add $5,5
-mov $4,$5
+mov $4,6
 add $3,1
 add $5,$3
 add $1,2
 mov $3,$5
 sub $3,$1
-mov $0,$4
+mov $0,6
 mov $2,1
 mov $6,$0
 lpb $0,1

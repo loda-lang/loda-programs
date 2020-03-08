@@ -4,14 +4,14 @@
 mov $3,6
 add $0,$3
 mov $2,5
-mov $6,$2
+mov $6,5
 add $3,6
 sub $6,1
 sub $0,$6
 mov $6,2
-mov $1,$6
+mov $1,2
 add $1,5
-add $3,$1
+mov $3,19
 lpb $0,1
   sub $5,$4
   mov $6,$5

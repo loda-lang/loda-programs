@@ -9,7 +9,7 @@ mov $6,$2
 add $3,5
 mul $0,2
 sub $3,4
-mov $5,$3
+mov $5,6
 add $1,$6
 sub $5,3
 mul $0,2

@@ -4,12 +4,11 @@
 mov $6,2
 mov $4,6
 mul $4,2
-add $6,2
-add $6,$4
+mov $6,16
 mov $1,6
 mul $0,2
 sub $4,1
-add $6,$4
+mov $6,27
 mov $2,5
 lpb $0,1
   add $6,6

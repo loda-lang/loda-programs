@@ -7,7 +7,7 @@ mov $2,4
 mul $4,$1
 mul $2,10
 add $2,3
-mov $3,$2
+mov $3,43
 mov $2,$4
 mov $1,$2
 mod $1,$3

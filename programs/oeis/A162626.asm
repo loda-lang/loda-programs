@@ -6,9 +6,9 @@ mov $2,$5
 sub $2,3
 mov $3,2
 mov $6,6
-mov $4,$3
+mov $4,2
 add $2,6
-add $6,$4
+mov $6,8
 sub $6,$2
 sub $6,1
 lpb $0,1

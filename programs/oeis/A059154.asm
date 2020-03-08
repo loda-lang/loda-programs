@@ -3,7 +3,7 @@
 
 mov $2,4
 add $0,1
-pow $2,$2
+mov $2,256
 gcd $0,$2
 pow $0,3
 lpb $0,1

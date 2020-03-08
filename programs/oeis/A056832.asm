@@ -3,10 +3,8 @@
 
 add $0,1
 gcd $3,6
-mov $2,$3
+mov $2,6
 mov $3,$0
-mov $1,2
-add $1,$2
-pow $1,$2
+mov $1,262144
 gcd $1,$3
 mod $1,3

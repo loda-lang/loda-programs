@@ -4,7 +4,7 @@
 pow $0,2
 gcd $2,3
 mov $1,8
-mov $3,$2
+mov $3,3
 mul $3,7
 mod $0,$3
 mul $1,$0

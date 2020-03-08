@@ -4,8 +4,8 @@
 mov $6,$0
 mov $1,4
 add $0,3
-mov $2,$1
-mov $3,$2
+mov $2,4
+mov $3,4
 mov $1,$0
 mov $4,$1
 mov $2,$0

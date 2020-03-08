@@ -3,14 +3,13 @@
 
 mov $2,6
 sub $2,1
-mov $5,$2
+mov $5,5
 mov $3,6
-mov $6,$5
-add $6,$3
-mov $4,$6
+mov $6,11
+mov $4,11
 add $0,1
 add $6,5
-add $4,$6
+mov $4,27
 mov $1,5
 lpb $0,1
   add $1,$4

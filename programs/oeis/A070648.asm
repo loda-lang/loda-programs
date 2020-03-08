@@ -5,6 +5,6 @@ pow $0,2
 mov $3,5
 mov $2,5
 pow $0,3
-mul $3,$2
+mov $3,25
 mod $0,$3
 mov $1,$0

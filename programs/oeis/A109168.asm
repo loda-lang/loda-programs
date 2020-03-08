@@ -6,9 +6,9 @@ mov $1,$4
 mov $5,4
 mov $2,6
 mov $3,1
-pow $5,$2
+mov $5,4096
 add $0,1
-mul $3,$5
+mov $3,4096
 gcd $0,$3
 add $1,$0
 div $1,2

@@ -4,7 +4,7 @@
 mul $0,4
 mov $1,1
 mov $6,$0
-mov $4,$1
+mov $4,1
 mov $3,$6
 mul $6,2
 mov $0,$6

@@ -3,17 +3,17 @@
 
 mov $4,2
 add $0,6
-mov $6,$4
+mov $6,2
 mul $6,2
 sub $4,4
 add $4,4
-mov $3,$6
+mov $3,4
 mov $2,2
-add $4,$2
+mov $4,6
 sub $0,$4
 add $0,$2
 add $2,1
-mov $5,$3
+mov $5,4
 lpb $0,1
   add $2,$1
   add $5,2

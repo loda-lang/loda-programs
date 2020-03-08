@@ -5,7 +5,7 @@ add $0,4
 mov $1,4
 mov $2,2
 mov $3,$0
-pow $1,$2
+mov $1,16
 div $3,2
 mov $2,$0
 mod $2,$0

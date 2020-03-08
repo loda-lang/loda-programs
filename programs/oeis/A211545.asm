@@ -7,7 +7,7 @@ sub $0,$0
 sub $1,$1
 add $1,$5
 mov $3,3
-mov $2,$3
+mov $2,3
 add $0,5
 sub $0,$2
 add $5,$0

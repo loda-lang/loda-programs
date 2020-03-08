@@ -6,7 +6,7 @@ sub $2,2
 mov $1,2
 mov $0,2
 add $2,1
-mov $3,$1
+mov $3,2
 mul $2,3
 pow $2,3
 div $3,2

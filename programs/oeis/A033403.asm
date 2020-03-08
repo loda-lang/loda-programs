@@ -8,5 +8,5 @@ mov $3,2
 add $2,1
 add $1,7
 pow $3,6
-add $1,$3
+mov $1,83
 div $1,$2

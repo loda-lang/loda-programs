@@ -6,10 +6,10 @@ mov $2,5
 add $0,$4
 mul $2,8
 mov $5,7
-mov $1,$2
+mov $1,40
 mov $4,0
-mov $3,$5
-add $1,$3
-pow $2,$4
+mov $3,7
+mov $1,47
+mov $2,1
 sub $0,$2
 div $1,$0

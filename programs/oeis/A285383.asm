@@ -6,7 +6,7 @@ gcd $1,2
 mul $3,6
 mov $2,4
 mul $1,2
-pow $2,$1
+mov $2,256
 gcd $3,$2
 mod $3,3
 mov $1,$3

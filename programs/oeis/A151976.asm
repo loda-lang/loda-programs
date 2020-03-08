@@ -7,8 +7,7 @@ add $0,$5
 pow $5,$0
 pow $0,2
 gcd $0,$5
-mov $1,3
-div $1,$1
+mov $1,1
 mod $0,5
 lpb $0,1
   mod $0,3

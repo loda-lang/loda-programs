@@ -3,8 +3,8 @@
 
 mov $4,4
 pow $4,4
-mov $2,$4
-mov $3,$2
+mov $2,256
+mov $3,256
 gcd $3,$0
 mod $3,3
 mov $1,$3

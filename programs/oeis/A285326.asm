@@ -3,8 +3,8 @@
 
 mov $3,$0
 mov $1,4
-mov $6,$1
-pow $1,$6
+mov $6,4
+mov $1,256
 gcd $1,$0
 gcd $2,$1
 add $2,$0

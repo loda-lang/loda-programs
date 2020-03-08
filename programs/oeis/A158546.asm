@@ -5,8 +5,7 @@ mov $3,6
 gcd $1,2
 mul $0,$3
 pow $0,2
-mov $3,2
-mul $3,$1
+mov $3,4
 mul $0,$3
 mov $2,$0
 mul $1,6

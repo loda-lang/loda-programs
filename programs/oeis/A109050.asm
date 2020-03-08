@@ -4,13 +4,13 @@
 mov $1,6
 mov $5,5
 mul $0,8
-mov $2,$1
+mov $2,6
 mul $0,8
 fac $2
-mov $3,$2
+mov $3,720
 mul $5,$0
 mov $4,$0
-add $1,$3
+mov $1,726
 mul $1,$4
 gcd $5,$3
 div $1,$5

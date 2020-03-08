@@ -5,9 +5,9 @@ mov $6,$0
 mov $4,5
 mul $0,2
 add $0,1
-mov $1,$4
+mov $1,5
 mov $5,$0
-pow $1,$1
+mov $1,3125
 gcd $1,$5
 div $1,4
 lpb $0,1

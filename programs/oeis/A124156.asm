@@ -3,8 +3,8 @@
 
 mov $1,1
 mov $5,$0
-mov $2,$1
-mov $3,$2
+mov $2,1
+mov $3,1
 sub $2,3
 mov $4,2
 add $0,$3

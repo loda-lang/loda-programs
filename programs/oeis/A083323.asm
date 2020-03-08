@@ -3,7 +3,7 @@
 
 mov $5,5
 sub $5,4
-mov $2,$5
+mov $2,1
 mul $0,2
 lpb $0,1
   add $4,$2

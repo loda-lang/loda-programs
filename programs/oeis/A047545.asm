@@ -8,7 +8,7 @@ mov $4,$0
 mov $1,5
 div $4,$1
 mul $4,6
-div $1,$1
+mov $1,1
 add $1,$4
 mov $3,4
 div $1,$3

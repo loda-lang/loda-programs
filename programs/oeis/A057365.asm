@@ -3,8 +3,8 @@
 
 mov $3,5
 add $3,2
-mov $2,$3
-mov $1,$2
+mov $2,7
+mov $1,7
 add $1,6
 mul $1,$0
 div $1,$3

@@ -71,7 +71,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302254](http://oeis.org/A302254) ([L13 program](A302254.asm)): Exponent of the group of the Gaussian integers in a reduced system modulo (1+i)^n.
 * [A302255](http://oeis.org/A302255) ([L11 program](A302255.asm)): Total domination number of the n-antiprism graph.
 * [A302302](http://oeis.org/A302302) ([L08 program](A302302.asm)): Number of triples (i,j,k) such that i+j+k > 0 with -n <= i,j,k <= n.
-* [A302338](http://oeis.org/A302338) ([L11 program](A302338.asm)): a(n) = 3*n + 2^v(n) where v(n) denotes the 2-adic valuation of n.
+* [A302338](http://oeis.org/A302338) ([L10 program](A302338.asm)): a(n) = 3*n + 2^v(n) where v(n) denotes the 2-adic valuation of n.
 * [A302390](http://oeis.org/A302390) ([L12 program](A302390.asm)): Triameter of the n-cube-connected cycle graph.
 * [A302402](http://oeis.org/A302402) ([L04 program](A302402.asm)): Total domination number of the n-ladder graph.
 * [A302404](http://oeis.org/A302404) ([L12 program](A302404.asm)): Total domination number of the n-Moebius ladder.
@@ -204,7 +204,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305154](http://oeis.org/A305154) ([L05 program](A305154.asm)): a(n) = 36*2^n + 9.
 * [A305155](http://oeis.org/A305155) ([L05 program](A305155.asm)): a(n) = 28*2^n - 15.
 * [A305156](http://oeis.org/A305156) ([L05 program](A305156.asm)): a(n) = 136*2^n - 78 (n>=0).
-* [A305157](http://oeis.org/A305157) ([L19 program](A305157.asm)): a(n) = 164*2^n - 99.
+* [A305157](http://oeis.org/A305157) ([L18 program](A305157.asm)): a(n) = 164*2^n - 99.
 * [A305158](http://oeis.org/A305158) ([L05 program](A305158.asm)): a(n) = 21*2^n - 15.
 * [A305159](http://oeis.org/A305159) ([L05 program](A305159.asm)): a(n) = 102*2^n - 78.
 * [A305160](http://oeis.org/A305160) ([L15 program](A305160.asm)): a(n) = 123*2^n - 99.
@@ -215,7 +215,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305261](http://oeis.org/A305261) ([L05 program](A305261.asm)): a(n) = 120*2^n - 108.
 * [A305262](http://oeis.org/A305262) ([L05 program](A305262.asm)): a(n) = 140*2^n - 127.
 * [A305263](http://oeis.org/A305263) ([L05 program](A305263.asm)): a(n) = 680*2^n - 622.
-* [A305264](http://oeis.org/A305264) ([L19 program](A305264.asm)): a(n) = 836*2^n - 771.
+* [A305264](http://oeis.org/A305264) ([L18 program](A305264.asm)): a(n) = 836*2^n - 771.
 * [A305265](http://oeis.org/A305265) ([L05 program](A305265.asm)): a(n) = 12*2^n + 62.
 * [A305266](http://oeis.org/A305266) ([L05 program](A305266.asm)): a(n) = 14*2^n + 73.
 * [A305267](http://oeis.org/A305267) ([L15 program](A305267.asm)): a(n) = 68*2^n + 358.
@@ -223,7 +223,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305269](http://oeis.org/A305269) ([L17 program](A305269.asm)): a(n) = 120*2^n - 95.
 * [A305270](http://oeis.org/A305270) ([L05 program](A305270.asm)): a(n) = 140*2^n - 112.
 * [A305271](http://oeis.org/A305271) ([L05 program](A305271.asm)): a(n) = 680*2^n - 548.
-* [A305272](http://oeis.org/A305272) ([L19 program](A305272.asm)): a(n) = 836*2^n - 676.
+* [A305272](http://oeis.org/A305272) ([L18 program](A305272.asm)): a(n) = 836*2^n - 676.
 * [A305497](http://oeis.org/A305497) ([L09 program](A305497.asm)): The largest positive even integer that can be represented with n digits in base 3/2.
 * [A305498](http://oeis.org/A305498) ([L10 program](A305498.asm)): The smallest positive even integer that can be represented with n digits in base 3/2.
 * [A305503](http://oeis.org/A305503) ([L09 program](A305503.asm)): Largest cardinality of subsets A of {0,1,...,n-1} with |A + A| > |A - A|.
@@ -265,10 +265,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308137](http://oeis.org/A308137) ([L20 program](A308137.asm)): Number of (undirected) Hamiltonian paths on the n-prism graph.
 * [A308196](http://oeis.org/A308196) ([L09 program](A308196.asm)): Partial sums of A063808.
 * [A308287](http://oeis.org/A308287) ([L06 program](A308287.asm)): Length 20 arithmetic progression of primes (PAP-20).
-* [A308305](http://oeis.org/A308305) ([L14 program](A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
+* [A308305](http://oeis.org/A308305) ([L13 program](A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
 * [A308385](http://oeis.org/A308385) ([L27 program](A308385.asm)): a(n) is the last square visited by fers moves on a spirally numbered (2n-1) X (2n-1) board, moving to the lowest available unvisited square at each step.
 * [A308422](http://oeis.org/A308422) ([L08 program](A308422.asm)): a(n) = n^2 if n odd, 3*n^2/4 if n even.
-* [A308579](http://oeis.org/A308579) ([L11 program](A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
+* [A308579](http://oeis.org/A308579) ([L10 program](A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
 * [A308580](http://oeis.org/A308580) ([L15 program](A308580.asm)): a(n) = 3*2^n + n^2 - n.
 * [A308585](http://oeis.org/A308585) ([L08 program](A308585.asm)): a(n) = 2^(n + 3) - 10*n - 6.
 * [A308600](http://oeis.org/A308600) ([L15 program](A308600.asm)): Number of (not necessarily maximum) cliques in the n X n antelope graph.
@@ -366,7 +366,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313729](http://oeis.org/A313729) ([L19 program](A313729.asm)): Coordination sequence Gal.6.134.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313730](http://oeis.org/A313730) ([L15 program](A313730.asm)): Coordination sequence Gal.6.234.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313738](http://oeis.org/A313738) ([L23 program](A313738.asm)): Coordination sequence Gal.6.158.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A313746](http://oeis.org/A313746) ([L19 program](A313746.asm)): Coordination sequence Gal.5.113.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313746](http://oeis.org/A313746) ([L15 program](A313746.asm)): Coordination sequence Gal.5.113.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313780](http://oeis.org/A313780) ([L11 program](A313780.asm)): Coordination sequence Gal.3.23.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313793](http://oeis.org/A313793) ([L17 program](A313793.asm)): Coordination sequence Gal.4.134.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313799](http://oeis.org/A313799) ([L11 program](A313799.asm)): Coordination sequence Gal.3.53.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -379,7 +379,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313927](http://oeis.org/A313927) ([L27 program](A313927.asm)): Coordination sequence Gal.5.135.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313975](http://oeis.org/A313975) ([L21 program](A313975.asm)): Coordination sequence Gal.4.145.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314039](http://oeis.org/A314039) ([L24 program](A314039.asm)): Coordination sequence Gal.5.299.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A314040](http://oeis.org/A314040) ([L25 program](A314040.asm)): Coordination sequence Gal.4.133.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A314040](http://oeis.org/A314040) ([L23 program](A314040.asm)): Coordination sequence Gal.4.133.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314049](http://oeis.org/A314049) ([L17 program](A314049.asm)): Coordination sequence Gal.3.51.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314067](http://oeis.org/A314067) ([L21 program](A314067.asm)): Coordination sequence Gal.3.53.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314117](http://oeis.org/A314117) ([L19 program](A314117.asm)): Coordination sequence Gal.6.330.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -739,4 +739,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332044](http://oeis.org/A332044) ([L08 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332495](http://oeis.org/A332495) ([L14 program](A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
 * [A332519](http://oeis.org/A332519) ([L05 program](A332519.asm)): a(n) = 4*(n^2+n-2).
-* [A332756](http://oeis.org/A332756) ([L12 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
+* [A332756](http://oeis.org/A332756) ([L10 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.

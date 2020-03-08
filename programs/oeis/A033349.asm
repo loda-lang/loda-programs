@@ -7,6 +7,6 @@ mov $4,1
 mov $2,5
 add $2,2
 add $4,$0
-sub $3,$2
-mov $1,$3
+mov $3,29
+mov $1,29
 div $1,$4
