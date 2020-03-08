@@ -1,12 +1,8 @@
 ; A109168: Continued fraction expansion of the constant x (A109169) such that the continued fraction of 2*x yields the continued fraction of x interleaved with the positive even numbers.
 ; 1,2,2,4,3,4,4,8,5,6,6,8,7,8,8,16,9,10,10,12,11,12,12,16,13,14,14,16,15,16,16,32,17,18,18,20,19,20,20,24,21,22,22,24,23,24,24,32,25,26,26,28,27,28,28,32,29,30,30,32,31,32,32,64,33,34,34,36,35,36,36,40,37,38,38
 
-mov $4,$0
-mov $1,$4
-mov $5,4
-mov $2,6
-mov $3,1
-mov $5,4096
+mov $2,$0
+mov $1,$2
 add $0,1
 mov $3,4096
 gcd $0,$3

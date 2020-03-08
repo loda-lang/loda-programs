@@ -3,11 +3,8 @@
 
 mov $6,$0
 pow $0,2
-mov $5,5
 mul $0,2
 mov $5,1
-div $5,5
-add $5,1
 div $0,4
 lpb $0,1
   mov $3,2

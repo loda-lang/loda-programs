@@ -1,7 +1,6 @@
 ; A093383: One of the 16 sequences illustrating the fact that A093382(2) = 31.
 ; 0,0,0,1,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $6,1
 mov $2,$0
 add $0,1
 mov $1,$0

@@ -5,7 +5,6 @@ mov $6,$0
 mul $0,2
 mov $4,$0
 mov $1,1
-mov $2,3
 mov $5,$4
 sub $0,$1
 mov $2,4

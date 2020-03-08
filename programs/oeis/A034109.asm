@@ -10,11 +10,6 @@ add $1,$3
 mul $1,7
 add $1,6
 div $1,5
-fac $0
-div $0,$3
-lpb $0,1
-  add $6,1
-lpe
 add $1,5
 mov $4,$5
 mov $2,$4

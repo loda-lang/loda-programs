@@ -3,7 +3,6 @@
 
 mul $0,7
 div $0,4
-mov $3,5
 mov $2,5
 mul $2,$0
 div $2,7

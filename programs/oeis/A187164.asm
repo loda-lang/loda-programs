@@ -3,7 +3,6 @@
 
 mov $5,$0
 mov $1,$0
-mov $3,1
 mov $4,1
 add $1,$4
 mov $2,4
@@ -15,14 +14,14 @@ sub $1,2
 pow $1,2
 sub $1,7
 mov $6,$5
-mov $7,$6
-mul $7,4
-add $1,$7
+mov $3,$6
+mul $3,4
+add $1,$3
 mul $6,$5
-mov $7,$6
-mul $7,5
-add $1,$7
+mov $3,$6
+mul $3,5
+add $1,$3
 mul $6,$5
-mov $7,$6
-mul $7,30
-add $1,$7
+mov $3,$6
+mul $3,30
+add $1,$3

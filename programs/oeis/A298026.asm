@@ -3,13 +3,10 @@
 
 mov $5,$0
 mov $3,3
-mov $2,4
 mul $0,6
 mov $1,3
-div $2,2
 mov $4,2
 div $0,4
-mov $2,6
 sub $1,1
 sub $3,1
 mov $2,3

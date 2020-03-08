@@ -3,10 +3,7 @@
 
 mov $4,$0
 mov $1,$4
-mov $2,4
 mul $4,$1
-mul $2,10
-add $2,3
 mov $3,43
 mov $2,$4
 mov $1,$2

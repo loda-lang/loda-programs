@@ -4,11 +4,9 @@
 mov $6,$0
 mov $3,$0
 div $3,2
-gcd $5,3
 mov $1,3
 gcd $4,$3
 pow $1,$4
-sub $5,4
 gcd $5,$4
 sub $1,$5
 sub $1,$5

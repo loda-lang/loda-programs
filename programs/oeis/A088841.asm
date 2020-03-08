@@ -3,10 +3,9 @@
 
 mov $1,$0
 mov $2,7
-mov $3,7
-pow $3,2
+pow $2,2
 add $1,1
-gcd $1,$3
+gcd $1,$2
 div $1,6
 mul $1,49
 add $1,8

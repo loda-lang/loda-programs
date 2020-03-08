@@ -7,7 +7,6 @@ gcd $0,3
 add $0,$2
 mul $1,3
 lpb $0,1
-  add $3,$1
   add $1,5
   div $1,3
   sub $0,4

@@ -3,10 +3,7 @@
 
 mov $5,$0
 gcd $3,$0
-gcd $1,2
 mul $3,6
-mov $2,4
-mul $1,2
 mov $2,256
 gcd $3,$2
 mod $3,3

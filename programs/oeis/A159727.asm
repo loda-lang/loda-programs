@@ -4,9 +4,7 @@
 mov $1,$0
 mov $2,5
 lpb $0,1
-  add $0,4
   add $3,$0
-  pow $0,$3
 lpe
 add $1,2
 pow $2,$0
