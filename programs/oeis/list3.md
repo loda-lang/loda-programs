@@ -237,7 +237,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306277](http://oeis.org/A306277) ([L08 program](A306277.asm)): Numbers congruent to 1 or 8 mod 10.
 * [A306278](http://oeis.org/A306278) ([L08 program](A306278.asm)): Numbers congruent to 2 or 11 mod 14.
 * [A306279](http://oeis.org/A306279) ([L08 program](A306279.asm)): Numbers congruent to 3 or 18 mod 22.
-* [A306285](http://oeis.org/A306285) ([L09 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
+* [A306285](http://oeis.org/A306285) ([L08 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
 * [A306331](http://oeis.org/A306331) ([L11 program](A306331.asm)): Numbers congruent to 6 or 31 mod 38.
 * [A306390](http://oeis.org/A306390) ([L06 program](A306390.asm)): Size of one subtree in the unlabeled binary rooted tree shape of size n whose leaf-labeled trees have the largest number of coalescence sequences.
 * [A306672](http://oeis.org/A306672) ([L15 program](A306672.asm)): Partial sums of the even Lucas numbers (A014448).

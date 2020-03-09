@@ -601,7 +601,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006503](http://oeis.org/A006503) ([L07 program](A006503.asm)): a(n) = n*(n+1)*(n+8)/6.
 * [A006516](http://oeis.org/A006516) ([L11 program](A006516.asm)): a(n) = 2^(n-1)*(2^n - 1), n >= 0.
 * [A006519](http://oeis.org/A006519) ([L05 program](A006519.asm)): Highest power of 2 dividing n.
-* [A006527](http://oeis.org/A006527) ([L06 program](A006527.asm)): a(n) = (n^3 + 2*n)/3.
+* [A006527](http://oeis.org/A006527) ([L05 program](A006527.asm)): a(n) = (n^3 + 2*n)/3.
 * [A006528](http://oeis.org/A006528) ([L08 program](A006528.asm)): a(n) = (n^4 + n^2 + 2*n)/4.
 * [A006564](http://oeis.org/A006564) ([L30 program](A006564.asm)): Icosahedral numbers: a(n) = n*(5*n^2 - 5*n + 2)/2.
 * [A006566](http://oeis.org/A006566) ([L10 program](A006566.asm)): Dodecahedral numbers: a(n) = n*(3*n - 1)*(3*n - 2)/2.
@@ -902,7 +902,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010710](http://oeis.org/A010710) ([L03 program](A010710.asm)): Period 2: repeat (4,5).
 * [A010711](http://oeis.org/A010711) ([L04 program](A010711.asm)): Period 2: repeat (4,6).
 * [A010712](http://oeis.org/A010712) ([L04 program](A010712.asm)): Period 2: repeat (4,7).
-* [A010713](http://oeis.org/A010713) ([L04 program](A010713.asm)): Period 2: repeat (4,8).
+* [A010713](http://oeis.org/A010713) ([L03 program](A010713.asm)): Period 2: repeat (4,8).
 * [A010714](http://oeis.org/A010714) ([L04 program](A010714.asm)): Period 2: repeat (4,9).
 * [A010715](http://oeis.org/A010715) ([L04 program](A010715.asm)): Period 2: repeat (4,10).
 * [A010716](http://oeis.org/A010716) ([L01 program](A010716.asm)): Constant sequence: the all 5's sequence.
@@ -2653,6 +2653,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037458](http://oeis.org/A037458) ([L11 program](A037458.asm)): a(1)=1; for n > 1, a(n)=n-a(n-sqrtint(n)) where sqrtint(n) denotes floor(sqrt(n)).
 * [A037459](http://oeis.org/A037459) ([L18 program](A037459.asm)): Sum{d(i)*5^i: i=0,1,...,m}, where Sum{d(i)*4^i: i=0,1,...,m} is the base 4 representation of n.
 * [A037479](http://oeis.org/A037479) ([L07 program](A037479.asm)): a(n)=Sum{d(i)*10^i: i=0,1,...,m}, where Sum{d(i)*9^i: i=0,1,...,m} is the base 9 representation of n.
+* [A037482](http://oeis.org/A037482) ([L16 program](A037482.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,2.
 * [A037488](http://oeis.org/A037488) ([L19 program](A037488.asm)): Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
 * [A037489](http://oeis.org/A037489) ([L24 program](A037489.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
 * [A037490](http://oeis.org/A037490) ([L12 program](A037490.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
@@ -3020,7 +3021,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044713](http://oeis.org/A044713) ([L25 program](A044713.asm)): Numbers n such that string 0,0 occurs in the base 10 representation of n but not of n+1.
 * [A044723](http://oeis.org/A044723) ([L11 program](A044723.asm)): Numbers n such that string 1,0 occurs in the base 10 representation of n but not of n+1.
 * [A044757](http://oeis.org/A044757) ([L19 program](A044757.asm)): Numbers n such that string 4,4 occurs in the base 10 representation of n but not of n+1.
-* [A044768](http://oeis.org/A044768) ([L12 program](A044768.asm)): Numbers n such that string 5,5 occurs in the base 10 representation of n but not of n+1.
+* [A044768](http://oeis.org/A044768) ([L10 program](A044768.asm)): Numbers n such that string 5,5 occurs in the base 10 representation of n but not of n+1.
 * [A044779](http://oeis.org/A044779) ([L20 program](A044779.asm)): Numbers n such that string 6,6 occurs in the base 10 representation of n but not of n+1.
 * [A044790](http://oeis.org/A044790) ([L15 program](A044790.asm)): Numbers n such that string 7,7 occurs in the base 10 representation of n but not of n+1.
 * [A044801](http://oeis.org/A044801) ([L13 program](A044801.asm)): Numbers n such that string 8,8 occurs in the base 10 representation of n but not of n+1.
@@ -3323,7 +3324,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047464](http://oeis.org/A047464) ([L04 program](A047464.asm)): Numbers that are congruent to {0, 2, 4} mod 8.
 * [A047465](http://oeis.org/A047465) ([L14 program](A047465.asm)): Numbers that are congruent to {1, 2, 4} mod 8.
 * [A047466](http://oeis.org/A047466) ([L09 program](A047466.asm)): Numbers that are congruent to {0, 1, 2, 4} mod 8.
-* [A047467](http://oeis.org/A047467) ([L07 program](A047467.asm)): Numbers that are congruent to {0, 2} mod 8.
+* [A047467](http://oeis.org/A047467) ([L06 program](A047467.asm)): Numbers that are congruent to {0, 2} mod 8.
 * [A047468](http://oeis.org/A047468) ([L07 program](A047468.asm)): Numbers that are congruent to {1, 2} mod 8.
 * [A047469](http://oeis.org/A047469) ([L06 program](A047469.asm)): Numbers that are congruent to {0, 1, 2} mod 8.
 * [A047470](http://oeis.org/A047470) ([L04 program](A047470.asm)): Numbers that are congruent to {0, 3} mod 8.
@@ -3896,7 +3897,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054569](http://oeis.org/A054569) ([L06 program](A054569.asm)): a(n) = 4*n^2 - 6*n + 3.
 * [A054579](http://oeis.org/A054579) ([L22 program](A054579.asm)): n^2+n modulo 17.
 * [A054580](http://oeis.org/A054580) ([L23 program](A054580.asm)): n^2 modulo 17.
-* [A054602](http://oeis.org/A054602) ([L05 program](A054602.asm)): a(n) = Sum_{d|3} phi(d)*n^(3/d).
+* [A054602](http://oeis.org/A054602) ([L04 program](A054602.asm)): a(n) = Sum_{d|3} phi(d)*n^(3/d).
 * [A054603](http://oeis.org/A054603) ([L10 program](A054603.asm)): a(n) = Sum_{d|4} phi(d)*n^(4/d).
 * [A054604](http://oeis.org/A054604) ([L04 program](A054604.asm)): a(n) = Sum_{d|5} phi(d)*n^(5/d).
 * [A054605](http://oeis.org/A054605) ([L55 program](A054605.asm)): a(n) = Sum_{d|6} phi(d)*n^(6/d).

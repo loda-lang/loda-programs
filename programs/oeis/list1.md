@@ -184,7 +184,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102485](http://oeis.org/A102485) ([L15 program](A102485.asm)): a(n) = 5*3^n - 4*2^n.
 * [A102515](http://oeis.org/A102515) ([L08 program](A102515.asm)): a(n) = floor(1 + sqrt(2n + 1)).
 * [A102518](http://oeis.org/A102518) ([L06 program](A102518.asm)): a(n) = Sum_{k=0..n} binomial(n, k) * Sum_{j=0..k} binomial(3k, 3j).
-* [A102572](http://oeis.org/A102572) ([L16 program](A102572.asm)): a(n) = floor(log_4(n)).
+* [A102572](http://oeis.org/A102572) ([L13 program](A102572.asm)): a(n) = floor(log_4(n)).
 * [A102591](http://oeis.org/A102591) ([L14 program](A102591.asm)): a(n)=sum k=0..n, C(2n+1,2k)3^(n-k).
 * [A102603](http://oeis.org/A102603) ([L03 program](A102603.asm)): 24n + 21.
 * [A102620](http://oeis.org/A102620) ([L17 program](A102620.asm)): Number of legal Go positions on a 1 X n board (for which 3^n is a trivial upper bound).
@@ -306,7 +306,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105395](http://oeis.org/A105395) ([L06 program](A105395.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105396](http://oeis.org/A105396) ([L04 program](A105396.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105397](http://oeis.org/A105397) ([L03 program](A105397.asm)): Periodic with period 2: repeat [4,2].
-* [A105398](http://oeis.org/A105398) ([L04 program](A105398.asm)): A simple "Fractal Jump Sequence" (FJS).
+* [A105398](http://oeis.org/A105398) ([L03 program](A105398.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105426](http://oeis.org/A105426) ([L20 program](A105426.asm)): a(0)=1, a(1)=5, a(n)=8*a(n-1)-a(n-2).
 * [A105427](http://oeis.org/A105427) ([L12 program](A105427.asm)): Numbers n such that the near-repdigit number consisting of a 1 followed by n 3's (i.e., of form 1333...33) is composite.
 * [A105636](http://oeis.org/A105636) ([L13 program](A105636.asm)): Transform of n^3 by the Riordan array (1/(1-x^2), x).
@@ -746,7 +746,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A116728](http://oeis.org/A116728) ([L08 program](A116728.asm)): Number of permutations of length n which avoid the patterns 321, 1243, 2134.
 * [A116729](http://oeis.org/A116729) ([L09 program](A116729.asm)): Duplicate of A048840.
 * [A116730](http://oeis.org/A116730) ([L11 program](A116730.asm)): Number of permutations of length n which avoid the patterns 321, 1342, 1423.
-* [A116731](http://oeis.org/A116731) ([L07 program](A116731.asm)): Number of permutations of length n which avoid the patterns 321, 2143, 3124; or avoid the patterns 132, 2314, 4312, etc.
+* [A116731](http://oeis.org/A116731) ([L06 program](A116731.asm)): Number of permutations of length n which avoid the patterns 321, 2143, 3124; or avoid the patterns 132, 2314, 4312, etc.
 * [A116733](http://oeis.org/A116733) ([L11 program](A116733.asm)): Number of permutations of length n which avoid the patterns 321, 1324, 2341.
 * [A116735](http://oeis.org/A116735) ([L07 program](A116735.asm)): Number of permutations of length n which avoid the patterns 231, 1234, 4312; or avoid the patterns 312, 1234, 1432, etc.
 * [A116738](http://oeis.org/A116738) ([L13 program](A116738.asm)): Number of permutations of length n which avoid the patterns 3214, 4123, 4132.
@@ -872,7 +872,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120515](http://oeis.org/A120515) ([L15 program](A120515.asm)): a(n) = min{j : A120504(j) = n}.
 * [A120516](http://oeis.org/A120516) ([L20 program](A120516.asm)): a(n) = min{j : A120505(j) = n}.
 * [A120517](http://oeis.org/A120517) ([L12 program](A120517.asm)): a(n) = min{j : A120506(j) = n}.
-* [A120518](http://oeis.org/A120518) ([L10 program](A120518.asm)): a(n) = min{j : A120507(j) = n}.
+* [A120518](http://oeis.org/A120518) ([L05 program](A120518.asm)): a(n) = min{j : A120507(j) = n}.
 * [A120519](http://oeis.org/A120519) ([L11 program](A120519.asm)): a(n) = min{j : A120508(j) = n}.
 * [A120520](http://oeis.org/A120520) ([L06 program](A120520.asm)): a(n) = min{j : A120509(j) = n}.
 * [A120521](http://oeis.org/A120521) ([L08 program](A120521.asm)): a(n) = min{j : A120510(j) = n}.
@@ -1701,7 +1701,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135712](http://oeis.org/A135712) ([L13 program](A135712.asm)): a(n) = (4*n^3 + 11*n^2 + 9*n + 2)/2.
 * [A135713](http://oeis.org/A135713) ([L08 program](A135713.asm)): a(n) = n*(n+1)*(4*n+1)/2.
 * [A135854](http://oeis.org/A135854) ([L13 program](A135854.asm)): a(n) = (n+1)*(2^n+1) for n>0 with a(0)=1.
-* [A135859](http://oeis.org/A135859) ([L06 program](A135859.asm)): Row sums of triangle A135858.
+* [A135859](http://oeis.org/A135859) ([L05 program](A135859.asm)): Row sums of triangle A135858.
 * [A135914](http://oeis.org/A135914) ([L11 program](A135914.asm)): 4*3^n-2*2^n-1.
 * [A135916](http://oeis.org/A135916) ([L18 program](A135916.asm)): (n^4 - 10*n^2 + 15*n - 6)/2.
 * [A135992](http://oeis.org/A135992) ([L15 program](A135992.asm)): Positive Fibonacci numbers swapped in pairs.
@@ -2239,6 +2239,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152596](http://oeis.org/A152596) ([L05 program](A152596.asm)): a(n) = 7*a(n-1) - 6*a(n-2), n>1; a(0)=1, a(1)=3.
 * [A152618](http://oeis.org/A152618) ([L10 program](A152618.asm)): a(n) = (n-1)^2*(n+1).
 * [A152619](http://oeis.org/A152619) ([L04 program](A152619.asm)): n*(n+2)^2
+* [A152621](http://oeis.org/A152621) ([L10 program](A152621.asm)): a(n)=8*a(n-1)-6*a(n-2), n>1 ; a(0)=1, a(1)=2.
 * [A152623](http://oeis.org/A152623) ([L06 program](A152623.asm)): Decimal expansion of 3/2.
 * [A152624](http://oeis.org/A152624) ([L07 program](A152624.asm)): Decimal expansion of 7/2.
 * [A152627](http://oeis.org/A152627) ([L04 program](A152627.asm)): Decimal expansion of 3/4.

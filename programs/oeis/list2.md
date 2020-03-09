@@ -29,7 +29,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A201371](http://oeis.org/A201371) ([L11 program](A201371.asm)): Number of n X 4 0..1 arrays with rows and columns lexicographically nondecreasing read forwards, and nonincreasing read backwards.
 * [A201455](http://oeis.org/A201455) ([L09 program](A201455.asm)): a(n) = 3*a(n-1) + 4*a(n-2) for n>1, a(0)=2, a(1)=3.
 * [A201471](http://oeis.org/A201471) ([L12 program](A201471.asm)): Maximal diameter of a connected n-gamma_t-vertex-critical graph.
-* [A201472](http://oeis.org/A201472) ([L10 program](A201472.asm)): The Griesmer lower bound q_4(5,n) on the length of a linear code over GF(4) of dimension 5 and minimal distance n.
+* [A201472](http://oeis.org/A201472) ([L05 program](A201472.asm)): The Griesmer lower bound q_4(5,n) on the length of a linear code over GF(4) of dimension 5 and minimal distance n.
 * [A201629](http://oeis.org/A201629) ([L08 program](A201629.asm)): a(n) = n if n is even and otherwise its nearest multiple of 4.
 * [A201630](http://oeis.org/A201630) ([L10 program](A201630.asm)): a(n) = a(n-1)+2*a(n-2) with n>1, a(0)=2, a(1)=7.
 * [A201722](http://oeis.org/A201722) ([L12 program](A201722.asm)): Number of n X 1 0..4 arrays with rows and columns lexicographically nondecreasing and no element equal to the number of horizontal and vertical neighbors equal to itself.
@@ -553,7 +553,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A217776](http://oeis.org/A217776) ([L05 program](A217776.asm)): a(n) = n*(n+1) + (n+2)*(n+3) + (n+4)*(n+5) + (n+6)*(n+7).
 * [A217789](http://oeis.org/A217789) ([L13 program](A217789.asm)): Least difference between 2 palindromic numbers of length n.
 * [A217871](http://oeis.org/A217871) ([L13 program](A217871.asm)): a(n)=b(n,1) where b(0,m)=m, b(n,m)=b(floor(n/4),m*2).
-* [A217873](http://oeis.org/A217873) ([L08 program](A217873.asm)): 4*n*(n^2+2)/3.
+* [A217873](http://oeis.org/A217873) ([L06 program](A217873.asm)): 4*n*(n^2+2)/3.
 * [A217923](http://oeis.org/A217923) ([L12 program](A217923.asm)): F-block elements for Janet periodic table.
 * [A218078](http://oeis.org/A218078) ([L20 program](A218078.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal, vertical or antidiagonal neighbors in a random 0..1 n X 2 array.
 * [A218131](http://oeis.org/A218131) ([L05 program](A218131.asm)): Number of length 8 primitive (=aperiodic or period 8) n-ary words.

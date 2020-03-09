@@ -3,7 +3,6 @@
 
 mov $4,$0
 mov $1,$0
-mul $1,2
 gcd $1,5
 mod $0,2
 pow $1,$0
