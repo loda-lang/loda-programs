@@ -8,5 +8,4 @@ pow $2,$0
 add $2,5
 add $1,$2
 sub $1,7
-sub $0,$1
 add $1,1

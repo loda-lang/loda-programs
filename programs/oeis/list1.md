@@ -459,6 +459,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109048](http://oeis.org/A109048) ([L05 program](A109048.asm)): a(n) = lcm(n, 7).
 * [A109049](http://oeis.org/A109049) ([L04 program](A109049.asm)): a(n) = lcm(n, 8).
 * [A109050](http://oeis.org/A109050) ([L11 program](A109050.asm)): a(n) = lcm(n, 9).
+* [A109051](http://oeis.org/A109051) ([L11 program](A109051.asm)): a(n) = lcm(n,10).
 * [A109052](http://oeis.org/A109052) ([L10 program](A109052.asm)): a(n) = lcm(n,11).
 * [A109053](http://oeis.org/A109053) ([L08 program](A109053.asm)): a(n) = lcm(n,12).
 * [A109094](http://oeis.org/A109094) ([L12 program](A109094.asm)): Length of the longest path (repeated edges not allowed) between two arbitrary, distinct nodes in K_n, the complete graph on n vertices.
@@ -2430,6 +2431,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155602](http://oeis.org/A155602) ([L06 program](A155602.asm)): 4^n + 3^n - 1.
 * [A155603](http://oeis.org/A155603) ([L07 program](A155603.asm)): 5^n+3^n-1.
 * [A155605](http://oeis.org/A155605) ([L10 program](A155605.asm)): 7^n+3^n-1.
+* [A155616](http://oeis.org/A155616) ([L08 program](A155616.asm)): 5^n + 4^n - 1.
 * [A155619](http://oeis.org/A155619) ([L12 program](A155619.asm)): 8^n+4^n-1^n
 * [A155628](http://oeis.org/A155628) ([L10 program](A155628.asm)): 7^n-4^n+1^n
 * [A155629](http://oeis.org/A155629) ([L15 program](A155629.asm)): 8^n-4^n+1^n
@@ -2518,7 +2520,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157287](http://oeis.org/A157287) ([L03 program](A157287.asm)): a(n) = 1728*n - 24.
 * [A157288](http://oeis.org/A157288) ([L25 program](A157288.asm)): a(n) = 10368*n^2 - 288*n + 1.
 * [A157319](http://oeis.org/A157319) ([L17 program](A157319.asm)): Possible total points for a single team in a game of American football, ignoring safeties (and time constraints).
-* [A157324](http://oeis.org/A157324) ([L20 program](A157324.asm)): a(n) = 36*n^2 + n.
+* [A157324](http://oeis.org/A157324) ([L09 program](A157324.asm)): a(n) = 36*n^2 + n.
 * [A157325](http://oeis.org/A157325) ([L03 program](A157325.asm)): a(n) = 1728*n + 24.
 * [A157326](http://oeis.org/A157326) ([L11 program](A157326.asm)): a(n) = 10368*n^2 + 288*n + 1.
 * [A157330](http://oeis.org/A157330) ([L03 program](A157330.asm)): a(n) = 64*n - 8.
@@ -3497,7 +3499,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168460](http://oeis.org/A168460) ([L07 program](A168460.asm)): a(n) = 6 + 10*floor((n-1)/2).
 * [A168461](http://oeis.org/A168461) ([L04 program](A168461.asm)): a(n) = 10*floor(n/2).
 * [A168463](http://oeis.org/A168463) ([L05 program](A168463.asm)): a(n) = 5 + 11*floor(n/2).
-* [A168465](http://oeis.org/A168465) ([L10 program](A168465.asm)): Numbers that are congruent to 2 or 7 mod 11.
+* [A168465](http://oeis.org/A168465) ([L06 program](A168465.asm)): Numbers that are congruent to 2 or 7 mod 11.
 * [A168484](http://oeis.org/A168484) ([L14 program](A168484.asm)): Numbers that are congruent to {2, 3, 5, 7} mod 11.
 * [A168486](http://oeis.org/A168486) ([L11 program](A168486.asm)): Numbers that are congruent to {2, 5} mod 11.
 * [A168489](http://oeis.org/A168489) ([L05 program](A168489.asm)): Numbers that are congruent to {7,11} mod 12.
@@ -4421,6 +4423,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184635](http://oeis.org/A184635) ([L06 program](A184635.asm)): a(n) = floor(1/{(n+n^4)^(1/4)}), where {} = fractional part.
 * [A184636](http://oeis.org/A184636) ([L07 program](A184636.asm)): floor(1/{(n^4+2*n)^(1/4)}), where {}=fractional part.
 * [A184637](http://oeis.org/A184637) ([L11 program](A184637.asm)): a(n) = floor(1/{(n^4+3*n)^(1/4)}), where {}=fractional part.
+* [A184654](http://oeis.org/A184654) ([L12 program](A184654.asm)): floor(n*sqrt(3)-2/3); complement of A184655.
 * [A184674](http://oeis.org/A184674) ([L07 program](A184674.asm)): a(n) = n+floor((n/2-1/(2*n))^2); complement of A184675.
 * [A184675](http://oeis.org/A184675) ([L16 program](A184675.asm)): n + floor(sqrt(n) + sqrt(n+1)); complement of A184674.
 * [A184676](http://oeis.org/A184676) ([L07 program](A184676.asm)): a(n) = n + floor((n/2-1/(4*n))^2); complement of A183867.
