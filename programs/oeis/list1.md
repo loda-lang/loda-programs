@@ -452,7 +452,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109014](http://oeis.org/A109014) ([L03 program](A109014.asm)): a(n) = gcd(n,11).
 * [A109015](http://oeis.org/A109015) ([L03 program](A109015.asm)): a(n) = gcd(n,12).
 * [A109043](http://oeis.org/A109043) ([L04 program](A109043.asm)): a(n) = lcm(n,2).
-* [A109044](http://oeis.org/A109044) ([L09 program](A109044.asm)): a(n) = lcm(n,3).
+* [A109044](http://oeis.org/A109044) ([L05 program](A109044.asm)): a(n) = lcm(n,3).
 * [A109045](http://oeis.org/A109045) ([L04 program](A109045.asm)): a(n) = lcm(n,4).
 * [A109046](http://oeis.org/A109046) ([L04 program](A109046.asm)): a(n) = lcm(n, 5).
 * [A109047](http://oeis.org/A109047) ([L08 program](A109047.asm)): a(n) = lcm(n, 6).
@@ -975,7 +975,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123166](http://oeis.org/A123166) ([L04 program](A123166.asm)): Row sums of A123162.
 * [A123167](http://oeis.org/A123167) ([L08 program](A123167.asm)): Continued fraction for c=sqrt(2)*(exp(sqrt(2))+1)/(exp(sqrt(2))-1). a(2*n-1) = 8*n-6, a(2*n) = 4*n-1.
 * [A123168](http://oeis.org/A123168) ([L17 program](A123168.asm)): Continued fraction for c = sqrt(2)*(exp(sqrt(2))-1)/(exp(sqrt(2))+1).
-* [A123169](http://oeis.org/A123169) ([L12 program](A123169.asm)): Continued fraction for sqrt(1/2)*(exp(sqrt(1/2))-1)/(exp(sqrt(1/2))+1).
+* [A123169](http://oeis.org/A123169) ([L06 program](A123169.asm)): Continued fraction for sqrt(1/2)*(exp(sqrt(1/2))-1)/(exp(sqrt(1/2))+1).
 * [A123194](http://oeis.org/A123194) ([L18 program](A123194.asm)): a(n) = (n+1)*Fibonacci(n+2) + 3.
 * [A123198](http://oeis.org/A123198) ([L10 program](A123198.asm)): a(n)=[(n+1)(2n-1)]^2.
 * [A123203](http://oeis.org/A123203) ([L07 program](A123203.asm)): A007318 * [1, 1, 4, 4, 4,...].
@@ -2173,7 +2173,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A147296](http://oeis.org/A147296) ([L07 program](A147296.asm)): n*(9*n+2).
 * [A147534](http://oeis.org/A147534) ([L05 program](A147534.asm)): a(n) is congruent to (1,1,2) mod 3.
 * [A147560](http://oeis.org/A147560) ([L08 program](A147560.asm)): a(n) = 4*A046162(n+1).
-* [A147575](http://oeis.org/A147575) ([L03 program](A147575.asm)): Numbers with exactly 8 distinct prime divisors {2,3,5,7,11,13,17,19}
+* [A147575](http://oeis.org/A147575) ([L03 program](A147575.asm)): Numbers with exactly 8 distinct prime divisors {2,3,5,7,11,13,17,19}.
 * [A147587](http://oeis.org/A147587) ([L03 program](A147587.asm)): a(n) = 14*n + 7.
 * [A147590](http://oeis.org/A147590) ([L12 program](A147590.asm)): Numbers whose binary representation is the concatenation of 2n-1 digits 1 and n-1 digits 0.
 * [A147595](http://oeis.org/A147595) ([L15 program](A147595.asm)): a(n) is the number whose binary representation is A138144(n).
@@ -2228,7 +2228,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152100](http://oeis.org/A152100) ([L13 program](A152100.asm)): G.f.: 1 - 2*x*(-7 - 10*x + x^2)/(x - 1)^4.
 * [A152110](http://oeis.org/A152110) ([L11 program](A152110.asm)): G.f.: -2*(-2 - 11*x - 4*x^2 + x^3)/(x - 1)^4.
 * [A152113](http://oeis.org/A152113) ([L11 program](A152113.asm)): A001333 with terms repeated.
-* [A152161](http://oeis.org/A152161) ([L09 program](A152161.asm)): a(n) = 100*n^2 + 100*n + 21.
+* [A152161](http://oeis.org/A152161) ([L08 program](A152161.asm)): a(n) = 100*n^2 + 100*n + 21.
 * [A152179](http://oeis.org/A152179) ([L16 program](A152179.asm)): (n^2-2=A008865) mod 9. Period 9:repeat 8,2,7,5,5,7,2,8,7.
 * [A152271](http://oeis.org/A152271) ([L05 program](A152271.asm)): a(n)=1 for even n and (n+1)/2 for odd n.
 * [A152291](http://oeis.org/A152291) ([L07 program](A152291.asm)): a(n) = (n+1)^floor((n-1)/2).
@@ -2256,9 +2256,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152745](http://oeis.org/A152745) ([L06 program](A152745.asm)): 5 times hexagonal numbers: 5*n*(2*n-1).
 * [A152746](http://oeis.org/A152746) ([L06 program](A152746.asm)): Six times hexagonal numbers: 6*n*(2*n-1).
 * [A152749](http://oeis.org/A152749) ([L06 program](A152749.asm)): a(n) = (n+1)*(3*n+1)/4 for n odd, a(n) = n*(3*n+2)/4 for n even.
-* [A152750](http://oeis.org/A152750) ([L06 program](A152750.asm)): Eight times hexagonal numbers: 8*n*(2*n-1).
+* [A152750](http://oeis.org/A152750) ([L05 program](A152750.asm)): Eight times hexagonal numbers: 8*n*(2*n-1).
 * [A152751](http://oeis.org/A152751) ([L05 program](A152751.asm)): 3 times octagonal numbers: 3*n*(3*n-2).
-* [A152759](http://oeis.org/A152759) ([L09 program](A152759.asm)): 3 times 9-gonal (or nonagonal) numbers: 3n(7n-5)/2.
+* [A152759](http://oeis.org/A152759) ([L08 program](A152759.asm)): 3 times 9-gonal (or nonagonal) numbers: 3n(7n-5)/2.
 * [A152760](http://oeis.org/A152760) ([L08 program](A152760.asm)): 4 times 9-gonal numbers: a(n) = 2*n*(7*n-5).
 * [A152767](http://oeis.org/A152767) ([L09 program](A152767.asm)): 3 times 10-gonal (or decagonal) numbers: 3n(4n-3).
 * [A152773](http://oeis.org/A152773) ([L06 program](A152773.asm)): 3 times heptagonal numbers: a(n) = 3n(5n-3)/2.
@@ -2449,7 +2449,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155965](http://oeis.org/A155965) ([L05 program](A155965.asm)): a(n) = n*(n^2+4).
 * [A155966](http://oeis.org/A155966) ([L04 program](A155966.asm)): a(n) = 2*n^2 + 8.
 * [A155977](http://oeis.org/A155977) ([L06 program](A155977.asm)): a(n) = n^5 + n^3.
-* [A156040](http://oeis.org/A156040) ([L10 program](A156040.asm)): Number of compositions (ordered partitions) of n into 3 parts (some of which may be zero), where the first is at least as great as each of the others.
+* [A156040](http://oeis.org/A156040) ([L06 program](A156040.asm)): Number of compositions (ordered partitions) of n into 3 parts (some of which may be zero), where the first is at least as great as each of the others.
 * [A156060](http://oeis.org/A156060) ([L23 program](A156060.asm)): Jacobsthal numbers A001045 mod 9.
 * [A156126](http://oeis.org/A156126) ([L24 program](A156126.asm)): Sequence related to Hankel transform of super-ballot numbers.
 * [A156127](http://oeis.org/A156127) ([L05 program](A156127.asm)): a(n) = 7*2^n - 3.

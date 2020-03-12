@@ -134,11 +134,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001512](http://oeis.org/A001512) ([L09 program](A001512.asm)): a(n) = (5*n+1)*(5*n+2)*(5*n+3)*(5*n+4).
 * [A001513](http://oeis.org/A001513) ([L09 program](A001513.asm)): (6n+1)(6n+5).
 * [A001519](http://oeis.org/A001519) ([L06 program](A001519.asm)): a(n) = 3*a(n-1) - a(n-2), with a(0) = a(1) = 1.
-* [A001520](http://oeis.org/A001520) ([L46 program](A001520.asm)): (6n+1)(6n+3)(6n+5).
+* [A001520](http://oeis.org/A001520) ([L46 program](A001520.asm)): a(n) = (6*n+1)*(6*n+3)*(6*n+5).
 * [A001526](http://oeis.org/A001526) ([L06 program](A001526.asm)): (7n+1)(7n+6).
 * [A001533](http://oeis.org/A001533) ([L08 program](A001533.asm)): (8n+1)(8n+7).
 * [A001534](http://oeis.org/A001534) ([L14 program](A001534.asm)): (9n+1)(9n+8).
-* [A001535](http://oeis.org/A001535) ([L11 program](A001535.asm)): (10n+1)(10n+9).
+* [A001535](http://oeis.org/A001535) ([L08 program](A001535.asm)): (10n+1)(10n+9).
 * [A001536](http://oeis.org/A001536) ([L13 program](A001536.asm)): (11n+1)(11n+10).
 * [A001538](http://oeis.org/A001538) ([L09 program](A001538.asm)): (12n+1)(12n+11).
 * [A001539](http://oeis.org/A001539) ([L08 program](A001539.asm)): a(n) = (4*n+1)*(4*n+3).
@@ -3754,7 +3754,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052616](http://oeis.org/A052616) ([L07 program](A052616.asm)): E.g.f. (3+2x)/(1-x^2).
 * [A052619](http://oeis.org/A052619) ([L04 program](A052619.asm)): E.g.f. 3x^3/(1-x).
 * [A052624](http://oeis.org/A052624) ([L15 program](A052624.asm)): E.g.f. (1+x^2-2x^3+x^4)/(1-x)^2.
-* [A052628](http://oeis.org/A052628) ([L19 program](A052628.asm)): E.g.f. (2+x^3-x^4)/(1-x).
+* [A052628](http://oeis.org/A052628) ([L13 program](A052628.asm)): E.g.f. (2+x^3-x^4)/(1-x).
 * [A052633](http://oeis.org/A052633) ([L23 program](A052633.asm)): E.g.f. x^2*(1+x-x^2)/(1-x)^2.
 * [A052637](http://oeis.org/A052637) ([L20 program](A052637.asm)): E.g.f. 3x(1+x-x^2)/(1-x).
 * [A052645](http://oeis.org/A052645) ([L13 program](A052645.asm)): E.g.f. 2*x^2*(1+x-x^2)/(1-x).
@@ -4145,6 +4145,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059164](http://oeis.org/A059164) ([L08 program](A059164.asm)): A hierarchical sequence (W'3{2,2}*cc - see A059126).
 * [A059165](http://oeis.org/A059165) ([L05 program](A059165.asm)): a(n) = (n+1)*2^(n+4).
 * [A059169](http://oeis.org/A059169) ([L07 program](A059169.asm)): Number of partitions of n into 3 parts which form the sides of a nondegenerate isosceles triangle.
+* [A059171](http://oeis.org/A059171) ([L16 program](A059171.asm)): Size of largest conjugacy class in S_n, the symmetric group on n symbols.
 * [A059193](http://oeis.org/A059193) ([L07 program](A059193.asm)): Engel expansion of 1/e = 0.367879... .
 * [A059222](http://oeis.org/A059222) ([L03 program](A059222.asm)): Minimal number of disjoint edge-paths into which the graph of the n-ary cube can be partitioned.
 * [A059255](http://oeis.org/A059255) ([L58 program](A059255.asm)): Both sum of n+1 consecutive squares and sum of the immediately following n consecutive squares.
@@ -4348,7 +4349,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062741](http://oeis.org/A062741) ([L06 program](A062741.asm)): 3 times pentagonal numbers: 3*n*(3*n-1)/2.
 * [A062748](http://oeis.org/A062748) ([L09 program](A062748.asm)): Fourth column (r=3) of FS(3) staircase array A062745.
 * [A062781](http://oeis.org/A062781) ([L04 program](A062781.asm)): Number of arithmetic progressions of four terms and any mean which can be extracted from the set of the first n positive integers.
-* [A062783](http://oeis.org/A062783) ([L07 program](A062783.asm)): a(n) = 3*n*(4*n-1).
+* [A062783](http://oeis.org/A062783) ([L06 program](A062783.asm)): a(n) = 3*n*(4*n-1).
 * [A062786](http://oeis.org/A062786) ([L06 program](A062786.asm)): Centered 10-gonal numbers.
 * [A062828](http://oeis.org/A062828) ([L11 program](A062828.asm)): a(n) = gcd(2n, n(n+1)/2).
 * [A062938](http://oeis.org/A062938) ([L12 program](A062938.asm)): a(n) = n*(n+1)*(n+2)*(n+3)+1, which equals (n^2 +3*n + 1)^2.
@@ -5580,7 +5581,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083027](http://oeis.org/A083027) ([L08 program](A083027.asm)): Duplicate of A060107.
 * [A083028](http://oeis.org/A083028) ([L16 program](A083028.asm)): Numbers that are congruent to {0, 2, 3, 5, 7, 8, 11} mod 12.
 * [A083030](http://oeis.org/A083030) ([L12 program](A083030.asm)): Numbers that are congruent to {0, 4, 7} mod 12.
-* [A083031](http://oeis.org/A083031) ([L10 program](A083031.asm)): Numbers that are congruent to {0, 3, 7} mod 12.
+* [A083031](http://oeis.org/A083031) ([L06 program](A083031.asm)): Numbers that are congruent to {0, 3, 7} mod 12.
 * [A083032](http://oeis.org/A083032) ([L08 program](A083032.asm)): Numbers that are congruent to {0, 4, 7, 10} mod 12.
 * [A083033](http://oeis.org/A083033) ([L07 program](A083033.asm)): Numbers that are congruent to {0, 2, 3, 5, 7, 9, 10} mod 12.
 * [A083034](http://oeis.org/A083034) ([L08 program](A083034.asm)): Numbers that are congruent to {0, 1, 3, 5, 7, 8, 10} mod 12.
@@ -5635,7 +5636,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083705](http://oeis.org/A083705) ([L05 program](A083705.asm)): a(n) = 2*a(n-1) - 1 with a(0)=10.
 * [A083706](http://oeis.org/A083706) ([L05 program](A083706.asm)): a(n) = 2^(n+1)+n-1.
 * [A083713](http://oeis.org/A083713) ([L04 program](A083713.asm)): a(n) = (8^n - 1)*3/7.
-* [A083884](http://oeis.org/A083884) ([L09 program](A083884.asm)): a(n) = (3^(2*n) + 1) / 2.
+* [A083884](http://oeis.org/A083884) ([L05 program](A083884.asm)): a(n) = (3^(2*n) + 1) / 2.
 * [A083920](http://oeis.org/A083920) ([L07 program](A083920.asm)): Number of nontriangular numbers <= n.
 * [A084057](http://oeis.org/A084057) ([L17 program](A084057.asm)): a(n) = 2*a(n-1)+4*a(n-2), a(0)=1, a(1)=1.
 * [A084059](http://oeis.org/A084059) ([L11 program](A084059.asm)): a(n) = 4*a(n-1) + 2*a(n-2) for n>1, a(0)=1, a(1)=2.
