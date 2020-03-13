@@ -1087,7 +1087,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241765](http://oeis.org/A241765) ([L07 program](A241765.asm)): a(n) = n*(n + 1)*(n + 2)*(3*n + 17)/24.
 * [A241847](http://oeis.org/A241847) ([L06 program](A241847.asm)): a(n) = n^2 + 17.
 * [A241848](http://oeis.org/A241848) ([L05 program](A241848.asm)): a(n) = n^2 + 18.
-* [A241849](http://oeis.org/A241849) ([L07 program](A241849.asm)): a(n) = n^2 + 19.
+* [A241849](http://oeis.org/A241849) ([L03 program](A241849.asm)): a(n) = n^2 + 19.
 * [A241850](http://oeis.org/A241850) ([L05 program](A241850.asm)): a(n) = n^2 + 20.
 * [A241851](http://oeis.org/A241851) ([L07 program](A241851.asm)): a(n) = n^2 + 21.
 * [A241889](http://oeis.org/A241889) ([L05 program](A241889.asm)): a(n) = n^2 + 23.
@@ -1984,7 +1984,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A270109](http://oeis.org/A270109) ([L10 program](A270109.asm)): a(n) = n^3 + (n+1)*(n+2).
 * [A270111](http://oeis.org/A270111) ([L11 program](A270111.asm)): Number of n X 1 0..7 arrays with some element plus some horizontally or vertically adjacent neighbor totalling seven exactly once.
 * [A270200](http://oeis.org/A270200) ([L17 program](A270200.asm)): a(0) = 0; for n >= 1, a(n) = A054429(A005187(1+A054429(n-1))).
-* [A270205](http://oeis.org/A270205) ([L08 program](A270205.asm)): Number of 2 X 2 planar subsets in an n X n X n cube.
+* [A270205](http://oeis.org/A270205) ([L07 program](A270205.asm)): Number of 2 X 2 planar subsets in an n X n X n cube.
 * [A270257](http://oeis.org/A270257) ([L05 program](A270257.asm)): Number of 2X2X2 triangular 0..n arrays with some element plus some adjacent element totalling n exactly once.
 * [A270296](http://oeis.org/A270296) ([L08 program](A270296.asm)): Numbers which are representable as a sum of five but no fewer consecutive nonnegative integers.
 * [A270369](http://oeis.org/A270369) ([L09 program](A270369.asm)): Expansion of (1-7*x)/(1-9*x).
@@ -2286,7 +2286,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A278129](http://oeis.org/A278129) ([L05 program](A278129.asm)): a(n) = 348*2^n - 188.
 * [A278130](http://oeis.org/A278130) ([L05 program](A278130.asm)): a(n) = 492*2^n - 222.
 * [A278131](http://oeis.org/A278131) ([L05 program](A278131.asm)): a(n) = 591*2^n - 273.
-* [A278313](http://oeis.org/A278313) ([L10 program](A278313.asm)): Number of letters "I" in Roman numeral representation of n.
+* [A278313](http://oeis.org/A278313) ([L09 program](A278313.asm)): Number of letters "I" in Roman numeral representation of n.
 * [A278417](http://oeis.org/A278417) ([L07 program](A278417.asm)): a(n) = n*((2+sqrt(3))^n + (2-sqrt(3))^n)/2.
 * [A278484](http://oeis.org/A278484) ([L10 program](A278484.asm)): Main diagonal of A278482.
 * [A278536](http://oeis.org/A278536) ([L13 program](A278536.asm)): First differences of A273324.

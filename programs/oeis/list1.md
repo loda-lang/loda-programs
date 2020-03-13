@@ -989,7 +989,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123357](http://oeis.org/A123357) ([L12 program](A123357.asm)): Kekulé numbers for certain benzenoids (see the Cyvin-Gutman book for details).
 * [A123384](http://oeis.org/A123384) ([L14 program](A123384.asm)): Number of bits in binary expansion of 10^n.
 * [A123578](http://oeis.org/A123578) ([L04 program](A123578.asm)): The Kruskal-Macaulay function M_2(n).
-* [A123596](http://oeis.org/A123596) ([L14 program](A123596.asm)): Squares alternating with triangular numbers.
+* [A123596](http://oeis.org/A123596) ([L07 program](A123596.asm)): Squares alternating with triangular numbers.
 * [A123650](http://oeis.org/A123650) ([L55 program](A123650.asm)): a(n) = 1 + n^2 + n^3 + n^5.
 * [A123656](http://oeis.org/A123656) ([L75 program](A123656.asm)): a(n) = 1 + n^4 + n^6.
 * [A123663](http://oeis.org/A123663) ([L11 program](A123663.asm)): Number of shared edges in a spiral of n unit squares.
@@ -2228,7 +2228,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152100](http://oeis.org/A152100) ([L13 program](A152100.asm)): G.f.: 1 - 2*x*(-7 - 10*x + x^2)/(x - 1)^4.
 * [A152110](http://oeis.org/A152110) ([L11 program](A152110.asm)): G.f.: -2*(-2 - 11*x - 4*x^2 + x^3)/(x - 1)^4.
 * [A152113](http://oeis.org/A152113) ([L11 program](A152113.asm)): A001333 with terms repeated.
-* [A152161](http://oeis.org/A152161) ([L08 program](A152161.asm)): a(n) = 100*n^2 + 100*n + 21.
+* [A152161](http://oeis.org/A152161) ([L06 program](A152161.asm)): a(n) = 100*n^2 + 100*n + 21.
 * [A152179](http://oeis.org/A152179) ([L16 program](A152179.asm)): (n^2-2=A008865) mod 9. Period 9:repeat 8,2,7,5,5,7,2,8,7.
 * [A152271](http://oeis.org/A152271) ([L05 program](A152271.asm)): a(n)=1 for even n and (n+1)/2 for odd n.
 * [A152291](http://oeis.org/A152291) ([L07 program](A152291.asm)): a(n) = (n+1)^floor((n-1)/2).
@@ -2517,6 +2517,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157264](http://oeis.org/A157264) ([L22 program](A157264.asm)): a(n) = 10368*n^2 - 15840*n + 6049.
 * [A157265](http://oeis.org/A157265) ([L19 program](A157265.asm)): a(n) = 36*n^2 - 17*n + 2.
 * [A157266](http://oeis.org/A157266) ([L03 program](A157266.asm)): a(n) = 1728*n - 408.
+* [A157267](http://oeis.org/A157267) ([L17 program](A157267.asm)): a(n) = 10368*n^2 - 4896*n + 577.
 * [A157286](http://oeis.org/A157286) ([L17 program](A157286.asm)): a(n) = 36*n^2 - n.
 * [A157287](http://oeis.org/A157287) ([L03 program](A157287.asm)): a(n) = 1728*n - 24.
 * [A157288](http://oeis.org/A157288) ([L25 program](A157288.asm)): a(n) = 10368*n^2 - 288*n + 1.
@@ -4113,7 +4114,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178218](http://oeis.org/A178218) ([L07 program](A178218.asm)): Numbers of the form 2k^2-2k+1 or 2k^2-1.
 * [A178312](http://oeis.org/A178312) ([L06 program](A178312.asm)): a(n) = n * T(ceiling(n/2)), where T are the triangular numbers, A000217.
 * [A178390](http://oeis.org/A178390) ([L05 program](A178390.asm)): a(n) = (n^2+1)^2+1.
-* [A178391](http://oeis.org/A178391) ([L11 program](A178391.asm)): a(n)=(n^3+1)^3+1.
+* [A178391](http://oeis.org/A178391) ([L11 program](A178391.asm)): a(n) = (n^3+1)^3+1.
 * [A178414](http://oeis.org/A178414) ([L05 program](A178414.asm)): Least odd number in the Collatz (3x+1) preimage of odd numbers not a multiple of 3.
 * [A178420](http://oeis.org/A178420) ([L09 program](A178420.asm)): Partial sums of floor(2^n/3).
 * [A178487](http://oeis.org/A178487) ([L10 program](A178487.asm)): a(n) = floor(n^(1/5)): integer part of fifth root of n.
