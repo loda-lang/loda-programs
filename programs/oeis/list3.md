@@ -18,7 +18,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300576](http://oeis.org/A300576) ([L07 program](A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300622](http://oeis.org/A300622) ([L12 program](A300622.asm)): Denominators of sequence whose exponential self-convolution yields sequence 1, 2, 3, 5, 7, 11, 13, ... (1 with primes).
 * [A300659](http://oeis.org/A300659) ([L09 program](A300659.asm)): Product of digits of n!.
-* [A300758](http://oeis.org/A300758) ([L12 program](A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
+* [A300758](http://oeis.org/A300758) ([L08 program](A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
 * [A300846](http://oeis.org/A300846) ([L08 program](A300846.asm)): a(n) = 3*(n - 1)^2*n^3.
 * [A301291](http://oeis.org/A301291) ([L19 program](A301291.asm)): Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
 * [A301292](http://oeis.org/A301292) ([L09 program](A301292.asm)): Partial sums of A301291.
@@ -727,6 +727,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330144](http://oeis.org/A330144) ([L20 program](A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
 * [A330246](http://oeis.org/A330246) ([L05 program](A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
+* [A330396](http://oeis.org/A330396) ([L11 program](A330396.asm)): Permutation of the nonnegative integers partitioned into triples [3*k+2, 3*k+1, 3*k] for k >= 0.
 * [A330569](http://oeis.org/A330569) ([L10 program](A330569.asm)): a(n) = 1 if n is odd, otherwise a(n) = 2^(v-1)+1 where v is the 2-adic valuation of n (A007814(n)).
 * [A330707](http://oeis.org/A330707) ([L08 program](A330707.asm)): a(n) = ( 3*n^2 + n - 1 + (-1)^floor(n/2) )/4.
 * [A330770](http://oeis.org/A330770) ([L05 program](A330770.asm)): a(n) = 19 * 8^n + 17 for n >= 0.

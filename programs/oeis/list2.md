@@ -154,6 +154,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206641](http://oeis.org/A206641) ([L14 program](A206641.asm)): Fibonacci sequence beginning 14, 9.
 * [A206723](http://oeis.org/A206723) ([L15 program](A206723.asm)): a(n) = 7*( ((3 + sqrt(5))/2)^n + ((3 - sqrt(5))/2)^n - 2 ).
 * [A206776](http://oeis.org/A206776) ([L12 program](A206776.asm)): a(n) = 3*a(n-1) + 2*a(n-2) for n>1, a(0)=2, a(1)=3.
+* [A206807](http://oeis.org/A206807) ([L21 program](A206807.asm)): Position of 3^n when {2^j} and {3^k} are jointly ranked; complement of A206805.
 * [A206905](http://oeis.org/A206905) ([L08 program](A206905.asm)): n+[nr/t]+[ns/t], where []=floor, r=3, s=sqrt(3), t=1/s.
 * [A206906](http://oeis.org/A206906) ([L14 program](A206906.asm)): n+[ns/r]+[nt/r], where []=floor, r=1/3, s=sqrt(3), t=1/s.
 * [A206917](http://oeis.org/A206917) ([L14 program](A206917.asm)): Sum of binary palindromes in the half-open interval [2^(n-1), 2^n).
@@ -1984,7 +1985,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A270109](http://oeis.org/A270109) ([L10 program](A270109.asm)): a(n) = n^3 + (n+1)*(n+2).
 * [A270111](http://oeis.org/A270111) ([L11 program](A270111.asm)): Number of n X 1 0..7 arrays with some element plus some horizontally or vertically adjacent neighbor totalling seven exactly once.
 * [A270200](http://oeis.org/A270200) ([L17 program](A270200.asm)): a(0) = 0; for n >= 1, a(n) = A054429(A005187(1+A054429(n-1))).
-* [A270205](http://oeis.org/A270205) ([L07 program](A270205.asm)): Number of 2 X 2 planar subsets in an n X n X n cube.
+* [A270205](http://oeis.org/A270205) ([L06 program](A270205.asm)): Number of 2 X 2 planar subsets in an n X n X n cube.
 * [A270257](http://oeis.org/A270257) ([L05 program](A270257.asm)): Number of 2X2X2 triangular 0..n arrays with some element plus some adjacent element totalling n exactly once.
 * [A270296](http://oeis.org/A270296) ([L08 program](A270296.asm)): Numbers which are representable as a sum of five but no fewer consecutive nonnegative integers.
 * [A270369](http://oeis.org/A270369) ([L09 program](A270369.asm)): Expansion of (1-7*x)/(1-9*x).
@@ -2469,7 +2470,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286930](http://oeis.org/A286930) ([L13 program](A286930.asm)): Integers whose double is a square and whose triple is a cube.
 * [A286986](http://oeis.org/A286986) ([L18 program](A286986.asm)): Number of connected dominating sets in the n-antiprism graph.
 * [A286996](http://oeis.org/A286996) ([L20 program](A286996.asm)): {0->000, 11->null}-transform of the Sturmian word A080764.
-* [A287057](http://oeis.org/A287057) ([L15 program](A287057.asm)): a(n) = 2*n^2 + n - (n+1) mod 2.
+* [A287057](http://oeis.org/A287057) ([L13 program](A287057.asm)): a(n) = 2*n^2 + n - (n+1) mod 2.
 * [A287209](http://oeis.org/A287209) ([L31 program](A287209.asm)): a(1)=4, a(2)=5, a(n) = sum of digits of a(n-1) + sum of digits of a(n-2), n>=3.
 * [A287272](http://oeis.org/A287272) ([L06 program](A287272.asm)): a(n) is the number of zeros of the Laguerre L(n, x) polynomial in the open interval (-1, +1).
 * [A287335](http://oeis.org/A287335) ([L11 program](A287335.asm)): Nonnegative numbers k such that 3*k + 2 is a cube.

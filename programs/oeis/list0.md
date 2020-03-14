@@ -598,7 +598,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006483](http://oeis.org/A006483) ([L14 program](A006483.asm)): a(n) = Fibonacci(n)*2^n + 1.
 * [A006484](http://oeis.org/A006484) ([L14 program](A006484.asm)): a(n) = n*(n + 1)*(n^2 - 3*n + 5)/6.
 * [A006490](http://oeis.org/A006490) ([L09 program](A006490.asm)): a(1) = 1, a(2) = 0; for n > 2, a(n) = n*Fibonacci(n-2) (with the convention Fibonacci(0)=0, Fibonacci(1)=1).
-* [A006497](http://oeis.org/A006497) ([L13 program](A006497.asm)): a(n) = 3*a(n-1) + a(n-2).
+* [A006497](http://oeis.org/A006497) ([L13 program](A006497.asm)): a(n) = 3*a(n-1) + a(n-2) with a(0) = 2, a(1) = 3.
 * [A006503](http://oeis.org/A006503) ([L07 program](A006503.asm)): a(n) = n*(n+1)*(n+8)/6.
 * [A006516](http://oeis.org/A006516) ([L11 program](A006516.asm)): a(n) = 2^(n-1)*(2^n - 1), n >= 0.
 * [A006519](http://oeis.org/A006519) ([L05 program](A006519.asm)): Highest power of 2 dividing n.
@@ -1632,7 +1632,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021127](http://oeis.org/A021127) ([L10 program](A021127.asm)): Decimal expansion of 1/123.
 * [A021131](http://oeis.org/A021131) ([L43 program](A021131.asm)): Decimal expansion of 1/127.
 * [A021133](http://oeis.org/A021133) ([L25 program](A021133.asm)): Decimal expansion of 1/129.
-* [A021136](http://oeis.org/A021136) ([L11 program](A021136.asm)): Decimal expansion of 1/132.
+* [A021136](http://oeis.org/A021136) ([L09 program](A021136.asm)): Decimal expansion of 1/132.
 * [A021137](http://oeis.org/A021137) ([L23 program](A021137.asm)): Decimal expansion of 1/133.
 * [A021139](http://oeis.org/A021139) ([L13 program](A021139.asm)): Decimal expansion of 1/135.
 * [A021141](http://oeis.org/A021141) ([L13 program](A021141.asm)): Decimal expansion of 1/137.
@@ -3751,7 +3751,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052579](http://oeis.org/A052579) ([L08 program](A052579.asm)): E.g.f. (2+x+x^2)/((1-x)(1+x+x^2)).
 * [A052591](http://oeis.org/A052591) ([L06 program](A052591.asm)): E.g.f. x/((1-x)(1-x^2)).
 * [A052596](http://oeis.org/A052596) ([L09 program](A052596.asm)): E.g.f. (1+x^4-x^5)/(1-x).
-* [A052612](http://oeis.org/A052612) ([L09 program](A052612.asm)): E.g.f. x*(2+x)/(1-x^2).
+* [A052612](http://oeis.org/A052612) ([L06 program](A052612.asm)): E.g.f. x*(2+x)/(1-x^2).
 * [A052614](http://oeis.org/A052614) ([L10 program](A052614.asm)): E.g.f. 1/((1-x)(1-x^4)).
 * [A052616](http://oeis.org/A052616) ([L07 program](A052616.asm)): E.g.f. (3+2x)/(1-x^2).
 * [A052619](http://oeis.org/A052619) ([L04 program](A052619.asm)): E.g.f. 3x^3/(1-x).
@@ -3920,6 +3920,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054895](http://oeis.org/A054895) ([L09 program](A054895.asm)): a(n) = Sum_{k>0} floor(n/6^k).
 * [A054896](http://oeis.org/A054896) ([L05 program](A054896.asm)): a(n) = Sum_{k>0} floor(n/7^k).
 * [A054897](http://oeis.org/A054897) ([L11 program](A054897.asm)): a(n) = Sum_{k>0} floor(n/8^k).
+* [A054898](http://oeis.org/A054898) ([L18 program](A054898.asm)): a(n) = Sum_{k>0} floor(n/9^k).
 * [A054899](http://oeis.org/A054899) ([L06 program](A054899.asm)): a(n) = Sum_{k>0} floor(n/10^k).
 * [A054900](http://oeis.org/A054900) ([L02 program](A054900.asm)): (n) = floor(n/16) + floor(n/256) + floor(n/4096) + floor(n/65536) + ....
 * [A054925](http://oeis.org/A054925) ([L06 program](A054925.asm)): a(n) = ceiling(n*(n-1)/4).
@@ -6258,6 +6259,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A098182](http://oeis.org/A098182) ([L08 program](A098182.asm)): a(n) = 3*a(n-1) - a(n-2) + a(n-3), a(0)=1,a(1)=1,a(2)=3.
 * [A098232](http://oeis.org/A098232) ([L13 program](A098232.asm)): Largest power of 2 <= 3^n.
 * [A098293](http://oeis.org/A098293) ([L06 program](A098293.asm)): Powers of 2 alternating with powers of 3.
+* [A098295](http://oeis.org/A098295) ([L15 program](A098295.asm)): ((3/2)^n)/2^a(n) lies in the half-open interval [1,2).
 * [A098354](http://oeis.org/A098354) ([L07 program](A098354.asm)): Multiplication table of the powers of 2 read by antidiagonals.
 * [A098355](http://oeis.org/A098355) ([L10 program](A098355.asm)): Multiplication table of the powers of three read by antidiagonals.
 * [A098378](http://oeis.org/A098378) ([L07 program](A098378.asm)): Number of characters needed to write number n in the traditional Ethiopic (Geez) number system.

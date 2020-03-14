@@ -10,8 +10,5 @@ pow $0,$1
 sub $2,1
 sub $2,$0
 mov $1,$2
-lpb $0,1
-  add $0,2
-lpe
 mul $1,3
 div $1,3
