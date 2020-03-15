@@ -506,7 +506,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215459](http://oeis.org/A215459) ([L10 program](A215459.asm)): Arises in quick gossiping without duplicate transmission.
 * [A215495](http://oeis.org/A215495) ([L08 program](A215495.asm)): a(4*n) = a(4*n+2) = a(2*n+1) = 2*n + 1.
 * [A215532](http://oeis.org/A215532) ([L29 program](A215532.asm)): The limit of the string "0, 1" under the operation 'append first k terms, increment k' with k=2 initially.
-* [A215537](http://oeis.org/A215537) ([L20 program](A215537.asm)): Lowest k such that k is representable as both the sum of n and of n+1 nonzero squares.
+* [A215537](http://oeis.org/A215537) ([L15 program](A215537.asm)): Lowest k such that k is representable as both the sum of n and of n+1 nonzero squares.
 * [A215580](http://oeis.org/A215580) ([L20 program](A215580.asm)): Partial sums of A215602.
 * [A215604](http://oeis.org/A215604) ([L06 program](A215604.asm)): a(0)=0, a(n) = (n + a(floor(n/2))) mod 3.
 * [A215646](http://oeis.org/A215646) ([L20 program](A215646.asm)): n * (11*n^2 + 6*n + 1) / 6.
@@ -2570,7 +2570,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A290682](http://oeis.org/A290682) ([L12 program](A290682.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
 * [A290683](http://oeis.org/A290683) ([L16 program](A290683.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
 * [A290699](http://oeis.org/A290699) ([L11 program](A290699.asm)): a(n) = 2^n - n + n^2.
-* [A290707](http://oeis.org/A290707) ([L10 program](A290707.asm)): a(n) = 2^(n+1) + n^2 - 1.
+* [A290707](http://oeis.org/A290707) ([L09 program](A290707.asm)): a(n) = 2^(n+1) + n^2 - 1.
 * [A290709](http://oeis.org/A290709) ([L27 program](A290709.asm)): Number of irredundant sets in the complete tripartite graph K_{n,n,n}.
 * [A290718](http://oeis.org/A290718) ([L08 program](A290718.asm)): a(n) = 2^(n + 1) + 4^(n - 1) - 2.
 * [A290721](http://oeis.org/A290721) ([L07 program](A290721.asm)): a(n) = 4^n - n - 1.

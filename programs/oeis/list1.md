@@ -2160,7 +2160,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A146523](http://oeis.org/A146523) ([L07 program](A146523.asm)): Binomial transform of A010685.
 * [A146528](http://oeis.org/A146528) ([L05 program](A146528.asm)): Sequence related to A053016(n): a(n)=2*(If[n == 0, 0, 2^(n - 1)] + 2)
 * [A146529](http://oeis.org/A146529) ([L09 program](A146529.asm)): A two level sequence: v(n)=2*(If[n == 0, 0, 2^(n - 1)] + 2); a(n)=If[n == 0, 6, (v[n] + v[n - 1] - 2)].
-* [A146535](http://oeis.org/A146535) ([L14 program](A146535.asm)): Numerator of (2*n-1)/3.
+* [A146535](http://oeis.org/A146535) ([L09 program](A146535.asm)): Numerator of (2*n-1)/3.
 * [A146541](http://oeis.org/A146541) ([L07 program](A146541.asm)): Binomial transform of A010688.
 * [A146761](http://oeis.org/A146761) ([L05 program](A146761.asm)): Period 6: repeat [0, 0, 6, 6, 3, 3].
 * [A146763](http://oeis.org/A146763) ([L04 program](A146763.asm)): Rank of terms ending in 0 in A061039.
@@ -3498,7 +3498,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168457](http://oeis.org/A168457) ([L05 program](A168457.asm)): a(n) = (10*n + 5*(-1)^n - 1)/2.
 * [A168458](http://oeis.org/A168458) ([L06 program](A168458.asm)): a(n) = 7 + 10*floor((n-1)/2).
 * [A168459](http://oeis.org/A168459) ([L05 program](A168459.asm)): a(n) = (10*n + 5*(-1)^n - 3)/2.
-* [A168460](http://oeis.org/A168460) ([L07 program](A168460.asm)): a(n) = 6 + 10*floor((n-1)/2).
+* [A168460](http://oeis.org/A168460) ([L04 program](A168460.asm)): a(n) = 6 + 10*floor((n-1)/2).
 * [A168461](http://oeis.org/A168461) ([L04 program](A168461.asm)): a(n) = 10*floor(n/2).
 * [A168463](http://oeis.org/A168463) ([L05 program](A168463.asm)): a(n) = 5 + 11*floor(n/2).
 * [A168465](http://oeis.org/A168465) ([L06 program](A168465.asm)): Numbers that are congruent to 2 or 7 mod 11.
@@ -4081,7 +4081,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A177154](http://oeis.org/A177154) ([L04 program](A177154.asm)): Fractional part of the conversion from degrees Centigrade (or Celsius) to Fahrenheit.
 * [A177206](http://oeis.org/A177206) ([L12 program](A177206.asm)): a(n) = 2*binomial(n+4, 4) + n + 4.
 * [A177239](http://oeis.org/A177239) ([L14 program](A177239.asm)): Partial sums of round(n^2/20).
-* [A177274](http://oeis.org/A177274) ([L05 program](A177274.asm)): Periodic sequence: Repeat 1, 2, 3, 4, 5, 6, 7, 8, 9.
+* [A177274](http://oeis.org/A177274) ([L03 program](A177274.asm)): Periodic sequence: Repeat 1, 2, 3, 4, 5, 6, 7, 8, 9.
 * [A177342](http://oeis.org/A177342) ([L09 program](A177342.asm)): a(n) = (4*n^3-3*n^2+5*n-3)/3.
 * [A177499](http://oeis.org/A177499) ([L04 program](A177499.asm)): Period 4: repeat [1, 16, 4, 16].
 * [A177702](http://oeis.org/A177702) ([L03 program](A177702.asm)): Period 3: repeat [1, 1, 2].
@@ -4483,7 +4483,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185871](http://oeis.org/A185871) ([L11 program](A185871.asm)): (Even,even)-polka dot array in the natural number array A000027, by antidiagonals.
 * [A185908](http://oeis.org/A185908) ([L10 program](A185908.asm)): Array: T(n,k) = n-1 + min{n,k}, by antidiagonals.
 * [A185914](http://oeis.org/A185914) ([L11 program](A185914.asm)): Array: T(n,k)=k-n+1 for k>=n; T(n,k)=0 for k<n; by antidiagonals.
-* [A185939](http://oeis.org/A185939) ([L07 program](A185939.asm)): a(n) = 9*n^2 - 6*n + 2.
+* [A185939](http://oeis.org/A185939) ([L06 program](A185939.asm)): a(n) = 9*n^2 - 6*n + 2.
 * [A186029](http://oeis.org/A186029) ([L06 program](A186029.asm)): a(n) = n*(7*n+3)/2.
 * [A186030](http://oeis.org/A186030) ([L06 program](A186030.asm)): a(n) = n*(13*n-3)/2.
 * [A186101](http://oeis.org/A186101) ([L11 program](A186101.asm)): a(n) = 2*n / 3 if n divisible by 3, a(n) = n otherwise.
@@ -4540,6 +4540,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186684](http://oeis.org/A186684) ([L05 program](A186684.asm)): Total number of positive integers below 10^n requiring 19 positive biquadrates in their representation as sum of biquadrates.
 * [A186685](http://oeis.org/A186685) ([L07 program](A186685.asm)): Total number of n-digit numbers requiring 19 positive biquadrates in their representation as sum of biquadrates.
 * [A186731](http://oeis.org/A186731) ([L11 program](A186731.asm)): a(3n) = 2n, a(3n+1) = n, a(3n+2) = n+1.
+* [A186813](http://oeis.org/A186813) ([L09 program](A186813.asm)): a(n) = n if n odd, a(2n) = 3n if n odd, a(4n) = 2n.
 * [A186852](http://oeis.org/A186852) ([L15 program](A186852.asm)): Number of 3-step knight's tours on a (n+2)X(n+2) board summed over all starting positions
 * [A186862](http://oeis.org/A186862) ([L10 program](A186862.asm)): Number of 3-step king's tours on an n X n board summed over all starting positions
 * [A186942](http://oeis.org/A186942) ([L12 program](A186942.asm)): a(n)=2(4^n-n*2^n)-1.
@@ -4856,7 +4857,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193738](http://oeis.org/A193738) ([L09 program](A193738.asm)): Triangular array:  the fusion of polynomial sequences P and Q given by p(n,x)=q(n,x)=x^n+x^(n-1)+...+x+1.
 * [A193739](http://oeis.org/A193739) ([L23 program](A193739.asm)): Mirror of the triangle A193738.
 * [A193766](http://oeis.org/A193766) ([L05 program](A193766.asm)): The number of dominoes in a largest saturated domino covering of the 3 by n board.
-* [A193767](http://oeis.org/A193767) ([L12 program](A193767.asm)): The number of dominoes in a largest saturated domino covering of the 4 by n board.
+* [A193767](http://oeis.org/A193767) ([L11 program](A193767.asm)): The number of dominoes in a largest saturated domino covering of the 4 by n board.
 * [A193768](http://oeis.org/A193768) ([L12 program](A193768.asm)): The domination number of the 4 by n board.
 * [A193832](http://oeis.org/A193832) ([L14 program](A193832.asm)): Irregular triangle read by rows in which row n lists 2n-1 copies of 2n-1 and n copies of 2n, for n >= 1.
 * [A193866](http://oeis.org/A193866) ([L20 program](A193866.asm)): Even pentagonal numbers divided by 2.

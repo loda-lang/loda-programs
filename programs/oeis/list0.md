@@ -1196,6 +1196,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016152](http://oeis.org/A016152) ([L10 program](A016152.asm)): a(n) = 4^(n-1)*(2^n-1).
 * [A016156](http://oeis.org/A016156) ([L03 program](A016156.asm)): Inverse of 2147th cyclotomic polynomial.
 * [A016168](http://oeis.org/A016168) ([L03 program](A016168.asm)): Inverse of 2159th cyclotomic polynomial.
+* [A016177](http://oeis.org/A016177) ([L09 program](A016177.asm)): a(n) = 8^n - 7^n.
 * [A016180](http://oeis.org/A016180) ([L02 program](A016180.asm)): Inverse of 2171st cyclotomic polynomial.
 * [A016198](http://oeis.org/A016198) ([L21 program](A016198.asm)): Expansion of 1/((1-x)(1-2x)(1-5x)).
 * [A016200](http://oeis.org/A016200) ([L17 program](A016200.asm)): Expansion of 1/((1-x)(1-2x)(1-6x)).
@@ -1278,7 +1279,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016935](http://oeis.org/A016935) ([L04 program](A016935.asm)): a(n) = (6*n + 2)^3.
 * [A016936](http://oeis.org/A016936) ([L05 program](A016936.asm)): a(n) = (6*n + 2)^4.
 * [A016945](http://oeis.org/A016945) ([L03 program](A016945.asm)): a(n) = 6*n+3.
-* [A016946](http://oeis.org/A016946) ([L05 program](A016946.asm)): (6n+3)^2.
+* [A016946](http://oeis.org/A016946) ([L04 program](A016946.asm)): (6n+3)^2.
 * [A016947](http://oeis.org/A016947) ([L05 program](A016947.asm)): a(n) = (6*n + 3)^3.
 * [A016948](http://oeis.org/A016948) ([L05 program](A016948.asm)): a(n) = (6*n + 3)^4.
 * [A016957](http://oeis.org/A016957) ([L03 program](A016957.asm)): a(n) = 6*n + 4.
@@ -1853,7 +1854,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022280](http://oeis.org/A022280) ([L08 program](A022280.asm)): a(n) = n*(23*n - 1)/2.
 * [A022281](http://oeis.org/A022281) ([L11 program](A022281.asm)): a(n) = n*(23*n + 1)/2.
 * [A022282](http://oeis.org/A022282) ([L08 program](A022282.asm)): a(n) = n*(25*n - 1)/2.
-* [A022283](http://oeis.org/A022283) ([L08 program](A022283.asm)): a(n) = n*(25*n + 1)/2.
+* [A022283](http://oeis.org/A022283) ([L06 program](A022283.asm)): a(n) = n*(25*n + 1)/2.
 * [A022284](http://oeis.org/A022284) ([L09 program](A022284.asm)): a(n) = n*(27*n - 1)/2.
 * [A022285](http://oeis.org/A022285) ([L09 program](A022285.asm)): a(n) = n*(27*n + 1)/2.
 * [A022286](http://oeis.org/A022286) ([L11 program](A022286.asm)): a(n) = n*(29*n - 1)/2.
@@ -5427,6 +5428,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081038](http://oeis.org/A081038) ([L11 program](A081038.asm)): 3rd binomial transform of (1,2,0,0,0,0,0,0....).
 * [A081039](http://oeis.org/A081039) ([L17 program](A081039.asm)): 4th binomial transform of (1,3,0,0,0,0,0,.....).
 * [A081040](http://oeis.org/A081040) ([L10 program](A081040.asm)): 5th binomial transform of (1,4,0,0,0,0,....).
+* [A081041](http://oeis.org/A081041) ([L10 program](A081041.asm)): 6th binomial transform of (1,5,0,0,0,0,0,0,.....).
 * [A081042](http://oeis.org/A081042) ([L14 program](A081042.asm)): 7th binomial transform of (1,6,0,0,0,0,0,0,.....).
 * [A081057](http://oeis.org/A081057) ([L11 program](A081057.asm)): E.g.f.: Sum_{n>=0} a(n)*x^n/n! = {Sum_{n>=0} F(n+1)*x^n/n!}^2, where F(n) is the n-th Fibonacci number.
 * [A081067](http://oeis.org/A081067) ([L09 program](A081067.asm)): Lucas(4n+2)+2, or 5*Fibonacci(2n+1)^2.

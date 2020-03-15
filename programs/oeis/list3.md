@@ -112,7 +112,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304166](http://oeis.org/A304166) ([L12 program](A304166.asm)): a(n) = 972*n^2 - 1224*n + 414 with n > 0.
 * [A304168](http://oeis.org/A304168) ([L10 program](A304168.asm)): a(n) = 2*3^n - 2^(n-1) (n>=1).
 * [A304171](http://oeis.org/A304171) ([L05 program](A304171.asm)): a(n) = 87*2^n - 38 (n>=0).
-* [A304172](http://oeis.org/A304172) ([L25 program](A304172.asm)): a(n) = 99*2^n - 45 (n>=0).
+* [A304172](http://oeis.org/A304172) ([L10 program](A304172.asm)): a(n) = 99*2^n - 45 (n>=0).
 * [A304205](http://oeis.org/A304205) ([L03 program](A304205.asm)): Numbers k such that 24*k + 6 is congruent to 0 (mod 49).
 * [A304274](http://oeis.org/A304274) ([L08 program](A304274.asm)): The concatenation of the first n elements is the largest positive even number with n digits when written in base 3/2.
 * [A304370](http://oeis.org/A304370) ([L22 program](A304370.asm)): Number of function calls of the first kind required to compute ack(3,n), where ack denotes the Ackermann function.
