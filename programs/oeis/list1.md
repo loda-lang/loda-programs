@@ -1177,6 +1177,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A129185](http://oeis.org/A129185) ([L07 program](A129185.asm)): Shift operator, left.
 * [A129186](http://oeis.org/A129186) ([L11 program](A129186.asm)): Right shift operator generating 1's in shifted spaces.
 * [A129194](http://oeis.org/A129194) ([L04 program](A129194.asm)): a(n) = n^2*(3/4 - (-1)^n/4).
+* [A129196](http://oeis.org/A129196) ([L06 program](A129196.asm)): a(n) = denominator(3*(3+(-1)^n)/(n+1)^3).
 * [A129197](http://oeis.org/A129197) ([L13 program](A129197.asm)): a(n) = numerator( 3*(3+(-1)^n)/(n+1)^3 ).
 * [A129202](http://oeis.org/A129202) ([L06 program](A129202.asm)): Denominator of 3*(3+(-1)^n) / (n+1)^2.
 * [A129203](http://oeis.org/A129203) ([L07 program](A129203.asm)): a(n) = numerator(3/(n+1)^3)*(3/2 + (-1)^n/2).
@@ -1600,7 +1601,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134238](http://oeis.org/A134238) ([L07 program](A134238.asm)): Row sums of triangle A134237.
 * [A134267](http://oeis.org/A134267) ([L08 program](A134267.asm)): a(n) = |A090964(n+1) - A090964(n)|.
 * [A134297](http://oeis.org/A134297) ([L02 program](A134297.asm)): a(n) = 107*n.
-* [A134301](http://oeis.org/A134301) ([L10 program](A134301.asm)): Periodic sequence (0, 2, 6, 2, 0).
+* [A134301](http://oeis.org/A134301) ([L07 program](A134301.asm)): Periodic sequence (0, 2, 6, 2, 0).
 * [A134311](http://oeis.org/A134311) ([L10 program](A134311.asm)): Row sums of triangle A134310.
 * [A134341](http://oeis.org/A134341) ([L03 program](A134341.asm)): Numbers whose fifth powers have a partition as a sum of fifth powers of four positive integers.
 * [A134342](http://oeis.org/A134342) ([L16 program](A134342.asm)): Accepted inputs by a certain adaptive automaton (number 4258072) with two adaptive functions and unary numbers as input.
@@ -1751,6 +1752,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A137344](http://oeis.org/A137344) ([L18 program](A137344.asm)): a(n)=4a(n-2). Also 3*A084221.
 * [A137362](http://oeis.org/A137362) ([L18 program](A137362.asm)): Positions at which the truncated square root of triangular numbers is unique.
 * [A137397](http://oeis.org/A137397) ([L07 program](A137397.asm)): Number of distinct palindromic subwords in the binary representation of n.
+* [A137480](http://oeis.org/A137480) ([L12 program](A137480.asm)): a(n)=4a(n-2).
 * [A137483](http://oeis.org/A137483) ([L07 program](A137483.asm)): a(n+1) = 9*a(n) - 6, a(0) = 2.
 * [A137495](http://oeis.org/A137495) ([L16 program](A137495.asm)): A098601(2n)+A098601(2n+1)
 * [A137531](http://oeis.org/A137531) ([L09 program](A137531.asm)): a(n) = 3*a(n-1) - 2*a(n-2) + a(n-3).
@@ -2528,7 +2530,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157330](http://oeis.org/A157330) ([L03 program](A157330.asm)): a(n) = 64*n - 8.
 * [A157331](http://oeis.org/A157331) ([L08 program](A157331.asm)): a(n) = 128*n^2 - 32*n + 1.
 * [A157336](http://oeis.org/A157336) ([L03 program](A157336.asm)): a(n) = 8*(8*n + 1).
-* [A157337](http://oeis.org/A157337) ([L13 program](A157337.asm)): a(n) = 128*n^2 + 32*n + 1.
+* [A157337](http://oeis.org/A157337) ([L09 program](A157337.asm)): a(n) = 128*n^2 + 32*n + 1.
 * [A157362](http://oeis.org/A157362) ([L11 program](A157362.asm)): a(n) = 49*n^2 - 2*n.
 * [A157363](http://oeis.org/A157363) ([L03 program](A157363.asm)): 686n - 14.
 * [A157364](http://oeis.org/A157364) ([L12 program](A157364.asm)): a(n) = 4802*n^2 - 196*n + 1.
@@ -4067,7 +4069,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176972](http://oeis.org/A176972) ([L16 program](A176972.asm)): a(n) = 7^n + 7*n + 1.
 * [A177002](http://oeis.org/A177002) ([L07 program](A177002.asm)): Period 4: repeat [1, 2, 4, 2].
 * [A177022](http://oeis.org/A177022) ([L07 program](A177022.asm)): Decimal expansion of 49/36.
-* [A177044](http://oeis.org/A177044) ([L21 program](A177044.asm)): a(n) = 103*(n-1)-a(n-1) with n>1, a(1)=38.
+* [A177044](http://oeis.org/A177044) ([L13 program](A177044.asm)): a(n) = 103*(n-1)-a(n-1) with n>1, a(1)=38.
 * [A177046](http://oeis.org/A177046) ([L27 program](A177046.asm)): a(n) = 127*(n-1)-a(n-1) with n>1, a(1)=16.
 * [A177057](http://oeis.org/A177057) ([L03 program](A177057.asm)): Decimal expansion of 7/6.
 * [A177059](http://oeis.org/A177059) ([L10 program](A177059.asm)): a(n) = 25*n^2 + 25*n + 6.
@@ -4197,6 +4199,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180356](http://oeis.org/A180356) ([L04 program](A180356.asm)): n^6+6n
 * [A180357](http://oeis.org/A180357) ([L05 program](A180357.asm)): a(n) = n^7 + 7*n.
 * [A180358](http://oeis.org/A180358) ([L10 program](A180358.asm)): n^8+8n
+* [A180359](http://oeis.org/A180359) ([L13 program](A180359.asm)): n^9+9n
 * [A180413](http://oeis.org/A180413) ([L13 program](A180413.asm)): Total number of possible knight moves on an n X n X n chessboard, if the knight is placed anywhere
 * [A180415](http://oeis.org/A180415) ([L08 program](A180415.asm)): (n^3 - 3n^2 + 14n - 6)/6.
 * [A180446](http://oeis.org/A180446) ([L07 program](A180446.asm)): Number of non-pentagonal numbers <= n.
@@ -4998,7 +5001,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A196081](http://oeis.org/A196081) ([L13 program](A196081.asm)): Dungeons and Dragons Ability Modifier Sequence.
 * [A196126](http://oeis.org/A196126) ([L15 program](A196126.asm)): Let A = {(x,y): x, y positive  natural numbers and y <= x <= y^2}. a(n) is the cardinality of the subset {(x,y) in A such that x <= n}.
 * [A196288](http://oeis.org/A196288) ([L03 program](A196288.asm)): n^8 + n.
-* [A196289](http://oeis.org/A196289) ([L05 program](A196289.asm)): n^9 - n.
+* [A196289](http://oeis.org/A196289) ([L03 program](A196289.asm)): n^9 - n.
 * [A196290](http://oeis.org/A196290) ([L04 program](A196290.asm)): n^9 + n.
 * [A196291](http://oeis.org/A196291) ([L04 program](A196291.asm)): n^10 - n.
 * [A196292](http://oeis.org/A196292) ([L07 program](A196292.asm)): n^10+n

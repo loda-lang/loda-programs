@@ -957,7 +957,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010875](http://oeis.org/A010875) ([L02 program](A010875.asm)): a(n) = n mod 6.
 * [A010876](http://oeis.org/A010876) ([L02 program](A010876.asm)): a(n) = n mod 7.
 * [A010877](http://oeis.org/A010877) ([L02 program](A010877.asm)): a(n) = n mod 8.
-* [A010878](http://oeis.org/A010878) ([L04 program](A010878.asm)): a(n) = n mod 9.
+* [A010878](http://oeis.org/A010878) ([L02 program](A010878.asm)): a(n) = n mod 9.
 * [A010879](http://oeis.org/A010879) ([L04 program](A010879.asm)): Final digit of n.
 * [A010880](http://oeis.org/A010880) ([L06 program](A010880.asm)): n mod 11.
 * [A010881](http://oeis.org/A010881) ([L04 program](A010881.asm)): Simple periodic sequence: n mod 12.
@@ -1050,7 +1050,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A013655](http://oeis.org/A013655) ([L08 program](A013655.asm)): a(n) = F(n+1) + L(n), where F(n) and L(n) are Fibonacci and Lucas numbers, respectively.
 * [A013656](http://oeis.org/A013656) ([L08 program](A013656.asm)): n*(9*n-2).
 * [A013730](http://oeis.org/A013730) ([L03 program](A013730.asm)): a(n) = 2^(3n+1).
-* [A013731](http://oeis.org/A013731) ([L04 program](A013731.asm)): a(n) = 2^(3*n+2).
+* [A013731](http://oeis.org/A013731) ([L03 program](A013731.asm)): a(n) = 2^(3*n+2).
 * [A013915](http://oeis.org/A013915) ([L16 program](A013915.asm)): a(n) = F(n) + L(n) + n, where F(n) (A000045) and L(n) (A000204) are Fibonacci and Lucas numbers respectively.
 * [A013938](http://oeis.org/A013938) ([L08 program](A013938.asm)): a(n) = Sum_{k=1..n} floor(n/k^4).
 * [A014105](http://oeis.org/A014105) ([L04 program](A014105.asm)): Second hexagonal numbers: a(n) = n*(2*n+1).
@@ -5664,7 +5664,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084263](http://oeis.org/A084263) ([L07 program](A084263.asm)): Modified triangular numbers.
 * [A084265](http://oeis.org/A084265) ([L07 program](A084265.asm)): a(n) = (n^2 + 3*n + 1 + (-1)^n) / 2.
 * [A084326](http://oeis.org/A084326) ([L10 program](A084326.asm)): a(0)=0, a(1)=1; for n>1, a(n) = 6*a(n-1)-4*a(n-2).
-* [A084364](http://oeis.org/A084364) ([L06 program](A084364.asm)): Define the operations M: multiply by 11, D: divide by 11, R: reverse digits. Sequence gives trajectory of 19 under action of M,R,D,R.
+* [A084364](http://oeis.org/A084364) ([L04 program](A084364.asm)): Define the operations M: multiply by 11, D: divide by 11, R: reverse digits. Sequence gives trajectory of 19 under action of M,R,D,R.
 * [A084367](http://oeis.org/A084367) ([L05 program](A084367.asm)): a(n) = n*(2*n+1)^2.
 * [A084377](http://oeis.org/A084377) ([L03 program](A084377.asm)): a(n) = n^3 + 7.
 * [A084378](http://oeis.org/A084378) ([L03 program](A084378.asm)): a(n) = n^3 + 3.
