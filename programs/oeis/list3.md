@@ -286,6 +286,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309127](http://oeis.org/A309127) ([L24 program](A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309198](http://oeis.org/A309198) ([L130 program](A309198.asm)): Fixed point of the morphism 1 -> 12, 2 -> 3, 3 -> 4, 4 -> 123.
 * [A309315](http://oeis.org/A309315) ([L09 program](A309315.asm)): Number of 5-colorings of an n-wheel graph.
+* [A309335](http://oeis.org/A309335) ([L10 program](A309335.asm)): a(n) = n^3 if n odd, 7*n^3/8 if n even.
 * [A309337](http://oeis.org/A309337) ([L08 program](A309337.asm)): a(n) = n^3 if n odd, 3*n^3/4 if n even.
 * [A309338](http://oeis.org/A309338) ([L18 program](A309338.asm)): a(n) = n^4 if n odd, 7*n^4/8 if n even.
 * [A309372](http://oeis.org/A309372) ([L19 program](A309372.asm)): a(n) = n^2 - n^3 + n^4.

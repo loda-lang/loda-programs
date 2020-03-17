@@ -920,7 +920,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A232921](http://oeis.org/A232921) ([L09 program](A232921.asm)): Number of 2 X n 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally, diagonally or antidiagonally.
 * [A232970](http://oeis.org/A232970) ([L13 program](A232970.asm)): Expansion of (1-3*x)/(1-5*x+3*x^2+x^3).
 * [A232990](http://oeis.org/A232990) ([L04 program](A232990.asm)): Period 5: repeat [1,0,0,1,0].
-* [A232991](http://oeis.org/A232991) ([L07 program](A232991.asm)): Period 6: repeat [1, 0, 0, 0, 1, 0].
+* [A232991](http://oeis.org/A232991) ([L05 program](A232991.asm)): Period 6: repeat [1, 0, 0, 0, 1, 0].
 * [A233035](http://oeis.org/A233035) ([L05 program](A233035.asm)): a(n) = n * floor(n/4).
 * [A233036](http://oeis.org/A233036) ([L08 program](A233036.asm)): The maximum number of I-tetrominoes that can be packed into an n X n array of squares when rotation is allowed.
 * [A233083](http://oeis.org/A233083) ([L18 program](A233083.asm)): Number of 2 X n 0..3 arrays with no element x(i,j) adjacent to value 3-x(i,j) horizontally or antidiagonally, top left element zero, and 1 appearing before 2 in row major order.
@@ -1728,6 +1728,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266073](http://oeis.org/A266073) ([L04 program](A266073.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
 * [A266074](http://oeis.org/A266074) ([L09 program](A266074.asm)): Total number of OFF (white) cells after n iterations of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
 * [A266084](http://oeis.org/A266084) ([L09 program](A266084.asm)): Expansion of (5 - x - x^2 - x^3 - x^4 + 4*x^5)/( x^6 - x^5 - x + 1).
+* [A266180](http://oeis.org/A266180) ([L10 program](A266180.asm)): Decimal representation of the n-th iteration of the "Rule 6" elementary cellular automaton starting with a single ON (black) cell.
 * [A266220](http://oeis.org/A266220) ([L11 program](A266220.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
 * [A266221](http://oeis.org/A266221) ([L08 program](A266221.asm)): Total number of ON (black) cells after n iterations of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
 * [A266222](http://oeis.org/A266222) ([L11 program](A266222.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
@@ -2720,7 +2721,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296909](http://oeis.org/A296909) ([L20 program](A296909.asm)): Partial sums of A296368.
 * [A296910](http://oeis.org/A296910) ([L23 program](A296910.asm)): a(0)=1, a(1)=4; thereafter a(n) = 4*n-2*(-1)^n.
 * [A296911](http://oeis.org/A296911) ([L13 program](A296911.asm)): Partial sums of A296910.
-* [A296953](http://oeis.org/A296953) ([L07 program](A296953.asm)): Number of bisymmetric, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
+* [A296953](http://oeis.org/A296953) ([L06 program](A296953.asm)): Number of bisymmetric, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
 * [A296954](http://oeis.org/A296954) ([L08 program](A296954.asm)): Expansion of x*(1 - x + 4*x^2) / ((1 - x)*(1 - 2*x)).
 * [A296965](http://oeis.org/A296965) ([L07 program](A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
 * [A297044](http://oeis.org/A297044) ([L04 program](A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
