@@ -273,7 +273,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308585](http://oeis.org/A308585) ([L08 program](A308585.asm)): a(n) = 2^(n + 3) - 10*n - 6.
 * [A308600](http://oeis.org/A308600) ([L15 program](A308600.asm)): Number of (not necessarily maximum) cliques in the n X n antelope graph.
 * [A308602](http://oeis.org/A308602) ([L04 program](A308602.asm)): Number of (not necessarily maximum) cliques in the n-cycle graph.
-* [A308603](http://oeis.org/A308603) ([L04 program](A308603.asm)): Number of (not necessarily minimum) cliques in the n-dipyramidal graph.
+* [A308603](http://oeis.org/A308603) ([L04 program](A308603.asm)): Number of (not necessarily maximal) cliques in the n-dipyramidal graph.
 * [A308607](http://oeis.org/A308607) ([L05 program](A308607.asm)): Number of (not necessarily maximum) cliques in the wheel graph on n vertices.
 * [A308659](http://oeis.org/A308659) ([L20 program](A308659.asm)): a(1)=1; for n > 1, a(n) is the length of the longest palindromic suffix of (a(1), ..., a(n-1)).
 * [A308720](http://oeis.org/A308720) ([L23 program](A308720.asm)): The maximum value in the continued fraction of sqrt(n), or 0 if there is no fractional part.
@@ -282,7 +282,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309075](http://oeis.org/A309075) ([L20 program](A309075.asm)): Total number of black cells after n iterations of Langton's ant with two ants on the grid placed side-by-side on neighboring squares and initially looking in the same direction.
 * [A309077](http://oeis.org/A309077) ([L07 program](A309077.asm)): Maximum sum of base lengths over all minimal factorizations of length-n binary strings.
 * [A309083](http://oeis.org/A309083) ([L15 program](A309083.asm)): a(n) = n - floor(n/2^4) + floor(n/3^4) - floor(n/4^4) + ...
-* [A309093](http://oeis.org/A309093) ([L10 program](A309093.asm)): The analog of A309077(n), but allowing fractional powers.
+* [A309093](http://oeis.org/A309093) ([L06 program](A309093.asm)): The analog of A309077(n), but allowing fractional powers.
 * [A309127](http://oeis.org/A309127) ([L24 program](A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309198](http://oeis.org/A309198) ([L130 program](A309198.asm)): Fixed point of the morphism 1 -> 12, 2 -> 3, 3 -> 4, 4 -> 123.
 * [A309315](http://oeis.org/A309315) ([L09 program](A309315.asm)): Number of 5-colorings of an n-wheel graph.

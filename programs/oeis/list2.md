@@ -2696,7 +2696,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A295904](http://oeis.org/A295904) ([L08 program](A295904.asm)): Number of (not necessarily maximum) cliques in the n-sun graph.
 * [A295905](http://oeis.org/A295905) ([L07 program](A295905.asm)): Number of (not necessarily maximum) cliques in the n X n knight graph.
 * [A295906](http://oeis.org/A295906) ([L07 program](A295906.asm)): Number of (not necessarily maximum) cliques in the n X n king graph.
-* [A295911](http://oeis.org/A295911) ([L05 program](A295911.asm)): Number of (not necessarily minimum) cliques in the n-Hanoi graph.
+* [A295911](http://oeis.org/A295911) ([L05 program](A295911.asm)): Number of (not necessarily maximal) cliques in the n-Hanoi graph.
 * [A295921](http://oeis.org/A295921) ([L31 program](A295921.asm)): Number of (not necessarily maximum) cliques in the n-folded cube graph.
 * [A295926](http://oeis.org/A295926) ([L22 program](A295926.asm)): Number of (not necessarily maximum) cliques in the n-cube-connected cycle graph.
 * [A295933](http://oeis.org/A295933) ([L13 program](A295933.asm)): Number of (not necessarily maximum) cliques in the n-Sierpinski sieve graph.

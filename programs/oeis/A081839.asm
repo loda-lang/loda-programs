@@ -3,19 +3,14 @@
 
 mov $3,$0
 mov $4,8
-mov $5,5
-pow $5,4
-mov $2,$0
+mov $2,5
+pow $2,4
 mul $3,5
-add $0,$2
-div $5,9
-lpb $0,1
-  pow $0,5
-lpe
+div $2,9
 add $3,7
-mul $5,$3
+mul $2,$3
 mov $1,1
-div $5,9
-div $5,$4
-add $1,$5
+div $2,9
+div $2,$4
+add $1,$2
 sub $1,7

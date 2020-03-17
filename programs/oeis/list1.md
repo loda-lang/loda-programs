@@ -883,7 +883,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120571](http://oeis.org/A120571) ([L43 program](A120571.asm)): 2n^4+6n^2+4 = 2(n^2+1)(n^2+2).
 * [A120573](http://oeis.org/A120573) ([L63 program](A120573.asm)): a(n) = n^5 + 3n^3 + 2n = n(n^2+1)(n^2+2).
 * [A120634](http://oeis.org/A120634) ([L06 program](A120634.asm)): Decimal equivalent of A066335.
-* [A120701](http://oeis.org/A120701) ([L12 program](A120701.asm)): Number of unit circles which fit touching a circle of radius n-1, i.e., with their centers on a circle of radius n.
+* [A120701](http://oeis.org/A120701) ([L11 program](A120701.asm)): Number of unit circles which fit touching a circle of radius n-1, i.e., with their centers on a circle of radius n.
 * [A120738](http://oeis.org/A120738) ([L09 program](A120738.asm)): a(n) = 4*n - A000120(n).
 * [A120740](http://oeis.org/A120740) ([L13 program](A120740.asm)): Numbers n such that n = Sum_digits[k*abs(n-k)] for some k>=0.
 * [A120741](http://oeis.org/A120741) ([L03 program](A120741.asm)): a(n) = (7^n - 1)/2.
@@ -1187,6 +1187,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A129326](http://oeis.org/A129326) ([L08 program](A129326.asm)): a(n) = (2*n+1)*(n-1)!.
 * [A129337](http://oeis.org/A129337) ([L10 program](A129337.asm)): Maximal possible degree of a Chebyshev-type quadrature formula with n nodes, in the case of the constant weight function on [ -1,1].
 * [A129428](http://oeis.org/A129428) ([L06 program](A129428.asm)): Centered 47-gonal numbers.
+* [A129532](http://oeis.org/A129532) ([L11 program](A129532.asm)): 3n(n-1)4^(n-2).
 * [A129565](http://oeis.org/A129565) ([L32 program](A129565.asm)): A115359 * A000012 as infinite lower triangular matrices.
 * [A129686](http://oeis.org/A129686) ([L17 program](A129686.asm)): Triangle read by rows: row n is 0^(n-3), 1, 0, 1.
 * [A129728](http://oeis.org/A129728) ([L11 program](A129728.asm)): a(n) = 2*(n-1) + Fibonacci(n).
@@ -4697,6 +4698,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190322](http://oeis.org/A190322) ([L10 program](A190322.asm)): a(1) = 1, a(2) = 9, a(3) = 17; for n>3, a(n) = a(n-3) + 2.
 * [A190482](http://oeis.org/A190482) ([L20 program](A190482.asm)): Convex, obtuse, hexagonal lattice numbers
 * [A190505](http://oeis.org/A190505) ([L32 program](A190505.asm)): n+[nr/s]+[nt/s]+[nu/s];  r=golden ratio, s=r+1, t=r+2, u=r+3.
+* [A190506](http://oeis.org/A190506) ([L26 program](A190506.asm)): n+[nr/t]+[ns/t]+[nu/t];  r=golden ratio, s=r+1, t=r+2, u=r+3.
 * [A190511](http://oeis.org/A190511) ([L30 program](A190511.asm)): n+[nr/u]+[ns/u]+[nt/u];  r=golden ratio, s=r^2, t=r^3, u=r^4.
 * [A190512](http://oeis.org/A190512) ([L13 program](A190512.asm)): Number of one-sided n-step prudent walks, avoiding single west step only, i.e., two or more consecutive west steps are permitted.
 * [A190540](http://oeis.org/A190540) ([L05 program](A190540.asm)): 7^n - 2^n.
