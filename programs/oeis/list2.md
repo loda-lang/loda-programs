@@ -881,6 +881,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230113](http://oeis.org/A230113) ([L39 program](A230113.asm)): Digital root of summed Fibonacci and Lucas digital roots indexed by numbers not divisible by 2, 3 or 5.
 * [A230128](http://oeis.org/A230128) ([L05 program](A230128.asm)): The number of multinomial coefficients over partitions with value equal to 4.
 * [A230149](http://oeis.org/A230149) ([L11 program](A230149.asm)): The number of multinomial coefficients over partitions with value equal to 5.
+* [A230197](http://oeis.org/A230197) ([L15 program](A230197.asm)): The number of multinomial coefficients over partitions with value equal to 7.
 * [A230269](http://oeis.org/A230269) ([L12 program](A230269.asm)): Number of n X 2 0..2 arrays x(i,j) with each element horizontally or vertically next to at least one element with value (x(i,j)+1) mod 3, and upper left element zero.
 * [A230300](http://oeis.org/A230300) ([L14 program](A230300.asm)): a(n) = n + wt(n-1), where wt() = A000120() is the binary weight.
 * [A230403](http://oeis.org/A230403) ([L68 program](A230403.asm)): a(n) = the largest k such that (k+1)! divides n; the number of trailing zeros in the factorial base representation of n (A007623(n)).
@@ -1428,7 +1429,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254407](http://oeis.org/A254407) ([L07 program](A254407.asm)): a(n) = n*(n+1)*(11*n+10)/6.
 * [A254473](http://oeis.org/A254473) ([L14 program](A254473.asm)): 24-hedral numbers: a(n) = (2*n + 1)*(8*n^2 + 14*n + 7).
 * [A254474](http://oeis.org/A254474) ([L11 program](A254474.asm)): 30-gonal numbers: a(n) = n*(14*n-13).
-* [A254527](http://oeis.org/A254527) ([L08 program](A254527.asm)): Total number of points on a sphere when both poles are on an x by x grid where x=8*n+1.
+* [A254527](http://oeis.org/A254527) ([L07 program](A254527.asm)): Total number of points on a sphere when both poles are on an x by x grid where x=8*n+1.
 * [A254663](http://oeis.org/A254663) ([L17 program](A254663.asm)): Numbers of n-length words on alphabet {0,1,...,7} with no subwords ii, where i is from {0,1,...,5}.
 * [A254667](http://oeis.org/A254667) ([L04 program](A254667.asm)): The nonnegative numbers with 2 instead of 1.
 * [A254729](http://oeis.org/A254729) ([L12 program](A254729.asm)): Number of numbers j + k*sqrt(2) of length n, where the length is the least number of steps to reach 0, the allowable steps being x -> x + 1 and x -> x*sqrt(2).
@@ -1566,7 +1567,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258807](http://oeis.org/A258807) ([L04 program](A258807.asm)): a(n) = n^5 - 1.
 * [A258808](http://oeis.org/A258808) ([L04 program](A258808.asm)): a(n) = n^7 - 1.
 * [A258809](http://oeis.org/A258809) ([L04 program](A258809.asm)): a(n) = n^8 - 1.
-* [A258810](http://oeis.org/A258810) ([L06 program](A258810.asm)): a(n) = n^9 - 1.
+* [A258810](http://oeis.org/A258810) ([L04 program](A258810.asm)): a(n) = n^9 - 1.
 * [A258812](http://oeis.org/A258812) ([L10 program](A258812.asm)): a(n) = n^11 - 1.
 * [A258935](http://oeis.org/A258935) ([L09 program](A258935.asm)): Independence number of Keller graphs.
 * [A259042](http://oeis.org/A259042) ([L14 program](A259042.asm)): Period 8 sequence [0, 1, 1, 1, 2, 1, 1, 1, ...].
@@ -2273,7 +2274,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277977](http://oeis.org/A277977) ([L40 program](A277977.asm)): a(n) = n*(1-3n+2*n^2+2*n^3)/2.
 * [A277978](http://oeis.org/A277978) ([L04 program](A277978.asm)): a(n) = 3n(n+3).
 * [A277979](http://oeis.org/A277979) ([L06 program](A277979.asm)): a(n) = 4*n^2 + 18*n.
-* [A277980](http://oeis.org/A277980) ([L07 program](A277980.asm)): a(n) = 12*n^2 + 18*n.
+* [A277980](http://oeis.org/A277980) ([L06 program](A277980.asm)): a(n) = 12*n^2 + 18*n.
 * [A277984](http://oeis.org/A277984) ([L15 program](A277984.asm)): a(n) = 6*n*(9*n-5).
 * [A277985](http://oeis.org/A277985) ([L12 program](A277985.asm)): a(n) = 3*(9*n - 1)*(3*n - 2).
 * [A277988](http://oeis.org/A277988) ([L05 program](A277988.asm)): a(n) = 352*2^n + 34.

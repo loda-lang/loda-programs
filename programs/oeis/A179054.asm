@@ -4,9 +4,8 @@
 add $0,9
 mov $1,$0
 mov $2,6
-mov $5,6
+mov $3,6
 sub $1,$2
-mov $3,$1
 mod $0,4
 lpb $0,1
   fac $2
@@ -14,8 +13,8 @@ lpb $0,1
   mov $0,$4
 lpe
 mul $1,3
-mul $5,8
-mul $1,$5
+mul $3,8
+mul $1,$3
 mul $1,3
 div $1,864
 add $1,1
