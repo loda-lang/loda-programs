@@ -1482,7 +1482,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132756](http://oeis.org/A132756) ([L05 program](A132756.asm)): a(n) = n*(n + 27)/2.
 * [A132757](http://oeis.org/A132757) ([L05 program](A132757.asm)): a(n) = n(n+29)/2.
 * [A132758](http://oeis.org/A132758) ([L05 program](A132758.asm)): a(n) = n*(n + 31)/2.
-* [A132759](http://oeis.org/A132759) ([L05 program](A132759.asm)): a(n) = n*(n+13).
+* [A132759](http://oeis.org/A132759) ([L04 program](A132759.asm)): a(n) = n*(n+13).
 * [A132760](http://oeis.org/A132760) ([L05 program](A132760.asm)): a(n) = n(n+15).
 * [A132761](http://oeis.org/A132761) ([L06 program](A132761.asm)): a(n) = n*(n+17).
 * [A132762](http://oeis.org/A132762) ([L06 program](A132762.asm)): a(n) = n*(n + 19).
@@ -2437,7 +2437,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155599](http://oeis.org/A155599) ([L12 program](A155599.asm)): 8^n-2^n+1^n
 * [A155602](http://oeis.org/A155602) ([L06 program](A155602.asm)): 4^n + 3^n - 1.
 * [A155603](http://oeis.org/A155603) ([L07 program](A155603.asm)): 5^n+3^n-1.
-* [A155604](http://oeis.org/A155604) ([L15 program](A155604.asm)): 6^n+3^n-1.
+* [A155604](http://oeis.org/A155604) ([L11 program](A155604.asm)): 6^n+3^n-1.
 * [A155605](http://oeis.org/A155605) ([L10 program](A155605.asm)): 7^n+3^n-1.
 * [A155613](http://oeis.org/A155613) ([L07 program](A155613.asm)): 8^n - 3^n + 1.
 * [A155616](http://oeis.org/A155616) ([L08 program](A155616.asm)): 5^n + 4^n - 1.
@@ -3788,7 +3788,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171141](http://oeis.org/A171141) ([L13 program](A171141.asm)): Numbers that are congruent to {6,33} mod 41.
 * [A171152](http://oeis.org/A171152) ([L19 program](A171152.asm)): Partial sums of A118011.
 * [A171160](http://oeis.org/A171160) ([L20 program](A171160.asm)): a(n) = a(n-1) + 2a(n-2) with a(0)=3, a(1)=4.
-* [A171182](http://oeis.org/A171182) ([L09 program](A171182.asm)): Periodic with period 6: repeat [0, 1, 1, 1, 0, 2].
+* [A171182](http://oeis.org/A171182) ([L07 program](A171182.asm)): Periodic with period 6: repeat [0, 1, 1, 1, 0, 2].
 * [A171218](http://oeis.org/A171218) ([L13 program](A171218.asm)): a(n) = sum(A109613(k)*A005843(n-k): 0<=k<=n).
 * [A171220](http://oeis.org/A171220) ([L13 program](A171220.asm)): a(n) = (2n + 1)*5^n.
 * [A171230](http://oeis.org/A171230) ([L11 program](A171230.asm)): a(n) = 0+1+2+...+n in lunar arithmetic in base 2 written in base 2.
@@ -4206,7 +4206,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180357](http://oeis.org/A180357) ([L05 program](A180357.asm)): a(n) = n^7 + 7*n.
 * [A180358](http://oeis.org/A180358) ([L10 program](A180358.asm)): n^8+8n
 * [A180359](http://oeis.org/A180359) ([L13 program](A180359.asm)): n^9+9n
-* [A180413](http://oeis.org/A180413) ([L13 program](A180413.asm)): Total number of possible knight moves on an n X n X n chessboard, if the knight is placed anywhere
+* [A180413](http://oeis.org/A180413) ([L07 program](A180413.asm)): Total number of possible knight moves on an n X n X n chessboard, if the knight is placed anywhere
 * [A180415](http://oeis.org/A180415) ([L08 program](A180415.asm)): (n^3 - 3n^2 + 14n - 6)/6.
 * [A180446](http://oeis.org/A180446) ([L07 program](A180446.asm)): Number of non-pentagonal numbers <= n.
 * [A180447](http://oeis.org/A180447) ([L06 program](A180447.asm)): n appears 3n+1 times.
