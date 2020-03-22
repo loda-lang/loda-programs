@@ -10,9 +10,6 @@ mul $4,6
 div $4,8
 mov $0,$4
 mov $1,$0
-lpb $0,1
-  mul $0,$1
-lpe
 div $1,8
 mov $5,$6
 mov $3,$5
