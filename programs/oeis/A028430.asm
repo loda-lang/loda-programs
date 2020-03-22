@@ -3,11 +3,10 @@
 
 mov $4,$0
 lpb $0,1
-  fac $1
-  add $1,2
-  pow $1,4
+  mov $1,9
   mov $0,7
 lpe
+pow $1,2
 add $1,1
 mov $3,$4
 mov $2,$3
