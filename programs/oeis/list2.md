@@ -554,7 +554,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218152](http://oeis.org/A218152) ([L08 program](A218152.asm)): a(n) = 1 + n + ((n-1)*n^2)/2.
 * [A218155](http://oeis.org/A218155) ([L09 program](A218155.asm)): Curvatures of tangents circle in circle of curvature -1-1.
 * [A218234](http://oeis.org/A218234) ([L06 program](A218234.asm)): Infinitesimal generator for padded Pascal matrix A097805 (as lower triangular matrices).
-* [A218245](http://oeis.org/A218245) ([L05 program](A218245.asm)): Nicolas's sequence, whose nonnegativity is equivalent to the Riemann hypothesis.
+* [A218245](http://oeis.org/A218245) ([L04 program](A218245.asm)): Nicolas's sequence, whose nonnegativity is equivalent to the Riemann hypothesis.
 * [A218272](http://oeis.org/A218272) ([L14 program](A218272.asm)): Infinitesimal generator for transpose of the Pascal matrix A007318 (as upper triangular matrices).
 * [A218324](http://oeis.org/A218324) ([L13 program](A218324.asm)): Odd heptagonal pyramidal numbers
 * [A218328](http://oeis.org/A218328) ([L23 program](A218328.asm)): Odd 9-gonal (nonagonal) pyramidal numbers.
@@ -712,6 +712,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226044](http://oeis.org/A226044) ([L15 program](A226044.asm)): Period of length 8: 1, 64, 16, 64, 4, 64, 16, 64.
 * [A226096](http://oeis.org/A226096) ([L08 program](A226096.asm)): Squares with doubled (4*n+2)^2.
 * [A226107](http://oeis.org/A226107) ([L16 program](A226107.asm)): Number of strict partitions of n with Cookie Monster number 2.
+* [A226198](http://oeis.org/A226198) ([L07 program](A226198.asm)): Floor((n-1)!/n).
 * [A226199](http://oeis.org/A226199) ([L04 program](A226199.asm)): 7^n + n.
 * [A226200](http://oeis.org/A226200) ([L03 program](A226200.asm)): 6^n + n.
 * [A226233](http://oeis.org/A226233) ([L03 program](A226233.asm)): Ten copies of each positive integer.
@@ -1079,6 +1080,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242371](http://oeis.org/A242371) ([L06 program](A242371.asm)): Modified eccentric connectivity index of the cycle graph with n vertices, C[n].
 * [A242396](http://oeis.org/A242396) ([L17 program](A242396.asm)): Number of rows of equilateral triangles (sides length = 1) that intersect the circumference of a circle of radius n centered at (0,0) or (1/2,0).
 * [A242412](http://oeis.org/A242412) ([L05 program](A242412.asm)): a(n) = (2n-1)^2 + 14.
+* [A242426](http://oeis.org/A242426) ([L11 program](A242426.asm)): floor(n! / n^3).
 * [A242448](http://oeis.org/A242448) ([L21 program](A242448.asm)): Number of distinct linear polynomials b+c*x in row n of array generated as in Comments.
 * [A242475](http://oeis.org/A242475) ([L03 program](A242475.asm)): a(n) = 2^n + 8.
 * [A242477](http://oeis.org/A242477) ([L04 program](A242477.asm)): Floor(3*n^2/4).
@@ -1449,6 +1451,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256427](http://oeis.org/A256427) ([L33 program](A256427.asm)): Mary Had A Little Lamb (another version).
 * [A256432](http://oeis.org/A256432) ([L11 program](A256432.asm)): Characteristic function of octahedral numbers.
 * [A256455](http://oeis.org/A256455) ([L17 program](A256455.asm)): Numbers that appear at least once in a Pythagorean triple (a, b, b+1).
+* [A256494](http://oeis.org/A256494) ([L05 program](A256494.asm)): Expansion of -x^2*(x^3+x-1) / ((x-1)*(x+1)*(2*x-1)*(x^2+1)).
 * [A256496](http://oeis.org/A256496) ([L36 program](A256496.asm)): a(n) = 15(n mod 2) + 10(n mod 3) + 6(n mod 5).
 * [A256535](http://oeis.org/A256535) ([L13 program](A256535.asm)): The largest number of T-tetrominoes that fit within an n X n square.
 * [A256645](http://oeis.org/A256645) ([L14 program](A256645.asm)): 25-gonal pyramidal numbers: a(n) = n*(n+1)*(23*n-20)/6.
@@ -1593,6 +1596,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261693](http://oeis.org/A261693) ([L15 program](A261693.asm)): Irregular triangle read by rows in which row n lists the positive odd numbers in decreasing order starting with 2^n - 1. T(0, 1) = 0 and T(n, k) for n >= 1, 1 <= k <= 2^(n-1).
 * [A261694](http://oeis.org/A261694) ([L21 program](A261694.asm)): a(n) = Fibonacci(n) mod 21.
 * [A261723](http://oeis.org/A261723) ([L09 program](A261723.asm)): Interleave 2^n + 2 and 2^n + 1.
+* [A261779](http://oeis.org/A261779) ([L08 program](A261779.asm)): a(n) = ceiling((n-1)! / n).
 * [A261882](http://oeis.org/A261882) ([L20 program](A261882.asm)): Decimal expansion of 32/27.
 * [A261893](http://oeis.org/A261893) ([L10 program](A261893.asm)): a(n) = (n+1)^3 - n^2.
 * [A261953](http://oeis.org/A261953) ([L08 program](A261953.asm)): Start with a single equilateral triangle for n=0; for the odd n-th generation add a triangle at each expandable side of the triangles of the (n-1)-th generation (this is the "side to side" version); for the even n-th generation use the "vertex to vertex" version; a(n) is the number of triangles added in the n-th generation.
@@ -1853,6 +1857,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267984](http://oeis.org/A267984) ([L08 program](A267984.asm)): Numbers congruent to {17, 23} mod 30.
 * [A267985](http://oeis.org/A267985) ([L13 program](A267985.asm)): Numbers congruent to {7, 13} mod 30.
 * [A268044](http://oeis.org/A268044) ([L05 program](A268044.asm)): The odd numbers congruent to {3, 4} mod 5.
+* [A268099](http://oeis.org/A268099) ([L20 program](A268099.asm)): a(n) = 2^(n mod 2)*5*10^floor(n/2) - 1.
 * [A268201](http://oeis.org/A268201) ([L05 program](A268201.asm)): a(n) = 4*n^3 - 6*n^2 + 3*n - 1.
 * [A268226](http://oeis.org/A268226) ([L07 program](A268226.asm)): Complement of A056991.
 * [A268262](http://oeis.org/A268262) ([L43 program](A268262.asm)): Number of length-(3+1) 0..n arrays with new repeated values introduced in sequential order starting with zero.

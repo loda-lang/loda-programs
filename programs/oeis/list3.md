@@ -119,7 +119,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304371](http://oeis.org/A304371) ([L16 program](A304371.asm)): Number of function calls of the second kind required to compute ack(3,n), where ack denotes the Ackermann function.
 * [A304374](http://oeis.org/A304374) ([L09 program](A304374.asm)): a(n) = 9*n^2 + 21*n - 6 (n>=1).
 * [A304375](http://oeis.org/A304375) ([L21 program](A304375.asm)): a(n) = 27*n^2/2 + 45*n/2 - 12 (n>=1).
-* [A304376](http://oeis.org/A304376) ([L06 program](A304376.asm)): a(n) = 60*2^n - 48 (n>=1).
+* [A304376](http://oeis.org/A304376) ([L05 program](A304376.asm)): a(n) = 60*2^n - 48 (n>=1).
 * [A304377](http://oeis.org/A304377) ([L05 program](A304377.asm)): a(n) = 102*2^n - 96 (n>=1).
 * [A304378](http://oeis.org/A304378) ([L08 program](A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
 * [A304380](http://oeis.org/A304380) ([L13 program](A304380.asm)): a(n) = 36*n^2 - 4*n (n>=1).
@@ -153,7 +153,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304583](http://oeis.org/A304583) ([L24 program](A304583.asm)): Period length 18: repeat 1,8,3,6,5,4,7,2,9,0,9,2,7,4,5,6,3,8.
 * [A304588](http://oeis.org/A304588) ([L18 program](A304588.asm)): Length of shortest prefix of the Thue-Morse word (A010060) such that some length-n block appears twice.
 * [A304605](http://oeis.org/A304605) ([L05 program](A304605.asm)): a(n) = 48*2^n + 26 (n>=1).
-* [A304606](http://oeis.org/A304606) ([L06 program](A304606.asm)): a(n) = 54*2^n + 28 (n >= 1).
+* [A304606](http://oeis.org/A304606) ([L05 program](A304606.asm)): a(n) = 54*2^n + 28 (n >= 1).
 * [A304607](http://oeis.org/A304607) ([L05 program](A304607.asm)): a(n) = 252*2^n + 140 (n>=1).
 * [A304608](http://oeis.org/A304608) ([L05 program](A304608.asm)): a(n) = 288*2^n + 178 (n >= 1).
 * [A304609](http://oeis.org/A304609) ([L03 program](A304609.asm)): a(n) = 114*n - 20.
@@ -172,7 +172,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304726](http://oeis.org/A304726) ([L06 program](A304726.asm)): a(n) = n^4 + 4*n^2 + 3.
 * [A304809](http://oeis.org/A304809) ([L09 program](A304809.asm)): Solution (a(n)) of the complementary equation a(n) = b(2n) + b(4n) ; see Comments.
 * [A304830](http://oeis.org/A304830) ([L05 program](A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
-* [A304831](http://oeis.org/A304831) ([L06 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
+* [A304831](http://oeis.org/A304831) ([L05 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
 * [A304832](http://oeis.org/A304832) ([L10 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
 * [A304833](http://oeis.org/A304833) ([L11 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
 * [A304834](http://oeis.org/A304834) ([L18 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
@@ -204,7 +204,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305157](http://oeis.org/A305157) ([L12 program](A305157.asm)): a(n) = 164*2^n - 99.
 * [A305158](http://oeis.org/A305158) ([L05 program](A305158.asm)): a(n) = 21*2^n - 15.
 * [A305159](http://oeis.org/A305159) ([L05 program](A305159.asm)): a(n) = 102*2^n - 78.
-* [A305160](http://oeis.org/A305160) ([L06 program](A305160.asm)): a(n) = 123*2^n - 99.
+* [A305160](http://oeis.org/A305160) ([L05 program](A305160.asm)): a(n) = 123*2^n - 99.
 * [A305163](http://oeis.org/A305163) ([L05 program](A305163.asm)): a(n) = 24*2^n - 18.
 * [A305164](http://oeis.org/A305164) ([L05 program](A305164.asm)): a(n) = 28*2^n - 22.
 * [A305165](http://oeis.org/A305165) ([L05 program](A305165.asm)): a(n) = 136*2^n - 112.
@@ -217,7 +217,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305266](http://oeis.org/A305266) ([L05 program](A305266.asm)): a(n) = 14*2^n + 73.
 * [A305267](http://oeis.org/A305267) ([L15 program](A305267.asm)): a(n) = 68*2^n + 358.
 * [A305268](http://oeis.org/A305268) ([L05 program](A305268.asm)): a(n) = 82*2^n + 440.
-* [A305269](http://oeis.org/A305269) ([L06 program](A305269.asm)): a(n) = 120*2^n - 95.
+* [A305269](http://oeis.org/A305269) ([L05 program](A305269.asm)): a(n) = 120*2^n - 95.
 * [A305270](http://oeis.org/A305270) ([L05 program](A305270.asm)): a(n) = 140*2^n - 112.
 * [A305271](http://oeis.org/A305271) ([L05 program](A305271.asm)): a(n) = 680*2^n - 548.
 * [A305272](http://oeis.org/A305272) ([L15 program](A305272.asm)): a(n) = 836*2^n - 676.

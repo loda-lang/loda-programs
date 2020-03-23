@@ -6,11 +6,5 @@ mov $2,52
 pow $1,$0
 div $2,7
 add $1,$2
-lpb $0,1
-  mod $0,6
-  sub $0,5
-  gcd $0,2
-  add $0,8
-lpe
 div $1,5
 sub $1,1
