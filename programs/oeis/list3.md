@@ -684,6 +684,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329682](http://oeis.org/A329682) ([L05 program](A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L03 program](A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L05 program](A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
+* [A329822](http://oeis.org/A329822) ([L23 program](A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
 * [A329826](http://oeis.org/A329826) ([L15 program](A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
 * [A329828](http://oeis.org/A329828) ([L18 program](A329828.asm)): Beatty sequence for (7+sqrt(37))/6.
 * [A329832](http://oeis.org/A329832) ([L10 program](A329832.asm)): Beatty sequence for (9+sqrt(65))/8.
@@ -714,7 +715,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330707](http://oeis.org/A330707) ([L08 program](A330707.asm)): a(n) = ( 3*n^2 + n - 1 + (-1)^floor(n/2) )/4.
 * [A330795](http://oeis.org/A330795) ([L10 program](A330795.asm)): Evaluation of the polynomials given by the Riordan square of the Fibonacci sequence with a(0) = 1 (A193737) at 1/2 and normalized with 2^n.
 * [A331162](http://oeis.org/A331162) ([L15 program](A331162.asm)): a(n) is the number of digits in the concatenation of a(0) to a(n-1) that are equal to the corresponding digit in the concatenation of all integers >= 0, with a(0) = 0.
-* [A331190](http://oeis.org/A331190) ([L16 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
+* [A331190](http://oeis.org/A331190) ([L14 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
 * [A331528](http://oeis.org/A331528) ([L14 program](A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
 * [A331943](http://oeis.org/A331943) ([L09 program](A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
 * [A331987](http://oeis.org/A331987) ([L16 program](A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
