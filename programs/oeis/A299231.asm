@@ -3,9 +3,9 @@
 
 mov $7,$0
 mov $5,$0
-mov $9,3
+mov $4,3
 mov $0,2
-add $0,$9
+add $0,$4
 div $0,2
 mov $3,$5
 mov $1,8
@@ -20,9 +20,7 @@ lpb $0,1
   add $1,7
 lpe
 gcd $0,5
-mov $5,$4
 mod $1,$0
-fac $4
 div $1,3
 mov $6,$7
 mov $2,$6

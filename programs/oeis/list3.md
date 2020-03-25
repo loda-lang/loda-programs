@@ -250,6 +250,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307702](http://oeis.org/A307702) ([L14 program](A307702.asm)): Clique covering number of the n-Sierpinski tetrahedron graph.
 * [A307753](http://oeis.org/A307753) ([L13 program](A307753.asm)): Number of palindromic pentagonal numbers of length n whose index is also palindromic.
 * [A307802](http://oeis.org/A307802) ([L02 program](A307802.asm)): Number of palindromic octagonal numbers of length n whose index is also palindromic.
+* [A307808](http://oeis.org/A307808) ([L10 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
 * [A307921](http://oeis.org/A307921) ([L14 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
 * [A307939](http://oeis.org/A307939) ([L16 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
@@ -671,6 +672,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329482](http://oeis.org/A329482) ([L13 program](A329482.asm)): Interleave 1 - n + 3*n^2, 1 + 3*n*(1+n) for n >= 0.
 * [A329502](http://oeis.org/A329502) ([L06 program](A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
 * [A329503](http://oeis.org/A329503) ([L10 program](A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
+* [A329505](http://oeis.org/A329505) ([L12 program](A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
 * [A329506](http://oeis.org/A329506) ([L11 program](A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
 * [A329509](http://oeis.org/A329509) ([L19 program](A329509.asm)): Expansion of (1 + x)*(1 + x + x^2 - x^3) / (1 - x).
 * [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).

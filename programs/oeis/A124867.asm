@@ -6,25 +6,18 @@ mov $4,$0
 mov $6,5
 sub $4,$6
 lpb $0,1
-  add $1,4
   sub $0,$4
-  gcd $5,2
-  add $6,2
-  mul $6,$1
   sub $0,1
-  mul $5,$6
   gcd $0,4
-  add $7,$5
   div $0,2
   pow $1,$2
   sub $0,1
   mov $7,$1
   mul $7,2
-  mod $4,5
 lpe
 add $0,$7
 mov $1,$0
 add $1,10
-mov $9,$8
-mov $3,$9
+mov $5,$8
+mov $3,$5
 add $1,$3

@@ -15,8 +15,6 @@ lpb $2,1
     sub $4,$3
   lpe
   gcd $0,5
-  mov $3,$4
-  fac $5
   mov $1,$5
   sub $2,1
   add $2,$0
