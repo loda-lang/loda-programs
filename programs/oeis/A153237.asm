@@ -6,6 +6,5 @@ lpb $0,1
   sub $0,1
   mul $1,2
 lpe
-add $2,3
 div $1,18
 mul $1,9

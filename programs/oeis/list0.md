@@ -2307,6 +2307,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033117](http://oeis.org/A033117) ([L07 program](A033117.asm)): Base 7 digits are, in order, the first n terms of the periodic sequence with initial period 1,0.
 * [A033120](http://oeis.org/A033120) ([L08 program](A033120.asm)): Base-2 digits of a(n) are, in order, the first n terms of the periodic sequence with initial period 1,0,1.
 * [A033129](http://oeis.org/A033129) ([L07 program](A033129.asm)): Base 2 digits are, in order, the first n terms of the periodic sequence with initial period [1,1,0].
+* [A033138](http://oeis.org/A033138) ([L09 program](A033138.asm)): a(n) = floor(2^(n+2)/7).
 * [A033156](http://oeis.org/A033156) ([L12 program](A033156.asm)): a(1) = 1; for m >= 2, a(n) = a(n-1) + floor(a(n-1)/(n-1)) + 2.
 * [A033171](http://oeis.org/A033171) ([L11 program](A033171.asm)): Number of days in n years (n=4 is the first leap year).
 * [A033174](http://oeis.org/A033174) ([L11 program](A033174.asm)): Number of days in n years (n=1 is the first leap year).

@@ -1548,6 +1548,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134202](http://oeis.org/A134202) ([L11 program](A134202.asm)): Number of rigid Hv-groups of order n.
 * [A134227](http://oeis.org/A134227) ([L07 program](A134227.asm)): Row sums of triangle A134226.
 * [A134238](http://oeis.org/A134238) ([L07 program](A134238.asm)): Row sums of triangle A134237.
+* [A134267](http://oeis.org/A134267) ([L12 program](A134267.asm)): a(n) = |A090964(n+1) - A090964(n)|.
 * [A134297](http://oeis.org/A134297) ([L02 program](A134297.asm)): a(n) = 107*n.
 * [A134301](http://oeis.org/A134301) ([L07 program](A134301.asm)): Periodic sequence (0, 2, 6, 2, 0).
 * [A134311](http://oeis.org/A134311) ([L10 program](A134311.asm)): Row sums of triangle A134310.
@@ -1885,6 +1886,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A141104](http://oeis.org/A141104) ([L13 program](A141104.asm)): Lower Even Swappage of Upper Wythoff Sequence.
 * [A141107](http://oeis.org/A141107) ([L26 program](A141107.asm)): Upper Odd Swappage of Upper Wythoff Sequence.
 * [A141135](http://oeis.org/A141135) ([L19 program](A141135.asm)): Minimal number of unit edges required to construct n regular pentagons when allowing edge-sharing.
+* [A141212](http://oeis.org/A141212) ([L12 program](A141212.asm)): a(n) = 1, if n == {1,3,4} mod 6; otherwise 0.
 * [A141213](http://oeis.org/A141213) ([L08 program](A141213.asm)): Defining A to be the interior angle of a regular polygon, the number of constructible regular polygons such that A is in a field extension = degree 2^n, starting with n=0. This is also the number of values of x such that phi(x)/2 = 2^n (where phi is Euler's phi function), also starting with n=0.
 * [A141214](http://oeis.org/A141214) ([L18 program](A141214.asm)): Defining A to be the interior angle of a regular polygon, the number of constructible regular polygons such that A is in a field extension <= degree 2^n, starting with n=0. This is also the number of values of x such that phi(x)/2 is a power of 2 <= 2^n (where phi is Euler's phi function), also starting with n=0.
 * [A141259](http://oeis.org/A141259) ([L18 program](A141259.asm)): a(n) == {0,1,3,4,5,7,9,11} mod 12; n>0.
@@ -2238,7 +2240,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A153186](http://oeis.org/A153186) ([L16 program](A153186.asm)): Period 9: repeat 1,7,4,7,4,7,1,1,1.
 * [A153192](http://oeis.org/A153192) ([L08 program](A153192.asm)): Numbers such that the numerator of floor(sqrt(n))/n, when reduced to its lowest terms, is equal to 2.
 * [A153234](http://oeis.org/A153234) ([L05 program](A153234.asm)): a(n) = floor(2^n/9).
-* [A153237](http://oeis.org/A153237) ([L08 program](A153237.asm)): a(n) = A000079(n) - A153130(n).
+* [A153237](http://oeis.org/A153237) ([L07 program](A153237.asm)): a(n) = A000079(n) - A153130(n).
 * [A153284](http://oeis.org/A153284) ([L04 program](A153284.asm)): a(n) = n + sum((-1)^(j))*a(j)); for j=1 to n-1; with a(1)=1.
 * [A153285](http://oeis.org/A153285) ([L18 program](A153285.asm)): a(1)=1; for n > 1, a(n) = n^2 + Sum_{j=1..n-1} (-1)^j*a(j).
 * [A153349](http://oeis.org/A153349) ([L09 program](A153349.asm)): Period 6: repeat [1, 7, 4, 4, 7, 1].
@@ -3480,6 +3482,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169068](http://oeis.org/A169068) ([L06 program](A169068.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^25 = I.
 * [A169069](http://oeis.org/A169069) ([L12 program](A169069.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^25 = I.
 * [A169113](http://oeis.org/A169113) ([L08 program](A169113.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^26 = I.
+* [A169114](http://oeis.org/A169114) ([L08 program](A169114.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^26 = I.
 * [A169115](http://oeis.org/A169115) ([L19 program](A169115.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^26 = I.
 * [A169116](http://oeis.org/A169116) ([L06 program](A169116.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^26 = I.
 * [A169117](http://oeis.org/A169117) ([L12 program](A169117.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^26 = I.

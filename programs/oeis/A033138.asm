@@ -5,19 +5,8 @@ mov $1,2
 pow $1,$0
 mov $2,8
 mul $1,$2
-mov $5,1
-sub $0,$0
-mov $3,$1
-add $5,$3
 div $1,7
-mov $4,$3
 mul $1,2
-mov $6,8
-lpb $0,1
-  mov $0,1
-  sub $0,1
-  pow $4,$0
-lpe
 sub $1,2
 div $1,2
 add $1,1
