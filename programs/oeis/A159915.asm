@@ -7,9 +7,6 @@ add $3,1
 div $2,2
 mov $1,$2
 div $3,4
-lpb $0,1
-  mov $2,9
-lpe
 mul $3,5
 mul $1,$3
 div $1,5

@@ -24684,3 +24684,12 @@ A276876: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A040063: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A040763: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A044723: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A329822: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A001956: -p 60 -n 8 -i 6 -o ^ -a cd
+A059545: -p 60 -n 8 -i 6 -o ^ -a cd
+A080081: -p 60 -n 8 -i 6 -o ^ -a cd
+A184480: -p 60 -n 8 -i 6 -o ^ -a cd
+A078112: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A329822: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017007: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017007: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm

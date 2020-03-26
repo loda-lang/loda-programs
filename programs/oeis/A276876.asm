@@ -13,7 +13,6 @@ mul $1,5
 fac $4
 mul $1,7
 sub $1,3
-mov $0,0
 div $1,$4
 mul $1,2
 add $1,1

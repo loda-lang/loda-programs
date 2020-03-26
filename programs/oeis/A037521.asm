@@ -4,10 +4,9 @@
 mov $3,2
 add $3,$0
 mov $0,4
-mov $4,$0
-pow $4,$3
-div $4,7
-add $4,1
-mov $2,1
-mov $1,$4
+mov $2,$0
+pow $2,$3
+div $2,7
+add $2,1
+mov $1,$2
 sub $1,1

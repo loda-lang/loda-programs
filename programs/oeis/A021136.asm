@@ -5,14 +5,10 @@ mul $0,2
 mov $2,$0
 add $0,7
 mov $3,$0
-mov $4,6
-div $4,6
 lpb $2,1
   add $1,2
   sub $3,1
-  sub $4,5
   mod $3,4
-  mov $2,$5
   add $1,3
   mov $2,3
   fac $2
