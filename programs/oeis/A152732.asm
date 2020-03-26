@@ -4,15 +4,6 @@
 add $0,1
 gcd $1,2
 pow $1,$0
-mul $0,0
-mov $3,1
 add $1,6
-mov $0,1
-div $1,2
-lpb $0,1
-  mov $4,8
-  add $0,9
-  mov $2,1
-lpe
-div $1,7
+div $1,14
 mul $1,2

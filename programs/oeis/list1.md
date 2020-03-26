@@ -1550,7 +1550,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134202](http://oeis.org/A134202) ([L11 program](A134202.asm)): Number of rigid Hv-groups of order n.
 * [A134227](http://oeis.org/A134227) ([L07 program](A134227.asm)): Row sums of triangle A134226.
 * [A134238](http://oeis.org/A134238) ([L07 program](A134238.asm)): Row sums of triangle A134237.
-* [A134267](http://oeis.org/A134267) ([L12 program](A134267.asm)): a(n) = |A090964(n+1) - A090964(n)|.
+* [A134267](http://oeis.org/A134267) ([L05 program](A134267.asm)): a(n) = |A090964(n+1) - A090964(n)|.
 * [A134297](http://oeis.org/A134297) ([L02 program](A134297.asm)): a(n) = 107*n.
 * [A134301](http://oeis.org/A134301) ([L07 program](A134301.asm)): Periodic sequence (0, 2, 6, 2, 0).
 * [A134311](http://oeis.org/A134311) ([L10 program](A134311.asm)): Row sums of triangle A134310.
@@ -1888,7 +1888,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A141104](http://oeis.org/A141104) ([L13 program](A141104.asm)): Lower Even Swappage of Upper Wythoff Sequence.
 * [A141107](http://oeis.org/A141107) ([L26 program](A141107.asm)): Upper Odd Swappage of Upper Wythoff Sequence.
 * [A141135](http://oeis.org/A141135) ([L19 program](A141135.asm)): Minimal number of unit edges required to construct n regular pentagons when allowing edge-sharing.
-* [A141212](http://oeis.org/A141212) ([L11 program](A141212.asm)): a(n) = 1, if n == {1,3,4} mod 6; otherwise 0.
+* [A141212](http://oeis.org/A141212) ([L05 program](A141212.asm)): a(n) = 1, if n == {1,3,4} mod 6; otherwise 0.
 * [A141213](http://oeis.org/A141213) ([L08 program](A141213.asm)): Defining A to be the interior angle of a regular polygon, the number of constructible regular polygons such that A is in a field extension = degree 2^n, starting with n=0. This is also the number of values of x such that phi(x)/2 = 2^n (where phi is Euler's phi function), also starting with n=0.
 * [A141214](http://oeis.org/A141214) ([L18 program](A141214.asm)): Defining A to be the interior angle of a regular polygon, the number of constructible regular polygons such that A is in a field extension <= degree 2^n, starting with n=0. This is also the number of values of x such that phi(x)/2 is a power of 2 <= 2^n (where phi is Euler's phi function), also starting with n=0.
 * [A141259](http://oeis.org/A141259) ([L18 program](A141259.asm)): a(n) == {0,1,3,4,5,7,9,11} mod 12; n>0.
@@ -2187,6 +2187,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152627](http://oeis.org/A152627) ([L04 program](A152627.asm)): Decimal expansion of 3/4.
 * [A152691](http://oeis.org/A152691) ([L02 program](A152691.asm)): Multiples of 64.
 * [A152729](http://oeis.org/A152729) ([L13 program](A152729.asm)): a(n) + a(n+1) + a(n+2) = n^4, with a(0) = a(1) = a(2) = 0.
+* [A152732](http://oeis.org/A152732) ([L06 program](A152732.asm)): a(n) + a(n+1) + a(n+2) = 2^n.
 * [A152734](http://oeis.org/A152734) ([L06 program](A152734.asm)): 5 times pentagonal numbers: 5*n*(3*n-1)/2.
 * [A152740](http://oeis.org/A152740) ([L05 program](A152740.asm)): 11 times triangular numbers.
 * [A152741](http://oeis.org/A152741) ([L05 program](A152741.asm)): 13 times triangular numbers.
@@ -2877,6 +2878,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A159754](http://oeis.org/A159754) ([L09 program](A159754.asm)): Numbers n with property that n^2 ends with 81.
 * [A159833](http://oeis.org/A159833) ([L13 program](A159833.asm)): a(n) = n^2*(n^2 + 15)/4.
 * [A159852](http://oeis.org/A159852) ([L36 program](A159852.asm)): n^2 mod 60.
+* [A159915](http://oeis.org/A159915) ([L12 program](A159915.asm)): a(n) = floor((n+1)/4)*floor(n/2).
 * [A159918](http://oeis.org/A159918) ([L10 program](A159918.asm)): Number of ones in binary representation of n^2.
 * [A159920](http://oeis.org/A159920) ([L07 program](A159920.asm)): Sums of the antidiagonals of Sundaram's sieve (A159919).
 * [A159938](http://oeis.org/A159938) ([L08 program](A159938.asm)): The number of homogeneous trisubstituted linear alkanes.
@@ -4329,7 +4331,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185115](http://oeis.org/A185115) ([L04 program](A185115.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 5.
 * [A185116](http://oeis.org/A185116) ([L05 program](A185116.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 6.
 * [A185117](http://oeis.org/A185117) ([L05 program](A185117.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 7.
-* [A185118](http://oeis.org/A185118) ([L09 program](A185118.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 8.
+* [A185118](http://oeis.org/A185118) ([L05 program](A185118.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 8.
 * [A185119](http://oeis.org/A185119) ([L05 program](A185119.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 9.
 * [A185170](http://oeis.org/A185170) ([L14 program](A185170.asm)): a(n) = floor( (2*n^2 - 6*n + 9) / 5).
 * [A185212](http://oeis.org/A185212) ([L09 program](A185212.asm)): a(n) = 12*n^2 - 8*n + 1.
@@ -4606,6 +4608,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191413](http://oeis.org/A191413) ([L07 program](A191413.asm)): a(n) = 3*n^2 - 2*n + 7.
 * [A191484](http://oeis.org/A191484) ([L06 program](A191484.asm)): Number of compositions of even natural numbers into 5 parts <= n.
 * [A191489](http://oeis.org/A191489) ([L05 program](A191489.asm)): Number of compositions of even natural numbers into 6 parts <= n.
+* [A191494](http://oeis.org/A191494) ([L12 program](A191494.asm)): Number of compositions of even natural numbers in 7 parts <= n.
 * [A191495](http://oeis.org/A191495) ([L13 program](A191495.asm)): Number of compositions of even natural numbers into 8 parts <= n.
 * [A191593](http://oeis.org/A191593) ([L14 program](A191593.asm)): Number of partitions of 12*n into parts < 5.
 * [A191610](http://oeis.org/A191610) ([L04 program](A191610.asm)): Possible number of trailing zeros in n! (complement of A000966).

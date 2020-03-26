@@ -8,10 +8,6 @@ sub $1,$0
 mov $3,4
 lpb $0,1
   pow $0,$2
-  mov $4,1
-  div $0,7
-  mov $2,$4
-  fac $0
   mul $0,$3
   pow $0,6
 lpe
