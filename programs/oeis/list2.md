@@ -1956,6 +1956,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271114](http://oeis.org/A271114) ([L04 program](A271114.asm)): Expansion of (1+x)*(2+x)/(1-x)^2.
 * [A271209](http://oeis.org/A271209) ([L04 program](A271209.asm)): a(n) = n^5 + n + 1.
 * [A271216](http://oeis.org/A271216) ([L15 program](A271216.asm)): a(n) = 2^n floor(n/2)!
+* [A271220](http://oeis.org/A271220) ([L19 program](A271220.asm)): Concatenate sum of digits of previous term and product of digits of previous term, starting with 6.
 * [A271324](http://oeis.org/A271324) ([L07 program](A271324.asm)): a(n) = n + floor(n/4) + (n mod 4).
 * [A271342](http://oeis.org/A271342) ([L09 program](A271342.asm)): Sum of all even divisors of all positive integers <= n.
 * [A271346](http://oeis.org/A271346) ([L22 program](A271346.asm)): Numbers k such that the final digit of k^k is 6.
@@ -2152,7 +2153,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276819](http://oeis.org/A276819) ([L07 program](A276819.asm)): a(n) = a(n-1) + 9*n - 5 with a(0) = 1.
 * [A276849](http://oeis.org/A276849) ([L10 program](A276849.asm)): a(0) = 5, a(1) = 2; for n>1, a(n) = 2*a(n-1) + a(n-2).
 * [A276871](http://oeis.org/A276871) ([L20 program](A276871.asm)): Sums-complement of the Beatty sequence for sqrt(5).
-* [A276876](http://oeis.org/A276876) ([L18 program](A276876.asm)): Sums-complement of the Beatty sequence for 2e.
+* [A276876](http://oeis.org/A276876) ([L14 program](A276876.asm)): Sums-complement of the Beatty sequence for 2e.
 * [A276877](http://oeis.org/A276877) ([L12 program](A276877.asm)): Sums-complement of the Beatty sequence for Pi.
 * [A276878](http://oeis.org/A276878) ([L12 program](A276878.asm)): Sums-complement of the Beatty sequence for 2*Pi.
 * [A276879](http://oeis.org/A276879) ([L23 program](A276879.asm)): Sums-complement of the Beatty sequence for 1 + sqrt(2).

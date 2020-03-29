@@ -424,6 +424,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108928](http://oeis.org/A108928) ([L08 program](A108928.asm)): a(n) = 8*n^2 - 3.
 * [A108981](http://oeis.org/A108981) ([L06 program](A108981.asm)): a(n) = 3a(n-1) + 4a(n-2), a(0) = 1, a(1) = 5.
 * [A108982](http://oeis.org/A108982) ([L23 program](A108982.asm)): Inverse binomial of A003949.
+* [A108983](http://oeis.org/A108983) ([L06 program](A108983.asm)): Inverse binomial transform of A003950.
 * [A108984](http://oeis.org/A108984) ([L11 program](A108984.asm)): Inverse binomial transform of A003951.
 * [A109007](http://oeis.org/A109007) ([L02 program](A109007.asm)): a(n) = gcd(n,3).
 * [A109008](http://oeis.org/A109008) ([L02 program](A109008.asm)): a(n) = gcd(n,4).
@@ -4263,7 +4264,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183984](http://oeis.org/A183984) ([L14 program](A183984.asm)): 1/4 the number of (n+1) X 8 binary arrays with all 2 X 2 subblock sums the same.
 * [A184004](http://oeis.org/A184004) ([L23 program](A184004.asm)): a(n) = n + floor(sqrt(4n/3)); complement of A184005.
 * [A184005](http://oeis.org/A184005) ([L09 program](A184005.asm)): a(n) = n - 1 + ceiling(3*n^2/4); complement of A184004.
-* [A184006](http://oeis.org/A184006) ([L24 program](A184006.asm)): floor(nr+h), where r=sqrt(3), h=-1/3; complement of A184007.
+* [A184006](http://oeis.org/A184006) ([L15 program](A184006.asm)): floor(nr+h), where r=sqrt(3), h=-1/3; complement of A184007.
 * [A184009](http://oeis.org/A184009) ([L18 program](A184009.asm)): n-1+ceiling((3/4)n^2); complement of A184008.
 * [A184010](http://oeis.org/A184010) ([L22 program](A184010.asm)): n + floor(sqrt(-1+4n/3)); complement of A001859 (except for initial zero).
 * [A184012](http://oeis.org/A184012) ([L16 program](A184012.asm)): n + floor(sqrt(5n-4)); complement of A184013.

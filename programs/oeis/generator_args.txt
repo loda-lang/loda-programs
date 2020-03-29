@@ -24693,3 +24693,30 @@ A078112: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T02.asm
 A329822: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A017007: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A017007: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A046632: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017657: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A108983: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A271220: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A080734: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A017174: -p 90 -n 9 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A021085: -p 90 -n 9 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A307802: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A307802: -p 60 -n 6 -i 6 -o ^ -a cdi
+A307802: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A307802: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 90 -n 9 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A307802: -p 90 -n 9 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A307802: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A033368: -p 60 -n 8 -i 6 -o ^ -a cd
+A317320: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A276876: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A184006: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A187394: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
