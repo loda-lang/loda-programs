@@ -2101,6 +2101,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027434](http://oeis.org/A027434) ([L09 program](A027434.asm)): a(1) = 2; then defined by property that a(n) = smallest number >= a(n-1) such that successive runs have lengths 1,1,2,2,3,3,4,4.
 * [A027441](http://oeis.org/A027441) ([L04 program](A027441.asm)): a(n) = (n^4 + n)/2, (Row sums of an n X n X n magic cube, when it exists).
 * [A027444](http://oeis.org/A027444) ([L06 program](A027444.asm)): a(n) = n^3 + n^2 + n.
+* [A027445](http://oeis.org/A027445) ([L12 program](A027445.asm)): a(n) = n^4 + n^3 + n^2 + n^1.
 * [A027468](http://oeis.org/A027468) ([L05 program](A027468.asm)): 9 times the triangular numbers A000217.
 * [A027469](http://oeis.org/A027469) ([L06 program](A027469.asm)): a(n) = 49*(n-1)*(n-2)/2.
 * [A027470](http://oeis.org/A027470) ([L23 program](A027470.asm)): 225*(n-1)*(n-2)/2.
@@ -2354,6 +2355,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033354](http://oeis.org/A033354) ([L03 program](A033354.asm)): [ 34/n ].
 * [A033355](http://oeis.org/A033355) ([L04 program](A033355.asm)): [ 35/n ].
 * [A033356](http://oeis.org/A033356) ([L05 program](A033356.asm)): [ 36/n ].
+* [A033357](http://oeis.org/A033357) ([L08 program](A033357.asm)): [ 37/n ].
 * [A033358](http://oeis.org/A033358) ([L04 program](A033358.asm)): [ 38/n ].
 * [A033359](http://oeis.org/A033359) ([L07 program](A033359.asm)): [ 39/n ].
 * [A033360](http://oeis.org/A033360) ([L07 program](A033360.asm)): [ 40/n ].
@@ -2766,6 +2768,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040309](http://oeis.org/A040309) ([L14 program](A040309.asm)): Continued fraction for sqrt(328).
 * [A040311](http://oeis.org/A040311) ([L16 program](A040311.asm)): Continued fraction for sqrt(330).
 * [A040314](http://oeis.org/A040314) ([L20 program](A040314.asm)): Continued fraction for sqrt(333).
+* [A040317](http://oeis.org/A040317) ([L14 program](A040317.asm)): Continued fraction for sqrt(336).
 * [A040323](http://oeis.org/A040323) ([L19 program](A040323.asm)): Continued fraction for sqrt(342).
 * [A040342](http://oeis.org/A040342) ([L05 program](A040342.asm)): Continued fraction for sqrt(362).
 * [A040343](http://oeis.org/A040343) ([L09 program](A040343.asm)): Continued fraction for sqrt(363).
@@ -2926,6 +2929,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044376](http://oeis.org/A044376) ([L23 program](A044376.asm)): Numbers n such that string 4,4 occurs in the base 10 representation of n but not of n-1.
 * [A044387](http://oeis.org/A044387) ([L17 program](A044387.asm)): Numbers n such that string 5,5 occurs in the base 10 representation of n but not of n-1.
 * [A044398](http://oeis.org/A044398) ([L23 program](A044398.asm)): Numbers n such that string 6,6 occurs in the base 10 representation of n but not of n-1.
+* [A044409](http://oeis.org/A044409) ([L18 program](A044409.asm)): Numbers n such that string 7,7 occurs in the base 10 representation of n but not of n-1.
 * [A044420](http://oeis.org/A044420) ([L20 program](A044420.asm)): Numbers n such that string 8,8 occurs in the base 10 representation of n but not of n-1.
 * [A044421](http://oeis.org/A044421) ([L03 program](A044421.asm)): Numbers n such that string 8,9 occurs in the base 10 representation of n but not of n-1.
 * [A044457](http://oeis.org/A044457) ([L32 program](A044457.asm)): Numbers n such that string 3,3 occurs in the base 4 representation of n but not of n+1.

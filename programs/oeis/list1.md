@@ -195,7 +195,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102865](http://oeis.org/A102865) ([L08 program](A102865.asm)): Base 4 digits are, in order, the first n terms of the sequence (1, 3, 21, 203, 2021, 20203, 202021, 2020203, 20202021, 202020203, ... ).
 * [A102871](http://oeis.org/A102871) ([L09 program](A102871.asm)): a(n) = a(n-3) - 5*a(n-2) + 5*a(n-1), a(0) = 1, a(1) = 3, a(2) = 10.
 * [A102899](http://oeis.org/A102899) ([L15 program](A102899.asm)): a(n) = ceiling(n/3)^2 - floor(n/3)^2.
-* [A102900](http://oeis.org/A102900) ([L16 program](A102900.asm)): a(n) = 3a(n-1) + 4a(n-2), a(0)=a(1)=1.
+* [A102900](http://oeis.org/A102900) ([L06 program](A102900.asm)): a(n) = 3a(n-1) + 4a(n-2), a(0)=a(1)=1.
 * [A102902](http://oeis.org/A102902) ([L11 program](A102902.asm)): a(n) = 9a(n-1) - 16a(n-2).
 * [A103120](http://oeis.org/A103120) ([L37 program](A103120.asm)): Floor(2(1-cos(n))).
 * [A103121](http://oeis.org/A103121) ([L51 program](A103121.asm)): Ceiling(2(1-cos(n))).
@@ -1157,6 +1157,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A129756](http://oeis.org/A129756) ([L04 program](A129756.asm)): Repetitions of odd numbers four times.
 * [A129765](http://oeis.org/A129765) ([L09 program](A129765.asm)): Triangle, (1, 1, 2, 2, 2,...) in every column.
 * [A129771](http://oeis.org/A129771) ([L14 program](A129771.asm)): Evil odd numbers.
+* [A129795](http://oeis.org/A129795) ([L05 program](A129795.asm)): a(n) = floor(5^n/n).
 * [A129863](http://oeis.org/A129863) ([L09 program](A129863.asm)): Sums of three consecutive pentagonal numbers.
 * [A129868](http://oeis.org/A129868) ([L11 program](A129868.asm)): Binary palindromic numbers with only one 0 bit.
 * [A129895](http://oeis.org/A129895) ([L12 program](A129895.asm)): a(1)=1. a(n) = a(n-1) + number of triangular numbers among the first (n-1) terms of the sequence.
@@ -2741,7 +2742,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158559](http://oeis.org/A158559) ([L09 program](A158559.asm)): a(n) = 225*n^2 - 15.
 * [A158560](http://oeis.org/A158560) ([L10 program](A158560.asm)): a(n) = 30n^2 - 1.
 * [A158562](http://oeis.org/A158562) ([L29 program](A158562.asm)): a(n) = 256*n^2 - 16.
-* [A158563](http://oeis.org/A158563) ([L11 program](A158563.asm)): 32n^2 - 1.
+* [A158563](http://oeis.org/A158563) ([L08 program](A158563.asm)): 32n^2 - 1.
 * [A158570](http://oeis.org/A158570) ([L15 program](A158570.asm)): A007814((2n-1)!!+1)
 * [A158574](http://oeis.org/A158574) ([L14 program](A158574.asm)): a(n) = 256*n^2 + 16.
 * [A158575](http://oeis.org/A158575) ([L06 program](A158575.asm)): a(n) = 32*n^2 + 1.
@@ -4465,7 +4466,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187341](http://oeis.org/A187341) ([L32 program](A187341.asm)): Floor((5-sqrt(5))n); complement of A187342.
 * [A187389](http://oeis.org/A187389) ([L15 program](A187389.asm)): a(n) = floor(r*n), where r = 1 + sqrt(7) + sqrt(6); complement of A187390.
 * [A187392](http://oeis.org/A187392) ([L12 program](A187392.asm)): Floor(s*n), where s=1+sqrt(8)-sqrt(7); complement of A189391.
-* [A187394](http://oeis.org/A187394) ([L24 program](A187394.asm)): Floor(s*n), where s = 4 - sqrt(8); complement of A187393.
+* [A187394](http://oeis.org/A187394) ([L11 program](A187394.asm)): Floor(s*n), where s = 4 - sqrt(8); complement of A187393.
 * [A187395](http://oeis.org/A187395) ([L17 program](A187395.asm)): Floor(r*n), where r=4+sqrt(10); complement of A187396.
 * [A187396](http://oeis.org/A187396) ([L13 program](A187396.asm)): Floor(s*n), where s=4-sqrt(10); complement of A187395.
 * [A187466](http://oeis.org/A187466) ([L11 program](A187466.asm)): a(n) = 9^n mod 11.
@@ -4821,6 +4822,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195049](http://oeis.org/A195049) ([L12 program](A195049.asm)): Concentric 21-gonal numbers.
 * [A195058](http://oeis.org/A195058) ([L13 program](A195058.asm)): Concentric 23-gonal numbers.
 * [A195062](http://oeis.org/A195062) ([L04 program](A195062.asm)): Period 7: repeat [1, 0, 1, 0, 1, 0, 1].
+* [A195140](http://oeis.org/A195140) ([L15 program](A195140.asm)): Multiples of 5 and odd numbers interleaved.
 * [A195142](http://oeis.org/A195142) ([L09 program](A195142.asm)): Concentric 10-gonal numbers.
 * [A195143](http://oeis.org/A195143) ([L09 program](A195143.asm)): a(n) = n-th concentric 12-gonal number.
 * [A195145](http://oeis.org/A195145) ([L09 program](A195145.asm)): Concentric 14-gonal numbers.

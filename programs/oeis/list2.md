@@ -1750,6 +1750,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267256](http://oeis.org/A267256) ([L03 program](A267256.asm)): Middle column of the "Rule 111" elementary cellular automaton starting with a single ON (black) cell.
 * [A267317](http://oeis.org/A267317) ([L08 program](A267317.asm)): a(n) = final digit of 2^n-1.
 * [A267318](http://oeis.org/A267318) ([L20 program](A267318.asm)): Continued fraction expansion of e^(1/5).
+* [A267319](http://oeis.org/A267319) ([L17 program](A267319.asm)): Continued fraction expansion of phi^8, where phi = (1 + sqrt(5))/2.
 * [A267352](http://oeis.org/A267352) ([L18 program](A267352.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 123" elementary cellular automaton starting with a single ON (black) cell.
 * [A267353](http://oeis.org/A267353) ([L12 program](A267353.asm)): Total number of ON (black) cells after n iterations of the "Rule 123" elementary cellular automaton starting with a single ON (black) cell.
 * [A267354](http://oeis.org/A267354) ([L09 program](A267354.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 123" elementary cellular automaton starting with a single ON (black) cell.
