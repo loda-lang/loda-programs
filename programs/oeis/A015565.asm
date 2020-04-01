@@ -3,17 +3,8 @@
 
 mov $2,8
 pow $2,$0
-mov $3,7
 mov $1,3
 add $1,8
-mov $6,7
 add $1,$2
-sub $0,$1
-lpb $0,1
-  add $5,9
-  gcd $2,$1
-  div $2,$6
-  pow $4,$2
-lpe
 div $1,9
 sub $1,1
