@@ -5,15 +5,8 @@ mul $0,9
 add $0,7
 mov $1,6
 sub $1,3
-mov $6,5
 add $0,1
-mov $3,1
-mov $2,126
 mul $1,$0
-mov $4,9
-mov $3,126
-mul $3,$1
-gcd $5,$3
 pow $1,4
 sub $1,331776
 div $1,729

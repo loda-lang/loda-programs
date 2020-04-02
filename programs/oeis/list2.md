@@ -937,7 +937,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A236175](http://oeis.org/A236175) ([L15 program](A236175.asm)): Prime gap pattern of compacting Eratosthenes sieve for prime(4) = 7.
 * [A236185](http://oeis.org/A236185) ([L15 program](A236185.asm)): Differences between terms of compacting Eratosthenes sieve for prime(4) = 7.
 * [A236203](http://oeis.org/A236203) ([L08 program](A236203.asm)): Interleave A005563(n), A028347(n).
-* [A236213](http://oeis.org/A236213) ([L21 program](A236213.asm)): Number of units in the imaginary quadratic field Q(sqrt(-d)), where d > 0 is the n-th squarefree number.
+* [A236213](http://oeis.org/A236213) ([L11 program](A236213.asm)): Number of units in the imaginary quadratic field Q(sqrt(-d)), where d > 0 is the n-th squarefree number.
 * [A236257](http://oeis.org/A236257) ([L07 program](A236257.asm)): a(n) = 2*n^2 - 7*n + 9.
 * [A236267](http://oeis.org/A236267) ([L08 program](A236267.asm)): a(n) = 8n^2 + 3n + 1.
 * [A236283](http://oeis.org/A236283) ([L07 program](A236283.asm)): The number of orbits of triples of {1,2,...,n} under the action of the dihedral group of order 2n.

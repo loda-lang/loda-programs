@@ -1344,6 +1344,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017257](http://oeis.org/A017257) ([L03 program](A017257.asm)): a(n) = 9n+8.
 * [A017258](http://oeis.org/A017258) ([L08 program](A017258.asm)): a(n) = (9*n + 8)^2.
 * [A017259](http://oeis.org/A017259) ([L09 program](A017259.asm)): a(n) = (9*n + 8)^3.
+* [A017260](http://oeis.org/A017260) ([L11 program](A017260.asm)): a(n) = (9*n + 8)^4.
 * [A017270](http://oeis.org/A017270) ([L03 program](A017270.asm)): a(n) = (10*n)^2.
 * [A017271](http://oeis.org/A017271) ([L03 program](A017271.asm)): a(n) = (10*n)^3.
 * [A017272](http://oeis.org/A017272) ([L03 program](A017272.asm)): a(n) = (10*n)^4.
@@ -2600,7 +2601,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037458](http://oeis.org/A037458) ([L11 program](A037458.asm)): a(1)=1; for n > 1, a(n)=n-a(n-sqrtint(n)) where sqrtint(n) denotes floor(sqrt(n)).
 * [A037459](http://oeis.org/A037459) ([L18 program](A037459.asm)): Sum{d(i)*5^i: i=0,1,...,m}, where Sum{d(i)*4^i: i=0,1,...,m} is the base 4 representation of n.
 * [A037479](http://oeis.org/A037479) ([L07 program](A037479.asm)): a(n)=Sum{d(i)*10^i: i=0,1,...,m}, where Sum{d(i)*9^i: i=0,1,...,m} is the base 9 representation of n.
-* [A037481](http://oeis.org/A037481) ([L10 program](A037481.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2.
+* [A037481](http://oeis.org/A037481) ([L09 program](A037481.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2.
 * [A037482](http://oeis.org/A037482) ([L16 program](A037482.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,2.
 * [A037488](http://oeis.org/A037488) ([L19 program](A037488.asm)): Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
 * [A037489](http://oeis.org/A037489) ([L24 program](A037489.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,1.
@@ -4740,6 +4741,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070498](http://oeis.org/A070498) ([L17 program](A070498.asm)): a(n) = n^3 mod 36.
 * [A070499](http://oeis.org/A070499) ([L43 program](A070499.asm)): a(n) = n^3 mod 37.
 * [A070502](http://oeis.org/A070502) ([L07 program](A070502.asm)): a(n) = n^3 mod 40.
+* [A070503](http://oeis.org/A070503) ([L09 program](A070503.asm)): a(n) = n^3 mod 41.
 * [A070507](http://oeis.org/A070507) ([L21 program](A070507.asm)): a(n) = n^3 mod 45.
 * [A070511](http://oeis.org/A070511) ([L03 program](A070511.asm)): a(n) = n^4 mod 6.
 * [A070512](http://oeis.org/A070512) ([L03 program](A070512.asm)): a(n) = n^4 mod 7.
@@ -5435,7 +5437,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083089](http://oeis.org/A083089) ([L04 program](A083089.asm)): Numbers that are congruent to {0, 2, 4, 6, 7, 9, 11} mod 12.
 * [A083120](http://oeis.org/A083120) ([L07 program](A083120.asm)): Numbers that are congruent to {0, 2, 4, 5, 7, 9, 10} mod 12.
 * [A083127](http://oeis.org/A083127) ([L15 program](A083127.asm)): 3*n^3+n^2-4*n.
-* [A083196](http://oeis.org/A083196) ([L33 program](A083196.asm)): 8*n^4+9*n^2+2.
+* [A083196](http://oeis.org/A083196) ([L21 program](A083196.asm)): 8*n^4+9*n^2+2.
 * [A083217](http://oeis.org/A083217) ([L05 program](A083217.asm)): a(n) = (2*5^n+(-1)^n)/3.
 * [A083219](http://oeis.org/A083219) ([L05 program](A083219.asm)): a(n) = n - 2*floor(n/4).
 * [A083220](http://oeis.org/A083220) ([L03 program](A083220.asm)): a(n) = n + (n mod 4).
