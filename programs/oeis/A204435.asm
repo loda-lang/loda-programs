@@ -10,7 +10,6 @@ lpe
 mod $2,3
 gcd $2,2
 div $2,2
-fac $4
 add $2,6
 add $1,$2
 pow $1,6

@@ -6,13 +6,8 @@ add $0,$2
 add $2,2
 mov $3,$0
 add $2,1
-mov $5,4
 pow $2,3
 mov $1,$3
-lpb $0,1
-  mul $5,2
-lpe
 mul $1,3
 gcd $2,$1
 div $1,$2
-mov $4,2

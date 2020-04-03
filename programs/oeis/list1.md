@@ -3196,6 +3196,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166447](http://oeis.org/A166447) ([L06 program](A166447.asm)): a(n) = n*round(sqrt(n)).
 * [A166464](http://oeis.org/A166464) ([L08 program](A166464.asm)): a(n) = (3+2n+6n^2+4n^3)/3.
 * [A166465](http://oeis.org/A166465) ([L15 program](A166465.asm)): a(n) = 3*a(n-2) for n > 2; a(1) = 1, a(2) = 5.
+* [A166466](http://oeis.org/A166466) ([L10 program](A166466.asm)): Trisection a(n) = A000265(3n).
 * [A166486](http://oeis.org/A166486) ([L03 program](A166486.asm)): Periodic sequence [0,1,1,1] of length 4.
 * [A166514](http://oeis.org/A166514) ([L08 program](A166514.asm)): Zig-zag function for first two columns of a matrix (take numbers in consecutive pairs).
 * [A166515](http://oeis.org/A166515) ([L21 program](A166515.asm)): Partial sum of A166514.
@@ -3814,7 +3815,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173309](http://oeis.org/A173309) ([L12 program](A173309.asm)): 19*n*(n+1).
 * [A173391](http://oeis.org/A173391) ([L08 program](A173391.asm)): a(n) = 6n + 3^n.
 * [A173432](http://oeis.org/A173432) ([L12 program](A173432.asm)): NW-SE diagonal sums of Riordan array A112468.
-* [A173474](http://oeis.org/A173474) ([L19 program](A173474.asm)): Numbers n such that n*2^n + 1 is not prime.
+* [A173474](http://oeis.org/A173474) ([L12 program](A173474.asm)): Numbers n such that n*2^n + 1 is not prime.
 * [A173511](http://oeis.org/A173511) ([L08 program](A173511.asm)): a(n) = 4*n^2 + floor(n/2).
 * [A173512](http://oeis.org/A173512) ([L08 program](A173512.asm)): a(n) = 8*n + 4 + n mod 2.
 * [A173562](http://oeis.org/A173562) ([L05 program](A173562.asm)): a(n) = n^2 + floor(n/4).
@@ -4627,6 +4628,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191489](http://oeis.org/A191489) ([L05 program](A191489.asm)): Number of compositions of even natural numbers into 6 parts <= n.
 * [A191494](http://oeis.org/A191494) ([L12 program](A191494.asm)): Number of compositions of even natural numbers in 7 parts <= n.
 * [A191495](http://oeis.org/A191495) ([L13 program](A191495.asm)): Number of compositions of even natural numbers into 8 parts <= n.
+* [A191496](http://oeis.org/A191496) ([L09 program](A191496.asm)): Number of compositions of even numbers into 9 parts <= n.
 * [A191593](http://oeis.org/A191593) ([L14 program](A191593.asm)): Number of partitions of 12*n into parts < 5.
 * [A191610](http://oeis.org/A191610) ([L04 program](A191610.asm)): Possible number of trailing zeros in n! (complement of A000966).
 * [A191680](http://oeis.org/A191680) ([L04 program](A191680.asm)): Number of compositions of odd natural numbers into 9 parts <= n.

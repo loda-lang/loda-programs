@@ -80,6 +80,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204418](http://oeis.org/A204418) ([L03 program](A204418.asm)): Periodic sequence 1,0,1,..., arranged in a triangle.
 * [A204421](http://oeis.org/A204421) ([L23 program](A204421.asm)): Symmetric matrix: f(i,j)=(i+j+2 mod 3), by antidiagonals.
 * [A204429](http://oeis.org/A204429) ([L13 program](A204429.asm)): Symmetric matrix: f(i,j)=(2i+j mod 3), by antidiagonals.
+* [A204435](http://oeis.org/A204435) ([L13 program](A204435.asm)): Symmetric matrix: f(i,j)=((i+j)^2 mod 3), read by (constant) antidiagonals.
 * [A204437](http://oeis.org/A204437) ([L20 program](A204437.asm)): Symmetric matrix: f(i,j)=((i+j+1)^2 mod 3), by (constant) antidiagonals.
 * [A204439](http://oeis.org/A204439) ([L13 program](A204439.asm)): Symmetric matrix: f(i,j)=((i+j+2)^2 mod 3), by (constant) antidiagonals.
 * [A204441](http://oeis.org/A204441) ([L21 program](A204441.asm)): Symmetric matrix: f(i,j)=floor[(i+j+2)/4]-floor[(i+j-1)/4], by (constant) antidiagonals.

@@ -74,7 +74,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000655](http://oeis.org/A000655) ([L07 program](A000655.asm)): a(n) = number of letters in a(n-1) (in English).
 * [A000689](http://oeis.org/A000689) ([L07 program](A000689.asm)): Final decimal digit of 2^n.
 * [A000703](http://oeis.org/A000703) ([L11 program](A000703.asm)): Chromatic number (or Heawood number) of nonorientable surface with n crosscaps.
-* [A000799](http://oeis.org/A000799) ([L10 program](A000799.asm)): a(n) = floor(2^n / n).
+* [A000799](http://oeis.org/A000799) ([L07 program](A000799.asm)): a(n) = floor(2^n / n).
 * [A000914](http://oeis.org/A000914) ([L07 program](A000914.asm)): Stirling numbers of the first kind: s(n+2, n).
 * [A000930](http://oeis.org/A000930) ([L19 program](A000930.asm)): Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) + a(n-3).
 * [A000933](http://oeis.org/A000933) ([L09 program](A000933.asm)): Genus of complete graph on n nodes.
@@ -1400,6 +1400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017417](http://oeis.org/A017417) ([L14 program](A017417.asm)): a(n) = (11*n+2)^5.
 * [A017425](http://oeis.org/A017425) ([L03 program](A017425.asm)): a(n) = 11*n + 3.
 * [A017426](http://oeis.org/A017426) ([L10 program](A017426.asm)): (11n+3)^2.
+* [A017427](http://oeis.org/A017427) ([L07 program](A017427.asm)): (11n+3)^3.
 * [A017437](http://oeis.org/A017437) ([L03 program](A017437.asm)): a(n) = 11*n + 4.
 * [A017438](http://oeis.org/A017438) ([L10 program](A017438.asm)): a(n) = (11*n + 4)^2.
 * [A017439](http://oeis.org/A017439) ([L09 program](A017439.asm)): a(n) = (11*n + 4)^3.
@@ -2553,7 +2554,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036404](http://oeis.org/A036404) ([L04 program](A036404.asm)): a(n) = ceiling(n^2/5).
 * [A036405](http://oeis.org/A036405) ([L04 program](A036405.asm)): a(n) = ceiling(n^2/7).
 * [A036406](http://oeis.org/A036406) ([L07 program](A036406.asm)): a(n) = ceiling(n^2/8).
-* [A036407](http://oeis.org/A036407) ([L09 program](A036407.asm)): a(n) = ceiling(n^2/9).
+* [A036407](http://oeis.org/A036407) ([L05 program](A036407.asm)): a(n) = ceiling(n^2/9).
 * [A036408](http://oeis.org/A036408) ([L13 program](A036408.asm)): a(n) = ceiling(n^2/10).
 * [A036409](http://oeis.org/A036409) ([L14 program](A036409.asm)): a(n) = ceiling(n^2/11).
 * [A036410](http://oeis.org/A036410) ([L14 program](A036410.asm)): G.f.: (1+x^6)/((1-x)*(1-x^3)*(1-x^4)).
@@ -2617,6 +2618,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037584](http://oeis.org/A037584) ([L08 program](A037584.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 3,1.
 * [A037604](http://oeis.org/A037604) ([L04 program](A037604.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,3.
 * [A037618](http://oeis.org/A037618) ([L10 program](A037618.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,3.
+* [A037639](http://oeis.org/A037639) ([L14 program](A037639.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1.
 * [A037667](http://oeis.org/A037667) ([L06 program](A037667.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,2,0.
 * [A037817](http://oeis.org/A037817) ([L14 program](A037817.asm)): Number of i such that d(i)<=d(i-1), where Sum{d(i)*10^i: i=0,1,...,m} is base 10 representation of n.
 * [A037825](http://oeis.org/A037825) ([L22 program](A037825.asm)): Number of i such that d(i)>d(i-1), where Sum{d(i)*10^i: i=0,1,....,m} is base 10 representation of n.
@@ -2926,7 +2928,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044241](http://oeis.org/A044241) ([L14 program](A044241.asm)): Numbers n such that string 6,6 occurs in the base 8 representation of n but not of n-1.
 * [A044242](http://oeis.org/A044242) ([L03 program](A044242.asm)): Numbers n such that string 6,7 occurs in the base 8 representation of n but not of n-1.
 * [A044251](http://oeis.org/A044251) ([L03 program](A044251.asm)): Numbers n such that string 0,0 occurs in the base 9 representation of n but not of n-1.
-* [A044291](http://oeis.org/A044291) ([L32 program](A044291.asm)): Numbers n such that string 4,4 occurs in the base 9 representation of n but not of n-1.
+* [A044291](http://oeis.org/A044291) ([L13 program](A044291.asm)): Numbers n such that string 4,4 occurs in the base 9 representation of n but not of n-1.
 * [A044301](http://oeis.org/A044301) ([L18 program](A044301.asm)): Numbers n such that string 5,5 occurs in the base 9 representation of n but not of n-1.
 * [A044311](http://oeis.org/A044311) ([L14 program](A044311.asm)): Numbers n such that string 6,6 occurs in the base 9 representation of n but not of n-1.
 * [A044321](http://oeis.org/A044321) ([L32 program](A044321.asm)): Numbers n such that string 7,7 occurs in the base 9 representation of n but not of n-1.
@@ -2939,6 +2941,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044409](http://oeis.org/A044409) ([L18 program](A044409.asm)): Numbers n such that string 7,7 occurs in the base 10 representation of n but not of n-1.
 * [A044420](http://oeis.org/A044420) ([L20 program](A044420.asm)): Numbers n such that string 8,8 occurs in the base 10 representation of n but not of n-1.
 * [A044421](http://oeis.org/A044421) ([L03 program](A044421.asm)): Numbers n such that string 8,9 occurs in the base 10 representation of n but not of n-1.
+* [A044431](http://oeis.org/A044431) ([L18 program](A044431.asm)): Numbers n such that string 9,9 occurs in the base 10 representation of n but not of n-1.
 * [A044457](http://oeis.org/A044457) ([L32 program](A044457.asm)): Numbers n such that string 3,3 occurs in the base 4 representation of n but not of n+1.
 * [A044470](http://oeis.org/A044470) ([L18 program](A044470.asm)): Numbers n such that string 2,2 occurs in the base 5 representation of n but not of n+1.
 * [A044476](http://oeis.org/A044476) ([L22 program](A044476.asm)): Numbers n such that string 3,3 occurs in the base 5 representation of n but not of n+1.
@@ -5692,7 +5695,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088648](http://oeis.org/A088648) ([L23 program](A088648.asm)): a(1) = 1, then the smallest odd number not occurring earlier such that the concatenation a(r), a(s) is composite for all s > r.
 * [A088650](http://oeis.org/A088650) ([L21 program](A088650.asm)): a(n) = smallest value of x pertaining to A020498, or the smallest x such that A020498(k) + x is prime for all k = 1 to n.
 * [A088666](http://oeis.org/A088666) ([L08 program](A088666.asm)): a(n) = (n^4 + 1) mod 10.
-* [A088667](http://oeis.org/A088667) ([L17 program](A088667.asm)): n^4 + 6 mod 10.
+* [A088667](http://oeis.org/A088667) ([L04 program](A088667.asm)): n^4 + 6 mod 10.
 * [A088689](http://oeis.org/A088689) ([L05 program](A088689.asm)): Jacobsthal numbers modulo 3.
 * [A088795](http://oeis.org/A088795) ([L11 program](A088795.asm)): Fibonacci(n) as n runs through the quarter-squares.
 * [A088828](http://oeis.org/A088828) ([L12 program](A088828.asm)): Nonsquare positive odd numbers.
@@ -6110,6 +6113,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099188](http://oeis.org/A099188) ([L15 program](A099188.asm)): a(n) = 2*ceiling(n/sqrt(2)).
 * [A099216](http://oeis.org/A099216) ([L13 program](A099216.asm)): a(n)=4a(n-1)-4a(n-2)+2a(n-3).
 * [A099232](http://oeis.org/A099232) ([L17 program](A099232.asm)): a(n) = 2*a(n-1) + 2*a(n-2) - 3*a(n-3).
+* [A099260](http://oeis.org/A099260) ([L18 program](A099260.asm)): Number of decimal digits in (10^n)-th prime number.
 * [A099375](http://oeis.org/A099375) ([L18 program](A099375.asm)): Sequence matrix for odd numbers.
 * [A099392](http://oeis.org/A099392) ([L04 program](A099392.asm)): a(n) = floor((n^2 - 2*n + 3)/2).
 * [A099393](http://oeis.org/A099393) ([L11 program](A099393.asm)): a(n) = 4^n + 2^n - 1.
