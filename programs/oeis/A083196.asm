@@ -3,21 +3,14 @@
 
 mul $0,4
 pow $0,2
-mov $5,7
-mov $4,1
-add $5,1
-mov $3,1
+mov $3,7
+add $3,1
 add $0,1
 mov $1,2
-add $0,$5
+add $0,$3
 mov $2,$0
 mul $1,$0
 mul $1,$2
-mov $5,0
-gcd $0,2
-lpb $0,1
-  add $5,5
-lpe
 sub $1,162
 div $1,64
 add $1,2

@@ -2666,6 +2666,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298033](http://oeis.org/A298033) ([L14 program](A298033.asm)): Coordination sequence of the Dual(3.4.6.4) tiling with respect to a hexavalent node.
 * [A298034](http://oeis.org/A298034) ([L12 program](A298034.asm)): Partial sums of A298033.
 * [A298035](http://oeis.org/A298035) ([L06 program](A298035.asm)): Coordination sequence of Dual(3.12.12) tiling with respect to a trivalent node.
+* [A298038](http://oeis.org/A298038) ([L15 program](A298038.asm)): Coordination sequence of Dual(4.6.12) tiling with respect to a hexavalent node.
 * [A298125](http://oeis.org/A298125) ([L12 program](A298125.asm)): The hex numbers (A003215) together with 3.
 * [A298267](http://oeis.org/A298267) ([L08 program](A298267.asm)): a(n) is the maximum number of heptiamonds in a hexagon of order n.
 * [A298360](http://oeis.org/A298360) ([L25 program](A298360.asm)): Numbers congruent to {3, 7, 13, 27} mod 30.

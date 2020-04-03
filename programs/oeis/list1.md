@@ -1532,7 +1532,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133894](http://oeis.org/A133894) ([L07 program](A133894.asm)): Numbers m such that binomial(m+4,m) mod 4 = 0.
 * [A133895](http://oeis.org/A133895) ([L10 program](A133895.asm)): Numbers m such that binomial(m+5,m) mod 5 = 0.
 * [A133897](http://oeis.org/A133897) ([L09 program](A133897.asm)): Numbers m such that binomial(m+7,m) mod 7 = 0.
-* [A133898](http://oeis.org/A133898) ([L26 program](A133898.asm)): Numbers m such that binomial(m+8,m) mod 8 = 0.
+* [A133898](http://oeis.org/A133898) ([L17 program](A133898.asm)): Numbers m such that binomial(m+8,m) mod 8 = 0.
 * [A133899](http://oeis.org/A133899) ([L20 program](A133899.asm)): Numbers m such that binomial(m+9,m) mod 9 = 0.
 * [A133931](http://oeis.org/A133931) ([L15 program](A133931.asm)): Expansion of x*(2-4*x^2-x^3)/((1-x)^2*(1-x-x^2)).
 * [A133953](http://oeis.org/A133953) ([L24 program](A133953.asm)): A second integer solution:d=2;h=1; A 4 X 4 vector Markov of a game matrix MA and an anti- game matrix MB such that game_valueMa+game_ValueMB =0 and the score is the sum of the vector out put of the Markov: MA={{0,1},{1,d}}; MB={{1/h,0},(2 - d + 1/h + h),h}}; Characteristic Polynomial is: -1 + 4 x^2 - 4 x^3 + x^4.
@@ -1862,6 +1862,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140513](http://oeis.org/A140513) ([L07 program](A140513.asm)): Repeat 2^n n times.
 * [A140529](http://oeis.org/A140529) ([L05 program](A140529.asm)): a(n) = 6*4^n - 1.
 * [A140592](http://oeis.org/A140592) ([L14 program](A140592.asm)): a(n) = 2n if A010060(n-1) is 0, and a(n) = 2n+1 if A010060(n-1) is 1.
+* [A140659](http://oeis.org/A140659) ([L12 program](A140659.asm)): a(n) = floor(A140657(n+2)/10).
 * [A140660](http://oeis.org/A140660) ([L04 program](A140660.asm)): a(n) = 3*4^n + 1.
 * [A140670](http://oeis.org/A140670) ([L07 program](A140670.asm)): a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 * [A140672](http://oeis.org/A140672) ([L06 program](A140672.asm)): a(n) = n*(3*n + 13)/2.
@@ -2839,7 +2840,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158766](http://oeis.org/A158766) ([L14 program](A158766.asm)): a(n) = 1444*n^2 + 38.
 * [A158767](http://oeis.org/A158767) ([L08 program](A158767.asm)): a(n) = 76*n^2 + 1.
 * [A158768](http://oeis.org/A158768) ([L32 program](A158768.asm)): a(n) = 1521*n^2 + 39.
-* [A158769](http://oeis.org/A158769) ([L17 program](A158769.asm)): a(n) = 78*n^2 + 1.
+* [A158769](http://oeis.org/A158769) ([L12 program](A158769.asm)): a(n) = 78*n^2 + 1.
 * [A158770](http://oeis.org/A158770) ([L32 program](A158770.asm)): a(n) = 1521*n^2 - 39.
 * [A158771](http://oeis.org/A158771) ([L24 program](A158771.asm)): a(n) = 78*n^2 - 1.
 * [A158772](http://oeis.org/A158772) ([L06 program](A158772.asm)): a(n) = A138635(n+18)-A138635(n).
@@ -3463,7 +3464,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168604](http://oeis.org/A168604) ([L04 program](A168604.asm)): a(n) = 2^(n-2) - 1.
 * [A168605](http://oeis.org/A168605) ([L16 program](A168605.asm)): Number of ways of partitioning the multiset {1,1,1,2,3,...,n-2} into exactly three nonempty parts.
 * [A168607](http://oeis.org/A168607) ([L03 program](A168607.asm)): 3^n + 2.
-* [A168608](http://oeis.org/A168608) ([L13 program](A168608.asm)): Decimal expansion of average of two-digit primes.
+* [A168608](http://oeis.org/A168608) ([L09 program](A168608.asm)): Decimal expansion of average of two-digit primes.
 * [A168609](http://oeis.org/A168609) ([L03 program](A168609.asm)): a(n) = 3^n + 4.
 * [A168610](http://oeis.org/A168610) ([L03 program](A168610.asm)): a(n) = 3^n + 5.
 * [A168614](http://oeis.org/A168614) ([L03 program](A168614.asm)): a(n) = 2^n + 5.
