@@ -1173,7 +1173,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246046](http://oeis.org/A246046) ([L13 program](A246046.asm)): [Pi((n + Pi/2)/(Pi -1) - 1/2)]; complement of A062389.
 * [A246075](http://oeis.org/A246075) ([L15 program](A246075.asm)): Paradigm shift sequence for a (-3,5) production scheme with replacement.
 * [A246104](http://oeis.org/A246104) ([L12 program](A246104.asm)): Least m > 0 for which (s(m), ..., s(n+m-1) = (s(0), ..., s(n)), the first n+1 terms of the infinite Fibonacci word A003849.
-* [A246139](http://oeis.org/A246139) ([L05 program](A246139.asm)): 2^n + 10.
+* [A246139](http://oeis.org/A246139) ([L04 program](A246139.asm)): 2^n + 10.
 * [A246172](http://oeis.org/A246172) ([L06 program](A246172.asm)): a(n) = (n^2+9*n-8)/2.
 * [A246360](http://oeis.org/A246360) ([L12 program](A246360.asm)): a(1) = 1, then A007051 ((3^n)+1)/2 interleaved with A057198 (5*3^(n-1)+1)/2.
 * [A246435](http://oeis.org/A246435) ([L09 program](A246435.asm)): Length of representation of n in fractional base 3/2.

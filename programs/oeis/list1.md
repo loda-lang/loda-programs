@@ -618,7 +618,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A113770](http://oeis.org/A113770) ([L04 program](A113770.asm)): Partial sums of A113311(n)^2.
 * [A113778](http://oeis.org/A113778) ([L08 program](A113778.asm)): Invert blocks of four in the sequence of natural numbers.
 * [A113779](http://oeis.org/A113779) ([L10 program](A113779.asm)): Each term is the sum of the next two digits.
-* [A113790](http://oeis.org/A113790) ([L09 program](A113790.asm)): In each block of 5 consecutive natural numbers, swap first and 2nd and swap 4th and 5th.
+* [A113790](http://oeis.org/A113790) ([L08 program](A113790.asm)): In each block of 5 consecutive natural numbers, swap first and 2nd and swap 4th and 5th.
 * [A113801](http://oeis.org/A113801) ([L07 program](A113801.asm)): Numbers that are congruent to {1, 13} mod 14.
 * [A113802](http://oeis.org/A113802) ([L08 program](A113802.asm)): Numbers that are congruent to {2, 12} mod 14.
 * [A113803](http://oeis.org/A113803) ([L06 program](A113803.asm)): Numbers that are congruent to {3, 11} mod 14.
@@ -1532,7 +1532,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133894](http://oeis.org/A133894) ([L07 program](A133894.asm)): Numbers m such that binomial(m+4,m) mod 4 = 0.
 * [A133895](http://oeis.org/A133895) ([L10 program](A133895.asm)): Numbers m such that binomial(m+5,m) mod 5 = 0.
 * [A133897](http://oeis.org/A133897) ([L09 program](A133897.asm)): Numbers m such that binomial(m+7,m) mod 7 = 0.
-* [A133898](http://oeis.org/A133898) ([L17 program](A133898.asm)): Numbers m such that binomial(m+8,m) mod 8 = 0.
+* [A133898](http://oeis.org/A133898) ([L11 program](A133898.asm)): Numbers m such that binomial(m+8,m) mod 8 = 0.
 * [A133899](http://oeis.org/A133899) ([L20 program](A133899.asm)): Numbers m such that binomial(m+9,m) mod 9 = 0.
 * [A133931](http://oeis.org/A133931) ([L15 program](A133931.asm)): Expansion of x*(2-4*x^2-x^3)/((1-x)^2*(1-x-x^2)).
 * [A133953](http://oeis.org/A133953) ([L24 program](A133953.asm)): A second integer solution:d=2;h=1; A 4 X 4 vector Markov of a game matrix MA and an anti- game matrix MB such that game_valueMa+game_ValueMB =0 and the score is the sum of the vector out put of the Markov: MA={{0,1},{1,d}}; MB={{1/h,0},(2 - d + 1/h + h),h}}; Characteristic Polynomial is: -1 + 4 x^2 - 4 x^3 + x^4.
@@ -2077,7 +2077,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145569](http://oeis.org/A145569) ([L03 program](A145569.asm)): Multiples of 6 appear in pairs.
 * [A145577](http://oeis.org/A145577) ([L15 program](A145577.asm)): A045944 mod 9. Period 9: repeat 0,5,7,6,2,4,3,8,1.
 * [A145594](http://oeis.org/A145594) ([L16 program](A145594.asm)): A145593(n) mod 9.
-* [A145644](http://oeis.org/A145644) ([L10 program](A145644.asm)): Cubefree part of 10^n.
+* [A145644](http://oeis.org/A145644) ([L06 program](A145644.asm)): Cubefree part of 10^n.
 * [A145654](http://oeis.org/A145654) ([L06 program](A145654.asm)): Partial sums of A000918, starting from index 1.
 * [A145655](http://oeis.org/A145655) ([L08 program](A145655.asm)): Partial sums of A080674.
 * [A145678](http://oeis.org/A145678) ([L28 program](A145678.asm)): a(n) = 441*n^2 - 21.
@@ -2193,7 +2193,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152619](http://oeis.org/A152619) ([L04 program](A152619.asm)): n*(n+2)^2
 * [A152621](http://oeis.org/A152621) ([L10 program](A152621.asm)): a(n)=8*a(n-1)-6*a(n-2), n>1 ; a(0)=1, a(1)=2.
 * [A152623](http://oeis.org/A152623) ([L06 program](A152623.asm)): Decimal expansion of 3/2.
-* [A152624](http://oeis.org/A152624) ([L14 program](A152624.asm)): Decimal expansion of 7/2.
+* [A152624](http://oeis.org/A152624) ([L09 program](A152624.asm)): Decimal expansion of 7/2.
 * [A152627](http://oeis.org/A152627) ([L04 program](A152627.asm)): Decimal expansion of 3/4.
 * [A152691](http://oeis.org/A152691) ([L02 program](A152691.asm)): Multiples of 64.
 * [A152729](http://oeis.org/A152729) ([L13 program](A152729.asm)): a(n) + a(n+1) + a(n+2) = n^4, with a(0) = a(1) = a(2) = 0.
@@ -3830,6 +3830,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173785](http://oeis.org/A173785) ([L09 program](A173785.asm)): Expansion of 2*(9*x^4+4*x^3+14*x^2-4*x+1)/(1-x)^5.
 * [A173809](http://oeis.org/A173809) ([L24 program](A173809.asm)): a(2n+1) = 1+A131941(2n+1). a(2n) = A131941(2n).
 * [A173857](http://oeis.org/A173857) ([L04 program](A173857.asm)): Expansion of 3/2 in base phi.
+* [A173858](http://oeis.org/A173858) ([L25 program](A173858.asm)): Expansion of 4/3 in base phi.
 * [A173861](http://oeis.org/A173861) ([L13 program](A173861.asm)): Expansion of 8/7 in base phi.
 * [A173862](http://oeis.org/A173862) ([L03 program](A173862.asm)): a(n) = A158772(n-1)/21.
 * [A173864](http://oeis.org/A173864) ([L11 program](A173864.asm)): Expansion of 9/8 in base phi.
@@ -3895,7 +3896,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175110](http://oeis.org/A175110) ([L06 program](A175110.asm)): a(n) = ((2*n+1)^4+1)/2.
 * [A175111](http://oeis.org/A175111) ([L08 program](A175111.asm)): ((2*n+1)^5+(-1)^n)/2.
 * [A175112](http://oeis.org/A175112) ([L40 program](A175112.asm)): First differences of A175111.
-* [A175113](http://oeis.org/A175113) ([L14 program](A175113.asm)): a(n) = ((2*n + 1)^6 + 1)/2.
+* [A175113](http://oeis.org/A175113) ([L09 program](A175113.asm)): a(n) = ((2*n + 1)^6 + 1)/2.
 * [A175114](http://oeis.org/A175114) ([L46 program](A175114.asm)): First differences of A175113.
 * [A175139](http://oeis.org/A175139) ([L19 program](A175139.asm)): a(1)= 1. a(n) = smallest integer > a(n-1) such that the partial sums of A175140 are avoided. Or, the first difference of A131937.
 * [A175161](http://oeis.org/A175161) ([L05 program](A175161.asm)): a(n) = 8*(2^n + 1).
