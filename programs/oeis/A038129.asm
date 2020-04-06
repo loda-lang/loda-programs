@@ -4,9 +4,9 @@
 mov $3,$0
 mov $1,$0
 mov $4,7
-mul $1,$4
+mul $1,7
 mov $6,27
-div $1,$6
+div $1,27
 mov $2,$3
 mov $5,$2
 add $1,$5

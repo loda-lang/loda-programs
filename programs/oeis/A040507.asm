@@ -7,5 +7,5 @@ mod $0,2
 add $1,$0
 pow $1,$1
 mov $2,1
-add $1,$2
+add $1,1
 add $1,18

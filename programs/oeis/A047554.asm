@@ -3,7 +3,7 @@
 
 mov $5,$0
 mov $4,4
-mod $0,$4
+mod $0,4
 sub $4,$0
 mod $4,3
 mov $1,$4

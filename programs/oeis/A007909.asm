@@ -6,7 +6,7 @@ mov $2,2
 pow $1,$0
 mul $2,4
 div $1,5
-mul $1,$2
+mul $1,8
 div $1,8
 mul $1,2
 add $1,1

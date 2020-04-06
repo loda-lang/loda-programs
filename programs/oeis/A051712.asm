@@ -4,5 +4,5 @@
 mov $1,$0
 mov $2,4
 fac $2
-gcd $0,$2
+gcd $0,24
 div $1,$0

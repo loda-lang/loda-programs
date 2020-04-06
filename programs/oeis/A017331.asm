@@ -5,6 +5,6 @@ mul $0,10
 mov $1,$0
 add $1,5
 mov $2,3
-pow $1,$2
+pow $1,3
 sub $1,2
 add $1,2

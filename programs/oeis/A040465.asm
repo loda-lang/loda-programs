@@ -8,7 +8,7 @@ sub $4,1
 mov $2,$4
 add $1,2
 mov $3,4
-mod $2,$3
+mod $2,4
 sub $1,$2
 mod $1,5
 mul $1,11

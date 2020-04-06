@@ -8,7 +8,7 @@ mov $5,$3
 pow $2,$5
 add $1,8
 add $4,5
-add $2,$4
+add $2,11
 sub $1,9
 pow $1,5
 mov $3,$2

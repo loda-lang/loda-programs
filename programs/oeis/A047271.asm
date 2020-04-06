@@ -4,6 +4,6 @@
 mov $2,3
 mul $0,2
 mov $1,$0
-gcd $0,$2
-mod $0,$2
+gcd $0,3
+mod $0,3
 add $1,$0

@@ -8,7 +8,7 @@ pow $0,2
 mov $1,$0
 mov $2,2
 add $2,3
-mul $1,$2
+mul $1,5
 add $1,3
 mov $6,$5
 mov $3,12

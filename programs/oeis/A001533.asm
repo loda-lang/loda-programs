@@ -7,5 +7,5 @@ add $1,$0
 pow $1,2
 mov $2,5
 mul $2,2
-sub $1,$2
+sub $1,10
 add $1,1

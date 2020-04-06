@@ -8,13 +8,13 @@ mul $5,$2
 add $1,$5
 mul $1,4
 mov $3,3
-mul $2,$3
+mul $2,3
 add $1,$2
 mov $5,2
 add $1,$5
 mov $4,2
 pow $1,2
-pow $1,$4
+pow $1,2
 mul $1,2
 sub $1,32
 div $1,22

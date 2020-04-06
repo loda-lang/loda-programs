@@ -6,10 +6,10 @@ mul $0,0
 mov $3,$1
 mov $2,5
 mov $4,6
-add $1,$2
+add $1,5
 add $4,2
 mul $3,2
-div $3,$4
+div $3,8
 div $1,4
 add $0,$3
 mul $1,$0

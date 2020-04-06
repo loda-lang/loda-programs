@@ -7,7 +7,7 @@ mov $2,4
 add $1,6
 div $1,4
 gcd $1,$0
-pow $1,$2
+pow $1,4
 div $1,15
 mul $1,360
 add $1,24

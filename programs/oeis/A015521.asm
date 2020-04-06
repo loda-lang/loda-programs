@@ -5,6 +5,6 @@ gcd $1,4
 mov $2,52
 pow $1,$0
 div $2,7
-add $1,$2
+add $1,7
 div $1,5
 sub $1,1

@@ -3,7 +3,7 @@
 
 mov $2,1
 mul $0,2
-add $0,$2
+add $0,1
 mov $1,8
 lpb $0,1
   div $1,2

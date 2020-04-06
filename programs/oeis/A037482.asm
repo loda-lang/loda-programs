@@ -6,14 +6,14 @@ mov $3,5
 pow $3,$0
 mul $3,7
 mov $2,6
-div $3,$2
+div $3,6
 mul $3,2
 mul $2,2
 mov $1,196572
 add $3,7
 mod $2,7
 add $1,$3
-mul $1,$2
+mul $1,5
 sub $1,982945
 div $1,40
 add $1,1

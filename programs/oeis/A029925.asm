@@ -6,5 +6,5 @@ add $2,1
 add $0,3
 gcd $1,9
 mul $1,$0
-div $1,$2
+div $1,5
 add $1,27

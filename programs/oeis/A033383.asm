@@ -6,7 +6,7 @@ mov $4,1
 mov $3,$2
 mov $5,3
 mul $5,21
-add $3,$4
+add $3,1
 div $5,$3
 add $5,3
 mov $1,$5

@@ -6,12 +6,12 @@ add $0,1
 mul $0,2
 mov $4,$0
 mov $1,5
-div $4,$1
+div $4,5
 mul $4,6
 mov $1,1
 add $1,$4
 mov $3,4
-div $1,$3
+div $1,4
 mov $5,$6
 mov $2,$5
 add $1,$2

@@ -7,7 +7,7 @@ sub $2,1
 pow $2,2
 div $2,7
 mov $5,1
-add $2,$5
+add $2,1
 gcd $1,$2
 mul $1,2
 sub $1,1

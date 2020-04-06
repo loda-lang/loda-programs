@@ -7,5 +7,5 @@ mov $2,5
 add $2,6
 pow $4,2
 sub $4,$3
-div $4,$2
+div $4,11
 mov $1,$4

@@ -5,6 +5,6 @@ gcd $2,2
 gcd $3,$0
 mov $1,2
 pow $1,$3
-mod $0,$2
+mod $0,2
 add $1,$0
 add $1,1

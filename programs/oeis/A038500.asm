@@ -5,7 +5,7 @@ pow $1,0
 add $1,$0
 mov $3,6
 mov $2,729
-gcd $1,$2
+gcd $1,729
 add $3,$1
 mov $1,$3
 sub $1,6

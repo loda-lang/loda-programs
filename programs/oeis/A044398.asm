@@ -6,14 +6,14 @@ add $0,4
 mod $0,10
 mov $5,3
 mov $7,10
-mul $0,$7
+mul $0,10
 mov $3,6
 mov $1,9
 sub $3,$0
 add $5,5
 sub $1,$3
 add $1,10
-add $1,$5
+add $1,8
 add $1,39
 mov $4,$6
 mov $2,$4

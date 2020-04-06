@@ -8,4 +8,4 @@ mov $1,$2
 add $1,2
 mov $3,4
 add $1,5
-pow $1,$3
+pow $1,4

@@ -8,10 +8,10 @@ add $0,3
 add $1,$0
 add $1,1
 add $2,2
-sub $1,$2
+sub $1,5
 sub $0,$0
 mov $2,3
-add $1,$2
+add $1,3
 mov $2,0
 add $1,2
 add $0,$1

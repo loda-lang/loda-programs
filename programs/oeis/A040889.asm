@@ -10,7 +10,7 @@ add $2,8
 add $0,3
 pow $4,7
 div $3,3
-gcd $0,$3
+gcd $0,2
 sub $4,6
 gcd $4,4
 div $2,$4

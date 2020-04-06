@@ -3,7 +3,7 @@
 
 mov $4,$0
 mov $1,1
-add $0,$1
+add $0,1
 gcd $0,7
 mov $1,7
 sub $1,$0

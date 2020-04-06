@@ -4,8 +4,8 @@
 mov $3,3
 pow $3,2
 gcd $2,4
-mul $0,$3
+mul $0,9
 add $0,3
 mov $1,$0
-add $1,$2
+add $1,4
 pow $1,3

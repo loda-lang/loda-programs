@@ -8,7 +8,7 @@ sub $2,3
 pow $2,5
 sub $2,$0
 add $2,7
-div $2,$3
+div $2,3
 mov $1,1
 mul $1,$2
 sub $1,13

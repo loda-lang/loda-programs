@@ -4,7 +4,7 @@
 mov $6,$0
 add $0,3
 mov $4,9
-mod $0,$4
+mod $0,9
 lpb $0,1
   add $1,3
   mul $0,$3

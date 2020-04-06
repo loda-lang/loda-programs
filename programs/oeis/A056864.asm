@@ -6,5 +6,5 @@ mov $3,$0
 gcd $1,$3
 add $1,5
 mov $2,5
-div $1,$2
+div $1,5
 div $1,2
