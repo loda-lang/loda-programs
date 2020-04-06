@@ -192,6 +192,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305068](http://oeis.org/A305068) ([L03 program](A305068.asm)): a(n) = 54*n - 18 (n>=1).
 * [A305069](http://oeis.org/A305069) ([L03 program](A305069.asm)): a(n) = 117*n - 72 (n>=1).
 * [A305070](http://oeis.org/A305070) ([L14 program](A305070.asm)): a(n) = 378*n^2 - 54*n (n>=1).
+* [A305071](http://oeis.org/A305071) ([L27 program](A305071.asm)): a(n) = 972*n^2 - 270*n (n>=1).
 * [A305072](http://oeis.org/A305072) ([L11 program](A305072.asm)): a(n) = 144*n^2 - 24*n (n>=1).
 * [A305073](http://oeis.org/A305073) ([L15 program](A305073.asm)): a(n) = 288*n^2 - 96*n (n>=1).
 * [A305074](http://oeis.org/A305074) ([L03 program](A305074.asm)): a(n) = 20*n - 8 (n>=1).
@@ -268,7 +269,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308600](http://oeis.org/A308600) ([L15 program](A308600.asm)): Number of (not necessarily maximum) cliques in the n X n antelope graph.
 * [A308602](http://oeis.org/A308602) ([L04 program](A308602.asm)): Number of (not necessarily maximum) cliques in the n-cycle graph.
 * [A308603](http://oeis.org/A308603) ([L04 program](A308603.asm)): Number of (not necessarily maximal) cliques in the n-dipyramidal graph.
-* [A308607](http://oeis.org/A308607) ([L05 program](A308607.asm)): Number of (not necessarily maximum) cliques in the wheel graph on n vertices.
+* [A308607](http://oeis.org/A308607) ([L04 program](A308607.asm)): Number of (not necessarily maximum) cliques in the wheel graph on n vertices.
 * [A308659](http://oeis.org/A308659) ([L20 program](A308659.asm)): a(1)=1; for n > 1, a(n) is the length of the longest palindromic suffix of (a(1), ..., a(n-1)).
 * [A308720](http://oeis.org/A308720) ([L23 program](A308720.asm)): The maximum value in the continued fraction of sqrt(n), or 0 if there is no fractional part.
 * [A308807](http://oeis.org/A308807) ([L07 program](A308807.asm)): a(n) = 4*5^(n-1) + n.
