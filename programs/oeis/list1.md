@@ -102,7 +102,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100659](http://oeis.org/A100659) ([L16 program](A100659.asm)): Floor of measure (in degrees) of the internal angles of a regular polygon with n sides.
 * [A100702](http://oeis.org/A100702) ([L05 program](A100702.asm)): Number of layers of dough separated by butter in successive foldings of croissant dough.
 * [A100705](http://oeis.org/A100705) ([L09 program](A100705.asm)): a(n) = n^3 + (n+1)^2.
-* [A100710](http://oeis.org/A100710) ([L13 program](A100710.asm)): Characterized by a(n) XOR (a(n) + 1) = a(n) - n.
+* [A100710](http://oeis.org/A100710) ([L12 program](A100710.asm)): Characterized by a(n) XOR (a(n) + 1) = a(n) - n.
 * [A100764](http://oeis.org/A100764) ([L08 program](A100764.asm)): a(1) = 1, a(2) = 2, a(3) = 3, a(n) = least number not the sum of three or fewer previous terms.
 * [A100774](http://oeis.org/A100774) ([L05 program](A100774.asm)): a(n) = 2*(3^n - 1).
 * [A100775](http://oeis.org/A100775) ([L03 program](A100775.asm)): a(n) = 97*n + 101.
@@ -1748,7 +1748,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A138300](http://oeis.org/A138300) ([L09 program](A138300.asm)): Differences of each column for atomic numbers of Mendeleyev-Seaborg 7*32 elements periodic table,first extension,A138096 table.86 terms.Horizontal lecture.
 * [A138393](http://oeis.org/A138393) ([L15 program](A138393.asm)): Numbers of form 8k+1 which are not squares.
 * [A138395](http://oeis.org/A138395) ([L10 program](A138395.asm)): a(n) = 6*a(n-1) - 3*a(n-2), a(1) = 1, a(2) = 6.
-* [A138531](http://oeis.org/A138531) ([L05 program](A138531.asm)): Decimal expansion of 109739369/111111111.
+* [A138531](http://oeis.org/A138531) ([L03 program](A138531.asm)): Decimal expansion of 109739369/111111111.
 * [A138591](http://oeis.org/A138591) ([L07 program](A138591.asm)): Sums of two or more consecutive nonnegative integers.
 * [A138829](http://oeis.org/A138829) ([L11 program](A138829.asm)): Bisection of imperfect numbers A132999.
 * [A138830](http://oeis.org/A138830) ([L14 program](A138830.asm)): Bisection of imperfect numbers A132999.
@@ -2678,7 +2678,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158330](http://oeis.org/A158330) ([L03 program](A158330.asm)): 484n - 1.
 * [A158333](http://oeis.org/A158333) ([L09 program](A158333.asm)): Position of number of digits increment in the sequence of powers of 3.
 * [A158365](http://oeis.org/A158365) ([L03 program](A158365.asm)): 529n - 1.
-* [A158367](http://oeis.org/A158367) ([L42 program](A158367.asm)): 529n^2 + 2n.
+* [A158367](http://oeis.org/A158367) ([L12 program](A158367.asm)): 529n^2 + 2n.
 * [A158368](http://oeis.org/A158368) ([L03 program](A158368.asm)): 529n + 1.
 * [A158369](http://oeis.org/A158369) ([L17 program](A158369.asm)): 576n^2 + 2n.
 * [A158370](http://oeis.org/A158370) ([L03 program](A158370.asm)): 576n + 1.
@@ -3757,7 +3757,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171905](http://oeis.org/A171905) ([L05 program](A171905.asm)): a(1) = 1 and a(2) = 2, a(n) = |(sum of previous terms) - n|.
 * [A171950](http://oeis.org/A171950) ([L08 program](A171950.asm)): a(1)=1. a(n) = the absolute difference between (the sum of previous terms) and A000217(n-2), n>1.
 * [A171970](http://oeis.org/A171970) ([L19 program](A171970.asm)): Integer part of the height of an equilateral triangle with side length n.
-* [A171977](http://oeis.org/A171977) ([L09 program](A171977.asm)): a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
+* [A171977](http://oeis.org/A171977) ([L08 program](A171977.asm)): a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
 * [A172011](http://oeis.org/A172011) ([L10 program](A172011.asm)): 12*A002605(n).
 * [A172043](http://oeis.org/A172043) ([L07 program](A172043.asm)): 5n^2 - n + 1.
 * [A172044](http://oeis.org/A172044) ([L07 program](A172044.asm)): 5*n^2+11*n+1.
@@ -4308,6 +4308,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184218](http://oeis.org/A184218) ([L08 program](A184218.asm)): a(n) = largest k such that A000217(n+1) = A000217(n) + (A000217(n) mod k), or 0 if no such k exists.
 * [A184220](http://oeis.org/A184220) ([L07 program](A184220.asm)): a(n) = largest k such that A000290(n+1) = A000290(n) + (A000290(n) mod k), or 0 if no such k exists.
 * [A184336](http://oeis.org/A184336) ([L22 program](A184336.asm)): a(n) = n + floor((3*n)^(1/3) - 2/3).
+* [A184418](http://oeis.org/A184418) ([L15 program](A184418.asm)): Convolution square of A040001.
 * [A184427](http://oeis.org/A184427) ([L14 program](A184427.asm)): Lower s-Wythoff sequence of A000290 (the squares).  Complement of A184428.
 * [A184480](http://oeis.org/A184480) ([L13 program](A184480.asm)): Lower s-Wythoff sequence, where s(n)=3n.  Complement of A001956.
 * [A184483](http://oeis.org/A184483) ([L21 program](A184483.asm)): Upper s-Wythoff sequence, where s(n)=3n-1.  Complement of A184482.
@@ -4758,7 +4759,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193768](http://oeis.org/A193768) ([L12 program](A193768.asm)): The domination number of the 4 by n board.
 * [A193832](http://oeis.org/A193832) ([L14 program](A193832.asm)): Irregular triangle read by rows in which row n lists 2n-1 copies of 2n-1 and n copies of 2n, for n >= 1.
 * [A193866](http://oeis.org/A193866) ([L20 program](A193866.asm)): Even pentagonal numbers divided by 2.
-* [A193867](http://oeis.org/A193867) ([L01 program](A193867.asm)): Odd central polygonal numbers.
 * [A193868](http://oeis.org/A193868) ([L14 program](A193868.asm)): Even central polygonal numbers.
 * [A193872](http://oeis.org/A193872) ([L07 program](A193872.asm)): Even dodecagonal numbers: 4*n*(5*n - 2).
 * [A193910](http://oeis.org/A193910) ([L04 program](A193910.asm)): Leap centuries in the revised Julian calendar.
