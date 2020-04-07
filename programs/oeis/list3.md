@@ -58,6 +58,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301722](http://oeis.org/A301722) ([L15 program](A301722.asm)): Coordination sequence for node of type V2 in "krb" 2-D tiling (or net).
 * [A301723](http://oeis.org/A301723) ([L15 program](A301723.asm)): Partial sums of A301722.
 * [A301729](http://oeis.org/A301729) ([L18 program](A301729.asm)): a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
+* [A301755](http://oeis.org/A301755) ([L11 program](A301755.asm)): Decimal expansion of 3/8.
 * [A301787](http://oeis.org/A301787) ([L17 program](A301787.asm)): Number of nX5 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301791](http://oeis.org/A301791) ([L21 program](A301791.asm)): Number of 2Xn 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301819](http://oeis.org/A301819) ([L10 program](A301819.asm)): Number of nX4 0..1 arrays with every element equal to 1 or 2 horizontally or antidiagonally adjacent elements, with upper left element zero.
@@ -727,6 +728,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332044](http://oeis.org/A332044) ([L08 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332495](http://oeis.org/A332495) ([L14 program](A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
 * [A332519](http://oeis.org/A332519) ([L04 program](A332519.asm)): a(n) = 4*(n^2+n-2).
-* [A332756](http://oeis.org/A332756) ([L10 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
+* [A332756](http://oeis.org/A332756) ([L09 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
 * [A333525](http://oeis.org/A333525) ([L05 program](A333525.asm)): Degree of polytope representing the number n.
 * [A333574](http://oeis.org/A333574) ([L15 program](A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.
