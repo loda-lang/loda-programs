@@ -5,8 +5,7 @@ mov $5,$0
 add $0,4
 mov $1,4
 mul $1,2
-add $0,8
-add $0,3
+add $0,11
 lpb $0,1
   add $1,$0
   sub $0,1

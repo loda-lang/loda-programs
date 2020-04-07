@@ -6,8 +6,7 @@ mov $4,$0
 mov $3,2
 mul $4,2
 add $0,$4
-add $0,5
-sub $0,2
+add $0,3
 mul $0,2
 lpb $0,1
   mov $1,$3
