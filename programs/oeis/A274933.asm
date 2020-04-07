@@ -3,8 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-mov $4,1
-add $1,$4
+add $1,1
 lpb $2,1
   add $2,5
   add $3,6

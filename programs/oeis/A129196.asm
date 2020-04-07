@@ -3,7 +3,6 @@
 
 add $0,1
 pow $0,3
-mov $2,6
 mov $1,$0
-gcd $0,$2
+gcd $0,6
 div $1,$0

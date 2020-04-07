@@ -3,12 +3,11 @@
 
 mov $2,5
 mul $0,64
-mov $3,720
 mul $2,$0
-mov $4,$0
+mov $3,$0
 mov $1,726
-mul $1,$4
-gcd $2,$3
+mul $1,$3
+gcd $2,720
 div $1,$2
 div $1,576
 mul $1,9

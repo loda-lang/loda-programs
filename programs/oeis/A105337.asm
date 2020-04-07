@@ -6,6 +6,5 @@ add $1,5
 pow $0,2
 add $1,$0
 div $1,2
-mov $2,256
-mod $1,$2
+mod $1,256
 sub $1,2

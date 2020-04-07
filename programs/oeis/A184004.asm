@@ -5,7 +5,7 @@ mov $5,$0
 mul $0,2
 mov $2,3
 mov $3,1
-add $0,$3
+add $0,1
 mul $0,2
 lpb $0,1
   add $3,3

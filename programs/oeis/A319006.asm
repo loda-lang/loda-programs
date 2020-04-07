@@ -4,8 +4,7 @@
 add $0,1
 gcd $3,$0
 gcd $1,$0
-gcd $4,2
-pow $1,$4
+pow $1,2
 lpb $0,1
   add $1,2
   mul $1,$3

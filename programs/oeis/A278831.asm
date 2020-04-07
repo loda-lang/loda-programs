@@ -7,10 +7,8 @@ mov $2,$0
 mul $0,2
 sub $0,3
 add $1,6
-mov $3,5
 sub $1,$2
-add $3,5
-add $1,$3
+add $1,10
 lpb $0,1
   sub $0,1
   mov $1,3

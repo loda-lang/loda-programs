@@ -5,14 +5,8 @@ mov $3,$0
 add $3,1
 gcd $2,$3
 pow $2,2
-mov $1,3
-fac $1
-add $2,$1
-lpb $0,1
-  sub $0,1
-lpe
-mul $1,$0
-fac $1
+add $2,6
+mov $1,1
 add $1,$2
 mul $1,$2
 mul $2,2

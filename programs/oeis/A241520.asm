@@ -3,9 +3,7 @@
 
 mov $2,$0
 sub $0,1
-mov $4,4
-add $0,6
-add $0,$4
+add $0,10
 mov $1,6
 mov $5,23
 mov $3,6

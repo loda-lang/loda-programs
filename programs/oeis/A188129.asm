@@ -4,8 +4,7 @@
 gcd $1,2
 mov $2,$0
 pow $1,$2
-gcd $3,3
-add $1,$3
+add $1,3
 pow $1,2
 sub $1,16
 add $1,8

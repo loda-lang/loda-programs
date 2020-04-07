@@ -3,9 +3,8 @@
 
 mov $4,$0
 pow $0,2
-mul $0,4
-gcd $1,$0
-mul $1,7
+mov $1,$0
+mul $1,28
 mov $3,$4
 mul $3,$4
 mov $2,$3

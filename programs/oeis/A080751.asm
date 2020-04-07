@@ -3,19 +3,12 @@
 
 mov $3,$0
 mov $6,$0
-mov $2,1
-add $2,6
 sub $6,3
-mul $2,2
-add $2,2
 mov $5,6
 mov $1,$6
-add $2,5
 sub $1,1
-sub $2,1
 add $5,1
-sub $6,4
-sub $6,$2
+sub $6,24
 mov $0,20
 lpb $0,1
   sub $0,1

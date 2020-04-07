@@ -3,18 +3,17 @@
 
 mov $6,$0
 mov $5,$0
-mov $4,7
-mul $5,$4
+mul $5,7
 div $5,3
 mov $3,$5
 pow $3,2
 mov $1,$3
-div $1,$4
+div $1,7
 add $1,1
-mov $7,$6
-mov $2,$7
+mov $4,$6
+mov $2,$4
 mul $2,2
 add $1,$2
-mul $7,$6
-mov $2,$7
+mul $4,$6
+mov $2,$4
 add $1,$2

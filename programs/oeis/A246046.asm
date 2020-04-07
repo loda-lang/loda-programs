@@ -7,10 +7,9 @@ mov $6,$3
 mul $6,7
 div $6,3
 mov $1,$6
-mov $2,1
-add $1,$2
+add $1,1
 div $1,5
 add $1,2
-mov $7,$4
-mov $5,$7
+mov $2,$4
+mov $5,$2
 add $1,$5

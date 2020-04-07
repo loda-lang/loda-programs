@@ -3,7 +3,7 @@
 
 mov $1,5
 div $1,2
-add $0,$1
+add $0,2
 pow $1,$0
 sub $1,4
 div $1,4

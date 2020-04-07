@@ -4,11 +4,8 @@
 mov $4,$0
 mov $1,$0
 sub $1,1
-mul $1,2
-mov $5,6
-mul $1,5
-mul $5,3
-div $1,$5
+mul $1,10
+div $1,18
 add $1,1
 mov $3,$4
 mov $2,$3

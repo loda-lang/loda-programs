@@ -12,7 +12,7 @@ add $1,$0
 mul $1,2
 add $1,6
 mov $5,5
-div $3,$5
+div $3,5
 sub $1,$3
 lpb $0,1
   add $1,$5

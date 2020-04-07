@@ -3,7 +3,6 @@
 
 add $0,1
 mov $1,125
-mov $2,4
 add $1,6
 div $1,4
 gcd $1,$0

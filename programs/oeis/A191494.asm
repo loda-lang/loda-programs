@@ -4,12 +4,7 @@
 add $0,1
 pow $0,7
 mov $1,$0
-mov $2,3
-mul $1,$2
-pow $3,0
-sub $1,$3
+mul $1,3
+sub $1,1
 div $1,6
-add $3,1
-add $1,$3
-sub $1,2
 add $1,1

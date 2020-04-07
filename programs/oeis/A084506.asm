@@ -7,7 +7,7 @@ mul $0,2
 mul $2,2
 mul $0,2
 add $2,1
-sub $0,$2
+sub $0,3
 mul $0,2
 lpb $0,1
   mul $2,4

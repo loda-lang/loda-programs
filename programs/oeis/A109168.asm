@@ -4,8 +4,7 @@
 mov $2,$0
 mov $1,$2
 add $0,1
-mov $3,4096
-gcd $0,$3
+gcd $0,4096
 add $1,$0
 div $1,2
 add $1,1

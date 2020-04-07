@@ -3,7 +3,6 @@
 
 mov $4,$0
 add $0,5
-mov $5,9
 mod $0,9
 lpb $0,1
   mul $0,$1

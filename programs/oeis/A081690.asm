@@ -13,7 +13,7 @@ mov $4,1
 mul $4,2
 mov $2,0
 add $4,4
-sub $0,$4
+sub $0,6
 add $0,4
 sub $4,4
 sub $0,4

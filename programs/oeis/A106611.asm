@@ -3,9 +3,8 @@
 
 mov $1,$0
 mov $2,$0
-mov $3,5
 gcd $2,2
-mov $4,$1
-gcd $4,$3
+mov $3,$1
+gcd $3,5
 div $1,$2
-div $1,$4
+div $1,$3

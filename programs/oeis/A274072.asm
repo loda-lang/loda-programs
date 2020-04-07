@@ -3,8 +3,6 @@
 
 mov $1,5
 pow $1,$0
-mov $2,3
 add $1,4
-div $1,$2
-div $1,2
+div $1,6
 mul $1,6

@@ -3,11 +3,10 @@
 
 mov $4,$0
 mov $5,$0
-mov $6,1
 add $5,7
 mul $5,6
 mov $1,$5
-sub $1,$6
+sub $1,1
 div $1,35
 mov $3,$4
 mov $2,$3

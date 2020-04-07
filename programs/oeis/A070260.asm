@@ -6,8 +6,7 @@ pow $0,2
 add $4,2
 pow $4,2
 mov $3,$0
-mov $1,4
-gcd $3,$1
+gcd $3,4
 mov $2,$4
 sub $2,1
 mul $2,$3

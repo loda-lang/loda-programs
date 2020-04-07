@@ -4,6 +4,5 @@
 pow $1,$0
 gcd $1,$0
 mod $1,3
-mov $2,6
 gcd $1,6
 sub $1,1

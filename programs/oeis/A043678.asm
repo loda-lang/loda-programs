@@ -3,18 +3,17 @@
 
 mov $5,$0
 mov $1,2
-mov $2,8
 sub $0,8
-mov $6,3
+mov $2,3
 sub $0,6
 add $0,3
 mov $4,6
 lpb $0,1
-  sub $6,2
+  sub $2,2
   mov $3,5
   sub $4,$0
-  add $6,5
-  add $3,$6
+  add $2,5
+  add $3,$2
   mov $1,1
   mov $0,4
   sub $1,$4

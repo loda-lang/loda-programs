@@ -4,11 +4,10 @@
 mov $5,$0
 gcd $3,$0
 mul $3,6
-mov $2,256
 gcd $3,256
 mod $3,3
 mov $1,$3
-mov $6,$5
-mov $4,$6
+mov $2,$5
+mov $4,$2
 mul $4,2
 add $1,$4

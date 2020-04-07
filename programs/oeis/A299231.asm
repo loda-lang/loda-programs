@@ -3,20 +3,19 @@
 
 mov $7,$0
 mov $5,$0
-mov $4,3
 mov $0,2
-add $0,$4
+add $0,3
 div $0,2
 mov $3,$5
 mov $1,8
-mov $8,6
-sub $8,$5
+mov $4,6
+sub $4,$5
 lpb $0,1
   pow $1,2
   sub $0,1
-  add $3,$8
-  mod $8,$3
-  add $1,$8
+  add $3,$4
+  mod $4,$3
+  add $1,$4
   add $1,7
 lpe
 gcd $0,5

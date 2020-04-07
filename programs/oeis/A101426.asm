@@ -6,8 +6,7 @@ mov $3,$0
 pow $0,2
 div $0,3
 mov $1,$3
-mov $2,3
-add $0,$2
+add $0,3
 mov $4,$0
 mov $3,$4
 mov $4,2
@@ -17,10 +16,10 @@ sub $3,$1
 mov $1,$3
 add $1,3
 mov $6,$5
-mov $7,$6
-mul $7,8
-add $1,$7
+mov $2,$6
+mul $2,8
+add $1,$2
 mul $6,$5
-mov $7,$6
-mul $7,2
-add $1,$7
+mov $2,$6
+mul $2,2
+add $1,$2

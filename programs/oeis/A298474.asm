@@ -4,12 +4,10 @@
 mov $6,$0
 mov $3,$0
 mov $5,$0
-mov $4,2
-add $5,$4
+add $5,2
 mov $2,$3
 add $2,$0
 add $3,5
-mov $4,0
 mov $1,$3
 mov $0,2
 sub $1,2

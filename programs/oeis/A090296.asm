@@ -8,9 +8,7 @@ mul $3,$4
 mov $5,$3
 mov $1,$5
 mov $2,$3
-mov $6,8
-add $6,5
-add $2,$6
+add $2,13
 mul $1,$2
 div $1,6
 mul $1,4

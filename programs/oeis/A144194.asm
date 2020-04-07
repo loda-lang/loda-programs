@@ -4,8 +4,8 @@
 mov $1,2
 add $1,5
 pow $0,8
-div $0,$1
-add $0,$1
+div $0,7
+add $0,7
 mod $0,5
 lpb $0,1
   div $1,$1

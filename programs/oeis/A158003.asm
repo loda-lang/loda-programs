@@ -3,12 +3,10 @@
 
 mov $6,$0
 mov $5,$0
-mov $2,2
 add $5,$0
 add $0,$5
-add $0,$2
-mov $2,0
-add $2,1
+add $0,2
+mov $2,1
 mul $0,2
 mov $3,4
 add $5,$0

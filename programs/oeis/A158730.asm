@@ -9,10 +9,9 @@ mov $3,3
 add $3,$1
 add $3,4
 sub $3,$5
-mov $2,4
-add $3,$2
+add $3,4
 mov $6,4
-add $3,$2
+add $3,4
 lpb $0,1
   add $6,$1
   add $1,$3

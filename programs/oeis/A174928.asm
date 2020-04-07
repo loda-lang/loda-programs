@@ -4,8 +4,7 @@
 mov $3,$0
 mov $5,$0
 mov $1,$5
-gcd $2,2
-mod $1,$2
+mod $1,2
 add $0,$1
 div $0,2
 mul $0,7
@@ -13,6 +12,6 @@ mov $1,3
 mul $1,$0
 mul $1,3
 add $1,1
-mov $6,$3
-mov $4,$6
+mov $2,$3
+mov $4,$2
 add $1,$4

@@ -4,8 +4,7 @@
 mov $1,1
 mov $4,3
 add $1,$0
-mov $3,3
-add $1,$3
+add $1,3
 lpb $0,1
   mov $3,3
   add $4,$3

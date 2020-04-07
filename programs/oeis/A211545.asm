@@ -8,9 +8,9 @@ sub $1,$1
 add $1,$5
 mov $2,3
 add $0,5
-sub $0,$2
+sub $0,3
 add $5,$0
-add $5,$2
+add $5,3
 mov $4,$1
 add $2,$4
 mov $0,$4
