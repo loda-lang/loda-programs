@@ -5,9 +5,8 @@ mov $3,$0
 gcd $3,2
 mul $3,2
 sub $3,1
-mov $1,1
-mul $1,4
-pow $2,0
+mov $1,4
+mov $2,1
 lpb $0,1
   gcd $0,$2
   div $1,2

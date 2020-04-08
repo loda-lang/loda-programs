@@ -4,8 +4,7 @@
 gcd $3,$0
 mov $2,$3
 mov $6,$2
-mov $5,5
-pow $5,3
+mov $5,125
 sub $5,$6
 mov $1,$5
 div $5,2

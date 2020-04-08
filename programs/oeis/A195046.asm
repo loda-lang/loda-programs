@@ -4,8 +4,7 @@
 mov $5,$0
 pow $0,2
 div $0,4
-mov $3,1
-mul $3,12
+mov $3,12
 mul $3,$0
 mul $0,2
 mov $1,1

@@ -5,8 +5,7 @@ mov $5,$0
 mov $4,$0
 pow $4,9
 mul $4,7
-mov $1,7
-mul $1,4
+mov $1,28
 div $4,2
 gcd $4,8
 mod $1,$4

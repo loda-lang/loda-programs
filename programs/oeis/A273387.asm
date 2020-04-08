@@ -3,10 +3,9 @@
 
 mov $6,$0
 pow $0,2
-gcd $3,5
 mov $2,5
 sub $0,3
-gcd $3,2
+mov $3,1
 lpb $0,1
   sub $2,$0
   mov $3,$2

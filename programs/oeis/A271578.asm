@@ -3,9 +3,8 @@
 
 mov $2,$0
 mov $3,$0
-mov $4,4
 mov $1,$0
-sub $4,1
+mov $4,3
 lpb $0,1
   mov $0,$3
   sub $0,1

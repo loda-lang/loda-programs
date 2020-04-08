@@ -4,7 +4,7 @@
 mov $2,$0
 gcd $2,3
 sub $2,1
-gcd $1,2
+mov $1,2
 pow $3,$2
 mul $0,$3
 add $1,$0

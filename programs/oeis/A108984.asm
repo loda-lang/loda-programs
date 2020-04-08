@@ -3,8 +3,7 @@
 
 mul $0,2
 div $0,2
-mov $1,1
-mul $1,5
+mov $1,5
 lpb $0,1
   sub $0,1
   mul $1,7

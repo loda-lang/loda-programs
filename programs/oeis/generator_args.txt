@@ -25043,3 +25043,6 @@ A259059: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A168125: -p 90 -n 9 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A157912: -p 90 -n 9 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A108100: -p 90 -n 9 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A067239: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A006788: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A321773: -p 70 -n 7 -i 6 -o ^l -a cd -e programs/templates/T01.asm

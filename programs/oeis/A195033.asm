@@ -8,7 +8,7 @@ gcd $1,$5
 mov $4,4
 add $1,3
 add $4,$1
-gcd $3,5
+mov $3,5
 add $5,3
 add $3,$5
 mov $2,$3

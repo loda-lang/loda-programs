@@ -6,9 +6,7 @@ mul $0,2
 mov $3,$0
 add $3,2
 mov $5,$3
-mov $1,7
-add $1,1
-pow $1,5
+mov $1,32768
 gcd $1,$5
 mov $6,$2
 mov $4,$6

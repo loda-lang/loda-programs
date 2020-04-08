@@ -3,10 +3,9 @@
 
 mul $0,2
 mov $2,5
-mov $1,5
 mul $0,2
 add $0,3
-add $1,1
+mov $1,6
 lpb $0,1
   mov $4,6
   add $4,$2

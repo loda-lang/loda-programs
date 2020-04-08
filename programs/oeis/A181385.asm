@@ -10,7 +10,7 @@ pow $4,2
 div $0,2
 sub $4,$0
 mov $1,$4
-gcd $6,4
+mov $6,4
 lpb $0,1
   sub $0,1
   div $1,$6

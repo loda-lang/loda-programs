@@ -8,5 +8,5 @@ mul $2,2
 div $2,3
 add $2,4
 mod $2,6
-pow $1,0
+mov $1,1
 sub $1,$2

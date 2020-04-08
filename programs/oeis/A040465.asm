@@ -3,10 +3,9 @@
 
 mov $3,$0
 add $3,$0
-mov $1,4
 sub $3,1
 mov $2,$3
-add $1,2
+mov $1,6
 mod $2,4
 sub $1,$2
 mod $1,5

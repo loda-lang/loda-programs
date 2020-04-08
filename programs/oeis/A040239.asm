@@ -7,10 +7,9 @@ gcd $0,4
 add $0,5
 mov $2,$3
 div $0,$3
-gcd $1,5
 mod $2,2
 div $0,$3
-mul $1,6
+mov $1,30
 lpb $0,1
   sub $0,1
   div $1,2

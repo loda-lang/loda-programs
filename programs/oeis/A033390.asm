@@ -3,7 +3,5 @@
 
 mov $2,$0
 add $2,1
-mov $1,5
-add $1,5
-mul $1,7
+mov $1,70
 div $1,$2

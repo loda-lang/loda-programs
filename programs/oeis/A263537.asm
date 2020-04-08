@@ -3,13 +3,12 @@
 
 mul $0,2
 sub $0,1
-mov $4,2
 mov $2,$0
 mov $3,$0
 add $0,$3
 add $0,2
 sub $0,$3
-add $4,3
+mov $4,5
 mul $3,2
 lpb $0,1
   add $2,$3

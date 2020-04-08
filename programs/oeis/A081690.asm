@@ -9,15 +9,9 @@ sub $0,1
 add $2,$3
 sub $2,3
 add $0,$2
-mov $4,1
-mul $4,2
 mov $2,0
-add $4,4
 sub $0,6
-add $0,4
-sub $4,4
-sub $0,4
-add $4,1
+mov $4,3
 lpb $0,1
   add $2,1
   mul $4,2

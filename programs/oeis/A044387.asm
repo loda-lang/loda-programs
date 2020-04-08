@@ -4,7 +4,7 @@
 mov $6,$0
 add $0,5
 mov $5,$0
-gcd $1,6
+mov $1,6
 gcd $0,4
 lpb $0,1
   fac $4

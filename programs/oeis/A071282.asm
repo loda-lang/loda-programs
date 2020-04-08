@@ -3,9 +3,8 @@
 
 add $0,1
 gcd $0,6
-mov $1,1
 mod $0,4
-mul $1,6
+mov $1,6
 sub $1,$0
 mul $1,2
 mod $1,3

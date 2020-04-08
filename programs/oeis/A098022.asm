@@ -8,11 +8,8 @@ mov $0,1
 mov $4,$3
 add $0,$4
 mul $0,2
-mov $1,6
-add $0,3
-add $1,4
-sub $0,1
-sub $1,6
+add $0,2
+mov $1,4
 lpb $0,1
   sub $0,1
   sub $2,2

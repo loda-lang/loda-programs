@@ -8,8 +8,7 @@ sub $1,2
 add $1,$0
 add $0,$1
 sub $0,3
-mov $3,1
-add $3,5
+mov $3,6
 lpb $0,1
   sub $3,4
   add $3,4

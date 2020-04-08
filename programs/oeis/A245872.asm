@@ -4,7 +4,7 @@
 mov $5,$0
 add $0,1
 mov $2,$0
-gcd $1,2
+mov $1,2
 lpb $2,1
   add $1,$2
   mul $1,2

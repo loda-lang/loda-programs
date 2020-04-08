@@ -3,10 +3,8 @@
 
 add $0,4
 mov $2,$0
-mov $1,16
 div $2,2
-pow $1,2
 mul $2,4
-mul $1,2
+mov $1,512
 sub $1,$2
 add $1,4

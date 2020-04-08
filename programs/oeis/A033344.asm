@@ -3,6 +3,5 @@
 
 mov $2,$0
 add $2,1
-mov $1,4
-fac $1
+mov $1,24
 div $1,$2

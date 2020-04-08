@@ -4,8 +4,7 @@
 mov $3,$0
 mov $1,$0
 add $1,4
-mov $2,2
-add $2,5
+mov $2,7
 lpb $2,1
   sub $1,5
   sub $2,1

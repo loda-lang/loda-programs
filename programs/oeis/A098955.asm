@@ -5,9 +5,8 @@ mov $12,$0
 mov $9,$0
 mov $10,7
 mov $5,$9
-mov $1,10
-div $1,7
-gcd $3,7
+mov $1,1
+mov $3,7
 lpb $8,3
   mod $10,$3
   lpb $4,5

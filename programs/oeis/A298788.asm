@@ -3,7 +3,7 @@
 
 mov $5,$0
 pow $1,$0
-gcd $2,3
+mov $2,3
 add $1,$0
 gcd $0,3
 lpb $0,1

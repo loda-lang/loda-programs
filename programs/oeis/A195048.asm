@@ -7,8 +7,7 @@ mov $5,$2
 mul $5,$2
 div $5,4
 mov $3,$5
-mov $1,5
-mul $1,3
+mov $1,15
 mul $1,$3
 mov $7,$6
 mul $7,$6

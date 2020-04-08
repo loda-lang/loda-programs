@@ -4,8 +4,7 @@
 mov $3,$0
 mov $4,$3
 add $0,5
-mov $2,6
-add $2,8
+mov $2,14
 add $0,3
 pow $4,7
 gcd $0,2

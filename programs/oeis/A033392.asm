@@ -6,6 +6,5 @@ mov $3,10
 mov $2,10
 mul $3,$4
 add $2,$3
-gcd $1,6
-fac $1
+mov $1,720
 div $1,$2

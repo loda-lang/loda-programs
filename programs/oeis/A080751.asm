@@ -4,10 +4,9 @@
 mov $3,$0
 mov $6,$0
 sub $6,3
-mov $5,6
 mov $1,$6
 sub $1,1
-add $5,1
+mov $5,7
 sub $6,24
 mov $0,20
 lpb $0,1

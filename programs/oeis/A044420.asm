@@ -3,9 +3,8 @@
 
 mov $6,$0
 mov $3,$0
-mov $1,5
 mod $0,5
-add $1,3
+mov $1,8
 lpb $0,1
   mov $2,2
   mul $0,2
