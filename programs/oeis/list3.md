@@ -587,6 +587,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321573](http://oeis.org/A321573) ([L18 program](A321573.asm)): Row sums of A321624.
 * [A321643](http://oeis.org/A321643) ([L18 program](A321643.asm)): a(n) = 5*2^n - (-1)^n.
 * [A321672](http://oeis.org/A321672) ([L12 program](A321672.asm)): Number of chiral pairs of rows of length 5 using up to n colors.
+* [A321773](http://oeis.org/A321773) ([L20 program](A321773.asm)): Number of compositions of n into parts with distinct multiplicities and with exactly three parts.
 * [A321883](http://oeis.org/A321883) ([L06 program](A321883.asm)): Nonnegative integers n for which n! + 1 is not a square.
 * [A322008](http://oeis.org/A322008) ([L12 program](A322008.asm)): 1/(1 - Integral_{x=0..1} x^(x^n) dx), rounded to the nearest integer.
 * [A322042](http://oeis.org/A322042) ([L03 program](A322042.asm)): Maximum edge-distance of a point in the quotient graph E/nE from the origin (see A322041 for further information).
@@ -694,7 +695,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329826](http://oeis.org/A329826) ([L15 program](A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
 * [A329828](http://oeis.org/A329828) ([L12 program](A329828.asm)): Beatty sequence for (7+sqrt(37))/6.
 * [A329832](http://oeis.org/A329832) ([L10 program](A329832.asm)): Beatty sequence for (9+sqrt(65))/8.
-* [A329834](http://oeis.org/A329834) ([L15 program](A329834.asm)): Beatty sequence for (11+sqrt(73))/8.
+* [A329834](http://oeis.org/A329834) ([L12 program](A329834.asm)): Beatty sequence for (11+sqrt(73))/8.
 * [A329835](http://oeis.org/A329835) ([L05 program](A329835.asm)): Beatty sequence for (9+sqrt(101))/10.
 * [A329836](http://oeis.org/A329836) ([L11 program](A329836.asm)): Beatty sequence for (11+sqrt(101))/10.
 * [A329839](http://oeis.org/A329839) ([L14 program](A329839.asm)): Beatty sequence for (-1+sqrt(41))/4.
@@ -728,6 +729,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332044](http://oeis.org/A332044) ([L08 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332495](http://oeis.org/A332495) ([L14 program](A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
 * [A332519](http://oeis.org/A332519) ([L04 program](A332519.asm)): a(n) = 4*(n^2+n-2).
-* [A332756](http://oeis.org/A332756) ([L09 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
+* [A332756](http://oeis.org/A332756) ([L08 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
 * [A333525](http://oeis.org/A333525) ([L05 program](A333525.asm)): Degree of polytope representing the number n.
 * [A333574](http://oeis.org/A333574) ([L15 program](A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.
