@@ -3,9 +3,7 @@
 
 mov $2,$0
 sub $2,1
-gcd $2,2
-add $2,3
-mov $1,$2
-gcd $2,8
-mul $1,$2
-add $1,6
+mov $1,12
+mod $2,2
+pow $1,$2
+add $1,10
