@@ -1,3 +1,4 @@
 *.o
 /loda
 /counts.png
+/.settings

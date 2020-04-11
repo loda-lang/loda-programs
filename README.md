@@ -66,7 +66,7 @@ The following programs include some classical examples of sequences and function
 
 * [Fibonacci numbers (A000045)](programs/oeis/A000045.asm)
 * [Number of divisors (A000005)](programs/oeis/A000005.asm)
-* [Ackermann function](programs/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
+* [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
 
 # Generating Programs for Integer Sequences
 
