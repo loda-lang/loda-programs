@@ -446,14 +446,14 @@
       "interval": "30m",
       "legend": {
         "alignAsTable": true,
-        "avg": false,
+        "avg": true,
         "current": false,
         "hideZero": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
-        "total": true,
+        "total": false,
         "values": true
       },
       "lines": true,
@@ -570,14 +570,14 @@
       "interval": "30m",
       "legend": {
         "alignAsTable": true,
-        "avg": false,
+        "avg": true,
         "current": false,
         "hideZero": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
-        "total": true,
+        "total": false,
         "values": true
       },
       "lines": true,
@@ -694,14 +694,14 @@
       "interval": "30m",
       "legend": {
         "alignAsTable": true,
-        "avg": false,
+        "avg": true,
         "current": false,
         "hideZero": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
-        "total": true,
+        "total": false,
         "values": true
       },
       "lines": true,
@@ -818,14 +818,14 @@
       "interval": "30m",
       "legend": {
         "alignAsTable": true,
-        "avg": false,
+        "avg": true,
         "current": false,
         "hideZero": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
-        "total": true,
+        "total": false,
         "values": true
       },
       "lines": true,
@@ -939,5 +939,5 @@
   "timezone": "",
   "title": "LODA",
   "uid": "0GSW7jPWk",
-  "version": 21
+  "version": 22
 }
