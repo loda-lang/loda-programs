@@ -547,7 +547,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218152](http://oeis.org/A218152) ([L08 program](A218152.asm)): a(n) = 1 + n + ((n-1)*n^2)/2.
 * [A218155](http://oeis.org/A218155) ([L09 program](A218155.asm)): Curvatures of tangents circle in circle of curvature -1-1.
 * [A218234](http://oeis.org/A218234) ([L06 program](A218234.asm)): Infinitesimal generator for padded Pascal matrix A097805 (as lower triangular matrices).
-* [A218245](http://oeis.org/A218245) ([L04 program](A218245.asm)): Nicolas's sequence, whose nonnegativity is equivalent to the Riemann hypothesis.
+* [A218245](http://oeis.org/A218245) ([L03 program](A218245.asm)): Nicolas's sequence, whose nonnegativity is equivalent to the Riemann hypothesis.
 * [A218272](http://oeis.org/A218272) ([L14 program](A218272.asm)): Infinitesimal generator for transpose of the Pascal matrix A007318 (as upper triangular matrices).
 * [A218324](http://oeis.org/A218324) ([L11 program](A218324.asm)): Odd heptagonal pyramidal numbers
 * [A218328](http://oeis.org/A218328) ([L23 program](A218328.asm)): Odd 9-gonal (nonagonal) pyramidal numbers.
@@ -1099,7 +1099,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A243578](http://oeis.org/A243578) ([L12 program](A243578.asm)): Integers n of the form 8k+7 that are sum of distinct squares of the form m, m+1, m+2, m+4, where m == 1 (mod 4).
 * [A243579](http://oeis.org/A243579) ([L17 program](A243579.asm)): Integers of the form 8k+7 that can be written as a sum of four distinct squares of the form m, m+2, m+4, m+5, where m == 1 (mod 4).
 * [A243580](http://oeis.org/A243580) ([L19 program](A243580.asm)): Integers of the form 8k + 7 that can be written as a sum of four distinct squares of the form m, m + 1, m + 3, m + 5, where m == 2 (mod 4).
-* [A243581](http://oeis.org/A243581) ([L12 program](A243581.asm)): Integers of the form 8k + 7 that can be written as a sum of four distinct squares of the form m, m + 2, m + 3, m + 4, where m == 2 (mod 4).
+* [A243581](http://oeis.org/A243581) ([L11 program](A243581.asm)): Integers of the form 8k + 7 that can be written as a sum of four distinct squares of the form m, m + 2, m + 3, m + 4, where m == 2 (mod 4).
 * [A243762](http://oeis.org/A243762) ([L26 program](A243762.asm)): 4*n^3 + 5.
 * [A243860](http://oeis.org/A243860) ([L17 program](A243860.asm)): 2^(n+1) - (n-1)^2.
 * [A243903](http://oeis.org/A243903) ([L10 program](A243903.asm)): Numbers n such that (number of primes <= n) is greater than or equal to (number of semiprimes <= n).
@@ -1519,9 +1519,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258808](http://oeis.org/A258808) ([L04 program](A258808.asm)): a(n) = n^7 - 1.
 * [A258809](http://oeis.org/A258809) ([L04 program](A258809.asm)): a(n) = n^8 - 1.
 * [A258810](http://oeis.org/A258810) ([L04 program](A258810.asm)): a(n) = n^9 - 1.
-* [A258812](http://oeis.org/A258812) ([L06 program](A258812.asm)): a(n) = n^11 - 1.
+* [A258812](http://oeis.org/A258812) ([L04 program](A258812.asm)): a(n) = n^11 - 1.
 * [A258935](http://oeis.org/A258935) ([L08 program](A258935.asm)): Independence number of Keller graphs.
-* [A259042](http://oeis.org/A259042) ([L14 program](A259042.asm)): Period 8 sequence [0, 1, 1, 1, 2, 1, 1, 1, ...].
+* [A259042](http://oeis.org/A259042) ([L08 program](A259042.asm)): Period 8 sequence [0, 1, 1, 1, 2, 1, 1, 1, ...].
 * [A259044](http://oeis.org/A259044) ([L05 program](A259044.asm)): Period 8 sequence [ 0, 1, 0, 1, 1, 1, 0, 1, ...].
 * [A259054](http://oeis.org/A259054) ([L05 program](A259054.asm)): a(n) = 4*n^2 - 4*n + 19, n >= 1.
 * [A259055](http://oeis.org/A259055) ([L05 program](A259055.asm)): a(n) = 9*n^2 + 18*n + 7.
