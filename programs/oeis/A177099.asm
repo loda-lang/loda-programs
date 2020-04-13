@@ -3,19 +3,15 @@
 
 mov $3,$0
 mov $1,$0
-mul $0,2
-add $1,2
-mul $0,4
-add $0,$1
-mov $1,2
-mov $2,$0
-lpb $0,1
-  add $1,$2
-  sub $0,1
-lpe
-sub $1,1
-lpb $3,1
-  add $1,128
-  sub $3,1
-lpe
-add $1,78
+add $1,1
+mul $1,3
+pow $1,2
+add $1,74
+mov $4,$3
+mov $2,$4
+mul $2,146
+add $1,$2
+mul $4,$3
+mov $2,$4
+mul $2,72
+add $1,$2
