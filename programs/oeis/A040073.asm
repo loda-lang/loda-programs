@@ -3,7 +3,6 @@
 
 sub $0,1
 mod $0,2
-mul $0,3
-gcd $1,$0
-pow $1,2
+mov $1,$0
+mul $1,9
 add $1,9

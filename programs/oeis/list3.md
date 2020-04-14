@@ -122,7 +122,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304376](http://oeis.org/A304376) ([L05 program](A304376.asm)): a(n) = 60*2^n - 48 (n>=1).
 * [A304377](http://oeis.org/A304377) ([L05 program](A304377.asm)): a(n) = 102*2^n - 96 (n>=1).
 * [A304378](http://oeis.org/A304378) ([L08 program](A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
-* [A304380](http://oeis.org/A304380) ([L12 program](A304380.asm)): a(n) = 36*n^2 - 4*n (n>=1).
+* [A304380](http://oeis.org/A304380) ([L10 program](A304380.asm)): a(n) = 36*n^2 - 4*n (n>=1).
 * [A304381](http://oeis.org/A304381) ([L09 program](A304381.asm)): a(n) = 54*n^2 - 26*n + 4 (n>=1).
 * [A304383](http://oeis.org/A304383) ([L05 program](A304383.asm)): a(n) = 36*2^n - 5 (n>=1).
 * [A304384](http://oeis.org/A304384) ([L05 program](A304384.asm)): a(n) = 168*2^n - 26 (n>=1).
@@ -132,7 +132,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304389](http://oeis.org/A304389) ([L05 program](A304389.asm)): a(n) = 126*2^n - 22 (n>=1).
 * [A304503](http://oeis.org/A304503) ([L12 program](A304503.asm)): a(n) = 3*(n+1)*(9*n+4).
 * [A304504](http://oeis.org/A304504) ([L17 program](A304504.asm)): a(n) = 3*(3*n+1)*(9*n+8)/2.
-* [A304505](http://oeis.org/A304505) ([L12 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
+* [A304505](http://oeis.org/A304505) ([L10 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
 * [A304506](http://oeis.org/A304506) ([L12 program](A304506.asm)): a(n) = 2*(3*n+1)*(9*n+8).
 * [A304507](http://oeis.org/A304507) ([L12 program](A304507.asm)): a(n) = 5*(n+1)*(9*n+4).
 * [A304508](http://oeis.org/A304508) ([L15 program](A304508.asm)): a(n) = 5*(3*n+1)*(9*n+8)/2 (n>=0).
@@ -175,7 +175,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304831](http://oeis.org/A304831) ([L05 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
 * [A304832](http://oeis.org/A304832) ([L08 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
 * [A304833](http://oeis.org/A304833) ([L09 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
-* [A304834](http://oeis.org/A304834) ([L12 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
+* [A304834](http://oeis.org/A304834) ([L10 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L12 program](A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
 * [A304836](http://oeis.org/A304836) ([L07 program](A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304839](http://oeis.org/A304839) ([L03 program](A304839.asm)): a(n) = 61*n - 38 (n>=1).
@@ -235,7 +235,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306278](http://oeis.org/A306278) ([L08 program](A306278.asm)): Numbers congruent to 2 or 11 mod 14.
 * [A306279](http://oeis.org/A306279) ([L08 program](A306279.asm)): Numbers congruent to 3 or 18 mod 22.
 * [A306285](http://oeis.org/A306285) ([L08 program](A306285.asm)): Numbers congruent to 4 or 21 mod 26.
-* [A306331](http://oeis.org/A306331) ([L10 program](A306331.asm)): Numbers congruent to 6 or 31 mod 38.
+* [A306331](http://oeis.org/A306331) ([L09 program](A306331.asm)): Numbers congruent to 6 or 31 mod 38.
+* [A306367](http://oeis.org/A306367) ([L12 program](A306367.asm)): a(n) = numerator of (n^2 + 2)/(n + 2).
 * [A306390](http://oeis.org/A306390) ([L06 program](A306390.asm)): Size of one subtree in the unlabeled binary rooted tree shape of size n whose leaf-labeled trees have the largest number of coalescence sequences.
 * [A306672](http://oeis.org/A306672) ([L15 program](A306672.asm)): Partial sums of the even Lucas numbers (A014448).
 * [A306696](http://oeis.org/A306696) ([L11 program](A306696.asm)): Lexicographically earliest sequence of nonnegative terms such that for any n > 0 and k > 0, if a(n) >= a(n+k), then a(n+2*k) <> a(n+k).
@@ -602,7 +603,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322462](http://oeis.org/A322462) ([L18 program](A322462.asm)): Numbers on the 0-1-12 line in a spiral on a grid of equilateral triangles.
 * [A322465](http://oeis.org/A322465) ([L09 program](A322465.asm)): Numbers on the 0-9-10-line in a spiral on an equilateral triangular lattice.
 * [A322489](http://oeis.org/A322489) ([L08 program](A322489.asm)): Numbers k such that k^k ends with 4.
-* [A322490](http://oeis.org/A322490) ([L09 program](A322490.asm)): Numbers k such that k^k ends with 7.
+* [A322490](http://oeis.org/A322490) ([L08 program](A322490.asm)): Numbers k such that k^k ends with 7.
 * [A322593](http://oeis.org/A322593) ([L12 program](A322593.asm)): a(n) = 2^n + 2*n^2 + 1.
 * [A322594](http://oeis.org/A322594) ([L15 program](A322594.asm)): a(n) = (4*n^3 + 12*n^2 - 4*n + 3)/3.
 * [A322595](http://oeis.org/A322595) ([L08 program](A322595.asm)): a(n) = (n^3 + 9*n + 14*n + 9)/3.
@@ -683,7 +684,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329509](http://oeis.org/A329509) ([L19 program](A329509.asm)): Expansion of (1 + x)*(1 + x + x^2 - x^3) / (1 - x).
 * [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
-* [A329624](http://oeis.org/A329624) ([L04 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
+* [A329624](http://oeis.org/A329624) ([L03 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
 * [A329670](http://oeis.org/A329670) ([L04 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
 * [A329677](http://oeis.org/A329677) ([L06 program](A329677.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD, and DH.
 * [A329678](http://oeis.org/A329678) ([L02 program](A329678.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UD and DH.
