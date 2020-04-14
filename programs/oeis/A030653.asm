@@ -4,5 +4,4 @@
 mov $1,$0
 add $1,2
 pow $1,3
-sub $1,8
-add $1,4
+sub $1,4

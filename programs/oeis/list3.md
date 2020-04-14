@@ -28,7 +28,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301337](http://oeis.org/A301337) ([L15 program](A301337.asm)): Number of steps required in the worst case for two knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A301383](http://oeis.org/A301383) ([L16 program](A301383.asm)): Expansion of (1 + 3*x - 2*x^2)/(1 - 7*x + 7*x^2 - x^3).
 * [A301426](http://oeis.org/A301426) ([L11 program](A301426.asm)): Number of steps required in the worst case for three knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
-* [A301451](http://oeis.org/A301451) ([L08 program](A301451.asm)): Numbers congruent to {1, 7} mod 9.
+* [A301451](http://oeis.org/A301451) ([L07 program](A301451.asm)): Numbers congruent to {1, 7} mod 9.
 * [A301454](http://oeis.org/A301454) ([L16 program](A301454.asm)): Number of strictly log-concave permutations of {1,...,n}.
 * [A301516](http://oeis.org/A301516) ([L07 program](A301516.asm)): Numbers n with decimal expansion (d_1, ..., d_k) such that the convex hull of the set of points { (i, d_i), i = 1..k } has positive area.
 * [A301571](http://oeis.org/A301571) ([L13 program](A301571.asm)): Number of vertices at distance 2 from a given vertex in the n-Keller graph.
@@ -509,7 +509,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317313](http://oeis.org/A317313) ([L25 program](A317313.asm)): Multiples of 13 and odd numbers interleaved.
 * [A317314](http://oeis.org/A317314) ([L07 program](A317314.asm)): Multiples of 14 and odd numbers interleaved.
 * [A317315](http://oeis.org/A317315) ([L33 program](A317315.asm)): Multiples of 15 and odd numbers interleaved.
-* [A317316](http://oeis.org/A317316) ([L05 program](A317316.asm)): Multiples of 16 and odd numbers interleaved.
+* [A317316](http://oeis.org/A317316) ([L04 program](A317316.asm)): Multiples of 16 and odd numbers interleaved.
 * [A317317](http://oeis.org/A317317) ([L20 program](A317317.asm)): Multiples of 17 and odd numbers interleaved.
 * [A317318](http://oeis.org/A317318) ([L09 program](A317318.asm)): Multiples of 18 and odd numbers interleaved.
 * [A317320](http://oeis.org/A317320) ([L15 program](A317320.asm)): Multiples of 20 and odd numbers interleaved.
@@ -548,7 +548,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319384](http://oeis.org/A319384) ([L08 program](A319384.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3) - a(n-4) + a(n-5), a(0)=1, a(1)=5, a(2)=9, a(3)=21, a(4)=29.
 * [A319390](http://oeis.org/A319390) ([L07 program](A319390.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3) - a(n-4) + a(n-5), a(0)=1, a(1)=2, a(2)=3, a(3)=6, a(4)=8.
 * [A319451](http://oeis.org/A319451) ([L04 program](A319451.asm)): Numbers that are congruent to {0, 3, 6} mod 12; a(n) = 3*floor(4*n/3).
-* [A319452](http://oeis.org/A319452) ([L10 program](A319452.asm)): Numbers that are congruent to {0, 3, 6, 10} mod 12.
+* [A319452](http://oeis.org/A319452) ([L08 program](A319452.asm)): Numbers that are congruent to {0, 3, 6, 10} mod 12.
 * [A319572](http://oeis.org/A319572) ([L16 program](A319572.asm)): The x coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
 * [A319573](http://oeis.org/A319573) ([L14 program](A319573.asm)): The y coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
 * [A319610](http://oeis.org/A319610) ([L21 program](A319610.asm)): a(n) is the minimal number of successive OFF cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
