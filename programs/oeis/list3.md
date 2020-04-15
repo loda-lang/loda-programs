@@ -118,11 +118,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304370](http://oeis.org/A304370) ([L21 program](A304370.asm)): Number of function calls of the first kind required to compute ack(3,n), where ack denotes the Ackermann function.
 * [A304371](http://oeis.org/A304371) ([L16 program](A304371.asm)): Number of function calls of the second kind required to compute ack(3,n), where ack denotes the Ackermann function.
 * [A304374](http://oeis.org/A304374) ([L09 program](A304374.asm)): a(n) = 9*n^2 + 21*n - 6 (n>=1).
-* [A304375](http://oeis.org/A304375) ([L21 program](A304375.asm)): a(n) = 27*n^2/2 + 45*n/2 - 12 (n>=1).
+* [A304375](http://oeis.org/A304375) ([L08 program](A304375.asm)): a(n) = 27*n^2/2 + 45*n/2 - 12 (n>=1).
 * [A304376](http://oeis.org/A304376) ([L05 program](A304376.asm)): a(n) = 60*2^n - 48 (n>=1).
 * [A304377](http://oeis.org/A304377) ([L05 program](A304377.asm)): a(n) = 102*2^n - 96 (n>=1).
 * [A304378](http://oeis.org/A304378) ([L08 program](A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
-* [A304380](http://oeis.org/A304380) ([L10 program](A304380.asm)): a(n) = 36*n^2 - 4*n (n>=1).
+* [A304380](http://oeis.org/A304380) ([L09 program](A304380.asm)): a(n) = 36*n^2 - 4*n (n>=1).
 * [A304381](http://oeis.org/A304381) ([L09 program](A304381.asm)): a(n) = 54*n^2 - 26*n + 4 (n>=1).
 * [A304383](http://oeis.org/A304383) ([L05 program](A304383.asm)): a(n) = 36*2^n - 5 (n>=1).
 * [A304384](http://oeis.org/A304384) ([L05 program](A304384.asm)): a(n) = 168*2^n - 26 (n>=1).
@@ -132,7 +132,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304389](http://oeis.org/A304389) ([L05 program](A304389.asm)): a(n) = 126*2^n - 22 (n>=1).
 * [A304503](http://oeis.org/A304503) ([L12 program](A304503.asm)): a(n) = 3*(n+1)*(9*n+4).
 * [A304504](http://oeis.org/A304504) ([L17 program](A304504.asm)): a(n) = 3*(3*n+1)*(9*n+8)/2.
-* [A304505](http://oeis.org/A304505) ([L10 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
+* [A304505](http://oeis.org/A304505) ([L09 program](A304505.asm)): a(n) = 4*(n+1)*(9*n+4).
 * [A304506](http://oeis.org/A304506) ([L12 program](A304506.asm)): a(n) = 2*(3*n+1)*(9*n+8).
 * [A304507](http://oeis.org/A304507) ([L12 program](A304507.asm)): a(n) = 5*(n+1)*(9*n+4).
 * [A304508](http://oeis.org/A304508) ([L15 program](A304508.asm)): a(n) = 5*(3*n+1)*(9*n+8)/2 (n>=0).
@@ -175,7 +175,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304831](http://oeis.org/A304831) ([L05 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
 * [A304832](http://oeis.org/A304832) ([L08 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
 * [A304833](http://oeis.org/A304833) ([L09 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
-* [A304834](http://oeis.org/A304834) ([L10 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
+* [A304834](http://oeis.org/A304834) ([L09 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L12 program](A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
 * [A304836](http://oeis.org/A304836) ([L07 program](A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304839](http://oeis.org/A304839) ([L03 program](A304839.asm)): a(n) = 61*n - 38 (n>=1).
@@ -610,7 +610,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322597](http://oeis.org/A322597) ([L14 program](A322597.asm)): a(n) = (4*n^3 - 6*n^2 + 20*n + 3)/3.
 * [A322675](http://oeis.org/A322675) ([L13 program](A322675.asm)): a(n) = n * (4*n + 3)^2.
 * [A322677](http://oeis.org/A322677) ([L49 program](A322677.asm)): a(n) = 16 * n * (n+1) * (2*n+1)^2.
-* [A322804](http://oeis.org/A322804) ([L10 program](A322804.asm)): Number of different positions a sphinx tile can occupy in an equilateral triangle of order n.
 * [A322830](http://oeis.org/A322830) ([L11 program](A322830.asm)): a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
 * [A322832](http://oeis.org/A322832) ([L10 program](A322832.asm)): Values x + y, where the ordered pairs (x,y) are sorted first by maximal coordinate and then lexicographically.
 * [A323048](http://oeis.org/A323048) ([L09 program](A323048.asm)): Sums of no more than two 5-smooth numbers.
@@ -701,6 +700,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329835](http://oeis.org/A329835) ([L05 program](A329835.asm)): Beatty sequence for (9+sqrt(101))/10.
 * [A329836](http://oeis.org/A329836) ([L11 program](A329836.asm)): Beatty sequence for (11+sqrt(101))/10.
 * [A329839](http://oeis.org/A329839) ([L13 program](A329839.asm)): Beatty sequence for (-1+sqrt(41))/4.
+* [A329844](http://oeis.org/A329844) ([L11 program](A329844.asm)): Beatty sequence for (11+sqrt(61))/6.
 * [A329847](http://oeis.org/A329847) ([L05 program](A329847.asm)): Beatty sequence for (3+sqrt(89))/8.
 * [A329925](http://oeis.org/A329925) ([L12 program](A329925.asm)): Beatty sequence for (1+sqrt(41))/5.
 * [A329926](http://oeis.org/A329926) ([L11 program](A329926.asm)): Beatty sequence for (8+sqrt(41))/5.
