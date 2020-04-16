@@ -195,7 +195,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305070](http://oeis.org/A305070) ([L14 program](A305070.asm)): a(n) = 378*n^2 - 54*n (n>=1).
 * [A305071](http://oeis.org/A305071) ([L26 program](A305071.asm)): a(n) = 972*n^2 - 270*n (n>=1).
 * [A305072](http://oeis.org/A305072) ([L11 program](A305072.asm)): a(n) = 144*n^2 - 24*n (n>=1).
-* [A305073](http://oeis.org/A305073) ([L15 program](A305073.asm)): a(n) = 288*n^2 - 96*n (n>=1).
+* [A305073](http://oeis.org/A305073) ([L10 program](A305073.asm)): a(n) = 288*n^2 - 96*n (n>=1).
 * [A305074](http://oeis.org/A305074) ([L03 program](A305074.asm)): a(n) = 20*n - 8 (n>=1).
 * [A305075](http://oeis.org/A305075) ([L03 program](A305075.asm)): a(n) = 32*n - 24 (n>=1).
 * [A305153](http://oeis.org/A305153) ([L05 program](A305153.asm)): a(n) = 30*2^n + 12.
@@ -564,12 +564,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A320226](http://oeis.org/A320226) ([L17 program](A320226.asm)): Number of integer partitions of n whose non-1 parts are all equal.
 * [A320259](http://oeis.org/A320259) ([L05 program](A320259.asm)): Terms that are on the y-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
 * [A320281](http://oeis.org/A320281) ([L05 program](A320281.asm)): Terms that are on the positive x-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
-* [A320427](http://oeis.org/A320427) ([L22 program](A320427.asm)): a(n) = floor(3*n/2) + ceiling(n/6) + 9.
+* [A320427](http://oeis.org/A320427) ([L08 program](A320427.asm)): a(n) = floor(3*n/2) + ceiling(n/6) + 9.
 * [A320523](http://oeis.org/A320523) ([L32 program](A320523.asm)): Smallest m > 1 such that either n^m == n (mod 25) or n^m == 0 (mod 25).
 * [A320604](http://oeis.org/A320604) ([L04 program](A320604.asm)): Chromatic number of the n-polygon diagonal intersection graph.
 * [A320661](http://oeis.org/A320661) ([L08 program](A320661.asm)): a(n) = 2^(n+3) - 6*n - 7.
 * [A320674](http://oeis.org/A320674) ([L14 program](A320674.asm)): Positive integers m with binary expansion (b_1, ..., b_k) (where k = A070939(m)) such that b_i = [m == 0 (mod prime(i))] for i = 1..k (where prime(i) denotes the i-th prime number and [] is an Iverson bracket).
 * [A320933](http://oeis.org/A320933) ([L12 program](A320933.asm)): a(n) = 2^n - floor((n+3)/2).
+* [A320934](http://oeis.org/A320934) ([L06 program](A320934.asm)): Number of chiral pairs of color patterns (set partitions) for a row of length n using 4 or fewer colors (subsets).
 * [A321011](http://oeis.org/A321011) ([L17 program](A321011.asm)): Trajectory of 86 under repeated application of the map k -> A320486(k^2).
 * [A321012](http://oeis.org/A321012) ([L16 program](A321012.asm)): Trajectory of 596 under repeated application of the map k -> A320486(k^2).
 * [A321123](http://oeis.org/A321123) ([L15 program](A321123.asm)): a(n) = 2^n + 2*n^2 + 2*n + 1.
