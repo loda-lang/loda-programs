@@ -256,7 +256,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307802](http://oeis.org/A307802) ([L02 program](A307802.asm)): Number of palindromic octagonal numbers of length n whose index is also palindromic.
 * [A307808](http://oeis.org/A307808) ([L07 program](A307808.asm)): Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 * [A307832](http://oeis.org/A307832) ([L17 program](A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
-* [A307921](http://oeis.org/A307921) ([L14 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
+* [A307921](http://oeis.org/A307921) ([L13 program](A307921.asm)): Number of (undirected) paths in the n-book graph.
 * [A307939](http://oeis.org/A307939) ([L16 program](A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
 * [A307985](http://oeis.org/A307985) ([L10 program](A307985.asm)): Number of integer-sided triangles with perimeter n and sides a, b, and c such that a <= b <= c and b|n.
 * [A308124](http://oeis.org/A308124) ([L05 program](A308124.asm)): a(n) = (2 + 7*4^n)/3.
@@ -348,7 +348,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313487](http://oeis.org/A313487) ([L20 program](A313487.asm)): Coordination sequence Gal.4.42.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313510](http://oeis.org/A313510) ([L18 program](A313510.asm)): Coordination sequence Gal.3.13.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313561](http://oeis.org/A313561) ([L23 program](A313561.asm)): Coordination sequence Gal.4.53.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A313568](http://oeis.org/A313568) ([L11 program](A313568.asm)): Coordination sequence Gal.3.14.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313568](http://oeis.org/A313568) ([L08 program](A313568.asm)): Coordination sequence Gal.3.14.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313613](http://oeis.org/A313613) ([L28 program](A313613.asm)): Coordination sequence Gal.4.72.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313680](http://oeis.org/A313680) ([L20 program](A313680.asm)): Coordination sequence Gal.6.120.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313681](http://oeis.org/A313681) ([L26 program](A313681.asm)): Coordination sequence Gal.6.221.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -501,7 +501,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317108](http://oeis.org/A317108) ([L03 program](A317108.asm)): Numbers missing from A317106.
 * [A317186](http://oeis.org/A317186) ([L05 program](A317186.asm)): One of many square spiral sequences: a(n) = n^2 + n - floor((n-1)/2).
 * [A317203](http://oeis.org/A317203) ([L49 program](A317203.asm)): Fixed under the morphism 1 -> 132, 2 -> 1, 3 -> 3.
-* [A317297](http://oeis.org/A317297) ([L08 program](A317297.asm)): a(n) = (n - 1)*(4*n^2 - 8*n + 5).
+* [A317297](http://oeis.org/A317297) ([L07 program](A317297.asm)): a(n) = (n - 1)*(4*n^2 - 8*n + 5).
 * [A317298](http://oeis.org/A317298) ([L06 program](A317298.asm)): a(n) = (1/2)*(1 + (-1)^n + 2*n + 4*n^2).
 * [A317303](http://oeis.org/A317303) ([L10 program](A317303.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
 * [A317304](http://oeis.org/A317304) ([L10 program](A317304.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central valley.
