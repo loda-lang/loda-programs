@@ -450,7 +450,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214263](http://oeis.org/A214263) ([L08 program](A214263.asm)): Expansion of f(x^1, x^7) in powers of x where f() is Ramanujan's general theta function.
 * [A214264](http://oeis.org/A214264) ([L08 program](A214264.asm)): Expansion of f(x^3, x^5) in powers of x where f() is Ramanujan's two-variable theta function.
 * [A214333](http://oeis.org/A214333) ([L50 program](A214333.asm)): Trajectory of 1 under evenly many applications of the morphism 1 -> 2, 2 -> 114, 3 -> 4, 4 -> 233.
-* [A214345](http://oeis.org/A214345) ([L12 program](A214345.asm)): Interleaved reading of A073577 and A053755.
+* [A214345](http://oeis.org/A214345) ([L11 program](A214345.asm)): Interleaved reading of A073577 and A053755.
 * [A214392](http://oeis.org/A214392) ([L11 program](A214392.asm)): If n mod 4 = 0 then a(n) = n/4, otherwise a(n) = n.
 * [A214393](http://oeis.org/A214393) ([L12 program](A214393.asm)): Numbers of the form (4k+3)^2+4 or (4k+5)^2-8.
 * [A214394](http://oeis.org/A214394) ([L13 program](A214394.asm)): If n mod 6 = 0 then n/6 else n.
@@ -463,6 +463,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214656](http://oeis.org/A214656) ([L03 program](A214656.asm)): Floor of the imaginary part of the zeros of the complex Fibonacci function on the left half plane.
 * [A214659](http://oeis.org/A214659) ([L10 program](A214659.asm)): a(n) = n*(7*n^2 - 3*n - 1)/3.
 * [A214660](http://oeis.org/A214660) ([L08 program](A214660.asm)): 9*n^2 - 11*n + 3.
+* [A214672](http://oeis.org/A214672) ([L16 program](A214672.asm)): Floor of the imaginary parts of the zeros of the complex Lucas function on the left half plane.
 * [A214673](http://oeis.org/A214673) ([L19 program](A214673.asm)): Floor of the moduli of the zeros of the complex Lucas function.
 * [A214675](http://oeis.org/A214675) ([L09 program](A214675.asm)): 9*n^2 - 13*n + 5.
 * [A214684](http://oeis.org/A214684) ([L13 program](A214684.asm)): a(1)=1, a(2)=1, and, for n>2, a(n)=(a(n-1)+a(n-2))/5^k, where 5^k is the highest power of 5 dividing a(n-1)+a(n-2).
@@ -1511,7 +1512,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258597](http://oeis.org/A258597) ([L05 program](A258597.asm)): a(n) = 13*3^n.
 * [A258598](http://oeis.org/A258598) ([L05 program](A258598.asm)): a(n) = 17*3^n.
 * [A258617](http://oeis.org/A258617) ([L05 program](A258617.asm)): a(n) = (4*n+8)*n^2.
-* [A258618](http://oeis.org/A258618) ([L10 program](A258618.asm)): a(n) = (4*n+9)*n^2.
+* [A258618](http://oeis.org/A258618) ([L09 program](A258618.asm)): a(n) = (4*n+9)*n^2.
 * [A258717](http://oeis.org/A258717) ([L11 program](A258717.asm)): If n even then 2*n^2-4*n else 2*n^2-4*n-3.
 * [A258721](http://oeis.org/A258721) ([L10 program](A258721.asm)): a(n) = 24*n^2 + 52*n + 29.
 * [A258806](http://oeis.org/A258806) ([L03 program](A258806.asm)): a(n) = n^7 + 1.
@@ -1865,6 +1866,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268613](http://oeis.org/A268613) ([L19 program](A268613.asm)): Lucas numbers mod 20.
 * [A268615](http://oeis.org/A268615) ([L19 program](A268615.asm)): Lucas numbers mod 40.
 * [A268633](http://oeis.org/A268633) ([L14 program](A268633.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or vertically adjacent neighbor totalling two exactly once.
+* [A268676](http://oeis.org/A268676) ([L19 program](A268676.asm)): a(n) = A101080(n,A268823(3+n)), where A101080(x,y) gives the Hamming distance between binary expansions of x and y.
 * [A268684](http://oeis.org/A268684) ([L07 program](A268684.asm)): a(n) = n*(n + 1)*(4*n - 1)/3.
 * [A268744](http://oeis.org/A268744) ([L13 program](A268744.asm)): Number of n X 2 binary arrays with some element plus some horizontally or vertically adjacent neighbor totalling two no more than once.
 * [A268775](http://oeis.org/A268775) ([L15 program](A268775.asm)): Number of n X 2 binary arrays with some element plus some horizontally, vertically, diagonally or antidiagonally adjacent neighbor totalling two no more than once.
@@ -1996,7 +1998,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271800](http://oeis.org/A271800) ([L14 program](A271800.asm)): Five steps forward, four steps back.
 * [A271828](http://oeis.org/A271828) ([L29 program](A271828.asm)): a(n) = 4*n^3 - 18*n^2 + 27*n - 12.
 * [A271832](http://oeis.org/A271832) ([L09 program](A271832.asm)): Period 12 zigzag sequence: repeat [0,1,2,3,4,5,6,5,4,3,2,1].
-* [A271911](http://oeis.org/A271911) ([L06 program](A271911.asm)): Number of ways to choose three distinct points from a 2 X n grid so that they form an isosceles triangle.
+* [A271911](http://oeis.org/A271911) ([L05 program](A271911.asm)): Number of ways to choose three distinct points from a 2 X n grid so that they form an isosceles triangle.
 * [A271937](http://oeis.org/A271937) ([L10 program](A271937.asm)): a(n) = (7/4)*n^2 + (5/2)*n + (7 + (-1)^n)/8.
 * [A272039](http://oeis.org/A272039) ([L07 program](A272039.asm)): a(n) = 10*n^2 + 4*n + 1.
 * [A272058](http://oeis.org/A272058) ([L07 program](A272058.asm)): Start with all terms set to 0. Then add n to the next n+3 terms for n=0,1,2,... .
@@ -2144,7 +2146,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276234](http://oeis.org/A276234) ([L15 program](A276234.asm)): a(n) = n/gcd(n, 256).
 * [A276265](http://oeis.org/A276265) ([L14 program](A276265.asm)): Expansion of (1 + 2*x)/(1 - 6*x + 6*x^2).
 * [A276278](http://oeis.org/A276278) ([L08 program](A276278.asm)): Complement of A026474.
-* [A276283](http://oeis.org/A276283) ([L25 program](A276283.asm)): Expansion of (1 + x + 3*x^2 + x^3)/((1 - x)^2*(1 + x^2)).
+* [A276283](http://oeis.org/A276283) ([L14 program](A276283.asm)): Expansion of (1 + x + 3*x^2 + x^3)/((1 - x)^2*(1 + x^2)).
 * [A276351](http://oeis.org/A276351) ([L66 program](A276351.asm)): a(n) = 2*(3 + 2 n + 3 n^2 + 3 n^3 + 3 n^4 + n^5 + n^6).
 * [A276382](http://oeis.org/A276382) ([L09 program](A276382.asm)): a(1) = 1, and a(n) = a(n-1) + floor(3*n/2) + 1 for n >= 2.
 * [A276391](http://oeis.org/A276391) ([L07 program](A276391.asm)): G.f. satisfies A(x) - 4*A(x^2) = x/(1+x).
