@@ -2134,7 +2134,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A147296](http://oeis.org/A147296) ([L05 program](A147296.asm)): n*(9*n+2).
 * [A147534](http://oeis.org/A147534) ([L04 program](A147534.asm)): a(n) is congruent to (1,1,2) mod 3.
 * [A147536](http://oeis.org/A147536) ([L18 program](A147536.asm)): A counting vertex substitution vector matrix Markov 2x2 with characteristic polynomial:12 - 7 x + x=^2
-* [A147560](http://oeis.org/A147560) ([L08 program](A147560.asm)): a(n) = 4*A046162(n+1).
+* [A147560](http://oeis.org/A147560) ([L05 program](A147560.asm)): a(n) = 4*A046162(n+1).
 * [A147587](http://oeis.org/A147587) ([L03 program](A147587.asm)): a(n) = 14*n + 7.
 * [A147595](http://oeis.org/A147595) ([L15 program](A147595.asm)): a(n) is the number whose binary representation is A138144(n).
 * [A147601](http://oeis.org/A147601) ([L14 program](A147601.asm)): First differences of A132355.
