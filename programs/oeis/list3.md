@@ -531,6 +531,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317633](http://oeis.org/A317633) ([L07 program](A317633.asm)): Numbers congruent to {1, 7, 9} mod 10.
 * [A317637](http://oeis.org/A317637) ([L07 program](A317637.asm)): a(n) = n*(n+1)*(n+3).
 * [A317657](http://oeis.org/A317657) ([L08 program](A317657.asm)): Numbers congruent to {15, 75, 95} mod 100.
+* [A317714](http://oeis.org/A317714) ([L14 program](A317714.asm)): Chessboard rectangles sequence (see Comments), also A037270 interleaved with A163102.
 * [A317790](http://oeis.org/A317790) ([L06 program](A317790.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-4) - 2*(n-5) + a(n-6) for n>5, a(0)=a(1)=1, a(2)=a(3)=7, a(4)=13, a(5)=19.
 * [A317849](http://oeis.org/A317849) ([L25 program](A317849.asm)): Number of states of the Finite State Automaton Gn accepting the language of maximal (or minimal) lexicographic representatives of elements in the positive braid monoid An.
 * [A317984](http://oeis.org/A317984) ([L12 program](A317984.asm)): Expansion of 140*x*(1 + 4*x + x^2) / (1 - x)^5.

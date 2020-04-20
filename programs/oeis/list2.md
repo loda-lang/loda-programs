@@ -342,6 +342,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212683](http://oeis.org/A212683) ([L12 program](A212683.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and |x-y|=w+|y-z|.
 * [A212684](http://oeis.org/A212684) ([L10 program](A212684.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and  |x-y|=n-w+|y-z|.
 * [A212685](http://oeis.org/A212685) ([L08 program](A212685.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|=w+|y-z|.
+* [A212686](http://oeis.org/A212686) ([L17 program](A212686.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 2|w-x|=n+|y-z|.
 * [A212692](http://oeis.org/A212692) ([L11 program](A212692.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<|x-y|+|y-z|.
 * [A212697](http://oeis.org/A212697) ([L09 program](A212697.asm)): a(n) = 2*n*3^(n-1).
 * [A212698](http://oeis.org/A212698) ([L08 program](A212698.asm)): Main transitions in systems of n particles with spin 3/2.
@@ -1852,6 +1853,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268263](http://oeis.org/A268263) ([L62 program](A268263.asm)): Number of length-(4+1) 0..n arrays with new repeated values introduced in sequential order starting with zero.
 * [A268264](http://oeis.org/A268264) ([L70 program](A268264.asm)): Number of length-(5+1) 0..n arrays with new repeated values introduced in sequential order starting with zero.
 * [A268284](http://oeis.org/A268284) ([L22 program](A268284.asm)): Period 15: repeat {18, 20, 28, 20, 20, 22, 18, 22, 20, 16, 12, 22, 18, 40, 18}.
+* [A268291](http://oeis.org/A268291) ([L17 program](A268291.asm)): a(n) = Sum_{k = 0..n} (k mod 13).
 * [A268292](http://oeis.org/A268292) ([L06 program](A268292.asm)): a(n) is the total number of isolated 1's at the boundary between n-th and (n-1)-th iterations in the pattern of A267489.
 * [A268315](http://oeis.org/A268315) ([L15 program](A268315.asm)): Decimal expansion of 256/27.
 * [A268351](http://oeis.org/A268351) ([L09 program](A268351.asm)): a(n) = 3*n*(9*n - 1)/2.
@@ -1859,7 +1861,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268357](http://oeis.org/A268357) ([L05 program](A268357.asm)): Highest power of 11 dividing n.
 * [A268414](http://oeis.org/A268414) ([L20 program](A268414.asm)): a(n) = 5*a(n - 1) - 2*n for n>0, a(0) = 1.
 * [A268428](http://oeis.org/A268428) ([L19 program](A268428.asm)): a(n) = (3*(n^2+n+99)+cos(Pi*n/2)-sin(Pi*n/2))/2.
-* [A268458](http://oeis.org/A268458) ([L15 program](A268458.asm)): Number of length-4 0..n arrays with no adjacent pair x,x+1 followed at any distance by x+1,x.
+* [A268458](http://oeis.org/A268458) ([L10 program](A268458.asm)): Number of length-4 0..n arrays with no adjacent pair x,x+1 followed at any distance by x+1,x.
 * [A268459](http://oeis.org/A268459) ([L58 program](A268459.asm)): Number of length-5 0..n arrays with no adjacent pair x,x+1 followed at any distance by x+1,x.
 * [A268460](http://oeis.org/A268460) ([L67 program](A268460.asm)): Number of length-6 0..n arrays with no adjacent pair x,x+1 followed at any distance by x+1,x.
 * [A268484](http://oeis.org/A268484) ([L10 program](A268484.asm)): a(n) = (n + 1)*(4*n^2 + 14*n + 9)/3.
@@ -1898,7 +1900,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269436](http://oeis.org/A269436) ([L48 program](A269436.asm)): Number of length-4 0..n arrays with no repeated value greater than the previous repeated value.
 * [A269445](http://oeis.org/A269445) ([L05 program](A269445.asm)): a(n) = Sum_{k=0..n} floor(k/13).
 * [A269457](http://oeis.org/A269457) ([L06 program](A269457.asm)): a(n) = 5*(n + 1)*(n + 4)/2.
-* [A269468](http://oeis.org/A269468) ([L21 program](A269468.asm)): Number of length-4 0..n arrays with no repeated value equal to the previous repeated value.
+* [A269468](http://oeis.org/A269468) ([L10 program](A269468.asm)): Number of length-4 0..n arrays with no repeated value equal to the previous repeated value.
 * [A269469](http://oeis.org/A269469) ([L55 program](A269469.asm)): Number of length-5 0..n arrays with no repeated value equal to the previous repeated value.
 * [A269470](http://oeis.org/A269470) ([L67 program](A269470.asm)): Number of length-6 0..n arrays with no repeated value equal to the previous repeated value.
 * [A269495](http://oeis.org/A269495) ([L20 program](A269495.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by one.
