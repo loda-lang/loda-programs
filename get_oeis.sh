@@ -19,9 +19,9 @@ for name in stripped names; do
 done
 
 mkdir -p ${oeis_dir}/b
-for name in programs/oeis/*.asm; do
-  filename=$(basename -- "$name")
-  aname="${filename%.*}"
+
+function get_bfile {
+  aname=$1
   aname=${aname/L/A}
   aname=${aname/U/A}
   bname=${aname/A/b}
@@ -31,4 +31,14 @@ for name in programs/oeis/*.asm; do
   if [ ! -f "${bfile}" ]; then
     wget -nv -O ${bfile} http://oeis.org/${aname}/${bname}.txt
   fi
+}
+
+for name in programs/oeis/*.asm; do
+  filename=$(basename -- "$name")
+  aname="${filename%.*}"
+  get_bfile ${aname}
 done
+
+get_bfile A000040
+get_bfile A001223
+get_bfile A006577
