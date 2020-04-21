@@ -166,7 +166,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304615](http://oeis.org/A304615) ([L05 program](A304615.asm)): a(n) = 507*2^n - 273.
 * [A304616](http://oeis.org/A304616) ([L27 program](A304616.asm)): a(n) = 81*n^2 - 69*n + 24.
 * [A304617](http://oeis.org/A304617) ([L20 program](A304617.asm)): a(n) = 324*n^2 - 564*n + 321 (n>=1).
-* [A304618](http://oeis.org/A304618) ([L17 program](A304618.asm)): a(n) = 108*n^2 - 228*n + 114 (n>=2).
+* [A304618](http://oeis.org/A304618) ([L16 program](A304618.asm)): a(n) = 108*n^2 - 228*n + 114 (n>=2).
 * [A304619](http://oeis.org/A304619) ([L24 program](A304619.asm)): a(n) = 324*n^2 - 804*n + 468 (n>=2).
 * [A304659](http://oeis.org/A304659) ([L10 program](A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
 * [A304725](http://oeis.org/A304725) ([L07 program](A304725.asm)): a(n) = n^4 + 8*n^3 + 20*n^2 + 16*n + 2.
@@ -666,6 +666,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327708](http://oeis.org/A327708) ([L15 program](A327708.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 8 parts can be obtained by coalescing the parts of lambda.
 * [A328010](http://oeis.org/A328010) ([L17 program](A328010.asm)): The 5x + 1 sequence beginning at 17.
 * [A328011](http://oeis.org/A328011) ([L14 program](A328011.asm)): The 5x + 1 sequence beginning at 1.
+* [A328152](http://oeis.org/A328152) ([L22 program](A328152.asm)): a(n) is the number of squares of side length greater than 1 having vertices at the points of an n X n grid of dots.
 * [A328263](http://oeis.org/A328263) ([L07 program](A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
 * [A328865](http://oeis.org/A328865) ([L04 program](A328865.asm)): The first repeating term in the trajectory of n under iterations of A329623, or -1 if no such terms exists.
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.

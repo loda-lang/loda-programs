@@ -1016,7 +1016,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A013574](http://oeis.org/A013574) ([L10 program](A013574.asm)): Minimal scope of an (n,2) difference triangle.
 * [A013654](http://oeis.org/A013654) ([L08 program](A013654.asm)): Each term of the period of continued fraction for sqrt(n) divides n.
 * [A013655](http://oeis.org/A013655) ([L08 program](A013655.asm)): a(n) = F(n+1) + L(n), where F(n) and L(n) are Fibonacci and Lucas numbers, respectively.
-* [A013656](http://oeis.org/A013656) ([L08 program](A013656.asm)): n*(9*n-2).
+* [A013656](http://oeis.org/A013656) ([L05 program](A013656.asm)): n*(9*n-2).
 * [A013915](http://oeis.org/A013915) ([L16 program](A013915.asm)): a(n) = F(n) + L(n) + n, where F(n) (A000045) and L(n) (A000204) are Fibonacci and Lucas numbers respectively.
 * [A013938](http://oeis.org/A013938) ([L08 program](A013938.asm)): a(n) = Sum_{k=1..n} floor(n/k^4).
 * [A014105](http://oeis.org/A014105) ([L04 program](A014105.asm)): Second hexagonal numbers: a(n) = n*(2*n+1).
@@ -2416,7 +2416,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033412](http://oeis.org/A033412) ([L04 program](A033412.asm)): [ 92/n ].
 * [A033413](http://oeis.org/A033413) ([L11 program](A033413.asm)): [ 93/n ].
 * [A033416](http://oeis.org/A033416) ([L05 program](A033416.asm)): [ 96/n ].
-* [A033418](http://oeis.org/A033418) ([L11 program](A033418.asm)): [ 98/n ].
+* [A033418](http://oeis.org/A033418) ([L04 program](A033418.asm)): [ 98/n ].
 * [A033419](http://oeis.org/A033419) ([L26 program](A033419.asm)): [ 99/n ].
 * [A033420](http://oeis.org/A033420) ([L03 program](A033420.asm)): [ 100/n ].
 * [A033421](http://oeis.org/A033421) ([L03 program](A033421.asm)): [ 1000/n ].
@@ -4276,7 +4276,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063109](http://oeis.org/A063109) ([L09 program](A063109.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 41 ).
 * [A063110](http://oeis.org/A063110) ([L04 program](A063110.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0(42).
 * [A063111](http://oeis.org/A063111) ([L12 program](A063111.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 43 ).
-* [A063116](http://oeis.org/A063116) ([L07 program](A063116.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 48 ).
+* [A063116](http://oeis.org/A063116) ([L06 program](A063116.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 48 ).
 * [A063117](http://oeis.org/A063117) ([L21 program](A063117.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 49 ).
 * [A063118](http://oeis.org/A063118) ([L08 program](A063118.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0(50).
 * [A063120](http://oeis.org/A063120) ([L04 program](A063120.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 52 ).
