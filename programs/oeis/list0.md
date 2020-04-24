@@ -1909,6 +1909,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022522](http://oeis.org/A022522) ([L55 program](A022522.asm)): Nexus numbers (n+1)^6 - n^6.
 * [A022523](http://oeis.org/A022523) ([L70 program](A022523.asm)): Nexus numbers (n+1)^7-n^7.
 * [A022554](http://oeis.org/A022554) ([L06 program](A022554.asm)): a(n) = Sum_{k=0..n} floor(sqrt(k)).
+* [A022560](http://oeis.org/A022560) ([L34 program](A022560.asm)): a(0)=0, a(2*n) = 2*a(n) + 2*a(n-1) + n^2 + n, a(2*n+1) = 4*a(n) + (n+1)^2.
 * [A022795](http://oeis.org/A022795) ([L26 program](A022795.asm)): Place where n-th 1 occurs in A023133.
 * [A022803](http://oeis.org/A022803) ([L18 program](A022803.asm)): Numbers that reach ...,7,8,4,2,1 under the mapping: if n is even divide by 2 else add 1.
 * [A022815](http://oeis.org/A022815) ([L10 program](A022815.asm)): Number of terms in 5th derivative of a function composed with itself n times.
@@ -2403,6 +2404,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033390](http://oeis.org/A033390) ([L04 program](A033390.asm)): [ 70/n ].
 * [A033391](http://oeis.org/A033391) ([L03 program](A033391.asm)): [ 71/n ].
 * [A033392](http://oeis.org/A033392) ([L04 program](A033392.asm)): [ 72/n ].
+* [A033393](http://oeis.org/A033393) ([L05 program](A033393.asm)): [ 73/n ].
 * [A033395](http://oeis.org/A033395) ([L04 program](A033395.asm)): [ 75/n ].
 * [A033396](http://oeis.org/A033396) ([L08 program](A033396.asm)): [ 76/n ].
 * [A033397](http://oeis.org/A033397) ([L03 program](A033397.asm)): [ 77/n ].
