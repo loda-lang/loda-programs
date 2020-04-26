@@ -14,7 +14,7 @@ for name in stripped names; do
   if [ -f ${oeis_dir}/${name} ]; then
     rm ${oeis_dir}/${name}
   fi
-  wget -O ${oeis_dir}/${name}.gz http://oeis.org/${name}.gz
+  wget -nv -O ${oeis_dir}/${name}.gz http://oeis.org/${name}.gz
   gzip -d ${oeis_dir}/${name}.gz
 done
 
