@@ -1,0 +1,161 @@
+; A034007: First differences of A045891.
+; 1,0,2,4,9,20,44,96,208,448,960,2048,4352,9216,19456,40960,86016,180224,376832,786432,1638400,3407872,7077888,14680064,30408704,62914560,130023424,268435456,553648128,1140850688,2348810240
+
+mov $19,$0
+mov $21,2
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  add $0,$21
+  sub $0,1
+  mov $15,$0
+  mov $17,2
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    add $0,$17
+    sub $0,1
+    mov $11,$0
+    mov $13,2
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      add $0,$13
+      sub $0,1
+      mov $7,9
+      div $7,$7
+      mov $9,$0
+      mod $0,$7
+      mov $5,$9
+      mov $7,2
+      mov $8,$7
+      mov $3,$9
+      mov $1,6
+      lpb $0,1
+        mov $6,$3
+        mov $4,3
+        mov $2,3
+        mov $3,4
+        mul $9,9
+        mul $2,4
+        mul $5,$4
+        mov $10,$2
+        mul $8,$1
+        mul $6,$8
+        fac $7
+        add $10,6
+        div $2,$8
+        mov $4,4
+        sub $0,1
+        sub $10,9
+        gcd $2,$0
+        mov $7,$7
+        mul $6,2
+        add $8,2
+        mov $0,$7
+        fac $7
+        div $1,$7
+        pow $5,$1
+        mul $8,2
+        sub $6,$5
+        add $4,$2
+        add $9,6
+        mul $1,8
+        mov $5,$3
+        sub $7,$4
+        pow $6,$3
+        div $9,$0
+        mul $1,9
+        mov $4,$2
+        gcd $2,$1
+        div $8,2
+        mov $5,$4
+        mul $9,$6
+        div $1,3
+      lpe
+      pow $1,$0
+      mov $7,$6
+      mov $2,$3
+      add $4,2
+      mul $1,2
+      add $7,2
+      mov $6,8
+      mul $2,8
+      gcd $10,$4
+      div $8,8
+      pow $7,$3
+      sub $2,6
+      mul $5,$7
+      mul $4,7
+      mov $1,10
+      div $8,4
+      mod $4,8
+      mul $7,2
+      sub $0,$7
+      add $6,$9
+      gcd $1,9
+      sub $2,5
+      add $1,$9
+      gcd $6,2
+      add $1,1
+      pow $9,$4
+      add $0,6
+      mul $0,7
+      sub $3,$3
+      pow $10,2
+      mul $2,$4
+      mov $5,2
+      mov $8,$9
+      sub $0,6
+      pow $5,9
+      mod $8,$6
+      add $5,$6
+      mul $1,$7
+      gcd $0,10
+      pow $4,3
+      sub $10,$3
+      gcd $5,2
+      mod $7,10
+      mov $10,0
+      add $8,6
+      mov $4,10
+      mov $3,9
+      fac $5
+      mod $5,5
+      mov $14,$13
+      lpb $14,1
+        mov $12,$1
+        sub $14,1
+      lpe
+    lpe
+    lpb $11,1
+      sub $12,$1
+      mov $11,0
+    lpe
+    mov $1,$12
+    mov $18,$17
+    lpb $18,1
+      mov $16,$1
+      sub $18,1
+    lpe
+  lpe
+  lpb $15,1
+    sub $16,$1
+    mov $15,0
+  lpe
+  mov $1,$16
+  mov $22,$21
+  lpb $22,1
+    mov $20,$1
+    sub $22,1
+  lpe
+lpe
+lpb $19,1
+  sub $20,$1
+  mov $19,0
+lpe
+mov $1,$20
+div $1,4

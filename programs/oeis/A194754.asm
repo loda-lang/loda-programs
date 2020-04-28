@@ -1,85 +1,17 @@
 ; A194754: Number of k such that {k*pi} < {n*pi}, where { } = fractional part.
 ; 1,2,3,4,5,6,7,1,3,5,7,9,11,13,1,4,7,10,13,16,19,1,5,9,13,17,21,25,1,6,11,16,21,26,31,1,7,13,19,25,31,37,1,8,15,22,29,36,43,1,9,17,25,33,41,49,1,10,19,28,37,46,55,1,11,21,31,41,51,61,1,12,23,34,45,56
 
-mov $5,$0
-mov $1,$0
-mov $4,4
-mov $2,$4
-add $1,$5
-mov $3,$4
-div $1,2
-div $5,3
-mov $7,$3
-sub $7,$3
 lpb $0,1
-  mov $0,$1
-  mov $6,8
-  pow $5,5
-  sub $1,$3
   add $0,1
-  add $7,6
-  add $3,$7
-  mov $5,$7
-  mul $4,$2
-  sub $5,$7
-  fac $5
-  pow $7,$7
-  add $3,1
-  mov $1,5
-  div $5,8
-  mov $7,$0
-  add $2,1
-  add $5,$3
-  div $1,2
-  mov $8,$0
-  sub $7,5
-  mul $3,6
-  add $7,3
-  pow $2,2
-  div $5,2
-  sub $4,6
-  mul $0,8
-  sub $3,$4
+  mov $3,$0
   sub $0,1
-  gcd $3,$4
-  sub $5,4
-  mov $4,$4
-  mod $1,$2
-  mov $5,$0
-  div $0,$3
-  sub $3,8
-  add $0,$1
-  pow $1,$6
-  mod $5,7
-  mod $3,3
-  pow $2,$5
-  mul $4,5
-  gcd $1,2
-  div $7,$7
-  pow $0,$7
-  div $7,4
-  add $8,6
-  gcd $2,$0
-  sub $1,4
-  sub $0,8
-  mov $6,0
-  sub $8,$5
-  mov $2,8
-  mod $0,2
-  mov $6,3
-  mul $3,$2
-  mul $6,$1
-  sub $6,4
-  sub $0,6
+  mov $2,$0
+  mod $2,7
+  add $3,6
+  sub $3,$2
   mov $0,0
-  add $1,$8
-  mul $1,$5
-  div $4,2
+  add $1,$3
+  mul $1,$2
 lpe
-mov $0,5
-sub $7,7
-add $2,4
-mov $5,$3
-add $6,$6
 div $1,7
 add $1,1

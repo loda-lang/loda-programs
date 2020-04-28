@@ -1,0 +1,108 @@
+; A026052: (d(n)-r(n))/2, where d = A008778 and r is the periodic sequence with fundamental period (1,1,0,1).
+; 2,6,13,22,35,52,74,100,132,170,215,266,325,392,468,552,646,750,865,990,1127,1276,1438,1612,1800,2002,2219,2450,2697,2960,3240,3536,3850,4182,4533,4902,5291,5700,6130,6580,7052,7546,8063,8602,9165,9752,10364,11000,11662,12350,13065,13806,14575
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    add $0,1
+    mov $1,$0
+    gcd $0,4
+    mov $3,6
+    mov $5,$1
+    mov $6,$5
+    mov $4,8
+    gcd $5,$3
+    mod $5,$6
+    mov $2,6
+    add $0,7
+    mov $8,$0
+    mod $2,2
+    mov $7,4
+    div $6,$1
+    sub $5,2
+    add $4,$4
+    add $1,8
+    pow $7,2
+    sub $5,3
+    div $3,6
+    lpb $0,1
+      mul $6,$0
+      add $1,5
+      add $0,$7
+      sub $7,8
+      add $3,$2
+      mov $7,$7
+      add $7,8
+      mul $3,$7
+      mod $0,$4
+      div $1,5
+      mov $5,1
+      add $4,6
+      sub $6,$6
+      div $7,6
+      add $6,4
+      fac $2
+      pow $5,$4
+      div $2,$4
+      sub $0,1
+      add $5,1
+      mov $4,5
+      mov $3,$5
+      pow $0,4
+      mul $6,3
+      add $5,$1
+      mov $5,0
+      mod $6,2
+      sub $4,8
+      pow $8,$5
+    lpe
+    sub $1,$0
+    add $6,8
+    mul $7,$2
+    div $7,4
+    mov $4,3
+    mov $8,$8
+    sub $3,$6
+    add $7,6
+    mul $5,$4
+    add $1,$7
+    div $7,2
+    add $5,1
+    sub $5,2
+    sub $2,2
+    add $6,6
+    mul $8,$4
+    add $0,2
+    mov $6,5
+    sub $5,$3
+    mul $0,5
+    fac $2
+    sub $3,8
+    mul $4,6
+    mov $5,7
+    div $7,2
+    div $1,$2
+    pow $2,5
+    sub $8,2
+    sub $1,7
+    div $1,2
+    add $1,2
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13

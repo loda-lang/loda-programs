@@ -3,7 +3,6 @@
 
 mov $19,$0
 mov $21,$0
-add $21,1
 lpb $21,1
   clr $0,19
   sub $21,1
@@ -11,7 +10,6 @@ lpb $21,1
   sub $0,$21
   mov $16,$0
   mov $18,$0
-  add $18,1
   lpb $18,1
     clr $0,16
     sub $18,1
@@ -19,9 +17,7 @@ lpb $21,1
     sub $0,$18
     mov $13,$0
     mov $15,$0
-    add $15,1
     lpb $15,1
-      clr $0,13
       sub $15,1
       mov $0,$13
       sub $0,$15
@@ -35,84 +31,13 @@ lpb $21,1
         sub $0,1
         mov $4,$0
         lpb $0,1
-          mov $5,7
           mov $1,1
-          mov $2,$1
           mul $1,$4
-          mov $8,2
-          div $2,5
-          mul $4,2
-          mov $2,$1
-          mov $7,3
-          add $4,1
-          sub $0,$0
-          mov $6,$0
-          div $2,2
-          add $1,1
-          mov $2,3
-          sub $7,8
-          mov $5,6
-          mul $2,$5
-          pow $8,$8
-          mov $3,7
-          add $1,1
-          add $5,$3
-          mul $8,2
-          pow $3,7
-          pow $2,$8
-          sub $0,$2
-          mod $5,2
-          add $8,6
-          sub $0,$8
-          mov $0,7
-          mov $4,$0
-          sub $0,1
-          add $5,$6
-          pow $7,$6
-          mul $5,$4
-          sub $2,$0
+          add $1,2
           mul $1,2
-          sub $7,5
-          div $7,5
-          div $7,2
-          div $4,2
-          pow $7,$4
           mov $0,1
-          div $4,2
-          mul $5,2
-          mul $4,$0
-          mul $5,$4
-          div $3,2
-          mul $8,$0
-          pow $6,6
-          sub $3,$3
-          mod $2,$5
-          mul $3,2
-          div $5,7
-          mod $7,7
-          div $3,3
           add $1,1
-          mod $3,2
-          add $2,$7
-          mov $6,2
-          pow $3,6
-          mov $6,7
-          sub $8,8
-          gcd $6,8
-          mul $3,$0
-          mov $6,$2
-          fac $6
         lpe
-        mul $3,2
-        div $3,7
-        add $5,3
-        div $4,8
-        div $4,2
-        mov $7,$2
-        sub $6,1
-        add $0,$5
-        mov $4,$8
-        add $4,2
         mov $12,$11
         lpb $12,1
           mov $10,$1
