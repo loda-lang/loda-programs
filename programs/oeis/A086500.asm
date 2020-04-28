@@ -1,0 +1,97 @@
+; A086500: Group the natural numbers such that the n-th group sum is divisible by the n-th triangular number: (1), (2, 3, 4), (5, 6, 7), (8, 9, 10, 11, 12), (13, 14, 15, 16, 17), (18, 19, 20, 21, 22, 23, 24), ... Sequence contains the group sum.
+; 1,9,18,50,75,147,196,324,405,605,726,1014,1183,1575,1800,2312,2601,3249,3610,4410,4851,5819,6348,7500,8125,9477,10206,11774,12615,14415,15376,17424,18513,20825,22050,24642,26011,28899,30420,33620,35301
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $2,8
+  mov $3,$2
+  div $3,$3
+  mov $2,3
+  mov $8,$3
+  mov $4,$0
+  mov $7,1
+  mod $0,2
+  mov $1,6
+  mul $8,$3
+  add $4,$8
+  mov $1,$0
+  div $0,$8
+  pow $4,2
+  mov $5,$7
+  gcd $2,2
+  add $1,$5
+  mul $3,$5
+  lpb $0,1
+    div $5,8
+    mod $4,7
+    add $5,$2
+    pow $5,$0
+    fac $2
+    sub $1,4
+    mov $8,$4
+    mul $3,$5
+    add $2,$0
+    mov $1,$3
+    mul $3,$0
+    mul $1,$5
+    pow $2,$7
+    sub $0,1
+    mov $6,2
+    mov $4,$1
+    pow $6,2
+    div $1,2
+    mul $6,2
+    pow $7,$4
+    mov $8,$7
+    mod $1,8
+    sub $0,6
+    add $7,$3
+    mod $6,$8
+    mov $8,8
+    pow $4,$8
+    mul $1,$8
+    pow $2,$5
+    add $0,$0
+    gcd $3,5
+    mul $6,2
+    add $0,2
+  lpe
+  div $3,3
+  mul $4,2
+  div $0,4
+  mul $6,$2
+  add $8,$5
+  mov $0,3
+  mul $5,2
+  div $7,8
+  add $8,$0
+  div $3,2
+  sub $8,2
+  div $6,$0
+  add $3,8
+  add $5,$5
+  add $6,$2
+  mod $6,5
+  add $3,$6
+  mul $1,$4
+  sub $8,$1
+  sub $0,2
+  add $3,$0
+  sub $2,$7
+  mov $8,0
+  mov $5,$7
+  sub $7,$8
+  div $2,$0
+  fac $6
+  sub $1,2
+  div $1,2
+  add $1,1
+  add $10,$1
+lpe
+mov $1,$10

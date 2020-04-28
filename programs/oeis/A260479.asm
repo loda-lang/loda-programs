@@ -1,0 +1,94 @@
+; A260479: Positions of 0 in the infinite palindromic word at A260455.
+; 1,3,4,6,8,10,11,13,14,16,17,19,21,23,24,26,28,30,31,33,35,37,38,40,41,43,44,46,48,50,51,53,54,56,57,59,61,63,64,66,67,69,70,72,74,76,77,79,81,83,84,86,88,90,91,93,94,96,97,99,101,103,104,106,108
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $8,5
+  mov $5,$8
+  mov $1,8
+  mov $7,$8
+  div $8,$1
+  pow $1,$7
+  mov $2,0
+  add $2,4
+  mod $2,4
+  mul $2,$8
+  gcd $1,$0
+  mov $6,2
+  mov $3,0
+  mul $3,$0
+  mov $6,6
+  sub $1,$8
+  sub $5,3
+  sub $0,$8
+  sub $6,$3
+  sub $2,1
+  mod $7,2
+  div $0,6
+  div $3,$5
+  sub $8,6
+  div $0,2
+  div $3,5
+  mov $4,2
+  mov $5,$7
+  pow $2,7
+  pow $3,$3
+  mul $2,$3
+  add $4,$3
+  mod $8,8
+  mul $8,8
+  mul $0,$3
+  sub $5,4
+  sub $8,4
+  mod $1,3
+  div $8,$1
+  add $3,$3
+  add $6,$1
+  pow $8,2
+  add $6,3
+  mov $8,7
+  div $0,$7
+  mul $7,2
+  mov $2,3
+  gcd $3,$6
+  mul $0,6
+  div $0,$1
+  mul $1,$5
+  fac $8
+  mul $0,$1
+  fac $4
+  mov $4,8
+  add $2,1
+  mov $6,$2
+  div $7,5
+  fac $1
+  mul $1,$3
+  mov $4,$5
+  mul $6,$5
+  add $4,$4
+  lpb $0,1
+    div $0,7
+    mul $8,2
+    add $7,2
+    sub $0,1
+    mod $4,$8
+    pow $4,$3
+    sub $0,$4
+    mul $2,8
+    mul $4,2
+    div $1,2
+    sub $3,8
+    add $3,7
+    sub $6,5
+    gcd $4,4
+  lpe
+  mov $8,$5
+  add $10,$1
+lpe
+mov $1,$10

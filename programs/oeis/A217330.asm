@@ -1,0 +1,106 @@
+; A217330: The number of integer solutions to the equation x1 + x2 + x3 + x4 = n, with xi >= 0, and with x2 + x3 divisible by 3.
+; 1,2,3,8,13,18,30,42,54,76,98,120,155,190,225,276,327,378,448,518,588,680,772,864,981,1098,1215,1360,1505,1650,1826,2002,2178,2388,2598,2808,3055,3302,3549,3836,4123,4410,4740,5070,5400,5776,6152,6528,6953
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $6,2
+    div $6,3
+    mov $8,6
+    mov $5,$0
+    mul $0,4
+    div $6,8
+    mov $4,2
+    mov $1,$0
+    mov $6,2
+    mov $2,$1
+    mov $6,6
+    div $4,$4
+    mov $3,5
+    mov $7,$2
+    mod $0,$8
+    mod $8,2
+    add $7,8
+    mul $5,$0
+    lpb $0,1
+      add $3,4
+      mod $1,2
+      fac $1
+      pow $4,7
+      mul $1,$7
+      pow $2,3
+      mul $4,4
+      add $5,1
+      sub $0,$4
+      div $1,$4
+      mul $7,8
+      add $4,$6
+      sub $5,$5
+      add $2,$1
+      sub $5,$8
+      sub $0,8
+      add $3,$3
+      gcd $6,$7
+      mul $2,$3
+      add $8,$4
+      mul $6,$8
+      mov $1,5
+      sub $1,8
+      sub $0,1
+      add $7,$1
+      sub $8,$2
+      div $2,$4
+      fac $1
+      sub $6,3
+      div $3,6
+      div $8,2
+      mov $2,5
+      add $8,$4
+      sub $0,1
+      div $1,7
+      add $8,$0
+      mov $6,$5
+      fac $3
+      mod $1,2
+      mov $7,$3
+      add $2,5
+      add $4,7
+      mul $7,2
+      mul $4,7
+      gcd $8,$5
+      mov $7,$0
+      mov $3,4
+      add $8,$8
+      add $8,$2
+      mov $0,0
+      mov $6,5
+      add $8,$0
+    lpe
+    mov $8,$7
+    add $1,$7
+    gcd $8,5
+    add $4,4
+    mov $5,$8
+    sub $4,2
+    mov $7,8
+    add $5,6
+    div $1,8
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13
