@@ -1,0 +1,125 @@
+; A022330: Index of 3^n within sequence of numbers of form 2^i*3^j.
+; 1,3,7,12,19,27,37,49,62,77,93,111,131,152,175,199,225,252,281,312,344,378,413,450,489,529,571,614,659,705,753,803,854,907,961,1017,1075,1134,1195,1257,1321,1386,1453,1522,1592,1664,1737,1812,1889,1967,2047,2128
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $1,$0
+      mov $4,$0
+      mov $2,$0
+      mov $3,7
+      add $3,1
+      div $0,6
+      mov $8,$0
+      sub $3,1
+      mov $7,3
+      mov $5,$8
+      add $1,$8
+      lpb $2,1
+        lpb $4,1
+          mov $6,0
+          div $5,3
+          add $4,$7
+          mul $4,2
+          add $4,8
+          sub $3,8
+          div $8,5
+          sub $0,$7
+          mov $0,$2
+          mod $6,7
+          add $4,3
+          fac $5
+          sub $4,$2
+          div $4,4
+        lpe
+        div $1,2
+        gcd $8,$6
+        sub $2,$2
+        mul $6,$0
+        lpb $5,1
+          fac $4
+          mul $1,$8
+          mov $3,5
+          mov $4,8
+          mov $3,1
+          fac $8
+          sub $5,$2
+          mul $7,$4
+          mod $3,5
+          div $6,$3
+          mul $5,$3
+          add $3,5
+          pow $1,2
+          div $1,$4
+          gcd $3,2
+          mul $4,$0
+          div $1,$7
+          mov $4,1
+          mov $1,8
+          mul $1,$7
+        lpe
+        mul $3,$0
+        div $4,4
+        add $5,2
+        add $8,$3
+        sub $2,$6
+        lpb $6,1
+          fac $6
+          div $0,5
+          sub $6,$2
+        lpe
+        div $6,2
+        sub $2,1
+      lpe
+      sub $5,$8
+      pow $7,$7
+      mov $6,$8
+      gcd $8,$8
+      mov $0,$7
+      pow $6,$5
+      mov $6,$5
+      mul $0,2
+      gcd $5,$5
+      pow $7,2
+      sub $8,$3
+      div $7,2
+      sub $0,$0
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    add $1,1
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17

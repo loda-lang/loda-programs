@@ -1,0 +1,137 @@
+; A213780: Antidiagonal sums of the convolution array A213778.
+; 1,6,17,40,78,140,230,360,535,770,1071,1456,1932,2520,3228,4080,5085,6270,7645,9240,11066,13156,15522,18200,21203,24570,28315,32480,37080,42160,47736,53856,60537,67830,75753,84360,93670,103740,114590
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $13,$0
+    mov $15,$0
+    add $15,1
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      sub $0,$15
+      mov $9,$0
+      mov $11,2
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        add $0,$11
+        sub $0,1
+        mov $8,1
+        add $8,$0
+        mov $3,$8
+        div $0,$3
+        mov $7,$8
+        mov $5,5
+        mov $2,0
+        add $0,$0
+        mov $6,$3
+        pow $6,2
+        mov $1,$8
+        div $3,6
+        div $1,2
+        mul $2,2
+        add $2,$7
+        div $6,2
+        mul $1,5
+        sub $6,1
+        mul $1,$7
+        mov $0,3
+        add $3,7
+        pow $6,$0
+        add $0,4
+        mul $7,$8
+        add $0,6
+        mov $2,3
+        add $3,5
+        pow $3,$0
+        mul $7,$7
+        mov $4,$2
+        add $4,$0
+        mov $8,8
+        add $2,$2
+        mod $2,$7
+        lpb $0,1
+          sub $7,$6
+          add $5,7
+          add $4,5
+          add $4,3
+          pow $6,2
+          mov $5,$8
+          div $1,3
+          mov $3,3
+          mov $7,7
+          div $4,8
+          add $2,$8
+          pow $8,$4
+          mov $8,$3
+          sub $2,$2
+          mul $5,$6
+          sub $0,1
+          gcd $6,$8
+          mov $4,5
+          mov $8,$5
+          sub $8,7
+          mov $7,$7
+          gcd $6,$1
+          mul $0,6
+          pow $7,2
+          gcd $8,$2
+          div $2,7
+          sub $6,$2
+          div $2,$6
+          gcd $1,2
+          mov $3,$0
+          div $7,$1
+          div $3,3
+          mul $2,$5
+        lpe
+        add $4,$3
+        sub $5,6
+        mod $8,2
+        sub $4,$3
+        div $8,$0
+        add $6,3
+        sub $2,3
+        mod $3,4
+        sub $7,7
+        add $0,2
+        mov $7,8
+        mov $12,$11
+        lpb $12,1
+          mov $10,$1
+          sub $12,1
+        lpe
+      lpe
+      lpb $9,1
+        sub $10,$1
+        mov $9,0
+      lpe
+      mov $1,$10
+      div $1,5
+      add $1,1
+      add $14,$1
+    lpe
+    mov $1,$14
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20

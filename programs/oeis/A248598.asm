@@ -1,0 +1,136 @@
+; A248598: a(n) = (2*n+23)*n*(n-1), a coefficient appearing in the formula a(n)*Pi/324+n+1 giving the average number of regions into which n random planes divide the cube.
+; 0,0,54,174,372,660,1050,1554,2184,2952,3870,4950,6204,7644,9282,11130,13200,15504,18054,20862,23940,27300,30954,34914,39192,43800,48750,54054,59724,65772,72210,79050,86304,93984,102102,110670,119700
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $13,$0
+    mov $15,$0
+    add $15,1
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      sub $0,$15
+      mov $9,$0
+      mov $11,2
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        add $0,$11
+        sub $0,1
+        mov $4,$0
+        lpb $0,1
+          mov $5,7
+          mov $1,1
+          mov $2,$1
+          mul $1,$4
+          mov $8,2
+          div $2,5
+          mul $4,2
+          mov $2,$1
+          mov $7,3
+          add $4,1
+          sub $0,$0
+          mov $6,$0
+          div $2,2
+          add $1,1
+          mov $2,3
+          sub $7,8
+          mov $5,6
+          mul $2,$5
+          pow $8,$8
+          mov $3,7
+          add $1,1
+          add $5,$3
+          mul $8,2
+          pow $3,7
+          pow $2,$8
+          sub $0,$2
+          mod $5,2
+          add $8,6
+          sub $0,$8
+          mov $0,7
+          mov $4,$0
+          sub $0,1
+          add $5,$6
+          pow $7,$6
+          mul $5,$4
+          sub $2,$0
+          mul $1,2
+          sub $7,5
+          div $7,5
+          div $7,2
+          div $4,2
+          pow $7,$4
+          mov $0,1
+          div $4,2
+          mul $5,2
+          mul $4,$0
+          mul $5,$4
+          div $3,2
+          mul $8,$0
+          pow $6,6
+          sub $3,$3
+          mod $2,$5
+          mul $3,2
+          div $5,7
+          mod $7,7
+          div $3,3
+          add $1,1
+          mod $3,2
+          add $2,$7
+          mov $6,2
+          pow $3,6
+          mov $6,7
+          sub $8,8
+          gcd $6,8
+          mul $3,$0
+          mov $6,$2
+          fac $6
+        lpe
+        mul $3,2
+        div $3,7
+        add $5,3
+        div $4,8
+        div $4,2
+        mov $7,$2
+        sub $6,1
+        add $0,$5
+        mov $4,$8
+        add $4,2
+        mov $12,$11
+        lpb $12,1
+          mov $10,$1
+          sub $12,1
+        lpe
+      lpe
+      lpb $9,1
+        sub $10,$1
+        mov $9,0
+      lpe
+      mov $1,$10
+      mul $1,6
+      add $14,$1
+    lpe
+    mov $1,$14
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20

@@ -1,0 +1,136 @@
+; A206806: Sum_{0<j<k<=n} s(k)-s(j), where s(j)=A002620(j) is the j-th quarter-square.
+; 1,4,13,30,62,112,190,300,455,660,931,1274,1708,2240,2892,3672,4605,5700,6985,8470,10186,12144,14378,16900,19747,22932,26495,30450,34840,39680,45016,50864,57273,64260,71877,80142,89110,98800,109270,120540,132671,145684
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $13,$0
+    mov $15,$0
+    add $15,1
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      sub $0,$15
+      mov $9,$0
+      mov $11,2
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        add $0,$11
+        sub $0,1
+        mov $5,$0
+        mov $1,$5
+        div $0,7
+        mov $4,3
+        mov $0,7
+        mov $6,$1
+        mov $8,2
+        mov $0,2
+        add $6,1
+        fac $4
+        mov $7,4
+        div $4,5
+        add $5,1
+        mov $3,8
+        div $1,$0
+        lpb $0,1
+          mov $4,$1
+          mov $6,3
+          div $4,$0
+          gcd $8,$0
+          div $4,$3
+          div $1,$0
+          add $0,1
+          sub $7,2
+          mov $2,0
+          sub $1,$3
+          sub $8,$6
+          pow $8,3
+          pow $0,2
+          div $8,3
+          add $0,8
+          mod $6,$3
+          pow $0,2
+          mod $7,8
+          sub $3,6
+          mod $4,3
+          gcd $2,6
+          add $8,1
+          fac $7
+          mul $5,6
+          fac $8
+          sub $7,$4
+          fac $1
+          add $4,5
+          mul $8,$8
+          pow $0,3
+          mul $4,2
+          mul $1,6
+          mov $6,6
+          add $5,4
+          mov $0,$6
+          div $8,$1
+          sub $7,5
+          add $0,$8
+          div $5,$2
+          div $4,$4
+          mul $7,4
+          mov $2,0
+          sub $2,$2
+          div $2,3
+          mul $3,5
+          mul $8,$0
+          add $4,2
+          mov $6,8
+          mul $0,5
+          mov $5,7
+          sub $8,$6
+          sub $1,3
+          mul $5,5
+          sub $0,1
+        lpe
+        mov $2,$0
+        sub $7,3
+        mul $1,$5
+        mul $5,$7
+        pow $5,$0
+        sub $0,1
+        div $2,2
+        add $8,$5
+        add $8,8
+        mov $12,$11
+        lpb $12,1
+          mov $10,$1
+          sub $12,1
+        lpe
+      lpe
+      lpb $9,1
+        sub $10,$1
+        mov $9,0
+      lpe
+      mov $1,$10
+      add $1,1
+      add $14,$1
+    lpe
+    mov $1,$14
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20

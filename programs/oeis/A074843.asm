@@ -1,0 +1,116 @@
+; A074843: Quadruplets: base 10 representation is the juxtaposition of four identical strings.
+; 1111,2222,3333,4444,5555,6666,7777,8888,9999,10101010,11111111,12121212,13131313,14141414,15151515,16161616,17171717,18181818,19191919,20202020,21212121,22222222,23232323,24242424,25252525
+
+mov $13,$0
+mov $15,$0
+add $15,1
+lpb $15,1
+  clr $0,13
+  sub $15,1
+  mov $0,$13
+  sub $0,$15
+  mov $9,$0
+  mov $11,2
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    add $0,$11
+    sub $0,1
+    mov $7,2
+    mod $7,2
+    mov $4,1
+    mov $2,$0
+    sub $2,$4
+    lpb $2,1
+      lpb $4,1
+        sub $4,$2
+        mov $2,7
+        mov $8,$7
+        add $8,$2
+        mov $1,$7
+      lpe
+      mul $4,2
+      add $1,2
+      mov $6,5
+      pow $7,8
+      sub $4,$8
+      lpb $5,1
+        mul $4,2
+        fac $8
+        add $2,8
+        sub $1,$1
+        mul $6,2
+        div $7,8
+        div $1,2
+        mov $5,6
+        sub $5,$2
+        mov $3,$6
+        pow $0,2
+        mul $6,$8
+        mod $8,3
+        add $8,$5
+        mov $2,$5
+        mul $2,$3
+        div $0,8
+        add $3,$0
+      lpe
+      mul $3,2
+      pow $8,$8
+      gcd $7,2
+      add $1,$5
+      pow $3,$4
+      add $6,1
+      gcd $8,$1
+      mod $7,2
+      add $1,1
+      gcd $1,6
+      lpb $6,1
+        mul $4,$1
+        div $8,6
+        add $1,$8
+        sub $6,$2
+        mul $3,$0
+        mod $5,8
+        add $6,$7
+        pow $0,$8
+        pow $5,$7
+      lpe
+      sub $6,$6
+      div $1,2
+      mul $1,$4
+      mov $5,1
+      sub $2,1
+      mod $2,2
+      div $1,8
+      sub $2,6
+      mul $3,4
+      gcd $2,8
+      mov $2,7
+      add $3,4
+    lpe
+    sub $8,5
+    sub $8,$0
+    mul $5,$6
+    gcd $0,$7
+    mul $6,$3
+    mul $2,6
+    div $8,2
+    add $1,$3
+    mov $12,$11
+    lpb $12,1
+      mov $10,$1
+      sub $12,1
+    lpe
+  lpe
+  lpb $9,1
+    sub $10,$1
+    mov $9,0
+  lpe
+  mov $1,$10
+  div $1,4
+  mul $1,1008990
+  add $1,1111
+  add $14,$1
+lpe
+mov $1,$14

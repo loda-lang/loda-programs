@@ -1,0 +1,125 @@
+; A050250: Number of nonzero palindromes less than 10^n.
+; 9,18,108,198,1098,1998,10998,19998,109998,199998,1099998,1999998,10999998,19999998,109999998,199999998,1099999998,1999999998,10999999998,19999999998,109999999998,199999999998,1099999999998,1999999999998,10999999999998
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $3,3
+      mov $8,0
+      sub $8,1
+      mov $6,$3
+      mov $4,2
+      mod $8,$6
+      mov $2,$8
+      mov $6,$3
+      mov $7,$0
+      add $0,8
+      mov $1,8
+      div $0,$3
+      mov $5,7
+      fac $0
+      add $1,3
+      mul $7,4
+      mov $4,$8
+      mod $0,2
+      div $4,$1
+      sub $5,$8
+      mul $5,$0
+      sub $3,3
+      div $0,$1
+      mul $6,5
+      fac $2
+      add $0,$8
+      pow $0,$7
+      div $8,2
+      sub $1,1
+      pow $0,$0
+      sub $5,8
+      mod $4,7
+      pow $5,7
+      pow $5,$6
+      sub $3,$0
+      add $5,$2
+      sub $8,7
+      div $7,8
+      pow $3,$4
+      mov $8,0
+      mul $2,6
+      pow $6,2
+      add $6,$2
+      pow $1,$7
+      add $4,$4
+      add $3,$0
+      mul $5,2
+      mul $4,7
+      gcd $7,2
+      div $5,$6
+      mov $6,7
+      add $2,1
+      mov $8,$6
+      sub $3,$8
+      gcd $5,2
+      fac $4
+      pow $5,3
+      sub $5,4
+      mov $8,2
+      mul $5,$8
+      pow $2,2
+      mul $2,$4
+      lpb $0,1
+        mul $3,$8
+        sub $3,5
+        mul $1,$3
+        gcd $6,5
+        gcd $0,$6
+        sub $0,1
+        mov $0,$7
+        sub $2,$2
+        gcd $4,2
+        sub $5,1
+        mul $1,2
+        add $1,5
+        mul $0,$8
+        div $0,2
+      lpe
+      pow $0,$2
+      div $0,4
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    mul $1,9
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17

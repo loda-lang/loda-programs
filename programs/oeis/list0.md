@@ -744,6 +744,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008730](http://oeis.org/A008730) ([L05 program](A008730.asm)): Molien series 1/((1-x)^2*(1-x^12)) for 3-dimensional group [2,n] = *22n.
 * [A008731](http://oeis.org/A008731) ([L07 program](A008731.asm)): Molien series for 3-dimensional group [2, n] = *22n.
 * [A008732](http://oeis.org/A008732) ([L05 program](A008732.asm)): Molien series for 3-dimensional group [2,n] = *22n.
+* [A008737](http://oeis.org/A008737) ([L26 program](A008737.asm)): a(n) = floor(n/6)*ceiling(n/6).
 * [A008738](http://oeis.org/A008738) ([L04 program](A008738.asm)): a(n) = floor((n^2 + 1)/5).
 * [A008739](http://oeis.org/A008739) ([L08 program](A008739.asm)): Molien series for 3-dimensional group [2+,n] = 2*(n/2).
 * [A008740](http://oeis.org/A008740) ([L08 program](A008740.asm)): Molien series for 3-dimensional group [2+,n] = 2*(n/2).
@@ -2177,6 +2178,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A028347](http://oeis.org/A028347) ([L03 program](A028347.asm)): a(n) = n^2 - 4.
 * [A028356](http://oeis.org/A028356) ([L04 program](A028356.asm)): Simple periodic sequence underlying clock sequence A028354.
 * [A028357](http://oeis.org/A028357) ([L16 program](A028357.asm)): Partial sums of A028356.
+* [A028358](http://oeis.org/A028358) ([L28 program](A028358.asm)): Partial sums of A028357.
 * [A028375](http://oeis.org/A028375) ([L12 program](A028375.asm)): Squares of (odd numbers not divisible by 5).
 * [A028387](http://oeis.org/A028387) ([L04 program](A028387.asm)): a(n) = n + (n+1)^2.
 * [A028391](http://oeis.org/A028391) ([L07 program](A028391.asm)): a(n) = n - floor(sqrt(n)).
@@ -2331,6 +2333,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033138](http://oeis.org/A033138) ([L08 program](A033138.asm)): a(n) = floor(2^(n+2)/7).
 * [A033156](http://oeis.org/A033156) ([L12 program](A033156.asm)): a(1) = 1; for m >= 2, a(n) = a(n-1) + floor(a(n-1)/(n-1)) + 2.
 * [A033171](http://oeis.org/A033171) ([L11 program](A033171.asm)): Number of days in n years (n=4 is the first leap year).
+* [A033172](http://oeis.org/A033172) ([L32 program](A033172.asm)): Number of days in n years (n=3 is the first leap year).
+* [A033173](http://oeis.org/A033173) ([L21 program](A033173.asm)): Number of days in n years (n=2 is the first leap year).
 * [A033174](http://oeis.org/A033174) ([L11 program](A033174.asm)): Number of days in n years (n=1 is the first leap year).
 * [A033182](http://oeis.org/A033182) ([L18 program](A033182.asm)): Number of pairs (p,q) such that 5*p + 6*q = n.
 * [A033183](http://oeis.org/A033183) ([L11 program](A033183.asm)): a(n) = number of pairs (p,q) such that 4*p + 9*q = n.
@@ -2988,6 +2992,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044802](http://oeis.org/A044802) ([L15 program](A044802.asm)): Numbers n such that string 8,9 occurs in the base 10 representation of n but not of n+1.
 * [A044812](http://oeis.org/A044812) ([L03 program](A044812.asm)): Numbers n such that string 9,9 occurs in the base 10 representation of n but not of n+1.
 * [A044833](http://oeis.org/A044833) ([L20 program](A044833.asm)): Positive integers having more base-7 runs of even length than odd.
+* [A044834](http://oeis.org/A044834) ([L34 program](A044834.asm)): Positive integers having more base-8 runs of even length than odd.
+* [A044835](http://oeis.org/A044835) ([L17 program](A044835.asm)): Positive integers having more base-9 runs of even length than odd.
+* [A044836](http://oeis.org/A044836) ([L40 program](A044836.asm)): Positive integers having more base-10 runs of even length than odd.
+* [A044839](http://oeis.org/A044839) ([L20 program](A044839.asm)): Positive integers having more base-13 runs of even length than odd.
+* [A044842](http://oeis.org/A044842) ([L37 program](A044842.asm)): Positive integers having more base-16 runs of even length than odd.
 * [A044941](http://oeis.org/A044941) ([L06 program](A044941.asm)): Number of runs of even length in base 10 representation of n.
 * [A045572](http://oeis.org/A045572) ([L07 program](A045572.asm)): Numbers that are odd but not divisible by 5.
 * [A045618](http://oeis.org/A045618) ([L09 program](A045618.asm)): Partial sums of A000337(n+4), n >= 0.
@@ -3776,7 +3785,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A053754](http://oeis.org/A053754) ([L10 program](A053754.asm)): If n is in the sequence then 2n and 2n+1 are not (and 0 is in the sequence); when written in binary n has an even number of digits (0 has 0 digits).
 * [A053755](http://oeis.org/A053755) ([L04 program](A053755.asm)): a(n) = 4*n^2 + 1.
 * [A053793](http://oeis.org/A053793) ([L04 program](A053793.asm)): n^2+n modulo 7.
-* [A053794](http://oeis.org/A053794) ([L10 program](A053794.asm)): a(n) = (n^2 + n) modulo 8.
+* [A053794](http://oeis.org/A053794) ([L05 program](A053794.asm)): a(n) = (n^2 + n) modulo 8.
 * [A053796](http://oeis.org/A053796) ([L05 program](A053796.asm)): n^2+n modulo 5.
 * [A053798](http://oeis.org/A053798) ([L21 program](A053798.asm)): Number of basis partitions of n+16 with Durfee square size 4.
 * [A053799](http://oeis.org/A053799) ([L13 program](A053799.asm)): Number of basis partitions of n+9 with Durfee square size 3.
@@ -5552,6 +5561,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084537](http://oeis.org/A084537) ([L04 program](A084537.asm)): Duplicate of A002061.
 * [A084556](http://oeis.org/A084556) ([L05 program](A084556.asm)): n occurs n! times.
 * [A084558](http://oeis.org/A084558) ([L13 program](A084558.asm)): a(0) = 0; for n >= 1: a(n) = largest m such that n >= m!.
+* [A084569](http://oeis.org/A084569) ([L53 program](A084569.asm)): Partial sums of A084570.
 * [A084570](http://oeis.org/A084570) ([L12 program](A084570.asm)): Partial sums of A084263.
 * [A084634](http://oeis.org/A084634) ([L08 program](A084634.asm)): Binomial transform of 1,1,1,2,2,2,2,...
 * [A084639](http://oeis.org/A084639) ([L05 program](A084639.asm)): Expansion of x*(1+2*x)/((1+x)*(1-x)*(1-2*x)).

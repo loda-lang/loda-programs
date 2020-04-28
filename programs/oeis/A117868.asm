@@ -1,0 +1,125 @@
+; A117868: Number of palindromes (in base 9) below 9^n.
+; 8,16,88,160,808,1456,7288,13120,65608,118096,590488,1062880,5314408,9565936,47829688,86093440,430467208,774840976,3874204888,6973568800,34867844008,62762119216,313810596088,564859072960,2824295364808,5083731656656,25418658283288
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $5,2
+      mov $2,$0
+      mov $4,5
+      div $0,$5
+      mov $1,$5
+      mov $3,$5
+      add $1,7
+      mov $2,$0
+      sub $4,8
+      mov $6,3
+      mov $7,5
+      mod $5,$7
+      lpb $2,1
+        fac $4
+        div $0,$4
+        mov $1,$0
+        lpb $4,1
+          sub $4,$4
+          mul $3,2
+          mul $6,$6
+          mov $8,5
+          mod $5,7
+          add $0,$2
+          add $3,$0
+          sub $0,$3
+          mov $8,5
+        lpe
+        div $2,2
+        add $0,$6
+        mov $5,3
+        lpb $5,1
+          div $6,$0
+          pow $0,6
+          sub $5,$4
+          fac $8
+          mod $5,5
+          fac $7
+          add $1,5
+          mov $8,$5
+          mov $1,$1
+          fac $6
+          mov $6,$3
+        lpe
+        sub $1,2
+        mul $4,$2
+        mov $0,7
+        mov $4,0
+        pow $5,$7
+        div $3,8
+        lpb $6,1
+          sub $3,$3
+          add $2,$7
+          mul $2,$8
+          fac $1
+          div $5,$5
+          sub $6,$4
+          mod $4,8
+          pow $0,2
+          mov $1,$3
+        lpe
+        pow $4,7
+        add $2,$8
+        sub $2,1
+        sub $6,$0
+        mov $0,1
+        mul $1,2
+        pow $3,5
+        pow $2,2
+        mul $3,2
+        mov $3,$2
+        sub $3,$3
+      lpe
+      div $3,$5
+      div $7,7
+      mul $3,2
+      mod $6,2
+      pow $1,$2
+      pow $8,$2
+      div $2,$3
+      sub $4,5
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    mul $1,8
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17

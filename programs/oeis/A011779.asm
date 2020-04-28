@@ -1,0 +1,118 @@
+; A011779: Expansion of 1/((1-x)^3*(1-x^3)^2).
+; 1,3,6,12,21,33,51,75,105,145,195,255,330,420,525,651,798,966,1162,1386,1638,1926,2250,2610,3015,3465,3960,4510,5115,5775,6501,7293,8151,9087,10101,11193,12376,13650
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $12,$0
+  mov $14,$0
+  add $14,1
+  lpb $14,1
+    clr $0,12
+    sub $14,1
+    mov $0,$12
+    sub $0,$14
+    mov $9,$0
+    mov $11,$0
+    add $11,1
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      sub $0,$11
+      mov $7,5
+      mov $2,$0
+      mov $4,$0
+      mov $2,$0
+      mov $6,$0
+      mov $6,5
+      mov $1,$7
+      mov $4,1
+      mul $6,$7
+      mov $8,0
+      fac $1
+      mod $2,3
+      mul $4,8
+      div $6,7
+      add $0,4
+      sub $6,5
+      lpb $2,1
+        sub $0,$6
+        lpb $4,1
+          mov $3,$4
+          mov $3,8
+          sub $4,$4
+          mov $1,$4
+          mod $2,$7
+          mul $4,6
+        lpe
+        add $4,4
+        gcd $1,6
+        fac $1
+        pow $7,4
+        add $1,$3
+        mov $1,6
+        sub $7,$4
+        mov $5,5
+        add $3,7
+        mul $2,2
+        mul $1,$6
+        mul $8,$4
+        div $1,2
+        mov $3,3
+        div $3,5
+        gcd $2,$2
+        mod $4,2
+        mov $4,2
+        add $2,5
+        lpb $5,1
+          pow $4,2
+          sub $3,8
+          div $6,3
+          sub $7,6
+          sub $5,$4
+          sub $8,$8
+        lpe
+        div $5,3
+        mul $8,$2
+        sub $2,8
+        div $3,2
+        mov $1,3
+        sub $1,4
+        mul $0,2
+        mov $0,1
+        sub $2,$2
+        lpb $6,1
+          mov $7,8
+          sub $8,4
+          sub $7,1
+          gcd $1,2
+          sub $2,7
+          mov $4,$4
+          sub $6,$4
+          div $4,$4
+        lpe
+        div $3,$0
+        sub $4,3
+        sub $5,6
+        sub $2,1
+        mov $2,$2
+      lpe
+      mov $1,$0
+      mul $6,$1
+      sub $1,1
+      div $1,3
+      add $10,$1
+    lpe
+    mov $1,$10
+    add $13,$1
+  lpe
+  mov $1,$13
+  add $16,$1
+lpe
+mov $1,$16

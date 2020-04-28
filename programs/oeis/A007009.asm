@@ -1,0 +1,119 @@
+; A007009: Number of 3-voter voting schemes with n linearly ranked choices.
+; 1,4,12,27,54,96,160,250,375,540,756,1029,1372,1792,2304,2916,3645,4500,5500,6655,7986,9504,11232,13182,15379,17836,20580,23625,27000,30720,34816,39304,44217,49572,55404,61731,68590,76000,84000,92610,101871,111804
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $12,$0
+  mov $14,$0
+  add $14,1
+  lpb $14,1
+    clr $0,12
+    sub $14,1
+    mov $0,$12
+    sub $0,$14
+    mov $9,$0
+    mov $11,$0
+    add $11,1
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      sub $0,$11
+      mov $8,6
+      add $8,$0
+      mov $4,0
+      mov $2,$0
+      mov $3,$2
+      sub $0,7
+      mov $6,$3
+      mov $1,$8
+      gcd $6,$8
+      div $1,2
+      pow $1,5
+      gcd $6,8
+      mov $5,$6
+      mov $7,3
+      div $7,$7
+      mul $8,$5
+      div $8,$5
+      mod $0,$5
+      add $5,7
+      div $1,4
+      mul $1,$4
+      lpb $0,1
+        mov $3,$1
+        add $2,$2
+        gcd $8,2
+        add $2,$6
+        sub $6,5
+        mul $3,$5
+        mul $6,3
+        pow $2,6
+        pow $0,5
+        mov $1,$6
+        div $6,2
+        mov $3,$3
+        add $4,$5
+        mov $5,3
+        mov $4,6
+        mul $7,4
+        add $5,$0
+        mul $8,$2
+        mul $8,3
+        mov $7,6
+        add $6,6
+        sub $0,1
+        mul $2,$7
+        add $4,$4
+        add $0,1
+        add $6,8
+        div $4,6
+        gcd $2,$7
+        sub $3,1
+        div $7,8
+        mov $1,$6
+        div $2,$2
+        sub $6,$8
+        sub $7,$2
+        gcd $1,$4
+        mov $1,5
+        pow $5,$0
+        div $6,$2
+        mov $3,$6
+        gcd $4,$2
+        div $6,$4
+        div $3,$2
+      lpe
+      add $2,1
+      pow $5,6
+      mov $7,$5
+      sub $3,8
+      mul $2,$6
+      pow $7,2
+      mul $3,$8
+      add $1,2
+      mul $8,$6
+      add $8,7
+      mod $3,2
+      add $0,$5
+      div $6,5
+      mul $1,$2
+      pow $4,$7
+      sub $1,4
+      div $1,4
+      add $1,1
+      add $10,$1
+    lpe
+    mov $1,$10
+    add $13,$1
+  lpe
+  mov $1,$13
+  add $16,$1
+lpe
+mov $1,$16

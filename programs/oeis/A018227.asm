@@ -1,0 +1,125 @@
+; A018227: Magic numbers: atoms with full shells containing any of these numbers of electrons are considered electronically stable.
+; 2,10,18,36,54,86,118,168,218,290,362,460,558,686,814,976,1138,1338,1538,1780,2022,2310,2598,2936,3274,3666,4058,4508,4958,5470,5982,6560,7138,7786,8434,9156,9878,10678,11478,12360,13242,14210,15178
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $4,$0
+      add $4,$0
+      mov $7,2
+      mul $7,2
+      add $4,2
+      sub $0,$4
+      mov $2,8
+      mov $1,5
+      mov $3,3
+      div $4,$7
+      pow $0,$0
+      add $4,1
+      mov $0,2
+      div $0,$2
+      pow $3,5
+      mov $6,1
+      mul $3,$0
+      mov $5,1
+      sub $7,8
+      add $6,$7
+      mod $2,3
+      mov $1,$4
+      mov $8,$6
+      div $6,$4
+      sub $8,5
+      add $4,$7
+      lpb $0,1
+        mul $1,$1
+        pow $8,8
+        mod $4,2
+        pow $7,$0
+        add $4,7
+        add $7,2
+        mov $7,$4
+        pow $2,5
+        sub $6,2
+        gcd $4,6
+        mov $7,$3
+        sub $0,$8
+        mod $7,2
+        sub $0,1
+        mod $6,4
+        mul $6,2
+        add $1,1
+        div $1,$4
+        sub $1,$2
+      lpe
+      mul $0,2
+      mul $5,$1
+      mul $0,$3
+      mov $6,$6
+      add $5,5
+      mov $7,2
+      mul $4,2
+      sub $6,$2
+      mul $1,$1
+      pow $3,8
+      add $0,8
+      mod $6,5
+      mov $2,3
+      div $5,8
+      mul $5,8
+      mov $2,$1
+      pow $0,6
+      add $2,$2
+      pow $6,4
+      div $6,$4
+      div $2,3
+      mov $5,$8
+      pow $5,$0
+      sub $2,$8
+      mul $3,$0
+      pow $7,$8
+      sub $1,$5
+      div $5,2
+      sub $3,5
+      fac $8
+      sub $5,$2
+      gcd $8,2
+      pow $4,8
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    mul $1,2
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17

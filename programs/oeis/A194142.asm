@@ -1,0 +1,125 @@
+; A194142: Sum{floor(j*(3-sqrt(3)) : 1<=j<=n}; n-th partial sum of Beatty sequence for 3-sqrt(3).
+; 1,3,6,11,17,24,32,42,53,65,78,93,109,126,145,165,186,208,232,257,283,310,339,369,400,432,466,501,537,575,614,654,695,738,782,827,873,921,970,1020,1071,1124,1178,1233,1290,1348,1407,1467,1529,1592,1656
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $8,0
+      mov $1,$0
+      mov $7,$8
+      mov $5,$8
+      mov $6,5
+      mov $2,6
+      sub $6,$0
+      mov $3,2
+      pow $0,2
+      pow $3,4
+      add $0,$7
+      mov $0,6
+      mov $5,$8
+      sub $3,5
+      mod $3,2
+      pow $5,$6
+      mul $5,2
+      add $3,$8
+      mul $1,4
+      sub $7,$8
+      add $8,$3
+      fac $8
+      sub $7,4
+      mov $4,4
+      mul $8,7
+      mod $8,$8
+      mov $5,0
+      mov $8,1
+      div $8,$0
+      gcd $8,$5
+      gcd $0,2
+      gcd $4,$2
+      pow $0,4
+      sub $7,1
+      div $1,$3
+      sub $2,2
+      div $0,8
+      div $4,8
+      add $6,2
+      add $1,$2
+      mod $8,$3
+      pow $6,3
+      div $1,5
+      sub $7,$1
+      mul $8,7
+      add $0,$3
+      pow $8,6
+      mul $8,$7
+      div $5,4
+      add $5,1
+      add $5,$2
+      mov $3,6
+      mov $4,3
+      mul $8,6
+      div $2,$2
+      div $7,5
+      mul $8,$5
+      div $1,3
+      lpb $0,1
+        add $8,$8
+        mul $2,$4
+        mov $5,$6
+        pow $4,2
+        sub $3,$7
+        pow $0,2
+        add $1,8
+        mul $0,$6
+        mul $4,$3
+        add $5,$6
+        mov $1,4
+        mov $3,1
+        div $1,7
+        div $2,$0
+        mod $6,$0
+        mov $8,$7
+        pow $6,5
+        mov $3,2
+        mov $1,$7
+        sub $0,1
+      lpe
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    add $1,1
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17
