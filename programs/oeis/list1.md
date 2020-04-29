@@ -957,6 +957,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122879](http://oeis.org/A122879) ([L06 program](A122879.asm)): Periodic sequence of period 21.
 * [A122973](http://oeis.org/A122973) ([L10 program](A122973.asm)): Number of vertices on the surface of an icosahedron.
 * [A122983](http://oeis.org/A122983) ([L05 program](A122983.asm)): a(n) = (2 + (-1)^n + 3^n)/4.
+* [A123010](http://oeis.org/A123010) ([L22 program](A123010.asm)): a(1)=1; a(2)=0; a(3)=4; a(4)=16; a(n)=5a(n-1)+a(n-2)-5a(n-3) for n>=5.
 * [A123068](http://oeis.org/A123068) ([L07 program](A123068.asm)): Numbers represented by the "Little Methuselah" quadratic form x^2 + 2*y^2 + y*z + 4*z^2.
 * [A123108](http://oeis.org/A123108) ([L03 program](A123108.asm)): a(0)=1, a(1)=0, a(2)=1, a(3)=1, a(n) = a(n-1) + a(n-2) - a(n-3) for n > 3.
 * [A123109](http://oeis.org/A123109) ([L07 program](A123109.asm)): a(0) = 1, a(1) = 3, a(n) = 3*a(n-1) + 3 for n > 1.
@@ -1460,6 +1461,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132734](http://oeis.org/A132734) ([L13 program](A132734.asm)): Row sums of triangle A132733.
 * [A132736](http://oeis.org/A132736) ([L05 program](A132736.asm)): Row sums of triangle A132735.
 * [A132738](http://oeis.org/A132738) ([L10 program](A132738.asm)): Row sums of triangle A132737.
+* [A132740](http://oeis.org/A132740) ([L10 program](A132740.asm)): Largest divisor of n coprime to 10.
 * [A132741](http://oeis.org/A132741) ([L03 program](A132741.asm)): Largest divisor of n having the form 2^i*5^j.
 * [A132750](http://oeis.org/A132750) ([L08 program](A132750.asm)): A132749 * [1, 2, 3, ...] = A007318 * A065190.
 * [A132753](http://oeis.org/A132753) ([L07 program](A132753.asm)): 2^(n+1) - n + 1.
@@ -1651,6 +1653,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135276](http://oeis.org/A135276) ([L04 program](A135276.asm)): a(0)=0, a(1)=1; for n>1, a(n) = a(n-1) + n^0 if n odd, a(n) = a(n-1) + n^1 if n is even.
 * [A135295](http://oeis.org/A135295) ([L07 program](A135295.asm)): a(n) = n^(number of decimal digits of n).
 * [A135300](http://oeis.org/A135300) ([L06 program](A135300.asm)): Positive X-values of solutions to the equation 1!*X^4 - 2!*(X + 1)^3 + 3!*(X + 2)^2 - (4^2)*(X + 3) + 5^2 = Y^3.
+* [A135301](http://oeis.org/A135301) ([L29 program](A135301.asm)): a(1)=1, a(n)=a(n-1)+n^0 if n odd, a(n)=a(n-1)+ n^2 if n is even.
 * [A135318](http://oeis.org/A135318) ([L17 program](A135318.asm)): a(n) = a(n-2) + 2*a(n-4), with a[0..3] = [1, 1, 1, 2].
 * [A135344](http://oeis.org/A135344) ([L12 program](A135344.asm)): a(n) = 3*a(n-1) - a(n-3) + 3*a(n-4).
 * [A135351](http://oeis.org/A135351) ([L13 program](A135351.asm)): a(n) = (2^n + 3 - 7*(-1)^n + 3*0^n)/6; or a(0) = 0 and for n > 0, a(n) = A005578(n-1) - (-1)^n.
@@ -2372,7 +2375,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154549](http://oeis.org/A154549) ([L03 program](A154549.asm)): a(n) = 111111*n.
 * [A154560](http://oeis.org/A154560) ([L09 program](A154560.asm)): (n+3)^2*n/2 + 1.
 * [A154575](http://oeis.org/A154575) ([L05 program](A154575.asm)): a(n) = 2*n^2 + 12*n + 4.
-* [A154576](http://oeis.org/A154576) ([L08 program](A154576.asm)): a(n) = 2*n^2 + 14*n + 5.
+* [A154576](http://oeis.org/A154576) ([L06 program](A154576.asm)): a(n) = 2*n^2 + 14*n + 5.
 * [A154590](http://oeis.org/A154590) ([L06 program](A154590.asm)): 2n^2+16n+6.
 * [A154591](http://oeis.org/A154591) ([L07 program](A154591.asm)): a(n) = 2*n^2 + 18*n + 7.
 * [A154599](http://oeis.org/A154599) ([L05 program](A154599.asm)): a(n) = 2*n^2 + 20*n + 8.
@@ -2404,7 +2407,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155158](http://oeis.org/A155158) ([L11 program](A155158.asm)): Period 4: repeat [1, 5, 7, 3].
 * [A155167](http://oeis.org/A155167) ([L15 program](A155167.asm)): (L)-sieve transform of A004767 = {3,7,11,15,...,4n-1,...}.
 * [A155179](http://oeis.org/A155179) ([L14 program](A155179.asm)): a(n)=4*a(n-1)+a(n-2), n>2; a(0)=1, a(1)=3, a(2)=12.
-* [A155212](http://oeis.org/A155212) ([L06 program](A155212.asm)): a(n) = (n^2 + 9*n + 4)/2.
+* [A155212](http://oeis.org/A155212) ([L05 program](A155212.asm)): a(n) = (n^2 + 9*n + 4)/2.
 * [A155449](http://oeis.org/A155449) ([L10 program](A155449.asm)): Numbers n == 6 or 11 mod 17.
 * [A155450](http://oeis.org/A155450) ([L10 program](A155450.asm)): Numbers equal to 5 or 18 mod 23.
 * [A155461](http://oeis.org/A155461) ([L05 program](A155461.asm)): a(n) = n^2 + 52*n + 30.

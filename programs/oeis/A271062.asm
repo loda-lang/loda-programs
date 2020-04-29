@@ -1,0 +1,116 @@
+; A271062: Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 261", based on the 5-celled von Neumann neighborhood.
+; 1,9,10,58,59,179,180,404,405,765,766,1294,1295,2023,2024,2984,2985,4209,4210,5730,5731,7579,7580,9788,9789,12389,12390,15414,15415,18895,18896,22864,22865,27353,27354,32394,32395,38019,38020,44260,44261,51149,51150
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $8,$0
+  mov $0,$0
+  mov $6,$0
+  add $8,2
+  mov $10,$6
+  mov $6,$10
+  mov $7,10
+  mov $4,$6
+  add $8,$6
+  mul $6,$7
+  mul $7,5
+  mov $2,$8
+  div $8,$2
+  fac $8
+  mov $4,3
+  mul $2,$6
+  mov $1,3
+  sub $0,4
+  mov $3,3
+  lpb $0,1
+    mov $5,7
+    div $6,8
+    sub $8,9
+    mov $5,$1
+    fac $4
+    gcd $2,$5
+    mov $8,4
+    mov $10,2
+    mov $9,6
+    mov $5,$8
+    div $8,$3
+    gcd $6,2
+    div $10,4
+    fac $10
+    mov $10,$8
+    mov $8,7
+    sub $4,$6
+    mov $8,9
+    mov $0,$1
+    add $0,3
+    mod $1,$7
+    mod $3,$10
+    pow $5,$3
+    fac $10
+    div $4,$0
+    sub $0,1
+    add $10,$9
+    mul $0,$8
+    div $7,2
+    mul $1,$7
+    mod $9,2
+    sub $10,$3
+    add $0,$3
+    add $3,8
+    div $10,8
+    sub $1,1
+    pow $6,9
+    fac $8
+    sub $7,$8
+    add $1,$3
+    mov $2,7
+    sub $8,$1
+    mul $6,$0
+    mov $7,$5
+    sub $4,4
+    mul $2,6
+    div $6,2
+    mul $7,8
+    mov $7,$2
+  lpe
+  mov $9,5
+  add $9,$10
+  sub $3,7
+  sub $6,$8
+  mov $3,8
+  sub $0,3
+  add $0,$1
+  mul $10,$8
+  mul $4,2
+  add $8,6
+  add $1,2
+  add $7,$6
+  sub $1,8
+  add $1,$2
+  gcd $5,$9
+  div $4,$4
+  pow $6,$4
+  sub $1,5
+  div $0,3
+  add $3,6
+  add $0,10
+  add $2,2
+  mod $10,2
+  div $5,$4
+  add $8,$7
+  add $7,8
+  div $5,$8
+  mul $1,$10
+  mul $2,$4
+  add $10,3
+  div $1,5
+  add $1,1
+  add $12,$1
+lpe
+mov $1,$12

@@ -1,98 +1,20 @@
 ; A098871: Sums of distinct powers of 4 plus 1.
 ; 1,2,5,6,17,18,21,22,65,66,69,70,81,82,85,86,257,258,261,262,273,274,277,278,321,322,325,326,337,338,341,342,1025,1026,1029,1030,1041,1042,1045,1046,1089,1090,1093,1094,1105,1106,1109,1110,1281,1282,1285,1286
 
-mov $9,$0
-mov $11,$0
-add $11,1
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  sub $0,$11
-  mov $3,$0
-  mov $6,$0
+mov $4,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$4
+  sub $0,$2
   mov $1,2
-  div $3,3
-  mov $4,$0
-  mov $5,7
   pow $1,$0
-  mov $7,2
-  mov $2,3
-  div $5,6
   gcd $1,$0
-  add $4,1
   pow $1,2
-  div $3,$5
-  mov $8,$6
-  mul $5,3
-  mov $8,$8
-  sub $6,$8
-  div $0,$4
-  pow $6,3
-  add $3,$5
-  fac $5
-  sub $5,2
-  fac $0
-  mul $5,$1
-  mov $2,1
-  pow $7,$7
-  mod $5,3
-  lpb $0,1
-    div $8,$1
-    mod $0,5
-    add $4,7
-    mul $2,$0
-    add $3,7
-    mov $7,$7
-    fac $5
-    sub $4,6
-    sub $8,3
-    pow $0,7
-    mov $6,3
-    mov $2,$6
-    mul $5,$3
-    add $8,7
-    add $1,$6
-    mov $4,7
-    div $0,6
-    mul $3,$3
-    mod $7,$7
-    div $3,$3
-    sub $4,$8
-    mul $7,$7
-    mod $1,2
-    div $3,4
-    div $4,6
-    div $5,3
-    sub $4,8
-    mov $7,6
-    div $4,2
-    mov $7,1
-    add $7,4
-    pow $8,2
-    mod $4,6
-    add $1,$3
-    mul $8,3
-    fac $7
-    fac $0
-    sub $1,$3
-    mul $0,4
-    mov $8,$7
-    add $0,7
-    mul $3,6
-    mov $6,$8
-    mov $5,3
-    mod $8,$6
-    sub $1,6
-    mov $6,$3
-    div $5,$7
-    sub $0,1
-    sub $2,$4
-  lpe
-  sub $1,1
   div $1,3
   mul $1,2
   add $1,1
-  add $10,$1
+  add $3,$1
 lpe
-mov $1,$10
+mov $1,$3

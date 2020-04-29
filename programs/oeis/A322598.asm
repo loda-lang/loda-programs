@@ -1,0 +1,108 @@
+; A322598: a(n) is the number of unlabeled rank-3 graded lattices with 3 coatoms and n atoms.
+; 1,3,8,13,20,29,39,50,64,78,94,112,131,151,174,197,222,249,277,306,338,370,404,440,477,515,556,597,640,685,731,778,828,878,930,984,1039,1095,1154,1213,1274,1337,1401,1466,1534,1602,1672,1744,1817
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $7,$0
+    mov $3,$0
+    mov $6,7
+    mov $1,$0
+    mov $2,2
+    sub $0,1
+    mov $0,3
+    mov $7,$2
+    mod $0,7
+    pow $3,8
+    mod $1,$0
+    add $0,4
+    gcd $3,$7
+    mov $7,$3
+    mul $2,$6
+    mov $4,$7
+    pow $6,5
+    add $0,8
+    mul $3,2
+    fac $2
+    mov $5,$6
+    add $5,8
+    mov $5,$0
+    pow $6,$1
+    add $1,$7
+    mov $0,$0
+    lpb $8,6
+      add $7,$4
+      pow $7,2
+      mov $8,2
+      sub $3,5
+      mul $3,8
+      sub $4,$5
+      sub $6,5
+      lpb $5,8
+        add $4,4
+        pow $0,2
+        pow $4,$1
+        mod $6,$1
+        mul $2,8
+        fac $3
+        lpb $8,8
+          mov $4,$7
+          mov $5,6
+          mul $1,7
+          sub $3,7
+          div $3,$0
+          pow $0,4
+          pow $7,$3
+          mul $8,$5
+          gcd $6,8
+          lpb $3,8
+            sub $4,5
+            mov $6,2
+            mov $7,4
+            mov $5,1
+            div $3,2
+            div $2,7
+            mov $6,$7
+          lpe
+          add $5,$6
+        lpe
+        mul $3,$3
+      lpe
+      sub $4,1
+      mod $6,2
+      sub $3,$8
+      mod $3,3
+      lpb $3,5
+        sub $3,1
+        add $4,2
+      lpe
+      div $3,$5
+      div $1,8
+      mul $1,2
+      sub $2,$2
+      mod $0,$8
+      sub $4,$6
+    lpe
+    mov $2,$5
+    add $7,1
+    mul $2,4
+    sub $1,1
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20

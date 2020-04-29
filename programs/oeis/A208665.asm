@@ -1,118 +1,24 @@
 ; A208665: Numbers that match odd ternary polynomials; see Comments.
 ; 3,6,27,30,33,54,57,60,243,246,249,270,273,276,297,300,303,486,489,492,513,516,519,540,543,546,2187,2190,2193,2214,2217,2220,2241,2244,2247,2430,2433,2436,2457,2460,2463,2484,2487,2490,2673,2676,2679
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
+mov $4,$0
+mov $3,$0
+add $3,1
+lpb $3,1
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
   add $0,1
-  mov $8,3
-  mul $0,5
-  mov $4,$0
-  pow $8,10
-  mov $9,$8
-  mov $3,$9
-  mov $6,$8
+  mov $7,3
+  pow $7,10
+  mov $6,$7
   pow $0,2
-  sub $8,10
-  div $4,$3
-  mul $4,10
-  pow $3,2
   mov $5,$0
-  div $8,8
-  mov $0,$3
-  add $5,$4
-  mov $7,1
-  mov $2,7
   gcd $6,$5
-  mov $4,2
-  add $3,$4
-  mul $5,$4
-  mul $8,8
-  mul $0,2
-  mul $0,$2
-  sub $0,9
-  mov $8,3
-  mov $5,8
-  mov $10,$5
-  sub $2,$6
-  mod $3,$5
-  sub $0,$6
-  mov $9,10
-  mov $3,$7
-  pow $4,$9
-  sub $10,4
   mov $1,$6
-  gcd $8,5
-  sub $10,10
-  add $1,$3
-  mov $7,6
-  mov $0,2
-  sub $6,$1
-  mul $7,$6
-  add $7,1
-  div $3,2
-  div $8,5
-  lpb $0,1
-    fac $3
-    sub $10,1
-    sub $10,1
-    sub $3,5
-    div $6,2
-    mul $6,$7
-    fac $8
-    sub $6,$8
-    pow $2,$1
-    add $3,6
-    mul $10,$5
-    mov $2,$7
-    add $0,$7
-    mod $5,$0
-    add $3,1
-    add $3,3
-    mul $0,$8
-    mul $2,2
-    mov $7,1
-    gcd $3,$4
-    mov $3,4
-    add $7,$0
-    gcd $9,$9
-    div $5,$7
-    div $7,3
-    pow $8,$9
-    mov $4,10
-    mul $1,10
-    sub $4,$0
-    sub $0,1
-    sub $3,1
-    div $9,2
-    add $5,$7
-    sub $1,$5
-    mul $9,$2
-    pow $5,$9
-    pow $9,2
-    pow $6,$4
-    pow $9,9
-    sub $2,$7
-    mov $9,$4
-    div $10,2
-    div $8,4
-    mod $5,7
-    mul $10,5
-    div $9,10
-    add $0,5
-    mul $8,$8
-    mul $4,$2
-    add $3,6
-  lpe
-  sub $1,2
   div $1,8
   mul $1,18
   add $1,3
-  add $12,$1
+  add $2,$1
 lpe
-mov $1,$12
+mov $1,$2

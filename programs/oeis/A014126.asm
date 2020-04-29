@@ -1,0 +1,126 @@
+; A014126: Number of partitions of 2*n into at most 4 parts.
+; 1,2,5,9,15,23,34,47,64,84,108,136,169,206,249,297,351,411,478,551,632,720,816,920,1033,1154,1285,1425,1575,1735,1906,2087,2280,2484,2700,2928,3169,3422,3689,3969,4263,4571,4894,5231,5584,5952,6336,6736,7153
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $2,4
+    mov $4,$2
+    mov $8,2
+    mov $9,$0
+    mul $8,$4
+    mov $7,6
+    sub $8,2
+    mov $5,8
+    mov $3,$8
+    mov $0,9
+    mov $10,$9
+    sub $3,$7
+    mov $6,8
+    mul $3,$4
+    mov $2,$6
+    gcd $5,$10
+    add $2,9
+    gcd $2,$0
+    mov $1,3
+    gcd $1,$10
+    mul $10,6
+    add $9,$0
+    sub $6,$5
+    mov $3,7
+    mov $2,$6
+    mov $2,6
+    mov $8,5
+    gcd $7,$5
+    mul $4,$8
+    mov $6,$9
+    sub $5,$5
+    gcd $0,$0
+    mov $3,$7
+    mul $1,$10
+    add $10,$9
+    sub $8,1
+    pow $2,7
+    mul $2,$10
+    sub $1,9
+    mov $0,$4
+    mov $5,$3
+    mul $10,$2
+    pow $5,$7
+    mov $6,$5
+    mul $1,$4
+    mov $10,$5
+    add $3,$8
+    sub $10,$4
+    sub $7,$8
+    mod $8,10
+    mul $4,$0
+    add $9,$5
+    mod $7,$2
+    mov $1,$9
+    div $1,3
+    add $10,1
+    lpb $0,1
+      add $6,5
+      mul $10,$2
+      div $7,3
+      mul $2,$1
+      mov $3,$5
+      mov $2,$9
+      pow $5,6
+      mul $7,$3
+      add $1,$9
+      mov $6,9
+      add $0,8
+      pow $10,2
+      div $5,7
+      add $9,4
+      mul $4,$8
+      gcd $3,9
+      mod $4,2
+      div $5,3
+      sub $1,$7
+      sub $0,1
+      mul $5,3
+      mod $10,3
+      div $4,10
+      sub $3,$7
+      fac $3
+      mul $4,9
+      add $8,$9
+      sub $7,4
+      pow $10,$8
+      mul $5,7
+      add $0,$3
+      div $4,2
+      mov $7,7
+      div $8,8
+      mul $10,$10
+      mov $0,9
+      fac $4
+      sub $10,5
+      add $0,$9
+      mul $4,$8
+    lpe
+    add $2,$2
+    add $6,3
+    sub $1,3
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15
