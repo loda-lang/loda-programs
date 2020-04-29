@@ -205,6 +205,8 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sort": "total",
+        "sortDesc": true,
         "total": true,
         "values": true
       },
@@ -532,7 +534,7 @@
         {
           "format": "short",
           "label": null,
-          "logBase": 1,
+          "logBase": 10,
           "max": null,
           "min": "0",
           "show": true
@@ -540,7 +542,7 @@
         {
           "format": "short",
           "label": null,
-          "logBase": 1,
+          "logBase": 10,
           "max": null,
           "min": "0",
           "show": true
@@ -656,7 +658,7 @@
         {
           "format": "short",
           "label": null,
-          "logBase": 1,
+          "logBase": 10,
           "max": null,
           "min": "0",
           "show": true
@@ -664,7 +666,7 @@
         {
           "format": "short",
           "label": null,
-          "logBase": 1,
+          "logBase": 10,
           "max": null,
           "min": "0",
           "show": true
@@ -780,7 +782,7 @@
         {
           "format": "short",
           "label": null,
-          "logBase": 1,
+          "logBase": 10,
           "max": null,
           "min": "0",
           "show": true
@@ -788,7 +790,7 @@
         {
           "format": "short",
           "label": null,
-          "logBase": 1,
+          "logBase": 10,
           "max": null,
           "min": "0",
           "show": true
@@ -904,7 +906,7 @@
         {
           "format": "short",
           "label": null,
-          "logBase": 1,
+          "logBase": 10,
           "max": null,
           "min": "0",
           "show": true
@@ -912,7 +914,7 @@
         {
           "format": "short",
           "label": null,
-          "logBase": 1,
+          "logBase": 10,
           "max": null,
           "min": "0",
           "show": true
@@ -939,5 +941,5 @@
   "timezone": "",
   "title": "LODA",
   "uid": "0GSW7jPWk",
-  "version": 24
+  "version": 25
 }
