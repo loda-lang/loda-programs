@@ -1,0 +1,86 @@
+; A186707: Partial sums of A007202 (crystal ball sequence for hexagonal close-packing).
+; 1,14,71,224,547,1134,2101,3584,5741,8750,12811,18144,24991,33614,44297,57344,73081,91854,114031,140000,170171,204974,244861,290304,341797,399854,465011,537824,618871,708750,808081,917504,1037681,1169294,1313047,1469664
+
+mov $6,$0
+pow $6,2
+mov $6,$0
+mov $5,$6
+mov $4,$6
+mov $7,6
+add $4,6
+mov $2,4
+mov $4,4
+div $0,4
+lpb $0,1
+  gcd $0,7
+  mul $0,$4
+  mov $3,$6
+  mov $8,$6
+  add $4,1
+  mov $1,$2
+  mov $8,6
+  fac $4
+  mul $6,$7
+  sub $5,$2
+  mod $7,3
+  sub $0,1
+  sub $8,1
+  add $8,1
+  mul $4,7
+  mov $1,1
+  div $5,4
+  div $8,$1
+  pow $0,$8
+  div $0,2
+  mov $5,1
+  mul $3,$7
+  mul $2,3
+  div $3,3
+  mul $2,$7
+  div $4,2
+  mod $3,$4
+  mul $6,$3
+lpe
+mov $5,$1
+add $0,$0
+gcd $4,$0
+mul $4,2
+mov $1,$1
+mov $5,8
+add $6,1
+sub $1,$5
+mod $3,3
+div $3,$2
+sub $0,$4
+mov $8,7
+mod $5,2
+mov $4,8
+add $4,8
+mov $1,2
+mul $5,6
+pow $6,4
+mul $2,$3
+fac $5
+mov $3,5
+mul $1,$6
+div $6,2
+mov $5,7
+div $7,3
+mod $7,8
+mod $0,7
+div $6,$7
+mov $2,5
+mul $3,$0
+sub $1,$6
+mov $6,$2
+add $8,$7
+sub $8,$2
+mul $2,8
+mov $3,$3
+div $7,$1
+mul $7,2
+div $5,$2
+sub $6,$0
+sub $1,2
+div $1,2
+add $1,1

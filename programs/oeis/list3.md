@@ -610,6 +610,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322594](http://oeis.org/A322594) ([L15 program](A322594.asm)): a(n) = (4*n^3 + 12*n^2 - 4*n + 3)/3.
 * [A322595](http://oeis.org/A322595) ([L08 program](A322595.asm)): a(n) = (n^3 + 9*n + 14*n + 9)/3.
 * [A322597](http://oeis.org/A322597) ([L14 program](A322597.asm)): a(n) = (4*n^3 - 6*n^2 + 20*n + 3)/3.
+* [A322598](http://oeis.org/A322598) ([L31 program](A322598.asm)): a(n) is the number of unlabeled rank-3 graded lattices with 3 coatoms and n atoms.
 * [A322675](http://oeis.org/A322675) ([L13 program](A322675.asm)): a(n) = n * (4*n + 3)^2.
 * [A322677](http://oeis.org/A322677) ([L49 program](A322677.asm)): a(n) = 16 * n * (n+1) * (2*n+1)^2.
 * [A322830](http://oeis.org/A322830) ([L11 program](A322830.asm)): a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
@@ -700,6 +701,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329826](http://oeis.org/A329826) ([L15 program](A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
 * [A329828](http://oeis.org/A329828) ([L12 program](A329828.asm)): Beatty sequence for (7+sqrt(37))/6.
 * [A329832](http://oeis.org/A329832) ([L10 program](A329832.asm)): Beatty sequence for (9+sqrt(65))/8.
+* [A329833](http://oeis.org/A329833) ([L11 program](A329833.asm)): Beatty sequence for (5+sqrt(73))/8.
 * [A329834](http://oeis.org/A329834) ([L10 program](A329834.asm)): Beatty sequence for (11+sqrt(73))/8.
 * [A329835](http://oeis.org/A329835) ([L05 program](A329835.asm)): Beatty sequence for (9+sqrt(101))/10.
 * [A329836](http://oeis.org/A329836) ([L11 program](A329836.asm)): Beatty sequence for (11+sqrt(101))/10.

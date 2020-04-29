@@ -2509,9 +2509,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157287](http://oeis.org/A157287) ([L03 program](A157287.asm)): a(n) = 1728*n - 24.
 * [A157288](http://oeis.org/A157288) ([L25 program](A157288.asm)): a(n) = 10368*n^2 - 288*n + 1.
 * [A157319](http://oeis.org/A157319) ([L17 program](A157319.asm)): Possible total points for a single team in a game of American football, ignoring safeties (and time constraints).
-* [A157324](http://oeis.org/A157324) ([L09 program](A157324.asm)): a(n) = 36*n^2 + n.
+* [A157324](http://oeis.org/A157324) ([L06 program](A157324.asm)): a(n) = 36*n^2 + n.
 * [A157325](http://oeis.org/A157325) ([L03 program](A157325.asm)): a(n) = 1728*n + 24.
-* [A157326](http://oeis.org/A157326) ([L11 program](A157326.asm)): a(n) = 10368*n^2 + 288*n + 1.
+* [A157326](http://oeis.org/A157326) ([L09 program](A157326.asm)): a(n) = 10368*n^2 + 288*n + 1.
 * [A157330](http://oeis.org/A157330) ([L03 program](A157330.asm)): a(n) = 64*n - 8.
 * [A157331](http://oeis.org/A157331) ([L08 program](A157331.asm)): a(n) = 128*n^2 - 32*n + 1.
 * [A157336](http://oeis.org/A157336) ([L03 program](A157336.asm)): a(n) = 8*(8*n + 1).
