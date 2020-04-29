@@ -1,96 +1,25 @@
 ; A234902: a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3) after n rotations.
 ; 2,9,13,17,24,26,33,37,41,48,50,57,61,65,72,74,81,85,89,96,98,105,109,113,120,122,129,133,137,144,146,153,157,161,168,170,177,181,185,192,194,201,205,209,216,218,225,229,233,240,242,249,253,257
 
-mov $9,$0
-mov $11,$0
-add $11,1
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  sub $0,$11
-  mov $8,$0
-  mov $3,5
-  mov $4,$0
-  add $0,$0
-  mov $2,3
-  div $2,2
-  pow $2,2
-  mov $5,3
-  mod $2,3
-  mod $5,2
-  mov $1,2
-  sub $8,4
-  sub $8,$0
-  div $2,$1
-  mul $4,$5
-  sub $3,8
-  add $8,$5
-  div $4,8
-  mov $7,4
-  div $1,8
+mov $4,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$4
+  sub $0,$2
+  mul $0,2
   pow $0,2
   mod $0,5
-  mov $6,$1
-  div $2,5
-  sub $5,3
-  div $7,$7
-  add $2,3
   mul $0,2
-  mov $2,$3
-  mul $6,6
-  pow $8,$1
-  add $2,6
-  fac $4
-  gcd $3,2
-  mul $4,$7
-  pow $5,$6
-  div $2,6
-  div $2,2
-  mov $1,2
   lpb $0,1
     mov $0,6
-    mov $0,$0
     sub $0,1
-    add $7,1
-    div $3,7
-    mov $4,7
-    sub $1,8
   lpe
-  mov $5,1
-  sub $1,6
-  pow $4,6
   mov $1,3
-  add $2,6
-  add $8,$0
-  mul $5,4
-  mod $4,5
-  mul $4,$0
-  pow $4,$5
-  sub $7,1
-  sub $8,1
-  sub $2,$6
-  mul $4,5
-  pow $2,5
-  mov $3,4
-  mul $5,$2
-  pow $2,2
   mul $1,$0
-  mod $5,2
-  mov $2,3
-  mov $8,$0
-  mul $0,$4
-  sub $8,1
-  sub $3,2
-  div $6,7
-  mov $8,$2
-  add $3,5
-  mov $2,$3
-  sub $4,$1
-  mul $5,$4
-  mul $5,$5
   div $1,3
   add $1,2
-  add $10,$1
+  add $3,$1
 lpe
-mov $1,$10
+mov $1,$3

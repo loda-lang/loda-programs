@@ -104,7 +104,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204644](http://oeis.org/A204644) ([L10 program](A204644.asm)): Number of (n+1) X 2 0..1 arrays with column and row pair sums b(i,j)=a(i,j)+a(i,j-1) and c(i,j)=a(i,j)+a(i-1,j) nondecreasing in column and row directions, respectively.
 * [A204671](http://oeis.org/A204671) ([L08 program](A204671.asm)): a(n) = n^n (mod 6).
 * [A204674](http://oeis.org/A204674) ([L13 program](A204674.asm)): a(n) = 4*n^3 + 5*n^2 + 2*n + 1.
-* [A204675](http://oeis.org/A204675) ([L08 program](A204675.asm)): a(n) = 16*n^2 + 2*n + 1.
+* [A204675](http://oeis.org/A204675) ([L07 program](A204675.asm)): a(n) = 16*n^2 + 2*n + 1.
 * [A204689](http://oeis.org/A204689) ([L04 program](A204689.asm)): a(n) = n^n (mod 4).
 * [A204708](http://oeis.org/A204708) ([L20 program](A204708.asm)): Number of (n+1) X 4 0..1 arrays with the permanents of all 2 X 2 subblocks equal and nonzero.
 * [A204769](http://oeis.org/A204769) ([L20 program](A204769.asm)): a(n) = 151*(n-1) - a(n-1) with n>1, a(1)=46.
@@ -345,6 +345,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212684](http://oeis.org/A212684) ([L10 program](A212684.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and  |x-y|=n-w+|y-z|.
 * [A212685](http://oeis.org/A212685) ([L08 program](A212685.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|=w+|y-z|.
 * [A212686](http://oeis.org/A212686) ([L17 program](A212686.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 2|w-x|=n+|y-z|.
+* [A212688](http://oeis.org/A212688) ([L55 program](A212688.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 2|w-x|>=n+|y-z|.
 * [A212692](http://oeis.org/A212692) ([L11 program](A212692.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<|x-y|+|y-z|.
 * [A212697](http://oeis.org/A212697) ([L09 program](A212697.asm)): a(n) = 2*n*3^(n-1).
 * [A212698](http://oeis.org/A212698) ([L08 program](A212698.asm)): Main transitions in systems of n particles with spin 3/2.
@@ -819,6 +820,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228602](http://oeis.org/A228602) ([L17 program](A228602.asm)): a(1) = 17, a(2) = 80, a(n) = 4*(a(n-1) + a(n-2)) for n >= 3.
 * [A228661](http://oeis.org/A228661) ([L10 program](A228661.asm)): Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
 * [A228693](http://oeis.org/A228693) ([L11 program](A228693.asm)): Largest number of maximal independent sets of nodes in any tree on n nodes.
+* [A228728](http://oeis.org/A228728) ([L35 program](A228728.asm)): a(1)=1, a(2)=2 and for n > 2, a(n) is the least integer > a(n-1) such that there is a permutation b(1), ..., b(n) of a(1), ..., a(n) with b(1) = a(1) and b(n) = a(n), and with the n numbers |b(1)-b(2)|, |b(2)-b(3)|, ..., |b(n-1)-b(n)|, |b(n)-b(1)| pairwise distinct.
 * [A228842](http://oeis.org/A228842) ([L09 program](A228842.asm)): Binomial transform of A014448.
 * [A228879](http://oeis.org/A228879) ([L15 program](A228879.asm)): a(n+2) = 3*a(n), starting 4,7.
 * [A228887](http://oeis.org/A228887) ([L33 program](A228887.asm)): a(n) = binomial(3*n + 1,3).
@@ -924,6 +926,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A234429](http://oeis.org/A234429) ([L08 program](A234429.asm)): Numbers which are the digital sum of the square of some prime.
 * [A234717](http://oeis.org/A234717) ([L11 program](A234717.asm)): Floor(n/(exp(1/(2*n))-1)).
 * [A234787](http://oeis.org/A234787) ([L06 program](A234787.asm)): Cubes (with at least two digits) that become squares when their rightmost digit is removed.
+* [A234902](http://oeis.org/A234902) ([L22 program](A234902.asm)): a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3) after n rotations.
 * [A234904](http://oeis.org/A234904) ([L09 program](A234904.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 1, 3) after n rotations.
 * [A235088](http://oeis.org/A235088) ([L10 program](A235088.asm)): a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3, 4) after n rotations.
 * [A235089](http://oeis.org/A235089) ([L08 program](A235089.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 1, 3, 4) after n rotations.

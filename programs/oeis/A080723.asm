@@ -1,97 +1,30 @@
 ; A080723: a(0) = 1; for n>0, a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) == 1 mod 3".
 ; 1,4,5,6,7,10,13,16,17,18,19,20,21,22,23,24,25,28,31,34,37,40,43,46,49,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,82,85,88,91,94,97,100,103,106,109,112,115,118,121,124
 
-mov $9,$0
-mov $11,$0
-add $11,1
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  sub $0,$11
+mov $4,$0
+mov $3,$0
+add $3,1
+lpb $3,1
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
   lpb $0,1
-    mov $3,2
-    mov $5,6
-    mov $2,$0
-    mov $8,7
-    mov $7,2
-    mul $5,4
-    mov $0,$2
-    mov $1,6
-    mod $2,$8
-    sub $5,$5
-    mul $3,2
-    div $8,4
-    add $5,5
-    mod $7,7
-    sub $0,$8
+    mov $5,7
     mov $6,2
-    mov $1,$8
-    mov $4,1
-    add $3,$3
-    sub $2,$0
-    pow $5,4
-    add $3,3
-    mod $3,2
-    pow $3,$8
-    mov $1,$7
+    div $5,4
+    sub $0,$5
+    mov $1,$6
     mul $0,$1
-    mov $8,5
-    mul $7,$7
-    div $6,3
-    mov $3,7
-    div $6,5
-    div $8,8
     sub $1,$0
     mul $1,2
-    add $6,7
-    mov $3,3
-    mul $5,$3
-    add $2,$8
     sub $0,1
-    mul $8,2
-    div $5,4
-    mul $4,6
-    mod $1,5
     mul $1,3
-    add $5,$6
-    fac $8
-    add $4,2
     div $0,6
-    mul $7,2
-    mov $6,$4
-    add $8,6
-    mov $2,6
-    mul $4,2
-    mov $3,$5
-    gcd $5,$3
-    mul $3,2
-    mov $7,$5
-    div $8,$8
-    mov $2,7
-    div $5,$6
-    div $2,5
-    add $6,6
-    mod $4,$8
-    mov $7,$3
-    div $3,7
-    add $8,$1
-    div $5,5
-    div $7,2
     div $1,6
-    sub $3,1
-    sub $8,1
-    mul $2,7
-    mov $8,$2
   lpe
-  div $2,5
-  pow $3,$4
-  mov $3,2
-  mov $0,$8
-  pow $8,6
   div $1,2
   mul $1,2
   add $1,1
-  add $10,$1
+  add $2,$1
 lpe
-mov $1,$10
+mov $1,$2

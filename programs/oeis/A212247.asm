@@ -1,0 +1,136 @@
+; A212247: Number of (w,x,y,z) with all terms in {1,...,n} and 3w=x+y+z+n.
+; 0,1,4,13,29,56,95,150,222,315,430,571,739,938,1169,1436,1740,2085,2472,2905,3385,3916,4499,5138,5834,6591,7410,8295,9247,10270,11365,12536,13784,15113,16524,18021,19605,21280,23047,24910,26870,28931
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $13,$0
+    mov $15,$0
+    add $15,1
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      sub $0,$15
+      mov $9,$0
+      mov $11,2
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        add $0,$11
+        sub $0,1
+        mov $5,$0
+        mov $7,$5
+        mov $7,$5
+        lpb $0,1
+          sub $7,$5
+          pow $7,$7
+          mov $3,$0
+          mov $8,2
+          mov $1,6
+          mov $8,8
+          sub $0,1
+          add $8,$0
+          pow $7,2
+        lpe
+        mul $3,$5
+        mul $1,$5
+        add $5,$3
+        mov $6,5
+        sub $7,6
+        add $6,$5
+        gcd $0,4
+        mov $4,0
+        add $1,$0
+        add $3,5
+        sub $7,6
+        add $5,3
+        mov $2,$5
+        mul $3,$4
+        sub $4,$8
+        mul $6,5
+        mov $6,$1
+        add $2,$6
+        mod $6,$2
+        pow $7,$8
+        mul $6,$7
+        add $1,$7
+        div $6,$0
+        div $8,$0
+        add $1,$2
+        pow $8,2
+        mul $8,$4
+        pow $5,3
+        fac $7
+        sub $8,2
+        div $1,2
+        gcd $5,8
+        sub $8,5
+        mul $4,2
+        sub $0,$0
+        pow $6,2
+        pow $8,$7
+        div $1,2
+        mul $1,3
+        sub $6,8
+        add $1,$2
+        mov $0,3
+        mul $6,6
+        mov $5,$3
+        mov $7,$4
+        mov $0,$1
+        sub $7,5
+        mov $3,$5
+        mod $2,2
+        pow $3,2
+        mov $4,8
+        mov $2,1
+        sub $3,2
+        add $3,$5
+        mod $6,8
+        mul $8,$6
+        add $2,8
+        mod $8,$1
+        pow $0,$7
+        div $4,$0
+        pow $2,$7
+        sub $3,8
+        sub $8,2
+        div $4,2
+        pow $5,$3
+        gcd $4,$3
+        mov $12,$11
+        lpb $12,1
+          mov $10,$1
+          sub $12,1
+        lpe
+      lpe
+      lpb $9,1
+        sub $10,$1
+        mov $9,0
+      lpe
+      mov $1,$10
+      sub $1,16
+      add $14,$1
+    lpe
+    mov $1,$14
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20
