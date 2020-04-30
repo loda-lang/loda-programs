@@ -318,6 +318,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212160](http://oeis.org/A212160) ([L10 program](A212160.asm)): Numbers congruent to 2 or 10 modulo 13.
 * [A212161](http://oeis.org/A212161) ([L11 program](A212161.asm)): Numbers 6 or 10 modulo 17.
 * [A212246](http://oeis.org/A212246) ([L09 program](A212246.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w <= x > y <= z.
+* [A212247](http://oeis.org/A212247) ([L69 program](A212247.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 3w=x+y+z+n.
 * [A212272](http://oeis.org/A212272) ([L34 program](A212272.asm)): a(n) = Fibonacci(n) + n^3.
 * [A212294](http://oeis.org/A212294) ([L08 program](A212294.asm)): Sums of (zero or more) distinct twin primes.
 * [A212329](http://oeis.org/A212329) ([L14 program](A212329.asm)): Expansion of x*(5+x)/(1-7*x+7*x^2-x^3).
@@ -1290,7 +1291,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A249227](http://oeis.org/A249227) ([L05 program](A249227.asm)): Number of length n+5 0..2 arrays with no six consecutive terms having two times the sum of any two elements equal to the sum of the remaining four
 * [A249333](http://oeis.org/A249333) ([L07 program](A249333.asm)): Number of regions formed by extending the sides of a regular n-gon.
 * [A249354](http://oeis.org/A249354) ([L05 program](A249354.asm)): a(n) = n*(3*n^2 + 3*n + 1).
-* [A249356](http://oeis.org/A249356) ([L18 program](A249356.asm)): 8*A200975(n)-7 where A200975 are the numbers on the diagonals in Ulam's spiral.
+* [A249356](http://oeis.org/A249356) ([L07 program](A249356.asm)): 8*A200975(n)-7 where A200975 are the numbers on the diagonals in Ulam's spiral.
 * [A249407](http://oeis.org/A249407) ([L18 program](A249407.asm)): Numbers not in A249406.
 * [A249452](http://oeis.org/A249452) ([L16 program](A249452.asm)): Numbers n such that A249441(n) = 3.
 * [A249453](http://oeis.org/A249453) ([L08 program](A249453.asm)): a(0) = 4; for n>0, a(n) = a(n-1) + 2^n - 3.

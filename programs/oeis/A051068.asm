@@ -1,115 +1,20 @@
 ; A051068: Partial sums of A014578.
 ; 0,1,2,2,3,4,4,5,6,7,8,9,9,10,11,11,12,13,14,15,16,16,17,18,18,19,20,20,21,22,22,23,24,24,25,26,27,28,29,29,30,31,31,32,33,34,35,36,36,37,38,38,39,40,40,41,42,42,43,44,44,45,46,47,48,49,49
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
+mov $3,$0
+mov $5,$0
+lpb $5,1
+  sub $5,1
+  mov $0,$3
+  sub $0,$5
   mov $2,3
-  add $0,$0
-  mov $3,2
-  mov $7,1
-  mov $8,$7
-  mov $9,$3
-  mov $10,$8
-  mov $8,2
   mov $4,2
-  div $8,$3
-  mul $3,2
   pow $2,$2
-  add $9,$3
   mov $1,3
-  mov $10,$0
   gcd $2,$0
-  mod $0,2
   sub $1,$4
-  div $8,$7
-  div $9,8
-  mov $6,6
-  add $2,$0
-  mov $5,$0
-  mov $10,1
-  add $4,$9
-  pow $0,10
-  add $6,8
-  gcd $10,4
-  sub $3,$0
-  sub $5,3
-  div $5,10
-  sub $7,$4
-  div $5,7
-  mov $4,4
-  div $4,$10
-  sub $7,$3
-  mul $0,$2
   mod $2,4
-  sub $5,$4
-  add $5,1
-  mov $7,$6
-  add $10,$2
-  fac $10
-  lpb $0,1
-    mul $7,$9
-    mul $8,8
-    div $10,3
-    mov $3,8
-    add $9,$3
-    fac $3
-    add $5,$4
-    add $8,1
-    div $2,2
-    mod $5,9
-    div $3,8
-    mul $3,10
-    sub $10,5
-    sub $2,10
-    sub $0,5
-    mul $2,$10
-    fac $6
-    div $4,$3
-    mod $4,2
-    mul $7,10
-    sub $0,4
-    mod $4,7
-    mod $6,3
-    pow $3,2
-    gcd $6,6
-    fac $6
-    mod $2,3
-    sub $8,$2
-    mul $0,2
-    mov $6,$7
-    sub $0,1
-    mov $4,$0
-    gcd $8,2
-    gcd $7,$9
-    gcd $2,$0
-    div $5,4
-    mov $0,6
-    mov $0,2
-    mov $7,$6
-    add $5,$6
-    pow $2,$7
-    div $4,4
-    mov $3,$2
-    div $8,2
-    mul $3,2
-    add $0,3
-    pow $2,$3
-    div $4,2
-    div $0,8
-  lpe
-  sub $8,$10
-  mul $10,$0
-  mov $3,5
   div $1,$2
-  sub $9,1
-  add $1,7
-  sub $1,7
-  add $12,$1
+  add $6,$1
 lpe
-mov $1,$12
+mov $1,$6

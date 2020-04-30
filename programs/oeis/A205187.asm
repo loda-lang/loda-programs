@@ -1,0 +1,97 @@
+; A205187: Number of (n+1)X2 0..1 arrays with the number of clockwise edge increases in every 2X2 subblock differing from each horizontal or vertical neighbor
+; 16,24,48,72,144,216,432,648,1296,1944,3888,5832,11664,17496,34992,52488,104976,157464,314928,472392,944784,1417176,2834352,4251528,8503056,12754584,25509168,38263752,76527504,114791256,229582512,344373768
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $4,$0
+  mov $8,$4
+  div $8,2
+  mov $6,0
+  mov $6,2
+  mov $7,3
+  div $7,4
+  mov $2,$8
+  sub $4,$8
+  mov $0,2
+  add $6,8
+  mov $1,2
+  pow $0,$4
+  lpb $0,1
+    add $0,2
+    pow $1,$8
+    mov $0,3
+    mov $3,$4
+    div $0,$0
+    mov $5,2
+    add $3,$6
+    add $4,$8
+    sub $0,$2
+    mod $3,$3
+    sub $1,$1
+    sub $7,$4
+    mov $1,3
+    mul $2,$6
+    pow $0,$7
+    mod $6,3
+    div $5,$0
+    gcd $6,$0
+    sub $6,6
+    add $6,$4
+    pow $1,$8
+    sub $0,1
+    sub $8,$4
+    pow $7,$8
+    mov $4,2
+    div $7,2
+    div $6,6
+    gcd $5,$3
+    add $5,$4
+    add $2,$6
+    sub $2,1
+    sub $3,6
+    mul $2,2
+    mov $8,5
+    mul $2,$0
+    add $0,$5
+    mov $2,$3
+    div $0,$0
+    mov $5,$7
+    pow $5,$7
+    mov $8,6
+    sub $5,$5
+    add $3,6
+    add $3,8
+    mod $8,3
+    pow $7,$3
+    pow $6,6
+    pow $4,$2
+    mul $7,$0
+    mul $7,6
+    mov $5,$1
+    pow $6,$0
+    add $2,6
+    sub $7,5
+    sub $5,7
+    mov $5,4
+    mul $6,$3
+  lpe
+  mul $3,$0
+  pow $6,$4
+  add $6,$7
+  mov $3,6
+  sub $5,$2
+  mov $2,$2
+  sub $0,2
+  mov $3,$4
+  sub $1,1
+  mul $1,8
+  add $1,8
+  add $10,$1
+lpe
+mov $1,$10
