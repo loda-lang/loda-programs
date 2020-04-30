@@ -1,0 +1,97 @@
+; A330085: Length of longest binary word with the property that all distinct occurrences of identical-length blocks agree on at most n positions.
+; 2,4,7,9,12,14,16,19,21,23,26,28,30,32,34,37,39,41,43,45
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $5,8
+  mov $8,3
+  mov $4,$5
+  mov $3,4
+  mov $2,$5
+  mov $1,5
+  pow $1,2
+  sub $2,$0
+  mov $6,5
+  add $0,2
+  add $8,7
+  gcd $6,8
+  div $4,7
+  pow $3,$3
+  lpb $0,1
+    add $8,$0
+    sub $0,1
+    mod $4,5
+    sub $1,$0
+    mov $3,$8
+    div $5,2
+    mul $2,6
+    mul $1,$5
+    add $1,$2
+    add $6,4
+    pow $3,6
+    mov $8,$6
+    add $1,$3
+    mov $7,3
+    mov $0,4
+    mov $7,$7
+    mod $3,2
+    add $5,7
+    mov $7,$4
+    add $4,4
+    add $7,7
+    add $3,2
+    sub $5,$5
+    gcd $1,$8
+    div $0,3
+    mul $1,$7
+    sub $4,8
+    add $2,$6
+    sub $5,$0
+    pow $5,3
+    add $4,1
+    add $0,$0
+    mov $8,2
+    pow $4,$1
+    mod $0,$0
+    sub $8,$5
+    sub $0,3
+    mov $8,$5
+    sub $8,3
+    sub $7,2
+    add $2,1
+    pow $4,5
+    div $5,2
+    mul $8,2
+    div $6,4
+    mul $5,2
+    mov $0,$0
+    mov $2,8
+    div $7,7
+    mod $3,5
+    mov $2,3
+    mod $0,$4
+    add $5,$5
+  lpe
+  mov $4,$4
+  sub $5,1
+  fac $5
+  pow $8,2
+  mul $6,$3
+  sub $3,$0
+  div $6,$3
+  sub $6,6
+  mul $8,$5
+  mul $0,8
+  mod $1,6
+  sub $1,2
+  div $1,2
+  add $1,2
+  add $10,$1
+lpe
+mov $1,$10
