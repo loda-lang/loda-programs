@@ -3007,6 +3007,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044835](http://oeis.org/A044835) ([L17 program](A044835.asm)): Positive integers having more base-9 runs of even length than odd.
 * [A044836](http://oeis.org/A044836) ([L40 program](A044836.asm)): Positive integers having more base-10 runs of even length than odd.
 * [A044839](http://oeis.org/A044839) ([L20 program](A044839.asm)): Positive integers having more base-13 runs of even length than odd.
+* [A044841](http://oeis.org/A044841) ([L52 program](A044841.asm)): Positive integers with more base-15 runs of even length than odd.
 * [A044842](http://oeis.org/A044842) ([L37 program](A044842.asm)): Positive integers having more base-16 runs of even length than odd.
 * [A044941](http://oeis.org/A044941) ([L06 program](A044941.asm)): Number of runs of even length in base 10 representation of n.
 * [A045572](http://oeis.org/A045572) ([L07 program](A045572.asm)): Numbers that are odd but not divisible by 5.
@@ -5020,7 +5021,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073424](http://oeis.org/A073424) ([L06 program](A073424.asm)): Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.
 * [A073575](http://oeis.org/A073575) ([L127 program](A073575.asm)): Sum of factorial numbers dividing n.
 * [A073577](http://oeis.org/A073577) ([L05 program](A073577.asm)): a(n) = 4*n^2 + 4*n - 1.
-* [A073636](http://oeis.org/A073636) ([L10 program](A073636.asm)): Period 3: repeat [1, 8, 9] ; Digital root of A000578(n) = n^3 for n >= 1.
+* [A073636](http://oeis.org/A073636) ([L05 program](A073636.asm)): Period 3: repeat [1, 8, 9] ; Digital root of A000578(n) = n^3 for n >= 1.
 * [A073717](http://oeis.org/A073717) ([L10 program](A073717.asm)): a(n)=T(2n+1), where T(n) are the tribonacci numbers A000073.
 * [A073720](http://oeis.org/A073720) ([L10 program](A073720.asm)): Let b(1) = 1, b(k+1) = b(k) - k*trunc(k/b(k)+1), where trunc(x) = floor(x) if x>= 0, trunc(x) = ceiling(x) otherwise. Sequence a(n) gives the successive absolute values taken by b(k).
 * [A073724](http://oeis.org/A073724) ([L10 program](A073724.asm)): a(n) = (4^(n+1) + 6n + 5)/9.

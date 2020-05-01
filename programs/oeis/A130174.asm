@@ -1,0 +1,125 @@
+; A130174: a(n) = n-1 + (total number of digits in a(1), ..., a(n-1)).
+; 0,2,4,6,8,10,13,16,19,22,25,28,31,34,37,40,43,46,49,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97,100,104,108,112,116,120,124,128,132,136,140,144,148,152,156,160,164,168,172,176,180,184,188,192,196,200,204
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $3,$0
+      mov $2,$0
+      mod $3,2
+      mov $5,$2
+      mov $4,6
+      mov $6,0
+      mul $5,2
+      mov $8,$5
+      mul $5,3
+      lpb $6,1
+        sub $8,2
+        mul $2,$5
+        lpb $1,4
+          mov $7,7
+          add $4,$0
+          mul $8,4
+          sub $0,$3
+          mov $8,$0
+          mov $1,0
+          add $2,$4
+          add $6,8
+          gcd $7,$6
+          mul $4,2
+          add $1,2
+          add $5,6
+          mov $5,$8
+          mod $8,2
+          div $3,$4
+          sub $8,3
+          div $0,2
+          pow $6,2
+          mul $6,$6
+          div $1,3
+          mul $3,8
+          add $1,$6
+          mov $1,5
+          sub $1,$0
+          lpb $3,1
+            mul $2,$8
+            sub $1,3
+          lpe
+        lpe
+        fac $4
+        pow $0,2
+        gcd $0,5
+        mod $0,2
+        mul $6,$3
+        pow $7,$2
+        sub $0,$6
+        add $8,5
+        sub $2,1
+        pow $2,2
+        mul $5,2
+        sub $7,$2
+        add $7,4
+        mov $2,$4
+        div $3,$7
+        add $5,$5
+        mov $7,7
+        add $1,2
+      lpe
+      sub $4,$0
+      add $8,$7
+      mod $6,7
+      sub $6,$3
+      mod $1,2
+      mov $4,$8
+      add $2,$0
+      pow $0,4
+      mov $1,0
+      lpb $3,6
+        add $1,2
+        mov $7,$0
+        div $5,6
+        add $7,2
+        mul $0,6
+        mov $8,$4
+      lpe
+      add $7,$6
+      mov $5,6
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    div $1,2
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17
