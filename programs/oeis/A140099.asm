@@ -1,0 +1,133 @@
+; A140099: A Beatty sequence: a(n) = [n*(1+t)], where t = tribonacci constant (A058265); complement of A140098.
+; 2,5,8,11,14,17,19,22,25,28,31,34,36,39,42,45,48,51,53,56,59,62,65,68,70,73,76,79,82,85,88,90,93,96,99,102,105,107,110,113,116,119,122,124,127,130,133,136,139,141,144,147,150,153,156,159,161,164,167,170,173
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $11,$0
+  mov $13,2
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    add $0,$13
+    sub $0,1
+    mov $2,3
+    mov $10,3
+    mov $9,8
+    mov $3,$2
+    add $2,1
+    mov $5,2
+    mul $5,4
+    mov $8,5
+    mov $5,$10
+    div $9,2
+    mov $1,2
+    div $9,5
+    mov $8,1
+    sub $10,3
+    mul $2,$8
+    sub $8,5
+    div $5,2
+    mov $7,$10
+    fac $7
+    mov $9,$9
+    div $10,$3
+    gcd $3,$2
+    mul $1,2
+    mov $6,10
+    add $6,$2
+    pow $3,$9
+    sub $2,$9
+    mul $9,$10
+    pow $7,$0
+    mod $8,$6
+    mov $4,$3
+    pow $8,2
+    add $3,1
+    div $3,$1
+    gcd $5,7
+    mov $2,4
+    sub $7,1
+    pow $6,$9
+    mul $0,$1
+    pow $8,8
+    add $1,$0
+    sub $10,7
+    pow $7,5
+    gcd $3,5
+    fac $6
+    pow $6,$7
+    mod $5,2
+    sub $3,$5
+    div $5,$3
+    mov $0,$8
+    mul $1,7
+    fac $0
+    add $10,$10
+    gcd $6,$3
+    mov $2,0
+    sub $1,$6
+    mul $7,$6
+    gcd $7,7
+    mul $10,$3
+    sub $1,$10
+    div $9,$3
+    gcd $10,9
+    mul $1,9
+    mov $10,$10
+    div $2,$10
+    div $3,$3
+    mul $5,$1
+    mul $8,2
+    add $5,$6
+    mul $4,$3
+    mov $5,$4
+    mul $7,10
+    mul $3,$2
+    add $10,$2
+    mul $8,$2
+    div $2,6
+    pow $3,$0
+    div $6,2
+    mov $7,0
+    div $1,3
+    pow $3,$4
+    mov $10,10
+    pow $10,2
+    pow $4,7
+    div $1,$10
+    sub $7,8
+    mov $10,$0
+    mov $6,0
+    mod $3,5
+    lpb $4,2
+      add $3,$2
+      sub $1,7
+      add $5,10
+      mod $10,10
+    lpe
+    lpb $3,5
+      sub $7,4
+      add $4,1
+    lpe
+    mov $14,$13
+    lpb $14,1
+      mov $12,$1
+      sub $14,1
+    lpe
+  lpe
+  lpb $11,1
+    sub $12,$1
+    mov $11,0
+  lpe
+  mov $1,$12
+  add $1,2
+  add $16,$1
+lpe
+mov $1,$16
