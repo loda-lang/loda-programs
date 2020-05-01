@@ -1,0 +1,125 @@
+; A082662: Numbers k such that A001227(k) = A082647(k).
+; 1,2,4,6,8,12,16,20,24,28,32,40,48,56,64,72,80,88,96,104,112,120,128,144,160,176,192,208,224,240,256,272,288,304,320,336,352,368,384,400,416,432,448,464,480,496,512,544,576,608,640,672,704,736,768,800
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mul $0,2
+      mov $3,3
+      mov $2,$3
+      mov $5,2
+      sub $3,4
+      mul $3,$2
+      mov $6,3
+      div $0,$5
+      add $0,$2
+      mov $1,8
+      div $6,8
+      mov $7,1
+      mul $5,$3
+      mod $5,5
+      div $1,2
+      mod $5,$2
+      add $1,$3
+      sub $0,$1
+      fac $7
+      mov $2,$0
+      lpb $2,1
+        mov $8,8
+        mul $1,2
+        mul $3,$2
+        sub $8,$3
+        mov $0,8
+        mov $4,$0
+        lpb $4,1
+          fac $4
+          add $7,6
+          add $1,$1
+          div $0,2
+          sub $4,$5
+          sub $7,$5
+          mul $5,$7
+          mul $0,$1
+          mul $0,2
+        lpe
+        div $2,2
+        sub $5,4
+        lpb $5,1
+          sub $0,$8
+          sub $3,6
+          mul $0,$8
+          gcd $8,$0
+          add $6,$1
+          gcd $7,5
+          mul $3,$0
+          sub $1,$4
+          add $3,1
+          add $6,$0
+          sub $6,4
+          mov $6,2
+          mov $1,$3
+          fac $1
+          add $4,6
+          mod $7,2
+          add $0,8
+          mov $6,6
+          mul $4,2
+          sub $5,$5
+          fac $0
+          pow $5,$8
+        lpe
+        lpb $6,1
+          mul $3,8
+          add $0,7
+          sub $4,$4
+          gcd $0,4
+          div $2,$0
+          sub $6,$5
+        lpe
+        sub $5,$5
+        sub $2,1
+        add $8,$8
+        add $2,$5
+        div $4,$8
+      lpe
+      mul $4,2
+      sub $6,$6
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    div $1,4
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17
