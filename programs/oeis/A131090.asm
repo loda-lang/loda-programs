@@ -1,0 +1,140 @@
+; A131090: First differences of A131666.
+; 0,1,0,1,1,4,7,15,28,57,113,228,455,911,1820,3641,7281,14564,29127,58255,116508,233017,466033,932068,1864135,3728271,7456540,14913081,29826161,59652324,119304647,238609295,477218588,954437177,1908874353
+
+mov $17,$0
+mov $19,2
+lpb $19,1
+  clr $0,17
+  sub $19,1
+  mov $0,$17
+  add $0,$19
+  sub $0,1
+  mov $13,$0
+  mov $15,2
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    add $0,$15
+    sub $0,1
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $1,2
+      mov $5,$0
+      pow $1,$0
+      mov $4,$5
+      gcd $0,2
+      mov $7,7
+      sub $0,$7
+      mov $6,8
+      add $6,3
+      mov $8,5
+      mov $2,$1
+      pow $4,5
+      mov $3,3
+      add $5,$7
+      div $7,$2
+      add $6,4
+      gcd $0,7
+      div $4,5
+      mov $5,3
+      mul $2,$7
+      div $8,2
+      div $7,4
+      mul $1,8
+      div $1,3
+      sub $4,$0
+      div $7,3
+      div $6,$8
+      fac $2
+      sub $6,$0
+      add $0,$5
+      mov $3,$5
+      div $7,7
+      mov $7,1
+      mov $7,4
+      add $4,$3
+      add $0,3
+      add $0,$0
+      add $7,2
+      mul $4,$4
+      div $6,$8
+      mov $4,$1
+      sub $6,8
+      sub $3,$6
+      sub $6,$6
+      div $1,3
+      div $0,2
+      pow $7,$6
+      mul $4,8
+      sub $5,6
+      sub $5,$2
+      sub $7,1
+      sub $7,1
+      mul $4,2
+      pow $7,7
+      div $7,4
+      div $0,$0
+      fac $3
+      sub $6,$2
+      lpb $0,1
+        add $4,$2
+        sub $2,$1
+        mov $5,$0
+        mod $3,8
+        add $0,$8
+        add $3,1
+        sub $3,5
+        mov $5,$5
+        fac $6
+        add $6,8
+        sub $0,1
+        mod $4,$0
+        mov $1,8
+        mod $2,2
+        mul $1,8
+        sub $6,5
+        div $8,$0
+        mov $4,1
+        mov $7,$7
+        add $8,$6
+      lpe
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    mov $16,$15
+    lpb $16,1
+      mov $14,$1
+      sub $16,1
+    lpe
+  lpe
+  lpb $13,1
+    sub $14,$1
+    mov $13,0
+  lpe
+  mov $1,$14
+  mov $20,$19
+  lpb $20,1
+    mov $18,$1
+    sub $20,1
+  lpe
+lpe
+lpb $17,1
+  sub $18,$1
+  mov $17,0
+lpe
+mov $1,$18
