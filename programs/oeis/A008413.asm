@@ -1,0 +1,106 @@
+; A008413: Coordination sequence for 5-dimensional cubic lattice.
+; 1,10,50,170,450,1002,1970,3530,5890,9290,14002,20330,28610,39210,52530,69002,89090,113290,142130,176170,216002,262250,315570,376650,446210,525002,613810,713450,824770,948650,1086002,1237770,1404930
+
+mov $5,2
+pow $0,2
+mov $1,$5
+mov $6,2
+mul $5,4
+mov $2,2
+mul $1,3
+div $1,6
+mov $3,7
+mov $8,$1
+mov $9,4
+mul $9,$0
+mul $2,10
+mod $6,2
+add $0,5
+gcd $2,$1
+gcd $1,3
+mov $4,$8
+mov $7,4
+add $2,$6
+mov $3,$9
+pow $5,$2
+pow $1,$5
+div $8,$5
+lpb $0,1
+  mul $7,$2
+  mul $8,2
+  fac $7
+  mov $8,10
+  mul $7,3
+  div $7,$1
+  mul $6,$9
+  add $1,$9
+  mov $10,$2
+  div $9,$4
+  mul $7,2
+  mul $7,5
+  mul $0,4
+  sub $5,$7
+  mov $1,$3
+  add $7,$8
+  div $1,9
+  div $2,8
+  fac $6
+  sub $9,$10
+  div $3,9
+  mov $1,$6
+  gcd $2,2
+  sub $8,1
+  pow $3,$4
+  mod $6,$8
+  sub $0,1
+  add $6,$0
+  mov $1,6
+  mov $1,$2
+  add $0,$10
+  div $10,$6
+  fac $1
+  gcd $6,$7
+  gcd $7,8
+  mod $3,4
+  mod $4,$8
+  add $9,2
+  sub $0,5
+  sub $7,$6
+  add $8,$1
+  add $4,7
+  mov $3,$4
+  mov $2,10
+  gcd $9,$8
+  fac $2
+  gcd $3,$5
+lpe
+mul $2,8
+add $7,5
+mul $6,$10
+mul $0,$3
+add $0,6
+add $3,6
+mul $4,$4
+add $3,$9
+add $5,4
+gcd $6,4
+mod $4,2
+sub $7,$1
+gcd $4,9
+add $1,$7
+div $3,2
+cmp $9,2
+gcd $10,2
+div $3,$6
+add $8,$10
+sub $5,1
+mov $7,$0
+div $10,$8
+mod $6,$1
+sub $1,$7
+add $9,8
+pow $6,6
+gcd $1,$7
+sub $1,3
+div $1,3
+add $1,1

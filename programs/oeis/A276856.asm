@@ -5,7 +5,7 @@ mod $0,89
 mov $2,$0
 cmp $2,0
 mul $2,2
-add $1,$2
+mov $1,$2
 mov $2,$0
 cmp $2,1
 mul $2,2

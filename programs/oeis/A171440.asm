@@ -1,0 +1,210 @@
+; A171440: Expansion of (1+x)^5/(1-x).
+; 1,6,16,26,31,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32
+
+mov $31,$0
+mov $33,$0
+add $33,1
+lpb $33,1
+  clr $0,31
+  sub $33,1
+  mov $0,$31
+  sub $0,$33
+  mov $27,$0
+  mov $29,2
+  lpb $29,1
+    clr $0,27
+    sub $29,1
+    mov $0,$27
+    add $0,$29
+    sub $0,1
+    mov $23,$0
+    mov $25,2
+    lpb $25,1
+      clr $0,23
+      sub $25,1
+      mov $0,$23
+      add $0,$25
+      sub $0,1
+      mov $19,$0
+      mov $21,2
+      lpb $21,1
+        clr $0,19
+        sub $21,1
+        mov $0,$19
+        add $0,$21
+        sub $0,1
+        mov $15,$0
+        mov $17,2
+        lpb $17,1
+          clr $0,15
+          sub $17,1
+          mov $0,$15
+          add $0,$17
+          sub $0,1
+          mov $11,$0
+          mov $13,2
+          lpb $13,1
+            clr $0,11
+            sub $13,1
+            mov $0,$11
+            add $0,$13
+            sub $0,1
+            mov $5,2
+            pow $0,2
+            mov $1,$5
+            mov $6,2
+            mul $5,4
+            mov $2,2
+            mul $1,3
+            div $1,6
+            mov $3,7
+            mov $8,$1
+            mov $9,4
+            mul $9,$0
+            mul $2,10
+            mod $6,2
+            add $0,5
+            gcd $2,$1
+            gcd $1,3
+            mov $4,$8
+            mov $7,4
+            add $2,$6
+            mov $3,$9
+            pow $5,$2
+            pow $1,$5
+            div $8,$5
+            lpb $0,1
+              mul $7,$2
+              mul $8,2
+              fac $7
+              mov $8,10
+              mul $7,3
+              div $7,$1
+              mul $6,$9
+              add $1,$9
+              mov $10,$2
+              div $9,$4
+              mul $7,2
+              mul $7,5
+              mul $0,4
+              sub $5,$7
+              mov $1,$3
+              add $7,$8
+              div $1,9
+              div $2,8
+              fac $6
+              sub $9,$10
+              div $3,9
+              mov $1,$6
+              gcd $2,2
+              sub $8,1
+              pow $3,$4
+              mod $6,$8
+              sub $0,1
+              add $6,$0
+              mov $1,6
+              mov $1,$2
+              add $0,$10
+              div $10,$6
+              fac $1
+              gcd $6,$7
+              gcd $7,8
+              mod $3,4
+              mod $4,$8
+              add $9,2
+              sub $0,5
+              sub $7,$6
+              add $8,$1
+              add $4,7
+              mov $3,$4
+              mov $2,10
+              gcd $9,$8
+              fac $2
+              gcd $3,$5
+            lpe
+            mul $2,8
+            add $7,5
+            mul $6,$10
+            mul $0,$3
+            add $0,6
+            add $3,6
+            mul $4,$4
+            add $3,$9
+            add $5,4
+            gcd $6,4
+            mod $4,2
+            sub $7,$1
+            gcd $4,9
+            add $1,$7
+            div $3,2
+            cmp $9,2
+            gcd $10,2
+            div $3,$6
+            add $8,$10
+            sub $5,1
+            mov $7,$0
+            div $10,$8
+            mod $6,$1
+            sub $1,$7
+            add $9,8
+            pow $6,6
+            gcd $1,$7
+            mov $14,$13
+            lpb $14,1
+              mov $12,$1
+              sub $14,1
+            lpe
+          lpe
+          lpb $11,1
+            sub $12,$1
+            mov $11,0
+          lpe
+          mov $1,$12
+          mov $18,$17
+          lpb $18,1
+            mov $16,$1
+            sub $18,1
+          lpe
+        lpe
+        lpb $15,1
+          sub $16,$1
+          mov $15,0
+        lpe
+        mov $1,$16
+        mov $22,$21
+        lpb $22,1
+          mov $20,$1
+          sub $22,1
+        lpe
+      lpe
+      lpb $19,1
+        sub $20,$1
+        mov $19,0
+      lpe
+      mov $1,$20
+      mov $26,$25
+      lpb $26,1
+        mov $24,$1
+        sub $26,1
+      lpe
+    lpe
+    lpb $23,1
+      sub $24,$1
+      mov $23,0
+    lpe
+    mov $1,$24
+    mov $30,$29
+    lpb $30,1
+      mov $28,$1
+      sub $30,1
+    lpe
+  lpe
+  lpb $27,1
+    sub $28,$1
+    mov $27,0
+  lpe
+  mov $1,$28
+  div $1,3
+  add $32,$1
+lpe
+mov $1,$32
