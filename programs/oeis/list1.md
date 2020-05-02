@@ -225,7 +225,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A103453](http://oeis.org/A103453) ([L04 program](A103453.asm)): a(n) = 0^n + 3^n - 1.
 * [A103454](http://oeis.org/A103454) ([L04 program](A103454.asm)): a(n) = 0^n + 4^n - 1.
 * [A103455](http://oeis.org/A103455) ([L04 program](A103455.asm)): a(n) = 0^n + 5^n - 1.
-* [A103457](http://oeis.org/A103457) ([L06 program](A103457.asm)): a(n) = 3^n + 1 - 0^n.
+* [A103457](http://oeis.org/A103457) ([L05 program](A103457.asm)): a(n) = 3^n + 1 - 0^n.
 * [A103458](http://oeis.org/A103458) ([L05 program](A103458.asm)): a(n) = 7^n + 1 - 0^n.
 * [A103469](http://oeis.org/A103469) ([L12 program](A103469.asm)): Number of polyominoes without holes consisting of 3 regular unit n-gons.
 * [A103486](http://oeis.org/A103486) ([L07 program](A103486.asm)): a(0)=7, a(1)=11, a(2)=13, a(3)=17; then a(n) = a(n-1)+a(n-3)-a(n-4).
@@ -961,6 +961,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122983](http://oeis.org/A122983) ([L05 program](A122983.asm)): a(n) = (2 + (-1)^n + 3^n)/4.
 * [A123010](http://oeis.org/A123010) ([L22 program](A123010.asm)): a(1)=1; a(2)=0; a(3)=4; a(4)=16; a(n)=5a(n-1)+a(n-2)-5a(n-3) for n>=5.
 * [A123068](http://oeis.org/A123068) ([L07 program](A123068.asm)): Numbers represented by the "Little Methuselah" quadratic form x^2 + 2*y^2 + y*z + 4*z^2.
+* [A123087](http://oeis.org/A123087) ([L28 program](A123087.asm)): Sequence of numbers such that a(2*n)+a(n)=n and a(n)is the smallest number such that a(n)>=a(n-1).
 * [A123108](http://oeis.org/A123108) ([L03 program](A123108.asm)): a(0)=1, a(1)=0, a(2)=1, a(3)=1, a(n) = a(n-1) + a(n-2) - a(n-3) for n > 3.
 * [A123109](http://oeis.org/A123109) ([L07 program](A123109.asm)): a(0) = 1, a(1) = 3, a(n) = 3*a(n-1) + 3 for n > 1.
 * [A123110](http://oeis.org/A123110) ([L13 program](A123110.asm)): Triangle T(n,k), 0 <= k <= n, read by rows given by [0,1,0,0,0,0,0,0,0,0,...] DELTA [1,0,-1,1,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
@@ -1071,6 +1072,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126645](http://oeis.org/A126645) ([L11 program](A126645.asm)): a(n) is the number of integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4 and 5, at least one of digits 6,7 and at least one of digits 8,9.
 * [A126646](http://oeis.org/A126646) ([L04 program](A126646.asm)): a(n) = 2^(n+1) - 1.
 * [A126664](http://oeis.org/A126664) ([L09 program](A126664.asm)): Continued fraction expansion of sqrt(3)/2.
+* [A126696](http://oeis.org/A126696) ([L29 program](A126696.asm)): Tenth-squares: floor(n/10)*ceiling(n/10).
 * [A126811](http://oeis.org/A126811) ([L22 program](A126811.asm)): Duplicate of A098108.
 * [A126950](http://oeis.org/A126950) ([L18 program](A126950.asm)): a(1) = 1; for n>1, a(n) = the smallest number p > a(n-1) such that (a(n-1)+p)/2 is a cube.
 * [A126964](http://oeis.org/A126964) ([L05 program](A126964.asm)): a(n) = 2*n*(6*n-1).
@@ -1746,7 +1748,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A137235](http://oeis.org/A137235) ([L10 program](A137235.asm)): a(n) = (n+1)/2 if n is odd; a(n) = n/2 + 6 if n is even.
 * [A137301](http://oeis.org/A137301) ([L28 program](A137301.asm)): Decimal expansion of 999/9801.
 * [A137325](http://oeis.org/A137325) ([L15 program](A137325.asm)): Number of terms in the Janet periodic table of the elements 32 columns: ordered 14 2's, 10 4's, 6 6's, 2 8's.
-* [A137340](http://oeis.org/A137340) ([L15 program](A137340.asm)): a(n) = 2*a(n-1) + 3*a(n-2), with a(0) = 1, a(1) = 9.
+* [A137340](http://oeis.org/A137340) ([L09 program](A137340.asm)): a(n) = 2*a(n-1) + 3*a(n-2), with a(0) = 1, a(1) = 9.
 * [A137344](http://oeis.org/A137344) ([L18 program](A137344.asm)): a(n)=4a(n-2). Also 3*A084221.
 * [A137362](http://oeis.org/A137362) ([L18 program](A137362.asm)): Positions at which the truncated square root of triangular numbers is unique.
 * [A137397](http://oeis.org/A137397) ([L07 program](A137397.asm)): Number of distinct palindromic subwords in the binary representation of n.
@@ -2967,6 +2969,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160467](http://oeis.org/A160467) ([L16 program](A160467.asm)): a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 * [A160511](http://oeis.org/A160511) ([L24 program](A160511.asm)): Number of weighings needed to find lighter coins among n coins.
 * [A160517](http://oeis.org/A160517) ([L28 program](A160517.asm)): A walk of 10-divisible "less regular" figurate cuboctahedra, from sequence A160249.
+* [A160529](http://oeis.org/A160529) ([L30 program](A160529.asm)): a(1) = 1; for n>1, a(n) = a(n-1) + d1 + d2 where d1 = 4 if n is even. d1 = 1 if n is odd, d2 = 15 if n mod 4 = 0, d2 = 0 if n mod 4 != 0.
 * [A160536](http://oeis.org/A160536) ([L27 program](A160536.asm)): a(n) = Fibonacci(n) + n^2.
 * [A160538](http://oeis.org/A160538) ([L06 program](A160538.asm)): a(n)=4(n^4-n^3)
 * [A160542](http://oeis.org/A160542) ([L05 program](A160542.asm)): Not divisible by 11

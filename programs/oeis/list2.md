@@ -195,7 +195,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A208995](http://oeis.org/A208995) ([L20 program](A208995.asm)): Number of 4-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and first differences in -n..n.
 * [A209008](http://oeis.org/A209008) ([L10 program](A209008.asm)): Number of 4-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and first and second differences in -n..n.
 * [A209084](http://oeis.org/A209084) ([L17 program](A209084.asm)): a(n) = 2*a(n-1) + 4*a(n-2) with n>1, a(0)=0, a(1)=4.
-* [A209229](http://oeis.org/A209229) ([L08 program](A209229.asm)): Characteristic function of powers of 2, cf. A000079.
+* [A209229](http://oeis.org/A209229) ([L03 program](A209229.asm)): Characteristic function of powers of 2, cf. A000079.
 * [A209262](http://oeis.org/A209262) ([L38 program](A209262.asm)): a(n) = 1 + 2*n^2 + 3*n^3 + 4*n^4.
 * [A209263](http://oeis.org/A209263) ([L59 program](A209263.asm)): a(n) = 1 + 2*n^2 + 3*n^3 + 4*n^4 + 5*n^5.
 * [A209264](http://oeis.org/A209264) ([L69 program](A209264.asm)): a(n) = 1 + 2*n^2 + 3*n^3 + 4*n^4 +5*n^5 + 6*n^6.
@@ -226,7 +226,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210378](http://oeis.org/A210378) ([L16 program](A210378.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and even trace.
 * [A210379](http://oeis.org/A210379) ([L11 program](A210379.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
 * [A210433](http://oeis.org/A210433) ([L12 program](A210433.asm)): Natural numbers k such that floor(v) * ceiling(v)^2 = k, where v = k^(1/3).
-* [A210435](http://oeis.org/A210435) ([L13 program](A210435.asm)): Number of digits in 5^n.
+* [A210435](http://oeis.org/A210435) ([L09 program](A210435.asm)): Number of digits in 5^n.
 * [A210436](http://oeis.org/A210436) ([L04 program](A210436.asm)): Number of digits in 6^n.
 * [A210440](http://oeis.org/A210440) ([L06 program](A210440.asm)): a(n) = 2*n*(n+1)*(n+2)/3.
 * [A210448](http://oeis.org/A210448) ([L09 program](A210448.asm)): Total number of different letters summed over all ternary words of length n.
@@ -767,7 +767,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227259](http://oeis.org/A227259) ([L12 program](A227259.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of two or less, with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227265](http://oeis.org/A227265) ([L11 program](A227265.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of three or less, with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227316](http://oeis.org/A227316) ([L09 program](A227316.asm)): a(n) = n(n+1) if n == 0 or 1 (mod 4), otherwise a(n) = n(n+1)/2.
-* [A227347](http://oeis.org/A227347) ([L52 program](A227347.asm)): Number of lattice points in the closed region bounded by the graphs of y = (5/6)*x^2, x = n, and y = 0, excluding points on the x-axis.
 * [A227353](http://oeis.org/A227353) ([L10 program](A227353.asm)): Number of lattice points in the closed region bounded by the graphs of y = 3*x/5, x = n, and y = 0, excluding points on the x-axis.
 * [A227380](http://oeis.org/A227380) ([L05 program](A227380.asm)): Doubling the first two of every four nonnegative numbers.
 * [A227394](http://oeis.org/A227394) ([L14 program](A227394.asm)): The maximum value of x^4(n-x)(x-1) for x in 1..n is reached for x = a(n).
@@ -1759,7 +1758,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266662](http://oeis.org/A266662) ([L17 program](A266662.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
 * [A266663](http://oeis.org/A266663) ([L11 program](A266663.asm)): Total number of ON (black) cells after n iterations of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
 * [A266665](http://oeis.org/A266665) ([L10 program](A266665.asm)): Total number of OFF (white) cells after n iterations of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
-* [A266678](http://oeis.org/A266678) ([L03 program](A266678.asm)): Middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
+* [A266678](http://oeis.org/A266678) ([L02 program](A266678.asm)): Middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
 * [A266719](http://oeis.org/A266719) ([L08 program](A266719.asm)): Middle column of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
 * [A266722](http://oeis.org/A266722) ([L09 program](A266722.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
 * [A266723](http://oeis.org/A266723) ([L08 program](A266723.asm)): Total number of ON (black) cells after n iterations of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
@@ -1871,7 +1870,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267924](http://oeis.org/A267924) ([L05 program](A267924.asm)): Decimal representation of the n-th iteration of the "Rule 245" elementary cellular automaton starting with a single ON (black) cell.
 * [A267927](http://oeis.org/A267927) ([L12 program](A267927.asm)): Triangle read by rows giving successive states of cellular automaton generated by "Rule 249" initiated with a single ON (black) cell.
 * [A267935](http://oeis.org/A267935) ([L17 program](A267935.asm)): Decimal representation of the n-th iteration of the "Rule 249" elementary cellular automaton starting with a single ON (black) cell.
-* [A267936](http://oeis.org/A267936) ([L03 program](A267936.asm)): Triangle read by rows giving successive states of cellular automaton generated by "Rule 251" initiated with a single ON (black) cell.
+* [A267936](http://oeis.org/A267936) ([L02 program](A267936.asm)): Triangle read by rows giving successive states of cellular automaton generated by "Rule 251" initiated with a single ON (black) cell.
 * [A267938](http://oeis.org/A267938) ([L08 program](A267938.asm)): Decimal representation of the n-th iteration of the "Rule 251" elementary cellular automaton starting with a single ON (black) cell.
 * [A267941](http://oeis.org/A267941) ([L10 program](A267941.asm)): Decimal representation of the n-th iteration of the "Rule 253" elementary cellular automaton starting with a single ON (black) cell.
 * [A267942](http://oeis.org/A267942) ([L16 program](A267942.asm)): Interleave (n-1)^2 + 2 and (n+1)^2 + 2.

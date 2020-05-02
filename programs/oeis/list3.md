@@ -747,6 +747,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332410](http://oeis.org/A332410) ([L40 program](A332410.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-5) - 2*a(n-6) + a(n-7) with a(0)=0, a(1)=1, a(2)=3, a(3)=6, a(4)=11, a(5)=17, a(6)=24.
 * [A332495](http://oeis.org/A332495) ([L14 program](A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
 * [A332519](http://oeis.org/A332519) ([L04 program](A332519.asm)): a(n) = 4*(n^2+n-2).
+* [A332698](http://oeis.org/A332698) ([L42 program](A332698.asm)): a(n) = (8*n^3 + 15*n^2 + 13*n)/6.
 * [A332756](http://oeis.org/A332756) ([L08 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
 * [A333525](http://oeis.org/A333525) ([L05 program](A333525.asm)): Degree of polytope representing the number n.
 * [A333574](http://oeis.org/A333574) ([L15 program](A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.
