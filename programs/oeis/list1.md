@@ -508,7 +508,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110532](http://oeis.org/A110532) ([L05 program](A110532.asm)): a(n) = floor(n/2) + floor(n/5).
 * [A110533](http://oeis.org/A110533) ([L05 program](A110533.asm)): a(n) = floor(n/2) * floor(n/5).
 * [A110548](http://oeis.org/A110548) ([L23 program](A110548.asm)): One of the three ordered sets of positive integers that solves the minimal magic die puzzle.
-* [A110549](http://oeis.org/A110549) ([L07 program](A110549.asm)): Period 8: repeat [1, 2, 4, 3, 3, 4, 2, 1].
+* [A110549](http://oeis.org/A110549) ([L06 program](A110549.asm)): Period 8: repeat [1, 2, 4, 3, 3, 4, 2, 1].
 * [A110550](http://oeis.org/A110550) ([L13 program](A110550.asm)): Periodic {1,3,2,4,4,2,3,1}.
 * [A110551](http://oeis.org/A110551) ([L10 program](A110551.asm)): Period 6: repeat [1, 3, 5, 5, 3, 1].
 * [A110568](http://oeis.org/A110568) ([L07 program](A110568.asm)): Period 6: repeat [1, 0, 2, 2, 0, 1].
@@ -2318,7 +2318,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A153465](http://oeis.org/A153465) ([L05 program](A153465.asm)): 9*4^n - 2.
 * [A153466](http://oeis.org/A153466) ([L21 program](A153466.asm)): a(n) = A027941(n) + A027941(n+6).
 * [A153485](http://oeis.org/A153485) ([L10 program](A153485.asm)): Sum of all aliquot divisors of all positive integers <= n.
-* [A153509](http://oeis.org/A153509) ([L06 program](A153509.asm)): Period 9: repeat 6,6,6,3,3,3,0,0,0.
+* [A153509](http://oeis.org/A153509) ([L06 program](A153509.asm)): Period 9: repeat [6, 6, 6, 3, 3, 3, 0, 0, 0].
 * [A153642](http://oeis.org/A153642) ([L05 program](A153642.asm)): a(n) = 4*n^2 + 24*n + 8.
 * [A153643](http://oeis.org/A153643) ([L08 program](A153643.asm)): Jacobsthal numbers A001045 incremented by 2.
 * [A153644](http://oeis.org/A153644) ([L06 program](A153644.asm)): a(n) = 4*n^2 + 28*n + 10.
@@ -2437,6 +2437,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155604](http://oeis.org/A155604) ([L11 program](A155604.asm)): 6^n+3^n-1.
 * [A155605](http://oeis.org/A155605) ([L10 program](A155605.asm)): 7^n+3^n-1.
 * [A155616](http://oeis.org/A155616) ([L08 program](A155616.asm)): 5^n + 4^n - 1.
+* [A155627](http://oeis.org/A155627) ([L12 program](A155627.asm)): a(n) = 6^n - 4^n + 1.
 * [A155628](http://oeis.org/A155628) ([L09 program](A155628.asm)): 7^n-4^n+1^n
 * [A155639](http://oeis.org/A155639) ([L12 program](A155639.asm)): 6^n-5^n+1^n.
 * [A155701](http://oeis.org/A155701) ([L04 program](A155701.asm)): a(n) = (4^n + 8)/3.
@@ -3760,7 +3761,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171141](http://oeis.org/A171141) ([L13 program](A171141.asm)): Numbers that are congruent to {6,33} mod 41.
 * [A171152](http://oeis.org/A171152) ([L19 program](A171152.asm)): Partial sums of A118011.
 * [A171160](http://oeis.org/A171160) ([L20 program](A171160.asm)): a(n) = a(n-1) + 2a(n-2) with a(0)=3, a(1)=4.
-* [A171182](http://oeis.org/A171182) ([L06 program](A171182.asm)): Periodic with period 6: repeat [0, 1, 1, 1, 0, 2].
+* [A171182](http://oeis.org/A171182) ([L06 program](A171182.asm)): Period 6: repeat [0, 1, 1, 1, 0, 2].
 * [A171218](http://oeis.org/A171218) ([L13 program](A171218.asm)): a(n) = sum(A109613(k)*A005843(n-k): 0<=k<=n).
 * [A171220](http://oeis.org/A171220) ([L13 program](A171220.asm)): a(n) = (2n + 1)*5^n.
 * [A171230](http://oeis.org/A171230) ([L11 program](A171230.asm)): a(n) = 0+1+2+...+n in lunar arithmetic in base 2 written in base 2.
@@ -5039,7 +5040,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198397](http://oeis.org/A198397) ([L06 program](A198397.asm)): 7^n - 7*n.
 * [A198442](http://oeis.org/A198442) ([L05 program](A198442.asm)): Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,0).
 * [A198517](http://oeis.org/A198517) ([L04 program](A198517.asm)): Period 5: repeat [1,0,1,0,0].
-* [A198633](http://oeis.org/A198633) ([L07 program](A198633.asm)): Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
+* [A198633](http://oeis.org/A198633) ([L06 program](A198633.asm)): Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
 * [A198635](http://oeis.org/A198635) ([L08 program](A198635.asm)): Total number of round trips, each of length 2*n on the graph P_5 (o-o-o-o-o).
 * [A198643](http://oeis.org/A198643) ([L05 program](A198643.asm)): 5*3^n-1.
 * [A198644](http://oeis.org/A198644) ([L05 program](A198644.asm)): 8*3^n-1.

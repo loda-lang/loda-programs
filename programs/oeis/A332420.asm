@@ -1,0 +1,85 @@
+; A332420: Number of Maclaurin polynomials of sin x having exactly n positive zeros.
+; 3,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5
+
+mov $7,$0
+mov $8,$7
+mov $6,$7
+mul $0,5
+mov $3,7
+mov $2,8
+mul $6,$2
+add $7,2
+add $7,3
+mov $2,$0
+div $2,2
+mov $4,$7
+div $0,6
+add $4,$0
+sub $8,$4
+mov $5,3
+add $4,7
+add $4,3
+pow $5,6
+mod $0,$4
+lpb $2,1
+  mul $5,4
+  div $6,3
+  sub $0,5
+  lpb $4,1
+    mov $4,$0
+    add $5,2
+    sub $8,8
+    sub $4,$6
+  lpe
+  add $0,2
+  add $7,7
+  cmp $8,4
+  lpb $5,1
+    mov $1,$7
+    sub $5,$6
+    add $8,$3
+    sub $0,$0
+    gcd $0,5
+    mul $5,$3
+    add $5,1
+    add $5,$1
+    mod $3,3
+    mov $6,7
+    mul $2,$7
+    mul $4,$3
+    sub $6,$6
+    sub $4,$1
+    mul $0,$0
+    mul $4,$3
+  lpe
+  mov $6,$7
+  mov $8,7
+  cmp $3,$6
+  mul $7,2
+  mod $1,$5
+  add $2,7
+  lpb $6,1
+    div $7,$5
+    mul $8,$4
+    gcd $2,8
+    add $4,$8
+    mov $4,8
+    pow $3,3
+    sub $6,$6
+    mov $3,$0
+    div $6,2
+    sub $8,7
+    add $7,$8
+    pow $6,$6
+  lpe
+  sub $2,1
+  sub $4,$0
+  div $7,6
+  mov $7,$7
+  sub $4,5
+  add $1,7
+  sub $6,$1
+  add $8,2
+lpe
+div $1,7
+add $1,3

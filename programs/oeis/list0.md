@@ -1373,7 +1373,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017293](http://oeis.org/A017293) ([L03 program](A017293.asm)): a(n) = 10n+2.
 * [A017294](http://oeis.org/A017294) ([L04 program](A017294.asm)): a(n) = (10*n+2)^2.
 * [A017295](http://oeis.org/A017295) ([L05 program](A017295.asm)): (10*n+2)^3.
-* [A017296](http://oeis.org/A017296) ([L09 program](A017296.asm)): a(n) = (10*n + 2)^4.
+* [A017296](http://oeis.org/A017296) ([L07 program](A017296.asm)): a(n) = (10*n + 2)^4.
 * [A017305](http://oeis.org/A017305) ([L03 program](A017305.asm)): a(n) = 10n + 3.
 * [A017306](http://oeis.org/A017306) ([L05 program](A017306.asm)): a(n) = (10*n + 3)^2.
 * [A017307](http://oeis.org/A017307) ([L05 program](A017307.asm)): a(n) = (10*n + 3)^3.
@@ -1400,6 +1400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017368](http://oeis.org/A017368) ([L15 program](A017368.asm)): a(n) = (10*n + 8)^4.
 * [A017377](http://oeis.org/A017377) ([L03 program](A017377.asm)): a(n) = 10*n + 9.
 * [A017378](http://oeis.org/A017378) ([L12 program](A017378.asm)): a(n) = (10*n + 9)^2.
+* [A017379](http://oeis.org/A017379) ([L09 program](A017379.asm)): a(n) = (10*n + 9)^3.
 * [A017380](http://oeis.org/A017380) ([L17 program](A017380.asm)): a(n) = (10*n + 9)^4.
 * [A017390](http://oeis.org/A017390) ([L03 program](A017390.asm)): a(n) = (11*n)^2.
 * [A017391](http://oeis.org/A017391) ([L03 program](A017391.asm)): a(n) = (11*n)^3.
@@ -3995,7 +3996,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A057066](http://oeis.org/A057066) ([L03 program](A057066.asm)): Floor[4^4/n].
 * [A057067](http://oeis.org/A057067) ([L03 program](A057067.asm)): a(n) = floor(5^5/n).
 * [A057068](http://oeis.org/A057068) ([L03 program](A057068.asm)): floor[6^6/n].
-* [A057069](http://oeis.org/A057069) ([L09 program](A057069.asm)): floor[7^7/n].
+* [A057069](http://oeis.org/A057069) ([L06 program](A057069.asm)): floor[7^7/n].
 * [A057070](http://oeis.org/A057070) ([L03 program](A057070.asm)): floor[8^8/n].
 * [A057071](http://oeis.org/A057071) ([L03 program](A057071.asm)): floor[9^9/n].
 * [A057084](http://oeis.org/A057084) ([L15 program](A057084.asm)): Scaled Chebyshev U-polynomials evaluated at sqrt(2).
@@ -5374,6 +5375,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081168](http://oeis.org/A081168) ([L44 program](A081168.asm)): Differences of Beatty sequence for square root of 10.
 * [A081186](http://oeis.org/A081186) ([L08 program](A081186.asm)): 4th binomial transform of (1,0,1,0,1,...), A059841.
 * [A081193](http://oeis.org/A081193) ([L15 program](A081193.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n>1, a(0)=1, a(1)=9.
+* [A081199](http://oeis.org/A081199) ([L10 program](A081199.asm)): 5th binomial transform of (0,1,0,1,...), A000035.
 * [A081219](http://oeis.org/A081219) ([L20 program](A081219.asm)): One sixtieth the product of primitive Pythagorean triangles' sides whose odd values differ by 2.
 * [A081223](http://oeis.org/A081223) ([L24 program](A081223.asm)): Smallest k such that floor(k*gamma) begins with n (gamma=0.5772156649...).
 * [A081245](http://oeis.org/A081245) ([L26 program](A081245.asm)): Number of days in months in the Haab year of Mayan/mesoamerican calendars.
@@ -6040,7 +6042,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A094979](http://oeis.org/A094979) ([L06 program](A094979.asm)): Duplicate of A065565.
 * [A095097](http://oeis.org/A095097) ([L38 program](A095097.asm)): Fib000 numbers: those n for which the Zeckendorf expansion A014417(n) ends with three zeros.
 * [A095099](http://oeis.org/A095099) ([L21 program](A095099.asm)): Duplicate of A134860.
-* [A095121](http://oeis.org/A095121) ([L07 program](A095121.asm)): Expansion of (1-x+2x^2)/((1-x)(1-2x)).
+* [A095121](http://oeis.org/A095121) ([L06 program](A095121.asm)): Expansion of (1-x+2x^2)/((1-x)(1-2x)).
 * [A095130](http://oeis.org/A095130) ([L04 program](A095130.asm)): Expansion of (x+x^2)/(1-x^6); period 6: repeat [0, 1, 1, 0, 0, 0].
 * [A095151](http://oeis.org/A095151) ([L07 program](A095151.asm)): a(n+3) = 3*a(n+2) - 2*a(n+1) + 1 with a(0)=0, a(1)=2.
 * [A095187](http://oeis.org/A095187) ([L43 program](A095187.asm)): Least significant digit of (n mod 10)^floor(n/10).

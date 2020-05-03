@@ -1,0 +1,95 @@
+; A197911: Representable by A001045 (Jacobsthal sequence). Complement of A003158.
+; 0,1,3,4,5,6,8,9,11,12,14,15,16,17,19,20,21,22,24,25,26,27,29,30,32,33,35,36,37,38,40,41,43,44,46,47,48,49,51,52,54,55,57,58,59,60,62,63,64,65,67,68,69,70,72,73,75,76,78,79,80,81,83,84,85,86,88
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $3,$0
+  mul $3,5
+  mov $4,2
+  mov $2,$0
+  mov $0,2
+  lpb $2,1
+    mov $8,4
+    sub $3,5
+    mov $1,5
+    pow $3,$4
+    sub $1,1
+    sub $3,$0
+    mov $5,2
+    mul $1,$0
+    div $4,$1
+    mov $6,2
+    lpb $4,1
+      mov $7,5
+      pow $5,3
+      sub $4,$2
+      add $8,$8
+      mov $5,3
+    lpe
+    lpb $5,1
+      div $3,8
+      sub $5,$2
+      add $3,$0
+      mul $8,$4
+      mod $6,2
+      add $7,$5
+      sub $4,$2
+      add $8,5
+    lpe
+    add $2,$5
+    mov $4,$0
+    add $0,8
+    div $7,8
+    div $7,$0
+    sub $8,1
+    mov $8,$2
+    add $8,$8
+    mod $2,3
+    sub $5,6
+    mul $0,$0
+    gcd $3,2
+    sub $5,8
+    pow $3,3
+    pow $1,3
+    gcd $0,2
+    mov $4,0
+    mul $1,$0
+    gcd $1,$8
+    cmp $2,3
+    mul $6,7
+    mod $1,6
+    sub $4,$2
+    mul $4,$5
+    lpb $6,1
+      cmp $8,$7
+      mul $4,$5
+      mov $3,0
+      mul $6,$6
+      mul $7,4
+      sub $6,$2
+      mov $7,8
+      div $0,5
+      sub $5,6
+      mod $6,2
+      add $2,$3
+      add $8,$6
+      mul $5,2
+      mul $5,2
+      div $2,6
+      add $0,8
+    lpe
+    mul $2,$0
+    mov $6,$4
+    mov $4,$5
+    sub $2,1
+  lpe
+  div $1,2
+  add $10,$1
+lpe
+mov $1,$10
