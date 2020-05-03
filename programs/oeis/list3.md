@@ -528,6 +528,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317551](http://oeis.org/A317551) ([L11 program](A317551.asm)): Fertility numbers.
 * [A317594](http://oeis.org/A317594) ([L02 program](A317594.asm)): Lexicographically first sequence of different terms such that erasing the last three digits of a(n+1) and adding this new reshaped integer to a(n) gives back a(n+1).
 * [A317614](http://oeis.org/A317614) ([L14 program](A317614.asm)): a(n) = (1/2)*(n^3 + n*(n mod 2)).
+* [A317621](http://oeis.org/A317621) ([L31 program](A317621.asm)): Numbers missing from A317619.
 * [A317633](http://oeis.org/A317633) ([L07 program](A317633.asm)): Numbers congruent to {1, 7, 9} mod 10.
 * [A317637](http://oeis.org/A317637) ([L07 program](A317637.asm)): a(n) = n*(n+1)*(n+3).
 * [A317657](http://oeis.org/A317657) ([L08 program](A317657.asm)): Numbers congruent to {15, 75, 95} mod 100.
@@ -737,6 +738,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330707](http://oeis.org/A330707) ([L08 program](A330707.asm)): a(n) = ( 3*n^2 + n - 1 + (-1)^floor(n/2) )/4.
 * [A330795](http://oeis.org/A330795) ([L10 program](A330795.asm)): Evaluation of the polynomials given by the Riordan square of the Fibonacci sequence with a(0) = 1 (A193737) at 1/2 and normalized with 2^n.
 * [A330805](http://oeis.org/A330805) ([L38 program](A330805.asm)): Number of squares and rectangles in the interior of the square with vertices (n,0), (0,n), (-n,0) and (0,-n) in a square (x,y)-grid.
+* [A330881](http://oeis.org/A330881) ([L27 program](A330881.asm)): Length of longest LB factorization over all binary strings of length n.
 * [A331162](http://oeis.org/A331162) ([L15 program](A331162.asm)): a(n) is the number of digits in the concatenation of a(0) to a(n-1) that are equal to the corresponding digit in the concatenation of all integers >= 0, with a(0) = 0.
 * [A331190](http://oeis.org/A331190) ([L09 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
 * [A331528](http://oeis.org/A331528) ([L14 program](A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
