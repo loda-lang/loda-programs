@@ -1,0 +1,105 @@
+; A061995: Number of ways to place 2 nonattacking kings on an n X n board.
+; 0,0,0,16,78,228,520,1020,1806,2968,4608,6840,9790,13596,18408,24388,31710,40560,51136,63648,78318,95380,115080,137676,163438,192648,225600,262600,303966,350028,401128,457620,519870,588256
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $1,$0
+    mov $3,$0
+    mov $7,$1
+    div $7,2
+    add $7,$1
+    mov $4,$7
+    sub $0,2
+    mul $1,$0
+    cmp $4,$1
+    div $0,6
+    mov $5,2
+    mov $3,$5
+    fac $5
+    mov $2,5
+    mov $6,4
+    add $0,8
+    mov $0,1
+    mov $2,$6
+    mov $7,$2
+    add $2,5
+    mov $2,6
+    mod $5,$6
+    div $7,$6
+    fac $2
+    div $7,$2
+    mov $3,1
+    sub $6,$4
+    sub $6,2
+    add $1,$5
+    mul $6,$7
+    mul $1,3
+    mul $5,2
+    sub $7,5
+    mul $6,$0
+    add $4,6
+    mov $8,7
+    pow $2,3
+    sub $1,$4
+    gcd $6,2
+    add $0,4
+    sub $6,$3
+    div $0,$2
+    add $5,8
+    gcd $6,$3
+    pow $5,2
+    mov $6,4
+    add $7,1
+    mul $5,2
+    sub $3,$5
+    cmp $4,3
+    mov $2,$3
+    mul $4,4
+    add $0,$3
+    mov $3,1
+    add $4,1
+    sub $3,4
+    div $4,$7
+    add $6,5
+    mov $0,$1
+    sub $2,4
+    mul $8,$2
+    sub $0,1
+    add $4,2
+    div $2,7
+    add $8,$8
+    mul $0,$3
+    add $1,$1
+    sub $1,2
+    mod $6,$4
+    sub $2,7
+    pow $5,$6
+    sub $7,$5
+    mul $7,$5
+    gcd $5,2
+    sub $6,1
+    mul $3,2
+    cmp $7,0
+    gcd $3,$5
+    div $0,$3
+    mul $4,$2
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13
