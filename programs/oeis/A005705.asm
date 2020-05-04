@@ -1,0 +1,106 @@
+; A005705: Number of partitions of 4*n into powers of 4.
+; 1,2,3,4,6,8,10,12,15,18,21,24,28,32,36,40,46,52,58,64,72,80,88,96,106,116,126,136,148,160,172,184,199,214,229,244,262,280,298,316,337,358,379,400,424,448,472,496,524,552,580,608,640,672,704,736,772,808,844
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $7,7
+    mov $1,$7
+    mov $5,$0
+    mov $3,$5
+    mul $7,4
+    add $7,2
+    add $3,8
+    mov $6,2
+    gcd $0,4
+    sub $5,$5
+    div $5,2
+    mov $4,6
+    mov $2,1
+    mod $1,$4
+    mod $6,$7
+    lpb $0,1
+      add $0,4
+      mov $8,6
+      sub $7,$0
+      div $3,$0
+      add $0,7
+      sub $1,$0
+      div $8,2
+      mul $7,3
+      mov $5,2
+      mov $4,3
+      add $3,$2
+      mod $1,8
+      add $7,8
+      sub $0,1
+      mov $6,$4
+      mov $1,$3
+      mov $0,$2
+      sub $7,1
+      cmp $6,3
+      add $4,1
+      div $7,4
+      mul $4,$1
+      mov $5,$7
+      div $5,$7
+      fac $1
+      cmp $1,$1
+      sub $5,1
+      pow $7,4
+      mov $7,7
+      cmp $2,5
+      add $8,1
+      fac $2
+      mov $4,$3
+      mov $6,8
+      cmp $5,8
+      sub $7,3
+      add $6,$4
+      mov $0,$0
+      gcd $2,$7
+      cmp $6,$6
+      mov $1,$4
+      fac $7
+      pow $2,8
+      sub $7,$7
+      mul $0,3
+    lpe
+    add $3,$1
+    mul $0,3
+    div $1,2
+    mov $2,8
+    mov $6,7
+    mul $0,7
+    mod $5,$3
+    add $3,$8
+    div $8,$2
+    mov $6,$4
+    div $0,$2
+    gcd $5,4
+    sub $7,1
+    mov $7,5
+    mul $5,8
+    add $1,4
+    add $2,$7
+    div $7,$7
+    sub $1,4
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13
