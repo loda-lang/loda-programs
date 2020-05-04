@@ -227,7 +227,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210378](http://oeis.org/A210378) ([L16 program](A210378.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and even trace.
 * [A210379](http://oeis.org/A210379) ([L11 program](A210379.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
 * [A210433](http://oeis.org/A210433) ([L12 program](A210433.asm)): Natural numbers k such that floor(v) * ceiling(v)^2 = k, where v = k^(1/3).
-* [A210435](http://oeis.org/A210435) ([L09 program](A210435.asm)): Number of digits in 5^n.
+* [A210435](http://oeis.org/A210435) ([L07 program](A210435.asm)): Number of digits in 5^n.
 * [A210436](http://oeis.org/A210436) ([L04 program](A210436.asm)): Number of digits in 6^n.
 * [A210440](http://oeis.org/A210440) ([L06 program](A210440.asm)): a(n) = 2*n*(n+1)*(n+2)/3.
 * [A210448](http://oeis.org/A210448) ([L09 program](A210448.asm)): Total number of different letters summed over all ternary words of length n.
@@ -334,7 +334,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212415](http://oeis.org/A212415) ([L08 program](A212415.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<x>=y<=z.
 * [A212427](http://oeis.org/A212427) ([L05 program](A212427.asm)): a(n) = 17*n + A000217(n-1).
 * [A212428](http://oeis.org/A212428) ([L05 program](A212428.asm)): a(n) = 18*n + A000217(n-1).
-* [A212499](http://oeis.org/A212499) ([L32 program](A212499.asm)): Numbers n such that n divides the product of digits of n.
 * [A212501](http://oeis.org/A212501) ([L11 program](A212501.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w > x < y >= z.
 * [A212503](http://oeis.org/A212503) ([L07 program](A212503.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<2x and y<2z.
 * [A212505](http://oeis.org/A212505) ([L07 program](A212505.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<2x and y>=2z.
@@ -360,6 +359,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212747](http://oeis.org/A212747) ([L44 program](A212747.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and 2w=floor((x+y+z)/2)).
 * [A212755](http://oeis.org/A212755) ([L10 program](A212755.asm)): Number of (w,x,y,z) with all terms in {0,...,n}  and |w-x|=max{w,x,y,z}-min{w,x,y,z}.
 * [A212760](http://oeis.org/A212760) ([L14 program](A212760.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w even, and x = y + z.
+* [A212763](http://oeis.org/A212763) ([L10 program](A212763.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, and w, x and y odd.
 * [A212766](http://oeis.org/A212766) ([L06 program](A212766.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w even and x odd.
 * [A212767](http://oeis.org/A212767) ([L12 program](A212767.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w even, x even, and w+x=y+z.
 * [A212804](http://oeis.org/A212804) ([L07 program](A212804.asm)): Expansion of (1-x)/(1-x-x^2).
@@ -1184,6 +1184,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245552](http://oeis.org/A245552) ([L06 program](A245552.asm)): G.f.: Sum_{n>=0} (2*n+1)*x^(n^2+n+1).
 * [A245578](http://oeis.org/A245578) ([L17 program](A245578.asm)): The number of permutations of {0,0,1,1,...,n-1,n-1} that begin with 0 and in which adjacent elements are adjacent mod n.
 * [A245581](http://oeis.org/A245581) ([L09 program](A245581.asm)): (5 * (1 + (-1)^(1 + n)) + 2 * n^2) / 4.
+* [A245621](http://oeis.org/A245621) ([L28 program](A245621.asm)): Sequence of distinct least nonnegative numbers such that the average of the first n terms is a cube.
 * [A245679](http://oeis.org/A245679) ([L19 program](A245679.asm)): a(n) = pg(n, 3) + pg(n, 4) + ... + pg(n, n) where pg(n, m) is the m-th n-th-order polygonal number.
 * [A245764](http://oeis.org/A245764) ([L15 program](A245764.asm)): a(n) = 2*(n^2 + 1) + n*(1 + (-1)^n).
 * [A245766](http://oeis.org/A245766) ([L11 program](A245766.asm)): a(n) = 2*(n^2 + 1) - n*(1 + (-1)^n).

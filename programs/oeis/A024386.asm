@@ -1,0 +1,116 @@
+; A024386: [ (3rd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+2 positive integers congruent to 1 mod 4}.
+; 3,29,114,310,685,1323,2324,3804,5895,8745,12518,17394,23569,31255,40680,52088,65739,81909,100890,122990,148533,177859,211324,249300,292175,340353,394254,454314,520985,594735,676048,765424,863379,970445,1087170
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $12,$0
+  mov $14,$0
+  add $14,1
+  lpb $14,1
+    clr $0,12
+    sub $14,1
+    mov $0,$12
+    sub $0,$14
+    mov $9,$0
+    mov $11,$0
+    add $11,1
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      sub $0,$11
+      mov $7,2
+      mov $4,3
+      mov $6,$4
+      mov $5,$7
+      mov $8,$6
+      sub $5,1
+      pow $8,8
+      mov $2,$7
+      add $7,$8
+      add $7,$7
+      mov $8,7
+      mov $3,$7
+      gcd $3,6
+      mul $6,$0
+      sub $4,2
+      sub $7,1
+      mov $6,$2
+      mul $0,2
+      mov $1,1
+      mul $6,2
+      mul $0,8
+      add $8,5
+      add $5,1
+      mul $2,6
+      add $5,$7
+      fac $1
+      mod $6,$6
+      mul $5,2
+      sub $7,6
+      add $2,$6
+      mod $2,$8
+      div $8,$3
+      add $8,$2
+      lpb $0,1
+        mod $2,$7
+        add $3,$2
+        add $6,5
+        sub $1,$0
+        add $5,4
+        mov $8,$0
+        sub $2,1
+        gcd $5,$8
+        sub $7,$8
+        mul $7,3
+        add $5,4
+        sub $0,1
+        pow $2,$1
+        div $5,8
+        add $8,1
+        sub $1,3
+        add $5,8
+        add $1,$8
+        mod $0,3
+        fac $6
+        mod $8,$8
+        div $6,$1
+        mul $4,4
+        mov $5,6
+        sub $3,8
+        gcd $7,2
+        add $3,4
+        sub $0,4
+        mov $2,8
+        div $6,3
+      lpe
+      add $1,6
+      div $2,5
+      mov $2,$3
+      sub $1,$5
+      add $4,6
+      mul $6,$5
+      mov $8,5
+      gcd $5,$4
+      mov $6,3
+      pow $6,$6
+      mov $6,$1
+      add $1,3
+      sub $5,8
+      mod $7,$8
+      sub $3,8
+      add $10,$1
+    lpe
+    mov $1,$10
+    add $13,$1
+  lpe
+  mov $1,$13
+  add $16,$1
+lpe
+mov $1,$16

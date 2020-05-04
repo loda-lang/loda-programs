@@ -1400,7 +1400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017367](http://oeis.org/A017367) ([L06 program](A017367.asm)): a(n) = (10*n + 8)^3.
 * [A017368](http://oeis.org/A017368) ([L15 program](A017368.asm)): a(n) = (10*n + 8)^4.
 * [A017377](http://oeis.org/A017377) ([L03 program](A017377.asm)): a(n) = 10*n + 9.
-* [A017378](http://oeis.org/A017378) ([L12 program](A017378.asm)): a(n) = (10*n + 9)^2.
+* [A017378](http://oeis.org/A017378) ([L05 program](A017378.asm)): a(n) = (10*n + 9)^2.
 * [A017379](http://oeis.org/A017379) ([L09 program](A017379.asm)): a(n) = (10*n + 9)^3.
 * [A017380](http://oeis.org/A017380) ([L17 program](A017380.asm)): a(n) = (10*n + 9)^4.
 * [A017390](http://oeis.org/A017390) ([L03 program](A017390.asm)): a(n) = (11*n)^2.
@@ -2538,6 +2538,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A034131](http://oeis.org/A034131) ([L40 program](A034131.asm)): Decimal part of cube root of a(n) starts with 5: first term of runs.
 * [A034182](http://oeis.org/A034182) ([L11 program](A034182.asm)): Number of not-necessarily-symmetric n X 2 crossword puzzle grids.
 * [A034188](http://oeis.org/A034188) ([L10 program](A034188.asm)): Number of binary codes of length 3 with n words.
+* [A034198](http://oeis.org/A034198) ([L35 program](A034198.asm)): Number of binary codes (not necessarily linear) of length n with 3 words.
 * [A034262](http://oeis.org/A034262) ([L03 program](A034262.asm)): a(n) = n^3 + n.
 * [A034263](http://oeis.org/A034263) ([L08 program](A034263.asm)): a(n) = binomial(n+4,4)*(4*n+5)/5.
 * [A034264](http://oeis.org/A034264) ([L10 program](A034264.asm)): a(n)=f(n,4) where f is given in A034261.
@@ -5449,7 +5450,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081690](http://oeis.org/A081690) ([L22 program](A081690.asm)): From P-positions in a certain game.
 * [A081704](http://oeis.org/A081704) ([L10 program](A081704.asm)): Let f(0)=1, f(1)=t, f(n+1) = (f(n)^2+t^n)/f(n-1). f(t) is a polynomial with integer coefficients. Then a(n) = f(n) when t=3.
 * [A081714](http://oeis.org/A081714) ([L11 program](A081714.asm)): a(n) = F(n)*L(n+1) where F=Fibonacci and L=Lucas numbers.
-* [A081808](http://oeis.org/A081808) ([L04 program](A081808.asm)): Numbers n such that the largest prime power in the factorization of n equals phi(n).
+* [A081808](http://oeis.org/A081808) ([L03 program](A081808.asm)): Numbers n such that the largest prime power in the factorization of n equals phi(n).
 * [A081839](http://oeis.org/A081839) ([L09 program](A081839.asm)): a(1)=0, a(n)=a(n-1)+4 if n is already in the sequence, a(n)=a(n-1)+5 otherwise.
 * [A081848](http://oeis.org/A081848) ([L11 program](A081848.asm)): Number of numbers with property that their base 3/2 expansion (see A024629) has n digits.
 * [A081908](http://oeis.org/A081908) ([L16 program](A081908.asm)): a(n) = 2^n*(n^2 - n + 8)/8.

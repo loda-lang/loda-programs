@@ -1,0 +1,125 @@
+; A084267: Partial sums of a binomial quotient.
+; 1,2,4,7,11,17,24,33,44,57,72,89,109,131,156,184,215,250,288,330,376,426,480,538,601,668,740,817,899,987,1080,1179,1284,1395,1512,1635,1765,1901,2044,2194,2351,2516,2688,2868,3056,3252,3456,3668,3889,4118,4356
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $1,3
+      mov $8,$1
+      add $0,$0
+      mov $2,0
+      mov $7,5
+      gcd $8,7
+      mov $2,7
+      mov $3,6
+      mov $5,6
+      add $8,5
+      sub $3,$0
+      mov $7,5
+      gcd $5,$7
+      add $0,$2
+      add $1,2
+      mul $2,8
+      add $5,5
+      mov $4,0
+      fac $1
+      mul $7,7
+      add $8,$1
+      pow $0,2
+      mov $6,5
+      mul $0,$5
+      mul $5,$5
+      pow $3,6
+      sub $7,1
+      mov $1,$0
+      div $0,5
+      mul $6,2
+      div $1,4
+      mod $2,4
+      add $8,4
+      mov $5,0
+      add $6,3
+      mul $7,4
+      mov $1,$1
+      lpb $0,1
+        add $7,8
+        add $1,5
+        mov $7,$3
+        pow $3,$2
+        sub $0,1
+        gcd $5,3
+        div $1,3
+        sub $1,1
+        div $3,$5
+        div $2,8
+        add $0,2
+        add $3,$0
+        mul $6,$4
+        div $4,7
+        mul $4,2
+        pow $6,2
+        mov $6,8
+        mod $3,2
+        mov $7,7
+        gcd $4,6
+        mul $0,$0
+      lpe
+      mov $0,$5
+      add $4,8
+      mul $3,6
+      sub $2,6
+      fac $6
+      add $5,2
+      add $4,$8
+      div $1,2
+      div $1,6
+      add $6,1
+      sub $0,$3
+      div $1,6
+      sub $8,$4
+      add $3,$4
+      div $3,2
+      mul $1,7
+      div $0,4
+      add $0,$3
+      sub $7,$0
+      mov $5,$8
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    div $1,7
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17

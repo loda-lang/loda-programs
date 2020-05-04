@@ -1186,6 +1186,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A129756](http://oeis.org/A129756) ([L04 program](A129756.asm)): Repetitions of odd numbers four times.
 * [A129765](http://oeis.org/A129765) ([L09 program](A129765.asm)): Triangle, (1, 1, 2, 2, 2,...) in every column.
 * [A129771](http://oeis.org/A129771) ([L14 program](A129771.asm)): Evil odd numbers.
+* [A129791](http://oeis.org/A129791) ([L21 program](A129791.asm)): a(n) = ceiling(7^n/n).
 * [A129794](http://oeis.org/A129794) ([L17 program](A129794.asm)): a(n) = floor(4^n/n).
 * [A129795](http://oeis.org/A129795) ([L05 program](A129795.asm)): a(n) = floor(5^n/n).
 * [A129796](http://oeis.org/A129796) ([L07 program](A129796.asm)): a(n) = floor(6^n/n).
@@ -1890,6 +1891,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140142](http://oeis.org/A140142) ([L19 program](A140142.asm)): a(1)=1, a(n)=a(n-1)+n^0 if n odd, a(n)=a(n-1)+ n^4 if n is even.
 * [A140144](http://oeis.org/A140144) ([L07 program](A140144.asm)): a(1)=1, a(n)=a(n-1)+n^1 if n odd, a(n)=a(n-1)+ n^0 if n is even.
 * [A140148](http://oeis.org/A140148) ([L23 program](A140148.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^0 if n is even.
+* [A140155](http://oeis.org/A140155) ([L21 program](A140155.asm)): a(1)=1, a(n)=a(n-1)+n^3 if n odd, a(n)=a(n-1)+ n^4 if n is even.
 * [A140157](http://oeis.org/A140157) ([L22 program](A140157.asm)): a(1)=1, a(n) = a(n-1) + n^4 if n odd, a(n) = a(n-1) + n^0 if n is even.
 * [A140159](http://oeis.org/A140159) ([L22 program](A140159.asm)): a(1)=1, a(n) = a(n-1) + n^4 if n odd, a(n) = a(n-1) + n^2 if n is even.
 * [A140162](http://oeis.org/A140162) ([L25 program](A140162.asm)): a(1)=1, a(n) = a(n-1) + n^5 if n odd, a(n) = a(n-1) + n^0 if n is even.
@@ -4240,6 +4242,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181155](http://oeis.org/A181155) ([L16 program](A181155.asm)): Odious numbers (A000069) plus one; complement of A026147.
 * [A181156](http://oeis.org/A181156) ([L18 program](A181156.asm)): Odd Fibonacci numbers F which have a proper Fibonacci divisor G such that F/G is a Lucas number or a product of Lucas numbers.
 * [A181286](http://oeis.org/A181286) ([L10 program](A181286.asm)): Partial sums of floor(n^2/3) (A000212).
+* [A181287](http://oeis.org/A181287) ([L53 program](A181287.asm)): Numbers of the form i*5^j-1 (i=1..4, j >= 0).
+* [A181303](http://oeis.org/A181303) ([L49 program](A181303.asm)): Numbers of the form i*7^j-1 (i=1..6, j >= 0).
 * [A181318](http://oeis.org/A181318) ([L06 program](A181318.asm)): a(n) = A060819(n)^2.
 * [A181358](http://oeis.org/A181358) ([L05 program](A181358.asm)): Number of twiddle factors in the first stage of a Pease Radix 4 Fast Fourier Transform.
 * [A181385](http://oeis.org/A181385) ([L17 program](A181385.asm)): Maximal number that can be obtained by reversing n in an integer base.
