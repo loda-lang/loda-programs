@@ -1,0 +1,126 @@
+; A260711: Numbers of the form x^2 - y^2 with x >= y; x and y are odd, x + y is a power of 2.
+; 0,8,16,32,48,64,96,128,160,192,224,256,320,384,448,512,576,640,704,768,832,896,960,1024,1152,1280,1408,1536,1664,1792,1920,2048,2176,2304,2432,2560,2688,2816,2944,3072,3200,3328,3456,3584,3712,3840,3968,4096,4352,4608,4864
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $2,$0
+      mov $1,$0
+      mod $0,8
+      add $2,$1
+      mov $0,8
+      mov $6,$0
+      mov $3,7
+      lpb $2,1
+        lpb $4,1
+          mov $7,$6
+          mul $0,$1
+          mov $6,5
+          mov $2,7
+          fac $2
+          mov $4,$6
+          mov $5,5
+          mul $5,$6
+          add $1,5
+          mov $8,$4
+          mul $3,$3
+          add $6,1
+          sub $0,$3
+          sub $1,$3
+          pow $4,$4
+          sub $4,$6
+          div $0,$6
+          pow $0,4
+          mod $7,$7
+          mod $3,$2
+          gcd $2,$3
+          sub $0,1
+          sub $8,$1
+          sub $4,1
+        lpe
+        div $8,5
+        add $8,$5
+        add $6,$3
+        add $6,$0
+        lpb $5,1
+          sub $5,$6
+          mul $1,$8
+          mul $3,5
+          add $4,$8
+          sub $5,4
+        lpe
+        mul $4,$8
+        lpb $6,1
+          sub $6,$6
+          sub $7,6
+          fac $7
+          mul $6,$2
+          add $5,8
+          mov $5,$3
+          mov $1,7
+          add $8,$1
+          div $0,$8
+          mov $0,1
+          div $6,5
+          div $2,$0
+          mul $7,8
+          add $0,$1
+          mod $7,$8
+          mov $6,$3
+          mul $1,$7
+          mul $3,5
+          sub $0,$7
+          mov $8,1
+        lpe
+        sub $7,$7
+        mov $5,2
+        mod $5,$1
+        gcd $4,3
+        mod $1,$3
+        div $2,$8
+        mov $7,2
+        sub $2,1
+      lpe
+      gcd $1,$1
+      pow $2,8
+      mul $3,$1
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    div $1,14
+    mul $1,8
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17

@@ -1,0 +1,116 @@
+; A297466: Solution (c(n)) of the system of 4 complementary equations in Comments.
+; 3,7,10,13,17,20,23,26,30,33,37,40,43,47,50,53,56,60,63,67,70,73,77,80,83,86,90,93,97,100,103,107,110,113,116,120,123,127,130,133,137,140,143,146,150,153,157,160,163,167,170,173,176,180,183,187,190,193
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $6,8
+  mov $1,$0
+  mod $1,9
+  mov $5,9
+  mov $8,7
+  mov $2,$5
+  mod $1,$8
+  mov $9,$8
+  mov $3,2
+  mov $7,6
+  add $1,$3
+  mul $7,8
+  add $7,$6
+  sub $2,6
+  add $7,$7
+  cmp $0,$6
+  mov $10,10
+  gcd $1,$2
+  pow $3,$9
+  sub $3,3
+  div $7,10
+  mov $7,$8
+  lpb $0,1
+    mov $4,$1
+    mov $3,5
+    sub $0,3
+    mod $8,6
+    mul $2,6
+    sub $9,3
+    cmp $1,1
+    sub $6,4
+    cmp $4,5
+    add $0,3
+    div $9,$9
+    pow $9,7
+    mov $1,4
+    add $2,3
+    mov $9,$3
+    sub $2,$7
+    sub $4,$9
+    sub $3,$8
+    gcd $10,$2
+    sub $0,1
+    mul $5,$0
+    mul $10,$0
+    sub $7,9
+    add $8,$2
+    sub $0,$7
+    mov $1,4
+    mov $10,6
+    add $8,$7
+    fac $4
+    cmp $7,$6
+    add $4,1
+    div $8,9
+    div $9,8
+    add $9,4
+    sub $9,2
+    sub $5,$3
+    gcd $5,$8
+    sub $8,3
+    mul $5,7
+    div $7,9
+    mul $3,6
+    mov $7,0
+    sub $0,$1
+    sub $4,$8
+    add $10,4
+    div $0,2
+    sub $9,5
+    sub $6,5
+    div $4,$1
+    mul $0,$8
+    sub $1,$9
+    div $8,$5
+    mov $0,0
+    mov $9,1
+    mov $10,$9
+    sub $1,$0
+    mov $0,2
+  lpe
+  sub $8,10
+  mul $0,7
+  mov $0,9
+  mov $7,$0
+  add $4,6
+  pow $9,$8
+  add $6,10
+  mov $9,8
+  mul $1,6
+  mod $2,$1
+  mod $4,8
+  mov $4,9
+  gcd $9,$4
+  div $7,$9
+  pow $8,3
+  gcd $5,9
+  add $8,$4
+  mul $7,6
+  sub $1,$5
+  div $1,9
+  add $1,3
+  add $12,$1
+lpe
+mov $1,$12

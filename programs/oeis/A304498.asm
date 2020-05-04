@@ -1,0 +1,116 @@
+; A304498: Solution (b(n)) of the system of complementary equations defined in Comments.
+; 2,5,7,9,12,14,16,18,21,23,26,28,30,33,35,37,39,42,44,47,49,51,54,56,58,60,63,65,68,70,72,75,77,79,81,84,86,89,91,93,96,98,100,102,105,107,110,112,114,117,119,121,123,126,128,131,133,135,138,140,142
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $6,8
+  mov $1,$0
+  mod $1,9
+  mov $5,9
+  mov $8,7
+  mov $2,$5
+  mod $1,$8
+  mov $9,$8
+  mov $3,2
+  mov $7,6
+  add $1,$3
+  mul $7,8
+  add $7,$6
+  sub $2,6
+  add $7,$7
+  cmp $0,$6
+  mov $10,10
+  gcd $1,$2
+  pow $3,$9
+  sub $3,3
+  div $7,10
+  mov $7,$8
+  lpb $0,1
+    mov $4,$1
+    mov $3,5
+    sub $0,3
+    mod $8,6
+    mul $2,6
+    sub $9,3
+    cmp $1,1
+    sub $6,4
+    cmp $4,5
+    add $0,3
+    div $9,$9
+    pow $9,7
+    mov $1,4
+    add $2,3
+    mov $9,$3
+    sub $2,$7
+    sub $4,$9
+    sub $3,$8
+    gcd $10,$2
+    sub $0,1
+    mul $5,$0
+    mul $10,$0
+    sub $7,9
+    add $8,$2
+    sub $0,$7
+    mov $1,4
+    mov $10,6
+    add $8,$7
+    fac $4
+    cmp $7,$6
+    add $4,1
+    div $8,9
+    div $9,8
+    add $9,4
+    sub $9,2
+    sub $5,$3
+    gcd $5,$8
+    sub $8,3
+    mul $5,7
+    div $7,9
+    mul $3,6
+    mov $7,0
+    sub $0,$1
+    sub $4,$8
+    add $10,4
+    div $0,2
+    sub $9,5
+    sub $6,5
+    div $4,$1
+    mul $0,$8
+    sub $1,$9
+    div $8,$5
+    mov $0,0
+    mov $9,1
+    mov $10,$9
+    sub $1,$0
+    mov $0,2
+  lpe
+  sub $8,10
+  mul $0,7
+  mov $0,9
+  mov $7,$0
+  add $4,6
+  pow $9,$8
+  add $6,10
+  mov $9,8
+  mul $1,6
+  mod $2,$1
+  mod $4,8
+  mov $4,9
+  gcd $9,$4
+  div $7,$9
+  pow $8,3
+  gcd $5,9
+  add $8,$4
+  mul $7,6
+  sub $1,$5
+  div $1,9
+  add $1,2
+  add $12,$1
+lpe
+mov $1,$12
