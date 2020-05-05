@@ -27353,3 +27353,26 @@ A084267: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A316729: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A130188: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A115015: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A024178: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A044840: -p 100 -n 10 -i 6 -o ^ -a cd
+A070414: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A140730: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A033115: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A033115: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A247783: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A037239: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A038712: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A115012: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A047236: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A047254: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A056530: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A249356: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A175846: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A212674: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A138995: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A184109: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A177116: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A289122: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A066377: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A037824: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A316724: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T02.asm

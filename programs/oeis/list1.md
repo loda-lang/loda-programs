@@ -330,7 +330,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106251](http://oeis.org/A106251) ([L14 program](A106251.asm)): Expansion of (1-x+x^2+x^3+x^5)/(1-x-x^6+x^7).
 * [A106252](http://oeis.org/A106252) ([L13 program](A106252.asm)): Number of positive integer triples (x,y,z), with x<=y<=z<=n, such that each of x,y and z divides the sum of the other two.
 * [A106253](http://oeis.org/A106253) ([L07 program](A106253.asm)): First difference of A106252.
-* [A106318](http://oeis.org/A106318) ([L05 program](A106318.asm)): Bhaskara twins: n such that 2*n^2 = X^3 and 2*n^3 = Y^2.
+* [A106318](http://oeis.org/A106318) ([L04 program](A106318.asm)): Bhaskara twins: n such that 2*n^2 = X^3 and 2*n^3 = Y^2.
 * [A106328](http://oeis.org/A106328) ([L12 program](A106328.asm)): Numbers j such that 8*(j^2) + 9 = k^2 for some positive number k.
 * [A106329](http://oeis.org/A106329) ([L13 program](A106329.asm)): Numbers k such that k^2 = 8*j^2 + 9.
 * [A106387](http://oeis.org/A106387) ([L08 program](A106387.asm)): Numbers j such that 6j^2 + 6j + 1 = 11k.
@@ -680,6 +680,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A114984](http://oeis.org/A114984) ([L12 program](A114984.asm)): Coefficients of cubic equations in the form w^2=4*x^3-g2*x-g3 Weierstrass elliptic form whose solutions approximate zeta zeros.
 * [A115006](http://oeis.org/A115006) ([L08 program](A115006.asm)): Row 2 of array in A114999.
 * [A115007](http://oeis.org/A115007) ([L22 program](A115007.asm)): Row 3 of array in A114999.
+* [A115015](http://oeis.org/A115015) ([L23 program](A115015.asm)): Sum_{i=1..n} (gcd(7,i)=1) i.
 * [A115067](http://oeis.org/A115067) ([L06 program](A115067.asm)): a(n) = (3*n^2 - n - 2)/2.
 * [A115098](http://oeis.org/A115098) ([L04 program](A115098.asm)): a(0)=2, a(n)=3*a(n-1)-3.
 * [A115099](http://oeis.org/A115099) ([L04 program](A115099.asm)): a(0)=4, a(n) = 3*a(n-1) - 4.
@@ -1211,6 +1212,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130130](http://oeis.org/A130130) ([L03 program](A130130.asm)): a(0)=0, a(1)=1, a(n)=2 for n >= 2.
 * [A130165](http://oeis.org/A130165) ([L18 program](A130165.asm)): a(0)=1; a(n)=prime(mod(a(n-1),10)).
 * [A130174](http://oeis.org/A130174) ([L46 program](A130174.asm)): a(n) = n-1 + (total number of digits in a(1), ..., a(n-1)).
+* [A130188](http://oeis.org/A130188) ([L10 program](A130188.asm)): Denominators of rationals r(n) related to the z-sequence of the Sheffer matrix A060821 for Hermite polynomials.
 * [A130196](http://oeis.org/A130196) ([L03 program](A130196.asm)): Period 3: repeat [1, 2, 2].
 * [A130198](http://oeis.org/A130198) ([L06 program](A130198.asm)): Single paradiddle. In percussion, the paradiddle is a four-note drum sticking pattern consisting of two alternating notes followed by two notes on the same hand.
 * [A130205](http://oeis.org/A130205) ([L10 program](A130205.asm)): a(n) = n^2 - a(n-1) - a(n-2), with a(1) = 1 and a(2) = 2.
@@ -3837,6 +3839,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A172073](http://oeis.org/A172073) ([L08 program](A172073.asm)): a(n) = (4*n^3 + n^2 - 3*n)/2.
 * [A172076](http://oeis.org/A172076) ([L07 program](A172076.asm)): a(n) = n*(n+1)*(14*n-11)/6.
 * [A172078](http://oeis.org/A172078) ([L10 program](A172078.asm)): a(n) = n*(16*n^2 + 3*n - 13)/6.
+* [A172080](http://oeis.org/A172080) ([L16 program](A172080.asm)): a(n) = n*(12*n^3 + 10*n^2 - 9*n - 7)/6.
 * [A172082](http://oeis.org/A172082) ([L08 program](A172082.asm)): a(n) = n*(n+1)*(6*n-5)/2.
 * [A172097](http://oeis.org/A172097) ([L10 program](A172097.asm)): Table T(n,k) read by rows which contains in row n the 2^n terms of A171968 starting at the (n+1)st 3.
 * [A172100](http://oeis.org/A172100) ([L05 program](A172100.asm)): Diagonal of the 26 X 26 Caesar Shift table.
@@ -4201,7 +4204,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180316](http://oeis.org/A180316) ([L12 program](A180316.asm)): Concatenation of n and A008954(n).
 * [A180319](http://oeis.org/A180319) ([L07 program](A180319.asm)): Total number of possible standard knight moves on an n X 2n chessboard, if the knight is placed anywhere
 * [A180324](http://oeis.org/A180324) ([L11 program](A180324.asm)): Vassiliev invariant of fourth order for the torus knots
-* [A180354](http://oeis.org/A180354) ([L05 program](A180354.asm)): a(n) = n^4 + 4*n.
+* [A180354](http://oeis.org/A180354) ([L04 program](A180354.asm)): a(n) = n^4 + 4*n.
 * [A180355](http://oeis.org/A180355) ([L06 program](A180355.asm)): n^5+5n
 * [A180356](http://oeis.org/A180356) ([L04 program](A180356.asm)): n^6+6n
 * [A180357](http://oeis.org/A180357) ([L05 program](A180357.asm)): a(n) = n^7 + 7*n.
@@ -4236,7 +4239,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180861](http://oeis.org/A180861) ([L27 program](A180861.asm)): Wiener index of the n-pan graph.
 * [A180863](http://oeis.org/A180863) ([L08 program](A180863.asm)): Wiener index of the n-sun graph.
 * [A180919](http://oeis.org/A180919) ([L11 program](A180919.asm)): a(n) = n^2 + 731*n + 1.
-* [A180964](http://oeis.org/A180964) ([L13 program](A180964.asm)): a(0)=1; for n>0, a(n)=1+3*A117571(n-1).
+* [A180964](http://oeis.org/A180964) ([L10 program](A180964.asm)): a(0)=1; for n>0, a(n)=1+3*A117571(n-1).
 * [A181120](http://oeis.org/A181120) ([L15 program](A181120.asm)): Partial sums of round(n^2/12) (A069905).
 * [A181133](http://oeis.org/A181133) ([L08 program](A181133.asm)): a(n) = n + A003056(n).
 * [A181155](http://oeis.org/A181155) ([L16 program](A181155.asm)): Odious numbers (A000069) plus one; complement of A026147.

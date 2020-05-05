@@ -1,0 +1,123 @@
+; A138995: First differences of Frobenius numbers for 4 successive numbers A138984.
+; 1,1,6,2,2,10,3,3,14,4,4,18,5,5,22,6,6,26,7,7,30,8,8,34,9,9,38,10,10,42,11,11,46,12,12,50,13,13,54,14,14,58,15,15,62,16,16,66,17,17,70,18,18,74,19,19,78,20,20,82,21,21,86,22,22,90,23,23,94,24,24,98,25,25,102,26
+
+mov $11,$0
+mov $13,2
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  add $0,$13
+  sub $0,1
+  mov $7,$0
+  add $0,$0
+  mov $7,8
+  mov $3,7
+  mov $1,$0
+  add $0,7
+  pow $7,6
+  mov $8,2
+  cmp $1,1
+  mov $5,$0
+  sub $3,1
+  mov $10,5
+  mov $4,$8
+  mov $6,$1
+  mov $1,$0
+  div $8,7
+  div $5,2
+  mov $3,2
+  mov $2,10
+  div $3,$1
+  lpb $0,1
+    mov $3,$2
+    sub $0,1
+    mov $6,$4
+    sub $8,$10
+    mod $3,5
+    mov $5,7
+    mov $8,$0
+    mod $8,$4
+    pow $0,8
+    mov $4,7
+    mul $8,$1
+    mov $7,$10
+    pow $8,7
+    pow $1,$10
+    pow $5,$3
+    sub $10,$1
+    mov $9,$6
+    pow $5,7
+    pow $3,5
+    pow $3,$4
+    sub $6,$8
+    add $8,8
+    sub $6,$9
+    mul $4,2
+    mov $7,2
+    pow $10,$0
+    div $0,$4
+    sub $1,$8
+    sub $5,$2
+    mod $8,4
+  lpe
+  sub $1,$10
+  mul $7,$3
+  add $4,8
+  div $1,6
+  mul $7,9
+  sub $8,$7
+  cmp $8,6
+  add $0,$3
+  mul $1,$5
+  mov $6,$7
+  mod $2,6
+  mov $0,8
+  mov $6,7
+  mov $6,10
+  div $2,2
+  cmp $10,9
+  mov $7,9
+  gcd $9,7
+  pow $2,8
+  mov $7,$0
+  mul $2,2
+  mov $3,10
+  mul $9,9
+  add $4,1
+  mod $6,$3
+  sub $3,6
+  sub $7,3
+  div $7,$5
+  sub $10,$6
+  mov $9,$7
+  cmp $3,3
+  mul $8,7
+  div $7,6
+  fac $0
+  mov $10,1
+  sub $2,$6
+  gcd $10,$7
+  add $8,6
+  sub $8,$4
+  sub $2,$8
+  pow $10,$0
+  sub $5,$10
+  sub $6,4
+  sub $0,1
+  add $6,$5
+  mov $10,$9
+  sub $8,6
+  pow $0,$3
+  mov $14,$13
+  lpb $14,1
+    mov $12,$1
+    sub $14,1
+  lpe
+lpe
+lpb $11,1
+  sub $12,$1
+  mov $11,0
+lpe
+mov $1,$12
+add $1,1
