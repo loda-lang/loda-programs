@@ -1,0 +1,95 @@
+; A073850: Cumulative sum of initial digits of (n base 4).
+; 0,1,3,6,7,8,9,10,12,14,16,18,21,24,27,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,81,84,87,90,93,96,99,102,105,108,111,114,117,120,123,126,127,128,129,130
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $5,2
+  mov $2,$0
+  mov $1,$2
+  lpb $2,1
+    sub $0,$1
+    mov $4,$0
+    div $4,8
+    mov $8,2
+    lpb $4,1
+      mov $3,$2
+      mul $8,$4
+      mul $1,2
+      sub $4,4
+      mod $3,4
+      div $5,3
+      pow $3,$8
+      pow $2,2
+      mul $1,$2
+      sub $4,$1
+      add $3,$4
+      mov $7,2
+      mul $0,6
+      mul $3,$0
+      mul $2,$3
+    lpe
+    lpb $5,1
+      mov $6,2
+      mul $8,$2
+      sub $5,$1
+      pow $7,3
+      mul $7,$8
+      pow $6,8
+      mod $5,7
+      sub $2,4
+      mul $4,5
+      pow $4,2
+      pow $3,2
+    lpe
+    mod $0,2
+    mul $3,5
+    mod $7,3
+    cmp $0,7
+    mul $7,$0
+    mov $3,0
+    pow $2,3
+    sub $3,3
+    sub $2,$2
+    pow $0,5
+    mov $3,7
+    mul $0,2
+    mul $5,$0
+    add $7,$2
+    cmp $7,4
+    lpb $6,1
+      mod $7,2
+      mul $7,$3
+      div $1,4
+      add $7,1
+      div $4,2
+      div $8,5
+      cmp $5,$1
+      sub $6,$1
+    lpe
+    mul $6,8
+    sub $2,1
+    mod $8,7
+    div $2,4
+    mul $1,3
+    add $3,3
+    sub $3,1
+    mul $2,3
+    add $6,8
+    sub $3,$8
+    mul $5,6
+    mod $3,8
+    add $7,4
+    mod $1,$6
+  lpe
+  div $0,6
+  sub $3,1
+  div $1,3
+  add $10,$1
+lpe
+mov $1,$10

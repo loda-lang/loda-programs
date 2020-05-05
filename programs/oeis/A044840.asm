@@ -1,134 +1,43 @@
 ; A044840: Positive integers having more base-14 runs of even length than odd.
 ; 15,30,45,60,75,90,105,120,135,150,165,180,195,2940,2955,2970,2985,3000,3015,3030,3045,3060,3075,3090,3105,3120,3135,5880,5895,5910,5925,5940,5955,5970,5985,6000,6015,6030,6045,6060
 
-mov $19,$0
-mov $21,$0
-add $21,1
-lpb $21,1
-  clr $0,19
-  sub $21,1
-  mov $0,$19
-  sub $0,$21
-  mov $15,$0
-  mov $17,2
-  lpb $17,1
-    clr $0,15
-    sub $17,1
-    mov $0,$15
-    add $0,$17
+mov $5,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$5
+  sub $0,$2
+  mov $6,$0
+  mov $10,2
+  lpb $10,1
+    sub $10,1
+    mov $0,$6
+    add $0,$10
     sub $0,1
     mov $4,4
-    mov $6,10
     add $0,3
-    div $6,6
     mov $7,2
-    mod $4,5
-    cmp $6,2
-    mov $8,9
     sub $0,$7
-    div $8,2
-    lpb $10,1
-      mov $9,4
-      mov $10,$4
-      mov $6,$10
-      sub $7,10
-      pow $8,$4
-      mov $9,8
-      add $8,$10
-      mov $8,1
-      cmp $10,$4
-      mov $2,1
-      lpb $6,2
-        mov $1,2
-        sub $1,1
-        mov $9,2
-        pow $2,2
-        mov $7,$4
-        cmp $10,$0
-        lpb $3,10
-          div $6,$6
-          div $7,$7
-          add $7,10
-          cmp $10,3
-          mov $3,$8
-          add $7,5
-          div $3,$6
-          mov $3,$0
-          sub $10,7
-          div $0,$4
-          lpb $6,9
-            sub $7,$8
-            add $6,$4
-            cmp $10,$9
-            mov $5,6
-            add $9,4
-            mul $6,$6
-            pow $8,6
-            div $9,10
-            div $8,6
-            cmp $7,10
-          lpe
-          add $7,8
-          sub $4,7
-          add $0,$4
-          add $5,1
-          mul $1,$10
-        lpe
-        sub $2,10
-        add $9,$7
-        mul $5,8
-        add $3,4
-        sub $0,1
-        pow $6,8
-        pow $7,$8
-        mov $0,1
-        mov $3,8
-        mul $10,$2
-      lpe
-      sub $3,$3
-      div $6,$9
-      fac $3
-    lpe
-    cmp $1,$1
-    mov $3,5
-    div $3,2
     lpb $4,1
-      div $10,2
-      cmp $4,$4
-      gcd $9,$2
-      add $3,1
+      mov $4,1
       mov $1,$0
-      fac $3
       div $1,7
-      sub $8,$6
-      div $8,5
     lpe
-    mod $7,7
     div $1,$7
-    div $9,5
-    add $6,$4
-    cmp $3,8
-    sub $2,8
-    lpb $6,2
-      add $2,7
-      add $0,1
-      div $2,$6
-      mul $1,$4
-    lpe
-    pow $9,$1
-    mov $18,$17
-    lpb $18,1
-      mov $16,$1
-      sub $18,1
+    mov $8,$10
+    lpb $8,1
+      mov $9,$1
+      sub $8,1
     lpe
   lpe
-  lpb $15,1
-    sub $16,$1
-    mov $15,0
+  lpb $6,1
+    sub $9,$1
+    mov $6,0
   lpe
-  mov $1,$16
+  mov $1,$9
   mul $1,2730
   add $1,15
-  add $20,$1
+  add $3,$1
 lpe
-mov $1,$20
+mov $1,$3
