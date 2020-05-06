@@ -2293,10 +2293,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031878](http://oeis.org/A031878) ([L07 program](A031878.asm)): Maximal number of edges in Hamiltonian path in complete graph on n nodes.
 * [A031940](http://oeis.org/A031940) ([L08 program](A031940.asm)): Length of longest legal domino snake using full set of dominoes up to [n:n].
 * [A031954](http://oeis.org/A031954) ([L06 program](A031954.asm)): n-th number in which the number of distinct base 9 digits is 2.
-* [A031981](http://oeis.org/A031981) ([L16 program](A031981.asm)): a(1) = 1, a(2) = 2, a(n) = smallest number not the sum of cubes of >= 1 distinct earlier terms.
 * [A031994](http://oeis.org/A031994) ([L20 program](A031994.asm)): Duplicate of A023751.
 * [A031995](http://oeis.org/A031995) ([L09 program](A031995.asm)): Duplicate of A023752.
-* [A031996](http://oeis.org/A031996) ([L21 program](A031996.asm)): Nondecreasing base 12 digits.
 * [A032096](http://oeis.org/A032096) ([L11 program](A032096.asm)): "BHK" (reversible, identity, unlabeled) transform of 2,2,2,2,...
 * [A032098](http://oeis.org/A032098) ([L12 program](A032098.asm)): "BHK" (reversible, identity, unlabeled) transform of 3,3,3,3,...
 * [A032125](http://oeis.org/A032125) ([L09 program](A032125.asm)): "BIK" (reversible, indistinct, unlabeled) transform of 3,3,3,3...
@@ -4302,6 +4300,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062708](http://oeis.org/A062708) ([L06 program](A062708.asm)): Write 0,1,2,3,4,... in a triangular spiral; then a(n) is the sequence found by reading the terms along the line from 0 in the direction 0,2,...
 * [A062709](http://oeis.org/A062709) ([L03 program](A062709.asm)): a(n) = 2^n + 3.
 * [A062717](http://oeis.org/A062717) ([L07 program](A062717.asm)): Numbers m such that 6*m+1 is a perfect square.
+* [A062722](http://oeis.org/A062722) ([L06 program](A062722.asm)): a(n) = ceiling(n/3)*round(n/4).
 * [A062724](http://oeis.org/A062724) ([L19 program](A062724.asm)): a(n) = floor(tau^n) + 1, where tau = (1 + sqrt(5))/2.
 * [A062725](http://oeis.org/A062725) ([L06 program](A062725.asm)): Write 0,1,2,3,4,... in a triangular spiral, then a(n) is the sequence found by reading the terms along the line from 0 in the direction 0,7,...
 * [A062728](http://oeis.org/A062728) ([L06 program](A062728.asm)): Second 11-gonal (or hendecagonal) numbers: a(n) = n*(9*n+7)/2.
@@ -4560,7 +4559,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A067239](http://oeis.org/A067239) ([L09 program](A067239.asm)): a(0)=1, a(n) = 8n*(2n-1).
 * [A067251](http://oeis.org/A067251) ([L04 program](A067251.asm)): Numbers with no trailing zeros in decimal representation.
 * [A067389](http://oeis.org/A067389) ([L11 program](A067389.asm)): a(n) = 3*n^3 + 2*n^2 + n.
-* [A067411](http://oeis.org/A067411) ([L07 program](A067411.asm)): Third column of triangle A067410 and second column of A067417.
+* [A067411](http://oeis.org/A067411) ([L06 program](A067411.asm)): Third column of triangle A067410 and second column of A067417.
 * [A067471](http://oeis.org/A067471) ([L22 program](A067471.asm)): n-th root of A067470(n).
 * [A067628](http://oeis.org/A067628) ([L14 program](A067628.asm)): Minimal perimeter of polyiamond with n triangles.
 * [A067705](http://oeis.org/A067705) ([L05 program](A067705.asm)): a(n) = 11*n^2 + 22*n.

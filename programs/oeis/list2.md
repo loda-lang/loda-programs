@@ -510,7 +510,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215149](http://oeis.org/A215149) ([L08 program](A215149.asm)): a(n) = n * (1 + 2^(n-1)).
 * [A215229](http://oeis.org/A215229) ([L69 program](A215229.asm)): Number of length-6 0..k arrays connected end-around, with no sequence of L<n elements immediately followed by itself (periodic "squarefree").
 * [A215459](http://oeis.org/A215459) ([L10 program](A215459.asm)): Arises in quick gossiping without duplicate transmission.
-* [A215495](http://oeis.org/A215495) ([L08 program](A215495.asm)): a(4*n) = a(4*n+2) = a(2*n+1) = 2*n + 1.
+* [A215495](http://oeis.org/A215495) ([L06 program](A215495.asm)): a(4*n) = a(4*n+2) = a(2*n+1) = 2*n + 1.
 * [A215532](http://oeis.org/A215532) ([L29 program](A215532.asm)): The limit of the string "0, 1" under the operation 'append first k terms, increment k' with k=2 initially.
 * [A215537](http://oeis.org/A215537) ([L10 program](A215537.asm)): Lowest k such that k is representable as both the sum of n and of n+1 nonzero squares.
 * [A215580](http://oeis.org/A215580) ([L19 program](A215580.asm)): Partial sums of A215602.
@@ -1421,8 +1421,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254757](http://oeis.org/A254757) ([L20 program](A254757.asm)): Part of the positive proper solutions x of the Pell equation x^2 - 2*y^2 = - 7^2 based on the fundamental solution (x0, y0)= (-1, 5).
 * [A254758](http://oeis.org/A254758) ([L12 program](A254758.asm)): Part of the positive proper solutions x of the Pell equation x^2 - 2*y^2 = - 7^2 based on the fundamental solution (x0, y0)= (1, 5).
 * [A254759](http://oeis.org/A254759) ([L11 program](A254759.asm)): Part of the positive proper solutions y of the Pell equation x^2 - 2*y^2 = - 7^2 based on the fundamental solution (x0, y0)= (1, 5).
+* [A254828](http://oeis.org/A254828) ([L22 program](A254828.asm)): Number of length 1 1..(n+1) arrays with every leading partial sum divisible by 2, 3 or 5.
 * [A254963](http://oeis.org/A254963) ([L06 program](A254963.asm)): a(n) = n*(11*n + 3)/2.
-* [A255047](http://oeis.org/A255047) ([L06 program](A255047.asm)): 1 together with the positive terms of A000225.
+* [A255047](http://oeis.org/A255047) ([L04 program](A255047.asm)): 1 together with the positive terms of A000225.
 * [A255138](http://oeis.org/A255138) ([L12 program](A255138.asm)): a(n) = (1 + 2^n*(3 + 2*(-1)^n))/3.
 * [A255176](http://oeis.org/A255176) ([L03 program](A255176.asm)): a(n) = H_n(2,2) where H_n is the n-th hyperoperator.
 * [A255177](http://oeis.org/A255177) ([L46 program](A255177.asm)): Second differences of seventh powers (A001015).
@@ -2404,6 +2405,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285074](http://oeis.org/A285074) ([L17 program](A285074.asm)): Positions of 0 in A285073; complement of A285075.
 * [A285077](http://oeis.org/A285077) ([L13 program](A285077.asm)): Positions of 0 in A285076; complement of A285078.
 * [A285173](http://oeis.org/A285173) ([L04 program](A285173.asm)): Numbers n such that A002496(n+1) < A002496(n)^(1+1/n).
+* [A285188](http://oeis.org/A285188) ([L49 program](A285188.asm)): a(n) = Sum_{k=1..n} (k^2*floor(k/2)).
 * [A285193](http://oeis.org/A285193) ([L13 program](A285193.asm)): Expansion of 1/(1+x+2*x^2) mod 3.
 * [A285194](http://oeis.org/A285194) ([L17 program](A285194.asm)): Expansion of (1+x^2)/(1+x+x^4) mod 3.
 * [A285326](http://oeis.org/A285326) ([L09 program](A285326.asm)): a(0) = 0, for n > 0, a(n) = n + A006519(n).
