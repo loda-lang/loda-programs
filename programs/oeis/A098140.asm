@@ -1,0 +1,136 @@
+; A098140: 63-gonal numbers: a(n) = n*(61*n - 59)/2.
+; 0,1,63,186,370,615,921,1288,1716,2205,2755,3366,4038,4771,5565,6420,7336,8313,9351,10450,11610,12831,14113,15456,16860,18325,19851,21438,23086,24795,26565,28396,30288,32241,34255,36330,38466
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $13,$0
+    mov $15,$0
+    add $15,1
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      sub $0,$15
+      mov $9,$0
+      mov $11,2
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        add $0,$11
+        sub $0,1
+        pow $0,5
+        mov $7,5
+        mul $7,2
+        mov $2,8
+        fac $7
+        mov $3,2
+        mov $1,1
+        mov $5,7
+        mov $2,1
+        mov $4,$1
+        lpb $0,1
+          sub $5,7
+          mov $2,$4
+          sub $2,1
+          mul $0,$0
+          sub $7,4
+          add $1,$3
+          div $2,2
+          pow $5,2
+          div $3,2
+          add $3,4
+          mul $3,6
+          sub $5,$2
+          mul $2,8
+          sub $2,$7
+          mov $4,7
+          mov $7,0
+          mod $3,6
+          sub $2,$1
+          add $3,1
+          mul $3,$0
+          mul $1,$5
+          mov $6,2
+          add $3,$1
+          pow $2,$3
+          mul $4,$7
+          mov $0,8
+          mov $5,7
+          mul $0,4
+          sub $0,1
+          pow $5,7
+          gcd $5,2
+          sub $3,7
+          div $3,2
+          add $4,$2
+          mov $8,3
+          sub $4,$1
+          pow $2,6
+          mov $6,$8
+          pow $8,$1
+          mov $8,3
+          mul $6,5
+          mul $4,$3
+          mod $2,7
+        lpe
+        sub $5,$4
+        add $2,7
+        add $8,3
+        add $2,$1
+        mul $0,6
+        div $1,$8
+        div $7,8
+        div $8,7
+        mul $2,$5
+        add $2,4
+        mul $2,3
+        mov $1,6
+        fac $4
+        sub $0,3
+        mul $7,2
+        mov $8,$3
+        mov $1,$0
+        mov $8,8
+        div $4,$8
+        div $7,7
+        mul $7,2
+        mod $2,$2
+        div $4,5
+        pow $8,7
+        sub $5,$4
+        mov $12,$11
+        lpb $12,1
+          mov $10,$1
+          sub $12,1
+        lpe
+      lpe
+      lpb $9,1
+        sub $10,$1
+        mov $9,0
+      lpe
+      mov $1,$10
+      div $1,3
+      add $14,$1
+    lpe
+    mov $1,$14
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20

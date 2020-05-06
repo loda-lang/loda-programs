@@ -71,6 +71,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000578](http://oeis.org/A000578) ([L02 program](A000578.asm)): The cubes: a(n) = n^3.
 * [A000583](http://oeis.org/A000583) ([L02 program](A000583.asm)): Fourth powers: a(n) = n^4.
 * [A000584](http://oeis.org/A000584) ([L02 program](A000584.asm)): Fifth powers: a(n) = n^5.
+* [A000601](http://oeis.org/A000601) ([L30 program](A000601.asm)): Expansion of 1/((1-x)^2*(1-x^2)*(1-x^3)).
 * [A000655](http://oeis.org/A000655) ([L07 program](A000655.asm)): a(n) = number of letters in a(n-1) (in English).
 * [A000689](http://oeis.org/A000689) ([L07 program](A000689.asm)): Final decimal digit of 2^n.
 * [A000703](http://oeis.org/A000703) ([L11 program](A000703.asm)): Chromatic number (or Heawood number) of nonorientable surface with n crosscaps.
@@ -1920,6 +1921,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022522](http://oeis.org/A022522) ([L55 program](A022522.asm)): Nexus numbers (n+1)^6 - n^6.
 * [A022523](http://oeis.org/A022523) ([L70 program](A022523.asm)): Nexus numbers (n+1)^7-n^7.
 * [A022554](http://oeis.org/A022554) ([L06 program](A022554.asm)): a(n) = Sum_{k=0..n} floor(sqrt(k)).
+* [A022560](http://oeis.org/A022560) ([L34 program](A022560.asm)): a(0)=0, a(2*n) = 2*a(n) + 2*a(n-1) + n^2 + n, a(2*n+1) = 4*a(n) + (n+1)^2.
 * [A022794](http://oeis.org/A022794) ([L30 program](A022794.asm)): Place where n-th 1 occurs in A023132.
 * [A022795](http://oeis.org/A022795) ([L26 program](A022795.asm)): Place where n-th 1 occurs in A023133.
 * [A022803](http://oeis.org/A022803) ([L18 program](A022803.asm)): Numbers that reach ...,7,8,4,2,1 under the mapping: if n is even divide by 2 else add 1.
@@ -4477,7 +4479,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A064686](http://oeis.org/A064686) ([L20 program](A064686.asm)): a(n) = number of n-digit base-3 biquams.
 * [A064717](http://oeis.org/A064717) ([L10 program](A064717.asm)): A Beatty sequence for 2^i + 2^(-i) where i = sqrt(-1).
 * [A064718](http://oeis.org/A064718) ([L11 program](A064718.asm)): A Beatty sequence for 2^i + 2^-i where i = sqrt(-1).
-* [A064724](http://oeis.org/A064724) ([L07 program](A064724.asm)): A Beatty sequence for 2^sqrt(2).
+* [A064724](http://oeis.org/A064724) ([L05 program](A064724.asm)): A Beatty sequence for 2^sqrt(2).
 * [A064751](http://oeis.org/A064751) ([L07 program](A064751.asm)): a(n) = n*5^n - 1.
 * [A064761](http://oeis.org/A064761) ([L03 program](A064761.asm)): a(n) = 15*n^2.
 * [A064762](http://oeis.org/A064762) ([L03 program](A064762.asm)): a(n) = 21*n^2.
@@ -5050,6 +5052,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073763](http://oeis.org/A073763) ([L05 program](A073763.asm)): Least number of unrelated set belonging to these numbers is odd.
 * [A073773](http://oeis.org/A073773) ([L16 program](A073773.asm)): Number of plane binary trees of size n+2 and height n.
 * [A073849](http://oeis.org/A073849) ([L14 program](A073849.asm)): Cumulative sum of initial digits of (n base 3).
+* [A073850](http://oeis.org/A073850) ([L26 program](A073850.asm)): Cumulative sum of initial digits of (n base 4).
 * [A073941](http://oeis.org/A073941) ([L10 program](A073941.asm)): a(n) = ceiling((Sum_{k=1..n-1} a(k)) / 2); a(1)=1.
 * [A074066](http://oeis.org/A074066) ([L09 program](A074066.asm)): Zigzag modulo 3.
 * [A074092](http://oeis.org/A074092) ([L15 program](A074092.asm)): Number of plane binary trees of size n+3 and contracted height n.

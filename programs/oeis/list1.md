@@ -1660,6 +1660,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135064](http://oeis.org/A135064) ([L11 program](A135064.asm)): Numbers n such that the quintic polynomial x^5 - 10*n*x^2 - 24*n has Galois group A_5 over rationals.
 * [A135092](http://oeis.org/A135092) ([L07 program](A135092.asm)): Binomial transform of [1, 6, 1, 6, 1, 6, ...].
 * [A135094](http://oeis.org/A135094) ([L11 program](A135094.asm)): a(n) = 2*a(n-1) + 2*a(n-2) - 4*a(n-3) with n>2, a(0)=0, a(1)=1, a(2)=3.
+* [A135124](http://oeis.org/A135124) ([L23 program](A135124.asm)): Numbers such that the digital sums in base 2, base 4 and base 8 are all equal.
 * [A135153](http://oeis.org/A135153) ([L10 program](A135153.asm)): Repeat Pell numbers A000129.
 * [A135169](http://oeis.org/A135169) ([L05 program](A135169.asm)): Period 4: repeat [1, 5, 9, 5].
 * [A135231](http://oeis.org/A135231) ([L10 program](A135231.asm)): Row sums of triangle A135230.
@@ -4015,6 +4016,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175827](http://oeis.org/A175827) ([L16 program](A175827.asm)): Partial sums of ceiling(n^2/10).
 * [A175831](http://oeis.org/A175831) ([L17 program](A175831.asm)): Partial sums of ceiling(n^2/12).
 * [A175833](http://oeis.org/A175833) ([L05 program](A175833.asm)): Periodic sequence: repeat 4,7,11.
+* [A175842](http://oeis.org/A175842) ([L22 program](A175842.asm)): Partial sums of ceiling(n^2/14).
 * [A175846](http://oeis.org/A175846) ([L22 program](A175846.asm)): Partial sums of ceiling(n^2/15).
 * [A175870](http://oeis.org/A175870) ([L17 program](A175870.asm)): Partial sums of ceiling(n^2/24).
 * [A175871](http://oeis.org/A175871) ([L23 program](A175871.asm)): a(0) = 2; a(n) = a(n - 1) * 3 + 1 if a(n - 1) is prime, or a(n - 1) / (smallest prime factor) if it is composite.
