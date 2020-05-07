@@ -1,0 +1,129 @@
+; A100172: Structured triakis icosahedral numbers (vertex structure 4).
+; 1,32,150,412,875,1596,2632,4040,5877,8200,11066,14532,18655,23492,29100,35536,42857,51120,60382,70700,82131,94732,108560,123672,140125,157976,177282,198100,220487,244500,270196,297632
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $12,$0
+    mov $14,$0
+    add $14,1
+    lpb $14,1
+      clr $0,12
+      sub $14,1
+      mov $0,$12
+      sub $0,$14
+      mov $9,$0
+      mov $11,$0
+      add $11,1
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        sub $0,$11
+        mov $7,4
+        sub $7,1
+        mov $6,$0
+        mov $4,7
+        mov $8,0
+        mov $3,2
+        mul $0,$6
+        mod $4,2
+        div $4,6
+        gcd $7,$0
+        add $8,$8
+        add $8,5
+        sub $6,$0
+        gcd $7,$6
+        gcd $4,2
+        div $8,$7
+        div $3,3
+        mov $1,$8
+        mul $8,3
+        mov $2,$7
+        sub $0,$6
+        mov $4,1
+        sub $3,8
+        sub $0,4
+        mov $7,$2
+        pow $6,$0
+        pow $8,$6
+        mul $4,$8
+        mov $0,$4
+        mov $6,6
+        mov $1,$0
+        sub $3,$4
+        gcd $6,$0
+        mov $5,$8
+        mul $5,6
+        mul $3,2
+        mov $2,$4
+        div $7,8
+        mod $3,3
+        mul $7,2
+        mul $8,6
+        lpb $0,1
+          add $7,$5
+          sub $4,6
+          sub $0,1
+          add $6,$8
+          mov $7,2
+          add $2,6
+        lpe
+        add $0,$3
+        div $7,8
+        sub $2,$2
+        mov $0,$5
+        mul $1,$5
+        sub $6,$0
+        mod $4,4
+        mov $8,2
+        mov $4,$2
+        mov $5,$8
+        mov $5,$2
+        pow $6,5
+        cmp $5,8
+        pow $6,$3
+        add $1,7
+        sub $0,$8
+        mul $2,$1
+        gcd $2,7
+        div $4,$6
+        fac $7
+        sub $7,4
+        mov $0,$3
+        sub $2,$6
+        sub $7,6
+        sub $8,$2
+        div $2,$2
+        mul $6,2
+        gcd $5,2
+        mul $5,2
+        div $2,3
+        add $4,$2
+        sub $1,13
+        div $1,48
+        add $10,$1
+      lpe
+      mov $1,$10
+      add $13,$1
+    lpe
+    mov $1,$13
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19

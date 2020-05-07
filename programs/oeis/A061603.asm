@@ -1,105 +1,20 @@
 ; A061603: a(n) = n! / {product of factorials of the digits of n}.
 ; 1,1,1,1,1,1,1,1,1,1,3628800,39916800,239500800,1037836800,3632428800,10897286400,29059430400,70572902400,158789030400,335221286400
 
-mov $4,7
-mod $4,3
-mov $2,$4
-mov $7,$4
-add $2,6
-mov $5,$7
-mov $10,5
-add $5,$4
-mov $3,$7
-mov $1,$3
-mov $6,$7
-sub $7,1
-mov $10,9
-mul $7,$0
-mul $7,$2
-div $1,9
-mov $7,4
-cmp $7,$1
-mul $5,$6
-add $6,$0
-mov $2,4
-gcd $7,9
-mod $3,9
+mov $4,1
 mul $4,$0
-mov $0,7
-mul $7,$7
 lpb $0,1
-  mov $10,4
-  div $5,2
   sub $0,7
-  mul $5,3
-  mul $7,$10
-  mov $5,1
-  pow $10,2
-  mul $1,$5
   mov $3,$4
-  sub $0,1
-  mul $7,$4
-  gcd $7,8
-  add $6,9
-  mod $2,10
-  sub $4,$0
-  mov $8,$3
-  add $2,$5
-  mov $0,5
-  mov $0,6
-  sub $5,1
+  mov $2,$3
 lpe
-mul $6,4
-sub $2,$6
-fac $8
-div $0,2
-mov $2,$7
-sub $7,1
+fac $2
 mod $4,10
 fac $4
-gcd $6,$10
-mod $5,6
-mul $8,2
-div $0,7
-mov $5,3
-add $3,1
-div $8,$4
-add $5,$5
-mul $1,5
-sub $1,$2
-mul $6,9
-mov $1,$8
-mov $9,1
-fac $0
-pow $9,2
-mov $0,$10
-mul $4,2
-mul $6,7
-mov $2,5
+mul $2,2
+div $2,$4
+mov $1,$2
 mul $1,4
-pow $9,$8
-sub $6,$6
-sub $8,2
-sub $8,$4
-fac $9
-div $0,5
-sub $3,$3
-sub $1,$3
-mov $3,8
-mov $7,$2
-mul $4,$5
-mul $3,$2
-div $7,2
-mod $10,$10
-add $4,3
-add $7,5
-gcd $2,9
-sub $7,$10
-add $4,8
-pow $10,10
-sub $0,1
-fac $6
-mov $8,3
 sub $1,8
 div $1,8
 add $1,1

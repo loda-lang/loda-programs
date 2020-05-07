@@ -4248,6 +4248,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061570](http://oeis.org/A061570) ([L07 program](A061570.asm)): a(1)=0, a(2)=1, a(n)=3*n-1 for n >= 3.
 * [A061579](http://oeis.org/A061579) ([L10 program](A061579.asm)): Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
 * [A061600](http://oeis.org/A061600) ([L05 program](A061600.asm)): a(n) = n^3 - n + 1.
+* [A061603](http://oeis.org/A061603) ([L17 program](A061603.asm)): a(n) = n! / {product of factorials of the digits of n}.
 * [A061667](http://oeis.org/A061667) ([L09 program](A061667.asm)): a(n) = Fibonacci(2*n+1) - 2^(n-1).
 * [A061679](http://oeis.org/A061679) ([L06 program](A061679.asm)): Concatenation of n^3 and 7.
 * [A061705](http://oeis.org/A061705) ([L11 program](A061705.asm)): Number of matchings in the wheel graph with n spokes.
@@ -5609,6 +5610,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084516](http://oeis.org/A084516) ([L14 program](A084516.asm)): The length of each successively larger, indecomposable 3-ball ground-state site swap given in A084511, i.e., the number of digits in each term of A084512.
 * [A084525](http://oeis.org/A084525) ([L22 program](A084525.asm)): Partial sums of A084526.
 * [A084537](http://oeis.org/A084537) ([L04 program](A084537.asm)): Duplicate of A002061.
+* [A084555](http://oeis.org/A084555) ([L17 program](A084555.asm)): Partial sums of A084556.
 * [A084556](http://oeis.org/A084556) ([L05 program](A084556.asm)): n occurs n! times.
 * [A084558](http://oeis.org/A084558) ([L13 program](A084558.asm)): a(0) = 0; for n >= 1: a(n) = largest m such that n >= m!.
 * [A084569](http://oeis.org/A084569) ([L53 program](A084569.asm)): Partial sums of A084570.

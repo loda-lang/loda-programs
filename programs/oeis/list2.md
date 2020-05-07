@@ -824,7 +824,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228564](http://oeis.org/A228564) ([L08 program](A228564.asm)): Largest odd divisor of n^2 + 1.
 * [A228568](http://oeis.org/A228568) ([L08 program](A228568.asm)): a(n) = 2^n*A056236(n).
 * [A228569](http://oeis.org/A228569) ([L10 program](A228569.asm)): Binomial transform of A006497.
-* [A228597](http://oeis.org/A228597) ([L19 program](A228597.asm)): The Wiener index of the graph obtained by applying Mycielski's construction to a benzenoid consisting of a linear chain of n hexagons.
+* [A228597](http://oeis.org/A228597) ([L12 program](A228597.asm)): The Wiener index of the graph obtained by applying Mycielski's construction to a benzenoid consisting of a linear chain of n hexagons.
 * [A228598](http://oeis.org/A228598) ([L10 program](A228598.asm)): The Wiener index of the graph obtained by applying Mycielski's construction to the crown graph G(n) (n>=3).
 * [A228600](http://oeis.org/A228600) ([L19 program](A228600.asm)): The Szeged index of the n-sunlet graph (n>=3).
 * [A228602](http://oeis.org/A228602) ([L17 program](A228602.asm)): a(1) = 17, a(2) = 80, a(n) = 4*(a(n-1) + a(n-2)) for n >= 3.

@@ -1192,6 +1192,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A129794](http://oeis.org/A129794) ([L17 program](A129794.asm)): a(n) = floor(4^n/n).
 * [A129795](http://oeis.org/A129795) ([L05 program](A129795.asm)): a(n) = floor(5^n/n).
 * [A129796](http://oeis.org/A129796) ([L07 program](A129796.asm)): a(n) = floor(6^n/n).
+* [A129797](http://oeis.org/A129797) ([L08 program](A129797.asm)): a(n) = floor(7^n/n).
 * [A129819](http://oeis.org/A129819) ([L37 program](A129819.asm)): Antidiagonal sums of triangular array T: T(j,k) = (k+1)/2 for odd k, T(j,k) = 0 for k = 0, T(j,k) = j+1-k/2 for even k > 0; 0 <= k <= j.
 * [A129863](http://oeis.org/A129863) ([L08 program](A129863.asm)): Sums of three consecutive pentagonal numbers.
 * [A129868](http://oeis.org/A129868) ([L11 program](A129868.asm)): Binary palindromic numbers with only one 0 bit.
@@ -2088,7 +2089,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144560](http://oeis.org/A144560) ([L06 program](A144560.asm)): Ten times hexagonal numbers: 10*n*(2*n-1).
 * [A144595](http://oeis.org/A144595) ([L11 program](A144595.asm)): Christoffel word of slope 4/7.
 * [A144596](http://oeis.org/A144596) ([L05 program](A144596.asm)): Christoffel word of slope 2/7.
-* [A144597](http://oeis.org/A144597) ([L10 program](A144597.asm)): Christoffel word of slope 3/7.
+* [A144597](http://oeis.org/A144597) ([L07 program](A144597.asm)): Christoffel word of slope 3/7.
 * [A144598](http://oeis.org/A144598) ([L13 program](A144598.asm)): Christoffel word of slope 5/7.
 * [A144599](http://oeis.org/A144599) ([L11 program](A144599.asm)): Christoffel word of slope 6/7.
 * [A144600](http://oeis.org/A144600) ([L07 program](A144600.asm)): Christoffel word of slope 2/11.
@@ -3091,6 +3092,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A163139](http://oeis.org/A163139) ([L10 program](A163139.asm)): First differences of A163128.
 * [A163271](http://oeis.org/A163271) ([L08 program](A163271.asm)): Numerators of fractions in a 'zero-transform' approximation of sqrt(2) by means of a(n) = (a(n-1) + c)/(a(n-1) + 1) with c=2 and a(1)=0.
 * [A163274](http://oeis.org/A163274) ([L07 program](A163274.asm)): a(n) = n^4*(n+1)^2/2.
+* [A163275](http://oeis.org/A163275) ([L09 program](A163275.asm)): a(n) = n^5*(n+1)^2/2.
 * [A163276](http://oeis.org/A163276) ([L06 program](A163276.asm)): a(n) = n^6*(n+1)^2/2.
 * [A163277](http://oeis.org/A163277) ([L08 program](A163277.asm)): a(n) = n^7*(n+1)^2/2.
 * [A163300](http://oeis.org/A163300) ([L04 program](A163300.asm)): Zero together with the even nonprimes.
@@ -4689,6 +4691,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189741](http://oeis.org/A189741) ([L18 program](A189741.asm)): a(1)=4,  a(2)=2, a(n) = 4*a(n-1) + 2*a(n-2).
 * [A189743](http://oeis.org/A189743) ([L12 program](A189743.asm)): a(1)=4,  a(2)=4, a(n)=4*a(n-1) + 4*a(n-2)
 * [A189786](http://oeis.org/A189786) ([L05 program](A189786.asm)): n+[nr/t]+[ns/t]; r=pi/2, s=arcsin(5/13), t=arcsin(12/13).
+* [A189794](http://oeis.org/A189794) ([L38 program](A189794.asm)): (A189792)/2.
 * [A189807](http://oeis.org/A189807) ([L25 program](A189807.asm)): Number of right triangles on an (n+1) X 3 grid.
 * [A189820](http://oeis.org/A189820) ([L08 program](A189820.asm)): a(3*k-2) = a(k), a(3*k-1) = a(k), a(3*k) = 1 for k >= 1, starting with a(1) = 0.
 * [A189833](http://oeis.org/A189833) ([L03 program](A189833.asm)): a(n) = n^2 + 8.
