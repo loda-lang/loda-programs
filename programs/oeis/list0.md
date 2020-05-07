@@ -781,6 +781,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008823](http://oeis.org/A008823) ([L11 program](A008823.asm)): Expansion of (1+2*x^3+x^5)/((1-x)^2*(1-x^5)).
 * [A008824](http://oeis.org/A008824) ([L12 program](A008824.asm)): Expansion of (1+2*x^4+x^7)/((1-x)^2*(1-x^7)).
 * [A008825](http://oeis.org/A008825) ([L15 program](A008825.asm)): Expansion of (1+2*x^5+x^9)/((1-x)^2*(1-x^9)).
+* [A008838](http://oeis.org/A008838) ([L22 program](A008838.asm)): a(n) = floor(n/8)*ceiling(n/8).
 * [A008851](http://oeis.org/A008851) ([L06 program](A008851.asm)): Congruent to 0 or 1 mod 5.
 * [A008854](http://oeis.org/A008854) ([L06 program](A008854.asm)): Numbers that are congruent to {0, 1, 4} mod 5.
 * [A008857](http://oeis.org/A008857) ([L24 program](A008857.asm)): a(n) = floor(n/9)*ceiling(n/9).
@@ -2426,6 +2427,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033384](http://oeis.org/A033384) ([L04 program](A033384.asm)): [ 64/n ].
 * [A033385](http://oeis.org/A033385) ([L03 program](A033385.asm)): [ 65/n ].
 * [A033386](http://oeis.org/A033386) ([L22 program](A033386.asm)): [ 66/n ].
+* [A033388](http://oeis.org/A033388) ([L06 program](A033388.asm)): [ 68/n ].
 * [A033390](http://oeis.org/A033390) ([L04 program](A033390.asm)): [ 70/n ].
 * [A033391](http://oeis.org/A033391) ([L03 program](A033391.asm)): [ 71/n ].
 * [A033392](http://oeis.org/A033392) ([L04 program](A033392.asm)): [ 72/n ].
@@ -3021,6 +3023,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044834](http://oeis.org/A044834) ([L34 program](A044834.asm)): Positive integers having more base-8 runs of even length than odd.
 * [A044835](http://oeis.org/A044835) ([L17 program](A044835.asm)): Positive integers having more base-9 runs of even length than odd.
 * [A044836](http://oeis.org/A044836) ([L40 program](A044836.asm)): Positive integers having more base-10 runs of even length than odd.
+* [A044838](http://oeis.org/A044838) ([L42 program](A044838.asm)): Positive integers having more base-12 runs of even length than odd.
 * [A044839](http://oeis.org/A044839) ([L20 program](A044839.asm)): Positive integers having more base-13 runs of even length than odd.
 * [A044840](http://oeis.org/A044840) ([L40 program](A044840.asm)): Positive integers having more base-14 runs of even length than odd.
 * [A044842](http://oeis.org/A044842) ([L37 program](A044842.asm)): Positive integers having more base-16 runs of even length than odd.
@@ -4861,7 +4864,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070586](http://oeis.org/A070586) ([L04 program](A070586.asm)): a(n) = n^4 mod 43.
 * [A070587](http://oeis.org/A070587) ([L28 program](A070587.asm)): n^4 mod 44.
 * [A070588](http://oeis.org/A070588) ([L07 program](A070588.asm)): a(n) = n^4 mod 45.
-* [A070591](http://oeis.org/A070591) ([L12 program](A070591.asm)): n^4 mod 48.
+* [A070591](http://oeis.org/A070591) ([L03 program](A070591.asm)): n^4 mod 48.
 * [A070593](http://oeis.org/A070593) ([L03 program](A070593.asm)): a(n) = n^5 mod 7.
 * [A070595](http://oeis.org/A070595) ([L03 program](A070595.asm)): n^5 mod 9.
 * [A070596](http://oeis.org/A070596) ([L03 program](A070596.asm)): n^5 mod 11.
@@ -5720,7 +5723,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086858](http://oeis.org/A086858) ([L16 program](A086858.asm)): Let f(n) be the inverse of the function g(x) = x^x. Then a(n) = floor(f(n)).
 * [A086893](http://oeis.org/A086893) ([L13 program](A086893.asm)): a(n) is the index of F(n+1) at the unique occurrence of the ordered pair of reversed consecutive terms (F(n+1),F(n)) in Stern's diatomic sequence A002487, where F(k) denotes the k-th term of the Fibonacci sequence A000045.
 * [A086950](http://oeis.org/A086950) ([L12 program](A086950.asm)): Binomial transform of decagonal numbers A001107.
-* [A086952](http://oeis.org/A086952) ([L08 program](A086952.asm)): n^2*4^n/4.
+* [A086952](http://oeis.org/A086952) ([L06 program](A086952.asm)): n^2*4^n/4.
 * [A086953](http://oeis.org/A086953) ([L11 program](A086953.asm)): Binomial transform of (-1)^mod(n,3) (A257075).
 * [A086955](http://oeis.org/A086955) ([L10 program](A086955.asm)): a(n) = n^2 + 2*n + 2 - (-1)^n.
 * [A086970](http://oeis.org/A086970) ([L11 program](A086970.asm)): Fix 1, then exchange the subsequent odd numbers in pairs.
@@ -6198,7 +6201,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A098502](http://oeis.org/A098502) ([L03 program](A098502.asm)): 16*n - 4.
 * [A098547](http://oeis.org/A098547) ([L05 program](A098547.asm)): a(n) = n^3 + n^2 + 1.
 * [A098586](http://oeis.org/A098586) ([L10 program](A098586.asm)): a(n) = (1/2) * (5*P(n+1) + P(n) - 1), where P(k) are the Pell numbers A000129.
-* [A098603](http://oeis.org/A098603) ([L04 program](A098603.asm)): a(n) = n*(n+10).
+* [A098603](http://oeis.org/A098603) ([L03 program](A098603.asm)): a(n) = n*(n+10).
 * [A098646](http://oeis.org/A098646) ([L12 program](A098646.asm)): Trace sequence of 3 X 3 Krawtchouk matrix.
 * [A098648](http://oeis.org/A098648) ([L10 program](A098648.asm)): Expansion of (1-3*x)/(1 - 6*x + 4*x^2).
 * [A098713](http://oeis.org/A098713) ([L08 program](A098713.asm)): a(n) = (2n+1)*2^(2n+1) - 1.
