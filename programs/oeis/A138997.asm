@@ -1,0 +1,123 @@
+; A138997: First differences of Frobenius numbers for 6 successive numbers A138986.
+; 1,1,1,1,8,2,2,2,2,14,3,3,3,3,20,4,4,4,4,26,5,5,5,5,32,6,6,6,6,38,7,7,7,7,44,8,8,8,8,50,9,9,9,9,56,10,10,10,10,62,11,11,11,11,68,12,12,12,12,74,13,13,13,13,80,14,14,14,14,86,15,15,15,15,92,16,16,16,16,98,17,17
+
+mov $11,$0
+mov $13,2
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  add $0,$13
+  sub $0,1
+  mov $9,1
+  mov $3,$9
+  mov $10,$3
+  mov $5,5
+  mov $8,2
+  gcd $8,$5
+  mov $4,5
+  add $8,$9
+  div $3,$9
+  mov $1,1
+  lpb $0,1
+    mul $9,5
+    mov $2,9
+    sub $4,$4
+    mul $8,2
+    mul $3,$9
+    mov $7,8
+    sub $9,2
+    gcd $4,2
+    add $2,1
+    cmp $1,1
+    div $7,$2
+    sub $5,$4
+    mul $7,$5
+    mod $5,$1
+    mov $10,$10
+    mov $6,$0
+    sub $7,1
+    add $3,2
+    mul $8,8
+    add $9,10
+    add $2,6
+    add $7,$4
+    mul $0,6
+    pow $10,$5
+    add $7,$6
+    add $10,$9
+    div $1,$7
+    div $8,6
+    sub $0,1
+    mov $3,$6
+    mov $3,$7
+    sub $7,$8
+    div $5,6
+    sub $4,$8
+  lpe
+  mul $1,$0
+  sub $4,8
+  mov $1,4
+  mul $2,$6
+  add $2,$1
+  pow $10,5
+  pow $6,8
+  add $1,$0
+  mul $2,2
+  mov $7,$5
+  add $9,$0
+  pow $10,2
+  add $7,10
+  cmp $0,$6
+  gcd $0,5
+  div $9,$5
+  sub $6,$1
+  mul $5,$2
+  add $5,4
+  mul $10,2
+  pow $6,$9
+  sub $4,1
+  mov $4,3
+  sub $1,1
+  mod $9,$1
+  mul $4,$10
+  sub $3,$4
+  fac $3
+  mod $2,5
+  mul $1,$9
+  div $3,2
+  mul $3,$0
+  mov $8,2
+  mod $9,$4
+  mul $0,10
+  mod $6,7
+  mov $8,5
+  mov $8,7
+  add $7,8
+  cmp $7,$3
+  div $7,2
+  mul $2,3
+  sub $0,$9
+  mov $2,$9
+  sub $5,$5
+  mov $0,$1
+  div $5,7
+  div $10,2
+  gcd $9,2
+  sub $10,$3
+  mov $0,7
+  cmp $7,$4
+  mul $5,9
+  fac $10
+  mov $14,$13
+  lpb $14,1
+    mov $12,$1
+    sub $14,1
+  lpe
+lpe
+lpb $11,1
+  sub $12,$1
+  mov $11,0
+lpe
+mov $1,$12
+add $1,1

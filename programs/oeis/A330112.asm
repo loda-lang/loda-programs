@@ -1,20 +1,17 @@
 ; A330112: Beatty sequence for e^x, where 1/e^x + sech(x) = 1.
 ; 2,5,8,11,13,16,19,22,24,27,30,33,36,38,41,44,47,49,52,55,58,60,63,66,69,72,74,77,80,83,85,88,91,94,96,99,102,105,108,110,113,116,119,121,124,127,130,132,135,138,141,144,146,149,152,155,157,160,163
 
-mov $15,$0
-mov $17,$0
-add $17,1
-lpb $17,1
-  clr $0,15
-  sub $17,1
-  mov $0,$15
-  sub $0,$17
+mov $8,$0
+mov $4,$0
+add $4,1
+lpb $4,1
+  sub $4,1
+  mov $0,$8
+  sub $0,$4
   mov $11,$0
   mov $13,2
   lpb $13,1
-    clr $0,11
     sub $13,1
-    mov $0,$11
     add $0,$13
     sub $0,1
     mov $3,$0
@@ -23,104 +20,17 @@ lpb $17,1
     mov $9,$10
     mul $10,4
     mov $7,$10
-    mov $4,$10
-    mov $6,7
-    mov $1,$9
-    sub $4,$3
-    mul $0,2
-    mov $8,8
     mov $1,$7
-    mov $6,0
     mov $2,5
-    sub $0,$1
-    mov $5,7
-    mul $0,$10
-    mul $5,5
-    mul $8,$10
-    div $10,$5
     add $2,$9
-    mov $6,$7
-    div $5,$5
-    mod $0,9
-    mod $8,10
-    add $1,$1
-    sub $0,$3
-    mul $0,10
-    cmp $4,4
-    div $10,2
-    div $1,$5
-    mul $10,4
+    mul $1,2
     add $3,3
-    div $5,10
     mul $1,$3
     div $1,$2
-    cmp $7,$3
-    add $10,$6
-    lpb $0,1
-      mod $7,3
-      pow $7,$1
-      pow $7,8
-      mul $7,$10
-      div $7,$10
-      mul $4,$4
-      div $5,$8
-      add $1,7
-      add $10,$6
-      fac $8
-      sub $6,$7
-      div $2,$2
-      sub $4,1
-      mov $8,$3
-      fac $5
-      mul $6,$2
-      pow $5,10
-      sub $9,9
-      gcd $9,$7
-      mov $2,$4
-      mul $3,9
-      mod $6,10
-      mov $2,$6
-      mod $2,7
-      mov $3,$4
-      sub $7,$1
-      div $10,$2
-      gcd $7,10
-      add $1,4
-      sub $0,1
-      pow $8,7
-      div $1,2
-      mov $7,10
-      div $6,2
-      sub $2,10
-      gcd $2,4
-      sub $2,$8
-      mov $5,7
-      div $5,10
-      pow $10,8
-      div $0,2
-      mul $4,$1
-      mod $3,9
-      mul $3,$0
-      sub $4,$2
-      sub $9,1
-      sub $6,9
-      add $1,$10
-      mov $3,$8
-      mul $3,3
-      mul $8,$5
-      add $10,8
-      sub $4,4
-      mov $6,$1
-      cmp $3,4
-    lpe
-    div $3,9
-    div $3,6
-    div $3,10
-    sub $10,$8
-    mov $14,$13
-    lpb $14,1
+    mov $5,$13
+    lpb $5,1
       mov $12,$1
-      sub $14,1
+      sub $5,1
     lpe
   lpe
   lpb $11,1
@@ -130,6 +40,6 @@ lpb $17,1
   mov $1,$12
   sub $1,14
   add $1,2
-  add $16,$1
+  add $6,$1
 lpe
-mov $1,$16
+mov $1,$6

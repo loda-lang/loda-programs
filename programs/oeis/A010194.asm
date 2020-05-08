@@ -1,0 +1,104 @@
+; A010194: Continued fraction for sqrt(135).
+; 11,1,1,1,1,1,1,1,22,1,1,1,1,1,1,1,22,1,1,1,1,1,1,1,22,1,1,1,1,1,1,1,22,1,1,1,1,1,1,1,22,1,1,1,1,1,1,1,22,1,1,1,1,1,1,1,22,1,1,1,1,1,1,1,22,1,1,1,1,1,1,1,22,1,1,1,1
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $7,5
+  mov $3,$7
+  mov $4,$0
+  mov $6,$0
+  cmp $4,$0
+  pow $4,4
+  mov $0,5
+  mul $4,$3
+  mov $8,1
+  pow $8,3
+  pow $8,$0
+  mov $5,8
+  mul $0,$0
+  mov $7,3
+  mul $5,2
+  div $6,8
+  sub $8,$0
+  mul $6,3
+  mod $7,$4
+  mul $4,$6
+  mul $7,$3
+  mul $8,$5
+  mod $4,$0
+  mul $6,7
+  pow $0,2
+  div $0,5
+  add $3,$6
+  mov $2,8
+  add $7,$3
+  sub $8,5
+  pow $7,3
+  lpb $0,1
+    add $8,$5
+    mov $4,1
+    pow $5,7
+    div $2,4
+    sub $3,2
+    div $6,$7
+    mov $7,$4
+    mov $7,8
+    add $7,$3
+    add $2,$8
+    gcd $5,$8
+    add $0,$8
+    sub $7,1
+    mov $1,$7
+    fac $6
+    mod $2,2
+    sub $0,1
+    sub $0,5
+    mod $7,6
+    add $4,3
+    add $3,$8
+    mov $0,1
+    sub $2,4
+    mul $1,3
+    add $0,$0
+    add $7,1
+    mul $7,$1
+    sub $2,$5
+    gcd $5,5
+  lpe
+  div $3,$8
+  mod $3,$1
+  pow $5,$2
+  sub $2,$6
+  add $0,$7
+  sub $7,$7
+  add $3,7
+  pow $2,3
+  fac $4
+  mul $8,4
+  div $8,8
+  sub $3,7
+  gcd $0,2
+  add $6,3
+  fac $5
+  add $3,8
+  pow $6,$7
+  mov $8,1
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
+div $1,3
+add $1,1
