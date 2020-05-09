@@ -1074,7 +1074,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014635](http://oeis.org/A014635) ([L05 program](A014635.asm)): a(n) = 2*n*(4*n - 1).
 * [A014640](http://oeis.org/A014640) ([L16 program](A014640.asm)): Even heptagonal numbers (A000566).
 * [A014641](http://oeis.org/A014641) ([L07 program](A014641.asm)): Odd octagonal numbers: (2n+1)(6n+1).
-* [A014642](http://oeis.org/A014642) ([L07 program](A014642.asm)): Even octagonal numbers: 4*n*(3*n-1).
+* [A014642](http://oeis.org/A014642) ([L06 program](A014642.asm)): Even octagonal numbers: 4*n*(3*n-1).
 * [A014646](http://oeis.org/A014646) ([L07 program](A014646.asm)): Inverse of 637th cyclotomic polynomial.
 * [A014681](http://oeis.org/A014681) ([L06 program](A014681.asm)): Fix 0; exchange even and odd numbers.
 * [A014682](http://oeis.org/A014682) ([L08 program](A014682.asm)): The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
@@ -6188,6 +6188,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A098022](http://oeis.org/A098022) ([L22 program](A098022.asm)): Irrational rotation of Log(3)/Log(2) as an implicit sequence with an uneven Cantor cartoon.
 * [A098108](http://oeis.org/A098108) ([L13 program](A098108.asm)): a(n) = 1 if n is an odd square, otherwise 0.
 * [A098127](http://oeis.org/A098127) ([L15 program](A098127.asm)): Fibonacci sequence with a(1) = 7 and a(2) = 26.
+* [A098140](http://oeis.org/A098140) ([L29 program](A098140.asm)): 63-gonal numbers: a(n) = n*(61*n - 59)/2.
 * [A098156](http://oeis.org/A098156) ([L10 program](A098156.asm)): Interleave n+1 and 2n+1 and take binomial transform.
 * [A098177](http://oeis.org/A098177) ([L28 program](A098177.asm)): Start with the first n, which reads: "Prolong the sequence with n numbers having their parity opposed to n". Then read and obey the second n, then the third n, etc. This sequence is the slowest increasing one with such rule.
 * [A098178](http://oeis.org/A098178) ([L17 program](A098178.asm)): Expansion of (1+x)(1-x+x^2)/((1-x)(1+x^2)).

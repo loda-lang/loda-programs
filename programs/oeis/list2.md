@@ -160,6 +160,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206906](http://oeis.org/A206906) ([L13 program](A206906.asm)): n+[ns/r]+[nt/r], where []=floor, r=1/3, s=sqrt(3), t=1/s.
 * [A206917](http://oeis.org/A206917) ([L14 program](A206917.asm)): Sum of binary palindromes in the half-open interval [2^(n-1), 2^n).
 * [A207020](http://oeis.org/A207020) ([L18 program](A207020.asm)): Number of n X 4 0..1 arrays avoiding 0 0 0 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
+* [A207064](http://oeis.org/A207064) ([L62 program](A207064.asm)): Number of n X 4 0..1 arrays avoiding 0 0 1 and 0 1 0 horizontally and 0 0 1 and 1 0 1 vertically.
 * [A207106](http://oeis.org/A207106) ([L13 program](A207106.asm)): Number of n X 3 0..1 arrays avoiding 0 0 0 and 0 1 1 horizontally and 0 0 1 and 1 1 0 vertically.
 * [A207165](http://oeis.org/A207165) ([L09 program](A207165.asm)): Number of n X 4 0..1 arrays avoiding 0 0 0 and 1 0 1 horizontally and 0 0 1 and 1 0 1 vertically.
 * [A207188](http://oeis.org/A207188) ([L17 program](A207188.asm)): Numbers matching polynomials y(k,x) that have x as a factor; see Comments.
@@ -1812,7 +1813,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267442](http://oeis.org/A267442) ([L14 program](A267442.asm)): Middle column of the "Rule 129" elementary cellular automaton starting with a single ON (black) cell.
 * [A267458](http://oeis.org/A267458) ([L05 program](A267458.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
 * [A267459](http://oeis.org/A267459) ([L08 program](A267459.asm)): Total number of ON (black) cells after n iterations of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
-* [A267460](http://oeis.org/A267460) ([L07 program](A267460.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
+* [A267460](http://oeis.org/A267460) ([L05 program](A267460.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
 * [A267461](http://oeis.org/A267461) ([L07 program](A267461.asm)): Total number of OFF (white) cells after n iterations of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
 * [A267472](http://oeis.org/A267472) ([L65 program](A267472.asm)): Number of length-4 0..n arrays with no following elements larger than the first repeated value.
 * [A267489](http://oeis.org/A267489) ([L07 program](A267489.asm)): a(n) = n^2 - 4*floor(n^2/6).

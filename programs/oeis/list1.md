@@ -412,7 +412,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108213](http://oeis.org/A108213) ([L12 program](A108213.asm)): a(0)=44; if n odd, a(n) = a(n-1)/2, otherwise a(n) = 4*a(n-1).
 * [A108300](http://oeis.org/A108300) ([L10 program](A108300.asm)): a(n+2) = 3*a(n+1) + a(n), a(0) = 1, a(1) = 5.
 * [A108306](http://oeis.org/A108306) ([L11 program](A108306.asm)): Expansion of (3*x+1)/(1-3*x-3*x^2).
-* [A108356](http://oeis.org/A108356) ([L06 program](A108356.asm)): Count, repeating multiples of 3 four times, all other numbers twice.
+* [A108356](http://oeis.org/A108356) ([L05 program](A108356.asm)): Count, repeating multiples of 3 four times, all other numbers twice.
 * [A108357](http://oeis.org/A108357) ([L09 program](A108357.asm)): Expansion of (1+x^2+x^4)/(1-x^8).
 * [A108411](http://oeis.org/A108411) ([L03 program](A108411.asm)): a(n) = 3^floor(n/2). Powers of 3 repeated.
 * [A108495](http://oeis.org/A108495) ([L04 program](A108495.asm)): a(n) = (n^7 - n)/6.

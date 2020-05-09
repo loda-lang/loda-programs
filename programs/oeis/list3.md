@@ -718,7 +718,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329939](http://oeis.org/A329939) ([L10 program](A329939.asm)): Beatty sequence for cosh x,  where csch x + sech x = 1 .
 * [A329962](http://oeis.org/A329962) ([L39 program](A329962.asm)): Beatty sequence for 2 + cos x, where x = least positive solution of 1/(2 + sin x) + 1/(2 + cos x) = 1.
 * [A329975](http://oeis.org/A329975) ([L10 program](A329975.asm)): Beatty sequence for 1 + x + x^2, where x is the real solution of 1/x + 1/(1+x+x^2) = 1.
-* [A329977](http://oeis.org/A329977) ([L09 program](A329977.asm)): Beatty sequence for the number x satisfying 1/x + 1/(log x) = 1.
+* [A329977](http://oeis.org/A329977) ([L06 program](A329977.asm)): Beatty sequence for the number x satisfying 1/x + 1/(log x) = 1.
 * [A329978](http://oeis.org/A329978) ([L09 program](A329978.asm)): Beatty sequence for log x, where 1/x + 1/(log x) = 1.
 * [A329988](http://oeis.org/A329988) ([L11 program](A329988.asm)): Beatty sequence for 2^x, where 1/x + 1/2^x = 1.
 * [A329991](http://oeis.org/A329991) ([L13 program](A329991.asm)): Beatty sequence for 3^x, where 1/x + 1/3^x = 1.

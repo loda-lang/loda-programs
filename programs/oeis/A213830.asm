@@ -1,0 +1,127 @@
+; A213830: Antidiagonal sums of the convolution array A213828.
+; 2,18,78,230,540,1092,1988,3348,5310,8030,11682,16458,22568,30240,39720,51272,65178,81738,101270,124110,150612,181148,216108,255900,300950,351702,408618,472178,542880,621240
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $12,$0
+    mov $14,$0
+    add $14,1
+    lpb $14,1
+      clr $0,12
+      sub $14,1
+      mov $0,$12
+      sub $0,$14
+      mov $9,$0
+      mov $11,$0
+      add $11,1
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        sub $0,$11
+        lpb $0,1
+          mov $1,4
+          mov $6,3
+          mov $8,8
+          mov $1,1
+          gcd $1,4
+          mov $4,3
+          add $8,$8
+          cmp $4,$6
+          sub $6,6
+          mov $2,$6
+          div $1,7
+          mov $5,$4
+          add $4,1
+          pow $1,$0
+          mov $0,$8
+          add $6,2
+          sub $1,1
+          mov $2,$4
+          sub $1,$8
+          sub $5,$6
+          sub $6,$8
+          pow $6,$2
+          mov $3,$5
+          div $5,6
+          pow $3,$0
+          mov $3,$3
+          mov $7,4
+          sub $1,$6
+          fac $2
+          sub $7,6
+          pow $0,2
+          pow $1,$8
+          mul $1,8
+          mov $8,$0
+          sub $6,3
+          add $6,1
+          mod $6,8
+          div $7,2
+          cmp $0,$3
+          mov $3,0
+          add $2,1
+          sub $7,$8
+          div $1,2
+          gcd $1,$0
+          sub $7,3
+          sub $0,1
+          add $0,$4
+          add $1,1
+          mul $2,$0
+          mov $1,3
+          add $6,6
+        lpe
+        mul $0,8
+        mul $5,2
+        mov $7,3
+        pow $4,3
+        cmp $5,0
+        mul $6,$8
+        mul $1,$3
+        add $1,$2
+        div $1,5
+        add $1,2
+        mov $8,4
+        sub $7,8
+        div $5,$5
+        sub $2,$1
+        add $7,$1
+        sub $1,$0
+        cmp $5,3
+        add $5,2
+        cmp $7,$6
+        mul $6,$7
+        sub $7,$2
+        add $1,$7
+        add $0,$5
+        gcd $1,$0
+        mov $3,$6
+        pow $7,6
+        fac $4
+        add $10,$1
+      lpe
+      mov $1,$10
+      add $13,$1
+    lpe
+    mov $1,$13
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19
