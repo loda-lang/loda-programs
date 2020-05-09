@@ -1061,7 +1061,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014494](http://oeis.org/A014494) ([L08 program](A014494.asm)): Even triangular numbers.
 * [A014551](http://oeis.org/A014551) ([L20 program](A014551.asm)): Jacobsthal-Lucas numbers.
 * [A014557](http://oeis.org/A014557) ([L16 program](A014557.asm)): Multiplicity of K_3 in K_n.
-* [A014578](http://oeis.org/A014578) ([L12 program](A014578.asm)): Binary expansion of Thue constant (or Roth's constant).
+* [A014578](http://oeis.org/A014578) ([L07 program](A014578.asm)): Binary expansion of Thue constant (or Roth's constant).
 * [A014587](http://oeis.org/A014587) ([L25 program](A014587.asm)): Nim function for Take-a-Factorial-Game (a subtraction game).
 * [A014590](http://oeis.org/A014590) ([L02 program](A014590.asm)): Inverse of 581st cyclotomic polynomial.
 * [A014591](http://oeis.org/A014591) ([L05 program](A014591.asm)): a(n) = floor(n^2/12 + 5/4).
@@ -1308,12 +1308,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017079](http://oeis.org/A017079) ([L06 program](A017079.asm)): a(n) = (8*n + 1)^3.
 * [A017080](http://oeis.org/A017080) ([L04 program](A017080.asm)): a(n) = (8*n + 1)^4.
 * [A017089](http://oeis.org/A017089) ([L03 program](A017089.asm)): a(n) = 8*n+2.
-* [A017090](http://oeis.org/A017090) ([L05 program](A017090.asm)): a(n) = (8*n + 2)^2.
+* [A017090](http://oeis.org/A017090) ([L04 program](A017090.asm)): a(n) = (8*n + 2)^2.
 * [A017091](http://oeis.org/A017091) ([L04 program](A017091.asm)): a(n) = (8*n + 2)^3.
 * [A017092](http://oeis.org/A017092) ([L04 program](A017092.asm)): a(n) = (8*n + 2)^4.
 * [A017101](http://oeis.org/A017101) ([L03 program](A017101.asm)): a(n) = 8n + 3.
 * [A017102](http://oeis.org/A017102) ([L05 program](A017102.asm)): a(n) = (8n + 3)^2.
-* [A017103](http://oeis.org/A017103) ([L09 program](A017103.asm)): a(n) = (8*n+3)^3.
+* [A017103](http://oeis.org/A017103) ([L05 program](A017103.asm)): a(n) = (8*n+3)^3.
 * [A017104](http://oeis.org/A017104) ([L07 program](A017104.asm)): a(n) = (8*n+3)^4.
 * [A017105](http://oeis.org/A017105) ([L05 program](A017105.asm)): a(n) = (8*n+3)^5.
 * [A017113](http://oeis.org/A017113) ([L03 program](A017113.asm)): a(n) = 8*n + 4.
@@ -2066,6 +2066,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025730](http://oeis.org/A025730) ([L48 program](A025730.asm)): Index of 8^n within sequence of numbers of form 6^i*8^j.
 * [A025734](http://oeis.org/A025734) ([L12 program](A025734.asm)): Index of 9^n within sequence of numbers of form 2^i*9^j.
 * [A025735](http://oeis.org/A025735) ([L63 program](A025735.asm)): Index of 9^n within sequence of numbers of form 5^i*9^j.
+* [A025736](http://oeis.org/A025736) ([L47 program](A025736.asm)): Index of 9^n within sequence of numbers of form 6^i*9^j.
 * [A025743](http://oeis.org/A025743) ([L15 program](A025743.asm)): Index of 10^n within sequence of numbers of form 5^i*10^j.
 * [A025744](http://oeis.org/A025744) ([L19 program](A025744.asm)): Index of 10^n within sequence of numbers of form 6^i*10^j.
 * [A025745](http://oeis.org/A025745) ([L48 program](A025745.asm)): Index of 10^n within sequence of numbers of form 7^i*10^j.
@@ -2433,6 +2434,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033385](http://oeis.org/A033385) ([L03 program](A033385.asm)): [ 65/n ].
 * [A033386](http://oeis.org/A033386) ([L22 program](A033386.asm)): [ 66/n ].
 * [A033388](http://oeis.org/A033388) ([L06 program](A033388.asm)): [ 68/n ].
+* [A033389](http://oeis.org/A033389) ([L04 program](A033389.asm)): [ 69/n ].
 * [A033390](http://oeis.org/A033390) ([L04 program](A033390.asm)): [ 70/n ].
 * [A033391](http://oeis.org/A033391) ([L03 program](A033391.asm)): [ 71/n ].
 * [A033392](http://oeis.org/A033392) ([L04 program](A033392.asm)): [ 72/n ].
@@ -2668,6 +2670,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037577](http://oeis.org/A037577) ([L05 program](A037577.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
 * [A037578](http://oeis.org/A037578) ([L12 program](A037578.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
 * [A037584](http://oeis.org/A037584) ([L08 program](A037584.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 3,1.
+* [A037597](http://oeis.org/A037597) ([L07 program](A037597.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,0.
 * [A037604](http://oeis.org/A037604) ([L04 program](A037604.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,3.
 * [A037618](http://oeis.org/A037618) ([L10 program](A037618.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,3.
 * [A037639](http://oeis.org/A037639) ([L12 program](A037639.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1.
@@ -4811,7 +4814,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070479](http://oeis.org/A070479) ([L23 program](A070479.asm)): a(n) = n^3 mod 17.
 * [A070480](http://oeis.org/A070480) ([L12 program](A070480.asm)): a(n) = n^3 mod 18.
 * [A070481](http://oeis.org/A070481) ([L25 program](A070481.asm)): a(n) = n^3 mod 19.
-* [A070482](http://oeis.org/A070482) ([L25 program](A070482.asm)): a(n) = n^3 mod 20.
+* [A070482](http://oeis.org/A070482) ([L04 program](A070482.asm)): a(n) = n^3 mod 20.
 * [A070483](http://oeis.org/A070483) ([L27 program](A070483.asm)): a(n) = n^3 mod 21.
 * [A070484](http://oeis.org/A070484) ([L28 program](A070484.asm)): a(n) = n^3 mod 22.
 * [A070485](http://oeis.org/A070485) ([L29 program](A070485.asm)): a(n) = n^3 mod 23.
@@ -4832,6 +4835,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070502](http://oeis.org/A070502) ([L07 program](A070502.asm)): a(n) = n^3 mod 40.
 * [A070503](http://oeis.org/A070503) ([L04 program](A070503.asm)): a(n) = n^3 mod 41.
 * [A070507](http://oeis.org/A070507) ([L21 program](A070507.asm)): a(n) = n^3 mod 45.
+* [A070508](http://oeis.org/A070508) ([L05 program](A070508.asm)): a(n) = n^3 mod 46.
 * [A070510](http://oeis.org/A070510) ([L03 program](A070510.asm)): a(n) = n^3 mod 48.
 * [A070511](http://oeis.org/A070511) ([L03 program](A070511.asm)): a(n) = n^4 mod 6.
 * [A070512](http://oeis.org/A070512) ([L03 program](A070512.asm)): a(n) = n^4 mod 7.
@@ -4940,7 +4944,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070699](http://oeis.org/A070699) ([L03 program](A070699.asm)): a(n) = n^7 mod 17.
 * [A070700](http://oeis.org/A070700) ([L21 program](A070700.asm)): a(n) = n^7 mod 18.
 * [A070701](http://oeis.org/A070701) ([L25 program](A070701.asm)): a(n) = n^7 mod 19.
-* [A070702](http://oeis.org/A070702) ([L25 program](A070702.asm)): a(n) = n^7 mod 20.
+* [A070702](http://oeis.org/A070702) ([L04 program](A070702.asm)): a(n) = n^7 mod 20.
 * [A070703](http://oeis.org/A070703) ([L28 program](A070703.asm)): a(n) = n^7 mod 22.
 * [A070704](http://oeis.org/A070704) ([L29 program](A070704.asm)): a(n) = n^7 mod 23.
 * [A070706](http://oeis.org/A070706) ([L27 program](A070706.asm)): a(n) = n^7 mod 25.
@@ -5513,6 +5517,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A082639](http://oeis.org/A082639) ([L12 program](A082639.asm)): Numbers n such that 2*n*(n+2) is a square.
 * [A082643](http://oeis.org/A082643) ([L09 program](A082643.asm)): a(n) = ceiling(n*(n+1/2)/2).
 * [A082644](http://oeis.org/A082644) ([L06 program](A082644.asm)): a(n) = floor(n*(n-1/2)/2).
+* [A082662](http://oeis.org/A082662) ([L25 program](A082662.asm)): Numbers k such that A001227(k) = A082647(k).
 * [A082667](http://oeis.org/A082667) ([L06 program](A082667.asm)): a(n) = floor(2n/3) * ceiling(2n/3) / 2.
 * [A082679](http://oeis.org/A082679) ([L10 program](A082679.asm)): Number of Lego towers, one piece per floor, where every floor is perpendicular to the one below it (so we have a kind of 3-dimensional zigzag pattern).
 * [A082742](http://oeis.org/A082742) ([L09 program](A082742.asm)): Indices of occurrences of 2 in A004738.
