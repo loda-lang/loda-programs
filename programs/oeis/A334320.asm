@@ -1,0 +1,115 @@
+; A334320: Number of even integers in base n with exactly two distinct digits.
+; 0,0,1,1,5,6,13,15,25,28,41,45,61,66,85,91,113,120,145,153,181,190,221,231,265,276,313,325,365,378,421,435,481,496,545,561,613,630,685,703,761,780,841,861,925,946,1013,1035,1105,1128,1201,1225,1301,1326,1405
+
+mov $13,$0
+mov $15,$0
+add $15,1
+lpb $15,1
+  clr $0,13
+  sub $15,1
+  mov $0,$13
+  sub $0,$15
+  mov $9,$0
+  mov $11,2
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    add $0,$11
+    sub $0,1
+    mov $3,$0
+    mov $5,$0
+    mov $2,4
+    div $2,8
+    mov $3,8
+    mul $2,2
+    mov $6,6
+    add $2,$5
+    div $0,2
+    add $0,2
+    add $2,$0
+    mov $7,5
+    mov $2,$7
+    mov $1,0
+    mov $8,7
+    div $2,$3
+    pow $3,$2
+    mul $6,$0
+    mul $0,$5
+    mov $6,3
+    cmp $1,$0
+    pow $2,$0
+    mov $4,7
+    add $5,$4
+    mov $8,$1
+    mov $5,1
+    gcd $0,$8
+    gcd $7,2
+    add $0,6
+    mul $2,3
+    sub $7,$3
+    pow $3,8
+    fac $5
+    mul $8,2
+    sub $0,$2
+    fac $2
+    sub $0,2
+    div $7,6
+    add $1,$0
+    sub $2,$5
+    mov $6,2
+    mov $6,$5
+    mul $3,4
+    sub $3,5
+    sub $4,7
+    sub $3,$6
+    mul $2,$5
+    div $0,$6
+    add $4,8
+    mod $8,8
+    div $8,$4
+    gcd $4,2
+    mov $3,2
+    sub $5,$6
+    add $7,$0
+    mul $6,$0
+    sub $3,1
+    cmp $3,$5
+    div $4,7
+    mov $8,8
+    mul $7,2
+    mod $7,$6
+    add $7,$3
+    pow $4,4
+    mul $5,8
+    lpb $0,1
+      div $0,$6
+      mul $1,2
+      mov $5,8
+      mov $7,$5
+      sub $0,1
+      mov $4,$5
+      cmp $2,5
+    lpe
+    pow $7,$2
+    div $7,$1
+    sub $6,2
+    mov $3,1
+    fac $2
+    sub $3,5
+    mov $12,$11
+    lpb $12,1
+      mov $10,$1
+      sub $12,1
+    lpe
+  lpe
+  lpb $9,1
+    sub $10,$1
+    mov $9,0
+  lpe
+  mov $1,$10
+  sub $1,6
+  div $1,2
+  add $14,$1
+lpe
+mov $1,$14

@@ -1,0 +1,85 @@
+; A298036: Coordination sequence of Dual(4.6.12) tiling with respect to a 12-valent node.
+; 1,12,12,36,24,60,36,84,48,108,60,132,72,156,84,180,96,204,108,228,120,252,132,276,144,300,156,324,168,348,180,372,192,396,204,420,216,444,228,468,240,492,252,516,264,540,276,564,288,588,300
+
+mov $2,4
+mov $1,$0
+mov $5,2
+add $5,$1
+mov $8,6
+mov $7,$0
+mod $8,2
+mov $4,6
+mov $3,1
+sub $7,$0
+mul $0,6
+mov $7,$8
+gcd $8,6
+add $8,5
+mov $6,$0
+gcd $6,$8
+add $5,7
+mul $8,4
+add $8,$7
+add $4,7
+sub $7,8
+mul $8,8
+mul $6,2
+div $1,6
+cmp $8,$2
+pow $7,7
+pow $2,$6
+mov $4,0
+gcd $5,2
+pow $4,$5
+div $3,4
+lpb $0,1
+  mul $6,$7
+  sub $8,$5
+  sub $0,1
+  add $3,3
+  sub $2,$2
+  mov $4,8
+  mod $7,2
+  mov $7,6
+  cmp $6,8
+  mov $1,1
+  add $7,3
+  mov $3,$5
+  mul $0,$3
+  div $1,8
+  mov $3,$2
+  div $3,2
+  mul $3,$7
+  sub $4,1
+  add $2,4
+  mul $8,$2
+  mov $3,$7
+  mul $7,3
+  div $6,$5
+  mov $3,$0
+  fac $8
+  mov $0,$5
+  gcd $5,2
+  mov $7,$7
+  mov $5,$0
+  div $4,$5
+  mov $2,$2
+  cmp $6,1
+lpe
+mov $1,$5
+add $1,$3
+sub $8,3
+mov $0,5
+div $6,3
+div $8,5
+mov $2,$0
+sub $5,$0
+mul $7,2
+mov $5,2
+mul $2,$7
+mod $4,7
+pow $4,6
+sub $2,$1
+add $3,$3
+sub $1,1
+add $1,1
