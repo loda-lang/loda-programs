@@ -1520,6 +1520,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133100](http://oeis.org/A133100) ([L09 program](A133100.asm)): Expansion of f(x, x^4) in powers of x where f(, ) is Ramanujan's general theta function.
 * [A133101](http://oeis.org/A133101) ([L09 program](A133101.asm)): Expansion of f(x^2, x^3) in powers of x where f(, ) is Ramanujan's general theta function.
 * [A133124](http://oeis.org/A133124) ([L13 program](A133124.asm)): A007318 * [1, 2, 2, 3, 2, 3, 2, 3, 2,...].
+* [A133125](http://oeis.org/A133125) ([L11 program](A133125.asm)): A133080 * A000244.
 * [A133137](http://oeis.org/A133137) ([L08 program](A133137.asm)): a(1) = 1, a(2) = 2, a(n) = smallest number not the sum of 4th powers of 2 distinct earlier terms.
 * [A133140](http://oeis.org/A133140) ([L05 program](A133140.asm)): a(0) = 2, a(n) = 2^n + 2 for n>=1.
 * [A133143](http://oeis.org/A133143) ([L21 program](A133143.asm)): Maximal number of mutually nonattacking Super Queens on an n X n board. (a Super Queen is a queen with both queen and knight powers).
@@ -1899,6 +1900,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140144](http://oeis.org/A140144) ([L07 program](A140144.asm)): a(1)=1, a(n)=a(n-1)+n^1 if n odd, a(n)=a(n-1)+ n^0 if n is even.
 * [A140148](http://oeis.org/A140148) ([L23 program](A140148.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^0 if n is even.
 * [A140149](http://oeis.org/A140149) ([L16 program](A140149.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^3 if n is even.
+* [A140152](http://oeis.org/A140152) ([L19 program](A140152.asm)): a(1)=1, a(n)=a(n-1)+n^3 if n odd, a(n)=a(n-1)+ n^0 if n is even.
 * [A140155](http://oeis.org/A140155) ([L21 program](A140155.asm)): a(1)=1, a(n)=a(n-1)+n^3 if n odd, a(n)=a(n-1)+ n^4 if n is even.
 * [A140157](http://oeis.org/A140157) ([L22 program](A140157.asm)): a(1)=1, a(n) = a(n-1) + n^4 if n odd, a(n) = a(n-1) + n^0 if n is even.
 * [A140159](http://oeis.org/A140159) ([L22 program](A140159.asm)): a(1)=1, a(n) = a(n-1) + n^4 if n odd, a(n) = a(n-1) + n^2 if n is even.
@@ -2141,7 +2143,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145569](http://oeis.org/A145569) ([L03 program](A145569.asm)): Multiples of 6 appear in pairs.
 * [A145577](http://oeis.org/A145577) ([L15 program](A145577.asm)): A045944 mod 9. Period 9: repeat 0,5,7,6,2,4,3,8,1.
 * [A145594](http://oeis.org/A145594) ([L16 program](A145594.asm)): A145593(n) mod 9.
-* [A145644](http://oeis.org/A145644) ([L05 program](A145644.asm)): Cubefree part of 10^n.
+* [A145644](http://oeis.org/A145644) ([L03 program](A145644.asm)): Cubefree part of 10^n.
 * [A145654](http://oeis.org/A145654) ([L06 program](A145654.asm)): Partial sums of A000918, starting from index 1.
 * [A145655](http://oeis.org/A145655) ([L08 program](A145655.asm)): Partial sums of A080674.
 * [A145678](http://oeis.org/A145678) ([L05 program](A145678.asm)): a(n) = 441*n^2 - 21.
@@ -2199,7 +2201,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A147651](http://oeis.org/A147651) ([L04 program](A147651.asm)): First trisection of A028560.
 * [A147656](http://oeis.org/A147656) ([L07 program](A147656.asm)): The arithmetic mean of the n-th and (n+1)-st cubes, rounded down.
 * [A147666](http://oeis.org/A147666) ([L22 program](A147666.asm)): List of triples (0, 6n+1, 6n+5) for n = 0, 1, 2, ...
-* [A147674](http://oeis.org/A147674) ([L16 program](A147674.asm)): Period 9:repeat 81,27,9,27,27,9,27,81,9.
+* [A147674](http://oeis.org/A147674) ([L15 program](A147674.asm)): Period 9:repeat 81,27,9,27,27,9,27,81,9.
 * [A147675](http://oeis.org/A147675) ([L12 program](A147675.asm)): Divide by 2, multiply by 4, repeat.
 * [A147677](http://oeis.org/A147677) ([L10 program](A147677.asm)): Subtract 5, add 8, repeat.
 * [A147685](http://oeis.org/A147685) ([L06 program](A147685.asm)): Squares and centered square numbers interleaved.
@@ -4225,7 +4227,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180356](http://oeis.org/A180356) ([L04 program](A180356.asm)): n^6+6n
 * [A180357](http://oeis.org/A180357) ([L05 program](A180357.asm)): a(n) = n^7 + 7*n.
 * [A180358](http://oeis.org/A180358) ([L06 program](A180358.asm)): n^8+8n
-* [A180359](http://oeis.org/A180359) ([L13 program](A180359.asm)): n^9+9n
+* [A180359](http://oeis.org/A180359) ([L06 program](A180359.asm)): n^9+9n
 * [A180413](http://oeis.org/A180413) ([L07 program](A180413.asm)): Total number of possible knight moves on an n X n X n chessboard, if the knight is placed anywhere
 * [A180415](http://oeis.org/A180415) ([L08 program](A180415.asm)): (n^3 - 3n^2 + 14n - 6)/6.
 * [A180446](http://oeis.org/A180446) ([L07 program](A180446.asm)): Number of non-pentagonal numbers <= n.
@@ -4962,7 +4964,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195023](http://oeis.org/A195023) ([L06 program](A195023.asm)): a(n) = 14*n^2 - 4*n.
 * [A195024](http://oeis.org/A195024) ([L07 program](A195024.asm)): a(n) = n*(14*n - 1).
 * [A195025](http://oeis.org/A195025) ([L07 program](A195025.asm)): a(n) = n*(14*n + 3).
-* [A195026](http://oeis.org/A195026) ([L06 program](A195026.asm)): a(n) = 7*n*(2*n + 1).
+* [A195026](http://oeis.org/A195026) ([L05 program](A195026.asm)): a(n) = 7*n*(2*n + 1).
 * [A195027](http://oeis.org/A195027) ([L08 program](A195027.asm)): a(n) = 2*n*(7*n + 5).
 * [A195028](http://oeis.org/A195028) ([L07 program](A195028.asm)): a(n) = n*(14*n + 13).
 * [A195029](http://oeis.org/A195029) ([L09 program](A195029.asm)): a(n) = n*(14*n + 13) + 3.

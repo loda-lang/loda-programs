@@ -178,7 +178,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304831](http://oeis.org/A304831) ([L05 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
 * [A304832](http://oeis.org/A304832) ([L08 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
 * [A304833](http://oeis.org/A304833) ([L09 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
-* [A304834](http://oeis.org/A304834) ([L09 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
+* [A304834](http://oeis.org/A304834) ([L08 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L12 program](A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
 * [A304836](http://oeis.org/A304836) ([L07 program](A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304839](http://oeis.org/A304839) ([L03 program](A304839.asm)): a(n) = 61*n - 38 (n>=1).
@@ -760,3 +760,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332756](http://oeis.org/A332756) ([L08 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
 * [A333525](http://oeis.org/A333525) ([L05 program](A333525.asm)): Degree of polytope representing the number n.
 * [A333574](http://oeis.org/A333574) ([L15 program](A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.
+* [A334320](http://oeis.org/A334320) ([L44 program](A334320.asm)): Number of even integers in base n with exactly two distinct digits.
