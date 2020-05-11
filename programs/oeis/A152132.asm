@@ -1,0 +1,118 @@
+; A152132: Maximal length of rook tour on an n X n+1 board.
+; 2,8,24,54,104,174,270,396,558,756,996,1282,1620,2010,2458,2968,3546,4192,4912,5710,6592,7558,8614,9764,11014,12364,13820,15386,17068,18866,20786,22832,25010,27320,29768,32358,35096,37982,41022,44220,47582
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $12,$0
+  mov $14,$0
+  add $14,1
+  lpb $14,1
+    clr $0,12
+    sub $14,1
+    mov $0,$12
+    sub $0,$14
+    mov $9,$0
+    mov $11,$0
+    add $11,1
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      sub $0,$11
+      mov $4,5
+      pow $0,5
+      mov $2,$4
+      mov $6,$0
+      mov $7,8
+      mul $0,$6
+      mov $5,$7
+      mov $8,$0
+      add $5,7
+      fac $2
+      sub $4,$7
+      mov $3,$4
+      mov $4,4
+      mod $0,4
+      pow $7,$4
+      cmp $8,3
+      cmp $0,0
+      cmp $7,3
+      pow $0,5
+      sub $6,6
+      pow $7,$8
+      sub $2,5
+      mov $1,$8
+      fac $1
+      add $6,5
+      sub $2,$6
+      mod $6,4
+      sub $0,$3
+      pow $8,6
+      mod $3,8
+      gcd $7,$8
+      gcd $5,5
+      sub $2,$6
+      gcd $4,2
+      add $1,$4
+      add $3,$5
+      sub $3,6
+      mod $7,2
+      mul $3,$1
+      mul $2,$2
+      div $0,2
+      sub $8,1
+      mul $2,2
+      sub $0,$0
+      add $3,8
+      add $2,7
+      pow $5,$5
+      lpb $0,1
+        pow $0,5
+        add $8,5
+        div $5,$3
+        mul $3,6
+        div $8,2
+        mul $7,2
+        mul $0,$6
+        mul $8,3
+        mul $0,6
+        gcd $5,$1
+        mul $0,$2
+        pow $6,$7
+        cmp $8,$0
+        pow $0,$3
+        mov $1,8
+        sub $0,1
+        pow $1,$7
+        sub $0,$4
+        mod $3,$4
+        sub $5,8
+        add $6,4
+        mov $8,$1
+        div $4,2
+      lpe
+      div $2,$1
+      mul $1,$6
+      pow $8,2
+      mod $5,$2
+      sub $4,$5
+      add $4,$8
+      pow $4,3
+      sub $8,5
+      div $1,3
+      mul $1,2
+      add $10,$1
+    lpe
+    mov $1,$10
+    add $13,$1
+  lpe
+  mov $1,$13
+  add $16,$1
+lpe
+mov $1,$16
