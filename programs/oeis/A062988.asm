@@ -1,0 +1,129 @@
+; A062988: a(n) = binomial(n+6,5) - 1.
+; 5,20,55,125,251,461,791,1286,2001,3002,4367,6187,8567,11627,15503,20348,26333,33648,42503,53129,65779,80729,98279,118754,142505,169910,201375,237335,278255,324631
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $12,$0
+    mov $14,$0
+    add $14,1
+    lpb $14,1
+      clr $0,12
+      sub $14,1
+      mov $0,$12
+      sub $0,$14
+      mov $9,$0
+      mov $11,$0
+      add $11,1
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        sub $0,$11
+        mov $4,7
+        mov $3,0
+        mov $2,0
+        mul $2,$0
+        mov $7,5
+        mov $1,$2
+        mov $8,$4
+        mov $4,3
+        mov $5,4
+        pow $2,2
+        add $2,$0
+        mul $7,7
+        mod $2,$4
+        mov $6,7
+        mov $7,0
+        cmp $6,$5
+        div $3,5
+        mov $5,$5
+        mov $6,8
+        sub $8,1
+        cmp $2,3
+        sub $6,3
+        sub $7,1
+        mov $8,$1
+        div $7,3
+        mov $2,$1
+        pow $6,$6
+        mul $3,2
+        gcd $7,3
+        sub $8,1
+        add $8,5
+        mov $1,$0
+        lpb $0,1
+          fac $5
+          mul $4,$8
+          mul $1,$0
+          mov $8,0
+          div $3,8
+          sub $0,1
+          sub $7,$8
+          gcd $0,$0
+          mov $8,$6
+          mov $3,6
+          add $2,$0
+          sub $5,5
+          mod $3,2
+          div $5,2
+          add $6,$2
+          mul $0,$8
+        lpe
+        pow $7,6
+        sub $1,$4
+        add $7,$6
+        pow $4,4
+        mul $0,$5
+        mov $7,$8
+        mov $3,1
+        mov $8,4
+        add $3,3
+        sub $3,7
+        mod $4,$5
+        mul $0,$7
+        div $5,$5
+        mul $7,$4
+        add $1,$7
+        add $1,1
+        mul $7,8
+        pow $0,$3
+        div $4,$5
+        mul $5,8
+        mul $0,5
+        add $8,$0
+        mul $1,4
+        pow $4,$2
+        add $1,4
+        div $2,2
+        mod $4,2
+        mov $3,6
+        pow $0,2
+        add $5,$5
+        sub $1,8
+        div $1,4
+        add $10,$1
+      lpe
+      mov $1,$10
+      add $13,$1
+    lpe
+    mov $1,$13
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19
