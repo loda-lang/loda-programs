@@ -1,106 +1,14 @@
 ; A037579: Base 7 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
 ; 1,10,71,500,3501,24510,171571,1201000,8407001,58849010,411943071,2883601500,20185210501,141296473510,989075314571,6923527202000,48464690414001,339252832898010,2374769830286071,16623388812002500
 
-mov $1,5
-add $0,5
-mov $7,4
-div $1,$7
-sub $0,$7
-mov $10,10
-mov $4,$1
-div $7,$4
-mov $6,2
-sub $4,$4
-mov $5,8
-cmp $5,$0
-sub $1,1
-add $5,1
-mov $3,2
-div $5,$10
-mov $3,$4
-mov $9,$1
-mov $3,$9
-pow $7,$5
-mov $7,$0
-mod $6,$10
-add $6,1
+add $0,1
 mov $1,7
-pow $4,3
-fac $5
-mov $8,$10
-pow $10,8
-add $4,2
-add $0,$3
-pow $5,$0
-cmp $7,8
-mod $9,$1
-pow $3,$8
-cmp $7,$4
-mul $9,$9
-add $10,$1
 pow $1,$0
-lpb $0,1
-  add $9,$7
-  mov $10,$6
-  mul $3,$6
-  mov $2,3
-  add $10,$3
-  mul $6,7
-  sub $0,1
-  add $0,$8
-  div $2,5
-  pow $2,$3
-  pow $4,$10
-  sub $1,$3
-  cmp $3,7
-lpe
-div $8,$6
-mov $4,1
-div $2,2
-pow $5,$0
-mod $8,6
-sub $3,$6
-gcd $1,$1
-mod $4,3
-mul $5,$0
-pow $4,$2
-pow $2,$5
-mov $7,$9
-div $6,2
-mov $9,4
-sub $5,6
-sub $4,$9
 div $1,6
-mul $3,$5
-div $4,10
-mul $4,6
-pow $2,$10
-mov $8,6
-div $10,$10
-pow $4,$8
-add $10,7
-mov $5,2
-div $5,2
-add $4,4
-mul $10,$3
-mov $9,$0
 mul $1,10
-pow $2,6
-add $5,$1
-gcd $2,5
-mul $3,$2
-sub $10,$5
-gcd $2,8
-pow $9,5
-div $8,6
 div $1,4
 mov $0,6
-add $5,$2
 add $1,$0
-mul $6,$2
-pow $7,7
-add $7,$1
-div $6,10
 sub $1,8
 div $1,2
 add $1,1
