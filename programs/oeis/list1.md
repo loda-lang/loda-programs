@@ -515,7 +515,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110568](http://oeis.org/A110568) ([L07 program](A110568.asm)): Period 6: repeat [1, 0, 2, 2, 0, 1].
 * [A110569](http://oeis.org/A110569) ([L08 program](A110569.asm)): Period 6: repeat [2, 1, 3, 3, 1, 2].
 * [A110591](http://oeis.org/A110591) ([L07 program](A110591.asm)): Number of digits in base-4 representation of n.
-* [A110592](http://oeis.org/A110592) ([L31 program](A110592.asm)): Number of digits in base-5 representation of n. String length of A007091.
+* [A110592](http://oeis.org/A110592) ([L10 program](A110592.asm)): Number of digits in base-5 representation of n. String length of A007091.
 * [A110593](http://oeis.org/A110593) ([L07 program](A110593.asm)): a(1) = 3, a(n+1) = 2*(3^n).
 * [A110594](http://oeis.org/A110594) ([L08 program](A110594.asm)): a(1) = 4, a(2) = 12, for n>1: a(n) = 3*4^(n-1).
 * [A110595](http://oeis.org/A110595) ([L08 program](A110595.asm)): a(1)=5. For n > 1, a(n) = 4*5^(n-1) = A005054(n).
@@ -761,7 +761,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A116971](http://oeis.org/A116971) ([L10 program](A116971.asm)): a(n) = (35*2^((2*(3*n+2) + 2)/3) - 2*(3*n+2) - 46)/9.
 * [A116973](http://oeis.org/A116973) ([L06 program](A116973.asm)): If n mod 2 = 0 then (3^(n+3)-19)/8 else (3^(n+3)-1)/8.
 * [A116996](http://oeis.org/A116996) ([L17 program](A116996.asm)): Partial sums of A116966.
-* [A117066](http://oeis.org/A117066) ([L42 program](A117066.asm)): Partial sums of cupolar numbers (1/3)*(n+1)*(5*n^2+7*n+3) (A096000).
 * [A117080](http://oeis.org/A117080) ([L18 program](A117080.asm)): a(n) = 2a(n-1)+a(n-3)+1 with a(1)=1, a(2)=3, a(3)=8.
 * [A117088](http://oeis.org/A117088) ([L05 program](A117088.asm)): a(n) = (11*5^n - 7)/4.
 * [A117142](http://oeis.org/A117142) ([L07 program](A117142.asm)): Number of partitions of n in which any two parts differ by at most 2.
@@ -4081,7 +4080,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176961](http://oeis.org/A176961) ([L14 program](A176961.asm)): a(n) = (3*2^(n+1) - 8 - (-2)^n)/6.
 * [A176965](http://oeis.org/A176965) ([L11 program](A176965.asm)): a(n) = 2^(n-1) - (2^n*(-1)^n + 2)/3.
 * [A176972](http://oeis.org/A176972) ([L16 program](A176972.asm)): a(n) = 7^n + 7*n + 1.
-* [A177002](http://oeis.org/A177002) ([L05 program](A177002.asm)): Period 4: repeat [1, 2, 4, 2].
+* [A177002](http://oeis.org/A177002) ([L04 program](A177002.asm)): Period 4: repeat [1, 2, 4, 2].
 * [A177022](http://oeis.org/A177022) ([L07 program](A177022.asm)): Decimal expansion of 49/36.
 * [A177044](http://oeis.org/A177044) ([L12 program](A177044.asm)): a(n) = 103*(n-1)-a(n-1) with n>1, a(1)=38.
 * [A177046](http://oeis.org/A177046) ([L26 program](A177046.asm)): a(n) = 127*(n-1)-a(n-1) with n>1, a(1)=16.
@@ -4610,7 +4609,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187326](http://oeis.org/A187326) ([L09 program](A187326.asm)): Floor(n/4)+floor(n/2)+floor(3n/4).
 * [A187327](http://oeis.org/A187327) ([L12 program](A187327.asm)): Floor(n/5)+floor(2n/5)+floor(3n/5).
 * [A187330](http://oeis.org/A187330) ([L21 program](A187330.asm)): Floor((4-sqrt(5))n); complement of A187339.
-* [A187331](http://oeis.org/A187331) ([L08 program](A187331.asm)): a(n) = Sum_{k=1..4} floor(k*n/4).
+* [A187331](http://oeis.org/A187331) ([L07 program](A187331.asm)): a(n) = Sum_{k=1..4} floor(k*n/4).
 * [A187332](http://oeis.org/A187332) ([L21 program](A187332.asm)): Complement of A187331.
 * [A187333](http://oeis.org/A187333) ([L06 program](A187333.asm)): Floor(n/5)+floor(2n/5)+floor(3n/5)+floor(4n/5).
 * [A187334](http://oeis.org/A187334) ([L14 program](A187334.asm)): Sum{floor(kn/5), k=1,2,3,4,5}; complement of A187335.

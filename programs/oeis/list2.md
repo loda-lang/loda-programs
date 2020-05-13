@@ -1425,7 +1425,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254473](http://oeis.org/A254473) ([L14 program](A254473.asm)): 24-hedral numbers: a(n) = (2*n + 1)*(8*n^2 + 14*n + 7).
 * [A254474](http://oeis.org/A254474) ([L11 program](A254474.asm)): 30-gonal numbers: a(n) = n*(14*n-13).
 * [A254527](http://oeis.org/A254527) ([L07 program](A254527.asm)): Total number of points on a sphere when both poles are on an x by x grid where x=8*n+1.
-* [A254667](http://oeis.org/A254667) ([L04 program](A254667.asm)): The nonnegative numbers with 2 instead of 1.
+* [A254667](http://oeis.org/A254667) ([L03 program](A254667.asm)): The nonnegative numbers with 2 instead of 1.
 * [A254729](http://oeis.org/A254729) ([L12 program](A254729.asm)): Number of numbers j + k*sqrt(2) of length n, where the length is the least number of steps to reach 0, the allowable steps being x -> x + 1 and x -> x*sqrt(2).
 * [A254745](http://oeis.org/A254745) ([L08 program](A254745.asm)): Chebyshev polynomials of the second kind, U(n,x)^2, evaluated at x = sqrt(3)/2.
 * [A254757](http://oeis.org/A254757) ([L20 program](A254757.asm)): Part of the positive proper solutions x of the Pell equation x^2 - 2*y^2 = - 7^2 based on the fundamental solution (x0, y0)= (-1, 5).
@@ -1990,7 +1990,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269895](http://oeis.org/A269895) ([L05 program](A269895.asm)): Number of n X 1 0..6 arrays with some element plus some horizontally or vertically adjacent neighbor totalling six exactly once.
 * [A269910](http://oeis.org/A269910) ([L12 program](A269910.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A269912](http://oeis.org/A269912) ([L23 program](A269912.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
-* [A270059](http://oeis.org/A270059) ([L09 program](A270059.asm)): Number of distinct digits needed to write n in all bases >= 2.
+* [A270059](http://oeis.org/A270059) ([L08 program](A270059.asm)): Number of distinct digits needed to write n in all bases >= 2.
 * [A270109](http://oeis.org/A270109) ([L10 program](A270109.asm)): a(n) = n^3 + (n+1)*(n+2).
 * [A270200](http://oeis.org/A270200) ([L17 program](A270200.asm)): a(0) = 0; for n >= 1, a(n) = A054429(A005187(1+A054429(n-1))).
 * [A270204](http://oeis.org/A270204) ([L10 program](A270204.asm)): a(n) = n^12 - n^10 + n^8 - n^6 + n^4 - n^2 + 1.
@@ -2003,7 +2003,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A270510](http://oeis.org/A270510) ([L10 program](A270510.asm)): Number of 2X2X2 triangular 0..n arrays with some element plus some adjacent element totalling n+1 exactly once.
 * [A270545](http://oeis.org/A270545) ([L07 program](A270545.asm)): Number of equilateral triangle units forming perimeter of equilateral triangle.
 * [A270567](http://oeis.org/A270567) ([L11 program](A270567.asm)): Expansion of (1+4*x)/(1-5*x).
-* [A270576](http://oeis.org/A270576) ([L09 program](A270576.asm)): Expansion of (1+2*x)/(1-6*x).
+* [A270576](http://oeis.org/A270576) ([L05 program](A270576.asm)): Expansion of (1+2*x)/(1-6*x).
 * [A270681](http://oeis.org/A270681) ([L16 program](A270681.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
 * [A270700](http://oeis.org/A270700) ([L05 program](A270700.asm)): Triangular Star of David numbers (the figurate number of triangles framing a hexagram: a(0) = 12; thereafter a(n) = 36*n+6).
 * [A270704](http://oeis.org/A270704) ([L07 program](A270704.asm)): Even 14-gonal (or tetradecagonal) numbers.
@@ -2730,7 +2730,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296953](http://oeis.org/A296953) ([L05 program](A296953.asm)): Number of bisymmetric, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
 * [A296954](http://oeis.org/A296954) ([L08 program](A296954.asm)): Expansion of x*(1 - x + 4*x^2) / ((1 - x)*(1 - 2*x)).
 * [A296965](http://oeis.org/A296965) ([L07 program](A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
-* [A297044](http://oeis.org/A297044) ([L04 program](A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
+* [A297044](http://oeis.org/A297044) ([L03 program](A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
 * [A297045](http://oeis.org/A297045) ([L04 program](A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
 * [A297180](http://oeis.org/A297180) ([L49 program](A297180.asm)): a(n) is the smallest positive integer of length (distance from origin) n in the Cayley graph of the integers generated by all powers of 7.
 * [A297217](http://oeis.org/A297217) ([L09 program](A297217.asm)): Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.

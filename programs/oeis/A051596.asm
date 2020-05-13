@@ -1,114 +1,20 @@
 ; A051596: Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tet}.
 ; 1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100,200,300,400
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
-  mov $9,10
-  mov $8,$0
-  mov $3,$9
-  mov $10,9
+mov $6,$0
+mov $4,$0
+add $4,1
+lpb $4,1
+  sub $4,1
+  mov $0,$6
+  sub $0,$4
+  mov $2,10
+  mov $7,$0
+  mov $3,$2
   mov $1,$3
-  mov $7,$9
-  lpb $0,1
-    sub $10,$9
-    mov $2,4
-    mov $1,$2
-    mov $4,$0
-    sub $1,1
-    mov $6,9
-    gcd $10,3
-    sub $6,$7
-    sub $3,5
-    mov $1,$1
-    mov $0,$7
-    div $6,$2
-    div $9,2
-    pow $6,2
-    pow $7,7
-    fac $1
-    mul $2,2
-    sub $3,1
-    div $10,$0
-    mod $2,9
-    cmp $4,9
-    mov $7,0
-    fac $2
-    mov $8,8
-    mov $3,7
-    mov $10,$7
-    mul $8,$9
-    gcd $3,2
-    mul $1,$3
-    pow $0,3
-    pow $4,9
-    add $2,$4
-    mov $0,10
-    mul $10,$0
-    sub $10,$8
-    mov $5,$0
-    pow $4,5
-    mov $6,0
-    sub $3,$3
-    div $4,5
-    fac $7
-    div $10,$1
-    mod $8,9
-    mov $2,$2
-    sub $10,$8
-    mul $0,$2
-    sub $2,$0
-    div $8,$1
-    pow $1,$5
-    mul $8,$6
-    sub $1,4
-    add $8,$1
-    sub $0,1
-  lpe
-  mod $7,4
-  mul $10,$4
-  mov $7,10
-  pow $10,$7
-  mov $6,$3
-  add $2,3
-  mod $5,10
-  mod $6,6
-  mul $4,2
-  mov $5,9
-  div $4,$9
-  fac $4
-  sub $9,$10
-  pow $5,8
-  mod $3,$4
-  mod $4,5
-  sub $6,1
-  add $0,6
-  add $2,1
-  sub $8,1
-  mov $9,2
-  fac $3
-  mul $10,4
-  mod $2,5
-  pow $10,9
-  mul $9,$4
-  add $5,4
-  pow $2,8
+  sub $7,1
+  div $7,9
+  pow $1,$7
   add $5,$1
-  mov $7,$2
-  mov $9,$9
-  div $8,9
-  add $6,$10
-  pow $4,$2
-  mul $10,8
-  cmp $10,$9
-  gcd $6,10
-  pow $1,$8
-  mov $5,8
-  add $12,$1
 lpe
-mov $1,$12
+mov $1,$5
