@@ -564,7 +564,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A217775](http://oeis.org/A217775) ([L05 program](A217775.asm)): a(n) = n*(n+1) + (n+2)*(n+3) + (n+4)*(n+5).
 * [A217776](http://oeis.org/A217776) ([L05 program](A217776.asm)): a(n) = n*(n+1) + (n+2)*(n+3) + (n+4)*(n+5) + (n+6)*(n+7).
 * [A217789](http://oeis.org/A217789) ([L13 program](A217789.asm)): Least difference between 2 palindromic numbers of length n.
-* [A217871](http://oeis.org/A217871) ([L11 program](A217871.asm)): a(n)=b(n,1) where b(0,m)=m, b(n,m)=b(floor(n/4),m*2).
+* [A217871](http://oeis.org/A217871) ([L10 program](A217871.asm)): a(n)=b(n,1) where b(0,m)=m, b(n,m)=b(floor(n/4),m*2).
 * [A217873](http://oeis.org/A217873) ([L06 program](A217873.asm)): 4*n*(n^2+2)/3.
 * [A217923](http://oeis.org/A217923) ([L09 program](A217923.asm)): F-block elements for Janet periodic table.
 * [A218078](http://oeis.org/A218078) ([L16 program](A218078.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal, vertical or antidiagonal neighbors in a random 0..1 n X 2 array.
@@ -655,7 +655,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A221905](http://oeis.org/A221905) ([L06 program](A221905.asm)): 3^n + 3*n.
 * [A221906](http://oeis.org/A221906) ([L05 program](A221906.asm)): 4^n + 4*n.
 * [A221907](http://oeis.org/A221907) ([L09 program](A221907.asm)): 5^n + 5*n.
-* [A221908](http://oeis.org/A221908) ([L18 program](A221908.asm)): 6^n + 6*n.
+* [A221908](http://oeis.org/A221908) ([L14 program](A221908.asm)): 6^n + 6*n.
 * [A221912](http://oeis.org/A221912) ([L05 program](A221912.asm)): Partial sums of floor(n/12).
 * [A222001](http://oeis.org/A222001) ([L08 program](A222001.asm)): Number of n X 3 arrays with each row a permutation of 1..3 having at least as many downsteps as the preceding row, with rows in lexicographically nonincreasing order.
 * [A222170](http://oeis.org/A222170) ([L04 program](A222170.asm)): a(n) = n^2 + 2*floor(n^2/3).
@@ -784,7 +784,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227417](http://oeis.org/A227417) ([L15 program](A227417.asm)): Integer triples a(3n-2) = n, a(3n-1) = n+4, and a(3n) = n+7.
 * [A227512](http://oeis.org/A227512) ([L16 program](A227512.asm)): Floor(-1/n + 1/log((2n+1)/(2n-1))).
 * [A227513](http://oeis.org/A227513) ([L17 program](A227513.asm)): Round(-1/n + 1/log((2n+1)/(2n-1))).
-* [A227541](http://oeis.org/A227541) ([L09 program](A227541.asm)): a(n) = floor(13*n^2/4).
+* [A227541](http://oeis.org/A227541) ([L04 program](A227541.asm)): a(n) = floor(13*n^2/4).
 * [A227568](http://oeis.org/A227568) ([L12 program](A227568.asm)): Largest k such that a partition of n into distinct parts with boundary size k exists.
 * [A227582](http://oeis.org/A227582) ([L10 program](A227582.asm)): Expansion of (2+3*x+2*x^2+2*x^3+3*x^4+x^5-x^6)/(1-2*x+x^2-x^5+2*x^6-x^7).
 * [A227589](http://oeis.org/A227589) ([L14 program](A227589.asm)): Maximum label within a minimal labeling of n identical 4-sided dice yielding the most possible sums.

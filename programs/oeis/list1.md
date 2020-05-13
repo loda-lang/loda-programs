@@ -69,7 +69,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100286](http://oeis.org/A100286) ([L12 program](A100286.asm)): Expansion of (1+2x^2-2x^3+2x^4)/(1-x+x^2-x^3+x^4-x^5).
 * [A100287](http://oeis.org/A100287) ([L13 program](A100287.asm)): First occurrence of n in A100002; the least k such that A100002(k) = n.
 * [A100312](http://oeis.org/A100312) ([L13 program](A100312.asm)): Number of 3 X n binary matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (10;0) and (01;1).
-* [A100314](http://oeis.org/A100314) ([L07 program](A100314.asm)): Number of 2 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (01;0), (10;0) and (01;1).
+* [A100314](http://oeis.org/A100314) ([L05 program](A100314.asm)): Number of 2 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (01;0), (10;0) and (01;1).
 * [A100315](http://oeis.org/A100315) ([L11 program](A100315.asm)): Number of 3 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (01;0), (10;0) and (01;1).
 * [A100316](http://oeis.org/A100316) ([L12 program](A100316.asm)): Number of 4 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (01;0), (10;0) and (01;1).
 * [A100335](http://oeis.org/A100335) ([L07 program](A100335.asm)): An inverse Catalan transform of J(2n).
@@ -1415,7 +1415,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131818](http://oeis.org/A131818) ([L06 program](A131818.asm)): A130296 + A002260 - A000012. Triangle read by rows: row n consists of n, 2, 3, 4,...n.
 * [A131820](http://oeis.org/A131820) ([L07 program](A131820.asm)): Row sums of triangle A131819.
 * [A131821](http://oeis.org/A131821) ([L23 program](A131821.asm)): Triangle read by rows: row n consists of n followed by (n-2) ones then n.
-* [A131831](http://oeis.org/A131831) ([L07 program](A131831.asm)): Duplicate of A100314
+* [A131831](http://oeis.org/A131831) ([L05 program](A131831.asm)): Duplicate of A100314
 * [A131833](http://oeis.org/A131833) ([L08 program](A131833.asm)): 2^(n+1)-1+3*n.
 * [A131870](http://oeis.org/A131870) ([L05 program](A131870.asm)): Period 8: repeat [1, 2, 3, 4, 6, 7, 8, 9].
 * [A131874](http://oeis.org/A131874) ([L07 program](A131874.asm)): (7n^2 + 15n + 2) / 2.
@@ -3016,6 +3016,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160842](http://oeis.org/A160842) ([L06 program](A160842.asm)): Number of lines through at least 2 points of a 2 X n grid of points.
 * [A160843](http://oeis.org/A160843) ([L19 program](A160843.asm)): Number of lines through at least 2 points of a 3 X n grid of points.
 * [A160912](http://oeis.org/A160912) ([L05 program](A160912.asm)): [1, 3, 5, 7,...] convolved with [1, 4, 0, 0, 0,...]
+* [A160914](http://oeis.org/A160914) ([L23 program](A160914.asm)): Extended s-block elements for Janet table.
 * [A160931](http://oeis.org/A160931) ([L16 program](A160931.asm)): a(n)= n + digital sum(n+1)
 * [A160941](http://oeis.org/A160941) ([L04 program](A160941.asm)): a(n)= n - digital sum(n-1)
 * [A161168](http://oeis.org/A161168) ([L05 program](A161168.asm)): a(n) = 2^n + 4^n.
@@ -4065,7 +4066,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176636](http://oeis.org/A176636) ([L04 program](A176636.asm)): Periodic sequence: Repeat 57, 71.
 * [A176662](http://oeis.org/A176662) ([L18 program](A176662.asm)): a(0)=2, a(1)=7, and a(n) = (3*n+1)*2^(n-1) if n > 1.
 * [A176672](http://oeis.org/A176672) ([L10 program](A176672.asm)): a(2*n) = 1 + 6*n, a(2*n+1) = A165367(n).
-* [A176691](http://oeis.org/A176691) ([L08 program](A176691.asm)): a(n) = 2^n + 2*n + 1.
+* [A176691](http://oeis.org/A176691) ([L07 program](A176691.asm)): a(n) = 2^n + 2*n + 1.
 * [A176693](http://oeis.org/A176693) ([L10 program](A176693.asm)): Union of squares and the even numbers.
 * [A176710](http://oeis.org/A176710) ([L11 program](A176710.asm)): Mix A001021, 2*A001021.
 * [A176711](http://oeis.org/A176711) ([L12 program](A176711.asm)): a(n) = 16n^4 + 64n^3 + 104n^2 + 80n + 21.
@@ -4163,6 +4164,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178815](http://oeis.org/A178815) ([L02 program](A178815.asm)): First base of a nonzero Fermat quotient mod the n-th prime.
 * [A178872](http://oeis.org/A178872) ([L21 program](A178872.asm)): Partial sums of round(4^n/7).
 * [A178874](http://oeis.org/A178874) ([L17 program](A178874.asm)): Partial sums of round(5^n/8).
+* [A178875](http://oeis.org/A178875) ([L16 program](A178875.asm)): Partial sums of round(4^n/9).
 * [A178914](http://oeis.org/A178914) ([L11 program](A178914.asm)): 10's complement of nonnegative numbers.
 * [A178915](http://oeis.org/A178915) ([L13 program](A178915.asm)): Rearrangement of natural numbers so that every partial sum is composite.
 * [A178947](http://oeis.org/A178947) ([L45 program](A178947.asm)): Expansion of x*(1+2*x+8*x^2+3*x^4+4*x^3) / ( (1+x)^2*(x-1)^4 ).

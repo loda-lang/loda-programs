@@ -13,118 +13,21 @@ lpb $20,1
   mov $17,$0
   add $17,1
   lpb $17,1
-    clr $0,15
     sub $17,1
     mov $0,$15
     sub $0,$17
     mov $11,$0
     mov $13,2
     lpb $13,1
-      clr $0,11
       sub $13,1
-      mov $0,$11
       add $0,$13
       sub $0,1
-      mov $5,4
       mov $1,9
-      mov $4,0
       mov $7,$1
       mul $7,$0
       mul $1,$7
-      sub $5,$4
-      mov $9,$4
-      mov $8,9
-      sub $4,$1
-      mov $8,1
-      mov $2,$8
-      mov $3,2
-      sub $9,2
-      fac $5
-      div $5,6
-      mov $8,$5
-      sub $7,1
-      mov $0,$3
-      mov $6,3
       add $1,3
-      mul $7,2
-      mov $10,$9
-      div $7,7
-      div $8,$1
-      fac $3
-      fac $9
-      pow $6,$5
-      div $10,9
-      mul $2,2
-      sub $0,$7
-      mov $8,0
-      add $2,$8
-      add $6,6
-      sub $3,7
-      lpb $0,1
-        mov $6,$1
-        mul $1,3
-        add $3,8
-        mov $9,9
-        mul $9,$4
-        gcd $3,$3
-        div $6,7
-        mul $10,$5
-        mul $4,4
-        sub $10,$7
-        sub $2,$3
-        cmp $6,5
-        sub $4,8
-        mov $1,$5
-        sub $2,1
-        mod $0,4
-        gcd $0,$2
-        gcd $3,$2
-        add $10,$1
-        mod $9,$1
-        mov $2,0
-        div $6,$1
-        add $8,4
-        add $4,9
-        mod $6,$4
-        sub $6,5
-        sub $0,1
-        mul $1,$2
-        sub $2,$1
-        mov $1,3
-        sub $5,1
-        mul $7,4
-        sub $8,$1
-        mul $9,2
-        sub $2,$0
-        mov $0,7
-        add $3,3
-        mul $5,$6
-        fac $9
-        mov $3,$10
-        fac $9
-        sub $0,4
-        mov $10,$2
-        fac $10
-        mul $4,5
-        add $8,7
-        div $1,$10
-      lpe
-      mod $8,10
-      mul $5,$1
-      pow $7,$8
-      fac $10
-      mov $7,4
-      mul $9,$6
-      pow $3,10
-      cmp $7,10
-      sub $5,9
-      add $5,$10
-      div $1,8
-      mod $7,$5
-      add $4,$5
-      div $1,7
-      div $3,$5
-      mov $4,$9
+      div $1,56
       mov $14,$13
       lpb $14,1
         mov $12,$1

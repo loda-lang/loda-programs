@@ -177,7 +177,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304830](http://oeis.org/A304830) ([L05 program](A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
 * [A304831](http://oeis.org/A304831) ([L05 program](A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
 * [A304832](http://oeis.org/A304832) ([L08 program](A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).
-* [A304833](http://oeis.org/A304833) ([L09 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
+* [A304833](http://oeis.org/A304833) ([L08 program](A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
 * [A304834](http://oeis.org/A304834) ([L08 program](A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L12 program](A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
 * [A304836](http://oeis.org/A304836) ([L07 program](A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
@@ -558,6 +558,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319572](http://oeis.org/A319572) ([L16 program](A319572.asm)): The x coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
 * [A319573](http://oeis.org/A319573) ([L14 program](A319573.asm)): The y coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
 * [A319610](http://oeis.org/A319610) ([L21 program](A319610.asm)): a(n) is the minimal number of successive OFF cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
+* [A319678](http://oeis.org/A319678) ([L44 program](A319678.asm)): Numbers with property that the first digit is the length of the number (written in base 10).
 * [A319701](http://oeis.org/A319701) ([L12 program](A319701.asm)): Filter sequence for sequences that are constant for all odd terms >= 3.
 * [A319702](http://oeis.org/A319702) ([L14 program](A319702.asm)): Filter sequence for sequences that are constant for all even terms >= 2.
 * [A319795](http://oeis.org/A319795) ([L28 program](A319795.asm)): a(n) = n^(n+1)/(n-1)^n for n>1, rounded to nearest integer.
