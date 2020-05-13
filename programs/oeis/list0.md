@@ -479,6 +479,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005377](http://oeis.org/A005377) ([L10 program](A005377.asm)): Number of low discrepancy sequences in base 4.
 * [A005408](http://oeis.org/A005408) ([L03 program](A005408.asm)): The odd numbers: a(n) = 2*n + 1.
 * [A005409](http://oeis.org/A005409) ([L13 program](A005409.asm)): Number of polynomials of height n: a(n) = 2a(n-1) + a(n-2) + 2.
+* [A005428](http://oeis.org/A005428) ([L09 program](A005428.asm)): a(n) = ceiling((1 + sum of preceding terms) / 2).
 * [A005448](http://oeis.org/A005448) ([L06 program](A005448.asm)): Centered triangular numbers: a(n) = 3n(n-1)/2 + 1.
 * [A005449](http://oeis.org/A005449) ([L05 program](A005449.asm)): Second pentagonal numbers: a(n) = n*(3*n + 1)/2.
 * [A005475](http://oeis.org/A005475) ([L05 program](A005475.asm)): a(n) = n*(5*n+1)/2.
@@ -2829,6 +2830,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040271](http://oeis.org/A040271) ([L15 program](A040271.asm)): Continued fraction for sqrt(288).
 * [A040272](http://oeis.org/A040272) ([L04 program](A040272.asm)): Continued fraction for sqrt(290).
 * [A040273](http://oeis.org/A040273) ([L05 program](A040273.asm)): Continued fraction for sqrt(291).
+* [A040288](http://oeis.org/A040288) ([L19 program](A040288.asm)): Continued fraction for sqrt(306).
 * [A040305](http://oeis.org/A040305) ([L12 program](A040305.asm)): Continued fraction for sqrt(323).
 * [A040306](http://oeis.org/A040306) ([L04 program](A040306.asm)): Continued fraction for sqrt(325).
 * [A040307](http://oeis.org/A040307) ([L05 program](A040307.asm)): Continued fraction for sqrt(326).
@@ -3888,6 +3890,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054776](http://oeis.org/A054776) ([L11 program](A054776.asm)): a(n) = 3*n*(3*n-1)*(3*n-2).
 * [A054777](http://oeis.org/A054777) ([L18 program](A054777.asm)): a(n) = 4*n*(4*n-1)*(4*n-2)*(4*n-3).
 * [A054861](http://oeis.org/A054861) ([L04 program](A054861.asm)): Highest power of 3 dividing n!.
+* [A054878](http://oeis.org/A054878) ([L28 program](A054878.asm)): Number of closed walks of length n along the edges of a tetrahedron based at a vertex.
 * [A054886](http://oeis.org/A054886) ([L12 program](A054886.asm)): Layer counting sequence for hyperbolic tessellation by cuspidal triangles of angles (Pi/3,Pi/3,0) (this is the classical modular tessellation).
 * [A054888](http://oeis.org/A054888) ([L08 program](A054888.asm)): Layer counting sequence for hyperbolic tessellation by regular pentagons of angle Pi/2.
 * [A054890](http://oeis.org/A054890) ([L18 program](A054890.asm)): Layer counting sequence for hyperbolic tessellation by regular heptagons of angle Pi/3.
@@ -3918,6 +3921,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A055271](http://oeis.org/A055271) ([L10 program](A055271.asm)): a(n) = 5*a(n-1) - a(n-2) with a(0)=1, a(1)=7.
 * [A055272](http://oeis.org/A055272) ([L10 program](A055272.asm)): First differences of 7^n (A000420).
 * [A055273](http://oeis.org/A055273) ([L07 program](A055273.asm)): a(n) = 3*a(n-1) - a(n-2) with a(0) = 1, a(1) = 8.
+* [A055278](http://oeis.org/A055278) ([L46 program](A055278.asm)): Number of rooted trees with n nodes and 3 leaves.
 * [A055364](http://oeis.org/A055364) ([L43 program](A055364.asm)): Number of asymmetric mobiles (circular rooted trees) with n nodes and 3 leaves.
 * [A055389](http://oeis.org/A055389) ([L10 program](A055389.asm)): a(0) = 1, then twice the Fibonacci sequence.
 * [A055400](http://oeis.org/A055400) ([L07 program](A055400.asm)): Cube excess: difference between n and largest cube <= n.
@@ -4821,7 +4825,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070483](http://oeis.org/A070483) ([L27 program](A070483.asm)): a(n) = n^3 mod 21.
 * [A070484](http://oeis.org/A070484) ([L28 program](A070484.asm)): a(n) = n^3 mod 22.
 * [A070485](http://oeis.org/A070485) ([L29 program](A070485.asm)): a(n) = n^3 mod 23.
-* [A070486](http://oeis.org/A070486) ([L05 program](A070486.asm)): a(n) = n^3 mod 24 (or equivalently, n^5 mod 24).
+* [A070486](http://oeis.org/A070486) ([L03 program](A070486.asm)): a(n) = n^3 mod 24 (or equivalently, n^5 mod 24).
 * [A070487](http://oeis.org/A070487) ([L27 program](A070487.asm)): a(n) = n^3 mod 25.
 * [A070488](http://oeis.org/A070488) ([L32 program](A070488.asm)): a(n) = n^3 mod 26.
 * [A070489](http://oeis.org/A070489) ([L13 program](A070489.asm)): a(n) = n^3 mod 27.
