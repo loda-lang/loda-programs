@@ -1,0 +1,131 @@
+; A207166: Number of n X 5 0..1 arrays avoiding 0 0 0 and 1 0 1 horizontally and 0 0 1 and 1 0 1 vertically.
+; 13,169,624,1612,3445,6513,11284,18304,28197,41665,59488,82524,111709,148057,192660,246688,311389,388089,478192,583180,704613,844129,1003444,1184352,1388725,1618513,1875744,2162524,2481037,2833545,3222388,3649984
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $13,$0
+    mov $15,$0
+    add $15,1
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      sub $0,$15
+      mov $10,$0
+      mov $12,$0
+      add $12,1
+      lpb $12,1
+        clr $0,10
+        sub $12,1
+        mov $0,$10
+        sub $0,$12
+        mov $8,8
+        mov $3,$8
+        mov $4,$0
+        mov $6,7
+        mul $0,$8
+        pow $4,2
+        mov $7,$3
+        mov $7,$3
+        cmp $7,1
+        sub $7,7
+        div $6,2
+        sub $4,3
+        mov $5,4
+        sub $3,$0
+        add $6,$0
+        fac $3
+        add $4,$7
+        mov $1,7
+        mov $1,6
+        div $6,5
+        lpb $4,6
+          mul $0,$3
+          mod $5,$1
+          div $1,4
+          div $7,3
+          div $6,4
+          mov $8,2
+          mov $0,$1
+          div $1,$3
+          add $7,$5
+          cmp $1,$3
+          mov $4,0
+          mul $4,$0
+          add $0,4
+          div $6,8
+          fac $5
+          mov $2,3
+          mov $7,$7
+          gcd $5,5
+          div $1,2
+          fac $0
+          add $4,$8
+          sub $6,$2
+          fac $1
+          sub $5,$3
+          add $3,3
+          mov $0,8
+          mov $7,2
+          mov $6,$5
+        lpe
+        mov $8,8
+        gcd $4,$0
+        add $8,$2
+        div $8,7
+        add $7,6
+        sub $8,$6
+        pow $3,2
+        pow $7,2
+        add $2,$4
+        mul $2,2
+        add $2,8
+        mod $4,8
+        add $6,8
+        mov $1,$7
+        div $7,$3
+        add $7,7
+        add $7,$7
+        mov $4,3
+        sub $0,7
+        mul $6,2
+        cmp $3,2
+        add $8,6
+        mul $8,$6
+        mod $5,6
+        mul $8,$2
+        pow $8,3
+        add $8,1
+        add $4,5
+        mul $0,5
+        mov $1,$2
+        sub $1,8
+        div $1,2
+        mul $1,13
+        add $1,13
+        add $11,$1
+      lpe
+      mov $1,$11
+      add $14,$1
+    lpe
+    mov $1,$14
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20

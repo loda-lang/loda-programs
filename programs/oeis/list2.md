@@ -1300,7 +1300,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248917](http://oeis.org/A248917) ([L08 program](A248917.asm)): a(n) = 2^n * n^2 + 1.
 * [A248928](http://oeis.org/A248928) ([L21 program](A248928.asm)): Interleave (2*n+2)^2 with (2*n+3)^2, both listed n+1 times.
 * [A248974](http://oeis.org/A248974) ([L06 program](A248974.asm)): Floor( 1/(n*sinh(1/n) + n*sin(1/n) - 2) ).
-* [A249013](http://oeis.org/A249013) ([L07 program](A249013.asm)): a(n) = floor( (n-1) * (n+4) / 10 ).
+* [A249013](http://oeis.org/A249013) ([L06 program](A249013.asm)): a(n) = floor( (n-1) * (n+4) / 10 ).
 * [A249020](http://oeis.org/A249020) ([L07 program](A249020.asm)): a(n) = floor( n * (n+5) / 10) + 1.
 * [A249076](http://oeis.org/A249076) ([L04 program](A249076.asm)): a(n) = (n*(n+1))^6.
 * [A249098](http://oeis.org/A249098) ([L08 program](A249098.asm)): Position of n^6 in the ordered union of {h^6, h >=1} and {3*k^6, k >=1}.
@@ -2505,6 +2505,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288134](http://oeis.org/A288134) ([L10 program](A288134.asm)): Positions of 1 in A288132; complement of A288133.
 * [A288156](http://oeis.org/A288156) ([L04 program](A288156.asm)): Two even followed by three odd integers: the pattern is (0+2k,0+2k,1+2k,1+2k,1+2k) for k>=0.
 * [A288205](http://oeis.org/A288205) ([L16 program](A288205.asm)): Positions of 1 in A288203; complement of A288204.
+* [A288206](http://oeis.org/A288206) ([L52 program](A288206.asm)): a(n) = 3*a(n-1) - a(n-2) - 3*a(n-3) + 2*a(n-4), where a(0) = 2, a(1) = 4, a(2) = 8, a(3) = 18.
 * [A288219](http://oeis.org/A288219) ([L16 program](A288219.asm)): a(n) = a(n-1) + a(n-2) for n >= 3, where a(0) = 2, a(1) = 4, a(2) = 7.
 * [A288309](http://oeis.org/A288309) ([L11 program](A288309.asm)): a(n) = 2*a(n-1) + 2*a(n-2) - 3*a(n-3), where a(0) = 2, a(1) = 4, a(2) = 8.
 * [A288327](http://oeis.org/A288327) ([L11 program](A288327.asm)): Decuple factorial, 10-factorial, n!10, n!!!!!!!!!!.
