@@ -27681,3 +27681,10 @@ A040960: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A236327: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A271675: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A272914: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A158369: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A033113: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A081251: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A001069: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A093907: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A213830: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T02.asm
+A177176: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T02.asm

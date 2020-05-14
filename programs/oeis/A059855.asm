@@ -1,4 +1,4 @@
-; A059855: Quotient cycle lengths in continued fraction expansion of Sqrt(n^2+4).
+; A059855: Quotient cycle lengths in continued fraction expansion of sqrt(n^2+4).
 ; 1,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2,5,2
 
 gcd $2,$0

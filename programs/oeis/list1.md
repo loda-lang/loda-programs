@@ -64,7 +64,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100233](http://oeis.org/A100233) ([L13 program](A100233.asm)): a(n) = Lucas(3*n) - 1.
 * [A100255](http://oeis.org/A100255) ([L08 program](A100255.asm)): Squares of pentagonal numbers: a(n) = (1/4)*n^2*(3*n-1)^2.
 * [A100256](http://oeis.org/A100256) ([L08 program](A100256.asm)): Squares of second pentagonal numbers: (1/4) n^2(3n+1)^2.
-* [A100284](http://oeis.org/A100284) ([L05 program](A100284.asm)): Expansion of (1-4x-x^2)/((1-x)(1-4x-5x^2)).
+* [A100284](http://oeis.org/A100284) ([L04 program](A100284.asm)): Expansion of (1-4x-x^2)/((1-x)(1-4x-5x^2)).
 * [A100285](http://oeis.org/A100285) ([L04 program](A100285.asm)): Expansion of (1+5x^2)/(1-x+x^2-x^3).
 * [A100286](http://oeis.org/A100286) ([L12 program](A100286.asm)): Expansion of (1+2x^2-2x^3+2x^4)/(1-x+x^2-x^3+x^4-x^5).
 * [A100287](http://oeis.org/A100287) ([L13 program](A100287.asm)): First occurrence of n in A100002; the least k such that A100002(k) = n.
@@ -818,7 +818,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118011](http://oeis.org/A118011) ([L09 program](A118011.asm)): Complement of the Connell sequence (A001614); a(n) = 4*n - A001614(n).
 * [A118015](http://oeis.org/A118015) ([L03 program](A118015.asm)): a(n) = floor(n^2/5).
 * [A118057](http://oeis.org/A118057) ([L07 program](A118057.asm)): 8*n^2-4*n-3.
-* [A118058](http://oeis.org/A118058) ([L07 program](A118058.asm)): a(n) = 49n^2 - 28n - 20.
+* [A118058](http://oeis.org/A118058) ([L06 program](A118058.asm)): a(n) = 49n^2 - 28n - 20.
 * [A118059](http://oeis.org/A118059) ([L14 program](A118059.asm)): 288*n^2 - 168*n - 119.
 * [A118061](http://oeis.org/A118061) ([L35 program](A118061.asm)): 9800*n^2-5740*n-4059
 * [A118070](http://oeis.org/A118070) ([L09 program](A118070.asm)): Numbers with exactly one even decimal digit.
@@ -2396,7 +2396,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154378](http://oeis.org/A154378) ([L03 program](A154378.asm)): a(n) = 250*n - 10.
 * [A154379](http://oeis.org/A154379) ([L03 program](A154379.asm)): a(n) = 250*n + 10.
 * [A154407](http://oeis.org/A154407) ([L18 program](A154407.asm)): a(n) = 5*2^(n-1) + 3*6^n/2.
-* [A154514](http://oeis.org/A154514) ([L32 program](A154514.asm)): a(n) = 648*n^2 - 72*n + 1.
+* [A154514](http://oeis.org/A154514) ([L11 program](A154514.asm)): a(n) = 648*n^2 - 72*n + 1.
 * [A154515](http://oeis.org/A154515) ([L11 program](A154515.asm)): a(n) = 648*n^2 + 72*n + 1.
 * [A154516](http://oeis.org/A154516) ([L09 program](A154516.asm)): a(n) = 9n^2 - n.
 * [A154517](http://oeis.org/A154517) ([L09 program](A154517.asm)): a(n) = 9*n^2 + n.
@@ -2755,7 +2755,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158365](http://oeis.org/A158365) ([L03 program](A158365.asm)): 529n - 1.
 * [A158367](http://oeis.org/A158367) ([L11 program](A158367.asm)): 529n^2 + 2n.
 * [A158368](http://oeis.org/A158368) ([L03 program](A158368.asm)): 529n + 1.
-* [A158369](http://oeis.org/A158369) ([L17 program](A158369.asm)): 576n^2 + 2n.
+* [A158369](http://oeis.org/A158369) ([L16 program](A158369.asm)): 576n^2 + 2n.
 * [A158370](http://oeis.org/A158370) ([L03 program](A158370.asm)): 576n + 1.
 * [A158371](http://oeis.org/A158371) ([L20 program](A158371.asm)): 576n^2 - 2n.
 * [A158372](http://oeis.org/A158372) ([L03 program](A158372.asm)): 576n - 1.
@@ -4205,7 +4205,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179903](http://oeis.org/A179903) ([L10 program](A179903.asm)): (1, 3, 5, 7, 9...) convolved with (1, 0, 3, 5, 7, 9,...)
 * [A179904](http://oeis.org/A179904) ([L08 program](A179904.asm)): a(n) = A056520(n)+1 for n>0, a(0)=1.
 * [A179905](http://oeis.org/A179905) ([L18 program](A179905.asm)): (1, 4, 7, 10, 13,...) convolved with (1, 0, 4, 7, 10, 13...); given A016777 = (1, 4, 7, 10, 13,...).
-* [A179986](http://oeis.org/A179986) ([L06 program](A179986.asm)): Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.
+* [A179986](http://oeis.org/A179986) ([L05 program](A179986.asm)): Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.
 * [A179991](http://oeis.org/A179991) ([L11 program](A179991.asm)): Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.
 * [A179995](http://oeis.org/A179995) ([L46 program](A179995.asm)): Generating function A(5,t)(1+t+t^2)/(1-t)^6, where A(5,t) is an Eulerian polynomial.
 * [A180004](http://oeis.org/A180004) ([L15 program](A180004.asm)): Nearest integer to n*(27/26)
@@ -4971,7 +4971,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195024](http://oeis.org/A195024) ([L07 program](A195024.asm)): a(n) = n*(14*n - 1).
 * [A195025](http://oeis.org/A195025) ([L07 program](A195025.asm)): a(n) = n*(14*n + 3).
 * [A195026](http://oeis.org/A195026) ([L05 program](A195026.asm)): a(n) = 7*n*(2*n + 1).
-* [A195027](http://oeis.org/A195027) ([L08 program](A195027.asm)): a(n) = 2*n*(7*n + 5).
+* [A195027](http://oeis.org/A195027) ([L06 program](A195027.asm)): a(n) = 2*n*(7*n + 5).
 * [A195028](http://oeis.org/A195028) ([L07 program](A195028.asm)): a(n) = n*(14*n + 13).
 * [A195029](http://oeis.org/A195029) ([L09 program](A195029.asm)): a(n) = n*(14*n + 13) + 3.
 * [A195030](http://oeis.org/A195030) ([L25 program](A195030.asm)): a(n) = (n-2)*(14*n-39) for n > 2, otherwise a(n) = n.
@@ -5162,5 +5162,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199910](http://oeis.org/A199910) ([L06 program](A199910.asm)): Number of -n..n arrays x(0..2) of 3 elements with zero sum, and adjacent elements not equal modulo three (with -1 modulo 3 = 2).
 * [A199923](http://oeis.org/A199923) ([L10 program](A199923.asm)): Sum_{0<=k<=3^(n-1)} gcd(k,3^(n-1)) for n > 0 and a(0) = 1.
 * [A199944](http://oeis.org/A199944) ([L16 program](A199944.asm)): Number of -n..n arrays x(0..2) of 3 elements with zeroth through 2nd differences all nonzero.
-* [A199969](http://oeis.org/A199969) ([L04 program](A199969.asm)): a(n) = the greatest non-divisor h of n (1<h<n), or 0 if no such h exists.
+* [A199969](http://oeis.org/A199969) ([L03 program](A199969.asm)): a(n) = the greatest non-divisor h of n (1<h<n), or 0 if no such h exists.
 * [A199972](http://oeis.org/A199972) ([L13 program](A199972.asm)):  a(n) = the sum of GCQ_B(n, k) for 1 <= k <= n (see definition in comments).

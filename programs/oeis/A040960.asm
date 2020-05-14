@@ -1,103 +1,35 @@
 ; A040960: Continued fraction for sqrt(992).
 ; 31,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62,2,62
 
-mov $9,$0
-mov $11,2
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  add $0,$11
+mov $2,$0
+mov $6,2
+lpb $6,1
+  sub $6,1
+  mov $0,$2
+  add $0,$6
   sub $0,1
   mov $5,$0
   gcd $0,2
   add $0,$5
-  div $5,6
-  mov $4,$0
   mov $1,$0
-  mov $8,6
   div $0,$1
-  mul $5,2
-  mov $8,$1
   mov $7,6
-  pow $5,4
-  mul $7,$7
-  mul $5,$4
-  sub $8,$0
-  mov $2,$7
-  pow $0,2
-  mov $6,$8
-  pow $0,6
-  mov $4,$2
-  sub $4,$6
-  add $2,$2
+  pow $7,2
   sub $7,5
-  mod $6,8
-  mul $2,$7
-  mul $4,$1
-  mov $5,1
-  mov $8,$0
   sub $7,$0
   mov $3,1
-  mov $5,$3
   sub $1,$0
-  mod $6,$6
-  div $2,$2
-  div $7,$3
-  add $0,$1
-  mul $6,6
   mul $1,$7
-  mov $8,0
-  mul $3,$5
-  mul $4,2
-  mov $8,4
-  div $5,$0
-  mov $6,$2
-  sub $8,$6
-  add $8,8
-  fac $8
-  sub $2,3
-  mov $8,$8
-  add $2,7
   sub $1,$3
-  sub $8,3
-  div $5,$6
-  mod $6,$2
-  lpb $0,1
-    fac $6
-    mov $2,3
-    mov $5,0
-    mod $4,2
-    div $8,2
-    add $7,$0
-    gcd $0,$1
-    gcd $3,2
-    sub $0,1
-    pow $2,3
-    pow $3,$4
-    mod $0,3
-    add $4,$8
-  lpe
-  sub $3,$5
-  mul $0,3
-  pow $3,6
-  div $8,3
-  gcd $8,5
-  mov $3,$8
-  mov $8,6
-  add $3,5
-  div $3,6
-  add $8,5
-  mov $3,2
-  mov $12,$11
-  lpb $12,1
-    mov $10,$1
-    sub $12,1
+  mov $4,$6
+  lpb $4,1
+    mov $8,$1
+    sub $4,1
   lpe
 lpe
-lpb $9,1
-  sub $10,$1
-  mov $9,0
+lpb $2,1
+  sub $8,$1
+  mov $2,0
 lpe
-mov $1,$10
+mov $1,$8
 add $1,2
