@@ -1,21 +1,17 @@
 ; A170956: Expansion of Prod((1+x^(4*i-1)),i=1..m) for m = 3.
 ; 1,0,0,1,0,0,0,1,0,0,1,1,0,0,1,0,0,0,1,0,0,1
 
-add $0,6
-mov $1,2
-mov $2,4
-add $1,$0
-mov $3,$1
-add $2,$3
-gcd $1,2
-add $2,2
+mov $2,$0
 lpb $0,1
-  add $1,$2
-  sub $0,1
-  div $1,7
+  mov $0,4
+  add $2,8
+  mul $2,5
+  div $2,6
 lpe
-mul $1,2
-add $1,$2
-mul $1,2
-gcd $1,6
-div $1,4
+mov $1,$2
+fac $3
+mov $4,$3
+gcd $1,3
+fac $1
+mul $4,6
+div $1,$4

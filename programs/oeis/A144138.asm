@@ -3,14 +3,8 @@
 
 mul $0,2
 mov $1,$0
-mov $2,$0
-lpb $2,1
-  mov $3,$0
-  lpb $0,1
-    add $4,$3
-    sub $0,1
-  lpe
-  add $1,$4
-  sub $1,3
-  sub $2,1
-lpe
+mov $2,$1
+mov $3,$1
+mul $1,$3
+sub $1,2
+mul $1,$2
