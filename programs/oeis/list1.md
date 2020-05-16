@@ -136,7 +136,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101378](http://oeis.org/A101378) ([L05 program](A101378.asm)): a(n) = n^2*(n^3+1)/2.
 * [A101386](http://oeis.org/A101386) ([L11 program](A101386.asm)): Expansion of g.f.: (5 - 3*x)/(1 - 6*x + x^2).
 * [A101423](http://oeis.org/A101423) ([L27 program](A101423.asm)): Number of different cuboids with volume p^3 * q^n, where p,q are distinct prime numbers.
-* [A101424](http://oeis.org/A101424) ([L12 program](A101424.asm)): Number of different cuboids with volume p^4 * q^n, where p,q are distinct prime numbers.
+* [A101424](http://oeis.org/A101424) ([L09 program](A101424.asm)): Number of different cuboids with volume p^4 * q^n, where p,q are distinct prime numbers.
 * [A101425](http://oeis.org/A101425) ([L12 program](A101425.asm)): Number of different cuboids with volume p^5 X q^n, where p,q are distinct prime numbers.
 * [A101426](http://oeis.org/A101426) ([L22 program](A101426.asm)): Number of different cuboids with volume p^6 * q^n, where p,q are distinct prime numbers.
 * [A101432](http://oeis.org/A101432) ([L08 program](A101432.asm)): Each term is the number of letters in the Spanish name of the previous term.
@@ -252,7 +252,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A103969](http://oeis.org/A103969) ([L18 program](A103969.asm)): Positions n such that A005941(n) = A005940(n).
 * [A103991](http://oeis.org/A103991) ([L15 program](A103991.asm)): Reduced denominators of the hypercube line-picking integrand sqrt(Pi)*I(n,0).
 * [A104099](http://oeis.org/A104099) ([L21 program](A104099.asm)): n * (10n^2 - 6n + 1), or n*A087348(n).
-* [A104121](http://oeis.org/A104121) ([L10 program](A104121.asm)): a(n)=1 if there is a partition of n^3 into n primes such that n-1 are consecutive primes and the remaining prime is larger than the sum of the n-1 consecutive primes, otherwise a(0)=0 if no such partition exists.
+* [A104121](http://oeis.org/A104121) ([L09 program](A104121.asm)): a(n)=1 if there is a partition of n^3 into n primes such that n-1 are consecutive primes and the remaining prime is larger than the sum of the n-1 consecutive primes, otherwise a(0)=0 if no such partition exists.
 * [A104150](http://oeis.org/A104150) ([L06 program](A104150.asm)): Shifted factorial numbers: a(0)=0, a(n) = (n-1)!.
 * [A104158](http://oeis.org/A104158) ([L26 program](A104158.asm)): Numbers on a standard, London, or clock dartboard read in a counterclockwise direction.
 * [A104159](http://oeis.org/A104159) ([L27 program](A104159.asm)): Numbers on a Manchester or Log-End dartboard, as read in a standard, clockwise direction.
@@ -956,6 +956,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122709](http://oeis.org/A122709) ([L04 program](A122709.asm)): a(0)=1; thereafter a(n) = 9*n-3.
 * [A122756](http://oeis.org/A122756) ([L13 program](A122756.asm)): Odd-indexed terms, a(n) = 2^n. Even-indexed terms, a(n) = floor(2^n+2^(n-1)).
 * [A122793](http://oeis.org/A122793) ([L12 program](A122793.asm)): Connell sum sequence (partial sums of the Connell sequence).
+* [A122796](http://oeis.org/A122796) ([L37 program](A122796.asm)): Connell (3,5)-sum sequence (partial sums of the (3,5)-Connell sequence)
 * [A122797](http://oeis.org/A122797) ([L08 program](A122797.asm)): A P_3-stuttered arithmetic progression with a(n+1)=a(n) if n is a triangular number, a(n+1)=a(n)+1 otherwise.
 * [A122798](http://oeis.org/A122798) ([L17 program](A122798.asm)): A P_5-stuttered arithmetic progression with a(n+1) = a(n) if n is a pentagonal number, a(n+1) = a(n)+4 otherwise.
 * [A122799](http://oeis.org/A122799) ([L09 program](A122799.asm)): A P_7-stuttered arithmetic progression with a(n+1)=a(n) if n is not a heptagonal number, a(n+1)=a(n)+2 otherwise.
@@ -2066,7 +2067,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144124](http://oeis.org/A144124) ([L43 program](A144124.asm)): P_4(2n+1), the Legendre polynomial of order 4 at 2n+1.
 * [A144129](http://oeis.org/A144129) ([L09 program](A144129.asm)): ChebyshevT(3, n).
 * [A144130](http://oeis.org/A144130) ([L08 program](A144130.asm)): a(n) = ChebyshevT(4, n).
-* [A144138](http://oeis.org/A144138) ([L13 program](A144138.asm)): Chebyshev polynomial of the second kind U(3,n).
+* [A144138](http://oeis.org/A144138) ([L07 program](A144138.asm)): Chebyshev polynomial of the second kind U(3,n).
 * [A144139](http://oeis.org/A144139) ([L12 program](A144139.asm)): Chebyshev polynomial of the second kind U(4,n).
 * [A144193](http://oeis.org/A144193) ([L07 program](A144193.asm)): Square array (5 X 5) read by rows.
 * [A144194](http://oeis.org/A144194) ([L11 program](A144194.asm)): Square array (6 X 6) read by rows.
@@ -3778,7 +3779,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A170938](http://oeis.org/A170938) ([L10 program](A170938.asm)): 4^n+2^n+2.
 * [A170939](http://oeis.org/A170939) ([L09 program](A170939.asm)): 4^n-2^n+2.
 * [A170940](http://oeis.org/A170940) ([L09 program](A170940.asm)): 4^n-2^n-2.
-* [A170956](http://oeis.org/A170956) ([L18 program](A170956.asm)): Expansion of Prod((1+x^(4*i-1)),i=1..m) for m = 3.
+* [A170956](http://oeis.org/A170956) ([L14 program](A170956.asm)): Expansion of Prod((1+x^(4*i-1)),i=1..m) for m = 3.
 * [A171088](http://oeis.org/A171088) ([L09 program](A171088.asm)): To find 3 consecutive integers in the sequence, you have to take 4 consecutive terms, no more and no less.
 * [A171141](http://oeis.org/A171141) ([L13 program](A171141.asm)): Numbers that are congruent to {6,33} mod 41.
 * [A171152](http://oeis.org/A171152) ([L19 program](A171152.asm)): Partial sums of A118011.

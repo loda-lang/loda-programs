@@ -1,0 +1,107 @@
+; A025704: Index of 4^n within sequence of numbers of form 4^i*7^j.
+; 1,2,4,7,10,14,19,24,30,37,45,53,62,72,82,93,105,118,131,145,160,175,191,208,226,244,263,283,303,324,346,369,392,416,441,466,492,519,547,575,604,634,664,695,727,760,793,827,862,897,933,970,1008,1046,1085,1125,1165
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $7,$0
+    sub $7,$0
+    sub $7,$7
+    mov $5,1
+    mov $8,6
+    add $7,1
+    mov $1,$8
+    div $8,2
+    mov $4,2
+    mov $2,$0
+    lpb $2,1
+      mov $6,$0
+      pow $4,2
+      mod $6,5
+      lpb $4,1
+        mov $3,$4
+        sub $5,2
+        mod $3,6
+        sub $4,$8
+        div $4,2
+        mul $4,$2
+        add $0,3
+      lpe
+      div $6,2
+      sub $6,8
+      add $7,$2
+      mul $0,$4
+      mov $6,$1
+      mul $7,$5
+      sub $5,7
+      lpb $5,1
+        sub $5,$8
+        mod $7,5
+        sub $1,$6
+        mul $8,$7
+        mov $0,1
+        mul $7,6
+        cmp $5,2
+        div $6,2
+      lpe
+      div $3,3
+      mod $0,6
+      mov $7,4
+      lpb $6,1
+        mul $4,4
+        mov $4,$0
+        mod $2,7
+        mul $6,$8
+        sub $6,$2
+        mul $4,$6
+        mov $4,8
+        sub $6,$8
+        add $0,4
+        div $7,2
+        sub $2,1
+        div $7,$1
+        div $3,8
+        add $5,$6
+        add $0,5
+        add $3,$0
+        mul $8,2
+        mul $0,2
+        mod $7,$4
+        mov $0,3
+        mov $0,0
+      lpe
+      mov $3,2
+      mul $1,7
+      add $3,$8
+      add $8,2
+      add $0,$7
+      pow $0,$7
+      sub $1,$0
+      div $0,2
+      sub $2,1
+      cmp $3,5
+      fac $1
+    lpe
+    add $0,$4
+    add $6,$2
+    sub $1,1
+    div $1,5
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13

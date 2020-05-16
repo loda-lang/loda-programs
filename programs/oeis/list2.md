@@ -449,7 +449,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213823](http://oeis.org/A213823) ([L20 program](A213823.asm)): Principal diagonal of the convolution array A213822.
 * [A213824](http://oeis.org/A213824) ([L29 program](A213824.asm)): Antidiagonal sums of the convolution array A213822.
 * [A213826](http://oeis.org/A213826) ([L13 program](A213826.asm)): Principal diagonal of the convolution array A213825.
-* [A213827](http://oeis.org/A213827) ([L15 program](A213827.asm)): Antidiagonal sums of the convolution array A213825.
 * [A213829](http://oeis.org/A213829) ([L07 program](A213829.asm)): Principal diagonal of the convolution array A213828.
 * [A213830](http://oeis.org/A213830) ([L30 program](A213830.asm)): Antidiagonal sums of the convolution array A213828.
 * [A213832](http://oeis.org/A213832) ([L19 program](A213832.asm)): Principal diagonal of the convolution array A213831.
@@ -1835,7 +1834,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267530](http://oeis.org/A267530) ([L07 program](A267530.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 141" elementary cellular automaton starting with a single ON (black) cell.
 * [A267531](http://oeis.org/A267531) ([L06 program](A267531.asm)): Total number of OFF (white) cells after n iterations of the "Rule 141" elementary cellular automaton starting with a single ON (black) cell.
 * [A267536](http://oeis.org/A267536) ([L17 program](A267536.asm)): Decimal representation of the n-th iteration of the "Rule 143" elementary cellular automaton starting with a single ON (black) cell.
-* [A267537](http://oeis.org/A267537) ([L04 program](A267537.asm)): Middle column of the "Rule 143" elementary cellular automaton starting with a single ON (black) cell.
+* [A267537](http://oeis.org/A267537) ([L03 program](A267537.asm)): Middle column of the "Rule 143" elementary cellular automaton starting with a single ON (black) cell.
 * [A267539](http://oeis.org/A267539) ([L16 program](A267539.asm)): Decimal representation of the middle column of the "Rule 143" elementary cellular automaton starting with a single ON (black) cell.
 * [A267541](http://oeis.org/A267541) ([L25 program](A267541.asm)): Expansion of (2 + 4*x + x^2 + x^3 + 2*x^4 + x^5)/(1 - x - x^5 + x^6).
 * [A267587](http://oeis.org/A267587) ([L08 program](A267587.asm)): Middle column of the "Rule 169" elementary cellular automaton starting with a single ON (black) cell.

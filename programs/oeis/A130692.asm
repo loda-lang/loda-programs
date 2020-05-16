@@ -1,0 +1,112 @@
+; A130692: a(n) is the smallest number m such that the sum of the digits of n+m is n.
+; 0,0,0,0,0,0,0,0,0,9,18,27,36,45,54,63,72,81,180,279,378,477,576,675,774,873,972,1971,2970,3969,4968,5967,6966,7965,8964,9963,19962,29961,39960,49959,59958,69957,79956,89955,99954,199953,299952,399951
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $9,9
+  div $0,$9
+  mov $5,8
+  mod $9,5
+  mov $10,4
+  mov $1,4
+  mov $4,0
+  mov $7,6
+  mov $6,$10
+  mov $4,4
+  mov $8,1
+  mov $4,$9
+  mov $4,$0
+  pow $9,10
+  div $8,$1
+  mov $6,1
+  pow $0,$6
+  mov $3,0
+  mul $1,$6
+  gcd $4,2
+  fac $8
+  mul $3,$3
+  mov $4,9
+  add $4,$1
+  sub $10,5
+  add $1,6
+  mod $5,$8
+  mov $6,4
+  div $10,8
+  mov $7,$0
+  pow $8,$0
+  sub $5,5
+  pow $0,$5
+  mul $3,$6
+  fac $3
+  pow $1,$7
+  mov $2,$4
+  sub $7,1
+  mul $3,2
+  mov $7,2
+  pow $3,10
+  add $7,$9
+  sub $3,$4
+  sub $1,$8
+  mov $3,7
+  mul $0,$3
+  add $6,2
+  mul $5,$1
+  add $7,$4
+  sub $10,9
+  lpb $0,1
+    gcd $1,10
+    mul $10,9
+    mov $4,10
+    mul $6,2
+    add $1,2
+    gcd $2,4
+    fac $0
+    div $3,4
+    cmp $1,7
+    mod $1,7
+    div $7,$0
+    div $10,9
+    mov $10,$6
+    div $0,$3
+    div $5,5
+    mul $5,4
+    mov $4,$1
+    sub $7,$9
+    sub $5,6
+    sub $9,$2
+    mov $9,10
+    mul $1,4
+    mod $1,$8
+    mov $9,10
+    add $5,$7
+    sub $8,8
+    cmp $3,$9
+    mul $7,$5
+    sub $3,7
+    pow $0,4
+    sub $0,1
+    add $10,6
+    add $9,10
+    sub $5,8
+    sub $10,1
+    div $8,6
+    sub $4,1
+    pow $6,$1
+    sub $0,2
+    mul $6,2
+    mov $6,4
+    add $7,$0
+    mul $7,8
+    pow $1,$7
+  lpe
+  mov $10,$4
+  fac $4
+  add $12,$1
+lpe
+mov $1,$12
