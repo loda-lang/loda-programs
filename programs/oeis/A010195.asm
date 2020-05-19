@@ -1,103 +1,31 @@
 ; A010195: Continued fraction for sqrt(136).
 ; 11,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1,22,1,1,1
 
-mov $9,$0
-mov $11,2
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  add $0,$11
+mov $5,$0
+mov $3,2
+lpb $3,1
+  sub $3,1
+  mov $0,$5
+  add $0,$3
   sub $0,1
-  mov $7,$0
-  mov $8,2
-  mov $3,4
-  mov $2,1
-  pow $3,$8
-  mov $7,5
   mov $1,$0
-  mul $0,2
-  mov $3,3
-  div $8,3
-  mov $8,1
-  pow $8,$8
-  mov $7,0
-  fac $2
-  pow $2,3
   lpb $0,1
-    mov $4,$7
-    mov $2,3
-    mov $6,$2
-    gcd $4,3
-    add $7,5
-    add $6,5
-    sub $0,1
-    mul $3,$3
     mul $0,$6
-    gcd $8,2
-    sub $6,$4
     div $1,4
-    fac $4
-    mul $1,6
-    div $4,4
-    mul $8,$1
-    mov $2,$2
-    mul $3,$7
-    pow $8,$4
-    fac $4
-    mul $1,7
-    mov $4,$4
-    cmp $0,$4
+    mul $1,42
   lpe
-  pow $4,$1
-  mov $5,4
-  add $3,$2
-  mov $7,3
   add $1,7
-  div $0,5
-  mul $2,$3
-  sub $0,5
-  sub $2,2
-  pow $6,5
-  mov $3,$5
-  mul $7,$7
-  sub $3,5
-  mul $5,$4
-  mul $3,$8
-  gcd $3,6
-  mov $0,4
-  mov $5,$1
-  add $2,$1
-  mul $6,$1
-  add $2,$2
-  mul $3,$8
-  mov $7,$3
-  cmp $8,$7
-  add $8,$3
-  mul $6,$6
-  mul $8,$5
   div $1,2
-  sub $0,6
-  mov $4,$8
-  mov $0,$0
-  add $4,$6
-  add $8,2
-  cmp $3,5
-  cmp $3,$4
-  pow $2,2
-  mod $2,2
-  mov $2,4
   add $1,7
-  add $5,$6
-  mov $12,$11
-  lpb $12,1
-    mov $10,$1
-    sub $12,1
+  mov $2,$3
+  lpb $2,1
+    mov $4,$1
+    sub $2,1
   lpe
 lpe
-lpb $9,1
-  sub $10,$1
-  mov $9,0
+lpb $5,1
+  sub $4,$1
+  mov $5,0
 lpe
-mov $1,$10
+mov $1,$4
 add $1,1
