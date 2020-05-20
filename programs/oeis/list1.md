@@ -414,7 +414,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108300](http://oeis.org/A108300) ([L10 program](A108300.asm)): a(n+2) = 3*a(n+1) + a(n), a(0) = 1, a(1) = 5.
 * [A108306](http://oeis.org/A108306) ([L11 program](A108306.asm)): Expansion of (3*x+1)/(1-3*x-3*x^2).
 * [A108356](http://oeis.org/A108356) ([L05 program](A108356.asm)): Count, repeating multiples of 3 four times, all other numbers twice.
-* [A108357](http://oeis.org/A108357) ([L07 program](A108357.asm)): Expansion of (1+x^2+x^4)/(1-x^8).
+* [A108357](http://oeis.org/A108357) ([L06 program](A108357.asm)): Expansion of (1+x^2+x^4)/(1-x^8).
 * [A108411](http://oeis.org/A108411) ([L03 program](A108411.asm)): a(n) = 3^floor(n/2). Powers of 3 repeated.
 * [A108495](http://oeis.org/A108495) ([L04 program](A108495.asm)): a(n) = (n^7 - n)/6.
 * [A108578](http://oeis.org/A108578) ([L19 program](A108578.asm)): Number of 3 X 3 magic squares with magic sum 3n.
@@ -930,6 +930,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122124](http://oeis.org/A122124) ([L13 program](A122124.asm)): Numbers n such that 25 divides Sum[ Prime[k]^n, {k,1,n}].
 * [A122197](http://oeis.org/A122197) ([L14 program](A122197.asm)): Fractal sequence: count up to successive integers twice.
 * [A122219](http://oeis.org/A122219) ([L16 program](A122219.asm)): Period 9: repeat 5, 4, 5, 4, 3, 4, 5, 4, 5.
+* [A122250](http://oeis.org/A122250) ([L14 program](A122250.asm)): Partial sums of A004128.
 * [A122367](http://oeis.org/A122367) ([L06 program](A122367.asm)): Dimension of 3-variable non-commutative harmonics (twisted derivative). The dimension of the space of non-commutative polynomials in 3 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( xi w ) = w and d_{xi} ( xj w ) = 0 for i != j).
 * [A122391](http://oeis.org/A122391) ([L08 program](A122391.asm)): Dimension of 2-variable non-commutative harmonics (Hausdorff derivative). The dimension of the space of non-commutative polynomials in 2 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( w ) = sum over all subwords of w deleting xi once).
 * [A122461](http://oeis.org/A122461) ([L03 program](A122461.asm)): Repetitions of even numbers four times.
@@ -1848,7 +1849,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139570](http://oeis.org/A139570) ([L04 program](A139570.asm)): 2n(n+3).
 * [A139576](http://oeis.org/A139576) ([L05 program](A139576.asm)): a(n) = n(2n+9).
 * [A139577](http://oeis.org/A139577) ([L06 program](A139577.asm)): a(n) = n*(2*n + 11).
-* [A139578](http://oeis.org/A139578) ([L06 program](A139578.asm)): a(n) = n(2n+13).
+* [A139578](http://oeis.org/A139578) ([L05 program](A139578.asm)): a(n) = n(2n+13).
 * [A139579](http://oeis.org/A139579) ([L05 program](A139579.asm)): a(n) = 2*n^2 + 15*n.
 * [A139580](http://oeis.org/A139580) ([L06 program](A139580.asm)): a(n) = n(2n+17).
 * [A139581](http://oeis.org/A139581) ([L06 program](A139581.asm)): a(n) = n*(2*n + 19).
@@ -4034,6 +4035,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175822](http://oeis.org/A175822) ([L17 program](A175822.asm)): Partial sums of ceiling(n^2/7).
 * [A175826](http://oeis.org/A175826) ([L14 program](A175826.asm)): Partial sums of ceiling(n^2/8).
 * [A175827](http://oeis.org/A175827) ([L16 program](A175827.asm)): Partial sums of ceiling(n^2/10).
+* [A175828](http://oeis.org/A175828) ([L38 program](A175828.asm)): a(n) = (n*(6*n+1)+(n+2)*(-1)^n)/2.
 * [A175831](http://oeis.org/A175831) ([L17 program](A175831.asm)): Partial sums of ceiling(n^2/12).
 * [A175833](http://oeis.org/A175833) ([L05 program](A175833.asm)): Periodic sequence: repeat 4,7,11.
 * [A175842](http://oeis.org/A175842) ([L22 program](A175842.asm)): Partial sums of ceiling(n^2/14).
@@ -4268,7 +4270,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180857](http://oeis.org/A180857) ([L16 program](A180857.asm)): Wiener index of the Moebius ladder M(n).
 * [A180861](http://oeis.org/A180861) ([L27 program](A180861.asm)): Wiener index of the n-pan graph.
 * [A180863](http://oeis.org/A180863) ([L08 program](A180863.asm)): Wiener index of the n-sun graph.
-* [A180919](http://oeis.org/A180919) ([L11 program](A180919.asm)): a(n) = n^2 + 731*n + 1.
+* [A180919](http://oeis.org/A180919) ([L10 program](A180919.asm)): a(n) = n^2 + 731*n + 1.
 * [A180964](http://oeis.org/A180964) ([L10 program](A180964.asm)): a(0)=1; for n>0, a(n)=1+3*A117571(n-1).
 * [A181120](http://oeis.org/A181120) ([L15 program](A181120.asm)): Partial sums of round(n^2/12) (A069905).
 * [A181133](http://oeis.org/A181133) ([L08 program](A181133.asm)): a(n) = n + A003056(n).

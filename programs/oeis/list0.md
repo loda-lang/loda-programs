@@ -2399,7 +2399,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033337](http://oeis.org/A033337) ([L04 program](A033337.asm)): [ 17/n ].
 * [A033338](http://oeis.org/A033338) ([L04 program](A033338.asm)): [ 18/n ].
 * [A033339](http://oeis.org/A033339) ([L15 program](A033339.asm)): [ 19/n ].
-* [A033340](http://oeis.org/A033340) ([L05 program](A033340.asm)): [ 20/n ].
+* [A033340](http://oeis.org/A033340) ([L03 program](A033340.asm)): [ 20/n ].
 * [A033341](http://oeis.org/A033341) ([L04 program](A033341.asm)): [ 21/n ].
 * [A033342](http://oeis.org/A033342) ([L14 program](A033342.asm)): [ 22/n ].
 * [A033343](http://oeis.org/A033343) ([L17 program](A033343.asm)): [ 23/n ].
@@ -3678,7 +3678,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A050683](http://oeis.org/A050683) ([L05 program](A050683.asm)): Number of nonzero palindromes of length n.
 * [A050914](http://oeis.org/A050914) ([L07 program](A050914.asm)): a(n) = n*3^n + 1.
 * [A050915](http://oeis.org/A050915) ([L05 program](A050915.asm)): a(n) = n*4^n + 1.
-* [A050916](http://oeis.org/A050916) ([L08 program](A050916.asm)): a(n) = n*5^n + 1.
+* [A050916](http://oeis.org/A050916) ([L07 program](A050916.asm)): a(n) = n*5^n + 1.
 * [A050917](http://oeis.org/A050917) ([L04 program](A050917.asm)): a(n) = n*6^n + 1.
 * [A051032](http://oeis.org/A051032) ([L06 program](A051032.asm)): Summatory Rudin-Shapiro sequence for 2^(n-1).
 * [A051039](http://oeis.org/A051039) ([L11 program](A051039.asm)): 4-Stohr sequence.
@@ -4868,7 +4868,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070514](http://oeis.org/A070514) ([L03 program](A070514.asm)): Final digit of n^4: n^4 mod 10.
 * [A070515](http://oeis.org/A070515) ([L03 program](A070515.asm)): a(n) = n^4 mod 11.
 * [A070516](http://oeis.org/A070516) ([L03 program](A070516.asm)): Duplicate of A070435.
-* [A070517](http://oeis.org/A070517) ([L19 program](A070517.asm)): a(n) = n^4 mod 13.
+* [A070517](http://oeis.org/A070517) ([L03 program](A070517.asm)): a(n) = n^4 mod 13.
 * [A070532](http://oeis.org/A070532) ([L20 program](A070532.asm)): a(n) = n^4 mod 14.
 * [A070533](http://oeis.org/A070533) ([L21 program](A070533.asm)): n^4 mod 15.
 * [A070534](http://oeis.org/A070534) ([L23 program](A070534.asm)): a(n) = n^4 mod 17.
@@ -5435,7 +5435,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081223](http://oeis.org/A081223) ([L24 program](A081223.asm)): Smallest k such that floor(k*gamma) begins with n (gamma=0.5772156649...).
 * [A081245](http://oeis.org/A081245) ([L26 program](A081245.asm)): Number of days in months in the Haab year of Mayan/mesoamerican calendars.
 * [A081250](http://oeis.org/A081250) ([L05 program](A081250.asm)): Numbers k such that A081249(m)/m^2 has a local minimum for m = k.
-* [A081251](http://oeis.org/A081251) ([L08 program](A081251.asm)): Numbers n such that A081249(m)/m^2 has a local maximum for m = n.
+* [A081251](http://oeis.org/A081251) ([L04 program](A081251.asm)): Numbers n such that A081249(m)/m^2 has a local maximum for m = n.
 * [A081253](http://oeis.org/A081253) ([L05 program](A081253.asm)): Numbers n such that A081252(m)/m^2 has a local minimum for m = n.
 * [A081254](http://oeis.org/A081254) ([L14 program](A081254.asm)): Numbers k such that A081252(m)/m^2 has a local maximum for m = k.
 * [A081266](http://oeis.org/A081266) ([L06 program](A081266.asm)): Staggered diagonal of triangular spiral in A051682.

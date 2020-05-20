@@ -415,6 +415,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213367](http://oeis.org/A213367) ([L19 program](A213367.asm)): Numbers that are not squares of primes.
 * [A213387](http://oeis.org/A213387) ([L07 program](A213387.asm)): a(n) = 5*2^(n-1)-2-3*n.
 * [A213389](http://oeis.org/A213389) ([L06 program](A213389.asm)): Number of (w,x,y) with all terms in {0,...,n} and max(w,x,y) < 2*min(w,x,y).
+* [A213390](http://oeis.org/A213390) ([L11 program](A213390.asm)): Number of (w,x,y) with all terms in {0,...,n} and max(w,x,y) >= 2*min(w,x,y).
 * [A213393](http://oeis.org/A213393) ([L32 program](A213393.asm)): Number of (w,x,y) with all terms in {0,...,n} and 2*max(w,x,y) > 3*min(w,x,y).
 * [A213396](http://oeis.org/A213396) ([L06 program](A213396.asm)): Number of (w,x,y) with all terms in {0,...,n} and 2*w < |x+y-w|.
 * [A213397](http://oeis.org/A213397) ([L18 program](A213397.asm)): Number of (w,x,y) with all terms in {0,...,n} and 2*w >= |x+y-z|.
@@ -793,7 +794,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227712](http://oeis.org/A227712) ([L09 program](A227712.asm)): a(n) = 9*2^n - 3*n - 5.
 * [A227719](http://oeis.org/A227719) ([L12 program](A227719.asm)): Floor(1/s(n)), where s(n) = n*log(1+1/n) - (2n-1)/(2n).
 * [A227720](http://oeis.org/A227720) ([L13 program](A227720.asm)): Round(1/s(n)), where s(n) = n*log(1+1/n) - (2n-1)/(2n).
-* [A227721](http://oeis.org/A227721) ([L08 program](A227721.asm)): Floor(1/s(n)), where s(n) = (2n+1)/(2n+2) - n*log((n+1)/n).
+* [A227721](http://oeis.org/A227721) ([L06 program](A227721.asm)): Floor(1/s(n)), where s(n) = (2n+1)/(2n+2) - n*log((n+1)/n).
 * [A227776](http://oeis.org/A227776) ([L05 program](A227776.asm)): a(n) = 6*n^2 + 1.
 * [A227786](http://oeis.org/A227786) ([L08 program](A227786.asm)): Take squares larger than 1, subtract 3 from even squares and 2 from odd squares; a(n) = a(n-1) + A168276(n+1) (with a(1) = 1).
 * [A227804](http://oeis.org/A227804) ([L25 program](A227804.asm)): a(1) = greatest k such that H(k) - H(8) < H(8) - H(4); a(2) = greatest k such that H(k) - H(a(1)) < H(a(1)) - H(8), and for n > 2, a(n) = greatest k such that H(k) - H(a(n-1) > H(a(n-1)) - H(a(n-2)), where H = harmonic number.
@@ -909,7 +910,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231475](http://oeis.org/A231475) ([L12 program](A231475.asm)): Largest integer less than 5 and coprime to n.
 * [A231559](http://oeis.org/A231559) ([L13 program](A231559.asm)): a(n) = floor( A000326(n)/2 ).
 * [A231560](http://oeis.org/A231560) ([L08 program](A231560.asm)): Floor(sum_{i=2..n} 1/(i*log(i))).
-* [A231643](http://oeis.org/A231643) ([L05 program](A231643.asm)): 5*2^n + 5.
+* [A231643](http://oeis.org/A231643) ([L04 program](A231643.asm)): 5*2^n + 5.
 * [A231896](http://oeis.org/A231896) ([L07 program](A231896.asm)): a(n) = 4*a(n-1) - a(n-2) with a(0) = 0, a(1) = 4.
 * [A232495](http://oeis.org/A232495) ([L15 program](A232495.asm)): 9*n^3/2 - 21*n^2/2 + 8*n - 4.
 * [A232582](http://oeis.org/A232582) ([L09 program](A232582.asm)): Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal.
@@ -1218,6 +1219,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246075](http://oeis.org/A246075) ([L15 program](A246075.asm)): Paradigm shift sequence for a (-3,5) production scheme with replacement.
 * [A246104](http://oeis.org/A246104) ([L12 program](A246104.asm)): Least m > 0 for which (s(m), ..., s(n+m-1) = (s(0), ..., s(n)), the first n+1 terms of the infinite Fibonacci word A003849.
 * [A246139](http://oeis.org/A246139) ([L03 program](A246139.asm)): 2^n + 10.
+* [A246142](http://oeis.org/A246142) ([L13 program](A246142.asm)): Limiting block extension of A004539 (base 2 representation of sqrt(2)) with first term as initial block.
 * [A246172](http://oeis.org/A246172) ([L06 program](A246172.asm)): a(n) = (n^2+9*n-8)/2.
 * [A246360](http://oeis.org/A246360) ([L12 program](A246360.asm)): a(1) = 1, then A007051 ((3^n)+1)/2 interleaved with A057198 (5*3^(n-1)+1)/2.
 * [A246435](http://oeis.org/A246435) ([L09 program](A246435.asm)): Length of representation of n in fractional base 3/2.
