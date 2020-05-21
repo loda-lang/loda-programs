@@ -416,6 +416,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108356](http://oeis.org/A108356) ([L05 program](A108356.asm)): Count, repeating multiples of 3 four times, all other numbers twice.
 * [A108357](http://oeis.org/A108357) ([L06 program](A108357.asm)): Expansion of (1+x^2+x^4)/(1-x^8).
 * [A108411](http://oeis.org/A108411) ([L03 program](A108411.asm)): a(n) = 3^floor(n/2). Powers of 3 repeated.
+* [A108474](http://oeis.org/A108474) ([L14 program](A108474.asm)): Expansion of 1/(1-2x)(1+4x^2)).
 * [A108495](http://oeis.org/A108495) ([L04 program](A108495.asm)): a(n) = (n^7 - n)/6.
 * [A108578](http://oeis.org/A108578) ([L19 program](A108578.asm)): Number of 3 X 3 magic squares with magic sum 3n.
 * [A108579](http://oeis.org/A108579) ([L13 program](A108579.asm)): Number of symmetry classes of 3 X 3 magic squares (with distinct positive entries) having magic sum 3n.
@@ -447,7 +448,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109014](http://oeis.org/A109014) ([L02 program](A109014.asm)): a(n) = gcd(n,11).
 * [A109015](http://oeis.org/A109015) ([L02 program](A109015.asm)): a(n) = gcd(n,12).
 * [A109043](http://oeis.org/A109043) ([L04 program](A109043.asm)): a(n) = lcm(n,2).
-* [A109044](http://oeis.org/A109044) ([L05 program](A109044.asm)): a(n) = lcm(n,3).
+* [A109044](http://oeis.org/A109044) ([L04 program](A109044.asm)): a(n) = lcm(n,3).
 * [A109045](http://oeis.org/A109045) ([L04 program](A109045.asm)): a(n) = lcm(n,4).
 * [A109046](http://oeis.org/A109046) ([L04 program](A109046.asm)): a(n) = lcm(n, 5).
 * [A109047](http://oeis.org/A109047) ([L04 program](A109047.asm)): a(n) = lcm(n, 6).
@@ -752,7 +753,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A116921](http://oeis.org/A116921) ([L11 program](A116921.asm)): a(n) = largest integer <= n/2 which is coprime to n.
 * [A116922](http://oeis.org/A116922) ([L20 program](A116922.asm)): a(n) = smallest integer >= n/2 which is coprime to n.
 * [A116939](http://oeis.org/A116939) ([L08 program](A116939.asm)): Lexicographically earliest sequence such that each i occurs exactly i+1 times and succeeding terms differ exactly by -1 or +1.
-* [A116940](http://oeis.org/A116940) ([L07 program](A116940.asm)): Greatest m such that A116939(m) = n.
+* [A116940](http://oeis.org/A116940) ([L06 program](A116940.asm)): Greatest m such that A116939(m) = n.
 * [A116952](http://oeis.org/A116952) ([L05 program](A116952.asm)): a(n) = 3*a(n-1) + 5 with a(0) = 1.
 * [A116955](http://oeis.org/A116955) ([L18 program](A116955.asm)): a(n+1) = a(n) + (if a(n) is odd then (next odd square) else (next even square)), a(0) = 1.
 * [A116966](http://oeis.org/A116966) ([L08 program](A116966.asm)): a(n) = n + {1,2,0,1} according as n == {0,1,2,3} mod 4.
@@ -1083,6 +1084,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126696](http://oeis.org/A126696) ([L29 program](A126696.asm)): Tenth-squares: floor(n/10)*ceiling(n/10).
 * [A126811](http://oeis.org/A126811) ([L22 program](A126811.asm)): Duplicate of A098108.
 * [A126950](http://oeis.org/A126950) ([L18 program](A126950.asm)): a(1) = 1; for n>1, a(n) = the smallest number p > a(n-1) such that (a(n-1)+p)/2 is a cube.
+* [A126951](http://oeis.org/A126951) ([L16 program](A126951.asm)): List of pairs: k followed by k^3.
 * [A126964](http://oeis.org/A126964) ([L05 program](A126964.asm)): a(n) = 2*n*(6*n-1).
 * [A126978](http://oeis.org/A126978) ([L03 program](A126978.asm)): a(n) = 104*n + 9977.
 * [A126979](http://oeis.org/A126979) ([L03 program](A126979.asm)): a(n) = 24*n + 233.
@@ -1830,7 +1832,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139267](http://oeis.org/A139267) ([L06 program](A139267.asm)): Twice octagonal numbers: 2*n*(3*n-2).
 * [A139268](http://oeis.org/A139268) ([L06 program](A139268.asm)): Twice nonagonal numbers (or twice 9-gonal numbers): a(n) = n(7n-5).
 * [A139271](http://oeis.org/A139271) ([L06 program](A139271.asm)): a(n) = 2*n*(4*n-3).
-* [A139272](http://oeis.org/A139272) ([L07 program](A139272.asm)): a(n) = n*(8*n-5).
+* [A139272](http://oeis.org/A139272) ([L06 program](A139272.asm)): a(n) = n*(8*n-5).
 * [A139273](http://oeis.org/A139273) ([L06 program](A139273.asm)): a(n) = n*(8*n - 3).
 * [A139274](http://oeis.org/A139274) ([L05 program](A139274.asm)): a(n) = n*(8*n-1).
 * [A139275](http://oeis.org/A139275) ([L05 program](A139275.asm)): a(n) = n*(8*n+1).
@@ -2956,6 +2958,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A159328](http://oeis.org/A159328) ([L09 program](A159328.asm)): Transform of 1 by the T_{1,1} transformation (see link)
 * [A159347](http://oeis.org/A159347) ([L14 program](A159347.asm)): Transform of the finite sequence (1, 0, -1) by the T_{0,0} transformation.
 * [A159469](http://oeis.org/A159469) ([L08 program](A159469.asm)): Maximum remainder when (k + 1)^n + (k - 1)^n is divided by k^2 for variable n and k > 2.
+* [A159481](http://oeis.org/A159481) ([L33 program](A159481.asm)): Number of evil numbers <= n, see A001969.
 * [A159551](http://oeis.org/A159551) ([L03 program](A159551.asm)): a(n) = 101*n + 10.
 * [A159612](http://oeis.org/A159612) ([L10 program](A159612.asm)): INVERT transform of (1, 3, 1, 3, 1,...).
 * [A159615](http://oeis.org/A159615) ([L16 program](A159615.asm)): The slowest increasing sequence beginning with a(1)=2 such that a(n) and n are both odious or both not odious.
@@ -4002,7 +4005,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174929](http://oeis.org/A174929) ([L27 program](A174929.asm)): Partial sums of A174928.
 * [A174984](http://oeis.org/A174984) ([L17 program](A174984.asm)): Start with n, iterate the map k -> A167507(k) until we reach 3; a(n) = number of steps required.
 * [A174989](http://oeis.org/A174989) ([L15 program](A174989.asm)): Partial sums of A003602.
-* [A174994](http://oeis.org/A174994) ([L09 program](A174994.asm)): Repeat (8*n+4)^2.
+* [A174994](http://oeis.org/A174994) ([L08 program](A174994.asm)): Repeat (8*n+4)^2.
 * [A175005](http://oeis.org/A175005) ([L12 program](A175005.asm)): Expansion of x/(1 - 4*x + 3*x^2 - 2*x^3).
 * [A175109](http://oeis.org/A175109) ([L15 program](A175109.asm)): a(n) = ((2*n+1)^3+(-1)^n)/2.
 * [A175110](http://oeis.org/A175110) ([L06 program](A175110.asm)): a(n) = ((2*n+1)^4+1)/2.

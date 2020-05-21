@@ -314,6 +314,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212012](http://oeis.org/A212012) ([L11 program](A212012.asm)): Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
 * [A212031](http://oeis.org/A212031) ([L12 program](A212031.asm)): Number of lower triangular n X n arrays colored with integers 0 upwards introduced in row major order, with no element equal to any element at a city block distance of two, and containing the value n(n+1)/2-2.
 * [A212039](http://oeis.org/A212039) ([L13 program](A212039.asm)): Number of lower triangular n X n arrays colored with integers 0 upwards introduced in row major order, with no element equal to any element within a city block distance of two, and containing the value n(n+1)/2-2.
+* [A212068](http://oeis.org/A212068) ([L27 program](A212068.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 2w=x+y+z.
 * [A212126](http://oeis.org/A212126) ([L13 program](A212126.asm)): Period 13: repeat (0,0,1,0,0,1,0,1,0,0,1,0,1).
 * [A212133](http://oeis.org/A212133) ([L08 program](A212133.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and median=mean.
 * [A212134](http://oeis.org/A212134) ([L10 program](A212134.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and median<=mean.
@@ -1567,6 +1568,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258598](http://oeis.org/A258598) ([L05 program](A258598.asm)): a(n) = 17*3^n.
 * [A258617](http://oeis.org/A258617) ([L05 program](A258617.asm)): a(n) = (4*n+8)*n^2.
 * [A258618](http://oeis.org/A258618) ([L09 program](A258618.asm)): a(n) = (4*n+9)*n^2.
+* [A258632](http://oeis.org/A258632) ([L24 program](A258632.asm)): Number of length 1 1..(n+1) arrays with every leading partial sum divisible by 2, 3, 5 or 7
 * [A258717](http://oeis.org/A258717) ([L11 program](A258717.asm)): If n even then 2*n^2-4*n else 2*n^2-4*n-3.
 * [A258721](http://oeis.org/A258721) ([L10 program](A258721.asm)): a(n) = 24*n^2 + 52*n + 29.
 * [A258806](http://oeis.org/A258806) ([L03 program](A258806.asm)): a(n) = n^7 + 1.

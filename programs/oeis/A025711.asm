@@ -1,113 +1,24 @@
 ; A025711: Index of 5^n within sequence of numbers of form 5^i*10^j.
 ; 1,2,4,7,10,14,19,24,30,37,44,52,61,71,81,92,104,116,129,143,157,172,188,205,222,240,259,278,298,319,340,362,385,409,433,458,484,510,537,565,593,622,652,683,714,746,779,812,846,881,916,952,989,1027,1065,1104,1144
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
-  mov $9,10
-  sub $9,1
-  mul $0,7
-  mov $10,$9
-  mov $7,10
-  add $10,$0
-  mov $5,$10
-  mov $8,2
-  sub $9,$0
-  mov $4,2
-  mod $10,$4
-  mov $0,4
-  mov $3,2
-  cmp $10,1
-  mov $1,$5
-  add $1,$9
-  sub $8,1
-  add $3,9
-  sub $3,1
-  mod $9,2
-  div $0,$0
-  mod $5,$8
-  mov $2,$4
-  sub $0,$4
-  add $2,$8
-  div $1,$7
-  add $5,9
-  cmp $2,5
-  add $5,$2
-  mov $6,1
-  fac $2
-  lpb $0,1
-    mul $0,$3
-    sub $4,3
-    add $5,$7
-    mov $7,7
-    mov $2,$4
-    gcd $0,7
-    pow $2,10
-    mod $5,2
-    pow $4,3
-    pow $9,7
-    add $3,1
-    sub $1,6
-    mul $2,7
-    mul $5,8
-    sub $9,2
-    mul $9,$1
-    sub $4,$6
-    mov $7,$0
-    add $6,$4
-    mul $5,$1
-    add $0,1
-    add $8,$8
-    mul $6,$4
-    mul $0,$0
-    mul $1,10
-    add $4,8
-    sub $4,2
-    mov $8,2
-    add $10,1
-    mul $9,$5
-    pow $2,$10
-    mov $2,9
-    add $6,$2
-    div $0,2
-    add $3,$6
-    pow $1,$8
-    add $2,$6
-    mul $3,7
-    mov $9,$8
-    sub $1,2
-    div $5,$0
-    sub $3,1
-    sub $10,1
-    add $7,1
-    div $9,$6
-    add $1,$7
-    mul $10,4
-    add $8,$7
-    sub $1,$9
-    mul $8,5
-    sub $0,1
-    pow $5,4
-    add $0,$3
-    mul $4,$7
-    mov $5,$8
-  lpe
-  mod $0,10
-  sub $10,$5
-  gcd $4,$6
-  sub $10,$1
-  sub $6,1
-  div $0,2
-  mul $6,8
-  mov $9,1
+mov $4,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$4
+  sub $0,$2
   mov $8,10
-  add $9,9
-  mov $5,$10
-  add $12,$1
+  sub $8,1
+  mul $0,7
+  mov $6,$8
+  mov $7,10
+  add $6,$0
+  mov $5,$6
+  sub $8,$0
+  mov $1,$5
+  add $1,$8
+  div $1,$7
+  add $3,$1
 lpe
-mov $1,$12
+mov $1,$3
