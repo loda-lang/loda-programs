@@ -2466,7 +2466,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286655](http://oeis.org/A286655) ([L42 program](A286655.asm)): Characteristic sequence of the Beatty sequence, A022842, of sqrt(8).
 * [A286685](http://oeis.org/A286685) ([L49 program](A286685.asm)): {0->01, 1->10}-transform of the Pell word, A171588.
 * [A286688](http://oeis.org/A286688) ([L20 program](A286688.asm)): {0->00, 1->10}-transform of the Pell word, A171588.
-* [A286716](http://oeis.org/A286716) ([L16 program](A286716.asm)): a(n) = floor(n/2) - floor((n+1)/5), n >= 0.
+* [A286716](http://oeis.org/A286716) ([L08 program](A286716.asm)): a(n) = floor(n/2) - floor((n+1)/5), n >= 0.
 * [A286717](http://oeis.org/A286717) ([L06 program](A286717.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-phi, +phi), with the golden section phi = (1 + sqrt(5))/2.
 * [A286726](http://oeis.org/A286726) ([L48 program](A286726.asm)): {0->10, 1->01}-transform of the Pell word, A171588.
 * [A286728](http://oeis.org/A286728) ([L16 program](A286728.asm)): Positions of 1 in A286063; complement of A286727.
@@ -2696,6 +2696,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A294924](http://oeis.org/A294924) ([L24 program](A294924.asm)): Numbers n such that the whole sequence of the first n terms of A293699 is a palindrome.
 * [A295077](http://oeis.org/A295077) ([L10 program](A295077.asm)): a(n) = 2*n*(n-1) + 2^n - 1.
 * [A295089](http://oeis.org/A295089) ([L05 program](A295089.asm)): a(n) = 3*n^2 + n + 3.
+* [A295130](http://oeis.org/A295130) ([L13 program](A295130.asm)): a(n) = 3*n*(64*n^2 + 1).
 * [A295286](http://oeis.org/A295286) ([L07 program](A295286.asm)): Sum of the products of the smaller and larger parts of the partitions of n into two parts with the smaller part odd.
 * [A295287](http://oeis.org/A295287) ([L10 program](A295287.asm)): Sum of the products of the smaller and larger parts of the partitions of n into two parts with the smaller part even.
 * [A295317](http://oeis.org/A295317) ([L09 program](A295317.asm)): Sum of the products of the smaller and larger parts of the partitions of n into two distinct parts with the smaller part odd.

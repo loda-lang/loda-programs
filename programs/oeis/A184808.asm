@@ -1,0 +1,97 @@
+; A184808: n + floor(r*n), where r = sqrt(2/3); complement of A184809.
+; 1,3,5,7,9,10,12,14,16,18,19,21,23,25,27,29,30,32,34,36,38,39,41,43,45,47,49,50,52,54,56,58,59,61,63,65,67,69,70,72,74,76,78,79,81,83,85,87,89,90,92,94,96,98,99,101,103,105,107,108,110,112,114,116
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $4,$0
+  mov $2,$0
+  mov $7,7
+  mov $8,2
+  mov $3,1
+  cmp $7,2
+  div $4,2
+  div $4,6
+  mov $1,5
+  mov $6,$0
+  mov $6,7
+  add $6,7
+  mod $2,$1
+  add $3,8
+  mov $5,1
+  gcd $0,7
+  sub $3,$2
+  fac $8
+  div $5,$3
+  cmp $2,$4
+  mov $3,1
+  lpb $2,1
+    pow $6,$0
+    add $5,3
+    pow $1,$7
+    mul $4,2
+    mod $7,5
+    mul $4,$1
+    fac $0
+    gcd $1,2
+    div $6,2
+    cmp $8,7
+    pow $5,7
+    lpb $4,1
+      mov $1,6
+      sub $0,1
+      div $8,7
+      sub $4,$7
+      div $8,8
+      fac $8
+      cmp $6,5
+      sub $5,5
+      add $0,8
+      div $0,$5
+    lpe
+    lpb $5,1
+      sub $3,3
+      sub $5,$7
+      sub $2,2
+      add $2,$5
+      fac $8
+    lpe
+    div $0,2
+    lpb $6,1
+      mul $1,5
+      mov $5,$2
+      div $3,5
+      fac $8
+      gcd $2,$7
+      gcd $5,$7
+      mod $1,7
+      add $8,$0
+      sub $6,$7
+      div $1,7
+      mul $4,$8
+      sub $2,$2
+      add $0,2
+      pow $8,2
+    lpe
+    mul $0,2
+    sub $2,1
+    add $2,$7
+    cmp $3,0
+    add $1,8
+    gcd $6,7
+    mod $5,$6
+    div $1,3
+    mov $0,$5
+  lpe
+  div $7,$1
+  sub $1,3
+  div $1,2
+  add $1,1
+  add $10,$1
+lpe
+mov $1,$10

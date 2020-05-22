@@ -683,6 +683,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115006](http://oeis.org/A115006) ([L08 program](A115006.asm)): Row 2 of array in A114999.
 * [A115007](http://oeis.org/A115007) ([L22 program](A115007.asm)): Row 3 of array in A114999.
 * [A115012](http://oeis.org/A115012) ([L22 program](A115012.asm)): Sum_{i=1..n, gcd(5,i)=1} i.
+* [A115014](http://oeis.org/A115014) ([L19 program](A115014.asm)): Sum_{i=1..n, gcd(6,i)=1} i.
 * [A115015](http://oeis.org/A115015) ([L23 program](A115015.asm)): Sum_{i=1..n} (gcd(7,i)=1) i.
 * [A115067](http://oeis.org/A115067) ([L06 program](A115067.asm)): a(n) = (3*n^2 - n - 2)/2.
 * [A115098](http://oeis.org/A115098) ([L04 program](A115098.asm)): a(0)=2, a(n)=3*a(n-1)-3.
@@ -2287,7 +2288,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152751](http://oeis.org/A152751) ([L05 program](A152751.asm)): 3 times octagonal numbers: 3*n*(3*n-2).
 * [A152759](http://oeis.org/A152759) ([L08 program](A152759.asm)): 3 times 9-gonal (or nonagonal) numbers: 3n(7n-5)/2.
 * [A152760](http://oeis.org/A152760) ([L08 program](A152760.asm)): 4 times 9-gonal numbers: a(n) = 2*n*(7*n-5).
-* [A152767](http://oeis.org/A152767) ([L09 program](A152767.asm)): 3 times 10-gonal (or decagonal) numbers: 3n(4n-3).
+* [A152767](http://oeis.org/A152767) ([L08 program](A152767.asm)): 3 times 10-gonal (or decagonal) numbers: 3n(4n-3).
 * [A152773](http://oeis.org/A152773) ([L06 program](A152773.asm)): 3 times heptagonal numbers: a(n) = 3n(5n-3)/2.
 * [A152777](http://oeis.org/A152777) ([L11 program](A152777.asm)): 7 times heptagonal numbers: 7*n*(5*n-3)/2.
 * [A152811](http://oeis.org/A152811) ([L05 program](A152811.asm)): a(n) = 2*(n^2 + 2*n - 2).
@@ -2725,6 +2726,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158221](http://oeis.org/A158221) ([L03 program](A158221.asm)): a(n) = 169n + 1.
 * [A158222](http://oeis.org/A158222) ([L15 program](A158222.asm)): 196n^2+2n.
 * [A158223](http://oeis.org/A158223) ([L03 program](A158223.asm)): a(n) = 196*n + 1.
+* [A158224](http://oeis.org/A158224) ([L15 program](A158224.asm)): a(n) = 196*n^2 - 2*n.
 * [A158225](http://oeis.org/A158225) ([L03 program](A158225.asm)): 196n - 1.
 * [A158226](http://oeis.org/A158226) ([L32 program](A158226.asm)): 225n^2-2n.
 * [A158227](http://oeis.org/A158227) ([L03 program](A158227.asm)): 225n - 1.
@@ -4176,6 +4178,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178804](http://oeis.org/A178804) ([L05 program](A178804.asm)): When dealing cards into 3 piles (Left, Center, Right), the number of cards in the n-th card's pile, if dealing in a pattern L, C, R, C, L, C, R, C, L, C, ... [as any thoughtful six-year-old will try to do when sharing a pile of candy among 3 people].
 * [A178815](http://oeis.org/A178815) ([L02 program](A178815.asm)): First base of a nonzero Fermat quotient mod the n-th prime.
 * [A178872](http://oeis.org/A178872) ([L21 program](A178872.asm)): Partial sums of round(4^n/7).
+* [A178873](http://oeis.org/A178873) ([L22 program](A178873.asm)): Partial sums of round(5^n/7).
 * [A178874](http://oeis.org/A178874) ([L17 program](A178874.asm)): Partial sums of round(5^n/8).
 * [A178875](http://oeis.org/A178875) ([L16 program](A178875.asm)): Partial sums of round(4^n/9).
 * [A178914](http://oeis.org/A178914) ([L11 program](A178914.asm)): 10's complement of nonnegative numbers.
