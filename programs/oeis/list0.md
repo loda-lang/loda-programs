@@ -2915,7 +2915,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040871](http://oeis.org/A040871) ([L05 program](A040871.asm)): Continued fraction for sqrt(902).
 * [A040872](http://oeis.org/A040872) ([L08 program](A040872.asm)): Continued fraction for sqrt(903).
 * [A040873](http://oeis.org/A040873) ([L09 program](A040873.asm)): Continued fraction for sqrt(904).
-* [A040874](http://oeis.org/A040874) ([L16 program](A040874.asm)): Continued fraction for sqrt(905).
+* [A040874](http://oeis.org/A040874) ([L13 program](A040874.asm)): Continued fraction for sqrt(905).
 * [A040875](http://oeis.org/A040875) ([L17 program](A040875.asm)): Continued fraction for sqrt(906).
 * [A040879](http://oeis.org/A040879) ([L08 program](A040879.asm)): Continued fraction for sqrt(910).
 * [A040881](http://oeis.org/A040881) ([L19 program](A040881.asm)): Continued fraction for sqrt(912).
@@ -4872,7 +4872,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070516](http://oeis.org/A070516) ([L03 program](A070516.asm)): Duplicate of A070435.
 * [A070517](http://oeis.org/A070517) ([L03 program](A070517.asm)): a(n) = n^4 mod 13.
 * [A070532](http://oeis.org/A070532) ([L20 program](A070532.asm)): a(n) = n^4 mod 14.
-* [A070533](http://oeis.org/A070533) ([L21 program](A070533.asm)): n^4 mod 15.
+* [A070533](http://oeis.org/A070533) ([L06 program](A070533.asm)): n^4 mod 15.
 * [A070534](http://oeis.org/A070534) ([L23 program](A070534.asm)): a(n) = n^4 mod 17.
 * [A070535](http://oeis.org/A070535) ([L21 program](A070535.asm)): a(n) = n^4 mod 18.
 * [A070538](http://oeis.org/A070538) ([L11 program](A070538.asm)): a(n) = n^4 mod 19.
@@ -5665,7 +5665,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084640](http://oeis.org/A084640) ([L10 program](A084640.asm)): Generalized Jacobsthal numbers.
 * [A084642](http://oeis.org/A084642) ([L08 program](A084642.asm)): A Jacobsthal ratio.
 * [A084672](http://oeis.org/A084672) ([L06 program](A084672.asm)): G.f.: (1+x^2+2*x^4)/((1-x^3)*(1-x)^2).
-* [A084684](http://oeis.org/A084684) ([L08 program](A084684.asm)): Degrees of certain maps.
+* [A084684](http://oeis.org/A084684) ([L05 program](A084684.asm)): Degrees of certain maps.
 * [A084849](http://oeis.org/A084849) ([L05 program](A084849.asm)): a(n) = 1 + n + 2*n^2.
 * [A084850](http://oeis.org/A084850) ([L12 program](A084850.asm)): 2^(n-1)*(n^2+2n+2).
 * [A084857](http://oeis.org/A084857) ([L12 program](A084857.asm)): Inverse binomial transform of n^2*3^(n-1).

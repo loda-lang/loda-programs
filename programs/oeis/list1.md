@@ -2405,9 +2405,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154379](http://oeis.org/A154379) ([L03 program](A154379.asm)): a(n) = 250*n + 10.
 * [A154407](http://oeis.org/A154407) ([L18 program](A154407.asm)): a(n) = 5*2^(n-1) + 3*6^n/2.
 * [A154514](http://oeis.org/A154514) ([L11 program](A154514.asm)): a(n) = 648*n^2 - 72*n + 1.
-* [A154515](http://oeis.org/A154515) ([L11 program](A154515.asm)): a(n) = 648*n^2 + 72*n + 1.
+* [A154515](http://oeis.org/A154515) ([L10 program](A154515.asm)): a(n) = 648*n^2 + 72*n + 1.
 * [A154516](http://oeis.org/A154516) ([L09 program](A154516.asm)): a(n) = 9n^2 - n.
-* [A154517](http://oeis.org/A154517) ([L09 program](A154517.asm)): a(n) = 9*n^2 + n.
+* [A154517](http://oeis.org/A154517) ([L06 program](A154517.asm)): a(n) = 9*n^2 + n.
 * [A154518](http://oeis.org/A154518) ([L03 program](A154518.asm)): a(n) = 216*n - 12.
 * [A154519](http://oeis.org/A154519) ([L03 program](A154519.asm)): a(n) = 216*n + 12.
 * [A154533](http://oeis.org/A154533) ([L06 program](A154533.asm)): Number of constants of the form a^3*u + b*c*v, where a, b, c are linear, u of order n-3 and v of order n-2.
@@ -3194,7 +3194,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164394](http://oeis.org/A164394) ([L12 program](A164394.asm)): Number of binary strings of length n with no substrings equal to 0001 or 0100.
 * [A164409](http://oeis.org/A164409) ([L10 program](A164409.asm)): Number of binary strings of length n with no substrings equal to 0000 0001 or 0100
 * [A164485](http://oeis.org/A164485) ([L10 program](A164485.asm)): Number of binary strings of length n with no substrings equal to 0001, 1000 or 1001.
-* [A164486](http://oeis.org/A164486) ([L08 program](A164486.asm)): Duplicate of A084684.
+* [A164486](http://oeis.org/A164486) ([L05 program](A164486.asm)): Duplicate of A084684.
 * [A164514](http://oeis.org/A164514) ([L08 program](A164514.asm)): 1 followed by numbers that are not squares.
 * [A164515](http://oeis.org/A164515) ([L11 program](A164515.asm)): Positive numbers not of the form n^2+2.
 * [A164540](http://oeis.org/A164540) ([L17 program](A164540.asm)): a(n) = 4*a(n-1) + 4*a(n-2) for n > 1; a(0) = 1, a(1) = 14.
@@ -4170,6 +4170,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178675](http://oeis.org/A178675) ([L03 program](A178675.asm)): a(n) = 4^n + 4.
 * [A178676](http://oeis.org/A178676) ([L03 program](A178676.asm)): a(n) = 5^n + 5.
 * [A178681](http://oeis.org/A178681) ([L03 program](A178681.asm)): a(n) = 6^n + 6.
+* [A178703](http://oeis.org/A178703) ([L20 program](A178703.asm)): Partial sums of round(3^n/7).
 * [A178704](http://oeis.org/A178704) ([L12 program](A178704.asm)): Partial sums of floor(3^n/7).
 * [A178706](http://oeis.org/A178706) ([L18 program](A178706.asm)): Partial sums of floor(3^n/5).
 * [A178710](http://oeis.org/A178710) ([L14 program](A178710.asm)): Partial sums of floor(4^n/7).
@@ -4323,7 +4324,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A182189](http://oeis.org/A182189) ([L13 program](A182189.asm)): a(n) = 6*a(n-1) - a(n-2) - 4 with n > 1, a(0)=1, a(1)=3.
 * [A182190](http://oeis.org/A182190) ([L08 program](A182190.asm)): a(n) = 6*a(n-1) - a(n-2) + 4 with n>1, a(0)=0, a(1)=4.
 * [A182214](http://oeis.org/A182214) ([L06 program](A182214.asm)): Bondage number of the Cartesian product graph G = C_n X K_2.
-* [A182215](http://oeis.org/A182215) ([L09 program](A182215.asm)): Bondage number of the Cartesian product graph G = C_n X C_3.
+* [A182215](http://oeis.org/A182215) ([L06 program](A182215.asm)): Bondage number of the Cartesian product graph G = C_n X C_3.
 * [A182220](http://oeis.org/A182220) ([L08 program](A182220.asm)): Largest number k such that there exists an extensional acyclic digraph on n labeled nodes with k sources.
 * [A182260](http://oeis.org/A182260) ([L14 program](A182260.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w<x+y.
 * [A182305](http://oeis.org/A182305) ([L13 program](A182305.asm)): a(n+1) = a(n) + floor(a(n)/4) with a(0)=4.
