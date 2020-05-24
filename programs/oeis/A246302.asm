@@ -1,0 +1,112 @@
+; A246302: Numbers k such that cos(k) < cos(k+1) < cos(k+2) < cos(k+3) > cos(k+4).
+; 3,10,16,22,28,35,41,47,54,60,66,72,79,85,91,98,104,110,116,123,129,135,142,148,154,160,167,173,179,185,192,198,204,211,217,223,229,236,242,248,255,261,267,273,280,286,292,299,305,311,317,324,330,336,343
+
+mov $11,$0
+mov $3,8
+mov $10,$0
+mov $8,$0
+add $0,10
+mov $7,4
+mov $2,2
+add $3,$10
+mov $2,$0
+mov $4,$7
+mov $9,0
+add $9,$7
+div $7,$7
+mul $2,9
+mul $4,8
+div $2,$4
+mov $6,$9
+mov $1,$3
+div $4,7
+add $1,8
+mov $10,$0
+mov $3,3
+mul $1,6
+mov $8,8
+lpb $2,1
+  sub $10,2
+  lpb $4,1
+    div $1,5
+    sub $4,$8
+  lpe
+  sub $6,1
+  pow $7,$3
+  add $9,$8
+  add $1,2
+  mov $2,9
+  add $4,7
+  mov $5,7
+  mov $8,9
+  div $8,5
+  sub $5,2
+  mod $4,6
+  mul $6,$5
+  mul $2,2
+  cmp $8,$3
+  pow $6,$8
+  mov $10,7
+  mov $3,3
+  lpb $5,1
+    bin $3,2
+    add $6,$2
+    mul $9,2
+    gcd $5,6
+    add $3,1
+    sub $5,$8
+    pow $4,8
+    pow $3,9
+    add $5,6
+  lpe
+  mov $1,3
+  mov $6,1
+  pow $3,2
+  mul $8,3
+  mod $6,$2
+  add $2,2
+  mul $3,2
+  lpb $6,1
+    div $10,2
+    sub $6,$8
+    sub $9,$3
+  lpe
+  mod $6,$7
+  bin $4,2
+  mod $3,10
+  div $6,7
+  sub $2,1
+  div $3,8
+  cmp $9,2
+  sub $3,$10
+  pow $5,$9
+  mov $9,$9
+  mov $9,0
+  div $6,$7
+  fac $7
+  mul $10,5
+  mov $1,7
+  mul $7,2
+  mul $10,2
+  mul $5,$0
+  sub $7,$2
+  add $2,4
+  add $4,5
+  mul $10,3
+  pow $10,8
+  add $4,5
+  add $5,1
+  add $1,$3
+  div $3,$5
+lpe
+mov $8,9
+fac $9
+fac $3
+mov $1,$2
+add $1,1
+mov $12,$11
+mov $13,$12
+mul $13,6
+add $1,$13
+mul $12,$11
+mul $12,$11

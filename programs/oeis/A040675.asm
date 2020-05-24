@@ -1,0 +1,105 @@
+; A040675: Continued fraction for sqrt(702).
+; 26,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52,2,52
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $8,$0
+  mov $7,8
+  mov $3,8
+  mov $1,8
+  add $7,1
+  gcd $0,$0
+  mov $6,$3
+  sub $7,$3
+  mod $8,2
+  sub $0,$8
+  fac $3
+  mov $4,4
+  mov $5,5
+  sub $4,6
+  sub $6,7
+  gcd $8,$5
+  add $6,$6
+  mov $2,$6
+  mul $5,5
+  sub $2,1
+  mov $7,5
+  add $0,$1
+  div $6,7
+  mov $7,2
+  div $4,$1
+  mov $7,$0
+  add $4,5
+  mul $0,$6
+  div $3,$5
+  mov $1,$6
+  mov $0,$2
+  sub $6,3
+  div $8,7
+  pow $0,$7
+  sub $0,1
+  sub $2,$2
+  sub $1,4
+  add $8,1
+  mul $2,$8
+  mov $3,7
+  mov $0,0
+  sub $7,7
+  fac $1
+  pow $8,7
+  gcd $4,6
+  mul $5,$7
+  div $7,5
+  mul $0,2
+  add $3,6
+  div $5,2
+  sub $0,$8
+  fac $2
+  bin $1,5
+  add $7,$1
+  pow $0,$3
+  sub $8,1
+  lpb $0,1
+    pow $8,3
+    mul $5,7
+    div $8,6
+    div $3,6
+    mul $3,$5
+    div $8,4
+    mov $4,$6
+    mul $2,8
+    cmp $4,$0
+    pow $8,6
+    add $4,6
+    sub $0,1
+    gcd $7,$5
+    pow $4,2
+    mod $4,3
+    add $7,4
+    pow $0,$8
+    div $1,4
+    sub $8,8
+    add $0,1
+    div $3,6
+  lpe
+  pow $3,$6
+  mov $1,$5
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
+mul $1,2
+add $1,2

@@ -496,6 +496,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316571](http://oeis.org/A316571) ([L07 program](A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
 * [A316631](http://oeis.org/A316631) ([L12 program](A316631.asm)): Expansion of A(x) = x*(1+3*x^2+x^3+3*x^4+x^6)/(1-x^4)^2.
 * [A316671](http://oeis.org/A316671) ([L10 program](A316671.asm)): Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
+* [A316724](http://oeis.org/A316724) ([L20 program](A316724.asm)): Generalized 26-gonal (or icosihexagonal) numbers: m*(12*m - 11) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A316725](http://oeis.org/A316725) ([L22 program](A316725.asm)): Generalized 27-gonal (or icosiheptagonal) numbers: m*(25*m - 23)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A316729](http://oeis.org/A316729) ([L20 program](A316729.asm)): Generalized 30-gonal (or triacontagonal) numbers: m*(14*m - 13) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A316742](http://oeis.org/A316742) ([L11 program](A316742.asm)): Stepping through the Mersenne sequence (A000225) one step back, two steps forward.
@@ -560,6 +561,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319452](http://oeis.org/A319452) ([L08 program](A319452.asm)): Numbers that are congruent to {0, 3, 6, 10} mod 12.
 * [A319572](http://oeis.org/A319572) ([L16 program](A319572.asm)): The x coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
 * [A319573](http://oeis.org/A319573) ([L14 program](A319573.asm)): The y coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
+* [A319575](http://oeis.org/A319575) ([L13 program](A319575.asm)): a(n) = (2/3)*n*(n^3 - 6*n^2 + 11*n - 3).
 * [A319610](http://oeis.org/A319610) ([L21 program](A319610.asm)): a(n) is the minimal number of successive OFF cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
 * [A319701](http://oeis.org/A319701) ([L12 program](A319701.asm)): Filter sequence for sequences that are constant for all odd terms >= 3.
 * [A319702](http://oeis.org/A319702) ([L14 program](A319702.asm)): Filter sequence for sequences that are constant for all even terms >= 2.
@@ -630,6 +632,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323221](http://oeis.org/A323221) ([L11 program](A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
 * [A323227](http://oeis.org/A323227) ([L07 program](A323227.asm)): a(n) = [x^n] (-x^4 + 2*x^3 - x^2 + 2*x - 1)/((x - 1)^2*(2*x - 1)).
 * [A323228](http://oeis.org/A323228) ([L08 program](A323228.asm)): a(n) = binomial(n + 4, n - 1) + 1.
+* [A323229](http://oeis.org/A323229) ([L10 program](A323229.asm)): a(n) = binomial(2*n, n+1) + 1.
 * [A323397](http://oeis.org/A323397) ([L13 program](A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323610](http://oeis.org/A323610) ([L05 program](A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
 * [A323614](http://oeis.org/A323614) ([L06 program](A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
