@@ -1,0 +1,116 @@
+; A025791: Expansion of 1/((1-x)(1-x^9)(1-x^10)).
+; 1,1,1,1,1,1,1,1,1,2,3,3,3,3,3,3,3,3,4,5,6,6,6,6,6,6,6,7,8,9,10,10,10,10,10,10,11,12,13,14,15,15,15,15,15,16,17,18,19,20,21,21,21,21,22,23,24,25,26,27,28,28,28,29
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $10,2
+  add $0,3
+  mov $7,8
+  mov $2,0
+  mov $6,1
+  div $10,5
+  div $7,$0
+  mov $2,$0
+  lpb $2,1
+    mov $4,3
+    mov $3,$7
+    lpb $4,1
+      add $2,6
+      sub $10,$10
+      gcd $10,2
+      sub $4,$2
+    lpe
+    sub $4,9
+    mov $6,8
+    sub $7,1
+    mod $10,$2
+    mov $5,10
+    mov $7,10
+    mov $9,5
+    add $5,7
+    fac $4
+    mov $8,$4
+    mov $5,8
+    add $6,1
+    add $3,1
+    lpb $5,1
+      bin $10,6
+      mov $6,$7
+      mod $5,2
+      div $6,2
+      sub $5,$2
+      mod $2,9
+      mul $9,$4
+      mov $7,$7
+      sub $7,5
+      pow $4,$3
+      sub $7,1
+      mov $3,$2
+      mul $2,10
+      add $0,$7
+      mul $6,9
+      mov $1,$9
+    lpe
+    pow $8,8
+    add $1,6
+    mul $0,$2
+    lpb $6,1
+      add $0,$3
+      add $5,2
+      add $7,$1
+      pow $10,10
+      add $8,$4
+      div $5,5
+      pow $9,$8
+      div $1,10
+      pow $8,$9
+      div $3,9
+      add $9,$3
+      mod $0,3
+      mod $3,9
+      mov $9,$10
+      mov $4,$1
+      sub $6,$2
+    lpe
+    pow $10,$4
+    mov $5,4
+    mov $7,0
+    fac $4
+    gcd $7,7
+    bin $5,4
+    mov $10,3
+    gcd $6,2
+    mov $0,5
+    add $2,2
+    mov $6,0
+    mul $4,$0
+    mod $7,$5
+    add $0,10
+    add $7,$9
+    div $0,$4
+    mul $8,2
+    mul $4,8
+    cmp $3,3
+    div $0,$4
+    sub $2,1
+    mul $4,$4
+    mul $3,5
+  lpe
+  mov $0,3
+  mod $7,9
+  mod $6,2
+  fac $9
+  mul $9,$2
+  sub $2,1
+  sub $0,10
+  mov $1,$4
+  div $1,1600
+  add $12,$1
+lpe
+mov $1,$12

@@ -1,0 +1,94 @@
+; A188675: Partial sums of the binomial coefficients binomial(3*n,n) (A005809).
+; 1,4,19,103,598,3601,22165,138445,873916,5560741,35605756,229142476,1480820176,9603245620,62463474700,407330900284,2662179813931,17433248900656,114359597479261,751343566800961,4943188072606456
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $1,3
+  mov $8,4
+  mov $7,0
+  mov $2,6
+  add $8,8
+  mul $1,$0
+  mul $7,$8
+  mov $5,8
+  bin $1,$0
+  mov $4,$8
+  mov $8,4
+  mov $4,$4
+  div $0,2
+  add $4,2
+  div $5,$2
+  add $2,$0
+  sub $7,7
+  mov $3,$4
+  mov $0,$2
+  mov $0,6
+  mul $2,7
+  mul $2,2
+  add $5,2
+  mod $5,$4
+  sub $2,$2
+  cmp $5,$7
+  sub $2,$2
+  div $2,$0
+  mod $4,$8
+  add $0,6
+  mul $5,2
+  pow $8,5
+  mov $0,7
+  mov $6,2
+  mov $6,$4
+  lpb $0,1
+    div $6,2
+    sub $6,3
+    sub $3,7
+    mov $1,7
+    mul $5,5
+    div $2,2
+    sub $3,1
+    div $6,$3
+    mov $1,4
+    div $8,7
+    pow $5,3
+    div $4,2
+    mov $8,$1
+    sub $8,3
+    mod $7,8
+    pow $2,$5
+    div $0,$4
+    mul $4,2
+    add $3,6
+    pow $2,$4
+    add $8,$1
+    sub $1,3
+    mul $0,7
+    add $3,1
+    pow $7,$5
+    add $2,$8
+    sub $0,1
+    div $0,$8
+    div $5,2
+    fac $7
+    sub $1,$6
+    div $1,2
+    mul $0,$3
+    mod $6,$3
+    mov $6,8
+    mod $7,2
+    gcd $4,4
+    add $0,4
+    pow $7,3
+    mul $7,7
+    mov $7,0
+    add $1,4
+  lpe
+  mov $2,$6
+  add $10,$1
+lpe
+mov $1,$10

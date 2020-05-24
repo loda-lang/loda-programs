@@ -1,0 +1,106 @@
+; A010941: Binomial coefficient C(25,n).
+; 1,25,300,2300,12650,53130,177100,480700,1081575,2042975,3268760,4457400,5200300,5200300,4457400,3268760,2042975,1081575,480700,177100,53130,12650,2300,300,25,1
+
+mov $2,5
+mov $6,2
+mov $5,5
+mul $2,$2
+mov $9,2
+mov $7,$9
+mov $1,$2
+mul $6,9
+mov $10,$2
+mov $3,5
+mov $8,$1
+gcd $1,3
+mov $4,1
+sub $6,$7
+mod $5,2
+mod $3,$6
+pow $9,6
+sub $5,7
+gcd $9,2
+add $7,$8
+sub $7,$9
+add $9,$9
+gcd $3,$9
+div $5,2
+sub $8,10
+bin $2,$0
+cmp $9,$1
+mul $0,$9
+add $10,$4
+mul $2,$10
+gcd $10,4
+gcd $9,$7
+add $3,$2
+sub $3,5
+mul $3,2
+pow $10,$8
+gcd $8,$4
+lpb $0,1
+  mov $3,$3
+  add $5,10
+  sub $9,7
+  add $10,$4
+  mov $10,$8
+  mov $1,4
+  mul $0,$1
+  bin $5,$5
+  mov $9,$3
+  div $5,$10
+  mul $2,$1
+  sub $0,$3
+  sub $0,1
+  mov $7,9
+  mul $5,$9
+  sub $5,7
+  mul $3,$3
+  mod $0,$2
+  add $0,$2
+  sub $9,2
+  mul $6,$3
+  div $8,2
+  mod $2,$4
+  mov $3,$9
+  mod $10,6
+  div $0,$4
+  add $9,$3
+  add $0,1
+  div $5,$7
+  mod $8,$5
+  gcd $7,$4
+  mul $5,8
+  div $1,6
+  bin $0,$8
+  fac $4
+  cmp $10,5
+  div $3,$4
+  div $7,9
+  mod $5,$4
+  sub $7,5
+  mul $6,$8
+  add $8,2
+  pow $4,2
+  cmp $3,1
+lpe
+add $10,$4
+add $7,$4
+mov $2,$10
+sub $2,5
+bin $4,2
+sub $0,$4
+mul $7,$9
+div $0,2
+mov $5,$4
+gcd $6,2
+div $7,$10
+sub $7,$3
+fac $7
+div $2,2
+div $9,$1
+div $5,8
+mov $1,$3
+sub $1,44
+div $1,52
+add $1,1

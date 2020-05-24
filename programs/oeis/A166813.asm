@@ -1,0 +1,87 @@
+; A166813: Number of n X 8 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
+; 7,43,163,493,1285,3001,6433,12868,24308,43756,75580,125968,203488,319768,490312,735469,1081573,1562273,2220073,3108103,4292143,5852923,7888723,10518298,13884154,18156202,23535818,30260338,38608018,48903490,61523746,76904683
+
+mov $2,0
+mov $8,1
+mov $6,1
+add $0,8
+mov $5,$6
+mov $7,3
+mod $8,4
+mul $5,2
+mov $1,$8
+mov $6,$6
+gcd $1,6
+mov $4,$0
+pow $5,$4
+mul $8,6
+sub $2,$2
+sub $6,$8
+div $8,5
+pow $6,$2
+div $5,$4
+add $4,3
+mul $8,$6
+mov $3,5
+fac $3
+cmp $6,7
+sub $4,$7
+add $6,$5
+add $4,6
+pow $2,2
+sub $7,$7
+sub $2,$8
+pow $4,5
+cmp $3,$3
+mov $4,3
+mod $2,$6
+cmp $7,$4
+mul $1,2
+div $7,6
+div $5,2
+mov $0,$0
+add $0,$8
+sub $7,1
+mov $8,5
+add $8,1
+mov $8,5
+mov $4,3
+div $5,4
+mov $6,$1
+sub $6,1
+mod $5,$8
+bin $0,8
+mul $1,$2
+cmp $2,4
+mov $8,3
+lpb $0,1
+  mul $5,3
+  add $3,$8
+  add $0,4
+  mov $4,$7
+  add $8,$2
+  sub $4,$5
+  sub $8,$5
+  mov $2,$4
+  sub $0,1
+  gcd $6,$0
+  mov $5,$4
+lpe
+pow $3,$8
+add $8,6
+sub $1,1
+div $3,2
+mod $3,$8
+mov $6,8
+pow $4,5
+sub $5,7
+mov $8,$5
+mul $0,2
+sub $5,$5
+add $2,$2
+mov $8,2
+div $1,2
+mov $1,$0
+sub $1,18
+div $1,2
+add $1,7

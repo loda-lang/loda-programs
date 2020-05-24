@@ -1,134 +1,43 @@
 ; A330095: Beatty sequence for 3^(x-1), where 1/2^x + 1/3^(x-1) = 1.
 ; 1,3,4,6,7,9,11,12,14,15,17,19,20,22,23,25,27,28,30,31,33,35,36,38,39,41,43,44,46,47,49,51,52,54,55,57,58,60,62,63,65,66,68,70,71,73,74,76,78,79,81,82,84,86,87,89,90,92,94,95,97,98,100,102,103
 
-mov $21,$0
-mov $23,$0
-add $23,1
-lpb $23,1
-  clr $0,21
-  sub $23,1
-  mov $0,$21
-  sub $0,$23
-  mov $17,$0
-  mov $19,2
-  lpb $19,1
-    clr $0,17
-    sub $19,1
-    mov $0,$17
-    add $0,$19
+mov $8,$0
+mov $4,$0
+add $4,1
+lpb $4,1
+  sub $4,1
+  mov $0,$8
+  sub $0,$4
+  mov $2,$0
+  mov $10,2
+  lpb $10,1
+    sub $10,1
+    mov $0,$2
+    add $0,$10
     sub $0,1
-    mov $5,$0
     add $0,1
-    mov $9,4
-    mov $6,0
     mov $1,5
-    mov $3,10
-    mov $1,$1
-    mov $4,2
     cmp $3,$9
-    mul $3,2
-    sub $5,4
     mul $0,2
-    mov $2,9
-    mov $2,5
-    mod $9,5
-    add $5,5
     mul $1,2
-    pow $3,$2
     add $1,9
-    div $3,8
-    mov $7,$0
     mul $1,$0
     mov $6,8
-    mov $7,8
     add $3,8
-    mov $8,2
-    cmp $0,10
-    add $0,7
-    mov $10,$9
-    lpb $9,6
-      div $4,$1
-      mov $6,7
-      sub $10,$7
-      mov $3,1
-      mov $10,$9
-      mul $6,$10
-      mul $9,2
-      mul $0,$1
-      sub $5,$1
-      mul $5,$6
-      div $3,9
-      add $2,6
-      sub $5,4
-      pow $4,$4
-      add $3,$1
-      lpb $2,7
-        add $8,8
-        pow $10,2
-        gcd $3,$6
-        sub $8,$1
-        pow $5,9
-        sub $5,1
-        pow $2,2
-        add $4,$10
-        div $8,5
-        mul $5,3
-        fac $10
-        add $0,7
-        div $7,$10
-        div $1,2
-        sub $5,2
-        pow $5,$0
-        mod $4,2
-        mov $6,5
-        add $4,10
-        cmp $8,8
-        sub $8,$1
-        mul $6,5
-        mov $3,$2
-        mul $4,$3
-      lpe
-      add $1,$5
-      sub $1,6
-      add $6,$10
-      pow $4,2
-      div $7,$0
-      sub $2,8
-      sub $4,8
-      pow $5,$7
-    lpe
-    sub $7,1
     div $1,$6
-    gcd $9,$6
-    pow $8,$7
-    sub $4,1
-    mul $0,$8
     div $1,$3
-    mod $4,$9
-    mov $9,0
-    lpb $8,9
-      mov $4,2
-      sub $5,3
-      add $5,$3
-    lpe
-    mov $8,$7
-    mul $6,9
-    fac $7
-    mod $6,$7
-    add $6,3
-    sub $5,$5
-    mov $20,$19
-    lpb $20,1
-      mov $18,$1
-      sub $20,1
+    mov $11,$10
+    lpb $11,1
+      mov $7,$1
+      sub $11,1
     lpe
   lpe
-  lpb $17,1
-    sub $18,$1
-    mov $17,0
+  lpb $2,1
+    sub $7,$1
+    mov $2,0
   lpe
-  mov $1,$18
+  mov $1,$7
   add $1,1
-  add $22,$1
+  add $5,$1
 lpe
-mov $1,$22
+mov $1,$5

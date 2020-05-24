@@ -1,0 +1,137 @@
+; A054498: Number of symmetric nonnegative integer 8 X 8 matrices with sum of elements equal to 4*n, under action of dihedral group D_4.
+; 1,4,16,44,116,260,560,1100,2090,3740,6512,10868,17732,28028,43472,65780,97955,143000,205920,291720,408408,563992,770848,1041352,1394068,1847560,2428960,3165400,4095640,5258440,6708064,8498776,10705189,13401916,16689904
+
+mov $17,$0
+mov $19,$0
+add $19,1
+lpb $19,1
+  clr $0,17
+  sub $19,1
+  mov $0,$17
+  sub $0,$19
+  mov $14,$0
+  mov $16,$0
+  add $16,1
+  lpb $16,1
+    clr $0,14
+    sub $16,1
+    mov $0,$14
+    sub $0,$16
+    mov $11,$0
+    mov $13,$0
+    add $13,1
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      sub $0,$13
+      mov $9,9
+      sub $9,8
+      mov $8,$9
+      mov $5,$8
+      mov $2,9
+      mov $8,5
+      mov $7,5
+      mul $7,$9
+      mul $5,$2
+      sub $8,4
+      mov $7,3
+      div $9,2
+      div $0,2
+      mov $10,$9
+      mov $2,$0
+      pow $5,$10
+      mov $3,6
+      add $8,$10
+      bin $2,7
+      mov $7,5
+      mov $6,$0
+      gcd $5,$9
+      mul $9,5
+      sub $10,1
+      div $5,2
+      mul $5,$6
+      mov $8,5
+      add $6,6
+      mov $4,6
+      bin $6,$3
+      mov $7,$0
+      sub $10,6
+      cmp $9,$0
+      mov $9,5
+      lpb $2,1
+        mov $1,$9
+        mov $7,5
+        mul $10,2
+        mov $10,$1
+        mod $8,$7
+        cmp $0,8
+        mod $10,2
+        lpb $4,1
+          sub $1,6
+          mov $0,2
+          mul $3,$8
+          sub $4,$5
+          mov $3,$0
+          sub $0,7
+          mov $1,6
+          sub $5,1
+          pow $6,$10
+          pow $0,2
+          cmp $6,$0
+          mov $1,$2
+          add $7,$4
+        lpe
+        div $9,2
+        div $3,$3
+        lpb $5,1
+          sub $5,$5
+          gcd $8,7
+          mul $4,$3
+          pow $0,3
+          pow $5,$7
+          div $4,2
+          pow $4,$10
+          mul $9,2
+          mul $3,4
+          div $7,10
+          mul $7,8
+          div $4,4
+        lpe
+        mul $0,2
+        sub $3,$3
+        add $10,$7
+        mov $5,3
+        bin $1,$5
+        pow $8,$3
+        mov $9,5
+        div $9,2
+        mul $9,2
+        add $10,6
+        mov $10,$0
+        mul $2,$4
+        lpb $6,1
+          cmp $6,$4
+          sub $6,$5
+          cmp $5,2
+          bin $6,4
+          pow $0,$8
+          mov $9,7
+          mod $10,$4
+        lpe
+        sub $2,1
+        mov $1,$5
+        mov $7,$1
+        sub $5,2
+      lpe
+      mov $7,$9
+      mov $1,$6
+      add $12,$1
+    lpe
+    mov $1,$12
+    add $15,$1
+  lpe
+  mov $1,$15
+  add $18,$1
+lpe
+mov $1,$18

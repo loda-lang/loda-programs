@@ -1,0 +1,105 @@
+; A040472: Continued fraction for sqrt(495).
+; 22,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44,4,44
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $8,$0
+  mov $6,$8
+  cmp $0,$0
+  mov $3,$0
+  mov $2,2
+  mov $7,5
+  mov $4,4
+  sub $2,3
+  sub $7,5
+  div $8,2
+  div $6,2
+  mov $5,$0
+  mul $6,$4
+  mod $5,5
+  bin $8,$8
+  pow $2,4
+  pow $2,6
+  mul $0,7
+  div $3,$8
+  fac $7
+  sub $2,$0
+  gcd $0,$5
+  add $6,$0
+  mov $4,5
+  mul $5,$6
+  mov $1,5
+  add $3,5
+  sub $2,$0
+  lpb $0,1
+    mul $3,$7
+    fac $2
+    div $6,2
+    sub $7,1
+    cmp $1,4
+    sub $0,$1
+    mov $4,3
+    cmp $0,$8
+    mul $2,8
+    add $5,$2
+    mov $2,$0
+    mul $7,2
+    div $3,8
+    sub $0,1
+    mov $1,$8
+    gcd $0,7
+    gcd $7,4
+    pow $8,5
+    mov $5,0
+    mul $0,2
+    add $5,$0
+    cmp $6,$5
+    sub $3,6
+    div $7,5
+    cmp $2,$6
+    div $4,8
+    mov $8,8
+    sub $7,$7
+    mov $1,$3
+    sub $3,1
+    sub $4,$7
+    pow $7,$7
+    fac $6
+    fac $3
+    add $6,1
+    sub $1,4
+    mul $5,$1
+    mul $6,6
+    add $8,1
+    gcd $1,$5
+    mov $7,7
+    mov $8,$3
+    add $6,$6
+  lpe
+  mul $6,$1
+  add $5,$4
+  mov $3,7
+  add $1,$6
+  add $6,4
+  mul $1,$4
+  add $5,$3
+  mov $1,$6
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
+mul $1,2
+add $1,4
