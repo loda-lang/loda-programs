@@ -1,0 +1,86 @@
+; A179060: Number of non-attacking placements of 5 rooks on an n X n board.
+; 0,0,0,0,120,4320,52920,376320,1905120,7620480,25613280,75271680,198764280,480960480,1082161080,2289530880,4594961280,8809274880,16225246080,28844881920,49689816120,83217546720,135870624120
+
+mov $3,$0
+mov $6,5
+pow $0,$6
+mov $2,8
+div $2,2
+mov $1,8
+mov $4,2
+mov $5,3
+mov $7,0
+mov $8,$4
+mov $5,$5
+bin $2,4
+gcd $0,$6
+cmp $4,$7
+add $4,8
+sub $1,3
+mov $5,2
+add $5,$1
+add $3,$7
+add $1,1
+mul $7,$4
+sub $2,2
+div $0,$8
+sub $0,$3
+add $0,7
+div $2,$6
+add $2,1
+add $0,$7
+add $3,1
+gcd $4,3
+bin $3,5
+mov $6,$3
+add $4,$8
+fac $8
+div $7,$5
+fac $7
+fac $2
+gcd $2,5
+mov $6,$4
+bin $5,8
+sub $6,$7
+sub $4,$0
+sub $2,2
+pow $4,$5
+div $6,2
+gcd $7,6
+pow $4,6
+sub $4,$7
+mul $2,2
+pow $3,2
+pow $8,$0
+pow $2,3
+mul $3,2
+sub $7,4
+mod $4,5
+sub $6,6
+mov $2,$6
+sub $2,6
+add $7,7
+sub $8,1
+sub $2,6
+lpb $0,1
+  sub $0,1
+  add $0,$4
+  mov $6,5
+  mov $8,2
+  mod $8,4
+  mov $2,$8
+  cmp $4,5
+  mul $1,2
+  sub $8,8
+  mov $5,$3
+  sub $4,$2
+  mod $3,2
+  div $2,2
+  div $0,$7
+  sub $8,$3
+  sub $1,$7
+lpe
+add $2,5
+mov $1,$5
+div $1,2
+mul $1,120

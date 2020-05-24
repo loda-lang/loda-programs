@@ -1,0 +1,12 @@
+; A240440: Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
+; 0,0,15,105,420,1260,3150,6930,13860,25740,45045,75075,120120,185640,278460,406980,581400,813960,1119195,1514205,2018940,2656500,3453450,4440150,5651100,7125300,8906625,11044215,13592880,16613520,20173560,24347400,29216880
+
+mov $2,$0
+cmp $2,$0
+add $0,4
+add $2,2
+bin $0,6
+add $0,$2
+mov $1,$0
+sub $1,3
+mul $1,15

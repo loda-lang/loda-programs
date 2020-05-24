@@ -1,0 +1,86 @@
+; A001700: a(n) = binomial(2n+1, n+1): number of ways to put n+1 indistinguishable balls into n+1 distinguishable boxes = number of (n+1)-st degree monomials in n+1 variables = number of monotone maps from 1..n+1 to 1..n+1.
+; 1,3,10,35,126,462,1716,6435,24310,92378,352716,1352078,5200300,20058300,77558760,300540195,1166803110,4537567650,17672631900,68923264410,269128937220,1052049481860,4116715363800,16123801841550,63205303218876,247959266474052
+
+mov $4,0
+mov $8,1
+mul $8,5
+mov $2,$8
+mov $6,6
+add $0,1
+mov $3,7
+mov $3,2
+mov $7,$0
+mov $3,$4
+mov $4,$4
+sub $3,$0
+gcd $6,7
+pow $6,2
+mul $0,2
+mov $6,5
+mul $8,$6
+mul $3,8
+mul $3,$2
+sub $4,5
+mov $8,$4
+add $3,$8
+mov $8,$4
+bin $0,$7
+gcd $7,$8
+mov $1,$6
+div $1,4
+sub $0,$1
+sub $6,3
+mul $3,$3
+mov $1,$8
+mul $0,2
+lpb $0,1
+  add $7,7
+  gcd $4,$0
+  sub $2,5
+  mov $5,$2
+  gcd $5,$7
+  sub $5,8
+  bin $2,6
+  add $5,1
+  div $3,6
+  add $2,5
+  mov $5,8
+  mov $2,$6
+  sub $7,8
+  mov $6,$0
+  sub $0,1
+  mul $7,2
+  sub $4,$7
+  mul $3,$8
+  pow $5,2
+  cmp $4,$7
+  sub $8,1
+  pow $3,2
+  div $5,6
+  mov $4,4
+  sub $7,8
+  add $6,8
+  mod $4,2
+  add $5,8
+  mov $7,4
+  mul $8,$6
+  mul $5,$1
+  gcd $4,2
+  div $7,7
+  fac $3
+  pow $3,5
+  gcd $8,3
+  mul $5,$5
+  add $0,5
+lpe
+mul $1,6
+mul $6,$5
+add $6,8
+mov $2,$6
+add $3,$6
+add $7,6
+pow $3,3
+mov $1,$0
+sub $1,2
+div $1,4
+add $1,1

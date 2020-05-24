@@ -1,88 +1,12 @@
 ; A010937: Binomial coefficient C(21,n).
 ; 1,21,210,1330,5985,20349,54264,116280,203490,293930,352716,352716,293930,203490,116280,54264,20349,5985,1330,210,21,1
 
-mov $9,$0
-mov $7,3
-mov $1,$7
-mov $2,$1
-gcd $7,4
-mov $1,$1
-mov $4,$2
-mul $1,8
-div $7,2
-mov $8,6
-mul $2,7
+mov $2,21
 bin $2,$0
 sub $2,1
-pow $4,$7
-mul $0,$0
-mov $3,$8
-mov $1,$0
-mov $5,5
-mul $0,3
-mod $3,3
-mov $5,$1
-mul $1,$3
-mov $6,3
-div $3,4
-sub $1,5
-mov $8,$2
-sub $5,$0
-mul $4,2
-fac $4
-mod $7,4
-mul $2,2
-mov $0,6
-mul $2,$1
-fac $3
-pow $6,$1
-mov $3,$1
-add $7,4
-sub $5,8
-gcd $1,$0
-add $1,$8
-add $1,1
-mul $6,2
-sub $3,$5
-mul $7,$0
-add $5,$6
-lpb $0,1
-  mod $1,$5
-  add $4,6
-  pow $2,$1
-  mod $4,8
-  cmp $3,$6
-  gcd $8,$6
-  mul $8,$3
-  sub $3,$2
-  sub $7,$4
-  pow $0,8
-  mul $5,$0
-  fac $2
-  pow $1,$2
-  gcd $3,2
-  mul $6,2
-  pow $4,$5
-  cmp $3,4
-  div $7,2
-  div $1,2
-  pow $3,2
-  sub $0,1
-  mov $1,$1
-  pow $2,4
-  div $6,2
-lpe
-sub $1,7
-mul $8,$6
-add $8,7
-sub $4,$4
 mov $3,$2
-add $8,2
-sub $5,2
-pow $6,3
-mul $4,$5
-add $5,$1
+mov $0,6
+gcd $1,$0
+add $1,$3
+sub $1,6
 add $1,1
-mov $10,$9
-mul $10,$9
-mul $10,$9

@@ -1,115 +1,17 @@
 ; A171445: Sequence whose G.f is given by f(z)=(1+z)^(24)/(1-z).
 ; 1,25,301,2325,12951,55455,190051,536155,1271626,2579130,4540386,7036530,9740686,12236830,14198086,15505590,16241061,16587165,16721761,16764265,16774891,16776915,16777191,16777215,16777216,16777216
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
+mov $2,$0
+mov $3,$0
+add $3,1
+lpb $3,1
+  sub $3,1
+  mov $0,$2
+  sub $0,$3
   mov $4,3
-  mov $8,$0
-  mov $5,6
-  mov $3,1
-  add $5,$5
-  mul $5,$8
-  mov $10,4
-  mov $7,1
-  add $8,8
-  add $3,7
-  mov $6,$3
   mul $4,8
-  add $3,$0
-  mov $3,3
-  cmp $6,$0
-  mov $9,1
-  div $7,2
-  pow $3,$9
-  add $7,2
-  mov $1,10
   bin $4,$0
-  sub $1,$0
-  add $7,10
-  pow $10,8
-  mul $8,9
-  div $8,8
-  mov $2,10
-  add $6,1
-  pow $8,2
-  add $6,9
-  div $8,$8
-  cmp $7,$8
-  cmp $2,8
-  cmp $7,6
-  add $8,3
-  add $8,1
-  cmp $1,$10
-  mov $1,1
-  gcd $0,9
-  mul $7,2
-  mov $5,$10
-  mod $0,10
-  add $0,1
-  pow $8,10
-  lpb $0,1
-    mod $9,$10
-    mov $4,$10
-    add $2,9
-    sub $7,3
-    mod $6,4
-    mov $6,$3
-    mod $4,7
-    add $8,1
-    gcd $5,$6
-    pow $6,2
-    div $0,8
-    mul $7,$5
-    bin $4,$0
-    mul $1,$3
-    pow $10,$9
-    mov $8,$3
-    div $6,$2
-    mul $5,$1
-    mul $9,3
-    gcd $7,$3
-    mod $0,6
-    add $5,$4
-    sub $10,5
-    mul $5,$9
-    mov $1,8
-    sub $0,1
-    div $8,6
-    div $2,9
-    sub $7,6
-    sub $2,1
-    gcd $3,$7
-    div $5,4
-    cmp $4,4
-    pow $7,9
-    div $10,2
-    gcd $0,$9
-    mov $6,2
-    add $3,4
-    pow $3,$1
-    sub $10,$8
-    div $10,4
-    pow $1,8
-    sub $4,10
-    div $5,5
-    mul $8,4
-    mov $9,$10
-    add $5,$5
-    mul $0,$1
-    add $10,$0
-    div $1,4
-  lpe
-  add $9,$10
-  mod $1,$9
-  div $7,$1
-  pow $0,$0
   mov $1,$4
-  add $12,$1
+  add $5,$1
 lpe
-mov $1,$12
+mov $1,$5
