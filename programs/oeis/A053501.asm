@@ -1,0 +1,86 @@
+; A053501: Number of degree-n permutations of order dividing 11.
+; 1,1,1,1,1,1,1,1,1,1,1,3628801,43545601,283046401,1320883201,4953312001,15850598401,44910028801,115482931201,274271961601,609493248001,1279935820801
+
+mov $7,7
+mul $7,2
+mov $5,$0
+gcd $0,$5
+div $0,$7
+mov $8,8
+mov $8,4
+mod $0,5
+mul $8,6
+mov $2,$7
+mul $8,$5
+mov $1,$5
+mul $5,$5
+mov $6,7
+mov $6,$7
+mul $5,8
+mov $5,2
+mul $0,5
+div $2,5
+add $6,4
+add $8,3
+add $5,6
+mov $4,0
+add $0,6
+div $4,8
+add $2,$0
+div $7,$0
+mul $2,$7
+mov $8,1
+mov $0,5
+mov $3,4
+lpb $0,1
+  pow $6,7
+  add $7,$5
+  sub $8,2
+  add $1,$0
+  mod $1,$3
+  add $8,$3
+  sub $0,8
+  div $5,2
+  add $7,$5
+  mul $0,$2
+  mov $3,7
+  add $4,2
+  mov $3,7
+  sub $2,1
+  mov $5,$7
+  mov $8,$1
+  pow $6,$0
+  mov $0,$8
+  sub $0,8
+  div $7,$3
+  cmp $3,8
+  div $8,$7
+  add $0,$5
+  sub $0,1
+  mod $7,$7
+  mov $3,$4
+  add $4,$1
+  mul $1,4
+  add $0,7
+  fac $7
+  div $5,$0
+  cmp $4,6
+lpe
+mul $7,2
+sub $2,8
+add $6,4
+div $6,2
+sub $4,$2
+bin $1,$6
+mod $3,$2
+fac $3
+pow $5,$4
+mul $1,2
+add $7,$4
+gcd $8,$0
+mod $5,7
+div $8,4
+mul $6,$3
+div $1,2
+mul $1,3628800
+add $1,1
