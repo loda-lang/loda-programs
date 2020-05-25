@@ -81,7 +81,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302406](http://oeis.org/A302406) ([L11 program](A302406.asm)): Total domination number of the n X n torus grid graph.
 * [A302488](http://oeis.org/A302488) ([L08 program](A302488.asm)): Total domination number of the n X n grid graph.
 * [A302507](http://oeis.org/A302507) ([L04 program](A302507.asm)): a(n) = 4*(3^n-1).
-* [A302537](http://oeis.org/A302537) ([L06 program](A302537.asm)): a(n) = (n^2 + 13*n + 2)/2.
+* [A302537](http://oeis.org/A302537) ([L04 program](A302537.asm)): a(n) = (n^2 + 13*n + 2)/2.
 * [A302563](http://oeis.org/A302563) ([L15 program](A302563.asm)): Numbers whose digital root is equal to their number of digits.
 * [A302647](http://oeis.org/A302647) ([L18 program](A302647.asm)): a(n) = (2*n^2*(n^2 - 3) - (2*n^2 + 1)*(-1)^n + 1)/64.
 * [A302650](http://oeis.org/A302650) ([L09 program](A302650.asm)): Number of minimal total dominating sets in the n-barbell graph.
@@ -625,6 +625,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322598](http://oeis.org/A322598) ([L31 program](A322598.asm)): a(n) is the number of unlabeled rank-3 graded lattices with 3 coatoms and n atoms.
 * [A322675](http://oeis.org/A322675) ([L13 program](A322675.asm)): a(n) = n * (4*n + 3)^2.
 * [A322677](http://oeis.org/A322677) ([L49 program](A322677.asm)): a(n) = 16 * n * (n+1) * (2*n+1)^2.
+* [A322783](http://oeis.org/A322783) ([L46 program](A322783.asm)): a(n) = 1 - n + (2^(n+2) - (-1)^n)/3.
 * [A322830](http://oeis.org/A322830) ([L11 program](A322830.asm)): a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
 * [A322832](http://oeis.org/A322832) ([L10 program](A322832.asm)): Values x + y, where the ordered pairs (x,y) are sorted first by maximal coordinate and then lexicographically.
 * [A322938](http://oeis.org/A322938) ([L06 program](A322938.asm)): a(n) = binomial(2*n + 2, n + 2) - 1.

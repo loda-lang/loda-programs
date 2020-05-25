@@ -1755,7 +1755,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136157](http://oeis.org/A136157) ([L12 program](A136157.asm)): Triangle by columns, (3, 1, 0, 0, 0,...) in every column.
 * [A136188](http://oeis.org/A136188) ([L05 program](A136188.asm)): Digital roots of the Fermat numbers in A000215(n).
 * [A136252](http://oeis.org/A136252) ([L08 program](A136252.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3).
-* [A136254](http://oeis.org/A136254) ([L08 program](A136254.asm)): Generator for the finite sequence A053016.
+* [A136254](http://oeis.org/A136254) ([L07 program](A136254.asm)): Generator for the finite sequence A053016.
 * [A136272](http://oeis.org/A136272) ([L07 program](A136272.asm)): Waterbird take-off sequence. Complement of A166021.
 * [A136289](http://oeis.org/A136289) ([L05 program](A136289.asm)): Start with three pennies touching each other on a tabletop. In each generation, add pennies subject to the rule that a penny can be placed only when (at least) two pennies are already in position to determine its position; sequence gives number of pennies added at generation n.
 * [A136290](http://oeis.org/A136290) ([L06 program](A136290.asm)): a(0)=1, a(1)=3, a(2)=9, a(3)=12, a(4)=15; thereafter a(n) = a(n-1)+a(n-3)-a(n-4).
@@ -1989,6 +1989,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140978](http://oeis.org/A140978) ([L09 program](A140978.asm)): Repeat (n+1)^2 n times.
 * [A141015](http://oeis.org/A141015) ([L20 program](A141015.asm)): a(0) = 0, a(1) = 1, a(2) = 2; for n > 2, a(n) = a(n-1) + 2*a(n-2) + a(n-3).
 * [A141023](http://oeis.org/A141023) ([L04 program](A141023.asm)): a(n) = 2^n - (3-(-1)^n)/2.
+* [A141025](http://oeis.org/A141025) ([L42 program](A141025.asm)): a(n) = (2^(2+n)-(-1)^n)/3 - 2*n.
 * [A141044](http://oeis.org/A141044) ([L03 program](A141044.asm)): Two 2's followed by all 1's.
 * [A141046](http://oeis.org/A141046) ([L03 program](A141046.asm)): a(n) = 4*n^4.
 * [A141104](http://oeis.org/A141104) ([L13 program](A141104.asm)): Lower Even Swappage of Upper Wythoff Sequence.
@@ -3364,12 +3365,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166781](http://oeis.org/A166781) ([L10 program](A166781.asm)): Number of nX3 1..2 arrays containing at least one of each value, all equal values connected, and rows considered as a single number in nondecreasing order.
 * [A166796](http://oeis.org/A166796) ([L12 program](A166796.asm)): Number of nX2 1..3 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166805](http://oeis.org/A166805) ([L04 program](A166805.asm)): Number of n X 4 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
-* [A166808](http://oeis.org/A166808) ([L11 program](A166808.asm)): Number of n X 5 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
+* [A166808](http://oeis.org/A166808) ([L06 program](A166808.asm)): Number of n X 5 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166810](http://oeis.org/A166810) ([L08 program](A166810.asm)): Number of n X 6 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166812](http://oeis.org/A166812) ([L06 program](A166812.asm)): Number of n X 7 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166813](http://oeis.org/A166813) ([L08 program](A166813.asm)): Number of n X 8 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166814](http://oeis.org/A166814) ([L13 program](A166814.asm)): Number of nX2 1..3 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in increasing order.
-* [A166830](http://oeis.org/A166830) ([L08 program](A166830.asm)): Number of n X 3 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nonincreasing order.
+* [A166830](http://oeis.org/A166830) ([L04 program](A166830.asm)): Number of n X 3 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nonincreasing order.
 * [A166863](http://oeis.org/A166863) ([L10 program](A166863.asm)): a(1)= 1; a(2)= 5; thereafter a(n)= a(n-1) + a(n-2) + 5.
 * [A166873](http://oeis.org/A166873) ([L06 program](A166873.asm)): a(n) = a(n-1) + 12*n for n > 1; a(1) = 1.
 * [A166876](http://oeis.org/A166876) ([L13 program](A166876.asm)): a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
@@ -3954,6 +3955,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173196](http://oeis.org/A173196) ([L08 program](A173196.asm)): Partial sums of A002620.
 * [A173200](http://oeis.org/A173200) ([L08 program](A173200.asm)): Solutions y of the Mordell equation y^2 = x^3 - 3a^2 - 1 for a = 0,1,2, ... (solutions x are given by A053755).
 * [A173202](http://oeis.org/A173202) ([L10 program](A173202.asm)): Solutions y of the Mordell equation y^2 = x^3 - 3a^2 + 1 for a = 0,1,2, ... (solutions x are given by the sequence A000466)
+* [A173246](http://oeis.org/A173246) ([L22 program](A173246.asm)): Expansion sequence of p(x)=(x + 1)^50/Sum[x^i, {i, 0, 50}];
 * [A173254](http://oeis.org/A173254) ([L12 program](A173254.asm)): a(n) = a(n-1) + a(n-2) - [a(n-2)/2] - [a(n-4)/2].
 * [A173259](http://oeis.org/A173259) ([L04 program](A173259.asm)): Period 3: repeat [4, 1, 4].
 * [A173263](http://oeis.org/A173263) ([L11 program](A173263.asm)): Successive numbers n such that ChebyshevT[n/2, n] is not an integer.

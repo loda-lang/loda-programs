@@ -176,7 +176,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A208088](http://oeis.org/A208088) ([L23 program](A208088.asm)): Number of 7 X (n+1) 0..1 arrays with every 2 X 2 subblock having the same number of equal edges as its horizontal neighbors and a different number from its vertical neighbors, and new values 0..1 introduced in row major order.
 * [A208138](http://oeis.org/A208138) ([L09 program](A208138.asm)): Number of n X 4 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
 * [A208139](http://oeis.org/A208139) ([L63 program](A208139.asm)): Number of n X 5 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
-* [A208140](http://oeis.org/A208140) ([L11 program](A208140.asm)): Number of n X 6 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
+* [A208140](http://oeis.org/A208140) ([L07 program](A208140.asm)): Number of n X 6 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
 * [A208176](http://oeis.org/A208176) ([L14 program](A208176.asm)): a(n) = F(n+1)^2, if n>=0 is even (F=A000045) and a(n) = (L(2n+2)+8)/5, if n is odd (L=A000204).
 * [A208309](http://oeis.org/A208309) ([L10 program](A208309.asm)): Number of n X 3 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward neighbors.
 * [A208375](http://oeis.org/A208375) ([L11 program](A208375.asm)): Number of n X 4 0..1 arrays avoiding 0 0 0 and 1 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
@@ -670,7 +670,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A221907](http://oeis.org/A221907) ([L09 program](A221907.asm)): 5^n + 5*n.
 * [A221908](http://oeis.org/A221908) ([L11 program](A221908.asm)): 6^n + 6*n.
 * [A221912](http://oeis.org/A221912) ([L05 program](A221912.asm)): Partial sums of floor(n/12).
-* [A222001](http://oeis.org/A222001) ([L08 program](A222001.asm)): Number of n X 3 arrays with each row a permutation of 1..3 having at least as many downsteps as the preceding row, with rows in lexicographically nonincreasing order.
+* [A222001](http://oeis.org/A222001) ([L04 program](A222001.asm)): Number of n X 3 arrays with each row a permutation of 1..3 having at least as many downsteps as the preceding row, with rows in lexicographically nonincreasing order.
 * [A222170](http://oeis.org/A222170) ([L04 program](A222170.asm)): a(n) = n^2 + 2*floor(n^2/3).
 * [A222256](http://oeis.org/A222256) ([L11 program](A222256.asm)): Lexicographically earliest injective sequence of nonnegative integers such that the sum of 6 consecutive terms is always divisible by 6.
 * [A222257](http://oeis.org/A222257) ([L13 program](A222257.asm)): Lexicographically earliest injective sequence of positive integers such that the sum of 6 consecutive terms is always divisible by 6.
@@ -723,6 +723,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225000](http://oeis.org/A225000) ([L04 program](A225000.asm)): Duplicate of A047211.
 * [A225001](http://oeis.org/A225001) ([L12 program](A225001.asm)): Duplicate of A047203.
 * [A225002](http://oeis.org/A225002) ([L04 program](A225002.asm)): Duplicate of A047290.
+* [A225015](http://oeis.org/A225015) ([L78 program](A225015.asm)): Number of sawtooth patterns of length 1 in all Dyck paths of semilength n.
 * [A225126](http://oeis.org/A225126) ([L05 program](A225126.asm)): Central terms of the triangle in A048152.
 * [A225144](http://oeis.org/A225144) ([L21 program](A225144.asm)): a(n) = Sum_{i=n..2*n} i^2*(-1)^i.
 * [A225232](http://oeis.org/A225232) ([L16 program](A225232.asm)): The number of FO3C2 moves required to restore a packet of n playing cards to its original state (order and orientation).
@@ -1040,6 +1041,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A238410](http://oeis.org/A238410) ([L07 program](A238410.asm)): a(n) = floor((3(n-1)^2 + 1)/2).
 * [A238411](http://oeis.org/A238411) ([L07 program](A238411.asm)): a(n) = 2*n*floor(n/2).
 * [A238471](http://oeis.org/A238471) ([L23 program](A238471.asm)): C(5n+6, 4)/5 for n >= 0.
+* [A238472](http://oeis.org/A238472) ([L09 program](A238472.asm)): C(5*n+7, 4)/5  for n>= 0.
 * [A238473](http://oeis.org/A238473) ([L11 program](A238473.asm)): C(5*n+8, 4)/5 for n>= 0.
 * [A238477](http://oeis.org/A238477) ([L03 program](A238477.asm)): a(n) = 32*n - 27 for n >= 1. Second column of triangle A238475.
 * [A238531](http://oeis.org/A238531) ([L07 program](A238531.asm)): Expansion of (1 - x + x^2)^2 / (1 - x)^3 in powers of x.
@@ -1076,7 +1078,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240277](http://oeis.org/A240277) ([L13 program](A240277.asm)): Minimal number of people such that exactly n days are required to spread gossip.
 * [A240434](http://oeis.org/A240434) ([L13 program](A240434.asm)): Binomial transform of the sum of the first n even squares (A002492).
 * [A240438](http://oeis.org/A240438) ([L08 program](A240438.asm)): Greatest minimal difference between numbers of adjacent cells in a regular hexagonal honeycomb of order n with cells numbered from 1 through the total number of cells, the order n corresponding to the number of cells on one side of the honeycomb.
-* [A240440](http://oeis.org/A240440) ([L09 program](A240440.asm)): Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
+* [A240440](http://oeis.org/A240440) ([L07 program](A240440.asm)): Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
 * [A240506](http://oeis.org/A240506) ([L11 program](A240506.asm)): Number of length-n gap-free words on {1,2,3}.
 * [A240530](http://oeis.org/A240530) ([L04 program](A240530.asm)): a(n) = 4*(2*n)! / (n!)^2.
 * [A240567](http://oeis.org/A240567) ([L16 program](A240567.asm)): a(n) = optimal number of tricks to throw in the game of One Round War (with n cards) in order to maximize the expected number of tricks won.
@@ -2344,7 +2346,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A278816](http://oeis.org/A278816) ([L05 program](A278816.asm)): Numbers that can be produced from their own digits by applying one or more of the eight operations {+, -, *, /, sqrt(), ^, !, concat11()}, with no operation used more than once, where "concat11()" means the operation of concatenating two single digits.
 * [A278831](http://oeis.org/A278831) ([L12 program](A278831.asm)): Minimal number of possible moves at the n-th ply of a chess game, excluding positions where no move is possible.
 * [A279019](http://oeis.org/A279019) ([L03 program](A279019.asm)): Least possible number of diagonals of simple convex polyhedron with n faces.
-* [A279030](http://oeis.org/A279030) ([L16 program](A279030.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 129", based on the 5-celled von Neumann neighborhood.
+* [A279030](http://oeis.org/A279030) ([L07 program](A279030.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 129", based on the 5-celled von Neumann neighborhood.
 * [A279075](http://oeis.org/A279075) ([L14 program](A279075.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/5) requires n steps to reach 0.
 * [A279076](http://oeis.org/A279076) ([L11 program](A279076.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/6) requires n steps to reach 0.
 * [A279077](http://oeis.org/A279077) ([L19 program](A279077.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/7) requires n steps to reach 0.
@@ -2413,6 +2415,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A282532](http://oeis.org/A282532) ([L07 program](A282532.asm)): Position where the discrete difference of the Poissonian probability distribution function with mean n takes its lowest value. In case of a tie, pick the smallest value.
 * [A282577](http://oeis.org/A282577) ([L07 program](A282577.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 553", based on the 5-celled von Neumann neighborhood.
 * [A282579](http://oeis.org/A282579) ([L16 program](A282579.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 553", based on the 5-celled von Neumann neighborhood.
+* [A282612](http://oeis.org/A282612) ([L08 program](A282612.asm)): Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to row permutations.
 * [A282622](http://oeis.org/A282622) ([L30 program](A282622.asm)): Number of digits of the representation of n in the alternating sexagesimal-decimal number system.
 * [A282702](http://oeis.org/A282702) ([L13 program](A282702.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=4, a(1)=11.
 * [A282703](http://oeis.org/A282703) ([L13 program](A282703.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=7, a(1)=26.

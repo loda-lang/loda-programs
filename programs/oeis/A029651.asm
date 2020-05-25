@@ -1,0 +1,106 @@
+; A029651: Central elements of the (1,2)-Pascal triangle A029635.
+; 1,3,9,30,105,378,1386,5148,19305,72930,277134,1058148,4056234,15600900,60174900,232676280,901620585,3500409330,13612702950,53017895700,206769793230,807386811660,3156148445580,12350146091400,48371405524650
+
+mov $6,$0
+mov $3,$0
+mov $2,4
+mov $4,6
+mov $1,$0
+mul $6,2
+mov $8,6
+bin $6,$0
+mov $0,4
+mul $4,$6
+add $1,$4
+mod $6,2
+div $4,$0
+mul $4,$2
+lpb $9,7
+  add $4,$0
+  mov $7,6
+  mov $9,9
+  cmp $3,$6
+  add $1,9
+  add $8,$1
+  mul $9,$0
+  pow $6,$1
+  lpb $8,10
+    mul $4,$0
+    bin $0,10
+    mov $2,$0
+    add $8,1
+    pow $3,$4
+    sub $7,$9
+    mov $10,0
+    mov $5,5
+    add $9,4
+    sub $1,$5
+    mul $8,$6
+    gcd $1,9
+    pow $10,2
+    sub $0,$8
+    add $9,$1
+    add $6,1
+    mov $3,2
+    sub $8,1
+    sub $8,$0
+    sub $2,4
+    add $2,$5
+    pow $9,2
+    add $2,1
+    mov $5,6
+    mul $5,$10
+    mul $1,7
+    mod $8,3
+    pow $8,$4
+    mod $9,$2
+    gcd $5,10
+    mov $3,6
+    div $0,2
+    cmp $8,6
+  lpe
+  mul $10,$7
+  mul $3,$0
+  sub $7,$7
+lpe
+sub $8,1
+mul $2,3
+cmp $3,$5
+sub $7,$3
+mov $8,$10
+div $0,9
+mul $1,$9
+sub $4,1
+mul $8,$4
+mul $4,10
+mod $5,6
+mov $3,5
+lpb $10,4
+  div $8,8
+  fac $2
+  mul $5,$0
+  div $1,$2
+  pow $1,10
+  add $7,6
+  mov $0,$10
+  pow $9,$3
+  bin $0,7
+  mov $6,$3
+  sub $3,$8
+  add $7,10
+  mul $6,$7
+lpe
+add $1,$4
+fac $9
+mod $3,3
+sub $7,$3
+mul $9,7
+mul $4,2
+mov $5,1
+add $9,1
+div $7,2
+sub $10,$4
+mov $3,3
+sub $1,30
+div $1,40
+add $1,1

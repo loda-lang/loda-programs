@@ -1,0 +1,86 @@
+; A334789: a(n) = 2^log_2*(n) where log_2*(n) = A001069(n) is the number of log_2(log_2(...log_2(n))) iterations needed to reach < 2.
+; 1,2,2,4,4,4,4,4,4,4,4,4,4,4,4,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+
+mov $8,$0
+mov $6,7
+mov $4,$6
+cmp $6,7
+sub $8,$0
+mov $7,$8
+mov $5,8
+pow $5,8
+mov $2,$0
+lpb $2,1
+  mul $4,$0
+  lpb $4,1
+    mul $4,2
+    mov $3,$8
+    sub $4,$4
+  lpe
+  sub $7,7
+  pow $4,8
+  mov $0,3
+  mov $5,4
+  mul $4,5
+  pow $8,3
+  div $5,4
+  pow $5,$4
+  mov $1,$4
+  lpb $5,1
+    mul $3,5
+    sub $5,$4
+    bin $1,4
+    sub $0,$8
+    div $4,8
+    mul $4,$2
+    sub $8,3
+    fac $6
+    gcd $6,4
+    pow $3,$4
+    mod $6,3
+    pow $3,6
+    div $8,2
+  lpe
+  mul $2,2
+  sub $0,8
+  sub $4,6
+  add $5,3
+  fac $4
+  fac $8
+  div $6,2
+  add $3,$3
+  pow $8,4
+  lpb $6,1
+    mov $6,7
+    add $1,$8
+    div $0,$1
+    fac $0
+    sub $0,3
+    sub $6,$4
+    add $8,$1
+    sub $3,$2
+    mov $1,8
+    add $5,3
+    mul $7,$2
+    div $4,2
+    mov $4,6
+    div $7,6
+    div $6,$8
+    mul $3,5
+  lpe
+  add $3,$5
+  mov $5,$8
+  sub $2,1
+  pow $4,8
+  div $2,$3
+  mod $5,8
+  gcd $2,$7
+  cmp $6,$4
+lpe
+mul $1,5
+div $3,2
+sub $7,2
+mov $1,$1
+mov $1,$3
+div $1,2
+add $1,1
