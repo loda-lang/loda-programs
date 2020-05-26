@@ -1,0 +1,95 @@
+; A024212: 2nd elementary symmetric function of first n+1 positive integers congruent to 1 mod 3.
+; 4,39,159,445,1005,1974,3514,5814,9090,13585,19569,27339,37219,49560,64740,83164,105264,131499,162355,198345,240009,287914,342654,404850,475150,554229,642789,741559,851295,972780,1106824,1254264,1415964,1592815,1785735
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $6,2
+  mov $3,$6
+  mov $2,$6
+  mov $8,$2
+  mov $1,$0
+  add $0,$6
+  mul $3,$0
+  mov $4,$1
+  add $2,2
+  mov $5,4
+  add $3,$4
+  gcd $0,$3
+  add $1,$1
+  gcd $5,$8
+  sub $6,3
+  mov $2,$0
+  mov $2,$0
+  mov $7,1
+  add $6,7
+  mul $6,7
+  sub $4,$4
+  bin $3,3
+  div $5,6
+  sub $4,$2
+  gcd $6,$5
+  lpb $2,1
+    lpb $4,1
+      pow $7,$4
+      sub $3,$8
+      pow $0,$5
+      mul $2,$4
+      mov $3,$5
+      add $6,$7
+      sub $4,$2
+      cmp $8,$2
+      gcd $1,$7
+      mov $2,$6
+    lpe
+    lpb $5,1
+      bin $1,$6
+      pow $7,5
+      mod $6,2
+      sub $5,$2
+      sub $4,$1
+      sub $0,$1
+      cmp $1,$1
+      mul $7,7
+      sub $4,7
+      sub $2,5
+      add $8,$1
+      mov $1,$7
+    lpe
+    mod $8,2
+    add $0,8
+    mov $2,4
+    mul $1,$2
+    lpb $6,1
+      pow $6,3
+      mod $2,8
+      gcd $5,2
+      mov $3,5
+      mov $7,$2
+      sub $6,$2
+      mul $7,$5
+      div $1,$6
+      fac $3
+      div $5,3
+      mod $5,$2
+      mul $5,$1
+      sub $4,$7
+    lpe
+    mov $0,4
+    sub $5,$0
+    mul $4,$1
+    mul $5,8
+    div $1,2
+    fac $2
+    sub $2,1
+    mov $2,8
+  lpe
+  mov $1,$3
+  add $10,$1
+lpe
+mov $1,$10

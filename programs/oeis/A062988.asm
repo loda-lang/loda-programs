@@ -4,5 +4,4 @@
 add $0,6
 bin $0,5
 mov $1,$0
-sub $1,6
-add $1,5
+sub $1,1

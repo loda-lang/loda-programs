@@ -120,7 +120,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A205342](http://oeis.org/A205342) ([L16 program](A205342.asm)): Number of length 5 nonnegative integer arrays starting and ending with 0 with adjacent elements unequal but differing by no more than n.
 * [A205354](http://oeis.org/A205354) ([L05 program](A205354.asm)): Number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having the same number of equal diagonal or antidiagonal elements, and new values 0..2 introduced in row major order.
 * [A205382](http://oeis.org/A205382) ([L08 program](A205382.asm)): s(k)-s(j), where (s(k),s(j)) is the least such pair for which n divides their difference, and s(j)=(2j-1)^2.
-* [A205383](http://oeis.org/A205383) ([L09 program](A205383.asm)): a(n) = (1/n)*A205382(n).
+* [A205383](http://oeis.org/A205383) ([L06 program](A205383.asm)): a(n) = (1/n)*A205382(n).
 * [A205633](http://oeis.org/A205633) ([L29 program](A205633.asm)): Expansion of f(x^3, x^7) in powers of x where f() is Ramanujan's two-variable theta function.
 * [A205646](http://oeis.org/A205646) ([L03 program](A205646.asm)): Number of empty faces in Freij's family of Hansen polytopes.
 * [A205650](http://oeis.org/A205650) ([L19 program](A205650.asm)): Period 12: repeat (1, 6, 8, 6, 1, 9, 8, 3, 1, 3, 8, 9).
@@ -1436,7 +1436,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253903](http://oeis.org/A253903) ([L10 program](A253903.asm)): The characteristic function of square pyramidal numbers.
 * [A253909](http://oeis.org/A253909) ([L03 program](A253909.asm)): 1 together with the positive squares.
 * [A253942](http://oeis.org/A253942) ([L08 program](A253942.asm)): a(n) = 3*binomial(n+1, 5).
-* [A253943](http://oeis.org/A253943) ([L09 program](A253943.asm)): a(n) = 3*binomial(n+1,6).
+* [A253943](http://oeis.org/A253943) ([L04 program](A253943.asm)): a(n) = 3*binomial(n+1,6).
 * [A253944](http://oeis.org/A253944) ([L06 program](A253944.asm)): a(n) = 3*binomial(n+1,7).
 * [A253945](http://oeis.org/A253945) ([L08 program](A253945.asm)): a(n) = 6*binomial(n+1,5).
 * [A253946](http://oeis.org/A253946) ([L09 program](A253946.asm)): a(n) = 6*binomial(n+1, 6).
@@ -2838,6 +2838,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A299289](http://oeis.org/A299289) ([L15 program](A299289.asm)): Coordination sequence for "tsi" 3D uniform tiling.
 * [A299290](http://oeis.org/A299290) ([L46 program](A299290.asm)): Partial sums of A299289.
 * [A299336](http://oeis.org/A299336) ([L26 program](A299336.asm)): Expansion of 1 / ((1 - x)^7*(1 + x)^4).
+* [A299337](http://oeis.org/A299337) ([L15 program](A299337.asm)): Expansion of 1 / ((1 - x)^7*(1 + x)^5).
 * [A299338](http://oeis.org/A299338) ([L05 program](A299338.asm)): Expansion of 1 / ((1 - x)^7*(1 + x)^6).
 * [A299641](http://oeis.org/A299641) ([L09 program](A299641.asm)): Solution (d(n)) of the system of 5 complementary equations in Comments.
 * [A299645](http://oeis.org/A299645) ([L25 program](A299645.asm)): Numbers of the form m*(8*m + 5), where m is an integer.

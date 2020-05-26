@@ -1,86 +1,25 @@
 ; A180571: The Wiener index of the graph \|/_\/_\/_..._\/_\|/ having n nodes on the horizontal path. The Wiener index of a connected graph is the sum of distances between all unordered pairs of vertices in the graph.
 ; 58,136,259,436,676,988,1381,1864,2446,3136,3943,4876,5944,7156,8521,10048,11746,13624,15691,17956,20428,23116,26029,29176,32566,36208,40111,44284,48736,53476,58513,63856,69514,75496,81811,88468,95476
 
-mov $4,4
-mov $1,2
-mov $3,$0
-add $0,$4
-mov $8,2
+add $0,4
 lpb $0,1
-  add $4,5
-  mov $5,5
   mov $6,$0
-  mod $1,2
-  sub $0,1
-  mov $2,5
-  pow $3,$4
-  add $8,$0
-  mul $3,$1
-  mov $7,1
-  fac $5
   mov $0,$4
-  div $0,$5
-  cmp $7,1
-  mul $8,7
-  fac $0
-  add $1,$5
   mov $5,$6
-  div $2,$2
-  add $8,$2
-  mul $1,$5
-  mov $8,$5
-  div $7,3
-  add $7,$2
-  pow $8,3
-  sub $3,6
-  pow $7,2
+  mov $2,$5
+  pow $2,3
 lpe
 mov $0,4
-mul $2,5
 add $0,5
-cmp $1,$6
-add $1,$2
-sub $4,$0
-mod $3,$0
 gcd $3,6
-add $4,$8
-mov $8,$0
+add $4,$2
+mov $2,$0
 div $3,2
-add $1,5
-add $0,$6
-sub $2,$3
-mod $1,$7
-gcd $7,$5
-mul $8,$6
-sub $0,$0
-fac $0
-add $4,$1
-mov $1,$8
-add $1,1
-cmp $5,1
-mov $0,0
-bin $1,$5
-cmp $2,$2
-sub $2,$2
-gcd $2,6
+mul $2,$6
 add $4,1
-div $0,2
-mod $5,6
 mod $3,2
-div $4,$1
-sub $4,$8
-add $8,3
-pow $6,$0
-mov $1,4
-sub $0,5
-mul $2,3
-mul $2,$8
-mov $5,$0
-mul $2,4
+sub $4,$2
 add $3,$4
-mov $7,6
-mul $8,2
-add $8,$6
 mov $1,$3
 sub $1,30
 div $1,2

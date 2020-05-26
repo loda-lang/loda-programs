@@ -1,0 +1,184 @@
+; A097613: a(n) = binomial(2n-3,n-1) + binomial(2n-2,n-2).
+; 1,2,7,25,91,336,1254,4719,17875,68068,260338,999362,3848222,14858000,57500460,222981435,866262915,3370764540,13135064250,51250632510,200205672810,782920544640,3064665881940,12007086477750,47081501377326,184753963255176,725510446350004
+
+mov $26,$0
+mov $28,$0
+add $28,1
+lpb $28,1
+  clr $0,26
+  sub $28,1
+  mov $0,$26
+  sub $0,$28
+  mov $23,$0
+  mov $25,$0
+  add $25,1
+  lpb $25,1
+    clr $0,23
+    sub $25,1
+    mov $0,$23
+    sub $0,$25
+    mov $19,$0
+    mov $21,2
+    lpb $21,1
+      clr $0,19
+      sub $21,1
+      mov $0,$19
+      add $0,$21
+      sub $0,1
+      mov $15,$0
+      mov $17,2
+      lpb $17,1
+        clr $0,15
+        sub $17,1
+        mov $0,$15
+        add $0,$17
+        sub $0,1
+        mov $11,$0
+        mov $13,2
+        lpb $13,1
+          clr $0,11
+          sub $13,1
+          mov $0,$11
+          add $0,$13
+          sub $0,1
+          mov $4,$0
+          mov $6,$4
+          add $4,7
+          mov $2,0
+          mov $8,7
+          mov $10,10
+          div $8,10
+          mov $1,$4
+          sub $2,$4
+          sub $8,2
+          mov $3,4
+          mul $4,3
+          add $4,2
+          div $4,6
+          add $8,$0
+          mov $6,3
+          div $6,$6
+          mov $5,$6
+          div $8,$4
+          mov $7,5
+          mod $6,4
+          fac $8
+          mul $8,2
+          mov $8,4
+          add $6,$0
+          cmp $0,$0
+          add $4,5
+          mod $3,$8
+          mul $3,6
+          pow $3,7
+          sub $0,4
+          mov $10,$5
+          mod $3,$7
+          mov $1,$6
+          mod $8,$7
+          add $3,$8
+          mov $5,$7
+          mul $2,7
+          add $3,$3
+          mul $4,$3
+          mul $8,7
+          mul $1,2
+          mod $3,3
+          mov $2,$0
+          div $5,3
+          sub $3,8
+          mov $0,$10
+          bin $1,$6
+          pow $8,$3
+          mul $0,$1
+          mov $9,8
+          mul $6,3
+          fac $8
+          gcd $10,$0
+          add $8,9
+          lpb $2,1
+            sub $5,$10
+            sub $4,3
+            mul $7,5
+            mul $4,2
+            mul $9,7
+            lpb $4,1
+              sub $3,$1
+              add $5,$3
+              sub $6,$2
+              mov $5,0
+              sub $4,$2
+              div $4,2
+              add $2,7
+              div $9,8
+              sub $3,$4
+            lpe
+            lpb $5,1
+              mul $10,$8
+              sub $8,4
+              sub $1,$2
+              sub $5,$2
+            lpe
+            lpb $6,1
+              gcd $10,2
+              sub $6,$2
+              cmp $3,9
+              mov $0,$10
+              fac $0
+              add $7,1
+              div $0,2
+              fac $10
+              gcd $6,6
+              add $9,$0
+              sub $9,$2
+            lpe
+            div $5,2
+            add $1,1
+            sub $9,1
+            sub $2,1
+            sub $2,2
+            sub $7,$8
+          lpe
+          pow $2,$8
+          mov $9,$7
+          mov $1,$0
+          mov $14,$13
+          lpb $14,1
+            mov $12,$1
+            sub $14,1
+          lpe
+        lpe
+        lpb $11,1
+          sub $12,$1
+          mov $11,0
+        lpe
+        mov $1,$12
+        mov $18,$17
+        lpb $18,1
+          mov $16,$1
+          sub $18,1
+        lpe
+      lpe
+      lpb $15,1
+        sub $16,$1
+        mov $15,0
+      lpe
+      mov $1,$16
+      mov $22,$21
+      lpb $22,1
+        mov $20,$1
+        sub $22,1
+      lpe
+    lpe
+    lpb $19,1
+      sub $20,$1
+      mov $19,0
+    lpe
+    mov $1,$20
+    div $1,2
+    add $24,$1
+  lpe
+  mov $1,$24
+  add $27,$1
+lpe
+mov $1,$27

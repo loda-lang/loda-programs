@@ -1,87 +1,12 @@
 ; A010942: Binomial coefficient C(26,n).
 ; 1,26,325,2600,14950,65780,230230,657800,1562275,3124550,5311735,7726160,9657700,10400600,9657700,7726160,5311735,3124550,1562275,657800,230230,65780,14950,2600,325,26,1
 
-mov $4,3
-mov $3,$4
-pow $3,$4
-mov $6,5
-mov $8,0
-add $8,$8
-mov $5,$3
-sub $4,4
-mov $2,2
-fac $2
-mul $4,2
-add $0,2
-add $2,8
-sub $0,1
-mov $6,$8
-mov $6,2
-sub $4,5
-mov $1,$8
-add $4,6
-bin $1,2
-sub $6,$3
-div $1,2
-add $3,$5
-sub $6,$3
-bin $5,$0
-mul $5,$0
-div $6,7
-cmp $1,$0
-sub $1,6
-mul $0,3
-add $1,$2
-mul $6,6
-div $2,2
-sub $2,4
-mul $3,5
-mov $7,5
-pow $2,$1
-lpb $0,1
-  sub $0,1
-  add $8,$7
-  add $5,$4
-  mul $3,3
-  add $2,$6
-  add $8,$2
-  cmp $1,$5
-  mod $3,8
-  div $6,$3
-  gcd $5,4
-  add $0,3
-  mul $4,3
-  div $6,$5
-lpe
-add $2,$7
-cmp $0,$4
-sub $8,8
-sub $3,$0
-pow $2,2
-mov $3,0
-mov $7,4
-cmp $4,$3
-sub $3,5
-div $6,2
-mov $2,$3
-div $1,$1
-add $6,8
-pow $0,$5
-div $2,2
-mov $1,$1
-div $8,2
-mov $5,$5
-mov $0,4
-mul $0,2
-mov $8,$2
-div $5,3
-mov $4,5
-div $8,8
-bin $6,$3
-sub $5,6
-mod $8,$1
-mov $7,0
-mov $1,$5
+mov $2,27
+add $0,1
+bin $2,$0
+mul $2,$0
+div $2,3
+mov $1,$2
 sub $1,3
 div $1,9
 add $1,1

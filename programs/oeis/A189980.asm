@@ -1,84 +1,8 @@
 ; A189980: a(n) is the number of incongruent two-color bracelets of n beads, 10 from them are black (A005515), having a diameter of symmetry.
 ; 1,1,6,6,21,21,56,56,126,126,252,252,462,462,792,792,1287,1287,2002,2002,3003,3003,4368,4368,6188,6188,8568,8568,11628,11628,15504,15504,20349,20349,26334,26334,33649,33649
 
-mov $7,6
-add $0,$7
-add $0,4
-mov $8,8
-mov $4,$0
-mov $1,4
-mov $2,2
-mov $5,$7
-pow $5,$7
-sub $2,1
-cmp $5,$4
-mov $3,$5
-add $0,$3
-gcd $2,$4
-add $1,$0
-cmp $4,$0
-div $1,$4
-sub $1,$8
-pow $1,$4
-mov $8,1
-mul $7,$8
-div $7,7
-div $4,2
-mov $2,2
-pow $7,$2
-sub $1,$0
-sub $3,$4
-cmp $8,$2
-mov $6,$0
-mov $3,2
-mod $4,4
+add $0,10
+mov $2,$0
 div $2,2
-add $7,2
-mov $3,1
-mul $2,$6
-mul $1,$6
-gcd $1,$4
-div $6,2
-add $1,$1
-bin $6,5
-sub $0,1
-div $5,2
-mul $7,$3
-add $2,$2
-pow $3,$2
-lpb $3,2
-  add $0,$8
-  sub $6,7
-  mul $2,$4
-  mul $4,$1
-  mov $4,1
-  lpb $8,$0
-    mul $4,3
-    mov $1,3
-    add $6,7
-    add $0,$4
-    sub $5,2
-    mul $3,2
-    div $1,2
-    pow $8,5
-    gcd $6,$8
-    mul $5,$4
-    sub $3,$0
-  lpe
-  mov $4,$0
-  add $7,$7
-  add $2,$5
-  mul $4,2
-lpe
-div $2,$3
-add $1,$0
-add $4,$3
-mul $5,7
-mul $1,$8
-div $8,$3
-mod $3,$7
-sub $2,$4
-add $2,$1
-fac $8
-cmp $4,1
-mov $1,$6
+bin $2,5
+mov $1,$2
