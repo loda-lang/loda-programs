@@ -1,0 +1,83 @@
+; A047171: Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-1)/2.
+; 0,0,0,2,3,9,14,34,55,125,209,461,791,1715,3002,6434,11439,24309,43757,92377,167959,352715,646645,1352077,2496143,5200299,9657699,20058299,37442159,77558759,145422674,300540194,565722719,1166803109,2203961429,4537567649
+
+mov $3,$0
+add $3,$0
+mov $5,2
+mov $8,$5
+mov $4,1
+sub $3,2
+mov $1,$0
+mov $5,$5
+mov $0,4
+div $3,4
+cmp $5,$1
+bin $1,$3
+mov $2,$0
+lpb $2,1
+  mov $6,2
+  mov $2,$8
+  lpb $4,1
+    mul $1,$6
+    cmp $1,$3
+    mov $1,7
+    pow $4,5
+    div $8,6
+    mov $7,5
+    mod $2,$7
+    div $7,3
+    mov $6,8
+    bin $0,$4
+    mod $6,7
+    add $1,$2
+    mov $0,4
+    mod $5,2
+    sub $4,$8
+    mov $3,1
+  lpe
+  add $3,$6
+  lpb $5,1
+    mul $3,3
+    mov $4,$6
+    cmp $7,$6
+    sub $5,$8
+    div $2,$3
+    div $8,8
+    add $3,$1
+    mov $5,6
+    pow $8,$2
+    sub $1,$4
+    add $1,$4
+    mul $2,$3
+    mod $8,$1
+    mul $8,$0
+    add $5,5
+    mul $2,4
+    fac $4
+    sub $7,$7
+    sub $0,$5
+    div $5,4
+    mul $4,$4
+  lpe
+  add $7,5
+  lpb $6,1
+    mov $2,$8
+    mul $4,$0
+    mul $5,$2
+    mov $8,2
+    sub $0,6
+    pow $8,$2
+    sub $6,$8
+    mul $4,5
+    sub $5,$7
+    mov $0,4
+    sub $7,1
+  lpe
+  mul $3,7
+  sub $2,1
+  mov $4,$2
+  pow $7,$4
+  bin $0,7
+  sub $4,6
+lpe
+sub $1,1

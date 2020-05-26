@@ -1,84 +1,8 @@
 ; A004311: Binomial coefficient C(2n,n-5).
 ; 1,12,91,560,3060,15504,74613,346104,1562275,6906900,30045015,129024480,548354040,2310789600,9669554100,40225345056,166509721602,686353797976,2818953098830,11541847896480
 
-mov $1,4
-sub $1,1
-mov $7,5
 mov $2,$0
-mov $6,$0
-add $0,$7
+add $0,5
 mul $0,2
 bin $0,$2
-add $6,1
-lpb $2,1
-  mul $0,8
-  mov $0,6
-  lpb $4,1
-    mov $3,$0
-    mov $4,$2
-    pow $4,3
-    mod $6,5
-    mov $8,8
-    mul $2,4
-    mov $5,2
-    gcd $7,$2
-    mul $5,$1
-    sub $2,$3
-    mov $1,$0
-  lpe
-  sub $4,5
-  add $8,1
-  add $8,7
-  mod $4,2
-  mul $7,2
-  mul $1,4
-  lpb $5,1
-    mov $8,7
-    mov $1,6
-    mod $0,4
-    add $2,$2
-    div $8,$6
-    sub $3,$7
-    mul $8,2
-    sub $4,$2
-    mov $3,4
-    add $3,$0
-    sub $6,$6
-    pow $1,5
-    add $0,$4
-    sub $5,$2
-    mov $5,2
-    gcd $0,4
-    fac $7
-    add $1,3
-    pow $1,2
-    sub $3,$2
-    div $8,$1
-  lpe
-  add $1,$0
-  lpb $6,1
-    mov $5,8
-    sub $3,$8
-    sub $6,$2
-    gcd $6,5
-    div $1,$0
-  lpe
-  pow $6,$4
-  mod $3,5
-  add $2,$7
-  mod $0,6
-  add $7,$1
-  add $2,4
-  sub $1,$6
-  mul $5,2
-  pow $7,$4
-  pow $3,$5
-  pow $5,4
-  mod $7,$1
-  sub $2,1
-  div $5,2
-  add $1,$5
-  pow $5,4
-  mov $8,$7
-lpe
 mov $1,$0

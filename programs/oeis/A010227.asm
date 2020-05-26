@@ -1,105 +1,36 @@
 ; A010227: Continued fraction for sqrt(185).
 ; 13,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1
 
-mov $9,$0
-mov $11,2
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  add $0,$11
+mov $4,$0
+mov $6,2
+lpb $6,1
+  sub $6,1
+  mov $0,$4
+  add $0,$6
   sub $0,1
   mov $2,5
   div $0,$2
   mul $2,5
-  mov $8,4
-  mov $5,1
-  gcd $0,$0
-  mov $3,$2
-  mov $4,8
   mov $5,8
   sub $2,1
-  sub $4,1
   add $2,1
   mul $2,$0
-  sub $3,$8
-  mov $6,2
-  mov $7,2
-  mov $4,$0
-  mov $3,2
-  sub $4,4
   mov $1,2
-  mul $3,$8
-  sub $8,$6
-  add $4,5
-  mov $8,$4
-  mod $0,2
-  gcd $7,$1
-  mov $6,6
   add $2,7
-  pow $3,$5
-  pow $4,$4
-  sub $4,$8
-  cmp $7,6
-  sub $4,6
-  sub $5,$7
   mul $5,$1
-  div $0,$8
-  add $4,5
-  mov $6,5
   add $2,5
   mul $5,$2
-  cmp $8,$3
-  pow $2,$0
-  sub $4,6
-  add $3,5
-  cmp $8,0
-  add $6,$6
-  add $4,5
-  div $3,$6
-  sub $7,$1
-  fac $0
-  mul $8,$0
-  mul $8,$1
-  lpb $0,1
-    mod $6,$5
-    sub $0,$0
-    div $1,2
-    add $8,$0
-    sub $0,5
-    add $4,5
-    mov $2,2
-    div $3,$8
-    mul $0,2
-    sub $0,$1
-    mov $2,$0
-    mul $3,3
-    add $6,8
-    pow $2,$6
-    pow $0,2
-    mul $6,$3
-    mov $0,1
-    pow $1,$6
-    div $2,$4
-    sub $0,1
-    add $6,$1
-    fac $7
-  lpe
-  sub $6,$2
-  div $6,$4
-  mul $6,$3
-  add $6,$6
   mov $1,$5
-  mov $12,$11
-  lpb $12,1
-    mov $10,$1
-    sub $12,1
+  mov $3,$6
+  lpb $3,1
+    mov $7,$1
+    sub $3,1
   lpe
 lpe
-lpb $9,1
-  sub $10,$1
-  mov $9,0
+lpb $4,1
+  sub $7,$1
+  mov $4,0
 lpe
-mov $1,$10
+mov $1,$7
 div $1,16
 add $1,1

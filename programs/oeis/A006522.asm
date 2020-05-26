@@ -1,0 +1,86 @@
+; A006522: 4-dimensional analog of centered polygonal numbers. Also number of regions created by sides and diagonals of a convex n-gon in general position.
+; 1,0,0,1,4,11,25,50,91,154,246,375,550,781,1079,1456,1925,2500,3196,4029,5016,6175,7525,9086,10879,12926,15250,17875,20826,24129,27811,31900,36425,41416,46904,52921,59500,66675,74481,82954,92131
+
+mov $4,7
+mov $3,$4
+mov $2,$0
+add $4,1
+gcd $3,7
+mov $8,$3
+mov $7,$3
+mov $6,$0
+mov $0,$0
+mod $6,4
+pow $2,2
+mov $1,2
+mov $5,4
+div $5,$3
+mul $0,3
+div $7,$7
+mul $3,6
+add $6,$7
+add $5,$7
+add $2,$8
+pow $6,$8
+pow $4,2
+add $3,$1
+sub $2,$0
+sub $6,$4
+mod $5,8
+mul $2,$2
+pow $5,$0
+mov $8,4
+add $8,$7
+div $0,$5
+mov $6,$8
+sub $4,3
+div $6,3
+gcd $8,$8
+mov $8,1
+sub $3,1
+add $8,$2
+div $1,$3
+pow $1,5
+sub $2,$2
+gcd $3,4
+add $3,$8
+mod $2,8
+mul $4,$5
+sub $2,2
+mov $8,$6
+sub $5,1
+sub $0,$7
+pow $5,$2
+mod $2,$6
+div $5,$8
+div $7,$6
+mul $2,2
+mov $1,5
+mul $3,$4
+sub $0,1
+cmp $0,$3
+lpb $0,1
+  sub $8,$5
+  cmp $7,$1
+  mov $8,0
+  sub $0,1
+  pow $8,8
+  mov $4,$3
+  div $6,6
+lpe
+pow $6,$3
+gcd $5,$1
+gcd $0,2
+div $7,3
+div $2,$4
+add $7,$3
+add $7,$4
+div $8,7
+fac $5
+add $3,5
+gcd $6,2
+pow $2,2
+mul $6,8
+mov $1,$3
+sub $1,1652
+div $1,1464

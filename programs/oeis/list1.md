@@ -276,7 +276,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104661](http://oeis.org/A104661) ([L02 program](A104661.asm)): Duplicate of A020725.
 * [A104675](http://oeis.org/A104675) ([L04 program](A104675.asm)): a(n) = C(n+1,n) * C(n+6,1).
 * [A104676](http://oeis.org/A104676) ([L14 program](A104676.asm)): a(n) = binomial(n+2,2) * binomial(n+7,2).
-* [A104679](http://oeis.org/A104679) ([L08 program](A104679.asm)): a(n) = C(n+5,5)*C(n+10,5).
+* [A104679](http://oeis.org/A104679) ([L05 program](A104679.asm)): a(n) = C(n+5,5)*C(n+10,5).
 * [A104686](http://oeis.org/A104686) ([L06 program](A104686.asm)): n*(n+1)/2 (mod 6).
 * [A104721](http://oeis.org/A104721) ([L19 program](A104721.asm)): Expansion of (1+x)^2/(1-4*x^2).
 * [A104738](http://oeis.org/A104738) ([L12 program](A104738.asm)): Positions of records in A104706.
@@ -320,7 +320,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105870](http://oeis.org/A105870) ([L21 program](A105870.asm)): Fibonacci sequence (mod 7).
 * [A105899](http://oeis.org/A105899) ([L04 program](A105899.asm)): Period 6: repeat [1, 1, 2, 2, 3, 3].
 * [A105938](http://oeis.org/A105938) ([L19 program](A105938.asm)): a(n) = binomial(n+2,2)*binomial(n+5,2).
-* [A105939](http://oeis.org/A105939) ([L09 program](A105939.asm)): a(n) = C(n+3,3)*C(n+6,3).
+* [A105939](http://oeis.org/A105939) ([L04 program](A105939.asm)): a(n) = C(n+3,3)*C(n+6,3).
 * [A105955](http://oeis.org/A105955) ([L16 program](A105955.asm)): a(n) = Fibonacci(n) mod 11.
 * [A105963](http://oeis.org/A105963) ([L23 program](A105963.asm)): Expansion of (1+4*x)/(1-x-3*x^2).
 * [A105994](http://oeis.org/A105994) ([L31 program](A105994.asm)): Fibonacci sequence (mod 13).
@@ -869,6 +869,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120164](http://oeis.org/A120164) ([L17 program](A120164.asm)): a(1)=6; a(n)=floor((24+sum(a(1) to a(n-1)))/4).
 * [A120212](http://oeis.org/A120212) ([L17 program](A120212.asm)): "a" values providing solution x = b in A120211 (i.e., y^2 = b^2*(a^2 - b)*(b + 1) with a, b legs in primitive Pythagorean triangles).
 * [A120275](http://oeis.org/A120275) ([L19 program](A120275.asm)): Smallest prime factor of the odd Catalan number A038003(n).
+* [A120278](http://oeis.org/A120278) ([L27 program](A120278.asm)): Sum[Sum[C(2k,k),{k,1,m}],{m,1,n}], where C(2k,k)=(2k)!/(k!)^2=A000984[k].
 * [A120323](http://oeis.org/A120323) ([L05 program](A120323.asm)): Periodic sequence 0, 3, 1, 0, 1, 3.
 * [A120324](http://oeis.org/A120324) ([L11 program](A120324.asm)): Periodic sequence 0, 1, 0, 4, 0, 1.
 * [A120325](http://oeis.org/A120325) ([L03 program](A120325.asm)): Period 6: repeat [0, 0, 1, 0, 1, 0].
@@ -1023,7 +1024,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A124011](http://oeis.org/A124011) ([L06 program](A124011.asm)): Add three, add six, add nine, ....
 * [A124072](http://oeis.org/A124072) ([L06 program](A124072.asm)): First differences of A129819.
 * [A124080](http://oeis.org/A124080) ([L04 program](A124080.asm)): 10 times triangular numbers: a(n) = 5*n*(n + 1).
-* [A124089](http://oeis.org/A124089) ([L07 program](A124089.asm)): Binomial(n,6)-1.
+* [A124089](http://oeis.org/A124089) ([L04 program](A124089.asm)): Binomial(n,6)-1.
 * [A124090](http://oeis.org/A124090) ([L04 program](A124090.asm)): C(n,7)-1.
 * [A124133](http://oeis.org/A124133) ([L08 program](A124133.asm)): a(n)=(-1/2)*sum_{i1+i2+i3=2n} ((2*n)!/(i1! i2! i3!))*B(i1) where B are the Bernoulli numbers.
 * [A124152](http://oeis.org/A124152) ([L44 program](A124152.asm)): a(n) = Fibonacci(6, n).
@@ -1103,7 +1104,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126980](http://oeis.org/A126980) ([L03 program](A126980.asm)): a(n) = 14*n + 47.
 * [A127069](http://oeis.org/A127069) ([L16 program](A127069.asm)): Number of lines in a Pauli graph of order n.
 * [A127161](http://oeis.org/A127161) ([L27 program](A127161.asm)): Integers whose aliquot sequences terminate by encountering a prime number.
-* [A127227](http://oeis.org/A127227) ([L09 program](A127227.asm)): a(n)= numerator of ((n + 3)! - (n - 3)!)/(n!).
+* [A127227](http://oeis.org/A127227) ([L06 program](A127227.asm)): a(n)= numerator of ((n + 3)! - (n - 3)!)/(n!).
 * [A127316](http://oeis.org/A127316) ([L04 program](A127316.asm)): a(n) = 2*n^2 - 4*n + 73.
 * [A127321](http://oeis.org/A127321) ([L09 program](A127321.asm)): First 4-dimensional hyper-tetrahedral coordinate; repeat m C(m+3,4) times; 4-D analog of A056556.
 * [A127330](http://oeis.org/A127330) ([L09 program](A127330.asm)): Begin with the empty sequence and a starting number s = 0. At step k (k >= 1) append the k consecutive numbers s to s+k-1 and change the starting number (for the next step) to 2s+2.
@@ -2643,7 +2644,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157660](http://oeis.org/A157660) ([L03 program](A157660.asm)): a(n) = 8000*n - 40.
 * [A157661](http://oeis.org/A157661) ([L10 program](A157661.asm)): a(n) = 80000*n^2 - 800*n + 1.
 * [A157663](http://oeis.org/A157663) ([L03 program](A157663.asm)): a(n) = 8000*n + 40.
-* [A157664](http://oeis.org/A157664) ([L25 program](A157664.asm)): a(n) = 80000*n^2 + 800*n + 1.
 * [A157666](http://oeis.org/A157666) ([L03 program](A157666.asm)): a(n) = 19683*n - 13716.
 * [A157669](http://oeis.org/A157669) ([L03 program](A157669.asm)): a(n) = 19683*n - 5967.
 * [A157671](http://oeis.org/A157671) ([L12 program](A157671.asm)): Numbers whose ternary representation begins with 2.
@@ -4056,7 +4056,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174929](http://oeis.org/A174929) ([L27 program](A174929.asm)): Partial sums of A174928.
 * [A174984](http://oeis.org/A174984) ([L17 program](A174984.asm)): Start with n, iterate the map k -> A167507(k) until we reach 3; a(n) = number of steps required.
 * [A174989](http://oeis.org/A174989) ([L15 program](A174989.asm)): Partial sums of A003602.
-* [A174994](http://oeis.org/A174994) ([L08 program](A174994.asm)): Repeat (8*n+4)^2.
+* [A174994](http://oeis.org/A174994) ([L06 program](A174994.asm)): Repeat (8*n+4)^2.
 * [A175005](http://oeis.org/A175005) ([L12 program](A175005.asm)): Expansion of x/(1 - 4*x + 3*x^2 - 2*x^3).
 * [A175109](http://oeis.org/A175109) ([L15 program](A175109.asm)): a(n) = ((2*n+1)^3+(-1)^n)/2.
 * [A175110](http://oeis.org/A175110) ([L06 program](A175110.asm)): a(n) = ((2*n+1)^4+1)/2.

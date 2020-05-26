@@ -246,6 +246,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210728](http://oeis.org/A210728) ([L12 program](A210728.asm)): a(n) = a(n-1) + a(n-2) + n + 2 with n>1, a(0)=1, a(1)=2.
 * [A210730](http://oeis.org/A210730) ([L12 program](A210730.asm)): a(n) = a(n-1) + a(n-2) + n + 2 with n>1, a(0)=a(1)=0.
 * [A210731](http://oeis.org/A210731) ([L09 program](A210731.asm)): a(n) = a(n-1) + a(n-2) + n + 3 with n>1, a(0) = a(1) = 0.
+* [A210736](http://oeis.org/A210736) ([L06 program](A210736.asm)): Expansion of (1 + sqrt( (1 + 2*x) / (1 - 2*x))) / 2 in powers of x.
 * [A210977](http://oeis.org/A210977) ([L07 program](A210977.asm)): A005475 and positive terms of A000566 interleaved.
 * [A210978](http://oeis.org/A210978) ([L15 program](A210978.asm)): A186029 and positive terms of A001106 interleaved.
 * [A210981](http://oeis.org/A210981) ([L12 program](A210981.asm)): A062725 and positive terms of A051682 interleaved.
@@ -1173,6 +1174,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244151](http://oeis.org/A244151) ([L11 program](A244151.asm)): 0-additive sequence: start with a(1) = 2; thereafter, a(n) = smallest number not already in sequence which is not the sum of any previous two terms.
 * [A244174](http://oeis.org/A244174) ([L10 program](A244174.asm)): Number of compositions of 3n in which the minimal multiplicity of parts equals n.
 * [A244239](http://oeis.org/A244239) ([L13 program](A244239.asm)): Number of partitions of n into 3 parts such that every i-th smallest part (counted with multiplicity) is different from i.
+* [A244307](http://oeis.org/A244307) ([L38 program](A244307.asm)): Sum over each antidiagonal of A244306.
 * [A244328](http://oeis.org/A244328) ([L06 program](A244328.asm)): a(1) = a(2) = 0; for n >= 3: a(n) = floor((n*(n+1)/2) / antisigma(n)) = floor(A000217(n) / A024816(n)).
 * [A244331](http://oeis.org/A244331) ([L07 program](A244331.asm)): Number of binary digits in the high-water marks of the terms of the continued fraction of the base 2 Champernowne constant.
 * [A244584](http://oeis.org/A244584) ([L04 program](A244584.asm)): a(n) = n OR 3.
@@ -1952,7 +1954,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268291](http://oeis.org/A268291) ([L17 program](A268291.asm)): a(n) = Sum_{k = 0..n} (k mod 13).
 * [A268292](http://oeis.org/A268292) ([L06 program](A268292.asm)): a(n) is the total number of isolated 1's at the boundary between n-th and (n-1)-th iterations in the pattern of A267489.
 * [A268315](http://oeis.org/A268315) ([L15 program](A268315.asm)): Decimal expansion of 256/27.
-* [A268351](http://oeis.org/A268351) ([L09 program](A268351.asm)): a(n) = 3*n*(9*n - 1)/2.
+* [A268351](http://oeis.org/A268351) ([L06 program](A268351.asm)): a(n) = 3*n*(9*n - 1)/2.
 * [A268354](http://oeis.org/A268354) ([L03 program](A268354.asm)): Highest power of 7 dividing n.
 * [A268357](http://oeis.org/A268357) ([L05 program](A268357.asm)): Highest power of 11 dividing n.
 * [A268414](http://oeis.org/A268414) ([L20 program](A268414.asm)): a(n) = 5*a(n - 1) - 2*n for n>0, a(0) = 1.
@@ -2272,7 +2274,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276706](http://oeis.org/A276706) ([L27 program](A276706.asm)): Indices of records in A249860.
 * [A276757](http://oeis.org/A276757) ([L62 program](A276757.asm)): Infinite Fibonacci word on the alphabet {1,2,3,4,5}.
 * [A276764](http://oeis.org/A276764) ([L11 program](A276764.asm)): 1^2 + 3^2, 2^2 + 4^2, 5^2 + 7^2, 6^2 + 8^2, ...
-* [A276819](http://oeis.org/A276819) ([L07 program](A276819.asm)): a(n) = a(n-1) + 9*n - 5 with a(0) = 1.
+* [A276819](http://oeis.org/A276819) ([L06 program](A276819.asm)): a(n) = a(n-1) + 9*n - 5 with a(0) = 1.
 * [A276849](http://oeis.org/A276849) ([L10 program](A276849.asm)): a(0) = 5, a(1) = 2; for n>1, a(n) = 2*a(n-1) + a(n-2).
 * [A276856](http://oeis.org/A276856) ([L357 program](A276856.asm)): First differences of the Beatty sequence A022840 for sqrt(6).
 * [A276862](http://oeis.org/A276862) ([L117 program](A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
@@ -2328,7 +2330,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277988](http://oeis.org/A277988) ([L05 program](A277988.asm)): a(n) = 352*2^n + 34.
 * [A277989](http://oeis.org/A277989) ([L05 program](A277989.asm)): a(n) = 424*2^n + 37.
 * [A277990](http://oeis.org/A277990) ([L06 program](A277990.asm)): a(n) = 54*n^2 + 6*n.
-* [A277991](http://oeis.org/A277991) ([L07 program](A277991.asm)): a(n) = 81*n^2 - 9*n.
+* [A277991](http://oeis.org/A277991) ([L06 program](A277991.asm)): a(n) = 81*n^2 - 9*n.
 * [A278105](http://oeis.org/A278105) ([L03 program](A278105.asm)): a(n) = floor(3/n).
 * [A278122](http://oeis.org/A278122) ([L05 program](A278122.asm)): a(n) = 204*2^n - 248.
 * [A278123](http://oeis.org/A278123) ([L05 program](A278123.asm)): a(n) = 247*2^n - 300.
@@ -2498,7 +2500,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286430](http://oeis.org/A286430) ([L12 program](A286430.asm)): Least volume of water to surround the largest possible island in a number square.
 * [A286437](http://oeis.org/A286437) ([L14 program](A286437.asm)): Number of ways to tile an n X n X n triangular area with two 2 X 2 X 2 triangular tiles and an appropriate number (= n^2-8) of 1 X 1 X 1 tiles.
 * [A286507](http://oeis.org/A286507) ([L03 program](A286507.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
-* [A286508](http://oeis.org/A286508) ([L07 program](A286508.asm)): Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
+* [A286508](http://oeis.org/A286508) ([L05 program](A286508.asm)): Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
 * [A286521](http://oeis.org/A286521) ([L20 program](A286521.asm)): Decimal representation of the diagonal from the origin to the corner (or of the corner to the origin) of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 659", based on the 5-celled von Neumann neighborhood.
 * [A286577](http://oeis.org/A286577) ([L13 program](A286577.asm)): If n = 3k-1 then a(n) = a(k), otherwise a(n) = n.
 * [A286655](http://oeis.org/A286655) ([L42 program](A286655.asm)): Characteristic sequence of the Beatty sequence, A022842, of sqrt(8).

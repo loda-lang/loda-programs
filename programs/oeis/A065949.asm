@@ -3,7 +3,5 @@
 
 add $0,3
 bin $0,6
-add $0,1
 mov $1,$0
-sub $1,1
 mul $1,90
