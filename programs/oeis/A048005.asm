@@ -1,83 +1,8 @@
 ; A048005: Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-1)/3.
 ; 0,0,0,3,4,5,20,27,35,119,164,219,714,1000,1364,4367,6187,8567,27131,38759,54263,170543,245156,346103,1081574,1562274,2220074,6906899,10015004,14307149,44352164,64512239,92561039,286097759
 
-mov $7,4
-mov $3,$0
-mov $3,2
-mov $1,2
-gcd $7,7
-sub $1,1
+mov $1,1
 add $1,$0
-mov $5,2
-mov $1,$1
 div $0,3
-add $5,2
-lpb $0,1
-  mov $8,2
-  add $3,1
-  sub $0,$1
-  mov $6,$3
-  add $8,8
-  cmp $7,$3
-  sub $3,8
-  mul $8,$0
-  sub $6,1
-  mod $6,$1
-  mul $0,$8
-  add $1,4
-  add $5,$7
-  mov $3,5
-  mov $4,1
-  mov $6,0
-  pow $1,7
-  gcd $8,5
-  mul $8,5
-  sub $1,7
-  sub $6,1
-  mod $1,2
-  add $6,2
-  cmp $1,0
-  div $6,7
-  mul $5,$0
-  add $0,7
-  div $1,6
-  mod $7,4
-  mov $1,2
-  add $0,$3
-  div $7,$0
-  mov $2,$4
-  mod $7,4
-  div $7,2
-  pow $1,$1
-  sub $0,1
-  add $6,1
-  mul $7,$7
-  div $7,2
-  mov $4,6
-  sub $1,4
-lpe
-sub $0,$6
 bin $1,$0
-fac $4
-add $1,$4
-mod $6,$3
-add $5,4
-mul $0,$0
-mov $1,$1
-div $0,2
-mod $8,2
-div $3,5
-mul $8,$5
-sub $7,7
-mod $0,$4
-add $7,$3
-mul $8,$3
-mov $4,$4
-mul $4,2
-mov $2,3
-add $8,$2
-cmp $4,2
-add $0,8
-add $0,3
-mul $4,$2
-sub $1,2
+sub $1,1
