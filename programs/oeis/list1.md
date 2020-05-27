@@ -1567,6 +1567,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133368](http://oeis.org/A133368) ([L07 program](A133368.asm)): Period 5: 1, 1, 3, 7, 3.
 * [A133390](http://oeis.org/A133390) ([L25 program](A133390.asm)): Period 18: repeat 1, 4, 7, 2, 2, 5, 4, 1, 1, 8, 5, 2, 7, 7, 4, 5, 8, 8.
 * [A133398](http://oeis.org/A133398) ([L20 program](A133398.asm)): Numbers that are not Mersenne primes.
+* [A133405](http://oeis.org/A133405) ([L08 program](A133405.asm)): a(n)=3a(n-1)-a(n-3)+3a(n-4).
 * [A133409](http://oeis.org/A133409) ([L08 program](A133409.asm)): Zero followed by partial sums of A133405.
 * [A133451](http://oeis.org/A133451) ([L32 program](A133451.asm)): Graph substitution of two octahedra inside an icosahedron connected at p=1: disconnected at p=0 ( concept similar to two tetrahedra inside a cube).
 * [A133464](http://oeis.org/A133464) ([L17 program](A133464.asm)): a(3n)=4^n, a(3n+1)=2*4^n, a(3n+2)=3*4^n.
@@ -1933,6 +1934,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140142](http://oeis.org/A140142) ([L19 program](A140142.asm)): a(1)=1, a(n)=a(n-1)+n^0 if n odd, a(n)=a(n-1)+ n^4 if n is even.
 * [A140143](http://oeis.org/A140143) ([L19 program](A140143.asm)): a(1)=1, a(n)=a(n-1)+n^0 if n odd, a(n)=a(n-1)+ n^5 if n is even.
 * [A140144](http://oeis.org/A140144) ([L07 program](A140144.asm)): a(1)=1, a(n)=a(n-1)+n^1 if n odd, a(n)=a(n-1)+ n^0 if n is even.
+* [A140146](http://oeis.org/A140146) ([L17 program](A140146.asm)): a(1)=1, a(n)=a(n-1)+n^1 if n odd, a(n)=a(n-1)+ n^4 if n is even.
 * [A140148](http://oeis.org/A140148) ([L23 program](A140148.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^0 if n is even.
 * [A140149](http://oeis.org/A140149) ([L16 program](A140149.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^3 if n is even.
 * [A140150](http://oeis.org/A140150) ([L20 program](A140150.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^4 if n is even.
@@ -2650,6 +2652,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157660](http://oeis.org/A157660) ([L03 program](A157660.asm)): a(n) = 8000*n - 40.
 * [A157661](http://oeis.org/A157661) ([L10 program](A157661.asm)): a(n) = 80000*n^2 - 800*n + 1.
 * [A157663](http://oeis.org/A157663) ([L03 program](A157663.asm)): a(n) = 8000*n + 40.
+* [A157664](http://oeis.org/A157664) ([L10 program](A157664.asm)): a(n) = 80000*n^2 + 800*n + 1.
 * [A157666](http://oeis.org/A157666) ([L03 program](A157666.asm)): a(n) = 19683*n - 13716.
 * [A157669](http://oeis.org/A157669) ([L03 program](A157669.asm)): a(n) = 19683*n - 5967.
 * [A157671](http://oeis.org/A157671) ([L12 program](A157671.asm)): Numbers whose ternary representation begins with 2.
@@ -3402,6 +3405,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167176](http://oeis.org/A167176) ([L03 program](A167176.asm)): n^3 mod 9.
 * [A167179](http://oeis.org/A167179) ([L11 program](A167179.asm)): The number of additional armies one receives in Parker Brothers' (now part of Hasbro) game of Risk for turning in the n-th set of three different or alike cards.
 * [A167194](http://oeis.org/A167194) ([L11 program](A167194.asm)): Triangle read by rows. A130713 in the columns.
+* [A167205](http://oeis.org/A167205) ([L10 program](A167205.asm)): a(n) = (3^n+1)/(3-(-1)^n).
 * [A167238](http://oeis.org/A167238) ([L17 program](A167238.asm)): Number of ways to partition a 2*n X 2 grid into 4 connected equal-area regions
 * [A167280](http://oeis.org/A167280) ([L17 program](A167280.asm)): Period length 12: 0,0,1,2,4,7,4,8,7,4,8,5 (and repeat).
 * [A167371](http://oeis.org/A167371) ([L15 program](A167371.asm)): Triangle, read by rows, given by [0,1,-1,0,0,0,0,0,0,0,0,...] DELTA [1,0,-1,1,0,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
@@ -4132,7 +4136,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176413](http://oeis.org/A176413) ([L03 program](A176413.asm)): a(n) = 19*3^n.
 * [A176415](http://oeis.org/A176415) ([L03 program](A176415.asm)): Periodic sequence: repeat 7,1.
 * [A176448](http://oeis.org/A176448) ([L05 program](A176448.asm)): 7*2^n-2
-* [A176449](http://oeis.org/A176449) ([L05 program](A176449.asm)): a(n) = 9*2^n - 2.
+* [A176449](http://oeis.org/A176449) ([L04 program](A176449.asm)): a(n) = 9*2^n - 2.
 * [A176476](http://oeis.org/A176476) ([L12 program](A176476.asm)): Partial sums of A012814.
 * [A176514](http://oeis.org/A176514) ([L13 program](A176514.asm)): Period 6: repeat [3, 1, 1, 3, 2, 1].
 * [A176542](http://oeis.org/A176542) ([L08 program](A176542.asm)): Numbers n such that there are only a finite nonzero number of sets of n consecutive triangular numbers that sum to a square.
@@ -4258,6 +4262,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179060](http://oeis.org/A179060) ([L12 program](A179060.asm)): Number of non-attacking placements of 5 rooks on an n X n board.
 * [A179061](http://oeis.org/A179061) ([L11 program](A179061.asm)): Number of non-attacking placements of 6 rooks on an n X n board.
 * [A179062](http://oeis.org/A179062) ([L10 program](A179062.asm)): Number of non-attacking placements of 7 rooks on an n X n board.
+* [A179063](http://oeis.org/A179063) ([L08 program](A179063.asm)): Number of non-attacking placements of 8 rooks on an n X n board.
 * [A179064](http://oeis.org/A179064) ([L08 program](A179064.asm)): Number of non-attacking placements of 9 rooks on an n X n board.
 * [A179070](http://oeis.org/A179070) ([L14 program](A179070.asm)): a(1)=a(2)=a(3)=1, a(4)=3; thereafter a(n) = a(n-1) + a(n-3).
 * [A179081](http://oeis.org/A179081) ([L06 program](A179081.asm)): Parity of sum of digits of n.

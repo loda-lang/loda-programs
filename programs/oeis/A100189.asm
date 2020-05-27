@@ -1,0 +1,127 @@
+; A100189: Equatorial structured meta-anti-diamond numbers, the n-th number from an equatorial structured n-gonal anti-diamond number sequence.
+; 1,6,27,92,245,546,1071,1912,3177,4990,7491,10836,15197,20762,27735,36336,46801,59382,74347,91980,112581,136466,163967,195432,231225,271726,317331,368452,425517,488970,559271,636896
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $12,$0
+    mov $14,$0
+    add $14,1
+    lpb $14,1
+      clr $0,12
+      sub $14,1
+      mov $0,$12
+      sub $0,$14
+      mov $9,$0
+      mov $11,$0
+      add $11,1
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        sub $0,$11
+        mov $8,3
+        mov $1,2
+        mov $3,$1
+        sub $1,$1
+        add $1,$8
+        mov $5,4
+        mov $4,$0
+        pow $0,$1
+        lpb $0,1
+          add $5,7
+          mov $3,$4
+          add $3,1
+          mul $0,$4
+          mul $4,$8
+          add $3,$5
+          mul $3,8
+          mov $0,3
+          mov $7,5
+          sub $4,7
+          mul $0,$7
+          sub $5,$1
+          mov $6,0
+          mul $8,4
+          div $6,3
+          add $3,8
+          pow $5,$0
+          mov $3,$0
+          sub $0,7
+          mod $4,4
+          gcd $3,$0
+          add $7,4
+          mov $2,2
+          add $1,$7
+          mod $3,$3
+          add $2,$7
+          mul $0,5
+          mod $1,$0
+          mov $4,7
+          sub $8,5
+          mul $2,$3
+          mul $3,2
+          mul $3,$5
+          mul $2,$3
+          add $8,$6
+          pow $7,$7
+          mul $3,4
+          sub $8,$2
+          mov $2,$2
+          pow $1,7
+          add $4,2
+          sub $4,1
+          sub $0,$4
+          div $0,2
+          div $3,2
+          gcd $5,2
+          sub $0,1
+          div $1,8
+        lpe
+        mov $8,0
+        sub $7,6
+        cmp $5,$0
+        sub $6,7
+        gcd $0,$0
+        mov $8,$4
+        div $4,4
+        sub $4,2
+        add $0,1
+        add $7,$3
+        add $5,7
+        sub $7,$0
+        pow $6,7
+        sub $2,$3
+        div $4,4
+        add $1,8
+        cmp $4,$6
+        mov $1,0
+        gcd $4,$3
+        sub $2,1
+        sub $6,2
+        mov $1,$0
+        add $10,$1
+      lpe
+      mov $1,$10
+      add $13,$1
+    lpe
+    mov $1,$13
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19

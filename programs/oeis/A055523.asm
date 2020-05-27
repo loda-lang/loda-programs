@@ -1,0 +1,107 @@
+; A055523: Longest other leg of a Pythagorean triangle with n as length of a leg.
+; 4,3,12,8,24,15,40,24,60,35,84,48,112,63,144,80,180,99,220,120,264,143,312,168,364,195,420,224,480,255,544,288,612,323,684,360,760,399,840,440,924,483,1012,528,1104,575,1200,624,1300,675,1404,728,1512,783
+
+mov $9,9
+mov $2,$0
+mov $1,5
+sub $9,$9
+mov $6,$0
+add $2,3
+mov $10,$9
+sub $10,$10
+sub $9,$6
+div $1,4
+mov $4,$2
+cmp $1,$0
+fac $1
+mul $9,10
+add $9,$9
+mov $8,$1
+mul $6,9
+mov $7,$8
+gcd $6,$1
+pow $9,8
+mod $8,8
+sub $7,8
+add $1,4
+add $9,1
+add $1,2
+mov $3,10
+pow $0,2
+fac $9
+div $0,5
+mov $7,$2
+bin $8,$6
+mov $0,$2
+mul $7,$8
+mov $4,$8
+add $6,$2
+div $9,10
+mul $3,2
+sub $9,6
+mul $0,$0
+div $8,$4
+mod $2,2
+div $7,$0
+add $3,$1
+sub $9,7
+add $0,$4
+add $4,$8
+mov $5,$1
+fac $5
+lpb $6,3
+  cmp $2,2
+  mul $9,$2
+  mul $4,7
+  mul $7,5
+  mul $7,$10
+  mul $8,$1
+  div $7,$1
+  mod $5,$4
+  add $7,$2
+  mod $4,$4
+  sub $6,3
+  pow $8,9
+  add $5,$10
+  mul $10,4
+  pow $9,2
+  mov $7,$8
+  div $2,5
+  add $9,$7
+  mul $5,8
+  gcd $8,2
+  lpb $2,4
+    div $7,8
+    mul $8,$10
+    sub $1,$4
+    sub $1,9
+  lpe
+  div $9,3
+  mov $10,$8
+  sub $6,10
+  cmp $6,$5
+  add $3,3
+  mov $5,$1
+  mul $3,10
+  sub $6,$2
+  mul $0,7
+  add $5,$8
+  add $6,$3
+lpe
+mul $9,7
+div $3,$0
+gcd $1,2
+mov $10,10
+cmp $8,$0
+gcd $2,2
+add $8,$2
+div $0,$2
+mov $3,0
+add $7,$2
+gcd $3,2
+div $10,6
+add $7,$8
+mov $1,$0
+sub $1,8
+div $1,2
+add $1,3

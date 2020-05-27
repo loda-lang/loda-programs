@@ -1,0 +1,87 @@
+; A033140: Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,0.
+; 1,4,16,65,260,1040,4161,16644,66576,266305,1065220,4260880,17043521,68174084,272696336,1090785345,4363141380,17452565520,69810262081,279241048324,1116964193296,4467856773185,17871427092740,71485708370960
+
+mov $7,$0
+mov $5,1
+add $0,3
+mov $7,$5
+mov $6,4
+pow $6,$0
+mod $5,2
+mov $4,$0
+mov $2,7
+div $6,3
+div $5,8
+sub $6,6
+div $5,$2
+mov $3,0
+mov $8,$7
+gcd $8,5
+mul $3,5
+gcd $7,$4
+pow $3,2
+fac $7
+mov $1,$7
+lpb $0,1
+  add $2,$3
+  mul $7,6
+  sub $2,6
+  mul $4,3
+  pow $1,$6
+  pow $3,$2
+  pow $3,2
+  pow $8,$4
+  fac $2
+  add $0,$8
+  bin $3,6
+  gcd $8,7
+  pow $4,2
+  mov $0,2
+  mov $6,$5
+  cmp $6,6
+  sub $1,1
+  fac $0
+  mov $4,3
+  mul $5,2
+  div $6,4
+  mov $0,4
+  mov $7,$1
+  mov $4,$0
+  add $1,$2
+  add $0,$1
+  sub $4,5
+  pow $3,$7
+  mul $0,7
+  div $8,5
+  pow $7,$1
+  cmp $5,1
+  sub $5,$0
+  mov $4,$0
+  sub $8,3
+  mov $8,7
+  add $2,$7
+  sub $0,1
+  mov $6,5
+  mul $7,$5
+  cmp $6,$4
+  mul $8,$2
+lpe
+sub $8,1
+mul $0,2
+div $6,$2
+mul $3,$5
+mov $5,0
+add $1,7
+mul $5,$3
+add $8,$4
+sub $1,3
+mul $0,$7
+div $0,5
+div $1,2
+pow $4,$7
+div $4,$8
+add $7,$2
+mov $1,$6
+sub $1,2
+div $1,3
+add $1,1

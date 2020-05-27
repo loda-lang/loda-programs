@@ -28595,3 +28595,33 @@ A032092: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A032093: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
 A084861: -p 80 -n 8 -i 6 -o ^ -a cd
 A033424: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A093566: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A080095: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A050294: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A055523: -p 100 -n 10 -i 6 -o ^ -a cd
+A083374: -p 80 -n 8 -i 6 -o ^ -a cd
+A079034: -p 80 -n 8 -i 6 -o ^ -a cd
+A048491: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A176449: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A048005: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A010974: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A140153: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A010953: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A179063: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A033140: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A260220: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A096400: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A100189: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A129530: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A037951: -p 100 -n 10 -i 6 -o ^ -a cd
+A084631: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A216125: -p 80 -n 8 -i 6 -o ^ -a cd
+A128014: -p 80 -n 8 -i 6 -o ^ -a cd
+A078112: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A053643: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A070438: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A070638: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A277136: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A313051: -p 80 -n 8 -i 6 -o ^ -a cd
+A140160: -p 80 -n 8 -i 6 -o ^l -a cd -e programs/templates/T01.asm
+A178828: -p 100 -n 10 -i 6 -o ^l -a cd -e programs/templates/T01.asm

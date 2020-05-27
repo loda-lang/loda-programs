@@ -1,0 +1,126 @@
+; A178828: Partial sums of floor(3^n/10)/2.
+; 0,0,1,5,17,53,162,490,1474,4426,13283,39855,119571,358719,1076164,3228500,9685508,29056532,87169605,261508825,784526485,2353579465,7060738406,21182215230,63546645702
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $10,10
+    mov $4,3
+    mov $6,$10
+    add $10,$10
+    mov $5,10
+    mov $1,9
+    div $6,$5
+    mov $2,10
+    mov $9,$6
+    mov $7,4
+    pow $10,5
+    div $6,$1
+    mov $3,3
+    add $10,2
+    cmp $10,6
+    pow $4,$0
+    mov $1,4
+    mov $8,$4
+    sub $10,$2
+    mov $1,$3
+    add $2,$3
+    sub $2,7
+    mod $1,6
+    div $1,5
+    pow $6,$10
+    div $3,2
+    sub $8,$0
+    lpb $0,1
+      div $8,3
+      mov $9,$7
+      cmp $0,8
+      gcd $5,5
+      sub $0,1
+      sub $3,$1
+      fac $10
+      div $6,$7
+      mov $6,$2
+      sub $2,1
+      div $6,10
+      mov $9,0
+      add $3,3
+      mov $10,$7
+      pow $5,2
+      add $5,$7
+      mul $8,5
+      mov $9,8
+      sub $5,$9
+      add $5,$6
+      add $9,$9
+      mul $6,$0
+      div $10,4
+      sub $3,$2
+      mov $9,9
+      sub $5,9
+      mov $8,7
+    lpe
+    sub $6,$6
+    mod $5,2
+    div $0,3
+    add $8,$10
+    add $1,10
+    mov $0,$7
+    mov $3,6
+    add $4,5
+    cmp $5,7
+    div $0,$4
+    gcd $2,5
+    mul $5,2
+    add $9,$4
+    mul $5,$1
+    gcd $7,3
+    sub $2,$9
+    sub $9,10
+    mov $5,1
+    add $2,$9
+    mov $9,5
+    fac $9
+    fac $1
+    mov $9,2
+    mul $0,$3
+    pow $5,7
+    sub $0,1
+    div $0,$9
+    add $8,1
+    div $5,$5
+    mov $9,0
+    div $4,10
+    mul $0,6
+    sub $5,$6
+    mul $3,$3
+    div $7,8
+    cmp $2,$5
+    add $2,1
+    add $9,$2
+    add $6,$5
+    div $3,2
+    mul $6,$7
+    add $2,3
+    div $9,$1
+    pow $7,9
+    mov $1,$4
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15
