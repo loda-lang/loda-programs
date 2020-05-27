@@ -1,0 +1,71 @@
+; A200058: Number of -n..n arrays x(0..3) of 4 elements with zero sum and elements alternately strictly increasing and strictly decreasing.
+; 4,26,78,172,324,546,850,1252,1764,2398,3170,4092,5176,6438,7890,9544,11416,13518,15862,18464,21336,24490,27942,31704,35788,40210,44982,50116,55628,61530,67834,74556,81708,89302,97354,105876,114880,124382,134394
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $12,$0
+  mov $14,$0
+  add $14,1
+  lpb $14,1
+    clr $0,12
+    sub $14,1
+    mov $0,$12
+    sub $0,$14
+    mov $9,$0
+    mov $11,$0
+    add $11,1
+    lpb $11,1
+      sub $11,1
+      mov $0,$9
+      sub $0,$11
+      mov $6,$0
+      mov $0,4
+      mov $4,$6
+      mov $1,$4
+      div $0,2
+      pow $0,$4
+      lpb $0,1
+        add $1,2
+        mod $1,3
+        mov $2,5
+        sub $0,1
+        mov $8,6
+        mod $0,8
+        div $2,2
+        sub $0,$8
+        sub $3,$3
+        mov $5,$8
+        mul $8,$1
+        sub $0,$8
+        add $2,7
+        sub $5,$8
+        add $2,$0
+        div $5,5
+        add $2,1
+        pow $6,$3
+        fac $0
+        add $3,$5
+        add $3,3
+        sub $3,$6
+      lpe
+      add $3,6
+      add $3,$2
+      mov $1,$3
+      sub $1,14
+      mul $1,2
+      add $1,4
+      add $10,$1
+    lpe
+    mov $1,$10
+    add $13,$1
+  lpe
+  mov $1,$13
+  add $16,$1
+lpe
+mov $1,$16

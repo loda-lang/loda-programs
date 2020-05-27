@@ -1,0 +1,116 @@
+; A097383: Minimum total number of comparisons to find each of the values 1 through n using a binary search with 3-way comparisons (less than, equal and greater than).
+; 0,2,3,6,8,11,13,17,20,24,27,31,34,38,41,46,50,55,59,64,68,73,77,82,86,91,95,100,104,109,113,119,124,130,135,141,146,152,157,163,168,174,179,185,190,196,201,207,212,218,223,229,234,240,245,251,256,262,267,273
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $1,0
+  mov $5,$0
+  mov $10,1
+  div $5,$10
+  mod $5,2
+  div $0,$10
+  mov $9,$5
+  mov $3,2
+  mov $8,$9
+  mov $7,2
+  sub $1,2
+  div $9,$7
+  lpb $0,1
+    mov $6,$9
+    mov $4,10
+    mov $6,2
+    sub $0,1
+    div $0,$6
+    div $6,2
+    div $6,10
+    mov $10,$5
+    add $8,1
+    pow $1,2
+  lpe
+  mov $2,$7
+  pow $7,8
+  div $1,$2
+  add $1,2
+  add $7,8
+  div $1,2
+  pow $9,$2
+  mov $7,5
+  pow $1,9
+  div $10,2
+  sub $7,3
+  sub $2,$8
+  mov $1,$8
+  mov $9,$8
+  sub $3,$2
+  add $5,$2
+  mov $1,$10
+  gcd $10,$9
+  mov $7,0
+  bin $2,4
+  mod $8,8
+  mov $4,4
+  add $9,9
+  sub $5,$5
+  pow $8,$2
+  sub $1,6
+  bin $10,$7
+  div $8,4
+  add $3,$8
+  sub $10,$0
+  mod $4,8
+  mov $10,1
+  sub $7,$0
+  add $1,5
+  mov $5,1
+  mul $4,$7
+  mov $0,$1
+  mod $6,$1
+  sub $0,$9
+  mul $10,$9
+  fac $2
+  mov $1,$1
+  sub $1,$4
+  gcd $1,$4
+  mul $1,$1
+  mov $5,$7
+  sub $0,1
+  mov $5,$8
+  fac $3
+  add $0,$6
+  gcd $5,$9
+  sub $1,$0
+  cmp $7,3
+  add $1,$7
+  sub $1,$0
+  gcd $6,9
+  pow $0,3
+  sub $7,6
+  mov $7,$3
+  add $9,$2
+  gcd $4,$3
+  mul $8,2
+  add $5,$8
+  mul $6,2
+  add $7,1
+  add $7,5
+  add $4,$1
+  sub $10,$1
+  sub $10,3
+  cmp $3,$9
+  mul $8,9
+  div $9,2
+  cmp $1,$10
+  add $10,1
+  mul $0,2
+  mul $10,$1
+  mov $1,$5
+  sub $1,9
+  add $12,$1
+lpe
+mov $1,$12

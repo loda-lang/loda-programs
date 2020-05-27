@@ -1,85 +1,12 @@
 ; A048038: Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n+1)/3.
 ; 0,1,2,3,9,14,20,55,83,119,329,494,714,2001,3002,4367,12375,18563,27131,77519,116279,170543,490313,735470,1081574,3124549,4686824,6906899,20030009,30045014,44352164,129024479,193536719,286097759
 
-mov $6,$0
-mod $6,3
 mov $1,$0
 add $1,2
-mov $8,4
-mov $7,7
 mov $2,$0
 mov $0,$1
-mov $3,5
-mov $4,$0
-add $7,$1
-mod $7,$8
 div $0,3
-mov $5,$6
-sub $4,1
-add $1,7
-pow $8,$6
-pow $4,$5
-sub $8,3
 add $2,1
 bin $2,$0
-sub $0,$1
-cmp $4,8
-bin $4,$0
-sub $5,$7
-div $5,$2
-sub $1,$4
-lpb $0,1
-  pow $1,6
-  div $4,$1
-  sub $4,7
-  add $3,1
-  pow $2,$5
-  div $6,8
-  add $2,1
-  mov $0,7
-  fac $4
-  mov $8,6
-  div $8,2
-  mov $7,7
-  mov $6,$1
-  pow $7,3
-  div $0,2
-  add $7,6
-  mul $2,2
-  mul $8,$2
-  mul $6,$7
-  sub $0,1
-  div $7,8
-  pow $0,4
-  sub $6,6
-  add $6,$5
-  mov $1,$5
-  add $6,2
-  sub $4,7
-  mov $5,8
-  div $6,$6
-  mul $2,7
-  mul $4,3
-  add $5,8
-  bin $6,2
-  div $8,6
-  div $4,$3
-  mod $1,8
-  mul $5,3
-  mov $6,$4
-  add $2,4
-  mul $8,$7
-  mul $1,8
-  gcd $4,$7
-  mod $2,$0
-  sub $6,$1
-  mod $1,$0
-  mod $0,3
-  div $1,8
-  div $2,2
-lpe
-mov $1,$3
-mov $8,$8
-gcd $3,8
 mov $1,$2
 sub $1,1

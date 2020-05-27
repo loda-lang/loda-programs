@@ -1,0 +1,130 @@
+; A032093: Number of reversible strings with n-1 beads of 2 colors. 6 beads are black. Strings are not palindromic.
+; 3,12,40,100,226,452,848,1484,2485,3976,6160,9240,13524,19320,27072,37224,50391,67188,88440,114972,147862,188188,237328,296660,367913,452816,553504,672112,811240,973488,1161984,1379856
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $12,$0
+    mov $14,$0
+    add $14,1
+    lpb $14,1
+      clr $0,12
+      sub $14,1
+      mov $0,$12
+      sub $0,$14
+      mov $9,$0
+      mov $11,$0
+      add $11,1
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        sub $0,$11
+        mov $1,$0
+        bin $0,$1
+        mov $7,0
+        mov $5,4
+        mov $2,3
+        mov $4,4
+        fac $7
+        gcd $4,8
+        mov $8,$1
+        pow $5,3
+        mov $6,$1
+        mul $1,3
+        mod $5,7
+        sub $1,4
+        mod $8,2
+        mod $8,2
+        sub $7,6
+        mov $8,$8
+        mul $6,2
+        add $0,$4
+        cmp $2,6
+        mov $1,8
+        gcd $8,2
+        add $7,$2
+        add $6,5
+        add $4,$0
+        mov $7,7
+        mod $7,$8
+        mov $3,$0
+        gcd $4,2
+        div $2,2
+        cmp $0,3
+        div $1,5
+        pow $7,$1
+        pow $3,7
+        mov $0,0
+        sub $3,$4
+        pow $5,$6
+        mod $1,4
+        pow $6,$7
+        mov $7,0
+        add $2,7
+        mul $2,3
+        mov $3,8
+        mul $5,$3
+        fac $1
+        add $1,$4
+        pow $2,$1
+        cmp $0,4
+        mov $0,$4
+        add $7,3
+        div $7,$6
+        add $5,2
+        mul $3,$0
+        mov $8,0
+        mod $5,$0
+        add $7,1
+        bin $2,2
+        mov $3,4
+        lpb $0,1
+          add $8,7
+          sub $5,$6
+          sub $2,5
+          sub $0,6
+          sub $0,1
+          div $0,3
+          bin $0,2
+          sub $1,8
+          div $8,$8
+          sub $4,8
+        lpe
+        pow $5,8
+        mul $7,$6
+        add $1,$7
+        sub $8,8
+        sub $2,1
+        mov $1,$3
+        sub $0,$3
+        sub $5,$3
+        pow $6,2
+        mov $1,$6
+        sub $1,1
+        div $1,8
+        add $10,$1
+      lpe
+      mov $1,$10
+      add $13,$1
+    lpe
+    mov $1,$13
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19
