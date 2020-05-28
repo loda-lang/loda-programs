@@ -1,0 +1,116 @@
+; A111072: Write the sequence of natural number 0123456789 and repeat it infinite times. Then starting from the first zero on the left side move right one number (1), then two numbers (3), then three numbers (6), four numbers (0), five numbers (5) and so on. Summing all the numbers we get 0, 1, 4, 10, 10, 15, ...
+; 0,1,4,10,10,15,16,24,30,35,40,46,54,55,60,60,66,69,70,70,70,71,74,80,80,85,86,94,100,105,110,116,124,125,130,130,136,139,140,140,140,141,144,150,150,155,156,164,170,175,180,186,194,195,200,200,206,209,210
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $6,$0
+  mov $2,7
+  mov $7,1
+  mov $5,1
+  mov $4,3
+  mov $6,$2
+  sub $6,2
+  mov $8,$6
+  add $5,$0
+  mov $10,$2
+  mov $9,2
+  mod $7,2
+  lpb $0,1
+    add $4,2
+    mov $7,$9
+    div $7,3
+    div $8,7
+    pow $8,8
+    div $6,$9
+    mov $1,$0
+    pow $4,$7
+    mov $3,2
+    add $8,$8
+    mov $1,$3
+    cmp $2,$10
+    div $0,$10
+    mov $7,$9
+    div $7,5
+    sub $9,9
+    mod $1,7
+    sub $0,1
+    gcd $6,$1
+    add $9,$7
+    pow $9,$4
+    add $4,3
+    add $0,9
+    pow $0,7
+    mul $9,9
+    mul $10,10
+    mov $1,8
+    add $0,3
+    gcd $3,$3
+    div $9,2
+    mod $4,3
+    add $3,$3
+    mov $6,$1
+    mod $1,4
+    pow $1,$4
+    fac $3
+    div $7,5
+    sub $9,1
+    mov $7,3
+  lpe
+  sub $4,9
+  add $2,5
+  sub $1,$6
+  bin $0,7
+  gcd $3,7
+  mod $7,5
+  mov $0,$0
+  pow $2,9
+  mov $2,$7
+  bin $3,5
+  div $8,8
+  pow $8,2
+  add $3,$4
+  mov $4,9
+  mov $3,6
+  mov $8,$8
+  mul $8,$10
+  add $9,$2
+  add $7,4
+  add $8,1
+  gcd $2,2
+  div $10,$10
+  mov $2,$5
+  sub $10,5
+  mov $9,3
+  bin $5,2
+  mul $1,$6
+  mul $9,6
+  div $3,$8
+  sub $4,$4
+  mov $4,9
+  pow $7,8
+  add $10,8
+  mul $8,$4
+  mul $10,4
+  mod $5,10
+  mul $9,2
+  pow $6,3
+  div $4,$8
+  mod $10,$3
+  gcd $3,$6
+  mul $0,$9
+  mov $3,$5
+  mul $3,3
+  fac $8
+  gcd $8,$1
+  cmp $5,$7
+  mov $1,$3
+  div $1,3
+  add $12,$1
+lpe
+mov $1,$12
