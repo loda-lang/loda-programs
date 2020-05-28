@@ -614,7 +614,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A113127](http://oeis.org/A113127) ([L05 program](A113127.asm)): Expansion of (1 + x + x^2 + x^3)/(1-x)^2.
 * [A113217](http://oeis.org/A113217) ([L12 program](A113217.asm)): Parity of decimal digital root of n.
 * [A113311](http://oeis.org/A113311) ([L05 program](A113311.asm)): Expansion of (1+x)^2/(1-x).
-* [A113335](http://oeis.org/A113335) ([L06 program](A113335.asm)): Binomial(n+4,5)*3^5.
+* [A113335](http://oeis.org/A113335) ([L05 program](A113335.asm)): Binomial(n+4,5)*3^5.
 * [A113402](http://oeis.org/A113402) ([L09 program](A113402.asm)): Algebraic degree of cos(Pi/n) for constructible n-gons (A003401).
 * [A113405](http://oeis.org/A113405) ([L22 program](A113405.asm)): Expansion of x^3/(1-2*x+x^3-2*x^4) = x^3/( (1-2*x)*(1+x)*(1-x+x^2) ).
 * [A113422](http://oeis.org/A113422) ([L08 program](A113422.asm)): a(n) = floor((5*n^2+1)/3).
@@ -1316,7 +1316,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130794](http://oeis.org/A130794) ([L04 program](A130794.asm)): Periodic sequence with period 1,5,3.
 * [A130809](http://oeis.org/A130809) ([L11 program](A130809.asm)): If X_1, ..., X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 3-subsets of X containing none of X_i, (i=1,...,n).
 * [A130810](http://oeis.org/A130810) ([L05 program](A130810.asm)): If X_1,...,X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 4-subsets of X containing none of X_i, (i=1,...,n).
-* [A130811](http://oeis.org/A130811) ([L06 program](A130811.asm)): If X_1,...,X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 5-subsets of X containing none of X_i, (i=1,...n).
+* [A130811](http://oeis.org/A130811) ([L05 program](A130811.asm)): If X_1,...,X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 5-subsets of X containing none of X_i, (i=1,...n).
 * [A130812](http://oeis.org/A130812) ([L09 program](A130812.asm)): If X_1,...,X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 6-subsets of X containing none of X_i, (i=1,...n).
 * [A130813](http://oeis.org/A130813) ([L06 program](A130813.asm)): If X_1,...,X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 7-subsets of X containing none of X_i, (i=1,...n).
 * [A130819](http://oeis.org/A130819) ([L06 program](A130819.asm)): 2n appears 2n-1 times.
@@ -3336,7 +3336,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166072](http://oeis.org/A166072) ([L15 program](A166072.asm)): Define dsf(n) = A045503(n) = n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the decimal digits of n. dsf(809265896) = 808491852 and dsf(808491852) = 437755524,...,dsf(792488396) = 809265896, so these 8 numbers make a loop for the function dsf.
 * [A166079](http://oeis.org/A166079) ([L19 program](A166079.asm)): Given a row of n payphones, all initially unused, how many people can use the payphones, assuming (1) each always chooses one of the most distant payphones from those in use already, (2) the first person takes a phone at the end, and (3) no people use adjacent phones?
 * [A166118](http://oeis.org/A166118) ([L05 program](A166118.asm)): Fixed points of the mapping f(x) = (x + 2^x) mod (17 + x).
-* [A166136](http://oeis.org/A166136) ([L05 program](A166136.asm)): a(n) = n*(n+3)/2 + 7.
+* [A166136](http://oeis.org/A166136) ([L04 program](A166136.asm)): a(n) = n*(n+3)/2 + 7.
 * [A166137](http://oeis.org/A166137) ([L06 program](A166137.asm)): a(n) = 5*n*(n+1)/2 - 4.
 * [A166138](http://oeis.org/A166138) ([L08 program](A166138.asm)): Trisection A022998(3n+1).
 * [A166143](http://oeis.org/A166143) ([L06 program](A166143.asm)): a(n) = 3n^2 + 3n - 5.
@@ -3443,7 +3443,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167574](http://oeis.org/A167574) ([L39 program](A167574.asm)): The fourth row of the ED3 array A167572.
 * [A167585](http://oeis.org/A167585) ([L08 program](A167585.asm)): a(n) = 12*n^2 - 8*n + 9.
 * [A167586](http://oeis.org/A167586) ([L19 program](A167586.asm)): The fourth row of the ED4 array A167584.
-* [A167614](http://oeis.org/A167614) ([L05 program](A167614.asm)): (n^2 + 3*n + 8)/2.
+* [A167614](http://oeis.org/A167614) ([L04 program](A167614.asm)): (n^2 + 3*n + 8)/2.
 * [A167616](http://oeis.org/A167616) ([L08 program](A167616.asm)): a(n) = Fibonacci(n) - 5.
 * [A167624](http://oeis.org/A167624) ([L16 program](A167624.asm)): a(n) = n^6 mod 32.
 * [A167628](http://oeis.org/A167628) ([L19 program](A167628.asm)): n^11 mod 13.
@@ -3490,7 +3490,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168108](http://oeis.org/A168108) ([L16 program](A168108.asm)): a(n) = sum of natural numbers m such that n - 9 <= m <= n + 9.
 * [A168109](http://oeis.org/A168109) ([L24 program](A168109.asm)): a(n) = sum of natural numbers m such that n - 10 <= m <= n + 10.
 * [A168116](http://oeis.org/A168116) ([L04 program](A168116.asm)): a(n) = n*(n^8+1)/2.
-* [A168118](http://oeis.org/A168118) ([L05 program](A168118.asm)): n*(n^9+1)/2.
+* [A168118](http://oeis.org/A168118) ([L04 program](A168118.asm)): n*(n^9+1)/2.
 * [A168122](http://oeis.org/A168122) ([L05 program](A168122.asm)): n^2*(n^4+1)/2.
 * [A168123](http://oeis.org/A168123) ([L06 program](A168123.asm)): n^2*(n^5+1)/2.
 * [A168124](http://oeis.org/A168124) ([L09 program](A168124.asm)): a(n) = n^2*(n^6+1)/2.
@@ -4158,7 +4158,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176776](http://oeis.org/A176776) ([L10 program](A176776.asm)): a(n) = 2^n-n*(n-2).
 * [A176777](http://oeis.org/A176777) ([L21 program](A176777.asm)): 2^n-n*(n-3).
 * [A176780](http://oeis.org/A176780) ([L13 program](A176780.asm)): a(n) = n^4 + 6n^3 + 14n^2 + 15n + 6.
-* [A176805](http://oeis.org/A176805) ([L13 program](A176805.asm)): a(n) = 3^n + 3*n + 1.
+* [A176805](http://oeis.org/A176805) ([L09 program](A176805.asm)): a(n) = 3^n + 3*n + 1.
 * [A176889](http://oeis.org/A176889) ([L15 program](A176889.asm)): a(2*k-1)=1, a(2*k)=2*k^2 (definition by T. M. Apostol, see References).
 * [A176895](http://oeis.org/A176895) ([L03 program](A176895.asm)): Period 4: repeat [1, 4, 2, 4].
 * [A176916](http://oeis.org/A176916) ([L11 program](A176916.asm)): 5^n + 5n + 1.

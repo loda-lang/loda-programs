@@ -1,0 +1,87 @@
+; A002058: Number of internal triangles in all triangulations of an (n+1)-gon.
+; 2,14,72,330,1430,6006,24752,100776,406980,1634380,6537520,26075790,103791870,412506150,1637618400,6495886320,25751549340,102042235620,404225281200,1600944863700,6339741660252,25103519174844,99399793096352
+
+mov $1,$0
+mov $2,$0
+mov $8,$0
+mul $2,$2
+mov $5,$0
+mov $7,6
+cmp $2,$8
+mov $2,$1
+mov $4,4
+add $0,4
+mov $3,8
+add $0,1
+sub $5,$4
+add $0,$2
+add $8,7
+sub $8,2
+mov $1,$1
+bin $0,$2
+sub $3,1
+add $1,$5
+lpb $2,1
+  add $2,6
+  mov $5,$3
+  sub $4,$1
+  div $4,$8
+  div $4,$2
+  add $7,1
+  lpb $4,1
+    cmp $5,8
+    pow $2,2
+    sub $4,$0
+    add $0,3
+    mov $4,0
+    mov $2,$7
+    mov $7,5
+    gcd $2,3
+    sub $4,$8
+    sub $4,1
+    sub $4,1
+    add $5,2
+    mov $6,8
+    mul $4,2
+    cmp $4,$8
+    pow $4,$2
+    gcd $6,2
+    mul $4,2
+  lpe
+  lpb $5,1
+    sub $5,$8
+    mul $6,3
+    div $7,2
+    cmp $1,7
+    add $7,$4
+    mul $6,$3
+    sub $6,3
+    div $3,2
+    mov $3,$4
+    cmp $6,7
+    sub $0,6
+    mul $3,$6
+    sub $6,5
+  lpe
+  lpb $6,1
+    cmp $0,$2
+    add $3,5
+    gcd $8,5
+    add $5,$8
+    add $6,$4
+    mov $4,$8
+    mov $1,$2
+    sub $6,$8
+    mul $4,3
+    cmp $0,5
+    fac $6
+    mov $2,2
+  lpe
+  sub $2,1
+lpe
+pow $3,3
+div $6,$3
+mov $1,$0
+sub $1,1
+mul $1,2
+add $1,2
