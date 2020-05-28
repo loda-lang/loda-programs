@@ -236,7 +236,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210464](http://oeis.org/A210464) ([L20 program](A210464.asm)): Number of bracelets with 2 blue, 2 red, and n black beads.
 * [A210527](http://oeis.org/A210527) ([L09 program](A210527.asm)): a(n) = 9*n^2 + 39*n + 83.
 * [A210530](http://oeis.org/A210530) ([L07 program](A210530.asm)): T(n,k) = (k + 3*n - 2 - (k+n-2)*(-1)^(k+n))/2 n, k > 0, read by antidiagonals.
-* [A210569](http://oeis.org/A210569) ([L08 program](A210569.asm)): a(n) = (n-3)*(n-2)*(n-1)*n*(n+1)/30.
+* [A210569](http://oeis.org/A210569) ([L04 program](A210569.asm)): a(n) = (n-3)*(n-2)*(n-1)*n*(n+1)/30.
 * [A210622](http://oeis.org/A210622) ([L15 program](A210622.asm)): Decimal expansion of 377/120.
 * [A210645](http://oeis.org/A210645) ([L04 program](A210645.asm)): Area A of the  triangles such that A, the sides and one of the altitudes are four consecutive integers of an arithmetic progression d.
 * [A210675](http://oeis.org/A210675) ([L10 program](A210675.asm)): a(n)=a(n-1)+a(n-2)+n+4, a(0)=0, a(1)=1.
@@ -346,6 +346,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212523](http://oeis.org/A212523) ([L15 program](A212523.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<y+z.
 * [A212560](http://oeis.org/A212560) ([L11 program](A212560.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<=y+z.
 * [A212561](http://oeis.org/A212561) ([L11 program](A212561.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w + x = 2y + 2z.
+* [A212568](http://oeis.org/A212568) ([L54 program](A212568.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and  w<|x-y|+|y-z|.
 * [A212578](http://oeis.org/A212578) ([L09 program](A212578.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and |w-x| = 2*|x-y| - |y-z|.
 * [A212656](http://oeis.org/A212656) ([L04 program](A212656.asm)): a(n) = 5*n^2 + 1.
 * [A212668](http://oeis.org/A212668) ([L24 program](A212668.asm)): a(n) = (16/3)*(n+1)*n*(n-1) + 8*n^2 + 1.
@@ -1083,7 +1084,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240277](http://oeis.org/A240277) ([L13 program](A240277.asm)): Minimal number of people such that exactly n days are required to spread gossip.
 * [A240434](http://oeis.org/A240434) ([L13 program](A240434.asm)): Binomial transform of the sum of the first n even squares (A002492).
 * [A240438](http://oeis.org/A240438) ([L08 program](A240438.asm)): Greatest minimal difference between numbers of adjacent cells in a regular hexagonal honeycomb of order n with cells numbered from 1 through the total number of cells, the order n corresponding to the number of cells on one side of the honeycomb.
-* [A240440](http://oeis.org/A240440) ([L07 program](A240440.asm)): Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
+* [A240440](http://oeis.org/A240440) ([L05 program](A240440.asm)): Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
 * [A240506](http://oeis.org/A240506) ([L11 program](A240506.asm)): Number of length-n gap-free words on {1,2,3}.
 * [A240530](http://oeis.org/A240530) ([L04 program](A240530.asm)): a(n) = 4*(2*n)! / (n!)^2.
 * [A240567](http://oeis.org/A240567) ([L16 program](A240567.asm)): a(n) = optimal number of tricks to throw in the game of One Round War (with n cards) in order to maximize the expected number of tricks won.
@@ -1334,7 +1335,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248928](http://oeis.org/A248928) ([L21 program](A248928.asm)): Interleave (2*n+2)^2 with (2*n+3)^2, both listed n+1 times.
 * [A248974](http://oeis.org/A248974) ([L06 program](A248974.asm)): Floor( 1/(n*sinh(1/n) + n*sin(1/n) - 2) ).
 * [A249013](http://oeis.org/A249013) ([L06 program](A249013.asm)): a(n) = floor( (n-1) * (n+4) / 10 ).
-* [A249020](http://oeis.org/A249020) ([L07 program](A249020.asm)): a(n) = floor( n * (n+5) / 10) + 1.
+* [A249020](http://oeis.org/A249020) ([L06 program](A249020.asm)): a(n) = floor( n * (n+5) / 10) + 1.
 * [A249076](http://oeis.org/A249076) ([L04 program](A249076.asm)): a(n) = (n*(n+1))^6.
 * [A249098](http://oeis.org/A249098) ([L08 program](A249098.asm)): Position of n^6 in the ordered union of {h^6, h >=1} and {3*k^6, k >=1}.
 * [A249099](http://oeis.org/A249099) ([L08 program](A249099.asm)): Position of 3*n^6 in the ordered union of {h^6, h >=1} and {3*k^6, k >=1}.
@@ -2000,7 +2001,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269412](http://oeis.org/A269412) ([L102 program](A269412.asm)): Number of length-6 0..n arrays with no repeated value greater than or equal to the previous repeated value.
 * [A269436](http://oeis.org/A269436) ([L48 program](A269436.asm)): Number of length-4 0..n arrays with no repeated value greater than the previous repeated value.
 * [A269445](http://oeis.org/A269445) ([L05 program](A269445.asm)): a(n) = Sum_{k=0..n} floor(k/13).
-* [A269457](http://oeis.org/A269457) ([L06 program](A269457.asm)): a(n) = 5*(n + 1)*(n + 4)/2.
+* [A269457](http://oeis.org/A269457) ([L05 program](A269457.asm)): a(n) = 5*(n + 1)*(n + 4)/2.
 * [A269468](http://oeis.org/A269468) ([L10 program](A269468.asm)): Number of length-4 0..n arrays with no repeated value equal to the previous repeated value.
 * [A269469](http://oeis.org/A269469) ([L55 program](A269469.asm)): Number of length-5 0..n arrays with no repeated value equal to the previous repeated value.
 * [A269470](http://oeis.org/A269470) ([L67 program](A269470.asm)): Number of length-6 0..n arrays with no repeated value equal to the previous repeated value.
@@ -2800,7 +2801,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297469](http://oeis.org/A297469) ([L11 program](A297469.asm)): Solution (bb(n)) of the system of 3 complementary equations in Comments.
 * [A297662](http://oeis.org/A297662) ([L06 program](A297662.asm)): Number of chordless cycles in the complete tripartite graph K_n,n,n.
 * [A297663](http://oeis.org/A297663) ([L07 program](A297663.asm)): a(n) = 5*n + 2^n.
-* [A297675](http://oeis.org/A297675) ([L06 program](A297675.asm)): a(n) = 3*(n^2+n-4)/2.
+* [A297675](http://oeis.org/A297675) ([L05 program](A297675.asm)): a(n) = 3*(n^2+n-4)/2.
 * [A297928](http://oeis.org/A297928) ([L15 program](A297928.asm)): a(n) = 2*4^n + 3*2^n - 1.
 * [A297996](http://oeis.org/A297996) ([L24 program](A297996.asm)): a(1)=2, a(2)=3, a(3)=5 and a(n) = (a(1) + a(2) + a(3) + ... + a(n-1))/a(n-1).
 * [A298019](http://oeis.org/A298019) ([L18 program](A298019.asm)): Partial sums of A298016.

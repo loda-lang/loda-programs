@@ -349,6 +349,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106576](http://oeis.org/A106576) ([L25 program](A106576.asm)): Period 20. Sequence gives last digit of A106157, starting from the first positive term.
 * [A106586](http://oeis.org/A106586) ([L17 program](A106586.asm)): Digit next to last in squares ending in 6.
 * [A106590](http://oeis.org/A106590) ([L56 program](A106590.asm)): Trajectory of 1 under the morphism 1->{2}, 2->{3,3,3}, 3->{1,2,3}.
+* [A106607](http://oeis.org/A106607) ([L34 program](A106607.asm)): Expansion of (1+t^3)^2/((1-t)*(1-t^2)^2*(1-t^4)).
 * [A106608](http://oeis.org/A106608) ([L03 program](A106608.asm)): a(n) = numerator of n/(n+7).
 * [A106609](http://oeis.org/A106609) ([L03 program](A106609.asm)): Numerator of n/(n+8).
 * [A106610](http://oeis.org/A106610) ([L05 program](A106610.asm)): Numerator of n/(n+9).
@@ -921,7 +922,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A121512](http://oeis.org/A121512) ([L10 program](A121512.asm)): a(n) = a(n-1) + a(n-3) - a(n-4) for n>4, with a(1)=1, a(2)=4, a(3)=10, a(4)=4.
 * [A121628](http://oeis.org/A121628) ([L06 program](A121628.asm)): Nonnegative k such that 3*k + 1 is a perfect cube.
 * [A121816](http://oeis.org/A121816) ([L05 program](A121816.asm)): Conjectured chromatic number of the square of an outerplanar graph G^2 as a function of the maximum degree of a vertex of G.
-* [A121830](http://oeis.org/A121830) ([L09 program](A121830.asm)): a(n) = floor((Pi - e)n).
 * [A121900](http://oeis.org/A121900) ([L16 program](A121900.asm)): a(n) = ceiling((Pi - e)*sqrt(n)).
 * [A121902](http://oeis.org/A121902) ([L09 program](A121902.asm)): a(n) = floor((Pi - e)*sqrt(n)).
 * [A121907](http://oeis.org/A121907) ([L14 program](A121907.asm)): Expansion of g.f.: (1 + x + x^2)/(1 - 2*x - 2*x^2).
@@ -2254,6 +2254,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A147685](http://oeis.org/A147685) ([L06 program](A147685.asm)): Squares and centered square numbers interleaved.
 * [A147722](http://oeis.org/A147722) ([L08 program](A147722.asm)): Row sums of Riordan array ((1-3x)/(1-4x+x^2), x(1-x)/(1-4x+x^2)).
 * [A147753](http://oeis.org/A147753) ([L24 program](A147753.asm)): Number of maximum-size subsets of {1,2,3,...,n} whose geometric means are an integer.
+* [A147754](http://oeis.org/A147754) ([L08 program](A147754.asm)): Terms of this sequence are equal to gcd between two polynomials P1(n)=(512*n^4+1024*n^3+712*n^2+194*n+15) and P2(n)=(120*n^2+151*n+47) which are used in the BBP formula
 * [A147758](http://oeis.org/A147758) ([L11 program](A147758.asm)): Numbers whose binary representation is a palindrome formed from the reflected decimal expansion of the concatenation of 1, 0 and infinite digits 1.
 * [A147818](http://oeis.org/A147818) ([L06 program](A147818.asm)): Period 4: repeat [5, 9, 9, 5].
 * [A147832](http://oeis.org/A147832) ([L07 program](A147832.asm)): Numbers congruent (0,2) mod 14.
@@ -3387,7 +3388,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166805](http://oeis.org/A166805) ([L04 program](A166805.asm)): Number of n X 4 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166808](http://oeis.org/A166808) ([L04 program](A166808.asm)): Number of n X 5 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166810](http://oeis.org/A166810) ([L08 program](A166810.asm)): Number of n X 6 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
-* [A166812](http://oeis.org/A166812) ([L06 program](A166812.asm)): Number of n X 7 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
+* [A166812](http://oeis.org/A166812) ([L04 program](A166812.asm)): Number of n X 7 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166813](http://oeis.org/A166813) ([L08 program](A166813.asm)): Number of n X 8 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
 * [A166814](http://oeis.org/A166814) ([L13 program](A166814.asm)): Number of nX2 1..3 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in increasing order.
 * [A166830](http://oeis.org/A166830) ([L04 program](A166830.asm)): Number of n X 3 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nonincreasing order.
@@ -4799,6 +4800,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189321](http://oeis.org/A189321) ([L35 program](A189321.asm)): Number of nondecreasing arrangements of n+2 numbers in 0..4 with the last equal to 4 and each after the second equal to the sum of one or two of the preceding four.
 * [A189327](http://oeis.org/A189327) ([L10 program](A189327.asm)): Number of nondecreasing arrangements of 4 numbers in 0..n with the last equal to n and each after the second equal to the sum of one or two of the preceding four
 * [A189345](http://oeis.org/A189345) ([L06 program](A189345.asm)): Number of ways to choose four points in an n X n grid (or geoplane).
+* [A189374](http://oeis.org/A189374) ([L20 program](A189374.asm)): Expansion of 1/((1-x)^5*(x^2+x+1)^3).
 * [A189375](http://oeis.org/A189375) ([L19 program](A189375.asm)): Expansion of 1/((1-x)^5*(x^3+x^2+x+1)^3).
 * [A189376](http://oeis.org/A189376) ([L29 program](A189376.asm)): Expansion of 1/((1-x)^5*(x^3+x^2+x+1)^2).
 * [A189479](http://oeis.org/A189479) ([L42 program](A189479.asm)): Fixed point starting with 0 of the morphism 0->01, 1->101.
