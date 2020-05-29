@@ -1,0 +1,126 @@
+; A114347: Cumulative sum of triple factorial numbers a(n) = n!!! (A007661).
+; 1,2,4,7,11,21,39,67,147,309,589,1469,3413,7053,19373,48533,106773,316213,841093,1947653,6136453,17158933,41503253,137845653,402385173,1010993173,3515895573,10658462613,27699486613,100341656213
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $6,0
+      mov $8,2
+      mov $1,$0
+      mov $3,2
+      gcd $1,$8
+      mov $2,8
+      mov $5,7
+      mov $6,$2
+      mul $6,$8
+      mul $5,$3
+      add $8,1
+      sub $1,1
+      mov $1,2
+      gcd $8,2
+      mov $7,$6
+      mov $4,2
+      pow $5,2
+      fac $8
+      mul $4,$6
+      sub $1,1
+      sub $6,$3
+      pow $1,$3
+      div $3,8
+      cmp $4,$4
+      sub $5,$1
+      sub $2,2
+      mov $2,$5
+      lpb $0,1
+        mov $7,$5
+        mul $3,7
+        mov $4,$6
+        mod $4,5
+        pow $4,$4
+        mul $6,$0
+        div $3,3
+        sub $4,4
+        pow $3,$5
+        add $1,$1
+        sub $1,$2
+        sub $0,2
+        sub $0,1
+        cmp $7,$2
+        add $3,$7
+        div $4,5
+        pow $5,$1
+        cmp $4,$2
+        mod $1,8
+        sub $4,$5
+        mov $7,4
+        sub $6,$1
+      lpe
+      mod $3,7
+      mov $8,$5
+      mov $8,2
+      add $0,3
+      mul $6,2
+      mul $3,2
+      mul $0,4
+      div $8,$6
+      mul $6,3
+      pow $1,$4
+      add $6,$8
+      add $3,8
+      div $0,$6
+      mov $8,8
+      div $7,2
+      div $2,2
+      mod $3,$7
+      mul $3,4
+      sub $4,3
+      mov $8,4
+      mov $4,2
+      div $0,7
+      gcd $2,5
+      div $8,6
+      mul $4,$4
+      div $2,2
+      mul $8,2
+      pow $5,$1
+      sub $1,$6
+      mov $1,$6
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    div $1,84
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17
