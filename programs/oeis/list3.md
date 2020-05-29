@@ -693,6 +693,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328865](http://oeis.org/A328865) ([L04 program](A328865.asm)): The first repeating term in the trajectory of n under iterations of A329623, or -1 if no such terms exists.
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L03 program](A328943.asm)): a(n) = 2 + (n mod 4).
+* [A328950](http://oeis.org/A328950) ([L38 program](A328950.asm)): Numerators for the "Minimum-Redundancy Code" card problem.
 * [A328979](http://oeis.org/A328979) ([L04 program](A328979.asm)): Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
 * [A328990](http://oeis.org/A328990) ([L13 program](A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A329193](http://oeis.org/A329193) ([L14 program](A329193.asm)): a(n) = floor(log_2(n^3)) = floor(3 log_2(n))
