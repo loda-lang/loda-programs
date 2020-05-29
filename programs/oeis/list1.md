@@ -476,6 +476,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109168](http://oeis.org/A109168) ([L07 program](A109168.asm)): Continued fraction expansion of the constant x (A109169) such that the continued fraction of 2*x yields the continued fraction of x interleaved with the positive even numbers.
 * [A109232](http://oeis.org/A109232) ([L18 program](A109232.asm)): Floor(n*(e^2+1)/(e-1)^2).
 * [A109234](http://oeis.org/A109234) ([L12 program](A109234.asm)): Floor(n*sinh(1)).
+* [A109235](http://oeis.org/A109235) ([L41 program](A109235.asm)): Floor(n*(e^2-1)/(e^2-2*e-1)).
 * [A109237](http://oeis.org/A109237) ([L09 program](A109237.asm)): Floor(n*coth(1)).
 * [A109238](http://oeis.org/A109238) ([L15 program](A109238.asm)): Floor(n*(e^2+1)/2).
 * [A109340](http://oeis.org/A109340) ([L12 program](A109340.asm)): Expansion of x^2*(1+x+4*x^2)/((1+x+x^2)*(1-x)^3).
@@ -538,6 +539,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110660](http://oeis.org/A110660) ([L04 program](A110660.asm)): Promic numbers repeated.
 * [A110831](http://oeis.org/A110831) ([L06 program](A110831.asm)): a(n) = 3*n^2 + 27*n + 1.
 * [A110907](http://oeis.org/A110907) ([L11 program](A110907.asm)): Number of points in the standard root system version of the D_3 (or f.c.c.) lattice having L_infinity norm n.
+* [A111072](http://oeis.org/A111072) ([L17 program](A111072.asm)): Write the sequence of natural number 0123456789 and repeat it infinite times. Then starting from the first zero on the left side move right one number (1), then two numbers (3), then three numbers (6), four numbers (0), five numbers (5) and so on. Summing all the numbers we get 0, 1, 4, 10, 10, 15, ...
 * [A111080](http://oeis.org/A111080) ([L07 program](A111080.asm)): Sum of numbers under a triangle on a spiral staircase of width 10.
 * [A111097](http://oeis.org/A111097) ([L11 program](A111097.asm)): Maximum likelihood estimate of the number of distinguishable marbles in an urn if repeated random sampling of one marble with replacement yields n different marbles before the first repeated marble.
 * [A111144](http://oeis.org/A111144) ([L11 program](A111144.asm)): a(n) = n*(n+13)*(n+14)/6.
@@ -1951,6 +1953,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140158](http://oeis.org/A140158) ([L17 program](A140158.asm)): a(1)=1, a(n) = a(n-1) + n^4 if n odd, a(n) = a(n-1) + n^1 if n is even.
 * [A140159](http://oeis.org/A140159) ([L22 program](A140159.asm)): a(1)=1, a(n) = a(n-1) + n^4 if n odd, a(n) = a(n-1) + n^2 if n is even.
 * [A140160](http://oeis.org/A140160) ([L19 program](A140160.asm)): a(1)=1, a(n) = a(n-1) + n^4 if n odd, a(n) = a(n-1) + n^3 if n is even.
+* [A140161](http://oeis.org/A140161) ([L19 program](A140161.asm)): a(1)=1, a(n) = a(n-1) + n^4 if n odd, a(n) = a(n-1) + n^5 if n is even.
 * [A140162](http://oeis.org/A140162) ([L25 program](A140162.asm)): a(1)=1, a(n) = a(n-1) + n^5 if n odd, a(n) = a(n-1) + n^0 if n is even.
 * [A140164](http://oeis.org/A140164) ([L07 program](A140164.asm)): Binomial transform of [1, 1, 1, 1, -1, -1, 5, -11, 19, -29, 41, ...].
 * [A140201](http://oeis.org/A140201) ([L06 program](A140201.asm)): Partial sums of A140081.
@@ -2512,6 +2515,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155618](http://oeis.org/A155618) ([L09 program](A155618.asm)): a(n) = 7^n+4^n-1^n.
 * [A155627](http://oeis.org/A155627) ([L12 program](A155627.asm)): a(n) = 6^n - 4^n + 1.
 * [A155628](http://oeis.org/A155628) ([L09 program](A155628.asm)): 7^n-4^n+1^n
+* [A155633](http://oeis.org/A155633) ([L10 program](A155633.asm)): 6^n+5^n-1.
 * [A155639](http://oeis.org/A155639) ([L12 program](A155639.asm)): 6^n-5^n+1^n.
 * [A155701](http://oeis.org/A155701) ([L04 program](A155701.asm)): a(n) = (4^n + 8)/3.
 * [A155721](http://oeis.org/A155721) ([L05 program](A155721.asm)): Positions of parity change in A033035.
@@ -3377,9 +3381,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166598](http://oeis.org/A166598) ([L04 program](A166598.asm)): a(n) = 5*n - a(n-1), with n>1, a(1)=5.
 * [A166621](http://oeis.org/A166621) ([L05 program](A166621.asm)): a(n) = 10*n - a(n-1), with n>1, a(1)=5.
 * [A166639](http://oeis.org/A166639) ([L10 program](A166639.asm)): a(n) = 6*n + 3 + 4*(-1)^n.
-* [A166727](http://oeis.org/A166727) ([L11 program](A166727.asm)): Positive integers with English names ending in "r".
-* [A166728](http://oeis.org/A166728) ([L16 program](A166728.asm)): Positive integers with English names ending in "x".
-* [A166729](http://oeis.org/A166729) ([L14 program](A166729.asm)): Positive integers with English names ending in "t".
+* [A166727](http://oeis.org/A166727) ([L09 program](A166727.asm)): Positive integers with English names ending in "r".
+* [A166728](http://oeis.org/A166728) ([L09 program](A166728.asm)): Positive integers with English names ending in "x".
+* [A166729](http://oeis.org/A166729) ([L09 program](A166729.asm)): Positive integers with English names ending in "t".
 * [A166730](http://oeis.org/A166730) ([L09 program](A166730.asm)): Positive integers with English names ending in "y".
 * [A166731](http://oeis.org/A166731) ([L03 program](A166731.asm)): Positive integers with English names ending in "d".
 * [A166752](http://oeis.org/A166752) ([L06 program](A166752.asm)): Interleave A007583 and A000012.
@@ -3621,7 +3625,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168555](http://oeis.org/A168555) ([L06 program](A168555.asm)): a(n) = n^6*(n^3 + 1)/2.
 * [A168559](http://oeis.org/A168559) ([L06 program](A168559.asm)): a(n) = n^2 + a(n-1), with a(1)=0.
 * [A168564](http://oeis.org/A168564) ([L06 program](A168564.asm)): a(n) = n^6*(n^4 + 1)/2.
-* [A168566](http://oeis.org/A168566) ([L08 program](A168566.asm)): a(n) = (n-1)*(n+2)*(n^2 + n + 2)/4.
+* [A168566](http://oeis.org/A168566) ([L07 program](A168566.asm)): a(n) = (n-1)*(n+2)*(n^2 + n + 2)/4.
 * [A168569](http://oeis.org/A168569) ([L04 program](A168569.asm)): a(n) = 9*(3^n - 1)/2.
 * [A168571](http://oeis.org/A168571) ([L04 program](A168571.asm)): a(n) = 25*(5^n - 1)/4.
 * [A168574](http://oeis.org/A168574) ([L08 program](A168574.asm)): a(n) = (4*n + 3)*(1 + 2*n^2)/3.
