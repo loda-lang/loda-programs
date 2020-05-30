@@ -1,0 +1,108 @@
+; A145920: List of numbers that are both pentagonal (A000326) and binomial coefficients C(n,4) (A000332).
+; 0,1,5,35,70,210,330,715,1001,1820,2380,3876,4845,7315,8855,12650,14950,20475,23751,31465,35960,46376,52360,66045,73815,91390,101270,123410,135751,163185,178365,211876,230300,270725,292825,341055,367290,424270
+
+mov $11,$0
+mov $8,4
+mov $7,$0
+mov $2,4
+mov $0,4
+mov $1,10
+mov $10,9
+mov $9,$1
+fac $9
+div $1,$8
+add $8,5
+add $1,10
+mul $7,9
+mov $1,9
+lpb $0,1
+  mul $0,2
+  mov $6,6
+  mov $4,0
+  mov $7,$0
+  mov $5,5
+  mov $9,$1
+  mul $10,$0
+  mod $4,$0
+  add $2,2
+  mov $9,5
+  mul $10,$10
+  mov $4,$10
+  mul $9,$5
+  gcd $8,6
+  mul $2,2
+  cmp $9,$6
+  mul $4,7
+  pow $4,$9
+  mov $1,$6
+  fac $7
+  sub $4,1
+  sub $6,9
+  mod $5,2
+  pow $6,$0
+  pow $6,9
+  pow $5,2
+  add $8,$0
+  mul $0,5
+  mul $5,5
+  div $10,$0
+  fac $8
+  mul $5,2
+  mod $9,$2
+  fac $2
+  cmp $6,$1
+  sub $0,1
+  add $0,3
+  sub $2,$7
+  sub $1,$5
+  gcd $4,5
+  div $6,$5
+  div $7,$5
+  mul $4,$7
+  cmp $10,$7
+  mov $3,9
+  mul $4,2
+  sub $9,1
+lpe
+mov $4,$3
+mov $9,$10
+mod $3,$9
+add $2,$7
+mul $9,2
+sub $10,$4
+add $3,$5
+mov $8,$9
+cmp $6,$2
+div $2,6
+pow $0,$1
+add $0,$6
+mov $4,2
+pow $4,2
+add $1,6
+mod $3,$8
+add $1,$0
+mul $0,$6
+div $5,$8
+sub $10,9
+gcd $3,9
+mov $10,6
+div $4,$9
+mov $5,$8
+add $2,2
+mov $9,2
+add $3,10
+mul $8,$10
+mov $4,5
+mod $7,7
+bin $4,$9
+mul $4,6
+add $4,$9
+sub $4,$4
+sub $8,$0
+mov $0,6
+bin $2,4
+mul $10,$9
+mov $1,$2
+mov $12,$11
+mul $12,$11
+mul $12,$11
