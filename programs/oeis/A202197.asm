@@ -1,0 +1,108 @@
+; A202197: Number of (n+2) X 5 binary arrays avoiding patterns 001 and 101 in rows and columns.
+; 450,1400,3500,7560,14700,26400,44550,71500,110110,163800,236600,333200,459000,620160,823650,1077300,1389850,1771000,2231460,2783000,3438500,4212000,5118750,6175260,7399350,8810200,10428400,12276000,14376560
+
+mov $9,4
+add $0,3
+mov $2,2
+mov $8,$0
+add $2,$2
+pow $8,4
+add $9,$9
+mov $3,$0
+mov $7,3
+add $9,8
+div $2,$3
+cmp $9,$0
+add $7,$0
+pow $9,4
+sub $8,8
+cmp $3,2
+mov $10,5
+add $8,1
+bin $7,$0
+mov $4,9
+div $3,$0
+mul $10,5
+pow $0,2
+mov $6,2
+mov $4,$0
+mov $3,9
+lpb $0,1
+  mov $8,1
+  mov $2,$7
+  add $3,$9
+  div $0,10
+  mul $2,$8
+  sub $7,3
+  mov $10,$4
+  mul $0,2
+  pow $6,10
+  mod $10,3
+  div $6,$6
+  div $0,4
+  div $10,$3
+  add $3,$8
+  mov $2,$2
+  mov $10,$4
+  mov $7,10
+  sub $0,1
+  sub $0,$0
+  add $10,$0
+  mov $1,$0
+  mod $8,8
+  mov $9,$7
+  mul $4,$2
+  gcd $7,$6
+  mov $5,6
+  sub $1,7
+  add $1,$8
+  mul $2,$2
+  pow $6,$5
+  sub $0,$0
+  mul $8,2
+  div $3,$1
+  bin $3,$9
+  mul $8,$8
+  div $9,$9
+  add $4,8
+  mul $1,$5
+  mov $7,$6
+  add $3,$6
+  mov $0,$8
+  mul $2,7
+  mov $10,$3
+  mov $3,7
+  div $10,$0
+lpe
+mod $10,$6
+gcd $3,7
+add $6,$4
+add $3,5
+mod $3,2
+sub $1,6
+cmp $5,9
+mod $1,$7
+add $1,$8
+mov $9,5
+mul $9,$8
+mul $0,9
+mul $4,$10
+add $0,10
+div $0,3
+mul $7,$4
+add $1,5
+pow $9,2
+pow $8,$1
+sub $0,$3
+div $8,10
+add $0,$7
+pow $7,$4
+pow $5,5
+add $1,7
+add $5,$4
+fac $1
+mov $1,$6
+sub $1,189
+div $1,4
+mul $1,10
+add $1,450

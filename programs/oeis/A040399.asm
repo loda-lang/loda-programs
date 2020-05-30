@@ -1,126 +1,43 @@
 ; A040399: Continued fraction for sqrt(420).
 ; 20,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40,2,40
 
-mov $11,$0
-mov $13,2
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  add $0,$13
+mov $6,$0
+mov $5,2
+lpb $5,1
+  sub $5,1
+  mov $0,$6
+  add $0,$5
   sub $0,1
-  mov $9,$0
-  mul $9,2
-  mov $10,$9
-  mov $2,$10
-  bin $0,$0
+  mov $8,$0
+  mul $8,2
+  mov $7,$8
+  mov $2,$7
   div $2,4
-  add $10,6
-  mov $8,$10
   mul $2,4
   add $2,8
-  mod $10,9
-  mov $5,1
-  mov $1,3
-  mov $8,$0
-  mov $1,$9
-  mov $1,$1
-  mov $7,8
   mov $1,$2
-  div $7,2
-  cmp $0,$10
-  add $9,$1
+  cmp $0,$7
+  add $8,$1
   div $0,2
-  mov $6,3
-  mov $3,$0
-  div $7,$6
-  add $10,4
-  div $7,9
-  mul $2,6
-  div $8,$1
-  add $3,$7
-  sub $10,$2
-  add $10,1
-  mod $5,9
-  sub $2,1
-  mul $9,2
-  add $1,$10
-  add $6,6
-  sub $9,9
-  add $7,$3
-  mod $6,6
-  div $3,3
-  mod $5,$2
-  add $2,2
-  div $2,$10
-  lpb $0,1
-    mul $3,7
-    bin $8,$2
-    mul $1,$2
-    mul $0,7
-    mul $5,$2
-    sub $9,1
-    mul $2,$7
-    add $0,$1
-    div $9,4
-    div $2,$0
-    sub $0,1
-    mov $1,6
-    add $3,$1
-    add $7,$10
-    mov $4,$3
-    bin $4,$0
-    mul $0,2
-    sub $10,6
-    mov $9,$9
-    mov $5,2
-    mul $10,$4
-    sub $9,7
-    mul $2,$10
-    mul $0,$0
-    mov $10,$10
-    add $8,8
-    sub $7,$9
-    mov $6,9
-    mod $8,4
-    mod $1,$0
-    mod $10,2
-    div $5,2
-    mul $2,9
-    fac $8
-    sub $0,$5
-    mov $10,0
-    pow $4,$4
-    add $7,$6
-  lpe
-  sub $7,8
-  gcd $10,8
-  mul $0,$3
-  sub $6,$8
-  add $8,$10
-  mod $4,$2
-  add $2,$2
+  add $7,1
+  mul $8,2
+  add $1,$7
+  sub $8,9
   gcd $0,9
-  mul $0,$9
-  add $8,$9
-  mov $9,$6
-  add $7,$0
-  mul $2,9
-  add $3,$6
+  mul $0,$8
   add $0,$1
-  div $2,$2
   mov $1,$0
-  mov $14,$13
-  lpb $14,1
-    mov $12,$1
-    sub $14,1
+  mov $4,$5
+  lpb $4,1
+    mov $3,$1
+    sub $4,1
   lpe
 lpe
-lpb $11,1
-  sub $12,$1
-  mov $11,0
+lpb $6,1
+  sub $3,$1
+  mov $6,0
 lpe
-mov $1,$12
+mov $1,$3
 sub $1,36
 div $1,4
 mul $1,2

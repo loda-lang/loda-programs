@@ -1,0 +1,146 @@
+; A022775: Place where n-th 1 occurs in A007336.
+; 1,3,6,11,17,25,34,44,56,69,84,100,117,136,156,178,201,226,252,279,308,338,370,403,437,473,510,549,589,631,674,718,764,811,860,910,961,1014,1068,1124,1181,1239,1299,1360,1423,1487,1553,1620,1688
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $11,$0
+    mov $13,2
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      add $0,$13
+      sub $0,1
+      mov $10,$0
+      mov $7,$0
+      add $10,$10
+      div $0,7
+      div $0,2
+      cmp $7,0
+      mov $2,$0
+      add $2,$10
+      mov $4,$10
+      mov $5,3
+      mov $3,$10
+      sub $2,$10
+      mov $8,0
+      add $0,$10
+      mov $6,7
+      fac $5
+      add $5,4
+      mov $1,2
+      add $2,4
+      pow $1,6
+      sub $2,9
+      div $5,$5
+      mul $2,7
+      mul $4,8
+      cmp $3,6
+      sub $10,1
+      mov $5,$6
+      div $4,4
+      mod $3,$1
+      pow $3,$1
+      add $10,2
+      div $0,5
+      sub $6,$8
+      lpb $2,1
+        mul $8,$3
+        lpb $4,1
+          mul $7,8
+          fac $0
+          sub $4,$2
+          sub $7,9
+        lpe
+        mov $6,$3
+        add $8,$3
+        mul $8,7
+        mov $9,$0
+        mov $4,$5
+        add $9,1
+        div $2,2
+        mov $0,4
+        add $3,4
+        add $8,10
+        div $0,2
+        lpb $5,1
+          mov $7,7
+          mod $4,9
+          add $0,5
+          div $7,9
+          mul $0,$3
+          sub $3,6
+          mul $3,2
+          mov $10,$8
+          sub $2,1
+          sub $5,$3
+          pow $3,2
+          mul $4,3
+          sub $3,$2
+          div $4,10
+          add $7,3
+          mov $5,0
+          sub $3,$6
+          sub $5,$2
+          mul $7,$5
+          pow $0,$7
+          add $10,8
+          sub $2,$8
+          mul $10,2
+          mod $6,7
+        lpe
+        pow $0,$1
+        div $8,$9
+        lpb $6,1
+          sub $10,$0
+          cmp $8,$2
+          sub $6,$2
+          mov $2,$7
+          div $4,10
+          sub $8,4
+          gcd $8,$6
+          div $1,$1
+        lpe
+        sub $2,2
+        div $4,6
+        sub $1,2
+        pow $4,$1
+        sub $2,1
+      lpe
+      add $8,$0
+      bin $2,5
+      pow $5,2
+      div $6,3
+      mov $1,$0
+      mov $14,$13
+      lpb $14,1
+        mov $12,$1
+        sub $14,1
+      lpe
+    lpe
+    lpb $11,1
+      sub $12,$1
+      mov $11,0
+    lpe
+    mov $1,$12
+    add $1,1
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19
