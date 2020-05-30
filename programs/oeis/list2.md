@@ -1134,7 +1134,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241976](http://oeis.org/A241976) ([L12 program](A241976.asm)): Values of k such that k^2 + (k+3)^2 is a square.
 * [A241979](http://oeis.org/A241979) ([L11 program](A241979.asm)): (0,1) sequence such that lengths of three consecutive runs are always distinct.
 * [A242062](http://oeis.org/A242062) ([L17 program](A242062.asm)): Expansion of x * (1 - x^12) / ((1 - x^3) * (1 - x^4) * (1 - x^7)) in powers of x.
-* [A242112](http://oeis.org/A242112) ([L08 program](A242112.asm)): a(n) = floor((2*n+6)/(5-(-1)^n)).
+* [A242112](http://oeis.org/A242112) ([L05 program](A242112.asm)): a(n) = floor((2*n+6)/(5-(-1)^n)).
 * [A242181](http://oeis.org/A242181) ([L03 program](A242181.asm)): Numbers with four X's in Roman numerals.
 * [A242215](http://oeis.org/A242215) ([L03 program](A242215.asm)): a(n) = 18*n + 5.
 * [A242328](http://oeis.org/A242328) ([L03 program](A242328.asm)): 5^n + 2.
@@ -1721,6 +1721,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A263226](http://oeis.org/A263226) ([L11 program](A263226.asm)): a(n) = 15*n^2 - 13*n.
 * [A263228](http://oeis.org/A263228) ([L08 program](A263228.asm)): a(n) = 2*n*(16*n - 13).
 * [A263313](http://oeis.org/A263313) ([L18 program](A263313.asm)): Permutation of the nonnegative integers: [4k+3, 4k, 4k+1, 4k+2, ...].
+* [A263334](http://oeis.org/A263334) ([L10 program](A263334.asm)): Number of (n+2) X (1+2) 0..2 arrays with each row and column divisible by 13, read as a base-3 number with top and left being the most significant digits.
 * [A263418](http://oeis.org/A263418) ([L19 program](A263418.asm)): a(n) is the total number of pentagrams in a variant of pentagram fractal after n iterations.
 * [A263426](http://oeis.org/A263426) ([L19 program](A263426.asm)): Permutation of the nonnegative integers: [4k+2, 4k+1, 4k, 4k+3, ...].
 * [A263449](http://oeis.org/A263449) ([L16 program](A263449.asm)): Permutation of the natural numbers: [4k+1, 4k+4, 4k+3, 4k+2, ...].
@@ -2158,7 +2159,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272850](http://oeis.org/A272850) ([L13 program](A272850.asm)): a(n) = (n^2 + (n+1)^2)*(n^2 + (n+1)^2 + 2*n*(n+1)).
 * [A272871](http://oeis.org/A272871) ([L05 program](A272871.asm)): Imaginary part of (n + i)^4.
 * [A272914](http://oeis.org/A272914) ([L13 program](A272914.asm)): Sixth powers ending in digit 6.
-* [A272915](http://oeis.org/A272915) ([L05 program](A272915.asm)): a(n) = n + floor(5*n/6).
+* [A272915](http://oeis.org/A272915) ([L04 program](A272915.asm)): a(n) = n + floor(5*n/6).
 * [A272975](http://oeis.org/A272975) ([L05 program](A272975.asm)): Numbers that are congruent to {0,7} mod 12.
 * [A272978](http://oeis.org/A272978) ([L33 program](A272978.asm)): Numbers not in the range of the sum of perfect divisors function.
 * [A273109](http://oeis.org/A273109) ([L22 program](A273109.asm)): Numbers n such that in the difference triangle of the divisors of n (including the divisors of n) the diagonal from the bottom entry to n gives the divisors of n.
@@ -2229,7 +2230,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274340](http://oeis.org/A274340) ([L11 program](A274340.asm)): A 4-cycle of the iterated sum of deficient divisors function.
 * [A274380](http://oeis.org/A274380) ([L11 program](A274380.asm)): A 4-cycle of the iterated sum of deficient divisors function.
 * [A274406](http://oeis.org/A274406) ([L08 program](A274406.asm)): Numbers m such that 9 divides m*(m + 1).
-* [A274497](http://oeis.org/A274497) ([L09 program](A274497.asm)): Sum of the degrees of asymmetry of all binary words of length n.
+* [A274497](http://oeis.org/A274497) ([L06 program](A274497.asm)): Sum of the degrees of asymmetry of all binary words of length n.
 * [A274499](http://oeis.org/A274499) ([L09 program](A274499.asm)): Sum of the degrees of asymmetry of all ternary words of length n.
 * [A274576](http://oeis.org/A274576) ([L07 program](A274576.asm)): a(2n) = floor(n/2), a(2n+1) = a(n), a(0)=0.
 * [A274583](http://oeis.org/A274583) ([L07 program](A274583.asm)): Expansion of (1 + x + x^2 - x^3 - x^4 + x^6)/((1 - x)^3*(1 + x + x^2)^2).

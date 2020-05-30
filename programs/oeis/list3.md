@@ -636,7 +636,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323218](http://oeis.org/A323218) ([L15 program](A323218.asm)): a(n) = (4*n^3 + 30*n^2 + 50*n)/3 + 1.
 * [A323221](http://oeis.org/A323221) ([L11 program](A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
 * [A323227](http://oeis.org/A323227) ([L07 program](A323227.asm)): a(n) = [x^n] (-x^4 + 2*x^3 - x^2 + 2*x - 1)/((x - 1)^2*(2*x - 1)).
-* [A323228](http://oeis.org/A323228) ([L08 program](A323228.asm)): a(n) = binomial(n + 4, n - 1) + 1.
+* [A323228](http://oeis.org/A323228) ([L07 program](A323228.asm)): a(n) = binomial(n + 4, n - 1) + 1.
 * [A323229](http://oeis.org/A323229) ([L10 program](A323229.asm)): a(n) = binomial(2*n, n+1) + 1.
 * [A323397](http://oeis.org/A323397) ([L13 program](A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323610](http://oeis.org/A323610) ([L05 program](A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
@@ -759,7 +759,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330246](http://oeis.org/A330246) ([L05 program](A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A330396](http://oeis.org/A330396) ([L11 program](A330396.asm)): Permutation of the nonnegative integers partitioned into triples [3*k+2, 3*k+1, 3*k] for k >= 0.
-* [A330451](http://oeis.org/A330451) ([L05 program](A330451.asm)): a(n) = a(n-3) + 20*n - 30 for n > 2, with a(0)=0, a(1)=3, a(2)=13.
+* [A330451](http://oeis.org/A330451) ([L04 program](A330451.asm)): a(n) = a(n-3) + 20*n - 30 for n > 2, with a(0)=0, a(1)=3, a(2)=13.
 * [A330520](http://oeis.org/A330520) ([L18 program](A330520.asm)): Sum of even integers <= n times the sum of odd integers <= n.
 * [A330569](http://oeis.org/A330569) ([L09 program](A330569.asm)): a(n) = 1 if n is odd, otherwise a(n) = 2^(v-1)+1 where v is the 2-adic valuation of n (A007814(n)).
 * [A330700](http://oeis.org/A330700) ([L44 program](A330700.asm)): a(n) = (n - 1)*n*(2*n^2 + 4*n - 1)/6.
@@ -768,6 +768,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330805](http://oeis.org/A330805) ([L38 program](A330805.asm)): Number of squares and rectangles in the interior of the square with vertices (n,0), (0,n), (-n,0) and (0,-n) in a square (x,y)-grid.
 * [A330859](http://oeis.org/A330859) ([L10 program](A330859.asm)): The additive version of the 'Decade transform' : to obtain a(n) write n as a sum of its power-of-ten parts and then continue to calculate the sum of the adjacent parts until a single number remains.
 * [A330881](http://oeis.org/A330881) ([L27 program](A330881.asm)): Length of longest LB factorization over all binary strings of length n.
+* [A330938](http://oeis.org/A330938) ([L62 program](A330938.asm)): Numbers that cannot be written as the sum of four proper powers. A proper power is an integer number m of the form a^b where a,b are integers greater than or equal to 2.
 * [A331162](http://oeis.org/A331162) ([L15 program](A331162.asm)): a(n) is the number of digits in the concatenation of a(0) to a(n-1) that are equal to the corresponding digit in the concatenation of all integers >= 0, with a(0) = 0.
 * [A331190](http://oeis.org/A331190) ([L09 program](A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
 * [A331528](http://oeis.org/A331528) ([L14 program](A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.

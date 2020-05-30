@@ -1,0 +1,13 @@
+; A263334: Number of (n+2) X (1+2) 0..2 arrays with each row and column divisible by 13, read as a base-3 number with top and left being the most significant digits.
+; 3,7,19,57,169,505,1515,4543,13627,40881,122641,367921,1103763,3311287,9933859,29801577,89404729,268214185,804642555,2413927663,7241782987,21725348961,65176046881,195528140641,586584421923,1759753265767
+
+mov $2,3
+add $0,3
+mov $3,$0
+pow $2,$3
+div $2,13
+mov $1,$2
+sub $1,2
+div $1,2
+mul $1,2
+add $1,3

@@ -1,0 +1,184 @@
+; A077834: Expansion of 1/(1 - 2*x - 2*x^2 - 3*x^3).
+; 1,2,6,19,56,168,505,1514,4542,13627,40880,122640,367921,1103762,3311286,9933859,29801576,89404728,268214185,804642554,2413927662,7241782987,21725348960,65176046880,195528140641,586584421922,1759753265766,5279259797299,15837779391896
+
+mov $26,$0
+mov $28,$0
+add $28,1
+lpb $28,1
+  clr $0,26
+  sub $28,1
+  mov $0,$26
+  sub $0,$28
+  mov $23,$0
+  mov $25,$0
+  add $25,1
+  lpb $25,1
+    clr $0,23
+    sub $25,1
+    mov $0,$23
+    sub $0,$25
+    mov $19,$0
+    mov $21,2
+    lpb $21,1
+      clr $0,19
+      sub $21,1
+      mov $0,$19
+      add $0,$21
+      sub $0,1
+      mov $15,$0
+      mov $17,2
+      lpb $17,1
+        clr $0,15
+        sub $17,1
+        mov $0,$15
+        add $0,$17
+        sub $0,1
+        mov $11,$0
+        mov $13,2
+        lpb $13,1
+          clr $0,11
+          sub $13,1
+          mov $0,$11
+          add $0,$13
+          sub $0,1
+          mov $6,$0
+          mov $1,2
+          mov $8,7
+          mov $10,$0
+          pow $8,2
+          mov $10,10
+          mov $9,4
+          mov $2,9
+          mul $9,$1
+          mov $7,$10
+          mov $6,$10
+          sub $10,4
+          add $6,$1
+          add $6,5
+          mov $5,5
+          mul $6,2
+          add $5,3
+          add $9,5
+          mod $7,$5
+          div $6,$2
+          add $0,$6
+          mov $1,$6
+          mov $3,8
+          add $8,$1
+          div $7,2
+          mov $4,$0
+          pow $2,9
+          pow $8,$1
+          div $5,7
+          mov $8,$7
+          add $5,1
+          pow $6,$4
+          div $4,7
+          div $6,$9
+          lpb $0,1
+            add $9,8
+            div $9,2
+            add $7,9
+            div $7,2
+            mul $5,2
+            add $8,$7
+            gcd $0,$6
+            pow $5,$5
+            mul $1,$7
+            mov $1,$6
+            pow $4,2
+            mod $4,2
+            sub $3,$5
+            div $2,2
+            div $4,5
+            sub $9,$2
+            pow $0,6
+            div $9,$5
+            mov $7,10
+            add $0,$3
+            div $4,2
+            mov $2,4
+            mod $6,3
+            gcd $8,$3
+            pow $7,$10
+            mov $0,$7
+            div $3,$5
+            cmp $9,9
+            pow $4,4
+            mul $7,9
+            mov $3,7
+            sub $0,1
+            mul $1,$2
+            add $1,$4
+            add $2,$8
+            mul $8,$8
+            add $3,5
+            mov $3,10
+            mov $3,2
+            pow $8,2
+            div $10,2
+            add $8,$2
+            mov $7,8
+            div $4,$2
+            fac $9
+            bin $3,$8
+            pow $7,2
+            gcd $6,$10
+            mul $7,2
+            mov $9,$10
+            mul $10,4
+            div $4,4
+            div $8,$9
+            pow $0,$9
+            add $8,$7
+            mov $3,7
+            div $2,$2
+          lpe
+          sub $2,4
+          div $9,$10
+          fac $7
+          mul $7,$2
+          div $8,2
+          mov $8,$2
+          mov $9,7
+          mov $1,$6
+          mov $14,$13
+          lpb $14,1
+            mov $12,$1
+            sub $14,1
+          lpe
+        lpe
+        lpb $11,1
+          sub $12,$1
+          mov $11,0
+        lpe
+        mov $1,$12
+        mov $18,$17
+        lpb $18,1
+          mov $16,$1
+          sub $18,1
+        lpe
+      lpe
+      lpb $15,1
+        sub $16,$1
+        mov $15,0
+      lpe
+      mov $1,$16
+      mov $22,$21
+      lpb $22,1
+        mov $20,$1
+        sub $22,1
+      lpe
+    lpe
+    lpb $19,1
+      sub $20,$1
+      mov $19,0
+    lpe
+    mov $1,$20
+    div $1,2
+    add $24,$1
+  lpe
+  mov $1,$24
+  add $27,$1
+lpe
+mov $1,$27
