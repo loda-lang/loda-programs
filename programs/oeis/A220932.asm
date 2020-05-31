@@ -1,0 +1,107 @@
+; A220932: Equals two maps: number of n X 3 binary arrays indicating the locations of corresponding elements equal to exactly two of their horizontal and antidiagonal neighbors in a random 0..2 n X 3 array.
+; 2,16,92,556,3332,19996,119972,719836,4319012,25914076,155484452,932906716,5597440292,33584641756,201507850532,1209047103196,7254282619172,43525695715036,261154174290212,1566925045741276
+
+mov $2,$0
+mov $9,0
+mul $9,$2
+pow $9,3
+mov $8,6
+mov $4,$8
+mov $3,2
+mov $3,7
+mul $3,8
+pow $4,$0
+mov $7,$2
+add $8,1
+add $4,5
+fac $2
+mul $2,5
+mov $6,0
+mov $5,$4
+mod $5,3
+pow $3,3
+lpb $0,1
+  mov $5,$3
+  pow $8,$6
+  mov $3,5
+  cmp $4,$5
+  pow $8,8
+  div $0,$3
+  add $9,$0
+  mov $1,7
+  mov $10,10
+  div $0,7
+  mov $7,$10
+  mov $9,$7
+  mul $0,6
+  mod $1,5
+  pow $0,2
+  div $4,10
+  add $7,1
+  gcd $6,$8
+  div $0,$3
+  mod $10,2
+  sub $4,10
+  fac $0
+  cmp $0,$8
+  mov $8,$4
+  mod $4,$1
+  add $9,$5
+  mov $0,$2
+  mul $0,$10
+  sub $0,1
+  bin $7,$3
+  sub $0,5
+  div $4,2
+  add $6,$7
+  mov $10,7
+  mov $9,$10
+  add $3,$3
+  sub $0,$6
+  cmp $3,2
+  add $8,10
+  div $6,4
+  mov $3,$6
+  mul $4,$6
+  gcd $3,10
+  sub $6,$9
+  gcd $7,$7
+  cmp $7,7
+  sub $4,5
+  div $6,$1
+  pow $4,4
+  mov $2,$7
+  add $0,$6
+  gcd $6,2
+  fac $1
+  add $4,$6
+  mod $8,10
+  pow $0,6
+  pow $1,9
+  sub $0,$3
+  mul $4,$4
+  mul $4,10
+  div $2,$10
+  div $0,5
+  add $5,$0
+  sub $1,$10
+  mod $10,4
+lpe
+mul $4,9
+sub $7,$7
+mov $6,3
+add $10,$8
+sub $7,$1
+mod $9,$3
+add $1,$9
+pow $5,$1
+mul $9,$5
+div $4,$10
+pow $5,6
+pow $0,$10
+mov $3,$2
+sub $2,5
+mov $1,$4
+sub $1,7
+mul $1,2
+add $1,2

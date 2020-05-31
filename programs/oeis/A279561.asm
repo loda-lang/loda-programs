@@ -1,0 +1,95 @@
+; A279561: Number of length n inversion sequences avoiding the patterns 101, 102, 201, and 210.
+; 1,1,2,6,21,77,287,1079,4082,15522,59280,227240,873886,3370030,13027730,50469890,195892565,761615285,2965576715,11563073315,45141073925,176423482325,690215089745,2702831489825,10593202603775,41550902139551,163099562175851
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $8,$0
+  mov $4,4
+  div $4,$4
+  mov $6,$4
+  mov $7,$0
+  sub $7,1
+  mov $2,$6
+  div $0,2
+  mov $3,$2
+  mul $2,5
+  add $4,1
+  add $2,2
+  mov $5,7
+  pow $3,2
+  cmp $0,$8
+  mov $1,8
+  mul $1,$1
+  mov $1,7
+  add $7,$7
+  div $5,$2
+  bin $7,$8
+  sub $6,$4
+  add $1,$7
+  fac $3
+  mov $8,$7
+  add $7,$6
+  lpb $0,1
+    sub $5,$1
+    mul $3,$8
+    mov $8,$6
+    sub $8,$1
+    sub $5,1
+    cmp $0,7
+    add $2,4
+    sub $2,$5
+    mod $7,2
+    add $1,$4
+    sub $0,1
+    div $7,2
+    add $5,$1
+    mov $7,$8
+    cmp $6,$4
+    sub $7,$3
+    mul $4,$8
+    add $6,1
+    sub $7,$3
+    mul $0,3
+    bin $6,2
+    mov $6,$2
+    div $8,$6
+    mul $0,4
+    mov $7,7
+    div $7,6
+    pow $5,$4
+    fac $0
+    mul $2,$4
+    sub $3,2
+    mul $0,4
+    gcd $7,$5
+    mov $6,3
+    add $0,8
+    mov $2,$8
+    cmp $4,$7
+    pow $8,$1
+    add $4,2
+    sub $1,$1
+    pow $1,$0
+    cmp $4,$8
+    mov $6,$8
+    mov $6,$7
+  lpe
+  mul $2,$0
+  gcd $4,2
+  add $1,1
+  div $3,2
+  mul $4,2
+  mul $2,$7
+  add $0,7
+  mul $7,$2
+  mul $6,$3
+  sub $1,8
+  add $10,$1
+lpe
+mov $1,$10
