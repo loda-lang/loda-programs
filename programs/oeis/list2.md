@@ -380,6 +380,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212892](http://oeis.org/A212892) ([L05 program](A212892.asm)): a(n) = n^4/8 if n is even, a(n) = (n^2-1)^2/8 if n is odd.
 * [A212893](http://oeis.org/A212893) ([L16 program](A212893.asm)): Number of quadruples (w,x,y,z) with all terms in {0,...,n} such that w-x, x-y, and y-z all have the same parity.
 * [A212894](http://oeis.org/A212894) ([L19 program](A212894.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)=1.
+* [A212901](http://oeis.org/A212901) ([L50 program](A212901.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and equal consecutive gap sizes.
 * [A212959](http://oeis.org/A212959) ([L10 program](A212959.asm)): Number of (w,x,y) such that w,x,y are all in {0,...,n} and |w-x| = |x-y|.
 * [A212960](http://oeis.org/A212960) ([L12 program](A212960.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x| != |x-y|.
 * [A212963](http://oeis.org/A212963) ([L41 program](A212963.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|!=|x-y|!=|y-z|.
@@ -473,7 +474,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213845](http://oeis.org/A213845) ([L19 program](A213845.asm)): Principal diagonal of the convolution array A213844.
 * [A213846](http://oeis.org/A213846) ([L32 program](A213846.asm)): Antidiagonal sums of the convolution array A213844.
 * [A213848](http://oeis.org/A213848) ([L27 program](A213848.asm)): Principal diagonal of the convolution array A213847.
-* [A214066](http://oeis.org/A214066) ([L09 program](A214066.asm)): a(n) = floor( (3/2)*floor(5*n/2) ).
+* [A214066](http://oeis.org/A214066) ([L07 program](A214066.asm)): a(n) = floor( (3/2)*floor(5*n/2) ).
 * [A214067](http://oeis.org/A214067) ([L09 program](A214067.asm)): [(5/2)*[(5/2)*n]], where [ ] = floor.
 * [A214068](http://oeis.org/A214068) ([L15 program](A214068.asm)): a(n) = floor((3/2)*floor((3/2)*n)).
 * [A214090](http://oeis.org/A214090) ([L07 program](A214090.asm)): Period 6: repeat [0, 0, 1, 0, 1, 1].
@@ -532,6 +533,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215495](http://oeis.org/A215495) ([L06 program](A215495.asm)): a(4*n) = a(4*n+2) = a(2*n+1) = 2*n + 1.
 * [A215532](http://oeis.org/A215532) ([L29 program](A215532.asm)): The limit of the string "0, 1" under the operation 'append first k terms, increment k' with k=2 initially.
 * [A215537](http://oeis.org/A215537) ([L10 program](A215537.asm)): Lowest k such that k is representable as both the sum of n and of n+1 nonzero squares.
+* [A215543](http://oeis.org/A215543) ([L16 program](A215543.asm)): Number of standard Young tableaux of shape [3n,3].
 * [A215580](http://oeis.org/A215580) ([L19 program](A215580.asm)): Partial sums of A215602.
 * [A215604](http://oeis.org/A215604) ([L06 program](A215604.asm)): a(0)=0, a(n) = (n + a(floor(n/2))) mod 3.
 * [A215646](http://oeis.org/A215646) ([L20 program](A215646.asm)): n * (11*n^2 + 6*n + 1) / 6.
@@ -753,7 +755,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225972](http://oeis.org/A225972) ([L17 program](A225972.asm)): The number of binary pattern classes in the (2,n)-rectangular grid with 3 '1's and (2n-3) '0's: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
 * [A225975](http://oeis.org/A225975) ([L05 program](A225975.asm)): Square root of A226008(n).
 * [A226023](http://oeis.org/A226023) ([L24 program](A226023.asm)): A142705 (numerators of 1/4-1/(4n^2)) sorted to natural order.
-* [A226044](http://oeis.org/A226044) ([L09 program](A226044.asm)): Period of length 8: 1, 64, 16, 64, 4, 64, 16, 64.
+* [A226044](http://oeis.org/A226044) ([L07 program](A226044.asm)): Period of length 8: 1, 64, 16, 64, 4, 64, 16, 64.
 * [A226096](http://oeis.org/A226096) ([L08 program](A226096.asm)): Squares with doubled (4*n+2)^2.
 * [A226107](http://oeis.org/A226107) ([L16 program](A226107.asm)): Number of strict partitions of n with Cookie Monster number 2.
 * [A226198](http://oeis.org/A226198) ([L06 program](A226198.asm)): Floor((n-1)!/n).
@@ -1298,7 +1300,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247620](http://oeis.org/A247620) ([L07 program](A247620.asm)): Start with a single hexagon; at n-th generation add a hexagon at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247643](http://oeis.org/A247643) ([L15 program](A247643.asm)): a(n) = ( 10*n*(n+1)+(2*n+1)*(-1)^n+7 )/8.
 * [A247727](http://oeis.org/A247727) ([L08 program](A247727.asm)): Number of length 1+3 0..n arrays with no disjoint pairs in any consecutive four terms having the same sum.
-* [A247782](http://oeis.org/A247782) ([L18 program](A247782.asm)): Numbers k for which A247781(k+1) = A247781(k).
 * [A247792](http://oeis.org/A247792) ([L04 program](A247792.asm)): a(n) = 9*n^2 + 1.
 * [A247817](http://oeis.org/A247817) ([L04 program](A247817.asm)): Sum(4^k, k=2..n).
 * [A247840](http://oeis.org/A247840) ([L04 program](A247840.asm)): Sum(6^k, k=2..n).

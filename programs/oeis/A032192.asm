@@ -1,84 +1,10 @@
 ; A032192: Number of necklaces with 7 black beads and n-7 white beads.
 ; 1,1,4,12,30,66,132,246,429,715,1144,1768,2652,3876,5538,7752,10659,14421,19228,25300,32890,42288,53820,67860,84825,105183,129456,158224,192130,231880,278256,332112,394383,466089,548340
 
-mov $4,1
 mov $2,2
-div $4,8
-mul $4,$0
-sub $4,$2
-mov $1,$4
-mov $6,3
-mov $7,$4
-sub $6,1
-add $1,4
-add $1,$4
-mul $2,$4
-add $6,$0
-sub $0,$0
-mov $3,2
-mov $5,$3
-div $3,$1
-mov $1,7
-mov $8,5
-add $3,$2
-sub $7,$8
-div $5,6
-mov $5,$7
-add $2,3
-mul $2,2
-add $4,4
+add $2,$0
+add $2,4
+bin $2,6
+add $2,6
+div $2,7
 mov $1,$2
-add $3,5
-add $2,8
-lpb $0,1
-  pow $3,2
-  sub $6,$6
-  pow $7,2
-  sub $7,$4
-  sub $0,1
-  pow $0,2
-  mov $3,1
-  mov $0,$1
-  mul $6,5
-  gcd $4,2
-  mul $3,$8
-  mov $3,$3
-  gcd $6,6
-  mul $2,$7
-  div $7,2
-  mul $2,$2
-  div $0,$3
-  bin $2,$4
-  mul $4,2
-  div $2,7
-  mul $4,$4
-  pow $6,2
-  sub $4,$0
-  mul $3,$6
-  mov $1,$8
-  mov $1,7
-lpe
-add $6,4
-mul $7,6
-mul $3,2
-sub $7,6
-mov $3,$2
-div $5,$3
-bin $6,$1
-pow $8,$5
-mod $7,$2
-mul $0,3
-sub $5,$0
-mul $7,2
-add $6,6
-mul $2,$8
-mul $2,3
-add $5,$1
-mod $5,2
-div $6,7
-sub $4,$4
-sub $4,$3
-pow $2,$5
-mul $3,7
-fac $7
-mov $1,$6

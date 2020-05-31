@@ -1,0 +1,88 @@
+; A271035: Number of 3 X 3 X 3 triangular 0..n arrays with some element less than a w, nw or ne neighbor exactly once.
+; 10,72,294,896,2268,5040,10164,19008,33462,56056,90090,139776,210392,308448,441864,620160,854658,1158696,1547854,2040192,2656500,3420560,4359420,5503680,6887790,8550360,10534482,12888064,15664176,18921408
+
+mov $8,5
+mov $7,$8
+mov $4,$0
+mov $6,7
+mov $3,8
+mul $6,6
+add $0,$7
+mov $7,$8
+bin $0,$8
+add $4,$8
+mov $2,$0
+mov $5,$4
+mov $3,$5
+mod $2,$0
+mul $7,8
+add $7,$7
+add $6,3
+div $8,$3
+mul $0,$3
+add $6,4
+mul $0,6
+div $2,6
+div $4,2
+lpb $2,1
+  mov $1,$3
+  sub $3,1
+  mul $0,8
+  lpb $4,1
+    bin $3,$2
+    bin $4,$2
+    sub $4,$4
+    mov $1,$2
+    sub $4,$0
+    mov $7,$1
+    add $4,3
+    add $7,3
+    pow $8,$8
+    div $4,7
+  lpe
+  fac $1
+  lpb $5,1
+    mul $7,$5
+    sub $5,$4
+    sub $3,$1
+    pow $4,8
+  lpe
+  add $3,5
+  mul $3,$8
+  div $4,$1
+  div $1,6
+  div $6,$7
+  mod $7,4
+  lpb $6,1
+    div $2,2
+    sub $1,2
+    bin $2,$6
+    mul $7,$7
+    add $0,7
+    mod $4,4
+    mul $8,6
+    div $7,$6
+    pow $6,7
+    mul $8,$3
+    add $8,$4
+    fac $1
+    mod $8,2
+    mov $5,$4
+    pow $3,5
+    sub $6,$4
+  lpe
+  gcd $6,$8
+  mul $7,$2
+  sub $2,1
+  pow $2,2
+  fac $1
+  mov $8,$3
+  add $1,5
+  mov $0,$5
+  gcd $5,$5
+lpe
+mov $1,$0
+sub $1,30
+div $1,6
+mul $1,2
+add $1,10

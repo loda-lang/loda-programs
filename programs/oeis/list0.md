@@ -1562,6 +1562,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017462](http://oeis.org/A017462) ([L09 program](A017462.asm)): a(n) = (11*n + 6)^2.
 * [A017463](http://oeis.org/A017463) ([L20 program](A017463.asm)): a(n) = (11*n + 6)^3.
 * [A017464](http://oeis.org/A017464) ([L08 program](A017464.asm)): a(n) = (11*n + 6)^4.
+* [A017465](http://oeis.org/A017465) ([L12 program](A017465.asm)): a(n) = (11*n + 6)^5.
 * [A017473](http://oeis.org/A017473) ([L03 program](A017473.asm)): a(n) = 11*n + 7.
 * [A017474](http://oeis.org/A017474) ([L11 program](A017474.asm)): a(n) = (11*n + 7)^2.
 * [A017475](http://oeis.org/A017475) ([L14 program](A017475.asm)): a(n) = (11*n + 7)^3.
@@ -2482,6 +2483,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032096](http://oeis.org/A032096) ([L11 program](A032096.asm)): "BHK" (reversible, identity, unlabeled) transform of 2,2,2,2,...
 * [A032098](http://oeis.org/A032098) ([L12 program](A032098.asm)): "BHK" (reversible, identity, unlabeled) transform of 3,3,3,3,...
 * [A032125](http://oeis.org/A032125) ([L09 program](A032125.asm)): "BIK" (reversible, indistinct, unlabeled) transform of 3,3,3,3...
+* [A032192](http://oeis.org/A032192) ([L07 program](A032192.asm)): Number of necklaces with 7 black beads and n-7 white beads.
 * [A032378](http://oeis.org/A032378) ([L08 program](A032378.asm)): Noncubes such that n is divisible by floor(n^(1/3)).
 * [A032438](http://oeis.org/A032438) ([L07 program](A032438.asm)): a(n) = n^2 - floor((n+1)/2)^2.
 * [A032512](http://oeis.org/A032512) ([L03 program](A032512.asm)): Sum of the integer part of 4th roots of integers <= n.
@@ -3975,6 +3977,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052549](http://oeis.org/A052549) ([L07 program](A052549.asm)): a(n) = 5*2^(n-1) - 1, n>0, with a(0)=1.
 * [A052551](http://oeis.org/A052551) ([L05 program](A052551.asm)): Expansion of 1/((1 - x)*(1 - 2*x^2)).
 * [A052552](http://oeis.org/A052552) ([L11 program](A052552.asm)): a(2*n+1) = 1, a(2*n) = 2*a(2*n-2) - 1.
+* [A052747](http://oeis.org/A052747) ([L73 program](A052747.asm)): a(0) = a(1) = a(2) = 0; a(n) = n!/(n-2) for n > 2.
 * [A052749](http://oeis.org/A052749) ([L07 program](A052749.asm)): 2n*S2(n-1,2).
 * [A052762](http://oeis.org/A052762) ([L03 program](A052762.asm)): Products of 4 consecutive integers: a(n) = n*(n-1)*(n-2)*(n-3).
 * [A052768](http://oeis.org/A052768) ([L08 program](A052768.asm)): A simple grammar.
@@ -5255,7 +5258,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071232](http://oeis.org/A071232) ([L06 program](A071232.asm)): a(n) = (n^6 + n^3)/2.
 * [A071233](http://oeis.org/A071233) ([L09 program](A071233.asm)): a(n) = 2*(n-1)*(n^2 + 1).
 * [A071235](http://oeis.org/A071235) ([L07 program](A071235.asm)): a(n) = (n^12 + n^6)/2.
-* [A071236](http://oeis.org/A071236) ([L06 program](A071236.asm)): a(n) = (n^10 + n^5)/2.
+* [A071236](http://oeis.org/A071236) ([L05 program](A071236.asm)): a(n) = (n^10 + n^5)/2.
 * [A071237](http://oeis.org/A071237) ([L12 program](A071237.asm)): n*(n+1)*(n^2+1)/2.
 * [A071238](http://oeis.org/A071238) ([L10 program](A071238.asm)): a(n) = n*(n+1)*(2*n^2+1)/6.
 * [A071239](http://oeis.org/A071239) ([L08 program](A071239.asm)): a(n) = n*(n+1)*(n^2+2)/6.
@@ -5698,6 +5701,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081105](http://oeis.org/A081105) ([L10 program](A081105.asm)): 5th Binomial transform of (1,1,0,0,0,0,.....).
 * [A081106](http://oeis.org/A081106) ([L17 program](A081106.asm)): 6th binomial transform of (1,1,0,0,0,0,...).
 * [A081123](http://oeis.org/A081123) ([L03 program](A081123.asm)): a(n) = floor(n/2)!.
+* [A081144](http://oeis.org/A081144) ([L06 program](A081144.asm)): Starting at 1, four-fold convolution of A000400 (powers of 6).
 * [A081168](http://oeis.org/A081168) ([L44 program](A081168.asm)): Differences of Beatty sequence for square root of 10.
 * [A081186](http://oeis.org/A081186) ([L08 program](A081186.asm)): 4th binomial transform of (1,0,1,0,1,...), A059841.
 * [A081188](http://oeis.org/A081188) ([L13 program](A081188.asm)): 6th binomial transform of (1,0,1,0,1,.....), A059841.

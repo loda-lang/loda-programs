@@ -757,6 +757,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330115](http://oeis.org/A330115) ([L13 program](A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
 * [A330133](http://oeis.org/A330133) ([L05 program](A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330144](http://oeis.org/A330144) ([L20 program](A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
+* [A330179](http://oeis.org/A330179) ([L21 program](A330179.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = e - 1, s = e, t = e + 1.
 * [A330246](http://oeis.org/A330246) ([L05 program](A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A330396](http://oeis.org/A330396) ([L11 program](A330396.asm)): Permutation of the nonnegative integers partitioned into triples [3*k+2, 3*k+1, 3*k] for k >= 0.

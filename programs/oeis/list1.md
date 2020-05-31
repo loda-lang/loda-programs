@@ -2191,7 +2191,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145068](http://oeis.org/A145068) ([L06 program](A145068.asm)): Zero followed by partial sums of A059100, starting at n=1.
 * [A145069](http://oeis.org/A145069) ([L06 program](A145069.asm)): a(n) = n*(n^2 + 3*n + 5)/3.
 * [A145070](http://oeis.org/A145070) ([L08 program](A145070.asm)): Partial sums of A006127, starting at n=1.
-* [A145071](http://oeis.org/A145071) ([L08 program](A145071.asm)): Partial sums of A000051, starting at n=1.
+* [A145071](http://oeis.org/A145071) ([L07 program](A145071.asm)): Partial sums of A000051, starting at n=1.
 * [A145126](http://oeis.org/A145126) ([L08 program](A145126.asm)): a(n) = 1 + (6 + (11 + (6 + n)*n)*n)*n/24.
 * [A145127](http://oeis.org/A145127) ([L15 program](A145127.asm)): a(n) = 1 + (144 + (50 + (35 + (10 + n)*n)*n)*n)*n/120.
 * [A145128](http://oeis.org/A145128) ([L26 program](A145128.asm)): 1 + (1200 + (634 + (225 + (85 + (15 + n)*n)*n)*n)*n)*n/720.
@@ -3051,7 +3051,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A159741](http://oeis.org/A159741) ([L05 program](A159741.asm)): a(n) = 8*(2^n - 1).
 * [A159742](http://oeis.org/A159742) ([L12 program](A159742.asm)): If an array is made of columns of -nacci sequences (Fibonacci, tribonacci, etc.), all starting with 1,1,2,..., the NW-to-SE diagonals can be extended by computation. This sequence is diagonal 6. See A159741 for details.
 * [A159754](http://oeis.org/A159754) ([L09 program](A159754.asm)): Numbers n with property that n^2 ends with 81.
-* [A159833](http://oeis.org/A159833) ([L08 program](A159833.asm)): a(n) = n^2*(n^2 + 15)/4.
+* [A159833](http://oeis.org/A159833) ([L07 program](A159833.asm)): a(n) = n^2*(n^2 + 15)/4.
 * [A159852](http://oeis.org/A159852) ([L36 program](A159852.asm)): n^2 mod 60.
 * [A159915](http://oeis.org/A159915) ([L09 program](A159915.asm)): a(n) = floor((n+1)/4)*floor(n/2).
 * [A159918](http://oeis.org/A159918) ([L10 program](A159918.asm)): Number of ones in binary representation of n^2.
@@ -4709,6 +4709,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186684](http://oeis.org/A186684) ([L05 program](A186684.asm)): Total number of positive integers below 10^n requiring 19 positive biquadrates in their representation as sum of biquadrates.
 * [A186685](http://oeis.org/A186685) ([L07 program](A186685.asm)): Total number of n-digit numbers requiring 19 positive biquadrates in their representation as sum of biquadrates.
 * [A186707](http://oeis.org/A186707) ([L10 program](A186707.asm)): Partial sums of A007202 (crystal ball sequence for hexagonal close-packing).
+* [A186723](http://oeis.org/A186723) ([L10 program](A186723.asm)): a(n) = n^n! (mod 10)
 * [A186731](http://oeis.org/A186731) ([L11 program](A186731.asm)): a(3n) = 2n, a(3n+1) = n, a(3n+2) = n+1.
 * [A186813](http://oeis.org/A186813) ([L09 program](A186813.asm)): a(n) = n if n odd, a(2n) = 3n if n odd, a(4n) = 2n.
 * [A186852](http://oeis.org/A186852) ([L07 program](A186852.asm)): Number of 3-step knight's tours on a (n+2)X(n+2) board summed over all starting positions
