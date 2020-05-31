@@ -699,7 +699,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329193](http://oeis.org/A329193) ([L14 program](A329193.asm)): a(n) = floor(log_2(n^3)) = floor(3 log_2(n))
 * [A329199](http://oeis.org/A329199) ([L07 program](A329199.asm)): a(n) = round(log_3(n)).
 * [A329202](http://oeis.org/A329202) ([L08 program](A329202.asm)): a(n) = floor(2*log_2(n)) = floor(log_2(n^2)).
-* [A329279](http://oeis.org/A329279) ([L17 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
+* [A329279](http://oeis.org/A329279) ([L14 program](A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.
 * [A329320](http://oeis.org/A329320) ([L11 program](A329320.asm)): a(n) = Sum_{k=0..floor(log_2(n))} 1 - A035263(1 + floor(n/2^k)).
 * [A329404](http://oeis.org/A329404) ([L17 program](A329404.asm)): Interleave 2*n*(3*n-1) , (2*n+1)*(6*n+1) for n>=0.
 * [A329482](http://oeis.org/A329482) ([L12 program](A329482.asm)): Interleave 1 - n + 3*n^2, 1 + 3*n*(1+n) for n >= 0.
