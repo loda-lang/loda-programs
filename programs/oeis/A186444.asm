@@ -1,0 +1,97 @@
+; A186444: The count of numbers <= n for which 3 is an infinitary divisor.
+; 0,0,1,1,1,2,2,2,2,2,2,3,3,3,4,4,4,4,4,4,5,5,5,6,6,6,7,7,7,8,8,8,9,9,9,9,9,9,10,10,10,11,11,11,11,11,11,12,12,12,13,13,13,14,14,14,15,15,15,16,16,16,16,16,16,17,17,17,18,18,18,18,18,18,19
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  add $0,1
+  mov $2,$0
+  mov $8,4
+  mov $0,3
+  mov $7,2
+  lpb $8,6
+    mov $6,$7
+    mov $1,1
+    div $0,$2
+    sub $7,7
+    mov $6,5
+    mov $5,5
+    add $5,1
+    mul $1,$1
+    sub $0,1
+    mov $4,7
+    fac $7
+    mov $1,7
+    div $7,2
+    cmp $5,3
+    add $5,$4
+    mov $3,$1
+    mul $3,2
+    add $0,1
+    mov $3,$5
+    pow $4,7
+    mul $3,$5
+    mul $0,$8
+    pow $0,$8
+    sub $7,3
+    pow $2,$6
+    add $8,$4
+    div $8,2
+    div $6,$8
+    sub $4,$2
+    mov $3,$5
+    gcd $1,$3
+  lpe
+  add $3,$2
+  mov $7,$8
+  pow $0,6
+  gcd $3,$0
+  div $8,4
+  sub $5,$8
+  lpb $5,2
+    mov $3,$2
+    pow $6,$4
+    pow $6,$1
+    fac $7
+    sub $7,$8
+    mul $1,5
+    add $0,$7
+    bin $4,$0
+    sub $2,5
+    fac $4
+    mul $1,$7
+    mov $1,4
+    sub $7,1
+    mov $8,$1
+    mov $1,$8
+    cmp $0,$6
+    mul $0,$8
+    sub $0,$3
+    div $3,2
+    pow $8,7
+    div $3,2
+    pow $4,4
+    mod $5,2
+    mul $0,5
+    mov $7,7
+    sub $0,3
+  lpe
+  pow $2,2
+  mod $3,$7
+  gcd $4,$7
+  cmp $1,$6
+  mul $0,$1
+  add $8,$5
+  bin $4,$8
+  div $1,7
+  mov $1,$3
+  sub $1,1
+  div $1,2
+  add $15,$1
+lpe
+mov $1,$15

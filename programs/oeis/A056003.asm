@@ -1,0 +1,88 @@
+; A056003: A second-order recursive sequence.
+; 1,18,135,660,2475,7722,21021,51480,115830,243100,481338,906984,1637610,2848860,4796550,7845024,12503007,19468350,29683225,44401500,65270205,94427190,134617275,189329400,262957500,360988056,490217508
+
+mov $2,$0
+mov $6,8
+mov $8,$0
+mov $3,0
+mov $2,$0
+add $2,$6
+add $0,1
+mov $7,4
+mul $0,6
+mov $1,6
+mov $4,0
+bin $2,$8
+mul $2,$0
+lpb $2,1
+  lpb $4,1
+    div $1,2
+    sub $4,$8
+    mov $5,$0
+    mul $5,$2
+  lpe
+  add $8,1
+  add $0,$5
+  gcd $7,8
+  sub $2,$8
+  pow $0,6
+  pow $8,3
+  add $5,3
+  pow $5,3
+  add $7,1
+  mov $8,5
+  add $0,$1
+  div $5,5
+  sub $2,4
+  lpb $5,1
+    mov $0,$7
+    fac $6
+    sub $8,3
+    mul $1,$3
+    sub $5,$8
+    add $0,7
+    gcd $4,2
+    div $3,8
+    div $1,$6
+    sub $0,$0
+    mov $1,1
+    add $0,8
+    mul $3,2
+    cmp $4,6
+    mul $7,5
+    add $1,$5
+    pow $6,$4
+  lpe
+  add $3,$4
+  mul $3,2
+  sub $6,8
+  sub $5,$4
+  pow $1,7
+  add $2,2
+  mov $8,4
+  div $1,3
+  lpb $6,1
+    sub $6,$8
+    add $7,1
+  lpe
+  pow $4,$5
+  sub $5,6
+  div $1,4
+  add $3,$3
+  mov $1,2
+  mod $1,3
+  div $5,$8
+  div $8,$0
+  sub $5,$3
+  sub $2,1
+  mul $5,$2
+  sub $6,5
+  mod $6,4
+  add $5,$7
+  mov $8,7
+  mul $2,3
+lpe
+mov $1,$2
+sub $1,6
+div $1,6
+add $1,1

@@ -777,7 +777,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331714](http://oeis.org/A331714) ([L71 program](A331714.asm)): Number of non-isomorphic set-systems with 3 sets each with n elements.
 * [A331943](http://oeis.org/A331943) ([L09 program](A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
 * [A331987](http://oeis.org/A331987) ([L16 program](A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
-* [A332044](http://oeis.org/A332044) ([L08 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
+* [A332044](http://oeis.org/A332044) ([L07 program](A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332243](http://oeis.org/A332243) ([L05 program](A332243.asm)): Starhex honeycomb numbers: a(n) = 13 + 60*n + 60*n^2.
 * [A332410](http://oeis.org/A332410) ([L40 program](A332410.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-5) - 2*a(n-6) + a(n-7) with a(0)=0, a(1)=1, a(2)=3, a(3)=6, a(4)=11, a(5)=17, a(6)=24.
 * [A332420](http://oeis.org/A332420) ([L16 program](A332420.asm)): Number of Maclaurin polynomials of sin x having exactly n positive zeros.

@@ -1,18 +1,15 @@
 ; A113968: Series expansion of Farey rational polynomial based on A112627.
 ; 0,0,1,1,15,17,239,273,3823,4369,61167,69905,978671,1118481,15658735,17895697,250539759,286331153,4008636143,4581298449,64138178287,73300775185,1026210852591,1172812402961,16419373641455,18764998447377
 
-mov $17,$0
-mov $19,$0
-add $19,1
-lpb $19,1
-  clr $0,17
-  sub $19,1
-  mov $0,$17
-  sub $0,$19
+mov $5,$0
+mov $2,$0
+lpb $2,1
+  sub $2,1
+  mov $0,$5
+  sub $0,$2
   mov $13,$0
   mov $15,2
   lpb $15,1
-    clr $0,13
     sub $15,1
     mov $0,$13
     add $0,$15
@@ -20,91 +17,16 @@ lpb $19,1
     mov $9,$0
     mov $11,2
     lpb $11,1
-      clr $0,9
       sub $11,1
-      mov $0,$9
       add $0,$11
       sub $0,1
       mov $6,4
       mov $4,$0
       gcd $4,2
-      mov $7,$0
       pow $6,$0
-      mov $1,$6
       div $6,5
-      mov $5,$6
-      sub $7,$6
-      mod $5,2
-      add $1,$4
-      sub $5,4
-      pow $7,2
-      mov $0,6
-      mov $0,3
       mul $4,$6
-      mov $7,$6
-      add $0,2
       mov $3,$4
-      lpb $0,1
-        mov $8,$1
-        div $8,$8
-        mul $5,$8
-        mov $6,$8
-        mov $7,$0
-        add $1,$0
-        add $7,1
-        bin $6,8
-        div $1,8
-        mov $0,7
-        sub $4,$4
-        mul $3,$0
-        mod $3,4
-        div $3,4
-        add $7,7
-        mov $8,7
-        mod $8,8
-        add $0,2
-        add $8,$6
-        sub $0,1
-        sub $3,3
-        add $3,6
-        add $5,8
-        div $5,$0
-        mov $2,7
-        mul $2,$5
-        sub $2,8
-        mov $1,$0
-        mod $7,$5
-        sub $8,$4
-        pow $1,$3
-        mov $4,6
-        sub $6,$6
-        pow $6,3
-        add $6,7
-        bin $7,$5
-        mov $6,$2
-        pow $1,2
-        pow $2,$7
-        fac $3
-        mul $5,$3
-        add $8,$7
-        mul $7,2
-        fac $7
-        mov $7,$6
-        div $4,$0
-        gcd $4,$5
-        pow $1,$6
-        mod $5,$1
-        gcd $2,$4
-      lpe
-      mov $6,2
-      div $5,3
-      mov $4,$8
-      mul $5,$7
-      pow $5,$3
-      sub $7,6
-      mod $0,6
-      add $1,$0
-      add $6,$7
       mov $1,$3
       mov $12,$11
       lpb $12,1
@@ -117,10 +39,10 @@ lpb $19,1
       mov $9,0
     lpe
     mov $1,$10
-    mov $16,$15
-    lpb $16,1
+    mov $8,$15
+    lpb $8,1
       mov $14,$1
-      sub $16,1
+      sub $8,1
     lpe
   lpe
   lpb $13,1
@@ -129,6 +51,6 @@ lpb $19,1
   lpe
   mov $1,$14
   div $1,6
-  add $18,$1
+  add $7,$1
 lpe
-mov $1,$18
+mov $1,$7
