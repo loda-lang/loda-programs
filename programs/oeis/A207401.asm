@@ -1,0 +1,86 @@
+; A207401: Number of n X 6 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 1 0 vertically.
+; 16,256,1296,4356,11664,26896,55696,106276,190096,322624,524176,820836,1245456,1838736,2650384,3740356,5180176,7054336,9461776,12517444,16353936,21123216,26998416,34175716,42876304,53348416,65869456,80748196
+
+mov $8,2
+mov $5,$0
+pow $8,3
+mul $5,4
+div $5,6
+mov $2,0
+mov $1,8
+mov $3,$8
+mov $4,4
+mod $3,2
+pow $8,7
+add $0,3
+mul $2,5
+add $5,2
+mul $4,2
+mov $8,$2
+mov $7,$5
+mov $6,$0
+div $3,$7
+add $0,1
+sub $4,4
+gcd $8,4
+pow $4,4
+pow $6,4
+mul $4,$0
+cmp $6,5
+bin $0,3
+mul $8,2
+sub $6,5
+pow $8,7
+mov $1,6
+gcd $5,$4
+pow $6,$5
+add $8,$8
+mul $5,$1
+gcd $7,8
+mul $1,$2
+add $0,1
+div $8,3
+mov $3,$4
+lpb $0,1
+  gcd $0,3
+  add $2,$3
+  add $0,$8
+  sub $0,1
+  sub $1,$2
+  pow $2,3
+  pow $3,3
+  cmp $2,5
+  mov $4,$3
+  div $2,6
+  pow $3,$2
+  sub $4,$4
+  mod $8,$3
+  sub $2,$4
+  mov $1,$5
+  mul $4,3
+  sub $1,6
+  add $5,8
+lpe
+add $5,$0
+add $8,1
+sub $5,1
+mod $6,$8
+bin $6,$0
+sub $7,3
+cmp $7,7
+mul $8,7
+pow $7,$6
+mul $6,2
+mov $2,4
+div $6,3
+sub $5,8
+pow $1,2
+cmp $4,$8
+sub $6,2
+sub $0,3
+div $8,$5
+pow $0,2
+mov $1,$0
+sub $1,4
+mul $1,4
+add $1,16

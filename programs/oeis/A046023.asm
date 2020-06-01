@@ -1,0 +1,86 @@
+; A046023: Number of ways to color edges of a tetrahedron using <= n colors.
+; 0,1,12,87,416,1475,4236,10437,22912,45981,85900,151371,254112,409487,637196,962025,1414656,2032537,2860812,3953311,5373600,7196091,9507212,12406637,16008576,20443125,25857676,32418387,40311712
+
+mov $1,2
+mov $4,$1
+mov $3,1
+mul $0,$0
+mov $2,2
+add $0,$2
+mov $8,$3
+mul $1,$1
+div $2,$8
+mul $8,$2
+mov $7,$0
+mov $5,$0
+lpb $0,1
+  mov $6,$1
+  div $5,$8
+  mov $5,6
+  mov $1,$8
+  div $5,3
+  mul $3,8
+  pow $1,2
+  sub $0,1
+  fac $5
+  mov $3,1
+  fac $6
+  add $1,$5
+  gcd $3,4
+  mod $7,$3
+  div $1,7
+  add $2,$6
+  mod $7,$3
+  add $6,7
+  cmp $3,$3
+  add $2,$4
+  cmp $7,$5
+  add $8,$5
+  sub $6,$7
+  mul $3,$0
+  mul $4,$8
+  mul $3,$1
+  sub $3,7
+  pow $7,$7
+  pow $2,$4
+  sub $6,8
+  mov $5,6
+  div $4,7
+  mul $4,$1
+  gcd $1,$5
+  sub $7,$8
+  sub $2,3
+  pow $7,$6
+  mov $4,5
+  add $0,$6
+  cmp $5,4
+  add $7,$7
+  mov $5,$5
+  mov $6,6
+  sub $6,$3
+lpe
+bin $0,3
+div $4,4
+add $5,$0
+fac $6
+gcd $8,6
+mov $0,4
+add $5,$1
+mov $7,$8
+mov $1,4
+cmp $8,$1
+mul $4,5
+mov $3,$6
+bin $0,$5
+mod $6,3
+div $8,$2
+gcd $8,$0
+mov $8,3
+gcd $8,$6
+sub $7,1
+sub $4,$6
+pow $3,2
+mul $3,2
+mov $1,$5
+sub $1,6
+div $1,2
