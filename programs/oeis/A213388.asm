@@ -1,0 +1,119 @@
+; A213388: Number of (w,x,y) with all terms in {0,...,n} and 2|w-x| >= max(w,x,y)-min(w,x,y).
+; 1,6,21,48,93,158,249,368,521,710,941,1216,1541,1918,2353,2848,3409,4038,4741,5520,6381,7326,8361,9488,10713,12038,13469,15008,16661,18430,20321,22336,24481,26758,29173,31728,34429,37278,40281,43440,46761,50246,53901
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $12,$0
+  mov $14,$0
+  add $14,1
+  lpb $14,1
+    clr $0,12
+    sub $14,1
+    mov $0,$12
+    sub $0,$14
+    mov $9,$0
+    mov $11,$0
+    add $11,1
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      sub $0,$11
+      mov $4,3
+      mov $7,$4
+      mov $5,4
+      add $0,$0
+      div $5,2
+      mov $2,$5
+      mov $2,$0
+      lpb $2,1
+        mod $5,7
+        gcd $0,4
+        div $7,2
+        lpb $4,1
+          mov $7,2
+          mov $5,$7
+          sub $4,$5
+          mov $3,$7
+          add $4,4
+          mul $7,$7
+          sub $0,$2
+          add $4,7
+          mul $4,8
+          mov $8,$7
+          mov $1,3
+          mul $2,4
+          mov $0,$0
+          pow $0,$1
+          gcd $5,$8
+          mov $6,7
+          div $8,2
+          pow $5,8
+          cmp $3,$3
+        lpe
+        add $6,$0
+        mul $0,4
+        sub $2,2
+        sub $0,8
+        mul $5,7
+        add $1,$7
+        add $3,2
+        mod $5,2
+        lpb $5,1
+          sub $5,$5
+          add $1,2
+          mul $4,8
+          div $1,5
+          pow $2,4
+        lpe
+        lpb $6,1
+          sub $7,8
+          mul $5,$3
+          mov $6,3
+          sub $3,6
+          sub $6,$5
+          pow $8,$5
+          mod $3,7
+          add $6,3
+          mul $1,7
+          sub $2,$3
+          div $3,3
+          mod $0,$4
+        lpe
+        div $5,$6
+        sub $1,3
+        div $0,2
+        gcd $5,3
+        mov $5,$5
+        sub $2,1
+        add $0,1
+        mov $2,$3
+        sub $3,4
+        div $1,7
+        mov $7,$7
+      lpe
+      add $3,2
+      mod $8,7
+      pow $2,$6
+      mul $3,$0
+      mul $3,$4
+      mov $0,1
+      mov $4,$8
+      mov $1,$3
+      div $1,6
+      add $1,1
+      add $10,$1
+    lpe
+    mov $1,$10
+    add $13,$1
+  lpe
+  mov $1,$13
+  add $16,$1
+lpe
+mov $1,$16

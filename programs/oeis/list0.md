@@ -1036,6 +1036,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010968](http://oeis.org/A010968) ([L06 program](A010968.asm)): a(n) = binomial(n,15).
 * [A010969](http://oeis.org/A010969) ([L11 program](A010969.asm)): a(n) = binomial(n,16).
 * [A010970](http://oeis.org/A010970) ([L06 program](A010970.asm)): a(n) = binomial(n,17).
+* [A010971](http://oeis.org/A010971) ([L05 program](A010971.asm)): a(n) = binomial(n,18).
 * [A010973](http://oeis.org/A010973) ([L06 program](A010973.asm)): a(n) = binomial(n,20).
 * [A010974](http://oeis.org/A010974) ([L04 program](A010974.asm)): a(n) = binomial(n,21).
 * [A010977](http://oeis.org/A010977) ([L07 program](A010977.asm)): a(n) = binomial coefficient C(n,24).
@@ -1078,12 +1079,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011765](http://oeis.org/A011765) ([L03 program](A011765.asm)): Period 4: repeat [0, 0, 0, 1].
 * [A011779](http://oeis.org/A011779) ([L31 program](A011779.asm)): Expansion of 1/((1-x)^3*(1-x^3)^2).
 * [A011782](http://oeis.org/A011782) ([L03 program](A011782.asm)): Coefficients of expansion of (1-x)/(1-2*x) in powers of x.
-* [A011795](http://oeis.org/A011795) ([L05 program](A011795.asm)): a(n) = floor(C(n,4)/5).
+* [A011795](http://oeis.org/A011795) ([L04 program](A011795.asm)): a(n) = floor(C(n,4)/5).
 * [A011797](http://oeis.org/A011797) ([L04 program](A011797.asm)): a(n) = floor(C(n,6)/7).
 * [A011826](http://oeis.org/A011826) ([L07 program](A011826.asm)): f-vectors for simplicial complexes of dimension at most 1 (graphs) on at most n-1 vertices.
 * [A011842](http://oeis.org/A011842) ([L06 program](A011842.asm)): a(n) = floor(n(n-1)(n-2)/24).
 * [A011843](http://oeis.org/A011843) ([L04 program](A011843.asm)): a(n) = floor(binomial(n,5)/6).
-* [A011844](http://oeis.org/A011844) ([L07 program](A011844.asm)): [ C(n,7)/8 ].
+* [A011844](http://oeis.org/A011844) ([L04 program](A011844.asm)): [ C(n,7)/8 ].
 * [A011845](http://oeis.org/A011845) ([L15 program](A011845.asm)): a(n) = floor( binomial(n,8)/9).
 * [A011846](http://oeis.org/A011846) ([L03 program](A011846.asm)): a(n) = floor( binomial(n,9)/10 ).
 * [A011848](http://oeis.org/A011848) ([L03 program](A011848.asm)): a(n) = floor(binomial(n,2)/2).
@@ -1142,7 +1143,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011931](http://oeis.org/A011931) ([L07 program](A011931.asm)): [ n(n-1)(n-2)(n-3)/21 ].
 * [A011934](http://oeis.org/A011934) ([L16 program](A011934.asm)): a(n) = |1^3 - 2^3 + 3^3 - 4^3 + ... + (-1)^(n+1)*n^3|.
 * [A011938](http://oeis.org/A011938) ([L10 program](A011938.asm)): a(n) = floor( n*(n-1)*(n-2)*(n-3)/28 ).
-* [A011940](http://oeis.org/A011940) ([L06 program](A011940.asm)): a(n) = floor(n(n-1)(n-2)(n-3)/30).
+* [A011940](http://oeis.org/A011940) ([L05 program](A011940.asm)): a(n) = floor(n(n-1)(n-2)(n-3)/30).
 * [A011942](http://oeis.org/A011942) ([L05 program](A011942.asm)): [ n(n-1)(n-2)(n-3)/32 ].
 * [A011960](http://oeis.org/A011960) ([L06 program](A011960.asm)): Number of ferrites M_2Y_n that repeat after 6n+10 layers.
 * [A012493](http://oeis.org/A012493) ([L08 program](A012493.asm)): Take every 5th term of Padovan sequence A000931, beginning with the fifth term.
@@ -1621,7 +1622,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A017769](http://oeis.org/A017769) ([L04 program](A017769.asm)): Binomial coefficients C(53,n).
 * [A017770](http://oeis.org/A017770) ([L04 program](A017770.asm)): Binomial coefficients C(54,n).
 * [A017771](http://oeis.org/A017771) ([L06 program](A017771.asm)): Binomial coefficients C(55,n).
-* [A017772](http://oeis.org/A017772) ([L04 program](A017772.asm)): Binomial coefficients C(56,n).
+* [A017772](http://oeis.org/A017772) ([L03 program](A017772.asm)): Binomial coefficients C(56,n).
 * [A017773](http://oeis.org/A017773) ([L10 program](A017773.asm)): Binomial coefficients C(57,n).
 * [A017774](http://oeis.org/A017774) ([L05 program](A017774.asm)): Binomial coefficients C(58,n).
 * [A017775](http://oeis.org/A017775) ([L03 program](A017775.asm)): Binomial coefficients C(59,n).
@@ -3288,6 +3289,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A045950](http://oeis.org/A045950) ([L17 program](A045950.asm)): Triangles in Star of David matchstick arrangement of side n.
 * [A045991](http://oeis.org/A045991) ([L04 program](A045991.asm)): a(n) = n^3 - n^2.
 * [A045992](http://oeis.org/A045992) ([L37 program](A045992.asm)): a(n) = binomial(2n,n) - n; number of (weakly) increasing or decreasing maps from 1,...,n to 1,...,n.
+* [A046023](http://oeis.org/A046023) ([L09 program](A046023.asm)): Number of ways to color edges of a tetrahedron using <= n colors.
 * [A046037](http://oeis.org/A046037) ([L08 program](A046037.asm)): Numbers n for which floor((3/2)^n) is composite.
 * [A046090](http://oeis.org/A046090) ([L12 program](A046090.asm)): Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives X+1 values.
 * [A046092](http://oeis.org/A046092) ([L04 program](A046092.asm)): 4 times triangular numbers: a(n) = 2*n*(n+1).
@@ -5437,6 +5439,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A076095](http://oeis.org/A076095) ([L23 program](A076095.asm)): Initial terms of rows in A076099.
 * [A076119](http://oeis.org/A076119) ([L17 program](A076119.asm)): Every second sector of a dart board, starting at the top (20) and working around clockwise.
 * [A076121](http://oeis.org/A076121) ([L10 program](A076121.asm)): Complete list of possible cribbage hands.
+* [A076178](http://oeis.org/A076178) ([L22 program](A076178.asm)): a(n) = 2*n^2 - A077071(n).
 * [A076264](http://oeis.org/A076264) ([L14 program](A076264.asm)): Number of ternary (0,1,2) sequences without a consecutive '012'.
 * [A076312](http://oeis.org/A076312) ([L11 program](A076312.asm)): a(n) = floor(n/10) + 2*(n mod 10).
 * [A076314](http://oeis.org/A076314) ([L22 program](A076314.asm)): a(n) = floor(n/10) + (n mod 10).

@@ -1,0 +1,107 @@
+; A202198: Number of (n+2) X 6 binary arrays avoiding patterns 001 and 101 in rows and columns.
+; 756,2688,7560,18144,38808,76032,138996,240240,396396,628992,965328,1439424,2093040,2976768,4151196,5688144,7671972,10200960,13388760,17365920,22281480,28304640,35626500,44461872,55051164,67662336,82592928
+
+mov $3,$0
+mov $6,6
+add $3,7
+mov $4,$3
+add $6,1
+mov $9,6
+sub $4,4
+bin $3,5
+mul $3,$4
+mov $10,$4
+mov $7,2
+mov $5,6
+mov $9,8
+mov $5,3
+add $0,$6
+mov $1,5
+cmp $9,$6
+lpb $0,1
+  mov $8,5
+  mul $7,2
+  mul $3,8
+  div $9,$0
+  sub $7,9
+  pow $7,$3
+  mul $1,6
+  mov $7,$1
+  div $10,$0
+  mov $9,$7
+  mul $9,$10
+  div $9,$8
+  add $5,7
+  gcd $3,9
+  mul $7,3
+  add $0,$7
+  mov $2,$9
+  mul $9,$10
+  sub $9,9
+  div $1,8
+  mul $1,$0
+  mov $2,9
+  mul $0,8
+  mov $7,$4
+  div $0,$3
+  gcd $0,7
+  gcd $10,7
+  mul $4,10
+  div $0,6
+  mov $3,$2
+  mov $8,4
+  mov $0,$6
+  add $5,1
+  gcd $8,$6
+  bin $8,5
+  add $9,$10
+  mul $7,10
+  cmp $8,7
+  cmp $10,$6
+  gcd $5,$9
+  sub $1,$7
+  pow $0,$2
+  gcd $1,2
+  mul $2,9
+  mov $6,$4
+  add $0,$3
+  pow $8,$8
+  sub $4,10
+  add $3,10
+  div $8,5
+  sub $4,$10
+  pow $3,$8
+  add $8,2
+  mov $7,$6
+  mul $0,7
+  div $10,$5
+  add $1,2
+  cmp $6,$2
+  div $9,$3
+  add $0,$5
+  pow $10,10
+  div $2,$2
+  mul $7,9
+  div $6,6
+  mul $5,2
+  sub $0,1
+  div $0,8
+  div $0,$3
+lpe
+mul $2,$3
+gcd $5,$2
+mul $7,5
+mov $9,$6
+mov $8,7
+add $1,$9
+fac $6
+pow $10,$1
+mul $7,$0
+add $1,4
+div $8,6
+mod $8,$4
+add $9,2
+mov $1,$3
+sub $1,63
+mul $1,12
+add $1,756

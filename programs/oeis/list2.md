@@ -1078,6 +1078,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239195](http://oeis.org/A239195) ([L29 program](A239195.asm)): Sum of the next to smallest parts in the partitions of 4n into 4 parts with smallest part = 1.
 * [A239325](http://oeis.org/A239325) ([L07 program](A239325.asm)): a(n) = 6*n^2 + 8*n + 1.
 * [A239352](http://oeis.org/A239352) ([L15 program](A239352.asm)): van Heijst's upper bound on the number of squares inscribed by a real algebraic curve in R^2 of degree n, if the number is finite.
+* [A239367](http://oeis.org/A239367) ([L50 program](A239367.asm)): The bisection of A238315 that remains constant with changes in the offset of the exponent of the second term.
 * [A239449](http://oeis.org/A239449) ([L08 program](A239449.asm)): 7*n^2 - 5*n + 1.
 * [A239492](http://oeis.org/A239492) ([L07 program](A239492.asm)): The fifth bicycle lock sequence: a(n) is the maximum value of min{x*y, (5-x)*(n-y)} over 0 <= x <= 5, 0 <= y <= n for integers x, y.
 * [A239568](http://oeis.org/A239568) ([L07 program](A239568.asm)): Number of ways to place 2 points on a triangular grid of side n so that they are not adjacent.
@@ -1188,6 +1189,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244082](http://oeis.org/A244082) ([L03 program](A244082.asm)): a(n) = 32*n^2.
 * [A244151](http://oeis.org/A244151) ([L11 program](A244151.asm)): 0-additive sequence: start with a(1) = 2; thereafter, a(n) = smallest number not already in sequence which is not the sum of any previous two terms.
 * [A244174](http://oeis.org/A244174) ([L10 program](A244174.asm)): Number of compositions of 3n in which the minimal multiplicity of parts equals n.
+* [A244224](http://oeis.org/A244224) ([L14 program](A244224.asm)): a(n) = Number of nonnegative integers 0 <= k <= n, which have an even representation in Greedy Catalan Base (A014418).
+* [A244229](http://oeis.org/A244229) ([L13 program](A244229.asm)): a(n) = Number of integers 0 < k <= n, which have an even representation in Greedy Catalan Base (A014418).
 * [A244239](http://oeis.org/A244239) ([L13 program](A244239.asm)): Number of partitions of n into 3 parts such that every i-th smallest part (counted with multiplicity) is different from i.
 * [A244328](http://oeis.org/A244328) ([L06 program](A244328.asm)): a(1) = a(2) = 0; for n >= 3: a(n) = floor((n*(n+1)/2) / antisigma(n)) = floor(A000217(n) / A024816(n)).
 * [A244331](http://oeis.org/A244331) ([L07 program](A244331.asm)): Number of binary digits in the high-water marks of the terms of the continued fraction of the base 2 Champernowne constant.
@@ -1543,6 +1546,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256524](http://oeis.org/A256524) ([L34 program](A256524.asm)): Number of partitions of 3n into at most 4 parts.
 * [A256535](http://oeis.org/A256535) ([L12 program](A256535.asm)): The largest number of T-tetrominoes that fit within an n X n square.
 * [A256645](http://oeis.org/A256645) ([L13 program](A256645.asm)): 25-gonal pyramidal numbers: a(n) = n*(n+1)*(23*n-20)/6.
+* [A256646](http://oeis.org/A256646) ([L30 program](A256646.asm)): 26-gonal pyramidal numbers: a(n) = n*(n+1)*(8*n-7)/2.
 * [A256647](http://oeis.org/A256647) ([L28 program](A256647.asm)): 27-gonal pyramidal numbers: a(n) = n*(n+1)*(25*n-22)/6.
 * [A256649](http://oeis.org/A256649) ([L16 program](A256649.asm)): 29-gonal pyramidal numbers: a(n) = n*(n+1)*(9*n-8)/2.
 * [A256650](http://oeis.org/A256650) ([L26 program](A256650.asm)): 30-gonal pyramidal numbers: a(n) = n*(n+1)*(28*n-25)/6.

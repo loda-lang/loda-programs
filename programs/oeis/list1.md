@@ -305,6 +305,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105338](http://oeis.org/A105338) ([L06 program](A105338.asm)): a(n) = n*(n+1)/2 mod 512.
 * [A105340](http://oeis.org/A105340) ([L08 program](A105340.asm)): a(n) = n*(n+1)/2 mod 2048.
 * [A105343](http://oeis.org/A105343) ([L08 program](A105343.asm)): Elements of even index in the sequence gives A005893, points on surface of tetrahedron: 2n^2 + 2 for n > 1.
+* [A105348](http://oeis.org/A105348) ([L27 program](A105348.asm)): An indicator sequence for the Jacobsthal numbers.
 * [A105374](http://oeis.org/A105374) ([L05 program](A105374.asm)): a(n) = 4*n^3 + 4*n.
 * [A105395](http://oeis.org/A105395) ([L05 program](A105395.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105396](http://oeis.org/A105396) ([L04 program](A105396.asm)): A simple "Fractal Jump Sequence" (FJS).
@@ -1104,6 +1105,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126565](http://oeis.org/A126565) ([L14 program](A126565.asm)): a(n) = ceiling(sin(n)*cos(n)).
 * [A126587](http://oeis.org/A126587) ([L08 program](A126587.asm)): a(n) is the number of integer lattice points inside the right triangle with legs 3n and 4n (and hypotenuse 5n).
 * [A126602](http://oeis.org/A126602) ([L15 program](A126602.asm)): a(1)=2^3*5*7*29=8120; for n>1, a(n) = (-1)sigma(a(n-1)).
+* [A126605](http://oeis.org/A126605) ([L10 program](A126605.asm)): Final three digits of 2^n.
 * [A126644](http://oeis.org/A126644) ([L14 program](A126644.asm)): a(n) is the number of integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4,5,6 and at least one of digits 7,8,9.
 * [A126645](http://oeis.org/A126645) ([L11 program](A126645.asm)): a(n) is the number of integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4 and 5, at least one of digits 6,7 and at least one of digits 8,9.
 * [A126646](http://oeis.org/A126646) ([L04 program](A126646.asm)): a(n) = 2^(n+1) - 1.
@@ -3996,7 +3998,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173044](http://oeis.org/A173044) ([L55 program](A173044.asm)): Product plus sum of five consecutive nonnegative numbers.
 * [A173078](http://oeis.org/A173078) ([L12 program](A173078.asm)): a(n) = (5*2^n - 2*(-1)^n - 9)/3.
 * [A173089](http://oeis.org/A173089) ([L05 program](A173089.asm)): a(n) = 25*n^2 + n.
-* [A173102](http://oeis.org/A173102) ([L08 program](A173102.asm)): Number of partitions x + y = z with {x,y,z} in {1,2,3,..,3n} and z > y >= x.
+* [A173102](http://oeis.org/A173102) ([L05 program](A173102.asm)): Number of partitions x + y = z with {x,y,z} in {1,2,3,..,3n} and z > y >= x.
 * [A173116](http://oeis.org/A173116) ([L06 program](A173116.asm)): a(n) = sinh(2*arcsinh(n))^2 = 4*n^2*(n^2 + 1).
 * [A173121](http://oeis.org/A173121) ([L05 program](A173121.asm)): a(n) = sinh(2*arccosh(n))^2 = 4*n^2*(n^2 - 1).
 * [A173141](http://oeis.org/A173141) ([L06 program](A173141.asm)): a(n) = 49*n^2 + n.
@@ -4125,6 +4127,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175631](http://oeis.org/A175631) ([L13 program](A175631.asm)): a(n) = (n-th pentagonal number) modulo (n-th triangular number).
 * [A175660](http://oeis.org/A175660) ([L15 program](A175660.asm)): Eight bishops and one elephant on a 3 X 3 chessboard. a(n) = 2^(n+2) - 3*F(n+2).
 * [A175676](http://oeis.org/A175676) ([L06 program](A175676.asm)): a(n) = binomial(n,3) mod n.
+* [A175677](http://oeis.org/A175677) ([L10 program](A175677.asm)): Binomial(n,4) mod n.
 * [A175724](http://oeis.org/A175724) ([L09 program](A175724.asm)): Partial sums of floor(n^2/12).
 * [A175776](http://oeis.org/A175776) ([L14 program](A175776.asm)): Partial sums of floor(n^2/15).
 * [A175777](http://oeis.org/A175777) ([L14 program](A175777.asm)): Partial sums of floor(n^2/16).
@@ -4443,6 +4446,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A182260](http://oeis.org/A182260) ([L14 program](A182260.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w<x+y.
 * [A182305](http://oeis.org/A182305) ([L13 program](A182305.asm)): a(n+1) = a(n) + floor(a(n)/4) with a(0)=4.
 * [A182307](http://oeis.org/A182307) ([L18 program](A182307.asm)): a(n+1) = a(n) + floor(a(n)/6) with a(0)=6.
+* [A182308](http://oeis.org/A182308) ([L10 program](A182308.asm)): a(n+1) = a(n) + floor(a(n)/7) with a(0)=7
 * [A182323](http://oeis.org/A182323) ([L09 program](A182323.asm)): a(n) = (194*n + 3*(-1)^n + 1)/4 + 24.
 * [A182324](http://oeis.org/A182324) ([L08 program](A182324.asm)): n + (initial digit of n) in decimal representation.
 * [A182341](http://oeis.org/A182341) ([L28 program](A182341.asm)): List of positive integers whose prime tower factorization, as defined in comments, contains the prime 7.

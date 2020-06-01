@@ -1,0 +1,117 @@
+; A089781: Successive coprime numbers with distinct successive differences: gcd(a(k+1),a(k)) = gcd(a(m+1),a(m)) = 1 and a(k+1)-a(k) = a(m+1)-a(m) <==> m=k.
+; 1,2,5,7,11,16,23,29,37,46,57,67,79,92,107,121,137,154,173,191,211,232,255,277,301,326,353,379,407,436,467,497,529,562,597,631,667,704,743,781,821,862,905,947,991,1036,1083,1129,1177,1226,1277
+
+mov $13,$0
+mov $15,$0
+add $15,1
+lpb $15,1
+  clr $0,13
+  sub $15,1
+  mov $0,$13
+  sub $0,$15
+  mov $9,$0
+  mov $11,2
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    add $0,$11
+    sub $0,1
+    mov $3,$0
+    mov $5,4
+    mov $7,$0
+    mov $8,$5
+    mul $5,2
+    bin $8,3
+    mov $6,$7
+    pow $3,2
+    mov $8,1
+    mod $3,8
+    mov $2,$0
+    add $8,$7
+    sub $3,2
+    pow $7,2
+    add $3,1
+    add $8,7
+    sub $8,$0
+    add $5,$0
+    pow $2,5
+    cmp $5,5
+    add $3,$7
+    div $8,$3
+    add $8,1
+    add $7,$8
+    mul $3,8
+    sub $2,$7
+    mov $2,4
+    mov $6,$3
+    sub $7,$2
+    div $5,4
+    mov $6,8
+    mul $0,7
+    lpb $0,1
+      mul $0,2
+      mov $4,2
+      mov $4,4
+      sub $5,$0
+      sub $0,1
+      mov $4,3
+      sub $4,3
+      add $4,5
+      add $3,5
+      div $6,$3
+      mov $3,7
+      div $7,2
+      div $4,6
+      pow $8,$0
+      sub $3,$5
+      add $5,5
+      sub $7,$5
+      mul $8,$8
+      mov $2,8
+      div $3,3
+      mul $2,5
+      mov $4,$8
+      sub $7,6
+      sub $0,1
+      gcd $6,$0
+      sub $6,$5
+      mul $8,$6
+      mod $7,2
+      div $7,2
+      add $3,4
+      div $3,8
+      mov $5,6
+      div $2,$5
+      pow $7,$5
+      mul $7,$5
+      mul $5,$5
+      cmp $2,$7
+      div $2,2
+      mov $1,$5
+      sub $7,$1
+    lpe
+    add $4,7
+    div $7,$7
+    mov $0,0
+    mov $0,$8
+    add $8,3
+    pow $1,$7
+    mov $1,$3
+    mov $12,$11
+    lpb $12,1
+      mov $10,$1
+      sub $12,1
+    lpe
+  lpe
+  lpb $9,1
+    sub $10,$1
+    mov $9,0
+  lpe
+  mov $1,$10
+  sub $1,8
+  div $1,16
+  add $1,1
+  add $14,$1
+lpe
+mov $1,$14
