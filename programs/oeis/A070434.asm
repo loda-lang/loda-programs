@@ -3,9 +3,4 @@
 
 pow $0,2
 mod $0,11
-lpb $0,1
-  sub $0,1
-  add $1,2
-lpe
-mul $1,6
-div $1,12
+mov $1,$0

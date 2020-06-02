@@ -1,0 +1,116 @@
+; A030533: Expansion of Molien series for 4-D extraspecial group 2^{1+2*2}.
+; 1,1,5,6,15,19,35,44,69,85,121,146,195,231,295,344,425,489,589,670,791,891,1035,1156,1325,1469,1665,1834,2059,2255,2511,2736,3025,3281,3605,3894,4255,4579,4979,5340,5781,6181,6665,7106,7635
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $5,$0
+  mov $4,6
+  mov $2,2
+  gcd $2,$0
+  sub $4,$4
+  mov $7,2
+  gcd $5,10
+  mov $9,$2
+  mov $8,$2
+  mov $10,6
+  sub $8,$8
+  mov $1,$5
+  div $0,2
+  add $1,3
+  sub $1,8
+  add $2,$0
+  mov $3,$4
+  mov $3,$1
+  mov $4,$9
+  sub $7,7
+  add $4,$1
+  pow $1,9
+  sub $2,1
+  add $4,9
+  mov $10,$10
+  add $5,10
+  cmp $0,10
+  add $0,$9
+  mov $0,6
+  lpb $0,1
+    sub $0,$3
+    mov $10,2
+    mov $3,$1
+    add $1,$5
+    pow $2,2
+    mul $3,$10
+    mov $7,$9
+    mul $9,6
+    mul $10,$8
+    mul $10,$7
+    mul $10,$3
+    mov $5,$8
+    mov $4,6
+    mod $7,4
+    sub $2,$8
+    bin $10,5
+    fac $9
+    mul $0,$10
+    mul $10,$2
+    mul $0,$4
+    mov $9,$5
+    mov $6,2
+    cmp $7,10
+    add $6,3
+    mod $5,10
+    pow $7,$4
+    add $0,$0
+    add $6,6
+    div $10,$6
+    mod $5,$6
+    sub $1,$3
+    mul $1,$2
+    sub $0,8
+    mul $3,$5
+    gcd $3,$5
+    pow $9,7
+    add $5,9
+    sub $10,8
+    add $10,$0
+    pow $3,$0
+    div $8,4
+    add $2,$8
+    pow $10,$0
+    div $1,$3
+    mul $1,$3
+    gcd $4,2
+    div $8,3
+    fac $8
+    sub $0,1
+    add $2,$0
+  lpe
+  sub $0,$1
+  mov $0,$10
+  mov $7,$10
+  add $9,$8
+  div $1,$7
+  add $0,3
+  mul $5,4
+  mov $9,$1
+  mov $2,$2
+  fac $7
+  div $6,$8
+  mov $4,4
+  sub $8,$10
+  mul $1,$8
+  mul $8,$5
+  sub $9,6
+  mul $5,$2
+  add $2,1
+  sub $8,$3
+  mov $1,$2
+  sub $1,1
+  add $12,$1
+lpe
+mov $1,$12
