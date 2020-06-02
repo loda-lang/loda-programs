@@ -319,6 +319,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212031](http://oeis.org/A212031) ([L12 program](A212031.asm)): Number of lower triangular n X n arrays colored with integers 0 upwards introduced in row major order, with no element equal to any element at a city block distance of two, and containing the value n(n+1)/2-2.
 * [A212039](http://oeis.org/A212039) ([L13 program](A212039.asm)): Number of lower triangular n X n arrays colored with integers 0 upwards introduced in row major order, with no element equal to any element within a city block distance of two, and containing the value n(n+1)/2-2.
 * [A212068](http://oeis.org/A212068) ([L27 program](A212068.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 2w=x+y+z.
+* [A212069](http://oeis.org/A212069) ([L34 program](A212069.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 3*w = x+y+z.
 * [A212126](http://oeis.org/A212126) ([L13 program](A212126.asm)): Period 13: repeat (0,0,1,0,0,1,0,1,0,0,1,0,1).
 * [A212133](http://oeis.org/A212133) ([L08 program](A212133.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and median=mean.
 * [A212134](http://oeis.org/A212134) ([L10 program](A212134.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and median<=mean.
@@ -2732,7 +2733,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A292576](http://oeis.org/A292576) ([L10 program](A292576.asm)): Permutation of the natural numbers partitioned into quadruples [4k-1, 4k-3, 4k-2, 4k], k > 0.
 * [A292638](http://oeis.org/A292638) ([L14 program](A292638.asm)): Rank of (3-r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
 * [A292641](http://oeis.org/A292641) ([L14 program](A292641.asm)): Rank of (4+r)*n when all the numbers (4-r)*j and (4+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
-* [A292645](http://oeis.org/A292645) ([L10 program](A292645.asm)): Rank of (6+r)*n when all the numbers (6-r)*j and (6+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
 * [A293004](http://oeis.org/A293004) ([L08 program](A293004.asm)): Expansion of 2*x^2 / (x^3 + x^2 - 3x + 1).
 * [A293005](http://oeis.org/A293005) ([L11 program](A293005.asm)): Number of associative, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
 * [A293006](http://oeis.org/A293006) ([L12 program](A293006.asm)): Expansion of 2*x^2*(x+1) / (2*x^3-3*x+1).
@@ -2873,6 +2873,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A299255](http://oeis.org/A299255) ([L12 program](A299255.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 3.3.4.3.4 2D tiling (cf. A219529).
 * [A299256](http://oeis.org/A299256) ([L13 program](A299256.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 3.6.3.6 2D tiling (cf. A008579).
 * [A299259](http://oeis.org/A299259) ([L15 program](A299259.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 4.8.8 2D tiling (cf. A008576).
+* [A299279](http://oeis.org/A299279) ([L30 program](A299279.asm)): Coordination sequence for "reo" 3D uniform tiling.
 * [A299283](http://oeis.org/A299283) ([L28 program](A299283.asm)): Coordination sequence for "svh" 3D uniform tiling.
 * [A299287](http://oeis.org/A299287) ([L23 program](A299287.asm)): Coordination sequence for "tcd" 3D uniform tiling.
 * [A299289](http://oeis.org/A299289) ([L15 program](A299289.asm)): Coordination sequence for "tsi" 3D uniform tiling.

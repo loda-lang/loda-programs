@@ -253,6 +253,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307182](http://oeis.org/A307182) ([L14 program](A307182.asm)): Crossing number of the n-crown graph (conjectured).
 * [A307247](http://oeis.org/A307247) ([L56 program](A307247.asm)): Second digit in the expansion of n in Fraenkel's exotic ternary representation.
 * [A307268](http://oeis.org/A307268) ([L14 program](A307268.asm)): Partial sums of the Lucas numbers of the form L(3n+2) (A163063).
+* [A307304](http://oeis.org/A307304) ([L40 program](A307304.asm)): Number of inequivalent ways of placing 2 nonattacking rooks on n X n board up to rotations and reflections of the board.
 * [A307559](http://oeis.org/A307559) ([L12 program](A307559.asm)): a(n) = floor(n/3)*(n - floor(n/3))*(n - floor(n/3) - 1).
 * [A307613](http://oeis.org/A307613) ([L14 program](A307613.asm)): Inverse of the permutation A307485: one odd, two even, four odd, eight even, etc; extended with a(0) = 0.
 * [A307621](http://oeis.org/A307621) ([L14 program](A307621.asm)): Number of cycles in the n-dipyramidal graph.

@@ -3203,6 +3203,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A163303](http://oeis.org/A163303) ([L10 program](A163303.asm)): a(n) = n^3 + 73*n^2 + n + 67.
 * [A163403](http://oeis.org/A163403) ([L04 program](A163403.asm)): a(n) = 2*a(n-2) for n > 2; a(1) = 1, a(2) = 2.
 * [A163433](http://oeis.org/A163433) ([L04 program](A163433.asm)): Number of different fixed (possibly) disconnected trominoes bounded tightly by an n*n square
+* [A163434](http://oeis.org/A163434) ([L08 program](A163434.asm)): Number of different fixed (possibly) disconnected tetrominoes bounded tightly by an n X n square.
 * [A163522](http://oeis.org/A163522) ([L22 program](A163522.asm)): a(1)=2; for n>1, a(n) = sum of digits of a(n-1)^2.
 * [A163581](http://oeis.org/A163581) ([L15 program](A163581.asm)): Number of zeros of sin(x) in integer intervals starting with (0,1).
 * [A163584](http://oeis.org/A163584) ([L14 program](A163584.asm)): Number of singularities of tan(x) in integer intervals starting with (0,1).
@@ -3286,7 +3287,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164550](http://oeis.org/A164550) ([L12 program](A164550.asm)): a(n) = 6*a(n-1)-3*a(n-2) for n > 1; a(0) = 1, a(1) = 7.
 * [A164559](http://oeis.org/A164559) ([L04 program](A164559.asm)): a(n) = 6^n/3 - 1.
 * [A164576](http://oeis.org/A164576) ([L21 program](A164576.asm)): Integer averages of the set of the first positive squares up to some n^2.
-* [A164578](http://oeis.org/A164578) ([L28 program](A164578.asm)): Integers of the form (k+1)*(2k+1)/12.
+* [A164578](http://oeis.org/A164578) ([L12 program](A164578.asm)): Integers of the form (k+1)*(2k+1)/12.
 * [A164582](http://oeis.org/A164582) ([L11 program](A164582.asm)): a(n) = 5*a(n - 1) - a(n - 2), with n>2, a(1)=2, a(2)=3.
 * [A164583](http://oeis.org/A164583) ([L10 program](A164583.asm)): a(n)=4^n*(2n + 1)^2.
 * [A164587](http://oeis.org/A164587) ([L11 program](A164587.asm)): a(n) = 2*a(n - 2) for n > 2; a(1) = 1, a(2) = 8.
@@ -3301,7 +3302,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164743](http://oeis.org/A164743) ([L15 program](A164743.asm)): Digital root of 3*A000045(n).
 * [A164754](http://oeis.org/A164754) ([L08 program](A164754.asm)): Number of n X 2 1..4 arrays with all 1's connected, all 2's connected, all 3's connected, all 4's connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 2 neighbors with the same value.
 * [A164784](http://oeis.org/A164784) ([L05 program](A164784.asm)): a(n) = 6^n-5.
-* [A164785](http://oeis.org/A164785) ([L05 program](A164785.asm)): a(n) = 5^n-4.
+* [A164785](http://oeis.org/A164785) ([L04 program](A164785.asm)): a(n) = 5^n-4.
 * [A164845](http://oeis.org/A164845) ([L09 program](A164845.asm)): a(n) = (6 + 10*n + 5*n^2 + n^3)/2.
 * [A164848](http://oeis.org/A164848) ([L31 program](A164848.asm)): a(n) = A026741(n)/A051712(n+1).
 * [A164897](http://oeis.org/A164897) ([L05 program](A164897.asm)): a(n) = 4*n*(n+1) + 3.
@@ -4539,7 +4540,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183870](http://oeis.org/A183870) ([L17 program](A183870.asm)): n+floor(sqrt(5n-5)); complement of A183871.
 * [A183871](http://oeis.org/A183871) ([L05 program](A183871.asm)): n + ceiling( (1/5)*n^2 ); complement of A183870.
 * [A183872](http://oeis.org/A183872) ([L19 program](A183872.asm)): n+floor(sqrt(5n)); complement of A183873.
-* [A183873](http://oeis.org/A183873) ([L23 program](A183873.asm)): n-1+ceiling((1/5)n^2); complement of A183872.
+* [A183873](http://oeis.org/A183873) ([L06 program](A183873.asm)): n-1+ceiling((1/5)n^2); complement of A183872.
 * [A183874](http://oeis.org/A183874) ([L23 program](A183874.asm)): a(n) = n + floor(sqrt(3*n/2)). Complement of A183857.
 * [A183897](http://oeis.org/A183897) ([L15 program](A183897.asm)): Number of nondecreasing arrangements of n+3 numbers in 0..2 with each number being the sum mod 3 of three others.
 * [A183898](http://oeis.org/A183898) ([L18 program](A183898.asm)): Number of nondecreasing arrangements of n+3 numbers in 0..3 with each number being the sum mod 4 of three others.
@@ -4700,6 +4701,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186390](http://oeis.org/A186390) ([L14 program](A186390.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=6i and g(j)=j(j+1)/2 (triangular number).  Complement of A186389.
 * [A186421](http://oeis.org/A186421) ([L15 program](A186421.asm)): Even numbers interleaved with repeated odd numbers.
 * [A186424](http://oeis.org/A186424) ([L09 program](A186424.asm)): Odd terms in A186423.
+* [A186444](http://oeis.org/A186444) ([L21 program](A186444.asm)): The count of numbers <= n for which 3 is an infinitary divisor.
 * [A186446](http://oeis.org/A186446) ([L10 program](A186446.asm)): Expansion of 1/(1 - 7*x + 2*x^2).
 * [A186493](http://oeis.org/A186493) ([L14 program](A186493.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j-th pentagonal number.  Complement of A186494.
 * [A186494](http://oeis.org/A186494) ([L14 program](A186494.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j-th pentagonal number.  Complement of A186493.
@@ -5309,7 +5311,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199573](http://oeis.org/A199573) ([L10 program](A199573.asm)): Number of round trips of length n from any of the four vertices of the cycle graph C_4.
 * [A199705](http://oeis.org/A199705) ([L13 program](A199705.asm)): Number of -n..n arrays x(0..2) of 3 elements with zero sum and no two neighbors equal.
 * [A199771](http://oeis.org/A199771) ([L17 program](A199771.asm)): Row sums of the triangle in A199332.
-* [A199833](http://oeis.org/A199833) ([L08 program](A199833.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two neighbors summing to zero
+* [A199833](http://oeis.org/A199833) ([L05 program](A199833.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two neighbors summing to zero
 * [A199899](http://oeis.org/A199899) ([L14 program](A199899.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum, and adjacent elements not both strictly positive and not both strictly negative.
 * [A199910](http://oeis.org/A199910) ([L06 program](A199910.asm)): Number of -n..n arrays x(0..2) of 3 elements with zero sum, and adjacent elements not equal modulo three (with -1 modulo 3 = 2).
 * [A199923](http://oeis.org/A199923) ([L10 program](A199923.asm)): Sum_{0<=k<=3^(n-1)} gcd(k,3^(n-1)) for n > 0 and a(0) = 1.

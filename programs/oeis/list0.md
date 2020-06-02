@@ -1002,7 +1002,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010914](http://oeis.org/A010914) ([L09 program](A010914.asm)): Pisot sequence E(5,17), a(n) = floor(a(n-1)^2 / a(n-2) + 1/2).
 * [A010920](http://oeis.org/A010920) ([L10 program](A010920.asm)): Pisot sequence T(3,13), a(n) = floor( a(n-1)^2/a(n-2) ).
 * [A010935](http://oeis.org/A010935) ([L04 program](A010935.asm)): Binomial coefficient C(19,n).
-* [A010936](http://oeis.org/A010936) ([L06 program](A010936.asm)): Binomial coefficient C(20,n).
+* [A010936](http://oeis.org/A010936) ([L03 program](A010936.asm)): Binomial coefficient C(20,n).
 * [A010937](http://oeis.org/A010937) ([L07 program](A010937.asm)): Binomial coefficient C(21,n).
 * [A010938](http://oeis.org/A010938) ([L08 program](A010938.asm)): Binomial coefficient C(22,n).
 * [A010939](http://oeis.org/A010939) ([L04 program](A010939.asm)): Binomial coefficient C(23,n).
@@ -3892,7 +3892,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A050683](http://oeis.org/A050683) ([L05 program](A050683.asm)): Number of nonzero palindromes of length n.
 * [A050914](http://oeis.org/A050914) ([L07 program](A050914.asm)): a(n) = n*3^n + 1.
 * [A050915](http://oeis.org/A050915) ([L05 program](A050915.asm)): a(n) = n*4^n + 1.
-* [A050916](http://oeis.org/A050916) ([L07 program](A050916.asm)): a(n) = n*5^n + 1.
+* [A050916](http://oeis.org/A050916) ([L06 program](A050916.asm)): a(n) = n*5^n + 1.
 * [A050917](http://oeis.org/A050917) ([L04 program](A050917.asm)): a(n) = n*6^n + 1.
 * [A051032](http://oeis.org/A051032) ([L06 program](A051032.asm)): Summatory Rudin-Shapiro sequence for 2^(n-1).
 * [A051033](http://oeis.org/A051033) ([L14 program](A051033.asm)): a(n) = binomial(n, floor(n/3)).
@@ -4134,6 +4134,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054554](http://oeis.org/A054554) ([L05 program](A054554.asm)): a(n) = 4n^2 - 10n + 7.
 * [A054556](http://oeis.org/A054556) ([L05 program](A054556.asm)): a(n) = 4*n^2 - 9*n + 6.
 * [A054559](http://oeis.org/A054559) ([L05 program](A054559.asm)): Number of labeled pure 2-complexes on n nodes (0-simplexes) with 5 2-simplexes and 8 1-simplexes.
+* [A054563](http://oeis.org/A054563) ([L07 program](A054563.asm)): a(n) = n*(n^2 - 1)*(n + 2)*(n^2 + 4*n + 6)/72.
 * [A054567](http://oeis.org/A054567) ([L06 program](A054567.asm)): a(n) = 4*n^2 - 7*n + 4.
 * [A054569](http://oeis.org/A054569) ([L06 program](A054569.asm)): a(n) = 4*n^2 - 6*n + 3.
 * [A054579](http://oeis.org/A054579) ([L22 program](A054579.asm)): n^2+n modulo 17.
@@ -4219,6 +4220,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A055998](http://oeis.org/A055998) ([L04 program](A055998.asm)): a(n) = n*(n+5)/2.
 * [A055999](http://oeis.org/A055999) ([L04 program](A055999.asm)): a(n) = n*(n + 7)/2.
 * [A056000](http://oeis.org/A056000) ([L04 program](A056000.asm)): a(n) = n*(n+9)/2.
+* [A056003](http://oeis.org/A056003) ([L11 program](A056003.asm)): A second-order recursive sequence.
 * [A056020](http://oeis.org/A056020) ([L07 program](A056020.asm)): Numbers n that are congruent to +-1 mod 9.
 * [A056021](http://oeis.org/A056021) ([L24 program](A056021.asm)): Numbers k such that k^4 == 1 (mod 5^2).
 * [A056064](http://oeis.org/A056064) ([L09 program](A056064.asm)): The Kubelsky sequence: Jack Benny's reported age, sampled annually.
@@ -4388,10 +4390,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059153](http://oeis.org/A059153) ([L11 program](A059153.asm)): a(n) = 2^(n+2)*(2^(n+1)-1).
 * [A059154](http://oeis.org/A059154) ([L08 program](A059154.asm)): A hierarchical sequence (W'2{3}c - see A059126).
 * [A059157](http://oeis.org/A059157) ([L07 program](A059157.asm)): A hierarchical sequence (W'3{2,2}cc - see A059126).
-* [A059159](http://oeis.org/A059159) ([L06 program](A059159.asm)): A hierarchical sequence (W'2{2}*c) - see A059126).
-* [A059161](http://oeis.org/A059161) ([L06 program](A059161.asm)): A hierarchical sequence (W'2{3}*c - see A059126).
+* [A059159](http://oeis.org/A059159) ([L05 program](A059159.asm)): A hierarchical sequence (W'2{2}*c) - see A059126).
+* [A059161](http://oeis.org/A059161) ([L05 program](A059161.asm)): A hierarchical sequence (W'2{3}*c - see A059126).
 * [A059162](http://oeis.org/A059162) ([L08 program](A059162.asm)): A hierarchical sequence (S(W'2{3}*c) - see A059126).
-* [A059164](http://oeis.org/A059164) ([L06 program](A059164.asm)): A hierarchical sequence (W'3{2,2}*cc - see A059126).
+* [A059164](http://oeis.org/A059164) ([L05 program](A059164.asm)): A hierarchical sequence (W'3{2,2}*cc - see A059126).
 * [A059165](http://oeis.org/A059165) ([L05 program](A059165.asm)): a(n) = (n+1)*2^(n+4).
 * [A059169](http://oeis.org/A059169) ([L07 program](A059169.asm)): Number of partitions of n into 3 parts which form the sides of a nondegenerate isosceles triangle.
 * [A059193](http://oeis.org/A059193) ([L07 program](A059193.asm)): Engel expansion of 1/e = 0.367879... .
@@ -4911,7 +4913,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A068922](http://oeis.org/A068922) ([L10 program](A068922.asm)): Number of ways to tile a 3 X 2n room with 1 X 2 Tatami mats. At most 3 Tatami mats may meet at a point.
 * [A068937](http://oeis.org/A068937) ([L23 program](A068937.asm)): Numbers having the sum of distinct prime factors not less than the sum of exponents in prime factorization, A008472(n)>=A001222(n).
 * [A069071](http://oeis.org/A069071) ([L55 program](A069071.asm)): (2n+1)*((2n+1)^4+4).
-* [A069072](http://oeis.org/A069072) ([L09 program](A069072.asm)): a(n) = (2n+1)*(2n+2)*(2n+3).
+* [A069072](http://oeis.org/A069072) ([L05 program](A069072.asm)): a(n) = (2n+1)*(2n+2)*(2n+3).
 * [A069073](http://oeis.org/A069073) ([L11 program](A069073.asm)): a(n) = n*(4n^2 - 1)^2.
 * [A069074](http://oeis.org/A069074) ([L09 program](A069074.asm)): a(n) = (2*n+2)*(2*n+3)*(2*n+4) = 24*A000330(n+1).
 * [A069075](http://oeis.org/A069075) ([L09 program](A069075.asm)): a(n) = (4*n^2 - 1)^2.
@@ -5376,7 +5378,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A074066](http://oeis.org/A074066) ([L09 program](A074066.asm)): Zigzag modulo 3.
 * [A074092](http://oeis.org/A074092) ([L15 program](A074092.asm)): Number of plane binary trees of size n+3 and contracted height n.
 * [A074099](http://oeis.org/A074099) ([L04 program](A074099.asm)): Duplicate of A006788.
-* [A074148](http://oeis.org/A074148) ([L07 program](A074148.asm)): a(n) = n + floor(n^2/2).
+* [A074148](http://oeis.org/A074148) ([L06 program](A074148.asm)): a(n) = n + floor(n^2/2).
 * [A074149](http://oeis.org/A074149) ([L11 program](A074149.asm)): Sum of terms in each group in A074147.
 * [A074150](http://oeis.org/A074150) ([L04 program](A074150.asm)): Duplicate of A061925.
 * [A074155](http://oeis.org/A074155) ([L15 program](A074155.asm)): Group the natural numbers so that the product of members of a group is a multiple of the sum: (1),(2,3,4,5,6),(7,8,9),(10,11,12),(13,14,15),(16,17,18),(19,20,21),(22,23,24),.... This is the sequence of the ratio of product /sum.
