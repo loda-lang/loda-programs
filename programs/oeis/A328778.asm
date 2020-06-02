@@ -1,0 +1,103 @@
+; A328778: Number of indecomposable closed walks of length 2n along the edges of a cube based at a vertex.
+; 1,3,12,84,588,4116,28812,201684,1411788,9882516,69177612,484243284,3389702988,23727920916,166095446412,1162668124884,8138676874188,56970738119316,398795166835212,2791566167846484
+
+mov $13,$0
+mov $15,2
+lpb $15,1
+  clr $0,13
+  sub $15,1
+  mov $0,$13
+  add $0,$15
+  sub $0,1
+  mov $2,7
+  gcd $2,2
+  mov $5,1
+  div $0,$5
+  mov $3,7
+  mov $4,7
+  mov $7,4
+  mov $1,$4
+  div $1,$5
+  mov $8,8
+  pow $3,$0
+  div $3,7
+  mov $6,$4
+  mov $7,3
+  mul $0,$6
+  add $0,1
+  gcd $5,$8
+  fac $1
+  div $8,8
+  mod $1,6
+  pow $2,$0
+  add $4,4
+  mov $7,$4
+  sub $8,2
+  mov $5,$1
+  add $5,6
+  mul $2,3
+  mul $6,2
+  gcd $7,$5
+  mul $3,2
+  fac $6
+  add $3,1
+  add $4,7
+  pow $4,3
+  bin $8,4
+  add $8,3
+  div $2,4
+  fac $2
+  add $6,6
+  lpb $2,4
+    add $6,4
+    mov $6,5
+    div $7,$2
+    lpb $5,8
+      mul $8,6
+      div $3,8
+      add $5,$6
+      mov $5,7
+      sub $1,$2
+      add $7,$4
+      sub $2,$7
+      mod $4,3
+      sub $4,$7
+      mul $7,$5
+      bin $0,7
+      mul $5,$6
+      div $7,2
+      div $4,6
+    lpe
+    mul $3,$7
+    div $3,2
+    sub $4,$3
+    mul $1,4
+    mul $3,$6
+  lpe
+  pow $2,$4
+  pow $5,$5
+  pow $5,$1
+  div $4,$0
+  div $0,2
+  mov $5,$6
+  cmp $2,1
+  pow $7,2
+  mul $4,6
+  add $7,4
+  add $3,5
+  add $3,1
+  sub $3,$7
+  pow $4,$1
+  gcd $2,$1
+  mov $1,$3
+  mov $16,$15
+  lpb $16,1
+    mov $14,$1
+    sub $16,1
+  lpe
+lpe
+lpb $13,1
+  sub $14,$1
+  mov $13,0
+lpe
+mov $1,$14
