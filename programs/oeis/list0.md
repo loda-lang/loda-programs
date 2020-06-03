@@ -1199,7 +1199,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014591](http://oeis.org/A014591) ([L05 program](A014591.asm)): a(n) = floor(n^2/12 + 5/4).
 * [A014601](http://oeis.org/A014601) ([L04 program](A014601.asm)): Numbers congruent to 0 or 3 mod 4.
 * [A014616](http://oeis.org/A014616) ([L05 program](A014616.asm)): a(n) = solution to the postage stamp problem with 2 denominations and n stamps.
-* [A014626](http://oeis.org/A014626) ([L09 program](A014626.asm)): Number of intersection points of diagonals of an n-gon in general position, plus number of vertices.
+* [A014626](http://oeis.org/A014626) ([L04 program](A014626.asm)): Number of intersection points of diagonals of an n-gon in general position, plus number of vertices.
 * [A014628](http://oeis.org/A014628) ([L20 program](A014628.asm)): Number of segments (and sides) created by diagonals of an n-gon in general position.
 * [A014629](http://oeis.org/A014629) ([L09 program](A014629.asm)): Number of segments created by diagonals of n-gon.
 * [A014633](http://oeis.org/A014633) ([L20 program](A014633.asm)): Even pentagonal numbers.
@@ -2355,6 +2355,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027793](http://oeis.org/A027793) ([L15 program](A027793.asm)): a(n) = 28*(n+1)*C(n+3,8)/3.
 * [A027800](http://oeis.org/A027800) ([L09 program](A027800.asm)): a(n) = (n+1)*binomial(n+4, 4).
 * [A027806](http://oeis.org/A027806) ([L12 program](A027806.asm)): 30*(n+1)*C(n+4,10).
+* [A027815](http://oeis.org/A027815) ([L19 program](A027815.asm)): a(n) = 42*(n+1) * binomial(n+5,10).
 * [A027849](http://oeis.org/A027849) ([L11 program](A027849.asm)): a(n) = (n+1)*(5*n^2+4*n+1).
 * [A027850](http://oeis.org/A027850) ([L43 program](A027850.asm)): (n+1)*(14*n^3+13*n^2+6*n+1).
 * [A027865](http://oeis.org/A027865) ([L06 program](A027865.asm)): Sums of six consecutive squares: a(n) = n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2 + (n+4)^2 + (n+5)^2.
@@ -3061,6 +3062,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040316](http://oeis.org/A040316) ([L31 program](A040316.asm)): Continued fraction for sqrt(335).
 * [A040317](http://oeis.org/A040317) ([L14 program](A040317.asm)): Continued fraction for sqrt(336).
 * [A040323](http://oeis.org/A040323) ([L18 program](A040323.asm)): Continued fraction for sqrt(342).
+* [A040341](http://oeis.org/A040341) ([L40 program](A040341.asm)): Continued fraction for sqrt(360).
 * [A040342](http://oeis.org/A040342) ([L03 program](A040342.asm)): Continued fraction for sqrt(362).
 * [A040343](http://oeis.org/A040343) ([L05 program](A040343.asm)): Continued fraction for sqrt(363).
 * [A040360](http://oeis.org/A040360) ([L14 program](A040360.asm)): Continued fraction for sqrt(380).
@@ -4874,6 +4876,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A066982](http://oeis.org/A066982) ([L15 program](A066982.asm)): a(n) = Lucas(n+1) - (n+1).
 * [A066997](http://oeis.org/A066997) ([L15 program](A066997.asm)): Survivor number for 2nd-order Josephus problem.
 * [A067018](http://oeis.org/A067018) ([L11 program](A067018.asm)): Start with a(0)=1, a(1)=4, a(2)=3, a(3)=2; for n>=3, a(n+1) = mex_i (nim-sum a(i)+a(n-i)), where mex means smallest nonnegative missing number.
+* [A067046](http://oeis.org/A067046) ([L22 program](A067046.asm)): a(n) = lcm(n, n+1, n+2)/6.
 * [A067078](http://oeis.org/A067078) ([L09 program](A067078.asm)): a(1) = 1, a(2) = 2, a(n) = (n-1)*a(n-1) - (n-2)*a(n-2).
 * [A067082](http://oeis.org/A067082) ([L07 program](A067082.asm)): If n = abc...def in decimal notation then the right digit sum function = abc...def + bc...def + c...def + ... + def + ef + f.
 * [A067239](http://oeis.org/A067239) ([L09 program](A067239.asm)): a(0)=1, a(n) = 8n*(2n-1).
@@ -5298,7 +5301,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071253](http://oeis.org/A071253) ([L04 program](A071253.asm)): n^2*(n^2+1).
 * [A071270](http://oeis.org/A071270) ([L06 program](A071270.asm)): a(n) = n^2*(2*n^2+1)/3.
 * [A071279](http://oeis.org/A071279) ([L04 program](A071279.asm)): Kissing number of regular n-gon.
-* [A071282](http://oeis.org/A071282) ([L08 program](A071282.asm)): Denominators of Peirce sequence of order 3.
+* [A071282](http://oeis.org/A071282) ([L05 program](A071282.asm)): Denominators of Peirce sequence of order 3.
 * [A071284](http://oeis.org/A071284) ([L17 program](A071284.asm)): Denominators of Peirce sequence of order 4.
 * [A071286](http://oeis.org/A071286) ([L22 program](A071286.asm)): Denominators of Peirce sequence of order 5.
 * [A071288](http://oeis.org/A071288) ([L28 program](A071288.asm)): Denominators of Peirce sequence of order 6.

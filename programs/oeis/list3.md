@@ -691,6 +691,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328152](http://oeis.org/A328152) ([L22 program](A328152.asm)): a(n) is the number of squares of side length greater than 1 having vertices at the points of an n X n grid of dots.
 * [A328263](http://oeis.org/A328263) ([L07 program](A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
 * [A328284](http://oeis.org/A328284) ([L51 program](A328284.asm)): An extension of the Jacobsthal numbers: 0, 0, 1, followed by A001045.
+* [A328778](http://oeis.org/A328778) ([L35 program](A328778.asm)): Number of indecomposable closed walks of length 2n along the edges of a cube based at a vertex.
 * [A328865](http://oeis.org/A328865) ([L04 program](A328865.asm)): The first repeating term in the trajectory of n under iterations of A329623, or -1 if no such terms exists.
 * [A328890](http://oeis.org/A328890) ([L07 program](A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L03 program](A328943.asm)): a(n) = 2 + (n mod 4).
@@ -760,6 +761,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330144](http://oeis.org/A330144) ([L20 program](A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
 * [A330179](http://oeis.org/A330179) ([L21 program](A330179.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = e - 1, s = e, t = e + 1.
 * [A330246](http://oeis.org/A330246) ([L05 program](A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
+* [A330298](http://oeis.org/A330298) ([L12 program](A330298.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 2 even numbers.
 * [A330357](http://oeis.org/A330357) ([L04 program](A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A330396](http://oeis.org/A330396) ([L11 program](A330396.asm)): Permutation of the nonnegative integers partitioned into triples [3*k+2, 3*k+1, 3*k] for k >= 0.
 * [A330451](http://oeis.org/A330451) ([L04 program](A330451.asm)): a(n) = a(n-3) + 20*n - 30 for n > 2, with a(0)=0, a(1)=3, a(2)=13.

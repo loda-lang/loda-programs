@@ -1,0 +1,146 @@
+; A051885: Smallest number whose sum of digits is n.
+; 0,1,2,3,4,5,6,7,8,9,19,29,39,49,59,69,79,89,99,199,299,399,499,599,699,799,899,999,1999,2999,3999,4999,5999,6999,7999,8999,9999,19999,29999,39999,49999,59999,69999,79999,89999,99999,199999,299999,399999,499999
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $11,$0
+    mov $13,2
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      add $0,$13
+      sub $0,1
+      mov $2,$0
+      mov $1,10
+      mov $3,$0
+      mov $8,$1
+      mov $7,$0
+      add $0,$2
+      gcd $7,9
+      mov $5,$0
+      add $1,$1
+      gcd $3,6
+      sub $1,7
+      pow $8,3
+      add $0,$7
+      lpb $2,1
+        lpb $4,1
+          mod $5,2
+          add $5,$3
+          add $7,2
+          mov $10,9
+          add $3,$0
+          mov $6,10
+          div $0,7
+          div $10,5
+          mov $5,$8
+          mul $1,$6
+          mov $4,$3
+          mul $0,10
+          div $3,$1
+          mul $10,8
+          sub $4,4
+          sub $4,$1
+          mov $9,1
+          mul $10,2
+          mov $8,$0
+          pow $3,8
+          mov $0,8
+          add $10,$2
+        lpe
+        add $7,7
+        sub $4,4
+        lpb $5,1
+          mul $9,5
+          add $3,$0
+          div $7,9
+          sub $5,$3
+          fac $4
+          bin $9,2
+        lpe
+        sub $2,8
+        sub $8,9
+        mod $8,6
+        mov $0,6
+        sub $9,$5
+        gcd $7,$7
+        sub $5,2
+        mod $10,8
+        mov $5,9
+        add $7,6
+        lpb $6,1
+          div $9,3
+          sub $0,$8
+          mul $0,4
+          div $4,8
+          mov $3,$4
+          sub $5,2
+          mod $4,3
+          gcd $3,2
+          sub $6,$3
+          div $9,3
+          sub $10,7
+          mul $3,4
+          sub $4,9
+        lpe
+        add $6,10
+        cmp $5,4
+        add $4,$8
+        add $9,4
+        div $0,9
+        add $7,$9
+        mul $7,$6
+        add $6,$0
+        add $6,$6
+        bin $4,$9
+        mov $8,4
+        mul $3,$8
+        mod $3,$8
+        sub $6,$5
+        add $10,$10
+        cmp $4,8
+        fac $4
+        sub $2,1
+        mul $10,$3
+        mov $4,$1
+        bin $5,6
+        bin $8,5
+      lpe
+      div $7,8
+      add $7,$1
+      mul $5,7
+      mul $2,4
+      mov $1,$4
+      mov $14,$13
+      lpb $14,1
+        mov $12,$1
+        sub $14,1
+      lpe
+    lpe
+    lpb $11,1
+      sub $12,$1
+      mov $11,0
+    lpe
+    mov $1,$12
+    div $1,13
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19
