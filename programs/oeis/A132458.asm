@@ -1,0 +1,89 @@
+; A132458: Let df(n,k) = Product_{i=0..k-1} (n-i) be the descending factorial and let P(m,n) = df(n-1,m-1)^2*(2*n-m)/((m-1)!*m!). Sequence gives P(4,n).
+; 0,0,0,1,24,200,1000,3675,10976,28224,64800,136125,266200,490776,861224,1449175,2352000,3699200,5659776,8450649,12346200,17689000,24901800,34500851,47110624,63480000,84500000,111223125,144884376,186924024,239012200,303075375
+
+mov $7,7
+mov $3,$0
+add $7,4
+mov $2,6
+mov $6,$2
+mov $4,6
+div $6,$7
+mov $8,7
+pow $8,$7
+mov $5,4
+add $4,7
+mov $6,$3
+div $5,6
+sub $3,$5
+mov $1,$7
+add $1,$3
+sub $2,7
+add $8,1
+mov $6,1
+add $4,3
+div $8,$8
+add $7,$7
+gcd $4,2
+mov $7,$3
+add $1,$2
+sub $0,$8
+mul $4,7
+sub $8,$0
+div $8,8
+mul $6,2
+bin $3,3
+gcd $7,2
+pow $3,2
+mov $2,5
+sub $4,$0
+pow $8,$5
+fac $8
+div $4,4
+bin $4,$7
+mul $3,$0
+gcd $1,$3
+lpb $4,1
+  mov $7,$7
+  add $4,3
+  add $4,$1
+  div $1,2
+  sub $7,$7
+  pow $0,6
+  div $0,$4
+  add $4,8
+  lpb $4,8
+    lpb $2,5
+      lpb $6,4
+        add $8,$7
+        mul $1,8
+        mov $0,8
+        mul $3,3
+        div $7,2
+        sub $5,$1
+      lpe
+      add $2,$8
+      lpb $2,7
+        mul $2,2
+        lpb $6,1
+          sub $6,1
+          add $7,1
+        lpe
+        sub $6,1
+        add $7,1
+      lpe
+      pow $6,$1
+      mov $8,6
+    lpe
+    mul $2,$2
+    mov $1,2
+  lpe
+  mov $3,8
+  bin $1,6
+  add $0,$8
+lpe
+fac $7
+sub $0,$6
+mod $1,$1
+mov $0,4
+mov $1,$3
+div $1,2

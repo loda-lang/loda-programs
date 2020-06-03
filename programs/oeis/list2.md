@@ -334,6 +334,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212294](http://oeis.org/A212294) ([L08 program](A212294.asm)): Sums of (zero or more) distinct twin primes.
 * [A212329](http://oeis.org/A212329) ([L14 program](A212329.asm)): Expansion of x*(5+x)/(1-7*x+7*x^2-x^3).
 * [A212331](http://oeis.org/A212331) ([L05 program](A212331.asm)): a(n) = 5*n*(n+5)/2.
+* [A212337](http://oeis.org/A212337) ([L15 program](A212337.asm)): Expansion of 1/(1-4*x+3*x^2)^2.
 * [A212342](http://oeis.org/A212342) ([L06 program](A212342.asm)): Sequence of coefficients of x^0 in marked mesh pattern generating function Q_{n,132}^(0,3,0,0)(x).
 * [A212343](http://oeis.org/A212343) ([L07 program](A212343.asm)): a(n) = (n+1)*(n-2)*(n-3)/2.
 * [A212346](http://oeis.org/A212346) ([L15 program](A212346.asm)): Sequence of coefficients of x^0 in marked mesh pattern generating function Q_{n,132}^(0,4,0,0)(x).
@@ -1246,6 +1247,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245581](http://oeis.org/A245581) ([L09 program](A245581.asm)): (5 * (1 + (-1)^(1 + n)) + 2 * n^2) / 4.
 * [A245621](http://oeis.org/A245621) ([L28 program](A245621.asm)): Sequence of distinct least nonnegative numbers such that the average of the first n terms is a cube.
 * [A245679](http://oeis.org/A245679) ([L19 program](A245679.asm)): a(n) = pg(n, 3) + pg(n, 4) + ... + pg(n, n) where pg(n, m) is the m-th n-th-order polygonal number.
+* [A245710](http://oeis.org/A245710) ([L28 program](A245710.asm)): Number of nonzero evil numbers <= n, see A001969.
 * [A245764](http://oeis.org/A245764) ([L15 program](A245764.asm)): a(n) = 2*(n^2 + 1) + n*(1 + (-1)^n).
 * [A245766](http://oeis.org/A245766) ([L11 program](A245766.asm)): a(n) = 2*(n^2 + 1) - n*(1 + (-1)^n).
 * [A245788](http://oeis.org/A245788) ([L11 program](A245788.asm)): n times the number of 1's in the binary expansion of n.
@@ -1463,7 +1465,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253909](http://oeis.org/A253909) ([L03 program](A253909.asm)): 1 together with the positive squares.
 * [A253942](http://oeis.org/A253942) ([L05 program](A253942.asm)): a(n) = 3*binomial(n+1, 5).
 * [A253943](http://oeis.org/A253943) ([L04 program](A253943.asm)): a(n) = 3*binomial(n+1,6).
-* [A253944](http://oeis.org/A253944) ([L06 program](A253944.asm)): a(n) = 3*binomial(n+1,7).
+* [A253944](http://oeis.org/A253944) ([L04 program](A253944.asm)): a(n) = 3*binomial(n+1,7).
 * [A253945](http://oeis.org/A253945) ([L05 program](A253945.asm)): a(n) = 6*binomial(n+1,5).
 * [A253946](http://oeis.org/A253946) ([L04 program](A253946.asm)): a(n) = 6*binomial(n+1, 6).
 * [A253947](http://oeis.org/A253947) ([L06 program](A253947.asm)): a(n) = 6*binomial(n+1,7).
@@ -2655,6 +2657,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A289873](http://oeis.org/A289873) ([L10 program](A289873.asm)): Related to perfect Wichmann rulers: a(n) = ( n^2 - (mod(n, 6) - 3)^2 ) / 3.
 * [A289999](http://oeis.org/A289999) ([L15 program](A289999.asm)): Sierpinski cuboctahedral numbers: a(n) = 16*4^n - 12*2^n + 9.
 * [A290026](http://oeis.org/A290026) ([L11 program](A290026.asm)): Number of 3-cycles in the n-halved cube graph.
+* [A290031](http://oeis.org/A290031) ([L08 program](A290031.asm)): Number of 6-cycles in the n-hypercube graph.
 * [A290061](http://oeis.org/A290061) ([L09 program](A290061.asm)): a(n) = (1/24)*(n + 3)*(3*n^3 + 5*n^2 - 6*n + 16).
 * [A290113](http://oeis.org/A290113) ([L08 program](A290113.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
 * [A290114](http://oeis.org/A290114) ([L10 program](A290114.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
@@ -2811,6 +2814,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296161](http://oeis.org/A296161) ([L06 program](A296161.asm)): Sum of the larger parts of the partitions of n into two parts such that the smaller part is odd.
 * [A296185](http://oeis.org/A296185) ([L03 program](A296185.asm)): Numbers that are not the sum of 3 squares and an 8th power.
 * [A296196](http://oeis.org/A296196) ([L09 program](A296196.asm)): Harary index of the n X n queen graph.
+* [A296197](http://oeis.org/A296197) ([L49 program](A296197.asm)): Harary index of the n X n bishop graph.
 * [A296306](http://oeis.org/A296306) ([L07 program](A296306.asm)): a(n) = A001157(n)/A050999(n).
 * [A296349](http://oeis.org/A296349) ([L08 program](A296349.asm)): Position where binary expansion of n starts in the binary Champernowne sequence A030190.
 * [A296363](http://oeis.org/A296363) ([L16 program](A296363.asm)): a(1)=0; for n>1, a(n) = 4*n^3 - 3*n^2 - 3*n + 4.
