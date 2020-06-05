@@ -757,6 +757,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330002](http://oeis.org/A330002) ([L04 program](A330002.asm)): Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
 * [A330003](http://oeis.org/A330003) ([L08 program](A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
 * [A330023](http://oeis.org/A330023) ([L36 program](A330023.asm)): a(n) counts the cube-words immediately before a(n), with a(1) = 0.
+* [A330038](http://oeis.org/A330038) ([L22 program](A330038.asm)): a(1) = 1, a(n) = [n/2] + a([n/2]) + a([(n+1)/2]) for n > 1, where [x] = floor(x).
 * [A330067](http://oeis.org/A330067) ([L09 program](A330067.asm)): Beatty sequence for sinh(x), where 1/x + 1/sinh(x) = 1.
 * [A330085](http://oeis.org/A330085) ([L39 program](A330085.asm)): Length of longest binary word with the property that all distinct occurrences of identical-length blocks agree on at most n positions.
 * [A330095](http://oeis.org/A330095) ([L40 program](A330095.asm)): Beatty sequence for 3^(x-1), where 1/2^x + 1/3^(x-1) = 1.

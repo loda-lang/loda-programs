@@ -185,7 +185,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102446](http://oeis.org/A102446) ([L10 program](A102446.asm)): a(n) = a(n-1) + 4*a(n-2) for n>1, a(0) = a(1) = 2.
 * [A102485](http://oeis.org/A102485) ([L15 program](A102485.asm)): a(n) = 5*3^n - 4*2^n.
 * [A102515](http://oeis.org/A102515) ([L08 program](A102515.asm)): a(n) = floor(1 + sqrt(2n + 1)).
-* [A102572](http://oeis.org/A102572) ([L06 program](A102572.asm)): a(n) = floor(log_4(n)).
+* [A102572](http://oeis.org/A102572) ([L03 program](A102572.asm)): a(n) = floor(log_4(n)).
 * [A102603](http://oeis.org/A102603) ([L03 program](A102603.asm)): 24n + 21.
 * [A102620](http://oeis.org/A102620) ([L17 program](A102620.asm)): Number of legal Go positions on a 1 X n board (for which 3^n is a trivial upper bound).
 * [A102652](http://oeis.org/A102652) ([L06 program](A102652.asm)): a(n) = 4 * floor(24*2^n/15) = 4*A077854(n).

@@ -1,0 +1,96 @@
+; A000788: Total number of 1's in binary expansions of 0, ..., n.
+; 0,1,2,4,5,7,9,12,13,15,17,20,22,25,28,32,33,35,37,40,42,45,48,52,54,57,60,64,67,71,75,80,81,83,85,88,90,93,96,100,102,105,108,112,115,119,123,128,130,133,136,140,143,147,151,156,159,163,167,172,176,181,186
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $7,$0
+  mov $8,$7
+  mov $2,$0
+  mov $5,2
+  mov $3,6
+  mov $2,$0
+  mov $4,$2
+  mov $8,6
+  mov $5,$0
+  sub $5,$0
+  mov $6,5
+  lpb $2,1
+    add $3,$8
+    mov $7,$5
+    mov $1,$0
+    lpb $4,1
+      div $2,2
+      sub $5,$7
+      sub $6,$6
+      add $6,6
+      sub $4,$2
+    lpe
+    sub $1,$1
+    lpb $5,1
+      mod $5,7
+      div $8,2
+      pow $4,2
+      mov $8,$1
+      sub $5,$2
+      div $4,2
+    lpe
+    lpb $6,1
+      mul $5,8
+      mov $3,1
+      sub $7,8
+      mov $0,2
+      cmp $5,$5
+      mod $8,4
+      add $1,$6
+      add $7,$6
+      div $6,2
+      add $2,7
+      mul $7,2
+      mul $1,$1
+      div $6,4
+      add $5,5
+      mov $7,3
+      add $2,$8
+      sub $6,$2
+      mov $1,$3
+      mod $6,3
+      mov $1,$8
+      mod $2,7
+      add $0,5
+      mov $8,1
+      add $8,$2
+    lpe
+    mov $2,6
+    fac $1
+    sub $7,$6
+    cmp $2,7
+    add $1,6
+    sub $2,1
+    add $1,3
+  lpe
+  mul $6,5
+  mov $2,$4
+  div $2,$3
+  mul $4,5
+  add $7,4
+  mul $3,3
+  mul $6,$6
+  sub $2,3
+  sub $3,$8
+  add $3,$0
+  sub $8,3
+  div $3,8
+  mov $7,$2
+  mov $6,$3
+  pow $2,$7
+  mov $1,$4
+  div $1,5
+  add $10,$1
+lpe
+mov $1,$10

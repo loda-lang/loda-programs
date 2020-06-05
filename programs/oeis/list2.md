@@ -1510,6 +1510,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A255236](http://oeis.org/A255236) ([L18 program](A255236.asm)): All positive solutions x of the second class of the Pell equation x^2 - 2*y^2 = -7.
 * [A255270](http://oeis.org/A255270) ([L13 program](A255270.asm)): Integer part of fourth root of n.
 * [A255413](http://oeis.org/A255413) ([L05 program](A255413.asm)): Row 3 of Ludic array A255127: a(n) = A007310((5*n)-3).
+* [A255414](http://oeis.org/A255414) ([L24 program](A255414.asm)): Row 4 of Ludic array A255127.
 * [A255459](http://oeis.org/A255459) ([L13 program](A255459.asm)): a(n) = A255458(2^n-1).
 * [A255465](http://oeis.org/A255465) ([L21 program](A255465.asm)): a(n) = A255464(2^n-1).
 * [A255499](http://oeis.org/A255499) ([L07 program](A255499.asm)): a(n) = n^4/2+n^3-n^2/2.
@@ -2238,7 +2239,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273982](http://oeis.org/A273982) ([L06 program](A273982.asm)): Number of little cubes visible around an n X n X n cube with a face on a table.
 * [A274039](http://oeis.org/A274039) ([L04 program](A274039.asm)): Expansion of (x^4 + x^10) / (1 - 2*x + x^2).
 * [A274047](http://oeis.org/A274047) ([L17 program](A274047.asm)): Diameter of Generalized Petersen Graph G(n, 2).
-* [A274070](http://oeis.org/A274070) ([L13 program](A274070.asm)): Integer part of the sum of the inverses of the first n primes.
+* [A274070](http://oeis.org/A274070) ([L03 program](A274070.asm)): Integer part of the sum of the inverses of the first n primes.
 * [A274072](http://oeis.org/A274072) ([L05 program](A274072.asm)): a(n) = 5^n-(-1)^n.
 * [A274073](http://oeis.org/A274073) ([L06 program](A274073.asm)): a(n) = 6^n-(-1)^n.
 * [A274074](http://oeis.org/A274074) ([L13 program](A274074.asm)): a(n) = 6^n+(-1)^n.
