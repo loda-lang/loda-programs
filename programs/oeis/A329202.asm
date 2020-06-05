@@ -3,9 +3,6 @@
 
 add $0,1
 pow $0,2
-lpb $0,1
-  div $0,2
-  add $1,1
-  sub $0,1
-  add $0,1
-lpe
+mov $2,$0
+log $2,2
+mov $1,$2
