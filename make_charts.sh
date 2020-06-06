@@ -31,7 +31,7 @@ done
 
 cat << EOF > lengths.gp
 set terminal pngcairo font "arial,9" size 600,300
-set output 'lengths.png'
+set output 'stats/program_lengths.png'
 set boxwidth 0.75
 set style fill solid
 set xrange [0:40]
@@ -56,7 +56,7 @@ done
 echo "Generating count chart"
 cat << EOF > counts.gp
 set terminal pngcairo font "arial,9" size 600,300
-set output 'counts.png'
+set output 'stats/program_counts.png'
 set xdata time
 set timefmt "%Y-%m-%d %H:%M:%S"
 set format x "%b %Y"
