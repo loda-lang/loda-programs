@@ -296,7 +296,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309337](http://oeis.org/A309337) ([L08 program](A309337.asm)): a(n) = n^3 if n odd, 3*n^3/4 if n even.
 * [A309372](http://oeis.org/A309372) ([L11 program](A309372.asm)): a(n) = n^2 - n^3 + n^4.
 * [A309683](http://oeis.org/A309683) ([L20 program](A309683.asm)): Number of odd parts appearing among the smallest parts of the partitions of n into 3 parts.
-* [A309685](http://oeis.org/A309685) ([L12 program](A309685.asm)): Number of even parts appearing among the smallest parts of the partitions of n into 3 parts.
+* [A309685](http://oeis.org/A309685) ([L06 program](A309685.asm)): Number of even parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309687](http://oeis.org/A309687) ([L13 program](A309687.asm)): Number of odd parts appearing among the second largest parts of the partitions of n into 3 parts.
 * [A309689](http://oeis.org/A309689) ([L21 program](A309689.asm)): Number of even parts appearing among the second largest parts of the partitions of n into 3 parts.
 * [A309779](http://oeis.org/A309779) ([L03 program](A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
@@ -640,7 +640,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323218](http://oeis.org/A323218) ([L15 program](A323218.asm)): a(n) = (4*n^3 + 30*n^2 + 50*n)/3 + 1.
 * [A323221](http://oeis.org/A323221) ([L11 program](A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
 * [A323227](http://oeis.org/A323227) ([L07 program](A323227.asm)): a(n) = [x^n] (-x^4 + 2*x^3 - x^2 + 2*x - 1)/((x - 1)^2*(2*x - 1)).
-* [A323228](http://oeis.org/A323228) ([L07 program](A323228.asm)): a(n) = binomial(n + 4, n - 1) + 1.
+* [A323228](http://oeis.org/A323228) ([L05 program](A323228.asm)): a(n) = binomial(n + 4, n - 1) + 1.
 * [A323229](http://oeis.org/A323229) ([L10 program](A323229.asm)): a(n) = binomial(2*n, n+1) + 1.
 * [A323397](http://oeis.org/A323397) ([L13 program](A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323467](http://oeis.org/A323467) ([L10 program](A323467.asm)): Smallest number in row n of A323465.
