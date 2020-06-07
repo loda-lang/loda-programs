@@ -1,85 +1,12 @@
 ; A282413: Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 467", based on the 5-celled von Neumann neighborhood.
 ; 1,1,7,0,31,0,127,0,511,0,2047,0,8191,0,32767,0,131071,0,524287,0,2097151,0,8388607,0,33554431,0,134217727,0,536870911,0,2147483647,0,8589934591,0,34359738367,0,137438953471,0,549755813887,0,2199023255551,0,8796093022207,0,35184372088831,0,140737488355327,0,562949953421311,0
 
-mov $4,2
-mov $6,6
-mov $5,$4
-mov $1,2
-mov $3,$6
 mov $2,2
 lpb $0,1
-  gcd $4,$0
-  div $2,$4
-  mov $8,1
-  bin $2,4
-  mul $5,2
-  mov $7,$0
-  pow $7,$6
-  mul $5,$4
-  cmp $7,$0
-  mov $1,$0
-  sub $2,$4
-  sub $8,$8
-  bin $8,$6
-  mov $7,5
-  add $1,$6
-  fac $7
-  add $0,6
-  mul $5,$8
-  mod $4,6
-  add $2,7
-  sub $8,$3
-  mod $5,$0
-  mul $7,$4
-  mul $8,$0
-  mov $5,8
-  div $7,$7
-  sub $0,1
-  pow $2,3
-  sub $2,$2
-  mod $8,$1
-  pow $1,3
-  mul $8,$4
-  sub $5,$0
-  mov $3,8
-  gcd $6,3
-  gcd $4,8
-  sub $2,3
-  gcd $3,2
-  sub $7,$4
-  sub $3,1
-  sub $0,4
-  mov $5,$7
-  mul $2,$1
-  mul $1,$3
-  mov $1,$0
-  mul $5,2
-  pow $4,$0
-  bin $3,2
-  add $7,1
-  gcd $5,2
-  pow $7,$0
-  mul $5,4
-  add $3,1
-  div $6,$4
-  mul $2,$1
+  gcd $2,$0
+  add $0,1
+  pow $2,$0
   gcd $0,2
-  div $2,$0
-  mul $3,$7
-  pow $2,$7
-  mul $6,2
-  add $8,1
-  gcd $6,5
-  pow $5,4
-  sub $1,1
 lpe
-mul $0,8
-mul $8,$3
-mod $7,8
-gcd $0,3
-div $6,$0
-add $2,1
-mov $7,$0
-mov $5,$6
-mov $1,$4
+mov $1,$2
 sub $1,1

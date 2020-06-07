@@ -2364,6 +2364,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027766](http://oeis.org/A027766) ([L06 program](A027766.asm)): (n+1)*C(n+1,6).
 * [A027767](http://oeis.org/A027767) ([L08 program](A027767.asm)): a(n) = (n+1)*binomial(n+1,7).
 * [A027768](http://oeis.org/A027768) ([L06 program](A027768.asm)): (n+1)*C(n+1,8).
+* [A027779](http://oeis.org/A027779) ([L17 program](A027779.asm)): a(n) = 3*(n+1)*C(n+2,6).
 * [A027782](http://oeis.org/A027782) ([L12 program](A027782.asm)): a(n) = 9*(n+1)*binomial(n+2,9)/2.
 * [A027793](http://oeis.org/A027793) ([L15 program](A027793.asm)): a(n) = 28*(n+1)*C(n+3,8)/3.
 * [A027800](http://oeis.org/A027800) ([L09 program](A027800.asm)): a(n) = (n+1)*binomial(n+4, 4).
@@ -3296,6 +3297,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A045797](http://oeis.org/A045797) ([L17 program](A045797.asm)): Evenish numbers (prime to 10 and 10's digit is even).
 * [A045798](http://oeis.org/A045798) ([L17 program](A045798.asm)): Oddish numbers (prime to 10 and 10's digit is odd).
 * [A045804](http://oeis.org/A045804) ([L21 program](A045804.asm)): 4-ish numbers (end in 09, 41, 63, 87).
+* [A045807](http://oeis.org/A045807) ([L21 program](A045807.asm)): 7-ish numbers (end in 53, 71, 79, 97).
 * [A045809](http://oeis.org/A045809) ([L23 program](A045809.asm)): 9-ish numbers (end in 13, 37, 59, 91).
 * [A045883](http://oeis.org/A045883) ([L11 program](A045883.asm)): a(n) = ((3*n+1)*2^n - (-1)^n)/9.
 * [A045889](http://oeis.org/A045889) ([L09 program](A045889.asm)): Partial sums of A045618.
@@ -4616,7 +4618,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062123](http://oeis.org/A062123) ([L05 program](A062123.asm)): a(n) = 2 + 9*n*(1 + n)/2.
 * [A062124](http://oeis.org/A062124) ([L20 program](A062124.asm)): Fourth column of A046741.
 * [A062153](http://oeis.org/A062153) ([L03 program](A062153.asm)): a(n) = floor(log_3(n)).
-* [A062276](http://oeis.org/A062276) ([L12 program](A062276.asm)): a(n) = floor(n^(n+1) / (n+1)^n).
 * [A062289](http://oeis.org/A062289) ([L07 program](A062289.asm)): Numbers n such that n-th row in Pascal triangle contains an even number, i.e., A048967(n) > 0.
 * [A062317](http://oeis.org/A062317) ([L13 program](A062317.asm)): Numbers k such that 5*k-1 is a perfect square.
 * [A062318](http://oeis.org/A062318) ([L08 program](A062318.asm)): Numbers of the form 3^m - 1 or 2*3^m - 1; i.e., the union of sequences A048473 and A024023.

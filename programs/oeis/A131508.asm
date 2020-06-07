@@ -1,0 +1,86 @@
+; A131508: 2*A000027 (natural numbers) sandwiched by tripled A001477 (nonnegative numbers).
+; 0,0,0,2,1,1,1,4,2,2,2,6,3,3,3,8,4,4,4,10,5,5,5,12,6,6,6,14,7,7,7,16,8,8,8,18,9,9,9,20,10,10,10,22,11,11,11,24,12,12,12,26,13,13,13,28,14,14,14,30,15,15,15,32,16,16,16,34,17,17,17,36,18,18,18,38,19,19,19,40,20
+
+mov $3,8
+mov $2,6
+mov $4,$0
+mov $5,$0
+add $0,8
+add $5,5
+sub $3,4
+mov $8,$5
+pow $5,$2
+mov $6,2
+add $2,6
+div $3,8
+mov $5,5
+sub $4,$0
+div $0,4
+mov $6,0
+pow $3,7
+mul $4,2
+sub $2,7
+add $2,$3
+add $0,$0
+fac $2
+div $3,5
+add $3,$0
+add $0,6
+sub $5,8
+mov $7,$4
+mul $4,$8
+mul $2,8
+mov $1,8
+mul $0,$2
+lpb $2,$1
+  lpb $4,4
+    div $1,$8
+    mov $5,5
+    div $3,5
+    add $4,7
+    div $8,8
+    mov $1,$5
+    sub $6,4
+    sub $7,1
+    pow $1,$8
+    mul $6,7
+    sub $7,5
+    fac $8
+    div $0,2
+    sub $7,2
+    div $4,$0
+    fac $5
+    div $0,$1
+    mul $1,$2
+    mov $4,$7
+    div $1,3
+    div $2,4
+    mul $0,2
+    sub $8,$2
+    mod $4,3
+    mod $8,$2
+  lpe
+  sub $1,3
+  sub $2,2
+lpe
+add $7,$8
+div $7,$3
+gcd $0,6
+mov $2,6
+sub $5,2
+mul $1,$3
+mul $7,$3
+pow $6,4
+pow $6,$0
+mov $4,4
+div $2,$3
+lpb $4,1
+  mul $4,$5
+  mov $8,$7
+  gcd $0,$5
+  mov $0,$7
+lpe
+mov $1,$3
+mov $1,$0
+sub $1,4
+div $1,2

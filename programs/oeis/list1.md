@@ -271,7 +271,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104407](http://oeis.org/A104407) ([L05 program](A104407.asm)): Number of hamiltonian groups of order <= n.
 * [A104449](http://oeis.org/A104449) ([L08 program](A104449.asm)): Fibonacci sequence with initial values a(0) = 3 and a(1) = 1.
 * [A104473](http://oeis.org/A104473) ([L27 program](A104473.asm)): a(n) = binomial(n+2,2)*binomial(n+6,2).
-* [A104475](http://oeis.org/A104475) ([L06 program](A104475.asm)): a(n) = binomial(n+4,4) * binomial(n+8,4).
+* [A104475](http://oeis.org/A104475) ([L04 program](A104475.asm)): a(n) = binomial(n+4,4) * binomial(n+8,4).
 * [A104563](http://oeis.org/A104563) ([L10 program](A104563.asm)): A floretion-generated sequence relating to centered square numbers.
 * [A104584](http://oeis.org/A104584) ([L07 program](A104584.asm)): (1/2) * ( 3*n^2 + n*(-1)^n ).
 * [A104585](http://oeis.org/A104585) ([L08 program](A104585.asm)): (1/2) * ( 3*n^2 - n*(-1)^n ).
@@ -1591,7 +1591,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133263](http://oeis.org/A133263) ([L07 program](A133263.asm)): Binomial transform of (1, 2, 0, 1, -1, 1, -1, 1, ...).
 * [A133265](http://oeis.org/A133265) ([L05 program](A133265.asm)): Diagonal of the A135356 triangle.
 * [A133280](http://oeis.org/A133280) ([L08 program](A133280.asm)): Triangle formed by: 1 even, 2 odd, 3 even, 4 odd, ... starting with zero.
-* [A133292](http://oeis.org/A133292) ([L06 program](A133292.asm)): Period 9: repeat [1, 1, 2, 4, 7, 2, 7, 4, 2].
+* [A133292](http://oeis.org/A133292) ([L04 program](A133292.asm)): Period 9: repeat [1, 1, 2, 4, 7, 2, 7, 4, 2].
 * [A133310](http://oeis.org/A133310) ([L09 program](A133310.asm)): a(3n) = 2n+1, a(3n+1) = 2n+2, a(3n+2) = 2n+1.
 * [A133368](http://oeis.org/A133368) ([L05 program](A133368.asm)): Period 5: 1, 1, 3, 7, 3.
 * [A133390](http://oeis.org/A133390) ([L25 program](A133390.asm)): Period 18: repeat 1, 4, 7, 2, 2, 5, 4, 1, 1, 8, 5, 2, 7, 7, 4, 5, 8, 8.

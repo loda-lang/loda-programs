@@ -3,7 +3,5 @@
 
 bin $0,2
 mod $0,9
-mul $0,8
 mov $1,$0
-div $1,8
 add $1,1

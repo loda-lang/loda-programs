@@ -703,6 +703,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328979](http://oeis.org/A328979) ([L04 program](A328979.asm)): Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
 * [A328990](http://oeis.org/A328990) ([L13 program](A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A329193](http://oeis.org/A329193) ([L14 program](A329193.asm)): a(n) = floor(log_2(n^3)) = floor(3 log_2(n))
+* [A329194](http://oeis.org/A329194) ([L06 program](A329194.asm)): a(n) = floor(log_3(n^2)) = floor(2 log_3(n))
 * [A329195](http://oeis.org/A329195) ([L06 program](A329195.asm)): a(n) = floor(log_5(n^2)) = floor(2 log_5(n))
 * [A329199](http://oeis.org/A329199) ([L07 program](A329199.asm)): a(n) = round(log_3(n)).
 * [A329202](http://oeis.org/A329202) ([L05 program](A329202.asm)): a(n) = floor(2*log_2(n)) = floor(log_2(n^2)).
@@ -718,6 +719,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329516](http://oeis.org/A329516) ([L15 program](A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
 * [A329523](http://oeis.org/A329523) ([L12 program](A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
 * [A329530](http://oeis.org/A329530) ([L42 program](A329530.asm)): a(n) = n * (7*binomial(n, 2) + 1).
+* [A329598](http://oeis.org/A329598) ([L57 program](A329598.asm)): Partial sums of the nontriangular numbers (A014132).
 * [A329624](http://oeis.org/A329624) ([L03 program](A329624.asm)): Number of iterations of A329623 for starting value n before a repeated value appears, or -1 if this never happens.
 * [A329670](http://oeis.org/A329670) ([L04 program](A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
 * [A329677](http://oeis.org/A329677) ([L06 program](A329677.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD, and DH.

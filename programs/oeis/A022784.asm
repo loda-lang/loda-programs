@@ -1,0 +1,146 @@
+; A022784: Place where n-th 1 occurs in A023122.
+; 1,3,6,10,15,22,30,39,49,61,74,88,103,119,137,156,176,197,220,244,269,295,322,351,381,412,444,478,513,549,586,624,664,705,747,790,835,881,928,976,1025,1076,1128,1181,1235,1291,1348,1406,1465,1526
+
+mov $21,$0
+mov $23,$0
+add $23,1
+lpb $23,1
+  clr $0,21
+  sub $23,1
+  mov $0,$21
+  sub $0,$23
+  mov $18,$0
+  mov $20,$0
+  add $20,1
+  lpb $20,1
+    clr $0,18
+    sub $20,1
+    mov $0,$18
+    sub $0,$20
+    mov $14,$0
+    mov $16,2
+    lpb $16,1
+      clr $0,14
+      sub $16,1
+      mov $0,$14
+      add $0,$16
+      sub $0,1
+      mov $4,4
+      add $4,$0
+      mov $2,1
+      mov $10,2
+      mov $6,$2
+      div $0,10
+      mov $7,$2
+      mov $8,$10
+      mov $3,5
+      add $4,3
+      mov $5,2
+      mul $6,2
+      mov $1,$7
+      div $2,$10
+      mov $10,10
+      div $3,$8
+      sub $4,$0
+      mov $9,4
+      add $0,$1
+      add $0,1
+      lpb $7,7
+        fac $8
+        gcd $0,2
+        mod $0,$9
+        cmp $7,$5
+        mov $9,8
+        div $10,$10
+        mul $5,9
+        mov $5,6
+        mul $10,4
+        pow $2,9
+        div $7,$5
+        mul $5,2
+        mov $5,$8
+        mul $9,$9
+        mul $9,5
+        mul $9,3
+        sub $3,$7
+        mul $8,$4
+        mov $2,6
+        mov $4,$3
+        add $9,$7
+        add $1,$3
+        mov $7,6
+        add $0,$2
+        mod $1,8
+        sub $9,2
+        mov $6,$2
+        div $3,2
+        log $6,4
+        gcd $3,2
+        div $3,9
+        mul $3,2
+        mov $1,$0
+        cmp $6,3
+        fac $4
+        add $1,3
+        div $4,2
+        sub $9,6
+        mul $6,2
+      lpe
+      mov $6,8
+      add $8,$3
+      sub $1,9
+      mul $3,2
+      mov $10,9
+      add $10,7
+      sub $4,8
+      sub $0,$4
+      mod $6,$3
+      mul $9,2
+      add $2,$0
+      mul $10,8
+      fac $5
+      add $2,$10
+      add $10,$8
+      add $6,$2
+      add $2,$5
+      gcd $9,2
+      cmp $10,$10
+      sub $7,$0
+      mov $6,7
+      sub $0,3
+      mul $9,$6
+      div $4,$3
+      add $1,$0
+      pow $1,$10
+      mul $0,$8
+      pow $5,$7
+      mod $1,7
+      mul $9,$4
+      pow $3,5
+      div $6,3
+      mov $0,0
+      mul $0,6
+      mov $1,1
+      div $5,$2
+      bin $2,5
+      mov $2,2
+      add $0,$6
+      mov $1,$4
+      mov $17,$16
+      lpb $17,1
+        mov $15,$1
+        sub $17,1
+      lpe
+    lpe
+    lpb $14,1
+      sub $15,$1
+      mov $14,0
+    lpe
+    mov $1,$15
+    add $1,1
+    add $19,$1
+  lpe
+  mov $1,$19
+  add $22,$1
+lpe
+mov $1,$22
