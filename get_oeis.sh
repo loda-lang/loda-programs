@@ -14,7 +14,7 @@ for name in stripped names; do
   if [ -f ${oeis_dir}/${name} ]; then
     rm ${oeis_dir}/${name}
   fi
-  wget -nv -O ${oeis_dir}/${name}.gz http://oeis.org/${name}.gz
+  wget -nv -O ${oeis_dir}/${name}.gz https://oeis.org/${name}.gz
   gzip -d ${oeis_dir}/${name}.gz
 done
 
@@ -29,7 +29,7 @@ function get_bfile {
   bname=${bname/U/b}
   bfile=${oeis_dir}/b/${bname}.txt
   if [ ! -f "${bfile}" ]; then
-    wget -nv -O ${bfile} http://oeis.org/${aname}/${bname}.txt
+    wget -nv -O ${bfile} https://oeis.org/${aname}/${bname}.txt
   fi
 }
 
