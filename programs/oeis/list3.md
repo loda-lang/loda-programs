@@ -25,7 +25,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301292](http://oeis.org/A301292) ([L09 program](A301292.asm)): Partial sums of A301291.
 * [A301293](http://oeis.org/A301293) ([L13 program](A301293.asm)): Expansion of (x^2+x+1)^2 / ((x^2+1)*(x-1)^2).
 * [A301294](http://oeis.org/A301294) ([L14 program](A301294.asm)): Partial sums of A301293.
-* [A301298](http://oeis.org/A301298) ([L09 program](A301298.asm)): Expansion of (1 + 4*x + 4*x^2 + 4*x^3 + x^4)/((1 - x)*(1 - x^3)).
+* [A301298](http://oeis.org/A301298) ([L08 program](A301298.asm)): Expansion of (1 + 4*x + 4*x^2 + 4*x^3 + x^4)/((1 - x)*(1 - x^3)).
 * [A301337](http://oeis.org/A301337) ([L15 program](A301337.asm)): Number of steps required in the worst case for two knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A301383](http://oeis.org/A301383) ([L16 program](A301383.asm)): Expansion of (1 + 3*x - 2*x^2)/(1 - 7*x + 7*x^2 - x^3).
 * [A301426](http://oeis.org/A301426) ([L11 program](A301426.asm)): Number of steps required in the worst case for three knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
@@ -796,7 +796,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332519](http://oeis.org/A332519) ([L04 program](A332519.asm)): a(n) = 4*(n^2+n-2).
 * [A332697](http://oeis.org/A332697) ([L41 program](A332697.asm)): a(n) = (n^4 + 5*n^3 + 11*n^2 + 7*n)/6.
 * [A332698](http://oeis.org/A332698) ([L42 program](A332698.asm)): a(n) = (8*n^3 + 15*n^2 + 13*n)/6.
-* [A332756](http://oeis.org/A332756) ([L08 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
+* [A332756](http://oeis.org/A332756) ([L06 program](A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
 * [A333525](http://oeis.org/A333525) ([L05 program](A333525.asm)): Degree of polytope representing the number n.
 * [A333574](http://oeis.org/A333574) ([L12 program](A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.
 * [A333616](http://oeis.org/A333616) ([L22 program](A333616.asm)): Expansion of x*(1 + 2*x + x^2 - 4*x^3 - x^4 + 2*x^5)/((1 - x)^3*(1 + x)^2).

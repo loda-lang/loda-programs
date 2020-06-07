@@ -1,0 +1,86 @@
+; A008646: Molien series for cyclic group of order 5.
+; 1,1,3,7,14,26,42,66,99,143,201,273,364,476,612,776,969,1197,1463,1771,2126,2530,2990,3510,4095,4751,5481,6293,7192,8184,9276,10472,11781,13209,14763,16451,18278,20254,22386,24682,27151,29799,32637,35673
+
+mov $8,2
+mov $3,$8
+add $8,7
+mov $8,6
+mov $7,2
+add $0,4
+gcd $8,$0
+mov $5,$8
+mov $3,$3
+log $8,$3
+cmp $8,$3
+add $7,$8
+mov $2,2
+bin $0,4
+mov $6,8
+sub $6,1
+mul $5,$8
+add $6,4
+mov $8,7
+mov $1,$7
+sub $6,2
+sub $3,$7
+fac $7
+mod $5,7
+mov $4,$6
+fac $3
+mov $5,6
+div $1,$1
+sub $8,4
+sub $8,$1
+add $0,$4
+mov $5,7
+fac $6
+add $7,4
+add $2,$0
+sub $7,3
+lpb $0,1
+  mov $3,8
+  fac $1
+  div $2,$0
+  mul $7,5
+  fac $1
+  div $3,$5
+  mov $5,$1
+  fac $2
+  mov $3,0
+  gcd $7,2
+  add $5,$6
+  mov $8,$4
+  mul $1,$1
+  sub $0,1
+  add $1,6
+  mov $2,$1
+  div $5,2
+  mul $1,3
+  mul $0,2
+  mov $1,0
+  mul $8,6
+  add $8,3
+  sub $7,$3
+  mov $2,5
+  cmp $3,$6
+  div $3,8
+  mul $4,$2
+  div $1,$4
+  add $2,$2
+  mul $0,2
+  sub $3,$2
+  add $4,$6
+  div $3,2
+lpe
+div $5,$5
+fac $5
+div $5,$4
+sub $8,6
+gcd $1,$0
+fac $4
+mul $8,$8
+div $0,5
+pow $5,5
+mov $1,$0
+sub $1,2
+add $1,1
