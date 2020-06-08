@@ -2892,6 +2892,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A299259](http://oeis.org/A299259) ([L15 program](A299259.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 4.8.8 2D tiling (cf. A008576).
 * [A299279](http://oeis.org/A299279) ([L30 program](A299279.asm)): Coordination sequence for "reo" 3D uniform tiling.
 * [A299283](http://oeis.org/A299283) ([L28 program](A299283.asm)): Coordination sequence for "svh" 3D uniform tiling.
+* [A299285](http://oeis.org/A299285) ([L17 program](A299285.asm)): Coordination sequence for "tea" 3D uniform tiling.
 * [A299287](http://oeis.org/A299287) ([L23 program](A299287.asm)): Coordination sequence for "tcd" 3D uniform tiling.
 * [A299289](http://oeis.org/A299289) ([L15 program](A299289.asm)): Coordination sequence for "tsi" 3D uniform tiling.
 * [A299290](http://oeis.org/A299290) ([L46 program](A299290.asm)): Partial sums of A299289.

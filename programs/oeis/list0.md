@@ -63,7 +63,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000447](http://oeis.org/A000447) ([L07 program](A000447.asm)): a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2*n-1)^2 = n*(4*n^2 - 1)/3.
 * [A000463](http://oeis.org/A000463) ([L07 program](A000463.asm)): n followed by n^2.
 * [A000520](http://oeis.org/A000520) ([L19 program](A000520.asm)): Nearest integer to log_10(n).
-* [A000523](http://oeis.org/A000523) ([L05 program](A000523.asm)): a(n) = floor(log_2(n)).
+* [A000523](http://oeis.org/A000523) ([L04 program](A000523.asm)): a(n) = floor(log_2(n)).
 * [A000537](http://oeis.org/A000537) ([L05 program](A000537.asm)): Sum of first n cubes; or n-th triangular number squared.
 * [A000538](http://oeis.org/A000538) ([L16 program](A000538.asm)): Sum of fourth powers: 0^4 + 1^4 + ... + n^4.
 * [A000561](http://oeis.org/A000561) ([L18 program](A000561.asm)): Number of discordant permutations.
@@ -180,6 +180,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001700](http://oeis.org/A001700) ([L09 program](A001700.asm)): a(n) = binomial(2n+1, n+1): number of ways to put n+1 indistinguishable balls into n+1 distinguishable boxes = number of (n+1)-st degree monomials in n+1 variables = number of monotone maps from 1..n+1 to 1..n+1.
 * [A001701](http://oeis.org/A001701) ([L10 program](A001701.asm)): Generalized Stirling numbers.
 * [A001752](http://oeis.org/A001752) ([L34 program](A001752.asm)): Expansion of 1/((1+x)*(1-x)^5).
+* [A001768](http://oeis.org/A001768) ([L19 program](A001768.asm)): Sorting numbers: number of comparisons for merge insertion sort of n elements.
 * [A001787](http://oeis.org/A001787) ([L04 program](A001787.asm)): a(n) = n*2^(n-1).
 * [A001788](http://oeis.org/A001788) ([L09 program](A001788.asm)): a(n) = n*(n+1)*2^(n-2).
 * [A001791](http://oeis.org/A001791) ([L09 program](A001791.asm)): a(n) = binomial coefficient C(2n, n-1).
@@ -613,6 +614,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006416](http://oeis.org/A006416) ([L09 program](A006416.asm)): Number of rooted planar maps. Also a(n)=T(4,n-3), array T as in A049600.
 * [A006446](http://oeis.org/A006446) ([L08 program](A006446.asm)): Numbers n such that floor(sqrt(n)) divides n.
 * [A006463](http://oeis.org/A006463) ([L05 program](A006463.asm)): Convolve natural numbers with characteristic function of triangular numbers.
+* [A006470](http://oeis.org/A006470) ([L18 program](A006470.asm)): Number of rooted planar maps.
 * [A006483](http://oeis.org/A006483) ([L14 program](A006483.asm)): a(n) = Fibonacci(n)*2^n + 1.
 * [A006484](http://oeis.org/A006484) ([L14 program](A006484.asm)): a(n) = n*(n + 1)*(n^2 - 3*n + 5)/6.
 * [A006490](http://oeis.org/A006490) ([L09 program](A006490.asm)): a(1) = 1, a(2) = 0; for n > 2, a(n) = n*Fibonacci(n-2) (with the convention Fibonacci(0)=0, Fibonacci(1)=1).
@@ -1118,7 +1120,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011867](http://oeis.org/A011867) ([L04 program](A011867.asm)): a(n) = floor(n*(n-1)/14).
 * [A011868](http://oeis.org/A011868) ([L07 program](A011868.asm)): [ n(n-1)/15 ].
 * [A011869](http://oeis.org/A011869) ([L03 program](A011869.asm)): a(n) = floor(n*(n-1)/16).
-* [A011871](http://oeis.org/A011871) ([L05 program](A011871.asm)): [ n(n-1)/18 ].
+* [A011871](http://oeis.org/A011871) ([L04 program](A011871.asm)): [ n(n-1)/18 ].
 * [A011872](http://oeis.org/A011872) ([L04 program](A011872.asm)): [ n(n-1)/19 ].
 * [A011873](http://oeis.org/A011873) ([L05 program](A011873.asm)): a(n) = floor(n(n-1)/20).
 * [A011874](http://oeis.org/A011874) ([L18 program](A011874.asm)): [ n(n-1)/21 ].
@@ -2371,6 +2373,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027779](http://oeis.org/A027779) ([L17 program](A027779.asm)): a(n) = 3*(n+1)*C(n+2,6).
 * [A027781](http://oeis.org/A027781) ([L10 program](A027781.asm)): 4*(n+1)*C(n+2,8).
 * [A027782](http://oeis.org/A027782) ([L12 program](A027782.asm)): a(n) = 9*(n+1)*binomial(n+2,9)/2.
+* [A027789](http://oeis.org/A027789) ([L19 program](A027789.asm)): a(n) = 2*(n+1)*binomial(n+3,4).
 * [A027793](http://oeis.org/A027793) ([L15 program](A027793.asm)): a(n) = 28*(n+1)*C(n+3,8)/3.
 * [A027800](http://oeis.org/A027800) ([L09 program](A027800.asm)): a(n) = (n+1)*binomial(n+4, 4).
 * [A027806](http://oeis.org/A027806) ([L12 program](A027806.asm)): 30*(n+1)*C(n+4,10).
@@ -2606,7 +2609,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033340](http://oeis.org/A033340) ([L03 program](A033340.asm)): [ 20/n ].
 * [A033341](http://oeis.org/A033341) ([L04 program](A033341.asm)): [ 21/n ].
 * [A033342](http://oeis.org/A033342) ([L14 program](A033342.asm)): [ 22/n ].
-* [A033343](http://oeis.org/A033343) ([L17 program](A033343.asm)): [ 23/n ].
+* [A033343](http://oeis.org/A033343) ([L05 program](A033343.asm)): [ 23/n ].
 * [A033344](http://oeis.org/A033344) ([L04 program](A033344.asm)): [ 24/n ].
 * [A033345](http://oeis.org/A033345) ([L04 program](A033345.asm)): [ 25/n ].
 * [A033346](http://oeis.org/A033346) ([L03 program](A033346.asm)): [ 26/n ].
@@ -2836,7 +2839,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036405](http://oeis.org/A036405) ([L04 program](A036405.asm)): a(n) = ceiling(n^2/7).
 * [A036406](http://oeis.org/A036406) ([L04 program](A036406.asm)): a(n) = ceiling(n^2/8).
 * [A036407](http://oeis.org/A036407) ([L04 program](A036407.asm)): a(n) = ceiling(n^2/9).
-* [A036408](http://oeis.org/A036408) ([L13 program](A036408.asm)): a(n) = ceiling(n^2/10).
+* [A036408](http://oeis.org/A036408) ([L05 program](A036408.asm)): a(n) = ceiling(n^2/10).
 * [A036409](http://oeis.org/A036409) ([L14 program](A036409.asm)): a(n) = ceiling(n^2/11).
 * [A036410](http://oeis.org/A036410) ([L14 program](A036410.asm)): G.f.: (1+x^6)/((1-x)*(1-x^3)*(1-x^4)).
 * [A036453](http://oeis.org/A036453) ([L02 program](A036453.asm)): a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function with initial value n.
@@ -3782,6 +3785,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048005](http://oeis.org/A048005) ([L05 program](A048005.asm)): Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-1)/3.
 * [A048038](http://oeis.org/A048038) ([L09 program](A048038.asm)): Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n+1)/3.
 * [A048058](http://oeis.org/A048058) ([L04 program](A048058.asm)): a(n) = n^2 + n + 11.
+* [A048060](http://oeis.org/A048060) ([L10 program](A048060.asm)): Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-4)/2.
 * [A048071](http://oeis.org/A048071) ([L16 program](A048071.asm)): Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n+2)/3.
 * [A048151](http://oeis.org/A048151) ([L07 program](A048151.asm)): Triangular array T read by rows: T(n,k)=k mod n, for k=1,2,...,n, n=1,2,...
 * [A048260](http://oeis.org/A048260) ([L21 program](A048260.asm)): The sum of 2 (not necessarily distinct) abundant numbers.
@@ -4081,7 +4085,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A053132](http://oeis.org/A053132) ([L09 program](A053132.asm)): One half of binomial coefficients C(2*n-4,5).
 * [A053133](http://oeis.org/A053133) ([L08 program](A053133.asm)): One half of binomial coefficients binomial(2*n-8,9).
 * [A053134](http://oeis.org/A053134) ([L04 program](A053134.asm)): Binomial coefficients C(2*n+4,4).
-* [A053135](http://oeis.org/A053135) ([L08 program](A053135.asm)): Binomial coefficients C(2*n+6,6).
+* [A053135](http://oeis.org/A053135) ([L05 program](A053135.asm)): Binomial coefficients C(2*n+6,6).
 * [A053136](http://oeis.org/A053136) ([L07 program](A053136.asm)): Binomial coefficients C(2*n+7,7).
 * [A053137](http://oeis.org/A053137) ([L04 program](A053137.asm)): Binomial coefficients C(2*n+8,8).
 * [A053138](http://oeis.org/A053138) ([L04 program](A053138.asm)): Binomial coefficients C(2*n+9,9).

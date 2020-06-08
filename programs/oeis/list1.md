@@ -1541,7 +1541,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132750](http://oeis.org/A132750) ([L08 program](A132750.asm)): A132749 * [1, 2, 3, ...] = A007318 * A065190.
 * [A132753](http://oeis.org/A132753) ([L07 program](A132753.asm)): 2^(n+1) - n + 1.
 * [A132754](http://oeis.org/A132754) ([L05 program](A132754.asm)): a(n) = n*(n + 23)/2.
-* [A132755](http://oeis.org/A132755) ([L05 program](A132755.asm)): a(n) = n*(n + 25)/2.
+* [A132755](http://oeis.org/A132755) ([L04 program](A132755.asm)): a(n) = n*(n + 25)/2.
 * [A132756](http://oeis.org/A132756) ([L04 program](A132756.asm)): a(n) = n*(n + 27)/2.
 * [A132757](http://oeis.org/A132757) ([L05 program](A132757.asm)): a(n) = n(n+29)/2.
 * [A132758](http://oeis.org/A132758) ([L05 program](A132758.asm)): a(n) = n*(n + 31)/2.
@@ -1553,7 +1553,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132764](http://oeis.org/A132764) ([L04 program](A132764.asm)): a(n) = n(n+22).
 * [A132765](http://oeis.org/A132765) ([L06 program](A132765.asm)): a(n) = n*(n + 23).
 * [A132766](http://oeis.org/A132766) ([L04 program](A132766.asm)): a(n) = n*(n+24).
-* [A132767](http://oeis.org/A132767) ([L06 program](A132767.asm)): a(n) = n*(n + 25).
+* [A132767](http://oeis.org/A132767) ([L05 program](A132767.asm)): a(n) = n*(n + 25).
 * [A132768](http://oeis.org/A132768) ([L04 program](A132768.asm)): a(n) = n*(n + 26).
 * [A132769](http://oeis.org/A132769) ([L06 program](A132769.asm)): a(n) = n*(n + 27).
 * [A132770](http://oeis.org/A132770) ([L04 program](A132770.asm)): a(n) = n*(n + 28).
@@ -5266,7 +5266,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198635](http://oeis.org/A198635) ([L08 program](A198635.asm)): Total number of round trips, each of length 2*n on the graph P_5 (o-o-o-o-o).
 * [A198643](http://oeis.org/A198643) ([L05 program](A198643.asm)): 5*3^n-1.
 * [A198644](http://oeis.org/A198644) ([L05 program](A198644.asm)): 8*3^n-1.
-* [A198645](http://oeis.org/A198645) ([L05 program](A198645.asm)): 10*3^n-1.
+* [A198645](http://oeis.org/A198645) ([L04 program](A198645.asm)): 10*3^n-1.
 * [A198646](http://oeis.org/A198646) ([L05 program](A198646.asm)): 11*3^n-1.
 * [A198693](http://oeis.org/A198693) ([L05 program](A198693.asm)): 3*4^n-1
 * [A198694](http://oeis.org/A198694) ([L05 program](A198694.asm)): 7*4^n-1.
@@ -5341,6 +5341,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199705](http://oeis.org/A199705) ([L13 program](A199705.asm)): Number of -n..n arrays x(0..2) of 3 elements with zero sum and no two neighbors equal.
 * [A199771](http://oeis.org/A199771) ([L17 program](A199771.asm)): Row sums of the triangle in A199332.
 * [A199833](http://oeis.org/A199833) ([L05 program](A199833.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two neighbors summing to zero
+* [A199848](http://oeis.org/A199848) ([L67 program](A199848.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum and no element more than one greater than the previous.
 * [A199899](http://oeis.org/A199899) ([L14 program](A199899.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum, and adjacent elements not both strictly positive and not both strictly negative.
 * [A199910](http://oeis.org/A199910) ([L06 program](A199910.asm)): Number of -n..n arrays x(0..2) of 3 elements with zero sum, and adjacent elements not equal modulo three (with -1 modulo 3 = 2).
 * [A199923](http://oeis.org/A199923) ([L10 program](A199923.asm)): Sum_{0<=k<=3^(n-1)} gcd(k,3^(n-1)) for n > 0 and a(0) = 1.

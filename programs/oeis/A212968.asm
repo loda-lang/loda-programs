@@ -1,0 +1,108 @@
+; A212968: Number of (w,x,y) with all terms in {0,...,n} and w>=range{w,x,y}.
+; 1,5,17,38,75,127,203,300,429,585,781,1010,1287,1603,1975,2392,2873,3405,4009,4670,5411,6215,7107,8068,9125,10257,11493,12810,14239,15755,17391,19120,20977,22933,25025,27222,29563,32015,34619,37340
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $5,$0
+    mov $4,8
+    mov $6,5
+    mov $1,$0
+    mov $2,$6
+    mov $8,$6
+    add $8,$5
+    mov $2,$0
+    mov $7,4
+    mul $1,$1
+    add $0,$0
+    mod $1,4
+    add $5,$0
+    bin $8,5
+    pow $2,2
+    sub $7,$1
+    div $4,$7
+    mov $5,$7
+    lpb $2,1
+      add $7,6
+      mul $0,$5
+      add $1,4
+      add $1,$5
+      add $7,$2
+      cmp $2,$1
+      mul $1,$8
+      mod $2,8
+      add $6,$6
+      mov $3,5
+      fac $5
+      lpb $4,1
+        sub $4,$6
+        mov $1,$3
+        gcd $7,$5
+        mov $1,6
+        div $1,$1
+        add $4,1
+        add $7,$7
+        mul $6,4
+        add $8,$2
+        mov $7,$4
+        pow $2,$2
+      lpe
+      mul $6,$2
+      mul $7,$6
+      lpb $5,1
+        div $3,4
+        add $1,$4
+        mul $1,8
+        mul $4,6
+        sub $5,$6
+        fac $3
+        gcd $6,5
+        sub $0,2
+        pow $5,$0
+        add $6,1
+        mod $2,5
+        div $6,$4
+      lpe
+      lpb $6,1
+        pow $7,2
+        gcd $8,2
+        sub $6,$3
+        gcd $3,5
+        sub $6,$6
+      lpe
+      bin $4,$8
+      sub $5,1
+      sub $2,6
+      sub $2,1
+      sub $3,$5
+      add $7,$4
+      mul $6,$4
+      add $3,5
+    lpe
+    pow $4,2
+    add $3,4
+    add $3,1
+    mul $7,$3
+    mod $1,$4
+    mov $1,$0
+    div $1,2
+    add $1,1
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13
