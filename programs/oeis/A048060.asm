@@ -1,0 +1,105 @@
+; A048060: Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-4)/2.
+; 0,0,0,0,0,5,6,27,35,119,164,494,714,2001,3002,8007,12375,31823,50387,125969,203489,497419,817189,1961255,3268759,7726159,13037894,30421754,51895934,119759849,206253074,471435599,818809199
+
+mov $2,3
+mov $10,0
+sub $0,3
+mov $8,3
+mov $3,3
+div $2,10
+cmp $8,1
+mov $1,$0
+add $0,1
+fac $3
+mov $9,6
+mul $9,$10
+mov $2,2
+sub $2,1
+mul $9,$0
+mov $7,$10
+add $8,$7
+cmp $9,$9
+mul $2,$1
+bin $1,9
+add $0,3
+div $10,6
+mov $4,$9
+mod $8,3
+mul $10,$10
+mov $6,2
+fac $9
+mul $9,2
+mov $5,$8
+add $7,$2
+cmp $8,$7
+mul $1,2
+mul $9,$2
+mul $1,3
+mov $1,$10
+pow $10,2
+gcd $2,$6
+mul $7,$5
+add $10,$0
+mov $9,4
+mov $4,$10
+add $8,$4
+add $5,4
+mov $0,$1
+sub $7,6
+lpb $0,1
+  log $6,7
+  mul $1,5
+  mul $4,3
+  sub $5,1
+  fac $6
+  mul $7,5
+  pow $2,$8
+  mod $2,2
+  fac $2
+  cmp $4,0
+  gcd $10,9
+  gcd $9,$1
+  sub $0,1
+  mod $9,6
+  div $5,2
+  div $7,$3
+lpe
+mov $5,$6
+fac $6
+mod $5,9
+div $8,2
+sub $3,1
+mov $3,8
+pow $10,2
+mul $2,9
+mul $5,$10
+add $9,$5
+sub $1,$1
+div $5,$4
+mul $10,6
+add $2,9
+mul $1,$1
+sub $8,$6
+mov $9,3
+sub $9,5
+bin $4,$8
+add $7,1
+mul $1,$7
+gcd $3,2
+gcd $10,$10
+add $3,6
+sub $5,6
+add $10,$8
+add $2,$3
+mov $1,1
+sub $2,9
+sub $5,$6
+add $2,6
+sub $6,8
+mov $10,9
+pow $6,$1
+pow $10,6
+div $9,2
+div $2,3
+mov $1,$4
+sub $1,1
