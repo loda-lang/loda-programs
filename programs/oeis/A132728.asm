@@ -1,0 +1,87 @@
+; A132728: Triangle read by rows: row n contains n terms of the sequence 1, 7, 1, 7, ...
+; 1,1,7,1,7,1,1,7,1,7,1,7,1,7,1,1,7,1,7,1,7,1,7,1,7,1,7,1,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1
+
+mov $4,7
+mov $6,8
+mov $3,7
+mov $7,4
+mov $7,$3
+mov $1,2
+mov $7,7
+mov $5,6
+mov $2,8
+sub $4,$5
+add $5,6
+mov $1,6
+lpb $0,1
+  mov $4,2
+  gcd $5,$0
+  mov $8,$4
+  mov $1,$8
+  add $8,6
+  add $6,1
+  mov $4,$3
+  sub $2,7
+  sub $6,$2
+  sub $0,$2
+  add $4,1
+  add $2,$8
+  mov $7,$2
+  add $4,$5
+  add $1,1
+  mov $8,$1
+  mov $1,$7
+  mul $7,$8
+  mov $5,2
+  sub $0,1
+  mul $7,$3
+lpe
+sub $1,$4
+add $1,8
+add $5,$5
+mov $6,8
+mod $4,4
+mul $2,$8
+sub $1,$1
+mov $3,2
+mov $8,$1
+mov $8,$3
+gcd $2,8
+mov $2,0
+mov $5,$4
+sub $0,2
+sub $2,1
+mov $1,$7
+pow $4,$4
+sub $0,7
+mov $1,$4
+sub $5,5
+sub $3,$7
+mov $6,8
+add $7,$6
+add $0,3
+mov $1,$5
+mov $0,8
+add $5,$8
+mov $7,$3
+mov $2,6
+add $8,3
+add $6,$4
+mov $2,$0
+mov $3,$4
+mov $3,$5
+add $6,$0
+mov $8,$1
+pow $7,4
+mov $7,$2
+mov $5,$6
+sub $6,2
+add $2,1
+div $5,4
+add $0,1
+fac $1
+mov $1,$4
+sub $1,1
+div $1,3
+mul $1,6
+add $1,1

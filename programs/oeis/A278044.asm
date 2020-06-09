@@ -1,0 +1,106 @@
+; A278044: Length of tribonacci representation of n (cf. A278038).
+; 1,1,2,2,3,3,3,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+
+mov $1,8
+mov $5,$1
+pow $0,7
+mov $8,6
+mov $1,3
+add $1,10
+mov $2,0
+mov $7,$2
+mov $9,1
+mov $6,$7
+mov $1,$6
+mov $6,$1
+mov $2,$0
+mov $6,2
+cmp $6,3
+mov $2,$6
+add $6,5
+pow $2,$7
+mov $1,9
+add $0,1
+add $5,$9
+sub $2,$7
+lpb $2,1
+  lpb $4,1
+    div $6,2
+    mul $9,$9
+    sub $9,$1
+    sub $5,$5
+    mov $4,$5
+    mov $6,9
+    sub $5,6
+    mov $10,$1
+    mov $3,$10
+    mov $7,8
+    sub $7,5
+    mov $5,7
+    sub $4,$8
+    bin $4,9
+    mov $6,$7
+    sub $3,3
+    div $3,2
+    add $6,$4
+    add $10,$2
+    mov $1,$9
+  lpe
+  mov $9,$5
+  mov $8,$4
+  lpb $5,1
+    mov $2,5
+    add $10,8
+    mov $7,$1
+    sub $5,$8
+    add $2,3
+    mov $4,$2
+    sub $3,$9
+    add $6,1
+    add $9,1
+    mod $7,7
+  lpe
+  add $3,2
+  sub $5,$2
+  lpb $6,1
+    mov $1,10
+    sub $6,$8
+    fac $2
+    add $8,$6
+    mov $8,7
+    mov $5,$0
+    mov $10,$0
+    add $0,9
+    sub $2,8
+    mod $5,2
+    mod $7,8
+    sub $9,$4
+    bin $1,$7
+    add $1,$7
+  lpe
+  mov $10,$2
+  mov $8,6
+  mov $6,9
+  mov $9,$6
+  mov $4,1
+  add $6,$5
+  mul $2,$6
+  add $2,$6
+  sub $2,1
+  sub $1,9
+  mov $8,$6
+  add $5,$8
+  mul $1,$10
+  sub $4,$9
+lpe
+pow $1,2
+add $7,$3
+mov $3,6
+log $0,$1
+sub $4,5
+add $0,6
+sub $9,$9
+mov $10,9
+mov $1,$0
+sub $1,6
+add $1,1

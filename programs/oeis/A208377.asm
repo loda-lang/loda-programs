@@ -1,0 +1,168 @@
+; A208377: Number of n X 6 0..1 arrays avoiding 0 0 0 and 1 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
+; 26,676,2080,4212,7072,10660,14976,20020,25792,32292,39520,47476,56160,65572,75712,86580,98176,110500,123552,137332,151840,167076,183040,199732,217152,235300,254176,273780,294112,315172,336960,359476,382720
+
+mov $22,$0
+mov $24,$0
+add $24,1
+lpb $24,1
+  clr $0,22
+  sub $24,1
+  mov $0,$22
+  sub $0,$24
+  mov $19,$0
+  mov $21,$0
+  add $21,1
+  lpb $21,1
+    clr $0,19
+    sub $21,1
+    mov $0,$19
+    sub $0,$21
+    mov $15,$0
+    mov $17,2
+    lpb $17,1
+      clr $0,15
+      sub $17,1
+      mov $0,$15
+      add $0,$17
+      sub $0,1
+      mov $11,$0
+      mov $13,2
+      lpb $13,1
+        clr $0,11
+        sub $13,1
+        mov $0,$11
+        add $0,$13
+        sub $0,1
+        mov $10,7
+        mov $4,$10
+        mov $3,1
+        sub $3,1
+        mov $1,9
+        mov $6,9
+        add $1,$4
+        fac $3
+        mov $8,$3
+        mov $1,4
+        mov $7,$6
+        add $3,1
+        clr $1,5
+        mov $4,$6
+        mov $8,6
+        mov $2,$3
+        sub $7,$3
+        add $4,$4
+        mov $5,6
+        mov $10,0
+        mul $5,$0
+        mov $9,4
+        sub $7,$5
+        lpb $0,1
+          mov $2,2
+          sub $0,1
+          mov $2,6
+          div $10,$6
+          mov $3,$1
+          mul $4,$5
+          mov $9,$9
+          gcd $0,$4
+          add $8,$8
+          mov $0,10
+          mov $7,5
+          pow $10,$5
+          mov $1,$6
+          sub $6,7
+          mov $3,$3
+          add $5,4
+          mov $3,$9
+          sub $8,3
+          sub $3,$7
+          mov $7,$7
+          add $8,$1
+          mov $3,0
+          mul $7,9
+          add $4,3
+          add $9,4
+          mul $6,4
+          mov $8,2
+          mov $1,$10
+          add $1,2
+          add $5,10
+          add $2,8
+          mov $3,$2
+          sub $5,2
+          sub $5,$9
+          mov $4,0
+          mov $8,9
+          mov $3,$10
+          mov $9,4
+          mul $5,$5
+          mov $6,$2
+          sub $0,3
+          mov $4,$5
+          mov $1,7
+          mov $6,$7
+          add $4,8
+          mov $3,$3
+          sub $0,$8
+          mov $8,2
+          mov $3,10
+          add $6,1
+          mov $10,0
+          mov $9,6
+          mov $10,2
+          sub $9,$2
+          sub $3,6
+          mul $7,2
+          sub $4,$5
+          add $0,2
+          pow $0,4
+          mov $6,9
+          mov $0,$9
+          sub $3,$6
+          sub $4,$9
+          add $9,3
+          div $8,10
+          add $1,$0
+          mov $3,8
+          add $9,9
+          add $7,4
+          mov $4,$5
+          sub $0,$1
+          add $3,10
+          add $3,1
+          add $9,10
+        lpe
+        mov $8,$1
+        mov $1,$4
+        mov $14,$13
+        lpb $14,1
+          mov $12,$1
+          sub $14,1
+        lpe
+      lpe
+      lpb $11,1
+        sub $12,$1
+        mov $11,0
+      lpe
+      mov $1,$12
+      mov $18,$17
+      lpb $18,1
+        mov $16,$1
+        sub $18,1
+      lpe
+    lpe
+    lpb $15,1
+      sub $16,$1
+      mov $15,0
+    lpe
+    mov $1,$16
+    sub $1,18
+    div $1,2
+    mul $1,26
+    add $1,26
+    add $20,$1
+  lpe
+  mov $1,$20
+  add $23,$1
+lpe
+mov $1,$23

@@ -1,0 +1,146 @@
+; A007664: Reve's puzzle: number of moves needed to solve the Towers of Hanoi puzzle with 4 pegs and n disks, according to the Frame-Stewart algorithm.
+; 0,1,3,5,9,13,17,25,33,41,49,65,81,97,113,129,161,193,225,257,289,321,385,449,513,577,641,705,769,897,1025,1153,1281,1409,1537,1665,1793,2049,2305,2561,2817,3073,3329,3585,3841,4097,4609,5121,5633
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $11,$0
+    mov $13,2
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      add $0,$13
+      sub $0,1
+      mov $1,$0
+      mov $6,1
+      mov $7,$1
+      mov $7,$1
+      mov $10,4
+      mov $3,$6
+      sub $3,2
+      mov $5,$6
+      mov $8,$5
+      mov $4,7
+      pow $4,$5
+      add $6,10
+      mov $7,$6
+      mov $1,8
+      mov $2,$0
+      mov $9,$3
+      sub $1,$0
+      mov $4,$7
+      div $0,$5
+      add $9,$2
+      lpb $2,1
+        add $9,$6
+        add $9,$6
+        lpb $4,1
+          mul $2,$8
+          sub $4,$7
+          mul $1,6
+          mov $0,3
+          mov $5,$1
+        lpe
+        sub $6,$6
+        mov $1,3
+        add $10,6
+        mov $5,$0
+        mov $5,5
+        mov $3,3
+        mov $5,$2
+        mov $0,$10
+        mul $2,4
+        mov $4,3
+        mul $8,$4
+        mov $2,2
+        sub $9,$2
+        sub $7,6
+        sub $7,$0
+        mov $1,5
+        div $8,8
+        add $2,$0
+        lpb $5,1
+          mov $2,10
+          mov $2,$4
+          add $7,1
+          mov $10,6
+          mov $1,8
+          mov $10,$0
+          mul $1,10
+          sub $5,$7
+          gcd $1,$3
+          mov $1,$3
+          mov $10,7
+          gcd $4,4
+          add $0,$0
+          div $2,$0
+          mul $10,$2
+          mov $9,1
+        lpe
+        add $1,$7
+        mov $3,0
+        add $10,$8
+        lpb $6,1
+          sub $4,6
+          sub $6,$7
+          add $5,$6
+          add $6,1
+          add $6,$5
+          mov $8,$10
+          add $3,$4
+          mov $7,$8
+          sub $2,$9
+          add $1,$1
+          add $9,$0
+          mov $4,2
+          sub $8,$8
+        lpe
+        mov $9,$1
+        sub $5,9
+        mov $7,$10
+        sub $1,8
+        sub $2,1
+        div $4,5
+        mov $8,5
+        mov $8,$0
+        mov $10,5
+        add $6,$5
+        mov $4,4
+        mov $3,9
+      lpe
+      gcd $4,8
+      mov $2,5
+      add $6,$9
+      mov $1,$0
+      mov $14,$13
+      lpb $14,1
+        mov $12,$1
+        sub $14,1
+      lpe
+    lpe
+    lpb $11,1
+      sub $12,$1
+      mov $11,0
+    lpe
+    mov $1,$12
+    div $1,20
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19

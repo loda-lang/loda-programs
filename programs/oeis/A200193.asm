@@ -1,0 +1,140 @@
+; A200193: Number of -n..n arrays x(0..3) of 4 elements with zero sum, adjacent elements differing by more than one, and elements alternately increasing and decreasing.
+; 2,14,48,120,242,426,688,1040,1494,2066,2768,3612,4614,5786,7140,8692,10454,12438,14660,17132,19866,22878,26180,29784,33706,37958,42552,47504,52826,58530,64632,71144,78078,85450,93272,101556,110318,119570,129324
+
+mov $17,$0
+mov $19,$0
+add $19,1
+lpb $19,1
+  clr $0,17
+  sub $19,1
+  mov $0,$17
+  sub $0,$19
+  mov $14,$0
+  mov $16,$0
+  add $16,1
+  lpb $16,1
+    clr $0,14
+    sub $16,1
+    mov $0,$14
+    sub $0,$16
+    mov $11,$0
+    mov $13,$0
+    add $13,1
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      sub $0,$13
+      mov $4,$0
+      mov $6,$4
+      mov $5,$0
+      mov $9,$6
+      mov $4,$0
+      mov $6,5
+      mov $3,$6
+      mul $4,3
+      mov $0,$4
+      mov $2,$0
+      mov $8,2
+      mov $1,5
+      sub $8,$4
+      gcd $5,3
+      add $5,10
+      mov $7,6
+      mov $10,$0
+      mul $3,$1
+      add $6,1
+      mod $0,7
+      add $2,$1
+      add $1,5
+      add $0,3
+      lpb $2,1
+        lpb $4,1
+          mov $6,$10
+          mov $7,8
+          add $9,$1
+          sub $10,2
+          pow $4,7
+          mov $2,1
+          mul $0,5
+          add $2,1
+          add $2,$10
+          sub $0,$8
+          mul $1,10
+          mov $2,1
+          div $8,8
+          add $6,$8
+          mul $6,7
+          sub $6,1
+          sub $0,9
+          sub $4,$5
+          mov $8,$6
+          mov $1,9
+        lpe
+        mov $0,$9
+        mov $1,$2
+        add $2,$10
+        add $6,2
+        div $7,$1
+        lpb $5,1
+          add $3,$3
+          mov $8,$8
+          mov $7,$3
+          add $2,$5
+          mul $10,2
+          mod $10,2
+          add $9,8
+          add $9,5
+          mov $9,$7
+          log $2,$7
+          mov $1,$0
+          mov $1,$10
+          sub $5,$5
+          add $7,1
+          add $5,$3
+        lpe
+        gcd $4,10
+        mov $6,2
+        lpb $6,1
+          mov $4,$5
+          mul $10,$6
+          add $10,4
+          add $3,$9
+          mov $2,10
+          mov $6,7
+          sub $6,$5
+        lpe
+        add $0,$6
+        sub $7,$6
+        mov $2,8
+        mov $2,4
+        add $2,$6
+        mov $5,$1
+        mov $2,$4
+        sub $9,4
+        add $7,5
+        mov $3,$3
+        add $4,$10
+        mov $4,4
+        add $8,10
+        mov $6,1
+        sub $1,1
+        mov $0,1
+        sub $3,$4
+        mov $0,$2
+        sub $6,$9
+        sub $2,1
+      lpe
+      mov $1,$2
+      sub $1,5
+      mul $1,2
+      add $1,2
+      add $12,$1
+    lpe
+    mov $1,$12
+    add $15,$1
+  lpe
+  mov $1,$15
+  add $18,$1
+lpe
+mov $1,$18

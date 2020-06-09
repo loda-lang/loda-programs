@@ -1,0 +1,103 @@
+; A051924: a(n) = binomial(2*n,n) - binomial(2*n-2,n-1); or (3n-2)*C(n-1), where C = Catalan numbers (A000108).
+; 1,4,14,50,182,672,2508,9438,35750,136136,520676,1998724,7696444,29716000,115000920,445962870,1732525830,6741529080,26270128500,102501265020,400411345620,1565841089280,6129331763880,24014172955500
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $4,$0
+  mov $7,$0
+  mov $3,2
+  mov $0,4
+  mov $2,$0
+  mov $6,$3
+  add $0,$7
+  add $4,5
+  add $3,1
+  add $3,$4
+  sub $3,$0
+  mov $4,$3
+  mov $0,$0
+  mov $0,$7
+  mov $3,$0
+  mov $5,3
+  add $5,7
+  mov $1,7
+  add $3,$3
+  add $3,1
+  bin $3,$7
+  lpb $2,1
+    lpb $4,1
+      add $2,$1
+      sub $4,$3
+    lpe
+    bin $1,2
+    mov $1,$6
+    lpb $5,1
+      mov $6,$7
+      div $6,6
+      add $7,7
+      mov $0,8
+      sub $5,$3
+      mul $7,6
+      sub $2,$2
+      mov $5,6
+      pow $4,2
+      mov $8,5
+      add $5,3
+      mul $2,$5
+      add $6,2
+      add $7,4
+      mov $4,$7
+      add $1,1
+      add $0,7
+      mov $8,$3
+      add $4,$0
+      add $5,$2
+      mov $0,5
+      add $3,$8
+      mov $6,$0
+      add $7,3
+      mov $6,5
+    lpe
+    sub $5,3
+    lpb $6,1
+      mov $4,7
+      sub $6,$3
+      add $7,$6
+      mov $5,8
+      add $2,$3
+      mov $6,$7
+      add $1,$0
+      mul $3,5
+    lpe
+    sub $2,1
+    sub $3,1
+    sub $5,4
+    mov $0,$3
+    add $6,7
+    cmp $5,1
+    add $2,6
+    mov $6,$2
+    div $2,7
+    div $2,$7
+  lpe
+  mov $4,5
+  mul $4,3
+  add $4,4
+  mov $1,$0
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10

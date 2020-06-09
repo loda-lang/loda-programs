@@ -1,0 +1,88 @@
+; A235888: Number of (n+1) X (3+1) 0..3 arrays with the minimum plus the upper median equal to the lower median plus the maximum in every 2 X 2 subblock.
+; 352,568,1096,2536,6952,21928,76456,283816,1091752,4280488,16949416,67453096,269123752,1075118248,4297719976,17185374376,68730486952,274899927208,1099555668136,4398134591656,17592362205352,70369096499368
+
+mov $3,$0
+mov $3,2
+mov $5,$0
+mov $1,$3
+mov $7,$1
+add $3,$1
+pow $7,$5
+add $3,$7
+add $3,$1
+mov $6,$7
+mov $1,$5
+mov $0,$5
+add $6,1
+sub $0,8
+mov $2,$3
+add $2,$3
+mov $7,$7
+add $0,$3
+mov $3,$3
+mov $2,$1
+mul $2,$5
+add $6,$3
+mul $2,2
+lpb $0,1
+  add $3,$0
+  sub $5,$1
+  add $1,$2
+  mov $0,2
+  sub $0,$0
+  add $7,2
+  add $5,1
+  mov $5,$5
+  mov $2,3
+  mov $0,$6
+  add $5,2
+  add $7,6
+  sub $0,1
+  add $1,5
+  mov $8,$6
+  mov $4,5
+  mov $1,$5
+  div $2,8
+  mov $4,$7
+  gcd $3,$8
+  mov $1,3
+  mov $6,1
+  add $8,$2
+  mov $3,0
+  mov $7,$0
+  mov $5,3
+  mov $6,$8
+  sub $5,1
+  mov $6,0
+  mul $6,8
+  mul $7,2
+  mov $1,6
+  add $5,1
+  sub $5,$8
+lpe
+mov $5,$2
+pow $1,3
+div $1,$6
+add $5,$3
+mov $7,$6
+add $8,$4
+sub $1,$2
+add $5,$6
+mov $6,3
+add $7,2
+mov $8,$5
+mov $1,$4
+mov $6,8
+mov $4,4
+add $2,2
+mul $3,$7
+mov $2,$1
+add $4,6
+sub $3,$6
+add $4,5
+add $0,2
+mov $1,$3
+sub $1,69
+div $1,3
+mul $1,24
+add $1,352

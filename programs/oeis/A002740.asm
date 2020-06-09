@@ -1,0 +1,105 @@
+; A002740: Number of tree-rooted bridgeless planar maps with two vertices and n faces.
+; 0,0,0,2,15,84,420,1980,9009,40040,175032,755820,3233230,13728792,57946200,243374040,1017958725,4242920400,17631691440,73078721100,302202005490,1247182879800,5137916074200,21132472200840,86794082253450,356013544661424,1458583920435600,5969389748449400
+
+mov $1,$0
+mov $4,$1
+mov $3,$4
+add $1,8
+mov $6,$0
+mov $9,1
+mov $0,0
+sub $4,$0
+mov $9,6
+mov $2,8
+mov $8,1
+clr $9,7
+mov $4,$1
+add $8,$3
+mov $4,2
+sub $6,$9
+mov $10,1
+lpb $0,1
+  add $2,9
+  mov $10,2
+  mov $6,3
+  mov $0,$4
+  add $1,$8
+  sub $1,3
+  mov $2,$10
+  add $10,9
+  add $6,7
+  add $4,$8
+  mov $5,$1
+  mov $8,7
+  add $1,$0
+  mod $1,8
+  mov $8,$5
+  mov $7,2
+  add $2,$8
+  mov $1,$5
+  sub $3,$10
+  mov $9,$9
+  mov $9,5
+  sub $4,$4
+  sub $3,$3
+  mov $1,$0
+  add $8,$8
+  add $5,$0
+  mov $8,$0
+  pow $5,2
+  add $9,$8
+  mov $3,$0
+  mov $7,$6
+  sub $2,4
+  mul $1,2
+  mov $10,$9
+  mod $8,8
+  gcd $6,$0
+  sub $7,10
+  sub $4,6
+  add $4,$4
+  sub $0,1
+  add $2,1
+  pow $3,2
+  add $9,10
+  mul $3,9
+  mov $8,$8
+  mov $3,9
+  div $5,2
+  sub $7,$3
+  sub $7,7
+lpe
+sub $6,$0
+add $10,$0
+sub $8,$4
+add $10,10
+add $3,9
+mov $7,10
+sub $3,$10
+mul $5,9
+mov $10,9
+clr $4,$9
+sub $6,$7
+add $8,$8
+mov $4,$8
+mul $1,$9
+sub $1,$2
+mov $4,$2
+sub $0,$4
+add $0,$5
+bin $8,$3
+sub $9,$10
+sub $1,$9
+mov $9,$7
+sub $7,$6
+mov $2,7
+sub $7,$3
+mov $6,$10
+gcd $2,2
+mov $7,$7
+add $1,7
+sub $0,1
+mov $10,$10
+mul $3,$8
+mov $1,$3
+div $1,2

@@ -1,0 +1,86 @@
+; A282819: Number of inequivalent ways to color the edges of a tetrahedron using at most n colors so that no two opposite edges have the same color.
+; 0,0,2,22,152,680,2270,6202,14672,31152,60810,110990,191752,316472,502502,771890,1152160,1677152,2387922,3333702,4572920,6174280,8217902,10796522,14016752,18000400,22885850,28829502,36007272,44616152,54875830,67030370,81349952
+
+mov $1,$0
+mov $6,$1
+mov $4,$1
+sub $6,6
+mov $6,6
+add $1,$0
+mov $7,8
+bin $0,2
+mov $2,$1
+mov $6,6
+add $1,7
+mov $3,$0
+mov $1,4
+lpb $6,4
+  add $4,$7
+  add $2,$3
+  mul $0,2
+  sub $1,$6
+  mov $5,5
+  sub $3,$0
+  add $6,$2
+  mov $6,6
+  mov $2,$4
+  sub $4,5
+  lpb $2,5
+    mov $7,6
+    mul $4,6
+    add $1,$3
+    mov $7,$1
+    mov $5,$7
+    sub $4,$1
+    mov $2,$5
+    div $6,5
+    mov $2,7
+    mov $5,5
+    mov $5,6
+    sub $5,$3
+    mul $0,3
+    sub $7,3
+    add $4,$3
+    add $6,$4
+    add $7,7
+    sub $6,$4
+    mul $5,$7
+  lpe
+  mov $7,$7
+  mov $4,8
+  mov $6,7
+  mov $7,2
+  add $4,1
+  mov $5,$1
+  add $1,$0
+lpe
+mul $0,2
+mul $5,8
+mov $5,5
+mul $5,$3
+mov $7,3
+mov $8,7
+lpb $1,1
+  mov $1,2
+  add $0,$3
+  sub $4,2
+  mov $4,8
+  pow $3,$1
+  mov $2,$6
+  mov $5,$6
+  add $8,6
+  sub $1,$4
+  add $2,$7
+  mul $2,8
+  sub $5,$4
+lpe
+mov $6,$2
+add $4,$3
+add $3,2
+sub $1,$7
+mul $3,$0
+sub $2,$2
+mov $0,$0
+mov $1,$3
+div $1,9
+mul $1,2

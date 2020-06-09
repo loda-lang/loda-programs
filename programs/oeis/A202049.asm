@@ -1,0 +1,106 @@
+; A202049: Number of (n+2) X 7 binary arrays avoiding patterns 001 and 110 in rows and columns.
+; 966,3304,9170,22092,47950,95984,180054,320180,544390,890904,1410682,2170364,3255630,4775008,6864158,9690660,13459334,18418120,24864546,33152812,43701518,57002064,73627750,94243604,119616966,150628856
+
+mov $8,$0
+mov $6,$8
+mov $1,$0
+mov $2,1
+sub $6,5
+sub $2,$2
+mov $1,5
+mov $1,2
+mov $9,$1
+add $9,4
+add $6,$1
+mov $5,$2
+add $6,7
+add $0,9
+mov $6,$0
+mov $10,0
+add $9,4
+mov $8,0
+mov $5,7
+mov $4,$10
+add $2,$0
+mov $7,$0
+mov $8,9
+mov $4,$2
+mov $4,1
+add $1,1
+bin $2,7
+sub $5,6
+mov $3,$0
+add $3,$0
+pow $7,8
+add $10,$10
+mov $5,3
+lpb $0,1
+  add $0,10
+  mov $10,4
+  mov $10,$7
+  add $9,$1
+  add $3,8
+  add $4,$2
+  mov $4,3
+  mov $2,$8
+  add $8,$0
+  sub $10,8
+  mov $10,6
+  sub $0,1
+  add $7,$6
+  bin $0,$2
+  add $3,$0
+  mov $6,$1
+  add $0,7
+  pow $10,8
+  mov $8,$0
+  cmp $6,$0
+  mov $6,5
+  sub $2,$5
+  mov $8,$1
+  mov $3,$10
+  mul $9,10
+  add $9,5
+lpe
+mov $7,$4
+add $2,5
+add $2,$8
+mov $7,$3
+add $4,10
+mov $5,$7
+sub $5,$5
+sub $2,7
+sub $3,$0
+mov $7,$2
+add $2,$2
+mov $9,2
+add $8,$2
+bin $2,2
+add $5,10
+sub $4,9
+mov $4,$6
+mov $7,6
+add $7,$3
+mov $10,3
+mul $7,9
+mov $10,9
+gcd $1,4
+sub $10,1
+sub $6,10
+mov $10,4
+mul $1,$9
+mov $1,$8
+sub $3,3
+mul $0,$6
+div $5,8
+add $10,$0
+add $3,$8
+cmp $9,$10
+mov $2,7
+mov $10,8
+log $7,8
+sub $1,$4
+add $10,1
+sub $1,86
+mul $1,14
+add $1,966

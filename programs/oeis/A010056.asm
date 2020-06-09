@@ -1,0 +1,104 @@
+; A010056: Characteristic function of Fibonacci numbers: a(n) = 1 if n is a Fibonacci number, otherwise 0.
+; 1,1,1,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $6,$0
+  mov $1,2
+  mov $8,$0
+  mov $2,2
+  mov $8,$2
+  mov $0,1
+  sub $1,$6
+  mov $7,8
+  mov $3,1
+  mov $8,$0
+  mov $3,6
+  mul $0,$3
+  mov $7,2
+  mov $5,$6
+  div $8,$3
+  mov $3,0
+  gcd $8,$7
+  mul $1,$0
+  mov $7,2
+  sub $7,1
+  mov $4,$8
+  add $3,$4
+  mul $4,3
+  add $0,1
+  mov $3,5
+  pow $5,2
+  add $8,2
+  mov $1,0
+  add $7,5
+  div $6,2
+  mul $2,$5
+  add $7,$8
+  mov $6,7
+  mul $2,$0
+  mov $3,2
+  add $7,$4
+  sub $7,4
+  lpb $0,7
+    add $2,$0
+    sub $0,$3
+    mov $6,0
+    sub $8,$6
+    mov $4,6
+    mul $2,$8
+    mov $0,$4
+    add $6,$6
+    add $6,3
+    div $2,$3
+    add $2,7
+    mod $0,4
+    mov $0,7
+    add $4,1
+    mov $0,0
+    mov $7,0
+    mov $1,0
+  lpe
+  mov $1,8
+  add $6,$0
+  mul $2,$5
+  add $3,7
+  sub $8,1
+  mov $2,$2
+  mov $4,$3
+  mov $6,$7
+  add $6,1
+  mov $5,5
+  mov $5,$0
+  lpb $2,3
+    add $8,2
+    mul $8,7
+    sub $2,$8
+    mov $1,$6
+    add $5,7
+    mov $3,3
+  lpe
+  div $3,5
+  add $2,$6
+  mul $5,7
+  gcd $0,2
+  add $1,3
+  mov $1,$5
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
+div $1,49

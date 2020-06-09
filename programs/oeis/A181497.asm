@@ -1,0 +1,146 @@
+; A181497: a(n) is the smallest m such that A056753(m) = 2*n + 1.
+; 0,1,3,7,11,19,27,35,43,59,75,91,107,123,139,155,171,203,235,267,299,331,363,395,427,459,491,523,555,587,619,651,683,747,811,875,939,1003,1067,1131,1195,1259,1323,1387,1451,1515,1579,1643,1707,1771,1835,1899
+
+mov $21,$0
+mov $23,$0
+add $23,1
+lpb $23,1
+  clr $0,21
+  sub $23,1
+  mov $0,$21
+  sub $0,$23
+  mov $18,$0
+  mov $20,$0
+  add $20,1
+  lpb $20,1
+    clr $0,18
+    sub $20,1
+    mov $0,$18
+    sub $0,$20
+    mov $14,$0
+    mov $16,2
+    lpb $16,1
+      clr $0,14
+      sub $16,1
+      mov $0,$14
+      add $0,$16
+      sub $0,1
+      mov $3,4
+      mov $8,3
+      mov $2,6
+      mov $10,3
+      mul $0,$3
+      add $3,$2
+      mov $4,$0
+      mul $0,$3
+      mul $0,2
+      mov $2,$0
+      sub $3,9
+      sub $3,7
+      mov $7,9
+      mov $9,5
+      sub $4,$8
+      sub $0,1
+      mov $8,$3
+      mov $7,$0
+      mov $4,9
+      sub $3,9
+      mul $4,$8
+      mov $10,4
+      mov $7,6
+      mov $5,$4
+      div $10,8
+      mov $10,$5
+      mov $6,$0
+      mov $3,2
+      add $7,4
+      lpb $2,1
+        mov $3,5
+        add $0,4
+        mov $0,10
+        add $0,$5
+        add $6,$6
+        mul $5,$7
+        lpb $4,1
+          mov $9,2
+          mov $1,$4
+          mov $2,$6
+          sub $4,$2
+          sub $3,$4
+          add $10,8
+          mov $6,4
+          mov $5,$5
+          add $9,$4
+        lpe
+        add $10,6
+        mov $2,$2
+        mul $4,$3
+        mov $5,2
+        mov $4,$0
+        mul $5,$6
+        mov $10,$0
+        mov $2,$4
+        mov $6,3
+        sub $0,$5
+        mov $0,9
+        lpb $5,1
+          add $2,9
+          sub $5,$2
+          mul $10,2
+          mov $2,$10
+        lpe
+        sub $5,8
+        lpb $6,1
+          mul $6,$9
+          sub $10,$10
+          mul $9,$0
+          mov $3,6
+          mov $7,10
+          sub $6,$2
+          sub $10,$8
+          mov $0,10
+          mul $4,$10
+          add $9,$9
+          add $6,5
+          mov $3,$5
+        lpe
+        add $10,$10
+        add $5,10
+        mul $0,$10
+        pow $5,5
+        add $1,1
+        add $5,$7
+        sub $8,3
+        mov $2,$10
+        mov $9,2
+        mov $2,$1
+        clr $5,9
+        sub $2,1
+        div $2,$0
+        add $1,$1
+        mov $7,7
+        add $9,6
+        add $5,3
+      lpe
+      add $3,7
+      add $10,$3
+      add $10,$7
+      mov $1,$0
+      mov $17,$16
+      lpb $17,1
+        mov $15,$1
+        sub $17,1
+      lpe
+    lpe
+    lpb $14,1
+      sub $15,$1
+      mov $14,0
+    lpe
+    mov $1,$15
+    div $1,5760
+    add $19,$1
+  lpe
+  mov $1,$19
+  add $22,$1
+lpe
+mov $1,$22

@@ -1,0 +1,96 @@
+; A309684: Sum of the odd parts appearing among the smallest parts of the partitions of n into 3 parts.
+; 0,0,0,1,1,2,2,3,3,7,7,11,11,15,15,24,24,33,33,42,42,58,58,74,74,90,90,115,115,140,140,165,165,201,201,237,237,273,273,322,322,371,371,420,420,484,484,548,548,612,612,693,693,774,774,855,855,955,955
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $8,$0
+  mov $4,$0
+  mov $3,$8
+  mov $4,$3
+  mov $6,2
+  mov $1,$0
+  mov $1,$1
+  mov $7,1
+  mov $7,$3
+  add $1,5
+  bin $1,$4
+  mod $0,2
+  mov $7,$7
+  add $1,1
+  add $6,1
+  mov $2,$0
+  sub $4,$7
+  mov $6,$3
+  add $8,3
+  mov $3,1
+  mov $4,0
+  sub $3,2
+  add $6,2
+  mov $2,$8
+  lpb $0,1
+    add $3,$8
+    mov $5,2
+    gcd $8,8
+    add $4,$2
+    sub $8,$8
+    sub $1,$7
+    mov $4,$6
+    mov $7,$0
+    sub $2,4
+    add $5,1
+    mov $6,$3
+    add $5,$7
+    sub $8,$5
+    add $1,1
+    add $1,3
+    sub $0,1
+    mul $5,$0
+    mov $4,2
+    add $2,$6
+    mov $2,$4
+    mov $2,$2
+    add $8,$3
+    mov $7,$2
+    add $1,$4
+    mul $4,5
+    sub $3,$2
+    div $8,6
+    mov $2,$8
+    mul $5,$0
+    sub $4,$1
+    mov $6,$2
+    mov $0,$6
+    sub $8,$1
+    mul $2,$6
+    add $7,6
+    mov $4,7
+    sub $1,$5
+    sub $3,8
+    mov $8,$4
+    add $0,$8
+    cmp $7,0
+    mov $8,0
+    mov $7,3
+    sub $5,$2
+    mov $0,5
+    sub $0,$5
+    div $7,8
+    mov $6,$0
+    add $3,1
+    add $4,6
+    mov $0,$8
+    mov $4,$2
+    mov $2,$4
+  lpe
+  mul $4,2
+  mov $1,$4
+  div $1,2
+  add $10,$1
+lpe
+mov $1,$10

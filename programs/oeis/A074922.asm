@@ -1,0 +1,106 @@
+; A074922: Number of ways of arranging n chords on a circle (handshakes between 2n people across a table) with exactly 2 simple intersections.
+; 0,0,0,3,28,180,990,5005,24024,111384,503880,2238390,9806280,42493880,182530530,778439025,3300049200,13919756400,58462976880,244639718730,1020422356200,4244365452600,17610393500700,72907029092898
+
+mov $1,$0
+mov $2,$1
+sub $2,$2
+mov $9,$2
+mov $6,9
+mov $5,$1
+gcd $2,7
+add $9,$5
+mov $3,$1
+add $9,$3
+add $1,9
+mov $7,$9
+mov $8,9
+add $8,$1
+add $5,$1
+sub $1,$1
+mov $10,$0
+mov $3,$3
+mov $8,6
+bin $3,7
+mov $1,$6
+add $5,$3
+sub $6,3
+sub $3,5
+add $0,3
+sub $2,$6
+mov $10,$2
+mov $3,$0
+bin $9,$0
+mov $2,3
+add $1,1
+sub $5,$10
+mov $8,$1
+add $1,$0
+mul $5,$0
+mov $3,0
+pow $6,2
+mov $8,$0
+mov $3,9
+mul $9,$0
+mov $3,$9
+add $10,$7
+mov $4,4
+add $8,$0
+sub $9,2
+add $8,$7
+mov $1,6
+mov $7,9
+add $2,$6
+mov $10,0
+add $7,$6
+sub $4,$5
+add $6,1
+sub $2,6
+add $5,5
+sub $10,$4
+mov $1,10
+mov $0,8
+mov $0,$2
+mov $8,4
+add $7,$3
+add $0,$9
+sub $4,$10
+mov $10,6
+mod $5,$5
+sub $10,$5
+mul $5,$0
+mov $6,9
+lpb $0,1
+  div $10,5
+  add $3,6
+  mov $9,3
+  add $4,9
+  mov $1,$9
+  sub $1,$3
+  add $8,$5
+  sub $0,1
+  pow $5,7
+  add $10,9
+  add $7,1
+  sub $4,$4
+  div $5,4
+  add $2,9
+  mul $3,3
+  mov $5,$3
+  mov $7,$10
+  add $0,$3
+  add $7,$5
+  add $4,$2
+  mov $3,$10
+  mov $7,0
+  add $8,$10
+  mul $6,$0
+  add $4,$5
+  mov $0,$9
+  mov $6,$1
+  mov $8,$2
+  mov $5,$10
+  add $4,3
+lpe
+mov $1,$4
+sub $1,63
+div $1,6

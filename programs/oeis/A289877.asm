@@ -1,0 +1,108 @@
+; A289877: Number of maximal cliques in the n-triangular honeycomb queen graph.
+; 1,8,19,36,60,93,136,191,259,342,441,558,694,851,1030,1233,1461,1716,1999,2312,2656,3033,3444,3891,4375,4898,5461,6066,6714,7407,8146,8933,9769,10656,11595,12588,13636,14741,15904,17127
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    gcd $0,$0
+    mov $3,$0
+    mov $5,$0
+    mov $2,$3
+    mov $7,2
+    mov $6,0
+    mov $5,$2
+    sub $2,3
+    mov $7,$3
+    add $3,3
+    mov $1,$6
+    pow $7,$1
+    add $0,$0
+    mov $6,6
+    mov $8,$0
+    lpb $0,1
+      mov $6,4
+      mov $6,0
+      add $2,$0
+      sub $3,7
+      mov $3,$0
+      add $8,$0
+      div $8,4
+      mov $4,1
+      mov $2,$5
+      mov $5,$0
+      add $6,1
+      div $5,5
+      sub $2,$8
+      sub $0,1
+      mul $6,2
+      mov $5,6
+      sub $2,$8
+      add $8,4
+      sub $3,3
+      add $8,$7
+      sub $5,3
+      add $7,$2
+      sub $5,$6
+      cmp $8,8
+      mov $8,$6
+      mov $6,$6
+      sub $2,5
+      sub $5,$0
+      add $8,$4
+      mov $6,$2
+      sub $8,6
+      add $8,6
+      mov $3,$8
+      mov $8,7
+      mov $7,3
+      mov $7,6
+      pow $0,$7
+      add $1,$5
+      mov $6,6
+      add $4,$7
+      add $4,3
+      mov $8,$7
+      add $5,3
+    lpe
+    mul $3,3
+    mov $2,$7
+    gcd $8,5
+    sub $3,4
+    sub $6,$4
+    add $6,8
+    mov $4,5
+    mov $4,2
+    div $2,$7
+    add $8,3
+    mov $1,0
+    div $3,2
+    mul $6,$8
+    sub $8,$2
+    mov $4,$5
+    sub $4,$7
+    sub $1,1
+    mov $6,$4
+    sub $2,7
+    add $7,1
+    mov $1,$3
+    sub $1,2
+    add $1,1
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13

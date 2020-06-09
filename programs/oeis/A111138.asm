@@ -1,0 +1,116 @@
+; A111138: Let b(n) denote the number of nontriangular numbers less than or equal to n. Then a(n) = b(n-1) + a(b(n-1)), with a(1) = a(2) = 0, a(3) = 1.
+; 0,0,1,1,2,4,4,5,7,10,10,11,13,16,20,20,21,23,26,30,35,35,36,38,41,45,50,56,56,57,59,62,66,71,77,84,84,85,87,90,94,99,105,112,120,120,121,123,126,130,135,141,148,156,165,165,166,168,171,175,180,186,193,201
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $1,10
+  mov $2,$0
+  sub $1,10
+  mov $10,1
+  mov $4,6
+  mov $1,3
+  mov $7,$4
+  mov $2,2
+  mov $5,3
+  mov $1,$1
+  mov $5,$0
+  mov $8,10
+  mov $1,10
+  add $1,4
+  mov $9,$7
+  add $10,$5
+  mov $2,$8
+  mov $6,2
+  add $8,$9
+  sub $5,$9
+  add $8,$0
+  mov $2,6
+  lpb $0,1
+    bin $6,$0
+    mov $2,$10
+    add $7,5
+    sub $6,10
+    mov $8,10
+    mov $5,$0
+    sub $4,10
+    mov $3,$4
+    mov $10,$5
+    mov $3,$4
+    div $8,3
+    pow $6,7
+    mov $4,$1
+    sub $2,$0
+    sub $1,10
+    sub $3,$0
+    mov $8,7
+    sub $1,8
+    add $4,10
+    sub $0,$2
+    add $4,7
+    add $3,6
+    mov $2,10
+    sub $0,1
+    add $7,$10
+    mov $4,$10
+    mov $7,9
+    add $4,$6
+    add $3,10
+    sub $8,7
+  lpe
+  add $8,8
+  mov $9,5
+  add $9,4
+  mov $5,9
+  mov $8,8
+  add $1,2
+  mov $8,$5
+  mov $2,3
+  mov $7,8
+  add $1,6
+  mov $4,4
+  div $8,$1
+  add $7,5
+  add $2,$0
+  mov $0,8
+  mov $9,$3
+  sub $2,$1
+  add $7,7
+  sub $0,$0
+  mov $9,9
+  mul $7,$6
+  add $9,$0
+  mov $3,$10
+  sub $9,4
+  mov $10,0
+  add $3,1
+  add $7,$4
+  add $3,10
+  add $4,$5
+  clr $2,0
+  mov $1,$8
+  mov $9,$4
+  mov $0,$2
+  add $3,10
+  sub $7,$0
+  add $3,$0
+  mul $6,$10
+  sub $1,10
+  mov $7,$9
+  mov $8,3
+  add $6,5
+  mov $5,$2
+  mul $8,7
+  sub $1,8
+  add $8,2
+  sub $6,$1
+  mov $1,$3
+  sub $1,22
+  add $12,$1
+lpe
+mov $1,$12

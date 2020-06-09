@@ -1,0 +1,106 @@
+; A079795: Duplicate of A052037.
+; 1,1,1,1,1,1,1,1,2,1,11,10,9,8,7,6,5,4,3,2,1,11,10,9,8,7,6,5,4,3,2,1
+
+lpb $0,1
+  mov $5,$0
+  mov $2,6
+  mov $9,$5
+  mul $0,$0
+  mov $3,3
+  sub $0,1
+  mov $3,5
+  mov $5,10
+  mov $8,2
+  mov $3,$2
+  mov $9,$9
+  mov $2,$9
+  add $9,$8
+  sub $3,9
+  sub $3,$2
+  mov $3,6
+  mov $10,$5
+  add $3,$0
+  sub $0,4
+  mov $6,2
+  mov $6,3
+  mov $4,$8
+  pow $8,9
+  mov $4,$0
+  mov $6,1
+  mov $7,9
+  mov $10,$3
+  mov $1,4
+  mov $0,10
+  sub $3,$5
+  mov $8,10
+  mov $2,$0
+  sub $5,7
+  mov $10,$4
+  mov $10,$5
+  log $10,2
+  add $2,$1
+  sub $10,$5
+  add $10,$1
+  sub $4,$8
+  add $7,$7
+  add $9,3
+  add $6,10
+  mov $6,6
+  sub $6,$1
+  mov $6,$6
+  mov $3,1
+  mul $6,$5
+  mul $0,2
+  add $10,$0
+  mov $4,8
+  add $1,$5
+  add $1,$0
+  mov $3,$0
+  mov $3,3
+  add $8,10
+  mul $5,$3
+  sub $8,$5
+  mov $0,8
+  mov $1,$8
+  mov $7,$1
+  add $5,7
+  mov $2,$5
+  add $3,4
+  div $1,7
+  sub $0,1
+  sub $8,$7
+  add $6,$3
+  mov $1,$2
+  mov $8,6
+  add $1,$9
+  mov $8,0
+  mov $5,$6
+  mov $0,$0
+  mov $2,$10
+  mov $2,9
+  sub $1,$7
+  add $6,3
+  mov $8,$9
+  mov $3,$4
+  mul $3,10
+  add $9,5
+  sub $3,$8
+  mod $3,$7
+  mov $4,8
+  add $4,3
+  sub $6,$6
+  mod $4,3
+  sub $5,$3
+  mov $1,$6
+  log $10,10
+  mov $6,3
+  add $1,$0
+  mul $3,2
+  mov $5,6
+  add $4,2
+  sub $5,2
+lpe
+add $6,8
+mov $1,$3
+div $1,2
+add $1,1

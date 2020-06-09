@@ -1,0 +1,104 @@
+; A187442: A trisection of A001405 (central binomial coefficients: binomial(3*n,floor(3*n/2)), n>=0.
+; 1,3,20,126,924,6435,48620,352716,2704156,20058300,155117520,1166803110,9075135300,68923264410,538257874440,4116715363800,32247603683100,247959266474052,1946939425648112,15033633249770520
+
+mul $0,3
+mov $6,10
+mov $3,$0
+mov $7,$6
+mov $7,$7
+mov $5,1
+div $0,2
+mov $9,10
+sub $7,$3
+mov $1,9
+add $5,$7
+bin $3,$0
+mov $2,$0
+sub $2,$1
+add $9,3
+add $6,10
+mov $8,1
+sub $5,$0
+lpb $2,1
+  mov $4,$6
+  sub $2,1
+  lpb $4,1
+    add $7,$8
+    mov $6,$2
+    sub $4,$7
+    sub $9,$9
+    mov $5,$5
+    mov $2,4
+    mov $3,0
+    mov $4,$9
+    sub $1,3
+    mov $6,$8
+    mov $0,8
+  lpe
+  sub $1,$3
+  mul $6,8
+  mul $8,$4
+  sub $0,9
+  add $2,9
+  mov $3,1
+  add $7,$0
+  lpb $5,1
+    mov $10,4
+    mov $5,$7
+    add $6,9
+    mov $2,$3
+    mov $4,$7
+    sub $8,10
+    sub $5,$7
+    mov $5,0
+    sub $3,$9
+    mul $10,8
+    mov $9,10
+    mov $2,4
+    mov $6,10
+    mov $1,$9
+    sub $8,$2
+    mov $1,9
+    mul $3,$4
+    add $0,2
+    mov $10,$7
+    mov $10,4
+    add $6,7
+    mov $8,0
+    mov $0,$4
+  lpe
+  div $0,9
+  mov $0,9
+  mov $3,4
+  lpb $6,1
+    mov $1,7
+    mov $6,10
+    gcd $4,$7
+    mov $9,2
+    sub $7,2
+    mov $7,$1
+    add $3,9
+    mul $2,$3
+    mov $10,9
+    add $0,$3
+    mov $0,0
+    add $4,$10
+    mov $1,$10
+    mov $7,$3
+    add $7,7
+    sub $1,5
+    mov $3,$1
+    sub $6,$7
+    sub $8,$10
+    mov $3,$5
+  lpe
+  add $8,2
+  add $8,6
+  mov $6,2
+  mov $4,$3
+  sub $5,$1
+  add $7,$9
+  mov $6,0
+  sub $2,1
+lpe
+mov $1,$3

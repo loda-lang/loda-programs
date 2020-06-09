@@ -1,0 +1,86 @@
+; A086115: Number of 5 X n (0,1) matrices such that each row and each column is nondecreasing or nonincreasing.
+; 10,100,390,1080,2470,4980,9170,15760,25650,39940,59950,87240,123630,171220,232410,309920,406810,526500,672790,849880,1062390,1315380,1614370,1965360,2374850,2849860,3397950,4027240,4746430,5564820
+
+mov $6,$0
+add $0,5
+bin $0,5
+mov $5,4
+mov $8,1
+mov $2,$0
+mov $8,$6
+mov $1,6
+mov $0,2
+sub $2,$6
+mov $1,$2
+mov $6,$5
+lpb $0,1
+  mov $3,7
+  mov $1,$2
+  add $5,$5
+  mul $0,$2
+  mov $4,$0
+  mov $3,$0
+  mov $7,1
+  mul $1,2
+  add $2,$1
+  pow $7,5
+  mov $3,4
+  mov $2,$7
+  add $4,$4
+  sub $4,7
+  sub $1,1
+  mov $5,1
+  mul $3,4
+  sub $6,$6
+  mov $0,6
+  mov $4,$4
+  add $4,$5
+  add $1,1
+  add $6,$8
+  mul $3,6
+  mov $0,$6
+  mov $0,$2
+  mov $6,8
+  mov $7,$3
+  sub $7,2
+  mov $3,0
+  add $7,3
+  mul $4,$2
+  sub $7,5
+  gcd $0,$7
+  sub $0,1
+  mov $6,$8
+  mov $3,$8
+  mov $4,$4
+  add $3,$1
+  mov $5,5
+  add $1,$6
+  add $7,5
+  mov $4,2
+  sub $5,$6
+  sub $8,2
+  sub $3,4
+  mov $4,$0
+  add $4,$0
+  sub $7,$7
+  add $7,3
+  mov $6,1
+  add $6,1
+  mov $5,1
+  sub $3,$4
+  mov $5,$7
+  mul $4,3
+  add $5,$1
+  cmp $7,8
+  sub $6,4
+  add $5,$7
+  sub $2,$3
+  sub $0,6
+  mov $2,0
+  mov $6,$7
+  sub $2,$0
+  sub $4,4
+lpe
+sub $1,2
+mul $1,10
+add $1,10

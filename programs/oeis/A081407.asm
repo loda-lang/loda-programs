@@ -1,0 +1,107 @@
+; A081407: 4th-order non-linear ("factorial") recursion: a(0)=a(1)=a(2)=a(3)=1, a(n) = (n+1)*a(n-4).
+; 1,1,1,1,5,6,7,8,45,60,77,96,585,840,1155,1536,9945,15120,21945,30720,208845,332640,504735,737280,5221125,8648640,13627845,20643840,151412625,259459200,422463195,660602880,4996616625,8821612800
+
+mov $9,0
+mov $4,$0
+mov $8,$0
+mov $1,$4
+mov $3,2
+mov $2,5
+mov $6,$0
+mov $9,$2
+sub $8,10
+mov $4,3
+sub $3,4
+mod $1,9
+add $8,$0
+add $8,$4
+mov $4,$4
+mov $3,3
+add $3,10
+sub $8,1
+add $0,2
+sub $6,1
+mov $9,$9
+mov $8,$8
+mov $1,9
+mov $10,$0
+lpb $0,1
+  sub $8,$10
+  mov $6,4
+  fac $9
+  mov $8,$3
+  mov $8,$4
+  sub $1,1
+  mov $8,9
+  add $2,4
+  mul $9,8
+  sub $8,1
+  add $10,$3
+  sub $9,2
+  sub $0,1
+  mov $7,9
+  mod $9,4
+  mov $2,4
+  mul $7,$3
+  mov $9,6
+  sub $9,$0
+  sub $4,3
+  mov $9,4
+  mov $4,4
+  log $7,$7
+  add $1,$6
+  mul $3,$0
+  sub $0,8
+  sub $2,$0
+  mov $2,4
+  add $6,1
+  add $0,$6
+  mov $4,$6
+  mov $6,3
+lpe
+mov $4,9
+log $10,4
+mov $7,2
+mov $9,$8
+add $3,$4
+mov $8,8
+add $10,$0
+mov $6,2
+add $1,1
+pow $0,2
+mov $9,6
+sub $3,10
+add $8,$1
+sub $7,7
+mov $8,9
+mov $0,5
+mov $1,7
+sub $3,$8
+mov $6,4
+mov $6,$0
+add $1,$0
+sub $8,$10
+mul $1,5
+sub $10,2
+add $6,2
+mov $7,2
+mov $1,4
+add $0,10
+mov $2,$10
+mul $1,$2
+mov $0,$0
+add $9,$6
+mov $5,10
+add $8,$9
+mov $0,2
+sub $4,1
+add $3,2
+mov $7,7
+mov $6,1
+pow $7,$2
+add $6,$5
+mul $0,$0
+mov $1,$3
+sub $1,5
+div $1,13
+add $1,1

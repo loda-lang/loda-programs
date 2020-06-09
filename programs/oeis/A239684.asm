@@ -1,0 +1,106 @@
+; A239684: Number of digits in the decimal expansion of n^4.
+; 1,1,2,2,3,3,4,4,4,4,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+
+mov $5,2
+mov $8,$5
+mov $2,$0
+pow $0,4
+add $8,6
+mov $3,$8
+add $3,$2
+mov $10,$0
+mov $7,8
+lpb $0,1
+  mod $5,2
+  sub $3,$7
+  mov $6,10
+  pow $8,$8
+  mov $1,$10
+  mov $3,1
+  mul $1,7
+  mov $9,10
+  mov $9,3
+  mov $1,1
+  add $5,8
+  mov $6,$6
+  add $2,$8
+  add $9,$10
+  sub $0,2
+  mov $1,$8
+  add $5,$0
+  mov $2,$0
+  mov $2,$5
+  mov $1,$1
+  mov $5,$6
+  sub $8,$9
+  mov $1,9
+  log $2,$5
+  mov $9,$3
+  add $9,$6
+  add $5,4
+  mov $10,$1
+  mov $4,$9
+  mov $0,$3
+  add $3,$2
+  mov $5,7
+  add $4,8
+  mov $6,8
+  mov $3,$5
+  mov $6,$10
+  mov $5,$9
+  div $0,2
+  mov $10,$5
+  add $0,4
+  add $6,10
+  mov $4,$4
+  mov $4,$2
+  add $1,$8
+  div $10,4
+  sub $7,$5
+  mul $3,$5
+  fac $10
+  mul $2,2
+  add $9,$10
+  mov $10,$4
+  add $9,$5
+  sub $10,5
+  sub $5,$10
+  mul $4,2
+  mov $1,9
+  pow $5,8
+  add $4,10
+  sub $7,1
+  sub $6,7
+  add $6,1
+  sub $0,10
+  sub $7,6
+  add $8,2
+  add $1,$4
+  mov $8,3
+  mov $8,9
+  sub $9,$10
+  mov $5,7
+  add $9,$0
+  add $1,6
+  div $5,$6
+  sub $8,$6
+  sub $5,$6
+  sub $8,$3
+  sub $0,1
+  add $10,8
+  gcd $8,$2
+  mov $5,$10
+  add $9,5
+  mov $3,4
+  sub $3,$0
+  mul $2,2
+lpe
+cmp $4,10
+mov $9,7
+add $3,5
+mov $1,10
+clr $3,3
+mov $10,$6
+mov $1,$2
+div $1,4
+add $1,1

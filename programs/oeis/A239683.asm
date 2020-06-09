@@ -1,0 +1,106 @@
+; A239683: Number of digits in decimal expansion of n^5.
+; 1,1,2,3,4,4,4,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
+
+mov $9,9
+pow $0,5
+mov $2,$0
+mov $5,$9
+mov $4,$0
+mov $6,$0
+mov $10,$5
+add $4,1
+mov $5,7
+mul $0,$6
+mov $7,3
+mov $10,$4
+add $6,$6
+mov $2,4
+add $9,$2
+log $4,10
+add $6,6
+mov $0,9
+mov $6,3
+mov $6,6
+mov $8,$5
+add $0,$5
+add $4,6
+sub $2,$4
+lpb $0,1
+  mov $1,4
+  add $1,7
+  mov $3,3
+  pow $1,10
+  add $0,$9
+  mov $6,5
+  mov $0,$3
+  add $7,$8
+  add $2,3
+  sub $1,1
+  mov $4,$9
+  mov $7,$7
+  mov $0,4
+  add $6,$7
+  mod $7,$4
+  mov $8,$4
+  sub $5,$10
+  mov $10,$3
+  mov $4,2
+  add $0,9
+  sub $8,1
+  mov $3,$7
+  mov $1,4
+  mov $0,$6
+  mov $6,$1
+  gcd $2,6
+  mov $10,2
+  add $1,$10
+  mov $4,7
+  add $7,$0
+  add $9,$3
+  mov $6,1
+  gcd $10,$3
+  sub $5,$5
+  mov $5,$4
+  sub $4,6
+  gcd $9,$9
+  add $4,8
+  mov $9,0
+  mov $0,$0
+  add $8,$4
+  mul $0,10
+  mul $4,$2
+  mov $1,$1
+  mul $1,$2
+  sub $1,$7
+  mul $1,$9
+  sub $0,1
+  add $9,4
+  sub $8,5
+  add $6,1
+  add $8,7
+  log $5,$4
+  add $4,$0
+  add $5,$1
+  add $9,9
+  mov $3,8
+  mov $3,3
+  mov $10,$5
+  add $5,5
+  mov $7,1
+  mul $1,$9
+  mov $8,$2
+  mov $10,$5
+  mov $3,2
+  sub $3,$5
+  gcd $7,8
+lpe
+mov $7,4
+mov $10,$5
+gcd $7,7
+mov $7,9
+mul $9,2
+sub $3,$2
+sub $7,9
+mov $1,$4
+sub $1,6
+add $1,1

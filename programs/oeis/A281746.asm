@@ -1,0 +1,96 @@
+; A281746: Nonnegative numbers n such that n == 0 mod 3 or n == 0 mod 5.
+; 0,3,5,6,9,10,12,15,18,20,21,24,25,27,30,33,35,36,39,40,42,45,48,50,51,54,55,57,60,63,65,66,69,70,72,75,78,80,81,84,85,87,90,93,95,96,99,100,102,105,108,110,111,114,115,117,120,123,125,126,129,130,132,135
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $3,3
+  mov $1,2
+  mov $8,2
+  mov $6,2
+  mov $4,$8
+  add $6,$8
+  mov $3,$3
+  mov $2,$0
+  add $1,1
+  mov $5,0
+  add $1,$0
+  mov $7,$0
+  mov $5,4
+  sub $1,2
+  mov $7,0
+  sub $8,$3
+  lpb $2,1
+    add $6,$1
+    sub $2,$1
+    lpb $4,1
+      mov $8,1
+      add $3,$6
+      add $6,8
+      add $5,$8
+      sub $7,6
+      add $8,$7
+      sub $4,$8
+    lpe
+    mov $7,3
+    mul $2,6
+    sub $1,4
+    gcd $6,$4
+    sub $2,4
+    mov $1,5
+    add $2,3
+    add $1,2
+    lpb $5,1
+      add $1,$6
+      sub $1,$5
+      sub $5,$8
+      mov $4,$6
+      mov $2,$0
+      mod $2,7
+      sub $7,3
+      mov $3,0
+      sub $2,$8
+    lpe
+    lpb $6,1
+      mov $4,$7
+      add $2,1
+      mov $0,$4
+      sub $6,$8
+      add $0,8
+      mod $7,2
+      mov $6,8
+      mov $8,$8
+      add $7,1
+      mul $4,$0
+      sub $7,$3
+      mul $4,7
+      div $1,2
+      add $0,8
+    lpe
+    sub $2,1
+    mov $0,$5
+    mov $6,$0
+    mov $0,3
+    mov $4,5
+    mov $5,2
+    mul $0,$1
+    mul $5,$4
+    sub $4,$2
+    pow $2,$7
+  lpe
+  mov $2,$5
+  add $0,$0
+  mov $6,$6
+  add $2,1
+  add $1,$8
+  add $5,$3
+  mov $1,$4
+  sub $1,2
+  add $10,$1
+lpe
+mov $1,$10

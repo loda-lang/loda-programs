@@ -1,0 +1,104 @@
+; A187468: Sum of the squares modulo 2^n of the odd numbers less than 2^n.
+; 1,2,4,40,208,928,3904,16000,64768,260608,1045504,4188160,16764928,67084288,268386304,1073643520,4294770688,17179475968,68718690304,274876334080,1099508482048,4398040219648,17592173461504,70368719011840,281474926379008
+
+mov $1,$0
+mov $4,$1
+mov $8,2
+mov $3,1
+mov $9,5
+mov $6,$8
+add $9,$9
+pow $6,$0
+mov $8,$8
+gcd $4,$3
+mov $8,$8
+sub $6,$4
+mov $10,$1
+add $3,$6
+mov $2,$4
+sub $0,6
+add $10,$4
+sub $6,$8
+sub $6,1
+mov $0,1
+lpb $0,1
+  mul $3,2
+  mov $9,10
+  mod $4,$3
+  add $6,8
+  mul $3,7
+  mov $1,2
+  mov $7,6
+  mod $4,8
+  add $7,9
+  add $1,$3
+  sub $6,1
+  mov $3,6
+  sub $6,$0
+  sub $4,6
+  add $2,$4
+  mov $3,1
+  add $2,4
+  add $7,3
+  sub $0,1
+  mul $0,8
+  add $10,8
+  add $0,$2
+  gcd $0,8
+  sub $3,3
+  mov $5,3
+  mov $5,1
+  sub $1,10
+  mov $8,$5
+  sub $7,$7
+  mov $6,8
+  mov $2,10
+  mov $7,6
+  pow $4,2
+  add $6,10
+  add $0,5
+  mov $4,10
+  mov $1,4
+  pow $7,8
+  mul $8,9
+  mul $4,9
+  cmp $1,$10
+  add $4,$1
+  add $0,5
+  sub $3,$0
+  mov $2,10
+  mov $5,$0
+  mov $8,$6
+  mul $4,5
+  add $3,7
+  mov $6,$5
+  div $3,$0
+  add $8,9
+  mov $9,2
+  mov $4,7
+  mov $0,7
+  mov $3,$9
+  add $1,3
+lpe
+add $8,$3
+sub $9,$1
+mov $2,$8
+sub $1,$9
+mov $2,9
+add $6,1
+sub $9,$1
+mul $6,$3
+add $8,6
+mov $2,$0
+mov $3,1
+sub $5,$6
+sub $2,$3
+sub $7,7
+add $1,$3
+sub $7,9
+mov $1,$0
+mov $0,1
+mov $1,3
+add $8,$1
+add $9,$0
+mov $1,$6
