@@ -1,0 +1,126 @@
+; A309118: Number of tiles added at iteration n when successively, layer by layer, building a symmetric patch of a rhombille tiling around a central star of six rhombs.
+; 6,6,12,18,24,24,36,30,48,36,60,42,72,48,84,54,96,60,108,66,120,72,132,78,144,84,156,90,168,96,180,102,192,108,204,114,216,120,228,126,240,132,252,138,264,144,276,150,288,156,300,162,312,168,324,174,336
+
+mov $11,$0
+mov $13,2
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  add $0,$13
+  sub $0,1
+  mov $9,1
+  mov $3,10
+  mov $10,1
+  add $0,$0
+  add $9,$10
+  sub $3,10
+  mov $2,$0
+  div $0,4
+  mov $4,9
+  mov $7,5
+  mov $6,7
+  add $3,$2
+  mov $2,9
+  mov $8,1
+  mov $7,$8
+  mov $8,$10
+  add $7,$0
+  mov $6,9
+  mov $2,$9
+  add $3,$0
+  mov $5,$10
+  add $0,$7
+  mov $6,$6
+  add $6,$3
+  mul $10,2
+  add $0,10
+  pow $8,$9
+  add $4,2
+  sub $6,$0
+  mov $1,$7
+  sub $3,5
+  mov $1,0
+  div $5,$9
+  mov $0,6
+  mul $1,$8
+  mov $1,$6
+  mov $5,2
+  div $1,4
+  add $10,3
+  add $3,3
+  sub $4,$5
+  mul $1,6
+  sub $0,2
+  mul $6,$7
+  sub $1,10
+  mov $7,$9
+  fac $0
+  sub $3,$6
+  mov $1,9
+  sub $3,4
+  sub $8,$4
+  mov $7,9
+  lpb $0,1
+    mov $5,$9
+    add $8,$2
+    bin $0,3
+    add $4,1
+    mov $6,$4
+    sub $7,8
+    mov $8,1
+    sub $3,$8
+    add $3,$1
+    add $8,$10
+    mov $1,7
+    mul $4,2
+    add $5,$6
+    sub $7,4
+    mov $1,$2
+    mul $0,6
+    sub $0,2
+    add $10,9
+    pow $9,$3
+    add $2,5
+    sub $0,1
+    pow $5,$7
+    mov $8,$5
+    mov $0,$0
+    mov $9,$4
+    add $7,2
+    mov $8,$0
+    mov $4,$7
+    sub $6,6
+    mov $3,$4
+    add $2,8
+    add $0,5
+    mov $4,1
+    mov $4,8
+    mov $5,9
+    sub $8,2
+    mul $6,$10
+    mul $10,7
+    mov $8,5
+    mod $1,$0
+  lpe
+  mov $7,8
+  mov $2,1
+  sub $8,5
+  add $9,9
+  add $0,2
+  add $1,4
+  mov $1,$6
+  mov $14,$13
+  lpb $14,1
+    mov $12,$1
+    sub $14,1
+  lpe
+lpe
+lpb $11,1
+  sub $12,$1
+  mov $11,0
+lpe
+mov $1,$12
+div $1,2
+mul $1,6
+add $1,6

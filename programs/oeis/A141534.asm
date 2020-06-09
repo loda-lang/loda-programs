@@ -1,0 +1,117 @@
+; A141534: Derived from the centered polygonal numbers: start with the first triangular number, then the sum of the first square number and the second triangular number, then the sum of first pentagonal number, the second square number and the third triangular number, and so on and so on...
+; 1,4,11,26,55,105,184,301,466,690,985,1364,1841,2431,3150,4015,5044,6256,7671,9310,11195,13349,15796,18561,21670,25150,29029,33336,38101,43355,49130,55459,62376,69916,78115,87010,96639,107041,118256,130325
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $12,$0
+  mov $14,$0
+  add $14,1
+  lpb $14,1
+    clr $0,12
+    sub $14,1
+    mov $0,$12
+    sub $0,$14
+    mov $9,$0
+    mov $11,$0
+    add $11,1
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      sub $0,$11
+      mov $8,$0
+      mov $1,$0
+      lpb $0,1
+        mov $2,$1
+        mov $7,5
+        mov $4,$2
+        mov $6,0
+        mov $6,$0
+        mov $3,$8
+        add $2,$0
+        add $6,$8
+        sub $2,8
+        add $1,$0
+        mov $4,$0
+        mov $3,$0
+        add $7,1
+        sub $0,1
+        add $7,1
+        mov $5,$2
+        sub $1,$8
+        mul $0,$2
+        mov $6,7
+        add $2,1
+        add $7,$0
+      lpe
+      add $0,2
+      mov $0,2
+      mul $5,$6
+      sub $6,$5
+      add $0,1
+      add $6,$8
+      mov $6,$1
+      mov $4,5
+      add $0,5
+      add $6,1
+      mov $5,5
+      add $3,$0
+      add $2,$4
+      mul $4,7
+      mul $4,2
+      sub $5,$3
+      add $7,7
+      add $2,$1
+      mov $7,$6
+      mov $1,0
+      mov $6,$1
+      add $8,$0
+      sub $2,$3
+      add $5,$3
+      mov $2,$7
+      mov $4,1
+      add $5,$8
+      sub $6,1
+      add $0,4
+      mov $1,$7
+      pow $6,$3
+      sub $8,7
+      sub $5,$1
+      add $4,$2
+      add $1,$1
+      mov $2,$6
+      sub $1,5
+      add $0,2
+      mov $5,$1
+      mov $8,1
+      sub $7,$5
+      mov $5,$0
+      mov $6,$4
+      add $4,6
+      sub $4,$2
+      cmp $8,$6
+      bin $0,2
+      sub $6,$7
+      add $1,1
+      mov $8,$1
+      mod $4,5
+      mul $1,$8
+      sub $4,1
+      pow $5,2
+      gcd $0,$5
+      mov $1,$6
+      add $10,$1
+    lpe
+    mov $1,$10
+    add $13,$1
+  lpe
+  mov $1,$13
+  add $16,$1
+lpe
+mov $1,$16

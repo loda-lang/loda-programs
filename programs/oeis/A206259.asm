@@ -1,0 +1,108 @@
+; A206259: Number of (n+1) X (n+1) 0..1 arrays with the number of rightwards and downwards edge increases in each 2 X 2 subblock equal to the number in all its horizontal and vertical neighbors.
+; 16,28,78,260,932,3440,12878,48628,184764,705440,2704164,10400608,40116608,155117528,601080398,2333606228,9075135308,35345263808,137846528828,538257874448,2104098963728,8233430727608,32247603683108
+
+add $0,2
+mov $3,$0
+mov $8,3
+mov $10,$8
+mov $6,$3
+add $6,$6
+bin $6,$0
+mov $9,$3
+sub $6,$8
+mov $10,2
+mov $8,$0
+mov $2,$8
+cmp $9,$0
+mov $8,0
+mov $4,2
+sub $3,3
+mov $8,$4
+sub $6,5
+mov $9,1
+add $0,1
+add $10,$0
+mov $0,8
+mov $3,$9
+lpb $0,1
+  add $8,6
+  add $4,$6
+  mov $5,$0
+  mod $2,$4
+  mov $2,$5
+  mov $3,5
+  add $8,$9
+  mov $10,$8
+  sub $10,$2
+  add $9,$9
+  sub $5,$3
+  add $5,6
+  add $2,$8
+  add $2,$3
+  mov $2,4
+  gcd $8,6
+  add $10,$5
+  add $6,10
+  sub $0,1
+  add $6,8
+  mov $4,$5
+  mod $10,$8
+  mul $0,2
+  gcd $0,$10
+  mov $7,$8
+  mov $9,$0
+  add $6,7
+  add $3,5
+  div $4,9
+  add $5,4
+  mov $3,9
+  mod $3,4
+  mov $4,0
+  sub $5,8
+  mod $5,$10
+lpe
+mov $10,4
+mov $5,$0
+sub $2,4
+mov $1,$9
+add $2,10
+sub $7,$5
+sub $4,4
+sub $4,7
+mov $0,1
+add $2,$4
+sub $8,$4
+mul $1,$10
+add $6,$4
+fac $4
+sub $0,$6
+sub $4,$3
+mov $8,$2
+sub $5,10
+add $9,$2
+sub $7,$5
+add $5,$6
+mov $9,$0
+sub $3,9
+mul $8,$3
+mov $9,4
+add $2,10
+mov $8,5
+mov $4,$7
+add $1,7
+add $8,2
+mov $4,$7
+mod $8,$9
+div $8,$2
+mov $8,$10
+mov $10,9
+mul $8,$4
+sub $10,1
+sub $8,5
+mov $2,$0
+mov $8,6
+mov $1,$5
+sub $1,25
+div $1,2
+mul $1,2
+add $1,16
