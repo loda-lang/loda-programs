@@ -1,0 +1,91 @@
+; A024403: [ (4th elementary symmetric function of S(n))/(3rd elementary symmetric function of S(n)) ], where S(n) = {first n+3 positive integers congruent to 2 mod 3}.
+; 1,3,5,9,13,18,24,30,37,45,54,64,74,85,97,109,122,136,151,167,183,200,218,236,255,275,296,318,340,363,387,411,436,462,489,517,545,574,604,634,665,697,730,764,798,833,869,905,942,980,1019,1059,1099,1140,1182,1224
+
+mov $9,$0
+mov $8,4
+mov $2,$8
+mov $7,8
+mov $3,2
+mov $6,$2
+sub $7,$7
+mov $3,$8
+mov $5,$0
+sub $2,1
+add $3,$0
+mov $8,8
+cmp $3,4
+add $2,$0
+mov $2,$8
+mov $7,2
+add $5,8
+sub $5,1
+pow $8,$6
+div $8,5
+sub $3,$7
+add $6,$0
+mov $2,0
+sub $7,6
+mov $4,$8
+sub $8,5
+lpb $0,1
+  mov $6,$0
+  mov $1,$8
+  add $8,1
+  sub $3,$1
+  sub $0,1
+  div $1,2
+  add $4,$2
+  add $3,$2
+  add $2,$0
+  add $7,6
+  sub $6,6
+  sub $5,$1
+  mov $8,5
+  mov $4,$5
+  add $5,2
+lpe
+div $0,$8
+add $4,$1
+mov $3,$5
+mov $5,5
+sub $3,4
+add $6,1
+add $5,$2
+mul $2,6
+sub $1,2
+add $2,1
+mov $8,$0
+mov $4,$4
+mov $5,$2
+mov $0,$0
+sub $5,3
+sub $2,$3
+mul $1,$6
+add $3,$0
+mov $7,8
+add $1,$1
+mov $0,$4
+mov $4,8
+bin $0,$3
+add $4,8
+sub $4,$5
+sub $7,4
+sub $1,1
+add $0,7
+add $5,8
+sub $1,$4
+add $1,5
+mov $8,$5
+div $5,8
+add $7,2
+mov $2,0
+add $6,$0
+add $3,1
+add $1,8
+mov $1,$5
+mov $10,$9
+mov $11,$10
+mul $11,2
+add $1,$11
+mul $10,$9
+mul $10,$9

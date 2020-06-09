@@ -1,0 +1,106 @@
+; A326367: Number of tilings of an equilateral triangle of side length n with unit triangles (of side length 1) and exactly two unit "lozenges" or "diamonds" (also of side length 1).
+; 0,0,24,126,387,915,1845,3339,5586,8802,13230,19140,26829,36621,48867,63945,82260,104244,130356,161082,196935,238455,286209,340791,402822,472950,551850,640224,738801,848337,969615,1103445,1250664,1412136,1588752,1781430,1991115
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $6,$0
+    mov $5,$6
+    mov $1,$6
+    mov $4,$5
+    mov $6,2
+    mov $0,$5
+    mov $8,$5
+    sub $6,$8
+    mov $7,$5
+    mov $6,5
+    add $0,$5
+    bin $5,2
+    mov $0,$6
+    sub $7,$7
+    mov $6,$6
+    gcd $0,$5
+    add $1,$8
+    mul $6,$6
+    mod $4,6
+    add $6,2
+    mov $2,$5
+    mul $6,$2
+    sub $5,6
+    add $4,2
+    mov $0,5
+    add $1,2
+    mov $3,3
+    lpb $0,1
+      mov $5,$1
+      mov $0,$5
+      mov $1,$3
+      add $6,4
+      mov $4,7
+      sub $3,8
+      mov $4,0
+      div $8,5
+      mov $7,$0
+      mul $3,$6
+      add $3,3
+      add $6,$5
+      add $1,$8
+      mov $3,$4
+      sub $8,$4
+      mul $4,$5
+      sub $0,1
+      add $0,$6
+      sub $1,$0
+      add $1,$2
+      mov $6,$0
+      sub $0,7
+      add $7,1
+      mov $4,6
+      add $5,3
+      mov $8,$6
+      add $4,3
+      mov $5,$0
+      mov $0,4
+      mov $5,8
+      mov $3,1
+      mov $4,$2
+      mov $5,2
+      mov $2,1
+      add $6,1
+      mod $1,$3
+      mov $2,$6
+      add $5,$4
+      add $4,4
+      mov $2,0
+      gcd $8,$7
+      add $0,2
+      add $8,$5
+      mov $8,$2
+      add $6,$3
+      sub $6,$4
+    lpe
+    mov $7,7
+    sub $6,3
+    mov $7,3
+    add $4,$1
+    mov $1,$4
+    mov $1,$6
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13

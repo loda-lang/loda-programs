@@ -1,0 +1,139 @@
+; A031724: Least term in period of continued fraction for sqrt(n) is 46.
+; 530,2118,4764,8468,13230,19050,25928,33864,42858,52910,64020,76188,89414,103698,119040,135440,152898,171414,190988,211620,233310,256058,279864,304728,330650,357630,385668,414764,444918,476130,508400,541728
+
+mov $17,$0
+mov $19,$0
+add $19,1
+lpb $19,1
+  clr $0,17
+  sub $19,1
+  mov $0,$17
+  sub $0,$19
+  mov $14,$0
+  mov $16,$0
+  add $16,1
+  lpb $16,1
+    clr $0,14
+    sub $16,1
+    mov $0,$14
+    sub $0,$16
+    mov $11,$0
+    mov $13,$0
+    add $13,1
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      sub $0,$13
+      mov $5,3
+      mov $4,$0
+      mov $1,7
+      mov $8,3
+      mov $6,4
+      add $8,1
+      mov $0,$0
+      mov $9,5
+      mov $10,$0
+      add $8,$8
+      mov $9,4
+      pow $6,$9
+      sub $4,$10
+      sub $6,$10
+      mov $2,$0
+      mov $7,6
+      add $6,10
+      add $0,$9
+      add $1,$7
+      add $0,8
+      mul $8,$10
+      mov $3,5
+      lpb $2,1
+        mov $6,$10
+        sub $10,1
+        add $1,$6
+        mov $9,$1
+        sub $10,$9
+        mov $6,$9
+        mov $6,2
+        pow $6,3
+        add $7,10
+        add $9,$2
+        lpb $4,1
+          mov $5,0
+          add $6,$1
+          sub $4,$1
+          mov $10,2
+          mod $5,3
+          mov $8,$9
+        lpe
+        add $2,$3
+        mov $6,$10
+        add $5,$6
+        sub $7,1
+        lpb $5,1
+          sub $6,$5
+          add $6,5
+          mov $6,7
+          mul $3,10
+          add $3,$3
+          fac $4
+          mov $3,$4
+          add $7,$5
+          sub $7,10
+          sub $5,$1
+          mov $4,$5
+        lpe
+        mul $2,$6
+        mul $5,$10
+        lpb $6,1
+          mov $10,$10
+          sub $7,$9
+          sub $6,$1
+          mov $2,5
+          sub $1,$7
+        lpe
+        sub $1,$9
+        mov $10,$1
+        mov $4,3
+        mov $1,$7
+        sub $4,$7
+        add $3,$1
+        div $10,6
+        sub $6,$1
+        mov $5,$9
+        add $5,1
+        sub $4,$7
+        add $7,9
+        sub $7,6
+        mov $7,$6
+        mov $5,2
+        mov $7,2
+        sub $2,3
+        sub $3,7
+        sub $2,1
+        add $7,$9
+        mov $4,1
+        mul $10,$0
+        mov $6,$4
+        add $4,1
+        mov $9,$4
+        add $1,1
+        mov $1,$0
+        sub $7,10
+        add $10,$4
+        add $8,1
+        sub $1,5
+      lpe
+      add $7,$2
+      mov $1,$6
+      sub $1,1
+      mul $1,2
+      add $12,$1
+    lpe
+    mov $1,$12
+    add $15,$1
+  lpe
+  mov $1,$15
+  add $18,$1
+lpe
+mov $1,$18

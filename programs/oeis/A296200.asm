@@ -1,0 +1,109 @@
+; A296200: Harary index of the n X n white bishop graph.
+; 1,5,21,47,104,182,318,490,755,1075,1531,2065,2786,3612,4684,5892,7413,9105,11185,13475,16236,19250,22826,26702,31239,36127,41783,47845,54790,62200,70616,79560,89641,100317,112269,124887,138928,153710,170070,187250
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $4,0
+    mov $5,$0
+    mov $0,$0
+    mov $6,1
+    mov $8,$6
+    mov $5,$5
+    mov $1,$5
+    mov $7,1
+    mov $3,1
+    gcd $5,2
+    div $8,7
+    sub $8,1
+    mul $8,5
+    add $4,1
+    add $3,$0
+    mov $2,7
+    sub $7,$8
+    add $3,3
+    mul $3,$5
+    sub $4,$0
+    sub $7,5
+    sub $4,$1
+    add $5,3
+    mul $2,6
+    sub $3,$6
+    mov $5,$8
+    mul $0,$3
+    sub $7,$7
+    mov $5,3
+    sub $2,$0
+    mov $5,3
+    sub $4,8
+    mov $5,8
+    sub $2,7
+    sub $2,$7
+    sub $3,$6
+    mov $5,$8
+    add $0,2
+    mov $2,0
+    mov $1,0
+    mov $6,$2
+    lpb $0,1
+      add $5,7
+      mov $8,7
+      add $6,7
+      mov $4,8
+      add $2,6
+      add $4,$2
+      add $4,$7
+      add $1,7
+      add $1,1
+      add $2,6
+      add $5,4
+      add $7,$8
+      mov $6,7
+      mov $3,8
+      sub $6,5
+      gcd $8,$4
+      sub $8,2
+      add $4,$0
+      add $0,1
+      sub $0,1
+      log $3,$1
+      mov $6,$0
+      mov $7,8
+    lpe
+    add $1,$4
+    mov $2,5
+    mov $7,$7
+    mov $2,5
+    div $6,2
+    sub $2,1
+    mov $4,$2
+    sub $0,$8
+    mov $7,$8
+    div $5,$0
+    mul $0,$4
+    add $8,$7
+    mov $8,1
+    gcd $1,$6
+    mov $1,$0
+    sub $1,8
+    div $1,8
+    add $1,1
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13

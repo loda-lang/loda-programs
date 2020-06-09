@@ -1,0 +1,94 @@
+; A239844: Number of n X 2 0..3 arrays with no element equal to one plus the sum of elements to its left or one plus the sum of elements above it or two plus the sum of the elements diagonally to its northwest, modulo 4.
+; 3,8,17,35,64,109,176,272,405,584,819,1121,1502,1975,2554,3254,4091,5082,6245,7599,9164,10961,13012,15340,17969,20924,24231,27917,32010,36539,41534,47026,53047,59630,66809,74619,83096,92277,102200,112904,124429
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $2,$0
+  mov $1,$2
+  mov $4,$0
+  mov $8,$0
+  mov $6,1
+  add $6,4
+  add $1,$1
+  add $1,5
+  mov $7,$2
+  mov $6,7
+  mov $7,$7
+  pow $2,2
+  add $6,4
+  add $2,$4
+  sub $7,2
+  mov $1,$4
+  mov $5,$1
+  sub $8,2
+  sub $8,$8
+  mul $8,$6
+  mov $1,$7
+  mov $3,$1
+  add $3,6
+  mov $1,$4
+  mov $7,4
+  sub $5,$8
+  mov $3,7
+  pow $8,$5
+  mov $8,$8
+  mov $1,4
+  add $0,$2
+  sub $7,5
+  add $4,$1
+  add $1,$2
+  sub $1,1
+  mov $6,3
+  mov $8,3
+  add $2,$0
+  sub $1,1
+  mov $6,3
+  bin $5,$6
+  mov $6,2
+  lpb $0,1
+    mul $7,3
+    mov $6,1
+    mov $0,$4
+    add $8,$5
+    sub $6,$3
+    sub $7,$4
+    add $1,2
+    pow $7,$3
+    div $2,2
+    sub $3,$1
+    mov $2,$0
+    gcd $3,4
+    mov $3,$2
+    add $3,1
+    mov $8,$2
+    mov $3,$6
+    add $7,$6
+    add $6,$1
+    mov $6,$0
+    mov $3,$2
+    add $3,$4
+    add $4,$0
+    mov $6,1
+    add $3,1
+    add $1,$5
+    sub $0,1
+    mov $8,$6
+    mov $2,7
+    add $0,8
+  lpe
+  gcd $8,$0
+  sub $6,$7
+  mov $2,7
+  sub $5,4
+  mov $8,$0
+  mov $6,$2
+  add $1,1
+  add $10,$1
+lpe
+mov $1,$10
