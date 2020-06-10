@@ -1,0 +1,124 @@
+; A040533: Continued fraction for sqrt(557).
+; 23,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1
+
+mov $11,$0
+mov $13,2
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  add $0,$13
+  sub $0,1
+  mov $7,$0
+  mov $8,8
+  mov $2,$7
+  mov $5,$2
+  add $8,$5
+  mov $4,1
+  add $8,5
+  mov $0,$2
+  mov $6,$2
+  mov $7,$2
+  mov $8,$0
+  sub $0,8
+  mov $10,$8
+  mov $3,10
+  mov $0,$4
+  mov $2,$7
+  div $8,5
+  mov $1,9
+  mov $7,$3
+  mov $5,8
+  mul $1,$8
+  sub $7,6
+  add $8,8
+  mov $2,8
+  mov $9,$3
+  add $0,$3
+  mov $0,7
+  lpb $0,1
+    mov $1,10
+    add $0,$9
+    mov $4,$5
+    sub $7,4
+    mov $0,$10
+    mov $5,$9
+    mul $7,5
+    mov $5,$4
+    sub $4,10
+    mov $5,$2
+    mov $5,6
+    mov $1,8
+    mov $1,10
+    add $6,2
+    sub $0,1
+    add $0,$1
+    mov $3,2
+    add $0,2
+    add $1,$1
+    add $6,$6
+    mov $9,$5
+    mov $7,3
+    mov $5,3
+    add $8,$6
+    mov $4,$8
+    add $8,9
+    mov $3,10
+    sub $8,$5
+    sub $5,9
+    add $9,5
+    sub $7,$5
+    mov $3,$2
+    add $2,3
+    mov $4,$7
+    mov $2,7
+    mul $3,$4
+    mov $9,$3
+    mul $4,2
+    bin $7,2
+    sub $9,1
+    mul $2,10
+    add $7,4
+    sub $6,7
+    mov $2,0
+    sub $3,$1
+    sub $10,10
+    mov $8,4
+    mod $10,2
+    mov $7,4
+    add $3,$6
+    mov $10,0
+    mov $6,$9
+    mov $9,$1
+    mov $3,$8
+    mov $3,3
+    gcd $9,9
+  lpe
+  add $1,5
+  add $0,6
+  mov $3,$0
+  mul $1,10
+  sub $1,6
+  mov $10,3
+  mov $7,$4
+  mov $5,$5
+  add $3,1
+  mov $10,7
+  mod $8,2
+  add $4,1
+  sub $3,7
+  mov $4,$9
+  mov $3,$5
+  mov $14,$13
+  lpb $14,1
+    mov $12,$1
+    sub $14,1
+  lpe
+lpe
+lpb $11,1
+  sub $12,$1
+  mov $11,0
+lpe
+mov $1,$12
+div $1,2
+add $1,1

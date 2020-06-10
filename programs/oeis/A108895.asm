@@ -1,0 +1,146 @@
+; A108895: Partial sums of quadruple factorial numbers n!!!! (A007662).
+; 1,2,4,7,11,16,28,49,81,126,246,477,861,1446,3126,6591,12735,22680,52920,118755,241635,450480,1115760,2629965,5579085,10800210,28097490,68981025,151556385,302969010,821887410,2089276995,4731688515
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $11,$0
+    mov $13,2
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      add $0,$13
+      sub $0,1
+      mov $5,3
+      mov $8,$5
+      sub $5,7
+      mov $7,0
+      sub $8,6
+      mov $3,1
+      mov $2,10
+      mov $10,$0
+      mod $10,10
+      mov $3,$0
+      mov $9,$8
+      mov $6,$0
+      div $7,2
+      add $10,$2
+      sub $5,$9
+      mov $10,$0
+      sub $9,$0
+      mov $1,4
+      add $6,2
+      mov $9,0
+      add $7,$7
+      mov $6,$1
+      sub $8,$7
+      mov $4,$1
+      mov $8,1
+      add $3,$1
+      mov $7,$10
+      mul $6,$1
+      mov $2,7
+      cmp $7,$6
+      mov $5,$4
+      mov $1,$1
+      mov $7,$9
+      gcd $7,2
+      add $9,$10
+      mov $3,2
+      mov $4,3
+      mov $9,4
+      mov $7,$2
+      pow $6,6
+      add $8,1
+      add $6,5
+      mov $9,10
+      div $5,$4
+      mov $0,$0
+      mov $2,6
+      lpb $0,1
+        mov $3,6
+        add $10,$4
+        log $6,2
+        gcd $3,2
+        add $5,6
+        add $1,$7
+        mul $5,2
+        add $1,$6
+        mov $3,$0
+        add $9,4
+        mul $4,$3
+        mul $10,7
+        sub $0,3
+        mov $6,$7
+        mov $6,$5
+        sub $0,1
+        sub $8,5
+        add $8,4
+        add $8,4
+        add $7,7
+        add $1,9
+        add $5,3
+        mov $7,$4
+        mov $7,10
+        mov $6,0
+        sub $7,4
+        sub $1,6
+        sub $3,$3
+        add $7,1
+        mov $8,9
+        mov $2,1
+        add $6,2
+        sub $5,$4
+        mov $2,$4
+      lpe
+      mov $6,$8
+      mov $3,1
+      mov $2,1
+      add $1,$4
+      mod $10,9
+      sub $10,5
+      sub $3,$2
+      add $5,$7
+      add $1,3
+      add $6,2
+      mov $7,$4
+      mov $1,7
+      mul $1,2
+      div $5,$4
+      sub $8,7
+      add $2,$7
+      sub $9,1
+      pow $6,5
+      mov $1,$4
+      mov $14,$13
+      lpb $14,1
+        mov $12,$1
+        sub $14,1
+      lpe
+    lpe
+    lpb $11,1
+      sub $12,$1
+      mov $11,0
+    lpe
+    mov $1,$12
+    div $1,3
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19

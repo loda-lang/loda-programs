@@ -1,0 +1,112 @@
+; A035487: Second column of Stolarsky array.
+; 2,6,11,15,19,23,28,32,36,40,44,49,53,57,61,66,70,74,78,83,87,91,95,100,104,108,112,116,121,125,129,133,138,142,146,150,155,159,163,167,172,176,180,184,189,193,197,201
+
+mov $11,$0
+mov $2,10
+mov $4,1
+mov $3,2
+mov $7,4
+mov $7,0
+mov $6,0
+add $7,7
+mov $10,$4
+mov $1,$4
+mov $6,9
+sub $1,$7
+add $1,$4
+mul $3,$0
+mov $5,$10
+mov $1,8
+add $0,$2
+mov $8,$7
+mov $5,$5
+mov $1,2
+mov $2,$5
+add $1,$4
+sub $4,7
+mov $6,$4
+sub $2,$8
+mov $1,10
+add $5,3
+add $1,9
+mov $10,7
+mul $1,$0
+pow $8,$2
+mov $6,$5
+lpb $0,1
+  mov $8,$1
+  mul $3,$0
+  mov $10,$8
+  mov $1,$5
+  mov $2,10
+  add $1,6
+  mov $8,2
+  mul $4,10
+  mov $1,1
+  mov $7,$4
+  mov $9,7
+  gcd $9,$1
+  div $10,$6
+  mov $3,$3
+  mov $3,$10
+  mov $0,10
+  mov $2,$6
+  mov $4,$0
+  add $1,$5
+  mov $6,$2
+  sub $9,1
+  add $4,9
+  mov $7,$10
+  sub $0,1
+  mod $8,$2
+  mov $3,9
+  mov $3,$4
+  mov $5,9
+  cmp $3,$8
+  mul $9,$5
+  add $0,8
+  mov $8,2
+  mov $5,$8
+  add $3,5
+  mov $10,$6
+  mov $2,$4
+  mod $6,7
+  mov $10,5
+  sub $3,9
+  mov $9,10
+  add $9,5
+  add $6,$7
+  mov $8,2
+  mov $4,$1
+  mov $8,2
+  mov $1,$7
+  sub $9,$9
+  add $8,7
+  mov $3,$4
+  add $4,$1
+  mov $4,2
+  mov $0,6
+  add $0,$4
+  sub $1,$7
+  div $9,5
+  add $2,1
+  add $8,$7
+  mov $7,$2
+  sub $6,$7
+  mul $5,$8
+  div $6,$7
+  sub $0,$5
+lpe
+add $9,8
+sub $8,9
+div $4,$7
+mov $4,$9
+add $7,$8
+mov $1,$6
+add $1,1
+mov $12,$11
+mov $13,$12
+mul $13,4
+add $1,$13
+mul $12,$11
+mul $12,$11

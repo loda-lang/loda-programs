@@ -1,0 +1,94 @@
+; A239056: Sum of the parts in the partitions of 4n into 4 parts with smallest part = 1.
+; 4,32,120,304,600,1056,1708,2560,3672,5080,6776,8832,11284,14112,17400,21184,25432,30240,35644,41600,48216,55528,63480,72192,81700,91936,103032,115024,127832,141600,156364,172032,188760,206584,225400,245376,266548,288800
+
+mov $9,$0
+mov $3,2
+mov $6,$0
+add $3,$3
+mov $4,$6
+mov $3,3
+mov $6,4
+mov $1,8
+mov $7,$0
+mov $5,$3
+mov $8,2
+add $6,$8
+sub $0,$1
+lpb $0,1
+  mov $4,3
+  add $4,8
+  mov $5,$3
+  mov $7,0
+  sub $7,$4
+  mov $5,$8
+  mul $0,$6
+  mov $8,5
+  mov $4,3
+  add $0,$5
+  mod $8,4
+  sub $7,$4
+  mul $3,$0
+  mov $4,$5
+  sub $4,8
+  sub $3,$0
+  add $6,$8
+  mov $7,$1
+  sub $5,$0
+  pow $5,$5
+  mov $6,7
+  mov $4,$0
+  sub $4,$6
+  sub $0,1
+  add $4,$4
+  mov $2,$0
+  mov $3,0
+  mov $1,$7
+  add $5,6
+  mov $1,$8
+  mov $8,0
+lpe
+mov $0,$4
+mov $3,$4
+mov $6,$8
+mov $1,1
+mov $2,$7
+mov $4,5
+mov $4,4
+mov $8,$7
+gcd $3,2
+add $8,1
+add $6,6
+add $0,1
+sub $5,6
+cmp $4,$3
+add $1,$8
+add $1,$7
+mul $8,$8
+add $2,$8
+div $2,3
+add $2,$0
+pow $5,$6
+add $7,$5
+add $2,$2
+add $6,5
+add $5,5
+sub $4,$3
+mov $8,$5
+sub $3,8
+sub $0,$2
+mov $5,4
+add $7,2
+mov $3,$5
+mul $2,$1
+sub $1,2
+mov $5,5
+mov $1,$2
+mov $10,$9
+mul $10,$9
+mov $11,$10
+mul $11,4
+add $1,$11
+mul $10,$9
+mov $11,$10
+mul $11,4
+add $1,$11
