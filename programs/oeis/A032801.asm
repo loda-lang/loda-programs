@@ -1,0 +1,127 @@
+; A032801: Number of unordered sets a, b, c, d of distinct integers from 1..n such that a+b+c+d = 0 (mod n).
+; 0,0,0,0,1,3,5,9,14,22,30,42,55,73,91,115,140,172,204,244,285,335,385,445,506,578,650,734,819,917,1015,1127,1240,1368,1496,1640,1785,1947,2109,2289,2470,2670,2870,3090,3311,3553,3795,4059,4324,4612,4900,5212,5525
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $3,2
+    mov $10,8
+    mov $1,3
+    mov $7,9
+    mov $1,9
+    sub $10,9
+    mov $3,4
+    mov $6,$0
+    mov $8,1
+    mov $4,4
+    add $4,$7
+    add $1,$0
+    mov $10,7
+    sub $7,7
+    sub $7,$0
+    mov $10,$0
+    add $4,7
+    pow $10,2
+    add $0,$3
+    mov $9,$8
+    add $7,$8
+    mov $8,$3
+    mul $8,6
+    mov $2,2
+    mov $4,$6
+    add $9,9
+    mov $9,4
+    add $9,2
+    mov $1,6
+    add $3,10
+    mov $4,$7
+    lpb $0,1
+      add $2,9
+      mov $3,$2
+      add $0,$4
+      mov $9,$3
+      mov $8,1
+      mov $7,$2
+      sub $4,$4
+      mov $8,$3
+      sub $0,1
+      gcd $7,9
+      mov $1,0
+      mov $8,5
+      mov $9,6
+      mov $7,8
+      mul $10,$1
+      mov $5,$0
+      mov $6,1
+      mov $8,$1
+      fac $2
+      sub $10,10
+      add $5,$10
+      mov $2,3
+      add $6,4
+      add $3,$3
+      mov $8,3
+      sub $3,$6
+      mul $8,$10
+      clr $8,8
+      mov $1,9
+      mov $9,$2
+      add $4,3
+      add $3,$5
+      add $7,3
+      add $9,$2
+      mov $7,$0
+      mov $9,$8
+      sub $4,$1
+      mov $5,$9
+      add $10,3
+      add $10,6
+      add $4,6
+      mov $7,0
+      mov $5,$0
+      add $10,8
+      pow $9,10
+      mov $2,$7
+      gcd $0,4
+      add $9,$2
+    lpe
+    mul $0,3
+    mov $10,10
+    mul $0,$0
+    mul $0,$6
+    mov $8,2
+    add $4,8
+    add $3,5
+    sub $0,$3
+    add $3,10
+    sub $8,2
+    mul $7,2
+    add $9,$9
+    mov $2,$7
+    sub $3,$0
+    mov $6,0
+    add $8,1
+    add $4,$8
+    sub $8,$7
+    mov $1,$5
+    sub $1,7
+    div $1,2
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20

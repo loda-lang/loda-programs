@@ -1,115 +1,28 @@
 ; A026064: a(n) = (d(n)-r(n))/2, where d = A026063 and r is the periodic sequence with fundamental period (1,1,0,1).
 ; 35,59,90,127,172,225,287,357,437,527,628,739,862,997,1145,1305,1479,1667,1870,2087,2320,2569,2835,3117,3417,3735,4072,4427,4802,5197,5613,6049,6507,6987,7490,8015,8564,9137,9735,10357,11005,11679,12380,13107,13862,14645,15457,16297
 
-mov $11,$0
-mov $7,$0
-sub $7,$0
+mov $9,$0
 mov $3,$0
 add $3,7
-mov $8,1
-mov $6,$7
-sub $7,$0
-mov $4,1
-mul $6,$0
-add $6,2
+mov $6,2
 add $6,$3
-sub $4,$4
-mov $10,$0
-mov $9,$3
 add $0,6
 lpb $0,1
-  mov $5,$3
-  add $8,$0
-  mov $2,$3
   bin $6,3
-  mov $3,$0
-  mov $9,$0
-  mov $4,4
-  mov $7,$6
-  mov $2,5
-  add $7,$6
-  div $8,7
-  bin $2,$7
-  mov $8,$9
-  sub $8,6
-  add $5,$0
-  div $4,8
-  sub $0,1
-  mul $3,$4
-  mod $4,2
-  mul $4,$0
-  sub $4,5
-  sub $2,$3
-  mov $1,$0
-  mov $3,$3
-  sub $7,$10
-  sub $2,2
-  add $7,$3
-  add $2,$0
   mov $0,$4
-  mul $7,$3
-  add $3,6
-  mov $1,7
-  add $1,$9
-  mov $0,$4
-  sub $0,3
-  add $7,2
-  add $10,2
 lpe
 mov $5,10
-mov $10,8
-pow $4,$9
 div $5,2
 add $5,$6
-add $3,$0
-mul $9,2
-mul $9,2
 sub $5,2
-mul $4,$10
-mov $7,4
-mov $8,$1
-add $6,$10
-mov $6,$2
-mod $10,2
-mul $0,$1
-mul $9,$3
-sub $0,7
-mov $0,1
-cmp $6,5
-add $7,$10
-add $2,$4
-sub $7,2
-div $8,$1
-sub $9,$9
-mov $10,$1
-mov $2,9
 mov $2,2
-mov $1,4
-sub $10,$8
-add $9,1
-sub $10,$3
-add $6,$10
-sub $0,$6
-sub $0,6
 div $5,$2
-mul $3,6
-mov $2,3
-add $7,3
-mov $10,$2
-add $9,3
-mov $8,$4
-add $7,$1
-add $9,10
-mov $8,$3
-mul $2,$9
 mov $1,$5
 sub $1,8
-mov $12,$11
-mov $13,$12
-mul $13,5
-add $1,$13
-mul $12,$11
-mov $13,$12
-mul $13,1
-add $1,$13
-mul $12,$11
+mov $8,$9
+mov $7,$8
+mul $7,5
+add $1,$7
+mul $8,$9
+mov $7,$8
+add $1,$7

@@ -1,0 +1,87 @@
+; A002004: Davenport-Schinzel numbers of degree 4 on n symbols.
+; 1,4,8,12,17,22,27,32,37,42,47,53,58,64,69,75,81,86,92,98,104
+
+mov $2,1
+mov $7,$0
+mov $8,1
+add $2,7
+mov $3,2
+mov $7,$7
+mov $1,1
+mov $6,5
+mov $4,$2
+mov $5,5
+mul $4,2
+add $0,8
+add $3,3
+add $7,$8
+mov $8,1
+div $8,$8
+mov $2,$8
+add $1,$7
+sub $3,$8
+mov $3,$5
+add $8,$8
+mul $7,2
+add $2,7
+add $6,3
+mov $3,$0
+mov $8,$1
+add $2,$5
+bin $4,$2
+mul $7,$7
+div $7,$3
+add $3,$2
+add $8,$8
+mov $4,$3
+mov $6,$8
+lpb $0,1
+  sub $1,$5
+  mul $5,2
+  mov $6,$4
+  mul $7,8
+  sub $1,$3
+  add $5,3
+  sub $1,$5
+  mov $1,$1
+  add $4,3
+  add $5,$0
+  sub $7,$2
+  mov $0,$4
+  sub $0,1
+  add $7,1
+lpe
+fac $5
+add $6,6
+mov $5,$5
+mov $0,2
+add $4,$6
+add $5,$7
+mul $0,6
+add $3,4
+add $8,$5
+sub $7,7
+sub $7,2
+add $5,$7
+mov $2,$0
+mov $3,8
+mod $6,$1
+mov $1,$2
+add $1,$1
+sub $7,3
+mov $5,1
+add $4,$6
+mov $7,1
+mul $8,5
+mul $1,$3
+mov $4,$2
+add $7,8
+sub $4,$6
+mov $3,3
+mov $3,$1
+mov $0,$8
+mov $2,$4
+mov $1,$0
+sub $1,620
+div $1,5
+add $1,1

@@ -1,0 +1,112 @@
+; A186325: Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and octagonal numbers.  Complement of A186324.
+; 2,4,7,10,13,15,18,21,24,26,29,32,34,37,40,43,45,48,51,54,56,59,62,64,67,70,73,75,78,81,84,86,89,92,95,97,100,103,105,108,111,114,116,119,122,125,127,130,133,136,138,141,144,146,149,152,155,157,160,163,166,168,171,174,177,179,182,185,187,190,193,196,198,201,204,207,209,212
+
+mov $11,$0
+mov $9,$0
+mov $10,$9
+mov $3,1
+sub $10,$9
+mov $4,8
+mul $9,$9
+mov $2,2
+mov $6,7
+mov $1,$0
+mov $2,2
+mov $9,$2
+mov $7,$10
+mov $3,9
+div $0,$4
+mov $5,6
+mov $2,1
+mul $6,7
+mov $4,3
+add $0,$5
+add $5,$3
+sub $5,$1
+mov $8,$3
+mul $1,6
+add $8,$3
+gcd $7,$1
+mul $3,7
+sub $2,9
+sub $3,$5
+mov $8,$9
+sub $3,$6
+add $0,4
+add $6,$0
+sub $9,1
+add $4,$7
+sub $4,$7
+mov $3,6
+sub $7,$9
+mov $3,$4
+add $8,$9
+lpb $0,1
+  sub $9,1
+  add $0,$7
+  add $4,$0
+  mul $8,2
+  sub $8,9
+  mov $0,$0
+  mul $8,$2
+  mov $5,7
+  add $7,$0
+  sub $8,$9
+  add $0,$5
+  add $2,5
+  mov $2,$9
+  add $0,$7
+  add $6,2
+  mul $0,5
+  sub $0,1
+  mov $4,$7
+  sub $6,5
+  add $10,$10
+  mov $3,0
+  sub $3,$9
+  mov $3,$2
+  mul $9,$4
+  mov $0,$10
+  add $1,3
+lpe
+mov $10,$6
+div $10,10
+add $8,$2
+mul $4,$3
+sub $4,$5
+sub $2,$4
+add $6,$8
+add $6,$8
+sub $0,7
+sub $9,$7
+div $7,$5
+mov $0,$5
+add $0,$2
+mul $3,$7
+sub $10,1
+sub $8,$0
+sub $6,$10
+mov $3,5
+sub $8,1
+add $1,3
+mul $0,$4
+mov $2,$7
+mov $0,$9
+mov $4,$0
+bin $3,4
+mov $9,7
+sub $5,$1
+sub $1,10
+mov $7,9
+mov $0,$0
+mov $3,$5
+mov $10,$3
+add $3,$6
+mov $1,$2
+add $1,1
+mov $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11
+mul $12,$11

@@ -1,0 +1,108 @@
+; A046163: Reduced denominators of (n-1)^2/(n^2+n+1). Arises in Routh's theorem.
+; 1,7,13,7,31,43,19,73,91,37,133,157,61,211,241,91,307,343,127,421,463,169,553,601,217,703,757,271,871,931,331,1057,1123,397,1261,1333,469,1483,1561,547,1723,1807,631,1981,2071,721,2257,2353,817,2551,2653
+
+mov $9,$0
+mov $7,1
+mov $6,9
+mov $10,1
+mov $4,$0
+add $6,5
+mov $2,$10
+mov $9,$4
+mov $8,4
+sub $7,5
+add $4,3
+mul $6,2
+mul $4,$0
+mov $3,10
+add $9,2
+mov $1,$10
+mov $9,$8
+mul $0,2
+mov $2,3
+sub $3,$9
+mov $5,$8
+gcd $10,$7
+add $4,$2
+pow $7,6
+mov $0,$9
+mov $6,9
+mov $3,0
+mov $10,5
+mov $1,$6
+add $3,$10
+mul $3,$10
+mov $6,$7
+mov $5,$4
+mov $6,$6
+log $9,$9
+mul $2,$2
+mov $0,8
+gcd $1,$5
+mul $6,$0
+mov $8,6
+div $4,$1
+mov $10,$3
+mov $10,8
+mov $10,$2
+fac $2
+pow $9,$7
+mov $0,7
+add $4,$2
+mul $6,6
+sub $0,2
+sub $0,5
+mov $6,$8
+mov $2,0
+add $1,$8
+add $2,$6
+mov $5,$10
+mov $0,9
+sub $1,1
+add $8,1
+mov $2,$6
+pow $6,9
+mul $7,6
+lpb $0,1
+  mov $3,7
+  add $7,$2
+  mov $5,$2
+  mov $2,$8
+  mul $0,$1
+  add $3,7
+  add $10,$2
+  mov $2,$3
+  mov $2,3
+  sub $5,1
+  add $1,$8
+  mov $10,$10
+  pow $8,$8
+  mov $7,2
+  sub $5,$5
+  add $3,$5
+  mul $2,9
+  log $8,2
+  mov $8,$3
+  mov $0,$6
+  add $4,$9
+  mov $7,1
+  mov $1,6
+  add $7,$2
+  add $4,9
+  mov $3,9
+  add $1,2
+  mov $4,5
+  sub $0,1
+  add $8,3
+  mov $6,$6
+  div $10,$9
+  mov $2,$2
+  mov $10,3
+  div $3,$7
+lpe
+add $3,$1
+mov $1,$4
+sub $1,362881
+div $1,6
+mul $1,6
+add $1,1
