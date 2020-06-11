@@ -1,106 +1,19 @@
 ; A240676: Number of digits in the decimal expansion of n^7.
 ; 1,1,3,4,5,5,6,6,7,7,8,8,8,8,9,9,9,9,9,9,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13
 
-mov $10,$0
-mov $7,$0
-mov $10,$0
-mov $3,4
-sub $3,$10
-mov $5,$10
-add $5,8
-sub $10,1
-mov $2,10
-mul $2,$5
 mov $4,$0
-mov $2,10
-sub $0,$5
-mov $8,$0
-mul $0,$10
-mov $7,7
-mov $10,$4
-pow $4,$7
-add $10,5
-add $0,$10
-add $4,$8
-mov $3,4
-mov $6,2
-add $4,$0
-mov $7,1
-mul $6,$4
-sub $4,$10
-mov $6,7
+pow $4,7
 lpb $0,1
-  sub $8,$2
-  sub $5,$2
-  mov $6,$5
-  mov $7,$5
   mov $1,1
-  mov $5,$1
-  add $10,3
-  mov $3,$0
-  add $0,10
-  mov $2,$0
-  sub $3,6
-  mov $9,9
-  mov $2,$1
-  add $3,$4
-  sub $0,1
+  mov $3,$1
   add $0,$1
-  mov $1,10
-  add $6,5
-  mov $10,4
-  mov $10,$8
-  mov $8,$6
-  add $4,$5
-  div $5,2
-  add $7,6
-  sub $10,1
-  mov $7,10
-  add $10,$8
-  div $1,$6
-  mov $8,5
-  div $9,9
-  sub $1,$9
-  mov $10,9
+  add $4,$3
+  mov $2,5
   log $4,10
   div $0,$0
-  add $4,$8
-  pow $10,2
-  mul $10,6
+  add $4,$2
 lpe
-mov $6,10
-mov $5,2
-sub $1,1
-sub $2,6
-sub $2,$9
-mov $10,$3
-mov $3,4
-mov $5,$8
-sub $8,$5
-sub $5,3
-gcd $3,2
-add $1,7
-mov $10,0
-mov $6,4
-mov $5,5
-div $8,8
-mov $7,$5
-add $3,$10
-mov $6,5
-mov $3,8
-pow $5,$6
-add $9,$10
-add $4,$4
-pow $10,2
-mov $10,$5
-add $1,$1
-sub $3,8
-mov $1,6
-add $9,4
-mov $3,3
-mov $10,$9
-mov $1,$1
-mul $1,3
+mul $4,2
 mov $1,$4
 sub $1,10
 div $1,2

@@ -1,104 +1,31 @@
 ; A259346: If n = 2^k then a(n) = 3^k, otherwise a(n) = 0.
 ; 1,3,0,9,0,0,0,27,0,0,0,0,0,0,0,81,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,729,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $9,$0
-mov $11,2
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  add $0,$11
+mov $8,$0
+mov $5,2
+lpb $5,1
+  sub $5,1
+  add $0,$5
   sub $0,1
-  mov $5,$0
-  mov $1,1
-  mov $1,$5
   mov $2,$0
-  mov $6,$0
   mov $7,8
-  add $5,6
   mov $3,$7
   lpb $2,1
-    mov $0,3
-    mov $5,0
-    lpb $4,1
-      mov $4,2
-      mul $0,2
-      mov $8,$0
-      add $5,$6
-      sub $5,$1
-      gcd $5,$2
-      mov $7,4
-      mov $0,$2
-      mul $4,$1
-      sub $4,$2
-      sub $1,$2
-      sub $8,6
-      mov $1,$6
-      sub $3,1
-      add $2,$1
-      add $8,8
-    lpe
-    add $7,7
-    sub $6,5
-    lpb $5,1
-      mov $5,5
-      sub $1,8
-      mov $5,$4
-      add $5,$1
-      mov $8,6
-      sub $5,$2
-      mov $5,7
-      mov $3,8
-      mov $0,$5
-      sub $7,$3
-      mov $6,7
-      mov $0,$1
-      sub $8,$5
-      mov $4,4
-      sub $6,$3
-      mov $3,$8
-      mov $3,0
-      mov $3,$7
-      mov $2,$7
-      add $5,1
-    lpe
-    add $3,$8
-    add $7,$0
-    mul $5,$6
-    mov $4,$0
     mul $3,3
-    mov $1,0
-    add $1,8
-    mul $1,$3
-    mov $7,7
-    lpb $6,1
-      sub $6,$2
-      sub $1,7
-      mov $1,$3
-      pow $7,4
-      mov $7,3
-      add $6,$4
-    lpe
-    mov $4,$7
-    add $4,$4
     sub $2,1
-    add $3,3
-    add $3,5
-    add $0,$5
+    add $3,8
     div $2,2
-    mul $0,$1
-    mov $0,5
   lpe
   mov $1,$3
-  mov $12,$11
-  lpb $12,1
-    mov $10,$1
-    sub $12,1
+  mov $4,$5
+  lpb $4,1
+    mov $6,$1
+    sub $4,1
   lpe
 lpe
-lpb $9,1
-  sub $10,$1
-  mov $9,0
+lpb $8,1
+  sub $6,$1
+  mov $8,0
 lpe
-mov $1,$10
+mov $1,$6
 div $1,8
