@@ -1,102 +1,36 @@
 ; A330000: Beatty sequence for sqrt(x+1), where 1/sqrt(x-1) + 1/sqrt(x+1) = 1.
 ; 2,4,6,9,11,13,15,18,20,22,25,27,29,31,34,36,38,40,43,45,47,50,52,54,56,59,61,63,66,68,70,72,75,77,79,81,84,86,88,91,93,95,97,100,102,104,106,109,111,113,116,118,120,122,125,127,129,132,134,136,138
 
-mov $13,$0
-mov $15,$0
-add $15,1
-lpb $15,1
-  clr $0,13
-  sub $15,1
-  mov $0,$13
-  sub $0,$15
+mov $8,$0
+mov $3,$0
+add $3,1
+lpb $3,1
+  sub $3,1
+  mov $0,$8
+  sub $0,$3
   mov $9,$0
   mov $11,2
   lpb $11,1
-    clr $0,9
     sub $11,1
     mov $0,$9
     add $0,$11
     sub $0,1
-    mov $7,4
-    mov $2,8
-    mov $5,$2
-    mul $2,3
-    mov $4,$7
     mov $6,$0
     mov $1,2
-    mov $0,$6
-    sub $2,$0
-    sub $0,$4
-    mov $7,6
-    mov $4,$5
-    sub $0,4
-    mov $8,$5
     mul $6,8
-    add $5,$7
-    add $0,1
-    sub $2,$2
-    add $6,$2
-    sub $5,1
-    pow $0,$8
-    sub $7,1
     add $6,$1
-    mov $5,$6
-    mov $4,$6
-    mov $6,$5
     lpb $0,1
-      add $7,$8
-      mov $3,8
-      sub $1,$8
       mov $7,7
       mov $0,8
-      add $5,$5
       mov $2,$0
-      add $1,1
-      mul $3,$1
       mul $2,2
-      div $4,$0
-      sub $8,$5
-      mov $4,$0
-      mov $3,0
       add $6,6
       mov $4,$6
       add $2,$7
-      add $0,8
-      mov $6,$7
-      mov $0,$0
       add $2,6
-      mul $0,$6
-      sub $0,$2
       mov $0,0
-      sub $0,1
-      pow $8,$3
-      sub $8,7
       div $4,$2
-      mov $5,$2
-      mul $1,$7
-      sub $5,$1
     lpe
-    mov $3,$2
-    mul $0,8
-    add $0,$7
-    mov $1,6
-    mov $1,4
-    add $2,1
-    add $3,5
-    sub $6,7
-    add $6,$1
-    sub $0,$3
-    mov $5,5
-    add $8,$7
-    mov $8,7
-    mov $7,$6
-    sub $3,4
-    mov $3,$6
-    mov $2,$8
-    mov $1,5
-    mov $6,7
-    mov $3,$0
-    sub $1,$0
     mov $1,$4
     mov $12,$11
     lpb $12,1
@@ -110,6 +44,6 @@ lpb $15,1
   lpe
   mov $1,$10
   add $1,2
-  add $14,$1
+  add $5,$1
 lpe
-mov $1,$14
+mov $1,$5

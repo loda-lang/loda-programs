@@ -1,0 +1,86 @@
+; A198833: The number of inequivalent ways to color the vertices of a regular octahedron using at most n colors.
+; 1,10,56,220,680,1771,4060,8436,16215,29260,50116,82160,129766,198485,295240,428536,608685,848046,1161280,1565620,2081156,2731135,3542276,4545100,5774275,7268976,9073260,11236456,13813570,16865705,20460496,24672560,29583961
+
+mov $8,$0
+mov $6,7
+mov $6,5
+mov $7,$6
+sub $6,2
+add $0,2
+mov $2,7
+lpb $0,1
+  gcd $8,7
+  sub $2,$7
+  mov $7,4
+  add $0,$2
+  mov $4,1
+  mov $4,3
+  mov $8,$4
+  mov $5,$6
+  add $6,5
+  add $8,$4
+  sub $0,1
+  add $2,3
+  mov $2,$5
+  mov $1,$5
+  add $4,$6
+  mov $7,$0
+  mov $7,4
+  pow $1,6
+  mov $3,$2
+  pow $6,$7
+  add $3,2
+  mul $7,2
+  add $6,4
+  mov $2,5
+  mov $8,$6
+  sub $8,8
+lpe
+mov $5,$7
+add $7,$5
+add $8,6
+mov $3,$3
+sub $4,3
+add $6,4
+bin $0,2
+mov $1,2
+div $8,2
+sub $8,3
+add $0,2
+add $5,7
+mov $1,$6
+add $6,$2
+sub $4,1
+add $8,$2
+mov $1,$7
+mul $1,6
+mov $4,0
+bin $0,3
+div $6,$7
+sub $1,$6
+add $0,5
+mov $3,4
+mul $0,$6
+add $0,$6
+sub $0,$4
+mov $4,$7
+add $2,$8
+log $2,$1
+sub $4,3
+mov $7,1
+mul $8,$8
+add $7,$0
+mov $2,$2
+mul $1,$2
+mov $4,6
+mov $2,$4
+clr $3,$5
+sub $5,4
+add $4,4
+add $0,$6
+mov $1,5
+mov $1,$5
+add $7,$1
+mov $1,$0
+sub $1,7
+add $1,1

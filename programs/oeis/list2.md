@@ -46,6 +46,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A202196](http://oeis.org/A202196) ([L19 program](A202196.asm)): Number of (n+2) X 4 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202197](http://oeis.org/A202197) ([L19 program](A202197.asm)): Number of (n+2) X 5 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202198](http://oeis.org/A202198) ([L17 program](A202198.asm)): Number of (n+2) X 6 binary arrays avoiding patterns 001 and 101 in rows and columns.
+* [A202199](http://oeis.org/A202199) ([L18 program](A202199.asm)): Number of (n+2) X 7 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202207](http://oeis.org/A202207) ([L09 program](A202207.asm)): a(n) = 3*a(n-1) - a(n-2) + a(n-3) with a(0)=1, a(1)=2, a(2)=5.
 * [A202253](http://oeis.org/A202253) ([L07 program](A202253.asm)): Number of zero-sum -n..n arrays of 3 elements with adjacent element differences also in -n..n.
 * [A202304](http://oeis.org/A202304) ([L07 program](A202304.asm)): a(n) = floor(sqrt(3*n)).
@@ -204,6 +205,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A208902](http://oeis.org/A208902) ([L12 program](A208902.asm)): The sum over all bitstrings b of length n of the number of runs in b not immediately followed by a longer run.
 * [A208903](http://oeis.org/A208903) ([L08 program](A208903.asm)): The sum over all bitstrings b of length n with at least two runs of the number of runs in b not immediately followed by a longer run.
 * [A208946](http://oeis.org/A208946) ([L36 program](A208946.asm)): Number of 4-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero with no three beads in a row equal.
+* [A208954](http://oeis.org/A208954) ([L13 program](A208954.asm)): n^4*(n-1)*(n+1)/12.
 * [A208971](http://oeis.org/A208971) ([L11 program](A208971.asm)): Number of 4-bead necklaces labeled with numbers -n..n allowing reversal, with sum zero and first and second differences in -n..n.
 * [A208994](http://oeis.org/A208994) ([L07 program](A208994.asm)): Number of 3-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and first differences in -n..n.
 * [A208995](http://oeis.org/A208995) ([L20 program](A208995.asm)): Number of 4-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and first differences in -n..n.
@@ -771,6 +773,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225240](http://oeis.org/A225240) ([L09 program](A225240.asm)): The squares on a chessboard that are white, counting from top left corner and down.
 * [A225367](http://oeis.org/A225367) ([L12 program](A225367.asm)): Number of palindromes of length n in base 3 (A118594).
 * [A225370](http://oeis.org/A225370) ([L11 program](A225370.asm)): Let f(S) = maximal m such that the string S contains two disjoint identical (scattered) substrings of length m ("twins"); a(n) = min f(S) over all binary strings of length n.
+* [A225491](http://oeis.org/A225491) ([L13 program](A225491.asm)): Maximal frequency depth for multisets over an alphabet of n letters.
 * [A225539](http://oeis.org/A225539) ([L07 program](A225539.asm)): Numbers n where 2^n and n have the same digital root.
 * [A225551](http://oeis.org/A225551) ([L17 program](A225551.asm)): Longest checkmate in king and queen versus king endgame on an n X n chessboard.
 * [A225553](http://oeis.org/A225553) ([L11 program](A225553.asm)): Longest checkmate in king and amazon versus king endgame on an n X n chessboard.
@@ -863,6 +866,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228025](http://oeis.org/A228025) ([L08 program](A228025.asm)): a(1) = least k such that 1/2+1/3+1/4+1/5 < H(k) - H(5); a(2) = least k such that H(a(1)) - H(5) < H(k) -H(a(1)), and for n > 2, a(n) = least k such that H(a(n-1)) - H(a(n-2) > H(k) - H(a(n-1)), where H = harmonic number.
 * [A228039](http://oeis.org/A228039) ([L07 program](A228039.asm)): Thue-Morse sequence along the squares: A010060(n^2).
 * [A228105](http://oeis.org/A228105) ([L03 program](A228105.asm)): a(n) = 432*n^6.
+* [A228124](http://oeis.org/A228124) ([L32 program](A228124.asm)): Number of blocks in a Steiner Quadruple System of order A047235(n+1).
 * [A228137](http://oeis.org/A228137) ([L06 program](A228137.asm)): Numbers that are congruent to {1, 4} mod 12.
 * [A228138](http://oeis.org/A228138) ([L25 program](A228138.asm)): Number of blocks in a Steiner system S(2, 4, A228137(n+1)).
 * [A228141](http://oeis.org/A228141) ([L08 program](A228141.asm)): Numbers that are congruent to {1, 5} mod 20.
@@ -1295,6 +1299,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245766](http://oeis.org/A245766) ([L11 program](A245766.asm)): a(n) = 2*(n^2 + 1) - n*(1 + (-1)^n).
 * [A245788](http://oeis.org/A245788) ([L11 program](A245788.asm)): n times the number of 1's in the binary expansion of n.
 * [A245827](http://oeis.org/A245827) ([L44 program](A245827.asm)): Szeged index of the grid graph P_3 X P_n.
+* [A245828](http://oeis.org/A245828) ([L13 program](A245828.asm)): Szeged index of the grid graph P_n X P_n.
 * [A245829](http://oeis.org/A245829) ([L19 program](A245829.asm)): Szeged index of the prism graph C_n X P_2 (n >=3).
 * [A245830](http://oeis.org/A245830) ([L21 program](A245830.asm)): The Szeged index of a benzenoid consisting of a linear chain of n hexagons.
 * [A245871](http://oeis.org/A245871) ([L16 program](A245871.asm)): Number of length 2+2 0..n arrays with some pair in every consecutive three terms totalling exactly n.
@@ -1457,6 +1462,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250757](http://oeis.org/A250757) ([L09 program](A250757.asm)): Number of (2+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250758](http://oeis.org/A250758) ([L20 program](A250758.asm)): Number of (3+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250759](http://oeis.org/A250759) ([L23 program](A250759.asm)): Number of (4+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
+* [A250760](http://oeis.org/A250760) ([L72 program](A250760.asm)): Number of (5+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250764](http://oeis.org/A250764) ([L16 program](A250764.asm)): Number of (n+1) X (3+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing absolute value of x(i,j)-x(i-1,j) in the j direction.
 * [A250765](http://oeis.org/A250765) ([L19 program](A250765.asm)): Number of (n+1) X (4+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing absolute value of x(i,j)-x(i-1,j) in the j direction.
 * [A250766](http://oeis.org/A250766) ([L23 program](A250766.asm)): Number of (n+1) X (5+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing absolute value of x(i,j)-x(i-1,j) in the j direction.
@@ -2194,4 +2200,774 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271779](http://oeis.org/A271779) ([L10 program](A271779.asm)): a(n) = n^3 + 2*n^2 + 5*n + 11.
 * [A271800](http://oeis.org/A271800) ([L14 program](A271800.asm)): Five steps forward, four steps back.
 * [A271828](http://oeis.org/A271828) ([L29 program](A271828.asm)): a(n) = 4*n^3 - 18*n^2 + 27*n - 12.
-* [A271832](http://oeis.org/
+* [A271832](http://oeis.org/A271832) ([L09 program](A271832.asm)): Period 12 zigzag sequence: repeat [0,1,2,3,4,5,6,5,4,3,2,1].
+* [A271911](http://oeis.org/A271911) ([L05 program](A271911.asm)): Number of ways to choose three distinct points from a 2 X n grid so that they form an isosceles triangle.
+* [A271937](http://oeis.org/A271937) ([L10 program](A271937.asm)): a(n) = (7/4)*n^2 + (5/2)*n + (7 + (-1)^n)/8.
+* [A271994](http://oeis.org/A271994) ([L49 program](A271994.asm)): The chalcogen sequence (a(n) = A018227(n)-2).
+* [A271996](http://oeis.org/A271996) ([L52 program](A271996.asm)): The crystallogen sequence (a(n) = A018227(n)-4).
+* [A272039](http://oeis.org/A272039) ([L07 program](A272039.asm)): a(n) = 10*n^2 + 4*n + 1.
+* [A272058](http://oeis.org/A272058) ([L07 program](A272058.asm)): Start with all terms set to 0. Then add n to the next n+3 terms for n=0,1,2,... .
+* [A272071](http://oeis.org/A272071) ([L15 program](A272071.asm)): Expansion of x*(3 - 2*x + x^2)/((1 - x)^2*(1 + x + x^2)).
+* [A272100](http://oeis.org/A272100) ([L09 program](A272100.asm)): Integers n that are the sum of three nonzero squares while n*(n+1) is not.
+* [A272104](http://oeis.org/A272104) ([L16 program](A272104.asm)): Sum of the even numbers among the larger parts of the partitions of n into two parts.
+* [A272124](http://oeis.org/A272124) ([L42 program](A272124.asm)): a(n) = 12*n^4 + 16*n^3 + 10*n^2 + 4*n + 1.
+* [A272125](http://oeis.org/A272125) ([L14 program](A272125.asm)): a(n) = n^3*(2*n^2+1)/3.
+* [A272126](http://oeis.org/A272126) ([L13 program](A272126.asm)): a(n) = 120*n^3 + 60*n^2 + 2*n + 1.
+* [A272129](http://oeis.org/A272129) ([L09 program](A272129.asm)): a(n) = 32*n^2 - 56*n + 25.
+* [A272130](http://oeis.org/A272130) ([L13 program](A272130.asm)): a(n) = 16*n^3 + 10*n^2 + 4*n + 1.
+* [A272144](http://oeis.org/A272144) ([L23 program](A272144.asm)): Convolution of A000217 and A001045.
+* [A272162](http://oeis.org/A272162) ([L04 program](A272162.asm)): a(n) = n^5-n+1.
+* [A272188](http://oeis.org/A272188) ([L11 program](A272188.asm)): Triangle with 2*n+1 terms per row, read by rows: the first row is 1 (by decree), following rows contain 0 to 2n+1 but omitting 2n.
+* [A272263](http://oeis.org/A272263) ([L24 program](A272263.asm)): a(n) = numerator of A000032(n) - 1/2^n.
+* [A272297](http://oeis.org/A272297) ([L03 program](A272297.asm)): a(n) = n^4 + 64.
+* [A272298](http://oeis.org/A272298) ([L03 program](A272298.asm)): a(n) = n^4 + 324.
+* [A272299](http://oeis.org/A272299) ([L28 program](A272299.asm)): a(n) = n + 2*floor(n/2) + 3*floor(n/3).
+* [A272303](http://oeis.org/A272303) ([L27 program](A272303.asm)): Magic sums of 4 X 4 semimagic squares composed of primes.
+* [A272352](http://oeis.org/A272352) ([L11 program](A272352.asm)): a(n) is the number of ways of putting n labeled balls into 2 indistinguishable boxes such that each box contains at least 3 balls.
+* [A272361](http://oeis.org/A272361) ([L03 program](A272361.asm)): Numbers n such that (2^n + 1) / gcd(n, 2^n + 1) is not squarefree.
+* [A272370](http://oeis.org/A272370) ([L55 program](A272370.asm)): Number of geometrically inscriptible regular polygons with fewer than 2^n + 1 sides.
+* [A272378](http://oeis.org/A272378) ([L11 program](A272378.asm)): a(n) = n*(6*n^2 - 8*n + 3).
+* [A272399](http://oeis.org/A272399) ([L06 program](A272399.asm)): The intersection of hexagonal numbers (A000384) and centered 9-gonal numbers (A060544).
+* [A272459](http://oeis.org/A272459) ([L14 program](A272459.asm)): The total number of different isosceles trapezoids, excluding squares, that can be drawn on a n X n square grid where the corners of each individual trapezoid lie on a lattice point.
+* [A272574](http://oeis.org/A272574) ([L06 program](A272574.asm)): a(n) = f(9, f(8, n)), where f(k,m) = floor(m*k/(k-1)).
+* [A272576](http://oeis.org/A272576) ([L06 program](A272576.asm)): a(n) = f(10, f(9, n)), where f(k,m) = floor(m*k/(k-1)).
+* [A272647](http://oeis.org/A272647) ([L14 program](A272647.asm)): a(n) = A001517(n) mod 7.
+* [A272648](http://oeis.org/A272648) ([L17 program](A272648.asm)): a(n) = A002119(n) mod 7.
+* [A272651](http://oeis.org/A272651) ([L05 program](A272651.asm)): The no-3-in-line problem: maximal number of points from an n X n square grid so that no three lie on a line.
+* [A272664](http://oeis.org/A272664) ([L20 program](A272664.asm)): (001)(001)(001)(10)*.
+* [A272666](http://oeis.org/A272666) ([L09 program](A272666.asm)): a(n) = A011371(n) + 5*n.
+* [A272705](http://oeis.org/A272705) ([L20 program](A272705.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 515", based on the 5-celled von Neumann neighborhood.
+* [A272707](http://oeis.org/A272707) ([L15 program](A272707.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 515", based on the 5-celled von Neumann neighborhood.
+* [A272708](http://oeis.org/A272708) ([L10 program](A272708.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 515", based on the 5-celled von Neumann neighborhood.
+* [A272850](http://oeis.org/A272850) ([L13 program](A272850.asm)): a(n) = (n^2 + (n+1)^2)*(n^2 + (n+1)^2 + 2*n*(n+1)).
+* [A272871](http://oeis.org/A272871) ([L04 program](A272871.asm)): Imaginary part of (n + i)^4.
+* [A272914](http://oeis.org/A272914) ([L13 program](A272914.asm)): Sixth powers ending in digit 6.
+* [A272915](http://oeis.org/A272915) ([L04 program](A272915.asm)): a(n) = n + floor(5*n/6).
+* [A272975](http://oeis.org/A272975) ([L05 program](A272975.asm)): Numbers that are congruent to {0,7} mod 12.
+* [A272978](http://oeis.org/A272978) ([L33 program](A272978.asm)): Numbers not in the range of the sum of perfect divisors function.
+* [A273109](http://oeis.org/A273109) ([L22 program](A273109.asm)): Numbers n such that in the difference triangle of the divisors of n (including the divisors of n) the diagonal from the bottom entry to n gives the divisors of n.
+* [A273129](http://oeis.org/A273129) ([L35 program](A273129.asm)): The Rote-Fibonacci infinite sequence.
+* [A273149](http://oeis.org/A273149) ([L07 program](A273149.asm)): a(n) = A053839(n)+1.
+* [A273220](http://oeis.org/A273220) ([L08 program](A273220.asm)): a(n) = 8n^2 - 12n + 1.
+* [A273308](http://oeis.org/A273308) ([L07 program](A273308.asm)): Maximum population of a 2 X n still life in Conway's Game of Life.
+* [A273309](http://oeis.org/A273309) ([L34 program](A273309.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
+* [A273312](http://oeis.org/A273312) ([L12 program](A273312.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
+* [A273314](http://oeis.org/A273314) ([L18 program](A273314.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
+* [A273315](http://oeis.org/A273315) ([L09 program](A273315.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
+* [A273316](http://oeis.org/A273316) ([L07 program](A273316.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 645", based on the 5-celled von Neumann neighborhood.
+* [A273321](http://oeis.org/A273321) ([L43 program](A273321.asm)): Wiener index of graph of b.c.c. unit cells in a line = Sum of distances in a b.c.c. row graph.
+* [A273322](http://oeis.org/A273322) ([L27 program](A273322.asm)): Wiener index of graphs of f.c.c. unit cells in a line = Sum of distances in face-centered cubic grid unit cells connected in a row.
+* [A273334](http://oeis.org/A273334) ([L43 program](A273334.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
+* [A273336](http://oeis.org/A273336) ([L12 program](A273336.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
+* [A273337](http://oeis.org/A273337) ([L23 program](A273337.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
+* [A273365](http://oeis.org/A273365) ([L13 program](A273365.asm)): Numbers k such that 10*k+4 is a perfect square.
+* [A273366](http://oeis.org/A273366) ([L05 program](A273366.asm)): a(n) = 10*n^2 + 10*n + 2.
+* [A273367](http://oeis.org/A273367) ([L11 program](A273367.asm)): Numbers k such that 10*k+6 is a perfect square.
+* [A273368](http://oeis.org/A273368) ([L14 program](A273368.asm)): Numbers k such that 10*k+9 is a perfect square.
+* [A273372](http://oeis.org/A273372) ([L19 program](A273372.asm)): Squares ending in digit 1.
+* [A273373](http://oeis.org/A273373) ([L13 program](A273373.asm)): Squares ending in digit 6.
+* [A273374](http://oeis.org/A273374) ([L19 program](A273374.asm)): Squares ending in digit 9.
+* [A273375](http://oeis.org/A273375) ([L14 program](A273375.asm)): Squares ending in digit 4.
+* [A273384](http://oeis.org/A273384) ([L13 program](A273384.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 659", based on the 5-celled von Neumann neighborhood.
+* [A273386](http://oeis.org/A273386) ([L26 program](A273386.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 659", based on the 5-celled von Neumann neighborhood.
+* [A273387](http://oeis.org/A273387) ([L20 program](A273387.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 659", based on the 5-celled von Neumann neighborhood.
+* [A273405](http://oeis.org/A273405) ([L20 program](A273405.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 673", based on the 5-celled von Neumann neighborhood.
+* [A273407](http://oeis.org/A273407) ([L13 program](A273407.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 673", based on the 5-celled von Neumann neighborhood.
+* [A273408](http://oeis.org/A273408) ([L10 program](A273408.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 675", based on the 5-celled von Neumann neighborhood.
+* [A273480](http://oeis.org/A273480) ([L14 program](A273480.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
+* [A273481](http://oeis.org/A273481) ([L12 program](A273481.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
+* [A273669](http://oeis.org/A273669) ([L08 program](A273669.asm)): Decimal representation ends with either 2 or 9.
+* [A273675](http://oeis.org/A273675) ([L22 program](A273675.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
+* [A273677](http://oeis.org/A273677) ([L18 program](A273677.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
+* [A273678](http://oeis.org/A273678) ([L14 program](A273678.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
+* [A273743](http://oeis.org/A273743) ([L12 program](A273743.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 901", based on the 5-celled von Neumann neighborhood.
+* [A273744](http://oeis.org/A273744) ([L17 program](A273744.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 901", based on the 5-celled von Neumann neighborhood.
+* [A273745](http://oeis.org/A273745) ([L10 program](A273745.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 901", based on the 5-celled von Neumann neighborhood.
+* [A273769](http://oeis.org/A273769) ([L30 program](A273769.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 913", based on the 5-celled von Neumann neighborhood.
+* [A273782](http://oeis.org/A273782) ([L20 program](A273782.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
+* [A273789](http://oeis.org/A273789) ([L11 program](A273789.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
+* [A273790](http://oeis.org/A273790) ([L18 program](A273790.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
+* [A273791](http://oeis.org/A273791) ([L11 program](A273791.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
+* [A273834](http://oeis.org/A273834) ([L22 program](A273834.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
+* [A273850](http://oeis.org/A273850) ([L18 program](A273850.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 969", based on the 5-celled von Neumann neighborhood.
+* [A273981](http://oeis.org/A273981) ([L25 program](A273981.asm)): Erroneous version of A005897.
+* [A273982](http://oeis.org/A273982) ([L06 program](A273982.asm)): Number of little cubes visible around an n X n X n cube with a face on a table.
+* [A274039](http://oeis.org/A274039) ([L04 program](A274039.asm)): Expansion of (x^4 + x^10) / (1 - 2*x + x^2).
+* [A274047](http://oeis.org/A274047) ([L17 program](A274047.asm)): Diameter of Generalized Petersen Graph G(n, 2).
+* [A274070](http://oeis.org/A274070) ([L03 program](A274070.asm)): Integer part of the sum of the inverses of the first n primes.
+* [A274072](http://oeis.org/A274072) ([L05 program](A274072.asm)): a(n) = 5^n-(-1)^n.
+* [A274073](http://oeis.org/A274073) ([L06 program](A274073.asm)): a(n) = 6^n-(-1)^n.
+* [A274074](http://oeis.org/A274074) ([L13 program](A274074.asm)): a(n) = 6^n+(-1)^n.
+* [A274077](http://oeis.org/A274077) ([L03 program](A274077.asm)): a(n) = n^3 + 4.
+* [A274119](http://oeis.org/A274119) ([L13 program](A274119.asm)): a(n) = (Product_{i=0..4}(i*n+2) - Product_{i=0..4}(-i*n-1))/(4*n+3).
+* [A274179](http://oeis.org/A274179) ([L18 program](A274179.asm)): Expansion of f(x^1, x^6) in powers of x where f() is Ramanujan's general theta function.
+* [A274230](http://oeis.org/A274230) ([L12 program](A274230.asm)): Number of holes in a sheet of paper when you fold it n times and cut off the four corners.
+* [A274248](http://oeis.org/A274248) ([L55 program](A274248.asm)): Row sums of A273751.
+* [A274250](http://oeis.org/A274250) ([L13 program](A274250.asm)): Number of partitions of n^2 into at most three parts.
+* [A274309](http://oeis.org/A274309) ([L23 program](A274309.asm)): Related to integral generalized binomial coefficients of multiplicative functions (see Comments for precise definition).
+* [A274323](http://oeis.org/A274323) ([L04 program](A274323.asm)): Number of partitions of n^4 into at most two parts.
+* [A274324](http://oeis.org/A274324) ([L04 program](A274324.asm)): Number of partitions of n^3 into at most two parts.
+* [A274325](http://oeis.org/A274325) ([L04 program](A274325.asm)): Number of partitions of n^5 into at most two parts.
+* [A274338](http://oeis.org/A274338) ([L17 program](A274338.asm)): The 10-cycle of the iterated sum of deficient divisors function.
+* [A274339](http://oeis.org/A274339) ([L06 program](A274339.asm)): The 3-cycle of the iterated sum of deficient divisors function.
+* [A274340](http://oeis.org/A274340) ([L11 program](A274340.asm)): A 4-cycle of the iterated sum of deficient divisors function.
+* [A274380](http://oeis.org/A274380) ([L11 program](A274380.asm)): A 4-cycle of the iterated sum of deficient divisors function.
+* [A274406](http://oeis.org/A274406) ([L08 program](A274406.asm)): Numbers m such that 9 divides m*(m + 1).
+* [A274497](http://oeis.org/A274497) ([L06 program](A274497.asm)): Sum of the degrees of asymmetry of all binary words of length n.
+* [A274499](http://oeis.org/A274499) ([L09 program](A274499.asm)): Sum of the degrees of asymmetry of all ternary words of length n.
+* [A274576](http://oeis.org/A274576) ([L07 program](A274576.asm)): a(2n) = floor(n/2), a(2n+1) = a(n), a(0)=0.
+* [A274583](http://oeis.org/A274583) ([L07 program](A274583.asm)): Expansion of (1 + x + x^2 - x^3 - x^4 + x^6)/((1 - x)^3*(1 + x + x^2)^2).
+* [A274616](http://oeis.org/A274616) ([L10 program](A274616.asm)): Maximal number of non-attacking queens on a right triangular board with n cells on each side.
+* [A274681](http://oeis.org/A274681) ([L14 program](A274681.asm)): Numbers k such that 4*k + 1 is a triangular number.
+* [A274682](http://oeis.org/A274682) ([L27 program](A274682.asm)): Numbers n such that 8*n-1 is a triangular number.
+* [A274757](http://oeis.org/A274757) ([L12 program](A274757.asm)): Numbers k such that 6*k+1 is a triangular number (A000217).
+* [A274772](http://oeis.org/A274772) ([L12 program](A274772.asm)): Zero together with the partial sums of A056640.
+* [A274830](http://oeis.org/A274830) ([L11 program](A274830.asm)): Numbers n such that 7*n+1 is a triangular number (A000217).
+* [A274933](http://oeis.org/A274933) ([L17 program](A274933.asm)): Maximal number of non-attacking queens on a quarter chessboard containing n^2 squares.
+* [A274973](http://oeis.org/A274973) ([L12 program](A274973.asm)): Centered cubohemioctahedral numbers: a(n) = 2*n^3+9*n^2+n+1.
+* [A274974](http://oeis.org/A274974) ([L10 program](A274974.asm)): Centered octahemioctahedral numbers: a(n) = (4*n^3+24*n^2+8*n+3)/3.
+* [A274978](http://oeis.org/A274978) ([L17 program](A274978.asm)): Integers of the form m*(m + 6)/7.
+* [A274979](http://oeis.org/A274979) ([L13 program](A274979.asm)): Integers of the form m*(m + 7)/8.
+* [A274981](http://oeis.org/A274981) ([L04 program](A274981.asm)): Decimal expansion of gamma(2) = 7/5.
+* [A275015](http://oeis.org/A275015) ([L10 program](A275015.asm)): Number of neighbors of each new term in an isosceles triangle read by rows.
+* [A275138](http://oeis.org/A275138) ([L28 program](A275138.asm)): Number of n X 4 0..2 arrays with no element equal to any value at offset (-2,-2) (-1,-2) or (0,-1) and new values introduced in order 0..2.
+* [A275151](http://oeis.org/A275151) ([L18 program](A275151.asm)): a(1) = 8; a(n) = 3*a(n-1) + 2*sqrt(2*a(n-1)*(a(n-1)-7)) - 7 for n > 1.
+* [A275155](http://oeis.org/A275155) ([L16 program](A275155.asm)): a(1) = 18; a(n) = 3*a(n - 1) + 2*sqrt(2*a(n - 1)*(a(n - 1) - 14)) - 14 for n > 1.
+* [A275163](http://oeis.org/A275163) ([L05 program](A275163.asm)): a(n) = 13*2^(n+1) - 19.
+* [A275202](http://oeis.org/A275202) ([L21 program](A275202.asm)): Subword complexity (number of distinct blocks of length n) of the period doubling sequence A096268.
+* [A275346](http://oeis.org/A275346) ([L06 program](A275346.asm)): In Go, minimum total number of liberties player 1 (black) can have on a standard 19 X 19 board after n moves when no player passes a move, with no repeating game positions allowed.
+* [A275365](http://oeis.org/A275365) ([L06 program](A275365.asm)): a(1)=2, a(2)=2; thereafter a(n) = a(n-a(n-1)) + a(n-a(n-2)).
+* [A275437](http://oeis.org/A275437) ([L11 program](A275437.asm)): Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
+* [A275496](http://oeis.org/A275496) ([L17 program](A275496.asm)): a(n) = n^2*(2*n^2 + (-1)^n).
+* [A275543](http://oeis.org/A275543) ([L05 program](A275543.asm)): A081585 and A069129 interleaved.
+* [A275580](http://oeis.org/A275580) ([L19 program](A275580.asm)): Add square root of sum of terms.
+* [A275591](http://oeis.org/A275591) ([L04 program](A275591.asm)): a(n) = n^2 + 9*n + 1.
+* [A275615](http://oeis.org/A275615) ([L10 program](A275615.asm)): Decimal expansion of 22/111.
+* [A275673](http://oeis.org/A275673) ([L05 program](A275673.asm)): List of numbers that are in a spoke of a hexagonal spiral.
+* [A275704](http://oeis.org/A275704) ([L05 program](A275704.asm)): Digital root of n + (n+1)^2.
+* [A275709](http://oeis.org/A275709) ([L06 program](A275709.asm)): a(n) = 2*n^3 + 3*n^2.
+* [A275793](http://oeis.org/A275793) ([L19 program](A275793.asm)): The x members of the positive proper solutions (x = x1(n), y = y1(n)) of the first class for the Pell equation x^2 - 2*y^2 = +7^2.
+* [A275794](http://oeis.org/A275794) ([L14 program](A275794.asm)): One half of the y members of the positive proper solutions (x = x1(n), y = y1(n)) of the first class for the Pell equation x^2 - 2*y^2 = +7^2.
+* [A275795](http://oeis.org/A275795) ([L13 program](A275795.asm)): The x members of the positive proper solutions (x = x2(n), y = y2(n)) of the second class for the Pell equation x^2 - 2*y^2 = +7^2.
+* [A275796](http://oeis.org/A275796) ([L16 program](A275796.asm)): One half of the y members of the positive proper solutions (x = x2(n), y = y2(n)) of the second class for the Pell equation x^2 - 2*y^2 = +7^2.
+* [A275874](http://oeis.org/A275874) ([L08 program](A275874.asm)): a(n) = (n-4)*(n+1)*(n+3)/6.
+* [A275910](http://oeis.org/A275910) ([L07 program](A275910.asm)): Numbers not congruent to 0, 1 or 8 mod 9.
+* [A275970](http://oeis.org/A275970) ([L08 program](A275970.asm)): a(n) = 3*2^n + n - 1.
+* [A275973](http://oeis.org/A275973) ([L13 program](A275973.asm)): A binary sequence due to Harold Jeffreys.
+* [A275974](http://oeis.org/A275974) ([L21 program](A275974.asm)): Partial sums of the Jeffreys binary sequence A275973.
+* [A276026](http://oeis.org/A276026) ([L06 program](A276026.asm)): a(n) = Sum_{k=0..7} (n + k)^2.
+* [A276041](http://oeis.org/A276041) ([L10 program](A276041.asm)): Exponential convolution of odd numbers (A005408) with themselves.
+* [A276234](http://oeis.org/A276234) ([L15 program](A276234.asm)): a(n) = n/gcd(n, 256).
+* [A276265](http://oeis.org/A276265) ([L14 program](A276265.asm)): Expansion of (1 + 2*x)/(1 - 6*x + 6*x^2).
+* [A276278](http://oeis.org/A276278) ([L08 program](A276278.asm)): Complement of A026474.
+* [A276283](http://oeis.org/A276283) ([L14 program](A276283.asm)): Expansion of (1 + x + 3*x^2 + x^3)/((1 - x)^2*(1 + x^2)).
+* [A276351](http://oeis.org/A276351) ([L66 program](A276351.asm)): a(n) = 2*(3 + 2 n + 3 n^2 + 3 n^3 + 3 n^4 + n^5 + n^6).
+* [A276382](http://oeis.org/A276382) ([L08 program](A276382.asm)): a(1) = 1, and a(n) = a(n-1) + floor(3*n/2) + 1 for n >= 2.
+* [A276391](http://oeis.org/A276391) ([L07 program](A276391.asm)): G.f. satisfies A(x) - 4*A(x^2) = x/(1+x).
+* [A276394](http://oeis.org/A276394) ([L18 program](A276394.asm)): Characteristic word associated with the fraction 36/25.
+* [A276395](http://oeis.org/A276395) ([L33 program](A276395.asm)): Characteristic function of floor(36*n/25).
+* [A276397](http://oeis.org/A276397) ([L40 program](A276397.asm)): Trajectory of 0 under the morphism 0 -> 001, 1 -> 0010.
+* [A276577](http://oeis.org/A276577) ([L50 program](A276577.asm)): Row 5 of A276580: a(n) = A255415(n) modulo 11.
+* [A276598](http://oeis.org/A276598) ([L10 program](A276598.asm)): Values of n such that n^2 + 3 is a triangular number (A000217).
+* [A276602](http://oeis.org/A276602) ([L08 program](A276602.asm)): Values of n such that n^2 + 10 is a triangular number (A000217).
+* [A276659](http://oeis.org/A276659) ([L07 program](A276659.asm)): Accumulation of the upper left triangle used in binomial transform of nonnegative integers.
+* [A276704](http://oeis.org/A276704) ([L23 program](A276704.asm)): Records in A249859.
+* [A276706](http://oeis.org/A276706) ([L27 program](A276706.asm)): Indices of records in A249860.
+* [A276757](http://oeis.org/A276757) ([L62 program](A276757.asm)): Infinite Fibonacci word on the alphabet {1,2,3,4,5}.
+* [A276764](http://oeis.org/A276764) ([L11 program](A276764.asm)): 1^2 + 3^2, 2^2 + 4^2, 5^2 + 7^2, 6^2 + 8^2, ...
+* [A276819](http://oeis.org/A276819) ([L05 program](A276819.asm)): a(n) = a(n-1) + 9*n - 5 with a(0) = 1.
+* [A276849](http://oeis.org/A276849) ([L10 program](A276849.asm)): a(0) = 5, a(1) = 2; for n>1, a(n) = 2*a(n-1) + a(n-2).
+* [A276856](http://oeis.org/A276856) ([L357 program](A276856.asm)): First differences of the Beatty sequence A022840 for sqrt(6).
+* [A276862](http://oeis.org/A276862) ([L117 program](A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
+* [A276871](http://oeis.org/A276871) ([L20 program](A276871.asm)): Sums-complement of the Beatty sequence for sqrt(5).
+* [A276876](http://oeis.org/A276876) ([L10 program](A276876.asm)): Sums-complement of the Beatty sequence for 2e.
+* [A276877](http://oeis.org/A276877) ([L12 program](A276877.asm)): Sums-complement of the Beatty sequence for Pi.
+* [A276878](http://oeis.org/A276878) ([L12 program](A276878.asm)): Sums-complement of the Beatty sequence for 2*Pi.
+* [A276879](http://oeis.org/A276879) ([L23 program](A276879.asm)): Sums-complement of the Beatty sequence for 1 + sqrt(2).
+* [A276884](http://oeis.org/A276884) ([L46 program](A276884.asm)): Sums-complement of the Beatty sequence for 2 + sqrt(5).
+* [A276888](http://oeis.org/A276888) ([L23 program](A276888.asm)): Sums-complement of the Beatty sequence for 2 + sqrt(1/2).
+* [A276914](http://oeis.org/A276914) ([L11 program](A276914.asm)): Subsequence of triangular numbers obtained by adding a square and two smaller triangles, a(n) = n^2 + 2*A000217(A052928(n)).
+* [A276916](http://oeis.org/A276916) ([L24 program](A276916.asm)): Subsequence of centered square numbers obtained by adding four triangles from A276914 and a central element, a(n) = 4*A276914(n) + 1.
+* [A277051](http://oeis.org/A277051) ([L10 program](A277051.asm)): a(n) = floor(n/(1-3/Pi)).
+* [A277052](http://oeis.org/A277052) ([L17 program](A277052.asm)): a(n) = n+floor(n/(2/sqrt(Pi)-1)).
+* [A277082](http://oeis.org/A277082) ([L12 program](A277082.asm)): Generalized 15-gonal (or pentadecagonal) numbers: n*(13*n - 11)/2, n = 0,+1,-1,+2,-2,+3,-3, ...
+* [A277104](http://oeis.org/A277104) ([L05 program](A277104.asm)): a(n) = 9*3^n - 15.
+* [A277105](http://oeis.org/A277105) ([L05 program](A277105.asm)): a(n) = (27*3^n - 63)/2.
+* [A277106](http://oeis.org/A277106) ([L05 program](A277106.asm)): a(n) = 8*3^n - 12.
+* [A277107](http://oeis.org/A277107) ([L04 program](A277107.asm)): a(n) = 16*3^n - 48.
+* [A277108](http://oeis.org/A277108) ([L05 program](A277108.asm)): a(n) = 4n*(n+5).
+* [A277131](http://oeis.org/A277131) ([L19 program](A277131.asm)): Magic numbers of anti-Mackay icosahedra.
+* [A277155](http://oeis.org/A277155) ([L12 program](A277155.asm)): Lexicographically least sequence of nonnegative integers that avoids 11/7-powers.
+* [A277160](http://oeis.org/A277160) ([L12 program](A277160.asm)): Lexicographically least sequence of nonnegative integers that avoids 13/8-powers.
+* [A277228](http://oeis.org/A277228) ([L12 program](A277228.asm)): Convolution of the even-indexed triangular numbers (A014105) and the squares (A000290).
+* [A277229](http://oeis.org/A277229) ([L09 program](A277229.asm)): Convolution of the odd-indexed triangular numbers (A000384(n+1)) and the squares (A000290).
+* [A277267](http://oeis.org/A277267) ([L10 program](A277267.asm)): Minimum number of single-direction edges in leveled binary trees with n nodes.
+* [A277351](http://oeis.org/A277351) ([L25 program](A277351.asm)): Value of (n+1,n) concatenated in binary representation.
+* [A277369](http://oeis.org/A277369) ([L14 program](A277369.asm)): a(0) = 5, a(1) = 8; for n>1, a(n) = 2*a(n-1) + a(n-2).
+* [A277385](http://oeis.org/A277385) ([L12 program](A277385.asm)): Records in A277384.
+* [A277411](http://oeis.org/A277411) ([L08 program](A277411.asm)): Column 1 of triangle A277410.
+* [A277425](http://oeis.org/A277425) ([L07 program](A277425.asm)): a(n) = sqrt(16*t^2 - 32*t + k^2 + 8*k - 8*k*t + 16), where t = ceiling((sqrt(n))) and k = t^2 - n.
+* [A277450](http://oeis.org/A277450) ([L47 program](A277450.asm)): a(1) = 1, a(n) = floor(n*Sum_{k=1..n-1} a(k)/2^k - Sum_{k=1..n-1} a(k)) for n > 1.
+* [A277451](http://oeis.org/A277451) ([L10 program](A277451.asm)): Number of edges in geodesic dome generated from icosahedron by recursively dividing each triangle in 4.
+* [A277618](http://oeis.org/A277618) ([L05 program](A277618.asm)): Lexicographically earliest nonnegative sequence such that |a(n+1)-a(n)| is a prime number, and no number occurs twice; a(0) = 0.
+* [A277636](http://oeis.org/A277636) ([L67 program](A277636.asm)): Number of 3 X 3 matrices having all elements in {0,...,n} with determinant = permanent.
+* [A277690](http://oeis.org/A277690) ([L23 program](A277690.asm)): Smallest possible number of sides of a regular polygon with unit sides and circumradius n.
+* [A277723](http://oeis.org/A277723) ([L08 program](A277723.asm)): a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265).
+* [A277792](http://oeis.org/A277792) ([L07 program](A277792.asm)): Squares that are also pentagonal pyramidal numbers.
+* [A277800](http://oeis.org/A277800) ([L15 program](A277800.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 1", based on the 5-celled von Neumann neighborhood.
+* [A277866](http://oeis.org/A277866) ([L08 program](A277866.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
+* [A277867](http://oeis.org/A277867) ([L11 program](A277867.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
+* [A277929](http://oeis.org/A277929) ([L11 program](A277929.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
+* [A277935](http://oeis.org/A277935) ([L05 program](A277935.asm)): Number of ways 2*n-1 people can vote on three candidates so that the Condorcet paradox arises.
+* [A277936](http://oeis.org/A277936) ([L07 program](A277936.asm)): Decimal representation of the x-axis, from the left edge to the origin, or from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.
+* [A277954](http://oeis.org/A277954) ([L19 program](A277954.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 14", based on the 5-celled von Neumann neighborhood.
+* [A277955](http://oeis.org/A277955) ([L08 program](A277955.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 14", based on the 5-celled von Neumann neighborhood.
+* [A277975](http://oeis.org/A277975) ([L09 program](A277975.asm)): a(n) = n*x^n + (n-1)*x^(n-1) + . . . + x + 1 for x=5.
+* [A277976](http://oeis.org/A277976) ([L08 program](A277976.asm)): a(n) = n*(3*n + 23).
+* [A277977](http://oeis.org/A277977) ([L40 program](A277977.asm)): a(n) = n*(1-3n+2*n^2+2*n^3)/2.
+* [A277978](http://oeis.org/A277978) ([L04 program](A277978.asm)): a(n) = 3n(n+3).
+* [A277979](http://oeis.org/A277979) ([L04 program](A277979.asm)): a(n) = 4*n^2 + 18*n.
+* [A277980](http://oeis.org/A277980) ([L06 program](A277980.asm)): a(n) = 12*n^2 + 18*n.
+* [A277984](http://oeis.org/A277984) ([L15 program](A277984.asm)): a(n) = 6*n*(9*n-5).
+* [A277985](http://oeis.org/A277985) ([L12 program](A277985.asm)): a(n) = 3*(9*n - 1)*(3*n - 2).
+* [A277988](http://oeis.org/A277988) ([L05 program](A277988.asm)): a(n) = 352*2^n + 34.
+* [A277989](http://oeis.org/A277989) ([L05 program](A277989.asm)): a(n) = 424*2^n + 37.
+* [A277990](http://oeis.org/A277990) ([L06 program](A277990.asm)): a(n) = 54*n^2 + 6*n.
+* [A277991](http://oeis.org/A277991) ([L05 program](A277991.asm)): a(n) = 81*n^2 - 9*n.
+* [A278105](http://oeis.org/A278105) ([L03 program](A278105.asm)): a(n) = floor(3/n).
+* [A278122](http://oeis.org/A278122) ([L05 program](A278122.asm)): a(n) = 204*2^n - 248.
+* [A278123](http://oeis.org/A278123) ([L05 program](A278123.asm)): a(n) = 247*2^n - 300.
+* [A278126](http://oeis.org/A278126) ([L03 program](A278126.asm)): a(n) = 78*n + 66.
+* [A278127](http://oeis.org/A278127) ([L03 program](A278127.asm)): a(n) = 99*n + 71.
+* [A278128](http://oeis.org/A278128) ([L05 program](A278128.asm)): a(n) = 288*2^n - 156.
+* [A278129](http://oeis.org/A278129) ([L05 program](A278129.asm)): a(n) = 348*2^n - 188.
+* [A278130](http://oeis.org/A278130) ([L05 program](A278130.asm)): a(n) = 492*2^n - 222.
+* [A278131](http://oeis.org/A278131) ([L05 program](A278131.asm)): a(n) = 591*2^n - 273.
+* [A278313](http://oeis.org/A278313) ([L09 program](A278313.asm)): Number of letters "I" in Roman numeral representation of n.
+* [A278417](http://oeis.org/A278417) ([L07 program](A278417.asm)): a(n) = n*((2+sqrt(3))^n + (2-sqrt(3))^n)/2.
+* [A278484](http://oeis.org/A278484) ([L10 program](A278484.asm)): Main diagonal of A278482.
+* [A278536](http://oeis.org/A278536) ([L13 program](A278536.asm)): First differences of A273324.
+* [A278597](http://oeis.org/A278597) ([L14 program](A278597.asm)): One half of A278481.
+* [A278814](http://oeis.org/A278814) ([L08 program](A278814.asm)): a(n) = ceiling(sqrt(3n+1)).
+* [A278816](http://oeis.org/A278816) ([L05 program](A278816.asm)): Numbers that can be produced from their own digits by applying one or more of the eight operations {+, -, *, /, sqrt(), ^, !, concat11()}, with no operation used more than once, where "concat11()" means the operation of concatenating two single digits.
+* [A278831](http://oeis.org/A278831) ([L12 program](A278831.asm)): Minimal number of possible moves at the n-th ply of a chess game, excluding positions where no move is possible.
+* [A279019](http://oeis.org/A279019) ([L03 program](A279019.asm)): Least possible number of diagonals of simple convex polyhedron with n faces.
+* [A279030](http://oeis.org/A279030) ([L07 program](A279030.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 129", based on the 5-celled von Neumann neighborhood.
+* [A279075](http://oeis.org/A279075) ([L14 program](A279075.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/5) requires n steps to reach 0.
+* [A279076](http://oeis.org/A279076) ([L11 program](A279076.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/6) requires n steps to reach 0.
+* [A279077](http://oeis.org/A279077) ([L19 program](A279077.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/7) requires n steps to reach 0.
+* [A279078](http://oeis.org/A279078) ([L13 program](A279078.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/8) requires n steps to reach 0.
+* [A279079](http://oeis.org/A279079) ([L12 program](A279079.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/9) requires n steps to reach 0.
+* [A279080](http://oeis.org/A279080) ([L13 program](A279080.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/10) requires n steps to reach 0.
+* [A279093](http://oeis.org/A279093) ([L37 program](A279093.asm)): Numbers that are nontrivially palindromic in three or more consecutive integer bases.
+* [A279169](http://oeis.org/A279169) ([L04 program](A279169.asm)): a(n) = floor( 4*n^2/5 ).
+* [A279211](http://oeis.org/A279211) ([L15 program](A279211.asm)): Fill an array by antidiagonals upwards; in the n-th cell, enter the number of earlier cells that can be seen from that cell.
+* [A279260](http://oeis.org/A279260) ([L13 program](A279260.asm)): Numbers which are cyclops palindromic in their binary reflected Gray code representation.
+* [A279289](http://oeis.org/A279289) ([L25 program](A279289.asm)): Numbers n such that phi(n) > tau(n).
+* [A279313](http://oeis.org/A279313) ([L12 program](A279313.asm)): Period 14 zigzag sequence: repeat [0,1,2,3,4,5,6,7,6,5,4,3,2,1].
+* [A279316](http://oeis.org/A279316) ([L08 program](A279316.asm)): Period 7: repeat [0, 1, 2, 3, 3, 2, 1].
+* [A279319](http://oeis.org/A279319) ([L17 program](A279319.asm)): Period 16 zigzag sequence: repeat [0,1,2,3,4,5,6,7,8,7,6,5,4,3,2,1].
+* [A279321](http://oeis.org/A279321) ([L14 program](A279321.asm)): Period 7: repeat [1, 3, 5, 7, 5, 3, 1].
+* [A279521](http://oeis.org/A279521) ([L09 program](A279521.asm)): Maximum numbers of single-direction edges in leveled binary trees with n nodes.
+* [A279561](http://oeis.org/A279561) ([L18 program](A279561.asm)): Number of length n inversion sequences avoiding the patterns 101, 102, 201, and 210.
+* [A279704](http://oeis.org/A279704) ([L09 program](A279704.asm)): Number of n X 3 0..1 arrays with no element equal to a strict majority of its horizontal and antidiagonal neighbors and with new values introduced in order 0 sequentially upwards.
+* [A279758](http://oeis.org/A279758) ([L08 program](A279758.asm)): Expansion of Product_{k>=1} 1/(1 - x^(k*(5*k^2-5*k+2)/2)).
+* [A279872](http://oeis.org/A279872) ([L05 program](A279872.asm)): Decimal representation of the x-axis, from the left edge to the origin, (and also from the origin to the right edge) of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 209", based on the 5-celled von Neumann neighborhood.
+* [A279891](http://oeis.org/A279891) ([L06 program](A279891.asm)): Triangle read by rows, T(n,k) = 2*n, with n>=k>=0.
+* [A279895](http://oeis.org/A279895) ([L06 program](A279895.asm)): a(n) = n*(5*n + 11)/2.
+* [A280014](http://oeis.org/A280014) ([L30 program](A280014.asm)): Numbers n == +- 2 (mod 10) but not n == 2 (mod 6).
+* [A280026](http://oeis.org/A280026) ([L14 program](A280026.asm)): Fill an infinite square array by following a spiral around the origin; in the n-th cell, enter the number of earlier cells that can be seen from that cell.
+* [A280058](http://oeis.org/A280058) ([L03 program](A280058.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} with determinant = permanent with no entries repeated.
+* [A280059](http://oeis.org/A280059) ([L11 program](A280059.asm)): Number of 2 X 2 matrices having all elements in {-n,..,0,..,n} with determinant = permanent.
+* [A280089](http://oeis.org/A280089) ([L16 program](A280089.asm)): a(n) = 4 * n^3 - 3 * n + 1.
+* [A280154](http://oeis.org/A280154) ([L12 program](A280154.asm)): a(n) = 5*Lucas(n).
+* [A280173](http://oeis.org/A280173) ([L08 program](A280173.asm)): a(0) = 1, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [5, -4].
+* [A280186](http://oeis.org/A280186) ([L08 program](A280186.asm)): Number of 3-element subsets of S = {1..n} whose sum is odd.
+* [A280293](http://oeis.org/A280293) ([L12 program](A280293.asm)): a(0) = 3, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [-5, 4].
+* [A280304](http://oeis.org/A280304) ([L07 program](A280304.asm)): a(n) = 3*n*(n^2 + 3*n + 4).
+* [A280321](http://oeis.org/A280321) ([L13 program](A280321.asm)): Number of 2 X 2 matrices with all elements in {0,..,n} having determinant = n*permanent.
+* [A280344](http://oeis.org/A280344) ([L08 program](A280344.asm)): Number of 2 X 2 matrices with all elements in {0,...,n} with determinant = permanent^n.
+* [A280345](http://oeis.org/A280345) ([L23 program](A280345.asm)): a(0) = 3, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [1, -2].
+* [A280364](http://oeis.org/A280364) ([L20 program](A280364.asm)): Number of 2 X 2 matrices with all elements in {0,...,n} with permanent = determinant^n.
+* [A280412](http://oeis.org/A280412) ([L07 program](A280412.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 261", based on the 5-celled von Neumann neighborhood.
+* [A280428](http://oeis.org/A280428) ([L04 program](A280428.asm)): a(n) = 1729*n^3.
+* [A280429](http://oeis.org/A280429) ([L10 program](A280429.asm)): Longest word T from a string S using no breakpoint-reuse.
+* [A280510](http://oeis.org/A280510) ([L09 program](A280510.asm)): Index sequence of the Thue-Morse sequence (A010060) as a block-fractal sequence.
+* [A280511](http://oeis.org/A280511) ([L07 program](A280511.asm)): Index sequence of the block-fractal sequence A001468.
+* [A280523](http://oeis.org/A280523) ([L08 program](A280523.asm)): a(n) = Fibonacci(2n + 1) - n.
+* [A280658](http://oeis.org/A280658) ([L16 program](A280658.asm)): Numbers ending with their digital root in decimal representation.
+* [A280682](http://oeis.org/A280682) ([L08 program](A280682.asm)): Integers m such that floor(sqrt(m)) is even.
+* [A280724](http://oeis.org/A280724) ([L17 program](A280724.asm)): Expansion of 1/(1 - x) + (1/(1 - x)^2)*Sum_{k>=0} x^(3^k).
+* [A281026](http://oeis.org/A281026) ([L06 program](A281026.asm)): a(n) = floor(3*n*(n+1)/4).
+* [A281098](http://oeis.org/A281098) ([L10 program](A281098.asm)): a(n) is the GCD of the sequence d(n) = A261327(k+n) - A261327(k) for all k.
+* [A281151](http://oeis.org/A281151) ([L06 program](A281151.asm)): a(n) = floor(4*n*(n+1)/5).
+* [A281200](http://oeis.org/A281200) ([L14 program](A281200.asm)): Number of n X 3 0..1 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
+* [A281258](http://oeis.org/A281258) ([L11 program](A281258.asm)): Digital root of n*(n+1)*(n+2)/2.
+* [A281333](http://oeis.org/A281333) ([L16 program](A281333.asm)): a(n) = 1 + floor(n/2) + floor(n^2/3).
+* [A281375](http://oeis.org/A281375) ([L11 program](A281375.asm)): a(n) = floor(2^(n+1)/n).
+* [A281376](http://oeis.org/A281376) ([L13 program](A281376.asm)): Total number of counts where floor(N/k) < floor((N+k)/n) for k = {1, 2, ..., n-1} and N >= n.
+* [A281381](http://oeis.org/A281381) ([L08 program](A281381.asm)): a(n) = n*(n + 1)*(4*n + 5)/2.
+* [A281387](http://oeis.org/A281387) ([L07 program](A281387.asm)): Pairs (x, y) of relatively prime positive integers such that (x^2 - 5)/y and (y^2 - 5)/x are both positive integers.
+* [A281445](http://oeis.org/A281445) ([L10 program](A281445.asm)): Nonnegative k for which (2*k^2 + 1)/11 is an integer.
+* [A281481](http://oeis.org/A281481) ([L12 program](A281481.asm)): a(n) = 2^(n - 1) * (2^n + 1) + 1.
+* [A281482](http://oeis.org/A281482) ([L09 program](A281482.asm)): a(n) = 2^(n + 1) * (2^n + 1) - 1.
+* [A281500](http://oeis.org/A281500) ([L09 program](A281500.asm)): Reduced denominators of f(n) = (n+1)/(2^(2+n)-2) with A026741(n+1) as numerators.
+* [A281546](http://oeis.org/A281546) ([L03 program](A281546.asm)): a(n) = 27*n + 2.
+* [A281699](http://oeis.org/A281699) ([L13 program](A281699.asm)): Sierpinski stellated octahedron numbers: a(n) = 2*(-3*2^(n+1) + 2^(2n+3) + 5).
+* [A281746](http://oeis.org/A281746) ([L54 program](A281746.asm)): Nonnegative numbers n such that n == 0 mod 3 or n == 0 mod 5.
+* [A281773](http://oeis.org/A281773) ([L23 program](A281773.asm)): Number of distinct topologies on an n-set that have exactly 4 open sets.
+* [A281813](http://oeis.org/A281813) ([L06 program](A281813.asm)): a(0) = 3, a(n) = 8*n + 4 for n > 0.
+* [A281899](http://oeis.org/A281899) ([L06 program](A281899.asm)): a(n) = n + 6*floor(n/3).
+* [A282057](http://oeis.org/A282057) ([L19 program](A282057.asm)): Odd numbers n such that for all k >= 1 the numbers n*4^k - 1 and n*4^k + 1 do not form a twin prime pair.
+* [A282153](http://oeis.org/A282153) ([L10 program](A282153.asm)): Expansion of x*(1 - 2*x + 3*x^2)/((1 - x)*(1 - 2*x)*(1 - x + x^2)).
+* [A282232](http://oeis.org/A282232) ([L05 program](A282232.asm)): a(n) = ((3*n + 1)^6 - 1)/9.
+* [A282413](http://oeis.org/A282413) ([L09 program](A282413.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 467", based on the 5-celled von Neumann neighborhood.
+* [A282513](http://oeis.org/A282513) ([L08 program](A282513.asm)): a(n) = floor((3*n + 2)^2/24 + 1/3).
+* [A282532](http://oeis.org/A282532) ([L07 program](A282532.asm)): Position where the discrete difference of the Poissonian probability distribution function with mean n takes its lowest value. In case of a tie, pick the smallest value.
+* [A282577](http://oeis.org/A282577) ([L07 program](A282577.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 553", based on the 5-celled von Neumann neighborhood.
+* [A282579](http://oeis.org/A282579) ([L16 program](A282579.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 553", based on the 5-celled von Neumann neighborhood.
+* [A282612](http://oeis.org/A282612) ([L08 program](A282612.asm)): Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to row permutations.
+* [A282622](http://oeis.org/A282622) ([L30 program](A282622.asm)): Number of digits of the representation of n in the alternating sexagesimal-decimal number system.
+* [A282702](http://oeis.org/A282702) ([L13 program](A282702.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=4, a(1)=11.
+* [A282703](http://oeis.org/A282703) ([L13 program](A282703.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=7, a(1)=26.
+* [A282737](http://oeis.org/A282737) ([L11 program](A282737.asm)): Expansion of (x^6 - x^4 + x^3 - x - 1)/((x - 1)^3*(x + 1)^2).
+* [A282738](http://oeis.org/A282738) ([L10 program](A282738.asm)): First differences of A282737.
+* [A282816](http://oeis.org/A282816) ([L14 program](A282816.asm)): Number of inequivalent ways to color the faces of a cube using at most n colors so that no two opposite sides have the same color.
+* [A282819](http://oeis.org/A282819) ([L14 program](A282819.asm)): Number of inequivalent ways to color the edges of a tetrahedron using at most n colors so that no two opposite edges have the same color.
+* [A282848](http://oeis.org/A282848) ([L09 program](A282848.asm)): a(n) = 2*n + 1 + n mod 4.
+* [A282850](http://oeis.org/A282850) ([L10 program](A282850.asm)): 38-gonal numbers: a(n) = n*(18*n-17).
+* [A282851](http://oeis.org/A282851) ([L10 program](A282851.asm)): 35-gonal numbers: a(n) = n*(33*n-31)/2.
+* [A282852](http://oeis.org/A282852) ([L17 program](A282852.asm)): 37-gonal numbers: a(n) = n*(35*n-33)/2.
+* [A282853](http://oeis.org/A282853) ([L12 program](A282853.asm)): 36-gonal numbers: a(n) = n*(17*n-16).
+* [A282854](http://oeis.org/A282854) ([L10 program](A282854.asm)): 34-gonal numbers: a(n) = n*(32*n-30)/2.
+* [A282939](http://oeis.org/A282939) ([L08 program](A282939.asm)): Maximum number of straight lines required to draw the boundary of any polyomino with n squares.
+* [A283070](http://oeis.org/A283070) ([L04 program](A283070.asm)): Sierpinski tetrahedron or tetrix numbers: a(n) = 2*4^n + 2.
+* [A283208](http://oeis.org/A283208) ([L06 program](A283208.asm)): Minimal exponent integer sequence associated with Vietoris sequence.
+* [A283353](http://oeis.org/A283353) ([L12 program](A283353.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 619", based on the 5-celled von Neumann neighborhood.
+* [A283393](http://oeis.org/A283393) ([L04 program](A283393.asm)): a(n) = gcd(n^2-1, n^2+9).
+* [A283394](http://oeis.org/A283394) ([L07 program](A283394.asm)): a(n) = 3*n*(3*n + 7)/2 + 4.
+* [A283428](http://oeis.org/A283428) ([L31 program](A283428.asm)): Starting with a(1)=3, a(2)=4, a(n)=sum of digits of a(n-1) + sum of digits of a(n-2).
+* [A283437](http://oeis.org/A283437) ([L15 program](A283437.asm)): Periodic {1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1}.
+* [A283442](http://oeis.org/A283442) ([L08 program](A283442.asm)): a(n) = lcm(n,5) / gcd(n,5).
+* [A283506](http://oeis.org/A283506) ([L18 program](A283506.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
+* [A283507](http://oeis.org/A283507) ([L11 program](A283507.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
+* [A283523](http://oeis.org/A283523) ([L13 program](A283523.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 913", based on the 5-celled von Neumann neighborhood.
+* [A283591](http://oeis.org/A283591) ([L15 program](A283591.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
+* [A283592](http://oeis.org/A283592) ([L13 program](A283592.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
+* [A283642](http://oeis.org/A283642) ([L07 program](A283642.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 678", based on the 5-celled von Neumann neighborhood.
+* [A283833](http://oeis.org/A283833) ([L14 program](A283833.asm)): For t >= 0, if 2^t + t - 3 <= n <= 2^t + t - 1 then a(n) = 2^t - 1, while if 2^t + t - 1 < n < 2^(t+1) + t - 3 then a(n) = 2^(t+1) + t - 2 - n.
+* [A283963](http://oeis.org/A283963) ([L67 program](A283963.asm)): Fixed point of the morphism 0 -> 1, 1 -> 1010.
+* [A283971](http://oeis.org/A283971) ([L08 program](A283971.asm)): a(n) = n except a(4*n + 2) = 2*n + 1.
+* [A284122](http://oeis.org/A284122) ([L24 program](A284122.asm)): Number of binary words w of length n for which s, the longest proper suffix of w that appears at least twice in w, is of length 1 (i.e., either s = 0 or s = 1).
+* [A284248](http://oeis.org/A284248) ([L08 program](A284248.asm)): Every binary string w of length n has a subword of length a(n) that appears at least twice in w.
+* [A284307](http://oeis.org/A284307) ([L12 program](A284307.asm)): Permutation of the natural numbers partitioned into quadruples [4k-3, 4k, 4k-2, 4k-1], k > 0.
+* [A284353](http://oeis.org/A284353) ([L05 program](A284353.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
+* [A284354](http://oeis.org/A284354) ([L11 program](A284354.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
+* [A284359](http://oeis.org/A284359) ([L08 program](A284359.asm)): Double triangle (2*n+2 terms by row). Every row is 2*n + 1 followed by 2*n + 1 times 2*n + 2.
+* [A284364](http://oeis.org/A284364) ([L65 program](A284364.asm)): Fixed point of the morphism 0->1, 1->101010.
+* [A284394](http://oeis.org/A284394) ([L41 program](A284394.asm)): {101->2}-transform of the infinite Fibonacci word A003849.
+* [A284429](http://oeis.org/A284429) ([L19 program](A284429.asm)): A quasilinear solution to Hofstadter's Q recurrence.
+* [A284517](http://oeis.org/A284517) ([L06 program](A284517.asm)): Periodic with period [1, 4, 3, 4, 1, 6] of length 6.
+* [A284518](http://oeis.org/A284518) ([L19 program](A284518.asm)): Periodic with period [1, 10, 9, 16, 1, 18, 1, 16, 9, 10, 1, 24] of length 12.
+* [A284723](http://oeis.org/A284723) ([L22 program](A284723.asm)): Smallest odd prime that is relatively prime to n.
+* [A284905](http://oeis.org/A284905) ([L62 program](A284905.asm)): Fixed point of the morphism 0 -> 01, 1 -> 1001.
+* [A284948](http://oeis.org/A284948) ([L07 program](A284948.asm)): 1-limiting word of the morphism 0 -> 10, 1 -> 00
+* [A284965](http://oeis.org/A284965) ([L15 program](A284965.asm)): a(n) is the number of self-conjugate partitions of n which represent Chomp positions with Sprague-Grundy value 1.
+* [A285009](http://oeis.org/A285009) ([L08 program](A285009.asm)): Subset sums (see Comments).
+* [A285074](http://oeis.org/A285074) ([L17 program](A285074.asm)): Positions of 0 in A285073; complement of A285075.
+* [A285077](http://oeis.org/A285077) ([L13 program](A285077.asm)): Positions of 0 in A285076; complement of A285078.
+* [A285173](http://oeis.org/A285173) ([L04 program](A285173.asm)): Numbers n such that A002496(n+1) < A002496(n)^(1+1/n).
+* [A285188](http://oeis.org/A285188) ([L49 program](A285188.asm)): a(n) = Sum_{k=1..n} (k^2*floor(k/2)).
+* [A285193](http://oeis.org/A285193) ([L13 program](A285193.asm)): Expansion of 1/(1+x+2*x^2) mod 3.
+* [A285194](http://oeis.org/A285194) ([L17 program](A285194.asm)): Expansion of (1+x^2)/(1+x+x^4) mod 3.
+* [A285326](http://oeis.org/A285326) ([L09 program](A285326.asm)): a(0) = 0, for n > 0, a(n) = n + A006519(n).
+* [A285345](http://oeis.org/A285345) ([L61 program](A285345.asm)): Fixed point of the morphism 0 -> 10, 1 -> 1100.
+* [A285383](http://oeis.org/A285383) ([L06 program](A285383.asm)): Limiting 0-word of the morphism 0 -> 11, 1 -> 01.
+* [A285384](http://oeis.org/A285384) ([L07 program](A285384.asm)): Limiting 1-word of the morphism 0 -> 11, 1 -> 01.
+* [A285440](http://oeis.org/A285440) ([L15 program](A285440.asm)): Consider the sums of the numbers < n that share the same greatest common divisor with n. Sequence lists numbers that have only one of those sums equal to n.
+* [A285475](http://oeis.org/A285475) ([L12 program](A285475.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
+* [A285476](http://oeis.org/A285476) ([L06 program](A285476.asm)): Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 6", based on the 5-celled von Neumann neighborhood.
+* [A285524](http://oeis.org/A285524) ([L24 program](A285524.asm)): a(n) is the value d<n/2 maximizing the expression d!*(d + 1)!*(2^(n-2*d-1)*stirling2(n-d, d+1), for n>=4.
+* [A285542](http://oeis.org/A285542) ([L12 program](A285542.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 35", based on the 5-celled von Neumann neighborhood.
+* [A285612](http://oeis.org/A285612) ([L14 program](A285612.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 62", based on the 5-celled von Neumann neighborhood.
+* [A285684](http://oeis.org/A285684) ([L49 program](A285684.asm)): Characteristic sequence of the Beatty sequence, A022838, of sqrt(3).
+* [A285766](http://oeis.org/A285766) ([L12 program](A285766.asm)): Maximum spillway height for a zero or one bend minimal area lake in a number square.
+* [A285869](http://oeis.org/A285869) ([L07 program](A285869.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial in the open interval (-sqrt(2), +sqrt(2)).
+* [A285870](http://oeis.org/A285870) ([L10 program](A285870.asm)): a(n) = floor(n/2) - floor((n+1)/6), n >= 0.
+* [A285872](http://oeis.org/A285872) ([L06 program](A285872.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-sqrt(3), +sqrt(3)).
+* [A285950](http://oeis.org/A285950) ([L29 program](A285950.asm)): Positions of 0's in A285949; complement of A285951.
+* [A285951](http://oeis.org/A285951) ([L14 program](A285951.asm)): Positions of 1's in A285949; complement of A285950.
+* [A285953](http://oeis.org/A285953) ([L16 program](A285953.asm)): Positions of 0 in A285952; complement of A285954.
+* [A285998](http://oeis.org/A285998) ([L07 program](A285998.asm)): a(n) = Sum_{k=0..floor(n/2)} (n-k)*(k+1).
+* [A286016](http://oeis.org/A286016) ([L21 program](A286016.asm)): Signed continued fraction expansion with all signs negative of tanh(1).
+* [A286045](http://oeis.org/A286045) ([L19 program](A286045.asm)): Positions of 0 in A286044; complement of A003157.
+* [A286183](http://oeis.org/A286183) ([L13 program](A286183.asm)): Number of connected induced (non-null) subgraphs of the antiprism graph with 2n nodes.
+* [A286186](http://oeis.org/A286186) ([L14 program](A286186.asm)): Number of connected induced (non-null) subgraphs of the friendship graph with 2n+1 nodes.
+* [A286191](http://oeis.org/A286191) ([L20 program](A286191.asm)): a(n) = (2^n-1)^2 + 2*n.
+* [A286264](http://oeis.org/A286264) ([L06 program](A286264.asm)): a(n) = 2*(ceiling((n^2)/2)+1) - 1.
+* [A286283](http://oeis.org/A286283) ([L13 program](A286283.asm)): a(n) = floor(7*n^2/48).
+* [A286429](http://oeis.org/A286429) ([L07 program](A286429.asm)): Highest elevation of an island above sea level in a number square.
+* [A286430](http://oeis.org/A286430) ([L12 program](A286430.asm)): Least volume of water to surround the largest possible island in a number square.
+* [A286437](http://oeis.org/A286437) ([L14 program](A286437.asm)): Number of ways to tile an n X n X n triangular area with two 2 X 2 X 2 triangular tiles and an appropriate number (= n^2-8) of 1 X 1 X 1 tiles.
+* [A286444](http://oeis.org/A286444) ([L25 program](A286444.asm)): Number of non-equivalent ways to tile an n X n X n triangular area with two 2 X 2 X 2 triangular tiles and an appropriate number (= n^2-8) of 1 X 1 X 1 tiles.
+* [A286507](http://oeis.org/A286507) ([L03 program](A286507.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
+* [A286508](http://oeis.org/A286508) ([L05 program](A286508.asm)): Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
+* [A286521](http://oeis.org/A286521) ([L20 program](A286521.asm)): Decimal representation of the diagonal from the origin to the corner (or of the corner to the origin) of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 659", based on the 5-celled von Neumann neighborhood.
+* [A286577](http://oeis.org/A286577) ([L13 program](A286577.asm)): If n = 3k-1 then a(n) = a(k), otherwise a(n) = n.
+* [A286655](http://oeis.org/A286655) ([L42 program](A286655.asm)): Characteristic sequence of the Beatty sequence, A022842, of sqrt(8).
+* [A286685](http://oeis.org/A286685) ([L49 program](A286685.asm)): {0->01, 1->10}-transform of the Pell word, A171588.
+* [A286688](http://oeis.org/A286688) ([L20 program](A286688.asm)): {0->00, 1->10}-transform of the Pell word, A171588.
+* [A286716](http://oeis.org/A286716) ([L08 program](A286716.asm)): a(n) = floor(n/2) - floor((n+1)/5), n >= 0.
+* [A286717](http://oeis.org/A286717) ([L06 program](A286717.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-phi, +phi), with the golden section phi = (1 + sqrt(5))/2.
+* [A286726](http://oeis.org/A286726) ([L48 program](A286726.asm)): {0->10, 1->01}-transform of the Pell word, A171588.
+* [A286728](http://oeis.org/A286728) ([L16 program](A286728.asm)): Positions of 1 in A286063; complement of A286727.
+* [A286747](http://oeis.org/A286747) ([L45 program](A286747.asm)): Characteristic sequence of the Beatty sequence, A177102, of sqrt(10).
+* [A286749](http://oeis.org/A286749) ([L63 program](A286749.asm)): {0100->null}-transform of the infinite Fibonacci word A003849.
+* [A286808](http://oeis.org/A286808) ([L12 program](A286808.asm)): Positions of 0 in A286807; complement of A286809.
+* [A286809](http://oeis.org/A286809) ([L12 program](A286809.asm)): Positions of 1 in A286807; complement of A286808.
+* [A286810](http://oeis.org/A286810) ([L13 program](A286810.asm)): Number of non-attacking bishop positions on a cylindrical 2 X 2n chessboard.
+* [A286814](http://oeis.org/A286814) ([L18 program](A286814.asm)): Number of matchings in the n-helm graph.
+* [A286907](http://oeis.org/A286907) ([L37 program](A286907.asm)): {0->00,1->01}-transform of the Sturmian word A080764.
+* [A286925](http://oeis.org/A286925) ([L20 program](A286925.asm)): {0->01,1->00}-transform of the Sturmian word A080764.
+* [A286930](http://oeis.org/A286930) ([L03 program](A286930.asm)): Integers whose double is a square and whose triple is a cube.
+* [A286986](http://oeis.org/A286986) ([L18 program](A286986.asm)): Number of connected dominating sets in the n-antiprism graph.
+* [A286996](http://oeis.org/A286996) ([L20 program](A286996.asm)): {0->000, 11->null}-transform of the Sturmian word A080764.
+* [A287057](http://oeis.org/A287057) ([L12 program](A287057.asm)): a(n) = 2*n^2 + n - (n+1) mod 2.
+* [A287209](http://oeis.org/A287209) ([L31 program](A287209.asm)): a(1)=4, a(2)=5, a(n) = sum of digits of a(n-1) + sum of digits of a(n-2), n>=3.
+* [A287272](http://oeis.org/A287272) ([L06 program](A287272.asm)): a(n) is the number of zeros of the Laguerre L(n, x) polynomial in the open interval (-1, +1).
+* [A287335](http://oeis.org/A287335) ([L07 program](A287335.asm)): Nonnegative numbers k such that 3*k + 2 is a cube.
+* [A287349](http://oeis.org/A287349) ([L12 program](A287349.asm)): Number of matchings in the n-gear graph.
+* [A287381](http://oeis.org/A287381) ([L12 program](A287381.asm)): a(n) = a(n-1) + 2*a(n-2) - a(n-3), where a(0) = 2, a(1) = 4, a(2) = 7.
+* [A287392](http://oeis.org/A287392) ([L04 program](A287392.asm)): Domination number for lion's graph on an n X n board.
+* [A287393](http://oeis.org/A287393) ([L08 program](A287393.asm)): Domination number for knight's graph on a 2 X n board.
+* [A287394](http://oeis.org/A287394) ([L14 program](A287394.asm)): Domination number for camel's graph on a 2 X n board.
+* [A287426](http://oeis.org/A287426) ([L22 program](A287426.asm)): Number of connected induced subgraphs in the n-sun graph.
+* [A287431](http://oeis.org/A287431) ([L19 program](A287431.asm)): Number of connected dominating sets in the n-gear graph.
+* [A287657](http://oeis.org/A287657) ([L63 program](A287657.asm)): {0->01, 1->10}-transform of the infinite Fibonacci word A003849.
+* [A287663](http://oeis.org/A287663) ([L42 program](A287663.asm)): {0->1, 1->000}-transform of the infinite Fibonacci word A003849.
+* [A287674](http://oeis.org/A287674) ([L62 program](A287674.asm)): {0->1, 1->001}-transform of the infinite Fibonacci word A003849.
+* [A287722](http://oeis.org/A287722) ([L63 program](A287722.asm)): {0->1, 1->010}-transform of the infinite Fibonacci word A003849.
+* [A287725](http://oeis.org/A287725) ([L83 program](A287725.asm)): {0->1, 1->011}-transform of the infinite Fibonacci word A003849.
+* [A287744](http://oeis.org/A287744) ([L17 program](A287744.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 342", based on the 5-celled von Neumann neighborhood.
+* [A287765](http://oeis.org/A287765) ([L05 program](A287765.asm)): Period 4: repeat [1, 3, 5, 3].
+* [A287769](http://oeis.org/A287769) ([L84 program](A287769.asm)): {0->1, 1->110}-transform of the infinite Fibonacci word A003849.
+* [A287773](http://oeis.org/A287773) ([L55 program](A287773.asm)): {0->010, 1->101}-transform of the infinite Fibonacci word A003849.
+* [A287790](http://oeis.org/A287790) ([L54 program](A287790.asm)): {0->001, 1->110}-transform of the infinite Fibonacci word A003849.
+* [A287795](http://oeis.org/A287795) ([L62 program](A287795.asm)): {0->101, 1->010}-transform of the infinite Fibonacci word A003849.
+* [A287801](http://oeis.org/A287801) ([L42 program](A287801.asm)): {0->100, 1->001}-transform of the infinite Fibonacci word A003849.
+* [A287866](http://oeis.org/A287866) ([L07 program](A287866.asm)): n - A274933(n).
+* [A287893](http://oeis.org/A287893) ([L12 program](A287893.asm)): a(n) = floor(n*(n+2)/9).
+* [A288038](http://oeis.org/A288038) ([L08 program](A288038.asm)): Number of independent vertex sets in the n-Andrasfai graph.
+* [A288040](http://oeis.org/A288040) ([L07 program](A288040.asm)): Integers whose number of distinct decimal digits is prime.
+* [A288132](http://oeis.org/A288132) ([L11 program](A288132.asm)): Fixed point of the mapping 00->0010, 1->11, starting with 00.
+* [A288133](http://oeis.org/A288133) ([L06 program](A288133.asm)): Positions of 0 in A288132; complement of A288134.
+* [A288134](http://oeis.org/A288134) ([L10 program](A288134.asm)): Positions of 1 in A288132; complement of A288133.
+* [A288156](http://oeis.org/A288156) ([L04 program](A288156.asm)): Two even followed by three odd integers: the pattern is (0+2k,0+2k,1+2k,1+2k,1+2k) for k>=0.
+* [A288205](http://oeis.org/A288205) ([L16 program](A288205.asm)): Positions of 1 in A288203; complement of A288204.
+* [A288206](http://oeis.org/A288206) ([L52 program](A288206.asm)): a(n) = 3*a(n-1) - a(n-2) - 3*a(n-3) + 2*a(n-4), where a(0) = 2, a(1) = 4, a(2) = 8, a(3) = 18.
+* [A288219](http://oeis.org/A288219) ([L16 program](A288219.asm)): a(n) = a(n-1) + a(n-2) for n >= 3, where a(0) = 2, a(1) = 4, a(2) = 7.
+* [A288309](http://oeis.org/A288309) ([L11 program](A288309.asm)): a(n) = 2*a(n-1) + 2*a(n-2) - 3*a(n-3), where a(0) = 2, a(1) = 4, a(2) = 8.
+* [A288327](http://oeis.org/A288327) ([L11 program](A288327.asm)): Decuple factorial, 10-factorial, n!10, n!!!!!!!!!!.
+* [A288381](http://oeis.org/A288381) ([L19 program](A288381.asm)): Fixed point of the mapping 00->0001, 1->11, starting with 00.
+* [A288382](http://oeis.org/A288382) ([L07 program](A288382.asm)): Positions of 0 in A288381; complement of A288383.
+* [A288383](http://oeis.org/A288383) ([L09 program](A288383.asm)): Positions of 1 in A288381; complement of A288382.
+* [A288429](http://oeis.org/A288429) ([L13 program](A288429.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-3) - a(n-4), where a(0) = 2, a(1) = 4, a(2) = 5, a(3) = 6.
+* [A288443](http://oeis.org/A288443) ([L06 program](A288443.asm)): a(n) = (2n + 1)*2^(2n + 1); numbers k such that v(k)*2^v(k) = k, where v(n) = A007814(n) is 2-adic valuation of n.
+* [A288486](http://oeis.org/A288486) ([L10 program](A288486.asm)): Square rings obtained by adding four identical cuboids from A169938, a(n) = 4*n*(n+1)*(n*(n+1)+1).
+* [A288487](http://oeis.org/A288487) ([L61 program](A288487.asm)): Cuboids that fit in square rings from A288486 obtaining a fifth power.
+* [A288534](http://oeis.org/A288534) ([L11 program](A288534.asm)): a(n) = n*(2*n^2 + 3), n >= 1; a(0)=1.
+* [A288603](http://oeis.org/A288603) ([L14 program](A288603.asm)): a(n) = 2*a(n-1) - a(n-3) for n >= 3, where a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 8.
+* [A288604](http://oeis.org/A288604) ([L10 program](A288604.asm)): a(n) = (n^9 - n)/10.
+* [A288697](http://oeis.org/A288697) ([L17 program](A288697.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 494", based on the 5-celled von Neumann neighborhood.
+* [A288699](http://oeis.org/A288699) ([L09 program](A288699.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 494", based on the 5-celled von Neumann neighborhood.
+* [A288700](http://oeis.org/A288700) ([L15 program](A288700.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 494", based on the 5-celled von Neumann neighborhood.
+* [A288711](http://oeis.org/A288711) ([L29 program](A288711.asm)): 1-limiting word of the mapping 00->1000, 10->00, starting with 00.
+* [A288713](http://oeis.org/A288713) ([L14 program](A288713.asm)): Positions of 1 in A288711; complement of A288712.
+* [A288732](http://oeis.org/A288732) ([L13 program](A288732.asm)): a(n) = a(n-1) + 2*a(n-4) - 2*a(n-5) for n >= 5, where a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 8, a(4) = 10.
+* [A288834](http://oeis.org/A288834) ([L08 program](A288834.asm)): a(n) = (n+1) * 3^(n-1).
+* [A288876](http://oeis.org/A288876) ([L04 program](A288876.asm)): a(n) = binomial(n+4, n)^2. Square of the fifth diagonal sequence of A007318 (Pascal). Fifth diagonal sequence of A008459.
+* [A288918](http://oeis.org/A288918) ([L10 program](A288918.asm)): Number of 4-cycles in the n X n king graph.
+* [A288919](http://oeis.org/A288919) ([L13 program](A288919.asm)): Number of 5-cycles in the n X n king graph.
+* [A288933](http://oeis.org/A288933) ([L08 program](A288933.asm)): Positions of 0 in A288932; complement of A288934.
+* [A288937](http://oeis.org/A288937) ([L14 program](A288937.asm)): Positions of 0 in A288936; complement of A288938.
+* [A288938](http://oeis.org/A288938) ([L20 program](A288938.asm)): Positions of 1 in A288936; complement of A288937.
+* [A288958](http://oeis.org/A288958) ([L10 program](A288958.asm)): Number of cliques in the n X n rook graph.
+* [A288959](http://oeis.org/A288959) ([L10 program](A288959.asm)): a(n) = n^2*(n^2 - 1)^2/2.
+* [A288961](http://oeis.org/A288961) ([L10 program](A288961.asm)): Number of 3-cycles in the n X n rook graph.
+* [A288997](http://oeis.org/A288997) ([L37 program](A288997.asm)): Fixed point of the mapping 00->0010, 01->001, 10->001, starting with 00.
+* [A289001](http://oeis.org/A289001) ([L37 program](A289001.asm)): Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
+* [A289060](http://oeis.org/A289060) ([L27 program](A289060.asm)): a(n) = 3*a(n-1) - 3*a(n-2) + *a(n-3) for n >= 8, where a(0) = 2, a(1) = 4, a(2) = 7, a(3) = 11, a(4) = 17, a(5) = 25, a(6) = 36, a(7) = 51.
+* [A289120](http://oeis.org/A289120) ([L29 program](A289120.asm)): a(n) is the number of odd integers divisible by 7 in ]2*(n-1)^2, 2*n^2[.
+* [A289121](http://oeis.org/A289121) ([L20 program](A289121.asm)): a(n) = (8 - 2*n + 11*n^2 - 6*n^3 + n^4)/4.
+* [A289122](http://oeis.org/A289122) ([L31 program](A289122.asm)): a(n) is number of odd integers divisible by 11 in the interval ]2*(n-1)^2, 2*n^2[.
+* [A289133](http://oeis.org/A289133) ([L04 program](A289133.asm)): a(n) is the number of odd integers divisible by 9 in ]2*(n-1)^2, 2*n^2[.
+* [A289134](http://oeis.org/A289134) ([L09 program](A289134.asm)): a(n) = 21*n^2 - 33*n + 13.
+* [A289139](http://oeis.org/A289139) ([L18 program](A289139.asm)): a(n) is the number of odd integers divisible by 7 in ]4*(n-1)^2, 4*n^2[.
+* [A289179](http://oeis.org/A289179) ([L10 program](A289179.asm)): Edge count of the n X n white bishop graph.
+* [A289189](http://oeis.org/A289189) ([L07 program](A289189.asm)): Upper bound for certain restricted sumsets.
+* [A289195](http://oeis.org/A289195) ([L05 program](A289195.asm)): a(n) is the number of odd integers divisible by 5 in ]4*(n-1)^2, 4*n^2[.
+* [A289199](http://oeis.org/A289199) ([L32 program](A289199.asm)): a(n) is the number of odd integers divisible by 13 in the open interval (12*(n-1)^2, 12*n^2).
+* [A289203](http://oeis.org/A289203) ([L19 program](A289203.asm)): Number of maximum independent vertex sets in the n X n knight graph.
+* [A289207](http://oeis.org/A289207) ([L02 program](A289207.asm)): a(n) = max(0, n-2).
+* [A289223](http://oeis.org/A289223) ([L14 program](A289223.asm)): Number of ways to select 2 disjoint point triples from an n X n X n triangular point grid, each point triple forming an 2 X 2 X 2 triangle.
+* [A289254](http://oeis.org/A289254) ([L08 program](A289254.asm)): a(n) = 4^n - 3*n - 1.
+* [A289255](http://oeis.org/A289255) ([L11 program](A289255.asm)): a(n) = 4^n - 2*n - 1.
+* [A289399](http://oeis.org/A289399) ([L07 program](A289399.asm)): Total path length of the complete ternary tree of height n.
+* [A289404](http://oeis.org/A289404) ([L06 program](A289404.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 566", based on the 5-celled von Neumann neighborhood.
+* [A289443](http://oeis.org/A289443) ([L10 program](A289443.asm)): a(0)=2, a(1)=6; thereafter a(n) = 3*n^2.
+* [A289521](http://oeis.org/A289521) ([L05 program](A289521.asm)): Number of vertices in a planar Apollonian graph at iteration n.
+* [A289643](http://oeis.org/A289643) ([L14 program](A289643.asm)): n*(2*n+1)*binomial(n+2,n)/3.
+* [A289692](http://oeis.org/A289692) ([L11 program](A289692.asm)): The number of partitions of [n] with exactly 2 blocks without peaks.
+* [A289719](http://oeis.org/A289719) ([L08 program](A289719.asm)): a(n) = (n/2)*binomial(2*n, n) + 1.
+* [A289721](http://oeis.org/A289721) ([L20 program](A289721.asm)): Let a(0)=1. Then a(n) = sums of consecutive strings of positive integers of length 3*n, starting with the integer 2.
+* [A289761](http://oeis.org/A289761) ([L17 program](A289761.asm)): Maximum length of a perfect Wichmann ruler with n segments.
+* [A289873](http://oeis.org/A289873) ([L10 program](A289873.asm)): Related to perfect Wichmann rulers: a(n) = ( n^2 - (mod(n, 6) - 3)^2 ) / 3.
+* [A289877](http://oeis.org/A289877) ([L38 program](A289877.asm)): Number of maximal cliques in the n-triangular honeycomb queen graph.
+* [A289999](http://oeis.org/A289999) ([L15 program](A289999.asm)): Sierpinski cuboctahedral numbers: a(n) = 16*4^n - 12*2^n + 9.
+* [A290026](http://oeis.org/A290026) ([L11 program](A290026.asm)): Number of 3-cycles in the n-halved cube graph.
+* [A290031](http://oeis.org/A290031) ([L08 program](A290031.asm)): Number of 6-cycles in the n-hypercube graph.
+* [A290061](http://oeis.org/A290061) ([L09 program](A290061.asm)): a(n) = (1/24)*(n + 3)*(3*n^3 + 5*n^2 - 6*n + 16).
+* [A290113](http://oeis.org/A290113) ([L08 program](A290113.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
+* [A290114](http://oeis.org/A290114) ([L10 program](A290114.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
+* [A290168](http://oeis.org/A290168) ([L08 program](A290168.asm)): If n is even then a(n) = n^2*(n+2)/8, otherwise a(n) = (n-1)*n*(n+1)/8.
+* [A290198](http://oeis.org/A290198) ([L15 program](A290198.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
+* [A290199](http://oeis.org/A290199) ([L13 program](A290199.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
+* [A290235](http://oeis.org/A290235) ([L07 program](A290235.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 773", based on the 5-celled von Neumann neighborhood.
+* [A290312](http://oeis.org/A290312) ([L08 program](A290312.asm)): Third diagonal sequence of the Sheffer triangle A094816 (special Charlier).
+* [A290325](http://oeis.org/A290325) ([L08 program](A290325.asm)): Number of minimal dominating sets (and maximal irredundant sets) in the complete tripartite graph K_{n,n,n}.
+* [A290391](http://oeis.org/A290391) ([L60 program](A290391.asm)): Number of 5-cycles in the n-triangular honeycomb obtuse knight graph.
+* [A290561](http://oeis.org/A290561) ([L08 program](A290561.asm)): a(n) = n + cos(n*Pi/2).
+* [A290604](http://oeis.org/A290604) ([L05 program](A290604.asm)): a(0) = 2, a(1) = 2; for n > 1, a(n) = a(n-1) + 2*a(n-2) + 3.
+* [A290631](http://oeis.org/A290631) ([L11 program](A290631.asm)): a(n) = (n^2 + 1) * (2*n - 1).
+* [A290682](http://oeis.org/A290682) ([L11 program](A290682.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
+* [A290683](http://oeis.org/A290683) ([L15 program](A290683.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
+* [A290699](http://oeis.org/A290699) ([L11 program](A290699.asm)): a(n) = 2^n - n + n^2.
+* [A290707](http://oeis.org/A290707) ([L09 program](A290707.asm)): a(n) = 2^(n+1) + n^2 - 1.
+* [A290709](http://oeis.org/A290709) ([L27 program](A290709.asm)): Number of irredundant sets in the complete tripartite graph K_{n,n,n}.
+* [A290718](http://oeis.org/A290718) ([L07 program](A290718.asm)): a(n) = 2^(n + 1) + 4^(n - 1) - 2.
+* [A290721](http://oeis.org/A290721) ([L07 program](A290721.asm)): a(n) = 4^n - n - 1.
+* [A290743](http://oeis.org/A290743) ([L05 program](A290743.asm)): Maximum number of distinct Lyndon factors that can appear in words of length n over an alphabet of size 2.
+* [A290744](http://oeis.org/A290744) ([L07 program](A290744.asm)): Maximum number of distinct Lyndon factors that can appear in words of length n over an alphabet of size 5.
+* [A290745](http://oeis.org/A290745) ([L11 program](A290745.asm)): Maximum number of distinct Lyndon factors that can appear in words of length n over an alphabet of size 10.
+* [A290764](http://oeis.org/A290764) ([L11 program](A290764.asm)): Number of (non-null) connected induced subgraphs in the 2 X n king graph.
+* [A290768](http://oeis.org/A290768) ([L05 program](A290768.asm)): a(n) = 3/2*(n^2 - n + 2).
+* [A290781](http://oeis.org/A290781) ([L03 program](A290781.asm)): a(n) = 20*n + 15.
+* [A290856](http://oeis.org/A290856) ([L05 program](A290856.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 1006", based on the 5-celled von Neumann neighborhood.
+* [A290858](http://oeis.org/A290858) ([L03 program](A290858.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 1006", based on the 5-celled von Neumann neighborhood.
+* [A290859](http://oeis.org/A290859) ([L15 program](A290859.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 1006", based on the 5-celled von Neumann neighborhood.
+* [A290890](http://oeis.org/A290890) ([L08 program](A290890.asm)): p-INVERT of the positive integers, where p(S) = 1 - S^2.
+* [A290902](http://oeis.org/A290902) ([L15 program](A290902.asm)): p-INVERT of the positive integers, where p(S) = 1 - 3*S.
+* [A290988](http://oeis.org/A290988) ([L14 program](A290988.asm)): The arithmetic function v+-(n,3).
+* [A291004](http://oeis.org/A291004) ([L19 program](A291004.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - 3*S)^2.
+* [A291009](http://oeis.org/A291009) ([L20 program](A291009.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - S)(1 - 3 S).
+* [A291024](http://oeis.org/A291024) ([L09 program](A291024.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - 2 S^2)^2.
+* [A291040](http://oeis.org/A291040) ([L19 program](A291040.asm)): The arithmetic function u(n,3,2).
+* [A291064](http://oeis.org/A291064) ([L09 program](A291064.asm)): a(n) = 2^n*(n + 1) - 3*(n - 1).
+* [A291092](http://oeis.org/A291092) ([L02 program](A291092.asm)): 1 followed by infinitely many 9's.
+* [A291097](http://oeis.org/A291097) ([L10 program](A291097.asm)): a(n) = 2^n*(n/8 + 1) - n.
+* [A291264](http://oeis.org/A291264) ([L14 program](A291264.asm)): p-INVERT of (0,1,0,1,0,1,...), where p(S) = (1 - 2 S)^2.
+* [A291271](http://oeis.org/A291271) ([L08 program](A291271.asm)): The arithmetic function v_4(n,2).
+* [A291305](http://oeis.org/A291305) ([L06 program](A291305.asm)): The arithmetic function v_5(n,1).
+* [A291306](http://oeis.org/A291306) ([L06 program](A291306.asm)): The arithmetic function v_6(n,1).
+* [A291307](http://oeis.org/A291307) ([L10 program](A291307.asm)): The arithmetic function v_6(n,2).
+* [A291330](http://oeis.org/A291330) ([L13 program](A291330.asm)): The arithmetic function v_4(n,1).
+* [A291357](http://oeis.org/A291357) ([L06 program](A291357.asm)): The arithmetic function u(n,2,3).
+* [A291358](http://oeis.org/A291358) ([L04 program](A291358.asm)): The arithmetic function u(n,2,4).
+* [A291359](http://oeis.org/A291359) ([L37 program](A291359.asm)): The arithmetic function u(n,2,5).
+* [A291361](http://oeis.org/A291361) ([L37 program](A291361.asm)): The arithmetic function u(n,2,6).
+* [A291423](http://oeis.org/A291423) ([L27 program](A291423.asm)): The arithmetic function u(n,4,2).
+* [A291454](http://oeis.org/A291454) ([L07 program](A291454.asm)): Number of half tones between successive pitches in a major scale.
+* [A291510](http://oeis.org/A291510) ([L04 program](A291510.asm)): The arithmetic function uhat(n,2,5), negated.
+* [A291516](http://oeis.org/A291516) ([L04 program](A291516.asm)): The arithmetic function uhat(n,3,7), negated.
+* [A291520](http://oeis.org/A291520) ([L06 program](A291520.asm)): The arithmetic function uhat(n,4,2).
+* [A291526](http://oeis.org/A291526) ([L05 program](A291526.asm)): a(n) = 2^n*(n - 3) + 4.
+* [A291557](http://oeis.org/A291557) ([L05 program](A291557.asm)): a(n) = 23*2^n - 1.
+* [A291582](http://oeis.org/A291582) ([L09 program](A291582.asm)): Maximum number of 6 sphinx tile shapes in a sphinx tiled hexagon of order n.
+* [A291773](http://oeis.org/A291773) ([L14 program](A291773.asm)): Domination number of the n-Apollonian network.
+* [A291778](http://oeis.org/A291778) ([L05 program](A291778.asm)): a(n) = 2^floor(2*n/3).
+* [A291832](http://oeis.org/A291832) ([L04 program](A291832.asm)): Numbers k such that k^6 is sum of two positive 7th powers.
+* [A291919](http://oeis.org/A291919) ([L46 program](A291919.asm)): Number of (undirected) paths in the n-wheel graph.
+* [A291938](http://oeis.org/A291938) ([L09 program](A291938.asm)): a(n) = 2^(n - 1) (n - mod(n, 2)).
+* [A292018](http://oeis.org/A292018) ([L10 program](A292018.asm)): Wiener index for the n-Andrasfai graph.
+* [A292022](http://oeis.org/A292022) ([L10 program](A292022.asm)): a(n) = 4n(n^2+2).
+* [A292044](http://oeis.org/A292044) ([L13 program](A292044.asm)): Wiener index of the n-halved cube graph.
+* [A292057](http://oeis.org/A292057) ([L41 program](A292057.asm)): Wiener index of the n X n queen graph.
+* [A292058](http://oeis.org/A292058) ([L17 program](A292058.asm)): Wiener index of the n X n rook complement graph.
+* [A292061](http://oeis.org/A292061) ([L07 program](A292061.asm)): a(n) = (n-3)*(n-2)^2*(n-1)^2*n/24.
+* [A292282](http://oeis.org/A292282) ([L56 program](A292282.asm)): a(n) = 2*(n-1)^3*n^2*(n+1).
+* [A292290](http://oeis.org/A292290) ([L07 program](A292290.asm)): Number of vertices of type A at level n of the hyperbolic Pascal pyramid.
+* [A292291](http://oeis.org/A292291) ([L07 program](A292291.asm)): Number of vertices of type B at level n of the hyperbolic Pascal pyramid.
+* [A292295](http://oeis.org/A292295) ([L09 program](A292295.asm)): Sum of values of vertices of type A at level n of the hyperbolic Pascal pyramid.
+* [A292296](http://oeis.org/A292296) ([L09 program](A292296.asm)): Sum of values of vertices of type B at level n of the hyperbolic Pascal pyramid.
+* [A292344](http://oeis.org/A292344) ([L06 program](A292344.asm)): The first Zagreb index of the Aztec diamond AZ(n) (see the Ramanes et al. reference, Theorem 2.1).
+* [A292345](http://oeis.org/A292345) ([L06 program](A292345.asm)): The second Zagreb index of the Aztec diamond AZ(n) (see the Ramanes et al. reference, Theorem 2.2).
+* [A292346](http://oeis.org/A292346) ([L08 program](A292346.asm)): The forgotten topological index of the Aztec diamond AZ(n) (see the Ramanes et al. reference, Theorem 2.1).
+* [A292400](http://oeis.org/A292400) ([L15 program](A292400.asm)): p-INVERT of (1,2,2,2,2,2,2,...) (A040000), where p(S) = (1 - S)^2.
+* [A292510](http://oeis.org/A292510) ([L07 program](A292510.asm)): a(n) = smallest k >= 1 such that {1, p(n,2), p(n,3), ..., p(n,k)} can be partitioned into two sets with equal sums, where p(n,m) is m-th n-gonal number.
+* [A292537](http://oeis.org/A292537) ([L09 program](A292537.asm)): Number of cliques in the n-Sierpinski tetrahedron graph.
+* [A292540](http://oeis.org/A292540) ([L08 program](A292540.asm)): Number of 3-cycles in the n-Sierpinski tetrahedron graph.
+* [A292542](http://oeis.org/A292542) ([L15 program](A292542.asm)): Number of 4-cycles in the n-Sierpinski tetrahedron graph.
+* [A292543](http://oeis.org/A292543) ([L04 program](A292543.asm)): Number of 5-cycles in the n-Sierpinski tetrahedron graph.
+* [A292564](http://oeis.org/A292564) ([L09 program](A292564.asm)): Take 1, skip 3 * 1 - 1, take 2, skip 3 * 2 - 1, take 3, skip 3 * 3 - 1, ...
+* [A292565](http://oeis.org/A292565) ([L10 program](A292565.asm)): Take 0, skip 3 * 1 + 1, take 1, skip 3 * 2 + 1, take 2, skip 3 * 3 + 1, ...
+* [A292576](http://oeis.org/A292576) ([L10 program](A292576.asm)): Permutation of the natural numbers partitioned into quadruples [4k-1, 4k-3, 4k-2, 4k], k > 0.
+* [A292638](http://oeis.org/A292638) ([L14 program](A292638.asm)): Rank of (3-r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
+* [A292641](http://oeis.org/A292641) ([L14 program](A292641.asm)): Rank of (4+r)*n when all the numbers (4-r)*j and (4+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
+* [A293004](http://oeis.org/A293004) ([L08 program](A293004.asm)): Expansion of 2*x^2 / (x^3 + x^2 - 3x + 1).
+* [A293005](http://oeis.org/A293005) ([L11 program](A293005.asm)): Number of associative, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
+* [A293006](http://oeis.org/A293006) ([L12 program](A293006.asm)): Expansion of 2*x^2*(x+1) / (2*x^3-3*x+1).
+* [A293007](http://oeis.org/A293007) ([L11 program](A293007.asm)): Expansion of 2*x^2 / (1-2*x-2*x^2).
+* [A293064](http://oeis.org/A293064) ([L07 program](A293064.asm)): Number of vertices of type B at level n of the hyperbolic Pascal pyramid PP_(4,5).
+* [A293065](http://oeis.org/A293065) ([L19 program](A293065.asm)): Number of vertices of type D at level n of the hyperbolic Pascal pyramid PP_(4,5).
+* [A293066](http://oeis.org/A293066) ([L11 program](A293066.asm)): Number of vertices at level n of the hyperbolic Pascal pyramid PP_(4,5).
+* [A293067](http://oeis.org/A293067) ([L15 program](A293067.asm)): Sum of values of vertices of type A at level n of the hyperbolic Pascal pyramid PP_(4,5).
+* [A293137](http://oeis.org/A293137) ([L08 program](A293137.asm)): a(0) = 0, and a(n) = floor(2*sqrt(n)) - 1 for n >= 1.
+* [A293292](http://oeis.org/A293292) ([L05 program](A293292.asm)): Numbers with last digit less than 5 (in base 10).
+* [A293296](http://oeis.org/A293296) ([L09 program](A293296.asm)): a(n) = 2*n^2 - floor(n/4).
+* [A293475](http://oeis.org/A293475) ([L15 program](A293475.asm)): a(n) = (3*n + 4)*Pochhammer(n, 4) / 4!.
+* [A293481](http://oeis.org/A293481) ([L06 program](A293481.asm)): Numbers with last digit greater than or equal to 5 (in base 10).
+* [A293497](http://oeis.org/A293497) ([L07 program](A293497.asm)): Triangular array read by rows: row n >= 1 is the list of integers from 0 to 2n-1.
+* [A293504](http://oeis.org/A293504) ([L07 program](A293504.asm)): The integer k that minimizes |k/n^2 - sqrt(2)|.
+* [A293615](http://oeis.org/A293615) ([L05 program](A293615.asm)): a(n) = Pochhammer(n, 5) / 2.
+* [A293699](http://oeis.org/A293699) ([L44 program](A293699.asm)): First differences of A293751.
+* [A293700](http://oeis.org/A293700) ([L44 program](A293700.asm)): First differences of A293698.
+* [A293703](http://oeis.org/A293703) ([L21 program](A293703.asm)): a(n) is the length of the longest palindromic subsequence in the first differences of the list of the first n negative and positive roots of floor(tan(k))=1.
+* [A293706](http://oeis.org/A293706) ([L13 program](A293706.asm)): a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
+* [A293727](http://oeis.org/A293727) ([L14 program](A293727.asm)): Numbers n such that c(n,0) < c(n,1), where c(n,d) = number of d's in the first n digits of the base-2 expansion of sqrt(2).
+* [A293754](http://oeis.org/A293754) ([L06 program](A293754.asm)): Numbers n such that c(n,0) < c(n,1), where c(n,d) = number of d's in the first n digits of the base-2 expansion of tau (the golden ratio, (1+sqrt(5))/2)).
+* [A293990](http://oeis.org/A293990) ([L06 program](A293990.asm)): a(n) = (3*n + ((n-2) mod 4))/2.
+* [A294070](http://oeis.org/A294070) ([L07 program](A294070.asm)): a(n) = (1/4)*(n^2 - 2*n)^2 + (9/4)*(n^2 - 2*n) + 6.
+* [A294116](http://oeis.org/A294116) ([L11 program](A294116.asm)): Fibonacci sequence beginning 2, 21.
+* [A294152](http://oeis.org/A294152) ([L08 program](A294152.asm)): Chromatic invariant of the n-antiprism graph.
+* [A294157](http://oeis.org/A294157) ([L08 program](A294157.asm)): Fibonacci sequence beginning 2, 8.
+* [A294172](http://oeis.org/A294172) ([L28 program](A294172.asm)): Maximum value of the cyclic convolution of first n positive integers with themselves.
+* [A294178](http://oeis.org/A294178) ([L12 program](A294178.asm)): a(2n) = 2*n + 1, a(2n+1) = 6*n + 3.
+* [A294180](http://oeis.org/A294180) ([L106 program](A294180.asm)): The 3-symbol Pell word.
+* [A294259](http://oeis.org/A294259) ([L08 program](A294259.asm)): a(n) = n*(n^3 + 2*n^2 - 5*n + 10)/8.
+* [A294315](http://oeis.org/A294315) ([L08 program](A294315.asm)): a(n) = 3*n^3 + n^2.
+* [A294317](http://oeis.org/A294317) ([L08 program](A294317.asm)): Triangle read by rows: T(n, k) = 2*n-k, k <= n.
+* [A294433](http://oeis.org/A294433) ([L44 program](A294433.asm)): Expansion of (1+11*x+24*x^2+11*x^3+x^4)/(1-x)^5.
+* [A294456](http://oeis.org/A294456) ([L21 program](A294456.asm)): a(1)=0, a(2)=1; thereafter a(n) = a(floor(n/2)) + a(ceiling(n/2)) + 2.
+* [A294566](http://oeis.org/A294566) ([L19 program](A294566.asm)): a(n) is the smallest positive integer of length (distance from origin) n in the Cayley graph of the integers generated by all powers of 5.
+* [A294619](http://oeis.org/A294619) ([L04 program](A294619.asm)): a(0) = 0, a(1) = 1, a(2) = 2 and a(n) = 1 for n > 2.
+* [A294627](http://oeis.org/A294627) ([L22 program](A294627.asm)): Expansion of x*(1 + x)/((1-2*x)*(1+x+x^2)).
+* [A294732](http://oeis.org/A294732) ([L05 program](A294732.asm)): Maximal diameter of the connected cubic graphs on 2*n vertices.
+* [A294774](http://oeis.org/A294774) ([L05 program](A294774.asm)): a(n) = 2*n^2 + 2*n + 5.
+* [A294924](http://oeis.org/A294924) ([L24 program](A294924.asm)): Numbers n such that the whole sequence of the first n terms of A293699 is a palindrome.
+* [A295077](http://oeis.org/A295077) ([L10 program](A295077.asm)): a(n) = 2*n*(n-1) + 2^n - 1.
+* [A295089](http://oeis.org/A295089) ([L05 program](A295089.asm)): a(n) = 3*n^2 + n + 3.
+* [A295130](http://oeis.org/A295130) ([L13 program](A295130.asm)): a(n) = 3*n*(64*n^2 + 1).
+* [A295286](http://oeis.org/A295286) ([L07 program](A295286.asm)): Sum of the products of the smaller and larger parts of the partitions of n into two parts with the smaller part odd.
+* [A295287](http://oeis.org/A295287) ([L10 program](A295287.asm)): Sum of the products of the smaller and larger parts of the partitions of n into two parts with the smaller part even.
+* [A295317](http://oeis.org/A295317) ([L09 program](A295317.asm)): Sum of the products of the smaller and larger parts of the partitions of n into two distinct parts with the smaller part odd.
+* [A295318](http://oeis.org/A295318) ([L12 program](A295318.asm)): Sum of the products of the smaller and larger parts of the partitions of n into two distinct parts with the smaller part even.
+* [A295340](http://oeis.org/A295340) ([L09 program](A295340.asm)): Numbers congruent to 11 or 13 mod 15.
+* [A295514](http://oeis.org/A295514) ([L09 program](A295514.asm)): a(n) = 2^bil(n) - bil(n) where bil(0) = 0 and bil(n) = floor(log_2(n)) + 1 for n > 0.
+* [A295622](http://oeis.org/A295622) ([L27 program](A295622.asm)): Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals rooted at a cell up to rotation.
+* [A295643](http://oeis.org/A295643) ([L03 program](A295643.asm)): Squares repeated 4 times; a(n) = (floor(n/4))^2.
+* [A295774](http://oeis.org/A295774) ([L03 program](A295774.asm)): a(n) is the minimum size of a restricted planar additive basis for the square [0,2n]^2.
+* [A295821](http://oeis.org/A295821) ([L11 program](A295821.asm)): Number of coprime pairs (a,b) with -n <= a <= n, -2 <= b <= 2.
+* [A295866](http://oeis.org/A295866) ([L16 program](A295866.asm)): Number of decimal digits in the number of partitions of n.
+* [A295869](http://oeis.org/A295869) ([L06 program](A295869.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 8.
+* [A295904](http://oeis.org/A295904) ([L08 program](A295904.asm)): Number of (not necessarily maximum) cliques in the n-sun graph.
+* [A295905](http://oeis.org/A295905) ([L07 program](A295905.asm)): Number of (not necessarily maximum) cliques in the n X n knight graph.
+* [A295906](http://oeis.org/A295906) ([L07 program](A295906.asm)): Number of (not necessarily maximum) cliques in the n X n king graph.
+* [A295911](http://oeis.org/A295911) ([L05 program](A295911.asm)): Number of (not necessarily maximal) cliques in the n-Hanoi graph.
+* [A295921](http://oeis.org/A295921) ([L30 program](A295921.asm)): Number of (not necessarily maximum) cliques in the n-folded cube graph.
+* [A295926](http://oeis.org/A295926) ([L16 program](A295926.asm)): Number of (not necessarily maximum) cliques in the n-cube-connected cycle graph.
+* [A295933](http://oeis.org/A295933) ([L13 program](A295933.asm)): Number of (not necessarily maximum) cliques in the n-Sierpinski sieve graph.
+* [A296065](http://oeis.org/A296065) ([L06 program](A296065.asm)): Partial sums of A296064.
+* [A296066](http://oeis.org/A296066) ([L06 program](A296066.asm)): a(n) = A296065(n)/n.
+* [A296070](http://oeis.org/A296070) ([L08 program](A296070.asm)): Partial sums of A296069.
+* [A296141](http://oeis.org/A296141) ([L10 program](A296141.asm)): Sum of the smaller parts of the partitions of n into two distinct parts with the larger part even.
+* [A296159](http://oeis.org/A296159) ([L08 program](A296159.asm)): Sum of the smaller parts in the partitions of n into two distinct parts with the larger part odd.
+* [A296160](http://oeis.org/A296160) ([L08 program](A296160.asm)): Sum of the larger parts of the partitions of n into two parts such that the smaller part is even.
+* [A296161](http://oeis.org/A296161) ([L06 program](A296161.asm)): Sum of the larger parts of the partitions of n into two parts such that the smaller part is odd.
+* [A296185](http://oeis.org/A296185) ([L03 program](A296185.asm)): Numbers that are not the sum of 3 squares and an 8th power.
+* [A296196](http://oeis.org/A296196) ([L09 program](A296196.asm)): Harary index of the n X n queen graph.
+* [A296197](http://oeis.org/A296197) ([L49 program](A296197.asm)): Harary index of the n X n bishop graph.
+* [A296200](http://oeis.org/A296200) ([L39 program](A296200.asm)): Harary index of the n X n white bishop graph.
+* [A296306](http://oeis.org/A296306) ([L07 program](A296306.asm)): a(n) = A001157(n)/A050999(n).
+* [A296349](http://oeis.org/A296349) ([L08 program](A296349.asm)): Position where binary expansion of n starts in the binary Champernowne sequence A030190.
+* [A296363](http://oeis.org/A296363) ([L16 program](A296363.asm)): a(1)=0; for n>1, a(n) = 4*n^3 - 3*n^2 - 3*n + 4.
+* [A296367](http://oeis.org/A296367) ([L20 program](A296367.asm)): Number of triangles on a 4 X n grid.
+* [A296420](http://oeis.org/A296420) ([L04 program](A296420.asm)): Period of last digit of multiples of n.
+* [A296515](http://oeis.org/A296515) ([L05 program](A296515.asm)): Number of edges in a maximal planar graph with n vertices.
+* [A296900](http://oeis.org/A296900) ([L02 program](A296900.asm)): Numbers n whose base-16 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+* [A296903](http://oeis.org/A296903) ([L02 program](A296903.asm)): Numbers n whose base-20 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+* [A296906](http://oeis.org/A296906) ([L02 program](A296906.asm)): Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+* [A296909](http://oeis.org/A296909) ([L20 program](A296909.asm)): Partial sums of A296368.
+* [A296910](http://oeis.org/A296910) ([L23 program](A296910.asm)): a(0)=1, a(1)=4; thereafter a(n) = 4*n-2*(-1)^n.
+* [A296911](http://oeis.org/A296911) ([L13 program](A296911.asm)): Partial sums of A296910.
+* [A296953](http://oeis.org/A296953) ([L05 program](A296953.asm)): Number of bisymmetric, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
+* [A296954](http://oeis.org/A296954) ([L08 program](A296954.asm)): Expansion of x*(1 - x + 4*x^2) / ((1 - x)*(1 - 2*x)).
+* [A296965](http://oeis.org/A296965) ([L07 program](A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
+* [A297044](http://oeis.org/A297044) ([L03 program](A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
+* [A297045](http://oeis.org/A297045) ([L04 program](A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
+* [A297180](http://oeis.org/A297180) ([L49 program](A297180.asm)): a(n) is the smallest positive integer of length (distance from origin) n in the Cayley graph of the integers generated by all powers of 7.
+* [A297181](http://oeis.org/A297181) ([L27 program](A297181.asm)): a(n) is the smallest positive integer of length (distance from origin) n in the Cayley graph of the integers generated by all powers of 11.
+* [A297182](http://oeis.org/A297182) ([L24 program](A297182.asm)): a(n) is the smallest positive integer of length (distance from origin) n in the Cayley graph of the integers generated by all powers of 13.
+* [A297217](http://oeis.org/A297217) ([L09 program](A297217.asm)): Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.
+* [A297251](http://oeis.org/A297251) ([L19 program](A297251.asm)): Numbers whose base-3 digits have greater up-variation than down-variation; see Comments.
+* [A297382](http://oeis.org/A297382) ([L11 program](A297382.asm)): Denominator of -A023900(n)/2.
+* [A297402](http://oeis.org/A297402) ([L16 program](A297402.asm)): a(n) = gcd_{k=1..n} (prime(k+1)^n-1)/2.
+* [A297445](http://oeis.org/A297445) ([L12 program](A297445.asm)): a(n) = a(n-1) + 9*a(n-2) - 9*a(n-3), where a(0) = 1, a(1) = 5, a(2) = 11.
+* [A297464](http://oeis.org/A297464) ([L05 program](A297464.asm)): Solution (a(n)) of the system of 4 complementary equations in Comments.
+* [A297469](http://oeis.org/A297469) ([L11 program](A297469.asm)): Solution (bb(n)) of the system of 3 complementary equations in Comments.
+* [A297662](http://oeis.org/A297662) ([L06 program](A297662.asm)): Number of chordless cycles in the complete tripartite graph K_n,n,n.
+* [A297663](http://oeis.org/A297663) ([L07 program](A297663.asm)): a(n) = 5*n + 2^n.
+* [A297675](http://oeis.org/A297675) ([L05 program](A297675.asm)): a(n) = 3*(n^2+n-4)/2.
+* [A297928](http://oeis.org/A297928) ([L15 program](A297928.asm)): a(n) = 2*4^n + 3*2^n - 1.
+* [A297996](http://oeis.org/A297996) ([L24 program](A297996.asm)): a(1)=2, a(2)=3, a(3)=5 and a(n) = (a(1) + a(2) + a(3) + ... + a(n-1))/a(n-1).
+* [A298019](http://oeis.org/A298019) ([L18 program](A298019.asm)): Partial sums of A298016.
+* [A298024](http://oeis.org/A298024) ([L12 program](A298024.asm)): G.f.: (x^4+3*x^3+6*x^2+3*x+1)/((1-x)*(1-x^3)).
+* [A298025](http://oeis.org/A298025) ([L13 program](A298025.asm)): Partial sums of A298024.
+* [A298026](http://oeis.org/A298026) ([L24 program](A298026.asm)): Coordination sequence of Dual(3.6.3.6) tiling with respect to a hexavalent node.
+* [A298027](http://oeis.org/A298027) ([L10 program](A298027.asm)): Partial sums of A298026.
+* [A298028](http://oeis.org/A298028) ([L07 program](A298028.asm)): Coordination sequence of Dual(3.6.3.6) tiling with respect to a trivalent node.
+* [A298029](http://oeis.org/A298029) ([L18 program](A298029.asm)): Coordination sequence of Dual(3.4.6.4) tiling with respect to a trivalent node.
+* [A298031](http://oeis.org/A298031) ([L23 program](A298031.asm)): Coordination sequence of Dual(3.4.6.4) tiling with respect to a tetravalent node.
+* [A298032](http://oeis.org/A298032) ([L29 program](A298032.asm)): Partial sums of A298031.
+* [A298033](http://oeis.org/A298033) ([L14 program](A298033.asm)): Coordination sequence of the Dual(3.4.6.4) tiling with respect to a hexavalent node.
+* [A298034](http://oeis.org/A298034) ([L08 program](A298034.asm)): Partial sums of A298033.
+* [A298035](http://oeis.org/A298035) ([L05 program](A298035.asm)): Coordination sequence of Dual(3.12.12) tiling with respect to a trivalent node.
+* [A298036](http://oeis.org/A298036) ([L16 program](A298036.asm)): Coordination sequence of Dual(4.6.12) tiling with respect to a 12-valent node.
+* [A298038](http://oeis.org/A298038) ([L15 program](A298038.asm)): Coordination sequence of Dual(4.6.12) tiling with respect to a hexavalent node.
+* [A298125](http://oeis.org/A298125) ([L12 program](A298125.asm)): The hex numbers (A003215) together with 3.
+* [A298267](http://oeis.org/A298267) ([L06 program](A298267.asm)): a(n) is the maximum number of heptiamonds in a hexagon of order n.
+* [A298360](http://oeis.org/A298360) ([L25 program](A298360.asm)): Numbers congruent to {3, 7, 13, 27} mod 30.
+* [A298474](http://oeis.org/A298474) ([L32 program](A298474.asm)): a(n) is the least k such that A090701(k) = n.
+* [A298720](http://oeis.org/A298720) ([L20 program](A298720.asm)): EBCDIC codes for lower case letters.
+* [A298728](http://oeis.org/A298728) ([L15 program](A298728.asm)): EBCDIC codes for upper case letters.
+* [A298784](http://oeis.org/A298784) ([L08 program](A298784.asm)): Expansion of (1 + x^2)*(1 + 3*x + x^2) / ((1 - x)*(1 - x^3)).
+* [A298785](http://oeis.org/A298785) ([L12 program](A298785.asm)): Partial sums of A298784.
+* [A298786](http://oeis.org/A298786) ([L06 program](A298786.asm)): Expansion of (x^4 + 2*x^3 + 4*x^2 + 2*x + 1) / ((1 - x)*(1 - x^3)).
+* [A298787](http://oeis.org/A298787) ([L07 program](A298787.asm)): Partial sums of A298786.
+* [A298788](http://oeis.org/A298788) ([L17 program](A298788.asm)): Coordination sequence for bey tiling (or net) with respect to a trivalent node.
+* [A298789](http://oeis.org/A298789) ([L23 program](A298789.asm)): Coordination sequence for bey tiling (or net) with respect to a tetravalent node.
+* [A298790](http://oeis.org/A298790) ([L16 program](A298790.asm)): Partial sums of A298788.
+* [A298791](http://oeis.org/A298791) ([L14 program](A298791.asm)): Partial sums of A298789.
+* [A298950](http://oeis.org/A298950) ([L13 program](A298950.asm)): Numbers k such that 5*k - 4 is a square.
+* [A298952](http://oeis.org/A298952) ([L10 program](A298952.asm)): Start with a(0) = 1 and add at step n >= 0 the term 1 at position 2*n + a(n).
+* [A299174](http://oeis.org/A299174) ([L03 program](A299174.asm)): The even positive integers.
+* [A299231](http://oeis.org/A299231) ([L24 program](A299231.asm)): Ranks of {2,3}-power towers that start with 2; see Comments.
+* [A299232](http://oeis.org/A299232) ([L13 program](A299232.asm)): Ranks of {2,3}-power towers that start with 3; see Comments.
+* [A299250](http://oeis.org/A299250) ([L26 program](A299250.asm)): Numbers congruent to {9, 11, 21, 29} mod 30.
+* [A299254](http://oeis.org/A299254) ([L17 program](A299254.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 3^4.6 2D tiling (cf. A250120).
+* [A299255](http://oeis.org/A299255) ([L12 program](A299255.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 3.3.4.3.4 2D tiling (cf. A219529).
+* [A299256](http://oeis.org/A299256) ([L13 program](A299256.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 3.6.3.6 2D tiling (cf. A008579).
+* [A299259](http://oeis.org/A299259) ([L15 program](A299259.asm)): Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 4.8.8 2D tiling (cf. A008576).
+* [A299279](http://oeis.org/A299279) ([L30 program](A299279.asm)): Coordination sequence for "reo" 3D uniform tiling.
+* [A299283](http://oeis.org/A299283) ([L28 program](A299283.asm)): Coordination sequence for "svh" 3D uniform tiling.
+* [A299285](http://oeis.org/A299285) ([L17 program](A299285.asm)): Coordination sequence for "tea" 3D uniform tiling.
+* [A299287](http://oeis.org/A299287) ([L23 program](A299287.asm)): Coordination sequence for "tcd" 3D uniform tiling.
+* [A299289](http://oeis.org/A299289) ([L15 program](A299289.asm)): Coordination sequence for "tsi" 3D uniform tiling.
+* [A299290](http://oeis.org/A299290) ([L46 program](A299290.asm)): Partial sums of A299289.
+* [A299336](http://oeis.org/A299336) ([L26 program](A299336.asm)): Expansion of 1 / ((1 - x)^7*(1 + x)^4).
+* [A299337](http://oeis.org/A299337) ([L15 program](A299337.asm)): Expansion of 1 / ((1 - x)^7*(1 + x)^5).
+* [A299338](http://oeis.org/A299338) ([L05 program](A299338.asm)): Expansion of 1 / ((1 - x)^7*(1 + x)^6).
+* [A299641](http://oeis.org/A299641) ([L09 program](A299641.asm)): Solution (d(n)) of the system of 5 complementary equations in Comments.
+* [A299645](http://oeis.org/A299645) ([L25 program](A299645.asm)): Numbers of the form m*(8*m + 5), where m is an integer.
+* [A299646](http://oeis.org/A299646) ([L42 program](A299646.asm)): a(n) = Sum_{k = n..2*n+1} k^2.
+* [A299647](http://oeis.org/A299647) ([L05 program](A299647.asm)): Positive solutions to x^2 == -2 (mod 11).
+* [A299965](http://oeis.org/A299965) ([L13 program](A299965.asm)): Number of triangles in a Star of David of size n.

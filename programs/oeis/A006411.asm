@@ -1,0 +1,84 @@
+; A006411: Nonseparable planar tree-rooted maps with three vertices and n+2 edges.
+; 3,20,75,210,490,1008,1890,3300,5445,8580,13013,19110,27300,38080,52020,69768,92055,119700,153615,194810,244398,303600,373750,456300,552825,665028,794745,943950,1114760,1309440
+
+mov $4,3
+mov $2,3
+mov $4,$0
+mov $2,6
+mov $1,$4
+mov $3,$0
+mov $7,4
+mov $8,$7
+bin $2,2
+mov $6,0
+mov $4,3
+mov $8,4
+add $0,$8
+div $6,$4
+mov $5,4
+add $6,7
+sub $5,$3
+mov $3,$0
+sub $2,$7
+mov $7,$0
+bin $3,$8
+mov $1,$7
+lpb $0,1
+  gcd $8,$1
+  sub $4,$6
+  mov $4,$5
+  mov $4,7
+  mov $4,$0
+  mov $5,$4
+  mov $4,2
+  sub $0,1
+  add $8,4
+  sub $6,5
+  add $1,$4
+  mov $6,$8
+  div $7,5
+  mov $3,$5
+  mov $2,2
+  sub $4,3
+  mov $5,7
+  mov $5,3
+  sub $6,1
+  add $5,$3
+  add $1,1
+  add $7,$3
+  cmp $6,1
+  mov $4,$6
+  add $0,$1
+  mov $8,2
+  mov $3,5
+  mov $7,$8
+  mov $4,4
+  mov $6,3
+  add $2,1
+  sub $3,$8
+  mov $2,7
+  mov $6,$3
+lpe
+mov $1,7
+mov $6,4
+sub $7,$6
+sub $6,$4
+add $6,$5
+mov $6,$3
+add $5,5
+add $2,3
+log $2,$8
+sub $1,4
+sub $0,1
+add $7,5
+mul $5,4
+add $1,$1
+mov $5,7
+mov $8,0
+div $5,7
+mov $8,5
+mul $0,$6
+mov $2,6
+add $1,4
+sub $2,$4
+mov $1,$0

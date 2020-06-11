@@ -1,0 +1,138 @@
+; A032609: Concatenation of n and n + 4 or {n,n+4}.
+; 15,26,37,48,59,610,711,812,913,1014,1115,1216,1317,1418,1519,1620,1721,1822,1923,2024,2125,2226,2327,2428,2529,2630,2731,2832,2933,3034,3135,3236,3337,3438,3539,3640,3741,3842,3943,4044,4145,4246
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $11,$0
+  mov $13,2
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    add $0,$13
+    sub $0,1
+    mov $6,3
+    add $6,$0
+    mov $5,$0
+    add $5,1
+    mov $9,$5
+    sub $5,$5
+    add $6,6
+    mov $4,$9
+    mov $2,2
+    mov $9,$6
+    lpb $0,1
+      mov $3,$5
+      mov $5,$9
+      mul $4,8
+      mov $10,$0
+      sub $0,1
+      mov $8,5
+      mov $1,3
+      mov $5,$3
+      mov $3,$8
+      mod $10,2
+      mov $6,$10
+      mov $7,$3
+      add $1,$9
+      add $4,$4
+      sub $5,$3
+      mul $8,9
+      mov $5,$6
+      add $5,$5
+      mov $9,3
+      mov $3,$10
+      mov $0,$6
+      sub $5,10
+      sub $1,$7
+      pow $2,$0
+      add $6,4
+      sub $0,$8
+      sub $2,2
+      cmp $2,$7
+      div $10,$6
+      add $6,$3
+      mov $5,4
+      div $6,6
+      sub $7,$5
+      mul $3,2
+      add $6,1
+      add $3,7
+      sub $7,1
+      add $5,8
+      sub $10,1
+      mov $2,7
+      mov $10,$1
+      mov $3,7
+      add $6,$7
+      sub $0,2
+      add $7,4
+      mov $0,$7
+      mov $4,$4
+    lpe
+    sub $8,$1
+    sub $0,9
+    cmp $2,$9
+    add $10,1
+    mul $4,6
+    mov $10,3
+    add $10,5
+    mov $9,$2
+    gcd $3,2
+    mov $2,$4
+    sub $8,8
+    add $9,$8
+    sub $1,$4
+    sub $4,7
+    pow $7,$5
+    mov $6,10
+    mov $0,$2
+    mov $4,$9
+    add $9,10
+    add $8,$3
+    add $7,$6
+    add $0,4
+    sub $9,$6
+    mov $3,9
+    mov $2,$6
+    gcd $5,10
+    mov $1,$4
+    mov $4,$3
+    add $2,10
+    mul $8,2
+    mov $8,$3
+    sub $5,$2
+    add $1,10
+    mul $1,2
+    mov $5,$0
+    add $8,2
+    add $9,$10
+    mul $3,2
+    mul $4,$1
+    mov $10,$5
+    gcd $2,$1
+    mov $1,$0
+    mov $14,$13
+    lpb $14,1
+      mov $12,$1
+      sub $14,1
+    lpe
+  lpe
+  lpb $11,1
+    sub $12,$1
+    mov $11,0
+  lpe
+  mov $1,$12
+  sub $1,6
+  div $1,2
+  mul $1,2
+  add $1,11
+  add $16,$1
+lpe
+mov $1,$16

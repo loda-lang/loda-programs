@@ -1,103 +1,16 @@
 ; A225491: Maximal frequency depth for multisets over an alphabet of n letters.
 ; 0,4,5,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
 
-mov $2,1
-mov $3,3
-mov $10,2
+mov $4,2
 lpb $0,1
-  mov $6,4
-  mov $4,2
-  mov $1,5
-  mov $6,1
-  mov $2,4
-  pow $3,2
-  log $3,$2
-  mov $5,3
   mov $1,8
-  sub $2,$3
-  mod $6,8
-  mov $8,9
-  gcd $10,6
-  mov $9,0
-  mov $7,$4
-  sub $9,4
-  mov $7,9
-  sub $7,$10
-  add $3,$9
-  mov $8,5
-  add $8,$6
-  mov $7,4
-  add $0,$10
-  add $10,$1
-  bin $7,$6
-  add $1,5
-  add $1,1
-  pow $9,7
-  mov $9,5
-  mul $6,10
-  add $5,$9
-  mul $3,$7
-  sub $2,5
-  log $8,6
-  mov $4,5
-  mov $9,$2
-  add $5,$7
-  mov $8,10
-  mov $10,$5
-  mov $7,$4
+  add $0,$4
+  add $1,6
   div $1,$0
-  sub $2,5
-  mov $10,10
-  mul $9,10
-  mov $4,5
-  add $0,$2
-  add $0,2
-  sub $4,$6
-  mov $2,$6
-  mov $5,3
-  mov $0,9
-  mov $9,$1
-  mov $3,$4
-  add $8,$5
-  mov $5,9
-  sub $1,$4
-  add $7,9
-  mov $4,1
-  mov $4,$4
-  sub $5,1
-  add $7,$2
+  mov $2,$1
+  mov $3,9
+  sub $3,1
   clr $0,1
-  pow $6,$5
-  mov $3,$1
-  add $3,$5
-  sub $0,$7
-  sub $6,$3
-  sub $5,$9
-  sub $4,$5
-  mov $4,4
-  add $4,2
-  sub $10,$4
-  mod $8,10
-  mov $4,9
-  pow $3,3
-  sub $4,5
-  mov $10,8
-  add $3,9
-  mov $9,$2
-  sub $1,7
-  mov $6,$1
-  mov $3,3
-  bin $2,8
-  add $1,$2
-  mov $7,7
-  sub $2,5
-  sub $4,4
-  mov $2,$5
-  add $8,10
-  add $4,5
-  mov $6,8
-  sub $0,1
-  mov $4,$9
+  sub $3,$2
 lpe
-mov $6,10
-mov $1,$5
+mov $1,$3

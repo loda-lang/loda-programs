@@ -1,94 +1,20 @@
 ; A159914: Half the number of (n-3)-element subsets of {1,...,n} whose elements sum up to an odd value.
 ; 0,0,0,0,1,3,5,8,14,22,30,40,55,73,91,112,140,172,204,240,285,335,385,440,506,578,650,728,819,917,1015,1120,1240,1368,1496,1632,1785,1947,2109,2280,2470,2670,2870,3080,3311,3553,3795,4048,4324,4612,4900,5200
 
-mov $10,$0
-mov $12,$0
-add $12,1
-lpb $12,1
-  clr $0,10
-  sub $12,1
-  mov $0,$10
-  sub $0,$12
-  mov $7,$0
-  mov $5,$0
-  add $5,3
-  mov $1,$7
-  mov $5,$1
-  mov $3,2
+mov $6,$0
+mov $2,$0
+lpb $2,1
+  sub $2,1
+  mov $0,$6
+  sub $0,$2
+  mov $3,$0
+  mov $1,$3
   mov $5,4
   div $1,$5
-  sub $0,6
-  mov $5,$5
-  sub $7,3
-  mov $0,$7
-  mov $8,$7
-  mov $8,7
-  add $3,1
-  sub $5,$8
-  add $7,2
-  mov $4,$5
-  mul $4,5
-  mov $6,2
-  div $7,2
-  mov $2,$6
-  mul $1,$7
-  sub $2,$3
-  mov $5,3
-  mov $4,1
-  mul $7,$7
-  sub $6,8
-  mov $7,$0
-  mov $8,$2
-  mov $2,$3
-  lpb $0,1
-    mov $6,$7
-    mov $0,7
-    pow $2,$8
-    mul $1,3
-    add $7,8
-    mov $2,7
-    sub $8,$4
-    add $0,4
-    mov $2,$4
-    mov $5,$0
-    add $3,$5
-    mov $1,$8
-    mov $4,$0
-    add $1,$3
-    sub $6,8
-    clr $7,3
-    add $3,1
-    pow $1,4
-    sub $5,$7
-    pow $6,2
-    sub $8,3
-    sub $6,$8
-    pow $1,2
-    add $2,$7
-    mov $6,0
-    sub $0,3
-    add $7,4
-    mov $5,$1
-    mov $2,8
-    sub $8,$4
-    add $8,$1
-    add $1,$2
-    add $8,5
-    sub $0,1
-    add $0,$5
-    mov $7,0
-    sub $0,1
-    mov $3,$2
-    sub $6,$7
-    add $7,8
-    pow $1,2
-    mov $5,6
-    mov $7,$7
-  lpe
-  div $0,7
-  sub $0,1
-  sub $5,$5
-  mov $4,3
-  add $11,$1
+  sub $3,3
+  add $3,2
+  div $3,2
+  mul $1,$3
+  add $4,$1
 lpe
-mov $1,$11
+mov $1,$4
