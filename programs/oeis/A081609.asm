@@ -1,0 +1,118 @@
+; A081609: Number of numbers <= n having at least one 1 in their ternary representation.
+; 0,1,1,2,3,4,4,5,5,6,7,8,9,10,11,12,13,14,14,15,15,16,17,18,18,19,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,46,47,47,48,49,50,50,51,51,52,53,54,55,56,57,58,59,60,60,61
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $9,$0
+  mov $6,8
+  mov $9,5
+  lpb $0,1
+    add $0,$0
+    sub $0,1
+  lpe
+  mov $5,0
+  mov $8,0
+  mov $4,$9
+  mov $8,$4
+  mov $7,$6
+  mov $1,9
+  sub $5,4
+  mov $4,$9
+  sub $1,10
+  add $6,$4
+  mov $2,$6
+  add $2,$6
+  mov $1,$2
+  add $5,1
+  mov $6,4
+  mov $6,$9
+  mov $10,8
+  add $5,$4
+  add $1,$0
+  sub $7,$5
+  mul $0,9
+  mov $3,4
+  sub $8,$5
+  lpb $10,6
+    mov $10,4
+    lpb $0,9
+      add $2,$2
+      mov $1,6
+      lpb $8,10
+        div $8,10
+        mov $5,1
+        mov $10,6
+        sub $1,2
+        gcd $7,$9
+        sub $4,9
+        add $7,$9
+        sub $8,$5
+        mov $7,$8
+        mov $1,2
+        mul $6,10
+        pow $10,$4
+        bin $6,2
+        sub $9,$9
+        sub $4,$10
+        gcd $0,8
+        mov $8,$0
+        mov $0,$2
+        sub $8,$5
+        sub $2,4
+        sub $0,$0
+        sub $5,8
+        mov $9,$5
+        mul $8,$10
+      lpe
+      sub $1,8
+      sub $3,1
+      mov $7,8
+      mov $1,10
+      div $0,3
+      mov $3,9
+      mov $9,4
+    lpe
+    sub $0,$4
+    sub $8,$5
+  lpe
+  bin $1,10
+  mov $0,$6
+  mov $0,$6
+  sub $1,$0
+  mov $5,$10
+  add $6,$1
+  mov $2,3
+  mov $1,5
+  sub $9,6
+  sub $4,$5
+  div $7,$10
+  mov $6,$6
+  mov $2,$2
+  mul $0,5
+  mul $8,$8
+  div $7,2
+  mov $4,$4
+  add $9,1
+  mov $10,$4
+  sub $10,10
+  sub $1,$5
+  clr $1,10
+  mov $10,4
+  sub $4,9
+  mul $5,5
+  add $1,$10
+  sub $2,$3
+  add $7,1
+  sub $6,6
+  mov $1,$0
+  sub $1,25
+  div $1,6100
+  add $19,$1
+lpe
+mov $1,$19

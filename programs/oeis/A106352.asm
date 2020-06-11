@@ -1,117 +1,31 @@
 ; A106352: Number of compositions of n into 3 parts such that no two adjacent parts are equal.
 ; 1,2,7,9,15,21,28,35,46,54,66,78,91,104,121,135,153,171,190,209,232,252,276,300,325,350,379,405,435,465,496,527,562,594,630,666,703,740,781,819,861,903,946,989,1036,1080,1128,1176,1225,1274,1327,1377,1431
 
-mov $12,$0
-mov $14,$0
-add $14,1
-lpb $14,1
-  clr $0,12
-  sub $14,1
-  mov $0,$12
-  sub $0,$14
+mov $7,$0
+mov $3,$0
+add $3,1
+lpb $3,1
+  sub $3,1
+  mov $0,$7
+  sub $0,$3
   mov $8,$0
-  mov $3,2
-  mov $6,$3
   mov $2,$8
-  mov $1,3
-  mov $10,$0
-  sub $3,3
+  mov $5,$0
   gcd $2,2
-  mov $4,$10
-  mov $4,$4
-  sub $1,1
-  sub $6,7
-  add $8,$8
+  mov $4,$5
   mov $1,3
-  sub $0,$0
   mov $9,$4
   mod $9,$1
-  mov $3,$8
-  sub $10,3
-  add $0,$4
-  mov $8,4
-  sub $8,$0
-  add $10,1
-  mul $0,$8
-  add $8,1
   mov $8,$2
   add $4,$2
-  mul $1,$9
-  add $4,1
-  mov $5,0
-  mov $5,$10
-  mov $7,3
-  add $2,$8
-  mov $1,9
-  mov $0,1
-  mov $6,0
-  sub $4,3
-  add $1,8
-  div $10,2
+  sub $4,2
   add $4,$8
   add $4,$9
-  mov $7,$7
-  div $3,9
-  mov $10,$7
-  add $10,1
-  mov $2,1
-  sub $7,$4
-  mov $10,$2
-  mov $2,9
-  mov $1,$2
-  add $3,8
-  mov $1,$8
-  mov $7,$4
   mov $2,4
-  lpb $0,1
-    mov $2,$10
-    mod $1,8
-    pow $8,6
-    sub $10,$10
-    mov $0,4
-    mov $1,8
-    mov $5,1
-    mov $6,$0
-    clr $4,1
-    mov $10,0
-    mul $4,7
-    sub $3,3
-    mov $10,4
-    div $5,10
-    add $5,$4
-    mov $2,2
-    mov $6,8
-    add $7,$9
-    mov $5,2
-    sub $0,$7
-    add $6,$0
-    gcd $6,3
-    add $8,$4
-    mov $2,$6
-    add $3,10
-    mov $4,$3
-    clr $6,6
-    pow $5,7
-    add $7,$2
-    mov $6,$9
-    add $6,$7
-    sub $9,3
-    add $0,$3
-    sub $10,$0
-    add $1,7
-    add $5,1
-    pow $5,8
-    sub $0,1
-    sub $1,6
-    mov $8,$5
-    mov $0,$5
-  lpe
   add $4,$2
-  mov $3,$8
-  mod $8,8
   mov $1,$4
   sub $1,6
   add $1,1
-  add $13,$1
+  add $6,$1
 lpe
-mov $1,$13
+mov $1,$6

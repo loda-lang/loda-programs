@@ -1,124 +1,38 @@
 ; A040357: Continued fraction for sqrt(377).
 ; 19,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2
 
-mov $11,$0
-mov $13,2
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  add $0,$13
+mov $9,$0
+mov $5,2
+lpb $5,1
+  sub $5,1
+  mov $0,$9
+  add $0,$5
   sub $0,1
   mov $7,$0
-  mov $6,7
-  mov $6,$0
-  mov $2,5
   mov $6,$7
-  mov $9,10
-  mov $2,$6
-  mov $9,$7
-  mov $9,7
-  mov $3,$0
-  mov $5,$0
-  sub $0,9
-  sub $2,$0
-  mov $10,$2
-  mov $1,7
-  add $2,1
-  mov $4,$7
-  mov $4,$10
-  mov $2,$6
-  add $10,$0
-  mul $0,$5
-  mov $3,8
-  sub $1,2
-  add $10,7
-  mov $8,1
-  add $3,$7
-  clr $8,3
-  add $5,4
-  mov $3,$8
   div $6,4
-  mov $2,$3
-  mov $2,$6
-  mov $2,3
   mov $0,9
-  sub $6,$9
-  mov $10,$8
-  add $4,$1
-  add $5,$10
   mov $2,$7
   add $2,10
-  add $10,2
-  gcd $7,$5
   mul $0,4
-  add $10,$10
-  add $5,$2
-  sub $4,10
-  add $5,1
-  sub $1,$3
-  div $10,$2
-  div $9,4
-  mov $8,4
   mul $1,$3
-  mov $10,10
-  mov $10,$5
-  add $7,$10
   lpb $0,1
     sub $0,1
     add $2,$6
   lpe
-  add $7,8
-  sub $6,5
-  add $0,$10
-  mov $8,4
-  mov $5,1
-  add $6,6
-  add $6,8
-  sub $9,1
-  mod $7,7
-  add $8,$8
-  add $6,10
-  div $8,7
-  add $4,5
   mov $0,8
   add $2,$0
-  mov $4,$7
-  sub $1,4
-  sub $4,10
-  mod $7,$2
-  div $10,2
-  pow $0,$4
-  sub $1,6
-  mov $5,$4
-  mov $10,$0
-  mov $0,2
   add $1,$2
-  mov $8,$2
-  mov $0,6
-  add $5,3
-  sub $10,$0
-  mov $8,$6
-  mov $3,2
-  mov $3,3
-  mov $9,$10
-  mov $8,7
-  mov $7,1
-  sub $4,6
-  mul $7,2
-  mov $3,7
-  mov $2,6
-  sub $7,$7
-  mov $14,$13
-  lpb $14,1
-    mov $12,$1
-    sub $14,1
+  mov $4,$5
+  lpb $4,1
+    mov $8,$1
+    sub $4,1
   lpe
 lpe
-lpb $11,1
-  sub $12,$1
-  mov $11,0
+lpb $9,1
+  sub $8,$1
+  mov $9,0
 lpe
-mov $1,$12
+mov $1,$8
 sub $1,1
 add $1,2

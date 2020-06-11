@@ -1,0 +1,126 @@
+; A175864: Partial sums of ceiling(n^2/19).
+; 0,1,2,3,4,6,8,11,15,20,26,33,41,50,61,73,87,103,121,140,162,186,212,240,271,304,340,379,421,466,514,565,619,677,738,803,872,945,1021,1102,1187,1276,1369,1467,1569,1676,1788,1905,2027,2154,2286
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $3,$0
+      mov $4,$3
+      mov $8,5
+      mov $2,1
+      mov $7,$4
+      sub $2,4
+      sub $7,6
+      mov $6,7
+      gcd $6,2
+      mov $1,$3
+      mov $6,2
+      sub $4,$3
+      add $6,7
+      mov $5,5
+      add $3,$7
+      div $3,6
+      mul $8,2
+      sub $5,3
+      add $3,$5
+      mul $3,$6
+      sub $5,3
+      sub $3,$1
+      mul $4,2
+      add $1,$4
+      mul $6,$5
+      sub $7,$5
+      mov $6,1
+      pow $0,2
+      mov $6,$4
+      mov $1,$5
+      div $6,3
+      mov $5,3
+      add $2,1
+      mov $7,1
+      add $1,6
+      mov $5,6
+      mul $5,2
+      mov $8,$5
+      mul $2,$7
+      mov $5,6
+      sub $4,1
+      sub $6,7
+      mul $5,$6
+      mov $6,$2
+      mod $7,8
+      add $0,$4
+      mov $3,1
+      sub $6,6
+      lpb $0,1
+        sub $2,7
+        add $3,1
+        mov $1,4
+        add $7,$0
+        div $2,$3
+        sub $3,$5
+        gcd $2,3
+        sub $5,3
+        gcd $8,$5
+        sub $6,1
+        sub $5,8
+        mov $2,2
+        mov $2,$1
+        mov $8,4
+        mov $1,$3
+        sub $0,1
+        sub $1,8
+        mov $5,6
+        mul $5,3
+        add $3,$8
+        mov $7,$1
+        sub $1,$6
+        mov $7,$1
+        sub $0,$5
+        mov $1,$5
+        add $3,$7
+        add $4,$2
+      lpe
+      bin $8,7
+      div $1,2
+      add $0,$3
+      mov $1,$4
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    div $1,4
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17

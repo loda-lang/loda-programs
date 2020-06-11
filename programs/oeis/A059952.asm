@@ -1,86 +1,29 @@
 ; A059952: Ordering of a deck of 52 cards after an in-shuffle.
 ; 27,1,28,2,29,3,30,4,31,5,32,6,33,7,34,8,35,9,36,10,37,11,38,12,39,13,40,14,41,15,42,16,43,17,44,18,45,19,46,20,47,21,48,22,49,23,50,24,51,25,52,26
 
-mov $4,2
-mov $8,$4
-mov $2,$8
-pow $2,4
-add $8,$0
-mov $4,6
-mov $1,0
-mov $5,$8
+mov $2,2
+add $2,$0
+mov $5,$2
 mov $3,7
-mov $1,2
 gcd $0,$5
-add $4,1
-sub $8,1
-sub $4,$0
-sub $1,$4
-mul $1,$1
-mov $5,$8
-mov $1,6
-mov $6,$3
-div $2,$0
-add $8,$2
-sub $6,1
-mov $2,7
-add $6,$1
-add $8,$6
-mov $7,$3
-mov $7,0
-div $1,$4
-mov $4,7
 add $3,$5
-gcd $1,6
-add $5,$3
-sub $6,5
-sub $2,4
-bin $8,2
-mov $6,$4
-sub $4,8
-div $1,7
-mod $5,$3
-mov $8,$5
 lpb $0,1
   mov $5,$0
   add $1,$5
-  add $0,8
-  sub $0,1
+  add $0,7
   mul $5,5
-  mov $2,$4
-  add $2,6
-  add $7,$3
-  sub $6,5
   mov $4,$3
   add $5,2
-  mov $2,4
-  add $6,$8
   add $1,$5
   mov $3,8
-  mov $1,$1
-  sub $6,$4
   mov $5,$1
   add $4,$0
-  mov $1,1
-  sub $1,$6
   mul $5,2
   add $3,$5
   mov $0,1
-  mov $5,2
-  add $5,$2
-  add $5,$4
-  mov $8,6
-  mul $6,$8
-  add $2,$1
   add $3,8
-  sub $1,3
-  mov $5,$7
-  mov $2,4
   add $3,$4
-  add $1,$1
-  sub $5,$4
 lpe
-add $2,3
 mov $1,$3
 sub $1,9
 div $1,2

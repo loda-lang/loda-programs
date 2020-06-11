@@ -1,0 +1,105 @@
+; A040670: Continued fraction for sqrt(697).
+; 26,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $8,$0
+  mov $2,$0
+  mov $5,$8
+  mov $8,$5
+  mov $7,2
+  sub $8,$2
+  mov $5,1
+  sub $5,$0
+  bin $5,2
+  mov $7,$2
+  mov $1,2
+  add $8,3
+  mov $5,3
+  mov $2,1
+  mov $6,$2
+  div $0,$8
+  add $5,4
+  mov $7,$8
+  add $7,$0
+  add $6,$8
+  mov $4,$1
+  mov $2,$6
+  mov $1,$0
+  mov $2,4
+  lpb $0,1
+    add $4,$1
+    bin $7,2
+    mul $4,8
+    mov $4,$8
+    add $7,6
+    mov $6,5
+    mov $4,$0
+    sub $1,5
+    mov $5,6
+    sub $0,1
+    sub $1,$0
+    add $1,1
+    mov $7,1
+    add $8,6
+    sub $2,2
+    mov $5,2
+    sub $2,6
+    mov $3,$8
+    mov $7,7
+    mov $8,$0
+    mov $8,8
+    mov $6,2
+    sub $2,$6
+    mov $7,0
+    mul $3,2
+    mov $5,$4
+    add $5,$3
+    add $6,$0
+    add $3,7
+    add $2,$0
+    mul $3,$4
+    mov $4,5
+    mov $7,6
+    sub $5,3
+    mov $4,$5
+    add $4,5
+    mov $8,$2
+    mov $5,$5
+    mov $4,3
+    mov $0,0
+    gcd $8,$6
+  lpe
+  add $0,7
+  sub $2,5
+  div $0,$7
+  mov $6,4
+  add $3,4
+  add $8,$1
+  mov $6,$5
+  sub $6,5
+  add $2,$8
+  mov $1,$4
+  mov $8,4
+  add $3,8
+  mov $0,4
+  mov $1,$3
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
+mul $1,2
+add $1,2

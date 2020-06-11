@@ -1,106 +1,16 @@
 ; A224456: The Wiener index of the cyclic phenylene with n hexagons (n>=3).
 ; 459,1008,1845,3024,4599,6624,9153,12240,15939,20304,25389,31248,37935,45504,54009,63504,74043,85680,98469,112464,127719,144288,162225,181584,202419,224784,248733,274320,301599,330624,361449,394128,428715,465264,503829,544464,587223,632160
 
-mov $6,5
 add $0,1
-mov $9,5
-mul $6,$6
+mov $5,5
 mov $4,$0
-div $0,$6
-mov $7,$4
-mov $3,8
-mov $10,2
-mov $5,1
-mov $8,2
-mov $8,9
-add $9,$7
-mov $2,$9
-sub $7,3
-lpb $0,1
-  sub $9,1
-  pow $3,3
-  mov $2,9
-  mod $8,$4
-  add $3,2
-  div $5,2
-  log $10,7
-  div $9,7
-  mov $5,$5
-  mov $10,$9
-  mov $1,$6
-  add $0,$3
-  div $0,$6
-  sub $5,1
-  pow $0,2
-  fac $8
-  add $8,$10
-  sub $8,$3
-  mov $3,$1
-  sub $9,$7
-  add $3,$1
-  div $3,$3
-  mul $5,$5
-  sub $0,1
-  add $6,6
-  bin $10,$3
-  sub $10,$5
-  sub $8,7
-  mul $8,$8
-  pow $9,$6
-  div $7,2
-  mov $8,6
-  fac $3
-  sub $2,$2
-  mul $2,$2
-  add $2,2
-  gcd $8,$5
-  mov $4,7
-  add $9,$9
-  mov $10,$9
-  div $1,2
-  cmp $3,7
-  mov $4,0
-  add $9,4
-  pow $2,9
-  sub $3,$2
-  gcd $1,$3
-  bin $3,5
-  sub $6,$4
-  mul $8,9
-  mul $7,2
-  mov $10,$1
-  sub $0,$4
-  add $9,$5
-  sub $9,$3
-  mov $0,3
-  pow $10,3
-  add $4,$8
-  pow $3,10
-  mul $9,9
-lpe
-mul $7,2
-mul $6,9
+mov $3,$4
+add $5,$3
+mov $2,$5
 mul $4,$2
-div $8,5
-add $3,$0
-mov $8,3
-mul $4,$9
-mul $10,2
-mul $2,8
-sub $10,$3
-sub $2,$0
-add $7,9
-sub $0,$6
-sub $1,10
-gcd $7,$4
-sub $9,$8
-mov $5,$6
-gcd $1,$10
-sub $4,$9
-add $7,$0
-mul $7,$7
-mov $6,$0
-add $0,3
+mul $4,$5
+sub $5,3
+sub $4,$5
 mov $1,$4
 sub $1,33
 mul $1,9

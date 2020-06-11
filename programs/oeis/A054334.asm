@@ -1,0 +1,107 @@
+; A054334: 1/512 of 11th unsigned column of triangle A053120 (T-Chebyshev, rising powers, zeros omitted).
+; 1,12,77,352,1287,4004,11011,27456,63206,136136,277134,537472,999362,1790712,3105322,5230016,8580495,13748020,21559395,33153120,50075025,74397180,108864405,157073280,223689180,314707536,437766252,602516992,821063892,1108479152
+
+mov $5,$0
+mov $5,7
+mov $1,$0
+add $0,$5
+mov $2,$0
+add $1,5
+mov $3,$0
+mov $7,$0
+mov $7,5
+mov $2,$7
+mov $4,$2
+mod $2,7
+gcd $4,$5
+mov $2,$5
+gcd $4,$2
+mov $8,9
+mov $7,$5
+sub $5,8
+add $2,1
+mov $10,5
+mov $8,$2
+sub $10,2
+mov $6,2
+sub $10,8
+mov $9,$5
+lpb $0,1
+  mov $0,10
+  mul $7,8
+  mov $8,7
+  add $0,$2
+  mul $8,$8
+  mov $7,$2
+  mov $0,0
+  add $5,$1
+  add $2,$4
+  pow $7,9
+  sub $1,$8
+  mov $6,10
+  sub $2,$9
+  mov $10,$0
+  sub $0,1
+  div $0,9
+  add $9,$9
+  mul $2,2
+  add $0,$0
+  add $9,$5
+  sub $0,1
+  clr $2,1
+  div $1,$6
+  mov $1,2
+  mov $1,6
+  mov $9,$0
+  add $6,$9
+  mov $7,$1
+  mov $7,9
+  mov $4,6
+  mov $4,4
+  mov $2,$1
+  add $4,$5
+  sub $6,$7
+  sub $10,$8
+  mov $1,1
+  mul $6,2
+  bin $4,9
+  mov $8,$4
+  mul $4,$5
+  mov $9,10
+  mov $5,5
+  add $2,8
+  mov $8,0
+  add $2,$3
+  add $9,8
+  add $6,$0
+  mov $7,6
+  sub $9,$8
+  add $5,$5
+  mod $10,$4
+  bin $0,2
+  add $6,9
+  mov $9,7
+  mov $8,0
+  mov $3,9
+  sub $3,3
+  add $3,$4
+  sub $8,$0
+  bin $7,$5
+  add $8,$7
+  mov $8,0
+  mov $10,$4
+  mov $2,1
+  sub $1,$1
+  mov $3,5
+  mul $9,2
+lpe
+add $6,$4
+mul $8,9
+mov $2,$3
+mov $7,$9
+mov $8,$0
+add $7,9
+mov $1,$4
+sub $1,5
+div $1,5
+add $1,1

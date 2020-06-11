@@ -13,90 +13,20 @@ lpb $14,1
   mov $11,$0
   add $11,1
   lpb $11,1
-    clr $0,9
     sub $11,1
     mov $0,$9
     sub $0,$11
     mov $3,2
     mov $8,$0
-    mov $6,0
-    mov $4,$3
-    mul $3,$3
+    pow $3,2
     add $8,1
-    mov $1,$4
     mul $3,8
-    add $4,$8
     mul $8,$3
-    mov $2,$8
-    mov $7,4
-    sub $6,$0
-    mul $8,$8
-    lpb $0,1
-      sub $0,$4
-      pow $6,$2
-      sub $0,1
-      cmp $6,2
-      cmp $3,$6
-      sub $3,$0
-      pow $1,2
-      add $3,$7
-      mov $5,8
-      add $0,4
-      mul $2,$2
-      sub $0,1
-      bin $8,2
-      add $6,$4
-      mov $3,8
-      sub $2,$2
-      pow $2,$1
-      add $7,$4
-      pow $7,2
-      mul $4,2
-      sub $6,1
-      mov $8,8
-      add $0,$6
-      mul $3,8
-      mod $4,2
-      mov $3,6
-      add $1,$0
-      gcd $5,$1
-      div $4,2
-      mul $1,8
-      mov $1,$4
-      fac $8
-      pow $1,$2
-      mul $6,$6
-      pow $3,8
-    lpe
-    add $1,$7
-    pow $4,8
-    bin $2,2
-    add $1,$2
-    mov $4,$2
-    mul $6,8
-    mov $5,1
-    mov $5,$4
+    pow $8,2
     add $8,2
     pow $3,3
-    pow $0,2
-    div $3,4
-    sub $5,$4
-    mod $5,2
-    mod $1,$4
-    add $6,8
-    div $3,4
-    fac $7
-    sub $1,$4
-    div $1,2
-    mul $6,5
-    add $1,$0
-    sub $7,7
-    add $0,$5
+    div $3,16
     mod $3,$8
-    mod $1,$6
-    bin $4,$4
-    div $6,5
-    mod $1,2
     mov $1,$3
     add $10,$1
   lpe

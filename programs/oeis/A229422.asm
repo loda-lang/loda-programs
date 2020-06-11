@@ -1,0 +1,147 @@
+; A229422: Number of n X 2 0..2 arrays with horizontal differences mod 3 never 1, vertical differences mod 3 never -1, rows lexicographically nondecreasing, and columns lexicographically nonincreasing.
+; 5,12,27,55,102,175,282,432,635,902,1245,1677,2212,2865,3652,4590,5697,6992,8495,10227,12210,14467,17022,19900,23127,26730,30737,35177,40080,45477,51400,57882,64957,72660,81027,90095,99902,110487,121890,134152
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $11,$0
+    mov $13,2
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      add $0,$13
+      sub $0,1
+      add $0,4
+      mov $3,$0
+      mov $5,$0
+      mov $7,3
+      mov $6,5
+      mov $3,0
+      mov $4,10
+      sub $0,$0
+      mul $4,7
+      sub $3,$0
+      mov $10,$6
+      bin $5,$7
+      mov $8,$0
+      sub $7,8
+      mov $1,10
+      sub $5,$8
+      sub $3,$0
+      mov $1,$8
+      sub $3,$3
+      mov $3,$1
+      add $4,2
+      mul $1,8
+      add $7,$3
+      pow $1,9
+      mov $9,$5
+      sub $5,6
+      mov $8,$4
+      pow $8,$0
+      add $5,7
+      mov $1,8
+      mul $5,$8
+      lpb $0,1
+        mov $0,$7
+        add $5,8
+        add $1,5
+        mul $6,2
+        mov $5,$8
+        gcd $1,$1
+        mov $8,8
+        add $3,$0
+        add $0,8
+        mov $10,$8
+        mov $2,5
+        add $5,$0
+        sub $0,1
+        mov $10,$3
+        mul $6,8
+        mov $4,$1
+        add $9,7
+        mov $4,1
+        mov $3,2
+        mov $2,$3
+        mov $0,1
+        mov $7,$4
+        mov $2,$8
+        pow $3,$2
+        sub $4,$1
+        mov $7,1
+        add $0,1
+        add $7,9
+        add $5,1
+        mov $9,5
+        sub $4,4
+        mov $5,$9
+        gcd $4,6
+        sub $5,$9
+        add $8,5
+        mov $6,7
+        mov $6,7
+        add $3,$5
+        sub $3,$0
+        sub $10,$2
+        add $3,$3
+        mov $1,10
+      lpe
+      mov $1,0
+      mov $10,5
+      sub $4,10
+      mov $0,$3
+      mov $3,0
+      mov $3,$9
+      mov $10,$10
+      add $0,$1
+      add $5,$2
+      add $10,$8
+      mul $2,$0
+      mov $0,$0
+      add $1,2
+      mov $9,$6
+      add $1,$9
+      mov $1,9
+      add $4,$2
+      add $3,7
+      mov $9,3
+      sub $1,$1
+      sub $6,5
+      mov $4,2
+      mov $0,$1
+      gcd $8,3
+      div $7,5
+      mov $1,$5
+      mov $14,$13
+      lpb $14,1
+        mov $12,$1
+        sub $14,1
+      lpe
+    lpe
+    lpb $11,1
+      sub $12,$1
+      mov $11,0
+    lpe
+    mov $1,$12
+    sub $1,4
+    add $1,2
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19

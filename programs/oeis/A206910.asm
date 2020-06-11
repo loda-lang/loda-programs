@@ -1,90 +1,22 @@
 ; A206910: Position of 2n+sin(n) when the sets {2k+cos(k)} and {2k+sin(k)} are jointly ranked.
 ; 2,4,6,7,9,11,13,16,18,20,21,23,25,28,30,32,33,35,37,40,42,44,45,47,49,52,54,56,58,59,61,63,66,68,70,71,73,75,78,80,82,83,85,87,90,92,94,95,97,99,101,104,106,108,109,111,113,116,118,120,121,123,125
 
-mov $9,$0
-mov $5,$0
-mov $3,2
+mov $4,$0
 lpb $0,1
-  add $3,$0
-  mov $8,$0
   mov $3,8
   mov $1,$0
-  mov $7,5
   add $1,$3
-  add $3,$3
+  mul $3,2
   add $3,6
-  mov $4,7
-  add $5,$8
-  sub $8,$1
-  add $4,4
-  add $0,$7
   sub $0,$0
   mul $1,7
-  mul $5,$7
   sub $1,5
-  mov $7,$5
-  mov $2,0
-  mov $4,$1
-  add $8,$0
-  mov $4,$3
-  add $0,6
   mov $5,$3
-  add $1,1
-  mov $6,5
-  mov $6,$1
-  sub $5,$8
-  sub $1,7
-  add $2,2
-  mul $0,2
+  sub $1,6
   div $1,$5
-  mov $4,$8
-  mov $3,$4
-  sub $0,1
-  mov $2,$0
-  gcd $7,$6
-  mov $8,$4
-  add $2,$0
-  mov $6,4
-  mov $2,5
-  mov $0,$3
 lpe
-bin $8,$1
-add $1,8
-add $3,1
-mov $3,3
-mov $6,6
-add $4,1
-div $3,$6
-mov $7,2
-sub $8,6
-mov $3,4
-sub $3,7
-mul $7,$6
 gcd $1,2
-mov $0,6
-sub $3,$6
-mov $4,$3
-add $3,$0
-gcd $1,6
-mov $3,4
-sub $8,7
-add $0,2
-mov $5,$0
-sub $6,$0
-sub $4,$0
-mov $2,2
-mov $4,7
-div $8,$5
-mov $4,$0
-mov $4,$4
-mov $2,$5
-add $5,8
-sub $7,2
-sub $6,3
-add $2,1
-mov $10,$9
-mov $11,$10
-mul $11,2
-add $1,$11
-mul $10,$9
-mul $10,$9
+mov $6,$4
+mov $2,$6
+mul $2,2
+add $1,$2

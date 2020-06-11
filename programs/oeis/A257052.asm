@@ -1,0 +1,126 @@
+; A257052: a(n) = cpg(3, n) + cpg(4, n) + ... + cpg(n, n) where cpg(m, n) is the n-th m-th-order centered polygonal number.
+; 0,0,0,10,44,123,274,530,930,1519,2348,3474,4960,6875,9294,12298,15974,20415,25720,31994,39348,47899,57770,69090,81994,96623,113124,131650,152360,175419,200998,229274,260430,294655,332144,373098,417724,466235,518850
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $4,$0
+    mov $5,$0
+    add $5,$0
+    mov $3,$4
+    mov $9,8
+    sub $3,3
+    add $3,1
+    add $0,$5
+    add $5,$9
+    mov $4,$5
+    mov $7,0
+    add $7,5
+    mov $1,9
+    mul $3,$0
+    mov $1,8
+    sub $4,3
+    mod $9,9
+    sub $3,10
+    add $1,$3
+    mov $6,6
+    mov $9,$5
+    fac $7
+    mov $10,$5
+    mov $9,7
+    mov $4,2
+    mov $10,1
+    mov $2,$3
+    sub $0,5
+    mul $5,$5
+    mov $6,$7
+    mov $1,$1
+    mov $8,$6
+    mov $8,$2
+    sub $10,$4
+    sub $4,$5
+    add $1,8
+    sub $3,$10
+    mov $5,1
+    lpb $0,1
+      div $6,5
+      add $0,$9
+      mul $5,$10
+      add $4,6
+      mov $10,3
+      add $3,$6
+      add $4,7
+      mov $6,$0
+      mov $5,7
+      mov $0,$2
+      mov $7,$0
+      mov $2,10
+      mul $2,10
+      sub $9,$10
+      add $0,$4
+      mov $2,0
+      cmp $4,1
+      sub $5,4
+      mov $0,8
+      mov $4,$9
+      mov $6,1
+      sub $0,1
+      mov $0,$10
+      mul $5,8
+      mov $0,3
+      add $8,10
+      mov $2,6
+      mul $4,4
+      mov $9,7
+      mov $4,$8
+      mov $0,$6
+      sub $1,$6
+      mul $3,7
+      mov $7,10
+      add $10,5
+      mov $2,1
+      sub $2,$8
+      sub $6,$4
+      fac $6
+      div $7,$5
+      div $7,$6
+      mul $5,$4
+      mov $9,$6
+      mov $5,8
+      add $8,1
+      add $8,$1
+      add $8,$2
+      sub $8,9
+      mov $9,$7
+      sub $3,$9
+      mul $2,2
+      mov $6,9
+      sub $6,$5
+      add $9,$6
+      mov $9,4
+      mul $10,2
+    lpe
+    sub $3,8
+    add $8,10
+    mov $2,$8
+    mod $0,$1
+    mov $1,$4
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15

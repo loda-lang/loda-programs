@@ -1,117 +1,30 @@
 ; A067699: Number of comparisons made in a version of the sorting algorithm QuickSort for an array of size n with n identical elements.
 ; 0,4,8,14,18,24,30,38,42,48,54,62,68,76,84,94,98,104,110,118,124,132,140,150,156,164,172,182,190,200,210,222,226,232,238,246,252,260,268,278,284,292,300,310,318,328,338,350,356,364,372,382
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
+mov $7,$0
+mov $3,$0
+lpb $3,1
+  sub $3,1
+  mov $0,$7
+  sub $0,$3
   mov $4,$0
-  mov $1,7
   mov $5,$0
-  mov $8,5
-  sub $0,$8
-  mov $10,2
   mov $0,2
-  add $8,9
   add $4,7
-  mov $9,3
-  mov $5,$5
   mov $2,$0
-  mul $9,2
   lpb $2,1
-    sub $8,$0
-    mov $8,$10
-    sub $0,9
-    mul $8,$5
     lpb $4,1
-      mov $7,$4
       div $5,2
       sub $4,$5
-      div $0,8
-      mov $3,$0
-      add $2,$10
-      add $7,5
-      add $8,$7
-      gcd $2,6
     lpe
     sub $2,2
-    lpb $5,1
-      mul $8,5
-      div $2,2
-      mov $0,$7
-      mov $8,$3
-      mov $1,8
-      mov $10,$0
-      mov $8,0
-      mov $2,$5
-      add $1,$9
-      mov $7,6
-      add $7,2
-      sub $10,$0
-      sub $5,$5
-      mul $3,$10
-      add $0,1
-      sub $2,9
-      sub $8,10
-      pow $5,$8
-      sub $3,$4
-      mul $7,2
-      mov $6,6
-      mov $6,3
-      add $6,3
-      pow $8,8
-      pow $8,$1
-      mov $6,4
-      sub $9,6
-      mov $6,10
-      mul $4,6
-      mov $3,$1
-      add $7,6
-      bin $2,7
-      mov $1,$8
-      sub $9,$4
-      add $9,7
-      sub $4,5
-      mov $7,$8
-    lpe
-    mov $1,2
-    mov $1,$7
-    mov $10,4
-    mov $0,$0
     add $5,$4
-    mov $3,$0
-    mul $3,3
-    mov $10,$5
-    sub $4,$4
-    mov $2,$2
-    lpb $6,1
-      add $5,$8
-      mul $6,4
-      sub $6,$5
-    lpe
-    add $3,$7
     add $5,2
-    mul $4,4
-    sub $10,5
-    pow $6,7
-    sub $10,10
-    add $7,$5
-    mov $0,8
-    sub $2,1
-    add $6,5
-    mov $7,$0
-    gcd $8,$6
   lpe
-  sub $3,3
-  div $1,10
   sub $5,2
   mov $1,$5
   sub $1,7
   mul $1,2
-  add $12,$1
+  add $6,$1
 lpe
-mov $1,$12
+mov $1,$6
