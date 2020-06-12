@@ -1,0 +1,106 @@
+; A112539: Half-baked Thue-Morse: at successive steps the sequence or its bit-inverted form is appended to itself.
+; 1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0,0
+
+mov $7,0
+mov $5,8
+mov $9,0
+mov $10,9
+mov $5,$5
+add $10,$5
+bin $7,$7
+mov $5,$9
+mov $7,$0
+mov $6,8
+mov $4,2
+mov $4,$9
+sub $4,$9
+mov $8,$7
+clr $4,$9
+mov $3,2
+gcd $9,3
+sub $6,$3
+mov $1,1
+mov $10,$9
+mov $1,10
+mov $0,4
+mov $2,$0
+mov $0,10
+sub $6,10
+sub $0,$3
+mov $0,$2
+mul $4,3
+mov $6,9
+lpb $0,1
+  add $3,$8
+  sub $1,5
+  sub $10,$3
+  add $2,$8
+  mov $10,$6
+  mov $7,$4
+  sub $8,$5
+  sub $0,1
+  add $7,$5
+  add $7,$4
+  add $3,9
+  gcd $3,$9
+  div $8,4
+  mov $1,2
+  mov $1,$5
+  sub $7,$4
+  add $3,$10
+lpe
+mov $3,$8
+mov $6,8
+add $0,4
+mov $1,$7
+sub $5,9
+mov $4,0
+mov $8,3
+mul $2,2
+add $1,$2
+mov $8,$4
+add $10,2
+add $8,$6
+mul $8,$2
+mov $3,1
+sub $6,1
+add $3,$4
+add $3,$1
+sub $4,8
+bin $2,2
+mov $8,$7
+add $2,$9
+mov $1,$6
+mov $8,$5
+mov $9,2
+sub $9,$3
+mov $8,$9
+mov $5,6
+mov $0,$6
+sub $8,$4
+sub $3,$5
+mov $4,$1
+mov $9,8
+mul $8,$1
+add $5,$6
+mod $3,4
+mov $8,$0
+sub $6,$6
+add $1,6
+mov $1,5
+mov $1,10
+add $6,1
+sub $7,$2
+mov $6,$7
+gcd $4,$3
+mov $9,0
+add $8,4
+mov $10,4
+add $9,8
+div $0,6
+mov $6,3
+add $6,6
+sub $7,$3
+mov $1,$3
+sub $1,1
+div $1,2

@@ -1,0 +1,87 @@
+; A273182: a(n) is the second number in a triple consisting of 3 numbers, which when squared are part of a right diagonal of a magic square of squares.
+; 14,84,490,2856,16646,97020,565474,3295824,19209470,111960996,652556506,3803378040,22167711734,129202892364,753049642450,4389094962336,25581520131566,149100025827060,869018634830794,5065011783157704
+
+add $0,$0
+mov $6,4
+mov $4,$0
+mov $2,$6
+mov $1,$6
+mov $8,$0
+mov $6,2
+mov $5,8
+mov $8,$0
+add $0,3
+mul $5,$6
+add $2,1
+sub $6,5
+sub $2,4
+mov $5,$6
+mov $4,4
+add $8,$1
+mov $3,$8
+mul $4,$5
+sub $2,$3
+sub $5,$3
+add $2,1
+mov $4,8
+add $2,$0
+mov $8,$0
+mov $7,$6
+lpb $0,1
+  add $8,2
+  mov $4,$7
+  sub $3,$5
+  sub $5,$1
+  mov $7,$1
+  mul $5,$5
+  sub $8,7
+  mov $3,$4
+  mov $6,6
+  add $1,$7
+  sub $0,1
+  add $1,$3
+  sub $3,$8
+  sub $5,8
+  add $5,1
+  sub $2,$1
+  add $3,7
+lpe
+mov $2,6
+mov $0,$3
+mov $7,6
+add $3,3
+mov $1,1
+mov $1,1
+mov $6,$0
+mul $5,$1
+add $3,4
+mov $6,3
+sub $2,$7
+sub $0,$3
+div $4,2
+add $4,$2
+div $1,6
+mov $6,6
+mov $3,7
+mov $7,2
+mov $6,0
+add $6,3
+add $7,1
+mov $8,$0
+mov $2,1
+add $5,1
+add $1,6
+mov $7,4
+add $0,$6
+mov $5,$4
+add $3,3
+mov $2,0
+mov $3,$4
+mov $3,$7
+mul $8,$4
+mov $1,$5
+sub $0,1
+sub $1,4
+div $1,4
+mul $1,14
+add $1,14

@@ -2339,6 +2339,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A147758](http://oeis.org/A147758) ([L11 program](A147758.asm)): Numbers whose binary representation is a palindrome formed from the reflected decimal expansion of the concatenation of 1, 0 and infinite digits 1.
 * [A147818](http://oeis.org/A147818) ([L06 program](A147818.asm)): Period 4: repeat [5, 9, 9, 5].
 * [A147832](http://oeis.org/A147832) ([L07 program](A147832.asm)): Numbers congruent (0,2) mod 14.
+* [A147838](http://oeis.org/A147838) ([L13 program](A147838.asm)): a(n)=8*a(n-1)-6*a(n-2), a(0)=1, a(1)=6 .
 * [A147874](http://oeis.org/A147874) ([L06 program](A147874.asm)): a(n) = (5*n-7)*(n-1).
 * [A147875](http://oeis.org/A147875) ([L05 program](A147875.asm)): Second heptagonal numbers: a(n) = n*(5*n+3)/2.
 * [A151542](http://oeis.org/A151542) ([L05 program](A151542.asm)): Generalized pentagonal numbers: a(n) = 12*n + 3*n*(n-1)/2.
@@ -2852,6 +2853,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158071](http://oeis.org/A158071) ([L03 program](A158071.asm)): a(n) = 64*n + 1.
 * [A158083](http://oeis.org/A158083) ([L24 program](A158083.asm)): Possible answer to Marus du Satoy's puzzle sequence: a(n)=If[n <= 4, a[n - 1] + a[n - 2], If[n == 5, a[n - 1] + a[n - 2] + 9, a[n - 1] + 9]].
 * [A158090](http://oeis.org/A158090) ([L11 program](A158090.asm)): Period 9: repeat [0, 6, 0, 6, 0, 0, 3, 3, 0].
+* [A158121](http://oeis.org/A158121) ([L12 program](A158121.asm)): Given n points in the complex plane, let M(n) the number of distinct Moebius transformations that take 3 distinct points to 3 distinct points. Note that the triples may have some or all of the points in common.
 * [A158123](http://oeis.org/A158123) ([L03 program](A158123.asm)): a(n) = 81*n + 1.
 * [A158127](http://oeis.org/A158127) ([L16 program](A158127.asm)): a(n) = 100*n^2 + 2*n.
 * [A158128](http://oeis.org/A158128) ([L03 program](A158128.asm)): 100n + 1.
@@ -3314,6 +3316,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A163985](http://oeis.org/A163985) ([L06 program](A163985.asm)): Sum of all isolated parts of all partitions of n.
 * [A164004](http://oeis.org/A164004) ([L07 program](A164004.asm)): Zero together with row 4 of the array in A163280.
 * [A164005](http://oeis.org/A164005) ([L06 program](A164005.asm)): Zero together with row 5 of the array in A163280.
+* [A164006](http://oeis.org/A164006) ([L38 program](A164006.asm)): Zero together with row 6 of the array in A163280.
 * [A164013](http://oeis.org/A164013) ([L05 program](A164013.asm)): 3 times centered triangular numbers: 9*n*(n+1)/2 + 3.
 * [A164015](http://oeis.org/A164015) ([L05 program](A164015.asm)): 5 times centered pentagonal numbers: 5*(5*n^2 + 5*n + 2)/2.
 * [A164016](http://oeis.org/A164016) ([L05 program](A164016.asm)): 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
@@ -3850,6 +3853,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169713](http://oeis.org/A169713) ([L64 program](A169713.asm)): The function W_n(10) (see Borwein et al. reference for definition).
 * [A169720](http://oeis.org/A169720) ([L09 program](A169720.asm)): a(n) = (3*2^(n-1)-1)*(3*2^n-1).
 * [A169721](http://oeis.org/A169721) ([L10 program](A169721.asm)): a(n) = (2*(3*2^(n-1)-1))^2.
+* [A169722](http://oeis.org/A169722) ([L14 program](A169722.asm)): a(n) = (3*2^(n-1)-1)*(18*2^(n-1)-7).
 * [A169726](http://oeis.org/A169726) ([L09 program](A169726.asm)): a(n) = 3*2^n*(2^n-1) + 1.
 * [A169727](http://oeis.org/A169727) ([L10 program](A169727.asm)): a(n) = 3*(2^(n+1)-2)*(2^(n+1)-1) + 1.
 * [A169736](http://oeis.org/A169736) ([L22 program](A169736.asm)): First differences of A169735.
@@ -4054,6 +4058,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A172097](http://oeis.org/A172097) ([L10 program](A172097.asm)): Table T(n,k) read by rows which contains in row n the 2^n terms of A171968 starting at the (n+1)st 3.
 * [A172100](http://oeis.org/A172100) ([L05 program](A172100.asm)): Diagonal of the 26 X 26 Caesar Shift table.
 * [A172117](http://oeis.org/A172117) ([L12 program](A172117.asm)): a(n) = n*(n+1)*(20*n-17)/6.
+* [A172118](http://oeis.org/A172118) ([L18 program](A172118.asm)): n*(n+1)*(5*n^2-n-3)/2.
 * [A172123](http://oeis.org/A172123) ([L09 program](A172123.asm)): Number of ways to place 2 nonattacking bishops on an n X n board.
 * [A172131](http://oeis.org/A172131) ([L13 program](A172131.asm)): Partial sums of floor(n^2/9) (A056838).
 * [A172132](http://oeis.org/A172132) ([L29 program](A172132.asm)): Number of ways to place 2 nonattacking knights on an n X n board.

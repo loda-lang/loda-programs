@@ -1,0 +1,104 @@
+; A076538: Numerators a(n) of fractions slowly converging to e: let a(1) = 0, b(n) = n - a(n); if (a(n) + 1) / b(n) < e then a(n+1) = a(n) + 1, else a(n+1)= a(n).
+; 0,1,2,2,3,4,5,5,6,7,8,8,9,10,10,11,12,13,13,14,15,16,16,17,18,19,19,20,21,21,22,23,24,24,25,26,27,27,28,29,29,30,31,32,32,33,34,35,35,36,37,38,38,39,40,40,41,42,43,43,44,45,46,46,47,48,48,49,50,51,51,52,53
+
+mov $1,$0
+mov $5,$1
+mov $2,$5
+sub $2,$1
+mul $5,$0
+mov $8,5
+mov $1,$1
+mov $9,10
+add $0,1
+add $8,$8
+mov $5,2
+mov $6,1
+sub $5,$8
+mov $2,6
+mov $10,$2
+mov $4,7
+mov $3,9
+add $6,3
+add $8,$3
+lpb $0,1
+  mov $7,8
+  add $10,$2
+  add $1,$3
+  add $10,4
+  sub $10,10
+  add $8,$8
+  add $0,$3
+  sub $6,$5
+  sub $8,8
+  mov $1,$0
+  sub $8,$7
+  mov $5,$2
+  add $2,$10
+  mov $7,$4
+  sub $6,6
+  mov $3,$7
+  mov $9,2
+  sub $0,1
+  add $2,$0
+  mov $2,6
+  mov $6,1
+  mov $5,$1
+  mov $3,$5
+  mov $1,8
+  sub $10,10
+  add $1,$4
+  mov $1,9
+  mov $4,$7
+  mov $10,$6
+  add $1,$5
+  mov $7,$10
+  add $10,6
+  mov $5,$7
+  mov $9,$5
+  mod $7,2
+  mov $1,$10
+  add $4,3
+  mov $1,$9
+  add $3,$8
+  add $8,4
+  add $2,$5
+  mul $3,10
+  sub $3,3
+  add $2,1
+  add $10,5
+  mov $2,3
+  add $2,$5
+  mov $3,7
+  gcd $6,9
+  mov $4,$7
+  mov $3,7
+lpe
+mov $9,6
+mov $1,$8
+mul $9,$8
+sub $5,10
+add $9,$6
+add $4,$1
+mov $10,$8
+mov $2,$4
+sub $7,$7
+clr $10,9
+add $7,5
+mov $6,6
+mov $8,8
+mov $10,$4
+mov $6,$9
+add $7,8
+mov $10,$5
+mul $0,$1
+sub $7,9
+mov $3,$0
+div $0,$2
+sub $6,8
+add $3,$1
+sub $1,1
+sub $4,$4
+sub $4,$2
+add $6,$10
+sub $7,$6
+mov $1,$0
