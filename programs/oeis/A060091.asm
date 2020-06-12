@@ -1,0 +1,105 @@
+; A060091: Number of 4-block ordered bicoverings of an unlabeled n-set.
+; 0,0,0,16,63,162,341,636,1092,1764,2718,4032,5797,8118,11115,14924,19698,25608,32844,41616,52155,64714,79569,97020,117392,141036,168330,199680,235521,276318,322567,374796,433566,499472,573144,655248,746487
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $2,3
+    add $0,$2
+    mov $8,1
+    mov $6,2
+    mov $7,7
+    mov $4,$8
+    mov $5,8
+    log $6,5
+    mov $6,7
+    bin $0,3
+    mov $3,1
+    sub $7,4
+    sub $3,5
+    sub $5,1
+    sub $5,6
+    mov $8,7
+    mul $7,2
+    mul $6,$0
+    mov $4,1
+    add $4,4
+    add $0,$3
+    add $8,8
+    mov $2,7
+    sub $8,$7
+    add $7,$2
+    sub $0,5
+    sub $6,$7
+    add $8,$5
+    mov $0,$0
+    div $7,4
+    add $4,$5
+    sub $5,1
+    sub $8,1
+    lpb $0,1
+      sub $0,2
+      mov $7,$2
+      mov $1,3
+      mov $3,7
+      mul $1,2
+      sub $3,$4
+      sub $3,7
+      add $2,3
+      fac $2
+      mov $5,$5
+      mov $4,3
+      add $6,2
+      sub $7,3
+      mov $6,1
+      add $2,4
+      sub $7,1
+      add $6,2
+      sub $0,1
+      sub $4,$3
+      mul $5,$4
+      add $0,4
+      mov $6,$0
+      mov $6,$5
+      sub $1,4
+      mov $7,$0
+      add $5,1
+      mul $4,$7
+      mov $7,3
+      mov $4,$6
+      sub $6,$2
+      add $7,$5
+      mov $6,$6
+      mov $5,$0
+      mov $6,7
+      add $3,$7
+      add $2,$6
+      mov $2,4
+      mov $7,6
+      sub $2,6
+      mov $0,$6
+      sub $2,7
+    lpe
+    mov $6,$0
+    mov $1,$6
+    mov $8,7
+    mov $1,$5
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13

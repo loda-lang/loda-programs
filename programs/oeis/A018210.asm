@@ -1,0 +1,129 @@
+; A018210: Alkane (or paraffin) numbers l(9,n).
+; 1,4,16,44,110,236,472,868,1519,2520,4032,6216,9324,13608,19440,27192,37389,50556,67408,88660,115258,148148,188552,237692,297115,368368,453376,554064,672792,811920,974304,1162800,1380825,1631796
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $12,$0
+    mov $14,$0
+    add $14,1
+    lpb $14,1
+      clr $0,12
+      sub $14,1
+      mov $0,$12
+      sub $0,$14
+      mov $9,$0
+      mov $11,$0
+      add $11,1
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        sub $0,$11
+        mov $7,$0
+        mov $6,2
+        add $6,$0
+        mov $8,7
+        mov $5,1
+        add $0,5
+        mod $0,2
+        mov $3,$6
+        mov $4,$7
+        mov $5,$0
+        mov $6,$3
+        mov $7,$0
+        sub $8,4
+        add $4,1
+        mov $1,0
+        mul $5,4
+        mul $6,$4
+        add $0,$5
+        mov $2,4
+        mov $0,$6
+        mov $3,7
+        mov $5,$7
+        mov $4,3
+        clr $4,1
+        mul $4,$5
+        sub $3,$1
+        sub $5,6
+        mov $8,$2
+        mov $2,$0
+        sub $1,$5
+        mov $2,$4
+        add $4,2
+        add $5,$2
+        mod $5,7
+        add $1,1
+        add $4,7
+        mov $6,$7
+        add $4,3
+        mov $1,8
+        mul $1,4
+        mov $3,8
+        mul $0,$7
+        add $8,8
+        pow $4,$6
+        mov $5,$4
+        mov $7,$6
+        clr $2,2
+        mod $2,4
+        sub $3,7
+        add $7,$0
+        lpb $0,1
+          pow $0,3
+          sub $1,$0
+          mov $6,8
+          sub $0,1
+          sub $2,$8
+          add $8,1
+          mov $6,8
+          cmp $7,5
+          sub $1,$6
+          gcd $1,2
+          add $1,$4
+          add $3,$7
+          add $2,7
+          mov $8,5
+          add $8,$6
+          mul $7,2
+          sub $0,5
+          mov $1,4
+          add $3,$0
+          mov $7,3
+          mov $8,$7
+        lpe
+        sub $6,3
+        add $6,$7
+        mov $6,0
+        mul $2,$8
+        mov $8,$7
+        add $5,5
+        mov $4,$7
+        mov $1,$0
+        div $1,2
+        add $10,$1
+      lpe
+      mov $1,$10
+      add $13,$1
+    lpe
+    mov $1,$13
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19

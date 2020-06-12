@@ -1,127 +1,41 @@
 ; A329990: Beatty sequence for the number x satisfying 1/x + 1/3^x = 1.
 ; 1,2,3,5,6,7,9,10,11,13,14,15,17,18,19,20,22,23,24,26,27,28,30,31,32,34,35,36,38,39,40,41,43,44,45,47,48,49,51,52,53,55,56,57,58,60,61,62,64,65,66,68,69,70,72,73,74,76,77,78,79,81,82,83,85,86
 
-mov $17,$0
-mov $19,$0
-add $19,1
-lpb $19,1
-  clr $0,17
-  sub $19,1
-  mov $0,$17
-  sub $0,$19
+mov $10,$0
+mov $3,$0
+add $3,1
+lpb $3,1
+  sub $3,1
+  mov $0,$10
+  sub $0,$3
   mov $13,$0
-  mov $15,2
-  lpb $15,1
-    clr $0,13
-    sub $15,1
+  mov $12,2
+  lpb $12,1
+    sub $12,1
     mov $0,$13
-    add $0,$15
+    add $0,$12
     sub $0,1
     mov $8,9
-    mov $10,5
-    mul $10,$8
     mov $4,$8
-    mov $8,0
-    mov $7,$8
-    sub $10,$7
     mov $6,9
     mov $2,$0
     mov $7,9
-    mov $3,$4
     mov $0,7
     mov $8,$2
-    mov $10,5
-    add $3,$2
-    mov $10,$6
     mul $8,$4
     add $7,$8
     mov $9,$0
     add $9,3
     add $9,$6
-    mov $2,0
-    lpb $2,1
-      add $7,$8
-      mov $2,$8
-      mov $5,$0
-      mov $3,3
-      mov $4,$10
-      mov $6,10
-      lpb $4,1
-        add $2,4
-        clr $0,6
-        mov $10,$6
-        sub $0,$4
-        sub $4,$4
-      lpe
-      mul $7,2
-      clr $10,3
-      mov $9,$8
-      mov $8,9
-      lpb $5,1
-        mov $5,$10
-        mov $0,$7
-        add $9,3
-        add $7,$8
-        add $2,3
-        mov $0,7
-        add $5,$0
-        add $8,$6
-        sub $7,10
-        sub $9,$3
-        add $10,$7
-        add $2,$4
-        sub $10,10
-        sub $6,$4
-        add $6,3
-        mov $0,$0
-        add $9,10
-        mov $4,$3
-        add $8,$6
-        sub $5,$4
-        mov $4,10
-        mov $1,$6
-        add $4,$4
-        sub $6,$4
-        mov $0,10
-        mov $10,0
-        mov $6,$7
-        mov $10,4
-        mov $2,9
-        add $1,$5
-        add $8,9
-        pow $10,$10
-        mov $6,$6
-        sub $2,5
-      lpe
-      sub $3,$10
-      lpb $6,1
-        add $8,1
-        sub $6,$4
-        add $0,4
-      lpe
-      sub $2,1
-      sub $8,1
-      mov $4,1
-      sub $2,2
-      add $8,2
-      mul $9,4
-      mov $3,8
-    lpe
-    sub $6,6
-    mul $5,10
-    mov $0,$2
     add $9,10
     div $0,$7
-    mov $10,$5
-    add $6,$5
-    add $1,$0
     add $0,$7
     div $0,$9
     mov $1,$0
-    mov $16,$15
-    lpb $16,1
+    mov $11,$12
+    lpb $11,1
       mov $14,$1
-      sub $16,1
+      sub $11,1
     lpe
   lpe
   lpb $13,1
@@ -130,6 +44,6 @@ lpb $19,1
   lpe
   mov $1,$14
   add $1,1
-  add $18,$1
+  add $5,$1
 lpe
-mov $1,$18
+mov $1,$5
