@@ -391,6 +391,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106833](http://oeis.org/A106833) ([L09 program](A106833.asm)): 3n and 2n, alternating.
 * [A106839](http://oeis.org/A106839) ([L03 program](A106839.asm)): Numbers congruent to 11 mod 16.
 * [A107253](http://oeis.org/A107253) ([L39 program](A107253.asm)): a(n) = n^4 - 15*n + 15.
+* [A107255](http://oeis.org/A107255) ([L41 program](A107255.asm)): a(n) = n^5 - 31*n + 31, with n*a(n) + n*( n - 1 )*31 = n^6.
 * [A107256](http://oeis.org/A107256) ([L55 program](A107256.asm)): a(n) = n^6 - 63*n + 63, with n*a(n) + n*(n-1)*63 = n^7.
 * [A107328](http://oeis.org/A107328) ([L07 program](A107328.asm)): Duplicate of A065034.
 * [A107386](http://oeis.org/A107386) ([L09 program](A107386.asm)): a(n) = 2*a(n-1) - 2*a(n-3) + a(n-4), n>6.
@@ -913,6 +914,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120212](http://oeis.org/A120212) ([L17 program](A120212.asm)): "a" values providing solution x = b in A120211 (i.e., y^2 = b^2*(a^2 - b)*(b + 1) with a, b legs in primitive Pythagorean triangles).
 * [A120275](http://oeis.org/A120275) ([L19 program](A120275.asm)): Smallest prime factor of the odd Catalan number A038003(n).
 * [A120278](http://oeis.org/A120278) ([L27 program](A120278.asm)): Sum[Sum[C(2k,k),{k,1,m}],{m,1,n}], where C(2k,k)=(2k)!/(k!)^2=A000984[k].
+* [A120279](http://oeis.org/A120279) ([L20 program](A120279.asm)): a(n) = Sum[Sum[(i+j)!/i!/j!,{i,1,j}],{j,1,n}].
 * [A120323](http://oeis.org/A120323) ([L05 program](A120323.asm)): Periodic sequence 0, 3, 1, 0, 1, 3.
 * [A120324](http://oeis.org/A120324) ([L11 program](A120324.asm)): Periodic sequence 0, 1, 0, 4, 0, 1.
 * [A120325](http://oeis.org/A120325) ([L03 program](A120325.asm)): Period 6: repeat [0, 0, 1, 0, 1, 0].
@@ -2530,6 +2532,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154378](http://oeis.org/A154378) ([L03 program](A154378.asm)): a(n) = 250*n - 10.
 * [A154379](http://oeis.org/A154379) ([L03 program](A154379.asm)): a(n) = 250*n + 10.
 * [A154407](http://oeis.org/A154407) ([L18 program](A154407.asm)): a(n) = 5*2^(n-1) + 3*6^n/2.
+* [A154410](http://oeis.org/A154410) ([L20 program](A154410.asm)): a(n) = 5*(3*6^n + 2^n)/2.
 * [A154514](http://oeis.org/A154514) ([L11 program](A154514.asm)): a(n) = 648*n^2 - 72*n + 1.
 * [A154515](http://oeis.org/A154515) ([L10 program](A154515.asm)): a(n) = 648*n^2 + 72*n + 1.
 * [A154516](http://oeis.org/A154516) ([L09 program](A154516.asm)): a(n) = 9n^2 - n.
@@ -2746,6 +2749,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157639](http://oeis.org/A157639) ([L28 program](A157639.asm)): Least number of lattice points from which every point of a square n X n lattice is visible.
 * [A157651](http://oeis.org/A157651) ([L09 program](A157651.asm)): a(n) = 100*n^2 - 49*n + 6.
 * [A157652](http://oeis.org/A157652) ([L03 program](A157652.asm)): a(n) = 40*(200*n - 49).
+* [A157653](http://oeis.org/A157653) ([L23 program](A157653.asm)): a(n) = 80000*n^2 - 39200*n + 4801.
 * [A157659](http://oeis.org/A157659) ([L09 program](A157659.asm)): a(n) = 100*n^2 - n.
 * [A157660](http://oeis.org/A157660) ([L03 program](A157660.asm)): a(n) = 8000*n - 40.
 * [A157661](http://oeis.org/A157661) ([L10 program](A157661.asm)): a(n) = 80000*n^2 - 800*n + 1.
@@ -5356,6 +5360,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198795](http://oeis.org/A198795) ([L04 program](A198795.asm)): 7*6^n-1.
 * [A198796](http://oeis.org/A198796) ([L05 program](A198796.asm)): 3*6^n-1.
 * [A198797](http://oeis.org/A198797) ([L04 program](A198797.asm)): 4*6^n-1.
+* [A198833](http://oeis.org/A198833) ([L08 program](A198833.asm)): The number of inequivalent ways to color the vertices of a regular octahedron using at most n colors.
 * [A198834](http://oeis.org/A198834) ([L07 program](A198834.asm)): Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (0,1,1) or (1,1,1).
 * [A198845](http://oeis.org/A198845) ([L05 program](A198845.asm)): 8*6^n-1.
 * [A198846](http://oeis.org/A198846) ([L05 program](A198846.asm)): 9*6^n-1.

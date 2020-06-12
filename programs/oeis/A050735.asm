@@ -1,0 +1,83 @@
+; A050735: Numbers of form 5^k (values of k see A050726) containing no pair of consecutive equal digits (probably finite).
+; 1,5,25,125,625,3125,15625,78125,390625,1953125,9765625,6103515625,30517578125,152587890625,762939453125,3814697265625,19073486328125,95367431640625,476837158203125,2384185791015625
+
+mov $5,1
+mov $2,$0
+fac $0
+lpb $0,1
+  mov $0,7
+  mov $1,1
+  mov $4,3
+  mov $6,0
+  mov $3,$0
+  add $4,1
+  mov $2,$2
+  mov $0,$5
+  sub $1,2
+  mov $3,$4
+  mov $8,4
+  mov $0,$5
+  add $2,8
+  mov $6,$0
+  mov $3,2
+  add $5,2
+  mov $1,1
+  sub $2,5
+  add $0,$8
+  mul $0,$2
+  sub $0,1
+  add $1,7
+  mov $8,$8
+  sub $6,$6
+  add $5,$0
+  mov $5,$5
+  add $6,2
+  sub $8,$0
+  sub $6,$1
+  mov $7,3
+  sub $7,1
+  sub $4,$1
+  mul $7,$3
+  add $7,$4
+  sub $7,$4
+  add $5,3
+  mov $5,$7
+  mov $6,5
+  sub $0,$1
+  mov $7,2
+  mul $8,$4
+  add $8,2
+  sub $1,1
+  add $8,8
+  sub $3,1
+  pow $5,8
+  mul $0,$5
+  mov $5,$5
+  sub $7,$4
+  mov $3,3
+  pow $8,8
+  mov $1,$2
+  mov $6,6
+  add $0,1
+  sub $8,2
+lpe
+mul $3,$8
+mov $5,$6
+mov $3,$7
+mov $6,5
+mov $7,3
+pow $6,$2
+mov $1,3
+add $3,$6
+mov $3,2
+sub $8,4
+mov $0,$6
+mov $7,4
+mov $2,$4
+add $1,3
+sub $7,$7
+mov $1,2
+mov $0,8
+add $5,$6
+add $4,7
+mov $1,$6

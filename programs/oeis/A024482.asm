@@ -1,103 +1,31 @@
 ; A024482: a(n) = (1/2)*(binomial(2n, n) - binomial(2n-2, n-1)).
 ; 2,7,25,91,336,1254,4719,17875,68068,260338,999362,3848222,14858000,57500460,222981435,866262915,3370764540,13135064250,51250632510,200205672810,782920544640,3064665881940,12007086477750,47081501377326
 
-mov $11,$0
-mov $13,2
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  add $0,$13
+mov $5,$0
+mov $8,2
+lpb $8,1
+  sub $8,1
+  mov $0,$5
+  add $0,$8
   sub $0,1
   mov $4,$0
   mov $6,$0
   mov $3,$4
-  mov $7,$6
   add $6,8
   add $3,3
-  mov $5,2
-  mov $7,1
-  mov $8,8
-  add $4,$6
-  add $5,3
   add $0,$3
-  mov $1,7
-  pow $7,6
-  mov $2,7
-  add $2,1
-  sub $8,7
-  add $1,1
-  sub $6,5
-  pow $2,8
-  mov $2,$5
-  mul $8,$3
-  sub $3,$4
-  add $8,1
-  sub $1,6
-  sub $6,1
-  bin $0,$6
-  mov $4,3
-  mov $4,2
-  sub $6,7
-  add $3,7
-  add $0,7
-  lpb $0,1
-    sub $5,5
-    mov $7,2
-    sub $0,1
-    sub $5,$8
-    sub $8,2
-    mov $2,$8
-    sub $7,7
-    div $5,$2
-    mov $3,8
-    mov $6,$1
-    sub $3,6
-    add $4,1
-    add $0,$7
-    sub $0,1
-    pow $4,$5
-    add $4,3
-    mov $1,$1
-    mov $3,2
-    sub $8,$0
-    add $3,3
-    add $7,5
-    clr $5,6
-    add $3,6
-    mov $1,$5
-    add $8,$4
-    sub $8,3
-    add $0,4
-    mov $3,$1
-    mov $8,6
-    mov $4,4
-    add $8,8
-    add $4,1
-  lpe
-  mov $5,$4
-  add $7,$1
-  mul $7,$3
-  add $2,$4
-  add $1,$8
-  mov $3,8
-  mov $1,2
   sub $6,6
-  mov $7,$2
-  add $6,$8
-  sub $0,8
-  mov $3,3
-  mov $2,$1
-  add $4,7
+  bin $0,$6
+  sub $0,1
   mov $1,$0
-  mov $14,$13
-  lpb $14,1
-    mov $12,$1
-    sub $14,1
+  mov $7,$8
+  lpb $7,1
+    mov $2,$1
+    sub $7,1
   lpe
 lpe
-lpb $11,1
-  sub $12,$1
-  mov $11,0
+lpb $5,1
+  sub $2,$1
+  mov $5,0
 lpe
-mov $1,$12
+mov $1,$2

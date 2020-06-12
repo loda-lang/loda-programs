@@ -1,0 +1,87 @@
+; A002409: a(n) = 2^n*C(n+6,6). Number of 6D hypercubes in an (n+6)-dimensional hypercube.
+; 1,14,112,672,3360,14784,59136,219648,768768,2562560,8200192,25346048,76038144,222265344,635043840,1778122752,4889837568,13231325184,35283533824,92851404800,241413652480,620777963520,1580162088960
+
+mov $5,$0
+mov $2,6
+mov $8,2
+mov $6,$8
+sub $2,8
+mov $7,$2
+add $5,6
+mov $1,8
+bin $5,$0
+mov $3,1
+sub $6,1
+lpb $0,1
+  mov $5,$5
+  mov $6,$1
+  sub $6,$5
+  mul $5,2
+  sub $0,1
+lpe
+mov $6,7
+add $1,$5
+add $5,8
+mul $8,$5
+sub $7,$3
+mov $7,0
+add $2,8
+add $3,7
+mov $8,$6
+add $5,$7
+add $0,7
+log $8,4
+add $7,3
+add $0,3
+sub $2,$0
+mov $4,$3
+add $6,$6
+mov $4,8
+add $4,4
+mov $0,$5
+mov $7,$7
+mov $7,2
+mov $5,$0
+mov $1,8
+add $7,$3
+mov $6,$1
+mov $3,$0
+mov $7,$3
+add $2,$6
+add $7,1
+mov $7,7
+mov $6,$2
+add $1,3
+add $5,$6
+mov $0,7
+mod $1,$2
+mov $2,$6
+add $4,$5
+pow $8,$2
+log $1,$7
+sub $2,4
+mov $8,$1
+mov $8,$1
+add $8,4
+mov $3,7
+mov $2,$6
+mov $0,5
+mov $2,4
+mov $8,$4
+mov $5,$6
+mul $4,$6
+pow $5,6
+add $7,$1
+add $6,$7
+sub $4,5
+add $1,3
+sub $5,$7
+add $7,$6
+sub $7,$8
+add $0,$7
+mov $2,$4
+mov $3,$0
+mov $1,$2
+sub $1,227
+div $1,8
+add $1,1

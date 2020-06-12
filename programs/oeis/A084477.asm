@@ -1,107 +1,18 @@
 ; A084477: Number of fault-free tilings of a 4 X 3n rectangle with right trominoes.
 ; 4,2,8,48,288,1728,10368,62208,373248,2239488,13436928,80621568,483729408,2902376448,17414258688,104485552128,626913312768,3761479876608,22568879259648,135413275557888,812479653347328,4874877920083968
 
-mov $6,6
-mov $8,$0
-mov $7,10
-mov $2,10
-mov $10,4
-mul $8,2
-add $7,1
-mov $4,$0
-div $2,6
-add $7,$7
-mov $3,$7
-mov $9,6
-pow $9,$4
-mov $4,8
-mul $6,$4
-add $4,$9
-add $6,3
+mov $3,$0
+mov $2,6
+pow $2,$3
+mov $3,8
+add $3,$2
 lpb $0,1
-  mov $10,3
-  add $3,2
-  mov $7,5
-  sub $3,9
-  sub $0,$6
-  add $6,1
-  fac $3
-  mov $6,$10
-  mov $1,3
-  mov $5,8
-  mov $8,10
-  sub $0,1
-  add $7,1
-  sub $3,$3
-  add $7,2
-  sub $8,7
-  mov $0,$6
-  mov $0,0
-  mov $2,$7
-  mov $9,9
-  mov $5,$4
-  div $5,3
-  sub $4,$9
-  mov $6,$4
-  mov $2,2
-  mov $5,9
-  sub $6,$6
-  mul $0,$0
-  mov $8,4
-  add $1,2
-  sub $8,1
-  mov $2,$10
-  sub $0,$1
-  add $8,$6
-  add $0,2
-  pow $8,$3
-  mov $2,4
-  add $10,10
-  mov $0,$0
-  add $0,$0
-  sub $4,$7
-  mov $7,$2
-  mov $6,10
-  add $7,6
-  mov $6,5
-  mov $9,10
-  mov $0,$10
-  mov $2,6
-  sub $10,$2
-  mov $8,10
-  gcd $1,2
-  add $1,$1
-  mov $9,3
-  mov $9,8
-  sub $2,8
-  sub $7,$7
-  add $3,1
-  add $4,$2
-  sub $7,$2
-  add $2,$7
-  mov $5,3
-  mov $8,$10
-  mov $2,6
-  cmp $2,6
-  pow $3,$7
-  mov $0,$9
-  mov $2,$8
-  sub $8,$1
-  mod $0,$9
-  mul $6,6
-  mov $7,0
-  add $7,$5
-  add $5,9
-  add $5,$8
   mov $2,9
+  sub $3,$2
+  mov $0,$2
+  mod $0,$2
 lpe
-add $6,$9
-add $8,10
-mov $5,$2
-add $0,$2
-mov $1,$1
-mul $9,2
-mov $1,$4
+mov $1,$3
 div $1,9
 mul $1,2
 add $1,2

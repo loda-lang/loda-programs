@@ -1,0 +1,87 @@
+; A158121: Given n points in the complex plane, let M(n) the number of distinct Moebius transformations that take 3 distinct points to 3 distinct points. Note that the triples may have some or all of the points in common.
+; 6,93,591,2381,7316,18761,42253,86281,163186,290181,490491,794613,1241696,1881041,2773721,3994321,5632798,7796461,10612071,14228061,18816876,24577433,31737701,40557401,51330826,64389781,80106643,98897541
+
+mov $5,$0
+mov $7,6
+mov $6,3
+mov $1,7
+mov $0,$5
+mov $7,$7
+mov $8,1
+mov $2,5
+add $8,8
+sub $2,8
+sub $1,$0
+add $8,6
+mov $2,0
+mov $4,2
+mov $0,3
+mov $2,$0
+add $5,$0
+mov $1,0
+bin $5,$0
+mov $3,6
+mul $3,$5
+mov $1,5
+sub $2,3
+sub $8,1
+sub $5,$1
+sub $4,$5
+mov $5,3
+clr $0,$0
+mov $7,$6
+bin $4,$2
+mov $6,$3
+mov $4,3
+mul $8,2
+mov $8,4
+mov $8,5
+mov $2,4
+bin $6,2
+mov $8,2
+lpb $0,1
+  clr $5,$4
+  mov $8,2
+  mov $0,7
+  mul $1,$6
+  add $1,3
+  add $5,$0
+  sub $2,$3
+  sub $5,$7
+  mov $5,3
+  mul $2,$5
+  sub $5,$7
+  sub $5,$4
+  add $2,$5
+  add $1,$4
+  mov $1,$6
+  mov $8,2
+  mov $1,$6
+  add $3,8
+  sub $3,$7
+  add $5,$2
+  sub $0,1
+  mov $7,5
+  mov $2,$7
+  sub $6,$4
+  sub $4,6
+  mul $7,2
+  add $6,$0
+  pow $3,$4
+  add $1,$6
+  sub $8,3
+  mov $8,0
+  add $1,4
+  add $6,1
+  sub $0,$4
+  add $0,5
+  mov $2,8
+  pow $7,$0
+  mov $3,$2
+  mov $2,$0
+lpe
+mov $7,1
+mov $1,$6
+sub $1,15
+div $1,3
+add $1,6

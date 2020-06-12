@@ -1,106 +1,31 @@
 ; A077121: Number of integer squares <= n^3.
 ; 1,2,3,6,9,12,15,19,23,28,32,37,42,47,53,59,65,71,77,83,90,97,104,111,118,126,133,141,149,157,165,173,182,190,199,208,217,226,235,244,253,263,273,282,292,302,312,323,333,344,354,365,375,386,397,408,420
 
-mov $10,$0
-add $10,$0
-mov $9,$0
+mov $3,$0
+add $3,$0
 mov $4,2
-mov $2,$0
-mov $2,1
-mov $6,$2
-mov $8,$0
 mov $5,6
-add $2,4
-pow $10,3
-mov $6,9
+mov $2,5
+pow $3,3
 mov $0,5
 mov $6,$0
 lpb $2,1
-  mov $0,0
-  add $5,$10
-  mov $9,$8
-  mov $8,6
-  mov $3,$2
-  lpb $4,1
-    mov $10,1
-    add $9,$2
-    add $5,2
-    mov $5,10
-    mov $6,0
-    mov $0,8
-    mov $6,$9
-    add $0,1
-    mod $5,7
-    mov $1,$0
-    sub $3,1
-    mod $3,10
-    mov $8,2
-    sub $4,$4
-    mov $8,$9
-    div $5,6
-    sub $6,4
-    mov $2,$0
-    add $4,$0
-    mov $2,8
-  lpe
-  sub $8,$8
+  add $5,$3
   add $2,$6
   lpb $5,1
-    mov $7,$4
-    add $7,$1
     add $4,1
     sub $5,$4
     sub $5,$6
-    mov $8,$1
-    mov $10,9
-    add $7,$7
-    cmp $10,$7
-    sub $2,$8
     sub $4,1
-    mov $3,1
-    add $10,$4
-    add $3,$0
     add $4,6
     add $4,$2
   lpe
-  gcd $5,$10
-  add $7,$9
-  mov $7,0
-  fac $2
-  mul $2,$4
-  mul $3,$1
   lpb $6,1
-    div $9,$10
-    mov $8,1
-    add $10,4
-    add $2,$1
-    add $2,$4
-    mul $5,$0
     sub $6,$4
-    sub $2,1
-    mov $0,$10
-    sub $9,5
-    add $5,5
-    mov $0,1
-    mov $3,1
-    mul $3,$1
     mov $0,$4
-    sub $1,$6
-    add $8,5
-    bin $7,6
-    mov $2,8
   lpe
   mov $2,$1
-  sub $10,1
-  mov $6,10
-  cmp $9,9
-  mul $1,5
-  sub $2,1
-  mov $3,$0
-  add $1,$9
-  sub $0,$7
 lpe
-sub $7,1
 mov $1,$0
 sub $1,18
 div $1,16

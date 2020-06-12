@@ -1,85 +1,16 @@
 ; A003258: The number m such that c'(m) = A005206(A003231(n)), where c'(m) = A249115(m) is the m-th positive integer not in A003231.
 ; 2,3,5,7,8,10,12,13,15,16,18,20,21,23,24,26,28,29,31,33,34,36,37,39,41,42,44,46,47,49,50,52,54,55,57,58,60,62,63,65,67,68,70,71,73,75,76,78,80,81,83,84,86,88,89,91,92,94,96,97,99,101,102,104,105
 
-mov $4,2
-mov $7,$4
-mov $1,5
 mov $2,$0
-sub $0,$2
-mov $5,$4
-add $5,1
-mov $8,$0
-mov $5,$2
-mov $6,2
-lpb $0,1
-  sub $2,$6
-  add $2,$0
-  add $2,2
-  mov $1,3
-  sub $7,$0
-  mov $2,6
-  mov $7,$0
-  pow $4,$2
-  mov $5,$0
-  mul $8,$8
-  add $6,$6
-  mul $8,2
-  add $2,$0
-  mul $6,$5
-  mov $4,1
-  sub $7,$2
-  add $0,$0
-  mov $4,$4
-  mov $6,$2
-  mov $3,5
-  sub $3,$8
-  mov $6,8
-  sub $0,1
-  mov $2,$4
-  mov $2,1
-lpe
-mov $0,5
-mov $1,3
-mov $0,3
-mov $3,$5
-mul $5,5
 mov $3,$2
+mul $3,5
 div $2,7
-sub $5,$2
-mov $1,0
-sub $4,4
-sub $6,$5
-add $7,7
-mov $3,5
-sub $6,$4
-cmp $0,$0
-sub $6,$7
+sub $3,$2
+mov $0,1
 mul $0,4
-add $0,$4
-mov $4,4
-mov $4,$5
-add $2,$2
-sub $5,3
-add $3,2
-mov $1,2
+mov $4,$3
 div $4,3
-mov $6,$7
-add $8,$1
-add $5,2
-add $2,2
-add $6,$2
-sub $5,1
-mul $7,$1
-mov $7,$1
-pow $1,3
-mov $8,$3
-mov $6,$1
-mov $7,$2
-add $6,$1
-sub $3,$7
-sub $6,7
-add $4,8
-sub $4,1
+add $4,7
 mul $4,$0
 mov $1,$4
 sub $1,28
