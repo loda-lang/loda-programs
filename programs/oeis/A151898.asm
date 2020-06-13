@@ -1,124 +1,33 @@
 ; A151898: First differences of Frobenius numbers for 7 successive numbers A138987.
 ; 1,1,1,1,1,9,2,2,2,2,2,16,3,3,3,3,3,23,4,4,4,4,4,30,5,5,5,5,5,37,6,6,6,6,6,44,7,7,7,7,7,51,8,8,8,8,8,58,9,9,9,9,9,65,10,10,10,10,10,72,11,11,11,11,11,79,12,12,12,12,12,86,13,13,13,13,13,93,14,14,14,14,14,100,15
 
-mov $11,$0
-mov $13,2
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  add $0,$13
+mov $2,$0
+mov $9,2
+lpb $9,1
+  sub $9,1
+  add $0,$9
   sub $0,1
   mov $1,$0
-  mov $10,$0
-  mov $3,3
-  mov $0,6
   mov $7,3
-  mov $8,7
-  mov $10,$10
   mov $6,4
-  mov $4,2
-  mov $9,3
-  sub $0,9
-  sub $3,$8
-  sub $4,$10
   mov $3,$1
-  sub $0,8
-  mov $10,9
   gcd $6,$7
   add $3,$6
   add $7,$1
-  sub $4,1
   mov $8,$3
   div $8,6
   mul $7,$8
-  mov $6,$3
   mov $4,$7
-  add $6,1
-  sub $7,$9
-  mov $7,3
-  add $7,6
-  lpb $0,1
-    mov $4,$3
-    mov $1,$10
-    mod $8,$6
-    mov $4,$3
-    mov $2,$1
-    sub $7,$0
-    mov $2,8
-    mov $6,$2
-    sub $1,$10
-    sub $3,$3
-    mov $5,$9
-    add $8,2
-    mov $10,$2
-    mov $10,$10
-    mov $9,1
-    gcd $0,2
-    add $6,$5
-    sub $5,$7
-    mov $7,4
-    sub $2,1
-    mul $1,6
-    add $6,$8
-    mov $1,$4
-    bin $5,6
-    mov $4,7
-    pow $0,7
-    sub $4,$5
-    add $8,$10
-    mov $1,10
-    add $8,6
-    mov $10,7
-    mod $4,7
-    sub $0,1
-    add $3,$4
-    sub $0,$3
-    sub $8,6
-    mov $5,$2
-    sub $9,$1
-    mov $9,4
-    mul $7,$4
-    add $2,$5
-    mov $4,$0
-    mul $7,$0
-    mul $2,3
-    mov $3,$1
-    add $10,1
-    add $8,10
-    div $5,2
-    gcd $8,$0
-    sub $2,4
-    sub $1,$4
-    mov $10,$0
-    sub $5,$9
-    mov $9,$10
-    sub $7,$6
-    add $4,$6
-    mov $1,$5
-    mov $7,$9
-    mov $2,3
-    add $7,9
-    mov $0,0
-    log $2,5
-    sub $4,$10
-    add $7,$1
-    mul $3,4
-    sub $8,$5
-    sub $2,$10
-    div $0,2
-  lpe
-  sub $10,3
   mov $1,$4
-  mov $14,$13
-  lpb $14,1
-    mov $12,$1
-    sub $14,1
+  mov $5,$9
+  lpb $5,1
+    mov $10,$1
+    sub $5,1
   lpe
 lpe
-lpb $11,1
-  sub $12,$1
-  mov $11,0
+lpb $2,1
+  sub $10,$1
+  mov $2,0
 lpe
-mov $1,$12
+mov $1,$10
 add $1,1

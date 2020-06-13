@@ -1,0 +1,98 @@
+; A044382: Numbers n such that string 5,0 occurs in the base 10 representation of n but not of n-1.
+; 50,150,250,350,450,500,550,650,750,850,950,1050,1150,1250,1350,1450,1500,1550,1650,1750,1850,1950,2050,2150,2250,2350,2450,2500,2550,2650,2750,2850,2950,3050,3150,3250,3350,3450,3500
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  add $0,$0
+  mov $5,7
+  mov $1,$0
+  mov $7,1
+  mov $6,$0
+  mul $6,$1
+  mov $4,1
+  mov $3,3
+  mov $2,$0
+  mov $1,$2
+  sub $3,$4
+  mul $2,8
+  lpb $2,1
+    mov $8,4
+    lpb $4,1
+      add $7,5
+      sub $4,$7
+      cmp $3,$6
+      sub $6,1
+      sub $8,7
+    lpe
+    pow $0,8
+    sub $2,4
+    mov $5,$4
+    sub $1,$5
+    lpb $5,1
+      sub $5,$7
+      mov $8,$6
+      mov $5,2
+      sub $3,$3
+      add $4,4
+      mov $4,$5
+    lpe
+    sub $7,6
+    mov $2,7
+    add $4,1
+    add $1,$7
+    add $8,1
+    add $2,$7
+    mul $1,5
+    add $0,$1
+    mul $5,2
+    cmp $4,8
+    mov $4,5
+    sub $1,$1
+    add $3,1
+    mov $7,5
+    mov $1,$8
+    mov $4,$8
+    mul $5,$0
+    mov $0,6
+    add $0,$7
+    mov $4,0
+    add $8,6
+    mov $2,$8
+    gcd $6,$0
+    add $1,$0
+    mov $8,$5
+    mov $5,3
+    sub $2,$1
+    mov $0,$1
+    mov $2,7
+    sub $3,7
+    lpb $6,1
+      mul $4,$7
+      sub $8,$8
+      sub $6,$7
+      add $4,6
+      mov $7,2
+      mov $4,$8
+      gcd $3,2
+      add $3,1
+    lpe
+    sub $2,1
+  lpe
+  add $4,3
+  mov $7,3
+  add $8,$0
+  mul $6,2
+  add $8,1
+  mov $1,$3
+  sub $1,2
+  mul $1,50
+  add $1,50
+  add $10,$1
+lpe
+mov $1,$10
