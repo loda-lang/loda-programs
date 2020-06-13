@@ -1637,6 +1637,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133405](http://oeis.org/A133405) ([L08 program](A133405.asm)): a(n)=3a(n-1)-a(n-3)+3a(n-4).
 * [A133409](http://oeis.org/A133409) ([L08 program](A133409.asm)): Zero followed by partial sums of A133405.
 * [A133451](http://oeis.org/A133451) ([L32 program](A133451.asm)): Graph substitution of two octahedra inside an icosahedron connected at p=1: disconnected at p=0 ( concept similar to two tetrahedra inside a cube).
+* [A133463](http://oeis.org/A133463) ([L24 program](A133463.asm)): Partial sums of the sequence that starts with 2 and is followed by A111575.
 * [A133464](http://oeis.org/A133464) ([L17 program](A133464.asm)): a(3n)=4^n, a(3n+1)=2*4^n, a(3n+2)=3*4^n.
 * [A133494](http://oeis.org/A133494) ([L03 program](A133494.asm)): Diagonal of the array of iterated differences of A047848.
 * [A133496](http://oeis.org/A133496) ([L03 program](A133496.asm)): a(n) = (29*n)^2.
@@ -3407,6 +3408,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165020](http://oeis.org/A165020) ([L04 program](A165020.asm)): Length of cycle mentioned in A165019
 * [A165024](http://oeis.org/A165024) ([L04 program](A165024.asm)): Length of cycle mentioned in A165023
 * [A165063](http://oeis.org/A165063) ([L07 program](A165063.asm)): Length of cycle mentioned in A165062
+* [A165133](http://oeis.org/A165133) ([L14 program](A165133.asm)): a(n) = (2^(n+4)-1)*(2^n+1).
 * [A165145](http://oeis.org/A165145) ([L16 program](A165145.asm)): Partial sums of A058183.
 * [A165157](http://oeis.org/A165157) ([L07 program](A165157.asm)): Zero followed by partial sums of A133622.
 * [A165190](http://oeis.org/A165190) ([L09 program](A165190.asm)): G.f.: 1/((1-x^4)*(1-x^5)).
