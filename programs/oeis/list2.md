@@ -401,6 +401,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212837](http://oeis.org/A212837) ([L43 program](A212837.asm)): Number of 0..n arrays of length 4 with 0 never adjacent to n.
 * [A212838](http://oeis.org/A212838) ([L63 program](A212838.asm)): Number of 0..n arrays of length 5 with 0 never adjacent to n.
 * [A212839](http://oeis.org/A212839) ([L74 program](A212839.asm)): Number of 0..n arrays of length 6 with 0 never adjacent to n.
+* [A212850](http://oeis.org/A212850) ([L13 program](A212850.asm)): Number of n X 3 arrays with rows being permutations of 0..2 and no column j greater than column j-1 in all rows.
 * [A212890](http://oeis.org/A212890) ([L38 program](A212890.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and odd range.
 * [A212892](http://oeis.org/A212892) ([L05 program](A212892.asm)): a(n) = n^4/8 if n is even, a(n) = (n^2-1)^2/8 if n is odd.
 * [A212893](http://oeis.org/A212893) ([L16 program](A212893.asm)): Number of quadruples (w,x,y,z) with all terms in {0,...,n} such that w-x, x-y, and y-z all have the same parity.
@@ -1372,6 +1373,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247436](http://oeis.org/A247436) ([L21 program](A247436.asm)): Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (123...14)*
 * [A247541](http://oeis.org/A247541) ([L04 program](A247541.asm)): 7*n^2 + 1.
 * [A247608](http://oeis.org/A247608) ([L18 program](A247608.asm)): a(n) = Sum_{k=0..3} binomial(6,k)*binomial(n,k).
+* [A247609](http://oeis.org/A247609) ([L49 program](A247609.asm)): a(n) = Sum_{k=0..4} binomial(8,k)*binomial(n,k).
 * [A247617](http://oeis.org/A247617) ([L09 program](A247617.asm)): a(4n) = n + 1/2 - (-1)^n/2 + (-1)^n, a(2n+1) = 2*n + 5, a(4n+2) = 2*n + 3.
 * [A247618](http://oeis.org/A247618) ([L07 program](A247618.asm)): Start with a single square; at n-th generation add a square at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247620](http://oeis.org/A247620) ([L07 program](A247620.asm)): Start with a single hexagon; at n-th generation add a hexagon at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
@@ -1386,6 +1388,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247983](http://oeis.org/A247983) ([L08 program](A247983.asm)): Least number k such that log(2) - sum{1/(h*2^h), h=1..k} < 1/2^n.
 * [A248121](http://oeis.org/A248121) ([L11 program](A248121.asm)): Floor(1 / (1/n - Pi^2/6 + sum{1/h^2, h = 1..n})).
 * [A248216](http://oeis.org/A248216) ([L13 program](A248216.asm)): 6^n - 2^n.
+* [A248225](http://oeis.org/A248225) ([L12 program](A248225.asm)): 6^n - 3^n.
 * [A248230](http://oeis.org/A248230) ([L46 program](A248230.asm)): a(n) = floor(1/(zeta(4) - Sum_{h=1..n} 1/h^4)).
 * [A248231](http://oeis.org/A248231) ([L16 program](A248231.asm)): Least k such that zeta(5) - sum{1/h^5, h = 1..k} < 1/n^4.
 * [A248333](http://oeis.org/A248333) ([L10 program](A248333.asm)): Number of unit squares enclosed by n lattice points in and along the first quadrant of the coordinate plane starting from (0,0) and moving along each square gnomon starting on the y-axis and ending on the x-axis.
@@ -2624,6 +2627,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285953](http://oeis.org/A285953) ([L16 program](A285953.asm)): Positions of 0 in A285952; complement of A285954.
 * [A285998](http://oeis.org/A285998) ([L07 program](A285998.asm)): a(n) = Sum_{k=0..floor(n/2)} (n-k)*(k+1).
 * [A286016](http://oeis.org/A286016) ([L21 program](A286016.asm)): Signed continued fraction expansion with all signs negative of tanh(1).
+* [A286033](http://oeis.org/A286033) ([L12 program](A286033.asm)): a(n) = binomial(2*n-2, n-1) + (-1)^n.
 * [A286045](http://oeis.org/A286045) ([L19 program](A286045.asm)): Positions of 0 in A286044; complement of A003157.
 * [A286183](http://oeis.org/A286183) ([L13 program](A286183.asm)): Number of connected induced (non-null) subgraphs of the antiprism graph with 2n nodes.
 * [A286186](http://oeis.org/A286186) ([L14 program](A286186.asm)): Number of connected induced (non-null) subgraphs of the friendship graph with 2n+1 nodes.

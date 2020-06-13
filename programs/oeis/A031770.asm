@@ -1,0 +1,112 @@
+; A031770: Least term in period of continued fraction for sqrt(n) is 92.
+; 2117,8466,19047,33860,52905,76182,103691,135432,171405,211610,256047,304716,357617,414750,476115,541712,611541,685602,763895,846420,933177,1024166,1119387,1218840,1322525,1430442,1542591,1658972,1779585,1904430
+
+mov $11,$0
+mov $5,4
+mov $4,5
+mov $1,$0
+mov $6,$1
+mov $9,2
+add $0,4
+mov $8,3
+add $4,5
+add $9,6
+mov $5,4
+add $4,6
+mul $0,$4
+mov $5,$5
+mov $3,5
+mul $4,2
+add $6,1
+mov $7,$5
+mov $2,$4
+mov $0,$7
+sub $0,$6
+sub $3,8
+sub $9,$1
+mov $5,8
+mov $0,6
+sub $7,1
+sub $2,9
+mov $10,3
+mov $5,5
+add $1,9
+mul $4,$6
+mov $4,1
+sub $9,$3
+mul $2,$6
+mov $7,6
+mov $3,4
+mul $2,2
+sub $10,8
+div $3,6
+sub $0,7
+mov $1,8
+sub $6,9
+sub $10,$8
+cmp $10,7
+mov $0,$9
+sub $9,10
+mov $10,$1
+mov $0,$1
+lpb $0,1
+  mul $5,$5
+  sub $4,$4
+  mov $6,$3
+  mul $2,$2
+  add $7,1
+  sub $9,7
+  add $5,$6
+  add $10,$8
+  mov $8,6
+  mov $5,4
+  sub $0,$10
+  sub $7,$7
+  sub $7,10
+  add $0,1
+  mov $0,5
+  gcd $8,3
+  add $3,4
+  sub $3,$3
+  mov $3,1
+  add $10,$7
+  mov $7,$0
+  sub $0,1
+  log $10,2
+  sub $2,2
+  sub $10,$8
+  sub $6,1
+  mod $5,$3
+lpe
+pow $6,$1
+pow $8,$9
+add $3,4
+add $4,10
+mov $0,1
+pow $3,$6
+mul $7,5
+add $9,$8
+sub $5,8
+mov $0,10
+sub $9,$0
+sub $8,7
+mod $1,$7
+mov $5,$0
+mov $7,$8
+add $10,$4
+mov $7,$6
+gcd $4,$5
+mov $8,5
+add $3,5
+sub $2,2
+mov $6,6
+sub $3,5
+mov $8,$8
+mov $1,$2
+add $1,5
+mov $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11
+mul $12,$11

@@ -953,7 +953,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120908](http://oeis.org/A120908) ([L06 program](A120908.asm)): Sum of the lengths of the drops in all ternary words of length n on {0,1,2}. The drops of a ternary word on {0,1,2} are the subwords 10,20 and 21, their lengths being the differences 1, 2 and 1, respectively.
 * [A120926](http://oeis.org/A120926) ([L16 program](A120926.asm)): Number of isolated 0's in all ternary words of length n on {0,1,2}.
 * [A120962](http://oeis.org/A120962) ([L25 program](A120962.asm)): Final digit (in decimal system) of n^(n^n), i.e., n^(n^n) mod 10.
-* [A121025](http://oeis.org/A121025) ([L39 program](A121025.asm)): Multiples of 5 containing a 5 in their decimal representation.
 * [A121149](http://oeis.org/A121149) ([L19 program](A121149.asm)): Minimal number of vertices in a planar connected n-polyhex.
 * [A121177](http://oeis.org/A121177) ([L03 program](A121177.asm)): Catapolyoctagons (see Cyvin et al. for precise definition).
 * [A121205](http://oeis.org/A121205) ([L05 program](A121205.asm)): "666" in bases 7 and higher rewritten in base 10.
@@ -1821,6 +1820,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135859](http://oeis.org/A135859) ([L05 program](A135859.asm)): Row sums of triangle A135858.
 * [A135914](http://oeis.org/A135914) ([L11 program](A135914.asm)): 4*3^n-2*2^n-1.
 * [A135916](http://oeis.org/A135916) ([L16 program](A135916.asm)): (n^4 - 10*n^2 + 15*n - 6)/2.
+* [A135989](http://oeis.org/A135989) ([L23 program](A135989.asm)): a(n) = 6*n + 3 + 90*floor((6*n+3)/10).
 * [A135992](http://oeis.org/A135992) ([L14 program](A135992.asm)): Positive Fibonacci numbers swapped in pairs.
 * [A136006](http://oeis.org/A136006) ([L04 program](A136006.asm)): a(n) = n^6 - n^3.
 * [A136008](http://oeis.org/A136008) ([L06 program](A136008.asm)): a(n) = n^6 - n^2.
@@ -2599,6 +2599,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155603](http://oeis.org/A155603) ([L07 program](A155603.asm)): 5^n+3^n-1.
 * [A155604](http://oeis.org/A155604) ([L11 program](A155604.asm)): 6^n+3^n-1.
 * [A155605](http://oeis.org/A155605) ([L10 program](A155605.asm)): 7^n+3^n-1.
+* [A155611](http://oeis.org/A155611) ([L13 program](A155611.asm)): 6^n - 3^n + 1.
 * [A155616](http://oeis.org/A155616) ([L08 program](A155616.asm)): 5^n + 4^n - 1.
 * [A155617](http://oeis.org/A155617) ([L09 program](A155617.asm)): 6^n + 4^n - 1.
 * [A155618](http://oeis.org/A155618) ([L09 program](A155618.asm)): a(n) = 7^n+4^n-1^n.
@@ -3450,6 +3451,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165988](http://oeis.org/A165988) ([L04 program](A165988.asm)): First trisection of A022998.
 * [A165998](http://oeis.org/A165998) ([L12 program](A165998.asm)): Denominators of Taylor series expansion of 1/(3*x)*log((1+x)/(1-x)^2)
 * [A166021](http://oeis.org/A166021) ([L08 program](A166021.asm)): a(n) = 2*A000124(A003056(n-1)) if A002262(n-1)=0, otherwise a(n-1)+1.
+* [A166023](http://oeis.org/A166023) ([L19 program](A166023.asm)): a(n) = 6*a(n-2) for n > 2; a(1) = 1, a(2) = 5.
 * [A166024](http://oeis.org/A166024) ([L04 program](A166024.asm)): Define dsf(n) = A045503(n) = n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the decimal digits of n. dsf(421845123) = 16780890 and dsf(16780890) = 421845123, so these 2 numbers make a loop for the function dsf.
 * [A166025](http://oeis.org/A166025) ([L11 program](A166025.asm)): a(0) = 6, a(1) = 17, a(n+1) = a(n) + a(n-1) for n>0.
 * [A166033](http://oeis.org/A166033) ([L23 program](A166033.asm)): a(n) = 11/4 +11*n/2 + 29*(-1)^n/4.
@@ -4417,6 +4419,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179207](http://oeis.org/A179207) ([L08 program](A179207.asm)): a(n) = n - 1 + ceiling((-3 + n^2)/2) if n > 1 with a(1)=1, complement of A182835.
 * [A179257](http://oeis.org/A179257) ([L28 program](A179257.asm)): Number of permutations of length n which avoid the patterns 321 and 1324.
 * [A179259](http://oeis.org/A179259) ([L12 program](A179259.asm)): Arises in covering a graph by forests and a matching.
+* [A179338](http://oeis.org/A179338) ([L13 program](A179338.asm)): Positive integers of the form (10*m^2+1)/11.
 * [A179403](http://oeis.org/A179403) ([L18 program](A179403.asm)): Number of ways to place 2 nonattacking kings on an n X n toroidal board.
 * [A179409](http://oeis.org/A179409) ([L31 program](A179409.asm)): The number of alive cells in Conway's Game of Life on the 8x8 toroidal grid, in a cyclic sequence of 48 patterns containing among other patterns, a "stairstep hexomino" and its mirror image, illustrated below.
 * [A179410](http://oeis.org/A179410) ([L31 program](A179410.asm)): The number of columns with alive cells in the n-th generation of cyclic sequence of patterns given in A179409, played in Conway's Game of Life on the 8x8 toroidal grid.

@@ -1,106 +1,25 @@
 ; A093616: a(n) = smallest k such that k*n has exactly as many divisors as n^2.
 ; 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,8,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,8,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72
 
-mov $6,8
 mov $1,$0
-mov $8,$1
+mov $5,$1
 mov $3,$1
-sub $0,$1
-mov $10,$3
-mov $0,2
-add $6,1
-mov $2,$10
-add $1,5
-add $8,5
-add $0,$6
-mov $6,10
-mov $1,8
+mov $2,$3
+add $5,5
 mov $4,7
-mov $7,$0
 mov $0,5
-mov $5,6
-add $10,3
-pow $2,10
-mov $1,2
-mov $2,8
-add $3,6
+add $2,3
 lpb $0,1
-  mov $2,$0
-  add $4,$8
-  add $2,3
-  mov $10,3
-  add $4,$10
-  add $2,$8
-  add $6,5
-  mov $0,3
-  sub $10,10
-  mov $0,5
-  mov $8,$0
-  mov $7,3
-  mov $7,9
-  sub $8,$3
-  mov $8,4
-  mul $4,7
-  add $5,$0
-  mov $10,$4
-  mov $6,9
-  mov $10,$5
-  mov $5,4
-  add $6,7
+  add $4,$5
+  mov $2,3
+  add $4,$2
   sub $0,1
-  add $10,9
-  mov $8,$7
   mul $0,8
-  mov $3,$7
-  add $3,1
   gcd $4,$0
-  add $3,$1
-  mov $10,10
-  mov $7,7
-  mov $1,$10
-  sub $3,$2
-  sub $2,$8
-  sub $7,$0
-  sub $1,$3
-  add $1,$0
-  mov $9,$0
-  log $8,2
-  add $5,6
-  add $1,8
-  div $3,2
-  mul $6,$6
-  sub $1,5
-  mov $1,5
-  mov $5,$3
-  sub $5,9
-  mov $2,$3
-  mov $7,9
-  mov $9,$5
-  sub $5,2
-  mov $9,0
-  add $1,$10
-  mov $5,5
+  mov $2,10
   sub $0,$4
-  add $1,$0
 lpe
-sub $8,$0
-mov $7,6
-mov $6,$10
-mov $6,$6
-mov $7,5
-mov $9,$8
-sub $1,$6
-mov $0,1
-mov $8,$6
-mul $0,$7
-mul $3,10
-add $3,4
-add $4,9
-mul $5,$5
-add $8,2
-add $3,$7
-cmp $2,4
-mov $2,$2
+mov $6,$2
 mov $1,$6
 sub $1,3
 add $1,1

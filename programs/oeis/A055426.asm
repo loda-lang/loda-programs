@@ -1,0 +1,138 @@
+; A055426: Number of points in Z^n of norm <= 2.
+; 1,5,13,33,89,221,485,953,1713,2869,4541,6865,9993,14093,19349,25961,34145,44133,56173,70529,87481,107325,130373,156953,187409,222101,261405,305713,355433,410989,472821,541385,617153,700613,792269,892641
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $13,$0
+    mov $15,$0
+    add $15,1
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      sub $0,$15
+      mov $9,$0
+      mov $11,2
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        add $0,$11
+        sub $0,1
+        mov $7,$0
+        mov $6,$0
+        mov $3,$0
+        mov $8,$6
+        mov $2,$7
+        mov $7,$6
+        mov $4,$0
+        add $6,$7
+        lpb $0,1
+          mov $0,4
+          add $4,3
+          mul $4,4
+          mov $6,$8
+          sub $3,2
+          mov $4,8
+          mul $2,$2
+          mov $8,$0
+          mov $6,4
+          mul $3,$4
+          sub $7,6
+          bin $3,2
+          mov $1,5
+          add $8,$8
+          div $7,4
+          mov $5,3
+          sub $0,3
+          mov $8,1
+          add $5,$0
+          mov $7,$4
+          add $3,$5
+          sub $0,1
+          mov $2,3
+          sub $7,5
+          mul $1,4
+          mov $6,$4
+          mov $4,2
+        lpe
+        mov $7,8
+        add $6,7
+        sub $2,1
+        pow $0,2
+        add $5,1
+        sub $8,1
+        sub $5,$1
+        mov $1,$7
+        mov $7,$8
+        add $4,8
+        sub $6,1
+        gcd $5,$3
+        add $1,5
+        add $3,$8
+        mov $5,$8
+        mul $5,$5
+        mov $5,5
+        mov $0,$3
+        sub $5,2
+        sub $7,8
+        sub $2,$6
+        add $2,6
+        add $6,$4
+        sub $8,4
+        mov $4,$3
+        add $4,$6
+        mov $2,7
+        mul $8,$7
+        mov $8,$5
+        mul $6,$3
+        mov $2,1
+        mov $3,2
+        mov $5,$4
+        add $2,$2
+        mov $3,5
+        add $3,2
+        mov $6,$1
+        sub $3,7
+        add $4,$0
+        add $3,2
+        add $2,$8
+        add $5,1
+        add $6,$3
+        mov $1,$0
+        mov $12,$11
+        lpb $12,1
+          mov $10,$1
+          sub $12,1
+        lpe
+      lpe
+      lpb $9,1
+        sub $10,$1
+        mov $9,0
+      lpe
+      mov $1,$10
+      div $1,4
+      add $1,1
+      add $14,$1
+    lpe
+    mov $1,$14
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20
