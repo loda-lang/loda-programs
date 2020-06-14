@@ -1,84 +1,26 @@
 ; A329961: Beatty sequence for 2 + sin x, where x = least positive solution of 1/(2 + sin x) + 1/(2 + cos x) = 1.
 ; 2,5,8,11,14,17,20,23,25,28,31,34,37,40,43,46,49,51,54,57,60,63,66,69,72,74,77,80,83,86,89,92,95,98,100,103,106,109,112,115,118,121,123,126,129,132,135,138,141,144
 
-mov $4,7
-mov $6,$4
-mul $0,$4
-mov $1,$0
+mul $0,7
 sub $0,3
-mov $2,$0
-mov $6,7
-gcd $6,$0
-mov $3,1
-sub $1,3
-gcd $3,5
-mov $1,$0
-mul $0,$6
-mov $7,6
-mov $1,$3
-sub $2,$6
-add $2,$3
-mov $5,0
+mov $5,7
+gcd $5,$0
 mov $2,2
-mov $8,$0
-add $0,$1
-mov $0,5
-add $2,$6
-add $6,4
-add $8,$7
-mov $0,$0
-add $7,2
+mov $3,$0
+add $2,$5
+add $3,6
 add $2,3
-mov $0,$8
-add $2,$2
-sub $3,8
-sub $8,$4
-mov $6,$1
-gcd $7,2
-mul $7,3
-mul $0,$1
-mov $4,4
-sub $1,7
-add $2,1
-sub $2,1
-mov $5,5
-mov $4,$7
+mov $0,$3
+mul $2,2
+mov $5,1
+mov $4,6
 add $0,3
-add $1,$7
-add $6,$7
-sub $7,1
-mov $3,$3
-div $3,6
+add $5,6
 lpb $0,1
-  mov $3,$1
-  sub $8,$4
   sub $0,1
-  mov $1,8
-  add $4,$6
-  add $7,4
+  add $4,$5
 lpe
-mov $7,$1
-add $3,$8
 add $2,5
 add $4,1
-add $6,7
-sub $7,1
-add $5,$2
 div $4,$2
-div $6,2
-mov $6,7
-gcd $0,$6
-mov $5,$1
-mul $5,4
-mov $3,$5
-mov $0,$1
-sub $2,3
-mov $7,$0
-sub $2,$8
-add $6,1
-mul $0,2
-mov $5,1
-add $5,$8
-pow $8,$7
-mov $7,4
 mov $1,$4

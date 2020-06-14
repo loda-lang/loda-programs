@@ -1,0 +1,91 @@
+; A020331: Numbers n such that base 3 representation is the juxtaposition of two identical strings.
+; 4,8,30,40,50,60,70,80,252,280,308,336,364,392,420,448,476,504,532,560,588,616,644,672,700,728,2214,2296,2378,2460,2542,2624,2706,2788,2870,2952,3034,3116,3198,3280,3362,3444,3526,3608,3690,3772,3854,3936,4018
+
+mov $9,$0
+mov $6,3
+mov $4,6
+mov $2,$0
+mov $6,$2
+mov $4,1
+mov $8,6
+mov $3,$6
+add $6,$3
+sub $6,4
+add $0,1
+mov $7,8
+mov $7,$6
+mov $5,$4
+mov $1,1
+mov $6,1
+mov $8,$1
+mov $3,$0
+mov $2,8
+sub $4,$8
+div $8,$0
+add $7,$0
+mov $2,$3
+add $5,$6
+add $5,3
+mov $2,$8
+sub $4,$6
+mov $4,6
+mov $7,0
+mov $8,4
+add $1,$7
+mov $6,$5
+mov $3,$0
+sub $6,7
+lpb $0,1
+  mov $4,3
+  add $0,3
+  mov $2,$4
+  add $8,$4
+  mul $3,$2
+  sub $1,$1
+  div $0,3
+  sub $0,1
+  add $1,7
+  add $6,$4
+  add $6,2
+  mov $1,$7
+  sub $2,2
+  mov $4,5
+  mov $1,$5
+  sub $7,1
+  add $4,1
+  add $5,$1
+lpe
+gcd $2,$5
+mod $7,3
+add $1,5
+add $4,6
+mov $4,2
+mov $2,$4
+mov $4,$6
+mov $5,2
+add $5,2
+mov $0,1
+mov $5,$3
+sub $1,1
+add $1,$6
+mov $4,$7
+mov $2,4
+mov $6,3
+div $0,$5
+mov $1,$3
+add $4,$4
+sub $6,3
+mul $0,$5
+mov $6,3
+add $7,$8
+mov $5,2
+add $7,$4
+mov $3,3
+mov $7,$4
+add $1,1
+mov $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9
+mul $10,$9
