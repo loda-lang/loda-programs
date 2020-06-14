@@ -1,0 +1,95 @@
+; A200748: Smallest number requiring n terms to be expressed as a sum of factorials.
+; 0,1,3,5,11,17,23,47,71,95,119,239,359,479,599,719,1439,2159,2879,3599,4319,5039,10079,15119,20159,25199,30239,35279,40319,80639,120959,161279,201599,241919,282239,322559,362879,725759,1088639,1451519,1814399,2177279
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $2,$0
+  lpb $2,1
+    mov $4,1
+    mov $3,2
+    mov $7,8
+    mov $2,1
+    mov $6,$0
+    mov $0,3
+    mul $7,2
+    lpb $4,1
+      mov $7,1
+      sub $3,$0
+      mov $8,$4
+      add $6,$3
+      mov $0,6
+      mov $1,8
+      mov $5,7
+      mul $5,$8
+      mod $5,2
+      mov $4,$4
+      div $7,5
+      mov $1,4
+      sub $4,$3
+      sub $8,$5
+      mov $6,2
+      mul $4,$5
+      mov $1,4
+      mov $7,$4
+      sub $2,1
+      mov $6,8
+      add $5,3
+      mov $2,4
+      mov $3,$6
+      mod $3,2
+      mov $2,$3
+      mov $4,$6
+      sub $1,$2
+      sub $8,$7
+      div $4,4
+      add $6,6
+      mov $2,$8
+    lpe
+    add $0,$3
+    mov $1,$1
+    sub $6,$5
+    mov $7,$2
+    lpb $5,1
+      add $5,$2
+      cmp $2,$5
+      mov $7,$1
+      sub $5,$3
+    lpe
+    lpb $6,1
+      add $5,1
+      mov $0,$5
+      mov $3,$0
+      mul $1,$0
+      add $8,2
+      mov $1,$0
+      mov $3,$3
+      mov $8,$4
+      mul $4,6
+      sub $0,$0
+      add $8,$8
+      div $0,5
+      sub $6,$3
+      add $8,$2
+      mov $4,$8
+      fac $3
+      add $7,$4
+      sub $0,2
+      sub $2,8
+    lpe
+    add $7,6
+    sub $6,7
+    add $7,8
+    add $7,$6
+    sub $2,1
+  lpe
+  sub $2,8
+  mov $1,$3
+  add $10,$1
+lpe
+mov $1,$10

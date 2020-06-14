@@ -1,83 +1,12 @@
 ; A071400: Rounded volume of a regular octahedron with edge length n.
 ; 0,0,4,13,30,59,102,162,241,344,471,627,815,1036,1294,1591,1931,2316,2749,3233,3771,4366,5020,5736,6517,7366,8285,9279,10348,11497,12728,14044,15447,16941,18528,20211,21994,23878,25867,27963,30170,32490
 
-mov $4,1
 pow $0,6
-mov $7,$4
 sub $0,4
-mov $2,8
-add $2,3
-clr $1,$2
-add $1,$2
-sub $1,4
-mov $8,$7
-sub $1,2
-mov $7,$1
-mov $5,$2
-mov $3,1
-mov $8,$8
-mov $6,3
-add $7,$2
-add $3,$5
-gcd $3,5
-add $5,8
-mov $5,$6
-add $8,7
-mul $8,$3
-add $1,6
-mov $5,$2
-add $3,$7
-mul $4,$1
 lpb $0,1
-  sub $5,$4
-  div $6,8
-  add $3,$2
-  mov $6,$5
-  sub $1,$1
-  add $7,7
-  mov $1,$2
-  mov $4,6
-  mov $3,0
-  mov $8,4
-  mul $7,6
-  add $3,$5
-  mov $7,$4
-  sub $5,$5
-  div $1,$7
-  add $7,5
-  pow $6,$7
-  mov $7,4
-  add $3,2
-  mov $1,3
-  add $5,$2
-  sub $3,1
-  sub $3,2
-  mov $3,$3
-  add $7,6
-  bin $1,8
-  mov $6,7
-  sub $4,$7
-  mov $6,$1
-  sub $8,4
-  mov $1,4
-  sub $8,1
-  mov $1,4
-  add $6,8
-  pow $6,$3
   add $2,8
-  add $7,$4
-  add $5,3
-  mov $1,$5
-  sub $5,$3
-  add $8,2
   sub $0,1
-  mov $6,0
-  mul $7,2
-  pow $7,2
-  mov $3,$5
-  sub $4,$8
   sub $0,$2
-  mul $5,$6
   add $2,1
 lpe
 mov $1,$2

@@ -1,0 +1,106 @@
+; A213283: Number of 4-length words w over n-ary alphabet such that for every prefix z of w we have #(z,a_i) = 0 or #(z,a_i) >= #(z,a_j) for all j>i and #(z,a_i) counts the occurrences of the i-th letter in z.
+; 0,1,9,36,118,315,711,1414,2556,4293,6805,10296,14994,21151,29043,38970,51256,66249,84321,105868,131310,161091,195679,235566,281268,333325,392301,458784,533386,616743,709515,812386,926064,1051281,1188793,1339380,1503846
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $2,$0
+    mov $5,$0
+    mov $1,2
+    sub $2,1
+    mov $3,$1
+    add $3,$5
+    mov $6,$2
+    mov $3,$2
+    lpb $0,1
+      sub $0,1
+      sub $0,1
+      mov $6,2
+      mov $5,3
+      mov $1,$0
+      mul $3,8
+      mov $4,$5
+      sub $4,5
+      sub $2,8
+      add $5,$3
+      mov $7,0
+      mov $2,$0
+      mov $1,5
+      mov $4,0
+      mov $7,8
+      mov $6,$5
+      mov $7,0
+      add $4,$7
+      mov $6,$3
+      mul $2,6
+      mul $2,$0
+      mov $5,3
+      mov $5,8
+      add $3,5
+      mul $2,2
+      mov $4,8
+      mov $8,$2
+      mov $1,$4
+      add $7,$1
+      add $6,2
+      add $7,$8
+      mov $6,$7
+      add $5,1
+      mov $3,2
+      add $0,$5
+      mov $5,5
+      mov $2,4
+      mov $4,1
+      div $4,$4
+      add $5,$7
+      mov $4,3
+      mov $7,4
+      mov $6,7
+      sub $5,4
+      sub $0,$4
+      pow $4,7
+      mov $3,$5
+      add $2,1
+      mov $3,$1
+      mov $4,$5
+      sub $5,$6
+      mov $4,$5
+      mov $2,$6
+      add $3,1
+      mov $6,$8
+      mov $4,$6
+      add $1,$0
+      mov $0,$0
+      add $7,$2
+      add $8,$2
+      add $5,5
+      sub $3,2
+      add $2,1
+      add $2,$5
+      add $6,$5
+      sub $7,$1
+      mov $0,1
+      sub $2,$4
+      sub $1,2
+    lpe
+    mov $2,$8
+    mov $1,$5
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13
