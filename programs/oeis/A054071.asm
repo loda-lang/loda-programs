@@ -1,105 +1,29 @@
 ; A054071: Position of 1 in the permutation of 1,2,...,n obtained by ordering the fractional parts {h*sqrt(2)} for h=1,2,...,n.
 ; 1,1,2,2,3,3,3,4,4,5,5,5,6,6,7,7,8,8,8,9,9,10,10,10,11,11,12,12,13,13,13,14,14,15,15,15,16,16,17,17,17,18,18,19,19,20,20,20,21,21,22,22,22,23,23,24,24,25,25,25,26,26,27,27,27,28,28
 
-mov $10,$0
-mov $5,$10
-sub $10,2
-mov $4,9
-mov $9,2
-mov $7,1
-mul $4,2
-mov $7,10
-mov $3,$5
-mov $7,$4
-mov $10,$3
-mov $2,9
-mov $1,5
-mov $9,1
-mov $5,$3
-sub $7,8
-mov $8,$2
-add $3,$9
-sub $2,3
-mov $2,1
-mul $8,$8
-sub $8,$2
+mov $2,$0
 mov $6,$0
-clr $8,1
-mov $2,$2
-add $2,1
-add $0,$10
+add $0,$2
 add $0,9
-div $6,$7
-add $8,2
-mov $5,3
+div $6,10
 lpb $0,1
-  mov $5,0
-  add $1,10
-  mov $3,5
-  add $4,10
-  mov $8,7
+  mov $7,7
   sub $0,$6
-  sub $3,$5
-  mul $6,$1
-  sub $5,$0
-  add $10,$0
-  div $10,$8
+  add $2,$0
+  div $2,$7
   mov $6,4
-  mov $2,10
-  add $5,$7
-  sub $2,8
-  sub $5,5
-  mov $7,$0
-  mov $8,$2
   mov $5,9
-  mov $9,9
   mov $0,$6
   sub $0,1
-  mov $7,$2
-  add $4,$0
-  mov $9,8
+  mov $4,8
   pow $0,$5
-  mov $6,3
-  sub $8,9
-  mov $5,4
+  mov $6,$4
   add $6,$0
-  mov $5,0
-  add $5,3
-  add $2,9
-  mov $6,$9
-  sub $5,$10
-  add $6,$0
-  div $2,3
-  mul $2,$2
-  add $4,2
-  mov $0,$1
-  add $8,$0
-  add $2,$3
-  mov $3,$10
-  mov $2,7
+  mov $3,$2
   add $6,$3
   mov $0,1
-  mov $4,$7
-  add $4,$1
-  add $9,1
-  mov $3,$8
-  mov $3,$4
-  mov $2,10
-  sub $10,$3
-  add $2,9
-  mov $8,2
-  add $0,$0
 lpe
-add $1,5
-mov $0,3
-mov $10,$5
 add $6,2
-log $8,$1
-mov $0,6
 mov $1,$6
-add $8,$5
-mov $10,$10
-sub $4,$1
-mov $4,$0
 sub $1,19694
 add $1,1

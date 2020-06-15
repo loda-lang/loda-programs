@@ -1,85 +1,15 @@
 ; A177145: E.g.f.: arcsin(x).
 ; 1,0,1,0,9,0,225,0,11025,0,893025,0,108056025,0,18261468225,0,4108830350625,0,1187451971330625,0
 
-mov $1,7
 mov $3,4
-mov $7,$3
 mov $2,$0
 mov $4,1
-mov $5,$1
 lpb $2,1
-  mov $6,1
-  add $1,8
-  mov $7,$4
-  lpb $4,1
-    mov $4,8
-    sub $4,$7
-    mov $1,4
-    add $2,2
-    mov $2,2
-    mov $5,$3
-    mul $1,2
-    mul $2,$5
-    mov $5,$4
-    mov $8,3
-    mov $1,5
-    mov $5,0
-    mov $5,8
-    add $2,1
-    add $2,$2
-    gcd $4,$0
-  lpe
-  sub $2,$7
-  sub $6,1
-  lpb $5,1
-    mov $0,7
-    add $1,$2
-    add $3,$8
-    sub $5,$7
-    add $4,4
-    add $5,1
-    add $2,$5
-    add $8,5
-    sub $0,$2
-    mov $1,$4
-    mov $3,$3
-    mul $2,2
-    add $8,$1
-    mov $8,6
-    add $0,7
-    sub $2,8
-    mov $0,2
-    mul $3,$2
-    mov $2,2
-    mov $6,1
-    mul $5,2
-    mov $3,$4
-    add $0,$5
-    sub $6,$5
-    sub $2,$7
-  lpe
-  div $0,5
-  mov $1,8
+  mov $5,$4
+  sub $2,$5
   mul $3,$2
-  lpb $6,1
-    sub $1,$0
-    sub $7,3
-    div $5,2
-    sub $6,6
-    add $2,5
-    sub $1,$6
-    mul $6,$0
-    add $8,2
-    add $4,8
-    sub $6,$7
-    add $0,1
-  lpe
-  add $1,$3
-  mov $6,7
   sub $2,1
-  sub $0,$0
 lpe
 pow $3,2
-add $2,7
 mov $1,$3
 div $1,16

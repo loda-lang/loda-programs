@@ -2,115 +2,49 @@
 ; 1,1,12,56,167,391,786,1422,2381,3757,5656,8196,11507,15731,21022,27546,35481,45017,56356,69712,85311,103391,124202,148006,175077,205701,240176,278812,321931,369867,422966,481586,546097,616881
 
 mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
+mov $9,$0
+add $9,1
+lpb $9,1
+  sub $9,1
   mov $0,$11
-  sub $0,$13
+  sub $0,$9
   mov $4,$0
-  mov $9,1
   mov $8,$0
   add $8,$0
   bin $8,2
-  add $0,1
-  mov $5,$0
   add $0,6
   mov $7,$4
-  mov $3,$9
   mov $5,$7
-  add $3,$4
-  mul $4,4
-  add $3,$9
   mul $5,$8
   mov $2,$0
-  div $4,3
-  sub $9,$2
-  div $7,2
-  mov $6,$7
   add $5,2
   lpb $2,1
     lpb $4,1
-      add $0,$5
-      mul $5,$2
-      add $6,$2
       mov $0,$5
-      mul $0,5
       sub $4,7
-      mov $2,8
-      mov $10,$5
-      sub $9,$0
-      add $9,$5
-      add $5,7
-      div $2,$3
       mov $5,$3
-      mov $1,6
-      sub $7,10
       sub $4,$8
     lpe
-    mov $6,3
-    sub $3,3
-    mov $9,8
-    add $10,$6
     mov $7,$3
-    add $2,$4
     sub $5,6
     lpb $5,1
-      mul $8,7
-      mov $7,$7
-      mov $2,3
       mov $6,$7
-      sub $1,$0
-      mov $1,$7
       mov $8,4
-      sub $3,$0
       sub $5,$8
-      add $1,6
-      mov $2,8
-      add $2,9
-      mov $2,$6
-      mov $3,4
     lpe
-    mov $10,$1
-    mov $1,$9
     mov $2,$0
-    mov $4,$4
     add $4,2
     add $3,3
-    mul $10,2
-    mov $7,5
-    pow $9,2
     lpb $6,1
-      mov $0,3
-      sub $6,$8
-      sub $1,1
-      mov $9,$10
-      sub $7,10
-      sub $6,7
       div $3,7
-      mov $10,$0
-      add $5,2
       mov $6,3
     lpe
     sub $2,1
-    add $0,$3
-    div $6,$9
-    sub $5,2
-    mov $10,$1
-    add $1,$4
     add $5,$8
-    mov $10,$5
     add $3,$2
-    mov $7,2
-    mov $10,$5
-    mov $8,10
-    sub $8,$8
-    mov $1,8
   lpe
-  mov $0,1
   mov $1,$5
   sub $1,3
-  add $12,$1
+  add $10,$1
 lpe
-mov $1,$12
+mov $1,$10

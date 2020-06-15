@@ -372,6 +372,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212561](http://oeis.org/A212561) ([L11 program](A212561.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w + x = 2y + 2z.
 * [A212568](http://oeis.org/A212568) ([L54 program](A212568.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and  w<|x-y|+|y-z|.
 * [A212570](http://oeis.org/A212570) ([L35 program](A212570.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|=|x-y|+|y-z|.
+* [A212571](http://oeis.org/A212571) ([L137 program](A212571.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|<|x-y|+|y-z|.
 * [A212578](http://oeis.org/A212578) ([L09 program](A212578.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and |w-x| = 2*|x-y| - |y-z|.
 * [A212656](http://oeis.org/A212656) ([L04 program](A212656.asm)): a(n) = 5*n^2 + 1.
 * [A212668](http://oeis.org/A212668) ([L24 program](A212668.asm)): a(n) = (16/3)*(n+1)*n*(n-1) + 8*n^2 + 1.
@@ -1396,7 +1397,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247974](http://oeis.org/A247974) ([L23 program](A247974.asm)): Numbers k such that A247973(k+1) = A247973(k).
 * [A247983](http://oeis.org/A247983) ([L08 program](A247983.asm)): Least number k such that log(2) - sum{1/(h*2^h), h=1..k} < 1/2^n.
 * [A248121](http://oeis.org/A248121) ([L11 program](A248121.asm)): Floor(1 / (1/n - Pi^2/6 + sum{1/h^2, h = 1..n})).
-* [A248186](http://oeis.org/A248186) ([L26 program](A248186.asm)): Least k such that 1/18 - sum{1/(h*(h+1)*(h+2)*(h+3))}, h = 1..k} < 1/n^3.
 * [A248216](http://oeis.org/A248216) ([L13 program](A248216.asm)): 6^n - 2^n.
 * [A248225](http://oeis.org/A248225) ([L12 program](A248225.asm)): 6^n - 3^n.
 * [A248230](http://oeis.org/A248230) ([L46 program](A248230.asm)): a(n) = floor(1/(zeta(4) - Sum_{h=1..n} 1/h^4)).
@@ -1720,6 +1720,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258809](http://oeis.org/A258809) ([L04 program](A258809.asm)): a(n) = n^8 - 1.
 * [A258810](http://oeis.org/A258810) ([L04 program](A258810.asm)): a(n) = n^9 - 1.
 * [A258812](http://oeis.org/A258812) ([L04 program](A258812.asm)): a(n) = n^11 - 1.
+* [A258869](http://oeis.org/A258869) ([L101 program](A258869.asm)): Expansion of 1 to the basis 1.880000478655... (A127583).
 * [A258935](http://oeis.org/A258935) ([L08 program](A258935.asm)): Independence number of Keller graphs.
 * [A259042](http://oeis.org/A259042) ([L08 program](A259042.asm)): Period 8 sequence [0, 1, 1, 1, 2, 1, 1, 1, ...].
 * [A259044](http://oeis.org/A259044) ([L04 program](A259044.asm)): Period 8 sequence [ 0, 1, 0, 1, 1, 1, 0, 1, ...].
@@ -2601,7 +2602,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A283591](http://oeis.org/A283591) ([L15 program](A283591.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
 * [A283592](http://oeis.org/A283592) ([L13 program](A283592.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
 * [A283642](http://oeis.org/A283642) ([L07 program](A283642.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 678", based on the 5-celled von Neumann neighborhood.
-* [A283733](http://oeis.org/A283733) ([L57 program](A283733.asm)): a(n) = a(n-1) + 1 + floor(n*golden ratio), with a(0) = 1.
 * [A283833](http://oeis.org/A283833) ([L14 program](A283833.asm)): For t >= 0, if 2^t + t - 3 <= n <= 2^t + t - 1 then a(n) = 2^t - 1, while if 2^t + t - 1 < n < 2^(t+1) + t - 3 then a(n) = 2^(t+1) + t - 2 - n.
 * [A283963](http://oeis.org/A283963) ([L67 program](A283963.asm)): Fixed point of the morphism 0 -> 1, 1 -> 1010.
 * [A283971](http://oeis.org/A283971) ([L08 program](A283971.asm)): a(n) = n except a(4*n + 2) = 2*n + 1.
@@ -2645,6 +2645,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285872](http://oeis.org/A285872) ([L06 program](A285872.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-sqrt(3), +sqrt(3)).
 * [A285951](http://oeis.org/A285951) ([L14 program](A285951.asm)): Positions of 1's in A285949; complement of A285950.
 * [A285953](http://oeis.org/A285953) ([L16 program](A285953.asm)): Positions of 0 in A285952; complement of A285954.
+* [A285954](http://oeis.org/A285954) ([L112 program](A285954.asm)): Positions of 1 in A285952; complement of A285953.
 * [A285998](http://oeis.org/A285998) ([L07 program](A285998.asm)): a(n) = Sum_{k=0..floor(n/2)} (n-k)*(k+1).
 * [A286016](http://oeis.org/A286016) ([L21 program](A286016.asm)): Signed continued fraction expansion with all signs negative of tanh(1).
 * [A286033](http://oeis.org/A286033) ([L12 program](A286033.asm)): a(n) = binomial(2*n-2, n-1) + (-1)^n.
@@ -2679,7 +2680,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286925](http://oeis.org/A286925) ([L20 program](A286925.asm)): {0->01,1->00}-transform of the Sturmian word A080764.
 * [A286930](http://oeis.org/A286930) ([L03 program](A286930.asm)): Integers whose double is a square and whose triple is a cube.
 * [A286986](http://oeis.org/A286986) ([L18 program](A286986.asm)): Number of connected dominating sets in the n-antiprism graph.
-* [A286995](http://oeis.org/A286995) ([L37 program](A286995.asm)): Positions of 1 in A286993; complement of A286994.
 * [A286996](http://oeis.org/A286996) ([L20 program](A286996.asm)): {0->000, 11->null}-transform of the Sturmian word A080764.
 * [A287057](http://oeis.org/A287057) ([L12 program](A287057.asm)): a(n) = 2*n^2 + n - (n+1) mod 2.
 * [A287209](http://oeis.org/A287209) ([L31 program](A287209.asm)): a(1)=4, a(2)=5, a(n) = sum of digits of a(n-1) + sum of digits of a(n-2), n>=3.

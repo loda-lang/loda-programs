@@ -1,0 +1,106 @@
+; A004220: 10*log_10 (n) rounded to nearest integer.
+; 0,3,5,6,7,8,8,9,10,10,10,11,11,11,12,12,12,13,13,13,13,13,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,16,16,17,17,17,17,17,17,17,17,17,17,17,17,18
+
+mov $1,$0
+mov $7,$0
+mov $9,1
+mov $6,4
+mov $0,3
+mov $6,$9
+add $7,$9
+add $9,5
+mul $6,2
+mov $10,$9
+mov $3,$6
+mov $4,8
+add $3,$1
+sub $0,$3
+add $0,8
+mov $1,$6
+mov $10,6
+mov $5,1
+mod $10,8
+mov $4,$4
+mov $10,10
+add $7,$7
+sub $6,5
+mov $6,6
+pow $7,9
+mov $2,8
+div $5,$1
+sub $7,1
+mov $10,$5
+add $3,$10
+pow $5,$0
+lpb $0,1
+  pow $10,2
+  sub $2,$0
+  mov $8,8
+  mov $5,$2
+  add $0,1
+  add $9,2
+  mov $5,$9
+  mov $3,$10
+  add $3,$10
+  sub $0,1
+  sub $3,4
+lpe
+div $0,$9
+add $0,$0
+add $5,$7
+gcd $9,3
+mov $9,$10
+add $10,$8
+mul $5,3
+add $9,$1
+add $7,6
+mov $1,$0
+mov $6,0
+mov $1,0
+sub $1,$8
+add $6,$2
+mod $10,$3
+mov $8,7
+add $7,1
+add $8,9
+mov $7,$4
+add $5,1
+log $5,8
+sub $6,$8
+add $1,$0
+add $1,2
+add $7,$1
+add $7,$4
+mov $1,10
+gcd $10,9
+mov $6,3
+add $10,6
+mov $7,$2
+add $5,$6
+mov $3,$1
+mov $10,$0
+mul $5,4
+sub $7,$2
+sub $8,8
+mov $1,7
+add $6,4
+add $6,9
+mul $0,$8
+mul $1,9
+bin $0,$1
+mul $8,$3
+add $7,9
+mov $7,6
+gcd $7,5
+mov $0,$1
+div $9,5
+add $10,$6
+sub $7,4
+add $1,$3
+mov $6,2
+div $9,$6
+mov $3,9
+mov $3,5
+mov $1,$5
+sub $1,24
+div $1,4

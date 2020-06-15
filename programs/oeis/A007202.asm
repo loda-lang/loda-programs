@@ -1,0 +1,102 @@
+; A007202: Crystal ball sequence for hexagonal close-packing.
+; 1,13,57,153,323,587,967,1483,2157,3009,4061,5333,6847,8623,10683,13047,15737,18773,22177,25969,30171,34803,39887,45443,51493,58057,65157,72813,81047,89879,99331,109423,120177,131613,143753,156617
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $8,5
+  mov $1,$8
+  mov $5,$8
+  mov $1,$8
+  mov $2,2
+  mov $4,$1
+  mov $3,$5
+  add $0,$2
+  mul $1,$5
+  mov $5,6
+  sub $2,8
+  cmp $2,2
+  mov $8,3
+  mov $8,2
+  add $3,$8
+  mov $6,$3
+  add $3,$6
+  mov $7,$8
+  add $1,2
+  sub $7,$5
+  lpb $0,1
+    mov $1,1
+    add $3,1
+    sub $0,1
+    pow $0,4
+    sub $4,1
+    mov $8,3
+    mov $3,1
+    mov $7,$1
+    sub $5,1
+    mov $8,7
+    mov $3,$1
+    mov $2,1
+    sub $4,$2
+    sub $7,5
+    add $7,4
+    add $1,$6
+    mov $2,8
+    mul $6,$0
+    mov $1,6
+    mov $4,3
+    mov $5,$2
+    clr $4,2
+    mov $5,8
+    add $4,1
+    gcd $2,5
+    add $6,$4
+    add $5,$6
+    sub $5,6
+    sub $5,$8
+    sub $0,5
+    sub $0,4
+    mov $6,$5
+    mov $8,$0
+    mov $6,8
+    mov $7,$7
+    mul $7,4
+    mov $2,5
+    mov $6,$5
+    mov $8,7
+    add $3,$1
+    mov $0,1
+    mov $5,$6
+    mul $4,7
+    mov $8,$3
+    mov $7,$4
+    add $7,1
+    add $8,$6
+    add $8,7
+    sub $3,$7
+    div $5,$7
+    mul $8,$7
+  lpe
+  mov $6,7
+  sub $7,4
+  mul $6,8
+  mov $6,8
+  add $5,2
+  sub $5,1
+  mov $1,$5
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
