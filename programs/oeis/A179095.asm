@@ -1,0 +1,141 @@
+; A179095: Rectified 5-cell numbers: the coefficient of x^{2n-2} in (1+x+x^2+ ... + x^{n-1})^5.
+; 0,1,10,45,135,320,651,1190,2010,3195,4840,7051,9945,13650,18305,24060,31076,39525,49590,61465,75355,91476,110055,131330,155550,182975,213876,248535,287245,330310,378045,430776,488840,552585,622370,698565,781551
+
+mov $22,$0
+mov $24,$0
+add $24,1
+lpb $24,1
+  clr $0,22
+  sub $24,1
+  mov $0,$22
+  sub $0,$24
+  mov $19,$0
+  mov $21,$0
+  add $21,1
+  lpb $21,1
+    clr $0,19
+    sub $21,1
+    mov $0,$19
+    sub $0,$21
+    mov $16,$0
+    mov $18,$0
+    add $18,1
+    lpb $18,1
+      clr $0,16
+      sub $18,1
+      mov $0,$16
+      sub $0,$18
+      mov $3,$0
+      mov $4,$3
+      mov $10,$0
+      mov $8,$4
+      mov $6,$3
+      mov $1,$3
+      mov $5,$6
+      add $5,$6
+      gcd $0,$8
+      sub $3,7
+      add $8,$3
+      lpb $1,3
+        mov $4,3
+        add $4,5
+        lpb $0,4
+          mov $9,2
+          mul $5,$9
+          add $3,$9
+          add $10,$4
+          add $0,$0
+          sub $3,4
+          add $8,2
+          mov $2,4
+          pow $9,$9
+          sub $3,1
+          mov $2,5
+          add $1,$0
+          sub $2,6
+          add $1,$3
+          mov $1,$3
+          add $9,$0
+          add $10,10
+          add $1,$10
+          mov $3,3
+        lpe
+        sub $3,10
+        sub $3,1
+        mov $10,$0
+        mov $0,1
+        sub $8,$6
+        mov $9,$8
+        mov $10,$0
+        sub $1,$0
+        mov $0,3
+        sub $5,3
+        lpb $5,9
+          sub $5,1
+          add $6,5
+        lpe
+        sub $0,1
+        mov $7,$0
+        add $10,$5
+        mov $10,$5
+        mul $10,$1
+        sub $0,$7
+        sub $4,6
+        sub $1,$1
+        add $10,$0
+        add $1,$1
+        add $7,4
+        mov $0,6
+        sub $2,$7
+        lpb $8,8
+          mov $7,$2
+          add $1,$3
+          add $9,$1
+          lpb $9,7
+            fac $1
+            mov $1,$5
+            sub $8,6
+            add $4,$3
+            clr $9,7
+            sub $0,2
+            mov $9,7
+            mul $0,$1
+            add $5,1
+            mov $4,8
+            sub $5,8
+            add $8,1
+            mov $0,0
+            mov $5,$10
+            lpb $2,4
+              sub $2,1
+              add $3,5
+            lpe
+            mov $4,$9
+            mov $0,$0
+          lpe
+          add $0,$8
+          sub $0,3
+        lpe
+        mul $1,$5
+        mov $4,1
+        sub $1,$4
+        mov $1,$1
+      lpe
+      sub $6,$10
+      sub $5,3
+      mov $3,$9
+      add $5,1
+      mov $2,0
+      add $0,7
+      add $5,5
+      sub $9,$2
+      mov $1,$6
+      add $17,$1
+    lpe
+    mov $1,$17
+    add $20,$1
+  lpe
+  mov $1,$20
+  add $23,$1
+lpe
+mov $1,$23
