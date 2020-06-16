@@ -1,0 +1,116 @@
+; A134449: Sum of even products minus sum of odd products of different pairs of numbers from 1 to n.
+; 0,2,5,29,39,129,150,374,410,860,915,1707,1785,3059,3164,5084,5220,7974,8145,11945,12155,17237,17490,24114,24414,32864,33215,43799,44205,57255,57720,73592,74120,93194,93789,116469,117135,143849,144590,175790
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $5,2
+  mov $2,$0
+  mov $9,$5
+  mov $0,$2
+  div $9,2
+  mov $7,5
+  pow $7,4
+  mov $10,5
+  cmp $10,6
+  add $9,$2
+  add $7,$2
+  mov $4,2
+  mov $6,$5
+  add $2,$5
+  gcd $7,$5
+  mov $4,6
+  pow $9,$7
+  mov $8,$5
+  mul $9,9
+  sub $7,4
+  add $6,$0
+  mov $8,3
+  mul $9,$0
+  sub $10,5
+  sub $2,$7
+  sub $2,2
+  add $2,6
+  mov $3,9
+  mov $1,$7
+  sub $6,$10
+  add $0,$2
+  mul $8,5
+  mov $10,$1
+  lpb $0,1
+    pow $10,$4
+    sub $4,2
+    pow $0,4
+    gcd $4,$1
+    mov $8,3
+    log $2,4
+    mov $6,$7
+    div $0,7
+    mov $6,10
+    add $3,$0
+    sub $1,3
+    add $6,$1
+    mov $9,2
+    gcd $9,7
+    mov $3,$9
+    add $8,$2
+    mov $2,5
+    add $5,$1
+    add $7,3
+    mov $2,6
+    add $10,$8
+    clr $3,2
+    mov $9,$0
+    gcd $6,$4
+    mov $3,5
+    add $8,5
+    sub $8,$10
+    add $10,5
+    mov $8,9
+    sub $0,1
+    add $2,$10
+    mul $3,$1
+  lpe
+  mov $0,4
+  mul $8,$9
+  mul $5,8
+  mov $5,$4
+  sub $3,$7
+  add $2,$5
+  mov $4,3
+  mov $3,$8
+  add $7,1
+  cmp $7,$7
+  mov $9,$8
+  mul $5,$3
+  bin $2,$10
+  sub $4,1
+  mov $3,$10
+  mov $4,0
+  sub $5,9
+  mul $1,8
+  sub $5,$6
+  add $3,$8
+  mul $4,$6
+  add $4,$1
+  mov $9,4
+  mov $10,$3
+  add $9,$4
+  mul $0,2
+  add $8,7
+  add $3,3
+  sub $10,$5
+  add $1,$8
+  mov $8,0
+  sub $3,10
+  mov $6,$0
+  sub $1,7
+  div $1,270
+  add $12,$1
+lpe
+mov $1,$12
