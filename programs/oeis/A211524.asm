@@ -1,0 +1,104 @@
+; A211524: Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=3x+5y.
+; 0,0,0,0,0,0,0,0,1,1,1,2,2,3,4,4,5,6,7,8,9,10,11,13,14,15,17,18,20,22,23,25,27,29,31,33,35,37,40,42,44,47,49,52,55,57,60,63,66,69,72,75,78,82,85,88,92,95,99,103,106,110,114,118,122,126,130,134,139
+
+mov $10,1
+mov $2,$10
+mov $1,0
+mov $6,1
+mov $7,$6
+mov $5,$0
+mov $3,5
+mul $5,6
+mov $9,$10
+mov $4,1
+pow $1,8
+pow $2,$1
+mov $9,$9
+mov $8,$4
+add $6,8
+sub $10,$10
+lpb $0,1
+  sub $0,1
+  sub $7,9
+  sub $4,1
+  mov $9,10
+  add $5,$0
+  sub $1,1
+  sub $5,9
+  add $9,$4
+  add $4,4
+  mov $1,7
+  add $6,6
+  mov $3,6
+  mov $6,5
+lpe
+sub $9,9
+add $7,$9
+sub $2,1
+add $0,$3
+add $10,$5
+sub $6,5
+mul $0,9
+mov $9,$9
+mul $7,$2
+mov $6,3
+mov $4,$1
+sub $0,$9
+add $1,2
+mul $4,$4
+mov $3,1
+add $9,1
+add $6,$4
+add $4,$7
+mov $1,9
+mov $7,8
+div $5,3
+mov $8,8
+mov $9,$10
+add $9,10
+sub $6,$1
+add $1,$7
+add $0,$1
+mul $8,$5
+mov $10,$5
+mul $5,3
+mov $1,$10
+mov $2,$0
+mov $5,$1
+div $2,$7
+mov $9,$3
+mov $8,6
+mov $9,1
+mov $5,$8
+mov $2,4
+add $4,$0
+add $1,$3
+sub $8,1
+add $2,$8
+add $0,1
+mov $10,$9
+add $9,$8
+mov $10,$0
+add $1,$7
+div $1,$8
+mov $3,3
+clr $6,5
+mov $6,$3
+pow $7,6
+mov $3,$0
+mul $7,$4
+pow $2,8
+mov $5,$1
+mul $9,2
+mov $9,6
+mov $9,$10
+mov $9,$10
+mul $10,3
+mov $0,2
+add $6,1
+sub $6,8
+sub $9,3
+add $4,$5
+mov $4,4
+sub $8,$8
+sub $1,1

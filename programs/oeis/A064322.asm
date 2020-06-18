@@ -3,84 +3,16 @@
 
 mov $3,$0
 mov $4,$0
-mov $8,1
-mov $7,2
 mul $4,$3
-add $4,$8
-mov $0,$8
-mov $8,4
-mov $1,$0
+add $4,1
 add $3,$4
-mov $1,7
-mov $4,6
-add $0,1
-mov $2,$1
-mov $2,$8
-cmp $0,$7
-mov $8,$7
-mul $3,$3
-add $2,2
+cmp $0,2
+pow $3,2
+mov $2,6
 mov $1,$3
-log $3,2
-mov $6,5
-sub $3,8
 mov $5,$1
-sub $4,$5
 add $2,$5
-mov $7,$5
-mov $3,2
-lpb $0,1
-  mul $4,$2
-  mul $1,2
-  fac $8
-  sub $4,1
-  sub $4,$8
-  mov $3,1
-  mov $1,$6
-  add $2,5
-  sub $4,5
-  add $1,8
-  mod $3,5
-  mov $6,1
-  add $1,5
-  add $2,$4
-  mov $8,$0
-  mov $6,$7
-  add $4,$7
-  mov $4,$2
-  mov $8,$6
-  sub $5,$3
-  pow $2,$0
-  add $4,$1
-  add $0,5
-  mul $5,$3
-  add $2,$1
-  sub $8,1
-  mov $0,2
-  add $1,$8
-  mul $4,2
-  mov $3,$8
-  mul $7,7
-  mov $6,0
-  sub $6,7
-  sub $0,1
-  mov $0,$1
-  mov $5,1
-  add $8,4
-  sub $6,4
-  mov $0,5
-lpe
 mul $2,$5
-sub $0,1
 add $0,$2
-mul $1,7
-mov $7,$7
-div $4,5
-sub $4,6
-add $2,$4
-mov $6,$8
-mov $7,5
-mov $8,8
 mov $1,$0
-sub $1,7
 div $1,128

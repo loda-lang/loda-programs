@@ -1,0 +1,91 @@
+; A332019: The number of cells added in the n-th generation of the following procedure: start by coloring any triangle on the snub square tiling, then repeatedly color every cell that shares a vertex with a colored cell.
+; 1,9,21,35,48,60,72,84,96,108,120,132,144,156,168,180,192,204,216,228,240,252,264,276,288,300,312,324,336,348,360,372,384,396,408,420,432,444,456,468,480,492,504,516,528,540,552,564,576,588,600,612,624,636
+
+mov $9,$0
+mov $3,$0
+mov $3,$3
+mov $6,7
+sub $3,1
+mov $1,$6
+mov $7,1
+mov $4,6
+mov $4,$3
+mov $2,$1
+sub $6,7
+bin $3,$3
+mul $0,2
+sub $4,7
+mov $3,$4
+mov $7,$2
+mov $3,$0
+mov $4,6
+lpb $0,1
+  mov $1,2
+  add $0,$6
+  mov $1,$7
+  mul $3,$3
+  mov $8,$3
+  add $1,$4
+  mov $5,7
+  mov $2,$4
+  sub $2,5
+  mov $0,$0
+  pow $7,2
+  div $6,3
+  sub $2,2
+  mov $8,$3
+  mul $8,2
+  add $1,$6
+  mov $8,$3
+  add $2,$2
+  mov $2,$5
+  add $4,7
+  mov $2,$8
+  mul $1,$0
+  mul $4,7
+  mov $3,$6
+  mov $2,3
+  mov $4,$0
+  sub $7,$4
+  mov $0,$8
+  add $3,5
+  mov $8,3
+  mov $5,6
+  mul $3,$1
+  mov $2,$3
+  mov $2,1
+  mov $7,5
+  sub $0,1
+  add $5,$8
+  mov $3,2
+lpe
+sub $7,$3
+add $5,2
+mul $0,$5
+add $7,1
+sub $0,$7
+mov $6,6
+mov $6,1
+mov $1,7
+sub $1,$7
+mov $4,$0
+add $1,$4
+sub $6,5
+add $1,8
+mov $6,7
+mov $6,$3
+add $8,8
+mov $7,4
+mov $6,4
+add $0,1
+add $5,$4
+add $5,$5
+mul $2,6
+mov $7,4
+mov $1,$0
+mov $10,$9
+mov $11,$10
+mul $11,8
+add $1,$11
+mul $10,$9
+mul $10,$9

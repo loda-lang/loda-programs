@@ -1,105 +1,16 @@
 ; A031313: Position of n-th 0 in A031312.
 ; 97,100,103,106,109,247,250,253,256,259,397,400,403,406,409,547,550,553,556,559,697,700,703,706,709,847,850,853,856,859,997
 
-mov $7,$0
-mov $3,1
-mov $6,4
-mov $1,7
+mov $4,$0
 mov $1,1
-mov $8,$0
-mov $2,2
-mov $5,5
-mov $7,$7
-add $3,$2
-mov $10,1
-div $7,5
-add $6,$10
-lpb $0,1
-  add $5,$10
-  mov $9,$8
-  mov $9,4
-  add $5,9
-  mov $8,3
-  add $2,$5
-  mul $2,2
-  mov $8,$0
-  mov $6,6
-  mov $3,0
-  mov $9,$1
-  mov $7,2
-  sub $0,$10
-  add $7,10
-  mov $8,$10
-  add $2,10
-  sub $1,$2
-  add $2,1
-  sub $7,$7
-  add $6,10
-  pow $8,5
-  gcd $1,8
-  div $2,$1
-  mov $6,6
-  mov $3,$0
-  div $9,3
-  fac $2
-  sub $9,$9
-  sub $0,1
-  add $0,7
-  mul $6,10
-  add $6,1
-  sub $10,2
-  sub $10,$0
-  add $7,5
-lpe
-div $3,2
-sub $3,2
-mov $10,5
-add $1,$8
-mul $7,9
-mov $3,7
-mov $6,1
-mov $0,$0
-sub $3,$10
-sub $0,$8
-div $2,7
-sub $9,1
-mov $4,$8
-mul $9,6
-mov $4,$7
-add $1,$7
-div $10,7
-sub $5,$6
-mul $3,3
-add $4,8
-mov $3,2
-add $5,4
-mov $2,$7
-mov $9,9
-add $0,$2
-mov $9,10
-add $6,9
+mov $3,$0
+div $4,5
+add $1,$3
+mul $4,9
+add $1,$4
 mov $2,$1
-add $4,3
-mov $9,1
-mul $7,4
-mod $8,2
-mov $10,$7
-add $2,$7
-mov $9,$8
-mov $6,9
-mul $7,10
-mov $4,2
-sub $1,$5
-add $8,8
-clr $9,$2
-mov $8,1
-add $0,$8
-add $8,5
-mov $10,6
-add $4,$4
-mul $1,$6
-mov $8,$7
-mov $3,9
+mul $4,4
+add $2,$4
 mov $1,$2
 sub $1,1
 mul $1,3
