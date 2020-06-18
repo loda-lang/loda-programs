@@ -1,0 +1,108 @@
+; A174686: Number of equivalence classes of 3 X 3 matrices filled with n colors so that no two rotations are identical.
+; 120,4860,65280,487500,2517480,10084200,33546240,96840360,249975000,589446660,1289882880,2651032020,5165127240,9610650000,17179607040,29646614160,49589350200,80671305420,127999200000,198568990620,301816016040,450286556280,660449894400
+
+mov $10,4
+mov $8,$10
+mov $9,$0
+gcd $10,4
+sub $10,9
+add $10,$9
+mov $0,8
+mov $4,1
+mov $4,2
+mov $3,2
+mov $1,$4
+add $4,$4
+mov $2,$8
+mov $6,1
+mov $8,3
+add $10,2
+mov $4,7
+sub $2,$0
+add $1,8
+add $2,4
+sub $8,$2
+add $1,$10
+mov $7,2
+mul $1,$2
+add $1,$1
+add $7,$6
+mov $9,$7
+mov $4,$9
+mov $5,3
+mov $4,$7
+add $7,$5
+sub $4,$3
+mov $6,7
+sub $7,$7
+pow $4,2
+add $9,$9
+add $8,8
+gcd $2,3
+add $6,9
+mov $3,1
+mov $5,$7
+add $9,$7
+add $4,$8
+mod $1,8
+add $1,$5
+mov $6,$10
+add $2,$8
+sub $0,3
+mul $0,8
+add $5,$7
+sub $1,1
+pow $10,5
+pow $6,$2
+mov $1,5
+lpb $0,1
+  add $4,3
+  add $3,4
+  mov $1,$9
+  pow $1,$1
+  sub $3,$10
+  add $1,$5
+  add $5,$7
+  mov $2,$4
+  mov $0,5
+  mov $3,$5
+  sub $2,$6
+  sub $0,1
+  clr $4,$5
+  mov $4,$3
+  sub $3,$2
+  mul $9,10
+  pow $7,10
+  mov $5,3
+  add $8,$3
+  sub $7,5
+  mov $4,7
+  sub $0,7
+  sub $9,$6
+  mul $3,$8
+  add $4,6
+  mov $2,$6
+  add $0,4
+  sub $0,$2
+  mov $8,10
+  sub $6,$10
+  mov $3,5
+  mov $1,6
+lpe
+sub $1,6
+mov $10,3
+sub $2,$7
+add $1,$1
+sub $2,$1
+mov $0,1
+mov $10,$3
+mov $7,$2
+add $3,10
+add $4,7
+add $9,7
+add $6,$8
+mov $1,$6
+sub $1,490
+div $1,240
+mul $1,60
+add $1,120

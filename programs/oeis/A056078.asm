@@ -1,0 +1,116 @@
+; A056078: Number of proper T_1-hypergraphs with 3 labeled nodes and n hyperedges.
+; 0,0,2,15,54,141,306,588,1036,1710,2682,4037,5874,8307,11466,15498,20568,26860,34578,43947,55214,68649,84546,103224,125028,150330,179530,213057,251370,294959,344346,400086,462768,533016,611490,698887,795942,903429,1022162
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $12,$0
+  mov $14,$0
+  add $14,1
+  lpb $14,1
+    clr $0,12
+    sub $14,1
+    mov $0,$12
+    sub $0,$14
+    mov $9,$0
+    mov $11,$0
+    add $11,1
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      sub $0,$11
+      mov $7,$0
+      sub $0,3
+      mov $5,8
+      mov $4,4
+      div $4,2
+      sub $5,$0
+      mov $2,7
+      mov $6,$4
+      mov $5,$2
+      mov $5,$4
+      sub $4,7
+      mov $1,2
+      mul $1,6
+      add $5,1
+      gcd $5,$7
+      add $4,$7
+      add $1,$4
+      mov $5,7
+      mov $2,8
+      mov $8,6
+      mov $1,$6
+      mov $3,$6
+      add $5,$5
+      mov $8,$5
+      mov $6,3
+      add $3,5
+      add $2,$0
+      add $4,5
+      add $0,6
+      mov $2,3
+      bin $4,$1
+      mul $0,2
+      mov $1,$1
+      mul $6,$3
+      sub $1,$3
+      mov $2,$3
+      sub $3,$1
+      mov $1,7
+      gcd $8,4
+      sub $1,$8
+      pow $5,3
+      mov $8,$5
+      sub $7,$3
+      add $0,$2
+      mov $3,$4
+      add $6,6
+      gcd $6,$5
+      sub $4,$0
+      sub $5,1
+      mov $7,$5
+      mov $3,$4
+      mov $3,$3
+      lpb $0,1
+        add $0,4
+        mov $6,2
+        mov $4,8
+        add $1,$5
+        sub $0,1
+        mov $7,$6
+      lpe
+      sub $7,4
+      add $2,$7
+      mov $1,0
+      pow $6,5
+      sub $2,8
+      add $5,5
+      mul $7,8
+      mul $3,$8
+      sub $1,2
+      sub $6,$3
+      mov $7,3
+      mov $8,$2
+      add $3,$0
+      add $1,$0
+      mul $3,2
+      add $6,4
+      mov $1,2
+      sub $1,$3
+      mov $2,0
+      mov $1,$4
+      add $10,$1
+    lpe
+    mov $1,$10
+    add $13,$1
+  lpe
+  mov $1,$13
+  add $16,$1
+lpe
+mov $1,$16

@@ -2702,6 +2702,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A156813](http://oeis.org/A156813) ([L20 program](A156813.asm)): a(n) = 225*n^2 - n.
 * [A156814](http://oeis.org/A156814) ([L13 program](A156814.asm)): a(n) = 225*n^2 + n.
 * [A156821](http://oeis.org/A156821) ([L16 program](A156821.asm)): Prime factors of 13! listed with multiplicity.
+* [A156842](http://oeis.org/A156842) ([L111 program](A156842.asm)): 529n^2 - 746n + 263.
 * [A156845](http://oeis.org/A156845) ([L03 program](A156845.asm)): 12167n - 8579.
 * [A156846](http://oeis.org/A156846) ([L03 program](A156846.asm)): 12167n - 3588.
 * [A156855](http://oeis.org/A156855) ([L24 program](A156855.asm)): 2025n^2 - n.
