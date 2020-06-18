@@ -1,0 +1,87 @@
+; A209647: Number of n X 5 0..1 arrays avoiding 0 0 1 and 1 0 0 horizontally and 0 0 1 and 1 0 1 vertically.
+; 14,196,798,2156,4690,8904,15386,24808,37926,55580,78694,108276,145418,191296,247170,314384,394366,488628,598766,726460,873474,1041656,1232938,1449336,1692950,1965964,2270646,2609348,2984506,3398640,3854354,4354336
+
+mov $2,4
+mov $5,$0
+mov $6,$5
+mov $7,6
+add $5,2
+add $7,$0
+mov $2,$5
+mul $6,$0
+mov $1,$0
+mov $3,5
+div $3,2
+lpb $0,1
+  mov $0,6
+  mov $3,$0
+  mov $8,$3
+  mov $3,8
+  add $0,6
+  add $6,$8
+  pow $1,4
+  mov $4,$6
+  mov $7,7
+  mov $0,6
+  mul $2,$6
+  sub $5,6
+  mov $5,$6
+  div $4,2
+  add $3,8
+  sub $4,2
+  add $0,$4
+  sub $8,$4
+  add $3,$6
+  mov $2,$5
+  mov $3,7
+  add $1,$3
+  mov $6,$4
+  add $1,$6
+  mul $0,4
+  sub $0,1
+  add $5,3
+  sub $2,$2
+  mov $6,6
+  sub $6,1
+  add $7,$3
+  add $5,7
+  add $5,1
+  mul $3,$4
+lpe
+mul $0,4
+mul $6,$5
+mul $5,$1
+add $4,8
+sub $3,$4
+sub $4,$8
+sub $5,$8
+mul $2,$0
+mov $4,$1
+mov $2,4
+sub $4,8
+add $1,7
+sub $7,1
+mov $7,6
+mul $8,3
+mov $7,2
+mov $8,2
+mov $8,8
+add $5,8
+pow $8,$8
+mul $4,$0
+add $5,$6
+add $2,1
+mul $1,$5
+mov $3,8
+sub $1,$0
+add $5,$5
+mov $0,$1
+sub $5,5
+mov $0,3
+mov $0,$2
+mov $2,4
+gcd $0,$0
+sub $1,56
+div $1,4
+mul $1,14
+add $1,14

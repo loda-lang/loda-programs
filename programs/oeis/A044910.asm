@@ -1,18 +1,16 @@
 ; A044910: Numbers n such that base 9 run lengths alternate: odd, even, odd,...
 ; 1,2,3,4,5,6,7,8,81,91,101,111,121,131,141,151,161,162,172,182,192,202,212,222,232,242,243,253,263,273,283,293,303,313,323,324,334,344,354,364,374,384,394,404,405,415,425,435,445,455
 
-mov $15,$0
-mov $17,$0
-add $17,1
-lpb $17,1
-  clr $0,15
-  sub $17,1
-  mov $0,$15
-  sub $0,$17
+mov $7,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$7
+  sub $0,$2
   mov $11,$0
   mov $13,2
   lpb $13,1
-    clr $0,11
     sub $13,1
     mov $0,$11
     add $0,$13
@@ -20,108 +18,33 @@ lpb $17,1
     mov $3,$0
     div $0,7
     mov $1,$3
-    add $1,1
-    mov $1,$3
-    add $3,$0
-    mov $2,4
-    mov $4,$3
-    sub $3,$0
-    mov $7,5
     mov $5,7
-    mov $3,$5
-    mov $1,$1
     mov $8,2
     mov $10,$1
     add $5,$8
-    add $3,9
     mov $6,0
-    mov $9,$4
-    mov $4,8
-    add $9,6
-    mov $4,$9
-    mov $1,4
-    add $4,$0
     add $0,$10
     lpb $0,1
-      mov $1,4
-      add $3,$5
-      add $4,8
-      mov $2,$3
-      mod $3,$3
-      add $2,$8
-      mov $8,$1
-      sub $4,$3
-      mov $6,$5
-      mov $9,0
-      sub $4,$3
-      pow $3,$6
-      add $7,$7
-      sub $0,$10
-      mul $1,3
-      add $6,2
-      add $10,1
-      sub $1,$5
-      add $10,$9
-      mov $3,$9
-      sub $4,10
-      add $10,3
-      sub $0,1
-      add $6,$10
-      mov $2,6
-      mov $2,$9
-      add $6,4
-      mov $1,$7
-      sub $1,$10
-      mul $5,$5
+      add $10,4
+      pow $5,2
       sub $10,10
-      gcd $4,4
-      mov $4,$9
       mov $1,1
-      mov $9,6
-      mul $8,6
       add $1,$10
       mov $10,9
-      add $6,$8
       add $1,7
-      mov $9,7
       mul $1,4
-      add $10,$10
+      mul $10,2
       mul $10,$1
-      sub $7,2
-      sub $3,7
-      mul $8,$2
       div $10,$5
-      add $3,$2
-      sub $4,$1
-      sub $7,2
       mov $0,$10
-      mov $7,5
-      add $3,$1
       mov $5,6
-      mov $7,$6
-      div $2,9
-      sub $6,1
-      mov $3,8
-      mov $9,$2
-      bin $7,$5
-      mul $8,9
-      mov $9,8
-      add $8,$3
-      mov $9,$7
-      add $10,8
-      add $9,$7
       mov $6,$0
-      sub $1,$3
-      sub $0,$2
-      sub $8,$4
     lpe
-    add $2,$4
-    mov $10,$9
     mov $1,$6
-    mov $14,$13
-    lpb $14,1
+    mov $9,$13
+    lpb $9,1
       mov $12,$1
-      sub $14,1
+      sub $9,1
     lpe
   lpe
   lpb $11,1
@@ -131,6 +54,6 @@ lpb $17,1
   mov $1,$12
   mul $1,9
   add $1,1
-  add $16,$1
+  add $4,$1
 lpe
-mov $1,$16
+mov $1,$4

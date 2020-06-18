@@ -1,105 +1,12 @@
 ; A048775: Number of (partially defined) monotone maps from intervals of 1..n to 1..n.
 ; 1,7,31,121,456,1709,6427,24301,92368,352705,1352066,5200287,20058286,77558745,300540179,1166803093,4537567632,17672631881,68923264390,269128937199,1052049481838,4116715363777,16123801841526,63205303218851,247959266474026,973469712824029
 
-mov $6,2
-mov $7,1
-mov $4,$6
-add $6,$7
-mov $5,$6
-mov $7,$6
-mul $7,3
-mov $3,1
-mov $10,4
-mov $6,4
-mov $2,$0
-mul $10,$4
-add $7,$6
-mov $10,8
-sub $7,$6
-add $10,$4
-mov $9,$0
+mov $2,2
 mov $1,$0
-mov $3,$9
-gcd $9,3
-mov $2,9
-sub $9,9
-mov $8,$7
-sub $5,$7
-add $4,$1
-mov $3,$5
-add $3,1
-add $1,$4
-mov $8,$1
-mov $7,$9
-mov $10,$3
-mov $8,$8
-lpb $0,1
-  mov $10,7
-  mov $5,$0
-  mov $2,$7
-  mov $10,$3
-  mov $5,$7
-  mov $5,$3
-  mul $4,$5
-  mov $1,6
-  mov $4,0
-  add $4,$1
-  sub $4,8
-  mov $5,8
-  mov $10,8
-  sub $6,2
-  pow $2,$7
-  sub $2,$0
-  mov $10,$10
-  mov $8,0
-  sub $0,1
-  mov $8,$5
-  mul $10,5
-  div $2,4
-  mov $9,$10
-  add $0,4
-  sub $8,6
-  mov $8,1
-  add $10,4
-  mov $3,$9
-  mov $8,$5
-  mov $5,$8
-  add $3,10
-  add $9,3
-lpe
-mul $5,$1
-sub $7,$6
-add $1,$3
-mov $6,6
-mov $7,$5
-cmp $9,2
-bin $1,$4
+add $2,$1
+add $1,$2
+add $1,1
+bin $1,$2
 sub $1,$0
-mov $3,7
-sub $7,1
-mov $8,$1
-mul $9,9
-sub $9,6
-add $1,3
-add $8,3
-mov $8,3
-mov $8,5
-mov $3,1
-add $5,$4
-mov $5,$10
-mov $10,1
-sub $3,5
-add $10,$6
-mul $7,$1
-add $6,$9
-mov $3,6
-add $2,5
-mov $6,$7
-sub $10,4
-add $5,8
-mov $6,$6
-mov $0,$10
-div $9,6
-add $2,$0
-sub $1,6
+sub $1,3
 add $1,1

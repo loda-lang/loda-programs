@@ -1,0 +1,87 @@
+; A192849: Molecular topological indices of the triangular graphs.
+; 0,0,24,240,1080,3360,8400,18144,35280,63360,106920,171600,264264,393120,567840,799680,1101600,1488384,1976760,2585520,3335640,4250400,5355504,6679200,8252400,10108800,12285000,14820624,17758440,21144480
+
+mov $6,$0
+mov $1,$0
+mov $4,5
+mov $5,$0
+add $6,$0
+clr $4,2
+mov $8,$6
+sub $4,2
+add $4,5
+sub $8,2
+mov $7,2
+mov $3,3
+add $3,$7
+mov $2,$7
+mov $4,7
+mov $0,$4
+add $0,$2
+div $3,6
+mov $0,$3
+mov $1,$1
+mov $6,$7
+mov $7,2
+lpb $0,1
+  sub $5,4
+  mov $6,2
+  mov $0,0
+  mod $6,8
+  add $2,$1
+  add $3,$4
+  add $1,$4
+  sub $6,$3
+  sub $5,7
+  mul $5,6
+  mov $7,7
+  mov $7,$8
+  mov $1,$1
+  mov $0,1
+  mov $5,3
+  mov $5,0
+  mov $3,$0
+  sub $3,$3
+  mov $0,$5
+  sub $0,1
+  add $5,1
+  mul $3,8
+  mov $6,1
+  sub $0,$4
+  add $4,$4
+  mov $5,$8
+  sub $4,6
+  add $0,$5
+  mul $0,2
+  cmp $5,$2
+  sub $8,1
+  mov $6,8
+  mov $3,$2
+  mov $7,7
+  add $7,6
+lpe
+mov $2,4
+sub $6,1
+div $5,$4
+clr $3,4
+add $4,5
+mov $2,$5
+mov $2,$7
+mul $0,7
+mov $8,$8
+pow $0,2
+add $6,2
+add $2,$1
+mov $4,$8
+sub $8,4
+bin $2,4
+mul $2,$4
+sub $3,1
+add $2,2
+mul $6,$7
+mov $4,$1
+add $5,$6
+mov $1,$2
+sub $1,2
+div $1,2
+mul $1,24
