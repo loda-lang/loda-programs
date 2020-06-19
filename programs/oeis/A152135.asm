@@ -1,0 +1,137 @@
+; A152135: Maximal length of rook tour on an n X n+4 board.
+; 12,36,74,134,216,328,470,650,868,1132,1442,1806,2224,2704,3246,3858,4540,5300,6138,7062,8072,9176,10374,11674,13076,14588,16210,17950,19808,21792,23902,26146,28524,31044,33706,36518,39480,42600,45878
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $16,$0
+  mov $18,$0
+  add $18,1
+  lpb $18,1
+    clr $0,16
+    sub $18,1
+    mov $0,$16
+    sub $0,$18
+    mov $13,$0
+    mov $15,$0
+    add $15,1
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      sub $0,$15
+      mov $9,$0
+      mov $11,2
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        add $0,$11
+        sub $0,1
+        mov $1,$0
+        mov $3,$0
+        mov $7,1
+        mov $6,0
+        mov $2,2
+        lpb $0,1
+          mov $7,$0
+          mov $6,$1
+          mov $6,6
+          mov $6,$3
+          add $6,$0
+          add $2,$1
+          sub $1,4
+          mov $5,7
+          mov $2,$1
+          mov $4,$6
+          sub $2,$1
+          mov $2,2
+          mov $3,2
+          gcd $6,4
+          sub $4,$6
+          mov $8,$3
+          mov $6,8
+          add $5,$6
+          mov $0,0
+          mul $0,2
+          add $6,$6
+          add $6,$8
+          mov $5,4
+          mul $1,6
+          mov $7,1
+          add $1,$8
+          sub $0,1
+          mul $6,$7
+          mov $0,0
+          add $2,2
+          mov $2,8
+          sub $5,$1
+          mov $8,$8
+          mov $2,1
+          bin $3,2
+          add $4,$3
+          sub $2,$1
+          sub $2,$6
+          mov $5,$8
+          sub $4,$2
+          sub $5,$0
+          mov $1,1
+          add $1,$0
+          gcd $0,$3
+          mul $5,$0
+          add $5,2
+          mov $3,5
+          mov $3,2
+          pow $3,$7
+        lpe
+        mov $5,2
+        sub $3,5
+        mul $2,$3
+        sub $2,6
+        sub $8,$5
+        add $4,$7
+        add $8,4
+        mov $6,4
+        mov $6,5
+        sub $8,$5
+        sub $0,8
+        add $4,$6
+        pow $5,8
+        mod $6,$5
+        mul $1,$4
+        mul $2,2
+        sub $7,$6
+        pow $5,$0
+        add $6,1
+        mov $1,8
+        mov $5,$5
+        mov $8,8
+        add $1,$2
+        mov $7,1
+        mov $1,$4
+        mov $12,$11
+        lpb $12,1
+          mov $10,$1
+          sub $12,1
+        lpe
+      lpe
+      lpb $9,1
+        sub $10,$1
+        mov $9,0
+      lpe
+      mov $1,$10
+      mul $1,2
+      add $14,$1
+    lpe
+    mov $1,$14
+    add $17,$1
+  lpe
+  mov $1,$17
+  add $20,$1
+lpe
+mov $1,$20
