@@ -1,0 +1,107 @@
+; A014738: Squares of even triangular numbers.
+; 36,100,784,1296,4356,6084,14400,18496,36100,44100,76176,90000,142884,164836,246016,278784,396900,443556,608400,672400,894916,980100,1272384,1382976,1758276,1898884,2371600,2547216,3132900,3348900
+
+mov $5,$0
+mov $4,$0
+mov $2,$0
+mov $10,$5
+add $5,$2
+div $2,2
+mov $1,10
+sub $4,8
+mov $3,$10
+mov $3,9
+mov $6,5
+add $5,3
+add $4,1
+add $2,1
+mov $10,10
+mov $6,$3
+add $6,$1
+mov $8,$6
+mul $5,$2
+mul $5,$5
+mov $4,$4
+sub $8,9
+sub $1,$5
+mov $4,0
+mov $9,8
+add $0,1
+mov $0,$1
+mov $8,$4
+mov $7,$2
+mov $1,$2
+mul $1,$8
+add $4,4
+mov $9,3
+add $2,$4
+mov $3,$4
+mov $9,2
+sub $7,7
+sub $5,3
+sub $2,4
+lpb $0,1
+  add $2,$7
+  mov $4,0
+  add $6,7
+  mod $5,9
+  sub $7,$9
+  pow $2,$10
+  add $7,7
+  mov $10,6
+  add $0,1
+  mov $2,$9
+  mov $2,9
+  add $2,7
+  add $3,5
+  mul $10,7
+  pow $10,10
+  mov $6,$8
+  add $7,$2
+  mov $10,10
+  add $8,1
+  sub $7,8
+  mov $6,1
+  mov $5,5
+  add $3,2
+  mov $0,6
+  mov $6,9
+  add $0,$1
+  mov $10,10
+  mul $1,$3
+  mul $0,2
+  mul $10,$5
+  mov $0,$2
+  mov $4,5
+  add $3,1
+  pow $9,2
+  div $5,6
+  sub $8,3
+  add $9,9
+  sub $0,$3
+  add $3,9
+  mov $7,6
+  mov $2,10
+  sub $8,$2
+  mod $4,10
+  sub $4,2
+  sub $0,1
+  mul $9,$3
+  add $8,$10
+lpe
+add $8,10
+add $9,7
+sub $3,1
+add $4,$8
+add $1,$2
+mul $9,4
+mov $2,$4
+add $3,$7
+mov $1,1
+mov $2,10
+mov $7,9
+div $9,8
+mov $1,$5
+sub $1,6
+mul $1,4
+add $1,36

@@ -1,0 +1,110 @@
+; A085960: Size of the largest code of length 4 and minimum distance 3 over an alphabet of size n. This is usually denoted by A_{n}(4,3).
+; 1,2,9,16,25,34,49,64,81,100,121,144,169,196,225,256,289,324,361,400,441,484,529,576,625,676,729,784,841,900,961,1024,1089,1156,1225,1296,1369,1444,1521,1600,1681,1764,1849,1936,2025,2116,2209,2304,2401,2500
+
+mov $11,$0
+mov $7,$0
+mov $5,$0
+cmp $7,5
+mov $6,9
+mov $8,$0
+mov $2,5
+mov $0,$7
+mov $3,$0
+mov $9,2
+add $3,5
+mov $2,$0
+sub $6,$0
+mov $8,$6
+mov $10,6
+add $6,$0
+add $10,$0
+sub $5,$7
+mov $9,$9
+mov $0,$5
+mov $6,7
+mov $9,$9
+mov $2,8
+mov $4,$10
+add $7,$9
+mov $5,$6
+add $6,7
+fac $8
+mul $6,$2
+sub $7,$5
+mov $10,$7
+sub $8,$2
+sub $5,10
+mov $1,8
+pow $10,2
+mov $9,$4
+mul $7,$7
+mov $4,6
+mov $9,$8
+sub $6,7
+add $7,7
+sub $6,9
+sub $7,6
+mov $9,2
+mov $10,3
+add $9,$10
+mov $7,3
+lpb $0,1
+  sub $1,$8
+  mov $1,$0
+  sub $8,4
+  mov $5,$9
+  mov $1,10
+  sub $0,1
+  mul $0,5
+  sub $6,10
+lpe
+add $3,$0
+mov $8,$7
+add $8,$5
+mov $10,$7
+mov $5,4
+sub $7,$3
+sub $5,$10
+mov $1,0
+add $8,$7
+mov $1,6
+cmp $5,$10
+add $0,$0
+sub $10,6
+add $0,1
+mov $5,$8
+mul $2,$3
+mov $10,7
+mov $5,$7
+mov $2,$1
+mul $6,5
+mov $5,$7
+pow $6,2
+sub $4,3
+sub $5,$7
+add $8,7
+mov $3,$6
+mul $10,$2
+mov $6,0
+sub $7,1
+mov $10,$0
+mov $9,$4
+div $5,$9
+add $4,$3
+sub $9,9
+sub $1,$9
+add $10,$3
+add $10,1
+mov $10,5
+add $4,$1
+sub $5,2
+mov $4,$4
+div $10,10
+add $7,5
+mov $1,$0
+mov $12,$11
+mul $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11

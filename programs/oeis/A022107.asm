@@ -1,0 +1,104 @@
+; A022107: Fibonacci sequence beginning 1, 17.
+; 1,17,18,35,53,88,141,229,370,599,969,1568,2537,4105,6642,10747,17389,28136,45525,73661,119186,192847,312033,504880,816913,1321793,2138706,3460499,5599205,9059704,14658909
+
+mov $4,$0
+mov $6,$0
+mov $5,1
+mov $2,9
+add $0,$4
+mov $2,$0
+mov $9,$2
+mov $0,1
+mov $1,6
+add $0,$6
+sub $5,8
+mov $10,1
+mul $6,$2
+mov $7,7
+mul $4,2
+mov $1,3
+mov $9,$0
+mov $3,$5
+mov $9,6
+mov $9,5
+mov $8,$6
+mov $6,$3
+mov $7,8
+sub $5,7
+add $3,$6
+sub $6,10
+add $10,$6
+mov $5,$0
+mov $6,$9
+mov $8,3
+mul $6,3
+add $2,4
+add $5,$0
+mov $4,9
+mov $8,$1
+add $9,$1
+mov $5,$5
+sub $2,8
+add $1,$9
+mov $7,2
+sub $1,6
+mov $5,$2
+pow $8,9
+sub $8,7
+mov $8,2
+gcd $1,3
+add $8,$1
+sub $3,$0
+mov $5,7
+mov $9,$2
+mul $2,$10
+mov $5,$5
+gcd $2,$9
+add $4,1
+sub $2,$1
+mov $1,1
+mov $6,9
+lpb $0,1
+  add $3,$4
+  mov $7,1
+  mov $9,$10
+  sub $5,8
+  sub $2,1
+  div $8,$10
+  mov $1,4
+  mov $2,$6
+  mov $6,0
+  sub $2,3
+  sub $0,1
+  add $6,$7
+  mov $4,$10
+  add $6,1
+  mov $10,7
+  add $10,$3
+lpe
+mul $5,7
+sub $3,3
+sub $0,$1
+mov $7,$0
+mov $3,$2
+sub $0,$0
+mov $5,$9
+mov $5,$4
+add $1,$7
+add $1,10
+add $4,$6
+mov $5,$4
+add $3,1
+add $4,10
+sub $8,$2
+mov $4,$5
+add $5,2
+mov $7,$4
+add $0,$9
+sub $4,8
+mov $2,$2
+add $6,$9
+sub $10,7
+mov $10,9
+add $9,6
+mov $1,$0
