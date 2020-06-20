@@ -7,7 +7,6 @@ for cmd in cat date git gnuplot grep seq; do
   fi
 done
 
-
 echo "Generating length distribution chart"
 cat << EOF > lengths.gp
 set terminal pngcairo font "arial,9" size 600,300
@@ -29,7 +28,7 @@ echo "" > counts.dat
 for commit in $(git rev-list master); do
   date=$(git show -s --format="%ci" $commit)
   date=${date/ +0100/}
-  count=$(git ls-tree --name-only -r $commit | grep "programs/oeis/A.*" | wc -l)
+  count=$(git ls-tree --name-only -r $commit | grep "programs/oeis/.*" | wc -l)
   echo $date,$count >> counts.dat 
 done
 
