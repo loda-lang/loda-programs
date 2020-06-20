@@ -1,0 +1,96 @@
+; A098021: Positions of 0's in the zero-one sequence [nr+2r]-[nr]-[2r], where r=sqrt(2) and [ ]=floor; see A187967.
+; 5,10,17,22,29,34,39,46,51,58,63,68,75,80,87,92,99,104,109,116,121,128,133,138,145,150,157,162,169,174,179,186,191,198,203,208,215,220,227,232,237,244,249,256,261,268,273,278,285,290,297,302,307,314,319,326
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $7,$0
+  mov $9,2
+  lpb $9,1
+    clr $0,7
+    sub $9,1
+    mov $0,$7
+    add $0,$9
+    sub $0,1
+    mov $3,$0
+    add $0,3
+    mov $1,$3
+    mov $4,1
+    lpb $0,1
+      add $3,$0
+      mov $5,2
+      sub $0,1
+      mov $2,$0
+      mov $6,$0
+      mov $0,19
+      add $3,$4
+      sub $4,1
+      mov $2,$1
+      sub $0,1
+      mov $4,$4
+      sub $5,1
+      add $5,$5
+      mov $6,$4
+      mov $3,$1
+      sub $5,7
+      sub $1,1
+      pow $3,$5
+      fac $0
+      mov $3,0
+      mul $3,2
+      add $5,$6
+      add $2,2
+      sub $2,1
+      div $1,2
+      mov $4,$2
+      mov $5,$3
+      sub $6,1
+      sub $6,3
+      sub $0,$0
+      mov $0,$3
+      mul $3,2
+      add $3,$0
+      mul $5,$3
+      sub $2,$5
+      mov $5,$6
+      mov $2,$4
+      mov $0,1
+      mul $4,6
+      sub $5,3
+      mul $2,12
+      mov $1,$5
+    lpe
+    mov $5,$1
+    mov $5,29
+    clr $4,1
+    sub $3,$3
+    mov $3,9
+    div $2,$5
+    mov $0,$5
+    mov $0,3
+    mov $1,$0
+    mul $5,2
+    bin $0,$1
+    mov $5,$0
+    mov $1,$2
+    mov $10,$9
+    lpb $10,1
+      mov $8,$1
+      sub $10,1
+    lpe
+  lpe
+  lpb $7,1
+    sub $8,$1
+    mov $7,0
+  lpe
+  mov $1,$8
+  mul $1,2
+  add $1,5
+  add $12,$1
+lpe
+mov $1,$12

@@ -1,93 +1,27 @@
 ; A088721: Unique monotone sequence satisfying a(a(a(a(n)))) = 2n.
 ; 5,6,7,8,10,11,12,13,14,15,16,18,20,21,22,23,24,25,26,27,28,29,30,31,32,34,36,38,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,66,68,70,72,74,76,78,80,81
 
-mov $9,$0
-mov $11,$0
-add $11,1
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  sub $0,$11
-  mov $8,8
-  mov $5,2
-  mov $5,$8
-  mov $2,1
-  mov $3,$2
-  mov $2,$8
-  mov $4,4
+mov $6,$0
+mov $4,$0
+add $4,1
+lpb $4,1
+  sub $4,1
+  mov $0,$6
+  sub $0,$4
+  mov $3,8
+  mov $2,$3
   lpb $0,1
-    mov $3,7
-    mov $3,$5
-    mov $6,$8
     sub $0,1
-    mov $8,$8
-    mov $1,1
-    mov $2,$1
-    mov $4,$4
-    add $5,$1
-    add $3,$1
-    mov $3,4
-    cmp $6,$3
-    add $2,$3
-    mov $8,2
-    add $2,6
-    add $1,1
-    sub $0,$8
-    add $4,2
-    mov $1,3
-    add $1,$2
-    mul $2,2
-    sub $0,$6
-    mul $5,2
-    mov $7,$3
-    mov $7,$8
-    mov $7,$8
-    sub $2,8
-    mov $4,5
+    mov $3,2
+    sub $0,$3
     mov $2,2
-    mov $8,$2
-    add $4,1
-    mul $2,$8
-    mov $1,$1
-    mov $8,5
-    mov $8,$7
-    mov $7,1
-    sub $4,4
-    sub $3,$2
-    mov $3,$7
-    mov $4,$5
-    add $8,4
-    sub $6,$2
-    mov $4,$1
+    mul $2,$3
     add $2,$0
-    add $8,$1
-    add $6,1
-    mov $6,7
-    mov $3,4
-    mov $6,1
-    mov $7,4
-    mov $1,$6
     div $0,2
-    add $7,$6
-    sub $5,6
-    add $3,1
-    add $3,4
-    add $3,7
-    mov $7,$2
-    sub $4,$8
   lpe
-  sub $8,6
-  mov $5,$6
-  mov $1,$0
-  sub $1,1
-  sub $3,5
-  add $5,$5
-  add $7,$6
-  mov $4,$8
   mov $1,$2
   sub $1,4
   add $1,1
-  add $10,$1
+  add $5,$1
 lpe
-mov $1,$10
+mov $1,$5

@@ -1,0 +1,106 @@
+; A116882: A number n is included if (highest odd divisor of n)^2 <= n.
+; 1,2,4,8,12,16,24,32,40,48,56,64,80,96,112,128,144,160,176,192,208,224,240,256,288,320,352,384,416,448,480,512,544,576,608,640,672,704,736,768,800,832,864,896,928,960,992,1024,1088,1152,1216,1280,1344,1408
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $7,$0
+    mov $9,2
+    lpb $9,1
+      clr $0,7
+      sub $9,1
+      mov $0,$7
+      add $0,$9
+      sub $0,1
+      mov $2,$0
+      mov $4,1
+      mov $1,$4
+      add $4,$4
+      mov $4,$2
+      add $0,$2
+      add $2,$2
+      mov $3,9
+      mov $6,$4
+      mov $4,$4
+      sub $4,3
+      mov $4,1
+      mov $5,$3
+      sub $0,2
+      mov $5,6
+      mov $5,$1
+      add $1,4
+      mov $1,4
+      lpb $0,1
+        div $0,2
+        mov $2,$4
+        add $4,$2
+        add $2,$5
+        mov $3,$4
+        mov $6,$1
+        mov $1,$1
+        mov $3,$2
+        sub $0,1
+        mov $6,$5
+        sub $2,2
+        mov $2,$5
+        sub $1,1
+      lpe
+      add $3,$0
+      mul $4,64
+      mov $5,2
+      mov $0,1
+      mov $1,4
+      mul $0,$2
+      mov $5,$5
+      sub $3,$0
+      mov $0,$4
+      add $1,1
+      mov $6,3
+      mov $5,8
+      div $0,$5
+      sub $2,1
+      add $2,3
+      add $1,$2
+      mul $0,$4
+      sub $1,$1
+      mov $3,3
+      add $3,$3
+      sub $3,$6
+      mul $0,$1
+      add $5,1
+      mov $6,2
+      mov $0,1
+      sub $2,6
+      mov $0,1
+      mov $1,$4
+      mov $10,$9
+      lpb $10,1
+        mov $8,$1
+        sub $10,1
+      lpe
+    lpe
+    lpb $7,1
+      sub $8,$1
+      mov $7,0
+    lpe
+    mov $1,$8
+    div $1,64
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15
