@@ -1,0 +1,85 @@
+; A159355: Number of n X n arrays of squares of integers summing to 4.
+; 5,135,1836,12675,58941,211925,635440,1663821,3921325,8495531,17179020,32795295,59626581,103962825,174792896,284660665,450710325,695946991,1050740300,1554600411,2258257485,3226077405,4538848176,6296973125
+
+mov $8,2
+mov $1,$8
+mov $2,7
+add $0,$1
+sub $2,1
+mov $5,7
+mov $6,$0
+mov $3,6
+mov $4,4
+add $8,$8
+mul $6,$0
+mul $0,$2
+div $5,$0
+sub $8,$2
+mov $1,2
+mov $7,$2
+mod $2,8
+mov $0,$4
+add $7,1
+lpb $0,1
+  sub $1,3
+  sub $6,$6
+  mov $2,$2
+  mul $2,3
+  mov $1,$7
+  add $5,$3
+  mul $6,3
+  add $5,$7
+  mov $7,$4
+  pow $7,$7
+  sub $6,2
+  sub $0,1
+  mov $3,$2
+  mov $2,7
+  mov $8,0
+  mov $0,5
+  mov $4,2
+  add $1,$2
+  mov $5,$1
+  mov $5,8
+  add $2,$3
+  gcd $8,$2
+  mov $0,$5
+lpe
+mov $3,$7
+mov $5,4
+add $4,$6
+mov $2,$4
+mov $2,$4
+mov $7,5
+mov $2,$7
+mov $7,$6
+mov $8,$6
+add $1,2
+bin $6,4
+add $7,$1
+mov $3,2
+mov $8,$0
+mul $4,3
+fac $2
+sub $7,8
+mov $2,3
+add $0,$0
+mov $1,1
+add $4,$0
+gcd $3,7
+add $7,$6
+add $8,5
+sub $2,4
+mov $0,$5
+mov $6,1
+sub $8,4
+pow $4,2
+mov $4,4
+sub $2,$3
+add $4,2
+add $6,$6
+mov $5,6
+mov $4,$7
+mov $1,$4
+sub $1,1
+add $1,5

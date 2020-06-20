@@ -1,0 +1,105 @@
+; A138849: a(n) = AlexanderPolynomial[n] defined as Det[Transpose[S]-n S] where S is Kronecker Product of two 2 X 2 Seifert matrices {{-1, 1}, {0, -1}} [X] {{-1, 1}, {0, -1}} = {{1, -1, -1, 1}, {0, 1, 0, -1}, {0, 0, 1, -1}, {0, 0, 0, 1}}.
+; 1,0,7,52,189,496,1075,2052,3577,5824,8991,13300,18997,26352,35659,47236,61425,78592,99127,123444,151981,185200,223587,267652,317929,374976,439375,511732,592677,682864,782971,893700,1015777,1149952,1296999,1457716,1632925
+
+mov $5,$0
+mov $10,4
+mov $3,$5
+mov $8,$10
+mov $4,$8
+mov $10,$3
+pow $3,$8
+div $10,3
+pow $10,6
+add $3,$8
+sub $5,$5
+mul $4,$10
+mov $5,$5
+mov $10,$5
+mov $9,2
+mov $7,10
+mov $5,$5
+cmp $4,$5
+add $10,$5
+add $5,$7
+add $4,6
+mov $6,2
+sub $10,4
+mov $10,$7
+mov $8,$7
+mov $8,$8
+div $8,$5
+mov $5,7
+sub $9,3
+mov $6,3
+mov $5,$7
+mov $8,$8
+sub $4,3
+sub $8,$4
+add $8,1
+mul $5,10
+mov $1,1
+lpb $0,1
+  mov $2,0
+  add $9,$6
+  add $2,5
+  mov $1,$2
+  mov $8,$0
+  sub $4,1
+  mov $7,$3
+  mul $9,8
+  mov $6,4
+  add $6,$9
+  mov $10,6
+  mov $5,$9
+  mov $1,$10
+  mov $0,$2
+  add $5,$9
+  add $9,$4
+  sub $1,6
+  add $10,$0
+  add $0,$3
+  mov $9,$2
+  sub $9,8
+  sub $0,1
+  sub $9,9
+  sub $9,9
+lpe
+mul $7,8
+add $6,9
+add $3,7
+mov $9,$3
+add $6,7
+mov $2,1
+clr $4,2
+mov $8,4
+add $8,3
+add $10,$8
+add $10,$8
+add $4,$0
+mul $6,$0
+sub $3,$0
+mov $5,$1
+add $3,1
+sub $10,3
+pow $4,3
+mov $10,$7
+div $8,6
+add $9,$6
+mov $10,$7
+add $1,$4
+add $10,$10
+mov $2,$2
+sub $10,1
+add $7,$6
+mov $10,$8
+sub $3,$4
+mov $5,$3
+add $0,9
+mov $5,$8
+mov $6,9
+add $7,$8
+sub $9,$5
+mov $8,8
+add $7,3
+mov $1,$3
+sub $1,11

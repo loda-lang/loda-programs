@@ -1,0 +1,103 @@
+; A109501: Number of closed walks of length n on the complete graph on 7 nodes from a given node.
+; 1,0,6,30,186,1110,6666,39990,239946,1439670,8638026,51828150,310968906,1865813430,11194880586,67169283510,403015701066,2418094206390,14508565238346,87051391430070,522308348580426
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $6,3
+  mov $7,8
+  mov $4,3
+  mov $8,6
+  mov $1,6
+  pow $1,$0
+  mov $5,$6
+  mov $5,$5
+  add $8,$7
+  sub $6,$6
+  mov $4,6
+  add $4,6
+  sub $0,6
+  mov $5,7
+  mov $3,$5
+  sub $8,$8
+  mov $8,$7
+  mov $7,4
+  add $5,$5
+  div $1,$3
+  add $8,5
+  mov $0,0
+  add $8,$6
+  add $6,6
+  mov $5,$6
+  mov $2,0
+  bin $4,$2
+  mul $1,6
+  mov $5,$6
+  mov $7,$2
+  add $3,2
+  sub $8,$2
+  add $2,2
+  pow $8,$4
+  add $0,5
+  mov $7,8
+  mov $4,7
+  mov $7,0
+  mov $4,$0
+  mul $6,$6
+  div $2,7
+  add $1,5
+  mov $4,7
+  lpb $0,1
+    mod $5,$0
+    sub $3,8
+    add $1,4
+    mov $6,8
+    sub $7,4
+    fac $0
+    sub $6,5
+    sub $5,$7
+    mov $7,8
+    mov $5,3
+    mov $1,6
+    sub $6,$4
+    add $3,4
+    mov $8,$4
+    add $5,$4
+    sub $7,$1
+    mul $8,2
+    mov $6,7
+    mov $3,2
+    div $0,2
+    sub $2,5
+    sub $0,1
+    add $6,8
+    mul $1,5
+    sub $8,$0
+    mov $2,$4
+    sub $1,5
+    sub $5,$4
+    mov $8,3
+    sub $8,$1
+    mov $1,6
+    mov $7,$8
+    mov $8,$8
+    mov $5,$0
+    mov $5,$7
+  lpe
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
+div $1,5
