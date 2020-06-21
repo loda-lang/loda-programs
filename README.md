@@ -74,7 +74,7 @@ The [programs/oeis](programs/oeis) folder contains programs that generate intege
 
 All programs in the [oeis](oeis) folder have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
-Before mining programs for integer sequences, you need to download files from the [OEIS website](https://oeis.org). Use the `get_oeis.sh` script to download the required files. After that, you may run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. Existing programs are overriden if the new program is shorter than the existing one.
+Before mining programs for integer sequences, you need to download files from the [OEIS website](https://oeis.org). Use `loda update` to download the required files. After that, you may run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. Existing programs are overriden if the new program is shorter than the existing one.
 
 If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
 
