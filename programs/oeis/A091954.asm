@@ -1,0 +1,103 @@
+; A091954: Number of odd proper divisors of n. That is, the number of odd divisors of n that are less than n.
+; 0,1,1,1,1,2,1,1,2,2,1,2,1,2,3,1,1,3,1,2,3,2,1,2,2,2,3,2,1,4,1,1,3,2,3,3,1,2,3,2,1,4,1,2,5,2,1,2,2,3,3,2,1,4,3,2,3,2,1,4,1,2,5,1,3,4,1,2,3,4,1,3,1,2,5,2,3,4,1,2,4,2,1,4,3,2,3,2,1,6,3,2,3,2,3,2,1,3,5,3,1,4,1,2,7,2,1,4,1,4
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $2,$0
+  mov $7,$0
+  mov $8,2
+  mov $7,30
+  add $0,27
+  lpb $2,1
+    lpb $4,1
+      mov $5,$2
+      mov $1,$5
+      mov $3,$7
+      add $8,$8
+      sub $8,1
+      mul $5,15
+      mov $7,1
+      add $0,$5
+      mov $1,4
+      mov $4,$7
+      mov $3,$0
+      add $4,$7
+      mov $7,$1
+      mov $1,1
+      mov $6,$0
+      add $2,$5
+      sub $7,$1
+      mov $2,$8
+      add $3,3
+      add $1,$1
+      add $3,$4
+      mov $4,3
+      add $2,$2
+      mov $7,$2
+      sub $4,$8
+      add $7,1
+      sub $4,$2
+      mov $7,$0
+      sub $1,2
+      add $2,$0
+      sub $5,1
+      add $4,$8
+      mul $0,$3
+      mov $6,$3
+      mov $4,3
+      mov $1,18
+      mov $1,$6
+      mov $7,$1
+    lpe
+    mov $6,$2
+    mov $7,1
+    add $8,2
+    lpb $5,1
+      mov $4,$3
+      sub $4,$5
+      sub $4,$7
+      sub $5,$8
+      add $3,6
+      add $7,2
+      add $1,$2
+      mov $3,1
+      mov $3,30
+    lpe
+    gcd $6,$3
+    lpb $6,1
+      add $4,3
+      sub $6,$8
+      add $1,6
+      mov $7,1
+      mov $8,$8
+      add $1,65
+    lpe
+    pow $5,$2
+    sub $2,1
+    mov $4,$6
+    mul $3,2
+    sub $4,$4
+    clr $4,1
+    sub $3,13
+  lpe
+  add $3,$4
+  add $2,9
+  mov $4,1
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
+div $1,71

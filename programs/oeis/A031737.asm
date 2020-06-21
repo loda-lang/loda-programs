@@ -1,0 +1,112 @@
+; A031737: Least term in period of continued fraction for sqrt(n) is 59.
+; 3483,13928,31335,55704,87035,125328,170583,222800,281979,348120,421223,501288,588315,682304,783255,891168,1006043,1127880,1256679,1392440,1535163,1684848,1841495,2005104,2175675,2353208,2537703,2729160,2927579
+
+mov $11,$0
+mov $7,5
+mov $2,10
+mov $9,59
+lpb $0,1
+  mov $4,9
+  add $2,1
+  mov $6,$7
+  mov $8,1
+  mov $9,$9
+  sub $0,$7
+  sub $6,$0
+  pow $0,2
+  mov $1,$6
+  sub $0,1
+  mov $10,$1
+  mov $3,3
+  mov $7,$2
+  add $2,$1
+  add $0,$7
+  div $3,2
+  mov $6,1
+  add $3,$9
+  mul $4,2
+  mov $5,$0
+  add $2,1
+  add $4,$9
+  mov $4,1
+  mov $9,1
+  mul $8,10
+  sub $4,$3
+  add $8,$5
+  add $9,1
+  sub $3,$7
+  sub $5,$5
+  add $0,2
+  mov $4,$5
+  mov $10,$10
+  mov $3,$9
+  mul $6,$2
+  mov $2,1
+  mov $2,1
+  add $1,9
+  mov $8,1
+  add $4,$6
+  sub $10,1
+  sub $2,$6
+  mov $4,$7
+  mov $7,1
+  mov $6,2
+  pow $8,$5
+  mov $5,$3
+  add $0,$3
+  mul $3,$6
+  sub $0,2
+  gcd $7,2
+  sub $6,$3
+  mov $5,1
+  mov $3,1
+  mov $2,$0
+  mov $7,$10
+  pow $4,2
+  mov $3,2
+  sub $7,$3
+  mov $6,1
+  add $9,$0
+  pow $5,6
+  add $3,2
+lpe
+add $0,1
+cmp $8,$6
+mov $5,1
+mov $4,$0
+add $10,$6
+mul $9,$0
+sub $10,1
+sub $7,$5
+sub $9,$4
+add $3,1
+add $4,$9
+sub $0,$0
+add $7,1
+mul $9,2
+mov $9,1
+mov $0,1
+mov $8,3
+mov $3,4
+sub $9,$6
+mov $6,1
+mod $9,3
+sub $2,$2
+add $9,1
+add $7,9
+mov $1,3
+add $10,1
+sub $5,1
+mov $5,3
+sub $3,29
+pow $4,2
+add $10,1
+mov $7,$3
+mov $1,$4
+add $1,2
+mov $12,$11
+mov $13,$12
+mul $13,2
+add $1,$13
+mul $12,$11
+mul $12,$11
