@@ -1,0 +1,107 @@
+; A116725: Number of permutations of length n which avoid the patterns 132, 3421, 4231.
+; 1,2,5,12,26,52,99,184,340,632,1189,2268,4382,8556,16839,33328,66216,131888,263113,525428,1049906,2098692,4196075,8390632,16779516,33557032,67111789,134221004,268439110,536874972,1073746319,2147488608,4294972752,8589940576
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $7,$0
+    mov $9,2
+    lpb $9,1
+      clr $0,7
+      sub $9,1
+      mov $0,$7
+      add $0,$9
+      sub $0,1
+      add $0,1
+      mov $1,$0
+      mul $0,2
+      mov $5,$0
+      mov $0,2
+      mov $5,1
+      mov $2,2
+      mov $4,1
+      sub $5,$5
+      add $5,$1
+      mov $3,$2
+      mul $5,$5
+      mov $4,$1
+      mov $1,$2
+      add $1,$5
+      sub $2,$4
+      sub $4,$0
+      gcd $1,$1
+      add $4,1
+      mov $0,$1
+      pow $3,$4
+      mov $4,1
+      mov $1,1
+      add $3,$0
+      sub $5,3
+      mov $2,$0
+      sub $4,$5
+      add $5,1
+      add $4,$5
+      add $4,$3
+      mov $6,5
+      lpb $0,1
+        sub $0,1
+        mov $0,9
+        mov $1,$5
+        sub $6,$2
+        mov $1,2
+        add $6,$3
+        mov $5,$6
+        sub $1,$2
+        mov $4,6
+        add $5,1
+        add $0,1
+        sub $4,$2
+        mov $0,17
+        add $2,9
+        add $0,$2
+        sub $1,$2
+        add $0,20
+        mov $3,$0
+        mov $3,1
+        add $1,$3
+      lpe
+      add $4,$4
+      mov $1,$5
+      add $6,1
+      sub $5,$5
+      sub $4,$1
+      mul $5,$5
+      mov $0,$5
+      mov $1,$3
+      mov $10,$9
+      lpb $10,1
+        mov $8,$1
+        sub $10,1
+      lpe
+    lpe
+    lpb $7,1
+      sub $8,$1
+      mov $7,0
+    lpe
+    mov $1,$8
+    sub $1,3
+    div $1,2
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15

@@ -1,0 +1,106 @@
+; A084526: The length of each successively larger, indecomposable, 'prime' 3-ball ground-state site swap given in A084521, i.e., the number of digits in each term of A084522.
+; 1,2,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
+
+mov $4,$0
+mov $3,1
+mov $0,4
+mov $3,$0
+mov $9,$3
+mov $7,1
+mov $2,$7
+mov $8,$3
+mov $9,$4
+add $3,1
+mov $3,1
+mov $1,19
+add $0,8
+mov $3,$9
+mov $10,1
+mov $10,$0
+lpb $0,1
+  sub $3,$10
+  mul $10,$4
+  sub $4,$1
+  add $2,$0
+  mov $2,3
+  mov $6,$0
+  sub $0,4
+  sub $1,$9
+  add $10,3
+  mul $7,6
+  sub $3,$10
+  mov $8,3
+  mov $1,$8
+  sub $10,1
+  mov $4,$7
+  mov $4,1
+  mov $0,$0
+  add $9,5
+  mov $0,$7
+  add $1,2
+  mov $8,1
+  sub $2,4
+  mov $1,1
+  mov $5,$3
+  sub $8,$8
+  mov $3,3
+  pow $5,$6
+  mov $9,2
+  add $5,$5
+  add $1,$0
+  gcd $5,2
+  mov $7,2
+  mov $8,$4
+  mul $8,$4
+  mov $7,1
+  mul $3,3
+  sub $3,$4
+  mul $7,2
+  mov $5,$6
+  bin $10,2
+  mov $0,$9
+  sub $1,$3
+  mov $3,1
+  add $7,7
+  mov $2,1
+  add $3,1
+  log $10,$5
+  sub $9,$6
+  mul $2,2
+  mul $10,9
+  mov $4,$10
+  mov $7,$5
+  sub $0,7
+  sub $0,1
+  add $9,2
+  mov $4,1
+  mov $2,3
+  add $3,81
+  mov $3,8
+  mov $0,$3
+  mul $7,2
+  add $3,2
+  sub $5,$4
+  mov $9,1
+  mov $8,$3
+  sub $2,$1
+lpe
+mul $5,2
+cmp $1,1
+sub $8,$6
+sub $2,$3
+mov $5,1
+mov $4,1
+mov $4,$8
+mov $6,$10
+div $8,8
+mul $1,2
+add $0,$9
+mov $10,1
+mov $2,1
+add $4,2
+add $0,3
+mov $1,1
+mov $1,$6
+div $1,9
+add $1,1
