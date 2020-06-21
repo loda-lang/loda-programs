@@ -1,0 +1,87 @@
+; A057049: Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057049(n) = i(n^2).
+; 1,1,3,1,4,8,4,9,3,9,1,8,16,6,15,3,13,24,10,22,6,19,1,15,30,10,26,4,21,39,15,34,8,28,49,21,43,13,36,4,28,53,19,45,9,36,64,26,55,15,45,3,34,66,22,55,9,43,78,30,66,16,53,1,39,78,24,64
+
+mov $1,2
+sub $1,$0
+mov $8,2
+mov $4,1
+mov $2,$4
+mov $5,$2
+add $0,$2
+mov $3,$0
+sub $8,1
+mov $2,$0
+sub $3,$1
+mov $2,49
+mul $0,2
+add $4,$2
+mov $3,$8
+add $2,$4
+mov $2,$0
+mov $5,4
+mov $6,$1
+add $0,1
+sub $8,$0
+sub $1,$0
+mov $7,8
+lpb $2,1
+  mul $3,2
+  lpb $4,1
+    add $4,$8
+    log $4,$3
+    mov $0,$1
+    sub $4,$4
+    mul $2,$2
+    mov $1,1
+    mov $0,4
+    add $3,3
+    add $8,1
+    mov $5,$2
+    mov $6,$5
+    mov $2,$8
+    mov $2,1
+    add $3,2
+  lpe
+  add $1,4
+  sub $7,$4
+  mov $8,$0
+  mov $1,$1
+  mov $1,$7
+  mov $5,6
+  sub $8,$0
+  add $2,$8
+  mov $1,$2
+  mov $1,1
+  lpb $5,1
+    fac $2
+    add $1,$2
+    sub $8,1
+    sub $5,$4
+  lpe
+  sub $7,$5
+  mov $0,$8
+  mov $7,4
+  mov $8,1
+  add $3,$2
+  lpb $6,1
+    add $4,$7
+    mov $5,$6
+    add $3,$2
+    sub $6,$4
+  lpe
+  sub $2,4
+  add $2,$8
+  mov $8,$2
+  sub $2,1
+  mov $2,$0
+  mov $8,$4
+  sub $5,$2
+lpe
+mov $3,3
+add $6,1
+add $1,1
+mul $5,2
+mov $1,$5
+sub $1,8
+div $1,8
+add $1,1

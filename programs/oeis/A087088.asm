@@ -1,0 +1,85 @@
+; A087088: If all the 1's are removed the sequence is the same as the original with every term one greater than before. It is the simplest nontrivial sequence with this property.
+; 1,2,3,1,4,2,1,5,3,1,2,6,1,4,2,1,3,7,1,2,5,1,3,2,1,4,8,1,2,3,1,6,2,1,4,3,1,2,5,1,9,2,1,3,4,1,2,7,1,3,2,1,5,4,1,2,3,1,6,2,1,10,3,1,2,4,1,5,2,1,3,8,1,2,4,1,3,2,1,6,5,1,2,3,1,4,2,1,7,3,1,2,11,1,4,2,1,3,5,1,2,6,1,3,2
+
+mov $7,$0
+mov $9,2
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  add $0,$9
+  sub $0,1
+  mov $3,$0
+  mov $1,$3
+  mov $2,$0
+  add $3,1
+  mov $2,$3
+  mov $0,$0
+  mov $5,2
+  sub $0,1
+  mov $0,$5
+  mov $5,$2
+  mov $6,4
+  mov $4,2
+  mov $0,6
+  sub $6,2
+  sub $0,$4
+  mov $6,1
+  mov $3,$6
+  mov $2,2
+  add $3,$3
+  sub $2,$3
+  mov $0,3
+  mov $4,$5
+  mov $6,$3
+  sub $3,$1
+  sub $1,$2
+  add $5,$0
+  mov $3,$2
+  add $2,12
+  mov $0,2
+  sub $2,$1
+  mul $0,$5
+  lpb $0,1
+    add $1,$5
+    mov $0,1
+    add $1,$4
+    mul $0,$4
+    mov $5,1
+    mov $5,12
+    add $4,$4
+    div $4,3
+    sub $0,1
+    mov $2,$1
+    mov $5,$0
+    add $5,1
+  lpe
+  mov $5,1
+  sub $0,6
+  mov $6,4
+  sub $6,$6
+  pow $0,2
+  sub $4,$1
+  mov $2,7
+  sub $0,2
+  mul $0,4
+  sub $1,$5
+  mov $2,5
+  add $6,$0
+  sub $0,$1
+  add $5,$6
+  mod $5,4
+  mov $10,$9
+  lpb $10,1
+    mov $8,$1
+    sub $10,1
+  lpe
+lpe
+lpb $7,1
+  sub $8,$1
+  mov $7,0
+lpe
+mov $1,$8
+sub $1,4
+div $1,2
+add $1,1
