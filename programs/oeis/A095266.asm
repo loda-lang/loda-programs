@@ -1,94 +1,25 @@
 ; A095266: A sequence generated from the Narayana triangle considered as a matrix, or from Pascal's triangle.
 ; 1,42,303,1144,3105,6906,13447,23808,39249,61210,91311,131352,183313,249354,331815,433216,556257,703818,878959,1084920,1325121,1603162,1922823,2288064,2703025,3172026,3699567,4290328,4949169,5681130
 
-mov $9,$0
+mov $5,$0
 mov $6,$0
-mov $4,5
-mov $2,2
-add $4,1
-mov $7,$2
-mov $2,2
-mov $4,1
-mul $0,$0
+pow $0,2
 mov $2,$0
-mov $3,22
-mov $7,$6
-sub $7,$0
 add $0,$6
 mov $1,$0
 mov $0,$2
-mul $6,2
-add $2,1
-sub $7,$0
-add $7,$7
-mov $2,2
-mov $1,$1
-add $2,$0
-mov $8,$1
-mov $6,$6
-mov $2,$0
-sub $2,$8
 lpb $0,1
-  cmp $8,1
-  mov $4,4
-  mov $4,1
   sub $0,1
-  mov $2,1
-  add $7,2
-  add $7,1
-  mov $3,$4
+  add $7,3
   add $1,$7
 lpe
-sub $8,1
-mov $4,1
-mov $6,$7
-mov $6,4
-mov $7,2
-pow $0,2
-mov $3,1
-mov $4,$3
-mov $8,$7
-mov $7,2
 mul $1,5
-add $6,$6
-mov $7,1
-mul $7,$6
-add $0,2
-sub $8,$7
-bin $6,$0
-add $0,6
-add $0,$6
-mov $5,$0
-mov $6,$7
-mov $0,1
-mov $4,1
-add $7,$7
-div $7,2
-add $8,2
-sub $8,$0
-sub $6,$3
-mul $6,2
-sub $8,3
-sub $3,$2
-mov $8,$8
-log $7,$6
-mov $5,16
-add $1,$7
-sub $3,$7
-add $5,$6
-mov $4,1
-mul $4,5
-mul $2,2
-mov $4,$3
-add $6,2
-add $3,7
 add $1,1
-mov $10,$9
-mov $11,$10
-mul $11,1
-add $1,$11
-mul $10,$9
-mul $10,$9
-mov $11,$10
-mul $11,15
-add $1,$11
+mov $4,$5
+mov $3,$4
+add $1,$3
+mul $4,$5
+mul $4,$5
+mov $3,$4
+mul $3,15
+add $1,$3
