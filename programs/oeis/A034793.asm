@@ -1,0 +1,116 @@
+; A034793: a(1)=1; thereafter a(n+1) is the least k > a(n) such that k is a square mod a(i) for all  i<= n.
+; 1,2,3,4,9,13,16,25,36,49,64,81,100,121,144,169,196,225,256,289,324,361,400,441,484,529,576,625,676,729,784,841,900,961,1024,1089,1156,1225,1296,1369,1444,1521,1600,1681,1764,1849,1936,2025,2116,2209,2304
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $2,1
+  mov $8,$2
+  mov $5,$0
+  mov $1,4
+  sub $8,1
+  mov $7,$8
+  mov $6,1
+  add $8,$6
+  sub $7,$5
+  mov $2,1
+  mov $5,$2
+  sub $0,1
+  mov $4,$6
+  mov $6,8
+  sub $1,$7
+  add $5,1
+  mov $8,$8
+  mov $1,1
+  mov $6,$0
+  mov $3,2
+  div $1,18
+  div $1,$4
+  sub $8,1
+  mov $9,$8
+  sub $3,$7
+  mov $10,3
+  add $7,$4
+  sub $1,$1
+  mov $3,$2
+  add $6,$5
+  mov $6,2
+  sub $1,4
+  mov $9,$1
+  sub $0,2
+  pow $0,$7
+  pow $8,$7
+  add $9,$10
+  add $5,$6
+  lpb $0,1
+    sub $5,$0
+    mov $10,$9
+    pow $7,2
+    mov $6,$1
+    sub $7,2
+    add $3,$6
+    add $8,5
+    mov $9,1
+    sub $2,$3
+    mov $10,$7
+    cmp $7,6
+    mov $8,3
+    mov $2,$5
+    pow $0,$8
+    sub $4,2
+    pow $3,$6
+    add $7,$3
+    mul $1,2
+    sub $9,$0
+    sub $4,1
+    mov $4,1
+    mov $10,3
+    sub $0,1
+    add $10,4
+    mov $10,$1
+    sub $0,37
+    add $3,1
+    mov $2,$0
+    add $3,$3
+    add $1,$0
+    pow $0,2
+    mov $3,$8
+    add $5,5
+    pow $9,$4
+  lpe
+  mov $1,1
+  pow $4,$1
+  add $5,27
+  add $10,$10
+  add $6,1
+  mov $2,7
+  add $7,$0
+  add $0,7
+  sub $8,1
+  add $6,5
+  gcd $1,$5
+  add $9,$0
+  sub $9,$6
+  add $1,$5
+  div $5,2
+  add $0,$0
+  mov $9,$10
+  mov $7,$5
+  mov $6,$0
+  mul $2,$7
+  mov $4,1
+  sub $6,$9
+  add $1,$0
+  mov $6,2
+  add $8,$10
+  div $8,3
+  sub $1,46
+  add $1,1
+  add $12,$1
+lpe
+mov $1,$12

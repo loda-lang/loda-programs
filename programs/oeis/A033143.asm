@@ -1,85 +1,14 @@
 ; A033143: Base-7 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,0.
 ; 1,7,49,344,2408,16856,117993,825951,5781657,40471600,283301200,1983108400,13881758801,97172311607,680206181249,4761443268744,33330102881208,233310720168456,1633175041179193,11432225288254351
 
-mov $1,1
-mov $8,$1
-add $8,5
-add $0,2
-add $0,1
-pow $8,2
-mov $5,3
-mov $1,$8
-mov $6,2
-mov $2,1
-mov $5,24
-mov $4,$0
-sub $2,2
-mul $1,2
-mov $7,2
-add $1,$0
-mov $3,7
-pow $2,3
-add $4,1
-sub $7,3
-pow $3,$0
-mov $4,1
-mov $7,2
-sub $7,1
-mov $0,$4
-sub $5,1
-add $5,2
-add $0,$3
+add $0,3
+mov $2,7
+pow $2,$0
 lpb $0,1
-  add $4,$2
-  sub $3,$4
-  div $3,57
-  pow $6,2
-  sub $4,8
-  mov $5,$1
-  add $0,2
-  add $5,$4
-  mov $1,21
-  mov $8,1
-  mov $8,2
-  add $7,$1
-  add $6,1
-  mov $7,$2
-  add $2,$1
-  sub $1,$4
-  mov $7,49
-  mov $1,$6
-  mov $7,1
-  mov $5,$8
-  pow $7,$0
-  mov $0,2
-  mov $1,1
-  sub $0,1
-  mov $5,1
-  mov $4,$6
-  sub $4,9
-  add $7,$1
-  add $4,1
-  add $1,2
-  mov $1,1
-  add $7,$3
+  div $2,57
   mov $0,1
-  sub $3,1
-  add $2,$2
-  mul $8,$2
-  cmp $2,1
 lpe
-mov $1,1
-add $4,1
-mov $7,$5
-div $0,$0
-add $8,1
-sub $7,1
-mov $5,1
-mov $5,$6
-mov $8,4
-add $6,1
-mov $4,$7
-mov $1,$3
+mov $1,$2
 sub $1,5
 div $1,6
 add $1,1

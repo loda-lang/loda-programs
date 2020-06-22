@@ -1,106 +1,26 @@
 ; A329938: Beatty sequence for sinh x, where csch x + sech x = 1 .
 ; 1,3,5,7,9,11,13,15,16,18,20,22,24,26,28,30,32,33,35,37,39,41,43,45,47,48,50,52,54,56,58,60,62,64,65,67,69,71,73,75,77,79,80,82,84,86,88,90,92,94,96,97,99,101,103,105,107,109,111,112,114,116,118
 
-add $0,$0
-mov $4,1
-mov $10,2
-mov $2,$10
-mov $8,$4
-mov $5,1
-mov $4,3
-add $4,1
-mov $9,2
-mul $2,$4
-mov $6,1
-add $9,$0
-mov $0,$9
-mov $1,$5
+mul $0,2
 mov $3,2
-sub $9,1
-mov $1,$5
-log $8,$9
-mov $10,$10
-mov $5,$3
-add $3,1
-mov $6,8
-mov $4,$9
-mov $4,$0
-mov $8,$9
-add $4,$8
-add $3,2
-mov $4,16
-add $8,1
-sub $6,$0
-mov $5,2
-add $1,$0
-add $4,1
-mov $0,$9
-add $3,2
+add $3,$0
+sub $3,1
+mov $0,$3
 add $0,16
-clr $1,1
-mov $7,$10
-sub $6,1
-div $9,$4
-mul $1,2
-mov $8,$0
+div $3,17
 mov $5,$0
 mov $1,1
-mov $4,2
-add $9,4
-mov $4,1
-mov $0,$9
-mul $2,$0
-sub $3,$1
-add $2,1
-sub $7,$4
-mov $8,$0
-sub $2,$10
-add $9,$1
-mov $2,2
-mov $6,2
-sub $6,2
-sub $10,$8
-sub $5,$8
-add $2,$2
-add $7,$4
-mov $3,4
-add $6,2
-add $6,$10
-mov $8,$8
-sub $8,1
-add $7,$7
+add $3,4
+mov $0,$3
+mov $6,$0
+sub $5,$6
 lpb $0,1
-  mov $7,$5
-  mov $5,10
-  mul $6,3
-  add $9,$7
-  mov $2,2
-  mov $3,$3
-  add $0,2
+  mov $4,$5
   mul $1,2
-  add $9,1
-  mov $5,$6
-  mov $2,2
-  mov $4,$0
-  sub $10,$9
-  mul $1,$7
-  sub $0,1
-  mov $6,9
-  add $5,$1
-  mov $10,28
-  pow $10,4
-  mov $4,7
-  mul $7,$6
-  sub $0,$10
+  mul $1,$4
+  mov $2,28
+  sub $0,$2
 lpe
-add $6,18
-mov $6,4
-sub $6,$5
-add $7,2
-mov $8,1
-mov $0,1
-add $10,$3
-add $4,3
 sub $1,26
 div $1,2
 add $1,1
