@@ -1,0 +1,95 @@
+; A026472: {3, 7} together with the numbers congruent to {1, 2} mod 12.
+; 1,2,3,7,13,14,25,26,37,38,49,50,61,62,73,74,85,86,97,98,109,110,121,122,133,134,145,146,157,158,169,170,181,182,193,194,205,206,217,218,229,230,241,242,253,254,265,266,277,278,289,290,301,302,313,314
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $7,$0
+  mov $9,2
+  lpb $9,1
+    clr $0,7
+    sub $9,1
+    mov $0,$7
+    add $0,$9
+    sub $0,1
+    mov $5,3
+    mov $1,4
+    sub $5,5
+    mov $3,$5
+    pow $1,2
+    mov $2,$0
+    mov $0,$0
+    mov $6,$2
+    mul $3,$5
+    add $0,$1
+    mov $4,$6
+    fac $3
+    add $5,$4
+    sub $4,$4
+    add $2,1
+    sub $0,9
+    add $0,$5
+    sub $2,2
+    sub $5,1
+    mov $0,$0
+    add $0,2
+    lpb $0,1
+      sub $4,8
+      mov $6,$5
+      mov $0,1
+      add $5,$0
+      sub $6,1
+      add $0,$6
+      mov $1,1
+      add $5,$2
+      sub $1,3
+      mov $1,2
+      add $2,1
+      div $0,2
+      add $4,2
+      add $5,$1
+      sub $4,$5
+      mov $5,3
+      sub $0,1
+      mul $5,$3
+      mov $5,4
+      fac $5
+      mul $4,2
+      mov $5,$6
+      mov $4,$4
+    lpe
+    sub $2,1
+    div $0,$1
+    mov $4,$5
+    mov $0,657
+    mov $3,$6
+    mov $4,$0
+    sub $6,$6
+    mul $3,2
+    mul $2,4
+    sub $0,1
+    mul $3,$1
+    mov $4,1
+    add $5,$3
+    sub $5,2
+    mov $1,$5
+    mov $10,$9
+    lpb $10,1
+      mov $8,$1
+      sub $10,1
+    lpe
+  lpe
+  lpb $7,1
+    sub $8,$1
+    mov $7,0
+  lpe
+  mov $1,$8
+  add $1,1
+  add $12,$1
+lpe
+mov $1,$12

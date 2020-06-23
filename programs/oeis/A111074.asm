@@ -1,86 +1,21 @@
 ; A111074: Let t(n) denote the triangular numbers (A000217). Sequence mixes t(n+2) and t(n).
 ; 3,0,6,1,10,3,15,6,21,10,28,15,36,21,45,28,55,36,66,45,78,55,91,66,105,78,120,91,136,105,153,120,171,136,190,153,210,171,231,190,253,210,276,231,300,253,325,276,351,300,378,325,406,351,435,378,465,406,496,435
 
-mov $2,2
 mov $7,$0
-mov $5,3
-mov $4,3
-mov $7,$2
-mov $8,$0
-mov $5,$7
 gcd $0,8
-mov $1,$2
-mov $5,2
-sub $4,$5
 mov $6,3
-mov $5,$8
-sub $2,$0
-mov $3,$5
-add $1,1
-pow $3,$6
-add $5,$1
-sub $2,$1
+mov $5,$7
+add $5,3
 mov $2,$5
-mov $3,1
 lpb $0,1
-  add $5,1
   mov $3,1
-  mov $0,$2
-  add $1,1
-  sub $0,1
   add $2,$6
-  mov $4,$3
-  pow $3,2
-  clr $8,$6
-  mov $7,89
-  sub $0,1
   mov $0,$3
-  sub $5,$4
-  sub $6,3
-  add $1,$3
   add $2,2
-  sub $4,$1
-  div $4,$7
-  sub $8,$2
-  pow $7,2
-  mov $8,$0
-  add $4,2
 lpe
 sub $2,3
-pow $7,2
-sub $8,$4
-cmp $3,4
-mov $0,7
-mul $1,$1
-mov $4,362880
-mov $0,$5
-mov $1,5
-add $5,24
-add $5,1
-add $4,$7
-add $4,$4
-sub $0,$5
-add $4,1
-mov $4,1
 mov $5,$2
 mul $2,$5
-sub $3,$8
-sub $0,$2
-sub $3,$0
-add $8,1
-add $0,$5
-mov $8,$8
 add $4,$2
-add $5,$8
-mov $5,1
-mul $7,$4
-mul $0,22
-sub $1,$2
-add $8,$6
-mov $1,2
-cmp $5,1
-mov $7,1
-add $2,$6
 mov $1,$4
-sub $1,2
 div $1,8
