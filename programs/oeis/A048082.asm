@@ -1,104 +1,15 @@
 ; A048082: Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n+3)/3.
 ; 0,1,2,5,9,19,34,55,125,209,329,791,1286,2001,5004,8007,12375,31823,50387,77519,203489,319769,490313,1307503,2042974,3124549,8436284,13123109,20030009,54627299,84672314,129024479,354817319
 
-mov $1,2
-mov $2,2
-mov $4,$0
-div $1,2
-mov $3,2
-mov $2,1
 add $0,1
-mul $4,2
-pow $4,2
-mov $6,$4
-sub $4,5
 mov $2,$0
-sub $6,2
-cmp $2,$1
-mul $6,35
-mov $10,$1
-sub $6,$4
-add $3,28
-mov $10,$1
-mov $3,1
-mul $10,2
-mov $10,11
-mov $4,$0
-sub $1,$1
-mov $0,$0
-cmp $2,$2
-add $1,$0
-mov $2,$3
-mov $3,2
-pow $10,7
-mov $8,$0
-mov $7,$0
-mov $4,$0
-mov $8,$8
-div $4,3
-sub $8,1
-add $4,2
-mov $10,$4
-mul $0,$0
-mov $8,$0
-mov $10,9
-mov $5,$10
-mov $10,$4
-mul $0,2
-mov $8,$1
-sub $4,1
-add $0,1
-add $5,$6
-mod $2,3
-bin $7,$4
-sub $6,1
-add $0,5
-sub $4,1
-mov $9,2
+mov $3,$0
+div $3,3
 add $3,1
-mov $4,$7
-mul $2,$4
-sub $4,1
-mov $10,3
-add $9,$8
-add $2,$2
-add $6,$2
-sub $1,5
-mov $4,$10
-sub $4,$8
-add $6,$6
-mov $6,2
-mov $6,$7
-sub $3,6
-mov $1,$8
-mov $8,2
-mov $8,7
-sub $4,1
+bin $2,$3
 lpb $0,1
-  add $5,$3
   mov $0,1
-  mov $3,$7
-  add $0,5
-  add $7,6
-  mov $1,$7
-  add $10,4
-  sub $2,7
-  sub $7,$7
-  mul $7,6
-  mov $3,1
-  sub $0,1
-  sub $6,1
-  mul $3,$5
-  mov $7,5
+  add $2,6
+  mov $1,$2
 lpe
-add $1,1
-mov $6,0
-mov $0,2
-mov $4,1
-mov $0,$0
-add $8,3
-mov $3,5
-mov $4,2
-mul $4,2
-clr $4,$1
-sub $1,8
+sub $1,7

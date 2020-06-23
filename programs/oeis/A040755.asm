@@ -1,104 +1,31 @@
 ; A040755: Continued fraction for sqrt(783).
 ; 27,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54,1,54
 
-mov $9,$0
-mov $11,2
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  add $0,$11
+mov $7,$0
+mov $4,2
+lpb $4,1
+  sub $4,1
+  mov $0,$7
+  add $0,$4
   sub $0,1
   div $0,2
   mov $3,$0
-  mov $1,$3
-  mov $7,$1
-  mov $4,1
   mul $3,2
-  sub $1,$0
-  mov $6,$0
-  mul $0,2
-  add $4,$3
-  mov $0,$0
   mov $5,106
-  add $1,$6
-  mov $7,1
-  add $1,$4
-  add $6,$1
-  clr $1,1
-  mov $2,$5
   add $3,1
-  mul $7,$3
-  mov $0,$1
   mul $3,$5
-  sub $3,2
-  mov $5,$6
-  add $4,5
-  mov $2,4
-  sub $0,1
-  mov $1,6
-  mov $5,$4
-  mov $6,$0
-  add $7,$5
-  mov $5,1
   div $3,2
-  lpb $0,1
-    mov $6,$0
-    mov $8,18
-    sub $0,1
-    mov $6,$6
-    mov $1,1
-    mov $7,1
-    add $5,1
-    sub $4,6
-    mov $8,$8
-    mul $3,2
-    add $2,3
-    mov $4,$6
-    add $1,$1
-    add $6,1
-    sub $7,$8
-    mov $8,1
-    add $5,$1
-    mov $6,1
-    mul $8,2
-    pow $5,4
-    add $6,2
-    mov $8,10
-    mul $6,$3
-    add $4,2
-    mov $5,$4
-    sub $7,1
-    pow $1,$8
-    sub $4,1
-    mov $6,3
-    add $2,$5
-    mov $0,$5
-    mov $3,6
-    mul $0,3
-    mov $0,3
-    mov $3,$4
-    mul $5,2
-    sub $1,2
-    sub $8,$3
-    mov $8,5
-    sub $1,2
-    mov $3,1
-  lpe
-  mov $5,11
-  mov $1,8
-  mov $6,1
   mov $1,$3
-  mov $12,$11
-  lpb $12,1
-    mov $10,$1
-    sub $12,1
+  mov $2,$4
+  lpb $2,1
+    mov $6,$1
+    sub $2,1
   lpe
 lpe
-lpb $9,1
-  sub $10,$1
-  mov $9,0
+lpb $7,1
+  sub $6,$1
+  mov $7,0
 lpe
-mov $1,$10
+mov $1,$6
 div $1,2
 add $1,1

@@ -1,0 +1,112 @@
+; A004957: a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
+; 0,3,6,8,11,14,16,19,21,24,27,29,32,35,37,40,42,45,48,50,53,55,58,61,63,66,69,71,74,76,79,82,84,87,90,92,95,97,100,103,105,108,110,113,116,118,121,124,126,129,131,134
+
+mov $11,$0
+mov $3,3
+mov $4,$0
+mov $7,$3
+mov $10,2
+mov $8,1
+mov $2,$10
+add $10,1
+mov $1,1
+add $10,$8
+sub $1,$10
+sub $7,$3
+mov $4,$0
+mov $9,$0
+mov $5,$0
+mov $5,7
+add $4,$4
+mov $2,$0
+mov $5,$0
+sub $1,$0
+mul $2,$8
+add $2,$1
+mov $10,$4
+add $10,$9
+mul $2,$2
+lpb $2,1
+  mov $9,3
+  mov $4,1
+  add $1,1
+  add $0,2
+  mov $9,1
+  gcd $4,2
+  add $5,1
+  lpb $4,1
+    sub $4,$7
+    add $5,3
+  lpe
+  lpb $5,1
+    sub $2,1
+    sub $7,$1
+    mov $8,13
+    mov $6,$0
+    sub $5,$7
+    sub $2,1
+    add $0,1
+    sub $2,1
+    mov $1,$1
+    mov $5,2
+    mov $6,$3
+    add $3,1
+    cmp $6,3
+    mov $9,2
+    mov $2,$1
+    pow $4,3
+    mov $1,$5
+    add $6,$5
+    mul $6,$0
+    add $5,$10
+    pow $4,900
+    add $10,$2
+    add $1,$4
+    add $3,$7
+    mov $0,4
+    sub $2,6
+  lpe
+  sub $8,2
+  add $1,$3
+  add $2,2
+  lpb $6,1
+    mul $6,2
+    mov $8,1
+    mov $8,$10
+    add $1,$2
+    mov $7,1
+    add $6,22
+    mov $3,$5
+    mov $9,$0
+    mov $6,$2
+    sub $6,$7
+    mov $5,$0
+    add $6,$6
+    sub $6,$6
+    pow $7,$1
+    mov $8,1
+  lpe
+  sub $2,1
+  sub $2,$0
+  mov $10,$10
+  add $10,$9
+  sub $5,$8
+  add $3,14
+  add $4,$10
+  sub $9,$6
+lpe
+clr $9,1
+cmp $8,$9
+add $1,$0
+add $1,1
+mov $4,3
+add $7,3
+mul $4,5
+mov $7,$8
+mov $1,$5
+mov $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11
+mul $12,$11
