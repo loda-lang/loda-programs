@@ -1,0 +1,66 @@
+; A224868: a(1) = greatest k such that H(k) - H(4) < 1/3 + 1/4; a(2) = greatest k such that H(k) - H(a(1)) < H(a(1)) - H(4); and for n > 2, a(n) = greatest k such that H(k) - H(a(n-1) > H(a(n-1)) - H(a(n-2)), where H = harmonic number.
+; 7,11,17,26,39,58,86,127,187,275,404,593,870,1276,1871,2743,4021,5894,8639,12662,18558,27199,39863,58423,85624,125489,183914,269540,395031,578947,848489,1243522,1822471,2670962,3914486,5736959,8407923,12322411,18059372
+
+mov $1,2
+mov $3,1
+clr $6,$3
+add $3,4
+mov $2,$3
+sub $3,5
+mov $4,2
+mov $5,2
+add $2,$3
+mov $4,2
+add $2,$3
+sub $4,82
+mov $6,1
+sub $4,$1
+add $0,2
+add $4,7
+add $5,$0
+gcd $4,6
+mov $1,$6
+mov $6,2
+lpb $0,1
+  sub $5,3
+  add $6,$1
+  mov $5,$0
+  mov $1,$3
+  mov $3,$4
+  add $5,$0
+  sub $2,$3
+  mov $2,1
+  add $1,2
+  sub $0,1
+  add $1,1
+  mov $4,1
+  mov $4,$6
+lpe
+mov $6,$4
+mov $4,$6
+sub $0,1
+mul $1,2
+mov $6,6
+bin $0,9
+sub $6,$1
+mov $1,$5
+mul $4,2
+mov $0,1
+sub $6,28
+mov $6,$2
+mov $5,$2
+add $2,$1
+add $3,7
+mov $5,1
+sub $2,$2
+add $6,$2
+add $4,2
+sub $5,2
+mov $0,$4
+cmp $1,6
+sub $5,$0
+add $5,$0
+mov $1,$0
+sub $1,14
+div $1,2
+add $1,7

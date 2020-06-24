@@ -1,0 +1,84 @@
+; A056136: Largest positive integer whose harmonic mean with another positive integer is n.
+; 1,2,6,6,15,12,28,20,45,30,66,42,91,56,120,72,153,90,190,110,231,132,276,156,325,182,378,210,435,240,496,272,561,306,630,342,703,380,780,420,861,462,946,506,1035,552,1128,600,1225,650,1326,702,1431,756,1540
+
+mov $7,$0
+mov $9,2
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  add $0,$9
+  sub $0,1
+  mov $3,3
+  mov $5,2
+  mov $6,$0
+  mov $2,$5
+  div $5,$5
+  gcd $5,7
+  add $6,1
+  mov $1,$5
+  mov $4,$1
+  add $1,$6
+  add $5,$6
+  mov $2,1
+  add $2,$5
+  div $4,2
+  sub $6,13
+  add $1,2
+  mov $4,1
+  sub $4,2
+  bin $5,2
+  div $1,2
+  add $2,1
+  mul $1,$5
+  mov $0,1
+  add $2,$3
+  mov $0,1
+  mul $5,5
+  mov $2,1
+  lpb $0,1
+    add $6,4
+    add $1,$6
+    sub $0,$2
+    mul $0,$1
+    div $0,$1
+    sub $5,2
+    fac $4
+    mov $6,2
+    add $5,9
+    mov $3,1
+    sub $0,1
+    mov $1,5
+    pow $1,2
+    add $1,$3
+    add $3,1
+    add $3,5
+    mov $1,$2
+    add $0,3
+    add $0,$5
+    add $0,2
+    mov $2,$4
+    pow $2,3
+    mov $1,$0
+    add $2,$4
+    add $4,$4
+    mul $3,2
+    sub $1,$5
+    div $5,$1
+    add $0,7
+  lpe
+  add $6,1
+  mov $10,$9
+  lpb $10,1
+    mov $8,$1
+    sub $10,1
+  lpe
+lpe
+lpb $7,1
+  sub $8,$1
+  mov $7,0
+lpe
+mov $1,$8
+sub $1,2
+div $1,2
+add $1,1

@@ -1,118 +1,32 @@
 ; A044837: Positive integers having more base-11 runs of even length than odd.
 ; 12,24,36,48,60,72,84,96,108,120,1452,1464,1476,1488,1500,1512,1524,1536,1548,1560,1572,2904,2916,2928,2940,2952,2964,2976,2988,3000,3012,3024,4356,4368,4380,4392,4404,4416,4428,4440
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
-  mov $5,$0
-  mov $3,4
+mov $5,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$5
+  sub $0,$2
   add $0,1
-  mov $9,$3
   mov $7,$0
-  mov $4,2
-  mov $6,1
-  mov $3,$6
-  pow $4,$9
   lpb $0,1
-    mov $1,$7
-    mov $2,$7
-    mov $9,$6
-    mov $0,3
-    mul $3,4
-    mov $10,8
-    add $7,$7
-    mov $0,$3
-    mov $5,$3
-    mov $3,$4
-    mov $8,$10
+    mov $8,$6
     mov $0,4
-    mov $2,2
     mov $3,1
-    sub $7,$1
-    mod $5,$1
-    add $9,$3
-    mov $2,$3
-    add $6,$10
-    mod $6,$7
-    sub $3,$1
-    add $2,$3
-    sub $0,1
-    sub $0,1
+    add $8,$3
   lpe
-  mul $5,5
-  mov $10,$0
-  mov $2,$10
-  sub $5,$1
-  add $9,9
-  mov $0,6
-  gcd $7,$9
-  sub $3,$7
-  sub $9,1
-  mov $6,$0
-  mov $1,$4
-  mov $8,4
-  sub $1,$3
-  div $3,2
-  mov $3,5
-  mov $10,$10
-  mov $8,1
-  add $8,1
-  mov $3,2
-  mov $9,$9
-  sub $3,8
-  add $2,1
-  div $0,2
+  add $8,9
+  gcd $7,$8
   add $0,$7
-  mov $3,1
-  sub $4,$2
-  add $9,1
   add $0,4
-  div $7,18
-  mov $8,$2
-  add $2,$2
-  mov $9,9
-  mov $9,$10
-  add $7,1
-  add $4,1
-  add $5,6
-  mov $8,1
   mov $6,$0
-  mov $10,8
-  div $8,2
-  mod $3,2
-  sub $8,$8
   mov $1,$6
-  pow $0,$3
-  add $8,1
-  add $9,1
-  mov $7,5
-  mov $9,$5
-  mov $9,5
-  add $8,$2
-  add $6,2
-  mov $0,8
-  add $6,$2
-  add $4,$10
-  sub $0,1
-  bin $3,$8
-  mov $4,1
-  mov $4,$5
-  mov $5,8
-  add $0,6
-  mov $4,5
-  mov $4,$7
-  mov $7,13
   mov $6,1
-  sub $4,1
   sub $1,8
   div $1,10
   mul $1,1320
   add $1,12
-  add $12,$1
+  add $4,$1
 lpe
-mov $1,$12
+mov $1,$4

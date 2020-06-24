@@ -1,0 +1,86 @@
+; A033811: Convolution of natural numbers n >= 1 with Lucas numbers L(k)(A000032) for k >= 2.
+; 3,10,24,49,92,164,283,478,796,1313,2152,3512,5715,9282,15056,24401,39524,63996,103595,167670,271348,439105,710544,1149744,1860387,3010234,4870728,7881073,12751916,20633108
+
+mov $10,$0
+mov $12,$0
+add $12,1
+lpb $12,1
+  clr $0,10
+  sub $12,1
+  mov $0,$10
+  sub $0,$12
+  mov $7,$0
+  mov $9,$0
+  add $9,1
+  lpb $9,1
+    clr $0,7
+    sub $9,1
+    mov $0,$7
+    sub $0,$9
+    mov $2,$0
+    sub $2,$0
+    mov $6,33
+    mov $1,2
+    mul $6,$2
+    add $6,2
+    mov $3,$2
+    mov $5,$2
+    add $2,$0
+    mov $4,$0
+    mov $5,$3
+    add $4,$3
+    mov $6,$5
+    add $2,$2
+    mul $3,2
+    sub $6,$4
+    add $6,$2
+    add $4,$1
+    mul $0,$6
+    div $6,$4
+    add $0,2
+    mul $0,$3
+    mov $5,$6
+    sub $2,$5
+    mov $2,$2
+    mov $0,$4
+    mov $6,3
+    mov $4,7
+    mov $2,$1
+    sub $5,$5
+    add $4,$3
+    mov $1,$2
+    mov $5,9
+    add $4,1
+    pow $4,$4
+    mov $6,$2
+    mov $5,1
+    lpb $0,1
+      sub $6,4
+      add $1,$6
+      sub $6,2
+      mov $2,1
+      mov $6,$3
+      add $3,$5
+      sub $0,1
+      add $4,3
+      sub $2,$5
+      mov $4,$0
+      mul $1,$4
+      mov $5,$6
+      mov $1,6
+    lpe
+    mul $4,5
+    add $4,1
+    add $6,$3
+    add $3,8
+    add $1,1
+    mov $3,$0
+    add $6,$5
+    mul $1,2
+    mov $1,$6
+    add $8,$1
+  lpe
+  mov $1,$8
+  add $11,$1
+lpe
+mov $1,$11

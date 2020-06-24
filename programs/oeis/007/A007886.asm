@@ -1,0 +1,95 @@
+; A007886: Number of cycles induced by iterating the Gray-coding of an n-bit number: a(n+1) = a(n) + ( 2^n / C_n), where C_n = least power of 2 >= n (C_n is the length of the cycle).
+; 1,2,3,4,6,8,12,20,36,52,84,148,276,532,1044,2068,4116,6164,10260,18452,34836,67604,133140,264212,526356,1050644,2099220,4196372,8390676,16779284,33556500,67110932,134219796,201328660,335546388,603981844
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $8,$0
+  mov $6,1
+  mov $5,$8
+  mov $4,1
+  mov $7,1
+  mov $1,3
+  mov $2,16
+  mov $6,$0
+  add $0,$0
+  add $7,1
+  sub $8,6
+  sub $2,1
+  add $0,1
+  mov $3,$4
+  div $3,2
+  sub $7,$8
+  mov $4,4
+  add $8,$1
+  log $8,4
+  sub $2,1
+  sub $4,$2
+  lpb $0,1
+    mov $1,$4
+    mov $2,1
+    mov $8,1
+    mov $1,$8
+    mov $1,$1
+    mov $7,0
+    mov $1,$8
+    div $5,$8
+    mov $2,$1
+    sub $1,$4
+    mov $7,1
+    mov $5,1
+    sub $6,1
+    add $1,2
+    mov $7,$8
+    fac $3
+    sub $8,1
+    sub $0,1
+    add $2,$3
+    add $2,$4
+    mov $2,$8
+    sub $1,$5
+    div $0,2
+    add $1,$2
+    mov $7,6
+    mov $8,1
+    add $5,1
+    add $0,2
+    add $0,$4
+    mul $7,$0
+  lpe
+  mul $1,$6
+  mov $2,$2
+  sub $2,$0
+  add $4,2
+  mov $8,1
+  add $1,$3
+  mov $4,3
+  pow $4,2
+  mov $0,23
+  add $0,$6
+  mov $4,1
+  mul $8,2
+  pow $5,$6
+  sub $4,5
+  mov $1,$8
+  add $1,12
+  add $7,$4
+  mov $8,1
+  add $2,3
+  mul $1,2
+  mov $4,$7
+  sub $4,$8
+  mul $0,$8
+  add $6,3
+  mov $1,0
+  sub $7,$8
+  sub $4,4
+  mov $1,$5
+  add $10,$1
+lpe
+mov $1,$10

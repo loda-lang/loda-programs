@@ -1,0 +1,76 @@
+; A160790: Vertex number of a rectangular spiral. The first differences (A160791) are the edge lengths of the spiral. The distances between two nearest edges, that are parallel to the initial edge, are the natural numbers.
+; 0,1,2,4,7,10,16,20,30,35,50,56,77,84,112,120,156,165,210,220,275,286,352,364,442,455,546,560,665,680,800,816,952,969,1122,1140,1311,1330,1520,1540,1750,1771,2002,2024,2277,2300,2576,2600,2900,2925,3250,3276,3627,3654,4032,4060,4466,4495,4930,4960,5425
+
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  mov $1,$0
+  mov $2,$0
+  gcd $0,2
+  lpb $0,1
+    mov $5,$1
+    clr $4,2
+    mov $1,$5
+    add $5,1
+    sub $5,1
+    div $2,2
+    mov $6,1
+    add $2,$6
+    mov $2,$2
+    mov $3,5
+    add $5,$6
+    mov $6,$2
+    mov $3,$0
+    sub $3,$5
+    mul $5,$6
+    sub $2,$5
+    mov $5,$0
+    mul $5,$2
+    sub $1,28
+    add $3,2
+    add $2,1
+    mul $4,2
+    mov $5,$6
+    add $2,1
+    add $0,$1
+    bin $5,$0
+    mov $6,9
+    add $2,5
+    sub $3,$1
+    sub $2,1
+    add $2,1
+    add $2,4
+    add $4,$5
+    mov $2,7
+    add $5,$6
+    pow $6,$3
+    add $5,8
+    mov $2,$4
+    mov $4,$4
+    mul $2,2
+    sub $0,1
+    add $4,$0
+    div $1,$3
+    sub $3,7
+    mov $2,2
+    mov $3,$5
+    sub $3,2
+    sub $4,1
+    mul $2,$0
+    mul $1,$6
+    mov $4,7
+    add $1,2
+    sub $0,$2
+  lpe
+  div $3,2
+  add $6,1
+  mov $1,$5
+  sub $1,17
+  add $8,$1
+lpe
+mov $1,$8

@@ -1,0 +1,111 @@
+; A206909: Position of 2n+cos(n) when the sets {2k+cos(k)} and {2k+sin(k)} are jointly ranked.
+; 1,3,5,8,10,12,14,15,17,19,22,24,26,27,29,31,34,36,38,39,41,43,46,48,50,51,53,55,57,60,62,64,65,67,69,72,74,76,77,79,81,84,86,88,89,91,93,96,98,100,102,103,105,107,110,112,114,115,117,119,122,124,126
+
+mov $11,$0
+mov $3,2
+mov $1,$3
+sub $3,1
+mov $10,3
+mov $2,$10
+mov $9,1
+mov $4,$0
+mov $1,2
+add $3,$10
+mov $6,4
+mov $7,$9
+sub $2,1
+mov $6,1
+mov $5,$2
+pow $10,6
+mov $4,$0
+sub $4,$10
+pow $7,$9
+sub $1,$9
+mov $8,$0
+add $0,$7
+add $10,5
+pow $9,$6
+add $1,$0
+mov $10,1
+add $8,$7
+mov $5,$7
+mov $1,$8
+mov $7,2
+mov $7,$9
+add $4,10
+add $3,9
+add $9,$8
+sub $4,$6
+mul $5,2
+mul $2,$3
+add $3,$0
+sub $9,$3
+mov $7,$10
+sub $4,$5
+sub $8,1
+mov $8,21
+mul $4,$1
+mov $7,$6
+mov $3,3
+mov $1,$2
+sub $9,1
+sub $2,4
+mov $5,$0
+add $9,$5
+add $6,$10
+sub $4,$3
+sub $8,$10
+mov $9,3
+lpb $0,1
+  add $9,$7
+  add $10,3
+  sub $7,$4
+  add $4,$1
+  sub $8,1
+  add $0,$4
+  add $9,4
+  add $7,1
+  sub $0,1
+  sub $4,$10
+lpe
+add $6,2
+sub $4,$3
+mov $5,1
+sub $0,1
+div $9,$9
+mov $1,9
+div $4,$2
+mul $3,$2
+add $6,1
+mul $10,$9
+sub $8,$3
+mov $5,$4
+add $2,$2
+fac $5
+mov $10,14
+add $3,1
+pow $3,10
+sub $7,$1
+add $4,10
+add $6,3
+mov $7,1
+mov $3,$0
+pow $0,2
+add $7,$0
+add $9,$8
+mov $6,1
+sub $7,1
+mov $9,$0
+add $4,$6
+fac $1
+mov $3,12
+sub $1,1
+mov $7,$1
+gcd $4,2
+mov $1,$4
+mov $12,$11
+mov $13,$12
+mul $13,2
+add $1,$13
+mul $12,$11
+mul $12,$11

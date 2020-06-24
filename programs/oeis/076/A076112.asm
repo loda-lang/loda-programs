@@ -1,0 +1,67 @@
+; A076112: Triangle (read by rows) in which the n-th row contains first n terms of n geometric progression with first term 1 and common ratio (n-1).
+; 1,1,2,1,3,9,1,4,16,64,1,5,25,125,625,1,6,36,216,1296,7776,1,7,49,343,2401,16807,117649,1,8,64,512,4096,32768,262144,2097152,1,9,81,729,6561,59049,531441,4782969,43046721,1,10,100,1000,10000,100000,1000000
+
+mov $4,1
+mov $5,20
+add $0,1
+mov $5,1
+mov $1,156
+sub $0,$4
+sub $4,1
+lpb $0,1
+  sub $0,1
+  mov $6,$1
+  mov $2,$0
+  add $1,11
+  gcd $0,$2
+  mov $6,$2
+  sub $0,$5
+  mov $3,2
+  sub $1,2
+  mov $3,12
+  mov $3,$6
+  sub $3,1
+  add $5,1
+  add $1,$6
+  mov $1,$4
+  add $2,$6
+lpe
+add $2,1
+pow $5,$6
+mul $1,$1
+mov $6,$5
+sub $4,1
+mov $1,4
+sub $3,$6
+add $5,$4
+add $0,6
+add $0,2
+add $5,5
+mul $3,$1
+add $0,9
+pow $3,3
+add $0,2
+gcd $5,$5
+mov $3,$5
+div $1,5
+mul $4,$2
+add $6,6
+add $5,$0
+mov $3,$5
+sub $6,1
+div $2,$2
+sub $2,$5
+mov $5,$6
+mul $6,$0
+add $0,$3
+add $3,24
+mov $5,$3
+add $0,$5
+add $4,$4
+add $5,$1
+add $3,$0
+mov $6,$4
+mov $1,$0
+sub $1,93
+div $1,2
+add $1,1

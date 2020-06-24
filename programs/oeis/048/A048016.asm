@@ -1,0 +1,84 @@
+; A048016: Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-2)/3.
+; 0,0,0,0,4,5,6,27,35,44,164,219,285,1000,1364,1819,6187,8567,11627,38759,54263,74612,245156,346103,480699,1562274,2220074,3108104,10015004,14307149,20160074,64512239,92561039,131128139
+
+mov $5,7
+mov $8,$0
+mov $7,$5
+add $0,1
+mov $4,$0
+mov $0,$4
+mov $7,$5
+add $5,1
+mov $6,1
+mov $2,2
+add $5,$0
+mov $3,$8
+add $3,$2
+add $2,$7
+add $5,$8
+mov $0,$3
+lpb $0,1
+  mov $0,$0
+  mov $7,1
+  sub $0,1
+  mov $1,2
+  add $4,2
+  mov $2,5
+  mov $1,$5
+  cmp $5,5
+  sub $4,3
+  add $0,$6
+  mov $1,6
+  sub $8,2
+  mov $5,3
+  sub $1,3
+  mov $6,0
+  add $6,$6
+  add $8,1
+  add $6,1
+  mov $3,$3
+  mov $4,$4
+  mul $0,3
+  sub $4,3
+  add $0,$2
+  mov $7,$0
+  mov $8,$7
+  add $2,$2
+lpe
+sub $3,5
+sub $8,1
+mov $7,2
+mov $2,$2
+div $8,3
+mov $2,$4
+mov $2,$6
+mov $5,$1
+bin $4,$8
+mul $8,$1
+mov $0,1
+mov $6,$3
+sub $0,$8
+sub $8,$7
+mov $3,3
+mov $6,$7
+mov $8,$5
+add $7,$6
+add $4,1
+add $4,$4
+add $5,$8
+sub $5,11
+mov $3,$8
+mul $5,6
+mov $0,$4
+mov $2,1
+sub $5,3
+bin $8,$8
+mov $7,6
+mov $0,3
+sub $5,9
+mov $8,1
+mul $3,5
+mul $8,$1
+mov $1,$4
+sub $1,4
+div $1,2

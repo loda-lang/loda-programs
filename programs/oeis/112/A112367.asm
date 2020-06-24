@@ -1,84 +1,16 @@
 ; A112367: a(n) = A000217(n-k), where k is the largest triangular number less than n.
 ; 0,0,1,0,1,3,0,1,3,6,0,1,3,6,10,0,1,3,6,10,15,0,1,3,6,10,15,21,0,1,3,6,10,15,21,28,0,1,3,6,10,15,21,28,36,0,1,3,6,10,15,21,28,36,45,0,1,3,6,10,15,21,28,36,45,55,0,1,3,6,10
 
-mov $5,$0
-mov $6,3
-mov $8,$5
-sub $8,$8
-add $5,$8
-mov $2,$0
-sub $0,$8
-mov $7,1
-mov $1,$7
 lpb $0,1
-  sub $6,2
-  mul $7,$0
-  add $2,$6
   mov $2,$0
-  pow $6,16
-  sub $7,$2
-  mov $7,0
-  mov $7,1
-  mov $5,$6
   sub $0,1
-  mov $6,$6
-  add $8,1
-  add $7,2
-  mov $7,$0
-  mov $3,$5
-  sub $0,$8
+  add $6,1
+  mov $3,$0
+  sub $0,$6
 lpe
-mul $2,$7
-mov $3,$7
-sub $0,26
-mov $2,$2
+mul $2,$3
 mov $4,$2
-mov $6,$3
-add $8,1
-mov $0,6100
-add $3,7
-add $5,$7
-mov $0,1
-fac $1
-add $0,30
-mov $1,$4
-sub $8,$8
-mov $2,$2
-add $8,$5
-mul $7,5
-sub $1,$0
-sub $6,2
-mov $0,3
-sub $8,1
-sub $0,2
-mov $0,9
-add $3,2
-sub $7,$5
-mov $1,2
-mov $8,1
 mul $4,2
-mov $0,$3
 mov $5,$4
-add $6,3
-add $8,1
-pow $3,2
-add $4,$0
-pow $8,2
-add $2,$3
-div $6,$1
-mov $6,2
 mov $1,$5
-div $8,$0
-mov $2,$4
-mov $8,$7
-sub $7,$8
-sub $0,$1
-mov $6,$3
-mov $0,$7
-add $3,$8
-mov $0,2
-add $6,$0
-sub $2,$5
-mov $4,$0
-mov $5,$2
 div $1,4

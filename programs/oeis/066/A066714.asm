@@ -1,0 +1,112 @@
+; A066714: Coordination sequence for ReO_3 net with respect to Re atom.
+; 1,6,6,30,18,78,38,150,66,246,102,366,146,510,198,678,258,870,326,1086,402,1326,486,1590,578,1878,678,2190,786,2526,902,2886,1026,3270,1158,3678,1298,4110,1446,4566,1602,5046,1766,5550,1938,6078,2118,6630,2306
+
+mov $11,$0
+mov $10,2
+mov $6,$0
+mov $6,$6
+sub $6,1
+mov $3,2
+mov $2,$10
+mov $1,$10
+mov $8,$10
+mov $5,3
+mov $2,1
+mov $4,$1
+mov $3,$8
+mov $8,2
+mov $7,$6
+mov $3,2
+mov $1,3
+add $1,$2
+add $2,$6
+mul $7,$4
+add $1,9
+mod $0,2
+mov $4,$2
+sub $8,1
+mov $9,$4
+sub $8,$4
+add $3,$4
+mov $8,$6
+mov $3,$5
+mov $5,1
+mul $4,2
+cmp $7,2
+add $6,$10
+sub $8,4
+add $6,$10
+add $6,$5
+mul $9,$4
+gcd $10,$6
+pow $3,5
+mov $2,2
+lpb $0,1
+  sub $0,1
+  mov $0,1
+  mul $1,$9
+  mov $5,$9
+  mov $8,1
+  add $3,$3
+  sub $5,$9
+  add $8,$7
+  sub $10,5
+  sub $0,6
+  mov $10,$2
+  mul $6,2
+  sub $6,$1
+  mov $7,1
+  add $10,4
+  mov $8,4
+  sub $1,$3
+  mov $4,2
+  sub $9,$6
+  mov $3,$7
+  pow $8,2
+  sub $8,$2
+  mov $10,1
+  mov $10,1
+  sub $5,2
+  sub $5,27
+  add $10,$9
+  add $10,2
+  mov $6,$7
+  mov $7,$8
+  mov $8,$0
+lpe
+add $7,252
+sub $7,$5
+mov $7,$9
+mov $6,$10
+add $1,2
+add $2,4
+add $0,2
+mov $3,2
+sub $5,$1
+mov $4,$1
+mov $7,2
+mov $10,1
+add $8,$8
+add $10,$6
+clr $5,1
+sub $8,6
+add $4,3
+mov $9,31
+sub $0,$1
+mov $4,1
+mov $9,$3
+sub $2,1
+mov $9,1
+mov $8,$1
+sub $4,11
+add $6,1
+add $9,$2
+mov $5,$3
+mov $1,$6
+sub $1,1
+mov $12,$11
+mul $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11
