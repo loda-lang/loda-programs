@@ -1,105 +1,30 @@
 ; A040528: Continued fraction for sqrt(552).
 ; 23,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46,2,46
 
-mov $9,$0
-mov $11,2
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  add $0,$11
+mov $3,$0
+mov $7,2
+lpb $7,1
+  sub $7,1
+  add $0,$7
   sub $0,1
-  mov $8,$0
+  mov $4,$0
   mov $5,$0
-  mov $1,$5
-  gcd $8,2
-  add $5,$8
-  mov $1,$8
+  gcd $4,2
+  add $5,$4
   mul $5,23
-  mov $7,3
-  mov $6,$1
-  mov $3,$8
-  sub $7,$0
-  add $6,$0
-  add $7,$7
-  add $8,22
-  sub $5,$8
-  add $6,$0
-  mov $2,1
-  mov $5,$5
-  mov $3,4
-  mul $1,$3
-  mov $0,1
-  pow $2,5
-  sub $3,$6
-  sub $1,$6
-  lpb $0,1
-    add $2,2
-    mov $0,2
-    mov $2,$2
-    add $7,$0
-    add $6,$8
-    mov $6,$8
-    div $8,$8
-    mov $6,$1
-    mul $0,$3
-    mov $3,$1
-    add $1,$2
-    mov $0,$0
-    add $8,3
-    sub $0,1
-    mov $7,1
-    sub $5,$2
-    mov $4,$1
-    add $3,5
-    mov $5,$1
-    mov $2,$4
-    mul $4,$3
-    mov $6,$2
-    add $3,$1
-    cmp $1,10
-    add $6,1
-    mov $7,$6
-    mul $8,2
-    mov $3,$0
-    add $2,$4
-    add $0,2
-    mov $6,$5
-    add $3,1
-    mov $4,6
-    mov $3,3
-    sub $1,$2
-    add $6,22
-    mul $6,$6
-    add $6,$2
-    mov $0,$8
-    mov $4,$3
-    mul $3,$3
-    mul $3,$4
-    mul $8,7
-    add $4,$1
-    mov $8,7
-    add $2,$4
-    add $3,1
-    sub $7,1
-    mov $4,3
-    pow $5,3
-    add $8,$0
-    pow $6,$1
-    div $8,$2
-    sub $8,$6
-  lpe
+  add $4,22
+  sub $5,$4
   mov $1,$5
-  mov $12,$11
-  lpb $12,1
-    mov $10,$1
-    sub $12,1
+  mov $6,$7
+  lpb $6,1
+    mov $2,$1
+    sub $6,1
   lpe
 lpe
-lpb $9,1
-  sub $10,$1
-  mov $9,0
+lpb $3,1
+  sub $2,$1
+  mov $3,0
 lpe
-mov $1,$10
+mov $1,$2
 sub $1,1
 add $1,2

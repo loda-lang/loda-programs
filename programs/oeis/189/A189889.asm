@@ -1,0 +1,104 @@
+; A189889: Maximum number of nonattacking kings on an n X n toroidal board.
+; 1,1,1,4,5,9,10,16,18,25,27,36,39,49,52,64,68,81,85,100,105,121,126,144,150,169,175,196,203,225,232,256,264,289,297,324,333,361,370,400,410,441,451,484,495,529,540,576,588,625
+
+mov $9,$0
+mov $1,2
+add $0,1
+mov $3,$0
+bin $9,$0
+mov $1,$1
+div $0,2
+mov $10,5
+mul $0,$3
+lpb $0,1
+  mov $9,4
+  sub $9,$0
+  sub $1,$1
+  mov $6,5
+  mov $1,$1
+  sub $10,1
+  mov $5,$9
+  add $6,1
+  mov $8,2
+  mov $2,1
+  add $9,$9
+  mul $5,2
+  mov $3,$0
+  sub $3,1
+  mov $4,$3
+  mov $8,2
+  add $8,4
+  add $10,$6
+  mov $7,1
+  add $8,1
+  mov $6,3
+  mov $7,1342
+  add $8,5
+  mul $8,$7
+  mov $5,$9
+  add $6,40
+  sub $7,$3
+  sub $10,18
+  sub $1,$6
+  add $6,$1
+  add $9,3
+  add $0,$6
+  sub $10,1
+  sub $0,1
+  mov $6,2
+  mov $5,1
+lpe
+add $4,$3
+mov $1,$6
+mov $5,$8
+add $8,2
+mov $4,$0
+mov $4,$3
+mul $10,3
+add $6,$0
+mov $2,1
+mov $8,$6
+sub $10,$6
+mov $1,$2
+sub $2,1
+sub $3,$5
+add $7,$10
+mov $6,$6
+mov $3,$3
+sub $4,$5
+div $6,2
+mov $2,1
+mov $4,4
+add $3,$5
+mod $7,4
+sub $4,$7
+add $7,$2
+add $1,1
+mov $3,1
+mov $10,8
+mov $10,$6
+mov $7,$2
+sub $10,1
+add $10,$2
+sub $9,$0
+div $3,$7
+add $8,$0
+mov $9,$4
+add $0,$6
+mov $8,$3
+add $3,$2
+add $0,1
+mov $9,1
+mov $2,1
+mov $5,8
+add $4,$6
+add $4,3
+mov $9,$0
+add $4,$7
+mul $2,$1
+sub $2,$6
+mov $6,6
+sub $1,$1
+mov $2,$10
+mov $5,$0
+mov $1,$2
