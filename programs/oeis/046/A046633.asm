@@ -1,106 +1,21 @@
 ; A046633: Number of cubic residues mod 5^n.
 ; 1,5,21,101,505,2521,12601,63005,315021,1575101,7875505,39377521,196887601,984438005,4922190021,24610950101,123054750505,615273752521,3076368762601,15381843813005,76909219065021,384546095325101
 
-mov $9,2
-mov $7,5
-mov $2,2
-mov $6,$2
+mov $3,5
 add $0,2
-sub $2,$6
 mov $2,$0
-mov $5,$7
 lpb $2,1
-  pow $7,$2
-  sub $9,$6
-  add $6,1
-  mov $1,10
-  mov $3,1
-  mov $0,$7
-  lpb $4,1
-    mov $8,$2
-    mul $2,5
-    mov $8,$6
-    sub $8,1
-    mov $4,4
-    bin $2,$2
-    sub $4,$2
-    mov $1,5
-  lpe
-  mov $4,$5
-  mov $5,$6
-  mov $4,6
-  mov $6,3
-  mov $6,1
-  mov $8,8
-  mov $3,$9
-  mov $2,4
-  mov $2,$7
+  pow $3,$2
+  add $4,1
+  mov $0,$3
+  mov $5,$4
   lpb $5,1
     sub $5,$2
-    mov $8,4
-    add $7,16
-    sub $8,$1
-    add $6,$3
-    sub $4,1
-    sub $8,2
-    mov $10,$3
     mov $2,6
-    add $10,$7
     sub $2,8
-    mov $8,1
-    mov $6,3
-    mul $3,16
-    mov $3,$4
-    add $3,6
   lpe
-  add $2,1
-  sub $10,$2
-  lpb $6,1
-    sub $7,$9
-    bin $8,$3
-    sub $6,$2
-    mov $6,$6
-    mul $8,2
-    mov $4,2
-    mov $10,1
-    mov $7,$6
-  lpe
-  mov $5,$3
-  add $10,$0
-  add $1,1
-  add $6,$4
-  mov $9,3
-  add $7,1
-  sub $2,1
-  add $7,$8
-  add $5,2
-  bin $3,3
-  add $2,$8
-  add $8,1
-  mov $8,1
-  mov $6,3
-  sub $10,1
   div $0,31
 lpe
-mov $7,3
-mov $5,5
-mov $5,$2
-mov $8,$7
-sub $4,6
-add $2,$8
-sub $8,$5
-mod $10,2
-mov $5,1
-mov $8,1
-add $1,1
-sub $1,1
-add $1,$10
-add $7,1
-sub $5,14
-add $1,1
-sub $9,$1
-add $6,$3
-mul $4,2
 mov $1,$0
 div $1,4
 mul $1,4

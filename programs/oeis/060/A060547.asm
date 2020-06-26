@@ -1,0 +1,105 @@
+; A060547: a(n) is the number of patterns, invariant under 120 degree rotations, that may appear in a top-down equilateral triangular arrangement of closely packed black and white cells satisfying the local matching rule of Pascal's triangle modulo 2, where n is the number of cells in each edge of the arrangement.
+; 2,1,2,4,2,4,8,4,8,16,8,16,32,16,32,64,32,64,128,64,128,256,128,256,512,256,512,1024,512,1024,2048,1024,2048,4096,2048,4096,8192,4096,8192,16384,8192,16384,32768,16384,32768,65536,32768,65536,131072
+
+mov $3,2
+mov $2,5
+mov $5,1
+mov $1,1
+mov $7,2
+add $3,2
+mov $9,2
+mov $10,3
+mov $8,15
+mul $3,2
+mov $4,$1
+add $0,35
+mov $6,$8
+mov $6,1
+mov $9,$3
+mul $4,2
+mov $5,$7
+lpb $0,1
+  mul $5,2
+  add $1,$1
+  mov $2,2
+  mov $3,1
+  mov $6,3
+  mov $8,$3
+  add $8,7
+  sub $6,$3
+  mul $4,2
+  add $7,$2
+  mov $5,$3
+  mul $6,$7
+  mul $5,$10
+  mov $1,1
+  mov $9,$1
+  sub $8,1
+  add $2,$6
+  mov $5,$0
+  add $1,$6
+  add $2,$5
+  add $7,3
+  add $2,1
+  mov $6,2
+  mov $2,17
+  pow $9,$0
+  add $9,1
+  sub $9,$5
+  mul $7,3
+  sub $8,$7
+  mov $7,$7
+  sub $7,$7
+  mul $1,$8
+  div $7,2
+  pow $6,$10
+  mov $1,1
+  sub $0,1
+  add $1,$7
+  sub $7,$2
+  add $2,2
+  sub $5,$2
+  mov $8,4
+  mov $5,$5
+  add $0,$5
+  mov $2,1
+  mul $9,2
+  add $5,3
+  add $8,$4
+  mov $1,$1
+  add $1,$9
+  sub $6,6
+  mul $8,7
+  div $7,$2
+  div $6,2
+  gcd $0,2
+  sub $4,1
+  mov $9,$1
+  sub $6,1
+  mul $2,2
+  mul $1,2
+  add $8,$9
+  mov $2,2
+  mul $0,6
+  add $8,$2
+  sub $4,3
+  add $2,$10
+  mov $7,$1
+  mov $4,3
+  mul $4,2
+  add $4,$1
+  mov $4,$1
+  add $5,1
+  mov $4,1
+  add $10,$3
+  add $2,$7
+  add $0,$5
+  mov $5,$10
+  mul $8,2
+lpe
+add $5,5
+add $8,$9
+mov $1,$6
+sub $1,252
+div $1,256
+add $1,1

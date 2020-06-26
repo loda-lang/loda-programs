@@ -1,0 +1,86 @@
+; A175656: Eight bishops and one elephant on a 3 X 3 chessboard. G.f.: (1-3*x^2)/(1-3*x+4*x^3).
+; 1,3,6,14,30,66,142,306,654,1394,2958,6258,13198,27762,58254,121970,254862,531570,1106830,2301042,4776846,9903218,20505486,42409074,87614350,180821106,372827022,768023666,1580786574,3251051634
+
+mov $1,$0
+mov $2,$0
+mov $5,3
+lpb $2,1
+  mov $4,5
+  lpb $4,1
+    div $5,$4
+    mov $7,$2
+    mov $6,$1
+    sub $7,8
+    mov $8,1
+    div $2,$4
+    sub $4,$5
+    mov $0,$5
+    mov $0,6
+    mov $8,$8
+    mov $1,$1
+    add $0,5
+    add $0,6
+    sub $2,1
+    add $8,3
+    mov $3,1
+  lpe
+  mov $3,1
+  add $1,6
+  mov $0,$2
+  add $3,3
+  lpb $5,1
+    mov $2,$0
+    add $7,$5
+    add $6,$5
+    sub $5,$5
+  lpe
+  mov $6,1
+  mov $4,$2
+  mov $4,25
+  mov $2,$2
+  lpb $6,1
+    mov $6,$4
+    mov $8,20
+    mul $0,$0
+    mov $7,$6
+    mul $1,$2
+    mov $5,1
+    mov $6,1
+    mov $8,$5
+    sub $6,$5
+    sub $1,1
+    mul $1,$7
+    mul $7,2
+    sub $0,7
+    add $6,1
+    add $4,$2
+    mul $6,$0
+    mov $3,2
+  lpe
+  sub $2,1
+  add $0,$7
+  mov $5,$0
+  mov $7,1
+  mov $3,8
+  mov $6,$1
+  sub $2,$7
+  add $1,$6
+  mov $7,8
+  mov $5,1
+  add $5,1
+  mul $1,2
+  mov $7,1
+  mov $5,$8
+  add $5,1
+  sub $1,2
+  add $3,$4
+lpe
+add $7,$2
+add $1,$6
+mul $6,$8
+mov $5,$5
+add $4,5
+sub $5,10
+mov $1,$6
+div $1,75
+add $1,1

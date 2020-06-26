@@ -1,0 +1,106 @@
+; A050297: Number of scalars which can be constructed from the Riemann tensor and metric tensor in n dimensions.
+; 0,1,3,14,40,90,175,308,504,780,1155,1650,2288,3094,4095,5320,6800,8568,10659,13110,15960,19250,23023,27324,32200,37700,43875,50778,58464,66990,76415,86800,98208,110704,124355,139230,155400,172938
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $2,$0
+    lpb $2,1
+      mov $7,$2
+      mov $3,$7
+      mov $7,0
+      mov $0,$0
+      lpb $4,1
+        mov $3,$3
+        mov $8,$2
+        mov $6,$7
+        mov $4,$3
+        mov $6,$0
+        mov $2,$4
+        sub $0,$0
+        mov $4,$6
+        mov $6,$0
+        add $8,1
+        pow $2,$0
+        mov $6,4
+        add $0,$2
+        mov $3,9
+        mov $7,2
+        mov $8,$7
+        add $6,$8
+        mov $1,$2
+        div $3,2
+        log $2,$0
+        sub $6,$1
+      lpe
+      mov $8,1
+      mov $6,$8
+      pow $7,2
+      mul $2,$0
+      mov $1,18
+      mov $5,4
+      sub $3,$4
+      add $8,4
+      add $4,$7
+      mov $6,15
+      lpb $5,1
+        sub $2,2
+        mov $7,$2
+        mov $4,$0
+        sub $5,$3
+        add $6,$3
+        mov $1,$0
+        sub $1,1
+        mov $3,1
+        sub $1,$5
+        sub $0,$1
+        add $7,22
+        sub $5,1
+        mov $4,$6
+        mov $8,1
+        add $6,8
+        add $0,$2
+        mov $8,$7
+      lpe
+      sub $6,2
+      sub $1,$3
+      lpb $6,1
+        sub $4,$7
+        sub $6,$3
+        add $6,3
+      lpe
+      sub $1,$7
+      div $6,2
+      sub $5,$7
+      add $8,42
+      mov $4,$0
+      sub $2,1
+      sub $1,5
+      mul $2,21
+      mul $7,$2
+      sub $2,$2
+      mov $8,1
+      mul $8,$5
+      mov $4,4
+      mov $5,1
+    lpe
+    mov $1,$0
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13

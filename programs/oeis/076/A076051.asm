@@ -1,0 +1,93 @@
+; A076051: Sum of product of odd numbers <= n and the product of even numbers <= n.
+; 2,3,5,11,23,63,153,489,1329,4785,14235,56475,181215,780255,2672145,12348945,44781345,220253985,840523635,4370620275,17465201775,95498916975,397983749625,2278224696825,9867844134225,58917607974225
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $7,4
+  mov $5,$0
+  mov $6,$5
+  mov $4,$6
+  mov $1,3
+  mov $8,1
+  log $7,3
+  mul $7,$7
+  mov $4,$7
+  mov $3,1
+  mov $4,$0
+  mov $2,$4
+  mul $2,2
+  add $8,$1
+  add $6,$7
+  mov $6,14
+  add $2,2
+  mov $2,$2
+  add $1,$1
+  mov $6,16
+  add $2,1
+  mov $7,$8
+  mov $6,$3
+  cmp $6,$4
+  sub $5,$5
+  log $3,$2
+  mov $4,1
+  add $6,$2
+  mul $3,2
+  add $4,$6
+  mov $6,$1
+  sub $6,2
+  mov $4,1
+  add $1,1
+  sub $2,6
+  add $2,5
+  mov $3,1
+  mul $3,4
+  add $8,9
+  mov $2,$0
+  add $2,$0
+  sub $8,14
+  mov $5,$0
+  mov $3,$2
+  lpb $0,1
+    mov $7,7
+    sub $1,2
+    mul $4,$2
+    mul $3,5
+    mul $7,2
+    mov $3,$8
+    sub $0,1
+    add $7,$3
+    sub $1,$2
+    add $2,$6
+    mul $7,$2
+    mov $5,$0
+    mov $6,$4
+    mov $2,$5
+    mov $5,2
+    sub $0,1
+    mov $1,$6
+    add $5,$8
+    mov $7,$8
+  lpe
+  mov $3,$5
+  div $1,4
+  add $1,$3
+  mov $4,1
+  add $8,5
+  sub $8,$0
+  bin $5,$0
+  sub $4,$1
+  fac $8
+  mov $4,1
+  mov $1,$6
+  sub $1,2
+  div $1,2
+  add $1,1
+  add $10,$1
+lpe
+mov $1,$10
