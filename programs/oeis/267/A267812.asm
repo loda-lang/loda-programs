@@ -1,0 +1,64 @@
+; A267812: Decimal representation of the n-th iteration of the "Rule 217" elementary cellular automaton starting with a single ON (black) cell.
+; 1,1,27,119,495,2015,8127,32639,130815,523775,2096127,8386559,33550335,134209535,536854527,2147450879,8589869055,34359607295,137438691327,549755289599,2199022206975,8796090925055,35184367894527,140737479966719,562949936644095
+
+mov $2,1
+mov $2,1
+add $2,$2
+mov $6,1
+mov $4,6
+mov $5,$6
+add $4,1
+sub $0,$6
+lpb $0,1
+  mov $1,$0
+  sub $0,$4
+  mov $0,$1
+  mul $1,$6
+  add $4,$0
+  add $1,1
+  mov $5,2
+  pow $5,$1
+  add $2,1
+  mov $2,$1
+  mov $1,1
+  mov $0,$4
+  mov $2,2
+  add $2,$4
+  sub $1,1
+  sub $5,$1
+  sub $2,2
+  mov $3,$4
+  log $6,$0
+  div $2,$2
+  sub $0,1
+  mov $2,$2
+  add $3,$1
+  mov $1,$2
+  add $2,$4
+  mov $4,$5
+  log $0,$0
+  mov $2,1
+  mov $6,$5
+  sub $0,$2
+  mov $3,1
+  div $3,2
+  add $1,$2
+  mul $5,$6
+  add $5,$5
+  sub $5,$4
+  sub $5,1
+  add $1,$6
+lpe
+mov $2,8
+mov $1,5
+mov $6,1
+mov $6,20
+add $4,1
+mul $0,2
+add $1,1
+mov $3,1
+sub $2,7
+add $6,$3
+mov $6,8
+add $3,3
+mov $1,$5

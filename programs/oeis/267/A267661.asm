@@ -1,105 +1,23 @@
 ; A267661: Number of nX2 0..1 arrays with every repeated value in every row unequal to the previous repeated value, and in every column equal to the previous repeated value, and new values introduced in row-major sequential order.
-; 2,8,32,98,288,800,2178,5832,15488,40898,107648,282752,741762,1944392,5094432,13343778,34944800,91503392,239586050,627288200,1642332672,4299797378,11257201152,29472035328,77159275778,202006392200
+; 2,8,32,98,288,800,2178,5832,15488,40898,107648,282752,741762,1944392,5094432,13343778,34944800,91503392,239586050,627288200,1642332672,4299797378,11257201152,29472035328,77159275778,202006392200,528860871968,1384577795042,3624875055648,9490051485728,24845286057858,65045817457992,170292183742592,445830761966402,1167200147779712
 
 mov $4,1
-mov $10,$4
-mov $2,1
-mov $1,1
-mov $9,$1
+mov $7,1
 lpb $0,1
-  mov $6,1
-  mov $8,5
-  add $1,3
-  mov $5,$9
-  mov $1,$0
-  mov $7,4
-  mov $3,1
-  add $1,2
-  add $9,$4
-  mov $7,1
-  clr $8,$7
-  mov $3,2
-  sub $1,96
-  mov $8,1
-  sub $2,2
-  mov $2,$3
-  add $2,$10
-  add $7,$1
-  mov $8,1
+  mov $5,$7
+  add $7,$4
   add $5,1
-  sub $4,$1
-  mov $6,144
   mov $4,$5
-  mov $5,2
-  add $8,$9
-  div $8,4
-  mov $8,7
-  mov $3,1
-  sub $6,$9
-  add $8,1
-  mov $2,2
   sub $0,1
-  mov $3,$8
 lpe
-sub $10,1
-mov $0,$10
-mov $8,$8
-mov $8,7
-sub $6,$5
-mov $3,6
-add $2,1
-sub $3,$7
-add $0,$10
-mov $5,$9
-mov $9,$5
-pow $2,$2
-mul $1,2
-sub $0,3
-mov $6,1
-mov $1,1
+mov $5,$7
 mul $5,2
-sub $5,$10
-mov $7,1
-mov $0,$3
-add $0,$3
-add $7,2
 pow $5,2
-add $3,$10
-clr $1,$1
 mov $3,$5
-mul $9,$7
-mov $8,2
-mov $5,$5
-mov $1,$2
-mov $7,1
-add $10,$3
 add $3,3
-pow $6,$3
-div $10,$8
 mov $6,$3
 add $6,29
-sub $1,$1
-mov $7,1
-sub $9,1
-add $4,1
-add $2,1
-mov $10,15
-add $1,$2
-mov $4,$9
-add $7,2
-mov $7,$3
-mov $9,$4
-sub $0,$5
-mul $10,$7
 mov $2,$6
-add $8,1
-add $3,$1
-mov $0,1
-sub $6,$7
-add $3,$8
-add $8,2
-sub $5,$5
-mov $5,$9
 mov $1,$2
 sub $1,36
 div $1,4

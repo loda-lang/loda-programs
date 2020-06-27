@@ -1,0 +1,98 @@
+; A062880: Zero together with numbers which can be written as a sum of distinct odd powers of 2.
+; 0,2,8,10,32,34,40,42,128,130,136,138,160,162,168,170,512,514,520,522,544,546,552,554,640,642,648,650,672,674,680,682,2048,2050,2056,2058,2080,2082,2088,2090,2176,2178,2184,2186,2208,2210,2216,2218,2560,2562
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $4,$0
+  mov $6,$0
+  mov $0,$4
+  add $0,27
+  add $0,120
+  gcd $4,32
+  mov $0,$6
+  mov $7,1
+  add $6,4
+  mov $5,$4
+  mov $1,$4
+  lpb $0,1
+    add $7,$1
+    mov $5,$0
+    mov $2,$5
+    mov $2,$4
+    sub $0,$0
+    mov $5,$0
+    mov $6,$2
+    sub $2,19
+    mov $3,$4
+    sub $2,1
+    mov $8,$5
+    sub $3,$3
+    mov $4,$8
+    add $7,$4
+    mov $2,$6
+    add $1,$1
+    add $0,$5
+    sub $4,3
+    add $7,3
+    div $8,2
+    mov $4,2
+    mul $7,$3
+    add $3,$4
+    add $6,2
+    sub $4,$5
+    sub $5,$2
+    mov $4,$7
+    fac $4
+    pow $2,$3
+    mov $5,2
+    add $4,$6
+    add $2,1
+    sub $0,1
+  lpe
+  mov $2,$2
+  mul $1,2
+  clr $4,2
+  mul $4,$2
+  div $5,7
+  add $1,$4
+  mov $8,2
+  mov $6,$5
+  add $8,$8
+  div $0,$1
+  mul $6,3
+  add $4,1
+  add $6,$2
+  sub $7,$1
+  mov $1,$5
+  mov $7,$5
+  mov $1,$6
+  mov $8,9
+  mov $0,16
+  mul $2,$5
+  add $6,$6
+  add $4,$8
+  mov $3,1
+  add $1,$0
+  sub $6,1
+  bin $2,2
+  mov $8,$8
+  log $0,$0
+  add $6,4
+  mov $1,$4
+  add $8,5
+  add $8,1
+  sub $3,1
+  mul $7,2
+  mov $1,$6
+  sub $1,4
+  div $1,3
+  mul $1,2
+  add $10,$1
+lpe
+mov $1,$10

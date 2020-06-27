@@ -1,0 +1,99 @@
+; A006228: Expansion of exp(arcsin(x)).
+; 1,1,1,2,5,20,85,520,3145,26000,204425,2132000,20646925,260104000,2993804125,44217680000,589779412625,9993195680000,151573309044625,2898026747200000
+
+mov $9,2
+mov $7,1
+mov $2,8
+add $9,$9
+mov $1,2
+mov $6,$7
+add $9,6
+mov $7,$7
+sub $9,$9
+add $6,$6
+mov $6,$2
+add $7,2
+mov $8,$7
+mov $1,$2
+mov $3,$1
+mov $1,$2
+div $1,6
+mov $10,1
+add $2,1
+mul $3,12
+mov $4,2
+sub $8,1
+mov $10,4
+mov $9,1
+add $0,5
+mov $4,1
+log $2,$2
+add $7,1
+mov $9,3
+mul $3,6
+sub $8,1
+mov $5,$1
+sub $5,3
+add $7,2
+add $7,1
+mov $9,1
+add $5,$5
+mov $10,30
+mul $5,2
+add $6,1
+sub $5,$2
+lpb $0,1
+  sub $3,1
+  sub $0,1
+  mov $9,$1
+  add $9,1
+  mov $10,1
+  mov $8,$6
+  add $5,11
+  add $5,3
+  mul $5,1318
+  mov $2,$7
+  bin $1,2
+  sub $0,6
+  div $1,2
+  mov $5,1
+  sub $2,$5
+  mov $7,5
+  sub $8,$3
+  mov $2,$1
+  sub $10,2
+  mov $8,$1
+  sub $2,$6
+  add $9,$1
+  mul $5,$0
+  mov $0,$5
+  mov $2,$8
+  div $8,2
+  mov $6,5
+  sub $8,8
+  mul $5,$5
+  add $6,4
+  add $9,$10
+  sub $2,$6
+  mov $1,1
+  mov $3,$6
+  mov $10,$5
+  fac $9
+  add $2,1
+  mov $8,$6
+  sub $6,$9
+  sub $9,1
+  add $2,1
+  add $10,2
+  add $9,10
+  add $8,2
+  mov $2,$5
+  mul $5,$4
+  mov $8,$10
+  add $4,$5
+  mov $6,$5
+  add $0,5
+lpe
+mov $0,1
+sub $8,$3
+mov $1,$4

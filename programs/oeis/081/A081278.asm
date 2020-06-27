@@ -1,0 +1,86 @@
+; A081278: Binomial transform of Chebyshev polynomial coefficients A001793.
+; 1,6,29,126,513,1998,7533,27702,99873,354294,1240029,4290894,14703201,49955454,168466797,564390342,1879706817,6227425638,20533285917,67411165086,220442258241,718277586606,2332658764269,7552375012566
+
+mov $6,2
+add $6,$0
+mov $3,$0
+mov $1,$6
+mov $3,$0
+mov $5,1
+mov $6,2
+mov $2,$6
+mov $4,12
+sub $6,7
+sub $2,$5
+mov $0,$1
+mov $4,26
+mov $5,1
+mov $7,$6
+add $1,$0
+mov $6,7
+mov $7,1
+mov $4,2
+mov $2,17
+sub $6,1
+mov $2,$6
+add $5,2
+add $7,$0
+add $0,4
+add $7,1
+mul $1,$0
+sub $3,$0
+lpb $0,1
+  sub $1,$2
+  mov $8,$6
+  sub $2,1
+  add $8,2
+  add $4,4
+  mov $8,21
+  div $5,$7
+  mul $1,3
+  add $5,3
+  mov $7,492
+  sub $0,1
+  mul $3,19
+  add $2,$7
+  mov $2,4
+  pow $8,5
+  sub $5,$6
+  sub $4,$8
+  mov $8,1
+  add $7,1
+  sub $2,$4
+  mov $7,$3
+  mov $7,1
+  sub $6,1
+  mov $5,$2
+  mul $7,$7
+  mov $5,$8
+  sub $2,$0
+  sub $3,$6
+lpe
+add $8,3
+mov $5,$4
+mov $8,$7
+add $1,6
+mov $3,6
+mov $2,$0
+mov $6,1
+add $4,1
+add $4,1
+add $2,$7
+mov $8,7
+add $0,$8
+cmp $2,$3
+add $8,4
+sub $6,4
+sub $5,$7
+add $8,$0
+sub $7,$3
+mov $5,10100
+mov $7,4
+log $3,$0
+add $5,1
+sub $1,13074
+div $1,13122
+add $1,1
