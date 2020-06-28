@@ -1,0 +1,124 @@
+; A040840: Continued fraction for sqrt(870).
+; 29,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58,2,58
+
+mov $11,$0
+mov $13,2
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  add $0,$13
+  sub $0,1
+  mov $1,$0
+  mov $4,1
+  mov $3,3
+  sub $0,$0
+  div $1,2
+  mov $2,27
+  mov $9,$3
+  mov $8,1
+  mov $7,8
+  mov $10,$1
+  mul $10,56
+  add $3,2
+  add $4,$4
+  add $1,6
+  sub $3,2
+  sub $7,$8
+  pow $7,11
+  mov $1,9
+  add $4,2
+  mov $5,$7
+  mul $3,4
+  bin $0,$3
+  mov $0,$2
+  mov $6,1
+  mov $0,$0
+  add $2,$10
+  mov $7,1
+  mov $0,321
+  mul $9,2
+  log $0,5
+  sub $5,1
+  lpb $0,1
+    mov $7,1
+    mov $6,$0
+    div $6,$5
+    sub $7,$6
+    mov $0,$2
+    add $8,2
+    mul $3,2
+    add $10,$0
+    add $4,$8
+    add $3,1
+    mov $10,$5
+    mov $9,$4
+    sub $2,$2
+    mul $4,3
+    add $0,$3
+    sub $0,1
+    mov $6,3
+    mov $5,5
+    mod $8,3
+    sub $2,1
+    mov $3,7
+    mov $0,1
+    add $1,$8
+    sub $6,1
+    mul $1,$1
+    sub $9,$1
+    div $8,$1
+    add $5,1
+    mov $5,$7
+    add $5,$3
+    sub $4,$5
+    add $1,$9
+    mov $6,2
+    add $1,6
+    add $6,$8
+    mov $9,1
+    mul $9,2
+    mov $7,$9
+    mov $1,$4
+    sub $10,1
+    add $5,$2
+    mul $3,$4
+    mov $1,$1
+    add $1,$8
+    sub $8,$10
+    add $8,$1
+    add $1,$0
+    add $10,$4
+    cmp $0,$10
+    mov $6,$8
+    mov $4,$10
+    mul $7,$0
+    pow $4,2
+    add $5,$9
+    mov $0,5
+    mov $7,2
+    div $4,2
+    sub $4,$5
+    mov $3,7
+    mov $8,$0
+    mov $4,6
+    mul $8,7
+    fac $0
+  lpe
+  add $5,3
+  sub $3,5
+  sub $3,6
+  mov $0,1
+  mov $1,$2
+  mov $14,$13
+  lpb $14,1
+    mov $12,$1
+    sub $14,1
+  lpe
+lpe
+lpb $11,1
+  sub $12,$1
+  mov $11,0
+lpe
+mov $1,$12
+add $1,2

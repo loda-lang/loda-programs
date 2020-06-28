@@ -1,102 +1,20 @@
 ; A262473: Number of (3+1) X (n+1) 0..1 arrays with each row divisible by 3 and each column divisible by 5, read as a binary number with top and left being the most significant bits.
 ; 4,9,36,121,484,1849,7396,29241,116964,466489,1865956,7458361,29833444,119311929,477247716,1908903481,7635613924,30542106169,122168424676,488672300601,1954689202404,7818751217209,31275004868836,125099997105721,500399988422884
 
-mov $3,3
-add $0,$3
-mov $3,1
-mov $4,29
+add $0,3
 mov $1,1
-div $4,2
-mov $4,$3
-mov $2,$3
+mov $2,1
 lpb $0,1
-  mov $4,1
-  mov $9,$1
-  add $9,2
-  mov $10,$4
-  mov $4,$9
-  mov $8,1
-  mov $6,$10
+  mov $5,$1
+  add $5,2
+  mov $4,$5
   mul $1,2
   mov $3,$2
-  sub $6,1
-  mov $8,6
-  mov $2,$3
-  mov $7,5
-  sub $10,1
   sub $0,1
-  mov $6,6
-  div $8,$3
-  add $6,9
   add $3,2
 lpe
-sub $7,2
-mov $7,1
-sub $10,$3
 div $4,$3
-mul $9,2
 pow $4,2
-sub $8,1
-mov $5,6
-div $8,2
-mov $6,$6
-mov $10,$7
-mov $10,$8
-gcd $0,$6
-sub $10,5
-sub $10,$9
-mov $9,1
-mov $5,$0
-mov $7,492
-mov $0,$3
-sub $5,$4
-add $7,63
-sub $1,1
-add $1,1
-mul $7,$4
-add $2,1
-mov $3,$6
-add $4,$10
-add $10,6
-sub $7,$9
-sub $8,$3
-mov $0,$6
-mov $10,1
-fac $8
-mov $5,2
-mov $2,9
-sub $10,1
-bin $9,$6
-sub $5,$6
-mul $2,4
-mul $9,2
 mov $7,$4
-sub $8,$9
-sub $5,1
-mov $9,2
-log $2,4
-sub $0,2
-sub $8,3
-mov $5,1
-mov $8,$5
-mov $8,$0
-mov $5,1
-mov $10,1
-add $4,3
 mov $6,$7
-sub $2,1
-mov $8,$9
-mul $7,3
-mov $7,$0
-mov $9,1
-mov $3,1
-mov $5,$5
-sub $8,$2
-mov $4,$10
-add $0,3
-mov $9,$4
-add $5,1
-add $4,1
-sub $1,3
-mul $5,9
 mov $1,$6

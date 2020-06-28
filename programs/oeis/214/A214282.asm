@@ -1,0 +1,104 @@
+; A214282: Largest Euler characteristic of a downset on an n-dimensional cube.
+; 1,1,1,3,6,10,15,35,70,126,210,462,924,1716,3003,6435,12870,24310,43758,92378,184756,352716,646646,1352078,2704156,5200300,9657700,20058300,40116600,77558760,145422675
+
+mov $2,$0
+mov $9,8
+mov $4,$0
+add $2,1
+mov $10,$2
+mov $0,1
+mov $10,$4
+mov $0,7
+mov $5,3
+div $2,4
+mov $7,3
+mov $1,1
+sub $1,1
+mov $9,1
+mul $5,4
+mov $10,$2
+add $2,$10
+mov $6,$9
+add $9,1
+mov $3,$2
+mov $9,$6
+lpb $0,1
+  mov $7,6
+  mov $7,3
+  mov $8,1
+  add $6,1
+  add $4,$8
+  sub $0,1
+  add $0,1
+  mov $3,2
+  add $3,$10
+  mov $10,$7
+  sub $8,$1
+  sub $8,$1
+  mov $7,29767
+  mov $2,13
+  pow $10,$4
+  add $0,$6
+  mov $3,$6
+  div $3,5
+  mov $4,1
+  mov $2,$3
+  sub $6,$4
+  mov $4,24
+  mov $5,2
+  mov $3,11
+  add $8,1
+  log $6,1
+  mul $3,$3
+  add $6,1
+  mov $2,2
+  sub $5,4
+  pow $8,2
+  sub $1,$9
+  gcd $8,$4
+  add $6,$8
+  mov $2,$7
+  mov $5,1
+  sub $10,$6
+  add $3,4
+  mov $3,$7
+  mul $6,$0
+  add $1,2
+  mov $10,$4
+  add $2,$5
+  mov $3,$6
+  mov $10,$10
+  bin $0,2
+  mov $3,12
+  mov $8,2
+  mov $8,6
+  sub $8,1
+  mov $3,$1
+  mov $1,3
+  mov $0,$2
+  add $6,2
+  div $7,2
+  add $5,2
+  add $0,1
+  add $9,$8
+  add $4,$4
+  sub $10,1
+  add $4,$4
+  mov $3,$1
+  mov $7,$9
+  add $2,$5
+  add $8,1
+lpe
+sub $3,$8
+add $7,5
+add $0,2
+mov $0,1
+mov $7,$2
+bin $4,$3
+sub $10,9
+mov $6,$6
+div $6,2
+add $5,$8
+mov $2,$6
+sub $10,$8
+mov $1,$4

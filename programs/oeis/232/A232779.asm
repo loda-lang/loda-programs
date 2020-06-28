@@ -1,83 +1,11 @@
 ; A232779: Sum of iterated logs; a(n) = 0 if n = 0; otherwise n + a(floor(log2(n)) where log2 is the base-2 logarithm.
 ; 0,1,3,4,7,8,9,10,12,13,14,15,16,17,18,19,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68
 
-mov $2,1
-mov $6,20
-mov $8,$6
-mov $4,9
-mov $1,2
-add $1,$8
-add $2,$6
-sub $4,$0
+mov $1,22
 lpb $0,1
-  mul $2,$4
-  add $4,2
-  mov $7,6
-  mul $8,$0
-  add $6,4
-  mul $7,$6
-  sub $6,1
-  mov $6,$0
-  sub $7,8
-  sub $8,$2
-  add $6,2
-  mov $6,$2
   sub $0,1
-  mov $7,$1
-  mov $1,$1
-  mov $6,1
-  mov $5,5
-  mov $5,$0
-  sub $2,2
-  mov $5,$0
   add $0,1
-  mov $3,1
-  mov $2,$7
-  add $2,$4
-  mov $6,8
-  mul $4,$4
-  add $6,1
-  sub $8,4
-  mov $2,$6
   add $1,$0
-  add $5,$0
-  log $2,3
-  mov $3,2
-  mov $8,2
-  mul $2,$3
   log $0,2
-  add $7,17
 lpe
-bin $8,$4
-add $2,$2
-sub $6,$6
-mov $7,1
-sub $0,$3
-div $8,$4
-add $5,$0
-mov $2,0
-div $3,3
-mov $7,401
-mov $7,$8
-mov $8,3
-mov $8,1
-mov $8,2
-sub $0,$2
-mov $0,1
-mov $2,7
-add $2,$8
-mov $7,34
-mov $3,$0
-mov $4,$3
-add $5,$3
-fac $6
-add $6,$7
-add $6,$8
-add $8,$7
-div $3,2
-mov $6,8
-sub $8,$0
-mov $2,$4
-sub $8,$3
-mov $6,$8
 sub $1,22

@@ -1,0 +1,117 @@
+; A126592: Sum of numbers less than or equal to n which are multiples of 3 or 5.
+; 0,0,3,3,8,14,14,14,23,33,33,45,45,45,60,60,60,78,78,98,119,119,119,143,168,168,195,195,195,225,225,225,258,258,293,329,329,329,368,408,408,450,450,450,495,495,495,543,543,593,644,644,644,698,753,753,810,810
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $2,$0
+  add $2,$0
+  mul $2,2
+  mov $1,$0
+  mov $3,1
+  mov $7,$1
+  mov $3,10
+  mov $2,7
+  mov $1,1
+  mov $9,4
+  mov $4,$7
+  mov $9,2
+  mov $2,1
+  add $0,$2
+  mov $4,3
+  mov $2,2
+  sub $3,1
+  mov $2,1
+  add $9,$0
+  add $3,$3
+  mov $10,1
+  mov $3,$3
+  mov $5,$0
+  mov $6,$9
+  sub $2,$5
+  mov $8,2
+  mul $1,4
+  mov $1,1
+  mov $8,1
+  add $1,3
+  mov $3,1
+  mov $2,$0
+  mov $4,$4
+  add $5,$8
+  sub $8,$10
+  mov $5,$5
+  sub $1,1
+  mov $3,$6
+  add $7,$8
+  mov $3,1
+  mul $5,$4
+  add $2,$10
+  add $2,5
+  mov $4,$2
+  mov $2,4
+  add $0,$8
+  mov $6,0
+  mov $4,6
+  mov $1,$9
+  mov $8,$7
+  add $3,$10
+  add $6,$2
+  sub $6,9
+  mul $10,$6
+  mov $3,$6
+  sub $3,$3
+  add $6,4
+  gcd $9,$0
+  mov $1,$6
+  mov $4,$10
+  gcd $0,15
+  sub $0,$3
+  lpb $0,1
+    mov $7,8
+    sub $6,$2
+    div $7,2
+    sub $8,3
+    add $5,$5
+    mul $9,$4
+    sub $0,1
+    mov $9,$5
+    mov $3,$3
+    mov $0,$0
+    add $7,$10
+    mov $8,4
+    mul $2,72
+    add $10,2
+    pow $3,2
+    sub $7,$0
+    mul $4,$5
+    sub $1,$7
+    mov $4,4
+    add $1,2
+    div $3,$2
+    add $3,3
+    sub $8,$9
+    mov $2,3
+    pow $0,4
+    mov $5,$2
+    mov $1,1
+    add $10,17
+  lpe
+  sub $7,1
+  mov $9,60
+  mul $4,15
+  sub $0,$5
+  mov $9,$0
+  mul $8,$5
+  mul $8,$1
+  mov $9,$7
+  mov $1,$5
+  sub $1,3
+  div $1,3
+  add $12,$1
+lpe
+mov $1,$12

@@ -285,7 +285,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308136](http://oeis.org/A308136) ([L18 program](308/A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
 * [A308137](http://oeis.org/A308137) ([L20 program](308/A308137.asm)): Number of (undirected) Hamiltonian paths on the n-prism graph.
 * [A308196](http://oeis.org/A308196) ([L07 program](308/A308196.asm)): Partial sums of A063808.
-* [A308217](http://oeis.org/A308217) ([L63 program](308/A308217.asm)): a(n) is the multiplicative inverse of A001844(n) modulo A001844(n+1); where A001844 is the sequence of centered square numbers.
+* [A308217](http://oeis.org/A308217) ([L25 program](308/A308217.asm)): a(n) is the multiplicative inverse of A001844(n) modulo A001844(n+1); where A001844 is the sequence of centered square numbers.
 * [A308305](http://oeis.org/A308305) ([L12 program](308/A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
 * [A308385](http://oeis.org/A308385) ([L25 program](308/A308385.asm)): a(n) is the last square visited by fers moves on a spirally numbered (2n-1) X (2n-1) board, moving to the lowest available unvisited square at each step.
 * [A308422](http://oeis.org/A308422) ([L08 program](308/A308422.asm)): a(n) = n^2 if n odd, 3*n^2/4 if n even.
@@ -297,6 +297,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308603](http://oeis.org/A308603) ([L04 program](308/A308603.asm)): Number of (not necessarily maximal) cliques in the n-dipyramidal graph.
 * [A308607](http://oeis.org/A308607) ([L04 program](308/A308607.asm)): Number of (not necessarily maximum) cliques in the wheel graph on n vertices.
 * [A308659](http://oeis.org/A308659) ([L20 program](308/A308659.asm)): a(1)=1; for n > 1, a(n) is the length of the longest palindromic suffix of (a(1), ..., a(n-1)).
+* [A308700](http://oeis.org/A308700) ([L18 program](308/A308700.asm)): a(n) = n * 2^(n - 2) * (2^(n - 1) - 1).
 * [A308720](http://oeis.org/A308720) ([L23 program](308/A308720.asm)): The maximum value in the continued fraction of sqrt(n), or 0 if there is no fractional part.
 * [A308807](http://oeis.org/A308807) ([L07 program](308/A308807.asm)): a(n) = 4*5^(n-1) + n.
 * [A308898](http://oeis.org/A308898) ([L96 program](308/A308898.asm)): Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
@@ -594,7 +595,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319371](http://oeis.org/A319371) ([L05 program](319/A319371.asm)): Numbers k such that the characteristic polynomial of a wheel graph of k nodes has exactly one monomial with vanishing coefficient.
 * [A319384](http://oeis.org/A319384) ([L08 program](319/A319384.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3) - a(n-4) + a(n-5), a(0)=1, a(1)=5, a(2)=9, a(3)=21, a(4)=29.
 * [A319390](http://oeis.org/A319390) ([L07 program](319/A319390.asm)): a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3) - a(n-4) + a(n-5), a(0)=1, a(1)=2, a(2)=3, a(3)=6, a(4)=8.
-* [A319410](http://oeis.org/A319410) ([L82 program](319/A319410.asm)): Twice A032741.
+* [A319410](http://oeis.org/A319410) ([L34 program](319/A319410.asm)): Twice A032741.
 * [A319433](http://oeis.org/A319433) ([L21 program](319/A319433.asm)): Take Zeckendorf representation of n (A014417(n)), drop least significant bit, take inverse Zeckendorf representation.
 * [A319451](http://oeis.org/A319451) ([L04 program](319/A319451.asm)): Numbers that are congruent to {0, 3, 6} mod 12; a(n) = 3*floor(4*n/3).
 * [A319452](http://oeis.org/A319452) ([L08 program](319/A319452.asm)): Numbers that are congruent to {0, 3, 6, 10} mod 12.
@@ -794,6 +795,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329846](http://oeis.org/A329846) ([L25 program](329/A329846.asm)): Beatty sequence for (7+sqrt(29))/5.
 * [A329847](http://oeis.org/A329847) ([L05 program](329/A329847.asm)): Beatty sequence for (3+sqrt(89))/8.
 * [A329923](http://oeis.org/A329923) ([L49 program](329/A329923.asm)): Beatty sequence for (2+sqrt(34))/5.
+* [A329924](http://oeis.org/A329924) ([L37 program](329/A329924.asm)): Beatty sequence for (8+sqrt(34))/5.
 * [A329925](http://oeis.org/A329925) ([L12 program](329/A329925.asm)): Beatty sequence for (1+sqrt(41))/5.
 * [A329926](http://oeis.org/A329926) ([L11 program](329/A329926.asm)): Beatty sequence for (8+sqrt(41))/5.
 * [A329938](http://oeis.org/A329938) ([L23 program](329/A329938.asm)): Beatty sequence for sinh x, where csch x + sech x = 1 .
@@ -825,7 +827,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330151](http://oeis.org/A330151) ([L14 program](330/A330151.asm)): Partial sums of 4th powers of the even numbers.
 * [A330179](http://oeis.org/A330179) ([L21 program](330/A330179.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = e - 1, s = e, t = e + 1.
 * [A330246](http://oeis.org/A330246) ([L05 program](330/A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
-* [A330285](http://oeis.org/A330285) ([L103 program](330/A330285.asm)): The maximum number of arithmetic progressions for a sequence of length n.
+* [A330285](http://oeis.org/A330285) ([L52 program](330/A330285.asm)): The maximum number of arithmetic progressions for a sequence of length n.
 * [A330298](http://oeis.org/A330298) ([L12 program](330/A330298.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 2 even numbers.
 * [A330357](http://oeis.org/A330357) ([L04 program](330/A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A330395](http://oeis.org/A330395) ([L38 program](330/A330395.asm)): Number of non-trivial equivalence classes of S_n under the {1234,3412} pattern-replacement equivalence.
@@ -847,6 +849,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331190](http://oeis.org/A331190) ([L09 program](331/A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
 * [A331347](http://oeis.org/A331347) ([L15 program](331/A331347.asm)): Number of permutations w in S_n that form Boolean intervals [s, w] in the Bruhat order for every simple reflection s in the support of w.
 * [A331390](http://oeis.org/A331390) ([L71 program](331/A331390.asm)): Number of binary matrices with 3 distinct columns and any number of nonzero rows with n ones in every column and rows in nonincreasing lexicographic order.
+* [A331429](http://oeis.org/A331429) ([L115 program](331/A331429.asm)): Expansion of x^2*(10-5*x+x^2)/((1-x)^4*(1-x^2)).
 * [A331528](http://oeis.org/A331528) ([L14 program](331/A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
 * [A331714](http://oeis.org/A331714) ([L71 program](331/A331714.asm)): Number of non-isomorphic set-systems with 3 sets each with n elements.
 * [A331943](http://oeis.org/A331943) ([L09 program](331/A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
@@ -855,6 +858,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332023](http://oeis.org/A332023) ([L28 program](332/A332023.asm)): T(n, k) = binomial(n+2, 3) + binomial(k+1, 2) + binomial(k, 1). Triangle read by rows, T(n, k) for 0 <= k <= n.
 * [A332027](http://oeis.org/A332027) ([L16 program](332/A332027.asm)): Savannah problem: number of distinct possible populations after n weeks, allowing populations after the empty set.
 * [A332044](http://oeis.org/A332044) ([L07 program](332/A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
+* [A332057](http://oeis.org/A332057) ([L120 program](332/A332057.asm)): Partial sums (and absolute value of first differences) of A332056: if odd (resp. even) add (resp. subtract) the partial sum to get the next term.
+* [A332102](http://oeis.org/A332102) ([L29 program](332/A332102.asm)): Least m > 0 such that 2*m^n <= Sum_{k < m} k^n.
 * [A332243](http://oeis.org/A332243) ([L05 program](332/A332243.asm)): Starhex honeycomb numbers: a(n) = 13 + 60*n + 60*n^2.
 * [A332410](http://oeis.org/A332410) ([L40 program](332/A332410.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-5) - 2*a(n-6) + a(n-7) with a(0)=0, a(1)=1, a(2)=3, a(3)=6, a(4)=11, a(5)=17, a(6)=24.
 * [A332420](http://oeis.org/A332420) ([L16 program](332/A332420.asm)): Number of Maclaurin polynomials of sin x having exactly n positive zeros.
