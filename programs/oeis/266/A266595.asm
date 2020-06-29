@@ -1,0 +1,104 @@
+; A266595: Number of OFF (white) cells in the n-th iteration of the "Rule 37" elementary cellular automaton starting with a single ON (black) cell.
+; 0,2,2,5,6,5,10,5,14,5,18,5,22,5,26,5,30,5,34,5,38,5,42,5,46,5,50,5,54,5,58,5,62,5,66,5,70,5,74,5,78,5,82,5,86,5,90,5,94,5,98,5,102,5,106,5,110,5,114,5,118,5,122,5,126,5,130,5,134,5,138,5
+
+mul $0,3
+mov $8,$0
+mov $9,$0
+sub $8,$0
+mov $5,$0
+mov $10,2
+lpb $0,1
+  mul $5,$9
+  mov $4,4
+  sub $0,3
+  mov $5,1
+  mov $10,42
+  lpb $3,1
+    add $10,1
+    mov $1,$5
+    mov $8,$4
+    mov $6,3
+    sub $4,$0
+    div $10,2
+    add $4,$5
+    add $6,$5
+    mov $4,1
+    mov $7,$9
+    mov $5,$8
+    sub $4,$0
+    add $7,95
+    sub $8,$4
+    mov $9,$8
+    add $0,$1
+    gcd $7,$6
+    sub $5,$7
+    add $4,2
+    mov $2,$0
+    mov $3,$0
+    mul $7,$8
+    mov $7,$5
+    add $5,18
+    add $6,8
+    mov $0,$7
+    mov $8,4
+    mov $7,$1
+    add $7,$7
+    mov $7,4
+    add $9,5
+    add $1,1
+    mov $7,2
+    mov $8,1
+  lpe
+  add $3,$0
+  mov $10,4
+  mov $5,$9
+  mov $2,$2
+  mov $3,3
+  add $6,8
+  add $4,5
+  mov $8,1
+  sub $5,5
+  mov $4,$5
+lpe
+add $10,$4
+lpb $5,1
+  mov $8,5
+  mov $0,7
+  add $7,1
+  mov $0,$6
+  sub $4,5
+  add $8,3
+  sub $9,$8
+  add $3,$10
+  add $9,20
+  add $8,$2
+  add $3,1
+  mov $10,7
+  lpb $7,1
+    mov $4,2
+    mov $8,$7
+    mov $2,$6
+    add $0,6
+  lpe
+  lpb $7,10
+    sub $9,$3
+    mov $9,3
+    mov $8,59
+    lpb $9,2
+      mov $4,1
+      mod $1,$8
+      mov $4,$6
+      div $0,2
+      mov $0,2
+    lpe
+  lpe
+  mov $4,$2
+lpe
+mov $0,$0
+mov $9,0
+mov $5,1
+sub $7,$8
+add $9,2
+mov $7,6
+mov $1,$6
+div $1,4

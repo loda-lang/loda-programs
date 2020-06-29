@@ -1,0 +1,84 @@
+; A075362: Triangle read by rows with the n-th row containing the first n multiples of n.
+; 1,2,4,3,6,9,4,8,12,16,5,10,15,20,25,6,12,18,24,30,36,7,14,21,28,35,42,49,8,16,24,32,40,48,56,64,9,18,27,36,45,54,63,72,81,10,20,30,40,50,60,70,80,90,100,11,22,33,44,55,66,77,88,99,110,121,12,24,36,48,60,72,84
+
+mov $2,6
+mov $1,1
+mov $8,$2
+sub $8,$0
+mov $3,1
+sub $8,9
+mov $2,$0
+add $0,1
+lpb $2,1
+  mov $5,$1
+  add $8,1
+  mov $7,1
+  mov $1,$1
+  mov $0,1
+  mov $5,6
+  mov $1,$1
+  mov $5,1
+  sub $5,$1
+  add $3,$1
+  mov $5,1
+  add $3,$2
+  mul $8,$5
+  mov $6,6
+  mov $5,1
+  sub $0,$2
+  sub $6,2
+  mov $7,$6
+  mov $3,$0
+  mov $0,$2
+  lpb $4,1
+    add $7,1
+    add $8,$1
+    mul $6,$3
+    sub $1,$3
+    mov $4,$5
+    mul $4,$7
+    sub $7,6
+    mov $4,1
+    sub $5,7
+    sub $8,5
+    mov $1,2
+    sub $7,1
+    sub $4,$8
+    sub $2,$0
+    mul $3,$4
+  lpe
+  sub $2,$1
+  mov $3,$8
+  sub $8,1
+  mov $5,$3
+  lpb $5,1
+    add $0,$8
+    sub $6,3
+    add $7,$7
+    sub $5,$8
+  lpe
+  lpb $6,1
+    mov $2,$0
+    mov $4,$6
+    mov $2,$6
+    mul $6,$2
+    mul $6,$7
+    sub $6,$8
+  lpe
+  add $1,$3
+  mov $6,$4
+  sub $2,1
+lpe
+mov $6,$0
+add $8,$2
+sub $3,$5
+mov $7,1
+sub $5,1
+add $2,$0
+add $2,18
+mov $4,5
+add $3,$8
+mul $0,$1
+mov $5,$3
+sub $4,$7
+mov $1,$0
