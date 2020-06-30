@@ -1,0 +1,91 @@
+; A239086: The sequence S = a(1), a(2), ... is defined by a(1)=1, if d,e,f are consecutive digits then we do not have d < e = f, and S is always extended with the smallest integer not yet present in S.
+; 1,2,3,4,5,6,7,8,9,10,12,11,13,14,15,16,17,18,19,20,21,23,22,24,25,26,27,28,29,30,31,32,34,33,35,36,37,38,39,40,41,42,43,45,44,46,47,48,49,50,51,52,53,54,56,55,57,58,59,60,61,62,63,64,65,67,66,68
+
+mov $9,$0
+mov $5,$0
+mov $2,31
+sub $5,1
+mov $4,$5
+mov $6,$2
+mov $8,0
+mod $6,81
+mov $8,3
+mov $3,$8
+mov $1,$4
+bin $1,9
+pow $3,$2
+sub $6,4
+add $1,3
+mov $4,1
+add $0,$1
+mov $7,$5
+sub $3,2
+mov $2,$4
+add $4,$2
+add $6,$0
+add $2,$3
+add $7,2
+sub $4,1
+sub $6,$3
+mov $6,$8
+sub $0,1
+mov $7,$6
+lpb $0,5
+  sub $5,$2
+  mod $1,11
+  lpb $1,6
+    sub $7,2
+    lpb $0,1
+      pow $6,2
+      add $4,$4
+      bin $8,2
+      lpb $2,4
+        mov $5,$0
+        mov $5,$2
+        add $8,1
+        mov $6,$5
+        div $2,3
+        clr $0,1
+        add $2,$4
+        add $8,2
+        mov $4,18
+        add $4,$1
+        mov $2,$1
+        add $5,$2
+        bin $2,$0
+        sub $8,1
+        mov $7,$3
+        mov $3,2
+      lpe
+    lpe
+    mov $8,$2
+    add $8,$1
+  lpe
+lpe
+add $5,$4
+mov $8,$3
+mov $7,1
+mov $2,2
+mov $6,1
+mov $3,$5
+mov $2,$2
+sub $3,7
+mov $6,4
+add $8,1
+cmp $0,$8
+add $0,5
+mov $6,$4
+mul $6,2
+mul $6,$2
+mov $5,16
+mov $8,5
+mul $7,$8
+add $2,6
+mov $8,$8
+sub $1,2
+mov $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9
+mul $10,$9

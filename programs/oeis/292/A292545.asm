@@ -1,102 +1,32 @@
 ; A292545: Number of 6-cycles in the n-Sierpinski tetrahedron graph.
 ; 0,218,876,3504,14016,56064,224256,897024,3588096,14352384,57409536,229638144,918552576,3674210304,14696841216,58787364864,235149459456,940597837824,3762391351296,15049565405184,60198261620736,240793046482944,963172185931776,3852688743727104
 
-mov $9,$0
-mov $11,2
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  add $0,$11
+mov $2,$0
+mov $5,2
+lpb $5,1
+  sub $5,1
+  mov $0,$2
+  add $0,$5
   sub $0,1
   mov $4,1
-  mov $4,$4
-  mov $7,1
-  mov $8,2
-  mov $6,3
-  gcd $4,2
-  mov $7,$0
-  add $4,$8
-  mov $1,1
-  add $8,$6
-  add $0,$0
-  mov $3,2
-  mov $2,$4
-  mod $3,$8
+  mov $7,2
+  add $4,$7
+  mul $0,2
   lpb $0,1
-    mov $5,25
-    mov $7,1
-    mov $8,$5
-    add $7,7
-    mul $1,3
-    sub $2,2
-    add $7,1
-    mov $6,1
-    mul $6,2
     sub $0,1
-    add $8,$1
-    mov $7,25
-    mul $8,2
-    mov $1,0
-    add $0,$1
-    mul $5,$6
-    mov $5,$1
-    mov $3,$2
     add $4,35
-    add $7,1
-    mov $8,$6
-    mul $2,$6
-    add $4,$1
-    add $8,$8
     mul $4,2
-    mov $7,51
-    mul $7,2
-    mov $6,1
-    sub $2,$7
-    add $5,$0
-    mov $6,2
-    mov $2,2
-    sub $1,$0
-    mov $5,$1
-    add $5,$4
-    add $1,$8
-    add $7,2
-    sub $6,2
-    mov $1,$6
-    add $7,$1
-    mov $8,$2
-    add $6,1
-    add $6,$7
-    mov $3,$2
-    sub $5,1
   lpe
-  mul $8,$2
-  sub $3,2
-  sub $1,1
-  mov $0,6
   sub $4,4
-  div $3,$2
-  mov $7,$7
-  mov $6,$8
-  add $6,3
-  mov $2,6
-  mov $1,3
-  sub $2,31
-  add $5,$7
-  mov $8,5
-  div $8,19
-  mov $2,10
-  add $5,$1
-  mov $6,$3
   mov $1,$4
-  mov $12,$11
-  lpb $12,1
-    mov $10,$1
-    sub $12,1
+  mov $3,$5
+  lpb $3,1
+    mov $6,$1
+    sub $3,1
   lpe
 lpe
-lpb $9,1
-  sub $10,$1
-  mov $9,0
+lpb $2,1
+  sub $6,$1
+  mov $2,0
 lpe
-mov $1,$10
+mov $1,$6

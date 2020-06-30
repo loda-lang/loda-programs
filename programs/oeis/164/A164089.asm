@@ -1,0 +1,64 @@
+; A164089: For n >=4, a(n) = the numerical value of the substring of binary n containing all digits but the first and last. a(1) = a(2) = a(3) = 0.
+; 0,0,0,0,0,1,1,0,0,1,1,2,2,3,3,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15
+
+mov $1,2
+mov $6,1
+add $0,1
+mov $6,0
+mov $6,3
+mov $2,$1
+mov $3,$6
+mov $3,$2
+add $2,1
+mov $6,$6
+mov $3,$6
+mov $6,$0
+add $6,$3
+add $3,$0
+mod $2,2
+sub $6,$1
+mov $2,1
+div $6,$0
+lpb $0,1
+  mod $6,$1
+  mov $3,3
+  sub $1,3
+  mod $2,2
+  mov $5,$2
+  add $1,1
+  mov $5,$1
+  mov $4,$1
+  mov $2,$2
+  mov $4,5
+  mov $0,$0
+  sub $6,$3
+  add $2,21
+  div $0,2
+  div $6,2
+  mov $2,$4
+  mov $2,1
+  add $5,$4
+  mov $2,1
+  add $0,$0
+  add $4,$6
+  mov $5,4
+  cmp $2,$3
+  sub $0,1
+  add $6,$4
+  add $1,3
+lpe
+mov $2,$6
+mov $1,22
+mov $0,4
+mov $4,2
+add $5,32
+sub $1,$2
+mov $3,$6
+mov $5,1
+mul $6,4
+gcd $0,$4
+mov $0,2
+mul $4,$0
+mov $1,$2
+sub $1,5
+div $1,2

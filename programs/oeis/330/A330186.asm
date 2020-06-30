@@ -1,0 +1,91 @@
+; A330186: a(n) = n + floor(nr/t) + floor(ns/t), where r = tau - 1/2, s = tau, t = tau + 1/2, tau = golden ratio = (1+sqrt(5))/2.
+; 1,4,6,9,10,13,15,18,19,22,24,27,28,31,33,36,37,40,43,45,48,49,52,54,57,58,61,63,66,67,70,72,75,76,79,82,84,87,88,91,93,96,97,100,102,105,106,109,111,114,115,118,120,123,126,127,130,132,135,136,139
+
+mov $8,2
+mov $6,$0
+mov $1,$6
+mov $5,$8
+mov $3,2
+mov $1,$6
+add $0,1
+sub $1,$6
+mov $4,1
+mov $7,4
+add $5,$7
+pow $5,2
+mov $1,1
+mov $3,$0
+mul $5,$4
+mov $8,55
+mov $7,$0
+mov $1,1
+add $1,$3
+mov $7,4
+add $3,$3
+add $4,10
+mov $1,$5
+mov $5,2
+mov $5,1
+mul $8,$0
+div $8,$1
+mov $0,$1
+add $1,3
+add $6,$5
+sub $6,$3
+sub $3,6
+mov $2,$8
+mov $7,3
+mov $7,$6
+add $5,$4
+add $4,2
+mov $6,3
+sub $6,4
+mov $1,1
+lpb $0,1
+  mov $1,$6
+  sub $6,$4
+  mov $4,4
+  mov $4,$6
+  add $8,1
+  mov $8,4
+  sub $0,1
+  sub $1,1
+  add $3,1
+  add $8,1
+  add $0,5
+  sub $0,6
+  mul $2,3
+  mul $6,7
+  mov $5,5
+  mov $4,1
+  mov $7,1
+  add $2,$2
+  mul $7,$3
+  mov $0,$5
+  mov $6,1
+  mov $8,$8
+  mov $5,$4
+  add $8,$7
+  add $4,2
+  add $6,$4
+  add $6,$0
+  add $2,3
+  mov $1,4
+lpe
+add $8,$1
+mul $0,$4
+mov $1,$6
+mov $0,$1
+sub $7,$0
+add $7,$2
+mov $8,0
+mov $0,1
+add $6,$5
+mov $1,$2
+sub $1,7
+div $1,4
+mul $1,2
+add $1,2
+sub $1,2
+div $1,2
+add $1,1

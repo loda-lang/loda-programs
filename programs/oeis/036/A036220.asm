@@ -1,0 +1,105 @@
+; A036220: Expansion of 1/(1-3*x)^7; 7-fold convolution of A000244 (powers of 3).
+; 1,21,252,2268,17010,112266,673596,3752892,19702683,98513415,472864392,2192371272,9865670724,43257171636,185387878440,778629089448,3211844993973,13036312034361,52145248137444,205836505805700
+
+mov $4,$0
+mov $2,$0
+mov $10,1
+mov $0,$4
+mov $4,$2
+mov $9,6
+add $9,$4
+mov $7,1
+bin $9,$2
+mov $1,$9
+mov $1,2
+mov $5,$0
+mov $2,$0
+mov $3,3
+mov $0,$9
+lpb $2,1
+  clr $9,1
+  mov $7,3
+  mov $9,$2
+  add $7,1
+  mul $9,2
+  mov $9,$4
+  mov $8,1
+  add $4,$3
+  sub $9,1
+  sub $7,$0
+  lpb $4,1
+    add $7,1
+    mul $0,$3
+    bin $2,$4
+    sub $4,$10
+    add $4,$10
+    sub $9,$9
+    mov $10,4
+    sub $4,1
+  lpe
+  mov $6,1
+  sub $4,12
+  sub $3,$6
+  lpb $5,1
+    mov $10,35
+    add $5,$0
+    sub $5,$10
+    add $7,7
+  lpe
+  mul $5,$8
+  sub $3,3
+  add $1,1
+  mov $7,$9
+  add $4,$7
+  lpb $6,1
+    add $3,$6
+    sub $9,13
+    sub $6,$10
+    mov $8,$5
+    sub $3,$6
+    mov $9,$10
+    pow $1,2
+    mov $1,4
+    mov $3,5
+  lpe
+  pow $6,2
+  sub $8,1
+  mov $4,$5
+  sub $2,6
+  mul $6,2
+  add $10,1
+  mov $10,$3
+  mov $2,$8
+  sub $3,$8
+  sub $2,1
+  add $4,$2
+  add $5,$3
+  add $2,$7
+  add $4,3
+  div $5,2
+  mul $1,$7
+  sub $10,1
+  mov $3,1
+lpe
+add $1,3
+sub $3,17
+mov $1,1
+sub $4,1
+mov $2,1
+add $3,$1
+mov $7,15
+mov $4,$1
+sub $4,2
+mov $8,$1
+sub $9,1
+add $9,$7
+sub $8,6
+sub $1,$5
+mov $8,$3
+add $3,$10
+mov $4,1
+mul $10,$4
+mov $9,$2
+mov $2,$6
+mov $1,$0
+mov $1,$0

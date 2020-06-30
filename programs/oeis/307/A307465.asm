@@ -1,106 +1,43 @@
 ; A307465: Number of Catalan words of length n avoiding the pattern 110.
 ; 1,1,2,5,13,33,82,201,489,1185,2866,6925,16725,40385,97506,235409,568337,1372097,3312546,7997205,19306973,46611169,112529330,271669849,655869049,1583407969,3822685010,9228778013,22280241061,53789260161,129858761410
 
-mov $13,$0
-mov $15,$0
-add $15,1
-lpb $15,1
-  clr $0,13
-  sub $15,1
-  mov $0,$13
-  sub $0,$15
+mov $8,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$8
+  sub $0,$2
   mov $9,$0
   mov $11,2
   lpb $11,1
-    clr $0,9
     sub $11,1
     mov $0,$9
     add $0,$11
     sub $0,1
-    mov $3,1
     mov $6,1
     mov $5,3
     add $6,3
-    mov $7,$5
     sub $5,1
     mov $1,3
     mov $4,$1
-    sub $7,1
-    sub $1,4
     sub $5,1
     mul $5,2
     lpb $0,1
-      mov $8,9
-      mov $1,$4
       mov $4,$5
       add $5,$6
-      mov $7,$7
-      mov $7,$0
-      sub $8,$4
-      mov $2,3
-      mov $4,$4
-      add $6,$2
-      add $1,1
       sub $5,1
-      mov $7,$8
-      add $2,$8
       mov $6,$4
-      mod $7,14
-      add $1,2
       add $6,1
-      sub $8,1
       sub $0,1
       add $6,$5
-      mov $7,$2
-      sub $3,1
-      add $4,1
-      add $4,1
-      add $7,2
-      add $8,$3
-      mov $0,$0
     lpe
-    add $6,$4
-    mov $0,12
-    mov $0,$3
-    add $1,2
-    mov $3,3
-    sub $3,1
     mov $1,$4
-    add $7,1
-    sub $0,1
-    mul $0,$8
-    pow $4,$0
-    mov $3,$7
-    mov $5,$0
-    add $4,9
-    mul $4,$7
-    add $0,$6
-    add $7,1
     mul $1,2
-    add $7,$7
-    sub $5,$3
-    mov $5,3
-    add $4,$4
-    cmp $0,5
-    mov $7,$3
-    add $0,3
-    sub $2,$2
-    mov $4,$4
-    add $0,9
-    add $2,$3
-    mul $5,2
-    mov $6,$1
-    sub $5,$4
-    sub $3,$5
-    add $5,$5
-    mov $3,$6
-    sub $6,$4
-    mov $7,1
-    add $6,$0
-    mov $12,$11
-    lpb $12,1
+    mov $3,$11
+    lpb $3,1
       mov $10,$1
-      sub $12,1
+      sub $3,1
     lpe
   lpe
   lpb $9,1
@@ -108,8 +45,7 @@ lpb $15,1
     mov $9,0
   lpe
   mov $1,$10
-  sub $1,2
   div $1,4
-  add $14,$1
+  add $7,$1
 lpe
-mov $1,$14
+mov $1,$7
