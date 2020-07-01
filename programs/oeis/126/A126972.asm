@@ -1,66 +1,15 @@
 ; A126972: Number of distinct values taken by the entropy for permutations of [1..n], where the entropy of a permutation pi is Sum_{k=1..n} (pi(k)-k)^2.
 ; 1,1,2,4,11,21,36,57,85,121,166,221,287,365,456,561,681,817,970,1141,1331,1541,1772,2025,2301,2601,2926,3277,3655,4061,4496,4961,5457,5985,6546,7141,7771,8437,9140,9881,10661,11481,12342,13245,14191,15181,16216
 
-mov $3,$0
-mov $3,$0
-mov $4,$3
-mov $4,2
-sub $3,7
-lpb $0,1
-  mov $3,1
-  mov $0,$0
-  mov $5,1
-  add $4,5
-  mul $5,$3
-  sub $0,1
-  add $0,6
-  add $4,$3
-lpe
 mov $1,$0
-mov $1,$0
-mov $4,1
-mov $5,5
-add $4,$5
-mov $1,$1
-sub $0,1
-mov $4,$3
-mov $6,5
-add $5,1
 mov $0,1
-div $5,2
-add $5,5
-mov $5,$3
-mov $6,1
-mov $0,$6
-mov $6,8
-clr $3,$0
-mov $3,$5
 add $0,$1
-mov $1,1
 mov $1,$0
 bin $0,3
-mov $5,5
 cmp $1,$0
-mov $5,2
 add $0,3
 sub $0,$1
-mov $2,1
-sub $5,3
-sub $5,5
-sub $4,$4
-mul $1,2
-mov $2,$1
-mov $6,$0
-add $3,2
-mov $3,1
-add $6,2
-sub $4,$4
-add $6,1
-mov $3,4
-pow $6,$4
-add $4,4
 sub $0,1
-add $1,5
 mov $1,$0
 sub $1,2
 add $1,1

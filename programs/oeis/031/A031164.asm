@@ -1,0 +1,110 @@
+; A031164: Irreducible Euler sums of weight 8 and depth 10+2n.
+; 1,4,15,40,99,212,429,800,1430,2424,3978,6288,9690,14520,21318,30624,43263,60060,82225,110968,148005,195052,254475,328640,420732,533936,672452,840480,1043460,1286832,1577532,1922496,2330445
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $10,$0
+    mov $12,$0
+    add $12,1
+    lpb $12,1
+      clr $0,10
+      sub $12,1
+      mov $0,$10
+      sub $0,$12
+      mov $7,$0
+      mov $9,$0
+      add $9,1
+      lpb $9,1
+        clr $0,7
+        sub $9,1
+        mov $0,$7
+        sub $0,$9
+        mov $6,$0
+        mov $4,3
+        mov $2,$4
+        mov $1,2
+        add $4,1
+        mov $5,$6
+        sub $1,15
+        add $5,1
+        add $2,$0
+        sub $1,$4
+        mov $5,6
+        sub $1,$0
+        add $0,5
+        add $4,2
+        mov $2,$0
+        mul $1,2
+        sub $4,$4
+        mov $2,$4
+        mul $6,2
+        mov $6,$6
+        mov $2,2
+        add $6,1
+        mul $2,4
+        sub $5,3
+        mov $6,2
+        sub $1,1
+        mov $2,$0
+        mov $4,$0
+        mul $4,2
+        gcd $0,2
+        mul $0,$2
+        mov $3,1
+        sub $5,2
+        lpb $0,1
+          mov $3,2
+          sub $4,$0
+          sub $4,$6
+          add $0,1
+          add $6,1
+          mov $3,$5
+          sub $0,2
+          add $5,$3
+          sub $6,1
+          mov $1,$4
+          sub $3,$2
+          sub $3,$3
+          add $4,1
+          bin $4,3
+          mov $0,5
+          sub $2,$3
+          mov $2,1
+          add $5,$4
+          mov $2,2
+          add $5,$4
+          mov $2,$3
+          sub $5,5
+          add $4,$0
+          sub $0,1
+          sub $4,$2
+        lpe
+        mov $1,$4
+        sub $1,5
+        div $1,4
+        add $8,$1
+      lpe
+      mov $1,$8
+      add $11,$1
+    lpe
+    mov $1,$11
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17

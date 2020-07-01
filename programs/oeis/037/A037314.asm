@@ -1,0 +1,120 @@
+; A037314: Numbers n such that (sum of base 3 digits of n)=(sum of base 9 digits of n).
+; 0,1,2,9,10,11,18,19,20,81,82,83,90,91,92,99,100,101,162,163,164,171,172,173,180,181,182,729,730,731,738,739,740,747,748,749,810,811,812,819,820,821,828,829,830,891,892,893,900,901,902,909,910,911
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $7,$0
+  add $0,$7
+  mov $1,$7
+  add $0,$7
+  mov $4,2
+  mov $4,1
+  mov $8,$1
+  sub $7,$8
+  mov $0,$0
+  mov $5,1
+  add $8,1
+  mov $9,$8
+  mov $10,5
+  add $8,2
+  lpb $0,1
+    mul $9,5
+    sub $9,1
+    mul $8,$1
+    mov $4,$8
+    mov $4,$0
+    add $0,$7
+    mov $1,3
+    add $9,$4
+    add $8,1
+    add $4,1
+    add $4,$7
+    add $5,$7
+    mov $0,$10
+    mov $8,7
+    mov $6,$4
+    mov $4,1
+    mul $1,2
+    add $4,$5
+    sub $1,$6
+    add $7,$4
+    mov $0,33
+    mov $0,2
+    add $9,2
+    pow $1,2
+    mov $10,14
+    mov $10,7
+    sub $5,$7
+    mov $2,242
+    mov $8,$8
+    sub $7,4
+    mov $3,2
+    mov $9,4
+    mov $8,140
+    add $2,1
+    sub $8,3
+    add $0,1
+    mul $10,$5
+    pow $9,$3
+    mov $1,2
+    mov $5,$9
+    add $8,$4
+    sub $4,4
+    sub $0,1
+    sub $9,$10
+    pow $10,5
+    sub $6,1
+    sub $2,$4
+  lpe
+  mov $9,$10
+  sub $10,1
+  sub $4,$4
+  mul $5,$5
+  mul $4,2
+  mov $3,2
+  sub $8,$8
+  mov $5,1
+  mov $10,$1
+  add $0,1
+  sub $4,$0
+  sub $9,5
+  mov $3,$2
+  mov $8,$5
+  add $6,$4
+  div $5,$5
+  mov $0,4
+  gcd $3,$6
+  mov $1,6
+  sub $3,1
+  mov $5,9
+  add $1,$7
+  mov $0,2
+  add $8,$10
+  fac $9
+  sub $5,1
+  add $4,13
+  add $4,4
+  mov $7,$3
+  sub $9,$9
+  mov $5,$3
+  add $7,2
+  mul $5,$7
+  add $4,1
+  mov $0,1
+  sub $9,3
+  div $6,$8
+  mov $1,$5
+  div $1,8
+  mul $1,2
+  add $1,1
+  add $12,$1
+lpe
+mov $1,$12
+sub $1,1
+div $1,3

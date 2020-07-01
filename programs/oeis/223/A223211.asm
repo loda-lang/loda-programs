@@ -1,104 +1,21 @@
 ; A223211: 3 X 3 X 3 triangular graph coloring a rectangular array: number of n X 1 0..5 arrays where 0..5 label nodes of a graph with edges 0,1 0,2 1,2 1,3 1,4 2,4 3,4 2,5 4,5 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
-; 6,18,60,192,624,2016,6528,21120,68352,221184,715776,2316288,7495680,24256512,78495744,254017536,822018048,2660106240,8608284672,27856994304,90147127296,291722231808,944032972800,3054954872832,9886041636864
+; 6,18,60,192,624,2016,6528,21120,68352,221184,715776,2316288,7495680,24256512,78495744,254017536,822018048,2660106240,8608284672,27856994304,90147127296,291722231808,944032972800,3054954872832,9886041636864,31991902765056,103527972077568,335023555215360,1084158998740992
 
-mov $8,4
-mov $5,2
-mov $4,5
-mov $3,$0
-mov $1,1
-mov $7,6
-mov $10,1
-mov $9,2
-add $0,$9
-add $9,$5
-pow $10,2
-add $5,1
-add $0,1
-mov $2,$4
-mov $4,1
-add $8,1
-sub $3,2
-mov $8,1
-sub $2,2
-clr $8,$5
-mov $6,5
-mov $6,10
-sub $1,3
-mul $2,2
-sub $8,$4
-add $4,$6
-gcd $5,$3
-sub $1,$7
-mul $5,$2
-mov $2,4
-add $9,2640
-pow $8,8
-mov $6,5
-mov $4,1
-mov $7,1
-add $2,$1
-mov $2,1
-sub $9,1
-bin $10,$3
-mov $4,$9
+add $0,3
+mov $5,1
 lpb $0,1
-  mov $3,$1
-  mul $7,2
-  add $6,3
-  mov $6,4
-  mov $3,2
-  mov $8,$10
-  mov $6,3
-  add $3,$4
-  mov $8,$9
-  mov $9,$4
-  mov $5,1
+  mul $5,2
   mov $4,$1
   sub $0,1
-  add $1,$7
-  mov $9,2
-  mov $3,$4
-  mul $3,$10
-  mul $9,2
-  mov $7,$4
-  sub $3,1
-  sub $6,5
-  add $6,7
-  mov $4,2
-  add $2,$6
-  mov $3,5
-  mov $7,$7
-  mov $6,$9
-  mov $4,6
-  add $8,$7
-  mov $4,$10
-  mov $2,3
-  mov $6,$1
-  add $4,$3
-  add $3,2
-  mov $5,$1
-  mov $8,$10
-  add $1,$1
-  add $10,$8
-  mov $2,21
+  add $1,$5
+  mov $2,2
+  mul $2,2
+  mov $5,$4
+  mov $3,$1
+  mul $1,2
 lpe
-mov $4,3
-add $6,$9
-sub $4,2
-add $3,$8
-mov $7,1
-cmp $7,12
-add $10,$4
-mov $2,$2
-mov $1,$2
-mul $8,2
-mul $7,$3
-sub $0,2
-div $2,2
-div $4,2
-div $5,$3
-sub $4,324
-mov $1,$6
+add $3,$2
+mov $1,$3
 sub $1,20
 div $1,16
 mul $1,6

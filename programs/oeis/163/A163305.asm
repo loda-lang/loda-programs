@@ -1,0 +1,107 @@
+; A163305: Numerators of fractions in the approximation of the square root of 5 satisfying: a(n)= (a(n-1)+ c)/(a(n-1)+1); with c=5 and a(1)=0. Also product of the powers of two and five times the Fibonacci numbers.
+; 0,5,10,40,120,400,1280,4160,13440,43520,140800,455680,1474560,4771840,15441920,49971200,161710080,523304960,1693450240,5480120320,17734041600,57388564480,185713295360,600980848640,1944814878720
+
+mov $6,1
+mov $2,$0
+mov $7,1
+mov $3,1
+lpb $0,1
+  mov $4,3
+  mov $10,$7
+  add $6,$6
+  mov $8,2
+  add $4,$4
+  add $10,$7
+  mul $4,$4
+  sub $3,$2
+  mov $2,$0
+  add $7,3
+  mov $4,1
+  mov $2,1
+  sub $2,6
+  mov $8,$8
+  add $7,8
+  mul $4,$6
+  mov $1,$8
+  sub $1,$0
+  mov $4,1
+  mov $7,$6
+  sub $1,3
+  sub $3,$6
+  mov $1,3
+  sub $0,1
+  add $1,1
+  add $6,$10
+lpe
+mov $6,$10
+mov $5,3
+add $4,$8
+add $7,$3
+mov $8,$0
+add $2,$1
+mov $3,1
+mov $8,1
+mov $8,2
+add $0,2
+sub $7,1
+mul $2,$10
+add $1,$5
+mov $3,6
+sub $1,$7
+add $5,$10
+mov $4,$5
+mul $8,5
+mov $1,4
+sub $0,5
+mul $5,$8
+mov $9,4
+add $9,$9
+mul $2,$0
+add $1,$8
+div $1,13
+add $6,$9
+mul $1,2
+mov $0,$8
+sub $3,$1
+mov $9,4
+sub $8,1
+add $5,1
+bin $9,62
+mov $4,3
+sub $3,$7
+add $5,$0
+sub $1,$0
+div $7,2
+mov $0,$5
+mov $8,$10
+mov $2,1
+mov $0,$0
+add $10,$6
+mov $10,1
+mov $0,1
+mov $3,$5
+mov $8,8
+add $10,5
+mov $6,2
+add $3,3
+mul $7,2
+sub $0,$4
+sub $3,$4
+add $9,$8
+mov $5,2
+mov $4,$10
+mov $4,$9
+sub $10,4
+mov $1,$6
+sub $3,$10
+mov $9,8
+mov $10,3
+mul $9,2
+mov $10,$10
+mov $7,2
+mov $8,2
+mov $8,10
+mov $1,$3
+sub $1,39
+div $1,20
+mul $1,5

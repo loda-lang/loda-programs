@@ -1,0 +1,106 @@
+; A242603: Largest divisor of n not divisible by 7. Remove factors 7 from n.
+; 1,2,3,4,5,6,1,8,9,10,11,12,13,2,15,16,17,18,19,20,3,22,23,24,25,26,27,4,29,30,31,32,33,34,5,36,37,38,39,40,41,6,43,44,45,46,47,48,1,50,51,52,53,54,55,8,57,58,59,60,61,62,9,64,65,66,67,68,69,10,71,72,73,74,75,76,11
+
+mov $4,$0
+mov $2,1
+mov $7,1
+mul $2,$7
+mov $5,$7
+mov $1,1
+mov $10,$5
+sub $10,4
+mov $8,$10
+mov $6,1
+mov $9,96
+mov $3,1
+mul $6,$9
+mov $0,$3
+mov $1,1
+mov $2,$1
+add $8,1
+mov $10,$2
+add $8,$1
+mov $1,$7
+mul $4,2
+mov $3,2
+add $1,$7
+add $9,$3
+mul $5,4
+lpb $0,1
+  add $5,$1
+  mov $5,1
+  sub $0,1
+  add $2,5
+  add $8,$4
+  gcd $9,$8
+  sub $2,252
+  add $1,$6
+  mov $7,$4
+  sub $10,5
+  div $7,$9
+  mov $6,3
+  mov $6,2
+  add $8,2
+  mov $9,$1
+  mov $2,$6
+  sub $2,$7
+  add $7,2
+  sub $5,1
+  add $5,$10
+  add $8,$10
+  mov $1,$10
+  pow $6,$6
+  gcd $3,2
+  mov $0,$6
+  mul $5,$3
+  sub $2,1
+  add $5,1
+  mov $6,3
+  mov $8,1
+  mov $0,$10
+  mul $9,36
+  add $4,1
+  add $2,$8
+  sub $2,1
+  mul $6,2
+  sub $10,1
+  add $5,1
+  mov $10,$8
+  pow $4,$8
+  add $5,$7
+  sub $10,6
+  mov $3,$9
+  clr $3,1
+  add $7,$10
+  add $2,4
+  mov $2,1
+  mov $1,1
+  mov $1,7
+  add $4,$10
+  div $4,2
+  pow $3,11
+  mov $8,$4
+  sub $8,1
+  mov $2,$6
+  add $4,$1
+  sub $2,$0
+  sub $5,$1
+  add $9,1
+  add $9,$5
+  mov $5,$1
+  add $10,$2
+  add $4,1
+  sub $1,2
+  mov $1,1
+  mov $4,$7
+  mul $10,$9
+  add $9,$1
+  mov $2,4
+  sub $3,$3
+  mov $1,3
+  mul $3,2
+  mod $10,2
+lpe
+mov $1,$4
+sub $1,2
+add $1,1

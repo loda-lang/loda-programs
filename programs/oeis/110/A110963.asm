@@ -1,0 +1,107 @@
+; A110963: Fractalisation of a fractal: of the Kimberling's sequence beginning with 1.
+; 1,1,1,1,2,1,1,1,3,2,2,1,4,1,1,1,5,3,3,2,6,2,2,1,7,4,4,1,8,1,1,1,9,5,5,3,10,3,3,2,11,6,6,2,12,2,2,1,13,7,7,4,14,4,4
+
+mov $1,$0
+mov $10,2
+mov $4,$10
+mov $7,1
+add $1,$10
+mov $2,2
+mul $0,2
+mov $8,5
+mov $6,5
+mod $2,$6
+mov $3,$8
+add $6,1
+mov $3,$0
+add $1,1
+mov $9,$1
+mov $8,$9
+mov $10,9
+mov $7,2
+mov $7,$10
+div $6,2
+mov $6,8
+sub $10,1
+add $4,7
+mov $8,2
+lpb $4,14
+  mov $3,3
+  mov $5,25
+  mul $9,2
+  mov $5,$5
+  sub $2,494
+  mov $7,1
+  mov $5,3
+  mov $1,$10
+  mov $6,$3
+  add $4,$0
+  mov $6,$6
+  add $3,4
+  mov $3,1
+  sub $1,6
+  sub $10,$5
+  sub $7,2
+  mov $10,2
+  mov $6,$4
+  add $2,1
+  mov $9,2
+  sub $10,1
+  mov $9,1
+  add $10,$8
+  sub $1,$2
+  div $0,2
+  add $4,45
+  div $1,$5
+  add $7,$6
+  gcd $4,2
+  mov $8,1
+  lpb $5,9
+    mul $9,$5
+    mov $5,1
+    mov $2,1
+    sub $3,1
+    mov $5,$7
+    add $7,$9
+    sub $5,$5
+  lpe
+  sub $6,1
+  lpb $8,1
+    lpb $4,$0
+      mov $10,$7
+      lpb $1,1
+        mov $7,$0
+        mov $10,$4
+        mov $8,1
+        mov $6,1
+        mov $3,$2
+        mov $7,$5
+      lpe
+      clr $4,1
+      mov $2,$5
+      mul $1,$5
+      mov $4,144
+      sub $0,$1
+      add $4,3
+      fac $1
+      mov $7,1
+      mov $4,$7
+    lpe
+    mov $9,$3
+    sub $0,1
+    add $4,$1
+  lpe
+  mov $8,$8
+  mul $10,$5
+lpe
+lpb $5,1
+  mov $9,$9
+lpe
+mov $1,$5
+add $8,$9
+mov $0,1
+add $8,3
+mov $1,$6
+sub $1,1
+div $1,4
+add $1,1
