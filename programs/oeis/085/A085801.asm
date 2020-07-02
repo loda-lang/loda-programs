@@ -1,0 +1,84 @@
+; A085801: Maximum number of nonattacking queens on an n X n toroidal board.
+; 1,1,1,2,5,4,7,6,7,9,11,10,13,13,13,14,17,16,19,18,19,21,23,22,25,25,25,26,29,28,31,30,31,33,35,34,37,37,37,38,41,40,43,42,43,45,47,46,49,49,49,50,53,52,55,54,55,57,59,58,61,61,61,62,65,64,67,66
+
+mov $2,$0
+add $0,1
+mov $3,$0
+mov $4,$3
+mov $5,1
+mov $8,1
+mov $2,$3
+mov $6,$0
+mov $3,$3
+sub $8,$3
+mov $5,$0
+mov $1,$8
+mov $7,4
+sub $1,$5
+mov $0,$3
+add $6,1
+add $0,3
+mov $0,$4
+sub $0,$3
+mov $0,7
+add $0,$0
+mov $8,$0
+sub $3,1
+mov $1,$1
+mov $3,$4
+add $7,1
+div $3,$0
+sub $0,$4
+add $1,$0
+add $6,1
+add $7,2
+add $6,1
+mov $7,2
+add $7,1
+mul $2,2
+mov $3,$8
+add $7,$1
+mul $7,$6
+mov $1,1
+mov $0,1
+bin $7,2
+sub $6,1
+mov $7,$4
+mov $0,2
+mov $2,$3
+sub $6,$7
+mov $1,1
+sub $4,3
+lpb $0,1
+  mov $0,72
+  mov $4,$2
+  add $3,1
+  mov $8,2
+  bin $6,2
+  sub $8,1
+  gcd $7,$3
+  gcd $0,$5
+  mov $4,$8
+  add $4,$2
+  mov $8,3
+  sub $4,$7
+  mov $7,1
+  add $6,$8
+  mov $4,1
+  mov $6,1
+  mov $8,1
+  sub $1,$8
+  sub $4,6
+  mov $1,3
+  div $3,3
+  sub $0,1
+lpe
+sub $4,$6
+sub $5,$0
+mov $6,6
+sub $2,$5
+add $3,8
+add $0,$1
+add $1,$5
+sub $4,$5
+mov $1,$5

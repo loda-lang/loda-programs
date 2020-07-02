@@ -1,0 +1,71 @@
+; A273766: Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 913", based on the 5-celled von Neumann neighborhood.
+; 1,4,17,48,81,121,169,225,289,361,441,529,625,729,841,961,1089,1225,1369,1521,1681,1849,2025,2209,2401,2601,2809,3025,3249,3481,3721,3969,4225,4489,4761,5041,5329,5625,5929,6241,6561,6889,7225,7569,7921,8281,8649
+
+mov $17,$0
+mov $3,$0
+mov $6,$3
+mov $2,$6
+mul $0,2
+add $3,4
+mov $4,$6
+mov $4,$6
+mov $5,$3
+add $0,5
+add $4,$5
+mov $6,2
+mov $4,6
+add $0,$4
+mul $5,$6
+mov $1,$6
+add $0,6
+sub $0,1
+add $4,$5
+mov $5,$4
+log $6,$5
+mov $1,$6
+mov $6,$0
+add $4,$1
+mov $1,4
+mov $4,15
+mul $3,$2
+mul $1,$2
+sub $5,1
+sub $1,$0
+mov $0,1
+mul $6,$0
+mov $5,$1
+lpb $3,1
+  mov $5,7
+  mov $5,1
+  mul $3,2
+  sub $3,$6
+  add $2,$3
+  sub $6,2
+  lpb $6,3
+    mov $2,3
+    add $5,$0
+    lpb $6,1
+      lpb $4,2
+        mov $6,$0
+        add $4,58
+        add $1,6
+      lpe
+      sub $6,1
+      sub $4,$4
+    lpe
+  lpe
+  add $1,$0
+lpe
+clr $6,11
+add $3,$0
+mov $4,$2
+sub $2,1
+sub $6,$5
+sub $6,1
+mov $1,$3
+mov $18,$17
+mul $18,$17
+mov $19,$18
+mul $19,3
+add $1,$19
+mul $18,$17

@@ -1,65 +1,19 @@
 ; A171609: Lim_{n->inf.} (A171608)^n, = left-shifted vector considered as a sequence.
 ; 1,2,4,6,12,16,24,30,60,72,96,112,168,192,240,270,540,600,720,792,1056,1152,1344,1456
 
-mov $1,7
-mov $1,5
-mov $6,16
-sub $6,5
-add $1,1
-mov $2,$0
-mov $3,7
-sub $2,$1
-sub $1,$1
-add $1,$3
-mov $6,3
-sub $1,4
-add $2,$3
-mov $1,$1
-mov $6,40
-mov $2,1
-add $1,$3
-mov $5,1
+mov $1,10
 lpb $0,1
-  sub $2,$3
   mov $4,$1
-  mov $2,$4
   sub $0,1
-  mov $5,1
-  mov $6,$0
-  sub $3,$1
-  mov $5,$4
   add $0,1
   mov $2,$0
-  sub $1,1
-  mov $3,2
-  mov $3,$3
-  mov $5,$0
-  mov $0,$2
-  sub $5,1
-  add $1,7
-  mov $0,$0
   mov $1,$2
   div $0,2
   sub $1,$0
   mul $1,$4
-  sub $3,$3
-  add $5,$2
-  mov $3,$5
-  add $3,$5
-  add $5,$6
-  mov $2,1
   mov $3,$4
   add $1,$3
-  pow $4,2
-  mul $6,$3
 lpe
-mov $4,1
-sub $2,$4
-sub $2,1
-add $5,10
-add $4,29
-sub $0,$0
-mov $5,$6
 sub $1,10
 div $1,10
 add $1,1

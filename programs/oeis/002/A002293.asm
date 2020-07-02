@@ -1,0 +1,94 @@
+; A002293: Number of dissections of a polygon: binomial(4n,n)/(3n+1).
+; 1,1,4,22,140,969,7084,53820,420732,3362260,27343888,225568798,1882933364,15875338990,134993766600,1156393243320,9969937491420,86445222719724,753310723010608,6594154339031800
+
+mov $10,$0
+mov $12,2
+lpb $12,1
+  clr $0,10
+  sub $12,1
+  mov $0,$10
+  add $0,$12
+  sub $0,1
+  mov $7,$0
+  mov $9,$0
+  add $9,1
+  lpb $9,1
+    clr $0,7
+    sub $9,1
+    mov $0,$7
+    sub $0,$9
+    mov $5,$0
+    mul $0,3
+    mov $6,$0
+    mov $3,2
+    mov $4,2
+    add $3,4
+    mov $1,4
+    add $5,$0
+    mov $5,$5
+    bin $5,$0
+    mov $3,1
+    mov $1,$6
+    mov $1,$0
+    sub $6,$3
+    clr $6,1
+    mov $0,$5
+    mov $4,1
+    mov $0,$0
+    add $1,2
+    add $0,$0
+    sub $1,$3
+    sub $0,$1
+    sub $0,$0
+    mov $2,5
+    mov $4,1
+    mov $0,$4
+    mov $3,$5
+    add $2,$6
+    lpb $0,1
+      sub $0,1
+      add $6,5
+      add $2,4
+      mov $1,$6
+      add $5,9
+      sub $0,1
+      div $0,7
+      pow $2,2
+      mul $1,24
+      sub $0,$0
+      sub $5,1
+      add $1,$6
+      mov $5,$4
+      sub $1,$6
+      mov $0,$1
+      mov $2,1
+      mov $4,$4
+      add $2,1
+      mov $3,39
+      add $0,1
+      mov $4,$0
+      sub $0,1
+      mov $2,1
+      mov $2,1
+      mov $6,2
+      mov $6,$6
+      mul $5,2
+      mov $6,$1
+    lpe
+    sub $4,$0
+    div $5,$1
+    mov $1,$5
+    add $8,$1
+  lpe
+  mov $1,$8
+  mov $13,$12
+  lpb $13,1
+    mov $11,$1
+    sub $13,1
+  lpe
+lpe
+lpb $10,1
+  sub $11,$1
+  mov $10,0
+lpe
+mov $1,$11

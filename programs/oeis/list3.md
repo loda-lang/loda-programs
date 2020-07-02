@@ -123,6 +123,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304164](http://oeis.org/A304164) ([L11 program](304/A304164.asm)): a(n) = 27*n^2 - 21*n + 6 (n>=1).
 * [A304165](http://oeis.org/A304165) ([L27 program](304/A304165.asm)): a(n) = 324*n^2 - 336*n + 102 (n >= 1).
 * [A304166](http://oeis.org/A304166) ([L12 program](304/A304166.asm)): a(n) = 972*n^2 - 1224*n + 414 with n > 0.
+* [A304167](http://oeis.org/A304167) ([L91 program](304/A304167.asm)): a(n) = 3^n - 2^(n-1) + 2 (n>=1).
 * [A304168](http://oeis.org/A304168) ([L10 program](304/A304168.asm)): a(n) = 2*3^n - 2^(n-1) (n>=1).
 * [A304169](http://oeis.org/A304169) ([L26 program](304/A304169.asm)): a(n) = 16*3^n + 2^(n+1) - 26 (n>=1).
 * [A304171](http://oeis.org/A304171) ([L05 program](304/A304171.asm)): a(n) = 87*2^n - 38 (n>=0).
@@ -185,7 +186,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304619](http://oeis.org/A304619) ([L24 program](304/A304619.asm)): a(n) = 324*n^2 - 804*n + 468 (n>=2).
 * [A304659](http://oeis.org/A304659) ([L10 program](304/A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
 * [A304725](http://oeis.org/A304725) ([L06 program](304/A304725.asm)): a(n) = n^4 + 8*n^3 + 20*n^2 + 16*n + 2.
-* [A304726](http://oeis.org/A304726) ([L06 program](304/A304726.asm)): a(n) = n^4 + 4*n^2 + 3.
+* [A304726](http://oeis.org/A304726) ([L05 program](304/A304726.asm)): a(n) = n^4 + 4*n^2 + 3.
 * [A304809](http://oeis.org/A304809) ([L09 program](304/A304809.asm)): Solution (a(n)) of the complementary equation a(n) = b(2n) + b(4n) ; see Comments.
 * [A304830](http://oeis.org/A304830) ([L05 program](304/A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
 * [A304831](http://oeis.org/A304831) ([L05 program](304/A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
@@ -686,6 +687,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323228](http://oeis.org/A323228) ([L05 program](323/A323228.asm)): a(n) = binomial(n + 4, n - 1) + 1.
 * [A323229](http://oeis.org/A323229) ([L10 program](323/A323229.asm)): a(n) = binomial(2*n, n+1) + 1.
 * [A323230](http://oeis.org/A323230) ([L15 program](323/A323230.asm)): a(n) = binomial(2*(n - 1), n - 1) + 1.
+* [A323294](http://oeis.org/A323294) ([L120 program](323/A323294.asm)): Number of 3-uniform hypergraphs spanning n labeled vertices where every two edges have two vertices in common.
 * [A323397](http://oeis.org/A323397) ([L13 program](323/A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323467](http://oeis.org/A323467) ([L10 program](323/A323467.asm)): Smallest number in row n of A323465.
 * [A323610](http://oeis.org/A323610) ([L05 program](323/A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
@@ -737,6 +739,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327706](http://oeis.org/A327706) ([L11 program](327/A327706.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 6 parts can be obtained by coalescing the parts of lambda.
 * [A327707](http://oeis.org/A327707) ([L15 program](327/A327707.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 7 parts can be obtained by coalescing the parts of lambda.
 * [A327708](http://oeis.org/A327708) ([L15 program](327/A327708.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 8 parts can be obtained by coalescing the parts of lambda.
+* [A327999](http://oeis.org/A327999) ([L104 program](327/A327999.asm)): a(n) = Sum_{k=0..2n}(k!*(2n - k)!)/(floor(k/2)!*floor((2n - k)/2)!)^2.
 * [A328010](http://oeis.org/A328010) ([L17 program](328/A328010.asm)): The 5x + 1 sequence beginning at 17.
 * [A328011](http://oeis.org/A328011) ([L14 program](328/A328011.asm)): The 5x + 1 sequence beginning at 1.
 * [A328152](http://oeis.org/A328152) ([L22 program](328/A328152.asm)): a(n) is the number of squares of side length greater than 1 having vertices at the points of an n X n grid of dots.
@@ -750,6 +753,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328950](http://oeis.org/A328950) ([L38 program](328/A328950.asm)): Numerators for the "Minimum-Redundancy Code" card problem.
 * [A328979](http://oeis.org/A328979) ([L04 program](328/A328979.asm)): Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
 * [A328981](http://oeis.org/A328981) ([L20 program](328/A328981.asm)): Indicator function of numbers whose binary representation ends in an even positive number of 0's.
+* [A328987](http://oeis.org/A328987) ([L89 program](328/A328987.asm)): The sequence C(n) defined in the comments (A and B smallest missing numbers, offset 0).
 * [A328990](http://oeis.org/A328990) ([L13 program](328/A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A328994](http://oeis.org/A328994) ([L24 program](328/A328994.asm)): a(n) = n^2*(1+n)*(1+n^2)/4.
 * [A329115](http://oeis.org/A329115) ([L16 program](329/A329115.asm)): a(n) = floor(A026549(n)/5).
@@ -833,9 +837,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330133](http://oeis.org/A330133) ([L05 program](330/A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330144](http://oeis.org/A330144) ([L20 program](330/A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
 * [A330151](http://oeis.org/A330151) ([L14 program](330/A330151.asm)): Partial sums of 4th powers of the even numbers.
-* [A330173](http://oeis.org/A330173) ([L74 program](330/A330173.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(2), s = sqrt(2) + 1, t = sqrt(2) + 2.
+* [A330173](http://oeis.org/A330173) ([L22 program](330/A330173.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(2), s = sqrt(2) + 1, t = sqrt(2) + 2.
 * [A330179](http://oeis.org/A330179) ([L21 program](330/A330179.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = e - 1, s = e, t = e + 1.
-* [A330186](http://oeis.org/A330186) ([L88 program](330/A330186.asm)): a(n) = n + floor(nr/t) + floor(ns/t), where r = tau - 1/2, s = tau, t = tau + 1/2, tau = golden ratio = (1+sqrt(5))/2.
+* [A330186](http://oeis.org/A330186) ([L16 program](330/A330186.asm)): a(n) = n + floor(nr/t) + floor(ns/t), where r = tau - 1/2, s = tau, t = tau + 1/2, tau = golden ratio = (1+sqrt(5))/2.
 * [A330246](http://oeis.org/A330246) ([L05 program](330/A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
 * [A330285](http://oeis.org/A330285) ([L52 program](330/A330285.asm)): The maximum number of arithmetic progressions for a sequence of length n.
 * [A330298](http://oeis.org/A330298) ([L12 program](330/A330298.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 2 even numbers.
@@ -866,6 +870,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331987](http://oeis.org/A331987) ([L16 program](331/A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
 * [A332019](http://oeis.org/A332019) ([L14 program](332/A332019.asm)): The number of cells added in the n-th generation of the following procedure: start by coloring any triangle on the snub square tiling, then repeatedly color every cell that shares a vertex with a colored cell.
 * [A332023](http://oeis.org/A332023) ([L28 program](332/A332023.asm)): T(n, k) = binomial(n+2, 3) + binomial(k+1, 2) + binomial(k, 1). Triangle read by rows, T(n, k) for 0 <= k <= n.
+* [A332026](http://oeis.org/A332026) ([L63 program](332/A332026.asm)): Savannah problem: number of new possibilities after n weeks.
 * [A332027](http://oeis.org/A332027) ([L16 program](332/A332027.asm)): Savannah problem: number of distinct possible populations after n weeks, allowing populations after the empty set.
 * [A332044](http://oeis.org/A332044) ([L07 program](332/A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332057](http://oeis.org/A332057) ([L31 program](332/A332057.asm)): Partial sums (and absolute value of first differences) of A332056: if odd (resp. even) add (resp. subtract) the partial sum to get the next term.

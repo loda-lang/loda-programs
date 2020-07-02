@@ -1,0 +1,130 @@
+; A247619: Start with a single pentagon; at n-th generation add a pentagon at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
+; 1,6,16,36,66,116,186,296,446,676,986,1456,2086,3036,4306,6216,8766,12596,17706,25376,35606,50956,71426,102136,143086,204516,286426,409296,573126,818876,1146546,1638056,2293406,3276436,4587146,6553216,9174646,13106796
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $5,$0
+    mov $0,$0
+    mov $9,$5
+    mov $2,2
+    mov $9,4
+    mov $0,$0
+    lpb $0,1
+      mov $9,$5
+      sub $0,1
+      mov $8,1
+      mul $2,2
+      mov $1,$5
+      sub $5,8
+      mov $1,$8
+      mov $7,$9
+      mov $5,2
+      sub $0,$8
+      mov $6,$8
+      mov $8,1
+      mul $7,$7
+      div $7,2
+      mov $8,5
+      mov $10,$0
+      mov $8,$9
+      add $2,1
+      sub $1,$0
+      mov $9,$5
+      add $1,1
+      mov $4,$1
+      add $9,$10
+      add $5,1
+      sub $5,1
+      mov $3,$7
+      log $6,$0
+      mov $9,8
+      mov $3,$10
+      mov $5,$2
+    lpe
+    mov $1,1
+    mov $5,$9
+    add $10,49
+    mov $2,1
+    mul $7,4
+    mov $2,4
+    mov $1,731
+    sub $7,1
+    sub $1,$3
+    add $0,$8
+    mov $10,98
+    add $5,3
+    mov $5,$3
+    sub $9,5
+    mov $9,1
+    sub $4,6
+    sub $1,5
+    mov $3,1
+    mul $7,2
+    sub $8,1
+    mov $10,$9
+    add $8,5
+    mov $0,$0
+    add $7,$10
+    sub $8,7
+    mov $8,4
+    mov $3,2
+    add $0,1
+    mov $7,$7
+    mov $9,1
+    mul $3,2
+    add $1,$8
+    mov $4,1
+    add $9,2
+    mov $2,3
+    mov $1,7
+    add $3,$2
+    mul $4,$7
+    mov $4,$8
+    add $7,$10
+    mov $7,$0
+    mov $3,3
+    add $3,3
+    mul $8,$3
+    mov $7,$2
+    mov $8,1
+    sub $3,2
+    mov $4,$0
+    mov $2,$4
+    mov $10,$3
+    sub $7,1
+    mov $4,$6
+    mov $4,1
+    sub $10,$3
+    mov $7,1
+    sub $8,2
+    mov $3,$7
+    add $5,$5
+    add $10,$4
+    add $1,$8
+    mov $6,$10
+    mul $2,$3
+    mov $1,$0
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15
+sub $1,1
+div $1,3
+mul $1,5
+add $1,1
