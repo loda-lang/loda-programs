@@ -1,0 +1,86 @@
+; A103334: Number of closed walks of length 2n at any of the nodes of degree 1 on the graph of the (7,4) Hamming code.
+; 1,1,4,24,176,1376,10944,87424,699136,5592576,44739584,357914624,2863312896,22906494976,183251943424,1466015514624,11728124051456,93824992280576,750599937982464,6004799503335424
+
+mov $7,1810
+mov $3,$0
+mov $1,1
+mov $2,$0
+mov $4,$7
+sub $4,15
+add $3,1
+mov $5,2
+mov $7,1
+lpb $2,1
+  mov $6,$3
+  lpb $4,1
+    mul $4,3
+    add $1,2
+    add $2,4
+    mul $7,$5
+    sub $3,$4
+    mul $6,2
+    sub $4,$1
+    mov $8,$6
+    mov $7,$8
+  lpe
+  lpb $5,1
+    mov $3,$5
+    mov $5,1
+    sub $7,1
+    add $8,$2
+    mov $8,2
+    mov $0,$4
+    add $4,$8
+    add $8,1
+    mov $0,9
+    add $0,1
+    mov $5,$3
+    mov $4,$0
+    mul $4,$6
+    mov $3,3
+    sub $5,$1
+  lpe
+  lpb $6,1
+    sub $5,2
+    add $2,16
+    mov $4,10
+    add $6,$6
+    sub $6,$1
+    add $2,$7
+    add $6,1
+    mov $3,2
+    add $4,1
+    mov $5,1
+    mov $4,1
+    mov $8,$0
+    add $0,2
+    mov $3,$8
+    add $2,1
+    mov $8,3
+    add $1,$3
+    add $6,2
+    mov $7,2
+    add $4,$2
+    add $4,$5
+    mul $0,81
+  lpe
+  add $1,1
+  cmp $5,1
+  mov $4,1
+  mul $1,2
+  sub $0,$0
+  sub $6,2
+  add $8,$3
+  mov $4,$5
+  mul $4,2
+  pow $1,$6
+  sub $2,1
+  mov $7,5
+  div $7,2
+  mov $5,1
+  div $0,2
+lpe
+mov $7,$4
+sub $1,1
+div $1,3
+add $1,1

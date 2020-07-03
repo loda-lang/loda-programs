@@ -1,0 +1,72 @@
+; A075318: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the second member of pairs.
+; 3,9,13,19,25,29,35,39,45,51,55,61,67,71,77,81,87,93,97,103,107,113,119,123,129,135,139,145,149,155,161,165,171,177,181,187,191,197,203,207,213,217,223,229,233,239,245,249,255,259,265,271,275,281,285,291,297
+
+mov $13,$0
+mov $2,$0
+mov $4,3
+mov $3,2
+mov $5,9
+mov $3,2
+mov $0,$0
+add $0,1
+mov $4,$5
+mov $1,$2
+add $3,1
+sub $5,$3
+add $2,$3
+pow $0,2
+add $1,6
+mul $4,$3
+mov $6,1
+clr $6,7
+mov $6,1
+mul $1,2
+sub $1,$6
+sub $3,$2
+mov $1,1
+add $5,25
+lpb $0,1
+  add $3,$6
+  add $1,$3
+  sub $4,$1
+  add $0,1
+  add $2,1
+  mov $1,$0
+  add $1,2
+  sub $0,$3
+  add $3,11
+  mov $5,1
+  sub $4,2
+  add $2,1
+  mov $5,$6
+  mov $5,1
+  sub $6,$1
+  add $6,$0
+  mov $0,1
+  sub $3,$4
+  sub $1,$2
+  sub $0,1
+  add $0,$1
+  add $3,1
+  mul $1,2
+  sub $1,1
+lpe
+sub $6,$4
+mov $5,$2
+sub $1,1
+mov $5,$3
+mov $0,$0
+mov $5,$1
+add $5,1
+sub $4,$1
+mov $0,$1
+add $1,5
+mov $4,11
+mov $1,$2
+sub $1,2
+mov $14,$13
+mov $15,$14
+mul $15,3
+add $1,$15
+mul $14,$13
+mul $14,$13

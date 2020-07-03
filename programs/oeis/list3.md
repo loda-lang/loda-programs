@@ -123,7 +123,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304164](http://oeis.org/A304164) ([L11 program](304/A304164.asm)): a(n) = 27*n^2 - 21*n + 6 (n>=1).
 * [A304165](http://oeis.org/A304165) ([L27 program](304/A304165.asm)): a(n) = 324*n^2 - 336*n + 102 (n >= 1).
 * [A304166](http://oeis.org/A304166) ([L12 program](304/A304166.asm)): a(n) = 972*n^2 - 1224*n + 414 with n > 0.
-* [A304167](http://oeis.org/A304167) ([L91 program](304/A304167.asm)): a(n) = 3^n - 2^(n-1) + 2 (n>=1).
+* [A304167](http://oeis.org/A304167) ([L12 program](304/A304167.asm)): a(n) = 3^n - 2^(n-1) + 2 (n>=1).
 * [A304168](http://oeis.org/A304168) ([L10 program](304/A304168.asm)): a(n) = 2*3^n - 2^(n-1) (n>=1).
 * [A304169](http://oeis.org/A304169) ([L26 program](304/A304169.asm)): a(n) = 16*3^n + 2^(n+1) - 26 (n>=1).
 * [A304171](http://oeis.org/A304171) ([L05 program](304/A304171.asm)): a(n) = 87*2^n - 38 (n>=0).
@@ -457,6 +457,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315033](http://oeis.org/A315033) ([L24 program](315/A315033.asm)): Coordination sequence Gal.5.129.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315036](http://oeis.org/A315036) ([L24 program](315/A315036.asm)): Coordination sequence Gal.4.122.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315050](http://oeis.org/A315050) ([L18 program](315/A315050.asm)): Coordination sequence Gal.5.140.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315057](http://oeis.org/A315057) ([L120 program](315/A315057.asm)): Coordination sequence Gal.4.57.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315075](http://oeis.org/A315075) ([L29 program](315/A315075.asm)): Coordination sequence Gal.6.350.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315170](http://oeis.org/A315170) ([L26 program](315/A315170.asm)): Coordination sequence Gal.6.119.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315172](http://oeis.org/A315172) ([L22 program](315/A315172.asm)): Coordination sequence Gal.5.54.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -595,6 +596,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319006](http://oeis.org/A319006) ([L13 program](319/A319006.asm)): Sum of the next n positive integers repeated (A008619).
 * [A319007](http://oeis.org/A319007) ([L12 program](319/A319007.asm)): Sum of the next n nonnegative integers repeated (A004526).
 * [A319127](http://oeis.org/A319127) ([L04 program](319/A319127.asm)): Crossing number of the complete bipartite graph K_{6,n}.
+* [A319258](http://oeis.org/A319258) ([L110 program](319/A319258.asm)): a(n) = 1 + 2*3 + 4 + 5*6 + 7 + 8*9 + 10 + 11*12 + ... + (up to n).
 * [A319279](http://oeis.org/A319279) ([L08 program](319/A319279.asm)): Numbers that are congruent to {0, 3, 7, 10} mod 12.
 * [A319280](http://oeis.org/A319280) ([L09 program](319/A319280.asm)): Numbers that are congruent to {0, 4, 7, 11} mod 12.
 * [A319288](http://oeis.org/A319288) ([L08 program](319/A319288.asm)): a(n) is the smallest k such that A319284(n, k) >= A319284(n, j) for all 0 <= j <= n.
@@ -687,7 +689,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323228](http://oeis.org/A323228) ([L05 program](323/A323228.asm)): a(n) = binomial(n + 4, n - 1) + 1.
 * [A323229](http://oeis.org/A323229) ([L10 program](323/A323229.asm)): a(n) = binomial(2*n, n+1) + 1.
 * [A323230](http://oeis.org/A323230) ([L15 program](323/A323230.asm)): a(n) = binomial(2*(n - 1), n - 1) + 1.
-* [A323294](http://oeis.org/A323294) ([L120 program](323/A323294.asm)): Number of 3-uniform hypergraphs spanning n labeled vertices where every two edges have two vertices in common.
+* [A323294](http://oeis.org/A323294) ([L41 program](323/A323294.asm)): Number of 3-uniform hypergraphs spanning n labeled vertices where every two edges have two vertices in common.
 * [A323397](http://oeis.org/A323397) ([L13 program](323/A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323467](http://oeis.org/A323467) ([L10 program](323/A323467.asm)): Smallest number in row n of A323465.
 * [A323610](http://oeis.org/A323610) ([L05 program](323/A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
@@ -739,7 +741,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327706](http://oeis.org/A327706) ([L11 program](327/A327706.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 6 parts can be obtained by coalescing the parts of lambda.
 * [A327707](http://oeis.org/A327707) ([L15 program](327/A327707.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 7 parts can be obtained by coalescing the parts of lambda.
 * [A327708](http://oeis.org/A327708) ([L15 program](327/A327708.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 8 parts can be obtained by coalescing the parts of lambda.
-* [A327999](http://oeis.org/A327999) ([L104 program](327/A327999.asm)): a(n) = Sum_{k=0..2n}(k!*(2n - k)!)/(floor(k/2)!*floor((2n - k)/2)!)^2.
+* [A327999](http://oeis.org/A327999) ([L22 program](327/A327999.asm)): a(n) = Sum_{k=0..2n}(k!*(2n - k)!)/(floor(k/2)!*floor((2n - k)/2)!)^2.
 * [A328010](http://oeis.org/A328010) ([L17 program](328/A328010.asm)): The 5x + 1 sequence beginning at 17.
 * [A328011](http://oeis.org/A328011) ([L14 program](328/A328011.asm)): The 5x + 1 sequence beginning at 1.
 * [A328152](http://oeis.org/A328152) ([L22 program](328/A328152.asm)): a(n) is the number of squares of side length greater than 1 having vertices at the points of an n X n grid of dots.
@@ -753,7 +755,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328950](http://oeis.org/A328950) ([L38 program](328/A328950.asm)): Numerators for the "Minimum-Redundancy Code" card problem.
 * [A328979](http://oeis.org/A328979) ([L04 program](328/A328979.asm)): Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
 * [A328981](http://oeis.org/A328981) ([L20 program](328/A328981.asm)): Indicator function of numbers whose binary representation ends in an even positive number of 0's.
-* [A328987](http://oeis.org/A328987) ([L89 program](328/A328987.asm)): The sequence C(n) defined in the comments (A and B smallest missing numbers, offset 0).
+* [A328987](http://oeis.org/A328987) ([L24 program](328/A328987.asm)): The sequence C(n) defined in the comments (A and B smallest missing numbers, offset 0).
 * [A328990](http://oeis.org/A328990) ([L13 program](328/A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A328994](http://oeis.org/A328994) ([L24 program](328/A328994.asm)): a(n) = n^2*(1+n)*(1+n^2)/4.
 * [A329115](http://oeis.org/A329115) ([L16 program](329/A329115.asm)): a(n) = floor(A026549(n)/5).
@@ -870,7 +872,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331987](http://oeis.org/A331987) ([L16 program](331/A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
 * [A332019](http://oeis.org/A332019) ([L14 program](332/A332019.asm)): The number of cells added in the n-th generation of the following procedure: start by coloring any triangle on the snub square tiling, then repeatedly color every cell that shares a vertex with a colored cell.
 * [A332023](http://oeis.org/A332023) ([L28 program](332/A332023.asm)): T(n, k) = binomial(n+2, 3) + binomial(k+1, 2) + binomial(k, 1). Triangle read by rows, T(n, k) for 0 <= k <= n.
-* [A332026](http://oeis.org/A332026) ([L63 program](332/A332026.asm)): Savannah problem: number of new possibilities after n weeks.
+* [A332026](http://oeis.org/A332026) ([L18 program](332/A332026.asm)): Savannah problem: number of new possibilities after n weeks.
 * [A332027](http://oeis.org/A332027) ([L16 program](332/A332027.asm)): Savannah problem: number of distinct possible populations after n weeks, allowing populations after the empty set.
 * [A332044](http://oeis.org/A332044) ([L07 program](332/A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332057](http://oeis.org/A332057) ([L31 program](332/A332057.asm)): Partial sums (and absolute value of first differences) of A332056: if odd (resp. even) add (resp. subtract) the partial sum to get the next term.
@@ -887,7 +889,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A333320](http://oeis.org/A333320) ([L06 program](333/A333320.asm)): a(n) is the number of subsets of {1..n} that contain exactly 4 odd and 1 even numbers.
 * [A333321](http://oeis.org/A333321) ([L08 program](333/A333321.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 4 even numbers.
 * [A333525](http://oeis.org/A333525) ([L05 program](333/A333525.asm)): Degree of polytope representing the number n.
-* [A333574](http://oeis.org/A333574) ([L12 program](333/A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.
+* [A333574](http://oeis.org/A333574) ([L10 program](333/A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.
 * [A333616](http://oeis.org/A333616) ([L22 program](333/A333616.asm)): Expansion of x*(1 + 2*x + x^2 - 4*x^3 - x^4 + 2*x^5)/((1 - x)^3*(1 + x)^2).
 * [A334277](http://oeis.org/A334277) ([L18 program](334/A334277.asm)): Perimeters of almost-equilateral Heronian triangles.
 * [A334320](http://oeis.org/A334320) ([L44 program](334/A334320.asm)): Number of even integers in base n with exactly two distinct digits.
