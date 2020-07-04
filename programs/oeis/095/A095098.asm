@@ -1,108 +1,59 @@
 ; A095098: Fib001 numbers: those n for which the Zeckendorf expansion A014417(n) ends with two zeros and a final one.
 ; 6,9,14,19,22,27,30,35,40,43,48,53,56,61,64,69,74,77,82,85,90,95,98,103,108,111,116,119,124,129,132,137,142,145,150,153,158,163,166,171,174,179,184,187,192,197,200,205,208,213,218,221,226,229,234,239,242
 
-mov $20,$0
-mov $22,$0
-add $22,1
-lpb $22,1
-  clr $0,20
-  sub $22,1
-  mov $0,$20
-  sub $0,$22
-  mov $16,$0
-  mov $18,2
-  lpb $18,1
-    clr $0,16
-    sub $18,1
-    mov $0,$16
-    add $0,$18
-    sub $0,0
+mov $6,$0
+mov $4,$0
+add $4,1
+lpb $4,1
+  sub $4,1
+  mov $0,$6
+  sub $0,$4
+  mov $10,$0
+  mov $8,2
+  lpb $8,1
+    sub $8,1
+    mov $0,$10
+    add $0,$8
     mov $13,$0
     mov $2,$0
-    mov $4,3
     mov $3,2
-    mov $5,9
-    mov $3,2
-    mov $0,$0
     add $0,1
-    mov $4,$5
-    mov $1,$2
     add $3,1
-    sub $5,$3
     add $2,$3
     pow $0,2
-    add $1,6
-    mul $4,$3
-    mov $6,1
-    clr $6,7
-    mov $6,1
-    mul $1,2
-    sub $1,$6
-    sub $3,$2
-    mov $1,1
-    add $5,25
     lpb $0,1
-      add $3,$6
-      add $1,$3
-      sub $4,$1
       add $0,1
       add $2,1
       mov $1,$0
       add $1,2
-      sub $0,$3
-      add $3,11
-      mov $5,1
-      sub $4,2
       add $2,1
-      mov $5,$6
-      mov $5,1
-      sub $6,$1
-      add $6,$0
       mov $0,1
-      sub $3,$4
       sub $1,$2
       sub $0,1
       add $0,$1
-      add $3,1
-      mul $1,2
-      sub $1,1
     lpe
-    sub $6,$4
-    mov $5,$2
-    sub $1,1
-    mov $5,$3
-    mov $0,$0
-    mov $5,$1
-    add $5,1
-    sub $4,$1
-    mov $0,$1
-    add $1,5
-    mov $4,11
     mov $1,$2
     sub $1,4
-    mov $14,$13
-    mov $15,$14
-    mul $15,1
-    add $1,$15
-    mul $14,$13
-    mul $14,$13
-    mov $19,$18
-    lpb $19,1
-      mov $17,$1
-      sub $19,1
+    mov $12,$13
+    mov $11,$12
+    add $1,$11
+    mov $7,$8
+    lpb $7,1
+      mov $9,$1
+      sub $7,1
     lpe
   lpe
-  lpb $16,1
-    sub $17,$1
-    mov $16,0
+  lpb $10,1
+    sub $9,$1
+    mov $10,0
   lpe
-  mov $1,$17
+  mov $1,$9
   sub $1,1
   mul $1,2
   add $1,4
-  add $21,$1
+  add $5,$1
 lpe
-mov $1,$21
+mov $1,$5
 sub $1,12
 div $1,2
 add $1,6

@@ -1,0 +1,126 @@
+; A193911: Sums of the diagonals of the matrix formed by listing the h-Stohr sequences in increasing order.
+; 1,3,7,14,25,43,69,110,167,255,375,558,805,1179,1681,2438,3451,4975,7011,10070,14153,20283,28461,40734,57103,81663,114415,163550,229069,327355,458409,654998,917123,1310319,1834587,2620998,3669553,5242395,7339525,10485230
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $8,2
+    mov $2,$0
+    mov $6,$8
+    mov $7,1
+    lpb $0,1
+      mov $1,$0
+      sub $6,1
+      mov $10,3
+      mov $8,$6
+      mov $3,$2
+      mov $4,$2
+      mov $8,3
+      mov $9,$0
+      mov $9,$4
+      sub $2,1
+      mov $5,$0
+      add $8,$9
+      sub $4,$8
+      add $5,$5
+      mov $8,$8
+      mul $2,2
+      mov $10,$3
+      mov $3,1
+      mov $1,$10
+      sub $4,$3
+      mov $3,7
+      mov $10,1
+      mov $7,$3
+      mov $3,$6
+      mov $1,2
+      add $6,5
+      mov $10,1
+      add $5,$5
+      sub $1,$3
+      add $6,3
+      mov $8,$6
+      add $1,8
+      mov $1,1
+      mov $5,1
+      sub $6,$0
+      sub $0,1
+      mul $7,$2
+      sub $10,$5
+      sub $7,$5
+      sub $9,$2
+      mov $7,1
+      sub $1,7
+      sub $1,$7
+      sub $4,$1
+      add $9,44
+      sub $7,$7
+      sub $6,$5
+      mov $8,$6
+      mov $6,1
+      mov $2,$2
+      mov $1,3
+      sub $3,1
+      add $2,$7
+      sub $2,$0
+      sub $5,3
+      sub $0,$10
+      mul $6,$7
+      sub $3,1
+      sub $0,1
+      add $6,$8
+      mov $6,1
+      sub $2,$10
+      mov $4,1
+      pow $1,$0
+      mov $1,$5
+      sub $6,$7
+      mov $4,2
+    lpe
+    div $3,2
+    pow $10,$3
+    mov $3,0
+    mul $5,$4
+    sub $6,$5
+    sub $7,1
+    mov $3,1
+    add $5,3
+    mov $4,$0
+    add $10,$7
+    mov $9,1
+    div $7,$8
+    mov $10,$2
+    sub $0,$2
+    mov $7,1
+    mov $10,9
+    mov $6,$10
+    sub $5,1
+    mov $7,$6
+    mul $6,3
+    add $7,$10
+    add $2,1
+    pow $5,$6
+    mov $9,$5
+    mov $6,1
+    add $8,$7
+    mov $6,$5
+    mov $1,$2
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15

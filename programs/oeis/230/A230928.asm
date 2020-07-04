@@ -1,0 +1,107 @@
+; A230928: Number of black-square subarrays of (n+2) X (1+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
+; 2,2,8,8,42,42,208,208,1042,1042,5208,5208,26042,26042,130208,130208,651042,651042,3255208,3255208,16276042,16276042,81380208,81380208,406901042,406901042,2034505208,2034505208,10172526042,10172526042
+
+mov $7,$0
+mov $8,8
+mov $9,6
+mov $10,$7
+mov $1,7
+mov $3,6
+sub $3,$9
+mov $5,1
+mov $8,5
+mov $2,$8
+mov $7,1
+mov $10,1
+div $9,$8
+mov $3,$3
+div $0,2
+mov $0,$0
+mov $0,$0
+div $10,3
+add $5,$5
+mov $3,$0
+sub $9,$0
+mov $4,$5
+mov $0,3
+add $3,$7
+add $2,1
+pow $8,$3
+add $8,2
+mov $1,$0
+div $8,$2
+mov $3,$9
+add $1,$5
+add $9,1
+mov $9,18
+sub $4,$9
+mov $2,$7
+mov $1,1
+add $7,4
+mov $4,1
+mov $5,2
+add $9,$5
+add $0,1
+cmp $4,1
+sub $4,1
+lpb $0,1
+  sub $0,1
+  add $10,$4
+  add $5,$10
+  sub $2,11
+  mul $2,$0
+  pow $0,$10
+  add $10,$0
+  mov $9,$0
+  mul $3,$5
+  mov $0,1
+  mov $4,$0
+  add $4,$0
+  mov $1,1
+  add $1,2
+  mov $1,$0
+  mul $3,252
+  mul $8,28
+  mov $1,$8
+  mul $1,2
+  mul $1,2
+  mov $4,10
+  sub $4,$3
+  mov $6,1
+  mov $0,$3
+  sub $3,$3
+  div $0,2
+  mov $7,1
+  sub $6,$4
+  sub $10,1
+  sub $5,$1
+  mov $0,2
+  div $8,2
+  mov $10,$3
+lpe
+add $3,1
+mov $5,7
+sub $9,$4
+mul $5,2
+mov $3,$1
+mov $5,$7
+sub $7,1
+mov $5,$5
+add $3,$1
+mov $9,1
+div $6,3
+mul $3,2
+add $1,1
+mul $2,2
+add $8,$5
+add $9,8
+mov $1,$8
+sub $9,$4
+add $10,$8
+add $8,1
+mov $3,$10
+mov $10,$1
+sub $1,15
+div $1,14
+mul $1,2
+add $1,2

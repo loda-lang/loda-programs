@@ -1,85 +1,22 @@
 ; A147997: Number of nonnegative even integers <= Fibonacci(n).
 ; 1,1,1,2,2,3,5,7,11,18,28,45,73,117,189,306,494,799,1293,2091,3383,5474,8856,14329,23185,37513,60697,98210,158906,257115,416021,673135,1089155,1762290,2851444,4613733,7465177,12078909
 
-mov $3,1
-mov $4,$0
-mov $5,$4
-clr $2,4
-mov $6,1
+mov $2,1
 lpb $0,1
-  mov $8,5
-  mov $2,1
   sub $0,1
-  add $3,$6
-  div $8,3
-  add $4,1
-  mov $6,$5
-  sub $8,1
+  add $3,$2
+  mov $2,$5
   mov $5,$3
-  pow $8,$6
-  sub $2,$3
-  mov $1,$4
-  mov $1,3
-  mov $7,1
 lpe
-add $5,$1
-mov $4,$0
-mul $8,$2
 mov $1,1
-add $4,$2
-mov $7,1
 add $1,$3
-mul $2,$5
-sub $7,1
-mov $4,$8
-mov $3,$0
-sub $0,$0
-sub $4,$2
-mov $3,$1
-mul $2,$7
-add $8,1
-sub $5,1
-add $4,$3
-mov $4,$2
-mov $1,$1
-mul $6,2
-sub $6,1
-mov $4,7
-mov $6,1
-sub $8,1
-mov $4,$5
-sub $1,$6
-mov $0,$5
-add $2,1
-mov $8,$7
-mov $3,2
-mov $7,$7
-add $3,$3
+mov $2,1
+sub $1,$2
 gcd $4,2
 add $1,$4
-sub $8,10
-pow $4,$7
-add $0,1
-mov $6,$1
-add $5,$2
-mov $1,2
-add $8,$5
-add $4,1
-div $5,2
-add $6,7
-add $1,3
-mov $0,$6
-mov $2,$3
-mov $4,$7
-add $3,1
-mov $2,1
-mov $3,$5
-sub $7,9
-mov $4,16
-mov $3,25
-mov $3,$7
-mov $3,2
-cmp $1,3
+mov $2,$1
+add $2,7
+mov $0,$2
 mov $1,$0
 sub $1,9
 div $1,2

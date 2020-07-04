@@ -1,85 +1,17 @@
 ; A211221: For any partition of n consider the product of the sigma of each element. Sequence gives the maximum of such values.
 ; 1,3,4,9,12,27,36,81,108,243,324,729,972,2187,2916,6561,8748,19683,26244,59049,78732,177147,236196,531441,708588,1594323,2125764,4782969,6377292,14348907,19131876,43046721,57395628,129140163,172186884,387420489,516560652
 
-mov $1,$0
-mov $4,4
-mov $5,$0
-mov $1,$4
-sub $4,$4
-mov $0,$5
-mov $8,1
-mov $2,$1
-mov $3,$4
-add $3,1
-mov $2,$0
-sub $2,1
-sub $2,5
+mov $4,1
+mov $3,1
 mov $2,$0
 lpb $2,1
-  mov $6,1
   add $3,1
-  mov $7,$6
-  mov $1,1
-  mul $7,8
-  mov $0,$8
-  mul $5,2
-  mov $4,1
+  mov $0,$4
   add $0,1
-  lpb $4,1
-    mul $7,$7
-    sub $3,$8
-    sub $6,$5
-    sub $4,$5
-    mov $8,1
-    mov $2,8
-    mov $1,10
-    sub $3,$5
-    sub $1,$1
-    mov $4,3
-    mov $0,$6
-    add $3,1
-    sub $5,2
-    add $2,4
-    mov $0,$4
-  lpe
-  sub $7,1
-  mov $8,$3
-  lpb $5,1
-    mul $1,14
-    add $4,5
-    mov $1,$4
-    sub $5,$5
-    add $3,1
-    mul $3,$8
-    mov $1,2
-    sub $4,14
-    add $8,$4
-    add $3,2
-  lpe
-  sub $6,1
-  mov $6,2
+  mov $4,$3
   mul $0,3
   mov $3,$0
-  add $6,1
-  lpb $6,1
-    mov $1,1
-    add $5,3
-    mul $0,$1
-    mov $3,3
-    mov $7,$7
-    sub $8,$4
-    mov $4,1
-    add $3,$6
-    mov $6,12
-    sub $6,$5
-    sub $5,$7
-    mov $8,$5
-    mov $7,3
-  lpe
   sub $2,1
-  add $7,6
-  add $7,$7
-  mov $4,$7
 lpe
 mov $1,$0
 div $1,3

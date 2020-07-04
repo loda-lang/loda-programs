@@ -1,105 +1,57 @@
 ; A075319: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the sum of the members of pairs.
 ; 4,14,20,30,40,46,56,62,72,82,88,98,108,114,124,130,140,150,156,166,172,182,192,198,208,218,224,234,240,250,260,266,276,286,292,302,308,318,328,334,344,350,360,370,376,386,396,402,412,418,428,438,444,454,460
 
-mov $20,$0
-mov $22,$0
-add $22,1
-lpb $22,1
-  clr $0,20
-  sub $22,1
-  mov $0,$20
-  sub $0,$22
-  mov $16,$0
-  mov $18,2
-  lpb $18,1
-    clr $0,16
-    sub $18,1
-    mov $0,$16
-    add $0,$18
+mov $6,$0
+mov $4,$0
+add $4,1
+lpb $4,1
+  sub $4,1
+  mov $0,$6
+  sub $0,$4
+  mov $10,$0
+  mov $8,2
+  lpb $8,1
+    sub $8,1
+    mov $0,$10
+    add $0,$8
     sub $0,1
     mov $13,$0
     mov $2,$0
-    mov $4,3
     mov $3,2
-    mov $5,9
-    mov $3,2
-    mov $0,$0
     add $0,1
-    mov $4,$5
-    mov $1,$2
     add $3,1
-    sub $5,$3
     add $2,$3
     pow $0,2
-    add $1,6
-    mul $4,$3
-    mov $6,1
-    clr $6,7
-    mov $6,1
-    mul $1,2
-    sub $1,$6
-    sub $3,$2
-    mov $1,1
-    add $5,25
     lpb $0,1
-      add $3,$6
-      add $1,$3
-      sub $4,$1
       add $0,1
       add $2,1
       mov $1,$0
       add $1,2
-      sub $0,$3
-      add $3,11
-      mov $5,1
-      sub $4,2
       add $2,1
-      mov $5,$6
-      mov $5,1
-      sub $6,$1
-      add $6,$0
       mov $0,1
-      sub $3,$4
       sub $1,$2
       sub $0,1
       add $0,$1
-      add $3,1
-      mul $1,2
-      sub $1,1
     lpe
-    sub $6,$4
-    mov $5,$2
-    sub $1,1
-    mov $5,$3
-    mov $0,$0
-    mov $5,$1
-    add $5,1
-    sub $4,$1
-    mov $0,$1
-    add $1,5
-    mov $4,11
     mov $1,$2
     sub $1,4
-    mov $14,$13
-    mov $15,$14
-    mul $15,1
-    add $1,$15
-    mul $14,$13
-    mul $14,$13
-    mov $19,$18
-    lpb $19,1
-      mov $17,$1
-      sub $19,1
+    mov $12,$13
+    mov $11,$12
+    add $1,$11
+    mov $7,$8
+    lpb $7,1
+      mov $9,$1
+      sub $7,1
     lpe
   lpe
-  lpb $16,1
-    sub $17,$1
-    mov $16,0
+  lpb $10,1
+    sub $9,$1
+    mov $10,0
   lpe
-  mov $1,$17
+  mov $1,$9
   sub $1,1
   mul $1,2
   add $1,4
-  add $21,$1
+  add $5,$1
 lpe
-mov $1,$21
+mov $1,$5

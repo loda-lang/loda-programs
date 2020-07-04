@@ -1,95 +1,26 @@
 ; A025710: Index of 5^n within sequence of numbers of form 5^i*9^j.
 ; 1,2,4,7,10,14,19,25,31,38,46,55,64,74,85,96,108,121,135,149,164,180,197,214,232,251,271,291,312,334,356,379,403,428,453,479,506,534,562,591,621,652,683,715,748,781,815,850,886,922,959,997,1036,1075,1115,1156,1198
 
-mov $9,$0
-mov $11,$0
-add $11,1
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  sub $0,$11
-  mov $6,36
-  mov $6,$0
-  mov $3,$0
-  mov $8,1
-  add $8,4
-  mul $0,$3
-  mul $0,$3
-  mov $8,1
-  mov $7,$6
-  add $3,$3
-  mul $3,$8
-  mov $7,1
-  div $6,3
-  mov $1,$7
-  mov $4,1
-  lpb $0,1
-    add $6,1
-    mov $2,$7
-    div $3,$1
-    mov $5,$3
-    mov $8,1
-    mov $4,2
-    sub $8,2
-    sub $6,$2
-    mov $8,2
-    div $3,2
-    mov $7,$5
-    mov $2,$1
-    add $8,2
-    add $3,$8
-    add $0,2
-    mul $5,11
-    mov $7,$2
-    sub $5,1
-    mul $6,2
-    add $7,1
-    mov $3,$2
-    mov $7,$5
-    add $2,$5
-    mov $6,1
-    sub $0,$0
-    add $6,$8
-    add $7,1
-    mov $8,$5
-    gcd $3,5
-    sub $6,1
-    div $5,30
-    mov $8,2
-    mov $7,$4
-    mov $4,2
-    mov $1,6
-    add $3,$8
-    add $2,$3
-    add $6,6
-    sub $2,$7
-    div $2,15
-    sub $0,1
-    mov $3,2
-    add $8,3
-    mov $2,1
-  lpe
-  pow $1,$0
-  mov $6,$4
-  cmp $7,1
-  mov $1,$8
-  pow $4,$7
-  sub $0,8736
-  mov $7,$7
-  sub $0,5
-  mov $1,$5
-  sub $5,$7
-  pow $8,$7
-  add $7,$4
-  add $4,$1
-  mov $6,1
-  mov $3,24
-  sub $7,1
-  mul $5,2
+mov $8,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$8
   sub $0,$2
-  mov $3,1
+  mov $3,$0
+  mul $3,2
+  lpb $0,1
+    mov $5,$3
+    mul $5,11
+    sub $5,1
+    sub $0,$0
+    div $5,30
+  lpe
+  pow $4,$7
+  mov $1,$5
+  add $4,$1
   mov $1,$4
-  add $10,$1
+  add $6,$1
 lpe
-mov $1,$10
+mov $1,$6
