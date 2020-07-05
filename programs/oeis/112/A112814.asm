@@ -1,86 +1,21 @@
 ; A112814: Numbers k such that lcm(1,2,3,...,k)/5 equals the denominator of the k-th harmonic number H(k).
 ; 105,106,107,108,109,2625,2626,2627,2628,2629,2630,2631,2632,2633,2634,2635,2636,2637,2638,2639,2640,2641,2642,2643,2644,2645,2646,2647,2648,2649,2650,2651,2652,2653,2654,2655,2656,2657,2658,2659,2660,2661,2662
 
-mov $7,2
 mov $6,4
-mov $1,$7
 add $6,$0
-mov $3,1
-mov $5,$7
+mov $5,2
 mov $2,$0
 add $6,1
 add $2,2520
 lpb $0,1
-  mov $1,1
-  mov $0,$7
-  mov $8,$5
-  mov $0,$0
-  add $7,4
-  mov $6,$7
-  add $0,$1
-  mov $3,1
-  div $7,2
-  div $7,6
-  mov $1,3
-  add $7,20
-  add $7,$3
-  sub $0,1
-  add $2,$8
-  mov $4,$2
-  add $7,1
-  mov $6,1
-  sub $4,5
-  mov $6,18
-  mov $0,1
-  mov $6,$7
-  add $6,27
-  mov $7,$4
-  add $7,$1
-  mov $0,2
-  mov $8,1
-  add $6,2
-  add $8,1
-  mov $8,$4
+  mov $3,$5
+  add $2,$3
   sub $2,3
-  add $0,$8
-  sub $3,$7
-  mov $3,$7
-  mov $3,$8
-  mov $8,1
-  mov $7,1
-  mov $0,14
-  mov $4,$7
-  mov $8,4
-  mov $5,27
-  mul $8,$1
-  mov $7,1
-  add $4,$2
-  sub $0,7
-  mov $8,3
   mov $4,$2
-  mov $2,105
-  add $3,1
-  mov $0,2
-  mov $0,$2
-  mov $7,13
-  mul $8,$5
-  add $0,$8
   mov $6,1
-  sub $2,$4
-  add $7,$8
-  sub $1,$3
-  sub $0,1
-  add $1,1
-  mov $2,2
-  mov $3,$4
-  add $2,1
   add $6,$4
-  mov $6,$6
   mov $0,4
-  mul $4,$5
-  add $3,$0
 lpe
-sub $7,1
 mov $1,$6
 sub $1,5
 add $1,105

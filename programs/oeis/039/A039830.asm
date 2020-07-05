@@ -1,0 +1,107 @@
+; A039830: Number of different coefficient values in expansion of Product (1-q^1+q^2-..+(-q)^i), i=1 to n.
+; 2,4,4,6,16,22,15,19,46,56,34,40,92,106,61,69,154,172,96,106,232,254,139,151,326,352,190,204,436,466,249,265,562,596,316,334,704,742,391,411,862,904,474,496,1036,1082,565,589,1226,1276,664,690,1432,1486,771
+
+mov $4,$0
+mov $9,$0
+mov $3,$0
+add $3,$9
+add $3,$4
+mov $8,$4
+mov $5,1
+mov $2,1
+sub $4,$0
+pow $4,$2
+mov $1,$4
+sub $4,2
+mov $6,1
+mov $7,1
+mov $10,$9
+mul $7,3
+mov $1,2
+mov $3,$1
+mul $8,50
+mov $6,$10
+sub $5,28
+add $7,1
+add $10,1
+mov $2,1
+mov $10,8
+mov $0,$3
+mov $8,$6
+mov $7,1
+bin $4,$1
+mov $3,$9
+sub $6,$1
+mov $3,$7
+sub $3,1
+mov $9,$9
+sub $2,$1
+mov $2,2
+mul $2,$7
+mov $6,$9
+add $0,$9
+div $3,2
+mov $6,7
+bin $10,$6
+div $9,$1
+add $4,$1
+sub $1,1
+mov $8,1
+sub $8,5
+mul $10,$5
+mov $10,2
+bin $0,2
+add $8,1
+mov $1,6
+mov $1,3
+add $3,$4
+add $4,$10
+mov $10,3
+gcd $2,$9
+mul $8,$9
+mov $10,$9
+mov $1,$6
+mov $1,$3
+lpb $0,1
+  mov $7,$6
+  sub $0,1
+  mov $9,$8
+  sub $3,1
+  add $1,$2
+  add $9,1
+  mov $9,$5
+  mul $3,$4
+  div $10,2
+  add $6,$0
+  add $3,1
+  mov $1,$1
+  add $0,$6
+  sub $4,$2
+  mov $4,8
+  add $9,$1
+  pow $7,6
+  add $2,1
+  mov $7,$3
+lpe
+mov $6,$3
+mov $10,1
+mov $7,2
+sub $9,3
+mul $4,2
+add $4,1
+add $3,6
+mov $3,1
+add $7,$3
+mov $7,$2
+mul $7,$1
+add $4,8
+mov $8,4
+mov $10,$6
+add $10,6
+mul $10,$7
+mov $8,$5
+mul $0,$2
+mov $1,$0
+sub $1,2
+div $1,2
+add $1,2
