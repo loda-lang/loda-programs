@@ -1,0 +1,98 @@
+; A282473: Multiples of 9 which cannot be expressed as the difference between a natural number k and its digit sum s(k).
+; 90,189,288,387,486,585,684,783,882,981,990,1089,1188,1287,1386,1485,1584,1683,1782,1881,1980,1989,2088,2187,2286,2385,2484,2583,2682,2781,2880,2979,2988,3087,3186,3285,3384,3483,3582,3681,3780,3879,3978,3987,4086,4185,4284,4383,4482,4581,4680,4779,4878,4977,4986
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $5,$0
+  mov $1,$0
+  mov $8,1
+  add $5,1
+  mov $4,1
+  mov $2,3
+  mov $6,$0
+  mov $2,1
+  mov $3,$5
+  mov $7,1
+  mov $4,1
+  mov $5,$3
+  div $4,$5
+  add $0,2
+  add $3,$4
+  lpb $0,1
+    mov $8,3
+    mov $8,$7
+    div $5,10
+    add $6,1
+    add $8,1
+    mul $1,2
+    add $1,$6
+    mov $1,$5
+    add $2,$2
+    mov $2,4
+    sub $4,3
+    mov $5,10
+    add $5,$0
+    mov $2,$5
+    mov $8,5
+    gcd $3,$2
+    mov $2,$6
+    mov $7,$2
+    mul $0,2
+    mul $0,2
+    sub $8,$0
+    add $1,$6
+    mov $2,$1
+    mov $0,$8
+    sub $2,$0
+    add $2,1
+    sub $3,$4
+    mov $6,1
+    mov $5,50
+    mul $2,2
+    add $3,$8
+    mov $4,$7
+    sub $5,$8
+    add $6,$8
+    sub $0,1
+    sub $5,$6
+    sub $5,$3
+    sub $4,$5
+    sub $0,$3
+    mov $3,$1
+    mov $4,1
+  lpe
+  mov $4,$2
+  mod $7,$3
+  mov $4,1
+  mov $2,1
+  mul $7,$4
+  pow $2,3
+  sub $4,$1
+  sub $2,$2
+  add $2,1
+  mov $6,$3
+  sub $2,1
+  mul $4,3
+  mov $7,$6
+  mov $1,8
+  sub $7,7
+  add $2,$3
+  mov $3,3
+  add $2,$6
+  mov $6,4
+  mov $0,8
+  mov $7,4
+  add $2,2
+  mov $1,$5
+  sub $1,38
+  mul $1,9
+  add $1,9
+  add $10,$1
+lpe
+mov $1,$10

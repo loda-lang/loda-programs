@@ -1,0 +1,151 @@
+; A245418: Number of nonnegative integers with property that their base 5/3 expansion (see A024633) has n digits.
+; 5,5,10,15,25,40,70,115,190,320,530,885,1475,2460,4100,6830,11385,18975,31625,52710,87850,146415,244025,406710,677850,1129750,1882915,3138190,5230320,8717200,14528665,24214440,40357400,67262335,112103890,186839820,311399700
+
+mov $19,$0
+mov $21,$0
+add $21,1
+lpb $21,1
+  clr $0,19
+  sub $21,1
+  mov $0,$19
+  sub $0,$21
+  mov $15,$0
+  mov $17,2
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    add $0,$17
+    sub $0,1
+    mov $11,$0
+    mov $13,2
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      add $0,$13
+      sub $0,1
+      mov $6,7
+      mov $2,2
+      mov $5,1
+      mov $4,$6
+      sub $5,$4
+      add $6,$5
+      mov $3,4
+      mov $2,1
+      add $2,$6
+      mov $9,10
+      mov $10,3
+      mov $6,$10
+      mov $1,1
+      add $1,$2
+      mov $7,$3
+      mov $8,11
+      sub $8,$2
+      add $2,$2
+      pow $6,2
+      mov $3,$7
+      mov $2,1
+      mov $7,1
+      sub $10,3
+      mov $10,1
+      add $5,16
+      sub $9,$6
+      add $0,1
+      mov $6,1
+      lpb $0,1
+        sub $8,1
+        sub $0,1
+        sub $8,1
+        mov $9,$2
+        add $1,2
+        div $9,2
+        div $9,3
+        add $8,1
+        sub $2,$9
+        sub $4,9
+        sub $9,17
+        add $9,$8
+        mov $10,$8
+        mov $8,2
+        mov $7,1
+        mov $9,5
+        add $1,1
+        mul $2,2
+        mov $4,5
+        sub $8,$3
+        mov $3,$3
+        mul $10,3
+        mov $9,$10
+      lpe
+      mul $3,2
+      mov $10,11
+      add $1,2
+      mul $5,$6
+      sub $5,6
+      sub $5,$9
+      mov $4,$9
+      mov $7,$5
+      div $7,16
+      add $0,$4
+      gcd $9,2
+      mul $4,3
+      add $1,$10
+      add $9,1
+      mov $10,1
+      div $0,$6
+      add $8,$0
+      div $5,96
+      add $0,$6
+      add $9,$0
+      mov $0,1
+      mov $6,1
+      mov $10,1
+      mov $9,$6
+      mov $5,$1
+      mov $5,8
+      bin $9,$7
+      sub $10,$8
+      add $0,$1
+      sub $1,$5
+      mov $1,$8
+      add $4,$5
+      sub $4,1
+      mov $6,2
+      sub $10,1
+      pow $10,2
+      div $5,$1
+      mov $9,1
+      add $7,1
+      mov $5,$3
+      sub $6,$3
+      mul $9,$6
+      mov $8,1
+      mov $1,$2
+      mov $14,$13
+      lpb $14,1
+        mov $12,$1
+        sub $14,1
+      lpe
+    lpe
+    lpb $11,1
+      sub $12,$1
+      mov $11,0
+    lpe
+    mov $1,$12
+    mov $18,$17
+    lpb $18,1
+      mov $16,$1
+      sub $18,1
+    lpe
+  lpe
+  lpb $15,1
+    sub $16,$1
+    mov $15,0
+  lpe
+  mov $1,$16
+  div $1,2
+  mul $1,5
+  add $20,$1
+lpe
+mov $1,$20

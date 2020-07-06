@@ -1,71 +1,17 @@
 ; A037536: Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
 ; 1,5,16,49,149,448,1345,4037,12112,36337,109013,327040,981121,2943365,8830096,26490289,79470869,238412608,715237825,2145713477,6437140432,19311421297,57934263893,173802791680,521408375041
 
-mov $1,6
-mov $2,$1
-mov $5,$0
+mov $2,6
 add $0,1
 lpb $0,1
   mul $2,3
-  mov $4,$2
-  add $4,4
-  div $2,57
-  sub $5,1
-  mov $3,$1
-  mov $3,1
-  mul $3,2
-  mov $3,7
-  mov $6,1
-  mov $2,$6
-  mov $2,$1
-  sub $6,5
-  mov $5,0
-  sub $5,9
-  mov $3,$4
-  mov $2,$4
+  mov $3,$2
+  add $3,4
+  mov $2,$3
   sub $0,1
-  mov $3,1
-  mov $1,30
-  add $5,$0
-  div $4,13
-  add $5,9
-  mov $3,1
-  mov $3,4
-  mov $3,$0
-  add $1,$4
-  sub $6,$6
+  div $3,13
 lpe
-mov $0,1
-sub $3,13
-add $0,1
-sub $3,$1
-add $2,1
-add $4,1
-mul $6,$4
-pow $3,$5
-mov $1,$0
-mov $3,$5
-mov $5,$2
-mul $6,$5
-add $4,2
-sub $6,$1
-mov $3,$3
-mov $0,3
-mul $3,2
-add $0,98
-mov $4,$4
-pow $6,5
+add $3,3
 mov $1,$3
-mov $3,$5
-mov $1,$4
-sub $1,5
-add $1,2
-sub $1,2
-div $1,2
-add $1,1
-mov $1,$4
-sub $1,5
-add $1,2
-mov $1,$4
 sub $1,4
 add $1,1

@@ -1,62 +1,17 @@
 ; A037560: Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 2,2,1.
 ; 2,8,25,77,233,700,2102,6308,18925,56777,170333,511000,1533002,4599008,13797025,41391077,124173233,372519700,1117559102,3352677308,10058031925,30174095777,90522287333,271566862000,814700586002
 
-mov $1,8
-mov $2,$1
-mov $5,$0
+mov $2,8
 add $0,1
 lpb $0,1
   mul $2,3
-  mov $4,$2
-  add $4,9
-  div $2,57
-  sub $5,1
-  mov $3,$1
-  mov $3,1
-  mul $3,2
-  mov $3,7
-  mov $6,1
-  mov $2,$6
-  mov $2,$1
-  sub $6,5
-  mov $5,0
-  sub $5,9
-  mov $3,$4
-  mov $2,$4
+  mov $3,$2
+  add $3,9
+  mov $2,$3
   sub $0,1
-  mov $3,1
-  mov $1,30
-  add $5,$0
-  div $4,13
-  add $5,9
-  mov $3,1
-  mov $3,4
-  mov $3,$0
-  add $1,$4
-  sub $6,$6
+  div $3,13
 lpe
-mov $0,1
-sub $3,13
-add $0,1
-sub $3,$1
-add $2,1
-add $4,1
-mul $6,$4
-pow $3,$5
-mov $1,$0
-mov $3,$5
-mov $5,$2
-mul $6,$5
-add $4,2
-sub $6,$1
-mov $3,$3
-mov $0,3
-mul $3,2
-add $0,98
-mov $4,$4
-pow $6,5
+add $3,3
 mov $1,$3
-mov $3,$5
-mov $1,$4
 sub $1,5
 add $1,2

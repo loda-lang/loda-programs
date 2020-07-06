@@ -1,0 +1,105 @@
+; A005985: Length of longest trail (i.e., path with all distinct edges) on the edges of an n-cube.
+; 0,1,4,9,32,65,192,385,1024,2049,5120,10241,24576,49153,114688,229377,524288,1048577,2359296,4718593,10485760,20971521,46137344,92274689,201326592,402653185,872415232,1744830465,3758096384,7516192769,16106127360,32212254721
+
+mov $2,$0
+mov $1,$0
+lpb $0,1
+  mov $5,$1
+  sub $0,1
+  mov $8,$2
+  div $1,2
+  add $8,$0
+  add $1,$1
+  mov $4,$0
+  add $4,$2
+  mov $4,$4
+  mov $7,4
+  mov $2,1
+  mov $2,$0
+  mov $9,$0
+  mov $10,$2
+  mov $3,$5
+  add $1,$5
+  add $8,2
+  mul $3,2
+  mov $3,1
+  mov $10,0
+  mov $8,1
+  add $7,1
+  mul $3,8
+  mov $7,2
+  add $9,$3
+  sub $4,4
+  mov $10,$9
+  pow $8,24
+  mov $10,3
+lpe
+sub $10,4
+add $2,1
+sub $1,1
+bin $1,$0
+mov $4,4
+add $2,5
+mov $9,2
+pow $8,88
+add $5,$4
+add $4,2
+add $2,$7
+mov $6,$1
+mov $4,1
+add $2,$6
+sub $4,$2
+mul $6,25
+sub $2,$9
+sub $2,1
+mul $7,$8
+mov $3,$6
+sub $4,$1
+mov $10,$3
+mov $9,$8
+sub $0,$9
+bin $7,$10
+add $6,$5
+mov $2,$0
+mov $0,1
+mov $8,$0
+add $7,1
+sub $5,$1
+add $10,1
+mov $4,1
+add $3,$9
+add $7,1
+mov $0,$1
+div $2,2
+mov $1,$6
+add $8,$4
+sub $3,$0
+sub $7,1
+add $7,1
+add $9,$5
+add $3,$4
+mul $2,2
+add $3,$1
+sub $7,1
+div $9,3
+mov $2,$10
+mov $10,2
+div $7,2
+mov $6,1
+mov $4,$8
+add $6,$3
+mov $9,6
+sub $1,$6
+div $2,8
+div $8,$0
+mov $4,$0
+sub $6,$2
+mov $6,$2
+add $4,1
+pow $4,3
+mov $8,1
+add $9,$7
+div $4,5
+mov $1,$7
+mov $1,$5
+sub $1,3
