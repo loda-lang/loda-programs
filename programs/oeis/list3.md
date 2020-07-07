@@ -196,7 +196,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304835](http://oeis.org/A304835) ([L12 program](304/A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
 * [A304836](http://oeis.org/A304836) ([L06 program](304/A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304837](http://oeis.org/A304837) ([L23 program](304/A304837.asm)): a(n) = 6*(n - 1)*(81*n - 104) for n >= 1.
-* [A304838](http://oeis.org/A304838) ([L105 program](304/A304838.asm)): a(n) = 1944*n^2 - 5016*n + 3138 (n >= 1).
+* [A304838](http://oeis.org/A304838) ([L17 program](304/A304838.asm)): a(n) = 1944*n^2 - 5016*n + 3138 (n >= 1).
 * [A304839](http://oeis.org/A304839) ([L03 program](304/A304839.asm)): a(n) = 61*n - 38 (n>=1).
 * [A304840](http://oeis.org/A304840) ([L03 program](304/A304840.asm)): a(n) = 52*n - 2 (n>=1).
 * [A304841](http://oeis.org/A304841) ([L03 program](304/A304841.asm)): a(n) = 67*n - 10 (n>=1).
@@ -586,6 +586,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317714](http://oeis.org/A317714) ([L14 program](317/A317714.asm)): Chessboard rectangles sequence (see Comments), also A037270 interleaved with A163102.
 * [A317790](http://oeis.org/A317790) ([L06 program](317/A317790.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-4) - 2*(n-5) + a(n-6) for n>5, a(0)=a(1)=1, a(2)=a(3)=7, a(4)=13, a(5)=19.
 * [A317849](http://oeis.org/A317849) ([L25 program](317/A317849.asm)): Number of states of the Finite State Automaton Gn accepting the language of maximal (or minimal) lexicographic representatives of elements in the positive braid monoid An.
+* [A317983](http://oeis.org/A317983) ([L103 program](317/A317983.asm)): Expansion of 420*x*(1 + x)*(1 + 10*x + x^2) / (1 - x)^6.
 * [A317984](http://oeis.org/A317984) ([L07 program](317/A317984.asm)): Expansion of 140*x*(1 + 4*x + x^2) / (1 - x)^5.
 * [A318054](http://oeis.org/A318054) ([L11 program](318/A318054.asm)): a(n) = n*(n + 1)*(n^2 + n + 22)/24.
 * [A318111](http://oeis.org/A318111) ([L12 program](318/A318111.asm)): Number of maximal 1-intersecting families of 2-sets of [n] = {1,2,...,n}.
@@ -832,6 +833,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330003](http://oeis.org/A330003) ([L08 program](330/A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
 * [A330023](http://oeis.org/A330023) ([L36 program](330/A330023.asm)): a(n) counts the cube-words immediately before a(n), with a(1) = 0.
 * [A330038](http://oeis.org/A330038) ([L22 program](330/A330038.asm)): a(1) = 1, a(n) = [n/2] + a([n/2]) + a([(n+1)/2]) for n > 1, where [x] = floor(x).
+* [A330064](http://oeis.org/A330064) ([L91 program](330/A330064.asm)): Beatty sequence for cosh(x), where 1/x + sech(x) = 1.
 * [A330067](http://oeis.org/A330067) ([L09 program](330/A330067.asm)): Beatty sequence for sinh(x), where 1/x + 1/sinh(x) = 1.
 * [A330082](http://oeis.org/A330082) ([L23 program](330/A330082.asm)): a(n) = 5*A064038(n).
 * [A330085](http://oeis.org/A330085) ([L39 program](330/A330085.asm)): Length of longest binary word with the property that all distinct occurrences of identical-length blocks agree on at most n positions.
@@ -844,7 +846,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330151](http://oeis.org/A330151) ([L14 program](330/A330151.asm)): Partial sums of 4th powers of the even numbers.
 * [A330173](http://oeis.org/A330173) ([L22 program](330/A330173.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(2), s = sqrt(2) + 1, t = sqrt(2) + 2.
 * [A330179](http://oeis.org/A330179) ([L21 program](330/A330179.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = e - 1, s = e, t = e + 1.
-* [A330181](http://oeis.org/A330181) ([L69 program](330/A330181.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = pi - 1, s = pi, t = pi + 1.
+* [A330181](http://oeis.org/A330181) ([L19 program](330/A330181.asm)): a(n) = n + floor(ns/r) + floor(nt/r), where r = pi - 1, s = pi, t = pi + 1.
 * [A330186](http://oeis.org/A330186) ([L16 program](330/A330186.asm)): a(n) = n + floor(nr/t) + floor(ns/t), where r = tau - 1/2, s = tau, t = tau + 1/2, tau = golden ratio = (1+sqrt(5))/2.
 * [A330246](http://oeis.org/A330246) ([L05 program](330/A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
 * [A330285](http://oeis.org/A330285) ([L52 program](330/A330285.asm)): The maximum number of arithmetic progressions for a sequence of length n.
