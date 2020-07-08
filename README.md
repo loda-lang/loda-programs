@@ -85,6 +85,6 @@ If you would like to get updates on new programs, you can check out the [@lodami
 * [A200001-A300000](programs/oeis/list2.md)
 * [A300001-A400000](programs/oeis/list3.md)
 
-Total number of programs: 17431/335475 (5%)
+Total number of programs: 17483/335484 (5%)
 
 ![LODA Program Length Distribution](https://raw.githubusercontent.com/ckrause/loda/master/stats/lengths.png)

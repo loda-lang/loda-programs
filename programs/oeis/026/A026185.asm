@@ -1,85 +1,21 @@
 ; A026185: If n even, then 2n. If n odd, then nearest integer to 2n/3.
 ; 0,1,4,2,8,3,12,5,16,6,20,7,24,9,28,10,32,11,36,13,40,14,44,15,48,17,52,18,56,19,60,21,64,22,68,23,72,25,76,26,80,27,84,29,88,30,92,31,96,33,100,34,104,35,108,37,112,38,116,39,120,41
 
-mov $2,2
-mov $4,$0
-mov $7,$2
 mov $1,$0
-mov $4,$2
-add $1,$1
-mov $5,$1
-add $2,5
-mov $8,9
-add $8,1
-add $7,4
-mov $3,$0
+mul $1,2
+mov $4,$1
+mov $3,10
 mod $0,2
 lpb $0,1
-  mov $4,$1
-  mov $2,$4
-  mul $2,2
-  add $0,1
-  add $3,$5
-  mov $2,$8
-  bin $0,$2
-  mov $7,4
-  add $4,1
-  add $5,$0
-  sub $3,23
-  add $5,1
-  mov $1,81
-  mov $6,1
-  div $5,3
-  mul $6,$6
-  mov $8,$4
-  mov $2,$1
-  sub $3,1
-  mov $4,1
-  add $7,$1
-  sub $0,1
-  sub $2,$4
-  mul $4,$5
-  add $4,$3
-  mov $1,$0
-  div $2,$8
-  fac $6
-  mul $1,$3
   mov $2,$3
-  mul $4,$3
-  add $1,4
-  mov $8,$1
-  mov $7,5
-  sub $6,$1
+  bin $0,$2
+  add $4,1
+  div $4,3
 lpe
-sub $4,$1
-sub $7,10
 mov $2,1
-sub $0,$2
-add $4,$7
-add $0,1
-add $2,4
-mov $3,$2
 mov $0,7
-mov $7,1
-mov $3,3
-add $8,$5
-add $2,$5
-add $1,12
-div $1,$1
-mul $5,$0
-mov $7,1
-add $3,$5
-mov $0,$0
-add $5,$2
-mov $7,$1
-mov $0,$6
-sub $7,$8
-mov $3,$7
-add $5,1
-mov $1,$5
-mov $4,$3
-mul $7,2
-add $4,1
-mov $8,1
-sub $1,6
+add $2,$4
+mul $4,$0
+add $4,$2
+mov $1,$4
 div $1,8

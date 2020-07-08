@@ -1,0 +1,112 @@
+; A126120: Catalan numbers (A000108) interpolated with 0's.
+; 1,0,1,0,2,0,5,0,14,0,42,0,132,0,429,0,1430,0,4862,0,16796,0,58786,0,208012,0,742900,0,2674440,0,9694845,0,35357670,0,129644790,0,477638700,0,1767263190,0,6564120420,0,24466267020,0,91482563640,0
+
+mov $12,$0
+mov $14,2
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  add $0,$14
+  sub $0,1
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,2
+    mov $0,$9
+    sub $0,$11
+    mov $8,$0
+    lpb $0,1
+      mov $5,$8
+      mov $1,$8
+      mov $6,8
+      mov $5,$1
+      mov $4,$1
+      mov $7,$0
+      mov $6,$4
+      mul $5,2
+      mov $0,1
+      sub $0,1
+      mov $7,$7
+    lpe
+    div $1,2
+    add $8,5
+    add $0,2
+    mul $1,2
+    div $6,$0
+    mov $8,$4
+    mov $0,1
+    add $5,14
+    bin $1,$6
+    add $6,1
+    sub $4,1
+    mov $2,2
+    add $0,$0
+    mov $0,$4
+    add $7,$8
+    add $7,$2
+    mov $3,3
+    add $8,$3
+    div $1,$6
+    mov $8,2
+    mov $3,$5
+    sub $2,1
+    mov $5,$2
+    mov $3,$8
+    add $6,$6
+    mov $3,1
+    add $8,1
+    mov $3,$4
+    mov $0,$5
+    bin $4,5
+    add $8,$0
+    mov $0,$0
+    add $7,$7
+    sub $8,$7
+    add $6,$6
+    mov $7,3
+    add $4,$8
+    mov $6,$7
+    mul $5,3
+    add $4,1
+    mov $8,1
+    sub $7,1
+    sub $3,3
+    mov $3,$8
+    div $6,2
+    mul $0,$2
+    sub $3,$8
+    mov $4,3
+    add $2,2
+    add $5,$2
+    mov $5,2
+    mov $6,1
+    sub $0,$3
+    add $2,$7
+    mov $4,$3
+    cmp $8,$5
+    add $5,7
+    add $7,1
+    mul $5,2
+    mov $8,$3
+    add $6,$4
+    mov $7,8
+    add $0,10
+    mov $8,6
+    mov $6,1
+    add $10,$1
+  lpe
+  mov $1,$10
+  mov $15,$14
+  lpb $15,1
+    mov $13,$1
+    sub $15,1
+  lpe
+lpe
+lpb $12,1
+  sub $13,$1
+  mov $12,0
+lpe
+mov $1,$13
