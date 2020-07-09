@@ -1,0 +1,130 @@
+; A286988: Positions of 0 in A286987; complement of A286989.
+; 3,6,8,11,13,16,19,21,24,26,29,32,34,37,39,42,44,47,50,52,55,57,60,63,65,68,70,73,75,78,81,83,86,88,91,94,96,99,101,104,107,109,112,114,117,119,122,125,127,130,132,135,138,140,143,145,148,150,153,156
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $14,$0
+  mov $16,2
+  lpb $16,1
+    clr $0,14
+    sub $16,1
+    mov $0,$14
+    add $0,$16
+    sub $0,1
+    mov $11,$0
+    mov $13,$0
+    add $13,1
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      sub $0,$13
+      mov $7,$0
+      mov $9,2
+      lpb $9,1
+        clr $0,7
+        sub $9,1
+        mov $0,$7
+        add $0,$9
+        sub $0,0
+        mov $1,2
+        mov $1,$1
+        add $1,$1
+        mov $5,46
+        mov $2,6
+        mov $3,$5
+        mov $6,6
+        mul $0,$3
+        mov $4,1
+        mov $5,$2
+        pow $6,$2
+        mul $3,2
+        add $1,14
+        add $3,$1
+        mov $6,5
+        mov $3,$2
+        mov $5,1
+        add $6,$3
+        mul $3,2
+        mov $5,8
+        lpb $0,1
+          mov $3,28
+          sub $0,$3
+          mov $3,$4
+          sub $4,$2
+          add $2,2
+          mov $5,2
+          sub $1,5
+          gcd $4,2
+          sub $4,$1
+          mov $6,$1
+          mov $3,$3
+          sub $0,1
+          add $6,4
+        lpe
+        add $4,4
+        mov $1,100
+        add $6,3
+        add $1,1
+        mul $4,$6
+        mov $6,$6
+        div $1,2
+        sub $4,$3
+        mov $6,0
+        mov $4,$3
+        mov $3,1
+        add $3,1
+        mov $5,1
+        add $0,1
+        sub $0,$4
+        mov $1,$4
+        sub $3,$1
+        add $6,2
+        sub $0,6
+        add $1,1
+        add $4,4
+        div $5,2
+        sub $3,1
+        mov $1,$2
+        sub $1,5
+        mov $10,$9
+        lpb $10,1
+          mov $8,$1
+          sub $10,2
+        lpe
+      lpe
+      lpb $7,1
+        sub $8,$1
+        mov $7,0
+      lpe
+      mov $1,$8
+      sub $1,1
+      add $12,$1
+    lpe
+    mov $1,$12
+    sub $1,2
+    sub $1,2
+    add $1,3
+    mov $17,$16
+    lpb $17,1
+      mov $15,$1
+      sub $17,1
+    lpe
+  lpe
+  lpb $14,1
+    sub $15,$1
+    mov $14,0
+  lpe
+  mov $1,$15
+  sub $1,1
+  div $1,2
+  add $1,2
+  add $19,$1
+lpe
+mov $1,$19
