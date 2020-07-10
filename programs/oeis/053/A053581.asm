@@ -1,0 +1,142 @@
+; A053581: First differences of the Poly-Bernoulli numbers B_n^(k) with k=-2 (A027649).
+; 1,3,10,32,100,308,940,2852,8620,25988,78220,235172,706540,2121668,6369100,19115492,57362860,172121348,516429580,1549419812,4648521580,13946089028,41839315660,125520044132
+
+mov $15,$0
+mov $17,2
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  add $0,$17
+  sub $0,1
+  mov $11,$0
+  mov $13,2
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    add $0,$13
+    sub $0,1
+    mov $5,4
+    mov $7,8
+    mov $3,$7
+    add $7,1
+    mov $8,$7
+    mov $1,$0
+    mov $10,6
+    mov $5,5
+    bin $5,$10
+    mov $4,$3
+    add $7,$8
+    mov $6,1
+    mov $8,1
+    add $3,6
+    mov $9,$8
+    mov $9,$0
+    mov $2,$6
+    add $2,$6
+    sub $3,$6
+    mul $2,2
+    add $8,2
+    add $0,1
+    add $4,$9
+    sub $3,$7
+    add $5,$5
+    gcd $7,$1
+    add $8,3
+    sub $7,1
+    add $7,1
+    sub $3,$1
+    pow $6,$4
+    div $7,$6
+    mov $0,$2
+    add $1,$5
+    mov $9,1
+    mov $5,$8
+    sub $0,1
+    mov $7,$0
+    lpb $0,1
+      mul $4,2
+      add $7,$9
+      add $0,$9
+      mov $7,$2
+      log $4,3
+      div $1,2
+      div $3,$2
+      mov $6,$3
+      add $3,1
+      mov $2,$0
+      mov $10,$1
+      add $9,$9
+      mov $8,$1
+      add $0,$3
+      mov $4,$6
+      mov $8,$9
+      mov $7,3
+      mov $6,4
+      mov $4,4
+      mov $6,4
+      sub $0,1
+      add $6,$0
+      mov $8,$2
+      add $0,$8
+      mov $7,$9
+      sub $10,2
+      mov $7,12
+      mov $2,$8
+      add $8,$9
+      sub $1,2
+      mov $5,1
+      mov $10,$6
+      sub $0,$5
+    lpe
+    mov $4,$9
+    sub $6,$1
+    add $1,1
+    mov $3,$4
+    add $9,$4
+    mov $4,$1
+    mov $7,2
+    pow $9,$1
+    add $9,1
+    add $7,$9
+    add $5,$9
+    pow $0,$1
+    sub $2,$8
+    add $0,1
+    add $1,$2
+    sub $4,3
+    mul $10,2
+    div $10,2
+    mov $1,1
+    mov $10,1
+    add $8,1
+    mov $4,$2
+    sub $0,$9
+    mov $2,$3
+    add $9,3
+    add $2,$10
+    mov $8,8
+    mov $1,$0
+    mov $14,$13
+    lpb $14,1
+      mov $12,$1
+      sub $14,1
+    lpe
+  lpe
+  lpb $11,1
+    sub $12,$1
+    mov $11,0
+  lpe
+  mov $1,$12
+  mov $18,$17
+  lpb $18,1
+    mov $16,$1
+    sub $18,1
+  lpe
+lpe
+lpb $15,1
+  sub $16,$1
+  mov $15,0
+lpe
+mov $1,$16

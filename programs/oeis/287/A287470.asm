@@ -1,99 +1,41 @@
 ; A287470: Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 276", based on the 5-celled von Neumann neighborhood.
-; 1,0,6,0,28,0,120,0,496,0,2016,0,8128,0,32640,0,130816,0,523776,0,2096128,0,8386560,0,33550336,0,134209536,0,536854528,0,2147450880,0,8589869056,0,34359607296,0,137438691328,0,549755289600,0,2199022206976,0
+; 1,0,6,0,28,0,120,0,496,0,2016,0,8128,0,32640,0,130816,0,523776,0,2096128,0,8386560,0,33550336,0,134209536,0,536854528,0,2147450880,0,8589869056,0,34359607296,0,137438691328,0,549755289600,0,2199022206976,0,8796090925056,0,35184367894528,0,140737479966720,0,562949936644096,0
 
 mov $9,$0
-mov $11,2
-lpb $11,1
-  clr $0,9
-  sub $11,1
+mov $4,2
+lpb $4,1
+  sub $4,1
   mov $0,$9
-  add $0,$11
+  add $0,$4
   sub $0,1
-  mov $6,5
   mov $7,1
-  mov $1,4
-  mov $8,$6
-  mov $8,1
-  add $8,$6
   add $0,$7
   mov $5,1
-  mov $3,2
   mov $2,2
-  sub $3,3
-  mul $3,2
-  sub $3,$8
-  bin $6,2
   lpb $0,1
-    mov $1,1
     mul $2,2
-    mov $7,$5
-    pow $2,$1
-    sub $8,$5
-    add $8,$6
-    mov $1,1
-    mov $4,$8
-    mul $2,$7
-    mov $5,179
     sub $0,1
-    mov $5,1
-    mov $8,1
-    mov $7,$4
-    mov $7,$8
-    mov $1,$7
     mov $6,$5
     add $0,$5
     sub $0,2
-    sub $3,$3
-    mov $7,$8
-    add $6,$6
-    mov $1,$0
-    mul $7,$8
-    mov $7,$3
+    mul $6,2
   lpe
-  div $1,2
-  add $0,$4
-  mov $7,8
   sub $6,$5
-  add $3,$5
-  mov $7,$3
-  sub $7,1
   sub $2,$6
-  add $1,$6
-  add $3,$7
-  add $1,3
-  mov $6,$7
-  add $6,$6
-  mul $1,2
-  add $5,1
-  add $5,$7
-  mov $0,1
-  mov $6,3
-  mul $4,$5
-  add $4,$6
-  add $6,$0
   mov $7,$2
-  sub $0,20
   bin $7,2
-  add $4,3
   add $0,$7
-  mul $1,2
-  mov $1,$2
-  add $1,$2
-  mov $4,$8
-  sub $6,1
-  add $0,$0
-  sub $3,2
-  mov $2,$2
+  mul $0,2
   mov $1,$0
-  mov $12,$11
-  lpb $12,1
-    mov $10,$1
-    sub $12,1
+  mov $3,$4
+  lpb $3,1
+    mov $8,$1
+    sub $3,1
   lpe
 lpe
 lpb $9,1
-  sub $10,$1
+  sub $8,$1
   mov $9,0
 lpe
-mov $1,$10
+mov $1,$8
 div $1,6

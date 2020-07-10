@@ -1,0 +1,148 @@
+; A250607: Number of (n+1) X (4+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)-x(i-1,j) in the j direction.
+; 120,290,592,1126,2092,3890,7320,13982,27076,53002,104560,207350,412572,822626,1642312,3281230,6558580,13112762,26220576,52435622,104865100,209723410,419439352,838870526,1677732132,3355454570,6710898640
+
+mov $20,$0
+mov $22,$0
+add $22,1
+lpb $22,1
+  clr $0,20
+  sub $22,1
+  mov $0,$20
+  sub $0,$22
+  mov $17,$0
+  mov $19,$0
+  add $19,1
+  lpb $19,1
+    clr $0,17
+    sub $19,1
+    mov $0,$17
+    sub $0,$19
+    mov $13,$0
+    mov $15,2
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      add $0,$15
+      sub $0,1
+      mov $9,$0
+      mov $11,2
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        add $0,$11
+        sub $0,1
+        mov $4,$0
+        mov $8,8
+        mov $6,$8
+        mov $5,1
+        add $6,4
+        mov $1,$6
+        div $8,$8
+        mov $4,1
+        mov $3,8
+        mov $8,2
+        sub $3,7
+        fac $6
+        mov $2,$1
+        sub $6,147
+        add $4,$5
+        mov $7,1
+        mul $6,$2
+        sub $5,1
+        mov $8,$3
+        add $8,$1
+        add $0,$5
+        mov $4,4
+        mov $7,8
+        add $4,2
+        add $4,$2
+        add $8,$8
+        add $2,1
+        add $8,$4
+        add $8,1
+        mov $1,1
+        mov $2,$1
+        mov $8,3
+        mov $7,3
+        mov $2,$0
+        mov $6,120
+        sub $3,$7
+        mov $3,1
+        add $3,$7
+        add $4,$8
+        add $0,1
+        add $7,$7
+        mov $3,$1
+        mov $7,$6
+        lpb $0,1
+          add $4,$4
+          add $6,$8
+          sub $0,1
+          mov $3,2
+          mov $3,2
+          add $7,2
+          add $2,$5
+          add $4,1
+          mov $8,$4
+          add $1,$2
+          add $6,$5
+          add $4,3
+          mov $2,$3
+        lpe
+        add $8,$1
+        mov $7,$4
+        mov $4,$2
+        add $4,7
+        mov $4,$8
+        add $3,2
+        add $6,$6
+        add $8,$0
+        sub $6,3
+        add $5,17
+        mov $2,$6
+        mov $8,$0
+        mov $2,$5
+        div $0,4
+        mov $0,1
+        mov $6,$4
+        mov $0,$6
+        mul $0,$3
+        mov $3,$5
+        sub $8,$3
+        add $8,$3
+        mov $6,1
+        mov $1,$0
+        mov $12,$11
+        lpb $12,1
+          mov $10,$1
+          sub $12,1
+        lpe
+      lpe
+      lpb $9,1
+        sub $10,$1
+        mov $9,0
+      lpe
+      mov $1,$10
+      mov $16,$15
+      lpb $16,1
+        mov $14,$1
+        sub $16,1
+      lpe
+    lpe
+    lpb $13,1
+      sub $14,$1
+      mov $13,0
+    lpe
+    mov $1,$14
+    sub $1,36
+    div $1,4
+    mul $1,2
+    add $1,50
+    add $18,$1
+  lpe
+  mov $1,$18
+  add $21,$1
+lpe
+mov $1,$21
