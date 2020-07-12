@@ -1,0 +1,86 @@
+; A035289: Number of ways to place a non-attacking white and black knight on n X n chessboard.
+; 0,12,56,192,504,1100,2112,3696,6032,9324,13800,19712,27336,36972,48944,63600,81312,102476,127512,156864,191000,230412,275616,327152,385584,451500,525512,608256,700392,802604,915600,1040112,1176896
+
+mov $4,9
+mov $5,2
+mov $1,$5
+div $1,$5
+mov $4,$0
+mov $3,2
+sub $5,$1
+mov $1,1
+mov $7,2
+mov $6,2
+div $4,2
+mov $5,$7
+add $7,2
+mov $5,1
+mov $4,$5
+mov $8,2
+mov $3,$4
+sub $6,7
+lpb $0,1
+  add $8,$7
+  add $4,$1
+  mov $2,$0
+  sub $6,2
+  div $6,2
+  sub $0,1
+  add $3,$0
+  add $1,27
+  add $1,1
+  mov $6,$8
+  mov $7,4
+  mov $6,1
+  mov $8,1
+  mov $7,2
+  sub $2,1
+  mul $2,2
+  add $5,4
+  mov $7,$8
+  mul $1,$2
+  mov $6,$1
+  mov $1,$0
+  mov $2,$0
+  add $5,$2
+  mov $8,$5
+  mov $4,2
+  sub $5,$7
+  mov $6,$7
+  add $4,2
+  mov $7,1
+lpe
+add $1,$2
+mov $1,$4
+add $2,9
+mov $1,24
+mov $0,6
+add $7,2
+add $2,4
+mov $7,$3
+sub $0,$7
+add $0,9
+mul $2,$7
+mov $1,1
+mov $8,1
+add $1,3
+sub $3,1
+mov $0,$1
+sub $5,1
+mov $6,$5
+mod $7,2
+add $8,1
+mul $5,$7
+sub $8,5
+mov $0,1
+mov $0,$5
+mov $7,1
+mul $8,8
+sub $5,$6
+mov $8,$3
+sub $7,$1
+mul $2,$6
+sub $8,1
+mov $1,$2
+div $1,13
+mul $1,4

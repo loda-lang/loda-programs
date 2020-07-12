@@ -1,0 +1,86 @@
+; A018904: Define the sequence S(a(0),a(1)) by a(n+2) is the least integer such that a(n+2)/a(n+1) > a(n+1)/a(n) for n >= 0. This is S(1,6).
+; 1,6,37,229,1418,8781,54377,336734,2085253,12913101,79965442,495192589,3066520913,18989683446,117595179557,728217839669,4509548979898,27925753660941,172932530727097,1070898946784974,6631629973859333
+
+mov $4,6
+mov $8,1
+mul $4,$4
+add $8,4
+clr $1,1
+mov $2,$1
+mov $3,1
+mov $7,7
+sub $2,15
+mov $1,1
+add $4,$4
+bin $2,3
+add $3,2
+mov $3,7
+mov $5,1
+mov $6,$8
+add $8,1
+mov $6,$6
+add $3,1
+mov $3,0
+mov $6,2
+lpb $0,1
+  mul $8,3
+  mov $7,$8
+  mov $7,2
+  sub $0,1
+  sub $7,$0
+  sub $8,$4
+  mov $5,$6
+  mov $4,1
+  mul $6,5
+  mov $3,$5
+  mov $2,$2
+  sub $4,$7
+  div $5,19
+  add $2,$3
+  sub $8,1
+  mov $7,2
+  mov $3,$1
+  sub $4,32
+  mod $3,2
+  mov $7,$5
+  mov $7,1
+  mov $8,$2
+  sub $1,$7
+  mov $8,1
+  add $6,$2
+lpe
+add $1,15
+add $2,$3
+sub $1,2
+add $3,$8
+add $1,2
+add $3,$6
+div $8,$6
+add $1,$6
+mov $3,$6
+mov $5,2
+sub $3,1
+mov $2,2
+sub $2,2
+add $6,$3
+add $7,$6
+mov $3,2
+fac $8
+add $5,1
+mov $8,2
+mul $4,2
+mov $2,$2
+add $7,$2
+mov $5,7
+mov $7,2
+mov $2,2
+sub $0,16
+add $0,$8
+add $6,$3
+add $5,1
+mov $4,1
+sub $5,1
+mov $1,$6
+sub $1,5
+div $1,4
+add $1,1
