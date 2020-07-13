@@ -1,0 +1,65 @@
+; A065883: Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
+; 1,2,3,1,5,6,7,2,9,10,11,3,13,14,15,1,17,18,19,5,21,22,23,6,25,26,27,7,29,30,31,2,33,34,35,9,37,38,39,10,41,42,43,11,45,46,47,3,49,50,51,13,53,54,55,14,57,58,59,15,61,62,63,1,65,66,67,17,69,70,71,18,73,74,75
+
+mov $1,1
+mov $3,$1
+mov $5,6
+mov $6,$1
+mov $2,$0
+lpb $0,1
+  mov $3,$0
+  clr $4,1
+  mov $5,$2
+  add $0,1
+  mov $4,3
+  mov $2,1
+  mov $6,1
+  add $4,$0
+  mov $6,1
+  mul $3,4
+  mov $5,1
+  add $4,$5
+  mul $0,$0
+  mov $4,2
+  mov $2,$6
+  mov $1,3
+  add $3,$2
+  add $3,2
+  mod $0,$3
+  mul $2,$5
+  mov $2,$6
+  mul $2,6
+  add $4,3
+  mov $1,$1
+  mov $2,$2
+  mov $2,$2
+  add $1,$6
+  mul $5,$1
+  sub $0,1
+  mov $6,$2
+  sub $1,$1
+  add $1,6
+  mov $1,$1
+  mov $3,$0
+  sub $5,$3
+lpe
+mov $5,3
+mov $3,$3
+add $0,13
+mov $5,1
+sub $5,29767
+mov $4,1
+mov $5,26
+mov $1,$4
+add $6,$5
+add $3,$1
+mov $6,$4
+add $0,1
+sub $2,$4
+sub $2,1
+cmp $1,13
+add $2,1
+mov $2,1
+mov $1,$0
+sub $1,14
+add $1,1

@@ -1,85 +1,17 @@
 ; A032169: Number of aperiodic necklaces of n beads of 2 colors, 11 of them black.
 ; 1,6,26,91,273,728,1768,3978,8398,16796,32065,58786,104006,178296,297160,482885,766935,1193010,1820910,2731365,4032015,5864749,8414640,11920740,16689036,23107896,31666376,42975796
 
-mov $8,5
-mov $2,6
-mov $4,$0
-div $2,24
 add $0,11
-mov $3,2
-mov $6,2
-mov $6,50
-div $6,2
-mov $4,$2
-mov $2,1
-add $8,5
-mov $5,5
-mov $7,$0
-log $5,$6
+mov $2,10
+mov $4,$0
 lpb $0,1
-  mov $1,$0
-  mov $4,$2
-  mov $6,$0
-  mov $3,$7
-  bin $3,$8
-  mov $1,3
-  mov $5,$3
-  mov $8,$1
-  sub $6,$2
-  mov $6,$6
-  mul $2,$4
-  sub $5,1
-  add $4,1
-  mov $2,3
+  mov $3,$4
+  bin $3,$2
   mul $3,6
-  sub $4,$3
-  add $7,$1
-  mov $0,1
-  sub $2,$8
-  sub $0,1
-  mov $7,3588
-  mov $4,1
-  mov $4,$3
-  add $4,$1
-  mov $5,1
-  mov $1,$7
-  mov $2,5
-  add $6,$5
-  add $8,$7
-  sub $5,$7
-  sub $7,1
-  mov $7,8
-  add $1,2
-  add $5,$4
-  mov $1,5
   div $3,11
-  mov $8,$7
-  div $6,$4
-  add $2,$7
   mov $0,7
-  sub $4,2
-  mov $1,1
-  mov $8,$3
-  sub $4,$7
-  mul $3,$1
-  sub $6,3
-  add $2,1
-  mov $1,2
-  mov $6,$6
 lpe
-mov $2,$4
-sub $2,$7
-mov $7,4
-mov $8,12
-sub $7,1
-mul $0,$7
-sub $4,$1
-mov $3,$3
-add $3,$3
-mov $2,$0
-add $7,$7
-mov $0,2
-mov $0,4
+mul $3,2
 mov $1,$3
 sub $1,12
 div $1,12

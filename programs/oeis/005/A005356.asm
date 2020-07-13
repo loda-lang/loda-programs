@@ -1,115 +1,25 @@
 ; A005356: Number of low discrepancy sequences in base 2.
 ; 0,0,1,3,5,8,11,14,18,22,26,30,34,38,43,48,53,58,63,68,73,78,83,89,95,101,107,113,119,125,131,137,143,149,155,161,167,173,179,185,191,198,205,212,219,226,233,240,247,254,261,268,275,282,289,296
 
-mov $20,$0
-mov $22,$0
-add $22,1
-lpb $22,1
-  clr $0,20
-  sub $22,1
-  mov $0,$20
-  sub $0,$22
-  mov $7,7
+mov $6,$0
+mov $2,$0
+lpb $2,1
+  sub $2,1
+  mov $0,$6
+  sub $0,$2
   mul $0,2
   mov $3,$0
-  mov $6,4
-  add $7,1
-  mov $9,$0
-  mov $4,$7
-  sub $9,$0
-  add $4,6
-  sub $7,$6
-  add $7,$0
-  mov $1,$3
-  mov $7,1
   add $3,1
-  mov $5,2
-  mov $6,$3
-  mov $8,6
-  mov $10,1
-  mov $2,1
-  sub $2,$1
-  mul $1,$0
-  add $0,2
-  mov $2,2
-  mul $3,$7
-  add $5,$3
-  mov $6,8
-  add $1,$7
-  mul $9,$2
-  mov $0,$4
-  mov $1,$5
-  mov $4,1
-  add $9,1
-  add $1,$2
-  add $10,5
-  pow $10,2
-  add $10,$0
-  add $2,3
-  mov $4,$5
+  mov $7,6
   pow $3,2
-  mov $4,$8
-  mov $0,$1
-  sub $8,2
-  add $9,2
-  add $9,$1
-  mov $2,$2
-  mov $1,$1
-  mov $10,$1
-  add $10,$3
-  mov $0,$8
-  add $7,$2
-  mov $10,$7
-  mov $2,1
-  add $0,$8
-  sub $9,3
-  mov $1,5
-  mov $2,1
-  add $0,1
-  sub $10,$3
-  mul $2,$9
-  sub $3,1
-  mov $2,3
-  lpb $3,3
+  mov $4,$7
+  lpb $3,1
     add $4,1
-    add $3,$8
+    add $3,$7
     div $3,3
-    add $6,$7
-    sub $7,5
-    sub $10,2
-    lpb $10,10
-      mov $6,2
-      mul $10,2
-      mov $4,$7
-      add $6,1
-      mov $10,3
-      add $7,$0
-      sub $6,$5
-      add $8,2
-      add $7,$7
-      mov $3,162
-      add $10,$4
-      sub $7,3
-      add $8,$5
-    lpe
-    mov $1,1
-    mov $10,$8
   lpe
-  mov $10,$1
-  mov $3,2
-  mov $0,16
-  add $0,$6
-  mov $6,$7
-  mov $5,$1
-  mov $1,$9
-  mov $2,2
-  mul $1,$1
-  mov $0,$10
-  add $2,$2
-  add $3,4
   sub $4,8
-  mov $7,1
   mov $1,$4
-  add $21,$1
+  add $5,$1
 lpe
-mov $1,$21
+mov $1,$5

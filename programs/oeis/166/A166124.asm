@@ -1,126 +1,45 @@
 ; A166124: Triangle, read by rows, given by [0,1/2,1/2,0,0,0,0,0,0,0,...] DELTA [2,-1,0,0,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
 ; 1,0,2,0,1,2,0,1,1,2,0,1,1,1,2,0,1,1,1,1,2,0,1,1,1,1,1,2,0,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,1,1,1,1,2
 
-mov $15,$0
-mov $17,2
-lpb $17,1
-  clr $0,15
-  sub $17,1
-  mov $0,$15
-  add $0,$17
+mov $9,$0
+mov $6,2
+lpb $6,1
+  sub $6,1
+  mov $0,$9
+  add $0,$6
   sub $0,1
   mov $11,$0
   mov $13,2
   lpb $13,1
-    clr $0,11
     sub $13,1
     mov $0,$11
     add $0,$13
     sub $0,1
-    mov $1,14
-    mov $9,1
-    sub $9,$0
-    mov $0,$0
     mov $3,1
     mov $7,$0
-    mov $10,1
-    pow $10,$9
     mov $2,$0
-    mov $6,1
-    add $2,$9
-    sub $6,2
-    mov $10,3
-    mov $2,$0
-    add $9,1
-    mov $8,1
     mov $4,$7
-    mov $10,1
     add $2,$4
-    mov $8,$10
-    add $9,1
     div $2,2
     mul $2,$0
     add $0,$2
-    mov $8,$0
     mov $2,1
     lpb $2,1
-      mul $8,2
       add $4,$2
       mov $7,$0
-      mov $2,$6
       lpb $4,1
-        mov $8,$1
-        mov $8,4
         add $3,1
-        add $2,2
-        add $9,1
-        sub $2,$4
-        add $1,$4
         mov $0,2
         sub $4,$3
         add $7,$0
       lpe
-      lpb $5,1
-        sub $0,4
-        mov $6,$1
-        mov $1,2
-        add $4,$0
-        mov $5,$2
-        mov $9,$2
-        sub $8,3
-        sub $0,6
-        sub $3,3
-        mov $10,1
-        sub $5,$3
-        add $7,5
-        add $3,$5
-        sub $7,3
-      lpe
-      mov $2,$10
-      mov $8,$1
-      lpb $6,1
-        mul $3,2
-        sub $2,6
-        add $9,$4
-        add $2,2
-        mov $0,9
-        add $7,$6
-        sub $6,$3
-        add $9,$5
-        mov $6,$0
-        sub $0,2
-        add $9,$1
-        add $7,3
-        mov $0,$2
-        add $2,2
-        mov $3,1
-        mov $3,$3
-        sub $9,7
-        mov $4,1
-        mov $5,2
-      lpe
-      mov $1,$4
-      add $8,4
-      sub $0,1
-      mov $10,5
-      bin $10,2
       mov $1,$7
-      mov $4,$1
-      mov $8,5
-      mov $7,3
-      mul $9,$10
       sub $2,1
-      div $8,$1
     lpe
-    mov $0,$4
-    add $0,2
-    pow $7,3
-    pow $2,66
-    add $3,$0
-    mov $14,$13
-    lpb $14,1
+    mov $10,$13
+    lpb $10,1
       mov $12,$1
-      sub $14,1
+      sub $10,1
     lpe
   lpe
   lpb $11,1
@@ -128,15 +47,15 @@ lpb $17,1
     mov $11,0
   lpe
   mov $1,$12
-  mov $18,$17
-  lpb $18,1
-    mov $16,$1
-    sub $18,1
+  mov $5,$6
+  lpb $5,1
+    mov $8,$1
+    sub $5,1
   lpe
 lpe
-lpb $15,1
-  sub $16,$1
-  mov $15,0
+lpb $9,1
+  sub $8,$1
+  mov $9,0
 lpe
-mov $1,$16
+mov $1,$8
 div $1,2
