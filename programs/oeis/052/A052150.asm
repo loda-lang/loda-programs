@@ -1,0 +1,107 @@
+; A052150: Partial sums of A000340, second partial sums of A003462.
+; 1,6,24,82,261,804,2440,7356,22113,66394,199248,597822,1793557,5380776,16142448,48427480,145282593,435847950,1307544040,3922632330,11767897221,35303691916,105911076024,317733228372,953199685441
+
+mov $6,9
+mov $5,81
+mov $7,1
+mov $1,1
+mov $3,1
+mov $6,1
+mov $10,7
+mov $5,8
+mov $8,6
+mul $7,8
+mov $5,$7
+add $7,$8
+mov $9,$6
+mov $6,$5
+mov $7,$0
+add $0,$9
+mul $3,2
+mov $7,2
+mov $4,$6
+fac $10
+mov $2,$5
+add $6,5
+mov $8,1
+mov $6,1
+add $10,1
+clr $9,$4
+mov $2,3
+mul $3,2
+add $4,$4
+add $9,9
+mov $2,2
+add $9,3
+mov $5,$7
+sub $1,6
+mul $6,2
+add $0,1
+mul $2,2
+mov $4,$0
+div $5,$9
+mov $5,1
+mov $4,2
+add $7,$1
+mov $1,$7
+mov $8,$8
+gcd $10,3
+add $2,$10
+mul $4,2
+sub $6,$0
+mov $9,8
+mov $5,$10
+add $1,$8
+add $7,$3
+add $8,4
+add $2,1
+add $8,$8
+add $8,1
+sub $2,1
+mov $6,7
+mov $3,$3
+add $10,1
+pow $8,3
+mov $5,$3
+mov $9,15
+add $7,$5
+add $3,1
+mov $2,$10
+mov $7,$2
+mov $4,$10
+mov $9,1
+mov $4,2
+sub $9,$2
+sub $1,$9
+div $10,$0
+mov $3,2
+mod $7,2
+mov $1,4
+mov $1,1
+sub $7,1
+mul $9,2
+lpb $0,1
+  mov $7,1
+  mov $3,1
+  mov $7,1
+  mul $1,3
+  sub $6,1
+  pow $5,$0
+  mov $5,$8
+  sub $0,1
+  sub $4,1
+  mov $7,$4
+  div $10,$8
+  add $6,$4
+  sub $7,1
+  add $3,1
+  sub $3,1
+  add $4,$1
+  add $3,$5
+  gcd $5,$1
+  mov $10,$6
+lpe
+mov $1,$6
+sub $1,9
+div $1,2
+add $1,1

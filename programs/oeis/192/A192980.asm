@@ -1,0 +1,144 @@
+; A192980: Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
+; 0,1,2,6,15,34,70,135,248,440,761,1292,2164,3589,5910,9682,15803,25726,41802,67835,109980,178196,288597,467256,756360,1224169,1981130,3205950,5187783,8394490,13583086,21978447,35562464,57541904,93105425
+
+mov $20,$0
+mov $22,$0
+add $22,1
+lpb $22,1
+  clr $0,20
+  sub $22,1
+  mov $0,$20
+  sub $0,$22
+  mov $17,$0
+  mov $19,$0
+  add $19,1
+  lpb $19,1
+    clr $0,17
+    sub $19,1
+    mov $0,$17
+    sub $0,$19
+    mov $13,$0
+    mov $15,2
+    lpb $15,1
+      clr $0,13
+      sub $15,1
+      mov $0,$13
+      add $0,$15
+      sub $0,1
+      mov $9,$0
+      mov $11,2
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        add $0,$11
+        sub $0,1
+        mov $8,1
+        mov $1,2
+        mov $7,3
+        mov $6,$1
+        mov $3,9100
+        mov $1,$1
+        sub $7,$8
+        mov $5,1
+        mov $7,$6
+        sub $8,6
+        add $3,$7
+        sub $8,1
+        mov $2,2
+        mov $8,10
+        mov $4,$7
+        mov $3,1
+        mov $8,$7
+        mov $5,$3
+        mov $6,$4
+        mov $4,1
+        add $8,2
+        mov $7,3
+        mov $6,$4
+        mov $5,3
+        add $2,$4
+        mul $3,2
+        mov $7,$4
+        lpb $0,1
+          add $3,$7
+          add $1,1
+          sub $2,$0
+          mov $6,$3
+          sub $1,$8
+          add $6,6
+          add $2,$7
+          add $4,3
+          mov $3,$4
+          mov $7,1
+          add $7,$4
+          sub $3,$7
+          div $1,$2
+          add $4,$6
+          mov $3,2
+          sub $1,$1
+          sub $4,2
+          sub $0,1
+          mov $8,2
+          sub $6,$2
+        lpe
+        sub $5,$3
+        mov $8,$0
+        sub $5,$5
+        add $8,$8
+        mul $2,2
+        add $7,$0
+        add $4,1
+        mov $3,1
+        add $3,$0
+        mov $1,2
+        mov $2,1
+        mov $0,$3
+        add $3,$3
+        mov $4,$4
+        add $3,$6
+        mov $2,8
+        sub $3,$6
+        add $8,$2
+        mov $1,5
+        sub $8,$8
+        add $2,1
+        pow $1,$2
+        mov $1,1
+        add $3,$4
+        mov $1,2
+        sub $5,$8
+        add $7,$4
+        add $4,$6
+        sub $8,$0
+        mov $1,$3
+        mov $12,$11
+        lpb $12,1
+          mov $10,$1
+          sub $12,1
+        lpe
+      lpe
+      lpb $9,1
+        sub $10,$1
+        mov $9,0
+      lpe
+      mov $1,$10
+      mov $16,$15
+      lpb $16,1
+        mov $14,$1
+        sub $16,1
+      lpe
+    lpe
+    lpb $13,1
+      sub $14,$1
+      mov $13,0
+    lpe
+    mov $1,$14
+    sub $1,4
+    div $1,2
+    add $18,$1
+  lpe
+  mov $1,$18
+  add $21,$1
+lpe
+mov $1,$21

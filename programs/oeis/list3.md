@@ -447,7 +447,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A314680](http://oeis.org/A314680) ([L21 program](314/A314680.asm)): Coordination sequence Gal.6.149.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314685](http://oeis.org/A314685) ([L19 program](314/A314685.asm)): Coordination sequence Gal.3.16.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314692](http://oeis.org/A314692) ([L26 program](314/A314692.asm)): Coordination sequence Gal.5.81.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A314708](http://oeis.org/A314708) ([L88 program](314/A314708.asm)): Coordination sequence Gal.5.65.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A314708](http://oeis.org/A314708) ([L18 program](314/A314708.asm)): Coordination sequence Gal.5.65.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314710](http://oeis.org/A314710) ([L24 program](314/A314710.asm)): Coordination sequence Gal.5.64.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314753](http://oeis.org/A314753) ([L23 program](314/A314753.asm)): Coordination sequence Gal.4.52.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314829](http://oeis.org/A314829) ([L22 program](314/A314829.asm)): Coordination sequence Gal.4.41.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -490,7 +490,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315471](http://oeis.org/A315471) ([L19 program](315/A315471.asm)): Coordination sequence Gal.3.52.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315475](http://oeis.org/A315475) ([L18 program](315/A315475.asm)): Coordination sequence Gal.5.133.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315477](http://oeis.org/A315477) ([L15 program](315/A315477.asm)): Coordination sequence Gal.5.293.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A315489](http://oeis.org/A315489) ([L88 program](315/A315489.asm)): Coordination sequence Gal.5.292.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315489](http://oeis.org/A315489) ([L18 program](315/A315489.asm)): Coordination sequence Gal.5.292.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315490](http://oeis.org/A315490) ([L20 program](315/A315490.asm)): Coordination sequence Gal.4.141.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315520](http://oeis.org/A315520) ([L14 program](315/A315520.asm)): Coordination sequence Gal.4.140.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315522](http://oeis.org/A315522) ([L17 program](315/A315522.asm)): Coordination sequence Gal.6.621.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -703,7 +703,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323467](http://oeis.org/A323467) ([L10 program](323/A323467.asm)): Smallest number in row n of A323465.
 * [A323610](http://oeis.org/A323610) ([L05 program](323/A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
 * [A323614](http://oeis.org/A323614) ([L06 program](323/A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
-* [A323629](http://oeis.org/A323629) ([L19 program](323/A323629.asm)): List of 6-powerful numbers (for the definition of k-powerful see A323395).
+* [A323629](http://oeis.org/A323629) ([L16 program](323/A323629.asm)): List of 6-powerful numbers (for the definition of k-powerful see A323395).
 * [A323723](http://oeis.org/A323723) ([L12 program](323/A323723.asm)): a(n) = (-2 - (-1)^n*(-2 + n) + n + 2*n^3)/4.
 * [A323724](http://oeis.org/A323724) ([L15 program](323/A323724.asm)): a(n) = n*(2*(n - 2)*n + (-1)^n + 3)/4.
 * [A323735](http://oeis.org/A323735) ([L14 program](323/A323735.asm)): a(n) is the largest minimal distance of a binary LCD [n,2] code.
@@ -726,7 +726,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325475](http://oeis.org/A325475) ([L03 program](325/A325475.asm)): a(n) = (24*n)^2.
 * [A325517](http://oeis.org/A325517) ([L40 program](325/A325517.asm)): a(n) = n*((2*n + 1)*(2*n^2 + 2*n + 3) - 3*(-1)^n)/24.
 * [A325657](http://oeis.org/A325657) ([L11 program](325/A325657.asm)): a(n) = (1/2)*(-1 + (-1)^n)*(n-1) + n^2.
-* [A325689](http://oeis.org/A325689) ([L82 program](325/A325689.asm)): Number of length-3 compositions of n such that no part is the sum of the other two.
+* [A325689](http://oeis.org/A325689) ([L17 program](325/A325689.asm)): Number of length-3 compositions of n such that no part is the sum of the other two.
 * [A325909](http://oeis.org/A325909) ([L25 program](325/A325909.asm)): Lexicographically earliest sequence of distinct positive terms such that for any n > 0, n divides Sum_{k = 1..n} (-1)^k * a(k).
 * [A325958](http://oeis.org/A325958) ([L08 program](325/A325958.asm)): Sum of corners of a 2n+1 X 2n+1 square spiral.
 * [A326178](http://oeis.org/A326178) ([L05 program](326/A326178.asm)): Number of subsets of {1..n} whose product is equal to their sum.
@@ -895,6 +895,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332057](http://oeis.org/A332057) ([L31 program](332/A332057.asm)): Partial sums (and absolute value of first differences) of A332056: if odd (resp. even) add (resp. subtract) the partial sum to get the next term.
 * [A332101](http://oeis.org/A332101) ([L34 program](332/A332101.asm)): Least m such that m^n <= Sum_{k<m} k^n.
 * [A332102](http://oeis.org/A332102) ([L29 program](332/A332102.asm)): Least m > 0 such that 2*m^n <= Sum_{k < m} k^n.
+* [A332202](http://oeis.org/A332202) ([L120 program](332/A332202.asm)): Largest k >= 0 such that 3^k divides 2^(2^n-1) + 1.
 * [A332243](http://oeis.org/A332243) ([L05 program](332/A332243.asm)): Starhex honeycomb numbers: a(n) = 13 + 60*n + 60*n^2.
 * [A332410](http://oeis.org/A332410) ([L40 program](332/A332410.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-5) - 2*a(n-6) + a(n-7) with a(0)=0, a(1)=1, a(2)=3, a(3)=6, a(4)=11, a(5)=17, a(6)=24.
 * [A332420](http://oeis.org/A332420) ([L16 program](332/A332420.asm)): Number of Maclaurin polynomials of sin x having exactly n positive zeros.
@@ -923,5 +924,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335439](http://oeis.org/A335439) ([L24 program](335/A335439.asm)): a(n) = n*(n-1)/2 + 2^(n-1) - 1.
 * [A335648](http://oeis.org/A335648) ([L27 program](335/A335648.asm)): Partial sums of A006010.
 * [A335756](http://oeis.org/A335756) ([L11 program](335/A335756.asm)): A cup filling problem starting with 2 empty cups of sizes 3 and n, where a(n) is the number of unreachable states (see details in comments).
-* [A336038](http://oeis.org/A336038) ([L09 program](336/A336038.asm)): Column k = 1 of triangle A308737.
 * [A336102](http://oeis.org/A336102) ([L16 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
