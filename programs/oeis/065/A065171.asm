@@ -1,0 +1,106 @@
+; A065171: Permutation of Z, folded to N, corresponding to the site swap pattern ...26120123456... which ascends infinitely after t=0.
+; 1,4,2,8,3,12,6,16,5,20,10,24,7,28,14,32,9,36,18,40,11,44,22,48,13,52,26,56,15,60,30,64,17,68,34,72,19,76,38,80,21,84,42,88,23,92,46,96,25,100,50,104,27,108,54,112,29,116,58,120,31,124,62,128,33,132,66,136,35
+
+mov $2,$0
+add $2,$0
+mov $5,5
+mov $4,$2
+mov $1,3
+mov $4,$0
+mov $9,1
+mov $3,2
+mov $10,$9
+mov $8,$1
+mov $9,$5
+mov $0,7
+mov $7,1
+add $8,$10
+sub $9,$8
+mov $6,2
+gcd $8,$4
+mov $6,$7
+add $10,$8
+mul $5,$3
+mov $6,1
+add $2,5
+mul $3,2
+add $7,3
+mov $4,1
+sub $9,1
+add $9,$8
+cmp $10,23
+add $5,1
+mov $1,$4
+mov $7,1
+add $9,$3
+mul $7,$9
+mov $3,$8
+div $2,$3
+sub $9,1
+add $8,1
+add $9,$10
+mov $4,$3
+mov $6,2
+mov $7,1
+add $1,1
+add $9,1
+mov $9,$3
+mod $5,2
+add $10,$0
+add $9,7
+pow $10,2
+mov $7,3
+mov $10,1
+pow $6,2
+pow $5,10
+lpb $0,1
+  add $4,$9
+  add $0,7
+  add $1,1
+  add $9,$9
+  add $4,$0
+  sub $0,1
+  mov $8,$1
+  add $7,3
+  sub $3,$5
+  sub $7,$3
+  add $7,$2
+  add $2,3
+  add $5,14
+  mov $6,$8
+  mul $0,$2
+  mov $2,$0
+  add $4,1
+  add $7,$10
+  mov $8,$1
+  sub $6,5
+lpe
+add $8,8
+mov $1,1
+mul $9,2
+mul $9,$7
+mul $9,2
+add $10,$6
+add $2,$3
+mov $10,1
+mov $10,8
+pow $1,9
+mov $4,$0
+add $5,1
+mov $4,$5
+sub $4,2
+add $4,1
+mov $3,2
+sub $6,22
+add $9,4
+sub $9,1
+mov $7,2
+add $4,1
+add $4,5
+mov $9,$9
+mov $4,2
+add $8,$0
+mov $8,20
+mov $1,$2
+sub $1,5
+add $1,1
