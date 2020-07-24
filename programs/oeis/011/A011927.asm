@@ -5,60 +5,24 @@ sub $0,1
 mov $5,$0
 mov $4,2
 mov $3,$0
-mov $1,2
-mov $2,1
-mov $1,$0
 lpb $0,1
-  sub $0,1
   sub $3,2
-  add $2,1
-  mul $1,4
-  mul $2,$2
-  mov $1,$3
   sub $5,2
-  mov $6,1
   mov $6,$5
-  sub $2,7
   add $6,$4
   mul $3,$6
   add $3,$5
-  sub $2,$4
-  mov $6,3
-  mov $0,$6
-  pow $4,2
   sub $0,$0
-  add $6,6
-  add $5,$2
-  sub $6,1
-  mov $4,5
-  mul $1,$2
   bin $6,$2
-  mov $4,2
   mov $1,$4
   add $3,$6
   pow $3,$1
-  mov $2,$2
-  add $2,$0
   mov $4,1
-  mul $5,3
 lpe
 add $4,15
-mov $0,1
 mov $2,1
 add $4,$2
 mov $0,$4
-add $6,$6
-sub $2,1
-mov $6,12
 mov $1,$0
-pow $6,7
-mov $2,$2
-mul $6,$2
-add $0,$1
-mov $4,$3
-mov $4,$0
-sub $0,2
-add $0,$1
 div $3,$1
-mov $4,$4
 mov $1,$3

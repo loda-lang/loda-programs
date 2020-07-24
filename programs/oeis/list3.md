@@ -108,6 +108,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A303590](http://oeis.org/A303590) ([L22 program](303/A303590.asm)): Floor(n*beta)-1, where 1/alpha+1/beta=1, alpha being the number with continued fraction expansion [1;1,2,3,4,5,...] (A247844).
 * [A303609](http://oeis.org/A303609) ([L11 program](303/A303609.asm)): a(n) = 2*n^3 + 9*n^2 + 9*n.
 * [A303611](http://oeis.org/A303611) ([L12 program](303/A303611.asm)): a(n) = (-1 - (-2)^(n-2)) mod 2^n.
+* [A303649](http://oeis.org/A303649) ([L94 program](303/A303649.asm)): Number of involutions of [n] having exactly one peak.
 * [A303692](http://oeis.org/A303692) ([L05 program](303/A303692.asm)): a(n) = n^2*(2*n - 3 - (-1)^n)/4.
 * [A303812](http://oeis.org/A303812) ([L24 program](303/A303812.asm)): Generalized 28-gonal (or icosioctagonal) numbers: m*(13*m - 12) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A303813](http://oeis.org/A303813) ([L35 program](303/A303813.asm)): Generalized 19-gonal (or enneadecagonal) numbers: m*(17*m - 15)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
@@ -293,6 +294,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308196](http://oeis.org/A308196) ([L07 program](308/A308196.asm)): Partial sums of A063808.
 * [A308217](http://oeis.org/A308217) ([L25 program](308/A308217.asm)): a(n) is the multiplicative inverse of A001844(n) modulo A001844(n+1); where A001844 is the sequence of centered square numbers.
 * [A308305](http://oeis.org/A308305) ([L12 program](308/A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
+* [A308358](http://oeis.org/A308358) ([L81 program](308/A308358.asm)): Beatty sequence for sqrt(3)/4.
 * [A308385](http://oeis.org/A308385) ([L25 program](308/A308385.asm)): a(n) is the last square visited by fers moves on a spirally numbered (2n-1) X (2n-1) board, moving to the lowest available unvisited square at each step.
 * [A308422](http://oeis.org/A308422) ([L08 program](308/A308422.asm)): a(n) = n^2 if n odd, 3*n^2/4 if n even.
 * [A308579](http://oeis.org/A308579) ([L08 program](308/A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
@@ -757,7 +759,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327999](http://oeis.org/A327999) ([L22 program](327/A327999.asm)): a(n) = Sum_{k=0..2n}(k!*(2n - k)!)/(floor(k/2)!*floor((2n - k)/2)!)^2.
 * [A328010](http://oeis.org/A328010) ([L17 program](328/A328010.asm)): The 5x + 1 sequence beginning at 17.
 * [A328011](http://oeis.org/A328011) ([L14 program](328/A328011.asm)): The 5x + 1 sequence beginning at 1.
-* [A328034](http://oeis.org/A328034) ([L63 program](328/A328034.asm)): a(n) = 3n minus the largest power of 2 not exceeding 3n.
+* [A328034](http://oeis.org/A328034) ([L29 program](328/A328034.asm)): a(n) = 3n minus the largest power of 2 not exceeding 3n.
 * [A328152](http://oeis.org/A328152) ([L22 program](328/A328152.asm)): a(n) is the number of squares of side length greater than 1 having vertices at the points of an n X n grid of dots.
 * [A328184](http://oeis.org/A328184) ([L24 program](328/A328184.asm)): Denominator of time taken for a vertex of a rolling regular n-sided polygon to reach the ground.
 * [A328263](http://oeis.org/A328263) ([L07 program](328/A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
@@ -805,7 +807,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329682](http://oeis.org/A329682) ([L05 program](329/A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L03 program](329/A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L03 program](329/A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
-* [A329754](http://oeis.org/A329754) ([L62 program](329/A329754.asm)): Doubly pentagonal pyramidal numbers.
+* [A329754](http://oeis.org/A329754) ([L22 program](329/A329754.asm)): Doubly pentagonal pyramidal numbers.
 * [A329774](http://oeis.org/A329774) ([L56 program](329/A329774.asm)): a(n) = n+1 for n <= 2; otherwise a(n) = 3*a(n-3)+1.
 * [A329822](http://oeis.org/A329822) ([L06 program](329/A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
 * [A329826](http://oeis.org/A329826) ([L15 program](329/A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
@@ -925,7 +927,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334706](http://oeis.org/A334706) ([L35 program](334/A334706.asm)): Number of collinear triples in a 4 X n rectangular grid.
 * [A334789](http://oeis.org/A334789) ([L16 program](334/A334789.asm)): a(n) = 2^log_2*(n) where log_2*(n) = A001069(n) is the number of log_2(log_2(...log_2(n))) iterations needed to reach < 2.
 * [A335025](http://oeis.org/A335025) ([L18 program](335/A335025.asm)): Largest side lengths of almost-equilateral Heronian triangles.
-* [A335048](http://oeis.org/A335048) ([L92 program](335/A335048.asm)): Minimum sum of primes (see Comments).
+* [A335048](http://oeis.org/A335048) ([L24 program](335/A335048.asm)): Minimum sum of primes (see Comments).
 * [A335129](http://oeis.org/A335129) ([L09 program](335/A335129.asm)): a(n) is the number of distinct lines created inside an n-gon when connecting vertex k to vertex 2k mod n.
 * [A335439](http://oeis.org/A335439) ([L24 program](335/A335439.asm)): a(n) = n*(n-1)/2 + 2^(n-1) - 1.
 * [A335648](http://oeis.org/A335648) ([L27 program](335/A335648.asm)): Partial sums of A006010.
