@@ -3,65 +3,25 @@
 
 mov $7,$0
 mul $0,2
-mov $3,$0
 mov $5,1
-mov $4,$5
 lpb $0,1
-  add $5,$3
-  sub $5,4
-  mov $3,1
-  mov $2,$5
-  add $3,9
-  sub $2,$3
-  mov $2,$4
   mov $1,$0
   add $2,$0
-  mov $6,$4
-  add $0,3
-  sub $0,1
-  mov $6,$2
   add $1,2
-  add $3,1
   mov $4,$1
   bin $4,5
-  sub $0,$0
-  sub $0,18
-  sub $5,$2
-  sub $0,$2
   sub $5,1
   add $4,$2
-  mul $2,$1
-  mov $2,$1
-  sub $0,1
-  sub $6,1
-  log $1,10
-  sub $3,1
   mov $0,$5
   mov $2,1
-  add $2,$2
+  mul $2,2
   div $4,$2
-  mov $6,$3
-  add $2,1
-  add $1,1
-  mov $1,$2
   mul $4,8
-  mov $1,28
-  add $6,1
   mov $3,$4
-  mov $4,$6
 lpe
 mov $6,$3
-mov $0,$3
 add $5,$6
 mov $4,$5
-mov $5,$6
-sub $1,$3
-sub $6,$2
-mov $1,$3
-mov $5,1
-mov $6,1
-mov $2,$1
-add $2,2
 mov $1,$4
 mov $8,$7
 mul $8,$7
