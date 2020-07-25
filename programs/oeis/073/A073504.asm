@@ -1,0 +1,97 @@
+; A073504: A possible basis for finite fractal sequences: let u(1) = 1, u(2) = n, u(k) = floor(u(k-1)/2) + floor(u(k-2)/2); then a(n) = lim_{k->infinity} u(k).
+; 0,0,0,2,2,2,2,4,4,4,4,6,6,8,8,10,10,10,10,12,12,12,12,14,14,14,14,16,16,18,18,20,20,20,20,22,22,22,22,24,24,24,24,26,26,28,28,30,30,30,30,32,32,34,34,36,36,36,36,38,38,40,40,42,42,42,42,44,44,44,44,46,46,46
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $7,3
+  add $7,$7
+  mov $4,$0
+  mov $7,64
+  mov $1,2
+  add $4,$0
+  mov $1,$0
+  mov $6,$0
+  mov $8,$1
+  mov $0,12
+  mov $8,4
+  mov $8,1
+  mov $2,$8
+  add $0,1
+  mul $0,2
+  sub $1,3
+  mov $3,$1
+  mov $5,$8
+  sub $4,$8
+  mov $2,$5
+  add $8,$1
+  mov $3,$0
+  mov $0,$1
+  sub $4,$0
+  mul $4,2
+  mov $7,$1
+  mov $8,2
+  sub $7,1
+  mov $0,1
+  mov $5,$0
+  sub $4,$4
+  mov $4,1
+  mov $8,3
+  add $4,$2
+  add $7,$6
+  add $3,1
+  sub $2,$5
+  mul $4,8
+  mov $5,$8
+  div $0,$3
+  mul $8,4
+  add $5,$5
+  mul $8,$7
+  add $8,$1
+  sub $7,$6
+  add $5,144
+  sub $0,$3
+  mul $4,$5
+  add $3,$4
+  sub $5,$6
+  sub $6,$4
+  mov $0,1
+  mov $7,$1
+  sub $5,$0
+  mul $6,4
+  sub $4,9
+  mov $1,1
+  sub $7,25
+  sub $3,1
+  sub $8,$2
+  sub $2,$4
+  lpb $0,1
+    sub $7,1
+    gcd $5,64
+    sub $0,1
+    sub $0,1
+    mov $2,3
+    mod $5,3
+    mov $6,$2
+    add $1,11
+    cmp $2,4
+  lpe
+  add $4,$8
+  sub $3,2
+  sub $0,11
+  add $3,6
+  mov $7,$0
+  sub $4,29
+  add $1,3
+  sub $1,5
+  mov $1,$5
+  sub $1,1
+  mul $1,2
+  add $10,$1
+lpe
+mov $1,$10

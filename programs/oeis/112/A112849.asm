@@ -1,4 +1,4 @@
-; A112849: Number of congruence classes (epimorphisms/vertex partitionings induced by graph endomorphisms) of undirected cycles of even length: |C(C_2n)|.
+; A112849: Number of congruence classes (epimorphisms/vertex partitionings induced by graph endomorphisms) of undirected cycles of even length: |C(C_{2*n})|.
 ; 1,4,11,36,127,463,1717,6436,24311,92379,352717,1352079,5200301,20058301,77558761,300540196,1166803111,4537567651,17672631901,68923264411,269128937221,1052049481861,4116715363801,16123801841551,63205303218877,247959266474053,973469712824057,3824345300380221,15033633249770521
 
 mov $5,1
