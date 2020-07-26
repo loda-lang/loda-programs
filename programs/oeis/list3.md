@@ -79,7 +79,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302338](http://oeis.org/A302338) ([L09 program](302/A302338.asm)): a(n) = 3*n + 2^v(n) where v(n) denotes the 2-adic valuation of n.
 * [A302390](http://oeis.org/A302390) ([L12 program](302/A302390.asm)): Triameter of the n-cube-connected cycle graph.
 * [A302392](http://oeis.org/A302392) ([L20 program](302/A302392.asm)): Number of odd parts in the partitions of 3n into 3 parts.
-* [A302402](http://oeis.org/A302402) ([L04 program](302/A302402.asm)): Total domination number of the n-ladder graph.
+* [A302402](http://oeis.org/A302402) ([L05 program](302/A302402.asm)): Total domination number of the n-ladder graph.
 * [A302404](http://oeis.org/A302404) ([L12 program](302/A302404.asm)): Total domination number of the n-Moebius ladder.
 * [A302405](http://oeis.org/A302405) ([L17 program](302/A302405.asm)): Total domination number of the n-prism graph.
 * [A302406](http://oeis.org/A302406) ([L11 program](302/A302406.asm)): Total domination number of the n X n torus grid graph.
@@ -108,7 +108,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A303590](http://oeis.org/A303590) ([L22 program](303/A303590.asm)): Floor(n*beta)-1, where 1/alpha+1/beta=1, alpha being the number with continued fraction expansion [1;1,2,3,4,5,...] (A247844).
 * [A303609](http://oeis.org/A303609) ([L11 program](303/A303609.asm)): a(n) = 2*n^3 + 9*n^2 + 9*n.
 * [A303611](http://oeis.org/A303611) ([L12 program](303/A303611.asm)): a(n) = (-1 - (-2)^(n-2)) mod 2^n.
-* [A303649](http://oeis.org/A303649) ([L94 program](303/A303649.asm)): Number of involutions of [n] having exactly one peak.
 * [A303692](http://oeis.org/A303692) ([L05 program](303/A303692.asm)): a(n) = n^2*(2*n - 3 - (-1)^n)/4.
 * [A303812](http://oeis.org/A303812) ([L24 program](303/A303812.asm)): Generalized 28-gonal (or icosioctagonal) numbers: m*(13*m - 12) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A303813](http://oeis.org/A303813) ([L35 program](303/A303813.asm)): Generalized 19-gonal (or enneadecagonal) numbers: m*(17*m - 15)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
@@ -294,7 +293,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308196](http://oeis.org/A308196) ([L07 program](308/A308196.asm)): Partial sums of A063808.
 * [A308217](http://oeis.org/A308217) ([L25 program](308/A308217.asm)): a(n) is the multiplicative inverse of A001844(n) modulo A001844(n+1); where A001844 is the sequence of centered square numbers.
 * [A308305](http://oeis.org/A308305) ([L12 program](308/A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
-* [A308358](http://oeis.org/A308358) ([L81 program](308/A308358.asm)): Beatty sequence for sqrt(3)/4.
+* [A308358](http://oeis.org/A308358) ([L19 program](308/A308358.asm)): Beatty sequence for sqrt(3)/4.
 * [A308385](http://oeis.org/A308385) ([L25 program](308/A308385.asm)): a(n) is the last square visited by fers moves on a spirally numbered (2n-1) X (2n-1) board, moving to the lowest available unvisited square at each step.
 * [A308422](http://oeis.org/A308422) ([L08 program](308/A308422.asm)): a(n) = n^2 if n odd, 3*n^2/4 if n even.
 * [A308579](http://oeis.org/A308579) ([L08 program](308/A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
@@ -732,7 +731,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325657](http://oeis.org/A325657) ([L11 program](325/A325657.asm)): a(n) = (1/2)*(-1 + (-1)^n)*(n-1) + n^2.
 * [A325689](http://oeis.org/A325689) ([L17 program](325/A325689.asm)): Number of length-3 compositions of n such that no part is the sum of the other two.
 * [A325909](http://oeis.org/A325909) ([L25 program](325/A325909.asm)): Lexicographically earliest sequence of distinct positive terms such that for any n > 0, n divides Sum_{k = 1..n} (-1)^k * a(k).
-* [A325958](http://oeis.org/A325958) ([L08 program](325/A325958.asm)): Sum of corners of a 2n+1 X 2n+1 square spiral.
+* [A325958](http://oeis.org/A325958) ([L21 program](325/A325958.asm)): Sum of corners of a 2n+1 X 2n+1 square spiral.
 * [A326178](http://oeis.org/A326178) ([L05 program](326/A326178.asm)): Number of subsets of {1..n} whose product is equal to their sum.
 * [A326247](http://oeis.org/A326247) ([L15 program](326/A326247.asm)): Number of labeled n-vertex 2-edge multigraphs that are neither crossing nor nesting.
 * [A326278](http://oeis.org/A326278) ([L12 program](326/A326278.asm)): Number of n-vertex, 2-edge multigraphs that are not nesting. Number of n-vertex, 2-edge multigraphs that are not crossing.
@@ -844,6 +843,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329990](http://oeis.org/A329990) ([L46 program](329/A329990.asm)): Beatty sequence for the number x satisfying 1/x + 1/3^x = 1.
 * [A329991](http://oeis.org/A329991) ([L13 program](329/A329991.asm)): Beatty sequence for 3^x, where 1/x + 1/3^x = 1.
 * [A329994](http://oeis.org/A329994) ([L10 program](329/A329994.asm)): Beatty sequence for 2^x, where 1/x^2 + 1/2^x = 1.
+* [A329996](http://oeis.org/A329996) ([L63 program](329/A329996.asm)): Beatty sequence for x^3, where 1/x^3 + 1/3^x = 1.
 * [A329997](http://oeis.org/A329997) ([L05 program](329/A329997.asm)): Beatty sequence for 3^x, where 1/x^3 + 1/3^x = 1.
 * [A330000](http://oeis.org/A330000) ([L46 program](330/A330000.asm)): Beatty sequence for sqrt(x+1), where 1/sqrt(x-1) + 1/sqrt(x+1) = 1.
 * [A330002](http://oeis.org/A330002) ([L04 program](330/A330002.asm)): Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
@@ -898,6 +898,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332023](http://oeis.org/A332023) ([L28 program](332/A332023.asm)): T(n, k) = binomial(n+2, 3) + binomial(k+1, 2) + binomial(k, 1). Triangle read by rows, T(n, k) for 0 <= k <= n.
 * [A332026](http://oeis.org/A332026) ([L18 program](332/A332026.asm)): Savannah problem: number of new possibilities after n weeks.
 * [A332027](http://oeis.org/A332027) ([L16 program](332/A332027.asm)): Savannah problem: number of distinct possible populations after n weeks, allowing populations after the empty set.
+* [A332028](http://oeis.org/A332028) ([L101 program](332/A332028.asm)): Savannah problem: number of distinct possible populations after n weeks, not allowing new populations after the empty set.
 * [A332044](http://oeis.org/A332044) ([L07 program](332/A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332057](http://oeis.org/A332057) ([L31 program](332/A332057.asm)): Partial sums (and absolute value of first differences) of A332056: if odd (resp. even) add (resp. subtract) the partial sum to get the next term.
 * [A332101](http://oeis.org/A332101) ([L34 program](332/A332101.asm)): Least m such that m^n <= Sum_{k<m} k^n.
@@ -932,4 +933,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335439](http://oeis.org/A335439) ([L24 program](335/A335439.asm)): a(n) = n*(n-1)/2 + 2^(n-1) - 1.
 * [A335648](http://oeis.org/A335648) ([L27 program](335/A335648.asm)): Partial sums of A006010.
 * [A335756](http://oeis.org/A335756) ([L11 program](335/A335756.asm)): A cup filling problem starting with 2 empty cups of sizes 3 and n, where a(n) is the number of unreachable states (see details in comments).
+* [A335956](http://oeis.org/A335956) ([L85 program](335/A335956.asm)): a(n) = (2^n - 1)*2^valuation(n, 2) for n > 0 and a(0) = 0.
 * [A336102](http://oeis.org/A336102) ([L16 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.

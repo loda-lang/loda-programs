@@ -1,0 +1,67 @@
+; A208089: Number of 8 X (n+1) 0..1 arrays with every 2 X 2 subblock having the same number of equal edges as its horizontal neighbors and a different number from its vertical neighbors, and new values 0..1 introduced in row major order.
+; 216,504,1206,3096,7992,20862,54504,142632,373302,977256,2558376,6697854,17535096,45907416,120187062,314653752,823774104,2156668542,5646231432,14782025736,38699845686,101317511304,265252688136,694440553086
+
+mov $5,$0
+mov $5,$0
+mov $6,3
+mov $4,1
+mov $2,$6
+clr $6,$4
+mov $1,2
+add $6,$6
+add $0,$2
+mov $4,$6
+mov $1,1
+mov $3,$1
+mov $4,1
+lpb $0,1
+  sub $6,1
+  sub $0,1
+  mov $6,1
+  mov $6,$3
+  mov $5,1
+  add $2,2
+  sub $1,2
+  mov $1,$4
+  add $4,$5
+  bin $5,2
+  add $6,$4
+  add $2,$5
+  mov $4,$6
+  add $2,$3
+  sub $5,4
+  sub $4,2
+  add $2,2
+  mov $3,2
+  mov $5,$6
+  sub $5,$3
+  mul $5,2
+  add $3,$1
+lpe
+add $2,1
+mov $3,$6
+add $4,1
+mul $3,$3
+mov $5,$0
+mod $4,$2
+add $3,$5
+add $5,1
+mov $0,$4
+sub $0,$2
+sub $0,1
+sub $6,2
+add $6,1
+pow $4,2
+sub $5,6
+mul $5,$3
+mov $3,$3
+sub $4,7
+add $4,6
+mov $1,2
+bin $1,18
+add $1,$5
+mov $1,$4
+sub $1,35
+div $1,4
+mul $1,18
+add $1,216

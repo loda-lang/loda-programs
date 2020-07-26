@@ -1,104 +1,17 @@
 ; A332028: Savannah problem: number of distinct possible populations after n weeks, not allowing new populations after the empty set.
 ; 3,5,7,11,14,17,22,26,30,34,40,45,50,55,60,67,73,79,85,91,97,105,112,119,126,133,140,147,156,164,172,180,188,196,204,212,222,231,240,249,258,267,276,285,294,305,315,325,335,345
 
-mov $9,$0
-mov $6,$0
-mov $5,1
-mov $8,$9
-mov $7,$8
-mov $3,1
-mov $2,3
-div $5,3
-mul $8,2
-add $5,2
-mov $1,$3
-mov $4,1
-mov $10,$0
-add $1,1
-mov $2,$10
-add $3,4
-mov $3,$2
-add $2,$5
-sub $9,$6
-mov $8,$1
-sub $6,$0
-pow $1,$8
-mov $8,$10
+mov $3,$0
+mov $2,$3
+add $2,2
+mov $5,$3
 mov $4,1
 lpb $0,1
-  mov $5,1
-  add $3,$4
-  mov $3,$7
-  add $1,4
-  sub $3,2
-  add $2,$8
-  add $5,1
+  add $2,$5
   sub $0,$4
-  sub $7,$10
-  add $5,$5
-  mov $8,$0
-  mul $3,2
-  mov $9,2
+  mov $5,$0
   sub $0,1
   add $4,1
-  sub $1,2
 lpe
-mov $8,$8
-add $10,$8
-add $10,$6
-mov $7,$3
-add $3,$9
-mov $9,1
-mul $6,2
-cmp $1,$2
-mov $5,1
-mov $4,1
-sub $4,$7
-mov $7,$9
-mul $5,8
-mov $3,$5
-mov $1,$1
-mov $9,3
-mov $9,$4
-add $4,6
-sub $6,3
-add $2,$0
-mov $0,$8
-sub $9,1
-mov $6,6
-add $1,$9
-sub $3,$9
-add $7,1
-mul $5,2
-mov $0,1
-add $8,1
-div $3,$6
-mov $3,$10
-mov $0,1
-mov $0,$8
-sub $8,$7
-mov $9,1
-mov $9,$4
-mov $1,17
-mov $6,$3
-add $8,9
-add $5,$7
-mov $9,6
-add $9,1
-add $7,$5
-div $8,$1
-bin $10,2
-mov $8,6
-mov $0,1
-mov $7,$5
-add $5,$9
-mov $0,$4
-mov $3,1
-add $4,$1
-sub $7,1
 add $2,1
-sub $3,1
-add $9,$2
-sub $0,$5
-mul $0,$3
 mov $1,$2

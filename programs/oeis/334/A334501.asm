@@ -1,0 +1,104 @@
+; A334501: Eventual period of a single cell in rule 190 cellular automaton in a cyclic universe of width n.
+; 1,1,1,4,5,6,7,4,9,10,11,4,13,14,15,4,17,18,19,4,21,22,23,4,25,26,27,4,29,30,31,4,33,34,35,4,37,38,39,4,41,42,43,4,45,46,47,4,49,50,51,4,53,54,55,4,57,58,59,4,61,62,63,4,65,66,67,4,69,70
+
+mov $7,$0
+mov $6,1
+mov $8,$7
+mov $5,$0
+lpb $6,2
+  mov $7,$0
+  mov $4,$7
+  lpb $5,2
+    mov $4,1
+    mov $1,$0
+    mov $7,1
+    gcd $6,$6
+    mov $5,2
+    add $8,$5
+    mov $2,6
+    mov $4,$5
+    mov $10,$6
+    mov $9,4
+    add $10,1
+    mov $4,3
+    div $1,$10
+    mov $10,$2
+    sub $6,$2
+    mov $6,1
+    mov $2,$7
+    mul $10,2
+    mul $10,19
+    sub $8,1
+    div $8,4
+    lpb $9,2
+      mov $0,$8
+      sub $7,1
+      mov $0,$0
+      sub $9,1
+      add $9,1
+      sub $10,$10
+      mov $2,2
+      add $9,$9
+      lpb $1,1
+        mov $5,$10
+        add $0,2
+        lpb $1,1
+          sub $1,$8
+          mov $7,$1
+          mul $1,2
+          mov $9,$9
+          lpb $8,5
+            mov $3,1
+            lpb $5,5
+              add $2,7
+              mov $9,$1
+            lpe
+            add $4,$7
+            mov $0,$0
+            mov $4,$0
+            mov $6,2
+            add $0,$6
+            add $8,1
+            add $6,5
+            add $4,1
+            mul $1,$1
+          lpe
+        lpe
+        add $7,$3
+        add $3,$10
+        mov $9,1
+        mov $10,$10
+      lpe
+      mul $1,2
+      mov $7,$2
+      mov $10,3
+    lpe
+    add $1,$10
+  lpe
+  sub $7,1
+  add $9,$3
+  clr $1,1
+  mov $7,$10
+  mov $0,$7
+  add $2,$0
+  sub $8,$7
+  add $4,1
+lpe
+add $6,$8
+mov $1,1
+add $0,1
+mov $2,1
+mov $7,$0
+add $10,2
+sub $7,15
+mov $8,1
+mod $7,$0
+add $2,$3
+add $10,1
+add $10,$9
+mov $3,$9
+mov $0,$0
+add $8,$8
+mov $6,$0
+add $3,$3
+mov $1,$0

@@ -1,127 +1,47 @@
 ; A037085: Beatty sequence for Pi^2.
 ; 0,9,19,29,39,49,59,69,78,88,98,108,118,128,138,148,157,167,177,187,197,207,217,227,236,246,256,266,276,286,296,305,315,325,335,345,355,365,375,384,394,404,414,424,434,444,454,463,473,483,493
 
-mov $15,$0
-mov $17,$0
-add $17,1
-lpb $17,1
-  clr $0,15
-  sub $17,1
-  mov $0,$15
-  sub $0,$17
+mov $8,$0
+mov $2,$0
+lpb $2,1
+  sub $2,1
+  mov $0,$8
+  sub $0,$2
   mov $11,$0
-  mov $13,2
-  lpb $13,1
-    clr $0,11
-    sub $13,1
+  mov $10,2
+  lpb $10,1
+    sub $10,1
     mov $0,$11
-    add $0,$13
+    add $0,$10
     sub $0,1
     mov $1,1
-    mov $5,$0
     add $0,$1
-    mov $3,$1
     lpb $0,1
-      mov $7,2
-      sub $7,$5
       mov $1,$0
       mov $4,64
-      mov $8,1
-      mov $2,$5
-      mov $5,1
-      mov $5,1
-      add $0,1
-      pow $2,5
-      mov $9,$4
-      mov $5,1
       add $1,1
-      add $1,$1
+      mul $1,2
       mov $7,$1
-      mov $3,0
-      mov $9,$4
-      mov $1,8
-      mov $1,1
-      add $0,$7
-      mov $6,6
       sub $4,1
-      add $9,2
-      mov $3,1
-      add $0,$8
-      mov $2,2
-      mov $9,$0
       sub $9,$9
-      sub $2,2
-      mul $6,2
-      mov $2,$0
-      mul $9,$9
-      add $2,2
-      mov $2,$7
-      pow $5,$7
       mul $4,2
-      log $5,$7
-      add $8,$6
-      mul $0,$1
       add $9,$7
-      sub $0,$9
       sub $4,1
       sub $9,4
-      mul $0,$6
-      add $1,$7
-      mov $8,$0
-      sub $0,$7
-      add $8,$8
       mul $4,$9
-      mov $10,$9
       sub $4,$7
-      sub $10,$10
-      sub $0,1
-      add $5,$9
-      mov $8,$6
-      sub $0,7
-      mul $3,2
-      mov $6,1
-      sub $3,4
-      mov $5,$8
-      mul $3,$8
       add $9,$4
-      mov $5,$6
-      mov $0,$2
-      add $4,$4
-      mov $4,3
-      mov $1,$4
       add $9,4
       sub $4,$4
-      sub $6,1
       mov $0,$4
-      add $8,$3
-      sub $3,1
-      mov $10,$3
-      cmp $6,36
-      sub $0,1
-      sub $1,$4
-      sub $0,1
-      mov $10,18
-      mov $8,3
     lpe
-    add $3,$10
-    add $10,2
-    add $9,$4
-    div $0,$10
     mov $3,$9
     div $3,23
-    mov $4,$5
-    sub $0,$7
-    add $3,1
-    sub $9,15
-    mul $1,$5
-    sub $9,$6
-    mov $4,$8
-    add $9,5
     mov $1,$3
-    mov $14,$13
-    lpb $14,1
+    mov $5,$10
+    lpb $5,1
       mov $12,$1
-      sub $14,1
+      sub $5,1
     lpe
   lpe
   lpb $11,1
@@ -130,6 +50,6 @@ lpb $17,1
   lpe
   mov $1,$12
   sub $1,1
-  add $16,$1
+  add $6,$1
 lpe
-mov $1,$16
+mov $1,$6

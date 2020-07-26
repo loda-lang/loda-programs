@@ -1,0 +1,93 @@
+; A043654: Numbers n such that base 12 representation has exactly 5 runs.
+; 20881,20882,20883,20884,20885,20886,20887,20888,20889,20890,20891,20904,20905,20907,20908,20909,20910,20911,20912,20913,20914,20915,20916,20917,20918,20920,20921,20922,20923,20924
+
+mov $9,$0
+mov $6,$0
+lpb $0,1
+  mov $1,$6
+  mov $2,8
+  mov $7,$2
+  add $2,$2
+  sub $0,1
+  mov $5,4
+  add $6,$6
+  mov $3,$6
+  mov $4,$2
+  mov $6,2
+  sub $4,$2
+  add $7,4
+  mov $2,1
+  sub $5,1
+  sub $4,$0
+  mov $7,3
+  add $7,2
+  mov $1,1
+  mov $8,$1
+  mov $6,1
+  mov $2,$6
+  add $1,$2
+  mov $3,3
+  mov $2,$8
+  mov $1,$5
+  add $2,$1
+  div $0,12
+  sub $1,$1
+  mov $3,$3
+  add $7,$0
+  mul $6,2
+  add $0,$1
+  mov $0,3
+  mov $4,2
+  pow $0,2
+  add $1,2
+  mov $3,$7
+  mov $1,2
+  add $6,$4
+  add $4,15
+  sub $6,1
+  mov $5,$7
+  add $0,1
+  add $5,1
+  add $5,1
+  mov $3,31
+  mov $6,$1
+  add $2,$5
+  sub $3,$6
+  div $4,2
+  mov $6,3
+  add $8,$5
+  add $8,2
+  sub $5,$0
+  sub $5,2
+  mov $5,1
+lpe
+add $4,$6
+sub $6,$6
+add $8,1
+add $1,$8
+sub $6,$8
+mul $7,$0
+mov $8,$1
+sub $3,$7
+mov $2,$2
+sub $4,2
+mov $0,2
+sub $6,1
+mov $4,2
+add $6,$6
+sub $4,$8
+sub $4,2
+sub $0,2
+sub $4,6
+mov $7,3
+mul $2,$8
+mov $4,$3
+add $1,145
+mov $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9
+mul $10,$9
+sub $1,146
+add $1,20881
