@@ -1,0 +1,106 @@
+; A133820: Triangle whose rows are sequences of increasing cubes: 1; 1,8; 1,8,27; ... .
+; 1,1,8,1,8,27,1,8,27,64,1,8,27,64,125,1,8,27,64,125,216,1,8,27,64,125,216,343,1,8,27,64,125,216,343,512,1,8,27,64,125,216,343,512,729,1,8,27,64,125,216,343,512,729,1000
+
+add $0,$0
+mov $10,2
+mov $7,6
+mov $2,$0
+mov $3,1
+mov $4,$0
+mov $5,$4
+mov $2,2
+mov $7,1
+mov $6,$2
+lpb $2,1
+  mov $9,$3
+  mul $0,6
+  add $3,$4
+  pow $5,2
+  add $7,1
+  mov $7,1
+  add $4,$2
+  lpb $4,1
+    mov $0,$9
+    add $9,$9
+    cmp $6,2
+    mov $3,1
+    mul $7,2
+    div $5,$0
+    mov $7,$4
+    mov $8,$2
+    add $10,1
+    pow $7,3
+    add $9,$8
+    sub $4,$2
+    add $9,$10
+    mul $5,$4
+    mov $8,$9
+    add $2,2
+    add $10,1
+  lpe
+  clr $9,$3
+  mul $9,$0
+  lpb $5,1
+    add $3,$8
+    mul $3,2
+    mov $7,1
+    sub $5,$7
+    mov $8,9
+    sub $5,$2
+    mul $10,5
+    sub $6,$2
+    mov $6,9
+    add $3,1
+    mov $5,$5
+    mul $9,$7
+    mov $9,$2
+    add $10,$6
+    mov $0,$9
+    mov $2,2
+    mov $7,2
+    div $10,7
+    mov $4,4
+    add $2,5
+    add $9,$2
+    sub $5,4
+    mov $7,3
+    mov $0,$7
+    mov $8,5
+    add $4,6
+    mov $1,3
+  lpe
+  mov $6,8
+  mov $0,1
+  mov $10,$7
+  mov $6,$4
+  mov $3,$3
+  mov $5,1
+  add $1,$7
+  add $10,3
+  pow $9,2
+  add $6,1
+  div $4,$1
+  sub $8,9
+  mov $9,7
+  add $9,$8
+  mov $2,$4
+  lpb $6,1
+    mov $1,2
+    sub $5,27
+    sub $1,$10
+    sub $6,$2
+    mov $6,$9
+  lpe
+  mov $2,$4
+  add $6,7
+  clr $6,$5
+  sub $7,1
+  sub $10,$6
+  sub $2,1
+  mov $5,3
+  add $5,12
+lpe
+mov $10,1
+sub $1,8
+div $1,8
+add $1,1

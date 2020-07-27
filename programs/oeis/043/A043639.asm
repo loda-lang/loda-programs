@@ -1,0 +1,65 @@
+; A043639: Numbers n such that base 10 representation has exactly 3 runs.
+; 101,102,103,104,105,106,107,108,109,120,121,123,124,125,126,127,128,129,130,131,132,134,135,136,137,138,139,140,141,142,143,145,146,147,148,149,150,151,152,153,154,156,157,158,159
+
+mov $4,1
+mov $6,$4
+mov $4,1
+mov $4,$4
+mov $3,$4
+lpb $0,1
+  add $3,3
+  pow $6,2
+  mov $5,3
+  mov $2,$0
+  mov $1,$0
+  mov $4,$2
+  mov $1,$3
+  add $3,9
+  sub $4,3
+  mov $5,3
+  sub $3,2
+  mov $2,1
+  add $3,2
+  add $1,1
+  sub $5,$3
+  add $0,$2
+  add $5,1
+  sub $1,1
+  mul $1,2
+  mov $3,1
+  mov $0,2
+  sub $6,$2
+  add $1,$0
+  add $6,2
+  add $2,$3
+  add $1,$4
+  gcd $4,$4
+  add $3,2
+  mul $2,5
+  mov $6,$1
+  add $0,$1
+  mov $5,7
+  div $0,$2
+  add $0,8
+  sub $6,4
+  sub $1,$2
+  mov $3,3
+  mov $1,$6
+  sub $0,1
+  gcd $3,$2
+  mov $3,$6
+  div $4,$2
+  sub $5,3
+  mul $5,$0
+  sub $2,3
+  add $2,1
+  mov $6,$6
+  mul $5,2
+  add $5,$2
+lpe
+mov $1,1
+mov $2,$0
+add $3,$2
+mov $1,$3
+sub $1,1
+add $1,101

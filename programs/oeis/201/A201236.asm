@@ -1,0 +1,87 @@
+; A201236: Number of ways to place 2 non-attacking wazirs on an n X n toroidal board.
+; 0,2,18,88,250,558,1078,1888,3078,4750,7018,10008,13858,18718,24750,32128,41038,51678,64258,79000,96138,115918,138598,164448,193750,226798,263898,305368,351538,402750,459358,521728,590238,665278,747250,836568,933658,1038958
+
+mov $6,$0
+mov $1,1
+mov $8,9
+mov $2,1
+mov $3,45
+add $0,2
+sub $3,1
+sub $8,$6
+mul $0,$6
+mov $6,9
+mov $7,$1
+div $7,2
+mov $8,$0
+log $1,5
+add $1,$3
+mov $4,$0
+sub $3,$7
+mov $4,3
+mov $5,$7
+sub $0,$2
+mov $4,$0
+mov $7,$1
+add $7,$3
+mov $8,$0
+sub $0,2
+add $8,$7
+mov $3,$0
+mov $7,$6
+mov $1,3
+add $4,4
+mov $5,2
+clr $3,$2
+mov $6,1
+add $4,$8
+add $5,1
+mul $6,$1
+lpb $0,1
+  mov $5,1
+  mov $2,$8
+  mov $1,$0
+  mov $2,$2
+  bin $3,$2
+  add $8,$3
+  mov $4,1
+  add $6,$7
+  mul $4,5
+  mov $7,$6
+  mul $2,2
+  add $4,$4
+  add $8,$1
+  mov $7,2
+  mov $3,1
+  sub $0,1
+lpe
+add $4,1
+sub $4,$5
+mov $1,0
+mov $3,6
+sub $5,$2
+add $4,1
+mov $4,18
+mov $1,4
+add $6,$1
+add $8,$5
+mov $6,$8
+mov $2,$5
+mov $8,270
+mov $7,11
+sub $8,1
+sub $4,$1
+mov $7,2
+add $6,$5
+sub $6,3
+pow $2,$3
+mov $4,$0
+mov $8,$0
+mov $5,1
+mov $5,1
+mov $3,$4
+sub $3,$6
+mov $1,$6
+sub $1,89
+div $1,2
+mul $1,2

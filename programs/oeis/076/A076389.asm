@@ -1,0 +1,65 @@
+; A076389: Sum of squares of numbers that cannot be written as t*n + u*(n+1) for nonnegative integers t,u.
+; 0,1,30,220,950,3045,8036,18480,38340,73425,131890,224796,366730,576485,877800,1300160,1879656,2659905,3693030,5040700,6775230,8980741,11754380,15207600,19467500,24678225,31002426,38622780,47743570
+
+mov $6,1
+mov $5,2
+mov $2,$0
+mov $6,$2
+bin $0,2
+mov $5,$5
+add $6,$6
+mov $1,1
+mov $3,$6
+add $6,$0
+mov $4,$2
+mov $4,3
+mov $2,1
+mov $3,$0
+sub $1,$5
+add $0,$6
+mul $6,$2
+mul $0,2
+pow $2,2
+sub $2,$4
+mul $6,$0
+sub $2,1
+add $6,$0
+sub $0,$5
+sub $1,$5
+sub $4,$3
+mov $5,$4
+mul $6,$0
+mov $2,1
+mov $5,$1
+sub $0,8
+mov $1,1
+div $2,2
+sub $0,$0
+lpb $0,1
+  add $2,3
+  fac $2
+  add $5,2
+  mov $4,2
+  mov $4,1
+  sub $0,1
+  mov $4,1
+  mov $3,$1
+  mov $1,$6
+  mul $0,$6
+  add $6,$5
+  mov $1,$6
+  mov $2,$2
+  pow $0,$3
+lpe
+pow $5,2
+mov $3,1
+add $5,1
+add $0,$4
+mov $3,2
+mov $2,$0
+div $4,2
+sub $0,$4
+mov $0,$3
+add $5,$4
+mov $1,$6
+div $1,24

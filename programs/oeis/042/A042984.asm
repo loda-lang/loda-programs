@@ -1,0 +1,128 @@
+; A042984: Number of n-dimensional partitions of 6.
+; 1,11,48,140,326,657,1197,2024,3231,4927,7238,10308,14300,19397,25803,33744,43469,55251,69388,86204,106050,129305,156377,187704,223755,265031,312066,365428,425720,493581,569687,654752,749529,854811,971432
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $12,$0
+    mov $14,$0
+    add $14,1
+    lpb $14,1
+      clr $0,12
+      sub $14,1
+      mov $0,$12
+      sub $0,$14
+      mov $9,$0
+      mov $11,$0
+      add $11,1
+      lpb $11,1
+        clr $0,9
+        sub $11,1
+        mov $0,$9
+        sub $0,$11
+        mov $2,$0
+        mov $0,1
+        mov $0,$0
+        mov $3,$2
+        add $0,5
+        mov $1,$3
+        mov $0,5
+        mov $4,$0
+        mov $7,$2
+        sub $0,3
+        sub $3,$0
+        sub $7,3
+        mov $8,$0
+        mov $5,$4
+        sub $4,97
+        sub $1,$7
+        mov $6,$0
+        add $6,4
+        mul $5,$2
+        mov $6,$5
+        mov $5,$2
+        add $2,$6
+        lpb $0,1
+          mov $6,$5
+          add $7,8
+          add $8,7
+          mov $8,$8
+          mov $5,$0
+          add $2,6
+          add $1,$8
+          bin $3,$7
+          mov $1,$5
+          add $3,2
+          add $6,4
+          sub $0,1
+          mov $5,1
+          sub $2,$4
+          mov $1,$6
+          mov $7,$7
+          mov $2,1
+          fac $0
+          sub $7,$5
+          add $8,1
+          mov $4,$5
+          mov $6,15
+          add $1,$1
+          mov $5,3
+          add $0,$7
+          mov $1,$4
+          mov $6,$4
+          mov $7,3
+          div $3,$5
+          add $8,3
+          sub $3,$1
+        lpe
+        add $6,$2
+        mov $0,$7
+        mov $5,$7
+        mov $1,3
+        mov $3,1
+        mov $6,$2
+        mov $0,$5
+        add $5,$3
+        mov $4,1
+        mov $2,$7
+        mov $3,1
+        add $0,$1
+        mov $7,$2
+        add $8,$3
+        mov $0,$5
+        mov $7,$6
+        add $0,$6
+        mov $5,$4
+        sub $5,121
+        sub $6,9
+        add $7,$2
+        mov $2,$3
+        sub $0,$6
+        div $7,2
+        add $3,4
+        mov $1,$0
+        add $10,$1
+      lpe
+      mov $1,$10
+      add $13,$1
+    lpe
+    mov $1,$13
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19
