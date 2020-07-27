@@ -1,0 +1,83 @@
+; A085577: Size of maximal subset of the n^2 cells in an n X n grid such that there are at least 3 edges between any pair of chosen cells.
+; 1,1,2,4,6,8,10,13,17,20,25,29,34,40,45,52,58,65,73,80,89,97,106,116,125,136,146,157,169,180,193,205,218,232,245,260,274,289,305,320,337,353,370,388,405,424,442,461,481,500,521,541,562,584,605,628,650
+
+mov $7,$0
+add $7,1
+mov $6,$0
+mov $8,3
+add $0,1
+mov $5,1
+mul $7,$0
+div $5,$8
+mov $4,3
+mov $1,2
+div $6,$0
+mov $8,$4
+sub $7,$8
+lpb $0,1
+  mov $2,$7
+  sub $2,2
+  mov $6,$6
+  mul $6,$5
+  add $6,$2
+  mov $8,$4
+  sub $5,$7
+  mov $1,3
+  pow $5,4
+  mov $0,$0
+  mov $5,$7
+  mov $3,1
+  mov $6,$5
+  mov $7,$3
+  add $8,$2
+  sub $5,2
+  add $3,5
+  mov $4,$8
+  add $7,1
+  mul $7,$2
+  sub $2,1
+  sub $0,1
+  mov $5,1
+  mov $0,$3
+  mul $3,2
+  mov $4,3
+  add $4,$0
+  add $5,$6
+  add $5,7
+  sub $8,1
+  mul $8,6
+  mov $3,$3
+  sub $7,$2
+  sub $1,$0
+  pow $1,$8
+  mov $8,2
+  mov $2,$4
+  mul $8,49
+lpe
+sub $0,$6
+div $8,8
+add $2,$1
+mov $8,$7
+mov $0,$2
+mov $1,7
+add $1,1
+mov $3,$1
+mov $3,3
+mov $3,$1
+add $5,$8
+sub $2,1
+mov $5,1
+add $8,$7
+mov $0,19
+add $1,$7
+mov $0,$2
+sub $6,$3
+mov $6,$1
+sub $8,$0
+div $1,5
+div $8,2
+mov $2,2
+add $4,6
+mov $0,0
+add $7,1
+mov $8,$0

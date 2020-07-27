@@ -3,9 +3,9 @@
 
 add $0,1
 gcd $0,17
-lpb $0,1
-  sub $0,1
-  add $1,5
-lpe
-div $1,80
+mov $2,20
+mul $2,$0
+mov $3,$2
+mov $1,$3
+div $1,320
 add $1,1
