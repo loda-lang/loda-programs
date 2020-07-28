@@ -1,0 +1,95 @@
+; A003605: Unique monotonic sequence of nonnegative integers satisfying a(a(n)) = 3n.
+; 0,2,3,6,7,8,9,12,15,18,19,20,21,22,23,24,25,26,27,30,33,36,39,42,45,48,51,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,84,87,90,93,96,99,102,105,108,111,114,117,120
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $2,$0
+  lpb $0,1
+    add $2,2
+    sub $2,$2
+    mov $3,$0
+    mov $1,$0
+    sub $1,1
+    mov $4,1
+    mov $6,3
+    mov $1,$2
+    sub $1,$6
+    sub $4,$1
+    mov $7,$6
+    mov $1,$7
+    add $3,$4
+    add $3,1
+    mov $2,$2
+    mov $7,3
+    mov $2,$0
+    mov $0,$2
+    sub $4,1
+    mov $8,$4
+    fac $8
+    add $7,2
+    mov $6,6
+    mov $8,1
+    mov $5,1
+    mov $8,2
+    sub $4,1
+    add $3,$6
+    mov $3,$2
+    add $5,$7
+    sub $5,2
+    mov $8,$4
+    sub $2,1
+    add $3,5
+    add $5,1
+    pow $0,$1
+    mov $6,1
+    mov $1,$5
+    add $0,1
+    mov $5,$3
+    sub $3,$4
+    mul $7,$5
+    div $3,3
+    div $6,$6
+    mov $6,1
+    mov $4,1
+    mov $1,4
+    add $1,2
+    add $3,$8
+    add $6,1
+    mov $1,$5
+    add $0,1
+    mov $1,1
+    sub $2,1
+    add $0,8
+    sub $1,$8
+    mul $0,$5
+    mov $8,1
+    div $7,2
+    mov $4,$0
+    mov $8,1
+    mov $5,2
+    mov $4,$2
+    mov $0,$3
+    sub $0,1
+  lpe
+  add $1,2
+  mul $6,$3
+  mov $4,1
+  mov $6,16777500
+  add $6,$2
+  add $1,$6
+  mov $0,9
+  mul $3,2
+  add $1,$6
+  add $6,3
+  mov $3,9
+  mov $3,9
+  sub $1,33555002
+  add $10,$1
+lpe
+mov $1,$10

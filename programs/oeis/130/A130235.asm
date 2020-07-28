@@ -1,0 +1,125 @@
+; A130235: Partial sums of the 'lower' Fibonacci Inverse A130233.
+; 0,2,5,9,13,18,23,28,34,40,46,52,58,65,72,79,86,93,100,107,114,122,130,138,146,154,162,170,178,186,194,202,210,218,227,236,245,254,263,272,281,290,299,308,317,326,335,344,353,362,371,380,389,398,407,417,427
+
+mov $17,$0
+mov $19,$0
+add $19,1
+lpb $19,1
+  clr $0,17
+  sub $19,1
+  mov $0,$17
+  sub $0,$19
+  mov $14,$0
+  mov $16,$0
+  add $16,1
+  lpb $16,1
+    clr $0,14
+    sub $16,1
+    mov $0,$14
+    sub $0,$16
+    mov $10,$0
+    mov $12,2
+    lpb $12,1
+      clr $0,10
+      sub $12,1
+      mov $0,$10
+      add $0,$12
+      sub $0,1
+      mov $8,$0
+      mov $7,$8
+      mov $3,$7
+      mov $4,9
+      mov $8,$4
+      mov $1,$0
+      mov $3,$7
+      sub $7,6
+      sub $8,4
+      mov $5,2
+      mov $2,1
+      mul $3,$5
+      mul $3,$3
+      mov $6,$5
+      mul $1,3
+      mov $2,5
+      sub $7,1
+      sub $4,1
+      sub $8,$2
+      mov $7,4
+      mov $5,$4
+      add $3,2
+      sub $6,5
+      sub $0,$6
+      add $8,1
+      mov $8,$1
+      sub $4,$2
+      add $8,6
+      mul $3,8
+      sub $5,$7
+      mov $3,1
+      sub $7,$6
+      mul $3,$0
+      mov $4,$1
+      add $5,$6
+      mul $3,$6
+      sub $2,1
+      add $2,1
+      add $6,$6
+      add $3,2
+      add $3,1
+      pow $0,6
+      lpb $0,1
+        sub $3,$6
+        add $6,$2
+        mul $7,6
+        sub $0,1
+        mul $2,2
+        add $7,1
+        add $7,1
+        add $7,$0
+        mov $1,20
+        mov $4,$1
+        div $7,36
+        sub $6,$7
+        add $2,1
+        add $2,$1
+        mov $6,4
+        mov $7,$8
+        mul $7,$6
+        add $3,5
+        sub $7,1
+        clr $6,4
+        mov $7,4
+        div $0,$4
+        mul $3,5
+        mod $2,$2
+        mov $1,$5
+        sub $2,$1
+        add $5,2
+      lpe
+      mov $5,2
+      sub $5,1
+      mov $2,2
+      mov $2,3
+      add $4,11
+      mov $8,$6
+      mul $1,2
+      sub $3,32
+      mul $5,$4
+      mov $13,$12
+      lpb $13,1
+        mov $11,$1
+        sub $13,1
+      lpe
+    lpe
+    lpb $10,1
+      sub $11,$1
+      mov $10,0
+    lpe
+    mov $1,$11
+    div $1,4
+    add $15,$1
+  lpe
+  mov $1,$15
+  add $18,$1
+lpe
+mov $1,$18

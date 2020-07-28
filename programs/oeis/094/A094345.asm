@@ -1,96 +1,33 @@
 ; A094345: Sum of all digits in ternary expansions of 0, ..., n.
 ; 0,1,3,4,6,9,11,14,18,19,21,24,26,29,33,36,40,45,47,50,54,57,61,66,70,75,81,82,84,87,89,92,96,99,103,108,110,113,117,120,124,129,133,138,144,147,151,156,160,165,171,176,182,189,191,194,198,201,205,210,214,219
 
-mov $9,$0
-mov $11,$0
-add $11,1
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  sub $0,$11
+mov $3,$0
+mov $5,$0
+lpb $5,1
+  sub $5,1
+  mov $0,$3
+  sub $0,$5
   mov $4,7
-  mov $2,$4
   mov $7,$0
   mov $8,20
-  mov $2,9
-  mov $5,$2
-  add $0,2
   mov $2,$0
   sub $8,17
   mov $1,6
-  mov $3,1
   lpb $2,1
-    sub $3,$1
-    mov $2,$4
-    add $3,18
     sub $4,3
     add $4,$7
     lpb $4,1
-      mov $5,1
-      mul $5,$0
       div $7,$8
       sub $4,$7
-      mov $1,37
-      sub $2,1
       sub $4,$7
-      mov $6,2
-      mov $0,$6
     lpe
-    mov $5,$0
-    add $3,$3
     mov $0,3
-    lpb $5,1
-      add $0,5
-      sub $5,$7
-      add $6,$7
-      mov $6,1
-      mov $7,$6
-      add $6,$1
-      mov $6,2
-      mov $2,$6
-      add $4,$2
-      add $0,1
-      add $3,3
-      sub $8,3
-      add $5,6
-    lpe
     add $4,$0
-    add $7,2
-    mov $6,2
-    add $0,$5
-    sub $8,$7
-    add $8,$5
-    mov $5,2
-    mov $8,1
-    sub $6,$3
-    lpb $6,1
-      cmp $0,48
-      sub $3,$1
-      mov $0,6
-      mov $8,2
-      mov $3,$7
-      mov $6,6
-      add $7,2
-      sub $6,$7
-    lpe
     mov $2,6
     sub $2,$1
-    gcd $7,2
-    add $5,$5
-    mul $2,2
-    sub $7,$7
-    mov $8,$3
-    mov $0,$4
-    sub $2,1
   lpe
-  mov $0,$6
-  mov $7,2
-  mov $0,7
-  mov $1,$2
-  mov $6,1
   mov $1,$4
   sub $1,7
-  add $10,$1
+  add $6,$1
 lpe
-mov $1,$10
+mov $1,$6

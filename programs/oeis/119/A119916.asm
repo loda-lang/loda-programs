@@ -1,0 +1,85 @@
+; A119916: Number of runs of 0's of odd length in all ternary words of length n.
+; 0,1,4,17,64,233,820,2825,9568,31985,105796,346913,1129312,3653657,11758132,37665881,120172096,382039649,1210689028,3825777329,12058462720,37918780361,118986517684,372650082857,1165021837984
+
+mov $8,$0
+add $0,$8
+mov $1,$0
+mov $0,1
+mov $5,4
+mov $3,2
+mov $4,1
+mov $3,220
+sub $0,$4
+add $4,$0
+log $3,13
+add $0,2
+mov $2,$0
+add $4,3
+mov $0,$1
+sub $4,1
+add $2,$1
+mov $7,$0
+sub $2,$2
+sub $1,1
+mov $7,1
+mov $3,1
+add $1,$4
+mov $4,$1
+mov $1,$4
+lpb $0,1
+  sub $1,3
+  add $1,60
+  sub $0,$7
+  add $5,2
+  sub $0,1
+  mov $6,$0
+  mul $4,3
+  mov $4,$4
+  mov $1,$8
+  mov $8,$4
+  sub $6,2
+  mov $5,3
+  add $5,$8
+  add $6,$5
+  mov $2,$0
+  sub $4,1
+lpe
+mov $6,$3
+gcd $5,$5
+mul $3,2
+add $1,$6
+sub $1,2
+mov $0,$0
+mov $7,1
+mov $1,$0
+sub $6,$7
+add $8,$0
+sub $2,$5
+mov $8,$8
+add $2,10
+mov $5,$6
+pow $7,$5
+add $2,$8
+mov $2,$0
+gcd $8,48
+sub $5,3
+mov $8,3
+mov $1,4
+add $4,1
+div $4,6
+mov $0,1
+mov $8,$5
+mul $1,3
+mul $7,2
+mul $4,4
+mov $7,1
+mov $6,$8
+mov $2,4
+mov $1,$5
+div $0,2
+mul $0,2
+mov $8,$1
+sub $0,$7
+add $2,1
+mov $1,$4
+div $1,8
