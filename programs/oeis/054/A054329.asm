@@ -1,107 +1,16 @@
 ; A054329: One quarter of fourth unsigned column of Lanczos' triangle A053125.
 ; 1,20,224,1920,14080,93184,573440,3342336,18677760,100925440,530579456,2726297600,13740539904,68115496960,332859965440,1606317768704,7666516623360,36232344109056,169737107537920,788899592929280
 
-mov $3,$0
-mul $3,$0
-mov $10,$0
-mov $3,2
-mov $10,1
-mov $6,$10
-sub $6,$0
-mov $1,$0
-mov $9,73
-mov $10,1
-add $1,$3
-mov $1,1
-add $0,$3
-mul $9,$1
-mov $8,$9
-sub $10,$10
-add $1,$3
-sub $6,23
-mul $3,$6
-mov $2,4
-mov $4,$8
-add $1,$10
-mov $8,1
-mov $7,1
-mov $7,$4
-mul $0,$8
-mov $8,1
-add $10,1
-bin $1,$7
-mov $4,$0
-mul $4,2
-add $9,2
-sub $3,1
-div $3,$0
-add $9,3
-mov $2,8
-mov $3,$8
-pow $6,2
-sub $9,$7
-mov $8,1
-sub $3,2
-mul $8,$1
+add $0,2
+mov $2,$0
+mul $2,2
 add $0,1
-sub $2,$1
-bin $4,3
+bin $2,3
 lpb $0,1
-  sub $3,$0
-  mul $10,3
-  sub $7,1
-  sub $10,2
-  mul $4,4
-  mov $5,2
+  mul $2,4
   sub $0,1
-  add $10,1
-  sub $6,2
-  sub $1,10
-  sub $8,2
-  mov $5,$1
-  mov $8,$9
-  mov $6,$2
-  gcd $3,$6
-  mov $6,1
-  sub $8,$1
-  mov $1,1
-  mov $9,5
-  mov $7,$4
-  mov $6,$0
-  add $7,1
-  sub $5,4
-  add $10,$9
-  clr $7,$7
-  add $7,5
-  mov $9,5
 lpe
-sub $8,1
-mov $6,2
-mov $0,$3
-add $7,1
-mov $6,3
-mul $6,3
-mov $9,$9
-mov $9,$10
-mov $9,$10
-add $7,1
-mov $7,$2
-sub $7,$8
-mov $7,$7
-add $9,$9
-div $3,2
-add $8,1
-mov $5,$7
-sub $2,4
-add $2,$6
-mov $0,8
-mov $7,1
-sub $7,4
-mov $9,$3
-sub $5,3
-mov $7,$6
-add $1,$6
-mov $1,$4
+mov $1,$2
 sub $1,256
 div $1,256
 add $1,1
