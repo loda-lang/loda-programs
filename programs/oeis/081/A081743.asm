@@ -1,106 +1,21 @@
 ; A081743: a(1)=1 then a(n)=a(n/2^k)+1 if n is even and 2^k is the largest power of 2 dividing n, a(n)=a(n-1) otherwise.
 ; 1,2,2,2,2,3,3,2,2,3,3,3,3,4,4,2,2,3,3,3,3,4,4,3,3,4,4,4,4,5,5,2,2,3,3,3,3,4,4,3,3,4,4,4,4,5,5,3,3,4,4,4,4,5,5,4,4,5,5,5,5,6,6,2,2,3,3,3,3,4,4,3,3,4,4,4,4,5,5,3,3,4,4,4,4,5,5,4,4,5,5,5,5,6,6,3,3,4,4,4,4,5,5,4,4
 
-mov $8,1
-mov $10,3
-sub $8,22
-mov $9,$10
-add $8,1
-mov $5,2
-add $5,1
-mov $6,1
-mov $6,$0
-mov $4,2
-mov $3,$9
-mov $3,$0
-sub $3,$8
-mov $2,$6
-mov $1,$3
-sub $9,1
-mov $8,$0
-add $4,1
-mov $5,$0
-sub $9,$9
-mov $10,2
-sub $0,1
-sub $5,$4
-mov $1,2
-mul $1,3
-mov $9,$3
-mov $2,$10
-mov $3,2
-mov $5,1
+mov $2,$0
 mov $4,1
-sub $5,$10
-mov $3,$6
-mov $5,$4
-add $1,4
-mov $3,22
-div $9,4
-mov $6,7
-sub $3,$4
-mul $2,$10
-mov $6,$4
-mov $7,2
-sub $1,$8
-mod $2,$3
-add $3,3
-sub $1,1
-sub $9,1
-mov $5,1
-add $4,2
-div $7,$3
-add $5,$8
-mov $9,3
-mov $1,$0
-sub $7,$6
-sub $1,1
-mov $1,2
-div $5,2
-mov $3,$5
-sub $7,3
-sub $7,$2
-add $5,$4
-mov $8,$4
-mov $0,6
-mov $2,$7
-mov $6,1
-mul $0,2
-sub $10,4
-mov $8,$9
-mov $0,1
-mov $0,56
-add $0,$3
-mov $9,$8
-mov $4,$1
-mov $0,$5
-mul $0,4
-add $8,$5
+add $4,$2
+div $4,2
+mov $3,$4
+add $4,3
 lpb $0,1
-  mov $6,2
-  mov $8,8
-  pow $2,$6
-  mov $1,1
+  mov $2,8
   div $3,2
-  sub $0,3
-  mul $1,2
-  mul $6,$10
   sub $0,1
-  mov $1,$9
-  mov $6,$1
-  sub $9,$2
-  mov $10,$9
-  sub $5,$3
-  add $6,1
-  add $1,$9
-  sub $2,$0
-  mov $1,$2
+  sub $4,$3
 lpe
-mov $7,$7
-mov $3,1
-add $5,$8
-mov $8,27
-add $5,$8
-mov $1,$5
+add $4,$2
+mov $2,27
+add $4,$2
+mov $1,$4
 sub $1,38
 add $1,1
