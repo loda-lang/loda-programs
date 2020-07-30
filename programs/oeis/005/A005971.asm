@@ -1,0 +1,131 @@
+; A005971: Sum of cubes of Lucas numbers.
+; 1,28,92,435,1766,7598,31987,135810,574786,2435653,10316252,43702500,185123261,784200368,3321916912,14071880655,59609419066,252509590018,1069647725567,4531100578950,19194049901126,81307300410353
+
+mov $16,$0
+mov $18,$0
+add $18,1
+lpb $18,1
+  clr $0,16
+  sub $18,1
+  mov $0,$16
+  sub $0,$18
+  mov $13,$0
+  mov $15,$0
+  add $15,1
+  lpb $15,1
+    clr $0,13
+    sub $15,1
+    mov $0,$13
+    sub $0,$15
+    mov $9,$0
+    mov $11,2
+    lpb $11,1
+      clr $0,9
+      sub $11,1
+      mov $0,$9
+      add $0,$11
+      sub $0,1
+      mov $2,$0
+      mov $7,$0
+      add $0,1
+      mov $5,$7
+      mov $5,2
+      mov $5,$2
+      mov $5,$2
+      mov $4,$0
+      mov $7,702
+      mov $3,$5
+      mul $7,2
+      cmp $2,2
+      sub $0,$5
+      add $2,3
+      mov $6,1
+      sub $4,2
+      add $0,$7
+      mov $0,$3
+      mov $8,$3
+      add $5,$0
+      mov $8,$7
+      mov $5,16
+      sub $6,$0
+      add $6,$6
+      add $2,$5
+      mov $8,3
+      sub $4,4
+      mov $8,$0
+      mov $7,$5
+      add $2,1
+      mov $3,2
+      add $8,$6
+      mul $6,$0
+      mov $1,$5
+      mov $7,1
+      mov $3,1
+      mov $1,$3
+      add $6,1
+      sub $8,4
+      mov $2,2
+      mov $8,10
+      pow $4,2
+      mov $8,23
+      mul $4,$8
+      mov $4,$2
+      mul $4,$7
+      add $3,1
+      sub $1,3
+      lpb $0,1
+        add $7,$3
+        add $4,$6
+        sub $6,1
+        bin $3,$4
+        add $6,2
+        mov $8,$7
+        mov $5,$6
+        mov $3,1
+        sub $0,1
+        mov $2,$7
+        sub $3,1
+        sub $6,3
+        mov $2,1
+        sub $3,2
+        add $1,1
+        sub $2,1
+        mov $3,$3
+        mov $3,1
+        mov $7,$4
+        mov $6,$8
+      lpe
+      mov $0,22
+      add $7,1
+      mul $4,$0
+      div $4,4
+      sub $1,$4
+      mov $7,$0
+      sub $7,33
+      mul $0,2
+      pow $6,3
+      add $6,1
+      mov $1,$6
+      sub $1,2
+      mul $1,36
+      add $1,36
+      mov $12,$11
+      lpb $12,1
+        mov $10,$1
+        sub $12,1
+      lpe
+    lpe
+    lpb $9,1
+      sub $10,$1
+      mov $9,0
+    lpe
+    mov $1,$10
+    sub $1,36
+    div $1,36
+    add $1,1
+    add $14,$1
+  lpe
+  mov $1,$14
+  add $17,$1
+lpe
+mov $1,$17

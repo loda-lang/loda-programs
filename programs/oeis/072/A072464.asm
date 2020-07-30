@@ -1,0 +1,102 @@
+; A072464: Code word lengths for non-redundant MML code for positive integers.
+; 1,3,3,6,6,6,6,7,7,7,7,7,7,7,7,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,13,13,13,13,13,13,13,13,13,13,13
+
+mov $10,1
+add $0,1
+mov $7,$10
+mul $10,4
+mov $5,$7
+add $10,2
+mov $8,2
+mov $5,1
+sub $8,19
+mov $4,1
+mov $1,$5
+mul $5,$4
+pow $7,3
+mov $10,$7
+mov $10,1
+mov $1,$10
+mov $10,4
+mov $2,6
+mov $8,8
+mov $2,$5
+mov $9,2
+add $5,$10
+sub $5,1
+add $4,$10
+mov $3,$2
+mov $7,1
+mul $1,$9
+add $5,1
+add $3,2
+mov $6,$8
+pow $2,$0
+sub $6,1
+mov $8,$10
+add $3,$8
+lpb $0,1
+  mov $7,$8
+  add $3,6
+  add $1,$4
+  mov $2,$10
+  mov $7,$2
+  sub $8,$3
+  mul $10,$2
+  add $2,1
+  log $0,2
+  add $10,3
+  add $1,$2
+  sub $10,2
+  sub $1,1
+  sub $8,3
+  sub $2,2
+  mov $2,$10
+  mov $7,5
+  add $6,1
+  sub $9,1
+  sub $0,1
+  mov $5,1
+  mov $1,1
+  add $0,1
+  mov $3,2
+  mov $3,$10
+  add $8,1
+  add $4,1
+  sub $9,1
+  add $7,$8
+  mov $3,$3
+  mov $5,$4
+  add $3,7
+  mov $9,1461
+  mov $5,1
+  add $5,8
+  add $4,$0
+  mov $6,2
+  add $8,1
+  add $8,$5
+  mov $2,1
+  sub $1,1
+  mov $2,$7
+  add $7,1
+  sub $7,$6
+lpe
+mov $2,$2
+sub $6,2
+mov $9,$1
+mov $0,11
+mov $1,$2
+mov $10,7
+mov $2,11
+mov $1,1
+add $5,$10
+add $9,1
+add $8,2
+mov $1,$4
+sub $4,$10
+add $7,$9
+mov $10,$6
+mov $8,1
+sub $4,$10
+sub $1,5
+add $1,1

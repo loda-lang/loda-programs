@@ -1,126 +1,34 @@
 ; A276873: Sums-complement of the Beatty sequence for sqrt(7).
 ; 1,4,9,12,17,20,25,28,33,36,41,46,49,54,57,62,65,70,73,78,81,86,91,94,99,102,107,110,115,118,123,128,131,136,139,144,147,152,155,160,163,168,173,176,181,184,189,192,197,200,205,208,213,218,221,226,229
 
-mov $15,$0
-mov $17,$0
-add $17,1
-lpb $17,1
-  clr $0,15
-  sub $17,1
-  mov $0,$15
-  sub $0,$17
+mov $6,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$6
+  sub $0,$2
   mov $11,$0
-  mov $13,2
-  lpb $13,1
-    clr $0,11
-    sub $13,1
-    mov $0,$11
-    add $0,$13
-    sub $0,1
-    mov $8,1
-    mov $6,1
-    mov $6,$6
-    mov $10,1
-    mov $1,1
+  mov $10,2
+  lpb $10,1
     sub $10,1
-    mov $2,21
-    mov $5,$1
-    mov $4,22
+    add $0,$10
+    sub $0,1
     mov $8,13
     mov $9,$8
     mul $9,$0
     sub $9,$0
-    mov $7,$8
-    mov $7,$8
-    add $10,2
-    mov $1,$0
-    mov $1,$6
-    mov $7,1
-    sub $0,1
-    add $9,$9
-    mov $6,$2
-    mul $7,5
-    mov $8,$9
-    mul $8,4
-    sub $6,1
-    add $5,2
-    add $4,5
-    sub $4,$10
-    lpb $0,1
-      mov $4,3
-      mov $5,$0
-      sub $4,$10
-      sub $0,1
-      sub $6,$2
-      add $7,$0
-    lpe
-    sub $4,1
-    sub $1,2
-    gcd $4,3
-    mov $6,3
-    mul $9,2
-    add $2,$0
-    add $4,3
-    mov $6,55
+    mul $9,4
     mov $3,$9
     mov $9,23
-    add $5,1
-    cmp $6,$2
-    sub $10,$1
-    add $0,$6
-    mov $10,$5
-    sub $8,4
-    add $4,1
     add $9,8
     div $3,$9
-    mul $6,2
-    mov $4,1
-    mov $5,$0
-    mov $9,1
-    mov $0,$9
-    sub $4,2
-    mov $4,4
-    add $4,1
-    add $5,$4
-    sub $4,$8
-    add $10,2
-    mul $7,2
-    sub $5,$0
-    cmp $7,$9
-    mov $5,$7
-    sub $6,$4
-    div $8,2
-    mov $2,6
-    add $8,$7
-    add $9,$10
-    mov $1,6
-    add $9,2
-    mov $0,$4
-    mov $2,2
-    add $10,$3
     mov $5,$3
-    mov $0,3
-    mov $3,$0
-    mov $3,1
-    mov $2,$7
-    mul $2,$3
-    add $7,10
-    mov $2,2
-    add $4,2
-    mov $8,18
-    mov $0,$7
-    mov $7,$9
-    add $9,3
-    pow $2,$1
-    add $0,$5
-    gcd $6,$9
-    sub $10,$2
-    bin $6,2
     mov $1,$5
-    mov $14,$13
-    lpb $14,1
+    mov $7,$10
+    lpb $7,1
       mov $12,$1
-      sub $14,1
+      sub $7,1
     lpe
   lpe
   lpb $11,1
@@ -130,6 +38,6 @@ lpb $17,1
   mov $1,$12
   mul $1,2
   add $1,1
-  add $16,$1
+  add $4,$1
 lpe
-mov $1,$16
+mov $1,$4

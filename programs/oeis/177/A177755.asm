@@ -1,0 +1,90 @@
+; A177755: Number of ways to place 2 nonattacking bishops on an n X n toroidal board.
+; 0,4,18,80,200,468,882,1600,2592,4100,6050,8784,12168,16660,22050,28928,36992,46980,58482,72400,88200,106964,128018,152640,180000
+
+mov $1,$0
+mov $5,$1
+mov $3,1
+mov $5,$1
+mul $3,2
+mov $7,$0
+mov $3,5
+mov $2,$0
+sub $5,$7
+mov $0,$7
+mov $0,$0
+sub $3,$1
+mul $1,$7
+mov $6,$0
+add $0,1
+mov $8,$2
+mov $5,1
+mov $7,16
+add $5,$1
+mov $1,$3
+add $3,$1
+add $6,$6
+mov $6,2
+mov $4,$2
+add $1,1
+mov $6,1
+pow $6,$2
+sub $2,$1
+div $5,2
+add $5,$5
+mov $1,120
+mov $4,1
+sub $6,$1
+add $0,6
+add $4,$8
+lpb $1,1
+  mul $6,$3
+  mov $3,4
+  mov $0,$5
+  add $2,3
+  mov $2,$1
+  add $1,1
+  mov $2,$5
+  mov $6,$6
+  mul $0,$4
+  div $1,19
+  add $5,$7
+  mov $3,$1
+  mov $1,$6
+  lpb $3,6
+    sub $7,$0
+    sub $7,3
+    mul $5,2
+    add $8,2
+    lpb $8,1
+      sub $8,1
+      add $9,5
+    lpe
+    mov $1,1
+    add $4,$5
+  lpe
+  add $8,1
+  mov $7,1
+  add $1,$3
+  pow $7,2
+  add $8,7
+  mul $6,$1
+  add $2,$8
+  mov $5,$0
+  mul $7,2
+lpe
+mov $4,2
+mov $0,3
+mov $8,1
+lpb $5,2
+  sub $3,600
+  lpb $1,2
+    sub $1,1
+    add $2,5
+  lpe
+  mov $2,1
+lpe
+mov $8,2
+mov $3,1
+mov $1,$5
+div $1,4
+mul $1,2
