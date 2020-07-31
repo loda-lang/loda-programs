@@ -1,135 +1,38 @@
 ; A026355: a(n) = least k such that s(k) = n+1, where s = A026354.
 ; 1,2,3,5,6,8,10,11,13,14,16,18,19,21,23,24,26,27,29,31,32,34,35,37,39,40,42,44,45,47,48,50,52,53,55,57,58,60,61,63,65,66,68,69,71,73,74,76,78,79,81,82,84,86,87,89,90,92,94,95,97,99,100,102,103,105,107,108,110
 
-mov $15,$0
-mov $17,$0
-add $17,1
-lpb $17,1
-  clr $0,15
-  sub $17,1
-  mov $0,$15
-  sub $0,$17
-  mov $11,$0
-  mov $13,2
-  lpb $13,1
-    clr $0,11
-    sub $13,1
-    mov $0,$11
-    add $0,$13
-    sub $0,1
-    mov $7,$0
-    mov $3,$0
-    mov $8,$0
-    sub $0,1
-    mov $2,$8
-    add $3,$3
+mov $7,$0
+mov $4,$0
+add $4,1
+lpb $4,1
+  sub $4,1
+  mov $0,$7
+  sub $0,$4
+  mov $8,$0
+  mov $2,2
+  lpb $2,1
+    sub $2,1
+    mov $0,$8
+    add $0,$2
+    sub $0,2
     mov $6,18
-    mov $10,$2
-    mov $4,$6
-    add $8,$7
     add $6,3
-    add $7,$10
-    mul $4,2
-    mov $8,$4
-    mov $10,$6
-    mov $2,4
-    mul $7,$8
-    mul $4,2
-    mov $10,8
-    mov $5,2
-    sub $3,1
-    mul $7,2
-    mov $9,1
-    mov $9,$0
     mov $1,$6
-    div $4,2
-    mov $3,$6
-    add $8,1
-    sub $3,2
     mul $0,$1
-    mov $4,$4
-    sub $7,27
     div $0,34
-    add $8,3
-    sub $1,$2
-    lpb $0,1
-      mov $10,$6
-      add $9,$0
-      sub $1,$5
-      sub $8,$7
-      add $0,1
-      add $1,25
-      sub $0,1
-      sub $3,$6
-      sub $7,1
-      add $4,1
-      sub $4,2
-      add $4,$0
-      sub $0,$6
-      mov $8,$7
-      add $7,1
-      add $0,$10
-      add $1,$3
-      mov $4,9
-      mov $7,$6
-      mov $3,$5
-      mov $5,$2
-      add $9,2
-      mov $10,72
-      mov $9,$0
-      add $2,1
-      mov $10,$4
-    lpe
-    sub $3,$10
-    mov $7,5
-    add $10,1
-    sub $3,$7
-    mov $8,8
-    add $3,3
-    mov $8,$3
-    mov $7,1
-    add $5,5
-    add $5,1
-    sub $9,$6
-    log $2,$8
-    mul $7,$8
-    add $10,1
-    mul $3,3
-    mov $2,$7
-    pow $10,2
-    sub $1,8
-    add $5,1
-    mov $1,1
-    sub $6,2
-    add $4,1
-    add $1,$0
-    sub $2,1
-    add $4,$7
-    sub $4,$3
-    sub $2,1
-    add $3,1
-    sub $4,$5
-    mov $10,1
-    add $4,1
-    div $1,4
-    sub $9,$3
-    add $3,16
-    mov $6,$7
-    add $10,$9
-    sub $1,1
     mov $1,$0
-    mov $14,$13
-    lpb $14,1
-      mov $12,$1
-      sub $14,1
+    mov $9,$2
+    lpb $9,1
+      mov $3,$1
+      sub $9,1
     lpe
   lpe
-  lpb $11,1
-    sub $12,$1
-    mov $11,0
+  lpb $8,1
+    sub $3,$1
+    mov $8,0
   lpe
-  mov $1,$12
+  mov $1,$3
   add $1,1
-  add $16,$1
+  add $5,$1
 lpe
-mov $1,$16
+mov $1,$5
