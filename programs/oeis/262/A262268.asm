@@ -1,0 +1,63 @@
+; A262268: Number of (n+2) X (2+2) 0..1 arrays with each row and column divisible by 5, read as a binary number with top and left being the most significant bits.
+; 4,16,49,169,676,2704,10609,42025,168100,672400,2686321,10738729,42954916,171819664,687226225,2748800041,10995200164,43980800656,175922363761,703687777321,2814751109284,11259004437136,45036004326769
+
+mov $5,2
+add $0,4
+mov $1,0
+mov $2,2
+mov $1,1
+mov $6,$2
+add $2,2
+add $1,2
+mov $3,$5
+sub $2,1
+mov $2,6
+mov $1,$2
+mov $2,1
+pow $3,$0
+mov $4,1
+sub $6,3
+mul $1,24
+add $5,8
+add $2,4
+sub $1,$0
+sub $1,1
+add $1,$0
+sub $6,2
+sub $2,$6
+div $3,$5
+add $3,1
+add $5,$4
+mov $5,$5
+sub $6,$5
+mov $5,1
+mov $6,$1
+sub $0,$5
+mov $6,1
+mov $1,1
+mov $0,5
+mov $6,0
+sub $5,$2
+sub $4,1
+mul $0,11
+mul $3,$3
+mov $0,$6
+mov $1,$5
+lpb $0,1
+  sub $0,1
+  sub $5,$0
+  mul $6,6
+  sub $3,$6
+  sub $4,2
+  add $1,2
+  sub $4,1
+  mov $0,2
+  mov $0,1
+  mul $4,2
+  mov $2,$6
+  mul $4,$2
+  add $0,1
+  sub $4,$1
+  mov $0,8
+lpe
+mov $1,$3

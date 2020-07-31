@@ -3,69 +3,19 @@
 
 mov $7,$0
 mov $6,$0
-mov $1,$6
 mov $5,$0
 mov $0,1
 add $6,1
-mov $2,$0
 mov $4,$6
-mov $3,$0
-mul $4,$4
-sub $3,$4
-sub $3,2
-mod $2,3
+pow $4,2
 div $5,2
 add $5,1
-add $3,$0
 mov $6,$5
-div $0,$0
 sub $4,$6
-sub $6,$0
-lpb $0,1
-  sub $1,$5
-  sub $0,1
-  add $6,1
-  mov $0,$3
-  mul $0,2
-  mul $5,$0
-  mul $0,$1
-  mov $2,1
-  sub $0,1
-  mul $2,2
-  mov $4,$0
-  mov $6,$4
-  sub $1,1
-  mov $0,1
-  mov $6,$4
-  mov $0,1
-  mov $3,$1
-  mov $1,1
-  mov $0,$4
-  sub $4,$2
-  add $5,$2
-  mov $2,$2
-  sub $3,$1
-  sub $3,$0
-  mov $0,3
-lpe
 mul $4,$5
-sub $2,2
-sub $6,$5
-mov $2,$5
-sub $3,$4
-sub $6,9
-add $1,3
-mov $6,2
 mul $0,$4
-mov $3,$2
-sub $6,$6
-pow $5,2
-add $3,$0
 mov $1,$0
 add $1,1
-mov $8,$7
-mov $9,$8
-mul $9,1
-add $1,$9
-mul $8,$7
-mul $8,$7
+mov $3,$7
+mov $2,$3
+add $1,$2

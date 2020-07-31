@@ -1,115 +1,26 @@
 ; A134860: Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
 ; 4,12,17,25,33,38,46,51,59,67,72,80,88,93,101,106,114,122,127,135,140,148,156,161,169,177,182,190,195,203,211,216,224,232,237,245,250,258,266,271,279,284,292,300,305,313,321,326,334,339,347,355,360,368,373
 
-mov $11,$0
-mov $1,$0
+mov $7,$0
 add $0,1
 mov $1,$0
-mov $7,$1
-mov $6,$0
 lpb $0,1
-  mov $9,12
-  mov $5,$0
-  mov $2,5
-  mov $10,$7
-  sub $7,$7
-  mov $4,$7
   mul $1,144
-  mov $4,2
-  mov $3,1
-  mov $7,$10
-  mov $8,4
-  sub $0,6
-  sub $10,$1
-  sub $8,4
-  add $4,$4
-  add $6,$6
-  sub $9,2
-  mov $9,1
-  mov $4,$4
-  add $8,230
-  mul $4,$1
-  sub $0,$2
-  add $4,8
-  add $4,$2
-  sub $5,1
-  sub $10,$6
-  add $5,$8
-  add $3,$10
-  mov $5,1
-  mov $8,1
-  mul $10,$1
-  add $9,$3
-  add $7,$4
-  add $2,1
-  add $5,$0
-  gcd $2,2
-  mov $7,$5
-  mul $2,2
-  sub $7,2
-  sub $7,2
   bin $0,$5
-  add $1,$10
-  mov $10,$0
-  mov $7,$0
-  add $6,8
-  mov $6,$4
   sub $0,1
-  sub $3,1
-  mov $10,$10
-  mov $2,2
-  add $9,5
-  add $0,$3
-  mov $5,3
-  mov $7,3
-  mov $7,$3
-  sub $8,2
-  sub $8,$6
-  sub $3,$7
-  sub $6,5
-  add $7,2
-  mul $10,$4
-  sub $7,1
-  mov $9,$6
-  mov $4,$8
-  add $9,$6
   mov $2,$1
-  add $9,$9
-  sub $7,$3
-  sub $1,26
-  mov $4,1
   mov $5,89
-  add $10,$5
-  sub $7,$0
-  mov $4,1
+  add $8,$5
 lpe
-mov $6,$9
-mov $8,0
-mov $7,1
-mov $0,$10
-mov $8,$0
-add $4,1
-mov $1,1
-add $1,$1
-div $10,$1
+mov $0,$8
 mov $4,$2
 div $4,$0
-pow $5,2
-sub $2,$9
 add $4,8
-add $10,1
-add $8,2
-mul $1,$0
-mov $9,$7
-sub $5,$3
 mov $1,$4
 sub $1,9
 mul $1,3
-add $1,6
-sub $1,2
-mov $12,$11
-mov $13,$12
-mul $13,2
-add $1,$13
-mul $12,$11
-mul $12,$11
+add $1,4
+mov $6,$7
+mov $3,$6
+mul $3,2
+add $1,$3

@@ -1,86 +1,23 @@
 ; A097432: Integer part of the hypotenuse of right triangles with consecutive integer legs.
 ; 2,3,5,6,7,9,10,12,13,14,16,17,19,20,21,23,24,26,27,29,30,31,33,34,36,37,38,40,41,43,44,45,47,48,50,51,53,54,55,57,58,60,61,62,64,65,67,68,70,71,72,74,75,77,78,79,81,82,84,85,86,88,89,91,92,94,95,96,98,99,101
 
-mov $4,1
-mov $6,$4
-mov $1,$6
-mov $3,$1
-mov $8,1
-add $3,25
+mov $3,26
 add $3,$0
 sub $3,1
 add $3,3
-mov $7,2
-add $4,$4
-mul $4,$8
-mov $6,1
-mov $7,$4
-mov $2,$0
-add $4,$3
-fac $7
-mov $4,$8
 mov $4,$3
-add $0,$8
-add $0,7
 pow $4,2
 mov $0,$4
-add $3,2
-mov $8,4
-add $1,9
-mov $5,$1
-mov $5,$7
-div $7,$1
-sub $3,$3
-mul $4,$3
-mov $3,1
-add $1,12
-sub $2,$0
-mov $2,1
-add $3,$4
-mov $1,$1
-add $0,$8
-sub $3,$0
-mul $2,$6
-mov $7,$3
-add $3,1
-add $6,1
-sub $1,$3
+add $0,4
 lpb $0,1
-  add $0,1
-  mov $5,32
-  mov $5,$8
-  sub $0,1
-  mov $1,$3
-  sub $6,$0
-  sub $5,$8
-  add $8,1
-  add $7,1
-  add $8,1
-  add $5,$6
-  pow $4,25
-  sub $0,$7
-  mov $4,2
-  mul $1,$4
-  add $3,3
-  mov $3,$5
-  mov $2,2
-  mov $2,7
-  sub $2,$1
-  add $1,2
-  mov $1,1
-  add $3,$2
-  add $1,$4
+  add $5,1
+  add $2,1
+  sub $0,$5
 lpe
-add $2,2
-mod $8,$8
-mov $4,$7
-mov $3,3
-add $8,1
-mov $1,1
-mul $8,$8
-pow $2,$3
-sub $7,$1
-add $4,$8
+mod $2,$2
+mov $4,$5
+add $2,1
+add $4,$2
 mov $1,$4
 sub $1,41
 add $1,2

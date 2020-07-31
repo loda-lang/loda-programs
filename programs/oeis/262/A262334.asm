@@ -1,0 +1,63 @@
+; A262334: Number of (n+3)X(2+3) 0..1 arrays with each row and column divisible by 9, read as a binary number with top and left being the most significant bits.
+; 4,16,64,225,841,3249,12996,51984,207936,829921,3316041,13256881,53027524,212110096,848440384,3393645025,13574347081,54296922289,217187689156,868750756624,3475003026496,13900004649441,55600003684681
+
+mov $5,2
+add $0,4
+mov $1,0
+mov $2,2
+mov $1,1
+mov $6,$2
+add $2,2
+add $1,2
+mov $3,$5
+sub $2,1
+mov $2,6
+mov $1,$2
+mov $2,1
+pow $3,$0
+mov $4,1
+sub $6,3
+mul $1,24
+add $5,7
+add $2,4
+sub $1,$0
+sub $1,1
+add $1,$0
+sub $6,2
+sub $2,$6
+div $3,$5
+add $3,1
+add $5,$4
+mov $5,$5
+sub $6,$5
+mov $5,1
+mov $6,$1
+sub $0,$5
+mov $6,1
+mov $1,1
+mov $0,5
+mov $6,0
+sub $5,$2
+sub $4,1
+mul $0,11
+mul $3,$3
+mov $0,$6
+mov $1,$5
+lpb $0,1
+  sub $0,1
+  sub $5,$0
+  mul $6,6
+  sub $3,$6
+  sub $4,2
+  add $1,2
+  sub $4,1
+  mov $0,2
+  mov $0,1
+  mul $4,2
+  mov $2,$6
+  mul $4,$2
+  add $0,1
+  sub $4,$1
+  mov $0,8
+lpe
+mov $1,$3
