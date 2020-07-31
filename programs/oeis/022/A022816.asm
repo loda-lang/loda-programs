@@ -1,0 +1,84 @@
+; A022816: Number of terms in 6th derivative of a function composed with itself n times.
+; 1,11,44,121,271,532,952,1590,2517,3817,5588,7943,11011,14938,19888,26044,33609,42807,53884,67109,82775,101200,122728,147730,176605,209781,247716,290899,339851,395126,457312,527032,604945,691747
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $8,$0
+    mov $10,$0
+    add $10,1
+    lpb $10,1
+      clr $0,8
+      sub $10,1
+      mov $0,$8
+      sub $0,$10
+      mov $5,$0
+      mov $7,$0
+      add $7,1
+      lpb $7,1
+        clr $0,5
+        sub $7,1
+        mov $0,$5
+        sub $0,$7
+        mov $4,6
+        mov $3,1
+        mul $4,$0
+        lpb $0,1
+          mov $2,1
+          mov $3,4
+          mov $1,2
+          sub $0,1
+          add $4,2
+          mov $4,2
+          mov $1,0
+          mov $4,1
+          mov $1,1
+          mov $3,2
+          add $0,$1
+          div $3,$1
+          add $0,$3
+          sub $2,$2
+          mov $2,4
+          add $4,$0
+          add $2,3
+          mov $3,2
+          mov $2,$4
+          sub $2,$1
+          sub $4,1
+          mov $4,$4
+          add $0,$1
+          mov $2,$1
+          sub $3,8
+          sub $0,$4
+          add $4,$3
+          add $2,1
+          mov $1,1
+          mov $3,$2
+        lpe
+        add $3,$4
+        mov $1,$3
+        add $6,$1
+      lpe
+      mov $1,$6
+      add $9,$1
+    lpe
+    mov $1,$9
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15
