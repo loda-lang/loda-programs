@@ -1,107 +1,41 @@
 ; A120154: a(1)=9; a(n)=floor((27+sum(a(1) to a(n-1)))/3).
 ; 9,12,16,21,28,37,50,66,88,118,157,209,279,372,496,661,882,1176,1568,2090,2787,3716,4955,6606,8808,11744,15659,20879,27838,37118,49490,65987,87983,117310,156414,208552,278069,370759,494345,659127
 
-mov $17,$0
-mov $19,$0
-add $19,1
-lpb $19,1
-  clr $0,17
-  sub $19,1
-  mov $0,$17
-  sub $0,$19
+mov $4,$0
+mov $2,$0
+add $2,1
+lpb $2,1
+  sub $2,1
+  mov $0,$4
+  sub $0,$2
   mov $13,$0
-  mov $15,2
-  lpb $15,1
-    clr $0,13
-    sub $15,1
+  mov $8,2
+  lpb $8,1
+    sub $8,1
     mov $0,$13
-    add $0,$15
+    add $0,$8
     sub $0,1
     mov $9,$0
     mov $11,2
     lpb $11,1
-      clr $0,9
       sub $11,1
       mov $0,$9
       add $0,$11
       sub $0,1
-      mov $6,3
-      add $6,2
-      mov $3,4
-      mov $7,$3
-      mov $1,4
-      mov $6,$3
-      mov $2,2
-      mov $2,3
-      mov $5,$7
-      mov $1,$1
-      add $3,3
-      mov $8,3
-      sub $3,$5
       mov $6,1
-      add $2,1
       add $0,$6
-      mov $7,$3
-      mov $4,1
-      add $8,$8
-      mov $1,$1
-      mov $1,$6
-      add $3,3
       mov $1,1
-      add $8,1
-      mov $2,$1
-      pow $2,$3
-      sub $6,1
-      mov $2,6
-      mul $6,2
       lpb $0,1
-        mov $4,$7
-        add $6,1
-        cmp $4,$7
-        sub $5,1
-        add $5,$4
-        mov $2,1
         mul $1,2
-        add $4,$6
-        mov $4,1
         div $1,3
-        mov $8,$6
         add $1,9
         mul $1,2
-        sub $5,$4
-        mov $6,1
-        mov $6,$7
-        sub $2,$1
-        add $6,$6
         mov $5,$0
         add $5,1
         mul $5,5
         mul $5,$1
-        sub $4,1
         sub $0,1
-        add $7,$7
-        sub $4,$8
-        mov $2,7
-        div $4,2
-        mov $4,1
-        mul $6,$0
-        sub $8,1
-        mov $6,$7
       lpe
-      mov $1,$3
-      mov $7,$0
-      mov $3,3
-      mov $6,2
-      mov $0,2
-      mov $7,1
-      sub $6,$2
-      mov $4,$6
-      add $0,1
-      mov $2,$5
-      sub $8,2
-      mov $3,$1
-      mov $2,2
-      mul $0,2
       mov $1,$5
       mov $12,$11
       lpb $12,1
@@ -114,10 +48,10 @@ lpb $19,1
       mov $9,0
     lpe
     mov $1,$10
-    mov $16,$15
-    lpb $16,1
+    mov $7,$8
+    lpb $7,1
       mov $14,$1
-      sub $16,1
+      sub $7,1
     lpe
   lpe
   lpb $13,1
@@ -128,6 +62,6 @@ lpb $19,1
   sub $1,60
   div $1,20
   add $1,3
-  add $18,$1
+  add $3,$1
 lpe
-mov $1,$18
+mov $1,$3
