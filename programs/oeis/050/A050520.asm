@@ -1,0 +1,106 @@
+; A050520: Values of phi in arithmetic progression of at least 6 terms having the same value of phi in A050518.
+; 155520,311040,466560,622080,777600,933120,933120,1244160,1399680,1555200,1555200,1866240,1866240,1866240,2332800,2488320,2488320,2799360,2799360,3110400,2799360,3110400,3421440,3732480,3888000
+
+mov $2,$0
+mov $0,8
+mov $6,$0
+mov $1,$2
+mov $4,57600
+mov $0,6
+mov $8,12
+sub $1,2
+sub $1,$4
+mov $9,1
+mov $5,$1
+add $5,1
+pow $5,4
+mov $0,$6
+add $1,$5
+mov $0,$0
+mov $10,$2
+mov $8,$9
+add $5,$9
+mov $5,$8
+mov $7,1
+mul $7,$5
+mov $7,$4
+lpb $2,1
+  mov $1,$7
+  add $6,$1
+  add $1,$6
+  div $10,2
+  sub $10,$6
+  mov $3,5
+  mov $10,1
+  sub $1,1
+  mov $1,4
+  mov $6,2
+  mov $1,$7
+  mov $4,$5
+  lpb $4,1
+    sub $4,$1
+    add $3,$6
+    mov $6,$5
+    mov $4,$9
+    add $7,9
+    mov $4,3
+    cmp $8,1
+  lpe
+  add $0,1
+  lpb $5,1
+    sub $5,$2
+    add $4,2
+    mov $9,$8
+    add $2,1
+    sub $5,$1
+    sub $5,15
+    gcd $9,$10
+    mov $7,3
+    pow $5,$7
+    mov $4,1
+    mul $8,$1
+    mov $0,1
+    mov $1,$2
+    add $3,$9
+  lpe
+  mov $4,$6
+  gcd $8,$1
+  mov $2,$1
+  sub $0,1
+  sub $6,1
+  mov $6,$5
+  add $0,$4
+  sub $10,1
+  sub $7,3
+  mov $3,$1
+  sub $2,$8
+  add $5,18
+  mov $1,$5
+  lpb $6,1
+    mov $8,4
+    div $10,2
+    mov $0,4
+    mov $6,$9
+    mov $0,1
+    mov $7,$1
+    add $2,$8
+    mov $9,$2
+    mov $4,$3
+    mul $2,$7
+    mov $5,$6
+    mul $0,$10
+    add $8,3
+    clr $0,$7
+    sub $6,$1
+    mov $1,3
+  lpe
+  add $5,1
+  sub $2,1
+  add $4,4
+  sub $0,2
+  add $9,1
+lpe
+mov $1,$8
+sub $1,1
+mul $1,155520
+add $1,155520
