@@ -1,95 +1,29 @@
 ; A179018: Partial sums of ceiling(Fibonacci(n)/2).
 ; 0,1,2,3,5,8,12,19,30,47,75,120,192,309,498,803,1297,2096,3388,5479,8862,14335,23191,37520,60704,98217,158914,257123,416029,673144,1089164
 
-mov $9,$0
-mov $11,$0
-add $11,1
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  sub $0,$11
+mov $3,$0
+mov $2,$0
+lpb $2,1
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
   mov $6,1
-  mov $3,3
-  mov $1,1
-  mov $8,5
-  add $1,$8
-  mov $1,27
-  add $8,5
-  sub $1,$1
   mul $6,7
-  mov $5,$3
-  mov $8,1
-  mul $1,3
-  mov $8,$0
   mov $7,$6
-  add $3,2
-  mov $4,$6
-  add $1,1
-  mov $4,5
-  mov $4,$7
-  sub $5,$8
-  sub $5,4
-  mov $4,3
-  sub $8,2
-  mov $1,$4
-  mov $8,3
-  sub $4,4
-  mul $4,$5
-  sub $8,1
-  mov $6,$0
-  mov $8,$0
   mov $5,3
-  mov $6,$6
   lpb $0,1
-    cmp $3,$5
-    mov $2,$1
-    mul $2,$7
-    mov $2,6
     mov $4,$7
-    mov $3,$1
     sub $5,1
-    sub $3,4
     add $7,$5
-    mul $6,$1
-    mov $1,$4
-    mov $1,$0
-    sub $2,$3
-    sub $2,1
-    sub $8,$6
-    sub $6,2
     sub $0,1
-    mov $3,$7
-    gcd $3,8
     mov $6,2
     add $6,$4
-    sub $3,$2
-    mov $3,1
     sub $7,2
     mov $5,$6
-    mov $8,$6
     sub $5,3
-    add $3,$5
-    add $8,4
   lpe
-  sub $7,$6
-  add $4,2
-  mov $7,$0
-  sub $2,3
-  mov $6,$8
-  mov $8,1
-  sub $3,6
-  mul $1,2
-  mul $3,$5
-  add $6,$8
-  mov $2,$8
-  add $4,$7
-  add $1,$8
-  mov $2,3
-  mov $2,$7
   div $5,6
-  add $0,$3
   mov $1,$5
-  add $10,$1
+  add $8,$1
 lpe
-mov $1,$10
+mov $1,$8

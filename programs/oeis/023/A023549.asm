@@ -1,0 +1,54 @@
+; A023549: Convolution of natural numbers >= 2 and Lucas numbers.
+; 2,9,21,43,80,142,244,411,683,1125,1842,3004,4886,7933,12865,20847,33764,54666,88488,143215,231767,375049,606886,982008,1588970,2571057,4160109,6731251
+
+mov $5,$0
+mov $7,$0
+add $7,1
+lpb $7,1
+  clr $0,5
+  sub $7,1
+  mov $0,$5
+  sub $0,$7
+  mov $2,35
+  mov $4,0
+  mov $3,2
+  mul $3,$4
+  add $2,$2
+  gcd $2,2
+  mov $2,$3
+  lpb $0,1
+    mov $2,$3
+    mov $3,19
+    sub $0,1
+    mov $1,5
+    add $2,5
+    mov $3,$4
+    add $4,$2
+  lpe
+  mov $1,$0
+  mov $3,$0
+  sub $3,1
+  mov $0,1
+  mov $2,1
+  sub $3,1
+  mul $2,2
+  sub $0,$1
+  mov $1,$0
+  mov $0,4
+  mov $0,1
+  sub $2,4
+  mul $0,$2
+  mov $3,2
+  add $4,2
+  add $3,$4
+  mov $1,$1
+  mov $3,$3
+  add $3,1
+  sub $3,$3
+  sub $0,1
+  mov $0,$1
+  sub $1,3
+  mov $1,$4
+  add $6,$1
+lpe
+mov $1,$6

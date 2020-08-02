@@ -1,0 +1,82 @@
+; A290953: The number of permutations in S_n for which the number of reduced words is maximized with respect to the numbers of braid and commutation classes: |R(w)| = |B(w)| * |C(w)|.
+; 1,2,6,16,45,136,434,1436,4869,16804,58795,208022,742911,2674452,9694858,35357684,129644805,477638716,1767263207,6564120438,24466267039,91482563660,343059613671,1289904147346,4861946401475,18367353072176,69533550916029,263747951750386,1002242216651395,3814986502092332
+
+mov $10,$0
+mov $5,$0
+mov $7,$5
+add $0,1
+add $5,4
+mov $5,$0
+mov $1,1
+mov $5,$7
+mov $7,$1
+mov $4,1
+mov $1,$0
+add $7,$1
+mov $1,$5
+mov $2,$5
+mov $3,2
+mov $6,$2
+add $5,$7
+bin $5,$7
+mov $4,1
+add $7,1
+add $6,$2
+mul $7,$4
+add $5,1
+div $5,$0
+mov $7,8
+mov $7,$7
+add $4,1
+sub $3,1
+add $0,$7
+sub $7,2
+add $3,$2
+add $6,$5
+mov $0,1
+mov $3,$6
+mov $0,2
+mov $4,6
+mov $0,1
+add $0,1
+mul $7,$7
+add $2,$1
+lpb $0,1
+  add $3,$7
+  add $4,$1
+  add $6,2
+  add $4,2
+  div $6,$4
+  add $0,13
+  add $3,$4
+  mul $0,2
+  div $1,2
+  sub $0,1
+  mov $6,1
+  sub $1,$7
+  mov $4,$6
+  clr $5,5
+  div $7,7
+  sub $6,1
+  mul $3,2
+  sub $5,$4
+  mov $1,1
+  add $5,$2
+  add $0,$3
+  mul $0,2
+lpe
+sub $3,$5
+add $4,2
+mov $2,$3
+sub $2,1
+mov $3,0
+sub $6,$1
+mov $0,$2
+mov $1,$5
+sub $1,1
+mov $11,$10
+mov $12,$11
+mul $12,1
+add $1,$12
+mul $11,$10
+mul $11,$10
