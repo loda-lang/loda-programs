@@ -1,0 +1,72 @@
+; A127191: Related to the function "shin" - see reference for precise definition.
+; 31,71,122,162,213,253,293,344,384,435,475,526,566,617,657,697,748,788,839,879,930,970,1021,1061,1112,1152
+
+mov $7,$0
+mov $6,$0
+mov $3,1
+mov $2,$3
+mov $6,16
+mov $5,1
+add $2,4
+div $5,42
+add $6,$3
+sub $6,$2
+mov $4,$0
+sub $4,$5
+add $0,$6
+add $2,$4
+add $0,2
+mov $0,1
+mul $5,$4
+add $2,$0
+lpb $5,1
+  mov $6,$0
+  sub $5,$4
+  add $5,1
+  add $0,$0
+  mov $5,$2
+  mov $1,7
+  mov $6,1
+  sub $0,$6
+  bin $6,$0
+  mov $1,$3
+  add $5,$6
+  add $4,$0
+  mov $6,$3
+  sub $2,$5
+  lpb $5,1
+    mov $5,$4
+    sub $0,2
+    sub $0,24
+    sub $4,2
+    mul $4,$3
+    add $5,$2
+  lpe
+  add $5,6
+lpe
+add $6,$0
+mov $5,2
+sub $0,1
+pow $2,2
+mul $1,$5
+sub $6,$5
+add $5,$5
+mov $3,121
+lpb $2,3
+  sub $2,7
+  add $2,2
+  sub $2,$5
+  sub $5,1
+  add $0,1
+  add $5,$6
+  add $0,10
+lpe
+mul $6,$3
+mov $1,$0
+sub $1,2
+mov $8,$7
+mov $9,$8
+mul $9,40
+add $1,$9
+mul $8,$7
+mul $8,$7

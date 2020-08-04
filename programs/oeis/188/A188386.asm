@@ -1,0 +1,87 @@
+; A188386: Numerator(h(n+2)-h(n-1)), where h(n) is the n-th harmonic number sum(1/k, k=1..n).
+; 11,13,47,37,107,73,191,121,299,181,431,253,587,337,767,433,971,541,1199,661,1451,793,1727,937,2027,1093,2351,1261,2699,1441,3071,1633,3467,1837,3887,2053,4331,2281,4799,2521
+
+mov $7,$0
+mov $9,2
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  add $0,$9
+  sub $0,1
+  mov $1,1
+  mov $3,3
+  mov $6,$3
+  mov $5,$1
+  mov $4,$6
+  mov $2,$5
+  sub $2,$5
+  mov $1,$6
+  add $6,$1
+  mov $6,1
+  add $4,$1
+  add $0,2
+  mov $3,$2
+  mul $0,3
+  sub $6,1
+  mul $1,$0
+  mov $4,$1
+  mov $2,6
+  div $0,2
+  add $0,1
+  mov $1,$0
+  mov $3,$0
+  mov $2,$1
+  lpb $0,1
+    add $1,$2
+    mul $6,3
+    sub $0,$0
+    sub $1,$4
+    sub $0,1
+    mov $6,$6
+    mov $6,$4
+    add $6,1
+    mov $0,$6
+    add $5,$4
+    div $5,2
+    add $5,$6
+    mov $5,$3
+    add $6,$3
+    mov $1,8
+  lpe
+  mov $2,1
+  mov $3,$3
+  mov $5,1
+  sub $1,$5
+  mul $3,$3
+  sub $3,4
+  add $4,9
+  mul $4,2
+  sub $1,1
+  add $1,$3
+  mul $0,2
+  mul $0,$3
+  sub $3,1
+  mul $4,2
+  mov $3,$5
+  pow $3,2
+  sub $2,9
+  sub $3,$1
+  mov $3,$4
+  sub $3,$5
+  mov $1,$0
+  mov $10,$9
+  lpb $10,1
+    mov $8,$1
+    sub $10,1
+  lpe
+lpe
+lpb $7,1
+  sub $8,$1
+  mov $7,0
+lpe
+mov $1,$8
+sub $1,96
+div $1,18
+mul $1,2
+add $1,11

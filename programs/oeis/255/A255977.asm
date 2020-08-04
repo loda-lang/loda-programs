@@ -1,0 +1,53 @@
+; A255977: The number of numbers j+k*r <= n, where r = golden ratio and j and k are nonnegative integers.
+; 1,2,4,6,9,13,17,22,27,33,40,47,55,64,73,83,93,104,116,128,141,154,168,183,198,214,231,248,266,284,303,323,343,364,386,408,431,454,478,503,528,554,580,607,635,663,692,722,752,783,814,846,879,912,946,980
+
+mov $5,$0
+mov $7,$0
+add $7,1
+lpb $7,1
+  clr $0,5
+  sub $7,1
+  mov $0,$5
+  sub $0,$7
+  mov $1,$0
+  add $1,$0
+  mov $3,5
+  mov $2,1
+  mov $2,$1
+  add $2,$0
+  sub $1,$3
+  mov $4,$0
+  add $0,$2
+  add $3,$2
+  mov $4,$0
+  mov $0,2
+  add $1,$1
+  mov $1,7
+  add $2,$0
+  mul $1,$3
+  mov $4,1
+  sub $2,8
+  lpb $0,1
+    sub $0,1
+    mov $3,1
+  lpe
+  mov $0,161051
+  add $2,1
+  sub $4,2
+  sub $1,$3
+  div $4,$3
+  sub $0,8
+  mov $2,4
+  mov $0,$2
+  sub $4,$4
+  mul $4,2
+  mov $0,1
+  add $0,$4
+  sub $4,$0
+  mov $2,$0
+  div $1,34
+  add $3,$4
+  mov $2,1
+  add $6,$1
+lpe
+mov $1,$6
