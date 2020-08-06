@@ -1,0 +1,11 @@
+; A273652: Number of forests of labeled rooted trees of height at most 1, with n labels, two of which are used for root nodes and any root may contain >= 1 labels.
+; 2,9,30,90,255,693,1820,4644,11565,28215,67650,159822,372827,860265,1966200,4456584,10027161,22413483,49807550,110100690,242221287,530579709,1157628180,2516582700,5452595525,11777605983,25367150970,54492397974,116769423795
+
+mov $3,2
+pow $3,$0
+mov $2,$0
+add $2,2
+bin $2,2
+add $3,1
+mul $3,$2
+mov $1,$3
