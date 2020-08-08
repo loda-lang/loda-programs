@@ -1,0 +1,88 @@
+; A006046: Total number of odd entries in first n rows of Pascal's triangle: a(0) = 0, a(1) = 1, a(2k) = 3*a(k), a(2k+1) = 2*a(k) + a(k+1).
+; 0,1,3,5,9,11,15,19,27,29,33,37,45,49,57,65,81,83,87,91,99,103,111,119,135,139,147,155,171,179,195,211,243,245,249,253,261,265,273,281,297,301,309,317,333,341,357,373,405,409,417,425,441,449,465,481,513,521
+
+mov $12,$0
+mov $10,$0
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  mov $6,$0
+  mov $2,$6
+  mov $1,11
+  mov $2,1
+  mov $3,$1
+  mov $2,$0
+  add $3,$1
+  add $6,$6
+  mov $0,0
+  mov $6,$2
+  sub $3,$1
+  mul $2,2
+  mov $5,2
+  lpb $2,1
+    sub $1,1
+    lpb $4,1
+      add $0,1
+      mov $4,$1
+    lpe
+    add $6,$0
+    mov $1,$2
+    mov $2,$1
+    sub $3,1
+    mul $0,2
+    lpb $5,1
+      add $5,$4
+      div $6,2
+      mov $0,1
+      add $0,3
+      mov $6,16
+      sub $5,$1
+      add $3,$3
+      mov $4,6
+      mov $6,$0
+      mov $5,5
+      add $0,7
+      mov $1,$3
+      mul $3,$4
+    lpe
+    mov $0,1
+    lpb $6,1
+      sub $4,$1
+      div $3,9
+      mov $2,$0
+      mul $6,2
+      mul $3,$0
+      mov $2,$6
+      sub $6,1
+      mul $4,$4
+      mov $0,3
+      sub $4,$0
+      mov $4,$6
+      mov $0,$6
+      sub $6,$1
+    lpe
+    sub $4,$4
+    add $3,$5
+    sub $2,1
+  lpe
+  mul $0,3
+  mov $1,$0
+  div $1,1
+  add $8,$1
+lpe
+mov $1,$8
+mov $11,$10
+mul $11,$10
+mul $11,$10
+mov $13,$12
+mov $14,$13
+mul $14,3
+add $1,$14
+mul $13,$12
+mul $13,$12
+div $1,6

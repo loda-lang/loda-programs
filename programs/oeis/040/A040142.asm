@@ -1,106 +1,22 @@
 ; A040142: Continued fraction for sqrt(155).
 ; 12,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2
 
-mov $6,$0
-mov $2,$0
-mov $0,$2
-mov $10,5
-mov $7,$0
-mov $1,$10
-add $0,$6
-mov $1,1
-mov $7,$10
-mov $8,$10
-mov $9,3
-mov $5,$9
-sub $2,38
-mov $2,$2
-bin $7,$8
-add $0,$6
-add $5,1
-sub $2,3
-add $8,$7
-mov $2,1
-mov $3,$7
-mul $9,$0
-div $2,3
-div $10,$8
-sub $7,6
-sub $8,2
-mov $4,$1
-mov $5,2
-sub $1,$4
-mov $5,$0
-add $1,$8
-mov $2,$8
-mov $2,6
-sub $6,$0
-add $2,1
-sub $7,$9
-mov $7,3
-sub $2,3
-mov $4,1
-mul $2,$2
-mov $9,$9
-add $5,$5
-mov $4,$5
-mov $2,$7
-add $1,1
-mov $7,$1
-sub $10,$8
+mov $3,3
+mul $3,$0
+mov $4,4
+mov $6,3
+mov $2,3
+mov $1,5
 lpb $0,1
-  add $8,$4
-  add $3,$7
-  log $7,$2
-  mov $2,$6
-  mov $8,$8
-  add $5,$1
-  mov $5,9
-  add $4,$9
-  add $3,1
-  mov $3,$5
-  mov $5,$8
-  gcd $8,$9
-  sub $0,$7
-  add $3,21
-  mov $6,$8
-  mov $3,$3
-  mov $2,1
-  mov $3,$6
-  mov $7,$7
-  pow $3,5
-  add $5,$3
-  mov $3,7
-  sub $4,1
-  add $6,1
-  mov $6,1
-  mul $7,6
-  mov $5,$7
-  add $0,1
-  mov $2,9
-  sub $3,$3
-  mov $7,2
-  add $10,$9
-  add $8,$3
-  sub $0,1
-  mul $1,$8
+  log $6,$2
+  gcd $4,$3
+  sub $0,$6
+  mul $1,$4
   sub $1,9
-  mov $9,4
 lpe
 mov $5,17
-mov $10,18
-add $6,1
 add $1,1
-mov $10,6
 mul $5,$1
-mov $3,$4
-mov $6,1
-add $6,$2
-mov $1,1
-add $8,$8
-add $7,2
-add $0,1
-add $2,$1
 mov $1,$5
 sub $1,17
 div $1,17

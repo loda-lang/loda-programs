@@ -1,70 +1,26 @@
 ; A247970: a(n) is the smallest k such that prime(k+i) (mod 6) takes successively the values 5,1,5,1... for i = 0, 1,...,n-1 ending with 1 or 5.
 ; 3,3,3,3,3,3,3,24,24,140,140,140,140,140,140,140,140,140,140,140,140
 
-mov $3,3
-mov $7,$3
-mov $2,$7
-add $2,$2
-sub $0,$2
-pow $0,$7
-mov $4,$3
-mov $4,1
-mov $6,$4
-mul $0,2
-div $3,$6
-sub $6,$6
-mov $3,4
-mul $0,2
-pow $7,$4
-mov $7,2
-sub $3,$3
-add $4,$2
-add $3,$2
+sub $0,6
+pow $0,3
+mul $0,4
+mov $3,6
 lpb $0,1
-  sub $0,1
-  mov $5,1
-  mov $2,$5
-  add $6,1
-  mov $1,$2
   mov $2,$3
   add $2,$3
-  sub $0,$3
-  mod $4,2
-  log $1,17
   mov $5,36
   div $3,$3
-  mov $4,$5
-  mov $7,$3
-  mov $1,$6
-  add $7,$5
+  mov $6,$3
+  add $6,$5
   add $4,56
-  mov $3,1
-  mov $1,$4
-  mov $5,$6
-  sub $0,3
-  mov $3,$2
-  mov $3,$7
-  add $6,1
-  add $4,1
-  mul $1,$7
-  add $5,1
+  mov $3,$6
   sub $0,$4
   mov $5,3
-  mov $7,4
-  add $4,7
-  add $4,$3
-  add $4,$1
   sub $3,2
 lpe
-mov $4,4
-mov $3,11
 add $5,1
-mov $5,$5
-add $5,$5
-add $3,1
+mul $5,2
 mul $2,$5
-mul $3,$2
-sub $3,1
 mov $1,$2
 sub $1,12
 div $1,4
