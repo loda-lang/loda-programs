@@ -1,0 +1,87 @@
+; A033465: First differences of sequence {1/(n^2+1)} (numerators).
+; 1,3,1,7,9,11,13,3,17,19,21,23,1,27,29,31,33,7,37,39,41,43,9,47,49,51,53,11,57,59,61,63,13,67,69,71,73,3,77,79,81,83,17,87,89,91,93,19,97,99,101,103,21,107,109,111,113
+
+mov $6,$0
+add $0,3
+mov $3,$6
+div $6,3
+mov $1,$6
+sub $6,$1
+lpb $0,1
+  mov $2,$0
+  mov $5,$2
+  mov $7,$5
+  add $2,1
+  sub $2,$2
+  mul $6,2
+  mov $6,0
+  mov $2,$0
+  mov $2,$2
+  mov $8,$0
+  mov $5,2
+  mov $4,2
+  mul $6,2
+  sub $0,1
+  mov $1,$8
+  mul $3,$6
+  mov $4,$4
+  gcd $8,5
+  div $0,$8
+  add $4,$2
+  sub $1,3
+  sub $1,$0
+  sub $8,$3
+  add $0,1
+  mov $6,2
+  mul $3,$3
+  add $6,$5
+  add $6,1
+  add $0,$5
+  mov $8,$5
+  mov $7,$1
+  sub $4,2
+lpe
+mov $7,1
+div $6,$7
+mov $3,$0
+mov $7,2
+sub $1,1
+sub $2,$6
+sub $2,$0
+sub $2,$0
+mov $4,11
+div $5,2
+mov $1,$8
+add $6,6
+mul $0,2
+div $7,18
+add $1,$1
+mov $6,$3
+mov $5,$4
+sub $4,1
+mov $7,28
+mul $0,$6
+add $5,$1
+mov $5,$5
+clr $6,40
+mov $5,$8
+mov $6,$3
+add $7,$1
+add $7,1
+add $1,1
+mov $4,3
+mul $1,2
+mov $5,13
+mov $2,$3
+mov $3,$5
+mov $3,$8
+sub $0,$5
+add $4,2
+mov $8,$8
+add $7,1
+mov $7,4
+mul $6,$5
+mov $1,$2
+sub $1,3
+mul $1,2
+add $1,1

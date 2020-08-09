@@ -1,102 +1,29 @@
 ; A004235: 10*log(n) rounded to nearest integer.
 ; 0,7,11,14,16,18,19,21,22,23,24,25,26,26,27,28,28,29,29,30,30,31,31,32,32,33,33,33,34,34,34,35,35,35,36,36,36,36,37,37,37,37,38,38,38,38,39,39,39,39,39,40,40,40,40
 
-mov $1,1
 mul $0,2
-mov $1,2
-add $0,$1
-mov $1,0
-mov $2,$1
-mov $9,3
-mov $2,1
-mov $3,1
-add $2,2
-bin $2,$3
-mov $10,$3
-add $9,$3
-mov $3,2
-mov $6,$3
-mov $8,1
-mov $4,1
-mov $8,2
-mov $6,2
-mov $8,1
-mul $10,7
-add $10,$2
-mul $10,2
-mov $1,10
-mov $6,9
-mov $3,$10
-mov $5,2
-mov $7,$8
-mov $9,$5
-mod $3,4
-add $9,$3
-sub $6,$7
-div $8,$10
-add $2,$5
-add $10,1
-add $5,5
-mov $9,$3
-mov $4,$6
-mov $7,3
-pow $0,$5
-add $5,2
-mov $7,3
-add $2,5
-add $5,$4
-sub $1,1
+add $0,2
+mov $4,8
+pow $0,7
 lpb $0,1
-  add $9,15
-  mov $8,1
+  add $3,15
   mov $5,2
-  mov $7,$2
-  sub $0,$9
+  sub $0,$3
   add $5,3
-  mul $1,2
   div $0,2
-  mov $8,$10
-  mov $1,$7
   mov $2,$4
   add $5,3
-  mov $3,$2
-  mov $6,5
-  sub $8,$6
-  sub $1,19
-  div $8,2
-  mul $10,$2
-  add $3,4
-  mov $10,1
-  mov $4,$2
-  mul $4,$4
-  mov $9,1
-  add $4,4
-  div $3,2
+  mov $3,1
   add $5,1
-  add $9,$2
-  add $7,9
-  mov $4,$9
-  mov $8,$4
-  mov $9,$5
+  add $3,$2
+  mov $4,$3
+  mov $3,$5
   mov $6,$5
-  mov $10,22
-  mov $2,1
   sub $0,1
-  mov $7,6
-  add $6,$9
+  add $6,$3
   add $4,$6
 lpe
 add $5,$4
-mov $1,$2
-sub $1,5
-mov $4,$9
-add $8,1
-sub $10,1
-add $8,1
-mov $7,$8
-sub $4,$1
-mov $1,1
-add $2,$0
 mov $1,$5
 sub $1,74
 div $1,19

@@ -1,0 +1,90 @@
+; A307849: Number of ways to pay n dollars using Canadian coins, that is: nickels (5 cents), dimes (10 cents), quarters (25 cents), loonies (100 cents or $1 coins) and toonies ($2 coins).
+; 1,30,128,362,813,1588,2808,4620,7185,10690,15336,21350,28973,38472,50128,64248,81153,101190,124720,152130,183821,220220,261768,308932,362193,422058,489048,563710,646605,738320,839456,950640,1072513,1205742,1351008,1509018
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $8,$0
+    mov $10,$0
+    add $10,1
+    lpb $10,1
+      clr $0,8
+      sub $10,1
+      mov $0,$8
+      sub $0,$10
+      mov $5,$0
+      mov $7,$0
+      add $7,1
+      lpb $7,1
+        clr $0,5
+        sub $7,1
+        mov $0,$5
+        sub $0,$7
+        mov $2,$0
+        mov $1,1
+        mov $4,3
+        mul $0,$0
+        mov $3,$1
+        mod $2,2
+        mod $4,$1
+        add $1,$2
+        add $0,1
+        lpb $0,1
+          mov $4,$2
+          sub $2,1
+          mov $3,$3
+          mov $3,$2
+          sub $0,1
+          sub $0,$3
+          mov $0,$4
+          sub $0,6
+          mov $4,14
+          add $3,$1
+          add $1,1
+          sub $4,1
+          sub $2,$4
+          sub $0,$4
+          add $0,1
+          mov $1,2
+        lpe
+        mov $1,$1
+        sub $4,$2
+        add $4,2
+        add $2,2
+        mul $3,6
+        sub $1,$3
+        add $3,$1
+        add $4,3
+        mov $2,1
+        div $1,2
+        add $4,$3
+        add $3,$4
+        add $3,2
+        mov $1,$3
+        sub $1,19
+        add $1,1
+        add $6,$1
+      lpe
+      mov $1,$6
+      add $9,$1
+    lpe
+    mov $1,$9
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15

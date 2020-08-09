@@ -1,0 +1,105 @@
+; A039305: Number of distinct quadratic residues mod 8^n.
+; 1,3,12,87,684,5463,43692,349527,2796204,22369623,178956972,1431655767,11453246124,91625968983,733007751852,5864062014807,46912496118444,375299968947543,3002399751580332,24019198012642647
+
+mov $10,$0
+mov $2,1
+mov $3,$10
+mov $1,$0
+mov $5,$0
+mov $8,8
+mov $2,$3
+mov $2,$8
+sub $1,$2
+lpb $0,1
+  mov $2,$2
+  mov $0,$0
+  mov $1,$10
+  pow $8,$3
+  sub $5,1
+  sub $0,$5
+  mov $2,2
+  add $1,$1
+  mov $10,1
+  mov $9,1
+  mov $2,$10
+  add $10,$3
+  mov $3,$0
+  mov $1,5
+  mov $6,$10
+  mul $6,$0
+  mul $2,2
+  mov $2,1
+  mov $9,2
+  mov $0,$2
+  add $3,1
+  mov $4,$6
+  div $5,2
+  mov $4,$10
+  mov $4,$8
+  sub $3,$0
+  mov $7,$8
+  sub $0,$5
+  gcd $5,2
+  mov $6,$10
+  mov $9,2
+  mov $8,1
+  sub $3,7
+  sub $0,1
+  mov $8,$7
+  add $10,$8
+  sub $2,2
+  fac $6
+  add $9,$6
+  mov $0,$0
+  mov $9,$3
+  add $7,$2
+  sub $0,3
+  add $5,5
+  add $3,1
+  mov $8,$9
+  sub $0,$8
+  sub $1,1
+  mov $9,$7
+  sub $7,1
+  mov $6,$0
+  pow $0,$4
+  add $1,1
+  mul $9,2
+  mov $2,$7
+  sub $5,22
+  mov $3,32
+  add $0,2
+  sub $10,$8
+  sub $9,2
+  sub $3,13
+  sub $0,$0
+  add $1,$9
+  mov $10,2
+  add $3,$3
+  div $1,6
+  mov $2,2
+  add $1,1
+  mov $3,2
+  mov $2,$4
+  add $7,1
+  mul $10,$7
+  mul $9,2
+  mov $4,$8
+  mov $9,$0
+  sub $9,2
+  clr $0,1
+  mov $7,$6
+  mov $9,1
+  sub $5,$1
+  mul $3,$4
+  mov $4,$3
+  mul $3,2
+  mul $10,$0
+lpe
+mov $5,2
+sub $4,1
+mov $10,5
+mul $0,2
+mov $3,$10
+div $1,2
+add $1,1

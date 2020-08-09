@@ -1,86 +1,25 @@
 ; A151590: Number of permutations of 3 indistinguishable copies of 1..n arranged in a circle with exactly 2 adjacent element pairs in decreasing order.
 ; 0,12,207,1392,7455,36540,171591,785856,3538215,15727740,69204927,301988592,1308621327,5637142812,24159189015,103079212800,438086661591,1855425868956,7834020344655,32985348829680,138538465095807,580542139461372,2427721674124647
 
-mov $6,$0
-mov $8,$6
-mov $4,$6
-mov $4,2
-mov $5,$6
-mov $1,35
-mov $1,$1
-mov $8,$6
-mov $4,$6
-sub $8,1
-add $0,$0
-mov $7,12
-add $0,1
-add $8,$6
-mul $5,2
-add $6,$0
 mov $2,$0
-sub $6,2
-mov $7,1
-mov $1,$5
-add $6,2
-mov $1,3
-mov $1,$1
-add $4,4
-mov $3,$4
-mov $8,$7
-mov $4,$3
-sub $6,1
-lpb $0,1
-  mul $8,2
-  add $5,$3
-  sub $0,1
-  add $5,$1
-lpe
-sub $5,1
-sub $4,3
-sub $7,5
-mov $4,$0
-add $7,2
-mul $7,2
-mov $5,1
-add $0,3
-mov $7,$6
-mov $5,$1
-add $0,$7
-mul $4,3
-add $6,1
-mul $4,$5
-mov $6,$5
-sub $7,2
-sub $3,5
-add $5,1
-sub $5,$5
+mul $0,2
+add $0,1
+add $2,$0
+sub $2,2
+add $2,2
 mov $3,1
-add $7,9
-add $4,1
+sub $2,1
+lpb $0,1
+  mul $3,2
+  sub $0,1
+lpe
+add $0,3
+mov $5,$2
+add $0,$5
 mov $4,$0
-mov $6,1
-pow $2,2
-add $5,1
-mov $7,3
-sub $8,$4
-mov $2,$8
-mov $6,2
+sub $3,$4
 add $0,$4
-mul $3,2
-sub $7,1
-mov $3,2
-sub $1,2
-mul $4,3
-mov $4,$7
-mov $8,$2
-mul $0,$8
-pow $6,2
-add $2,5
-mov $2,4
-mov $8,1
-add $8,$2
-pow $7,$1
-mul $6,$5
+mul $0,$3
 mov $1,$0
 div $1,6
 mul $1,3

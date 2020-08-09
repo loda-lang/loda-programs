@@ -1,0 +1,66 @@
+; A277618: Lexicographically earliest nonnegative sequence such that |a(n+1)-a(n)| is a prime number, and no number occurs twice; a(0) = 0.
+; 0,2,4,1,3,5,7,9,6,8,10,12,14,11,13,15,17,19,16,18,20,22,24,21,23,25,27,29,26,28,30,32,34,31,33,35,37,39,36,38,40,42,44,41,43,45,47,49,46,48,50,52,54,51,53,55,57,59,56,58,60,62,64,61,63,65,67,69,66,68,70,72,74,71,73,75,77,79,76,78,80,82,84,81,83,85,87,89,86,88,90
+
+mov $5,30
+add $5,4
+mov $4,$5
+add $0,$0
+mov $4,$4
+mov $3,1
+add $0,$4
+mov $3,$0
+sub $0,$3
+mov $0,1
+mul $4,2
+mov $1,4
+mov $5,1
+mov $2,$3
+mov $0,3
+mov $2,4
+add $5,$0
+add $1,1
+mov $4,4
+mov $0,$0
+mov $5,$0
+sub $2,2
+mov $1,$0
+mov $1,$2
+lpb $0,1
+  sub $4,$0
+  add $0,2
+  add $1,$3
+  add $5,29
+  div $0,$5
+  mov $5,1
+  add $2,1
+  mul $3,$5
+  mul $2,2
+  add $4,1
+  mod $3,10
+  mov $2,1
+  mul $4,3
+  sub $3,$0
+  mov $4,$1
+  sub $2,16
+  div $0,3
+  mul $5,$3
+  mov $1,1
+  mov $6,1
+  add $5,1
+  mov $0,1
+  add $2,1
+  mov $0,$1
+  mov $3,$3
+  mov $2,$5
+  mov $3,$2
+  mov $6,3
+  mul $6,$5
+  add $6,2
+  add $4,$3
+  sub $0,1
+  mov $5,1
+lpe
+sub $1,1
+mov $1,$4
+sub $1,41
+div $1,2
