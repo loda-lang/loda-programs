@@ -1,0 +1,70 @@
+; A109451: a(1)=1; a(n) = smallest positive integer not already present such that a(n-1) and a(n) have a different number of 1's in their binary expansions.
+; 1,3,2,5,4,6,7,8,9,11,10,13,12,14,15,16,17,19,18,21,20,22,23,24,25,27,26,29,28,30,31,32,33,35,34,37,36,38,39,40,41,43,42,45,44,46,47,48,49,51,50,53,52,54,55,56,57,59,58,61,60,62,63,64,65,67,66,69,68,70,71,72
+
+mov $7,$0
+mov $1,$0
+mov $2,2
+mul $0,2
+mov $2,3
+mov $4,$0
+mov $5,$0
+add $4,$1
+mov $6,$1
+sub $2,11
+div $4,2
+bin $2,2
+add $1,1
+mov $5,$6
+add $0,5
+mov $6,1
+mov $3,1
+mov $2,$2
+add $4,$3
+add $4,$3
+mov $3,1
+add $6,$3
+add $0,$1
+sub $1,$3
+add $1,$3
+add $3,1
+gcd $1,$6
+mov $0,$4
+mov $3,$3
+add $1,3
+div $4,$6
+mod $4,2
+mov $0,1
+add $1,$4
+add $2,$5
+lpb $0,1
+  mov $0,1
+  add $2,$3
+  mov $5,$3
+  add $0,$1
+  sub $0,1
+  mov $5,$4
+  mov $6,7
+  mov $4,$0
+  bin $5,3
+  mov $4,1
+  mul $4,$3
+  mov $0,6
+  add $0,$6
+  mov $0,$1
+  mul $3,$3
+  div $1,2
+  sub $1,$5
+  mul $4,$1
+  mov $3,1
+  div $1,$3
+  add $0,$3
+  mov $5,1
+  mov $6,1
+lpe
+sub $1,4
+mov $8,$7
+mov $9,$8
+mul $9,1
+add $1,$9
+mul $8,$7
+mul $8,$7

@@ -1,0 +1,107 @@
+; A028920: Pit harvesting sequence for winning solitaire Tchoukaillon (or Mancala).
+; 1,2,1,3,1,4,1,2,1,5,1,6,1,2,1,3,1,7,1,2,1,8,1,4,1,2,1,3,1,9,1,2,1,10,1,5,1,2,1,3,1,11,1,2,1,4,1,12,1,2,1,3,1,6,1,2,1,13,1,14,1,2,1,3,1,4,1,2,1,5,1,7,1,2,1,3,1,15,1,2,1,16,1,4,1,2,1,3,1,8,1,2,1,6,1,5,1,2,1,3,1,17,1
+
+mov $3,2
+lpb $0,1
+  mov $5,$0
+  mov $6,$3
+  mov $4,$0
+  mov $0,$6
+  mov $5,1
+  sub $6,$3
+  mov $9,$0
+  add $0,1
+  sub $0,1
+  div $4,$0
+  mov $6,1
+  cmp $6,1
+  mov $1,$0
+  mov $10,1
+  add $3,1
+  mov $2,2
+  mov $7,2
+  mov $8,2
+  mul $0,$4
+  mov $4,0
+  mov $9,10
+lpe
+sub $4,$10
+add $10,7
+mov $7,$1
+add $8,$0
+add $8,$3
+mov $2,$3
+sub $7,$7
+mov $10,1
+mov $0,1
+sub $8,$5
+add $4,$1
+mov $4,4
+mov $5,3
+mul $6,$5
+mov $7,1
+mov $4,4
+mov $1,0
+mov $8,$0
+div $2,2
+add $8,6
+mov $1,$5
+mov $4,$4
+sub $10,3
+mov $0,$4
+mov $1,8
+sub $5,$7
+mov $5,$3
+mov $6,$2
+add $7,4
+mov $4,$10
+add $8,3
+add $7,1
+mov $5,1
+mul $6,$1
+mov $2,0
+mov $9,$0
+add $0,$3
+add $9,$3
+add $3,1
+mul $10,4
+mov $3,$5
+add $3,$6
+sub $4,$10
+mov $4,$8
+sub $4,$0
+mov $9,$8
+add $5,$2
+mov $2,$7
+mul $0,$1
+mov $1,0
+mov $8,$3
+sub $8,$4
+add $8,$0
+div $3,2
+add $6,1
+add $5,2
+mov $4,$10
+div $6,$7
+div $3,15
+mul $10,$1
+add $5,22
+mov $4,2
+add $9,$5
+sub $9,$1
+sub $0,5
+add $0,6
+add $2,1
+add $2,1
+mov $2,$3
+mov $6,$10
+add $7,$10
+mul $7,12
+add $0,$9
+add $1,$4
+div $7,$9
+add $10,$7
+mov $1,$0
+sub $1,84
+div $1,8
+add $1,1

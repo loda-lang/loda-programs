@@ -1,0 +1,108 @@
+; A222410: Partial sums of A008534, or crystal ball sequence for {A_6}* lattice.
+; 1,15,113,575,2171,6581,16955,38613,79885,153091,275661,471395,771863,1217945,1861511,2767241,4014585,5699863,7938505,10867431,14647571,19466525,25541363,33121565,42492101,53976651
+
+mov $2,1
+mov $3,$0
+mov $5,6
+mul $0,$0
+mov $10,12
+mov $6,1
+mov $9,1
+mov $2,2
+mov $9,$2
+mov $1,$2
+add $3,2
+add $9,$5
+mov $10,6
+sub $10,$1
+mov $8,1
+add $5,$10
+mov $10,$5
+add $5,4
+div $8,$1
+add $3,$0
+add $2,$9
+mov $5,3
+div $2,10
+mov $2,0
+mov $4,$8
+sub $5,$2
+mov $8,$3
+mov $10,1
+clr $8,10
+sub $2,$5
+sub $0,$10
+mov $5,$2
+sub $9,1
+mov $8,$2
+mov $9,4
+mov $2,1
+mov $7,$9
+add $7,$10
+mul $7,2
+mov $10,1
+mov $2,$7
+sub $5,$0
+mov $9,3
+mov $0,1
+add $5,2
+mov $4,2
+div $3,$10
+sub $4,$5
+sub $8,$3
+mov $8,1
+mov $6,$0
+cmp $1,$0
+mov $5,5
+add $0,$0
+cmp $5,$9
+add $0,1
+mov $10,$0
+sub $8,$3
+div $10,$0
+add $7,$9
+mov $6,7
+mul $10,$0
+add $0,3
+mov $2,1
+mov $0,1
+cmp $4,$1
+mov $10,$1
+mov $6,$9
+mov $6,$5
+mov $0,3
+lpb $0,1
+  mul $4,$3
+  add $3,$8
+  add $10,$2
+  mov $9,$4
+  sub $0,1
+  mov $4,$10
+  add $4,$9
+lpe
+sub $2,$4
+mov $3,12
+add $10,1
+mul $8,$3
+mov $1,$3
+add $1,$9
+bin $10,2
+mov $3,$5
+mov $1,2
+sub $0,$2
+mov $3,$6
+mov $2,3
+mov $9,2
+add $7,1
+sub $9,2
+add $0,4
+mov $6,2
+sub $4,2
+mov $1,$3
+clr $4,$9
+div $10,$6
+mov $1,$4
+sub $1,17
+div $1,72
+mul $1,14
+add $1,1

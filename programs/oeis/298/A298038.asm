@@ -1,106 +1,29 @@
 ; A298038: Coordination sequence of Dual(4.6.12) tiling with respect to a hexavalent node.
 ; 1,6,24,18,48,30,72,42,96,54,120,66,144,78,168,90,192,102,216,114,240,126,264,138,288,150,312,162,336,174,360,186,384,198,408,210,432,222,456,234,480,246,504,258,528,270,552,282,576,294,600,306,624,318,648
 
-mov $3,32
 mov $5,$0
 mov $6,$0
-mov $4,2
-mov $9,1
-mov $9,1
-mov $10,$0
-mul $0,5
-mov $7,$4
-mov $0,$0
 mov $0,2
-mov $10,1
-mov $9,2
-gcd $9,$6
+mov $3,2
+gcd $3,$6
 lpb $0,1
-  sub $10,2
   mov $7,$0
-  mul $5,$9
-  mov $2,1
-  mov $10,$2
-  add $10,$0
+  mul $5,$3
   add $5,$7
-  add $7,$2
-  mov $3,$7
-  mov $0,$6
-  mov $10,3
-  sub $10,$3
-  add $10,20
   sub $5,1
-  add $7,$4
-  div $7,$4
-  add $9,1
-  sub $0,1
   mov $0,2
   mov $1,2
-  sub $2,$0
-  add $10,4
   sub $0,1
-  add $6,1
-  mov $8,$0
   mov $4,$5
-  mov $9,$7
-  fac $2
-  mov $9,$4
-  mul $7,2
-  mov $10,$0
+  mov $3,$4
   mul $5,5
-  pow $10,$6
-  mov $10,$6
   mov $4,$5
-  sub $9,$1
-  mov $7,2
-  add $10,1
-  div $1,2
-  mov $0,$0
-  add $4,$9
-  sub $3,1
-  fac $3
-  log $2,$4
-  mov $10,1
-  mov $1,$6
+  sub $3,$1
+  add $4,$3
   mul $4,2
-  sub $1,5
-  mov $9,6
-  mul $5,18
-  mov $1,1
-  mov $8,3
-  pow $2,$9
-  add $3,1
-  div $1,$0
-  mov $7,$10
-  mov $10,$1
+  mov $2,3
 lpe
-add $5,2
-sub $10,1
-mov $0,1
-mov $7,$6
-sub $0,$6
-sub $6,$1
-mov $10,1
-mov $9,2
-bin $1,2
-mov $3,13
-add $4,$8
-add $1,1
-mul $5,$4
-mov $8,$8
-sub $7,$5
-mul $7,$3
-mov $3,$5
-sub $2,$10
-sub $0,$3
-mov $5,3
-pow $9,11
-mov $1,2
-sub $1,3
-sub $0,$9
-mov $1,1
-sub $7,256
-mov $5,$7
+add $4,$2
 mov $1,$4
 sub $1,13
 div $1,2
