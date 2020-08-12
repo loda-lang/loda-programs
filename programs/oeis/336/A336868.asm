@@ -1,0 +1,76 @@
+; A336868: Indicator function for numbers n such that n! has distinct prime multiplicities.
+; 1,1,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+mov $5,1
+mov $4,$0
+mov $6,2
+mov $2,$0
+add $6,9
+add $2,2
+mov $4,$4
+mov $7,1
+add $4,4
+lpb $0,1
+  mul $0,$5
+  mov $1,7
+  pow $5,$6
+  add $6,$0
+  mov $2,1
+  mov $3,5
+  sub $1,$0
+  sub $5,9
+  mov $0,$0
+  mov $7,$2
+  sub $2,2
+  mov $4,$4
+  sub $3,4
+  sub $5,$7
+  add $4,8
+  add $4,1
+  mul $2,2
+  mov $7,$7
+  add $3,2
+  mov $5,$6
+  add $5,3
+  sub $2,$2
+  mov $6,4
+  sub $3,$7
+  sub $3,$7
+  add $7,1
+  mov $7,1
+  mov $3,$6
+  mov $1,122
+  add $2,$4
+  mov $4,11
+  mul $6,$3
+  mul $7,$5
+  sub $0,1
+  add $6,1
+  gcd $7,$3
+  sub $6,1
+  div $1,$2
+  mov $6,1
+  mov $1,$7
+  mov $6,$3
+  mov $0,$6
+  mov $6,1
+  mul $0,$7
+  mov $1,$2
+  mov $7,2
+  mov $3,3
+  cmp $1,$7
+  add $7,2
+  mov $7,13
+  sub $5,14
+  sub $0,$3
+  mov $7,$2
+  mov $1,1
+  mov $5,$7
+  add $4,$7
+  add $7,3
+lpe
+sub $1,1
+mov $3,$3
+mov $1,$6
+sub $1,1
+div $1,10

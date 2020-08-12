@@ -1,0 +1,64 @@
+; A277936: Decimal representation of the x-axis, from the left edge to the origin, or from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.
+; 1,3,0,15,0,63,0,255,0,1023,0,4095,0,16383,0,65535,0,262143,0,1048575,0,4194303,0,16777215,0,67108863,0,268435455,0,1073741823,0,4294967295,0,17179869183,0,68719476735,0,274877906943,0,1099511627775,0,4398046511103,0,17592186044415,0,70368744177663,0,281474976710655,0,1125899906842623,0,4503599627370495,0
+
+add $0,1
+mov $4,$0
+mov $1,$4
+sub $1,$1
+mov $1,$4
+mul $0,$0
+mov $5,$0
+mov $3,1
+mov $6,4
+mov $6,1
+mov $5,$0
+add $3,$1
+lpb $0,1
+  mov $6,16
+  mov $5,1
+  mov $5,$0
+  div $4,$6
+  mov $6,2
+  add $1,6
+  mov $0,$3
+  mov $5,1
+  mov $5,16
+  mov $5,$1
+  mov $5,1
+  pow $6,$3
+  mov $1,1
+  add $6,2
+  sub $0,1
+  mov $2,$0
+  add $5,2
+  sub $3,4
+  sub $5,1
+  fac $1
+  add $2,$6
+  mov $5,$3
+  sub $6,$1
+  sub $0,1
+  add $5,$6
+  add $3,$1
+  sub $5,6
+  sub $0,1
+  mov $5,1
+  mov $3,25
+  add $5,6
+  mov $4,2
+  mov $4,1
+  mov $3,$4
+  mov $2,8
+  add $6,2
+  add $1,7
+  sub $2,6
+  mod $0,$2
+  div $6,2
+  add $1,2
+  add $2,1
+  sub $4,$3
+lpe
+div $2,$1
+mov $0,$5
+mov $1,$6
+sub $1,2
