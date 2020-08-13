@@ -1,0 +1,87 @@
+; A253724: Numbers c(n) whose squares are equal to the sums of a number M(n) of consecutive cubed integers b^3 + (b+1)^3 + ... + (b+M-1)^3 = c^2, starting at b(n) (A002593) for M(n) being twice a squared integer (A001105).
+; 504,8721,65472,312375,1119528,3293829,8388096,19131147,39999000,77947353,143325504,250991871,421651272,683434125,1073737728,1641349779,2448874296,3575480097,5119992000,7204344903,9977420904,13619289621,18345871872,24414046875
+
+mov $8,1
+mov $1,$0
+mov $6,$8
+mov $3,$1
+add $6,$3
+add $3,11
+mov $3,$8
+pow $8,3
+mov $2,2
+add $2,$3
+mov $3,1
+mov $3,2
+mov $3,3
+add $6,1
+sub $8,3
+bin $1,21
+mov $4,1
+mov $3,$3
+mov $8,$0
+sub $4,$6
+mul $2,$2
+mov $7,$3
+div $3,2
+mov $5,$7
+mov $1,$8
+add $7,225
+mov $4,$3
+add $5,5
+add $5,42
+mov $7,7
+add $8,2
+mov $7,$0
+div $5,$5
+pow $6,2
+add $0,1
+sub $7,$7
+sub $5,$8
+add $3,$6
+mov $7,$4
+add $3,$6
+div $0,$2
+bin $3,3
+mov $5,$8
+mov $2,$6
+mov $8,$3
+sub $3,$2
+mov $1,$3
+mov $4,$8
+mov $6,$0
+mul $5,$4
+sub $7,1
+add $5,1
+mov $4,17
+add $3,$1
+mul $1,78
+mov $7,$6
+add $0,$7
+add $8,7
+mov $8,$4
+add $6,$2
+add $7,1
+lpb $0,1
+  mov $1,$4
+  sub $4,1
+  mov $1,$3
+  mov $1,$4
+  mov $4,$3
+  mov $7,$5
+  div $6,36
+  sub $4,$4
+  mov $4,$5
+  sub $0,1
+  mov $4,$4
+  sub $1,$4
+  add $6,1
+  mov $7,$1
+  sub $4,$6
+  add $8,3
+  mul $1,$4
+lpe
+mov $1,$5
+sub $1,169
+mul $1,3
+add $1,504

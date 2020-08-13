@@ -1,0 +1,106 @@
+; A144968: Number of squares between consecutive cubes.
+; 1,2,3,2,4,3,4,4,4,5,5,5,5,6,6,5,7,6,6,7,7,7,7,7,7,8,8,8,8,8,8,9,8,9,9,8,10,9,9,9,10,10,9,10,10,10,11,10,10,11,11,10,11,11,11,12,11,11,12,11,12,12,12,11,13,12,12,12,13,12,13,12,13,13,13,13,13,13,14,13,13,14,14
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $1,$0
+  mov $3,$0
+  sub $3,1
+  mov $3,1
+  mov $5,1
+  mov $2,4
+  mov $4,$5
+  add $5,$3
+  add $4,4
+  mov $8,2
+  sub $2,$1
+  mov $3,6
+  gcd $2,$1
+  mov $2,$0
+  add $2,1
+  lpb $2,1
+    bin $0,$0
+    add $5,1
+    mov $8,$5
+    mov $1,$4
+    mov $4,$1
+    mov $7,$8
+    mov $6,1
+    sub $1,$0
+    mov $5,2
+    lpb $4,1
+      mul $4,$0
+      add $7,$5
+      sub $4,$8
+      clr $6,1
+      mov $1,$5
+      sub $8,1
+      sub $4,$5
+    lpe
+    lpb $5,1
+      mov $0,10
+      mov $6,$5
+      mul $5,3
+      mov $3,$6
+      add $5,$0
+      add $8,1
+      sub $5,$5
+      pow $2,3
+      mov $7,$0
+      mov $8,1
+      div $5,$0
+      mov $3,$3
+      sub $0,$5
+      div $6,$7
+      sub $7,$7
+      sub $8,$0
+    lpe
+    add $7,$5
+    mov $6,$2
+    mov $0,$0
+    add $5,$3
+    mov $2,1
+    sub $3,$2
+    sub $7,2
+    add $8,2
+    sub $6,$5
+    mov $8,1
+    add $7,$0
+    lpb $6,1
+      add $5,2
+      mov $1,$5
+      add $6,$2
+      sub $6,$5
+      div $1,$3
+      mov $5,$1
+      log $8,$5
+      mov $8,12
+    lpe
+    mov $1,1
+    mov $4,$8
+    div $8,$0
+    sub $2,1
+    mov $1,2
+    add $6,$4
+  lpe
+  mov $1,$5
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
+sub $1,2
+div $1,2
+add $1,1
