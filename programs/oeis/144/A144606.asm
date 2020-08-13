@@ -1,103 +1,34 @@
 ; A144606: Christoffel word of slope 8/11.
 ; 0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1
 
-mov $9,$0
-mov $11,2
-lpb $11,1
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  add $0,$11
-  sub $0,1
-  add $0,$0
-  mov $7,$0
-  mov $2,2
-  mov $4,2
-  mov $0,$0
-  mov $0,5
-  mov $3,$7
-  mov $0,$7
-  mov $6,3
-  mov $8,$0
-  mul $2,2
-  pow $4,$4
-  mov $0,$0
-  mul $7,2
-  mov $6,$4
-  mov $1,$2
-  add $6,$7
-  add $3,$6
-  mov $5,3
-  sub $8,$7
-  add $6,6
-  mov $8,$2
-  mov $6,2
-  add $3,$0
-  mov $8,1
-  mov $8,$8
-  add $0,1
-  add $4,$7
-  mov $3,2
-  mul $1,4
-  add $7,6
-  add $6,$6
-  add $7,$4
-  add $2,$4
+mov $6,$0
+mov $3,2
+lpb $3,1
+  sub $3,1
+  mov $0,$6
   add $0,$3
+  sub $0,1
+  mul $0,2
+  mov $7,$0
+  mov $4,2
+  pow $4,$4
+  mul $7,2
+  add $4,$7
   lpb $0,1
-    add $8,1
     mul $4,2
-    sub $1,$6
-    mov $3,19
-    add $3,1
-    add $3,$8
-    mov $6,32
-    mov $7,1
     mov $5,$0
     sub $0,$5
-    mov $1,$8
-    mov $5,4
-    add $3,$0
-    add $0,1
-    add $5,1
-    mov $5,1
-    add $8,$6
-    add $3,$6
-    mov $2,1
-    sub $8,11
     mov $1,$4
-    sub $7,$6
-    sub $0,1
   lpe
-  mov $8,1
   div $1,19
-  add $7,$4
-  sub $3,45601
-  add $8,2
-  mov $3,$2
-  sub $7,5
-  mov $5,4
-  mov $6,$1
-  div $0,$4
-  mov $4,$4
-  add $3,1
-  mov $8,2
-  add $2,1
-  sub $8,$4
-  sub $5,8
-  mov $1,1
-  mov $7,$2
-  add $5,1
-  sub $3,$3
-  mov $1,$6
-  mov $12,$11
-  lpb $12,1
-    mov $10,$1
-    sub $12,1
+  mov $2,$3
+  lpb $2,1
+    mov $8,$1
+    sub $2,1
   lpe
 lpe
-lpb $9,1
-  sub $10,$1
-  mov $9,0
+lpb $6,1
+  sub $8,$1
+  mov $6,0
 lpe
-mov $1,$10
+mov $1,$8

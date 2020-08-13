@@ -6,19 +6,7 @@ add $0,2
 mov $1,2
 lpb $2,1
   mod $1,$0
-  lpb $4,1
-    mov $2,$0
-    mov $4,$0
-    mov $1,$1
-  lpe
-  add $1,$1
-  lpb $5,1
-    mov $5,$4
-    sub $0,2
-  lpe
-  lpb $6,1
-    mov $6,$4
-  lpe
+  mul $1,2
   sub $2,1
 lpe
 div $1,2

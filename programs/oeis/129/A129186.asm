@@ -1,83 +1,31 @@
 ; A129186: Right shift operator generating 1's in shifted spaces.
 ; 1,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
 
-mov $7,$0
-mov $9,2
-lpb $9,1
-  clr $0,7
-  sub $9,1
-  mov $0,$7
-  add $0,$9
+mov $5,$0
+mov $6,2
+lpb $6,1
+  sub $6,1
+  mov $0,$5
+  add $0,$6
   sub $0,1
-  mov $3,1
-  mov $2,$0
-  mov $2,5
-  mov $6,5
-  sub $6,$0
-  mov $1,$2
-  mul $6,$3
-  mov $6,$6
-  mov $5,$2
-  mod $3,2
-  add $6,3
-  mov $2,$5
-  mov $4,$5
   add $0,2
-  mov $4,2
-  add $3,$6
-  sub $1,$2
   mov $1,2
   sub $0,$1
-  sub $6,$5
-  mul $5,$2
-  mov $6,0
-  sub $3,1
-  sub $3,$5
   mov $3,1
-  add $6,$2
-  mov $1,8
-  sub $4,3
-  add $1,$4
-  div $6,$5
-  mov $1,$3
-  add $2,$4
-  mov $5,0
-  mov $1,4
-  mov $1,$6
-  add $6,1
-  pow $2,$5
   lpb $0,1
-    add $4,$3
     add $3,1
-    mod $2,$6
-    mul $3,$6
-    mov $2,$3
-    mov $1,$4
-    add $6,$4
-    add $1,8
-    mov $4,1
-    mov $5,$1
     sub $0,1
-    add $5,1
-    pow $2,2
     sub $0,$3
-    add $1,1
-    mov $5,1
-    pow $4,4
-    add $2,$5
-    mov $6,1
-    mov $4,$5
-    pow $4,$4
   lpe
   mov $1,$3
-  mov $10,$9
-  lpb $10,1
-    mov $8,$1
-    sub $10,1
+  mov $4,$6
+  lpb $4,1
+    mov $2,$1
+    sub $4,1
   lpe
 lpe
-lpb $7,1
-  sub $8,$1
-  mov $7,0
+lpb $5,1
+  sub $2,$1
+  mov $5,0
 lpe
-mov $1,$8
+mov $1,$2

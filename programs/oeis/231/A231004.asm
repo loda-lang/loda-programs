@@ -1,81 +1,18 @@
 ; A231004: Number of years after which it is not possible to have the same calendar for the entire year, in the Julian calendar.
 ; 1,2,3,4,5,7,8,9,10,12,13,14,15,16,18,19,20,21,23,24,25,26,27,29,30,31,32,33,35,36,37,38,40,41,42,43,44,46,47,48,49,51,52,53,54,55,57,58,59,60,61,63,64,65,66,68,69,70,71,72,74,75,76,77,79,80,81,82,83,85,86,87
 
-mov $259,$0
+mov $2,$0
 mov $7,$0
-mov $3,$7
 add $0,1
-mov $2,1
-mov $1,2
 mov $4,$0
-mov $6,$4
-sub $4,$1
-add $2,23
-mov $1,1
-mov $6,$7
-add $6,$3
-sub $2,$1
-mov $3,11
+sub $4,2
 add $7,$4
-sub $4,9
-add $2,$2
 add $7,2
-sub $4,4
-mov $3,1
-mov $3,$4
-mov $1,$1
 mul $7,5
-mov $5,8
-mov $4,1
-add $5,$5
-div $7,$2
-mov $2,3
-add $6,$2
+div $7,46
 add $7,1
-mov $3,1
-mov $0,1
 mov $6,$7
-sub $5,$7
-sub $7,1
-mov $2,$2
-lpb $2,5
-  sub $7,2
-  mul $0,$5
-  mov $5,$2
-  add $3,5
-  sub $2,1
-  pow $3,$1
-  mov $3,2
-  mov $5,$1
-  mov $4,$6
-  sub $3,$7
-  sub $6,11
-  mov $7,2
-  mul $2,4
-  lpb $7,1
-    add $4,2
-    mov $3,$4
-    mov $2,$3
-    pow $2,$1
-  lpe
-  lpb $0,1
-    mov $7,1
-    mov $5,1
-    mod $4,2
-    mov $5,$5
-  lpe
-  lpb $3,256
-    sub $4,7
-    mov $7,$4
-  lpe
-  sub $3,$7
-lpe
-mov $4,3
-mov $2,3
 mov $1,$6
-mov $260,$259
-mov $261,$260
-mul $261,1
-add $1,$261
-mul $260,$259
-mul $260,$259
+mov $5,$2
+mov $3,$5
+add $1,$3
