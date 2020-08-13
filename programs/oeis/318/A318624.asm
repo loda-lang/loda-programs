@@ -1,0 +1,125 @@
+; A318624: Number of 3-member subsets of [3*n] whose elements sum to a multiple of n.
+; 0,1,10,30,55,91,138,190,253,327,406,496,597,703,820,948,1081,1225,1380,1540,1711,1893,2080,2278,2487,2701,2926,3162,3403,3655,3918,4186,4465,4755,5050,5356,5673,5995,6328,6672,7021,7381,7752,8128,8515,8913,9316
+
+mov $18,$0
+mov $20,$0
+add $20,1
+lpb $20,1
+  clr $0,18
+  sub $20,1
+  mov $0,$18
+  sub $0,$20
+  mov $15,$0
+  mov $17,$0
+  add $17,1
+  lpb $17,1
+    clr $0,15
+    sub $17,1
+    mov $0,$15
+    sub $0,$17
+    mov $11,$0
+    mov $13,2
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      add $0,$13
+      sub $0,1
+      mov $7,$0
+      mov $9,2
+      lpb $9,1
+        clr $0,7
+        sub $9,1
+        mov $0,$7
+        add $0,$9
+        sub $0,1
+        mov $1,$0
+        mov $3,$0
+        mul $3,2
+        mov $5,4
+        add $0,$3
+        mov $4,2
+        mul $3,$0
+        mov $4,2
+        add $3,1
+        mov $6,1
+        mul $5,$4
+        mov $5,$0
+        add $1,$0
+        mod $0,3
+        mov $6,3
+        mov $2,$1
+        add $1,1
+        add $0,1
+        sub $3,2
+        pow $1,4
+        add $1,$5
+        sub $5,$2
+        sub $5,8
+        mov $5,$5
+        mov $0,$1
+        gcd $2,$6
+        mov $1,1
+        lpb $0,1
+          mov $1,1
+          mov $5,1
+          add $5,2
+          sub $0,1
+          sub $1,2
+          add $6,2
+          add $0,$1
+          add $4,$5
+          add $2,$3
+          sub $3,$6
+          sub $3,1
+          mov $4,2
+          div $0,2
+          mov $3,1
+          mul $3,2
+          sub $0,$2
+          sub $3,2
+          add $6,$2
+          sub $3,$4
+          add $4,$3
+          add $4,$6
+          mov $4,5
+          mov $5,$4
+          mov $5,$3
+          add $2,1
+          sub $5,$4
+          sub $6,1
+          pow $5,96
+          mov $1,2
+          mov $0,2
+          sub $4,1
+        lpe
+        mov $1,$6
+        mov $10,$9
+        lpb $10,1
+          mov $8,$1
+          sub $10,1
+        lpe
+      lpe
+      lpb $7,1
+        sub $8,$1
+        mov $7,0
+      lpe
+      mov $1,$8
+      mov $14,$13
+      lpb $14,1
+        mov $12,$1
+        sub $14,1
+      lpe
+    lpe
+    lpb $11,1
+      sub $12,$1
+      mov $11,0
+    lpe
+    mov $1,$12
+    sub $1,3
+    add $16,$1
+  lpe
+  mov $1,$16
+  add $19,$1
+lpe
+mov $1,$19

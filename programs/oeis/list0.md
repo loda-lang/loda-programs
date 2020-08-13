@@ -597,6 +597,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005408](http://oeis.org/A005408) ([L03 program](005/A005408.asm)): The odd numbers: a(n) = 2*n + 1.
 * [A005409](http://oeis.org/A005409) ([L13 program](005/A005409.asm)): Number of polynomials of height n: a(n) = 2a(n-1) + a(n-2) + 2.
 * [A005418](http://oeis.org/A005418) ([L22 program](005/A005418.asm)): Number of (n-1)-bead black-white reversible strings; also binary grids; also row sums of Losanitsch's triangle A034851; also number of caterpillar graphs on n nodes.
+* [A005427](http://oeis.org/A005427) ([L84 program](005/A005427.asm)): Josephus problem: numbers m such that, when m people are arranged on a circle and numbered 1 through m, the final survivor when we remove every 4th person is one of the first three people.
 * [A005428](http://oeis.org/A005428) ([L09 program](005/A005428.asm)): a(n) = ceiling((1 + sum of preceding terms) / 2) starting with a(0) = 1.
 * [A005430](http://oeis.org/A005430) ([L06 program](005/A005430.asm)): Apéry numbers: n*C(2*n,n).
 * [A005448](http://oeis.org/A005448) ([L05 program](005/A005448.asm)): Centered triangular numbers: a(n) = 3n(n-1)/2 + 1.
@@ -2193,6 +2194,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022849](http://oeis.org/A022849) ([L17 program](022/A022849.asm)): Integer nearest nx, where x = sqrt(6).
 * [A022851](http://oeis.org/A022851) ([L12 program](022/A022851.asm)): a(n) = integer nearest nx, where x = sqrt(8).
 * [A022856](http://oeis.org/A022856) ([L07 program](022/A022856.asm)): a(n) = n-2 + Sum_{i = 1..n-2} (a(i+1) mod a(i)) for n >= 3 with a(1) = a(2) = 1.
+* [A022933](http://oeis.org/A022933) ([L80 program](022/A022933.asm)): Number of e^m between 2^n and 2^(n+1).
 * [A022945](http://oeis.org/A022945) ([L12 program](022/A022945.asm)): Duplicate of A022443.
 * [A022998](http://oeis.org/A022998) ([L03 program](022/A022998.asm)): If n is odd then n, otherwise 2n.
 * [A023000](http://oeis.org/A023000) ([L03 program](023/A023000.asm)): a(n) = (7^n - 1)/6.
@@ -2250,6 +2252,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024036](http://oeis.org/A024036) ([L03 program](024/A024036.asm)): a(n) = 4^n - 1.
 * [A024037](http://oeis.org/A024037) ([L03 program](024/A024037.asm)): a(n) = 4^n - n.
 * [A024038](http://oeis.org/A024038) ([L05 program](024/A024038.asm)): a(n) = 4^n - n^2.
+* [A024039](http://oeis.org/A024039) ([L64 program](024/A024039.asm)): a(n) = 4^n - n^3.
 * [A024049](http://oeis.org/A024049) ([L03 program](024/A024049.asm)): a(n) = 5^n - 1.
 * [A024050](http://oeis.org/A024050) ([L03 program](024/A024050.asm)): a(n) = 5^n - n.
 * [A024051](http://oeis.org/A024051) ([L06 program](024/A024051.asm)): a(n) = 5^n - n^2.
@@ -2456,7 +2459,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A026915](http://oeis.org/A026915) ([L09 program](026/A026915.asm)): a(n) = T(n,0) + T(n,1) + ... + T(n,n), T given by A026907.
 * [A026917](http://oeis.org/A026917) ([L10 program](026/A026917.asm)): a(n) = Sum{T(i,j)}, 0<=j<=i, 0<=i<=n, T given by A026907.
 * [A026922](http://oeis.org/A026922) ([L21 program](026/A026922.asm)): Number of partitions of n into an odd number of parts, the greatest being 2; also, a(n+3) = number of partitions of n+1 into an even number of parts, each <=2.
-* [A026937](http://oeis.org/A026937) ([L41 program](026/A026937.asm)): a(n) = Sum_{k=0..n} (k+1)*T(n,n-k), where T is given by A008288.
+* [A026937](http://oeis.org/A026937) ([L13 program](026/A026937.asm)): a(n) = Sum_{k=0..n} (k+1)*T(n,n-k), where T is given by A008288.
 * [A027004](http://oeis.org/A027004) ([L08 program](027/A027004.asm)): a(n) = T(2*n+1,n+1), T given by A026998.
 * [A027107](http://oeis.org/A027107) ([L06 program](027/A027107.asm)): a(n) = Sum_{k=0..2n} (k+1) * A027082(n, 2n-k).
 * [A027114](http://oeis.org/A027114) ([L17 program](027/A027114.asm)): a(n) = A027113(n, n+2).
@@ -2972,7 +2975,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033918](http://oeis.org/A033918) ([L08 program](033/A033918.asm)): Triangular array in which n-th row consists of the numbers 1^1, 2^2, ... n^n.
 * [A033931](http://oeis.org/A033931) ([L23 program](033/A033931.asm)): a(n) = lcm(n,n+1,n+2).
 * [A033937](http://oeis.org/A033937) ([L34 program](033/A033937.asm)): Convolution of natural numbers n >= 1 with Fibonacci numbers F(k), k >= 3.
-* [A033940](http://oeis.org/A033940) ([L23 program](033/A033940.asm)): a(n) = 10^n mod 7.
+* [A033940](http://oeis.org/A033940) ([L10 program](033/A033940.asm)): a(n) = 10^n mod 7.
 * [A033951](http://oeis.org/A033951) ([L06 program](033/A033951.asm)): Write 1,2,... in clockwise spiral; sequence gives numbers on positive x axis.
 * [A033954](http://oeis.org/A033954) ([L05 program](033/A033954.asm)): Second 10-gonal (or decagonal) numbers: n*(4*n+3).
 * [A033960](http://oeis.org/A033960) ([L37 program](033/A033960.asm)): Convolution of natural numbers n >= 1 with Fibonacci numbers F(k), k >= 4.
@@ -3051,16 +3054,16 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036068](http://oeis.org/A036068) ([L13 program](036/A036068.asm)): Expansion of (-1+1/(1-3*x)^3)/(9*x).
 * [A036085](http://oeis.org/A036085) ([L14 program](036/A036085.asm)): Centered cube numbers: (n+1)^7 + n^7.
 * [A036086](http://oeis.org/A036086) ([L06 program](036/A036086.asm)): Centered cube numbers: a(n) = (n+1)^8+n^8.
-* [A036117](http://oeis.org/A036117) ([L20 program](036/A036117.asm)): a(n) = 2^n mod 11.
-* [A036118](http://oeis.org/A036118) ([L20 program](036/A036118.asm)): a(n) = 2^n mod 13.
-* [A036120](http://oeis.org/A036120) ([L63 program](036/A036120.asm)): a(n) = 2^n mod 19.
-* [A036121](http://oeis.org/A036121) ([L20 program](036/A036121.asm)): 5^n mod 23.
-* [A036122](http://oeis.org/A036122) ([L20 program](036/A036122.asm)): a(n) = 2^n mod 29.
-* [A036123](http://oeis.org/A036123) ([L20 program](036/A036123.asm)): a(n) = 3^n mod 31.
-* [A036124](http://oeis.org/A036124) ([L20 program](036/A036124.asm)): a(n) = 2^n mod 37.
-* [A036125](http://oeis.org/A036125) ([L20 program](036/A036125.asm)): a(n) = 6^n mod 41.
-* [A036126](http://oeis.org/A036126) ([L20 program](036/A036126.asm)): a(n) = 3^n mod 43.
-* [A036127](http://oeis.org/A036127) ([L20 program](036/A036127.asm)): a(n) = 5^n mod 47.
+* [A036117](http://oeis.org/A036117) ([L07 program](036/A036117.asm)): a(n) = 2^n mod 11.
+* [A036118](http://oeis.org/A036118) ([L07 program](036/A036118.asm)): a(n) = 2^n mod 13.
+* [A036120](http://oeis.org/A036120) ([L14 program](036/A036120.asm)): a(n) = 2^n mod 19.
+* [A036121](http://oeis.org/A036121) ([L07 program](036/A036121.asm)): 5^n mod 23.
+* [A036122](http://oeis.org/A036122) ([L07 program](036/A036122.asm)): a(n) = 2^n mod 29.
+* [A036123](http://oeis.org/A036123) ([L07 program](036/A036123.asm)): a(n) = 3^n mod 31.
+* [A036124](http://oeis.org/A036124) ([L07 program](036/A036124.asm)): a(n) = 2^n mod 37.
+* [A036125](http://oeis.org/A036125) ([L07 program](036/A036125.asm)): a(n) = 6^n mod 41.
+* [A036126](http://oeis.org/A036126) ([L07 program](036/A036126.asm)): a(n) = 3^n mod 43.
+* [A036127](http://oeis.org/A036127) ([L07 program](036/A036127.asm)): a(n) = 5^n mod 47.
 * [A036130](http://oeis.org/A036130) ([L12 program](036/A036130.asm)): a(n) = 2^n mod 61.
 * [A036216](http://oeis.org/A036216) ([L20 program](036/A036216.asm)): Expansion of 1/(1 - 3*x)^4; 4-fold convolution of A000244 (powers of 3).
 * [A036217](http://oeis.org/A036217) ([L20 program](036/A036217.asm)): Expansion of 1/(1-3*x)^5; 5-fold convolution of A000244 (powers of 3).
@@ -3452,7 +3455,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040769](http://oeis.org/A040769) ([L25 program](040/A040769.asm)): Continued fraction for sqrt(798).
 * [A040783](http://oeis.org/A040783) ([L26 program](040/A040783.asm)): Continued fraction for sqrt(812).
 * [A040789](http://oeis.org/A040789) ([L25 program](040/A040789.asm)): Continued fraction for sqrt(818).
-* [A040790](http://oeis.org/A040790) ([L81 program](040/A040790.asm)): Continued fraction for sqrt(819).
+* [A040790](http://oeis.org/A040790) ([L38 program](040/A040790.asm)): Continued fraction for sqrt(819).
 * [A040811](http://oeis.org/A040811) ([L12 program](040/A040811.asm)): Continued fraction for sqrt(840).
 * [A040812](http://oeis.org/A040812) ([L03 program](040/A040812.asm)): Continued fraction for sqrt(842).
 * [A040813](http://oeis.org/A040813) ([L05 program](040/A040813.asm)): Continued fraction for sqrt(843).
@@ -3740,7 +3743,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047262](http://oeis.org/A047262) ([L07 program](047/A047262.asm)): Numbers that are congruent to {0, 2, 4, 5} mod 6.
 * [A047263](http://oeis.org/A047263) ([L05 program](047/A047263.asm)): Numbers that are congruent to {0, 1, 2, 4, 5} mod 6.
 * [A047264](http://oeis.org/A047264) ([L05 program](047/A047264.asm)): Numbers that are congruent to 0 or 5 mod 6.
-* [A047266](http://oeis.org/A047266) ([L81 program](047/A047266.asm)): Numbers that are congruent to {0, 1, 5} mod 6.
+* [A047266](http://oeis.org/A047266) ([L12 program](047/A047266.asm)): Numbers that are congruent to {0, 1, 5} mod 6.
 * [A047267](http://oeis.org/A047267) ([L08 program](047/A047267.asm)): Numbers that are congruent to {0, 2, 5} mod 6.
 * [A047268](http://oeis.org/A047268) ([L08 program](047/A047268.asm)): Numbers that are congruent to {1, 2, 5} mod 6.
 * [A047269](http://oeis.org/A047269) ([L06 program](047/A047269.asm)): Numbers that are congruent to {0, 1, 2, 5} mod 6.
@@ -3750,6 +3753,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047274](http://oeis.org/A047274) ([L10 program](047/A047274.asm)): Numbers that are congruent to {0, 1} mod 7.
 * [A047275](http://oeis.org/A047275) ([L07 program](047/A047275.asm)): Numbers that are congruent to {0, 1, 6} mod 7.
 * [A047276](http://oeis.org/A047276) ([L04 program](047/A047276.asm)): Numbers that are congruent to {2, 6} mod 7.
+* [A047277](http://oeis.org/A047277) ([L114 program](047/A047277.asm)): Numbers that are congruent to {0, 2, 6} mod 7.
 * [A047278](http://oeis.org/A047278) ([L11 program](047/A047278.asm)): Numbers that are congruent to {1, 2, 6} mod 7.
 * [A047279](http://oeis.org/A047279) ([L06 program](047/A047279.asm)): Numbers that are congruent to {0, 1, 2, 6} mod 7.
 * [A047280](http://oeis.org/A047280) ([L04 program](047/A047280.asm)): Numbers that are congruent to {3, 6} mod 7.
@@ -3951,7 +3955,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047479](http://oeis.org/A047479) ([L14 program](047/A047479.asm)): Numbers that are congruent to {0, 1, 5, 7} mod 8.
 * [A047480](http://oeis.org/A047480) ([L05 program](047/A047480.asm)): Numbers that are congruent to {2, 5, 7} mod 8.
 * [A047481](http://oeis.org/A047481) ([L08 program](047/A047481.asm)): Numbers that are congruent to {0, 2, 5, 7} mod 8.
-* [A047482](http://oeis.org/A047482) ([L89 program](047/A047482.asm)): Numbers that are congruent to {1, 2, 5, 7} mod 8.
+* [A047482](http://oeis.org/A047482) ([L22 program](047/A047482.asm)): Numbers that are congruent to {1, 2, 5, 7} mod 8.
 * [A047483](http://oeis.org/A047483) ([L15 program](047/A047483.asm)): Numbers that are congruent to {0, 1, 2, 5, 7} mod 8.
 * [A047484](http://oeis.org/A047484) ([L05 program](047/A047484.asm)): Numbers that are congruent to {3, 5, 7} mod 8.
 * [A047485](http://oeis.org/A047485) ([L08 program](047/A047485.asm)): Numbers that are congruent to {0, 3, 5, 7} mod 8.
@@ -3962,7 +3966,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047490](http://oeis.org/A047490) ([L16 program](047/A047490.asm)): Numbers that are congruent to {0, 1, 2, 3, 5, 7} mod 8.
 * [A047491](http://oeis.org/A047491) ([L09 program](047/A047491.asm)): Numbers that are congruent to {4, 5, 7} mod 8.
 * [A047492](http://oeis.org/A047492) ([L10 program](047/A047492.asm)): Numbers that are congruent to {0, 4, 5, 7} mod 8.
-* [A047493](http://oeis.org/A047493) ([L68 program](047/A047493.asm)): Numbers that are congruent to {1, 4, 5, 7} mod 8.
+* [A047493](http://oeis.org/A047493) ([L14 program](047/A047493.asm)): Numbers that are congruent to {1, 4, 5, 7} mod 8.
 * [A047494](http://oeis.org/A047494) ([L13 program](047/A047494.asm)): Numbers that are congruent to {0, 1, 4, 5, 7} mod 8.
 * [A047495](http://oeis.org/A047495) ([L08 program](047/A047495.asm)): Numbers that are congruent to {2, 4, 5, 7} mod 8.
 * [A047496](http://oeis.org/A047496) ([L04 program](047/A047496.asm)): Numbers that are congruent to {0, 2, 4, 5, 7} mod 8.
@@ -4009,7 +4013,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047537](http://oeis.org/A047537) ([L04 program](047/A047537.asm)): Numbers that are congruent to {1, 4, 7} mod 8.
 * [A047538](http://oeis.org/A047538) ([L12 program](047/A047538.asm)): Numbers that are congruent to {0, 1, 4, 7} mod 8.
 * [A047539](http://oeis.org/A047539) ([L04 program](047/A047539.asm)): Numbers that are congruent to {2, 4, 7} mod 8.
-* [A047540](http://oeis.org/A047540) ([L69 program](047/A047540.asm)): Numbers that are congruent to {0, 2, 4, 7} mod 8.
+* [A047540](http://oeis.org/A047540) ([L16 program](047/A047540.asm)): Numbers that are congruent to {0, 2, 4, 7} mod 8.
 * [A047541](http://oeis.org/A047541) ([L09 program](047/A047541.asm)): Numbers that are congruent to {1, 2, 4, 7} mod 8.
 * [A047542](http://oeis.org/A047542) ([L13 program](047/A047542.asm)): Numbers that are congruent to {0, 1, 2, 4, 7} mod 8.
 * [A047543](http://oeis.org/A047543) ([L09 program](047/A047543.asm)): Numbers that are congruent to {3, 4, 7} mod 8.
@@ -4131,7 +4135,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048082](http://oeis.org/A048082) ([L12 program](048/A048082.asm)): Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n+3)/3.
 * [A048151](http://oeis.org/A048151) ([L07 program](048/A048151.asm)): Triangular array T read by rows: T(n,k)=k mod n, for k=1,2,...,n, n=1,2,...
 * [A048260](http://oeis.org/A048260) ([L21 program](048/A048260.asm)): The sum of 2 (not necessarily distinct) abundant numbers.
-* [A048271](http://oeis.org/A048271) ([L20 program](048/A048271.asm)): a(0) = 1, a(n+1) = -3*a(n) mod 11.
+* [A048271](http://oeis.org/A048271) ([L07 program](048/A048271.asm)): a(0) = 1, a(n+1) = -3*a(n) mod 11.
 * [A048298](http://oeis.org/A048298) ([L12 program](048/A048298.asm)): a(n) = n if n=2^i with i=0,1,2,3,...; else a(n) = 0.
 * [A048328](http://oeis.org/A048328) ([L17 program](048/A048328.asm)): Numbers that are repdigits in base 3.
 * [A048329](http://oeis.org/A048329) ([L17 program](048/A048329.asm)): a(n) in base 4 is a repdigit.
@@ -4423,7 +4427,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052928](http://oeis.org/A052928) ([L03 program](052/A052928.asm)): The even numbers repeated.
 * [A052929](http://oeis.org/A052929) ([L07 program](052/A052929.asm)): Expansion of (2-3*x-x^2)/((1-x^2)*(1-3*x)).
 * [A052934](http://oeis.org/A052934) ([L11 program](052/A052934.asm)): Expansion of (1-x)/(1-6*x).
-* [A052935](http://oeis.org/A052935) ([L38 program](052/A052935.asm)): Expansion of (2-2*x-x^3)/((1-2*x)*(1-x^3)).
+* [A052935](http://oeis.org/A052935) ([L25 program](052/A052935.asm)): Expansion of (2-2*x-x^3)/((1-2*x)*(1-x^3)).
 * [A052936](http://oeis.org/A052936) ([L12 program](052/A052936.asm)): Expansion of (1-x)*(1-2*x)/(1-5*x+5*x^2).
 * [A052937](http://oeis.org/A052937) ([L11 program](052/A052937.asm)): Expansion of (2-3*x-x^2)/((1-x)*(1-2*x-x^2)).
 * [A052938](http://oeis.org/A052938) ([L07 program](052/A052938.asm)): Expansion of (1 + 2*x - 2*x^2)/( (1+x)*(1-x)^2 ).
@@ -4575,7 +4579,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054563](http://oeis.org/A054563) ([L07 program](054/A054563.asm)): a(n) = n*(n^2 - 1)*(n + 2)*(n^2 + 4*n + 6)/72.
 * [A054567](http://oeis.org/A054567) ([L06 program](054/A054567.asm)): a(n) = 4*n^2 - 7*n + 4.
 * [A054569](http://oeis.org/A054569) ([L06 program](054/A054569.asm)): a(n) = 4*n^2 - 6*n + 3.
-* [A054580](http://oeis.org/A054580) ([L61 program](054/A054580.asm)): n^2 modulo 17.
+* [A054579](http://oeis.org/A054579) ([L103 program](054/A054579.asm)): n^2+n modulo 17.
+* [A054580](http://oeis.org/A054580) ([L07 program](054/A054580.asm)): n^2 modulo 17.
 * [A054602](http://oeis.org/A054602) ([L04 program](054/A054602.asm)): a(n) = Sum_{d|3} phi(d)*n^(3/d).
 * [A054603](http://oeis.org/A054603) ([L07 program](054/A054603.asm)): a(n) = Sum_{d|4} phi(d)*n^(4/d).
 * [A054604](http://oeis.org/A054604) ([L04 program](054/A054604.asm)): a(n) = Sum_{d|5} phi(d)*n^(5/d).
@@ -4738,6 +4743,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056942](http://oeis.org/A056942) ([L22 program](056/A056942.asm)): Area of rectangle needed to enclose a non-touching spiral of length n on a square lattice.
 * [A056944](http://oeis.org/A056944) ([L09 program](056/A056944.asm)): Amount by which used area of rectangle needed to enclose a non-touching spiral of length n on a square lattice exceeds unused area.
 * [A056991](http://oeis.org/A056991) ([L21 program](056/A056991.asm)): Numbers with digital root 1, 4, 7 or 9.
+* [A056992](http://oeis.org/A056992) ([L63 program](056/A056992.asm)): Digital roots of square numbers A000290.
 * [A057029](http://oeis.org/A057029) ([L17 program](057/A057029.asm)): Central column of arrays in A057027 and A057028.
 * [A057036](http://oeis.org/A057036) ([L07 program](057/A057036.asm)): Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057036(n)=i(2n-1).
 * [A057037](http://oeis.org/A057037) ([L11 program](057/A057037.asm)): Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057037(n)=j(2n-1).
@@ -4811,7 +4817,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A058207](http://oeis.org/A058207) ([L21 program](058/A058207.asm)): Three steps forward, two steps back.
 * [A058212](http://oeis.org/A058212) ([L07 program](058/A058212.asm)): a(n) = 1 + floor(n*(n-3)/6).
 * [A058224](http://oeis.org/A058224) ([L10 program](058/A058224.asm)): Largest d such that the linear programming bound for quantum codes of length n is feasible for some real K>1.
-* [A058281](http://oeis.org/A058281) ([L64 program](058/A058281.asm)): Continued fraction for square root of e.
+* [A058281](http://oeis.org/A058281) ([L13 program](058/A058281.asm)): Continued fraction for square root of e.
 * [A058310](http://oeis.org/A058310) ([L14 program](058/A058310.asm)): (1/2)*(n^2+n+2)*(n^2+3*n+1).
 * [A058319](http://oeis.org/A058319) ([L81 program](058/A058319.asm)): Coefficients (multiplied by 48) in Alternative Extended Simpson's rule for numerical integration.
 * [A058321](http://oeis.org/A058321) ([L06 program](058/A058321.asm)): Number of x such that phi(x) = 2^n.
@@ -5071,7 +5077,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062074](http://oeis.org/A062074) ([L08 program](062/A062074.asm)): n^3 * 3^n.
 * [A062092](http://oeis.org/A062092) ([L13 program](062/A062092.asm)): a(n) = 2*a(n-1)-(-1)^n for n>0, a(0)=2.
 * [A062107](http://oeis.org/A062107) ([L12 program](062/A062107.asm)): Diagonal of table A062104.
-* [A062116](http://oeis.org/A062116) ([L20 program](062/A062116.asm)): a(n) = 2^n mod 17.
+* [A062116](http://oeis.org/A062116) ([L07 program](062/A062116.asm)): a(n) = 2^n mod 17.
 * [A062123](http://oeis.org/A062123) ([L05 program](062/A062123.asm)): a(n) = 2 + 9*n*(1 + n)/2.
 * [A062124](http://oeis.org/A062124) ([L20 program](062/A062124.asm)): Fourth column of A046741.
 * [A062153](http://oeis.org/A062153) ([L03 program](062/A062153.asm)): a(n) = floor(log_3(n)).
@@ -5247,7 +5253,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063758](http://oeis.org/A063758) ([L10 program](063/A063758.asm)): a(0)=1, a(n) = 2*Fibonacci(n+4) - 6.
 * [A063759](http://oeis.org/A063759) ([L09 program](063/A063759.asm)): Spherical growth series for modular group.
 * [A063782](http://oeis.org/A063782) ([L18 program](063/A063782.asm)): a(0) = 1, a(1) = 3; for n > 1, a(n) = 2*a(n-1) + 4*a(n-2).
-* [A063787](http://oeis.org/A063787) ([L43 program](063/A063787.asm)): a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+* [A063787](http://oeis.org/A063787) ([L16 program](063/A063787.asm)): a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
 * [A063808](http://oeis.org/A063808) ([L10 program](063/A063808.asm)): Spherical growth series for Z as generated by {2, 3}.
 * [A063823](http://oeis.org/A063823) ([L05 program](063/A063823.asm)): G.f.: (1-2*x^2-3*x^3)/((1-x^3)*(1-2*x))
 * [A063842](http://oeis.org/A063842) ([L18 program](063/A063842.asm)): Number of colorings of K_4 using at most n colors.
@@ -5502,95 +5508,95 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070189](http://oeis.org/A070189) ([L02 program](070/A070189.asm)): 12345679n.
 * [A070302](http://oeis.org/A070302) ([L11 program](070/A070302.asm)): Number of 3 X 3 X 3 magic cubes with sum 3n.
 * [A070333](http://oeis.org/A070333) ([L29 program](070/A070333.asm)): Expansion of (1+x)*(1-x+x^2)/( (1-x)^4*(1+x+x^2) ).
-* [A070335](http://oeis.org/A070335) ([L20 program](070/A070335.asm)): a(n) = 2^n mod 23.
-* [A070336](http://oeis.org/A070336) ([L20 program](070/A070336.asm)): a(n) = 2^n mod 25.
-* [A070337](http://oeis.org/A070337) ([L20 program](070/A070337.asm)): a(n) = 2^n mod 27.
-* [A070338](http://oeis.org/A070338) ([L20 program](070/A070338.asm)): a(n) = 2^n mod 33.
-* [A070339](http://oeis.org/A070339) ([L20 program](070/A070339.asm)): a(n) = 2^n mod 35.
-* [A070340](http://oeis.org/A070340) ([L20 program](070/A070340.asm)): a(n) = 2^n mod 39.
-* [A070341](http://oeis.org/A070341) ([L23 program](070/A070341.asm)): a(n) = 3^n mod 11: Repeat (1, 3, 9, 5, 4), period 5.
-* [A070342](http://oeis.org/A070342) ([L63 program](070/A070342.asm)): a(n) = 3^n mod 19.
-* [A070343](http://oeis.org/A070343) ([L20 program](070/A070343.asm)): a(n) = 3^n mod 25.
-* [A070344](http://oeis.org/A070344) ([L20 program](070/A070344.asm)): a(n) = 3^n mod 29.
-* [A070345](http://oeis.org/A070345) ([L20 program](070/A070345.asm)): a(n) = 3^n mod 35.
-* [A070346](http://oeis.org/A070346) ([L20 program](070/A070346.asm)): a(n) = 3^n mod 37.
-* [A070348](http://oeis.org/A070348) ([L20 program](070/A070348.asm)): a(n) = 2^n mod 41.
-* [A070349](http://oeis.org/A070349) ([L20 program](070/A070349.asm)): a(n) = 2^n mod 43.
-* [A070350](http://oeis.org/A070350) ([L20 program](070/A070350.asm)): a(n) = 2^n mod 45.
-* [A070351](http://oeis.org/A070351) ([L20 program](070/A070351.asm)): a(n) = 2^n mod 47.
-* [A070352](http://oeis.org/A070352) ([L23 program](070/A070352.asm)): a(n) = 3^n mod 5; or period 4, repeat [1, 3, 4, 2].
-* [A070353](http://oeis.org/A070353) ([L24 program](070/A070353.asm)): a(n) = 3^n mod 14.
-* [A070354](http://oeis.org/A070354) ([L24 program](070/A070354.asm)): a(n) = 3^n mod 16.
-* [A070355](http://oeis.org/A070355) ([L20 program](070/A070355.asm)): a(n) = 3^n mod 22.
-* [A070356](http://oeis.org/A070356) ([L20 program](070/A070356.asm)): a(n) = 3^n mod 23.
-* [A070357](http://oeis.org/A070357) ([L20 program](070/A070357.asm)): a(n) = 3^n mod 28.
-* [A070358](http://oeis.org/A070358) ([L20 program](070/A070358.asm)): a(n) = 3^n mod 32.
-* [A070359](http://oeis.org/A070359) ([L20 program](070/A070359.asm)): a(n) = 3^n mod 34.
-* [A070360](http://oeis.org/A070360) ([L20 program](070/A070360.asm)): a(n) = 3^n mod 38.
-* [A070361](http://oeis.org/A070361) ([L20 program](070/A070361.asm)): a(n) = 3^n mod 41.
-* [A070362](http://oeis.org/A070362) ([L20 program](070/A070362.asm)): a(n) = 3^n mod 44.
-* [A070363](http://oeis.org/A070363) ([L20 program](070/A070363.asm)): a(n) = 3^n mod 46.
-* [A070364](http://oeis.org/A070364) ([L20 program](070/A070364.asm)): a(n) = 3^n mod 47.
+* [A070335](http://oeis.org/A070335) ([L07 program](070/A070335.asm)): a(n) = 2^n mod 23.
+* [A070336](http://oeis.org/A070336) ([L07 program](070/A070336.asm)): a(n) = 2^n mod 25.
+* [A070337](http://oeis.org/A070337) ([L07 program](070/A070337.asm)): a(n) = 2^n mod 27.
+* [A070338](http://oeis.org/A070338) ([L07 program](070/A070338.asm)): a(n) = 2^n mod 33.
+* [A070339](http://oeis.org/A070339) ([L07 program](070/A070339.asm)): a(n) = 2^n mod 35.
+* [A070340](http://oeis.org/A070340) ([L07 program](070/A070340.asm)): a(n) = 2^n mod 39.
+* [A070341](http://oeis.org/A070341) ([L10 program](070/A070341.asm)): a(n) = 3^n mod 11: Repeat (1, 3, 9, 5, 4), period 5.
+* [A070342](http://oeis.org/A070342) ([L14 program](070/A070342.asm)): a(n) = 3^n mod 19.
+* [A070343](http://oeis.org/A070343) ([L07 program](070/A070343.asm)): a(n) = 3^n mod 25.
+* [A070344](http://oeis.org/A070344) ([L07 program](070/A070344.asm)): a(n) = 3^n mod 29.
+* [A070345](http://oeis.org/A070345) ([L07 program](070/A070345.asm)): a(n) = 3^n mod 35.
+* [A070346](http://oeis.org/A070346) ([L07 program](070/A070346.asm)): a(n) = 3^n mod 37.
+* [A070348](http://oeis.org/A070348) ([L07 program](070/A070348.asm)): a(n) = 2^n mod 41.
+* [A070349](http://oeis.org/A070349) ([L07 program](070/A070349.asm)): a(n) = 2^n mod 43.
+* [A070350](http://oeis.org/A070350) ([L07 program](070/A070350.asm)): a(n) = 2^n mod 45.
+* [A070351](http://oeis.org/A070351) ([L07 program](070/A070351.asm)): a(n) = 2^n mod 47.
+* [A070352](http://oeis.org/A070352) ([L10 program](070/A070352.asm)): a(n) = 3^n mod 5; or period 4, repeat [1, 3, 4, 2].
+* [A070353](http://oeis.org/A070353) ([L10 program](070/A070353.asm)): a(n) = 3^n mod 14.
+* [A070354](http://oeis.org/A070354) ([L10 program](070/A070354.asm)): a(n) = 3^n mod 16.
+* [A070355](http://oeis.org/A070355) ([L07 program](070/A070355.asm)): a(n) = 3^n mod 22.
+* [A070356](http://oeis.org/A070356) ([L07 program](070/A070356.asm)): a(n) = 3^n mod 23.
+* [A070357](http://oeis.org/A070357) ([L07 program](070/A070357.asm)): a(n) = 3^n mod 28.
+* [A070358](http://oeis.org/A070358) ([L07 program](070/A070358.asm)): a(n) = 3^n mod 32.
+* [A070359](http://oeis.org/A070359) ([L07 program](070/A070359.asm)): a(n) = 3^n mod 34.
+* [A070360](http://oeis.org/A070360) ([L07 program](070/A070360.asm)): a(n) = 3^n mod 38.
+* [A070361](http://oeis.org/A070361) ([L07 program](070/A070361.asm)): a(n) = 3^n mod 41.
+* [A070362](http://oeis.org/A070362) ([L07 program](070/A070362.asm)): a(n) = 3^n mod 44.
+* [A070363](http://oeis.org/A070363) ([L07 program](070/A070363.asm)): a(n) = 3^n mod 46.
+* [A070364](http://oeis.org/A070364) ([L07 program](070/A070364.asm)): a(n) = 3^n mod 47.
 * [A070365](http://oeis.org/A070365) ([L04 program](070/A070365.asm)): a(n) = 5^n mod 7.
-* [A070366](http://oeis.org/A070366) ([L23 program](070/A070366.asm)): a(n) = 5^n mod 9.
-* [A070367](http://oeis.org/A070367) ([L20 program](070/A070367.asm)): a(n) = 5^n mod 11.
-* [A070368](http://oeis.org/A070368) ([L20 program](070/A070368.asm)): a(n) = 5^n mod 13.
+* [A070366](http://oeis.org/A070366) ([L10 program](070/A070366.asm)): a(n) = 5^n mod 9.
+* [A070367](http://oeis.org/A070367) ([L07 program](070/A070367.asm)): a(n) = 5^n mod 11.
+* [A070368](http://oeis.org/A070368) ([L07 program](070/A070368.asm)): a(n) = 5^n mod 13.
 * [A070369](http://oeis.org/A070369) ([L11 program](070/A070369.asm)): a(n) = 5^n mod 14.
 * [A070370](http://oeis.org/A070370) ([L04 program](070/A070370.asm)): a(n) = 5^n mod 16.
-* [A070372](http://oeis.org/A070372) ([L20 program](070/A070372.asm)): a(n) = 5^n mod 18.
-* [A070373](http://oeis.org/A070373) ([L20 program](070/A070373.asm)): a(n) = 5^n mod 19.
-* [A070374](http://oeis.org/A070374) ([L20 program](070/A070374.asm)): a(n) = 5^n mod 21.
-* [A070375](http://oeis.org/A070375) ([L20 program](070/A070375.asm)): a(n) = 5^n mod 22.
-* [A070376](http://oeis.org/A070376) ([L20 program](070/A070376.asm)): a(n) = 5^n mod 26.
-* [A070377](http://oeis.org/A070377) ([L20 program](070/A070377.asm)): a(n) = 5^n mod 27.
-* [A070378](http://oeis.org/A070378) ([L20 program](070/A070378.asm)): a(n) = 5^n mod 28.
-* [A070379](http://oeis.org/A070379) ([L20 program](070/A070379.asm)): a(n) = 5^n mod 29.
-* [A070380](http://oeis.org/A070380) ([L20 program](070/A070380.asm)): a(n) = 5^n mod 32.
-* [A070381](http://oeis.org/A070381) ([L20 program](070/A070381.asm)): a(n) = 5^n mod 33.
-* [A070382](http://oeis.org/A070382) ([L20 program](070/A070382.asm)): a(n) = 5^n mod 34.
-* [A070383](http://oeis.org/A070383) ([L20 program](070/A070383.asm)): a(n) = 5^n mod 36.
-* [A070384](http://oeis.org/A070384) ([L20 program](070/A070384.asm)): a(n) = 5^n mod 37.
-* [A070385](http://oeis.org/A070385) ([L20 program](070/A070385.asm)): a(n) = 5^n mod 38.
-* [A070386](http://oeis.org/A070386) ([L20 program](070/A070386.asm)): a(n) = 5^n mod 39.
-* [A070387](http://oeis.org/A070387) ([L20 program](070/A070387.asm)): a(n) = 5^n mod 41.
-* [A070388](http://oeis.org/A070388) ([L20 program](070/A070388.asm)): a(n) = 5^n mod 42.
-* [A070389](http://oeis.org/A070389) ([L20 program](070/A070389.asm)): a(n) = 5^n mod 43.
-* [A070390](http://oeis.org/A070390) ([L20 program](070/A070390.asm)): a(n) = 5^n mod 44.
-* [A070391](http://oeis.org/A070391) ([L20 program](070/A070391.asm)): a(n) = 5^n mod 46.
-* [A070392](http://oeis.org/A070392) ([L20 program](070/A070392.asm)): a(n) = 6^n mod 11.
-* [A070393](http://oeis.org/A070393) ([L20 program](070/A070393.asm)): a(n) = 6^n mod 13.
-* [A070395](http://oeis.org/A070395) ([L20 program](070/A070395.asm)): a(n) = 6^n mod 19.
-* [A070396](http://oeis.org/A070396) ([L20 program](070/A070396.asm)): a(n) = 6^n mod 23.
+* [A070372](http://oeis.org/A070372) ([L07 program](070/A070372.asm)): a(n) = 5^n mod 18.
+* [A070373](http://oeis.org/A070373) ([L07 program](070/A070373.asm)): a(n) = 5^n mod 19.
+* [A070374](http://oeis.org/A070374) ([L07 program](070/A070374.asm)): a(n) = 5^n mod 21.
+* [A070375](http://oeis.org/A070375) ([L07 program](070/A070375.asm)): a(n) = 5^n mod 22.
+* [A070376](http://oeis.org/A070376) ([L07 program](070/A070376.asm)): a(n) = 5^n mod 26.
+* [A070377](http://oeis.org/A070377) ([L07 program](070/A070377.asm)): a(n) = 5^n mod 27.
+* [A070378](http://oeis.org/A070378) ([L07 program](070/A070378.asm)): a(n) = 5^n mod 28.
+* [A070379](http://oeis.org/A070379) ([L07 program](070/A070379.asm)): a(n) = 5^n mod 29.
+* [A070380](http://oeis.org/A070380) ([L07 program](070/A070380.asm)): a(n) = 5^n mod 32.
+* [A070381](http://oeis.org/A070381) ([L07 program](070/A070381.asm)): a(n) = 5^n mod 33.
+* [A070382](http://oeis.org/A070382) ([L07 program](070/A070382.asm)): a(n) = 5^n mod 34.
+* [A070383](http://oeis.org/A070383) ([L07 program](070/A070383.asm)): a(n) = 5^n mod 36.
+* [A070384](http://oeis.org/A070384) ([L07 program](070/A070384.asm)): a(n) = 5^n mod 37.
+* [A070385](http://oeis.org/A070385) ([L07 program](070/A070385.asm)): a(n) = 5^n mod 38.
+* [A070386](http://oeis.org/A070386) ([L07 program](070/A070386.asm)): a(n) = 5^n mod 39.
+* [A070387](http://oeis.org/A070387) ([L07 program](070/A070387.asm)): a(n) = 5^n mod 41.
+* [A070388](http://oeis.org/A070388) ([L07 program](070/A070388.asm)): a(n) = 5^n mod 42.
+* [A070389](http://oeis.org/A070389) ([L07 program](070/A070389.asm)): a(n) = 5^n mod 43.
+* [A070390](http://oeis.org/A070390) ([L07 program](070/A070390.asm)): a(n) = 5^n mod 44.
+* [A070391](http://oeis.org/A070391) ([L07 program](070/A070391.asm)): a(n) = 5^n mod 46.
+* [A070392](http://oeis.org/A070392) ([L07 program](070/A070392.asm)): a(n) = 6^n mod 11.
+* [A070393](http://oeis.org/A070393) ([L07 program](070/A070393.asm)): a(n) = 6^n mod 13.
+* [A070395](http://oeis.org/A070395) ([L07 program](070/A070395.asm)): a(n) = 6^n mod 19.
+* [A070396](http://oeis.org/A070396) ([L07 program](070/A070396.asm)): a(n) = 6^n mod 23.
 * [A070397](http://oeis.org/A070397) ([L04 program](070/A070397.asm)): a(n) = 6^n mod 25.
-* [A070398](http://oeis.org/A070398) ([L20 program](070/A070398.asm)): a(n) = 6^n mod 29.
-* [A070399](http://oeis.org/A070399) ([L20 program](070/A070399.asm)): a(n) = 6^n mod 31.
-* [A070400](http://oeis.org/A070400) ([L20 program](070/A070400.asm)): a(n) = 6^n mod 37.
-* [A070401](http://oeis.org/A070401) ([L20 program](070/A070401.asm)): a(n) = 6^n mod 47.
+* [A070398](http://oeis.org/A070398) ([L07 program](070/A070398.asm)): a(n) = 6^n mod 29.
+* [A070399](http://oeis.org/A070399) ([L07 program](070/A070399.asm)): a(n) = 6^n mod 31.
+* [A070400](http://oeis.org/A070400) ([L07 program](070/A070400.asm)): a(n) = 6^n mod 37.
+* [A070401](http://oeis.org/A070401) ([L07 program](070/A070401.asm)): a(n) = 6^n mod 47.
 * [A070402](http://oeis.org/A070402) ([L06 program](070/A070402.asm)): a(n) = 2^n mod 5.
 * [A070403](http://oeis.org/A070403) ([L04 program](070/A070403.asm)): a(n) = 7^n mod 9.
-* [A070404](http://oeis.org/A070404) ([L20 program](070/A070404.asm)): a(n) = 7^n mod 11.
-* [A070405](http://oeis.org/A070405) ([L20 program](070/A070405.asm)): a(n) = 7^n mod 13.
-* [A070406](http://oeis.org/A070406) ([L20 program](070/A070406.asm)): a(n) = 7^n mod 15.
-* [A070408](http://oeis.org/A070408) ([L20 program](070/A070408.asm)): a(n) = 7^n mod 22.
-* [A070409](http://oeis.org/A070409) ([L20 program](070/A070409.asm)): a(n) = 7^n mod 23.
-* [A070410](http://oeis.org/A070410) ([L20 program](070/A070410.asm)): a(n) = 7^n mod 25.
-* [A070411](http://oeis.org/A070411) ([L20 program](070/A070411.asm)): a(n) = 7^n mod 26.
-* [A070412](http://oeis.org/A070412) ([L20 program](070/A070412.asm)): a(n) = 7^n mod 27.
-* [A070413](http://oeis.org/A070413) ([L20 program](070/A070413.asm)): a(n) = 7^n mod 29.
+* [A070404](http://oeis.org/A070404) ([L07 program](070/A070404.asm)): a(n) = 7^n mod 11.
+* [A070405](http://oeis.org/A070405) ([L07 program](070/A070405.asm)): a(n) = 7^n mod 13.
+* [A070406](http://oeis.org/A070406) ([L07 program](070/A070406.asm)): a(n) = 7^n mod 15.
+* [A070408](http://oeis.org/A070408) ([L07 program](070/A070408.asm)): a(n) = 7^n mod 22.
+* [A070409](http://oeis.org/A070409) ([L07 program](070/A070409.asm)): a(n) = 7^n mod 23.
+* [A070410](http://oeis.org/A070410) ([L07 program](070/A070410.asm)): a(n) = 7^n mod 25.
+* [A070411](http://oeis.org/A070411) ([L07 program](070/A070411.asm)): a(n) = 7^n mod 26.
+* [A070412](http://oeis.org/A070412) ([L07 program](070/A070412.asm)): a(n) = 7^n mod 27.
+* [A070413](http://oeis.org/A070413) ([L07 program](070/A070413.asm)): a(n) = 7^n mod 29.
 * [A070414](http://oeis.org/A070414) ([L07 program](070/A070414.asm)): a(n) = 7^n mod 30.
-* [A070415](http://oeis.org/A070415) ([L20 program](070/A070415.asm)): a(n) = 7^n mod 31.
-* [A070416](http://oeis.org/A070416) ([L20 program](070/A070416.asm)): a(n) = 7^n mod 32.
-* [A070417](http://oeis.org/A070417) ([L20 program](070/A070417.asm)): a(n) = 7^n mod 33.
+* [A070415](http://oeis.org/A070415) ([L07 program](070/A070415.asm)): a(n) = 7^n mod 31.
+* [A070416](http://oeis.org/A070416) ([L07 program](070/A070416.asm)): a(n) = 7^n mod 32.
+* [A070417](http://oeis.org/A070417) ([L07 program](070/A070417.asm)): a(n) = 7^n mod 33.
 * [A070419](http://oeis.org/A070419) ([L04 program](070/A070419.asm)): a(n) = 7^n mod 36.
-* [A070420](http://oeis.org/A070420) ([L20 program](070/A070420.asm)): a(n) = 7^n mod 37.
+* [A070420](http://oeis.org/A070420) ([L07 program](070/A070420.asm)): a(n) = 7^n mod 37.
 * [A070421](http://oeis.org/A070421) ([L07 program](070/A070421.asm)): a(n) = 7^n mod 38.
-* [A070422](http://oeis.org/A070422) ([L20 program](070/A070422.asm)): a(n) = 7^n mod 39.
-* [A070423](http://oeis.org/A070423) ([L20 program](070/A070423.asm)): a(n) = 7^n mod 40.
-* [A070424](http://oeis.org/A070424) ([L20 program](070/A070424.asm)): a(n) = 7^n mod 41.
-* [A070425](http://oeis.org/A070425) ([L20 program](070/A070425.asm)): a(n) = 7^n mod 43.
-* [A070426](http://oeis.org/A070426) ([L20 program](070/A070426.asm)): a(n) = 7^n mod 44.
-* [A070427](http://oeis.org/A070427) ([L20 program](070/A070427.asm)): a(n) = 7^n mod 45.
-* [A070429](http://oeis.org/A070429) ([L20 program](070/A070429.asm)): a(n) = 7^n mod 47.
+* [A070422](http://oeis.org/A070422) ([L07 program](070/A070422.asm)): a(n) = 7^n mod 39.
+* [A070423](http://oeis.org/A070423) ([L07 program](070/A070423.asm)): a(n) = 7^n mod 40.
+* [A070424](http://oeis.org/A070424) ([L07 program](070/A070424.asm)): a(n) = 7^n mod 41.
+* [A070425](http://oeis.org/A070425) ([L07 program](070/A070425.asm)): a(n) = 7^n mod 43.
+* [A070426](http://oeis.org/A070426) ([L07 program](070/A070426.asm)): a(n) = 7^n mod 44.
+* [A070427](http://oeis.org/A070427) ([L07 program](070/A070427.asm)): a(n) = 7^n mod 45.
+* [A070429](http://oeis.org/A070429) ([L07 program](070/A070429.asm)): a(n) = 7^n mod 47.
 * [A070430](http://oeis.org/A070430) ([L03 program](070/A070430.asm)): a(n) = n^2 mod 5.
 * [A070431](http://oeis.org/A070431) ([L03 program](070/A070431.asm)): a(n) = n^2 mod 6.
 * [A070432](http://oeis.org/A070432) ([L03 program](070/A070432.asm)): Period 4: repeat [0, 1, 4, 1]; a(n) = n^2 mod 8.
@@ -5605,21 +5611,29 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070441](http://oeis.org/A070441) ([L07 program](070/A070441.asm)): n^2 mod 19.
 * [A070442](http://oeis.org/A070442) ([L04 program](070/A070442.asm)): a(n) = n^2 mod 20.
 * [A070443](http://oeis.org/A070443) ([L05 program](070/A070443.asm)): a(n) = n^2 mod 21.
-* [A070444](http://oeis.org/A070444) ([L62 program](070/A070444.asm)): a(n) = n^2 mod 22.
-* [A070445](http://oeis.org/A070445) ([L102 program](070/A070445.asm)): a(n) = n^2 mod 23.
+* [A070444](http://oeis.org/A070444) ([L15 program](070/A070444.asm)): a(n) = n^2 mod 22.
+* [A070445](http://oeis.org/A070445) ([L07 program](070/A070445.asm)): a(n) = n^2 mod 23.
 * [A070446](http://oeis.org/A070446) ([L03 program](070/A070446.asm)): a(n) = n^2 mod 24.
 * [A070447](http://oeis.org/A070447) ([L03 program](070/A070447.asm)): a(n) = n^2 mod 25.
+* [A070448](http://oeis.org/A070448) ([L102 program](070/A070448.asm)): a(n) = n^2 mod 26.
 * [A070449](http://oeis.org/A070449) ([L03 program](070/A070449.asm)): a(n) = n^2 mod 27.
-* [A070450](http://oeis.org/A070450) ([L102 program](070/A070450.asm)): a(n) = n^2 mod 28.
+* [A070450](http://oeis.org/A070450) ([L07 program](070/A070450.asm)): a(n) = n^2 mod 28.
+* [A070451](http://oeis.org/A070451) ([L91 program](070/A070451.asm)): a(n) = n^2 mod 29.
 * [A070452](http://oeis.org/A070452) ([L03 program](070/A070452.asm)): a(n) = n^2 mod 30.
+* [A070453](http://oeis.org/A070453) ([L87 program](070/A070453.asm)): a(n) = n^2 mod 31.
 * [A070454](http://oeis.org/A070454) ([L08 program](070/A070454.asm)): a(n) = n^2 mod 32.
+* [A070455](http://oeis.org/A070455) ([L83 program](070/A070455.asm)): a(n) = n^2 mod 33.
+* [A070456](http://oeis.org/A070456) ([L85 program](070/A070456.asm)): a(n) = n^2 mod 34.
 * [A070457](http://oeis.org/A070457) ([L07 program](070/A070457.asm)): a(n) = n^2 mod 35.
 * [A070458](http://oeis.org/A070458) ([L03 program](070/A070458.asm)): a(n) = n^2 mod 36.
+* [A070459](http://oeis.org/A070459) ([L75 program](070/A070459.asm)): a(n) = n^2 mod 37.
+* [A070460](http://oeis.org/A070460) ([L77 program](070/A070460.asm)): a(n) = n^2 mod 38.
 * [A070461](http://oeis.org/A070461) ([L03 program](070/A070461.asm)): a(n) = n^2 mod 39.
-* [A070462](http://oeis.org/A070462) ([L82 program](070/A070462.asm)): a(n) = n^2 mod 40.
+* [A070462](http://oeis.org/A070462) ([L07 program](070/A070462.asm)): a(n) = n^2 mod 40.
 * [A070463](http://oeis.org/A070463) ([L03 program](070/A070463.asm)): a(n) = n^2 mod 41.
 * [A070464](http://oeis.org/A070464) ([L19 program](070/A070464.asm)): a(n) = n^2 mod 42.
 * [A070465](http://oeis.org/A070465) ([L06 program](070/A070465.asm)): a(n) = n^2 mod 43.
+* [A070466](http://oeis.org/A070466) ([L49 program](070/A070466.asm)): a(n) = n^2 mod 44.
 * [A070467](http://oeis.org/A070467) ([L03 program](070/A070467.asm)): a(n) = n^2 mod 45.
 * [A070468](http://oeis.org/A070468) ([L09 program](070/A070468.asm)): a(n) = n^2 mod 46.
 * [A070469](http://oeis.org/A070469) ([L05 program](070/A070469.asm)): a(n) = n^2 mod 47.
@@ -5627,19 +5641,41 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070471](http://oeis.org/A070471) ([L03 program](070/A070471.asm)): a(n) = n^3 mod 5.
 * [A070472](http://oeis.org/A070472) ([L03 program](070/A070472.asm)): a(n) = n^3 mod 7.
 * [A070474](http://oeis.org/A070474) ([L03 program](070/A070474.asm)): a(n) = n^3 mod 12, n^5 mod 12.
-* [A070475](http://oeis.org/A070475) ([L82 program](070/A070475.asm)): a(n) = n^3 mod 13.
-* [A070476](http://oeis.org/A070476) ([L83 program](070/A070476.asm)): a(n) = n^3 mod 14.
+* [A070475](http://oeis.org/A070475) ([L06 program](070/A070475.asm)): a(n) = n^3 mod 13.
+* [A070476](http://oeis.org/A070476) ([L06 program](070/A070476.asm)): a(n) = n^3 mod 14.
 * [A070477](http://oeis.org/A070477) ([L04 program](070/A070477.asm)): a(n) = n^3 mod 15.
 * [A070478](http://oeis.org/A070478) ([L03 program](070/A070478.asm)): a(n) = n^3 mod 16.
+* [A070479](http://oeis.org/A070479) ([L53 program](070/A070479.asm)): a(n) = n^3 mod 17.
+* [A070480](http://oeis.org/A070480) ([L51 program](070/A070480.asm)): a(n) = n^3 mod 18.
+* [A070481](http://oeis.org/A070481) ([L49 program](070/A070481.asm)): a(n) = n^3 mod 19.
 * [A070482](http://oeis.org/A070482) ([L04 program](070/A070482.asm)): a(n) = n^3 mod 20.
+* [A070483](http://oeis.org/A070483) ([L47 program](070/A070483.asm)): a(n) = n^3 mod 21.
+* [A070484](http://oeis.org/A070484) ([L45 program](070/A070484.asm)): a(n) = n^3 mod 22.
+* [A070485](http://oeis.org/A070485) ([L43 program](070/A070485.asm)): a(n) = n^3 mod 23.
 * [A070486](http://oeis.org/A070486) ([L03 program](070/A070486.asm)): a(n) = n^3 mod 24 (or equivalently, n^5 mod 24).
-* [A070488](http://oeis.org/A070488) ([L82 program](070/A070488.asm)): a(n) = n^3 mod 26.
+* [A070487](http://oeis.org/A070487) ([L41 program](070/A070487.asm)): a(n) = n^3 mod 25.
+* [A070488](http://oeis.org/A070488) ([L07 program](070/A070488.asm)): a(n) = n^3 mod 26.
+* [A070489](http://oeis.org/A070489) ([L93 program](070/A070489.asm)): a(n) = n^3 mod 27.
+* [A070490](http://oeis.org/A070490) ([L91 program](070/A070490.asm)): a(n) = n^3 mod 28.
+* [A070491](http://oeis.org/A070491) ([L89 program](070/A070491.asm)): a(n) = n^3 mod 29.
+* [A070492](http://oeis.org/A070492) ([L87 program](070/A070492.asm)): a(n) = n^3 mod 30.
+* [A070493](http://oeis.org/A070493) ([L85 program](070/A070493.asm)): a(n) = n^3 mod 31.
+* [A070494](http://oeis.org/A070494) ([L83 program](070/A070494.asm)): a(n) = n^3 mod 32.
+* [A070495](http://oeis.org/A070495) ([L81 program](070/A070495.asm)): a(n) = n^3 mod 33.
+* [A070496](http://oeis.org/A070496) ([L79 program](070/A070496.asm)): a(n) = n^3 mod 34.
+* [A070497](http://oeis.org/A070497) ([L77 program](070/A070497.asm)): a(n) = n^3 mod 35.
+* [A070498](http://oeis.org/A070498) ([L75 program](070/A070498.asm)): a(n) = n^3 mod 36.
+* [A070499](http://oeis.org/A070499) ([L73 program](070/A070499.asm)): a(n) = n^3 mod 37.
 * [A070500](http://oeis.org/A070500) ([L06 program](070/A070500.asm)): a(n) = n^3 mod 38.
 * [A070501](http://oeis.org/A070501) ([L09 program](070/A070501.asm)): a(n) = n^3 mod 39.
+* [A070502](http://oeis.org/A070502) ([L35 program](070/A070502.asm)): a(n) = n^3 mod 40.
 * [A070503](http://oeis.org/A070503) ([L04 program](070/A070503.asm)): a(n) = n^3 mod 41.
 * [A070504](http://oeis.org/A070504) ([L05 program](070/A070504.asm)): a(n) = n^3 mod 42.
+* [A070505](http://oeis.org/A070505) ([L39 program](070/A070505.asm)): a(n) = n^3 mod 43.
 * [A070506](http://oeis.org/A070506) ([L06 program](070/A070506.asm)): a(n) = n^3 mod 44.
+* [A070507](http://oeis.org/A070507) ([L41 program](070/A070507.asm)): a(n) = n^3 mod 45.
 * [A070508](http://oeis.org/A070508) ([L05 program](070/A070508.asm)): a(n) = n^3 mod 46.
+* [A070509](http://oeis.org/A070509) ([L43 program](070/A070509.asm)): a(n) = n^3 mod 47.
 * [A070510](http://oeis.org/A070510) ([L03 program](070/A070510.asm)): a(n) = n^3 mod 48.
 * [A070511](http://oeis.org/A070511) ([L03 program](070/A070511.asm)): a(n) = n^4 mod 6.
 * [A070512](http://oeis.org/A070512) ([L03 program](070/A070512.asm)): a(n) = n^4 mod 7.
@@ -5650,14 +5686,34 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070517](http://oeis.org/A070517) ([L03 program](070/A070517.asm)): a(n) = n^4 mod 13.
 * [A070532](http://oeis.org/A070532) ([L05 program](070/A070532.asm)): a(n) = n^4 mod 14.
 * [A070533](http://oeis.org/A070533) ([L06 program](070/A070533.asm)): n^4 mod 15.
+* [A070534](http://oeis.org/A070534) ([L57 program](070/A070534.asm)): a(n) = n^4 mod 17.
+* [A070535](http://oeis.org/A070535) ([L59 program](070/A070535.asm)): a(n) = n^4 mod 18.
 * [A070538](http://oeis.org/A070538) ([L11 program](070/A070538.asm)): a(n) = n^4 mod 19.
 * [A070539](http://oeis.org/A070539) ([L03 program](070/A070539.asm)): a(n) = n^4 mod 20.
+* [A070540](http://oeis.org/A070540) ([L65 program](070/A070540.asm)): a(n) = n^4 mod 21.
+* [A070541](http://oeis.org/A070541) ([L63 program](070/A070541.asm)): a(n) = n^4 mod 22.
+* [A070551](http://oeis.org/A070551) ([L65 program](070/A070551.asm)): n^4 mod 23.
 * [A070567](http://oeis.org/A070567) ([L04 program](070/A070567.asm)): a(n) = n^4 mod 24.
 * [A070568](http://oeis.org/A070568) ([L03 program](070/A070568.asm)): n^4 mod 25.
+* [A070569](http://oeis.org/A070569) ([L97 program](070/A070569.asm)): n^4 mod 26.
+* [A070570](http://oeis.org/A070570) ([L95 program](070/A070570.asm)): n^4 mod 27.
+* [A070571](http://oeis.org/A070571) ([L97 program](070/A070571.asm)): n^4 mod 28.
+* [A070572](http://oeis.org/A070572) ([L99 program](070/A070572.asm)): n^4 mod 29.
+* [A070573](http://oeis.org/A070573) ([L101 program](070/A070573.asm)): n^4 mod 30.
+* [A070574](http://oeis.org/A070574) ([L103 program](070/A070574.asm)): n^4 mod 31.
+* [A070575](http://oeis.org/A070575) ([L105 program](070/A070575.asm)): n^4 mod 32.
 * [A070576](http://oeis.org/A070576) ([L04 program](070/A070576.asm)): n^4 mod 33.
+* [A070577](http://oeis.org/A070577) ([L65 program](070/A070577.asm)): a(n) = n^4 mod 34.
+* [A070578](http://oeis.org/A070578) ([L79 program](070/A070578.asm)): n^4 mod 35.
+* [A070579](http://oeis.org/A070579) ([L67 program](070/A070579.asm)): n^4 mod 36.
+* [A070580](http://oeis.org/A070580) ([L71 program](070/A070580.asm)): a(n) = n^4 mod 37.
+* [A070581](http://oeis.org/A070581) ([L69 program](070/A070581.asm)): n^4 mod 38.
+* [A070582](http://oeis.org/A070582) ([L71 program](070/A070582.asm)): n^4 mod 39.
+* [A070583](http://oeis.org/A070583) ([L73 program](070/A070583.asm)): n^4 mod 40.
 * [A070584](http://oeis.org/A070584) ([L03 program](070/A070584.asm)): n^4 mod 41.
 * [A070585](http://oeis.org/A070585) ([L04 program](070/A070585.asm)): n^4 mod 42.
 * [A070586](http://oeis.org/A070586) ([L04 program](070/A070586.asm)): a(n) = n^4 mod 43.
+* [A070587](http://oeis.org/A070587) ([L47 program](070/A070587.asm)): n^4 mod 44.
 * [A070588](http://oeis.org/A070588) ([L07 program](070/A070588.asm)): a(n) = n^4 mod 45.
 * [A070589](http://oeis.org/A070589) ([L22 program](070/A070589.asm)): n^4 mod 46.
 * [A070590](http://oeis.org/A070590) ([L06 program](070/A070590.asm)): n^4 mod 47.
@@ -5668,45 +5724,101 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070597](http://oeis.org/A070597) ([L03 program](070/A070597.asm)): Duplicate of A070474.
 * [A070598](http://oeis.org/A070598) ([L03 program](070/A070598.asm)): n^5 mod 13.
 * [A070599](http://oeis.org/A070599) ([L06 program](070/A070599.asm)): n^5 mod 14.
+* [A070601](http://oeis.org/A070601) ([L55 program](070/A070601.asm)): n^5 mod 17.
 * [A070602](http://oeis.org/A070602) ([L03 program](070/A070602.asm)): n^5 mod 18.
+* [A070603](http://oeis.org/A070603) ([L57 program](070/A070603.asm)): n^5 mod 19.
+* [A070604](http://oeis.org/A070604) ([L61 program](070/A070604.asm)): n^5 mod 20.
+* [A070605](http://oeis.org/A070605) ([L59 program](070/A070605.asm)): n^5 mod 21.
+* [A070606](http://oeis.org/A070606) ([L61 program](070/A070606.asm)): n^5 mod 22.
+* [A070607](http://oeis.org/A070607) ([L37 program](070/A070607.asm)): a(n) = n^5 mod 23.
 * [A070608](http://oeis.org/A070608) ([L03 program](070/A070608.asm)): Duplicate of A070486.
+* [A070609](http://oeis.org/A070609) ([L39 program](070/A070609.asm)): a(n) = n^5 mod 25.
 * [A070611](http://oeis.org/A070611) ([L04 program](070/A070611.asm)): n^5 mod 27.
 * [A070612](http://oeis.org/A070612) ([L03 program](070/A070612.asm)): n^5 mod 28.
+* [A070613](http://oeis.org/A070613) ([L101 program](070/A070613.asm)): n^5 mod 29.
+* [A070614](http://oeis.org/A070614) ([L105 program](070/A070614.asm)): a(n) = n^5 mod 31.
+* [A070616](http://oeis.org/A070616) ([L65 program](070/A070616.asm)): n^5 mod 33.
+* [A070617](http://oeis.org/A070617) ([L63 program](070/A070617.asm)): n^5 mod 34.
+* [A070618](http://oeis.org/A070618) ([L61 program](070/A070618.asm)): a(n) = n^5 mod 35.
+* [A070619](http://oeis.org/A070619) ([L59 program](070/A070619.asm)): n^5 mod 36.
+* [A070620](http://oeis.org/A070620) ([L57 program](070/A070620.asm)): a(n) = n^5 mod 37.
+* [A070621](http://oeis.org/A070621) ([L55 program](070/A070621.asm)): a(n) = n^5 mod 38.
 * [A070622](http://oeis.org/A070622) ([L06 program](070/A070622.asm)): a(n) = n^5 mod 39.
 * [A070623](http://oeis.org/A070623) ([L03 program](070/A070623.asm)): n^5 mod 40.
+* [A070624](http://oeis.org/A070624) ([L35 program](070/A070624.asm)): n^5 mod 41.
 * [A070625](http://oeis.org/A070625) ([L04 program](070/A070625.asm)): n^5 mod 42.
+* [A070626](http://oeis.org/A070626) ([L37 program](070/A070626.asm)): n^5 mod 43.
 * [A070627](http://oeis.org/A070627) ([L12 program](070/A070627.asm)): n^5 mod 44.
 * [A070628](http://oeis.org/A070628) ([L03 program](070/A070628.asm)): n^5 mod 45.
+* [A070629](http://oeis.org/A070629) ([L39 program](070/A070629.asm)): n^5 mod 46.
 * [A070630](http://oeis.org/A070630) ([L05 program](070/A070630.asm)): n^5 mod 47.
 * [A070631](http://oeis.org/A070631) ([L03 program](070/A070631.asm)): n^5 mod 48.
-* [A070634](http://oeis.org/A070634) ([L44 program](070/A070634.asm)): n^6 mod 11.
-* [A070636](http://oeis.org/A070636) ([L42 program](070/A070636.asm)): n^6 mod 13.
+* [A070634](http://oeis.org/A070634) ([L05 program](070/A070634.asm)): n^6 mod 11.
+* [A070636](http://oeis.org/A070636) ([L05 program](070/A070636.asm)): n^6 mod 13.
 * [A070637](http://oeis.org/A070637) ([L06 program](070/A070637.asm)): n^6 mod 14.
 * [A070638](http://oeis.org/A070638) ([L03 program](070/A070638.asm)): n^6 mod 15.
+* [A070640](http://oeis.org/A070640) ([L63 program](070/A070640.asm)): n^6 mod 17.
+* [A070641](http://oeis.org/A070641) ([L61 program](070/A070641.asm)): n^6 mod 18.
+* [A070642](http://oeis.org/A070642) ([L59 program](070/A070642.asm)): n^6 mod 19.
 * [A070643](http://oeis.org/A070643) ([L04 program](070/A070643.asm)): Duplicate of A070442.
 * [A070644](http://oeis.org/A070644) ([L07 program](070/A070644.asm)): n^6 mod 21.
+* [A070645](http://oeis.org/A070645) ([L33 program](070/A070645.asm)): n^6 mod 22.
+* [A070646](http://oeis.org/A070646) ([L35 program](070/A070646.asm)): n^6 mod 23.
 * [A070648](http://oeis.org/A070648) ([L03 program](070/A070648.asm)): n^6 mod 25.
+* [A070649](http://oeis.org/A070649) ([L37 program](070/A070649.asm)): n^6 mod 26.
+* [A070650](http://oeis.org/A070650) ([L41 program](070/A070650.asm)): n^6 mod 27.
+* [A070651](http://oeis.org/A070651) ([L39 program](070/A070651.asm)): n^6 mod 28.
+* [A070652](http://oeis.org/A070652) ([L103 program](070/A070652.asm)): n^6 mod 29.
 * [A070653](http://oeis.org/A070653) ([L03 program](070/A070653.asm)): n^6 mod 30.
+* [A070654](http://oeis.org/A070654) ([L107 program](070/A070654.asm)): n^6 mod 31.
+* [A070656](http://oeis.org/A070656) ([L47 program](070/A070656.asm)): a(n) = n^6 mod 33.
+* [A070657](http://oeis.org/A070657) ([L65 program](070/A070657.asm)): n^6 mod 34.
+* [A070658](http://oeis.org/A070658) ([L49 program](070/A070658.asm)): n^6 mod 35.
+* [A070659](http://oeis.org/A070659) ([L51 program](070/A070659.asm)): n^6 mod 36.
 * [A070660](http://oeis.org/A070660) ([L06 program](070/A070660.asm)): n^6 mod 37.
+* [A070661](http://oeis.org/A070661) ([L53 program](070/A070661.asm)): n^6 mod 38.
 * [A070662](http://oeis.org/A070662) ([L03 program](070/A070662.asm)): n^6 mod 39.
 * [A070663](http://oeis.org/A070663) ([L06 program](070/A070663.asm)): n^6 mod 40.
 * [A070664](http://oeis.org/A070664) ([L06 program](070/A070664.asm)): n^6 mod 41.
 * [A070665](http://oeis.org/A070665) ([L05 program](070/A070665.asm)): n^6 mod 42.
 * [A070666](http://oeis.org/A070666) ([L18 program](070/A070666.asm)): n^6 mod 43.
+* [A070684](http://oeis.org/A070684) ([L45 program](070/A070684.asm)): n^6 mod 44.
+* [A070685](http://oeis.org/A070685) ([L43 program](070/A070685.asm)): n^6 mod 45.
 * [A070686](http://oeis.org/A070686) ([L08 program](070/A070686.asm)): n^6 mod 46.
 * [A070687](http://oeis.org/A070687) ([L11 program](070/A070687.asm)): n^6 mod 47.
 * [A070690](http://oeis.org/A070690) ([L03 program](070/A070690.asm)): a(n) = n^7 mod 5.
 * [A070692](http://oeis.org/A070692) ([L03 program](070/A070692.asm)): a(n) = n^7 mod 9.
 * [A070693](http://oeis.org/A070693) ([L04 program](070/A070693.asm)): a(n) = n^7 mod 11.
+* [A070695](http://oeis.org/A070695) ([L19 program](070/A070695.asm)): a(n) = n^7 mod 13.
 * [A070696](http://oeis.org/A070696) ([L02 program](070/A070696.asm)): a(n) = n mod 14.
 * [A070697](http://oeis.org/A070697) ([L04 program](070/A070697.asm)): n^7 mod 15.
 * [A070699](http://oeis.org/A070699) ([L03 program](070/A070699.asm)): a(n) = n^7 mod 17.
+* [A070700](http://oeis.org/A070700) ([L63 program](070/A070700.asm)): a(n) = n^7 mod 18.
+* [A070701](http://oeis.org/A070701) ([L21 program](070/A070701.asm)): a(n) = n^7 mod 19.
 * [A070702](http://oeis.org/A070702) ([L04 program](070/A070702.asm)): a(n) = n^7 mod 20.
+* [A070703](http://oeis.org/A070703) ([L31 program](070/A070703.asm)): a(n) = n^7 mod 22.
+* [A070704](http://oeis.org/A070704) ([L23 program](070/A070704.asm)): a(n) = n^7 mod 23.
+* [A070706](http://oeis.org/A070706) ([L29 program](070/A070706.asm)): a(n) = n^7 mod 25.
+* [A070707](http://oeis.org/A070707) ([L27 program](070/A070707.asm)): n^7 mod 26.
+* [A070708](http://oeis.org/A070708) ([L25 program](070/A070708.asm)): n^7 mod 27.
 * [A070709](http://oeis.org/A070709) ([L03 program](070/A070709.asm)): n^7 mod 28.
+* [A070710](http://oeis.org/A070710) ([L105 program](070/A070710.asm)): n^7 mod 29.
+* [A070711](http://oeis.org/A070711) ([L87 program](070/A070711.asm)): n^7 mod 30.
+* [A070712](http://oeis.org/A070712) ([L27 program](070/A070712.asm)): n^7 mod 31.
+* [A070714](http://oeis.org/A070714) ([L45 program](070/A070714.asm)): n^7 mod 33.
+* [A070715](http://oeis.org/A070715) ([L43 program](070/A070715.asm)): n^7 mod 34.
+* [A070716](http://oeis.org/A070716) ([L29 program](070/A070716.asm)): n^7 mod 35.
+* [A070717](http://oeis.org/A070717) ([L41 program](070/A070717.asm)): a(n) = n^7 mod 36.
+* [A070718](http://oeis.org/A070718) ([L39 program](070/A070718.asm)): n^7 mod 37.
+* [A070719](http://oeis.org/A070719) ([L37 program](070/A070719.asm)): n^7 mod 38.
+* [A070720](http://oeis.org/A070720) ([L31 program](070/A070720.asm)): n^7 mod 39.
 * [A070721](http://oeis.org/A070721) ([L03 program](070/A070721.asm)): n^7 mod 40.
+* [A070722](http://oeis.org/A070722) ([L33 program](070/A070722.asm)): a(n) = n^7 mod 41.
 * [A070723](http://oeis.org/A070723) ([L08 program](070/A070723.asm)): n^7 mod 43.
 * [A070724](http://oeis.org/A070724) ([L08 program](070/A070724.asm)): n^7 mod 44.
 * [A070725](http://oeis.org/A070725) ([L03 program](070/A070725.asm)): n^7 mod 45.
+* [A070726](http://oeis.org/A070726) ([L41 program](070/A070726.asm)): a(n) = n^7 mod 46.
+* [A070727](http://oeis.org/A070727) ([L43 program](070/A070727.asm)): n^7 mod 47.
 * [A070728](http://oeis.org/A070728) ([L06 program](070/A070728.asm)): n^7 mod 48.
 * [A070824](http://oeis.org/A070824) ([L35 program](070/A070824.asm)): Number of divisors of n which are > 1 and < n (nontrivial divisors).
 * [A070875](http://oeis.org/A070875) ([L11 program](070/A070875.asm)): Binary expansion is 1x100...0 where x = 0 or 1.
@@ -6512,7 +6624,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084381](http://oeis.org/A084381) ([L03 program](084/A084381.asm)): a(n) = n^3 + 5.
 * [A084382](http://oeis.org/A084382) ([L03 program](084/A084382.asm)): a(n) = n^3 + 6.
 * [A084477](http://oeis.org/A084477) ([L15 program](084/A084477.asm)): Number of fault-free tilings of a 4 X 3n rectangle with right trominoes.
-* [A084505](http://oeis.org/A084505) ([L52 program](084/A084505.asm)): Partial sums of A084506.
+* [A084505](http://oeis.org/A084505) ([L25 program](084/A084505.asm)): Partial sums of A084506.
 * [A084506](http://oeis.org/A084506) ([L10 program](084/A084506.asm)): The length of each successively larger 3-ball ground-state site swap given in A084501, i.e., the number of digits in each term of A084502.
 * [A084508](http://oeis.org/A084508) ([L11 program](084/A084508.asm)): Partial sums of A084509. Positions of ones in the first differences of A084506.
 * [A084509](http://oeis.org/A084509) ([L12 program](084/A084509.asm)): Number of ground-state 3-ball juggling sequences of period n.
@@ -6674,6 +6786,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086972](http://oeis.org/A086972) ([L10 program](086/A086972.asm)): a(n) = n*3^(n-1) + (3^n+1)/2.
 * [A087009](http://oeis.org/A087009) ([L13 program](087/A087009.asm)): Least m such that omega(m) + Omega(m) = n, or 0 if no such m exists.
 * [A087035](http://oeis.org/A087035) ([L21 program](087/A087035.asm)): Maximum value taken on by f(P)=sum(i=1..n, p(i)*p(n+1-i) ) as {p(1),p(2),...,p(n)} ranges over all permutations P of {1,2,3,...n}.
+* [A087056](http://oeis.org/A087056) ([L22 program](087/A087056.asm)): Difference between 2 * n^2 and the next smaller square number.
 * [A087057](http://oeis.org/A087057) ([L23 program](087/A087057.asm)): Smallest number whose square is larger than 2*n^2.
 * [A087069](http://oeis.org/A087069) ([L04 program](087/A087069.asm)): a(n) = Sum_{k >= 0} floor(n/(4^k)).
 * [A087076](http://oeis.org/A087076) ([L11 program](087/A087076.asm)): Sums of the squares of the elements in the subsets of the integers 1 to n.
@@ -6709,7 +6822,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087446](http://oeis.org/A087446) ([L05 program](087/A087446.asm)): Numbers that are congruent to {1, 6} mod 15.
 * [A087447](http://oeis.org/A087447) ([L09 program](087/A087447.asm)): a(0) = a(1) = 1; for n>1, a(n) = (n+2)*2^(n-2).
 * [A087448](http://oeis.org/A087448) ([L10 program](087/A087448.asm)): 3^(n-1)(n+3)/2-(n-1)/2.
-* [A087449](http://oeis.org/A087449) ([L10 program](087/A087449.asm)): a(n) = n * 4^(n-1) + (2*4^n + 1) / 3.
+* [A087449](http://oeis.org/A087449) ([L15 program](087/A087449.asm)): a(n) = n * 4^(n-1) + (2*4^n + 1) / 3.
 * [A087475](http://oeis.org/A087475) ([L03 program](087/A087475.asm)): a(n) = n^2 + 4.
 * [A087483](http://oeis.org/A087483) ([L05 program](087/A087483.asm)): Row 0 of the order array of 3/2, i.e., row 0 of the transposable dispersion in A087465.
 * [A087503](http://oeis.org/A087503) ([L11 program](087/A087503.asm)): a(n) = 3(a(n-2) + 1), with a(0) = 1, a(1) = 3.
@@ -7299,7 +7412,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099431](http://oeis.org/A099431) ([L08 program](099/A099431.asm)): Expansion of x(1-2x+3x^2)/(1-x-2x)^2;.
 * [A099479](http://oeis.org/A099479) ([L06 program](099/A099479.asm)): Count, repeating 4n three times for n > 0.
 * [A099480](http://oeis.org/A099480) ([L07 program](099/A099480.asm)): Count from 1, repeating 2n five times.
-* [A099485](http://oeis.org/A099485) ([L111 program](099/A099485.asm)): A Fibonacci convolution.
+* [A099485](http://oeis.org/A099485) ([L24 program](099/A099485.asm)): A Fibonacci convolution.
 * [A099511](http://oeis.org/A099511) ([L27 program](099/A099511.asm)): Row sums of triangle A099510, so that a(n) = Sum_{k=0..n} coefficient of z^k in (1 + 2*z + z^2)^(n-[k/2]), where [k/2] is the integer floor of k/2.
 * [A099563](http://oeis.org/A099563) ([L15 program](099/A099563.asm)): a(0) = 0; for n > 0, a(n) = final nonzero number in the sequence n, f(n,2), f(f(n,2),3), f(f(f(n,2),3),4),..., where f(n,d) = floor(n/d); the most significant digit in the factorial base representation of n.
 * [A099578](http://oeis.org/A099578) ([L07 program](099/A099578.asm)): a(n) = binomial(floor((3n+2)/2), floor(n/2)).

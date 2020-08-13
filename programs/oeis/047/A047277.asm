@@ -1,117 +1,29 @@
 ; A047277: Numbers that are congruent to {0, 2, 6} mod 7.
 ; 0,2,6,7,9,13,14,16,20,21,23,27,28,30,34,35,37,41,42,44,48,49,51,55,56,58,62,63,65,69,70,72,76,77,79,83,84,86,90,91,93,97,98,100,104,105,107,111,112,114,118,119,121,125,126,128,132,133,135,139,140
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
-  mov $9,1
-  mov $8,1
-  mov $10,1
-  mov $3,3
-  add $3,$0
-  mov $4,$0
-  mov $6,2
-  add $8,$0
-  div $3,$6
-  mov $7,1
-  log $6,5
+mov $9,$0
+mov $5,$0
+lpb $5,1
+  sub $5,1
+  mov $0,$9
+  sub $0,$5
+  mov $6,1
   mod $0,3
-  mul $6,$4
   mul $0,2
-  mov $9,$0
-  mov $1,1
-  add $9,4
-  add $7,$10
-  add $6,$4
-  add $6,$8
-  mov $1,3
-  div $3,2
-  sub $7,1
-  add $3,$3
-  mov $4,18
-  mov $2,3
-  mov $4,$3
-  mov $4,$9
-  mov $5,$4
   mov $4,$0
-  sub $5,$1
-  add $0,$6
-  mov $7,4
-  add $1,5
-  add $9,$5
-  mul $5,$8
-  mov $5,$7
-  mov $7,1
-  sub $4,$10
-  sub $7,$4
-  mov $6,$9
-  add $2,$3
-  mul $1,$1
-  mul $0,$3
-  mov $2,1
-  add $8,$3
-  fac $10
+  sub $4,$6
   lpb $0,1
     sub $0,1
-    sub $5,1
-    add $6,5
-    mov $7,$0
-    mov $3,$10
+    mov $3,$6
   lpe
-  sub $7,2
-  add $9,$1
   mov $7,2
-  mov $8,$7
-  mov $2,$6
-  mov $1,1
-  add $0,1
   add $4,$3
-  mov $2,5
-  mov $6,1
-  mov $6,1
-  mov $3,$4
-  mov $8,2
-  mov $3,$3
-  sub $10,$1
-  mov $10,1
-  mov $10,1
   mov $2,$4
   add $2,$7
-  mov $4,$3
-  mov $4,9
-  mov $1,3
-  mov $8,$5
-  add $0,$5
-  mov $3,$1
-  mov $4,2
-  add $5,$6
-  div $5,$3
-  mul $3,5
-  mov $3,2
-  mov $7,$9
-  add $5,1
-  div $8,2
-  mov $5,$1
-  mul $1,$0
-  mov $6,4
-  mov $9,12
   mul $2,3
-  mov $3,$5
-  sub $6,$5
-  mov $9,$6
-  mov $10,1
-  add $0,5
-  sub $9,$2
-  sub $0,$8
-  add $7,1
   mov $1,$2
   sub $1,6
   div $1,3
-  add $12,$1
+  add $8,$1
 lpe
-mov $1,$12
+mov $1,$8

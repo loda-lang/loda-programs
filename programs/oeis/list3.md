@@ -19,6 +19,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300523](http://oeis.org/A300523) ([L31 program](300/A300523.asm)): a(n) = (5*n + 5)*(5*n + 6)*(5*n + 7)/6.
 * [A300576](http://oeis.org/A300576) ([L09 program](300/A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300622](http://oeis.org/A300622) ([L12 program](300/A300622.asm)): Denominators of sequence whose exponential self-convolution yields sequence 1, 2, 3, 5, 7, 11, 13, ... (1 with primes).
+* [A300659](http://oeis.org/A300659) ([L80 program](300/A300659.asm)): Product of digits of n!.
 * [A300758](http://oeis.org/A300758) ([L07 program](300/A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
 * [A300846](http://oeis.org/A300846) ([L08 program](300/A300846.asm)): a(n) = 3*(n - 1)^2*n^3.
 * [A300847](http://oeis.org/A300847) ([L03 program](300/A300847.asm)): a(n) = 12*binomial(n, 5).
@@ -245,6 +246,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305548](http://oeis.org/A305548) ([L02 program](305/A305548.asm)): a(n) = 27*n.
 * [A305750](http://oeis.org/A305750) ([L22 program](305/A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
 * [A305753](http://oeis.org/A305753) ([L12 program](305/A305753.asm)): A base 3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
+* [A305859](http://oeis.org/A305859) ([L24 program](305/A305859.asm)): Numbers that are congruent to {1, 3, 11} mod 12.
 * [A305861](http://oeis.org/A305861) ([L12 program](305/A305861.asm)): a(n) = 32*3^n - 2^(n+5) + 5.
 * [A305880](http://oeis.org/A305880) ([L06 program](305/A305880.asm)): A base 3/2 reverse sorted Fibonacci sequence that starts with terms 2211 and 2211. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the digits into decreasing order, omitting all zeros.
 * [A306262](http://oeis.org/A306262) ([L12 program](306/A306262.asm)): Difference between maximum and minimum sum of products of successive pairs in permutations of [n].
@@ -269,6 +271,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307304](http://oeis.org/A307304) ([L40 program](307/A307304.asm)): Number of inequivalent ways of placing 2 nonattacking rooks on n X n board up to rotations and reflections of the board.
 * [A307465](http://oeis.org/A307465) ([L48 program](307/A307465.asm)): Number of Catalan words of length n avoiding the pattern 110.
 * [A307469](http://oeis.org/A307469) ([L15 program](307/A307469.asm)): a(n) = 2*a(n-1) + 6*a(n-2) for n >= 2, a(0) = 1, a(1) = 5.
+* [A307513](http://oeis.org/A307513) ([L50 program](307/A307513.asm)): Beatty sequence for 1/log(2).
 * [A307559](http://oeis.org/A307559) ([L12 program](307/A307559.asm)): a(n) = floor(n/3)*(n - floor(n/3))*(n - floor(n/3) - 1).
 * [A307613](http://oeis.org/A307613) ([L14 program](307/A307613.asm)): Inverse of the permutation A307485: one odd, two even, four odd, eight even, etc; extended with a(0) = 0.
 * [A307621](http://oeis.org/A307621) ([L14 program](307/A307621.asm)): Number of cycles in the n-dipyramidal graph.
@@ -314,7 +317,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309372](http://oeis.org/A309372) ([L11 program](309/A309372.asm)): a(n) = n^2 - n^3 + n^4.
 * [A309398](http://oeis.org/A309398) ([L22 program](309/A309398.asm)): a(n) is the nearest integer to log(log(10^n)).
 * [A309434](http://oeis.org/A309434) ([L45 program](309/A309434.asm)): a(n) = floor(n*Im(2*e^(i*Pi/5))/(Im(2*e^(i*Pi/5)) - 1)).
-* [A309674](http://oeis.org/A309674) ([L100 program](309/A309674.asm)): a(1) = 1, a(n) = hamming_weight(Sum_{k=1..n-1} a(k) ) for n>=2.
+* [A309674](http://oeis.org/A309674) ([L31 program](309/A309674.asm)): a(1) = 1, a(n) = hamming_weight(Sum_{k=1..n-1} a(k) ) for n>=2.
 * [A309683](http://oeis.org/A309683) ([L20 program](309/A309683.asm)): Number of odd parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309684](http://oeis.org/A309684) ([L29 program](309/A309684.asm)): Sum of the odd parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309685](http://oeis.org/A309685) ([L06 program](309/A309685.asm)): Number of even parts appearing among the smallest parts of the partitions of n into 3 parts.
@@ -546,7 +549,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316466](http://oeis.org/A316466) ([L06 program](316/A316466.asm)): a(n) = 2*n*(7*n - 3).
 * [A316533](http://oeis.org/A316533) ([L23 program](316/A316533.asm)): a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
 * [A316562](http://oeis.org/A316562) ([L09 program](316/A316562.asm)): Koechel number for the works of W. A. Mozart rounded from age 11.
-* [A316571](http://oeis.org/A316571) ([L07 program](316/A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
+* [A316571](http://oeis.org/A316571) ([L10 program](316/A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
 * [A316671](http://oeis.org/A316671) ([L10 program](316/A316671.asm)): Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
 * [A316724](http://oeis.org/A316724) ([L20 program](316/A316724.asm)): Generalized 26-gonal (or icosihexagonal) numbers: m*(12*m - 11) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A316725](http://oeis.org/A316725) ([L22 program](316/A316725.asm)): Generalized 27-gonal (or icosiheptagonal) numbers: m*(25*m - 23)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
@@ -884,7 +887,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330983](http://oeis.org/A330983) ([L29 program](330/A330983.asm)): Alternatively add and multiply pairs of the nonnegative integers.
 * [A330987](http://oeis.org/A330987) ([L18 program](330/A330987.asm)): Alternatively add and half-multiply pairs of the nonnegative integers.
 * [A331190](http://oeis.org/A331190) ([L05 program](331/A331190.asm)): Expansion of (-5*(9 - 6*x + 2*x^2))/(-1 + x)^3.
-* [A331321](http://oeis.org/A331321) ([L60 program](331/A331321.asm)): a(n) = [x^n] ((x^2 - 1)*(x^2 + x - 1))/(x^2 + 2*x - 1)^2.
+* [A331321](http://oeis.org/A331321) ([L33 program](331/A331321.asm)): a(n) = [x^n] ((x^2 - 1)*(x^2 + x - 1))/(x^2 + 2*x - 1)^2.
 * [A331347](http://oeis.org/A331347) ([L15 program](331/A331347.asm)): Number of permutations w in S_n that form Boolean intervals [s, w] in the Bruhat order for every simple reflection s in the support of w.
 * [A331390](http://oeis.org/A331390) ([L71 program](331/A331390.asm)): Number of binary matrices with 3 distinct columns and any number of nonzero rows with n ones in every column and rows in nonincreasing lexicographic order.
 * [A331429](http://oeis.org/A331429) ([L55 program](331/A331429.asm)): Expansion of x^2*(10-5*x+x^2)/((1-x)^4*(1-x^2)).
@@ -942,6 +945,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336535](http://oeis.org/A336535) ([L13 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
 * [A336627](http://oeis.org/A336627) ([L43 program](336/A336627.asm)): Coordination sequence for the Manhattan lattice.
 * [A336705](http://oeis.org/A336705) ([L42 program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
-* [A336819](http://oeis.org/A336819) ([L105 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
-* [A336867](http://oeis.org/A336867) ([L71 program](336/A336867.asm)): Numbers n such that n! does not have distinct prime multiplicities.
-* [A336868](http://oeis.org/A336868) ([L73 program](336/A336868.asm)): Indicator function for numbers n such that n! has distinct prime multiplicities.
+* [A336819](http://oeis.org/A336819) ([L16 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
+* [A336867](http://oeis.org/A336867) ([L42 program](336/A336867.asm)): Numbers n such that n! does not have distinct prime multiplicities.
+* [A336868](http://oeis.org/A336868) ([L17 program](336/A336868.asm)): Indicator function for numbers n such that n! has distinct prime multiplicities.
