@@ -12,14 +12,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300290](http://oeis.org/A300290) ([L08 program](300/A300290.asm)): Period 6: repeat [0, 1, 2, 2, 3, 3].
 * [A300293](http://oeis.org/A300293) ([L31 program](300/A300293.asm)): A sequence based on the period 6 sequence A151899.
 * [A300402](http://oeis.org/A300402) ([L06 program](300/A300402.asm)): Smallest integer i such that TREE(i) >= n.
-* [A300403](http://oeis.org/A300403) ([L08 program](300/A300403.asm)): Smallest integer i such that SSCG(i) >= n.
+* [A300403](http://oeis.org/A300403) ([L06 program](300/A300403.asm)): Smallest integer i such that SSCG(i) >= n.
 * [A300404](http://oeis.org/A300404) ([L05 program](300/A300404.asm)): Smallest integer k such that the largest term in the Goodstein sequence starting at k is > n.
 * [A300451](http://oeis.org/A300451) ([L18 program](300/A300451.asm)): a(n) = (3*n^2 - 3*n + 8)*2^(n - 3).
 * [A300522](http://oeis.org/A300522) ([L42 program](300/A300522.asm)): a(n) = (5*n + 3)*(5*n + 4)*(5*n + 5)/6.
 * [A300523](http://oeis.org/A300523) ([L31 program](300/A300523.asm)): a(n) = (5*n + 5)*(5*n + 6)*(5*n + 7)/6.
 * [A300576](http://oeis.org/A300576) ([L09 program](300/A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300622](http://oeis.org/A300622) ([L12 program](300/A300622.asm)): Denominators of sequence whose exponential self-convolution yields sequence 1, 2, 3, 5, 7, 11, 13, ... (1 with primes).
-* [A300659](http://oeis.org/A300659) ([L80 program](300/A300659.asm)): Product of digits of n!.
+* [A300659](http://oeis.org/A300659) ([L47 program](300/A300659.asm)): Product of digits of n!.
 * [A300758](http://oeis.org/A300758) ([L07 program](300/A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
 * [A300846](http://oeis.org/A300846) ([L08 program](300/A300846.asm)): a(n) = 3*(n - 1)^2*n^3.
 * [A300847](http://oeis.org/A300847) ([L03 program](300/A300847.asm)): a(n) = 12*binomial(n, 5).
@@ -161,7 +161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304514](http://oeis.org/A304514) ([L05 program](304/A304514.asm)): a(n) = 33*2^n - 45 (n>=1).
 * [A304515](http://oeis.org/A304515) ([L05 program](304/A304515.asm)): a(n) = 159*2^n - 222 (n>=1).
 * [A304516](http://oeis.org/A304516) ([L05 program](304/A304516.asm)): a(n) = 192*2^n - 273 (n>=1).
-* [A304517](http://oeis.org/A304517) ([L05 program](304/A304517.asm)): a(n) = 16*2^n - 11 (n>=1).
+* [A304517](http://oeis.org/A304517) ([L04 program](304/A304517.asm)): a(n) = 16*2^n - 11 (n>=1).
 * [A304518](http://oeis.org/A304518) ([L05 program](304/A304518.asm)): a(n) = 68*2^n - 50 (n>=1).
 * [A304519](http://oeis.org/A304519) ([L05 program](304/A304519.asm)): a(n) = 72*2^n -56 (n>=1).
 * [A304579](http://oeis.org/A304579) ([L05 program](304/A304579.asm)): a(n) = (n^2 + 1)*(n^2 + 2).
@@ -246,7 +246,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305548](http://oeis.org/A305548) ([L02 program](305/A305548.asm)): a(n) = 27*n.
 * [A305750](http://oeis.org/A305750) ([L22 program](305/A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
 * [A305753](http://oeis.org/A305753) ([L12 program](305/A305753.asm)): A base 3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
-* [A305859](http://oeis.org/A305859) ([L24 program](305/A305859.asm)): Numbers that are congruent to {1, 3, 11} mod 12.
+* [A305859](http://oeis.org/A305859) ([L11 program](305/A305859.asm)): Numbers that are congruent to {1, 3, 11} mod 12.
 * [A305861](http://oeis.org/A305861) ([L12 program](305/A305861.asm)): a(n) = 32*3^n - 2^(n+5) + 5.
 * [A305880](http://oeis.org/A305880) ([L06 program](305/A305880.asm)): A base 3/2 reverse sorted Fibonacci sequence that starts with terms 2211 and 2211. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the digits into decreasing order, omitting all zeros.
 * [A306262](http://oeis.org/A306262) ([L12 program](306/A306262.asm)): Difference between maximum and minimum sum of products of successive pairs in permutations of [n].
@@ -271,7 +271,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307304](http://oeis.org/A307304) ([L40 program](307/A307304.asm)): Number of inequivalent ways of placing 2 nonattacking rooks on n X n board up to rotations and reflections of the board.
 * [A307465](http://oeis.org/A307465) ([L48 program](307/A307465.asm)): Number of Catalan words of length n avoiding the pattern 110.
 * [A307469](http://oeis.org/A307469) ([L15 program](307/A307469.asm)): a(n) = 2*a(n-1) + 6*a(n-2) for n >= 2, a(0) = 1, a(1) = 5.
-* [A307513](http://oeis.org/A307513) ([L50 program](307/A307513.asm)): Beatty sequence for 1/log(2).
+* [A307513](http://oeis.org/A307513) ([L35 program](307/A307513.asm)): Beatty sequence for 1/log(2).
 * [A307559](http://oeis.org/A307559) ([L12 program](307/A307559.asm)): a(n) = floor(n/3)*(n - floor(n/3))*(n - floor(n/3) - 1).
 * [A307613](http://oeis.org/A307613) ([L14 program](307/A307613.asm)): Inverse of the permutation A307485: one odd, two even, four odd, eight even, etc; extended with a(0) = 0.
 * [A307621](http://oeis.org/A307621) ([L14 program](307/A307621.asm)): Number of cycles in the n-dipyramidal graph.
