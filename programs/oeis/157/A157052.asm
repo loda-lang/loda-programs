@@ -1,0 +1,67 @@
+; A157052: Number of integer sequences of length n+1 with sum zero and sum of absolute values 6.
+; 2,18,92,340,1010,2562,5768,11832,22530,40370,68772,112268,176722,269570,400080,579632,822018,1143762,1564460,2107140,2798642,3670018,4756952,6100200,7746050,9746802,12161268,15055292,18502290,22583810,27390112,33020768,39585282
+
+mov $6,$0
+mov $1,2
+mov $3,1
+mov $3,2
+mov $2,1
+add $6,2
+mul $2,$6
+mov $6,1
+pow $3,$1
+mov $6,$6
+sub $0,$2
+mov $1,$0
+add $0,4
+mov $1,6
+mov $0,$6
+mov $4,$0
+mov $5,$4
+mov $5,$2
+sub $2,$6
+add $0,7
+mov $6,3
+mov $2,1
+sub $4,15
+bin $5,2
+mov $6,$1
+sub $6,3
+mov $6,2
+sub $3,2
+mov $0,$0
+add $5,4
+sub $5,1
+mov $1,$0
+lpb $0,1
+  mov $4,$5
+  mul $3,$6
+  mov $6,$1
+  mov $0,3
+  pow $2,4
+  add $4,$3
+  mul $3,2
+  pow $6,8
+  mov $3,$5
+  sub $4,$1
+  mov $6,1
+  mul $4,$5
+  mul $3,5
+  sub $6,1
+  sub $0,$3
+  add $6,1
+  mov $3,$3
+  mov $1,$1
+  sub $0,1
+  mov $6,2
+  mul $4,$3
+lpe
+mov $2,$6
+mul $2,$2
+add $1,5
+add $3,1
+add $6,$2
+mov $1,$4
+div $1,45
+mul $1,2
+add $1,2

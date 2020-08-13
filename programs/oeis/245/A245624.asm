@@ -1,0 +1,86 @@
+; A245624: Sequence of distinct least positive numbers such that the average of the first n terms is a cube.
+; 1,15,8,84,27,249,64,552,125,1035,216,1740,343,2709,512,3984,729,5607,1000,7620,1331,10065,1728,12984,2197,16419,2744,20412,3375,25005,4096,30240,4913,36159,5832,42804,6859,50217,8000,58440,9261,67515,10648,77484,12167,88389,13824
+
+mov $7,$0
+mov $9,2
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  add $0,$9
+  sub $0,1
+  mov $6,$0
+  mov $4,3
+  mov $3,2
+  add $4,$6
+  mov $2,$6
+  mov $0,$6
+  mul $3,$2
+  mov $5,1
+  sub $5,20
+  add $5,$0
+  mov $1,1
+  add $0,$1
+  mov $2,3
+  div $4,2
+  sub $6,$5
+  add $6,1
+  add $5,$0
+  sub $0,$0
+  sub $6,$4
+  mov $3,$4
+  mov $6,3
+  mov $2,2
+  add $1,1
+  mov $0,$4
+  mov $3,$2
+  add $0,$5
+  add $1,1
+  sub $6,4
+  mov $0,3
+  lpb $0,1
+    sub $0,1
+    mov $4,$6
+    gcd $2,2
+    mov $1,$3
+    sub $4,1
+    add $0,1
+    add $3,$6
+    pow $4,$2
+    sub $5,2
+    mov $5,899
+    add $6,6
+    mov $0,17
+    mov $4,3
+    add $6,$3
+    sub $5,1
+    mov $1,1
+    mov $0,1
+    add $3,1
+    mov $5,$1
+    add $0,$3
+    mov $5,1
+  lpe
+  add $5,1
+  mov $2,8
+  pow $4,$0
+  mov $6,1
+  mov $6,$0
+  mul $5,$4
+  div $4,$4
+  mul $1,2
+  mov $1,$5
+  mov $10,$9
+  lpb $10,1
+    mov $8,$1
+    sub $10,1
+  lpe
+lpe
+lpb $7,1
+  sub $8,$1
+  mov $7,0
+lpe
+mov $1,$8
+sub $1,2
+div $1,2
+add $1,1
