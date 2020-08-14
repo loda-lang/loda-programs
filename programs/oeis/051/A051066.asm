@@ -3,9 +3,7 @@
 
 mov $3,$0
 mov $5,$0
-add $5,1
 lpb $5,1
-  clr $0,3
   sub $5,1
   mov $0,$3
   sub $0,$5
@@ -14,18 +12,10 @@ lpb $5,1
   lpb $0,1
     add $2,$1
     div $1,3
-    sub $0,1
-    add $0,$0
-    add $0,$2
     mov $0,$1
   lpe
-  add $0,$2
   gcd $2,2
-  mov $2,$2
-  mov $0,1
-  mul $0,$0
   mov $1,12
-  add $0,$1
   mov $0,3
   pow $0,$1
   mul $0,$2

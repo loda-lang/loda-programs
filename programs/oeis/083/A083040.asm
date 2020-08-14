@@ -1,0 +1,86 @@
+; A083040: Number of divisors of n that are <= 4
+; 1,2,2,3,1,3,1,3,2,2,1,4,1,2,2,3,1,3,1,3,2,2,1,4,1,2,2,3,1,3,1,3,2,2,1,4,1,2,2,3,1,3,1,3,2,2,1,4,1,2,2,3,1,3,1,3,2,2,1,4,1,2,2,3,1,3,1,3,2,2,1,4
+
+mov $7,$0
+mov $2,1
+mov $1,1
+mul $2,$1
+mov $3,3
+add $7,$0
+mov $8,11
+mov $5,$2
+mul $3,9
+lpb $0,1
+  mov $6,$3
+  mov $4,2
+  sub $0,1
+  add $6,4
+  sub $2,$6
+  add $3,1
+  mov $5,$1
+  pow $1,$3
+  fac $1
+  add $0,5
+  add $3,$6
+  add $3,$7
+  div $2,$6
+  add $5,$6
+  mov $2,2
+  mov $2,3
+  mov $7,2
+  add $1,1
+lpe
+sub $8,$7
+sub $2,$1
+mov $8,1
+mov $6,$5
+mul $1,3
+mov $3,12
+pow $8,4
+sub $4,$6
+add $6,6
+mov $1,1
+pow $1,$5
+add $2,$1
+mov $2,1
+mov $5,1
+add $1,$3
+mov $2,$8
+add $5,$0
+gcd $5,$3
+mov $2,$5
+mov $1,1
+mul $8,$3
+sub $3,5
+sub $7,$8
+sub $7,$7
+sub $4,$0
+mov $6,101010
+add $8,3
+mov $7,4
+sub $1,$5
+sub $3,$1
+add $5,$3
+add $7,$8
+bin $1,$2
+sub $8,1
+mov $6,2
+mul $2,$7
+add $6,2
+sub $6,1
+add $0,1
+log $2,2
+mul $8,2
+add $7,$4
+mov $5,$4
+add $7,10
+mov $1,$6
+add $2,$3
+mov $1,$6
+add $0,$5
+mov $0,26
+mul $3,$1
+sub $3,1
+mov $1,$2
+sub $1,11
+add $1,1
