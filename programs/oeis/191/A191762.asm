@@ -1,0 +1,46 @@
+; A191762: Digital roots of the nonzero even squares.
+; 4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9
+
+mov $2,$0
+add $0,1
+mul $0,2
+mov $3,1
+add $2,$3
+mov $3,$2
+mov $1,2
+mov $4,1
+add $4,1
+mul $2,2
+mov $4,3
+add $1,$0
+mul $0,$0
+sub $2,$0
+pow $2,$2
+lpb $0,1
+  sub $0,1
+  mov $4,$3
+  add $4,68
+  mul $3,2
+  mov $3,$0
+  sub $0,8
+  sub $2,1
+  add $3,2
+  add $3,3
+lpe
+add $1,1
+mov $0,$0
+div $4,3
+mov $0,31
+mov $0,1
+add $2,$3
+add $3,$4
+mov $1,$3
+mov $0,1
+bin $4,$0
+mov $3,$0
+div $1,$2
+sub $3,1
+add $2,7
+mov $1,$2
+sub $1,12
+add $1,1
