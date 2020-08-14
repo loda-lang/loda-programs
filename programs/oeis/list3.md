@@ -293,7 +293,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308358](http://oeis.org/A308358) ([L19 program](308/A308358.asm)): Beatty sequence for sqrt(3)/4.
 * [A308385](http://oeis.org/A308385) ([L25 program](308/A308385.asm)): a(n) is the last square visited by fers moves on a spirally numbered (2n-1) X (2n-1) board, moving to the lowest available unvisited square at each step.
 * [A308422](http://oeis.org/A308422) ([L08 program](308/A308422.asm)): a(n) = n^2 if n odd, 3*n^2/4 if n even.
-* [A308579](http://oeis.org/A308579) ([L08 program](308/A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
+* [A308579](http://oeis.org/A308579) ([L11 program](308/A308579.asm)): a(n) = (9*2^n - 6*n - 10)/2.
 * [A308580](http://oeis.org/A308580) ([L14 program](308/A308580.asm)): a(n) = 3*2^n + n^2 - n.
 * [A308585](http://oeis.org/A308585) ([L08 program](308/A308585.asm)): a(n) = 2^(n + 3) - 10*n - 6.
 * [A308600](http://oeis.org/A308600) ([L15 program](308/A308600.asm)): Number of (not necessarily maximum) cliques in the n X n antelope graph.
@@ -662,7 +662,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321499](http://oeis.org/A321499) ([L12 program](321/A321499.asm)): Numbers of the form (x - y)(x^2 - y^2) with x > y > 0.
 * [A321501](http://oeis.org/A321501) ([L12 program](321/A321501.asm)): Numbers not of the form (x - y)(x^2 - y^2) with x > y > 0; complement of A321499.
 * [A321573](http://oeis.org/A321573) ([L18 program](321/A321573.asm)): Row sums of A321624.
-* [A321579](http://oeis.org/A321579) ([L43 program](321/A321579.asm)): Number of n-tuples of 4 elements excluding reverse duplicates and those consisting of repetitions of the same element only.
+* [A321579](http://oeis.org/A321579) ([L14 program](321/A321579.asm)): Number of n-tuples of 4 elements excluding reverse duplicates and those consisting of repetitions of the same element only.
 * [A321643](http://oeis.org/A321643) ([L18 program](321/A321643.asm)): a(n) = 5*2^n - (-1)^n.
 * [A321672](http://oeis.org/A321672) ([L12 program](321/A321672.asm)): Number of chiral pairs of rows of length 5 using up to n colors.
 * [A321773](http://oeis.org/A321773) ([L20 program](321/A321773.asm)): Number of compositions of n into parts with distinct multiplicities and with exactly three parts.
@@ -934,6 +934,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335025](http://oeis.org/A335025) ([L18 program](335/A335025.asm)): Largest side lengths of almost-equilateral Heronian triangles.
 * [A335048](http://oeis.org/A335048) ([L24 program](335/A335048.asm)): Minimum sum of primes (see Comments).
 * [A335129](http://oeis.org/A335129) ([L09 program](335/A335129.asm)): a(n) is the number of distinct lines created inside an n-gon when connecting vertex k to vertex 2k mod n.
+* [A335137](http://oeis.org/A335137) ([L112 program](335/A335137.asm)): a(n) = floor(n*Im(2*e^(i*Pi/5))).
 * [A335298](http://oeis.org/A335298) ([L22 program](335/A335298.asm)): a(n) is the squared distance between the points P(n) and P(0) on a plane, n>=0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90°-left-turn is taken in P(n+1).
 * [A335439](http://oeis.org/A335439) ([L24 program](335/A335439.asm)): a(n) = n*(n-1)/2 + 2^(n-1) - 1.
 * [A335648](http://oeis.org/A335648) ([L27 program](335/A335648.asm)): Partial sums of A006010.
