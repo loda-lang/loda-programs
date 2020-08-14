@@ -1,106 +1,23 @@
 ; A152179: (n^2-2=A008865) mod 9. Period 9:repeat 8,2,7,5,5,7,2,8,7.
 ; 8,2,7,5,5,7,2,8,7,8,2,7,5,5,7,2,8,7,8,2,7,5,5,7,2,8,7,8,2,7,5,5,7,2,8,7,8,2,7,5,5,7,2,8,7,8,2,7,5,5,7,2,8,7
 
-mov $2,2
-mov $2,$2
-mov $4,1
-mov $6,2
-add $4,$6
-mov $10,$4
-add $6,1
-sub $6,5
-add $2,$10
-mov $10,1
-mov $5,$10
-mul $10,$2
-mov $10,$10
-add $10,$2
-mov $6,4
-add $6,$4
-mov $9,2
+mov $5,7
 add $0,3
-mov $7,1
-div $5,$0
-add $9,1
-mov $2,$6
-mov $8,2
-sub $4,$0
-sub $5,8
-add $8,$8
-mov $5,$2
-sub $4,$0
-add $6,$0
-sub $2,$6
-mov $3,$9
-add $7,5
-mov $1,$4
-mul $6,$6
-mov $7,1
-mov $5,$3
-pow $8,$4
-mov $8,$6
-mov $6,6
-add $2,1
-sub $5,$2
-bin $6,2
-sub $6,$1
+add $5,$0
+mov $3,3
+pow $5,2
+mov $2,1
+mov $4,$5
 mov $0,1
-mov $1,$9
-mov $10,1
 lpb $0,1
-  log $6,4
-  mov $5,1
-  mov $9,$4
-  sub $10,1
-  sub $4,$4
-  add $1,1
-  add $8,$7
-  mov $10,1
-  add $2,2
-  div $1,$8
-  add $6,$5
-  mul $10,$5
-  add $8,$4
-  add $2,$1
+  add $4,$2
   add $3,$4
-  add $1,1
-  mov $6,$10
-  sub $2,$6
-  add $9,1
-  mul $7,$8
-  add $3,$8
-  pow $7,$6
-  mov $9,1
-  div $9,$6
-  mul $1,2
-  add $1,$3
-  mov $7,1
-  add $4,3
-  mov $4,$0
-  mov $1,$6
-  sub $10,1740
-  sub $0,3
-  add $8,$10
-  add $6,$2
-  pow $9,2
-  add $3,$7
-  mov $6,8
+  add $3,$2
+  mov $5,8
   sub $0,1
 lpe
-mov $1,1
 mod $3,9
-mov $7,2
-add $3,$6
-mov $10,$1
-mov $6,$3
-mov $5,$0
-sub $6,$9
-add $2,1
-mul $10,7
-add $6,$7
-mov $10,8
-sub $10,2
-mov $4,2
+add $3,$5
 mov $1,$3
 sub $1,8
 add $1,2
