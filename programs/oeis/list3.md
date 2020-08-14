@@ -662,6 +662,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321499](http://oeis.org/A321499) ([L12 program](321/A321499.asm)): Numbers of the form (x - y)(x^2 - y^2) with x > y > 0.
 * [A321501](http://oeis.org/A321501) ([L12 program](321/A321501.asm)): Numbers not of the form (x - y)(x^2 - y^2) with x > y > 0; complement of A321499.
 * [A321573](http://oeis.org/A321573) ([L18 program](321/A321573.asm)): Row sums of A321624.
+* [A321579](http://oeis.org/A321579) ([L43 program](321/A321579.asm)): Number of n-tuples of 4 elements excluding reverse duplicates and those consisting of repetitions of the same element only.
 * [A321643](http://oeis.org/A321643) ([L18 program](321/A321643.asm)): a(n) = 5*2^n - (-1)^n.
 * [A321672](http://oeis.org/A321672) ([L12 program](321/A321672.asm)): Number of chiral pairs of rows of length 5 using up to n colors.
 * [A321773](http://oeis.org/A321773) ([L20 program](321/A321773.asm)): Number of compositions of n into parts with distinct multiplicities and with exactly three parts.
@@ -781,7 +782,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329482](http://oeis.org/A329482) ([L11 program](329/A329482.asm)): Interleave 1 - n + 3*n^2, 1 + 3*n*(1+n) for n >= 0.
 * [A329502](http://oeis.org/A329502) ([L06 program](329/A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
 * [A329503](http://oeis.org/A329503) ([L09 program](329/A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
-* [A329505](http://oeis.org/A329505) ([L11 program](329/A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
+* [A329505](http://oeis.org/A329505) ([L10 program](329/A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
 * [A329506](http://oeis.org/A329506) ([L11 program](329/A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
 * [A329507](http://oeis.org/A329507) ([L29 program](329/A329507.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 + 2*x^3 - 3*x^4) / (1 - x).
 * [A329509](http://oeis.org/A329509) ([L19 program](329/A329509.asm)): Expansion of (1 + x)*(1 + x + x^2 - x^3) / (1 - x).
@@ -922,7 +923,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A333616](http://oeis.org/A333616) ([L22 program](333/A333616.asm)): Expansion of x*(1 + 2*x + x^2 - 4*x^3 - x^4 + 2*x^5)/((1 - x)^3*(1 + x)^2).
 * [A333637](http://oeis.org/A333637) ([L25 program](333/A333637.asm)): The number of cells which contain multiple squares of a Genealodron formed from 2^n - 1 equal-sized squares (when viewed from above).
 * [A333714](http://oeis.org/A333714) ([L07 program](333/A333714.asm)): Squares visited by a chess king moving on a square-spiral numbered board where the king moves to the adjacent unvisited square containing the spiral number with the most divisors. In case of a tie it chooses the square with the highest spiral number.
-* [A334227](http://oeis.org/A334227) ([L48 program](334/A334227.asm)): Length of the shortest prefix of the Thue-Morse sequence (A010060) containing, as subwords, all length-n blocks appearing in A010060.
+* [A334227](http://oeis.org/A334227) ([L24 program](334/A334227.asm)): Length of the shortest prefix of the Thue-Morse sequence (A010060) containing, as subwords, all length-n blocks appearing in A010060.
 * [A334277](http://oeis.org/A334277) ([L18 program](334/A334277.asm)): Perimeters of almost-equilateral Heronian triangles.
 * [A334320](http://oeis.org/A334320) ([L44 program](334/A334320.asm)): Number of even integers in base n with exactly two distinct digits.
 * [A334501](http://oeis.org/A334501) ([L32 program](334/A334501.asm)): Eventual period of a single cell in rule 190 cellular automaton in a cyclic universe of width n.
