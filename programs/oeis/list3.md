@@ -762,7 +762,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328333](http://oeis.org/A328333) ([L17 program](328/A328333.asm)): Expansion of (1 + 4*x - 6*x^2) / ((1 - x) * (1 - 10*x^2)).
 * [A328778](http://oeis.org/A328778) ([L35 program](328/A328778.asm)): Number of indecomposable closed walks of length 2n along the edges of a cube based at a vertex.
 * [A328865](http://oeis.org/A328865) ([L04 program](328/A328865.asm)): The first repeating term in the trajectory of n under iterations of A329623, or -1 if no such terms exists.
-* [A328890](http://oeis.org/A328890) ([L08 program](328/A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
+* [A328890](http://oeis.org/A328890) ([L12 program](328/A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L03 program](328/A328943.asm)): a(n) = 2 + (n mod 4).
 * [A328950](http://oeis.org/A328950) ([L38 program](328/A328950.asm)): Numerators for the "Minimum-Redundancy Code" card problem.
 * [A328979](http://oeis.org/A328979) ([L04 program](328/A328979.asm)): Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
@@ -934,7 +934,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335025](http://oeis.org/A335025) ([L18 program](335/A335025.asm)): Largest side lengths of almost-equilateral Heronian triangles.
 * [A335048](http://oeis.org/A335048) ([L24 program](335/A335048.asm)): Minimum sum of primes (see Comments).
 * [A335129](http://oeis.org/A335129) ([L09 program](335/A335129.asm)): a(n) is the number of distinct lines created inside an n-gon when connecting vertex k to vertex 2k mod n.
-* [A335137](http://oeis.org/A335137) ([L112 program](335/A335137.asm)): a(n) = floor(n*Im(2*e^(i*Pi/5))).
 * [A335298](http://oeis.org/A335298) ([L22 program](335/A335298.asm)): a(n) is the squared distance between the points P(n) and P(0) on a plane, n>=0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90°-left-turn is taken in P(n+1).
 * [A335439](http://oeis.org/A335439) ([L24 program](335/A335439.asm)): a(n) = n*(n-1)/2 + 2^(n-1) - 1.
 * [A335648](http://oeis.org/A335648) ([L27 program](335/A335648.asm)): Partial sums of A006010.

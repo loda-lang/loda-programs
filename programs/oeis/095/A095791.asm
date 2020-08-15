@@ -1,0 +1,104 @@
+; A095791: Number of digits in lazy-Fibonacci-binary representation of n.
+; 1,1,2,2,3,3,3,4,4,4,4,4,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9
+
+mov $7,10
+mov $5,$0
+mov $1,$7
+mov $10,$7
+add $7,4
+mov $8,$10
+mov $4,$5
+mov $5,1
+mov $6,3
+add $4,2
+mov $2,$0
+add $0,$5
+mov $9,3
+add $8,$4
+mov $3,2
+add $7,$7
+mul $9,2
+bin $7,$1
+mul $3,$5
+mov $6,$0
+sub $1,$7
+pow $10,$1
+add $3,1
+mov $2,$0
+pow $4,$9
+sub $10,1
+sub $2,$4
+div $4,$8
+add $2,1
+add $5,$6
+add $9,2
+add $6,1
+gcd $5,$10
+add $3,1
+add $2,14
+add $4,$8
+mul $8,5
+add $0,1
+add $9,$9
+lpb $2,1
+  mov $2,2
+  add $10,5
+  add $0,$4
+  add $5,32
+  sub $10,1
+  div $8,4
+  bin $8,$4
+  add $4,4
+  add $6,$5
+  mov $7,$1
+  add $4,$5
+  sub $9,1
+  lpb $4,1
+    mov $2,1
+    sub $8,$8
+    mul $8,3
+    add $1,$1
+    add $7,$5
+    mov $3,15
+    add $3,1
+    mov $5,24
+    sub $4,$1
+    add $2,$0
+    add $3,1
+    mov $7,$7
+    mov $6,$7
+    add $4,1
+  lpe
+  mov $9,2
+  mov $4,$6
+  lpb $5,1
+    sub $5,$1
+    add $10,$6
+    sub $4,2
+    add $5,$6
+    sub $2,$10
+  lpe
+  add $9,$3
+  sub $2,$2
+  mov $3,$3
+  add $10,7
+  sub $5,2
+  mul $6,$7
+  mul $10,3
+  add $10,$4
+  lpb $6,1
+    div $1,$3
+    mov $3,1
+    sub $6,$1
+    mul $2,132
+    mov $8,$4
+    mov $8,1
+    fac $9
+  lpe
+  add $4,90
+  log $0,12
+  mov $10,13
+  sub $8,2
+  sub $2,1
+lpe
+mov $1,$0
