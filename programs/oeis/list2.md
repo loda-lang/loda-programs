@@ -986,7 +986,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228141](http://oeis.org/A228141) ([L15 program](228/A228141.asm)): Numbers that are congruent to {1, 5} mod 20.
 * [A228142](http://oeis.org/A228142) ([L23 program](228/A228142.asm)): Number of blocks in a Steiner system S(2, 5, A228141(n+1)).
 * [A228157](http://oeis.org/A228157) ([L09 program](228/A228157.asm)): Numbers n which are anagrams of n+9.
-* [A228219](http://oeis.org/A228219) ([L26 program](228/A228219.asm)): Number of second differences of arrays of length 4 of numbers in 0..n.
+* [A228219](http://oeis.org/A228219) ([L27 program](228/A228219.asm)): Number of second differences of arrays of length 4 of numbers in 0..n.
 * [A228220](http://oeis.org/A228220) ([L13 program](228/A228220.asm)): Number of second differences of arrays of length 5 of numbers in 0..n.
 * [A228221](http://oeis.org/A228221) ([L68 program](228/A228221.asm)): Number of second differences of arrays of length 6 of numbers in 0..n.
 * [A228261](http://oeis.org/A228261) ([L12 program](228/A228261.asm)): Number of third differences of arrays of length 5 of numbers in 0..n.
@@ -1758,8 +1758,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254368](http://oeis.org/A254368) ([L13 program](254/A254368.asm)): a(n) = 5*2^n + 3^n + 15.
 * [A254371](http://oeis.org/A254371) ([L06 program](254/A254371.asm)): Sum of cubes of the first n even numbers (A016743).
 * [A254373](http://oeis.org/A254373) ([L12 program](254/A254373.asm)): Digital roots of centered square numbers (A001844).
-* [A254374](http://oeis.org/A254374) ([L44 program](254/A254374.asm)): Digital roots of centered pentagonal numbers (A005891).
-* [A254375](http://oeis.org/A254375) ([L41 program](254/A254375.asm)): Digital roots of centered heptagonal numbers (A069099).
+* [A254374](http://oeis.org/A254374) ([L15 program](254/A254374.asm)): Digital roots of centered pentagonal numbers (A005891).
+* [A254375](http://oeis.org/A254375) ([L18 program](254/A254375.asm)): Digital roots of centered heptagonal numbers (A069099).
 * [A254377](http://oeis.org/A254377) ([L17 program](254/A254377.asm)): Characteristic function of A230709: a(n) = 1 if n is either evil (A001969) or even odious (A128309), otherwise 0 (when n is odd odious).
 * [A254379](http://oeis.org/A254379) ([L11 program](254/A254379.asm)): Characteristic function of the even odious numbers (A128309).
 * [A254398](http://oeis.org/A254398) ([L16 program](254/A254398.asm)): Final digits of A237424 in decimal representation.
@@ -2661,6 +2661,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274324](http://oeis.org/A274324) ([L04 program](274/A274324.asm)): Number of partitions of n^3 into at most two parts.
 * [A274325](http://oeis.org/A274325) ([L04 program](274/A274325.asm)): Number of partitions of n^5 into at most two parts.
 * [A274339](http://oeis.org/A274339) ([L06 program](274/A274339.asm)): The 3-cycle of the iterated sum of deficient divisors function.
+* [A274340](http://oeis.org/A274340) ([L63 program](274/A274340.asm)): A 4-cycle of the iterated sum of deficient divisors function.
 * [A274406](http://oeis.org/A274406) ([L06 program](274/A274406.asm)): Numbers m such that 9 divides m*(m + 1).
 * [A274497](http://oeis.org/A274497) ([L06 program](274/A274497.asm)): Sum of the degrees of asymmetry of all binary words of length n.
 * [A274499](http://oeis.org/A274499) ([L09 program](274/A274499.asm)): Sum of the degrees of asymmetry of all ternary words of length n.
@@ -2719,7 +2720,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276289](http://oeis.org/A276289) ([L14 program](276/A276289.asm)): Expansion of x*(1 + x)/(1 - 2*x)^3.
 * [A276351](http://oeis.org/A276351) ([L66 program](276/A276351.asm)): a(n) = 2*(3 + 2 n + 3 n^2 + 3 n^3 + 3 n^4 + n^5 + n^6).
 * [A276382](http://oeis.org/A276382) ([L08 program](276/A276382.asm)): a(1) = 1, and a(n) = a(n-1) + floor(3*n/2) + 1 for n >= 2.
-* [A276384](http://oeis.org/A276384) ([L101 program](276/A276384.asm)): Defined by the properties that it starts with 0, and when you successively apply DIFF, RUNS, BISECT, RUNS you get (4,1,3,1) repeated infinitely often.
+* [A276384](http://oeis.org/A276384) ([L12 program](276/A276384.asm)): Defined by the properties that it starts with 0, and when you successively apply DIFF, RUNS, BISECT, RUNS you get (4,1,3,1) repeated infinitely often.
 * [A276391](http://oeis.org/A276391) ([L07 program](276/A276391.asm)): G.f. satisfies A(x) - 4*A(x^2) = x/(1+x).
 * [A276598](http://oeis.org/A276598) ([L10 program](276/A276598.asm)): Values of n such that n^2 + 3 is a triangular number (A000217).
 * [A276602](http://oeis.org/A276602) ([L08 program](276/A276602.asm)): Values of n such that n^2 + 10 is a triangular number (A000217).
@@ -2733,6 +2734,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276856](http://oeis.org/A276856) ([L357 program](276/A276856.asm)): First differences of the Beatty sequence A022840 for sqrt(6).
 * [A276857](http://oeis.org/A276857) ([L30 program](276/A276857.asm)): First differences of the Beatty sequence A022841 for sqrt(7).
 * [A276858](http://oeis.org/A276858) ([L30 program](276/A276858.asm)): First differences of the Beatty sequence A022842 for sqrt(8).
+* [A276862](http://oeis.org/A276862) ([L64 program](276/A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
 * [A276864](http://oeis.org/A276864) ([L45 program](276/A276864.asm)): First differences of the Beatty sequence A001952 for 2 + sqrt(2).
 * [A276865](http://oeis.org/A276865) ([L33 program](276/A276865.asm)): First differences of the Beatty sequence A003512 for 2 + sqrt(3).
 * [A276867](http://oeis.org/A276867) ([L31 program](276/A276867.asm)): First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.

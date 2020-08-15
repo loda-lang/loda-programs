@@ -1,66 +1,20 @@
 ; A274340: A 4-cycle of the iterated sum of deficient divisors function.
 ; 19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36,19,20,22,36
 
-mov $3,8
-mov $2,$3
-mov $1,2
-mov $4,$3
-mov $6,$2
-mov $5,2
 mod $0,4
-sub $2,$3
-log $6,2
-pow $6,$5
-mov $4,$1
-mov $5,$2
-add $5,$2
-pow $2,2
-add $5,1
-add $1,61
+mov $4,2
 lpb $0,1
-  mul $5,$4
-  pow $3,$3
-  mov $5,$0
-  mov $6,1
-  div $3,2
-  add $5,$3
-  mov $5,$6
-  add $1,$1
-  sub $1,$0
-  mov $2,1
   sub $4,1
   mov $2,4
-  sub $6,1
-  add $3,$0
   add $2,1
-  mul $3,2
-  gcd $1,$0
-  mov $5,2
-  sub $1,$3
-  mul $6,$1
-  mov $1,1
   sub $0,1
-  sub $3,$1
-  mov $4,$4
-  add $3,1
-  mov $5,$6
-  sub $5,$4
   add $2,1
-  sub $6,$2
-  mov $3,1
   add $2,$4
-  div $1,$2
-  add $3,2
   pow $2,$0
-  gcd $5,3
-  add $1,1
-  mov $6,3
-  add $4,$5
-  sub $0,$6
+  mov $3,3
+  sub $0,$3
   add $2,2
 lpe
-mul $3,2
-add $4,$6
 mov $1,$2
 div $1,3
 add $1,19
