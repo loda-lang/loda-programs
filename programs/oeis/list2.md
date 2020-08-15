@@ -7,6 +7,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A200155](http://oeis.org/A200155) ([L12 program](200/A200155.asm)): Number of 0..n arrays x(0..3) of 4 elements with zero 3rd differences.
 * [A200166](http://oeis.org/A200166) ([L17 program](200/A200166.asm)): Number of -n..n arrays x(0..2) of 3 elements with nonzero sum and with zero through 2 differences all nonzero.
 * [A200182](http://oeis.org/A200182) ([L13 program](200/A200182.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two consecutive declines, no adjacent equal elements, and no element more than one greater than the previous (random base sawtooth pattern).
+* [A200193](http://oeis.org/A200193) ([L63 program](200/A200193.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum, adjacent elements differing by more than one, and elements alternately increasing and decreasing.
 * [A200249](http://oeis.org/A200249) ([L19 program](200/A200249.asm)): Number of 0..5 arrays x(0..n-1) of n elements with each no smaller than the sum of its previous elements modulo 6.
 * [A200252](http://oeis.org/A200252) ([L20 program](200/A200252.asm)): Number of 0..n arrays x(0..2) of 3 elements with each no smaller than the sum of its previous elements modulo (n+1).
 * [A200311](http://oeis.org/A200311) ([L12 program](200/A200311.asm)): Number of comparisons needed for optimal merging of 2 elements with n elements.
@@ -1099,7 +1100,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231307](http://oeis.org/A231307) ([L14 program](231/A231307.asm)): Recurrence a(n) = a(n-2) + n^M for M=8, starting with a(0)=0, a(1)=1.
 * [A231308](http://oeis.org/A231308) ([L15 program](231/A231308.asm)): Recurrence a(n) = a(n-2) + n^M for M=9, starting with a(0)=0, a(1)=1.
 * [A231309](http://oeis.org/A231309) ([L17 program](231/A231309.asm)): Recurrence a(n) = a(n-2) + n^M for M=10, starting with a(0)=0, a(1)=1.
-* [A231475](http://oeis.org/A231475) ([L63 program](231/A231475.asm)): Largest integer less than 5 and coprime to n.
+* [A231475](http://oeis.org/A231475) ([L12 program](231/A231475.asm)): Largest integer less than 5 and coprime to n.
 * [A231500](http://oeis.org/A231500) ([L24 program](231/A231500.asm)): a(n) = Sum_{i=0..n} wt(i)^2, where wt(i) = A000120(i).
 * [A231502](http://oeis.org/A231502) ([L40 program](231/A231502.asm)): a(n) = Sum_{i=0..n} wt(i)^4, where wt() = A000120().
 * [A231559](http://oeis.org/A231559) ([L07 program](231/A231559.asm)): a(n) = floor( A000326(n)/2 ).
@@ -1590,7 +1591,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248517](http://oeis.org/A248517) ([L17 program](248/A248517.asm)): Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
 * [A248522](http://oeis.org/A248522) ([L21 program](248/A248522.asm)): Beatty sequence for 1/(1-exp(-1/3)): a(n) = floor(n/(1-exp(-1/3))).
 * [A248533](http://oeis.org/A248533) ([L18 program](248/A248533.asm)): Number of length n+3 0..4 arrays with every four consecutive terms having the sum of some three elements equal to three times the fourth.
-* [A248567](http://oeis.org/A248567) ([L69 program](248/A248567.asm)): Numbers k such that A248565(k+1) = A248565(k) + 2.
+* [A248567](http://oeis.org/A248567) ([L40 program](248/A248567.asm)): Numbers k such that A248565(k+1) = A248565(k) + 2.
 * [A248572](http://oeis.org/A248572) ([L03 program](248/A248572.asm)): a(n) = 29*n + 1.
 * [A248575](http://oeis.org/A248575) ([L16 program](248/A248575.asm)): Rounded sums of the non-integer cube roots of n, as partitioned by the integer roots: round[sum(j from n^3+1 to (n+1)^3-1, j^(1/3))].
 * [A248598](http://oeis.org/A248598) ([L58 program](248/A248598.asm)): a(n) = (2*n+23)*n*(n-1), a coefficient appearing in the formula a(n)*Pi/324+n+1 giving the average number of regions into which n random planes divide the cube.
@@ -1928,7 +1929,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258186](http://oeis.org/A258186) ([L17 program](258/A258186.asm)): a(n) is the maximal number of circles that can be enclosed by a closed chain of n circles; all circles' centers lie at coordinate points of the planar net 6.6.6.
 * [A258321](http://oeis.org/A258321) ([L10 program](258/A258321.asm)): a(n) = Fibonacci(n) + n*Lucas(n).
 * [A258402](http://oeis.org/A258402) ([L12 program](258/A258402.asm)): a(n) = (n^2 + 4*n + 6) * n^2.
-* [A258439](http://oeis.org/A258439) ([L101 program](258/A258439.asm)): Powers of 3 alternating with powers of 2.
+* [A258439](http://oeis.org/A258439) ([L07 program](258/A258439.asm)): Powers of 3 alternating with powers of 2.
 * [A258547](http://oeis.org/A258547) ([L07 program](258/A258547.asm)): Number of (n+1)X(1+1) 0..1 arrays with every 2X2 subblock ne-sw antidiagonal difference nondecreasing horizontally and nw+se diagonal sum nondecreasing vertically
 * [A258582](http://oeis.org/A258582) ([L06 program](258/A258582.asm)): a(n) = n*(2*n + 1)*(4*n + 1)/3.
 * [A258588](http://oeis.org/A258588) ([L13 program](258/A258588.asm)): Minimal most likely sum for a roll of n 10-sided dice.
@@ -2400,6 +2401,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269100](http://oeis.org/A269100) ([L03 program](269/A269100.asm)): a(n) = 13*n + 11.
 * [A269112](http://oeis.org/A269112) ([L16 program](269/A269112.asm)): a(n) = (3*(n-1)*n + (-1)^((n-1)*n/2) + 5)/2.
 * [A269132](http://oeis.org/A269132) ([L06 program](269/A269132.asm)): a(n) = n + floor(n*(2*n+1)/5).
+* [A269222](http://oeis.org/A269222) ([L83 program](269/A269222.asm)): Period 4: repeat [1,9,8,9].
 * [A269226](http://oeis.org/A269226) ([L09 program](269/A269226.asm)): Period 6: repeat [3, 9, 6, 6, 9, 3].
 * [A269232](http://oeis.org/A269232) ([L24 program](269/A269232.asm)): a(n) = (n + 1)*(6*n^2 + 15*n + 4)/2.
 * [A269237](http://oeis.org/A269237) ([L16 program](269/A269237.asm)): a(n) = (n + 1)^2*(5*n^2 + 10*n + 2)/2.
@@ -3236,7 +3238,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293077](http://oeis.org/A293077) ([L68 program](293/A293077.asm)): Number of letters (0's and 1's) in the n-th iterate of the final-letter-removed mapping defined at A289035.
 * [A293078](http://oeis.org/A293078) ([L10 program](293/A293078.asm)): a(n) = (1/2)*A293077(n).
 * [A293137](http://oeis.org/A293137) ([L08 program](293/A293137.asm)): a(0) = 0, and a(n) = floor(2*sqrt(n)) - 1 for n >= 1.
-* [A293162](http://oeis.org/A293162) ([L46 program](293/A293162.asm)): Take every third term of the {0,1}-version of the Thue-Morse sequence: a(n) = A010060(3n).
+* [A293162](http://oeis.org/A293162) ([L09 program](293/A293162.asm)): Take every third term of the {0,1}-version of the Thue-Morse sequence: a(n) = A010060(3n).
 * [A293163](http://oeis.org/A293163) ([L16 program](293/A293163.asm)): a(n) = A010060(3n+1).
 * [A293292](http://oeis.org/A293292) ([L09 program](293/A293292.asm)): Numbers with last digit less than 5 (in base 10).
 * [A293296](http://oeis.org/A293296) ([L09 program](293/A293296.asm)): a(n) = 2*n^2 - floor(n/4).
@@ -3294,7 +3296,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A295869](http://oeis.org/A295869) ([L06 program](295/A295869.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 8.
 * [A295896](http://oeis.org/A295896) ([L21 program](295/A295896.asm)): a(n) = 1 if there are no odd runs of 1's in the binary expansion of n followed by a 0 to their right, 0 otherwise.
 * [A295904](http://oeis.org/A295904) ([L09 program](295/A295904.asm)): Number of (not necessarily maximum) cliques in the n-sun graph.
-* [A295905](http://oeis.org/A295905) ([L07 program](295/A295905.asm)): Number of (not necessarily maximum) cliques in the n X n knight graph.
+* [A295905](http://oeis.org/A295905) ([L10 program](295/A295905.asm)): Number of (not necessarily maximum) cliques in the n X n knight graph.
 * [A295906](http://oeis.org/A295906) ([L07 program](295/A295906.asm)): Number of (not necessarily maximum) cliques in the n X n king graph.
 * [A295911](http://oeis.org/A295911) ([L05 program](295/A295911.asm)): Number of (not necessarily maximal) cliques in the n-Hanoi graph.
 * [A295921](http://oeis.org/A295921) ([L30 program](295/A295921.asm)): Number of (not necessarily maximum) cliques in the n-folded cube graph.
