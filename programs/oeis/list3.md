@@ -594,7 +594,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317594](http://oeis.org/A317594) ([L02 program](317/A317594.asm)): Lexicographically first sequence of different terms such that erasing the last three digits of a(n+1) and adding this new reshaped integer to a(n) gives back a(n+1).
 * [A317614](http://oeis.org/A317614) ([L14 program](317/A317614.asm)): a(n) = (1/2)*(n^3 + n*(n mod 2)).
 * [A317633](http://oeis.org/A317633) ([L07 program](317/A317633.asm)): Numbers congruent to {1, 7, 9} mod 10.
-* [A317637](http://oeis.org/A317637) ([L07 program](317/A317637.asm)): a(n) = n*(n+1)*(n+3).
+* [A317637](http://oeis.org/A317637) ([L12 program](317/A317637.asm)): a(n) = n*(n+1)*(n+3).
 * [A317657](http://oeis.org/A317657) ([L08 program](317/A317657.asm)): Numbers congruent to {15, 75, 95} mod 100.
 * [A317714](http://oeis.org/A317714) ([L14 program](317/A317714.asm)): Chessboard rectangles sequence (see Comments), also A037270 interleaved with A163102.
 * [A317790](http://oeis.org/A317790) ([L06 program](317/A317790.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-4) - 2*(n-5) + a(n-6) for n>5, a(0)=a(1)=1, a(2)=a(3)=7, a(4)=13, a(5)=19.

@@ -1,0 +1,94 @@
+; A191531: Sum of lengths of initial and final horizontal segments over all dispersed Dyck paths of semilength n (i.e., over all Motzkin paths of length n with no (1,0)-steps at positive heights).
+; 0,1,2,5,10,21,40,79,148,287,538,1041,1964,3811,7242,14105,26974,52713,101332,198571,383326,752837,1458268,2869131,5573286,10981597,21382196,42183395,82299994,162533193,317650712,627885751,1228966140,2431126919,4764733138,9431945577
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  mov $1,$0
+  mov $7,2
+  lpb $0,1
+    sub $1,5
+    mov $6,1
+    mov $8,1
+    mov $3,1
+    mov $8,1
+    mov $2,3
+    sub $0,$6
+    mov $5,$0
+    add $6,1
+    mov $1,1
+    mov $1,$0
+    sub $0,1
+    mov $6,3
+    mov $4,$0
+    sub $6,$6
+    add $1,$6
+    sub $8,$1
+    mov $0,2
+    sub $7,$0
+    div $5,2
+    bin $1,$5
+    sub $7,1
+    mov $6,$2
+    sub $7,5
+    add $2,10
+    mov $0,$5
+    mov $6,216
+    mov $2,2
+    div $6,$1
+    mov $0,2
+    add $6,5
+    mul $1,2
+    add $4,2
+    sub $7,1
+    sub $2,$3
+    mov $2,$5
+    mul $4,2
+    sub $8,10
+    mov $6,1
+    sub $2,112
+    mov $5,6
+    mul $1,$6
+    add $5,$8
+    add $0,6
+    add $0,$6
+    mov $0,$3
+    mov $4,$5
+    pow $0,2
+    sub $0,$1
+    add $7,3
+    mov $2,$3
+    mov $3,1
+    mov $0,$6
+    mov $7,3
+    div $7,2
+    sub $0,$0
+    mul $4,$7
+    sub $7,$2
+    mul $4,$5
+    mul $2,$6
+    mov $5,$3
+    mov $5,5
+    mov $4,$6
+    pow $8,$4
+    add $1,$0
+    sub $1,1
+    mul $8,$6
+    add $5,1
+    mov $5,$5
+    add $5,$8
+    mul $4,2
+  lpe
+  add $1,0
+  pow $5,2
+  mov $0,2
+  mov $4,$5
+  mov $6,2
+  add $10,$1
+lpe
+mov $1,$10
