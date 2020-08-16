@@ -1,83 +1,15 @@
 ; A182027: a(n) = number of n-lettered words in the alphabet {1, 2} with as many occurrences of the substring (consecutive subword) [1, 1] as of [2, 2].
 ; 1,2,2,2,4,6,12,20,40,70,140,252,504,924,1848,3432,6864,12870,25740,48620,97240,184756,369512,705432,1410864,2704156,5408312,10400600,20801200,40116600,80233200,155117520,310235040,601080390,1202160780,2333606220,4667212440,9075135300,18150270600,35345263800
 
-mov $1,$0
-mov $7,2
 lpb $0,1
-  sub $1,5
-  mov $6,2
-  mov $8,1
-  mov $3,1
-  mov $8,1
-  mov $2,3
-  sub $0,$6
-  mov $5,$0
-  add $6,1
-  mov $1,1
-  mov $1,$0
-  sub $0,1
-  mov $6,3
-  mov $4,$0
-  sub $6,$6
-  add $1,$6
-  sub $8,$1
-  mov $0,2
-  sub $7,$0
-  div $5,2
-  bin $1,$5
-  sub $7,1
-  mov $6,$2
-  sub $7,5
-  add $2,10
-  mov $0,$5
-  mov $6,216
   mov $2,2
-  div $6,$1
-  mov $0,2
-  add $6,5
+  sub $0,$2
+  mov $3,$0
+  mov $1,$0
+  div $3,2
+  bin $1,$3
   mul $1,2
-  add $4,2
-  sub $7,1
-  sub $2,$3
-  mov $2,$5
-  mul $4,2
-  sub $8,10
-  mov $6,1
-  sub $2,112
-  mov $5,6
-  mul $1,$6
-  add $5,$8
-  add $0,6
-  add $0,$6
-  mov $0,$3
-  mov $4,$5
-  pow $0,2
-  sub $0,$1
-  add $7,3
-  mov $2,$3
-  mov $3,1
-  mov $0,$6
-  mov $7,3
-  div $7,2
   sub $0,$0
-  mul $4,$7
-  sub $7,$2
-  mul $4,$5
-  mul $2,$6
-  mov $5,$3
-  mov $5,5
-  mov $4,$6
-  pow $8,$4
-  add $1,$0
   sub $1,1
-  mul $8,$6
-  add $5,1
-  mov $5,$5
-  add $5,$8
-  mul $4,2
 lpe
 add $1,1
-pow $5,2
-mov $0,2
-mov $4,$5
-mov $6,2
