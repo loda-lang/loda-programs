@@ -1,0 +1,137 @@
+; A212090: Number of (w,x,y,z) with all terms in {1,...,n} and w<x+y+z.
+; 0,1,16,80,251,610,1261,2331,3970,6351,9670,14146,20021,27560,37051,48805,63156,80461,101100,125476,154015,187166,225401,269215,319126,375675,439426,510966,590905,679876,778535,887561,1007656,1139545
+
+mov $17,$0
+mov $19,$0
+add $19,1
+lpb $19,1
+  clr $0,17
+  sub $19,1
+  mov $0,$17
+  sub $0,$19
+  mov $14,$0
+  mov $16,$0
+  add $16,1
+  lpb $16,1
+    clr $0,14
+    sub $16,1
+    mov $0,$14
+    sub $0,$16
+    mov $11,$0
+    mov $13,$0
+    add $13,1
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      sub $0,$13
+      mov $5,$0
+      mov $10,7
+      mov $3,1
+      mov $8,$10
+      mul $8,2
+      mov $10,2
+      mul $8,2
+      mov $6,2
+      add $8,3
+      add $8,1
+      lpb $0,1
+        mul $8,2
+        mov $4,$3
+        add $6,$8
+        mov $9,$0
+        add $10,$9
+        mov $3,1
+        sub $10,3
+        mov $6,$5
+        mul $3,$0
+        mov $8,1
+        div $10,7
+        mov $10,1
+        mov $1,$5
+        mov $2,2
+        mov $7,$8
+        sub $10,1
+        sub $6,2
+        add $3,$9
+        add $7,$5
+        mov $1,11
+        sub $9,14
+        add $9,1
+        mov $1,$0
+        mov $9,3
+        mov $3,1
+        sub $4,$8
+        mov $4,$9
+        mov $8,$2
+        mov $10,1
+        add $0,$7
+        add $1,$2
+        add $7,$5
+        mov $9,2
+        div $10,$8
+        add $6,2
+        mov $5,3
+        mov $2,$8
+        mov $10,$5
+        sub $10,$1
+        mov $0,$4
+        mov $4,$1
+        sub $0,1
+        mov $7,$8
+        pow $10,$1
+        add $10,1
+      lpe
+      mov $3,$4
+      mov $3,$5
+      mov $7,$6
+      sub $10,$8
+      sub $7,$9
+      sub $10,1
+      mul $3,$5
+      sub $9,$7
+      mod $5,$6
+      mov $10,$1
+      add $2,$3
+      add $5,1
+      add $8,$0
+      mov $0,$10
+      sub $10,1
+      mov $1,$6
+      mul $3,$7
+      sub $6,1
+      div $7,2
+      mul $10,5
+      sub $3,1
+      add $5,$5
+      add $4,4
+      add $2,$9
+      add $5,1
+      mul $3,2
+      add $9,1
+      mov $9,2
+      add $3,$10
+      add $1,5
+      add $0,1
+      add $6,$2
+      mov $9,1
+      mov $0,2
+      sub $1,3
+      sub $3,$9
+      sub $4,$6
+      sub $6,1
+      sub $5,$0
+      add $5,1
+      sub $6,$3
+      mul $7,$2
+      add $0,6
+      mov $1,$3
+      add $12,$1
+    lpe
+    mov $1,$12
+    add $15,$1
+  lpe
+  mov $1,$15
+  add $18,$1
+lpe
+mov $1,$18
