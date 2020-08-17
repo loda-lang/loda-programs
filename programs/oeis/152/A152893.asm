@@ -1,0 +1,104 @@
+; A152893: Periodic sequence [3, 3, 0, 0, 4] of period 5
+; 3,3,0,0,4,3,3,0,0,4,3,3,0,0,4,3,3,0,0,4,3,3,0,0,4,3,3,0,0,4,3,3,0,0,4,3,3,0,0,4,3,3,0,0,4,3,3,0,0,4
+
+mov $2,$0
+mov $1,5
+mov $5,$0
+mov $8,$1
+mod $0,$1
+mov $4,$8
+add $8,1
+mov $2,1
+mov $7,$0
+mov $3,1
+mov $10,1
+mov $10,$2
+mov $5,$0
+lpb $0,1
+  mov $5,1
+  div $4,3
+  mov $9,$7
+  mul $8,2
+  sub $0,2
+  mov $0,4
+  div $7,2
+  mov $4,$1
+  mov $9,$1
+  sub $2,$3
+  mov $5,2
+  pow $9,2
+  mov $6,3
+  sub $6,$10
+  mul $10,2
+  mul $5,2
+  div $4,$9
+  div $8,$1
+  mov $10,$1
+  add $6,$8
+  add $7,1
+  sub $0,$8
+  sub $10,$1
+  mov $8,$6
+  mov $4,$7
+  sub $6,2
+  mov $9,$10
+  mov $6,1
+  mul $6,2
+  sub $3,15
+  add $3,$7
+  add $5,4
+  sub $0,1
+  add $5,4102
+  sub $3,3
+  div $9,$6
+  sub $9,2
+  mov $2,$8
+  mov $5,$4
+  mov $10,$1
+  mov $7,1
+  div $10,$5
+  sub $3,24
+  sub $10,$8
+  pow $7,28
+  mov $2,1
+  sub $5,2
+  mul $8,$5
+  add $8,$7
+  add $7,$1
+  mov $7,1
+  mov $6,1
+  mov $1,$8
+  mov $9,1
+  sub $0,$10
+  div $9,7
+  add $7,$3
+  mul $6,$7
+  mov $3,89
+  add $4,1
+  add $3,$6
+  pow $7,2
+  mov $7,1
+  add $7,$6
+  mov $7,$8
+  add $10,4
+  mov $0,$4
+  mul $2,$3
+  add $1,1
+  sub $8,1
+  mov $6,2
+  add $7,$4
+  sub $9,1
+  sub $3,2
+  mov $3,5
+  mul $8,8
+  mov $3,1
+  mov $0,1
+  mov $4,$2
+  add $3,$2
+  sub $7,$5
+  mov $9,$4
+  mov $2,$1
+  div $5,$10
+lpe
+mov $2,$6
+sub $1,2
