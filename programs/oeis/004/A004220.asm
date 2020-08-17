@@ -1,104 +1,16 @@
 ; A004220: 10*log_10 (n) rounded to nearest integer.
 ; 0,3,5,6,7,8,8,9,10,10,10,11,11,11,12,12,12,13,13,13,13,13,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,16,16,17,17,17,17,17,17,17,17,17,17,17,17,18
 
-mov $3,3
-mov $5,5
-mov $2,2
-mov $8,$0
-mul $5,$0
-mov $10,1
-mov $8,1
-mov $3,1
-mov $0,$3
-sub $8,1
-sub $2,1
-mov $1,1
-mov $10,0
-mul $1,2
+mov $2,5
 mul $2,$0
-mov $6,$5
-add $5,1
-add $0,$1
-add $5,5
-mov $1,1
-mov $0,$5
-cmp $3,$0
-mov $7,1
-sub $6,$8
-mov $9,1
-mov $0,$0
-mov $0,$5
-add $7,8
-bin $5,3
-mul $1,$9
-mov $4,2
+add $2,6
+bin $2,3
 lpb $0,1
-  mov $4,$5
-  add $9,$0
-  add $2,1
-  mul $2,$0
-  add $6,1
-  add $1,1
-  mov $9,1
-  mul $9,$0
-  add $1,2
+  mov $3,$2
   mov $1,9
-  mul $6,11
-  add $6,6
-  sub $8,$8
-  mov $7,2
-  mov $6,2
-  mov $9,1
-  mov $6,$0
-  mov $7,$3
-  add $4,$7
-  mov $5,5
-  mov $6,1
-  mov $8,$0
-  add $5,$8
-  add $10,1
-  mul $4,$1
-  mov $2,$2
-  mov $6,1
-  mul $8,2
-  mul $0,2
-  add $2,$2
-  mov $2,$7
-  div $5,$5
-  mov $5,1
+  mul $3,$1
   clr $0,1
-  add $4,$10
-  add $8,2
-  mov $1,$6
-  add $9,$9
-  add $9,$9
-  sub $1,$9
-  mov $5,5
-  sub $6,2
-  add $9,1
-  log $4,2
-  mov $10,10
-  mov $5,$0
-  mul $8,$2
-  mov $9,$6
-  sub $4,$9
-  add $1,$10
-  mul $3,$3
-  add $6,$9
-  add $8,$1
-  sub $0,1
-  mov $6,$9
-  sub $7,$1
-  div $3,$8
+  log $3,2
 lpe
-mul $8,2
-sub $0,$10
-add $1,$7
-sub $1,1
-sub $8,$4
-mov $3,$9
-add $0,14
-sub $6,$0
-sub $3,5
-mov $1,$4
+mov $1,$3
 sub $1,7
