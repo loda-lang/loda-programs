@@ -1,103 +1,18 @@
 ; A194641: Digital roots of the nonzero heptagonal numbers.
 ; 1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1
 
-mov $9,$0
-mov $3,1
-mov $6,$9
-mov $1,2
-mov $6,$6
-mov $8,1
-mul $6,4
-mov $5,$0
-mov $10,$6
-mov $2,4
-sub $1,1
-add $6,2
-mul $6,$10
-mul $10,3
-mov $8,2
-sub $1,$0
-add $8,$0
-mul $2,2
-mov $4,1
-sub $1,$0
-sub $9,3
-add $1,1
-mul $10,$10
-mov $7,$9
-add $2,$3
-mov $0,1
-sub $9,1
-mod $6,$2
-mov $4,1
-sub $8,$4
-sub $9,1
-sub $1,1
-mov $8,$6
-mov $1,4
-sub $4,1
-mov $9,$4
-add $3,4
-add $3,$6
+mov $3,$0
+mov $5,$3
+mul $5,4
+mov $2,$5
 add $5,2
-cmp $3,$8
-add $8,4
-mul $7,2
-add $5,1
-mov $9,$1
-add $9,$4
-mov $5,1
-add $9,2
-mov $5,1
-mov $8,$1
-add $8,$0
-mov $9,1
-mov $10,8
+mul $5,$2
+mov $0,1
+mod $5,9
 mov $3,1
-div $7,2
 lpb $0,1
-  mov $10,1
-  add $1,$9
-  add $7,10
-  add $3,$0
-  mov $3,0
-  mov $7,$6
-  add $9,$7
-  sub $1,1
-  sub $7,2
-  div $3,2
-  add $2,$6
-  sub $8,16
-  mov $2,1
-  mov $6,5
-  mov $3,$7
-  div $10,2
+  mov $4,$5
+  add $3,$4
   sub $0,1
-  mov $7,2
-  mov $7,1
-  mov $3,$8
-  sub $0,$3
-  sub $1,$2
-  pow $7,10
-  add $2,$3
-  pow $2,$8
-  pow $2,2
 lpe
-mov $7,$10
-add $5,120
-add $0,$4
-mov $1,$9
-add $10,1
-sub $3,$7
-mov $9,$10
-sub $2,2
-add $10,$10
-mov $2,$10
-mul $5,2
-add $2,1
-add $8,1
-add $4,$9
-add $6,$2
-mov $2,3
-sub $0,1
-sub $3,$0
+mov $1,$3
