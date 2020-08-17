@@ -3,42 +3,15 @@
 
 mov $2,$0
 lpb $2,1
-  lpb $4,1
-    mov $4,$2
-    sub $4,$0
+  lpb $3,1
+    mov $3,$2
+    sub $3,$0
   lpe
-  lpb $5,1
-    mov $1,2
-    add $2,$0
-    mov $5,$1
-    div $2,$5
-  lpe
-  add $4,1
-  mov $1,$0
-  mul $0,2
-  sub $0,1
-  mov $3,1
-  div $1,$4
-  mul $1,6
-  sub $0,1
-  lpb $6,1
-    mov $6,$1
-    mov $3,$1
-  lpe
-  sub $2,$4
+  add $3,1
+  sub $2,$3
   sub $2,1
   mov $0,1
-  mov $1,2
 lpe
-add $4,1
-mul $1,$4
-mov $2,$4
-sub $4,2
-sub $1,1
-mov $0,$2
-mov $3,$4
-mov $4,$0
-sub $3,2
-pow $0,2
-mov $3,$4
+add $3,1
+mov $2,$3
 mov $1,$2
