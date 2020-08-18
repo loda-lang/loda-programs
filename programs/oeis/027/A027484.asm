@@ -5,11 +5,9 @@ mov $3,$0
 mov $2,$0
 add $2,2
 pow $2,5
-add $2,1
-mov $4,$2
-sub $4,$3
-mov $1,$4
-sub $1,33
+sub $2,$3
+mov $1,$2
+sub $1,32
 div $1,30
 mul $1,15
 add $1,15

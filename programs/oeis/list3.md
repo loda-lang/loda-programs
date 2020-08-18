@@ -27,7 +27,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301292](http://oeis.org/A301292) ([L09 program](301/A301292.asm)): Partial sums of A301291.
 * [A301293](http://oeis.org/A301293) ([L13 program](301/A301293.asm)): Expansion of (x^2+x+1)^2 / ((x^2+1)*(x-1)^2).
 * [A301294](http://oeis.org/A301294) ([L14 program](301/A301294.asm)): Partial sums of A301293.
-* [A301298](http://oeis.org/A301298) ([L08 program](301/A301298.asm)): Expansion of (1 + 4*x + 4*x^2 + 4*x^3 + x^4)/((1 - x)*(1 - x^3)).
+* [A301298](http://oeis.org/A301298) ([L05 program](301/A301298.asm)): Expansion of (1 + 4*x + 4*x^2 + 4*x^3 + x^4)/((1 - x)*(1 - x^3)).
 * [A301337](http://oeis.org/A301337) ([L15 program](301/A301337.asm)): Number of steps required in the worst case for two knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A301383](http://oeis.org/A301383) ([L16 program](301/A301383.asm)): Expansion of (1 + 3*x - 2*x^2)/(1 - 7*x + 7*x^2 - x^3).
 * [A301426](http://oeis.org/A301426) ([L11 program](301/A301426.asm)): Number of steps required in the worst case for three knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
@@ -947,7 +947,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336102](http://oeis.org/A336102) ([L16 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
 * [A336288](http://oeis.org/A336288) ([L24 program](336/A336288.asm)): Numbers of squares formed by this procedure on n-th step: Step 1, draw a unit square. Step n, draw a unit square with center in every intersection of lines of the figure in step n-1.
 * [A336529](http://oeis.org/A336529) ([L42 program](336/A336529.asm)): a(n) = (n^3+5*n+3)/3 + 2*floor(n/2) + a(n-2), with a(0)=1 and a(1)=3.
-* [A336535](http://oeis.org/A336535) ([L13 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
+* [A336535](http://oeis.org/A336535) ([L12 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
 * [A336627](http://oeis.org/A336627) ([L43 program](336/A336627.asm)): Coordination sequence for the Manhattan lattice.
 * [A336705](http://oeis.org/A336705) ([L42 program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
 * [A336819](http://oeis.org/A336819) ([L16 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.

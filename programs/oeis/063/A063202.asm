@@ -1,0 +1,65 @@
+; A063202: Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 22 ).
+; 0,3,5,5,7,11,9,13,15,15,17,21,19,23,25,25,27,31,29,33,35,35,37,41,39,43,45,45,47,51,49,53,55,55,57,61,59,63,65,65,67,71,69,73,75,75,77,81,79,83
+
+mov $2,$0
+mov $1,$0
+mov $0,1
+mov $4,6
+lpb $0,1
+  mov $6,1
+  mul $0,$1
+  mov $3,$1
+  mov $5,$6
+  mov $5,$1
+  mul $5,$4
+  add $2,$3
+  sub $2,$3
+  mov $2,6
+  mov $2,4
+  div $3,3
+  mov $5,4
+  add $0,$6
+  sub $5,$3
+  mov $5,$1
+  add $6,$2
+  mov $4,$3
+  mul $3,$2
+  add $4,$5
+  sub $6,$1
+  mul $2,$5
+  add $1,5
+  add $0,1
+  add $0,1
+  mov $0,1
+  sub $6,1
+  sub $2,$5
+  sub $5,1
+  sub $4,1
+  add $3,$0
+  gcd $1,2
+  mov $6,1
+  sub $2,$3
+  sub $4,$1
+  mul $4,2
+  sub $3,$0
+  mov $5,1
+  mov $5,141
+  mov $4,$5
+  sub $0,1
+  add $4,$0
+  sub $6,2
+lpe
+add $2,$1
+mov $0,1
+add $0,2
+add $4,$5
+add $4,64
+mod $6,2
+mov $5,$3
+mov $2,$2
+mov $1,$6
+add $5,$4
+add $5,5
+sub $1,3
+mov $1,$2
+sub $1,1

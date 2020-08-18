@@ -3,52 +3,17 @@
 
 mov $7,$0
 mov $9,$0
-add $9,1
 lpb $9,1
   clr $0,7
   sub $9,1
   mov $0,$7
   sub $0,$9
   mov $2,$0
-  mov $2,$0
   lpb $2,1
-    lpb $4,1
-      mul $0,3
-      mov $1,1
-      mov $3,1
-      mov $4,$3
-      mov $2,$1
-      add $4,1
-      add $2,$4
-      sub $0,1
-      mov $4,2
-      mov $4,1
-    lpe
-    sub $4,$4
-    mov $4,$4
-    mov $0,$0
     add $3,$0
-    lpb $5,1
-      mov $3,$2
-      mov $5,$3
-    lpe
-    lpb $6,1
-      bin $2,2
-      mov $0,$1
-      sub $2,1
-      mov $6,$3
-      add $3,$4
-      add $2,$4
-      mov $3,$0
-      mov $1,0
-    lpe
     add $0,24
-    div $1,2
     sub $2,1
   lpe
-  add $2,7
-  sub $4,1
-  add $1,$1
   mov $1,$3
   add $8,$1
 lpe
