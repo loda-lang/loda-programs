@@ -1,0 +1,115 @@
+; A292343: The PI index of the Aztec diamond AZ(n) (see the Imran et al. reference).
+; 108,888,3268,8560,18460,35048,60788,98528,151500,223320,317988,439888,593788,784840,1018580,1300928,1638188,2037048,2504580,3048240,3675868,4395688,5216308,6146720,7196300,8374808,9692388,11159568,12787260,14586760,16569748
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $6,$0
+  mul $6,3
+  mov $9,$0
+  mov $2,3
+  mov $0,1
+  lpb $0,1
+    mov $4,7
+    mov $3,$6
+    mov $7,$2
+    mov $1,$9
+    mov $5,$7
+    mul $0,$0
+    mov $0,1
+    sub $5,2
+    sub $0,1
+    mov $1,4
+    mov $6,2
+  lpe
+  add $5,$6
+  mov $6,1
+  div $5,2
+  mul $4,$0
+  mov $5,2
+  mul $6,$2
+  add $1,$6
+  mov $10,$3
+  mov $8,$9
+  mul $0,2
+  add $9,$8
+  pow $3,$5
+  mov $10,$9
+  add $1,$9
+  add $10,1
+  gcd $1,2
+  sub $1,1
+  sub $6,2
+  sub $6,5
+  mov $1,$0
+  mov $7,5
+  add $9,$9
+  mov $10,2
+  sub $6,1
+  sub $0,1
+  add $0,1
+  mov $0,12
+  add $2,9
+  mov $2,$9
+  mov $0,3
+  mov $5,4
+  mov $10,3
+  add $5,$9
+  mov $9,$2
+  add $9,6
+  add $6,$9
+  div $10,$7
+  add $10,2
+  sub $2,1
+  add $3,1
+  mov $3,1
+  pow $3,2
+  mul $3,2
+  pow $0,$7
+  sub $2,1
+  mov $5,$9
+  mov $0,20
+  add $7,$5
+  mov $5,2
+  mov $1,1
+  mul $5,12
+  sub $0,1
+  pow $5,2
+  mov $8,$6
+  sub $0,$6
+  sub $7,1
+  mov $4,1
+  mov $10,1
+  mul $9,2
+  sub $8,4
+  add $2,3
+  mov $3,1
+  mul $3,2
+  mul $8,$6
+  mul $10,2
+  add $0,1
+  add $1,5
+  mul $3,2
+  div $5,$6
+  add $9,1
+  add $10,$10
+  add $0,5
+  add $6,3
+  add $5,$5
+  mov $1,$0
+  mul $6,$8
+  mov $9,24
+  add $8,9
+  gcd $2,$10
+  mov $10,$6
+  add $0,$0
+  sub $2,4
+  mov $1,$6
+  add $12,$1
+lpe
+mov $1,$12
