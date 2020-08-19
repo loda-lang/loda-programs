@@ -6,19 +6,11 @@ mov $1,2
 mov $2,1
 lpb $0,1
   add $1,1
-  mov $2,1
-  sub $2,$0
   add $0,3
-  mov $2,1
   sub $0,$1
-  pow $2,8
-  mov $2,6
   mov $2,$0
   sub $0,1
 lpe
-sub $0,$0
-add $2,$2
-sub $1,$2
-add $2,$2
+mul $2,4
 mov $1,$2
 div $1,4

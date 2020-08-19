@@ -1,0 +1,117 @@
+; A264041: a(n) is the maximum number of diagonals that can be placed in an n X n grid made up of 1 X 1 unit squares when diagonals are placed in the unit squares in such a way that no two diagonals may cross or intersect at an endpoint.
+; 1,3,6,10,16,21,29,36,46,55,68,78,93,105,122,136,156,171,193,210,234,253,280,300,329,351
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $10,$0
+  mov $2,1
+  mul $2,2
+  mov $7,$0
+  gcd $0,2
+  mov $3,2
+  mov $4,$3
+  mov $3,$4
+  mov $6,4
+  mul $0,$7
+  sub $7,50
+  mov $1,$3
+  add $3,$10
+  mov $9,1
+  mov $6,7
+  add $9,4
+  mov $5,$4
+  pow $4,5
+  mul $2,$0
+  mul $0,2
+  mov $7,6
+  add $1,$0
+  mov $6,$2
+  mov $1,$10
+  mov $9,$5
+  mul $4,$0
+  bin $9,4
+  mov $8,1
+  add $9,$5
+  add $3,$7
+  add $6,3
+  div $0,3
+  sub $2,1
+  mul $5,$8
+  mov $8,$10
+  mov $6,$1
+  mov $9,3
+  lpb $0,1
+    mov $2,$5
+    pow $9,2
+    mov $1,$6
+    sub $5,1
+    add $0,2
+    mov $7,$9
+    mul $6,2
+    mov $6,2
+    sub $8,$3
+    add $7,2
+    mov $4,$0
+    mov $6,5
+    add $2,$8
+    mov $3,0
+    sub $2,$0
+    mov $2,$0
+    mov $9,2
+    sub $2,$0
+    add $3,5
+    add $5,3
+    add $6,$4
+    sub $8,1
+    mov $7,$0
+    mov $1,$4
+    add $2,5
+    add $3,$3
+    mov $1,$10
+    add $3,2
+    sub $1,1
+    sub $7,$7
+    mov $1,1
+    add $4,$2
+    add $1,$4
+    add $10,$10
+    mov $6,1
+    sub $8,$8
+    add $6,1
+    mul $9,$1
+    sub $0,1
+    add $8,$5
+    add $1,3
+  lpe
+  add $3,$0
+  mov $6,$2
+  mov $7,1
+  sub $7,1
+  add $3,3
+  sub $2,2
+  add $8,63
+  mov $10,$10
+  sub $10,$9
+  sub $5,1
+  mov $6,$4
+  add $4,$10
+  sub $1,4
+  add $1,8
+  add $6,2
+  sub $5,$3
+  mov $1,$1
+  add $8,$9
+  div $3,2
+  add $1,4
+  mov $1,$3
+  sub $1,5
+  add $1,1
+  add $12,$1
+lpe
+mov $1,$12
