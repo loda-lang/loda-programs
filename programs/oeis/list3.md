@@ -117,9 +117,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304025](http://oeis.org/A304025) ([L09 program](304/A304025.asm)): a(n) is the largest integer that can be written with n digits in base 3/2.
 * [A304157](http://oeis.org/A304157) ([L03 program](304/A304157.asm)): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
 * [A304158](http://oeis.org/A304158) ([L03 program](304/A304158.asm)): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
-* [A304159](http://oeis.org/A304159) ([L11 program](304/A304159.asm)): a(n) = 2*n^3 - 4*n^2 + 6*n - 2 (n>=1).
+* [A304159](http://oeis.org/A304159) ([L08 program](304/A304159.asm)): a(n) = 2*n^3 - 4*n^2 + 6*n - 2 (n>=1).
 * [A304160](http://oeis.org/A304160) ([L15 program](304/A304160.asm)): a(n) = n^4 - 3*n^3 + 6*n^2 - 5*n + 2 (n >= 1).
-* [A304161](http://oeis.org/A304161) ([L13 program](304/A304161.asm)): a(n) = 2*n^3 - 4*n^2 + 10*n - 2 (n>=1).
+* [A304161](http://oeis.org/A304161) ([L08 program](304/A304161.asm)): a(n) = 2*n^3 - 4*n^2 + 10*n - 2 (n>=1).
 * [A304162](http://oeis.org/A304162) ([L11 program](304/A304162.asm)): a(n) = n^4 - 3*n^3 + 9*n^2 - 7*n + 5 (n>=1).
 * [A304163](http://oeis.org/A304163) ([L08 program](304/A304163.asm)): a(n) = 9*n^2 - 3*n + 1 with n>0.
 * [A304164](http://oeis.org/A304164) ([L08 program](304/A304164.asm)): a(n) = 27*n^2 - 21*n + 6 (n>=1).
@@ -137,7 +137,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304375](http://oeis.org/A304375) ([L08 program](304/A304375.asm)): a(n) = 27*n^2/2 + 45*n/2 - 12 (n>=1).
 * [A304376](http://oeis.org/A304376) ([L05 program](304/A304376.asm)): a(n) = 60*2^n - 48 (n>=1).
 * [A304377](http://oeis.org/A304377) ([L05 program](304/A304377.asm)): a(n) = 102*2^n - 96 (n>=1).
-* [A304378](http://oeis.org/A304378) ([L08 program](304/A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
+* [A304378](http://oeis.org/A304378) ([L21 program](304/A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
 * [A304380](http://oeis.org/A304380) ([L09 program](304/A304380.asm)): a(n) = 36*n^2 - 4*n (n>=1).
 * [A304381](http://oeis.org/A304381) ([L09 program](304/A304381.asm)): a(n) = 54*n^2 - 26*n + 4 (n>=1).
 * [A304383](http://oeis.org/A304383) ([L05 program](304/A304383.asm)): a(n) = 36*2^n - 5 (n>=1).
@@ -309,6 +309,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309118](http://oeis.org/A309118) ([L38 program](309/A309118.asm)): Number of tiles added at iteration n when successively, layer by layer, building a symmetric patch of a rhombille tiling around a central star of six rhombs.
 * [A309127](http://oeis.org/A309127) ([L09 program](309/A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309231](http://oeis.org/A309231) ([L13 program](309/A309231.asm)): Column 3 of the array at A326662 see Comments.
+* [A309250](http://oeis.org/A309250) ([L22 program](309/A309250.asm)): a(n) is the index of the binary string of a Post's Correspondence Problem Encoding with index n.
 * [A309294](http://oeis.org/A309294) ([L12 program](309/A309294.asm)): (1/2) times the sum of the elements of all subsets of [n] whose sum is divisible by two.
 * [A309315](http://oeis.org/A309315) ([L06 program](309/A309315.asm)): Number of 5-colorings of an n-wheel graph.
 * [A309335](http://oeis.org/A309335) ([L10 program](309/A309335.asm)): a(n) = n^3 if n odd, 7*n^3/8 if n even.
@@ -594,9 +595,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317551](http://oeis.org/A317551) ([L11 program](317/A317551.asm)): Fertility numbers.
 * [A317594](http://oeis.org/A317594) ([L02 program](317/A317594.asm)): Lexicographically first sequence of different terms such that erasing the last three digits of a(n+1) and adding this new reshaped integer to a(n) gives back a(n+1).
 * [A317614](http://oeis.org/A317614) ([L14 program](317/A317614.asm)): a(n) = (1/2)*(n^3 + n*(n mod 2)).
-* [A317633](http://oeis.org/A317633) ([L07 program](317/A317633.asm)): Numbers congruent to {1, 7, 9} mod 10.
+* [A317633](http://oeis.org/A317633) ([L13 program](317/A317633.asm)): Numbers congruent to {1, 7, 9} mod 10.
 * [A317637](http://oeis.org/A317637) ([L12 program](317/A317637.asm)): a(n) = n*(n+1)*(n+3).
-* [A317657](http://oeis.org/A317657) ([L08 program](317/A317657.asm)): Numbers congruent to {15, 75, 95} mod 100.
+* [A317657](http://oeis.org/A317657) ([L13 program](317/A317657.asm)): Numbers congruent to {15, 75, 95} mod 100.
 * [A317714](http://oeis.org/A317714) ([L14 program](317/A317714.asm)): Chessboard rectangles sequence (see Comments), also A037270 interleaved with A163102.
 * [A317790](http://oeis.org/A317790) ([L06 program](317/A317790.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-4) - 2*(n-5) + a(n-6) for n>5, a(0)=a(1)=1, a(2)=a(3)=7, a(4)=13, a(5)=19.
 * [A317849](http://oeis.org/A317849) ([L25 program](317/A317849.asm)): Number of states of the Finite State Automaton Gn accepting the language of maximal (or minimal) lexicographic representatives of elements in the positive braid monoid An.
@@ -664,7 +665,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321483](http://oeis.org/A321483) ([L17 program](321/A321483.asm)): a(n) = 7*2^n + (-1)^n.
 * [A321499](http://oeis.org/A321499) ([L12 program](321/A321499.asm)): Numbers of the form (x - y)(x^2 - y^2) with x > y > 0.
 * [A321501](http://oeis.org/A321501) ([L12 program](321/A321501.asm)): Numbers not of the form (x - y)(x^2 - y^2) with x > y > 0; complement of A321499.
-* [A321573](http://oeis.org/A321573) ([L18 program](321/A321573.asm)): Row sums of A321624.
+* [A321573](http://oeis.org/A321573) ([L12 program](321/A321573.asm)): Row sums of A321624.
 * [A321579](http://oeis.org/A321579) ([L14 program](321/A321579.asm)): Number of n-tuples of 4 elements excluding reverse duplicates and those consisting of repetitions of the same element only.
 * [A321643](http://oeis.org/A321643) ([L18 program](321/A321643.asm)): a(n) = 5*2^n - (-1)^n.
 * [A321672](http://oeis.org/A321672) ([L08 program](321/A321672.asm)): Number of chiral pairs of rows of length 5 using up to n colors.
@@ -940,7 +941,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335298](http://oeis.org/A335298) ([L22 program](335/A335298.asm)): a(n) is the squared distance between the points P(n) and P(0) on a plane, n>=0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90°-left-turn is taken in P(n+1).
 * [A335439](http://oeis.org/A335439) ([L24 program](335/A335439.asm)): a(n) = n*(n-1)/2 + 2^(n-1) - 1.
 * [A335648](http://oeis.org/A335648) ([L27 program](335/A335648.asm)): Partial sums of A006010.
+* [A335741](http://oeis.org/A335741) ([L81 program](335/A335741.asm)): Number of Pell numbers (A000129) <= n.
 * [A335756](http://oeis.org/A335756) ([L11 program](335/A335756.asm)): A cup filling problem starting with 2 empty cups of sizes 3 and n, where a(n) is the number of unreachable states (see details in comments).
+* [A335807](http://oeis.org/A335807) ([L41 program](335/A335807.asm)): Number of vertices in the n-th simplex graph of the complete graph on three vertices (K_3).
 * [A335843](http://oeis.org/A335843) ([L05 program](335/A335843.asm)): a(n) is the number of n-digit positive integers with exactly two distinct base 10 digits.
 * [A335903](http://oeis.org/A335903) ([L51 program](335/A335903.asm)): Column 1 in the matrix of A279212 (whose indexing starts at 0).
 * [A335927](http://oeis.org/A335927) ([L77 program](335/A335927.asm)): a(n+1) = Sum_{k=1..n} (a(k) + k*(n-k)), with a(1)=1.
