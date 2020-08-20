@@ -11,7 +11,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300287](http://oeis.org/A300287) ([L21 program](300/A300287.asm)): a(n) = floor((1/n) * Sum_{k=1..n} sqrt(k)).
 * [A300290](http://oeis.org/A300290) ([L08 program](300/A300290.asm)): Period 6: repeat [0, 1, 2, 2, 3, 3].
 * [A300293](http://oeis.org/A300293) ([L31 program](300/A300293.asm)): A sequence based on the period 6 sequence A151899.
-* [A300402](http://oeis.org/A300402) ([L06 program](300/A300402.asm)): Smallest integer i such that TREE(i) >= n.
+* [A300402](http://oeis.org/A300402) ([L05 program](300/A300402.asm)): Smallest integer i such that TREE(i) >= n.
 * [A300403](http://oeis.org/A300403) ([L06 program](300/A300403.asm)): Smallest integer i such that SSCG(i) >= n.
 * [A300404](http://oeis.org/A300404) ([L05 program](300/A300404.asm)): Smallest integer k such that the largest term in the Goodstein sequence starting at k is > n.
 * [A300451](http://oeis.org/A300451) ([L18 program](300/A300451.asm)): a(n) = (3*n^2 - 3*n + 8)*2^(n - 3).
@@ -37,8 +37,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301560](http://oeis.org/A301560) ([L10 program](301/A301560.asm)): Matching number of the n-odd graph.
 * [A301571](http://oeis.org/A301571) ([L13 program](301/A301571.asm)): Number of vertices at distance 2 from a given vertex in the n-Keller graph.
 * [A301601](http://oeis.org/A301601) ([L16 program](301/A301601.asm)): Numbers k such that k^6 can be written as a sum of 11 positive 6th powers.
-* [A301617](http://oeis.org/A301617) ([L07 program](301/A301617.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 1.
-* [A301621](http://oeis.org/A301621) ([L07 program](301/A301621.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 2.
+* [A301617](http://oeis.org/A301617) ([L06 program](301/A301617.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 1.
+* [A301621](http://oeis.org/A301621) ([L06 program](301/A301621.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 2.
 * [A301622](http://oeis.org/A301622) ([L05 program](301/A301622.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 4.
 * [A301623](http://oeis.org/A301623) ([L05 program](301/A301623.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 5.
 * [A301628](http://oeis.org/A301628) ([L06 program](301/A301628.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 7.
@@ -309,7 +309,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309118](http://oeis.org/A309118) ([L38 program](309/A309118.asm)): Number of tiles added at iteration n when successively, layer by layer, building a symmetric patch of a rhombille tiling around a central star of six rhombs.
 * [A309127](http://oeis.org/A309127) ([L09 program](309/A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309231](http://oeis.org/A309231) ([L13 program](309/A309231.asm)): Column 3 of the array at A326662 see Comments.
-* [A309250](http://oeis.org/A309250) ([L22 program](309/A309250.asm)): a(n) is the index of the binary string of a Post's Correspondence Problem Encoding with index n.
+* [A309250](http://oeis.org/A309250) ([L13 program](309/A309250.asm)): a(n) is the index of the binary string of a Post's Correspondence Problem Encoding with index n.
 * [A309294](http://oeis.org/A309294) ([L12 program](309/A309294.asm)): (1/2) times the sum of the elements of all subsets of [n] whose sum is divisible by two.
 * [A309315](http://oeis.org/A309315) ([L06 program](309/A309315.asm)): Number of 5-colorings of an n-wheel graph.
 * [A309335](http://oeis.org/A309335) ([L10 program](309/A309335.asm)): a(n) = n^3 if n odd, 7*n^3/8 if n even.
@@ -802,7 +802,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329670](http://oeis.org/A329670) ([L04 program](329/A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
 * [A329677](http://oeis.org/A329677) ([L06 program](329/A329677.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD, and DH.
 * [A329678](http://oeis.org/A329678) ([L02 program](329/A329678.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UD and DH.
-* [A329679](http://oeis.org/A329679) ([L04 program](329/A329679.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, UD, HD and DH.
+* [A329679](http://oeis.org/A329679) ([L03 program](329/A329679.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, UD, HD and DH.
 * [A329680](http://oeis.org/A329680) ([L04 program](329/A329680.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD and DU.
 * [A329682](http://oeis.org/A329682) ([L05 program](329/A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L03 program](329/A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
@@ -899,7 +899,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331528](http://oeis.org/A331528) ([L14 program](331/A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
 * [A331714](http://oeis.org/A331714) ([L71 program](331/A331714.asm)): Number of non-isomorphic set-systems with 3 sets each with n elements.
 * [A331943](http://oeis.org/A331943) ([L09 program](331/A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
-* [A331987](http://oeis.org/A331987) ([L16 program](331/A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
+* [A331987](http://oeis.org/A331987) ([L23 program](331/A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
 * [A332019](http://oeis.org/A332019) ([L14 program](332/A332019.asm)): The number of cells added in the n-th generation of the following procedure: start by coloring any triangle on the snub square tiling, then repeatedly color every cell that shares a vertex with a colored cell.
 * [A332023](http://oeis.org/A332023) ([L28 program](332/A332023.asm)): T(n, k) = binomial(n+2, 3) + binomial(k+1, 2) + binomial(k, 1). Triangle read by rows, T(n, k) for 0 <= k <= n.
 * [A332026](http://oeis.org/A332026) ([L18 program](332/A332026.asm)): Savannah problem: number of new possibilities after n weeks.
@@ -941,9 +941,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335298](http://oeis.org/A335298) ([L22 program](335/A335298.asm)): a(n) is the squared distance between the points P(n) and P(0) on a plane, n>=0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90°-left-turn is taken in P(n+1).
 * [A335439](http://oeis.org/A335439) ([L24 program](335/A335439.asm)): a(n) = n*(n-1)/2 + 2^(n-1) - 1.
 * [A335648](http://oeis.org/A335648) ([L27 program](335/A335648.asm)): Partial sums of A006010.
-* [A335741](http://oeis.org/A335741) ([L81 program](335/A335741.asm)): Number of Pell numbers (A000129) <= n.
+* [A335741](http://oeis.org/A335741) ([L21 program](335/A335741.asm)): Number of Pell numbers (A000129) <= n.
 * [A335756](http://oeis.org/A335756) ([L11 program](335/A335756.asm)): A cup filling problem starting with 2 empty cups of sizes 3 and n, where a(n) is the number of unreachable states (see details in comments).
-* [A335807](http://oeis.org/A335807) ([L41 program](335/A335807.asm)): Number of vertices in the n-th simplex graph of the complete graph on three vertices (K_3).
+* [A335807](http://oeis.org/A335807) ([L15 program](335/A335807.asm)): Number of vertices in the n-th simplex graph of the complete graph on three vertices (K_3).
 * [A335843](http://oeis.org/A335843) ([L05 program](335/A335843.asm)): a(n) is the number of n-digit positive integers with exactly two distinct base 10 digits.
 * [A335903](http://oeis.org/A335903) ([L51 program](335/A335903.asm)): Column 1 in the matrix of A279212 (whose indexing starts at 0).
 * [A335927](http://oeis.org/A335927) ([L77 program](335/A335927.asm)): a(n+1) = Sum_{k=1..n} (a(k) + k*(n-k)), with a(1)=1.
