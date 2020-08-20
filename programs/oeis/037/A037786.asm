@@ -1,0 +1,67 @@
+; A037786: Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,2,0,1.
+; 3,14,56,225,903,3614,14456,57825,231303,925214,3700856,14803425,59213703,236854814,947419256,3789677025,15158708103,60634832414,242539329656,970157318625,3880629274503,15522517098014,62090068392056
+
+mov $5,300
+mov $4,$0
+mov $2,$5
+sub $5,$5
+mov $3,$0
+mov $1,3
+add $3,$2
+add $2,2
+add $2,$1
+pow $2,$1
+mov $6,2
+add $0,1
+fac $1
+add $3,4
+add $0,1
+add $6,1
+add $3,1
+add $2,$2
+mov $3,1
+mov $4,10
+mul $2,$3
+sub $4,1
+sub $3,1
+add $2,$4
+div $1,2
+mov $4,$5
+mul $6,2
+mul $6,2
+lpb $0,1
+  add $6,2
+  add $2,$2
+  mov $3,$4
+  sub $1,$4
+  mod $2,5
+  add $4,$4
+  mov $3,7
+  mov $1,2
+  mov $1,$2
+  add $6,$1
+  add $1,5
+  sub $1,2
+  mov $3,0
+  mov $6,$5
+  sub $4,$2
+  mov $6,3
+  add $4,1
+  add $4,$4
+  sub $0,1
+  sub $1,1
+  mul $3,6
+lpe
+mov $1,$6
+sub $6,$1
+add $1,$0
+sub $1,1
+mov $6,1
+mov $3,$2
+add $6,$6
+sub $3,$4
+mov $5,0
+mov $1,$4
+sub $1,8
+div $1,2
+add $1,3
