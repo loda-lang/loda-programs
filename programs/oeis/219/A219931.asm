@@ -1,0 +1,85 @@
+; A219931: Coefficients related to an asymptotic expansion of the logarithm of the central binomial.
+; 1,6,5,28,9,22,13,120,17,38,21,92,25,54,29,496,33,70,37,156,41,86,45,376,49,102,53,220,57,118,61,2016,65,134,69,284,73,150,77,632,81,166,85,348,89,182,93,1520,97,198,101,412,105,214,109,888,113,230,117
+
+mov $4,$0
+add $0,1
+mov $3,2
+mov $5,$4
+mov $7,$4
+mov $5,2
+mov $3,32
+mov $1,$0
+add $4,$4
+sub $0,4
+gcd $1,$3
+mov $7,$3
+mul $4,$1
+mov $5,$4
+mul $5,$5
+mov $2,$4
+sub $0,1
+sub $2,2
+sub $0,$5
+mov $6,9
+lpb $0,1
+  mov $8,2
+  sub $5,3
+  mul $2,$2
+  add $5,$3
+  mov $0,2
+  mov $4,1
+  add $8,10
+  sub $3,$3
+  add $0,$4
+  mov $0,2
+  mov $8,2
+  sub $3,5
+  mul $6,2
+  mov $3,$3
+  add $6,1
+  add $2,$3
+  sub $1,2
+  sub $1,$4
+  add $6,3
+  add $8,3
+  mov $0,1
+  mul $4,$3
+  add $7,4
+  mov $5,51
+  mov $0,1
+  mov $2,1
+  sub $0,1
+  pow $4,17
+  mov $8,$8
+  mov $4,$3
+  mov $4,$4
+  sub $6,$8
+  mov $6,$4
+  add $5,2
+  pow $3,$6
+  mov $3,$8
+  add $0,8
+  fac $4
+  pow $2,2
+  sub $5,2
+  mov $8,1
+  add $3,2
+  mov $7,2
+  mov $1,$5
+  mov $1,$1
+  mov $1,37
+  mov $6,$8
+  add $6,1
+  add $4,$6
+  mov $0,$4
+  mov $3,1
+  mov $0,$8
+  add $3,$0
+  add $5,1
+  add $0,$7
+lpe
+add $2,4
+add $1,9
+add $1,$4
+sub $1,10
+add $1,1
