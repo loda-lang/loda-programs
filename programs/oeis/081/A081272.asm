@@ -5,6 +5,5 @@ mov $1,$0
 mul $1,6
 add $1,1
 pow $1,2
-div $1,24
-mul $1,12
 add $1,1
+div $1,2
