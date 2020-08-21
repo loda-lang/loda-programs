@@ -3,10 +3,5 @@
 
 mul $0,8
 add $0,7
+pow $0,3
 mov $1,$0
-pow $1,3
-mul $1,4
-sub $1,1372
-div $1,32
-mul $1,8
-add $1,343
