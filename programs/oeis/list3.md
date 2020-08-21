@@ -120,7 +120,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304159](http://oeis.org/A304159) ([L08 program](304/A304159.asm)): a(n) = 2*n^3 - 4*n^2 + 6*n - 2 (n>=1).
 * [A304160](http://oeis.org/A304160) ([L15 program](304/A304160.asm)): a(n) = n^4 - 3*n^3 + 6*n^2 - 5*n + 2 (n >= 1).
 * [A304161](http://oeis.org/A304161) ([L08 program](304/A304161.asm)): a(n) = 2*n^3 - 4*n^2 + 10*n - 2 (n>=1).
-* [A304162](http://oeis.org/A304162) ([L11 program](304/A304162.asm)): a(n) = n^4 - 3*n^3 + 9*n^2 - 7*n + 5 (n>=1).
+* [A304162](http://oeis.org/A304162) ([L10 program](304/A304162.asm)): a(n) = n^4 - 3*n^3 + 9*n^2 - 7*n + 5 (n>=1).
 * [A304163](http://oeis.org/A304163) ([L08 program](304/A304163.asm)): a(n) = 9*n^2 - 3*n + 1 with n>0.
 * [A304164](http://oeis.org/A304164) ([L08 program](304/A304164.asm)): a(n) = 27*n^2 - 21*n + 6 (n>=1).
 * [A304165](http://oeis.org/A304165) ([L27 program](304/A304165.asm)): a(n) = 324*n^2 - 336*n + 102 (n >= 1).
@@ -682,7 +682,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322417](http://oeis.org/A322417) ([L16 program](322/A322417.asm)): a(n) - 2*a(n-1) = period 2: repeat [3, 0] for n > 0, a(0)=5, a(1)=13.
 * [A322462](http://oeis.org/A322462) ([L18 program](322/A322462.asm)): Numbers on the 0-1-12 line in a spiral on a grid of equilateral triangles.
 * [A322465](http://oeis.org/A322465) ([L09 program](322/A322465.asm)): Numbers on the 0-9-10-line in a spiral on an equilateral triangular lattice.
-* [A322489](http://oeis.org/A322489) ([L16 program](322/A322489.asm)): Numbers k such that k^k ends with 4.
+* [A322489](http://oeis.org/A322489) ([L14 program](322/A322489.asm)): Numbers k such that k^k ends with 4.
 * [A322490](http://oeis.org/A322490) ([L08 program](322/A322490.asm)): Numbers k such that k^k ends with 7.
 * [A322593](http://oeis.org/A322593) ([L09 program](322/A322593.asm)): a(n) = 2^n + 2*n^2 + 1.
 * [A322594](http://oeis.org/A322594) ([L08 program](322/A322594.asm)): a(n) = (4*n^3 + 12*n^2 - 4*n + 3)/3.
@@ -699,7 +699,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323178](http://oeis.org/A323178) ([L04 program](323/A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
 * [A323218](http://oeis.org/A323218) ([L22 program](323/A323218.asm)): a(n) = (4*n^3 + 30*n^2 + 50*n)/3 + 1.
 * [A323220](http://oeis.org/A323220) ([L49 program](323/A323220.asm)): a(n) = n*(n + 5)*(n + 7)*(n + 10)/24 + 1.
-* [A323221](http://oeis.org/A323221) ([L11 program](323/A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
+* [A323221](http://oeis.org/A323221) ([L10 program](323/A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
 * [A323227](http://oeis.org/A323227) ([L07 program](323/A323227.asm)): a(n) = [x^n] (-x^4 + 2*x^3 - x^2 + 2*x - 1)/((x - 1)^2*(2*x - 1)).
 * [A323228](http://oeis.org/A323228) ([L05 program](323/A323228.asm)): a(n) = binomial(n + 4, n - 1) + 1.
 * [A323229](http://oeis.org/A323229) ([L10 program](323/A323229.asm)): a(n) = binomial(2*n, n+1) + 1.
@@ -948,7 +948,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335903](http://oeis.org/A335903) ([L51 program](335/A335903.asm)): Column 1 in the matrix of A279212 (whose indexing starts at 0).
 * [A335927](http://oeis.org/A335927) ([L77 program](335/A335927.asm)): a(n+1) = Sum_{k=1..n} (a(k) + k*(n-k)), with a(1)=1.
 * [A335956](http://oeis.org/A335956) ([L09 program](335/A335956.asm)): a(n) = (2^n - 1)*2^valuation(n, 2) for n > 0 and a(0) = 0.
-* [A336102](http://oeis.org/A336102) ([L16 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
+* [A336102](http://oeis.org/A336102) ([L13 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
 * [A336288](http://oeis.org/A336288) ([L24 program](336/A336288.asm)): Numbers of squares formed by this procedure on n-th step: Step 1, draw a unit square. Step n, draw a unit square with center in every intersection of lines of the figure in step n-1.
 * [A336529](http://oeis.org/A336529) ([L42 program](336/A336529.asm)): a(n) = (n^3+5*n+3)/3 + 2*floor(n/2) + a(n-2), with a(0)=1 and a(1)=3.
 * [A336535](http://oeis.org/A336535) ([L12 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
