@@ -1979,7 +1979,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134481](http://oeis.org/A134481) ([L08 program](134/A134481.asm)): Row sums of triangle A134480.
 * [A134482](http://oeis.org/A134482) ([L09 program](134/A134482.asm)): Triangle read by rows: row n consists of n followed by the numbers n through 2n-2.
 * [A134483](http://oeis.org/A134483) ([L10 program](134/A134483.asm)): Triangle read by rows: T(n,k)=2n+k-2; 1<=k<=n.
-* [A134496](http://oeis.org/A134496) ([L06 program](134/A134496.asm)): Numbers that are not lunar pseudoprimes.
+* [A134496](http://oeis.org/A134496) ([L08 program](134/A134496.asm)): Numbers that are not lunar pseudoprimes.
 * [A134507](http://oeis.org/A134507) ([L35 program](134/A134507.asm)): Number of rectangles in a pyramid built with squares. The squares counted in A092498 are excluded.
 * [A134519](http://oeis.org/A134519) ([L07 program](134/A134519.asm)): Numbers remaining when the natural numbers (A000027) are arranged into a triangle and only the beginning and end terms of each row are retained.
 * [A134522](http://oeis.org/A134522) ([L12 program](134/A134522.asm)): a(n) = 2^n + ceiling(n/2).
@@ -2571,6 +2571,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145818](http://oeis.org/A145818) ([L30 program](145/A145818.asm)): Odd positive integers a(n) such that for every integer m == 3 (mod 4) there exists a unique representation of the form m = a(l) + 2*a(s), but there are no such representations for m == 1 (mod 4).
 * [A145849](http://oeis.org/A145849) ([L32 program](145/A145849.asm)): a(n) = A145812(2n-1).
 * [A145850](http://oeis.org/A145850) ([L32 program](145/A145850.asm)): a(n) = A145818(2n-1).
+* [A145885](http://oeis.org/A145885) ([L42 program](145/A145885.asm)): a(n) = (n-1)^2*binomial(2n,n)/(2*(n+1)).
 * [A145910](http://oeis.org/A145910) ([L08 program](145/A145910.asm)): a(n) = (1 + 3*n)*(4 + 3*n)/2.
 * [A145920](http://oeis.org/A145920) ([L08 program](145/A145920.asm)): List of numbers that are both pentagonal (A000326) and binomial coefficients C(n,4) (A000332).
 * [A145923](http://oeis.org/A145923) ([L05 program](145/A145923.asm)): Second bisection of A061041: a(n) = A061041(2n+1) = (2n+1)*(2n+9).
@@ -4412,7 +4413,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171835](http://oeis.org/A171835) ([L12 program](171/A171835.asm)): Partial sums of numbers congruent to {3, 4, 5, 6} mod 8 (A047425).
 * [A171842](http://oeis.org/A171842) ([L09 program](171/A171842.asm)): Binomial transform of 1,0,1,0,2,0,4,0,8,0,16,...
 * [A171869](http://oeis.org/A171869) ([L08 program](171/A171869.asm)): a(n) is the period of A175555(n) in the sequence {A175555}.
-* [A171891](http://oeis.org/A171891) ([L06 program](171/A171891.asm)): 1 and all numbers >= 10.
+* [A171891](http://oeis.org/A171891) ([L08 program](171/A171891.asm)): 1 and all numbers >= 10.
 * [A171892](http://oeis.org/A171892) ([L05 program](171/A171892.asm)): 0, 1 and all numbers >= 9.
 * [A171893](http://oeis.org/A171893) ([L06 program](171/A171893.asm)): 1, 2 and all numbers >= 10.
 * [A171905](http://oeis.org/A171905) ([L05 program](171/A171905.asm)): a(1) = 1 and a(2) = 2, a(n) = |(sum of previous terms) - n|.
@@ -5228,7 +5229,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185871](http://oeis.org/A185871) ([L11 program](185/A185871.asm)): (Even,even)-polka dot array in the natural number array A000027, by antidiagonals.
 * [A185908](http://oeis.org/A185908) ([L10 program](185/A185908.asm)): Array: T(n,k) = n-1 + min{n,k}, by antidiagonals.
 * [A185914](http://oeis.org/A185914) ([L11 program](185/A185914.asm)): Array: T(n,k)=k-n+1 for k>=n; T(n,k)=0 for k<n; by antidiagonals.
-* [A185939](http://oeis.org/A185939) ([L06 program](185/A185939.asm)): a(n) = 9*n^2 - 6*n + 2.
+* [A185939](http://oeis.org/A185939) ([L05 program](185/A185939.asm)): a(n) = 9*n^2 - 6*n + 2.
 * [A185940](http://oeis.org/A185940) ([L19 program](185/A185940.asm)): a(n) = 1 - 2^(n+1) + 3^(n+2).
 * [A186029](http://oeis.org/A186029) ([L05 program](186/A186029.asm)): a(n) = n*(7*n+3)/2.
 * [A186030](http://oeis.org/A186030) ([L06 program](186/A186030.asm)): a(n) = n*(13*n-3)/2.
