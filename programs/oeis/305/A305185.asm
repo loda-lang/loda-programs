@@ -1,0 +1,75 @@
+; A305185: a(n) minimizes the maximum norm of elements in a complete residue system of Eisenstein integers modulo n.
+; 0,1,3,4,7,12,13,19,27,28,37,48,49,61,75,76,91,108,109,127,147,148,169,192,193,217,243,244,271,300,301,331,363,364,397,432,433,469,507,508,547,588,589,631,675,676,721,768,769,817,867,868,919,972,973,1027,1083,1084,1141,1200
+
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  mov $2,$0
+  mov $6,7
+  mov $2,$2
+  mov $3,2
+  mod $2,3
+  mov $5,$0
+  lpb $0,1
+    mul $6,$5
+    mov $5,$0
+    mov $1,$0
+    mov $3,$3
+    mov $4,2
+    mov $6,18
+    sub $0,2
+    add $0,1
+    mov $1,8
+    mov $0,1
+    pow $6,3
+    sub $0,3018
+    mov $4,5
+    sub $1,78
+    add $4,1
+    mul $5,$2
+    mov $6,$1
+    mov $0,34
+    mov $4,$5
+    mov $2,$4
+    add $5,1
+    mov $6,$6
+    mov $1,49
+    sub $2,1
+    sub $6,$3
+    mov $5,$6
+    mod $0,8
+    add $5,$3
+    add $6,$3
+    div $1,2
+    add $5,1
+    mov $0,1
+    add $0,$2
+    add $3,1
+    mov $3,2
+    mov $1,$0
+    sub $3,$1
+    add $6,$1
+    sub $0,1
+    sub $0,1
+    add $0,1
+    mov $4,$0
+    mov $6,$4
+    sub $4,$6
+    add $3,1
+    sub $5,1
+    mov $4,30
+    add $6,$2
+    sub $3,1
+    sub $5,$2
+    add $4,2
+    mov $2,2
+  lpe
+  mov $1,$0
+  add $8,$1
+lpe
+mov $1,$8

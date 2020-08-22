@@ -1,64 +1,14 @@
 ; A028763: Nonsquares mod 50.
 ; 2,3,5,7,8,10,12,13,15,17,18,20,22,23,27,28,30,32,33,35,37,38,40,42,43,45,47,48
 
-mov $6,$0
-div $0,14
 mov $2,$0
-add $0,$6
-mov $3,2
-mov $1,$6
-add $1,$3
-add $6,170
-mov $5,$0
-mov $0,1
-mul $6,$5
-lpb $0,1
-  sub $1,2
-  add $0,1
-  sub $1,1
-  sub $0,1
-  add $1,$6
-  mov $4,$2
-  pow $0,2
-  pow $3,4
-  mov $4,2
-  sub $5,$2
-  sub $2,1
-  add $6,1
-  add $0,$0
-  mov $1,2
-  add $5,1
-  add $1,$2
-  add $3,$0
-lpe
-add $3,25
+div $0,14
+add $0,$2
+mov $3,$0
 mov $0,5
-mov $1,1
-add $4,$5
+mov $4,$3
 mul $0,$4
-sub $5,$5
-add $3,$1
-sub $1,6
-mov $5,21
-pow $1,$4
-mov $4,$5
 mov $4,$0
-clr $2,2
-pow $0,2
-mul $3,$6
-add $1,$0
-add $0,$3
-mov $2,1
-sub $5,$4
-mov $2,1
-clr $2,2
-mov $2,8
-mod $1,4
-mul $0,$1
-sub $2,$0
-mov $2,$3
-sub $0,$0
 div $4,3
-mov $3,1
 mov $1,$4
 add $1,2

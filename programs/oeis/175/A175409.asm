@@ -1,0 +1,83 @@
+; A175409: Successive numbers of consecutive positive terms to add when rearranging the alternating harmonic series to sum to log[7/3].
+; 1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,2,1,1,2
+
+mov $7,$0
+mov $9,2
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  add $0,$9
+  sub $0,1
+  mov $1,1
+  add $1,$0
+  mov $4,0
+  mov $6,$0
+  mov $6,1
+  add $6,$4
+  mov $4,$0
+  mov $5,2
+  mov $3,$5
+  add $3,$0
+  mov $0,10
+  mov $6,$4
+  add $6,$5
+  mov $4,$0
+  lpb $0,1
+    sub $4,5
+    mul $5,$5
+    mov $2,$5
+    mov $3,1
+    add $1,1
+    add $6,8
+    sub $4,$3
+    add $0,$5
+    sub $0,1
+    add $4,4
+    mul $1,$0
+    sub $6,$3
+    add $3,2
+    mov $3,1
+    sub $2,$0
+    sub $0,$4
+    sub $3,1
+    add $2,1
+    sub $1,2
+    mov $0,6
+    add $5,2
+    div $1,6
+    mov $2,$0
+    mov $0,$2
+    mov $2,$6
+    add $0,3
+    mov $5,$3
+    sub $6,$5
+    mov $5,$4
+    mov $0,1
+  lpe
+  sub $5,2
+  add $0,$4
+  mul $0,$6
+  mov $6,$0
+  mov $2,$6
+  mov $2,$6
+  div $1,6
+  sub $3,$5
+  mul $6,$3
+  mod $3,2
+  mov $4,3
+  add $1,$3
+  add $2,$5
+  mov $5,5
+  mov $10,$9
+  lpb $10,1
+    mov $8,$1
+    sub $10,1
+  lpe
+lpe
+lpb $7,1
+  sub $8,$1
+  mov $7,0
+lpe
+mov $1,$8
+add $1,1
