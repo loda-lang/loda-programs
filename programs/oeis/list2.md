@@ -59,7 +59,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A202201](http://oeis.org/A202201) ([L18 program](202/A202201.asm)): Number of (n+2) X 9 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202206](http://oeis.org/A202206) ([L97 program](202/A202206.asm)): a(n) = 3*a(n-1)+3*a(n-2) with a(0)=1 and a(1)=2.
 * [A202207](http://oeis.org/A202207) ([L09 program](202/A202207.asm)): a(n) = 3*a(n-1) - a(n-2) + a(n-3) with a(0)=1, a(1)=2, a(2)=5.
-* [A202253](http://oeis.org/A202253) ([L08 program](202/A202253.asm)): Number of zero-sum -n..n arrays of 3 elements with adjacent element differences also in -n..n.
+* [A202253](http://oeis.org/A202253) ([L07 program](202/A202253.asm)): Number of zero-sum -n..n arrays of 3 elements with adjacent element differences also in -n..n.
 * [A202304](http://oeis.org/A202304) ([L07 program](202/A202304.asm)): a(n) = floor(sqrt(3*n)).
 * [A202305](http://oeis.org/A202305) ([L11 program](202/A202305.asm)): Floor(sqrt(5*n)).
 * [A202306](http://oeis.org/A202306) ([L15 program](202/A202306.asm)): Floor(sqrt(7*n)).
@@ -266,6 +266,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A209294](http://oeis.org/A209294) ([L05 program](209/A209294.asm)): a(n) = (7*n^2 - 7*n + 4)/2.
 * [A209302](http://oeis.org/A209302) ([L13 program](209/A209302.asm)): Table T(n,k) = max{n+k-1, n+k-1} n, k > 0, read by sides of squares from T(1,n) to T(n,n), then from T(n,n) to T(n,1).
 * [A209304](http://oeis.org/A209304) ([L14 program](209/A209304.asm)): Table T(n,k)=n+4*k-4 n, k > 0, read by antidiagonals.
+* [A209359](http://oeis.org/A209359) ([L63 program](209/A209359.asm)): a(n) = 2^n * (n^4 - 4*n^3 + 18*n^2 - 52*n + 75) - 75.
 * [A209505](http://oeis.org/A209505) ([L10 program](209/A209505.asm)): Half the number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having two or four distinct clockwise edge differences.
 * [A209530](http://oeis.org/A209530) ([L10 program](209/A209530.asm)): Half the number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having exactly two distinct clockwise edge differences.
 * [A209594](http://oeis.org/A209594) ([L20 program](209/A209594.asm)): Number of 3 X 3 0..n arrays with every element equal to a diagonal or antidiagonal reflection.
@@ -1096,6 +1097,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230630](http://oeis.org/A230630) ([L06 program](230/A230630.asm)): a(1)=0; thereafter a(n) = (1 + a(floor(n/2))) mod 3.
 * [A230641](http://oeis.org/A230641) ([L10 program](230/A230641.asm)): a(n) = n + (sum of digits in base-3 representation of n).
 * [A230664](http://oeis.org/A230664) ([L07 program](230/A230664.asm)): Floor(3^n / n^2).
+* [A230748](http://oeis.org/A230748) ([L67 program](230/A230748.asm)): Duplicate of A078607.
 * [A230864](http://oeis.org/A230864) ([L23 program](230/A230864.asm)): log2*(n) (version 3): number of iterations log_2(log_2(log_2(...(n)...))) required for the result to be <= 1.
 * [A230928](http://oeis.org/A230928) ([L21 program](230/A230928.asm)): Number of black-square subarrays of (n+2) X (1+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
 * [A230929](http://oeis.org/A230929) ([L09 program](230/A230929.asm)): Number of black-square subarrays of (n+2) X (2+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
@@ -1114,6 +1116,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231309](http://oeis.org/A231309) ([L17 program](231/A231309.asm)): Recurrence a(n) = a(n-2) + n^M for M=10, starting with a(0)=0, a(1)=1.
 * [A231475](http://oeis.org/A231475) ([L12 program](231/A231475.asm)): Largest integer less than 5 and coprime to n.
 * [A231500](http://oeis.org/A231500) ([L24 program](231/A231500.asm)): a(n) = Sum_{i=0..n} wt(i)^2, where wt(i) = A000120(i).
+* [A231501](http://oeis.org/A231501) ([L56 program](231/A231501.asm)): a(n) = Sum_{i=0..n} wt(i)^3, where wt() = A000120().
 * [A231502](http://oeis.org/A231502) ([L40 program](231/A231502.asm)): a(n) = Sum_{i=0..n} wt(i)^4, where wt() = A000120().
 * [A231559](http://oeis.org/A231559) ([L07 program](231/A231559.asm)): a(n) = floor( A000326(n)/2 ).
 * [A231560](http://oeis.org/A231560) ([L08 program](231/A231560.asm)): Floor(sum_{i=2..n} 1/(i*log(i))).
@@ -1459,10 +1462,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244750](http://oeis.org/A244750) ([L16 program](244/A244750.asm)): 0-additive sequence: a(n) is the smallest number larger than a(n-1) which is not the sum of any subset of earlier terms, with initial values {0, 2, 3, 4}.
 * [A244762](http://oeis.org/A244762) ([L09 program](244/A244762.asm)): (5*3^n-2*n-1)/4.
 * [A244802](http://oeis.org/A244802) ([L06 program](244/A244802.asm)): The 60º spoke (or ray) of a hexagonal spiral of Ulam.
-* [A244803](http://oeis.org/A244803) ([L06 program](244/A244803.asm)): The 360º spoke (or ray) of a hexagonal spiral of Ulam.
+* [A244803](http://oeis.org/A244803) ([L05 program](244/A244803.asm)): The 360º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244804](http://oeis.org/A244804) ([L06 program](244/A244804.asm)): The 300º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244805](http://oeis.org/A244805) ([L06 program](244/A244805.asm)): The 240º spoke (or ray) of a hexagonal spiral of Ulam.
-* [A244806](http://oeis.org/A244806) ([L12 program](244/A244806.asm)): The 180º spoke (or ray) of a hexagonal spiral of Ulam.
+* [A244806](http://oeis.org/A244806) ([L09 program](244/A244806.asm)): The 180º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244855](http://oeis.org/A244855) ([L17 program](244/A244855.asm)): Fibonacci(n)^4-1.
 * [A244870](http://oeis.org/A244870) ([L46 program](244/A244870.asm)): Number of magic labelings with magic sum n of 2nd graph shown in link.
 * [A244892](http://oeis.org/A244892) ([L05 program](244/A244892.asm)): a(n) = a(n-a(n-1)) with initial values 5,2,5,2.
@@ -2144,7 +2147,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A264448](http://oeis.org/A264448) ([L11 program](264/A264448.asm)): a(n) = n*(n + 11)*(n + 22)*(n + 33)/24.
 * [A264449](http://oeis.org/A264449) ([L17 program](264/A264449.asm)): a(n) = n*(n + 7)*(n + 14)*(n + 21)*(n + 28)/120.
 * [A264619](http://oeis.org/A264619) ([L28 program](264/A264619.asm)): a(0) = 1; for n>0, working in binary, write n followed by 1 then n-reversed (including leading zeros); show result in base 10.
-* [A264749](http://oeis.org/A264749) ([L80 program](264/A264749.asm)): a(n) = floor(n/BL(n)) where BL(n) = A070939(n) is the binary length of n.
+* [A264749](http://oeis.org/A264749) ([L28 program](264/A264749.asm)): a(n) = floor(n/BL(n)) where BL(n) = A070939(n) is the binary length of n.
 * [A264750](http://oeis.org/A264750) ([L10 program](264/A264750.asm)): Number of sequences of 5 throws of an n-sided die (with faces numbered 1, 2, ..., n) in which the sum of the throws first reaches or exceeds n on the 5th throw.
 * [A264754](http://oeis.org/A264754) ([L08 program](264/A264754.asm)): Expansion of (1 + 2*x - 2*x^3 + x^4)/((1 - x)^3*(1 + x)^2).
 * [A264763](http://oeis.org/A264763) ([L38 program](264/A264763.asm)): a(0) = a(1) = 1; for n>1, a(n) = a(n-1) + (a(n-2) mod 5).
@@ -3394,6 +3397,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297251](http://oeis.org/A297251) ([L19 program](297/A297251.asm)): Numbers whose base-3 digits have greater up-variation than down-variation; see Comments.
 * [A297382](http://oeis.org/A297382) ([L11 program](297/A297382.asm)): Denominator of -A023900(n)/2.
 * [A297402](http://oeis.org/A297402) ([L18 program](297/A297402.asm)): a(n) = gcd_{k=1..n} (prime(k+1)^n-1)/2.
+* [A297444](http://oeis.org/A297444) ([L52 program](297/A297444.asm)): a(n) = a(n-1) + 9*a(n-2) - 9*a(n-3), where a(0) = 1, a(1) = 3, a(2) = 6, a(3) = 33.
 * [A297445](http://oeis.org/A297445) ([L12 program](297/A297445.asm)): a(n) = a(n-1) + 9*a(n-2) - 9*a(n-3), where a(0) = 1, a(1) = 5, a(2) = 11.
 * [A297464](http://oeis.org/A297464) ([L05 program](297/A297464.asm)): Solution (a(n)) of the system of 4 complementary equations in Comments.
 * [A297469](http://oeis.org/A297469) ([L11 program](297/A297469.asm)): Solution (bb(n)) of the system of 3 complementary equations in Comments.

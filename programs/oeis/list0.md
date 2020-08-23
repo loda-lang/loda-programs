@@ -1427,6 +1427,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014833](http://oeis.org/A014833) ([L07 program](014/A014833.asm)): a(n) = 2^n - n(n+1)/2.
 * [A014844](http://oeis.org/A014844) ([L07 program](014/A014844.asm)): a(n) = 2^n - n*(n-1)/2.
 * [A014848](http://oeis.org/A014848) ([L04 program](014/A014848.asm)): n^2 - floor( n/2 ).
+* [A014856](http://oeis.org/A014856) ([L11 program](014/A014856.asm)): Inverse of 847th cyclotomic polynomial.
 * [A014915](http://oeis.org/A014915) ([L11 program](014/A014915.asm)): a(1)=1, a(n) = n*3^(n-1) + a(n-1).
 * [A014916](http://oeis.org/A014916) ([L07 program](014/A014916.asm)): a(1)=1, a(n) = n*4^(n-1) + a(n-1).
 * [A014917](http://oeis.org/A014917) ([L10 program](014/A014917.asm)): a(1)=1, a(n) = n*5^(n-1) + a(n-1).
@@ -2682,7 +2683,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A028993](http://oeis.org/A028993) ([L07 program](028/A028993.asm)): Odd 10-gonal (or decagonal) numbers.
 * [A028994](http://oeis.org/A028994) ([L07 program](028/A028994.asm)): Even 10-gonal (or decagonal) numbers.
 * [A029577](http://oeis.org/A029577) ([L04 program](029/A029577.asm)): Number of permutations of an n-set containing a 10-cycle.
-* [A029578](http://oeis.org/A029578) ([L06 program](029/A029578.asm)): The natural numbers interleaved with the even numbers.
+* [A029578](http://oeis.org/A029578) ([L11 program](029/A029578.asm)): The natural numbers interleaved with the even numbers.
 * [A029579](http://oeis.org/A029579) ([L12 program](029/A029579.asm)): a(2*n) = n+1, a(2*n-1) = 2*n-1.
 * [A029580](http://oeis.org/A029580) ([L40 program](029/A029580.asm)): a(n+1) = [ A*a(n)+B ]/p^r, where p^r is the highest power of p diving [ A*a(n)+B ] and p=2, A=2.00013, B=3.0.
 * [A029609](http://oeis.org/A029609) ([L20 program](029/A029609.asm)): Central numbers in the (2,3)-Pascal triangle A029600.
@@ -3151,6 +3152,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036800](http://oeis.org/A036800) ([L07 program](036/A036800.asm)): a(n) = -6 + 2^(n+1)*(3 - 2*n + n^2).
 * [A036826](http://oeis.org/A036826) ([L08 program](036/A036826.asm)): A036800/2.
 * [A036827](http://oeis.org/A036827) ([L14 program](036/A036827.asm)): a(n) = 26+2^(n+1)*(-13+9*n-3*n^2+n^3).
+* [A036828](http://oeis.org/A036828) ([L12 program](036/A036828.asm)): A036827/2.
 * [A036837](http://oeis.org/A036837) ([L22 program](036/A036837.asm)): Schoenheim bound L_1(n,n-5,n-6).
 * [A036982](http://oeis.org/A036982) ([L17 program](036/A036982.asm)): a(n)=[ a*a(n-1)+b ]/p^r, where a=2.001, b=3.2, p=2 and p^r is the highest power of p dividing [ a*a(n-1)+b ].
 * [A036987](http://oeis.org/A036987) ([L09 program](036/A036987.asm)): Fredholm-Rueppel sequence.
@@ -4600,7 +4602,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054135](http://oeis.org/A054135) ([L05 program](054/A054135.asm)): T(n,1), array T as in A054134.
 * [A054145](http://oeis.org/A054145) ([L13 program](054/A054145.asm)): Row sums of array T as in A054144.
 * [A054146](http://oeis.org/A054146) ([L12 program](054/A054146.asm)): a(n) = A054145(n)/2.
-* [A054147](http://oeis.org/A054147) ([L13 program](054/A054147.asm)): a(n) = T(2n,n), array T as in A054144.
+* [A054147](http://oeis.org/A054147) ([L11 program](054/A054147.asm)): a(n) = T(2n,n), array T as in A054144.
 * [A054243](http://oeis.org/A054243) ([L16 program](054/A054243.asm)): Number of partitions of n into distinct positive parts <= n, where parts are combined by XOR.
 * [A054248](http://oeis.org/A054248) ([L26 program](054/A054248.asm)): Binary entropy: a(n) = n + min { a(k)+a(n-k) : 1 <= k <= n-1 }.
 * [A054254](http://oeis.org/A054254) ([L09 program](054/A054254.asm)): a(n) is n plus the minimum of the a(i)*a(n-i) of the previous i=1..n-1.
@@ -6024,6 +6026,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A074323](http://oeis.org/A074323) ([L10 program](074/A074323.asm)): Coefficient of the highest power of q in the expansion of nu(0)=1, nu(1)=b and for n>=2, nu(n)=b*nu(n-1)+lambda*(n-1)_q*nu(n-2) with (b,lambda)=(1,2), where (n)_q=(1+q+...+q^(n-1)) and q is a root of unity.
 * [A074324](http://oeis.org/A074324) ([L34 program](074/A074324.asm)): a(2n+1) = 3^n, a(2n) = 4*3^(n-1) except for a(0) = 1.
 * [A074330](http://oeis.org/A074330) ([L43 program](074/A074330.asm)): a(n)=sum(k=1,n,2^b(k)) where b(k) denotes the number of 1's in the binary representation of k.
+* [A074331](http://oeis.org/A074331) ([L83 program](074/A074331.asm)): a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
 * [A074358](http://oeis.org/A074358) ([L19 program](074/A074358.asm)): Coefficient of q^1 in nu(n), where nu(0)=1, nu(1)=b and, for n >= 2, nu(n) = b*nu(n-1) + lambda*(1 + q + q^2 + ... + q^(n-2))*nu(n-2) with (b,lambda)=(2,2).
 * [A074377](http://oeis.org/A074377) ([L09 program](074/A074377.asm)): Generalized 10-gonal numbers: m*(4*m - 3) for m = 0, +- 1, +- 2, +- 3, ...
 * [A074378](http://oeis.org/A074378) ([L07 program](074/A074378.asm)): Even triangular numbers halved.
@@ -6680,6 +6683,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084182](http://oeis.org/A084182) ([L29 program](084/A084182.asm)): 3^n+(-1)^n-[1/(n+1)], where [] represents the floor function.
 * [A084183](http://oeis.org/A084183) ([L36 program](084/A084183.asm)): Jacobsthal reverse-pair sequence.
 * [A084184](http://oeis.org/A084184) ([L17 program](084/A084184.asm)): Partial sums of a Jacobsthal related sequence.
+* [A084213](http://oeis.org/A084213) ([L43 program](084/A084213.asm)): Binomial transform of A081250.
 * [A084214](http://oeis.org/A084214) ([L11 program](084/A084214.asm)): Inverse binomial transform of a math magic problem.
 * [A084215](http://oeis.org/A084215) ([L04 program](084/A084215.asm)): Expansion of g.f.: (1+x^2)/(1-2*x).
 * [A084221](http://oeis.org/A084221) ([L22 program](084/A084221.asm)): a(n+2) = 4*a(n), with a(0)=1, a(1)=3.
@@ -6723,7 +6727,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084639](http://oeis.org/A084639) ([L05 program](084/A084639.asm)): Expansion of x*(1+2*x)/((1+x)*(1-x)*(1-2*x)).
 * [A084640](http://oeis.org/A084640) ([L05 program](084/A084640.asm)): Generalized Jacobsthal numbers.
 * [A084642](http://oeis.org/A084642) ([L16 program](084/A084642.asm)): A Jacobsthal ratio.
-* [A084672](http://oeis.org/A084672) ([L09 program](084/A084672.asm)): G.f.: (1+x^2+2*x^4)/((1-x^3)*(1-x)^2).
+* [A084672](http://oeis.org/A084672) ([L07 program](084/A084672.asm)): G.f.: (1+x^2+2*x^4)/((1-x^3)*(1-x)^2).
 * [A084684](http://oeis.org/A084684) ([L05 program](084/A084684.asm)): Degrees of certain maps.
 * [A084849](http://oeis.org/A084849) ([L05 program](084/A084849.asm)): a(n) = 1 + n + 2*n^2.
 * [A084850](http://oeis.org/A084850) ([L12 program](084/A084850.asm)): 2^(n-1)*(n^2+2n+2).
@@ -7530,6 +7534,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099920](http://oeis.org/A099920) ([L08 program](099/A099920.asm)): a(n) = (n+1)*F(n), F(n) = Fibonacci numbers A000045.
 * [A099921](http://oeis.org/A099921) ([L15 program](099/A099921.asm)): a(n) = 5*Fibonacci(n)^2.
 * [A099922](http://oeis.org/A099922) ([L11 program](099/A099922.asm)): a(n) = F(4n) - 2n, where F(n) = Fibonacci numbers A000045.
+* [A099926](http://oeis.org/A099926) ([L99 program](099/A099926.asm)): Duplicate of A098600.
 * [A099938](http://oeis.org/A099938) ([L10 program](099/A099938.asm)): Consider the sequence of circles C0, C1, C2, C3 ..., where C0 is a half-circle of radius 1. C1 is the largest circle that fits into C0 and has radius 1/2. C(n+1) is the largest circle that fits inside C0 but outside C(n), etc. Sequence gives the curvatures (reciprocals of the radii) of the circles.
 * [A099942](http://oeis.org/A099942) ([L08 program](099/A099942.asm)): Start with 1, then alternately double or add 2.
 * [A099943](http://oeis.org/A099943) ([L03 program](099/A099943.asm)): Number of 5 X n binary matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (01,1) and (11;0).

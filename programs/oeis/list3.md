@@ -43,6 +43,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301623](http://oeis.org/A301623) ([L05 program](301/A301623.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 5.
 * [A301628](http://oeis.org/A301628) ([L06 program](301/A301628.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 7.
 * [A301647](http://oeis.org/A301647) ([L05 program](301/A301647.asm)): a(n) = n^3 - (n mod 2).
+* [A301653](http://oeis.org/A301653) ([L80 program](301/A301653.asm)): Expansion of x*(1 + 2*x)/((1 - x)*(1 + x)*(1 - x - x^2)).
 * [A301654](http://oeis.org/A301654) ([L22 program](301/A301654.asm)): Circumference of the n-triangular honeycomb acute knight graph.
 * [A301657](http://oeis.org/A301657) ([L13 program](301/A301657.asm)): Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
 * [A301673](http://oeis.org/A301673) ([L13 program](301/A301673.asm)): Partial sums of A301672.
@@ -99,7 +100,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A303212](http://oeis.org/A303212) ([L17 program](303/A303212.asm)): Number of minimum total dominating sets in the n X n rook complement graph.
 * [A303272](http://oeis.org/A303272) ([L02 program](303/A303272.asm)): Multiples of 1852.
 * [A303295](http://oeis.org/A303295) ([L10 program](303/A303295.asm)): a(n) is the maximum water retention of a height-3 length-n number parallelogram with maximum water area.
-* [A303296](http://oeis.org/A303296) ([L23 program](303/A303296.asm)): Digital roots of fourth powers A000583.
+* [A303296](http://oeis.org/A303296) ([L11 program](303/A303296.asm)): Digital roots of fourth powers A000583.
 * [A303298](http://oeis.org/A303298) ([L29 program](303/A303298.asm)): Generalized 21-gonal (or icosihenagonal) numbers: m*(19*m - 17)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A303299](http://oeis.org/A303299) ([L28 program](303/A303299.asm)): Generalized 22-gonal (or icosidigonal) numbers: m*(10*m - 9) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A303302](http://oeis.org/A303302) ([L03 program](303/A303302.asm)): a(n) = 34*n^2.
@@ -929,7 +930,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A333320](http://oeis.org/A333320) ([L06 program](333/A333320.asm)): a(n) is the number of subsets of {1..n} that contain exactly 4 odd and 1 even numbers.
 * [A333321](http://oeis.org/A333321) ([L08 program](333/A333321.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 4 even numbers.
 * [A333525](http://oeis.org/A333525) ([L05 program](333/A333525.asm)): Degree of polytope representing the number n.
-* [A333574](http://oeis.org/A333574) ([L10 program](333/A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.
+* [A333574](http://oeis.org/A333574) ([L09 program](333/A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.
 * [A333616](http://oeis.org/A333616) ([L22 program](333/A333616.asm)): Expansion of x*(1 + 2*x + x^2 - 4*x^3 - x^4 + 2*x^5)/((1 - x)^3*(1 + x)^2).
 * [A333637](http://oeis.org/A333637) ([L25 program](333/A333637.asm)): The number of cells which contain multiple squares of a Genealodron formed from 2^n - 1 equal-sized squares (when viewed from above).
 * [A333714](http://oeis.org/A333714) ([L07 program](333/A333714.asm)): Squares visited by a chess king moving on a square-spiral numbered board where the king moves to the adjacent unvisited square containing the spiral number with the most divisors. In case of a tie it chooses the square with the highest spiral number.
@@ -964,5 +965,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336819](http://oeis.org/A336819) ([L16 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
 * [A336867](http://oeis.org/A336867) ([L42 program](336/A336867.asm)): Numbers n such that n! does not have distinct prime multiplicities.
 * [A336868](http://oeis.org/A336868) ([L17 program](336/A336868.asm)): Indicator function for numbers n such that n! has distinct prime multiplicities.
+* [A337134](http://oeis.org/A337134) ([L63 program](337/A337134.asm)): a(n) = Sum_{k=1..n} floor(sqrt(2k-1)).
 * [A337139](http://oeis.org/A337139) ([L20 program](337/A337139.asm)): Indices m of repunits R_m that are not Colombian (or self) numbers.
-* [A337252](http://oeis.org/A337252) ([L133 program](337/A337252.asm)): Digits of 2^n can be rearranged to form t^2, for t not a power of 2.
+* [A337252](http://oeis.org/A337252) ([L40 program](337/A337252.asm)): Digits of 2^n can be rearranged with no leading zeros to form t^2, for t not a power of 2.
