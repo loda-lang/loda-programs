@@ -1480,6 +1480,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245179](http://oeis.org/A245179) ([L20 program](245/A245179.asm)): Numbers of the form 2^k+3 or 3*2^k+1, k >= 2.
 * [A245219](http://oeis.org/A245219) ([L73 program](245/A245219.asm)): Continued fraction expansion of the constant c in A245218; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A001951, else f(n,x) = 1/x.
 * [A245231](http://oeis.org/A245231) ([L12 program](245/A245231.asm)): Maximum frustration of complete bipartite graph K(n,4).
+* [A245235](http://oeis.org/A245235) ([L61 program](245/A245235.asm)): Repeat 2^(n*(n+1)/2) n+1 times.
 * [A245288](http://oeis.org/A245288) ([L41 program](245/A245288.asm)): a(n) = (4*n^2 - 2*n - 1 + (2*n^2 - 2*n + 1)*(-1)^n)/16.
 * [A245301](http://oeis.org/A245301) ([L07 program](245/A245301.asm)): a(n) = n*(7*n^2 + 15*n + 8)/6.
 * [A245306](http://oeis.org/A245306) ([L15 program](245/A245306.asm)): a(n) = Fibonacci(n)^2+1.
@@ -1491,7 +1492,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245357](http://oeis.org/A245357) ([L64 program](245/A245357.asm)): Number of numbers with property that their base 5/4 expansion (see A024634) has n digits.
 * [A245391](http://oeis.org/A245391) ([L10 program](245/A245391.asm)): a(n) = 2^n*binomial(2*(n+1), n).
 * [A245399](http://oeis.org/A245399) ([L66 program](245/A245399.asm)): Number of nonnegative integers with property that their base 6/5 expansion (see A024638) has n digits.
-* [A245400](http://oeis.org/A245400) ([L91 program](245/A245400.asm)): Number of nonnegative integers with property that their base 9/8 expansion (see A024656) has n digits.
+* [A245400](http://oeis.org/A245400) ([L63 program](245/A245400.asm)): Number of nonnegative integers with property that their base 9/8 expansion (see A024656) has n digits.
 * [A245401](http://oeis.org/A245401) ([L70 program](245/A245401.asm)): Number of nonnegative integers with property that their base 8/7 expansion (see A024649) has n digits.
 * [A245402](http://oeis.org/A245402) ([L68 program](245/A245402.asm)): Number of nonnegative integers with property that their base 7/6 expansion (see A024643) has n digits.
 * [A245404](http://oeis.org/A245404) ([L39 program](245/A245404.asm)): Number of nonnegative integers with property that their base 7/2 expansion (see A024639) has n digits.
@@ -2766,6 +2767,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276382](http://oeis.org/A276382) ([L08 program](276/A276382.asm)): a(1) = 1, and a(n) = a(n-1) + floor(3*n/2) + 1 for n >= 2.
 * [A276384](http://oeis.org/A276384) ([L12 program](276/A276384.asm)): Defined by the properties that it starts with 0, and when you successively apply DIFF, RUNS, BISECT, RUNS you get (4,1,3,1) repeated infinitely often.
 * [A276391](http://oeis.org/A276391) ([L07 program](276/A276391.asm)): G.f. satisfies A(x) - 4*A(x^2) = x/(1+x).
+* [A276394](http://oeis.org/A276394) ([L80 program](276/A276394.asm)): Characteristic word associated with the fraction 36/25.
 * [A276598](http://oeis.org/A276598) ([L10 program](276/A276598.asm)): Values of n such that n^2 + 3 is a triangular number (A000217).
 * [A276602](http://oeis.org/A276602) ([L08 program](276/A276602.asm)): Values of n such that n^2 + 10 is a triangular number (A000217).
 * [A276659](http://oeis.org/A276659) ([L07 program](276/A276659.asm)): Accumulation of the upper left triangle used in binomial transform of nonnegative integers.
