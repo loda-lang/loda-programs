@@ -1,0 +1,99 @@
+; A048645: Integers with one or two 1-bits in their binary expansion.
+; 1,2,3,4,5,6,8,9,10,12,16,17,18,20,24,32,33,34,36,40,48,64,65,66,68,72,80,96,128,129,130,132,136,144,160,192,256,257,258,260,264,272,288,320,384,512,513,514,516,520,528,544,576,640,768,1024,1025,1026,1028,1032
+
+mov $15,$0
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $8,$0
+  mov $10,2
+  lpb $10,1
+    clr $0,8
+    sub $10,1
+    mov $0,$8
+    add $0,$10
+    sub $0,2
+    mov $5,$0
+    mov $7,$0
+    add $7,1
+    lpb $7,1
+      clr $0,5
+      sub $7,1
+      mov $0,$5
+      sub $0,$7
+      mov $3,4
+      mov $3,1
+      mov $4,3
+      cmp $4,$3
+      mov $2,$4
+      add $4,$4
+      lpb $0,1
+        mov $1,2
+        sub $0,1
+        pow $1,$0
+        add $4,$4
+        add $2,1
+        sub $0,$2
+        mov $1,$1
+        mov $4,$4
+      lpe
+      add $3,$2
+      add $4,25
+      sub $4,$2
+      mul $2,2
+      add $2,$4
+      mov $2,1
+      mov $4,3
+      sub $2,$4
+      mov $4,1
+      mov $3,$0
+      sub $0,1
+      sub $1,1
+      mov $4,1
+      add $4,$2
+      sub $2,1
+      pow $2,6
+      add $4,1
+      mov $4,7
+      mov $0,1
+      add $2,232
+      add $1,6
+      sub $4,4
+      mov $0,$3
+      mov $4,1
+      sub $1,7
+      add $1,1
+      add $6,$1
+    lpe
+    mov $1,$6
+    mov $11,$10
+    lpb $11,1
+      mov $9,$1
+      sub $11,1
+    lpe
+  lpe
+  lpb $8,1
+    sub $9,$1
+    mov $8,0
+  lpe
+  mov $1,$9
+  sub $1,1
+  div $1,2
+  add $1,0
+  add $13,$1
+lpe
+mov $1,$13
+add $1,2
+mov $16,$15
+mov $17,$16
+mul $17,1
+add $1,$17
+mul $16,$15
+mul $16,$15
+sub $1,2
+add $1,1
