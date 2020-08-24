@@ -1,85 +1,19 @@
 ; A112440: Next term is the sum of the last 10 digits in the sequence, beginning with a(10) = 9.
 ; 0,0,0,0,0,0,0,0,0,9,9,18,27,36,45,54,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45
 
+sub $0,1
 mov $4,$0
-clr $3,$4
-mov $7,1
-mov $5,1
-mov $4,434
-add $4,23
-mov $6,$3
-sub $7,6
-sub $6,4
-sub $0,$5
-mov $2,1
-sub $2,2
-mov $8,2
-mov $6,$0
-mul $0,$6
-add $3,$5
-mov $4,3
-add $2,2
-mov $5,1
-mov $7,2
-add $6,2
-sub $2,$7
-mov $5,6
+mul $0,$4
+mov $2,2
 div $0,28
 lpb $0,1
-  bin $8,5
-  mov $0,5
   mov $3,5
-  mov $5,1
-  div $0,20
-  mov $1,$4
-  mov $6,2
-  mov $8,4
-  mov $0,1
-  mul $2,12
-  mov $5,$7
-  add $0,2
-  sub $1,$1
-  mov $6,$5
-  add $0,$6
-  add $6,$3
-  mov $1,1
-  mov $3,1
-  sub $0,1
-  pow $8,2
-  add $7,5
-  mov $7,120
-  add $3,2
-  div $3,$8
-  mov $4,2
-  div $5,2
-  mov $8,1
-  mov $3,2
+  mov $5,$2
+  mov $4,$5
   add $4,$3
-  mov $7,1
-  pow $2,$5
-  mov $0,6
-  sub $1,1
-  mov $2,$5
-  add $5,2
-  add $4,$6
-  mul $0,2
-  mov $0,$6
-  gcd $3,$1
+  mov $2,1
+  mov $0,$4
 lpe
-mov $0,$0
-div $5,4
-mov $4,1
-add $2,2
-sub $7,1
-add $3,$4
-log $4,1
-add $7,33000
-pow $7,$2
-sub $2,$0
-mov $6,0
 sub $0,1
-mov $7,$1
-add $2,$2
-mul $4,2
 mov $1,$0
 mul $1,9
