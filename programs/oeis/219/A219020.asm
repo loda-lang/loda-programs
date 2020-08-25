@@ -1,0 +1,47 @@
+; A219020: Sum of the cubes of the first n even-indexed Fibonacci numbers divided by the sum of the first n terms.
+; 1,7,45,297,2002,13630,93177,638001,4371235,29956465,205313076,1407206412,9645056785,66107994667,453110391657,3105663400665,21286529888422,145900036590826,1000013702089545,6854195814790005,46979356835860351
+
+mov $4,1
+mov $1,1
+mov $3,$0
+mov $1,2
+lpb $0,1
+  add $4,$1
+  add $1,$4
+  mov $2,1
+  add $0,2
+  sub $0,1
+  sub $0,2
+lpe
+mov $3,$2
+mov $2,1
+mod $4,2
+add $3,461
+mov $2,$2
+mov $3,1
+add $2,$4
+sub $3,$3
+sub $1,$3
+mul $2,2
+mov $0,12
+mov $3,1
+mov $2,$1
+add $2,$2
+add $2,1
+add $4,1
+add $4,5
+add $0,$4
+add $0,2
+mov $3,$0
+add $2,3
+mov $0,$1
+add $0,1
+add $4,$4
+add $2,1
+mul $0,$1
+mov $1,$3
+add $4,$4
+mov $1,$0
+sub $1,6
+div $1,4
+add $1,1
