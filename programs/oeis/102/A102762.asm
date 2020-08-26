@@ -1,0 +1,107 @@
+; A102762: Curvatures of (largest) kissing circles along the circumference, starting with curvature = -1 and 2.
+; -1,2,2,3,6,11,18,27,38,51,66,83,102,123,146,171,198,227,258,291,326,363,402,443,486,531,578,627,678,731,786,843,902,963,1026,1091,1158,1227,1298,1371,1446,1523,1602,1683,1766,1851,1938,2027,2118,2211,2306,2403,2502,2603,2706,2811,2918,3027,3138,3251,3366
+
+mov $1,$0
+mov $6,$0
+mov $2,1
+mov $10,$0
+mov $4,1
+mov $8,$6
+mov $7,$1
+mul $0,24
+sub $1,$4
+add $10,7
+mov $4,$10
+mov $5,2
+add $7,19008
+mov $5,1
+mov $4,$1
+mov $5,$0
+mov $10,$0
+add $1,$1
+trn $4,1
+mov $7,$4
+add $2,$0
+add $7,1
+mul $4,$4
+mov $8,1
+mov $8,$6
+lpb $0,1
+  add $5,2
+  mov $9,$0
+  add $8,$10
+  mul $8,3
+  trn $1,$9
+  mov $0,5
+  sub $7,2
+  sub $0,1
+  mul $5,6
+  mov $6,1
+  mov $0,$10
+  add $8,$7
+  add $4,3
+  mov $3,$5
+  mov $10,8
+  mov $7,$8
+  mov $8,1
+  mul $4,3
+  mov $1,1
+  add $5,$0
+  mov $7,1
+  add $1,$10
+  mov $2,$9
+  add $4,$4
+  add $3,1
+  sub $0,1
+  add $2,$3
+  sub $0,$2
+  mov $2,1
+  mul $8,6
+  add $3,$7
+  add $9,$4
+  add $3,$6
+  mov $2,6
+  add $3,$9
+  mov $5,3
+  mul $6,2
+  mov $9,1
+  mov $0,0
+  mov $8,1
+  mov $8,2
+  add $2,$2
+  add $10,$9
+lpe
+sub $3,$2
+add $1,1
+mul $3,2
+mov $9,1
+mul $5,$6
+add $6,$9
+sub $4,5
+mul $9,$1
+sub $3,1
+mov $6,2
+mul $0,2
+mov $2,$7
+mov $10,$5
+mov $9,1
+mov $0,$5
+pow $5,5
+sub $0,7
+sub $6,$2
+add $9,$10
+add $5,$10
+mov $0,$1
+sub $0,1
+add $10,1
+add $2,$2
+add $7,$5
+mov $8,1
+div $0,$10
+sub $6,2
+mul $4,2
+add $3,$8
+mov $1,$4
+sub $1,26
+div $1,12
+add $1,2

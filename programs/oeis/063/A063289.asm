@@ -1,0 +1,84 @@
+; A063289: Dimension of the space of weight n cuspidal newforms for Gamma_1( 16 ).
+; -1,2,7,11,16,20,25,29,34,38,43,47,52,56,61,65,70,74,79,83,88,92,97,101,106,110,115,119,124,128,133,137,142,146,151,155,160,164,169,173,178,182,187,191,196,200,205,209,214,218,223,227,232,236
+
+mov $5,4
+mov $3,1
+mul $3,2
+add $5,1
+mov $6,$5
+mov $2,$0
+add $2,$6
+mul $5,2
+add $6,2
+mul $3,$0
+mov $5,1
+mov $1,$3
+mov $2,$3
+mov $8,$3
+add $5,2
+mul $2,$3
+add $8,15
+trn $6,5
+div $3,2
+mov $4,9
+add $5,$2
+mov $7,$0
+mov $3,3
+sub $2,$0
+mov $3,$3
+mul $0,$4
+lpb $2,1
+  mov $1,$7
+  mov $2,3
+  mov $7,$2
+  lpb $4,1
+    sub $4,$6
+    mov $1,7
+    add $2,1
+    add $4,$2
+    mov $6,5
+  lpe
+  add $6,$2
+  mov $8,1
+  lpb $5,1
+    add $4,3
+    sub $6,1
+    sub $5,$6
+    sub $2,1
+    mul $1,2
+  lpe
+  sub $0,2
+  sub $7,$1
+  add $1,$4
+  div $1,$2
+  add $5,1
+  mul $3,$2
+  div $0,2
+  lpb $6,1
+    mov $3,$4
+    sub $7,$0
+    mul $0,$8
+    sub $6,$6
+  lpe
+  mov $2,1
+  add $7,1
+  sub $2,1
+  mov $1,$3
+  mov $5,0
+  add $5,1
+  add $2,1
+lpe
+mul $1,$7
+sub $0,1
+sub $8,4
+add $2,$2
+add $8,5
+add $5,$2
+add $3,4
+sub $8,6
+mul $2,$1
+mov $5,$3
+sub $4,8
+add $5,2
+mov $1,2
+mov $1,$0
