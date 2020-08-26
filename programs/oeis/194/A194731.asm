@@ -1,0 +1,106 @@
+; A194731: Digital roots of the nonzero octagonal numbers.
+; 1,8,3,4,2,6,7,5,9,1,8,3,4,2,6,7,5,9,1,8,3,4,2,6,7,5,9,1,8,3,4,2,6,7,5,9,1,8,3,4,2,6,7,5,9,1,8,3,4,2,6,7,5,9,1,8,3,4,2,6,7,5,9,1,8,3,4,2,6,7,5,9,1,8,3,4,2,6,7,5,9,1,8,3,4,2
+
+mov $2,$0
+mov $1,2
+mov $3,3
+mov $10,$1
+add $10,$10
+mov $7,$0
+mov $8,$10
+add $10,$10
+mov $5,$7
+add $7,$0
+add $0,3
+sub $3,$2
+mov $2,9
+mov $0,1
+sub $8,1
+mov $6,$2
+mul $0,2
+mov $3,2
+mov $0,$2
+mov $6,5
+mov $1,$2
+mov $2,$7
+add $10,12
+add $5,$3
+add $0,3
+trn $10,2
+log $5,$8
+mov $9,$10
+mul $7,2
+add $10,1
+pow $10,$3
+mov $4,2
+sub $6,$0
+lpb $0,1
+  mov $4,1
+  add $4,1
+  add $9,$2
+  trn $7,$6
+  sub $0,1
+  add $2,3
+  mov $1,$6
+  mov $4,$9
+  mov $0,$1
+  mov $10,1
+  add $1,$3
+  add $5,2
+  div $8,$10
+  add $6,1
+  mul $2,$8
+  mov $10,$4
+  mul $7,$3
+  add $0,$2
+  mul $0,$10
+  mov $4,7
+  mov $10,$5
+  mov $10,$4
+  mov $4,1
+  mov $10,12
+  add $3,$7
+  mov $2,1
+  mov $9,1
+  mov $5,2
+  sub $7,$8
+  sub $8,1
+  mov $3,1
+  add $5,2
+  mov $10,$3
+  mov $3,$10
+  mul $10,$2
+  clr $10,1
+  div $1,$6
+  mov $10,$6
+  add $4,$9
+  pow $3,2
+  mov $7,$0
+  mov $1,$9
+  add $6,1
+  add $5,$6
+  mul $2,$9
+  add $10,$8
+  mul $5,2
+  pow $5,5
+  mov $6,6
+  sub $1,$10
+  mul $8,$6
+  mod $7,9
+  mov $1,$6
+  sub $10,$6
+  mov $4,5
+  mov $0,432
+  cmp $4,$10
+  sub $0,1
+  sub $9,1
+  add $2,$0
+  mul $0,2
+  mov $0,2
+  sub $6,$0
+  add $10,$7
+lpe
+add $2,$7
+mov $1,$2
+sub $1,432
+add $1,1

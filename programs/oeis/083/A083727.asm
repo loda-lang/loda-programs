@@ -3,19 +3,6 @@
 
 mov $2,$0
 lpb $2,1
-  lpb $4,1
-    mov $4,$2
-    mov $1,$4
-    mov $2,$2
-    add $0,$0
-  lpe
-  lpb $5,1
-    mov $5,$1
-  lpe
-  lpb $6,1
-    mov $6,$1
-    mov $1,$4
-  lpe
   mul $0,2
   sub $2,1
   sub $1,8

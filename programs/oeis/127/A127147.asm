@@ -3,23 +3,12 @@
 
 mov $1,$0
 sub $0,12
-mov $2,$0
-mov $2,5
-sub $1,$2
+sub $1,5
 sub $0,2
 add $1,2
 mov $2,$0
 add $2,1
 mul $2,2
 mul $1,$2
-mov $2,$2
-mov $2,$2
-sub $0,$2
-lpb $1,1
-  mov $2,$0
-  mov $0,2
-lpe
-mov $0,3
-add $2,7
 div $1,2
 add $1,4
