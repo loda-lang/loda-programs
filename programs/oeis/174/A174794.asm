@@ -8,11 +8,11 @@ lpb $2,1
   add $4,$3
   add $1,$3
   sub $2,6
-  sub $4,5
+  trn $4,5
   add $1,$4
   sub $2,1
   add $4,$0
   add $0,5
-  sub $3,3
+  trn $3,3
   add $3,3
 lpe

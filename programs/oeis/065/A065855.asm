@@ -15,23 +15,21 @@ lpb $19,1
     mov $1,$6
     mov $3,$6
     add $1,$0
-    lpb $7,10
+    lpb $7,1
       gcd $1,$8
       lpb $1,1
         add $3,16
         add $5,2
         add $3,4
-        add $5,1
         add $3,$5
         lpb $4,5
           mov $1,1
           mov $8,$5
           sub $5,1
         lpe
-        mov $7,2
         mov $4,$3
       lpe
-      sub $4,$1
+      trn $4,$1
       cmp $7,2
     lpe
   lpe

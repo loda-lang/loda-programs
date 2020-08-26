@@ -10,13 +10,13 @@ lpb $7,1
   sub $0,1
   mov $1,$0
   add $0,1
-  sub $1,$0
+  trn $1,$0
   mov $5,$8
   lpb $0,1
     mov $2,$1
     sub $0,1
     mov $6,2
-    sub $0,1
+    trn $0,1
     add $1,4
     mov $10,$6
     add $10,$1

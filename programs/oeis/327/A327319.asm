@@ -8,7 +8,7 @@ lpb $3,1
   mov $0,$5
   sub $0,$3
   mov $2,$0
-  sub $0,2
+  trn $0,2
   pow $0,3
   lpb $2,1
     mov $1,2

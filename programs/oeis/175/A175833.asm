@@ -4,5 +4,5 @@
 mod $0,3
 mov $1,$0
 mul $1,4
-sub $1,1
+trn $1,1
 add $1,4

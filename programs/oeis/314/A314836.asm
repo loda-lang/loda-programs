@@ -9,7 +9,7 @@ mod $4,2
 add $4,1
 mov $5,$4
 mov $2,$6
-sub $2,$5
+trn $2,$5
 add $2,4
 div $2,2
 mov $1,$2

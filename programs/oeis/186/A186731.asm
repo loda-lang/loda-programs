@@ -8,7 +8,7 @@ lpb $0,1
   sub $1,1
   sub $0,1
   mod $0,3
-  sub $0,1
+  trn $0,1
   mul $1,2
 lpe
 div $1,12

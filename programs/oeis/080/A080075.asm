@@ -17,13 +17,13 @@ lpb $3,1
     lpb $5,1
       mul $5,2
       div $2,2
-      sub $5,$8
+      trn $5,$8
     lpe
     mov $7,1
     mul $8,2
-    sub $2,1
+    trn $2,1
   lpe
-  sub $8,2
+  trn $8,2
   add $5,$8
   add $5,23
   mov $1,$5

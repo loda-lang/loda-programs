@@ -7,7 +7,7 @@ gcd $5,2
 sub $2,$5
 mov $6,$2
 mov $3,$6
-sub $2,$5
+trn $2,$5
 mul $3,2
 mul $2,$3
 lpb $2,1

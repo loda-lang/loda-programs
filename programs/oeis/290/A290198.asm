@@ -7,12 +7,12 @@ lpb $0,1
   sub $0,1
   mul $3,2
   add $1,$3
-  sub $2,$0
+  trn $2,$0
   mul $1,2
   add $2,3
   sub $1,2
   sub $3,$3
   sub $2,1
 lpe
-sub $1,$2
+trn $1,$2
 add $1,1

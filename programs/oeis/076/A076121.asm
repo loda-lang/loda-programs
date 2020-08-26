@@ -5,7 +5,7 @@ mov $5,$0
 mov $3,$0
 sub $3,7
 mov $1,$3
-sub $1,7
+trn $1,7
 div $1,5
 pow $1,2
 mov $4,$5

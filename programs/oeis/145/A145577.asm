@@ -1,44 +1,31 @@
 ; A145577: A045944 mod 9. Period 9: repeat 0,5,7,6,2,4,3,8,1.
 ; 0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1
 
-mov $2,$0
-mov $3,$0
-add $3,4
-add $0,$2
-mov $1,1
-mul $3,2
-mov $4,$0
-add $0,2
-add $0,$2
-sub $1,$1
-sub $1,2
-mul $0,$2
-add $0,1
+mov $7,$0
+add $7,$0
+mov $8,3
+mov $0,0
+mov $6,5
+mov $2,$7
+add $0,4
+sub $6,$0
 lpb $0,1
-  add $0,1
-  mov $3,$2
-  add $3,1
-  mov $2,$2
-  mov $4,1
-  mov $4,$1
-  mov $4,1
-  mul $4,3
-  mov $3,$0
-  mov $1,$3
+  add $5,$2
+  mov $1,$6
+  mov $4,$5
+  mov $0,$1
+  mul $2,$8
+  mov $3,$4
+  add $0,$2
+  mul $0,$3
+  mov $2,1
+  mov $7,$0
+  mod $7,9
+  mov $0,432
   sub $0,1
-  mov $2,$2
-  mov $2,2
-  add $2,4
-  add $1,$2
-  sub $0,$2
-  mov $2,2
-  mov $2,$0
-  mov $3,1
-  mov $2,$3
-  sub $0,$4
-  sub $4,$0
-  mul $4,2
+  add $2,$0
+  mov $0,2
 lpe
-add $0,$3
-div $3,$4
-sub $1,8
+add $2,$7
+mov $1,$2
+sub $1,432

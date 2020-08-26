@@ -9,13 +9,13 @@ lpb $0,1
   mov $4,$6
   mov $6,2
   add $6,1
-  sub $2,$6
+  trn $2,$6
   add $5,$4
   mov $4,$2
   mov $6,0
   mov $0,$4
   add $4,3
-  sub $0,1
+  trn $0,1
   mov $1,$4
   add $5,3
   mov $2,$3

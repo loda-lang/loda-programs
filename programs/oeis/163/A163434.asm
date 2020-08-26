@@ -5,7 +5,7 @@ mov $2,$0
 mul $0,$2
 mov $3,$0
 mul $3,6
-sub $3,3
+trn $3,3
 bin $3,2
 mov $1,$3
 div $1,3

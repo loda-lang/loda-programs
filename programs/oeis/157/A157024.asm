@@ -13,13 +13,13 @@ mov $5,$0
 add $4,$3
 add $4,$2
 mov $0,$4
-sub $2,$5
+trn $2,$5
 add $0,$5
 mov $5,2
 mov $1,$2
 lpb $0,1
   add $2,$5
-  sub $2,5
+  trn $2,5
   add $5,3
   add $1,$2
   sub $0,1

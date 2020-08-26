@@ -33,7 +33,7 @@ lpb $16,1
         lpb $5,1
           div $6,2
           add $4,$2
-          sub $5,$2
+          trn $5,$2
         lpe
         add $4,$6
         lpb $6,1

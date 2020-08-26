@@ -34,7 +34,7 @@ lpb $18,1
         mov $6,7
         add $0,7
         mov $1,3
-        sub $2,$1
+        trn $2,$1
         add $2,2
         lpb $6,1
           mov $3,7

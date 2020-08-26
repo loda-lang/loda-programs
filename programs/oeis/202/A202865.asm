@@ -34,7 +34,7 @@ lpb $14,1
       mul $6,$5
       mul $3,$6
       mul $3,$0
-      sub $0,$6
+      trn $0,$6
       mov $4,$3
     lpe
     add $4,2

@@ -5,6 +5,6 @@ mod $0,9
 mov $2,$0
 mov $1,1
 mod $2,4
-sub $1,$2
+trn $1,$2
 gcd $1,2
 sub $1,1

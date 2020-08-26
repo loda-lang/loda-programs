@@ -6,11 +6,11 @@ add $0,3
 lpb $0,1
   add $3,$4
   add $1,$3
-  sub $1,1
+  trn $1,1
   mul $4,2
   add $4,$2
   add $3,$4
-  sub $3,3
+  trn $3,3
   sub $0,1
   mov $2,$3
   sub $3,$3

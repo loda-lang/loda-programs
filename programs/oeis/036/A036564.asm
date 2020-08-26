@@ -10,6 +10,6 @@ add $3,$1
 sub $3,1
 mov $2,$3
 mov $1,$2
-sub $1,6
+trn $1,6
 mul $1,2
 add $1,1

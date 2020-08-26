@@ -21,4 +21,4 @@ lpb $0,1
 lpe
 mul $1,3
 div $1,3
-sub $1,22
+trn $1,22

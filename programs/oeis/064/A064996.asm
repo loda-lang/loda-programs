@@ -19,11 +19,11 @@ lpb $4,1
     add $1,1
     mul $1,2
     lpb $0,1
-      sub $0,$1
+      trn $0,$1
       mov $2,$1
       add $0,10
       mul $2,$0
-      sub $0,12
+      trn $0,12
     lpe
     div $2,23
     mov $1,$2

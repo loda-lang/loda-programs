@@ -18,13 +18,13 @@ lpb $18,1
       mov $5,$3
       mov $6,$3
     lpe
-    sub $6,$7
+    trn $6,$7
     mov $0,4
     sub $7,$3
     mov $3,8
     add $3,$5
   lpe
-  sub $7,1
+  trn $7,1
   mov $2,2
   gcd $2,$7
   mov $1,$2

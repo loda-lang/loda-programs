@@ -4,17 +4,17 @@
 mov $2,$0
 mov $5,$0
 mov $4,$5
-sub $5,2
+trn $5,2
 mov $3,$5
 lpb $0,1
   sub $4,$3
-  sub $4,$3
+  trn $4,$3
   mov $0,$3
   add $1,5
 lpe
 add $1,$4
 mov $5,$1
-sub $1,6
+trn $1,6
 add $1,$5
 lpb $2,1
   add $1,8

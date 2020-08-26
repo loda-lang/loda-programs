@@ -8,12 +8,12 @@ mov $4,3
 mov $5,1
 lpb $0,1
   sub $0,1
-  sub $4,$6
+  trn $4,$6
   add $5,5
   mov $6,$5
   sub $5,$4
   add $5,$3
-  sub $6,$0
+  trn $6,$0
 lpe
 mov $2,5
 mov $3,$6

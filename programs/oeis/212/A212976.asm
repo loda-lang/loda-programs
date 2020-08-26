@@ -20,7 +20,7 @@ lpb $14,1
       mod $2,2
       mul $2,6
       mul $8,$2
-      sub $2,$8
+      trn $2,$8
       mov $1,$8
     lpe
     add $10,$1

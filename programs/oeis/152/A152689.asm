@@ -19,13 +19,13 @@ lpb $24,1
     mov $18,$0
     lpb $18,1
       clr $0,16
-      sub $18,1
+      trn $18,1
       mov $0,$16
       sub $0,$18
       mov $13,$0
       mov $15,$0
       lpb $15,1
-        sub $15,1
+        trn $15,1
         mov $0,$13
         sub $0,$15
         mov $9,$0

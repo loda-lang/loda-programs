@@ -11,7 +11,7 @@ lpb $2,1
     sub $1,$1
   lpe
   mul $1,2
-  sub $2,3
+  trn $2,3
 lpe
 add $1,$3
 sub $1,$3

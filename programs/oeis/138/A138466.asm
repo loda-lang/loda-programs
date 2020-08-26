@@ -24,11 +24,11 @@ lpb $5,1
     pow $0,2
     mov $4,$6
     add $4,2
-    sub $0,$4
+    trn $0,$4
     lpb $0,1
       sub $0,$4
       sub $0,$4
-      sub $0,1
+      trn $0,1
       sub $4,1
     lpe
     mov $6,$4

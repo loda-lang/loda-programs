@@ -10,7 +10,7 @@ mul $0,$3
 add $0,6
 mov $1,9
 mov $2,$0
-sub $1,$2
+trn $1,$2
 gcd $1,$2
 sub $1,3
 div $1,3

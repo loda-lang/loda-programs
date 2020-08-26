@@ -43,7 +43,7 @@ lpb $19,1
       sub $7,$9
       mul $3,$5
       mov $10,$1
-      sub $10,1
+      trn $10,1
       mul $3,$7
       mul $10,5
       sub $3,1

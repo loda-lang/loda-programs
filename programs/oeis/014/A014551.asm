@@ -7,13 +7,13 @@ lpb $0,1
   add $3,$1
   sub $3,4
   mul $1,2
-  sub $3,2
+  trn $3,2
   add $1,9
   add $0,1
   add $5,2
   mov $2,$3
   add $1,$5
-  sub $5,5
+  trn $5,5
   mov $4,$1
   sub $0,2
   sub $4,3

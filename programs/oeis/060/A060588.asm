@@ -18,5 +18,5 @@ lpb $0,1
   mov $0,1
 lpe
 mul $1,2
-sub $1,20
+trn $1,20
 div $1,2

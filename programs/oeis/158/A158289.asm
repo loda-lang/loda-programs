@@ -12,9 +12,9 @@ lpb $0,1
   add $4,$3
   sub $0,3
   mov $2,2
-  sub $4,$0
+  trn $4,$0
   add $1,5
-  sub $0,$1
+  trn $0,$1
   sub $2,2
   add $2,$1
   add $0,$4

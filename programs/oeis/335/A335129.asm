@@ -7,5 +7,5 @@ mov $2,$3
 mov $1,$0
 add $1,$2
 gcd $0,3
-sub $1,$0
+trn $1,$0
 div $1,2

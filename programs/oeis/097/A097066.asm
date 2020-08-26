@@ -6,7 +6,7 @@ mov $3,$0
 pow $2,2
 add $2,5
 add $3,5
-sub $0,$2
+trn $0,$2
 mod $3,2
 add $0,$3
 add $2,3

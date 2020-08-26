@@ -11,12 +11,12 @@ sub $5,$5
 sub $0,$2
 lpb $0,1
   add $2,$5
-  sub $5,2
+  trn $5,2
   sub $0,1
   mov $3,1
   add $5,$3
   add $5,4
-  sub $0,$3
+  trn $0,$3
   add $5,5
 lpe
 mov $1,$2

@@ -28,13 +28,13 @@ lpb $18,1
       fac $0
       mov $1,$0
       mov $6,$1
-      sub $8,$6
+      trn $8,$6
       lpb $0,1
         add $8,6
         mov $4,8
         mul $8,2
         mov $1,3
-        sub $0,$4
+        trn $0,$4
       lpe
       add $8,7
       div $8,6

@@ -13,12 +13,12 @@ lpb $2,1
   add $5,1
   bin $0,2
   mov $6,$5
-  sub $1,8
+  trn $1,8
   mov $3,$1
   lpb $0,1
     add $3,3
     div $6,$6
-    sub $0,6
+    trn $0,6
     mul $6,$3
   lpe
   mov $1,$6

@@ -7,7 +7,7 @@ lpb $3,1
   add $4,4
   lpb $4,1
     add $4,1
-    sub $4,$3
+    trn $4,$3
     add $1,1
     mov $5,0
   lpe
@@ -22,4 +22,4 @@ lpb $3,1
   add $5,$3
   sub $3,3
 lpe
-sub $1,1
+trn $1,1

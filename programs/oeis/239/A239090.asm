@@ -17,12 +17,12 @@ lpb $2,1
   mov $9,10
   add $0,$9
   pow $9,$8
-  sub $0,$9
+  trn $0,$9
   mov $7,7
   add $0,$7
   lpb $0,1
     cmp $0,9
-    sub $9,9
+    trn $9,9
     add $9,1
     add $0,1
     mul $0,9

@@ -12,7 +12,7 @@ add $0,4
 lpb $0,1
   add $5,1
   add $2,1
-  sub $0,$5
+  trn $0,$5
 lpe
 mod $2,$2
 mov $4,$5

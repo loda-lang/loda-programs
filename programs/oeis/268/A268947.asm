@@ -10,7 +10,7 @@ add $2,1
 add $0,$2
 mov $2,0
 add $2,$0
-sub $3,$0
+trn $3,$0
 add $3,$2
 mov $1,$3
 lpb $0,1

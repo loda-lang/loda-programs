@@ -22,13 +22,13 @@ lpb $13,1
     mov $2,$4
     sub $4,$0
     mov $1,$4
-    sub $1,$2
+    trn $1,$2
     lpb $0,1
       mov $3,$1
       add $3,1
       mov $1,$4
       add $4,$3
-      sub $1,2
+      trn $1,2
       mov $2,1
       add $2,1
       add $2,$1
@@ -56,4 +56,4 @@ lpb $11,1
   mov $11,0
 lpe
 mov $1,$12
-sub $1,1
+trn $1,1

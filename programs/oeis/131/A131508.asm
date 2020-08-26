@@ -9,7 +9,7 @@ mov $5,5
 div $0,4
 mul $0,2
 mov $3,$0
-sub $5,8
+trn $5,8
 mov $6,$2
 div $6,$3
 mul $6,$3

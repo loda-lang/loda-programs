@@ -6,7 +6,7 @@ lpb $0,1
   add $3,4
   add $2,2
   sub $3,$2
-  sub $2,3
+  trn $2,3
   add $1,5
   sub $0,1
   add $2,$3

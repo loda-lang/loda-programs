@@ -16,7 +16,7 @@ lpb $2,1
     sub $0,$5
     pow $2,$0
     add $3,3
-    sub $4,$3
+    trn $4,$3
   lpe
   add $6,$3
   sub $3,1

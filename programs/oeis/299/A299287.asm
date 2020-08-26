@@ -11,7 +11,7 @@ lpb $0,1
   add $1,$0
   add $5,$2
   gcd $0,8
-  sub $0,$5
+  trn $0,$5
   mov $6,$2
 lpe
 add $6,2

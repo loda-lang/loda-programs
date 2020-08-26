@@ -23,7 +23,7 @@ lpb $9,1
     mov $0,$4
   lpe
   add $6,1
-  sub $5,9
+  trn $5,9
   add $5,$6
   mov $1,$5
   mov $10,$9

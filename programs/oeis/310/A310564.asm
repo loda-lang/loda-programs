@@ -6,13 +6,13 @@ mov $2,$0
 mul $2,2
 mov $1,2
 sub $0,2
-sub $2,1
+trn $2,1
 add $2,2
 add $1,$2
-sub $0,1
+trn $0,1
 lpb $0,1
   sub $0,1
   add $1,4
-  sub $0,6
+  trn $0,6
 lpe
 sub $1,3

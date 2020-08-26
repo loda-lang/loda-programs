@@ -14,10 +14,10 @@ lpb $0,1
   mov $5,$4
   mul $5,2
   add $3,$2
-  sub $6,$3
+  trn $6,$3
   add $6,$5
   gcd $8,2
-  sub $0,3
+  trn $0,3
 lpe
 add $1,$4
 gcd $7,3

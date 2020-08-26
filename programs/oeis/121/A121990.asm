@@ -16,5 +16,5 @@ lpe
 add $2,1
 add $4,$2
 add $0,$2
-sub $1,$4
+trn $1,$4
 add $1,$0

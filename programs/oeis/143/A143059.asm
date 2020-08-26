@@ -38,7 +38,7 @@ lpb $17,1
         mov $1,$0
         add $3,1
         div $3,$3
-        sub $3,2
+        trn $3,2
         add $7,1
         mul $7,2
         add $3,1
@@ -56,7 +56,7 @@ lpb $17,1
       sub $5,1
       add $5,3
       mov $1,$5
-      sub $1,7
+      trn $1,7
       add $1,1
       add $10,$1
     lpe

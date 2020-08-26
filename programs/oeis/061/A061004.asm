@@ -21,7 +21,6 @@ lpb $0,1
   mul $2,2
   gcd $5,$2
   div $4,$5
-  sub $0,$1
-  fac $0
+  trn $0,$1
 lpe
 mov $1,$4

@@ -22,11 +22,10 @@ lpb $9,1
       mov $1,$2
       sub $2,1
       mov $5,$2
-      div $5,2
       add $6,$1
       add $0,$6
     lpe
-    sub $2,2
+    trn $2,2
     mov $6,$2
   lpe
   mov $3,$0

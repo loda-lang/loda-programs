@@ -12,14 +12,14 @@ lpb $11,1
   lpb $2,1
     mov $6,$0
     lpb $4,1
-      sub $4,$3
+      trn $4,$3
       mov $2,$8
     lpe
     lpb $6,1
       add $5,1
       mov $0,$5
       mov $3,$0
-      sub $6,$3
+      trn $6,$3
       add $8,$2
       mov $4,$8
       fac $3

@@ -9,9 +9,9 @@ mul $1,2
 mov $5,$1
 mov $4,$6
 mov $3,$4
-sub $5,$4
+trn $5,$4
 mov $7,10
-sub $7,$5
+trn $7,$5
 add $3,$7
 mul $3,9
 mov $1,$3

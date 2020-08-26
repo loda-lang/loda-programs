@@ -23,6 +23,6 @@ mov $3,$7
 mov $0,$1
 add $0,$3
 mov $1,$0
-sub $1,83
+trn $1,83
 div $1,8
 add $1,1

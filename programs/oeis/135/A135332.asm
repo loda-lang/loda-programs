@@ -29,7 +29,7 @@ lpb $3,1
     div $0,$2
     mul $0,4
   lpe
-  sub $1,2
+  trn $1,2
   div $1,2
   add $1,1
   add $6,$1

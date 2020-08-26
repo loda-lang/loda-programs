@@ -19,7 +19,7 @@ lpb $0,1
   mov $4,$3
   mov $3,$5
   mov $6,$5
-  sub $0,1
+  trn $0,1
   add $6,$3
   add $4,$6
 lpe

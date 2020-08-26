@@ -27,7 +27,7 @@ lpb $17,1
       mov $5,$0
       mov $7,4
       mov $1,$0
-      sub $5,$7
+      trn $5,$7
       add $0,$7
       div $0,$0
       mov $4,$0

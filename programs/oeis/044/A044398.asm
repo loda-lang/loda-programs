@@ -7,7 +7,7 @@ mod $0,10
 mul $0,10
 mov $3,6
 mov $1,9
-sub $3,$0
+trn $3,$0
 sub $1,$3
 add $1,57
 mov $4,$5

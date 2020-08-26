@@ -7,7 +7,7 @@ lpb $0,1
   sub $3,$2
   sub $0,10
   mov $4,$3
-  sub $0,4
+  trn $0,4
   mul $3,2
   add $0,$4
   sub $0,1

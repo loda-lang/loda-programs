@@ -27,7 +27,7 @@ lpb $14,1
     cmp $5,$3
     add $5,$3
     mov $1,$5
-    sub $1,3
+    trn $1,3
     mul $1,2
     add $10,$1
   lpe

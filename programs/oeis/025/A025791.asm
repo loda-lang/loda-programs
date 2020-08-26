@@ -15,11 +15,11 @@ lpb $13,1
     mov $4,3
     lpb $4,1
       add $2,6
-      sub $4,$2
+      trn $4,$2
     lpe
     mov $5,8
     lpb $5,1
-      sub $5,$2
+      trn $5,$2
       mod $2,9
       mul $2,10
     lpe

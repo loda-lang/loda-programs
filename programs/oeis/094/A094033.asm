@@ -10,8 +10,8 @@ lpb $0,1
   mov $3,$2
   add $1,1
   add $4,$1
-  sub $4,5
-  sub $2,6
+  trn $4,5
+  trn $2,6
   mul $3,2
   mov $1,$4
   add $2,$3

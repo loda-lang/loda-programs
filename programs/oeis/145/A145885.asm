@@ -9,7 +9,7 @@ lpb $0,1
   add $2,$4
   sub $0,1
   bin $2,$0
-  sub $0,$3
+  trn $0,$3
   add $2,1
 lpe
 mul $3,2

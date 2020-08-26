@@ -13,6 +13,6 @@ lpb $0,1
 lpe
 gcd $0,2
 div $1,$0
-sub $1,4
+trn $1,4
 div $1,4
 add $1,1

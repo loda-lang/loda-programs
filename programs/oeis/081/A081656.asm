@@ -19,6 +19,6 @@ lpb $2,1
   mod $2,2
   sub $2,1
 lpe
-sub $1,6
+trn $1,6
 div $1,6
 add $1,1

@@ -8,7 +8,7 @@ mov $4,$0
 mov $2,3
 mov $3,6
 gcd $3,$4
-sub $2,$3
+trn $2,$3
 add $4,$2
 mov $1,$4
 sub $1,17

@@ -8,7 +8,7 @@ mov $2,$0
 add $4,$3
 mov $1,$2
 sub $1,1
-sub $4,$2
-sub $1,$4
+trn $4,$2
+trn $1,$4
 add $1,$0
 add $1,1

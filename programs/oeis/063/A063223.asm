@@ -23,7 +23,7 @@ lpb $0,1
   mod $7,2
   mov $0,4
   add $7,$4
-  sub $0,46
+  trn $0,46
   add $0,$7
   mov $1,$2
   sub $0,1

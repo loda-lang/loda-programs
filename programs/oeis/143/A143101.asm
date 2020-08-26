@@ -12,8 +12,8 @@ mov $0,4
 add $0,$4
 sub $0,7
 lpb $0,1
-  sub $0,5
+  trn $0,5
   add $1,$0
-  sub $0,4
+  trn $0,4
   add $1,1
 lpe

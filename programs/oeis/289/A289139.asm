@@ -6,14 +6,14 @@ mul $0,2
 add $0,4
 lpb $0,1
   add $3,4
-  sub $0,7
+  trn $0,7
   mov $2,$3
   sub $2,1
-  sub $2,$0
+  trn $2,$0
   sub $4,$4
-  sub $3,6
+  trn $3,6
   add $4,1
-  sub $4,$2
+  trn $4,$2
   add $4,1
   add $1,$4
 lpe

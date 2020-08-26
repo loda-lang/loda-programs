@@ -1,0 +1,106 @@
+; A291578: The arithmetic function uhat(n,7,7).
+; 1,1,1,1,1,1,-5,1,1,1,1,1,1,-5,1,1,1,1,1,1,-5,1,1,1,1,1,1,-5,1,1,1,1,1,1,-5,1,1,1,1,1,1,-5,1,1,1,1,1,1,-5,1,1,1,1,1,1,-5,1,1,1,1,1,1,-5,1,1,1,1,1,1,-5
+
+mov $4,1
+add $4,1
+add $0,1
+mov $1,$0
+mov $6,2
+mov $0,$4
+sub $6,1
+mov $2,$0
+mov $10,$4
+mov $8,$6
+div $8,$6
+div $4,$1
+div $6,2
+sub $4,1
+gcd $1,7
+add $0,11
+mov $0,$10
+mov $8,$8
+mov $10,1
+mov $5,1
+mov $8,1
+mov $7,1
+div $0,2
+mov $9,5
+mov $3,$7
+mul $8,$2
+div $4,$8
+mov $4,1
+mov $2,1
+div $0,2
+mul $9,11
+mov $7,$1
+sub $5,2
+sub $3,2
+add $10,$10
+mul $4,2
+mov $3,$8
+pow $3,2
+mov $4,$7
+mov $5,$3
+sub $5,$1
+add $10,$7
+clr $7,$10
+mov $4,1
+mov $7,1
+trn $7,1
+mov $7,1
+mov $4,1
+trn $6,$8
+mul $8,2
+mov $1,$1
+mov $3,$5
+mov $6,1
+sub $8,1
+mov $8,$7
+div $1,4
+cmp $8,1
+mul $9,2
+add $4,4
+add $8,1
+log $2,4
+mul $4,2
+lpb $0,1
+  mul $5,$0
+  mov $3,$9
+  mov $2,6
+  add $2,2
+  pow $1,$2
+  mov $0,5
+  sub $2,6
+  mov $8,$2
+  div $5,2
+  sub $0,1
+  mul $0,2
+  bin $1,6
+  fac $3
+  add $0,6
+  mov $7,1
+  mul $3,2
+  add $0,36
+  mul $1,$0
+  add $3,$2
+  add $1,$7
+  mul $4,$8
+  mov $0,1
+lpe
+mov $1,$3
+add $0,$7
+mov $10,1
+pow $9,2
+add $9,1
+add $2,1
+add $10,$5
+pow $3,$0
+add $10,1
+mul $10,2
+add $5,$9
+mov $2,2
+add $9,2
+sub $1,3
+div $1,6
+mul $1,6
+add $1,1

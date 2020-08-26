@@ -4,7 +4,7 @@
 mov $7,$0
 mov $8,2
 mov $6,$0
-sub $6,1
+trn $6,1
 mov $2,1
 add $2,$6
 mod $0,2
@@ -15,7 +15,7 @@ add $6,3
 mul $9,$4
 gcd $8,$6
 lpb $0,1
-  sub $0,6
+  trn $0,6
   add $8,$9
   add $8,2
 lpe

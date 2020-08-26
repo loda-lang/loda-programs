@@ -18,12 +18,11 @@ lpb $9,1
     sub $5,$4
     add $2,1
     mov $0,$5
-    sub $2,$3
+    trn $2,$3
     gcd $2,$0
-    mov $0,1
     mul $2,5
   lpe
-  sub $4,$3
+  trn $4,$3
   mov $1,$2
   mov $6,$9
   lpb $6,1

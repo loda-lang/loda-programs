@@ -3,16 +3,16 @@
 
 lpb $0,1
   add $1,3
-  sub $0,3
+  trn $0,3
   mov $3,$0
-  sub $0,1
+  trn $0,1
   add $0,2
-  sub $1,$0
+  trn $1,$0
   sub $0,1
   add $2,$1
   add $2,4
-  sub $0,5
+  trn $0,5
   add $3,$2
 lpe
 mov $1,$3
-sub $1,5
+trn $1,5

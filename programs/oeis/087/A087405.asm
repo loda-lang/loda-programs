@@ -36,7 +36,7 @@ lpb $2,1
           pow $4,$6
           add $4,5
           add $1,$4
-          sub $0,$1
+          trn $0,$1
         lpe
         div $4,8
         mov $1,$4

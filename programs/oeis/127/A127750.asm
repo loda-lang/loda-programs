@@ -14,7 +14,7 @@ lpb $9,1
   mov $3,$4
   lpb $0,1
     sub $0,1
-    sub $1,10
+    trn $1,10
     mov $2,$0
     mov $5,2
     mul $5,$2

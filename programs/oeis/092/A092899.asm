@@ -11,6 +11,6 @@ mov $2,$3
 mul $1,2
 mov $5,1
 add $5,$2
-sub $1,$5
+trn $1,$5
 mul $1,2
 add $1,1

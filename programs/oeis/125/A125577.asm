@@ -7,5 +7,5 @@ add $0,3
 lpb $0,1
   add $1,$0
   sub $1,4
-  sub $0,4
+  trn $0,4
 lpe

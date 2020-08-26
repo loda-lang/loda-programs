@@ -16,12 +16,12 @@ lpb $2,1
   lpe
   lpb $4,1
     mov $5,2
-    sub $4,$5
+    trn $4,$5
     sub $1,5
   lpe
   div $1,3
   mov $2,1
 lpe
-sub $1,7
+trn $1,7
 mul $1,2
 add $1,12

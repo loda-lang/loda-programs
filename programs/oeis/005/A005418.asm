@@ -8,7 +8,7 @@ lpb $0,1
   sub $0,1
   mov $1,7
   add $1,$5
-  sub $2,6
+  trn $2,6
   sub $1,6
   add $5,$2
   gcd $2,$1

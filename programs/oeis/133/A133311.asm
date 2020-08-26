@@ -22,7 +22,7 @@ lpb $6,1
     add $4,$1
   lpe
   mov $6,$$0
-  sub $$2,5
+  trn $$2,5
   sub $4,$$1
 lpe
 mov $1,$4

@@ -7,6 +7,6 @@ gcd $1,4
 add $2,1
 pow $1,2
 gcd $0,$2
-sub $1,3
+trn $1,3
 div $1,$0
 add $1,1

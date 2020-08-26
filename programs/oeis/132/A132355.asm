@@ -9,9 +9,9 @@ lpb $2,1
   sub $2,4
   add $0,3
   add $2,1
-  sub $1,$3
+  trn $1,$3
   add $1,$0
   add $1,$3
   add $0,3
-  sub $2,1
+  trn $2,1
 lpe

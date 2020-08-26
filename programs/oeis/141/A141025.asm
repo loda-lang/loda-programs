@@ -19,7 +19,7 @@ lpb $2,1
     pow $8,$0
     mul $8,4
     add $8,3
-    sub $0,$8
+    trn $0,$8
     div $5,7
     add $8,2
     add $5,4

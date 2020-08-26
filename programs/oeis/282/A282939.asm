@@ -6,6 +6,6 @@ add $3,$0
 mod $3,4
 mov $2,$0
 mov $1,$2
-sub $3,2
+trn $3,2
 add $1,$3
 mul $1,2

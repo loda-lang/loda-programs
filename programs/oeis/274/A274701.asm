@@ -22,7 +22,7 @@ lpb $4,1
     lpb $6,1
       add $1,1
       add $0,$6
-      sub $6,$1
+      trn $6,$1
     lpe
     sub $2,1
   lpe

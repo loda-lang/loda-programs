@@ -10,6 +10,6 @@ gcd $2,$0
 mov $5,2
 mul $5,$2
 mul $5,2
-sub $5,$3
+trn $5,$3
 mov $1,$5
 div $1,3

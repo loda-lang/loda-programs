@@ -32,7 +32,7 @@ lpb $16,1
       add $3,5
       lpb $6,1
         mov $9,$3
-        sub $6,$8
+        trn $6,$8
       lpe
       add $6,$9
       mov $2,0

@@ -19,7 +19,7 @@ lpb $10,1
   add $1,$2
   sub $3,1
   lpb $0,2
-    sub $1,$3
+    trn $1,$3
     add $3,2
   lpe
   mov $1,$3

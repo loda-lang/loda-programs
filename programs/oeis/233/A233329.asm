@@ -32,7 +32,7 @@ lpb $19,1
       mov $9,$3
       mov $1,4
       add $3,8
-      sub $1,$3
+      trn $1,$3
       mul $2,$9
       gcd $1,$2
       add $12,$1

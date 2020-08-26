@@ -13,7 +13,6 @@ mov $1,$5
 add $0,$3
 add $0,$1
 add $4,$3
-add $5,1216
 mov $6,$5
 add $0,$1
 sub $6,2
@@ -24,7 +23,7 @@ gcd $6,4
 mov $2,$6
 lpb $4,2
   mul $2,2
-  sub $5,2
+  trn $5,2
 lpe
 mov $1,$2
 div $1,6

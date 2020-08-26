@@ -6,7 +6,7 @@ mov $3,$4
 mov $5,5
 mov $2,7
 pow $5,$0
-sub $0,$5
+trn $0,$5
 add $0,$5
 pow $2,$3
 sub $2,$0

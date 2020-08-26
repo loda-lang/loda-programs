@@ -3,7 +3,7 @@
 
 mod $0,3
 mul $0,10
-sub $0,7
+trn $0,7
 mod $0,8
 mov $1,$0
 mul $1,2

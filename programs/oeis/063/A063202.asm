@@ -19,4 +19,4 @@ lpb $0,1
 lpe
 add $2,$1
 mov $1,$2
-sub $1,1
+trn $1,1

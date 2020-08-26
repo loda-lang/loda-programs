@@ -26,7 +26,7 @@ lpb $9,1
       sub $2,$3
       mov $0,1
       sub $5,$0
-      sub $5,$2
+      trn $5,$2
       mov $1,$5
       mov $5,1
     lpe
@@ -36,11 +36,11 @@ lpb $9,1
       sub $6,$4
       add $0,$6
       mul $4,2
-      sub $6,$2
+      trn $6,$2
       add $1,$0
       sub $2,$0
     lpe
-    sub $2,1
+    trn $2,1
   lpe
   mov $1,$4
   add $8,$1

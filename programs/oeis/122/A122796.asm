@@ -22,13 +22,13 @@ lpb $14,1
     lpb $2,1
       sub $3,$6
       pow $1,$6
-      sub $2,$3
+      trn $2,$3
       add $3,5
       lpb $6,1
-        sub $6,$3
+        trn $6,$3
       lpe
       sub $1,$2
-      sub $2,1
+      trn $2,1
     lpe
     mul $1,2
     add $1,1

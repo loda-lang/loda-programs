@@ -13,10 +13,10 @@ lpb $3,1
   div $5,2
   add $2,27
   sub $3,$5
-  sub $3,$2
+  trn $3,$2
 lpe
 mul $2,$4
 mov $1,$2
-sub $1,7260
+trn $1,7260
 div $1,165
 add $1,1

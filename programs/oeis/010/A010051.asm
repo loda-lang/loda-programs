@@ -20,7 +20,7 @@ lpb $2,1
   mov $5,1
   lpb $5,1
     mov $4,$5
-    sub $5,$6
+    trn $5,$6
   lpe
   mov $2,1
   sub $2,1

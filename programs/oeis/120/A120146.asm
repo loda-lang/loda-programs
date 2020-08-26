@@ -26,7 +26,7 @@ lpb $7,1
       mov $6,1
       add $0,$6
       mov $2,$3
-      sub $6,5
+      trn $6,5
       lpb $0,1
         div $6,$2
         mov $8,$0

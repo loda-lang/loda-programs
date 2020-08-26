@@ -6,7 +6,7 @@ lpb $0,1
   add $3,$0
   sub $0,1
   add $5,$0
-  sub $0,1
+  trn $0,1
   mov $1,$3
   add $4,$2
 lpe

@@ -4,5 +4,5 @@
 mov $1,$0
 gcd $0,2
 mul $1,$0
-sub $1,1
+trn $1,1
 add $1,1

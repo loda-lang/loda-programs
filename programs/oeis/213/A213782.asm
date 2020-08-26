@@ -32,13 +32,13 @@ lpb $18,1
         add $7,$1
         mov $0,2
         add $7,$0
-        sub $1,$7
+        trn $1,$7
         sub $7,2
         add $1,3
         add $4,1
         add $7,$8
         sub $0,$4
-        sub $0,1
+        trn $0,1
         add $1,1
         add $7,$1
         mul $8,$7

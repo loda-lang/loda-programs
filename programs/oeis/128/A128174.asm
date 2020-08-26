@@ -14,7 +14,7 @@ lpb $0,1
   sub $0,$2
   add $4,7
   sub $0,1
-  sub $0,$3
+  trn $0,$3
   gcd $4,$6
   add $3,4
 lpe

@@ -12,5 +12,5 @@ lpe
 mov $0,$3
 pow $0,2
 mov $1,$0
-sub $1,36
+trn $1,36
 div $1,4

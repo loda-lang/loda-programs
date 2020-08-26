@@ -40,7 +40,7 @@ lpb $20,1
         mod $4,$2
         mov $2,1
         sub $4,1
-        sub $4,$2
+        trn $4,$2
         mul $4,2
         mov $1,$4
         add $10,$1

@@ -17,7 +17,7 @@ add $0,3
 mov $5,$2
 add $0,$5
 mov $4,$0
-sub $3,$4
+trn $3,$4
 add $0,$4
 mul $0,$3
 mov $1,$0

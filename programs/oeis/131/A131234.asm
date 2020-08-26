@@ -24,11 +24,11 @@ mov $5,$0
 lpb $2,1
   add $4,2
   mul $4,7
-  sub $2,$4
+  trn $2,$4
   add $5,7
 lpe
 mul $5,7
 mov $1,$5
-sub $1,49
+trn $1,49
 div $1,49
 add $1,1

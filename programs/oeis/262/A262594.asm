@@ -29,7 +29,7 @@ lpb $17,1
       mov $1,4
       pow $1,$0
       lpb $0,1
-        sub $6,5
+        trn $6,5
         cmp $0,$1
       lpe
       add $1,$6

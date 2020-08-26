@@ -5,6 +5,6 @@ mov $2,$0
 add $2,$0
 add $0,$2
 mov $1,$0
-sub $0,4
+trn $0,4
 add $1,$0
 add $1,1

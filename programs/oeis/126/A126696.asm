@@ -20,7 +20,7 @@ lpb $2,1
   mod $5,5
   gcd $0,$5
   div $0,$6
-  sub $1,$4
+  trn $1,$4
   sub $0,1
   lpb $0,1
     sub $0,1

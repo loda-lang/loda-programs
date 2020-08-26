@@ -10,14 +10,14 @@ add $3,$2
 mov $4,$0
 sub $4,2
 sub $3,$2
-sub $4,1
+trn $4,1
 lpb $2,1
   lpb $4,1
     add $1,$3
-    sub $4,$3
+    trn $4,$3
     sub $1,$5
   lpe
   sub $1,$5
   sub $2,1
-  sub $2,$5
+  trn $2,$5
 lpe

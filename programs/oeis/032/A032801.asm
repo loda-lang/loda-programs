@@ -22,14 +22,14 @@ lpb $21,1
     lpb $0,1
       add $0,$4
       sub $0,1
-      sub $4,$1
+      trn $4,$1
       add $4,6
       mov $7,0
       mov $5,$0
       gcd $0,4
     lpe
     mov $1,$5
-    sub $1,7
+    trn $1,7
     div $1,2
     add $17,$1
   lpe

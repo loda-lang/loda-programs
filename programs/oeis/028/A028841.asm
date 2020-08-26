@@ -6,10 +6,10 @@ mul $0,2
 add $0,1
 lpb $0,1
   mov $2,4
-  sub $1,$0
-  sub $0,6
+  trn $1,$0
+  trn $0,6
   add $1,$0
-  sub $0,$2
+  trn $0,$2
 lpe
 add $1,4
 lpb $3,1

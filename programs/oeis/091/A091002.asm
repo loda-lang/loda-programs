@@ -6,7 +6,7 @@ mov $3,9
 mov $2,5
 lpb $0,1
   add $3,$2
-  sub $5,4
+  trn $5,4
   mov $4,$5
   mov $2,$4
   add $2,1

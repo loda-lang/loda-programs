@@ -43,7 +43,7 @@ lpb $29,1
           add $1,2
           add $2,1
           mov $0,1
-          sub $1,$2
+          trn $1,$2
           sub $0,1
           add $0,$1
         lpe
@@ -78,7 +78,7 @@ lpb $29,1
     mov $23,0
   lpe
   mov $1,$24
-  sub $1,4
+  trn $1,4
   div $1,4
   mul $1,3
   add $1,2

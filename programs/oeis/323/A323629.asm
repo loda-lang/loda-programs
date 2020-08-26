@@ -8,7 +8,7 @@ lpb $2,1
   mul $4,2
   lpb $4,1
     mov $3,$4
-    sub $2,5
+    trn $2,5
     sub $4,$4
   lpe
   sub $3,$2

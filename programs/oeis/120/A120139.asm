@@ -20,7 +20,7 @@ lpb $0,1
   add $2,$4
   div $2,2
   sub $1,2
-  sub $0,1
+  trn $0,1
   sub $4,$0
   add $4,1
 lpe

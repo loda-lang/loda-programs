@@ -31,7 +31,7 @@ lpb $14,1
       div $2,5
       pow $1,$5
       lpb $5,1
-        sub $5,$1
+        trn $5,$1
         add $1,$7
       lpe
       div $1,$0

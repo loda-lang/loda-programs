@@ -31,13 +31,13 @@ lpb $17,1
       mov $2,$6
       mul $3,$0
       mod $3,2
-      sub $0,2
+      trn $0,2
       pow $5,$0
       mov $7,$4
       div $7,$2
       mov $1,$7
       add $5,11
-      sub $3,$1
+      trn $3,$1
       add $3,$5
       mov $1,$3
       sub $1,12

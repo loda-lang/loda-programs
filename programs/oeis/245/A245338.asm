@@ -9,5 +9,5 @@ lpb $2,1
   mov $0,1
   sub $1,$3
   add $3,$0
-  sub $2,7
+  trn $2,7
 lpe

@@ -9,12 +9,12 @@ lpb $0,1
   mov $1,$3
   add $1,$2
   mov $3,$5
-  sub $3,$1
+  trn $3,$1
   mul $3,2
   mov $4,3
   sub $0,1
   mul $3,2
-  sub $4,$2
+  trn $4,$2
 lpe
 add $3,1
 mov $0,$3

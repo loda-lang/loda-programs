@@ -6,6 +6,6 @@ add $0,2
 lpb $$4,1
   mov $$0,2
   add $1,4
-  sub $$2,$$0
+  trn $$2,$$0
 lpe
-sub $1,4
+trn $1,4

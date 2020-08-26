@@ -6,13 +6,13 @@ add $0,3
 lpb $0,1
   sub $3,1
   add $2,1
-  sub $0,3
+  trn $0,3
   add $3,$2
-  sub $3,3
+  trn $3,3
   mov $1,3
   add $2,$1
   add $0,3
-  sub $2,$3
+  trn $2,$3
   mov $1,$3
   mul $2,2
   mul $1,2

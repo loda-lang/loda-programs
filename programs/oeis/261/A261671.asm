@@ -9,7 +9,7 @@ mod $0,2
 lpb $0,1
   mod $1,3
   div $1,6
-  sub $0,4
+  trn $0,4
 lpe
 mov $3,$4
 mov $2,$3

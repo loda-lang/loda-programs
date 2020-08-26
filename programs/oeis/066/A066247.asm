@@ -3,7 +3,6 @@
 
 mov $8,$0
 lpb $8,1
-  mov $7,1
   sub $8,1
   mov $6,1
   mov $1,$6
@@ -20,10 +19,8 @@ lpb $8,1
         mov $8,$5
         sub $5,1
       lpe
-      mov $7,2
       mov $4,$3
     lpe
-    cmp $7,2
   lpe
 lpe
 mov $1,$4

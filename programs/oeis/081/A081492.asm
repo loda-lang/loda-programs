@@ -20,7 +20,7 @@ lpb $12,1
     mov $1,$0
     add $1,$4
     mov $6,$1
-    sub $6,2
+    trn $6,2
     mov $4,$6
     pow $4,2
     add $4,1

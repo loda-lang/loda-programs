@@ -4,9 +4,9 @@
 mov $3,$0
 pow $3,2
 mov $1,15
-sub $1,$3
+trn $1,$3
 mov $2,$1
 pow $0,$2
 sub $3,$0
 mov $1,$3
-sub $1,1
+trn $1,1

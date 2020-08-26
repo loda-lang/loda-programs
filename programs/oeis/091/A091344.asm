@@ -13,4 +13,4 @@ lpb $0,1
   add $2,$3
 lpe
 sub $4,2
-sub $1,$4
+trn $1,$4

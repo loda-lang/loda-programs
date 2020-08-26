@@ -8,7 +8,7 @@ mod $0,10
 mov $1,9
 lpb $0,1
   mov $6,$7
-  sub $1,$6
+  trn $1,$6
   mov $0,$4
 lpe
 add $1,100

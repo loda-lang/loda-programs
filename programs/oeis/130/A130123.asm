@@ -21,7 +21,7 @@ lpb $8,1
   add $5,1
   div $1,2
   lpb $5,1
-    sub $5,$6
+    trn $5,$6
     mul $1,2
     add $1,1
     add $6,1

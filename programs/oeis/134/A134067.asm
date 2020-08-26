@@ -9,6 +9,6 @@ lpb $0,1
 lpe
 mov $2,$1
 add $0,$2
-sub $0,3
+trn $0,3
 mov $1,$0
 add $1,1

@@ -15,7 +15,7 @@ add $2,4
 add $2,$4
 add $3,$2
 add $0,$3
-sub $4,$0
+trn $4,$0
 add $4,$2
 mov $1,$4
 sub $1,4

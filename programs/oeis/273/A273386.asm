@@ -14,7 +14,7 @@ lpe
 sub $5,1
 add $1,1
 mov $3,2
-sub $1,$5
+trn $1,$5
 mul $1,2
 add $3,1
 mov $4,3

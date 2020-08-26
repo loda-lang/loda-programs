@@ -23,7 +23,7 @@ lpb $14,1
     add $4,6
     sub $1,$4
     mul $1,2
-    sub $1,2
+    trn $1,2
     mul $4,$2
     add $10,$1
   lpe

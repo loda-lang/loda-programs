@@ -14,6 +14,6 @@ lpb $0,1
   mov $0,$3
   lpb $0,1
     mul $1,2
-    sub $0,$1
+    trn $0,$1
   lpe
 lpe

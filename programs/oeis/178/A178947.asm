@@ -38,7 +38,7 @@ lpb $16,1
     add $1,$0
     add $1,10
     add $1,$6
-    sub $1,16
+    trn $1,16
     add $1,1
     add $12,$1
   lpe

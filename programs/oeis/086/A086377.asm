@@ -16,7 +16,7 @@ lpb $2,1
     bin $6,2
   lpe
   lpb $6,1
-    sub $6,$7
+    trn $6,$7
     add $7,1
   lpe
   mov $2,3

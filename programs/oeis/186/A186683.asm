@@ -4,7 +4,7 @@
 mul $0,2
 mov $3,$0
 lpb $3,1
-  sub $0,3
+  trn $0,3
   mov $5,1
   mov $3,$0
   add $5,3
@@ -14,15 +14,15 @@ lpb $3,1
     add $4,$0
     mov $2,1
     mov $0,6
-    sub $5,$3
+    trn $5,$3
     sub $0,$2
   lpe
   lpb $4,1
     add $2,6
-    sub $4,$3
+    trn $4,$3
     mov $1,$4
     mov $0,$2
-    sub $1,1
+    trn $1,1
     sub $3,4
   lpe
 lpe

@@ -16,7 +16,7 @@ lpb $2,1
     pow $2,2
   lpe
   mul $5,4
-  sub $2,7
+  trn $2,7
 lpe
 mov $1,$5
 div $1,4

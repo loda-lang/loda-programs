@@ -5,7 +5,7 @@ mov $4,$0
 sub $4,1
 mov $5,$4
 add $0,2
-sub $4,1
+trn $4,1
 mov $7,$0
 add $5,$7
 sub $0,$0
@@ -22,4 +22,4 @@ lpb $0,1
   gcd $0,2
 lpe
 mov $1,$5
-sub $1,2
+trn $1,2

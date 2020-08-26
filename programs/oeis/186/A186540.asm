@@ -21,10 +21,10 @@ lpb $5,1
   lpe
   lpb $0,1
     add $4,2
-    sub $1,2
+    trn $1,2
     add $1,$2
     add $1,1
-    sub $0,$4
+    trn $0,$4
     mov $2,2
   lpe
   sub $2,1

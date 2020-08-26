@@ -23,5 +23,5 @@ lpb $0,1
   add $4,3
 lpe
 mov $1,$4
-sub $1,63
+trn $1,63
 div $1,6

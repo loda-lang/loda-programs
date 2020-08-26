@@ -10,7 +10,7 @@ lpb $1,1
   mov $5,2
   lpb $0,2
     add $2,1
-    sub $1,$5
+    trn $1,$5
     add $5,$0
   lpe
   mul $2,2

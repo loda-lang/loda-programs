@@ -18,7 +18,7 @@ lpb $0,1
   add $1,2
   sub $0,1
 lpe
-sub $1,678
+trn $1,678
 div $1,25
 mul $1,50
 add $1,1351

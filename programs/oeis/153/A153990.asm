@@ -10,7 +10,7 @@ mod $2,2
 mul $0,2
 mul $2,$6
 mov $5,$0
-sub $2,$5
+trn $2,$5
 lpb $0,1
   mov $4,$3
   mov $7,$4

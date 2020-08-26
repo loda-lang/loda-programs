@@ -7,5 +7,5 @@ lpb $2,1
   sub $2,1
   add $3,2
   add $1,$2
-  sub $2,$3
+  trn $2,$3
 lpe

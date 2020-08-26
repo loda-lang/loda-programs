@@ -22,5 +22,5 @@ lpe
 mul $0,$4
 add $0,8
 mov $1,$0
-sub $1,9
+trn $1,9
 add $1,1

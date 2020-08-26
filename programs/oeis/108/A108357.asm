@@ -5,5 +5,5 @@ mod $0,8
 mul $0,3
 mov $2,$0
 mov $1,15
-sub $1,$2
+trn $1,$2
 mod $1,2

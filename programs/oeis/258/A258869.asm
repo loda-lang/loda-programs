@@ -12,13 +12,13 @@ lpb $2,1
   sub $1,4
   cmp $1,4
   lpb $5,1
-    sub $3,7
+    trn $3,7
     sub $5,$2
     mov $2,$3
     gcd $1,2
     add $1,$3
   lpe
-  sub $4,$1
+  trn $4,$1
 lpe
 mov $1,2
 gcd $1,$4

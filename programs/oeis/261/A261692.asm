@@ -24,14 +24,14 @@ lpb $9,1
       sub $4,$5
     lpe
     lpb $5,1
-      sub $5,$2
+      trn $5,$2
       mul $2,2
     lpe
     mov $3,$1
     lpb $6,1
       sub $2,$3
       add $0,$2
-      sub $6,$2
+      trn $6,$2
     lpe
     add $0,$2
     mov $2,1

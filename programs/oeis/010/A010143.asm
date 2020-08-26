@@ -12,14 +12,14 @@ lpb $0,1
   add $1,$6
   cmp $0,6
   mod $3,2
-  sub $4,3
+  trn $4,3
   pow $4,2
   cmp $3,$0
 lpe
-sub $4,3
+trn $4,3
 cmp $3,$5
 add $1,$4
 pow $5,$3
 add $1,$5
-sub $1,2
+trn $1,2
 add $1,1

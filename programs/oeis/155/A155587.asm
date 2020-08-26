@@ -5,7 +5,7 @@ mov $13,$0
 mov $10,$0
 add $10,1
 lpb $10,1
-  sub $10,1
+  trn $10,1
   mov $0,$13
   sub $0,$10
   mov $9,$0
@@ -17,7 +17,7 @@ lpb $10,1
     mov $3,2
     mov $5,$3
     sub $5,1
-    sub $0,$5
+    trn $0,$5
     mov $7,$0
     add $0,1
     mov $8,$0

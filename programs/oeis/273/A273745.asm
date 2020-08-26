@@ -3,7 +3,7 @@
 
 mov $4,$0
 mov $1,3
-sub $1,$0
+trn $1,$0
 fac $1
 mod $1,6
 add $1,7

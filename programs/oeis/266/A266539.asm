@@ -16,11 +16,11 @@ lpb $2,1
     mov $2,$0
     mul $1,$2
   lpe
-  sub $2,$1
+  trn $2,$1
   lpb $5,1
     mul $3,2
     mov $4,$5
-    sub $5,$3
+    trn $5,$3
   lpe
   mov $1,$2
   add $1,$4

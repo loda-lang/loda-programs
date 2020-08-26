@@ -6,8 +6,8 @@ mov $3,$0
 add $0,1
 mov $2,$3
 lpb $0,1
-  sub $2,7
-  sub $0,6
+  trn $2,7
+  trn $0,6
   add $1,$0
   sub $1,$2
 lpe

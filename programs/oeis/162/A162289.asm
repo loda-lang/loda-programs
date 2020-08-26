@@ -17,6 +17,6 @@ mov $1,6
 sub $2,1
 mov $0,$1
 add $0,1
-sub $0,$2
+trn $0,$2
 mov $1,$0
 div $1,7

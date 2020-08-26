@@ -12,7 +12,7 @@ lpb $0,1
   mov $6,$3
 lpe
 mov $1,$6
-sub $1,1
+trn $1,1
 mov $4,$5
 mov $2,$4
 mul $2,2

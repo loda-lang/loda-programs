@@ -20,12 +20,12 @@ lpb $2,1
     add $3,6
     mov $1,1
     mul $0,3
-    sub $1,11
+    trn $1,11
     lpb $0,1
       add $1,2
       sub $0,1
       mov $3,$1
-      sub $0,$3
+      trn $0,$3
     lpe
     mov $4,$3
     mov $1,$4
@@ -40,7 +40,7 @@ lpb $2,1
     mov $5,0
   lpe
   mov $1,$6
-  sub $1,2
+  trn $1,2
   div $1,2
   mul $1,4
   add $1,11

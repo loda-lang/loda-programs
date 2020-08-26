@@ -15,14 +15,14 @@ lpb $0,1
   mov $5,1
   sub $0,3
   sub $1,$3
-  sub $4,$5
+  trn $4,$5
   mov $2,$1
   add $4,5
   add $2,1
-  sub $0,2
+  trn $0,2
   add $0,1
-  sub $3,3
-  sub $5,4
+  trn $3,3
+  trn $5,4
   add $5,$4
   add $0,2
   mov $4,$2

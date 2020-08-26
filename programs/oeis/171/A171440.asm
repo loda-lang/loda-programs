@@ -55,7 +55,7 @@ lpb $2,1
             add $0,6
             add $1,$7
             mov $7,$0
-            sub $1,$7
+            trn $1,$7
             gcd $1,$7
             mov $14,$13
             lpb $14,1

@@ -7,7 +7,7 @@ mul $2,$3
 gcd $0,5
 mov $4,$3
 mul $2,$4
-sub $2,6
+trn $2,6
 mov $1,8
 sub $1,$0
-sub $1,$2
+trn $1,$2

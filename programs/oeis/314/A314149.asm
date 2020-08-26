@@ -16,10 +16,10 @@ lpb $0,1
   add $1,$2
   mov $0,$4
   sub $0,4
-  sub $1,4
+  trn $1,4
   mov $4,0
   mov $2,2
-  sub $0,1
+  trn $0,1
 lpe
 lpb $3,1
   add $1,4

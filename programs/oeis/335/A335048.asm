@@ -4,7 +4,7 @@
 mov $9,$0
 mov $5,$0
 lpb $0,1
-  sub $0,2
+  trn $0,2
   gcd $5,2
 lpe
 bin $2,$0

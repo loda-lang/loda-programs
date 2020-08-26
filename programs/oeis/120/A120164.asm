@@ -10,11 +10,11 @@ lpb $2,1
   add $3,$0
   mov $0,$3
   mov $1,$0
-  sub $0,5
+  trn $0,5
   mov $4,$5
   lpb $4,1
     add $1,1
-    sub $4,$3
+    trn $4,$3
   lpe
   sub $2,1
 lpe

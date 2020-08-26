@@ -10,4 +10,4 @@ lpe
 add $0,$2
 sub $1,$0
 sub $1,$0
-sub $1,2
+trn $1,2

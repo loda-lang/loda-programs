@@ -5,7 +5,7 @@ add $0,6
 lpb $0,1
   add $2,1
   add $1,$2
-  sub $1,5
+  trn $1,5
   mul $1,4
   sub $0,1
 lpe

@@ -13,5 +13,5 @@ lpb $2,1
     sub $4,$3
   lpe
   sub $2,$3
-  sub $2,1
+  trn $2,1
 lpe

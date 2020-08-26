@@ -11,4 +11,4 @@ lpe
 mul $3,2
 add $3,1
 sub $1,1
-sub $1,$3
+trn $1,$3

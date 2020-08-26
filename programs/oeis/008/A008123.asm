@@ -10,7 +10,7 @@ lpb $0,1
   add $0,$2
   mul $4,3
   mov $2,$0
-  sub $2,1
+  trn $2,1
   add $4,$2
   div $2,7
   mov $0,0

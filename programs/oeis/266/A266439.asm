@@ -6,5 +6,5 @@ add $0,1
 mov $3,$0
 lpb $2,$$2
   add $$3,$$2
-  sub $3,4
+  trn $3,4
 lpe

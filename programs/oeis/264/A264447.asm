@@ -21,12 +21,12 @@ lpb $0,1
   mov $3,$2
   sub $7,$3
   mov $3,$7
-  sub $0,8
+  trn $0,8
 lpe
 add $3,$6
 add $3,1
 mov $1,$3
-sub $1,4
+trn $1,4
 mov $10,$9
 mov $4,$10
 mul $4,85

@@ -33,7 +33,7 @@ lpb $16,1
       mov $4,$1
       mov $1,$2
       add $1,$5
-      sub $4,$0
+      trn $4,$0
       add $4,1
       mov $0,$1
       pow $3,$4

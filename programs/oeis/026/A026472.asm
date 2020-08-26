@@ -16,7 +16,7 @@ lpb $13,1
     add $0,$9
     sub $0,1
     mov $5,3
-    sub $5,5
+    trn $5,5
     mov $2,$0
     mov $6,$2
     mov $4,$6
@@ -36,7 +36,7 @@ lpb $13,1
     mul $3,2
     mul $3,$1
     add $5,$3
-    sub $5,2
+    trn $5,2
     mov $1,$5
     mov $10,$9
     lpb $10,1

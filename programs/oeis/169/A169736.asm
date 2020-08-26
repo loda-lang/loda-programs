@@ -9,16 +9,16 @@ lpb $2,1
   add $4,$2
   mov $5,1
   add $5,$1
-  sub $1,2
+  trn $1,2
   sub $0,1
   add $0,6
-  sub $4,10
+  trn $4,10
   lpb $4,1
-    sub $4,$3
-    sub $5,$0
+    trn $4,$3
+    trn $5,$0
   lpe
   lpb $5,1
-    sub $5,$3
+    trn $5,$3
     add $1,$0
   lpe
   mov $2,$5

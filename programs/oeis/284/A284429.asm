@@ -8,12 +8,12 @@ lpb $2,1
   add $1,4
   mov $4,$0
   lpb $5,1
-    sub $2,1
-    sub $5,$3
+    trn $2,1
+    trn $5,$3
     add $1,$2
   lpe
   add $1,4
-  sub $2,1
+  trn $2,1
   mov $0,$3
   mov $3,$4
   mov $5,4

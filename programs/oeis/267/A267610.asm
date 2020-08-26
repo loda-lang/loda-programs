@@ -11,7 +11,7 @@ lpb $3,1
   mov $2,$0
   lpb $2,1
     lpb $4,1
-      sub $4,$1
+      trn $4,$1
       mov $5,$2
       mov $1,$5
     lpe
@@ -21,7 +21,7 @@ lpb $3,1
       mul $5,2
       sub $5,$4
       mov $2,$5
-      sub $5,$1
+      trn $5,$1
     lpe
   lpe
   mov $1,$2

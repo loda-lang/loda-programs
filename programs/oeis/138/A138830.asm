@@ -3,12 +3,12 @@
 
 mov $5,$0
 mov $2,$0
-sub $2,1
+trn $2,1
 mov $1,1
 lpb $2,1
   add $1,1
   div $2,6
-  sub $2,1
+  trn $2,1
 lpe
 add $1,1
 mov $4,$5

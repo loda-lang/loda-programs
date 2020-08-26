@@ -12,7 +12,7 @@ lpb $7,1
   mov $4,5
   mov $6,$4
   mov $0,$6
-  sub $8,7
+  trn $8,7
   mov $3,$8
   mod $0,$6
   gcd $0,2

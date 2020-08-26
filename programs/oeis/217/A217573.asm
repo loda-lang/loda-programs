@@ -10,12 +10,12 @@ add $0,$4
 add $6,2
 add $4,$6
 add $0,1
-sub $6,$4
+trn $6,$4
 lpb $0,1
   add $5,$6
   add $1,3
   add $2,2
-  sub $2,$6
+  trn $2,$6
   add $1,$5
   mov $3,5
   add $4,2
@@ -27,7 +27,7 @@ lpb $0,1
   mov $2,1
   add $3,6
   sub $0,1
-  sub $4,$3
+  trn $4,$3
   add $2,1
   sub $6,$4
 lpe

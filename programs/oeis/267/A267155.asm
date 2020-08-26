@@ -3,7 +3,7 @@
 
 add $$0,3
 lpb $$0,4
-  sub $0,1
+  trn $0,1
   add $1,1
 lpe
 add $$4,$0

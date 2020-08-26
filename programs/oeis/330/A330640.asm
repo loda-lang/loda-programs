@@ -14,12 +14,12 @@ lpb $11,1
     mov $0,6
     div $8,2
     mov $2,$8
-    sub $8,1
+    trn $8,1
     mov $6,$2
     mov $4,$7
     mov $5,$2
     sub $6,$8
-    sub $0,$4
+    trn $0,$4
     mov $8,2
     bin $5,$8
     mov $7,$6
@@ -32,7 +32,7 @@ lpb $11,1
   add $6,1
   mov $3,$6
   mul $7,7
-  sub $7,6
+  trn $7,6
   mov $6,8
   add $7,$6
   add $3,$7

@@ -18,6 +18,6 @@ lpb $0,1
   mov $0,$7
 lpe
 mov $1,$6
-sub $1,49
+trn $1,49
 div $1,48
 add $1,1

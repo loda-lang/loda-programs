@@ -6,7 +6,7 @@ lpb $0,1
   sub $0,1
   add $1,3
 lpe
-sub $1,14
+trn $1,14
 lpb $2,1
   add $1,2
   sub $2,1

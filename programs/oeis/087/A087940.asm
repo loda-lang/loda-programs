@@ -8,9 +8,9 @@ lpb $2,1
   mul $1,2
   mov $3,$4
   mov $4,4
-  sub $4,$3
+  trn $4,$3
   sub $1,$4
   sub $2,1
-  sub $4,1
+  trn $4,1
 lpe
 sub $1,3

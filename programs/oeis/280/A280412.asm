@@ -6,5 +6,5 @@ add $2,1
 mov $1,$2
 gcd $1,2
 pow $1,$2
-sub $1,3
+trn $1,3
 add $1,1

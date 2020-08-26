@@ -16,7 +16,7 @@ mov $5,4
 lpb $2,1
   sub $2,7
   add $2,2
-  sub $2,$5
+  trn $2,$5
   sub $5,1
   add $0,1
   add $5,$6

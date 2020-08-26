@@ -22,7 +22,7 @@ lpb $8,1
   mov $9,$2
   sub $9,$3
   mul $1,$9
-  sub $1,2
+  trn $1,2
   mov $4,$8
   lpb $4,1
     mov $5,$1

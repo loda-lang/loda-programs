@@ -11,7 +11,7 @@ lpb $0,1
   mov $4,2
   mul $4,26
   add $4,$0
-  sub $0,24
+  trn $0,24
 lpe
 sub $4,1
 mov $1,$4

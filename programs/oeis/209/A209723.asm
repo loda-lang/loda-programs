@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $3,$2
-  sub $2,$0
+  trn $2,$0
   sub $0,1
   add $3,1
   add $2,$3

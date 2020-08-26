@@ -12,6 +12,6 @@ lpb $0,1
   mul $1,$2
   sub $0,$0
 lpe
-sub $1,12
+trn $1,12
 div $1,12
 add $1,1

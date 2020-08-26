@@ -9,5 +9,5 @@ lpb $0,1
   mov $3,$1
   add $1,$2
 lpe
-sub $1,5
+trn $1,5
 add $1,1

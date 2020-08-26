@@ -3,7 +3,7 @@
 
 mov $1,$0
 lpb $0,1
-  sub $0,9
+  trn $0,9
   add $1,1
 lpe
 add $1,738

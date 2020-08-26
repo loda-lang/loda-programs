@@ -7,11 +7,11 @@ lpb $2,1
   mov $1,1
   add $4,$2
   mov $5,$1
-  sub $5,$0
+  trn $5,$0
   mov $2,$0
   lpb $5,1
     bin $4,2
-    sub $5,$4
+    trn $5,$4
     sub $3,$3
   lpe
   add $3,1
@@ -19,7 +19,7 @@ lpb $2,1
     sub $4,$4
     sub $0,$3
   lpe
-  sub $2,1
+  trn $2,1
 lpe
 mul $3,9
 mov $1,$3

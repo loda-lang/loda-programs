@@ -10,11 +10,11 @@ mul $1,$3
 fac $0
 mov $2,6
 lpb $0,1
-  sub $0,$1
+  trn $0,$1
   add $1,$2
   add $1,2
   div $0,$1
   mod $2,2
   mul $0,3
 lpe
-sub $1,8
+trn $1,8

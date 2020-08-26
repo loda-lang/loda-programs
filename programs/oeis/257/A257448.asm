@@ -13,7 +13,7 @@ lpb $0,1
   add $1,$3
   add $4,$3
 lpe
-sub $4,$2
+trn $4,$2
 mov $1,$0
 add $4,1
 add $1,$4

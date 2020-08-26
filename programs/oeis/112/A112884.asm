@@ -9,5 +9,5 @@ lpb $2,1
     mul $1,2
   lpe
   sub $1,1
-  sub $2,2
+  trn $2,2
 lpe

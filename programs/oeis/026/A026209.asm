@@ -19,7 +19,7 @@ lpb $2,1
     gcd $2,8
   lpe
   lpb $6,1
-    sub $6,$4
+    trn $6,$4
     mov $5,$3
   lpe
 lpe

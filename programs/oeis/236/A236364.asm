@@ -6,14 +6,14 @@ mov $5,3
 mov $2,$0
 lpb $0,1
   add $6,$2
-  sub $2,$5
+  trn $2,$5
   sub $0,1
   add $2,1
   add $1,$6
 lpe
 add $3,$1
 add $3,$1
-sub $6,$1
+trn $6,$1
 add $1,$3
 add $6,1
 add $1,$6

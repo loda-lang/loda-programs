@@ -9,7 +9,7 @@ lpb $0,1
   mov $1,$3
   mod $0,1
 lpe
-sub $1,4
+trn $1,4
 mov $2,$5
 mov $4,$2
 add $1,$4

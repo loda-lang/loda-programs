@@ -10,11 +10,9 @@ gcd $0,$5
 mov $1,1
 mod $0,5
 lpb $0,1
-  mod $0,3
-  sub $1,4
+  trn $1,4
   sub $0,3
   gcd $1,2
-  add $0,3
 lpe
 add $1,3
 mov $3,$4

@@ -30,7 +30,7 @@ lpb $7,1
   add $5,$4
   div $5,$0
   gcd $5,3
-  sub $0,$5
+  trn $0,$5
   mov $1,$0
   add $1,1
   add $8,$1

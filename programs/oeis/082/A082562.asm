@@ -5,10 +5,10 @@ mov $2,$0
 mov $1,$0
 mul $1,$2
 lpb $0,1
-  sub $0,$1
+  trn $0,$1
   gcd $0,2
   sub $0,1
-  sub $1,5
+  trn $1,5
   mov $2,$0
   add $1,2
   add $1,$2

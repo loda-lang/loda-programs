@@ -7,7 +7,7 @@ lpb $0,1
   mov $3,$0
   mul $0,2
   sub $0,$2
-  sub $0,1
+  trn $0,1
   mov $2,$3
 lpe
 fac $3

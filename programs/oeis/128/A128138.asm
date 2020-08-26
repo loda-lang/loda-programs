@@ -7,9 +7,9 @@ lpb $0,1
   sub $0,1
   mov $2,$0
   mov $3,$2
-  sub $0,$4
+  trn $0,$4
 lpe
-sub $4,1
-sub $3,$4
+trn $4,1
+trn $3,$4
 add $3,$2
 mov $1,$3

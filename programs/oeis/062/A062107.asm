@@ -11,5 +11,5 @@ lpb $0,1
   mov $5,$3
   mov $3,$2
   add $5,$4
-  sub $2,$0
+  trn $2,$0
 lpe

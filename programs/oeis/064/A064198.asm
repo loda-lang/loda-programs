@@ -20,7 +20,7 @@ lpb $12,1
     mov $2,3
     add $3,$0
     mul $2,$3
-    sub $3,5
+    trn $3,5
     mul $2,$3
     mul $2,2
     mov $1,$2

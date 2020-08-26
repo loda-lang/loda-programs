@@ -12,7 +12,7 @@ lpb $2,1
     sub $3,$2
     sub $4,$3
   lpe
-  sub $3,3
+  trn $3,3
   sub $2,1
 lpe
 add $1,1

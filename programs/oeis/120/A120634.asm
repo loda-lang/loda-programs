@@ -4,6 +4,6 @@
 mov $2,$0
 lpb $2,1
   add $1,8
-  sub $2,4
+  trn $2,4
 lpe
 sub $1,$0

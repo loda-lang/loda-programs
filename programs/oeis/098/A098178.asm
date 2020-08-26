@@ -4,7 +4,7 @@
 mov $5,4
 mov $10,$0
 mov $9,1
-sub $10,1
+trn $10,1
 add $10,1
 gcd $5,$10
 mov $2,3

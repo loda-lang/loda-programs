@@ -41,10 +41,10 @@ lpb $18,1
         lpe
         lpb $5,1
           add $3,4
-          sub $5,$3
+          trn $5,$3
         lpe
         lpb $6,1
-          sub $6,$3
+          trn $6,$3
           mov $1,$3
         lpe
         add $6,$1

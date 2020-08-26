@@ -24,4 +24,4 @@ lpb $2,1
   add $1,2
   sub $2,1
 lpe
-sub $1,8
+trn $1,8

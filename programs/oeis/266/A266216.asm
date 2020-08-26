@@ -14,12 +14,12 @@ lpb $0,1
   add $3,4
   mov $1,$2
   gcd $4,2
-  sub $0,$3
+  trn $0,$3
   add $6,2
 lpe
 gcd $0,2
 add $6,$0
-sub $1,$6
+trn $1,$6
 add $5,$4
 add $1,$5
 div $1,2

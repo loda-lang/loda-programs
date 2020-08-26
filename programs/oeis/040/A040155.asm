@@ -24,7 +24,7 @@ add $0,1
 add $3,$$1
 mov $3,$$3
 lpb $$4,3
-  sub $4,1
+  trn $4,1
 lpe
 add $3,$$5
 add $$3,6

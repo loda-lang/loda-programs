@@ -9,9 +9,9 @@ lpb $0,1
   add $5,2
   add $3,4
   add $0,$2
-  sub $4,2
+  trn $4,2
   mov $1,$4
-  sub $0,$5
+  trn $0,$5
   add $4,$3
   add $0,2
   add $4,1

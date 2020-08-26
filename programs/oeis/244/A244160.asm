@@ -9,7 +9,7 @@ lpb $0,1
   mul $3,2
   add $5,$3
   mov $4,$5
-  sub $0,$4
+  trn $0,$4
   mul $5,3
   div $5,2
   mov $2,$5
@@ -19,5 +19,5 @@ mov $0,$5
 add $0,3
 log $0,10
 mov $1,1
-sub $0,$1
+trn $0,$1
 mov $1,$0

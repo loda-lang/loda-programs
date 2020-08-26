@@ -30,7 +30,7 @@ lpb $13,1
   add $7,$1
   mov $9,4
   mul $0,$7
-  sub $8,1
+  trn $8,1
   add $8,$0
   mov $1,$8
   add $1,$9

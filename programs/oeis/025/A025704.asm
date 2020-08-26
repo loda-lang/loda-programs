@@ -33,8 +33,8 @@ lpb $14,1
       mul $1,7
       add $0,$7
       pow $0,$7
-      sub $1,$0
-      sub $2,1
+      trn $1,$0
+      trn $2,1
       fac $1
     lpe
     div $1,5

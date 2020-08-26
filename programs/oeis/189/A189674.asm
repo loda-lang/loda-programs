@@ -7,7 +7,7 @@ lpb $0,36
   mov $10,1
   div $0,3
   lpb $0,144
-    sub $1,30
+    trn $1,30
     mov $5,1
     mov $4,2
     mov $3,5
@@ -21,7 +21,7 @@ lpb $0,36
     div $2,3
     mov $4,$2
     mov $3,3
-    sub $10,$5
+    trn $10,$5
   lpe
 lpe
 mov $1,$5

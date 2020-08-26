@@ -22,12 +22,9 @@ lpb $17,1
       mov $0,$9
       sub $0,$11
       mov $1,2
-      mov $3,$1
       div $1,$1
-      add $8,7
       mul $1,6
       add $5,$0
-      gcd $2,$8
       lpb $0,1
         mov $3,4
         mov $2,6

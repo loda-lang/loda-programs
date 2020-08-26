@@ -11,7 +11,7 @@ lpb $7,1
   mov $2,$6
   mov $8,2
   lpb $0,1
-    sub $0,1
+    trn $0,1
     add $0,1
     log $0,$8
     add $2,$0

@@ -5,12 +5,12 @@ mov $3,3
 mov $1,1
 mul $0,2
 lpb $0,1
-  sub $2,6
+  trn $2,6
   add $1,$3
   add $1,$2
   add $2,5
   mov $3,2
   add $2,4
-  sub $1,$0
+  trn $1,$0
   sub $0,1
 lpe

@@ -24,10 +24,10 @@ lpb $2,1
     mov $5,$10
     add $9,2
     gcd $1,2
-    sub $5,$6
+    trn $5,$6
     add $5,2
     mov $8,$1
-    sub $0,$9
+    trn $0,$9
   lpe
   sub $5,$8
   mov $1,$5

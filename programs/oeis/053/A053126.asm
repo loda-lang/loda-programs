@@ -20,6 +20,6 @@ lpb $0,1
 lpe
 lpb $1,1
   add $3,$1
-  sub $1,$2
+  trn $1,$2
 lpe
 mov $1,$3

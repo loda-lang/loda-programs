@@ -7,7 +7,7 @@ lpb $0,1
   add $5,3
   add $1,3
   add $3,$5
-  sub $0,3
+  trn $0,3
   sub $3,$5
   add $0,3
   sub $4,$3
@@ -21,7 +21,7 @@ lpb $0,1
   add $4,1
   sub $5,$2
 lpe
-sub $0,5
+trn $0,5
 add $0,$4
 sub $0,3
 add $2,$0

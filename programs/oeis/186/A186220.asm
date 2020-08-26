@@ -13,14 +13,14 @@ lpb $3,1
   add $3,1
   lpb $4,1
     sub $4,$3
-    sub $3,$4
+    trn $3,$4
     add $0,$4
     add $3,2
   lpe
   lpb $0,1
     mov $3,1
     add $1,1
-    sub $0,$1
+    trn $0,$1
   lpe
 lpe
 lpb $2,1

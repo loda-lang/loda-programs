@@ -3,5 +3,5 @@
 
 lpb $0,1
   mov $1,$0
-  sub $0,9
+  trn $0,9
 lpe

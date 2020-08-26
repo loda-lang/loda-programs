@@ -18,7 +18,7 @@ mov $5,17
 add $1,1
 mul $5,$1
 mov $1,$5
-sub $1,17
+trn $1,17
 div $1,17
 mul $1,2
 add $1,2

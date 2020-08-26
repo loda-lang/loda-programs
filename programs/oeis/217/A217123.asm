@@ -4,8 +4,8 @@
 mov $1,2
 lpb $0,1
   add $1,$0
-  sub $1,4
+  trn $1,4
   add $1,$0
   add $1,2
-  sub $0,4
+  trn $0,4
 lpe

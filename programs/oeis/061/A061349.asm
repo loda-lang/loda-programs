@@ -23,7 +23,7 @@ lpb $12,1
       add $3,$6
       mov $1,$0
       mul $3,$1
-      sub $0,$3
+      trn $0,$3
       add $0,1
     lpe
     mov $6,4

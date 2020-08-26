@@ -9,6 +9,6 @@ lpb $2,$0
   add $0,1
   mov $1,$0
   mul $1,2
-  sub $3,3
+  trn $3,3
 lpe
 add $1,1

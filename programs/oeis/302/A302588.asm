@@ -23,13 +23,13 @@ lpb $14,1
       sub $0,1
       mov $5,$0
       mov $4,1
-      sub $8,$1
-      sub $0,2
+      trn $8,$1
+      trn $0,2
       mov $2,1
-      sub $1,8
+      trn $1,8
       add $5,$4
       add $8,$1
-      sub $2,$8
+      trn $2,$8
       mov $1,$5
       mov $3,$2
       add $1,$0

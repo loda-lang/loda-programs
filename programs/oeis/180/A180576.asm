@@ -41,7 +41,7 @@ lpb $14,1
       add $1,3
       add $4,4
       mul $4,3
-      sub $0,$4
+      trn $0,$4
     lpe
     div $1,12
     mul $1,3

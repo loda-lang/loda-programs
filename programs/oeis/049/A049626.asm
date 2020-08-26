@@ -33,7 +33,7 @@ lpb $15,1
       mov $3,2
       add $3,$0
       lpb $0,1
-        sub $0,$4
+        trn $0,$4
         add $3,$1
         div $1,$4
         add $1,$3

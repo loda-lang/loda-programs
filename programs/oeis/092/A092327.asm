@@ -19,7 +19,7 @@ lpb $0,1
   sub $3,3
   add $3,1
   add $3,$5
-  sub $4,$6
+  trn $4,$6
   add $3,1
   sub $0,1
   add $4,1

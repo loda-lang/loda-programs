@@ -16,8 +16,8 @@ mov $0,$4
 lpb $0,1
   sub $0,7
   sub $3,$5
-  sub $5,6
-  sub $0,5
+  trn $5,6
+  trn $0,5
   add $5,5
   mov $1,$3
   sub $3,6

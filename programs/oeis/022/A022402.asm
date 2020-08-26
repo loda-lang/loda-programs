@@ -16,6 +16,6 @@ mov $5,$0
 mov $3,6
 add $5,$3
 add $1,$5
-sub $1,14
+trn $1,14
 div $1,2
 add $1,1

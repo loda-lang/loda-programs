@@ -14,14 +14,11 @@ lpb $4,1
   add $1,$3
   mod $0,$3
   mov $2,$0
-  pow $2,6
-  pow $3,$0
   lpb $2,1
     sub $2,$3
     gcd $1,9
-    add $2,4
   lpe
-  sub $1,2
+  trn $1,2
   add $5,$1
 lpe
 mov $1,$5

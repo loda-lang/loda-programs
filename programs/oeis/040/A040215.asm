@@ -7,7 +7,7 @@ gcd $1,2
 lpb $0,1
   mul $1,6
   mul $0,$2
-  sub $1,7
+  trn $1,7
 lpe
 mul $1,5
 add $1,5

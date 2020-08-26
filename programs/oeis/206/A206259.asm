@@ -17,10 +17,10 @@ lpb $0,1
   gcd $0,$2
   add $4,7
 lpe
-sub $5,10
+trn $5,10
 add $5,$4
 mov $1,$5
-sub $1,25
+trn $1,25
 div $1,2
 mul $1,2
 add $1,16

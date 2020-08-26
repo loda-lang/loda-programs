@@ -7,7 +7,7 @@ mov $2,$0
 lpb $2,1
   mov $4,$3
   lpb $4,1
-    sub $0,5
+    trn $0,5
     add $1,1
     mov $4,$1
   lpe

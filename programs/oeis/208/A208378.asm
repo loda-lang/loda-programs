@@ -9,7 +9,7 @@ mov $1,$2
 mul $1,6
 mov $4,6
 add $5,3
-sub $1,3
+trn $1,3
 add $1,5
 log $4,$1
 mul $1,2

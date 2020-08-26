@@ -31,7 +31,7 @@ lpb $17,1
         mov $3,$0
         add $3,2
         fac $3
-        sub $0,6
+        trn $0,6
         mov $1,$3
       lpe
       div $1,2

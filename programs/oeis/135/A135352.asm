@@ -5,5 +5,5 @@ mov $1,$0
 pow $1,2
 sub $1,1
 mod $1,5
-sub $1,2
+trn $1,2
 add $1,1

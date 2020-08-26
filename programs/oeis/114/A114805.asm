@@ -31,7 +31,7 @@ lpb $18,1
         gcd $1,4
         lpb $5,1
           mul $1,$5
-          sub $5,5
+          trn $5,5
         lpe
         sub $2,1
       lpe

@@ -39,12 +39,12 @@ lpb $25,1
           add $0,$11
           sub $0,1
           mov $2,$0
-          sub $0,2
+          trn $0,2
           mov $7,$2
           add $7,5
           mov $3,$7
           lpb $0,1
-            sub $0,3
+            trn $0,3
             add $3,3
           lpe
           mov $2,2

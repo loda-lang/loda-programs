@@ -19,17 +19,15 @@ lpb $14,1
     mov $2,$0
     div $2,2
     lpb $2,1
-      mod $1,2
       div $2,2
-      mov $0,4
       div $1,$0
       lpb $5,1
-        sub $5,$8
+        trn $5,$8
       lpe
       cmp $5,$1
       add $8,3
       add $1,$8
-      sub $2,1
+      trn $2,1
       div $1,3
     lpe
     sub $1,$5

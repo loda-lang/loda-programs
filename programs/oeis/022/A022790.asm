@@ -32,7 +32,7 @@ lpb $18,1
           mov $3,2
           mov $0,3
           sub $0,1
-          sub $4,$7
+          trn $4,$7
           div $6,6
         lpe
         lpb $5,1
@@ -43,12 +43,12 @@ lpb $18,1
         lpe
         lpb $6,1
           add $7,$0
-          sub $6,$7
+          trn $6,$7
         lpe
         sub $2,1
       lpe
       add $7,$8
-      sub $8,2
+      trn $8,2
       bin $4,$8
       add $3,$7
       mov $1,$3
