@@ -1,0 +1,87 @@
+; A007572: Generalization of the golden ratio (expansion of (5-13x)/((1+x)(1-4x))).
+; 5,2,26,86,362,1430,5738,22934,91754,366998,1468010,5872022,23488106,93952406,375809642,1503238550,6012954218,24051816854,96207267434,384829069718,1539316278890,6157265115542,24629060462186
+
+mov $7,1
+mov $8,2
+mov $1,3
+mov $5,1
+mov $2,3
+mov $6,2
+mul $2,$5
+add $1,$1
+add $6,$2
+add $0,3
+div $6,11
+add $5,2
+add $2,$1
+sub $2,$6
+gcd $5,3
+sub $7,1
+mov $6,$7
+mov $4,$2
+add $6,1
+mov $2,$4
+mov $3,$5
+mov $6,1
+fac $5
+mov $1,$1
+add $5,$8
+mov $1,1
+mov $6,$3
+mul $5,$3
+mul $1,2
+mov $2,7
+mov $8,2
+mov $4,1
+mov $1,7
+add $2,$5
+mov $7,1
+sub $4,1
+mov $3,$4
+add $8,$1
+sub $8,$2
+add $7,1
+mov $8,2
+pow $7,$6
+trn $0,1
+div $4,$5
+lpb $0,1
+  add $1,$3
+  sub $2,3
+  add $2,$3
+  add $4,$7
+  mul $7,2
+  add $4,2
+  mov $6,6
+  mul $3,2
+  add $7,2
+  add $2,3
+  add $8,11
+  sub $0,1
+  mov $4,2
+  add $4,1
+  mov $8,$6
+  add $6,1
+  add $5,$2
+  add $8,2
+  add $3,$1
+  mov $8,$1
+  mov $6,$2
+  add $2,8
+  add $2,10
+  add $4,2
+  sub $2,$7
+  sub $7,1
+  mov $1,$3
+  mov $3,$3
+  mov $7,$2
+lpe
+mov $4,$0
+mov $5,$4
+mov $4,$6
+sub $1,$3
+mov $1,$4
+sub $1,20
+div $1,18
+mul $1,3
+add $1,2
