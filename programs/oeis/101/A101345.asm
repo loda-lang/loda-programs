@@ -14,7 +14,7 @@ lpb $13,1
     sub $9,1
     mov $0,$7
     add $0,$9
-    sub $0,1
+    trn $0,1
     add $0,2
     mov $5,$0
     mov $1,$5

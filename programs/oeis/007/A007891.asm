@@ -7,11 +7,11 @@ add $0,$3
 mov $2,$0
 mov $4,$3
 lpb $2,1
-  sub $3,$0
+  trn $3,$0
   add $3,3
   lpb $4,1
-    sub $4,$3
-    sub $2,4
+    trn $4,$3
+    trn $2,4
   lpe
   add $4,2
   add $2,3

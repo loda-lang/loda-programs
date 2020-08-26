@@ -7,11 +7,11 @@ mul $2,2
 add $0,1
 mov $1,4
 lpb $0,1
-  sub $2,$1
+  trn $2,$1
   add $1,$2
   add $1,$2
   sub $0,1
-  sub $1,11
+  trn $1,11
   sub $2,$2
   add $2,6
 lpe

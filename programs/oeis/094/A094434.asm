@@ -3,7 +3,7 @@
 
 lpb $0,1
   add $1,$3
-  sub $3,$2
+  trn $3,$2
   mul $2,2
   add $2,2
   add $3,$1

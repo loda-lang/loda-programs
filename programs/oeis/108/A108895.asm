@@ -27,7 +27,7 @@ lpb $20,1
       lpb $0,1
         mov $3,$0
         mul $4,$3
-        sub $0,4
+        trn $0,4
       lpe
       mov $1,$4
       mov $14,$13

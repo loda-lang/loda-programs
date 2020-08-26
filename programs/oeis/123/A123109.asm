@@ -4,6 +4,6 @@
 mov $1,3
 pow $1,$0
 mul $1,3
-sub $1,5
+trn $1,5
 div $1,2
 add $1,1

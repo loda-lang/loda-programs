@@ -20,4 +20,4 @@ lpb $2,1
   lpe
   sub $2,1
 lpe
-sub $1,$0
+trn $1,$0

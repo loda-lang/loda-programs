@@ -8,7 +8,7 @@ mov $3,49
 mov $0,2
 div $2,2
 add $3,$2
-sub $2,1
+trn $2,1
 add $3,6
 lpb $0,1
   add $1,2

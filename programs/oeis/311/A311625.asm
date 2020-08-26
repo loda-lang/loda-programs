@@ -17,7 +17,7 @@ lpb $3,1
   div $4,2
   lpb $0,1
     bin $6,2
-    sub $5,$6
+    trn $5,$6
     add $7,$4
     mov $6,$5
     mov $0,2

@@ -13,20 +13,20 @@ lpb $2,1
   mov $2,1
   mul $5,2
   add $5,$2
-  sub $8,2
+  trn $8,2
   add $8,$0
   lpb $4,1
     add $5,1
     sub $4,$3
-    sub $4,$7
+    trn $4,$7
     add $5,$8
     mul $8,2
   lpe
   mov $7,8
   lpb $5,1
-    sub $5,$7
+    trn $5,$7
     mul $5,2
-    sub $0,8
+    trn $0,8
     mov $7,3
   lpe
   add $2,$0

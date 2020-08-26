@@ -44,8 +44,8 @@ lpb $19,1
       add $9,1
       mov $0,$9
       sub $2,$10
-      sub $2,$0
-      sub $5,$10
+      trn $2,$0
+      trn $5,$10
       mov $10,$5
       add $2,7
       mov $1,$2

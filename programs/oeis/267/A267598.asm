@@ -12,7 +12,7 @@ lpb $2,1
   lpb $4,1
     add $6,$2
     mov $1,$4
-    sub $4,$6
+    trn $4,$6
     gcd $1,2
   lpe
   lpb $6,1

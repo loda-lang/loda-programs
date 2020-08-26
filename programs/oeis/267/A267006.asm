@@ -6,9 +6,9 @@ add $0,2
 lpb $0,1
   sub $0,1
   add $3,$2
-  sub $3,$0
+  trn $3,$0
   add $1,$2
-  sub $0,$1
+  trn $0,$1
   add $0,$3
 lpe
 mov $1,$0

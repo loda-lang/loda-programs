@@ -26,7 +26,7 @@ lpb $14,1
       mov $0,1
       mov $8,$7
       div $6,2
-      sub $8,$0
+      trn $8,$0
       sub $0,1
       pow $8,2
     lpe

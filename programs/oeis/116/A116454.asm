@@ -10,4 +10,4 @@ lpb $0,1
   sub $1,$3
   add $1,$2
 lpe
-sub $1,5
+trn $1,5

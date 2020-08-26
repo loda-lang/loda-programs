@@ -17,7 +17,7 @@ lpb $4,1
   lpb $0,1
     sub $0,1
     sub $1,2
-    sub $0,2
+    trn $0,2
   lpe
   pow $1,2
   div $1,4

@@ -3,6 +3,6 @@
 
 mov $1,$0
 mul $1,15
-sub $1,1
+trn $1,1
 mod $1,6
 add $1,3

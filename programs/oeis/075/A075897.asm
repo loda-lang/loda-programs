@@ -9,7 +9,7 @@ lpb $2,1
   mul $5,2
   sub $2,$2
   add $2,3
-  sub $2,$5
+  trn $2,$5
   add $2,2
   lpb $5,1
     mul $2,$3

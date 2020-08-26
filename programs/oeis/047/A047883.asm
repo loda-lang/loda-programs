@@ -18,15 +18,15 @@ lpb $2,1
     sub $5,$3
     sub $0,3
   lpe
-  sub $0,$1
+  trn $0,$1
   add $1,6
-  sub $3,4
+  trn $3,4
   sub $2,1
 lpe
 add $0,5
 mov $5,$0
 add $3,$5
-sub $1,$3
+trn $1,$3
 lpb $4,1
   add $1,1
   sub $4,1

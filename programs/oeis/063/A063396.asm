@@ -22,7 +22,7 @@ lpb $2,1
     mov $5,$1
     mov $4,$3
     add $1,$2
-    sub $6,$3
+    trn $6,$3
     add $5,1
     add $1,$3
     add $1,5

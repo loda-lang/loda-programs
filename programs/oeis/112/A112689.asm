@@ -10,7 +10,7 @@ lpb $2,1
     mov $3,$1
     mov $4,$3
     mov $3,$2
-    sub $4,$3
+    trn $4,$3
   lpe
   sub $1,$4
   add $1,1
@@ -19,5 +19,5 @@ lpb $2,1
   sub $2,1
   add $2,1
   mov $4,1
-  sub $2,1
+  trn $2,1
 lpe

@@ -8,7 +8,7 @@ mul $0,$3
 mov $5,$0
 div $5,2
 mov $4,$5
-sub $4,1
+trn $4,1
 add $4,1
 mov $2,$4
 mov $1,$2

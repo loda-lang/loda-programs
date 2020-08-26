@@ -33,11 +33,11 @@ lpb $14,1
     mov $0,$8
     mul $1,2
     mov $8,1
-    sub $7,5
+    trn $7,5
     sub $1,1
     add $8,1
     add $7,$1
-    sub $2,$7
+    trn $2,$7
     mul $8,$0
     lpb $0,1
       add $2,$8

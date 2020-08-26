@@ -10,7 +10,7 @@ lpb $0,1
   add $3,3
   add $4,$2
   add $4,$5
-  sub $2,6
+  trn $2,6
   add $5,4
   sub $4,1
   add $1,$4

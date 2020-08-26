@@ -8,20 +8,20 @@ lpb $4,1
   add $5,$4
   lpb $5,1
     mov $4,0
-    sub $5,2
+    trn $5,2
     mov $1,3
   lpe
-  sub $0,$1
+  trn $0,$1
   add $5,$0
   mov $3,5
   lpb $5,1
-    sub $5,$3
+    trn $5,$3
     add $4,4
   lpe
   lpb $4,1
     mov $3,6
     add $5,5
-    sub $4,$3
+    trn $4,$3
   lpe
 lpe
 mov $1,$5

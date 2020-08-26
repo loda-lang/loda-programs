@@ -20,10 +20,10 @@ lpb $0,1
   mov $2,4
   sub $1,5
   add $3,1
-  sub $0,1
-  sub $5,$0
+  trn $0,1
+  trn $5,$0
   sub $3,$5
-  sub $0,4
+  trn $0,4
 lpe
 sub $3,3
 add $1,$3

@@ -15,5 +15,5 @@ mul $4,7
 add $4,4
 gcd $1,$4
 div $1,4
-sub $1,27
+trn $1,27
 add $1,2

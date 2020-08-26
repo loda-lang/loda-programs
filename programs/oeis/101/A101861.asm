@@ -38,8 +38,8 @@ lpb $17,1
         lpb $5,1
           mov $1,$2
           add $1,$7
-          sub $2,$1
-          sub $5,$1
+          trn $2,$1
+          trn $5,$1
         lpe
         add $1,1
       lpe

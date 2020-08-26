@@ -6,7 +6,7 @@ mov $3,$0
 mov $2,$4
 bin $2,3
 lpb $0,1
-  sub $4,$3
+  trn $4,$3
   add $2,4
   mul $2,2
   sub $0,1

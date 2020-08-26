@@ -3,8 +3,8 @@
 
 mul $0,2
 lpb $0,1
-  sub $0,2
+  trn $0,2
   add $1,$0
-  sub $0,3
+  trn $0,3
   sub $1,$0
 lpe

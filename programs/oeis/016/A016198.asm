@@ -13,9 +13,9 @@ lpb $0,1
   add $4,$3
   sub $4,$1
   add $1,$3
-  sub $1,3
+  trn $1,3
   add $5,$1
-  sub $5,1
+  trn $5,1
   add $1,$5
   sub $3,$3
   add $1,4

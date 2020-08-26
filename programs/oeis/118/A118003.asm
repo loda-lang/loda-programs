@@ -31,7 +31,7 @@ lpb $0,1
   add $3,$5
   add $0,4
   mod $0,3
-  sub $4,7
+  trn $4,7
   add $3,8
   add $3,$7
   add $0,$5

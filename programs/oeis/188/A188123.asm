@@ -42,7 +42,7 @@ lpb $14,1
       mul $4,2
       div $4,8
       add $5,$8
-      sub $3,$5
+      trn $3,$5
       div $0,$1
       add $3,6
     lpe

@@ -32,7 +32,7 @@ lpb $16,1
     add $1,$0
     div $1,4
     sub $9,$1
-    sub $9,9
+    trn $9,9
     mov $5,$9
     mov $4,$9
     add $4,$5

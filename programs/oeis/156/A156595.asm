@@ -11,20 +11,20 @@ lpb $2,1
     sub $1,3
     mov $3,$1
     mov $4,4
-    sub $4,$3
+    trn $4,$3
   lpe
   mov $4,$3
   lpb $5,1
-    sub $5,$3
+    trn $5,$3
     mov $6,$5
     mov $1,$4
   lpe
   lpb $6,1
     add $2,$0
-    sub $6,$3
+    trn $6,$3
   lpe
   sub $2,1
-  sub $4,5
+  trn $4,5
   add $6,2
 lpe
 sub $1,4

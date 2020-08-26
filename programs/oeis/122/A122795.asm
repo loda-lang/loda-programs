@@ -33,10 +33,10 @@ lpb $16,1
         lpe
         add $0,$1
         lpb $5,1
-          sub $4,1
+          trn $4,1
           sub $0,2
           add $4,4
-          sub $5,$4
+          trn $5,$4
         lpe
         sub $2,$1
       lpe
@@ -48,7 +48,7 @@ lpb $16,1
       lpe
     lpe
     lpb $7,1
-      sub $8,$1
+      trn $8,$1
       mov $7,0
     lpe
     mov $1,$8

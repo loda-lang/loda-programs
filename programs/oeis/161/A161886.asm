@@ -10,11 +10,11 @@ lpb $2,1
   add $3,1
   sub $4,$5
   lpb $4,1
-    sub $4,$3
+    trn $4,$3
     add $1,1
   lpe
-  sub $5,$2
-  sub $2,2
+  trn $5,$2
+  trn $2,2
 lpe
 lpb $6,1
   add $1,3

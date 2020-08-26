@@ -12,7 +12,7 @@ mov $0,4
 mod $2,$0
 pow $1,2
 div $1,2
-sub $2,1
+trn $2,1
 add $2,2
 add $1,$2
 sub $1,3

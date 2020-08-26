@@ -16,7 +16,6 @@ lpb $15,1
     sub $0,$12
     lpb $0,1
       mov $6,2
-      mov $0,4
       mov $5,$0
       div $0,$5
     lpe

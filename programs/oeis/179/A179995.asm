@@ -3,7 +3,7 @@
 
 mov $6,$0
 mov $1,1
-sub $1,$0
+trn $1,$0
 mov $5,$6
 mov $2,10
 lpb $2,1

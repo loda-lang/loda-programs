@@ -19,7 +19,7 @@ lpb $2,1
     mov $4,$5
     add $5,8
     sub $7,2
-    sub $5,$7
+    trn $5,$7
     mov $6,$3
   lpe
   mul $8,3

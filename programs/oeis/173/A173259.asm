@@ -4,6 +4,6 @@
 add $0,2
 mov $1,2
 gcd $0,9
-sub $1,$0
+trn $1,$0
 mul $1,3
 add $1,1

@@ -16,10 +16,10 @@ lpb $9,1
     lpb $5,1
       mov $6,$1
       sub $1,2
-      sub $5,$6
+      trn $5,$6
     lpe
     mul $1,15
-    sub $2,2
+    trn $2,2
   lpe
   mov $10,$9
   lpb $10,1

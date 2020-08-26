@@ -16,7 +16,7 @@ lpb $11,1
     mov $8,$2
     sub $0,$1
     mov $4,$8
-    sub $0,1
+    trn $0,1
     sub $2,$7
     add $1,1
     bin $4,2

@@ -12,7 +12,7 @@ mul $3,2
 sub $4,$2
 div $0,$1
 lpb $0,1
-  sub $2,$0
+  trn $2,$0
   sub $0,1
 lpe
 add $2,$3

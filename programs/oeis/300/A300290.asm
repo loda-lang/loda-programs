@@ -7,5 +7,5 @@ lpb $2,1
   div $2,2
   add $2,1
   mov $1,$2
-  sub $2,3
+  trn $2,3
 lpe

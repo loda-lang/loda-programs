@@ -9,7 +9,7 @@ add $8,$0
 mov $5,1
 mov $9,$0
 add $5,5
-sub $7,$5
+trn $7,$5
 add $0,1
 add $7,1
 add $0,$7

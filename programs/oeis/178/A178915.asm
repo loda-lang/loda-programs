@@ -9,7 +9,7 @@ lpb $3,1
   lpb $4,1
     sub $0,3
     sub $3,$4
-    sub $4,$3
+    trn $4,$3
   lpe
   mov $1,$0
   sub $3,$0

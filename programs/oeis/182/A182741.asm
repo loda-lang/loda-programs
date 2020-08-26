@@ -1,7 +1,7 @@
 ; A182741: A shell model of partitions as a binary code.
 ; 1,1,1,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,1,1
 
-sub $0,2
+trn $0,2
 pow $0,5
 mod $0,46
 mov $3,5

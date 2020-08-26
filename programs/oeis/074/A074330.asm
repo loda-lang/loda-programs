@@ -18,13 +18,13 @@ lpb $9,1
     sub $0,$3
     sub $2,2
     lpb $4,1
-      sub $4,$2
+      trn $4,$2
       mov $6,$2
     lpe
     mov $2,$0
     lpb $5,1
       mov $0,2
-      sub $5,$2
+      trn $5,$2
     lpe
     lpb $6,1
       div $2,2

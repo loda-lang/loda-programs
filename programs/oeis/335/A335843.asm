@@ -4,5 +4,5 @@
 mov $1,2
 sub $0,1
 pow $1,$0
-sub $1,1
+trn $1,1
 mul $1,81

@@ -12,18 +12,18 @@ lpb $2,1
   lpb $4,1
     sub $2,2
     sub $4,$3
-    sub $3,2
+    trn $3,2
   lpe
   add $4,$3
-  sub $3,$0
+  trn $3,$0
   sub $2,2
   lpb $0,1
     mov $0,3
     mov $4,$3
   lpe
-  sub $1,1
+  trn $1,1
   add $3,1
-  sub $2,1
+  trn $2,1
 lpe
 lpb $5,1
   add $1,5

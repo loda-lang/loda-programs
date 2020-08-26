@@ -13,7 +13,7 @@ lpb $2,1
     add $4,1
     sub $5,$4
     add $4,1
-    sub $5,$1
+    trn $5,$1
   lpe
   mul $2,$5
   add $4,1

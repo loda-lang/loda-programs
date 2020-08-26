@@ -6,8 +6,8 @@ lpb $0,1
   sub $0,1
   gcd $1,4
   mod $0,$1
-  sub $0,2
+  trn $0,2
   pow $1,2
   pow $1,$0
-  sub $0,$1
+  trn $0,$1
 lpe

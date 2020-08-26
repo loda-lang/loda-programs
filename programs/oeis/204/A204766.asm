@@ -13,7 +13,7 @@ lpb $0,1
   add $4,9
   div $0,2
   mul $0,2
-  sub $0,1
+  trn $0,1
   add $4,1
   add $1,9
 lpe

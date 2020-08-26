@@ -12,7 +12,7 @@ lpb $7,1
   mov $8,$0
   mov $2,$8
   lpb $2,1
-    sub $2,4
+    trn $2,4
     mov $4,$3
     lpb $4,1
       div $6,2
@@ -30,7 +30,7 @@ lpb $7,1
     mul $4,2
     mov $6,$4
     mov $8,1
-    sub $8,$1
+    trn $8,$1
     mul $3,$8
     pow $6,2
     add $5,2

@@ -8,6 +8,6 @@ mov $2,3
 mov $3,$0
 mul $3,$4
 add $3,$2
-sub $3,25
+trn $3,25
 mov $1,$3
 div $1,2

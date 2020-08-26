@@ -15,18 +15,18 @@ lpb $2,1
     mov $0,$5
     add $4,2
   lpe
-  sub $6,5
+  trn $6,5
   add $6,$2
   lpb $6,1
     mov $2,$6
     sub $2,$0
     mov $1,$2
-    sub $0,$6
+    trn $0,$6
     add $3,5
-    sub $4,3
+    trn $4,3
     sub $3,4
     add $0,1
-    sub $6,$3
+    trn $6,$3
   lpe
-  sub $2,1
+  trn $2,1
 lpe

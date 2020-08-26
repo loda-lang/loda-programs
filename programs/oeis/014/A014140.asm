@@ -6,14 +6,14 @@ mov $12,$0
 add $12,1
 lpb $12,1
   clr $0,10
-  sub $12,1
+  trn $12,1
   mov $0,$10
   sub $0,$12
   mov $7,$0
   mov $9,$0
   add $9,1
   lpb $9,1
-    sub $9,1
+    trn $9,1
     mov $0,$7
     sub $0,$9
     mov $5,$0

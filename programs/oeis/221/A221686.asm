@@ -7,11 +7,11 @@ mov $3,3
 add $6,$0
 mov $0,3
 mov $8,5
-sub $6,1
+trn $6,1
 div $8,$0
 add $3,$8
 add $0,$3
-sub $3,$6
+trn $3,$6
 mul $0,2
 lpb $0,1
   mov $1,6

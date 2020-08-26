@@ -15,7 +15,7 @@ lpb $0,1
   add $4,5
   mul $2,2
   gcd $3,$4
-  sub $0,1
+  trn $0,1
   add $0,7
 lpe
 add $3,$2

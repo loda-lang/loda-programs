@@ -6,7 +6,7 @@ mov $2,2
 add $2,$0
 mov $5,$0
 mov $3,2
-sub $3,$5
+trn $3,$5
 add $3,$2
 div $3,2
 gcd $2,$3

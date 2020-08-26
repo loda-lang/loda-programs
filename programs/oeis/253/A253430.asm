@@ -8,8 +8,8 @@ lpb $0,1
   mul $2,2
 lpe
 sub $2,3
-sub $1,6
+trn $1,6
 add $2,5
 add $1,$2
-sub $1,7
+trn $1,7
 add $1,69

@@ -26,7 +26,7 @@ lpb $6,1
       add $3,1
       lpb $4,1
         add $3,4
-        sub $4,$3
+        trn $4,$3
         add $5,1
       lpe
       sub $2,$2

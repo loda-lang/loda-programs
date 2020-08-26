@@ -7,7 +7,7 @@ mov $3,$0
 mov $5,$3
 add $5,$3
 mov $2,$5
-sub $2,5
+trn $2,5
 mov $1,$2
 add $1,16
 mov $8,$7

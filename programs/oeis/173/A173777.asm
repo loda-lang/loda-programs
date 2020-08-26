@@ -6,10 +6,10 @@ lpb $2,1
   sub $0,$0
   add $0,$2
   lpb $0,1
-    sub $0,5
+    trn $0,5
     add $1,1
   lpe
-  sub $2,6
+  trn $2,6
   add $2,3
 lpe
 add $1,2

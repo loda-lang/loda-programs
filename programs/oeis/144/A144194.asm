@@ -10,5 +10,5 @@ lpb $0,1
   div $1,$1
   sub $0,1
 lpe
-sub $1,5
+trn $1,5
 div $1,2

@@ -30,7 +30,7 @@ lpb $6,1
       lpb $4,1
         add $3,1
         mov $0,2
-        sub $4,$3
+        trn $4,$3
         add $7,$0
       lpe
       mov $1,$7

@@ -30,7 +30,7 @@ lpb $18,1
         lpb $4,1
           add $2,2
           sub $0,2
-          sub $4,$2
+          trn $4,$2
         lpe
         mov $2,0
       lpe

@@ -7,7 +7,7 @@ lpb $0,1
   add $1,$2
   mul $2,2
   add $2,$3
-  sub $3,$2
-  sub $1,$0
+  trn $3,$2
+  trn $1,$0
   sub $0,1
 lpe

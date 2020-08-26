@@ -12,12 +12,12 @@ lpb $2,1
     add $1,$4
     add $6,1
     add $3,5
-    sub $6,$3
+    trn $6,$3
     mov $4,3
-    sub $1,$2
-    sub $2,$3
+    trn $1,$2
+    trn $2,$3
     mov $3,6
   lpe
   sub $1,1
 lpe
-sub $1,1
+trn $1,1

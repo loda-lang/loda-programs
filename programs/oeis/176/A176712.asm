@@ -19,7 +19,7 @@ lpe
 pow $1,2
 add $7,4
 sub $1,$3
-sub $3,4
+trn $3,4
 sub $1,$7
 add $3,$1
 mul $1,$3

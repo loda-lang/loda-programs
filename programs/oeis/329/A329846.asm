@@ -9,7 +9,7 @@ sub $6,2
 mov $2,$6
 mov $5,3
 mul $2,2
-sub $5,5
+trn $5,5
 sub $2,5
 add $5,7
 gcd $3,$2

@@ -20,10 +20,10 @@ lpb $5,1
   add $0,$7
   add $6,$3
   add $0,10
-  sub $6,$0
+  trn $6,$0
   sub $3,5
   mul $6,$7
-  sub $3,$6
+  trn $3,$6
   mov $1,$6
   mov $4,$5
   lpb $4,1

@@ -14,6 +14,6 @@ lpe
 mod $1,3
 add $1,$3
 pow $1,2
-sub $1,9
+trn $1,9
 mul $1,3
 add $1,6

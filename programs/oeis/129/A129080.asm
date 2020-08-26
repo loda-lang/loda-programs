@@ -18,7 +18,7 @@ sub $3,$2
 sub $1,$3
 mov $0,3
 add $3,3
-sub $1,$0
+trn $1,$0
 add $3,1
 add $1,$3
 add $1,2

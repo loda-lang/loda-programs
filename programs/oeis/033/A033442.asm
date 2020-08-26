@@ -6,5 +6,5 @@ lpb $2,1
   add $1,$2
   sub $1,$0
   sub $2,1
-  sub $0,10
+  trn $0,10
 lpe

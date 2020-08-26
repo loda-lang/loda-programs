@@ -10,20 +10,20 @@ lpb $0,1
   mov $2,$0
   sub $4,2
   sub $4,$2
-  sub $2,3
+  trn $2,3
   mul $2,2
   mov $3,$2
   mov $2,$5
   add $0,$4
   mov $4,$0
-  sub $4,$5
+  trn $4,$5
   sub $0,6
   add $2,$4
   add $3,$2
   mul $3,2
   add $1,8
   mov $5,0
-  sub $0,1
+  trn $0,1
   add $1,4
   add $5,5
 lpe

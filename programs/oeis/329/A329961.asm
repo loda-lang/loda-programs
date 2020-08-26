@@ -12,7 +12,6 @@ add $3,6
 add $2,3
 mov $0,$3
 mul $2,2
-mov $5,1
 mov $4,6
 add $0,3
 add $5,6

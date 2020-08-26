@@ -30,7 +30,7 @@ lpb $23,1
         sub $0,1
         mov $1,5
         mov $5,$1
-        sub $0,5
+        trn $0,5
         mov $8,$5
         lpb $0,1
           mov $0,10

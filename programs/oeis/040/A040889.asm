@@ -8,7 +8,7 @@ mov $2,14
 add $0,3
 pow $4,7
 gcd $0,2
-sub $4,6
+trn $4,6
 gcd $4,4
 div $2,$4
 mul $2,5

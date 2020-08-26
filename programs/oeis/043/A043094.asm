@@ -12,8 +12,8 @@ lpb $0,1
   sub $0,3
   sub $1,$3
   sub $0,$4
-  sub $0,3
-  sub $4,$5
-  sub $1,5
+  trn $0,3
+  trn $4,$5
+  trn $1,5
   add $1,$5
 lpe

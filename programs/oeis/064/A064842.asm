@@ -11,6 +11,6 @@ lpb $0,1
   mul $3,2
   lpb $3,1
     add $1,2
-    sub $3,4
+    trn $3,4
   lpe
 lpe

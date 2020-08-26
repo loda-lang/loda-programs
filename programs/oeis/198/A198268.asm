@@ -14,13 +14,13 @@ lpb $2,1
     sub $5,1
     add $6,$4
     sub $3,5
-    sub $5,$3
+    trn $5,$3
     add $6,$4
     sub $6,1
   lpe
   lpb $6,1
     add $3,1
-    sub $6,$3
+    trn $6,$3
   lpe
   sub $2,1
 lpe

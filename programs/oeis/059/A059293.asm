@@ -9,6 +9,6 @@ lpb $0,1
   sub $0,1
   sub $1,$2
   add $1,$0
-  sub $3,6
+  trn $3,6
   sub $1,$3
 lpe

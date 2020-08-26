@@ -10,6 +10,6 @@ lpb $0,1
   sub $1,$2
   mov $0,$1
   add $1,2
-  sub $0,1
+  trn $0,1
 lpe
-sub $1,2
+trn $1,2

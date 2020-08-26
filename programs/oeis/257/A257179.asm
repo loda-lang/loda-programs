@@ -8,7 +8,7 @@ mov $6,5
 add $5,$2
 mod $5,3
 lpb $0,1
-  sub $5,$0
+  trn $5,$0
   sub $0,1
 lpe
 add $0,3

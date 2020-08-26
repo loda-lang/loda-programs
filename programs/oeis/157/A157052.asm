@@ -22,7 +22,7 @@ lpb $0,1
   sub $4,$1
   mul $4,$5
   mul $3,5
-  sub $0,$3
+  trn $0,$3
   mul $4,$3
 lpe
 mov $1,$4

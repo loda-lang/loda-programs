@@ -3,10 +3,10 @@
 
 mov $2,30
 add $0,1
-sub $2,$0
+trn $2,$0
 mov $3,2
 gcd $2,$0
 sub $3,$2
 add $3,2
 mov $1,$3
-sub $1,2
+trn $1,2

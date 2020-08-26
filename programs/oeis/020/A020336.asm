@@ -14,7 +14,7 @@ lpb $0,1
   add $1,$0
   mov $3,$1
   add $4,$3
-  sub $2,$3
+  trn $2,$3
   mul $4,2
   mov $0,$4
   mov $1,$4

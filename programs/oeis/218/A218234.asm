@@ -5,5 +5,5 @@ lpb $$3,1
   add $4,1
   add $1,$$0
   sub $$2,$4
-  sub $$3,3
+  trn $$3,3
 lpe

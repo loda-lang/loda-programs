@@ -17,11 +17,11 @@ lpb $3,1
     mov $1,$3
     mov $4,$1
     add $3,$1
-    sub $6,$3
+    trn $6,$3
     add $3,$4
     sub $4,$0
   lpe
   sub $3,$3
-  sub $4,1
+  trn $4,1
   mov $1,$4
 lpe

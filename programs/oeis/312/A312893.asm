@@ -9,7 +9,7 @@ mov $6,$0
 lpb $2,1
   lpb $4,1
     gcd $5,4
-    sub $4,$5
+    trn $4,$5
     add $2,$5
   lpe
   div $2,3

@@ -7,5 +7,5 @@ pow $1,2
 mov $2,$0
 mov $3,$2
 pow $1,2
-sub $3,1
+trn $3,1
 sub $1,$3

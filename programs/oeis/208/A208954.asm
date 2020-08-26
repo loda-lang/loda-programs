@@ -6,7 +6,7 @@ lpb $0,1
   mov $3,$0
   pow $3,2
   add $2,$3
-  sub $0,$3
+  trn $0,$3
 lpe
 mov $4,$2
 bin $3,2

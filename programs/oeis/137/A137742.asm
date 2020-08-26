@@ -10,5 +10,5 @@ add $1,6
 mul $2,$1
 mov $1,$2
 div $1,6
-sub $1,5
+trn $1,5
 add $1,1

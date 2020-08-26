@@ -14,7 +14,7 @@ lpb $4,1
     mov $6,7
     add $6,3
     gcd $6,$5
-    sub $0,3
+    trn $0,3
     mov $1,$6
   lpe
   div $1,9

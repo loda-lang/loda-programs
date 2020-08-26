@@ -10,6 +10,6 @@ lpb $2,1
   add $1,$0
   sub $3,1
   sub $2,1
-  sub $2,$3
+  trn $2,$3
   add $1,$0
 lpe

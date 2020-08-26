@@ -20,7 +20,7 @@ lpb $4,1
     mul $6,2
     sub $2,1
   lpe
-  sub $1,5
+  trn $1,5
   add $1,1
   add $5,$1
 lpe

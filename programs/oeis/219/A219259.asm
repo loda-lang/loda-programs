@@ -9,7 +9,7 @@ mov $2,3
 lpb $3,1
   lpb $5,1
     add $1,1
-    sub $5,$3
+    trn $5,$3
   lpe
   pow $1,2
   mov $3,$2

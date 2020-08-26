@@ -36,7 +36,7 @@ lpb $3,1
       mul $9,2
       mov $4,$9
       mov $8,$4
-      sub $0,$4
+      trn $0,$4
       add $0,$8
       add $4,$0
       mov $2,$4

@@ -6,7 +6,7 @@ lpb $0,1
   add $6,1
   sub $0,1
   add $5,1
-  sub $0,1
+  trn $0,1
   sub $4,1
   add $0,1
   add $3,6
@@ -22,7 +22,7 @@ sub $5,1
 add $2,$6
 mul $6,2
 add $2,$0
-sub $5,1
+trn $5,1
 add $4,$2
 sub $0,$5
 sub $0,$6
@@ -31,4 +31,4 @@ mov $1,$0
 mov $3,3
 add $3,$4
 add $1,$3
-sub $1,3
+trn $1,3

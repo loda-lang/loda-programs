@@ -8,6 +8,6 @@ mov $3,1
 lpb $2,1
   sub $2,$3
   add $3,1
-  sub $2,1
+  trn $2,1
 lpe
 add $1,$3

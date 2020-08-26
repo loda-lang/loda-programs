@@ -7,7 +7,7 @@ pow $3,8
 mov $2,$0
 mul $2,$3
 mov $0,2
-sub $0,6
+trn $0,6
 fac $0
 mov $1,$2
 lpb $0,1

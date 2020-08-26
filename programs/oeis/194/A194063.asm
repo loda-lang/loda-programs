@@ -7,8 +7,8 @@ mov $3,$2
 mov $4,$3
 sub $4,1
 lpb $2,1
-  sub $1,$2
-  sub $4,3
+  trn $1,$2
+  trn $4,3
   mov $3,$4
   sub $4,$1
   mov $1,$2

@@ -19,7 +19,6 @@ lpb $4,1
     sub $6,$6
     pow $1,$6
     mul $1,2
-    sub $0,1
   lpe
   div $1,2
   add $5,$1

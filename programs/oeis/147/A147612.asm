@@ -11,7 +11,7 @@ lpb $13,1
   sub $0,1
   mov $5,$0
   mul $5,3
-  sub $5,1
+  trn $5,1
   add $6,2
   add $6,$5
   log $6,2

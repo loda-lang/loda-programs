@@ -11,11 +11,11 @@ lpb $0,1
 lpe
 add $3,$2
 mov $2,2
-sub $1,$2
+trn $1,$2
 add $1,3
 sub $5,2
 add $5,6
 mul $1,2
 sub $1,5
-sub $3,$5
+trn $3,$5
 sub $1,$3

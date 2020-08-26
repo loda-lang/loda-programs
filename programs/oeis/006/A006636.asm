@@ -41,7 +41,7 @@ lpb $17,1
           add $7,$5
           add $7,5
         lpe
-        sub $7,$4
+        trn $7,$4
         clr $3,4
         add $4,$7
         add $4,8

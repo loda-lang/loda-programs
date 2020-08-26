@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$2
-sub $2,2
+trn $2,2
 gcd $2,2
 mov $4,$3
 mov $1,9

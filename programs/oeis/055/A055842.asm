@@ -11,7 +11,7 @@ lpb $0,1
   sub $4,1
   add $6,$1
   mul $1,2
-  sub $3,$1
+  trn $3,$1
   add $1,$3
   add $5,$6
   add $2,5
@@ -19,7 +19,7 @@ lpb $0,1
   mov $3,5
   add $3,3
   mov $6,$5
-  sub $1,3
+  trn $1,3
   add $3,6
   mov $0,$4
   add $1,$6

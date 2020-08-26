@@ -12,9 +12,9 @@ lpb $2,1
     mov $6,1
     add $1,$0
     mov $0,1
-    sub $6,2
+    trn $6,2
     gcd $1,281474976710656
-    sub $0,4
+    trn $0,4
     add $6,$1
     mov $8,3
     mov $7,1

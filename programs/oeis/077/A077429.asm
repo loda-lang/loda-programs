@@ -9,7 +9,7 @@ mul $5,$3
 mul $4,2
 mov $0,$5
 add $0,10
-sub $1,$4
+trn $1,$4
 add $0,$4
 fac $1
 add $1,8

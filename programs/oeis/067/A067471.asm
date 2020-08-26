@@ -13,7 +13,7 @@ lpb $0,1
   sub $6,$7
   mul $2,2
   bin $5,$2
-  sub $5,$3
+  trn $5,$3
   add $5,$0
   mul $5,2
   add $5,6

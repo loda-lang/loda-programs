@@ -25,7 +25,7 @@ lpb $7,1
     add $8,2
     add $5,4
     mov $2,$6
-    sub $0,$2
+    trn $0,$2
     add $8,$5
     sub $8,2
     gcd $0,$8

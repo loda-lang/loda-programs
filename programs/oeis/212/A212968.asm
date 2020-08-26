@@ -32,7 +32,7 @@ lpb $14,1
         sub $5,$6
         sub $0,2
       lpe
-      sub $2,7
+      trn $2,7
     lpe
     mov $1,$0
     div $1,2

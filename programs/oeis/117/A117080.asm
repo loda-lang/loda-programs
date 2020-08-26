@@ -16,6 +16,6 @@ lpe
 add $4,1
 sub $4,$3
 mov $1,3
-sub $1,4
+trn $1,4
 add $1,$3
 add $1,$4

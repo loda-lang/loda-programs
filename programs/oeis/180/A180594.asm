@@ -4,5 +4,5 @@
 mul $0,4
 lpb $$7,1
   mov $1,$$2
-  sub $$2,9
+  trn $$2,9
 lpe

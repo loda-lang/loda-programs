@@ -18,10 +18,10 @@ lpb $0,1
   mov $3,$5
   add $5,$2
   sub $3,$4
-  sub $3,2
+  trn $3,2
 lpe
 mov $1,$4
-sub $2,5
+trn $2,5
 add $1,$2
 lpb $6,1
   add $1,1

@@ -33,10 +33,10 @@ lpb $14,1
     add $6,$4
     div $3,$7
     sub $6,1
-    sub $7,2
+    trn $7,2
     add $3,$6
     mov $2,$3
-    sub $2,1
+    trn $2,1
     mul $2,2
     add $7,1
     mov $1,$2

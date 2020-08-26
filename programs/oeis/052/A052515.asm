@@ -6,5 +6,5 @@ add $0,$1
 mov $2,2
 pow $2,$1
 sub $2,2
-sub $2,$0
+trn $2,$0
 mov $1,$2

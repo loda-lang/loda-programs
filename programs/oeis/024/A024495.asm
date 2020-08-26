@@ -4,9 +4,9 @@
 lpb $0,1
   add $2,$4
   mul $2,2
-  sub $2,1
+  trn $2,1
   add $3,$1
-  sub $4,4
+  trn $4,4
   add $4,1
   add $1,$2
   sub $1,$3

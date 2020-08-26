@@ -30,7 +30,7 @@ lpb $29,1
         sub $18,1
         mov $0,$16
         add $0,$18
-        sub $0,2
+        trn $0,2
         mov $2,$0
         mov $3,2
         add $0,1
@@ -44,7 +44,7 @@ lpb $29,1
           add $1,2
           add $2,1
           mov $0,1
-          sub $1,$2
+          trn $1,$2
           sub $0,1
           add $0,$1
         lpe

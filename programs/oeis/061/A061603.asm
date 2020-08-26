@@ -15,6 +15,6 @@ mul $2,2
 div $2,$4
 mov $1,$2
 mul $1,4
-sub $1,8
+trn $1,8
 div $1,8
 add $1,1

@@ -20,7 +20,7 @@ lpb $9,1
     add $1,3
     log $1,$2
     mov $5,$1
-    sub $1,3
+    trn $1,3
   lpe
   add $1,$5
   add $8,$1

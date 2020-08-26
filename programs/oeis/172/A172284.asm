@@ -19,7 +19,7 @@ lpb $2,1
     add $1,1
     add $6,1
     add $8,$6
-    sub $5,$8
+    trn $5,$8
   lpe
   sub $2,1
 lpe

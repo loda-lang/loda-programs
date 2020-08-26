@@ -10,7 +10,7 @@ lpb $2,1
   add $4,$2
   lpb $4,1
     gcd $4,2
-    sub $4,$3
+    trn $4,$3
   lpe
   sub $2,1
   fac $4

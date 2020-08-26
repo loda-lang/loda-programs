@@ -6,5 +6,5 @@ mov $1,1
 lpb $2,1
   div $2,2
   mov $1,$2
-  sub $2,1
+  trn $2,1
 lpe

@@ -30,7 +30,7 @@ lpb $15,1
       add $6,$3
       mul $2,2
       lpb $0,1
-        sub $0,3
+        trn $0,3
         sub $6,$2
       lpe
       pow $6,2

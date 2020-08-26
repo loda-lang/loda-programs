@@ -26,8 +26,8 @@ lpb $12,1
       mov $4,$3
       add $4,1
       mov $5,$6
-      sub $0,$4
-      sub $5,$4
+      trn $0,$4
+      trn $5,$4
       mul $2,$5
       add $2,1
       add $1,$2

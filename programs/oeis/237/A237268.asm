@@ -13,6 +13,6 @@ sub $1,$4
 mov $3,1
 add $3,$1
 add $4,1
-sub $3,6
+trn $3,6
 mov $1,$4
 sub $1,$3

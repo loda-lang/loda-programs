@@ -16,7 +16,7 @@ lpb $4,1
     pow $5,4
     lpb $5,1
       sub $5,$3
-      sub $6,$8
+      trn $6,$8
       div $3,2
     lpe
     add $6,1

@@ -25,12 +25,12 @@ lpb $14,1
       mov $7,$3
       add $5,$7
       pow $3,8
-      sub $3,6
+      trn $3,6
       div $5,5
       add $5,3
       mov $6,2
       add $3,2
-      sub $5,$3
+      trn $5,$3
       mov $1,4
       sub $4,$1
       add $4,$6

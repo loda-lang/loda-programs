@@ -13,4 +13,4 @@ lpb $0,1
   log $3,2
 lpe
 mov $1,$3
-sub $1,7
+trn $1,7

@@ -14,13 +14,13 @@ lpb $2,1
   mov $3,$6
   lpb $5,1
     add $3,4
-    sub $5,$3
+    trn $5,$3
     add $5,1
     add $1,1
   lpe
   add $1,8
 lpe
 mul $1,9
-sub $1,117
+trn $1,117
 div $1,9
 add $1,1

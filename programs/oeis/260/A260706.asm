@@ -15,7 +15,7 @@ lpb $5,1
     div $2,2
     lpb $6,1
       add $2,1
-      sub $6,$2
+      trn $6,$2
     lpe
     sub $2,1
     add $2,1

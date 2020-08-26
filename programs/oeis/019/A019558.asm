@@ -13,7 +13,7 @@ lpe
 mov $3,$1
 mul $1,2
 add $1,$3
-sub $1,1
+trn $1,1
 lpb $4,1
   add $1,24
   sub $4,1

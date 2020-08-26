@@ -10,5 +10,5 @@ lpb $0,1
   mul $1,3
   mul $2,2
 lpe
-sub $2,2
+trn $2,2
 sub $1,$2

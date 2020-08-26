@@ -19,7 +19,7 @@ lpb $16,1
     mov $4,$3
     add $3,2
     mov $7,$3
-    sub $4,$7
+    trn $4,$7
     mov $10,$7
     add $4,$10
     bin $4,3
@@ -28,7 +28,7 @@ lpb $16,1
     pow $1,2
     add $8,1
     add $1,$4
-    sub $1,2
+    trn $1,2
     add $12,$1
   lpe
   mov $1,$12

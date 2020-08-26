@@ -8,5 +8,5 @@ add $2,2
 lpb $2,1
   sub $2,$1
   add $1,1
-  sub $2,5
+  trn $2,5
 lpe

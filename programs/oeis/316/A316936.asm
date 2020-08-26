@@ -9,7 +9,7 @@ lpb $11,1
   mov $0,$9
   sub $0,$11
   mov $1,$0
-  sub $1,1
+  trn $1,1
   mov $7,$0
   add $0,$1
   mov $6,$7

@@ -13,6 +13,6 @@ lpb $0,1
   gcd $0,$6
   add $4,$3
 lpe
-sub $4,4
+trn $4,4
 mov $1,$4
 div $1,4

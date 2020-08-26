@@ -18,7 +18,7 @@ lpb $2,1
     mov $7,$0
     pow $3,2
     mod $3,8
-    sub $3,2
+    trn $3,2
     pow $7,2
     add $3,$7
     mul $3,8

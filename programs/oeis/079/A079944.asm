@@ -4,5 +4,5 @@
 lpb $0,1
   div $0,2
   pow $1,$0
-  sub $0,1
+  trn $0,1
 lpe

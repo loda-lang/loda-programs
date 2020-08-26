@@ -13,7 +13,7 @@ lpb $0,1
   sub $0,8
   add $1,$3
   sub $4,2
-  sub $4,$0
+  trn $4,$0
   sub $1,2
   add $4,5
   add $1,$4

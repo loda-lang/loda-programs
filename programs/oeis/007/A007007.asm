@@ -7,7 +7,7 @@ lpb $2,1
   mov $1,$4
   mov $3,$2
   div $3,2
-  sub $2,39
+  trn $2,39
   add $1,1
   bin $1,$3
 lpe

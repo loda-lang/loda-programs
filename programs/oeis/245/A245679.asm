@@ -13,10 +13,10 @@ lpb $4,1
 lpe
 sub $2,1
 lpb $2,$0
-  sub $2,3
+  trn $2,3
   add $3,$2
   add $2,1
-  sub $3,3
+  trn $3,3
   add $1,$3
-  sub $1,$2
+  trn $1,$2
 lpe

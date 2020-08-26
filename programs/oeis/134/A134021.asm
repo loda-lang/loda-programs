@@ -5,7 +5,7 @@ mov $1,$0
 mov $2,1
 add $2,$0
 mov $0,$2
-sub $1,2
+trn $1,2
 add $1,$0
 log $1,3
 add $1,1

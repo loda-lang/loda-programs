@@ -39,11 +39,11 @@ lpb $17,1
           sub $5,$2
           add $6,4
         lpe
-        sub $0,$6
+        trn $0,$6
         lpb $6,1
           add $0,$7
           add $2,4
-          sub $6,$2
+          trn $6,$2
         lpe
         cmp $2,$3
         sub $0,2

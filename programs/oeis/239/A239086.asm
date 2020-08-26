@@ -3,7 +3,7 @@
 
 mov $9,$0
 mov $5,$0
-sub $5,1
+trn $5,1
 mov $4,$5
 mov $1,$4
 bin $1,9

@@ -11,7 +11,7 @@ div $0,3
 lpb $0,1
   sub $0,5
   sub $1,1
-  sub $0,1
+  trn $0,1
 lpe
 add $1,$4
 div $1,2

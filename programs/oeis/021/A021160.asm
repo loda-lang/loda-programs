@@ -3,16 +3,16 @@
 
 add $0,5
 mov $3,7
-sub $3,$0
+trn $3,$0
 mov $2,12
 lpb $0,1
   add $2,$4
-  sub $0,3
+  trn $0,3
   add $4,5
   mul $3,2
   add $0,2
   sub $2,3
-  sub $4,$2
+  trn $4,$2
 lpe
-sub $4,$3
+trn $4,$3
 add $1,$4

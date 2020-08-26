@@ -3,5 +3,5 @@
 
 mov $1,$0
 mod $1,4
-sub $1,1
+trn $1,1
 fac $1

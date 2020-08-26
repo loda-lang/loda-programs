@@ -15,7 +15,7 @@ gcd $6,2
 mov $2,$6
 lpb $4,2
   mul $2,2
-  sub $5,2
+  trn $5,2
 lpe
 mov $1,$2
 sub $1,4

@@ -16,6 +16,6 @@ sub $3,$2
 mul $4,2
 add $3,$4
 add $1,1
-sub $3,4
+trn $3,4
 add $1,$0
 add $1,$3

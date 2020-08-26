@@ -12,9 +12,9 @@ mov $4,$3
 add $4,1
 cmp $0,2
 lpb $0,1
-  sub $0,4
+  trn $0,4
   mov $4,2
 lpe
 mov $5,$4
 mov $1,$5
-sub $1,1
+trn $1,1

@@ -28,16 +28,16 @@ lpb $9,1
     mov $2,$1
     sub $3,$0
     mov $5,$2
-    sub $4,9
+    trn $4,9
     mul $3,2
     lpb $5,1
-      sub $5,$3
+      trn $5,$3
       add $4,1
       mov $2,2
     lpe
     sub $2,1
     add $4,1
-    sub $2,1
+    trn $2,1
   lpe
   mov $1,$4
   mov $8,$9

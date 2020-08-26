@@ -9,5 +9,5 @@ lpb $2,1
   add $1,5
   sub $2,1
   add $1,10
-  sub $2,1
+  trn $2,1
 lpe

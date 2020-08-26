@@ -33,7 +33,7 @@ lpb $14,1
       add $4,7
       mov $8,2
       gcd $2,4
-      sub $4,$7
+      trn $4,$7
       add $3,1
       mov $1,4
       add $1,$8

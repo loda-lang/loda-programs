@@ -6,7 +6,7 @@ mov $4,9
 mul $4,$0
 mov $1,16
 sub $1,$4
-sub $1,1
+trn $1,1
 add $1,10
 mov $3,$5
 mov $2,$3

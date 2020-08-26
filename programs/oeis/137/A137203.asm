@@ -7,7 +7,7 @@ pow $2,4
 add $2,4
 pow $2,2
 lpb $0,1
-  sub $0,$2
+  trn $0,$2
   add $4,$2
 lpe
 add $4,16

@@ -5,7 +5,7 @@ lpb $0,1
   add $3,1
   add $2,7
   sub $0,$3
-  sub $0,1
+  trn $0,1
 lpe
 mod $2,3
 gcd $2,2

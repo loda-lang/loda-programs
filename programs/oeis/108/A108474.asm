@@ -11,7 +11,7 @@ lpb $0,1
   mul $4,$0
   mod $4,4
   pow $3,$4
-  sub $3,2
+  trn $3,2
   pow $2,$3
   div $1,$2
 lpe

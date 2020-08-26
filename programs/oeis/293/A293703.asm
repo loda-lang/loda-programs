@@ -10,8 +10,8 @@ sub $4,1
 add $0,1
 add $3,2
 div $3,2
-sub $3,5
-sub $0,$3
+trn $3,5
+trn $0,$3
 mov $2,$0
 add $4,3
 add $2,$4

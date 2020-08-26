@@ -8,6 +8,6 @@ add $2,66
 mul $2,8
 sub $2,2
 mov $1,$2
-sub $1,592
+trn $1,592
 div $1,2
 add $1,9

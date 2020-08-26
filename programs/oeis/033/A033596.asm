@@ -3,7 +3,7 @@
 
 pow $1,$0
 pow $0,2
-sub $0,3
+trn $0,3
 add $0,1
 add $0,$1
 pow $0,2

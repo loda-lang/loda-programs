@@ -8,7 +8,7 @@ mov $2,$0
 lpb $2,1
   add $6,3
   lpb $5,1
-    sub $5,$1
+    trn $5,$1
     add $2,$3
   lpe
   pow $6,2
@@ -18,7 +18,7 @@ lpb $2,1
   mov $5,2
   lpb $6,1
     add $1,2
-    sub $6,$1
+    trn $6,$1
   lpe
   sub $2,1
 lpe

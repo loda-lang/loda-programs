@@ -5,7 +5,7 @@ mov $2,$0
 mod $0,4
 fac $0
 mov $1,3
-sub $1,$0
+trn $1,$0
 add $1,1
 mov $4,$2
 mov $3,$4

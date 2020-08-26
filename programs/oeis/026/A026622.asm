@@ -6,5 +6,5 @@ pow $1,$0
 mul $1,7
 sub $1,2
 div $1,4
-sub $1,2
+trn $1,2
 add $1,1

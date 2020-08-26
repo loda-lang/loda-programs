@@ -3,15 +3,15 @@
 
 mov $2,$0
 mov $3,4
-sub $2,2
+trn $2,2
 lpb $2,1
   mov $4,$2
   div $2,2
   lpb $4,1
     mul $3,2
-    sub $4,2
+    trn $4,2
   lpe
-  sub $2,1
+  trn $2,1
 lpe
 mov $1,$3
 sub $1,4

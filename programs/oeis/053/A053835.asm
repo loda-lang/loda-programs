@@ -13,5 +13,5 @@ lpb $0,1
   sub $0,1
   add $4,5
   add $3,$4
-  sub $0,$3
+  trn $0,$3
 lpe

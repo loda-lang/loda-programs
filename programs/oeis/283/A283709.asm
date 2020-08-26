@@ -23,7 +23,7 @@ lpb $13,1
     mov $5,2
     sub $0,1
     pow $4,$1
-    sub $5,$0
+    trn $5,$0
     add $5,$0
     sub $4,2
     add $5,$0

@@ -13,7 +13,7 @@ mov $4,$2
 mov $1,4
 lpb $2,$0
   add $4,1
-  sub $4,$1
+  trn $4,$1
   add $1,1
   add $4,1
 lpe

@@ -9,15 +9,15 @@ add $4,$0
 mov $2,$4
 lpb $0,1
   add $0,$5
-  sub $2,$0
+  trn $2,$0
   add $4,$2
-  sub $6,4
+  trn $6,4
   add $6,$4
-  sub $5,$6
+  trn $5,$6
   mov $2,0
   sub $0,1
   mov $4,4
-  sub $0,4
+  trn $0,4
   add $2,2
   mov $3,$2
   sub $4,$3

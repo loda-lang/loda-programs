@@ -34,7 +34,7 @@ lpb $15,1
         div $0,2
         mov $5,2
         div $0,2
-        sub $2,$0
+        trn $2,$0
         add $5,$0
       lpe
       mov $1,$5

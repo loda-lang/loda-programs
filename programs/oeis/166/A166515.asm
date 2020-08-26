@@ -8,16 +8,16 @@ add $1,3
 add $2,$0
 lpb $2,1
   sub $1,$3
-  sub $4,$0
+  trn $4,$0
   lpb $0,1
     add $1,$4
-    sub $4,2
-    sub $0,4
+    trn $4,2
+    trn $0,4
     add $4,1
   lpe
   add $2,2
   mov $0,2
-  sub $2,6
+  trn $2,6
   mov $3,1
   add $0,$2
 lpe

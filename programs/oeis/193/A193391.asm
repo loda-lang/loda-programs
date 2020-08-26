@@ -21,6 +21,6 @@ lpe
 add $4,3
 sub $1,$4
 mov $0,$3
-sub $1,$0
+trn $1,$0
 add $1,$4
 add $1,2

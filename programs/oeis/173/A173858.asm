@@ -20,7 +20,7 @@ sub $3,$5
 gcd $4,2
 add $3,$2
 add $1,7
-sub $1,$3
+trn $1,$3
 mul $1,$3
 mul $1,$4
 div $1,12

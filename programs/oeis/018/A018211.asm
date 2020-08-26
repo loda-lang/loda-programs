@@ -48,7 +48,7 @@ lpb $20,1
           mov $2,$1
         lpe
         pow $6,3
-        sub $6,$2
+        trn $6,$2
         mov $3,$6
         mov $1,$3
         div $1,6

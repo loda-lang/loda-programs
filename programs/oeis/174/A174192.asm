@@ -15,5 +15,5 @@ lpb $0,1
   add $1,$2
 lpe
 add $2,$3
-sub $1,$2
+trn $1,$2
 add $1,1

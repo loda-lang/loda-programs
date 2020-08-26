@@ -5,9 +5,9 @@ add $0,1
 lpb $0,1
   add $2,$0
   add $3,1
-  sub $2,5
-  sub $3,$2
+  trn $2,5
+  trn $3,$2
   sub $0,1
   add $1,$3
-  sub $0,1
+  trn $0,1
 lpe

@@ -4,7 +4,7 @@
 mov $4,$0
 pow $0,2
 mov $1,4
-sub $1,$0
+trn $1,$0
 mov $3,$4
 mul $3,$4
 mov $2,$3

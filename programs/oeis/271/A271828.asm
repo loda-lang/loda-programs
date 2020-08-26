@@ -8,11 +8,11 @@ lpb $2,1
   lpb $5,1
     sub $2,$2
     mov $4,1
-    sub $5,$1
+    trn $5,$1
   lpe
   mov $3,$0
   lpb $4,1
-    sub $4,$1
+    trn $4,$1
     add $3,2
     add $3,$0
   lpe

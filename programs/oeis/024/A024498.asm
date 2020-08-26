@@ -21,6 +21,6 @@ mul $1,2
 mov $3,2
 mul $3,$1
 mov $1,$3
-sub $1,20
+trn $1,20
 div $1,4
 add $1,2

@@ -9,12 +9,12 @@ mov $4,$0
 lpb $0,1
   mov $2,$1
   sub $0,1
-  sub $4,$0
+  trn $4,$0
   add $1,$5
   sub $2,6
   mov $3,1
   sub $1,$2
-  sub $3,5
+  trn $3,5
   add $5,$4
   add $3,$2
   mov $4,$3

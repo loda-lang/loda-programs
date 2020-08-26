@@ -10,9 +10,9 @@ lpb $0,1
   add $3,$0
   sub $3,2
   mov $0,$3
-  sub $0,$2
+  trn $0,$2
   sub $3,1
-  sub $2,$0
+  trn $2,$0
   add $0,$2
   mov $1,$0
   sub $2,$3

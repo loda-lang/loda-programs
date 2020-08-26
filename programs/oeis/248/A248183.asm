@@ -13,20 +13,20 @@ lpb $2,1
     mov $6,$1
   lpe
   lpb $5,1
-    sub $5,$3
+    trn $5,$3
     add $6,$5
   lpe
   lpb $6,1
-    sub $6,$3
+    trn $6,$3
     add $3,1
   lpe
   mov $1,1
-  sub $2,8
+  trn $2,8
 lpe
 sub $3,3
 add $1,$3
 mov $6,$1
 add $1,$6
-sub $1,2
+trn $1,2
 div $1,2
 add $1,1

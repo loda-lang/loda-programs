@@ -6,6 +6,6 @@ lpb $0,1
   div $0,4
   add $1,5
   sub $0,1
-  sub $0,$1
+  trn $0,$1
 lpe
 div $1,5

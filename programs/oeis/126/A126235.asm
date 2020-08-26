@@ -6,7 +6,7 @@ div $0,2
 lpb $0,1
   div $0,2
   add $1,2
-  sub $0,1
+  trn $0,1
 lpe
 div $1,2
 add $1,1

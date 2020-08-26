@@ -15,6 +15,6 @@ mov $2,3
 lpb $$0,1
   lpb $$0,2
     add $$3,$$5
-    sub $$2,$$0
+    trn $$2,$$0
   lpe
 lpe

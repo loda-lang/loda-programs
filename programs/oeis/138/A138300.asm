@@ -8,5 +8,5 @@ lpb $0,1
   add $2,4
   add $1,$2
   sub $0,1
-  sub $0,$1
+  trn $0,$1
 lpe

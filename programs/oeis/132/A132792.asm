@@ -18,7 +18,7 @@ lpb $9,1
     sub $0,1
     mov $6,$5
     sub $5,1
-    sub $0,$5
+    trn $0,$5
   lpe
   sub $6,1
   bin $6,3

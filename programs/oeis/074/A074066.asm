@@ -7,6 +7,6 @@ add $1,5
 mov $2,4
 lpb $0,1
   mov $2,$0
-  sub $0,6
+  trn $0,6
 lpe
 sub $1,$2

@@ -14,14 +14,14 @@ lpb $27,1
   add $24,1
   lpb $24,1
     clr $0,22
-    sub $24,1
+    trn $24,1
     mov $0,$22
     sub $0,$24
     mov $19,$0
     mov $21,$0
     add $21,1
     lpb $21,1
-      sub $21,1
+      trn $21,1
       mov $0,$19
       sub $0,$21
       mov $15,$0
@@ -37,7 +37,7 @@ lpb $27,1
           sub $13,1
           mov $0,$11
           add $0,$13
-          sub $0,1
+          trn $0,1
           add $0,2
           mul $0,2
           mov $9,1

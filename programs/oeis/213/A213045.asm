@@ -4,7 +4,7 @@
 mov $1,$0
 mov $2,$1
 lpb $0,1
-  sub $2,2
+  trn $2,2
   add $3,$0
   add $1,$3
   sub $0,1

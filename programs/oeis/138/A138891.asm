@@ -24,7 +24,7 @@ mov $3,$7
 add $3,2
 log $3,7
 mov $1,$3
-sub $1,1
+trn $1,1
 mov $8,$9
 mov $6,$8
 add $1,$6

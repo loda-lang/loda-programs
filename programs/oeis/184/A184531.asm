@@ -14,17 +14,17 @@ lpb $2,1
     sub $4,$4
     mov $5,$2
   lpe
-  sub $6,4
+  trn $6,4
   mov $3,6
   mov $2,1
   lpb $5,1
-    sub $5,$3
+    trn $5,$3
     add $6,2
   lpe
   lpb $6,1
     sub $6,$3
     add $1,1
-    sub $6,6
+    trn $6,6
   lpe
   sub $2,1
 lpe

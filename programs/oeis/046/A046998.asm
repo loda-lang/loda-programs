@@ -23,14 +23,14 @@ lpb $9,1
       mov $0,$5
       sub $4,7
       mov $5,$3
-      sub $4,$8
+      trn $4,$8
     lpe
     mov $7,$3
-    sub $5,6
+    trn $5,6
     lpb $5,1
       mov $6,$7
       mov $8,4
-      sub $5,$8
+      trn $5,$8
     lpe
     mov $2,$0
     add $4,2
@@ -44,7 +44,7 @@ lpb $9,1
     add $3,$2
   lpe
   mov $1,$5
-  sub $1,3
+  trn $1,3
   add $10,$1
 lpe
 mov $1,$10

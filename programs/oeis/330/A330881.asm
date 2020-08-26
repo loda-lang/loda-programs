@@ -16,12 +16,12 @@ lpb $12,1
       div $0,2
       mod $0,4
       mov $1,$6
-      sub $4,$6
+      trn $4,$6
     lpe
-    sub $0,$3
+    trn $0,$3
     lpb $0,1
-      sub $1,$7
-      sub $0,6
+      trn $1,$7
+      trn $0,6
     lpe
   lpe
   div $1,2

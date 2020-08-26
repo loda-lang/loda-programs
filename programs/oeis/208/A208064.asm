@@ -8,12 +8,12 @@ lpb $0,1
   add $4,3
   sub $1,$1
   add $4,5
-  sub $0,1
+  trn $0,1
   add $4,1
 lpe
 sub $1,4
 add $0,$1
-sub $0,1
+trn $0,1
 add $4,$0
 mov $1,$4
 add $1,$4

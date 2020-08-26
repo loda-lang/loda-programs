@@ -23,6 +23,6 @@ sub $5,$4
 mov $3,$5
 sub $3,2
 mov $1,$3
-sub $1,1
+trn $1,1
 mul $1,3
 add $1,1

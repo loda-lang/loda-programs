@@ -8,6 +8,6 @@ add $3,$1
 sub $1,$0
 lpb $2,2
   add $1,1
-  sub $3,$1
+  trn $3,$1
 lpe
 add $1,4

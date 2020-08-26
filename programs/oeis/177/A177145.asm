@@ -8,7 +8,7 @@ lpb $2,1
   mov $5,$4
   sub $2,$5
   mul $3,$2
-  sub $2,1
+  trn $2,1
 lpe
 pow $3,2
 mov $1,$3

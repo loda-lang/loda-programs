@@ -14,7 +14,7 @@ lpb $11,1
     sub $2,$7
     add $7,1
     mov $1,$7
-    sub $2,1
+    trn $2,1
   lpe
   fac $1
   add $10,$1

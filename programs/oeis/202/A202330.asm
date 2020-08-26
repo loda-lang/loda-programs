@@ -13,6 +13,6 @@ lpb $0,1
   sub $3,$0
 lpe
 mov $3,$4
-sub $1,$4
+trn $1,$4
 add $1,$3
 add $1,2

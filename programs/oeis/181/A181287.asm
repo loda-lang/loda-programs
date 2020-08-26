@@ -33,7 +33,7 @@ lpb $18,1
         pow $1,$2
         mov $3,$4
         mov $0,1
-        sub $0,4
+        trn $0,4
       lpe
       mul $1,$3
       mov $12,$11

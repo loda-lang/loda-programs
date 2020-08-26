@@ -16,7 +16,7 @@ lpb $5,1
       mul $0,5
       div $0,2
       mul $0,5
-      sub $6,7
+      trn $6,7
     lpe
     sub $2,1
   lpe

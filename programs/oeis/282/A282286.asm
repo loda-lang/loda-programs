@@ -10,5 +10,5 @@ sub $1,2
 add $1,1
 gcd $2,2
 div $1,$2
-sub $1,1
+trn $1,1
 add $1,1

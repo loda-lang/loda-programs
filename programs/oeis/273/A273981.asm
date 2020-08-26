@@ -12,11 +12,11 @@ lpe
 sub $1,1
 mov $2,5
 mov $0,$1
-sub $4,3
+trn $4,3
 add $4,3
 add $1,$0
-sub $2,$1
-sub $4,$0
+trn $2,$1
+trn $4,$0
 mul $2,2
 mov $5,$4
 add $0,4
@@ -24,5 +24,5 @@ mov $3,$2
 add $0,$5
 add $1,$0
 mov $4,$3
-sub $1,$4
+trn $1,$4
 add $1,1

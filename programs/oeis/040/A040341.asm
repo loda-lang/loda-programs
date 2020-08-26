@@ -14,7 +14,7 @@ lpb $5,1
   div $8,2
   lpb $0,1
     mul $8,7
-    sub $7,8
+    trn $7,8
     cmp $7,$4
     add $8,5
     sub $8,$7

@@ -4,8 +4,8 @@
 mov $3,$0
 mov $2,$0
 add $2,2
-sub $0,4
-sub $2,5
+trn $0,4
+trn $2,5
 mov $1,$0
 add $1,4
 add $2,$0

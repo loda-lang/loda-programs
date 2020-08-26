@@ -9,6 +9,6 @@ lpb $2,1
   lpe
   add $3,$4
   sub $2,1
-  sub $3,4
+  trn $3,4
   add $1,$4
 lpe

@@ -4,6 +4,6 @@
 mov $2,3
 mov $1,$0
 sub $2,$1
-sub $2,$1
+trn $2,$1
 add $1,4
 sub $1,$2

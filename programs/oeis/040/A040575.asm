@@ -6,7 +6,7 @@ mul $0,2
 mov $2,$1
 mov $1,3
 add $0,$2
-sub $1,$0
+trn $1,$0
 mod $0,2
 gcd $1,2
 gcd $0,4

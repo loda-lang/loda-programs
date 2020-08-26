@@ -9,9 +9,9 @@ mov $3,$2
 mod $0,2
 sub $3,6
 mov $1,5
-sub $3,5
+trn $3,5
 lpb $0,1
-  sub $0,3
+  trn $0,3
   gcd $3,2
 lpe
 add $3,7

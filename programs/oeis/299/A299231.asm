@@ -9,7 +9,7 @@ div $0,2
 mov $3,$5
 mov $1,8
 mov $4,6
-sub $4,$5
+trn $4,$5
 lpb $0,1
   pow $1,2
   sub $0,1

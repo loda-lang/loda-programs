@@ -7,4 +7,4 @@ mul $1,4
 sub $1,4
 add $1,6
 div $1,6
-sub $1,1
+trn $1,1

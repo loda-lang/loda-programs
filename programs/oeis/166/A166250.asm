@@ -10,7 +10,7 @@ add $0,1
 sub $5,1
 lpb $0,1
   gcd $6,$5
-  sub $6,$0
+  trn $6,$0
   sub $0,1
   add $6,1
   mov $3,$6

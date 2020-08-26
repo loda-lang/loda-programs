@@ -7,14 +7,14 @@ mov $2,4
 mov $3,$1
 mov $0,1
 sub $2,$0
-sub $0,$1
+trn $0,$1
 add $0,$3
 sub $1,1
 mul $0,2
 lpb $0,1
-  sub $1,3
-  sub $2,$1
-  sub $0,$2
+  trn $1,3
+  trn $2,$1
+  trn $0,$2
   mov $1,5
   add $1,3
   sub $1,$0

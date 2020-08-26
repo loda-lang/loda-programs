@@ -35,7 +35,7 @@ lpb $26,1
           sub $11,1
           mov $0,$9
           add $0,$11
-          sub $0,1
+          trn $0,1
           mov $1,2
           add $0,1
           gcd $7,$1

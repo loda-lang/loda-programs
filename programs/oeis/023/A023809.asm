@@ -6,5 +6,5 @@ lpb $2,1
   mov $1,$0
   sub $2,1
   add $0,1
-  sub $2,14
+  trn $2,14
 lpe

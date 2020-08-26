@@ -9,7 +9,7 @@ lpe
 mul $2,6
 add $2,1
 mov $5,$2
-sub $5,3
+trn $5,3
 add $5,8
 div $5,8
 mov $1,$5

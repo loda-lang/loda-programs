@@ -6,6 +6,6 @@ lpb $2,1
   add $3,1
   mov $1,$2
   sub $2,$3
-  sub $2,1
+  trn $2,1
 lpe
 pow $1,$1

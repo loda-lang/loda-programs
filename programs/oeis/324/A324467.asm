@@ -12,6 +12,6 @@ lpb $2,1
   lpe
   div $2,2
   mul $1,3
-  sub $2,1
+  trn $2,1
 lpe
 sub $1,3

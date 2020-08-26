@@ -18,6 +18,6 @@ lpb $0,1
 lpe
 mul $2,2
 mov $1,$2
-sub $1,6
+trn $1,6
 div $1,2
 add $1,1

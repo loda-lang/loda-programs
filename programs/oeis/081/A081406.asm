@@ -9,7 +9,7 @@ lpb $0,1
   mul $4,5
   mov $3,$4
   mul $2,$0
-  sub $0,3
+  trn $0,3
 lpe
 mov $1,$3
 sub $1,15

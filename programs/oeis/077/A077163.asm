@@ -10,7 +10,7 @@ lpb $2,1
     bin $2,$3
     mov $1,$0
     pow $1,$5
-    sub $4,$5
+    trn $4,$5
     add $5,1
   lpe
   mul $1,10

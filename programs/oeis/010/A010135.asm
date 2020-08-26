@@ -7,7 +7,7 @@ gcd $2,6
 lpb $0,1
   mov $0,$2
   add $2,$0
-  sub $2,6
+  trn $2,6
   sub $0,1
   add $2,2
 lpe
