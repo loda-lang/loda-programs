@@ -1,44 +1,18 @@
 ; A193656: Q-residue of the triangle p(n,k)=(2^(n - k))*5^k, 0<=k<=n, where Q is the triangular array (t(i,j)) given by t(i,j)=1.  (See Comments.)
 ; 1,7,43,247,1363,7327,38683,201607,1040803,5335087,27199723,138095767,698867443,3527891647,17773675963,89405250727,449173737283,2254458621007,11306652843403,56670703170487,283903271666323
 
-mov $4,2
-add $0,$0
-mov $3,$4
-mov $4,1
-mov $2,2
-div $2,2
-mul $4,$2
-mul $0,$2
+mul $0,2
+mov $2,1
+mov $3,1
 lpb $0,1
   sub $0,1
-  add $2,$4
-  mov $3,1
-  mov $3,$2
-  mul $4,4
+  add $2,$3
+  mul $3,4
   mul $2,5
   sub $0,1
 lpe
-sub $4,$0
-mov $1,$0
-mov $1,$4
-add $1,$1
-sub $3,12
-cmp $3,$3
-add $2,$1
-pow $1,$3
-add $3,$1
-sub $2,$1
-mul $0,2
-add $2,$4
-mov $4,$1
-add $3,$2
-mul $4,8
-add $3,$3
-mov $3,1
-add $3,$3
-add $1,$4
+add $2,$3
 mov $1,$2
-sub $1,2
 div $1,12
 mul $1,6
 add $1,1

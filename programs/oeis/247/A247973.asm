@@ -1,0 +1,84 @@
+; A247973: Least k such that Pi - (4*k+2)/v(2*k+2)^2 < 1/n, where the sequence v is defined in Comments.
+; 1,1,2,3,4,5,5,6,7,8,9,9,10,11,12,12,13,14,15,16,16,17,18,19,20,20,21,22,23,23,24,25,26,27,27,28,29,30,31,31,32,33,34,34,35,36,37,38,38,39,40,41,41,42,43,44,45,45,46,47,48,49,49,50,51,52,52,53
+
+mov $6,8
+mov $1,1
+mul $0,$6
+mov $5,$0
+add $0,$0
+div $6,2
+mov $3,$5
+mov $2,1
+mov $2,$6
+mov $3,4
+add $5,$6
+mov $8,$6
+mov $7,$0
+add $7,$7
+mov $0,$7
+add $1,$0
+mov $3,$3
+add $0,3
+mov $2,1
+mov $7,2
+lpb $0,1
+  add $1,7
+  add $0,$2
+  mul $3,2
+  add $5,$1
+  mod $3,$2
+  add $0,1
+  cmp $6,$6
+  mov $1,3
+  add $7,5
+  add $0,$7
+  sub $7,$3
+  mov $7,2
+  mov $4,$5
+  sub $3,$4
+  add $1,1
+  add $4,$6
+  mov $2,$6
+  mov $4,$5
+  mov $1,6
+  mul $2,$1
+  sub $0,3
+  add $3,$7
+  bin $0,$5
+  mul $5,2
+  mov $7,4
+  mov $0,$4
+  mov $6,4
+  mul $6,12
+  sub $8,1
+  add $8,42
+  add $8,$2
+  add $5,$4
+  sub $4,$7
+  div $3,$8
+  pow $6,2
+  sub $7,$5
+  mov $4,1
+  mul $1,2
+  gcd $6,4
+  mul $4,$4
+  mov $7,6
+  mov $2,$0
+  add $6,$5
+  mul $2,2
+  trn $0,$0
+  mov $8,$7
+  sub $7,2
+  mov $8,$1
+  sub $0,1
+  pow $4,2
+  mov $8,$2
+  mul $1,$0
+  mov $2,$1
+  mov $1,$4
+  sub $3,1
+  add $8,$5
+lpe
+mul $0,$3
+add $5,1
+mov $1,$0

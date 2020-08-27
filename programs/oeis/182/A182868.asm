@@ -4,21 +4,7 @@
 mov $3,$0
 mov $2,$0
 add $2,2
-mov $1,2
-lpb $1,2
-  div $1,$1
-  add $1,$0
-  mov $1,6
-  add $2,$2
-  add $0,$2
-  trn $2,$1
-  mov $2,$1
-  add $2,$0
-  sub $2,$0
-  sub $0,$1
-lpe
 mul $2,$0
-sub $1,$0
 sub $2,1
 mov $1,$2
 mov $4,$3
@@ -26,7 +12,6 @@ mul $4,$3
 mov $5,$4
 mul $5,7
 add $1,$5
-mul $4,$3
 sub $1,9
 div $1,2
 add $1,4

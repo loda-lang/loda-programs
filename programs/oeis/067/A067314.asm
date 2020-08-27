@@ -10,15 +10,15 @@ mov $3,5
 mov $0,1
 mov $4,$1
 add $4,3
-sub $3,$2
-sub $0,3
+trn $3,$2
+trn $0,3
 add $2,$4
 add $4,9
 add $4,1
 mov $0,1
-sub $3,$2
+trn $3,$2
 lpb $0,1
-  sub $0,1
+  trn $0,1
   mov $4,1
   mov $0,7
   add $3,2
@@ -28,18 +28,18 @@ lpb $0,1
   mov $3,$1
   mov $4,$2
   div $0,2
-  sub $4,1
+  trn $4,1
   clr $0,13
   mov $3,1
-  sub $4,4
+  trn $4,4
   mov $0,6
 lpe
 mul $2,$1
-sub $3,1
+trn $3,1
 div $2,$4
-sub $3,1
+trn $3,1
 mov $4,1
-sub $4,2
+trn $4,2
 add $0,$4
 mov $1,$2
 add $1,1

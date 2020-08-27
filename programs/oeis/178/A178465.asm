@@ -11,7 +11,6 @@ lpb $8,1
   mov $1,$0
   pow $1,2
   mov $6,2
-  mov $2,1
   add $0,$1
   div $1,2
   sub $0,$2

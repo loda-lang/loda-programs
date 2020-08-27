@@ -9,7 +9,6 @@ bin $4,$0
 sub $4,8
 mov $0,8
 lpb $0,1
-  mov $5,$0
   mov $3,5
   sub $5,$3
   add $2,$5
