@@ -1,0 +1,106 @@
+; A194732: Units' digits of the nonzero octagonal numbers.
+; 1,8,1,0,5,6,3,6,5,0,1,8,1,0,5,6,3,6,5,0,1,8,1,0,5,6,3,6,5,0,1,8,1,0,5,6,3,6,5,0,1,8,1,0,5,6,3,6,5,0,1,8,1,0,5,6,3,6,5,0,1,8,1,0,5,6,3,6,5,0,1,8,1,0,5,6,3,6,5,0,1,8,1,0,5,6
+
+mov $9,$0
+mov $10,4
+mov $2,$0
+mov $6,$0
+mov $7,1
+add $10,6
+mov $2,2
+mov $3,$9
+mov $3,4
+sub $0,1
+mul $7,$6
+trn $10,$9
+mov $3,1
+mov $1,1
+add $1,$6
+add $7,8
+add $9,2
+mov $4,1
+add $2,2
+add $4,2
+mov $8,1
+add $7,$7
+mov $6,1
+add $4,3
+add $6,$10
+mov $8,2
+sub $9,$0
+mov $9,4
+mov $5,5
+mov $6,1
+add $2,$9
+sub $10,3
+mov $8,$7
+mov $0,17
+mov $7,11
+mov $10,$9
+mov $5,1
+lpb $0,1
+  trn $4,$6
+  sub $9,$7
+  mul $6,3
+  sub $2,$7
+  add $0,$1
+  clr $4,$0
+  mov $2,$6
+  mov $6,$6
+  mov $6,$0
+  mov $10,$5
+  clr $3,2
+  sub $6,1
+  sub $2,2
+  mov $10,$9
+  mov $0,$7
+  sub $5,$8
+  sub $4,$1
+  sub $6,$1
+  mov $3,$4
+  mov $4,$3
+  mov $9,1
+  add $0,3
+  add $1,$7
+  mov $4,$9
+  mov $0,5
+  add $5,$1
+  mov $2,$9
+  mov $2,$0
+  add $1,$1
+  sub $3,$1
+  mov $8,3
+  sub $0,5
+  div $4,8
+  mov $1,$5
+  mov $2,1
+  sub $0,1
+  mov $4,20
+  add $4,$3
+  add $10,1
+  add $3,$7
+  trn $6,$10
+  add $1,1
+  mov $0,1
+  add $8,$4
+  mov $7,$1
+  mov $1,15
+  mul $6,2
+  add $3,$0
+  pow $3,2
+  mul $5,$7
+lpe
+mul $2,$3
+mul $5,2
+mod $3,$6
+mul $2,$6
+mov $4,$4
+sub $0,1
+sub $8,$1
+div $10,2
+mod $10,2
+mul $7,$7
+add $3,1
+mov $1,$3
+sub $1,2
+div $1,3
