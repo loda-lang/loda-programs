@@ -1,52 +1,63 @@
 ; A328005: Number of distinct coefficients in functional composition of 1 + x + ... + x^(n-1) with itself.
 ; 0,1,2,4,8,13,19,25,33,41,51,61,73,85,99,113,129,145,163,181,201,221,243,265,289,313,339,365,393,421,451,481,513,545,579,613,649,685,723,761,801,841,883,925,969,1013,1059,1105,1153,1201,1251,1301,1353,1405,1459
 
-mov $9,$0
-mov $1,$0
-mov $3,$0
-mov $2,$0
-mov $0,2
-sub $0,$1
-mov $4,$3
-mov $0,2
-sub $2,2
-mov $1,4
-sub $1,1
-mov $1,$3
-mov $3,1
-mul $0,2
-mul $4,$2
+mul $0,$0
+mov $4,4
+mov $5,$0
+sub $5,$4
+mov $4,2
+div $5,2
 mov $1,1
+mov $2,1
+div $0,$4
+mul $0,2
+cmp $2,$0
+mov $3,$0
 add $4,2
-add $0,1
-lpb $2,7
-  mov $2,1
-  lpb $0,1
-    mov $1,1
-    mov $1,$3
-    pow $0,5
-    add $1,1
-    mov $4,$2
-    add $4,$3
-    mov $2,0
-    sub $3,$2
-    mul $1,$1
-  lpe
-  add $1,1
-  pow $2,2
-  add $2,1
-  mov $3,3
-  add $3,2
-  add $4,$1
-  add $3,$1
-  mov $2,$2
+add $3,1
+mov $4,$3
+pow $3,3
+sub $1,80
+add $1,2
+mov $4,2
+add $2,$1
+add $4,1
+mov $6,12
+mov $1,$0
+add $4,$2
+add $4,1
+sub $0,9
+mov $4,$3
+lpb $0,1
+  sub $2,2
+  sub $0,1
+  mov $0,$6
+  mul $2,3
+  add $4,1
+  mov $6,$3
 lpe
-div $4,2
-mov $1,$4
-sub $1,1
-mov $10,$9
-mov $11,$10
-mul $11,1
-add $1,$11
-mul $10,$9
-mul $10,$9
+add $4,$5
+add $5,1
+sub $1,$3
+sub $5,4
+mov $1,1
+add $0,1
+mul $6,5
+mov $6,6
+sub $3,$4
+add $0,$6
+sub $6,3
+mov $0,1
+mov $0,2
+mul $0,2
+mov $2,$6
+add $6,$2
+add $1,$5
+mul $4,2
+sub $2,$4
+mov $1,25
+trn $6,1
+add $2,$5
+mov $0,$4
+sub $1,$3
+sub $1,23

@@ -1,47 +1,86 @@
 ; A297784: Number of distinct runs in base-16 digits of n.
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2
 
-mov $2,1
-sub $2,3
-mov $1,2
-mov $4,1
-mul $1,$4
+mov $6,2
 mov $4,$0
-mul $4,2
-div $4,2
-pow $4,2
-lpb $0,1
-  sub $0,1
-  add $1,3
-  mov $2,$4
-  add $0,2
-  mov $3,$1
-  gcd $0,17
-  mov $2,1
-  mov $4,3
-  pow $0,$3
-  add $0,7
-  mul $3,2
-  mul $4,2
-  add $0,6
-  mov $1,1
-lpe
-add $2,1
-mov $1,$1
-mov $1,$4
-sub $0,1
-add $1,1
-add $0,4
-mul $0,2
-sub $3,6
-pow $3,$1
-add $3,1
-mov $2,8
-add $1,2
-sub $0,1
-mov $4,12
+mov $7,$0
 mov $1,3
-mov $1,$3
-sub $1,1
-div $1,16384
+mov $2,$7
+mov $2,$6
+mov $8,$7
+mov $8,$0
+mov $8,$0
+mov $8,8
+mov $4,6
+mov $7,1
+lpb $0,1
+  mov $1,1
+  mov $5,7
+  mov $2,$8
+  add $1,$0
+  mov $0,2
+  mul $2,2
+  mov $8,36
+  add $5,1
+  add $2,$7
+  mov $3,1
+  mov $8,$0
+  sub $0,1
+  add $8,1
+  mov $6,1
+  sub $0,3
+  mov $5,$8
+  add $7,1
+  gcd $1,$2
+  div $2,$6
+  mov $5,$2
+  add $0,$3
+  mul $3,6
+  add $5,6
+  trn $7,$1
+  mov $2,2
+  add $1,$7
+  add $4,1
+  mov $2,3
+  add $1,1
+  trn $7,$4
+  mov $6,$1
+  add $5,$6
+  mov $2,1
+  sub $6,3
+  mov $5,1
+  mov $4,$0
+  trn $4,0
+  mov $3,1
+  pow $2,$7
+  sub $7,$4
+  mov $4,$0
+  mov $3,$1
+  sub $4,$6
+  mov $0,1
+  trn $3,1
+  mov $7,4
+  mov $3,3
+  add $7,$0
+  add $4,$0
+  sub $8,1
+  mul $6,$5
+  mov $7,1
+  sub $0,1
+  sub $5,$1
+  mul $4,$8
+  mul $5,7
+  trn $0,$5
+  add $8,$6
+  sub $2,2
+  add $8,$0
+  mov $2,$3
+lpe
+mov $5,$3
+add $0,$0
+add $5,7
+mov $3,$8
+mov $6,2
+mov $1,$2
+sub $1,2
 add $1,1

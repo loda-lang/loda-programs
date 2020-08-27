@@ -8,7 +8,6 @@ mov $0,3
 mov $5,$4
 lpb $0,1
   mov $7,1
-  add $4,4
   mov $1,1
   mov $6,$4
   add $3,588

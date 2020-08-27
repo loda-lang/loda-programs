@@ -1,0 +1,104 @@
+; A302190: Hurwitz logarithm of natural numbers 1,2,3,4,5,...
+; 0,2,-1,2,-6,24,-120,720,-5040,40320,-362880,3628800,-39916800,479001600,-6227020800,87178291200,-1307674368000,20922789888000,-355687428096000,6402373705728000
+
+mov $4,$0
+mov $10,1
+mov $2,3
+mov $3,$4
+mov $7,1
+mov $9,1
+mov $8,5
+mov $7,$4
+mov $6,$8
+mov $10,$4
+bin $6,2
+mov $5,$8
+add $3,$7
+lpb $0,1
+  add $6,2
+  mov $6,2
+  sub $5,1
+  add $5,$9
+  clr $9,$8
+  mov $0,$7
+  div $6,$6
+  mov $0,$2
+  mul $6,2
+  mov $1,$4
+  trn $2,2
+  mov $0,8
+  add $4,32
+  div $4,4
+  trn $1,1
+  mov $8,$10
+  add $0,$0
+  mul $5,$10
+  sub $6,$5
+  mov $5,1
+  add $7,$5
+  sub $5,$9
+  sub $3,5
+  mov $3,1
+  mov $4,3
+  trn $3,$9
+  mov $0,$10
+  mov $3,$1
+  add $2,$1
+  mov $8,$6
+  mul $7,$0
+  add $4,$4
+  trn $10,$5
+  mul $10,42
+  mov $8,17
+  add $6,1
+  sub $7,$1
+  mov $2,$8
+  fac $7
+  div $4,$4
+  mov $6,5
+  add $10,2
+  mov $9,6
+  trn $3,$0
+  add $8,1
+  mov $9,$4
+  sub $5,$7
+  mov $8,$8
+  mov $4,$7
+  sub $0,1
+  mov $7,1
+  sub $2,$4
+  mov $8,1
+  sub $10,$9
+  mov $2,1
+  mov $3,$4
+  add $7,1
+  add $10,2
+  sub $0,2
+  mov $5,$5
+  mov $5,2
+  add $10,$3
+  mul $7,9
+  add $8,$9
+  mov $0,1
+  mov $8,1
+  mov $10,1
+  add $3,1
+  pow $2,$6
+  add $6,$2
+  mov $7,1
+  sub $3,$9
+  mov $1,2
+  mov $8,$8
+  sub $4,$10
+  add $5,$10
+  mov $0,1
+  mov $4,3
+  add $9,1
+  mov $5,1
+  mov $7,$4
+  pow $1,$6
+lpe
+sub $7,$4
+add $1,6
+add $1,$1
+mov $1,$3

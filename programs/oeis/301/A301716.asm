@@ -1,0 +1,86 @@
+; A301716: Coordination sequence for node of type V1 in "kre" 2-D tiling (or net).
+; 1,6,12,18,18,30,36,36,48,48,54,66,66,72,78,84,90,96,102,102,114,120,120,132,132,138,150,150,156,162,168,174,180,186,186,198,204,204,216,216,222,234,234,240,246,252,258,264,270,270,282,288,288,300,300,306
+
+mov $7,$0
+mov $9,2
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  add $0,$9
+  sub $0,1
+  mov $6,$0
+  mov $0,$0
+  mov $2,$0
+  add $6,$2
+  sub $6,5
+  sub $0,$0
+  mov $4,$6
+  mov $1,$2
+  add $0,$6
+  sub $4,$0
+  sub $6,3
+  add $4,1
+  lpb $0,1
+    add $2,$4
+    sub $6,$6
+    mov $3,$4
+    mov $3,$0
+    add $1,$4
+    mul $3,$4
+    sub $1,9
+    add $4,$4
+    sub $0,1
+    mov $4,$6
+    mov $3,1
+    add $4,$4
+  lpe
+  sub $3,$2
+  trn $2,$4
+  mov $6,1
+  add $1,1
+  add $2,2
+  add $4,1
+  mov $5,$4
+  add $6,3
+  add $2,$1
+  gcd $6,$0
+  add $2,1
+  mov $1,$1
+  div $4,$4
+  add $0,$1
+  mov $0,2
+  add $0,$6
+  mov $5,$0
+  add $4,$1
+  mul $5,$0
+  bin $3,2
+  add $5,$2
+  mov $5,$0
+  trn $4,2
+  add $0,1
+  add $4,$3
+  add $4,$0
+  div $4,15
+  add $3,1
+  add $6,$1
+  sub $0,$0
+  sub $3,$4
+  add $3,$0
+  div $6,2
+  div $0,4
+  mov $1,$3
+  sub $1,1
+  mul $1,6
+  add $1,1
+  mov $10,$9
+  lpb $10,1
+    mov $8,$1
+    sub $10,1
+  lpe
+lpe
+lpb $7,1
+  sub $8,$1
+  mov $7,0
+lpe
+mov $1,$8
