@@ -1,0 +1,48 @@
+; A075677: Reduced Collatz function R applied to the odd integers: a(n) = R(2n-1), where R(k) = (3k+1)/2^r, with r as large as possible.
+; 1,5,1,11,7,17,5,23,13,29,1,35,19,41,11,47,25,53,7,59,31,65,17,71,37,77,5,83,43,89,23,95,49,101,13,107,55,113,29,119,61,125,1,131,67,137,35,143,73,149,19,155,79,161,41,167,85,173,11,179,91,185,47,191,97,197
+
+mov $4,$0
+mul $4,2
+add $4,$0
+add $4,8
+mov $3,$4
+mov $0,$4
+mov $4,18
+sub $4,$4
+sub $4,2
+add $0,$4
+mul $0,2
+mov $2,36
+clr $1,$3
+mov $2,1728
+mov $0,$0
+mov $1,$4
+add $1,$3
+mul $4,2
+sub $1,$2
+sub $1,$4
+mov $3,$3
+add $3,$1
+lpb $0,1
+  sub $0,11
+  fac $3
+  mul $3,2
+  mov $4,3
+  div $0,$3
+  mov $3,4
+  mov $3,$3
+  gcd $2,$0
+  mov $4,$0
+  sub $0,1
+  mov $0,2
+  add $1,$2
+  mov $3,1
+  mul $1,$0
+lpe
+div $4,$2
+add $4,$0
+mov $1,$4
+sub $1,3
+div $1,2
+mul $1,2
+add $1,1

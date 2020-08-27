@@ -1,0 +1,52 @@
+; A309252: a(n) is the least number not in the sequence so far and whose absolute difference from a(n-1) is not in the sequence so far, with a(1) = 1 and a(2) = 2.
+; 1,2,5,8,4,7,10,13,16,19,22,11,14,17,20,23,26,29,32,35,38,41,44,47,50,25,28,31,34,37,40,43,46,49,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97,100,103,106,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98,101
+
+mov $5,$0
+mov $3,$0
+mul $0,2
+sub $3,$0
+mov $3,$0
+mov $4,$0
+mov $3,3
+mov $1,$3
+mov $3,1
+mov $2,$4
+add $3,$4
+mov $1,$1
+mov $4,2
+add $3,1
+mov $1,1
+pow $4,2
+sub $1,108
+add $4,$0
+add $4,1
+sub $4,$1
+div $2,2
+lpb $0,1
+  mov $3,$0
+  mov $1,$3
+  mov $3,$1
+  add $2,$0
+  add $1,1
+  add $2,$3
+  sub $0,1
+  sub $1,2
+  add $0,$1
+  add $1,$1
+  add $1,8
+  add $1,2
+  sub $1,1
+  mov $1,1
+  sub $0,$4
+lpe
+sub $2,$4
+sub $4,6
+mov $4,$1
+mov $1,$3
+sub $1,1
+mov $6,$5
+mov $7,$6
+mul $7,1
+add $1,$7
+mul $6,$5
+mul $6,$5
