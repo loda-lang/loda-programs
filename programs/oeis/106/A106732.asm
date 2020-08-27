@@ -12,38 +12,12 @@ lpb $2,1
     add $3,$1
   lpe
   sub $0,$0
-  sub $0,1
-  add $4,$0
-  lpb $5,1
-    mov $2,5
-    trn $2,1
-    mov $2,$4
-    add $4,$4
-    sub $0,$2
-    mov $2,8
-    add $0,$2
-    add $3,$0
-    add $3,$4
-    div $0,6
-    mov $5,$4
-  lpe
   add $1,$3
   mul $3,3
   mov $4,4
-  lpb $6,1
-    mov $6,$4
-    mov $3,$3
-    add $2,$2
-    mov $1,4
-  lpe
   sub $2,1
   sub $0,$3
-  add $0,1
 lpe
-gcd $1,$3
-mov $1,$0
-div $1,8
-mul $1,2
 mov $1,$0
 div $1,12
 mul $1,3

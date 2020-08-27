@@ -3,59 +3,28 @@
 
 mov $8,$0
 mov $10,$0
-add $10,1
 lpb $10,1
   clr $0,8
-  trn $10,1
+  sub $10,1
   mov $0,$8
-  trn $0,$10
+  sub $0,$10
   mov $5,$0
   mov $7,$0
-  add $7,1
   lpb $7,1
-    clr $0,5
-    trn $7,1
+    sub $7,1
     mov $0,$5
-    trn $0,$7
+    sub $0,$7
     mov $3,$0
     mov $1,$3
-    trn $0,$0
-    mov $0,$3
     add $1,$0
     mov $4,$0
-    mov $1,$1
-    mov $0,2
-    mov $0,$0
-    add $0,$3
     add $4,4
     mul $4,2
-    trn $4,2
-    add $0,$0
-    lpb $0,1
-      add $0,$3
-      mov $2,$1
-      mov $4,1
-      add $4,$3
-      trn $2,$3
-      trn $0,1
-      add $0,$1
-    lpe
-    cmp $0,5
+    sub $4,2
     mul $4,$1
-    mul $0,5
-    add $3,$2
-    trn $4,$2
     mul $1,$4
-    add $4,$0
-    trn $1,5
-    trn $1,$0
-    add $0,$3
-    add $4,$3
-    add $4,4
-    add $0,2
-    mov $1,$1
-    add $0,2
-    trn $3,1
+    sub $1,5
+    sub $3,1
     add $3,$1
     mov $1,$3
     add $6,$1
