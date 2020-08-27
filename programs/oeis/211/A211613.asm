@@ -4,68 +4,31 @@
 mov $7,$0
 mov $6,$0
 bin $6,2
-add $6,$6
+mul $6,2
 lpb $0,1
-  mov $1,$0
   mov $2,2
-  mov $3,$2
-  trn $0,$0
   mov $0,$2
   sub $0,1
-  mov $4,16
-  mov $5,$4
-  div $5,2
-  sub $3,6
-  div $3,$2
-  trn $3,$6
   mov $1,$0
   sub $2,1
   mul $1,9
   mul $1,$6
   mov $5,$2
   div $1,2
-  add $3,1
-  mov $6,$3
-  pow $2,4
-  div $2,$6
   sub $2,6
   mov $4,$1
-  mov $3,0
   div $0,$2
   add $5,$2
-  mov $1,$5
   add $4,$5
-  mul $5,5
-  sub $3,1
   sub $2,2
-  add $5,1
-  sub $6,$5
-  cmp $3,4
-  add $6,$2
-  add $4,$0
-  add $3,$0
   sub $2,$4
-  sub $6,$5
-  sub $6,5
-  add $4,$0
-  mov $3,$1
-  add $4,$3
-  mov $6,$1
 lpe
 sub $2,1
-mov $1,$4
-mul $1,$0
-sub $6,$6
-mul $6,$3
-mov $6,2
-add $0,$3
 add $2,1
-mul $6,7
-mov $4,1
 mov $1,$2
 mov $8,$7
 mul $8,$7
 mul $8,$7
-mov $9,$8
-mul $9,4
-add $1,$9
+mov $3,$8
+mul $3,4
+add $1,$3

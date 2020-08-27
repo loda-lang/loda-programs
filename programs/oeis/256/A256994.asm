@@ -4,7 +4,7 @@
 mov $6,3
 mov $3,$0
 mov $4,$3
-trn $0,2
+sub $0,2
 mov $1,$4
 mov $5,$1
 mov $2,$0

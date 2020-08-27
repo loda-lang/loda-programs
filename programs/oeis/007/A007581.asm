@@ -3,13 +3,8 @@
 
 mov $2,2
 pow $2,$0
-mov $4,$2
-mov $3,$4
-mul $2,5
-add $3,3
-mul $3,$2
-mov $2,$3
-div $2,5
-mov $1,$2
-div $1,6
-add $1,1
+add $2,2
+mov $0,$2
+bin $0,2
+mov $1,$0
+div $1,3

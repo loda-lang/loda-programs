@@ -6,19 +6,7 @@ sub $0,51
 add $0,1
 sub $2,$0
 lpb $2,1
-  lpb $4,1
-    add $0,1
-    mov $4,$2
-  lpe
-  lpb $5,1
-    mov $5,$0
-    mov $1,6
-  lpe
-  lpb $6,1
-    mov $6,$5
-  lpe
-  add $0,$0
-  mov $1,$0
+  mul $0,2
   sub $2,1
 lpe
 mov $1,$0

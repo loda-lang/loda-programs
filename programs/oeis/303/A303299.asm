@@ -17,7 +17,6 @@ lpb $0,1
   sub $4,5
   add $3,$0
   add $3,$4
-  mov $5,1
   sub $1,5
   sub $2,$5
   sub $6,$1
