@@ -56,6 +56,24 @@ __Instructions:__ These are the instructions supported by LODA. In the following
 2. __Division:__ The instruction `div x,y` updates the memory cell `x` by dividing it by the value of `y`.
 4. __Lexicographical Order Descent Loop:__ The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
+## Arithmetic Operations
+
+| Operation | Name           | Description |
+|:---------:|:--------------:|-------------|
+| `mov`     | Assignment     | Assign the value of the source to the target operand. |
+| `add`     | Addition       | Add the source to the target operand. |
+| `sub`     | Subtraction    | Subtract the source from the target operand. |
+| `trn`     | Truncation     |  |
+| `mul`     | Multiplication |  |
+| `div`     | Division       |  |
+| `mod`     | Modulus        |  |
+| `pow`     | Power          |  |
+| `log`     | Logarithm      |  |
+| `fac`     | Factorial      |  |
+| `gcd`     | Greatest Common Divisor |  |
+| `bin`     | Binomial Coefficient |  |
+| `cmp`     | Comparison |  |
+
 __Termination:__ all LODA programs are guaranteed to halt on every input. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
 
 __Integer Sequences:__ Programs can be used to generate integer sequences (actually, natural number sequences). A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
