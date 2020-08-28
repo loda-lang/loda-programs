@@ -2732,6 +2732,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027916](http://oeis.org/A027916) ([L11 program](027/A027916.asm)): Least k such that 1+2+...+k >= E{1,2,...,n}, where E = 2nd elementary symmetric function.
 * [A027927](http://oeis.org/A027927) ([L13 program](027/A027927.asm)): Number of plane regions after drawing (in general position) a convex n-gon and all its diagonals.
 * [A027928](http://oeis.org/A027928) ([L31 program](027/A027928.asm)): a(n) = T(n, 2*n-5), T given by A027926.
+* [A027929](http://oeis.org/A027929) ([L124 program](027/A027929.asm)): a(n) = T(n, 2*n-6), T given by A027926.
 * [A027937](http://oeis.org/A027937) ([L09 program](027/A027937.asm)): a(n) = T(2*n, n+1), T given by A027935.
 * [A027941](http://oeis.org/A027941) ([L06 program](027/A027941.asm)): a(n) = Fibonacci(2n+1) - 1.
 * [A027953](http://oeis.org/A027953) ([L10 program](027/A027953.asm)): a(0)=1, a(n) = Fibonacci(2n+4) - (2n+3).
@@ -3007,8 +3008,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033356](http://oeis.org/A033356) ([L04 program](033/A033356.asm)): [ 36/n ].
 * [A033357](http://oeis.org/A033357) ([L05 program](033/A033357.asm)): [ 37/n ].
 * [A033358](http://oeis.org/A033358) ([L04 program](033/A033358.asm)): [ 38/n ].
-* [A033359](http://oeis.org/A033359) ([L05 program](033/A033359.asm)): [ 39/n ].
-* [A033360](http://oeis.org/A033360) ([L06 program](033/A033360.asm)): [ 40/n ].
+* [A033359](http://oeis.org/A033359) ([L04 program](033/A033359.asm)): [ 39/n ].
+* [A033360](http://oeis.org/A033360) ([L04 program](033/A033360.asm)): [ 40/n ].
 * [A033361](http://oeis.org/A033361) ([L04 program](033/A033361.asm)): a(n) = floor(41/n).
 * [A033362](http://oeis.org/A033362) ([L03 program](033/A033362.asm)): [ 42/n ].
 * [A033363](http://oeis.org/A033363) ([L06 program](033/A033363.asm)): [ 43/n ].
@@ -3874,7 +3875,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047202](http://oeis.org/A047202) ([L05 program](047/A047202.asm)): Numbers that are congruent to {2, 3, 4} mod 5.
 * [A047203](http://oeis.org/A047203) ([L04 program](047/A047203.asm)): Numbers that are congruent to {0, 2, 3, 4} mod 5.
 * [A047204](http://oeis.org/A047204) ([L07 program](047/A047204.asm)): Numbers that are congruent to {3, 4} mod 5.
-* [A047205](http://oeis.org/A047205) ([L11 program](047/A047205.asm)): Numbers that are congruent to {0, 3, 4} mod 5.
+* [A047205](http://oeis.org/A047205) ([L07 program](047/A047205.asm)): Numbers that are congruent to {0, 3, 4} mod 5.
 * [A047206](http://oeis.org/A047206) ([L04 program](047/A047206.asm)): Numbers that are congruent to {1, 3, 4} mod 5.
 * [A047207](http://oeis.org/A047207) ([L04 program](047/A047207.asm)): Numbers that are congruent to {0, 1, 3, 4} mod 5.
 * [A047208](http://oeis.org/A047208) ([L11 program](047/A047208.asm)): Numbers that are congruent to {0, 4} mod 5.
@@ -3914,7 +3915,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047247](http://oeis.org/A047247) ([L06 program](047/A047247.asm)): Numbers that are congruent to {2, 3, 4, 5} mod 6.
 * [A047248](http://oeis.org/A047248) ([L04 program](047/A047248.asm)): Numbers that are congruent to {0, 2, 3, 4, 5} mod 6.
 * [A047249](http://oeis.org/A047249) ([L07 program](047/A047249.asm)): Numbers that are congruent to {3, 4, 5} mod 6.
-* [A047250](http://oeis.org/A047250) ([L11 program](047/A047250.asm)): Numbers that are congruent to {0, 3, 4, 5} mod 6.
+* [A047250](http://oeis.org/A047250) ([L07 program](047/A047250.asm)): Numbers that are congruent to {0, 3, 4, 5} mod 6.
 * [A047251](http://oeis.org/A047251) ([L09 program](047/A047251.asm)): Numbers that are congruent to {1, 3, 4, 5} mod 6.
 * [A047252](http://oeis.org/A047252) ([L04 program](047/A047252.asm)): Numbers that are congruent to {0, 1, 3, 4, 5} mod 6.
 * [A047253](http://oeis.org/A047253) ([L04 program](047/A047253.asm)): Numbers that are congruent to {1, 2, 3, 4, 5} mod 6.
@@ -3924,7 +3925,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047257](http://oeis.org/A047257) ([L06 program](047/A047257.asm)): Numbers that are congruent to {4, 5} mod 6.
 * [A047258](http://oeis.org/A047258) ([L05 program](047/A047258.asm)): Numbers that are congruent to {0, 4, 5} mod 6.
 * [A047259](http://oeis.org/A047259) ([L09 program](047/A047259.asm)): Numbers that are congruent to {1, 4, 5} mod 6.
-* [A047260](http://oeis.org/A047260) ([L11 program](047/A047260.asm)): Numbers that are congruent to {0, 1, 4, 5} mod 6.
+* [A047260](http://oeis.org/A047260) ([L07 program](047/A047260.asm)): Numbers that are congruent to {0, 1, 4, 5} mod 6.
 * [A047261](http://oeis.org/A047261) ([L09 program](047/A047261.asm)): Numbers that are congruent to {2, 4, 5} mod 6.
 * [A047262](http://oeis.org/A047262) ([L07 program](047/A047262.asm)): Numbers that are congruent to {0, 2, 4, 5} mod 6.
 * [A047263](http://oeis.org/A047263) ([L05 program](047/A047263.asm)): Numbers that are congruent to {0, 1, 2, 4, 5} mod 6.
@@ -3932,7 +3933,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047266](http://oeis.org/A047266) ([L11 program](047/A047266.asm)): Numbers that are congruent to {0, 1, 5} mod 6.
 * [A047267](http://oeis.org/A047267) ([L08 program](047/A047267.asm)): Numbers that are congruent to {0, 2, 5} mod 6.
 * [A047268](http://oeis.org/A047268) ([L08 program](047/A047268.asm)): Numbers that are congruent to {1, 2, 5} mod 6.
-* [A047269](http://oeis.org/A047269) ([L11 program](047/A047269.asm)): Numbers that are congruent to {0, 1, 2, 5} mod 6.
+* [A047269](http://oeis.org/A047269) ([L07 program](047/A047269.asm)): Numbers that are congruent to {0, 1, 2, 5} mod 6.
 * [A047270](http://oeis.org/A047270) ([L05 program](047/A047270.asm)): Numbers that are congruent to {3, 5} mod 6.
 * [A047271](http://oeis.org/A047271) ([L05 program](047/A047271.asm)): Numbers that are congruent to {0, 3, 5} mod 6.
 * [A047273](http://oeis.org/A047273) ([L08 program](047/A047273.asm)): Numbers that are congruent to {0, 1, 3, 5} mod 6.
@@ -3949,7 +3950,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047284](http://oeis.org/A047284) ([L07 program](047/A047284.asm)): Numbers that are congruent to {2, 3, 6} mod 7.
 * [A047285](http://oeis.org/A047285) ([L10 program](047/A047285.asm)): Numbers that are congruent to {0, 2, 3, 6} mod 7.
 * [A047286](http://oeis.org/A047286) ([L17 program](047/A047286.asm)): Numbers that are congruent to {1, 2, 3, 6} mod 7.
-* [A047287](http://oeis.org/A047287) ([L11 program](047/A047287.asm)): Numbers that are congruent to {0, 1, 2, 3, 6} mod 7.
+* [A047287](http://oeis.org/A047287) ([L07 program](047/A047287.asm)): Numbers that are congruent to {0, 1, 2, 3, 6} mod 7.
 * [A047288](http://oeis.org/A047288) ([L10 program](047/A047288.asm)): Numbers that are congruent to {4, 6} mod 7.
 * [A047289](http://oeis.org/A047289) ([L12 program](047/A047289.asm)): Numbers that are congruent to {0, 4, 6} mod 7.
 * [A047290](http://oeis.org/A047290) ([L04 program](047/A047290.asm)): Numbers that are congruent to {1, 4, 6} mod 7.
@@ -3970,13 +3971,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047305](http://oeis.org/A047305) ([L07 program](047/A047305.asm)): Numbers that are congruent to {2, 3, 4, 5, 6} mod 7.
 * [A047306](http://oeis.org/A047306) ([L11 program](047/A047306.asm)): Numbers that are congruent to {0, 2, 3, 4, 5, 6} mod 7.
 * [A047307](http://oeis.org/A047307) ([L07 program](047/A047307.asm)): Numbers that are congruent to {3, 4, 5, 6} mod 7.
-* [A047308](http://oeis.org/A047308) ([L12 program](047/A047308.asm)): Numbers that are congruent to {0, 3, 4, 5, 6} mod 7.
+* [A047308](http://oeis.org/A047308) ([L07 program](047/A047308.asm)): Numbers that are congruent to {0, 3, 4, 5, 6} mod 7.
 * [A047309](http://oeis.org/A047309) ([L13 program](047/A047309.asm)): Numbers that are congruent to {1, 3, 4, 5, 6} mod 7.
 * [A047310](http://oeis.org/A047310) ([L04 program](047/A047310.asm)): Numbers that are congruent to {0, 1, 3, 4, 5, 6} mod 7.
 * [A047311](http://oeis.org/A047311) ([L07 program](047/A047311.asm)): Numbers that are congruent to {4, 5, 6} mod 7.
 * [A047312](http://oeis.org/A047312) ([L12 program](047/A047312.asm)): Numbers that are congruent to {0, 4, 5, 6} mod 7.
 * [A047313](http://oeis.org/A047313) ([L11 program](047/A047313.asm)): Numbers that are congruent to {1, 4, 5, 6} mod 7.
-* [A047314](http://oeis.org/A047314) ([L11 program](047/A047314.asm)): Numbers that are congruent to {0, 1, 4, 5, 6} mod 7.
+* [A047314](http://oeis.org/A047314) ([L07 program](047/A047314.asm)): Numbers that are congruent to {0, 1, 4, 5, 6} mod 7.
 * [A047315](http://oeis.org/A047315) ([L12 program](047/A047315.asm)): Numbers that are congruent to {2, 4, 5, 6} mod 7.
 * [A047316](http://oeis.org/A047316) ([L07 program](047/A047316.asm)): Numbers that are congruent to {0, 2, 4, 5, 6} mod 7.
 * [A047317](http://oeis.org/A047317) ([L04 program](047/A047317.asm)): Numbers that are congruent to {1, 2, 4, 5, 6} mod 7.
@@ -3988,7 +3989,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047323](http://oeis.org/A047323) ([L07 program](047/A047323.asm)): Numbers that are congruent to {2, 5, 6} mod 7.
 * [A047324](http://oeis.org/A047324) ([L09 program](047/A047324.asm)): Numbers that are congruent to {0, 2, 5, 6} mod 7.
 * [A047325](http://oeis.org/A047325) ([L10 program](047/A047325.asm)): Numbers that are congruent to {1, 2, 5, 6} mod 7.
-* [A047326](http://oeis.org/A047326) ([L11 program](047/A047326.asm)): Numbers that are congruent to {0, 1, 2, 5, 6} mod 7.
+* [A047326](http://oeis.org/A047326) ([L07 program](047/A047326.asm)): Numbers that are congruent to {0, 1, 2, 5, 6} mod 7.
 * [A047327](http://oeis.org/A047327) ([L11 program](047/A047327.asm)): Numbers that are congruent to {3, 5, 6} mod 7.
 * [A047328](http://oeis.org/A047328) ([L06 program](047/A047328.asm)): Numbers that are congruent to {0, 3, 5, 6} mod 7.
 * [A047329](http://oeis.org/A047329) ([L04 program](047/A047329.asm)): Numbers that are congruent to {1, 3, 5, 6} mod 7.
@@ -4167,7 +4168,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047502](http://oeis.org/A047502) ([L11 program](047/A047502.asm)): Numbers that are congruent to {2, 3, 4, 5, 7} mod 8.
 * [A047503](http://oeis.org/A047503) ([L09 program](047/A047503.asm)): Numbers that are congruent to {0, 2, 3, 4, 5, 7} mod 8.
 * [A047504](http://oeis.org/A047504) ([L12 program](047/A047504.asm)): Numbers that are congruent to {1, 2, 3, 4, 5, 7} mod 8.
-* [A047505](http://oeis.org/A047505) ([L11 program](047/A047505.asm)): Numbers that are congruent to {0, 1, 2, 3, 6, 7} mod 8.
+* [A047505](http://oeis.org/A047505) ([L07 program](047/A047505.asm)): Numbers that are congruent to {0, 1, 2, 3, 6, 7} mod 8.
 * [A047506](http://oeis.org/A047506) ([L15 program](047/A047506.asm)): Numbers that are congruent to {4, 6, 7} mod 8.
 * [A047507](http://oeis.org/A047507) ([L11 program](047/A047507.asm)): Numbers that are congruent to {0, 4, 6, 7} mod 8.
 * [A047508](http://oeis.org/A047508) ([L09 program](047/A047508.asm)): Numbers that are congruent to {1, 4, 6, 7} mod 8.
@@ -4211,7 +4212,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047546](http://oeis.org/A047546) ([L09 program](047/A047546.asm)): Numbers that are congruent to {2, 3, 4, 7} mod 8.
 * [A047547](http://oeis.org/A047547) ([L15 program](047/A047547.asm)): Numbers that are congruent to {0, 2, 3, 4, 7} mod 8.
 * [A047548](http://oeis.org/A047548) ([L12 program](047/A047548.asm)): Numbers that are congruent to {1, 2, 3, 4, 7} mod 8.
-* [A047549](http://oeis.org/A047549) ([L08 program](047/A047549.asm)): Numbers that are congruent to {0, 1, 2, 3, 4, 7} mod 8.
+* [A047549](http://oeis.org/A047549) ([L07 program](047/A047549.asm)): Numbers that are congruent to {0, 1, 2, 3, 4, 7} mod 8.
 * [A047550](http://oeis.org/A047550) ([L06 program](047/A047550.asm)): Numbers that are congruent to {5, 7} mod 8.
 * [A047551](http://oeis.org/A047551) ([L12 program](047/A047551.asm)): Numbers that are congruent to {0, 1, 6, 7} mod 8.
 * [A047552](http://oeis.org/A047552) ([L14 program](047/A047552.asm)): Numbers that are congruent to {2, 6, 7} mod 8.
@@ -4225,13 +4226,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047560](http://oeis.org/A047560) ([L13 program](047/A047560.asm)): Numbers that are congruent to {0, 2, 3, 6, 7} mod 8.
 * [A047561](http://oeis.org/A047561) ([L10 program](047/A047561.asm)): Numbers that are congruent to {1, 2, 3, 6, 7} mod 8.
 * [A047562](http://oeis.org/A047562) ([L07 program](047/A047562.asm)): Numbers that are congruent to {3, 4, 5, 6, 7} mod 8.
-* [A047563](http://oeis.org/A047563) ([L12 program](047/A047563.asm)): Numbers that are congruent to {0, 3, 4, 5, 6, 7} mod 8.
+* [A047563](http://oeis.org/A047563) ([L07 program](047/A047563.asm)): Numbers that are congruent to {0, 3, 4, 5, 6, 7} mod 8.
 * [A047564](http://oeis.org/A047564) ([L10 program](047/A047564.asm)): Numbers that are congruent to {1, 3, 4, 5, 6, 7} mod 8.
 * [A047565](http://oeis.org/A047565) ([L04 program](047/A047565.asm)): Numbers that are congruent to {0, 1, 3, 4, 5, 6, 7} mod 8.
 * [A047566](http://oeis.org/A047566) ([L07 program](047/A047566.asm)): Numbers that are congruent to {4, 5, 6, 7} mod 8.
 * [A047567](http://oeis.org/A047567) ([L12 program](047/A047567.asm)): Numbers that are congruent to {0, 4, 5, 6, 7} mod 8.
 * [A047568](http://oeis.org/A047568) ([L09 program](047/A047568.asm)): Numbers that are congruent to {1, 4, 5, 6, 7} mod 8.
-* [A047569](http://oeis.org/A047569) ([L12 program](047/A047569.asm)): Numbers that are congruent to {0, 1, 4, 5, 6, 7} mod 8.
+* [A047569](http://oeis.org/A047569) ([L07 program](047/A047569.asm)): Numbers that are congruent to {0, 1, 4, 5, 6, 7} mod 8.
 * [A047570](http://oeis.org/A047570) ([L17 program](047/A047570.asm)): Numbers that are congruent to {2, 4, 5, 6, 7} mod 8.
 * [A047571](http://oeis.org/A047571) ([L07 program](047/A047571.asm)): Numbers that are congruent to {0, 2, 4, 5, 6, 7} mod 8.
 * [A047572](http://oeis.org/A047572) ([L09 program](047/A047572.asm)): Numbers that are congruent to {1, 2, 4, 5, 6, 7} mod 8.
@@ -4243,7 +4244,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047578](http://oeis.org/A047578) ([L16 program](047/A047578.asm)): Numbers that are congruent to {2, 5, 6, 7} mod 8.
 * [A047579](http://oeis.org/A047579) ([L22 program](047/A047579.asm)): Numbers that are congruent to {0, 2, 5, 6, 7} mod 8.
 * [A047580](http://oeis.org/A047580) ([L21 program](047/A047580.asm)): Numbers that are congruent to {1, 2, 5, 6, 7} mod 8.
-* [A047581](http://oeis.org/A047581) ([L11 program](047/A047581.asm)): Numbers that are congruent to {0, 1, 2, 5, 6, 7} mod 8.
+* [A047581](http://oeis.org/A047581) ([L07 program](047/A047581.asm)): Numbers that are congruent to {0, 1, 2, 5, 6, 7} mod 8.
 * [A047582](http://oeis.org/A047582) ([L10 program](047/A047582.asm)): Numbers that are congruent to {3, 5, 6, 7} mod 8.
 * [A047583](http://oeis.org/A047583) ([L08 program](047/A047583.asm)): Numbers that are congruent to {0, 3, 5, 6, 7} mod 8.
 * [A047584](http://oeis.org/A047584) ([L11 program](047/A047584.asm)): Numbers that are congruent to {1, 3, 5, 6, 7} mod 8.
@@ -4738,7 +4739,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A053838](http://oeis.org/A053838) ([L07 program](053/A053838.asm)): a(n) = (sum of digits of n written in base 3) modulo 3.
 * [A053839](http://oeis.org/A053839) ([L06 program](053/A053839.asm)): a(n) = (sum of digits of n written in base 4) modulo 4.
 * [A053841](http://oeis.org/A053841) ([L08 program](053/A053841.asm)): (Sum of digits of n written in base 6) modulo 6.
-* [A053879](http://oeis.org/A053879) ([L11 program](053/A053879.asm)): a(n) = n^2 mod 7.
+* [A053879](http://oeis.org/A053879) ([L03 program](053/A053879.asm)): a(n) = n^2 mod 7.
 * [A054000](http://oeis.org/A054000) ([L04 program](054/A054000.asm)): a(n) = 2*n^2 - 2.
 * [A054027](http://oeis.org/A054027) ([L15 program](054/A054027.asm)): Numbers n such that sum of divisors of n is not divisible by n.
 * [A054071](http://oeis.org/A054071) ([L26 program](054/A054071.asm)): Position of 1 in the permutation of 1,2,...,n obtained by ordering the fractional parts {h*sqrt(2)} for h=1,2,...,n.
@@ -5058,7 +5059,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A058809](http://oeis.org/A058809) ([L03 program](058/A058809.asm)): The sequence lambda(3,n), where lambda is defined in A055203. Number of ways of placing n identifiable positive intervals with a total of exactly three starting and/or finishing points.
 * [A058877](http://oeis.org/A058877) ([L07 program](058/A058877.asm)): Number of labeled acyclic digraphs with n nodes containing exactly n-1 points of in-degree zero.
 * [A058895](http://oeis.org/A058895) ([L03 program](058/A058895.asm)): a(n) = n^4 - n.
-* [A058896](http://oeis.org/A058896) ([L06 program](058/A058896.asm)): a(n) = 4^n - 4.
+* [A058896](http://oeis.org/A058896) ([L05 program](058/A058896.asm)): a(n) = 4^n - 4.
 * [A058919](http://oeis.org/A058919) ([L09 program](058/A058919.asm)): a(n) = n^4/2 - n^3 + 3n^2/2 - n + 1.
 * [A058920](http://oeis.org/A058920) ([L20 program](058/A058920.asm)): a(n) = 2n^4 + 2n^3 + 3n^2 + 2n + 1.
 * [A058922](http://oeis.org/A058922) ([L05 program](058/A058922.asm)): a(n) = n*2^n - 2^n.
@@ -5167,7 +5168,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060453](http://oeis.org/A060453) ([L74 program](060/A060453.asm)): Dot product of the squares and the quarter-squares: a(n) = sum(i=1..n, i^2 * floor(i^2/4)).
 * [A060459](http://oeis.org/A060459) ([L04 program](060/A060459.asm)): a(n) = (n*(n+1))^3.
 * [A060460](http://oeis.org/A060460) ([L05 program](060/A060460.asm)): Consider the final n decimal digits of 2^j for all values of j. They are periodic. Sequence gives position (or phase) of the maximal value seen in these n digits.
-* [A060464](http://oeis.org/A060464) ([L11 program](060/A060464.asm)): Numbers that are not congruent to 4 or 5 mod 9.
+* [A060464](http://oeis.org/A060464) ([L07 program](060/A060464.asm)): Numbers that are not congruent to 4 or 5 mod 9.
 * [A060469](http://oeis.org/A060469) ([L36 program](060/A060469.asm)): Smallest positive a(n) such that number of solutions to a(n) = a(j)+a(k) j<k<n is one or less.
 * [A060470](http://oeis.org/A060470) ([L21 program](060/A060470.asm)): Smallest positive a(n) such that number of solutions to a(n)=a(j)+a(k) j<k<n is two or less.
 * [A060471](http://oeis.org/A060471) ([L18 program](060/A060471.asm)): Smallest positive a(n) such that number of solutions to a(n)=a(j)+a(k) j<k<n is three or less.
@@ -7095,7 +7096,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086652](http://oeis.org/A086652) ([L10 program](086/A086652.asm)): a(n) = A000225(n+3)-A052955(n).
 * [A086653](http://oeis.org/A086653) ([L08 program](086/A086653.asm)): 2^n + 3*n.
 * [A086663](http://oeis.org/A086663) ([L17 program](086/A086663.asm)): Number of non-attacking knights on a n*n board with all non-perimeteral squares removed.
-* [A086694](http://oeis.org/A086694) ([L07 program](086/A086694.asm)): A run of 2^n 1's followed by a run of 2^n 0's, for n=0, 1, 2, ...
+* [A086694](http://oeis.org/A086694) ([L09 program](086/A086694.asm)): A run of 2^n 1's followed by a run of 2^n 0's, for n=0, 1, 2, ...
 * [A086746](http://oeis.org/A086746) ([L03 program](086/A086746.asm)): Multiples of 3018.
 * [A086760](http://oeis.org/A086760) ([L06 program](086/A086760.asm)): a(n) = 8n^2 + 88n + 43.
 * [A086767](http://oeis.org/A086767) ([L09 program](086/A086767.asm)): Last coefficient of the last term in the numerator of the simplified expansion of the solutions of FLT for n=2 for FLT n=1,2,3,..
