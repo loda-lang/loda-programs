@@ -1,104 +1,16 @@
 ; A119522: Determinant of n X n matrix of first n^2 nonzero terms of triangular numbers.
 ; 1,-8,-27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $4,$0
+mov $3,$0
 mov $2,$0
-clr $8,$4
-mov $5,$8
-add $5,$4
-add $5,16
 add $2,1
-mov $9,$4
-sub $5,$5
-add $8,$0
-add $8,7
 mov $1,1
-mul $9,2
-sub $5,$4
-mul $4,5
-sub $9,$4
-sub $1,$4
-mov $2,$2
-mov $7,9979199
-mov $6,1
-div $6,$7
+mul $3,5
+sub $1,$3
 mul $1,2
 lpb $0,1
-  mov $9,$0
-  mov $1,$8
-  mul $9,2
-  div $5,2
-  add $7,1
-  add $0,$4
-  bin $0,$6
-  mov $3,4
-  mov $6,2
-  mov $3,1
-  sub $0,2
-  add $8,1
-  add $4,$6
-  mov $10,$4
-  sub $0,2
-  sub $9,2
-  mov $0,$8
-  div $8,2
-  mov $5,1
-  mov $1,$4
-  mov $7,1
-  sub $3,1
-  mov $0,1
-  add $1,2
-  clr $6,7
-  add $0,1
-  mov $8,8
-  mov $2,$0
-  sub $9,$2
-  sub $6,1
-  mov $7,$1
-  add $10,$6
-  div $10,5
-  mov $7,6
-  mov $0,1
-  sub $10,14
-  div $7,$5
-  add $2,$8
-  add $0,$3
-  mov $2,1
-  mov $1,$1
-  mov $2,1
-  sub $0,1
-  mov $0,$7
-  mov $3,2
-  mov $7,$10
-  mov $2,2
-  div $1,2
-  fac $0
-  add $10,11
-  add $6,1
-  add $1,$3
-  mul $5,$10
-  add $8,$6
-  cmp $10,$6
-  sub $2,1
-  mul $4,$0
-  add $8,$0
-  mov $6,7
-  add $6,60
-  add $8,$5
-  trn $5,50
   mov $0,2
-  sub $4,$4
-  div $7,2
-  mov $9,$8
-  mul $3,$4
-  add $2,$2
-  mov $1,1
-  mov $7,1
-  add $5,1
-  div $4,2
   trn $1,$2
 lpe
-mov $6,1
-add $3,$10
 mul $1,$2
 div $1,2
