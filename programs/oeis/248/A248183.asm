@@ -21,7 +21,7 @@ lpb $2,1
     add $3,1
   lpe
   mov $1,1
-  trn $2,8
+  sub $2,8
 lpe
 sub $3,3
 add $1,$3

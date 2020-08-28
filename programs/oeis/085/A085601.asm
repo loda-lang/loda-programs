@@ -3,10 +3,9 @@
 
 mov $2,2
 pow $2,$0
-mov $1,$2
-add $1,1
-mul $1,$2
-sub $1,2
-div $1,2
+add $2,1
+mov $0,$2
+bin $0,2
+mov $1,$0
 mul $1,4
-add $1,5
+add $1,1

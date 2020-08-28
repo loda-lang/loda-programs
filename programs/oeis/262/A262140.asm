@@ -10,7 +10,7 @@ mov $5,5
 lpb $2,1
   sub $3,$1
   sub $5,$1
-  trn $3,1
+  sub $3,1
   lpb $5,1
     sub $5,1
     trn $1,$3
