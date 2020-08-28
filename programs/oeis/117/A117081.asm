@@ -1,0 +1,88 @@
+; A117081: a(n) = 36*n^2 - 810*n + 2753, producing the conjectured record number of 45 primes in a contiguous range of n for quadratic polynomials, i.e., abs(a(n)) is prime for 0 <= n < 44.
+; 2753,1979,1277,647,89,-397,-811,-1153,-1423,-1621,-1747,-1801,-1783,-1693,-1531,-1297,-991,-613,-163,359,953,1619,2357,3167,4049,5003,6029,7127,8297,9539,10853,12239,13697,15227,16829,18503,20249,22067,23957,25919,27953,30059,32237,34487,36809,39203,41669
+
+mov $8,$0
+mov $5,$0
+mov $3,$8
+sub $5,$0
+trn $5,$0
+mov $4,1
+add $8,1
+mov $4,4
+mov $3,1
+sub $8,$0
+div $8,$8
+mov $4,$3
+mov $1,$0
+mul $8,3
+mul $5,$0
+add $0,8
+add $8,$3
+mov $7,$1
+mov $4,1
+lpb $0,1
+  add $4,$7
+  mul $8,5
+  sub $1,$8
+  add $7,$5
+  sub $4,$8
+  mul $3,2
+  mov $0,$8
+  mov $6,$7
+  mov $3,$7
+  mov $3,$7
+  mov $2,$0
+  add $0,1
+  mov $2,1
+  mov $6,5
+  mov $6,$3
+  mov $1,$3
+  add $8,1
+  mov $8,$4
+  sub $7,$3
+  mov $0,5
+  sub $2,1
+  add $5,$8
+  add $0,4
+  sub $2,$8
+  sub $2,$2
+  mov $7,1
+  mov $0,1
+  sub $6,1
+  mov $3,12
+  sub $0,1
+lpe
+mov $0,3
+sub $4,6
+add $3,$1
+mov $7,$2
+sub $4,1
+mul $1,$0
+mul $3,20
+mul $8,4
+mul $6,4
+trn $6,120
+add $7,$6
+add $2,$2
+add $1,$5
+add $5,1
+mov $2,$4
+sub $6,1
+add $7,$2
+mul $5,$1
+mov $6,4
+add $6,2
+mov $6,4
+add $2,$5
+div $3,2
+pow $6,2
+trn $0,$6
+mov $3,$2
+trn $6,$1
+mov $3,$6
+pow $0,$6
+mov $1,$2
+sub $1,20
+div $1,2
+mul $1,18
+add $1,89

@@ -1,0 +1,106 @@
+; A193008: Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined at Comments.
+; 1,2,10,31,78,170,339,636,1144,1997,3412,5740,9549,15758,25854,42243,68818,111878,181615,294520,477276,773057,1251720,2026296,3279673,5307770,8589394,13899271,22490934,36392642,58886187,95281620,154170784
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $8,1
+    mov $3,7
+    mov $7,38
+    mov $5,$3
+    mov $5,2
+    lpb $0,1
+      mov $4,$8
+      mov $6,$4
+      sub $0,1
+      add $8,$3
+      mov $5,2
+      mov $3,5
+      trn $7,0
+      mov $5,1
+      clr $5,0
+      add $6,2
+      add $6,$8
+      add $6,1
+      mov $7,1
+      mov $2,1
+      mov $1,$0
+      div $2,$3
+      add $6,$3
+      add $3,$4
+      mov $5,1
+    lpe
+    mov $6,$6
+    mov $8,$2
+    mov $7,$2
+    mov $1,1
+    sub $0,$2
+    add $2,2
+    trn $4,1
+    sub $6,1
+    add $6,3
+    mov $0,1
+    sub $2,$8
+    sub $6,$5
+    mov $6,$0
+    mov $2,4
+    mov $2,7
+    mov $5,1
+    mov $0,$5
+    mov $5,840
+    mov $6,$7
+    mov $2,$7
+    mov $8,$5
+    mov $8,$3
+    mov $1,$1
+    trn $0,$0
+    div $2,2
+    trn $8,$2
+    trn $7,5
+    mov $3,$0
+    sub $4,$3
+    mov $4,$5
+    mov $1,$4
+    add $0,$3
+    add $5,1
+    add $3,$7
+    mov $2,$5
+    mov $5,10
+    mov $7,3
+    mov $4,$5
+    add $6,$4
+    mov $2,$6
+    add $3,9
+    mov $5,1
+    add $0,1
+    sub $1,$0
+    sub $5,$4
+    sub $8,$0
+    add $1,$3
+    add $4,$1
+    add $8,$8
+    add $1,1
+    sub $5,$1
+    mov $2,$4
+    add $1,$8
+    sub $1,859
+    div $1,2
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13
