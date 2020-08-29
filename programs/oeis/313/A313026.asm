@@ -1,116 +1,28 @@
 ; A313026: Coordination sequence Gal.5.54.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 ; 1,4,9,14,18,22,26,31,36,40,44,49,54,58,62,66,71,76,80,84,89,94,98,102,106,111,116,120,124,129,134,138,142,146,151,156,160,164,169,174,178,182,186,191,196,200,204,209,214,218
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
-  mov $9,1
-  mov $3,$9
-  mov $7,$3
-  add $0,$0
-  mov $3,$0
-  mov $10,2
-  mov $1,2
-  mov $3,2
-  add $10,1
-  sub $9,1
-  mul $7,$7
-  mov $8,10
-  mov $3,$7
-  add $3,$3
+mov $3,$0
+mov $4,$0
+add $4,1
+lpb $4,1
+  sub $4,1
+  mov $0,$3
+  sub $0,$4
+  mul $0,2
   mov $2,$0
   lpb $2,1
-    add $7,2
-    lpb $4,1
-      mov $4,$3
-      add $4,2
-      mov $10,$4
-      sub $4,$7
-    lpe
-    pow $1,$8
-    mul $1,2
-    mov $5,1
-    sub $3,2
-    mov $8,14
     mov $5,$2
-    div $0,2
-    mov $8,1
-    add $7,3
     mov $7,1
-    pow $9,$5
-    add $9,1
-    mul $2,3
     lpb $5,1
-      mov $8,5
       sub $5,$7
-      pow $7,5
-      mov $2,$1
-      mov $3,2
       gcd $7,42
-      mov $4,1
-      add $8,$8
-      add $8,$7
-      mov $3,$0
-      sub $4,$3
-      add $8,$2
-      mov $1,$10
       add $7,3
     lpe
-    mov $6,2
-    add $10,$5
-    mov $8,36
-    add $3,1
-    mov $2,4
-    sub $2,$4
-    add $10,$1
-    add $4,1
-    div $0,$6
-    lpb $6,1
-      add $1,$7
-      sub $5,$6
-      mov $5,$10
-      add $8,1
-      sub $6,$7
-      mov $4,$5
-      sub $6,1
-    lpe
-    add $9,2
-    sub $6,13
     mov $2,$7
-    mov $9,$10
-    mul $7,2
-    mov $9,1
-    div $0,2
-    add $6,7
-    add $3,$10
-    add $0,1
-    mov $9,4
-    trn $3,1
-    div $8,$3
-    mov $8,3
-    add $4,$5
-    sub $9,1
-    mov $9,7
-    add $8,$8
     sub $2,1
-    sub $1,$2
-    add $1,$9
-    mov $8,$4
-    mov $5,$3
   lpe
-  mov $4,$4
-  add $6,$7
-  mov $4,$4
-  mul $10,$9
-  mul $7,2
-  mov $9,$9
   mov $1,$2
   add $1,1
-  add $12,$1
+  add $6,$1
 lpe
-mov $1,$12
+mov $1,$6

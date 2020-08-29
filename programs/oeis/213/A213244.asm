@@ -1,0 +1,68 @@
+; A213244: Number of nonzero elements in GF(2^n) that are 5th powers.
+; 1,3,7,3,31,63,127,51,511,1023,2047,819,8191,16383,32767,13107,131071,262143,524287,209715,2097151,4194303,8388607,3355443,33554431,67108863,134217727
+
+mov $4,2
+lpb $0,1
+  add $4,$4
+  mov $3,$0
+  mov $2,$0
+  sub $0,1
+  mov $6,$0
+lpe
+add $0,$4
+add $3,$0
+div $2,2
+add $0,$2
+div $6,$0
+sub $6,1
+sub $0,1
+add $0,$4
+sub $0,$4
+add $6,$0
+add $3,$2
+mov $5,2
+trn $2,$0
+mov $2,5
+mul $5,5
+sub $3,4
+mov $6,$5
+trn $2,$2
+trn $6,5
+mov $4,8
+mov $3,1
+pow $4,$5
+gcd $6,$0
+mov $1,6
+sub $2,3
+div $0,$6
+mov $6,$2
+add $5,2
+sub $1,1
+add $1,$4
+mov $3,19
+mov $2,1
+add $2,72
+add $4,$6
+add $3,1
+add $1,$2
+add $2,4
+mov $3,$0
+add $6,1
+mov $5,$5
+trn $2,7
+add $2,6
+mov $2,$5
+mul $2,2
+mov $4,$5
+mov $1,$2
+add $1,9
+mov $4,$4
+add $5,$2
+mov $0,5
+mod $1,15
+add $3,1
+mov $1,$3
+sub $1,2
+div $1,2
+mul $1,2
+add $1,1

@@ -3,52 +3,27 @@
 
 mov $7,$0
 mov $4,$0
-mov $2,1
-mov $1,3
-div $1,2
-mul $2,$4
+mov $1,1
 mov $3,$4
 mul $1,$3
-mov $0,1
 mov $2,$0
 lpb $2,1
   lpb $4,1
     div $1,2
     sub $4,$1
   lpe
-  mov $0,1
-  pow $0,$4
-  lpb $5,1
-    cmp $2,1
-    mov $5,$1
-    mov $4,1
-    mul $3,$0
-    mov $3,2
-  lpe
-  lpb $6,1
-    mov $4,1
-    mov $2,$4
-    mov $6,$1
-    mov $3,1
-  lpe
-  mov $1,$3
   mov $0,$4
   sub $2,1
 lpe
-sub $4,4
 mov $2,2
 mov $4,$2
-add $2,$4
-add $1,$3
 pow $4,$0
-mov $2,1
 mov $1,$4
-mov $8,$7
-mov $9,$8
-mul $9,2
-add $1,$9
-mul $8,$7
-mov $9,$8
-mul $9,2
-add $1,$9
-mul $8,$7
+mov $6,$7
+mov $5,$6
+mul $5,2
+add $1,$5
+mul $6,$7
+mov $5,$6
+mul $5,2
+add $1,$5
