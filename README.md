@@ -68,7 +68,7 @@ __Instructions:__ These are the instructions supported by LODA. In the following
 | `fac a`   | Factorial      | Apply factorial function to target: `a:=a!` |
 | `gcd a,b` | Greatest Common Divisor | Greatest common divisor or target and source: `a:=gcd(a,b)`. Undefinied for 0,0. Otherwise always positive. |
 | `bin a,b` | Binomial Coefficient | Target over source: `a:=a!/(b!(a-b)!)`|
-| `cmp`     | Comparison | Compare target with source value: `a:=(a=b)?1:0` |
+| `cmp a,b` | Comparison | Compare target with source value: `a:=(a=b)?1:0` |
 
 __Loops:__ The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
