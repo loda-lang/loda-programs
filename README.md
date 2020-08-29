@@ -12,30 +12,33 @@ Core commands:
   evaluate <file>  Evaluate a program to a sequence
   optimize <file>  Optimize a program and print it
   minimize <file>  Minimize a program and print it (use -t to set the number of terms)
+  optmin <file>    Optimize and minimize a program and print it (use -t to set the number of terms)
   generate         Generate a random program and print it
   test             Run test suite
 OEIS commands:
   mine             Mine programs for OEIS sequences
   synthesize       Synthesize programs for OEIS sequences
   maintain         Maintain programs for OEIS sequences
+  update           Update OEIS index
 General options:
   -l <string>      Log level (values:debug,info,warn,error,alert)
   -t <number>      Number of sequence terms (default:20)
+  -s <number>      Maximum physical memory (default:1024)
 Interpreter options:
   -c <number>      Maximum number of interpreter cycles (default:10000000)
   -m <number>      Maximum number of used memory cells (default:100000)
 Generator options:
-  -p <number>      Maximum number of operations (default:40)
-  -n <number>      Maximum constant (default:6)
-  -i <number>      Maximum index (default:6)
-  -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,u:mul,d:div,l:lpb/lpe)
+  -p <number>      Maximum number of operations (default:20)
+  -n <number>      Maximum constant (default:4)
+  -i <number>      Maximum index (default:4)
+  -o <string>      Operation types (default:^;m:mov,a:add,s:sub,t:trn,u:mul,d:div,o:mod,p:pow,k:log,f:fac,g:gcd,b:bin,c:cmp,l:lpb,r:clr;^:negate pattern)
   -a <string>      Operand types (default:cd;c:constant,d:direct mem,i:indirect mem)
   -e <file>        Program template
   -r               Search for programs of linear sequences (slow)
   -x               Optimize and overwrite existing programs
 ```
 
-For example, run `./loda eval programs/fibonacci.asm` to generate the first terms of the Fibonacci sequence.
+For example, run `./loda eval programs/oeis/000/A000045.asm` to generate the first terms of the Fibonacci sequence.
 
 ## Language
 
