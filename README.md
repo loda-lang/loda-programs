@@ -2,6 +2,41 @@
 
 LODA is an assembly language and a computational model.
 
+## Tool
+
+The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0. To build it, run `make` in the `src` folder. The `loda` command-line tool provides the following commands and options:
+
+```
+Usage:             loda <command> <options>
+Core commands:
+  evaluate <file>  Evaluate a program to a sequence
+  optimize <file>  Optimize a program and print it
+  minimize <file>  Minimize a program and print it (use -t to set the number of terms)
+  generate         Generate a random program and print it
+  test             Run test suite
+OEIS commands:
+  mine             Mine programs for OEIS sequences
+  synthesize       Synthesize programs for OEIS sequences
+  maintain         Maintain programs for OEIS sequences
+General options:
+  -l <string>      Log level (values:debug,info,warn,error,alert)
+  -t <number>      Number of sequence terms (default:20)
+Interpreter options:
+  -c <number>      Maximum number of interpreter cycles (default:10000000)
+  -m <number>      Maximum number of used memory cells (default:100000)
+Generator options:
+  -p <number>      Maximum number of operations (default:40)
+  -n <number>      Maximum constant (default:6)
+  -i <number>      Maximum index (default:6)
+  -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,u:mul,d:div,l:lpb/lpe)
+  -a <string>      Operand types (default:cd;c:constant,d:direct mem,i:indirect mem)
+  -e <file>        Program template
+  -r               Search for programs of linear sequences (slow)
+  -x               Optimize and overwrite existing programs
+```
+
+For example, run `./loda eval programs/fibonacci.asm` to generate the first terms of the Fibonacci sequence.
+
 ## Language
 
 The LODA language is an assembly language with a small set of instructions. It supports an unbounded set of memory cells storing natural numbers, arithmetic operations and a loop based on a lexicographical order descent on memory regions.
@@ -50,41 +85,6 @@ The following programs include some classical examples of sequences and function
 * [Fibonacci numbers (A000045)](programs/oeis/A000045.asm)
 * [Number of divisors (A000005)](programs/oeis/A000005.asm)
 * [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
-
-## Tool
-
-The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0. To build it, run `make` in the `src` folder. The `loda` command-line tool provides the following commands and options:
-
-```
-Usage:             loda <command> <options>
-Core commands:
-  evaluate <file>  Evaluate a program to a sequence
-  optimize <file>  Optimize a program and print it
-  minimize <file>  Minimize a program and print it (use -t to set the number of terms)
-  generate         Generate a random program and print it
-  test             Run test suite
-OEIS commands:
-  mine             Mine programs for OEIS sequences
-  synthesize       Synthesize programs for OEIS sequences
-  maintain         Maintain programs for OEIS sequences
-General options:
-  -l <string>      Log level (values:debug,info,warn,error,alert)
-  -t <number>      Number of sequence terms (default:20)
-Interpreter options:
-  -c <number>      Maximum number of interpreter cycles (default:10000000)
-  -m <number>      Maximum number of used memory cells (default:100000)
-Generator options:
-  -p <number>      Maximum number of operations (default:40)
-  -n <number>      Maximum constant (default:6)
-  -i <number>      Maximum index (default:6)
-  -o <string>      Operation types (default:asml;a:add,s:sub,m:mov,u:mul,d:div,l:lpb/lpe)
-  -a <string>      Operand types (default:cd;c:constant,d:direct mem,i:indirect mem)
-  -e <file>        Program template
-  -r               Search for programs of linear sequences (slow)
-  -x               Optimize and overwrite existing programs
-```
-
-For example, run `./loda eval programs/fibonacci.asm` to generate the first terms of the Fibonacci sequence.
 
 # Generating Programs for Integer Sequences
 
