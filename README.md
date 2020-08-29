@@ -44,15 +44,17 @@ For example, run `./loda eval programs/oeis/000/A000045.asm` to generate the fir
 
 The LODA language is an assembly language with instructions for common integer operations. It supports an unbounded set of memory cells storing integer, arithmetic operations and a loop based on a lexicographical order descent on memory regions.
 
-__Memory:__ Programs operate on memory consisting of an unbounded sequence of memory cells `$0`,`$1`,`$2`,... each storing an integer. There are three types of operands supported:
+### Memory
+
+Programs operate on memory consisting of an unbounded sequence of memory cells `$0`,`$1`,`$2`,... each storing an integer. There are three types of operands supported:
 
 1. __Constants__, for example 5.
 2. __Direct memory access__, for example `$5`. Reads or writes the value of the fifth memory cell.
 3. __Indirect memory access__, for example `$$7`. Reads the value at memory cell #7 and interpretes it as an address. For instance, if the value of `$7` is 13, then `$$7` accesses the memory cell #13.
 
-__Instructions:__ These are the instructions supported by LODA. In the following, let `a` be a direct or an indirect memory access, and let `b` be a constant, a direct or an indirect memory access.
+### Arithmetic Operations
 
-## Arithmetic Operations
+These are the following instructions supported by LODA. In the following, let `a` be a direct or an indirect memory access, and let `b` be a constant, a direct or an indirect memory access.
 
 | Operation | Name           | Description |
 |:---------:|:--------------:|-------------|
@@ -70,13 +72,17 @@ __Instructions:__ These are the instructions supported by LODA. In the following
 | `bin a,b` | Binomial Coefficient | Target over source: `a:=a!/(b!(a-b)!)`|
 | `cmp a,b` | Comparison | Compare target with source value: `a:=(a=b)?1:0` |
 
-__Loops:__ The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
+### Loops
+
+The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
 __Termination:__ all LODA programs are guaranteed to halt on every input. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
 
-__Integer Sequences:__ Programs can be used to generate integer sequences. A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
+### Integer Sequences
 
-# Example Programs
+Programs can be used to generate integer sequences. A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
+
+### Example Programs
 
 The following programs include some classical examples of sequences and functions on the natural numbers.
 
@@ -95,7 +101,7 @@ Before mining programs for integer sequences, you need to download files from th
 
 If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
 
-## Available Programs
+### Available Programs
 
 Currently, there are about 19k programs available.
 
