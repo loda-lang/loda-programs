@@ -47,43 +47,38 @@ __Memory:__ Programs operate on memory consisting of an unbounded sequence of me
 2. __Direct memory access__, for example `$5`. Reads or writes the value of the fifth memory cell.
 3. __Indirect memory access__, for example `$$7`. Reads the value at memory cell #7 and interpretes it as an address. For instance, if the value of `$7` is 13, then `$$7` accesses the memory cell #13.
 
-__Instructions:__ These are the instructions supported by LODA. In the following, let `x` be a direct or an indirect memory access, and let `y` be a constant, a direct or an indirect memory access.
-
-1. __Assignment:__ The instruction `mov x,y` assigns the value of `y` to the memory cell `x`.
-2. __Addition:__ The instruction `add x,y` updates the memory cell `x` by adding the value of `y` to it. For example, `add $3,42` adds 42 to the memory cell #3. Similarily, `add $$5,$7` adds the value of the memory cell #7 to the the cell whose address is stored in cell #5.
-3. __Truncated Subtraction:__ The instruction `sub x,y` updates the cell `x` by subtracting the value of `y` from it. If the result would be a negative number, `x` is set to 
-2. __Multiplication:__ The instruction `mul x,y` updates the memory cell `x` by multiplying the value of `y` with it.
-2. __Division:__ The instruction `div x,y` updates the memory cell `x` by dividing it by the value of `y`.
-4. __Lexicographical Order Descent Loop:__ The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
+__Instructions:__ These are the instructions supported by LODA. In the following, let `a` be a direct or an indirect memory access, and let `b` be a constant, a direct or an indirect memory access.
 
 ## Arithmetic Operations
 
 | Operation | Name           | Description |
 |:---------:|:--------------:|-------------|
-| `mov`     | Assignment     | Assign the value of the source to the target operand. |
-| `add`     | Addition       | Add the source to the target operand. |
-| `sub`     | Subtraction    | Subtract the source from the target operand. |
-| `trn`     | Truncation     |  |
-| `mul`     | Multiplication |  |
-| `div`     | Division       |  |
-| `mod`     | Modulus        |  |
-| `pow`     | Power          |  |
-| `log`     | Logarithm      |  |
-| `fac`     | Factorial      |  |
-| `gcd`     | Greatest Common Divisor |  |
-| `bin`     | Binomial Coefficient |  |
-| `cmp`     | Comparison |  |
+| `mov a,b` | Assignment     | Assign the value of the source to the target operand: `a:=b` |
+| `add a,b` | Addition       | Add the source to the target operand: `a:=a+b` |
+| `sub a,b` | Subtraction    | Subtract the source from the target operand: `a:=a-b` |
+| `trn a,b` | Truncation     | Subtract and truncate if result is negative: `a:=(a>=b)?(a-b):0` |
+| `mul a,b` | Multiplication | Multiply the target with the source value: `a:=a*b` |
+| `div a,b` | Division       | Divide the target by the source value: `a:=floor(a/b)`  |
+| `mod a,b` | Modulus        | Remainder of division of target by source: `a:=a%b` |
+| `pow a,b` | Power          | Raise source to the power of target: `a:=a^b` |
+| `log a,b` | Logarithm      | Logarithm of target with source as base: `a:=floor(log_b(a))` |
+| `fac a`   | Factorial      | Apply factorial function to target: `a:=a!` |
+| `gcd a,b` | Greatest Common Divisor | Greatest common divisor or target and source: `a:=gcd(a,b)`. Undefinied for 0,0. Otherwise always positive. |
+| `bin a,b` | Binomial Coefficient | Target over source: `a:=a!/(b!(a-b)!)`|
+| `cmp`     | Comparison | Compare target with source value: `a:=(a=b)?1:0` |
+
+__Loops:__ The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
 __Termination:__ all LODA programs are guaranteed to halt on every input. An infinite loop cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
 
-__Integer Sequences:__ Programs can be used to generate integer sequences (actually, natural number sequences). A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
+__Integer Sequences:__ Programs can be used to generate integer sequences. A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
 
 # Example Programs
 
 The following programs include some classical examples of sequences and functions on the natural numbers.
 
-* [Fibonacci numbers (A000045)](programs/oeis/A000045.asm)
-* [Number of divisors (A000005)](programs/oeis/A000005.asm)
+* [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
+* [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
 * [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
 
 # Generating Programs for Integer Sequences
@@ -98,11 +93,9 @@ If you would like to get updates on new programs, you can check out the [@lodami
 
 ## Available Programs
 
+Currently, there are about 19k programs available.
+
 * [A000001-A100000](programs/oeis/list0.md)
 * [A100001-A200000](programs/oeis/list1.md)
 * [A200001-A300000](programs/oeis/list2.md)
 * [A300001-A400000](programs/oeis/list3.md)
-
-Total number of programs: 18322/336309 (5%)
-
-![LODA Program Length Distribution](https://raw.githubusercontent.com/ckrause/loda/master/stats/lengths.png)
