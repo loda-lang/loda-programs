@@ -82,6 +82,7 @@ The following programs include some classical examples of sequences and function
 
 * [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
 * [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
+* [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm): Uses `gcd` instruction.
 * [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
 
 # Mining Programs for Integer Sequences
