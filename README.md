@@ -42,9 +42,9 @@ For example, run `./loda eval programs/oeis/000/A000045.asm` to generate the fir
 
 ## Language
 
-The LODA language is an assembly language with a small set of instructions. It supports an unbounded set of memory cells storing natural numbers, arithmetic operations and a loop based on a lexicographical order descent on memory regions.
+The LODA language is an assembly language with instructions for common integer operations. It supports an unbounded set of memory cells storing integer, arithmetic operations and a loop based on a lexicographical order descent on memory regions.
 
-__Memory:__ Programs operate on memory consisting of an unbounded sequence of memory cells `$0`,`$1`,`$2`,... each storing a natural number. There are three types of operands supported:
+__Memory:__ Programs operate on memory consisting of an unbounded sequence of memory cells `$0`,`$1`,`$2`,... each storing an integer. There are three types of operands supported:
 
 1. __Constants__, for example 5.
 2. __Direct memory access__, for example `$5`. Reads or writes the value of the fifth memory cell.
