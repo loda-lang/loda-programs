@@ -1,123 +1,40 @@
 ; A188590: [(n+1)*r] - [n*r], where r = 3/2 + sqrt(13)/2 and [...] denotes the floor function.
 ; 3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,4,3
 
-mov $11,$0
-mov $13,2
-lpb $13,1
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  add $0,$13
+mov $3,$0
+mov $7,2
+lpb $7,1
+  sub $7,1
+  mov $0,$3
+  add $0,$7
   sub $0,1
   mov $6,$0
-  mov $5,1
-  mov $8,$5
-  mov $7,$8
-  add $0,$5
-  add $5,$6
-  mov $5,$0
-  add $5,$7
-  mov $3,1
-  mov $0,$8
-  mov $9,$7
-  mov $4,1
-  mov $10,$6
-  mul $10,10
-  add $4,3
-  mul $0,$6
-  sub $7,1
-  div $5,5
-  add $10,1
-  add $5,1
-  add $10,1
-  mov $1,$10
-  mov $5,$1
-  add $0,$0
+  mov $5,$6
+  mul $5,10
+  add $5,2
+  mov $1,$5
   mul $0,$1
   lpb $0,1
-    mul $6,$3
-    sub $4,1
-    mul $6,$6
-    mul $8,$7
-    sub $1,6
-    add $10,$0
-    mul $3,$3
-    mov $2,1
-    trn $2,1
+    add $5,$0
     add $0,5
-    mov $1,$1
-    add $7,$6
-    mov $7,$9
-    add $5,2
-    mov $1,$8
-    sub $10,$0
-    mov $6,2
-    mov $3,$3
-    mov $0,$9
-    mov $0,$4
-    add $5,$1
-    mov $2,1
-    add $3,$8
-    add $6,$0
-    add $8,2
-    mov $7,4
-    mov $5,$10
-    mov $6,1
-    trn $2,1
-    sub $8,$6
-    mov $1,$9
-    add $5,2
-    mov $4,2
-    mov $3,$5
-    sub $4,1
-    mul $9,$1
-    mov $4,$3
-    add $2,$4
-    add $9,$8
-    add $6,$2
-    mov $1,$10
-    mov $4,$8
-    mov $10,1
-    add $7,2
-    mov $8,$4
-    add $5,$3
-    div $6,2
-    mod $4,$3
-    add $8,1
-    add $5,1
-    add $3,$3
-    mul $6,2
-    sub $5,$10
-    add $10,$10
+    sub $5,$0
+    mov $1,$5
+    mov $5,1
+    mul $5,2
     div $1,11
-    mul $5,$9
-    mov $4,2
-    sub $0,1
-    add $1,$10
-    add $0,1
-    mov $4,1
-    mul $5,3
+    add $1,$5
     mov $0,4
-    mov $6,$3
-    pow $7,$0
-    add $3,$3
-    sub $2,4
-    mov $3,1
-    sub $4,$6
-    mov $5,$7
   lpe
   div $1,3
-  mov $9,1
-  sub $8,$9
-  mov $14,$13
-  lpb $14,1
-    mov $12,$1
-    sub $14,1
+  mov $4,$7
+  lpb $4,1
+    mov $2,$1
+    sub $4,1
   lpe
 lpe
-lpb $11,1
-  sub $12,$1
-  mov $11,0
+lpb $3,1
+  sub $2,$1
+  mov $3,0
 lpe
-mov $1,$12
+mov $1,$2
 add $1,3

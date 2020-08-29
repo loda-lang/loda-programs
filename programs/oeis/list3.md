@@ -145,7 +145,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304375](http://oeis.org/A304375) ([L08 program](304/A304375.asm)): a(n) = 27*n^2/2 + 45*n/2 - 12 (n>=1).
 * [A304376](http://oeis.org/A304376) ([L05 program](304/A304376.asm)): a(n) = 60*2^n - 48 (n>=1).
 * [A304377](http://oeis.org/A304377) ([L05 program](304/A304377.asm)): a(n) = 102*2^n - 96 (n>=1).
-* [A304378](http://oeis.org/A304378) ([L21 program](304/A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
+* [A304378](http://oeis.org/A304378) ([L18 program](304/A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
 * [A304379](http://oeis.org/A304379) ([L21 program](304/A304379.asm)): a(n) = 256n^2 - 828n + 656 (n>=1).
 * [A304380](http://oeis.org/A304380) ([L09 program](304/A304380.asm)): a(n) = 36*n^2 - 4*n (n>=1).
 * [A304381](http://oeis.org/A304381) ([L09 program](304/A304381.asm)): a(n) = 54*n^2 - 26*n + 4 (n>=1).
@@ -321,6 +321,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309093](http://oeis.org/A309093) ([L04 program](309/A309093.asm)): The analog of A309077(n), but allowing fractional powers.
 * [A309118](http://oeis.org/A309118) ([L38 program](309/A309118.asm)): Number of tiles added at iteration n when successively, layer by layer, building a symmetric patch of a rhombille tiling around a central star of six rhombs.
 * [A309127](http://oeis.org/A309127) ([L09 program](309/A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
+* [A309214](http://oeis.org/A309214) ([L22 program](309/A309214.asm)): a(0)=0; thereafter a(n) = a(n-1)+n if a(n-1) even, otherwise a(n) = a(n-1)-n.
 * [A309231](http://oeis.org/A309231) ([L13 program](309/A309231.asm)): Column 3 of the array at A326662 see Comments.
 * [A309250](http://oeis.org/A309250) ([L13 program](309/A309250.asm)): a(n) is the index of the binary string of a Post's Correspondence Problem Encoding with index n.
 * [A309294](http://oeis.org/A309294) ([L12 program](309/A309294.asm)): (1/2) times the sum of the elements of all subsets of [n] whose sum is divisible by two.

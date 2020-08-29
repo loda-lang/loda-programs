@@ -1,0 +1,83 @@
+; A070169: Rounded total surface area of a regular tetrahedron with edge length n.
+; 0,2,7,16,28,43,62,85,111,140,173,210,249,293,339,390,443,501,561,625,693,764,838,916,998,1083,1171,1263,1358,1457,1559,1665,1774,1886,2002,2122,2245,2371,2501,2634,2771,2912,3055,3203,3353,3507,3665,3826,3991
+
+mov $8,$0
+mov $2,2
+add $0,3
+mov $3,$8
+mov $3,$8
+mov $5,120
+mov $4,2
+mul $8,$3
+mov $1,3
+mov $6,$8
+mov $5,2
+mov $7,$0
+mov $0,$6
+add $0,$4
+add $8,$8
+add $7,$3
+mov $5,$6
+mov $8,20
+mov $0,$4
+mov $3,$6
+add $6,$8
+add $6,1
+add $3,$8
+add $5,$8
+mov $5,1
+div $8,2
+add $8,$7
+sub $1,$2
+mov $2,$0
+mul $6,$6
+sub $8,24
+mov $0,1
+add $4,5
+add $5,$3
+lpb $2,1
+  lpb $4,1
+    add $2,$8
+    trn $2,$2
+    add $4,2
+    mul $8,2
+    sub $3,3
+    add $7,$3
+    add $1,$1
+    sub $7,1
+    sub $0,$6
+    mov $6,1
+    sub $6,1
+    sub $4,$3
+    sub $4,3
+    div $1,2
+    add $2,$3
+    mov $5,1
+    mov $0,$7
+    div $7,6
+  lpe
+  div $4,$8
+  sub $2,$8
+  add $1,$8
+  lpb $5,1
+    pow $2,2
+    mov $2,1
+    sub $5,$3
+    mov $7,$0
+    add $8,2
+  lpe
+  add $4,2
+  lpb $6,1
+    mul $6,$7
+    mov $5,1
+    sub $6,$3
+    mov $4,4
+    add $3,1
+    pow $5,$4
+    mov $1,$3
+  lpe
+  mul $5,2
+  sub $5,2
+  sub $2,1
+lpe
+sub $1,36
