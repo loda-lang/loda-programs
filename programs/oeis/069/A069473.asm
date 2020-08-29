@@ -3,11 +3,10 @@
 
 add $0,1
 pow $0,2
-mov $1,1
-mul $0,2
-add $1,$0
-pow $1,2
-sub $1,9
-div $1,8
+mov $1,$0
+add $1,1
+mul $1,$0
+sub $1,2
+div $1,2
 mul $1,60
 add $1,62
