@@ -2,104 +2,26 @@
 ; 1,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7,0,3,4,7
 
 lpb $0,1
-  mov $9,$0
-  mov $6,12
-  mov $7,10
-  mov $1,1
-  mov $2,$1
-  add $0,2
-  sub $0,1
-  mov $1,$6
-  bin $2,$9
-  sub $2,232
+  mov $2,$0
+  add $0,1
   mov $4,5
-  add $6,1
-  mov $5,$9
-  trn $2,14
-  mov $5,15
-  add $6,$1
   trn $0,$4
-  mul $6,$0
-  add $4,1
-  add $6,$2
-  mov $3,3
-  mov $4,$9
+  mov $4,$2
 lpe
-sub $3,1
-add $5,$1
-div $2,$3
-mov $3,1
-add $7,$4
-cmp $9,$6
-mov $2,1
-mul $2,$5
-mov $3,1
-add $0,$1
-add $0,1
-mov $6,2
+cmp $2,$6
 mov $1,1
-mov $8,1
-mov $3,$9
-mov $7,2
-pow $9,2
-add $6,1
-add $5,4
+mov $3,$2
 add $3,$4
-add $2,$1
-sub $5,3
 mov $7,$1
-add $9,$3
-add $7,$9
-mov $10,$7
+add $2,$3
+add $7,$2
 div $3,2
 add $3,1
-add $0,$5
-mov $8,2
-bin $5,2
 mul $3,2
-add $8,1
-mul $5,5
-add $4,$8
 sub $7,1
-mov $0,6
 mov $5,$7
-sub $1,1
-mov $1,1
-mov $0,1
 add $5,36
-mov $1,$10
-mov $8,6
-add $1,3
-mov $0,$0
-trn $8,$4
-mul $0,$8
-sub $6,$1
-sub $8,1
-add $7,$3
-sub $8,$6
-add $6,1
-mov $6,$7
-mov $0,1
-mov $8,5
-add $0,$10
-div $4,2
-add $9,$4
-add $4,$4
-sub $6,$3
-mov $4,2
 add $3,$5
-mul $9,2
-sub $7,2
-mul $0,2
-mov $2,$9
-mov $5,$2
-add $0,5
 add $3,1
-mov $9,1
-mul $8,$2
-add $0,$9
-mul $4,2
-mul $0,56
-add $1,$3
 mov $1,$3
 sub $1,40
