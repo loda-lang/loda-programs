@@ -7,8 +7,7 @@ add $2,8
 mul $0,2
 add $2,4
 mul $0,$2
-sub $2,5
-add $2,1
+sub $2,4
 mov $1,$2
 bin $1,4
 lpb $0,1

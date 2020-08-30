@@ -21,8 +21,6 @@ lpb $12,1
     gcd $6,2
     add $5,$6
     mul $5,$0
-    sub $5,1
-    add $5,1
     mov $1,$5
     trn $1,1
     mul $1,3

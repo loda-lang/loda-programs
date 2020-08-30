@@ -24,8 +24,6 @@ lpb $5,1
     sub $0,1
   lpe
   sub $0,$3
-  sub $0,2
-  add $0,2
   add $2,$0
   pow $2,2
   sub $2,5

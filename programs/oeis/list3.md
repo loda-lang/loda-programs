@@ -705,7 +705,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322008](http://oeis.org/A322008) ([L12 program](322/A322008.asm)): 1/(1 - Integral_{x=0..1} x^(x^n) dx), rounded to the nearest integer.
 * [A322029](http://oeis.org/A322029) ([L29 program](322/A322029.asm)): Denominator of least value of the squared diameters of the enclosing circles of all strictly convex lattice n-gons with minimal area given by A070911. Numerators are A321693.
 * [A322042](http://oeis.org/A322042) ([L03 program](322/A322042.asm)): Maximum edge-distance of a point in the quotient graph E/nE from the origin (see A322041 for further information).
-* [A322043](http://oeis.org/A322043) ([L05 program](322/A322043.asm)): Numbers k such that the coefficient of x^k in the expansion of Product_{m >= 1} (1-x^m)^15 is zero.
+* [A322043](http://oeis.org/A322043) ([L04 program](322/A322043.asm)): Numbers k such that the coefficient of x^k in the expansion of Product_{m >= 1} (1-x^m)^15 is zero.
 * [A322108](http://oeis.org/A322108) ([L15 program](322/A322108.asm)): Distance of n-th iteration in an alternating rectangular spiral.
 * [A322116](http://oeis.org/A322116) ([L07 program](322/A322116.asm)): Main diagonal of triangle A321600; a(n) = A321600(n,n-1) for n >= 1.
 * [A322171](http://oeis.org/A322171) ([L16 program](322/A322171.asm)): Expansion of x*(3 + 5*x + x^2 + x^3)/((1 - x)^2*(1 + x^2)).
@@ -937,7 +937,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331434](http://oeis.org/A331434) ([L07 program](331/A331434.asm)): Column 2 of triangle in A331431.
 * [A331528](http://oeis.org/A331528) ([L14 program](331/A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
 * [A331714](http://oeis.org/A331714) ([L71 program](331/A331714.asm)): Number of non-isomorphic set-systems with 3 sets each with n elements.
-* [A331801](http://oeis.org/A331801) ([L67 program](331/A331801.asm)): Integers that are sum of two nonsquarefree numbers.
+* [A331801](http://oeis.org/A331801) ([L27 program](331/A331801.asm)): Integers that are sum of two nonsquarefree numbers.
 * [A331943](http://oeis.org/A331943) ([L09 program](331/A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
 * [A331952](http://oeis.org/A331952) ([L12 program](331/A331952.asm)): a(n) = (-7 + (-1)^(1+n) + 6*n^2) / 8.
 * [A331987](http://oeis.org/A331987) ([L23 program](331/A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
@@ -952,7 +952,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332101](http://oeis.org/A332101) ([L34 program](332/A332101.asm)): Least m such that m^n <= Sum_{k<m} k^n.
 * [A332102](http://oeis.org/A332102) ([L29 program](332/A332102.asm)): Least m > 0 such that 2*m^n <= Sum_{k < m} k^n.
 * [A332202](http://oeis.org/A332202) ([L39 program](332/A332202.asm)): Largest k >= 0 such that 3^k divides 2^(2^n-1) + 1.
-* [A332243](http://oeis.org/A332243) ([L05 program](332/A332243.asm)): Starhex honeycomb numbers: a(n) = 13 + 60*n + 60*n^2.
+* [A332243](http://oeis.org/A332243) ([L04 program](332/A332243.asm)): Starhex honeycomb numbers: a(n) = 13 + 60*n + 60*n^2.
 * [A332410](http://oeis.org/A332410) ([L06 program](332/A332410.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-5) - 2*a(n-6) + a(n-7) with a(0)=0, a(1)=1, a(2)=3, a(3)=6, a(4)=11, a(5)=17, a(6)=24.
 * [A332420](http://oeis.org/A332420) ([L16 program](332/A332420.asm)): Number of Maclaurin polynomials of sin x having exactly n positive zeros.
 * [A332490](http://oeis.org/A332490) ([L42 program](332/A332490.asm)): a(n) = Sum_{k=1..n} k * ceiling(n/k).

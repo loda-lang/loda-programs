@@ -50,8 +50,7 @@ lpb $23,1
       mov $14,0
     lpe
     mov $1,$15
-    sub $1,4
-    add $1,6
+    add $1,2
     add $19,$1
   lpe
   mov $1,$19

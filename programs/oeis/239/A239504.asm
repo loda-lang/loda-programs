@@ -7,5 +7,4 @@ add $2,4
 log $2,10
 add $2,4
 mov $1,$2
-sub $1,4
-add $1,1
+sub $1,3

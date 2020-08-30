@@ -4,7 +4,6 @@
 mov $1,$0
 mod $1,6
 mul $1,4
-sub $1,4
-add $1,6
+add $1,2
 div $1,6
 trn $1,1

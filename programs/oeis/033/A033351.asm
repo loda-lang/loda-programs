@@ -5,8 +5,6 @@ mov $2,$0
 add $2,3
 mov $0,3
 trn $0,4
-sub $2,1
-add $2,1
 add $0,14
 sub $2,3
 mul $0,2

@@ -9,5 +9,4 @@ lpb $2,1
   sub $2,1
   sub $0,$2
 lpe
-sub $1,6
-add $1,1
+sub $1,5

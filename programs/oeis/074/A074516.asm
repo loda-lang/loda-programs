@@ -9,5 +9,4 @@ mov $1,$2
 add $1,2
 pow $3,$0
 add $1,$3
-sub $1,8
-add $1,3
+sub $1,5

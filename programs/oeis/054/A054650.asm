@@ -18,5 +18,4 @@ add $2,$4
 div $2,2
 add $2,6
 mov $1,$2
-sub $1,7
-add $1,1
+sub $1,6

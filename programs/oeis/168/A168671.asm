@@ -8,8 +8,7 @@ mov $3,$0
 mov $4,2
 add $4,$1
 add $4,1
-sub $3,1
-add $3,2
+add $3,1
 div $4,2
 add $3,$4
 add $3,14

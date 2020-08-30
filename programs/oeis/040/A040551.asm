@@ -16,5 +16,4 @@ fac $0
 gcd $3,$0
 add $3,$0
 mov $1,$3
-sub $1,3
-add $1,1
+sub $1,2

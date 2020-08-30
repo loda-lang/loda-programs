@@ -15,5 +15,4 @@ lpb $0,1
   fac $0
 lpe
 mov $1,$3
-sub $1,2
-add $1,1
+sub $1,1

@@ -4,8 +4,7 @@
 mov $6,$0
 mov $5,$0
 mov $2,$5
-sub $0,1
-add $0,4
+add $0,3
 mov $3,$2
 add $3,4
 add $3,$2

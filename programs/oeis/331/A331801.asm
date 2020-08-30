@@ -15,8 +15,7 @@ lpb $0,1
   mov $2,2
   add $6,$2
   sub $0,$6
-  sub $0,1
-  add $0,4
+  add $0,3
   sub $4,1
   sub $6,2
   add $0,$4

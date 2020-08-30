@@ -9,5 +9,4 @@ lpb $0,1
   div $2,8
 lpe
 add $1,$2
-sub $1,7
-add $1,1
+sub $1,6

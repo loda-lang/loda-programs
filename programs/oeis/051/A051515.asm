@@ -11,5 +11,4 @@ mul $3,$2
 pow $3,2
 sub $3,3
 mov $1,$3
-sub $1,6
-add $1,9
+add $1,3

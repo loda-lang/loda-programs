@@ -65,13 +65,11 @@ lpb $22,1
         mov $9,0
       lpe
       mov $1,$10
-      sub $1,5
-      add $1,2
+      sub $1,3
       add $14,$1
     lpe
     mov $1,$14
-    sub $1,1
-    add $1,2
+    add $1,1
     mov $19,$18
     lpb $19,1
       mov $17,$1

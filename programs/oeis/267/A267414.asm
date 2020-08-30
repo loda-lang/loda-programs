@@ -8,8 +8,6 @@ mov $2,1
 lpb $0,1
   add $0,$2
   div $1,2
-  sub $0,1
-  add $0,1
   add $1,2
   mov $2,0
   add $1,1

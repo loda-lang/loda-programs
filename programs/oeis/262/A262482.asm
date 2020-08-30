@@ -10,5 +10,4 @@ mul $1,8
 add $1,5
 div $2,$1
 mov $1,$2
-sub $1,1
-add $1,2
+add $1,1

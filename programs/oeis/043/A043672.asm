@@ -20,8 +20,7 @@ lpb $0,1
   sub $0,1
   add $0,$4
   sub $3,2
-  sub $0,1
-  add $0,6
+  add $0,5
 lpe
 lpb $2,1
   add $1,1

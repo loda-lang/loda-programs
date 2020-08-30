@@ -22,8 +22,7 @@ lpb $14,1
     add $0,8
     mov $7,$0
     sub $7,6
-    sub $8,5
-    add $8,1
+    sub $8,4
     bin $7,$8
     mov $4,1
     add $7,$4

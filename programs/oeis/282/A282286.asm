@@ -6,8 +6,7 @@ mul $1,7
 mov $2,3
 pow $1,2
 add $2,$0
-sub $1,2
-add $1,1
+sub $1,1
 gcd $2,2
 div $1,$2
 trn $1,1

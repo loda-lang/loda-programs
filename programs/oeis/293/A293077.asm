@@ -38,8 +38,6 @@ lpb $18,1
           add $2,$1
           div $2,2
         lpe
-        sub $1,1
-        add $1,1
         mov $8,$7
         lpb $8,1
           mov $6,$1

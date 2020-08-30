@@ -12,8 +12,7 @@ trn $1,$3
 lpb $0,1
   mul $3,2
   add $1,$3
-  sub $0,6
-  add $0,1
+  sub $0,5
   mov $3,1
   sub $0,$2
   trn $0,6

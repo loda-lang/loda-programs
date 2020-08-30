@@ -6,8 +6,7 @@ sub $3,25
 add $0,1
 bin $3,$0
 mov $4,$3
-sub $4,4
-add $4,2
+sub $4,2
 mov $2,$4
 mov $1,$2
 sub $1,298

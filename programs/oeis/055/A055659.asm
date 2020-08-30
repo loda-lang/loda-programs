@@ -8,8 +8,7 @@ add $3,1
 add $2,3
 mul $3,$2
 mul $3,2
-sub $3,6
-add $3,1
+sub $3,5
 pow $3,2
 mov $1,$3
 add $3,$1

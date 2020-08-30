@@ -19,5 +19,4 @@ lpe
 mod $3,9
 add $3,$5
 mov $1,$3
-sub $1,8
-add $1,2
+sub $1,6

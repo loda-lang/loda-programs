@@ -3,8 +3,6 @@
 
 mod $0,7
 lpb $0,1
-  sub $0,1
-  add $0,3
   gcd $1,4
   mod $0,2
   mul $0,$1

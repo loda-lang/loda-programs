@@ -7,5 +7,4 @@ mov $1,2
 add $2,$0
 pow $1,$2
 div $1,9
-sub $1,1
-add $1,2
+add $1,1

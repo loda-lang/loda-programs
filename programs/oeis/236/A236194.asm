@@ -12,5 +12,4 @@ mov $4,4
 add $5,$4
 add $5,4
 mov $1,$5
-sub $1,9
-add $1,1
+sub $1,8

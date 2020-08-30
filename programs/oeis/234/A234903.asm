@@ -14,8 +14,7 @@ lpb $3,1
   add $0,8
   mov $1,$0
   gcd $1,6
-  sub $1,1
-  add $1,2
+  add $1,1
   add $4,$1
 lpe
 mov $1,$4

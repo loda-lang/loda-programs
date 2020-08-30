@@ -13,8 +13,6 @@ lpb $3,1
   add $1,4
   add $4,$1
   add $5,$4
-  sub $1,3
-  add $1,3
   lpb $5,1
     add $4,1
     mov $3,2

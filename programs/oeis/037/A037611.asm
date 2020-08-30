@@ -14,5 +14,4 @@ lpe
 mov $2,5
 add $2,$4
 mov $1,$2
-sub $1,10
-add $1,1
+sub $1,9

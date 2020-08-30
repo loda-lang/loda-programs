@@ -6,8 +6,7 @@ mul $1,$0
 mov $3,10
 gcd $1,8
 lpb $0,1
-  sub $1,3
-  add $1,9
+  add $1,6
   mov $3,$2
   mov $0,0
   add $3,7

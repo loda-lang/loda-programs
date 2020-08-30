@@ -7,5 +7,4 @@ add $0,2
 bin $0,3
 add $0,6
 mov $1,$0
-sub $1,7
-add $1,1
+sub $1,6

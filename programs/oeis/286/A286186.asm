@@ -12,6 +12,5 @@ lpe
 add $2,$1
 mov $3,$2
 add $4,$3
-sub $4,2
-add $4,5
+add $4,3
 mov $1,$4

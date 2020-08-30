@@ -10,8 +10,6 @@ lpe
 add $0,1
 add $1,3
 add $3,$1
-sub $1,1
-add $1,1
 mov $2,$0
 add $2,2
 sub $3,3

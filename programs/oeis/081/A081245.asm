@@ -4,8 +4,6 @@
 mov $2,3
 add $0,1
 gcd $0,19
-sub $0,1
-add $0,1
 mov $3,$0
 div $2,$3
 add $2,8

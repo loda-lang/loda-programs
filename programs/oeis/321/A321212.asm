@@ -7,5 +7,4 @@ div $1,2
 mul $1,14
 add $2,3
 add $1,$2
-sub $1,3
-add $1,2
+sub $1,1

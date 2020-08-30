@@ -20,8 +20,7 @@ sub $3,$5
 mul $5,$3
 mov $1,$5
 mul $0,$1
-sub $0,2
-add $0,1
+sub $0,1
 mov $1,$0
 mov $6,$7
 mul $6,$7

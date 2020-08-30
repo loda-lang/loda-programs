@@ -9,5 +9,4 @@ mul $0,2
 div $0,$2
 add $0,7
 mov $1,$0
-sub $1,10
-add $1,2
+sub $1,8

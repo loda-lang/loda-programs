@@ -13,5 +13,4 @@ sub $3,3
 bin $3,$1
 add $3,4
 mov $1,$3
-sub $1,5
-add $1,1
+sub $1,4

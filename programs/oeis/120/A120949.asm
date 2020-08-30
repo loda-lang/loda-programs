@@ -12,7 +12,6 @@ mov $3,$0
 pow $1,$4
 add $3,$2
 mov $4,1
-sub $3,1
-add $3,2
+add $3,1
 sub $1,$4
 add $1,$3
