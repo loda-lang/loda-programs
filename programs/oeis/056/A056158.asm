@@ -1,85 +1,18 @@
 ; A056158: Equivalent of the Kurepa hypothesis for left factorial.
 ; -4,-2,-4,2,-20,86,-532,3706,-29668,266990,-2669924,29369138,-352429684,4581585862,-64142202100,962133031466,-15394128503492,261700184559326,-4710603322067908,89501463119290210
 
-mov $8,$0
-mov $0,$8
-mov $2,2
-mov $3,2
-mov $6,2
-mov $4,$8
-mov $1,1
-mov $7,2
-mul $1,2
-mul $3,3
-sub $8,3
-add $6,2
-mod $6,$1
-sub $8,1
-sub $0,$7
-mov $8,$6
-add $2,$0
-add $1,$8
-mul $1,$6
-mov $6,1
-mov $4,$0
-add $2,$4
-sub $7,1
-mov $6,5
-mov $4,$4
-add $7,1
-sub $0,1
-trn $3,6
-mov $5,23
-add $6,$2
-sub $1,1
-mov $3,1
-mov $2,$5
-mov $3,$1
-mov $5,5
+sub $0,3
 mov $2,1
-add $8,1
-sub $7,$3
-div $3,2
-div $8,2
 add $0,2
-add $7,$4
-mov $4,3
-log $7,$5
-pow $8,2
-mul $5,$8
-mul $6,2
-mov $3,2
-sub $7,$1
-mov $7,3
-sub $2,$3
-mul $7,$5
-mov $2,1
-sub $4,1
-add $1,64
+mov $4,2
 add $0,4
-sub $1,$1
-mov $5,5
-mul $3,2
-sub $2,$2
-add $6,1
-sub $7,$2
-mov $3,$4
-mov $0,$0
-sub $5,$6
-add $3,$7
-mov $7,1
 lpb $0,1
-  mul $8,$5
-  mov $1,$7
+  mov $1,$2
   mul $3,$4
-  mov $2,1
   sub $3,1
-  div $8,2
   sub $0,1
-  pow $7,$6
   sub $4,1
 lpe
-pow $1,$1
 sub $3,$1
 mov $1,$3
 sub $1,1
