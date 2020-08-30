@@ -8,5 +8,3 @@ lpb $0,1
   mul $1,3
 lpe
 div $1,6
-sub $1,1
-add $1,1

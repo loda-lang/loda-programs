@@ -9,8 +9,7 @@ lpb $0,1
   add $3,$4
   add $4,3
   add $2,$0
-  sub $3,3
-  add $3,1
+  sub $3,2
   add $2,4
   sub $3,1
   sub $0,1

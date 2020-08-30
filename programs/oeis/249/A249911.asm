@@ -34,8 +34,7 @@ lpb $17,1
         mul $1,8
         mov $3,$7
         mul $5,$4
-        sub $1,3
-        add $1,5
+        add $1,2
         pow $0,2
       lpe
       mov $7,7

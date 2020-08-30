@@ -19,5 +19,4 @@ lpb $0,1
   add $1,$3
   trn $0,1
 lpe
-sub $1,6
-add $1,3
+sub $1,3

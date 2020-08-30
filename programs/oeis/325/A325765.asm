@@ -35,5 +35,4 @@ lpb $9,1
   mov $9,0
 lpe
 mov $1,$8
-sub $1,3
-add $1,1
+sub $1,2

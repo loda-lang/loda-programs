@@ -6,5 +6,4 @@ add $2,24
 bin $2,$0
 add $2,5
 mov $1,$2
-sub $1,6
-add $1,1
+sub $1,5

@@ -7,5 +7,3 @@ mov $1,$2
 mul $1,3
 add $1,1
 pow $1,3
-sub $1,1
-add $1,1

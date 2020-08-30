@@ -13,5 +13,3 @@ lpb $0,1
   add $2,3
   mul $2,2
 lpe
-sub $1,1
-add $1,1

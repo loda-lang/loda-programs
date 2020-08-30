@@ -7,5 +7,4 @@ mul $2,20
 sub $2,3
 mov $1,$2
 div $1,7
-sub $1,22
-add $1,1
+sub $1,21

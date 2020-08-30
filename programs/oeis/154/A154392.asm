@@ -7,8 +7,6 @@ lpb $4,1
   sub $4,1
   mov $0,$6
   add $0,$4
-  sub $0,1
-  add $0,1
   mov $1,$3
   add $1,$0
   pow $1,2

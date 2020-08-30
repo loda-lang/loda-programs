@@ -13,8 +13,5 @@ mov $5,$3
 mov $1,$5
 sub $4,$4
 sub $4,$1
-div $4,2
-sub $4,1
-add $4,1
-div $4,2
+div $4,4
 mov $1,$4

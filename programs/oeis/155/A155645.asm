@@ -8,5 +8,4 @@ pow $4,$0
 pow $3,$2
 add $4,$3
 mov $1,$4
-sub $1,2
-add $1,1
+sub $1,1

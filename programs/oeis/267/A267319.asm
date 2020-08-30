@@ -16,5 +16,4 @@ lpb $0,1
   gcd $1,$2
   pow $0,5
 lpe
-sub $1,2
-add $1,1
+sub $1,1

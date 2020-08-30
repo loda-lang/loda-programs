@@ -15,8 +15,7 @@ lpb $0,1
   pow $7,6
   mov $4,$7
   div $4,9
-  sub $4,6
-  add $4,10
+  add $4,4
   mul $2,2
   gcd $5,$2
   div $4,$5

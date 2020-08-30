@@ -8,8 +8,6 @@ add $3,1
 mov $1,$3
 add $0,3
 mov $6,$1
-sub $0,2
-add $0,2
 mov $1,$0
 mov $3,$1
 add $3,5

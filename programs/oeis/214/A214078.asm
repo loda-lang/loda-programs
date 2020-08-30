@@ -11,10 +11,8 @@ lpb $0,1
   sub $2,1
 lpe
 fac $2
-sub $2,1
-add $2,8
+add $2,7
 mov $3,9
 add $2,$3
 mov $1,$2
-sub $1,17
-add $1,1
+sub $1,16

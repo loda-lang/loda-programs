@@ -30,8 +30,7 @@ lpb $13,1
     div $2,4
   lpe
   mov $1,$3
-  sub $1,4
-  add $1,1
+  sub $1,3
   add $12,$1
 lpe
 mov $1,$12

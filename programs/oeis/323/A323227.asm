@@ -6,5 +6,4 @@ pow $1,$0
 add $0,4
 div $1,4
 add $1,$0
-sub $1,4
-add $1,1
+sub $1,3

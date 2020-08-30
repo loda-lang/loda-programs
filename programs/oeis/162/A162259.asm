@@ -11,8 +11,7 @@ sub $2,1
 pow $5,2
 sub $5,2
 mov $4,$5
-sub $2,1
-add $2,11
+add $2,10
 mul $4,$2
 add $4,1
 mov $3,$4

@@ -23,5 +23,4 @@ lpb $3,1
   add $5,9
 lpe
 mov $1,$5
-sub $1,40
-add $1,2
+sub $1,38

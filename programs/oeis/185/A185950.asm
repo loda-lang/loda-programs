@@ -3,12 +3,9 @@
 
 mul $0,4
 mov $2,$0
-sub $2,1
-mul $2,$0
-mov $3,-3
-add $3,$2
-mov $0,$3
-mov $1,$0
-sub $1,9
-div $1,4
-add $1,2
+bin $2,2
+sub $2,3
+mov $0,1
+add $2,$0
+mov $1,$2
+div $1,2

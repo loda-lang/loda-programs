@@ -14,5 +14,4 @@ lpe
 mov $1,$2
 add $0,$1
 mov $1,$0
-sub $1,2
-add $1,1
+sub $1,1

@@ -10,5 +10,4 @@ lpb $0,1
   add $2,$1
 lpe
 mov $1,$2
-sub $1,15
-add $1,1
+sub $1,14

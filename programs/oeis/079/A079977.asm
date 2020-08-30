@@ -18,8 +18,6 @@ lpb $9,1
     mov $5,$4
     sub $0,2
     add $5,2
-    sub $0,1
-    add $0,1
     mov $3,$5
     mov $4,$2
     add $2,$3

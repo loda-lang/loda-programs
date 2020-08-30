@@ -30,8 +30,6 @@ lpb $8,1
       div $2,3
       add $0,$1
       sub $0,$2
-      sub $0,1
-      add $0,1
     lpe
     div $1,2
     add $4,$1

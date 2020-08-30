@@ -50,10 +50,8 @@ lpb $5,1
     mov $9,0
   lpe
   mov $1,$10
-  sub $1,5
-  add $1,1
+  sub $1,4
   add $3,$1
 lpe
 mov $1,$3
-sub $1,1
-add $1,2
+add $1,1

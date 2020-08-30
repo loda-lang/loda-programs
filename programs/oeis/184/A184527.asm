@@ -9,8 +9,7 @@ div $5,13
 add $5,8
 add $1,$5
 div $1,2
-sub $1,8
-add $1,2
+sub $1,6
 mov $3,$4
 mov $2,$3
 mul $2,6

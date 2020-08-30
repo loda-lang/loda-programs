@@ -15,8 +15,6 @@ add $8,$3
 mov $4,$8
 add $4,2
 add $2,$4
-sub $2,2
-add $2,2
 mov $1,$2
 sub $1,9
 mov $10,$9

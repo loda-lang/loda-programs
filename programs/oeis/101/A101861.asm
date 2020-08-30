@@ -43,8 +43,7 @@ lpb $17,1
         lpe
         add $1,1
       lpe
-      sub $1,2
-      add $1,12
+      add $1,10
       add $10,$1
     lpe
     mov $1,$10

@@ -22,8 +22,7 @@ mov $3,1
 div $7,2
 add $4,1
 add $4,$7
-sub $5,9
-add $5,15
+add $5,6
 mov $2,1
 mul $3,$4
 add $2,$3

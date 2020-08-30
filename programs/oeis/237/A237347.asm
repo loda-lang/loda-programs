@@ -18,8 +18,6 @@ lpb $7,1
   mul $0,$6
   trn $0,5
   bin $5,2
-  sub $5,1
-  add $5,1
   mul $5,2
   lpb $0,1
     add $5,2

@@ -14,8 +14,6 @@ lpb $0,1
   div $3,$1
   gcd $3,$2
   add $3,$0
-  sub $0,1
-  add $0,1
 lpe
 add $3,$1
 sub $3,1

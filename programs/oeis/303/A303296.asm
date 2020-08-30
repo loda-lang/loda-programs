@@ -10,5 +10,4 @@ mov $0,9
 mod $2,$0
 add $2,6
 mov $1,$2
-sub $1,6
-add $1,1
+sub $1,5

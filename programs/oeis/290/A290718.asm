@@ -6,5 +6,4 @@ mov $2,$0
 pow $1,$2
 add $1,2
 pow $1,2
-sub $1,9
-add $1,3
+sub $1,6

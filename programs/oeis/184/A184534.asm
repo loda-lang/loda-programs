@@ -18,7 +18,6 @@ trn $1,$4
 add $1,$4
 mov $2,3
 add $3,$2
-sub $1,2
-add $1,1
+sub $1,1
 add $1,$3
 sub $1,10

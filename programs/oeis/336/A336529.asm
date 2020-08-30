@@ -22,8 +22,7 @@ lpb $14,1
     lpb $0,1
       mov $6,$0
       sub $4,1
-      sub $0,2
-      add $0,1
+      sub $0,1
       add $6,$4
       mov $8,$6
       trn $0,1

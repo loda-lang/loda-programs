@@ -9,5 +9,4 @@ add $3,$2
 mod $3,8
 mov $1,4
 add $1,$3
-sub $1,6
-add $1,1
+sub $1,5

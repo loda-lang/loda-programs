@@ -42,8 +42,7 @@ lpb $16,1
       add $6,$0
       mov $4,1
       add $2,$1
-      sub $2,2
-      add $2,1
+      sub $2,1
       add $2,$6
       mov $1,$2
       sub $1,12

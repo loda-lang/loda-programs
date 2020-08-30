@@ -9,5 +9,4 @@ mul $2,16
 log $2,2
 add $2,7
 mov $1,$2
-sub $1,11
-add $1,1
+sub $1,10

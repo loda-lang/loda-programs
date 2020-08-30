@@ -11,8 +11,7 @@ mul $4,5
 add $4,4
 mov $1,$4
 mul $1,$4
-sub $1,5
-add $1,20
+add $1,15
 mov $6,$3
 mov $7,$6
 mul $7,6

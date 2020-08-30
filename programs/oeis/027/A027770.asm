@@ -15,5 +15,4 @@ lpb $2,1
   clr $0,4
 lpe
 mov $1,$5
-sub $1,16
-add $1,10
+sub $1,6

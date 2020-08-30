@@ -60,5 +60,4 @@ lpb $6,1
   add $7,$1
 lpe
 mov $1,$7
-sub $1,5
-add $1,2
+sub $1,3

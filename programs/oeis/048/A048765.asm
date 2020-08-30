@@ -10,5 +10,4 @@ mov $3,$2
 fac $3
 add $3,3
 mov $1,$3
-sub $1,4
-add $1,1
+sub $1,3
