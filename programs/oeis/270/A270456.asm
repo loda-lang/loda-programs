@@ -1,0 +1,68 @@
+; A270456: First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 163", based on the 5-celled von Neumann neighborhood.
+; 4,4,24,-8,60,-36,112,-80,180,-140,264,-216,364,-308,480,-416,612,-540,760,-680,924,-836,1104,-1008,1300,-1196,1512,-1400,1740,-1620,1984,-1856,2244,-2108,2520,-2376,2812,-2660,3120,-2960,3444,-3276,3784,-3608,4140
+
+mov $4,1
+sub $4,3
+mov $6,$4
+lpb $0,1
+  mov $1,2
+  mov $3,10
+  mov $2,$4
+  mov $1,$0
+  mov $0,$4
+  mul $4,$4
+  mov $6,$3
+  mov $4,1
+  sub $6,1
+  mul $0,2
+  bin $2,$1
+  mov $4,$2
+  gcd $0,4
+  mov $0,$0
+  mov $5,$2
+  mov $6,2
+  mov $3,$1
+  mov $3,$3
+  mov $0,1
+  mov $5,$1
+  add $4,2
+  mov $2,1
+  add $5,$2
+  add $1,90
+  sub $0,1
+  sub $5,1
+  add $1,1
+  mov $6,1
+  mov $2,1
+  mov $0,$6
+  mov $1,$5
+  add $1,$4
+  mul $3,$4
+  mul $1,2
+lpe
+div $4,2
+mov $6,$3
+add $6,1
+sub $4,1
+mov $4,2
+add $3,1
+add $5,2
+mov $2,$2
+mov $5,$4
+mov $2,8
+mul $2,2
+sub $6,$6
+add $0,8
+add $1,3
+mov $1,$6
+add $1,1
+mov $4,1
+mul $3,754
+add $3,$2
+sub $2,$3
+mov $5,1
+mov $1,$3
+sub $1,770
+div $1,1508
+mul $1,4
+add $1,4

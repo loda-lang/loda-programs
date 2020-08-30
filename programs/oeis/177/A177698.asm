@@ -1,0 +1,85 @@
+; A177698: Expansion of e.g.f.: sin(arctan(x)).
+; 0,1,0,-3,0,45,0,-1575,0,99225,0,-9823275,0,1404728325,0,-273922023375,0,69850115960625,0,-22561587455281875,0
+
+mov $6,2
+mov $3,2
+add $3,1
+mov $6,$3
+mov $7,$0
+mov $3,2
+mov $4,$7
+mov $1,3
+mov $1,2
+mov $2,$0
+add $1,6
+add $3,3
+mov $7,3
+mov $6,5
+lpb $2,1
+  mul $1,$4
+  mov $7,$6
+  mov $5,6
+  mov $0,1
+  sub $4,2
+  mov $6,1
+  mov $0,$7
+  lpb $4,1
+    sub $0,$0
+    mul $4,5
+    add $0,$7
+    mov $7,1
+    div $2,2
+    mov $5,1
+    sub $3,$6
+    add $2,1
+    mov $0,1
+    add $5,$7
+    mov $7,$5
+    sub $0,$0
+    sub $4,$7
+    add $3,1
+    add $0,67
+    div $6,2
+    mov $5,7
+    trn $1,1
+  lpe
+  div $0,2
+  mul $3,$5
+  mov $0,$1
+  lpb $5,1
+    add $2,1
+    add $5,$1
+    trn $0,2
+    sub $5,$7
+    add $2,1
+  lpe
+  lpb $6,1
+    sub $6,$7
+    add $1,$7
+    mov $0,$3
+    add $7,$2
+    mov $8,$4
+    mov $7,$8
+    sub $6,1
+    add $3,$6
+    sub $4,$2
+    sub $1,$4
+    add $0,1
+    mov $4,324
+    sub $5,5
+    mov $6,1
+    add $7,6
+    sub $6,$6
+    add $6,$5
+    sub $3,2
+    sub $5,40
+    add $3,1
+    add $7,$8
+  lpe
+  sub $2,1
+  mul $6,$8
+  mul $8,5
+  add $5,5
+lpe
+mov $1,$0
+div $1,8
