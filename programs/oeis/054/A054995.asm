@@ -1,0 +1,86 @@
+; A054995: A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer two places clockwise from i. Repeat, counting two places from the next undeleted integer, until only one integer remains.
+; 1,2,2,1,4,1,4,7,1,4,7,10,13,2,5,8,11,14,17,20,2,5,8,11,14,17,20,23,26,29,1,4,7,10,13,16,19,22,25,28,31,34,37,40,43,46,2,5,8,11,14,17,20,23,26,29,32,35,38,41,44,47,50,53,56,59,62,65,68,1,4,7,10,13,16,19,22,25
+
+mov $3,2
+mov $5,$3
+trn $3,6
+add $3,$5
+mov $4,2
+mov $1,$5
+mov $2,$3
+mov $7,5
+mov $5,2
+sub $4,$4
+mov $6,$4
+mov $5,3
+mov $8,$3
+div $2,2
+mov $6,$8
+add $3,$4
+sub $4,$7
+mov $6,$2
+lpb $0,1
+  sub $0,1
+  add $8,$8
+  add $2,$8
+  mul $4,$2
+  add $2,1
+  mov $4,$3
+  mov $1,$1
+  div $1,$1
+  add $5,3
+  mov $1,9
+  sub $5,1
+  add $3,$1
+  mod $3,$2
+  mov $5,$8
+  div $6,$8
+  sub $4,2
+  add $4,1
+  sub $8,$7
+  sub $6,$6
+  gcd $8,$3
+  div $6,2
+  sub $4,7
+lpe
+mov $2,$4
+mul $4,2
+mov $6,$7
+sub $0,1
+add $7,$5
+sub $4,3
+trn $4,2
+trn $8,2
+mov $7,$7
+sub $3,$0
+mov $2,2
+add $0,$8
+sub $5,6
+mov $0,1
+add $6,1
+sub $5,$7
+add $5,$8
+sub $6,2
+mov $7,2
+mov $5,3
+mul $1,$0
+mov $1,3
+add $7,$4
+add $8,1
+sub $3,1
+mov $8,9
+sub $5,$2
+div $1,6
+div $1,2
+sub $6,$2
+sub $0,$6
+log $6,$7
+mov $1,$7
+sub $8,$4
+sub $4,1
+add $0,$4
+cmp $6,$7
+mov $1,$3
+sub $1,2
+div $1,3
+add $1,1
