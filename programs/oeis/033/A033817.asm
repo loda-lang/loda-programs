@@ -1,0 +1,108 @@
+; A033817: Convolution of natural numbers n >= 1 with Lucas numbers L(k) for k >= -4.
+; 7,10,16,21,28,36,47,62,84,117,168,248,375,578,904,1429,2276,3644,5855,9430,15212,24565,39696,64176,103783,167866,271552,439317,710764,1149972,1860623,3010478,4870980,7881333,12752184,20633384,33385431,54018674,87403960,141422485
+
+mov $13,$0
+mov $15,$0
+add $15,1
+lpb $15,1
+  clr $0,13
+  sub $15,1
+  mov $0,$13
+  sub $0,$15
+  mov $9,$0
+  mov $11,2
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    add $0,$11
+    sub $0,1
+    mov $5,1
+    mov $2,1
+    add $5,3
+    mov $8,$2
+    mov $3,$5
+    mov $1,6
+    mov $4,$3
+    trn $4,$5
+    sub $4,1
+    mov $5,$5
+    sub $8,$4
+    mov $6,$5
+    mov $6,$2
+    mul $0,$2
+    mov $1,$2
+    mul $5,2
+    mov $7,2
+    sub $6,1
+    mov $2,$6
+    mov $3,1
+    div $1,$3
+    mov $8,$8
+    sub $5,$6
+    sub $5,$3
+    mul $8,$2
+    sub $3,2
+    add $7,1
+    add $6,$4
+    sub $2,$7
+    div $5,4
+    sub $4,1
+    mov $5,$8
+    add $8,1
+    add $5,4
+    mov $7,$4
+    mul $3,$2
+    add $5,4
+    sub $5,5
+    mov $8,$7
+    lpb $0,1
+      sub $5,1
+      div $3,2
+      div $2,$6
+      add $5,$2
+      add $1,4
+      sub $0,1
+      sub $2,$5
+      mov $8,1
+      add $1,$8
+    lpe
+    add $6,$7
+    sub $6,1
+    mov $7,$1
+    mov $5,$8
+    mul $0,$8
+    mul $1,2
+    add $1,2
+    add $0,2
+    mov $3,$3
+    add $1,2
+    add $6,$2
+    mul $8,2
+    mov $1,$6
+    add $5,$2
+    mov $2,$7
+    mov $2,$8
+    add $2,1
+    mov $6,$7
+    sub $6,$1
+    mov $4,36
+    mov $2,1
+    mov $1,$6
+    add $6,1
+    mov $12,$11
+    lpb $12,1
+      mov $10,$1
+      sub $12,1
+    lpe
+  lpe
+  lpb $9,1
+    sub $10,$1
+    mov $9,0
+  lpe
+  mov $1,$10
+  sub $1,4
+  add $1,3
+  add $14,$1
+lpe
+mov $1,$14

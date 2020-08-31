@@ -13,48 +13,22 @@ lpb $10,1
   mov $7,$0
   add $7,1
   lpb $7,1
-    clr $0,5
     sub $7,1
     mov $0,$5
     sub $0,$7
     mov $4,2
-    mov $1,$4
     mov $2,$4
     lpb $0,1
-      mov $3,2
       sub $0,1
       sub $2,1
-      mov $1,2
       mov $1,$2
       mov $2,$4
       add $4,2
-      add $2,2
-      sub $2,1
+      add $2,1
       add $4,$1
-      add $3,2
-      add $3,$0
     lpe
-    bin $1,$2
-    log $2,281474976710656
-    mov $0,$0
-    mul $2,2
-    add $0,2
-    mul $2,$1
-    mov $3,$3
-    add $3,$4
-    add $2,$0
     sub $4,1
     mov $2,$4
-    mov $3,$2
-    add $3,$1
-    mov $3,$4
-    mul $0,3
-    add $4,6
-    mov $0,2
-    mov $4,$2
-    trn $4,$1
-    sub $3,4
-    sub $3,1
     mov $1,$2
     add $6,$1
   lpe
