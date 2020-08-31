@@ -1,105 +1,25 @@
 ; A037506: Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,0.
 ; 1,7,35,176,882,4410,22051,110257,551285,2756426,13782132,68910660,344553301,1722766507,8613832535,43069162676,215345813382,1076729066910,5383645334551,26918226672757,134591133363785,672955666818926
 
-mov $6,2
-mov $9,2
 mov $3,2
-mov $8,$6
-add $0,$3
-mov $1,1
-mov $6,$3
-mov $1,3
-mov $10,$0
-mov $8,1
-mul $6,$9
-mov $7,16
+add $0,2
 mov $6,1
 lpb $0,1
-  add $7,1
   sub $0,1
-  mov $9,3
-  mov $2,2
-  mul $8,5
-  div $7,$1
-  gcd $7,$0
-  mov $4,$0
-  sub $7,$7
-  sub $2,$2
-  mov $7,5
-  add $9,2
-  add $8,3
-  cmp $10,1
+  mov $5,3
+  mul $6,5
+  add $5,2
+  add $6,3
 lpe
-add $4,$7
-mul $10,4
-sub $10,1
-trn $9,$3
-mov $1,34
-add $8,6
-mov $4,17
-mov $5,$0
-add $5,12
-sub $8,$0
-mov $5,$7
-add $4,8
-mov $5,1
 sub $5,$3
-mov $2,$9
-mov $6,$0
-sub $4,$6
-sub $10,$10
-add $8,2
-mov $7,$9
-add $7,$7
-mov $3,$8
-add $8,$8
+mov $4,17
+add $4,8
+mov $7,$5
+mul $7,2
+mov $3,$6
 mov $1,$3
-sub $8,1
-mov $8,7
-add $7,$0
-trn $5,4
-sub $3,$8
-mov $6,2
-mul $3,$9
 add $7,$4
-mov $4,$0
-mul $2,$3
-add $9,64
-mov $0,1
-add $8,$1
-mov $6,2
-mul $5,3
-mov $0,$7
 div $1,$7
-mov $3,$10
-div $5,$6
-mov $2,3
-mov $8,$1
-mov $3,$8
-mov $4,$5
-mul $2,2
-mov $9,$6
-sub $7,$1
-sub $0,$2
-add $0,$1
-add $3,2
-add $9,2
-sub $5,1
-add $6,$6
-add $3,3
-mov $8,2
-mov $10,2
-div $8,8
-mov $9,1
-mul $0,2
-mov $2,1
-add $1,$10
-add $5,$9
-add $4,1
-add $0,5
-mov $0,2
-mov $2,$8
-add $8,1
-mov $2,$8
-sub $1,3
-add $1,1
+mov $2,2
+add $1,$2
+sub $1,2

@@ -1,0 +1,96 @@
+; A276889: Sums-complement of the Beatty sequence for sqrt(2) + sqrt(3).
+; 1,2,5,8,11,14,17,20,21,24,27,30,33,36,39,42,43,46,49,52,55,58,61,64,65,68,71,74,77,80,83,86,87,90,93,96,99,102,105,108,109,112,115,118,121,124,127,130,131,134,137,140,143,146,149,150,153,156,159,162
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $7,$0
+  mov $9,2
+  lpb $9,1
+    clr $0,7
+    sub $9,1
+    mov $0,$7
+    add $0,$9
+    sub $0,1
+    mov $1,$0
+    mov $6,1
+    mov $2,$6
+    mov $5,1
+    mov $4,$0
+    lpb $0,1
+      add $4,2
+      sub $0,1
+      mul $6,$1
+      mov $3,2
+      mov $5,$3
+      mov $0,$6
+      mov $6,1
+      add $4,1
+      sub $3,$5
+      mov $3,$2
+      add $6,$5
+      add $2,$5
+      add $6,1
+      add $5,$2
+      mov $6,$3
+    lpe
+    mul $0,41
+    add $5,1
+    mov $5,6
+    sub $2,1
+    mov $3,$0
+    add $0,$1
+    mov $1,$0
+    add $0,2
+    trn $4,$3
+    add $2,2
+    mov $6,$5
+    add $4,$4
+    add $6,5
+    sub $6,1
+    mov $6,$0
+    add $1,$0
+    mov $1,$0
+    add $1,$2
+    mul $4,8
+    add $2,$1
+    sub $5,$2
+    mov $6,$4
+    mov $5,$3
+    trn $6,$5
+    add $0,1
+    mov $2,$4
+    sub $0,$2
+    sub $1,2
+    mov $6,$3
+    trn $2,2
+    add $5,$3
+    mov $5,5
+    sub $3,1
+    mov $0,$6
+    div $0,47
+    mul $5,2
+    sub $4,1
+    pow $1,2
+    mov $1,$0
+    mov $10,$9
+    lpb $10,1
+      mov $8,$1
+      sub $10,1
+    lpe
+  lpe
+  lpb $7,1
+    sub $8,$1
+    mov $7,0
+  lpe
+  mov $1,$8
+  mul $1,2
+  add $1,1
+  add $12,$1
+lpe
+mov $1,$12
