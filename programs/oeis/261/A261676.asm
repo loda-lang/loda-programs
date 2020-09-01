@@ -4,8 +4,6 @@
 mov $1,$0
 div $0,8
 mul $0,2
-add $1,1
 add $1,$0
-sub $1,1
 mul $1,11
 add $1,1022

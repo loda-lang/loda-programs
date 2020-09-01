@@ -688,7 +688,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321124](http://oeis.org/A321124) ([L09 program](321/A321124.asm)): a(n) =  (4*n^3 - 6*n^2 + 14*n + 3)/3.
 * [A321180](http://oeis.org/A321180) ([L05 program](321/A321180.asm)): a(n) = 17*n^2 - 1.
 * [A321195](http://oeis.org/A321195) ([L11 program](321/A321195.asm)): Minimum number of monochromatic Schur triples over all 2-colorings of [n].
-* [A321212](http://oeis.org/A321212) ([L07 program](321/A321212.asm)): Numbers that are congruent to {2, 3} mod 16.
+* [A321212](http://oeis.org/A321212) ([L05 program](321/A321212.asm)): Numbers that are congruent to {2, 3} mod 16.
 * [A321220](http://oeis.org/A321220) ([L09 program](321/A321220.asm)): a(n) = n+2 if n is even, otherwise a(n) = 2*n+1 if n is odd.
 * [A321237](http://oeis.org/A321237) ([L05 program](321/A321237.asm)): Start with a square of dimension 1 X 1, and repeatedly append along the squares of the previous step squares with half their side length that do not overlap with any prior square; a(n) gives the number of squares appended at n-th step.
 * [A321257](http://oeis.org/A321257) ([L08 program](321/A321257.asm)): Start with an equilateral triangle, and repeatedly append along the triangles of the previous step equilateral triangles with half their side length that do not overlap with any prior triangle; a(n) gives the number of triangles appended at n-th step.
@@ -1007,7 +1007,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336535](http://oeis.org/A336535) ([L12 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
 * [A336627](http://oeis.org/A336627) ([L42 program](336/A336627.asm)): Coordination sequence for the Manhattan lattice.
 * [A336705](http://oeis.org/A336705) ([L42 program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
-* [A336819](http://oeis.org/A336819) ([L22 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
+* [A336819](http://oeis.org/A336819) ([L15 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
 * [A336867](http://oeis.org/A336867) ([L08 program](336/A336867.asm)): Numbers n such that n! does not have distinct prime multiplicities.
 * [A336868](http://oeis.org/A336868) ([L17 program](336/A336868.asm)): Indicator function for numbers n such that n! has distinct prime multiplicities.
 * [A337134](http://oeis.org/A337134) ([L50 program](337/A337134.asm)): a(n) = Sum_{k=1..n} floor(sqrt(2k-1)).

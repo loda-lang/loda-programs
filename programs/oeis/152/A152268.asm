@@ -1,0 +1,95 @@
+; A152268: A hidden Markov recursion involving the matrices: M0 = {{0, 1}, {1, 1/2}}; M = {{0, 2}, {2, 1}}; as Mh=M0.M.(M0+I); v[(n)=Mh.v(n-1): first element of v.
+; 0,1,7,41,231,1289,7175,39913,221991,1234633,6866503,38188457,212387175,1181202569,6569320583,36535623529,203194800039,1130078612041,6284991883975,34954314291497,194400264968679,1081167340448777
+
+mov $10,$0
+mov $12,$0
+add $12,1
+lpb $12,1
+  clr $0,10
+  sub $12,1
+  mov $0,$10
+  sub $0,$12
+  mov $7,$0
+  mov $9,$0
+  add $9,1
+  lpb $9,1
+    clr $0,7
+    sub $9,1
+    mov $0,$7
+    sub $0,$9
+    mov $1,$0
+    mov $5,2
+    mov $0,$1
+    trn $1,1
+    add $1,$1
+    mov $2,2
+    mov $1,$0
+    mov $4,$1
+    mov $6,2
+    mov $3,2
+    mov $6,64
+    add $3,1
+    sub $2,12
+    mov $0,11
+    add $2,1
+    mov $0,1
+    mul $6,$2
+    add $4,6
+    mov $0,2
+    mov $6,$4
+    mov $2,16
+    mov $0,$3
+    mov $0,$1
+    mov $5,$3
+    mov $1,1
+    sub $2,1
+    mov $1,$2
+    mov $4,2
+    mov $4,2
+    sub $1,1
+    sub $2,1
+    add $2,$5
+    mov $3,1
+    sub $1,5
+    mov $2,$2
+    div $1,2
+    mov $2,0
+    mov $3,6
+    add $0,$2
+    lpb $0,1
+      sub $0,1
+      mul $3,2
+      mov $3,$5
+      add $3,2
+      mov $3,4
+      sub $5,$2
+      add $5,$5
+      sub $2,1
+      add $2,1
+      add $2,$5
+      sub $1,$1
+      mul $5,$3
+      mov $6,4
+      mov $3,$3
+      add $3,$3
+    lpe
+    mov $0,1
+    add $3,$5
+    pow $5,$1
+    mov $1,$3
+    sub $1,8
+    div $1,4
+    add $1,1
+    mov $1,$2
+    add $8,$1
+  lpe
+  mov $1,$8
+  add $11,$1
+lpe
+mov $1,$11
+mov $1,$3
+sub $1,24
+div $1,8
+add $1,2
+mov $1,$2
+div $1,6
