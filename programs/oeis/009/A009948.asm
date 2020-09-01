@@ -1,0 +1,109 @@
+; A009948: Coordination sequence for alpha-Nd, Position Nd1.
+; 1,12,42,96,170,264,378,516,674,852,1050,1272,1514,1776,2058,2364,2690,3036,3402,3792,4202,4632,5082,5556,6050,6564,7098,7656,8234,8832,9450,10092,10754,11436,12138,12864,13610,14376,15162,15972,16802
+
+mov $11,$0
+mov $3,3
+mov $1,2
+mov $2,2
+mov $2,2
+mov $5,$3
+mov $9,$1
+mov $6,2
+mov $7,$5
+mov $4,$2
+add $3,$5
+mov $8,$6
+add $8,1
+add $7,2
+div $8,2
+pow $0,2
+mov $7,$4
+mov $10,$8
+add $3,1
+mov $7,1
+lpb $0,1
+  add $9,$6
+  sub $0,1
+  mov $2,$6
+  mul $3,2
+  div $3,7
+  mov $2,$7
+  div $1,2
+  mov $6,$2
+  mov $2,$0
+  mov $5,1
+  trn $7,$9
+  sub $9,$8
+  mov $10,5
+  mov $8,1
+  add $0,$6
+  sub $8,$1
+  sub $3,3
+  sub $1,$8
+  add $1,2
+  mov $6,$1
+  mov $9,$8
+  add $9,$5
+  mov $7,$10
+  add $5,$8
+  add $3,1
+  add $7,1
+  add $5,$0
+  add $8,$4
+  div $0,8
+  add $10,$2
+  add $2,$8
+  add $10,8
+  div $6,9
+  mul $3,2
+  add $1,$7
+  mov $3,$6
+  mov $1,$1
+  add $2,$1
+  mov $1,$3
+  mul $6,$5
+  mul $0,4
+  mov $4,$9
+  mov $2,$2
+  add $3,$4
+  add $0,$3
+  add $1,$3
+  add $2,$2
+  sub $5,$9
+  add $2,1
+  mul $7,$0
+  sub $10,$3
+  sub $10,4
+  trn $9,8
+  mov $2,$9
+  sub $10,$8
+  add $1,1
+  mul $8,2
+  mov $9,2
+  mov $9,$9
+  mul $1,4
+  mov $6,$6
+lpe
+add $1,$1
+mov $4,2
+sub $2,2
+sub $6,$10
+mul $9,7
+mov $1,$5
+mov $6,2
+mov $10,23
+add $4,1
+mov $8,1
+add $1,5
+sub $1,$10
+mov $4,1
+pow $4,2
+add $0,1
+sub $6,2
+mov $1,$0
+mov $12,$11
+mul $12,$11
+mov $13,$12
+mul $13,10
+add $1,$13
+mul $12,$11
