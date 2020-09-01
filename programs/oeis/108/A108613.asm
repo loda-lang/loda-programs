@@ -1,106 +1,28 @@
 ; A108613: Excess of Beatty-2 function of 1/sin(1) over n^2.
 ; 0,0,0,0,0,6,7,8,9,10,22,24,26,28,30,48,51,54,57,60,63,88,92,96,100,104,135,140,145,150,155,192,198,204,210,216,222,266,273,280,287,294,344,352,360,368,376,432,441,450,459,468,477,540,550,560,570,580,649,660
 
-mov $2,1
-mov $3,1
-mov $6,$0
-add $2,2
-mov $6,$2
+mov $6,3
 mul $6,$0
-mov $9,$6
+mov $3,$6
 mov $1,3
-sub $6,$2
-add $6,$0
-mov $7,$3
-mov $5,$1
-mov $6,1
-mul $0,$3
-div $6,2
-mov $8,$0
-mov $3,$2
-sub $8,$9
-mov $2,$5
-mov $10,6
-div $0,2
 mov $0,2
-div $10,$10
-add $1,$9
-mov $10,2
-mov $4,2
-add $3,1
-mul $7,$7
-mov $7,3
-add $5,2
-mul $3,4
-sub $10,4
-add $8,$10
-add $10,3
-log $10,$8
+add $1,$3
+mov $5,5
 mov $2,$1
-mov $8,10
-div $2,$3
-add $10,1
+div $2,16
 mul $5,$0
 trn $4,$5
-sub $0,$3
-add $9,1
-sub $3,1
 mul $2,$1
-mul $1,$1
-mov $1,$2
-mul $3,$4
-add $3,$5
-mov $8,2
-add $1,1
-sub $0,$7
-add $9,$8
-sub $8,1
-mov $10,$2
-sub $8,$5
-div $9,$3
-mov $1,$1
-sub $3,$2
-add $7,$8
-sub $3,$2
-mov $0,$8
-mov $1,1
-div $10,2
-mov $3,1
-mov $6,1
-mov $3,1
-mov $3,1
-mov $7,1
-trn $4,$0
+sub $7,$5
+mov $0,$7
+sub $4,$0
 add $4,$2
-add $7,1
-add $2,$0
-mov $2,3
 mov $0,1
 lpb $0,1
-  add $3,$3
-  add $7,$8
-  sub $2,$0
-  mov $3,$6
   sub $0,1
-  add $8,$8
-  mov $10,1
   sub $4,7
-  mov $1,2
-  sub $8,$2
-  sub $5,2
-  add $3,$1
-  mov $5,$7
-  mov $5,$0
-  bin $6,3
   mul $4,2
 lpe
-add $2,1
-add $6,$8
-mov $9,1
-mov $7,$8
-mov $10,$4
-div $0,$3
-div $3,3
 mov $1,$4
 sub $1,4
 div $1,6

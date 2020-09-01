@@ -1,0 +1,92 @@
+; A090848: Positions of the terms of A090847^4 in A090847, where A090847 is equal to the union of the self-convolutions A090847^2 and A090847^4 when ordered by size.
+; 1,3,6,8,11,13,16,19,21,24,26,29,32,34,37,40,42,45,47,50,53,55,58,60,63,66,68,71,73,76,79,81,84,86,89,92,94,97,99,102,105,107,110,112,115,118,120,123,126,128,131,133,136,139,141,144,146,149,152,154,157,159,162
+
+mov $9,$0
+mov $5,$0
+mov $1,1
+mov $5,$0
+mov $0,5
+mov $4,$5
+mov $2,8
+mov $8,$1
+mov $2,$2
+sub $1,3
+add $1,$4
+add $1,$5
+mov $2,$8
+add $4,1
+mov $7,$0
+div $8,$4
+add $1,$0
+pow $7,$2
+add $8,2
+mov $6,2
+mov $3,$2
+mul $8,2
+mul $5,13
+sub $1,3
+sub $3,1
+add $7,$7
+add $7,22
+sub $5,1
+trn $6,1
+add $0,1
+add $5,$5
+add $1,$3
+sub $3,$2
+div $1,$4
+add $0,$8
+mov $8,$3
+add $4,$5
+div $7,2
+mov $1,$0
+add $2,1
+mov $8,3
+mov $8,$5
+mov $8,1
+lpb $0,1
+  sub $4,$7
+  fac $3
+  mov $3,1
+  sub $8,2
+  add $0,3
+  add $3,$2
+  mov $5,$5
+  mov $5,$0
+  add $1,$0
+  add $3,$8
+  mov $1,1
+  mul $7,$1
+  sub $0,1
+  mov $2,5
+  mov $2,$7
+  sub $4,$5
+  mul $5,2
+  mov $8,5
+  trn $1,$2
+  mov $6,$1
+  mov $2,$4
+  trn $7,$7
+  mul $2,$8
+lpe
+add $7,6
+sub $0,8
+add $7,1
+mov $8,$4
+add $8,$1
+mov $6,$1
+add $7,$6
+add $4,$5
+div $4,$7
+mul $1,3
+mov $8,1
+mov $8,$4
+mov $6,1
+mov $1,$4
+add $1,1
+mov $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9
+mul $10,$9
