@@ -1,46 +1,68 @@
 ; A026038: a(n) = (d(n)-r(n))/2, where d = A026037 and r is the periodic sequence with fundamental period (1,0,0,1).
 ; 5,11,20,33,52,78,111,152,203,265,338,423,522,636,765,910,1073,1255,1456,1677,1920,2186,2475,2788,3127,3493,3886,4307,4758,5240,5753,6298,6877,7491,8140,8825,9548,10310,11111,11952,12835,13761,14730,15743,16802,17908,19061,20262,21513,22815,24168
 
-mov $2,1
-mov $3,2
-mov $1,$0
-mov $4,$2
-trn $3,$2
-add $2,$1
-trn $1,$3
-mul $4,2
-mov $1,1
-trn $4,$4
-mov $2,$0
-mov $1,$2
-add $2,$0
-mov $3,2
-add $0,$3
-mov $2,1
-mov $2,1
-lpb $0,1
-  sub $4,1
-  add $2,$0
-  add $1,$2
-  mov $2,$2
-  sub $0,1
-  mov $3,5
-  add $3,$0
+mov $8,$0
+mov $10,$0
+add $10,1
+lpb $10,1
+  clr $0,8
+  sub $10,1
+  mov $0,$8
+  sub $0,$10
+  mov $5,$0
+  mov $7,$0
+  add $7,1
+  lpb $7,1
+    clr $0,5
+    sub $7,1
+    mov $0,$5
+    sub $0,$7
+    mov $4,2
+    add $4,1
+    mov $2,$0
+    mov $4,1
+    mov $4,$2
+    add $2,3
+    mov $1,1
+    trn $1,$0
+    lpb $0,1
+      mov $3,2
+      trn $4,1
+      pow $2,2
+      sub $0,1
+      mov $1,$1
+      mov $2,1
+      mov $3,2
+      mov $0,$3
+      bin $1,3
+      mov $1,$4
+      mod $0,2
+      add $2,$0
+      add $3,$1
+      add $4,$2
+      div $4,2
+      div $0,2
+      sub $4,1
+      mov $2,$1
+      sub $3,$2
+      mov $1,$0
+      pow $1,$3
+    lpe
+    mov $1,$3
+    add $3,2
+    add $3,4
+    mod $4,2
+    add $0,$1
+    add $0,$0
+    mov $0,$4
+    add $4,12
+    add $2,$4
+    mov $1,$2
+    sub $1,11
+    add $1,1
+    add $6,$1
+  lpe
+  mov $1,$6
+  add $9,$1
 lpe
-mov $0,$2
-add $0,1
-mov $3,1
-mul $0,2
-mov $2,2
-mov $0,$4
-div $0,2
-add $3,$4
-mul $2,12
-div $1,2
-mov $2,$1
-mul $4,$2
-pow $1,$4
-mul $0,2
-mov $1,$2
-sub $1,3
-add $1,5
+mov $1,$9
