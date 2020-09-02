@@ -1,86 +1,17 @@
 ; A030441: Values of Newton-Gregory forward interpolating polynomial (1/3)*(2*n - 3)*(2*n^2 - 3*n + 4).
 ; -4,-1,2,13,40,91,174,297,468,695,986,1349,1792,2323,2950,3681,4524,5487,6578,7805,9176,10699,12382,14233,16260,18471,20874,23477,26288,29315,32566,36049,39772,43743,47970,52461,57224,62267,67598,73225,79156,85399
 
-mov $7,$0
-mov $3,$0
-mul $3,$0
-mov $2,$7
-mov $1,$0
-mov $8,$3
-mov $0,1
-sub $3,6
-mov $6,2
-add $7,$8
-clr $5,1
-mov $5,1
-add $2,1
-sub $7,$6
-mov $4,$2
-mul $5,62
-add $7,3
-mov $5,$0
-clr $8,$6
-sub $2,3
-add $0,1
-add $2,$2
-add $0,2
-sub $3,1
-mov $1,$8
-mov $5,$8
+mov $4,$0
+mov $2,$4
+sub $2,2
+mul $2,2
 add $2,1
 mov $5,2
-mov $2,$2
 add $5,$2
-trn $8,$2
-sub $6,$6
-trn $7,$3
-mov $7,2
-add $6,$3
-add $2,$1
-mul $0,$3
 bin $5,3
-trn $6,$1
-mov $8,1
-mov $7,$2
-mov $7,$7
-div $4,$3
-lpb $0,1
-  add $8,$0
-  sub $3,$0
-  mov $6,$1
-  mov $3,2
-  mov $6,1
-  sub $0,1
-  mov $6,16
-  mov $7,$4
-lpe
-trn $3,$2
-add $0,$6
-mov $1,1
-trn $4,4
-mov $1,$7
-add $6,5
 mov $3,$2
-mov $4,$5
-sub $2,4
 add $3,$5
-sub $6,$4
-mul $3,2
-sub $4,$4
-add $5,$1
-mov $2,1
-sub $8,$3
-div $6,5
-mov $7,2
-mov $0,1
-mov $6,$6
-mov $2,4
-mov $3,$3
-add $1,1
-mov $5,12
-sub $0,1
-add $0,$5
-mul $3,4
+mul $3,8
 mov $1,$3
 sub $1,16
 div $1,8

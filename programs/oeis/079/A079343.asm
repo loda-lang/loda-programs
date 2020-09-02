@@ -27,7 +27,6 @@ add $8,$3
 mov $3,$6
 add $3,$8
 add $2,4
-sub $4,1
 add $2,$3
 add $3,$2
 log $3,$0
