@@ -1,101 +1,12 @@
 ; A037224: Number of permutations p of {1,2,3...,n} that are fixed points under the operation of first reversing p, then taking the inverse.
 ; 1,0,0,2,2,0,0,12,12,0,0,120,120,0,0,1680,1680,0,0,30240,30240,0,0,665280,665280,0,0,17297280,17297280,0,0,518918400,518918400,0,0,17643225600,17643225600,0,0,670442572800,670442572800,0,0,28158588057600
 
-mov $5,1
-mov $2,4
-mov $9,$2
-mov $4,8
-add $2,$4
-mov $10,3
-mov $6,1
-sub $9,1
-mov $3,1
-mov $9,1
-add $0,$9
-log $10,2
-mul $2,2
-mul $9,$4
-mov $5,$2
-mov $8,1
-mov $7,8
+add $0,1
 div $0,2
 add $0,1
-mov $7,$5
-sub $6,$2
-trn $6,$9
-sub $7,$7
-mov $5,$4
-add $4,1
-mov $1,2
-add $6,10
-add $7,$5
-pow $8,$2
-mul $9,$7
-mov $4,7
-sub $10,$5
-mov $9,$0
-add $6,4
-add $7,2
-sub $1,1
-mov $7,$5
-mov $7,$1
-trn $7,$8
-add $3,1
+mov $1,1
 lpb $0,1
-  add $3,$6
-  mov $9,9
-  mov $5,$0
-  trn $10,2
-  add $1,1
-  sub $1,1
-  mov $5,6
-  mov $6,$10
-  add $8,1
-  mov $5,$3
-  add $3,$0
-  mov $6,1
-  add $3,$4
   sub $0,2
-  add $4,$10
-  add $5,1
-  mov $7,$5
-  add $5,1
-  mul $5,$4
-  mul $5,$10
-  add $5,1
-  mov $8,1
-  add $5,$0
-  add $7,1
   mul $1,$0
-  mov $7,$8
-  div $10,2
-  add $9,2
-  sub $10,1
-  mul $5,2
-  add $4,$4
-  sub $5,3
-  add $1,$1
-  sub $7,7
-  sub $10,4
-  sub $0,1
-  sub $6,$8
-  mov $8,$7
-  sub $3,$7
-  sub $8,1
-  sub $5,2
-  add $0,1
-  sub $4,$4
-  add $8,$8
+  mul $1,2
 lpe
-sub $2,1
-sub $6,$1
-mov $1,$1
-add $9,$7
-mov $10,$3
-sub $5,$9
-mov $6,$3
-add $7,1
-mov $9,1
-add $7,$7
-mul $6,$8
-add $0,1
