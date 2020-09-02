@@ -1,84 +1,20 @@
 ; A137173: A006516 at positions with even indices, A007582 at positions with odd indices.
 ; 0,1,1,3,6,10,28,36,120,136,496,528,2016,2080,8128,8256,32640,32896,130816,131328,523776,524800,2096128,2098176,8386560,8390656,33550336,33558528,134209536,134225920,536854528,536887296,2147450880,2147516416
 
-mov $3,$0
-mov $4,$0
-mov $5,$3
-sub $4,$5
-mov $8,$5
-mov $3,$4
-mov $1,$5
-mov $6,7
-fac $6
-add $5,17
-mov $7,2
 mov $4,1
-sub $6,1
 lpb $0,1
   mul $4,2
-  mov $5,$0
-  mov $1,$4
-  mov $2,2
-  sub $5,$8
-  mov $5,$8
-  add $7,5
-  add $5,$7
-  cmp $3,2
   sub $0,1
-  mov $3,$6
   mov $1,1
-  mov $5,$1
-  mov $2,2
   sub $1,1
-  add $7,1
-  add $3,1
-  mov $6,4
-  mov $7,$4
-  mov $8,$7
-  mov $7,1
-  add $3,$2
-  mul $2,$7
-  add $6,$0
-  mov $8,1
-  mov $5,$1
   mov $3,1
-  sub $5,$7
-  sub $3,1
+  mov $5,$1
+  sub $5,$3
   add $0,$5
-  add $8,$7
-  mov $2,$4
-  mov $5,$4
-  mov $8,4
 lpe
-sub $1,1
-mov $5,1
-add $5,1
-sub $2,$6
 mov $2,1
-mov $6,1
-add $3,1
-add $8,5
 add $4,$0
-mul $8,$7
-add $5,$7
-mul $7,$1
-gcd $1,2
-mul $6,2
-add $3,$3
-sub $1,$4
-add $5,1
-sub $3,$5
-mul $7,$2
-mov $7,$0
-mod $1,3
-add $3,$7
 mov $0,$2
-add $3,$2
-add $2,$3
-sub $1,2
-add $5,$5
-add $1,$6
 mul $0,2
-mul $5,2
 bin $4,$0
 mov $1,$4
