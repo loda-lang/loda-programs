@@ -1,45 +1,11 @@
 ; A321243: a(n) is the product of n and all its decimal digits individually except the leftmost digit.
 ; 0,1,2,3,4,5,6,7,8,9,0,11,24,39,56,75,96,119,144,171,0,21,44,69,96,125,156,189,224,261,0,31,64,99,136,175,216,259,304,351,0,41,84,129,176,225,276,329,384,441,0,51,104,159,216,275,336,399,464,531
 
-mov $3,61
-add $3,$0
-mov $4,$0
-mov $1,6
+mov $2,$0
 lpb $0,1
-  add $1,1
   mod $0,10
-  mul $4,$0
-  sub $0,1
-  mov $2,1
-  add $0,1
-  mov $1,$0
-  div $3,$3
-  add $1,$3
-  add $3,7
+  mul $2,$0
 lpe
-add $4,3
-add $2,4
-mul $1,2
-mul $2,$3
-sub $0,$0
-mov $1,8
-mul $2,3
-mov $1,$2
-sub $2,$4
-mov $3,$4
-add $3,5
-mul $2,2
-add $2,$1
-add $3,$0
-mov $1,$1
 add $2,3
-mov $3,$0
-add $2,$2
-add $0,$2
-sub $1,1
-mov $3,$2
-div $0,2
-add $3,1
-sub $2,2
-mov $1,$4
+mov $1,$2
 sub $1,3
