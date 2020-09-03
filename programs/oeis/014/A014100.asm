@@ -1,0 +1,84 @@
+; A014100: Inverse of 91st cyclotomic polynomial.
+; 1,1,1,1,1,1,1,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+mov $8,$0
+mov $3,$8
+mov $6,$0
+mul $0,3
+sub $6,2
+mov $1,$3
+mov $8,$6
+mov $8,$3
+mul $8,2
+mov $6,$1
+mov $1,$6
+sub $6,6
+sub $6,1
+add $3,$1
+mov $7,$0
+mul $0,2
+mov $5,3
+add $7,3
+mov $4,2
+mov $4,$1
+mov $0,$0
+mov $5,$0
+lpb $0,1
+  mov $3,1
+  add $6,639
+  mov $6,1
+  add $4,1
+  mov $6,$4
+  mov $2,$1
+  mov $2,1
+  add $0,2
+  mov $3,8
+  mov $2,1
+  sub $2,$8
+  mul $1,6
+  div $0,5
+  mov $4,$7
+  sub $6,$0
+  mov $4,$2
+  mov $1,$1
+  div $2,3
+  mul $4,7
+  mov $3,2
+  mov $6,$3
+  mov $2,$5
+  add $8,$0
+  mov $5,$0
+  sub $4,1
+  trn $7,8
+  mov $5,40
+  mov $4,1
+  sub $0,2
+  sub $7,$0
+  mov $7,$5
+  mov $0,$2
+  mul $2,3
+  sub $0,1
+  sub $6,1
+  add $6,$0
+  add $0,2
+  mov $8,$6
+  mul $7,2
+  sub $0,$7
+lpe
+add $0,6
+mov $3,2
+mul $1,12
+gcd $5,2
+sub $2,$7
+mov $8,1
+mov $3,1
+sub $3,1
+add $4,$1
+sub $3,1
+add $2,1
+pow $3,$0
+sub $5,$4
+mov $5,4
+mov $5,$4
+mul $6,$7
+mov $1,$3
