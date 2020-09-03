@@ -3,64 +3,23 @@
 
 mov $3,$0
 mov $5,$0
-lpb $0,1
-  mov $4,49
-  mov $2,$5
-  sub $0,1
-  mov $2,8
-  add $0,$2
-  mov $1,3
-  pow $3,2
-  mov $0,$0
-  mov $0,2
-  mov $1,$4
-  add $0,$3
-lpe
-mov $5,$0
-add $2,$2
-mov $1,$4
-add $2,$5
-add $5,$4
-mov $6,$0
+mov $2,$5
 pow $5,2
 sub $4,$2
-sub $4,$1
 mov $1,$5
 mul $3,$1
-add $2,$4
-pow $2,$1
-mov $6,$3
 sub $3,1
-mov $1,$6
-add $6,$4
 sub $5,2
-mov $0,$3
 add $4,3
 sub $4,$5
-add $6,1
-sub $1,2
 add $4,$3
 sub $5,1
-sub $1,1
-add $2,$1
-mov $6,$1
-mov $1,1
 add $4,$5
 add $3,1
 mul $4,$3
-mov $5,$5
-div $0,$2
-trn $4,$2
+sub $4,$2
 sub $2,$5
-mul $3,2
-mov $5,$1
 add $4,$2
-sub $5,1
-mod $3,2
-add $5,1
-sub $5,$2
-sub $6,$0
-mov $0,2
 mov $1,$4
 sub $1,3
 div $1,2
