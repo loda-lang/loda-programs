@@ -1313,7 +1313,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A237250](http://oeis.org/A237250) ([L11 program](237/A237250.asm)): Values of x in the solutions to x^2 - 4xy + y^2 + 11 = 0, where 0 < x < y.
 * [A237268](http://oeis.org/A237268) ([L15 program](237/A237268.asm)): a(1)=1; for n>1, a(n) is the smallest F(m)>F(n) such that F(n) divides F(m), where F(k) denotes the k-th Fibonacci number.
 * [A237347](http://oeis.org/A237347) ([L39 program](237/A237347.asm)): First differences of A078633.
-* [A237415](http://oeis.org/A237415) ([L19 program](237/A237415.asm)): For k in {2,3,...,9} define a sequence as follows: a(0)=0; for n>=0, a(n+1)=a(n)+1, unless a(n) ends in k, in which case a(n+1) is obtained by replacing the last digit of a(n) with the digit(s) of k^3. This is k(2).
+* [A237415](http://oeis.org/A237415) ([L10 program](237/A237415.asm)): For k in {2,3,...,9} define a sequence as follows: a(0)=0; for n>=0, a(n+1)=a(n)+1, unless a(n) ends in k, in which case a(n+1) is obtained by replacing the last digit of a(n) with the digit(s) of k^3. This is k(2).
 * [A237416](http://oeis.org/A237416) ([L16 program](237/A237416.asm)): Smallest multiple of 5 beginning with n.
 * [A237420](http://oeis.org/A237420) ([L04 program](237/A237420.asm)): If n is odd, then a(n) = 0; otherwise, a(n) = n.
 * [A237450](http://oeis.org/A237450) ([L29 program](237/A237450.asm)): Triangle read by rows, T(n,k) = !n + (k-1)*(n-1)!, with n>=1, 1<=k<=n; Position of the first n-letter permutation beginning with number k in the list of lexicographically sorted permutations A030299.
@@ -1495,7 +1495,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242983](http://oeis.org/A242983) ([L12 program](242/A242983.asm)): n/2 * (n^3 - 2*n^2 - 2*n + 5).
 * [A242985](http://oeis.org/A242985) ([L05 program](242/A242985.asm)): a(n) = 4^n + 2^(n+1).
 * [A242998](http://oeis.org/A242998) ([L20 program](242/A242998.asm)): Number of integers k such that R = (2^k*Q - Q - 1)/(Q + 1 - 2^k) is a prime number, when Q = A000668(n) is the n-th Mersenne prime.
-* [A243132](http://oeis.org/A243132) ([L64 program](243/A243132.asm)): 32*n^6 - 48*n^4 + 18*n^2 - 1.
+* [A243132](http://oeis.org/A243132) ([L13 program](243/A243132.asm)): 32*n^6 - 48*n^4 + 18*n^2 - 1.
 * [A243134](http://oeis.org/A243134) ([L11 program](243/A243134.asm)): 128*n^8 - 256*n^6 + 160*n^4 - 32*n^2 + 1.
 * [A243138](http://oeis.org/A243138) ([L04 program](243/A243138.asm)): n^2 + 15*n + 13.
 * [A243201](http://oeis.org/A243201) ([L12 program](243/A243201.asm)): Odd octagonal numbers indexed by triangular numbers.
@@ -2719,6 +2719,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271779](http://oeis.org/A271779) ([L10 program](271/A271779.asm)): a(n) = n^3 + 2*n^2 + 5*n + 11.
 * [A271800](http://oeis.org/A271800) ([L14 program](271/A271800.asm)): Five steps forward, four steps back.
 * [A271828](http://oeis.org/A271828) ([L06 program](271/A271828.asm)): a(n) = 4*n^3 - 18*n^2 + 27*n - 12.
+* [A271830](http://oeis.org/A271830) ([L120 program](271/A271830.asm)): Expansion of (3 - 4*x + 3*x^2 + x^4)/((1 - x)^2*(1 + x^2 + x^4)).
 * [A271832](http://oeis.org/A271832) ([L09 program](271/A271832.asm)): Period 12 zigzag sequence: repeat [0,1,2,3,4,5,6,5,4,3,2,1].
 * [A271911](http://oeis.org/A271911) ([L05 program](271/A271911.asm)): Number of ways to choose three distinct points from a 2 X n grid so that they form an isosceles triangle.
 * [A271937](http://oeis.org/A271937) ([L10 program](271/A271937.asm)): a(n) = (7/4)*n^2 + (5/2)*n + (7 + (-1)^n)/8.
@@ -3205,7 +3206,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285440](http://oeis.org/A285440) ([L15 program](285/A285440.asm)): Consider the sums of the numbers < n that share the same greatest common divisor with n. Sequence lists numbers that have only one of those sums equal to n.
 * [A285475](http://oeis.org/A285475) ([L12 program](285/A285475.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A285476](http://oeis.org/A285476) ([L06 program](285/A285476.asm)): Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 6", based on the 5-celled von Neumann neighborhood.
-* [A285524](http://oeis.org/A285524) ([L24 program](285/A285524.asm)): a(n) is the value d<n/2 maximizing the expression d!*(d + 1)!*(2^(n-2*d-1)*stirling2(n-d, d+1), for n>=4.
+* [A285524](http://oeis.org/A285524) ([L09 program](285/A285524.asm)): a(n) is the value d<n/2 maximizing the expression d!*(d + 1)!*(2^(n-2*d-1)*stirling2(n-d, d+1), for n>=4.
 * [A285525](http://oeis.org/A285525) ([L47 program](285/A285525.asm)): The indices that mark the beginning of four consecutive equal terms in A285524.
 * [A285526](http://oeis.org/A285526) ([L20 program](285/A285526.asm)): Terms of A285524 that mark the beginning of four consecutive equal values.
 * [A285542](http://oeis.org/A285542) ([L12 program](285/A285542.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 35", based on the 5-celled von Neumann neighborhood.
@@ -3407,6 +3408,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291008](http://oeis.org/A291008) ([L14 program](291/A291008.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 7*S^2.
 * [A291009](http://oeis.org/A291009) ([L20 program](291/A291009.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - S)(1 - 3 S).
 * [A291010](http://oeis.org/A291010) ([L15 program](291/A291010.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - 2 S)(1 - 3 S).
+* [A291011](http://oeis.org/A291011) ([L23 program](291/A291011.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - S)^2 (1 - 2 S).
 * [A291024](http://oeis.org/A291024) ([L09 program](291/A291024.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - 2 S^2)^2.
 * [A291040](http://oeis.org/A291040) ([L29 program](291/A291040.asm)): The arithmetic function u(n,3,2).
 * [A291064](http://oeis.org/A291064) ([L09 program](291/A291064.asm)): a(n) = 2^n*(n + 1) - 3*(n - 1).
