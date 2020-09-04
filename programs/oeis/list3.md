@@ -421,6 +421,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313685](http://oeis.org/A313685) ([L19 program](313/A313685.asm)): Coordination sequence Gal.4.43.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313694](http://oeis.org/A313694) ([L10 program](313/A313694.asm)): Coordination sequence Gal.4.63.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313703](http://oeis.org/A313703) ([L19 program](313/A313703.asm)): Coordination sequence Gal.5.129.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313704](http://oeis.org/A313704) ([L107 program](313/A313704.asm)): Coordination sequence Gal.6.323.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313717](http://oeis.org/A313717) ([L20 program](313/A313717.asm)): Coordination sequence Gal.6.151.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313718](http://oeis.org/A313718) ([L15 program](313/A313718.asm)): Coordination sequence Gal.6.133.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313719](http://oeis.org/A313719) ([L30 program](313/A313719.asm)): Coordination sequence Gal.5.116.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -475,6 +476,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A314674](http://oeis.org/A314674) ([L18 program](314/A314674.asm)): Coordination sequence Gal.4.58.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314677](http://oeis.org/A314677) ([L16 program](314/A314677.asm)): Coordination sequence Gal.3.10.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314680](http://oeis.org/A314680) ([L21 program](314/A314680.asm)): Coordination sequence Gal.6.149.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A314684](http://oeis.org/A314684) ([L100 program](314/A314684.asm)): Coordination sequence Gal.6.149.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314685](http://oeis.org/A314685) ([L19 program](314/A314685.asm)): Coordination sequence Gal.3.16.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314692](http://oeis.org/A314692) ([L26 program](314/A314692.asm)): Coordination sequence Gal.5.81.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314706](http://oeis.org/A314706) ([L32 program](314/A314706.asm)): Coordination sequence Gal.6.130.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -855,6 +857,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329754](http://oeis.org/A329754) ([L22 program](329/A329754.asm)): Doubly pentagonal pyramidal numbers.
 * [A329774](http://oeis.org/A329774) ([L56 program](329/A329774.asm)): a(n) = n+1 for n <= 2; otherwise a(n) = 3*a(n-3)+1.
 * [A329822](http://oeis.org/A329822) ([L06 program](329/A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
+* [A329825](http://oeis.org/A329825) ([L49 program](329/A329825.asm)): Beatty sequence for (3+sqrt(17))/4.
 * [A329826](http://oeis.org/A329826) ([L15 program](329/A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
 * [A329827](http://oeis.org/A329827) ([L22 program](329/A329827.asm)): Beatty sequence for (5+sqrt(37))/6.
 * [A329828](http://oeis.org/A329828) ([L12 program](329/A329828.asm)): Beatty sequence for (7+sqrt(37))/6.
