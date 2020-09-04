@@ -296,7 +296,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A209899](http://oeis.org/A209899) ([L13 program](209/A209899.asm)): Floor of the expected number of empty cells in a random placement of 2n balls into n cells.
 * [A209931](http://oeis.org/A209931) ([L04 program](209/A209931.asm)):  Numbers n such that smallest digit of all divisors of n is 1.
 * [A209971](http://oeis.org/A209971) ([L12 program](209/A209971.asm)): a(n) = A000129(n) + n.
-* [A210032](http://oeis.org/A210032) ([L05 program](210/A210032.asm)): a(n)=n for n=1,2,3 and 4; a(n)=5 for n>=5.
+* [A210032](http://oeis.org/A210032) ([L04 program](210/A210032.asm)): a(n)=n for n=1,2,3 and 4; a(n)=5 for n>=5.
 * [A210062](http://oeis.org/A210062) ([L20 program](210/A210062.asm)): Number of digits in 7^n.
 * [A210100](http://oeis.org/A210100) ([L10 program](210/A210100.asm)): Number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having one or three distinct values, and new values 0..2 introduced in row major order.
 * [A210374](http://oeis.org/A210374) ([L10 program](210/A210374.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and (sum of terms) = n+2.
@@ -2793,6 +2793,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273334](http://oeis.org/A273334) ([L38 program](273/A273334.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
 * [A273336](http://oeis.org/A273336) ([L12 program](273/A273336.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
 * [A273337](http://oeis.org/A273337) ([L23 program](273/A273337.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 657", based on the 5-celled von Neumann neighborhood.
+* [A273348](http://oeis.org/A273348) ([L41 program](273/A273348.asm)): The sum of the semiperimeters of the bargraphs of area n (n>=1).
 * [A273365](http://oeis.org/A273365) ([L17 program](273/A273365.asm)): Numbers k such that 10*k+4 is a perfect square.
 * [A273366](http://oeis.org/A273366) ([L04 program](273/A273366.asm)): a(n) = 10*n^2 + 10*n + 2.
 * [A273367](http://oeis.org/A273367) ([L11 program](273/A273367.asm)): Numbers k such that 10*k+6 is a perfect square.
@@ -2872,7 +2873,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274701](http://oeis.org/A274701) ([L39 program](274/A274701.asm)): First differences of A259280.
 * [A274757](http://oeis.org/A274757) ([L12 program](274/A274757.asm)): Numbers k such that 6*k+1 is a triangular number (A000217).
 * [A274772](http://oeis.org/A274772) ([L12 program](274/A274772.asm)): Zero together with the partial sums of A056640.
-* [A274773](http://oeis.org/A274773) ([L42 program](274/A274773.asm)): a(n) = floor(sqrt(2*n-1) + 1/2) - abs(2*(n-1) - (floor(sqrt(2*n-1) + 1/2))^2) + 1.
+* [A274773](http://oeis.org/A274773) ([L12 program](274/A274773.asm)): a(n) = floor(sqrt(2*n-1) + 1/2) - abs(2*(n-1) - (floor(sqrt(2*n-1) + 1/2))^2) + 1.
 * [A274830](http://oeis.org/A274830) ([L11 program](274/A274830.asm)): Numbers n such that 7*n+1 is a triangular number (A000217).
 * [A274922](http://oeis.org/A274922) ([L14 program](274/A274922.asm)): a(n) = (-1)^n * n if n>0, a(0) = 1.
 * [A274933](http://oeis.org/A274933) ([L17 program](274/A274933.asm)): Maximal number of non-attacking queens on a quarter chessboard containing n^2 squares.
@@ -3649,7 +3650,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298791](http://oeis.org/A298791) ([L14 program](298/A298791.asm)): Partial sums of A298789.
 * [A298950](http://oeis.org/A298950) ([L17 program](298/A298950.asm)): Numbers k such that 5*k - 4 is a square.
 * [A298952](http://oeis.org/A298952) ([L10 program](298/A298952.asm)): Start with a(0) = 1 and add at step n >= 0 the term 1 at position 2*n + a(n).
-* [A299120](http://oeis.org/A299120) ([L21 program](299/A299120.asm)): a(n) = (n-1)*(n-2)*(n+3)*(n+2)/12.
+* [A299120](http://oeis.org/A299120) ([L07 program](299/A299120.asm)): a(n) = (n-1)*(n-2)*(n+3)*(n+2)/12.
 * [A299174](http://oeis.org/A299174) ([L03 program](299/A299174.asm)): The even positive integers.
 * [A299198](http://oeis.org/A299198) ([L11 program](299/A299198.asm)): a(n) = n^4/6 - 2*n^3/3 - n^2/6 + 5*n/3 + 1.
 * [A299231](http://oeis.org/A299231) ([L24 program](299/A299231.asm)): Ranks of {2,3}-power towers that start with 2; see Comments.

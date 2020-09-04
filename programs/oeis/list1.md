@@ -144,7 +144,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101202](http://oeis.org/A101202) ([L03 program](101/A101202.asm)): Multiples of 142857.
 * [A101213](http://oeis.org/A101213) ([L66 program](101/A101213.asm)): a(n) = n * (n+1)^2 * (n+2)^3.
 * [A101265](http://oeis.org/A101265) ([L08 program](101/A101265.asm)): a(1) = 1, a(2) = 2, a(3) = 6; a(n) = 5*a(n-1) - 5*a(n-2) + a(n-3) for n>3.
-* [A101272](http://oeis.org/A101272) ([L05 program](101/A101272.asm)): a(n)=n, n <=6; a(n)=6, n > 6.
+* [A101272](http://oeis.org/A101272) ([L04 program](101/A101272.asm)): a(n)=n, n <=6; a(n)=6, n > 6.
 * [A101279](http://oeis.org/A101279) ([L18 program](101/A101279.asm)): a(1) = 1; a(2k) = a(k), a(2k+1) = k.
 * [A101328](http://oeis.org/A101328) ([L05 program](101/A101328.asm)): Recurring numbers in the count of consecutive composite numbers between balanced primes and their lower or upper prime neighbors.
 * [A101338](http://oeis.org/A101338) ([L10 program](101/A101338.asm)): Antidiagonal sums in A101321.
@@ -1135,7 +1135,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120151](http://oeis.org/A120151) ([L37 program](120/A120151.asm)): a(1)=5; a(n)=floor((15+sum(a(1) to a(n-1)))/3).
 * [A120152](http://oeis.org/A120152) ([L18 program](120/A120152.asm)): a(1)=6; a(n)=floor((19+sum(a(1) to a(n-1)))/3).
 * [A120154](http://oeis.org/A120154) ([L64 program](120/A120154.asm)): a(1)=9; a(n)=floor((27+sum(a(1) to a(n-1)))/3).
-* [A120159](http://oeis.org/A120159) ([L41 program](120/A120159.asm)): a(1)=15; a(n)=floor((47+sum(a(1) to a(n-1)))/3).
+* [A120159](http://oeis.org/A120159) ([L12 program](120/A120159.asm)): a(1)=15; a(n)=floor((47+sum(a(1) to a(n-1)))/3).
 * [A120160](http://oeis.org/A120160) ([L63 program](120/A120160.asm)): a(n) = ceiling(Sum_{i=1..n-1} a(i)/4) for n >= 2 starting with a(1) = 1.
 * [A120161](http://oeis.org/A120161) ([L16 program](120/A120161.asm)): a(1)=2; a(n)=floor((9+sum(a(1) to a(n-1)))/4).
 * [A120162](http://oeis.org/A120162) ([L16 program](120/A120162.asm)): a(1)=3; a(n)=floor((14+sum(a(1) to a(n-1)))/4).
@@ -1441,7 +1441,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126235](http://oeis.org/A126235) ([L12 program](126/A126235.asm)): Minimum length of a codeword in Huffman encoding of n symbols, where the k-th symbol has frequency k.
 * [A126236](http://oeis.org/A126236) ([L16 program](126/A126236.asm)): Maximum length of a codeword in Huffman encoding of n symbols, where the k-th symbol has frequency k.
 * [A126264](http://oeis.org/A126264) ([L08 program](126/A126264.asm)): a(n) = 5*n^2 + 3*n.
-* [A126269](http://oeis.org/A126269) ([L11 program](126/A126269.asm)): Numbers n such that hcl(n,n) < hcl(n,n-1) where hcl(n,i) is the Huffman code length; see comments.
+* [A126269](http://oeis.org/A126269) ([L10 program](126/A126269.asm)): Numbers n such that hcl(n,n) < hcl(n,n-1) where hcl(n,i) is the Huffman code length; see comments.
 * [A126274](http://oeis.org/A126274) ([L15 program](126/A126274.asm)): Partial sum of hexagonal prism numbers (A005915).
 * [A126275](http://oeis.org/A126275) ([L10 program](126/A126275.asm)): Moment of inertia of all magic squares of order n.
 * [A126281](http://oeis.org/A126281) ([L15 program](126/A126281.asm)): a(n) is the least m to satisfy the requirements of A052130.
@@ -1530,7 +1530,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127985](http://oeis.org/A127985) ([L10 program](127/A127985.asm)): a(n) = floor(2^n*(n/3 + 4/9)).
 * [A127988](http://oeis.org/A127988) ([L29 program](127/A127988.asm)): Sequence determining the parity of A025748.
 * [A127989](http://oeis.org/A127989) ([L05 program](127/A127989.asm)): a(n) = 2*n^3 - 2*n + 9.
-* [A128012](http://oeis.org/A128012) ([L14 program](128/A128012.asm)): 3*A001399(n).
+* [A128012](http://oeis.org/A128012) ([L14 program](128/A128012.asm)): a(n) = 3*A001399(n).
 * [A128014](http://oeis.org/A128014) ([L05 program](128/A128014.asm)): Central binomial coefficients C(2n,n) repeated.
 * [A128015](http://oeis.org/A128015) ([L11 program](128/A128015.asm)): Binomial coefficients C(2n+1,n) repeated.
 * [A128016](http://oeis.org/A128016) ([L11 program](128/A128016.asm)): Expansion of (1+x+x^2+x^3)/(1-x^2+x^4).
@@ -1664,7 +1664,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130123](http://oeis.org/A130123) ([L36 program](130/A130123.asm)): Infinite lower triangular matrix with 2^k in the right diagonal and the rest zeros. Triangle, T(n,k), n zeros followed by the term 2^k. Triangle by columns, (2^k, 0, 0, 0, ...).
 * [A130124](http://oeis.org/A130124) ([L24 program](130/A130124.asm)): Triangle defined by A130123 * A002260, read by rows.
 * [A130129](http://oeis.org/A130129) ([L08 program](130/A130129.asm)): (3*n+1)*2^n.
-* [A130130](http://oeis.org/A130130) ([L04 program](130/A130130.asm)): a(0)=0, a(1)=1, a(n)=2 for n >= 2.
+* [A130130](http://oeis.org/A130130) ([L03 program](130/A130130.asm)): a(0)=0, a(1)=1, a(n)=2 for n >= 2.
 * [A130145](http://oeis.org/A130145) ([L46 program](130/A130145.asm)): Number of nonisomorphic orthogonal arrays OA(n,4,2,2)'s when n is not a multiple of 8.
 * [A130151](http://oeis.org/A130151) ([L05 program](130/A130151.asm)): Period 6: repeat [1, 1, 1, -1, -1, -1].
 * [A130165](http://oeis.org/A130165) ([L18 program](130/A130165.asm)): a(0)=1; a(n)=prime(mod(a(n-1),10)).
@@ -3092,6 +3092,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A153263](http://oeis.org/A153263) ([L32 program](153/A153263.asm)): A014217(n+3) - A014217(n).
 * [A153284](http://oeis.org/A153284) ([L05 program](153/A153284.asm)): a(n) = n + sum((-1)^(j))*a(j)); for j=1 to n-1; with a(1)=1.
 * [A153285](http://oeis.org/A153285) ([L18 program](153/A153285.asm)): a(1)=1; for n > 1, a(n) = n^2 + Sum_{j=1..n-1} (-1)^j*a(j).
+* [A153286](http://oeis.org/A153286) ([L112 program](153/A153286.asm)): a(n) = n^3 + sum((-1)^j*a(j)); for j=1 to n-1; a(1)=1.
 * [A153349](http://oeis.org/A153349) ([L09 program](153/A153349.asm)): Period 6: repeat [1, 7, 4, 4, 7, 1].
 * [A153365](http://oeis.org/A153365) ([L12 program](153/A153365.asm)): Number of zig-zag paths from top to bottom of a rectangle of width 9 with 2n rows whose color is that of the top right corner.
 * [A153388](http://oeis.org/A153388) ([L08 program](153/A153388.asm)): Second bisection of A153382.
@@ -3640,7 +3641,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158408](http://oeis.org/A158408) ([L31 program](158/A158408.asm)): a(n) = 900*n^2 - 2*n.
 * [A158409](http://oeis.org/A158409) ([L03 program](158/A158409.asm)): a(n) = 900*n - 1.
 * [A158410](http://oeis.org/A158410) ([L38 program](158/A158410.asm)): 961n^2 - 2n.
-* [A158411](http://oeis.org/A158411) ([L04 program](158/A158411.asm)): Maximum number of colors required to paint a map having n regions.
+* [A158411](http://oeis.org/A158411) ([L03 program](158/A158411.asm)): Maximum number of colors required to paint a map having n regions.
 * [A158412](http://oeis.org/A158412) ([L03 program](158/A158412.asm)): 961n - 1.
 * [A158413](http://oeis.org/A158413) ([L32 program](158/A158413.asm)): 961n^2 + 2n.
 * [A158414](http://oeis.org/A158414) ([L03 program](158/A158414.asm)): 961n + 1.
@@ -4405,14 +4406,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168077](http://oeis.org/A168077) ([L04 program](168/A168077.asm)): a(2n) = A129194(2n)/2; a(2n+1) = A129194(2n+1).
 * [A168090](http://oeis.org/A168090) ([L12 program](168/A168090.asm)): a(n) = (1 - (n mod 3) mod 2)*2^(floor(n/3) + (n mod 3)/2 ).
 * [A168092](http://oeis.org/A168092) ([L04 program](168/A168092.asm)): a(n) = number of natural numbers m such that n - 2 <= m <= n + 2.
-* [A168093](http://oeis.org/A168093) ([L05 program](168/A168093.asm)): a(n) = number of natural numbers m such that n - 3 <= m <= n + 3.
-* [A168094](http://oeis.org/A168094) ([L05 program](168/A168094.asm)): a(n) = number of natural numbers m such that n - 4 <= m <= n + 4.
-* [A168095](http://oeis.org/A168095) ([L05 program](168/A168095.asm)): a(n) = number of natural numbers m such that n - 5 <= m <= n + 5.
-* [A168096](http://oeis.org/A168096) ([L05 program](168/A168096.asm)): a(n) = number of natural numbers m such that n - 6 <= m <= n + 6.
-* [A168097](http://oeis.org/A168097) ([L05 program](168/A168097.asm)): a(n) = number of natural numbers m such that n - 7 <= m <= n + 7.
-* [A168098](http://oeis.org/A168098) ([L05 program](168/A168098.asm)): a(n) = number of natural numbers m such that n - 8 <= m <= n + 8.
-* [A168099](http://oeis.org/A168099) ([L05 program](168/A168099.asm)): a(n) = number of natural numbers m such that n - 9 <= m <= n + 9.
-* [A168100](http://oeis.org/A168100) ([L05 program](168/A168100.asm)): a(n) = number of natural numbers m such that n - 10 <= m <= n + 10.
+* [A168093](http://oeis.org/A168093) ([L04 program](168/A168093.asm)): a(n) = number of natural numbers m such that n - 3 <= m <= n + 3.
+* [A168094](http://oeis.org/A168094) ([L04 program](168/A168094.asm)): a(n) = number of natural numbers m such that n - 4 <= m <= n + 4.
+* [A168095](http://oeis.org/A168095) ([L04 program](168/A168095.asm)): a(n) = number of natural numbers m such that n - 5 <= m <= n + 5.
+* [A168096](http://oeis.org/A168096) ([L04 program](168/A168096.asm)): a(n) = number of natural numbers m such that n - 6 <= m <= n + 6.
+* [A168097](http://oeis.org/A168097) ([L04 program](168/A168097.asm)): a(n) = number of natural numbers m such that n - 7 <= m <= n + 7.
+* [A168098](http://oeis.org/A168098) ([L04 program](168/A168098.asm)): a(n) = number of natural numbers m such that n - 8 <= m <= n + 8.
+* [A168099](http://oeis.org/A168099) ([L04 program](168/A168099.asm)): a(n) = number of natural numbers m such that n - 9 <= m <= n + 9.
+* [A168100](http://oeis.org/A168100) ([L04 program](168/A168100.asm)): a(n) = number of natural numbers m such that n - 10 <= m <= n + 10.
 * [A168101](http://oeis.org/A168101) ([L07 program](168/A168101.asm)): a(n) = sum of natural numbers m such that n - 2 <= m <= n + 2.
 * [A168102](http://oeis.org/A168102) ([L09 program](168/A168102.asm)): a(n) = sum of natural numbers m such that n - 3 <= m <= n + 3.
 * [A168103](http://oeis.org/A168103) ([L09 program](168/A168103.asm)): a(n) = sum of natural numbers m such that n - 4 <= m <= n + 4.

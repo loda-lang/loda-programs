@@ -7,66 +7,26 @@ mov $1,$6
 mov $5,$6
 add $1,$5
 sub $6,2
-mov $0,1
-mov $2,$5
-mov $5,3
-mov $3,2
-mov $2,1
-mov $4,$5
 mul $1,$6
 add $1,4
 mov $4,$1
 mov $1,2
-add $2,$6
-trn $1,$5
 mov $0,8
 mul $4,2
-pow $2,2
-sub $4,1
-add $5,$1
 add $0,$4
-mov $4,1
-trn $6,$6
-mov $6,5
 sub $1,2
-add $0,$0
-add $2,$5
-mov $5,$3
-sub $6,1
+mul $0,2
 add $1,$0
-mov $5,$6
-mov $2,$6
-mov $2,1
-add $5,$5
-mov $4,6
 mov $3,$1
 sub $3,2
-div $4,3
-mov $2,$4
 lpb $0,1
-  add $5,1
   mov $4,5
-  mul $3,2
-  sub $0,1
-  mul $3,2
-  add $6,$5
-  mov $5,$3
-  mov $6,1
+  mul $3,4
   log $3,$4
-  add $2,2
-  mov $2,1
-  mov $5,$2
-  sub $1,4
-  add $4,2
-  add $4,$6
-  trn $4,$1
   mov $0,$6
 lpe
 mov $1,$3
 sub $1,2
 mov $8,$7
-mov $9,$8
-mul $9,1
-add $1,$9
-mul $8,$7
-mul $8,$7
+mov $2,$8
+add $1,$2
