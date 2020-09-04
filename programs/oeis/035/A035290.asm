@@ -1,0 +1,105 @@
+; A035290: Number of ways to place a non-attacking white and black pawn on n X n chessboard.
+; 0,0,6,50,194,522,1142,2186,3810,6194,9542,14082,20066,27770,37494,49562,64322,82146,103430,128594,158082,192362,231926,277290,328994,387602,453702,527906,610850,703194,805622,918842,1043586,1180610
+
+mov $4,$0
+mov $8,$0
+mov $2,$8
+mul $4,$8
+mov $2,11
+mov $9,2
+mov $6,1
+lpb $0,1
+  mov $1,2
+  mov $2,1
+  mov $6,3
+  add $8,7
+  mov $3,2
+  div $3,2
+  add $2,1
+  mov $8,$9
+  mov $10,30
+  mov $7,$8
+  sub $4,2
+  mov $2,$6
+  add $7,$9
+  mov $9,2
+  add $9,$3
+  add $8,$9
+  bin $9,2
+  sub $0,1
+  sub $10,$0
+  add $6,$0
+  mov $5,6
+  mul $8,$5
+  div $5,4
+  add $6,1
+  mov $10,1
+  add $2,$10
+  trn $7,$6
+  mov $2,2
+  mov $5,1
+  mov $1,$5
+  mul $9,23
+  mul $10,$0
+  mov $6,$1
+  sub $6,1
+  mov $6,8
+  mov $6,1
+  mov $6,$1
+  mov $4,$4
+  bin $3,2
+  mov $7,$3
+  mul $5,$9
+  mov $9,$1
+  pow $0,$6
+  mov $9,$8
+  mul $0,2
+  mov $1,$8
+  mul $1,$5
+  mov $2,$10
+  div $2,2
+  add $1,1
+  mul $10,2
+  mov $0,1
+  add $8,1
+lpe
+add $1,1
+sub $0,$8
+mov $8,$7
+add $8,1
+mov $3,$10
+mov $2,$6
+sub $5,2
+clr $5,$2
+mov $5,$7
+bin $4,2
+mov $1,20
+sub $5,6
+add $1,$9
+mov $7,$4
+add $9,1
+bin $8,2
+mov $1,$7
+mov $0,5
+mul $7,8
+div $10,$6
+mov $2,2
+add $2,1
+mov $6,$1
+mul $0,3
+add $6,2
+trn $8,$6
+mul $5,$10
+add $7,1
+trn $9,1
+sub $2,$8
+mov $9,2
+mov $5,1
+mov $0,$7
+add $4,$3
+add $3,1
+mov $8,1
+add $1,$3
+mov $5,$3
+sub $1,1
+mul $1,2

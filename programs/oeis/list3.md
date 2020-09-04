@@ -20,7 +20,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300576](http://oeis.org/A300576) ([L08 program](300/A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300622](http://oeis.org/A300622) ([L12 program](300/A300622.asm)): Denominators of sequence whose exponential self-convolution yields sequence 1, 2, 3, 5, 7, 11, 13, ... (1 with primes).
 * [A300659](http://oeis.org/A300659) ([L47 program](300/A300659.asm)): Product of digits of n!.
-* [A300758](http://oeis.org/A300758) ([L07 program](300/A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
+* [A300758](http://oeis.org/A300758) ([L06 program](300/A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
 * [A300846](http://oeis.org/A300846) ([L08 program](300/A300846.asm)): a(n) = 3*(n - 1)^2*n^3.
 * [A300847](http://oeis.org/A300847) ([L03 program](300/A300847.asm)): a(n) = 12*binomial(n, 5).
 * [A301291](http://oeis.org/A301291) ([L14 program](301/A301291.asm)): Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
@@ -564,7 +564,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315889](http://oeis.org/A315889) ([L30 program](315/A315889.asm)): Coordination sequence Gal.5.253.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315907](http://oeis.org/A315907) ([L08 program](315/A315907.asm)): Coordination sequence Gal.3.40.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A316026](http://oeis.org/A316026) ([L11 program](316/A316026.asm)): Coordination sequence Gal.3.36.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A316224](http://oeis.org/A316224) ([L08 program](316/A316224.asm)): a(n) = n*(2*n + 1)*(4*n + 1).
+* [A316224](http://oeis.org/A316224) ([L07 program](316/A316224.asm)): a(n) = n*(2*n + 1)*(4*n + 1).
 * [A316261](http://oeis.org/A316261) ([L30 program](316/A316261.asm)): The number of ways to induce a single pinch on a compact 2-manifold with n handles. (Note: The manifold is embedded in Euclidean 2-space, and each pinch partitions it into at most two submanifolds.)
 * [A316320](http://oeis.org/A316320) ([L14 program](316/A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
 * [A316341](http://oeis.org/A316341) ([L29 program](316/A316341.asm)): Characteristic function of the factorials 1!, 2!, 3!, ...
@@ -993,6 +993,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335047](http://oeis.org/A335047) ([L23 program](335/A335047.asm)): Maximum sum of primes (see Comments).
 * [A335048](http://oeis.org/A335048) ([L22 program](335/A335048.asm)): Minimum sum of primes (see Comments).
 * [A335129](http://oeis.org/A335129) ([L08 program](335/A335129.asm)): a(n) is the number of distinct lines created inside an n-gon when connecting vertex k to vertex 2k mod n.
+* [A335262](http://oeis.org/A335262) ([L43 program](335/A335262.asm)): Triangle of triangular numbers, read by rows, constructed like this: Given a sequence t, start row 0 with t(0). Compute row n for n > 0 by reversing row n-1 and prepending t(n). The sequence t is here chosen as the triangular numbers.
 * [A335298](http://oeis.org/A335298) ([L22 program](335/A335298.asm)): a(n) is the squared distance between the points P(n) and P(0) on a plane, n>=0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90°-left-turn is taken in P(n+1).
 * [A335439](http://oeis.org/A335439) ([L24 program](335/A335439.asm)): a(n) = n*(n-1)/2 + 2^(n-1) - 1.
 * [A335648](http://oeis.org/A335648) ([L27 program](335/A335648.asm)): Partial sums of A006010.
