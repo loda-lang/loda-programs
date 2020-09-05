@@ -1,108 +1,21 @@
 ; A067623: Consider the power series (x+1)^(1/3)=1+x/3-x^2/9+5x^3/81+...; sequence gives denominators of coefficients.
 ; 1,3,9,81,243,729,6561,19683,59049,1594323,4782969,14348907,129140163,387420489,1162261467,10460353203,31381059609,94143178827,2541865828329,7625597484987,22876792454961,205891132094649,617673396283947
 
-mov $2,1
 mov $5,$0
-mul $2,2
-mov $6,$5
 mov $2,1
-mov $7,$5
-add $2,$6
-mov $2,$5
-mov $9,$6
-sub $9,2
-mov $10,6
-sub $2,$5
-sub $7,2
-mov $3,$2
-mov $6,1
 lpb $0,1
-  div $7,13
-  mov $1,$0
-  mov $8,$5
+  mov $4,$5
   sub $0,1
-  mov $10,3
-  add $10,$1
   div $5,3
-  sub $6,$8
-  mov $1,16
+  sub $2,$4
 lpe
-mov $7,$6
-mov $0,1
-mov $8,$8
-mul $10,4
 mov $5,3
-add $1,1
-sub $2,7
-add $10,$8
-mov $9,$7
-mov $1,1
-mul $8,$6
-sub $1,$6
-sub $6,1
-sub $8,$5
-add $2,$3
-div $2,2
-mov $1,1
-mul $9,$7
-mov $4,$2
-mov $10,2
-mov $8,12
-mov $2,1
-mov $0,4
-add $4,$3
-sub $3,$6
-add $2,$6
-mul $8,85
-add $0,$6
+sub $2,1
+sub $3,$2
 pow $5,$3
-trn $6,2
-log $1,$9
-mov $0,2
-add $8,$9
-add $9,1
-sub $4,$10
-add $4,$8
-mov $0,$2
-sub $10,$6
-add $5,$5
-mul $8,$10
-mul $9,2
-add $7,$5
-trn $0,$3
-add $8,1
-mul $9,2
-sub $1,6
-add $10,$4
-mul $8,$2
-mov $7,2
-add $9,1
-sub $0,2
-pow $6,2
-add $10,2
-mov $9,1
-trn $2,$3
-add $1,$4
-pow $6,2
+mul $5,2
 mov $0,$5
-mov $4,1
-mov $3,1
-fac $2
-mul $5,$3
-mov $7,$8
-mov $7,$3
-trn $10,$5
-mul $4,$0
-add $9,$1
-pow $3,$2
-add $7,1
-pow $2,8
-mov $8,$4
-add $6,2
-mov $1,$9
-mov $1,1
 mov $1,$0
-sub $1,2
 div $1,4
 mul $1,2
 add $1,1

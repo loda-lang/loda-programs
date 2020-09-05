@@ -1,81 +1,21 @@
 ; A055648: Integers in base 13 with each base 13 digit represented by 2 decimal digits.
 ; 0,1,2,3,4,5,6,7,8,9,10,11,12,100,101,102,103,104,105,106,107,108,109,110,111,112,200,201,202,203,204,205,206,207,208,209,210,211,212,300,301,302,303,304,305,306,307,308,309,310,311,312,400,401,402,403,404
 
-mov $3,12
-mov $5,$3
-clr $1,1
-mov $3,1
-mov $8,1
-mov $7,$1
+mov $4,12
 add $0,7
-fac $8
-mov $2,$1
-div $8,2
 lpb $0,1
-  mov $4,1
-  mov $4,$8
   sub $0,1
   add $1,100
-  sub $0,$5
+  sub $0,$4
 lpe
-sub $2,1
 fac $3
-mov $2,$3
-add $8,$4
-mov $6,2
-trn $5,1
-sub $6,1
-mov $6,120
 add $1,$3
-sub $7,5
-add $6,8
-log $5,3
-sub $1,$4
-mov $7,$3
-div $8,2
-mov $6,901
-mov $2,$6
-mov $6,1
 add $1,2
-mov $8,$3
-add $7,$0
 mov $2,1
-mov $3,$8
-pow $4,4
-mov $8,4
-div $8,$5
-pow $7,$6
-mul $3,$7
-mov $3,$8
 sub $0,$2
-add $2,12
-mul $2,$5
-mov $7,$3
 add $0,$1
-mov $1,1
-mul $3,3
-mov $7,3
-mul $8,$4
-mul $5,2
-mov $3,198
-mov $8,$1
-add $6,3
-mul $6,$6
-add $7,$7
-mov $5,$0
-gcd $2,$5
-add $8,$1
-sub $5,6
-sub $6,$2
-pow $0,$7
-pow $4,$1
-add $4,$3
-mov $0,$5
-add $8,1
-trn $4,$4
-mov $4,$3
-div $4,$4
-mov $6,2
-add $1,3
+mov $4,$0
+sub $4,6
+mov $0,$4
 mov $1,$0
 sub $1,90

@@ -1,85 +1,21 @@
 ; A144478: Period 9: repeat 1,0,5,7,6,2,4,3,8.
 ; 1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8
 
-mov $3,1
-mov $8,$0
-sub $3,3
-mov $6,$8
-add $8,$8
-add $0,1
-add $3,4
-mov $4,2
-mul $4,$0
-mov $2,$6
-mov $1,3
-sub $4,$1
-mov $0,$6
-sub $2,$4
-pow $3,2
-mov $3,$4
-mov $0,$0
-mov $4,$0
-mov $7,$0
-add $3,962072674249
-pow $2,2
-sub $7,$7
-add $1,$0
-add $6,$8
-mov $0,1
-mov $4,1
-mov $5,1
-mov $1,1
-sub $1,3
-mov $7,$3
-add $3,2
-add $4,$2
+mov $3,$0
+mov $4,$3
 mul $3,2
-mov $8,4
-mov $8,$2
-sub $1,$0
-div $4,$4
-mov $3,$5
+add $4,$3
+mov $0,1
+mov $5,1
 mov $2,$0
-sub $3,1
-mov $4,$0
-add $0,$0
+mul $0,2
 lpb $0,1
-  mov $3,2
-  mov $7,$0
-  sub $8,$4
-  add $4,$5
-  sub $7,2
-  mov $7,1
-  mul $3,4
-  sub $6,$2
-  mov $7,1
+  sub $4,$2
   mov $2,$0
-  mov $1,2
   sub $0,1
-  add $4,$4
-  mov $1,$1
-  mul $4,3
-  mov $8,$6
-  mov $8,1
-  mov $7,$2
-  mul $5,$6
-  mov $3,3
-  add $4,$8
-  mul $8,2
+  mul $5,$4
 lpe
 mod $5,27
-sub $7,$7
-trn $6,$8
-mov $2,$0
-mov $7,$3
-add $2,2
-add $3,2
-trn $6,4
 add $0,$5
-sub $2,$4
-div $1,5
-mul $2,2
-sub $8,3
-mov $1,1
 mov $1,$0
 div $1,3
