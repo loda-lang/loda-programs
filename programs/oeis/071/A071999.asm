@@ -1,83 +1,11 @@
 ; A071999: Determinant of n X n matrix whose element A(i,j) is 1 if i=j, i if n=i+j and 0 otherwise.
 ; 1,1,-1,-2,15,28,-495,-924,29393,55200,-2755377,-5206760,374909535,712318464,-69864169375,-133355433456,17088978269025,32747341496320,-5311777786094241,-10212994682100000
 
-mov $2,4
-mov $3,1
-mov $7,27
-mul $3,$0
-mov $1,4
-mul $1,2
-sub $2,1
-div $2,3
-mov $5,1
-sub $5,4
-mov $1,5
-mov $3,$3
-mov $8,$0
-mov $6,$0
-mul $2,2
-mov $4,$1
-sub $5,$5
-mov $2,$5
-div $1,26
-add $5,$2
-mov $7,$1
-trn $6,$0
-sub $2,$5
-sub $5,1
-add $7,$7
-add $8,$2
-add $5,$5
-add $0,$4
-div $0,2
-sub $6,4
-fac $5
-mov $0,1
-add $8,$6
-mov $7,$3
 mov $2,1
-sub $1,$8
-pow $2,2
-mul $2,$5
-add $3,3
-mov $2,$4
 mov $1,1
-add $8,6
-mov $5,1
-sub $3,3
-div $6,$6
-add $4,$5
-mov $4,$8
-add $8,9
-trn $0,$0
-mov $4,1
-mov $0,$3
-add $1,1
-add $5,5
-mov $2,$0
-mov $7,1
-mov $8,4
-mov $1,$4
-mov $4,2
 lpb $0,1
-  mov $2,1
-  sub $6,$0
-  mov $8,$5
-  mov $8,5
-  add $4,$7
-  sub $4,1
-  mov $5,$2
+  sub $2,$0
   sub $0,1
-  mul $5,$5
-  mul $2,19
-  mul $1,$6
-  mov $2,4
+  mul $1,$2
   sub $0,1
 lpe
-div $0,$5
-add $4,$5
-mov $6,1
-mov $0,110
-mul $8,$1
-add $4,1
-mov $8,1
