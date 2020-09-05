@@ -1,0 +1,104 @@
+; A105563: a(n) = if (exactly 4 Fibonacci numbers exist with exactly n digits) then 1, otherwise 0.
+; 0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  clr $3,5
+  add $0,2523
+  mov $4,2
+  mov $7,$4
+  mov $5,$3
+  mov $3,2
+  lpb $0,1
+    add $5,$0
+    sub $0,1
+    mul $3,2
+    mov $2,2
+    add $4,$4
+    mov $6,2
+    mul $2,2
+    sub $4,$5
+    add $4,$0
+    trn $5,$0
+    mul $4,$4
+    mul $7,2
+    mov $2,$3
+    add $2,$4
+    mov $1,$0
+    mov $0,3
+    add $5,2
+    sub $4,2
+    add $5,12
+    mov $1,$1
+    mov $2,84
+    add $1,1
+    add $6,3
+    add $2,9
+    mov $8,$6
+    mov $0,1
+    mov $4,$1
+    mov $2,$2
+    sub $8,1
+    add $7,1
+    trn $6,1
+    add $1,$1
+    mul $7,$4
+    mul $7,$6
+    mov $1,2
+    mov $5,$7
+    mov $0,$2
+    trn $5,$6
+    div $3,2
+    div $5,$2
+    mov $0,2
+    mov $7,8
+    sub $6,1
+    add $5,$0
+    mov $2,1
+    mov $2,$2
+    mov $2,$5
+    mov $6,$3
+    add $6,$3
+    cmp $1,$4
+    add $6,$7
+    add $3,4
+    mov $5,$0
+    trn $6,2
+    add $6,$1
+    add $0,$5
+    sub $7,4
+    mov $4,2
+    mov $0,$6
+    add $1,1
+    add $7,$6
+    mov $4,56
+    add $6,2
+    mov $0,$3
+  lpe
+  mov $3,5
+  trn $8,1
+  add $1,$8
+  mov $6,1
+  trn $5,1
+  add $4,7
+  mov $1,2
+  sub $7,$5
+  mov $1,$2
+  sub $1,544
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10

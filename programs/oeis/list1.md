@@ -5200,7 +5200,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A177102](http://oeis.org/A177102) ([L11 program](177/A177102.asm)): Beatty sequence for sqrt(10).
 * [A177116](http://oeis.org/A177116) ([L15 program](177/A177116.asm)): Partial sums of round(n^2/11).
 * [A177145](http://oeis.org/A177145) ([L12 program](177/A177145.asm)): E.g.f.: arcsin(x).
-* [A177151](http://oeis.org/A177151) ([L83 program](177/A177151.asm)): a(n) = least k such that 1 + 1/4 + 1/9 + ... + 1/k^2 exceeds (Pi^2)*(n-1)/(6*n).
+* [A177151](http://oeis.org/A177151) ([L26 program](177/A177151.asm)): a(n) = least k such that 1 + 1/4 + 1/9 + ... + 1/k^2 exceeds (Pi^2)*(n-1)/(6*n).
 * [A177152](http://oeis.org/A177152) ([L19 program](177/A177152.asm)): Positions in A177151 of runs of length 1.
 * [A177154](http://oeis.org/A177154) ([L03 program](177/A177154.asm)): Fractional part of the conversion from degrees Centigrade (or Celsius) to Fahrenheit.
 * [A177176](http://oeis.org/A177176) ([L28 program](177/A177176.asm)): Partial sums of round(n^2/13).
@@ -5517,7 +5517,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A182757](http://oeis.org/A182757) ([L15 program](182/A182757.asm)): Numbers k > 1 such that is no sequence B of type: {b(1) = 1, b(2) = k, for n >= 3; b(n) = the smallest number h > b(n-1) such that [[b(n-2) + b(n-1)] * [b(n-2) + h] * [b(n-1) + h]] / [b(n-2) * b(n-1) * h] is integer}.
 * [A182765](http://oeis.org/A182765) ([L12 program](182/A182765.asm)): Beatty sequence for (6 + sqrt(2))/4.
 * [A182767](http://oeis.org/A182767) ([L17 program](182/A182767.asm)): Beatty sequence for 1+e^2.
-* [A182768](http://oeis.org/A182768) ([L23 program](182/A182768.asm)): Beatty sequence for 1+e^(-2).
+* [A182768](http://oeis.org/A182768) ([L11 program](182/A182768.asm)): Beatty sequence for 1+e^(-2).
 * [A182769](http://oeis.org/A182769) ([L27 program](182/A182769.asm)): Beatty sequence for (4 + sqrt(2))/2.
 * [A182771](http://oeis.org/A182771) ([L26 program](182/A182771.asm)): Beatty sequence for (6+sqrt(3))/3.
 * [A182773](http://oeis.org/A182773) ([L11 program](182/A182773.asm)): Beatty sequence for 1+2^(2/3).
@@ -5900,6 +5900,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187337](http://oeis.org/A187337) ([L05 program](187/A187337.asm)): Sum{floor(kn/7), k=1,2,3,4,5,6}.
 * [A187338](http://oeis.org/A187338) ([L55 program](187/A187338.asm)): a(n) = 3*n + floor(sqrt(2)*n), complement of A187328.
 * [A187339](http://oeis.org/A187339) ([L15 program](187/A187339.asm)): Floor((7+sqrt(5))*n/4); complement of A187330.
+* [A187340](http://oeis.org/A187340) ([L23 program](187/A187340.asm)): Hankel transform of A014301(n+1).
 * [A187341](http://oeis.org/A187341) ([L30 program](187/A187341.asm)): Floor((5-sqrt(5))n); complement of A187342.
 * [A187342](http://oeis.org/A187342) ([L38 program](187/A187342.asm)): Floor(((15+sqrt(5))/11)n); complement of A187341.
 * [A187378](http://oeis.org/A187378) ([L48 program](187/A187378.asm)): Number of 4-step S, NW and NE-moving king's tours on an n X n board summed over all starting positions
@@ -6042,7 +6043,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189738](http://oeis.org/A189738) ([L14 program](189/A189738.asm)): a(1)=3,  a(2)=4, a(n)=3a(n-1) + 4a(n-2)
 * [A189741](http://oeis.org/A189741) ([L18 program](189/A189741.asm)): a(1)=4,  a(2)=2, a(n) = 4*a(n-1) + 2*a(n-2).
 * [A189743](http://oeis.org/A189743) ([L12 program](189/A189743.asm)): a(1)=4,  a(2)=4, a(n)=4*a(n-1) + 4*a(n-2)
-* [A189770](http://oeis.org/A189770) ([L64 program](189/A189770.asm)): Number of one-sided prudent walks from (0,0) to (n,n), with 4+n east steps, 4 west steps and n north steps.
+* [A189770](http://oeis.org/A189770) ([L14 program](189/A189770.asm)): Number of one-sided prudent walks from (0,0) to (n,n), with 4+n east steps, 4 west steps and n north steps.
 * [A189782](http://oeis.org/A189782) ([L42 program](189/A189782.asm)): n+[nr/t]+[ns/t]; r=pi/2, s=arcsin(8/17), t=arcsin(15/17).
 * [A189784](http://oeis.org/A189784) ([L41 program](189/A189784.asm)): (A189782)/2.
 * [A189786](http://oeis.org/A189786) ([L05 program](189/A189786.asm)): n+[nr/t]+[ns/t]; r=pi/2, s=arcsin(5/13), t=arcsin(12/13).
@@ -6360,6 +6361,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A194508](http://oeis.org/A194508) ([L10 program](194/A194508.asm)): First coordinate of the (2,3)-Lagrange pair for n.
 * [A194509](http://oeis.org/A194509) ([L07 program](194/A194509.asm)): Second coordinate of (2,3)-Lagrange pair for n.
 * [A194511](http://oeis.org/A194511) ([L21 program](194/A194511.asm)): Second coordinate of (2,5)-Lagrange pair for n.
+* [A194515](http://oeis.org/A194515) ([L42 program](194/A194515.asm)): Second coordinate of (3,4)-Lagrange pair for n.
 * [A194597](http://oeis.org/A194597) ([L11 program](194/A194597.asm)): Digital roots of the nonzero hexagonal numbers.
 * [A194599](http://oeis.org/A194599) ([L15 program](194/A194599.asm)): Units' digits of the nonzero hexagonal numbers.
 * [A194641](http://oeis.org/A194641) ([L15 program](194/A194641.asm)): Digital roots of the nonzero heptagonal numbers.

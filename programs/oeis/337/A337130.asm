@@ -1,0 +1,115 @@
+; A337130: a(n) is the sum of all products of pairs of numbers joined by the diagonals of an n-gon when its vertices are numbered from 1 to n in order.
+; 0,0,0,11,40,99,203,370,621,980,1474,2133,2990,4081,5445,7124,9163,11610,14516,17935,21924,26543,31855,37926,44825,52624,61398,71225,82186,94365,107849,122728,139095,157046,176680,198099,221408,246715,274131,303770
+
+mov $13,$0
+mov $15,$0
+add $15,1
+lpb $15,1
+  clr $0,13
+  sub $15,1
+  mov $0,$13
+  sub $0,$15
+  mov $5,$0
+  mov $2,12
+  mov $3,$0
+  mov $1,$5
+  mov $4,6
+  mov $7,$3
+  mul $5,$3
+  mov $4,$0
+  div $1,4
+  mov $10,$1
+  mov $9,$3
+  mov $2,1
+  mov $7,1
+  bin $3,2
+  mov $8,$7
+  mov $6,$7
+  sub $6,63
+  add $6,$4
+  sub $1,1
+  lpb $0,1
+    mov $10,2
+    sub $0,1
+    div $10,2
+    mul $3,2
+    mov $1,2
+    mov $2,$7
+    add $5,$10
+    add $7,$5
+    mul $2,2
+    mul $7,2
+    sub $4,1
+    mov $1,$1
+    mov $7,1
+    add $7,$8
+    mov $6,6
+    add $1,$10
+    add $3,1
+    mov $6,2
+    add $8,2
+    sub $5,5
+    mul $1,$3
+    mov $9,$6
+    div $4,$8
+    sub $4,1
+    mov $1,$8
+    mul $9,2
+    mov $2,$5
+    mov $4,2
+    add $7,1
+    mov $8,$0
+    mov $3,0
+    mov $7,2
+    mul $8,8
+    mul $7,2
+    div $1,$1
+    mov $5,6
+    mov $10,1
+    mov $6,1
+    mov $6,1
+    mov $1,1
+    mov $5,$8
+    sub $9,1
+    mov $0,$6
+    mov $1,$9
+    add $5,2
+    mov $9,$9
+    clr $10,3
+    sub $0,1
+    mov $9,$7
+    mov $5,1
+    add $6,$0
+    mul $7,$2
+    add $4,2
+    mov $7,$2
+    sub $9,2
+    add $0,$2
+    sub $8,$6
+  lpe
+  add $9,6
+  add $2,$1
+  mov $10,$8
+  mov $2,$3
+  sub $3,1
+  trn $8,2
+  add $7,$8
+  mul $6,6
+  mov $3,1
+  add $0,1
+  add $10,$4
+  mov $4,1
+  add $9,2
+  mul $2,$0
+  sub $7,3
+  sub $9,1
+  mov $5,$4
+  mov $10,$3
+  sub $8,$6
+  sub $4,$9
+  mov $10,1
+  trn $2,1
+  mov $1,$2
+  add $14,$1
+lpe
+mov $1,$14

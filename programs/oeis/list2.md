@@ -630,6 +630,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214263](http://oeis.org/A214263) ([L08 program](214/A214263.asm)): Expansion of f(x^1, x^7) in powers of x where f() is Ramanujan's general theta function.
 * [A214264](http://oeis.org/A214264) ([L08 program](214/A214264.asm)): Expansion of f(x^3, x^5) in powers of x where f() is Ramanujan's two-variable theta function.
 * [A214282](http://oeis.org/A214282) ([L22 program](214/A214282.asm)): Largest Euler characteristic of a downset on an n-dimensional cube.
+* [A214297](http://oeis.org/A214297) ([L26 program](214/A214297.asm)): a(0)=-1, a(1)=0, a(2)=-3; thereafter a(n+2) - 2*a(n+1) + a(n) has period 4: repeat -4, 8, -4, 2.
 * [A214315](http://oeis.org/A214315) ([L10 program](214/A214315.asm)): Floor of the real part of the zeros of the complex Fibonacci function on the right half plane.
 * [A214345](http://oeis.org/A214345) ([L10 program](214/A214345.asm)): Interleaved reading of A073577 and A053755.
 * [A214392](http://oeis.org/A214392) ([L14 program](214/A214392.asm)): If n mod 4 = 0 then a(n) = n/4, otherwise a(n) = n.
@@ -3533,8 +3534,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A294259](http://oeis.org/A294259) ([L08 program](294/A294259.asm)): a(n) = n*(n^3 + 2*n^2 - 5*n + 10)/8.
 * [A294315](http://oeis.org/A294315) ([L08 program](294/A294315.asm)): a(n) = 3*n^3 + n^2.
 * [A294317](http://oeis.org/A294317) ([L08 program](294/A294317.asm)): Triangle read by rows: T(n, k) = 2*n-k, k <= n.
-* [A294389](http://oeis.org/A294389) ([L40 program](294/A294389.asm)): a(n) = 2^(n-3) mod n, for n >= 3.
-* [A294390](http://oeis.org/A294390) ([L40 program](294/A294390.asm)): a(n) = 2^(n-4) mod n, for n >= 4.
+* [A294389](http://oeis.org/A294389) ([L09 program](294/A294389.asm)): a(n) = 2^(n-3) mod n, for n >= 3.
+* [A294390](http://oeis.org/A294390) ([L09 program](294/A294390.asm)): a(n) = 2^(n-4) mod n, for n >= 4.
 * [A294398](http://oeis.org/A294398) ([L69 program](294/A294398.asm)): Solution of the complementary equation a(n) = a(n-1) + b(n-2) + 2, where a(0) = 1, a(1) = 3, b(0) = 2, b(1) = 4.
 * [A294433](http://oeis.org/A294433) ([L44 program](294/A294433.asm)): Expansion of (1+11*x+24*x^2+11*x^3+x^4)/(1-x)^5.
 * [A294456](http://oeis.org/A294456) ([L21 program](294/A294456.asm)): a(1)=0, a(2)=1; thereafter a(n) = a(floor(n/2)) + a(ceiling(n/2)) + 2.

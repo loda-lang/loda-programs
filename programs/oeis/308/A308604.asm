@@ -1,0 +1,92 @@
+; A308604: Number of (not necessarily maximal) cliques in the n X n fiveleaper graph.
+; 2,5,10,17,34,73,126,193,274,369,478,601,738,889,1054,1233,1426,1633,1854,2089,2338,2601,2878,3169,3474,3793,4126,4473,4834,5209,5598,6001,6418,6849,7294,7753,8226,8713,9214,9729,10258,10801,11358,11929,12514,13113,13726
+
+mov $9,$0
+mov $3,$0
+mov $8,73
+mov $2,$0
+sub $3,2
+lpb $0,1
+  mov $5,$2
+  mov $4,2
+  add $2,$3
+  mov $0,1
+  mov $4,1
+  mov $7,$4
+  mul $5,6
+  mov $0,2
+  add $0,$0
+  mul $0,$3
+  mul $3,3
+  sub $3,3
+  sub $0,1
+  div $4,$0
+  mul $2,$3
+  trn $7,1
+  mov $1,$0
+  mov $1,$0
+  add $2,$7
+  add $7,1
+  pow $3,2
+  div $2,$7
+  sub $4,$4
+  mov $8,1
+  mov $6,10
+  sub $1,3
+  mov $6,$5
+  mul $8,5
+  bin $7,$4
+  mov $1,$3
+  mov $0,1
+  add $1,$5
+  mov $5,2
+  mov $6,$7
+  div $2,2
+  mov $1,2
+  add $0,$5
+  add $7,$1
+  add $2,2
+  div $8,$6
+  mov $8,$2
+  sub $5,6
+  sub $5,$5
+  mov $6,$1
+  add $3,$7
+  add $4,3
+  add $3,1
+  mov $4,$0
+  mov $4,$8
+  add $4,1
+  mov $1,7
+  mov $3,1
+  mov $7,$7
+  div $6,5
+  sub $5,$3
+lpe
+add $2,1
+fac $0
+add $5,$6
+add $0,$2
+add $7,$7
+mul $0,$7
+mul $2,2
+mov $5,$7
+mov $4,4
+mov $0,2
+add $8,2
+add $1,2
+mov $5,$0
+add $7,$0
+mul $4,$5
+sub $3,$7
+add $4,3
+sub $2,$7
+mov $1,1
+mov $1,$2
+add $1,2
+mov $10,$9
+mul $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9

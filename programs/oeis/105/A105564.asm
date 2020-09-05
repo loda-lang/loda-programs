@@ -1,0 +1,85 @@
+; A105564: Number of blocks of exactly 4 Fibonacci numbers having equal length <= n.
+; 0,0,0,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,7,7,7,7,8,8,8,8,8,9,9,9,9,10,10,10,10,10,11,11,11,11,11,12,12,12,12,13,13,13,13,13,14,14,14,14,14,15,15,15,15,16,16,16,16,16,17,17,17,17,17,18,18
+
+clr $3,5
+add $0,2523
+mov $4,2
+mov $7,$4
+mov $5,$3
+mov $3,2
+lpb $0,1
+  add $5,$0
+  sub $0,1
+  mul $3,2
+  mov $2,2
+  add $4,$4
+  mov $6,2
+  mul $2,2
+  sub $4,$5
+  add $4,$0
+  trn $5,$0
+  mul $4,$4
+  mul $7,2
+  mov $2,$3
+  add $2,$4
+  mov $1,$0
+  mov $0,3
+  add $5,2
+  sub $4,2
+  add $5,12
+  mov $1,$1
+  mov $2,84
+  add $1,1
+  add $6,3
+  add $2,9
+  mov $8,$6
+  mov $0,1
+  mov $4,$1
+  mov $2,$2
+  sub $8,1
+  add $7,1
+  trn $6,1
+  add $1,$1
+  mul $7,$4
+  mul $7,$6
+  mov $1,2
+  mov $5,$7
+  mov $0,$2
+  trn $5,$6
+  div $3,2
+  div $5,$2
+  mov $0,2
+  mov $7,8
+  sub $6,1
+  add $5,$0
+  mov $2,1
+  mov $2,$2
+  mov $2,$5
+  mov $6,$3
+  add $6,$3
+  cmp $1,$4
+  add $6,$7
+  add $3,4
+  mov $5,$0
+  trn $6,2
+  add $6,$1
+  add $0,$5
+  sub $7,4
+  mov $4,2
+  mov $0,$6
+  add $1,1
+  add $7,$6
+  mov $4,56
+  add $6,2
+  mov $0,$3
+lpe
+mov $3,5
+trn $8,1
+add $1,$8
+mov $6,1
+trn $5,1
+add $4,7
+mov $1,1
+sub $7,$5
+mov $1,$2
+sub $1,544
