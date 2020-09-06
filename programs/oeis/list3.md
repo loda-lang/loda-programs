@@ -898,7 +898,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329994](http://oeis.org/A329994) ([L10 program](329/A329994.asm)): Beatty sequence for 2^x, where 1/x^2 + 1/2^x = 1.
 * [A329996](http://oeis.org/A329996) ([L21 program](329/A329996.asm)): Beatty sequence for x^3, where 1/x^3 + 1/3^x = 1.
 * [A329997](http://oeis.org/A329997) ([L05 program](329/A329997.asm)): Beatty sequence for 3^x, where 1/x^3 + 1/3^x = 1.
-* [A329999](http://oeis.org/A329999) ([L65 program](329/A329999.asm)): Beatty sequence for sqrt(x-1), where 1/sqrt(x-1) + 1/sqrt(x+1) = 1.
+* [A329999](http://oeis.org/A329999) ([L25 program](329/A329999.asm)): Beatty sequence for sqrt(x-1), where 1/sqrt(x-1) + 1/sqrt(x+1) = 1.
 * [A330000](http://oeis.org/A330000) ([L46 program](330/A330000.asm)): Beatty sequence for sqrt(x+1), where 1/sqrt(x-1) + 1/sqrt(x+1) = 1.
 * [A330002](http://oeis.org/A330002) ([L04 program](330/A330002.asm)): Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
 * [A330003](http://oeis.org/A330003) ([L08 program](330/A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
