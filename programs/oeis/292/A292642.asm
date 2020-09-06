@@ -1,0 +1,112 @@
+; A292642: Rank of (5-r)*n when all the numbers (5-r)*j and (5+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
+; 1,3,4,6,7,9,10,12,14,15,17,18,20,21,23,24,26,28,29,31,32,34,35,37,38,40,42,43,45,46,48,49,51,53,54,56,57,59,60,62,63,65,67,68,70,71,73,74,76,77,79,81,82,84,85,87,88,90,91,93,95,96,98,99,101,102
+
+mov $11,$0
+mov $8,$0
+mov $3,$0
+mov $2,$8
+mov $6,$2
+mov $9,5
+mov $3,$0
+mov $9,$2
+mov $5,$8
+mov $1,$0
+mov $6,$5
+mul $1,2
+mov $0,3
+add $8,$0
+div $1,2
+mov $9,8
+mov $0,$9
+mov $10,2
+mov $8,$8
+mov $1,4
+sub $1,$9
+mov $7,2
+lpb $0,1
+  div $2,$0
+  mul $3,$3
+  mov $7,$2
+  mul $10,$7
+  mov $3,3
+  mov $10,2
+  mov $4,$5
+  mov $5,$7
+  add $2,$5
+  mul $2,2
+  add $10,$4
+  mov $5,$8
+  sub $8,1
+  div $8,$0
+  add $2,4
+  mov $5,1
+  mov $6,2
+  sub $2,1
+  mov $4,1
+  mov $6,6
+  add $10,1
+  mul $10,6
+  sub $8,$6
+  mov $2,$1
+  sub $7,$8
+  mov $7,$5
+  mov $1,$9
+  mov $9,1
+  add $6,$8
+  sub $5,1
+  add $7,$10
+  sub $3,1
+  add $5,2
+  add $1,$5
+  div $4,$4
+  trn $1,$6
+  mov $9,$7
+  add $2,$9
+  sub $6,$3
+  add $3,1
+  mul $9,$5
+  sub $0,1
+  mov $5,$6
+  add $3,$10
+  mov $2,1
+  mov $7,$3
+  cmp $0,$0
+lpe
+add $9,$5
+sub $4,$2
+add $4,$2
+mov $6,6
+mul $6,2
+sub $8,1
+mov $3,1
+add $5,$5
+mov $9,$4
+sub $10,2
+mov $4,22
+mul $5,7
+mov $1,1
+add $3,$10
+add $9,128
+mul $3,3
+sub $6,5
+mov $8,$9
+cmp $9,2
+add $4,$10
+sub $4,2
+mov $5,$6
+add $7,$10
+add $7,2
+mul $3,4
+mov $6,2
+div $3,$8
+mov $5,1
+mov $10,1
+add $3,5
+mov $1,$3
+sub $1,5
+mov $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11
+mul $12,$11

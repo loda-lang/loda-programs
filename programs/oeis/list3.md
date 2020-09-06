@@ -20,7 +20,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300576](http://oeis.org/A300576) ([L08 program](300/A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300622](http://oeis.org/A300622) ([L12 program](300/A300622.asm)): Denominators of sequence whose exponential self-convolution yields sequence 1, 2, 3, 5, 7, 11, 13, ... (1 with primes).
 * [A300659](http://oeis.org/A300659) ([L47 program](300/A300659.asm)): Product of digits of n!.
-* [A300758](http://oeis.org/A300758) ([L06 program](300/A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
+* [A300758](http://oeis.org/A300758) ([L05 program](300/A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
 * [A300846](http://oeis.org/A300846) ([L08 program](300/A300846.asm)): a(n) = 3*(n - 1)^2*n^3.
 * [A300847](http://oeis.org/A300847) ([L03 program](300/A300847.asm)): a(n) = 12*binomial(n, 5).
 * [A301291](http://oeis.org/A301291) ([L14 program](301/A301291.asm)): Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
@@ -677,7 +677,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A320065](http://oeis.org/A320065) ([L20 program](320/A320065.asm)): a(n) is the smallest integer i such that binomial(2i,i) > n.
 * [A320106](http://oeis.org/A320106) ([L14 program](320/A320106.asm)): Möbius transform of A320107.
 * [A320226](http://oeis.org/A320226) ([L17 program](320/A320226.asm)): Number of integer partitions of n whose non-1 parts are all equal.
-* [A320259](http://oeis.org/A320259) ([L07 program](320/A320259.asm)): Terms that are on the y-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
+* [A320259](http://oeis.org/A320259) ([L05 program](320/A320259.asm)): Terms that are on the y-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
 * [A320281](http://oeis.org/A320281) ([L05 program](320/A320281.asm)): Terms that are on the positive x-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k >= 0.
 * [A320394](http://oeis.org/A320394) ([L14 program](320/A320394.asm)): Number of ones in binary expansion n^5.
 * [A320427](http://oeis.org/A320427) ([L08 program](320/A320427.asm)): a(n) = floor(3*n/2) + ceiling(n/6) + 9.
