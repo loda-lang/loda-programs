@@ -1,85 +1,16 @@
 ; A006591: Sum_{k = 1..n } nearest integer to n/k (if n/k is midway between two numbers take the smaller).
 ; 1,3,5,8,11,14,17,22,24,28,33,36,40,45,48,53,57,62,66,71,74,79,86,89,93,99,102,109,114,117,122,129,133,138,143,148,152,159,164,169,175,178,185,190,193,202,207,212,215,223,227,232,241,244,249,256,259,266,273
 
-mov $7,3
-mov $8,2
 mov $2,$0
 lpb $2,1
   mov $3,$0
-  sub $8,6
   mov $5,1
-  lpb $4,1
-    mov $2,$7
-    mov $0,1
-    add $8,$7
-    mov $8,1
-    sub $5,$3
-    pow $2,3
-    mov $4,12
-    sub $4,2
-    mov $1,$0
-    sub $4,$2
-    mov $5,$5
-    mov $6,1
-    sub $8,5
-    trn $1,$8
-  lpe
-  add $7,$5
   add $5,$3
   lpb $5,1
     sub $5,$2
     add $4,1
   lpe
-  add $5,$1
-  div $3,2
-  add $1,$2
-  lpb $6,1
-    sub $6,$2
-    add $0,$6
-    sub $6,$5
-    trn $2,$6
-    mul $3,2
-    mul $3,2
-    mov $7,$7
-    mov $8,$7
-    div $4,2
-    trn $2,$8
-    add $2,8
-    mul $5,$0
-    mov $8,$6
-    mov $4,$6
-    sub $8,$8
-    add $2,$7
-    mul $7,3
-    mov $6,$3
-    add $7,$4
-    add $0,$1
-    add $8,$0
-    add $8,1
-    div $4,$8
-    mov $7,9
-    add $8,1
-    add $8,7
-    mul $1,2
-    sub $6,15
-    add $3,$2
-    sub $1,$3
-    trn $0,$0
-    add $7,$5
-    mul $6,$2
-    mov $8,$2
-    mov $1,1
-    add $0,$3
-  lpe
-  sub $6,1
-  mov $1,1
-  add $3,1
   sub $2,1
-  mov $7,5
-  mov $1,1
-  mov $7,23
-  add $3,1
-  add $3,1
 lpe
 mov $1,$4
 add $1,1
