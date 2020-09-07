@@ -1,4 +1,4 @@
-; A034112: Decimal part of square root of a(n) starts with 6: first term of runs.
+; A034112: Fractional part of square root of a(n) starts with 6: first term of runs.
 ; 7,13,22,32,44,58,74,93,113,135,159,185,214,244,276,310,346,385,425,467,511,557,606,656,708,762,818,877,937,999,1063,1129,1198,1268,1340,1414,1490,1569,1649,1731,1815,1901,1990,2080,2172,2266,2362,2461,2561
 
 mov $4,$0
