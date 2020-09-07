@@ -856,6 +856,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329682](http://oeis.org/A329682) ([L05 program](329/A329682.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.
 * [A329683](http://oeis.org/A329683) ([L03 program](329/A329683.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HH and HD.
 * [A329684](http://oeis.org/A329684) ([L03 program](329/A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
+* [A329723](http://oeis.org/A329723) ([L103 program](329/A329723.asm)): Coefficients of expansion of (1-2x^3)/(1-x-x^2) in powers of x.
 * [A329754](http://oeis.org/A329754) ([L22 program](329/A329754.asm)): Doubly pentagonal pyramidal numbers.
 * [A329774](http://oeis.org/A329774) ([L56 program](329/A329774.asm)): a(n) = n+1 for n <= 2; otherwise a(n) = 3*a(n-3)+1.
 * [A329822](http://oeis.org/A329822) ([L06 program](329/A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.

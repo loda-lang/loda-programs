@@ -1,0 +1,46 @@
+; A055017: Difference between sums of alternate digits of n starting with the last, i.e., (Sum of ultimate digit of n, antepenultimate digit of n,...)-(sum of penultimate digit of n, preantepenultimate digit of n,...).
+; 0,1,2,3,4,5,6,7,8,9,-1,0,1,2,3,4,5,6,7,8,-2,-1,0,1,2,3,4,5,6,7,-3,-2,-1,0,1,2,3,4,5,6,-4,-3,-2,-1,0,1,2,3,4,5,-5,-4,-3,-2,-1,0,1,2,3,4,-6,-5,-4,-3,-2,-1,0,1,2,3,-7,-6,-5,-4,-3,-2,-1,0,1,2,-8,-7,-6,-5,-4,-3
+
+mov $4,1
+mov $2,6
+mov $3,3
+add $2,$0
+sub $4,$0
+mov $3,2
+mov $1,21
+div $3,61
+mov $1,1
+mov $0,$2
+mov $4,1
+lpb $0,1
+  trn $1,8
+  sub $0,1
+  mov $1,1
+  trn $1,$2
+  add $2,$4
+  sub $4,29
+  mul $4,$4
+  mov $2,6
+  sub $3,2
+  mov $4,$0
+  sub $0,9
+  mov $1,5
+lpe
+sub $2,$4
+add $1,$3
+mul $0,$2
+sub $2,$3
+add $3,$3
+mul $3,2
+add $1,6
+add $2,1
+add $0,11
+mov $0,$2
+sub $2,1
+add $4,$1
+mul $2,4
+sub $4,$0
+sub $4,$1
+mov $1,$4
+sub $1,1
+div $1,2
