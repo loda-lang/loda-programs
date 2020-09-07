@@ -4,23 +4,14 @@
 mov $2,$0
 add $0,3
 div $2,2
-mov $1,$2
 sub $0,2
 lpb $0,1
-  mov $1,$1
-  add $2,$2
-  mov $1,$1
-  mul $1,4
+  mul $2,2
   mov $1,1
   sub $0,1
   sub $1,1
   add $2,$0
 lpe
-add $2,$0
 gcd $1,2
 sub $1,$2
-add $1,6
-mov $0,$1
-mov $1,$0
-sub $1,6
 div $1,2
