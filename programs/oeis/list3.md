@@ -49,7 +49,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301673](http://oeis.org/A301673) ([L13 program](301/A301673.asm)): Partial sums of A301672.
 * [A301677](http://oeis.org/A301677) ([L25 program](301/A301677.asm)): Partial sums of A301676.
 * [A301685](http://oeis.org/A301685) ([L31 program](301/A301685.asm)): Partial sums of A301684.
-* [A301688](http://oeis.org/A301688) ([L49 program](301/A301688.asm)): Coordination sequence for node of type V2 in "krh" 2-D tiling (or net).
+* [A301688](http://oeis.org/A301688) ([L23 program](301/A301688.asm)): Coordination sequence for node of type V2 in "krh" 2-D tiling (or net).
 * [A301689](http://oeis.org/A301689) ([L22 program](301/A301689.asm)): Partial sums of A301688.
 * [A301694](http://oeis.org/A301694) ([L11 program](301/A301694.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)*(1 - x^3)).
 * [A301695](http://oeis.org/A301695) ([L07 program](301/A301695.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)^2*(1 - x^3)).
@@ -648,7 +648,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318935](http://oeis.org/A318935) ([L08 program](318/A318935.asm)): a(n) = Sum_{2^m divides n} 2^(3*m).
 * [A319006](http://oeis.org/A319006) ([L13 program](319/A319006.asm)): Sum of the next n positive integers repeated (A008619).
 * [A319007](http://oeis.org/A319007) ([L12 program](319/A319007.asm)): Sum of the next n nonnegative integers repeated (A004526).
-* [A319117](http://oeis.org/A319117) ([L44 program](319/A319117.asm)): Sign of the n-th Maclaurin coefficient of 1/(exp(x) + exp(1)/2).
+* [A319117](http://oeis.org/A319117) ([L15 program](319/A319117.asm)): Sign of the n-th Maclaurin coefficient of 1/(exp(x) + exp(1)/2).
 * [A319127](http://oeis.org/A319127) ([L04 program](319/A319127.asm)): Crossing number of the complete bipartite graph K_{6,n}.
 * [A319128](http://oeis.org/A319128) ([L08 program](319/A319128.asm)): Interleave n*(3*n - 2), 3*n^2 + n - 1, n=0,0,1,1, ... .
 * [A319258](http://oeis.org/A319258) ([L25 program](319/A319258.asm)): a(n) = 1 + 2*3 + 4 + 5*6 + 7 + 8*9 + 10 + 11*12 + ... + (up to n).
@@ -890,7 +890,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329939](http://oeis.org/A329939) ([L10 program](329/A329939.asm)): Beatty sequence for cosh x,  where csch x + sech x = 1 .
 * [A329961](http://oeis.org/A329961) ([L22 program](329/A329961.asm)): Beatty sequence for 2 + sin x, where x = least positive solution of 1/(2 + sin x) + 1/(2 + cos x) = 1.
 * [A329962](http://oeis.org/A329962) ([L39 program](329/A329962.asm)): Beatty sequence for 2 + cos x, where x = least positive solution of 1/(2 + sin x) + 1/(2 + cos x) = 1.
-* [A329974](http://oeis.org/A329974) ([L40 program](329/A329974.asm)): Beatty sequence for the real solution x of 1/x + 1/(1+x+x^2) = 1.
+* [A329974](http://oeis.org/A329974) ([L17 program](329/A329974.asm)): Beatty sequence for the real solution x of 1/x + 1/(1+x+x^2) = 1.
 * [A329975](http://oeis.org/A329975) ([L10 program](329/A329975.asm)): Beatty sequence for 1 + x + x^2, where x is the real solution of 1/x + 1/(1+x+x^2) = 1.
 * [A329977](http://oeis.org/A329977) ([L06 program](329/A329977.asm)): Beatty sequence for the number x satisfying 1/x + 1/(log x) = 1.
 * [A329978](http://oeis.org/A329978) ([L09 program](329/A329978.asm)): Beatty sequence for log x, where 1/x + 1/(log x) = 1.
@@ -1021,7 +1021,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336535](http://oeis.org/A336535) ([L12 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
 * [A336627](http://oeis.org/A336627) ([L42 program](336/A336627.asm)): Coordination sequence for the Manhattan lattice.
 * [A336705](http://oeis.org/A336705) ([L42 program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
-* [A336754](http://oeis.org/A336754) ([L22 program](336/A336754.asm)): Perimeters in increasing order of integer-sided triangles whose sides a < b < c are in arithmetic progression.
+* [A336754](http://oeis.org/A336754) ([L12 program](336/A336754.asm)): Perimeters in increasing order of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336819](http://oeis.org/A336819) ([L15 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
 * [A336867](http://oeis.org/A336867) ([L08 program](336/A336867.asm)): Numbers n such that n! does not have distinct prime multiplicities.
 * [A336868](http://oeis.org/A336868) ([L17 program](336/A336868.asm)): Indicator function for numbers n such that n! has distinct prime multiplicities.

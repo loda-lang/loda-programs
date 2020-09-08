@@ -1,0 +1,114 @@
+; A030124: Complement (and also first differences) of Hofstadter's sequence A005228.
+; 2,4,5,6,8,9,10,11,13,14,15,16,17,19,20,21,22,23,24,25,27,28,29,30,31,32,33,34,36,37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54,55,57,58,59,60,61,62,63,64,65,66,67,68,70,71,72,73,74,75,76,77,78
+
+mov $11,$0
+mov $4,4
+mov $10,2
+mov $1,2
+mov $3,1
+add $4,$0
+mov $6,29
+mov $7,4
+mov $7,$4
+add $0,$4
+mov $10,5
+mov $5,4
+mov $2,$3
+mov $7,2
+add $7,1
+mov $7,240
+mov $5,1
+mul $0,2
+mov $4,1
+trn $1,7
+lpb $0,1
+  sub $0,1
+  sub $2,2
+  add $1,13
+  mov $10,1
+  add $4,1
+  add $5,$6
+  add $0,1
+  sub $10,4
+  add $1,$3
+  mov $2,$4
+  add $4,2
+  mov $2,2
+  mov $8,$4
+  add $10,5
+  sub $0,$4
+  add $8,$3
+  mov $10,2
+  mov $8,1
+  add $4,$2
+  add $1,1
+lpe
+mov $9,$7
+div $10,$3
+mov $1,$5
+add $0,1
+mov $2,$7
+add $0,7
+pow $7,6
+mov $4,1
+mov $3,$2
+add $2,$1
+add $0,2
+sub $4,$9
+div $3,4
+add $0,4
+sub $9,10
+add $2,1
+pow $2,2
+sub $10,41
+mov $10,$2
+sub $9,1
+mov $0,0
+mov $2,$0
+add $3,$10
+add $8,3
+sub $5,$5
+mov $7,$1
+sub $8,$3
+add $9,1
+mov $0,$10
+add $0,1
+div $9,2
+mov $0,$7
+mov $10,$9
+add $8,$7
+mov $1,1
+mov $3,1
+mov $4,1
+mov $4,1
+mov $3,8
+mov $7,$7
+mov $1,$1
+mov $0,$0
+sub $9,1
+add $9,$6
+sub $10,1
+mov $4,1
+sub $10,$8
+add $8,$7
+trn $0,$3
+add $10,3
+add $2,2
+mov $9,$6
+add $4,6
+mov $4,1
+sub $4,1
+mov $5,$6
+mov $6,3
+add $0,$5
+mov $5,$4
+mov $1,$0
+sub $1,51
+div $1,29
+add $1,2
+mov $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11
+mul $12,$11
