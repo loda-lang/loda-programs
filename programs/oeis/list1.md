@@ -395,6 +395,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105637](http://oeis.org/A105637) ([L10 program](105/A105637.asm)): a(n) = a(n-2)+a(n-3)-a(n-5).
 * [A105638](http://oeis.org/A105638) ([L08 program](105/A105638.asm)): Maximum number of intersections in self-intersecting n-gon.
 * [A105644](http://oeis.org/A105644) ([L03 program](105/A105644.asm)): a(n) = floor((Pi+e)*n).
+* [A105661](http://oeis.org/A105661) ([L41 program](105/A105661.asm)): a(n)=1 if n is a prime, 2 if n is an even semiprime, otherwise 0.
 * [A105674](http://oeis.org/A105674) ([L21 program](105/A105674.asm)): Highest minimal distance of any Type I (strictly) singly-even binary self-dual code of length 2n.
 * [A105693](http://oeis.org/A105693) ([L08 program](105/A105693.asm)): a(n) = Fibonacci(2n+2)-2^n.
 * [A105723](http://oeis.org/A105723) ([L05 program](105/A105723.asm)): a(n) = 3^n - (-1)^n.
@@ -402,7 +403,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105752](http://oeis.org/A105752) ([L13 program](105/A105752.asm)): Expansion of e.g.f. cos(i*log(1 + x)), i = sqrt(-1).
 * [A105770](http://oeis.org/A105770) ([L08 program](105/A105770.asm)): Expansion of (x^2-x+1)(4x^2+x+1) / ((1+x+x^2)(1-x)^3).
 * [A105811](http://oeis.org/A105811) ([L08 program](105/A105811.asm)): Expansion of (1+x-x^2)/(1+x)^2.
-* [A105812](http://oeis.org/A105812) ([L17 program](105/A105812.asm)): Expansion of (1+x-x^2)/(1+x).
+* [A105812](http://oeis.org/A105812) ([L15 program](105/A105812.asm)): Expansion of (1+x-x^2)/(1+x).
 * [A105814](http://oeis.org/A105814) ([L26 program](105/A105814.asm)): a(n) = n^2 + (n concatenated with n).
 * [A105899](http://oeis.org/A105899) ([L04 program](105/A105899.asm)): Period 6: repeat [1, 1, 2, 2, 3, 3].
 * [A105938](http://oeis.org/A105938) ([L19 program](105/A105938.asm)): a(n) = binomial(n+2,2)*binomial(n+5,2).
@@ -1360,7 +1361,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123357](http://oeis.org/A123357) ([L12 program](123/A123357.asm)): Kekulé numbers for certain benzenoids (see the Cyvin-Gutman book for details).
 * [A123363](http://oeis.org/A123363) ([L10 program](123/A123363.asm)): a(n) = n^3 + (-1)^(n+1).
 * [A123384](http://oeis.org/A123384) ([L12 program](123/A123384.asm)): Number of bits in binary expansion of 10^n.
-* [A123578](http://oeis.org/A123578) ([L10 program](123/A123578.asm)): The Kruskal-Macaulay function M_2(n).
+* [A123578](http://oeis.org/A123578) ([L05 program](123/A123578.asm)): The Kruskal-Macaulay function M_2(n).
 * [A123596](http://oeis.org/A123596) ([L05 program](123/A123596.asm)): Squares alternating with triangular numbers.
 * [A123620](http://oeis.org/A123620) ([L45 program](123/A123620.asm)): Expansion of (1 + x + x^2) / (1 - 3*x - 3*x^2).
 * [A123640](http://oeis.org/A123640) ([L21 program](123/A123640.asm)): Consider the 2^n compositions of n per row and mark only those ending in an odd part.
@@ -2409,7 +2410,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A137344](http://oeis.org/A137344) ([L18 program](137/A137344.asm)): a(n)=4a(n-2). Also 3*A084221.
 * [A137362](http://oeis.org/A137362) ([L18 program](137/A137362.asm)): Positions at which the truncated square root of triangular numbers is unique.
 * [A137397](http://oeis.org/A137397) ([L05 program](137/A137397.asm)): Number of distinct palindromic subwords in the binary representation of n.
-* [A137410](http://oeis.org/A137410) ([L07 program](137/A137410.asm)): a(n) = (5^n - 3) / 2.
+* [A137410](http://oeis.org/A137410) ([L05 program](137/A137410.asm)): a(n) = (5^n - 3) / 2.
 * [A137444](http://oeis.org/A137444) ([L11 program](137/A137444.asm)): a(n) = 2*a(n-1) - 2*a(n-2) with a(0)=1, a(1)=4.
 * [A137445](http://oeis.org/A137445) ([L15 program](137/A137445.asm)): a(n) = 2a(n-1)-2a(n-2), with a(0)=3 and a(1)=2.
 * [A137480](http://oeis.org/A137480) ([L12 program](137/A137480.asm)): a(n)=4a(n-2).
@@ -4278,7 +4279,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165998](http://oeis.org/A165998) ([L12 program](165/A165998.asm)): Denominators of Taylor series expansion of 1/(3*x)*log((1+x)/(1-x)^2)
 * [A166021](http://oeis.org/A166021) ([L08 program](166/A166021.asm)): a(n) = 2*A000124(A003056(n-1)) if A002262(n-1)=0, otherwise a(n-1)+1.
 * [A166023](http://oeis.org/A166023) ([L19 program](166/A166023.asm)): a(n) = 6*a(n-2) for n > 2; a(1) = 1, a(2) = 5.
-* [A166024](http://oeis.org/A166024) ([L05 program](166/A166024.asm)): Define dsf(n) = A045503(n) = n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the decimal digits of n. dsf(421845123) = 16780890 and dsf(16780890) = 421845123, so these 2 numbers make a loop for the function dsf.
+* [A166024](http://oeis.org/A166024) ([L04 program](166/A166024.asm)): Define dsf(n) = A045503(n) = n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the decimal digits of n. dsf(421845123) = 16780890 and dsf(16780890) = 421845123, so these 2 numbers make a loop for the function dsf.
 * [A166025](http://oeis.org/A166025) ([L11 program](166/A166025.asm)): a(0) = 6, a(1) = 17, a(n+1) = a(n) + a(n-1) for n>0.
 * [A166033](http://oeis.org/A166033) ([L23 program](166/A166033.asm)): a(n) = 11/4 +11*n/2 + 29*(-1)^n/4.
 * [A166060](http://oeis.org/A166060) ([L10 program](166/A166060.asm)): 4*3^n - 3*2^n.
@@ -4516,7 +4517,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168236](http://oeis.org/A168236) ([L04 program](168/A168236.asm)): a(n) = (6*n - 3*(-1)^n - 1)/4.
 * [A168237](http://oeis.org/A168237) ([L04 program](168/A168237.asm)): a(n) = (6*n + 3*(-1)^n - 3)/4.
 * [A168240](http://oeis.org/A168240) ([L12 program](168/A168240.asm)): 1+7*n+13*n^2.
-* [A168244](http://oeis.org/A168244) ([L10 program](168/A168244.asm)): a(n) = 1 + 3*n - 2*n^2.
+* [A168244](http://oeis.org/A168244) ([L09 program](168/A168244.asm)): a(n) = 1 + 3*n - 2*n^2.
 * [A168251](http://oeis.org/A168251) ([L11 program](168/A168251.asm)): a(n) = n^2 if n is odd, n^2*2^(n-2) if n is even.
 * [A168255](http://oeis.org/A168255) ([L09 program](168/A168255.asm)): n appears n-th nonprime number times.
 * [A168269](http://oeis.org/A168269) ([L04 program](168/A168269.asm)): a(n) = 2*n - (-1)^n.

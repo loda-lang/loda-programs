@@ -4648,6 +4648,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A051943](http://oeis.org/A051943) ([L09 program](051/A051943.asm)): Truncated triangular pyramid numbers: a(n) = Sum_{k=9..n} (k*(k+1)/2 - 45).
 * [A051947](http://oeis.org/A051947) ([L14 program](051/A051947.asm)): Partial sums of A034263.
 * [A052036](http://oeis.org/A052036) ([L22 program](052/A052036.asm)): Smallest number that must be added to n to make or keep n palindromic.
+* [A052126](http://oeis.org/A052126) ([L42 program](052/A052126.asm)): a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
 * [A052146](http://oeis.org/A052146) ([L10 program](052/A052146.asm)): a(n) = floor((sqrt(1+8*n)-3)/2).
 * [A052149](http://oeis.org/A052149) ([L08 program](052/A052149.asm)): Nonsquare rectangles on an n X n board.
 * [A052150](http://oeis.org/A052150) ([L16 program](052/A052150.asm)): Partial sums of A000340, second partial sums of A003462.
@@ -5027,7 +5028,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056594](http://oeis.org/A056594) ([L16 program](056/A056594.asm)): Periodic sequence 1,0,-1,0,...; expansion of 1/(1 + x^2).
 * [A056640](http://oeis.org/A056640) ([L17 program](056/A056640.asm)): At stage 1, start with a unit square. At each successive stage add 4*(n-1) new squares around outside with edge-to-edge contacts. Sequence gives number of squares (regardless of size) at n-th stage.
 * [A056699](http://oeis.org/A056699) ([L20 program](056/A056699.asm)): First differences are 2,1,-2,3 (repeated).
-* [A056738](http://oeis.org/A056738) ([L154 program](056/A056738.asm)): Positions where 2's occur in A056731.
+* [A056738](http://oeis.org/A056738) ([L66 program](056/A056738.asm)): Positions where 2's occur in A056731.
 * [A056791](http://oeis.org/A056791) ([L09 program](056/A056791.asm)): Weight of binary expansion of n + length of binary expansion of n.
 * [A056792](http://oeis.org/A056792) ([L08 program](056/A056792.asm)): Minimal number of steps to get from 0 to n by (a) adding 1 or (b) multiplying by 2.
 * [A056822](http://oeis.org/A056822) ([L06 program](056/A056822.asm)): Nearest integer to n^2/16.
@@ -5157,7 +5158,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A058937](http://oeis.org/A058937) ([L06 program](058/A058937.asm)): Maximal exponent of x in all terms of Somos polynomial of order n.
 * [A058962](http://oeis.org/A058962) ([L09 program](058/A058962.asm)): a(n) = 2^(2*n)*(2*n+1).
 * [A058966](http://oeis.org/A058966) ([L08 program](058/A058966.asm)): a(3) = 1, otherwise a(n) = n*2^(n-3) - 2^(n-2) - 2.
-* [A058968](http://oeis.org/A058968) ([L08 program](058/A058968.asm)): a(n) = 2^n + 2^(n - 1) - n - 8.
+* [A058968](http://oeis.org/A058968) ([L15 program](058/A058968.asm)): a(n) = 2^n + 2^(n - 1) - n - 8.
 * [A058992](http://oeis.org/A058992) ([L09 program](058/A058992.asm)): Gossip Problem: there are n people and each of them knows some item of gossip not known to the others. They communicate by telephone and whenever one person calls another, they tell each other all that they know at that time. How many calls are required before each gossip knows everything?
 * [A059009](http://oeis.org/A059009) ([L14 program](059/A059009.asm)): Numbers having an odd number of zeros in their binary expansion.
 * [A059010](http://oeis.org/A059010) ([L15 program](059/A059010.asm)): Natural numbers having an even number of nonleading zeros in their binary expansion.
@@ -5218,7 +5219,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059834](http://oeis.org/A059834) ([L07 program](059/A059834.asm)): Sum of squares of entries of Wilkinson's eigenvalue test matrix of order 2n+1.
 * [A059839](http://oeis.org/A059839) ([L13 program](059/A059839.asm)): a(n) = n^8 + n^6 + n^4 + n^2 + 1.
 * [A059840](http://oeis.org/A059840) ([L16 program](059/A059840.asm)): a(n) = F(n)*F(n-1) if n odd otherwise F(n)*F(n-1)-1, where F = Fibonacci numbers A000045.
-* [A059841](http://oeis.org/A059841) ([L03 program](059/A059841.asm)): Period 2: Repeat [1,0]. a(n) = 1 - (n mod 2).
+* [A059841](http://oeis.org/A059841) ([L02 program](059/A059841.asm)): Period 2: Repeat [1,0]. a(n) = 1 - (n mod 2).
 * [A059845](http://oeis.org/A059845) ([L06 program](059/A059845.asm)): a(n) = n*(3*n + 11)/2.
 * [A059855](http://oeis.org/A059855) ([L06 program](059/A059855.asm)): Quotient cycle lengths in continued fraction expansion of sqrt(n^2+4).
 * [A059859](http://oeis.org/A059859) ([L17 program](059/A059859.asm)): Sum of squares of first n quarter-squares (A002620).
@@ -6796,6 +6797,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081193](http://oeis.org/A081193) ([L15 program](081/A081193.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n>1, a(0)=1, a(1)=9.
 * [A081199](http://oeis.org/A081199) ([L10 program](081/A081199.asm)): 5th binomial transform of (0,1,0,1,...), A000035.
 * [A081200](http://oeis.org/A081200) ([L11 program](081/A081200.asm)): 6th binomial transform of (0,1,0,1,0,1,....), A000035.
+* [A081201](http://oeis.org/A081201) ([L42 program](081/A081201.asm)): Binomial transform of (0,1,0,1,0,1,....), A000035.
 * [A081204](http://oeis.org/A081204) ([L09 program](081/A081204.asm)): Staircase on Pascal's triangle.
 * [A081205](http://oeis.org/A081205) ([L18 program](081/A081205.asm)): Staircase on Pascal's triangle.
 * [A081219](http://oeis.org/A081219) ([L11 program](081/A081219.asm)): One sixtieth the product of primitive Pythagorean triangles' sides whose odd values differ by 2.

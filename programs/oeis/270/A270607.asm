@@ -1,0 +1,66 @@
+; A270607: Number of 2X2X2 triangular 0..n arrays with some element plus some adjacent element totalling n+1 or n-1 exactly once.
+; 6,0,36,36,96,120,204,252,360,432,564,660,816,936,1116,1260,1464,1632,1860,2052,2304,2520,2796,3036,3336,3600,3924,4212,4560,4872,5244,5580,5976,6336,6756,7140,7584,7992,8460,8892,9384,9840,10356,10836,11376
+
+mov $4,$0
+mov $2,2
+mov $2,$0
+mul $0,$4
+mov $4,$2
+mov $4,1
+mov $5,2
+add $4,$0
+mov $0,$4
+mov $4,1
+mov $6,2
+mov $3,$6
+mov $1,$2
+trn $4,$2
+mov $5,$0
+add $0,4
+mul $6,$0
+sub $3,2
+sub $4,1
+mov $5,$0
+pow $4,$5
+sub $0,$4
+add $6,2
+add $2,$4
+mov $5,$6
+add $0,2
+lpb $0,1
+  mov $5,$5
+  sub $0,1
+  add $6,$6
+  mul $1,16
+  add $4,30
+  add $4,$2
+  sub $0,$2
+  mov $4,$0
+  trn $3,5
+  sub $5,2
+  mov $5,$4
+  trn $2,29
+  mov $4,9
+  mov $2,4
+  mov $1,$1
+  mov $3,$0
+  mov $3,$6
+  mov $5,$5
+  add $1,$1
+  mov $2,2
+  sub $2,$2
+  mov $6,1
+  mul $5,$1
+  mul $4,2
+  mov $5,1
+  add $0,1
+  sub $1,1
+  add $0,1
+  sub $5,$6
+  div $4,2
+  mov $1,$0
+lpe
+mov $5,1
+mov $1,$0
+sub $1,6
+mul $1,6
