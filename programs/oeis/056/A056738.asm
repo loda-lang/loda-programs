@@ -1,91 +1,69 @@
 ; A056738: Positions where 2's occur in A056731.
 ; 1,4,8,13,20,28,37,47,59,72,86,101,117,135,154,174,195,217,240,264,290,317,345,374,404,435,467,500,535,571,608,646,685,725,766,808,851,896,942,989,1037,1086,1136,1187,1239,1292,1346,1402,1459,1517,1576,1636
 
-mov $12,$0
-mov $14,$0
-add $14,1
-lpb $14,1
-  clr $0,12
-  sub $14,1
-  mov $0,$12
-  sub $0,$14
-  mov $9,$0
-  mov $11,$0
-  add $11,1
-  lpb $11,1
-    clr $0,9
-    sub $11,1
-    mov $0,$9
-    sub $0,$11
-    mov $5,$0
-    mov $7,2
-    lpb $7,1
-      clr $0,5
-      sub $7,1
-      mov $0,$5
-      add $0,$7
-      sub $0,0
-      mov $2,6
-      mov $3,1
-      mov $4,$0
-      sub $4,$4
-      mov $3,$4
-      mov $2,$4
-      add $3,4
-      mov $4,$4
-      mul $4,$0
-      mov $2,$2
-      add $4,$3
-      mov $4,$2
-      mul $0,$3
-      sub $0,$4
-      sub $4,$2
+mov $21,$0
+mov $23,$0
+add $23,1
+lpb $23,1
+  clr $0,21
+  sub $23,1
+  mov $0,$21
+  sub $0,$23
+  mov $18,$0
+  mov $20,$0
+  add $20,1
+  lpb $20,1
+    sub $20,1
+    mov $0,$18
+    sub $0,$20
+    mov $14,$0
+    mov $16,2
+    lpb $16,1
+      sub $16,1
+      mov $0,$14
+      add $0,$16
+      sub $0,1
+      mov $11,$0
+      mov $4,4
+      add $4,$0
+      mov $6,29
+      add $0,$4
+      mul $0,2
+      mov $4,1
       lpb $0,1
-        mov $3,5
-        mov $1,2
-        bin $4,2
-        sub $2,1
-        mov $1,$3
-        sub $1,$1
-        add $3,2
-        mov $1,1
-        add $2,$3
-        sub $0,2
-        sub $0,$2
-        mov $4,$1
         sub $0,1
-        add $4,$1
-        add $1,$2
-        mov $1,$1
-        add $1,6
-        mov $3,1
-        sub $1,6
-        sub $2,1
-        mov $2,$2
+        add $4,1
+        add $5,$6
+        add $0,1
+        add $4,2
+        mov $2,2
+        sub $0,$4
+        add $4,$2
       lpe
-      mov $4,$0
-      mov $3,$3
-      mov $1,$2
-      mov $8,$7
-      lpb $8,1
-        mov $6,$1
-        sub $8,1
+      mov $1,$5
+      mov $5,$6
+      sub $1,51
+      div $1,29
+      add $1,2
+      mov $12,$11
+      mov $13,$12
+      mul $13,2
+      add $1,$13
+      mov $17,$16
+      lpb $17,1
+        mov $15,$1
+        sub $17,1
       lpe
     lpe
-    lpb $5,1
-      sub $6,$1
-      mov $5,0
+    lpb $14,1
+      sub $15,$1
+      mov $14,0
     lpe
-    mov $1,$6
-    div $1,4
-    mul $1,2
-    add $1,2
-    add $10,$1
+    mov $1,$15
+    sub $1,1
+    add $19,$1
   lpe
-  mov $1,$10
-  add $13,$1
+  mov $1,$19
+  add $22,$1
 lpe
-mov $1,$13
-sub $1,2
-div $1,2
-add $1,1
+mov $1,$22
