@@ -3,44 +3,18 @@
 
 mov $3,2
 mov $2,$0
-add $0,$0
 lpb $2,1
-  mov $0,1
   mov $0,2
-  mov $1,$3
-  mov $3,$3
-  mov $1,3
-  mov $1,3
   mov $4,1
   lpb $4,1
-    mul $1,$3
-    trn $3,$2
+    sub $3,$2
     mov $1,$3
     add $4,$1
-    add $1,$1
+    mul $1,2
     sub $4,$1
-  lpe
-  lpb $5,1
-    mov $0,3
-    mov $1,$2
-    mov $0,11
-    mov $5,$1
-    sub $4,5
-    mov $4,$4
-  lpe
-  mul $4,13
-  mov $1,3
-  lpb $6,1
-    mul $3,$3
-    mov $6,$1
-    sub $2,$2
-    mov $4,$1
   lpe
   sub $2,1
   add $3,$0
-  mov $0,$2
 lpe
-mov $4,$1
 mov $1,$3
-sub $1,2
-add $1,1
+sub $1,1
