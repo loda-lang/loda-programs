@@ -415,7 +415,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106229](http://oeis.org/A106229) ([L24 program](106/A106229.asm)): Least j > 1 for n > 0 such that j^2 = (n^2 + 1)*(k^2) + (n^2 + 1)*k + 1 where k sequence = A106230.
 * [A106230](http://oeis.org/A106230) ([L10 program](106/A106230.asm)): Least k > 0 for n > 0 such that (n^2 + 1)*(k^2) + (n^2 + 1)*k + 1 = j^2 where j sequence = A106229.
 * [A106231](http://oeis.org/A106231) ([L16 program](106/A106231.asm)): Least j > 1 such that j^2 = (4*n^2 + 2)*(k^2) + (4*n^2 + 2)*k + 1.
-* [A106232](http://oeis.org/A106232) ([L08 program](106/A106232.asm)): Least k > 0 such that (4*n^2 + 2)*(k^2) + (4*n^2 + 2)*k + 1 = j^2.
+* [A106232](http://oeis.org/A106232) ([L07 program](106/A106232.asm)): Least k > 0 such that (4*n^2 + 2)*(k^2) + (4*n^2 + 2)*k + 1 = j^2.
 * [A106247](http://oeis.org/A106247) ([L13 program](106/A106247.asm)): Expansion of (1+2*x-x^2-2*x^3+x^4) / (1-x^2)^3.
 * [A106249](http://oeis.org/A106249) ([L07 program](106/A106249.asm)): Expansion of (1-x+x^2+x^3)/(1-x-x^4+x^5).
 * [A106250](http://oeis.org/A106250) ([L16 program](106/A106250.asm)): Expansion of (1-x+x^2+x^3)/(1-x-x^5+x^6).
@@ -1457,7 +1457,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126235](http://oeis.org/A126235) ([L12 program](126/A126235.asm)): Minimum length of a codeword in Huffman encoding of n symbols, where the k-th symbol has frequency k.
 * [A126236](http://oeis.org/A126236) ([L16 program](126/A126236.asm)): Maximum length of a codeword in Huffman encoding of n symbols, where the k-th symbol has frequency k.
 * [A126264](http://oeis.org/A126264) ([L08 program](126/A126264.asm)): a(n) = 5*n^2 + 3*n.
-* [A126269](http://oeis.org/A126269) ([L10 program](126/A126269.asm)): Numbers n such that hcl(n,n) < hcl(n,n-1) where hcl(n,i) is the Huffman code length; see comments.
+* [A126269](http://oeis.org/A126269) ([L08 program](126/A126269.asm)): Numbers n such that hcl(n,n) < hcl(n,n-1) where hcl(n,i) is the Huffman code length; see comments.
 * [A126274](http://oeis.org/A126274) ([L15 program](126/A126274.asm)): Partial sum of hexagonal prism numbers (A005915).
 * [A126275](http://oeis.org/A126275) ([L10 program](126/A126275.asm)): Moment of inertia of all magic squares of order n.
 * [A126281](http://oeis.org/A126281) ([L15 program](126/A126281.asm)): a(n) is the least m to satisfy the requirements of A052130.
@@ -5396,7 +5396,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179824](http://oeis.org/A179824) ([L14 program](179/A179824.asm)): Chromatic polynomial of the star graph on 4 vertices (claw graph) and the path graph on 4 vertices.
 * [A179850](http://oeis.org/A179850) ([L04 program](179/A179850.asm)): Characteristic function of numbers that are congruent to {0, 1, 3, 4} mod 5.
 * [A179854](http://oeis.org/A179854) ([L07 program](179/A179854.asm)): Number of 0's (mod 3) in the binary expansion of n.
-* [A179865](http://oeis.org/A179865) ([L07 program](179/A179865.asm)): Number of n-bit binary numbers containing one run of 0's.
+* [A179865](http://oeis.org/A179865) ([L06 program](179/A179865.asm)): Number of n-bit binary numbers containing one run of 0's.
 * [A179892](http://oeis.org/A179892) ([L16 program](179/A179892.asm)): Numbers which are not the sum of three distinct members of twin primes.
 * [A179894](http://oeis.org/A179894) ([L15 program](179/A179894.asm)): Given the series (1, 2, 1, 2, 1, 2, ...), let (1 + 2x + x^2 + 2x^3 + ...) * (1 + 2x^2 + x^3 + 2x^4 + ...) = (1 + 2x + 3x^2 + 7x^3 + ...)
 * [A179903](http://oeis.org/A179903) ([L10 program](179/A179903.asm)): (1, 3, 5, 7, 9...) convolved with (1, 0, 3, 5, 7, 9,...)

@@ -71,7 +71,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000447](http://oeis.org/A000447) ([L05 program](000/A000447.asm)): a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2*n-1)^2 = n*(4*n^2 - 1)/3.
 * [A000463](http://oeis.org/A000463) ([L07 program](000/A000463.asm)): n followed by n^2.
 * [A000466](http://oeis.org/A000466) ([L04 program](000/A000466.asm)): a(n) = 4*n^2 - 1.
-* [A000493](http://oeis.org/A000493) ([L42 program](000/A000493.asm)): a(n) = floor(sin(n)).
+* [A000493](http://oeis.org/A000493) ([L10 program](000/A000493.asm)): a(n) = floor(sin(n)).
 * [A000520](http://oeis.org/A000520) ([L06 program](000/A000520.asm)): Nearest integer to log_10(n).
 * [A000523](http://oeis.org/A000523) ([L03 program](000/A000523.asm)): a(n) = floor(log_2(n)).
 * [A000529](http://oeis.org/A000529) ([L54 program](000/A000529.asm)): Powers of rooted tree enumerator.
@@ -171,7 +171,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001468](http://oeis.org/A001468) ([L31 program](001/A001468.asm)): There are a(n) 2's between successive 1's.
 * [A001475](http://oeis.org/A001475) ([L15 program](001/A001475.asm)): a(n) = a(n-1) + n * a(n-2), where a(1) = 1, a(2) = 2.
 * [A001477](http://oeis.org/A001477) ([L01 program](001/A001477.asm)): The nonnegative integers.
-* [A001478](http://oeis.org/A001478) ([L14 program](001/A001478.asm)): The negative integers.
+* [A001478](http://oeis.org/A001478) ([L08 program](001/A001478.asm)): The negative integers.
 * [A001489](http://oeis.org/A001489) ([L02 program](001/A001489.asm)): a(n) = -n.
 * [A001504](http://oeis.org/A001504) ([L04 program](001/A001504.asm)): a(n) = (3n+1)(3n+2).
 * [A001505](http://oeis.org/A001505) ([L06 program](001/A001505.asm)): a(n) = (4n+1)(4n+2)(4n+3).
@@ -2253,7 +2253,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022850](http://oeis.org/A022850) ([L18 program](022/A022850.asm)): Integer nearest nx, where x = sqrt(7).
 * [A022851](http://oeis.org/A022851) ([L09 program](022/A022851.asm)): a(n) = integer nearest nx, where x = sqrt(8).
 * [A022856](http://oeis.org/A022856) ([L14 program](022/A022856.asm)): a(n) = n-2 + Sum_{i = 1..n-2} (a(i+1) mod a(i)) for n >= 3 with a(1) = a(2) = 1.
-* [A022927](http://oeis.org/A022927) ([L122 program](022/A022927.asm)): Number of 3^m between 5^n and 5^(n+1).
+* [A022927](http://oeis.org/A022927) ([L44 program](022/A022927.asm)): Number of 3^m between 5^n and 5^(n+1).
 * [A022931](http://oeis.org/A022931) ([L18 program](022/A022931.asm)): Number of e^m between Pi^n and Pi^(n+1).
 * [A022933](http://oeis.org/A022933) ([L27 program](022/A022933.asm)): Number of e^m between 2^n and 2^(n+1).
 * [A022934](http://oeis.org/A022934) ([L22 program](022/A022934.asm)): Number of 2^m between e^n and e^(n+1).
@@ -3054,77 +3054,77 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033346](http://oeis.org/A033346) ([L03 program](033/A033346.asm)): [ 26/n ].
 * [A033347](http://oeis.org/A033347) ([L03 program](033/A033347.asm)): [ 27/n ].
 * [A033348](http://oeis.org/A033348) ([L03 program](033/A033348.asm)): [ 28/n ].
-* [A033349](http://oeis.org/A033349) ([L04 program](033/A033349.asm)): [ 29/n ].
+* [A033349](http://oeis.org/A033349) ([L03 program](033/A033349.asm)): [ 29/n ].
 * [A033350](http://oeis.org/A033350) ([L03 program](033/A033350.asm)): [ 30/n ].
-* [A033351](http://oeis.org/A033351) ([L15 program](033/A033351.asm)): [ 31/n ].
-* [A033352](http://oeis.org/A033352) ([L04 program](033/A033352.asm)): [ 32/n ].
+* [A033351](http://oeis.org/A033351) ([L03 program](033/A033351.asm)): [ 31/n ].
+* [A033352](http://oeis.org/A033352) ([L03 program](033/A033352.asm)): [ 32/n ].
 * [A033353](http://oeis.org/A033353) ([L03 program](033/A033353.asm)): [ 33/n ].
 * [A033354](http://oeis.org/A033354) ([L03 program](033/A033354.asm)): [ 34/n ].
 * [A033355](http://oeis.org/A033355) ([L03 program](033/A033355.asm)): [ 35/n ].
-* [A033356](http://oeis.org/A033356) ([L04 program](033/A033356.asm)): [ 36/n ].
-* [A033357](http://oeis.org/A033357) ([L05 program](033/A033357.asm)): [ 37/n ].
-* [A033358](http://oeis.org/A033358) ([L04 program](033/A033358.asm)): [ 38/n ].
-* [A033359](http://oeis.org/A033359) ([L04 program](033/A033359.asm)): [ 39/n ].
-* [A033360](http://oeis.org/A033360) ([L04 program](033/A033360.asm)): [ 40/n ].
-* [A033361](http://oeis.org/A033361) ([L04 program](033/A033361.asm)): a(n) = floor(41/n).
+* [A033356](http://oeis.org/A033356) ([L03 program](033/A033356.asm)): [ 36/n ].
+* [A033357](http://oeis.org/A033357) ([L03 program](033/A033357.asm)): [ 37/n ].
+* [A033358](http://oeis.org/A033358) ([L03 program](033/A033358.asm)): [ 38/n ].
+* [A033359](http://oeis.org/A033359) ([L03 program](033/A033359.asm)): [ 39/n ].
+* [A033360](http://oeis.org/A033360) ([L03 program](033/A033360.asm)): [ 40/n ].
+* [A033361](http://oeis.org/A033361) ([L03 program](033/A033361.asm)): a(n) = floor(41/n).
 * [A033362](http://oeis.org/A033362) ([L03 program](033/A033362.asm)): [ 42/n ].
-* [A033363](http://oeis.org/A033363) ([L04 program](033/A033363.asm)): [ 43/n ].
-* [A033364](http://oeis.org/A033364) ([L04 program](033/A033364.asm)): [ 44/n ].
-* [A033365](http://oeis.org/A033365) ([L04 program](033/A033365.asm)): [ 45/n ].
+* [A033363](http://oeis.org/A033363) ([L03 program](033/A033363.asm)): [ 43/n ].
+* [A033364](http://oeis.org/A033364) ([L03 program](033/A033364.asm)): [ 44/n ].
+* [A033365](http://oeis.org/A033365) ([L03 program](033/A033365.asm)): [ 45/n ].
 * [A033366](http://oeis.org/A033366) ([L03 program](033/A033366.asm)): [ 46/n ].
-* [A033367](http://oeis.org/A033367) ([L04 program](033/A033367.asm)): [ 47/n ].
-* [A033368](http://oeis.org/A033368) ([L06 program](033/A033368.asm)): [ 48/n ].
+* [A033367](http://oeis.org/A033367) ([L03 program](033/A033367.asm)): [ 47/n ].
+* [A033368](http://oeis.org/A033368) ([L03 program](033/A033368.asm)): [ 48/n ].
 * [A033369](http://oeis.org/A033369) ([L03 program](033/A033369.asm)): [ 49/n ].
-* [A033370](http://oeis.org/A033370) ([L05 program](033/A033370.asm)): [ 50/n ].
-* [A033371](http://oeis.org/A033371) ([L04 program](033/A033371.asm)): a(n) = floor(51/n).
-* [A033372](http://oeis.org/A033372) ([L05 program](033/A033372.asm)): [ 52/n ].
-* [A033373](http://oeis.org/A033373) ([L04 program](033/A033373.asm)): [ 53/n ].
-* [A033374](http://oeis.org/A033374) ([L04 program](033/A033374.asm)): [ 54/n ].
-* [A033375](http://oeis.org/A033375) ([L07 program](033/A033375.asm)): [ 55/n ].
-* [A033376](http://oeis.org/A033376) ([L04 program](033/A033376.asm)): [ 56/n ].
-* [A033377](http://oeis.org/A033377) ([L05 program](033/A033377.asm)): [ 57/n ].
-* [A033378](http://oeis.org/A033378) ([L05 program](033/A033378.asm)): [ 58/n ].
-* [A033379](http://oeis.org/A033379) ([L05 program](033/A033379.asm)): [ 59/n ].
+* [A033370](http://oeis.org/A033370) ([L03 program](033/A033370.asm)): [ 50/n ].
+* [A033371](http://oeis.org/A033371) ([L03 program](033/A033371.asm)): a(n) = floor(51/n).
+* [A033372](http://oeis.org/A033372) ([L03 program](033/A033372.asm)): [ 52/n ].
+* [A033373](http://oeis.org/A033373) ([L03 program](033/A033373.asm)): [ 53/n ].
+* [A033374](http://oeis.org/A033374) ([L03 program](033/A033374.asm)): [ 54/n ].
+* [A033375](http://oeis.org/A033375) ([L03 program](033/A033375.asm)): [ 55/n ].
+* [A033376](http://oeis.org/A033376) ([L03 program](033/A033376.asm)): [ 56/n ].
+* [A033377](http://oeis.org/A033377) ([L03 program](033/A033377.asm)): [ 57/n ].
+* [A033378](http://oeis.org/A033378) ([L03 program](033/A033378.asm)): [ 58/n ].
+* [A033379](http://oeis.org/A033379) ([L03 program](033/A033379.asm)): [ 59/n ].
 * [A033380](http://oeis.org/A033380) ([L03 program](033/A033380.asm)): [ 60/n ].
-* [A033381](http://oeis.org/A033381) ([L04 program](033/A033381.asm)): [ 61/n ].
-* [A033382](http://oeis.org/A033382) ([L11 program](033/A033382.asm)): [ 62/n ].
-* [A033383](http://oeis.org/A033383) ([L08 program](033/A033383.asm)): [ 63/n ].
+* [A033381](http://oeis.org/A033381) ([L03 program](033/A033381.asm)): [ 61/n ].
+* [A033382](http://oeis.org/A033382) ([L03 program](033/A033382.asm)): [ 62/n ].
+* [A033383](http://oeis.org/A033383) ([L03 program](033/A033383.asm)): [ 63/n ].
 * [A033384](http://oeis.org/A033384) ([L03 program](033/A033384.asm)): [ 64/n ].
 * [A033385](http://oeis.org/A033385) ([L03 program](033/A033385.asm)): [ 65/n ].
-* [A033386](http://oeis.org/A033386) ([L09 program](033/A033386.asm)): [ 66/n ].
-* [A033387](http://oeis.org/A033387) ([L06 program](033/A033387.asm)): [ 67/n ].
-* [A033388](http://oeis.org/A033388) ([L06 program](033/A033388.asm)): [ 68/n ].
-* [A033389](http://oeis.org/A033389) ([L04 program](033/A033389.asm)): [ 69/n ].
-* [A033390](http://oeis.org/A033390) ([L04 program](033/A033390.asm)): [ 70/n ].
+* [A033386](http://oeis.org/A033386) ([L03 program](033/A033386.asm)): [ 66/n ].
+* [A033387](http://oeis.org/A033387) ([L03 program](033/A033387.asm)): [ 67/n ].
+* [A033388](http://oeis.org/A033388) ([L03 program](033/A033388.asm)): [ 68/n ].
+* [A033389](http://oeis.org/A033389) ([L03 program](033/A033389.asm)): [ 69/n ].
+* [A033390](http://oeis.org/A033390) ([L03 program](033/A033390.asm)): [ 70/n ].
 * [A033391](http://oeis.org/A033391) ([L03 program](033/A033391.asm)): [ 71/n ].
-* [A033392](http://oeis.org/A033392) ([L04 program](033/A033392.asm)): [ 72/n ].
-* [A033393](http://oeis.org/A033393) ([L07 program](033/A033393.asm)): [ 73/n ].
-* [A033394](http://oeis.org/A033394) ([L07 program](033/A033394.asm)): [ 74/n ].
-* [A033395](http://oeis.org/A033395) ([L04 program](033/A033395.asm)): [ 75/n ].
-* [A033396](http://oeis.org/A033396) ([L08 program](033/A033396.asm)): [ 76/n ].
+* [A033392](http://oeis.org/A033392) ([L03 program](033/A033392.asm)): [ 72/n ].
+* [A033393](http://oeis.org/A033393) ([L03 program](033/A033393.asm)): [ 73/n ].
+* [A033394](http://oeis.org/A033394) ([L03 program](033/A033394.asm)): [ 74/n ].
+* [A033395](http://oeis.org/A033395) ([L03 program](033/A033395.asm)): [ 75/n ].
+* [A033396](http://oeis.org/A033396) ([L03 program](033/A033396.asm)): [ 76/n ].
 * [A033397](http://oeis.org/A033397) ([L03 program](033/A033397.asm)): [ 77/n ].
 * [A033398](http://oeis.org/A033398) ([L03 program](033/A033398.asm)): [ 78/n ].
-* [A033399](http://oeis.org/A033399) ([L05 program](033/A033399.asm)): [ 79/n ].
-* [A033400](http://oeis.org/A033400) ([L04 program](033/A033400.asm)): [ 80/n ].
-* [A033401](http://oeis.org/A033401) ([L04 program](033/A033401.asm)): [ 81/n ].
-* [A033402](http://oeis.org/A033402) ([L06 program](033/A033402.asm)): [ 82/n ].
-* [A033403](http://oeis.org/A033403) ([L04 program](033/A033403.asm)): [ 83/n ].
-* [A033404](http://oeis.org/A033404) ([L05 program](033/A033404.asm)): [ 84/n ].
+* [A033399](http://oeis.org/A033399) ([L03 program](033/A033399.asm)): [ 79/n ].
+* [A033400](http://oeis.org/A033400) ([L03 program](033/A033400.asm)): [ 80/n ].
+* [A033401](http://oeis.org/A033401) ([L03 program](033/A033401.asm)): [ 81/n ].
+* [A033402](http://oeis.org/A033402) ([L03 program](033/A033402.asm)): [ 82/n ].
+* [A033403](http://oeis.org/A033403) ([L03 program](033/A033403.asm)): [ 83/n ].
+* [A033404](http://oeis.org/A033404) ([L03 program](033/A033404.asm)): [ 84/n ].
 * [A033405](http://oeis.org/A033405) ([L03 program](033/A033405.asm)): [ 85/n ].
-* [A033406](http://oeis.org/A033406) ([L06 program](033/A033406.asm)): [ 86/n ].
-* [A033407](http://oeis.org/A033407) ([L09 program](033/A033407.asm)): [ 87/n ].
+* [A033406](http://oeis.org/A033406) ([L03 program](033/A033406.asm)): [ 86/n ].
+* [A033407](http://oeis.org/A033407) ([L03 program](033/A033407.asm)): [ 87/n ].
 * [A033408](http://oeis.org/A033408) ([L03 program](033/A033408.asm)): [ 88/n ].
-* [A033409](http://oeis.org/A033409) ([L06 program](033/A033409.asm)): [ 89/n ].
+* [A033409](http://oeis.org/A033409) ([L03 program](033/A033409.asm)): [ 89/n ].
 * [A033410](http://oeis.org/A033410) ([L03 program](033/A033410.asm)): [ 90/n ].
 * [A033411](http://oeis.org/A033411) ([L03 program](033/A033411.asm)): [ 91/n ].
-* [A033412](http://oeis.org/A033412) ([L04 program](033/A033412.asm)): [ 92/n ].
-* [A033413](http://oeis.org/A033413) ([L04 program](033/A033413.asm)): [ 93/n ].
-* [A033414](http://oeis.org/A033414) ([L04 program](033/A033414.asm)): [ 94/n ].
-* [A033415](http://oeis.org/A033415) ([L04 program](033/A033415.asm)): [ 95/n ].
-* [A033416](http://oeis.org/A033416) ([L04 program](033/A033416.asm)): [ 96/n ].
-* [A033417](http://oeis.org/A033417) ([L04 program](033/A033417.asm)): [ 97/n ].
-* [A033418](http://oeis.org/A033418) ([L04 program](033/A033418.asm)): [ 98/n ].
-* [A033419](http://oeis.org/A033419) ([L04 program](033/A033419.asm)): [ 99/n ].
+* [A033412](http://oeis.org/A033412) ([L03 program](033/A033412.asm)): [ 92/n ].
+* [A033413](http://oeis.org/A033413) ([L03 program](033/A033413.asm)): [ 93/n ].
+* [A033414](http://oeis.org/A033414) ([L03 program](033/A033414.asm)): [ 94/n ].
+* [A033415](http://oeis.org/A033415) ([L03 program](033/A033415.asm)): [ 95/n ].
+* [A033416](http://oeis.org/A033416) ([L03 program](033/A033416.asm)): [ 96/n ].
+* [A033417](http://oeis.org/A033417) ([L03 program](033/A033417.asm)): [ 97/n ].
+* [A033418](http://oeis.org/A033418) ([L03 program](033/A033418.asm)): [ 98/n ].
+* [A033419](http://oeis.org/A033419) ([L03 program](033/A033419.asm)): [ 99/n ].
 * [A033420](http://oeis.org/A033420) ([L03 program](033/A033420.asm)): [ 100/n ].
 * [A033421](http://oeis.org/A033421) ([L03 program](033/A033421.asm)): [ 1000/n ].
 * [A033422](http://oeis.org/A033422) ([L04 program](033/A033422.asm)): [ 10000/n ].
@@ -4738,7 +4738,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052995](http://oeis.org/A052995) ([L07 program](052/A052995.asm)): Expansion of 2*x*(1 - x)/(1 - 3*x + x^2).
 * [A052996](http://oeis.org/A052996) ([L05 program](052/A052996.asm)): G.f.: (1+x^2-x^3)/((1-x)(1-2*x)).
 * [A052997](http://oeis.org/A052997) ([L11 program](052/A052997.asm)): Expansion of (1+x-x^3)/((1-2*x)*(1-x^2)).
-* [A053126](http://oeis.org/A053126) ([L22 program](053/A053126.asm)): Binomial coefficients binomial(2*n-3,4).
+* [A053126](http://oeis.org/A053126) ([L14 program](053/A053126.asm)): Binomial coefficients binomial(2*n-3,4).
 * [A053127](http://oeis.org/A053127) ([L10 program](053/A053127.asm)): Binomial coefficients C(2*n-4,5).
 * [A053128](http://oeis.org/A053128) ([L05 program](053/A053128.asm)): Binomial coefficients C(2*n-5,6).
 * [A053129](http://oeis.org/A053129) ([L05 program](053/A053129.asm)): Binomial coefficients C(2*n-6,7).

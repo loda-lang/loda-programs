@@ -1,0 +1,91 @@
+; A055647: Integers in base 14 with each base 14 digit represented by 2 decimal digits.
+; 0,1,2,3,4,5,6,7,8,9,10,11,12,13,100,101,102,103,104,105,106,107,108,109,110,111,112,113,200,201,202,203,204,205,206,207,208,209,210,211,212,213,300,301,302,303,304,305,306,307,308,309,310,311,312,313,400
+
+mov $9,$0
+mov $1,$0
+mov $2,1
+mov $7,$1
+pow $2,2
+div $0,14
+mov $3,4
+mul $7,$0
+add $7,$7
+add $1,$7
+mov $6,$0
+add $3,$2
+mov $2,$0
+mul $0,86
+lpb $0,1
+  mov $5,$0
+  mov $4,$5
+  add $6,$1
+  add $2,$5
+  add $2,2
+  sub $5,1
+  mov $8,4
+  mov $2,5
+  mov $7,$5
+  sub $5,$6
+  add $5,3
+  mov $6,2
+  mov $2,$3
+  mov $1,$0
+  add $2,$4
+  mov $0,$8
+  add $1,5
+  mov $4,2
+  mov $8,1
+  sub $6,1397
+  add $6,$4
+  sub $2,1
+  add $7,$1
+  add $2,$6
+  mul $8,$1
+  mov $6,$3
+  add $5,$0
+  mov $5,10
+  mul $6,5
+  add $0,$1
+  mul $8,$3
+  sub $5,2
+  mov $6,1
+  mov $7,$2
+  trn $6,3
+  div $6,$7
+  mov $8,$7
+  add $0,1
+  add $8,30
+  mul $1,2
+  mul $2,2
+  mov $3,$5
+  mul $3,2
+  sub $6,$0
+  mov $3,1
+  sub $0,1
+  mov $4,$6
+  mov $4,1
+  add $6,$0
+  mov $5,4
+  mov $3,1
+  mov $3,1
+  sub $1,$1
+  mul $3,3
+  mod $1,$6
+  mov $4,5
+  trn $1,2
+  mov $8,3
+  trn $2,$0
+  add $6,1
+lpe
+mov $4,6
+mov $6,$8
+add $1,3
+mov $7,3
+mov $3,20
+mov $1,$0
+mov $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9
+mul $10,$9

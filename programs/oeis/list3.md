@@ -76,7 +76,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301995](http://oeis.org/A301995) ([L07 program](301/A301995.asm)): Number of nX4 0..1 arrays with every element equal to 1, 2 or 4 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A302058](http://oeis.org/A302058) ([L11 program](302/A302058.asm)): Numbers that are not square pyramidal numbers.
 * [A302190](http://oeis.org/A302190) ([L22 program](302/A302190.asm)): Hurwitz logarithm of natural numbers 1,2,3,4,5,...
-* [A302203](http://oeis.org/A302203) ([L42 program](302/A302203.asm)): a(n) = floor(sin(n)) + 1.
+* [A302203](http://oeis.org/A302203) ([L10 program](302/A302203.asm)): a(n) = floor(sin(n)) + 1.
 * [A302245](http://oeis.org/A302245) ([L21 program](302/A302245.asm)): Maximum remainder of p*q divided by p+q with 0 < p <= q <= n.
 * [A302254](http://oeis.org/A302254) ([L12 program](302/A302254.asm)): Exponent of the group of the Gaussian integers in a reduced system modulo (1+i)^n.
 * [A302255](http://oeis.org/A302255) ([L11 program](302/A302255.asm)): Total domination number of the n-antiprism graph.
@@ -377,7 +377,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A311816](http://oeis.org/A311816) ([L10 program](311/A311816.asm)): Coordination sequence Gal.5.95.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A311843](http://oeis.org/A311843) ([L32 program](311/A311843.asm)): Coordination sequence Gal.4.38.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A311914](http://oeis.org/A311914) ([L36 program](311/A311914.asm)): Coordination sequence Gal.4.58.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A311964](http://oeis.org/A311964) ([L93 program](311/A311964.asm)): Coordination sequence Gal.6.131.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312065](http://oeis.org/A312065) ([L25 program](312/A312065.asm)): Coordination sequence Gal.3.10.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A312100](http://oeis.org/A312100) ([L108 program](312/A312100.asm)): Coordination sequence Gal.5.54.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312140](http://oeis.org/A312140) ([L26 program](312/A312140.asm)): Coordination sequence Gal.4.41.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312143](http://oeis.org/A312143) ([L23 program](312/A312143.asm)): Coordination sequence Gal.5.55.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312183](http://oeis.org/A312183) ([L32 program](312/A312183.asm)): Coordination sequence Gal.4.42.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -446,6 +448,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313836](http://oeis.org/A313836) ([L21 program](313/A313836.asm)): Coordination sequence Gal.3.23.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313873](http://oeis.org/A313873) ([L12 program](313/A313873.asm)): Coordination sequence Gal.3.21.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313875](http://oeis.org/A313875) ([L36 program](313/A313875.asm)): Coordination sequence Gal.4.134.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313900](http://oeis.org/A313900) ([L95 program](313/A313900.asm)): Coordination sequence Gal.6.621.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313923](http://oeis.org/A313923) ([L16 program](313/A313923.asm)): Coordination sequence Gal.4.139.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313926](http://oeis.org/A313926) ([L21 program](313/A313926.asm)): Coordination sequence Gal.4.140.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313927](http://oeis.org/A313927) ([L27 program](313/A313927.asm)): Coordination sequence Gal.5.135.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -672,7 +675,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319610](http://oeis.org/A319610) ([L20 program](319/A319610.asm)): a(n) is the minimal number of successive OFF cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
 * [A319658](http://oeis.org/A319658) ([L48 program](319/A319658.asm)): a(n) is the minimal number of successive ON cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
 * [A319701](http://oeis.org/A319701) ([L12 program](319/A319701.asm)): Filter sequence for sequences that are constant for all odd terms >= 3.
-* [A319702](http://oeis.org/A319702) ([L14 program](319/A319702.asm)): Filter sequence for sequences that are constant for all even terms >= 2.
+* [A319702](http://oeis.org/A319702) ([L11 program](319/A319702.asm)): Filter sequence for sequences that are constant for all even terms >= 2.
 * [A319795](http://oeis.org/A319795) ([L27 program](319/A319795.asm)): a(n) = n^(n+1)/(n-1)^n for n>1, rounded to nearest integer.
 * [A319866](http://oeis.org/A319866) ([L32 program](319/A319866.asm)): a(n) = 2*1 + 4*3 + 6*5 + 8*7 + 10*9 + 12*11 + ... + (up to the n-th term).
 * [A319879](http://oeis.org/A319879) ([L12 program](319/A319879.asm)): a(n) = minimal number m of unit squares needed to make an figure formed from squares (joined edge to edge) which has n holes.
