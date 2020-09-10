@@ -76,6 +76,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301995](http://oeis.org/A301995) ([L07 program](301/A301995.asm)): Number of nX4 0..1 arrays with every element equal to 1, 2 or 4 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A302058](http://oeis.org/A302058) ([L11 program](302/A302058.asm)): Numbers that are not square pyramidal numbers.
 * [A302190](http://oeis.org/A302190) ([L22 program](302/A302190.asm)): Hurwitz logarithm of natural numbers 1,2,3,4,5,...
+* [A302203](http://oeis.org/A302203) ([L42 program](302/A302203.asm)): a(n) = floor(sin(n)) + 1.
 * [A302245](http://oeis.org/A302245) ([L21 program](302/A302245.asm)): Maximum remainder of p*q divided by p+q with 0 < p <= q <= n.
 * [A302254](http://oeis.org/A302254) ([L12 program](302/A302254.asm)): Exponent of the group of the Gaussian integers in a reduced system modulo (1+i)^n.
 * [A302255](http://oeis.org/A302255) ([L11 program](302/A302255.asm)): Total domination number of the n-antiprism graph.

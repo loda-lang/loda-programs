@@ -1429,7 +1429,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240001](http://oeis.org/A240001) ([L10 program](240/A240001.asm)): Number of 2 X n 0..3 arrays with no element equal to one plus the sum of elements to its left or two plus the sum of the elements above it or one plus the sum of the elements diagonally to its northwest, modulo 4.
 * [A240025](http://oeis.org/A240025) ([L13 program](240/A240025.asm)): Characteristic function of quarter squares, cf. A002620.
 * [A240134](http://oeis.org/A240134) ([L11 program](240/A240134.asm)): Numerator of (n-1) * ceiling(n/2) / n.
-* [A240137](http://oeis.org/A240137) ([L42 program](240/A240137.asm)): Sum of n consecutive cubes starting from n^3.
+* [A240137](http://oeis.org/A240137) ([L13 program](240/A240137.asm)): Sum of n consecutive cubes starting from n^3.
 * [A240277](http://oeis.org/A240277) ([L13 program](240/A240277.asm)): Minimal number of people such that exactly n days are required to spread gossip.
 * [A240434](http://oeis.org/A240434) ([L13 program](240/A240434.asm)): Binomial transform of the sum of the first n even squares (A002492).
 * [A240438](http://oeis.org/A240438) ([L08 program](240/A240438.asm)): Greatest minimal difference between numbers of adjacent cells in a regular hexagonal honeycomb of order n with cells numbered from 1 through the total number of cells, the order n corresponding to the number of cells on one side of the honeycomb.
@@ -2438,7 +2438,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266724](http://oeis.org/A266724) ([L08 program](266/A266724.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
 * [A266725](http://oeis.org/A266725) ([L08 program](266/A266725.asm)): Total number of OFF (white) cells after n iterations of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
 * [A266732](http://oeis.org/A266732) ([L04 program](266/A266732.asm)): a(n) = 10*binomial(n+4, 5).
-* [A266733](http://oeis.org/A266733) ([L09 program](266/A266733.asm)): a(n) = 21*binomial(n+6,7).
+* [A266733](http://oeis.org/A266733) ([L07 program](266/A266733.asm)): a(n) = 21*binomial(n+6,7).
 * [A266753](http://oeis.org/A266753) ([L06 program](266/A266753.asm)): Decimal representation of the n-th iteration of the "Rule 163" elementary cellular automaton starting with a single ON (black) cell.
 * [A266789](http://oeis.org/A266789) ([L21 program](266/A266789.asm)): Middle column of the "Rule 61" elementary cellular automaton starting with a single ON (black) cell.
 * [A266873](http://oeis.org/A266873) ([L18 program](266/A266873.asm)): Decimal representation of the n-th iteration of the "Rule 77" elementary cellular automaton starting with a single ON (black) cell.
@@ -3480,7 +3480,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291497](http://oeis.org/A291497) ([L06 program](291/A291497.asm)): The arithmetic function uhat(n,1,3).
 * [A291498](http://oeis.org/A291498) ([L15 program](291/A291498.asm)): The arithmetic function uhat(n,1,4).
 * [A291500](http://oeis.org/A291500) ([L20 program](291/A291500.asm)): The arithmetic function uhat(n,1,6).
-* [A291509](http://oeis.org/A291509) ([L61 program](291/A291509.asm)): The arithmetic function uhat(n,2,4).
+* [A291509](http://oeis.org/A291509) ([L17 program](291/A291509.asm)): The arithmetic function uhat(n,2,4).
 * [A291510](http://oeis.org/A291510) ([L04 program](291/A291510.asm)): The arithmetic function uhat(n,2,5), negated.
 * [A291512](http://oeis.org/A291512) ([L21 program](291/A291512.asm)): The arithmetic function uhat(n,2,7).
 * [A291514](http://oeis.org/A291514) ([L10 program](291/A291514.asm)): The arithmetic function uhat(n,3,5).

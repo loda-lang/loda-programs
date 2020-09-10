@@ -2909,7 +2909,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A146298](http://oeis.org/A146298) ([L11 program](146/A146298.asm)): Difference between the cubes and 2*tetrahedral numbers; A000578(n) - 2*A000292(n).
 * [A146301](http://oeis.org/A146301) ([L05 program](146/A146301.asm)): a(n) = (8*n+3)*(8*n+7)
 * [A146302](http://oeis.org/A146302) ([L05 program](146/A146302.asm)): a(n) = (8*n+5)*(8*n+9).
-* [A146307](http://oeis.org/A146307) ([L63 program](146/A146307.asm)): a(n) = denominator of (n-6)/(2n)=denominator of (n+6)/(2n)
+* [A146307](http://oeis.org/A146307) ([L14 program](146/A146307.asm)): a(n) = denominator of (n-6)/(2n)=denominator of (n+6)/(2n)
 * [A146308](http://oeis.org/A146308) ([L08 program](146/A146308.asm)): a(n) is the smallest k such that the numerator of (k-6)/(2k) equals n.
 * [A146325](http://oeis.org/A146325) ([L04 program](146/A146325.asm)): Period 3: repeat [1, 4, 1].
 * [A146501](http://oeis.org/A146501) ([L07 program](146/A146501.asm)): Period 6: 4,8,7,5,1,2.
@@ -5977,7 +5977,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187468](http://oeis.org/A187468) ([L09 program](187/A187468.asm)): Sum of the squares modulo 2^n of the odd numbers less than 2^n.
 * [A187508](http://oeis.org/A187508) ([L17 program](187/A187508.asm)): Number of 3-step S, E, and NW-moving king's tours on an n X n board summed over all starting positions
 * [A187509](http://oeis.org/A187509) ([L28 program](187/A187509.asm)): Number of 4-step S, E, and NW-moving king's tours on an n X n board summed over all starting positions
-* [A187532](http://oeis.org/A187532) ([L24 program](187/A187532.asm)): a(n) = 4^n mod 19.
+* [A187532](http://oeis.org/A187532) ([L11 program](187/A187532.asm)): a(n) = 4^n mod 19.
 * [A187541](http://oeis.org/A187541) ([L12 program](187/A187541.asm)): a(4n+2) = 2n+1, otherwise a(n) = 4n.
 * [A187560](http://oeis.org/A187560) ([L07 program](187/A187560.asm)): a(n) = 4^(n+1)-2^n-1.
 * [A187607](http://oeis.org/A187607) ([L13 program](187/A187607.asm)): Number of 3-step one space for components leftwards or up, two space for components rightwards or down asymmetric quasi-bishop's tours (antidiagonal moves become knight moves) on an n X n board summed over all starting positions.
