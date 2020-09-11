@@ -1,0 +1,107 @@
+; A288516: Number of (undirected) paths in the ladder graph P_2 X P_n.
+; 1,12,49,146,373,872,1929,4118,8589,17644,35889,72538,146021,293200,587801,1177278,2356541,4715412,9433537,18870210,37744021,75492152,150988969,301983206,603972333,1207951292,2415909969,4831828138,9663665349,19327340704
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11,1
+    clr $0,9
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
+    mov $2,$0
+    mov $0,$0
+    mov $6,1
+    mov $7,$6
+    mov $8,$6
+    mov $2,$0
+    mov $3,1
+    add $7,$7
+    mod $8,$7
+    div $3,$6
+    lpb $2,1
+      mov $7,$3
+      mov $0,5
+      sub $0,3
+      mov $7,2
+      add $6,$8
+      mov $5,1
+      mul $3,2
+      mul $5,3
+      lpb $4,1
+        sub $8,1
+        mov $4,$0
+        mov $3,$0
+        add $3,1
+        mov $7,1
+        mov $4,$6
+        mul $5,2
+        add $5,$5
+        trn $0,1
+        pow $7,66
+        sub $3,$4
+        mov $7,$0
+        sub $4,$7
+        add $3,$3
+        mov $0,$3
+        mov $8,$5
+        mov $4,$7
+        add $4,$6
+        mov $5,4
+        mul $7,$0
+        mov $0,$5
+        mov $5,1
+        sub $8,2
+        mul $4,5
+        add $0,$0
+        gcd $5,2
+        pow $5,2
+        add $2,2
+        mov $3,16
+        add $4,$0
+        mul $4,$6
+        clr $6,2
+      lpe
+      lpb $5,1
+        mov $2,1
+        add $3,2
+        sub $5,$7
+        mov $1,1
+        mov $4,5
+        mov $2,$6
+        add $5,6
+        mov $5,$3
+        sub $5,1
+        add $7,$2
+      lpe
+      lpb $6,1
+        sub $6,$7
+        add $7,3
+      lpe
+      sub $7,2
+      sub $2,1
+      mov $6,1
+      add $3,6
+      add $3,$1
+      mov $7,$5
+      add $1,2
+    lpe
+    add $0,$3
+    trn $4,$3
+    mul $2,$2
+    sub $8,$5
+    mov $1,$0
+    add $10,$1
+  lpe
+  mov $1,$10
+  add $13,$1
+lpe
+mov $1,$13
