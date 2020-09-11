@@ -974,7 +974,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332044](http://oeis.org/A332044) ([L07 program](332/A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
 * [A332056](http://oeis.org/A332056) ([L10 program](332/A332056.asm)): a(1) = 1, then a(n+1) = a(n) - (-1)^a(n) Sum_{k=1..n} a(k): if a(n) is odd, add the partial sum, else subtract.
 * [A332057](http://oeis.org/A332057) ([L31 program](332/A332057.asm)): Partial sums (and absolute value of first differences) of A332056: if odd (resp. even) add (resp. subtract) the partial sum to get the next term.
-* [A332061](http://oeis.org/A332061) ([L103 program](332/A332061.asm)): Number of iterations of z -> z^2 + 1/4 + 1/n until z >= 2, starting with z = 0.
+* [A332061](http://oeis.org/A332061) ([L23 program](332/A332061.asm)): Number of iterations of z -> z^2 + 1/4 + 1/n until z >= 2, starting with z = 0.
 * [A332101](http://oeis.org/A332101) ([L33 program](332/A332101.asm)): Least m such that m^n <= Sum_{k<m} k^n.
 * [A332102](http://oeis.org/A332102) ([L29 program](332/A332102.asm)): Least m > 0 such that 2*m^n <= Sum_{k < m} k^n.
 * [A332202](http://oeis.org/A332202) ([L39 program](332/A332202.asm)): Largest k >= 0 such that 3^k divides 2^(2^n-1) + 1.
