@@ -1,104 +1,14 @@
 ; A287864: Consider a symmetric pyramid-shaped chessboard with rows of squares of lengths n, n-2, n-4, ..., ending with either 2 or 1 squares; a(n) is the maximal number of mutually non-attacking queens that can be placed on this board.
 ; 1,1,1,2,2,3,3,4,4,5,5,6,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,42,43,43,44,44,45,45,46,46,47
 
-mov $8,$0
-mov $7,$0
-mov $2,1
-mov $2,$0
-mov $0,3
-mov $0,$7
-mov $1,$7
-mov $4,4
-add $0,$2
-mov $6,36
-mov $5,$8
-mul $4,$6
-trn $7,8
-mul $8,$6
-add $5,$5
-mov $9,2
-mov $0,$8
-div $6,$6
-mov $6,1
-log $9,$4
-mov $1,$6
-mov $8,2
-mov $1,$0
+mov $3,$0
+mul $3,36
+mov $0,$3
+mov $3,2
 sub $0,9
 mov $2,$0
-mul $9,6
-mov $4,$4
-add $6,$6
-add $2,$8
-sub $0,$0
-add $5,$0
-sub $7,10
-lpb $0,1
-  mov $8,$0
-  mov $9,$9
-  mov $8,$8
-  mov $10,$9
-  mov $8,$0
-  mov $3,$9
-  mov $7,$0
-  mov $0,1
-  mov $4,$0
-  add $7,1
-  sub $7,$10
-  sub $9,$4
-  sub $7,$3
-  trn $2,$9
-  pow $5,2
-  sub $0,1
-  mov $2,$5
-  add $3,$10
-  add $0,$4
-  div $4,2
-  add $6,1
-  mul $10,256
-  sub $4,6
-  mov $5,$2
-  mul $9,2
-  mov $5,-2
-  fac $9
-  mul $7,7
-  mov $7,$8
-  sub $6,2
-  mov $6,$0
-  mov $4,5
-  sub $6,1
-  add $2,1
-  mov $5,1
-  mul $4,2
-  sub $0,$5
-lpe
-add $3,$4
-mul $1,2
-add $9,$3
-mov $4,$2
-trn $2,1
-mul $7,2
-mov $5,$4
-add $1,$6
-sub $6,3
-mov $8,$9
-mod $7,2
-sub $3,$7
-mov $1,$9
-mov $1,$5
-mov $6,58
-sub $8,4
-sub $9,$5
-mov $1,6
-mov $3,1
-mov $7,$5
-sub $5,$9
-mov $4,3
+add $2,$3
+sub $2,1
 div $2,77
-mov $3,1
-sub $9,$5
-sub $6,$6
-mov $6,1
-mov $3,$9
 mov $1,$2
 add $1,1

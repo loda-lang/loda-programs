@@ -1,0 +1,86 @@
+; A063227: Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 66 ).
+; 3,4,8,12,16,16,24,24,28,32,36,36,44,44,48,52,56,56,64,64,68,72,76,76,84,84,88,92,96,96,104,104,108,112,116,116,124,124,128,132,136,136,144,144,148,152,156,156,164,164
+
+mov $6,$0
+mov $5,$6
+mov $2,$0
+mov $8,$6
+lpb $2,1
+  mov $7,$5
+  mov $6,$7
+  div $0,3
+  mov $7,$8
+  lpb $4,1
+    gcd $0,3
+    add $5,$2
+    pow $0,$0
+    add $7,$7
+    mov $3,3
+    add $8,$5
+    mov $4,$2
+    mul $8,$0
+  lpe
+  div $7,2
+  lpb $5,1
+    add $7,$0
+    mul $7,4
+    mov $6,2
+    sub $5,$2
+    mul $8,7
+    mov $8,2
+    mov $1,$7
+  lpe
+  add $0,$4
+  lpb $6,1
+    mov $7,$5
+    mov $7,2
+    sub $6,$2
+    mov $4,$8
+    mov $4,$2
+    mov $2,1
+    div $5,2
+    mov $7,6
+    mov $3,$3
+    mov $1,$1
+    mov $8,$0
+    sub $4,2
+    mul $2,$2
+    sub $8,$4
+    mov $8,5
+  lpe
+  gcd $5,2
+  add $1,1
+  add $5,$2
+  mov $0,$2
+  mov $5,10
+  mov $3,1
+  mul $4,$0
+  add $2,$5
+  add $7,3
+  mov $4,1
+  sub $2,1
+  sub $5,3
+  sub $4,1
+  add $4,$3
+  trn $7,7
+  mov $4,$8
+  mov $6,4
+  mul $3,$2
+  cmp $2,7
+lpe
+mov $6,$2
+add $1,1
+trn $4,$0
+sub $4,$6
+sub $3,1
+mov $3,7
+mov $6,$8
+mov $6,$3
+mul $8,$1
+sub $4,$1
+trn $7,$3
+add $2,18
+mul $1,2
+sub $1,2
+div $1,2
+add $1,3
