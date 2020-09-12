@@ -279,7 +279,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306771](http://oeis.org/A306771) ([L06 program](306/A306771.asm)): Numbers m such that phi(m) = phi(i + j) = phi(i) + phi(j) and phi(m) = phi(k * l) = phi(k) * phi(l) for some i, j, k, l, where phi is the Euler totient function A000010.
 * [A306957](http://oeis.org/A306957) ([L15 program](306/A306957.asm)): a(n) = n!*binomial(10,n).
 * [A307018](http://oeis.org/A307018) ([L11 program](307/A307018.asm)): Total number of parts of size 3 in the partitions of n into parts of size 2 and 3.
-* [A307136](http://oeis.org/A307136) ([L09 program](307/A307136.asm)): a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
+* [A307136](http://oeis.org/A307136) ([L08 program](307/A307136.asm)): a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
 * [A307182](http://oeis.org/A307182) ([L14 program](307/A307182.asm)): Crossing number of the n-crown graph (conjectured).
 * [A307253](http://oeis.org/A307253) ([L42 program](307/A307253.asm)): Number of triangles larger than size=1 in a matchstick-made hexagon with side length n.
 * [A307268](http://oeis.org/A307268) ([L14 program](307/A307268.asm)): Partial sums of the Lucas numbers of the form L(3n+2) (A163063).
@@ -1030,7 +1030,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336535](http://oeis.org/A336535) ([L12 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
 * [A336627](http://oeis.org/A336627) ([L42 program](336/A336627.asm)): Coordination sequence for the Manhattan lattice.
 * [A336705](http://oeis.org/A336705) ([L42 program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
-* [A336754](http://oeis.org/A336754) ([L12 program](336/A336754.asm)): Perimeters in increasing order of integer-sided triangles whose sides a < b < c are in arithmetic progression.
+* [A336754](http://oeis.org/A336754) ([L09 program](336/A336754.asm)): Perimeters in increasing order of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336819](http://oeis.org/A336819) ([L15 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
 * [A336867](http://oeis.org/A336867) ([L08 program](336/A336867.asm)): Numbers n such that n! does not have distinct prime multiplicities.
 * [A336868](http://oeis.org/A336868) ([L17 program](336/A336868.asm)): Indicator function for numbers n such that n! has distinct prime multiplicities.
