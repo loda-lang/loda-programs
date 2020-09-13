@@ -1,0 +1,62 @@
+; A273781: Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
+; 1,5,26,74,155,276,445,670,959,1320,1761,2290,2915,3644,4485,5446,6535,7760,9129,10650,12331,14180,16205,18414,20815,23416,26225,29250,32499,35980,39701,43670,47895,52384,57145,62186,67515,73140,79069,85310,91871,98760
+
+mov $8,$0
+mov $10,$0
+add $10,1
+lpb $10,1
+  clr $0,8
+  sub $10,1
+  mov $0,$8
+  sub $0,$10
+  mov $5,$0
+  mov $3,$0
+  mov $4,$0
+  mov $1,$4
+  add $0,$4
+  add $0,$1
+  add $3,1
+  mov $4,$4
+  mov $2,$0
+  add $0,1
+  mov $0,$0
+  pow $3,2
+  sub $3,4
+  add $0,$1
+  trn $2,2
+  div $1,2
+  lpb $0,1
+    add $1,3
+    mov $2,$3
+    sub $0,1
+    mov $2,1
+    trn $1,1
+    div $4,2
+    mov $0,$3
+    mov $2,4
+  lpe
+  mov $2,$3
+  mov $4,$4
+  sub $3,$0
+  add $3,1
+  add $0,2
+  trn $0,2
+  add $2,$0
+  add $1,1
+  mov $1,$4
+  mul $3,14
+  pow $1,2
+  sub $2,$2
+  add $4,$2
+  mov $3,65
+  mov $3,$2
+  mov $1,$0
+  mov $6,$5
+  mul $6,$5
+  mov $7,$6
+  mul $7,4
+  add $1,$7
+  mul $6,$5
+  add $9,$1
+lpe
+mov $1,$9
