@@ -199,6 +199,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304725](http://oeis.org/A304725) ([L06 program](304/A304725.asm)): a(n) = n^4 + 8*n^3 + 20*n^2 + 16*n + 2.
 * [A304726](http://oeis.org/A304726) ([L05 program](304/A304726.asm)): a(n) = n^4 + 4*n^2 + 3.
 * [A304809](http://oeis.org/A304809) ([L09 program](304/A304809.asm)): Solution (a(n)) of the complementary equation a(n) = b(2n) + b(4n) ; see Comments.
+* [A304810](http://oeis.org/A304810) ([L42 program](304/A304810.asm)): Solution (b(n)) of the complementary equation a(n) = b(2n) + b(4n) ; see Comments.
 * [A304830](http://oeis.org/A304830) ([L05 program](304/A304830.asm)): a(n) = 102*2^n - 108 (n>=1).
 * [A304831](http://oeis.org/A304831) ([L05 program](304/A304831.asm)): a(n) = 123*2^n - 135 (n>=1).
 * [A304832](http://oeis.org/A304832) ([L05 program](304/A304832.asm)): a(n) = n^2 + 25*n - 34 (n >=2).

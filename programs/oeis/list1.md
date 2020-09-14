@@ -1339,7 +1339,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123022](http://oeis.org/A123022) ([L07 program](123/A123022.asm)): a(n)=n!*b(n) where b(0)=b(1)=1, b(n)=(n-4)b(n-2)/[n(n-1)] for n>=2.
 * [A123023](http://oeis.org/A123023) ([L08 program](123/A123023.asm)): a(n) = (n-1)*a(n-2), a(0)=1, a(1)=0.
 * [A123068](http://oeis.org/A123068) ([L07 program](123/A123068.asm)): Numbers represented by the "Little Methuselah" quadratic form x^2 + 2*y^2 + y*z + 4*z^2.
-* [A123070](http://oeis.org/A123070) ([L61 program](123/A123070.asm)): Hofstadter Flip-G-sequence.
 * [A123087](http://oeis.org/A123087) ([L28 program](123/A123087.asm)): Sequence of numbers such that a(2*n)+a(n)=n and a(n)is the smallest number such that a(n)>=a(n-1).
 * [A123094](http://oeis.org/A123094) ([L17 program](123/A123094.asm)): Sum of first n 12th powers.
 * [A123108](http://oeis.org/A123108) ([L03 program](123/A123108.asm)): a(0)=1, a(1)=0, a(2)=1, a(3)=1, a(n) = a(n-1) + a(n-2) - a(n-3) for n > 3.
@@ -2527,7 +2526,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139280](http://oeis.org/A139280) ([L03 program](139/A139280.asm)): a(n) = 90*n - 81.
 * [A139283](http://oeis.org/A139283) ([L20 program](139/A139283.asm)): Numbers of spots seen on ladybugs.
 * [A139477](http://oeis.org/A139477) ([L34 program](139/A139477.asm)): Number of binary digits in A001109(n).
-* [A139482](http://oeis.org/A139482) ([L22 program](139/A139482.asm)): Binomial transform of [1, 1, 2, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, ...].
+* [A139482](http://oeis.org/A139482) ([L14 program](139/A139482.asm)): Binomial transform of [1, 1, 2, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, ...].
 * [A139488](http://oeis.org/A139488) ([L08 program](139/A139488.asm)): Binomial transform of [1, 2, 3, 4, 0, 0, 0, ...].
 * [A139544](http://oeis.org/A139544) ([L06 program](139/A139544.asm)): Numbers which are not the difference of two squares of positive integers.
 * [A139570](http://oeis.org/A139570) ([L04 program](139/A139570.asm)): 2n(n+3).
@@ -4161,7 +4160,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164117](http://oeis.org/A164117) ([L23 program](164/A164117.asm)): Expansion of (1 - x) * (1 - x^10) / ((1 - x^2) * (1 - x^4) * (1 - x^5)) in powers of x.
 * [A164120](http://oeis.org/A164120) ([L21 program](164/A164120.asm)): Partial sums of A162396.
 * [A164123](http://oeis.org/A164123) ([L18 program](164/A164123.asm)): Partial sums of A162436.
-* [A164131](http://oeis.org/A164131) ([L07 program](164/A164131.asm)): Numbers n such that n^2 == 2 (mod 31).
+* [A164131](http://oeis.org/A164131) ([L05 program](164/A164131.asm)): Numbers n such that n^2 == 2 (mod 31).
 * [A164135](http://oeis.org/A164135) ([L20 program](164/A164135.asm)): Numbers k such that k^2 == 2 (mod 47).
 * [A164136](http://oeis.org/A164136) ([L03 program](164/A164136.asm)): a(n) = 11*n*(n+1).
 * [A164143](http://oeis.org/A164143) ([L13 program](164/A164143.asm)): Number of binary strings of length n with equal numbers of 001 and 100 substrings
@@ -5723,8 +5722,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184480](http://oeis.org/A184480) ([L13 program](184/A184480.asm)): Lower s-Wythoff sequence, where s(n)=3n.  Complement of A001956.
 * [A184483](http://oeis.org/A184483) ([L20 program](184/A184483.asm)): Upper s-Wythoff sequence, where s(n)=3n-1.  Complement of A184482.
 * [A184485](http://oeis.org/A184485) ([L22 program](184/A184485.asm)): Upper s-Wythoff sequence, where s(n)=3n-2.  Complement of A184484.
-* [A184514](http://oeis.org/A184514) ([L43 program](184/A184514.asm)): Lower s-Wythoff sequence, where s(n)=4n-1.  Complement of A184515.
-* [A184515](http://oeis.org/A184515) ([L74 program](184/A184515.asm)): Upper s-Wythoff sequence, where s=4n-1.  Complement of A184514.
+* [A184514](http://oeis.org/A184514) ([L19 program](184/A184514.asm)): Lower s-Wythoff sequence, where s(n)=4n-1.  Complement of A184515.
+* [A184515](http://oeis.org/A184515) ([L48 program](184/A184515.asm)): Upper s-Wythoff sequence, where s=4n-1.  Complement of A184514.
 * [A184516](http://oeis.org/A184516) ([L47 program](184/A184516.asm)): Lower s-Wythoff sequence, where s=4n-2.  Complement of A184517.
 * [A184517](http://oeis.org/A184517) ([L16 program](184/A184517.asm)): Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
 * [A184522](http://oeis.org/A184522) ([L09 program](184/A184522.asm)): Upper s-Wythoff sequence, where s=5n.  Complement of A184523.
@@ -5840,6 +5839,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185939](http://oeis.org/A185939) ([L05 program](185/A185939.asm)): a(n) = 9*n^2 - 6*n + 2.
 * [A185940](http://oeis.org/A185940) ([L19 program](185/A185940.asm)): a(n) = 1 - 2^(n+1) + 3^(n+2).
 * [A185950](http://oeis.org/A185950) ([L07 program](185/A185950.asm)): a(n) = 4*n^2 - n - 1.
+* [A186025](http://oeis.org/A186025) ([L41 program](186/A186025.asm)): a(n) = 0^n + 1 - F(n-1)^2 - F(n)^2, where F = A000045.
 * [A186029](http://oeis.org/A186029) ([L05 program](186/A186029.asm)): a(n) = n*(7*n+3)/2.
 * [A186030](http://oeis.org/A186030) ([L06 program](186/A186030.asm)): a(n) = n*(13*n-3)/2.
 * [A186032](http://oeis.org/A186032) ([L13 program](186/A186032.asm)): a(n) = (-1)^A048881(n).
