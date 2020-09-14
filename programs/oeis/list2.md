@@ -808,6 +808,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A219085](http://oeis.org/A219085) ([L11 program](219/A219085.asm)): Floor((n + 1/2)^3).
 * [A219086](http://oeis.org/A219086) ([L05 program](219/A219086.asm)): a(n) = floor((n + 1/2)^4).
 * [A219088](http://oeis.org/A219088) ([L06 program](219/A219088.asm)): Floor((n + 1/2)^5).
+* [A219089](http://oeis.org/A219089) ([L24 program](219/A219089.asm)): Floor((n + 1/2)^6]).
 * [A219091](http://oeis.org/A219091) ([L07 program](219/A219091.asm)): Floor((n + 1/2)^8]).
 * [A219167](http://oeis.org/A219167) ([L19 program](219/A219167.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal or vertical neighbors in a random, but sorted with lexicographically nondecreasing rows and columns, 0..2 n X 2 array.
 * [A219190](http://oeis.org/A219190) ([L07 program](219/A219190.asm)): Numbers of the form n*(5*n+1), where n = 0,-1,1,-2,2,-3,3,...
@@ -2144,7 +2145,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258841](http://oeis.org/A258841) ([L20 program](258/A258841.asm)): a(n) = 9*n^2 - 237*n + 1927.
 * [A258869](http://oeis.org/A258869) ([L22 program](258/A258869.asm)): Expansion of 1 to the basis 1.880000478655... (A127583).
 * [A258935](http://oeis.org/A258935) ([L19 program](258/A258935.asm)): Independence number of Keller graphs.
-* [A259022](http://oeis.org/A259022) ([L102 program](259/A259022.asm)): Period 9 sequence [ 1, -1, -1, 1, 0, -1, 1, 1, -1, ...].
+* [A259022](http://oeis.org/A259022) ([L24 program](259/A259022.asm)): Period 9 sequence [ 1, -1, -1, 1, 0, -1, 1, 1, -1, ...].
 * [A259042](http://oeis.org/A259042) ([L08 program](259/A259042.asm)): Period 8 sequence [0, 1, 1, 1, 2, 1, 1, 1, ...].
 * [A259044](http://oeis.org/A259044) ([L04 program](259/A259044.asm)): Period 8 sequence [ 0, 1, 0, 1, 1, 1, 0, 1, ...].
 * [A259054](http://oeis.org/A259054) ([L04 program](259/A259054.asm)): a(n) = 4*n^2 - 4*n + 19, n >= 1.
@@ -3317,6 +3318,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286716](http://oeis.org/A286716) ([L08 program](286/A286716.asm)): a(n) = floor(n/2) - floor((n+1)/5), n >= 0.
 * [A286717](http://oeis.org/A286717) ([L06 program](286/A286717.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-phi, +phi), with the golden section phi = (1 + sqrt(5))/2.
 * [A286728](http://oeis.org/A286728) ([L16 program](286/A286728.asm)): Positions of 1 in A286063; complement of A286727.
+* [A286778](http://oeis.org/A286778) ([L104 program](286/A286778.asm)): Sum of the common path length over all 2-tuples of nodes in a complete binary tree of height n.
 * [A286807](http://oeis.org/A286807) ([L37 program](286/A286807.asm)): Fixed point of the mapping 00->001, 1->101, starting with 00.
 * [A286808](http://oeis.org/A286808) ([L12 program](286/A286808.asm)): Positions of 0 in A286807; complement of A286809.
 * [A286809](http://oeis.org/A286809) ([L10 program](286/A286809.asm)): Positions of 1 in A286807; complement of A286808.
