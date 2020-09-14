@@ -1,0 +1,54 @@
+; A219810: Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal, vertical or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 n X 2 array.
+; 3,6,16,33,61,106,176,281,433,646,936,1321,1821,2458,3256,4241,5441,6886,8608,10641,13021,15786,18976,22633,26801,31526,36856,42841,49533,56986,65256,74401,84481,95558,107696,120961,135421,151146,168208,186681
+
+mov $5,$0
+mov $3,1
+mov $2,$0
+bin $2,2
+mov $4,$3
+sub $2,2
+add $0,$0
+mul $4,$0
+mul $2,$2
+mul $0,$0
+mov $3,$0
+mov $3,127
+div $2,3
+mov $1,2
+sub $0,$4
+mov $1,1
+cmp $3,$2
+gcd $1,5
+add $4,3
+mul $0,2
+add $1,4
+lpb $0,1
+  sub $2,4
+  sub $1,$1
+  add $2,5
+  div $1,$2
+  mov $4,$2
+  add $4,1
+  mov $2,$1
+  add $2,1
+  sub $0,1
+  add $2,1
+  add $2,1
+  sub $0,1
+  mov $0,$2
+  add $1,$4
+  mov $4,0
+lpe
+sub $3,2
+mov $3,3
+add $2,6
+sub $1,2
+mov $6,$5
+mov $7,$6
+mul $7,2
+add $1,$7
+mul $6,$5
+mov $7,$6
+mul $7,3
+add $1,$7
+mul $6,$5
