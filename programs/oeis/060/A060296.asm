@@ -1,0 +1,87 @@
+; A060296: Number of regular convex polytopes in n-dimensional space, or -1 if the number is infinite.
+; 1,1,-1,5,6,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+
+mov $2,$0
+mov $3,$2
+mov $1,$2
+mov $5,1
+mov $8,1
+mov $4,2
+pow $1,2
+sub $0,2
+add $0,1
+add $8,3
+mov $6,2
+lpb $2,1
+  mov $5,$0
+  add $8,$3
+  mov $5,1
+  add $4,1
+  add $8,1
+  mov $8,$2
+  add $6,$2
+  lpb $4,1
+    sub $4,$1
+    mov $1,$1
+    add $5,5
+    mov $1,$6
+    mov $6,1
+    mov $7,$6
+    mov $8,2
+    add $6,$0
+    add $3,$7
+    trn $7,1
+  lpe
+  mul $5,$1
+  add $5,2
+  add $3,1
+  lpb $5,1
+    mov $1,$5
+    sub $5,$1
+    mov $5,1
+    add $8,1
+  lpe
+  sub $7,3
+  mov $3,360
+  add $6,$8
+  add $8,$5
+  mul $6,6
+  mov $6,2
+  add $6,16
+  sub $1,$0
+  mov $0,$3
+  mov $2,1
+  add $7,1
+  lpb $6,1
+    add $5,$1
+    mov $7,$2
+    mul $7,2
+    add $0,$0
+    sub $6,$1
+    mov $1,5
+    mov $4,$8
+    mov $6,$5
+    sub $0,1
+    add $0,$2
+  lpe
+  mul $5,2
+  mul $5,$4
+  sub $2,1
+  mov $6,2
+  mov $3,$3
+  mov $0,$3
+  mov $3,$1
+  add $6,$3
+  add $1,$1
+  mul $4,2
+  sub $5,$5
+  sub $2,1
+lpe
+add $2,$7
+add $0,4
+mov $8,3
+mul $6,2
+mov $1,$4
+sub $1,2
+div $1,2
+add $1,1

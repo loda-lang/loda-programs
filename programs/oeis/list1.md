@@ -1410,7 +1410,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A124302](http://oeis.org/A124302) ([L04 program](124/A124302.asm)): Number of set partitions with at most 3 blocks; number of Dyck paths of height at most 4; dimension of space of symmetric polynomials in 3 noncommuting variables.
 * [A124303](http://oeis.org/A124303) ([L13 program](124/A124303.asm)): Number of set partitions of length <= 4; sum of first 4 columns of triangle of Stirling numbers of 2nd kind; dimension of space of symmetric polynomials in 4 noncommuting variables.
 * [A124349](http://oeis.org/A124349) ([L06 program](124/A124349.asm)): Numbers of directed Hamiltonian cycles on the n-prism graph.
-* [A124350](http://oeis.org/A124350) ([L11 program](124/A124350.asm)): a(n) = 4*n*(floor(n^2/2)+1). For n>=3, this is the number of directed Hamiltonian paths on the n-prism graph.
+* [A124350](http://oeis.org/A124350) ([L07 program](124/A124350.asm)): a(n) = 4*n*(floor(n^2/2)+1). For n>=3, this is the number of directed Hamiltonian paths on the n-prism graph.
 * [A124351](http://oeis.org/A124351) ([L08 program](124/A124351.asm)): Order of the automorphism group of the n-prism graph.
 * [A124354](http://oeis.org/A124354) ([L07 program](124/A124354.asm)): Orders of the automorphisms groups of the n-antiprism graph.
 * [A124356](http://oeis.org/A124356) ([L06 program](124/A124356.asm)): Number of (directed) Hamiltonian cycles on the Moebius ladder graph M_n (for n>=4).
@@ -1566,7 +1566,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A128076](http://oeis.org/A128076) ([L09 program](128/A128076.asm)): A128064 * A004736.
 * [A128091](http://oeis.org/A128091) ([L10 program](128/A128091.asm)): Row sums of unsigned A128090.
 * [A128092](http://oeis.org/A128092) ([L07 program](128/A128092.asm)): a(n) = largest multiple of n which is <= 2^n.
-* [A128130](http://oeis.org/A128130) ([L102 program](128/A128130.asm)): Expansion of (1-x)/(1+x^4); Period 8: repeat [1,-1,0,0,-1,1,0,0].
+* [A128130](http://oeis.org/A128130) ([L32 program](128/A128130.asm)): Expansion of (1-x)/(1+x^4); Period 8: repeat [1,-1,0,0,-1,1,0,0].
 * [A128135](http://oeis.org/A128135) ([L10 program](128/A128135.asm)): Row sums of A128134.
 * [A128138](http://oeis.org/A128138) ([L12 program](128/A128138.asm)): A000012 * A128132.
 * [A128174](http://oeis.org/A128174) ([L20 program](128/A128174.asm)): Transform, (1,0,1,...) in every column.
@@ -1908,7 +1908,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131579](http://oeis.org/A131579) ([L03 program](131/A131579.asm)): Period 10: repeat 0, 3, 6, 9, 2, 5, 8, 1, 4, 7.
 * [A131598](http://oeis.org/A131598) ([L04 program](131/A131598.asm)): Period 3: repeat [2, 5, 8].
 * [A131640](http://oeis.org/A131640) ([L05 program](131/A131640.asm)): First differences are periodic: 50, 50, 75, 50, 50, 75, ...
-* [A131649](http://oeis.org/A131649) ([L09 program](131/A131649.asm)): Number of distinct improper 2-coloring of edges for odd-order cyclic graphs.
+* [A131649](http://oeis.org/A131649) ([L20 program](131/A131649.asm)): Number of distinct improper 2-coloring of edges for odd-order cyclic graphs.
 * [A131664](http://oeis.org/A131664) ([L11 program](131/A131664.asm)): A string of n 1's repeated n times.
 * [A131666](http://oeis.org/A131666) ([L25 program](131/A131666.asm)): First differences of (A113405 prefixed with a 0).
 * [A131669](http://oeis.org/A131669) ([L04 program](131/A131669.asm)): Odd digits followed by positive even digits.
@@ -2480,7 +2480,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A138393](http://oeis.org/A138393) ([L14 program](138/A138393.asm)): Numbers of form 8k+1 which are not squares.
 * [A138395](http://oeis.org/A138395) ([L10 program](138/A138395.asm)): a(n) = 6*a(n-1) - 3*a(n-2), a(1) = 1, a(2) = 6.
 * [A138466](http://oeis.org/A138466) ([L49 program](138/A138466.asm)): a(1)=1, then for n>=2 a(n)=n-floor((1/2)*a(a(n-1))).
-* [A138467](http://oeis.org/A138467) ([L83 program](138/A138467.asm)): a(1)=1, then for n>=2 a(n) = n - floor((1/3)*a(a(n-1))).
+* [A138467](http://oeis.org/A138467) ([L08 program](138/A138467.asm)): a(1)=1, then for n>=2 a(n) = n - floor((1/3)*a(a(n-1))).
 * [A138531](http://oeis.org/A138531) ([L03 program](138/A138531.asm)): Decimal expansion of 109739369/111111111.
 * [A138591](http://oeis.org/A138591) ([L07 program](138/A138591.asm)): Sums of two or more consecutive nonnegative integers.
 * [A138750](http://oeis.org/A138750) ([L34 program](138/A138750.asm)): a(n) = ceiling(n/2) if n == 2 (mod 3), a(n) = 2n otherwise.
