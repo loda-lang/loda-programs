@@ -1,44 +1,18 @@
 ; A153367: Number of zig-zag paths from top to bottom of a rectangle of width 9 with 2n-1 rows whose color is not that of the top right corner.
 ; 4,14,50,180,650,2350,8500,30750,111250,402500,1456250,5268750,19062500,68968750,249531250,902812500,3266406250,11817968750,42757812500,154699218750,559707031250,2025039062500,7326660156250,26508105468750
 
-mov $1,1
 sub $0,3
-mov $4,6
-mov $3,$4
-log $4,2
-sub $3,120259084288
-add $3,1
+mov $3,2
 add $0,4
-mov $1,1
-sub $1,1
-mov $2,$4
+mov $2,2
 lpb $0,1
-  sub $2,$4
-  mul $4,5
+  sub $2,$3
+  mul $3,5
   sub $2,1
-  mov $1,$1
-  add $4,$2
-  mov $0,$0
+  add $3,$2
   sub $0,1
-  mov $3,$0
 lpe
-mov $2,$2
-sub $0,1
-sub $4,2
 mov $1,$3
-sub $1,$3
-div $1,2
-sub $4,2
-add $3,$3
-sub $0,$4
-mov $1,2
-mov $2,1
-mov $2,$0
-add $2,$4
-mov $2,5
-mov $2,$2
-add $3,3
-mov $1,$4
 sub $1,5
 div $1,5
 mul $1,2

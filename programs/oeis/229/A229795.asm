@@ -4,43 +4,18 @@
 add $0,1
 mov $3,$0
 add $0,$3
-mov $1,2
-mov $2,4
-mov $2,2
 mov $1,$3
 add $1,2
 mul $0,$1
 mov $2,$0
 sub $3,3
-mov $1,1
 sub $0,$3
 mov $4,$2
-mov $3,32
-add $2,$1
 mul $4,9
-mov $3,1
-fac $1
-div $1,5
-sub $3,1
 add $0,4
-add $3,$3
 mul $4,$0
-mov $0,1
-lpb $0,1
-  sub $0,1
-  pow $3,$4
-  add $1,$3
-lpe
-sub $2,$4
-mov $0,2
-mul $1,$3
 mov $2,$4
-mov $3,$0
-mov $1,2
-mov $0,$3
 mov $0,$2
-add $4,6
-mov $3,2
 mov $1,$0
 sub $1,648
 div $1,108
