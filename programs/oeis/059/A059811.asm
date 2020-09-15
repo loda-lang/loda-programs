@@ -1,0 +1,104 @@
+; A059811: Let g_n be the ball packing n-width for the manifold torus X interval; sequence gives numerator of (g_n/Pi)^2.
+; 1,1,1,1,4,4,9,36,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+
+mov $3,1
+mov $4,1
+mov $10,$3
+sub $10,$0
+add $4,1
+mov $7,$0
+mul $10,2
+mov $5,$7
+mov $2,$5
+add $3,$0
+trn $3,1
+mov $2,1
+mov $9,1
+add $2,$10
+gcd $9,3
+mov $0,$0
+mov $2,1
+mov $8,2
+add $2,1
+mov $1,$9
+trn $4,2
+mov $7,$5
+mov $10,$9
+sub $8,$3
+mov $9,7
+mov $6,$7
+sub $2,5
+add $9,2
+sub $4,1
+mov $10,1
+lpb $0,1
+  add $0,1
+  mul $8,3
+  mov $6,7
+  mov $3,1
+  trn $3,1
+  add $5,$8
+  add $8,$2
+  mul $1,$7
+  mov $9,$9
+  mov $5,$8
+  mov $6,$8
+  add $6,15
+  mul $0,$3
+  add $9,$5
+  add $5,2
+  add $7,1
+  sub $7,$2
+  mov $1,16
+  add $7,$5
+  mov $10,1
+  mov $9,$5
+  mov $8,$5
+  add $8,4
+  sub $0,1
+  div $7,2
+  add $1,1
+  mul $4,$0
+  mod $1,2
+  mov $1,2
+  add $1,6
+  add $1,$2
+  pow $10,$5
+  add $6,$0
+  sub $9,$10
+  mul $8,2
+  add $9,$0
+  div $8,6
+  mul $1,2
+  mul $0,$7
+  mov $1,$1
+  mov $1,1
+  mov $3,$3
+  add $4,$5
+  mov $9,1
+  mov $10,2
+  clr $7,2
+  add $7,$8
+  pow $0,2
+  add $4,3
+  mul $2,$5
+  add $0,2
+  mov $4,$0
+  mul $10,2
+  add $2,$9
+  mov $0,$0
+  sub $4,1
+  mov $7,$0
+  sub $10,6
+  add $6,4
+  mod $4,$5
+  add $3,$3
+  add $2,1
+  mov $3,1
+  mov $4,$0
+  mov $3,$7
+lpe
+mul $7,$4
+pow $4,2
+sub $9,26
+mov $1,$4
