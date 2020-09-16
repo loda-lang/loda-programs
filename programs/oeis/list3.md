@@ -664,7 +664,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318935](http://oeis.org/A318935) ([L08 program](318/A318935.asm)): a(n) = Sum_{2^m divides n} 2^(3*m).
 * [A319006](http://oeis.org/A319006) ([L13 program](319/A319006.asm)): Sum of the next n positive integers repeated (A008619).
 * [A319007](http://oeis.org/A319007) ([L12 program](319/A319007.asm)): Sum of the next n nonnegative integers repeated (A004526).
-* [A319116](http://oeis.org/A319116) ([L63 program](319/A319116.asm)): Signs of the Maclaurin coefficients of 1/(exp(x) + Pi/2).
+* [A319116](http://oeis.org/A319116) ([L17 program](319/A319116.asm)): Signs of the Maclaurin coefficients of 1/(exp(x) + Pi/2).
 * [A319117](http://oeis.org/A319117) ([L15 program](319/A319117.asm)): Sign of the n-th Maclaurin coefficient of 1/(exp(x) + exp(1)/2).
 * [A319127](http://oeis.org/A319127) ([L04 program](319/A319127.asm)): Crossing number of the complete bipartite graph K_{6,n}.
 * [A319128](http://oeis.org/A319128) ([L08 program](319/A319128.asm)): Interleave n*(3*n - 2), 3*n^2 + n - 1, n=0,0,1,1, ... .
@@ -937,6 +937,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330112](http://oeis.org/A330112) ([L41 program](330/A330112.asm)): Beatty sequence for e^x, where 1/e^x + sech(x) = 1.
 * [A330113](http://oeis.org/A330113) ([L05 program](330/A330113.asm)): Beatty sequence for cosh(x), where 1/e^x + sech(x) = 1.
 * [A330115](http://oeis.org/A330115) ([L13 program](330/A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
+* [A330118](http://oeis.org/A330118) ([L41 program](330/A330118.asm)): Beatty sequence for 1+x+x^2, where 1/(1+x) + 1/(1+x+x^2) = 1.
 * [A330133](http://oeis.org/A330133) ([L05 program](330/A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330143](http://oeis.org/A330143) ([L38 program](330/A330143.asm)): Beatty sequence for (3/2)^x, where (3/2)^x + (5/2)^x = 1.
 * [A330144](http://oeis.org/A330144) ([L20 program](330/A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
@@ -1051,3 +1052,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337139](http://oeis.org/A337139) ([L20 program](337/A337139.asm)): Indices m of repunits R_m that are not Colombian (or self) numbers.
 * [A337252](http://oeis.org/A337252) ([L40 program](337/A337252.asm)): Digits of 2^n can be rearranged with no leading zeros to form t^2, for t not a power of 2.
 * [A337300](http://oeis.org/A337300) ([L47 program](337/A337300.asm)): Partial sums of the geometric Connell sequence A049039.
+* [A337313](http://oeis.org/A337313) ([L20 program](337/A337313.asm)): a(n) is the number of n-digit positive integers with exactly three distinct base 10 digits.

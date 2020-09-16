@@ -1285,7 +1285,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A234319](http://oeis.org/A234319) ([L30 program](234/A234319.asm)): Smallest sum of n-th powers of k+1 consecutive positive integers that equals the sum of n-th powers of the next k consecutive integers, or -n if none.
 * [A234349](http://oeis.org/A234349) ([L67 program](234/A234349.asm)): Maximal number of points that can be placed on a triangular grid of side n so that no three points are collinear.
 * [A234429](http://oeis.org/A234429) ([L08 program](234/A234429.asm)): Numbers which are the digital sum of the square of some prime.
-* [A234587](http://oeis.org/A234587) ([L64 program](234/A234587.asm)): Odd-indexed terms of A234586.
+* [A234587](http://oeis.org/A234587) ([L13 program](234/A234587.asm)): Odd-indexed terms of A234586.
 * [A234717](http://oeis.org/A234717) ([L06 program](234/A234717.asm)): Floor(n/(exp(1/(2*n))-1)).
 * [A234787](http://oeis.org/A234787) ([L04 program](234/A234787.asm)): Cubes (with at least two digits) that become squares when their rightmost digit is removed.
 * [A234902](http://oeis.org/A234902) ([L21 program](234/A234902.asm)): a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3) after n rotations.
@@ -2472,7 +2472,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266753](http://oeis.org/A266753) ([L06 program](266/A266753.asm)): Decimal representation of the n-th iteration of the "Rule 163" elementary cellular automaton starting with a single ON (black) cell.
 * [A266789](http://oeis.org/A266789) ([L21 program](266/A266789.asm)): Middle column of the "Rule 61" elementary cellular automaton starting with a single ON (black) cell.
 * [A266873](http://oeis.org/A266873) ([L18 program](266/A266873.asm)): Decimal representation of the n-th iteration of the "Rule 77" elementary cellular automaton starting with a single ON (black) cell.
-* [A266883](http://oeis.org/A266883) ([L08 program](266/A266883.asm)): Numbers of the form m*(4*m+1)+1, where m = 0,-1,1,-2,2,-3,3,...
+* [A266883](http://oeis.org/A266883) ([L16 program](266/A266883.asm)): Numbers of the form m*(4*m+1)+1, where m = 0,-1,1,-2,2,-3,3,...
 * [A266912](http://oeis.org/A266912) ([L24 program](266/A266912.asm)): Numbers n which are anagrams of n+18.
 * [A266936](http://oeis.org/A266936) ([L13 program](266/A266936.asm)): Number of 3 X n binary arrays with rows lexicographically nondecreasing and columns lexicographically nondecreasing and row sums nondecreasing and column sums nonincreasing.
 * [A266956](http://oeis.org/A266956) ([L19 program](266/A266956.asm)): Numbers m such that 9*m+7 is a square.
@@ -2948,7 +2948,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274681](http://oeis.org/A274681) ([L14 program](274/A274681.asm)): Numbers k such that 4*k + 1 is a triangular number.
 * [A274682](http://oeis.org/A274682) ([L27 program](274/A274682.asm)): Numbers n such that 8*n-1 is a triangular number.
 * [A274701](http://oeis.org/A274701) ([L39 program](274/A274701.asm)): First differences of A259280.
-* [A274757](http://oeis.org/A274757) ([L12 program](274/A274757.asm)): Numbers k such that 6*k+1 is a triangular number (A000217).
+* [A274757](http://oeis.org/A274757) ([L14 program](274/A274757.asm)): Numbers k such that 6*k+1 is a triangular number (A000217).
 * [A274772](http://oeis.org/A274772) ([L12 program](274/A274772.asm)): Zero together with the partial sums of A056640.
 * [A274773](http://oeis.org/A274773) ([L12 program](274/A274773.asm)): a(n) = floor(sqrt(2*n-1) + 1/2) - abs(2*(n-1) - (floor(sqrt(2*n-1) + 1/2))^2) + 1.
 * [A274830](http://oeis.org/A274830) ([L11 program](274/A274830.asm)): Numbers n such that 7*n+1 is a triangular number (A000217).
