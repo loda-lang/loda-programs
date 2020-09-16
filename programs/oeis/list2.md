@@ -492,6 +492,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212755](http://oeis.org/A212755) ([L10 program](212/A212755.asm)): Number of (w,x,y,z) with all terms in {0,...,n}  and |w-x|=max{w,x,y,z}-min{w,x,y,z}.
 * [A212759](http://oeis.org/A212759) ([L09 program](212/A212759.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and w, x, and y even.
 * [A212760](http://oeis.org/A212760) ([L14 program](212/A212760.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w even, and x = y + z.
+* [A212762](http://oeis.org/A212762) ([L79 program](212/A212762.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w and x odd, y even.
 * [A212763](http://oeis.org/A212763) ([L10 program](212/A212763.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, and w, x and y odd.
 * [A212764](http://oeis.org/A212764) ([L18 program](212/A212764.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w, x and y odd, and z odd.
 * [A212766](http://oeis.org/A212766) ([L06 program](212/A212766.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w even and x odd.

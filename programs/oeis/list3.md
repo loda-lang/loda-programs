@@ -789,6 +789,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325103](http://oeis.org/A325103) ([L28 program](325/A325103.asm)): Number of increasing pairs of positive integers up to n with no binary carries.
 * [A325168](http://oeis.org/A325168) ([L14 program](325/A325168.asm)): Number of integer partitions of n with origin-to-boundary graph-distance equal to 2.
 * [A325173](http://oeis.org/A325173) ([L67 program](325/A325173.asm)): Perfect squares of the form a + b^2 + c^3, where a,b,c are consecutive numbers.
+* [A325282](http://oeis.org/A325282) ([L21 program](325/A325282.asm)): Maximum adjusted frequency depth among integer partitions of n.
 * [A325413](http://oeis.org/A325413) ([L14 program](325/A325413.asm)): Largest sum of the omega-sequence of an integer partition of n.
 * [A325459](http://oeis.org/A325459) ([L42 program](325/A325459.asm)): Sum of numbers of nontrivial divisors (greater than 1 and less than k) of k for k = 1..n.
 * [A325475](http://oeis.org/A325475) ([L03 program](325/A325475.asm)): a(n) = (24*n)^2.
@@ -937,7 +938,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330112](http://oeis.org/A330112) ([L41 program](330/A330112.asm)): Beatty sequence for e^x, where 1/e^x + sech(x) = 1.
 * [A330113](http://oeis.org/A330113) ([L05 program](330/A330113.asm)): Beatty sequence for cosh(x), where 1/e^x + sech(x) = 1.
 * [A330115](http://oeis.org/A330115) ([L13 program](330/A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
-* [A330118](http://oeis.org/A330118) ([L41 program](330/A330118.asm)): Beatty sequence for 1+x+x^2, where 1/(1+x) + 1/(1+x+x^2) = 1.
+* [A330118](http://oeis.org/A330118) ([L06 program](330/A330118.asm)): Beatty sequence for 1+x+x^2, where 1/(1+x) + 1/(1+x+x^2) = 1.
 * [A330133](http://oeis.org/A330133) ([L05 program](330/A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330143](http://oeis.org/A330143) ([L38 program](330/A330143.asm)): Beatty sequence for (3/2)^x, where (3/2)^x + (5/2)^x = 1.
 * [A330144](http://oeis.org/A330144) ([L20 program](330/A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
@@ -1052,4 +1053,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337139](http://oeis.org/A337139) ([L20 program](337/A337139.asm)): Indices m of repunits R_m that are not Colombian (or self) numbers.
 * [A337252](http://oeis.org/A337252) ([L40 program](337/A337252.asm)): Digits of 2^n can be rearranged with no leading zeros to form t^2, for t not a power of 2.
 * [A337300](http://oeis.org/A337300) ([L47 program](337/A337300.asm)): Partial sums of the geometric Connell sequence A049039.
-* [A337313](http://oeis.org/A337313) ([L20 program](337/A337313.asm)): a(n) is the number of n-digit positive integers with exactly three distinct base 10 digits.
+* [A337313](http://oeis.org/A337313) ([L13 program](337/A337313.asm)): a(n) is the number of n-digit positive integers with exactly three distinct base 10 digits.

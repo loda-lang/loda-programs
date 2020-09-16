@@ -4814,6 +4814,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A053698](http://oeis.org/A053698) ([L06 program](053/A053698.asm)): a(n) = n^3 + n^2 + n + 1.
 * [A053699](http://oeis.org/A053699) ([L10 program](053/A053699.asm)): a(n) = n^4 + n^3 + n^2 + n + 1.
 * [A053700](http://oeis.org/A053700) ([L55 program](053/A053700.asm)): a(n) = 111111 in base n.
+* [A053715](http://oeis.org/A053715) ([L41 program](053/A053715.asm)): a(n) = n-th triangular number (the sum of the first n integers) in base n.
 * [A053716](http://oeis.org/A053716) ([L67 program](053/A053716.asm)): a(n) = 1111111 in base n.
 * [A053717](http://oeis.org/A053717) ([L11 program](053/A053717.asm)): n^7 + n^6 + n^5 + n^4 + n^3 + n^2 + n + 1 = (n^8-1)/(n-1).
 * [A053730](http://oeis.org/A053730) ([L10 program](053/A053730.asm)): a(n) = 2^(n-2)*(n^2 - n + 4).
@@ -7078,7 +7079,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083479](http://oeis.org/A083479) ([L20 program](083/A083479.asm)): The natural numbers with all terms of A033638 inserted.
 * [A083511](http://oeis.org/A083511) ([L21 program](083/A083511.asm)): Members of A000124 which are multiples of 11.
 * [A083544](http://oeis.org/A083544) ([L29 program](083/A083544.asm)): a(n) = maximal value of the sum of Mobius function values over a block of n consecutive natural numbers.
-* [A083559](http://oeis.org/A083559) ([L111 program](083/A083559.asm)): Nearest integer to 1/sum(k>=n,1/k^4).
+* [A083559](http://oeis.org/A083559) ([L37 program](083/A083559.asm)): Nearest integer to 1/sum(k>=n,1/k^4).
 * [A083575](http://oeis.org/A083575) ([L04 program](083/A083575.asm)): a(0) = 6; for n>0, a(n) = 2*a(n-1) - 1.
 * [A083578](http://oeis.org/A083578) ([L21 program](083/A083578.asm)): (6^n+(-4)^n)/2.
 * [A083579](http://oeis.org/A083579) ([L30 program](083/A083579.asm)): Generalized Jacobsthal numbers.
@@ -7214,7 +7215,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A085259](http://oeis.org/A085259) ([L04 program](085/A085259.asm)): Integer part of the conversion from Centigrade to Fahrenheit.
 * [A085265](http://oeis.org/A085265) ([L06 program](085/A085265.asm)): Numbers that can be written as sum of a positive squarefree number and a positive square.
 * [A085268](http://oeis.org/A085268) ([L03 program](085/A085268.asm)): Integer part of the conversion from Fahrenheit to Centigrade.
-* [A085269](http://oeis.org/A085269) ([L101 program](085/A085269.asm)): Integer part of the conversion from centimeters to inches.
+* [A085269](http://oeis.org/A085269) ([L04 program](085/A085269.asm)): Integer part of the conversion from centimeters to inches.
 * [A085270](http://oeis.org/A085270) ([L34 program](085/A085270.asm)): Integer part of the conversion from miles to kilometers.
 * [A085278](http://oeis.org/A085278) ([L05 program](085/A085278.asm)): Expansion of (1+2x)^2/((1-x^2)(1-2x)).
 * [A085279](http://oeis.org/A085279) ([L11 program](085/A085279.asm)): Expansion of (1 - 2*x - 2*x^2)/((1 - 2*x)*(1 - 3*x)).
@@ -8044,6 +8045,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099774](http://oeis.org/A099774) ([L39 program](099/A099774.asm)): Number of divisors of 2*n-1.
 * [A099776](http://oeis.org/A099776) ([L05 program](099/A099776.asm)): Length of the hypotenuse of an integer right triangle with the hypotenuse being one more than the longer side. The shorter sides are just consecutive odd numbers 3, 5, 7, ...
 * [A099837](http://oeis.org/A099837) ([L13 program](099/A099837.asm)): Expansion of (1 - x^2) / (1 + x + x^2) in powers of x.
+* [A099838](http://oeis.org/A099838) ([L38 program](099/A099838.asm)): Expansion of (1-x)^2(1+x)/(1+x+x^2).
 * [A099856](http://oeis.org/A099856) ([L06 program](099/A099856.asm)): Expansion of (1+3x)/(1-3x).
 * [A099857](http://oeis.org/A099857) ([L08 program](099/A099857.asm)): Expansion of (1+3x+x^2)/(1-3x+x^2).
 * [A099867](http://oeis.org/A099867) ([L11 program](099/A099867.asm)): a(n) = 5*a(n-1) - a(n-2) for n>1, a(0)=1, a(1)=9.

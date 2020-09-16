@@ -4,21 +4,12 @@
 mov $2,$0
 sub $2,$0
 lpb $0,1
-  mov $1,100
-  add $1,$0
-  trn $0,$2
+  sub $0,$2
   div $0,7
   add $0,2
-  add $1,$1
-  add $0,$0
-  mov $2,$2
+  mul $0,2
   add $2,1
-  mov $2,$2
   add $0,$2
-  mov $0,$0
   sub $0,1
-  add $1,841
 lpe
-add $1,3
-sub $1,96
 mov $1,$0
