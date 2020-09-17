@@ -3,46 +3,25 @@
 
 mov $2,$0
 mov $4,$2
-mov $2,$4
 add $4,$2
-mov $3,2
 mov $1,$0
 sub $4,$0
 add $0,$4
-mov $2,6
-mov $3,1
 add $4,2
-trn $2,1
 add $4,$0
-mov $2,0
-trn $0,$4
-sub $2,4
-lpb $4,3
-  lpb $4,6
+lpb $4,1
+  lpb $4,1
     div $4,2
-    mov $3,4
-    pow $3,5
-    gcd $2,2
     mov $3,$2
-    mov $0,$2
     gcd $1,2
     add $1,$4
     mov $2,$4
   lpe
 lpe
 sub $4,$1
-lpb $4,4
-  sub $3,$4
-  add $4,$4
-  sub $1,$4
-  sub $1,$0
-  mov $4,$1
-lpe
-sub $0,$4
-lpb $3,15
+lpb $3,1
   sub $3,1
   add $4,4
 lpe
-add $0,$1
 mov $1,$4
 sub $1,2

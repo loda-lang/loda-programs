@@ -3,7 +3,6 @@
 
 mov $1,$0
 mov $3,$0
-mov $4,1
 div $1,2
 mov $2,2
 div $3,2
@@ -11,35 +10,13 @@ mul $1,2
 bin $0,$1
 mul $2,$0
 bin $1,$3
-add $0,2
-add $4,3
-mov $3,16
-mov $3,$1
+mov $4,4
 mul $1,$2
-sub $0,$4
-sub $1,1
 mov $0,1
-mov $3,8
 lpb $0,1
-  trn $3,$4
-  mul $4,2
-  div $4,2
   sub $0,$4
   add $1,$0
-  add $4,$1
-  sub $3,1
-  add $2,$0
-  mov $3,1
-  sub $0,1
-  sub $4,2
-  mov $3,$0
   pow $0,$0
 lpe
-mov $0,$3
-trn $3,2
-mul $2,$4
-mov $0,$0
-add $1,$4
-mov $1,$4
 div $1,4
 add $1,1
