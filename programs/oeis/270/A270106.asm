@@ -1,0 +1,58 @@
+; A270106: Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 84", based on the 5-celled von Neumann neighborhood.
+; 1,5,13,29,45,77,109,173,205,269,333,461,525,653,781,1037,1101,1229,1357,1613,1741,1997,2253,2765,2893,3149,3405,3917,4173,4685,5197,6221,6349,6605,6861,7373,7629,8141,8653,9677,9933,10445,10957,11981,12493,13517
+
+mov $5,$0
+mov $7,$0
+add $7,1
+lpb $7,1
+  clr $0,5
+  sub $7,1
+  mov $0,$5
+  sub $0,$7
+  add $0,$0
+  add $0,$0
+  mov $2,4
+  mov $3,10
+  lpb $0,1
+    sub $3,$2
+    mov $4,$0
+    add $3,$3
+    mov $1,$0
+    sub $0,1
+    gcd $1,2
+    add $4,1
+    div $0,$1
+    add $3,1
+    mov $4,$0
+  lpe
+  div $1,2
+  add $0,$3
+  add $3,$1
+  add $4,1
+  mov $2,1
+  sub $2,$4
+  add $3,$2
+  mov $3,$2
+  mov $1,$3
+  trn $1,1
+  mov $1,$1
+  sub $1,$1
+  mov $4,$1
+  sub $0,$1
+  mov $4,2
+  mov $3,$0
+  add $4,1
+  mov $4,1
+  mov $2,$1
+  mov $2,2
+  sub $3,$0
+  add $4,$1
+  add $3,2
+  add $2,1
+  mov $1,$0
+  sub $1,10
+  div $1,3
+  add $1,1
+  add $6,$1
+lpe
+mov $1,$6

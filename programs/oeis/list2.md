@@ -147,9 +147,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204675](http://oeis.org/A204675) ([L07 program](204/A204675.asm)): a(n) = 16*n^2 + 2*n + 1.
 * [A204688](http://oeis.org/A204688) ([L12 program](204/A204688.asm)): a(n) = n^n (mod 3).
 * [A204689](http://oeis.org/A204689) ([L04 program](204/A204689.asm)): a(n) = n^n (mod 4).
-* [A204693](http://oeis.org/A204693) ([L79 program](204/A204693.asm)): a(n) = n^n (mod 7).
-* [A204694](http://oeis.org/A204694) ([L79 program](204/A204694.asm)): a(n) = n^n (mod 8).
-* [A204695](http://oeis.org/A204695) ([L79 program](204/A204695.asm)): a(n) = n^n (mod 9).
+* [A204693](http://oeis.org/A204693) ([L15 program](204/A204693.asm)): a(n) = n^n (mod 7).
+* [A204694](http://oeis.org/A204694) ([L15 program](204/A204694.asm)): a(n) = n^n (mod 8).
+* [A204695](http://oeis.org/A204695) ([L15 program](204/A204695.asm)): a(n) = n^n (mod 9).
 * [A204707](http://oeis.org/A204707) ([L14 program](204/A204707.asm)): Number of (n+1) X 3 0..1 arrays with the permanents of all 2 X 2 subblocks equal and nonzero.
 * [A204708](http://oeis.org/A204708) ([L19 program](204/A204708.asm)): Number of (n+1) X 4 0..1 arrays with the permanents of all 2 X 2 subblocks equal and nonzero.
 * [A204766](http://oeis.org/A204766) ([L28 program](204/A204766.asm)): a(n) = 167*(n-1)-a(n-1) with n>1, a(1)=13.
@@ -3064,7 +3064,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277228](http://oeis.org/A277228) ([L12 program](277/A277228.asm)): Convolution of the even-indexed triangular numbers (A014105) and the squares (A000290).
 * [A277229](http://oeis.org/A277229) ([L09 program](277/A277229.asm)): Convolution of the odd-indexed triangular numbers (A000384(n+1)) and the squares (A000290).
 * [A277267](http://oeis.org/A277267) ([L10 program](277/A277267.asm)): Minimum number of single-direction edges in leveled binary trees with n nodes.
-* [A277329](http://oeis.org/A277329) ([L42 program](277/A277329.asm)): a(0)=0, for n >= 1, a(2n) = a(n)+1, a(4n-1) = a(n)+1, a(4n+1) = a(n)+1.
+* [A277329](http://oeis.org/A277329) ([L13 program](277/A277329.asm)): a(0)=0, for n >= 1, a(2n) = a(n)+1, a(4n-1) = a(n)+1, a(4n+1) = a(n)+1.
 * [A277342](http://oeis.org/A277342) ([L23 program](277/A277342.asm)): Base-100 digital root of n (equivalent to repeatedly adding pairs of decimal digits starting from the least significant pair).
 * [A277351](http://oeis.org/A277351) ([L23 program](277/A277351.asm)): Value of (n+1,n) concatenated in binary representation.
 * [A277369](http://oeis.org/A277369) ([L14 program](277/A277369.asm)): a(0) = 5, a(1) = 8; for n>1, a(n) = 2*a(n-1) + a(n-2).
