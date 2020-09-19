@@ -1,84 +1,19 @@
 ; A221461: Number of 0..6 arrays of length n with each element unequal to at least one neighbor, starting with 0
 ; 0,6,36,252,1728,11880,81648,561168,3856896,26508384,182191680,1252200384,8606352384,59151316608,406546013952,2794183983360,19204379983872,131991383803392,907174582723584,6234995799161856
 
-mov $6,1
-mov $7,2
-mov $5,$6
-mov $8,$0
-mov $3,$0
-mov $2,1
-mov $7,$2
-mul $3,$2
-mov $4,$0
-mod $7,$6
-add $3,$4
 mov $1,1
-mul $5,2
-add $5,$6
-mov $3,$1
 lpb $0,1
-  mul $3,2
-  mov $8,$7
-  add $7,$1
-  trn $3,3
+  mov $2,$3
+  add $3,$1
   sub $0,1
-  mul $7,6
-  mov $1,$8
-  div $5,$5
-  add $5,$4
+  mul $3,6
+  mov $1,$2
 lpe
-add $3,$6
-add $1,$4
-mov $6,$7
-add $0,7
-mul $2,2
-clr $7,2
-mov $4,$5
+mov $4,$3
 mov $0,1
-mov $2,$8
-sub $2,$2
-mov $3,$2
-mov $8,7
-clr $8,$3
-sub $5,10
-add $5,2
-add $5,$3
-add $6,7
-mov $3,1
-mov $4,7
-sub $0,$8
-sub $5,$6
-sub $5,1
-sub $4,$5
-mov $4,2
-add $4,1
-add $8,$8
-add $0,$6
-add $6,$5
-add $7,2
-sub $2,$1
-add $4,$2
-add $3,$8
-sub $8,3
-sub $5,1
-sub $4,$0
-sub $8,$7
-mov $8,1
-sub $6,$0
-sub $6,2
-add $5,$3
+mov $2,7
+add $4,7
+sub $0,$2
+add $0,$4
 sub $0,1
-mov $8,$3
-sub $7,$7
-mov $2,$8
-mov $8,$5
-trn $4,4
-mul $7,$2
-mul $8,7
-add $2,1
-trn $8,$5
-add $8,$0
-trn $5,$1
-trn $3,$3
-bin $1,$1
 mov $1,$0

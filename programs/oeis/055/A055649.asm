@@ -1,0 +1,91 @@
+; A055649: Integers in base 11 with each base 11 digit represented by 2 decimal digits.
+; 0,1,2,3,4,5,6,7,8,9,10,100,101,102,103,104,105,106,107,108,109,110,200,201,202,203,204,205,206,207,208,209,210,300,301,302,303,304,305,306,307,308,309,310,400,401,402,403,404,405,406,407,408,409,410,500
+
+mov $9,$0
+mov $3,1
+mov $8,2
+mov $1,$0
+mov $4,$1
+add $0,6
+mov $3,4
+add $1,$3
+div $3,$8
+mov $2,$4
+sub $1,1
+mov $0,$4
+mov $0,1
+mov $7,1
+mov $0,5
+lpb $0,1
+  mul $2,$8
+  mov $5,8
+  mul $3,$1
+  mov $6,$3
+  mov $6,$8
+  mov $4,2
+  trn $5,$0
+  sub $5,3
+  mov $2,2
+  mov $2,$6
+  mul $3,$7
+  sub $8,$1
+  mov $5,2
+  mul $4,$8
+  sub $1,2
+  mov $5,$8
+  cmp $4,$0
+  add $1,3
+  trn $5,2
+  add $3,$0
+  mul $1,$1
+  sub $0,1
+  sub $0,$8
+  add $7,$8
+  sub $2,$1
+  mov $3,$7
+  sub $2,$2
+  add $1,1
+  mov $8,$7
+  mov $7,$6
+  sub $3,$0
+  add $6,$5
+  clr $2,1
+lpe
+add $7,$7
+sub $1,1
+mov $1,$6
+div $8,$3
+pow $8,4
+sub $6,$7
+add $5,5
+mov $3,$7
+mul $5,$8
+mov $0,1
+mov $7,1
+add $0,2
+mul $3,$2
+div $2,11
+mov $4,$8
+mov $8,$2
+mul $2,89
+add $6,$5
+sub $7,1
+mov $8,2
+mov $5,$6
+sub $3,$1
+add $0,$0
+add $8,3
+mov $0,$4
+mov $4,$2
+sub $5,$0
+sub $2,1
+mul $8,2
+sub $0,$3
+mov $2,1
+mov $1,$4
+mov $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9
+mul $10,$9
