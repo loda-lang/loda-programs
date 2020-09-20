@@ -648,6 +648,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214091](http://oeis.org/A214091) ([L17 program](214/A214091.asm)): a(n) = 3^n - 2^(n+2).
 * [A214092](http://oeis.org/A214092) ([L19 program](214/A214092.asm)): Principal diagonal of the convolution array A213773.
 * [A214206](http://oeis.org/A214206) ([L12 program](214/A214206.asm)): a(n) = largest m such that m*(m+1)/2 <= 14*n.
+* [A214210](http://oeis.org/A214210) ([L60 program](214/A214210.asm)): Trebled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0,0 and 1 with 1,1,1.
 * [A214212](http://oeis.org/A214212) ([L21 program](214/A214212.asm)): Number of special factors of length n in the Thue-Morse sequence A010060.
 * [A214214](http://oeis.org/A214214) ([L31 program](214/A214214.asm)): Partial sums of A214212.
 * [A214260](http://oeis.org/A214260) ([L12 program](214/A214260.asm)): First differences of A052980.
@@ -990,7 +991,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225585](http://oeis.org/A225585) ([L08 program](225/A225585.asm)): Floor((3^n-1)/n).
 * [A225586](http://oeis.org/A225586) ([L09 program](225/A225586.asm)): Floor((5^n-1)/n).
 * [A225593](http://oeis.org/A225593) ([L06 program](225/A225593.asm)): The integer closest to n/e.
-* [A225668](http://oeis.org/A225668) ([L11 program](225/A225668.asm)): a(n) = floor(4*log_2(n)).
+* [A225668](http://oeis.org/A225668) ([L06 program](225/A225668.asm)): a(n) = floor(4*log_2(n)).
 * [A225690](http://oeis.org/A225690) ([L20 program](225/A225690.asm)): Number of Dyck paths of semilength n avoiding the pattern U^3 D^3 U D.
 * [A225773](http://oeis.org/A225773) ([L08 program](225/A225773.asm)): The squares on a chessboard that are black, counting from top left corner and down.
 * [A225875](http://oeis.org/A225875) ([L05 program](225/A225875.asm)): We write the 1 + 4*k numbers once and twice the others.
@@ -1376,6 +1377,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A237622](http://oeis.org/A237622) ([L09 program](237/A237622.asm)): Interpolation polynomial through n points (0,1), (1,1), ..., (n-2,1) and (n-1,n) evaluated at 2n, a(0)=1.
 * [A237664](http://oeis.org/A237664) ([L08 program](237/A237664.asm)): Interpolation polynomial through n+1 points (0,1), (1,1), ..., (n-1,1) and (n,n) evaluated at 2n.
 * [A237684](http://oeis.org/A237684) ([L06 program](237/A237684.asm)): a(n) = floor(n*prime(n) / Sum_{i<=n} prime(i).
+* [A237886](http://oeis.org/A237886) ([L68 program](237/A237886.asm)): Side length of smallest square containing n dominoes with short side lengths 1, 2, ..., n.
 * [A237930](http://oeis.org/A237930) ([L04 program](237/A237930.asm)): a(n) = 3^(n+1) + (3^n-1)/2.
 * [A237991](http://oeis.org/A237991) ([L04 program](237/A237991.asm)): a(n) = 991*n^2 + 1.
 * [A238055](http://oeis.org/A238055) ([L04 program](238/A238055.asm)): a(n) = (13*3^n-1)/2.
@@ -1494,7 +1496,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241683](http://oeis.org/A241683) ([L05 program](241/A241683.asm)): Total number of 2 X 2 squares appearing in the Thue-Morse sequence logical matrices after n stages.
 * [A241685](http://oeis.org/A241685) ([L21 program](241/A241685.asm)): The total number of squares and rectangles appearing in the Thue-Morse sequence logical matrices after n stages.
 * [A241717](http://oeis.org/A241717) ([L24 program](241/A241717.asm)): The number of P-positions in the game of Nim with up to 3 piles, allowing for piles of zero, such that the number of objects in the largest pile is n.
-* [A241746](http://oeis.org/A241746) ([L49 program](241/A241746.asm)): Smallest number greater than n that CANNOT be scored using n darts on a standard dartboard.
+* [A241746](http://oeis.org/A241746) ([L10 program](241/A241746.asm)): Smallest number greater than n that CANNOT be scored using n darts on a standard dartboard.
 * [A241748](http://oeis.org/A241748) ([L03 program](241/A241748.asm)): a(n) = n^2 + 12.
 * [A241749](http://oeis.org/A241749) ([L03 program](241/A241749.asm)): a(n) = n^2 + 13.
 * [A241750](http://oeis.org/A241750) ([L03 program](241/A241750.asm)): a(n) = n^2 + 15.

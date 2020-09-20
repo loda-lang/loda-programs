@@ -845,7 +845,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328990](http://oeis.org/A328990) ([L13 program](328/A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A328994](http://oeis.org/A328994) ([L24 program](328/A328994.asm)): a(n) = n^2*(1+n)*(1+n^2)/4.
 * [A329115](http://oeis.org/A329115) ([L16 program](329/A329115.asm)): a(n) = floor(A026549(n)/5).
-* [A329193](http://oeis.org/A329193) ([L14 program](329/A329193.asm)): a(n) = floor(log_2(n^3)) = floor(3 log_2(n))
+* [A329193](http://oeis.org/A329193) ([L06 program](329/A329193.asm)): a(n) = floor(log_2(n^3)) = floor(3 log_2(n))
 * [A329194](http://oeis.org/A329194) ([L06 program](329/A329194.asm)): a(n) = floor(log_3(n^2)) = floor(2 log_3(n))
 * [A329195](http://oeis.org/A329195) ([L06 program](329/A329195.asm)): a(n) = floor(log_5(n^2)) = floor(2 log_5(n))
 * [A329199](http://oeis.org/A329199) ([L07 program](329/A329199.asm)): a(n) = round(log_3(n)).
@@ -1040,7 +1040,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336102](http://oeis.org/A336102) ([L13 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
 * [A336109](http://oeis.org/A336109) ([L38 program](336/A336109.asm)): First column of dispersion array A120861.
 * [A336288](http://oeis.org/A336288) ([L09 program](336/A336288.asm)): Numbers of squares formed by this procedure on n-th step: Step 1, draw a unit square. Step n, draw a unit square with center in every intersection of lines of the figure in step n-1.
-* [A336483](http://oeis.org/A336483) ([L100 program](336/A336483.asm)): Floor(n/10) + (5 times last digit of n).
+* [A336483](http://oeis.org/A336483) ([L12 program](336/A336483.asm)): Floor(n/10) + (5 times last digit of n).
 * [A336529](http://oeis.org/A336529) ([L41 program](336/A336529.asm)): a(n) = (n^3+5*n+3)/3 + 2*floor(n/2) + a(n-2), with a(0)=1 and a(1)=3.
 * [A336535](http://oeis.org/A336535) ([L12 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
 * [A336627](http://oeis.org/A336627) ([L42 program](336/A336627.asm)): Coordination sequence for the Manhattan lattice.

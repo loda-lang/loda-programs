@@ -235,7 +235,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001791](http://oeis.org/A001791) ([L06 program](001/A001791.asm)): a(n) = binomial coefficient C(2n, n-1).
 * [A001792](http://oeis.org/A001792) ([L06 program](001/A001792.asm)): a(n) = (n+2)*2^(n-1).
 * [A001793](http://oeis.org/A001793) ([L12 program](001/A001793.asm)): a(n) = n*(n+3)*2^(n-3).
-* [A001794](http://oeis.org/A001794) ([L64 program](001/A001794.asm)): Negated coefficients of Chebyshev T polynomials: [x^n](-T(n+6, x)), n >= 0.
+* [A001794](http://oeis.org/A001794) ([L22 program](001/A001794.asm)): Negated coefficients of Chebyshev T polynomials: [x^n](-T(n+6, x)), n >= 0.
 * [A001815](http://oeis.org/A001815) ([L09 program](001/A001815.asm)): a(n) = binomial(n,2) * 2^(n-1).
 * [A001816](http://oeis.org/A001816) ([L19 program](001/A001816.asm)): Coefficients of x^n in Hermite polynomial H_{n+4}
 * [A001834](http://oeis.org/A001834) ([L08 program](001/A001834.asm)): a(0) = 1, a(1) = 5, a(n) = 4*a(n-1) - a(n-2).
@@ -2549,6 +2549,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025720](http://oeis.org/A025720) ([L69 program](025/A025720.asm)): Index of 7^n within sequence of numbers of form 2^i*7^j.
 * [A025721](http://oeis.org/A025721) ([L47 program](025/A025721.asm)): Index of 7^n within sequence of numbers of form 3^i*7^j.
 * [A025722](http://oeis.org/A025722) ([L25 program](025/A025722.asm)): Index of 7^n within sequence of numbers of form 4^i*7^j.
+* [A025725](http://oeis.org/A025725) ([L56 program](025/A025725.asm)): Index of 7^n within sequence of numbers of form 7^i*8^j.
 * [A025726](http://oeis.org/A025726) ([L51 program](025/A025726.asm)): Index of 7^n within sequence of numbers of form 7^i*9^j.
 * [A025727](http://oeis.org/A025727) ([L54 program](025/A025727.asm)): Index of 7^n within sequence of numbers of form 7^i*10^j.
 * [A025728](http://oeis.org/A025728) ([L44 program](025/A025728.asm)): Index of 8^n within sequence of numbers of form 3^i*8^j.
@@ -2573,7 +2574,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025770](http://oeis.org/A025770) ([L19 program](025/A025770.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^10)).
 * [A025771](http://oeis.org/A025771) ([L15 program](025/A025771.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^11)).
 * [A025772](http://oeis.org/A025772) ([L10 program](025/A025772.asm)): Expansion of 1/((1-x)(1-x^4)(1-x^5)).
-* [A025773](http://oeis.org/A025773) ([L93 program](025/A025773.asm)): Expansion of 1/((1-x)(1-x^4)(1-x^7)).
+* [A025773](http://oeis.org/A025773) ([L42 program](025/A025773.asm)): Expansion of 1/((1-x)(1-x^4)(1-x^7)).
 * [A025776](http://oeis.org/A025776) ([L10 program](025/A025776.asm)): Expansion of 1/((1-x)(1-x^5)(1-x^6)).
 * [A025777](http://oeis.org/A025777) ([L16 program](025/A025777.asm)): Expansion of 1/((1-x)*(1-x^5)*(1-x^7)).
 * [A025778](http://oeis.org/A025778) ([L16 program](025/A025778.asm)): Expansion of 1/((1-x)(1-x^5)(1-x^8)).
@@ -5096,6 +5097,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A057077](http://oeis.org/A057077) ([L04 program](057/A057077.asm)): Periodic sequence 1,1,-1,-1; expansion of (1+x)/(1+x^2).
 * [A057078](http://oeis.org/A057078) ([L03 program](057/A057078.asm)): Periodic sequence 1,0,-1,...; expansion of (1+x)/(1+x+x^2).
 * [A057079](http://oeis.org/A057079) ([L11 program](057/A057079.asm)): Periodic sequence: repeat [1,2,1,-1,-2,-1]; expansion of (1+x)/(1-x+x^2).
+* [A057083](http://oeis.org/A057083) ([L20 program](057/A057083.asm)): Scaled Chebyshev U-polynomials evaluated at sqrt(3)/2; expansion of 1/(1 - 3*x + 3*x^2).
 * [A057084](http://oeis.org/A057084) ([L15 program](057/A057084.asm)): Scaled Chebyshev U-polynomials evaluated at sqrt(2).
 * [A057087](http://oeis.org/A057087) ([L12 program](057/A057087.asm)): Scaled Chebyshev U-polynomials evaluated at i. Generalized Fibonacci sequence.
 * [A057174](http://oeis.org/A057174) ([L22 program](057/A057174.asm)): a(n+3)=a(n)+a(n+1)-a(n+2), starting with 1,2,3.
@@ -6283,6 +6285,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071568](http://oeis.org/A071568) ([L04 program](071/A071568.asm)): Smallest k>n such that n^3+1 divides k*n^2+1.
 * [A071578](http://oeis.org/A071578) ([L16 program](071/A071578.asm)): Number of iterations of Pi(n) needed to reach 1, where Pi(x) denotes the number of primes <= x.
 * [A071604](http://oeis.org/A071604) ([L23 program](071/A071604.asm)): Number of 7-smooth numbers less than n.
+* [A071618](http://oeis.org/A071618) ([L11 program](071/A071618.asm)): a(n+1) - 3*a(n) + a(n-1) = (2/3)(1+w^(n+1)+w^(2n+2)), where w = exp(2 Pi I / 3).
 * [A071619](http://oeis.org/A071619) ([L05 program](071/A071619.asm)): a(n) = ceiling( 2*n^2/3 ).
 * [A071679](http://oeis.org/A071679) ([L10 program](071/A071679.asm)): Least k such that the maximum number of elements among the continued fractions for k/1, k/2, k/3, k/4 ...., k/k equals n.
 * [A071701](http://oeis.org/A071701) ([L14 program](071/A071701.asm)): Number of twin prime pairs <= n of form (4*k+1,4*k+3), k>0.
@@ -7204,7 +7207,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084899](http://oeis.org/A084899) ([L13 program](084/A084899.asm)): Binomial transform of heptagonal numbers A000566.
 * [A084900](http://oeis.org/A084900) ([L15 program](084/A084900.asm)): 3^(n-2)n(5n+1)/2.
 * [A084902](http://oeis.org/A084902) ([L10 program](084/A084902.asm)): a(n) = 5^(n-1)*n*(n+1)/2.
-* [A084903](http://oeis.org/A084903) ([L68 program](084/A084903.asm)): Binomial transform of positive cubes.
+* [A084903](http://oeis.org/A084903) ([L23 program](084/A084903.asm)): Binomial transform of positive cubes.
 * [A084964](http://oeis.org/A084964) ([L06 program](084/A084964.asm)): Follow n+2 by n. Also solution of a(n+2)=a(n)+1, a(0)=2, a(1)=0.
 * [A084967](http://oeis.org/A084967) ([L06 program](084/A084967.asm)): Multiples of 5 whose GCD with 6 is 1.
 * [A084990](http://oeis.org/A084990) ([L07 program](084/A084990.asm)): a(n) = n*(n^2+3*n-1)/3.
@@ -7319,7 +7322,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086652](http://oeis.org/A086652) ([L10 program](086/A086652.asm)): a(n) = A000225(n+3)-A052955(n).
 * [A086653](http://oeis.org/A086653) ([L15 program](086/A086653.asm)): 2^n + 3*n.
 * [A086663](http://oeis.org/A086663) ([L17 program](086/A086663.asm)): Number of non-attacking knights on a n*n board with all non-perimeteral squares removed.
-* [A086694](http://oeis.org/A086694) ([L08 program](086/A086694.asm)): A run of 2^n 1's followed by a run of 2^n 0's, for n=0, 1, 2, ...
+* [A086694](http://oeis.org/A086694) ([L07 program](086/A086694.asm)): A run of 2^n 1's followed by a run of 2^n 0's, for n=0, 1, 2, ...
 * [A086746](http://oeis.org/A086746) ([L03 program](086/A086746.asm)): Multiples of 3018.
 * [A086760](http://oeis.org/A086760) ([L05 program](086/A086760.asm)): a(n) = 8n^2 + 88n + 43.
 * [A086767](http://oeis.org/A086767) ([L09 program](086/A086767.asm)): Last coefficient of the last term in the numerator of the simplified expansion of the solutions of FLT for n=2 for FLT n=1,2,3,..

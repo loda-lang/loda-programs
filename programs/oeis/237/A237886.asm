@@ -2,70 +2,38 @@
 ; 0,2,4,6,8,11,14,17,21,24,28,32,37,41,46,50,55,60,66,71
 
 mov $7,$0
-mov $4,$0
 mov $1,3
-mov $5,4
 mov $2,$0
-mov $6,$4
-mov $4,$5
-mov $5,$1
+mov $4,4
 lpb $2,1
   add $4,$0
-  sub $1,2
-  mov $5,$4
-  mov $2,$1
-  add $1,$1
-  add $2,7
   lpb $4,1
     mov $6,11
-    mul $1,2
-    add $2,2
-    mov $4,5
-    sub $4,$5
-    mov $2,$6
     mov $4,$0
     mov $3,$0
     mov $1,$4
     add $5,1
   lpe
   div $1,2
-  add $4,1
-  mul $2,$3
-  add $2,$5
   lpb $5,1
     mov $4,1
     add $1,$0
     add $1,$4
-    mov $2,1
     sub $5,$5
     mul $1,$3
   lpe
-  mov $0,2
-  sub $3,1
   lpb $6,1
-    mov $5,$4
-    sub $4,$6
     add $5,2
     mul $5,2
     sub $6,$5
-    sub $4,$1
-    mul $2,$0
-    add $1,5
-    mov $4,1
-    sub $1,2
+    add $1,3
     div $1,4
   lpe
   add $1,1
-  sub $4,$6
-  mov $4,$1
-  sub $2,1
   mov $2,4
 lpe
-mov $5,70
 sub $1,3
 mov $8,$7
 mov $9,$8
 mul $9,2
 add $1,$9
-mul $8,$7
-mul $8,$7
