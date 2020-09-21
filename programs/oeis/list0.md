@@ -4583,8 +4583,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A050514](http://oeis.org/A050514) ([L06 program](050/A050514.asm)): Cards left over after dealing evenly to n people.
 * [A050533](http://oeis.org/A050533) ([L09 program](050/A050533.asm)): Thickened pyramidal numbers: a(n) = sum(4*i*(i-1)+1, i=1..n) + 2*(n+1)*n.
 * [A050534](http://oeis.org/A050534) ([L03 program](050/A050534.asm)): Tritriangular numbers: a(n) = binomial(binomial(n,2),2) = n(n + 1)(n - 1)(n - 2)/8.
-* [A050603](http://oeis.org/A050603) ([L63 program](050/A050603.asm)): A001511 with every term repeated.
-* [A050605](http://oeis.org/A050605) ([L62 program](050/A050605.asm)): Column/row 2 of A050602: a(n) = add3c(n,2).
+* [A050603](http://oeis.org/A050603) ([L15 program](050/A050603.asm)): A001511 with every term repeated.
+* [A050605](http://oeis.org/A050605) ([L14 program](050/A050605.asm)): Column/row 2 of A050602: a(n) = add3c(n,2).
 * [A050622](http://oeis.org/A050622) ([L19 program](050/A050622.asm)): Numbers m that are divisible by 2^k, where k is the digit length of m.
 * [A050683](http://oeis.org/A050683) ([L04 program](050/A050683.asm)): Number of nonzero palindromes of length n.
 * [A050735](http://oeis.org/A050735) ([L21 program](050/A050735.asm)): Numbers of form 5^k (values of k see A050726) containing no pair of consecutive equal digits (probably finite).
@@ -7613,7 +7613,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092028](http://oeis.org/A092028) ([L17 program](092/A092028.asm)): a(n) is the smallest m > 1 such that m divides n^m-1.
 * [A092038](http://oeis.org/A092038) ([L09 program](092/A092038.asm)): a(n+1) = a(n) + (a(n) mod 2)^(n mod a(n)), a(1) = 1.
 * [A092043](http://oeis.org/A092043) ([L07 program](092/A092043.asm)): Numerator of n!/n^2.
-* [A092054](http://oeis.org/A092054) ([L74 program](092/A092054.asm)): Logarithm base 2 of the sum of numerator and denominator of the convergents of the continued fraction expansion [1;1/2,1/3,1/4,...,1/n,...].
+* [A092054](http://oeis.org/A092054) ([L26 program](092/A092054.asm)): Logarithm base 2 of the sum of numerator and denominator of the convergents of the continued fraction expansion [1;1/2,1/3,1/4,...,1/n,...].
 * [A092055](http://oeis.org/A092055) ([L06 program](092/A092055.asm)): C(2+2^n,3).
 * [A092067](http://oeis.org/A092067) ([L17 program](092/A092067.asm)): a(n) is the smallest number m such that m > 1 and m divides n^m + 1.
 * [A092076](http://oeis.org/A092076) ([L07 program](092/A092076.asm)): Expansion of (1+4*x^3+x^6)/((1-x)*(1-x^3)^2).

@@ -13,7 +13,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100051](http://oeis.org/A100051) ([L14 program](100/A100051.asm)): A Chebyshev transform of 1,1,1,...
 * [A100052](http://oeis.org/A100052) ([L13 program](100/A100052.asm)): A Chebyshev transform of the odd numbers.
 * [A100057](http://oeis.org/A100057) ([L57 program](100/A100057.asm)): Sum of absolute differences of p(n) defined in A054065, oriented around a clock.
-* [A100063](http://oeis.org/A100063) ([L07 program](100/A100063.asm)): A Chebyshev transform of Jacobsthal numbers.
+* [A100063](http://oeis.org/A100063) ([L05 program](100/A100063.asm)): A Chebyshev transform of Jacobsthal numbers.
 * [A100066](http://oeis.org/A100066) ([L24 program](100/A100066.asm)): Expansion of x/((1-x)sqrt(1-4x^2)).
 * [A100071](http://oeis.org/A100071) ([L12 program](100/A100071.asm)): a(n) = n * binomial(n-1, floor((n-1)/2)) = n * max_{i=0..n} binomial(n-1, i).
 * [A100088](http://oeis.org/A100088) ([L14 program](100/A100088.asm)): Expansion of (1-x^2)/((1-2x)(1+x^2)).
@@ -383,7 +383,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105374](http://oeis.org/A105374) ([L05 program](105/A105374.asm)): a(n) = 4*n^3 + 4*n.
 * [A105384](http://oeis.org/A105384) ([L06 program](105/A105384.asm)): Expansion of x/(1 + x + x^2 + x^3 + x^4).
 * [A105385](http://oeis.org/A105385) ([L13 program](105/A105385.asm)): Expansion of (1-x^2)/(1-x^5).
-* [A105395](http://oeis.org/A105395) ([L08 program](105/A105395.asm)): A simple "Fractal Jump Sequence" (FJS).
+* [A105395](http://oeis.org/A105395) ([L06 program](105/A105395.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105396](http://oeis.org/A105396) ([L04 program](105/A105396.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105397](http://oeis.org/A105397) ([L03 program](105/A105397.asm)): Periodic with period 2: repeat [4,2].
 * [A105398](http://oeis.org/A105398) ([L03 program](105/A105398.asm)): A simple "Fractal Jump Sequence" (FJS).
@@ -505,7 +505,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A107684](http://oeis.org/A107684) ([L09 program](107/A107684.asm)): Union of sequences 2^k-1, 2^k and 2^k+1.
 * [A107731](http://oeis.org/A107731) ([L09 program](107/A107731.asm)): Row 7 of the array in A107735.
 * [A107750](http://oeis.org/A107750) ([L05 program](107/A107750.asm)): If n=0 then 0, else smallest number greater than its predecessor and having either more or fewer zeros in its binary representation.
-* [A107751](http://oeis.org/A107751) ([L08 program](107/A107751.asm)): a(n) = A107750(n+1) - A107750(n).
+* [A107751](http://oeis.org/A107751) ([L05 program](107/A107751.asm)): a(n) = A107750(n+1) - A107750(n).
 * [A107820](http://oeis.org/A107820) ([L07 program](107/A107820.asm)): a(1)=3, a(2)=5; thereafter a(n) = n+5.
 * [A107839](http://oeis.org/A107839) ([L08 program](107/A107839.asm)): a(n) = 5*a(n-1) - 2*a(n-2); a(0)=1, a(1)=5.
 * [A107843](http://oeis.org/A107843) ([L07 program](107/A107843.asm)): Number of iterations of McCarthy 91 Function until it terminates.
@@ -2350,6 +2350,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135503](http://oeis.org/A135503) ([L04 program](135/A135503.asm)): a(n) = n*(n^2 - 1)/2.
 * [A135509](http://oeis.org/A135509) ([L06 program](135/A135509.asm)): Nonnegative integers c such that there are nonnegative integers a and b that satisfy a^(1/2) + b^(1/2) = c^(1/2) and a^2 + b = c.
 * [A135511](http://oeis.org/A135511) ([L04 program](135/A135511.asm)): Number of Pierce-Engel hybrid expansions of 3/b, b>=3.
+* [A135513](http://oeis.org/A135513) ([L62 program](135/A135513.asm)): Number of Pierce-Engel hybrid expansions of 4/b, b>=4.
 * [A135517](http://oeis.org/A135517) ([L08 program](135/A135517.asm)): a(n) = 2^(A091090(n)-1).
 * [A135520](http://oeis.org/A135520) ([L09 program](135/A135520.asm)): a(n) = 4*a(n-2).
 * [A135521](http://oeis.org/A135521) ([L15 program](135/A135521.asm)): a(n) = 2^(A091090(n)) - 1.
@@ -2425,7 +2426,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136396](http://oeis.org/A136396) ([L11 program](136/A136396.asm)): 1+n*(n+1)*(n^2-n+12)/12.
 * [A136412](http://oeis.org/A136412) ([L05 program](136/A136412.asm)): a(n) = (5*4^n+1)/3.
 * [A136442](http://oeis.org/A136442) ([L12 program](136/A136442.asm)): a(3n) = 1, a(3n-1) = 0 and a(3n+1) = a(n).
-* [A136480](http://oeis.org/A136480) ([L77 program](136/A136480.asm)): Number of trailing equal digits in binary representation of n.
+* [A136480](http://oeis.org/A136480) ([L24 program](136/A136480.asm)): Number of trailing equal digits in binary representation of n.
 * [A136488](http://oeis.org/A136488) ([L27 program](136/A136488.asm)): a(n) = 2^n - A005418(n).
 * [A136521](http://oeis.org/A136521) ([L13 program](136/A136521.asm)): Triangle read by rows: (1, 2, 2, 2,...) on the main diagonal and the rest zeros.
 * [A136572](http://oeis.org/A136572) ([L36 program](136/A136572.asm)): Triangle read by rows: row n consists of n zeros followed by n!.
@@ -5188,6 +5189,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175112](http://oeis.org/A175112) ([L40 program](175/A175112.asm)): First differences of A175111.
 * [A175113](http://oeis.org/A175113) ([L07 program](175/A175113.asm)): a(n) = ((2*n + 1)^6 + 1)/2.
 * [A175114](http://oeis.org/A175114) ([L46 program](175/A175114.asm)): First differences of A175113.
+* [A175126](http://oeis.org/A175126) ([L23 program](175/A175126.asm)): a(0) = a(1) = 0, for n >= 2, a(n) = number of steps of iteration of {r - (smallest prime divisor of r)} needed to reach 0 starting at r = n.
 * [A175139](http://oeis.org/A175139) ([L19 program](175/A175139.asm)): a(1)= 1. a(n) = smallest integer > a(n-1) such that the partial sums of A175140 are avoided. Or, the first difference of A131937.
 * [A175140](http://oeis.org/A175140) ([L41 program](175/A175140.asm)): a(1)= 2. a(n) = smallest integer > a(n-1) such that the partial sums of A175139 are avoided. Or, the first difference of A131938.
 * [A175161](http://oeis.org/A175161) ([L04 program](175/A175161.asm)): a(n) = 8*(2^n + 1).
