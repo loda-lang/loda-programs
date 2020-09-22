@@ -974,7 +974,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225003](http://oeis.org/A225003) ([L25 program](225/A225003.asm)): Duplicate of A047332.
 * [A225015](http://oeis.org/A225015) ([L78 program](225/A225015.asm)): Number of sawtooth patterns of length 1 in all Dyck paths of semilength n.
 * [A225018](http://oeis.org/A225018) ([L29 program](225/A225018.asm)): Number of cusps in a class of degree-3n complex algebraic surfaces.
-* [A225058](http://oeis.org/A225058) ([L105 program](225/A225058.asm)): a(4*n) = n-1. a(2*n+1) = a(4*n+2) = 2*n+1.
+* [A225058](http://oeis.org/A225058) ([L17 program](225/A225058.asm)): a(4*n) = n-1. a(2*n+1) = a(4*n+2) = 2*n+1.
 * [A225126](http://oeis.org/A225126) ([L05 program](225/A225126.asm)): Central terms of the triangle in A048152.
 * [A225144](http://oeis.org/A225144) ([L21 program](225/A225144.asm)): a(n) = Sum_{i=n..2*n} i^2*(-1)^i.
 * [A225152](http://oeis.org/A225152) ([L30 program](225/A225152.asm)): Let b(k) be A036378, then a(n) is the number of b(k) terms such that 2^n < b(k) <= 2^(n+1).
@@ -2821,7 +2821,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272039](http://oeis.org/A272039) ([L05 program](272/A272039.asm)): a(n) = 10*n^2 + 4*n + 1.
 * [A272058](http://oeis.org/A272058) ([L07 program](272/A272058.asm)): Start with all terms set to 0. Then add n to the next n+3 terms for n=0,1,2,... .
 * [A272071](http://oeis.org/A272071) ([L15 program](272/A272071.asm)): Expansion of x*(3 - 2*x + x^2)/((1 - x)^2*(1 + x + x^2)).
-* [A272073](http://oeis.org/A272073) ([L43 program](272/A272073.asm)): Exponents of x in the numerator of cluster variables of rank 2 cluster algebras.
+* [A272073](http://oeis.org/A272073) ([L13 program](272/A272073.asm)): Exponents of x in the numerator of cluster variables of rank 2 cluster algebras.
 * [A272100](http://oeis.org/A272100) ([L09 program](272/A272100.asm)): Integers n that are the sum of three nonzero squares while n*(n+1) is not.
 * [A272104](http://oeis.org/A272104) ([L16 program](272/A272104.asm)): Sum of the even numbers among the larger parts of the partitions of n into two parts.
 * [A272124](http://oeis.org/A272124) ([L42 program](272/A272124.asm)): a(n) = 12*n^4 + 16*n^3 + 10*n^2 + 4*n + 1.
@@ -3552,6 +3552,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291514](http://oeis.org/A291514) ([L10 program](291/A291514.asm)): The arithmetic function uhat(n,3,5).
 * [A291516](http://oeis.org/A291516) ([L04 program](291/A291516.asm)): The arithmetic function uhat(n,3,7), negated.
 * [A291520](http://oeis.org/A291520) ([L06 program](291/A291520.asm)): The arithmetic function uhat(n,4,2).
+* [A291521](http://oeis.org/A291521) ([L61 program](291/A291521.asm)): The arithmetic function uhat(n,4,6).
 * [A291522](http://oeis.org/A291522) ([L10 program](291/A291522.asm)): The arithmetic function uhat(n,4,7).
 * [A291526](http://oeis.org/A291526) ([L05 program](291/A291526.asm)): a(n) = 2^n*(n - 3) + 4.
 * [A291557](http://oeis.org/A291557) ([L05 program](291/A291557.asm)): a(n) = 23*2^n - 1.

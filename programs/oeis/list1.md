@@ -2350,7 +2350,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135503](http://oeis.org/A135503) ([L04 program](135/A135503.asm)): a(n) = n*(n^2 - 1)/2.
 * [A135509](http://oeis.org/A135509) ([L06 program](135/A135509.asm)): Nonnegative integers c such that there are nonnegative integers a and b that satisfy a^(1/2) + b^(1/2) = c^(1/2) and a^2 + b = c.
 * [A135511](http://oeis.org/A135511) ([L04 program](135/A135511.asm)): Number of Pierce-Engel hybrid expansions of 3/b, b>=3.
-* [A135513](http://oeis.org/A135513) ([L62 program](135/A135513.asm)): Number of Pierce-Engel hybrid expansions of 4/b, b>=4.
+* [A135513](http://oeis.org/A135513) ([L16 program](135/A135513.asm)): Number of Pierce-Engel hybrid expansions of 4/b, b>=4.
 * [A135517](http://oeis.org/A135517) ([L08 program](135/A135517.asm)): a(n) = 2^(A091090(n)-1).
 * [A135520](http://oeis.org/A135520) ([L09 program](135/A135520.asm)): a(n) = 4*a(n-2).
 * [A135521](http://oeis.org/A135521) ([L15 program](135/A135521.asm)): a(n) = 2^(A091090(n)) - 1.
@@ -5189,7 +5189,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175112](http://oeis.org/A175112) ([L40 program](175/A175112.asm)): First differences of A175111.
 * [A175113](http://oeis.org/A175113) ([L07 program](175/A175113.asm)): a(n) = ((2*n + 1)^6 + 1)/2.
 * [A175114](http://oeis.org/A175114) ([L46 program](175/A175114.asm)): First differences of A175113.
-* [A175126](http://oeis.org/A175126) ([L23 program](175/A175126.asm)): a(0) = a(1) = 0, for n >= 2, a(n) = number of steps of iteration of {r - (smallest prime divisor of r)} needed to reach 0 starting at r = n.
+* [A175126](http://oeis.org/A175126) ([L13 program](175/A175126.asm)): a(0) = a(1) = 0, for n >= 2, a(n) = number of steps of iteration of {r - (smallest prime divisor of r)} needed to reach 0 starting at r = n.
 * [A175139](http://oeis.org/A175139) ([L19 program](175/A175139.asm)): a(1)= 1. a(n) = smallest integer > a(n-1) such that the partial sums of A175140 are avoided. Or, the first difference of A131937.
 * [A175140](http://oeis.org/A175140) ([L41 program](175/A175140.asm)): a(1)= 2. a(n) = smallest integer > a(n-1) such that the partial sums of A175139 are avoided. Or, the first difference of A131938.
 * [A175161](http://oeis.org/A175161) ([L04 program](175/A175161.asm)): a(n) = 8*(2^n + 1).
