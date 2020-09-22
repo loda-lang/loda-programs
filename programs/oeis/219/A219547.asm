@@ -1,20 +1,13 @@
 ; A219547: Numbers k such that 2 times the least prime factor of 2^k + 1 is not the least m > 1 that divides sigma_k(m).
 ; 8,16,32,40,48,56,64,80,88,96,104,112,128,136,152,160,176,184,192,200,208,224,232,240,248,256,272,280,296,304,320,328,336,344,352,368,376,384,392,400,416,424,440,448,464,472,480,488,496
 
-mov $13,$0
 mov $15,$0
 add $15,1
 lpb $15,1
   clr $0,13
   sub $15,1
-  mov $0,$13
   sub $0,$15
   mov $7,1
-  mov $8,1
-  mov $1,2
-  mov $9,9
-  clr $5,1
-  div $8,2
   mov $2,$0
   pow $2,2
   add $5,3
@@ -22,93 +15,29 @@ lpb $15,1
     mov $9,$7
     add $2,$9
     mov $6,$2
-    mov $8,$1
     mov $1,$7
-    mov $4,2
     add $5,$6
     add $5,3
-    sub $5,$2
     mov $2,$4
-    gcd $0,$4
-    lpb $4,1
-      mov $10,$8
-      sub $4,$1
-      mov $3,$0
-    lpe
-    div $5,$0
     add $5,1
-    mov $7,1
-    mov $10,1
-    mov $4,1
-    mov $8,$2
     sub $1,1
-    mov $10,1
-    div $3,10
-    mov $7,$5
-    lpb $5,1
-      sub $5,$1
-      div $9,$8
-    lpe
-    add $10,5
-    mul $0,$1
-    sub $2,1
     lpb $6,1
       mod $5,2
-      add $4,$6
-      mov $4,1
       sub $6,1
-      trn $0,$9
       mul $1,$5
       add $3,7
       sub $2,$3
-      mov $1,$1
       add $5,$8
-      sub $10,$1
-      cmp $9,$9
       mov $8,$3
-      add $0,1
-      mov $9,$7
-      add $0,2
       sub $6,$1
-      mov $10,31
       add $1,1
-      sub $7,1
     lpe
-    sub $1,$6
-    mov $3,$1
     sub $8,1
     mov $6,$2
-    div $9,4
-    sub $7,3
     mod $6,$8
-    sub $7,$5
     mov $2,$6
-    clr $6,7
-    mul $4,4
-    mov $9,$7
-    mov $6,2
-    mov $4,2
-    mov $7,$5
-    mov $7,$6
-    mov $10,$3
-    add $4,1
-    sub $5,$2
-    mov $0,$4
-    add $9,$3
-    mov $8,$9
-    sub $6,1
-    add $5,1
-    div $10,2
-    add $4,$4
-    sub $2,1
-    trn $5,11
-    mov $9,3
     mov $4,1
-    mov $6,1
   lpe
-  sub $5,8
-  mov $2,1
-  add $8,$6
   mov $1,$4
   mul $1,8
   add $1,8
