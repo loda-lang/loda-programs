@@ -1,0 +1,106 @@
+; A014128: Inverse of 119th cyclotomic polynomial.
+; 1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+mov $4,1
+mov $3,$0
+mov $1,$3
+sub $1,$3
+sub $1,$0
+mov $5,$4
+mov $7,6
+pow $4,$3
+mov $6,1
+mul $5,2
+mov $10,1
+mov $1,22
+sub $10,$6
+mov $8,$0
+mul $3,9
+sub $5,$10
+mul $10,2
+mul $8,$3
+add $10,1
+mov $9,1
+mov $1,$9
+mov $4,9
+sub $3,$0
+sub $9,1
+mov $10,2
+mov $3,1
+mov $5,$5
+add $8,1
+sub $4,$3
+add $3,5
+mov $8,4
+mov $4,4
+mov $3,1
+mul $3,$7
+pow $6,$10
+lpb $0,1
+  mul $6,16
+  mov $5,1
+  add $8,3
+  pow $7,$10
+  trn $0,$3
+  sub $9,$9
+  mov $3,1
+  add $6,$9
+  mov $2,$1
+  mov $9,$7
+  cmp $6,$6
+  mov $2,3
+  sub $0,1
+  mov $7,$2
+  mov $9,$7
+  add $5,$5
+  div $9,2
+  add $2,1
+  add $5,1
+  mov $8,$4
+  mov $3,1
+  add $10,$4
+  sub $0,6
+  add $9,$4
+  pow $9,2
+  mov $5,1
+  trn $2,$5
+  trn $9,$5
+  trn $3,$8
+  add $0,1
+  sub $10,1
+  add $6,$7
+  add $0,1
+  sub $0,1
+  div $6,$4
+  sub $4,3
+  sub $8,$0
+  mov $2,2
+  sub $6,1
+  mul $0,$4
+  mov $10,6
+lpe
+mov $3,0
+add $9,7
+add $8,3
+add $7,$9
+add $6,$7
+mov $3,24
+mov $4,$4
+add $6,1
+add $2,1
+sub $3,4
+mov $6,$1
+sub $9,$8
+sub $9,$7
+sub $0,$1
+mov $1,$9
+add $5,$8
+add $2,1
+mov $9,1
+sub $7,2
+sub $2,1
+log $10,2
+mul $5,$4
+mov $1,$4
+sub $1,1
+div $1,3
