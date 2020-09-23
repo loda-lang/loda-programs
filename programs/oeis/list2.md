@@ -541,6 +541,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212986](http://oeis.org/A212986) ([L12 program](212/A212986.asm)): Number of (w,x,y) with all terms in {0,...,n} and 2w = 3x+y.
 * [A212988](http://oeis.org/A212988) ([L08 program](212/A212988.asm)): Number of (w,x,y) with all terms in {0,...,n} and 4*w = x+y.
 * [A212989](http://oeis.org/A212989) ([L07 program](212/A212989.asm)): Number of (w,x,y) with all terms in {0,...,n} and 4*w = 4*x+y.
+* [A213030](http://oeis.org/A213030) ([L81 program](213/A213030.asm)): [2n/3]^2 -[n/3]^2, where []=floor.
 * [A213033](http://oeis.org/A213033) ([L06 program](213/A213033.asm)): n*[n/2]*[n/3], where [] = floor.
 * [A213034](http://oeis.org/A213034) ([L06 program](213/A213034.asm)): [3n/2]*[n/3], where [] = floor.
 * [A213035](http://oeis.org/A213035) ([L08 program](213/A213035.asm)): n^2-[n/3]^2, where [] = floor.
@@ -1845,6 +1846,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250015](http://oeis.org/A250015) ([L67 program](250/A250015.asm)): Number of length 1+5 0..n arrays with no six consecutive terms having the maximum of any three terms equal to the minimum of the remaining three terms.
 * [A250024](http://oeis.org/A250024) ([L03 program](250/A250024.asm)): 40n - 21.
 * [A250082](http://oeis.org/A250082) ([L62 program](250/A250082.asm)): Number of length 1+5 0..n arrays with every six consecutive terms having the maximum of some two terms equal to the minimum of the remaining four terms.
+* [A250108](http://oeis.org/A250108) ([L103 program](250/A250108.asm)): n*(n-1)/2 mod 2 + n*(n-1)/2 - n*( (n-1) mod 2 ).
 * [A250120](http://oeis.org/A250120) ([L12 program](250/A250120.asm)): Coordination sequence for planar net 3.3.3.3.6 (also called the fsz net).
 * [A250121](http://oeis.org/A250121) ([L13 program](250/A250121.asm)): Crystal ball sequence for planar net 3.3.3.3.6.
 * [A250141](http://oeis.org/A250141) ([L24 program](250/A250141.asm)): Number of length 2+2 0..n arrays with the medians of every three consecutive terms nondecreasing.
