@@ -5,6 +5,4 @@ lpb $0,1
   div $0,2
   sub $0,1
 lpe
-gcd $0,5
-mov $1,$0
-div $1,4
+cmp $1,$0

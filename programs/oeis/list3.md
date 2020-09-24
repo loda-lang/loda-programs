@@ -274,7 +274,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306331](http://oeis.org/A306331) ([L09 program](306/A306331.asm)): Numbers congruent to 6 or 31 mod 38.
 * [A306354](http://oeis.org/A306354) ([L10 program](306/A306354.asm)): a(n) = gcd(n, A101337(n)).
 * [A306367](http://oeis.org/A306367) ([L12 program](306/A306367.asm)): a(n) = numerator of (n^2 + 2)/(n + 2).
-* [A306368](http://oeis.org/A306368) ([L46 program](306/A306368.asm)): a(n) = numerator of (n + 3)*(n + 4)/((n + 1)*(n + 2)).
+* [A306368](http://oeis.org/A306368) ([L19 program](306/A306368.asm)): a(n) = numerator of (n + 3)*(n + 4)/((n + 1)*(n + 2)).
 * [A306390](http://oeis.org/A306390) ([L07 program](306/A306390.asm)): Size of one subtree in the unlabeled binary rooted tree shape of size n whose leaf-labeled trees have the largest number of coalescence sequences.
 * [A306672](http://oeis.org/A306672) ([L15 program](306/A306672.asm)): Partial sums of the even Lucas numbers (A014448).
 * [A306696](http://oeis.org/A306696) ([L11 program](306/A306696.asm)): Lexicographically earliest sequence of nonnegative terms such that for any n > 0 and k > 0, if a(n) >= a(n+k), then a(n+2*k) <> a(n+k).
@@ -636,9 +636,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317325](http://oeis.org/A317325) ([L08 program](317/A317325.asm)): Multiples of 25 and odd numbers interleaved.
 * [A317326](http://oeis.org/A317326) ([L19 program](317/A317326.asm)): Multiples of 26 and odd numbers interleaved.
 * [A317331](http://oeis.org/A317331) ([L28 program](317/A317331.asm)): Indices m for which A058304(m) = 1.
-* [A317332](http://oeis.org/A317332) ([L79 program](317/A317332.asm)): Indices m for which A058304(m) = 8.
-* [A317333](http://oeis.org/A317333) ([L81 program](317/A317333.asm)): Indices m for which A058304(m) = 9.
-* [A317335](http://oeis.org/A317335) ([L71 program](317/A317335.asm)): a(n) = A317332(n) - 8*n.
+* [A317332](http://oeis.org/A317332) ([L22 program](317/A317332.asm)): Indices m for which A058304(m) = 8.
+* [A317333](http://oeis.org/A317333) ([L24 program](317/A317333.asm)): Indices m for which A058304(m) = 9.
+* [A317335](http://oeis.org/A317335) ([L17 program](317/A317335.asm)): a(n) = A317332(n) - 8*n.
 * [A317404](http://oeis.org/A317404) ([L05 program](317/A317404.asm)): a(n) = 3*n*(2^n - 1).
 * [A317405](http://oeis.org/A317405) ([L08 program](317/A317405.asm)): a(n) = n * A001353(n).
 * [A317408](http://oeis.org/A317408) ([L06 program](317/A317408.asm)): a(n) = n * Fibonacci(2n).

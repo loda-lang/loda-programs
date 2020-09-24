@@ -541,7 +541,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212986](http://oeis.org/A212986) ([L12 program](212/A212986.asm)): Number of (w,x,y) with all terms in {0,...,n} and 2w = 3x+y.
 * [A212988](http://oeis.org/A212988) ([L08 program](212/A212988.asm)): Number of (w,x,y) with all terms in {0,...,n} and 4*w = x+y.
 * [A212989](http://oeis.org/A212989) ([L07 program](212/A212989.asm)): Number of (w,x,y) with all terms in {0,...,n} and 4*w = 4*x+y.
-* [A213030](http://oeis.org/A213030) ([L81 program](213/A213030.asm)): [2n/3]^2 -[n/3]^2, where []=floor.
+* [A213030](http://oeis.org/A213030) ([L12 program](213/A213030.asm)): [2n/3]^2 -[n/3]^2, where []=floor.
 * [A213033](http://oeis.org/A213033) ([L06 program](213/A213033.asm)): n*[n/2]*[n/3], where [] = floor.
 * [A213034](http://oeis.org/A213034) ([L06 program](213/A213034.asm)): [3n/2]*[n/3], where [] = floor.
 * [A213035](http://oeis.org/A213035) ([L08 program](213/A213035.asm)): n^2-[n/3]^2, where [] = floor.
@@ -739,6 +739,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A216114](http://oeis.org/A216114) ([L12 program](216/A216114.asm)): The Wiener index of a link of n fullerenes C_{20} (see the Ghorbani and Hosseinzadeh reference).
 * [A216125](http://oeis.org/A216125) ([L13 program](216/A216125.asm)): a(n) = 5^n mod 1000.
 * [A216172](http://oeis.org/A216172) ([L24 program](216/A216172.asm)): Number of all possible tetrahedra of any size, having reverse orientation to the original regular tetrahedron, formed when intersecting the latter by planes parallel to its sides and dividing its edges into n equal parts.
+* [A216173](http://oeis.org/A216173) ([L64 program](216/A216173.asm)): Number of all possible tetrahedra of any size and orientation, formed when intersecting the original regular tetrahedron by planes parallel to its sides and dividing its edges into n equal parts.
 * [A216175](http://oeis.org/A216175) ([L45 program](216/A216175.asm)): Number of all polyhedra (tetrahedra of any orientation and octahedra) of any size, formed when intersecting a regular tetrahedron by planes parallel to its sides and dividing its edges into n equal parts.
 * [A216178](http://oeis.org/A216178) ([L14 program](216/A216178.asm)): Period 4: repeat [4, 1, 0, -3].
 * [A216209](http://oeis.org/A216209) ([L07 program](216/A216209.asm)): Triangle read by rows: T(n,k) = n+k with 0 <= k <= 2*n.
@@ -1846,7 +1847,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250015](http://oeis.org/A250015) ([L67 program](250/A250015.asm)): Number of length 1+5 0..n arrays with no six consecutive terms having the maximum of any three terms equal to the minimum of the remaining three terms.
 * [A250024](http://oeis.org/A250024) ([L03 program](250/A250024.asm)): 40n - 21.
 * [A250082](http://oeis.org/A250082) ([L62 program](250/A250082.asm)): Number of length 1+5 0..n arrays with every six consecutive terms having the maximum of some two terms equal to the minimum of the remaining four terms.
-* [A250108](http://oeis.org/A250108) ([L103 program](250/A250108.asm)): n*(n-1)/2 mod 2 + n*(n-1)/2 - n*( (n-1) mod 2 ).
+* [A250108](http://oeis.org/A250108) ([L18 program](250/A250108.asm)): n*(n-1)/2 mod 2 + n*(n-1)/2 - n*( (n-1) mod 2 ).
 * [A250120](http://oeis.org/A250120) ([L12 program](250/A250120.asm)): Coordination sequence for planar net 3.3.3.3.6 (also called the fsz net).
 * [A250121](http://oeis.org/A250121) ([L13 program](250/A250121.asm)): Crystal ball sequence for planar net 3.3.3.3.6.
 * [A250141](http://oeis.org/A250141) ([L24 program](250/A250141.asm)): Number of length 2+2 0..n arrays with the medians of every three consecutive terms nondecreasing.
@@ -3420,7 +3421,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288383](http://oeis.org/A288383) ([L06 program](288/A288383.asm)): Positions of 1 in A288381; complement of A288382.
 * [A288429](http://oeis.org/A288429) ([L13 program](288/A288429.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-3) - a(n-4), where a(0) = 2, a(1) = 4, a(2) = 5, a(3) = 6.
 * [A288443](http://oeis.org/A288443) ([L06 program](288/A288443.asm)): a(n) = (2n + 1)*2^(2n + 1); numbers k such that v(k)*2^v(k) = k, where v(n) = A007814(n) is 2-adic valuation of n.
-* [A288486](http://oeis.org/A288486) ([L08 program](288/A288486.asm)): Square rings obtained by adding four identical cuboids from A169938, a(n) = 4*n*(n+1)*(n*(n+1)+1).
+* [A288486](http://oeis.org/A288486) ([L07 program](288/A288486.asm)): Square rings obtained by adding four identical cuboids from A169938, a(n) = 4*n*(n+1)*(n*(n+1)+1).
 * [A288487](http://oeis.org/A288487) ([L10 program](288/A288487.asm)): Cuboids that fit in square rings from A288486 obtaining a fifth power.
 * [A288492](http://oeis.org/A288492) ([L19 program](288/A288492.asm)): Indices of terms of A288349 that are powers of 2.
 * [A288516](http://oeis.org/A288516) ([L35 program](288/A288516.asm)): Number of (undirected) paths in the ladder graph P_2 X P_n.
