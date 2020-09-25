@@ -1480,7 +1480,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126120](http://oeis.org/A126120) ([L43 program](126/A126120.asm)): Catalan numbers (A000108) interpolated with 0's.
 * [A126184](http://oeis.org/A126184) ([L19 program](126/A126184.asm)): Number of hex trees with n edges and having no nonroot nodes of outdegree 2.
 * [A126235](http://oeis.org/A126235) ([L12 program](126/A126235.asm)): Minimum length of a codeword in Huffman encoding of n symbols, where the k-th symbol has frequency k.
-* [A126236](http://oeis.org/A126236) ([L16 program](126/A126236.asm)): Maximum length of a codeword in Huffman encoding of n symbols, where the k-th symbol has frequency k.
+* [A126236](http://oeis.org/A126236) ([L12 program](126/A126236.asm)): Maximum length of a codeword in Huffman encoding of n symbols, where the k-th symbol has frequency k.
 * [A126264](http://oeis.org/A126264) ([L08 program](126/A126264.asm)): a(n) = 5*n^2 + 3*n.
 * [A126269](http://oeis.org/A126269) ([L08 program](126/A126269.asm)): Numbers n such that hcl(n,n) < hcl(n,n-1) where hcl(n,i) is the Huffman code length; see comments.
 * [A126274](http://oeis.org/A126274) ([L15 program](126/A126274.asm)): Partial sum of hexagonal prism numbers (A005915).
@@ -1804,6 +1804,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130781](http://oeis.org/A130781) ([L12 program](130/A130781.asm)): Sequence is identical to its third differences: a(n+3)=3a(n+2)-3a(n+1)+2a(n), with a(0)=a(1)=1, a(2)=2.
 * [A130782](http://oeis.org/A130782) ([L04 program](130/A130782.asm)): Periodic sequence with period 1, 1, 2, 1, 1.
 * [A130784](http://oeis.org/A130784) ([L04 program](130/A130784.asm)): Period 3: repeat [1, 3, 2].
+* [A130785](http://oeis.org/A130785) ([L43 program](130/A130785.asm)): Sequence identical to its third differences: a(n+3) = 3a(n+2)-3a(n+1)+2a(n), with a(0)=1, a(1)=4, a(2)=9.
 * [A130793](http://oeis.org/A130793) ([L04 program](130/A130793.asm)): Periodic sequence with period 3: 1, 3, 5.
 * [A130794](http://oeis.org/A130794) ([L04 program](130/A130794.asm)): Periodic sequence with period 1,5,3.
 * [A130806](http://oeis.org/A130806) ([L10 program](130/A130806.asm)): Period 6: 1,4,3,-1,-4,-3.
@@ -5623,7 +5624,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A182467](http://oeis.org/A182467) ([L05 program](182/A182467.asm)): a(n) = 3a(n-1) - 2a(n-2) with a(0)=36 and a(1)=90.
 * [A182522](http://oeis.org/A182522) ([L10 program](182/A182522.asm)): a(0) = 1; thereafter a(2*n + 1) = 3^n, a(2*n + 2) = 2 * 3^n.
 * [A182531](http://oeis.org/A182531) ([L12 program](182/A182531.asm)): Extremal graph numbers for a triangle with an edge off it.
-* [A182568](http://oeis.org/A182568) ([L07 program](182/A182568.asm)): a(n) = 2*floor(n/4)*(n - 2*(1 + floor(n/4))).
+* [A182568](http://oeis.org/A182568) ([L10 program](182/A182568.asm)): a(n) = 2*floor(n/4)*(n - 2*(1 + floor(n/4))).
 * [A182581](http://oeis.org/A182581) ([L06 program](182/A182581.asm)): (3-adic valuation of n), read mod 2.
 * [A182617](http://oeis.org/A182617) ([L18 program](182/A182617.asm)): Number of toothpicks in a toothpick spiral around n cells on hexagonal net.
 * [A182618](http://oeis.org/A182618) ([L38 program](182/A182618.asm)): Number of new grid points that are covered by the toothpicks added at n-th-stage to the toothpick spiral of A182617.
@@ -5974,6 +5975,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186539](http://oeis.org/A186539) ([L22 program](186/A186539.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=-2+3j^2.  Complement of A186540.
 * [A186540](http://oeis.org/A186540) ([L34 program](186/A186540.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=-2+3j^2.  Complement of A186539.
 * [A186544](http://oeis.org/A186544) ([L09 program](186/A186544.asm)): a(n) = floor((Pi-2)*n/(Pi-3)); complement of A187320.
+* [A186575](http://oeis.org/A186575) ([L84 program](186/A186575.asm)): Expansion of (1 + 2*x + 6*x^2)/(1 - x - x^2 - 2*x^3) in powers of x.
 * [A186620](http://oeis.org/A186620) ([L12 program](186/A186620.asm)): Fibonacci sequence beginning 12, 25.
 * [A186636](http://oeis.org/A186636) ([L09 program](186/A186636.asm)): a(n) = n*(n^3+n^2+2*n+1).
 * [A186646](http://oeis.org/A186646) ([L08 program](186/A186646.asm)): Every fourth term of the sequence of natural numbers 1,2,3,4,... is halved.

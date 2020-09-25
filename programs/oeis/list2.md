@@ -612,8 +612,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213759](http://oeis.org/A213759) ([L22 program](213/A213759.asm)): Principal diagonal of the convolution array A213783.
 * [A213763](http://oeis.org/A213763) ([L11 program](213/A213763.asm)): Principal diagonal of the convolution array A213762.
 * [A213764](http://oeis.org/A213764) ([L12 program](213/A213764.asm)): Antidiagonal sums of the convolution array A213762.
+* [A213769](http://oeis.org/A213769) ([L52 program](213/A213769.asm)): Principal diagonal of the convolution array A213768.
 * [A213770](http://oeis.org/A213770) ([L50 program](213/A213770.asm)): Antidiagonal sums of the convolution array A213768.
-* [A213772](http://oeis.org/A213772) ([L15 program](213/A213772.asm)): Principal diagonal of the convolution array A213771.
+* [A213772](http://oeis.org/A213772) ([L16 program](213/A213772.asm)): Principal diagonal of the convolution array A213771.
 * [A213776](http://oeis.org/A213776) ([L15 program](213/A213776.asm)): Antidiagonal sums of the convolution array A213774.
 * [A213779](http://oeis.org/A213779) ([L34 program](213/A213779.asm)): Principal diagonal of the convolution array A213778.
 * [A213780](http://oeis.org/A213780) ([L31 program](213/A213780.asm)): Antidiagonal sums of the convolution array A213778.
@@ -1766,7 +1767,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247983](http://oeis.org/A247983) ([L08 program](247/A247983.asm)): Least number k such that log(2) - sum{1/(h*2^h), h=1..k} < 1/2^n.
 * [A248121](http://oeis.org/A248121) ([L11 program](248/A248121.asm)): Floor(1 / (1/n - Pi^2/6 + sum{1/h^2, h = 1..n})).
 * [A248157](http://oeis.org/A248157) ([L18 program](248/A248157.asm)): Expansion of (1 - 2*x^2)/(1 + x)^2. First column of Riordan triangle A248156.
-* [A248178](http://oeis.org/A248178) ([L69 program](248/A248178.asm)): Least k such that r - sum{1/F(n), h = 1..k} < 1/2^(n+1), where F(n) = A000045 (Fibonacci numbers) and r = sum{1/F(n), h = 1..infinity}.
+* [A248178](http://oeis.org/A248178) ([L17 program](248/A248178.asm)): Least k such that r - sum{1/F(n), h = 1..k} < 1/2^(n+1), where F(n) = A000045 (Fibonacci numbers) and r = sum{1/F(n), h = 1..infinity}.
 * [A248183](http://oeis.org/A248183) ([L29 program](248/A248183.asm)): Least k such that 1/4 - sum{1/(h*(h+1)*(h+2))}, h = 1..k} < 1/n^2.
 * [A248185](http://oeis.org/A248185) ([L19 program](248/A248185.asm)): Numbers k such that A248183(k+1) = A248183(k) + 1.
 * [A248216](http://oeis.org/A248216) ([L12 program](248/A248216.asm)): 6^n - 2^n.
@@ -1917,7 +1918,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A252814](http://oeis.org/A252814) ([L18 program](252/A252814.asm)): Number of n X 2 nonnegative integer arrays with upper left 0 and every value within 2 of its city block distance from the upper left and every value increasing by 0 or 1 with every step right or down.
 * [A252870](http://oeis.org/A252870) ([L10 program](252/A252870.asm)): Number of n X 2 nonnegative integer arrays with upper left 0 and lower right n+2-4 and value increasing by 0 or 1 with every step right or down.
 * [A252932](http://oeis.org/A252932) ([L17 program](252/A252932.asm)): Number of n X 2 nonnegative integer arrays with upper left 0 and every value within 3 of its king move distance from the upper left and every value increasing by 0 or 1 with every step right, diagonally se or down.
-* [A252940](http://oeis.org/A252940) ([L63 program](252/A252940.asm)): Run lengths of A252939.
+* [A252940](http://oeis.org/A252940) ([L21 program](252/A252940.asm)): Run lengths of A252939.
 * [A252994](http://oeis.org/A252994) ([L02 program](252/A252994.asm)): Multiples of 26.
 * [A253012](http://oeis.org/A253012) ([L05 program](253/A253012.asm)): a(n) = ceiling( (n+1) * (n+2) / 12).
 * [A253068](http://oeis.org/A253068) ([L15 program](253/A253068.asm)): The subsequence A253066(2^n-1).
@@ -2644,7 +2645,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268484](http://oeis.org/A268484) ([L11 program](268/A268484.asm)): a(n) = (n + 1)*(4*n^2 + 14*n + 9)/3.
 * [A268488](http://oeis.org/A268488) ([L11 program](268/A268488.asm)): Least number k of the form k = n*(k % 10) + [k / 10], where k % 10 = last digit of k, [k / 10] = k without its last digit.
 * [A268514](http://oeis.org/A268514) ([L23 program](268/A268514.asm)): a(0)=0; thereafter a(2n+1)=3*a(n)+1, a(2n)=2*a(n)+a(n-1)+1.
-* [A268579](http://oeis.org/A268579) ([L29 program](268/A268579.asm)): Expansion of (1 + 6*x + x^2 + 12*x^3 - 2*x^4)/((1 - x)^4*(1 + x)^3).
+* [A268579](http://oeis.org/A268579) ([L20 program](268/A268579.asm)): Expansion of (1 + 6*x + x^2 + 12*x^3 - 2*x^4)/((1 - x)^4*(1 + x)^3).
 * [A268581](http://oeis.org/A268581) ([L05 program](268/A268581.asm)): a(n) = 2*n^2 + 8*n + 5.
 * [A268586](http://oeis.org/A268586) ([L23 program](268/A268586.asm)): Expansion of (x^3*(3*x - 2))/(2*x - 1)^3.
 * [A268622](http://oeis.org/A268622) ([L39 program](268/A268622.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or vertically adjacent neighbor totalling two no more than once.
@@ -3557,7 +3558,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291454](http://oeis.org/A291454) ([L07 program](291/A291454.asm)): Number of half tones between successive pitches in a major scale.
 * [A291497](http://oeis.org/A291497) ([L06 program](291/A291497.asm)): The arithmetic function uhat(n,1,3).
 * [A291498](http://oeis.org/A291498) ([L15 program](291/A291498.asm)): The arithmetic function uhat(n,1,4).
-* [A291499](http://oeis.org/A291499) ([L20 program](291/A291499.asm)): The arithmetic function uhat(n,1,5).
+* [A291499](http://oeis.org/A291499) ([L13 program](291/A291499.asm)): The arithmetic function uhat(n,1,5).
 * [A291500](http://oeis.org/A291500) ([L20 program](291/A291500.asm)): The arithmetic function uhat(n,1,6).
 * [A291509](http://oeis.org/A291509) ([L17 program](291/A291509.asm)): The arithmetic function uhat(n,2,4).
 * [A291510](http://oeis.org/A291510) ([L04 program](291/A291510.asm)): The arithmetic function uhat(n,2,5), negated.
