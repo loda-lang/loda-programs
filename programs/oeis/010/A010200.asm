@@ -1,105 +1,24 @@
 ; A010200: Continued fraction for sqrt(141).
 ; 11,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1
 
-mov $8,2
-add $8,2
-mov $8,$0
-mov $6,2
-mov $3,1
-add $0,$8
-add $8,16
+mov $4,$0
+add $0,$4
+add $4,16
 mov $2,2
-mov $10,2
-mov $7,$8
-sub $7,1
-mov $5,$0
+mov $5,$4
+sub $5,1
 lpb $0,1
-  mov $6,$0
-  mov $9,$5
-  mov $9,1
-  add $2,$5
-  pow $0,3
-  mov $0,$6
-  mod $3,$9
-  mov $4,$2
-  div $9,2
   add $3,4
-  add $10,$0
-  mov $6,$8
-  mov $5,$10
-  gcd $8,$3
-  add $6,$6
-  clr $6,2
-  mov $4,3
-  mov $2,$3
-  sub $6,2
-  mov $7,$0
-  mov $7,$7
-  div $7,$8
-  sub $0,1
-  bin $10,$10
-  fac $4
-  add $3,$10
-  add $8,1
-  add $10,1
-  mov $7,1
-  mov $1,127
-  mul $1,$0
-  div $9,$3
-  mul $4,2
-  add $7,$1
-  mul $9,$6
-  add $9,2
-  mul $1,2
-  add $6,$2
-  sub $6,2
-  mov $7,$0
-  mov $7,$8
-  sub $6,1
-  mov $9,$1
+  gcd $4,$3
   mov $2,1
-  mul $7,$7
-  div $1,$6
-  add $7,1
-  mov $6,$3
-  mov $9,$7
+  add $4,1
+  add $2,1
+  mov $5,$4
+  pow $5,2
+  add $5,1
   mov $0,1
-  add $6,$10
-  mov $6,$0
-  mov $3,$3
-  sub $2,1
-  add $2,$9
-  add $5,$9
 lpe
-add $6,1
-sub $8,1
-add $6,37
-sub $1,2
-add $3,$1
-sub $1,$5
-sub $9,$9
-mul $3,2
-add $4,1
-trn $1,5
-add $8,$7
-div $9,$2
-trn $1,3
-sub $9,1
-mov $5,$4
-mov $3,$7
-add $2,$8
-add $3,$10
-add $9,1
-div $2,$5
-add $8,1
-sub $1,1
-sub $6,1
-pow $9,3
-mov $5,$4
-add $5,1
+mov $3,$5
+add $3,$2
 mov $1,$3
-sub $3,$2
-trn $7,$5
-mov $4,$3
-sub $1,7
-add $1,1
+sub $1,6

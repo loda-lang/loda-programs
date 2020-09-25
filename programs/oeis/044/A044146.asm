@@ -1,91 +1,26 @@
 ; A044146: Numbers n such that string 1,1 occurs in the base 7 representation of n but not of n-1.
 ; 8,56,106,155,204,253,302,351,392,449,498,547,596,645,694,742,792,841,890,939,988,1037,1085,1135,1184,1233,1282,1331,1380,1428,1478,1527,1576,1625,1674,1723,1771,1821,1870,1919,1968
 
-mov $9,$0
-mov $8,5
-mov $5,$8
-mov $6,3
-mov $7,$8
-mov $5,1
+mov $6,$0
+mov $7,5
 add $0,3
-mov $1,8
-mov $3,2
 mov $4,7
-add $5,2
-add $0,1
-mov $3,$6
-add $3,$7
-mod $3,2
-gcd $1,$1
-sub $8,$8
-add $0,1
-add $6,1
-mul $5,7
-add $8,$4
-mov $5,$0
+add $0,2
 lpb $0,1
   add $7,1
-  mov $1,2
   add $0,1
-  mov $6,3
-  pow $0,2
-  mov $6,1
   gcd $0,$4
-  add $3,3
-  mov $2,4
-  mov $6,14
-  mov $1,$8
-  mov $2,$1
-  sub $6,3
   sub $0,1
-  mul $2,$1
-  mov $3,$8
-  mov $8,1
-  mov $3,1
-  sub $2,2
   mul $0,2
-  add $1,34
-  mov $8,32
-  add $5,$2
   add $0,$7
-  add $2,1
-  add $1,1
-  mov $8,3
-  mov $5,$6
-  mov $1,$1
-  mov $8,$2
-  sub $1,3
   mov $2,1
 lpe
-sub $6,$1
-add $2,1
-add $2,2
-mov $5,1
-mov $3,2
+add $2,3
 sub $4,$0
 add $4,$2
-add $3,$6
-mov $1,1
-add $1,2
-trn $7,1
-mul $5,$4
-div $5,$7
-mov $7,$6
-add $0,$3
-mov $5,1
-pow $1,4
-mov $1,6
-gcd $5,2
-sub $8,$1
-sub $1,$2
-add $6,1
-mov $3,$7
-add $1,8
 mov $1,$4
 add $1,3
-mov $10,$9
-mov $11,$10
-mul $11,49
-add $1,$11
-mul $10,$9
-mul $10,$9
+mov $5,$6
+mov $3,$5
+mul $3,49
+add $1,$3

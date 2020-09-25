@@ -4,41 +4,19 @@
 mov $1,$0
 mov $4,$0
 mov $3,$1
-trn $3,1
-sub $1,3
+sub $3,1
 mov $2,$4
 mul $2,$3
-div $4,2
 lpb $0,1
   mov $1,$3
-  sub $2,1
-  mov $0,$0
-  add $2,4
+  add $2,3
   sub $1,$2
   add $0,$1
-  add $4,$4
-  mov $2,$2
   mov $2,$1
   add $0,2
   mul $2,$0
   add $2,2
-  mov $3,$0
-  add $3,$1
-  add $3,$0
-  sub $3,$2
   cmp $0,$1
   sub $0,1
-  mov $3,13
-  mov $3,$3
-  trn $3,4
 lpe
-sub $1,$2
-add $1,$1
-add $0,3
-mov $4,6
-add $3,26
-mul $4,$3
-div $4,2
-add $1,$3
-mov $1,1
 mov $1,$2
