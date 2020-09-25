@@ -1,106 +1,21 @@
 ; A020912: Number of terms in base 4 representation of n-th Fibonacci number.
 ; 1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,7,7,7,8,8,8,9,9,9,10,10,10,11,11,11,12,12,12,13,13,13,14,14,14,15,15,16,16,16,17,17,17,18,18,18,19,19,19,20,20,20,21,21,21,22,22,22,23,23,24,24,24,25,25,25,26,26,26,27,27
 
-mov $9,2
-mov $10,$9
-mov $9,$0
-mov $5,2
-mul $5,108
-mov $6,$0
-add $9,1
-pow $10,2
-mov $4,$6
-add $9,1
-mul $5,$9
-mov $4,4
-mov $4,$10
+mov $2,$0
 div $0,3
-sub $6,1
-mov $1,1
-add $5,2
-add $1,2
-sub $4,$10
-add $9,$4
-sub $9,$0
-mov $10,1
-mov $2,2
-add $10,2
-mov $8,$4
-mod $9,2
-mov $8,2
-add $5,$1
-mov $7,$0
-mov $5,1
-sub $0,$4
+sub $2,1
+mov $4,$0
 add $0,10
 lpb $0,1
-  div $8,16
-  mov $5,0
-  sub $4,1
-  div $7,2
-  add $10,$0
-  mov $3,1
-  add $1,2
-  sub $0,1
-  add $7,1
-  mov $10,$2
-  add $1,2
-  mul $2,3
-  mov $9,$9
-  sub $1,$5
-  mov $1,2
-  mov $1,$7
-  add $4,4
-  add $3,$3
-  mov $5,$1
-  add $3,$2
-  div $7,2
-  mov $0,2
-  add $10,$10
-  mov $10,$1
-  mov $2,$5
-  add $0,$0
-  sub $10,$3
-  div $7,2
+  div $4,2
+  add $4,1
+  div $4,4
   mov $0,6
-  mov $1,$9
-  add $0,2
-  mov $5,3
-  mov $3,1
   trn $3,2
-  mul $9,6
-  add $7,$6
-  sub $0,1
-  sub $5,$6
-  mov $4,2
-  mov $8,$1
-  add $3,$7
-  add $7,$3
-  mov $2,1
-  mov $6,$0
-  mov $9,1
-  add $4,$3
-  mov $6,6
-  add $7,$2
-  sub $7,1
+  add $4,$2
+  add $3,$4
   div $3,3
 lpe
-mov $4,4
-add $4,1
-mov $8,$3
-mov $9,$5
-sub $1,5
-add $3,4
-add $9,1
-pow $7,$9
-sub $7,$2
-div $7,$2
-mov $7,$10
-add $3,1
-mov $9,$6
-mov $0,$6
-mov $7,3
-mul $1,$2
+add $3,5
 mov $1,$3
-sub $1,5
-add $1,1
+sub $1,4
