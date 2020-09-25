@@ -1,0 +1,50 @@
+; A159325: Median number of comparisons used by insertion sort on n (distinct) elements.
+; 0,1,3,5,8,11,15,19,24,30,36,42,49,56,64,73,82,91,101,111,122,134,146,158,171,185
+
+mov $5,$0
+add $0,$0
+mov $4,$0
+mov $3,$0
+mov $2,$0
+mov $4,$4
+lpb $0,1
+  add $3,$3
+  sub $0,1
+  pow $3,2
+  mov $4,$0
+  mov $1,1
+  mov $0,3
+  mul $0,2
+  mul $2,2
+  add $4,$1
+  mov $0,1
+  add $4,$4
+  pow $1,4
+  mov $1,1
+  sub $2,24
+lpe
+add $3,$4
+pow $0,$0
+add $4,37
+sub $1,$2
+div $3,63
+mov $3,$3
+mov $4,3
+sub $2,$3
+mov $2,$0
+add $4,$3
+mov $4,1
+add $1,1
+add $4,$4
+mov $1,$2
+mov $0,3
+add $1,$2
+sub $2,2
+mov $2,1
+mov $1,$3
+mov $6,$5
+mov $7,$6
+mul $7,1
+add $1,$7
+mul $6,$5
+mul $6,$5
