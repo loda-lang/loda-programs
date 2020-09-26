@@ -28,6 +28,7 @@ Interpreter options:
   -c <number>      Maximum number of interpreter cycles (default:10000000)
   -m <number>      Maximum number of used memory cells (default:100000)
 Generator options:
+  -g <number>      Generator version (default:1)
   -p <number>      Maximum number of operations (default:20)
   -n <number>      Maximum constant (default:4)
   -i <number>      Maximum index (default:4)
