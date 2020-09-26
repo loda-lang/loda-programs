@@ -1,0 +1,65 @@
+; A334625: Maximal size of a subset T of S = {1,2,...,n} with a cyclic arrangement of T such that any three neighbors can be reordered in an arithmetic progression.
+; 3,3,3,3,3,3,9,9,9,9,12,12,15,15,15,15,18,18,21,21,21,21,24,24,27,27,27,27,30,30,33,33,33,33,36,36,39,39,39,39,42,42,45,45,45,45,48,48,51,51,51,51,54,54,57,57,57,57,60,60
+
+mov $1,1
+mov $5,3
+add $5,4
+add $5,$0
+lpb $0,1
+  div $0,2
+  mov $2,30
+  add $0,$0
+  mov $3,$1
+  mov $0,$0
+  mov $4,$1
+  mov $5,$0
+  sub $5,1
+  mov $1,$0
+  mov $3,$4
+  mov $2,$5
+  sub $0,$4
+  mov $6,1
+  pow $4,2
+  add $6,1
+  mul $5,2
+  div $3,$0
+  add $4,1
+  sub $0,1
+  mov $4,$6
+  mul $2,2
+  trn $6,28
+  mul $5,$5
+  mov $0,4
+  add $0,1
+  mul $5,2
+  div $2,$5
+  trn $4,$0
+lpe
+trn $6,$1
+add $1,1
+mov $0,$6
+pow $3,$1
+trn $5,10
+mov $6,$5
+sub $0,1
+add $2,$1
+cmp $1,$6
+add $3,1
+trn $3,234
+mov $5,$1
+add $2,2
+div $2,3
+mov $5,2
+sub $4,1
+mov $3,1
+trn $2,1
+add $3,$3
+mov $1,1
+mul $4,2
+add $3,$1
+sub $6,2
+div $5,$0
+mov $4,$6
+mov $1,$2
+mul $1,3
+add $1,3
