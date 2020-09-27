@@ -1,0 +1,71 @@
+; A044030: Numbers n such that 4 and 9 occur juxtaposed in the base 10 representation of n but not of n+1.
+; 49,94,149,194,249,294,349,394,449,499,549,594,649,694,749,794,849,894,949,994,1049,1094,1149,1194,1249,1294,1349,1394,1449,1499,1549,1594,1649,1694,1749,1794,1849,1894,1949,1994,2049
+
+mov $7,$0
+mov $6,1
+mov $3,2
+mov $1,$3
+div $6,$6
+add $0,$0
+mov $5,1
+div $1,2
+mov $2,5
+div $2,$1
+sub $1,$0
+trn $5,1
+add $1,$6
+sub $6,2
+mov $4,1
+sub $4,2
+mov $5,1
+sub $3,1
+mov $4,$1
+mul $3,5
+add $5,1
+add $6,3
+sub $5,$2
+mov $0,$6
+mov $3,$2
+lpb $0,1
+  mov $0,1
+  add $3,$4
+  add $5,1
+  sub $2,$4
+  gcd $5,$3
+  mov $2,$3
+  add $4,1
+  mov $6,$0
+  mul $6,2
+  add $5,$0
+  mov $1,$1
+  sub $3,$1
+  clr $0,1
+  cmp $6,$1
+  add $1,1
+  add $0,2
+  sub $5,$6
+  sub $4,$3
+  add $5,1
+  mov $6,$4
+  add $6,1
+  mov $6,3
+  add $0,1
+  mul $6,$3
+  add $5,1
+  mov $2,$0
+  mov $0,$4
+  sub $0,1
+  mov $2,$6
+  mod $0,$5
+lpe
+add $4,1
+mov $0,$5
+add $0,$4
+mov $1,$3
+add $1,44
+mov $8,$7
+mov $9,$8
+mul $9,50
+add $1,$9
+mul $8,$7
+mul $8,$7
