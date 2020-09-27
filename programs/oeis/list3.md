@@ -55,7 +55,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301695](http://oeis.org/A301695) ([L07 program](301/A301695.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)^2*(1 - x^3)).
 * [A301696](http://oeis.org/A301696) ([L07 program](301/A301696.asm)): Partial sums of A219529.
 * [A301697](http://oeis.org/A301697) ([L25 program](301/A301697.asm)): Coordination sequence for node of type V2 in "krj" 2-D tiling (or net).
-* [A301698](http://oeis.org/A301698) ([L52 program](301/A301698.asm)): Partial sums of A301697.
+* [A301698](http://oeis.org/A301698) ([L28 program](301/A301698.asm)): Partial sums of A301697.
 * [A301708](http://oeis.org/A301708) ([L18 program](301/A301708.asm)): Coordination sequence for node of type V1 in "krc" 2-D tiling (or net).
 * [A301709](http://oeis.org/A301709) ([L17 program](301/A301709.asm)): Partial sums of A301708.
 * [A301710](http://oeis.org/A301710) ([L16 program](301/A301710.asm)): Coordination sequence for node of type V2 in "krc" 2-D tiling (or net).
@@ -1033,7 +1033,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334413](http://oeis.org/A334413) ([L33 program](334/A334413.asm)): First differences of A101803.
 * [A334501](http://oeis.org/A334501) ([L32 program](334/A334501.asm)): Eventual period of a single cell in rule 190 cellular automaton in a cyclic universe of width n.
 * [A334563](http://oeis.org/A334563) ([L10 program](334/A334563.asm)): a(n) is the maximum number of 4-cycles possible in an n-vertex planar graph.
-* [A334625](http://oeis.org/A334625) ([L62 program](334/A334625.asm)): Maximal size of a subset T of S = {1,2,...,n} with a cyclic arrangement of T such that any three neighbors can be reordered in an arithmetic progression.
+* [A334625](http://oeis.org/A334625) ([L15 program](334/A334625.asm)): Maximal size of a subset T of S = {1,2,...,n} with a cyclic arrangement of T such that any three neighbors can be reordered in an arithmetic progression.
 * [A334694](http://oeis.org/A334694) ([L12 program](334/A334694.asm)): a(n) = (n/4)*(n^3+2*n^2+5*n+8).
 * [A334706](http://oeis.org/A334706) ([L35 program](334/A334706.asm)): Number of collinear triples in a 4 X n rectangular grid.
 * [A334789](http://oeis.org/A334789) ([L16 program](334/A334789.asm)): a(n) = 2^log_2*(n) where log_2*(n) = A001069(n) is the number of log_2(log_2(...log_2(n))) iterations needed to reach < 2.
