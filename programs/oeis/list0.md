@@ -662,7 +662,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005665](http://oeis.org/A005665) ([L12 program](005/A005665.asm)): Tower of Hanoi with 3 pegs and cyclic moves only (clockwise).
 * [A005666](http://oeis.org/A005666) ([L12 program](005/A005666.asm)): Tower of Hanoi with 3 pegs and cyclic moves only (counterclockwise).
 * [A005667](http://oeis.org/A005667) ([L23 program](005/A005667.asm)): Numerators of continued fraction convergents to sqrt(10).
-* [A005668](http://oeis.org/A005668) ([L83 program](005/A005668.asm)): Denominators of continued fraction convergents to sqrt(10).
+* [A005668](http://oeis.org/A005668) ([L13 program](005/A005668.asm)): Denominators of continued fraction convergents to sqrt(10).
 * [A005701](http://oeis.org/A005701) ([L15 program](005/A005701.asm)): Number of exterior points formed by extending diagonals of n-gon in general position.
 * [A005712](http://oeis.org/A005712) ([L09 program](005/A005712.asm)): Coefficient of x^4 in expansion of (1+x+x^2)^n.
 * [A005718](http://oeis.org/A005718) ([L15 program](005/A005718.asm)): Quadrinomial coefficients: C(2+n,n) + C(3+n,n) + C(4+n,n).
@@ -3860,7 +3860,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A043704](http://oeis.org/A043704) ([L07 program](043/A043704.asm)): Numbers n such that number of runs in the base 15 representation of n is even.
 * [A043705](http://oeis.org/A043705) ([L07 program](043/A043705.asm)): Numbers n such that number of runs in the base 16 representation of n is even.
 * [A043953](http://oeis.org/A043953) ([L13 program](043/A043953.asm)): Numbers n such that 3 and 7 occur juxtaposed in the base 8 representation of n but not of n+1.
-* [A044030](http://oeis.org/A044030) ([L68 program](044/A044030.asm)): Numbers n such that 4 and 9 occur juxtaposed in the base 10 representation of n but not of n+1.
+* [A044030](http://oeis.org/A044030) ([L29 program](044/A044030.asm)): Numbers n such that 4 and 9 occur juxtaposed in the base 10 representation of n but not of n+1.
 * [A044061](http://oeis.org/A044061) ([L08 program](044/A044061.asm)): Numbers n such that string 0,0 occurs in the base 4 representation of n but not of n-1.
 * [A044096](http://oeis.org/A044096) ([L13 program](044/A044096.asm)): Numbers n such that string 3,4 occurs in the base 5 representation of n but not of n-1.
 * [A044102](http://oeis.org/A044102) ([L02 program](044/A044102.asm)): Multiples of 36.
@@ -5800,7 +5800,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065599](http://oeis.org/A065599) ([L04 program](065/A065599.asm)): If n odd, a(n) = n^2 else a(n) = n.
 * [A065651](http://oeis.org/A065651) ([L10 program](065/A065651.asm)): Sum_{k=1..n} (-1)^tau(k)=n-2*floor(sqrt(n)).
 * [A065679](http://oeis.org/A065679) ([L03 program](065/A065679.asm)): If n is even, a(n) = n^2 else a(n) = n.
-* [A065681](http://oeis.org/A065681) ([L33 program](065/A065681.asm)): Number of primes <= prime(n) which begin with a 2.
+* [A065681](http://oeis.org/A065681) ([L22 program](065/A065681.asm)): Number of primes <= prime(n) which begin with a 2.
 * [A065855](http://oeis.org/A065855) ([L37 program](065/A065855.asm)): Number of composites <= n.
 * [A065883](http://oeis.org/A065883) ([L15 program](065/A065883.asm)): Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
 * [A065915](http://oeis.org/A065915) ([L13 program](065/A065915.asm)): Numerator of sigma(8*n^2)/sigma(4*n^2).
@@ -5854,7 +5854,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A067018](http://oeis.org/A067018) ([L11 program](067/A067018.asm)): Start with a(0)=1, a(1)=4, a(2)=3, a(3)=2; for n>=3, a(n+1) = mex_i (nim-sum a(i)+a(n-i)), where mex means smallest nonnegative missing number.
 * [A067046](http://oeis.org/A067046) ([L22 program](067/A067046.asm)): a(n) = lcm(n, n+1, n+2)/6.
 * [A067056](http://oeis.org/A067056) ([L62 program](067/A067056.asm)): a(n) = (1)*(2 + 3 + 4 + ... + n) + (1 + 2)*(3 + 4 + 5 + ... + n) + (1 + 2 + 3)*(4 + 5 + 6 + ... + n) + ... + (1 + 2 + 3 + ... + n-1)*n.
-* [A067078](http://oeis.org/A067078) ([L09 program](067/A067078.asm)): a(1) = 1, a(2) = 2, a(n) = (n-1)*a(n-1) - (n-2)*a(n-2).
+* [A067078](http://oeis.org/A067078) ([L08 program](067/A067078.asm)): a(1) = 1, a(2) = 2, a(n) = (n-1)*a(n-1) - (n-2)*a(n-2).
 * [A067080](http://oeis.org/A067080) ([L08 program](067/A067080.asm)): If n = ab...def in decimal notation then the left digitorial function Ld(n) = ab...def*ab...de*ab...d*...*ab*a.
 * [A067082](http://oeis.org/A067082) ([L07 program](067/A067082.asm)): If n = abc...def in decimal notation then the right digit sum function = abc...def + bc...def + c...def + ... + def + ef + f.
 * [A067239](http://oeis.org/A067239) ([L09 program](067/A067239.asm)): a(0)=1, a(n) = 8n*(2n-1).
@@ -7790,8 +7790,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A093835](http://oeis.org/A093835) ([L08 program](093/A093835.asm)): n*Jacobsthal(n).
 * [A093882](http://oeis.org/A093882) ([L22 program](093/A093882.asm)): Sum of all the numbers formed by deleting one digit from n.
 * [A093907](http://oeis.org/A093907) ([L05 program](093/A093907.asm)): Number of elements in the n-th period of the periodic table as predicted by the Aufbau principle.
-* [A093916](http://oeis.org/A093916) ([L49 program](093/A093916.asm)): a(2*k-1)=(2*k-1)^2+2-k, a(2*k)=6*k^2+2-k: First column of the triangle A093915.
-* [A093918](http://oeis.org/A093918) ([L52 program](093/A093918.asm)): a(2k-1)=(2k-1)^2+k, a(2k)=6k^2+k+1: Last term in rows of triangle A093915.
+* [A093916](http://oeis.org/A093916) ([L28 program](093/A093916.asm)): a(2*k-1)=(2*k-1)^2+2-k, a(2*k)=6*k^2+2-k: First column of the triangle A093915.
+* [A093918](http://oeis.org/A093918) ([L30 program](093/A093918.asm)): a(2k-1)=(2k-1)^2+k, a(2k)=6k^2+k+1: Last term in rows of triangle A093915.
 * [A093960](http://oeis.org/A093960) ([L12 program](093/A093960.asm)): a(1) = 1, a(2) = 2, a(n + 1) = n*a(1) + (n-1)*a(2) + ...(n-r)*a(r + 1) + ... + a(n).
 * [A093967](http://oeis.org/A093967) ([L08 program](093/A093967.asm)): a(n) = n * Pell(n).
 * [A093968](http://oeis.org/A093968) ([L06 program](093/A093968.asm)): Inverse binomial transform of n*Pell(n).

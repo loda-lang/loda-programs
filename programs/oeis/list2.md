@@ -1079,7 +1079,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227380](http://oeis.org/A227380) ([L07 program](227/A227380.asm)): Doubling the first two of every four nonnegative numbers.
 * [A227394](http://oeis.org/A227394) ([L14 program](227/A227394.asm)): The maximum value of x^4(n-x)(x-1) for x in 1..n is reached for x = a(n).
 * [A227417](http://oeis.org/A227417) ([L15 program](227/A227417.asm)): Integer triples a(3n-2) = n, a(3n-1) = n+4, and a(3n) = n+7.
-* [A227453](http://oeis.org/A227453) ([L89 program](227/A227453.asm)): Numbers such that the distance to the largest square less than n is a multiple of 4.
+* [A227453](http://oeis.org/A227453) ([L34 program](227/A227453.asm)): Numbers such that the distance to the largest square less than n is a multiple of 4.
 * [A227512](http://oeis.org/A227512) ([L16 program](227/A227512.asm)): Floor(-1/n + 1/log((2n+1)/(2n-1))).
 * [A227513](http://oeis.org/A227513) ([L17 program](227/A227513.asm)): Round(-1/n + 1/log((2n+1)/(2n-1))).
 * [A227541](http://oeis.org/A227541) ([L04 program](227/A227541.asm)): a(n) = floor(13*n^2/4).
@@ -3523,7 +3523,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A290561](http://oeis.org/A290561) ([L07 program](290/A290561.asm)): a(n) = n + cos(n*Pi/2).
 * [A290562](http://oeis.org/A290562) ([L16 program](290/A290562.asm)): a(n) = n - cos(n*Pi/2).
 * [A290604](http://oeis.org/A290604) ([L05 program](290/A290604.asm)): a(0) = 2, a(1) = 2; for n > 1, a(n) = a(n-1) + 2*a(n-2) + 3.
-* [A290631](http://oeis.org/A290631) ([L11 program](290/A290631.asm)): a(n) = (n^2 + 1) * (2*n - 1).
+* [A290631](http://oeis.org/A290631) ([L14 program](290/A290631.asm)): a(n) = (n^2 + 1) * (2*n - 1).
 * [A290651](http://oeis.org/A290651) ([L15 program](290/A290651.asm)): a(n) = 5 - 2^(n - 1) + 3^(n - 1) + n - 2.
 * [A290662](http://oeis.org/A290662) ([L23 program](290/A290662.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 * [A290682](http://oeis.org/A290682) ([L10 program](290/A290682.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.

@@ -93,6 +93,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302488](http://oeis.org/A302488) ([L09 program](302/A302488.asm)): Total domination number of the n X n grid graph.
 * [A302507](http://oeis.org/A302507) ([L04 program](302/A302507.asm)): a(n) = 4*(3^n-1).
 * [A302537](http://oeis.org/A302537) ([L04 program](302/A302537.asm)): a(n) = (n^2 + 13*n + 2)/2.
+* [A302560](http://oeis.org/A302560) ([L123 program](302/A302560.asm)): Partial sums of icosahedral numbers (A006564).
 * [A302563](http://oeis.org/A302563) ([L15 program](302/A302563.asm)): Numbers whose digital root is equal to their number of digits.
 * [A302576](http://oeis.org/A302576) ([L04 program](302/A302576.asm)): Numbers k such that k/10 + 1 is a square.
 * [A302588](http://oeis.org/A302588) ([L44 program](302/A302588.asm)): a(n) = a(n-3) + 7*(n-2), a(0)=1, a(1)=2, a(2)=4.
@@ -346,6 +347,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309683](http://oeis.org/A309683) ([L20 program](309/A309683.asm)): Number of odd parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309684](http://oeis.org/A309684) ([L29 program](309/A309684.asm)): Sum of the odd parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309685](http://oeis.org/A309685) ([L06 program](309/A309685.asm)): Number of even parts appearing among the smallest parts of the partitions of n into 3 parts.
+* [A309686](http://oeis.org/A309686) ([L72 program](309/A309686.asm)): Sum of the even parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309687](http://oeis.org/A309687) ([L12 program](309/A309687.asm)): Number of odd parts appearing among the second largest parts of the partitions of n into 3 parts.
 * [A309689](http://oeis.org/A309689) ([L19 program](309/A309689.asm)): Number of even parts appearing among the second largest parts of the partitions of n into 3 parts.
 * [A309779](http://oeis.org/A309779) ([L03 program](309/A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
