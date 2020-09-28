@@ -4,41 +4,11 @@
 mov $2,$0
 add $0,1
 lpb $2,1
-  lpb $4,1
-    mov $2,6
-    mov $3,2
-    sub $0,1
-    mov $4,$0
-    mov $2,41
-    mov $3,$0
-  lpe
   sub $3,$2
-  mov $4,$2
   div $0,2
   sub $0,$3
-  add $0,$0
-  lpb $5,1
-    add $3,$2
-    mov $2,$3
-    add $4,$0
-    mov $5,$4
-    sub $2,2
-    mov $1,$4
-  lpe
-  mov $1,$3
-  sub $4,$3
+  mul $0,2
   sub $3,1
-  div $4,2
-  mul $1,$2
-  mov $4,$3
-  lpb $6,1
-    mov $6,$4
-  lpe
   sub $2,1
-  div $4,2
 lpe
-mov $1,$2
-mov $1,$5
-mov $1,$3
-mov $3,7
 mov $1,$0

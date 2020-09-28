@@ -4,56 +4,27 @@
 mov $5,$0
 mov $7,2
 lpb $7,1
-  clr $0,5
   sub $7,1
   mov $0,$5
   add $0,$7
   sub $0,1
-  add $0,$0
-  mov $4,$0
-  mul $4,2
-  mov $1,$4
+  mul $0,2
   add $0,1
-  mov $3,$4
-  sub $1,$1
-  pow $4,$1
-  mul $0,$0
+  pow $0,2
   mov $3,$0
-  mov $4,$1
-  lpb $0,1
-    mul $4,$3
-    add $0,4
-    mov $3,$0
-    add $0,$0
-    sub $0,1
-    mod $3,2
-  lpe
-  mov $0,$0
-  mov $4,7
-  mov $1,5
   mov $2,30
   mul $2,$3
   add $3,$2
   add $3,2
-  mov $1,$3
-  mov $1,4
   add $2,$3
-  add $2,2
-  add $1,2
-  mov $0,2
   add $2,$3
-  mov $4,$0
-  mov $1,$2
   div $2,144
   add $2,1
-  mul $1,$2
-  mul $0,6
-  sub $3,$4
   mov $1,$2
-  mov $8,$7
-  lpb $8,1
+  mov $4,$7
+  lpb $4,1
     mov $6,$1
-    sub $8,1
+    sub $4,1
   lpe
 lpe
 lpb $5,1
