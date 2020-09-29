@@ -669,6 +669,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214394](http://oeis.org/A214394) ([L13 program](214/A214394.asm)): If n mod 6 = 0 then n/6 else n.
 * [A214395](http://oeis.org/A214395) ([L11 program](214/A214395.asm)): Decimal expansion of 16/27.
 * [A214405](http://oeis.org/A214405) ([L12 program](214/A214405.asm)): Numbers of the form (4k+3)^2-8 or (4k+5)^2+4.
+* [A214411](http://oeis.org/A214411) ([L106 program](214/A214411.asm)): The maximum exponent k of 7 such that 7^k divides n.
 * [A214446](http://oeis.org/A214446) ([L07 program](214/A214446.asm)): n*(n^2-2*n-1)
 * [A214489](http://oeis.org/A214489) ([L16 program](214/A214489.asm)): Numbers m such that A070939(m) = A070939(m + A070939(m)), A070939 = length of binary representation.
 * [A214493](http://oeis.org/A214493) ([L21 program](214/A214493.asm)): Numbers of the form ((6k+5)^2+9)/2 or 2(3k+4)^2-9.
@@ -3649,6 +3650,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293162](http://oeis.org/A293162) ([L09 program](293/A293162.asm)): Take every third term of the {0,1}-version of the Thue-Morse sequence: a(n) = A010060(3n).
 * [A293163](http://oeis.org/A293163) ([L16 program](293/A293163.asm)): a(n) = A010060(3n+1).
 * [A293164](http://oeis.org/A293164) ([L24 program](293/A293164.asm)): a(n) = A010060(3n+2).
+* [A293168](http://oeis.org/A293168) ([L53 program](293/A293168.asm)): Partial sums of A054868.
 * [A293292](http://oeis.org/A293292) ([L04 program](293/A293292.asm)): Numbers with last digit less than 5 (in base 10).
 * [A293296](http://oeis.org/A293296) ([L09 program](293/A293296.asm)): a(n) = 2*n^2 - floor(n/4).
 * [A293407](http://oeis.org/A293407) ([L16 program](293/A293407.asm)): Least integer k such that k/n^2 > (-1 + sqrt(5))/2 (the golden ratio).
@@ -3769,7 +3771,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297996](http://oeis.org/A297996) ([L24 program](297/A297996.asm)): a(1)=2, a(2)=3, a(3)=5 and a(n) = (a(1) + a(2) + a(3) + ... + a(n-1))/a(n-1).
 * [A298019](http://oeis.org/A298019) ([L18 program](298/A298019.asm)): Partial sums of A298016.
 * [A298022](http://oeis.org/A298022) ([L44 program](298/A298022.asm)): Coordination sequence for Dual(3^3.4^2) tiling with respect to a trivalent node.
-* [A298024](http://oeis.org/A298024) ([L12 program](298/A298024.asm)): G.f.: (x^4+3*x^3+6*x^2+3*x+1)/((1-x)*(1-x^3)).
+* [A298024](http://oeis.org/A298024) ([L31 program](298/A298024.asm)): G.f.: (x^4+3*x^3+6*x^2+3*x+1)/((1-x)*(1-x^3)).
 * [A298025](http://oeis.org/A298025) ([L13 program](298/A298025.asm)): Partial sums of A298024.
 * [A298026](http://oeis.org/A298026) ([L24 program](298/A298026.asm)): Coordination sequence of Dual(3.6.3.6) tiling with respect to a hexavalent node.
 * [A298027](http://oeis.org/A298027) ([L11 program](298/A298027.asm)): Partial sums of A298026.

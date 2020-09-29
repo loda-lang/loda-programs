@@ -318,7 +318,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104104](http://oeis.org/A104104) ([L18 program](104/A104104.asm)): a(1) = 1, if A(k) = sequence of first 2^(k-1) terms and if B(k) is A(k) with 0's and 1's exchanged, then A(k+1) = A(k)A(k) if a(k) = 0, A(k+1) = A(k)B(k) if a(k) = 1.
 * [A104117](http://oeis.org/A104117) ([L26 program](104/A104117.asm)): For n=2^k, a(n) = k+1, else 0.
 * [A104121](http://oeis.org/A104121) ([L13 program](104/A104121.asm)): a(n)=1 if there is a partition of n^3 into n primes such that n-1 are consecutive primes and the remaining prime is larger than the sum of the n-1 consecutive primes, otherwise a(0)=0 if no such partition exists.
-* [A104150](http://oeis.org/A104150) ([L07 program](104/A104150.asm)): Shifted factorial numbers: a(0)=0, a(n) = (n-1)!.
+* [A104150](http://oeis.org/A104150) ([L06 program](104/A104150.asm)): Shifted factorial numbers: a(0)=0, a(n) = (n-1)!.
 * [A104161](http://oeis.org/A104161) ([L09 program](104/A104161.asm)): G.f.: x*(1 - x + x^2)/((1-x)^2 * (1 - x - x^2)).
 * [A104188](http://oeis.org/A104188) ([L04 program](104/A104188.asm)): a(n) = 4n*(4n - 1).
 * [A104220](http://oeis.org/A104220) ([L21 program](104/A104220.asm)): a(n) = Fibonacci[n]+1-Mod[Fibonacci[n],2]
@@ -706,6 +706,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110803](http://oeis.org/A110803) ([L37 program](110/A110803.asm)): n times the number of digits in the decimal expansion of n.
 * [A110831](http://oeis.org/A110831) ([L06 program](110/A110831.asm)): a(n) = 3*n^2 + 27*n + 1.
 * [A110907](http://oeis.org/A110907) ([L11 program](110/A110907.asm)): Number of points in the standard root system version of the D_3 (or f.c.c.) lattice having L_infinity norm n.
+* [A110916](http://oeis.org/A110916) ([L38 program](110/A110916.asm)): Number of squares between 10n and 10n+9 (inclusive).
 * [A110953](http://oeis.org/A110953) ([L26 program](110/A110953.asm)): Starting a priori with the fraction 1/1, the denominators of fractions built according to the rule: add top and bottom to get the new bottom, add top and 9 times the bottom to get the new top.
 * [A110962](http://oeis.org/A110962) ([L11 program](110/A110962.asm)): Fractalisation of a fractal: of the Kimberling's sequence beginning with 0.
 * [A110963](http://oeis.org/A110963) ([L12 program](110/A110963.asm)): Fractalisation of a fractal: of the Kimberling's sequence beginning with 1.
@@ -2648,6 +2649,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140148](http://oeis.org/A140148) ([L21 program](140/A140148.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^0 if n is even.
 * [A140149](http://oeis.org/A140149) ([L16 program](140/A140149.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^3 if n is even.
 * [A140150](http://oeis.org/A140150) ([L20 program](140/A140150.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^4 if n is even.
+* [A140151](http://oeis.org/A140151) ([L72 program](140/A140151.asm)): a(1)=1, a(n)=a(n-1)+n^2 if n odd, a(n)=a(n-1)+ n^5 if n is even.
 * [A140152](http://oeis.org/A140152) ([L19 program](140/A140152.asm)): a(1)=1, a(n)=a(n-1)+n^3 if n odd, a(n)=a(n-1)+ n^0 if n is even.
 * [A140153](http://oeis.org/A140153) ([L25 program](140/A140153.asm)): a(1)=1, a(n) = a(n-1) + n^3 if n odd, a(n) = a(n-1) + n^1 if n is even.
 * [A140154](http://oeis.org/A140154) ([L20 program](140/A140154.asm)): a(1)=1, a(n) = a(n-1) + n^3 if n odd, a(n) = a(n-1) + n^2 if n is even.
@@ -3779,7 +3781,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158447](http://oeis.org/A158447) ([L05 program](158/A158447.asm)): a(n) = 10*n^2 - 1.
 * [A158459](http://oeis.org/A158459) ([L03 program](158/A158459.asm)): Period 4: repeat [0, 3, 2, 1].
 * [A158462](http://oeis.org/A158462) ([L05 program](158/A158462.asm)): a(n) = 36*n^2 - 6.
-* [A158463](http://oeis.org/A158463) ([L05 program](158/A158463.asm)): a(n) = 12*n^2 - 1.
+* [A158463](http://oeis.org/A158463) ([L04 program](158/A158463.asm)): a(n) = 12*n^2 - 1.
 * [A158478](http://oeis.org/A158478) ([L05 program](158/A158478.asm)): Number of colors needed to paint n sectors of a circle.
 * [A158479](http://oeis.org/A158479) ([L05 program](158/A158479.asm)): 36n^2 + 6.
 * [A158480](http://oeis.org/A158480) ([L05 program](158/A158480.asm)): a(n) = 12*n^2 + 1.
@@ -5098,7 +5100,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173237](http://oeis.org/A173237) ([L16 program](173/A173237.asm)): Alternate n and 10n for each n.
 * [A173246](http://oeis.org/A173246) ([L22 program](173/A173246.asm)): Expansion sequence of p(x)=(x + 1)^50/Sum[x^i, {i, 0, 50}];
 * [A173254](http://oeis.org/A173254) ([L12 program](173/A173254.asm)): a(n) = a(n-1) + a(n-2) - [a(n-2)/2] - [a(n-4)/2].
-* [A173259](http://oeis.org/A173259) ([L07 program](173/A173259.asm)): Period 3: repeat [4, 1, 4].
+* [A173259](http://oeis.org/A173259) ([L06 program](173/A173259.asm)): Period 3: repeat [4, 1, 4].
 * [A173263](http://oeis.org/A173263) ([L11 program](173/A173263.asm)): Successive numbers n such that ChebyshevT[n/2, n] is not an integer.
 * [A173267](http://oeis.org/A173267) ([L22 program](173/A173267.asm)): a(n) = 121*n^2 + n.
 * [A173275](http://oeis.org/A173275) ([L18 program](173/A173275.asm)): a(n) = 169*n^2 + n.
@@ -5365,7 +5367,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A177698](http://oeis.org/A177698) ([L12 program](177/A177698.asm)): Expansion of e.g.f.: sin(arctan(x)).
 * [A177702](http://oeis.org/A177702) ([L03 program](177/A177702.asm)): Period 3: repeat [1, 1, 2].
 * [A177704](http://oeis.org/A177704) ([L04 program](177/A177704.asm)): Period 4: repeat [1, 1, 1, 2].
-* [A177706](http://oeis.org/A177706) ([L05 program](177/A177706.asm)): Period 5: repeat [1, 1, 1, 1, 2].
+* [A177706](http://oeis.org/A177706) ([L04 program](177/A177706.asm)): Period 5: repeat [1, 1, 1, 1, 2].
 * [A177712](http://oeis.org/A177712) ([L10 program](177/A177712.asm)): Even numbers that have a nontrivial odd divisor.
 * [A177747](http://oeis.org/A177747) ([L15 program](177/A177747.asm)): Convolution of A008805 (triangular numbers repeated) with itself.
 * [A177755](http://oeis.org/A177755) ([L21 program](177/A177755.asm)): Number of ways to place 2 nonattacking bishops on an n X n toroidal board.
@@ -5900,7 +5902,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185294](http://oeis.org/A185294) ([L15 program](185/A185294.asm)): Number of disconnected 9-regular simple graphs on 2n vertices with girth at least 4.
 * [A185346](http://oeis.org/A185346) ([L03 program](185/A185346.asm)): a(n) = 2^n - 9.
 * [A185355](http://oeis.org/A185355) ([L12 program](185/A185355.asm)): Number of n X n symmetric (0,1)-matrices containing four ones.
-* [A185387](http://oeis.org/A185387) ([L08 program](185/A185387.asm)): E.g.f. exp(x)+log(1/(1-x)).
+* [A185387](http://oeis.org/A185387) ([L07 program](185/A185387.asm)): E.g.f. exp(x)+log(1/(1-x)).
 * [A185437](http://oeis.org/A185437) ([L09 program](185/A185437.asm)): The least number of colors required to color an n-bead necklace so that each bead can be identified.
 * [A185438](http://oeis.org/A185438) ([L05 program](185/A185438.asm)): a(n) = 8*n^2 - 2*n + 1.
 * [A185452](http://oeis.org/A185452) ([L11 program](185/A185452.asm)): Image of n under the map n -> n/2 if n even, (5*n+1)/2 if n odd.
