@@ -1,0 +1,85 @@
+; A134235: Triangle read by rows: a(1) = 1; then n-th row = n terms of (n+2), (n+4), (n+6),...n.
+; 1,4,2,5,7,3,6,8,10,4,7,9,11,13,5,8,10,12,14,16,6,9,11,13,15,17,19,7,10,12,14,16,18,20,22,8,11,13,15,17,19,21,23,25,9,12,14,16,18,20,22,24,26,28,10
+
+mov $7,1
+mul $0,2
+mov $4,2
+mov $4,1
+mov $8,3
+mov $4,2
+mov $5,2
+mov $3,$7
+add $4,$7
+add $0,$5
+mov $2,$7
+mov $6,$8
+add $6,$6
+sub $3,1
+mov $6,$0
+add $7,2
+sub $6,$3
+mod $4,$8
+mov $1,2
+mov $1,1
+sub $6,2
+lpb $0,1
+  sub $5,2
+  mov $4,$0
+  mov $5,1
+  pow $6,2
+  mov $6,4
+  mov $5,$0
+  sub $0,1
+  add $1,1
+  sub $0,$1
+  mul $3,2
+  mov $8,$4
+  add $1,1
+  add $4,$5
+lpe
+div $3,19
+mov $3,1
+mov $7,$1
+mov $6,$2
+div $8,$5
+add $1,1
+sub $6,$0
+mov $1,4
+mov $0,2
+mov $2,6
+div $6,$5
+sub $2,6
+mul $0,2
+trn $7,$4
+sub $6,$5
+add $1,1
+mov $4,1
+add $6,1
+mov $2,$1
+mov $8,$7
+mov $8,1
+add $1,$2
+cmp $5,$1
+mov $0,$2
+add $1,$0
+mov $7,1
+mov $8,$7
+mov $7,2
+sub $1,$6
+mov $6,1
+mov $0,1
+mov $5,$7
+add $7,1
+div $5,5
+add $8,$0
+mov $3,$8
+add $8,$6
+gcd $0,2
+div $7,2
+add $8,$6
+mul $0,2
+fac $4
+mul $4,$3
+add $8,1
+sub $1,15
+add $1,1

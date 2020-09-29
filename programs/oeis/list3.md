@@ -310,7 +310,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308124](http://oeis.org/A308124) ([L05 program](308/A308124.asm)): a(n) = (2 + 7*4^n)/3.
 * [A308136](http://oeis.org/A308136) ([L18 program](308/A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
 * [A308137](http://oeis.org/A308137) ([L20 program](308/A308137.asm)): Number of (undirected) Hamiltonian paths on the n-prism graph.
-* [A308196](http://oeis.org/A308196) ([L10 program](308/A308196.asm)): Partial sums of A063808.
+* [A308196](http://oeis.org/A308196) ([L09 program](308/A308196.asm)): Partial sums of A063808.
 * [A308217](http://oeis.org/A308217) ([L25 program](308/A308217.asm)): a(n) is the multiplicative inverse of A001844(n) modulo A001844(n+1); where A001844 is the sequence of centered square numbers.
 * [A308305](http://oeis.org/A308305) ([L12 program](308/A308305.asm)): a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
 * [A308358](http://oeis.org/A308358) ([L19 program](308/A308358.asm)): Beatty sequence for sqrt(3)/4.
@@ -1075,3 +1075,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337300](http://oeis.org/A337300) ([L47 program](337/A337300.asm)): Partial sums of the geometric Connell sequence A049039.
 * [A337313](http://oeis.org/A337313) ([L13 program](337/A337313.asm)): a(n) is the number of n-digit positive integers with exactly three distinct base 10 digits.
 * [A337484](http://oeis.org/A337484) ([L11 program](337/A337484.asm)): Number of ordered triples of positive integers summing to n that are neither strictly increasing nor strictly decreasing.
+* [A337899](http://oeis.org/A337899) ([L102 program](337/A337899.asm)): Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.

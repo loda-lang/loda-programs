@@ -655,7 +655,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214092](http://oeis.org/A214092) ([L19 program](214/A214092.asm)): Principal diagonal of the convolution array A213773.
 * [A214206](http://oeis.org/A214206) ([L12 program](214/A214206.asm)): a(n) = largest m such that m*(m+1)/2 <= 14*n.
 * [A214210](http://oeis.org/A214210) ([L19 program](214/A214210.asm)): Trebled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0,0 and 1 with 1,1,1.
-* [A214212](http://oeis.org/A214212) ([L21 program](214/A214212.asm)): Number of special factors of length n in the Thue-Morse sequence A010060.
+* [A214212](http://oeis.org/A214212) ([L21 program](214/A214212.asm)): Number of right special factors of length n in the Thue-Morse sequence A010060.
 * [A214214](http://oeis.org/A214214) ([L31 program](214/A214214.asm)): Partial sums of A214212.
 * [A214260](http://oeis.org/A214260) ([L12 program](214/A214260.asm)): First differences of A052980.
 * [A214263](http://oeis.org/A214263) ([L15 program](214/A214263.asm)): Expansion of f(x^1, x^7) in powers of x where f() is Ramanujan's general theta function.
@@ -669,7 +669,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214394](http://oeis.org/A214394) ([L13 program](214/A214394.asm)): If n mod 6 = 0 then n/6 else n.
 * [A214395](http://oeis.org/A214395) ([L11 program](214/A214395.asm)): Decimal expansion of 16/27.
 * [A214405](http://oeis.org/A214405) ([L12 program](214/A214405.asm)): Numbers of the form (4k+3)^2-8 or (4k+5)^2+4.
-* [A214411](http://oeis.org/A214411) ([L106 program](214/A214411.asm)): The maximum exponent k of 7 such that 7^k divides n.
+* [A214411](http://oeis.org/A214411) ([L16 program](214/A214411.asm)): The maximum exponent k of 7 such that 7^k divides n.
 * [A214446](http://oeis.org/A214446) ([L07 program](214/A214446.asm)): n*(n^2-2*n-1)
 * [A214489](http://oeis.org/A214489) ([L16 program](214/A214489.asm)): Numbers m such that A070939(m) = A070939(m + A070939(m)), A070939 = length of binary representation.
 * [A214493](http://oeis.org/A214493) ([L21 program](214/A214493.asm)): Numbers of the form ((6k+5)^2+9)/2 or 2(3k+4)^2-9.
@@ -2045,7 +2045,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A255849](http://oeis.org/A255849) ([L08 program](255/A255849.asm)): Characteristic function of pentagonal numbers.
 * [A255875](http://oeis.org/A255875) ([L11 program](255/A255875.asm)): a(n) = Fibonacci(n+2) + n - 2.
 * [A255876](http://oeis.org/A255876) ([L12 program](255/A255876.asm)): a(n) = (4*n^2 + 4*n - 3 - 3*(-1)^n)/2.
-* [A255877](http://oeis.org/A255877) ([L09 program](255/A255877.asm)): a(n) = (2n-2)^3 +(2n-2) - 1.
+* [A255877](http://oeis.org/A255877) ([L07 program](255/A255877.asm)): a(n) = (2n-2)^3 +(2n-2) - 1.
 * [A255910](http://oeis.org/A255910) ([L02 program](255/A255910.asm)): Decimal expansion of 16/9.
 * [A255932](http://oeis.org/A255932) ([L11 program](255/A255932.asm)): a(n) is the denominator of Gamma(n+1/2)^2/(2*n*Pi), the value of an integral with sinh in the denominator.
 * [A255993](http://oeis.org/A255993) ([L10 program](255/A255993.asm)): Number of length n+2 0..1 arrays with at most one downstep in every n consecutive neighbor pairs.
@@ -2949,6 +2949,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273981](http://oeis.org/A273981) ([L25 program](273/A273981.asm)): Erroneous version of A005897.
 * [A273982](http://oeis.org/A273982) ([L05 program](273/A273982.asm)): Number of little cubes visible around an n X n X n cube with a face on a table.
 * [A274004](http://oeis.org/A274004) ([L14 program](274/A274004.asm)): First differences of A002960.
+* [A274009](http://oeis.org/A274009) ([L62 program](274/A274009.asm)): 1's distance from a number in its binary expansion.
 * [A274039](http://oeis.org/A274039) ([L04 program](274/A274039.asm)): Expansion of (x^4 + x^10) / (1 - 2*x + x^2).
 * [A274047](http://oeis.org/A274047) ([L17 program](274/A274047.asm)): Diameter of Generalized Petersen Graph G(n, 2).
 * [A274070](http://oeis.org/A274070) ([L03 program](274/A274070.asm)): Integer part of the sum of the inverses of the first n primes.
@@ -3650,7 +3651,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293162](http://oeis.org/A293162) ([L09 program](293/A293162.asm)): Take every third term of the {0,1}-version of the Thue-Morse sequence: a(n) = A010060(3n).
 * [A293163](http://oeis.org/A293163) ([L16 program](293/A293163.asm)): a(n) = A010060(3n+1).
 * [A293164](http://oeis.org/A293164) ([L24 program](293/A293164.asm)): a(n) = A010060(3n+2).
-* [A293168](http://oeis.org/A293168) ([L53 program](293/A293168.asm)): Partial sums of A054868.
+* [A293168](http://oeis.org/A293168) ([L24 program](293/A293168.asm)): Partial sums of A054868.
 * [A293292](http://oeis.org/A293292) ([L04 program](293/A293292.asm)): Numbers with last digit less than 5 (in base 10).
 * [A293296](http://oeis.org/A293296) ([L09 program](293/A293296.asm)): a(n) = 2*n^2 - floor(n/4).
 * [A293407](http://oeis.org/A293407) ([L16 program](293/A293407.asm)): Least integer k such that k/n^2 > (-1 + sqrt(5))/2 (the golden ratio).
