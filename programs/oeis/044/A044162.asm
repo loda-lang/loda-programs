@@ -1,0 +1,60 @@
+; A044162: Numbers n such that string 3,3 occurs in the base 7 representation of n but not of n-1.
+; 24,73,122,168,220,269,318,367,416,465,511,563,612,661,710,759,808,854,906,955,1004,1053,1102,1151,1176,1249,1298,1347,1396,1445,1494,1540,1592,1641,1690,1739,1788,1837,1883,1935,1984
+
+mov $8,$0
+mov $5,$0
+mov $1,3
+mov $1,2
+mov $3,$1
+sub $1,$0
+mov $1,7
+mov $2,3
+mov $1,$1
+mov $2,$0
+sub $3,$1
+mov $4,1
+pow $1,2
+mul $0,2
+mov $3,$1
+sub $1,$4
+add $0,$4
+mul $1,2
+lpb $0,1
+  mul $1,2
+  gcd $3,$0
+  sub $0,1
+  mov $1,1
+  mov $0,1
+  mov $1,$4
+  mov $1,$1
+  mov $3,$3
+  mov $0,$4
+  trn $4,4
+  add $4,$3
+lpe
+div $2,$3
+add $4,5
+trn $1,1
+mul $3,$2
+sub $2,$2
+mov $0,2
+add $1,7
+mov $0,1
+add $2,2
+sub $3,1
+trn $4,$2
+mov $1,$3
+add $1,13
+mov $6,$5
+mov $7,$6
+mul $7,24
+add $1,$7
+mul $6,$5
+mul $6,$5
+add $1,12
+mov $9,$8
+mov $10,$9
+mul $10,24
+add $1,$10
+mul $9,$8
+mul $9,$8
