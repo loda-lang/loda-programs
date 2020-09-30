@@ -6,20 +6,8 @@ mov $2,$0
 lpb $2,1
   add $1,$2
   sub $0,$1
-  lpb $4,1
-    add $2,2
-    mov $4,$0
-  lpe
   mul $1,2
-  lpb $5,1
-    sub $2,$1
-    mov $5,$4
-  lpe
-  trn $1,$0
-  lpb $6,1
-    mov $6,$4
-  lpe
+  sub $1,$0
   sub $2,1
 lpe
-sub $1,2
-add $1,1
+sub $1,1
