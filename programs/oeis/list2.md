@@ -595,7 +595,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213485](http://oeis.org/A213485) ([L14 program](213/A213485.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| != w+x+y.
 * [A213486](http://oeis.org/A213486) ([L13 program](213/A213486.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| > w+x+y.
 * [A213487](http://oeis.org/A213487) ([L48 program](213/A213487.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| <= w+x+y.
-* [A213488](http://oeis.org/A213488) ([L56 program](213/A213488.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| < w+x+y.
+* [A213488](http://oeis.org/A213488) ([L45 program](213/A213488.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| < w+x+y.
 * [A213492](http://oeis.org/A213492) ([L28 program](213/A213492.asm)): Number of (w,x,y) with all terms in {0,...,n} and w != min(|w-x|,|x-y|,|y-w|).
 * [A213495](http://oeis.org/A213495) ([L21 program](213/A213495.asm)): Number of (w,x,y) with all terms in {0,...,n} and w = min(|w-x|,|x-y|,|y-w|).
 * [A213496](http://oeis.org/A213496) ([L16 program](213/A213496.asm)): Number of (w,x,y) with all terms in {0,...,n} and x != max(|w-x|,|x-y|)
@@ -1809,7 +1809,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248604](http://oeis.org/A248604) ([L19 program](248/A248604.asm)): Numbers a(n) which are the minimum number of moves needed in a variation of the tower of Hanoi with 4 towers and n disks.
 * [A248619](http://oeis.org/A248619) ([L04 program](248/A248619.asm)): a(n) = (n*(n+1))^4.
 * [A248621](http://oeis.org/A248621) ([L11 program](248/A248621.asm)): Floor of sums of the squares of the non-integer cube roots of n, as partitioned by the integer roots: floor[sum(j from n^3+1 to (n+1)^3-1, j^(2/3))].
-* [A248646](http://oeis.org/A248646) ([L13 program](248/A248646.asm)): The Golden Book sequence.
+* [A248646](http://oeis.org/A248646) ([L13 program](248/A248646.asm)): Expansion of x*(5+x+x^2)/(1-2*x).
 * [A248666](http://oeis.org/A248666) ([L03 program](248/A248666.asm)): Greatest common divisor of the coefficients of the polynomial p(n,x) defined in Comments.
 * [A248698](http://oeis.org/A248698) ([L42 program](248/A248698.asm)): Floor of sums of the non-integer fourth roots of n, as partitioned by the integer roots: floor[sum(j from n^4+1 to (n+1)^4-1, j^(1/4))].
 * [A248720](http://oeis.org/A248720) ([L04 program](248/A248720.asm)): a(n) = (n*(n+1))^5.
@@ -2665,7 +2665,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268633](http://oeis.org/A268633) ([L14 program](268/A268633.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or vertically adjacent neighbor totalling two exactly once.
 * [A268644](http://oeis.org/A268644) ([L12 program](268/A268644.asm)): a(n) = 4*n^3 - 3*n^2 - 2*n - 1.
 * [A268676](http://oeis.org/A268676) ([L19 program](268/A268676.asm)): a(n) = A101080(n,A268823(3+n)), where A101080(x,y) gives the Hamming distance between binary expansions of x and y.
-* [A268684](http://oeis.org/A268684) ([L07 program](268/A268684.asm)): a(n) = n*(n + 1)*(4*n - 1)/3.
+* [A268684](http://oeis.org/A268684) ([L09 program](268/A268684.asm)): a(n) = n*(n + 1)*(4*n - 1)/3.
 * [A268685](http://oeis.org/A268685) ([L15 program](268/A268685.asm)): a(n) = 3*(n + 1)*(n + 2)*(3*n + 1)*(3*n + 4)/4.
 * [A268741](http://oeis.org/A268741) ([L08 program](268/A268741.asm)): a(n) = 2*a(n - 2) - a(n - 1) for n>1,  a(0) = 4, a(1) = 5.
 * [A268744](http://oeis.org/A268744) ([L13 program](268/A268744.asm)): Number of n X 2 binary arrays with some element plus some horizontally or vertically adjacent neighbor totalling two no more than once.
@@ -3578,7 +3578,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291498](http://oeis.org/A291498) ([L15 program](291/A291498.asm)): The arithmetic function uhat(n,1,4).
 * [A291499](http://oeis.org/A291499) ([L13 program](291/A291499.asm)): The arithmetic function uhat(n,1,5).
 * [A291500](http://oeis.org/A291500) ([L20 program](291/A291500.asm)): The arithmetic function uhat(n,1,6).
-* [A291501](http://oeis.org/A291501) ([L40 program](291/A291501.asm)): The arithmetic function uhat(n,1,7).
+* [A291501](http://oeis.org/A291501) ([L16 program](291/A291501.asm)): The arithmetic function uhat(n,1,7).
 * [A291509](http://oeis.org/A291509) ([L17 program](291/A291509.asm)): The arithmetic function uhat(n,2,4).
 * [A291510](http://oeis.org/A291510) ([L04 program](291/A291510.asm)): The arithmetic function uhat(n,2,5), negated.
 * [A291512](http://oeis.org/A291512) ([L21 program](291/A291512.asm)): The arithmetic function uhat(n,2,7).

@@ -299,7 +299,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002378](http://oeis.org/A002378) ([L03 program](002/A002378.asm)): Oblong (or promic, pronic, or heteromecic) numbers: a(n) = n*(n+1).
 * [A002409](http://oeis.org/A002409) ([L20 program](002/A002409.asm)): a(n) = 2^n*C(n+6,6). Number of 6D hypercubes in an (n+6)-dimensional hypercube.
 * [A002411](http://oeis.org/A002411) ([L05 program](002/A002411.asm)): Pentagonal pyramidal numbers: a(n) = n^2*(n+1)/2.
-* [A002412](http://oeis.org/A002412) ([L06 program](002/A002412.asm)): Hexagonal pyramidal numbers, or greengrocer's numbers.
+* [A002412](http://oeis.org/A002412) ([L08 program](002/A002412.asm)): Hexagonal pyramidal numbers, or greengrocer's numbers.
 * [A002413](http://oeis.org/A002413) ([L07 program](002/A002413.asm)): Heptagonal (or 7-gonal) pyramidal numbers: a(n) = n*(n+1)*(5*n-2)/6.
 * [A002414](http://oeis.org/A002414) ([L11 program](002/A002414.asm)): Octagonal pyramidal numbers: a(n) = n*(n+1)*(2*n-1)/2.
 * [A002415](http://oeis.org/A002415) ([L04 program](002/A002415.asm)): 4-dimensional pyramidal numbers: a(n) = n^2*(n^2-1)/12.
@@ -4589,7 +4589,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049651](http://oeis.org/A049651) ([L10 program](049/A049651.asm)): a(n) = (F(3*n+1) - 1)/2, where F=A000045 (the Fibonacci sequence).
 * [A049652](http://oeis.org/A049652) ([L12 program](049/A049652.asm)): a(n) = (F(3*n+2) - 1)/4, where F=A000045 (the Fibonacci sequence).
 * [A049684](http://oeis.org/A049684) ([L12 program](049/A049684.asm)): a(n) = Fibonacci(2n)^2.
-* [A049775](http://oeis.org/A049775) ([L12 program](049/A049775.asm)): a(n) is the sum of all integers from 2^(n-2)+1 to 2^(n-1).
+* [A049775](http://oeis.org/A049775) ([L15 program](049/A049775.asm)): a(n) is the sum of all integers from 2^(n-2)+1 to 2^(n-1).
 * [A049778](http://oeis.org/A049778) ([L10 program](049/A049778.asm)): a(n) = Sum_{k=1..floor((n+1)/2)} T(n,2k-1), array T as in A049777.
 * [A049779](http://oeis.org/A049779) ([L09 program](049/A049779.asm)): a(n) = Sum_{k=1..floor(n/2)} T(n, 2k), array T as in A049777.
 * [A049853](http://oeis.org/A049853) ([L09 program](049/A049853.asm)): a(n) = a(n-1) + Sum_{k=0..n-3} a(k) for n >= 2, a(0)=1, a(1)=2.
@@ -5201,7 +5201,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A057947](http://oeis.org/A057947) ([L14 program](057/A057947.asm)): n has ambiguous representations in "bad hexadecimal": numbers with the digit 1 followed by a digit less than 6.
 * [A057960](http://oeis.org/A057960) ([L13 program](057/A057960.asm)): Number of base 5 n-digit numbers with adjacent digits differing by one or less.
 * [A057979](http://oeis.org/A057979) ([L04 program](057/A057979.asm)): a(n) = 1 for even n and (n-1)/2 for odd n.
-* [A058031](http://oeis.org/A058031) ([L09 program](058/A058031.asm)): a(n) = n^4 - 2*n^3 + 3*n^2 - 2*n + 1, the Alexander polynomial for reef and granny knots.
+* [A058031](http://oeis.org/A058031) ([L08 program](058/A058031.asm)): a(n) = n^4 - 2*n^3 + 3*n^2 - 2*n + 1, the Alexander polynomial for reef and granny knots.
 * [A058034](http://oeis.org/A058034) ([L08 program](058/A058034.asm)): Number of numbers whose cube root rounds to n.
 * [A058038](http://oeis.org/A058038) ([L09 program](058/A058038.asm)): Fibonacci(2n)*Fibonacci(2n+2).
 * [A058065](http://oeis.org/A058065) ([L39 program](058/A058065.asm)): Complement of A057843.
@@ -5857,6 +5857,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A066880](http://oeis.org/A066880) ([L10 program](066/A066880.asm)): Biased numbers: n such that all terms of the sequence f(n), f(f(n)), f(f(f(n))), ..., 1, where f(k) = Floor(k/2), are odd.
 * [A066982](http://oeis.org/A066982) ([L15 program](066/A066982.asm)): a(n) = Lucas(n+1) - (n+1).
 * [A066997](http://oeis.org/A066997) ([L15 program](066/A066997.asm)): Survivor number for 2nd-order Josephus problem.
+* [A067016](http://oeis.org/A067016) ([L82 program](067/A067016.asm)): Start with a(0)=1, a(1)=4, a(2)=3, a(3)=2; for n>=3, a(n+1) = max_i (a(i)+a(n-i)).
 * [A067018](http://oeis.org/A067018) ([L11 program](067/A067018.asm)): Start with a(0)=1, a(1)=4, a(2)=3, a(3)=2; for n>=3, a(n+1) = mex_i (nim-sum a(i)+a(n-i)), where mex means smallest nonnegative missing number.
 * [A067046](http://oeis.org/A067046) ([L22 program](067/A067046.asm)): a(n) = lcm(n, n+1, n+2)/6.
 * [A067056](http://oeis.org/A067056) ([L62 program](067/A067056.asm)): a(n) = (1)*(2 + 3 + 4 + ... + n) + (1 + 2)*(3 + 4 + 5 + ... + n) + (1 + 2 + 3)*(4 + 5 + 6 + ... + n) + ... + (1 + 2 + 3 + ... + n-1)*n.
@@ -7770,7 +7771,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A093198](http://oeis.org/A093198) ([L32 program](093/A093198.asm)): Number of 4 X 4 symmetric magic squares with line sum 2n.
 * [A093328](http://oeis.org/A093328) ([L04 program](093/A093328.asm)): a(n) = 2*n^2 + 3.
 * [A093353](http://oeis.org/A093353) ([L05 program](093/A093353.asm)): a(n) = (n + n mod 2)*(n + 1)/2.
-* [A093356](http://oeis.org/A093356) ([L33 program](093/A093356.asm)): Number of occurrences of pattern 1-2 after n iterations of morphism A007413.
+* [A093356](http://oeis.org/A093356) ([L17 program](093/A093356.asm)): Number of occurrences of pattern 1-2 after n iterations of morphism A007413.
 * [A093357](http://oeis.org/A093357) ([L11 program](093/A093357.asm)): Number of occurrences of pattern 2-1 after n iterations of morphism A007413.
 * [A093361](http://oeis.org/A093361) ([L25 program](093/A093361.asm)): Add/multiply sequence, see example.
 * [A093380](http://oeis.org/A093380) ([L16 program](093/A093380.asm)): Expansion of (1+4x+x^2-10x^3)/((1-x)(1-x-2x^2)).
@@ -7924,6 +7925,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A096027](http://oeis.org/A096027) ([L05 program](096/A096027.asm)): Numbers n such that (n+j) mod (2+j) = 1 for j from 0 to 10 and (n+11) mod 13 <> 1.
 * [A096045](http://oeis.org/A096045) ([L04 program](096/A096045.asm)): a(n) = B(2*n,2)/B(2*n) (see comment).
 * [A096056](http://oeis.org/A096056) ([L19 program](096/A096056.asm)): Duplicate of A050501.
+* [A096094](http://oeis.org/A096094) ([L101 program](096/A096094.asm)): Analog of A094091 for S=3.
 * [A096129](http://oeis.org/A096129) ([L06 program](096/A096129.asm)): Middle term of a triple of consecutive numbers which are sums of two squares.
 * [A096143](http://oeis.org/A096143) ([L12 program](096/A096143.asm)): Ceiling(sum(1/i, i=1..n)).
 * [A096200](http://oeis.org/A096200) ([L43 program](096/A096200.asm)): n*(n-1)*(n-2)*(3*n-2)/6.

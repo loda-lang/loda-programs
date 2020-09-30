@@ -1042,7 +1042,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335025](http://oeis.org/A335025) ([L18 program](335/A335025.asm)): Largest side lengths of almost-equilateral Heronian triangles.
 * [A335047](http://oeis.org/A335047) ([L23 program](335/A335047.asm)): Maximum sum of primes (see Comments).
 * [A335048](http://oeis.org/A335048) ([L22 program](335/A335048.asm)): Minimum sum of primes (see Comments).
-* [A335087](http://oeis.org/A335087) ([L22 program](335/A335087.asm)): Row sums of A335436.
+* [A335087](http://oeis.org/A335087) ([L10 program](335/A335087.asm)): Row sums of A335436.
 * [A335129](http://oeis.org/A335129) ([L08 program](335/A335129.asm)): a(n) is the number of distinct lines created inside an n-gon when connecting vertex k to vertex 2k mod n.
 * [A335262](http://oeis.org/A335262) ([L15 program](335/A335262.asm)): Triangle of triangular numbers, read by rows, constructed like this: Given a sequence t, start row 0 with t(0). Compute row n for n > 0 by reversing row n-1 and prepending t(n). The sequence t is here chosen as the triangular numbers.
 * [A335298](http://oeis.org/A335298) ([L22 program](335/A335298.asm)): a(n) is the squared distance between the points P(n) and P(0) on a plane, n>=0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90°-left-turn is taken in P(n+1).
@@ -1066,6 +1066,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336705](http://oeis.org/A336705) ([L42 program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
 * [A336754](http://oeis.org/A336754) ([L09 program](336/A336754.asm)): Perimeters in increasing order of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336819](http://oeis.org/A336819) ([L15 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
+* [A336861](http://oeis.org/A336861) ([L53 program](336/A336861.asm)): a(n) = ceiling((n-1-sqrt(n+1))/2).
 * [A336867](http://oeis.org/A336867) ([L08 program](336/A336867.asm)): Numbers n such that n! does not have distinct prime multiplicities.
 * [A336868](http://oeis.org/A336868) ([L17 program](336/A336868.asm)): Indicator function for numbers n such that n! has distinct prime multiplicities.
 * [A337024](http://oeis.org/A337024) ([L07 program](337/A337024.asm)): Number of ways to tile a 2n X 2n square with 1 X 1 white and n X n black squares.

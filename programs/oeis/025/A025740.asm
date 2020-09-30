@@ -1,0 +1,106 @@
+; A025740: Index of 10^n within sequence of numbers of form 2^i*10^j.
+; 1,5,12,22,36,53,73,97,124,154,188,225,265,309,356,406,460,517,577,641,708,778,852,929,1009,1093,1180,1270,1364,1461,1561,1664,1771,1881,1994,2111,2231,2354,2481,2611,2744,2881,3021,3164,3311,3461,3614,3771,3931
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $7,$0
+    mov $9,2
+    lpb $9,1
+      clr $0,7
+      sub $9,1
+      mov $0,$7
+      add $0,$9
+      sub $0,1
+      mov $4,1
+      mov $1,$4
+      mov $6,$0
+      sub $6,2
+      mov $2,17
+      mov $1,8
+      add $1,4
+      mov $3,15
+      add $6,2
+      mov $0,$3
+      trn $2,2
+      lpb $0,1
+        trn $3,$0
+        mov $5,$0
+        mul $0,2
+        mov $3,1
+        mul $6,2
+        sub $0,1
+        div $4,5
+        mov $1,$0
+        mul $1,2
+        mov $2,$0
+      lpe
+      add $4,$6
+      add $2,$5
+      trn $4,$2
+      mul $2,$5
+      mul $6,13
+      mov $1,$2
+      mov $5,$2
+      mov $1,$1
+      add $0,$3
+      mul $6,$3
+      mov $3,$2
+      mov $5,1
+      mov $5,6
+      mov $0,2
+      div $2,$5
+      add $6,2
+      add $1,$6
+      add $0,$3
+      mul $4,$6
+      add $5,$2
+      mov $3,$1
+      trn $2,2
+      pow $0,5
+      sub $2,1
+      mov $5,8
+      div $6,2
+      mov $2,1
+      mov $0,$1
+      add $2,83
+      sub $3,1
+      add $3,$3
+      div $0,$2
+      mov $5,2
+      mov $2,$0
+      mov $5,6
+      mov $6,$1
+      sub $1,$1
+      mov $1,$0
+      mov $10,$9
+      lpb $10,1
+        mov $8,$1
+        sub $10,1
+      lpe
+    lpe
+    lpb $7,1
+      sub $8,$1
+      mov $7,0
+    lpe
+    mov $1,$8
+    add $1,1
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15

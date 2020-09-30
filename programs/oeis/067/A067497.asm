@@ -1,0 +1,125 @@
+; A067497: Smallest power of 2 with n+1 digits (n>=0). Also n such that 1 is the first digit of 2^n.
+; 0,4,7,10,14,17,20,24,27,30,34,37,40,44,47,50,54,57,60,64,67,70,74,77,80,84,87,90,94,97,100,103,107,110,113,117,120,123,127,130,133,137,140,143,147,150,153,157,160,163,167,170,173,177,180,183,187,190,193,196
+
+mov $17,$0
+mov $19,2
+lpb $19,1
+  clr $0,17
+  sub $19,1
+  mov $0,$17
+  add $0,$19
+  sub $0,1
+  mov $14,$0
+  mov $16,$0
+  add $16,0
+  lpb $16,1
+    clr $0,14
+    sub $16,1
+    mov $0,$14
+    sub $0,$16
+    mov $11,$0
+    mov $13,$0
+    add $13,1
+    lpb $13,1
+      clr $0,11
+      sub $13,1
+      mov $0,$11
+      sub $0,$13
+      mov $7,$0
+      mov $9,2
+      lpb $9,1
+        clr $0,7
+        sub $9,1
+        mov $0,$7
+        add $0,$9
+        sub $0,1
+        mov $4,1
+        mov $1,$4
+        mov $6,$0
+        sub $6,2
+        mov $2,17
+        mov $1,8
+        add $1,4
+        mov $3,15
+        add $6,2
+        mov $0,$3
+        trn $2,2
+        lpb $0,1
+          trn $3,$0
+          mov $5,$0
+          mul $0,2
+          mov $3,1
+          mul $6,2
+          sub $0,1
+          div $4,5
+          mov $1,$0
+          mul $1,2
+          mov $2,$0
+        lpe
+        add $4,$6
+        add $2,$5
+        trn $4,$2
+        mul $2,$5
+        mul $6,13
+        mov $1,$2
+        mov $5,$2
+        mov $1,$1
+        add $0,$3
+        mul $6,$3
+        mov $3,$2
+        mov $5,1
+        mov $5,6
+        mov $0,2
+        div $2,$5
+        add $6,2
+        add $1,$6
+        add $0,$3
+        mul $4,$6
+        add $5,$2
+        mov $3,$1
+        trn $2,2
+        pow $0,5
+        sub $2,1
+        mov $5,8
+        div $6,2
+        mov $2,1
+        mov $0,$1
+        add $2,83
+        sub $3,1
+        add $3,$3
+        div $0,$2
+        mov $5,2
+        mov $2,$0
+        mov $5,6
+        mov $6,$1
+        sub $1,$1
+        mov $1,$0
+        mov $10,$9
+        lpb $10,1
+          mov $8,$1
+          sub $10,1
+        lpe
+      lpe
+      lpb $7,1
+        sub $8,$1
+        mov $7,0
+      lpe
+      mov $1,$8
+      add $1,1
+      add $12,$1
+    lpe
+    mov $1,$12
+    add $15,$1
+  lpe
+  mov $1,$15
+  mov $20,$19
+  lpb $20,1
+    mov $18,$1
+    sub $20,1
+  lpe
+lpe
+lpb $17,1
+  sub $18,$1
+  mov $17,0
+lpe
+mov $1,$18
