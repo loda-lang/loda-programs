@@ -2232,7 +2232,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134021](http://oeis.org/A134021) ([L08 program](134/A134021.asm)): Length of n in balanced ternary representation.
 * [A134025](http://oeis.org/A134025) ([L08 program](134/A134025.asm)): Numbers for which the balanced ternary representation is the same length as the ternary representation.
 * [A134026](http://oeis.org/A134026) ([L13 program](134/A134026.asm)): Numbers that are in balanced ternary representation longer than in ternary representation.
-* [A134029](http://oeis.org/A134029) ([L84 program](134/A134029.asm)): Period 9: repeat 3, 2, 4, 1, 5, 1, 4, 2, 3.
+* [A134029](http://oeis.org/A134029) ([L25 program](134/A134029.asm)): Period 9: repeat 3, 2, 4, 1, 5, 1, 4, 2, 3.
 * [A134057](http://oeis.org/A134057) ([L06 program](134/A134057.asm)): a(n) = binomial(2^n-1,2).
 * [A134062](http://oeis.org/A134062) ([L11 program](134/A134062.asm)): Row sums of triangle A134061.
 * [A134063](http://oeis.org/A134063) ([L14 program](134/A134063.asm)): a(n) = (1/2)*(3^n - 2^(n+1) + 3).
@@ -5872,7 +5872,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184750](http://oeis.org/A184750) ([L09 program](184/A184750.asm)): a(n) = largest k such that A000326(n+1) = A000326(n) + (A000326(n) mod k), or 0 if no such k exists.
 * [A184808](http://oeis.org/A184808) ([L48 program](184/A184808.asm)): n + floor(r*n), where r = sqrt(2/3); complement of A184809.
 * [A184809](http://oeis.org/A184809) ([L45 program](184/A184809.asm)): n + floor(r*n), where r = sqrt(3/2); complement of A184808.
-* [A184882](http://oeis.org/A184882) ([L07 program](184/A184882.asm)): a(n)=1-4*n-4*n^2.
+* [A184882](http://oeis.org/A184882) ([L06 program](184/A184882.asm)): a(n)=1-4*n-4*n^2.
 * [A184921](http://oeis.org/A184921) ([L18 program](184/A184921.asm)): n+[rn/s]+[tn/s]+[un/s], where []=floor and r=2^(1/2), s=r+1, t=r+2, u=r+3.
 * [A184922](http://oeis.org/A184922) ([L49 program](184/A184922.asm)): n+[rn/t]+[sn/t]+[un/t], where []=floor and r=2^(1/2), s=r+1, t=r+2, u=r+3.
 * [A184959](http://oeis.org/A184959) ([L11 program](184/A184959.asm)): Fibonacci sequence beginning 10, 9.

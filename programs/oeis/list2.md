@@ -1777,6 +1777,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247974](http://oeis.org/A247974) ([L23 program](247/A247974.asm)): Numbers k such that A247973(k+1) = A247973(k).
 * [A247983](http://oeis.org/A247983) ([L08 program](247/A247983.asm)): Least number k such that log(2) - sum{1/(h*2^h), h=1..k} < 1/2^n.
 * [A248121](http://oeis.org/A248121) ([L11 program](248/A248121.asm)): Floor(1 / (1/n - Pi^2/6 + sum{1/h^2, h = 1..n})).
+* [A248155](http://oeis.org/A248155) ([L68 program](248/A248155.asm)): Expansion of (1 + x - x^2)/((1 + x)*(1 + 2*x)).
 * [A248157](http://oeis.org/A248157) ([L18 program](248/A248157.asm)): Expansion of (1 - 2*x^2)/(1 + x)^2. First column of Riordan triangle A248156.
 * [A248178](http://oeis.org/A248178) ([L17 program](248/A248178.asm)): Least k such that r - sum{1/F(n), h = 1..k} < 1/2^(n+1), where F(n) = A000045 (Fibonacci numbers) and r = sum{1/F(n), h = 1..infinity}.
 * [A248183](http://oeis.org/A248183) ([L29 program](248/A248183.asm)): Least k such that 1/4 - sum{1/(h*(h+1)*(h+2))}, h = 1..k} < 1/n^2.
@@ -3129,7 +3130,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277936](http://oeis.org/A277936) ([L24 program](277/A277936.asm)): Decimal representation of the x-axis, from the left edge to the origin, or from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.
 * [A277954](http://oeis.org/A277954) ([L19 program](277/A277954.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 14", based on the 5-celled von Neumann neighborhood.
 * [A277955](http://oeis.org/A277955) ([L06 program](277/A277955.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 14", based on the 5-celled von Neumann neighborhood.
-* [A277975](http://oeis.org/A277975) ([L10 program](277/A277975.asm)): a(n) = n*x^n + (n-1)*x^(n-1) + . . . + x + 1 for x=5.
+* [A277975](http://oeis.org/A277975) ([L09 program](277/A277975.asm)): a(n) = n*x^n + (n-1)*x^(n-1) + . . . + x + 1 for x=5.
 * [A277976](http://oeis.org/A277976) ([L08 program](277/A277976.asm)): a(n) = n*(3*n + 23).
 * [A277977](http://oeis.org/A277977) ([L40 program](277/A277977.asm)): a(n) = n*(1-3n+2*n^2+2*n^3)/2.
 * [A277978](http://oeis.org/A277978) ([L04 program](277/A277978.asm)): a(n) = 3n(n+3).
@@ -3392,6 +3393,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286810](http://oeis.org/A286810) ([L13 program](286/A286810.asm)): Number of non-attacking bishop positions on a cylindrical 2 X 2n chessboard.
 * [A286812](http://oeis.org/A286812) ([L10 program](286/A286812.asm)): a(n) = 105 - 2^n.
 * [A286814](http://oeis.org/A286814) ([L18 program](286/A286814.asm)): Number of matchings in the n-helm graph.
+* [A286863](http://oeis.org/A286863) ([L84 program](286/A286863.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 814", based on the 5-celled von Neumann neighborhood.
 * [A286905](http://oeis.org/A286905) ([L56 program](286/A286905.asm)): Positions of 1 in A286903; complement of A286904.
 * [A286909](http://oeis.org/A286909) ([L24 program](286/A286909.asm)): Positions of 1 in A286907; complement of A286908.
 * [A286923](http://oeis.org/A286923) ([L58 program](286/A286923.asm)): Positions of 0 in A286922; complement of A286924.

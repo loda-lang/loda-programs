@@ -1,0 +1,112 @@
+; A184530: Lower s-Wythoff sequence, where s=5n-4.  Complement of A184531.
+; 1,3,4,5,6,7,8,10,11,12,13,14,16,17,18,19,20,22,23,24,25,26,28,29,30,31,32,34,35,36,37,38,40,41,42,43,44,45,47,48,49,50,51,53,54,55,56,57,59,60,61,62,63,65,66,67,68,69,71,72,73,74,75,76,78,79
+
+mov $11,$0
+mov $9,$0
+mov $2,13
+mov $10,1
+mov $7,1
+mov $0,2
+mov $1,$9
+mov $2,2
+mov $5,5
+sub $5,1
+mov $8,$10
+mov $4,$5
+add $1,4
+mov $8,144
+mov $1,$4
+sub $4,$7
+mov $6,$9
+mov $4,1
+mul $2,$7
+mul $10,2
+sub $1,1
+mov $3,1
+mul $10,2
+mov $10,$8
+mov $8,$7
+mul $9,$1
+mov $5,7
+mov $1,$1
+add $5,$5
+sub $6,1
+add $10,1
+add $0,1
+add $2,$9
+add $3,1
+sub $2,5
+clr $0,1
+sub $4,$7
+mul $6,$5
+add $1,15
+mov $5,4
+mov $3,$3
+mov $4,6
+mul $1,$2
+mov $2,1
+mov $8,$3
+mov $3,1
+add $9,$10
+sub $3,1
+mov $9,1
+mov $5,$5
+mul $0,$7
+mov $9,11
+lpb $0,1
+  mov $10,2
+  mod $1,$9
+  mov $4,$7
+  sub $8,5
+  sub $7,1
+  add $8,1
+  mov $7,1
+  add $3,$10
+  sub $1,2
+  mov $5,$10
+  mul $9,$6
+  sub $0,1
+  trn $10,18
+  mov $9,$6
+  trn $2,1
+  div $6,5
+  mov $4,$3
+  trn $1,24
+  mul $5,2
+  mul $3,2
+  mul $1,8
+  mov $2,3
+  sub $4,1
+  add $10,$7
+  mov $0,1
+  sub $8,1
+  mov $9,$5
+  add $10,10
+  mul $4,2
+lpe
+add $1,$9
+div $9,3
+add $6,$6
+mul $8,$0
+add $7,1
+mov $4,$7
+add $6,$7
+add $0,1
+mov $0,$6
+sub $4,3
+mul $7,$8
+mov $2,5
+trn $8,$5
+add $0,$10
+div $7,2
+div $0,$10
+mul $4,2
+sub $6,1
+mov $1,$0
+add $1,1
+mov $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11
+mul $12,$11
