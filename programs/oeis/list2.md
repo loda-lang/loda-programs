@@ -1232,7 +1232,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230865](http://oeis.org/A230865) ([L17 program](230/A230865.asm)): a(n) = n + (sum of digits in base-5 representation of n).
 * [A230928](http://oeis.org/A230928) ([L21 program](230/A230928.asm)): Number of black-square subarrays of (n+2) X (1+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
 * [A230929](http://oeis.org/A230929) ([L09 program](230/A230929.asm)): Number of black-square subarrays of (n+2) X (2+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
-* [A230980](http://oeis.org/A230980) ([L52 program](230/A230980.asm)): Number of primes <= n, starting at n=0.
+* [A230980](http://oeis.org/A230980) ([L26 program](230/A230980.asm)): Number of primes <= n, starting at n=0.
 * [A231000](http://oeis.org/A231000) ([L26 program](231/A231000.asm)): Number of years after which a date can fall on the same day of the week, in the Julian calendar.
 * [A231001](http://oeis.org/A231001) ([L07 program](231/A231001.asm)): Number of years after which an entire year can have the same calendar, in the Julian calendar.
 * [A231002](http://oeis.org/A231002) ([L09 program](231/A231002.asm)): Number of years after which it is possible to have a date falling on same day of the week, but the entire year does not have the same calendar, in the Julian calendar.
@@ -1783,6 +1783,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248178](http://oeis.org/A248178) ([L17 program](248/A248178.asm)): Least k such that r - sum{1/F(n), h = 1..k} < 1/2^(n+1), where F(n) = A000045 (Fibonacci numbers) and r = sum{1/F(n), h = 1..infinity}.
 * [A248183](http://oeis.org/A248183) ([L29 program](248/A248183.asm)): Least k such that 1/4 - sum{1/(h*(h+1)*(h+2))}, h = 1..k} < 1/n^2.
 * [A248185](http://oeis.org/A248185) ([L19 program](248/A248185.asm)): Numbers k such that A248183(k+1) = A248183(k) + 1.
+* [A248188](http://oeis.org/A248188) ([L108 program](248/A248188.asm)): Numbers k such that A248186(k+1) = A248186(k) + 1.
 * [A248216](http://oeis.org/A248216) ([L12 program](248/A248216.asm)): 6^n - 2^n.
 * [A248225](http://oeis.org/A248225) ([L12 program](248/A248225.asm)): a(n) = 6^n - 3^n.
 * [A248230](http://oeis.org/A248230) ([L46 program](248/A248230.asm)): a(n) = floor(1/(zeta(4) - Sum_{h=1..n} 1/h^4)).
@@ -3403,7 +3404,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286986](http://oeis.org/A286986) ([L17 program](286/A286986.asm)): Number of connected dominating sets in the n-antiprism graph.
 * [A287057](http://oeis.org/A287057) ([L09 program](287/A287057.asm)): a(n) = 2*n^2 + n - (n+1) mod 2.
 * [A287195](http://oeis.org/A287195) ([L18 program](287/A287195.asm)): Independence and clique covering number of the n-triangular honeycomb acute knight graph.
-* [A287272](http://oeis.org/A287272) ([L06 program](287/A287272.asm)): a(n) is the number of zeros of the Laguerre L(n, x) polynomial in the open interval (-1, +1).
+* [A287272](http://oeis.org/A287272) ([L08 program](287/A287272.asm)): a(n) is the number of zeros of the Laguerre L(n, x) polynomial in the open interval (-1, +1).
 * [A287327](http://oeis.org/A287327) ([L15 program](287/A287327.asm)): Number of independent vertex sets (and vertex covers) in the 2n-crossed prism graph.
 * [A287335](http://oeis.org/A287335) ([L07 program](287/A287335.asm)): Nonnegative numbers k such that 3*k + 2 is a cube.
 * [A287349](http://oeis.org/A287349) ([L12 program](287/A287349.asm)): Number of matchings in the n-gear graph.

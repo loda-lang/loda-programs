@@ -571,7 +571,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108852](http://oeis.org/A108852) ([L70 program](108/A108852.asm)): Number of Fibonacci numbers <= n.
 * [A108872](http://oeis.org/A108872) ([L09 program](108/A108872.asm)): Sums of ordinal references for a triangular table read by columns, top to bottom.
 * [A108895](http://oeis.org/A108895) ([L47 program](108/A108895.asm)): Partial sums of quadruple factorial numbers n!!!! (A007662).
-* [A108898](http://oeis.org/A108898) ([L45 program](108/A108898.asm)): a(n+3) = 3*a(n+2) - 2*a(n), a(0) = -1, a(1) = 1, a(2) = 3.
+* [A108898](http://oeis.org/A108898) ([L17 program](108/A108898.asm)): a(n+3) = 3*a(n+2) - 2*a(n), a(0) = -1, a(1) = 1, a(2) = 3.
 * [A108922](http://oeis.org/A108922) ([L12 program](108/A108922.asm)): Expansion of 1/((x^8+1)*(x-1)^2).
 * [A108923](http://oeis.org/A108923) ([L26 program](108/A108923.asm)): Expansion of 1/((x^8+1)*(1-x)^3).
 * [A108924](http://oeis.org/A108924) ([L23 program](108/A108924.asm)): J(n)^2+J(n+1)^2, with J(n) the Jacobsthal number A001045(n).
@@ -2244,6 +2244,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134154](http://oeis.org/A134154) ([L07 program](134/A134154.asm)): a(n) = 15n^2 - 9n + 1.
 * [A134158](http://oeis.org/A134158) ([L12 program](134/A134158.asm)): a(n) = 1 + 27n + 252n^2 + 882n^3 + 1029n^4.
 * [A134159](http://oeis.org/A134159) ([L21 program](134/A134159.asm)): a(n) = 13 + 165 n + 756 n^2 + 1470 n^3 + 1029 n^4.
+* [A134160](http://oeis.org/A134160) ([L62 program](134/A134160.asm)): a(n) = 163 + 1053*n + 2520*n^2 + 2646*n^3 + 1029*n^4.
 * [A134161](http://oeis.org/A134161) ([L28 program](134/A134161.asm)): a(n) = 373 + 1947n + 3780n^2 + 3234n^3 + 1029n^4.
 * [A134163](http://oeis.org/A134163) ([L14 program](134/A134163.asm)): 1 + 12*n + 81*n^3 + n*(105*n + 81*n^3)/2.
 * [A134169](http://oeis.org/A134169) ([L06 program](134/A134169.asm)): a(n) = 2^(n-1)*(2^n - 1) + 1.
@@ -2413,7 +2414,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135913](http://oeis.org/A135913) ([L17 program](135/A135913.asm)): 2+4*2^n-3^n.
 * [A135914](http://oeis.org/A135914) ([L11 program](135/A135914.asm)): 4*3^n-2*2^n-1.
 * [A135916](http://oeis.org/A135916) ([L16 program](135/A135916.asm)): (n^4 - 10*n^2 + 15*n - 6)/2.
-* [A135947](http://oeis.org/A135947) ([L41 program](135/A135947.asm)): a(n)=(floor(3*S2(n)/2)) mod 2, where S2(n) is the binary weight of n.
+* [A135947](http://oeis.org/A135947) ([L12 program](135/A135947.asm)): a(n)=(floor(3*S2(n)/2)) mod 2, where S2(n) is the binary weight of n.
 * [A135989](http://oeis.org/A135989) ([L23 program](135/A135989.asm)): a(n) = 6*n + 3 + 90*floor((6*n+3)/10).
 * [A135992](http://oeis.org/A135992) ([L14 program](135/A135992.asm)): Positive Fibonacci numbers swapped in pairs.
 * [A135997](http://oeis.org/A135997) ([L17 program](135/A135997.asm)): Table of triples T(k,m) = k (m=1), 2-k (m=2) and 1-k (m=3).
@@ -4487,6 +4488,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167375](http://oeis.org/A167375) ([L11 program](167/A167375.asm)): a(n)=3*a(n-1)-a(n-2) with a(0)=1, a(1)=3, a(2)=11.
 * [A167381](http://oeis.org/A167381) ([L07 program](167/A167381.asm)): The numbers read down the left-center column of an arrangement of the natural numbers in square blocks.
 * [A167385](http://oeis.org/A167385) ([L23 program](167/A167385.asm)): a(n)= sum_{i=7..n+6} A000931(i).
+* [A167389](http://oeis.org/A167389) ([L108 program](167/A167389.asm)): (arg(exp(-w)) + Im(w)) / (2*Pi), with w = W(n,-log(2)/2)/log(2), where W is the Lambert W function.
 * [A167420](http://oeis.org/A167420) ([L09 program](167/A167420.asm)): 2^n mod 14.
 * [A167421](http://oeis.org/A167421) ([L27 program](167/A167421.asm)): 2^n mod 22.
 * [A167423](http://oeis.org/A167423) ([L08 program](167/A167423.asm)): Hankel transform of a simple Catalan convolution.
@@ -5825,7 +5827,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184523](http://oeis.org/A184523) ([L30 program](184/A184523.asm)): Upper s-Wythoff sequence, where s=5n.  Complement of A184522.
 * [A184527](http://oeis.org/A184527) ([L13 program](184/A184527.asm)): Upper s-Wythoff sequence, where s=5n-2.  Complement of A184526.
 * [A184529](http://oeis.org/A184529) ([L11 program](184/A184529.asm)): Upper s-Wythoff sequence, where s=5n-3.  Complement of A184528.
-* [A184530](http://oeis.org/A184530) ([L109 program](184/A184530.asm)): Lower s-Wythoff sequence, where s=5n-4.  Complement of A184531.
+* [A184530](http://oeis.org/A184530) ([L14 program](184/A184530.asm)): Lower s-Wythoff sequence, where s=5n-4.  Complement of A184531.
 * [A184531](http://oeis.org/A184531) ([L32 program](184/A184531.asm)): Upper s-Wythoff sequence, where s=5n-4.  Complement of A184530.
 * [A184533](http://oeis.org/A184533) ([L12 program](184/A184533.asm)): a(n) = floor(1/{(2+n^3)^(1/3)}), where {}=fractional part.
 * [A184534](http://oeis.org/A184534) ([L20 program](184/A184534.asm)): a(n) = floor(1/{(4+n^3)^(1/3)}), where {}=fractional part.
