@@ -1,64 +1,17 @@
 ; A072894: Let c(k) be defined as follows: c(1)=1, c(2)=n, c(k+2) = c(k+1)/2 + c(k)/2 if c(k+1) and c(k) have the same parity; c(k+2) = c(k+1)/2 + c(k)/2 + 1/2 otherwise; a(n) = limit_{ k -> infinity} c(k).
 ; 1,2,3,4,4,5,6,7,7,8,9,10,10,11,11,12,12,13,14,15,15,16,17,18,18,19,20,21,21,22,22,23,23,24,25,26,26,27,28,29,29,30,31,32,32,33,33,34,34,35,36,37,37,38,38,39,39,40,41,42,42,43,43,44,44,45,46,47,47,48,49,50,50
 
-mov $5,1
-mov $4,$5
-mov $1,1
-sub $1,1
-trn $4,$4
-clr $5,$4
-mov $1,4
-mov $3,2
-mov $6,$5
 mul $0,2
-sub $4,$5
+mov $4,1
+mov $2,1
 mov $3,2
-add $4,$4
-mov $6,1
-mov $2,$3
-trn $3,$5
-mul $4,2
-add $1,1
-mov $4,$6
-mov $5,$1
-mul $3,$6
-add $1,1
-div $2,2
-mul $3,2
-mov $5,$4
-mov $4,$4
 lpb $0,1
-  add $3,$6
-  sub $5,2
-  mov $6,$4
+  add $3,$4
   add $0,$2
-  add $1,$5
-  add $4,$4
-  div $6,2
-  add $4,1
-  add $6,$6
-  add $1,$1
-  mul $4,2
-  add $5,$1
-  trn $4,18
-  add $1,$2
   div $0,2
-  sub $1,4
-  add $6,1
   add $2,$0
-  mov $5,1
   div $2,2
   sub $0,1
-  mov $4,$0
-  mov $6,1
-  add $1,$0
-  mov $4,$0
 lpe
-add $3,1
-sub $0,$2
-mul $5,2
-sub $3,1
-pow $6,59783
 mov $1,$3
-sub $1,2
-add $1,1
+sub $1,1
