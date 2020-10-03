@@ -340,7 +340,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309336](http://oeis.org/A309336) ([L16 program](309/A309336.asm)): a(n) = n^4 if n odd, 15*n^4/16 if n even.
 * [A309337](http://oeis.org/A309337) ([L08 program](309/A309337.asm)): a(n) = n^3 if n odd, 3*n^3/4 if n even.
 * [A309338](http://oeis.org/A309338) ([L16 program](309/A309338.asm)): a(n) = n^4 if n odd, 7*n^4/8 if n even.
-* [A309372](http://oeis.org/A309372) ([L11 program](309/A309372.asm)): a(n) = n^2 - n^3 + n^4.
+* [A309372](http://oeis.org/A309372) ([L09 program](309/A309372.asm)): a(n) = n^2 - n^3 + n^4.
 * [A309398](http://oeis.org/A309398) ([L21 program](309/A309398.asm)): a(n) is the nearest integer to log(log(10^n)).
 * [A309434](http://oeis.org/A309434) ([L45 program](309/A309434.asm)): a(n) = floor(n*Im(2*e^(i*Pi/5))/(Im(2*e^(i*Pi/5)) - 1)).
 * [A309674](http://oeis.org/A309674) ([L31 program](309/A309674.asm)): a(1) = 1, a(n) = hamming_weight(Sum_{k=1..n-1} a(k) ) for n>=2.
