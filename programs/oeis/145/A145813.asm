@@ -2,40 +2,19 @@
 ; 0,0,0,1,2,2,3,4,6,7,8,10,12,14,16,19,21,24,27,30
 
 mov $2,$0
-mov $0,$0
-mul $0,$0
+pow $0,2
 add $0,1
 add $2,13
-mov $1,11
-add $0,$0
-trn $0,1
+mul $0,2
+sub $0,1
 mov $3,$2
 add $0,$3
-add $1,1
-mul $1,2
-div $2,$3
-add $1,1
-mov $3,$0
-add $0,$1
+mov $1,25
+add $0,25
 lpb $0,1
   mov $4,$0
   div $4,$1
-  add $0,4
-  add $3,1
-  mul $3,2
-  sub $0,1
-  mov $3,$0
   sub $4,1
-  mul $0,2
   mov $0,1
-  sub $3,1
-  mov $2,$3
 lpe
-add $2,2
-add $1,$2
-div $0,2
-mov $0,1
-sub $2,3
-add $0,1
-mov $3,2
 mov $1,$4
