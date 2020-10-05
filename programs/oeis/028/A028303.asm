@@ -1,84 +1,13 @@
 ; A028303: a(n) = floor((1/(ceiling(n/2)+1))*binomial(n,floor(n/2))) (interpolates between Catalan numbers).
 ; 1,0,1,1,2,2,5,7,14,21,42,66,132,214,429,715,1430,2431,4862,8398,16796,29393,58786,104006,208012,371450,742900,1337220,2674440,4847422,9694845,17678835,35357670,64822395
 
-mov $7,$0
+mov $3,$0
 div $0,2
-add $7,1
-mov $8,2
-mov $6,$7
-mov $2,4
+add $3,1
+mov $2,$3
 mov $1,1
-sub $7,1
-add $1,$7
-sub $2,1
-pow $2,2
-add $3,$2
-bin $6,$0
-trn $2,$1
-div $6,$1
-add $4,$1
-lpb $0,1
-  mov $8,3
-  add $0,126
-  mov $7,10
-  mul $8,$8
-  sub $6,9
-  mov $4,$8
-  trn $7,1
-  add $4,$1
-  mov $2,1
-  pow $1,$8
-  sub $1,$1
-  mul $2,$2
-  mov $5,$2
-  mov $3,$7
-  mov $1,$0
-  mov $0,$3
-  mov $8,1
-  sub $1,$8
-  add $0,$7
-  div $0,2
-  pow $2,2
-  mov $1,$1
-  mov $2,1
-  add $2,10
-  mov $7,0
-  trn $3,$3
-  add $7,$4
-  mul $7,$0
-  mul $6,6
-  trn $0,3
-  mov $0,$2
-  sub $5,$1
-  add $0,$1
-  mov $0,$8
-  mov $0,$2
-  add $7,$3
-  mov $4,$4
-  mov $0,$0
-  sub $0,1
-  add $5,$4
-  add $8,$2
-  mul $0,2
-  mov $6,1
-  mov $5,$0
-  mul $7,$7
-  mul $0,$7
-  add $7,2
-  mul $8,5
-  div $5,2
-  sub $3,1
-  mul $3,4
-  mov $8,1
-  sub $6,$7
-  add $4,2
-  add $0,$0
-  mov $2,6
-  add $2,$5
-  sub $5,2
-  mov $3,1
-  mul $5,$3
-  mov $2,1
-lpe
-mov $1,31
-mov $1,$6
+sub $3,1
+add $1,$3
+bin $2,$0
+div $2,$1
+mov $1,$2

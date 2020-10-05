@@ -1,0 +1,104 @@
+; A337957: Number of unoriented colorings of the 8 cubic facets of a tesseract or of the 8 vertices of a hyperoctahedron.
+; 1,15,126,715,3060,10626,31465,82251,194580,424270,864501,1663740,3049501,5359095,9078630,14891626,23738715,36890001,56031760,83369265,121747626,174792640,247073751,344291325,473490550,643304376
+
+mov $6,$0
+mov $9,$6
+mul $9,5
+add $1,$9
+cmp $1,$9
+sub $6,1
+log $1,$0
+mov $10,1
+mul $6,$1
+mov $6,1
+mov $2,$0
+mov $9,$2
+mov $4,9
+sub $6,$9
+sub $1,1
+mov $10,2
+sub $6,$9
+mov $9,$0
+mov $5,$10
+sub $10,$0
+sub $10,$5
+mov $9,$4
+sub $4,1
+mov $7,$1
+mov $8,1
+add $10,$6
+add $8,1
+bin $0,2
+mov $2,$0
+add $1,2
+trn $7,$8
+mov $4,2
+mov $10,4
+sub $6,$2
+mov $2,2
+mov $7,1
+mov $9,$1
+sub $6,$8
+mov $5,$1
+mul $1,2
+mov $0,16
+lpb $0,1
+  mov $6,$4
+  trn $8,1
+  mov $10,$1
+  mov $3,$1
+  mov $4,$3
+  sub $0,1
+  mul $1,$8
+  mov $2,$4
+  mov $3,14
+  sub $10,1
+  add $8,1
+  sub $1,2
+  add $1,$4
+  div $4,4
+  mov $8,1
+  mul $6,2
+  sub $10,1
+  mov $6,1
+  mov $8,6
+  sub $4,1
+  mul $2,2
+  add $9,$5
+  add $4,1
+  add $0,1
+  mov $10,3
+  mov $4,7
+  add $4,$10
+  mov $7,1
+  pow $2,2
+  trn $5,$2
+  sub $10,$2
+  pow $10,2
+  mul $10,$10
+  mov $6,1
+  mov $8,$9
+  mul $0,$2
+  mul $8,2
+  mov $7,1
+  add $8,1
+lpe
+mov $10,$6
+mov $9,1
+add $3,2
+mov $7,1
+add $10,$0
+trn $1,5
+mov $1,$10
+mod $8,10
+mov $0,1
+sub $3,$8
+mov $6,$6
+sub $6,$3
+mov $8,128
+bin $6,4
+mov $9,$1
+mov $0,64
+sub $5,1
+sub $1,1
+mov $1,$6
