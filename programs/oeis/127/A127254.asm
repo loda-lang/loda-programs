@@ -1,0 +1,103 @@
+; A127254: (0,1) sequence whose zero positions are indexed by twice the odious numbers given by A091855.
+; 1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  add $3,3
+  mov $2,5
+  add $4,2
+  mov $3,1
+  add $1,1
+  mov $3,1
+  add $4,1
+  add $3,1
+  add $5,$0
+  mov $5,$3
+  pow $3,$4
+  sub $1,$5
+  sub $4,$1
+  div $3,2
+  mov $7,$3
+  mov $5,8
+  mov $3,$1
+  sub $3,3
+  add $2,1
+  mov $4,$0
+  mov $2,$3
+  add $7,1
+  mov $7,1
+  sub $3,$0
+  mul $7,5
+  lpb $0,1
+    mov $6,1
+    sub $2,5
+    add $4,$0
+    div $0,2
+    mul $7,2
+    mov $6,$7
+    mov $3,1
+    sub $5,1
+    sub $7,$1
+    sub $0,1
+    add $7,5
+    mul $0,$1
+    sub $0,1
+    trn $3,$3
+  lpe
+  mov $6,9
+  mul $2,$0
+  add $7,6
+  mul $1,$4
+  sub $0,1
+  mov $0,1
+  trn $0,$3
+  mov $8,2
+  add $6,$6
+  sub $6,$5
+  div $4,2
+  mov $0,$3
+  add $0,1
+  add $3,7
+  mov $0,$7
+  add $4,1
+  mod $7,$8
+  add $8,6
+  mov $5,1
+  add $2,2
+  mov $1,$4
+  mov $6,$5
+  sub $6,$1
+  mul $5,2
+  sub $1,$5
+  mov $0,1
+  add $5,2
+  mov $0,1
+  mov $5,$4
+  mov $6,$5
+  sub $6,$4
+  mov $0,1
+  sub $5,3
+  mov $7,$0
+  pow $1,$8
+  add $0,1
+  sub $1,1
+  div $2,2
+  mov $0,$3
+  mov $1,$4
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10

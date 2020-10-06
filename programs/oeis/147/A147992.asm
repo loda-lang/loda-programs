@@ -1,0 +1,98 @@
+; A147992: Sequence S such that 1 is in S and if x is in S, then 4x-1 and 4x+1 are in S.
+; 1,3,5,11,13,19,21,43,45,51,53,75,77,83,85,171,173,179,181,203,205,211,213,299,301,307,309,331,333,339,341,683,685,691,693,715,717,723,725,811,813,819,821,843,845,851,853,1195,1197,1203,1205,1227,1229,1235
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  sub $1,$0
+  sub $1,$0
+  add $7,1
+  mov $7,3
+  add $2,2
+  sub $7,$7
+  pow $7,10
+  mov $3,2
+  mov $4,$3
+  mov $1,1
+  sub $7,4
+  mov $1,2
+  add $2,1
+  mov $4,1
+  mov $2,2
+  mov $2,2
+  sub $7,$4
+  mov $6,$3
+  add $0,$4
+  mov $1,$1
+  add $4,1
+  mov $6,6
+  add $8,1
+  sub $1,$4
+  mov $4,$1
+  add $3,$7
+  trn $1,$6
+  add $2,$4
+  add $6,5
+  sub $8,1
+  mov $1,$0
+  trn $3,1
+  add $1,$1
+  mul $2,$0
+  sub $2,2
+  add $3,2
+  mul $1,$0
+  lpb $0,1
+    add $4,1
+    mov $4,$8
+    mul $6,4
+    mov $4,1
+    div $3,$4
+    add $5,1
+    mov $4,$1
+    mov $7,$5
+    mod $2,2
+    mov $5,1
+    mov $8,1
+    add $2,$0
+    pow $5,$4
+    div $0,2
+    add $1,$2
+    gcd $0,$2
+    mov $8,1
+    add $5,1
+    add $4,2
+    mul $2,2
+  lpe
+  mov $3,1
+  mov $0,$6
+  gcd $1,$6
+  add $0,$2
+  mul $3,2
+  mov $8,$4
+  add $8,1
+  add $6,4
+  mov $5,$0
+  mov $0,$3
+  add $1,5
+  sub $0,$5
+  add $4,$4
+  add $4,1
+  add $2,$0
+  sub $1,4
+  sub $1,3
+  mov $8,1
+  mov $0,$8
+  mul $7,$7
+  pow $8,2
+  mov $1,$6
+  sub $1,15
+  div $1,33
+  add $1,1
+  add $10,$1
+lpe
+mov $1,$10
