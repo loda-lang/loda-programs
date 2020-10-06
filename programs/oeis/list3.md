@@ -90,7 +90,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302404](http://oeis.org/A302404) ([L12 program](302/A302404.asm)): Total domination number of the n-Moebius ladder.
 * [A302405](http://oeis.org/A302405) ([L17 program](302/A302405.asm)): Total domination number of the n-prism graph.
 * [A302406](http://oeis.org/A302406) ([L11 program](302/A302406.asm)): Total domination number of the n X n torus grid graph.
-* [A302451](http://oeis.org/A302451) ([L12 program](302/A302451.asm)): a(n) = [x^n] Product_{k>=0} (1 + n*x^(2^k)).
+* [A302451](http://oeis.org/A302451) ([L10 program](302/A302451.asm)): a(n) = [x^n] Product_{k>=0} (1 + n*x^(2^k)).
 * [A302488](http://oeis.org/A302488) ([L09 program](302/A302488.asm)): Total domination number of the n X n grid graph.
 * [A302507](http://oeis.org/A302507) ([L04 program](302/A302507.asm)): a(n) = 4*(3^n-1).
 * [A302537](http://oeis.org/A302537) ([L04 program](302/A302537.asm)): a(n) = (n^2 + 13*n + 2)/2.
@@ -121,6 +121,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A303304](http://oeis.org/A303304) ([L26 program](303/A303304.asm)): Generalized 25-gonal (or icosipentagonal) numbers: m*(23*m - 21)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A303305](http://oeis.org/A303305) ([L18 program](303/A303305.asm)): Generalized 17-gonal (or heptadecagonal) numbers: m*(15*m - 13)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A303370](http://oeis.org/A303370) ([L13 program](303/A303370.asm)): Least integer k such that (k+1)^k >= n.
+* [A303581](http://oeis.org/A303581) ([L81 program](303/A303581.asm)): Add i (>= 0) to the i-th block of terms in the Thue-Morse sequence A010060.
 * [A303590](http://oeis.org/A303590) ([L22 program](303/A303590.asm)): Floor(n*beta)-1, where 1/alpha+1/beta=1, alpha being the number with continued fraction expansion [1;1,2,3,4,5,...] (A247844).
 * [A303609](http://oeis.org/A303609) ([L11 program](303/A303609.asm)): a(n) = 2*n^3 + 9*n^2 + 9*n.
 * [A303611](http://oeis.org/A303611) ([L12 program](303/A303611.asm)): a(n) = (-1 - (-2)^(n-2)) mod 2^n.
@@ -196,7 +197,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304614](http://oeis.org/A304614) ([L05 program](304/A304614.asm)): a(n) = 420*2^n - 222.
 * [A304615](http://oeis.org/A304615) ([L05 program](304/A304615.asm)): a(n) = 507*2^n - 273.
 * [A304616](http://oeis.org/A304616) ([L19 program](304/A304616.asm)): a(n) = 81*n^2 - 69*n + 24.
-* [A304617](http://oeis.org/A304617) ([L16 program](304/A304617.asm)): a(n) = 324*n^2 - 564*n + 321 (n>=1).
+* [A304617](http://oeis.org/A304617) ([L14 program](304/A304617.asm)): a(n) = 324*n^2 - 564*n + 321 (n>=1).
 * [A304618](http://oeis.org/A304618) ([L07 program](304/A304618.asm)): a(n) = 108*n^2 - 228*n + 114 (n>=2).
 * [A304619](http://oeis.org/A304619) ([L24 program](304/A304619.asm)): a(n) = 324*n^2 - 804*n + 468 (n>=2).
 * [A304659](http://oeis.org/A304659) ([L10 program](304/A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
@@ -728,7 +729,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321180](http://oeis.org/A321180) ([L05 program](321/A321180.asm)): a(n) = 17*n^2 - 1.
 * [A321195](http://oeis.org/A321195) ([L11 program](321/A321195.asm)): Minimum number of monochromatic Schur triples over all 2-colorings of [n].
 * [A321212](http://oeis.org/A321212) ([L05 program](321/A321212.asm)): Numbers that are congruent to {2, 3} mod 16.
-* [A321220](http://oeis.org/A321220) ([L09 program](321/A321220.asm)): a(n) = n+2 if n is even, otherwise a(n) = 2*n+1 if n is odd.
+* [A321220](http://oeis.org/A321220) ([L08 program](321/A321220.asm)): a(n) = n+2 if n is even, otherwise a(n) = 2*n+1 if n is odd.
 * [A321232](http://oeis.org/A321232) ([L31 program](321/A321232.asm)): Length of n-th term of A321225.
 * [A321237](http://oeis.org/A321237) ([L05 program](321/A321237.asm)): Start with a square of dimension 1 X 1, and repeatedly append along the squares of the previous step squares with half their side length that do not overlap with any prior square; a(n) gives the number of squares appended at n-th step.
 * [A321257](http://oeis.org/A321257) ([L08 program](321/A321257.asm)): Start with an equilateral triangle, and repeatedly append along the triangles of the previous step equilateral triangles with half their side length that do not overlap with any prior triangle; a(n) gives the number of triangles appended at n-th step.
@@ -827,7 +828,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A326725](http://oeis.org/A326725) ([L22 program](326/A326725.asm)): a(n) = (1/2)*n*(5*n - 7); row 5 of A326728.
 * [A326822](http://oeis.org/A326822) ([L29 program](326/A326822.asm)): T(n, k) = k^0 if k = 1 else 0^n. Triangle read by rows, T(n, k) for 0 <= k <= n.
 * [A327032](http://oeis.org/A327032) ([L15 program](327/A327032.asm)): a(n) = T(n, 4) with T(n, k) = Sum_{d|k} phi(d)*binomial(n - 1 + k/d, k/d).
-* [A327319](http://oeis.org/A327319) ([L20 program](327/A327319.asm)): a(n) = binomial(n, 2) + 6*binomial(n, 4).
+* [A327319](http://oeis.org/A327319) ([L13 program](327/A327319.asm)): a(n) = binomial(n, 2) + 6*binomial(n, 4).
 * [A327374](http://oeis.org/A327374) ([L06 program](327/A327374.asm)): BII-numbers of set-systems with vertex-connectivity 2.
 * [A327376](http://oeis.org/A327376) ([L06 program](327/A327376.asm)): BII-numbers of set-systems with vertex-connectivity 3.
 * [A327440](http://oeis.org/A327440) ([L03 program](327/A327440.asm)): a(n) = floor(3*n/10).
@@ -1082,5 +1083,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337313](http://oeis.org/A337313) ([L13 program](337/A337313.asm)): a(n) is the number of n-digit positive integers with exactly three distinct base 10 digits.
 * [A337483](http://oeis.org/A337483) ([L05 program](337/A337483.asm)): Number of ordered triples of positive integers summing to n that are either weakly increasing or weakly decreasing.
 * [A337484](http://oeis.org/A337484) ([L11 program](337/A337484.asm)): Number of ordered triples of positive integers summing to n that are neither strictly increasing nor strictly decreasing.
+* [A337864](http://oeis.org/A337864) ([L62 program](337/A337864.asm)): Numbers formed by removing from n each digit if it is a duplicate of the previous digit, from left to right.
 * [A337899](http://oeis.org/A337899) ([L11 program](337/A337899.asm)): Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.
 * [A337934](http://oeis.org/A337934) ([L14 program](337/A337934.asm)): Sums of two distinct abundant numbers.
+* [A337957](http://oeis.org/A337957) ([L101 program](337/A337957.asm)): Number of unoriented colorings of the 8 cubic facets of a tesseract or of the 8 vertices of a hyperoctahedron.

@@ -1,0 +1,75 @@
+; A225007: Number of n X 5 0..1 arrays with rows unimodal and columns nondecreasing.
+; 16,86,296,791,1792,3612,6672,11517,18832,29458,44408,64883,92288,128248,174624,233529,307344,398734,510664,646415,809600,1004180,1234480,1505205,1821456,2188746,2613016,3100651,3658496,4293872,5014592,5828977
+
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  mul $0,2
+  add $2,$0
+  sub $2,1
+  mov $2,2
+  mov $5,$2
+  mov $5,4
+  add $3,$0
+  mov $5,$2
+  add $6,268
+  add $5,$5
+  trn $3,$6
+  add $3,$6
+  mod $2,2
+  add $0,2
+  mov $4,$6
+  mov $6,1
+  mul $3,$4
+  mov $6,1
+  add $6,$2
+  div $2,$6
+  sub $2,$5
+  add $5,$0
+  sub $6,$2
+  sub $2,$2
+  mov $4,1
+  mov $1,1
+  clr $2,1
+  mov $6,1
+  bin $5,4
+  trn $4,4
+  lpb $0,1
+    add $2,2
+    mov $2,6
+    add $1,2
+    add $5,$6
+    gcd $3,2
+    mul $6,$0
+    sub $0,1
+    pow $0,$2
+    add $4,1
+    mul $0,2
+    div $0,2
+    mov $0,$6
+    trn $0,2
+    mov $3,$5
+    add $1,$5
+    mov $1,1
+    mul $2,2
+    add $4,$5
+    sub $4,1
+    add $4,2
+    add $1,$5
+    mul $1,$4
+    mov $6,$5
+    mul $0,$0
+    mov $2,4
+  lpe
+  mov $6,4
+  mov $4,$2
+  add $2,1
+  mov $1,$5
+  add $8,$1
+lpe
+mov $1,$8
