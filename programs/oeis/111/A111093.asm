@@ -3,32 +3,18 @@
 
 mov $14,$0
 mov $16,$0
-add $16,1
 lpb $16,1
   clr $0,14
   sub $16,1
   mov $0,$14
   sub $0,$16
-  mov $1,3
   lpb $0,1
-    mov $1,$0
     mov $13,$0
-    mov $2,$0
-    mov $1,$2
     add $7,$13
-    mov $6,$1
-    trn $13,$6
     add $4,$7
-    sub $1,1
     sub $0,1
-    mul $1,2
   lpe
-  mov $2,$2
-  mod $1,5
-  mov $9,$0
-  mov $2,2
   mod $4,10
-  div $1,$2
   mov $1,$4
   add $15,$1
 lpe

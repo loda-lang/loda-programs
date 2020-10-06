@@ -1,0 +1,66 @@
+; A078716: Sequence has period 9 and differences between successive terms are 4, -3, 4, -3, 4, -3, 4, -3, -4.
+; 1,5,2,6,3,7,4,8,5,1,5,2,6,3,7,4,8,5,1,5,2,6,3,7,4,8,5,1,5,2,6,3,7,4,8,5,1,5,2,6,3,7,4,8,5,1,5,2,6,3,7,4,8,5,1,5,2,6,3,7,4,8,5,1,5,2,6,3,7,4,8,5,1
+
+mod $0,9
+add $6,5
+add $6,1
+mov $1,$0
+add $2,2
+mov $2,10
+add $2,1
+mov $4,7
+mov $2,3
+add $0,2
+add $5,$6
+mov $5,$4
+mov $2,2
+mov $2,1
+sub $6,$6
+mov $2,1
+sub $4,$5
+lpb $0,1
+  mov $4,$5
+  sub $4,1
+  sub $4,$4
+  sub $2,$0
+  add $4,6
+  mov $3,1
+  div $4,2
+  mul $6,$3
+  mov $3,$5
+  mov $2,1
+  div $0,2
+  mov $3,1
+  mod $6,$4
+  add $5,$5
+  add $0,$0
+  cmp $6,$4
+lpe
+mov $6,1
+sub $2,1
+fac $2
+sub $3,$4
+add $1,$5
+add $4,2
+mov $5,$4
+sub $2,2
+mul $5,99
+mov $0,$6
+mul $2,2
+mov $3,$0
+div $2,2
+mov $0,1
+log $4,$4
+add $1,1
+add $5,$6
+mul $5,2
+sub $3,1
+pow $2,2
+add $3,1
+mov $3,46
+sub $5,2
+add $6,6
+mod $2,2
+sub $1,8
+div $1,2
+add $1,1
