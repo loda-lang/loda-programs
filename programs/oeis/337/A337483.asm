@@ -1,0 +1,45 @@
+; A337483: Number of ordered triples of positive integers summing to n that are either weakly increasing or weakly decreasing.
+; 0,0,0,1,2,4,5,8,10,13,16,20,23,28,32,37,42,48,53,60,66,73,80,88,95,104,112,121,130,140,149,160,170,181,192,204,215,228,240,253,266,280,293,308,322,337,352,368,383,400,416,433,450,468,485,504,522,541,560
+
+mul $0,$0
+mov $4,3
+sub $1,$0
+add $0,$0
+sub $0,1
+mov $2,$0
+add $1,1
+mov $1,$2
+sub $0,$2
+lpb $0,1
+  mul $0,2
+  trn $2,8
+  sub $0,1
+  add $4,$1
+  bin $0,13
+  div $2,2
+  mov $2,$0
+  mov $2,7
+  mov $2,$0
+  mov $0,$4
+  mov $3,$0
+  add $3,1
+  add $0,$2
+  mov $4,4096
+  trn $0,$1
+  trn $0,$0
+lpe
+div $1,12
+mov $3,$3
+add $1,$1
+mov $3,4
+div $4,100
+mul $3,2
+add $4,2
+add $1,2
+trn $3,$3
+mov $4,$0
+trn $0,3
+mov $2,$4
+add $2,1
+sub $1,2
+div $1,2

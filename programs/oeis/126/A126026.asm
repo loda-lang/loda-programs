@@ -1,0 +1,51 @@
+; A126026: Conjectured upper bound on area of the convex hull of any edge-to-edge connected system of regular unit hexagons (n-polyhexes).
+; 0,1,2,4,5,8,10,13,17,20,24,28,33,38,43,49,55,61,68,75,82,90,97,106,114,123,133,142,152,162,173,184,195,207,219,231,244,257,270,284,297,312,326,341,357,372,388,404,421,438,455,473,491,509,528,547,566
+
+mov $5,$0
+mov $4,$0
+lpb $0,1
+  mov $3,$4
+  add $0,1
+  sub $0,1
+  mul $3,4
+  mov $2,$4
+  mov $0,$2
+  mul $0,$3
+  trn $4,$3
+  add $0,$2
+  add $4,$3
+lpe
+mov $1,1
+sub $2,5
+div $2,$1
+mov $1,$4
+add $0,$3
+mul $2,$1
+add $3,1
+mov $3,1
+sub $2,$2
+mul $0,2
+pow $3,$4
+sub $4,1
+div $0,3
+add $2,1
+mul $4,$4
+mov $2,1
+mov $2,$4
+mov $2,$1
+add $0,$4
+trn $3,$2
+add $2,$0
+div $0,3
+div $0,2
+add $4,$0
+mov $3,$2
+mov $1,$3
+div $1,$1
+mov $1,$0
+mov $6,$5
+mov $7,$6
+mul $7,1
+add $1,$7
+mul $6,$5
+mul $6,$5
