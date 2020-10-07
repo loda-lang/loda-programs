@@ -13,10 +13,8 @@ lpb $5,1
     add $1,$0
     div $0,3
     add $1,$0
-    add $2,3
     div $0,2
   lpe
-  sub $0,1
   mov $6,$5
   lpb $6,1
     mov $4,$1

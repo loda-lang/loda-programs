@@ -1,0 +1,56 @@
+; A060532: Number of ways to color vertices of a heptagon using <= n colors, allowing rotations and reflections.
+; 0,1,18,198,1300,5895,20646,60028,151848,344925,719290,1399266,2569788,4496323,7548750,12229560,19206736,29351673,43782498,63913150,91508580,128746431,178285558,243341748,327771000,436160725,573929226
+
+mov $2,$0
+mov $12,$0
+add $6,$12
+add $4,$0
+add $1,4
+pow $0,3
+mov $7,$0
+add $1,$2
+mov $1,$2
+mov $1,$0
+pow $2,4
+add $3,$7
+div $2,2
+lpb $3,1
+  add $2,$3
+  div $1,5
+  mul $2,2
+  mov $2,$0
+  mov $6,$1
+  mov $15,$0
+  mul $1,6
+  mul $1,2
+  add $1,7
+  mov $5,$3
+  mov $3,7
+  sub $1,15
+  mov $4,$3
+  mov $3,$5
+  add $0,$5
+  add $1,10
+  add $1,4
+lpe
+mul $3,6
+mov $1,$2
+add $1,$7
+mov $2,1
+div $1,5
+add $0,1
+mov $5,$0
+add $0,$2
+mov $1,13
+add $0,5
+mul $4,$5
+sub $0,$2
+mul $1,$3
+mov $2,$4
+mul $2,$0
+add $1,3
+mov $5,13
+div $1,6
+mov $4,2
+mov $1,$2
+div $1,14

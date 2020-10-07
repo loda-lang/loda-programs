@@ -1,105 +1,22 @@
 ; A246146: Limiting block extension of A010060 (Thue-Morse sequence) with first term as initial block.
 ; 0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0
 
-add $10,1
-add $6,1
-sub $0,1
-mov $8,$6
-add $9,$10
-add $1,$0
-trn $8,$9
-add $7,1
-mov $7,$8
-mov $1,2
-sub $9,$1
-sub $10,1
-add $0,23
-pow $1,3
-sub $1,1
-sub $8,3
-mov $9,$0
-mov $1,$1
-add $7,$0
-mov $0,4
-mov $8,$9
-mov $1,1
-trn $8,$8
-cmp $8,1
-add $7,$6
-add $2,$1
-mov $2,2
-add $5,$6
-sub $10,$9
-mov $0,$7
-mov $4,$10
+mov $5,1
+add $0,22
+mov $4,$0
+add $4,1
+mov $0,$4
 lpb $0,1
-  mov $2,$8
-  sub $8,$0
-  mov $2,1
-  sub $8,$6
-  mov $1,$9
-  mod $8,2
-  sub $9,2
-  mul $1,2
-  mul $8,$4
-  mov $5,$0
-  mov $9,$0
-  mov $4,1
-  mov $6,45
-  add $2,1
-  add $9,$10
-  div $6,$6
-  mov $4,$8
-  sub $9,$9
-  mov $6,4
-  sub $4,$6
+  sub $2,$0
+  sub $2,$5
+  mod $2,2
+  mov $5,4
   add $0,3
-  mov $10,2
-  sub $9,4
-  sub $1,1
-  div $1,$0
-  mov $1,$8
   div $0,2
-  mov $4,1
-  gcd $1,$6
 lpe
-mul $2,$0
-mov $2,$10
-mov $3,$9
-add $10,$6
-mov $1,$7
-mov $10,14
-mov $6,6
-div $6,$2
-mov $3,11
-sub $7,$0
-mov $3,$7
+mov $3,14
 add $0,8
-add $7,$0
-sub $1,$0
-mov $7,2
-sub $6,2
-mul $7,12
-sub $9,1
-sub $5,6
-add $5,$9
-add $1,2
-mov $2,3
-mov $7,$9
-sub $9,4
-add $10,$0
-add $0,4
-div $9,$1
-mov $6,2
-add $2,1
-pow $1,$7
-mov $5,2
-trn $9,5
-sub $10,$8
-add $0,1
-mov $4,$6
-mov $6,5
-mov $9,$1
-add $3,7
-mov $1,$10
+add $3,$0
+sub $3,$2
+mov $1,$3
 sub $1,25
