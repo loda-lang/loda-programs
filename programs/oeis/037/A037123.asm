@@ -3,18 +3,11 @@
 
 mov $6,$0
 mov $8,$0
-add $8,1
 lpb $8,1
   clr $0,6
   sub $8,1
   mov $0,$6
   sub $0,$8
-  mov $4,3
-  add $5,5
-  mov $3,$4
-  add $1,$5
-  div $1,10
-  add $2,$0
   add $1,204
   lpb $0,1
     mov $2,$0

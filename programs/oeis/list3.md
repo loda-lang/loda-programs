@@ -663,7 +663,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317439](http://oeis.org/A317439) ([L03 program](317/A317439.asm)): Numbers missing from A317437.
 * [A317440](http://oeis.org/A317440) ([L03 program](317/A317440.asm)): Numbers missing from A317438.
 * [A317451](http://oeis.org/A317451) ([L18 program](317/A317451.asm)): a(n) = (n*A003500(n) - A231896(n))/2.
-* [A317538](http://oeis.org/A317538) ([L80 program](317/A317538.asm)): Indices m for which A317413(m) = 1.
+* [A317538](http://oeis.org/A317538) ([L53 program](317/A317538.asm)): Indices m for which A317413(m) = 1.
 * [A317551](http://oeis.org/A317551) ([L11 program](317/A317551.asm)): Fertility numbers.
 * [A317594](http://oeis.org/A317594) ([L02 program](317/A317594.asm)): Lexicographically first sequence of different terms such that erasing the last three digits of a(n+1) and adding this new reshaped integer to a(n) gives back a(n+1).
 * [A317613](http://oeis.org/A317613) ([L19 program](317/A317613.asm)): Permutation of the nonnegative integers: lodumo_4 of A047247.
