@@ -13,19 +13,13 @@ lpb $20,1
     mov $8,$0
     mov $3,$8
     add $0,1
-    sub $8,$0
     lpb $3,1
       sub $3,3
-      add $17,1
-      mov $6,$0
       add $16,1
     lpe
     sub $0,1
     div $0,3
-    mod $3,3
   lpe
-  add $3,$0
-  mov $1,$0
   mov $1,$16
   mov $21,$20
   lpb $21,1
