@@ -3,11 +3,9 @@
 
 sub $0,1
 gcd $0,4
-lpb $0,1
-  mov $0,$2
-  add $0,2
-  sub $2,5
-lpe
+trn $0,3
+mov $2,-5
+mul $2,$0
 mov $1,$2
 div $1,5
 mul $1,4

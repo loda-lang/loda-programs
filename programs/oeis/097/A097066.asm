@@ -4,11 +4,12 @@
 pow $0,2
 sub $0,1
 mov $2,$0
-mov $1,$2
-lpb $1,1
-  div $1,2
-  add $2,5
-  mul $1,2
-lpe
-mov $1,$2
+mov $4,$2
+mov $3,$4
+mul $3,$2
+gcd $4,2
+mul $4,5
+mov $1,$3
+add $1,$4
+sub $1,6
 div $1,4
