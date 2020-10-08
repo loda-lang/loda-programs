@@ -1,0 +1,51 @@
+; A282025: a(r) is the maximum number of secretaries for which the first r should be rejected, if selecting the one with the highest or lowest ranking are both considered a success.
+; 3,8,13,18,23,27,32,37,42,47,52,57,62,67,72,77,82,86,91,96,101,106,111,116,121,126,131,136,141,146,150,155,160,165,170,175,180,185,190,195,200,205,210,214,219,224,229,234,239,244,249,254,259,264,269,273,278,283
+
+mov $5,$0
+mov $4,2
+add $4,1
+sub $4,9
+add $0,1
+lpb $0,1
+  trn $0,2
+  mov $1,$4
+  sub $1,$0
+  div $0,2
+  sub $1,$0
+  sub $4,1
+  sub $4,9
+  add $3,$1
+  sub $1,1
+  mov $2,4
+  add $0,6
+  mov $2,1
+  trn $0,289
+  add $3,$0
+  sub $3,8
+  mov $0,$2
+  mov $1,$3
+  mov $4,1
+  fac $4
+  trn $0,$3
+  mul $3,2
+  sub $3,1
+  sub $0,1
+  mov $0,$2
+  add $0,1
+lpe
+mov $2,$1
+div $1,19
+add $0,$3
+mov $2,2
+add $2,2
+add $4,1
+sub $4,$1
+mov $3,1
+add $1,$2
+sub $1,1
+mov $6,$5
+mov $7,$6
+mul $7,5
+add $1,$7
+mul $6,$5
+mul $6,$5
