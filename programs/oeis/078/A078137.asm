@@ -1,92 +1,25 @@
 ; A078137: Numbers which can be written as sum of squares>1.
 ; 4,8,9,12,13,16,17,18,20,21,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82
 
-mov $9,$0
+mov $8,$0
 pow $0,2
-add $5,1
-add $8,$5
-add $7,31
-clr $7,2
-sub $7,4
-mov $2,$7
-mov $4,$5
-mov $2,$5
-div $5,2
-add $4,$5
-add $8,2
-add $0,1
-add $7,$5
-trn $0,$7
-sub $7,2
-mov $6,4
-add $8,$4
-mov $6,$6
-mov $1,$5
+add $0,5
 mov $6,2
-mov $8,5
-pow $8,2
-add $3,$6
-mov $4,$1
-mov $3,$8
-mov $4,$8
-pow $8,2
-mov $2,27
-sub $8,2
-add $4,$0
-mov $7,3
-add $3,1
+mov $3,25
 add $6,$0
-div $1,3
-add $8,$5
-sub $7,6
-mul $4,$7
-add $2,$5
 mov $0,$6
 lpb $0,1
-  mov $2,1
-  mov $8,2
-  trn $1,$5
-  mov $1,$5
-  mov $5,44
-  sub $7,13
-  mov $1,$1
-  add $2,$8
   div $0,2
-  mov $7,2
-  mov $7,1
   sub $3,4
-  gcd $4,2
   mov $2,2
-  add $6,6
   sub $3,$2
-  add $6,$2
-  mov $1,0
-  div $5,$2
   mov $5,3
-  mul $8,4
-  sub $1,3
-  sub $8,$4
-  mov $7,1
   mul $3,2
   div $3,$5
-  add $6,15
 lpe
-add $6,1
-mov $7,$4
 sub $2,$3
-mov $3,$6
-sub $4,$8
-mov $7,2
-div $3,$2
-mul $1,2
-add $7,1
-add $0,$3
-mov $0,4
 mov $1,$2
 add $1,1
-mov $10,$9
-mov $11,$10
-mul $11,1
-add $1,$11
-mul $10,$9
-mul $10,$9
+mov $7,$8
+mov $4,$7
+add $1,$4

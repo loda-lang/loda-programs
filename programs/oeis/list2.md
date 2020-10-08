@@ -682,6 +682,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214446](http://oeis.org/A214446) ([L07 program](214/A214446.asm)): n*(n^2-2*n-1)
 * [A214489](http://oeis.org/A214489) ([L16 program](214/A214489.asm)): Numbers m such that A070939(m) = A070939(m + A070939(m)), A070939 = length of binary representation.
 * [A214493](http://oeis.org/A214493) ([L21 program](214/A214493.asm)): Numbers of the form ((6k+5)^2+9)/2 or 2(3k+4)^2-9.
+* [A214560](http://oeis.org/A214560) ([L62 program](214/A214560.asm)): Number of 0's in binary expansion of n^2.
 * [A214628](http://oeis.org/A214628) ([L18 program](214/A214628.asm)): Intersections of radii with the cycloid.
 * [A214630](http://oeis.org/A214630) ([L10 program](214/A214630.asm)): a(n) is the reduced numerator of 1/4 - 1/A109043(n)^2 = (1 - 1/A026741(n)^2)/4.
 * [A214656](http://oeis.org/A214656) ([L03 program](214/A214656.asm)): Floor of the imaginary part of the zeros of the complex Fibonacci function on the left half plane.
@@ -692,6 +693,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214672](http://oeis.org/A214672) ([L16 program](214/A214672.asm)): Floor of the imaginary parts of the zeros of the complex Lucas function on the left half plane.
 * [A214673](http://oeis.org/A214673) ([L19 program](214/A214673.asm)): Floor of the moduli of the zeros of the complex Lucas function.
 * [A214675](http://oeis.org/A214675) ([L05 program](214/A214675.asm)): 9*n^2 - 13*n + 5.
+* [A214684](http://oeis.org/A214684) ([L22 program](214/A214684.asm)): a(1)=1, a(2)=1, and, for n>2, a(n)=(a(n-1)+a(n-2))/5^k, where 5^k is the highest power of 5 dividing a(n-1)+a(n-2).
 * [A214731](http://oeis.org/A214731) ([L10 program](214/A214731.asm)): a(n) = n^3 - 2*n^2 - 1.
 * [A214732](http://oeis.org/A214732) ([L07 program](214/A214732.asm)): 25n^2 + 15n + 1021.
 * [A214848](http://oeis.org/A214848) ([L28 program](214/A214848.asm)): First difference of A022846.
@@ -710,7 +712,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214946](http://oeis.org/A214946) ([L24 program](214/A214946.asm)): Number of squarefree words of length 7 in an (n+1)-ary alphabet.
 * [A214971](http://oeis.org/A214971) ([L23 program](214/A214971.asm)): Integers k for which the base-phi representation of k includes 1.
 * [A214972](http://oeis.org/A214972) ([L13 program](214/A214972.asm)): a(n) = a(floor(2*(n-1)/3)) + 1, where a(0) = 0.
-* [A214989](http://oeis.org/A214989) ([L109 program](214/A214989.asm)): Beatty sequence [sqrt(phi)/(sqrt(phi)-1) * n], where phi = (1 + sqrt(5))/2 = golden ratio; complement of A214988.
 * [A215036](http://oeis.org/A215036) ([L04 program](215/A215036.asm)): 2 followed by "1,0" repeated.
 * [A215052](http://oeis.org/A215052) ([L19 program](215/A215052.asm)): a(n) = (binomial(n,5) - floor(n/5)) / 5.
 * [A215053](http://oeis.org/A215053) ([L05 program](215/A215053.asm)): a(n) = 1/7*( binomial(n,7) - floor(n/7) ).
@@ -728,7 +729,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215229](http://oeis.org/A215229) ([L69 program](215/A215229.asm)): Number of length-6 0..k arrays connected end-around, with no sequence of L<n elements immediately followed by itself (periodic "squarefree").
 * [A215247](http://oeis.org/A215247) ([L27 program](215/A215247.asm)): A Beatty sequence: a(n) = floor((n-1/2)*(2 + 2*sqrt(2))).
 * [A215414](http://oeis.org/A215414) ([L07 program](215/A215414.asm)): Unix epoch timestamp for start of year, beginning with 1970.
-* [A215415](http://oeis.org/A215415) ([L77 program](215/A215415.asm)): a(2*n) = n, a(4*n+1) = 2*n-1, a(4*n+3) = 2*n+3.
+* [A215415](http://oeis.org/A215415) ([L28 program](215/A215415.asm)): a(2*n) = n, a(4*n+1) = 2*n-1, a(4*n+3) = 2*n+3.
 * [A215459](http://oeis.org/A215459) ([L10 program](215/A215459.asm)): Arises in quick gossiping without duplicate transmission.
 * [A215495](http://oeis.org/A215495) ([L06 program](215/A215495.asm)): a(4*n) = a(4*n+2) = a(2*n+1) = 2*n + 1.
 * [A215532](http://oeis.org/A215532) ([L29 program](215/A215532.asm)): The limit of the string "0, 1" under the operation 'append first k terms, increment k' with k=2 initially.
@@ -1142,6 +1143,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228292](http://oeis.org/A228292) ([L08 program](228/A228292.asm)): a(n) = Sum_{k=1..8} n^k.
 * [A228293](http://oeis.org/A228293) ([L10 program](228/A228293.asm)): a(n) = Sum_{k=1..9} n^k.
 * [A228294](http://oeis.org/A228294) ([L08 program](228/A228294.asm)): a(n) = Sum_{k=1..10} n^k.
+* [A228295](http://oeis.org/A228295) ([L30 program](228/A228295.asm)): The 'Honeycomb' or 'Beehive' sequence: a(n) = ceiling(12^(1/4)*n).
 * [A228305](http://oeis.org/A228305) ([L14 program](228/A228305.asm)): a(1) = 3; for n >= 1, a(2*n) = 2^(n+1), a(2*n+1) = 5*2^(n-1).
 * [A228306](http://oeis.org/A228306) ([L08 program](228/A228306.asm)): The Wiener index of the Kneser graph K(n,2) (n>=5).
 * [A228307](http://oeis.org/A228307) ([L09 program](228/A228307.asm)): The hyper-Wiener index of the Kneser graph K(n,2) (n>=5).
@@ -1168,6 +1170,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228612](http://oeis.org/A228612) ([L17 program](228/A228612.asm)): Number of (possibly overlapping) occurrences of the subword given by the binary expansion of n in all binary words of length n.
 * [A228661](http://oeis.org/A228661) ([L10 program](228/A228661.asm)): Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
 * [A228693](http://oeis.org/A228693) ([L11 program](228/A228693.asm)): Largest number of maximal independent sets of nodes in any tree on n nodes.
+* [A228705](http://oeis.org/A228705) ([L115 program](228/A228705.asm)): Expansion of (1-2*x+4*x^2-2*x^3+x^4)/((1-x)^4*(1+x^2)^2).
 * [A228728](http://oeis.org/A228728) ([L35 program](228/A228728.asm)): a(1)=1, a(2)=2 and for n > 2, a(n) is the least integer > a(n-1) such that there is a permutation b(1), ..., b(n) of a(1), ..., a(n) with b(1) = a(1) and b(n) = a(n), and with the n numbers |b(1)-b(2)|, |b(2)-b(3)|, ..., |b(n-1)-b(n)|, |b(n)-b(1)| pairwise distinct.
 * [A228826](http://oeis.org/A228826) ([L10 program](228/A228826.asm)): Delayed continued fraction of sqrt(2).
 * [A228842](http://oeis.org/A228842) ([L09 program](228/A228842.asm)): Binomial transform of A014448.
@@ -1257,7 +1260,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231087](http://oeis.org/A231087) ([L15 program](231/A231087.asm)): Number of perfect matchings in graph C_3 x C_{2n}
 * [A231103](http://oeis.org/A231103) ([L05 program](231/A231103.asm)): Number of n X 3 0..3 arrays x(i,j) with each element horizontally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
 * [A231151](http://oeis.org/A231151) ([L47 program](231/A231151.asm)): Least integer k such that n+1 + ... + n+k > 1 + ... + n.
-* [A231204](http://oeis.org/A231204) ([L101 program](231/A231204.asm)): If n = Sum_{i=0..m} c(i)*2^i, c(i) = 0 or 1, then a(n) = (m-i)*c(i).
+* [A231204](http://oeis.org/A231204) ([L10 program](231/A231204.asm)): If n = Sum_{i=0..m} c(i)*2^i, c(i) = 0 or 1, then a(n) = (m-i)*c(i).
 * [A231303](http://oeis.org/A231303) ([L16 program](231/A231303.asm)): Recurrence a(n) = a(n-2) + n^M for M=4, starting with a(0)=0, a(1)=1.
 * [A231304](http://oeis.org/A231304) ([L15 program](231/A231304.asm)): Recurrence a(n) = a(n-2) + n^M for M=5, starting with a(0)=0, a(1)=1.
 * [A231305](http://oeis.org/A231305) ([L15 program](231/A231305.asm)): Recurrence a(n) = a(n-2) + n^M for M=6, starting with a(0)=0, a(1)=1.
@@ -1737,7 +1740,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246104](http://oeis.org/A246104) ([L12 program](246/A246104.asm)): Least m > 0 for which (s(m), ..., s(n+m-1) = (s(0), ..., s(n)), the first n+1 terms of the infinite Fibonacci word A003849.
 * [A246139](http://oeis.org/A246139) ([L03 program](246/A246139.asm)): 2^n + 10.
 * [A246142](http://oeis.org/A246142) ([L13 program](246/A246142.asm)): Limiting block extension of A004539 (base 2 representation of sqrt(2)) with first term as initial block.
-* [A246146](http://oeis.org/A246146) ([L102 program](246/A246146.asm)): Limiting block extension of A010060 (Thue-Morse sequence) with first term as initial block.
+* [A246146](http://oeis.org/A246146) ([L19 program](246/A246146.asm)): Limiting block extension of A010060 (Thue-Morse sequence) with first term as initial block.
 * [A246168](http://oeis.org/A246168) ([L03 program](246/A246168.asm)): 2^n - 10.
 * [A246170](http://oeis.org/A246170) ([L20 program](246/A246170.asm)): Beatty sequence for sqrt(14).
 * [A246171](http://oeis.org/A246171) ([L20 program](246/A246171.asm)): Beatty sequence for sqrt(15).
@@ -3231,6 +3234,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A279704](http://oeis.org/A279704) ([L09 program](279/A279704.asm)): Number of n X 3 0..1 arrays with no element equal to a strict majority of its horizontal and antidiagonal neighbors and with new values introduced in order 0 sequentially upwards.
 * [A279758](http://oeis.org/A279758) ([L07 program](279/A279758.asm)): Expansion of Product_{k>=1} 1/(1 - x^(k*(5*k^2-5*k+2)/2)).
 * [A279766](http://oeis.org/A279766) ([L18 program](279/A279766.asm)): Number of odd digits in the decimal expansions of integers 1 to n.
+* [A279816](http://oeis.org/A279816) ([L29 program](279/A279816.asm)): Digital roots of tetrahedral numbers (A000292).
 * [A279872](http://oeis.org/A279872) ([L05 program](279/A279872.asm)): Decimal representation of the x-axis, from the left edge to the origin, (and also from the origin to the right edge) of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 209", based on the 5-celled von Neumann neighborhood.
 * [A279891](http://oeis.org/A279891) ([L08 program](279/A279891.asm)): Triangle read by rows, T(n,k) = 2*n, with n>=k>=0.
 * [A279895](http://oeis.org/A279895) ([L06 program](279/A279895.asm)): a(n) = n*(5*n + 11)/2.
@@ -3295,6 +3299,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A282022](http://oeis.org/A282022) ([L16 program](282/A282022.asm)): Start with 1; multiply alternately by 3 and 4.
 * [A282023](http://oeis.org/A282023) ([L15 program](282/A282023.asm)): Start with 1; multiply alternately by 4 and 3.
 * [A282057](http://oeis.org/A282057) ([L19 program](282/A282057.asm)): Odd numbers n such that for all k >= 1 the numbers n*4^k - 1 and n*4^k + 1 do not form a twin prime pair.
+* [A282079](http://oeis.org/A282079) ([L104 program](282/A282079.asm)): Number of n-element subsets of [n+2] having an even sum.
 * [A282088](http://oeis.org/A282088) ([L19 program](282/A282088.asm)): Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 553", based on the 5-celled von Neumann neighborhood.
 * [A282123](http://oeis.org/A282123) ([L18 program](282/A282123.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 430", based on the 5-celled von Neumann neighborhood.
 * [A282124](http://oeis.org/A282124) ([L18 program](282/A282124.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 430", based on the 5-celled von Neumann neighborhood.
@@ -3337,6 +3342,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A283393](http://oeis.org/A283393) ([L04 program](283/A283393.asm)): a(n) = gcd(n^2-1, n^2+9).
 * [A283394](http://oeis.org/A283394) ([L06 program](283/A283394.asm)): a(n) = 3*n*(3*n + 7)/2 + 4.
 * [A283437](http://oeis.org/A283437) ([L16 program](283/A283437.asm)): Periodic {1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1}.
+* [A283442](http://oeis.org/A283442) ([L11 program](283/A283442.asm)): a(n) = lcm(n,5) / gcd(n,5).
 * [A283443](http://oeis.org/A283443) ([L11 program](283/A283443.asm)): a(n) = lcm(n,6) / gcd(n,6).
 * [A283506](http://oeis.org/A283506) ([L18 program](283/A283506.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
 * [A283507](http://oeis.org/A283507) ([L11 program](283/A283507.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
@@ -3529,6 +3535,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288999](http://oeis.org/A288999) ([L49 program](288/A288999.asm)): Positions of 1 in A288997; complement of A288998.
 * [A289037](http://oeis.org/A289037) ([L49 program](289/A289037.asm)): Positions of 1 in A289035; complement of A289036.
 * [A289060](http://oeis.org/A289060) ([L27 program](289/A289060.asm)): a(n) = 3*a(n-1) - 3*a(n-2) + *a(n-3) for n >= 8, where a(0) = 2, a(1) = 4, a(2) = 7, a(3) = 11, a(4) = 17, a(5) = 25, a(6) = 36, a(7) = 51.
+* [A289098](http://oeis.org/A289098) ([L83 program](289/A289098.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 545", based on the 5-celled von Neumann neighborhood.
 * [A289120](http://oeis.org/A289120) ([L29 program](289/A289120.asm)): a(n) is the number of odd integers divisible by 7 in ]2*(n-1)^2, 2*n^2[.
 * [A289121](http://oeis.org/A289121) ([L20 program](289/A289121.asm)): a(n) = (8 - 2*n + 11*n^2 - 6*n^3 + n^4)/4.
 * [A289122](http://oeis.org/A289122) ([L23 program](289/A289122.asm)): a(n) is number of odd integers divisible by 11 in the interval ]2*(n-1)^2, 2*n^2[.

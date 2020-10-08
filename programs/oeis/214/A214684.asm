@@ -3,23 +3,14 @@
 
 lpb $0,1
   mod $0,6
-  sub $2,$0
-  pow $1,$0
-  add $1,1
 lpe
 pow $0,$0
 sub $0,1
-add $0,$0
-sub $2,$0
-add $4,5
+mul $0,2
 lpb $0,1
   lpb $0,1
-    add $2,1
-    sub $2,1
     mod $0,5
   lpe
-  mod $0,4
 lpe
-mov $1,$2
 mov $1,$0
 add $1,1
