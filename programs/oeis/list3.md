@@ -803,6 +803,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323735](http://oeis.org/A323735) ([L14 program](323/A323735.asm)): a(n) is the largest minimal distance of a binary LCD [n,2] code.
 * [A323824](http://oeis.org/A323824) ([L05 program](323/A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
 * [A323827](http://oeis.org/A323827) ([L40 program](323/A323827.asm)): Apply Lenormand's "raboter" operation to A306211.
+* [A323956](http://oeis.org/A323956) ([L30 program](323/A323956.asm)): Triangle read by rows: T(n, k) = 1 + n * (n - k) for 1 <= k <= n.
 * [A324015](http://oeis.org/A324015) ([L10 program](324/A324015.asm)): Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
 * [A324172](http://oeis.org/A324172) ([L11 program](324/A324172.asm)): Number of subsets of {1,...,n} that cross their complement.
 * [A324174](http://oeis.org/A324174) ([L14 program](324/A324174.asm)): Integers k such that 2*floor(sqrt(k)) divides k.
@@ -1048,7 +1049,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334227](http://oeis.org/A334227) ([L23 program](334/A334227.asm)): Length of the shortest prefix of the Thue-Morse sequence (A010060) containing, as subwords, all length-n blocks appearing in A010060.
 * [A334277](http://oeis.org/A334277) ([L18 program](334/A334277.asm)): Perimeters of almost-equilateral Heronian triangles.
 * [A334320](http://oeis.org/A334320) ([L44 program](334/A334320.asm)): Number of even integers in base n with exactly two distinct digits.
-* [A334387](http://oeis.org/A334387) ([L19 program](334/A334387.asm)): The difference version of the 'Decade transform' : to obtain a(n) write n as a sum of its power-of-ten parts and then continue to calculate the absolute value of the difference between the adjacent parts until a single number remains.
+* [A334387](http://oeis.org/A334387) ([L09 program](334/A334387.asm)): The difference version of the 'Decade transform' : to obtain a(n) write n as a sum of its power-of-ten parts and then continue to calculate the absolute value of the difference between the adjacent parts until a single number remains.
 * [A334413](http://oeis.org/A334413) ([L33 program](334/A334413.asm)): First differences of A101803.
 * [A334501](http://oeis.org/A334501) ([L32 program](334/A334501.asm)): Eventual period of a single cell in rule 190 cellular automaton in a cyclic universe of width n.
 * [A334563](http://oeis.org/A334563) ([L10 program](334/A334563.asm)): a(n) is the maximum number of 4-cycles possible in an n-vertex planar graph.
