@@ -498,6 +498,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212714](http://oeis.org/A212714) ([L03 program](212/A212714.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and |w-x| >= w + |y-z|.
 * [A212740](http://oeis.org/A212740) ([L51 program](212/A212740.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and max{w,x,y,z}<2*min{w,x,y,z}.
 * [A212742](http://oeis.org/A212742) ([L53 program](212/A212742.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and max{w,x,y,z}<=2*min{w,x,y,z}.
+* [A212743](http://oeis.org/A212743) ([L126 program](212/A212743.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and max{w,x,y,z}>2*min{w,x,y,z}.
 * [A212747](http://oeis.org/A212747) ([L44 program](212/A212747.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and 2w=floor((x+y+z)/2)).
 * [A212748](http://oeis.org/A212748) ([L27 program](212/A212748.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and w=2*floor((x+y+z)/2)).
 * [A212755](http://oeis.org/A212755) ([L10 program](212/A212755.asm)): Number of (w,x,y,z) with all terms in {0,...,n}  and |w-x|=max{w,x,y,z}-min{w,x,y,z}.
@@ -2414,6 +2415,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A264449](http://oeis.org/A264449) ([L17 program](264/A264449.asm)): a(n) = n*(n + 7)*(n + 14)*(n + 21)*(n + 28)/120.
 * [A264557](http://oeis.org/A264557) ([L19 program](264/A264557.asm)): Number of n X 1 arrays of permutations of 0..n*1-1 with rows nondecreasing modulo 2 and columns nondecreasing modulo 3.
 * [A264619](http://oeis.org/A264619) ([L28 program](264/A264619.asm)): a(0) = 1; for n>0, working in binary, write n followed by 1 then n-reversed (including leading zeros); show result in base 10.
+* [A264689](http://oeis.org/A264689) ([L59 program](264/A264689.asm)): Minimum of the Kamae-Xue measure of randomness for binary strings of length n.
 * [A264749](http://oeis.org/A264749) ([L28 program](264/A264749.asm)): a(n) = floor(n/BL(n)) where BL(n) = A070939(n) is the binary length of n.
 * [A264750](http://oeis.org/A264750) ([L10 program](264/A264750.asm)): Number of sequences of 5 throws of an n-sided die (with faces numbered 1, 2, ..., n) in which the sum of the throws first reaches or exceeds n on the 5th throw.
 * [A264754](http://oeis.org/A264754) ([L16 program](264/A264754.asm)): Expansion of (1 + 2*x - 2*x^3 + x^4)/((1 - x)^3*(1 + x)^2).
@@ -3792,6 +3794,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A295643](http://oeis.org/A295643) ([L03 program](295/A295643.asm)): Squares repeated 4 times; a(n) = (floor(n/4))^2.
 * [A295774](http://oeis.org/A295774) ([L03 program](295/A295774.asm)): a(n) is the minimum size of a restricted planar additive basis for the square [0,2n]^2.
 * [A295821](http://oeis.org/A295821) ([L15 program](295/A295821.asm)): Number of coprime pairs (a,b) with -n <= a <= n, -2 <= b <= 2.
+* [A295822](http://oeis.org/A295822) ([L89 program](295/A295822.asm)): Number of coprime pairs (a,b) with -n <= a <= n, -3 <= b <= 3.
 * [A295866](http://oeis.org/A295866) ([L15 program](295/A295866.asm)): Number of decimal digits in the number of partitions of n.
 * [A295869](http://oeis.org/A295869) ([L06 program](295/A295869.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 8.
 * [A295890](http://oeis.org/A295890) ([L12 program](295/A295890.asm)): a(n) = 1 if binary weights of n and 3n have different parity, 0 otherwise; a(n) = A010060(n) XOR A010060(3n).

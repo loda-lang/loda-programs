@@ -229,6 +229,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001690](http://oeis.org/A001690) ([L12 program](001/A001690.asm)): Non-Fibonacci numbers.
 * [A001700](http://oeis.org/A001700) ([L05 program](001/A001700.asm)): a(n) = binomial(2*n+1, n+1): number of ways to put n+1 indistinguishable balls into n+1 distinguishable boxes = number of (n+1)-st degree monomials in n+1 variables = number of monotone maps from 1..n+1 to 1..n+1.
 * [A001701](http://oeis.org/A001701) ([L10 program](001/A001701.asm)): Generalized Stirling numbers.
+* [A001704](http://oeis.org/A001704) ([L23 program](001/A001704.asm)): a(n) = n concatenated with n + 1.
 * [A001710](http://oeis.org/A001710) ([L04 program](001/A001710.asm)): Order of alternating group A_n, or number of even permutations of n letters.
 * [A001752](http://oeis.org/A001752) ([L34 program](001/A001752.asm)): Expansion of 1/((1+x)*(1-x)^5).
 * [A001768](http://oeis.org/A001768) ([L19 program](001/A001768.asm)): Sorting numbers: number of comparisons for merge insertion sort of n elements.
@@ -4776,6 +4777,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052161](http://oeis.org/A052161) ([L25 program](052/A052161.asm)): Partial sums of A014825, second partial sums of A002450.
 * [A052181](http://oeis.org/A052181) ([L10 program](052/A052181.asm)): Partial sums of A050483.
 * [A052380](http://oeis.org/A052380) ([L04 program](052/A052380.asm)): a(n) = D is the smallest distance (D) between 2 non-overlapping prime twins differing by d=2n; these twins are [p,p+d] or [p+D,p+D+d] and p > 3.
+* [A052423](http://oeis.org/A052423) ([L13 program](052/A052423.asm)): Highest common factor of nonzero digits of n.
 * [A052459](http://oeis.org/A052459) ([L14 program](052/A052459.asm)): a(n) = n*(2*n^2 + 1)*(n^2 + 1)/6.
 * [A052460](http://oeis.org/A052460) ([L22 program](052/A052460.asm)): 3-magic series constant.
 * [A052472](http://oeis.org/A052472) ([L06 program](052/A052472.asm)): Number of independent components for a Weyl tensor in n dimensions.
@@ -5341,6 +5343,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059329](http://oeis.org/A059329) ([L51 program](059/A059329.asm)): Number of 3 X 3 matrices, with elements from {0,...,n}, having the property that the middle element of each of the eight 3-element horizontal, vertical and diagonal lines equals the average of the two end elements.
 * [A059387](http://oeis.org/A059387) ([L15 program](059/A059387.asm)): Jordan function J_n(6) (see A059379).
 * [A059403](http://oeis.org/A059403) ([L05 program](059/A059403.asm)): Quarter-squared applied twice.
+* [A059421](http://oeis.org/A059421) ([L64 program](059/A059421.asm)): A diagonal of A059419.
 * [A059426](http://oeis.org/A059426) ([L66 program](059/A059426.asm)): First differences of A026273.
 * [A059448](http://oeis.org/A059448) ([L09 program](059/A059448.asm)): The parity of the number of zero digits when n is written in binary.
 * [A059517](http://oeis.org/A059517) ([L22 program](059/A059517.asm)): The sequence A059515(3,n). Number of ways of placing n identifiable nonnegative intervals with a total of exactly three starting and/or finishing points.
@@ -5757,6 +5760,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063524](http://oeis.org/A063524) ([L02 program](063/A063524.asm)): Characteristic function of 1.
 * [A063656](http://oeis.org/A063656) ([L07 program](063/A063656.asm)): Numbers k such that the truncated square root of k is equal to the rounded square root of k.
 * [A063657](http://oeis.org/A063657) ([L10 program](063/A063657.asm)): Numbers with property that truncated square root is unequal to rounded square root.
+* [A063667](http://oeis.org/A063667) ([L37 program](063/A063667.asm)): Number of solutions of EulerPhi(x) = 12n + 2.
 * [A063712](http://oeis.org/A063712) ([L18 program](063/A063712.asm)): Table of bits required for product of n- and k-bit positive numbers read by antidiagonals.
 * [A063724](http://oeis.org/A063724) ([L13 program](063/A063724.asm)): Consider problem of placing N queens on an n X n board so that each queen attacks precisely 4 others. Sequence gives maximal number of queens.
 * [A063727](http://oeis.org/A063727) ([L14 program](063/A063727.asm)): a(n) = 2*a(n-1) + 4*a(n-2), a(0)=1, a(1)=2.
@@ -7625,6 +7629,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088921](http://oeis.org/A088921) ([L12 program](088/A088921.asm)): The number of 321- and 2143-avoiding permutations of length n.
 * [A088923](http://oeis.org/A088923) ([L18 program](088/A088923.asm)): Duplicate of A011539.
 * [A088938](http://oeis.org/A088938) ([L28 program](088/A088938.asm)): Occurrences of 2's in A088936.
+* [A088941](http://oeis.org/A088941) ([L71 program](088/A088941.asm)): a(n)=12*sum(1<=i<=j<=k<=n,i*j/k).
 * [A088948](http://oeis.org/A088948) ([L14 program](088/A088948.asm)): Numbers k such that (A006530(k) + A020639(k))/2 is an integer; that is, arithmetic mean of least and largest prime factor is an integer.
 * [A088981](http://oeis.org/A088981) ([L15 program](088/A088981.asm)): a(n+2) = a(n+1) + a(n) - [(2*n)+1] where a(0)=7, a(1)=11.
 * [A089010](http://oeis.org/A089010) ([L09 program](089/A089010.asm)): a(n) = 1 if n is an exponent of the Weyl group W(E_8), 0 otherwise.
@@ -8069,7 +8074,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A097063](http://oeis.org/A097063) ([L07 program](097/A097063.asm)): Expansion of (1-2*x+3*x^2)/((1+x)*(1-x)^3).
 * [A097064](http://oeis.org/A097064) ([L16 program](097/A097064.asm)): Expansion of (1-4x+6x^2)/(1-2x)^2.
 * [A097065](http://oeis.org/A097065) ([L10 program](097/A097065.asm)): Interleave n+1 and n-1.
-* [A097066](http://oeis.org/A097066) ([L13 program](097/A097066.asm)): Expansion of (1-2*x+2*x^2)/((1+x)*(1-x)^3).
+* [A097066](http://oeis.org/A097066) ([L10 program](097/A097066.asm)): Expansion of (1-2*x+2*x^2)/((1+x)*(1-x)^3).
 * [A097067](http://oeis.org/A097067) ([L14 program](097/A097067.asm)): Expansion of (1-4*x+5*x^2)/(1-2*x)^2.
 * [A097070](http://oeis.org/A097070) ([L10 program](097/A097070.asm)): Consider all compositions (ordered partitions) of n into n parts, allowing zeros. E.g., for n = 3 we get 300, 030, 003, 210, 120, 201, 102, 021, 012, 111. Then a(n) is the total number of 1's.
 * [A097072](http://oeis.org/A097072) ([L13 program](097/A097072.asm)): Expansion of (1 - 2*x + 2*x^2)/((1 - x^2)*(1 - 2*x)).
