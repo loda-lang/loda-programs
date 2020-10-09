@@ -1,68 +1,22 @@
 ; A338042: Draw n rays from each of two distinct points in the plane; a(n) is the number of vertices thus created. See Comments for details.
 ; 2,2,4,2,8,4,14,8,22,14,32,22,44,32,58,44,74,58,92,74,112,92,134,112,158,134,184,158,212,184,242,212,274,242,308,274,344,308,382,344,422,382,464,422,508,464,554,508,602,554,652,602,704,652,758,704,814,758
 
-mov $4,$0
-add $6,$0
-mov $3,2
-add $3,$0
-sub $3,2
-div $6,2
-mov $2,2
 mov $3,$0
-sub $2,4
-mov $4,9
-mul $2,2
-mov $2,3
-sub $0,$6
-add $5,353
-mov $3,1
-mov $2,1
-add $3,$6
-mov $6,$6
-mov $3,$6
-mov $2,$4
-mov $3,4
+div $3,2
+sub $0,$3
 mov $1,$0
-mov $2,$6
-sub $6,2
-mul $5,$1
-mov $0,$3
-sub $6,1
-mov $6,2
-mul $1,2
-mul $5,4
-sub $5,$0
-add $3,$2
-mul $2,$0
-add $6,$2
-add $4,2
-add $5,$1
-mov $5,1
-sub $6,$1
-sub $6,1
-add $3,$2
-sub $3,2
-mov $0,$5
-add $0,$0
-lpb $0,1
-  mov $6,$2
-  trn $5,1
-  mov $3,1
-  sub $3,6
-  sub $5,1
-  add $0,3
-  div $0,2
-  mov $2,1
-  mul $5,$0
-  add $0,12
-lpe
-add $3,$3
+mov $2,$3
+mov $0,4
 mov $3,2
-pow $6,$0
-add $3,$3
-trn $3,$1
-mov $1,$6
-sub $1,1
+mul $1,2
+mul $2,$0
+add $3,$2
+sub $3,$1
+sub $3,1
+mov $0,1
+mul $0,2
+pow $3,$0
+mov $1,$3
 div $1,8
 mul $1,2
 add $1,2

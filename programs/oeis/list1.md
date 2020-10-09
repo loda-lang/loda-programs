@@ -1133,7 +1133,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118070](http://oeis.org/A118070) ([L09 program](118/A118070.asm)): Numbers with exactly one even decimal digit.
 * [A118175](http://oeis.org/A118175) ([L11 program](118/A118175.asm)): Binary representation of n-th iteration of the Rule 220 elementary cellular automaton starting with a single black cell.
 * [A118239](http://oeis.org/A118239) ([L06 program](118/A118239.asm)): Engel expansion of cosh(1).
-* [A118263](http://oeis.org/A118263) ([L13 program](118/A118263.asm)): a(3n) = 2^n, a(3n+1) = 3^n, a(3n+2) = 4^n.
+* [A118263](http://oeis.org/A118263) ([L10 program](118/A118263.asm)): a(3n) = 2^n, a(3n+1) = 3^n, a(3n+2) = 4^n.
 * [A118264](http://oeis.org/A118264) ([L60 program](118/A118264.asm)): Coefficient of q^n in (1-q)^3/(1-3q); dimensions of the enveloping algebra of the derived free Lie algebra on 3 letters.
 * [A118265](http://oeis.org/A118265) ([L77 program](118/A118265.asm)): Coefficient of q^n in (1-q)^4/(1-4q); dimensions of the enveloping algebra of the derived free Lie algebra on 4 letters.
 * [A118266](http://oeis.org/A118266) ([L92 program](118/A118266.asm)): Coefficient of q^n in (1-q)^5/(1-5q); dimensions of the enveloping algebra of the derived free Lie algebra on 5 letters.
@@ -1777,8 +1777,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130234](http://oeis.org/A130234) ([L12 program](130/A130234.asm)): Minimal index k of a Fibonacci number such that Fib(k)>=n (the 'upper' Fibonacci Inverse).
 * [A130235](http://oeis.org/A130235) ([L53 program](130/A130235.asm)): Partial sums of the 'lower' Fibonacci Inverse A130233.
 * [A130236](http://oeis.org/A130236) ([L48 program](130/A130236.asm)): Partial sums of the 'upper' Fibonacci Inverse A130234.
-* [A130237](http://oeis.org/A130237) ([L36 program](130/A130237.asm)): The 'lower' Fibonacci Inverse A130233(n) multiplied by n.
-* [A130238](http://oeis.org/A130238) ([L47 program](130/A130238.asm)): Partial sums of A130237.
+* [A130237](http://oeis.org/A130237) ([L12 program](130/A130237.asm)): The 'lower' Fibonacci Inverse A130233(n) multiplied by n.
+* [A130238](http://oeis.org/A130238) ([L22 program](130/A130238.asm)): Partial sums of A130237.
 * [A130240](http://oeis.org/A130240) ([L24 program](130/A130240.asm)): Partial sums of A130239.
 * [A130249](http://oeis.org/A130249) ([L07 program](130/A130249.asm)): Maximal index k of a Jacobsthal number such that A001045(k)<=n (the 'lower' Jacobsthal inverse).
 * [A130250](http://oeis.org/A130250) ([L14 program](130/A130250.asm)): Minimal index k of a Jacobsthal number such that A001045(k) >= n (the 'upper' Jacobsthal inverse).
