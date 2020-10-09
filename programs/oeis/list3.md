@@ -565,6 +565,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315488](http://oeis.org/A315488) ([L28 program](315/A315488.asm)): Coordination sequence Gal.6.343.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315489](http://oeis.org/A315489) ([L18 program](315/A315489.asm)): Coordination sequence Gal.5.292.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315490](http://oeis.org/A315490) ([L20 program](315/A315490.asm)): Coordination sequence Gal.4.141.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315495](http://oeis.org/A315495) ([L89 program](315/A315495.asm)): Coordination sequence Gal.5.135.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315498](http://oeis.org/A315498) ([L31 program](315/A315498.asm)): Coordination sequence Gal.6.334.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315520](http://oeis.org/A315520) ([L20 program](315/A315520.asm)): Coordination sequence Gal.4.140.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315522](http://oeis.org/A315522) ([L17 program](315/A315522.asm)): Coordination sequence Gal.6.621.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -601,6 +602,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315734](http://oeis.org/A315734) ([L14 program](315/A315734.asm)): Coordination sequence Gal.4.136.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315742](http://oeis.org/A315742) ([L15 program](315/A315742.asm)): Coordination sequence Gal.5.302.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315745](http://oeis.org/A315745) ([L18 program](315/A315745.asm)): Coordination sequence Gal.4.137.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315748](http://oeis.org/A315748) ([L89 program](315/A315748.asm)): Coordination sequence Gal.5.294.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315751](http://oeis.org/A315751) ([L14 program](315/A315751.asm)): Coordination sequence Gal.6.628.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315757](http://oeis.org/A315757) ([L16 program](315/A315757.asm)): Coordination sequence Gal.5.294.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315760](http://oeis.org/A315760) ([L20 program](315/A315760.asm)): Coordination sequence Gal.6.638.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -749,7 +751,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321232](http://oeis.org/A321232) ([L31 program](321/A321232.asm)): Length of n-th term of A321225.
 * [A321237](http://oeis.org/A321237) ([L05 program](321/A321237.asm)): Start with a square of dimension 1 X 1, and repeatedly append along the squares of the previous step squares with half their side length that do not overlap with any prior square; a(n) gives the number of squares appended at n-th step.
 * [A321257](http://oeis.org/A321257) ([L08 program](321/A321257.asm)): Start with an equilateral triangle, and repeatedly append along the triangles of the previous step equilateral triangles with half their side length that do not overlap with any prior triangle; a(n) gives the number of triangles appended at n-th step.
-* [A321324](http://oeis.org/A321324) ([L102 program](321/A321324.asm)): a(n) = (n^2 - c(n)) / 7 + 1 where c(n) = c(-n) = c(n+7) for all n in Z and a(n) = 1 if 0 <= n <=3 except a(1) = 0.
+* [A321324](http://oeis.org/A321324) ([L11 program](321/A321324.asm)): a(n) = (n^2 - c(n)) / 7 + 1 where c(n) = c(-n) = c(n+7) for all n in Z and a(n) = 1 if 0 <= n <=3 except a(1) = 0.
 * [A321341](http://oeis.org/A321341) ([L17 program](321/A321341.asm)): An unbounded sequence which is 1 infinitely often, with the property that for any four consecutive terms the maximum term is the sum of the two minimum terms.
 * [A321358](http://oeis.org/A321358) ([L05 program](321/A321358.asm)): a(n) = (2*4^n + 7)/3.
 * [A321383](http://oeis.org/A321383) ([L34 program](321/A321383.asm)): Numbers k such that the concatenation k21 is a square.
@@ -944,6 +946,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329926](http://oeis.org/A329926) ([L11 program](329/A329926.asm)): Beatty sequence for (8+sqrt(41))/5.
 * [A329938](http://oeis.org/A329938) ([L23 program](329/A329938.asm)): Beatty sequence for sinh x, where csch x + sech x = 1 .
 * [A329939](http://oeis.org/A329939) ([L10 program](329/A329939.asm)): Beatty sequence for cosh x,  where csch x + sech x = 1 .
+* [A329952](http://oeis.org/A329952) ([L69 program](329/A329952.asm)): Numbers k such that binomial(k,3) is divisible by 8.
 * [A329961](http://oeis.org/A329961) ([L22 program](329/A329961.asm)): Beatty sequence for 2 + sin x, where x = least positive solution of 1/(2 + sin x) + 1/(2 + cos x) = 1.
 * [A329962](http://oeis.org/A329962) ([L39 program](329/A329962.asm)): Beatty sequence for 2 + cos x, where x = least positive solution of 1/(2 + sin x) + 1/(2 + cos x) = 1.
 * [A329974](http://oeis.org/A329974) ([L17 program](329/A329974.asm)): Beatty sequence for the real solution x of 1/x + 1/(1+x+x^2) = 1.

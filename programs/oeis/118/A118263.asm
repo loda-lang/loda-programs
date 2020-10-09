@@ -4,13 +4,10 @@
 sub $0,1
 lpb $0,1
   mov $1,$0
-  mov $4,$1
+  mov $3,$1
   mov $1,1
-  add $13,$1
+  add $2,$1
   sub $0,3
 lpe
-mov $1,$4
-mul $0,2
-mov $5,1
-pow $4,$13
-mov $1,$4
+pow $3,$2
+mov $1,$3

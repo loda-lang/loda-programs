@@ -1,4 +1,4 @@
-; A074330: a(n)=sum(k=1,n,2^b(k)) where b(k) denotes the number of 1's in the binary representation of k.
+; A074330: a(n) = Sum_{k=1..n} 2^b(k) where b(k) denotes the number of 1's in the binary representation of k.
 ; 2,4,8,10,14,18,26,28,32,36,44,48,56,64,80,82,86,90,98,102,110,118,134,138,146,154,170,178,194,210,242,244,248,252,260,264,272,280,296,300,308,316,332,340,356,372,404,408,416,424,440,448,464,480,512,520,536
 
 mov $7,$0
