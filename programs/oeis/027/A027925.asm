@@ -1,0 +1,92 @@
+; A027925: a(n) = least k such that E{1,2,...,k} >= 1^3 + 2^3 + ... + n^3, where E = 2nd elementary symmetric function.
+; 1,2,4,5,6,7,8,9,11,12,13,14,15,17,18,19,20,21,23,24,25,26,27,28,30,31,32,33,34,36,37,38,39,40,42,43,44,45,46,47,49,50,51,52,53,55,56,57,58,59,61,62,63,64,65,67,68,69,70,71,72,74,75
+
+mov $9,$0
+add $7,3
+mov $3,$0
+sub $3,$7
+sub $0,$3
+add $4,$0
+mov $5,3
+mov $1,1
+mov $4,$3
+add $5,1
+pow $7,2
+mov $5,2
+sub $5,$4
+sub $4,1
+mov $2,$4
+sub $7,$7
+sub $3,$7
+add $5,1
+mov $6,2
+mov $6,$3
+mul $3,5
+div $5,2
+sub $2,$1
+mov $8,1
+mov $8,1
+trn $1,1
+mov $3,$0
+mov $5,$5
+pow $7,$1
+lpb $0,1
+  add $3,$7
+  mov $1,$3
+  sub $3,$1
+  mov $1,2
+  mov $8,$4
+  mov $1,$8
+  add $6,$2
+  mov $0,$7
+  div $5,18
+  sub $4,5
+  sub $4,$6
+  trn $7,1
+  mov $7,2
+  add $6,$3
+  mov $7,$8
+  mov $3,$3
+  add $2,$7
+  add $3,1
+  add $3,21
+  add $4,1
+  add $1,$3
+  div $0,2
+  add $8,$6
+  sub $4,3
+  mov $3,$6
+  add $6,$1
+  sub $8,2
+  add $3,$4
+  sub $8,$4
+  sub $3,$4
+  mul $6,3
+  mov $8,$3
+  add $1,$0
+  trn $6,$4
+  mov $7,1
+  add $2,$7
+  mov $1,$8
+  add $6,$0
+  add $1,4
+  mov $0,1
+  mov $4,$8
+  mul $1,$6
+  mov $1,2
+  div $6,53
+  add $2,$3
+lpe
+add $2,$4
+mov $5,6
+mul $4,$3
+trn $2,$1
+mul $2,$4
+mov $1,$6
+add $1,1
+mov $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9
+mul $10,$9
