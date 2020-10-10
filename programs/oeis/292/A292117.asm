@@ -1,0 +1,84 @@
+; A292117: Coefficients of a power series f(q) with coefficients +1 or -1 such that Product_{m >= 1} f(q^(2m-1)) = Sum_{m = -oo..oo} q^(m(3m-1)/2).
+; 1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,-1
+
+mov $3,1
+mov $2,$3
+lpb $0,1
+  add $2,1
+  add $5,204
+  add $6,1
+  mov $1,$6
+  mov $1,10
+  mov $1,$3
+  trn $3,$6
+  add $1,5
+  add $7,2
+  mov $2,1
+  mov $4,$1
+  div $4,$5
+  mov $5,$2
+  add $0,2
+  mov $8,121
+  mov $4,$0
+  add $4,$2
+  mov $3,4
+  mov $6,$4
+  add $2,1
+  mov $2,$3
+  div $4,3
+  mov $3,$6
+  mov $3,2
+  mov $1,1
+  mov $8,6
+  div $6,$0
+  mov $3,2
+  add $1,2
+  mul $6,2
+  mov $6,1
+  sub $0,$8
+  sub $6,1
+  add $6,$6
+  sub $8,1
+  sub $4,1
+  sub $3,1
+  sub $2,$4
+  mul $5,2
+  mov $8,$7
+  div $0,2
+  mul $7,$7
+  add $1,$0
+  add $5,1
+  mul $7,16
+  add $8,$4
+  mov $7,$8
+  mov $4,3
+  mov $1,$3
+  add $3,$4
+  sub $1,$8
+  add $3,$7
+  mov $6,1
+  mul $4,2
+  mul $5,$2
+  sub $4,1
+  add $0,1
+  mov $5,1
+  add $7,1
+  add $3,1
+  add $7,10
+  trn $6,$2
+  mul $4,$6
+  add $6,1
+  mov $3,$6
+  add $0,1
+  mov $3,$8
+  add $6,$1
+  sub $7,1
+  sub $4,1
+  mov $5,3
+lpe
+bin $4,$8
+trn $7,1
+trn $5,1
+add $5,$7
+mul $0,8
+mov $1,$4

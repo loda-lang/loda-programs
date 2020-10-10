@@ -1045,7 +1045,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332663](http://oeis.org/A332663) ([L18 program](332/A332663.asm)): Even bisection of A332662: the x-coordinates of an enumeration of N X N.
 * [A332697](http://oeis.org/A332697) ([L40 program](332/A332697.asm)): a(n) = (n^4 + 5*n^3 + 11*n^2 + 7*n)/6.
 * [A332698](http://oeis.org/A332698) ([L42 program](332/A332698.asm)): a(n) = (8*n^3 + 15*n^2 + 13*n)/6.
-* [A332699](http://oeis.org/A332699) ([L33 program](332/A332699.asm)): First row of A332662, also main diagonal of A332667.
+* [A332699](http://oeis.org/A332699) ([L22 program](332/A332699.asm)): First row of A332662, also main diagonal of A332667.
 * [A332756](http://oeis.org/A332756) ([L06 program](332/A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
 * [A332884](http://oeis.org/A332884) ([L06 program](332/A332884.asm)): a(n) = -n^2 + 21*n - 1.
 * [A333183](http://oeis.org/A333183) ([L34 program](333/A333183.asm)): Number of digits in concatenation of first n positive even integers.
@@ -1063,6 +1063,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334320](http://oeis.org/A334320) ([L44 program](334/A334320.asm)): Number of even integers in base n with exactly two distinct digits.
 * [A334387](http://oeis.org/A334387) ([L09 program](334/A334387.asm)): The difference version of the 'Decade transform' : to obtain a(n) write n as a sum of its power-of-ten parts and then continue to calculate the absolute value of the difference between the adjacent parts until a single number remains.
 * [A334413](http://oeis.org/A334413) ([L33 program](334/A334413.asm)): First differences of A101803.
+* [A334415](http://oeis.org/A334415) ([L101 program](334/A334415.asm)): Nearest integer to n*(2-phi), where phi is the golden ratio (A001622).
 * [A334501](http://oeis.org/A334501) ([L32 program](334/A334501.asm)): Eventual period of a single cell in rule 190 cellular automaton in a cyclic universe of width n.
 * [A334563](http://oeis.org/A334563) ([L10 program](334/A334563.asm)): a(n) is the maximum number of 4-cycles possible in an n-vertex planar graph.
 * [A334625](http://oeis.org/A334625) ([L15 program](334/A334625.asm)): Maximal size of a subset T of S = {1,2,...,n} with a cyclic arrangement of T such that any three neighbors can be reordered in an arithmetic progression.
