@@ -3,34 +3,23 @@
 
 mov $22,$0
 mov $24,$0
-add $24,1
 lpb $24,1
   clr $0,22
   sub $24,1
   mov $0,$22
   sub $0,$24
-  add $1,$0
-  div $1,2
   mov $1,$0
   lpb $0,1
     add $1,1
     lpb $0,1
       add $21,1
       sub $0,$21
-      add $3,$1
     lpe
   lpe
   lpb $0,1
-    sub $0,8
-    add $1,1
     mov $0,$7
-    add $1,$2
     pow $1,$0
-    sub $3,1
   lpe
-  mov $3,$0
-  add $1,1
-  sub $1,1
   add $23,$1
 lpe
 mov $1,$23

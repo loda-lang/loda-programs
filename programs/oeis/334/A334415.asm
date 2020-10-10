@@ -1,0 +1,104 @@
+; A334415: Nearest integer to n*(2-phi), where phi is the golden ratio (A001622).
+; 0,0,1,1,2,2,2,3,3,3,4,4,5,5,5,6,6,6,7,7,8,8,8,9,9,10,10,10,11,11,11,12,12,13,13,13,14,14,15,15,15,16,16,16,17,17,18,18,18,19,19,19,20,20,21,21,21,22,22,23,23,23,24,24,24,25,25,26,26,26,27,27
+
+add $5,$0
+mov $3,2
+add $0,1
+add $0,$3
+add $7,6
+mul $5,2
+mov $7,2
+mov $9,$5
+add $5,$5
+mov $2,$5
+mov $7,2
+add $1,1
+sub $1,$2
+div $7,$0
+add $2,$1
+add $0,1
+mov $6,5
+sub $9,1
+mov $2,$5
+clr $3,$1
+clr $2,2
+add $1,$5
+div $5,17
+sub $2,3
+add $4,$2
+trn $0,$5
+mov $8,7
+add $9,4
+mov $4,18
+add $7,1
+mov $3,$5
+lpb $0,1
+  add $10,2
+  mov $1,1
+  mov $2,3
+  add $1,1
+  add $9,6
+  mov $8,$3
+  div $4,2
+  mov $8,$2
+  mul $6,$4
+  sub $6,$0
+  mov $9,2
+  mov $6,$9
+  mov $9,281474976710656
+  sub $9,$9
+  trn $7,$7
+  add $5,5
+  mov $6,1
+  sub $10,$0
+  div $6,$10
+  sub $3,1
+  mov $4,$9
+  mul $0,2
+  mov $0,$4
+  add $3,2
+  sub $0,1
+  sub $5,1
+  pow $0,10
+  add $10,$7
+  add $2,$0
+  add $9,4
+  mul $6,5
+  add $0,1
+  mov $9,$10
+  sub $4,$6
+  div $10,$1
+  mov $2,5
+  mov $7,1
+  mov $1,1
+  sub $9,2
+lpe
+mov $3,$10
+add $0,4
+mov $8,$8
+sub $8,$3
+sub $3,$5
+pow $9,2
+mov $9,$2
+div $4,$8
+add $10,1
+add $10,$3
+mov $8,1
+sub $5,2
+mov $8,1
+mov $1,1
+add $7,1
+trn $3,$10
+mov $10,$6
+mov $0,$3
+sub $1,$6
+mov $0,2
+cmp $4,109
+add $8,$2
+add $8,$8
+div $10,$9
+add $7,1
+add $8,3
+add $10,$6
+sub $0,1
+mov $1,$3
