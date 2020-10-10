@@ -1063,7 +1063,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334320](http://oeis.org/A334320) ([L44 program](334/A334320.asm)): Number of even integers in base n with exactly two distinct digits.
 * [A334387](http://oeis.org/A334387) ([L09 program](334/A334387.asm)): The difference version of the 'Decade transform' : to obtain a(n) write n as a sum of its power-of-ten parts and then continue to calculate the absolute value of the difference between the adjacent parts until a single number remains.
 * [A334413](http://oeis.org/A334413) ([L33 program](334/A334413.asm)): First differences of A101803.
-* [A334415](http://oeis.org/A334415) ([L101 program](334/A334415.asm)): Nearest integer to n*(2-phi), where phi is the golden ratio (A001622).
+* [A334415](http://oeis.org/A334415) ([L17 program](334/A334415.asm)): Nearest integer to n*(2-phi), where phi is the golden ratio (A001622).
 * [A334501](http://oeis.org/A334501) ([L32 program](334/A334501.asm)): Eventual period of a single cell in rule 190 cellular automaton in a cyclic universe of width n.
 * [A334563](http://oeis.org/A334563) ([L10 program](334/A334563.asm)): a(n) is the maximum number of 4-cycles possible in an n-vertex planar graph.
 * [A334625](http://oeis.org/A334625) ([L15 program](334/A334625.asm)): Maximal size of a subset T of S = {1,2,...,n} with a cyclic arrangement of T such that any three neighbors can be reordered in an arithmetic progression.
@@ -1114,6 +1114,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337519](http://oeis.org/A337519) ([L21 program](337/A337519.asm)): Length of the shortest walk in a n X n grid graph that starts in one corner and visits every edge.
 * [A337864](http://oeis.org/A337864) ([L17 program](337/A337864.asm)): Numbers formed by removing from n each digit if it is a duplicate of the previous digit, from left to right.
 * [A337899](http://oeis.org/A337899) ([L11 program](337/A337899.asm)): Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.
+* [A337909](http://oeis.org/A337909) ([L64 program](337/A337909.asm)): Distinct terms of A080079 in the order in which they appear.
 * [A337934](http://oeis.org/A337934) ([L14 program](337/A337934.asm)): Sums of two distinct abundant numbers.
 * [A337957](http://oeis.org/A337957) ([L11 program](337/A337957.asm)): Number of unoriented colorings of the 8 cubic facets of a tesseract or of the 8 vertices of a hyperoctahedron.
 * [A338042](http://oeis.org/A338042) ([L19 program](338/A338042.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of vertices thus created. See Comments for details.
