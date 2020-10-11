@@ -9,24 +9,17 @@ lpb $8,1
   mov $0,$6
   add $0,$8
   sub $0,1
-  sub $2,$0
   lpb $0,1
     lpb $0,1
       mov $2,$0
       add $1,$2
-      add $5,2
-      mov $1,$1
       sub $0,1
     lpe
     mul $1,21
-    div $0,4
   lpe
   add $1,3
   div $1,4
   add $1,1
-  mov $3,$2
-  bin $3,$5
-  sub $0,1
   mov $9,$8
   lpb $9,1
     mov $7,$1
