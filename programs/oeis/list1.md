@@ -1192,7 +1192,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120135](http://oeis.org/A120135) ([L27 program](120/A120135.asm)): a(1)=5; a(n)=floor((11+sum(a(1) to a(n-1)))/2).
 * [A120136](http://oeis.org/A120136) ([L35 program](120/A120136.asm)): a(1)=7; a(n)=floor((14+sum(a(1) to a(n-1)))/2).
 * [A120137](http://oeis.org/A120137) ([L18 program](120/A120137.asm)): a(1)=8; a(n)=floor((17+sum(a(1) to a(n-1)))/2).
-* [A120138](http://oeis.org/A120138) ([L84 program](120/A120138.asm)): a(1)=10; a(n)=floor((20+sum(a(1) to a(n-1)))/2).
+* [A120138](http://oeis.org/A120138) ([L15 program](120/A120138.asm)): a(1)=10; a(n)=floor((20+sum(a(1) to a(n-1)))/2).
 * [A120139](http://oeis.org/A120139) ([L24 program](120/A120139.asm)): a(1)=11; a(n)=floor((23+sum(a(1) to a(n-1)))/2).
 * [A120140](http://oeis.org/A120140) ([L18 program](120/A120140.asm)): a(1)=13; a(n)=floor((26+sum(a(1) to a(n-1)))/2).
 * [A120141](http://oeis.org/A120141) ([L15 program](120/A120141.asm)): a(1)=14; a(n)=floor((29+sum(a(1) to a(n-1)))/2).
@@ -2580,7 +2580,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A138189](http://oeis.org/A138189) ([L19 program](138/A138189.asm)): Sequence built on pattern (1,-even,-even) beginning 1,-2,-2.
 * [A138190](http://oeis.org/A138190) ([L09 program](138/A138190.asm)): Numerator of (n-1)*n*(n+1)/12.
 * [A138191](http://oeis.org/A138191) ([L04 program](138/A138191.asm)): Denominator of (n-1)n(n+1)/12.
-* [A138219](http://oeis.org/A138219) ([L16 program](138/A138219.asm)): Integer volume numbers for n dimensions from Sommervillie recursion formula: k(n)=k(n-1)*Beta[(n+1)/2,1/2].
+* [A138219](http://oeis.org/A138219) ([L11 program](138/A138219.asm)): Integer volume numbers for n dimensions from Sommervillie recursion formula: k(n)=k(n-1)*Beta[(n+1)/2,1/2].
 * [A138229](http://oeis.org/A138229) ([L16 program](138/A138229.asm)): Expansion of (1-x)/(1-2x+6x^2).
 * [A138230](http://oeis.org/A138230) ([L16 program](138/A138230.asm)): Expansion of (1-x)/(1 - 2*x + 4*x^2).
 * [A138251](http://oeis.org/A138251) ([L19 program](138/A138251.asm)): Beatty sequence of the positive root of x^3 - x^2 - 1.
@@ -3358,7 +3358,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154286](http://oeis.org/A154286) ([L04 program](154/A154286.asm)): a(n) = E(k)*C(n+k,k) = Euler(k)*binomial(n+k,k) for k=4.
 * [A154287](http://oeis.org/A154287) ([L31 program](154/A154287.asm)): (L)-sieve transform of {1,4,9,16,...,n^2,...}=A000290.
 * [A154292](http://oeis.org/A154292) ([L16 program](154/A154292.asm)): Integers of the form m*(6*m -+ 1)/2.
-* [A154293](http://oeis.org/A154293) ([L56 program](154/A154293.asm)): Integers of the form t/6, where t is a triangular number (A000217).
+* [A154293](http://oeis.org/A154293) ([L20 program](154/A154293.asm)): Integers of the form t/6, where t is a triangular number (A000217).
 * [A154295](http://oeis.org/A154295) ([L05 program](154/A154295.asm)): a(n) = 81*n^2 - 90*n + 26.
 * [A154322](http://oeis.org/A154322) ([L06 program](154/A154322.asm)): a(n) = 1 + n + binomial(n+3,5).
 * [A154323](http://oeis.org/A154323) ([L05 program](154/A154323.asm)): Central coefficients of number triangle A113582.
@@ -5547,7 +5547,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178804](http://oeis.org/A178804) ([L07 program](178/A178804.asm)): When dealing cards into 3 piles (Left, Center, Right), the number of cards in the n-th card's pile, if dealing in a pattern L, C, R, C, L, C, R, C, L, C, ... [as any thoughtful six-year-old will try to do when sharing a pile of candy among 3 people].
 * [A178815](http://oeis.org/A178815) ([L02 program](178/A178815.asm)): First base of a nonzero Fermat quotient mod the n-th prime.
 * [A178828](http://oeis.org/A178828) ([L24 program](178/A178828.asm)): Partial sums of floor(3^n/10)/2.
-* [A178832](http://oeis.org/A178832) ([L112 program](178/A178832.asm)): Number of minima of the 1-D Griewank function in [-n, n].
+* [A178832](http://oeis.org/A178832) ([L46 program](178/A178832.asm)): Number of minima of the 1-D Griewank function in [-n, n].
 * [A178872](http://oeis.org/A178872) ([L21 program](178/A178872.asm)): Partial sums of round(4^n/7).
 * [A178873](http://oeis.org/A178873) ([L22 program](178/A178873.asm)): Partial sums of round(5^n/7).
 * [A178874](http://oeis.org/A178874) ([L17 program](178/A178874.asm)): Partial sums of round(5^n/8).
@@ -6621,7 +6621,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193766](http://oeis.org/A193766) ([L04 program](193/A193766.asm)): The number of dominoes in a largest saturated domino covering of the 3 by n board.
 * [A193767](http://oeis.org/A193767) ([L11 program](193/A193767.asm)): The number of dominoes in a largest saturated domino covering of the 4 by n board.
 * [A193768](http://oeis.org/A193768) ([L12 program](193/A193768.asm)): The domination number of the 4 by n board.
-* [A193828](http://oeis.org/A193828) ([L55 program](193/A193828.asm)): Even generalized pentagonal numbers.
+* [A193828](http://oeis.org/A193828) ([L19 program](193/A193828.asm)): Even generalized pentagonal numbers.
 * [A193832](http://oeis.org/A193832) ([L13 program](193/A193832.asm)): Irregular triangle read by rows in which row n lists 2n-1 copies of 2n-1 and n copies of 2n, for n >= 1.
 * [A193866](http://oeis.org/A193866) ([L20 program](193/A193866.asm)): Even pentagonal numbers divided by 2.
 * [A193867](http://oeis.org/A193867) ([L17 program](193/A193867.asm)): Odd central polygonal numbers.
@@ -6981,6 +6981,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199572](http://oeis.org/A199572) ([L06 program](199/A199572.asm)): Number of round trips of length n on the cycle graph C_2 from any of the two vertices.
 * [A199573](http://oeis.org/A199573) ([L10 program](199/A199573.asm)): Number of round trips of length n from any of the four vertices of the cycle graph C_4.
 * [A199705](http://oeis.org/A199705) ([L13 program](199/A199705.asm)): Number of -n..n arrays x(0..2) of 3 elements with zero sum and no two neighbors equal.
+* [A199769](http://oeis.org/A199769) ([L84 program](199/A199769.asm)): Number of brackets in distinct sets with fewest possible elements
 * [A199771](http://oeis.org/A199771) ([L17 program](199/A199771.asm)): Row sums of the triangle in A199332.
 * [A199833](http://oeis.org/A199833) ([L04 program](199/A199833.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two neighbors summing to zero
 * [A199848](http://oeis.org/A199848) ([L66 program](199/A199848.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum and no element more than one greater than the previous.

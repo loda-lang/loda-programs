@@ -55,7 +55,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A202051](http://oeis.org/A202051) ([L18 program](202/A202051.asm)): Number of (n+2) X 9 binary arrays avoiding patterns 001 and 110 in rows and columns.
 * [A202107](http://oeis.org/A202107) ([L09 program](202/A202107.asm)): n^4*(n+1)^4/8.
 * [A202109](http://oeis.org/A202109) ([L12 program](202/A202109.asm)): n^3*(n+1)^3*(n+2)^3/72.
-* [A202141](http://oeis.org/A202141) ([L11 program](202/A202141.asm)): a(n) = 13*n^2 - 16*n + 5.
+* [A202141](http://oeis.org/A202141) ([L08 program](202/A202141.asm)): a(n) = 13*n^2 - 16*n + 5.
 * [A202195](http://oeis.org/A202195) ([L08 program](202/A202195.asm)): Number of (n+2) X 3 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202196](http://oeis.org/A202196) ([L19 program](202/A202196.asm)): Number of (n+2) X 4 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202197](http://oeis.org/A202197) ([L19 program](202/A202197.asm)): Number of (n+2) X 5 binary arrays avoiding patterns 001 and 101 in rows and columns.
@@ -3283,7 +3283,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280429](http://oeis.org/A280429) ([L10 program](280/A280429.asm)): Longest word T from a string S using no breakpoint-reuse.
 * [A280510](http://oeis.org/A280510) ([L10 program](280/A280510.asm)): Index sequence of the Thue-Morse sequence (A010060) as a block-fractal sequence.
 * [A280511](http://oeis.org/A280511) ([L07 program](280/A280511.asm)): Index sequence of the block-fractal sequence A001468.
-* [A280512](http://oeis.org/A280512) ([L103 program](280/A280512.asm)): Index sequence of the Thue-Morse sequence (A010060, using offset 1) as a reverse block-fractal sequence.
+* [A280512](http://oeis.org/A280512) ([L14 program](280/A280512.asm)): Index sequence of the Thue-Morse sequence (A010060, using offset 1) as a reverse block-fractal sequence.
 * [A280523](http://oeis.org/A280523) ([L08 program](280/A280523.asm)): a(n) = Fibonacci(2n + 1) - n.
 * [A280560](http://oeis.org/A280560) ([L16 program](280/A280560.asm)): a(n) = (-1)^n * 2 if n!=0, with a(0) = 1.
 * [A280658](http://oeis.org/A280658) ([L16 program](280/A280658.asm)): Numbers ending with their digital root in decimal representation.
@@ -3464,7 +3464,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286808](http://oeis.org/A286808) ([L12 program](286/A286808.asm)): Positions of 0 in A286807; complement of A286809.
 * [A286809](http://oeis.org/A286809) ([L10 program](286/A286809.asm)): Positions of 1 in A286807; complement of A286808.
 * [A286810](http://oeis.org/A286810) ([L13 program](286/A286810.asm)): Number of non-attacking bishop positions on a cylindrical 2 X 2n chessboard.
-* [A286812](http://oeis.org/A286812) ([L10 program](286/A286812.asm)): a(n) = 105 - 2^n.
+* [A286812](http://oeis.org/A286812) ([L06 program](286/A286812.asm)): a(n) = 105 - 2^n.
 * [A286814](http://oeis.org/A286814) ([L18 program](286/A286814.asm)): Number of matchings in the n-helm graph.
 * [A286863](http://oeis.org/A286863) ([L15 program](286/A286863.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 814", based on the 5-celled von Neumann neighborhood.
 * [A286905](http://oeis.org/A286905) ([L56 program](286/A286905.asm)): Positions of 1 in A286903; complement of A286904.
@@ -3897,7 +3897,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298267](http://oeis.org/A298267) ([L06 program](298/A298267.asm)): a(n) is the maximum number of heptiamonds in a hexagon of order n.
 * [A298360](http://oeis.org/A298360) ([L25 program](298/A298360.asm)): Numbers congruent to {3, 7, 13, 27} mod 30.
 * [A298364](http://oeis.org/A298364) ([L21 program](298/A298364.asm)): Permutation of the natural numbers partitioned into quadruples [4k-2, 4k-1, 4k-3, 4k] for k > 0.
-* [A298397](http://oeis.org/A298397) ([L84 program](298/A298397.asm)): Pentagonal numbers divisible by 4.
+* [A298397](http://oeis.org/A298397) ([L21 program](298/A298397.asm)): Pentagonal numbers divisible by 4.
 * [A298474](http://oeis.org/A298474) ([L32 program](298/A298474.asm)): a(n) is the least k such that A090701(k) = n.
 * [A298720](http://oeis.org/A298720) ([L20 program](298/A298720.asm)): EBCDIC codes for lower case letters.
 * [A298728](http://oeis.org/A298728) ([L15 program](298/A298728.asm)): EBCDIC codes for upper case letters.
