@@ -353,7 +353,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309686](http://oeis.org/A309686) ([L23 program](309/A309686.asm)): Sum of the even parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309687](http://oeis.org/A309687) ([L12 program](309/A309687.asm)): Number of odd parts appearing among the second largest parts of the partitions of n into 3 parts.
 * [A309689](http://oeis.org/A309689) ([L19 program](309/A309689.asm)): Number of even parts appearing among the second largest parts of the partitions of n into 3 parts.
-* [A309715](http://oeis.org/A309715) ([L21 program](309/A309715.asm)): Number of even parts appearing among the third largest parts of the partitions of n into 4 parts.
+* [A309715](http://oeis.org/A309715) ([L18 program](309/A309715.asm)): Number of even parts appearing among the third largest parts of the partitions of n into 4 parts.
 * [A309779](http://oeis.org/A309779) ([L03 program](309/A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
 * [A309805](http://oeis.org/A309805) ([L18 program](309/A309805.asm)): Maximum number of nonattacking kings placeable on a hexagonal board with edge-length n in Glinski's hexagonal chess.
 * [A309842](http://oeis.org/A309842) ([L05 program](309/A309842.asm)): a(n) is the total surface area of a hollow cubic block (defined as a block with a shell thickness of 1 cube) where n is the edge length of the removed volume.
@@ -695,6 +695,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318919](http://oeis.org/A318919) ([L16 program](318/A318919.asm)): Define b(0)=0, b(1)[1]=1, b(1)[2]=1; and for n>=2, b(n)[1] = total number of digits in b(n-1), and b(n)[2] = total number of digits in b(0),...,b(n-1); a(n) = b(n)[2].
 * [A318934](http://oeis.org/A318934) ([L24 program](318/A318934.asm)): Numbers whose binary expansion begins with exactly two 1's.
 * [A318935](http://oeis.org/A318935) ([L08 program](318/A318935.asm)): a(n) = Sum_{2^m divides n} 2^(3*m).
+* [A318972](http://oeis.org/A318972) ([L103 program](318/A318972.asm)): The 7x+-1 function ("shortcut" definition): a(n) = (7n+1)/4 if n == +1 (mod 4), a(n) = (7n-1)/4 if n == -1 (mod 4), otherwise a(n) = n/2.
 * [A319006](http://oeis.org/A319006) ([L13 program](319/A319006.asm)): Sum of the next n positive integers repeated (A008619).
 * [A319007](http://oeis.org/A319007) ([L12 program](319/A319007.asm)): Sum of the next n nonnegative integers repeated (A004526).
 * [A319116](http://oeis.org/A319116) ([L17 program](319/A319116.asm)): Signs of the Maclaurin coefficients of 1/(exp(x) + Pi/2).
@@ -805,7 +806,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323294](http://oeis.org/A323294) ([L41 program](323/A323294.asm)): Number of 3-uniform hypergraphs spanning n labeled vertices where every two edges have two vertices in common.
 * [A323397](http://oeis.org/A323397) ([L13 program](323/A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323467](http://oeis.org/A323467) ([L09 program](323/A323467.asm)): Smallest number in row n of A323465.
-* [A323608](http://oeis.org/A323608) ([L38 program](323/A323608.asm)): The position function the fractalization of which yields A323607.
+* [A323608](http://oeis.org/A323608) ([L30 program](323/A323608.asm)): The position function the fractalization of which yields A323607.
 * [A323610](http://oeis.org/A323610) ([L05 program](323/A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
 * [A323614](http://oeis.org/A323614) ([L06 program](323/A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
 * [A323629](http://oeis.org/A323629) ([L16 program](323/A323629.asm)): List of 6-powerful numbers (for the definition of k-powerful see A323395).
@@ -993,6 +994,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330285](http://oeis.org/A330285) ([L52 program](330/A330285.asm)): The maximum number of arithmetic progressions for a sequence of length n.
 * [A330298](http://oeis.org/A330298) ([L12 program](330/A330298.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 2 even numbers.
 * [A330357](http://oeis.org/A330357) ([L04 program](330/A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
+* [A330393](http://oeis.org/A330393) ([L14 program](330/A330393.asm)): A 2-regular sequence whose reciprocal is not 2-regular.
 * [A330395](http://oeis.org/A330395) ([L38 program](330/A330395.asm)): Number of non-trivial equivalence classes of S_n under the {1234,3412} pattern-replacement equivalence.
 * [A330396](http://oeis.org/A330396) ([L07 program](330/A330396.asm)): Permutation of the nonnegative integers partitioned into triples [3*k+2, 3*k+1, 3*k] for k >= 0.
 * [A330451](http://oeis.org/A330451) ([L04 program](330/A330451.asm)): a(n) = a(n-3) + 20*n - 30 for n > 2, with a(0)=0, a(1)=3, a(2)=13.
@@ -1051,6 +1053,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332756](http://oeis.org/A332756) ([L06 program](332/A332756.asm)): A loop sequence within Pi. Let a(1) = 19. For n > 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
 * [A332884](http://oeis.org/A332884) ([L06 program](332/A332884.asm)): a(n) = -n^2 + 21*n - 1.
 * [A333183](http://oeis.org/A333183) ([L34 program](333/A333183.asm)): Number of digits in concatenation of first n positive even integers.
+* [A333251](http://oeis.org/A333251) ([L24 program](333/A333251.asm)): Tropical version of Somos-5 sequence A006721.
 * [A333319](http://oeis.org/A333319) ([L10 program](333/A333319.asm)): a(n) is the number of subsets of {1..n} that contain exactly 3 odd and 1 even numbers.
 * [A333320](http://oeis.org/A333320) ([L06 program](333/A333320.asm)): a(n) is the number of subsets of {1..n} that contain exactly 4 odd and 1 even numbers.
 * [A333321](http://oeis.org/A333321) ([L08 program](333/A333321.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 4 even numbers.

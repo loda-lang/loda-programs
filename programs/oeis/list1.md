@@ -546,6 +546,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108195](http://oeis.org/A108195) ([L04 program](108/A108195.asm)): a(n) = n^2 + 5*n - 1.
 * [A108211](http://oeis.org/A108211) ([L05 program](108/A108211.asm)): a(n) = 16*n^2 + 1.
 * [A108213](http://oeis.org/A108213) ([L21 program](108/A108213.asm)): a(0)=44; if n odd, a(n) = a(n-1)/2, otherwise a(n) = 4*a(n-1).
+* [A108229](http://oeis.org/A108229) ([L27 program](108/A108229.asm)): n occurs Lucas number L(n) times (A000204).
 * [A108261](http://oeis.org/A108261) ([L16 program](108/A108261.asm)): 2nd order recursive series having the property that the product of any two adjacent terms is a triangular number, T(b) = b(b+1)/2 where b equals term a(n) of related series A108262.
 * [A108262](http://oeis.org/A108262) ([L12 program](108/A108262.asm)): Second order recursive series having the property that the product of any two adjacent terms equals 4 times a triangular number. That is a(n)*a(n+1)= 4*T(c) = 2c(c+1), where c = the term a(n+1) of related series A108261.
 * [A108300](http://oeis.org/A108300) ([L10 program](108/A108300.asm)): a(n+2) = 3*a(n+1) + a(n), a(0) = 1, a(1) = 5.
@@ -3348,6 +3349,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154262](http://oeis.org/A154262) ([L06 program](154/A154262.asm)): a(n) = 9*n^2 - 10*n + 3.
 * [A154266](http://oeis.org/A154266) ([L03 program](154/A154266.asm)): a(n) = 27*n + 12.
 * [A154267](http://oeis.org/A154267) ([L03 program](154/A154267.asm)): a(n) = 27*n + 15.
+* [A154269](http://oeis.org/A154269) ([L81 program](154/A154269.asm)): Dirichlet inverse of A019590; Fully multiplicative with a(2^e) = (-1)^e, a(p^e) = 0 for odd primes p.
 * [A154272](http://oeis.org/A154272) ([L04 program](154/A154272.asm)): 1,0,1 followed by 0,0,0...
 * [A154277](http://oeis.org/A154277) ([L05 program](154/A154277.asm)): a(n) = 81*n^2 - 72*n + 17.
 * [A154281](http://oeis.org/A154281) ([L03 program](154/A154281.asm)): 1,0,0,1 followed by 0,0,0...
@@ -4030,7 +4032,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A159290](http://oeis.org/A159290) ([L07 program](159/A159290.asm)): A generalized Jacobsthal sequence.
 * [A159325](http://oeis.org/A159325) ([L16 program](159/A159325.asm)): Median number of comparisons used by insertion sort on n (distinct) elements.
 * [A159328](http://oeis.org/A159328) ([L09 program](159/A159328.asm)): Transform of 1 by the T_{1,1} transformation (see link)
-* [A159333](http://oeis.org/A159333) ([L10 program](159/A159333.asm)): Roman factorial of n.
+* [A159333](http://oeis.org/A159333) ([L08 program](159/A159333.asm)): Roman factorial of n.
 * [A159347](http://oeis.org/A159347) ([L14 program](159/A159347.asm)): Transform of the finite sequence (1, 0, -1) by the T_{0,0} transformation.
 * [A159355](http://oeis.org/A159355) ([L10 program](159/A159355.asm)): Number of n X n arrays of squares of integers summing to 4.
 * [A159465](http://oeis.org/A159465) ([L50 program](159/A159465.asm)): Sums of odd numbers, omitting squares.
@@ -4083,6 +4085,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160250](http://oeis.org/A160250) ([L13 program](160/A160250.asm)): a(n) = 64*n^3 - 168*n^2 + 148*n - 43.
 * [A160372](http://oeis.org/A160372) ([L10 program](160/A160372.asm)): The 4-tuple (2, ((2*n+1)^2-1)/2, (2*n+3)^2-1)/2, a(n)}, where a(n)=4(3+20n+42n^2+32n^3+8n^4), has Diophantus' property that the product of any two distinct terms plus one is a square.
 * [A160378](http://oeis.org/A160378) ([L09 program](160/A160378.asm)): a(n) = n^3 - n*(n+1)/2.
+* [A160382](http://oeis.org/A160382) ([L19 program](160/A160382.asm)): Number of 2's in base-4 representation of n.
+* [A160383](http://oeis.org/A160383) ([L17 program](160/A160383.asm)): Number of 3's in base-4 representation of n.
 * [A160384](http://oeis.org/A160384) ([L09 program](160/A160384.asm)): Number of nonzero digits in the base-3 representation of n.
 * [A160413](http://oeis.org/A160413) ([L24 program](160/A160413.asm)): a(n) = A160411(n+1)/4.
 * [A160429](http://oeis.org/A160429) ([L20 program](160/A160429.asm)): First differences of A160428.

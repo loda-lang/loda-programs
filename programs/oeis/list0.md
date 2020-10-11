@@ -1455,11 +1455,15 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014017](http://oeis.org/A014017) ([L15 program](014/A014017.asm)): Inverse of 8th cyclotomic polynomial.
 * [A014018](http://oeis.org/A014018) ([L14 program](014/A014018.asm)): Inverse of 9th cyclotomic polynomial.
 * [A014020](http://oeis.org/A014020) ([L07 program](014/A014020.asm)): Inverse of 11th cyclotomic polynomial.
+* [A014021](http://oeis.org/A014021) ([L16 program](014/A014021.asm)): Inverse of 12th cyclotomic polynomial.
 * [A014022](http://oeis.org/A014022) ([L07 program](014/A014022.asm)): Inverse of 13th cyclotomic polynomial.
 * [A014025](http://oeis.org/A014025) ([L14 program](014/A014025.asm)): Expansion of the inverse of the 16th cyclotomic polynomial.
 * [A014026](http://oeis.org/A014026) ([L14 program](014/A014026.asm)): Inverse of 17th cyclotomic polynomial.
+* [A014027](http://oeis.org/A014027) ([L16 program](014/A014027.asm)): Inverse of 18th cyclotomic polynomial.
 * [A014028](http://oeis.org/A014028) ([L07 program](014/A014028.asm)): Inverse of 19th cyclotomic polynomial.
+* [A014033](http://oeis.org/A014033) ([L16 program](014/A014033.asm)): Inverse of 24th cyclotomic polynomial.
 * [A014041](http://oeis.org/A014041) ([L06 program](014/A014041.asm)): Inverse of 32nd cyclotomic polynomial.
+* [A014045](http://oeis.org/A014045) ([L16 program](014/A014045.asm)): Inverse of 36th cyclotomic polynomial.
 * [A014105](http://oeis.org/A014105) ([L04 program](014/A014105.asm)): Second hexagonal numbers: a(n) = n*(2*n + 1).
 * [A014106](http://oeis.org/A014106) ([L04 program](014/A014106.asm)): a(n) = n*(2*n + 3).
 * [A014107](http://oeis.org/A014107) ([L04 program](014/A014107.asm)): a(n) = n*(2*n-3).
@@ -3954,7 +3958,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044457](http://oeis.org/A044457) ([L08 program](044/A044457.asm)): Numbers n such that string 3,3 occurs in the base 4 representation of n but not of n+1.
 * [A044470](http://oeis.org/A044470) ([L18 program](044/A044470.asm)): Numbers n such that string 2,2 occurs in the base 5 representation of n but not of n+1.
 * [A044476](http://oeis.org/A044476) ([L22 program](044/A044476.asm)): Numbers n such that string 3,3 occurs in the base 5 representation of n but not of n+1.
-* [A044504](http://oeis.org/A044504) ([L108 program](044/A044504.asm)): Numbers n such that string 3,3 occurs in the base 6 representation of n but not of n+1.
+* [A044504](http://oeis.org/A044504) ([L17 program](044/A044504.asm)): Numbers n such that string 3,3 occurs in the base 6 representation of n but not of n+1.
 * [A044519](http://oeis.org/A044519) ([L09 program](044/A044519.asm)): Numbers n such that string 0,0 occurs in the base 7 representation of n but not of n+1.
 * [A044526](http://oeis.org/A044526) ([L07 program](044/A044526.asm)): Numbers n such that string 1,0 occurs in the base 7 representation of n but not of n+1.
 * [A044543](http://oeis.org/A044543) ([L11 program](044/A044543.asm)): Numbers n such that string 3,3 occurs in the base 7 representation of n but not of n+1.
@@ -5387,6 +5391,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059859](http://oeis.org/A059859) ([L17 program](059/A059859.asm)): Sum of squares of first n quarter-squares (A002620).
 * [A059860](http://oeis.org/A059860) ([L08 program](059/A059860.asm)): a(n) = binomial(n+1, 2)^5.
 * [A059893](http://oeis.org/A059893) ([L18 program](059/A059893.asm)): Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
+* [A059894](http://oeis.org/A059894) ([L66 program](059/A059894.asm)): Complement and reverse the order of all but the most significant bit in binary expansion of n. n = 1ab..yz -> 1ZY..BA = a(n), where A = 1-a, B = 1-b, ... .
 * [A059924](http://oeis.org/A059924) ([L27 program](059/A059924.asm)): Write the numbers from 1 to n^2 in a spiraling square; a(n) is the total of the sums of the two diagonals.
 * [A059937](http://oeis.org/A059937) ([L15 program](059/A059937.asm)): Sum of binary numbers with n 1's and two (possibly leading) 0's.
 * [A059938](http://oeis.org/A059938) ([L12 program](059/A059938.asm)): Sum of binary numbers with n 1's and two (non-leading) 0's.
@@ -5402,6 +5407,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060008](http://oeis.org/A060008) ([L03 program](060/A060008.asm)): a(n) = 9*binomial(n,4) = 3n*(n-1)*(n-2)*(n-3)/8.
 * [A060013](http://oeis.org/A060013) ([L19 program](060/A060013.asm)): New record highs reached in A060000.
 * [A060018](http://oeis.org/A060018) ([L07 program](060/A060018.asm)): a(n) = floor(2*sqrt(n-2)).
+* [A060022](http://oeis.org/A060022) ([L13 program](060/A060022.asm)): Expansion of (1-x-x^N)/((1-x)(1-x^2)(1-x^3)...(1-x^N)) for N = 3.
 * [A060091](http://oeis.org/A060091) ([L30 program](060/A060091.asm)): Number of 4-block ordered bicoverings of an unlabeled n-set.
 * [A060106](http://oeis.org/A060106) ([L05 program](060/A060106.asm)): Numbers that are congruent to {1, 4, 6, 9, 11} mod 12. The Ebony keys on a piano, start with A0 = the 0th key.
 * [A060107](http://oeis.org/A060107) ([L06 program](060/A060107.asm)): Numbers that are congruent to {0, 2, 3, 5, 7, 8, 10} mod 12. The ivory keys on a piano, start with A0 = the 0th key.
@@ -5443,7 +5449,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060548](http://oeis.org/A060548) ([L15 program](060/A060548.asm)): a(n) is the number of D3-symmetric patterns that may be formed with a top-down equilateral triangular arrangement of closely packed black and white cells satisfying the local matching rule of Pascal's triangle modulo 2, where n is the number of cells in each edge of the arrangement. The matching rule is such that any elementary top-down triangle of three neighboring cells in the arrangement contains either one or three white cells.
 * [A060557](http://oeis.org/A060557) ([L20 program](060/A060557.asm)): Row sums of triangle A060556.
 * [A060566](http://oeis.org/A060566) ([L11 program](060/A060566.asm)): a(n) = n^2 - 79*n + 1601.
-* [A060572](http://oeis.org/A060572) ([L29 program](060/A060572.asm)): Tower of Hanoi: the optimal way to move an even number of disks from peg 0 to peg 2 or an odd number from peg 0 to peg 1 is on move n to move disk A001511 from peg A060571 to peg A060572 (here).
+* [A060572](http://oeis.org/A060572) ([L10 program](060/A060572.asm)): Tower of Hanoi: the optimal way to move an even number of disks from peg 0 to peg 2 or an odd number from peg 0 to peg 1 is on move n to move disk A001511 from peg A060571 to peg A060572 (here).
 * [A060576](http://oeis.org/A060576) ([L02 program](060/A060576.asm)): Number of homeomorphically irreducible general graphs on 1 labeled node and with n edges.
 * [A060577](http://oeis.org/A060577) ([L12 program](060/A060577.asm)): Number of homeomorphically irreducible general graphs on 2 labeled nodes and with n edges.
 * [A060584](http://oeis.org/A060584) ([L07 program](060/A060584.asm)): Compare ultimate and penultimate digits of n base 3, i.e., 0 if n mod 3 = floor(n/3) mod 3, 1 otherwise; also 0 if (n mod 9) is a multiple of 4, 1 otherwise.
@@ -7521,6 +7527,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087056](http://oeis.org/A087056) ([L13 program](087/A087056.asm)): Difference between 2 * n^2 and the next smaller square number.
 * [A087057](http://oeis.org/A087057) ([L23 program](087/A087057.asm)): Smallest number whose square is larger than 2*n^2.
 * [A087058](http://oeis.org/A087058) ([L11 program](087/A087058.asm)): Smallest square number greater than 2*n^2.
+* [A087067](http://oeis.org/A087067) ([L18 program](087/A087067.asm)): Incorrect version of A004128.
 * [A087069](http://oeis.org/A087069) ([L04 program](087/A087069.asm)): a(n) = Sum_{k >= 0} floor(n/(4^k)).
 * [A087076](http://oeis.org/A087076) ([L11 program](087/A087076.asm)): Sums of the squares of the elements in the subsets of the integers 1 to n.
 * [A087088](http://oeis.org/A087088) ([L40 program](087/A087088.asm)): Positive ruler-type fractal sequence with 1's in every third position.

@@ -3,10 +3,8 @@
 
 add $0,1
 log $0,2
-mov $1,6535
-lpb $0,1
-  div $0,2
-  mul $0,2
-  div $1,3
-lpe
-div $1,6535
+mod $0,2
+sub $0,3
+mov $1,3
+sub $1,$0
+sub $1,5

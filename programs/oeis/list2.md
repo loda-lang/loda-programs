@@ -1256,7 +1256,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230748](http://oeis.org/A230748) ([L15 program](230/A230748.asm)): Duplicate of A078607.
 * [A230864](http://oeis.org/A230864) ([L23 program](230/A230864.asm)): log2*(n) (version 3): number of iterations log_2(log_2(log_2(...(n)...))) required for the result to be <= 1.
 * [A230865](http://oeis.org/A230865) ([L17 program](230/A230865.asm)): a(n) = n + (sum of digits in base-5 representation of n).
-* [A230877](http://oeis.org/A230877) ([L62 program](230/A230877.asm)): If n = Sum_{i=0..m} c(i)*2^i, c(i) = 0 or 1, then a(n) = Sum_{i=0..m} (m+1-i)*c(i).
+* [A230877](http://oeis.org/A230877) ([L16 program](230/A230877.asm)): If n = Sum_{i=0..m} c(i)*2^i, c(i) = 0 or 1, then a(n) = Sum_{i=0..m} (m+1-i)*c(i).
 * [A230928](http://oeis.org/A230928) ([L21 program](230/A230928.asm)): Number of black-square subarrays of (n+2) X (1+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
 * [A230929](http://oeis.org/A230929) ([L09 program](230/A230929.asm)): Number of black-square subarrays of (n+2) X (2+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
 * [A230980](http://oeis.org/A230980) ([L26 program](230/A230980.asm)): Number of primes <= n, starting at n=0.
@@ -1506,6 +1506,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240134](http://oeis.org/A240134) ([L11 program](240/A240134.asm)): Numerator of (n-1) * ceiling(n/2) / n.
 * [A240137](http://oeis.org/A240137) ([L13 program](240/A240137.asm)): Sum of n consecutive cubes starting from n^3.
 * [A240277](http://oeis.org/A240277) ([L13 program](240/A240277.asm)): Minimal number of people such that exactly n days are required to spread gossip.
+* [A240355](http://oeis.org/A240355) ([L16 program](240/A240355.asm)): Inverse of 72nd cyclotomic polynomial.
 * [A240434](http://oeis.org/A240434) ([L13 program](240/A240434.asm)): Binomial transform of the sum of the first n even squares (A002492).
 * [A240438](http://oeis.org/A240438) ([L08 program](240/A240438.asm)): Greatest minimal difference between numbers of adjacent cells in a regular hexagonal honeycomb of order n with cells numbered from 1 through the total number of cells, the order n corresponding to the number of cells on one side of the honeycomb.
 * [A240440](http://oeis.org/A240440) ([L04 program](240/A240440.asm)): Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
@@ -2866,6 +2867,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271478](http://oeis.org/A271478) ([L13 program](271/A271478.asm)): If n is even, a(n)=n/2, otherwise 2*n+2.
 * [A271479](http://oeis.org/A271479) ([L11 program](271/A271479.asm)): Number of steps for the trajectory of n under the map k -> A271478(k) to reach 1.
 * [A271508](http://oeis.org/A271508) ([L15 program](271/A271508.asm)): Numbers that are congruent to {1,4} mod 10.
+* [A271519](http://oeis.org/A271519) ([L13 program](271/A271519.asm)): Let n = (2*i + 1)*2^j; then a(n) = i + j.
 * [A271535](http://oeis.org/A271535) ([L17 program](271/A271535.asm)): a(n) = ( n*(n + 1)*(2*n + 1)/6 )^2.
 * [A271572](http://oeis.org/A271572) ([L09 program](271/A271572.asm)): a(n) = n^7 mod 32.
 * [A271578](http://oeis.org/A271578) ([L21 program](271/A271578.asm)): Magic sums of 4 X 4 magic squares composed of primes.

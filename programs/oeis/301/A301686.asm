@@ -1,0 +1,111 @@
+; A301686: Coordination sequence for node of type V1 in "krh" 2-D tiling (or net).
+; 1,5,7,14,17,19,28,29,31,42,41,43,56,53,55,70,65,67,84,77,79,98,89,91,112,101,103,126,113,115,140,125,127,154,137,139,168,149,151,182,161,163,196,173,175,210,185,187,224,197,199,238,209,211,252,221,223
+
+mov $12,$0
+mov $14,2
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  add $0,$14
+  sub $0,1
+  mov $9,$0
+  add $0,1
+  add $2,$0
+  add $7,1
+  div $0,$7
+  div $0,3
+  sub $2,$7
+  sub $0,$2
+  sub $2,$0
+  sub $2,$0
+  add $5,1
+  div $0,2
+  mov $7,$0
+  add $5,9
+  mov $0,$5
+  mov $8,$0
+  add $1,$8
+  mul $1,3
+  mov $4,2
+  pow $7,2
+  lpb $0,1
+    div $4,5
+    mov $2,$2
+    mov $7,$5
+    mov $2,$5
+    mov $8,$8
+    sub $2,$7
+    add $7,4
+    sub $1,$4
+    div $5,2
+    mul $4,$8
+    div $0,2
+    mov $4,1
+    sub $8,2
+    add $0,$7
+    mov $0,$8
+    trn $5,$8
+    mov $0,$8
+    sub $0,3
+    mov $2,4
+    mul $8,2
+    add $2,$4
+    trn $1,2
+    add $6,$5
+    mov $3,8
+    mov $3,1
+    add $1,1
+    sub $6,$3
+    pow $8,2
+    add $3,$1
+    add $0,$1
+  lpe
+  sub $2,$3
+  trn $1,5
+  mod $6,2
+  sub $1,$8
+  sub $0,2
+  mul $1,2
+  add $7,$4
+  mov $0,2
+  trn $0,$2
+  mov $5,$0
+  sub $8,$1
+  add $0,$8
+  add $1,2
+  mov $0,$7
+  mov $1,2
+  sub $5,$3
+  sub $1,3
+  sub $8,1
+  mul $4,$3
+  mov $3,2
+  add $2,$0
+  mov $4,$7
+  sub $3,$2
+  sub $3,$4
+  add $4,$1
+  mul $3,6
+  mov $5,1
+  sub $0,1
+  mul $0,6
+  mov $1,$2
+  sub $1,1
+  mov $10,$9
+  mul $10,$9
+  mov $11,$10
+  mul $11,2
+  add $1,$11
+  mul $10,$9
+  mov $15,$14
+  lpb $15,1
+    mov $13,$1
+    sub $15,1
+  lpe
+lpe
+lpb $12,1
+  sub $13,$1
+  mov $12,0
+lpe
+mov $1,$13
