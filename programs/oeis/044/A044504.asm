@@ -1,111 +1,20 @@
 ; A044504: Numbers n such that string 3,3 occurs in the base 6 representation of n but not of n+1.
 ; 21,57,93,131,165,201,237,273,309,347,381,417,453,489,525,563,597,633,669,705,741,791,813,849,885,921,957,995,1029,1065,1101,1137,1173,1211,1245,1281,1317,1353,1389,1427,1461,1497,1533,1569,1605,1643,1677,1713
 
-mov $11,$0
-add $2,$0
-mov $6,3
-add $3,1
-mov $5,1
-mov $9,1
-add $3,1
-gcd $6,8
-add $4,1
-mov $9,$0
-add $4,2
-mov $8,$5
-add $8,1
-sub $8,$6
-mov $1,$0
-add $7,$6
-trn $2,2
-add $5,6
-add $0,$4
-add $7,2
-bin $8,2
+mov $5,$0
+mov $3,$0
+add $0,3
 gcd $0,6
-mov $2,1
-add $3,1
-sub $7,38
-mov $3,81
-mov $1,$8
 lpb $0,1
-  mov $10,$0
-  mov $2,$6
-  add $8,$10
-  mov $2,$6
-  mov $10,1
-  mul $2,6
-  mov $8,20
-  add $5,$9
-  sub $8,$1
-  mov $5,1
   mov $2,7
-  mov $5,$0
-  mul $3,$8
-  add $4,7
-  sub $10,$10
-  add $4,1
-  sub $6,$7
-  log $3,3
-  mov $6,1
   div $0,2
-  sub $10,1
-  add $8,6
-  trn $1,$10
-  gcd $9,$2
-  mul $10,2
-  mov $8,$9
+  gcd $3,$2
   sub $0,4
-  div $2,$10
-  mov $10,36
-  sub $1,$3
-  add $2,$9
-  mov $8,$3
-  mov $1,$7
-  mul $3,$5
-  log $8,4
-  mov $6,1
-  mul $1,$2
-  mov $1,$9
-  mov $10,$5
+  mov $1,$3
 lpe
-add $0,4
-trn $8,1
-add $3,$1
-mul $7,2
-add $6,$6
-sub $7,1
-mov $10,$10
-mov $6,$9
-add $9,$10
-add $8,$10
-add $2,8
-mov $4,$7
-cmp $6,$1
-add $3,$2
-div $9,2
-mod $7,6
-mov $3,1
-add $6,2
-sub $7,$0
-add $3,$1
-div $2,2
-mov $6,1
-mov $4,1
-mov $5,$8
 mul $1,2
-mov $7,8
-sub $9,2
-sub $4,1
-sub $3,$5
-add $8,$2
-add $8,1
-add $2,7
-add $3,$9
 add $1,21
-mov $12,$11
-mov $13,$12
-mul $13,36
-add $1,$13
-mul $12,$11
-mul $12,$11
+mov $6,$5
+mov $4,$6
+mul $4,36
+add $1,$4

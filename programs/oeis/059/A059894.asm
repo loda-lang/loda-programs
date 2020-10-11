@@ -1,0 +1,69 @@
+; A059894: Complement and reverse the order of all but the most significant bit in binary expansion of n. n = 1ab..yz -> 1ZY..BA = a(n), where A = 1-a, B = 1-b, ... .
+; 1,3,2,7,5,6,4,15,11,13,9,14,10,12,8,31,23,27,19,29,21,25,17,30,22,26,18,28,20,24,16,63,47,55,39,59,43,51,35,61,45,53,37,57,41,49,33,62,46,54,38,58,42,50,34,60,44,52,36,56,40,48,32,127,95,111,79,119,87,103,71
+
+mov $7,$0
+mov $6,$0
+lpb $0,1
+  mov $5,$0
+  mov $5,1
+  add $6,2
+  mod $6,2
+  sub $5,2
+  mov $0,$0
+  mov $2,$5
+  mov $2,$6
+  add $4,$0
+  add $6,$2
+  trn $4,2
+  sub $0,2
+  add $1,$5
+  mov $4,1
+  sub $1,$5
+  mov $6,$5
+  sub $5,$2
+  mov $5,$4
+  mul $6,$0
+  mov $5,1
+  mov $4,$5
+  add $5,$6
+  add $0,1
+  mov $4,1
+  bin $4,$2
+  add $1,1
+  mov $5,$2
+  sub $1,$5
+  add $1,1
+  add $4,1
+  trn $6,1
+  add $5,$2
+  sub $6,1
+  mul $6,2
+  mov $6,14
+  div $0,2
+  mov $3,3
+  sub $3,$1
+  sub $4,$2
+  sub $1,3
+  mov $6,$0
+  mov $5,$3
+  mov $3,$3
+  mul $1,2
+lpe
+mov $1,$1
+sub $6,1
+sub $5,1
+mov $2,1
+add $1,1
+mul $2,$3
+add $6,$1
+sub $2,2
+mov $6,$3
+mov $6,1
+sub $3,2
+mul $4,2
+mov $0,4
+mov $1,$2
+add $1,3
+mov $8,$7
+mul $8,$7
+mul $8,$7
