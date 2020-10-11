@@ -1,0 +1,101 @@
+; A160428: Number of ON cells at n-th stage of three-dimensional version of the cellular automaton A160410, using cubes.
+; 0,8,64,120,512,568,960,1352,4096,4152,4544,4936,7680,8072,10816,13560,32768,32824,33216,33608,36352,36744,39488,42232,61440,61832,64576,67320,86528,89272,108480,127688,262144
+
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $8,$0
+  mov $10,2
+  lpb $10,1
+    clr $0,8
+    sub $10,1
+    mov $0,$8
+    add $0,$10
+    sub $0,1
+    mov $5,$0
+    mov $7,$0
+    add $7,1
+    lpb $7,1
+      clr $0,5
+      sub $7,1
+      mov $0,$5
+      sub $0,$7
+      sub $0,0
+      mov $3,1
+      add $0,$0
+      mov $1,4
+      add $1,$0
+      mov $2,$0
+      mov $3,$0
+      lpb $0,1
+        mov $2,$0
+        mov $1,$0
+        add $0,1
+        mov $1,$0
+        mov $4,$0
+        mov $2,$1
+        mov $4,$0
+        mov $1,$2
+        div $3,2
+        sub $4,2
+        mov $1,$3
+        sub $2,$1
+        sub $0,1
+        sub $4,$4
+        pow $1,2
+        sub $4,$0
+        mul $2,$0
+        mov $1,6
+        mov $4,$2
+        mov $1,1
+        pow $1,$2
+        mov $1,$2
+        mov $2,$2
+        mov $4,7
+        mov $1,$2
+        sub $0,$3
+        sub $2,$1
+        mov $1,1
+      lpe
+      mul $1,$1
+      pow $4,$0
+      mov $3,$3
+      mov $1,$4
+      add $6,$1
+    lpe
+    mov $1,$6
+    sub $1,1
+    div $1,10
+    mul $1,11
+    add $1,1
+    mov $1,$6
+    sub $1,1
+    div $1,9
+    mul $1,10
+    add $1,1
+    mov $1,$6
+    sub $1,0
+    div $1,8
+    mul $1,9
+    add $1,1
+    mov $11,$10
+    lpb $11,1
+      mov $9,$1
+      sub $11,1
+    lpe
+  lpe
+  lpb $8,1
+    sub $9,$1
+    mov $8,0
+  lpe
+  mov $1,$9
+  mov $1,$4
+  mul $1,8
+  add $13,$1
+lpe
+mov $1,$13
