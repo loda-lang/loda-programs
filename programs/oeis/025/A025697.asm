@@ -1,0 +1,115 @@
+; A025697: Index of 3^n within sequence of numbers of form 3^i*6^j.
+; 1,2,4,6,9,13,17,22,27,33,40,47,55,63,72,82,92,103,115,127,140,153,167,182,197,213,229,246,264,282,301,321,341,362,383,405,428,451,475,499,524,550,576,603,630,658,687,716,746,777,808,840,872,905,939,973,1008,1043
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $1,$0
+  add $2,$0
+  add $5,12
+  add $0,$2
+  mov $6,2
+  mov $9,5
+  sub $2,1
+  mul $9,$2
+  add $5,$1
+  mov $1,$6
+  mov $3,$9
+  sub $5,2
+  mov $10,$3
+  div $0,2
+  div $1,7
+  mul $1,3
+  lpb $0,1
+    add $0,3
+    trn $10,1
+    add $3,1
+    add $0,$6
+    add $9,1
+    add $5,1
+    mul $0,$6
+    add $2,$0
+    mov $0,$1
+    mov $1,2
+    pow $10,$1
+    mov $3,$10
+    add $9,$3
+    sub $2,1
+    mul $1,3
+    add $5,$9
+    cmp $9,$3
+    mov $4,$0
+    mov $9,1
+    mov $7,6
+    sub $4,6
+    trn $10,3
+    mov $0,$2
+    mov $4,$4
+    mul $6,$4
+    div $5,$4
+    add $8,10
+    add $2,1
+    add $4,$9
+    trn $4,$6
+    sub $0,$10
+    add $1,1
+    add $6,3
+    bin $4,2
+    add $3,2
+    mov $7,2
+    add $5,47
+    mov $10,6
+    mov $5,$7
+    add $1,1
+    mov $7,$8
+    mov $10,$2
+    div $0,2
+    mov $5,1
+    mov $1,$9
+    mov $3,$10
+    add $3,1
+    sub $0,4
+    add $3,1
+    mov $8,6
+    mov $6,1
+    trn $6,$8
+  lpe
+  add $4,$7
+  div $9,37
+  mov $6,4
+  mov $8,2
+  mov $8,$9
+  mul $6,2
+  sub $8,$10
+  add $0,$5
+  mul $2,2
+  add $10,$5
+  sub $3,3
+  add $6,2
+  sub $5,2
+  add $3,$6
+  sub $1,$0
+  mov $8,$6
+  add $7,2
+  add $0,1
+  sub $7,$4
+  add $9,$4
+  add $3,$9
+  add $3,$5
+  mov $0,1
+  div $3,$8
+  mov $0,1
+  add $4,2
+  add $1,$0
+  div $2,2
+  add $4,$0
+  add $7,3
+  mov $1,$3
+  add $12,$1
+lpe
+mov $1,$12
