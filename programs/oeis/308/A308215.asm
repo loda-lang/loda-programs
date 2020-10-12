@@ -1,0 +1,85 @@
+; A308215: a(n) is the multiplicative inverse of A001844(n+1) modulo A001844(n); where A001844 is the sequence of centered square numbers.
+; 0,2,12,11,39,28,82,53,141,86,216,127,307,176,414,233,537,298,676,371,831,452,1002,541,1189,638,1392,743,1611,856,1846,977,2097,1106,2364,1243,2647,1388,2946,1541,3261,1702,3592,1871,3939,2048
+
+add $7,1
+mov $1,$0
+mov $7,$0
+mul $1,$1
+mov $6,$7
+mov $3,$0
+add $0,$1
+mul $3,$0
+sub $6,$0
+add $6,1
+mul $0,2
+sub $1,9
+div $1,2
+mov $5,2
+add $1,1
+mul $5,4
+mov $1,$3
+sub $6,4
+mov $8,3
+mov $8,$6
+add $4,2
+add $0,1
+mov $3,2
+mod $7,4
+sub $6,1
+mod $1,$0
+lpb $0,1
+  add $3,$0
+  mul $0,2
+  mov $3,$7
+  mov $2,3
+  trn $7,7
+  add $6,1
+  mov $7,$6
+  div $4,$0
+  sub $3,$6
+  add $0,1
+  trn $2,2
+  mov $3,$6
+  sub $8,1
+  mul $8,2
+  mov $0,2
+  add $8,$2
+  mov $6,$4
+  trn $0,$1
+  mov $6,$7
+  mul $6,4
+  add $6,$3
+  mul $4,2
+  mov $8,$7
+  add $4,$7
+  mov $6,63
+  sub $2,$8
+  div $5,28
+  mul $0,2
+  add $7,1
+  mov $4,$2
+  add $2,9
+  mov $7,$1
+  mov $2,$4
+  div $0,2
+  mul $8,$7
+  add $0,$8
+lpe
+mul $3,$3
+mov $5,2
+mov $5,3
+add $3,1
+mov $3,10
+sub $8,$4
+mov $7,$3
+mov $7,1
+mov $6,15
+div $8,6
+mov $2,31
+sub $8,8
+mul $5,$5
+add $2,2
+mul $2,$1
+sub $1,$4
+mov $1,$2
+div $1,33
