@@ -1,0 +1,55 @@
+; A251936: Number of length 2+2 0..n arrays with the sum of the maximum minus the median of adjacent triples multiplied by some arrangement of +-1 equal to zero.
+; 10,43,120,265,506,875,1408,2145,3130,4411,6040,8073,10570,13595,17216,21505,26538,32395,39160,46921,55770,65803,77120,89825,104026,119835,137368,156745,178090,201531,227200,255233,285770,318955,354936,393865
+
+mov $5,$0
+mov $2,$0
+sub $0,9
+mul $0,$2
+mov $2,$0
+sub $2,4
+mov $0,1
+mov $0,3
+mov $4,$2
+sub $2,2
+mul $4,$2
+sub $2,$0
+pow $2,$0
+mov $0,$0
+mov $1,$0
+div $4,$1
+mov $1,$4
+mov $4,$0
+lpb $0,1
+  sub $0,1
+  add $2,1
+  add $3,$0
+  sub $0,$0
+  div $3,2
+  add $3,$3
+  mov $4,1
+  mov $3,1
+  add $0,$4
+  add $2,$4
+  pow $2,2
+  mov $2,$1
+  add $4,1
+  mov $1,$2
+  mov $1,$3
+  mov $3,1
+  mul $4,2
+  add $0,$4
+  mov $0,$3
+  sub $3,$0
+  div $2,2
+lpe
+mov $1,$2
+add $1,6
+mov $6,$5
+mov $7,$6
+mul $7,3
+add $1,$7
+mul $6,$5
+mul $6,$5
+mov $7,$6
+mul $7,6
+add $1,$7
