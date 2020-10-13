@@ -1,0 +1,105 @@
+; A254065: Vulgar fractions whose denominators are numbers ending with nine, the case 1/19.
+; 1,2,4,8,6,3,7,4,9,8,7,5,1,3,6,2,5,0,1,2,4,8,6,3,7,4,9,8,7,5,1,3,6,2,5,0,1,2,4,8,6,3,7,4,9,8,7,5,1,3,6,2,5,0,1,2,4,8,6,3,7
+
+add $9,2
+add $3,$9
+mov $1,8
+mov $1,4
+add $3,$0
+add $3,2
+mov $3,$0
+pow $9,$0
+sub $3,$1
+add $6,1
+mov $3,$0
+mov $6,2
+mov $0,$6
+add $8,3
+mov $0,16
+mov $6,$9
+mov $7,$8
+add $1,1
+mov $5,1
+mod $6,2
+mov $3,1
+sub $3,5
+mov $0,$3
+mov $8,1
+mov $4,1
+mov $0,$0
+add $0,4
+add $7,$3
+mov $3,$3
+mov $2,$3
+mov $10,13
+trn $10,1
+mod $7,$8
+trn $4,3
+mov $0,2
+sub $1,$2
+mov $7,1
+div $3,$0
+add $3,$0
+mov $5,$0
+sub $5,1
+mov $10,24
+sub $1,16
+pow $8,$5
+mul $6,$6
+mov $2,$6
+mov $5,$6
+mov $5,$6
+mov $0,1
+add $10,1
+add $0,18
+mov $1,3
+mov $5,$7
+mov $7,7
+trn $3,$5
+add $9,$9
+mov $1,$8
+mod $9,$0
+mov $10,1
+div $2,2
+add $0,1
+mov $10,$8
+sub $5,$9
+mov $3,2
+mov $5,1
+div $0,$1
+mov $5,$0
+add $1,7
+bin $6,$6
+mov $3,1
+pow $2,$10
+mov $5,$10
+mov $4,1
+div $9,2
+add $4,$9
+mov $10,$6
+mov $9,$9
+mov $8,1
+add $0,1
+add $8,$0
+mov $10,$7
+mov $0,2
+sub $5,$5
+mov $1,1
+mov $0,$9
+lpb $0,1
+  mov $8,$2
+  mov $9,$1
+  trn $10,3
+  sub $0,1
+  add $10,$4
+  mov $6,$1
+  sub $8,1
+  mov $0,6
+  mov $3,$8
+  sub $6,1
+lpe
+mov $2,$10
+mov $10,3
+mov $8,$8
+mov $1,$4
+sub $1,1
