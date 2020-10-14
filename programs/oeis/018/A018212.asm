@@ -37,20 +37,15 @@ lpb $31,1
         mov $19,$0
         add $19,1
         lpb $19,1
-          clr $0,17
           sub $19,1
           mov $0,$17
           sub $0,$19
-          mov $16,$0
           mov $1,2
           div $1,3
           sub $1,4
           bin $1,$0
           add $1,1
-          add $13,1
           trn $1,1
-          mov $0,3
-          mov $9,2
           add $18,$1
         lpe
         mov $1,$18
