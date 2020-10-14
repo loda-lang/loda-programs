@@ -526,6 +526,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A314710](http://oeis.org/A314710) ([L24 program](314/A314710.asm)): Coordination sequence Gal.5.64.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314720](http://oeis.org/A314720) ([L27 program](314/A314720.asm)): Coordination sequence Gal.6.245.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314753](http://oeis.org/A314753) ([L23 program](314/A314753.asm)): Coordination sequence Gal.4.52.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A314776](http://oeis.org/A314776) ([L39 program](314/A314776.asm)): Coordination sequence Gal.6.478.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314828](http://oeis.org/A314828) ([L27 program](314/A314828.asm)): Coordination sequence Gal.5.64.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314829](http://oeis.org/A314829) ([L22 program](314/A314829.asm)): Coordination sequence Gal.4.41.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314836](http://oeis.org/A314836) ([L17 program](314/A314836.asm)): Coordination sequence Gal.6.131.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -577,6 +578,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315490](http://oeis.org/A315490) ([L20 program](315/A315490.asm)): Coordination sequence Gal.4.141.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315495](http://oeis.org/A315495) ([L17 program](315/A315495.asm)): Coordination sequence Gal.5.135.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315498](http://oeis.org/A315498) ([L31 program](315/A315498.asm)): Coordination sequence Gal.6.334.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315505](http://oeis.org/A315505) ([L39 program](315/A315505.asm)): Coordination sequence Gal.3.59.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315511](http://oeis.org/A315511) ([L17 program](315/A315511.asm)): Coordination sequence Gal.4.139.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315520](http://oeis.org/A315520) ([L20 program](315/A315520.asm)): Coordination sequence Gal.4.140.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315521](http://oeis.org/A315521) ([L17 program](315/A315521.asm)): Coordination sequence Gal.6.620.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -836,6 +838,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324172](http://oeis.org/A324172) ([L11 program](324/A324172.asm)): Number of subsets of {1,...,n} that cross their complement.
 * [A324174](http://oeis.org/A324174) ([L14 program](324/A324174.asm)): Integers k such that 2*floor(sqrt(k)) divides k.
 * [A324275](http://oeis.org/A324275) ([L41 program](324/A324275.asm)): Numbers k for which A324274(k) is 0, i.e., starting squares in A324274 that yield a path of infinite length.
+* [A324400](http://oeis.org/A324400) ([L41 program](324/A324400.asm)): Lexicographically earliest sequence such that a(i) = a(j) => f(i) = f(j) for all i, j >= 1, where f(n) = -1 if n = 2^k and k > 0, and f(n) = n for all other numbers.
 * [A324467](http://oeis.org/A324467) ([L13 program](324/A324467.asm)): Three times the binary weight of n: 3*A000120(n).
 * [A324471](http://oeis.org/A324471) ([L03 program](324/A324471.asm)): a(n) = 10 mod n.
 * [A324472](http://oeis.org/A324472) ([L04 program](324/A324472.asm)): a(n) = 1000 mod n.
@@ -1010,6 +1013,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330246](http://oeis.org/A330246) ([L04 program](330/A330246.asm)): a(n) = 4^(n+1) + (4^n-1)/3.
 * [A330285](http://oeis.org/A330285) ([L52 program](330/A330285.asm)): The maximum number of arithmetic progressions for a sequence of length n.
 * [A330298](http://oeis.org/A330298) ([L12 program](330/A330298.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 2 even numbers.
+* [A330299](http://oeis.org/A330299) ([L62 program](330/A330299.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 3 even numbers.
 * [A330357](http://oeis.org/A330357) ([L04 program](330/A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
 * [A330393](http://oeis.org/A330393) ([L10 program](330/A330393.asm)): A 2-regular sequence whose reciprocal is not 2-regular.
 * [A330395](http://oeis.org/A330395) ([L38 program](330/A330395.asm)): Number of non-trivial equivalence classes of S_n under the {1234,3412} pattern-replacement equivalence.
@@ -1136,6 +1140,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337483](http://oeis.org/A337483) ([L04 program](337/A337483.asm)): Number of ordered triples of positive integers summing to n that are either weakly increasing or weakly decreasing.
 * [A337484](http://oeis.org/A337484) ([L11 program](337/A337484.asm)): Number of ordered triples of positive integers summing to n that are neither strictly increasing nor strictly decreasing.
 * [A337519](http://oeis.org/A337519) ([L21 program](337/A337519.asm)): Length of the shortest walk in a n X n grid graph that starts in one corner and visits every edge.
+* [A337843](http://oeis.org/A337843) ([L132 program](337/A337843.asm)): a(n) is n + the number of digits in the decimal expansion of n.
 * [A337864](http://oeis.org/A337864) ([L17 program](337/A337864.asm)): Numbers formed by removing from n each digit if it is a duplicate of the previous digit, from left to right.
 * [A337899](http://oeis.org/A337899) ([L11 program](337/A337899.asm)): Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.
 * [A337909](http://oeis.org/A337909) ([L21 program](337/A337909.asm)): Distinct terms of A080079 in the order in which they appear.

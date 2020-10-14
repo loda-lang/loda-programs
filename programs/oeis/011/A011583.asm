@@ -5,10 +5,4 @@ pow $0,6
 add $0,1
 mod $0,13
 sub $0,1
-add $1,1
-mov $2,$0
-add $1,$1
-mov $2,$0
-mov $2,$0
-mov $5,$1
 mov $1,$0

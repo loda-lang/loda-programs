@@ -1363,7 +1363,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122461](http://oeis.org/A122461) ([L03 program](122/A122461.asm)): Repetitions of even numbers four times.
 * [A122471](http://oeis.org/A122471) ([L13 program](122/A122471.asm)): a(n)=7*a(n-1)-n for n> 0, a(0)=1.
 * [A122491](http://oeis.org/A122491) ([L07 program](122/A122491.asm)): a(n) = n * Fibonacci(n) - Sum_{i=0..n} Fibonacci(i).
-* [A122497](http://oeis.org/A122497) ([L08 program](122/A122497.asm)): Let f(S) denote the interchange of 1's and 2's in S. Let S_0 = 1, S_{N+1} = f(S_N).S_N, where the dot indicates concatenation. Sequence gives S_0.S_1.S_2.S_3....
+* [A122497](http://oeis.org/A122497) ([L10 program](122/A122497.asm)): Let f(S) denote the interchange of 1's and 2's in S. Let S_0 = 1, S_{N+1} = f(S_N).S_N, where the dot indicates concatenation. Sequence gives S_0.S_1.S_2.S_3....
 * [A122552](http://oeis.org/A122552) ([L05 program](122/A122552.asm)): a(0)=a(1)=a(2)=1, a(n) = a(n-1) + a(n-2) + 2*a(n-3) for n > 2.
 * [A122553](http://oeis.org/A122553) ([L02 program](122/A122553.asm)): a(0)=1, a(n)=3 for n > 0.
 * [A122554](http://oeis.org/A122554) ([L24 program](122/A122554.asm)): Let S(1)={1} and, for n>1 let S(n) be the smallest set containing x, 2x and x+2 for each element x in S(n-1). a(n) is the number of elements in S(n).
@@ -1533,7 +1533,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125831](http://oeis.org/A125831) ([L03 program](125/A125831.asm)): a(n) = (5^n - 1)/2.
 * [A125833](http://oeis.org/A125833) ([L04 program](125/A125833.asm)): Numbers whose base 5 representation is 333333.......3.
 * [A125835](http://oeis.org/A125835) ([L04 program](125/A125835.asm)): Numbers whose base 8 or octal representation is 22222222.......2.
-* [A125925](http://oeis.org/A125925) ([L26 program](125/A125925.asm)): Sprague-Grundy values for octal game .351.
+* [A125925](http://oeis.org/A125925) ([L12 program](125/A125925.asm)): Sprague-Grundy values for octal game .351.
 * [A126019](http://oeis.org/A126019) ([L11 program](126/A126019.asm)): a(0)=1, a(1)=2; for n>1, a(n)=3*a(n-1)+4*a(n-2)+5.
 * [A126026](http://oeis.org/A126026) ([L12 program](126/A126026.asm)): Conjectured upper bound on area of the convex hull of any edge-to-edge connected system of regular unit hexagons (n-polyhexes).
 * [A126073](http://oeis.org/A126073) ([L18 program](126/A126073.asm)): Sum of numbers <= n which are multiples of 3 or 5 but not 15.
@@ -2032,6 +2032,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131736](http://oeis.org/A131736) ([L13 program](131/A131736.asm)): Period 6: repeat [0, 0, 1, -1, -1, 1].
 * [A131737](http://oeis.org/A131737) ([L06 program](131/A131737.asm)): Essentially even numbers followed by duplicated odd numbers.
 * [A131738](http://oeis.org/A131738) ([L21 program](131/A131738.asm)): a(0) = 0. a(n) = (n+1)*(-1)^n, n>0 .
+* [A131739](http://oeis.org/A131739) ([L60 program](131/A131739.asm)): a(4n) = a(4n+1) = n, a(4n+2) = 3n+2, a(4n+3) = 3n+3.
 * [A131742](http://oeis.org/A131742) ([L10 program](131/A131742.asm)): a(4n) = a(4n+1) = 0, a(4n+2) = 3n+1, a(4n+3) = 3n+2.
 * [A131743](http://oeis.org/A131743) ([L04 program](131/A131743.asm)): Period 4: repeat [0, 1, 0, 2].
 * [A131756](http://oeis.org/A131756) ([L17 program](131/A131756.asm)): Period 3: repeat [2, -1, 3].
@@ -2299,7 +2300,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134057](http://oeis.org/A134057) ([L06 program](134/A134057.asm)): a(n) = binomial(2^n-1,2).
 * [A134062](http://oeis.org/A134062) ([L11 program](134/A134062.asm)): Row sums of triangle A134061.
 * [A134063](http://oeis.org/A134063) ([L14 program](134/A134063.asm)): a(n) = (1/2)*(3^n - 2^(n+1) + 3).
-* [A134067](http://oeis.org/A134067) ([L11 program](134/A134067.asm)): Row sums of triangle A134066.
+* [A134064](http://oeis.org/A134064) ([L75 program](134/A134064.asm)): Let P(A) be the power set of an n-element set A. Then a(n) = the number of pairs of elements {x,y} of P(A) for which either 0) x and y are intersecting but for which x is not a subset of y and y is not a subset of x, or 1) x and y are intersecting and for which either x is a proper subset of y or y is a proper subset of x, or 2) x = y.
+* [A134067](http://oeis.org/A134067) ([L09 program](134/A134067.asm)): Row sums of triangle A134066.
 * [A134119](http://oeis.org/A134119) ([L05 program](134/A134119.asm)): a(n) = floor(n^2/10) - floor((n-1)^2/10).
 * [A134142](http://oeis.org/A134142) ([L20 program](134/A134142.asm)): List of quadruples: 2*(-4)^n, -3*(-4)^n, 2*(-4^n), 2*(-4)^n, n >= 0.
 * [A134153](http://oeis.org/A134153) ([L06 program](134/A134153.asm)): a(n) = 15n^2 + 9n + 1.
@@ -3110,7 +3112,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A147587](http://oeis.org/A147587) ([L03 program](147/A147587.asm)): a(n) = 14*n + 7.
 * [A147588](http://oeis.org/A147588) ([L35 program](147/A147588.asm)): Duplicate of A070824.
 * [A147595](http://oeis.org/A147595) ([L15 program](147/A147595.asm)): a(n) is the number whose binary representation is A138144(n).
-* [A147596](http://oeis.org/A147596) ([L104 program](147/A147596.asm)): a(n) is the number whose binary representation is A138145(n).
+* [A147596](http://oeis.org/A147596) ([L18 program](147/A147596.asm)): a(n) is the number whose binary representation is A138145(n).
 * [A147600](http://oeis.org/A147600) ([L35 program](147/A147600.asm)): Expansion of 1/(1 - 3*x^2 + x^4).
 * [A147601](http://oeis.org/A147601) ([L14 program](147/A147601.asm)): First differences of A132355.
 * [A147610](http://oeis.org/A147610) ([L53 program](147/A147610.asm)): a(n) = 3^(wt(n-1)-1), where wt() = A000120().
@@ -4411,6 +4413,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164683](http://oeis.org/A164683) ([L05 program](164/A164683.asm)): a(n) = 8*a(n-2) for n > 2; a(1) = 1, a(2) = 8.
 * [A164703](http://oeis.org/A164703) ([L20 program](164/A164703.asm)): a(n) = 8*a(n-2) for n > 2; a(1) = 1, a(2) = 16.
 * [A164737](http://oeis.org/A164737) ([L17 program](164/A164737.asm)): a(n) = 8*a(n-2) for n > 2; a(1) = 5, a(2) = 12.
+* [A164743](http://oeis.org/A164743) ([L13 program](164/A164743.asm)): Digital root of 3*A000045(n).
 * [A164754](http://oeis.org/A164754) ([L14 program](164/A164754.asm)): Number of n X 2 1..4 arrays with all 1's connected, all 2's connected, all 3's connected, all 4's connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 2 neighbors with the same value.
 * [A164765](http://oeis.org/A164765) ([L17 program](164/A164765.asm)): Partial sums of [A080782^2].
 * [A164784](http://oeis.org/A164784) ([L04 program](164/A164784.asm)): a(n) = 6^n-5.
@@ -5103,10 +5106,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171478](http://oeis.org/A171478) ([L13 program](171/A171478.asm)): a(n) = 6*a(n-1) - 8*a(n-2) + 2 for n > 1; a(0) = 1, a(1) = 8.
 * [A171479](http://oeis.org/A171479) ([L07 program](171/A171479.asm)): a(n) = 6*a(n-1)-8*a(n-2)+3 for n > 1; a(0) = 1, a(1) = 8.
 * [A171480](http://oeis.org/A171480) ([L17 program](171/A171480.asm)): a(n) = 6*a(n-1) - 8*a(n-2) + 4 for n > 1; a(0) = 1, a(1) = 9.
-* [A171494](http://oeis.org/A171494) ([L12 program](171/A171494.asm)): a(n) = 2*a(n-1) for n > 1; a(0) = 6, a(1) = 16.
+* [A171494](http://oeis.org/A171494) ([L11 program](171/A171494.asm)): a(n) = 2*a(n-1) for n > 1; a(0) = 6, a(1) = 16.
 * [A171495](http://oeis.org/A171495) ([L04 program](171/A171495.asm)): a(n) = 3*a(n-1)+4 for n > 0; a(0) = 6.
 * [A171496](http://oeis.org/A171496) ([L05 program](171/A171496.asm)): a(n) = 6*a(n-1) - 8*a(n-2) for n > 1; a(0) = 6, a(1) = 28.
-* [A171497](http://oeis.org/A171497) ([L11 program](171/A171497.asm)): a(n) = 2*a(n-1) for n > 1; a(0) = 3, a(1) = 8.
+* [A171497](http://oeis.org/A171497) ([L10 program](171/A171497.asm)): a(n) = 2*a(n-1) for n > 1; a(0) = 3, a(1) = 8.
 * [A171498](http://oeis.org/A171498) ([L04 program](171/A171498.asm)): 4*3^n-1.
 * [A171499](http://oeis.org/A171499) ([L06 program](171/A171499.asm)): a(n) = 6*a(n-1) - 8*a(n-2) for n > 1; a(0) = 3, a(1) = 14.
 * [A171501](http://oeis.org/A171501) ([L21 program](171/A171501.asm)): Inverse binomial transform of A084640.
@@ -5301,7 +5304,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174029](http://oeis.org/A174029) ([L33 program](174/A174029.asm)): a(n) = 3*(3*n+1)*(5 - (-1)^n)/4.
 * [A174041](http://oeis.org/A174041) ([L05 program](174/A174041.asm)): Composites of the form 6n+2 or 6n+3.
 * [A174060](http://oeis.org/A174060) ([L37 program](174/A174060.asm)): Sum_{k=1..n} {floor(sqrt(k))^2}.
-* [A174091](http://oeis.org/A174091) ([L08 program](174/A174091.asm)): OR(n, 2).
+* [A174091](http://oeis.org/A174091) ([L08 program](174/A174091.asm)): a(n) = n OR 2.
 * [A174114](http://oeis.org/A174114) ([L10 program](174/A174114.asm)): Even central polygonal numbers (A193868) divided by 2.
 * [A174120](http://oeis.org/A174120) ([L09 program](174/A174120.asm)): Partial sums of A024012.
 * [A174121](http://oeis.org/A174121) ([L13 program](174/A174121.asm)): Partial sums of A001580.
@@ -5957,7 +5960,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184334](http://oeis.org/A184334) ([L18 program](184/A184334.asm)): Period 6 sequence [0, 2, 2, 0, -2, -2, ...] except a(0) = 1.
 * [A184336](http://oeis.org/A184336) ([L22 program](184/A184336.asm)): a(n) = n + floor((3*n)^(1/3) - 2/3).
 * [A184418](http://oeis.org/A184418) ([L15 program](184/A184418.asm)): Convolution square of A040001.
-* [A184425](http://oeis.org/A184425) ([L45 program](184/A184425.asm)): Lower s-Wythoff sequence, where s=A000217 (triangular numbers).  Complement of A184426.
+* [A184425](http://oeis.org/A184425) ([L41 program](184/A184425.asm)): Lower s-Wythoff sequence, where s=A000217 (triangular numbers).  Complement of A184426.
 * [A184427](http://oeis.org/A184427) ([L13 program](184/A184427.asm)): Lower s-Wythoff sequence of A000290 (the squares).  Complement of A184428.
 * [A184480](http://oeis.org/A184480) ([L13 program](184/A184480.asm)): Lower s-Wythoff sequence, where s(n)=3n.  Complement of A001956.
 * [A184483](http://oeis.org/A184483) ([L20 program](184/A184483.asm)): Upper s-Wythoff sequence, where s(n)=3n-1.  Complement of A184482.
@@ -6793,6 +6796,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195058](http://oeis.org/A195058) ([L09 program](195/A195058.asm)): Concentric 23-gonal numbers.
 * [A195062](http://oeis.org/A195062) ([L03 program](195/A195062.asm)): Period 7: repeat [1, 0, 1, 0, 1, 0, 1].
 * [A195084](http://oeis.org/A195084) ([L21 program](195/A195084.asm)): a(2n-1) = 2-n, a(2n) = 2+n.
+* [A195119](http://oeis.org/A195119) ([L21 program](195/A195119.asm)): a(n) = 2*n - floor(n*sqrt(2)).
 * [A195140](http://oeis.org/A195140) ([L12 program](195/A195140.asm)): Multiples of 5 and odd numbers interleaved.
 * [A195142](http://oeis.org/A195142) ([L09 program](195/A195142.asm)): Concentric 10-gonal numbers.
 * [A195143](http://oeis.org/A195143) ([L11 program](195/A195143.asm)): a(n) = n-th concentric 12-gonal number.
@@ -6809,6 +6813,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195163](http://oeis.org/A195163) ([L45 program](195/A195163.asm)): 1000-gonal numbers: a(n) = n*(499*n - 498).
 * [A195174](http://oeis.org/A195174) ([L25 program](195/A195174.asm)): a(n) = 5*n - floor(3*n*r), where r=(1+sqrt(5))/2 (the golden ratio.)
 * [A195175](http://oeis.org/A195175) ([L25 program](195/A195175.asm)): a(n) = 8*n - floor(4*n*r), where r=(1+sqrt(5))/2 (the golden ratio.)
+* [A195176](http://oeis.org/A195176) ([L21 program](195/A195176.asm)): a(n) = 3*n - floor(n*sqrt(2)).
 * [A195177](http://oeis.org/A195177) ([L11 program](195/A195177.asm)): a(n) = 3*n - floor(2*n*sqrt(2)).
 * [A195179](http://oeis.org/A195179) ([L19 program](195/A195179.asm)): a(n) = 5*n - floor(2*n*sqrt(2)).
 * [A195180](http://oeis.org/A195180) ([L15 program](195/A195180.asm)): a(n) = 5*n - floor(3*n*sqrt(2)).

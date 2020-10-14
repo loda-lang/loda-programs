@@ -1203,7 +1203,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229013](http://oeis.org/A229013) ([L11 program](229/A229013.asm)): Number of arrays of median of three adjacent elements of some length-5 0..n array, with no adjacent equal elements in the latter.
 * [A229014](http://oeis.org/A229014) ([L39 program](229/A229014.asm)): Number of arrays of median of three adjacent elements of some length 6 0..n array, with no adjacent equal elements in the latter.
 * [A229093](http://oeis.org/A229093) ([L15 program](229/A229093.asm)): The clubs patterns appearing in n X n coins.
-* [A229135](http://oeis.org/A229135) ([L12 program](229/A229135.asm)): n * (2 + 2^(2*n - 1)).
+* [A229135](http://oeis.org/A229135) ([L16 program](229/A229135.asm)): n * (2 + 2^(2*n - 1)).
 * [A229144](http://oeis.org/A229144) ([L37 program](229/A229144.asm)): Partial sums of (Fibonacci numbers mod 3).
 * [A229146](http://oeis.org/A229146) ([L16 program](229/A229146.asm)): a(n) = n^3*(5*n+3)/2.
 * [A229147](http://oeis.org/A229147) ([L39 program](229/A229147.asm)): a(n) = n^4*(3*n+2).
@@ -3419,6 +3419,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A284353](http://oeis.org/A284353) ([L05 program](284/A284353.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 * [A284354](http://oeis.org/A284354) ([L11 program](284/A284354.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 * [A284359](http://oeis.org/A284359) ([L08 program](284/A284359.asm)): Double triangle (2*n+2 terms by row). Every row is 2*n + 1 followed by 2*n + 1 times 2*n + 2.
+* [A284365](http://oeis.org/A284365) ([L24 program](284/A284365.asm)): Positions of 0 in A284364; complement of A284366.
 * [A284395](http://oeis.org/A284395) ([L53 program](284/A284395.asm)): Positions of 1 in A284394.
 * [A284396](http://oeis.org/A284396) ([L43 program](284/A284396.asm)): Positions of 2 in A284394.
 * [A284413](http://oeis.org/A284413) ([L27 program](284/A284413.asm)): Exponent of 3 in 2^n + 1.
@@ -3594,6 +3595,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288962](http://oeis.org/A288962) ([L18 program](288/A288962.asm)): Number of 4-cycles in the n X n rook graph.
 * [A288998](http://oeis.org/A288998) ([L22 program](288/A288998.asm)): Positions of 0 in A288997; complement of A288999.
 * [A288999](http://oeis.org/A288999) ([L49 program](288/A288999.asm)): Positions of 1 in A288997; complement of A288998.
+* [A289036](http://oeis.org/A289036) ([L22 program](289/A289036.asm)): Positions of 0 in A289035; complement of A289037.
 * [A289037](http://oeis.org/A289037) ([L49 program](289/A289037.asm)): Positions of 1 in A289035; complement of A289036.
 * [A289060](http://oeis.org/A289060) ([L27 program](289/A289060.asm)): a(n) = 3*a(n-1) - 3*a(n-2) + *a(n-3) for n >= 8, where a(0) = 2, a(1) = 4, a(2) = 7, a(3) = 11, a(4) = 17, a(5) = 25, a(6) = 36, a(7) = 51.
 * [A289098](http://oeis.org/A289098) ([L24 program](289/A289098.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 545", based on the 5-celled von Neumann neighborhood.
