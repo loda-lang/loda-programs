@@ -5,8 +5,6 @@ mov $2,$0
 div $2,4
 sub $2,$0
 mod $2,2
-mul $2,390
 mov $1,$2
-div $1,390
 mul $1,2
 add $1,1

@@ -1,86 +1,17 @@
 ; A199769: Number of brackets in distinct sets with fewest possible elements
 ; 1,2,3,4,4,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10
 
-add $2,1
-mov $6,$2
-pow $0,2
-pow $0,2
-mul $0,$6
-div $6,12
-mov $5,$0
-add $3,1
-mov $7,$2
-mov $7,1
-mov $2,$2
-mov $4,0
-sub $2,$5
-add $2,$0
-mov $0,$6
-add $2,1
-trn $2,100
-mul $7,$7
-sub $2,$6
-mov $0,$7
-add $6,35
-mov $3,$7
-add $3,6
-mov $1,5
-mod $2,2
-add $4,5
-sub $7,$3
-mov $7,$1
-mov $2,1
-add $7,2
-sub $6,$5
-sub $7,$1
-mov $0,$7
-mov $8,6
-mov $2,1
-add $7,2
-add $4,$7
-add $0,$5
-add $6,3
-mov $8,$1
+pow $0,4
+mov $2,$0
+mov $3,7
+mov $0,2
+add $0,$2
 lpb $0,1
-  sub $6,$3
   div $0,$3
-  sub $1,$6
-  mov $5,$5
-  sub $0,1
-  add $0,2
-  mul $5,$2
-  add $4,$7
+  add $0,1
   add $3,4
-  mov $8,$3
-  sub $7,1
-  mul $8,2
-  sub $6,$3
-  pow $1,2
-  add $8,1
-  mov $6,1
-  mov $4,1
-  sub $2,64
-  sub $1,$2
-  mov $2,2
-  mov $2,4
-  mov $1,7
-  add $4,2
-  mov $4,$1
   mul $0,2
 lpe
-add $1,$6
-div $1,$1
-mov $8,1
-add $0,$0
-sub $6,$2
-trn $8,3
-sub $7,$6
-sub $8,1
-mov $8,$6
-add $0,1
-mov $0,1
-add $2,$8
-mov $2,1
 mov $1,$3
 sub $1,7
 div $1,4

@@ -1,73 +1,30 @@
 ; A133510: Number of primitive H-invariant prime ideals in O_q(M_{2,n}) generic quantum matrices.
 ; 2,5,17,53,167,515,1577,4793,14507,43775,131837,396533,1191647,3579035,10745297,32252273,96789587,290434295,871433957,2614564013,7844216327,23533697555,70603189817,211813763753,635449679867,1906365816815
 
-mov $8,$0
-mov $10,$0
-add $10,1
-lpb $10,1
-  clr $0,8
-  sub $10,1
-  mov $0,$8
-  sub $0,$10
-  mov $5,$0
-  mov $7,$0
-  add $7,1
-  lpb $7,1
-    clr $0,5
-    sub $7,1
-    mov $0,$5
-    sub $0,$7
+mov $6,1
+lpb $6,1
+  sub $6,1
+  add $5,1
+  lpb $5,1
+    sub $5,1
     add $0,2
-    mov $4,$0
-    mov $0,$0
-    mov $4,-4
     mov $3,2
     mov $1,$3
-    add $4,$3
-    mov $2,$1
     add $1,1
-    mov $4,0
     add $4,$0
     pow $3,$4
-    mov $2,$1
-    mov $4,$1
     pow $1,$0
-    mov $2,$2
-    add $4,$2
     sub $3,$1
-    trn $2,$3
-    div $1,2
-    mov $0,2
-    add $1,$3
-    add $1,1
-    mov $1,2
-    mov $3,$0
-    mov $3,3
-    mul $0,2
+    sub $2,$3
     lpb $0,1
-      mov $3,1
-      add $0,$1
-      mov $4,1
       mov $0,3
       div $2,6
       mul $2,$0
-      add $0,$4
-      mov $4,5
       sub $0,3
     lpe
-    add $1,$1
-    add $2,2
-    mov $1,$2
-    sub $1,2
-    div $1,6
-    add $6,$1
   lpe
-  mov $1,$6
-  add $9,$1
 lpe
-mov $1,$9
 mov $1,$2
-sub $1,5
 div $1,6
 mul $1,3
 add $1,2

@@ -17,45 +17,26 @@ lpb $10,1
     sub $7,1
     mov $0,$5
     sub $0,$7
-    mov $4,$0
     add $2,6
     sub $2,$0
     sub $2,8
     add $3,$2
     mov $0,$3
-    mov $3,$2
     mov $4,$2
-    add $1,$0
     add $4,4
     add $4,$0
     add $4,$2
-    sub $0,$4
-    add $3,$3
-    add $2,2
-    mov $0,$1
+    mul $3,2
     mul $0,$3
     bin $4,2
     mod $0,9
-    mov $2,11
-    mov $3,$4
     mov $1,1
-    sub $2,$4
     lpb $0,1
-      mov $3,$2
       mov $2,2
-      mov $3,1
-      sub $0,1
       sub $4,$2
       mov $2,$1
-      mov $3,1
-      mov $1,1
-      sub $3,$3
-      mov $3,$1
-      mov $3,$1
       add $4,$2
-      mul $4,$1
       mov $0,1
-      mov $3,1
     lpe
     mov $1,$4
     add $6,$1
