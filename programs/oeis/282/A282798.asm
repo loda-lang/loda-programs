@@ -1,0 +1,66 @@
+; A282798: Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 505", based on the 5-celled von Neumann neighborhood.
+; 1,0,7,4,31,20,127,84,511,340,2047,1364,8191,5460,32767,21844,131071,87380,524287,349524,2097151,1398100,8388607,5592404,33554431,22369620,134217727,89478484,536870911,357913940,2147483647,1431655764,8589934591,5726623060
+
+mov $1,1
+add $0,2
+mov $2,2
+div $2,$2
+mov $6,2
+sub $6,$0
+trn $2,7
+add $6,$0
+pow $6,$0
+mov $1,2
+mov $3,$0
+lpb $0,1
+  sub $1,$3
+  mov $3,$6
+  gcd $0,2
+  trn $3,1
+  add $5,$6
+  sub $2,$6
+  div $0,2
+  sub $5,$3
+  add $3,$5
+  mov $1,4
+  add $5,$3
+lpe
+mov $3,$0
+mov $3,1
+mov $0,$6
+sub $1,2
+add $3,66
+sub $6,4
+sub $6,3
+add $0,$3
+mov $3,1
+mov $0,$1
+trn $5,$2
+fac $1
+add $3,1
+add $5,$2
+mov $6,$5
+sub $3,1
+mul $1,2
+mov $3,2
+add $0,$0
+add $5,3
+trn $0,$3
+mov $4,$2
+add $3,23
+add $4,$2
+mov $4,2
+mov $0,1
+mov $3,2
+trn $5,$6
+div $0,2
+add $0,$0
+div $0,2
+mov $2,$0
+sub $3,$5
+mov $3,2
+mov $4,3
+add $0,1
+mov $1,$6
+sub $1,9
+div $1,6

@@ -1,0 +1,86 @@
+; A077140: a(1) = 1 and then add n to the previous term if n is coprime to the previous term, otherwise subtract n from the previous term. a(1) = 1 and a(n) = a(n-1) + n if gcd(n, a(n-1)) = 1, otherwise a(n) = a(n-1) - n.
+; 1,3,0,-4,1,7,0,-8,1,11,0,-12,1,15,0,-16,1,19,0,-20,1,23,0,-24,1,27,0,-28,1,31,0,-32,1,35,0,-36,1,39,0,-40,1,43,0,-44,1,47,0,-48,1,51,0,-52,1,55,0
+
+add $0,1
+add $1,$0
+add $2,$0
+add $6,1
+add $5,$0
+sub $2,1
+mov $5,$2
+sub $5,6
+lpb $0,1
+  mov $5,$5
+  add $4,1
+  mul $1,14
+  mov $7,1
+  sub $6,3
+  add $6,1
+  sub $1,6
+  add $3,$5
+  mov $8,5
+  add $8,2
+  add $3,1
+  mov $1,1
+  add $6,$0
+  add $1,$4
+  add $5,2
+  add $6,2
+  add $8,$6
+  sub $8,$3
+  add $4,$1
+  div $3,$7
+  mov $5,$8
+  sub $6,3
+  mov $3,$8
+  mov $4,3
+  mov $5,$0
+  mov $8,$3
+  sub $2,2
+  sub $7,$7
+  sub $0,1
+  mul $5,4
+  add $3,$8
+  sub $7,$1
+  add $4,$2
+  mov $2,$7
+  mov $3,7
+  add $3,1
+  mov $3,$3
+  mov $6,$2
+  div $3,$2
+  sub $6,2
+  mov $3,$7
+  pow $5,4
+lpe
+mul $6,$8
+mov $4,1
+mul $5,2
+mul $8,2
+mov $2,1
+mov $0,$7
+mov $7,$1
+mov $5,$6
+sub $3,$8
+mov $8,2
+mul $4,5
+mov $3,$3
+mul $2,$0
+mov $6,1
+add $4,13
+div $0,$6
+mov $8,5
+sub $8,8
+add $7,$1
+add $6,$8
+add $1,$5
+mov $8,1
+sub $2,$1
+mov $3,1
+sub $0,2
+sub $5,3
+mov $5,1
+sub $1,$0
+mov $1,$7
+sub $1,2
+div $1,2

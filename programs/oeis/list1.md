@@ -974,6 +974,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115357](http://oeis.org/A115357) ([L07 program](115/A115357.asm)): Periodic {1,1,1,0,2,0}.
 * [A115360](http://oeis.org/A115360) ([L08 program](115/A115360.asm)): Period 6: repeat [1,-1,1,0,0,0].
 * [A115362](http://oeis.org/A115362) ([L31 program](115/A115362.asm)): Row sums of ((1,x) + (x,x^2))^(-1)*((1,x)-(x,x^2))^(-1) (using Riordan array notation).
+* [A115364](http://oeis.org/A115364) ([L42 program](115/A115364.asm)): a(n) = A000217(A001511(n)), where A001511 is one more than the 2-adic valuation of n, and A000217(n) is the n-th triangular number, binomial(n+1, 2).
 * [A115384](http://oeis.org/A115384) ([L34 program](115/A115384.asm)): Partial sums of Thue-Morse numbers A010060.
 * [A115390](http://oeis.org/A115390) ([L10 program](115/A115390.asm)): Binomial transform of tribonacci sequence A000073.
 * [A115419](http://oeis.org/A115419) ([L06 program](115/A115419.asm)): Numbers having a 1 in position 3 of their binary expansion.
@@ -2399,7 +2400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135032](http://oeis.org/A135032) ([L13 program](135/A135032.asm)): a(n) = 6*a(n-1) + 4*a(n-2).
 * [A135033](http://oeis.org/A135033) ([L04 program](135/A135033.asm)): Period 5: repeat 2,4,6,8,0.
 * [A135034](http://oeis.org/A135034) ([L05 program](135/A135034.asm)): Positive integers n repeated 2n-1 times, with a leading a(0) = 0. Also: ceiling of square root of n.
-* [A135036](http://oeis.org/A135036) ([L27 program](135/A135036.asm)): Sums of the products of n consecutive pairs of numbers.
+* [A135036](http://oeis.org/A135036) ([L24 program](135/A135036.asm)): Sums of the products of n consecutive pairs of numbers.
 * [A135037](http://oeis.org/A135037) ([L18 program](135/A135037.asm)): Sums of the products of n consecutive triples of numbers.
 * [A135042](http://oeis.org/A135042) ([L05 program](135/A135042.asm)): Binomial transform of [1, 1, 2, 0, -2, 4, -6, 8, -10, 12,...].
 * [A135043](http://oeis.org/A135043) ([L08 program](135/A135043.asm)): Duplicate of A054966.
@@ -3174,6 +3175,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A151842](http://oeis.org/A151842) ([L05 program](151/A151842.asm)): a(3n)=n, a(3n+1)=2n+1, a(3n+2)=n+1.
 * [A151898](http://oeis.org/A151898) ([L30 program](151/A151898.asm)): First differences of Frobenius numbers for 7 successive numbers A138987.
 * [A151899](http://oeis.org/A151899) ([L04 program](151/A151899.asm)): Period 6: repeat [0, 0, 1, 1, 1, 2].
+* [A151902](http://oeis.org/A151902) ([L82 program](151/A151902.asm)): a(n) = wt(k) + f(j) if n = 6k+j, 0 <= j < 6, where wt() = A000120(), f() = A151899().
 * [A151915](http://oeis.org/A151915) ([L86 program](151/A151915.asm)): Wythoff AAAA numbers.
 * [A151922](http://oeis.org/A151922) ([L63 program](151/A151922.asm)): Number of first-quadrant cells (including the two boundaries) that are "ON" after n-th stage of the Holladay-Ulam cellular automaton.
 * [A151923](http://oeis.org/A151923) ([L66 program](151/A151923.asm)): A079316(2n+1).
@@ -5975,6 +5977,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184517](http://oeis.org/A184517) ([L16 program](184/A184517.asm)): Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
 * [A184522](http://oeis.org/A184522) ([L09 program](184/A184522.asm)): Upper s-Wythoff sequence, where s=5n.  Complement of A184523.
 * [A184523](http://oeis.org/A184523) ([L30 program](184/A184523.asm)): Upper s-Wythoff sequence, where s=5n.  Complement of A184522.
+* [A184525](http://oeis.org/A184525) ([L83 program](184/A184525.asm)): Upper s-Wythoff sequence, where s=5n-1.  Complement of A184524.
 * [A184527](http://oeis.org/A184527) ([L13 program](184/A184527.asm)): Upper s-Wythoff sequence, where s=5n-2.  Complement of A184526.
 * [A184529](http://oeis.org/A184529) ([L11 program](184/A184529.asm)): Upper s-Wythoff sequence, where s=5n-3.  Complement of A184528.
 * [A184530](http://oeis.org/A184530) ([L14 program](184/A184530.asm)): Lower s-Wythoff sequence, where s=5n-4.  Complement of A184531.

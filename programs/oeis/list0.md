@@ -1339,6 +1339,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011658](http://oeis.org/A011658) ([L03 program](011/A011658.asm)): Period 5: repeat [0, 0, 0, 1, 1]; also expansion of 1/(x^4 + x^3 + x^2 + x + 1) (mod 2).
 * [A011671](http://oeis.org/A011671) ([L20 program](011/A011671.asm)): A binary m-sequence: expansion of reciprocal of x^6+x^5+x^4+x^2+1.
 * [A011672](http://oeis.org/A011672) ([L06 program](011/A011672.asm)): Expansion of reciprocal of x^6+x^3+1 (mod 2).
+* [A011693](http://oeis.org/A011693) ([L23 program](011/A011693.asm)): A binary m-sequence: expansion of reciprocal of x^8+x^5+x^4+x^3+1.
 * [A011760](http://oeis.org/A011760) ([L05 program](011/A011760.asm)): Elevator buttons in U.S.A.: Positive integers except 13.
 * [A011763](http://oeis.org/A011763) ([L04 program](011/A011763.asm)): Days in year in Gregorian calendar.
 * [A011765](http://oeis.org/A011765) ([L03 program](011/A011765.asm)): Period 4: repeat [0, 0, 0, 1].
@@ -1602,7 +1603,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016028](http://oeis.org/A016028) ([L09 program](016/A016028.asm)): Expansion of (1 - x + x^4) / (1 - x)^3.
 * [A016029](http://oeis.org/A016029) ([L08 program](016/A016029.asm)): a(1) = a(2) = 1, a(2n + 1) = 2*a(2n) and a(2n) = 2*a(2n - 1) + (-1)^n.
 * [A016051](http://oeis.org/A016051) ([L05 program](016/A016051.asm)): Numbers of the form 9n+3 or 9n+6.
-* [A016061](http://oeis.org/A016061) ([L26 program](016/A016061.asm)): a(n) = n*(n+1)*(4*n+5)/6.
+* [A016061](http://oeis.org/A016061) ([L23 program](016/A016061.asm)): a(n) = n*(n+1)*(4*n+5)/6.
 * [A016064](http://oeis.org/A016064) ([L08 program](016/A016064.asm)): Smallest side lengths of almost-equilateral Heronian triangles (sides are consecutive integers, area is an integer).
 * [A016084](http://oeis.org/A016084) ([L24 program](016/A016084.asm)): a(n+1) = a(n) + its digital root.
 * [A016116](http://oeis.org/A016116) ([L03 program](016/A016116.asm)): a(n) = 2^floor(n/2).
@@ -3103,7 +3104,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032798](http://oeis.org/A032798) ([L07 program](032/A032798.asm)): Numbers such that n(n+1)(n+2)...(n+12) / (n+(n+1)+(n+2)+...+(n+12)) is a multiple of n.
 * [A032801](http://oeis.org/A032801) ([L36 program](032/A032801.asm)): Number of unordered sets a, b, c, d of distinct integers from 1..n such that a+b+c+d = 0 (mod n).
 * [A032908](http://oeis.org/A032908) ([L07 program](032/A032908.asm)): One of four 3rd-order recurring sequences for which the first derived sequence and the Galois transformed sequence coincide.
-* [A032925](http://oeis.org/A032925) ([L28 program](032/A032925.asm)): Numbers whose set of base 4 digits is {1,2}.
+* [A032925](http://oeis.org/A032925) ([L21 program](032/A032925.asm)): Numbers whose set of base 4 digits is {1,2}.
 * [A032960](http://oeis.org/A032960) ([L24 program](032/A032960.asm)): Numbers n such that base 10 representation Sum{d(i)*10^i: i=0,1,...,m} has even d(i) for all odd i.
 * [A032961](http://oeis.org/A032961) ([L11 program](032/A032961.asm)): Numbers n such that base 11 representation Sum{d(i)*11^i: i=0,1,...,m} has even d(i) for all odd i.
 * [A032962](http://oeis.org/A032962) ([L04 program](032/A032962.asm)): Numbers n such that base 12 representation Sum{d(i)*12^i: i=0,1,...,m} has even d(i) for all odd i.
@@ -4704,7 +4705,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A050185](http://oeis.org/A050185) ([L20 program](050/A050185.asm)): T(2n+7,n), array T as in A051168; a count of Lyndon words.
 * [A050187](http://oeis.org/A050187) ([L04 program](050/A050187.asm)): a(n) = n * floor((n-1)/2).
 * [A050188](http://oeis.org/A050188) ([L11 program](050/A050188.asm)): T(n,3), array T as in A050186; a count of aperiodic binary words.
-* [A050189](http://oeis.org/A050189) ([L22 program](050/A050189.asm)): T(n,4), array T as in A050186; a count of aperiodic binary words.
+* [A050189](http://oeis.org/A050189) ([L19 program](050/A050189.asm)): T(n,4), array T as in A050186; a count of aperiodic binary words.
 * [A050250](http://oeis.org/A050250) ([L46 program](050/A050250.asm)): Number of nonzero palindromes less than 10^n.
 * [A050271](http://oeis.org/A050271) ([L08 program](050/A050271.asm)): Numbers n such that n = floor(sqrt(n)*ceiling(sqrt(n))).
 * [A050292](http://oeis.org/A050292) ([L16 program](050/A050292.asm)): a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n >= 0).
@@ -5544,9 +5545,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061004](http://oeis.org/A061004) ([L22 program](061/A061004.asm)): Nearest integer to n^6/36.
 * [A061005](http://oeis.org/A061005) ([L22 program](061/A061005.asm)): (Nearest integer to n^6/36) / 2.
 * [A061038](http://oeis.org/A061038) ([L08 program](061/A061038.asm)): Denominator of 1/4 - 1/n^2.
-* [A061082](http://oeis.org/A061082) ([L47 program](061/A061082.asm)): a(n) = A053061(n)/n.
+* [A061082](http://oeis.org/A061082) ([L37 program](061/A061082.asm)): a(n) = A053061(n)/n.
 * [A061085](http://oeis.org/A061085) ([L18 program](061/A061085.asm)): a(n) = A019550(n) / 3.
-* [A061087](http://oeis.org/A061087) ([L57 program](061/A061087.asm)): a(n) = A061086(n) / n.
+* [A061087](http://oeis.org/A061087) ([L44 program](061/A061087.asm)): a(n) = A061086(n) / n.
 * [A061094](http://oeis.org/A061094) ([L12 program](061/A061094.asm)): The alternating group A_n contains an element x which is not conjugate to its inverse (equivalently not all the entries in the character table of A_n are real numbers).
 * [A061099](http://oeis.org/A061099) ([L19 program](061/A061099.asm)): Squares with digital root 1.
 * [A061100](http://oeis.org/A061100) ([L25 program](061/A061100.asm)): Squares with digital root 4.
@@ -8301,7 +8302,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A098894](http://oeis.org/A098894) ([L13 program](098/A098894.asm)): Values of n such that {s(1),...,s(n)} is a palindrome, where {s(1),s(2),...} is the fixed-point of the substitutions 0->1 and 1->110.
 * [A098923](http://oeis.org/A098923) ([L05 program](098/A098923.asm)): 33-gonal numbers: n(31n-29)/2.
 * [A098924](http://oeis.org/A098924) ([L14 program](098/A098924.asm)): 45-gonal numbers: n*(43*n-41)/2.
-* [A098931](http://oeis.org/A098931) ([L28 program](098/A098931.asm)): a(0) = 1, a(n) = 1 + 2*3 + 4*5 + 6*7 + ... + (2n)*(2n+1) for n > 0.
+* [A098931](http://oeis.org/A098931) ([L24 program](098/A098931.asm)): a(0) = 1, a(n) = 1 + 2*3 + 4*5 + 6*7 + ... + (2n)*(2n+1) for n > 0.
 * [A098955](http://oeis.org/A098955) ([L17 program](098/A098955.asm)): Numbers with property that the last digit is the length of the number (written in base 10).
 * [A098971](http://oeis.org/A098971) ([L11 program](098/A098971.asm)): a(0)=1; for n > 0, a(n)=a(floor(n/2))+2*a(floor(n/4)).
 * [A099003](http://oeis.org/A099003) ([L04 program](099/A099003.asm)): Number of 4 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (10;0) and (11;0).
@@ -8332,7 +8333,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099429](http://oeis.org/A099429) ([L08 program](099/A099429.asm)): A Jacobsthal-Lucas convolution.
 * [A099430](http://oeis.org/A099430) ([L16 program](099/A099430.asm)): 2^n+(-1)^n-1.
 * [A099431](http://oeis.org/A099431) ([L08 program](099/A099431.asm)): Expansion of x(1-2x+3x^2)/(1-x-2x)^2;.
-* [A099443](http://oeis.org/A099443) ([L67 program](099/A099443.asm)): A Chebyshev transform of Fib(n+1).
+* [A099443](http://oeis.org/A099443) ([L22 program](099/A099443.asm)): A Chebyshev transform of Fib(n+1).
 * [A099459](http://oeis.org/A099459) ([L20 program](099/A099459.asm)): Expansion of 1/(1 - 7x + 9x^2).
 * [A099467](http://oeis.org/A099467) ([L22 program](099/A099467.asm)): a(1) = a(2) = 1; for n > 2, a(n) is the smallest number > a(n-1) which is not the sum of 2 consecutive elements of the sequence.
 * [A099470](http://oeis.org/A099470) ([L13 program](099/A099470.asm)): A sequence generated from the Quadrifoil.
