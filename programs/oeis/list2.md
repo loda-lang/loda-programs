@@ -1342,6 +1342,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A233820](http://oeis.org/A233820) ([L30 program](233/A233820.asm)): Period 4: repeat [20, 5, 15, 10].
 * [A233868](http://oeis.org/A233868) ([L12 program](233/A233868.asm)): Numbers that are not the sum of two evil numbers.
 * [A233904](http://oeis.org/A233904) ([L10 program](233/A233904.asm)): a(2n) = a(n) - n, a(2n+1) = a(n) + n, with a(0)=0.
+* [A233905](http://oeis.org/A233905) ([L28 program](233/A233905.asm)): a(2n) = a(n), a(2n+1) = a(n) + n, with a(0)=0.
 * [A234041](http://oeis.org/A234041) ([L14 program](234/A234041.asm)): a(n) = binomial(n+2,2)*gcd(n,3)/3, n >= 0.
 * [A234043](http://oeis.org/A234043) ([L05 program](234/A234043.asm)): a(n) = C(5*(n+1),4)/5, with n >= 0.
 * [A234044](http://oeis.org/A234044) ([L17 program](234/A234044.asm)): Period 7: repeat [2, -2, 1, 0, 0, 1, -2].
@@ -3339,7 +3340,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A281333](http://oeis.org/A281333) ([L07 program](281/A281333.asm)): a(n) = 1 + floor(n/2) + floor(n^2/3).
 * [A281375](http://oeis.org/A281375) ([L10 program](281/A281375.asm)): a(n) = floor(2^(n+1)/n).
 * [A281376](http://oeis.org/A281376) ([L13 program](281/A281376.asm)): Total number of counts where floor(N/k) < floor((N+k)/n) for k = {1, 2, ..., n-1} and N >= n.
-* [A281381](http://oeis.org/A281381) ([L21 program](281/A281381.asm)): a(n) = n*(n + 1)*(4*n + 5)/2.
+* [A281381](http://oeis.org/A281381) ([L27 program](281/A281381.asm)): a(n) = n*(n + 1)*(4*n + 5)/2.
 * [A281387](http://oeis.org/A281387) ([L07 program](281/A281387.asm)): Pairs (x, y) of relatively prime positive integers such that (x^2 - 5)/y and (y^2 - 5)/x are both positive integers.
 * [A281445](http://oeis.org/A281445) ([L10 program](281/A281445.asm)): Nonnegative k for which (2*k^2 + 1)/11 is an integer.
 * [A281481](http://oeis.org/A281481) ([L07 program](281/A281481.asm)): a(n) = 2^(n - 1) * (2^n + 1) + 1.
@@ -3353,6 +3354,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A281746](http://oeis.org/A281746) ([L54 program](281/A281746.asm)): Nonnegative numbers n such that n == 0 mod 3 or n == 0 mod 5.
 * [A281773](http://oeis.org/A281773) ([L23 program](281/A281773.asm)): Number of distinct topologies on an n-set that have exactly 4 open sets.
 * [A281813](http://oeis.org/A281813) ([L05 program](281/A281813.asm)): a(0) = 3, a(n) = 8*n + 4 for n > 0.
+* [A281814](http://oeis.org/A281814) ([L30 program](281/A281814.asm)): Expansion of f(x, x^8) in powers of x where f(, ) is Ramanujan's general theta function.
 * [A281899](http://oeis.org/A281899) ([L04 program](281/A281899.asm)): a(n) = n + 6*floor(n/3).
 * [A282022](http://oeis.org/A282022) ([L16 program](282/A282022.asm)): Start with 1; multiply alternately by 3 and 4.
 * [A282023](http://oeis.org/A282023) ([L15 program](282/A282023.asm)): Start with 1; multiply alternately by 4 and 3.
@@ -3419,7 +3421,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A284353](http://oeis.org/A284353) ([L05 program](284/A284353.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 * [A284354](http://oeis.org/A284354) ([L11 program](284/A284354.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 * [A284359](http://oeis.org/A284359) ([L08 program](284/A284359.asm)): Double triangle (2*n+2 terms by row). Every row is 2*n + 1 followed by 2*n + 1 times 2*n + 2.
-* [A284365](http://oeis.org/A284365) ([L24 program](284/A284365.asm)): Positions of 0 in A284364; complement of A284366.
 * [A284395](http://oeis.org/A284395) ([L53 program](284/A284395.asm)): Positions of 1 in A284394.
 * [A284396](http://oeis.org/A284396) ([L43 program](284/A284396.asm)): Positions of 2 in A284394.
 * [A284413](http://oeis.org/A284413) ([L27 program](284/A284413.asm)): Exponent of 3 in 2^n + 1.
@@ -3595,7 +3596,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288962](http://oeis.org/A288962) ([L18 program](288/A288962.asm)): Number of 4-cycles in the n X n rook graph.
 * [A288998](http://oeis.org/A288998) ([L22 program](288/A288998.asm)): Positions of 0 in A288997; complement of A288999.
 * [A288999](http://oeis.org/A288999) ([L49 program](288/A288999.asm)): Positions of 1 in A288997; complement of A288998.
-* [A289036](http://oeis.org/A289036) ([L22 program](289/A289036.asm)): Positions of 0 in A289035; complement of A289037.
+* [A289036](http://oeis.org/A289036) ([L09 program](289/A289036.asm)): Positions of 0 in A289035; complement of A289037.
 * [A289037](http://oeis.org/A289037) ([L49 program](289/A289037.asm)): Positions of 1 in A289035; complement of A289036.
 * [A289060](http://oeis.org/A289060) ([L27 program](289/A289060.asm)): a(n) = 3*a(n-1) - 3*a(n-2) + *a(n-3) for n >= 8, where a(0) = 2, a(1) = 4, a(2) = 7, a(3) = 11, a(4) = 17, a(5) = 25, a(6) = 36, a(7) = 51.
 * [A289098](http://oeis.org/A289098) ([L24 program](289/A289098.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 545", based on the 5-celled von Neumann neighborhood.
@@ -3708,12 +3709,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291509](http://oeis.org/A291509) ([L17 program](291/A291509.asm)): The arithmetic function uhat(n,2,4).
 * [A291510](http://oeis.org/A291510) ([L04 program](291/A291510.asm)): The arithmetic function uhat(n,2,5), negated.
 * [A291512](http://oeis.org/A291512) ([L21 program](291/A291512.asm)): The arithmetic function uhat(n,2,7).
-* [A291514](http://oeis.org/A291514) ([L10 program](291/A291514.asm)): The arithmetic function uhat(n,3,5).
+* [A291514](http://oeis.org/A291514) ([L08 program](291/A291514.asm)): The arithmetic function uhat(n,3,5).
 * [A291516](http://oeis.org/A291516) ([L04 program](291/A291516.asm)): The arithmetic function uhat(n,3,7), negated.
 * [A291520](http://oeis.org/A291520) ([L06 program](291/A291520.asm)): The arithmetic function uhat(n,4,2).
 * [A291521](http://oeis.org/A291521) ([L11 program](291/A291521.asm)): The arithmetic function uhat(n,4,6).
 * [A291522](http://oeis.org/A291522) ([L10 program](291/A291522.asm)): The arithmetic function uhat(n,4,7).
-* [A291526](http://oeis.org/A291526) ([L05 program](291/A291526.asm)): a(n) = 2^n*(n - 3) + 4.
+* [A291526](http://oeis.org/A291526) ([L11 program](291/A291526.asm)): a(n) = 2^n*(n - 3) + 4.
 * [A291557](http://oeis.org/A291557) ([L05 program](291/A291557.asm)): a(n) = 23*2^n - 1.
 * [A291568](http://oeis.org/A291568) ([L05 program](291/A291568.asm)): The arithmetic function uhat(n,5,5).
 * [A291574](http://oeis.org/A291574) ([L05 program](291/A291574.asm)): The arithmetic function uhat(n,6,6).
