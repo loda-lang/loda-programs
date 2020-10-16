@@ -6,7 +6,5 @@ lpb $0,1
   div $0,10
   sub $1,$0
   mul $1,10
-  cmp $2,71
 lpe
-mov $5,$1
 div $1,10

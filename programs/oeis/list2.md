@@ -1506,6 +1506,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239367](http://oeis.org/A239367) ([L49 program](239/A239367.asm)): The bisection of A238315 that remains constant with changes in the offset of the exponent of the second term.
 * [A239447](http://oeis.org/A239447) ([L25 program](239/A239447.asm)): Partial sums of A030101.
 * [A239449](http://oeis.org/A239449) ([L05 program](239/A239449.asm)): 7*n^2 - 5*n + 1.
+* [A239459](http://oeis.org/A239459) ([L55 program](239/A239459.asm)): Concatenation of n^3 and n.
 * [A239463](http://oeis.org/A239463) ([L37 program](239/A239463.asm)): A239460(n) / n^2.
 * [A239492](http://oeis.org/A239492) ([L07 program](239/A239492.asm)): The fifth bicycle lock sequence: a(n) is the maximum value of min{x*y, (5-x)*(n-y)} over 0 <= x <= 5, 0 <= y <= n for integers x, y.
 * [A239504](http://oeis.org/A239504) ([L07 program](239/A239504.asm)): Number of digits in the decimal expansion of n^10 (A008454).
@@ -2393,7 +2394,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A262267](http://oeis.org/A262267) ([L05 program](262/A262267.asm)): Number of (n+2) X (1+2) 0..1 arrays with each row and column divisible by 5, read as a binary number with top and left being the most significant bits.
 * [A262268](http://oeis.org/A262268) ([L07 program](262/A262268.asm)): Number of (n+2) X (2+2) 0..1 arrays with each row and column divisible by 5, read as a binary number with top and left being the most significant bits.
 * [A262303](http://oeis.org/A262303) ([L08 program](262/A262303.asm)): Length of sequence of lower halves of n: repeatedly apply x->floor(x/2) starting at n; a(n) = number of steps until reach one of 2,3,4.
-* [A262304](http://oeis.org/A262304) ([L13 program](262/A262304.asm)): Tail of sequence of lower halves of n: repeatedly apply x->floor(x/2) starting at n until reach one of 2,3,4; a(n) = whichever of 2,3,4 is reached.
+* [A262304](http://oeis.org/A262304) ([L08 program](262/A262304.asm)): Tail of sequence of lower halves of n: repeatedly apply x->floor(x/2) starting at n until reach one of 2,3,4; a(n) = whichever of 2,3,4 is reached.
 * [A262333](http://oeis.org/A262333) ([L07 program](262/A262333.asm)): Number of (n+3) X (1+3) 0..1 arrays with each row and column divisible by 9, read as a binary number with top and left being the most significant bits.
 * [A262334](http://oeis.org/A262334) ([L07 program](262/A262334.asm)): Number of (n+3)X(2+3) 0..1 arrays with each row and column divisible by 9, read as a binary number with top and left being the most significant bits.
 * [A262342](http://oeis.org/A262342) ([L16 program](262/A262342.asm)): Area of Lewis Carroll's paradoxical F(2n+1) X F(2n+3) rectangle.
@@ -3374,7 +3375,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A281813](http://oeis.org/A281813) ([L05 program](281/A281813.asm)): a(0) = 3, a(n) = 8*n + 4 for n > 0.
 * [A281814](http://oeis.org/A281814) ([L12 program](281/A281814.asm)): Expansion of f(x, x^8) in powers of x where f(, ) is Ramanujan's general theta function.
 * [A281899](http://oeis.org/A281899) ([L04 program](281/A281899.asm)): a(n) = n + 6*floor(n/3).
-* [A282004](http://oeis.org/A282004) ([L40 program](282/A282004.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 413", based on the 5-celled von Neumann neighborhood.
+* [A282004](http://oeis.org/A282004) ([L31 program](282/A282004.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 413", based on the 5-celled von Neumann neighborhood.
 * [A282022](http://oeis.org/A282022) ([L16 program](282/A282022.asm)): Start with 1; multiply alternately by 3 and 4.
 * [A282023](http://oeis.org/A282023) ([L15 program](282/A282023.asm)): Start with 1; multiply alternately by 4 and 3.
 * [A282057](http://oeis.org/A282057) ([L19 program](282/A282057.asm)): Odd numbers n such that for all k >= 1 the numbers n*4^k - 1 and n*4^k + 1 do not form a twin prime pair.
@@ -3494,7 +3495,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285954](http://oeis.org/A285954) ([L37 program](285/A285954.asm)): Positions of 1 in A285952; complement of A285953.
 * [A285958](http://oeis.org/A285958) ([L24 program](285/A285958.asm)): Positions of 0 in A285957; complement of A285959.
 * [A285962](http://oeis.org/A285962) ([L24 program](285/A285962.asm)): Positions of 1 in A285960; complement of A285961.
+* [A285967](http://oeis.org/A285967) ([L113 program](285/A285967.asm)): Positions of 0 in A285966; complement of A285968.
 * [A285974](http://oeis.org/A285974) ([L25 program](285/A285974.asm)): Positions of 1 in A285972; complement of A285973.
+* [A285977](http://oeis.org/A285977) ([L113 program](285/A285977.asm)): Positions of 1 in A285975; complement of A285976.
 * [A285998](http://oeis.org/A285998) ([L07 program](285/A285998.asm)): a(n) = Sum_{k=0..floor(n/2)} (n-k)*(k+1).
 * [A286016](http://oeis.org/A286016) ([L21 program](286/A286016.asm)): Signed continued fraction expansion with all signs negative of tanh(1).
 * [A286033](http://oeis.org/A286033) ([L12 program](286/A286033.asm)): a(n) = binomial(2*n-2, n-1) + (-1)^n.
