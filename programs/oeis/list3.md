@@ -644,6 +644,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316533](http://oeis.org/A316533) ([L23 program](316/A316533.asm)): a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
 * [A316562](http://oeis.org/A316562) ([L09 program](316/A316562.asm)): Koechel number for the works of W. A. Mozart rounded from age 11.
 * [A316571](http://oeis.org/A316571) ([L08 program](316/A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
+* [A316631](http://oeis.org/A316631) ([L102 program](316/A316631.asm)): Expansion of A(x) = x*(1+3*x^2+x^3+3*x^4+x^6)/(1-x^4)^2.
 * [A316671](http://oeis.org/A316671) ([L10 program](316/A316671.asm)): Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
 * [A316724](http://oeis.org/A316724) ([L20 program](316/A316724.asm)): Generalized 26-gonal (or icosihexagonal) numbers: m*(12*m - 11) with m = 0, +1, -1, +2, -2, +3, -3, ...
 * [A316725](http://oeis.org/A316725) ([L22 program](316/A316725.asm)): Generalized 27-gonal (or icosiheptagonal) numbers: m*(25*m - 23)/2 with m = 0, +1, -1, +2, -2, +3, -3, ...
@@ -962,7 +963,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329842](http://oeis.org/A329842) ([L15 program](329/A329842.asm)): Beatty sequence for (13+sqrt(109))/10.
 * [A329843](http://oeis.org/A329843) ([L23 program](329/A329843.asm)): Beatty sequence for (1+sqrt(61))/6.
 * [A329844](http://oeis.org/A329844) ([L11 program](329/A329844.asm)): Beatty sequence for (11+sqrt(61))/6.
-* [A329845](http://oeis.org/A329845) ([L70 program](329/A329845.asm)): Beatty sequence for (3+sqrt(29))/5.
+* [A329845](http://oeis.org/A329845) ([L20 program](329/A329845.asm)): Beatty sequence for (3+sqrt(29))/5.
 * [A329846](http://oeis.org/A329846) ([L25 program](329/A329846.asm)): Beatty sequence for (7+sqrt(29))/5.
 * [A329847](http://oeis.org/A329847) ([L05 program](329/A329847.asm)): Beatty sequence for (3+sqrt(89))/8.
 * [A329923](http://oeis.org/A329923) ([L49 program](329/A329923.asm)): Beatty sequence for (2+sqrt(34))/5.
@@ -1102,7 +1103,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334694](http://oeis.org/A334694) ([L12 program](334/A334694.asm)): a(n) = (n/4)*(n^3+2*n^2+5*n+8).
 * [A334706](http://oeis.org/A334706) ([L35 program](334/A334706.asm)): Number of collinear triples in a 4 X n rectangular grid.
 * [A334789](http://oeis.org/A334789) ([L16 program](334/A334789.asm)): a(n) = 2^log_2*(n) where log_2*(n) = A001069(n) is the number of log_2(log_2(...log_2(n))) iterations needed to reach < 2.
-* [A334954](http://oeis.org/A334954) ([L42 program](334/A334954.asm)): a(n) is 1 plus the number of divisors of n.
+* [A334954](http://oeis.org/A334954) ([L31 program](334/A334954.asm)): a(n) is 1 plus the number of divisors of n.
 * [A335025](http://oeis.org/A335025) ([L18 program](335/A335025.asm)): Largest side lengths of almost-equilateral Heronian triangles.
 * [A335047](http://oeis.org/A335047) ([L23 program](335/A335047.asm)): Maximum sum of primes (see Comments).
 * [A335048](http://oeis.org/A335048) ([L22 program](335/A335048.asm)): Minimum sum of primes (see Comments).

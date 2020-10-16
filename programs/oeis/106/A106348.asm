@@ -1,85 +1,23 @@
 ; A106348: Partial sums of a generalized Fredholm-Rueppel sequence.
 ; 1,0,2,1,1,1,3,2,2,2,2,2,2,2,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,6,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
 
-sub $4,$0
-sub $3,$0
 mov $2,$0
-mov $1,$0
-trn $0,2
-mov $6,$1
-mov $3,1
-mov $1,3
-add $4,9
-add $6,$6
-add $1,1
-mov $5,1
 mov $4,1
-mul $6,6
-mov $6,$5
-mul $0,2
-mov $6,$3
-mov $8,1
-sub $8,$1
-mov $3,1
-add $2,$3
-sub $5,2
+add $2,1
 mov $0,$2
-mov $7,1
-mov $5,$4
-mov $8,$5
-pow $2,2
-mov $4,$0
-sub $6,$0
 mov $2,1
-add $7,$1
-mov $6,5
-add $3,$8
-add $5,4
-div $7,12
-mov $5,6
 mul $2,$0
-log $2,$3
-mov $4,1
-mov $7,$2
-add $3,$0
-mov $2,$7
-add $6,$0
-add $5,2
-pow $4,$1
-pow $8,$0
-sub $7,$7
-add $7,1
-div $5,$6
-div $8,2
-add $4,$8
-mov $8,4
+log $2,2
+mov $3,4
 mov $1,1
-mov $3,3
 add $0,1
 lpb $0,1
-  mul $7,2
   sub $1,$2
   mov $2,1
   mov $5,$1
-  mov $3,1
   div $0,2
-  add $1,$8
-  pow $4,8
+  add $1,$3
   add $2,$4
-  add $6,9
-  sub $6,1
 lpe
-mov $5,$5
-mov $2,$3
-add $6,1
-mov $0,2
-div $1,$1
-mov $1,1
-mov $6,$2
-add $2,1
-sub $6,1
-add $3,6
-mov $6,$1
-trn $6,1
 mov $1,$5
 sub $1,2
