@@ -202,7 +202,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001550](http://oeis.org/A001550) ([L14 program](001/A001550.asm)): a(n) = 1^n + 2^n + 3^n.
 * [A001551](http://oeis.org/A001551) ([L21 program](001/A001551.asm)): a(n) = 1^n + 2^n + 3^n + 4^n.
 * [A001552](http://oeis.org/A001552) ([L22 program](001/A001552.asm)): 1^n + 2^n + ... + 5^n.
-* [A001553](http://oeis.org/A001553) ([L23 program](001/A001553.asm)): a(n) = 1^n + 2^n + ... + 6^n.
+* [A001553](http://oeis.org/A001553) ([L11 program](001/A001553.asm)): a(n) = 1^n + 2^n + ... + 6^n.
 * [A001561](http://oeis.org/A001561) ([L19 program](001/A001561.asm)): a(n) = (7*n+3)*(7*n+5)*(7*n+6).
 * [A001571](http://oeis.org/A001571) ([L07 program](001/A001571.asm)): a(0) = 0, a(1) = 2, a(n) = 4*a(n-1) - a(n-2) + 1.
 * [A001576](http://oeis.org/A001576) ([L07 program](001/A001576.asm)): a(n) = 1^n + 2^n + 4^n.
@@ -554,7 +554,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004921](http://oeis.org/A004921) ([L19 program](004/A004921.asm)): Floor of n*phi^6, phi = golden ratio, A001622.
 * [A004923](http://oeis.org/A004923) ([L07 program](004/A004923.asm)): Floor of n*phi^8, where phi is the golden ratio, A001622.
 * [A004924](http://oeis.org/A004924) ([L02 program](004/A004924.asm)): Floor of n*phi^9, where phi is the golden ratio, A001622.
-* [A004925](http://oeis.org/A004925) ([L14 program](004/A004925.asm)): Floor of n*phi^10, where phi is the golden ratio, A001622.
+* [A004925](http://oeis.org/A004925) ([L10 program](004/A004925.asm)): Floor of n*phi^10, where phi is the golden ratio, A001622.
 * [A004926](http://oeis.org/A004926) ([L02 program](004/A004926.asm)): Floor of n*phi^11, where phi is the golden ratio, A001622.
 * [A004927](http://oeis.org/A004927) ([L07 program](004/A004927.asm)): Floor of n*phi^12, where phi is the golden ratio, A001622.
 * [A004928](http://oeis.org/A004928) ([L02 program](004/A004928.asm)): Floor of n*phi^13, where phi is the golden ratio, A001622.
@@ -2053,7 +2053,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A020911](http://oeis.org/A020911) ([L08 program](020/A020911.asm)): Number of digits in the base 3 representation of n-th Fibonacci number.
 * [A020912](http://oeis.org/A020912) ([L18 program](020/A020912.asm)): Number of terms in base 4 representation of n-th Fibonacci number.
 * [A020913](http://oeis.org/A020913) ([L15 program](020/A020913.asm)): Number of terms in base 5 representation of Fibonacci(n).
-* [A020987](http://oeis.org/A020987) ([L62 program](020/A020987.asm)): Zero-one version of Golay-Rudin-Shapiro sequence (or word).
+* [A020987](http://oeis.org/A020987) ([L15 program](020/A020987.asm)): Zero-one version of Golay-Rudin-Shapiro sequence (or word).
 * [A020988](http://oeis.org/A020988) ([L04 program](020/A020988.asm)): a(n) = (2/3)*(4^n-1).
 * [A020989](http://oeis.org/A020989) ([L04 program](020/A020989.asm)): a(n) = (5*4^n - 2)/3.
 * [A021001](http://oeis.org/A021001) ([L15 program](021/A021001.asm)): Pisot sequence P(2,9).
@@ -2091,7 +2091,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021139](http://oeis.org/A021139) ([L13 program](021/A021139.asm)): Decimal expansion of 1/135.
 * [A021147](http://oeis.org/A021147) ([L16 program](021/A021147.asm)): Decimal expansion of 1/143.
 * [A021148](http://oeis.org/A021148) ([L06 program](021/A021148.asm)): Decimal expansion of 1/144.
-* [A021152](http://oeis.org/A021152) ([L08 program](021/A021152.asm)): Decimal expansion of 1/148.
+* [A021152](http://oeis.org/A021152) ([L19 program](021/A021152.asm)): Decimal expansion of 1/148.
 * [A021160](http://oeis.org/A021160) ([L15 program](021/A021160.asm)): Decimal expansion of 1/156.
 * [A021169](http://oeis.org/A021169) ([L04 program](021/A021169.asm)): Decimal expansion of 1/165.
 * [A021180](http://oeis.org/A021180) ([L56 program](021/A021180.asm)): Decimal expansion of 1/176.
@@ -5540,7 +5540,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060883](http://oeis.org/A060883) ([L05 program](060/A060883.asm)): a(n) = n^6 + n^3 + 1.
 * [A060884](http://oeis.org/A060884) ([L07 program](060/A060884.asm)): a(n) = n^4 - n^3 + n^2 - n + 1.
 * [A060885](http://oeis.org/A060885) ([L09 program](060/A060885.asm)): a(n) = Sum_{j=0..10} n^j.
-* [A060886](http://oeis.org/A060886) ([L06 program](060/A060886.asm)): a(n) = n^4 - n^2 + 1.
+* [A060886](http://oeis.org/A060886) ([L05 program](060/A060886.asm)): a(n) = n^4 - n^2 + 1.
 * [A060888](http://oeis.org/A060888) ([L06 program](060/A060888.asm)): a(n) = n^6 - n^5 + n^4 - n^3 + n^2 - n + 1.
 * [A060890](http://oeis.org/A060890) ([L03 program](060/A060890.asm)): n^8 + 1.
 * [A060891](http://oeis.org/A060891) ([L05 program](060/A060891.asm)): a(n) = n^6 - n^3 + 1.
@@ -6487,7 +6487,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071252](http://oeis.org/A071252) ([L05 program](071/A071252.asm)): a(n) = n*(n - 1)*(n^2 + 1)/2.
 * [A071253](http://oeis.org/A071253) ([L04 program](071/A071253.asm)): n^2*(n^2+1).
 * [A071270](http://oeis.org/A071270) ([L06 program](071/A071270.asm)): a(n) = n^2*(2*n^2+1)/3.
-* [A071271](http://oeis.org/A071271) ([L09 program](071/A071271.asm)): Duplicate of A066492.
+* [A071271](http://oeis.org/A071271) ([L07 program](071/A071271.asm)): Duplicate of A066492.
 * [A071274](http://oeis.org/A071274) ([L19 program](071/A071274.asm)): A071273 divided by 11.
 * [A071279](http://oeis.org/A071279) ([L05 program](071/A071279.asm)): Kissing number of regular n-gon.
 * [A071282](http://oeis.org/A071282) ([L05 program](071/A071282.asm)): Denominators of Peirce sequence of order 3.
@@ -7201,6 +7201,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081753](http://oeis.org/A081753) ([L24 program](081/A081753.asm)): a(n) = floor(n/12) if n==2 (mod 12); a(n)=floor(n/12)+1 otherwise.
 * [A081769](http://oeis.org/A081769) ([L34 program](081/A081769.asm)): a(n)-th term of the continued fraction for sum(k>=0,1/2^(2^k)) is 2.
 * [A081808](http://oeis.org/A081808) ([L03 program](081/A081808.asm)): Numbers n such that the largest prime power in the factorization of n equals phi(n).
+* [A081834](http://oeis.org/A081834) ([L69 program](081/A081834.asm)): a(1)=1, a(n)=a(n-1)+4 if n is already in the sequence, a(n)=a(n-1)+3 otherwise.
 * [A081835](http://oeis.org/A081835) ([L35 program](081/A081835.asm)): a(1)=1, a(n) = a(n-1) + 5 if n is already in the sequence, a(n) = a(n-1) + 4 otherwise.
 * [A081839](http://oeis.org/A081839) ([L09 program](081/A081839.asm)): a(1)=0, a(n)=a(n-1)+4 if n is already in the sequence, a(n)=a(n-1)+5 otherwise.
 * [A081840](http://oeis.org/A081840) ([L19 program](081/A081840.asm)): a(1)=0, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+4 otherwise.

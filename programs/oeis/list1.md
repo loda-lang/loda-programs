@@ -1377,6 +1377,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122573](http://oeis.org/A122573) ([L12 program](122/A122573.asm)): Expansion of -x*(1+x)*(3*x^2-1) / ( 1-4*x^2+x^4 ).
 * [A122586](http://oeis.org/A122586) ([L07 program](122/A122586.asm)): Leading digit of n expressed in base 3.
 * [A122587](http://oeis.org/A122587) ([L11 program](122/A122587.asm)): Leading digit of n in base 4.
+* [A122606](http://oeis.org/A122606) ([L09 program](122/A122606.asm)): n^(n+1) mod 7.
 * [A122619](http://oeis.org/A122619) ([L46 program](122/A122619.asm)): n_{2n}.
 * [A122620](http://oeis.org/A122620) ([L14 program](122/A122620.asm)): n_{n+1}.
 * [A122638](http://oeis.org/A122638) ([L19 program](122/A122638.asm)): {n+1}_n.
@@ -1563,7 +1564,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126564](http://oeis.org/A126564) ([L17 program](126/A126564.asm)): Floor( sin(n)*cos(n) ).
 * [A126565](http://oeis.org/A126565) ([L14 program](126/A126565.asm)): a(n) = ceiling(sin(n)*cos(n)).
 * [A126587](http://oeis.org/A126587) ([L05 program](126/A126587.asm)): a(n) is the number of integer lattice points inside the right triangle with legs 3n and 4n (and hypotenuse 5n).
-* [A126590](http://oeis.org/A126590) ([L109 program](126/A126590.asm)): Multiples of 3 or 5 but not both.
+* [A126590](http://oeis.org/A126590) ([L26 program](126/A126590.asm)): Multiples of 3 or 5 but not both.
 * [A126592](http://oeis.org/A126592) ([L25 program](126/A126592.asm)): Sum of numbers less than or equal to n which are multiples of 3 or 5.
 * [A126644](http://oeis.org/A126644) ([L14 program](126/A126644.asm)): a(n) is the number of integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4,5,6 and at least one of digits 7,8,9.
 * [A126645](http://oeis.org/A126645) ([L11 program](126/A126645.asm)): a(n) is the number of integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4 and 5, at least one of digits 6,7 and at least one of digits 8,9.
@@ -1593,8 +1594,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127211](http://oeis.org/A127211) ([L14 program](127/A127211.asm)): a(n) = 4^n*Lucas(n), where Lucas = A000204.
 * [A127226](http://oeis.org/A127226) ([L68 program](127/A127226.asm)): a(0)=2, a(1)=2, a(n) = 2*a(n-1) + 6*a(n-2).
 * [A127227](http://oeis.org/A127227) ([L06 program](127/A127227.asm)): a(n)= numerator of ((n + 3)! - (n - 3)!)/(n!).
-* [A127245](http://oeis.org/A127245) ([L133 program](127/A127245.asm)): Row sums of a signed Thue-Morse related triangle.
-* [A127252](http://oeis.org/A127252) ([L135 program](127/A127252.asm)): Sequence composed of 1 and -1 with the -1's occurring at odious indexed positions given by A091855.
+* [A127245](http://oeis.org/A127245) ([L77 program](127/A127245.asm)): Row sums of a signed Thue-Morse related triangle.
+* [A127252](http://oeis.org/A127252) ([L79 program](127/A127252.asm)): Sequence composed of 1 and -1 with the -1's occurring at odious indexed positions given by A091855.
 * [A127254](http://oeis.org/A127254) ([L35 program](127/A127254.asm)): (0,1) sequence whose zero positions are indexed by twice the odious numbers given by A091855.
 * [A127261](http://oeis.org/A127261) ([L68 program](127/A127261.asm)): a(0)=2, a(1)=2, a(n) = 2*a(n-1) + 10*a(n-2).
 * [A127262](http://oeis.org/A127262) ([L68 program](127/A127262.asm)): a(0)=2, a(1)=2, a(n) = 2*a(n-1) + 12*a(n-2).
@@ -4247,7 +4248,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162550](http://oeis.org/A162550) ([L16 program](162/A162550.asm)): 2n repeated C_n times, where C_n = A000108(n) is a Catalan number.
 * [A162551](http://oeis.org/A162551) ([L07 program](162/A162551.asm)): a(n) = 2 * C(2*n,n-1).
 * [A162559](http://oeis.org/A162559) ([L10 program](162/A162559.asm)): a(n) = ((4+sqrt(3))*(1+sqrt(3))^n + (4-sqrt(3))*(1-sqrt(3))^n)/2.
-* [A162560](http://oeis.org/A162560) ([L64 program](162/A162560.asm)): a(n) = (4+sqrt(3))*(3+sqrt(3))^n + (4-sqrt(3))*(3-sqrt(3))^n.
+* [A162560](http://oeis.org/A162560) ([L25 program](162/A162560.asm)): a(n) = (4+sqrt(3))*(3+sqrt(3))^n + (4-sqrt(3))*(3-sqrt(3))^n.
 * [A162562](http://oeis.org/A162562) ([L12 program](162/A162562.asm)): a(n) = ((5+sqrt(3))*(1+sqrt(3))^n + (5-sqrt(3))*(1-sqrt(3))^n)/2.
 * [A162563](http://oeis.org/A162563) ([L10 program](162/A162563.asm)): a(n) = ((5+sqrt(3))*(2+sqrt(3))^n + (5-sqrt(3))*(2-sqrt(3))^n)/2.
 * [A162607](http://oeis.org/A162607) ([L22 program](162/A162607.asm)): a(n) = n*(n^2 - 4*n + 5)/2.
@@ -4645,6 +4646,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167533](http://oeis.org/A167533) ([L15 program](167/A167533.asm)): a(n) = 71*n - a(n-1) for n>0, a(0)=12.
 * [A167534](http://oeis.org/A167534) ([L22 program](167/A167534.asm)): a(n) = 79*n - a(n-1) for n>0, a(0)=9.
 * [A167541](http://oeis.org/A167541) ([L11 program](167/A167541.asm)): a(n) = -(n - 4)*(n - 5)*(n - 12)/6.
+* [A167543](http://oeis.org/A167543) ([L82 program](167/A167543.asm)): a(n) = (n-5)*(n-6)*(n-7)*(n-16)/24.
 * [A167544](http://oeis.org/A167544) ([L04 program](167/A167544.asm)): a(n) = (n-3)*(n-8)/2 .
 * [A167545](http://oeis.org/A167545) ([L03 program](167/A167545.asm)): n^6 mod 16.
 * [A167547](http://oeis.org/A167547) ([L11 program](167/A167547.asm)): The fourth row of the ED1 array A167546.
@@ -5982,6 +5984,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184425](http://oeis.org/A184425) ([L41 program](184/A184425.asm)): Lower s-Wythoff sequence, where s=A000217 (triangular numbers).  Complement of A184426.
 * [A184427](http://oeis.org/A184427) ([L13 program](184/A184427.asm)): Lower s-Wythoff sequence of A000290 (the squares).  Complement of A184428.
 * [A184480](http://oeis.org/A184480) ([L13 program](184/A184480.asm)): Lower s-Wythoff sequence, where s(n)=3n.  Complement of A001956.
+* [A184482](http://oeis.org/A184482) ([L78 program](184/A184482.asm)): Lower s-Wythoff sequence, where s(n)=3n-1.  Complement of A184483.
 * [A184483](http://oeis.org/A184483) ([L20 program](184/A184483.asm)): Upper s-Wythoff sequence, where s(n)=3n-1.  Complement of A184482.
 * [A184485](http://oeis.org/A184485) ([L22 program](184/A184485.asm)): Upper s-Wythoff sequence, where s(n)=3n-2.  Complement of A184484.
 * [A184514](http://oeis.org/A184514) ([L19 program](184/A184514.asm)): Lower s-Wythoff sequence, where s(n)=4n-1.  Complement of A184515.

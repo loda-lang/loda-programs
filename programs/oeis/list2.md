@@ -1506,7 +1506,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239367](http://oeis.org/A239367) ([L49 program](239/A239367.asm)): The bisection of A238315 that remains constant with changes in the offset of the exponent of the second term.
 * [A239447](http://oeis.org/A239447) ([L25 program](239/A239447.asm)): Partial sums of A030101.
 * [A239449](http://oeis.org/A239449) ([L05 program](239/A239449.asm)): 7*n^2 - 5*n + 1.
-* [A239459](http://oeis.org/A239459) ([L55 program](239/A239459.asm)): Concatenation of n^3 and n.
+* [A239459](http://oeis.org/A239459) ([L37 program](239/A239459.asm)): Concatenation of n^3 and n.
 * [A239463](http://oeis.org/A239463) ([L37 program](239/A239463.asm)): A239460(n) / n^2.
 * [A239492](http://oeis.org/A239492) ([L07 program](239/A239492.asm)): The fifth bicycle lock sequence: a(n) is the maximum value of min{x*y, (5-x)*(n-y)} over 0 <= x <= 5, 0 <= y <= n for integers x, y.
 * [A239504](http://oeis.org/A239504) ([L07 program](239/A239504.asm)): Number of digits in the decimal expansion of n^10 (A008454).
@@ -1812,6 +1812,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247061](http://oeis.org/A247061) ([L11 program](247/A247061.asm)): Dynamic Betting Game D(n,5,1).
 * [A247062](http://oeis.org/A247062) ([L24 program](247/A247062.asm)): Dynamic Betting Game D(n,5,2).
 * [A247063](http://oeis.org/A247063) ([L26 program](247/A247063.asm)): Dynamic Betting Game D(n,5,3).
+* [A247110](http://oeis.org/A247110) ([L24 program](247/A247110.asm)): n + reversal of digits of n, when n is not palindromic
 * [A247112](http://oeis.org/A247112) ([L40 program](247/A247112.asm)): Floor of sums of the cubes of the non-integer square roots of n, as partitioned by the integer roots: floor( sum( j from n^2+1 to (n+1)^2-1, j^(3/2) ) ).
 * [A247128](http://oeis.org/A247128) ([L11 program](247/A247128.asm)): Positive numbers that are congruent to {0,5,9,13,17} mod 22.
 * [A247155](http://oeis.org/A247155) ([L05 program](247/A247155.asm)): 31n^2 + 1
@@ -3402,7 +3403,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A282702](http://oeis.org/A282702) ([L13 program](282/A282702.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=4, a(1)=11.
 * [A282703](http://oeis.org/A282703) ([L13 program](282/A282703.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=7, a(1)=26.
 * [A282737](http://oeis.org/A282737) ([L11 program](282/A282737.asm)): Expansion of (x^6 - x^4 + x^3 - x - 1)/((x - 1)^3*(x + 1)^2).
-* [A282738](http://oeis.org/A282738) ([L10 program](282/A282738.asm)): First differences of A282737.
+* [A282738](http://oeis.org/A282738) ([L19 program](282/A282738.asm)): First differences of A282737.
 * [A282779](http://oeis.org/A282779) ([L22 program](282/A282779.asm)): Period of cubes mod n.
 * [A282798](http://oeis.org/A282798) ([L19 program](282/A282798.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 505", based on the 5-celled von Neumann neighborhood.
 * [A282802](http://oeis.org/A282802) ([L19 program](282/A282802.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 507", based on the 5-celled von Neumann neighborhood.
@@ -3474,6 +3475,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285383](http://oeis.org/A285383) ([L32 program](285/A285383.asm)): Limiting 0-word of the morphism 0 -> 11, 1 -> 01.
 * [A285384](http://oeis.org/A285384) ([L07 program](285/A285384.asm)): Limiting 1-word of the morphism 0 -> 11, 1 -> 01.
 * [A285440](http://oeis.org/A285440) ([L15 program](285/A285440.asm)): Consider the sums of the numbers < n that share the same greatest common divisor with n. Sequence lists numbers that have only one of those sums equal to n.
+* [A285465](http://oeis.org/A285465) ([L27 program](285/A285465.asm)): Positions of 0 in A285464; complement of A285466.
 * [A285475](http://oeis.org/A285475) ([L12 program](285/A285475.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A285476](http://oeis.org/A285476) ([L04 program](285/A285476.asm)): Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 6", based on the 5-celled von Neumann neighborhood.
 * [A285524](http://oeis.org/A285524) ([L09 program](285/A285524.asm)): a(n) is the value d<n/2 maximizing the expression d!*(d + 1)!*(2^(n-2*d-1)*stirling2(n-d, d+1), for n>=4.
@@ -3495,9 +3497,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285954](http://oeis.org/A285954) ([L37 program](285/A285954.asm)): Positions of 1 in A285952; complement of A285953.
 * [A285958](http://oeis.org/A285958) ([L24 program](285/A285958.asm)): Positions of 0 in A285957; complement of A285959.
 * [A285962](http://oeis.org/A285962) ([L24 program](285/A285962.asm)): Positions of 1 in A285960; complement of A285961.
-* [A285967](http://oeis.org/A285967) ([L113 program](285/A285967.asm)): Positions of 0 in A285966; complement of A285968.
+* [A285967](http://oeis.org/A285967) ([L55 program](285/A285967.asm)): Positions of 0 in A285966; complement of A285968.
 * [A285974](http://oeis.org/A285974) ([L25 program](285/A285974.asm)): Positions of 1 in A285972; complement of A285973.
-* [A285977](http://oeis.org/A285977) ([L113 program](285/A285977.asm)): Positions of 1 in A285975; complement of A285976.
+* [A285977](http://oeis.org/A285977) ([L57 program](285/A285977.asm)): Positions of 1 in A285975; complement of A285976.
 * [A285998](http://oeis.org/A285998) ([L07 program](285/A285998.asm)): a(n) = Sum_{k=0..floor(n/2)} (n-k)*(k+1).
 * [A286016](http://oeis.org/A286016) ([L21 program](286/A286016.asm)): Signed continued fraction expansion with all signs negative of tanh(1).
 * [A286033](http://oeis.org/A286033) ([L12 program](286/A286033.asm)): a(n) = binomial(2*n-2, n-1) + (-1)^n.
