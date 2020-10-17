@@ -56,7 +56,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A202107](http://oeis.org/A202107) ([L09 program](202/A202107.asm)): n^4*(n+1)^4/8.
 * [A202109](http://oeis.org/A202109) ([L12 program](202/A202109.asm)): n^3*(n+1)^3*(n+2)^3/72.
 * [A202141](http://oeis.org/A202141) ([L08 program](202/A202141.asm)): a(n) = 13*n^2 - 16*n + 5.
-* [A202195](http://oeis.org/A202195) ([L08 program](202/A202195.asm)): Number of (n+2) X 3 binary arrays avoiding patterns 001 and 101 in rows and columns.
+* [A202195](http://oeis.org/A202195) ([L07 program](202/A202195.asm)): Number of (n+2) X 3 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202196](http://oeis.org/A202196) ([L19 program](202/A202196.asm)): Number of (n+2) X 4 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202197](http://oeis.org/A202197) ([L19 program](202/A202197.asm)): Number of (n+2) X 5 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202198](http://oeis.org/A202198) ([L17 program](202/A202198.asm)): Number of (n+2) X 6 binary arrays avoiding patterns 001 and 101 in rows and columns.
@@ -1423,6 +1423,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A236432](http://oeis.org/A236432) ([L03 program](236/A236432.asm)): a(n) = (2n-1)*210; numbers which are 210 times an odd number.
 * [A236453](http://oeis.org/A236453) ([L10 program](236/A236453.asm)): Number of length n strings on the alphabet {0,1,2} of the form 0^i 1^j 2^k such that i,j,k>=0 and if i=1 then j=k.
 * [A236535](http://oeis.org/A236535) ([L04 program](236/A236535.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 3, 1; pattern 1) after n rotations.
+* [A236652](http://oeis.org/A236652) ([L22 program](236/A236652.asm)): Positive integers n such that n^2 divided by the digital root of n is a square.
 * [A236653](http://oeis.org/A236653) ([L17 program](236/A236653.asm)): Positive integers n such that n^3 divided by the digital root of n is a cube.
 * [A236677](http://oeis.org/A236677) ([L05 program](236/A236677.asm)): a(0)=1 and for n>0, a(n) = (1-a(floor(log2(n)))) * a(n-msb(n)); Characteristic function of A079599.
 * [A236678](http://oeis.org/A236678) ([L14 program](236/A236678.asm)): Partial sums of the characteristic function of A079599.
@@ -1527,6 +1528,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239844](http://oeis.org/A239844) ([L29 program](239/A239844.asm)): Number of n X 2 0..3 arrays with no element equal to one plus the sum of elements to its left or one plus the sum of elements above it or two plus the sum of the elements diagonally to its northwest, modulo 4.
 * [A240001](http://oeis.org/A240001) ([L10 program](240/A240001.asm)): Number of 2 X n 0..3 arrays with no element equal to one plus the sum of elements to its left or two plus the sum of the elements above it or one plus the sum of the elements diagonally to its northwest, modulo 4.
 * [A240025](http://oeis.org/A240025) ([L13 program](240/A240025.asm)): Characteristic function of quarter squares, cf. A002620.
+* [A240115](http://oeis.org/A240115) ([L33 program](240/A240115.asm)): Schoenheim lower bound L(n,4,2).
 * [A240134](http://oeis.org/A240134) ([L11 program](240/A240134.asm)): Numerator of (n-1) * ceiling(n/2) / n.
 * [A240137](http://oeis.org/A240137) ([L13 program](240/A240137.asm)): Sum of n consecutive cubes starting from n^3.
 * [A240226](http://oeis.org/A240226) ([L16 program](240/A240226.asm)): 4-adic value of 1/n, n >= 1.
@@ -1812,7 +1814,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247061](http://oeis.org/A247061) ([L11 program](247/A247061.asm)): Dynamic Betting Game D(n,5,1).
 * [A247062](http://oeis.org/A247062) ([L24 program](247/A247062.asm)): Dynamic Betting Game D(n,5,2).
 * [A247063](http://oeis.org/A247063) ([L26 program](247/A247063.asm)): Dynamic Betting Game D(n,5,3).
-* [A247110](http://oeis.org/A247110) ([L24 program](247/A247110.asm)): n + reversal of digits of n, when n is not palindromic
+* [A247110](http://oeis.org/A247110) ([L11 program](247/A247110.asm)): n + reversal of digits of n, when n is not palindromic
 * [A247112](http://oeis.org/A247112) ([L40 program](247/A247112.asm)): Floor of sums of the cubes of the non-integer square roots of n, as partitioned by the integer roots: floor( sum( j from n^2+1 to (n+1)^2-1, j^(3/2) ) ).
 * [A247128](http://oeis.org/A247128) ([L11 program](247/A247128.asm)): Positive numbers that are congruent to {0,5,9,13,17} mod 22.
 * [A247155](http://oeis.org/A247155) ([L05 program](247/A247155.asm)): 31n^2 + 1
@@ -3475,7 +3477,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285383](http://oeis.org/A285383) ([L32 program](285/A285383.asm)): Limiting 0-word of the morphism 0 -> 11, 1 -> 01.
 * [A285384](http://oeis.org/A285384) ([L07 program](285/A285384.asm)): Limiting 1-word of the morphism 0 -> 11, 1 -> 01.
 * [A285440](http://oeis.org/A285440) ([L15 program](285/A285440.asm)): Consider the sums of the numbers < n that share the same greatest common divisor with n. Sequence lists numbers that have only one of those sums equal to n.
-* [A285465](http://oeis.org/A285465) ([L27 program](285/A285465.asm)): Positions of 0 in A285464; complement of A285466.
 * [A285475](http://oeis.org/A285475) ([L12 program](285/A285475.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A285476](http://oeis.org/A285476) ([L04 program](285/A285476.asm)): Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 6", based on the 5-celled von Neumann neighborhood.
 * [A285524](http://oeis.org/A285524) ([L09 program](285/A285524.asm)): a(n) is the value d<n/2 maximizing the expression d!*(d + 1)!*(2^(n-2*d-1)*stirling2(n-d, d+1), for n>=4.
@@ -3619,7 +3620,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288938](http://oeis.org/A288938) ([L20 program](288/A288938.asm)): Positions of 1 in A288936; complement of A288937.
 * [A288958](http://oeis.org/A288958) ([L10 program](288/A288958.asm)): Number of cliques in the n X n rook graph.
 * [A288959](http://oeis.org/A288959) ([L07 program](288/A288959.asm)): a(n) = n^2*(n^2 - 1)^2/2.
-* [A288961](http://oeis.org/A288961) ([L11 program](288/A288961.asm)): Number of 3-cycles in the n X n rook graph.
+* [A288961](http://oeis.org/A288961) ([L06 program](288/A288961.asm)): Number of 3-cycles in the n X n rook graph.
 * [A288962](http://oeis.org/A288962) ([L18 program](288/A288962.asm)): Number of 4-cycles in the n X n rook graph.
 * [A288998](http://oeis.org/A288998) ([L22 program](288/A288998.asm)): Positions of 0 in A288997; complement of A288999.
 * [A288999](http://oeis.org/A288999) ([L49 program](288/A288999.asm)): Positions of 1 in A288997; complement of A288998.

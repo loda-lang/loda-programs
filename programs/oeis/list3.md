@@ -1151,7 +1151,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337483](http://oeis.org/A337483) ([L04 program](337/A337483.asm)): Number of ordered triples of positive integers summing to n that are either weakly increasing or weakly decreasing.
 * [A337484](http://oeis.org/A337484) ([L11 program](337/A337484.asm)): Number of ordered triples of positive integers summing to n that are neither strictly increasing nor strictly decreasing.
 * [A337519](http://oeis.org/A337519) ([L21 program](337/A337519.asm)): Length of the shortest walk in a n X n grid graph that starts in one corner and visits every edge.
-* [A337843](http://oeis.org/A337843) ([L47 program](337/A337843.asm)): a(n) is n + the number of digits in the decimal expansion of n.
+* [A337843](http://oeis.org/A337843) ([L07 program](337/A337843.asm)): a(n) is n + the number of digits in the decimal expansion of n.
 * [A337864](http://oeis.org/A337864) ([L17 program](337/A337864.asm)): Numbers formed by removing from n each digit if it is a duplicate of the previous digit, from left to right.
 * [A337899](http://oeis.org/A337899) ([L11 program](337/A337899.asm)): Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.
 * [A337909](http://oeis.org/A337909) ([L21 program](337/A337909.asm)): Distinct terms of A080079 in the order in which they appear.
@@ -1159,4 +1159,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337957](http://oeis.org/A337957) ([L11 program](337/A337957.asm)): Number of unoriented colorings of the 8 cubic facets of a tesseract or of the 8 vertices of a hyperoctahedron.
 * [A337976](http://oeis.org/A337976) ([L34 program](337/A337976.asm)): Number of partitions of n into two distinct parts (s,t), such that s | t, (t-s) | n, and where n/(t-s) <= s < t.
 * [A338042](http://oeis.org/A338042) ([L19 program](338/A338042.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of vertices thus created. See Comments for details.
-* [A338086](http://oeis.org/A338086) ([L71 program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
+* [A338086](http://oeis.org/A338086) ([L22 program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.

@@ -1358,6 +1358,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122124](http://oeis.org/A122124) ([L13 program](122/A122124.asm)): Numbers n such that 25 divides Sum[ Prime[k]^n, {k,1,n}].
 * [A122188](http://oeis.org/A122188) ([L15 program](122/A122188.asm)): Triangle read by rows, formed from the coefficients of characteristic polynomials of the following sequence of matrices: 2 X 2 {{0, 1}, {1, 1}}, 3 X 3 {{0, 1, 0}, {0, 0, 1}, {1, 1, 1}}, 4 X 4 {{0, 1,0, 0}, {0, 0, 1, 0}, {0, 0, 0, 1}, {1, 1, 1, 1}}, 5 X 5 {{0, 1, 0, 0, 0}, {0, 0, 1, 0, 0}, {0, 0, 0, 1, 0}, {0, 0, 0, 0, 1}, {1, 1, 1, 1, 1}}, ...
 * [A122197](http://oeis.org/A122197) ([L14 program](122/A122197.asm)): Fractal sequence: count up to successive integers twice.
+* [A122219](http://oeis.org/A122219) ([L36 program](122/A122219.asm)): Period 9: repeat 5, 4, 5, 4, 3, 4, 5, 4, 5.
 * [A122229](http://oeis.org/A122229) ([L09 program](122/A122229.asm)): a(n) = A014486(A122228(n)).
 * [A122247](http://oeis.org/A122247) ([L14 program](122/A122247.asm)): Partial sums of A005187.
 * [A122248](http://oeis.org/A122248) ([L23 program](122/A122248.asm)): a(n) - a(n-1) = A113474(n).
@@ -1377,7 +1378,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122573](http://oeis.org/A122573) ([L12 program](122/A122573.asm)): Expansion of -x*(1+x)*(3*x^2-1) / ( 1-4*x^2+x^4 ).
 * [A122586](http://oeis.org/A122586) ([L07 program](122/A122586.asm)): Leading digit of n expressed in base 3.
 * [A122587](http://oeis.org/A122587) ([L11 program](122/A122587.asm)): Leading digit of n in base 4.
-* [A122606](http://oeis.org/A122606) ([L09 program](122/A122606.asm)): n^(n+1) mod 7.
+* [A122606](http://oeis.org/A122606) ([L07 program](122/A122606.asm)): n^(n+1) mod 7.
 * [A122619](http://oeis.org/A122619) ([L46 program](122/A122619.asm)): n_{2n}.
 * [A122620](http://oeis.org/A122620) ([L14 program](122/A122620.asm)): n_{n+1}.
 * [A122638](http://oeis.org/A122638) ([L19 program](122/A122638.asm)): {n+1}_n.
@@ -4047,6 +4048,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158780](http://oeis.org/A158780) ([L08 program](158/A158780.asm)): a(2n) = A131577(n). a(2n+1) = A011782(n).
 * [A158799](http://oeis.org/A158799) ([L04 program](158/A158799.asm)): a(0)=1, a(1)=2, a(n)=3 for n>=2.
 * [A158803](http://oeis.org/A158803) ([L12 program](158/A158803.asm)): Numbers k such that k^2 == 2 (mod 41).
+* [A158821](http://oeis.org/A158821) ([L08 program](158/A158821.asm)): Triangle read by rows: row n (n>=0) ends with 1, and for n>=1 begins with n; other entries are zero.
 * [A158842](http://oeis.org/A158842) ([L05 program](158/A158842.asm)): 1 + n*(n+1)*(n-1)/2.
 * [A158869](http://oeis.org/A158869) ([L10 program](158/A158869.asm)): Number of ways of filling a 2 X 3 X 2n hole with 1 X 2 X 2 bricks.
 * [A158874](http://oeis.org/A158874) ([L04 program](158/A158874.asm)): a(n) = (n + 4)*(n + 3)*(n + 2)*(n + 1)*n / 5 = 24*A000389(n+4).
@@ -4646,7 +4648,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167533](http://oeis.org/A167533) ([L15 program](167/A167533.asm)): a(n) = 71*n - a(n-1) for n>0, a(0)=12.
 * [A167534](http://oeis.org/A167534) ([L22 program](167/A167534.asm)): a(n) = 79*n - a(n-1) for n>0, a(0)=9.
 * [A167541](http://oeis.org/A167541) ([L11 program](167/A167541.asm)): a(n) = -(n - 4)*(n - 5)*(n - 12)/6.
-* [A167543](http://oeis.org/A167543) ([L82 program](167/A167543.asm)): a(n) = (n-5)*(n-6)*(n-7)*(n-16)/24.
+* [A167543](http://oeis.org/A167543) ([L09 program](167/A167543.asm)): a(n) = (n-5)*(n-6)*(n-7)*(n-16)/24.
 * [A167544](http://oeis.org/A167544) ([L04 program](167/A167544.asm)): a(n) = (n-3)*(n-8)/2 .
 * [A167545](http://oeis.org/A167545) ([L03 program](167/A167545.asm)): n^6 mod 16.
 * [A167547](http://oeis.org/A167547) ([L11 program](167/A167547.asm)): The fourth row of the ED1 array A167546.
@@ -5133,6 +5135,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171499](http://oeis.org/A171499) ([L06 program](171/A171499.asm)): a(n) = 6*a(n-1) - 8*a(n-2) for n > 1; a(0) = 3, a(1) = 14.
 * [A171501](http://oeis.org/A171501) ([L21 program](171/A171501.asm)): Inverse binomial transform of A084640.
 * [A171507](http://oeis.org/A171507) ([L17 program](171/A171507.asm)): a(n) = (5*2^(n+1)-9-(-1)^n)/6-2*n.
+* [A171511](http://oeis.org/A171511) ([L53 program](171/A171511.asm)): Numbers that are not the sum of the k-th composite number and k for any k >= 1.
 * [A171516](http://oeis.org/A171516) ([L09 program](171/A171516.asm)): a(n) = a(n-1) + a(n-2) + k, n>1; with a(0) = 1, a(1) = 2, k = 3.
 * [A171519](http://oeis.org/A171519) ([L19 program](171/A171519.asm)): a(n) = numbers m such that are not the product of k-th noncomposite number and k for any k >= 1.
 * [A171522](http://oeis.org/A171522) ([L21 program](171/A171522.asm)): Denominator of 1/n^2-1/(n+2)^2.
@@ -5984,7 +5987,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184425](http://oeis.org/A184425) ([L41 program](184/A184425.asm)): Lower s-Wythoff sequence, where s=A000217 (triangular numbers).  Complement of A184426.
 * [A184427](http://oeis.org/A184427) ([L13 program](184/A184427.asm)): Lower s-Wythoff sequence of A000290 (the squares).  Complement of A184428.
 * [A184480](http://oeis.org/A184480) ([L13 program](184/A184480.asm)): Lower s-Wythoff sequence, where s(n)=3n.  Complement of A001956.
-* [A184482](http://oeis.org/A184482) ([L78 program](184/A184482.asm)): Lower s-Wythoff sequence, where s(n)=3n-1.  Complement of A184483.
+* [A184482](http://oeis.org/A184482) ([L26 program](184/A184482.asm)): Lower s-Wythoff sequence, where s(n)=3n-1.  Complement of A184483.
 * [A184483](http://oeis.org/A184483) ([L20 program](184/A184483.asm)): Upper s-Wythoff sequence, where s(n)=3n-1.  Complement of A184482.
 * [A184485](http://oeis.org/A184485) ([L22 program](184/A184485.asm)): Upper s-Wythoff sequence, where s(n)=3n-2.  Complement of A184484.
 * [A184514](http://oeis.org/A184514) ([L19 program](184/A184514.asm)): Lower s-Wythoff sequence, where s(n)=4n-1.  Complement of A184515.
