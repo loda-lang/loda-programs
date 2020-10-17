@@ -914,6 +914,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A220588](http://oeis.org/A220588) ([L07 program](220/A220588.asm)): a(n) = 2^n - n^2 - n.
 * [A220633](http://oeis.org/A220633) ([L18 program](220/A220633.asm)): Number of ways to reciprocally link elements of an 3 X n array either to themselves or to exactly two horizontal or antidiagonal neighbors.
 * [A220657](http://oeis.org/A220657) ([L13 program](220/A220657.asm)): Partial sums of A084558+1.
+* [A220658](http://oeis.org/A220658) ([L40 program](220/A220658.asm)): Irregular table, where the n-th row consists of A084558(n)+1 copies of n.
 * [A220695](http://oeis.org/A220695) ([L19 program](220/A220695.asm)): Complement of A220655.
 * [A220696](http://oeis.org/A220696) ([L11 program](220/A220696.asm)): The positions of those permutations in A030298 where the first element is one (fixed).
 * [A220753](http://oeis.org/A220753) ([L12 program](220/A220753.asm)): Expansion of (1+4*x+5*x^2-x^3)/((1-x)*(1+x)*(1-2*x^2)).
@@ -2014,7 +2015,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A252994](http://oeis.org/A252994) ([L02 program](252/A252994.asm)): Multiples of 26.
 * [A253012](http://oeis.org/A253012) ([L05 program](253/A253012.asm)): a(n) = ceiling( (n+1) * (n+2) / 12).
 * [A253068](http://oeis.org/A253068) ([L15 program](253/A253068.asm)): The subsequence A253066(2^n-1).
-* [A253130](http://oeis.org/A253130) ([L115 program](253/A253130.asm)): Number of length 2+2 0..n arrays with the sum of medians of adjacent triples multiplied by some arrangement of +-1 equal to zero.
+* [A253130](http://oeis.org/A253130) ([L24 program](253/A253130.asm)): Number of length 2+2 0..n arrays with the sum of medians of adjacent triples multiplied by some arrangement of +-1 equal to zero.
 * [A253145](http://oeis.org/A253145) ([L07 program](253/A253145.asm)): Triangular numbers (A000217) omitting the term 1.
 * [A253186](http://oeis.org/A253186) ([L04 program](253/A253186.asm)): Number of connected unlabeled multigraphs with 3 vertices and n edges.
 * [A253195](http://oeis.org/A253195) ([L05 program](253/A253195.asm)): Numbers congruent to 5 or 8 mod 9.
@@ -3330,7 +3331,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280167](http://oeis.org/A280167) ([L26 program](280/A280167.asm)): a(2*n) = 3*n if n>0, a(2*n + 1) = -(2*n + 1), a(0) = 1.
 * [A280173](http://oeis.org/A280173) ([L07 program](280/A280173.asm)): a(0) = 1, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [5, -4].
 * [A280186](http://oeis.org/A280186) ([L08 program](280/A280186.asm)): Number of 3-element subsets of S = {1..n} whose sum is odd.
-* [A280193](http://oeis.org/A280193) ([L17 program](280/A280193.asm)): a(2*n) = 2, a(2*n + 1) = -1, a(0) = 1.
+* [A280193](http://oeis.org/A280193) ([L11 program](280/A280193.asm)): a(2*n) = 2, a(2*n + 1) = -1, a(0) = 1.
 * [A280237](http://oeis.org/A280237) ([L10 program](280/A280237.asm)): Period length 8 sequence [0, 1, 0, 1, -1, 1, 0, 1, ...].
 * [A280293](http://oeis.org/A280293) ([L12 program](280/A280293.asm)): a(0) = 3, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [-5, 4].
 * [A280304](http://oeis.org/A280304) ([L07 program](280/A280304.asm)): a(n) = 3*n*(n^2 + 3*n + 4).
@@ -3346,7 +3347,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280511](http://oeis.org/A280511) ([L07 program](280/A280511.asm)): Index sequence of the block-fractal sequence A001468.
 * [A280512](http://oeis.org/A280512) ([L14 program](280/A280512.asm)): Index sequence of the Thue-Morse sequence (A010060, using offset 1) as a reverse block-fractal sequence.
 * [A280523](http://oeis.org/A280523) ([L08 program](280/A280523.asm)): a(n) = Fibonacci(2n + 1) - n.
-* [A280560](http://oeis.org/A280560) ([L16 program](280/A280560.asm)): a(n) = (-1)^n * 2 if n!=0, with a(0) = 1.
+* [A280560](http://oeis.org/A280560) ([L11 program](280/A280560.asm)): a(n) = (-1)^n * 2 if n!=0, with a(0) = 1.
 * [A280658](http://oeis.org/A280658) ([L16 program](280/A280658.asm)): Numbers ending with their digital root in decimal representation.
 * [A280682](http://oeis.org/A280682) ([L08 program](280/A280682.asm)): Integers m such that floor(sqrt(m)) is even.
 * [A280724](http://oeis.org/A280724) ([L17 program](280/A280724.asm)): Expansion of 1/(1 - x) + (1/(1 - x)^2)*Sum_{k>=0} x^(3^k).
@@ -3491,7 +3492,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285683](http://oeis.org/A285683) ([L39 program](285/A285683.asm)): Positions of 2 in A285680.
 * [A285766](http://oeis.org/A285766) ([L12 program](285/A285766.asm)): Maximum spillway height for a zero or one bend minimal area lake in a number square.
 * [A285869](http://oeis.org/A285869) ([L07 program](285/A285869.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial in the open interval (-sqrt(2), +sqrt(2)).
-* [A285870](http://oeis.org/A285870) ([L16 program](285/A285870.asm)): a(n) = floor(n/2) - floor((n+1)/6), n >= 0.
+* [A285870](http://oeis.org/A285870) ([L10 program](285/A285870.asm)): a(n) = floor(n/2) - floor((n+1)/6), n >= 0.
 * [A285872](http://oeis.org/A285872) ([L06 program](285/A285872.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-sqrt(3), +sqrt(3)).
 * [A285950](http://oeis.org/A285950) ([L30 program](285/A285950.asm)): Positions of 0's in A285949; complement of A285951.
 * [A285951](http://oeis.org/A285951) ([L14 program](285/A285951.asm)): Positions of 1's in A285949; complement of A285950.
@@ -3537,7 +3538,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286812](http://oeis.org/A286812) ([L06 program](286/A286812.asm)): a(n) = 105 - 2^n.
 * [A286814](http://oeis.org/A286814) ([L18 program](286/A286814.asm)): Number of matchings in the n-helm graph.
 * [A286863](http://oeis.org/A286863) ([L15 program](286/A286863.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 814", based on the 5-celled von Neumann neighborhood.
-* [A286865](http://oeis.org/A286865) ([L65 program](286/A286865.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 814", based on the 5-celled von Neumann neighborhood.
+* [A286865](http://oeis.org/A286865) ([L20 program](286/A286865.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 814", based on the 5-celled von Neumann neighborhood.
 * [A286905](http://oeis.org/A286905) ([L56 program](286/A286905.asm)): Positions of 1 in A286903; complement of A286904.
 * [A286909](http://oeis.org/A286909) ([L24 program](286/A286909.asm)): Positions of 1 in A286907; complement of A286908.
 * [A286923](http://oeis.org/A286923) ([L58 program](286/A286923.asm)): Positions of 0 in A286922; complement of A286924.
@@ -3950,7 +3951,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297996](http://oeis.org/A297996) ([L24 program](297/A297996.asm)): a(1)=2, a(2)=3, a(3)=5 and a(n) = (a(1) + a(2) + a(3) + ... + a(n-1))/a(n-1).
 * [A298019](http://oeis.org/A298019) ([L18 program](298/A298019.asm)): Partial sums of A298016.
 * [A298022](http://oeis.org/A298022) ([L44 program](298/A298022.asm)): Coordination sequence for Dual(3^3.4^2) tiling with respect to a trivalent node.
-* [A298023](http://oeis.org/A298023) ([L112 program](298/A298023.asm)): Partial sums of A298022.
+* [A298023](http://oeis.org/A298023) ([L23 program](298/A298023.asm)): Partial sums of A298022.
 * [A298024](http://oeis.org/A298024) ([L31 program](298/A298024.asm)): G.f.: (x^4+3*x^3+6*x^2+3*x+1)/((1-x)*(1-x^3)).
 * [A298025](http://oeis.org/A298025) ([L13 program](298/A298025.asm)): Partial sums of A298024.
 * [A298026](http://oeis.org/A298026) ([L24 program](298/A298026.asm)): Coordination sequence of Dual(3.6.3.6) tiling with respect to a hexavalent node.

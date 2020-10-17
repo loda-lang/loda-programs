@@ -970,6 +970,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329845](http://oeis.org/A329845) ([L20 program](329/A329845.asm)): Beatty sequence for (3+sqrt(29))/5.
 * [A329846](http://oeis.org/A329846) ([L25 program](329/A329846.asm)): Beatty sequence for (7+sqrt(29))/5.
 * [A329847](http://oeis.org/A329847) ([L05 program](329/A329847.asm)): Beatty sequence for (3+sqrt(89))/8.
+* [A329848](http://oeis.org/A329848) ([L88 program](329/A329848.asm)): Beatty sequence for (13+sqrt(89))/8.
 * [A329923](http://oeis.org/A329923) ([L49 program](329/A329923.asm)): Beatty sequence for (2+sqrt(34))/5.
 * [A329924](http://oeis.org/A329924) ([L37 program](329/A329924.asm)): Beatty sequence for (8+sqrt(34))/5.
 * [A329925](http://oeis.org/A329925) ([L12 program](329/A329925.asm)): Beatty sequence for (1+sqrt(41))/5.
