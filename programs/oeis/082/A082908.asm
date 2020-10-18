@@ -1,86 +1,18 @@
 ; A082908: Largest value of gcd(2^n, binomial(n,j)) with j=0..n-1; maximal value of largest power of 2 dividing binomial(n,j) in the n-th row of Pascal's triangle.
 ; 1,1,2,1,4,2,4,1,8,4,8,2,8,4,8,1,16,8,16,4,16,8,16,2,16,8,16,4,16,8,16,1,32,16,32,8,32,16,32,4,32,16,32,8,32,16,32,2,32,16,32,8,32,16,32,4,32,16,32,8,32,16,32,1,64,32,64,16,64,32,64,8,64,32,64,16,64,32,64,4,64,32
 
-add $2,$0
-pow $2,7
-mul $2,$0
-sub $2,$0
-add $1,1
-add $2,2
-mov $7,$1
-mov $6,1
-add $8,$6
-mov $6,$8
-add $4,$8
-mov $5,1
-mul $6,$5
-add $3,3
-mov $5,6
-add $7,$1
-mov $7,$1
-sub $7,4
-mov $6,2
-mul $7,6
-mov $4,1
-mul $5,$7
-sub $7,$6
-sub $3,$1
-mov $7,$0
-mul $3,$7
-mov $8,2
-mov $2,7
-mov $2,$6
-mul $4,$2
-add $6,1
-trn $2,4
-mov $2,$5
+mov $3,2
+mov $4,2
 add $0,1
-add $7,$2
-add $2,$2
-mov $3,$3
 lpb $0,1
-  mov $6,2
-  trn $5,55
-  add $4,$4
-  pow $6,6
+  mul $4,2
   gcd $3,$0
   div $4,$3
-  mov $5,5
   div $0,2
-  sub $5,$8
-  sub $2,2
 lpe
-mul $6,2
-mov $2,$0
 add $3,9
-mov $6,2
-sub $6,$6
-mov $7,$8
-add $7,$2
-sub $8,2
 mov $2,$3
-add $8,$6
-mov $3,$3
-mov $7,$6
-add $8,1
-div $0,2
-mov $6,1
-mov $6,$7
-add $3,1
-trn $6,1
 add $4,$2
-mov $2,1
-add $8,4
-mov $1,14
-mov $8,$0
-add $6,$0
-pow $5,9
-sub $8,1
-add $6,1
-add $8,$8
-mov $3,7
-sub $5,2
-add $1,$6
 mov $1,$4
 sub $1,14
 div $1,4

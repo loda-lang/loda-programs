@@ -296,6 +296,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307268](http://oeis.org/A307268) ([L14 program](307/A307268.asm)): Partial sums of the Lucas numbers of the form L(3n+2) (A163063).
 * [A307295](http://oeis.org/A307295) ([L15 program](307/A307295.asm)): If n is even, a(n) = A001950(n/2+1), otherwise a(n) = A001950((n-1)/2+1) + 1.
 * [A307304](http://oeis.org/A307304) ([L40 program](307/A307304.asm)): Number of inequivalent ways of placing 2 nonattacking rooks on n X n board up to rotations and reflections of the board.
+* [A307313](http://oeis.org/A307313) ([L85 program](307/A307313.asm)): a(n) is the denominator of n/2^(length of the binary representation of n).
 * [A307395](http://oeis.org/A307395) ([L15 program](307/A307395.asm)): Expansion of 1/((1 - x) * ((1 - x)^3 + x^3)).
 * [A307465](http://oeis.org/A307465) ([L48 program](307/A307465.asm)): Number of Catalan words of length n avoiding the pattern 110.
 * [A307469](http://oeis.org/A307469) ([L15 program](307/A307469.asm)): a(n) = 2*a(n-1) + 6*a(n-2) for n >= 2, a(0) = 1, a(1) = 5.
@@ -970,7 +971,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329845](http://oeis.org/A329845) ([L20 program](329/A329845.asm)): Beatty sequence for (3+sqrt(29))/5.
 * [A329846](http://oeis.org/A329846) ([L25 program](329/A329846.asm)): Beatty sequence for (7+sqrt(29))/5.
 * [A329847](http://oeis.org/A329847) ([L05 program](329/A329847.asm)): Beatty sequence for (3+sqrt(89))/8.
-* [A329848](http://oeis.org/A329848) ([L88 program](329/A329848.asm)): Beatty sequence for (13+sqrt(89))/8.
+* [A329848](http://oeis.org/A329848) ([L11 program](329/A329848.asm)): Beatty sequence for (13+sqrt(89))/8.
 * [A329923](http://oeis.org/A329923) ([L49 program](329/A329923.asm)): Beatty sequence for (2+sqrt(34))/5.
 * [A329924](http://oeis.org/A329924) ([L37 program](329/A329924.asm)): Beatty sequence for (8+sqrt(34))/5.
 * [A329925](http://oeis.org/A329925) ([L12 program](329/A329925.asm)): Beatty sequence for (1+sqrt(41))/5.
