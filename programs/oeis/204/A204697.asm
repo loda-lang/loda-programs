@@ -9,27 +9,14 @@ lpb $15,1
   mov $0,$13
   add $0,$15
   sub $0,1
-  mov $2,$0
   lpb $0,1
-    mov $4,$2
     add $1,$0
     add $1,1
     div $1,6
-    sub $2,1
-    sub $2,1
-    add $2,$0
-    add $2,$0
     mul $1,6
     div $0,3
   lpe
-  add $1,$1
-  mov $12,$1
-  sub $12,$1
-  sub $0,1
-  sub $4,1
-  div $0,2
-  add $1,$0
-  add $0,1
+  mul $1,2
   mov $16,$15
   lpb $16,1
     mov $14,$1

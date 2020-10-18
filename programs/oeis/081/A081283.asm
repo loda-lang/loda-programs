@@ -1,0 +1,76 @@
+; A081283: An interleaved sequence of pyramidal and polygonal numbers.
+; 0,1,1,5,6,16,20,40,50,85,105,161,196,280,336,456,540,705,825,1045,1210,1496,1716,2080,2366,2821,3185,3745,4200,4880,5440,6256,6936,7905,8721,9861,10830,12160,13300,14840,16170,17941,19481,21505,23276,25576,27600
+
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  trn $1,$0
+  sub $3,$0
+  add $1,1
+  sub $1,$0
+  mov $0,4
+  sub $0,$1
+  add $0,$1
+  lpb $0,1
+    sub $0,$1
+    mod $1,2
+    mov $3,$0
+    add $6,$0
+    div $0,2
+    add $6,1
+    add $4,$0
+    sub $3,1
+    div $3,2
+    add $4,$0
+    add $1,2
+    sub $4,$3
+    div $1,3
+    add $5,$6
+    mov $3,$4
+    sub $1,2
+    bin $3,3
+    trn $0,$5
+    add $5,$3
+    add $5,$3
+    mod $4,3
+    add $0,3
+    sub $3,$0
+  lpe
+  div $4,2
+  sub $1,9
+  mul $4,2
+  mov $5,2
+  mov $6,1
+  mul $6,2
+  mov $2,$6
+  mul $5,2
+  cmp $6,$5
+  mul $1,3
+  log $2,5
+  mul $0,2
+  mov $4,3
+  sub $5,1
+  mov $6,81
+  add $1,$2
+  gcd $4,$1
+  add $5,2
+  mov $0,2
+  sub $4,1
+  sub $2,$5
+  add $0,33
+  sub $1,6
+  mov $6,$0
+  add $3,$0
+  add $5,3
+  sub $3,$5
+  mov $6,2
+  mov $1,$3
+  sub $1,24
+  add $8,$1
+lpe
+mov $1,$8

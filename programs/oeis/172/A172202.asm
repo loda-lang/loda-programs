@@ -1,0 +1,86 @@
+; A172202: Number of ways to place 3 nonattacking kings on a 3 X n board.
+; 0,0,8,34,105,248,490,858,1379,2080,2988,4130,5533,7224,9230,11578,14295,17408,20944,24930,29393,34360,39858,45914,52555,59808,67700,76258,85509,95480,106198,117690,129983,143104,157080,171938,187705
+
+mov $10,$0
+mov $12,$0
+add $12,1
+lpb $12,1
+  clr $0,10
+  sub $12,1
+  mov $0,$10
+  sub $0,$12
+  mov $7,$0
+  mov $9,$0
+  add $9,1
+  lpb $9,1
+    clr $0,7
+    sub $9,1
+    mov $0,$7
+    sub $0,$9
+    mov $4,1
+    trn $4,1
+    mov $2,$4
+    add $4,$4
+    mov $5,2
+    pow $4,$4
+    trn $5,1
+    mul $4,$2
+    sub $0,2
+    mov $4,1
+    mul $5,3
+    gcd $4,$4
+    add $1,1
+    mul $0,9
+    sub $5,1
+    mov $3,8
+    mov $6,$2
+    lpb $0,1
+      add $5,7
+      mov $1,$0
+      mov $5,$1
+      add $0,23
+      mov $4,1
+      add $5,1
+      sub $0,1
+      trn $1,3
+      sub $2,2
+      mov $2,$1
+      mov $0,$5
+      mov $1,$1
+      trn $5,$2
+      add $1,$2
+      div $6,$4
+      add $5,2
+      sub $4,8
+      sub $4,$6
+      mov $4,$4
+      add $1,$2
+      sub $6,$1
+      mov $5,$4
+      sub $6,1
+      sub $2,$5
+      bin $5,2
+      mod $6,$6
+      mov $4,$1
+      add $1,1
+      mov $6,$4
+      mov $6,$4
+      add $5,1
+      sub $0,$2
+      mov $5,$0
+      trn $0,14
+      mov $1,$0
+      div $0,5
+      sub $4,$2
+      mov $0,2
+      mov $3,$6
+    lpe
+    add $2,1
+    mov $2,2
+    mov $1,$3
+    add $8,$1
+  lpe
+  mov $1,$8
+  add $11,$1
+lpe
+mov $1,$11
