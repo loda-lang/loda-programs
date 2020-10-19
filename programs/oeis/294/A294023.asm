@@ -3,7 +3,6 @@
 
 mov $26,$0
 mov $28,$0
-add $28,1
 lpb $28,1
   clr $0,26
   sub $28,1
@@ -11,7 +10,6 @@ lpb $28,1
   sub $0,$28
   mov $23,$0
   mov $25,$0
-  add $25,1
   lpb $25,1
     clr $0,23
     sub $25,1
@@ -19,26 +17,16 @@ lpb $28,1
     sub $0,$25
     mov $1,$0
     lpb $0,1
-      sub $0,1
-      sub $0,1
+      sub $0,2
       mov $3,$1
       gcd $3,$0
       add $3,1
       lpb $3,1
         mod $3,5
-        add $22,1
-        mov $6,1
-        mov $4,$0
         pow $0,3
         mov $7,1
       lpe
-      add $6,4
-      mov $4,8
-      div $3,8
     lpe
-    add $0,$3
-    mov $3,$3
-    div $1,4
     mov $1,$7
     add $24,$1
   lpe

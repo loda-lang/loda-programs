@@ -1,0 +1,92 @@
+; A289812: n for which a Factor Pair Latin Square of order n exists.
+; 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19,21,22,23,25,26,27,29,31,32
+
+mov $9,$0
+mov $6,$0
+mov $4,60
+sub $6,$4
+mov $0,$4
+sub $4,1
+lpb $0,1
+  mul $6,$6
+  div $6,$4
+  add $5,1
+  add $6,$5
+  add $0,$5
+  mov $4,$6
+  sub $4,11
+  sub $6,5
+  sub $6,2
+  add $0,1
+  mov $2,$0
+  add $5,$6
+  mov $0,$0
+  mov $7,$2
+  mul $6,2
+  add $3,39
+  mov $6,12
+  add $1,$2
+  mul $0,2
+  mul $2,$0
+  mul $6,2
+  trn $7,432
+  sub $6,1
+  sub $0,$1
+  sub $7,$4
+  pow $3,5
+  div $0,$4
+  mov $7,$0
+  mov $2,4
+  sub $1,1
+  sub $1,$4
+  add $5,$2
+  mov $1,6
+  add $2,1
+  mul $0,$7
+  add $4,$4
+  mov $7,$7
+  add $1,$2
+  mov $4,1
+  add $4,$5
+  mov $8,$1
+  gcd $5,2
+  sub $5,1
+  mov $3,7
+  mov $1,4
+  mov $0,$4
+  add $7,3
+  mov $4,2
+  add $6,1
+  mov $0,1
+  mod $2,10
+  mov $8,$1
+  mov $3,1
+  sub $3,$1
+  add $2,4
+  div $0,10
+  add $0,$6
+  add $3,1
+  div $2,5
+  sub $8,$2
+  mov $2,1
+  mul $8,$4
+  sub $6,2
+  mul $4,5
+  mul $2,$2
+  sub $1,1
+  div $3,2
+  mov $1,5
+  add $2,4
+lpe
+mov $1,$3
+sub $0,1
+mov $3,4
+add $5,$6
+mov $1,$7
+sub $1,3
+mov $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9
+mul $10,$9

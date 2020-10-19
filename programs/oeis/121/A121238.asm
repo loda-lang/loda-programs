@@ -3,31 +3,18 @@
 
 lpb $0,1
   add $4,1
-  add $4,$4
+  mul $4,2
   sub $4,3
   add $5,$4
   mov $2,$4
-  sub $4,1
-  add $4,11
-  mov $4,$5
   add $5,1
   pow $4,$0
   add $2,$4
   trn $0,$2
   mov $3,$2
-  mov $1,$0
   mov $4,$3
   div $0,2
 lpe
-add $1,$0
-mul $1,10
-div $1,5
-add $4,$1
-mul $1,64
-mov $3,$0
-add $0,1
-mov $2,$0
-mov $2,$3
 mov $1,$5
 div $1,4
 mul $1,2
