@@ -1,0 +1,104 @@
+; A186237: Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the triangular numbers and hexagonal numbers.  Complement of A186238.
+; 2,3,4,6,7,9,10,12,13,15,16,17,19,20,22,23,25,26,28,29,30,32,33,35,36,38,39,41,42,43,45,46,48,49,51,52,54,55,56,58,59,61,62,64,65,67,68,69,71,72,74,75,77,78,80,81,83,84,85,87,88,90,91,93,94,96,97,98,100,101,103,104,106,107,109,110,111,113,114,116,117,119,120,122,123,124,126,127,129,130,132,133,135,136,138,139,140,142,143,145
+
+mov $6,$0
+mul $0,123
+trn $6,$0
+sub $0,1
+mov $7,2
+mov $2,1
+sub $2,$0
+div $2,85
+clr $7,$7
+add $10,1
+add $1,$10
+gcd $10,2
+mov $7,$6
+mul $7,2
+pow $2,$10
+add $7,2
+mov $5,$1
+add $3,$6
+add $0,50
+mul $0,$3
+sub $1,$10
+mov $1,$5
+mov $1,$0
+mov $9,1
+mov $3,$9
+lpb $0,1
+  add $7,4
+  sub $6,$10
+  add $5,$5
+  sub $5,$10
+  div $2,$5
+  add $4,1
+  mul $3,$10
+  mov $1,$4
+  add $5,2
+  add $7,1
+  add $5,$2
+  add $6,6
+  add $8,1
+  mov $7,4
+  mov $4,3
+  mov $1,$6
+  pow $4,2
+  mov $7,2
+  add $8,2
+  sub $5,$4
+  sub $10,1
+  trn $10,$10
+  add $7,$3
+  sub $5,$4
+  add $4,1
+  add $1,$4
+  mov $3,$9
+  add $6,$10
+  add $5,$10
+  add $7,1
+  add $9,1
+  div $1,2
+  add $5,1
+  sub $5,$2
+  add $5,$4
+  mov $6,$1
+  trn $5,$7
+  sub $0,1
+  mov $0,$5
+  add $1,$0
+  add $1,$3
+  sub $0,$2
+  mov $3,$9
+  add $8,2
+  trn $6,$4
+  mov $4,1
+  mov $2,13
+  mov $9,5
+  add $8,$7
+  mov $10,14
+  mov $3,342
+  mov $7,$4
+  mul $0,$6
+  mul $6,4
+  add $2,1
+lpe
+mul $9,4
+mov $9,3
+sub $8,4
+mov $4,$6
+add $3,$8
+mul $3,$3
+mov $9,1
+add $8,$5
+mul $4,$1
+add $8,8
+add $9,7
+pow $1,2
+mov $1,1
+trn $7,$2
+mov $0,1
+mov $0,$6
+mov $0,$1
+mov $4,$7
+mov $1,$4

@@ -1,0 +1,112 @@
+; A002797: Number of solutions to a linear inequality.
+; 3,2,5,9,17,27,40,55,73,94,117,143,171,203,236,273,311,354,397,445,493,547,600,659,717,782,845,915,983,1059,1132,1213,1291,1378,1461,1553,1641,1739,1832,1935,2033,2142,2245,2359,2467,2587,2700
+
+mov $11,$0
+mov $1,1
+add $4,$1
+add $9,5
+mov $2,2
+trn $1,1
+trn $1,2
+sub $4,4
+add $10,$0
+add $9,1
+mov $6,1
+mov $1,$10
+mul $4,$1
+mov $9,$10
+sub $1,$9
+mov $8,$6
+add $2,$6
+sub $10,1
+sub $4,$2
+add $0,$6
+mov $7,$0
+mov $5,15
+add $8,$7
+lpb $0,1
+  add $2,$0
+  mov $0,$2
+  div $4,2
+  add $0,2
+  sub $6,1
+  mov $7,$10
+  mul $8,2
+  add $7,1
+  sub $2,$1
+  bin $8,3
+  mov $8,2
+  pow $6,100
+  add $3,$1
+  mul $10,$10
+  pow $6,2
+  mul $1,2
+  add $7,3
+  mov $3,$8
+  trn $9,$4
+  mov $9,$10
+  mul $5,2
+  add $7,$7
+  mov $7,$10
+  add $6,$5
+  mov $10,2
+  mov $1,7
+  mov $6,1
+  mov $2,12
+  div $9,2
+  sub $5,1
+  sub $10,5
+  sub $10,$3
+  mov $2,$0
+  mov $6,1
+  mov $9,4
+  add $9,$7
+  mul $8,2
+  sub $8,2
+  add $3,1
+  div $2,2
+  sub $5,$10
+  mov $2,$4
+  mov $6,1
+  mov $9,$2
+  add $9,$0
+  mov $8,$9
+  mov $10,3
+  add $4,1
+  sub $1,$7
+  mul $8,$8
+  add $4,3
+  mod $2,10
+  add $8,$7
+  sub $0,8
+  mov $0,9
+  div $8,4
+  mov $10,$3
+  div $0,10
+lpe
+mov $7,$6
+mov $4,2
+mov $3,$10
+add $5,1
+add $2,$8
+div $9,2
+sub $5,$9
+mul $4,2
+mov $1,$2
+mul $4,2
+mov $2,$1
+sub $8,1
+mov $7,$2
+mov $6,$3
+log $6,$6
+sub $8,1
+add $7,$5
+mov $9,$7
+mov $1,$8
+sub $1,1
+mov $12,$11
+mul $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11

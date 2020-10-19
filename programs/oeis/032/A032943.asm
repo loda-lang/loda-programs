@@ -5,7 +5,6 @@ mov $11,$0
 mov $13,$0
 add $13,1
 lpb $13,1
-  clr $0,11
   sub $13,1
   mov $0,$11
   sub $0,$13
@@ -16,72 +15,17 @@ lpb $13,1
     sub $9,1
     mov $0,$7
     add $0,$9
-    sub $0,1
-    sub $0,1
-    sub $0,2
-    mov $1,$0
+    sub $0,4
     mov $3,$0
-    trn $3,2
-    mul $0,$1
+    sub $3,2
     trn $3,2
     mov $1,$3
-    add $6,$3
     add $3,1
-    add $5,2
-    div $6,$3
     add $4,$3
-    lpb $0,1
-      add $6,1
-      mul $1,$1
-      lpb $1,1
-        add $6,4
-        div $3,3
-        mov $3,$3
-        add $0,$4
-        lpb $1,2
-          mov $3,6
-          div $4,$3
-          trn $3,$1
-          lpb $5,2
-            add $1,$3
-            mov $5,2
-            lpb $3,1
-              mov $0,$5
-              mul $6,$0
-              add $5,$4
-              add $0,2
-              mov $3,$4
-              div $1,2
-              mov $6,$3
-              mov $3,$0
-              sub $6,$0
-            lpe
-          lpe
-          sub $0,$5
-        lpe
-        sub $0,$5
-        add $2,$1
-        mul $2,4
-        mov $0,0
-        mov $0,$2
-        sub $3,$0
-        add $6,2
-        add $5,$6
-      lpe
-    lpe
-    mov $5,$3
-    add $0,1
-    mul $2,2
-    mov $5,$4
-    sub $5,2
     lpb $4,1
-      add $6,3
       mod $4,8
-      add $5,2
-      add $2,$6
       sub $1,$4
     lpe
-    sub $5,1
     mov $10,$9
     lpb $10,1
       mov $8,$1
