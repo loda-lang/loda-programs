@@ -1,66 +1,22 @@
 ; A097846: Differences between A097598 and A045918.
 ; 0,0,0,0,0,0,0,0,0,0,-99,0,99,198,297,396,495,594,693,792,-198,-99,0,99,198,297,396,495,594,693,-297
 
-add $1,$0
 lpb $0,1
-  add $1,$0
-  mov $6,$0
   mov $2,$0
-  add $1,$0
   mod $2,10
-  sub $6,$1
-  mov $3,13
-  sub $3,2
-  add $4,1
   div $0,10
-  mov $1,1
-  mov $6,$2
-  add $4,2
   sub $2,1
-  mov $4,2
   mov $4,$0
-  sub $3,$4
   add $5,1
-  mov $3,1
   sub $2,$4
-  mov $6,7
-  add $6,2
-  add $2,$2
-  mov $0,120
+  mul $2,2
   mov $0,$2
-  mov $4,$6
-  mov $6,$5
-  add $5,9
-  sub $2,$3
-  sub $3,1
-  add $5,1
-  mov $5,2
-  mov $0,$0
-  sub $3,1
-  mov $3,$1
+  mov $3,$5
   mov $5,120259084288
-  add $0,$6
-  add $6,$0
+  add $0,$3
+  add $3,$0
 lpe
-mov $2,$1
-sub $4,1
-mov $0,$2
-mov $3,$6
-trn $2,3
-mov $4,3
-add $4,$4
-mul $6,3
-mod $1,2
-sub $1,$2
-mov $3,$4
-add $0,$0
-add $4,1
-mov $4,2
-add $5,6
-mov $4,3
-add $3,$1
-mod $2,2
-mul $3,2
-mov $1,$6
+mul $3,3
+mov $1,$3
 div $1,6
 mul $1,99
