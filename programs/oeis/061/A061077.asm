@@ -1,78 +1,27 @@
 ; A061077: a(n) = sum of the products of the digits of the first n odd numbers.
 ; 1,4,9,16,25,26,29,34,41,50,52,58,68,82,100,103,112,127,148,175,179,191,211,239,275,280,295,320,355,400,406,424,454,496,550,557,578,613,662,725,733,757,797,853,925,934,961,1006,1069,1150,1150,1150,1150
 
-mov $7,$0
-mov $9,$0
-add $9,1
-lpb $9,1
-  clr $0,7
-  sub $9,1
-  mov $0,$7
-  sub $0,$9
-  add $0,$0
-  mov $6,1
-  mov $1,1
-  add $6,1
+mov $6,$0
+mov $4,$0
+add $4,1
+lpb $4,1
+  sub $4,1
+  mov $0,$6
+  sub $0,$4
+  mul $0,2
   mov $3,4
-  add $1,$1
-  sub $1,$1
-  sub $1,$3
   add $0,1
   lpb $0,1
-    mov $6,1
-    add $1,$3
-    sub $1,$1
     mov $2,$0
     mod $2,10
     mul $3,$2
-    mov $5,$3
     div $0,10
-    mov $4,2
-    mov $4,2
-    pow $0,$6
-    add $6,1
-    add $4,$3
-    cmp $5,$6
   lpe
-  mov $1,$1
   add $3,1
-  add $6,$6
-  sub $0,$0
-  mov $2,$1
-  sub $1,1
-  mul $5,$1
-  mov $0,1
-  div $0,$4
-  trn $4,1
-  mov $4,1
-  mov $0,$3
-  add $4,$5
-  mov $4,$6
-  mul $6,$4
-  mov $0,3
-  mov $4,$4
-  sub $0,$6
-  mov $1,$4
-  add $6,$0
-  mov $0,$2
-  mov $4,$6
-  mov $6,$5
-  mov $1,$5
-  mov $2,$6
-  add $2,1
-  div $1,$2
-  mov $2,$3
-  add $5,$2
-  mov $5,12
-  sub $0,$5
-  add $5,1
-  mov $5,$3
-  mov $2,$0
-  add $2,$6
   mov $1,$3
   sub $1,5
   div $1,4
   add $1,1
-  add $8,$1
+  add $5,$1
 lpe
-mov $1,$8
+mov $1,$5
