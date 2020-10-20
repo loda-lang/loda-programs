@@ -634,6 +634,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213580](http://oeis.org/A213580) ([L35 program](213/A213580.asm)): Principal diagonal of the convolution array A213579.
 * [A213583](http://oeis.org/A213583) ([L13 program](213/A213583.asm)): Principal diagonal of the convolution array A213582.
 * [A213586](http://oeis.org/A213586) ([L42 program](213/A213586.asm)): Antidiagonal sums of the convolution array A213584.
+* [A213630](http://oeis.org/A213630) ([L84 program](213/A213630.asm)): a(t_1 t_2...t_n) = (t_1 + t_2)*t_1 t_2 + ... + (t_n-1 + t_n)*t_n-1 t_n.
 * [A213667](http://oeis.org/A213667) ([L14 program](213/A213667.asm)): Number of dominating subsets with k vertices in all the graphs G(n) (n>=1) obtained by taking n copies of the path P_3 and identifying one of their endpoints (a star with n branches of length 2).
 * [A213671](http://oeis.org/A213671) ([L17 program](213/A213671.asm)): The odd part of n^2 - n + 2.
 * [A213706](http://oeis.org/A213706) ([L18 program](213/A213706.asm)): Partial sums of A071542.
@@ -1881,6 +1882,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248339](http://oeis.org/A248339) ([L03 program](248/A248339.asm)): a(n) = 22*n+19.
 * [A248365](http://oeis.org/A248365) ([L18 program](248/A248365.asm)): 4n concatenated with itself.
 * [A248375](http://oeis.org/A248375) ([L03 program](248/A248375.asm)): a(n) = floor(9*n/8).
+* [A248422](http://oeis.org/A248422) ([L25 program](248/A248422.asm)): Even integers concatenated with themselves.
 * [A248427](http://oeis.org/A248427) ([L19 program](248/A248427.asm)): Circumference of the (n,n)-knight graph.
 * [A248428](http://oeis.org/A248428) ([L13 program](248/A248428.asm)): Number of length n+2 0..3 arrays with every three consecutive terms having the sum of some two elements equal to twice the third.
 * [A248429](http://oeis.org/A248429) ([L16 program](248/A248429.asm)): Number of length n+2 0..4 arrays with every three consecutive terms having the sum of some two elements equal to twice the third.
@@ -2553,7 +2555,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266046](http://oeis.org/A266046) ([L15 program](266/A266046.asm)): Real part of Q^n, where Q is the quaternion 2 + j + k.
 * [A266070](http://oeis.org/A266070) ([L06 program](266/A266070.asm)): Middle column of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
 * [A266072](http://oeis.org/A266072) ([L05 program](266/A266072.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
-* [A266073](http://oeis.org/A266073) ([L09 program](266/A266073.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
+* [A266073](http://oeis.org/A266073) ([L05 program](266/A266073.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
 * [A266074](http://oeis.org/A266074) ([L07 program](266/A266074.asm)): Total number of OFF (white) cells after n iterations of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
 * [A266084](http://oeis.org/A266084) ([L07 program](266/A266084.asm)): Expansion of (5 - x - x^2 - x^3 - x^4 + 4*x^5)/( x^6 - x^5 - x + 1).
 * [A266180](http://oeis.org/A266180) ([L10 program](266/A266180.asm)): Decimal representation of the n-th iteration of the "Rule 6" elementary cellular automaton starting with a single ON (black) cell.
@@ -3974,7 +3976,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297784](http://oeis.org/A297784) ([L18 program](297/A297784.asm)): Number of distinct runs in base-16 digits of n.
 * [A297928](http://oeis.org/A297928) ([L14 program](297/A297928.asm)): a(n) = 2*4^n + 3*2^n - 1.
 * [A297996](http://oeis.org/A297996) ([L24 program](297/A297996.asm)): a(1)=2, a(2)=3, a(3)=5 and a(n) = (a(1) + a(2) + a(3) + ... + a(n-1))/a(n-1).
-* [A298011](http://oeis.org/A298011) ([L13 program](298/A298011.asm)): If n = Sum_{i=1..h} 2^b_i with 0 <= b_1 < ... < b_h, then a(n) = Sum_{i=1..h} i * 2^b_i.
+* [A298011](http://oeis.org/A298011) ([L09 program](298/A298011.asm)): If n = Sum_{i=1..h} 2^b_i with 0 <= b_1 < ... < b_h, then a(n) = Sum_{i=1..h} i * 2^b_i.
 * [A298019](http://oeis.org/A298019) ([L18 program](298/A298019.asm)): Partial sums of A298016.
 * [A298022](http://oeis.org/A298022) ([L44 program](298/A298022.asm)): Coordination sequence for Dual(3^3.4^2) tiling with respect to a trivalent node.
 * [A298023](http://oeis.org/A298023) ([L23 program](298/A298023.asm)): Partial sums of A298022.
