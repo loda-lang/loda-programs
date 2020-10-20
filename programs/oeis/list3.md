@@ -68,8 +68,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301719](http://oeis.org/A301719) ([L16 program](301/A301719.asm)): Partial sums of A301718.
 * [A301722](http://oeis.org/A301722) ([L15 program](301/A301722.asm)): Coordination sequence for node of type V2 in "krb" 2-D tiling (or net).
 * [A301723](http://oeis.org/A301723) ([L15 program](301/A301723.asm)): Partial sums of A301722.
-* [A301726](http://oeis.org/A301726) ([L73 program](301/A301726.asm)): Coordination sequence for node of type V2 in "kra" 2-D tiling (or net).
-* [A301727](http://oeis.org/A301727) ([L84 program](301/A301727.asm)): Partial sums of A301726.
+* [A301726](http://oeis.org/A301726) ([L39 program](301/A301726.asm)): Coordination sequence for node of type V2 in "kra" 2-D tiling (or net).
+* [A301727](http://oeis.org/A301727) ([L50 program](301/A301727.asm)): Partial sums of A301726.
 * [A301729](http://oeis.org/A301729) ([L18 program](301/A301729.asm)): a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
 * [A301755](http://oeis.org/A301755) ([L10 program](301/A301755.asm)): Decimal expansion of 3/8.
 * [A301787](http://oeis.org/A301787) ([L17 program](301/A301787.asm)): Number of nX5 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
@@ -385,9 +385,15 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A310518](http://oeis.org/A310518) ([L27 program](310/A310518.asm)): Coordination sequence Gal.3.21.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310521](http://oeis.org/A310521) ([L35 program](310/A310521.asm)): Coordination sequence Gal.5.133.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310525](http://oeis.org/A310525) ([L25 program](310/A310525.asm)): Coordination sequence Gal.4.74.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A310529](http://oeis.org/A310529) ([L72 program](310/A310529.asm)): Coordination sequence Gal.4.75.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A310530](http://oeis.org/A310530) ([L72 program](310/A310530.asm)): Coordination sequence Gal.5.134.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A310531](http://oeis.org/A310531) ([L72 program](310/A310531.asm)): Coordination sequence Gal.5.135.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A310532](http://oeis.org/A310532) ([L72 program](310/A310532.asm)): Coordination sequence Gal.6.333.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A310533](http://oeis.org/A310533) ([L72 program](310/A310533.asm)): Coordination sequence Gal.6.334.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310564](http://oeis.org/A310564) ([L15 program](310/A310564.asm)): Coordination sequence Gal.3.23.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310565](http://oeis.org/A310565) ([L12 program](310/A310565.asm)): Coordination sequence Gal.4.82.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A311225](http://oeis.org/A311225) ([L13 program](311/A311225.asm)): Coordination sequence Gal.6.216.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A311289](http://oeis.org/A311289) ([L75 program](311/A311289.asm)): Coordination sequence Gal.5.107.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A311312](http://oeis.org/A311312) ([L18 program](311/A311312.asm)): Coordination sequence Gal.6.118.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A311344](http://oeis.org/A311344) ([L26 program](311/A311344.asm)): Coordination sequence Gal.5.95.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A311426](http://oeis.org/A311426) ([L28 program](311/A311426.asm)): Coordination sequence Gal.6.115.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -423,7 +429,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A312895](http://oeis.org/A312895) ([L10 program](312/A312895.asm)): Coordination sequence Gal.4.58.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312901](http://oeis.org/A312901) ([L09 program](312/A312901.asm)): Coordination sequence Gal.3.10.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312902](http://oeis.org/A312902) ([L14 program](312/A312902.asm)): Coordination sequence Gal.6.129.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A312903](http://oeis.org/A312903) ([L86 program](312/A312903.asm)): Coordination sequence Gal.5.65.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A312903](http://oeis.org/A312903) ([L42 program](312/A312903.asm)): Coordination sequence Gal.5.65.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312908](http://oeis.org/A312908) ([L26 program](312/A312908.asm)): Coordination sequence Gal.5.64.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312928](http://oeis.org/A312928) ([L10 program](312/A312928.asm)): Coordination sequence Gal.3.16.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312932](http://oeis.org/A312932) ([L26 program](312/A312932.asm)): Coordination sequence Gal.5.81.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -472,6 +478,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313730](http://oeis.org/A313730) ([L15 program](313/A313730.asm)): Coordination sequence Gal.6.234.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313738](http://oeis.org/A313738) ([L23 program](313/A313738.asm)): Coordination sequence Gal.6.158.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313746](http://oeis.org/A313746) ([L15 program](313/A313746.asm)): Coordination sequence Gal.5.113.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313752](http://oeis.org/A313752) ([L77 program](313/A313752.asm)): Coordination sequence Gal.5.300.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313753](http://oeis.org/A313753) ([L77 program](313/A313753.asm)): Coordination sequence Gal.6.253.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313754](http://oeis.org/A313754) ([L77 program](313/A313754.asm)): Coordination sequence Gal.4.142.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313773](http://oeis.org/A313773) ([L26 program](313/A313773.asm)): Coordination sequence Gal.5.131.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313780](http://oeis.org/A313780) ([L11 program](313/A313780.asm)): Coordination sequence Gal.3.23.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313781](http://oeis.org/A313781) ([L26 program](313/A313781.asm)): Coordination sequence Gal.6.617.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -1173,5 +1182,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337976](http://oeis.org/A337976) ([L34 program](337/A337976.asm)): Number of partitions of n into two distinct parts (s,t), such that s | t, (t-s) | n, and where n/(t-s) <= s < t.
 * [A338042](http://oeis.org/A338042) ([L19 program](338/A338042.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of vertices thus created. See Comments for details.
 * [A338062](http://oeis.org/A338062) ([L31 program](338/A338062.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is odd.
-* [A338064](http://oeis.org/A338064) ([L23 program](338/A338064.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is even.
+* [A338064](http://oeis.org/A338064) ([L26 program](338/A338064.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is even.
 * [A338086](http://oeis.org/A338086) ([L22 program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
+* [A338130](http://oeis.org/A338130) ([L57 program](338/A338130.asm)): Positive numbers k such that the ternary representation of k^k ends with that of k.
