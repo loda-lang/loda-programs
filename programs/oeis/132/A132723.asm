@@ -1,104 +1,20 @@
 ; A132723: Binomial transform of A132429.
 ; 3,4,4,0,-8,-16,-16,0,32,64,64,0,-128,-256,-256,0,512,1024,1024,0,-2048,-4096,-4096,0,8192,16384,16384,0,-32768,-65536,-65536,0,131072,262144,262144,0,-524288,-1048576,-1048576
 
-trn $3,$0
-add $4,2
-add $7,$4
-add $1,1
-add $4,1
-mov $3,2
-mov $8,1
-trn $8,$4
-mov $10,18
-div $3,$10
-mov $9,3
-mul $4,$8
-mov $6,$7
-mov $10,$3
-add $2,2
-mov $8,1
-add $6,$8
-add $1,2
-mov $7,$1
-mov $3,$4
-mov $10,$10
-mov $10,$2
-mov $3,4
-mov $4,1
-add $2,1
-add $6,1
-mod $2,2
-mov $1,$3
-add $3,$10
-mov $5,$9
-add $1,1
-sub $9,1
-mov $6,$2
-mov $7,$2
-mov $10,$2
 mov $3,1
-mov $4,$8
-mov $6,$3
-mov $5,$2
-lpb $0,1
-  mov $9,1
-  mov $7,$5
-  mov $3,$9
-  mov $6,$7
-  sub $2,$7
-  sub $0,1
-  add $4,$10
-  add $6,1
-  sub $10,$4
-  div $5,$3
-  sub $2,$7
-  mul $4,2
-  add $5,1
-  add $4,1
-  sub $9,2
-  sub $8,10
-  mov $8,3
-  mov $8,$0
-lpe
-add $10,$4
-add $6,$5
-div $9,2
-sub $6,$3
-add $1,$8
-sub $6,30
-mul $6,13
-mul $8,$7
-mov $9,$2
-sub $8,$0
-mov $5,1
-mov $8,$10
-sub $0,$0
-sub $6,$9
-mov $4,$7
-div $9,2
-add $1,$8
-mov $6,$2
-mul $7,3
-mov $10,100
-trn $0,$10
-div $7,2
-mov $2,4
-add $2,1
-add $0,$2
+mov $1,5
 mov $2,1
-sub $0,1
-mov $3,$3
-pow $2,2
-mov $3,$1
-mov $9,4
-mov $0,$6
-mul $10,$5
-mov $0,$8
-add $8,2
-mul $8,6
-sub $8,3
-mov $2,2
-sub $3,3
-trn $10,$10
-mov $8,$9
+mov $4,1
+lpb $0,1
+  sub $0,1
+  add $4,$2
+  sub $2,$4
+  mul $4,2
+  add $4,1
+  mov $3,$0
+lpe
+add $2,$4
+add $1,$3
+mov $3,$2
+add $1,$3
 sub $1,5

@@ -1,0 +1,107 @@
+; A005584: Coefficients of Chebyshev polynomials.
+; 2,13,49,140,336,714,1386,2508,4290,7007,11011,16744,24752,35700,50388,69768,94962,127281,168245,219604,283360,361790,457470,573300,712530,878787,1076103,1308944,1582240,1901416
+
+sub $2,$0
+mov $2,$0
+mov $3,$2
+add $9,$2
+mov $4,$9
+sub $9,2
+add $6,$0
+mul $2,2
+mov $8,16
+add $7,2
+mov $10,2
+add $4,3
+mul $8,2
+add $4,$10
+mov $0,3
+mov $8,4
+mov $5,$3
+mov $8,12
+div $2,$10
+trn $2,$2
+mov $1,$5
+bin $4,$5
+mul $2,2
+mov $7,4
+add $7,$1
+add $8,$6
+mov $6,4
+mov $9,$0
+mov $7,$4
+mov $10,$5
+pow $0,2
+mov $5,$7
+add $0,1
+mov $9,$6
+mul $4,$8
+mov $9,$7
+mov $3,$6
+add $5,1
+mov $1,1
+mov $2,$1
+mov $1,2
+lpb $0,1
+  mov $6,2
+  mul $0,$0
+  add $9,$6
+  add $10,4
+  sub $0,$10
+  mod $9,$7
+  mov $10,1
+  mov $0,$8
+  sub $3,3
+  mov $6,$2
+  sub $5,$9
+  trn $9,1
+  sub $4,7
+  add $4,$3
+  mov $6,$6
+  sub $9,4
+  trn $10,$0
+  mov $5,1
+  sub $8,$8
+  mov $2,1
+  mov $0,$9
+  sub $7,1
+  mov $3,48
+  add $5,1
+  mov $2,$4
+  mov $6,$10
+  add $3,5
+  mov $7,13
+  sub $1,$7
+  add $6,1
+  mov $0,2
+  mov $2,$0
+  mul $6,2
+  mod $2,10
+  mov $5,$6
+  sub $0,7
+  sub $7,1
+  add $6,$2
+  add $2,1
+  sub $9,1
+  add $7,1
+  mov $3,$7
+  mov $0,1
+  mov $8,$8
+  mov $10,4
+  mov $7,840
+  sub $7,$9
+  add $6,5
+  add $8,$0
+  mov $5,9
+  add $8,$4
+  mov $9,$9
+  mod $9,$0
+  div $0,10
+  mov $8,$9
+  pow $2,19
+lpe
+div $5,$6
+mov $1,$4
+sub $1,6
+div $1,6
+add $1,2

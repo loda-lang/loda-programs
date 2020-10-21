@@ -181,6 +181,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A205383](http://oeis.org/A205383) ([L06 program](205/A205383.asm)): a(n) = (1/n)*A205382(n).
 * [A205633](http://oeis.org/A205633) ([L29 program](205/A205633.asm)): Expansion of f(x^3, x^7) in powers of x where f() is Ramanujan's two-variable theta function.
 * [A205646](http://oeis.org/A205646) ([L03 program](205/A205646.asm)): Number of empty faces in Freij's family of Hansen polytopes.
+* [A205805](http://oeis.org/A205805) ([L69 program](205/A205805.asm)): Zarankiewicz number z(n; C_4).
 * [A205808](http://oeis.org/A205808) ([L12 program](205/A205808.asm)): G.f.: Sum_{n=-oo..oo} q^(9*n^2 + 2*n).
 * [A205809](http://oeis.org/A205809) ([L12 program](205/A205809.asm)): G.f.: Sum_{n=-oo..oo} q^(9n^2+4n).
 * [A205825](http://oeis.org/A205825) ([L12 program](205/A205825.asm)): a(n) = n!/ceiling(n/2)!.
@@ -1706,7 +1707,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244804](http://oeis.org/A244804) ([L06 program](244/A244804.asm)): The 300º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244805](http://oeis.org/A244805) ([L06 program](244/A244805.asm)): The 240º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244806](http://oeis.org/A244806) ([L09 program](244/A244806.asm)): The 180º spoke (or ray) of a hexagonal spiral of Ulam.
-* [A244855](http://oeis.org/A244855) ([L17 program](244/A244855.asm)): Fibonacci(n)^4-1.
+* [A244855](http://oeis.org/A244855) ([L17 program](244/A244855.asm)): a(n) = Fibonacci(n)^4-1.
 * [A244870](http://oeis.org/A244870) ([L45 program](244/A244870.asm)): Number of magic labelings with magic sum n of 2nd graph shown in link.
 * [A244882](http://oeis.org/A244882) ([L36 program](244/A244882.asm)): Expansion of (1 + 2*x + 2*x^2) / (1 - x)^6.
 * [A244887](http://oeis.org/A244887) ([L14 program](244/A244887.asm)): Third column of triangle in A234950.
@@ -1732,7 +1733,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245321](http://oeis.org/A245321) ([L06 program](245/A245321.asm)): Sum of digits of n written in fractional base 6/5.
 * [A245335](http://oeis.org/A245335) ([L12 program](245/A245335.asm)): Sum of digits of n in fractional base 5/4.
 * [A245336](http://oeis.org/A245336) ([L09 program](245/A245336.asm)): Sum of digits of n written in fractional base 8/7.
-* [A245337](http://oeis.org/A245337) ([L08 program](245/A245337.asm)): Sum of digits of n in fractional base 7/6.
+* [A245337](http://oeis.org/A245337) ([L06 program](245/A245337.asm)): Sum of digits of n in fractional base 7/6.
 * [A245338](http://oeis.org/A245338) ([L10 program](245/A245338.asm)): Sum of digits of n written in fractional base 9/8.
 * [A245339](http://oeis.org/A245339) ([L17 program](245/A245339.asm)): Sum of digits of n written in fractional base 10/9.
 * [A245341](http://oeis.org/A245341) ([L21 program](245/A245341.asm)): n written in fractional base 5/2.
@@ -2151,7 +2152,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A255847](http://oeis.org/A255847) ([L04 program](255/A255847.asm)): a(n) = 2*n^2 + 16.
 * [A255848](http://oeis.org/A255848) ([L04 program](255/A255848.asm)): a(n) = 2*n^2 + 18.
 * [A255849](http://oeis.org/A255849) ([L08 program](255/A255849.asm)): Characteristic function of pentagonal numbers.
-* [A255873](http://oeis.org/A255873) ([L84 program](255/A255873.asm)): The first nonzero digit of n/7.
+* [A255873](http://oeis.org/A255873) ([L15 program](255/A255873.asm)): The first nonzero digit of n/7.
 * [A255875](http://oeis.org/A255875) ([L11 program](255/A255875.asm)): a(n) = Fibonacci(n+2) + n - 2.
 * [A255876](http://oeis.org/A255876) ([L12 program](255/A255876.asm)): a(n) = (4*n^2 + 4*n - 3 - 3*(-1)^n)/2.
 * [A255877](http://oeis.org/A255877) ([L07 program](255/A255877.asm)): a(n) = (2n-2)^3 +(2n-2) - 1.

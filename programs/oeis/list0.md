@@ -4867,7 +4867,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A051943](http://oeis.org/A051943) ([L09 program](051/A051943.asm)): Truncated triangular pyramid numbers: a(n) = Sum_{k=9..n} (k*(k+1)/2 - 45).
 * [A051947](http://oeis.org/A051947) ([L14 program](051/A051947.asm)): Partial sums of A034263.
 * [A052036](http://oeis.org/A052036) ([L22 program](052/A052036.asm)): Smallest number that must be added to n to make or keep n palindromic.
-* [A052038](http://oeis.org/A052038) ([L64 program](052/A052038.asm)): First nonzero digit in expansion of 1/n.
+* [A052038](http://oeis.org/A052038) ([L15 program](052/A052038.asm)): First nonzero digit in expansion of 1/n.
 * [A052126](http://oeis.org/A052126) ([L11 program](052/A052126.asm)): a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
 * [A052146](http://oeis.org/A052146) ([L09 program](052/A052146.asm)): a(n) = floor((sqrt(1+8*n)-3)/2).
 * [A052149](http://oeis.org/A052149) ([L08 program](052/A052149.asm)): Nonsquare rectangles on an n X n board.
@@ -5861,7 +5861,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063305](http://oeis.org/A063305) ([L07 program](063/A063305.asm)): Dimension of the space S_n^{new}(Gamma_1(32)) of weight n cuspidal newforms for Gamma_1( 32 ).
 * [A063321](http://oeis.org/A063321) ([L29 program](063/A063321.asm)): Dimension of the space of weight n cuspidal newforms for Gamma_1( 48 ).
 * [A063327](http://oeis.org/A063327) ([L15 program](063/A063327.asm)): Dimension of the space of weight n cuspidal newforms for Gamma_1( 54 ).
-* [A063337](http://oeis.org/A063337) ([L19 program](063/A063337.asm)): Dimension of the space of weight n cuspidal newforms for Gamma_1( 64 ).
+* [A063337](http://oeis.org/A063337) ([L09 program](063/A063337.asm)): Dimension of the space of weight n cuspidal newforms for Gamma_1( 64 ).
 * [A063353](http://oeis.org/A063353) ([L22 program](063/A063353.asm)): Dimension of the space of weight n cuspidal newforms for Gamma_1( 80 ).
 * [A063354](http://oeis.org/A063354) ([L12 program](063/A063354.asm)): Dimension of the space of weight n cuspidal newforms for Gamma_1( 81 ).
 * [A063369](http://oeis.org/A063369) ([L08 program](063/A063369.asm)): Dimension of the space of weight n cuspidal newforms for Gamma_1( 96 ).
@@ -6060,7 +6060,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A066997](http://oeis.org/A066997) ([L15 program](066/A066997.asm)): Survivor number for 2nd-order Josephus problem.
 * [A067016](http://oeis.org/A067016) ([L19 program](067/A067016.asm)): Start with a(0)=1, a(1)=4, a(2)=3, a(3)=2; for n>=3, a(n+1) = max_i (a(i)+a(n-i)).
 * [A067018](http://oeis.org/A067018) ([L11 program](067/A067018.asm)): Start with a(0)=1, a(1)=4, a(2)=3, a(3)=2; for n>=3, a(n+1) = mex_i (nim-sum a(i)+a(n-i)), where mex means smallest nonnegative missing number.
-* [A067041](http://oeis.org/A067041) ([L64 program](067/A067041.asm)): a(n) = n^(product of digits of n).
+* [A067041](http://oeis.org/A067041) ([L15 program](067/A067041.asm)): a(n) = n^(product of digits of n).
 * [A067046](http://oeis.org/A067046) ([L22 program](067/A067046.asm)): a(n) = lcm(n, n+1, n+2)/6.
 * [A067053](http://oeis.org/A067053) ([L12 program](067/A067053.asm)): Floor[ Sum_{1..n} 1/i ]^n.
 * [A067056](http://oeis.org/A067056) ([L62 program](067/A067056.asm)): a(n) = (1)*(2 + 3 + 4 + ... + n) + (1 + 2)*(3 + 4 + 5 + ... + n) + (1 + 2 + 3)*(4 + 5 + 6 + ... + n) + ... + (1 + 2 + 3 + ... + n-1)*n.
@@ -7017,7 +7017,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080522](http://oeis.org/A080522) ([L16 program](080/A080522.asm)): Leading diagonal of triangle in A080521.
 * [A080529](http://oeis.org/A080529) ([L13 program](080/A080529.asm)): Number of nucleons in longest known radioactive decay series ending with Lead 206 ("uranium series"), reversed.
 * [A080530](http://oeis.org/A080530) ([L21 program](080/A080530.asm)): Number of nucleons in longest known radioactive decay series ending with Lead 207 ("actinium series"), reversed.
-* [A080532](http://oeis.org/A080532) ([L103 program](080/A080532.asm)): Number of nucleons in longest known radioactive decay series ending with Lead 209, reversed.
+* [A080532](http://oeis.org/A080532) ([L30 program](080/A080532.asm)): Number of nucleons in longest known radioactive decay series ending with Lead 209, reversed.
 * [A080534](http://oeis.org/A080534) ([L15 program](080/A080534.asm)): Number of protons in longest known radioactive decay series ending with Lead 207 ("actinium series"), reversed.
 * [A080538](http://oeis.org/A080538) ([L23 program](080/A080538.asm)): Number of neutrons in longest known radioactive decay series ending with Lead 207 ("actinium series"), reversed.
 * [A080540](http://oeis.org/A080540) ([L20 program](080/A080540.asm)): Number of neutrons in longest known radioactive decay series ending with Lead 209, reversed.
@@ -7660,7 +7660,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086799](http://oeis.org/A086799) ([L07 program](086/A086799.asm)): Replace all trailing 0's with 1's in binary representation of n.
 * [A086814](http://oeis.org/A086814) ([L18 program](086/A086814.asm)): a(n) = ceiling( (1 + n + 2*n^2 + 4*n^3)/(1 + 2*n + n^2) ).
 * [A086822](http://oeis.org/A086822) ([L05 program](086/A086822.asm)): a(n) = floor((6*n^0+5*n^1+4*n^2+3*n^3) / (1*n^0+1*n^1+1*n^2)).
-* [A086845](http://oeis.org/A086845) ([L29 program](086/A086845.asm)): a(1) = 0, a(n) = a(floor(n/2)) + 2*a(ceiling(n/2)) + floor(n/2).
+* [A086845](http://oeis.org/A086845) ([L18 program](086/A086845.asm)): a(1) = 0, a(n) = a(floor(n/2)) + 2*a(ceiling(n/2)) + floor(n/2).
 * [A086849](http://oeis.org/A086849) ([L18 program](086/A086849.asm)): Sum of first n nonsquares.
 * [A086858](http://oeis.org/A086858) ([L10 program](086/A086858.asm)): Let f(n) be the inverse of the function g(x) = x^x. Then a(n) = floor(f(n)).
 * [A086893](http://oeis.org/A086893) ([L16 program](086/A086893.asm)): a(n) is the index of F(n+1) at the unique occurrence of the ordered pair of reversed consecutive terms (F(n+1),F(n)) in Stern's diatomic sequence A002487, where F(k) denotes the k-th term of the Fibonacci sequence A000045.
@@ -7738,7 +7738,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087737](http://oeis.org/A087737) ([L14 program](087/A087737.asm)): Value of (n,n+1) concatenated in binary representation.
 * [A087775](http://oeis.org/A087775) ([L25 program](087/A087775.asm)): a[1] = 1, a[2] = 2, a[3] = 2; a[n] = 3*a[abs[a[n-2]]] - 3*a[n-abs[a[n-2]]] + a[n-3].
 * [A087805](http://oeis.org/A087805) ([L26 program](087/A087805.asm)): Partial sums of b(k) where {b(k)}_{k>=0} = limit n ->infty {A080578(k)-2k : k=2^n,2^n+1,2^n+2,......}.
-* [A087808](http://oeis.org/A087808) ([L18 program](087/A087808.asm)): a(0) = 0; a(2n) = 2a(n), a(2n+1) = a(n) + 1.
+* [A087808](http://oeis.org/A087808) ([L08 program](087/A087808.asm)): a(0) = 0; a(2n) = 2a(n), a(2n+1) = a(n) + 1.
 * [A087811](http://oeis.org/A087811) ([L04 program](087/A087811.asm)): Numbers n such that ceiling(sqrt(n)) divides n.
 * [A087839](http://oeis.org/A087839) ([L09 program](087/A087839.asm)): a[n] =a[a[a[a[a[n-2]]]]]+ a[n - a[n-2]].
 * [A087847](http://oeis.org/A087847) ([L11 program](087/A087847.asm)): a(n) = a(|n - a(n-1)|) + a(a(a(|n - a(n-4)|))).
@@ -7917,7 +7917,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A090889](http://oeis.org/A090889) ([L29 program](090/A090889.asm)): Double partial sums of (n * its dyadic valuation).
 * [A090908](http://oeis.org/A090908) ([L41 program](090/A090908.asm)): Terms a(k) of A073869 for which a(k)=a(k+1).
 * [A090909](http://oeis.org/A090909) ([L92 program](090/A090909.asm)): Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
-* [A090932](http://oeis.org/A090932) ([L63 program](090/A090932.asm)): a(n) = n! / 2^floor(n/2).
+* [A090932](http://oeis.org/A090932) ([L11 program](090/A090932.asm)): a(n) = n! / 2^floor(n/2).
 * [A090949](http://oeis.org/A090949) ([L25 program](090/A090949.asm)): a(n) = (1/24)*(n+1)*(3*n^3+59*n^2+358*n+648).
 * [A090950](http://oeis.org/A090950) ([L12 program](090/A090950.asm)): a(n) = (1/24)*(n+1)*(n+3)*(n^2+22*n+88).
 * [A090964](http://oeis.org/A090964) ([L16 program](090/A090964.asm)): Permutation of natural numbers generated by 2-rowed array shown below.

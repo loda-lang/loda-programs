@@ -1,0 +1,64 @@
+; A238986: Ground Pyramidalized Numbers: Write the decimal digits of 'n' (a nonnegative integer) and take successive absolute differences ("pyramidalization"), then sum all digits of each level of the pyramid. If total is greater than 9, repeat the process until result is between 0 and 9, which is 'a(n)' (0 <= a(n) <= 9).
+; 0,1,2,3,4,5,6,7,8,9,2,2,4,6,8,2,4,8,4,4,4,4,4,6,8,2,4,8,4,4,6,6,6,6,8,2,4,8,4,4,8,8,8,8,8,2,4,8,4,4,2,2,2,2,2,2,4,8,4,4
+
+lpb $0,1
+  mov $2,2
+  div $2,2
+  add $4,$2
+  pow $2,$2
+  mov $2,$0
+  mov $2,$2
+  mod $2,10
+  div $0,10
+  trn $2,$0
+  mov $6,1
+  mov $4,$0
+  mov $3,1
+  mov $6,$4
+  add $5,8
+  add $0,1
+  add $1,1
+  mov $0,$5
+  add $5,4
+  add $4,$2
+  add $4,$4
+  add $6,$3
+  add $1,3
+  pow $3,10
+  mov $0,3
+  add $1,2
+  mul $6,$4
+  trn $0,3
+  div $6,28
+  pow $5,2
+  sub $2,8
+  sub $2,1
+  mov $2,8
+  sub $2,3
+  mov $1,$4
+  add $5,$4
+  sub $4,2
+  mov $0,$4
+  mov $4,1
+  add $0,$4
+  mov $1,$1
+  mov $6,1
+  mov $3,$1
+  sub $3,3
+  add $0,1
+  mov $5,1
+  mov $2,2
+  add $1,$6
+  sub $2,2
+  sub $4,$4
+  add $4,3
+  mov $5,$0
+  mov $5,$2
+  add $3,$4
+  sub $5,1
+lpe
+sub $2,$5
+mul $5,$6
+pow $3,$0
+add $1,$4
+mov $1,$0

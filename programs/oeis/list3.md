@@ -1186,7 +1186,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337957](http://oeis.org/A337957) ([L11 program](337/A337957.asm)): Number of unoriented colorings of the 8 cubic facets of a tesseract or of the 8 vertices of a hyperoctahedron.
 * [A337976](http://oeis.org/A337976) ([L34 program](337/A337976.asm)): Number of partitions of n into two distinct parts (s,t), such that s | t, (t-s) | n, and where n/(t-s) <= s < t.
 * [A338042](http://oeis.org/A338042) ([L19 program](338/A338042.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of vertices thus created. See Comments for details.
-* [A338062](http://oeis.org/A338062) ([L31 program](338/A338062.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is odd.
+* [A338062](http://oeis.org/A338062) ([L14 program](338/A338062.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is odd.
 * [A338064](http://oeis.org/A338064) ([L08 program](338/A338064.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is even.
 * [A338086](http://oeis.org/A338086) ([L22 program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
 * [A338130](http://oeis.org/A338130) ([L50 program](338/A338130.asm)): Positive numbers k such that the ternary representation of k^k ends with that of k.

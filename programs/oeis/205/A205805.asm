@@ -3,70 +3,22 @@
 
 mov $7,$0
 pow $0,2
-div $0,2
-div $0,12
-add $3,$0
-sub $3,$0
-add $3,$0
-mov $6,$3
-add $3,2
-add $4,$0
-mul $3,3
-sub $6,1
+div $0,24
 mov $3,1
 add $0,4
-mov $4,5
-mul $4,2
 sub $3,$0
 mov $6,$0
-mov $0,$4
 mov $0,$3
 lpb $0,1
   mov $2,$0
-  add $5,1
   mod $2,10
-  mov $5,0
-  sub $3,1
-  sub $2,$5
-  mov $1,$2
-  mul $1,11
   mul $2,$6
-  mov $4,2
-  add $3,1
-  trn $4,1
-  div $0,10
-  sub $3,630
-  gcd $0,$1
-  add $2,1
-  mul $5,$6
   mov $1,$2
-  pow $5,2
   add $6,1
-  add $0,4
-  mov $3,$1
-  add $5,1
-  add $0,$4
-  div $4,2
   mov $0,$1
-  trn $3,$1
-  mov $5,2
-  mov $5,1
-  div $2,3
-  bin $1,2
-  mul $1,9
-  mov $0,$1
-  mov $4,1
-  add $0,$4
-  mov $6,$6
-  mul $2,2
-  mov $2,4
-  mov $1,$3
 lpe
 mov $1,$6
 sub $1,4
-mov $8,$7
-mov $9,$8
-mul $9,1
-add $1,$9
-mul $8,$7
-mul $8,$7
+mov $5,$7
+mov $4,$5
+add $1,$4
