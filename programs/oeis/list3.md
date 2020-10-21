@@ -799,6 +799,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321220](http://oeis.org/A321220) ([L08 program](321/A321220.asm)): a(n) = n+2 if n is even, otherwise a(n) = 2*n+1 if n is odd.
 * [A321232](http://oeis.org/A321232) ([L31 program](321/A321232.asm)): Length of n-th term of A321225.
 * [A321237](http://oeis.org/A321237) ([L05 program](321/A321237.asm)): Start with a square of dimension 1 X 1, and repeatedly append along the squares of the previous step squares with half their side length that do not overlap with any prior square; a(n) gives the number of squares appended at n-th step.
+* [A321243](http://oeis.org/A321243) ([L81 program](321/A321243.asm)): a(n) is the product of n and all its decimal digits individually except the leftmost digit.
 * [A321257](http://oeis.org/A321257) ([L08 program](321/A321257.asm)): Start with an equilateral triangle, and repeatedly append along the triangles of the previous step equilateral triangles with half their side length that do not overlap with any prior triangle; a(n) gives the number of triangles appended at n-th step.
 * [A321324](http://oeis.org/A321324) ([L11 program](321/A321324.asm)): a(n) = (n^2 - c(n)) / 7 + 1 where c(n) = c(-n) = c(n+7) for all n in Z and a(n) = 1 if 0 <= n <=3 except a(1) = 0.
 * [A321341](http://oeis.org/A321341) ([L17 program](321/A321341.asm)): An unbounded sequence which is 1 infinitely often, with the property that for any four consecutive terms the maximum term is the sum of the two minimum terms.

@@ -562,6 +562,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004776](http://oeis.org/A004776) ([L05 program](004/A004776.asm)): Numbers not congruent to 5 (mod 8).
 * [A004777](http://oeis.org/A004777) ([L03 program](004/A004777.asm)): Numbers not congruent to 7 mod 8.
 * [A004799](http://oeis.org/A004799) ([L14 program](004/A004799.asm)): Self convolution of Lucas numbers 1,3,4,7,...
+* [A004919](http://oeis.org/A004919) ([L108 program](004/A004919.asm)): Floor of n*phi^4, where phi is the golden ratio, A001622.
 * [A004920](http://oeis.org/A004920) ([L11 program](004/A004920.asm)): Floor of n*phi^5, where phi is the golden ratio, A001622.
 * [A004921](http://oeis.org/A004921) ([L19 program](004/A004921.asm)): Floor of n*phi^6, phi = golden ratio, A001622.
 * [A004923](http://oeis.org/A004923) ([L07 program](004/A004923.asm)): Floor of n*phi^8, where phi is the golden ratio, A001622.
@@ -685,6 +686,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005581](http://oeis.org/A005581) ([L06 program](005/A005581.asm)): a(n) = (n-1)*n*(n+4)/6.
 * [A005582](http://oeis.org/A005582) ([L11 program](005/A005582.asm)): a(n) = n*(n+1)*(n+2)*(n+7)/24.
 * [A005583](http://oeis.org/A005583) ([L23 program](005/A005583.asm)): Coefficients of Chebyshev polynomials.
+* [A005584](http://oeis.org/A005584) ([L104 program](005/A005584.asm)): Coefficients of Chebyshev polynomials.
 * [A005585](http://oeis.org/A005585) ([L13 program](005/A005585.asm)): 5-dimensional pyramidal numbers: n(n+1)(n+2)(n+3)(2n+3)/5!.
 * [A005586](http://oeis.org/A005586) ([L06 program](005/A005586.asm)): a(n) = n(n+4)(n+5)/6.
 * [A005587](http://oeis.org/A005587) ([L06 program](005/A005587.asm)): a(n) = n*(n+5)*(n+6)*(n+7)/24.
@@ -6009,6 +6011,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065679](http://oeis.org/A065679) ([L03 program](065/A065679.asm)): If n is even, a(n) = n^2 else a(n) = n.
 * [A065681](http://oeis.org/A065681) ([L22 program](065/A065681.asm)): Number of primes <= prime(n) which begin with a 2.
 * [A065855](http://oeis.org/A065855) ([L37 program](065/A065855.asm)): Number of composites <= n.
+* [A065881](http://oeis.org/A065881) ([L64 program](065/A065881.asm)): Ultimate modulo 10: right-hand nonzero digit of n.
 * [A065883](http://oeis.org/A065883) ([L15 program](065/A065883.asm)): Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
 * [A065915](http://oeis.org/A065915) ([L13 program](065/A065915.asm)): Numerator of sigma(8*n^2)/sigma(4*n^2).
 * [A065916](http://oeis.org/A065916) ([L07 program](065/A065916.asm)): Denominator of sigma(8*n^2)/sigma(4*n^2).
