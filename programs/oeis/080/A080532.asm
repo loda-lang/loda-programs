@@ -1,0 +1,106 @@
+; A080532: Number of nucleons in longest known radioactive decay series ending with Lead 209, reversed.
+; 209,209,209,213,217,221,225,225,229,233,233,237,237,241,245,249,253,257,261,265,269,273
+
+trn $1,$0
+sub $0,2
+add $9,$0
+mov $5,$9
+mov $7,2
+add $6,12
+div $6,2
+trn $0,1
+add $6,3
+sub $6,$9
+add $9,$7
+div $9,3
+sub $0,5
+add $1,2
+mov $0,18
+mov $10,98
+mov $7,4
+mov $1,0
+mov $2,$6
+mov $4,2
+mov $6,10
+mul $7,3
+sub $1,1
+mov $6,1
+add $0,8
+trn $7,$10
+add $0,1
+add $10,$5
+sub $7,$7
+add $9,19
+mov $7,$0
+add $3,$7
+mov $2,2
+mov $0,$4
+pow $7,2
+sub $9,2
+add $0,$7
+mov $6,1
+add $10,3
+mul $5,2
+add $10,1
+mov $8,6
+sub $1,$2
+sub $3,$8
+add $4,3
+sub $8,1
+sub $0,$7
+sub $0,$9
+div $10,24
+mov $6,$5
+mov $5,$10
+mov $5,2
+lpb $0,1
+  mul $7,2
+  mov $0,$0
+  mov $9,$3
+  trn $3,$7
+  mov $2,$10
+  sub $7,$8
+  mov $2,$0
+  add $10,$7
+  mov $10,$8
+  sub $2,$8
+  mod $2,10
+  add $3,$7
+  sub $9,$8
+  mov $3,$6
+  mul $0,2
+  mul $9,2
+  add $10,1
+  mov $0,$9
+  add $0,1
+  div $0,10
+lpe
+div $3,2
+trn $3,$0
+mov $1,$9
+sub $3,$5
+add $0,1
+sub $4,1
+add $3,$5
+add $10,3
+mov $5,2
+mov $6,4
+add $10,2
+pow $1,2
+mov $8,1
+trn $5,1
+add $10,1
+mov $4,3
+mov $9,$2
+sub $1,3
+mov $7,1
+div $8,$5
+clr $0,2
+mov $9,2
+mov $4,$5
+add $10,$5
+mov $1,$2
+mov $6,$0
+mov $1,$3
+mul $1,4
+add $1,209
