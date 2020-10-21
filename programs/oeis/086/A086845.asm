@@ -3,29 +3,18 @@
 
 mov $11,$0
 mov $13,$0
-add $13,1
 lpb $13,1
   clr $0,11
   sub $13,1
   mov $0,$11
   sub $0,$13
-  add $1,$0
-  mov $0,$1
   lpb $0,1
     mov $1,$0
-    sub $0,1
     gcd $1,281474976710656
-    add $0,1
     sub $0,$1
-    add $5,$0
     add $10,$1
     div $0,2
   lpe
-  add $0,$1
-  sub $0,$5
-  div $1,2
-  mov $1,5
-  sub $0,1
   mov $1,$10
   add $12,$1
 lpe

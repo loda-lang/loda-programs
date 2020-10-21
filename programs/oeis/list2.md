@@ -1059,7 +1059,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226023](http://oeis.org/A226023) ([L24 program](226/A226023.asm)): A142705 (numerators of 1/4-1/(4n^2)) sorted to natural order.
 * [A226033](http://oeis.org/A226033) ([L11 program](226/A226033.asm)): Round(n * exp(-1 - 1/(2n))), an approximation to the number of daughters to wait before picking in the sultan's dowry problem (Better that A225593).
 * [A226044](http://oeis.org/A226044) ([L07 program](226/A226044.asm)): Period of length 8: 1, 64, 16, 64, 4, 64, 16, 64.
-* [A226088](http://oeis.org/A226088) ([L93 program](226/A226088.asm)): a(n) is the number of the distinct quadrilaterals in a regular n-gon, which Q3 type are excluded.
+* [A226088](http://oeis.org/A226088) ([L29 program](226/A226088.asm)): a(n) is the number of the distinct quadrilaterals in a regular n-gon, which Q3 type are excluded.
 * [A226089](http://oeis.org/A226089) ([L10 program](226/A226089.asm)): Denominators of the series a(n+1) = (a(n)+k)/(1+a(n)*k); where k=1/(n+1), a(1)=1/2.
 * [A226096](http://oeis.org/A226096) ([L08 program](226/A226096.asm)): Squares with doubled (4*n+2)^2.
 * [A226097](http://oeis.org/A226097) ([L23 program](226/A226097.asm)): a(n) = ((-1)^n + 2*n - 38)*(2*n - 38) + 41.
@@ -1732,6 +1732,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245321](http://oeis.org/A245321) ([L06 program](245/A245321.asm)): Sum of digits of n written in fractional base 6/5.
 * [A245335](http://oeis.org/A245335) ([L12 program](245/A245335.asm)): Sum of digits of n in fractional base 5/4.
 * [A245336](http://oeis.org/A245336) ([L09 program](245/A245336.asm)): Sum of digits of n written in fractional base 8/7.
+* [A245337](http://oeis.org/A245337) ([L08 program](245/A245337.asm)): Sum of digits of n in fractional base 7/6.
 * [A245338](http://oeis.org/A245338) ([L10 program](245/A245338.asm)): Sum of digits of n written in fractional base 9/8.
 * [A245339](http://oeis.org/A245339) ([L17 program](245/A245339.asm)): Sum of digits of n written in fractional base 10/9.
 * [A245341](http://oeis.org/A245341) ([L21 program](245/A245341.asm)): n written in fractional base 5/2.
@@ -2150,6 +2151,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A255847](http://oeis.org/A255847) ([L04 program](255/A255847.asm)): a(n) = 2*n^2 + 16.
 * [A255848](http://oeis.org/A255848) ([L04 program](255/A255848.asm)): a(n) = 2*n^2 + 18.
 * [A255849](http://oeis.org/A255849) ([L08 program](255/A255849.asm)): Characteristic function of pentagonal numbers.
+* [A255873](http://oeis.org/A255873) ([L84 program](255/A255873.asm)): The first nonzero digit of n/7.
 * [A255875](http://oeis.org/A255875) ([L11 program](255/A255875.asm)): a(n) = Fibonacci(n+2) + n - 2.
 * [A255876](http://oeis.org/A255876) ([L12 program](255/A255876.asm)): a(n) = (4*n^2 + 4*n - 3 - 3*(-1)^n)/2.
 * [A255877](http://oeis.org/A255877) ([L07 program](255/A255877.asm)): a(n) = (2n-2)^3 +(2n-2) - 1.
