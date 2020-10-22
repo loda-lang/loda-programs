@@ -1,0 +1,78 @@
+; A044287: Numbers n such that string 4,0 occurs in the base 9 representation of n but not of n-1.
+; 36,117,198,279,324,360,441,522,603,684,765,846,927,1008,1053,1089,1170,1251,1332,1413,1494,1575,1656,1737,1782,1818,1899,1980,2061,2142,2223,2304,2385,2466,2511,2547,2628,2709,2790
+
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  add $2,$0
+  mov $5,1
+  gcd $5,2
+  add $4,$0
+  mov $3,6
+  mul $3,$2
+  div $2,2
+  mov $4,1
+  mov $5,5
+  lpb $0,1
+    add $1,1
+    add $4,$4
+    mov $4,4
+    mov $5,18
+    add $0,8
+    mul $4,$3
+    mov $3,2
+    add $1,1
+    mov $2,$0
+    add $0,48
+    mov $1,$1
+    mov $2,$0
+    mov $3,$3
+    sub $1,2
+    mov $6,$2
+    mov $5,1
+    add $1,2
+    mod $2,10
+    add $0,81
+    add $6,1
+    mul $5,2
+    add $2,$3
+    add $5,6
+    add $3,$2
+    trn $5,3
+    sub $0,5
+    mov $2,2
+    mov $2,3
+    div $4,$3
+    sub $6,$0
+    add $0,10
+    mov $2,$1
+    add $1,1
+    mov $6,$5
+    mov $0,1
+    mov $2,$3
+    trn $0,1
+    sub $3,$4
+    mov $0,$4
+    mod $6,$2
+    mov $0,2
+    mov $1,$3
+    add $6,$6
+    add $5,$3
+    add $3,$0
+    div $0,10
+    mov $5,$2
+    mov $5,5
+    mul $3,2
+  lpe
+  mov $1,$6
+  div $1,2
+  mul $1,9
+  add $1,36
+  add $8,$1
+lpe
+mov $1,$8
