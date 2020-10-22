@@ -3,45 +3,15 @@
 
 mul $0,2
 mov $2,$0
-mov $4,$0
-add $1,$4
-sub $0,1
+mov $1,$2
 lpb $1,1
-  add $3,$4
-  mov $3,$3
-  mov $0,$4
-  lpb $1,$1
-    add $0,1
-    mov $4,$3
-    add $1,$0
-    add $0,$0
-    mov $2,1
-    sub $1,8
-    gcd $2,$4
-    mov $3,$3
-    sub $3,2
-    mul $2,2
-    lpb $1,1
-      mov $3,$2
-      sub $3,$4
-      div $1,5
-    lpe
-    pow $0,$1
-    clr $3,1
-    mul $4,3
-    pow $2,$0
-    sub $2,$4
-    mov $1,$2
-    mul $4,$4
-  lpe
-  mul $2,2
+  add $3,$2
+  mov $0,$2
   gcd $0,2
   div $1,$0
-  mov $0,$1
-  mov $4,1
-  add $4,$1
-  trn $3,$1
+  mov $2,1
+  add $2,$1
+  sub $3,$1
 lpe
-mov $2,$4
 mov $1,$3
 add $1,2
