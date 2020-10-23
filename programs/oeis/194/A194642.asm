@@ -1,0 +1,84 @@
+; A194642: Units' digits of the nonzero heptagonal numbers.
+; 1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1
+
+sub $0,800
+sub $1,$0
+mov $3,0
+mov $7,$0
+pow $7,$0
+mov $7,4
+sub $0,$7
+mov $2,1
+div $7,$0
+trn $7,1
+sub $7,1
+sub $0,$3
+sub $0,$3
+lpb $0,1
+  add $1,2
+  add $3,2
+  div $1,2
+  mov $2,$0
+  mul $7,5
+  mov $8,$3
+  sub $0,$1
+  mul $7,$1
+  mov $8,$0
+  mov $8,$8
+  trn $2,$7
+  sub $1,5
+  mov $7,2
+  add $8,$7
+  mod $2,10
+  mov $1,1
+  add $8,$0
+  add $0,$3
+  sub $8,1
+  mov $6,1
+  div $8,$7
+  add $0,$6
+  add $7,$8
+  div $1,$1
+  trn $3,5
+  sub $1,1
+  add $8,1
+  mov $1,$7
+  add $8,1
+  pow $8,2
+  trn $6,2
+  mov $1,1
+  mov $6,$6
+  mov $3,1
+  sub $7,$8
+  mul $3,2
+  add $4,$7
+  mul $8,$7
+  mov $7,1
+  mov $8,16
+  add $3,1
+  add $3,16
+  add $1,8
+  add $0,3
+  sub $6,$6
+  div $0,10
+  add $7,4
+  mov $1,$2
+  add $0,$8
+  add $2,$6
+  add $3,9
+  sub $3,$4
+  mov $4,$8
+  add $3,$3
+  trn $6,1
+  sub $1,$6
+  div $0,4
+  div $6,2
+  mov $2,1
+  add $1,4
+lpe
+mul $0,$0
+pow $3,$6
+sub $1,1
+mov $8,$6
+add $8,3
+sub $1,3
