@@ -4,23 +4,15 @@
 mov $1,$0
 lpb $0,1
   add $2,$1
-  mul $1,9
   div $2,7
-  add $1,1
   mod $0,8
 lpe
 mov $1,2
 sub $1,1
 add $2,$1
-add $1,$0
-div $1,4
-gcd $1,1073741824
-mov $1,7
 lpb $0,1
   sub $2,1
-  mov $1,$0
   mod $0,7
 lpe
 trn $2,1
-add $1,1
 mov $1,$2

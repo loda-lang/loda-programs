@@ -33,7 +33,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301426](http://oeis.org/A301426) ([L11 program](301/A301426.asm)): Number of steps required in the worst case for three knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A301451](http://oeis.org/A301451) ([L06 program](301/A301451.asm)): Numbers congruent to {1, 7} mod 9.
 * [A301454](http://oeis.org/A301454) ([L16 program](301/A301454.asm)): Number of strictly log-concave permutations of {1,...,n}.
-* [A301461](http://oeis.org/A301461) ([L20 program](301/A301461.asm)): Number of integers less than or equal to n whose largest prime factor is 3.
+* [A301461](http://oeis.org/A301461) ([L12 program](301/A301461.asm)): Number of integers less than or equal to n whose largest prime factor is 3.
 * [A301516](http://oeis.org/A301516) ([L04 program](301/A301516.asm)): Numbers n with decimal expansion (d_1, ..., d_k) such that the convex hull of the set of points { (i, d_i), i = 1..k } has positive area.
 * [A301560](http://oeis.org/A301560) ([L10 program](301/A301560.asm)): Matching number of the n-odd graph.
 * [A301571](http://oeis.org/A301571) ([L10 program](301/A301571.asm)): Number of vertices at distance 2 from a given vertex in the n-Keller graph.
@@ -976,6 +976,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329530](http://oeis.org/A329530) ([L42 program](329/A329530.asm)): a(n) = n * (7*binomial(n, 2) + 1).
 * [A329533](http://oeis.org/A329533) ([L47 program](329/A329533.asm)): First differences of A051924, or second differences of Central binomial coefficients A000984.
 * [A329547](http://oeis.org/A329547) ([L31 program](329/A329547.asm)): Number of natural numbers k <= n such that k^k is a square.
+* [A329562](http://oeis.org/A329562) ([L63 program](329/A329562.asm)): a(n) = 2^(sum of digits of n).
 * [A329598](http://oeis.org/A329598) ([L57 program](329/A329598.asm)): Partial sums of the nontriangular numbers (A014132).
 * [A329670](http://oeis.org/A329670) ([L05 program](329/A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
 * [A329677](http://oeis.org/A329677) ([L06 program](329/A329677.asm)): Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UH, HD, and DH.
