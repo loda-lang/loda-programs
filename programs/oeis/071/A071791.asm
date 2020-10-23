@@ -1,64 +1,20 @@
 ; A071791: Decimal expansion of the third (of 10) decimal selvage numbers; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
 ; 2,5,7,0,2,5,7,0,3,5,8,0,3,5,8,1,3,6,8,1,3,6,9,1,4,6,9,1,4,7,9,2,4,7,9,2,5,7,0,2,5,7,0,3,5,8,0,3,5,8,1,3,6,8,1,3,6,9,1,4,6,9,1,4,7,9,2,4,7,9,2,5,7,0,2,5,7,0,3,5,8,0,3,5,8,1,3,6,8,1,3,6,9,1,4,6,9,1,4,7
 
-mov $1,$0
-mov $5,1
 mov $3,3
 add $0,1
-div $5,14
-mul $0,$3
+mul $0,3
 mul $3,$0
-pow $0,2
 lpb $0,1
-  add $1,2
-  mov $6,$0
-  sub $1,1
-  mov $1,2
-  mov $6,$6
-  add $0,1
-  add $5,5
-  mov $6,$0
   mul $3,2
-  add $5,$6
-  add $1,$3
-  mov $2,4
   mov $1,2
-  mov $6,$2
-  add $5,$6
   mov $0,$3
-  sub $2,$2
-  sub $1,1
-  add $1,1
-  mov $5,$5
-  sub $6,2
-  mov $6,$6
-  add $4,$3
   add $4,9
   mod $4,$1
   sub $0,$4
   mov $2,$0
-  sub $1,$0
-  add $1,$1
-  mov $5,$5
-  mov $3,$2
-  trn $5,8
-  mov $4,21
-  add $5,$4
   div $2,7
-  sub $4,2
-  add $0,$0
-  add $3,5
-  add $0,4
-  sub $3,1
-  sub $4,1
-  add $5,1
-  mov $5,$0
-  sub $3,1
-  div $4,$3
   mod $2,10
-  div $0,10
-  mov $5,$1
   mov $0,1
 lpe
-add $6,6
 mov $1,$2
