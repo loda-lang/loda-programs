@@ -1936,6 +1936,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248974](http://oeis.org/A248974) ([L06 program](248/A248974.asm)): Floor( 1/(n*sinh(1/n) + n*sin(1/n) - 2) ).
 * [A249013](http://oeis.org/A249013) ([L05 program](249/A249013.asm)): a(n) = floor( (n-1) * (n+4) / 10 ).
 * [A249020](http://oeis.org/A249020) ([L06 program](249/A249020.asm)): a(n) = floor( n * (n+5) / 10) + 1.
+* [A249032](http://oeis.org/A249032) ([L51 program](249/A249032.asm)): First differences of A075326.
 * [A249059](http://oeis.org/A249059) ([L23 program](249/A249059.asm)): Row sums of the triangular array at A249057.
 * [A249060](http://oeis.org/A249060) ([L15 program](249/A249060.asm)): Column 1 of the triangular array at A249057.
 * [A249075](http://oeis.org/A249075) ([L21 program](249/A249075.asm)): Sum of the numbers in row n of the array at A249074.
@@ -3199,7 +3200,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276026](http://oeis.org/A276026) ([L06 program](276/A276026.asm)): a(n) = Sum_{k=0..7} (n + k)^2.
 * [A276041](http://oeis.org/A276041) ([L10 program](276/A276041.asm)): Exponential convolution of odd numbers (A005408) with themselves.
 * [A276134](http://oeis.org/A276134) ([L14 program](276/A276134.asm)): a(5n) = a(n), a(5n+1) = a(5n+2) = a(5n+3) = a(5n+4) = a(n) + 1, a(0) = 0.
-* [A276155](http://oeis.org/A276155) ([L73 program](276/A276155.asm)): Complement of A276154; numbers that cannot be obtained by shifting left the primorial base representation (A049345) of some number.
 * [A276191](http://oeis.org/A276191) ([L16 program](276/A276191.asm)): Sum of the squares of the digits of the base-5 representation of n.
 * [A276234](http://oeis.org/A276234) ([L15 program](276/A276234.asm)): a(n) = n/gcd(n, 256).
 * [A276265](http://oeis.org/A276265) ([L14 program](276/A276265.asm)): Expansion of (1 + 2*x)/(1 - 6*x + 6*x^2).
