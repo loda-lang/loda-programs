@@ -1,48 +1,20 @@
 ; A337929: Numbers w such that (F(2*n-1)^2, -F(2*n)^2, w) are primitive solutions of the Diophantine equation 2*x^3 + 2*y^3 + z^3 = 1, where F(n) is the n-th Fibonacci number (A000045).
 ; 1,11,79,545,3739,25631,175681,1204139,8253295,56568929,387729211,2657535551,18215019649,124847601995,855718194319,5865179758241,40200540113371,275538601035359,1888569667134145,12944449068903659,88722573815191471
 
-add $1,2
-add $3,3
-sub $3,$0
-add $3,$0
-cmp $1,1
-mov $1,8
-mov $2,$3
-mov $3,$3
 mul $0,2
-add $4,1
-mov $4,2
-mov $1,$1
-mov $3,$4
-mov $4,$2
-mov $4,1
-add $0,$3
-sub $0,1
-add $1,1
-sub $3,4
-mov $4,$4
-sub $2,2
-lpb $0,1
-  sub $3,$2
-  sub $2,$3
+mov $2,$0
+mov $0,1
+mov $1,5
+lpb $2,1
+  sub $0,3
+  sub $1,$0
+  sub $0,$0
   sub $0,1
+  add $3,$1
+  sub $0,$3
+  sub $2,1
 lpe
-mov $4,0
-add $0,$0
-mov $1,145
-sub $0,1
-add $3,5
-mov $3,$4
-mov $3,1
-mul $3,2
-add $1,1
-add $2,$1
-mul $0,$3
-add $2,$0
-mov $1,2
-sub $2,1
-mov $1,$2
-sub $1,147
+mov $1,$3
 div $1,5
 mul $1,2
 add $1,1
