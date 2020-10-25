@@ -6,8 +6,6 @@ lpb $0,1
   div $0,10
   mod $2,10
   sub $2,1
-  add $4,$0
-  add $6,$2
+  add $3,$2
 lpe
-mov $1,$2
-mov $1,$6
+mov $1,$3
