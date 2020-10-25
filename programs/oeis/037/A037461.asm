@@ -1,0 +1,98 @@
+; A037461: a(n)=Sum{d(i)*7^i: i=0,1,...,m}, where Sum{d(i)*4^i: i=0,1,...,m} is the base 4 representation of n.
+; 1,2,3,7,8,9,10,14,15,16,17,21,22,23,24,49,50,51,52,56,57,58,59,63,64,65,66,70,71,72,73,98,99,100,101,105,106,107,108,112,113,114,115,119,120,121,122,147,148,149,150,154,155,156,157
+
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  add $7,$0
+  sub $7,$0
+  add $5,1
+  add $0,1
+  add $4,$5
+  mov $5,$5
+  gcd $0,16
+  log $0,3
+  add $2,$7
+  mov $2,5
+  trn $7,$4
+  mov $6,$0
+  add $6,$4
+  mov $6,$2
+  mov $2,$7
+  mul $2,2
+  sub $0,$4
+  sub $5,$4
+  mul $7,$5
+  add $5,1
+  sub $4,$7
+  add $3,1
+  mov $6,$4
+  mov $3,$5
+  div $7,$5
+  mov $2,1
+  sub $5,$0
+  mul $2,$7
+  mov $6,2
+  mul $2,$5
+  sub $6,1
+  lpb $0,1
+    mov $6,1
+    mul $3,2
+    mov $1,$6
+    sub $4,100
+    sub $0,1
+    trn $3,3
+    add $1,$4
+    mov $4,2
+  lpe
+  trn $1,$3
+  sub $0,1
+  mov $3,2
+  mov $2,6
+  sub $3,$7
+  mul $2,$4
+  add $7,$4
+  mov $6,$5
+  mul $6,2
+  mov $0,$4
+  mov $1,$0
+  mov $1,3
+  mul $6,$6
+  add $4,$1
+  add $2,$3
+  mov $4,$0
+  mov $6,$7
+  sub $2,$5
+  add $0,82
+  sub $0,$1
+  add $0,1
+  mov $6,1
+  add $7,$5
+  mov $7,4
+  mov $5,2
+  mul $7,2
+  mov $5,1
+  sub $1,7
+  mov $8,$1
+  sub $8,$3
+  mul $0,2
+  add $7,12
+  pow $8,$3
+  add $5,2
+  mov $0,$0
+  add $1,$1
+  mov $5,2
+  sub $3,1
+  mul $6,2
+  mov $1,$2
+  sub $1,6
+  mul $1,3
+  add $1,1
+  add $10,$1
+lpe
+mov $1,$10
