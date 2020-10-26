@@ -543,6 +543,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212892](http://oeis.org/A212892) ([L05 program](212/A212892.asm)): a(n) = n^4/8 if n is even, a(n) = (n^2-1)^2/8 if n is odd.
 * [A212893](http://oeis.org/A212893) ([L12 program](212/A212893.asm)): Number of quadruples (w,x,y,z) with all terms in {0,...,n} such that w-x, x-y, and y-z all have the same parity.
 * [A212894](http://oeis.org/A212894) ([L19 program](212/A212894.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)=1.
+* [A212896](http://oeis.org/A212896) ([L72 program](212/A212896.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)<2.
 * [A212897](http://oeis.org/A212897) ([L19 program](212/A212897.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)>1.
 * [A212901](http://oeis.org/A212901) ([L50 program](212/A212901.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and equal consecutive gap sizes.
 * [A212905](http://oeis.org/A212905) ([L27 program](212/A212905.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and |w-x|+|x-y+|y-z|=2n.
@@ -914,6 +915,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A220089](http://oeis.org/A220089) ([L10 program](220/A220089.asm)): a(n) = 2^n - 243.
 * [A220104](http://oeis.org/A220104) ([L07 program](220/A220104.asm)): n appears n*(n+1) times.
 * [A220128](http://oeis.org/A220128) ([L10 program](220/A220128.asm)): 1 followed by period 6: (1, 3, 2, 3, 1, 4) repeated; offset 0.
+* [A220129](http://oeis.org/A220129) ([L29 program](220/A220129.asm)): 1 followed by period 12: (1, 5, 3, 9, 1, 7, 1, 9, 3, 5, 1, 11) repeated; offset 0.
 * [A220147](http://oeis.org/A220147) ([L21 program](220/A220147.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 n X 2 array.
 * [A220154](http://oeis.org/A220154) ([L20 program](220/A220154.asm)): Number of 2 X n arrays of the minimum value of corresponding elements and their horizontal or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 2 X n array.
 * [A220212](http://oeis.org/A220212) ([L14 program](220/A220212.asm)): Convolution of natural numbers (A000027) with tetradecagonal numbers (A051866).
@@ -1592,6 +1594,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241235](http://oeis.org/A241235) ([L28 program](241/A241235.asm)): a(n) = number of times n appears in A006949.
 * [A241271](http://oeis.org/A241271) ([L20 program](241/A241271.asm)): a(n) = 6*a(n-1) + 3*(2^(n-2)-1) for n > 2, a(0)=a(1)=a(2)=0.
 * [A241275](http://oeis.org/A241275) ([L10 program](241/A241275.asm)): a(n) = 6*a(n-1) + 5*(2^(n-1)-1) for n > 0, a(0) = 0.
+* [A241404](http://oeis.org/A241404) ([L109 program](241/A241404.asm)): Sum of n and the sum of the factorials of its digits.
 * [A241406](http://oeis.org/A241406) ([L19 program](241/A241406.asm)): Numbers n such that n^2 == -1 (mod 61).
 * [A241407](http://oeis.org/A241407) ([L10 program](241/A241407.asm)): Numbers n such that n^2 == -1 (mod 73).
 * [A241452](http://oeis.org/A241452) ([L13 program](241/A241452.asm)): a(n) = pg(3, n) + pg(4, n) + ... + pg(n, n) where pg(m, n) is the n-th m-th-order polygonal number.

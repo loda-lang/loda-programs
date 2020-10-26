@@ -1,0 +1,115 @@
+; A115065: Number of points with integer coordinates inside the equilateral triangle with base [0,n].
+; 1,2,4,6,10,14,20,26,33,40,49,58,69,80,93,106,120,134,150,166,184,202,222,242,263,284,307,330,355,380,406,432,460,488,518,548,580,612,645,678,713,748,785,822,861,900,940,980,1022
+
+mov $11,$0
+mov $13,$0
+add $13,1
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  sub $0,$13
+  mov $7,1
+  add $6,1
+  mul $7,2
+  mov $2,1
+  trn $6,$7
+  div $0,$7
+  mov $5,$7
+  add $7,$2
+  sub $5,10
+  mov $1,1
+  mov $3,4
+  add $2,3
+  mov $8,$6
+  div $3,2
+  mul $2,$8
+  mov $6,$5
+  add $2,2
+  mov $10,$1
+  mov $4,$7
+  mul $5,20
+  mov $1,$4
+  add $10,6
+  add $7,1
+  add $10,3
+  add $7,1
+  add $8,5
+  mov $4,2
+  bin $10,$7
+  add $4,1
+  add $2,2
+  mul $8,2
+  mov $9,4
+  sub $5,$8
+  lpb $0,1
+    add $5,$10
+    mov $7,1
+    add $3,2
+    div $0,$6
+    mod $2,2
+    mov $3,$2
+    add $10,1
+    pow $6,5
+    mov $1,2
+    sub $9,210
+    sub $9,4
+    add $4,10
+    mul $9,136
+    add $2,2
+    sub $3,$1
+    add $6,1
+    mov $9,$8
+    sub $0,23
+    sub $0,1
+    mul $3,2
+    add $0,$5
+    pow $7,2
+    mov $10,$2
+    mov $3,2
+    sub $10,4
+    mov $3,1
+    mov $1,1
+    pow $9,2
+    sub $1,$9
+    mov $8,$6
+    mov $7,3
+    mov $10,$3
+    sub $1,$1
+    sub $3,1
+    mov $2,1
+    add $7,4
+    add $8,18
+    mov $2,1
+  lpe
+  mov $6,$1
+  mul $0,19
+  add $5,1
+  add $5,$8
+  mov $4,3
+  mov $4,1
+  mul $2,12
+  sub $4,$2
+  mov $2,$5
+  add $1,$7
+  add $8,1
+  mul $3,$5
+  div $4,5
+  sub $9,$4
+  mov $3,5
+  cmp $1,$5
+  div $0,$8
+  trn $8,$6
+  mul $4,9
+  mov $2,1
+  pow $8,$2
+  add $9,3
+  mov $9,$9
+  mul $8,2
+  add $0,$2
+  mov $4,3
+  pow $1,$2
+  mov $1,$0
+  add $12,$1
+lpe
+mov $1,$12

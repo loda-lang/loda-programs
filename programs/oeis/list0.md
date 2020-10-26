@@ -830,7 +830,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006565](http://oeis.org/A006565) ([L13 program](006/A006565.asm)): Number of ways to color vertices of a hexagon using <= n colors, allowing only rotations.
 * [A006566](http://oeis.org/A006566) ([L03 program](006/A006566.asm)): Dodecahedral numbers: a(n) = n*(3*n - 1)*(3*n - 2)/2.
 * [A006578](http://oeis.org/A006578) ([L06 program](006/A006578.asm)): Triangular numbers plus quarter squares: n*(n+1)/2 + floor(n^2/4) (i.e., A000217(n) + A002620(n)).
-* [A006579](http://oeis.org/A006579) ([L31 program](006/A006579.asm)): Sum of gcd(n,k) for k = 1 to n-1.
+* [A006579](http://oeis.org/A006579) ([L08 program](006/A006579.asm)): Sum of gcd(n,k) for k = 1 to n-1.
 * [A006584](http://oeis.org/A006584) ([L08 program](006/A006584.asm)): If n mod 2 = 0 then n*(n^2-4)/12 else n*(n^2-1)/12.
 * [A006586](http://oeis.org/A006586) ([L52 program](006/A006586.asm)): a(n) = Sum_{k=1..n} floor((2n-1)/(2k+1)).
 * [A006589](http://oeis.org/A006589) ([L07 program](006/A006589.asm)): a(n) = (n+3)*2^n-1.
@@ -2038,6 +2038,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A020331](http://oeis.org/A020331) ([L16 program](020/A020331.asm)): Numbers n such that base 3 representation is the juxtaposition of two identical strings.
 * [A020332](http://oeis.org/A020332) ([L50 program](020/A020332.asm)): Numbers n such that base 4 representation is the juxtaposition of two identical strings.
 * [A020333](http://oeis.org/A020333) ([L14 program](020/A020333.asm)): Numbers n such that base 5 representation is the juxtaposition of two identical strings.
+* [A020334](http://oeis.org/A020334) ([L15 program](020/A020334.asm)): Numbers n such that base 6 representation is the juxtaposition of two identical strings.
 * [A020335](http://oeis.org/A020335) ([L28 program](020/A020335.asm)): Numbers n such that base 7 representation is the juxtaposition of two identical strings.
 * [A020336](http://oeis.org/A020336) ([L32 program](020/A020336.asm)): Numbers n such that base 8 representation is the juxtaposition of two identical strings.
 * [A020337](http://oeis.org/A020337) ([L40 program](020/A020337.asm)): Numbers n such that base 9 representation is the juxtaposition of two identical strings.
@@ -4157,6 +4158,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A046630](http://oeis.org/A046630) ([L07 program](046/A046630.asm)): Number of cubic residues mod 2^n.
 * [A046632](http://oeis.org/A046632) ([L07 program](046/A046632.asm)): Number of cubic residues mod 4^n.
 * [A046633](http://oeis.org/A046633) ([L19 program](046/A046633.asm)): Number of cubic residues mod 5^n.
+* [A046635](http://oeis.org/A046635) ([L18 program](046/A046635.asm)): Number of cubic residues mod 7^n.
 * [A046636](http://oeis.org/A046636) ([L05 program](046/A046636.asm)): Number of cubic residues mod 8^n.
 * [A046666](http://oeis.org/A046666) ([L15 program](046/A046666.asm)): a(n) = n - (smallest prime dividing n).
 * [A046667](http://oeis.org/A046667) ([L16 program](046/A046667.asm)): a(n) = A046666(n)/2.
@@ -5239,6 +5241,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A055819](http://oeis.org/A055819) ([L08 program](055/A055819.asm)): Row sums of array T in A055818; twice the odd-indexed Fibonacci numbers after initial term.
 * [A055820](http://oeis.org/A055820) ([L20 program](055/A055820.asm)): a(n) = T(n,n-3), array T as in A055818.
 * [A055831](http://oeis.org/A055831) ([L21 program](055/A055831.asm)): T(n,n-4), where T is the array in A055830.
+* [A055832](http://oeis.org/A055832) ([L92 program](055/A055832.asm)): T(n,n-5), where T is the array in A055830.
 * [A055841](http://oeis.org/A055841) ([L14 program](055/A055841.asm)): Number of compositions of n into 3*j-1 kinds of j's for all j >= 1.
 * [A055842](http://oeis.org/A055842) ([L26 program](055/A055842.asm)): Expansion of (1-x)^2/(1-5*x).
 * [A055845](http://oeis.org/A055845) ([L08 program](055/A055845.asm)): a(n) = 4*a(n-1) - a(n-2) with a(0)=1, a(1)=8.
@@ -5395,7 +5398,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A057651](http://oeis.org/A057651) ([L04 program](057/A057651.asm)): a(n) = (3 * 5^n - 1)/2.
 * [A057675](http://oeis.org/A057675) ([L44 program](057/A057675.asm)): 1 - (5/6)*n + (5/2)*n^2 + (10/3)*n^3 + n^4.
 * [A057681](http://oeis.org/A057681) ([L15 program](057/A057681.asm)): a(n) = Sum_{j=0..floor(n/3)} (-1)^j*binomial(n,3*j).
-* [A057682](http://oeis.org/A057682) ([L15 program](057/A057682.asm)): a(n) = Sum_{j=0..floor(n/3)} (-1)^j*binomial(n,3*j+1).
+* [A057682](http://oeis.org/A057682) ([L12 program](057/A057682.asm)): a(n) = Sum_{j=0..floor(n/3)} (-1)^j*binomial(n,3*j+1).
 * [A057703](http://oeis.org/A057703) ([L41 program](057/A057703.asm)): a(n) = n*(94 + 5*n + 25*n^2 - 5*n^3 + n^4)/120.
 * [A057711](http://oeis.org/A057711) ([L09 program](057/A057711.asm)): a(0)=0, a(1)=1, a(n) = n*2^(n-2) for n >= 2.
 * [A057716](http://oeis.org/A057716) ([L08 program](057/A057716.asm)): The non-powers of 2.
@@ -6628,6 +6631,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A072376](http://oeis.org/A072376) ([L08 program](072/A072376.asm)): a(n) = a(floor(n/2)) + a(floor(n/4)) + a(floor(n/8)) + ... starting with a(0)=0 and a(1)=1.
 * [A072442](http://oeis.org/A072442) ([L22 program](072/A072442.asm)): Least k such that Sum( Cos(1/Sqrt(i)) i=1..k) > n.
 * [A072464](http://oeis.org/A072464) ([L11 program](072/A072464.asm)): Code word lengths for non-redundant MML code for positive integers.
+* [A072481](http://oeis.org/A072481) ([L29 program](072/A072481.asm)): a(n) = Sum_{k=1..n} Sum_{d=1..k} (k mod d).
 * [A072493](http://oeis.org/A072493) ([L59 program](072/A072493.asm)): a(1) = 1 and a(n) = ceiling((Sum_{k=1..n-1} a(k))/3) for n >= 2.
 * [A072527](http://oeis.org/A072527) ([L28 program](072/A072527.asm)): Number of values of k such that n divided by k leaves a remainder 3.
 * [A072557](http://oeis.org/A072557) ([L29 program](072/A072557.asm)): Let w(n) be defined by the following recurrence: w(1)=w(2)=w(3)=1, w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3); sequence gives values of n such that w(n) is an integer.
@@ -7593,6 +7597,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A085058](http://oeis.org/A085058) ([L13 program](085/A085058.asm)): a(n) = A001511(n+1) + 1.
 * [A085060](http://oeis.org/A085060) ([L18 program](085/A085060.asm)): Integer reached in A085058.
 * [A085062](http://oeis.org/A085062) ([L16 program](085/A085062.asm)): A085060(n)/9 - 1/3.
+* [A085130](http://oeis.org/A085130) ([L75 program](085/A085130.asm)): Duplicate of A080194.
 * [A085141](http://oeis.org/A085141) ([L09 program](085/A085141.asm)): Greatest nonnegative integer k such that k(3k+1)/2 <= n.
 * [A085151](http://oeis.org/A085151) ([L09 program](085/A085151.asm)): Numbers generated by the Fibonacci polynomial x^4 + 3x^2 + 1.
 * [A085157](http://oeis.org/A085157) ([L06 program](085/A085157.asm)): Quintuple factorials, 5-factorials, n!!!!!, n!5.
@@ -8193,6 +8198,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A094434](http://oeis.org/A094434) ([L10 program](094/A094434.asm)): a(n) = rightmost term of M^n * [1 0 0], with M = the 3 X 3 matrix [1 -1 0 / -1 3 -2 / 0 -2 2].
 * [A094500](http://oeis.org/A094500) ([L12 program](094/A094500.asm)): Least number k such that (n+1)^k / n^k >= 2.
 * [A094560](http://oeis.org/A094560) ([L08 program](094/A094560.asm)): Initial decimal digit of Pi*n, Pi=3.1415...
+* [A094562](http://oeis.org/A094562) ([L82 program](094/A094562.asm)): Initial decimal digit of fractional part of pi*n, pi=3.1415...
 * [A094584](http://oeis.org/A094584) ([L08 program](094/A094584.asm)): Dot product of (1,2,...,n) and first n distinct Fibonacci numbers.
 * [A094588](http://oeis.org/A094588) ([L08 program](094/A094588.asm)): a(n) = n*F(n-1) + F(n), where F = A000045.
 * [A094618](http://oeis.org/A094618) ([L20 program](094/A094618.asm)): a(n) = 3^(n+1) - 2^(n+1) + n + 1.

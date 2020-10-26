@@ -11,11 +11,9 @@ lpb $9,1
   sub $0,$9
   add $3,$0
   lpb $0,1
-    add $1,450
     mov $1,$0
     bin $0,2
     lpb $1,1
-      mov $1,$0
       add $0,1
       mov $3,1
       gcd $0,4
@@ -23,12 +21,7 @@ lpb $9,1
     lpe
     mul $3,$1
   lpe
-  mov $2,2
-  add $0,4
-  mov $6,$1
-  mov $2,$0
   add $1,$3
-  bin $2,2
   add $1,1
   add $8,$1
 lpe
