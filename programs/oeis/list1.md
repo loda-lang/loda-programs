@@ -484,6 +484,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106633](http://oeis.org/A106633) ([L19 program](106/A106633.asm)): Number of ways to express n as k+lm, with k, l, m all in the range [0..n].
 * [A106637](http://oeis.org/A106637) ([L16 program](106/A106637.asm)): Accumulation of permutation sequence on three symbols such that the a[n+2]-2*a[n+1]-a[n]=0 overall.
 * [A106648](http://oeis.org/A106648) ([L05 program](106/A106648.asm)): 3*n^2+6*n+8.
+* [A106649](http://oeis.org/A106649) ([L60 program](106/A106649.asm)): Replace each digit d (except leading one) of n with 9-d.
 * [A106707](http://oeis.org/A106707) ([L10 program](106/A106707.asm)): First entry of the vector (M^n)v, where M is the 2 X 2 matrix [[0,-1],[1,4]] and v is the column vector [0,1].
 * [A106709](http://oeis.org/A106709) ([L13 program](106/A106709.asm)): First entry of the vector (M^n)v, where M is the 2 X 2 matrix [[0,-2],[1,5]] and v is the column vector [0,1].
 * [A106729](http://oeis.org/A106729) ([L06 program](106/A106729.asm)): Sum of two consecutive squares of Lucas numbers (A001254).
@@ -953,6 +954,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115014](http://oeis.org/A115014) ([L19 program](115/A115014.asm)): Sum_{i=1..n, gcd(6,i)=1} i.
 * [A115015](http://oeis.org/A115015) ([L23 program](115/A115015.asm)): Sum_{i=1..n} (gcd(7,i)=1) i.
 * [A115056](http://oeis.org/A115056) ([L15 program](115/A115056.asm)): a(n) = n*(n^2-1)*(3*n+2).
+* [A115065](http://oeis.org/A115065) ([L112 program](115/A115065.asm)): Number of points with integer coordinates inside the equilateral triangle with base [0,n].
 * [A115067](http://oeis.org/A115067) ([L05 program](115/A115067.asm)): a(n) = (3*n^2 - n - 2)/2.
 * [A115098](http://oeis.org/A115098) ([L04 program](115/A115098.asm)): a(0)=2, a(n)=3*a(n-1)-3.
 * [A115099](http://oeis.org/A115099) ([L04 program](115/A115099.asm)): a(0)=4, a(n) = 3*a(n-1) - 4.
@@ -4635,7 +4637,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166753](http://oeis.org/A166753) ([L11 program](166/A166753.asm)): Partial sums of A166752.
 * [A166754](http://oeis.org/A166754) ([L53 program](166/A166754.asm)): a(n) = 4*A061547(n+1) - 3*A166753(n).
 * [A166756](http://oeis.org/A166756) ([L18 program](166/A166756.asm)): Number of nX2 1..3 arrays containing at least one of each value, and all equal values connected.
-* [A166761](http://oeis.org/A166761) ([L134 program](166/A166761.asm)): Number of nX3 1..2 arrays containing at least one of each value, and all equal values connected.
+* [A166761](http://oeis.org/A166761) ([L52 program](166/A166761.asm)): Number of nX3 1..2 arrays containing at least one of each value, and all equal values connected.
 * [A166776](http://oeis.org/A166776) ([L15 program](166/A166776.asm)): Number of nX2 1..3 arrays containing at least one of each value, all equal values connected, and rows considered as a single number in nondecreasing order.
 * [A166781](http://oeis.org/A166781) ([L08 program](166/A166781.asm)): Number of nX3 1..2 arrays containing at least one of each value, all equal values connected, and rows considered as a single number in nondecreasing order.
 * [A166796](http://oeis.org/A166796) ([L12 program](166/A166796.asm)): Number of nX2 1..3 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
@@ -5208,7 +5210,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171621](http://oeis.org/A171621) ([L13 program](171/A171621.asm)): Numerator of 1/4 - 1/n^2, each fourth term multiplied by 4.
 * [A171623](http://oeis.org/A171623) ([L04 program](171/A171623.asm)): Floor(n-th composite / n).
 * [A171624](http://oeis.org/A171624) ([L05 program](171/A171624.asm)): Floor(n-th nonprime / n).
-* [A171626](http://oeis.org/A171626) ([L90 program](171/A171626.asm)): Ceiling(n-th noncomposite/n).
+* [A171626](http://oeis.org/A171626) ([L31 program](171/A171626.asm)): Ceiling(n-th noncomposite/n).
 * [A171627](http://oeis.org/A171627) ([L04 program](171/A171627.asm)): Ceiling(n-th composite/n).
 * [A171647](http://oeis.org/A171647) ([L11 program](171/A171647.asm)): a(1) = 1; for n > 1, a(n) = 2*a(n-1) if n is even, a(n) = ((n+1)/(n-1))*a(n-1) if n is odd.
 * [A171654](http://oeis.org/A171654) ([L11 program](171/A171654.asm)): Period 10: repeat 0, 1, 6, 7, 2, 3, 8, 9, 4, 5.
@@ -6416,7 +6418,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188258](http://oeis.org/A188258) ([L33 program](188/A188258.asm)): Positions of 0 in A188257; complement of A188259.
 * [A188259](http://oeis.org/A188259) ([L32 program](188/A188259.asm)): Positions of 1 in A188257; complement of A188258.
 * [A188261](http://oeis.org/A188261) ([L14 program](188/A188261.asm)): Positions of 0 in A188260; complement of A188262.
-* [A188293](http://oeis.org/A188293) ([L43 program](188/A188293.asm)): Positions of 1 in A188291; complement of A188292.
+* [A188293](http://oeis.org/A188293) ([L38 program](188/A188293.asm)): Positions of 1 in A188291; complement of A188292.
 * [A188295](http://oeis.org/A188295) ([L81 program](188/A188295.asm)): [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
 * [A188298](http://oeis.org/A188298) ([L13 program](188/A188298.asm)): Positions of 0 in A188297; complement of A188299.
 * [A188299](http://oeis.org/A188299) ([L22 program](188/A188299.asm)): Positions of 1 in A188297; complement of A188298.
@@ -6734,6 +6736,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193108](http://oeis.org/A193108) ([L08 program](193/A193108.asm)): The tetrahedral numbers A000292 mod 10.
 * [A193218](http://oeis.org/A193218) ([L13 program](193/A193218.asm)): Number of vertices in truncated tetrahedron with faces that are centered polygons.
 * [A193228](http://oeis.org/A193228) ([L13 program](193/A193228.asm)): Truncated octahedron with faces of centered polygons.
+* [A193243](http://oeis.org/A193243) ([L101 program](193/A193243.asm)): Number of representations of n as sum of three positive biquadrates, i.e., fourth powers.
 * [A193248](http://oeis.org/A193248) ([L13 program](193/A193248.asm)): Truncated dodecahedron, and truncated icosahedron with faces of centered polygons.
 * [A193249](http://oeis.org/A193249) ([L14 program](193/A193249.asm)): Snub dodecahedron with faces of centered polygons.
 * [A193250](http://oeis.org/A193250) ([L11 program](193/A193250.asm)): Small rhombicuboctahedron with faces of centered polygons.
