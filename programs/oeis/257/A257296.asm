@@ -1,0 +1,65 @@
+; A257296: Arithmetic mean of the digits of n, multiplied by 10^(d-1) and rounded down, where d is the number of digits of n.
+; 0,1,2,3,4,5,6,7,8,9,5,10,15,20,25,30,35,40,45,50,10,15,20,25,30,35,40,45,50,55,15,20,25,30,35,40,45,50,55,60,20,25,30,35,40,45,50,55,60,65,25,30,35,40,45,50,55,60,65,70,30,35,40,45,50,55,60,65
+
+mov $4,$0
+add $2,$0
+mov $4,15
+add $4,1
+sub $4,1
+mov $4,1
+sub $2,$0
+mov $5,$4
+add $4,$4
+lpb $0,1
+  sub $2,$5
+  sub $4,$5
+  mov $6,1
+  mov $1,1
+  mul $6,5
+  gcd $1,2
+  mov $2,$0
+  pow $5,2
+  mul $1,$5
+  mod $2,10
+  div $0,10
+  mul $6,2
+  add $6,17
+  sub $4,1
+  add $3,$2
+  add $2,$1
+  mov $2,1
+  add $2,1
+  add $4,$0
+  mul $1,2
+  add $1,1
+  mul $5,$1
+  mov $6,1
+  mov $4,1
+  sub $6,$4
+  add $2,$3
+  add $4,2
+lpe
+mov $6,$6
+mul $4,5
+mov $2,$3
+div $2,3
+mul $0,3
+sub $4,$6
+add $0,4
+mul $1,$3
+add $5,1
+add $0,1
+mov $5,1
+add $3,$1
+add $5,$2
+add $4,6
+mov $0,$0
+sub $5,$0
+add $2,$5
+mov $1,1
+mov $6,$0
+mul $4,2
+mov $0,$0
+div $0,$1
+mov $1,$3
+div $1,4
