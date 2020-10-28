@@ -177,7 +177,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101432](http://oeis.org/A101432) ([L16 program](101/A101432.asm)): Each term is the number of letters in the Spanish name of the previous term.
 * [A101442](http://oeis.org/A101442) ([L03 program](101/A101442.asm)): a(n) = 9973*n + 10007.
 * [A101443](http://oeis.org/A101443) ([L07 program](101/A101443.asm)): Continued fraction expansion of (I_0(1/2)/I_1(1/2)-1)/2 = 1.56185896... (where I_n is the modified Bessel function of the first kind).
-* [A101455](http://oeis.org/A101455) ([L08 program](101/A101455.asm)): a(n) = 0 for even n, a(n) = (-1)^((n-1)/2) for odd n. Periodic sequence 1,0,-1,0,...
+* [A101455](http://oeis.org/A101455) ([L05 program](101/A101455.asm)): a(n) = 0 for even n, a(n) = (-1)^((n-1)/2) for odd n. Periodic sequence 1,0,-1,0,...
 * [A101622](http://oeis.org/A101622) ([L10 program](101/A101622.asm)): A Horadam-Jacobsthal sequence.
 * [A101642](http://oeis.org/A101642) ([L64 program](101/A101642.asm)): a(n) = Knuth's Fibonacci (or circle) product "3 o n".
 * [A101676](http://oeis.org/A101676) ([L12 program](101/A101676.asm)): a(n) = a(n-1) - a(n-2) + a(n-3) - a(n-4) + a(n-5) with initial terms 1,0,-2,-1,0.
@@ -2074,7 +2074,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131737](http://oeis.org/A131737) ([L06 program](131/A131737.asm)): Essentially even numbers followed by duplicated odd numbers.
 * [A131738](http://oeis.org/A131738) ([L21 program](131/A131738.asm)): a(0) = 0. a(n) = (n+1)*(-1)^n, n>0 .
 * [A131739](http://oeis.org/A131739) ([L08 program](131/A131739.asm)): a(4n) = a(4n+1) = n, a(4n+2) = 3n+2, a(4n+3) = 3n+3.
-* [A131742](http://oeis.org/A131742) ([L10 program](131/A131742.asm)): a(4n) = a(4n+1) = 0, a(4n+2) = 3n+1, a(4n+3) = 3n+2.
+* [A131742](http://oeis.org/A131742) ([L28 program](131/A131742.asm)): a(4n) = a(4n+1) = 0, a(4n+2) = 3n+1, a(4n+3) = 3n+2.
 * [A131743](http://oeis.org/A131743) ([L04 program](131/A131743.asm)): Period 4: repeat [0, 1, 0, 2].
 * [A131756](http://oeis.org/A131756) ([L17 program](131/A131756.asm)): Period 3: repeat [2, -1, 3].
 * [A131757](http://oeis.org/A131757) ([L21 program](131/A131757.asm)): Period 10: repeat 3, 3, 3, -7, 3, 3, -7, 3, 3, -7.
@@ -2507,7 +2507,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135560](http://oeis.org/A135560) ([L28 program](135/A135560.asm)): a(n) = A007814(n) + A036987(n-1) + 1.
 * [A135561](http://oeis.org/A135561) ([L15 program](135/A135561.asm)): a(n) = 2^A135560(n) - 1.
 * [A135569](http://oeis.org/A135569) ([L12 program](135/A135569.asm)): a(n) = S2(n)*2^n; where S2(n) is digit sum of n, n in binary notation.
-* [A135570](http://oeis.org/A135570) ([L17 program](135/A135570.asm)): a(n) = 1 + Sum_{i=1..n} S2(i)*2^i, where S2(n) is digit sum of n, n in binary notation.
+* [A135570](http://oeis.org/A135570) ([L14 program](135/A135570.asm)): a(n) = 1 + Sum_{i=1..n} S2(i)*2^i, where S2(n) is digit sum of n, n in binary notation.
 * [A135576](http://oeis.org/A135576) ([L14 program](135/A135576.asm)): Numbers whose binary expansion has only the digit "1" as first, central and final digit.
 * [A135583](http://oeis.org/A135583) ([L05 program](135/A135583.asm)): a(n) = 4*a(n-1) - 4 for n>0, a(0)=3.
 * [A135585](http://oeis.org/A135585) ([L42 program](135/A135585.asm)): a(n) = Sum_{i=1..n} (floor(S2(i)/3) mod 2), where S2(i) = A000120(i).
@@ -3000,7 +3000,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144110](http://oeis.org/A144110) ([L03 program](144/A144110.asm)): Period 6: repeat [2, 2, 2, 1, 1, 1].
 * [A144112](http://oeis.org/A144112) ([L14 program](144/A144112.asm)): Weight array W={w(i,j)} of the natural number array A000027.
 * [A144124](http://oeis.org/A144124) ([L43 program](144/A144124.asm)): P_4(2n+1), the Legendre polynomial of order 4 at 2n+1.
-* [A144129](http://oeis.org/A144129) ([L14 program](144/A144129.asm)): ChebyshevT(3, n).
+* [A144129](http://oeis.org/A144129) ([L12 program](144/A144129.asm)): ChebyshevT(3, n).
 * [A144130](http://oeis.org/A144130) ([L06 program](144/A144130.asm)): a(n) = ChebyshevT(4, n).
 * [A144138](http://oeis.org/A144138) ([L07 program](144/A144138.asm)): Chebyshev polynomial of the second kind U(3,n).
 * [A144139](http://oeis.org/A144139) ([L08 program](144/A144139.asm)): Chebyshev polynomial of the second kind U(4,n).
@@ -3362,6 +3362,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A153130](http://oeis.org/A153130) ([L07 program](153/A153130.asm)): Period 6: repeat [1, 2, 4, 8, 7, 5].
 * [A153151](http://oeis.org/A153151) ([L31 program](153/A153151.asm)): Rotated binary decrementing: For n<2 a(n) = n, if n=2^k, a(n) = 2*n-1, otherwise a(n) = n-1.
 * [A153169](http://oeis.org/A153169) ([L05 program](153/A153169.asm)): a(n) = 4*n^2 + 12*n + 3.
+* [A153186](http://oeis.org/A153186) ([L23 program](153/A153186.asm)): Period 9: repeat 1,7,4,7,4,7,1,1,1.
 * [A153192](http://oeis.org/A153192) ([L08 program](153/A153192.asm)): Numbers such that the numerator of floor(sqrt(n))/n, when reduced to its lowest terms, is equal to 2.
 * [A153229](http://oeis.org/A153229) ([L33 program](153/A153229.asm)): a(0) = 0, a(1) = 1, and for n>=2, a(n) = (n-1) * a(n-2) + (n-2) * a(n-1).
 * [A153234](http://oeis.org/A153234) ([L03 program](153/A153234.asm)): a(n) = floor(2^n/9).
@@ -5287,6 +5288,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A172329](http://oeis.org/A172329) ([L18 program](172/A172329.asm)): a(n) = floor(n*(sqrt(11) + sqrt(2))).
 * [A172330](http://oeis.org/A172330) ([L16 program](172/A172330.asm)): Floor(n*(sqrt(13)+sqrt(11))).
 * [A172423](http://oeis.org/A172423) ([L07 program](172/A172423.asm)): Period length 10: repeat 0,9,2,7,4,5,6,3,8,1.
+* [A172430](http://oeis.org/A172430) ([L102 program](172/A172430.asm)): Period length 10: repeat 2,1,6,7,0,3,4,9,8,5 .
 * [A172447](http://oeis.org/A172447) ([L09 program](172/A172447.asm)): a(n) = (-1 + 5*2^(2*n + 1) - 3*n)/9.
 * [A172471](http://oeis.org/A172471) ([L10 program](172/A172471.asm)): a(n) = floor(sqrt(2*n)).
 * [A172472](http://oeis.org/A172472) ([L12 program](172/A172472.asm)): a(n) = floor(sqrt(2*n^3)).

@@ -773,7 +773,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215781](http://oeis.org/A215781) ([L45 program](215/A215781.asm)): a(n) = ceiling(n*(sqrt(3)-1)).
 * [A215814](http://oeis.org/A215814) ([L13 program](215/A215814.asm)): 60516*n^2 - 61008*n + 2481403.
 * [A215862](http://oeis.org/A215862) ([L07 program](215/A215862.asm)): Number of simple labeled graphs on n+2 nodes with exactly n connected components that are trees or cycles.
-* [A215884](http://oeis.org/A215884) ([L22 program](215/A215884.asm)): Written in base 5, n ends in a(n) consecutive nonzero digits.
+* [A215884](http://oeis.org/A215884) ([L12 program](215/A215884.asm)): Written in base 5, n ends in a(n) consecutive nonzero digits.
 * [A215885](http://oeis.org/A215885) ([L10 program](215/A215885.asm)): a(n) = 3*a(n-1) - a(n-3), with a(0) = 3, a(1) = 3, and a(2) = 9.
 * [A215928](http://oeis.org/A215928) ([L08 program](215/A215928.asm)): a(n) = 2*a(n-1) + a(n-2) for n > 2, a(0) = a(1) = 1, a(2) = 2.
 * [A215960](http://oeis.org/A215960) ([L18 program](215/A215960.asm)): First differences of A016759.
@@ -3387,7 +3387,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280056](http://oeis.org/A280056) ([L10 program](280/A280056.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} and even trace with no entries repeated.
 * [A280058](http://oeis.org/A280058) ([L03 program](280/A280058.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} with determinant = permanent with no entries repeated.
 * [A280059](http://oeis.org/A280059) ([L11 program](280/A280059.asm)): Number of 2 X 2 matrices having all elements in {-n,..,0,..,n} with determinant = permanent.
-* [A280089](http://oeis.org/A280089) ([L15 program](280/A280089.asm)): a(n) = 4 * n^3 - 3 * n + 1.
+* [A280089](http://oeis.org/A280089) ([L11 program](280/A280089.asm)): a(n) = 4 * n^3 - 3 * n + 1.
 * [A280154](http://oeis.org/A280154) ([L12 program](280/A280154.asm)): a(n) = 5*Lucas(n).
 * [A280166](http://oeis.org/A280166) ([L19 program](280/A280166.asm)): a(2*n) = 4*n if n>0, a(2*n + 1) = -(2*n + 1), a(0) = 1.
 * [A280167](http://oeis.org/A280167) ([L26 program](280/A280167.asm)): a(2*n) = 3*n if n>0, a(2*n + 1) = -(2*n + 1), a(0) = 1.
@@ -3864,7 +3864,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A292638](http://oeis.org/A292638) ([L14 program](292/A292638.asm)): Rank of (3-r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
 * [A292639](http://oeis.org/A292639) ([L18 program](292/A292639.asm)): Rank of (3+r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
 * [A292641](http://oeis.org/A292641) ([L14 program](292/A292641.asm)): Rank of (4+r)*n when all the numbers (4-r)*j and (4+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
-* [A292649](http://oeis.org/A292649) ([L101 program](292/A292649.asm)): Rank of (Pi+1)*n when all the numbers Pi*j and (Pi+1)*k, for j>=1, k>=1, are jointly ranked.
+* [A292649](http://oeis.org/A292649) ([L06 program](292/A292649.asm)): Rank of (Pi+1)*n when all the numbers Pi*j and (Pi+1)*k, for j>=1, k>=1, are jointly ranked.
 * [A292650](http://oeis.org/A292650) ([L26 program](292/A292650.asm)): Rank of n*e when all the numbers j*e and k*Pi, for j>=1, k>=1, are jointly ranked.
 * [A292653](http://oeis.org/A292653) ([L17 program](292/A292653.asm)): Rank of n*sin(1) when all the numbers j*cos(1) and k*sin(1), for j>=1, k>=1, are jointly ranked.
 * [A292987](http://oeis.org/A292987) ([L31 program](292/A292987.asm)): Beatty sequence of the real root of x^5 - x^4 - x^2 - 1; complement of A292988.

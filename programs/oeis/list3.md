@@ -950,7 +950,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328034](http://oeis.org/A328034) ([L29 program](328/A328034.asm)): a(n) = 3n minus the largest power of 2 not exceeding 3n.
 * [A328152](http://oeis.org/A328152) ([L22 program](328/A328152.asm)): a(n) is the number of squares of side length greater than 1 having vertices at the points of an n X n grid of dots.
 * [A328184](http://oeis.org/A328184) ([L24 program](328/A328184.asm)): Denominator of time taken for a vertex of a rolling regular n-sided polygon to reach the ground.
-* [A328263](http://oeis.org/A328263) ([L07 program](328/A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
+* [A328263](http://oeis.org/A328263) ([L19 program](328/A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
 * [A328284](http://oeis.org/A328284) ([L51 program](328/A328284.asm)): An extension of the Jacobsthal numbers: 0, 0, 1, followed by A001045.
 * [A328333](http://oeis.org/A328333) ([L17 program](328/A328333.asm)): Expansion of (1 + 4*x - 6*x^2) / ((1 - x) * (1 - 10*x^2)).
 * [A328778](http://oeis.org/A328778) ([L35 program](328/A328778.asm)): Number of indecomposable closed walks of length 2n along the edges of a cube based at a vertex.
@@ -1225,3 +1225,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338086](http://oeis.org/A338086) ([L22 program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
 * [A338130](http://oeis.org/A338130) ([L50 program](338/A338130.asm)): Positive numbers k such that the ternary representation of k^k ends with that of k.
 * [A338206](http://oeis.org/A338206) ([L13 program](338/A338206.asm)): Inverse of A160016.
+* [A338329](http://oeis.org/A338329) ([L63 program](338/A338329.asm)): First differences of A326118.

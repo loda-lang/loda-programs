@@ -2135,6 +2135,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021148](http://oeis.org/A021148) ([L06 program](021/A021148.asm)): Decimal expansion of 1/144.
 * [A021152](http://oeis.org/A021152) ([L19 program](021/A021152.asm)): Decimal expansion of 1/148.
 * [A021160](http://oeis.org/A021160) ([L15 program](021/A021160.asm)): Decimal expansion of 1/156.
+* [A021166](http://oeis.org/A021166) ([L103 program](021/A021166.asm)): Decimal expansion of 1/162.
 * [A021169](http://oeis.org/A021169) ([L04 program](021/A021169.asm)): Decimal expansion of 1/165.
 * [A021180](http://oeis.org/A021180) ([L56 program](021/A021180.asm)): Decimal expansion of 1/176.
 * [A021189](http://oeis.org/A021189) ([L19 program](021/A021189.asm)): Decimal expansion of 1/185.
@@ -3372,10 +3373,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033586](http://oeis.org/A033586) ([L04 program](033/A033586.asm)): a(n) = 4*n*(2*n + 1).
 * [A033587](http://oeis.org/A033587) ([L04 program](033/A033587.asm)): a(n) = 2*n*(4*n + 3).
 * [A033589](http://oeis.org/A033589) ([L18 program](033/A033589.asm)): a(n) = (2*n-1)*(3*n-1)*(4*n-1).
-* [A033590](http://oeis.org/A033590) ([L66 program](033/A033590.asm)): a(n) = (2*n-1)*(3*n-1)*(4*n-1)*(5*n-1).
+* [A033590](http://oeis.org/A033590) ([L16 program](033/A033590.asm)): a(n) = (2*n-1)*(3*n-1)*(4*n-1)*(5*n-1).
 * [A033591](http://oeis.org/A033591) ([L14 program](033/A033591.asm)): a(n) = (2*n+1)*(3*n+1)*(4*n+1).
 * [A033592](http://oeis.org/A033592) ([L43 program](033/A033592.asm)): a(n) = (2*n+1)*(3*n+1)*(4*n+1)*(5*n+1).
-* [A033593](http://oeis.org/A033593) ([L62 program](033/A033593.asm)): a(n) = (n-1)*(2*n-1)*(3*n-1)*(4*n-1).
+* [A033593](http://oeis.org/A033593) ([L14 program](033/A033593.asm)): a(n) = (n-1)*(2*n-1)*(3*n-1)*(4*n-1).
 * [A033594](http://oeis.org/A033594) ([L20 program](033/A033594.asm)): a(n) = (n-1)*(2*n-1)*(3*n-1).
 * [A033595](http://oeis.org/A033595) ([L05 program](033/A033595.asm)): a(n) = (n^2-1)*(2*n^2-1).
 * [A033596](http://oeis.org/A033596) ([L05 program](033/A033596.asm)): a(n) = (n^2 - 1)*(n^2 - 3).
@@ -5315,7 +5316,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056576](http://oeis.org/A056576) ([L03 program](056/A056576.asm)): Highest k with 2^k <= 3^n.
 * [A056578](http://oeis.org/A056578) ([L28 program](056/A056578.asm)): a(n) = 1 + 2n + 3n^2 + 4n^3.
 * [A056579](http://oeis.org/A056579) ([L41 program](056/A056579.asm)): 1+2n+3n^2+4n^3+5n^4.
-* [A056594](http://oeis.org/A056594) ([L08 program](056/A056594.asm)): Periodic sequence 1,0,-1,0,...; expansion of 1/(1 + x^2).
+* [A056594](http://oeis.org/A056594) ([L05 program](056/A056594.asm)): Periodic sequence 1,0,-1,0,...; expansion of 1/(1 + x^2).
 * [A056640](http://oeis.org/A056640) ([L17 program](056/A056640.asm)): At stage 1, start with a unit square. At each successive stage add 4*(n-1) new squares around outside with edge-to-edge contacts. Sequence gives number of squares (regardless of size) at n-th stage.
 * [A056699](http://oeis.org/A056699) ([L20 program](056/A056699.asm)): First differences are 2,1,-2,3 (repeated).
 * [A056738](http://oeis.org/A056738) ([L66 program](056/A056738.asm)): Positions where 2's occur in A056731.
@@ -7732,6 +7733,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086972](http://oeis.org/A086972) ([L10 program](086/A086972.asm)): a(n) = n*3^(n-1) + (3^n+1)/2.
 * [A087009](http://oeis.org/A087009) ([L13 program](087/A087009.asm)): Least m such that omega(m) + Omega(m) = n, or 0 if no such m exists.
 * [A087035](http://oeis.org/A087035) ([L20 program](087/A087035.asm)): Maximum value taken on by f(P)=sum(i=1..n, p(i)*p(n+1-i) ) as {p(1),p(2),...,p(n)} ranges over all permutations P of {1,2,3,...n}.
+* [A087055](http://oeis.org/A087055) ([L12 program](087/A087055.asm)): Largest square number less than 2*n^2.
 * [A087056](http://oeis.org/A087056) ([L13 program](087/A087056.asm)): Difference between 2 * n^2 and the next smaller square number.
 * [A087057](http://oeis.org/A087057) ([L23 program](087/A087057.asm)): Smallest number whose square is larger than 2*n^2.
 * [A087058](http://oeis.org/A087058) ([L11 program](087/A087058.asm)): Smallest square number greater than 2*n^2.
@@ -8428,7 +8430,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A098230](http://oeis.org/A098230) ([L29 program](098/A098230.asm)): 75-gonal numbers: a(n) = n*(73*n-71)/2.
 * [A098232](http://oeis.org/A098232) ([L13 program](098/A098232.asm)): Largest power of 2 <= 3^n.
 * [A098293](http://oeis.org/A098293) ([L06 program](098/A098293.asm)): Powers of 2 alternating with powers of 3.
-* [A098295](http://oeis.org/A098295) ([L21 program](098/A098295.asm)): ((3/2)^n)/2^a(n) lies in the half-open interval [1,2).
+* [A098295](http://oeis.org/A098295) ([L06 program](098/A098295.asm)): ((3/2)^n)/2^a(n) lies in the half-open interval [1,2).
 * [A098352](http://oeis.org/A098352) ([L19 program](098/A098352.asm)): Multiplication table of the even numbers read by antidiagonals.
 * [A098354](http://oeis.org/A098354) ([L07 program](098/A098354.asm)): Multiplication table of the powers of 2 read by antidiagonals.
 * [A098355](http://oeis.org/A098355) ([L15 program](098/A098355.asm)): Multiplication table of the powers of three read by antidiagonals.
