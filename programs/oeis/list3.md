@@ -587,6 +587,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315057](http://oeis.org/A315057) ([L38 program](315/A315057.asm)): Coordination sequence Gal.4.57.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315075](http://oeis.org/A315075) ([L29 program](315/A315075.asm)): Coordination sequence Gal.6.350.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315170](http://oeis.org/A315170) ([L26 program](315/A315170.asm)): Coordination sequence Gal.6.119.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315171](http://oeis.org/A315171) ([L69 program](315/A315171.asm)): Coordination sequence Gal.6.220.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315172](http://oeis.org/A315172) ([L22 program](315/A315172.asm)): Coordination sequence Gal.5.54.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315173](http://oeis.org/A315173) ([L25 program](315/A315173.asm)): Coordination sequence Gal.5.99.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315175](http://oeis.org/A315175) ([L22 program](315/A315175.asm)): Coordination sequence Gal.4.42.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -1225,4 +1226,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338086](http://oeis.org/A338086) ([L22 program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
 * [A338130](http://oeis.org/A338130) ([L50 program](338/A338130.asm)): Positive numbers k such that the ternary representation of k^k ends with that of k.
 * [A338206](http://oeis.org/A338206) ([L13 program](338/A338206.asm)): Inverse of A160016.
-* [A338329](http://oeis.org/A338329) ([L63 program](338/A338329.asm)): First differences of A326118.
+* [A338329](http://oeis.org/A338329) ([L22 program](338/A338329.asm)): First differences of A326118.

@@ -1,92 +1,21 @@
 ; A140949: a(n) = number of iterations of k -> k-1/k until we reach a negative number, starting at n.
 ; 3,6,10,14,20,26,34,43,52,63,74,87,100,115,130,147,164,183,202,223,244,267,290,315,341,367,395,423,453,483,515,547,581,615,651,687,725,763,803,843,885,927,971,1015,1061,1107,1155,1203,1253,1303,1355,1407,1461
 
-mov $9,$0
+mov $4,$0
 mov $6,$0
-mov $2,$0
-sub $0,4
-sub $0,5
-sub $0,8
-mov $6,$6
-mul $0,$2
-add $7,$6
-mov $2,$7
 pow $6,2
-sub $0,1
-mov $2,$0
-div $0,2
 mov $0,$6
-mov $8,1
-mov $2,2
-add $3,5
-mov $7,1
-add $2,1
-trn $8,$6
-add $7,$3
-add $1,$8
-mov $7,2
-sub $2,$3
-add $7,$6
-div $6,2
-mov $5,1
-add $0,2
-add $0,$7
-sub $6,1
-trn $8,1
-mov $3,11
-mul $5,$5
-add $3,$7
-add $8,1
-mov $1,$6
-add $6,3
+mov $5,2
+add $5,$6
+add $0,$5
 lpb $0,1
-  sub $8,2
-  mov $8,1
-  sub $1,1
-  mov $4,$7
-  mov $2,16
-  sub $2,6
-  add $2,$0
-  mov $5,15
-  add $2,3
-  add $3,$5
-  mov $2,$0
-  mod $3,2
-  add $1,$0
-  add $8,1
-  mod $2,10
-  mov $4,$8
-  add $6,1
   div $0,10
-  mov $1,$4
-  add $7,1
-  mov $3,$0
-  mov $2,1
-  mul $2,2
-  sub $3,$0
-  add $4,$2
+  add $5,1
 lpe
-sub $2,$8
-mov $2,$2
-div $5,$7
-add $5,$0
-sub $1,$5
-mov $1,1
-add $5,$3
-add $2,1
-div $7,2
-pow $3,2
+div $5,2
+mov $1,$5
 add $1,2
-sub $2,$3
-mov $2,0
-mov $1,1
-mov $6,12
-mul $0,2
-mov $1,$7
-add $1,2
-mov $10,$9
-mov $11,$10
-mul $11,2
-add $1,$11
-mul $10,$9
-mul $10,$9
+mov $3,$4
+mov $2,$3
+mul $2,2
+add $1,$2

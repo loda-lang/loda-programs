@@ -1,0 +1,105 @@
+; A014030: Inverse of 21st cyclotomic polynomial.
+; 1,1,1,0,0,0,0,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,-1,-1,-1,0,0,0,0,0,0,0,0
+
+lpb $0,1
+  mov $9,$0
+  mov $9,21
+  mov $2,$0
+  add $5,$9
+  add $10,2
+  sub $10,$2
+  mov $7,6
+  add $4,$9
+  div $9,$9
+  mod $2,10
+  trn $9,2
+  mov $6,1
+  mod $0,$5
+  mul $5,2
+  mov $1,2
+  add $3,1
+  sub $5,$5
+  mov $2,1
+  div $1,$3
+  add $1,$10
+  div $3,14
+  mov $2,2
+  mov $6,1
+  mov $5,$1
+  sub $10,1
+  mov $8,$1
+  mov $3,1
+  mov $1,1
+  add $7,1
+  mov $10,$7
+  mov $3,2
+  add $3,$7
+  sub $9,$7
+  sub $10,1
+  add $3,$2
+  div $5,$6
+  mov $1,1
+  add $5,$9
+  add $3,$0
+  mul $5,$9
+  div $0,10
+  add $6,$1
+  mul $7,$0
+  add $5,2
+lpe
+gcd $4,2
+mul $7,2
+mov $7,1
+add $0,1
+mov $9,1
+mov $5,2
+sub $10,$3
+add $5,$9
+trn $2,$4
+pow $0,2
+mov $7,$5
+add $9,$6
+div $10,4
+mov $5,$1
+mul $4,2
+add $9,2
+sub $8,1
+add $5,$6
+sub $7,1
+sub $5,$8
+mov $9,1
+mov $2,6
+mov $7,$10
+mul $0,$7
+div $7,2
+add $5,$3
+add $3,$4
+mov $1,$5
+sub $10,$10
+mul $1,$6
+mul $3,$7
+mul $7,2
+mov $1,$9
+sub $10,4
+mul $0,2
+mov $0,$0
+sub $0,$4
+div $6,2
+add $4,4
+pow $1,$3
+add $4,2
+mul $8,2
+add $0,6
+mov $10,2
+mov $5,$3
+mul $5,$2
+add $6,$0
+mov $4,$8
+mod $3,2
+mov $8,$6
+mov $1,$8
+mov $5,1
+div $10,2
+mov $9,3
+mov $1,$0
+div $1,2
