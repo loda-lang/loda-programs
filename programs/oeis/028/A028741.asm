@@ -1,0 +1,91 @@
+; A028741: Nonsquares mod 28.
+; 2,3,5,6,7,10,11,12,13,14,15,17,18,19,20,22,23,24,26,27
+
+mov $9,$0
+mov $7,$0
+add $0,$0
+mul $0,$7
+lpb $0,1
+  mov $3,$0
+  mov $4,1
+  mov $0,$4
+  add $6,6
+  mov $4,1
+  add $2,$0
+  add $5,$4
+  add $1,$2
+  add $7,20
+  mov $0,8
+  add $8,$5
+  mov $5,$2
+  mov $2,$0
+  add $0,1
+  trn $4,$5
+  mov $8,1
+  sub $8,30
+  add $4,$1
+  sub $2,$4
+  mul $8,2
+  add $5,$7
+  mov $4,$2
+  mov $4,2
+  mov $8,20
+  trn $6,2
+  mov $0,$0
+  mul $0,2
+  mov $2,2
+  mov $3,1
+  add $3,$3
+  add $3,1
+  mov $4,2
+  add $5,$4
+  add $8,1
+  add $8,1
+  mod $2,2
+  pow $2,$0
+  mov $0,$7
+  add $8,3
+  add $5,$0
+  mul $0,2
+  sub $1,2
+  trn $6,$3
+  add $5,1
+  sub $3,$4
+  trn $6,8
+  mul $8,2
+  add $3,$2
+  mul $1,2
+  add $3,$8
+  div $5,2
+  add $6,3
+  add $1,$6
+  mov $4,2
+  mov $8,$7
+  trn $5,2
+  sub $8,1
+  add $4,1
+  mod $2,10
+  mov $0,$8
+  mul $7,2
+  sub $7,2
+  add $0,$7
+  add $2,1
+  div $0,10
+  add $6,$5
+  mov $4,$2
+  sub $0,1
+  mov $7,1
+  trn $2,1
+  mov $7,2
+  pow $3,$0
+  mov $6,$0
+lpe
+mov $4,1
+sub $4,1
+add $1,2
+mov $10,$9
+mov $11,$10
+mul $11,1
+add $1,$11
+mul $10,$9
+mul $10,$9

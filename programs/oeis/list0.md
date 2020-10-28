@@ -571,7 +571,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004919](http://oeis.org/A004919) ([L24 program](004/A004919.asm)): Floor of n*phi^4, where phi is the golden ratio, A001622.
 * [A004920](http://oeis.org/A004920) ([L11 program](004/A004920.asm)): Floor of n*phi^5, where phi is the golden ratio, A001622.
 * [A004921](http://oeis.org/A004921) ([L19 program](004/A004921.asm)): Floor of n*phi^6, phi = golden ratio, A001622.
-* [A004923](http://oeis.org/A004923) ([L07 program](004/A004923.asm)): Floor of n*phi^8, where phi is the golden ratio, A001622.
+* [A004923](http://oeis.org/A004923) ([L11 program](004/A004923.asm)): Floor of n*phi^8, where phi is the golden ratio, A001622.
 * [A004924](http://oeis.org/A004924) ([L02 program](004/A004924.asm)): Floor of n*phi^9, where phi is the golden ratio, A001622.
 * [A004925](http://oeis.org/A004925) ([L10 program](004/A004925.asm)): Floor of n*phi^10, where phi is the golden ratio, A001622.
 * [A004926](http://oeis.org/A004926) ([L02 program](004/A004926.asm)): Floor of n*phi^11, where phi is the golden ratio, A001622.
@@ -1169,7 +1169,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010157](http://oeis.org/A010157) ([L12 program](010/A010157.asm)): Continued fraction for sqrt(79).
 * [A010158](http://oeis.org/A010158) ([L17 program](010/A010158.asm)): Continued fraction for sqrt(85).
 * [A010166](http://oeis.org/A010166) ([L49 program](010/A010166.asm)): Continued fraction for sqrt(95).
-* [A010167](http://oeis.org/A010167) ([L101 program](010/A010167.asm)): Continued fraction for sqrt(96).
+* [A010167](http://oeis.org/A010167) ([L32 program](010/A010167.asm)): Continued fraction for sqrt(96).
 * [A010169](http://oeis.org/A010169) ([L42 program](010/A010169.asm)): Continued fraction for sqrt(98).
 * [A010170](http://oeis.org/A010170) ([L13 program](010/A010170.asm)): Continued fraction for sqrt(99).
 * [A010194](http://oeis.org/A010194) ([L36 program](010/A010194.asm)): Continued fraction for sqrt(135).
@@ -1515,6 +1515,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014026](http://oeis.org/A014026) ([L14 program](014/A014026.asm)): Inverse of 17th cyclotomic polynomial.
 * [A014027](http://oeis.org/A014027) ([L12 program](014/A014027.asm)): Inverse of 18th cyclotomic polynomial.
 * [A014028](http://oeis.org/A014028) ([L07 program](014/A014028.asm)): Inverse of 19th cyclotomic polynomial.
+* [A014030](http://oeis.org/A014030) ([L102 program](014/A014030.asm)): Inverse of 21st cyclotomic polynomial.
 * [A014033](http://oeis.org/A014033) ([L12 program](014/A014033.asm)): Inverse of 24th cyclotomic polynomial.
 * [A014041](http://oeis.org/A014041) ([L06 program](014/A014041.asm)): Inverse of 32nd cyclotomic polynomial.
 * [A014045](http://oeis.org/A014045) ([L12 program](014/A014045.asm)): Inverse of 36th cyclotomic polynomial.
@@ -3664,7 +3665,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037958](http://oeis.org/A037958) ([L07 program](037/A037958.asm)): a(n) = binomial(n, floor((n-8)/2)).
 * [A037965](http://oeis.org/A037965) ([L16 program](037/A037965.asm)): a(n) = n*binomial(2*n-2, n-1).
 * [A038123](http://oeis.org/A038123) ([L05 program](038/A038123.asm)): Beatty sequence for Feigenbaum's constant.
-* [A038125](http://oeis.org/A038125) ([L20 program](038/A038125.asm)): Sum_{k=0..n} (k-n)^k.
+* [A038125](http://oeis.org/A038125) ([L12 program](038/A038125.asm)): Sum_{k=0..n} (k-n)^k.
 * [A038129](http://oeis.org/A038129) ([L07 program](038/A038129.asm)): Beatty sequence for cube root of 2.
 * [A038130](http://oeis.org/A038130) ([L14 program](038/A038130.asm)): Beatty sequence for 2*Pi.
 * [A038152](http://oeis.org/A038152) ([L04 program](038/A038152.asm)): Beatty sequence for e^Pi.
@@ -5803,12 +5804,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063099](http://oeis.org/A063099) ([L11 program](063/A063099.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 31 ).
 * [A063102](http://oeis.org/A063102) ([L09 program](063/A063102.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 34 ).
 * [A063105](http://oeis.org/A063105) ([L25 program](063/A063105.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 37 ).
-* [A063107](http://oeis.org/A063107) ([L12 program](063/A063107.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 39 ).
+* [A063107](http://oeis.org/A063107) ([L22 program](063/A063107.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 39 ).
 * [A063109](http://oeis.org/A063109) ([L09 program](063/A063109.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 41 ).
 * [A063110](http://oeis.org/A063110) ([L04 program](063/A063110.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0(42).
 * [A063111](http://oeis.org/A063111) ([L12 program](063/A063111.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 43 ).
 * [A063116](http://oeis.org/A063116) ([L04 program](063/A063116.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 48 ).
-* [A063117](http://oeis.org/A063117) ([L21 program](063/A063117.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 49 ).
+* [A063117](http://oeis.org/A063117) ([L22 program](063/A063117.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 49 ).
 * [A063118](http://oeis.org/A063118) ([L08 program](063/A063118.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0(50).
 * [A063120](http://oeis.org/A063120) ([L04 program](063/A063120.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 52 ).
 * [A063121](http://oeis.org/A063121) ([L09 program](063/A063121.asm)): Dimension of the space of weight 2n cusp forms for Gamma_0( 53 ).
@@ -5891,7 +5892,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063235](http://oeis.org/A063235) ([L17 program](063/A063235.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 83 ).
 * [A063236](http://oeis.org/A063236) ([L14 program](063/A063236.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 85 ).
 * [A063237](http://oeis.org/A063237) ([L09 program](063/A063237.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 86 ).
-* [A063238](http://oeis.org/A063238) ([L18 program](063/A063238.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 87 ).
+* [A063238](http://oeis.org/A063238) ([L22 program](063/A063238.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 87 ).
 * [A063240](http://oeis.org/A063240) ([L16 program](063/A063240.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 89 ).
 * [A063241](http://oeis.org/A063241) ([L06 program](063/A063241.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0(90).
 * [A063242](http://oeis.org/A063242) ([L17 program](063/A063242.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 92 ).
@@ -6228,7 +6229,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A069905](http://oeis.org/A069905) ([L04 program](069/A069905.asm)): Number of partitions of n into 3 positive parts.
 * [A069908](http://oeis.org/A069908) ([L31 program](069/A069908.asm)): Numbers congruent to +-2, +-3, +-4 or +-5 mod 16.
 * [A069909](http://oeis.org/A069909) ([L10 program](069/A069909.asm)): Numbers congruent to +-1, +-4, +-6, +-7 mod 16.
-* [A069924](http://oeis.org/A069924) ([L33 program](069/A069924.asm)): Number of k, 1<=k<=n, such that phi(k) divides k.
+* [A069924](http://oeis.org/A069924) ([L12 program](069/A069924.asm)): Number of k, 1<=k<=n, such that phi(k) divides k.
 * [A069975](http://oeis.org/A069975) ([L06 program](069/A069975.asm)): n*(16n^2-1).
 * [A069981](http://oeis.org/A069981) ([L12 program](069/A069981.asm)): Hermite's problem: number of positive integral solutions to x + y + z = n subject to x <= y + z, y <= z + x and z <= x + y.
 * [A069984](http://oeis.org/A069984) ([L03 program](069/A069984.asm)): 1123+21460n.
