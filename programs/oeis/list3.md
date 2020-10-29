@@ -885,7 +885,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323467](http://oeis.org/A323467) ([L09 program](323/A323467.asm)): Smallest number in row n of A323465.
 * [A323608](http://oeis.org/A323608) ([L30 program](323/A323608.asm)): The position function the fractalization of which yields A323607.
 * [A323610](http://oeis.org/A323610) ([L05 program](323/A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
-* [A323614](http://oeis.org/A323614) ([L06 program](323/A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
+* [A323614](http://oeis.org/A323614) ([L05 program](323/A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
 * [A323629](http://oeis.org/A323629) ([L16 program](323/A323629.asm)): List of 6-powerful numbers (for the definition of k-powerful see A323395).
 * [A323723](http://oeis.org/A323723) ([L12 program](323/A323723.asm)): a(n) = (-2 - (-1)^n*(-2 + n) + n + 2*n^3)/4.
 * [A323724](http://oeis.org/A323724) ([L15 program](323/A323724.asm)): a(n) = n*(2*(n - 2)*n + (-1)^n + 3)/4.

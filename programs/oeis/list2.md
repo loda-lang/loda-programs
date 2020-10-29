@@ -1600,7 +1600,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241404](http://oeis.org/A241404) ([L21 program](241/A241404.asm)): Sum of n and the sum of the factorials of its digits.
 * [A241406](http://oeis.org/A241406) ([L19 program](241/A241406.asm)): Numbers n such that n^2 == -1 (mod 61).
 * [A241407](http://oeis.org/A241407) ([L10 program](241/A241407.asm)): Numbers n such that n^2 == -1 (mod 73).
-* [A241452](http://oeis.org/A241452) ([L13 program](241/A241452.asm)): a(n) = pg(3, n) + pg(4, n) + ... + pg(n, n) where pg(m, n) is the n-th m-th-order polygonal number.
+* [A241452](http://oeis.org/A241452) ([L25 program](241/A241452.asm)): a(n) = pg(3, n) + pg(4, n) + ... + pg(n, n) where pg(m, n) is the n-th m-th-order polygonal number.
 * [A241496](http://oeis.org/A241496) ([L07 program](241/A241496.asm)): Expansion of (1 + 4*x + x^2) / (1 - x^2)^3.
 * [A241520](http://oeis.org/A241520) ([L19 program](241/A241520.asm)): Numbers n such that n^2 == -1 (mod 89).
 * [A241521](http://oeis.org/A241521) ([L10 program](241/A241521.asm)): Numbers n such that n^2 == -1 (mod 97).
@@ -3691,6 +3691,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288959](http://oeis.org/A288959) ([L07 program](288/A288959.asm)): a(n) = n^2*(n^2 - 1)^2/2.
 * [A288961](http://oeis.org/A288961) ([L06 program](288/A288961.asm)): Number of 3-cycles in the n X n rook graph.
 * [A288962](http://oeis.org/A288962) ([L18 program](288/A288962.asm)): Number of 4-cycles in the n X n rook graph.
+* [A288963](http://oeis.org/A288963) ([L64 program](288/A288963.asm)): Number of 5-cycles in the n X n rook graph.
 * [A288998](http://oeis.org/A288998) ([L22 program](288/A288998.asm)): Positions of 0 in A288997; complement of A288999.
 * [A288999](http://oeis.org/A288999) ([L49 program](288/A288999.asm)): Positions of 1 in A288997; complement of A288998.
 * [A289036](http://oeis.org/A289036) ([L09 program](289/A289036.asm)): Positions of 0 in A289035; complement of A289037.
@@ -3902,6 +3903,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293547](http://oeis.org/A293547) ([L15 program](293/A293547.asm)): a(n) is the integer k that minimizes |k/Fibonacci(n) - 2/3|.
 * [A293552](http://oeis.org/A293552) ([L49 program](293/A293552.asm)): a(n) is the least integer k such that k/Fibonacci(n) > 1/4.
 * [A293553](http://oeis.org/A293553) ([L16 program](293/A293553.asm)): a(n) is the integer k that minimizes |k/Fibonacci(n) - 1/4|.
+* [A293604](http://oeis.org/A293604) ([L101 program](293/A293604.asm)): E.g.f.: exp(x * (1 - x)).
 * [A293615](http://oeis.org/A293615) ([L04 program](293/A293615.asm)): a(n) = Pochhammer(n, 5) / 2.
 * [A293637](http://oeis.org/A293637) ([L49 program](293/A293637.asm)): a(n) is the least integer k such that k/Fibonacci(n) > 1/5.
 * [A293638](http://oeis.org/A293638) ([L14 program](293/A293638.asm)): a(n) is the integer k that minimizes |k/Fibonacci(n) - 1/5|.

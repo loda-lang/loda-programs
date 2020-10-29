@@ -769,7 +769,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A111654](http://oeis.org/A111654) ([L12 program](111/A111654.asm)): n appears n-th composite number times.
 * [A111684](http://oeis.org/A111684) ([L10 program](111/A111684.asm)): Least k such that the product of n consecutive integers beginning with k exceeds n^n.
 * [A111694](http://oeis.org/A111694) ([L08 program](111/A111694.asm)): a(1) = 1+2-3 = 0, a(2) = 4+5+6-7 = 8, a(3) = 8+9+10+11-12 = 26, a(4) = 13+14+15+16+17-18 = 57, ...
-* [A111706](http://oeis.org/A111706) ([L21 program](111/A111706.asm)): a(n) = concatenation of k times the k-th digit of n.
+* [A111706](http://oeis.org/A111706) ([L15 program](111/A111706.asm)): a(n) = concatenation of k times the k-th digit of n.
 * [A111707](http://oeis.org/A111707) ([L23 program](111/A111707.asm)): a(n) = SUM {k-th digit from left* k-th digit from right.}.
 * [A111710](http://oeis.org/A111710) ([L20 program](111/A111710.asm)): Consider the triangle shown below in which the n-th row contains the n smallest numbers greater than those in the previous row such that the arithmetic mean is an integer. Sequence contains the leading diagonal.
 * [A111711](http://oeis.org/A111711) ([L12 program](111/A111711.asm)): Leading column of triangle mentioned in A111710.
@@ -1342,6 +1342,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A121453](http://oeis.org/A121453) ([L10 program](121/A121453.asm)): Numbers m such that (m mod k) > (m+2 mod k) with least value of k = 5.
 * [A121470](http://oeis.org/A121470) ([L07 program](121/A121470.asm)): Expansion of x*(1+5*x+2*x^2+x^3)/((1+x)*(1-x)^3).
 * [A121471](http://oeis.org/A121471) ([L12 program](121/A121471.asm)): a(n) = 9*n^2/4 -4*n +19/8 -3*(-1)^n/8.
+* [A121488](http://oeis.org/A121488) ([L64 program](121/A121488.asm)): a(n) = 8*n^2 - floor(n*sqrt(8))^2.
 * [A121496](http://oeis.org/A121496) ([L13 program](121/A121496.asm)): Run lengths of successive numbers in A068225.
 * [A121509](http://oeis.org/A121509) ([L06 program](121/A121509.asm)): a(n) = 5*n^2/2 - 5*n + 13/4 - (-1)^n/4.
 * [A121511](http://oeis.org/A121511) ([L13 program](121/A121511.asm)): a(n) = a(n-1) + a(n-4) - a(n-5).
@@ -2876,7 +2877,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140976](http://oeis.org/A140976) ([L06 program](140/A140976.asm)): Period length 10: repeat 8, 8, 6, 6, 4, 4, 2, 2, 0, 0.
 * [A140978](http://oeis.org/A140978) ([L09 program](140/A140978.asm)): Repeat (n+1)^2 n times.
 * [A141015](http://oeis.org/A141015) ([L20 program](141/A141015.asm)): a(0) = 0, a(1) = 1, a(2) = 2; for n > 2, a(n) = a(n-1) + 2*a(n-2) + a(n-3).
-* [A141022](http://oeis.org/A141022) ([L61 program](141/A141022.asm)): a(n) = n mod ((sum of digits of n)+1).
+* [A141022](http://oeis.org/A141022) ([L10 program](141/A141022.asm)): a(n) = n mod ((sum of digits of n)+1).
 * [A141023](http://oeis.org/A141023) ([L04 program](141/A141023.asm)): a(n) = 2^n - (3-(-1)^n)/2.
 * [A141025](http://oeis.org/A141025) ([L42 program](141/A141025.asm)): a(n) = (2^(2+n)-(-1)^n)/3 - 2*n.
 * [A141035](http://oeis.org/A141035) ([L15 program](141/A141035.asm)): Period 10: repeat 0, 0, 4, 2, -2, 4, 2, -4, -4, -2.
@@ -4412,7 +4413,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164013](http://oeis.org/A164013) ([L04 program](164/A164013.asm)): 3 times centered triangular numbers: 9*n*(n+1)/2 + 3.
 * [A164015](http://oeis.org/A164015) ([L04 program](164/A164015.asm)): 5 times centered pentagonal numbers: 5*(5*n^2 + 5*n + 2)/2.
 * [A164016](http://oeis.org/A164016) ([L04 program](164/A164016.asm)): 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
-* [A164039](http://oeis.org/A164039) ([L08 program](164/A164039.asm)): a(n+1) = 3*a(n) - n.
+* [A164039](http://oeis.org/A164039) ([L07 program](164/A164039.asm)): a(n+1) = 3*a(n) - n.
 * [A164044](http://oeis.org/A164044) ([L07 program](164/A164044.asm)): a(n+1) = 4*a(n) - n.
 * [A164045](http://oeis.org/A164045) ([L16 program](164/A164045.asm)): a(n+1) = 5*a(n) - n.
 * [A164051](http://oeis.org/A164051) ([L09 program](164/A164051.asm)): a(n) = 2^(2n) + 2^(n-1).
@@ -6858,6 +6859,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A194515](http://oeis.org/A194515) ([L16 program](194/A194515.asm)): Second coordinate of (3,4)-Lagrange pair for n.
 * [A194516](http://oeis.org/A194516) ([L26 program](194/A194516.asm)): First coordinate of (3,5)-Lagrange pair for n.
 * [A194517](http://oeis.org/A194517) ([L16 program](194/A194517.asm)): Second coordinate of (3,5)-Lagrange pair for n.
+* [A194519](http://oeis.org/A194519) ([L63 program](194/A194519.asm)): Second coordinate of (3,7)-Lagrange pair for n.
 * [A194522](http://oeis.org/A194522) ([L09 program](194/A194522.asm)): First coordinate of (4,5)-Lagrange pair for n.
 * [A194584](http://oeis.org/A194584) ([L41 program](194/A194584.asm)): Differences of A035336.
 * [A194597](http://oeis.org/A194597) ([L11 program](194/A194597.asm)): Digital roots of the nonzero hexagonal numbers.
@@ -6937,7 +6939,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195161](http://oeis.org/A195161) ([L04 program](195/A195161.asm)): Multiples of 8 and odd numbers interleaved.
 * [A195162](http://oeis.org/A195162) ([L14 program](195/A195162.asm)): Generalized 12-gonal numbers: k*(5*k-4) for k = 0, +-1, +-2, ...
 * [A195163](http://oeis.org/A195163) ([L45 program](195/A195163.asm)): 1000-gonal numbers: a(n) = n*(499*n - 498).
-* [A195169](http://oeis.org/A195169) ([L67 program](195/A195169.asm)): a(n) = 3*n - floor(2*n*r/3), where r=(1+sqrt(5))/2 (the golden ratio).
+* [A195169](http://oeis.org/A195169) ([L11 program](195/A195169.asm)): a(n) = 3*n - floor(2*n*r/3), where r=(1+sqrt(5))/2 (the golden ratio).
 * [A195174](http://oeis.org/A195174) ([L25 program](195/A195174.asm)): a(n) = 5*n - floor(3*n*r), where r=(1+sqrt(5))/2 (the golden ratio.)
 * [A195175](http://oeis.org/A195175) ([L25 program](195/A195175.asm)): a(n) = 8*n - floor(4*n*r), where r=(1+sqrt(5))/2 (the golden ratio.)
 * [A195176](http://oeis.org/A195176) ([L12 program](195/A195176.asm)): a(n) = 3*n - floor(n*sqrt(2)).

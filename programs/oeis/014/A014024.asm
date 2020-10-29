@@ -1,0 +1,104 @@
+; A014024: Inverse of 15th cyclotomic polynomial.
+; 1,1,1,0,0,-1,-1,-1,0,0,0,0,0,0,0,1,1,1,0,0,-1,-1,-1,0,0,0,0,0,0,0,1,1,1,0,0,-1,-1,-1,0,0,0,0,0,0,0,1,1,1,0,0,-1,-1,-1,0,0,0,0,0,0,0,1,1,1,0,0,-1,-1,-1,0,0,0,0,0,0,0,1,1,1,0,0,-1
+
+mul $0,2
+div $0,5
+mov $3,$0
+add $1,1
+add $0,$1
+mov $2,1
+mov $6,1
+add $3,$1
+mov $3,$6
+mod $0,6
+sub $0,2
+lpb $0,1
+  mov $10,$2
+  add $0,$3
+  add $1,3
+  add $6,1
+  mov $1,2
+  add $9,1
+  mov $4,1
+  sub $0,2
+  trn $2,6
+  mov $6,2
+  mul $3,5
+  mov $5,24
+  add $0,$6
+  add $6,$5
+  mov $4,1
+  mov $2,$0
+  sub $3,$5
+  mov $8,$6
+  mov $9,1
+  add $6,2
+  mov $6,5
+  sub $0,$3
+  mod $2,10
+  mov $6,$3
+  mov $0,6
+  mov $3,24
+  add $8,$9
+  mul $9,$6
+  add $5,$1
+  mov $3,$0
+  mov $8,1
+  mul $5,$3
+  mov $3,1
+  mov $4,$0
+  add $3,$3
+  add $3,$2
+  add $2,$6
+  add $0,4
+  add $2,2
+  mov $7,1
+  add $6,1
+  pow $5,$1
+  mov $6,1
+  mov $9,2
+  mov $2,1
+  add $5,1
+  mov $4,$8
+  add $1,1
+  div $10,2
+  sub $4,1
+  mov $0,$7
+  mov $1,1
+  mov $8,3
+  div $9,40
+  add $3,24
+  sub $5,12
+  mov $6,2
+  mul $4,$1
+  mov $9,3
+  mov $6,$10
+  mod $3,4
+  add $2,$7
+  add $7,$3
+  div $0,10
+  div $4,$2
+  sub $2,$9
+  mov $4,$2
+  cmp $10,4
+  add $3,$8
+  add $1,$2
+  mov $10,1
+  mov $4,$1
+  add $5,$2
+  mul $1,6
+  mov $5,$6
+  add $0,1
+lpe
+sub $0,$5
+mov $7,$5
+mov $1,8
+add $4,$2
+sub $9,$4
+div $0,$9
+mul $6,2
+mov $2,1
+add $10,4
+mov $3,$2
+add $5,$1
+mov $1,$0
