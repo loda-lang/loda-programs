@@ -1,0 +1,86 @@
+; A162214: a(n) = the largest positive multiple of n with exactly n digits when written in binary.
+; 1,2,6,12,30,60,126,248,504,1020,2046,4092,8190,16380,32760,65520,131070,262134,524286,1048560,2097144,4194300,8388606,16777200,33554425,67108860,134217702,268435440,536870910,1073741820,2147483646,4294967264,8589934584
+
+mov $6,1
+add $0,$6
+pow $6,2
+mov $1,1
+add $1,$6
+mov $4,$6
+mov $5,$0
+mov $6,$0
+add $2,$1
+pow $1,$0
+add $8,$6
+mov $2,$4
+sub $1,1
+mov $4,$5
+div $1,$6
+sub $2,1
+sub $0,$2
+mul $5,$1
+add $5,3
+pow $2,$4
+sub $8,$5
+add $0,$1
+add $0,2
+add $1,$2
+sub $0,1
+clr $7,2
+mov $8,1
+lpb $0,1
+  mov $4,0
+  add $5,1
+  mul $0,$4
+  mul $6,$4
+  sub $2,1
+  add $8,$5
+  sub $4,$6
+  sub $5,1
+  add $6,$5
+  add $6,$2
+  add $1,1
+  add $4,1
+  mul $8,5
+  mov $2,$0
+  log $4,1
+  mov $1,5
+  sub $0,$8
+  mov $3,1
+  sub $1,9
+  mov $8,$5
+  add $0,$0
+  mov $7,5
+  sub $6,$0
+  sub $8,$1
+  mov $3,4
+  trn $5,$1
+  mov $7,$3
+  mod $2,10
+  trn $5,1
+  add $1,2
+  sub $7,$4
+  mov $0,8
+  add $8,$1
+  sub $5,$1
+  div $4,6
+  add $2,1
+  div $3,$8
+  mul $3,2
+  mov $6,1
+  div $0,10
+  fac $0
+  mov $6,$8
+  sub $5,1
+  cmp $0,2
+  mov $1,$1
+  add $3,$7
+  add $7,1
+lpe
+sub $7,2
+mov $4,1
+mov $6,$8
+sub $0,$2
+mov $1,$5
+sub $1,8
+add $1,1
