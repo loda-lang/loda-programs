@@ -1686,6 +1686,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A128076](http://oeis.org/A128076) ([L09 program](128/A128076.asm)): A128064 * A004736.
 * [A128091](http://oeis.org/A128091) ([L10 program](128/A128091.asm)): Row sums of unsigned A128090.
 * [A128092](http://oeis.org/A128092) ([L07 program](128/A128092.asm)): a(n) = largest multiple of n which is <= 2^n.
+* [A128093](http://oeis.org/A128093) ([L90 program](128/A128093.asm)): a(n) = smallest multiple of n which is >= 2^n.
 * [A128130](http://oeis.org/A128130) ([L32 program](128/A128130.asm)): Expansion of (1-x)/(1+x^4); Period 8: repeat [1,-1,0,0,-1,1,0,0].
 * [A128135](http://oeis.org/A128135) ([L10 program](128/A128135.asm)): Row sums of A128134.
 * [A128138](http://oeis.org/A128138) ([L12 program](128/A128138.asm)): A000012 * A128132.
@@ -4204,6 +4205,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160674](http://oeis.org/A160674) ([L11 program](160/A160674.asm)): A bisection of A063522.
 * [A160675](http://oeis.org/A160675) ([L17 program](160/A160675.asm)): Duplication root: the maximal number of distinct squarefree words that a word of length n can be reduced to by iterated application of string-rewriting rules uu->u.
 * [A160699](http://oeis.org/A160699) ([L33 program](160/A160699.asm)): A bisection of A063522.
+* [A160706](http://oeis.org/A160706) ([L32 program](160/A160706.asm)): Hankel transform of A052702(n+1).
 * [A160713](http://oeis.org/A160713) ([L15 program](160/A160713.asm)): 3 times numbers of Gould's sequence: a(n) = A001316(n)*3.
 * [A160722](http://oeis.org/A160722) ([L28 program](160/A160722.asm)): Number of "ON" cells at n-th stage in a certain 2-dimensional cellular automaton based on Sierpinski triangles (see Comments for precise definition).
 * [A160723](http://oeis.org/A160723) ([L15 program](160/A160723.asm)): First differences of A160722.
@@ -4225,6 +4227,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160843](http://oeis.org/A160843) ([L19 program](160/A160843.asm)): Number of lines through at least 2 points of a 3 X n grid of points.
 * [A160912](http://oeis.org/A160912) ([L04 program](160/A160912.asm)): [1, 3, 5, 7,...] convolved with [1, 4, 0, 0, 0,...]
 * [A160914](http://oeis.org/A160914) ([L33 program](160/A160914.asm)): Extended s-block elements for Janet table.
+* [A160925](http://oeis.org/A160925) ([L65 program](160/A160925.asm)): a(n)= n - reversal(n+1)
 * [A160928](http://oeis.org/A160928) ([L13 program](160/A160928.asm)): a(n) = n - reversal(n-1)
 * [A160931](http://oeis.org/A160931) ([L16 program](160/A160931.asm)): a(n)= n + digital sum(n+1)
 * [A160938](http://oeis.org/A160938) ([L16 program](160/A160938.asm)): a(n)= n * digital sum(n+1)
@@ -4275,6 +4278,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162147](http://oeis.org/A162147) ([L21 program](162/A162147.asm)): a(n) = n*(n+1)*(5*n+4)/6.
 * [A162148](http://oeis.org/A162148) ([L07 program](162/A162148.asm)): a(n) = n*(n+1)*(5*n+7)/6.
 * [A162213](http://oeis.org/A162213) ([L08 program](162/A162213.asm)): a(n) = the smallest positive multiple of n with exactly n digits when written in binary.
+* [A162214](http://oeis.org/A162214) ([L83 program](162/A162214.asm)): a(n) = the largest positive multiple of n with exactly n digits when written in binary.
 * [A162254](http://oeis.org/A162254) ([L11 program](162/A162254.asm)): a(n) = (2*n^3 + 5*n^2 + n)/2.
 * [A162255](http://oeis.org/A162255) ([L09 program](162/A162255.asm)): a(n) = 2*a(n-2) for n > 2; a(1) = 3, a(2) = 2.
 * [A162256](http://oeis.org/A162256) ([L11 program](162/A162256.asm)): a(n) = (2*n^3 + 5*n^2 - 3*n)/2.
@@ -6261,7 +6265,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186385](http://oeis.org/A186385) ([L16 program](186/A186385.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=5i and g(j)=j(j+1)/2 (triangular number).  Complement of A186386.
 * [A186386](http://oeis.org/A186386) ([L10 program](186/A186386.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=5i and g(j)=j(j+1)/2 (triangular number).  Complement of A186385.
 * [A186387](http://oeis.org/A186387) ([L20 program](186/A186387.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=6i and g(j)=j(j+1)/2 (triangular number).  Complement of A186388.
-* [A186388](http://oeis.org/A186388) ([L12 program](186/A186388.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=6i and g(j)=j(j+1)/2 (triangular number).  Complement of A186387.
+* [A186388](http://oeis.org/A186388) ([L11 program](186/A186388.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=6i and g(j)=j(j+1)/2 (triangular number).  Complement of A186387.
 * [A186389](http://oeis.org/A186389) ([L25 program](186/A186389.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=6i and g(j)=j(j+1)/2 (triangular number).  Complement of A186390.
 * [A186390](http://oeis.org/A186390) ([L14 program](186/A186390.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=6i and g(j)=j(j+1)/2 (triangular number).  Complement of A186389.
 * [A186421](http://oeis.org/A186421) ([L15 program](186/A186421.asm)): Even numbers interleaved with repeated odd numbers.

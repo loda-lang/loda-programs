@@ -1,106 +1,19 @@
 ; A010201: Continued fraction for sqrt(142).
 ; 11,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1,10,1,22,1
 
-mul $0,$0
-add $2,1
-mov $1,$0
-div $2,2
-add $3,6
-add $3,10
-sub $1,1
-add $7,3
-mov $2,2
-mov $10,1
-mov $10,$7
-mov $8,2
-mov $4,1
-add $4,8
-mov $1,4
+pow $0,2
+mov $3,3
 mul $0,2
-mov $9,$10
+mov $4,12
+mov $2,15
 mul $3,$0
-sub $10,$8
-add $10,1
-mul $2,2
-mov $3,$8
-mov $9,1
-mov $8,2
-add $4,$7
-add $8,$1
-div $3,2
-bin $8,2
-mul $7,$0
-mov $5,$0
-add $1,5
-mov $9,$5
-div $3,4
-mov $9,3
-mov $9,1
-sub $10,$10
-sub $9,$10
-add $1,10
 lpb $0,1
-  div $7,2
-  mov $2,$4
-  add $9,$7
+  div $3,2
   mul $4,2
-  mov $3,1
-  add $6,$7
-  mov $9,1
-  sub $3,1
-  mov $8,$7
-  add $3,2
-  gcd $4,$7
-  add $5,1
-  mov $6,$0
-  sub $9,$9
-  add $6,$3
-  mov $8,$4
-  mov $5,2
-  mov $10,$8
-  add $2,$2
-  mov $3,$3
-  mov $7,$8
-  add $3,$3
-  cmp $7,$10
-  mov $2,4
-  add $6,$7
-  mov $2,2
-  add $10,2
-  div $3,5
-  mov $10,$6
-  add $10,$10
-  mov $10,18
-  mov $1,1
-  mov $4,$8
-  mov $2,$8
-  mov $9,1
-  cmp $5,1
-  mov $2,$0
-  add $8,2
-  add $6,4
-  sub $2,$6
-  mov $3,5
+  gcd $4,$3
+  mov $2,$4
+  add $2,2
   mov $0,1
-  sub $3,1
-  mod $2,10
-  mov $9,$4
-  div $0,10
-  mov $1,$9
-  sub $7,2
-  mov $6,$3
-  div $3,10
-  add $7,$4
 lpe
-mov $0,1
-add $3,$6
-add $7,7
-mov $1,3
-mov $2,$2
-trn $0,30
-add $7,4
-add $6,2
-add $4,2
-mov $1,$8
-sub $1,5
-add $1,1
+mov $1,$2
+sub $1,4

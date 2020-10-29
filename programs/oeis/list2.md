@@ -1330,6 +1330,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231684](http://oeis.org/A231684) ([L19 program](231/A231684.asm)): a(n) = Sum_{i=0..n} digsum_9(i), where digsum_9(i) = A053830(i).
 * [A231686](http://oeis.org/A231686) ([L19 program](231/A231686.asm)): a(n) = Sum_{i=0..n} digsum_9(i)^3, where digsum_9(i) = A053830(i).
 * [A231687](http://oeis.org/A231687) ([L21 program](231/A231687.asm)): a(n) = Sum_{i=0..n} digsum_9(i)^4, where digsum_9(i) = A053830(i).
+* [A231688](http://oeis.org/A231688) ([L73 program](231/A231688.asm)): a(n) = Sum_{i=0..n} digsum(i)^3, where digsum(i) = A007953(i).
 * [A231689](http://oeis.org/A231689) ([L31 program](231/A231689.asm)): a(n) = Sum_{i=0..n} digsum(i)^4, where digsum(i) = A007953(i).
 * [A231896](http://oeis.org/A231896) ([L07 program](231/A231896.asm)): a(n) = 4*a(n-1) - a(n-2) with a(0) = 0, a(1) = 4.
 * [A232098](http://oeis.org/A232098) ([L15 program](232/A232098.asm)): a(n) = largest m such that m! divides n^2; a(n) = A055881(n^2).
@@ -3102,7 +3103,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273675](http://oeis.org/A273675) ([L22 program](273/A273675.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
 * [A273677](http://oeis.org/A273677) ([L17 program](273/A273677.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
 * [A273678](http://oeis.org/A273678) ([L14 program](273/A273678.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
-* [A273692](http://oeis.org/A273692) ([L105 program](273/A273692.asm)): a(n) is the denominator of 2*O(n+1) - O(n+2) where O(n) = n/2^n, the n-th Oresme number.
 * [A273724](http://oeis.org/A273724) ([L12 program](273/A273724.asm)): Place n equally-spaced points around a circle, labeled 0,1,2,...,n-1. For each i = 0..n-1 such that 3i != i mod n, draw an (undirected) chord from i to (3i mod n). Then a(n) is the total number of distinct chords.
 * [A273743](http://oeis.org/A273743) ([L12 program](273/A273743.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 901", based on the 5-celled von Neumann neighborhood.
 * [A273744](http://oeis.org/A273744) ([L17 program](273/A273744.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 901", based on the 5-celled von Neumann neighborhood.

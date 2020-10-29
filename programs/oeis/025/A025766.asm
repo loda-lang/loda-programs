@@ -6,22 +6,11 @@ lpb $0,1
   add $1,1
   add $2,$1
   mov $1,$0
-  mov $8,10
-  mov $10,$1
   div $1,11
   mul $1,2
   add $1,1
-  add $7,$0
-  add $0,1
-  add $3,6
-  add $18,1
-  sub $3,1
-  add $4,1
-  sub $0,3
+  sub $0,2
 lpe
-sub $0,1
-pow $3,2
-pow $1,$0
 mov $1,$2
 div $1,2
 add $1,1

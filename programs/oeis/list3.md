@@ -301,7 +301,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307295](http://oeis.org/A307295) ([L15 program](307/A307295.asm)): If n is even, a(n) = A001950(n/2+1), otherwise a(n) = A001950((n-1)/2+1) + 1.
 * [A307304](http://oeis.org/A307304) ([L40 program](307/A307304.asm)): Number of inequivalent ways of placing 2 nonattacking rooks on n X n board up to rotations and reflections of the board.
 * [A307313](http://oeis.org/A307313) ([L17 program](307/A307313.asm)): a(n) is the denominator of n/2^(length of the binary representation of n).
-* [A307371](http://oeis.org/A307371) ([L14 program](307/A307371.asm)): Numbers k such that the digits of sqrt(k) begin with k.
+* [A307371](http://oeis.org/A307371) ([L08 program](307/A307371.asm)): Numbers k such that the digits of sqrt(k) begin with k.
 * [A307395](http://oeis.org/A307395) ([L15 program](307/A307395.asm)): Expansion of 1/((1 - x) * ((1 - x)^3 + x^3)).
 * [A307465](http://oeis.org/A307465) ([L48 program](307/A307465.asm)): Number of Catalan words of length n avoiding the pattern 110.
 * [A307469](http://oeis.org/A307469) ([L15 program](307/A307469.asm)): a(n) = 2*a(n-1) + 6*a(n-2) for n >= 2, a(0) = 1, a(1) = 5.
@@ -965,6 +965,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328987](http://oeis.org/A328987) ([L23 program](328/A328987.asm)): The sequence C(n) defined in the comments (A and B smallest missing numbers, offset 0).
 * [A328990](http://oeis.org/A328990) ([L13 program](328/A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A328994](http://oeis.org/A328994) ([L24 program](328/A328994.asm)): a(n) = n^2*(1+n)*(1+n^2)/4.
+* [A329114](http://oeis.org/A329114) ([L14 program](329/A329114.asm)): a(n) = floor(A026532(n)/5).
 * [A329115](http://oeis.org/A329115) ([L16 program](329/A329115.asm)): a(n) = floor(A026549(n)/5).
 * [A329193](http://oeis.org/A329193) ([L06 program](329/A329193.asm)): a(n) = floor(log_2(n^3)) = floor(3 log_2(n))
 * [A329194](http://oeis.org/A329194) ([L06 program](329/A329194.asm)): a(n) = floor(log_3(n^2)) = floor(2 log_3(n))
@@ -1223,7 +1224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337976](http://oeis.org/A337976) ([L34 program](337/A337976.asm)): Number of partitions of n into two distinct parts (s,t), such that s | t, (t-s) | n, and where n/(t-s) <= s < t.
 * [A338042](http://oeis.org/A338042) ([L19 program](338/A338042.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of vertices thus created. See Comments for details.
 * [A338062](http://oeis.org/A338062) ([L10 program](338/A338062.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is odd.
-* [A338064](http://oeis.org/A338064) ([L07 program](338/A338064.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is even.
+* [A338064](http://oeis.org/A338064) ([L05 program](338/A338064.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is even.
 * [A338086](http://oeis.org/A338086) ([L22 program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
 * [A338130](http://oeis.org/A338130) ([L50 program](338/A338130.asm)): Positive numbers k such that the ternary representation of k^k ends with that of k.
 * [A338206](http://oeis.org/A338206) ([L13 program](338/A338206.asm)): Inverse of A160016.
