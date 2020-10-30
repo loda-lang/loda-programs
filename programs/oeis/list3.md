@@ -965,7 +965,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328987](http://oeis.org/A328987) ([L23 program](328/A328987.asm)): The sequence C(n) defined in the comments (A and B smallest missing numbers, offset 0).
 * [A328990](http://oeis.org/A328990) ([L13 program](328/A328990.asm)): a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
 * [A328994](http://oeis.org/A328994) ([L24 program](328/A328994.asm)): a(n) = n^2*(1+n)*(1+n^2)/4.
-* [A329114](http://oeis.org/A329114) ([L14 program](329/A329114.asm)): a(n) = floor(A026532(n)/5).
+* [A329114](http://oeis.org/A329114) ([L10 program](329/A329114.asm)): a(n) = floor(A026532(n)/5).
 * [A329115](http://oeis.org/A329115) ([L16 program](329/A329115.asm)): a(n) = floor(A026549(n)/5).
 * [A329193](http://oeis.org/A329193) ([L06 program](329/A329193.asm)): a(n) = floor(log_2(n^3)) = floor(3 log_2(n))
 * [A329194](http://oeis.org/A329194) ([L06 program](329/A329194.asm)): a(n) = floor(log_3(n^2)) = floor(2 log_3(n))
