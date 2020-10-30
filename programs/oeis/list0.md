@@ -3689,7 +3689,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038500](http://oeis.org/A038500) ([L03 program](038/A038500.asm)): Highest power of 3 dividing n.
 * [A038502](http://oeis.org/A038502) ([L13 program](038/A038502.asm)): Remove 3's from n.
 * [A038548](http://oeis.org/A038548) ([L31 program](038/A038548.asm)): Number of divisors of n that are at most sqrt(n).
-* [A038572](http://oeis.org/A038572) ([L21 program](038/A038572.asm)): a(n) = n rotated one binary place to the right.
+* [A038572](http://oeis.org/A038572) ([L14 program](038/A038572.asm)): a(n) = n rotated one binary place to the right.
 * [A038573](http://oeis.org/A038573) ([L13 program](038/A038573.asm)): a(n) = 2^A000120(n) - 1.
 * [A038608](http://oeis.org/A038608) ([L04 program](038/A038608.asm)): a(n) = n*(-1)^n.
 * [A038687](http://oeis.org/A038687) ([L04 program](038/A038687.asm)): Concatenate i >= 1 and j >= 1, then sort.
@@ -6927,6 +6927,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A077958](http://oeis.org/A077958) ([L14 program](077/A077958.asm)): Expansion of 1/(1-2*x^3).
 * [A077966](http://oeis.org/A077966) ([L19 program](077/A077966.asm)): Expansion of 1/(1+2*x^2).
 * [A077973](http://oeis.org/A077973) ([L20 program](077/A077973.asm)): Expansion of 1/(1+x-2*x^3).
+* [A077985](http://oeis.org/A077985) ([L14 program](077/A077985.asm)): Expansion of 1/(1 + 2*x - x^2).
 * [A077997](http://oeis.org/A077997) ([L16 program](077/A077997.asm)): Expansion of (1-x)/(1-2*x-x^2-x^3).
 * [A078004](http://oeis.org/A078004) ([L16 program](078/A078004.asm)): Expansion of (1-x)/(1-2*x+2*x^2+x^3).
 * [A078007](http://oeis.org/A078007) ([L35 program](078/A078007.asm)): Expansion of (1-x)/(1-x-2*x^2-x^3).

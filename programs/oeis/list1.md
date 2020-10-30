@@ -3690,7 +3690,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157368](http://oeis.org/A157368) ([L09 program](157/A157368.asm)): a(n) = 49*n^2 - 78*n + 31.
 * [A157369](http://oeis.org/A157369) ([L03 program](157/A157369.asm)): a(n) = 343*n - 273.
 * [A157370](http://oeis.org/A157370) ([L14 program](157/A157370.asm)): a(n) = 2401*n^2 - 3822*n + 1520.
-* [A157371](http://oeis.org/A157371) ([L15 program](157/A157371.asm)): a(n) = (n+1)*(9-9*n+5*n^2-n^3).
+* [A157371](http://oeis.org/A157371) ([L14 program](157/A157371.asm)): a(n) = (n+1)*(9-9*n+5*n^2-n^3).
 * [A157373](http://oeis.org/A157373) ([L09 program](157/A157373.asm)): a(n) = 49*n^2 - 20*n + 2.
 * [A157374](http://oeis.org/A157374) ([L03 program](157/A157374.asm)): a(n) = 343*n - 70.
 * [A157375](http://oeis.org/A157375) ([L30 program](157/A157375.asm)): a(n) = 2401*n^2 - 980*n + 99.
@@ -6104,6 +6104,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184552](http://oeis.org/A184552) ([L16 program](184/A184552.asm)): Super-birthdays (falling on the same weekday), version 4 (birth in the year preceding a February 29).
 * [A184580](http://oeis.org/A184580) ([L31 program](184/A184580.asm)): a(n) = floor((n-1/4)*sqrt(2)), complement of A184581.
 * [A184581](http://oeis.org/A184581) ([L21 program](184/A184581.asm)): a(n) = floor((n + 1/4)*(2 + sqrt(2))).
+* [A184583](http://oeis.org/A184583) ([L103 program](184/A184583.asm)): floor[(n-1/5)(1+r)], where r=(1+sqrt(5))/2; complement of A184582.
 * [A184584](http://oeis.org/A184584) ([L19 program](184/A184584.asm)): floor[(n-1/3)r], where r=sqrt(5); complement of A184585.
 * [A184586](http://oeis.org/A184586) ([L18 program](184/A184586.asm)): a(n) = floor((n-1/2)*r), where r=sqrt(5); complement of A184587.
 * [A184590](http://oeis.org/A184590) ([L38 program](184/A184590.asm)): floor[(n*e+1)/(e-1)]; complement of A184589.
