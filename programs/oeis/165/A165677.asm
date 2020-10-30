@@ -3,12 +3,11 @@
 
 add $0,3
 pow $0,2
-gcd $2,$0
+sub $0,1
 mov $3,$0
-sub $2,3
-mul $2,$3
+mov $2,$3
+bin $2,2
 mov $1,$2
-sub $1,54
-div $1,2
+sub $1,28
 mul $1,10
 add $1,274
