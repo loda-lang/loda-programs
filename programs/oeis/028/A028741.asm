@@ -1,0 +1,39 @@
+; A028741: Nonsquares mod 28.
+; 2,3,5,6,7,10,11,12,13,14,15,17,18,19,20,22,23,24,26,27
+
+mov $9,$0
+mov $7,$0
+mul $0,2
+mul $0,$7
+lpb $0,1
+  mov $4,1
+  mov $0,$4
+  add $6,6
+  add $2,$0
+  add $1,$2
+  add $7,20
+  sub $6,2
+  mul $3,2
+  add $3,1
+  sub $1,2
+  sub $6,$3
+  trn $6,8
+  mul $1,2
+  add $6,3
+  add $1,$6
+  mov $8,$7
+  sub $8,1
+  mov $0,$8
+  mul $7,2
+  sub $7,2
+  add $0,$7
+  div $0,10
+  sub $0,1
+  sub $2,1
+  mov $7,2
+  mov $6,$0
+lpe
+add $1,2
+mov $10,$9
+mov $5,$10
+add $1,$5
