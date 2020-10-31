@@ -1,0 +1,71 @@
+; A265676: a(n) is the total number of petals of the Flower of Life at the n-th iteration.
+; 0,1,7,19,43,67,97,139,181,229,289,349,415,493,571,655,751,847,949,1063,1177,1297,1429,1561,1699,1849,1999,2155,2323,2491,2665,2851,3037,3229,3433,3637,3847,4069,4291,4519,4759,4999,5245,5503,5761,6025,6301,6577
+
+mov $7,$0
+add $0,$0
+mov $6,$0
+add $6,1
+mov $1,1
+add $6,$6
+mul $1,4
+lpb $0,1
+  mod $6,3
+  mov $2,$0
+  mov $0,$2
+  add $3,1
+  mov $3,1
+  bin $0,2
+  mul $6,2
+  add $4,$1
+  trn $0,$6
+  mov $5,$0
+  sub $1,$1
+  mov $4,$3
+  mov $1,$4
+  add $5,$0
+  mov $1,$0
+  mov $0,1
+  sub $2,$1
+  mov $3,$2
+  trn $0,$6
+  mov $2,$5
+  add $0,$6
+  add $0,$6
+  mul $3,$0
+  sub $3,$4
+  mov $4,5
+  sub $0,$6
+  mov $6,1
+  mov $0,2
+  sub $5,$1
+  cmp $5,$1
+  mov $0,3
+  mov $2,1
+  mod $2,10
+  div $0,10
+  trn $3,3
+  add $0,$5
+  add $4,$0
+  sub $1,1
+  sub $2,2
+  mov $0,1
+  mov $5,$1
+  mov $6,5
+  mov $4,1
+  mov $0,1
+  add $0,6
+  mov $2,1
+  mov $6,4
+  mov $0,$1
+  mov $0,1
+  sub $3,1
+lpe
+mul $6,64
+trn $3,1
+mov $1,$5
+mov $8,$7
+mul $8,$7
+mov $9,$8
+mul $9,1
+add $1,$9
+mul $8,$7
