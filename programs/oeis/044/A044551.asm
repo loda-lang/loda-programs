@@ -1,0 +1,71 @@
+; A044551: Numbers n such that string 4,4 occurs in the base 7 representation of n but not of n+1.
+; 32,81,130,179,230,277,326,375,424,473,522,573,620,669,718,767,816,865,916,963,1012,1061,1110,1159,1208,1259,1306,1355,1404,1453,1502,1551,1616,1649,1698,1747,1796,1845,1894,1945,1992
+
+mov $7,$0
+mul $0,3
+mov $3,$0
+trn $3,$0
+sub $3,$0
+mov $4,3
+sub $4,$4
+add $5,$4
+add $4,$4
+sub $4,3
+add $3,1
+sub $3,10
+sub $0,$4
+sub $4,$5
+sub $4,$4
+add $6,$4
+mul $3,2
+mov $6,2
+add $3,3
+sub $5,1
+lpb $0,1
+  mov $5,2
+  mov $1,$3
+  mov $4,$4
+  sub $0,1
+  trn $1,$3
+  mov $3,2
+  div $4,4
+  gcd $0,49
+  trn $4,$5
+  sub $5,$4
+  pow $6,$4
+  trn $6,$4
+  mul $4,$1
+  mov $6,$0
+  pow $5,3
+  add $0,$5
+  add $2,$3
+  mul $2,$4
+  sub $6,2
+  mov $0,$4
+  add $2,$3
+  add $3,$6
+lpe
+add $4,1
+mul $2,$5
+mul $0,2
+sub $3,$1
+mov $1,$3
+sub $2,$6
+mov $0,3
+mov $4,1
+add $3,$4
+mov $3,14
+mov $4,5
+mov $3,1
+add $5,2
+mul $0,$6
+mov $3,1
+add $1,$3
+div $1,3
+add $1,32
+mov $8,$7
+mov $9,$8
+mul $9,49
+add $1,$9
+mul $8,$7
+mul $8,$7
