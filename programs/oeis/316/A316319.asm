@@ -1,0 +1,76 @@
+; A316319: Coordination sequence for a trivalent node in a chamfered version of the 3^6 triangular tiling of the plane.
+; 1,3,7,14,25,38,51,63,75,87,99,111,123,135,147,159,171,183,195,207,219,231,243,255,267,279,291,303,315,327,339,351,363,375,387,399,411,423,435,447,459,471,483,495,507,519,531,543,555,567,579,591,603,615,627,639
+
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  mov $1,$0
+  mov $1,$0
+  add $1,$1
+  sub $0,$1
+  bin $0,2
+  sub $1,$0
+  cmp $1,$0
+  lpb $0,1
+    add $5,$1
+    mov $4,2
+    mov $2,$1
+    mov $2,$1
+    trn $4,1
+    add $1,2
+    add $5,$1
+    add $2,5
+    add $1,$5
+    add $3,1
+    add $5,$5
+    mov $2,$0
+    mov $5,7
+    mov $2,$0
+    sub $4,1
+    mod $2,10
+    mul $2,9
+    mov $1,$4
+    mov $2,1
+    add $4,$4
+    add $6,22
+    trn $0,$6
+    pow $1,$0
+    mov $4,1
+    add $5,2
+    sub $1,1
+    trn $2,$1
+    sub $4,5
+    mov $6,$6
+    mul $1,2
+    mov $1,$5
+    mul $4,$4
+    add $0,2
+    mov $4,$2
+    add $5,1
+    sub $5,$3
+    mov $3,4
+    sub $0,1
+    sub $1,$4
+    add $1,4
+    trn $1,$3
+    div $0,10
+    add $6,$6
+    add $2,1
+    sub $5,$3
+    mov $0,$1
+    sub $3,$6
+    add $0,4
+  lpe
+  mov $5,2
+  sub $4,3
+  mov $5,3
+  mov $1,$0
+  add $1,1
+  add $8,$1
+lpe
+mov $1,$8

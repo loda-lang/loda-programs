@@ -1,0 +1,72 @@
+; A080537: Number of neutrons in longest known radioactive decay series ending with Lead 206 ("uranium series"), reversed.
+; 124,125,126,128,129,131,132,134,136,138,140,142,144,146,145,147,149,151,153,155,157
+
+mov $7,$0
+mov $1,10
+mov $2,5
+sub $0,$1
+mov $3,1
+mov $5,$3
+mov $1,1
+lpb $0,1
+  mov $3,$0
+  mov $6,$1
+  sub $3,$5
+  trn $1,$0
+  sub $3,$5
+  mov $2,1
+  add $6,10
+  add $6,2
+  pow $5,$1
+  mov $0,48
+  div $3,$6
+  add $1,1
+  mov $3,$5
+  add $5,1
+  add $3,$5
+  mov $5,$1
+  mov $0,1
+  mov $6,$5
+  add $4,$1
+  mod $5,2
+  add $1,$6
+  sub $0,$5
+  mov $0,$5
+  mov $2,$0
+  div $0,90
+  sub $1,$3
+  add $4,2
+  trn $4,$2
+  sub $6,$5
+  mul $5,$6
+  mod $2,10
+  div $0,10
+  add $2,$1
+  mov $0,1
+  mov $1,3
+  mul $4,$5
+  mov $4,17
+  mul $3,$5
+  mov $5,2
+  div $2,3
+  trn $6,2
+  mul $3,$5
+  add $4,$2
+  add $5,1
+  add $4,2
+  mul $0,$5
+  sub $6,$1
+  mov $5,$3
+  add $2,2
+  sub $1,1
+lpe
+add $1,1
+add $1,$4
+mov $1,$2
+add $1,115
+mov $8,$7
+mov $9,$8
+mul $9,2
+add $1,$9
+mul $8,$7
+mul $8,$7
