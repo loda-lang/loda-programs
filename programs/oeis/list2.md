@@ -388,7 +388,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211430](http://oeis.org/A211430) ([L11 program](211/A211430.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w^2+x+y=0.
 * [A211433](http://oeis.org/A211433) ([L24 program](211/A211433.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+2x+4y=0.
 * [A211434](http://oeis.org/A211434) ([L06 program](211/A211434.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+2x+5y=0.
-* [A211435](http://oeis.org/A211435) ([L22 program](211/A211435.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+4x+5y=0.
+* [A211435](http://oeis.org/A211435) ([L18 program](211/A211435.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+4x+5y=0.
 * [A211438](http://oeis.org/A211438) ([L11 program](211/A211438.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+2x+2y=0.
 * [A211439](http://oeis.org/A211439) ([L21 program](211/A211439.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+3x+3y=0.
 * [A211440](http://oeis.org/A211440) ([L19 program](211/A211440.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and 2w+3x+3y=0.
@@ -1114,6 +1114,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226782](http://oeis.org/A226782) ([L31 program](226/A226782.asm)): If n=0 (mod 2) then a(n)=0, otherwise a(n)=4^(-1) in Z/nZ*.
 * [A226786](http://oeis.org/A226786) ([L11 program](226/A226786.asm)): If n=0 (mod 2) then a(n)=0, otherwise a(n)=8^(-1) in Z/nZ*.
 * [A226787](http://oeis.org/A226787) ([L07 program](226/A226787.asm)): If n=0 (mod 3) then a(n)=0, otherwise a(n)=9^(-1) in Z/nZ*.
+* [A226881](http://oeis.org/A226881) ([L09 program](226/A226881.asm)): Number of n-length binary words w with #(w,0) >= #(w,1) >= 1, where #(w,x) gives the number of digits x in w.
 * [A227012](http://oeis.org/A227012) ([L37 program](227/A227012.asm)): a(n) = floor(M(g(n-1)+1, ..., g(n))), where M = harmonic mean and g(n) = n^3.
 * [A227013](http://oeis.org/A227013) ([L56 program](227/A227013.asm)): Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n^4.
 * [A227015](http://oeis.org/A227015) ([L20 program](227/A227015.asm)): a(n) = floor(M(g(n-1)+1, ..., g(n))), where M = harmonic mean and g(n) = n^3 + n^2 + n + 1.
@@ -1803,6 +1804,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245764](http://oeis.org/A245764) ([L09 program](245/A245764.asm)): a(n) = 2*(n^2 + 1) + n*(1 + (-1)^n).
 * [A245766](http://oeis.org/A245766) ([L12 program](245/A245766.asm)): a(n) = 2*(n^2 + 1) - n*(1 + (-1)^n).
 * [A245788](http://oeis.org/A245788) ([L11 program](245/A245788.asm)): n times the number of 1's in the binary expansion of n.
+* [A245804](http://oeis.org/A245804) ([L30 program](245/A245804.asm)): 2*3^n - 3*2^n.
 * [A245827](http://oeis.org/A245827) ([L44 program](245/A245827.asm)): Szeged index of the grid graph P_3 X P_n.
 * [A245828](http://oeis.org/A245828) ([L13 program](245/A245828.asm)): Szeged index of the grid graph P_n X P_n.
 * [A245829](http://oeis.org/A245829) ([L19 program](245/A245829.asm)): Szeged index of the prism graph C_n X P_2 (n >=3).
@@ -2583,6 +2585,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A265611](http://oeis.org/A265611) ([L07 program](265/A265611.asm)): a(n) = a(n-1) + floor((n-1)/2) - (-1)^n + 2 for n>=2, a(0)=1, a(1)=3.
 * [A265645](http://oeis.org/A265645) ([L04 program](265/A265645.asm)): a(n) = n^2 * floor(n/2).
 * [A265667](http://oeis.org/A265667) ([L11 program](265/A265667.asm)): Permutation of nonnegative integers: a(n) = n + floor(n/3)*(-1)^(n mod 3).
+* [A265676](http://oeis.org/A265676) ([L18 program](265/A265676.asm)): a(n) is the total number of petals of the Flower of Life at the n-th iteration.
 * [A265722](http://oeis.org/A265722) ([L07 program](265/A265722.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 1" elementary cellular automaton starting with a single ON (black) cell.
 * [A265723](http://oeis.org/A265723) ([L11 program](265/A265723.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 1" elementary cellular automaton starting with a single ON (black) cell.
 * [A265724](http://oeis.org/A265724) ([L16 program](265/A265724.asm)): Total number of OFF (white) cells after n iterations of the "Rule 1" elementary cellular automaton starting with a single ON (black) cell.
@@ -3207,7 +3210,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A275794](http://oeis.org/A275794) ([L14 program](275/A275794.asm)): One half of the y members of the positive proper solutions (x = x1(n), y = y1(n)) of the first class for the Pell equation x^2 - 2*y^2 = +7^2.
 * [A275795](http://oeis.org/A275795) ([L13 program](275/A275795.asm)): The x members of the positive proper solutions (x = x2(n), y = y2(n)) of the second class for the Pell equation x^2 - 2*y^2 = +7^2.
 * [A275796](http://oeis.org/A275796) ([L16 program](275/A275796.asm)): One half of the y members of the positive proper solutions (x = x2(n), y = y2(n)) of the second class for the Pell equation x^2 - 2*y^2 = +7^2.
-* [A275799](http://oeis.org/A275799) ([L107 program](275/A275799.asm)): Number of inequivalent (modulo C_4 rotations) square n X n grids with squares coming in two colors and three squares have one of the colors.
 * [A275855](http://oeis.org/A275855) ([L34 program](275/A275855.asm)): Platinum mean sequence: fixed point of the morphism 0 -> 0001, 1 -> 001.
 * [A275874](http://oeis.org/A275874) ([L10 program](275/A275874.asm)): a(n) = (n-4)*(n+1)*(n+3)/6.
 * [A275876](http://oeis.org/A275876) ([L10 program](275/A275876.asm)): a(n) = 4*n*(n^2 - 3*n - 1)/3.
@@ -3991,6 +3993,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296197](http://oeis.org/A296197) ([L49 program](296/A296197.asm)): Harary index of the n X n bishop graph.
 * [A296198](http://oeis.org/A296198) ([L36 program](296/A296198.asm)): Harary index of the n X n black bishop graph.
 * [A296200](http://oeis.org/A296200) ([L39 program](296/A296200.asm)): Harary index of the n X n white bishop graph.
+* [A296209](http://oeis.org/A296209) ([L121 program](296/A296209.asm)): a(n) = 1 if n is a pentanacci number, 0 otherwise; characteristic function for A001591.
 * [A296306](http://oeis.org/A296306) ([L07 program](296/A296306.asm)): a(n) = A001157(n)/A050999(n).
 * [A296349](http://oeis.org/A296349) ([L08 program](296/A296349.asm)): Position where binary expansion of n starts in the binary Champernowne sequence A030190.
 * [A296363](http://oeis.org/A296363) ([L16 program](296/A296363.asm)): a(1)=0; for n>1, a(n) = 4*n^3 - 3*n^2 - 3*n + 4.

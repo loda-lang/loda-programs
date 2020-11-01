@@ -391,7 +391,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105348](http://oeis.org/A105348) ([L27 program](105/A105348.asm)): An indicator sequence for the Jacobsthal numbers.
 * [A105349](http://oeis.org/A105349) ([L32 program](105/A105349.asm)): Characteristic sequence for the Pell numbers.
 * [A105367](http://oeis.org/A105367) ([L16 program](105/A105367.asm)): Expansion of (1-x^3)/(1-x^5).
-* [A105368](http://oeis.org/A105368) ([L08 program](105/A105368.asm)): Expansion of (1-x-x^3+x^4)/(1-x^5).
+* [A105368](http://oeis.org/A105368) ([L29 program](105/A105368.asm)): Expansion of (1-x-x^3+x^4)/(1-x^5).
 * [A105374](http://oeis.org/A105374) ([L05 program](105/A105374.asm)): a(n) = 4*n^3 + 4*n.
 * [A105384](http://oeis.org/A105384) ([L06 program](105/A105384.asm)): Expansion of x/(1 + x + x^2 + x^3 + x^4).
 * [A105385](http://oeis.org/A105385) ([L09 program](105/A105385.asm)): Expansion of (1-x^2)/(1-x^5).
@@ -970,7 +970,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115205](http://oeis.org/A115205) ([L03 program](115/A115205.asm)): a(n) = binomial(n, 9) + 1.
 * [A115218](http://oeis.org/A115218) ([L07 program](115/A115218.asm)): Triangle read by rows: zeroth row is 0; to get row n >= 1, append next 2^n numbers to end of previous row.
 * [A115243](http://oeis.org/A115243) ([L05 program](115/A115243.asm)): G.f.: (4*x^2 + 2*x)/(4*x^3 - x^2 - 4*x + 1).
-* [A115266](http://oeis.org/A115266) ([L104 program](115/A115266.asm)): Row sums of correlation triangle for floor((n+3)/3).
+* [A115266](http://oeis.org/A115266) ([L57 program](115/A115266.asm)): Row sums of correlation triangle for floor((n+3)/3).
 * [A115269](http://oeis.org/A115269) ([L33 program](115/A115269.asm)): Row sums of correlation triangle for floor((n+4)/4).
 * [A115271](http://oeis.org/A115271) ([L14 program](115/A115271.asm)): Partial sums of floor((n+4)/4)^2.
 * [A115273](http://oeis.org/A115273) ([L04 program](115/A115273.asm)): Floor(n/3)*(n mod 3).
@@ -2219,6 +2219,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132805](http://oeis.org/A132805) ([L05 program](132/A132805.asm)): A trisection of A024495.
 * [A132824](http://oeis.org/A132824) ([L11 program](132/A132824.asm)): Row sums of triangle A132823.
 * [A132913](http://oeis.org/A132913) ([L17 program](132/A132913.asm)): a(n) = ceiling(sqrt(n) + n^(1/3)).
+* [A132914](http://oeis.org/A132914) ([L14 program](132/A132914.asm)): a(n) = floor(sqrt(n) + n^(1/3)).
 * [A132918](http://oeis.org/A132918) ([L11 program](132/A132918.asm)): Identity matrix with interpolated zeros.
 * [A132920](http://oeis.org/A132920) ([L52 program](132/A132920.asm)): a(n) = n*Fibonacci(n) + binomial(n, 2).
 * [A132925](http://oeis.org/A132925) ([L08 program](132/A132925.asm)): a(n) = 2^n - 1 + n*(n-1)/2.
@@ -3014,7 +3015,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144139](http://oeis.org/A144139) ([L08 program](144/A144139.asm)): Chebyshev polynomial of the second kind U(4,n).
 * [A144193](http://oeis.org/A144193) ([L07 program](144/A144193.asm)): Square array (5 X 5) read by rows.
 * [A144194](http://oeis.org/A144194) ([L11 program](144/A144194.asm)): Square array (6 X 6) read by rows.
-* [A144197](http://oeis.org/A144197) ([L29 program](144/A144197.asm)): Square array 7 x 7 read by rows.
+* [A144197](http://oeis.org/A144197) ([L27 program](144/A144197.asm)): Square array 7 x 7 read by rows.
 * [A144217](http://oeis.org/A144217) ([L12 program](144/A144217.asm)): Weight array of A144216: a rectangular array by antidiagonals.
 * [A144312](http://oeis.org/A144312) ([L03 program](144/A144312.asm)): 5*n*(5*n+1)/2.
 * [A144314](http://oeis.org/A144314) ([L03 program](144/A144314.asm)): a(n) = 3*n*(6*n+1).
@@ -6626,6 +6627,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191276](http://oeis.org/A191276) ([L25 program](191/A191276.asm)): Numbers that are congruent to {0, 1, 4, 5, 7, 9, 11} mod 12.
 * [A191296](http://oeis.org/A191296) ([L20 program](191/A191296.asm)): Least k such that k-1 and k+1 in binary representation have same number n of 0's as 1's.
 * [A191307](http://oeis.org/A191307) ([L23 program](191/A191307.asm)): Sum of the heights of the first peaks in all dispersed Dyck paths of length n (i.e., in Motzkin paths of length n with no (1,0)-steps at positive heights).
+* [A191313](http://oeis.org/A191313) ([L19 program](191/A191313.asm)): Sum of the abscissae of the first returns to the horizontal axis (assumed to be 0 if there are no such returns) in all dispersed Dyck paths of length n (i.e., Motzkin paths of length n with no (1,0) steps at positive heights).
 * [A191341](http://oeis.org/A191341) ([L07 program](191/A191341.asm)): a(n) = 4^n - 2*2^n + 3.
 * [A191405](http://oeis.org/A191405) ([L18 program](191/A191405.asm)): A001951(n)+A001951(n+1).
 * [A191413](http://oeis.org/A191413) ([L06 program](191/A191413.asm)): a(n) = 3*n^2 - 2*n + 7.
