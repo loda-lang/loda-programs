@@ -642,6 +642,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213580](http://oeis.org/A213580) ([L35 program](213/A213580.asm)): Principal diagonal of the convolution array A213579.
 * [A213583](http://oeis.org/A213583) ([L13 program](213/A213583.asm)): Principal diagonal of the convolution array A213582.
 * [A213586](http://oeis.org/A213586) ([L42 program](213/A213586.asm)): Antidiagonal sums of the convolution array A213584.
+* [A213659](http://oeis.org/A213659) ([L65 program](213/A213659.asm)): a(n) = 3^n + 2^(2*n + 1).
 * [A213667](http://oeis.org/A213667) ([L14 program](213/A213667.asm)): Number of dominating subsets with k vertices in all the graphs G(n) (n>=1) obtained by taking n copies of the path P_3 and identifying one of their endpoints (a star with n branches of length 2).
 * [A213671](http://oeis.org/A213671) ([L17 program](213/A213671.asm)): The odd part of n^2 - n + 2.
 * [A213706](http://oeis.org/A213706) ([L18 program](213/A213706.asm)): Partial sums of A071542.
@@ -1891,8 +1892,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A247620](http://oeis.org/A247620) ([L08 program](247/A247620.asm)): Start with a single hexagon; at n-th generation add a hexagon at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
 * [A247643](http://oeis.org/A247643) ([L13 program](247/A247643.asm)): a(n) = ( 10*n*(n+1)+(2*n+1)*(-1)^n+7 )/8.
 * [A247727](http://oeis.org/A247727) ([L08 program](247/A247727.asm)): Number of length 1+3 0..n arrays with no disjoint pairs in any consecutive four terms having the same sum.
-* [A247778](http://oeis.org/A247778) ([L78 program](247/A247778.asm)): Least k such that e - (1 + 1/k)^k < 1/n.
-* [A247786](http://oeis.org/A247786) ([L69 program](247/A247786.asm)): Numbers k such that A247784(k+1) - A247784(k) = 1.
+* [A247778](http://oeis.org/A247778) ([L18 program](247/A247778.asm)): Least k such that e - (1 + 1/k)^k < 1/n.
+* [A247786](http://oeis.org/A247786) ([L18 program](247/A247786.asm)): Numbers k such that A247784(k+1) - A247784(k) = 1.
 * [A247792](http://oeis.org/A247792) ([L04 program](247/A247792.asm)): a(n) = 9*n^2 + 1.
 * [A247817](http://oeis.org/A247817) ([L04 program](247/A247817.asm)): Sum(4^k, k=2..n).
 * [A247840](http://oeis.org/A247840) ([L04 program](247/A247840.asm)): Sum(6^k, k=2..n).

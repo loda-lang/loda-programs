@@ -4890,6 +4890,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A051744](http://oeis.org/A051744) ([L12 program](051/A051744.asm)): a(n) = n*(n+1)*(n^2+5*n+18)/24.
 * [A051745](http://oeis.org/A051745) ([L06 program](051/A051745.asm)): a(n) = n*(n^4 + 10*n^3 + 35*n^2 + 50*n + 144)/120.
 * [A051746](http://oeis.org/A051746) ([L25 program](051/A051746.asm)): a(n) = n(n+7)(n+1)(n^2+2n+12)/120.
+* [A051747](http://oeis.org/A051747) ([L36 program](051/A051747.asm)): a(n) = n*(n+1)*(n+2)*(n^2+7*n+32)/120.
 * [A051755](http://oeis.org/A051755) ([L04 program](051/A051755.asm)): Consider problem of placing N queens on an n X n board so that each queen attacks precisely 2 others. Sequence gives maximal number of queens.
 * [A051797](http://oeis.org/A051797) ([L10 program](051/A051797.asm)): Partial sums of A007585.
 * [A051798](http://oeis.org/A051798) ([L10 program](051/A051798.asm)): a(n) = (n+1)*(n+2)*(n+3)*(9n+4)/24.
@@ -5280,7 +5281,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A055849](http://oeis.org/A055849) ([L07 program](055/A055849.asm)): a(n) = 3*a(n-1) - a(n-2) with a(0)=1, a(1)=9.
 * [A055850](http://oeis.org/A055850) ([L08 program](055/A055850.asm)): a(n) = 3*a(n-1) - a(n-2) with a(0)=1, a(1)=10.
 * [A055874](http://oeis.org/A055874) ([L15 program](055/A055874.asm)): a(n) = largest m such that 1, 2, ..., m divide n.
-* [A055881](http://oeis.org/A055881) ([L101 program](055/A055881.asm)): a(n) = largest m such that m! divides n.
+* [A055881](http://oeis.org/A055881) ([L30 program](055/A055881.asm)): a(n) = largest m such that m! divides n.
 * [A055908](http://oeis.org/A055908) ([L40 program](055/A055908.asm)): Column 2 of triangle A055907.
 * [A055944](http://oeis.org/A055944) ([L14 program](055/A055944.asm)): n + reversal of base 2 digits of n (written in base 10).
 * [A055989](http://oeis.org/A055989) ([L09 program](055/A055989.asm)): a(n) is its own 4th difference.
@@ -5483,7 +5484,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A058920](http://oeis.org/A058920) ([L20 program](058/A058920.asm)): a(n) = 2n^4 + 2n^3 + 3n^2 + 2n + 1.
 * [A058922](http://oeis.org/A058922) ([L05 program](058/A058922.asm)): a(n) = n*2^n - 2^n.
 * [A058923](http://oeis.org/A058923) ([L26 program](058/A058923.asm)): a(n) = binomial(n,0) - binomial(n,2) + binomial(n,4).
-* [A058937](http://oeis.org/A058937) ([L08 program](058/A058937.asm)): Maximal exponent of x in all terms of Somos polynomial of order n.
+* [A058937](http://oeis.org/A058937) ([L06 program](058/A058937.asm)): Maximal exponent of x in all terms of Somos polynomial of order n.
 * [A058962](http://oeis.org/A058962) ([L09 program](058/A058962.asm)): a(n) = 2^(2*n)*(2*n+1).
 * [A058966](http://oeis.org/A058966) ([L08 program](058/A058966.asm)): a(3) = 1, otherwise a(n) = n*2^(n-3) - 2^(n-2) - 2.
 * [A058968](http://oeis.org/A058968) ([L15 program](058/A058968.asm)): a(n) = 2^n + 2^(n - 1) - n - 8.
@@ -8295,7 +8296,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A095129](http://oeis.org/A095129) ([L10 program](095/A095129.asm)): Jac(n)(2Jac(n)-1).
 * [A095130](http://oeis.org/A095130) ([L04 program](095/A095130.asm)): Expansion of (x+x^2)/(1-x^6); period 6: repeat [0, 1, 1, 0, 0, 0].
 * [A095151](http://oeis.org/A095151) ([L09 program](095/A095151.asm)): a(n+3) = 3*a(n+2) - 2*a(n+1) + 1 with a(0)=0, a(1)=2.
-* [A095166](http://oeis.org/A095166) ([L63 program](095/A095166.asm)): Group the natural numbers so that the n-th group contains n(n+1)/2 numbers and obtain the group sum.
+* [A095166](http://oeis.org/A095166) ([L20 program](095/A095166.asm)): Group the natural numbers so that the n-th group contains n(n+1)/2 numbers and obtain the group sum.
 * [A095190](http://oeis.org/A095190) ([L10 program](095/A095190.asm)): Doubled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0 and 1 with 1,1.
 * [A095263](http://oeis.org/A095263) ([L11 program](095/A095263.asm)): a(n+3) = 3*a(n+2) - 2*a(n+1) + a(n).
 * [A095264](http://oeis.org/A095264) ([L17 program](095/A095264.asm)): a(n) = 2^(n+2) - 3*n - 4.

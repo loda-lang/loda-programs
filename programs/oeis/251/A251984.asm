@@ -1,0 +1,94 @@
+; A251984: Smallest number such that a carry occurs when adding it to n in decimal representation.
+; 9,8,7,6,5,4,3,2,1,90,9,8,7,6,5,4,3,2,1,80,9,8,7,6,5,4,3,2,1,70,9,8,7,6,5,4,3,2,1,60,9,8,7,6,5,4,3,2,1,50,9,8,7,6,5,4,3,2,1,40,9,8,7,6,5,4,3,2,1,30,9,8,7,6,5,4,3,2,1,20,9,8,7,6
+
+sub $4,$0
+mov $5,1
+add $6,1
+mov $7,2
+mov $5,1
+mov $2,$6
+mov $4,100
+sub $7,2
+add $7,$6
+lpb $7,2
+  mov $6,1
+  sub $0,$2
+  mov $2,1
+  add $6,8
+  sub $7,5
+  lpb $7,1
+    mul $5,$0
+    div $5,$7
+    trn $0,4
+    mov $2,1
+    mov $7,$2
+    mov $1,2
+    mov $1,1
+    sub $6,4
+    mov $4,$1
+    add $2,$7
+    sub $5,1
+    add $3,1
+    gcd $5,2
+    add $8,2
+    mov $0,$6
+    lpb $4,1
+      mov $7,$2
+      mov $7,$4
+      sub $7,$5
+      sub $0,7
+      mul $6,$4
+      add $6,1
+      mov $5,1
+      mov $2,$5
+      mul $2,1073741824
+      add $7,32
+      mov $5,2
+      sub $2,7
+      mov $7,1
+      mul $5,$6
+      mov $8,$2
+      mod $4,8
+    lpe
+    mod $4,10
+  lpe
+  mul $1,5
+  add $1,$3
+  trn $6,$1
+  mov $0,2
+  add $5,2
+  mul $2,$4
+  mul $5,2
+  mov $3,$5
+  trn $6,5
+  mul $1,$1
+  mov $3,$3
+  add $2,1
+  sub $4,9
+lpe
+add $7,$0
+sub $1,3
+sub $1,64
+mov $1,9
+sub $4,$7
+mov $6,$4
+sub $6,$8
+lpb $3,3
+  add $5,5
+  mul $2,8
+  div $4,2
+  mov $7,$7
+  mov $6,1
+  sub $3,6
+lpe
+trn $0,2
+mov $1,4
+lpb $4,$4
+  mod $4,10
+  sub $7,2
+  sub $5,$1
+  sub $1,$3
+  add $7,1
+  mov $2,$0
+lpe
+mov $1,$4

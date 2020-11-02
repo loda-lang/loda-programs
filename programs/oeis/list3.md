@@ -152,7 +152,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304167](http://oeis.org/A304167) ([L12 program](304/A304167.asm)): a(n) = 3^n - 2^(n-1) + 2 (n>=1).
 * [A304168](http://oeis.org/A304168) ([L10 program](304/A304168.asm)): a(n) = 2*3^n - 2^(n-1) (n>=1).
 * [A304169](http://oeis.org/A304169) ([L26 program](304/A304169.asm)): a(n) = 16*3^n + 2^(n+1) - 26 (n>=1).
-* [A304170](http://oeis.org/A304170) ([L70 program](304/A304170.asm)): a(n) = 32*3^n + 18*2^n - 116 (n>=1).
+* [A304170](http://oeis.org/A304170) ([L20 program](304/A304170.asm)): a(n) = 32*3^n + 18*2^n - 116 (n>=1).
 * [A304171](http://oeis.org/A304171) ([L05 program](304/A304171.asm)): a(n) = 87*2^n - 38 (n>=0).
 * [A304172](http://oeis.org/A304172) ([L05 program](304/A304172.asm)): a(n) = 99*2^n - 45 (n>=0).
 * [A304205](http://oeis.org/A304205) ([L03 program](304/A304205.asm)): Numbers k such that 24*k + 6 is congruent to 0 (mod 49).
