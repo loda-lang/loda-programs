@@ -1,66 +1,23 @@
 ; A095166: Group the natural numbers so that the n-th group contains n(n+1)/2 numbers and obtain the group sum.
 ; 1,9,45,155,420,966,1974,3690,6435,10615,16731,25389,37310,53340,74460,101796,136629,180405,234745,301455,382536,480194,596850,735150,897975,1088451,1309959,1566145,1860930,2198520,2583416,3020424,3514665
 
-add $2,1
-add $1,$0
-mov $1,1
-div $2,$2
-add $3,2
-sub $3,$3
-pow $1,2
-mov $2,1
-mov $4,$1
-sub $3,$3
-mov $2,2
-add $0,$2
-sub $2,1
-sub $4,3
-mov $6,1
-add $2,1
+add $0,2
+mov $4,-2
+mov $5,1
 lpb $0,1
-  mul $2,7
-  add $4,$6
+  add $4,$5
   add $3,1
-  mov $6,$6
-  mov $2,1
-  mov $1,$6
-  mov $5,1
+  mov $1,$5
   sub $3,$0
-  sub $6,5
-  add $5,1
-  sub $2,$5
   sub $0,1
-  mov $6,$3
-  sub $2,2
-  sub $2,1
+  mov $5,$3
   add $1,1
 lpe
 mov $2,$4
-div $3,2
-add $2,$2
-add $5,4
-mov $5,$3
-add $0,3
-pow $6,$2
-mov $5,$4
-mul $0,2
+mul $2,2
 mul $4,2
-clr $5,2
-add $5,1
 mul $1,$4
-trn $1,$2
-add $5,$4
-mov $4,28
-mov $6,4
-mov $3,3
-add $5,$0
-mov $6,$0
-add $0,9
-sub $1,1
-div $3,2
-mov $2,5
-add $4,1
-mov $2,2
+sub $1,$2
 sub $1,3
 div $1,4
 add $1,1
