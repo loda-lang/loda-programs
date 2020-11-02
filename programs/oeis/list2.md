@@ -560,7 +560,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212971](http://oeis.org/A212971) ([L08 program](212/A212971.asm)): Number of (w,x,y) with all terms in {0,...,n} and w<floor((x+y)/3)).
 * [A212972](http://oeis.org/A212972) ([L18 program](212/A212972.asm)): Number of (w,x,y) with all terms in {0,...,n} and w<floor((x+y)/3)).
 * [A212973](http://oeis.org/A212973) ([L14 program](212/A212973.asm)): Number of (w,x,y) with all terms in {0,...,n} and  w<=floor((x+y)/3)).
-* [A212974](http://oeis.org/A212974) ([L20 program](212/A212974.asm)): Number of (w,x,y) with all terms in {0,...,n} and w>floor((x+y)/3)).
+* [A212974](http://oeis.org/A212974) ([L15 program](212/A212974.asm)): Number of (w,x,y) with all terms in {0,...,n} and w>floor((x+y)/3)).
 * [A212975](http://oeis.org/A212975) ([L49 program](212/A212975.asm)): Number of (w,x,y) with all terms in {0,...,n} and even range.
 * [A212976](http://oeis.org/A212976) ([L28 program](212/A212976.asm)): Number of (w,x,y) with all terms in {0,...,n} and odd range.
 * [A212978](http://oeis.org/A212978) ([L09 program](212/A212978.asm)): Number of (w,x,y) with all terms in {0,...,n} and range = 2*n-w-x.
@@ -583,7 +583,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213038](http://oeis.org/A213038) ([L09 program](213/A213038.asm)): a(n) = n^2 - 3*floor(n/2)^2.
 * [A213039](http://oeis.org/A213039) ([L11 program](213/A213039.asm)): n^3-[n/3]^3, where [] = floor.
 * [A213041](http://oeis.org/A213041) ([L08 program](213/A213041.asm)): Number of (w,x,y) with all terms in {0..n} and 2|w-x| = max(w,x,y)-min(w,x,y).
-* [A213045](http://oeis.org/A213045) ([L10 program](213/A213045.asm)): Number of (w,x,y) with all terms in {0,...,n} and 2|w-x|>max(w,x,y)-min(w,x,y).
+* [A213045](http://oeis.org/A213045) ([L16 program](213/A213045.asm)): Number of (w,x,y) with all terms in {0,...,n} and 2|w-x|>max(w,x,y)-min(w,x,y).
 * [A213071](http://oeis.org/A213071) ([L15 program](213/A213071.asm)): 3*n*(9n + 2)*(18n - 1), where n runs through the odd numbers 1, 3, 5,...
 * [A213077](http://oeis.org/A213077) ([L16 program](213/A213077.asm)): a(n) = round(n^2 - sqrt(n)).
 * [A213082](http://oeis.org/A213082) ([L22 program](213/A213082.asm)): Values of n for which the number of roots of the function sin(x)/x - 1/n increases.
@@ -642,7 +642,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213580](http://oeis.org/A213580) ([L35 program](213/A213580.asm)): Principal diagonal of the convolution array A213579.
 * [A213583](http://oeis.org/A213583) ([L13 program](213/A213583.asm)): Principal diagonal of the convolution array A213582.
 * [A213586](http://oeis.org/A213586) ([L42 program](213/A213586.asm)): Antidiagonal sums of the convolution array A213584.
-* [A213659](http://oeis.org/A213659) ([L65 program](213/A213659.asm)): a(n) = 3^n + 2^(2*n + 1).
+* [A213659](http://oeis.org/A213659) ([L20 program](213/A213659.asm)): a(n) = 3^n + 2^(2*n + 1).
 * [A213667](http://oeis.org/A213667) ([L14 program](213/A213667.asm)): Number of dominating subsets with k vertices in all the graphs G(n) (n>=1) obtained by taking n copies of the path P_3 and identifying one of their endpoints (a star with n branches of length 2).
 * [A213671](http://oeis.org/A213671) ([L17 program](213/A213671.asm)): The odd part of n^2 - n + 2.
 * [A213706](http://oeis.org/A213706) ([L18 program](213/A213706.asm)): Partial sums of A071542.
@@ -2510,7 +2510,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A263449](http://oeis.org/A263449) ([L16 program](263/A263449.asm)): Permutation of the natural numbers: [4k+1, 4k+4, 4k+3, 4k+2, ...].
 * [A263459](http://oeis.org/A263459) ([L09 program](263/A263459.asm)): Number of (n+1) X (1+1) 0..4 arrays with each row and column divisible by 11, read as a base-5 number with top and left being the most significant digits.
 * [A263511](http://oeis.org/A263511) ([L06 program](263/A263511.asm)): Total number of ON (black) cells after n iterations of the "Rule 155" elementary cellular automaton starting with a single ON (black) cell.
-* [A263536](http://oeis.org/A263536) ([L08 program](263/A263536.asm)): Row sum of an equilateral triangle tiled with the 3,4,5 Pythagorean triple.
+* [A263536](http://oeis.org/A263536) ([L24 program](263/A263536.asm)): Row sum of an equilateral triangle tiled with the 3,4,5 Pythagorean triple.
 * [A263537](http://oeis.org/A263537) ([L23 program](263/A263537.asm)): Integers k such that A098531(k) is divisible by A000071(k+2).
 * [A263646](http://oeis.org/A263646) ([L28 program](263/A263646.asm)): Coefficients for an expansion of the Schwarzian derivative of a power series.
 * [A263689](http://oeis.org/A263689) ([L24 program](263/A263689.asm)): a(n) = (2*n^6 - 6*n^5 + 5*n^4 - n^2 + 12)/12.

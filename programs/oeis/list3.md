@@ -172,7 +172,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304387](http://oeis.org/A304387) ([L05 program](304/A304387.asm)): a(n) = 27*2^n - 5.
 * [A304388](http://oeis.org/A304388) ([L05 program](304/A304388.asm)): a(n) = 144*2^n - 20 (n>=1).
 * [A304389](http://oeis.org/A304389) ([L05 program](304/A304389.asm)): a(n) = 126*2^n - 22 (n>=1).
-* [A304487](http://oeis.org/A304487) ([L26 program](304/A304487.asm)): a(n) = (3 + 2*n - 3*n^2 + 4*n^3 - 3*((-1 + n) mod 2))/6.
+* [A304487](http://oeis.org/A304487) ([L16 program](304/A304487.asm)): a(n) = (3 + 2*n - 3*n^2 + 4*n^3 - 3*((-1 + n) mod 2))/6.
 * [A304498](http://oeis.org/A304498) ([L23 program](304/A304498.asm)): Solution (b(n)) of the system of complementary equations defined in Comments.
 * [A304503](http://oeis.org/A304503) ([L07 program](304/A304503.asm)): a(n) = 3*(n+1)*(9*n+4).
 * [A304504](http://oeis.org/A304504) ([L07 program](304/A304504.asm)): a(n) = 3*(3*n+1)*(9*n+8)/2.

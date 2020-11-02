@@ -641,7 +641,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005055](http://oeis.org/A005055) ([L03 program](005/A005055.asm)): 7*5^n.
 * [A005056](http://oeis.org/A005056) ([L17 program](005/A005056.asm)): a(n) = 3^n + 2^n - 1.
 * [A005057](http://oeis.org/A005057) ([L11 program](005/A005057.asm)): 5^n - 2^n.
-* [A005058](http://oeis.org/A005058) ([L06 program](005/A005058.asm)): 5^n - 3^n.
+* [A005058](http://oeis.org/A005058) ([L06 program](005/A005058.asm)): a(n) = 5^n - 3^n.
 * [A005059](http://oeis.org/A005059) ([L07 program](005/A005059.asm)): a(n) = (5^n - 3^n)/2.
 * [A005060](http://oeis.org/A005060) ([L06 program](005/A005060.asm)): a(n) = 5^n - 4^n.
 * [A005061](http://oeis.org/A005061) ([L07 program](005/A005061.asm)): a(n) = 4^n - 3^n.
@@ -744,7 +744,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005917](http://oeis.org/A005917) ([L09 program](005/A005917.asm)): Rhombic dodecahedral numbers: a(n) = n^4 - (n - 1)^4.
 * [A005918](http://oeis.org/A005918) ([L09 program](005/A005918.asm)): Number of points on surface of square pyramid: 3*n^2 + 2 (n>0).
 * [A005919](http://oeis.org/A005919) ([L08 program](005/A005919.asm)): Number of points on surface of tricapped prism: 7n^2 + 2 for n>0.
-* [A005920](http://oeis.org/A005920) ([L10 program](005/A005920.asm)): Tricapped prism numbers.
+* [A005920](http://oeis.org/A005920) ([L15 program](005/A005920.asm)): Tricapped prism numbers.
 * [A005942](http://oeis.org/A005942) ([L29 program](005/A005942.asm)): a(2n) = a(n) + a(n+1), a(2n+1) = 2a(n+1), if n >= 2.
 * [A005945](http://oeis.org/A005945) ([L11 program](005/A005945.asm)): Number of n-step mappings with 4 inputs.
 * [A005968](http://oeis.org/A005968) ([L27 program](005/A005968.asm)): Sum of cubes of first n Fibonacci numbers.
@@ -4763,7 +4763,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049013](http://oeis.org/A049013) ([L03 program](049/A049013.asm)): Duplicate of A020735.
 * [A049039](http://oeis.org/A049039) ([L11 program](049/A049039.asm)): Geometric Connell sequence: 1 odd, 2 even, 4 odd, 8 even, ...
 * [A049068](http://oeis.org/A049068) ([L12 program](049/A049068.asm)): Complement of quarter-squares (A002620).
-* [A049071](http://oeis.org/A049071) ([L16 program](049/A049071.asm)): Expansion of x*(3-2*x)/(1-x^2).
+* [A049071](http://oeis.org/A049071) ([L14 program](049/A049071.asm)): Expansion of x*(3-2*x)/(1-x^2).
 * [A049072](http://oeis.org/A049072) ([L18 program](049/A049072.asm)): Expansion of 1/(1 - 3*x + 4*x^2).
 * [A049086](http://oeis.org/A049086) ([L10 program](049/A049086.asm)): Number of tilings of 4 X 3n rectangle by 1 X 3 rectangles. Rotations and reflections are considered distinct tilings.
 * [A049206](http://oeis.org/A049206) ([L08 program](049/A049206.asm)): Maximum mean distance between cards during perfect faro shuffles, with cut, to return to original order in A024222.
@@ -4890,7 +4890,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A051744](http://oeis.org/A051744) ([L12 program](051/A051744.asm)): a(n) = n*(n+1)*(n^2+5*n+18)/24.
 * [A051745](http://oeis.org/A051745) ([L06 program](051/A051745.asm)): a(n) = n*(n^4 + 10*n^3 + 35*n^2 + 50*n + 144)/120.
 * [A051746](http://oeis.org/A051746) ([L25 program](051/A051746.asm)): a(n) = n(n+7)(n+1)(n^2+2n+12)/120.
-* [A051747](http://oeis.org/A051747) ([L36 program](051/A051747.asm)): a(n) = n*(n+1)*(n+2)*(n^2+7*n+32)/120.
+* [A051747](http://oeis.org/A051747) ([L26 program](051/A051747.asm)): a(n) = n*(n+1)*(n+2)*(n^2+7*n+32)/120.
 * [A051755](http://oeis.org/A051755) ([L04 program](051/A051755.asm)): Consider problem of placing N queens on an n X n board so that each queen attacks precisely 2 others. Sequence gives maximal number of queens.
 * [A051797](http://oeis.org/A051797) ([L10 program](051/A051797.asm)): Partial sums of A007585.
 * [A051798](http://oeis.org/A051798) ([L10 program](051/A051798.asm)): a(n) = (n+1)*(n+2)*(n+3)*(9n+4)/24.
@@ -5165,7 +5165,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054569](http://oeis.org/A054569) ([L05 program](054/A054569.asm)): a(n) = 4*n^2 - 6*n + 3.
 * [A054577](http://oeis.org/A054577) ([L12 program](054/A054577.asm)): A Catalan-like sequence.
 * [A054579](http://oeis.org/A054579) ([L17 program](054/A054579.asm)): n^2+n modulo 17.
-* [A054580](http://oeis.org/A054580) ([L05 program](054/A054580.asm)): n^2 modulo 17.
+* [A054580](http://oeis.org/A054580) ([L04 program](054/A054580.asm)): n^2 modulo 17.
 * [A054602](http://oeis.org/A054602) ([L04 program](054/A054602.asm)): a(n) = Sum_{d|3} phi(d)*n^(3/d).
 * [A054603](http://oeis.org/A054603) ([L07 program](054/A054603.asm)): a(n) = Sum_{d|4} phi(d)*n^(4/d).
 * [A054604](http://oeis.org/A054604) ([L04 program](054/A054604.asm)): a(n) = Sum_{d|5} phi(d)*n^(5/d).
@@ -6371,11 +6371,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070438](http://oeis.org/A070438) ([L03 program](070/A070438.asm)): a(n) = n^2 mod 15.
 * [A070439](http://oeis.org/A070439) ([L03 program](070/A070439.asm)): a(n) = n^2 mod 16.
 * [A070440](http://oeis.org/A070440) ([L03 program](070/A070440.asm)): a(n) = n^2 mod 18.
-* [A070441](http://oeis.org/A070441) ([L05 program](070/A070441.asm)): n^2 mod 19.
+* [A070441](http://oeis.org/A070441) ([L04 program](070/A070441.asm)): n^2 mod 19.
 * [A070442](http://oeis.org/A070442) ([L03 program](070/A070442.asm)): a(n) = n^2 mod 20.
-* [A070443](http://oeis.org/A070443) ([L05 program](070/A070443.asm)): a(n) = n^2 mod 21.
-* [A070444](http://oeis.org/A070444) ([L05 program](070/A070444.asm)): a(n) = n^2 mod 22.
-* [A070445](http://oeis.org/A070445) ([L05 program](070/A070445.asm)): a(n) = n^2 mod 23.
+* [A070443](http://oeis.org/A070443) ([L04 program](070/A070443.asm)): a(n) = n^2 mod 21.
+* [A070444](http://oeis.org/A070444) ([L04 program](070/A070444.asm)): a(n) = n^2 mod 22.
+* [A070445](http://oeis.org/A070445) ([L04 program](070/A070445.asm)): a(n) = n^2 mod 23.
 * [A070446](http://oeis.org/A070446) ([L03 program](070/A070446.asm)): a(n) = n^2 mod 24.
 * [A070447](http://oeis.org/A070447) ([L03 program](070/A070447.asm)): a(n) = n^2 mod 25.
 * [A070448](http://oeis.org/A070448) ([L05 program](070/A070448.asm)): a(n) = n^2 mod 26.
@@ -7095,7 +7095,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080424](http://oeis.org/A080424) ([L13 program](080/A080424.asm)): a(n) = 3*a(n-1) + 18*a(n-2), a(0)=0, a(1)=1.
 * [A080425](http://oeis.org/A080425) ([L03 program](080/A080425.asm)): Period 3: repeat [0, 2, 1].
 * [A080455](http://oeis.org/A080455) ([L05 program](080/A080455.asm)): a(1)=1; for n>1, a(n) = a(n-1) if n is already in the sequence, a(n) = a(n-1) + 4 otherwise.
-* [A080456](http://oeis.org/A080456) ([L15 program](080/A080456.asm)): a(1) = a(2) = 2; for n > 2, a(n) = a(n-1) if n is already in the sequence, a(n) = a(n-1) + 4 otherwise.
+* [A080456](http://oeis.org/A080456) ([L19 program](080/A080456.asm)): a(1) = a(2) = 2; for n > 2, a(n) = a(n-1) if n is already in the sequence, a(n) = a(n-1) + 4 otherwise.
 * [A080457](http://oeis.org/A080457) ([L06 program](080/A080457.asm)): a(1)=3; for n>1, a(n)=a(n-1) if n is already in the sequence, a(n)=a(n-1)+4 otherwise.
 * [A080458](http://oeis.org/A080458) ([L05 program](080/A080458.asm)): a(1)=4; for n>1, a(n)=a(n-1) if n is already in the sequence, a(n)=a(n-1)+4 otherwise.
 * [A080460](http://oeis.org/A080460) ([L05 program](080/A080460.asm)): a(1) = 2; for n > 1, a(n) = a(n-1) if n is already in the sequence, a(n) = a(n-1) + 4 otherwise.
@@ -8333,7 +8333,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A095939](http://oeis.org/A095939) ([L09 program](095/A095939.asm)): a(n+2) = 5a(n+1) - 3a(n) (n >= 1); a(0) = 1, a(1) = 2, a(2) = 9.
 * [A095940](http://oeis.org/A095940) ([L11 program](095/A095940.asm)): a(n+2) = 5a(n+1) - 3a(n) (n >= 1); a(0) = 0, a(1) = 1, a(2) = 4.
 * [A095949](http://oeis.org/A095949) ([L05 program](095/A095949.asm)): Position of consonants in English alphabet.
-* [A096000](http://oeis.org/A096000) ([L13 program](096/A096000.asm)): Cupolar numbers: a(n) = (n+1)*(5*n^2+7*n+3)/3.
+* [A096000](http://oeis.org/A096000) ([L15 program](096/A096000.asm)): Cupolar numbers: a(n) = (n+1)*(5*n^2+7*n+3)/3.
 * [A096019](http://oeis.org/A096019) ([L06 program](096/A096019.asm)): a(0)=3, a(n) = 3*a(n-1) + 2*(-1)^n.
 * [A096022](http://oeis.org/A096022) ([L05 program](096/A096022.asm)): Numbers that are congruent to {15, 27, 39, 51} mod 60.
 * [A096023](http://oeis.org/A096023) ([L05 program](096/A096023.asm)): Numbers congruent to {63, 123, 183, 243, 303, 363} mod 420.

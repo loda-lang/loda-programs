@@ -57,7 +57,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100175](http://oeis.org/A100175) ([L13 program](100/A100175.asm)): Structured triakis tetrahedral numbers (vertex structure 4).
 * [A100176](http://oeis.org/A100176) ([L11 program](100/A100176.asm)): Structured octagonal prism numbers.
 * [A100177](http://oeis.org/A100177) ([L24 program](100/A100177.asm)): Structured meta-prism numbers, the n-th number from a structured n-gonal prism number sequence.
-* [A100178](http://oeis.org/A100178) ([L09 program](100/A100178.asm)): Structured hexagonal diamond numbers (vertex structure 5).
+* [A100178](http://oeis.org/A100178) ([L15 program](100/A100178.asm)): Structured hexagonal diamond numbers (vertex structure 5).
 * [A100179](http://oeis.org/A100179) ([L11 program](100/A100179.asm)): Structured heptagonal diamond numbers (vertex structure 5).
 * [A100182](http://oeis.org/A100182) ([L10 program](100/A100182.asm)): Structured tetragonal anti-prism numbers.
 * [A100183](http://oeis.org/A100183) ([L15 program](100/A100183.asm)): Structured hexagonal anti-prism numbers.
@@ -2125,7 +2125,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132031](http://oeis.org/A132031) ([L09 program](132/A132031.asm)): Product{0<=k<=floor(log_7(n)), floor(n/7^k)}, n>=1.
 * [A132032](http://oeis.org/A132032) ([L08 program](132/A132032.asm)): Product{0<=k<=floor(log_8(n)), floor(n/8^k)}, n>=1.
 * [A132033](http://oeis.org/A132033) ([L08 program](132/A132033.asm)): Product{0<=k<=floor(log_9(n)), floor(n/9^k)}, n>=1.
-* [A132045](http://oeis.org/A132045) ([L14 program](132/A132045.asm)): Row sums of triangle A132044.
+* [A132045](http://oeis.org/A132045) ([L05 program](132/A132045.asm)): Row sums of triangle A132044.
 * [A132072](http://oeis.org/A132072) ([L11 program](132/A132072.asm)): Row sums of triangle A132071.
 * [A132074](http://oeis.org/A132074) ([L10 program](132/A132074.asm)): Row sums of triangle A132073.
 * [A132079](http://oeis.org/A132079) ([L04 program](132/A132079.asm)): a(n) = (5^n + 3)/2
@@ -4274,7 +4274,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A161712](http://oeis.org/A161712) ([L06 program](161/A161712.asm)): a(n) = (4*n^3 - 6*n^2 + 8*n + 3)/3.
 * [A161714](http://oeis.org/A161714) ([L03 program](161/A161714.asm)): a(n) = 28*n + 1.
 * [A161718](http://oeis.org/A161718) ([L10 program](161/A161718.asm)): Expansion of (1+3*x^2)/(1+x)^2.
-* [A161726](http://oeis.org/A161726) ([L64 program](161/A161726.asm)): a(n) = n^2 - 917*n + 9479.
+* [A161726](http://oeis.org/A161726) ([L19 program](161/A161726.asm)): a(n) = n^2 - 917*n + 9479.
 * [A161823](http://oeis.org/A161823) ([L05 program](161/A161823.asm)): Among any n lines on the plane, there exists a pair at an angle not more than a(n)degrees.
 * [A161827](http://oeis.org/A161827) ([L20 program](161/A161827.asm)): Complement of A006446.
 * [A161840](http://oeis.org/A161840) ([L31 program](161/A161840.asm)): Number of noncentral divisors of n.
@@ -4716,7 +4716,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167465](http://oeis.org/A167465) ([L03 program](167/A167465.asm)): n^5 mod 16.
 * [A167467](http://oeis.org/A167467) ([L20 program](167/A167467.asm)): a(n) = 25*n^3 - n*(5*n+1)/2 + 1.
 * [A167469](http://oeis.org/A167469) ([L06 program](167/A167469.asm)): a(n) = 3*n*(5*n-1)/2.
-* [A167471](http://oeis.org/A167471) ([L12 program](167/A167471.asm)): Janet periodic table of the elements and structured hexagonal diamond numbers. a(n) = A166911(2n) + A166911(2n+1).
+* [A167471](http://oeis.org/A167471) ([L16 program](167/A167471.asm)): Janet periodic table of the elements and structured hexagonal diamond numbers. a(n) = A166911(2n) + A166911(2n+1).
 * [A167477](http://oeis.org/A167477) ([L07 program](167/A167477.asm)): Expansion of (1-3x+5x^2-x^3)/(1-3x+x^2)^2.
 * [A167478](http://oeis.org/A167478) ([L11 program](167/A167478.asm)): Expansion of (1-2x+6x^2-x^3)/(1-3x+x^2)^2.
 * [A167487](http://oeis.org/A167487) ([L04 program](167/A167487.asm)): a(n) = n*(n + 3)/2 + 8.
