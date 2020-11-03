@@ -1,111 +1,24 @@
 ; A044271: Numbers n such that string 2,2 occurs in the base 9 representation of n but not of n-1.
 ; 20,101,180,263,344,425,506,587,668,749,830,909,992,1073,1154,1235,1316,1397,1478,1559,1620,1721,1802,1883,1964,2045,2126,2207,2288,2367,2450,2531,2612,2693,2774,2855,2936,3017,3096
 
-mov $11,$0
-add $5,3
+mov $8,$0
+mov $5,3
 mul $5,$0
-add $4,$0
-mov $8,2
+mov $4,$0
 add $4,1
-sub $0,1
 mov $0,1
 add $5,$4
-mod $4,$0
-mov $10,$5
-mov $8,$5
-mov $6,81
-gcd $5,$6
-mov $3,$8
-mov $8,1
-add $9,$8
-mod $8,$9
-sub $4,$9
+gcd $5,81
 mov $3,$5
-mov $1,3
-add $4,$9
-add $5,$1
-add $10,3
-mov $9,4
-mul $9,2
-trn $0,$3
-add $6,2
-mov $9,$0
-mod $1,8
-mov $5,29
-sub $8,1
-sub $3,$4
-sub $0,$8
-mov $10,$5
-mov $7,$4
-add $5,3
-sub $5,$8
-mov $10,$7
+mov $6,83
 mov $4,$3
-mov $8,$4
-add $1,1
-add $0,$7
-mov $7,$6
 lpb $0,1
-  mul $4,$0
   sub $6,$4
-  add $0,$6
-  add $2,1
-  mov $7,2
-  mov $2,$3
-  mov $9,$6
-  add $5,$9
-  add $0,$0
-  mov $4,$8
-  mul $2,2
-  mul $0,$9
-  mov $3,1
   mov $0,$7
-  mul $5,2
-  mov $2,$0
-  add $8,$1
-  mov $10,$5
-  sub $2,$10
-  add $6,1
-  mov $2,$3
-  sub $5,$1
-  div $9,$0
-  add $5,$8
-  mul $3,2
-  trn $3,$5
-  add $9,1
-  mov $0,2
-  pow $7,2
-  sub $7,$1
-  sub $0,2
-  mov $2,$2
-  mov $7,1
-  add $9,$9
-  mov $8,$8
-  mov $10,1
-  pow $10,2
-  div $5,$7
-  mul $0,$9
-  mod $2,10
-  div $0,10
-  add $2,$3
-  mov $10,1
-  mov $2,$3
   div $6,4
-  mod $5,2
-  mov $1,$1
-  add $9,$7
-  add $7,$10
-  mov $2,$2
-  div $10,$5
-  mov $9,8
-  add $3,$3
-  mov $10,$10
 lpe
-mov $3,$3
 mov $1,$6
-mov $12,$11
-mov $13,$12
-mul $13,81
-add $1,$13
-mul $12,$11
-mul $12,$11
+mov $9,$8
+mov $2,$9
+mul $2,81
+add $1,$2

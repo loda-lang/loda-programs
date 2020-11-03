@@ -4,7 +4,5 @@
 trn $0,1
 sub $0,2
 mod $0,2
-mov $2,14
-add $2,$0
-mov $1,$2
-sub $1,13
+add $0,1
+mov $1,$0
