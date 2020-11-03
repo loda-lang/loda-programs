@@ -499,7 +499,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106803](http://oeis.org/A106803) ([L09 program](106/A106803.asm)): Expansion of x*(1-x)/(1-2*x-x^2+x^3).
 * [A106805](http://oeis.org/A106805) ([L10 program](106/A106805.asm)): G.f.: 1 / (1-2*x-x^2+x^3).
 * [A106832](http://oeis.org/A106832) ([L05 program](106/A106832.asm)): 4*n-2 and 6*n alternatively.
-* [A106833](http://oeis.org/A106833) ([L17 program](106/A106833.asm)): 3n and 2n, alternating.
+* [A106833](http://oeis.org/A106833) ([L12 program](106/A106833.asm)): 3n and 2n, alternating.
 * [A106839](http://oeis.org/A106839) ([L03 program](106/A106839.asm)): Numbers congruent to 11 mod 16.
 * [A106845](http://oeis.org/A106845) ([L13 program](106/A106845.asm)): n^2 * (n^3 + 2n^2 + 7n - 2) / 8.
 * [A106852](http://oeis.org/A106852) ([L13 program](106/A106852.asm)): Expansion of 1/(1-x*(1-3*x)).
@@ -836,7 +836,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A112814](http://oeis.org/A112814) ([L17 program](112/A112814.asm)): Numbers k such that lcm(1,2,3,...,k)/5 equals the denominator of the k-th harmonic number H(k).
 * [A112818](http://oeis.org/A112818) ([L49 program](112/A112818.asm)): Numbers k such that lcm(1,2,3,...,k)/13 equals the denominator of the k-th harmonic number H(k).
 * [A112819](http://oeis.org/A112819) ([L15 program](112/A112819.asm)): Numbers k such that lcm(1,2,3,...,k)/15 equals the denominator of the k-th harmonic number H(k).
-* [A112832](http://oeis.org/A112832) ([L103 program](112/A112832.asm)): Number of non-intersecting cycle systems in a particular directed graph.
+* [A112832](http://oeis.org/A112832) ([L16 program](112/A112832.asm)): Number of non-intersecting cycle systems in a particular directed graph.
 * [A112849](http://oeis.org/A112849) ([L20 program](112/A112849.asm)): Number of congruence classes (epimorphisms/vertex partitionings induced by graph endomorphisms) of undirected cycles of even length: |C(C_{2*n})|.
 * [A112851](http://oeis.org/A112851) ([L14 program](112/A112851.asm)): a(n) = (n-1)*n*(n+1)*(n+2)*(2*n+1)/40.
 * [A112865](http://oeis.org/A112865) ([L10 program](112/A112865.asm)): a(n) = (-1)^(n + floor(n/4) + floor(n/4^2) + ...).
@@ -941,7 +941,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A114800](http://oeis.org/A114800) ([L07 program](114/A114800.asm)): Octuple factorial, 8-factorial, n!8, n!!!!!!!!.
 * [A114805](http://oeis.org/A114805) ([L52 program](114/A114805.asm)): Cumulative sum of quintuple factorial numbers n!!!!! (A085157).
 * [A114806](http://oeis.org/A114806) ([L06 program](114/A114806.asm)): Nonuple factorial, 9-factorial, n!9, n!!!!!!!!!.
-* [A114948](http://oeis.org/A114948) ([L04 program](114/A114948.asm)): n^2 + 10.
+* [A114948](http://oeis.org/A114948) ([L04 program](114/A114948.asm)): a(n) = n^2 + 10.
 * [A114949](http://oeis.org/A114949) ([L03 program](114/A114949.asm)): a(n) = n^2 + 6.
 * [A114955](http://oeis.org/A114955) ([L15 program](114/A114955.asm)): A 2/3-power Fibonacci sequence.
 * [A114958](http://oeis.org/A114958) ([L08 program](114/A114958.asm)): a(n) = 6*2^(n+1) - 5*(n+1) - 4.
@@ -3453,7 +3453,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154266](http://oeis.org/A154266) ([L03 program](154/A154266.asm)): a(n) = 27*n + 12.
 * [A154267](http://oeis.org/A154267) ([L03 program](154/A154267.asm)): a(n) = 27*n + 15.
 * [A154269](http://oeis.org/A154269) ([L16 program](154/A154269.asm)): Dirichlet inverse of A019590; Fully multiplicative with a(2^e) = (-1)^e, a(p^e) = 0 for odd primes p.
-* [A154271](http://oeis.org/A154271) ([L11 program](154/A154271.asm)): Dirichlet inverse of A154272; Fully multiplicative with a(3^e) = (-1)^e, a(p^e) = 0 for primes p <> 3.
+* [A154271](http://oeis.org/A154271) ([L07 program](154/A154271.asm)): Dirichlet inverse of A154272; Fully multiplicative with a(3^e) = (-1)^e, a(p^e) = 0 for primes p <> 3.
 * [A154272](http://oeis.org/A154272) ([L03 program](154/A154272.asm)): 1,0,1 followed by 0,0,0...
 * [A154277](http://oeis.org/A154277) ([L05 program](154/A154277.asm)): a(n) = 81*n^2 - 72*n + 17.
 * [A154281](http://oeis.org/A154281) ([L03 program](154/A154281.asm)): 1,0,0,1 followed by 0,0,0...

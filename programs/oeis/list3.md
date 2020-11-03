@@ -769,7 +769,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318159](http://oeis.org/A318159) ([L47 program](318/A318159.asm)): Figurate numbers based on the small stellated dodecahedron: a(n) = n*(21*n^2 - 33*n + 14)/2.
 * [A318274](http://oeis.org/A318274) ([L12 program](318/A318274.asm)): Triangle read by rows: T(n,k) = n for 0 < k < n and T(n,0) = T(n,n) = 1.
 * [A318624](http://oeis.org/A318624) ([L53 program](318/A318624.asm)): Number of 3-member subsets of [3*n] whose elements sum to a multiple of n.
-* [A318666](http://oeis.org/A318666) ([L63 program](318/A318666.asm)): a(n) = 2^{the 3-adic valuation of n}.
+* [A318666](http://oeis.org/A318666) ([L21 program](318/A318666.asm)): a(n) = 2^{the 3-adic valuation of n}.
 * [A318765](http://oeis.org/A318765) ([L09 program](318/A318765.asm)): a(n) = (n + 2)*(n^2 + n - 1).
 * [A318791](http://oeis.org/A318791) ([L24 program](318/A318791.asm)): Prime generating polynomial: a(n) = 9*n^2 - 249*n + 1763.
 * [A318919](http://oeis.org/A318919) ([L16 program](318/A318919.asm)): Define b(0)=0, b(1)[1]=1, b(1)[2]=1; and for n>=2, b(n)[1] = total number of digits in b(n-1), and b(n)[2] = total number of digits in b(0),...,b(n-1); a(n) = b(n)[2].
@@ -981,7 +981,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329193](http://oeis.org/A329193) ([L06 program](329/A329193.asm)): a(n) = floor(log_2(n^3)) = floor(3 log_2(n))
 * [A329194](http://oeis.org/A329194) ([L06 program](329/A329194.asm)): a(n) = floor(log_3(n^2)) = floor(2 log_3(n))
 * [A329195](http://oeis.org/A329195) ([L06 program](329/A329195.asm)): a(n) = floor(log_5(n^2)) = floor(2 log_5(n))
-* [A329199](http://oeis.org/A329199) ([L07 program](329/A329199.asm)): a(n) = round(log_3(n)).
+* [A329199](http://oeis.org/A329199) ([L13 program](329/A329199.asm)): a(n) = round(log_3(n)).
 * [A329202](http://oeis.org/A329202) ([L04 program](329/A329202.asm)): a(n) = floor(2*log_2(n)) = floor(log_2(n^2)).
 * [A329244](http://oeis.org/A329244) ([L55 program](329/A329244.asm)): Sum of every third term of the Padovan sequence A000931.
 * [A329279](http://oeis.org/A329279) ([L14 program](329/A329279.asm)): Number of distinct tilings of a 2n X 2n square with 1 x n polyominoes.

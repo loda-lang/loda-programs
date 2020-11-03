@@ -1,0 +1,86 @@
+; A033265: Number of i such that d(i)>=d(i-1), where Sum{d(i)*2^i: i=0,1,...,m} is base 2 representation of n.
+; 0,1,1,2,1,2,2,3,2,2,2,3,2,3,3,4,3,3,3,3,2,3,3,4,3,3,3,4,3,4,4,5,4,4,4,4,3,4,4,4,3,3,3,4,3,4,4,5,4,4,4,4,3,4,4,5,4,4,4,5,4,5,5,6,5,5,5,5,4,5,5,5,4,4,4,5,4,5,5,5,4,4,4,4,3,4,4,5,4,4
+
+mov $3,1
+mov $5,5
+mov $2,2
+add $8,$2
+add $1,1
+add $6,$8
+mov $1,2
+sub $8,1
+mov $4,2
+mov $2,1
+sub $5,4
+add $5,2
+add $0,$2
+mov $3,1
+add $8,$6
+mov $4,$8
+mov $2,4
+div $4,$4
+mov $3,1
+lpb $0,1
+  mov $7,1
+  mov $6,$8
+  add $5,1
+  pow $8,$2
+  trn $1,3
+  mov $5,4
+  mov $2,5
+  mov $3,$0
+  mov $2,1
+  mul $6,$3
+  sub $7,2
+  add $4,1
+  mov $6,$0
+  add $1,$1
+  mul $0,2
+  mov $2,$5
+  div $0,$2
+  mul $2,2
+  add $2,$4
+  sub $5,2
+  add $1,8
+  div $8,3
+  mov $7,$0
+  mov $7,2
+  mov $2,1
+  mul $6,$3
+  div $8,$7
+  sub $5,4
+  sub $5,1
+  mov $1,24
+  mov $2,$5
+  mov $8,1
+  add $6,$4
+  gcd $2,$8
+  mov $3,1
+  sub $5,3
+  gcd $6,2
+  mov $2,11
+  add $8,2
+  add $4,$6
+  mov $3,0
+  add $3,$4
+  sub $1,$2
+  sub $4,1
+  add $1,$5
+  div $3,3
+  mov $1,1
+  pow $5,2
+  mul $1,3
+  sub $6,$1
+  pow $7,$1
+  sub $3,15
+  add $7,14
+  sub $8,$8
+lpe
+add $1,$8
+add $8,1
+mul $3,2
+add $6,2
+sub $3,3
+mov $1,$4
+sub $1,2
+div $1,2
