@@ -1124,6 +1124,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117662](http://oeis.org/A117662) ([L07 program](117/A117662.asm)): n*(n-1)*(n-2)*(n+3)/12.
 * [A117665](http://oeis.org/A117665) ([L07 program](117/A117665.asm)): n times the n-th n-gonal number.
 * [A117676](http://oeis.org/A117676) ([L10 program](117/A117676.asm)): Squares for which the digital root is also a square.
+* [A117691](http://oeis.org/A117691) ([L16 program](117/A117691.asm)): Expansion of -(x^7+x^6+x^5-2*x^3-3*x^2-3*x-4) / ((x-1)^2*(x+1)^2*(x^2+1)^2).
 * [A117717](http://oeis.org/A117717) ([L09 program](117/A117717.asm)): Maximal number of regions obtained by a straight line drawing of the complete bipartite graph K_{n,n}.
 * [A117748](http://oeis.org/A117748) ([L08 program](117/A117748.asm)): Triangular numbers divisible by 3.
 * [A117768](http://oeis.org/A117768) ([L49 program](117/A117768.asm)): Number of Lucas numbers with n digits.
@@ -6521,6 +6522,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189682](http://oeis.org/A189682) ([L31 program](189/A189682.asm)): (A189680)/2; from a 3-way partition of the positive integers.
 * [A189688](http://oeis.org/A189688) ([L09 program](189/A189688.asm)): Partial sums of A189687.
 * [A189717](http://oeis.org/A189717) ([L21 program](189/A189717.asm)): Partial sums of A156595.
+* [A189718](http://oeis.org/A189718) ([L61 program](189/A189718.asm)): Fixed point of the morphism 0->011, 1->100.
+* [A189721](http://oeis.org/A189721) ([L72 program](189/A189721.asm)): Partial sums of A189718.
 * [A189735](http://oeis.org/A189735) ([L44 program](189/A189735.asm)): a(1)=3,  a(2)=1, a(n)=3*a(n-1) + a(n-2)
 * [A189736](http://oeis.org/A189736) ([L10 program](189/A189736.asm)): a(1)=3,  a(2)=2, a(n)=3*a(n-1) + 2*a(n-2)
 * [A189737](http://oeis.org/A189737) ([L17 program](189/A189737.asm)): a(1)=3,  a(2)=3, a(n)=3*a(n-1) + 3*a(n-2)

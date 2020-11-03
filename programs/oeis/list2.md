@@ -2061,6 +2061,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A251630](http://oeis.org/A251630) ([L08 program](251/A251630.asm)): Column sums of the n X n square array filled with numbers from 1 to n^2, row by row, from left to right.
 * [A251701](http://oeis.org/A251701) ([L05 program](251/A251701.asm)): a(n) = 3^n + n^2.
 * [A251743](http://oeis.org/A251743) ([L13 program](251/A251743.asm)): Pairs of nodes in a complete binary tree that are at an absolute height difference of less than 2 from each other.
+* [A251754](http://oeis.org/A251754) ([L83 program](251/A251754.asm)): Digital root of A027444(n) = n + n^2 + n^3, n>=1. Repeat(3, 5, 3, 3, 2, 6, 3, 8, 9).
 * [A251755](http://oeis.org/A251755) ([L12 program](251/A251755.asm)): Digital root of n + n^2.
 * [A252178](http://oeis.org/A252178) ([L38 program](252/A252178.asm)): Number of length 2+2 0..n arrays with the sum of the maximum minus the minimum of adjacent triples multiplied by some arrangement of +-1 equal to zero.
 * [A252814](http://oeis.org/A252814) ([L18 program](252/A252814.asm)): Number of n X 2 nonnegative integer arrays with upper left 0 and every value within 2 of its city block distance from the upper left and every value increasing by 0 or 1 with every step right or down.
@@ -2275,6 +2276,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257196](http://oeis.org/A257196) ([L12 program](257/A257196.asm)): Expansion of (1 + x) * (1 + x^5) / ((1 + x^2) * (1 + x^4)) in powers of x.
 * [A257198](http://oeis.org/A257198) ([L11 program](257/A257198.asm)): Number of permutations of length n having exactly one descent such that the first element of the permutation is an odd number.
 * [A257199](http://oeis.org/A257199) ([L39 program](257/A257199.asm)): a(n) =  n*(n+1)*(n+2)*(n^2+2*n+17)/120.
+* [A257212](http://oeis.org/A257212) ([L63 program](257/A257212.asm)): Least d>0 such that floor(n/d) - floor(n/(d+1)) <= 1.
 * [A257213](http://oeis.org/A257213) ([L16 program](257/A257213.asm)): Least d>0 such that floor(n/d) = floor(n/(d+1)).
 * [A257272](http://oeis.org/A257272) ([L07 program](257/A257272.asm)): a(n) = 2^(n-1)*(2^n+7).
 * [A257273](http://oeis.org/A257273) ([L07 program](257/A257273.asm)): a(n) = 2^(n-1)*(2^n+3).
@@ -2545,6 +2547,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A264763](http://oeis.org/A264763) ([L37 program](264/A264763.asm)): a(0) = a(1) = 1; for n>1, a(n) = a(n-1) + (a(n-2) mod 5).
 * [A264788](http://oeis.org/A264788) ([L10 program](264/A264788.asm)): a(n) is the number of circles added at n-th iteration of the pattern starting with 2 circles. (See comment.)
 * [A264800](http://oeis.org/A264800) ([L11 program](264/A264800.asm)): Nearly-Fibonacci sequence.
+* [A264847](http://oeis.org/A264847) ([L83 program](264/A264847.asm)): Pluritriangular numbers: a(0) = 0; a(n+1) = a(n) + the number of digits in terms a(0)..a(n).
 * [A264850](http://oeis.org/A264850) ([L11 program](264/A264850.asm)): a(n) = n*(n + 1)*(n + 2)*(7*n - 5)/12.
 * [A264851](http://oeis.org/A264851) ([L09 program](264/A264851.asm)): a(n) = n*(n + 1)*(n + 2)*(4*n - 3)/6.
 * [A264852](http://oeis.org/A264852) ([L24 program](264/A264852.asm)): a(n) = n*(n + 1)*(n + 2)*(9*n - 7)/12.
