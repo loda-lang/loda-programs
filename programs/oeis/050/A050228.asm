@@ -18,21 +18,12 @@ lpb $21,1
     mov $0,$16
     sub $0,$18
     lpb $0,1
-      sub $0,1
-      mov $15,$0
-      sub $0,1
+      sub $0,2
       add $2,1
       mov $1,$0
       bin $1,$2
-      mov $14,$0
       add $11,$1
     lpe
-    mul $0,$1
-    add $4,$1
-    sub $2,5
-    add $1,$2
-    add $0,$2
-    mod $0,8
     mov $1,$11
     add $1,1
     add $17,$1

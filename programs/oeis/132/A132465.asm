@@ -5,14 +5,8 @@ mov $2,$0
 mov $3,$2
 bin $3,6
 mul $2,2
-mod $2,160
-trn $2,5
-sub $0,$2
+sub $2,5
 mul $2,$3
-mov $4,$2
 mul $3,$2
-add $0,$3
-bin $2,$3
-mov $1,$0
 mov $1,$3
 div $1,7
