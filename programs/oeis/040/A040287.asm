@@ -1,0 +1,123 @@
+; A040287: Continued fraction for sqrt(305).
+; 17,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2
+
+mov $11,$0
+mov $13,2
+lpb $13,1
+  clr $0,11
+  sub $13,1
+  mov $0,$11
+  add $0,$13
+  sub $0,1
+  div $0,2
+  mov $10,$0
+  mov $7,$0
+  mov $5,729180
+  add $4,1
+  mov $2,1
+  sub $0,$2
+  mov $9,1
+  mov $0,2
+  sub $10,$4
+  trn $0,$5
+  mul $5,$10
+  add $6,153
+  div $7,2
+  add $9,1
+  mov $3,1
+  mov $1,$7
+  div $3,2
+  mov $3,$3
+  mul $7,7
+  add $2,2
+  mul $3,$7
+  add $10,$9
+  add $5,1
+  add $7,$10
+  bin $0,$2
+  mul $3,$4
+  mov $6,8
+  mov $2,2
+  mov $2,2
+  add $1,5
+  sub $5,1
+  add $4,2
+  mov $8,$3
+  lpb $0,1
+    mov $8,$5
+    mov $1,$9
+    mov $7,1
+    add $8,$5
+    sub $0,1
+    mov $6,$1
+    div $0,$2
+    mul $1,2
+    mov $0,$1
+    add $5,$8
+    log $9,3
+    mov $0,2
+    div $9,2
+    sub $9,2
+    mov $7,3
+    mul $6,6
+    mul $0,$7
+    mov $2,9
+  lpe
+  add $2,$3
+  mov $6,1
+  mov $8,2
+  add $2,1
+  mod $10,16
+  mov $3,1
+  mov $8,$2
+  mov $0,$9
+  add $1,1
+  add $4,$6
+  mov $3,6
+  add $9,$5
+  mul $9,$6
+  mov $9,$2
+  sub $3,$5
+  add $2,$7
+  mul $3,5
+  add $0,$8
+  mov $3,4
+  mov $7,8
+  mov $9,$2
+  add $6,3
+  sub $3,1
+  sub $7,$3
+  mov $7,$7
+  mul $4,$2
+  sub $4,1
+  add $7,2
+  mul $10,$3
+  add $9,$2
+  add $8,$7
+  mov $1,$4
+  add $7,$3
+  mov $3,$0
+  mov $9,1
+  mov $0,$7
+  div $9,2
+  mov $3,$1
+  mul $4,$6
+  mov $10,$10
+  add $4,$1
+  mov $3,4
+  mov $5,1
+  add $7,$10
+  sub $2,$5
+  mov $3,45
+  mov $14,$13
+  lpb $14,1
+    mov $12,$1
+    sub $14,1
+  lpe
+lpe
+lpb $11,1
+  sub $12,$1
+  mov $11,0
+lpe
+mov $1,$12
+add $1,2
