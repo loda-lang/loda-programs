@@ -3482,7 +3482,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A035006](http://oeis.org/A035006) ([L05 program](035/A035006.asm)): Number of possible rook moves on an n X n chessboard.
 * [A035008](http://oeis.org/A035008) ([L03 program](035/A035008.asm)): Total number of possible knight moves on an (n+2) X (n+2) chessboard, if the knight is placed anywhere.
 * [A035104](http://oeis.org/A035104) ([L07 program](035/A035104.asm)): First differences give (essentially) A028242.
-* [A035106](http://oeis.org/A035106) ([L07 program](035/A035106.asm)): 1, together with numbers of the form 1 or k*(k+1) or k*(k+2), k > 0.
+* [A035106](http://oeis.org/A035106) ([L06 program](035/A035106.asm)): 1, together with numbers of the form 1 or k*(k+1) or k*(k+2), k > 0.
 * [A035107](http://oeis.org/A035107) ([L17 program](035/A035107.asm)): First differences give (essentially) A028242.
 * [A035214](http://oeis.org/A035214) ([L16 program](035/A035214.asm)): 2 followed by a run of n 1's.
 * [A035254](http://oeis.org/A035254) ([L08 program](035/A035254.asm)): First differences of A035253.
@@ -3732,7 +3732,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038759](http://oeis.org/A038759) ([L22 program](038/A038759.asm)): a(n) = ceiling(sqrt(n))*floor(sqrt(n)).
 * [A038761](http://oeis.org/A038761) ([L12 program](038/A038761.asm)): a(n) = 6*a(n-1)-a(n-2), n >= 2, a(0)=1, a(1)=9.
 * [A038762](http://oeis.org/A038762) ([L15 program](038/A038762.asm)): a(n) = 6*a(n-1) - a(n-2) for n >= 2, with a(0)=3, a(1)=13.
-* [A038764](http://oeis.org/A038764) ([L06 program](038/A038764.asm)): a(n) = (9*n^2 + 3*n + 2)/2.
+* [A038764](http://oeis.org/A038764) ([L05 program](038/A038764.asm)): a(n) = (9*n^2 + 3*n + 2)/2.
 * [A038765](http://oeis.org/A038765) ([L14 program](038/A038765.asm)): Next-to-last diagonal of A024462.
 * [A038793](http://oeis.org/A038793) ([L23 program](038/A038793.asm)): T(n,n-3), array T as in A038792.
 * [A038797](http://oeis.org/A038797) ([L14 program](038/A038797.asm)): T(n+4,n), array T as in A038792.
@@ -3864,7 +3864,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040272](http://oeis.org/A040272) ([L03 program](040/A040272.asm)): Continued fraction for sqrt(290).
 * [A040273](http://oeis.org/A040273) ([L04 program](040/A040273.asm)): Continued fraction for sqrt(291).
 * [A040282](http://oeis.org/A040282) ([L23 program](040/A040282.asm)): Continued fraction for sqrt(300).
-* [A040287](http://oeis.org/A040287) ([L120 program](040/A040287.asm)): Continued fraction for sqrt(305).
+* [A040287](http://oeis.org/A040287) ([L40 program](040/A040287.asm)): Continued fraction for sqrt(305).
 * [A040288](http://oeis.org/A040288) ([L19 program](040/A040288.asm)): Continued fraction for sqrt(306).
 * [A040294](http://oeis.org/A040294) ([L30 program](040/A040294.asm)): Continued fraction for sqrt(312).
 * [A040305](http://oeis.org/A040305) ([L20 program](040/A040305.asm)): Continued fraction for sqrt(323).

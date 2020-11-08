@@ -1,0 +1,68 @@
+; A317960: Trajectory of 12 under the morphism f: X -> XYX, where Y=1 if X contains an odd number of 1's, otherwise Y = 2.
+; 1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,2,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,2,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2
+
+mov $4,2
+add $6,$0
+mov $1,-3
+sub $1,1
+mov $4,2
+sub $4,$0
+mov $2,2
+mov $5,$6
+mov $4,$5
+sub $4,$5
+mov $6,11
+trn $6,1
+mov $3,$1
+mov $5,2
+sub $1,$5
+add $6,2
+add $0,1
+mul $0,2
+mov $5,1
+add $3,3
+lpb $0,1
+  mov $6,72
+  add $1,6
+  mul $1,11
+  mov $3,9
+  mul $6,$0
+  sub $4,$5
+  mov $4,$4
+  add $0,1
+  mul $5,$0
+  div $0,$2
+lpe
+mul $2,2
+add $5,$1
+sub $2,1
+mov $2,$0
+mov $3,$3
+mov $6,$5
+add $6,$3
+mov $1,1
+gcd $4,3
+mov $2,4
+trn $6,2
+mov $6,1
+mul $4,$1
+mov $1,120259084288
+mov $6,$2
+add $2,1
+mov $1,$5
+div $2,$4
+add $5,$0
+add $5,$4
+add $3,6
+trn $4,2
+add $5,1
+trn $5,1
+pow $6,2
+mov $6,$6
+mul $1,3
+mul $5,2
+mov $1,$2
+sub $1,2
+div $1,3
+mov $1,$4
+add $1,1

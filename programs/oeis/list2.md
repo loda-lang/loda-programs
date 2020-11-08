@@ -1118,7 +1118,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226786](http://oeis.org/A226786) ([L11 program](226/A226786.asm)): If n=0 (mod 2) then a(n)=0, otherwise a(n)=8^(-1) in Z/nZ*.
 * [A226787](http://oeis.org/A226787) ([L07 program](226/A226787.asm)): If n=0 (mod 3) then a(n)=0, otherwise a(n)=9^(-1) in Z/nZ*.
 * [A226881](http://oeis.org/A226881) ([L09 program](226/A226881.asm)): Number of n-length binary words w with #(w,0) >= #(w,1) >= 1, where #(w,x) gives the number of digits x in w.
-* [A226903](http://oeis.org/A226903) ([L134 program](226/A226903.asm)): Shiraishi numbers: a parametrized family of solutions c to the Diophantine equation a^3 + b^3 + c^3 = d^3 with d = c+1.
+* [A226903](http://oeis.org/A226903) ([L62 program](226/A226903.asm)): Shiraishi numbers: a parametrized family of solutions c to the Diophantine equation a^3 + b^3 + c^3 = d^3 with d = c+1.
 * [A227012](http://oeis.org/A227012) ([L37 program](227/A227012.asm)): a(n) = floor(M(g(n-1)+1, ..., g(n))), where M = harmonic mean and g(n) = n^3.
 * [A227013](http://oeis.org/A227013) ([L56 program](227/A227013.asm)): Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n^4.
 * [A227015](http://oeis.org/A227015) ([L20 program](227/A227015.asm)): a(n) = floor(M(g(n-1)+1, ..., g(n))), where M = harmonic mean and g(n) = n^3 + n^2 + n + 1.
@@ -1580,7 +1580,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240277](http://oeis.org/A240277) ([L13 program](240/A240277.asm)): Minimal number of people such that exactly n days are required to spread gossip.
 * [A240331](http://oeis.org/A240331) ([L11 program](240/A240331.asm)): Inverse of 47th cyclotomic polynomial.
 * [A240355](http://oeis.org/A240355) ([L12 program](240/A240355.asm)): Inverse of 72nd cyclotomic polynomial.
-* [A240400](http://oeis.org/A240400) ([L26 program](240/A240400.asm)): Numbers n having a partition into distinct parts of form 3^k-2^k.
+* [A240400](http://oeis.org/A240400) ([L10 program](240/A240400.asm)): Numbers n having a partition into distinct parts of form 3^k-2^k.
 * [A240434](http://oeis.org/A240434) ([L13 program](240/A240434.asm)): Binomial transform of the sum of the first n even squares (A002492).
 * [A240437](http://oeis.org/A240437) ([L09 program](240/A240437.asm)): Number of non-palindromic n-tuples of 5 distinct elements.
 * [A240438](http://oeis.org/A240438) ([L08 program](240/A240438.asm)): Greatest minimal difference between numbers of adjacent cells in a regular hexagonal honeycomb of order n with cells numbered from 1 through the total number of cells, the order n corresponding to the number of cells on one side of the honeycomb.

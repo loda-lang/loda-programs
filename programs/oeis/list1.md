@@ -482,7 +482,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106617](http://oeis.org/A106617) ([L06 program](106/A106617.asm)): Numerator of n/(n+16).
 * [A106618](http://oeis.org/A106618) ([L04 program](106/A106618.asm)): a(n) = numerator of n/(n+17).
 * [A106619](http://oeis.org/A106619) ([L04 program](106/A106619.asm)): a(n) = numerator of n/(n+18).
-* [A106620](http://oeis.org/A106620) ([L10 program](106/A106620.asm)): a(n) = numerator of n/(n+19).
+* [A106620](http://oeis.org/A106620) ([L06 program](106/A106620.asm)): a(n) = numerator of n/(n+19).
 * [A106621](http://oeis.org/A106621) ([L16 program](106/A106621.asm)): a(n) = numerator of n/(n+20).
 * [A106624](http://oeis.org/A106624) ([L06 program](106/A106624.asm)): Expansion of g.f.: (1 - x^2 + x^3)/((1-x^2)*(1-2*x^2)).
 * [A106633](http://oeis.org/A106633) ([L19 program](106/A106633.asm)): Number of ways to express n as k+lm, with k, l, m all in the range [0..n].
@@ -1265,37 +1265,37 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120172](http://oeis.org/A120172) ([L28 program](120/A120172.asm)): a(1)=3; a(n)=floor((17+sum(a(1) to a(n-1)))/5).
 * [A120173](http://oeis.org/A120173) ([L33 program](120/A120173.asm)): a(1)=4; a(n)=floor((23+sum(a(1) to a(n-1)))/5).
 * [A120174](http://oeis.org/A120174) ([L35 program](120/A120174.asm)): a(1)=5; a(n)=floor((29+sum(a(1) to a(n-1)))/5).
-* [A120175](http://oeis.org/A120175) ([L94 program](120/A120175.asm)): a(1)=7; a(n)=floor((35+sum(a(1) to a(n-1)))/5).
-* [A120176](http://oeis.org/A120176) ([L94 program](120/A120176.asm)): a(1)=8; a(n)=floor((41+sum(a(1) to a(n-1)))/5).
+* [A120175](http://oeis.org/A120175) ([L75 program](120/A120175.asm)): a(1)=7; a(n)=floor((35+sum(a(1) to a(n-1)))/5).
+* [A120176](http://oeis.org/A120176) ([L75 program](120/A120176.asm)): a(1)=8; a(n)=floor((41+sum(a(1) to a(n-1)))/5).
 * [A120177](http://oeis.org/A120177) ([L20 program](120/A120177.asm)): a(1)=9; a(n)=floor((47+sum(a(1) to a(n-1)))/5).
 * [A120178](http://oeis.org/A120178) ([L67 program](120/A120178.asm)): a(n)=ceiling( sum_{i=1..n-1} a(i)/6), a(1)=1.
 * [A120179](http://oeis.org/A120179) ([L12 program](120/A120179.asm)): a(1)=2; a(n)=floor((13+sum(a(1) to a(n-1)))/6).
 * [A120181](http://oeis.org/A120181) ([L33 program](120/A120181.asm)): a(1)=4; a(n)=floor((27+sum(a(1) to a(n-1)))/6).
 * [A120182](http://oeis.org/A120182) ([L35 program](120/A120182.asm)): a(1)=5; a(n)=floor((34+sum(a(1) to a(n-1)))/6).
-* [A120183](http://oeis.org/A120183) ([L94 program](120/A120183.asm)): a(1)=6; a(n)=floor((41+sum(a(1) to a(n-1)))/6).
-* [A120184](http://oeis.org/A120184) ([L94 program](120/A120184.asm)): a(1)=8; a(n)=floor((48+sum(a(1) to a(n-1)))/6).
+* [A120183](http://oeis.org/A120183) ([L75 program](120/A120183.asm)): a(1)=6; a(n)=floor((41+sum(a(1) to a(n-1)))/6).
+* [A120184](http://oeis.org/A120184) ([L75 program](120/A120184.asm)): a(1)=8; a(n)=floor((48+sum(a(1) to a(n-1)))/6).
 * [A120185](http://oeis.org/A120185) ([L29 program](120/A120185.asm)): a(1)=9; a(n)=floor((55+sum(a(1) to a(n-1)))/6).
 * [A120186](http://oeis.org/A120186) ([L69 program](120/A120186.asm)): a(n) = ceiling( Sum_{i=1..n-1} a(i)/7 ), a(1) = 1.
 * [A120187](http://oeis.org/A120187) ([L12 program](120/A120187.asm)): a(1)=2; a(n)=floor((15+sum(a(1) to a(n-1)))/7).
 * [A120189](http://oeis.org/A120189) ([L33 program](120/A120189.asm)): a(1)=4; a(n)=floor((31+sum(a(1) to a(n-1)))/7).
 * [A120190](http://oeis.org/A120190) ([L35 program](120/A120190.asm)): a(1)=5; a(n)=floor((39+sum(a(1) to a(n-1)))/7).
-* [A120191](http://oeis.org/A120191) ([L94 program](120/A120191.asm)): a(1)=6; a(n)=floor((47+sum(a(1) to a(n-1)))/7).
+* [A120191](http://oeis.org/A120191) ([L75 program](120/A120191.asm)): a(1)=6; a(n)=floor((47+sum(a(1) to a(n-1)))/7).
 * [A120192](http://oeis.org/A120192) ([L66 program](120/A120192.asm)): a(1)=7; a(n)=floor((55+sum(a(1) to a(n-1)))/7).
 * [A120193](http://oeis.org/A120193) ([L29 program](120/A120193.asm)): a(1)=9; a(n)=floor((63+sum(a(1) to a(n-1)))/7).
 * [A120194](http://oeis.org/A120194) ([L34 program](120/A120194.asm)): a(n)=ceiling( sum_{i=1..n-1} a(i)/8), a(1)=1.
 * [A120195](http://oeis.org/A120195) ([L12 program](120/A120195.asm)): a(1)=2; a(n)=floor((17+sum(a(1) to a(n-1)))/8).
 * [A120197](http://oeis.org/A120197) ([L33 program](120/A120197.asm)): a(1)=4; a(n)=floor((35+sum(a(1) to a(n-1)))/8).
 * [A120198](http://oeis.org/A120198) ([L35 program](120/A120198.asm)): a(1)=5; a(n)=floor((44+sum(a(1) to a(n-1)))/8).
-* [A120199](http://oeis.org/A120199) ([L94 program](120/A120199.asm)): a(1)=6; a(n)=floor((53+sum(a(1) to a(n-1)))/8).
-* [A120200](http://oeis.org/A120200) ([L94 program](120/A120200.asm)): a(1)=7; a(n)=floor((62+sum(a(1) to a(n-1)))/8).
-* [A120201](http://oeis.org/A120201) ([L94 program](120/A120201.asm)): a(1)=8; a(n)=floor((71+sum(a(1) to a(n-1)))/8).
+* [A120199](http://oeis.org/A120199) ([L75 program](120/A120199.asm)): a(1)=6; a(n)=floor((53+sum(a(1) to a(n-1)))/8).
+* [A120200](http://oeis.org/A120200) ([L75 program](120/A120200.asm)): a(1)=7; a(n)=floor((62+sum(a(1) to a(n-1)))/8).
+* [A120201](http://oeis.org/A120201) ([L75 program](120/A120201.asm)): a(1)=8; a(n)=floor((71+sum(a(1) to a(n-1)))/8).
 * [A120202](http://oeis.org/A120202) ([L34 program](120/A120202.asm)): a(n) = ceiling( sum_{i=1..n-1} a(i)/9), a(1)=1.
 * [A120203](http://oeis.org/A120203) ([L12 program](120/A120203.asm)): a(1) = 2; a(n) = floor( (19 + Sum_{i=1..n-1} a(i)) /9).
 * [A120205](http://oeis.org/A120205) ([L33 program](120/A120205.asm)): a(1)=4; a(n)=floor((39+sum(a(1) to a(n-1)))/9).
 * [A120206](http://oeis.org/A120206) ([L35 program](120/A120206.asm)): a(1)=5; a(n)=floor((49+sum(a(1) to a(n-1)))/9).
-* [A120207](http://oeis.org/A120207) ([L94 program](120/A120207.asm)): a(1)=6; a(n)=floor((59+sum(a(1) to a(n-1)))/9).
-* [A120208](http://oeis.org/A120208) ([L94 program](120/A120208.asm)): a(1)=7; a(n)=floor((69+sum(a(1) to a(n-1)))/9).
-* [A120209](http://oeis.org/A120209) ([L94 program](120/A120209.asm)): a(1)=8; a(n)=floor((79+sum(a(1) to a(n-1)))/9).
+* [A120207](http://oeis.org/A120207) ([L75 program](120/A120207.asm)): a(1)=6; a(n)=floor((59+sum(a(1) to a(n-1)))/9).
+* [A120208](http://oeis.org/A120208) ([L75 program](120/A120208.asm)): a(1)=7; a(n)=floor((69+sum(a(1) to a(n-1)))/9).
+* [A120209](http://oeis.org/A120209) ([L75 program](120/A120209.asm)): a(1)=8; a(n)=floor((79+sum(a(1) to a(n-1)))/9).
 * [A120212](http://oeis.org/A120212) ([L17 program](120/A120212.asm)): "a" values providing solution x = b in A120211 (i.e., y^2 = b^2*(a^2 - b)*(b + 1) with a, b legs in primitive Pythagorean triangles).
 * [A120275](http://oeis.org/A120275) ([L19 program](120/A120275.asm)): Smallest prime factor of the odd Catalan number A038003(n).
 * [A120278](http://oeis.org/A120278) ([L27 program](120/A120278.asm)): Sum[Sum[C(2k,k),{k,1,m}],{m,1,n}], where C(2k,k)=(2k)!/(k!)^2=A000984[k].
@@ -5920,7 +5920,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181963](http://oeis.org/A181963) ([L19 program](181/A181963.asm)): Prime-generating polynomial: 25*n^2 - 1185*n + 14083.
 * [A181968](http://oeis.org/A181968) ([L06 program](181/A181968.asm)): 54n^3 - 1.
 * [A181969](http://oeis.org/A181969) ([L10 program](181/A181969.asm)): Prime-generating polynomial: 16*n^2 - 292*n + 1373.
-* [A181973](http://oeis.org/A181973) ([L12 program](181/A181973.asm)): Prime-generating polynomial: 16*n^2 - 300*n + 1447.
+* [A181973](http://oeis.org/A181973) ([L11 program](181/A181973.asm)): Prime-generating polynomial: 16*n^2 - 300*n + 1447.
 * [A181975](http://oeis.org/A181975) ([L11 program](181/A181975.asm)): The sequence {1, 2, 3, 4, 5, 4, 3, 2} repeated.
 * [A181983](http://oeis.org/A181983) ([L04 program](181/A181983.asm)): a(n) = (-1)^(n+1) * n.
 * [A181984](http://oeis.org/A181984) ([L08 program](181/A181984.asm)): INVERT transform of A028310.
