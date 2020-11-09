@@ -1679,7 +1679,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127804](http://oeis.org/A127804) ([L58 program](127/A127804.asm)): a(2n)=4^n, a(4*n+3)-(2^(4*n+3)+2^(2*n+1))=a(n).
 * [A127854](http://oeis.org/A127854) ([L06 program](127/A127854.asm)): Largest number k such that k^2 divides A007781(6n+1).
 * [A127873](http://oeis.org/A127873) ([L13 program](127/A127873.asm)): a(n) = (n^3)/2 + (3*n^2)/2 + 3*n + 3.
-* [A127876](http://oeis.org/A127876) ([L14 program](127/A127876.asm)): Integers of the form (x^3)/6 + (x^2)/2 + x + 1.
+* [A127876](http://oeis.org/A127876) ([L22 program](127/A127876.asm)): Integers of the form (x^3)/6 + (x^2)/2 + x + 1.
 * [A127878](http://oeis.org/A127878) ([L43 program](127/A127878.asm)): a(n) = n^4 + 4*n^3 + 12*n^2 + 24*n + 24.
 * [A127904](http://oeis.org/A127904) ([L12 program](127/A127904.asm)): Smallest m such that A008687(m) = n.
 * [A127932](http://oeis.org/A127932) ([L08 program](127/A127932.asm)): a(4*n) = 4*n+1, a(4*n+1) = a(4*n+2) = a(4*n+3) = 4*n+4.
@@ -1978,7 +1978,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131017](http://oeis.org/A131017) ([L15 program](131/A131017.asm)): Period 6 sequence (1, 1, 2, -1, 2, 1).
 * [A131026](http://oeis.org/A131026) ([L08 program](131/A131026.asm)): Periodic sequence (2, 2, 1, 0, 0, 1).
 * [A131027](http://oeis.org/A131027) ([L08 program](131/A131027.asm)): Period 6: repeat [4, 3, 1, 0, 1, 3].
-* [A131028](http://oeis.org/A131028) ([L24 program](131/A131028.asm)): Periodic sequence (7, 4, 1, 1, 4, 7).
+* [A131028](http://oeis.org/A131028) ([L18 program](131/A131028.asm)): Periodic sequence (7, 4, 1, 1, 4, 7).
 * [A131029](http://oeis.org/A131029) ([L12 program](131/A131029.asm)): Periodic sequence (11, 5, 2, 5, 11, 14).
 * [A131030](http://oeis.org/A131030) ([L20 program](131/A131030.asm)): Period 6: repeat [16, 7, 7, 16, 25, 25].
 * [A131032](http://oeis.org/A131032) ([L16 program](131/A131032.asm)): A097806 * A051340.
@@ -2585,7 +2585,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136293](http://oeis.org/A136293) ([L03 program](136/A136293.asm)): Linear bound on the genera of Heegaard splittings of closed, orientable 3-manifolds that admit a generalized triangulation with n generalized tetrahedra.
 * [A136302](http://oeis.org/A136302) ([L13 program](136/A136302.asm)): Transform of A000027 by the T_{1,1} transformation (see link).
 * [A136305](http://oeis.org/A136305) ([L11 program](136/A136305.asm)): Transform of A000027 by the T_{1,2} transformation (see link).
-* [A136313](http://oeis.org/A136313) ([L16 program](136/A136313.asm)): a(1) = 1; for n>1, a(n) = a(n-1) + 8 mod 22.
+* [A136313](http://oeis.org/A136313) ([L05 program](136/A136313.asm)): a(1) = 1; for n>1, a(n) = a(n-1) + 8 mod 22.
 * [A136315](http://oeis.org/A136315) ([L14 program](136/A136315.asm)): Period 10: repeat 1, 2, 3, 6, 5, 0, 7, 4, 9, 8 .
 * [A136316](http://oeis.org/A136316) ([L10 program](136/A136316.asm)): 13 + 12*n - n^2.
 * [A136320](http://oeis.org/A136320) ([L10 program](136/A136320.asm)): Terms of A047241 swapped in pairs.
@@ -5403,7 +5403,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173524](http://oeis.org/A173524) ([L10 program](173/A173524.asm)): a(n) = A053737(4^k+n-1) in the limit k->infinity, where k plays the role of a row index in A053737.
 * [A173525](http://oeis.org/A173525) ([L10 program](173/A173525.asm)): a(n) = 1 + A053824(n-1), where A053824 = sum of digits in base 5.
 * [A173526](http://oeis.org/A173526) ([L09 program](173/A173526.asm)): a(n) = 1 + A053827(n-1), where A053827 is the sum-of-digits function in base 6.
-* [A173527](http://oeis.org/A173527) ([L19 program](173/A173527.asm)): a(n) = 1 + A053828(n-1), where A053828 is the sum of digits in base 7.
+* [A173527](http://oeis.org/A173527) ([L08 program](173/A173527.asm)): a(n) = 1 + A053828(n-1), where A053828 is the sum of digits in base 7.
 * [A173528](http://oeis.org/A173528) ([L09 program](173/A173528.asm)): a(n) = 1 + sum of digits of n-1 written in base 8.
 * [A173529](http://oeis.org/A173529) ([L10 program](173/A173529.asm)): a(n) = 1 + A053830(n-1), where A053830 is the sum of the digits of its argument in base 9.
 * [A173562](http://oeis.org/A173562) ([L05 program](173/A173562.asm)): a(n) = n^2 + floor(n/4).
@@ -6583,7 +6583,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189911](http://oeis.org/A189911) ([L13 program](189/A189911.asm)): Row sums of the extended Catalan triangle A189231.
 * [A189933](http://oeis.org/A189933) ([L15 program](189/A189933.asm)): a(n) = n + [n*r/t] + [n*s/t]; r=1, s=(sin(pi/5))^2, t=(cos(pi/5))^2
 * [A189935](http://oeis.org/A189935) ([L16 program](189/A189935.asm)): a(n) = A189933(n)/2.
-* [A189976](http://oeis.org/A189976) ([L11 program](189/A189976.asm)): a(n) is the number of incongruent two-color bracelets of n beads, 8 of them black (A005514), having a diameter of symmetry.
+* [A189976](http://oeis.org/A189976) ([L10 program](189/A189976.asm)): a(n) is the number of incongruent two-color bracelets of n beads, 8 of them black (A005514), having a diameter of symmetry.
 * [A189980](http://oeis.org/A189980) ([L05 program](189/A189980.asm)): a(n) is the number of incongruent two-color bracelets of n beads, 10 from them are black (A005515), having a diameter of symmetry.
 * [A190002](http://oeis.org/A190002) ([L23 program](190/A190002.asm)): a(n) = n + [n*s/r] + [n*t/r]; r=1, s=(sinh(1))^2, t=(cosh(1))^2.
 * [A190003](http://oeis.org/A190003) ([L14 program](190/A190003.asm)): a(n) = n + [n*r/s] + [n*t/s]; r=1, s=(sinh(1))^2, t=(cosh(1))^2.
