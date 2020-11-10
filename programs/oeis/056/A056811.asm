@@ -1,0 +1,69 @@
+; A056811: Number of primes not exceeding square root of n: primepi(sqrt(n)).
+; 0,0,0,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+
+mov $7,$0
+mov $3,1
+add $6,$3
+mov $2,2
+sub $3,$3
+add $1,$6
+mul $3,$1
+sub $1,2
+add $0,1
+add $5,$1
+sub $1,$5
+sub $5,1
+mov $5,2
+add $0,1
+div $5,16
+mov $1,$1
+mov $5,$6
+mov $3,45
+add $5,2
+add $0,$6
+div $1,$2
+lpb $0,1
+  mov $1,1
+  mov $1,1
+  add $2,2
+  sub $6,2
+  mul $3,$0
+  add $0,5
+  mov $6,$2
+  div $0,2
+  mov $6,3
+  sub $5,$1
+  mul $1,4
+  sub $6,$0
+  mul $6,2
+  add $1,$2
+  div $0,$2
+  add $5,2
+lpe
+add $5,10
+add $5,1
+mov $0,$5
+add $0,1
+add $6,$6
+mov $2,$5
+mul $3,$0
+add $1,$6
+div $6,$5
+add $3,1
+mov $1,$1
+mov $2,$1
+trn $2,2
+mul $6,2
+mov $0,54
+div $0,22
+mov $1,1
+log $3,4
+add $5,1
+add $6,$6
+add $2,$3
+mov $3,$3
+mov $1,$3
+sub $1,5
+mov $8,$7
+mul $8,$7
+mul $8,$7
