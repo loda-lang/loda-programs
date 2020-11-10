@@ -1,0 +1,103 @@
+; A104162: Indicator sequence for the Fibonacci numbers.
+; 1,2,1,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+
+mov $9,$0
+mov $11,2
+lpb $11,1
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  sub $0,1
+  mov $8,1
+  add $8,3
+  mul $8,$0
+  mul $8,$0
+  mov $2,1
+  mov $5,6
+  sub $5,1
+  mov $7,1
+  div $5,2
+  add $8,$7
+  mul $8,$8
+  trn $7,2
+  mov $7,1
+  sub $0,6
+  add $3,$2
+  add $1,1
+  mov $2,$1
+  mul $2,$7
+  add $6,3
+  log $6,6
+  add $6,1
+  sub $5,$1
+  mov $2,$7
+  mov $0,$5
+  add $2,$0
+  mov $6,$7
+  mov $2,2
+  add $8,$8
+  add $4,2
+  mov $2,$4
+  log $8,7
+  mov $3,$1
+  trn $5,$6
+  mov $2,2
+  add $8,$6
+  lpb $0,1
+    mov $3,2
+    sub $0,1
+    mov $0,1
+    sub $6,$3
+    mul $8,$5
+    sub $8,1
+    mov $7,$2
+    add $4,1
+    mov $8,$3
+    add $0,1
+    mod $0,$3
+    add $6,630
+    mov $0,$8
+    add $0,7
+    mov $3,$3
+    pow $4,3
+    mov $2,8
+    mov $6,$2
+    add $0,$4
+    add $0,1
+    mul $5,2
+    mov $6,6
+    sub $1,$5
+    add $0,5
+    add $2,60
+    sub $5,$5
+    div $1,$8
+    sub $1,$3
+    trn $0,$0
+    add $7,$1
+    mov $0,$3
+    sub $2,2
+    sub $4,$4
+    mov $3,1
+    sub $0,1
+    add $5,2
+    add $8,$2
+    sub $2,2
+    mov $6,$1
+    mov $2,$2
+    mul $6,141
+    add $1,3
+  lpe
+  div $0,2
+  mov $1,$8
+  mov $12,$11
+  lpb $12,1
+    mov $10,$1
+    sub $12,1
+  lpe
+lpe
+lpb $9,1
+  sub $10,$1
+  mov $9,0
+lpe
+mov $1,$10
