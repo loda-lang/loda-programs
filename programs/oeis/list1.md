@@ -331,7 +331,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104121](http://oeis.org/A104121) ([L10 program](104/A104121.asm)): a(n)=1 if there is a partition of n^3 into n primes such that n-1 are consecutive primes and the remaining prime is larger than the sum of the n-1 consecutive primes, otherwise a(0)=0 if no such partition exists.
 * [A104150](http://oeis.org/A104150) ([L06 program](104/A104150.asm)): Shifted factorial numbers: a(0)=0, a(n) = (n-1)!.
 * [A104161](http://oeis.org/A104161) ([L09 program](104/A104161.asm)): G.f.: x*(1 - x + x^2)/((1-x)^2 * (1 - x - x^2)).
-* [A104162](http://oeis.org/A104162) ([L100 program](104/A104162.asm)): Indicator sequence for the Fibonacci numbers.
+* [A104162](http://oeis.org/A104162) ([L29 program](104/A104162.asm)): Indicator sequence for the Fibonacci numbers.
 * [A104188](http://oeis.org/A104188) ([L04 program](104/A104188.asm)): a(n) = 4n*(4n - 1).
 * [A104220](http://oeis.org/A104220) ([L21 program](104/A104220.asm)): a(n) = Fibonacci[n]+1-Mod[Fibonacci[n],2]
 * [A104221](http://oeis.org/A104221) ([L20 program](104/A104221.asm)): a(n) = Fibonacci(n) - (Fibonacci(n) mod 2).
@@ -360,6 +360,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104676](http://oeis.org/A104676) ([L14 program](104/A104676.asm)): a(n) = binomial(n+2,2) * binomial(n+7,2).
 * [A104679](http://oeis.org/A104679) ([L05 program](104/A104679.asm)): a(n) = C(n+5,5)*C(n+10,5).
 * [A104686](http://oeis.org/A104686) ([L06 program](104/A104686.asm)): n*(n+1)/2 (mod 6).
+* [A104706](http://oeis.org/A104706) ([L63 program](104/A104706.asm)): First terms in the rearrangements of integer numbers (see comments).
 * [A104721](http://oeis.org/A104721) ([L19 program](104/A104721.asm)): Expansion of (1+x)^2/(1-4*x^2).
 * [A104738](http://oeis.org/A104738) ([L12 program](104/A104738.asm)): Positions of records in A104706.
 * [A104743](http://oeis.org/A104743) ([L03 program](104/A104743.asm)): Numbers m = n + 3^n such that the equation x = 3^(m-x) has solution x = 3^n.
@@ -2312,7 +2313,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A133572](http://oeis.org/A133572) ([L17 program](133/A133572.asm)): Row sums of triangle A133571.
 * [A133577](http://oeis.org/A133577) ([L15 program](133/A133577.asm)): a(n) = a(n-1) + 10*a(n-2) for n >= 2, a(0)=1, a(1)=2.
 * [A133600](http://oeis.org/A133600) ([L34 program](133/A133600.asm)): Row sums of triangle A133599.
-* [A133610](http://oeis.org/A133610) ([L33 program](133/A133610.asm)): Partial sums of pyramidal sequence A053616.
+* [A133610](http://oeis.org/A133610) ([L23 program](133/A133610.asm)): Partial sums of pyramidal sequence A053616.
 * [A133622](http://oeis.org/A133622) ([L05 program](133/A133622.asm)): a(n) = 1 if n is odd, a(n) = n/2+1 if n is even.
 * [A133623](http://oeis.org/A133623) ([L08 program](133/A133623.asm)): Binomial(n+p, n) mod n where p=3.
 * [A133624](http://oeis.org/A133624) ([L08 program](133/A133624.asm)): Binomial(n+p, n) mod n, where p=4.
@@ -5733,7 +5734,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178873](http://oeis.org/A178873) ([L22 program](178/A178873.asm)): Partial sums of round(5^n/7).
 * [A178874](http://oeis.org/A178874) ([L17 program](178/A178874.asm)): Partial sums of round(5^n/8).
 * [A178875](http://oeis.org/A178875) ([L16 program](178/A178875.asm)): Partial sums of round(4^n/9).
-* [A178881](http://oeis.org/A178881) ([L24 program](178/A178881.asm)): Sum of all pairs of greater common divisors for (i,j) where i<j.
+* [A178881](http://oeis.org/A178881) ([L18 program](178/A178881.asm)): Sum of all pairs of greater common divisors for (i,j) where i<j.
 * [A178914](http://oeis.org/A178914) ([L11 program](178/A178914.asm)): 10's complement of nonnegative numbers.
 * [A178915](http://oeis.org/A178915) ([L13 program](178/A178915.asm)): Rearrangement of natural numbers so that every partial sum is composite.
 * [A178945](http://oeis.org/A178945) ([L101 program](178/A178945.asm)): Expansion of x*(1-x)^2/( (1-2*x^2)*(1-2*x)^2).

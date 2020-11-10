@@ -584,7 +584,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213037](http://oeis.org/A213037) ([L06 program](213/A213037.asm)): n^2-2*[n/2]^2, where [] = floor.
 * [A213038](http://oeis.org/A213038) ([L09 program](213/A213038.asm)): a(n) = n^2 - 3*floor(n/2)^2.
 * [A213039](http://oeis.org/A213039) ([L11 program](213/A213039.asm)): n^3-[n/3]^3, where [] = floor.
-* [A213040](http://oeis.org/A213040) ([L64 program](213/A213040.asm)): Partial sums of A004738, leftmost column of the sequence of triangles defined in A206492.
+* [A213040](http://oeis.org/A213040) ([L53 program](213/A213040.asm)): Partial sums of A004738, leftmost column of the sequence of triangles defined in A206492.
 * [A213041](http://oeis.org/A213041) ([L08 program](213/A213041.asm)): Number of (w,x,y) with all terms in {0..n} and 2|w-x| = max(w,x,y)-min(w,x,y).
 * [A213045](http://oeis.org/A213045) ([L16 program](213/A213045.asm)): Number of (w,x,y) with all terms in {0,...,n} and 2|w-x|>max(w,x,y)-min(w,x,y).
 * [A213071](http://oeis.org/A213071) ([L15 program](213/A213071.asm)): 3*n*(9n + 2)*(18n - 1), where n runs through the odd numbers 1, 3, 5,...
@@ -1387,6 +1387,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A233441](http://oeis.org/A233441) ([L17 program](233/A233441.asm)): Floor(2^n / n^3).
 * [A233473](http://oeis.org/A233473) ([L15 program](233/A233473.asm)): Least k such that there are n triangular numbers between triangular(k) and k^2.
 * [A233543](http://oeis.org/A233543) ([L15 program](233/A233543.asm)): Table T(n,m) = m! read by rows.
+* [A233581](http://oeis.org/A233581) ([L101 program](233/A233581.asm)): a(n) = 2*a(n-1) - 3*a(n-2) + a(n-3), a(0) = 1, a(1) = 0, a(2) = -1.
 * [A233583](http://oeis.org/A233583) ([L03 program](233/A233583.asm)): Coefficients of the generalized continued fraction expansion e = a(1) +a(1)/(a(2) +a(2)/(a(3) +a(3)/(a(4) +a(4)/....))).
 * [A233656](http://oeis.org/A233656) ([L08 program](233/A233656.asm)): a(n) = 3*a(n-1) - 2*(n-1), with a(0) = 1.
 * [A233795](http://oeis.org/A233795) ([L18 program](233/A233795.asm)): Number of triangular numbers between triangular(n) and n^2.
@@ -1484,7 +1485,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A237133](http://oeis.org/A237133) ([L14 program](237/A237133.asm)): Values of x in the solutions to x^2 - 3xy + y^2 + 19 = 0, where 0 < x < y.
 * [A237250](http://oeis.org/A237250) ([L11 program](237/A237250.asm)): Values of x in the solutions to x^2 - 4xy + y^2 + 11 = 0, where 0 < x < y.
 * [A237268](http://oeis.org/A237268) ([L15 program](237/A237268.asm)): a(1)=1; for n>1, a(n) is the smallest F(m)>F(n) such that F(n) divides F(m), where F(k) denotes the k-th Fibonacci number.
-* [A237274](http://oeis.org/A237274) ([L104 program](237/A237274.asm)): a(n) = A236283(n) mod 9.
+* [A237274](http://oeis.org/A237274) ([L22 program](237/A237274.asm)): a(n) = A236283(n) mod 9.
 * [A237341](http://oeis.org/A237341) ([L07 program](237/A237341.asm)): For k in {2,3,...,9} define a sequence as follows: a(0)=0; for n>=0, a(n+1)=a(n)+1, unless a(n) ends in k, in which case a(n+1) is obtained by replacing the last digit of a(n) with the digit(s) of k^2. This is k(4).
 * [A237347](http://oeis.org/A237347) ([L39 program](237/A237347.asm)): First differences of A078633.
 * [A237415](http://oeis.org/A237415) ([L06 program](237/A237415.asm)): For k in {2,3,...,9} define a sequence as follows: a(0)=0; for n>=0, a(n+1)=a(n)+1, unless a(n) ends in k, in which case a(n+1) is obtained by replacing the last digit of a(n) with the digit(s) of k^3. This is k(2).
@@ -1547,7 +1548,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239141](http://oeis.org/A239141) ([L21 program](239/A239141.asm)): Number of strict partitions of n having standard deviation σ <= 1.
 * [A239171](http://oeis.org/A239171) ([L11 program](239/A239171.asm)): Number of (n+1) X (1+1) 0..2 arrays with no element greater than all horizontal neighbors or equal to all vertical neighbors.
 * [A239195](http://oeis.org/A239195) ([L29 program](239/A239195.asm)): Sum of the next to smallest parts in the partitions of 4n into 4 parts with smallest part = 1.
-* [A239229](http://oeis.org/A239229) ([L06 program](239/A239229.asm)): Euler characteristic of n-holed torus: 2 - 2*n.
+* [A239229](http://oeis.org/A239229) ([L05 program](239/A239229.asm)): Euler characteristic of n-holed torus: 2 - 2*n.
 * [A239278](http://oeis.org/A239278) ([L21 program](239/A239278.asm)): Smallest k > 1 such that n*(n+1)*...*(n+k-1) / (n+(n+1)+...+(n+k-1)) is an integer.
 * [A239286](http://oeis.org/A239286) ([L15 program](239/A239286.asm)): Expansion of (x + 1)*(3*x^2 + 2*x + 1)/(x^2 + x + 1)^2.
 * [A239325](http://oeis.org/A239325) ([L05 program](239/A239325.asm)): a(n) = 6*n^2 + 8*n + 1.
@@ -3724,6 +3725,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288961](http://oeis.org/A288961) ([L06 program](288/A288961.asm)): Number of 3-cycles in the n X n rook graph.
 * [A288962](http://oeis.org/A288962) ([L18 program](288/A288962.asm)): Number of 4-cycles in the n X n rook graph.
 * [A288963](http://oeis.org/A288963) ([L15 program](288/A288963.asm)): Number of 5-cycles in the n X n rook graph.
+* [A288994](http://oeis.org/A288994) ([L103 program](288/A288994.asm)): a(n) = n*(n+3) when n is congruent to 0 or 3 (mod 4), and n*(n+3)/2 otherwise.
 * [A288998](http://oeis.org/A288998) ([L22 program](288/A288998.asm)): Positions of 0 in A288997; complement of A288999.
 * [A288999](http://oeis.org/A288999) ([L49 program](288/A288999.asm)): Positions of 1 in A288997; complement of A288998.
 * [A289036](http://oeis.org/A289036) ([L09 program](289/A289036.asm)): Positions of 0 in A289035; complement of A289037.
