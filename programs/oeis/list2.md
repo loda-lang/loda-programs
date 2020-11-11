@@ -1210,6 +1210,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228394](http://oeis.org/A228394) ([L11 program](228/A228394.asm)): The number of permutations of length n sortable by 2 prefix block transpositions.
 * [A228396](http://oeis.org/A228396) ([L37 program](228/A228396.asm)): The number of permutations of length n sortable by 2 reversals.
 * [A228398](http://oeis.org/A228398) ([L13 program](228/A228398.asm)): The number of permutations of length n sortable by 3 prefix reversals (in the pancake sorting sense).
+* [A228406](http://oeis.org/A228406) ([L15 program](228/A228406.asm)): Sequences from the quartic oscillator.
 * [A228437](http://oeis.org/A228437) ([L08 program](228/A228437.asm)): Denominator of n/24.
 * [A228451](http://oeis.org/A228451) ([L18 program](228/A228451.asm)): Recurrence: a(2n) = a(n), a(2n+1) = a(n) + 2n + 1, with a(0) = 0, a(1) = 1.
 * [A228495](http://oeis.org/A228495) ([L13 program](228/A228495.asm)): Characteristic function of the odd odious numbers (A092246).
@@ -1387,7 +1388,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A233441](http://oeis.org/A233441) ([L17 program](233/A233441.asm)): Floor(2^n / n^3).
 * [A233473](http://oeis.org/A233473) ([L15 program](233/A233473.asm)): Least k such that there are n triangular numbers between triangular(k) and k^2.
 * [A233543](http://oeis.org/A233543) ([L15 program](233/A233543.asm)): Table T(n,m) = m! read by rows.
-* [A233581](http://oeis.org/A233581) ([L101 program](233/A233581.asm)): a(n) = 2*a(n-1) - 3*a(n-2) + a(n-3), a(0) = 1, a(1) = 0, a(2) = -1.
+* [A233581](http://oeis.org/A233581) ([L19 program](233/A233581.asm)): a(n) = 2*a(n-1) - 3*a(n-2) + a(n-3), a(0) = 1, a(1) = 0, a(2) = -1.
 * [A233583](http://oeis.org/A233583) ([L03 program](233/A233583.asm)): Coefficients of the generalized continued fraction expansion e = a(1) +a(1)/(a(2) +a(2)/(a(3) +a(3)/(a(4) +a(4)/....))).
 * [A233656](http://oeis.org/A233656) ([L08 program](233/A233656.asm)): a(n) = 3*a(n-1) - 2*(n-1), with a(0) = 1.
 * [A233795](http://oeis.org/A233795) ([L18 program](233/A233795.asm)): Number of triangular numbers between triangular(n) and n^2.
@@ -3351,7 +3352,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277980](http://oeis.org/A277980) ([L05 program](277/A277980.asm)): a(n) = 12*n^2 + 18*n.
 * [A277981](http://oeis.org/A277981) ([L08 program](277/A277981.asm)): a(n) = 4*n^2 + 18*n - 20.
 * [A277982](http://oeis.org/A277982) ([L21 program](277/A277982.asm)): a(n) = 12*n^2 + 10*n - 30.
-* [A277983](http://oeis.org/A277983) ([L19 program](277/A277983.asm)): a(n) = 54*n^2 - 78*n + 36.
+* [A277983](http://oeis.org/A277983) ([L09 program](277/A277983.asm)): a(n) = 54*n^2 - 78*n + 36.
 * [A277984](http://oeis.org/A277984) ([L06 program](277/A277984.asm)): a(n) = 6*n*(9*n-5).
 * [A277985](http://oeis.org/A277985) ([L07 program](277/A277985.asm)): a(n) = 3*(9*n - 1)*(3*n - 2).
 * [A277986](http://oeis.org/A277986) ([L06 program](277/A277986.asm)): a(n) = 74*n - 14.
@@ -3725,7 +3726,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288961](http://oeis.org/A288961) ([L06 program](288/A288961.asm)): Number of 3-cycles in the n X n rook graph.
 * [A288962](http://oeis.org/A288962) ([L18 program](288/A288962.asm)): Number of 4-cycles in the n X n rook graph.
 * [A288963](http://oeis.org/A288963) ([L15 program](288/A288963.asm)): Number of 5-cycles in the n X n rook graph.
-* [A288994](http://oeis.org/A288994) ([L103 program](288/A288994.asm)): a(n) = n*(n+3) when n is congruent to 0 or 3 (mod 4), and n*(n+3)/2 otherwise.
+* [A288994](http://oeis.org/A288994) ([L38 program](288/A288994.asm)): a(n) = n*(n+3) when n is congruent to 0 or 3 (mod 4), and n*(n+3)/2 otherwise.
 * [A288998](http://oeis.org/A288998) ([L22 program](288/A288998.asm)): Positions of 0 in A288997; complement of A288999.
 * [A288999](http://oeis.org/A288999) ([L49 program](288/A288999.asm)): Positions of 1 in A288997; complement of A288998.
 * [A289036](http://oeis.org/A289036) ([L09 program](289/A289036.asm)): Positions of 0 in A289035; complement of A289037.

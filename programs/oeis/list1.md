@@ -360,7 +360,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104676](http://oeis.org/A104676) ([L14 program](104/A104676.asm)): a(n) = binomial(n+2,2) * binomial(n+7,2).
 * [A104679](http://oeis.org/A104679) ([L05 program](104/A104679.asm)): a(n) = C(n+5,5)*C(n+10,5).
 * [A104686](http://oeis.org/A104686) ([L06 program](104/A104686.asm)): n*(n+1)/2 (mod 6).
-* [A104706](http://oeis.org/A104706) ([L63 program](104/A104706.asm)): First terms in the rearrangements of integer numbers (see comments).
+* [A104706](http://oeis.org/A104706) ([L13 program](104/A104706.asm)): First terms in the rearrangements of integer numbers (see comments).
 * [A104721](http://oeis.org/A104721) ([L19 program](104/A104721.asm)): Expansion of (1+x)^2/(1-4*x^2).
 * [A104738](http://oeis.org/A104738) ([L12 program](104/A104738.asm)): Positions of records in A104706.
 * [A104743](http://oeis.org/A104743) ([L03 program](104/A104743.asm)): Numbers m = n + 3^n such that the equation x = 3^(m-x) has solution x = 3^n.

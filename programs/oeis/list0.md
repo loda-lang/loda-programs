@@ -2416,30 +2416,30 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022934](http://oeis.org/A022934) ([L22 program](022/A022934.asm)): Number of 2^m between e^n and e^(n+1).
 * [A022945](http://oeis.org/A022945) ([L12 program](022/A022945.asm)): Duplicate of A022443.
 * [A022948](http://oeis.org/A022948) ([L53 program](022/A022948.asm)): Duplicate of A022443.
-* [A022958](http://oeis.org/A022958) ([L05 program](022/A022958.asm)): a(n) = 2 - n.
-* [A022959](http://oeis.org/A022959) ([L05 program](022/A022959.asm)): 3-n.
-* [A022960](http://oeis.org/A022960) ([L05 program](022/A022960.asm)): 4-n.
-* [A022961](http://oeis.org/A022961) ([L05 program](022/A022961.asm)): 5-n.
-* [A022962](http://oeis.org/A022962) ([L05 program](022/A022962.asm)): 6-n.
-* [A022963](http://oeis.org/A022963) ([L05 program](022/A022963.asm)): 7-n.
-* [A022964](http://oeis.org/A022964) ([L05 program](022/A022964.asm)): 8-n.
-* [A022965](http://oeis.org/A022965) ([L05 program](022/A022965.asm)): 9-n.
-* [A022966](http://oeis.org/A022966) ([L05 program](022/A022966.asm)): 10-n.
-* [A022967](http://oeis.org/A022967) ([L05 program](022/A022967.asm)): 11-n.
-* [A022968](http://oeis.org/A022968) ([L05 program](022/A022968.asm)): 12-n.
-* [A022969](http://oeis.org/A022969) ([L05 program](022/A022969.asm)): 13-n.
-* [A022970](http://oeis.org/A022970) ([L05 program](022/A022970.asm)): 14-n.
-* [A022971](http://oeis.org/A022971) ([L05 program](022/A022971.asm)): 15-n.
-* [A022972](http://oeis.org/A022972) ([L05 program](022/A022972.asm)): 16-n.
-* [A022973](http://oeis.org/A022973) ([L05 program](022/A022973.asm)): 17-n.
-* [A022974](http://oeis.org/A022974) ([L05 program](022/A022974.asm)): 18-n.
-* [A022975](http://oeis.org/A022975) ([L05 program](022/A022975.asm)): a(n) = 19 - n.
-* [A022976](http://oeis.org/A022976) ([L05 program](022/A022976.asm)): 20-n.
-* [A022977](http://oeis.org/A022977) ([L05 program](022/A022977.asm)): 21-n.
-* [A022978](http://oeis.org/A022978) ([L05 program](022/A022978.asm)): 22-n.
-* [A022979](http://oeis.org/A022979) ([L05 program](022/A022979.asm)): 23-n.
-* [A022980](http://oeis.org/A022980) ([L05 program](022/A022980.asm)): 24-n.
-* [A022981](http://oeis.org/A022981) ([L05 program](022/A022981.asm)): 25-n.
+* [A022958](http://oeis.org/A022958) ([L04 program](022/A022958.asm)): a(n) = 2 - n.
+* [A022959](http://oeis.org/A022959) ([L04 program](022/A022959.asm)): 3-n.
+* [A022960](http://oeis.org/A022960) ([L04 program](022/A022960.asm)): 4-n.
+* [A022961](http://oeis.org/A022961) ([L04 program](022/A022961.asm)): 5-n.
+* [A022962](http://oeis.org/A022962) ([L04 program](022/A022962.asm)): 6-n.
+* [A022963](http://oeis.org/A022963) ([L04 program](022/A022963.asm)): 7-n.
+* [A022964](http://oeis.org/A022964) ([L04 program](022/A022964.asm)): 8-n.
+* [A022965](http://oeis.org/A022965) ([L04 program](022/A022965.asm)): 9-n.
+* [A022966](http://oeis.org/A022966) ([L04 program](022/A022966.asm)): 10-n.
+* [A022967](http://oeis.org/A022967) ([L04 program](022/A022967.asm)): 11-n.
+* [A022968](http://oeis.org/A022968) ([L04 program](022/A022968.asm)): 12-n.
+* [A022969](http://oeis.org/A022969) ([L04 program](022/A022969.asm)): 13-n.
+* [A022970](http://oeis.org/A022970) ([L04 program](022/A022970.asm)): 14-n.
+* [A022971](http://oeis.org/A022971) ([L04 program](022/A022971.asm)): 15-n.
+* [A022972](http://oeis.org/A022972) ([L04 program](022/A022972.asm)): 16-n.
+* [A022973](http://oeis.org/A022973) ([L04 program](022/A022973.asm)): 17-n.
+* [A022974](http://oeis.org/A022974) ([L04 program](022/A022974.asm)): 18-n.
+* [A022975](http://oeis.org/A022975) ([L04 program](022/A022975.asm)): a(n) = 19 - n.
+* [A022976](http://oeis.org/A022976) ([L04 program](022/A022976.asm)): 20-n.
+* [A022977](http://oeis.org/A022977) ([L04 program](022/A022977.asm)): 21-n.
+* [A022978](http://oeis.org/A022978) ([L04 program](022/A022978.asm)): 22-n.
+* [A022979](http://oeis.org/A022979) ([L04 program](022/A022979.asm)): 23-n.
+* [A022980](http://oeis.org/A022980) ([L04 program](022/A022980.asm)): 24-n.
+* [A022981](http://oeis.org/A022981) ([L04 program](022/A022981.asm)): 25-n.
 * [A022982](http://oeis.org/A022982) ([L05 program](022/A022982.asm)): 26-n.
 * [A022983](http://oeis.org/A022983) ([L05 program](022/A022983.asm)): 27-n.
 * [A022984](http://oeis.org/A022984) ([L05 program](022/A022984.asm)): 28-n.
@@ -2447,11 +2447,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022986](http://oeis.org/A022986) ([L02 program](022/A022986.asm)): 30-n.
 * [A022987](http://oeis.org/A022987) ([L02 program](022/A022987.asm)): 31-n.
 * [A022988](http://oeis.org/A022988) ([L02 program](022/A022988.asm)): 32-n.
-* [A022989](http://oeis.org/A022989) ([L06 program](022/A022989.asm)): 33-n.
+* [A022989](http://oeis.org/A022989) ([L05 program](022/A022989.asm)): 33-n.
 * [A022990](http://oeis.org/A022990) ([L02 program](022/A022990.asm)): 34-n.
 * [A022991](http://oeis.org/A022991) ([L03 program](022/A022991.asm)): 35-n.
 * [A022992](http://oeis.org/A022992) ([L02 program](022/A022992.asm)): 36-n.
-* [A022993](http://oeis.org/A022993) ([L06 program](022/A022993.asm)): 37-n.
+* [A022993](http://oeis.org/A022993) ([L05 program](022/A022993.asm)): 37-n.
 * [A022994](http://oeis.org/A022994) ([L03 program](022/A022994.asm)): 38-n.
 * [A022995](http://oeis.org/A022995) ([L03 program](022/A022995.asm)): 39-n.
 * [A022996](http://oeis.org/A022996) ([L02 program](022/A022996.asm)): 40-n.
@@ -2549,7 +2549,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A023974](http://oeis.org/A023974) ([L03 program](023/A023974.asm)): First bit in fractional part of binary expansion of 7th root of n.
 * [A023975](http://oeis.org/A023975) ([L05 program](023/A023975.asm)): First bit in fractional part of binary expansion of 8th root of n.
 * [A023976](http://oeis.org/A023976) ([L14 program](023/A023976.asm)): First bit in fractional part of binary expansion of 9th root of n.
-* [A024000](http://oeis.org/A024000) ([L05 program](024/A024000.asm)): a(n) = 1 - n.
+* [A024000](http://oeis.org/A024000) ([L04 program](024/A024000.asm)): a(n) = 1 - n.
 * [A024001](http://oeis.org/A024001) ([L03 program](024/A024001.asm)): a(n) = 1-n^3.
 * [A024002](http://oeis.org/A024002) ([L03 program](024/A024002.asm)): a(n) = 1 - n^4.
 * [A024003](http://oeis.org/A024003) ([L03 program](024/A024003.asm)): a(n) = 1 - n^5.
