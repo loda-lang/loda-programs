@@ -1,0 +1,112 @@
+; A202455: Number of (n+2) X 4 binary arrays with consecutive windows of three bits considered as a binary number nondecreasing in every row and column.
+; 729,1194,1876,2835,4137,5854,8064,10851,14305,18522,23604,29659,36801,45150,54832,65979,78729,93226,109620,128067,148729,171774,197376,225715,256977,291354,329044,370251,415185,464062,517104,574539,636601,703530
+
+mov $11,$0
+mov $1,$0
+sub $1,9
+mov $8,1
+add $1,$8
+add $8,6
+mov $4,$8
+mov $1,1
+mov $5,$1
+mov $5,$1
+add $3,10
+add $0,21
+sub $0,$3
+sub $5,1
+sub $8,$0
+lpb $0,1
+  mov $4,2
+  mov $4,1
+  mul $4,$8
+  mul $4,$0
+  trn $0,823543
+  add $2,2
+  mov $8,7
+  mov $8,6
+  mov $7,1
+  trn $2,$4
+  sub $1,$5
+  pow $3,2
+  mov $5,$0
+  sub $8,$4
+  mov $7,2
+  add $5,2
+  mov $5,0
+  mov $6,6
+  pow $2,2
+  sub $1,$3
+  add $6,2
+  add $2,2
+  add $2,89
+  mov $5,$0
+  add $6,1
+  mov $4,$5
+  trn $7,1
+  add $1,$0
+  sub $3,$0
+  sub $1,$0
+  sub $3,$5
+  sub $8,$0
+  mov $5,$2
+  mov $9,1
+  add $6,$7
+  trn $0,6
+  mov $1,1
+  add $1,7
+  div $2,12
+  mul $0,$6
+  mov $0,1
+  div $8,2
+  mov $10,$8
+  mov $6,1
+  sub $7,$9
+  mov $4,$3
+  trn $4,$5
+  pow $1,$4
+  mov $2,1
+  trn $0,$5
+  sub $0,1
+  mul $4,$1
+  mov $6,2
+  add $2,$6
+  pow $8,2
+  mov $0,$2
+  add $7,1
+  add $9,$3
+  mod $6,$5
+  mov $10,6
+  clr $1,1
+  mov $4,1
+  sub $3,2
+  mov $3,1
+  mov $5,1
+  mul $5,2
+  sub $4,$6
+  mov $5,$0
+  add $6,$6
+  add $7,2
+lpe
+sub $10,4
+add $9,$8
+mov $5,$1
+add $5,$0
+sub $4,1
+add $3,$9
+mov $5,10
+add $4,2
+mov $3,$2
+sub $4,$0
+mov $10,$10
+add $0,$5
+sub $9,2
+mul $5,$0
+mov $1,$9
+add $1,5
+mov $12,$11
+mul $12,$11
+mul $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13

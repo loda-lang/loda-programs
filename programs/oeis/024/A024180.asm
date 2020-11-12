@@ -1,0 +1,71 @@
+; A024180: a(n) = floor(3rd elementary symmetric function of 2,3,...,n+3)/ 2nd elementary symmetric function of (2,3,...,n+3) ).
+; 0,2,3,5,7,10,13,16,20,24,28,32,37,42,48,54,60,67,74,81,88,96,104,113,122,131,141,151,161,171,182,193,205,217,229,242,255,268,281,295,309,324,339,354,370,386,402,418,435,452,470,488
+
+mov $7,$0
+mov $5,0
+mov $6,$5
+trn $0,$5
+mov $4,$0
+mul $4,$0
+add $1,2
+sub $1,1
+mul $1,$5
+div $5,3
+sub $1,1
+mov $2,2
+sub $5,$1
+add $3,$1
+mul $2,2
+lpb $0,1
+  add $2,$3
+  mov $3,0
+  div $0,$2
+  add $2,2
+  add $2,1
+  add $4,$0
+  mov $2,1
+  add $2,$4
+  mov $6,$5
+  sub $0,$1
+  add $4,$1
+  mov $1,26
+  add $4,1
+  mul $5,2
+  add $1,6
+  div $4,6
+  mov $5,$5
+  mov $5,$6
+  div $0,$0
+  div $2,$2
+  mov $6,$3
+  add $1,1
+  mov $6,2
+  add $0,$3
+  mov $2,12
+  add $4,1
+  mul $5,8
+  sub $6,$5
+  trn $0,1
+  add $2,8
+  mod $3,$6
+  sub $4,$6
+  add $2,1
+lpe
+mul $3,$5
+mov $3,2
+add $4,$6
+sub $2,1
+mov $1,0
+mov $5,18
+mov $6,$2
+sub $1,$4
+sub $1,1
+sub $5,$2
+add $1,$2
+mov $1,$4
+mov $8,$7
+mov $9,$8
+mul $9,1
+add $1,$9
+mul $8,$7
+mul $8,$7
