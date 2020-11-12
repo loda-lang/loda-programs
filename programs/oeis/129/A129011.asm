@@ -11,7 +11,6 @@ lpb $29,1
   sub $0,1
   mov $24,$0
   mov $26,$0
-  add $26,1
   lpb $26,1
     clr $0,24
     sub $26,1
@@ -19,9 +18,7 @@ lpb $29,1
     sub $0,$26
     mov $21,$0
     mov $23,$0
-    add $23,1
     lpb $23,1
-      clr $0,21
       sub $23,1
       mov $0,$21
       sub $0,$23
@@ -33,21 +30,13 @@ lpb $29,1
         mov $0,$17
         add $0,$19
         sub $0,1
-        mov $3,$0
-        mul $3,$0
         pow $0,4
-        sub $3,$3
         lpb $0,1
           add $4,6
           sub $0,1
-          sub $16,1
           add $1,$4
-          add $14,$1
-          mov $3,$1
           trn $0,$1
         lpe
-        mov $5,3
-        mov $1,$3
         mov $1,$4
         mov $20,$19
         lpb $20,1

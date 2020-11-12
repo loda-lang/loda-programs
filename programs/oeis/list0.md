@@ -2404,6 +2404,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022840](http://oeis.org/A022840) ([L27 program](022/A022840.asm)): Beatty sequence for sqrt(6).
 * [A022841](http://oeis.org/A022841) ([L11 program](022/A022841.asm)): Beatty sequence for sqrt(7).
 * [A022842](http://oeis.org/A022842) ([L18 program](022/A022842.asm)): Beatty sequence for sqrt(8).
+* [A022844](http://oeis.org/A022844) ([L06 program](022/A022844.asm)): a(n) = floor(n*Pi).
 * [A022846](http://oeis.org/A022846) ([L10 program](022/A022846.asm)): Nearest integer to n*sqrt(2).
 * [A022847](http://oeis.org/A022847) ([L10 program](022/A022847.asm)): Integer nearest n*sqrt(3).
 * [A022848](http://oeis.org/A022848) ([L18 program](022/A022848.asm)): Integer nearest nx, where x = sqrt(5).
@@ -2618,6 +2619,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024172](http://oeis.org/A024172) ([L19 program](024/A024172.asm)): Integer part of ((3rd elementary symmetric function of 1,2,..,n)/(2nd elementary symmetric function of 1,2,...,n)).
 * [A024174](http://oeis.org/A024174) ([L17 program](024/A024174.asm)): a(n) is floor((4th elementary symmetric function of 1,2,..,n)/(3rd elementary symmetric function of 1,2,...,n)).
 * [A024177](http://oeis.org/A024177) ([L16 program](024/A024177.asm)): a(n) = floor ( (2nd elementary symmetric function of 2,3,...,n+2)/(2+3+...+n+2) ).
+* [A024180](http://oeis.org/A024180) ([L68 program](024/A024180.asm)): a(n) = floor(3rd elementary symmetric function of 2,3,...,n+3)/ 2nd elementary symmetric function of (2,3,...,n+3) ).
 * [A024182](http://oeis.org/A024182) ([L09 program](024/A024182.asm)): Integer part of ((4th elementary symmetric function of 2,3,...,n+4)/(3rd elementary symmetric function of 2,3,...,n+4)).
 * [A024183](http://oeis.org/A024183) ([L13 program](024/A024183.asm)): Second elementary symmetric function of 3,4,...,n+3.
 * [A024191](http://oeis.org/A024191) ([L07 program](024/A024191.asm)): [ (3rd elementary symmetric function of 3,4,...,n+4)/(3+4+...+n+4) ].
@@ -4763,6 +4765,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048761](http://oeis.org/A048761) ([L06 program](048/A048761.asm)): Smallest square greater than or equal to n.
 * [A048762](http://oeis.org/A048762) ([L09 program](048/A048762.asm)): Largest cube <= n.
 * [A048763](http://oeis.org/A048763) ([L13 program](048/A048763.asm)): Smallest cube >= n.
+* [A048764](http://oeis.org/A048764) ([L61 program](048/A048764.asm)): Largest factorial <= n.
 * [A048765](http://oeis.org/A048765) ([L10 program](048/A048765.asm)): Smallest factorial >= n.
 * [A048766](http://oeis.org/A048766) ([L07 program](048/A048766.asm)): Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
 * [A048770](http://oeis.org/A048770) ([L13 program](048/A048770.asm)): Partial sums of A048694.
@@ -6904,7 +6907,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A076883](http://oeis.org/A076883) ([L07 program](076/A076883.asm)): Let u(0)=1, u(n) = 5/2 * floor(u(n-1)); then a(n) = (2/5)*u(n).
 * [A076885](http://oeis.org/A076885) ([L15 program](076/A076885.asm)): Let u(0)=1, u(1)=1 u(n) = u(n-1) + u(n-2) - n*z where z = (5-sqrt(5))/10 =0.27..., then a(n)=floor(u(n)).
 * [A076895](http://oeis.org/A076895) ([L18 program](076/A076895.asm)): a(1) = 1, a(n) = n - a(ceiling(n/2)).
-* [A076896](http://oeis.org/A076896) ([L18 program](076/A076896.asm)): a(1)=1, a(n)=n-a(floor(2n/3)).
+* [A076896](http://oeis.org/A076896) ([L07 program](076/A076896.asm)): a(1)=1, a(n)=n-a(floor(2n/3)).
 * [A076921](http://oeis.org/A076921) ([L08 program](076/A076921.asm)): Smallest number such that the highest common factor of pair of successive terms follows the pattern 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, ..., i.e., b(2n-1) = b(2n) = n given by A004526.
 * [A076936](http://oeis.org/A076936) ([L21 program](076/A076936.asm)): a(1) = 1; then the smallest number different from its predecessor such that the n-th partial product is an n-th power.
 * [A076937](http://oeis.org/A076937) ([L08 program](076/A076937.asm)): Duplicate of A014682.
@@ -6916,6 +6919,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A077025](http://oeis.org/A077025) ([L52 program](077/A077025.asm)): Sum{Floor(n/(k + 1/2)): k=1,2,...,n}.
 * [A077043](http://oeis.org/A077043) ([L05 program](077/A077043.asm)): "Three-quarter squares": a(n) = n^2 - A002620(n).
 * [A077071](http://oeis.org/A077071) ([L43 program](077/A077071.asm)): Row sums of A077070.
+* [A077113](http://oeis.org/A077113) ([L18 program](077/A077113.asm)): Number of integer cubes <= n^2.
 * [A077118](http://oeis.org/A077118) ([L08 program](077/A077118.asm)): Nearest integer square to n^3.
 * [A077119](http://oeis.org/A077119) ([L13 program](077/A077119.asm)): a(n) = A077118(n) - n^3.
 * [A077121](http://oeis.org/A077121) ([L28 program](077/A077121.asm)): Number of integer squares <= n^3.
@@ -7278,7 +7282,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081193](http://oeis.org/A081193) ([L15 program](081/A081193.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n>1, a(0)=1, a(1)=9.
 * [A081199](http://oeis.org/A081199) ([L10 program](081/A081199.asm)): 5th binomial transform of (0,1,0,1,...), A000035.
 * [A081200](http://oeis.org/A081200) ([L11 program](081/A081200.asm)): 6th binomial transform of (0,1,0,1,0,1,....), A000035.
-* [A081201](http://oeis.org/A081201) ([L12 program](081/A081201.asm)): Binomial transform of (0,1,0,1,0,1,....), A000035.
+* [A081201](http://oeis.org/A081201) ([L12 program](081/A081201.asm)): 7th binomial transform of (0,1,0,1,0,1,....), A000035.
 * [A081204](http://oeis.org/A081204) ([L09 program](081/A081204.asm)): Staircase on Pascal's triangle.
 * [A081205](http://oeis.org/A081205) ([L18 program](081/A081205.asm)): Staircase on Pascal's triangle.
 * [A081219](http://oeis.org/A081219) ([L11 program](081/A081219.asm)): One sixtieth the product of primitive Pythagorean triangles' sides whose odd values differ by 2.

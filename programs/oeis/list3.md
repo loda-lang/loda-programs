@@ -915,7 +915,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323724](http://oeis.org/A323724) ([L15 program](323/A323724.asm)): a(n) = n*(2*(n - 2)*n + (-1)^n + 3)/4.
 * [A323735](http://oeis.org/A323735) ([L14 program](323/A323735.asm)): a(n) is the largest minimal distance of a binary LCD [n,2] code.
 * [A323824](http://oeis.org/A323824) ([L05 program](323/A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
-* [A323827](http://oeis.org/A323827) ([L40 program](323/A323827.asm)): Apply Lenormand's "raboter" operation to A306211.
 * [A323956](http://oeis.org/A323956) ([L14 program](323/A323956.asm)): Triangle read by rows: T(n, k) = 1 + n * (n - k) for 1 <= k <= n.
 * [A324015](http://oeis.org/A324015) ([L10 program](324/A324015.asm)): Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
 * [A324172](http://oeis.org/A324172) ([L11 program](324/A324172.asm)): Number of subsets of {1,...,n} that cross their complement.
@@ -964,6 +963,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327491](http://oeis.org/A327491) ([L25 program](327/A327491.asm)): a(0) = 0. If 4 divides n then a(n) = valuation(n, 2) else a(n) = (n mod 2) + 1.
 * [A327492](http://oeis.org/A327492) ([L11 program](327/A327492.asm)): Partial sums of A327491.
 * [A327565](http://oeis.org/A327565) ([L21 program](327/A327565.asm)): Number of transfers of marbles between two sets until the first repetition.
+* [A327625](http://oeis.org/A327625) ([L36 program](327/A327625.asm)): Expansion of Sum_{k>=0} x^(3^k) / (1 - x^(3^k))^2.
 * [A327672](http://oeis.org/A327672) ([L12 program](327/A327672.asm)): a(n) = Sum_{k=0..n} ceiling(sqrt(k)).
 * [A327704](http://oeis.org/A327704) ([L10 program](327/A327704.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 4 parts can be obtained by coalescing the parts of lambda.
 * [A327705](http://oeis.org/A327705) ([L07 program](327/A327705.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 5 parts can be obtained by coalescing the parts of lambda.
@@ -1083,7 +1083,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330003](http://oeis.org/A330003) ([L08 program](330/A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
 * [A330023](http://oeis.org/A330023) ([L36 program](330/A330023.asm)): a(n) counts the cube-words immediately before a(n), with a(1) = 0.
 * [A330025](http://oeis.org/A330025) ([L13 program](330/A330025.asm)): a(n) = (-1)^floor(n/5) * sign(mod(n, 5)).
-* [A330033](http://oeis.org/A330033) ([L37 program](330/A330033.asm)): a(n) = Kronecker(n, 5) * (-1)^floor(n/5).
+* [A330033](http://oeis.org/A330033) ([L15 program](330/A330033.asm)): a(n) = Kronecker(n, 5) * (-1)^floor(n/5).
 * [A330038](http://oeis.org/A330038) ([L22 program](330/A330038.asm)): a(1) = 1, a(n) = [n/2] + a([n/2]) + a([(n+1)/2]) for n > 1, where [x] = floor(x).
 * [A330063](http://oeis.org/A330063) ([L71 program](330/A330063.asm)): Beatty sequence for x, where 1/x + sech(x) = 1.
 * [A330064](http://oeis.org/A330064) ([L37 program](330/A330064.asm)): Beatty sequence for cosh(x), where 1/x + sech(x) = 1.
