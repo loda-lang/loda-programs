@@ -115,6 +115,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302906](http://oeis.org/A302906) ([L06 program](302/A302906.asm)): a(0) = 0; for n > 0, a(n) = a(n-1) + 5*n + 4.
 * [A302930](http://oeis.org/A302930) ([L22 program](302/A302930.asm)): Maximum number of 6's possible in an infinite Minesweeper grid with n mines.
 * [A302946](http://oeis.org/A302946) ([L17 program](302/A302946.asm)): Number of minimal (and minimum) total dominating sets in the 2n-crossed prism graph.
+* [A303120](http://oeis.org/A303120) ([L30 program](303/A303120.asm)): Total area of all rectangles of size p X q such that p + q = n^2 and p <= q.
 * [A303212](http://oeis.org/A303212) ([L17 program](303/A303212.asm)): Number of minimum total dominating sets in the n X n rook complement graph.
 * [A303272](http://oeis.org/A303272) ([L02 program](303/A303272.asm)): Multiples of 1852.
 * [A303295](http://oeis.org/A303295) ([L10 program](303/A303295.asm)): a(n) is the maximum water retention of a height-3 length-n number parallelogram with maximum water area.
@@ -162,8 +163,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304375](http://oeis.org/A304375) ([L07 program](304/A304375.asm)): a(n) = 27*n^2/2 + 45*n/2 - 12 (n>=1).
 * [A304376](http://oeis.org/A304376) ([L05 program](304/A304376.asm)): a(n) = 60*2^n - 48 (n>=1).
 * [A304377](http://oeis.org/A304377) ([L05 program](304/A304377.asm)): a(n) = 102*2^n - 96 (n>=1).
-* [A304378](http://oeis.org/A304378) ([L07 program](304/A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
-* [A304379](http://oeis.org/A304379) ([L21 program](304/A304379.asm)): a(n) = 256n^2 - 828n + 656 (n>=1).
+* [A304378](http://oeis.org/A304378) ([L06 program](304/A304378.asm)): a(n) = 4*(n - 1)*(16*n - 23) for n >= 1.
+* [A304379](http://oeis.org/A304379) ([L19 program](304/A304379.asm)): a(n) = 256n^2 - 828n + 656 (n>=1).
 * [A304380](http://oeis.org/A304380) ([L06 program](304/A304380.asm)): a(n) = 36*n^2 - 4*n (n>=1).
 * [A304381](http://oeis.org/A304381) ([L09 program](304/A304381.asm)): a(n) = 54*n^2 - 26*n + 4 (n>=1).
 * [A304383](http://oeis.org/A304383) ([L05 program](304/A304383.asm)): a(n) = 36*2^n - 5 (n>=1).
@@ -884,7 +885,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322593](http://oeis.org/A322593) ([L09 program](322/A322593.asm)): a(n) = 2^n + 2*n^2 + 1.
 * [A322594](http://oeis.org/A322594) ([L09 program](322/A322594.asm)): a(n) = (4*n^3 + 12*n^2 - 4*n + 3)/3.
 * [A322595](http://oeis.org/A322595) ([L08 program](322/A322595.asm)): a(n) = (n^3 + 9*n + 14*n + 9)/3.
-* [A322597](http://oeis.org/A322597) ([L14 program](322/A322597.asm)): a(n) = (4*n^3 - 6*n^2 + 20*n + 3)/3.
+* [A322597](http://oeis.org/A322597) ([L15 program](322/A322597.asm)): a(n) = (4*n^3 - 6*n^2 + 20*n + 3)/3.
 * [A322598](http://oeis.org/A322598) ([L31 program](322/A322598.asm)): a(n) is the number of unlabeled rank-3 graded lattices with 3 coatoms and n atoms.
 * [A322675](http://oeis.org/A322675) ([L13 program](322/A322675.asm)): a(n) = n * (4*n + 3)^2.
 * [A322677](http://oeis.org/A322677) ([L08 program](322/A322677.asm)): a(n) = 16 * n * (n+1) * (2*n+1)^2.
