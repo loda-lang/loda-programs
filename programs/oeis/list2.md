@@ -2718,6 +2718,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267036](http://oeis.org/A267036) ([L07 program](267/A267036.asm)): Decimal representation of the n-th iteration of the "Rule 85" elementary cellular automaton starting with a single ON (black) cell.
 * [A267043](http://oeis.org/A267043) ([L07 program](267/A267043.asm)): Middle column of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267045](http://oeis.org/A267045) ([L14 program](267/A267045.asm)): Decimal representation of the middle column of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
+* [A267046](http://oeis.org/A267046) ([L60 program](267/A267046.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
+* [A267047](http://oeis.org/A267047) ([L73 program](267/A267047.asm)): Total number of ON (black) cells after n iterations of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267048](http://oeis.org/A267048) ([L13 program](267/A267048.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267049](http://oeis.org/A267049) ([L17 program](267/A267049.asm)): Total number of OFF (white) cells after n iterations of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267052](http://oeis.org/A267052) ([L16 program](267/A267052.asm)): Decimal representation of the n-th iteration of the "Rule 92" elementary cellular automaton starting with a single ON (black) cell.
@@ -3672,8 +3674,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A287435](http://oeis.org/A287435) ([L15 program](287/A287435.asm)): Positions of 0 in A053838.
 * [A287436](http://oeis.org/A287436) ([L17 program](287/A287436.asm)): Positions of 1 in A053838.
 * [A287437](http://oeis.org/A287437) ([L16 program](287/A287437.asm)): Positions of 2 in A053838.
-* [A287451](http://oeis.org/A287451) ([L82 program](287/A287451.asm)): Start with 0 and repeatedly substitute 0->012, 1->201, 2->120.
-* [A287452](http://oeis.org/A287452) ([L90 program](287/A287452.asm)): Positions of 0 in A287451.
+* [A287451](http://oeis.org/A287451) ([L13 program](287/A287451.asm)): Start with 0 and repeatedly substitute 0->012, 1->201, 2->120.
+* [A287452](http://oeis.org/A287452) ([L19 program](287/A287452.asm)): Positions of 0 in A287451.
 * [A287468](http://oeis.org/A287468) ([L39 program](287/A287468.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 276", based on the 5-celled von Neumann neighborhood.
 * [A287470](http://oeis.org/A287470) ([L38 program](287/A287470.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 276", based on the 5-celled von Neumann neighborhood.
 * [A287479](http://oeis.org/A287479) ([L12 program](287/A287479.asm)): Expansion of (x + x^2)/(1 + 3*x^2).
@@ -3682,7 +3684,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A287553](http://oeis.org/A287553) ([L24 program](287/A287553.asm)): Positions of 1 in A053839.
 * [A287554](http://oeis.org/A287554) ([L24 program](287/A287554.asm)): Positions of 2 in A053839.
 * [A287555](http://oeis.org/A287555) ([L23 program](287/A287555.asm)): Positions of 3 in A053839.
-* [A287577](http://oeis.org/A287577) ([L97 program](287/A287577.asm)): Positions of 0 in A287576.
+* [A287577](http://oeis.org/A287577) ([L23 program](287/A287577.asm)): Positions of 0 in A287576.
 * [A287665](http://oeis.org/A287665) ([L42 program](287/A287665.asm)): Positions of 1's in A287663; complement of A287664.
 * [A287702](http://oeis.org/A287702) ([L15 program](287/A287702.asm)): a(n) = (3!)^3 * [z^3] hypergeom([], [1,1], z)^n.
 * [A287726](http://oeis.org/A287726) ([L47 program](287/A287726.asm)): Positions of 0 in A287725; complement of A287727.

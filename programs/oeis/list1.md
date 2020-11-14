@@ -2615,7 +2615,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136572](http://oeis.org/A136572) ([L36 program](136/A136572.asm)): Triangle read by rows: row n consists of n zeros followed by n!.
 * [A136616](http://oeis.org/A136616) ([L17 program](136/A136616.asm)): a(n) = largest m with H(m) - H(n) <= 1, where H(i) = Sum_{j=1 to i} 1/j, the i-th harmonic number, H(0) = 0.
 * [A136619](http://oeis.org/A136619) ([L06 program](136/A136619.asm)): a(1) = 1, then repeat period 3: [1, 4, 2].
-* [A136690](http://oeis.org/A136690) ([L11 program](136/A136690.asm)): Final nonzero digit of n! in base 3.
+* [A136690](http://oeis.org/A136690) ([L10 program](136/A136690.asm)): Final nonzero digit of n! in base 3.
 * [A136724](http://oeis.org/A136724) ([L12 program](136/A136724.asm)): Numbers divisible by 4 that are not powers of 2.
 * [A136768](http://oeis.org/A136768) ([L21 program](136/A136768.asm)): n! never ends in this many 0's in base 7.
 * [A136771](http://oeis.org/A136771) ([L25 program](136/A136771.asm)): n! never ends in this many 0's in base 11.
@@ -4867,7 +4867,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168202](http://oeis.org/A168202) ([L08 program](168/A168202.asm)): a(n) = 3*n - a(n-1) + 1 with n > 1, a(1)=5.
 * [A168203](http://oeis.org/A168203) ([L08 program](168/A168203.asm)): a(n) = 4*n - a(n-1) + 1 with n>1, a(1)=0.
 * [A168204](http://oeis.org/A168204) ([L08 program](168/A168204.asm)): a(n) = 4*n - a(n-1) + 1 with n>1, a(1)=1.
-* [A168205](http://oeis.org/A168205) ([L22 program](168/A168205.asm)): a(n) = 4*n - a(n-1) + 1 with n>1, a(1)=2.
+* [A168205](http://oeis.org/A168205) ([L18 program](168/A168205.asm)): a(n) = 4*n - a(n-1) + 1 with n>1, a(1)=2.
 * [A168206](http://oeis.org/A168206) ([L10 program](168/A168206.asm)): a(n) = 5*n - a(n-1) + 1 with n>1, a(1)=0.
 * [A168207](http://oeis.org/A168207) ([L21 program](168/A168207.asm)): a(n) = 5*n - a(n-1) + 1 with n>1, a(1)=2.
 * [A168209](http://oeis.org/A168209) ([L05 program](168/A168209.asm)): a(n) = 5*n - a(n-1) + 1 with n>1, a(1)=3.

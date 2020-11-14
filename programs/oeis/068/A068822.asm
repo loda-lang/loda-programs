@@ -1,0 +1,104 @@
+; A068822: a(n) = gcd(n,c(n)), where c(n) is the 10's complement of n.
+; 1,2,1,2,5,2,1,2,1,10,1,4,1,2,5,4,1,2,1,20,1,2,1,4,25,2,1,4,1,10,1,4,1,2,5,4,1,2,1,20,1,2,1,4,5,2,1,4,1,50,1,4,1,2,5,4,1,2,1,20,1,2,1,4,5,2,1,4,1,10,1,4,1,2,25,4,1,2,1,20,1,2
+
+mov $3,8
+mul $3,2
+mul $3,2
+mul $3,$3
+add $3,2
+mov $4,$0
+trn $4,8
+add $5,1
+bin $5,2
+mov $5,10
+mov $10,$5
+mov $5,2
+add $4,$0
+mov $6,$5
+mov $4,$4
+mov $9,$3
+mov $2,$3
+add $3,$10
+mov $7,$0
+mul $7,$4
+add $3,$0
+mul $3,$9
+mov $9,2
+mov $9,1
+mul $6,2
+mov $5,3
+trn $5,$5
+add $2,10
+gcd $7,2
+trn $5,$0
+sub $7,2
+sub $3,$3
+mov $7,1
+mul $10,$5
+sub $7,$0
+mul $3,$5
+mov $1,$3
+lpb $0,1
+  mul $10,$2
+  mov $5,2
+  clr $6,1
+  add $3,$9
+  add $4,$4
+  mul $5,3
+  add $9,1
+  add $9,3
+  mov $2,3
+  mov $10,$7
+  mov $1,1
+  sub $5,$6
+  add $6,1
+  mov $5,$4
+  mov $2,$3
+  sub $7,$1
+  mov $0,$7
+  mov $1,120259084288
+  mod $9,$1
+  mov $3,$3
+  add $4,9
+  sub $10,1
+  mul $2,2
+  mov $8,$7
+  mov $2,6
+  mov $3,2
+  mov $6,$1
+  mov $3,1
+  mov $2,$3
+  mov $8,4
+  sub $8,2
+  mul $8,10
+  sub $8,3
+  mov $8,1
+  mov $5,1
+  sub $6,$2
+  add $6,$3
+  mov $3,$2
+  sub $4,$4
+  add $7,1
+  sub $0,1
+lpe
+mul $4,5
+mul $4,$7
+add $6,4
+mov $7,$4
+trn $7,4
+mov $8,$1
+add $5,24
+add $2,1
+div $5,64
+add $9,$0
+mov $5,2
+gcd $4,$9
+sub $5,59
+trn $9,2
+mov $1,$6
+mov $7,$7
+mov $8,$4
+sub $1,$5
+mov $0,1
+add $0,3
+mov $1,$4

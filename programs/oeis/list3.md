@@ -270,6 +270,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305270](http://oeis.org/A305270) ([L05 program](305/A305270.asm)): a(n) = 140*2^n - 112.
 * [A305271](http://oeis.org/A305271) ([L05 program](305/A305271.asm)): a(n) = 680*2^n - 548.
 * [A305272](http://oeis.org/A305272) ([L05 program](305/A305272.asm)): a(n) = 836*2^n - 676.
+* [A305291](http://oeis.org/A305291) ([L84 program](305/A305291.asm)): Numbers k such that 4*k + 3 is a perfect cube, sorted by absolute values.
+* [A305408](http://oeis.org/A305408) ([L109 program](305/A305408.asm)): Arises in the study of A303589, A303590 and A303591. Variant of A303592 with x=3.
 * [A305497](http://oeis.org/A305497) ([L09 program](305/A305497.asm)): The largest positive even integer that can be represented with n digits in base 3/2.
 * [A305498](http://oeis.org/A305498) ([L17 program](305/A305498.asm)): The smallest positive even integer that can be represented with n digits in base 3/2.
 * [A305503](http://oeis.org/A305503) ([L09 program](305/A305503.asm)): Largest cardinality of subsets A of {0,1,...,n-1} with |A + A| > |A - A|.
