@@ -4,7 +4,6 @@
 lpb $0,1
   add $1,$0
   div $0,3
-  sub $2,$0
   sub $1,$0
   div $1,2
   mod $1,2
