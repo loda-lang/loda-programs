@@ -9,11 +9,9 @@ add $2,$1
 mov $3,$1
 add $0,$2
 mul $3,$0
-mov $4,8
 sub $3,3
-pow $4,2
 mul $3,8
-add $3,$4
+add $3,64
 mov $1,$3
 sub $1,56
 div $1,24

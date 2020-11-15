@@ -3,10 +3,9 @@
 
 mov $4,$0
 add $4,$0
-mov $0,3
-mov $3,$0
+mov $3,3
 mov $6,$4
-mov $2,$0
+mov $2,3
 lpb $2,1
   lpb $4,1
     sub $4,$3

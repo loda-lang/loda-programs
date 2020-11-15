@@ -11,8 +11,7 @@ pow $2,3
 mul $5,9
 div $5,3
 mov $4,$2
-mov $2,2
-mul $4,$2
+mul $4,2
 sub $4,$5
 div $4,2
 mov $1,$4

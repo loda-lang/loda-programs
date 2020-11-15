@@ -6,9 +6,7 @@ sub $0,2
 mov $5,$0
 trn $5,6
 add $5,1
-mov $0,2
-add $0,3
-bin $0,2
+mov $0,10
 pow $0,$5
 sub $0,2
 sub $0,$5

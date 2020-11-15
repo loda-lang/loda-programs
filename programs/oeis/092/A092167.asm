@@ -7,9 +7,8 @@ mov $4,6
 add $3,$2
 pow $4,$3
 add $4,8
-mov $3,2
 mov $1,7
-div $4,$3
+div $4,2
 add $1,$4
 mov $3,$1
 mul $3,2

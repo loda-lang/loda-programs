@@ -8,12 +8,11 @@ mov $5,$0
 add $1,26
 mov $3,$6
 mov $4,$1
-mov $6,3
 mul $5,2
-mul $4,$6
+mul $4,3
 div $5,2
 add $5,$3
-bin $5,$6
+bin $5,3
 mov $2,$4
 lpb $0,1
   mov $3,$2

@@ -10,10 +10,7 @@ add $3,$1
 mov $4,$1
 add $3,6
 mov $0,$4
-mov $4,3
 add $3,$0
-add $3,$4
-sub $3,3
 mov $1,1
 mov $5,$0
 add $0,4

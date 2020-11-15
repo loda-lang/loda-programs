@@ -4,8 +4,7 @@
 sub $0,5
 mov $2,6
 add $2,$0
-mov $0,7
-bin $2,$0
+bin $2,7
 mul $2,2
 pow $2,2
 mov $1,$2

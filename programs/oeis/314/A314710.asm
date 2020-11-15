@@ -4,11 +4,10 @@
 mov $4,$0
 mov $1,$0
 add $0,$1
-mov $1,1
 sub $0,5
 mov $2,$0
 add $2,4
-add $1,1
+mov $1,2
 lpb $2,1
   lpb $5,1
     sub $5,$3

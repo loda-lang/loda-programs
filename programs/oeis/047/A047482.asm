@@ -8,7 +8,7 @@ mov $7,$0
 div $3,2
 mov $0,2
 mul $3,$7
-mov $2,$0
+mov $2,2
 add $3,1
 lpb $2,1
   mod $3,2

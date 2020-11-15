@@ -7,12 +7,10 @@ mov $5,$0
 add $0,3
 mod $0,2
 mul $5,$0
-mov $0,3
-mov $2,$0
 add $5,3
-mul $5,$2
+mul $5,3
 mov $1,$5
 sub $1,9
-mov $6,$4
-mov $3,$6
+mov $2,$4
+mov $3,$2
 add $1,$3

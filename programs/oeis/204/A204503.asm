@@ -3,14 +3,12 @@
 
 mov $4,$0
 mov $5,$4
-mov $4,2
 trn $0,5
 add $0,$5
 trn $5,4
 add $0,$5
-mov $1,$4
 add $0,1
-add $1,2
+mov $1,4
 lpb $0,1
   sub $0,1
   add $2,$3

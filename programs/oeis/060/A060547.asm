@@ -4,10 +4,9 @@
 mov $1,3
 mov $3,$0
 gcd $1,$3
-mov $0,3
 mov $4,$3
 add $4,$1
-div $4,$0
+div $4,3
 mov $2,2
 pow $2,$4
 mov $1,$2

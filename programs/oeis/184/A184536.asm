@@ -7,6 +7,5 @@ mov $2,$0
 pow $0,4
 mul $1,$0
 div $1,$2
-mov $0,5
-trn $1,$0
+trn $1,5
 add $1,5

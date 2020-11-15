@@ -17,8 +17,7 @@ add $5,$4
 mov $6,$5
 mov $8,$6
 pow $2,$5
-mov $1,1
-add $3,$1
+add $3,1
 add $3,$7
 mov $7,$8
 add $3,$7

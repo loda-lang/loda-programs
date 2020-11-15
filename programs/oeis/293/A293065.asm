@@ -3,14 +3,9 @@
 
 mov $3,$0
 mov $1,$3
-mov $0,3
-mov $3,3
-mov $4,4
-sub $4,$3
-sub $0,$4
-trn $1,$0
+trn $1,2
 mov $3,0
-mov $0,$3
+mov $0,0
 add $0,$1
 sub $0,1
 lpb $0,1

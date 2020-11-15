@@ -3,8 +3,7 @@
 
 mov $9,$0
 mov $8,$0
-mov $0,2
-add $8,$0
+add $8,2
 mov $3,$8
 sub $3,1
 div $3,2

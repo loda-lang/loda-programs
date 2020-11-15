@@ -13,9 +13,8 @@ sub $5,6
 sub $0,1
 add $0,$5
 add $2,2
-mov $5,4
 sub $0,1
-trn $0,$5
+trn $0,4
 add $0,$2
 mov $3,6
 add $0,1

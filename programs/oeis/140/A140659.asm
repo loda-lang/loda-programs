@@ -4,11 +4,9 @@
 add $0,1
 mov $3,2
 pow $3,$0
-mov $0,2
-add $0,3
 mov $2,10000
 add $2,$3
 add $2,8
-div $2,$0
+div $2,5
 mov $1,$2
 sub $1,2002

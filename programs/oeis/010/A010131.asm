@@ -6,7 +6,7 @@ mov $3,$2
 mov $4,4
 mov $7,8
 mov $2,10
-mov $5,$2
+mov $5,10
 gcd $4,$0
 lpb $2,1
   mov $9,$3

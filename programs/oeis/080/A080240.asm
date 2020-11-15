@@ -10,11 +10,10 @@ sub $6,2
 mul $1,$6
 add $1,4
 mov $4,$1
-mov $1,2
 mov $0,8
 mul $4,2
 add $0,$4
-sub $1,2
+mov $1,0
 mul $0,2
 add $1,$0
 mov $3,$1

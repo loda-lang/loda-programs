@@ -4,8 +4,7 @@
 mov $2,1
 add $2,$0
 mul $2,89
-mov $0,7
-log $2,$0
+log $2,7
 pow $2,2
 mov $1,$2
 sub $1,4

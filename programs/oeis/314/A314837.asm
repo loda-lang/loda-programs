@@ -10,8 +10,7 @@ add $0,5
 mul $0,2
 mov $3,6
 sub $0,1
-mov $1,6
-mul $1,2
+mov $1,12
 lpb $0,1
   add $3,6
   sub $0,$3

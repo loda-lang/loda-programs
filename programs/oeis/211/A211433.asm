@@ -13,8 +13,7 @@ mov $0,$3
 sub $6,1
 div $0,3
 mov $5,$6
-mov $7,4
-div $6,$7
+div $6,4
 add $6,2
 lpb $0,1
   sub $0,1

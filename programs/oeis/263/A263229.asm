@@ -15,9 +15,8 @@ mov $7,$8
 mul $2,2
 sub $6,$0
 sub $2,9
-mov $3,1
 add $8,$2
-mul $3,2
+mov $3,2
 add $0,4
 sub $2,1
 add $6,$0

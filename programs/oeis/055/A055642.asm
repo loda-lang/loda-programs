@@ -3,11 +3,8 @@
 
 mov $3,$0
 add $3,7
-mov $0,1
-mov $2,$0
-mov $0,6
-mul $2,2
+mov $2,2
 mul $3,2
 add $2,$3
-log $2,$0
+log $2,6
 mov $1,$2

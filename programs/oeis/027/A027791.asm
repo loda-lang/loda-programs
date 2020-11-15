@@ -6,12 +6,10 @@ mov $1,$3
 mov $2,$1
 mul $2,2
 mov $0,$2
-mov $2,2
-div $0,$2
+div $0,2
 mov $4,$0
 add $0,4
-add $4,4
-add $4,$2
+add $4,6
 bin $4,6
 mul $4,$0
 mov $1,$4

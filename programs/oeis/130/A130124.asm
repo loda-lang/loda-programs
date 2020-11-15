@@ -4,9 +4,8 @@
 mov $3,$0
 mov $1,$3
 mov $3,7
-mov $0,$3
 mov $5,$1
-mov $2,$0
+mov $2,7
 lpb $2,1
   div $3,$3
   mov $1,$3

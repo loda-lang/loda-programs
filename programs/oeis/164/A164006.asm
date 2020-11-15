@@ -7,7 +7,7 @@ mov $8,$0
 mov $7,3
 mov $4,6
 mov $0,2
-mov $2,$0
+mov $2,2
 lpb $2,1
   mov $3,$5
   mov $2,1

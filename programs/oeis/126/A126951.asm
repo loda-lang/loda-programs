@@ -9,9 +9,8 @@ mov $7,$4
 sub $7,1
 mod $2,2
 mov $3,$2
-mov $2,2
 gcd $3,3
-div $7,$2
+div $7,2
 mov $5,$3
 mov $1,$7
 pow $1,$5

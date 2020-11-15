@@ -11,10 +11,9 @@ mov $5,$3
 mov $8,12
 bin $4,$5
 add $8,$6
-mov $6,4
 add $0,1
 mul $4,$8
-mov $3,$6
+mov $3,4
 lpb $0,1
   sub $4,7
   add $4,$3

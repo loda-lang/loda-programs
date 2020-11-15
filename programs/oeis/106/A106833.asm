@@ -9,7 +9,6 @@ mod $3,2
 mov $4,$3
 pow $4,2
 sub $2,1
-mov $3,2
-add $4,$3
+add $4,2
 mul $2,$4
 mov $1,$2

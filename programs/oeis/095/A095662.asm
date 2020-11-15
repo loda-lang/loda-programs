@@ -3,16 +3,12 @@
 
 mov $2,$0
 mov $1,6
-mov $0,5
-mov $4,$0
 add $2,4
 add $1,$2
-mov $6,$0
-mul $0,$6
-sub $1,$4
+sub $1,5
 mov $3,$1
-sub $0,8
-mov $4,$0
+mov $0,17
+mov $4,17
 lpb $0,1
   add $1,$4
   bin $3,5

@@ -5,9 +5,8 @@ mov $3,$0
 trn $3,1
 mov $2,$0
 gcd $3,2
-mov $0,1
 mul $2,2
-add $2,$0
+add $2,1
 mov $4,$3
 mov $1,$2
 pow $4,$1

@@ -6,8 +6,7 @@ mov $3,$0
 add $3,2
 mov $0,$3
 mul $0,5
-mov $3,2
-bin $0,$3
+bin $0,2
 log $0,8
 add $0,3
 mov $1,$0

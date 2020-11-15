@@ -4,11 +4,8 @@
 mov $5,$0
 add $5,1
 mov $4,$5
-mov $5,2
-mov $3,$5
-sub $5,1
-add $4,$3
-mov $6,$5
+add $4,2
+mov $6,1
 mov $5,$4
 add $6,$4
 gcd $6,2

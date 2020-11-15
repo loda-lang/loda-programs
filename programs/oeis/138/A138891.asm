@@ -14,11 +14,8 @@ add $0,$1
 mul $2,$0
 mov $4,$5
 mov $7,$4
-mov $1,5
-mov $3,4
-sub $7,$1
-mul $2,4
-mul $2,$3
+sub $7,5
+mul $2,16
 mul $7,$2
 mov $3,$7
 add $3,2

@@ -8,10 +8,9 @@ mov $2,$0
 add $1,2
 mov $4,$2
 div $4,2
-mov $0,2
 add $4,$1
 mov $3,898
-add $0,3
+mov $0,5
 pow $2,0
 gcd $3,$4
 mul $2,$4

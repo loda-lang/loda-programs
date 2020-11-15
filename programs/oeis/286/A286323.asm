@@ -6,9 +6,6 @@ mov $1,$2
 mov $4,$1
 add $4,1
 mov $3,$4
-mov $4,1
-mov $1,$4
-add $1,98
-mul $3,$1
+mul $3,99
 div $3,64
 mov $1,$3

@@ -3,9 +3,7 @@
 
 mov $6,$0
 mov $2,$6
-mov $0,1
-mul $0,3
-mov $4,$0
+mov $4,3
 trn $4,$2
 mov $3,2
 mul $3,$2

@@ -14,15 +14,11 @@ mov $5,1
 mul $5,$3
 mov $9,$2
 add $9,$2
-mov $4,2
 mov $7,$9
 mul $7,$5
 mov $2,1
 add $2,$7
-add $4,8
-mul $4,2
-add $2,1
-add $2,$4
+add $2,21
 mov $1,$2
 sub $1,22
 div $1,12

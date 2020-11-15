@@ -5,12 +5,10 @@ mul $0,2
 mov $4,$0
 mov $1,$4
 mov $2,$1
-mov $4,2
-mul $4,2
-add $2,$4
-mov $3,$4
+add $2,4
+mov $3,4
 sub $3,$2
-bin $3,$4
+bin $3,4
 sub $2,$3
 mul $3,7
 add $3,$2

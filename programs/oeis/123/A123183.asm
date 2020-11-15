@@ -6,11 +6,8 @@ mov $1,$0
 sub $1,1
 pow $3,$1
 mov $4,$3
-mov $3,1
-trn $4,$3
-mov $1,1
-mul $1,2
-sub $2,$1
+trn $4,1
+mov $2,-2
 sub $2,$4
 mov $1,$2
 div $1,2

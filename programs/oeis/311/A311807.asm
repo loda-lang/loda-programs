@@ -4,8 +4,7 @@
 mov $4,$0
 pow $5,$0
 mov $1,$5
-mov $5,2
-div $5,$5
+mov $5,1
 add $5,$0
 add $5,1
 div $5,5

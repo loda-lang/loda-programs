@@ -11,8 +11,7 @@ mul $5,$3
 div $5,4
 mov $4,$5
 mov $1,$4
-mov $0,1
-mov $3,$0
+mov $3,1
 sub $3,$4
 mul $1,$3
 gcd $1,6

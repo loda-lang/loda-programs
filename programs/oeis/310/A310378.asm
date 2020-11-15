@@ -5,9 +5,8 @@ mov $3,$0
 add $0,$3
 mov $4,$0
 mov $2,$0
-mov $0,2
 mov $3,10
-add $4,$0
+add $4,2
 trn $2,1
 add $4,$2
 mov $1,$4

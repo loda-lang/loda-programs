@@ -6,15 +6,13 @@ mov $5,$0
 mov $6,$5
 add $6,1
 pow $6,2
-mov $8,$6
-mov $0,11
-mul $8,4
-mul $0,12
-mov $7,$0
-mul $8,$7
-sub $8,8
+mov $7,$6
+mul $7,4
+mov $0,132
+mul $7,132
+sub $7,8
 lpb $0,1
-  mov $5,$8
+  mov $5,$7
   mov $0,1
 lpe
 mov $1,$5

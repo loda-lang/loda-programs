@@ -14,7 +14,7 @@ bin $4,$2
 add $7,$4
 add $6,$7
 mov $0,9
-mov $3,$0
+mov $3,9
 lpb $0,1
   add $6,2
   sub $3,1

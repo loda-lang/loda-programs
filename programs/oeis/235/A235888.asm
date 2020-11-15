@@ -12,9 +12,8 @@ add $4,1
 add $4,$3
 mov $2,$4
 add $2,2
-mov $4,8
 mul $3,$2
-sub $3,$4
+sub $3,8
 mov $1,$3
 sub $1,69
 div $1,3

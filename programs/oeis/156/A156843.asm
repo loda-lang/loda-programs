@@ -4,10 +4,9 @@
 mov $6,$0
 mul $0,2
 mov $1,$0
-mov $0,2
 sub $1,1
-mov $2,$0
-pow $1,$0
+mov $2,2
+pow $1,2
 sub $1,1
 lpb $2,1
   mov $4,2

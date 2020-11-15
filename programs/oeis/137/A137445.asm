@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $0,6
-mov $1,$0
+mov $1,6
 lpb $2,1
   mov $3,1
   mul $1,2

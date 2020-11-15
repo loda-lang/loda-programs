@@ -6,11 +6,10 @@ add $4,10
 mov $6,$4
 mov $1,$6
 mov $3,$1
-mov $1,5
 bin $3,8
 sub $3,$0
 mov $2,$3
-add $2,$1
+add $2,5
 mov $3,$0
 add $2,1
 mov $7,6

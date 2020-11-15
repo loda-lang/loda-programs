@@ -9,12 +9,11 @@ mul $0,11
 add $3,$0
 sub $3,5
 mov $2,2
-mov $4,3
 add $2,$3
 add $3,1
 add $3,$5
 mov $6,$2
-add $4,2
+mov $4,5
 pow $6,2
 add $4,$3
 sub $6,6

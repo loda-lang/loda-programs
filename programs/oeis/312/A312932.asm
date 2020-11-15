@@ -9,8 +9,7 @@ add $4,5
 mov $1,1
 trn $1,$0
 add $3,$1
-mov $0,2
-add $0,1
+mov $0,3
 add $2,$3
 add $0,$2
 add $0,$2

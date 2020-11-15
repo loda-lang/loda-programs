@@ -6,10 +6,8 @@ mov $5,$0
 mov $8,5
 mov $7,$5
 add $8,$0
-mov $5,1
 mov $9,$0
-add $5,5
-trn $7,$5
+trn $7,6
 add $0,1
 add $7,1
 add $0,$7

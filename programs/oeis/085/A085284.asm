@@ -6,11 +6,9 @@ mov $1,$0
 mov $2,3
 mov $3,$1
 mov $1,1
-mov $0,3
 mul $1,$4
-add $0,1
 add $2,$3
-bin $2,$0
+bin $2,4
 mul $1,$2
 mul $3,$1
 mul $3,2

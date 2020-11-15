@@ -4,9 +4,7 @@
 mov $2,$0
 mov $1,$2
 mov $3,1
-mov $2,0
 add $3,$1
 add $1,4
-add $2,4
-bin $1,$2
+bin $1,4
 mul $1,$3

@@ -7,8 +7,7 @@ add $2,$0
 add $2,$0
 gcd $4,20
 div $2,$4
-mov $4,35
-add $2,$4
+add $2,35
 mov $4,$2
 mov $3,$4
 mov $0,$3

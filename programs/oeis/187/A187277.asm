@@ -6,8 +6,7 @@ add $4,2
 mov $3,$0
 mul $4,2
 mov $2,$4
-mov $0,2
-bin $2,$0
+bin $2,2
 mul $2,$3
 mov $1,$2
 add $1,1

@@ -3,12 +3,11 @@
 
 mov $4,$0
 mov $5,$0
-mov $0,2
 mul $4,$5
-div $4,$0
+div $4,2
 mod $4,4
-mov $2,$0
-mul $5,$2
+mov $2,2
+mul $5,2
 lpb $2,1
   lpb $4,1
     mov $2,8

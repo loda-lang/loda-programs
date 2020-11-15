@@ -8,8 +8,7 @@ mov $5,$0
 mov $7,$0
 add $7,$5
 mul $7,2
-mov $5,1
-mov $3,$5
+mov $3,1
 sub $3,$7
 mov $1,$3
 add $1,13

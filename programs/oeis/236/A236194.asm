@@ -8,8 +8,6 @@ mul $5,$2
 mov $4,$3
 add $5,4
 bin $5,$4
-mov $4,4
-add $5,$4
-add $5,4
+add $5,8
 mov $1,$5
 sub $1,8

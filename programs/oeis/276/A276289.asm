@@ -11,7 +11,6 @@ mul $0,$2
 add $3,1
 mov $4,$3
 mul $0,$4
-mov $4,5
-mul $0,$4
+mul $0,5
 mov $1,$0
 div $1,80

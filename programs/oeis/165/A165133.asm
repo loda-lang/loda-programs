@@ -7,9 +7,8 @@ add $4,4
 mov $0,2
 mov $3,$4
 pow $0,$3
-mov $2,2
 add $0,8
-bin $0,$2
+bin $0,2
 mov $1,$0
 sub $1,271
 div $1,24

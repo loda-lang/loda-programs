@@ -4,9 +4,8 @@
 mov $3,$0
 sub $0,$3
 mov $1,$3
-mov $3,4
 add $0,$1
-add $1,$3
+add $1,4
 bin $1,2
 lpb $0,1
   sub $0,1
