@@ -1204,6 +1204,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A119282](http://oeis.org/A119282) ([L11 program](119/A119282.asm)): Alternating sum of the first n Fibonacci numbers.
 * [A119327](http://oeis.org/A119327) ([L24 program](119/A119327.asm)): Expansion of (1-4x+12x^2-16x^3+8x^4)/(1-x)^5.
 * [A119332](http://oeis.org/A119332) ([L19 program](119/A119332.asm)): Expansion of (1+x)/(1-2x^4).
+* [A119346](http://oeis.org/A119346) ([L12 program](119/A119346.asm)): Sequence of nim-values for the game in which two players alternately cut off one inch or root two inches from a piece of string of length n. Player who runs out of string loses.
 * [A119412](http://oeis.org/A119412) ([L03 program](119/A119412.asm)): a(n) = n*(n+11).
 * [A119413](http://oeis.org/A119413) ([L03 program](119/A119413.asm)): 16*n-12.
 * [A119476](http://oeis.org/A119476) ([L15 program](119/A119476.asm)): a(1)=1, a(n)=a((n+1)/2)+1 if n is odd, a(n)=a(n/2)+2 if n is even.
@@ -3396,6 +3397,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152997](http://oeis.org/A152997) ([L04 program](152/A152997.asm)): Twice 13-gonal numbers: a(n) = n*(11*n - 9).
 * [A153010](http://oeis.org/A153010) ([L13 program](153/A153010.asm)): Indices of A153007 where the entry equals zero.
 * [A153026](http://oeis.org/A153026) ([L25 program](153/A153026.asm)): a(1)=0, a(n) = n^3 - a(n-1).
+* [A153036](http://oeis.org/A153036) ([L101 program](153/A153036.asm)): Integer parts of the full Stern-Brocot tree.
 * [A153037](http://oeis.org/A153037) ([L05 program](153/A153037.asm)): a(n) = 2*n^2 + 16*n + 23.
 * [A153056](http://oeis.org/A153056) ([L06 program](153/A153056.asm)): a(0)=2, a(n) = n^2+a(n-1).
 * [A153057](http://oeis.org/A153057) ([L06 program](153/A153057.asm)): a(0)=3; a(n) = n^2 + a(n-1) for n>0.
@@ -4654,6 +4656,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166154](http://oeis.org/A166154) ([L06 program](166/A166154.asm)): 7*n*(n+1)/2 - 5.
 * [A166250](http://oeis.org/A166250) ([L20 program](166/A166250.asm)): a(n) = n-1 plus the largest proper divisor of n.
 * [A166304](http://oeis.org/A166304) ([L14 program](166/A166304.asm)): Third trisection of A022998.
+* [A166314](http://oeis.org/A166314) ([L83 program](166/A166314.asm)): Number of 1's in binary expansion of A000124(n).
 * [A166336](http://oeis.org/A166336) ([L16 program](166/A166336.asm)): Expansion of (1 - 4*x + 7*x^2 - 4*x^3 + x^4)/(1 - 7*x + 17*x^2 - 17*x^3 + 7*x^4 - x^5).
 * [A166350](http://oeis.org/A166350) ([L13 program](166/A166350.asm)): Table T(n,m) = m! read by rows.
 * [A166444](http://oeis.org/A166444) ([L04 program](166/A166444.asm)): a(0) = 0, a(1) = 1 and for n > 1, a(n) = sum of all previous terms.
@@ -6797,6 +6800,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192960](http://oeis.org/A192960) ([L33 program](192/A192960.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192962](http://oeis.org/A192962) ([L30 program](192/A192962.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192963](http://oeis.org/A192963) ([L13 program](192/A192963.asm)): Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
+* [A192966](http://oeis.org/A192966) ([L104 program](192/A192966.asm)): Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192969](http://oeis.org/A192969) ([L13 program](192/A192969.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192971](http://oeis.org/A192971) ([L52 program](192/A192971.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192973](http://oeis.org/A192973) ([L11 program](192/A192973.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
@@ -6966,7 +6970,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195018](http://oeis.org/A195018) ([L05 program](195/A195018.asm)): a(n) = n*(10*n-3).
 * [A195019](http://oeis.org/A195019) ([L10 program](195/A195019.asm)): Multiples of 3 and of 4 interleaved: a(2*n-1) = 3*n, a(2*n) = 4*n.
 * [A195020](http://oeis.org/A195020) ([L12 program](195/A195020.asm)): Vertex number of a square spiral in which the length of the first two edges are the legs of the primitive Pythagorean triple [3, 4, 5]. The edges of the spiral have length A195019.
-* [A195021](http://oeis.org/A195021) ([L16 program](195/A195021.asm)): a(n) = n*(14*n - 11).
+* [A195021](http://oeis.org/A195021) ([L11 program](195/A195021.asm)): a(n) = n*(14*n - 11).
 * [A195023](http://oeis.org/A195023) ([L06 program](195/A195023.asm)): a(n) = 14*n^2 - 4*n.
 * [A195024](http://oeis.org/A195024) ([L04 program](195/A195024.asm)): a(n) = n*(14*n - 1).
 * [A195025](http://oeis.org/A195025) ([L05 program](195/A195025.asm)): a(n) = n*(14*n + 3).

@@ -1,84 +1,15 @@
 ; A333355: Number of bits in binary expansion of n minus the number of digits of n when written in base 3.
 ; 0,1,0,1,1,1,1,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2
 
-mov $7,$0
-mov $6,1
-mov $2,1
 add $0,1
-mov $7,1
-add $8,$2
-trn $2,$7
-mov $4,$7
-sub $7,$7
 mov $3,$0
-div $8,2
-mul $6,$3
-mul $6,$4
-mov $8,$7
-mov $4,1
-mov $0,$6
-add $5,2
 log $3,2
-add $1,$3
-mov $2,2
-trn $4,$1
+mov $1,$3
 lpb $0,1
-  trn $4,1
-  mov $7,$2
-  mov $7,3
-  add $3,$3
-  trn $6,$2
-  sub $8,1
-  sub $6,2
-  mov $6,$2
-  mov $2,$5
-  sub $4,6
-  add $4,$8
-  mov $5,$8
-  clr $6,2
-  mov $4,$5
-  sub $1,$8
+  sub $4,1
+  sub $1,$4
   mov $2,3
-  add $2,$6
-  mul $3,2
-  div $4,2
   div $0,$2
-  mov $2,1
-  add $8,$3
-  add $7,$1
-  mov $3,$8
-  mov $8,4
-  mov $8,2
+  mov $4,2
 lpe
-mov $0,1
-sub $7,$2
-add $6,$1
-add $7,1
-add $4,1
-mul $0,$0
-add $3,2
-mov $5,$5
-sub $0,$6
-mov $6,1
-sub $0,9
-mov $2,1
-mov $8,1
-mul $0,3
-add $2,3
-mov $4,$2
-add $4,$4
-mov $0,$5
-div $3,$1
-add $2,1
-sub $3,$7
-add $8,$8
-mov $4,$1
-div $7,2
-add $3,1
-add $2,1
-mov $4,3
-add $0,$2
-sub $3,$1
-mov $7,2
-mov $4,4
 sub $1,1

@@ -1534,6 +1534,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014033](http://oeis.org/A014033) ([L12 program](014/A014033.asm)): Inverse of 24th cyclotomic polynomial.
 * [A014041](http://oeis.org/A014041) ([L06 program](014/A014041.asm)): Inverse of 32nd cyclotomic polynomial.
 * [A014045](http://oeis.org/A014045) ([L12 program](014/A014045.asm)): Inverse of 36th cyclotomic polynomial.
+* [A014081](http://oeis.org/A014081) ([L71 program](014/A014081.asm)): a(n) = number of occurrences of '11' in binary expansion of n.
 * [A014105](http://oeis.org/A014105) ([L03 program](014/A014105.asm)): Second hexagonal numbers: a(n) = n*(2*n + 1).
 * [A014106](http://oeis.org/A014106) ([L04 program](014/A014106.asm)): a(n) = n*(2*n + 3).
 * [A014107](http://oeis.org/A014107) ([L04 program](014/A014107.asm)): a(n) = n*(2*n-3).
@@ -4876,11 +4877,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A050917](http://oeis.org/A050917) ([L04 program](050/A050917.asm)): a(n) = n*6^n + 1.
 * [A051032](http://oeis.org/A051032) ([L06 program](051/A051032.asm)): Summatory Rudin-Shapiro sequence for 2^(n-1).
 * [A051033](http://oeis.org/A051033) ([L14 program](051/A051033.asm)): a(n) = binomial(n, floor(n/3)).
-* [A051036](http://oeis.org/A051036) ([L12 program](051/A051036.asm)): a(n) = binomial(n, floor(n/4)).
+* [A051036](http://oeis.org/A051036) ([L03 program](051/A051036.asm)): a(n) = binomial(n, floor(n/4)).
 * [A051039](http://oeis.org/A051039) ([L11 program](051/A051039.asm)): 4-Stohr sequence.
 * [A051040](http://oeis.org/A051040) ([L23 program](051/A051040.asm)): 5-Stohr sequence.
 * [A051049](http://oeis.org/A051049) ([L05 program](051/A051049.asm)): Number of moves needed to solve an (n+1)-ring baguenaudier if two simultaneous moves of the two end rings are counted as one.
-* [A051052](http://oeis.org/A051052) ([L05 program](051/A051052.asm)): a(n) = binomial(n, floor(n/5)).
+* [A051052](http://oeis.org/A051052) ([L03 program](051/A051052.asm)): a(n) = binomial(n, floor(n/5)).
 * [A051053](http://oeis.org/A051053) ([L05 program](051/A051053.asm)): a(n) = binomial(n, floor(n/6)).
 * [A051062](http://oeis.org/A051062) ([L03 program](051/A051062.asm)): a(n) = 16*n + 8.
 * [A051063](http://oeis.org/A051063) ([L05 program](051/A051063.asm)): 27*n+9 or 27*n+18.
@@ -5455,6 +5456,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A057428](http://oeis.org/A057428) ([L02 program](057/A057428.asm)): Sign(-n): a(n) = 1 if -n > 0, = -1 if -n < 0, = 0 if n = 0.
 * [A057524](http://oeis.org/A057524) ([L32 program](057/A057524.asm)): Number of 3 x n binary matrices without unit columns up to row and column permutations.
 * [A057525](http://oeis.org/A057525) ([L13 program](057/A057525.asm)): Number of applications of f to reduce n to 1, where f(k) is the integer among k/2,(k+1)/4, (k+3)/4.
+* [A057526](http://oeis.org/A057526) ([L25 program](057/A057526.asm)): Number of applications of f to reduce n to 1, where f(k) is the integer among k/2,(k-1)/4, (k+1)/4.
 * [A057538](http://oeis.org/A057538) ([L34 program](057/A057538.asm)): Birthday set of order 5: numbers congruent to +/-1 modulo 2, 3, 4 and 5.
 * [A057543](http://oeis.org/A057543) ([L07 program](057/A057543.asm)): Maximum cycle length (orbit size) in the rotation permutation of 2n non-crossing handshakes.
 * [A057544](http://oeis.org/A057544) ([L07 program](057/A057544.asm)): Maximum cycle length (orbit size) in the rotation permutation of n+2 side polygon triangularizations.
@@ -5747,7 +5749,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061402](http://oeis.org/A061402) ([L12 program](061/A061402.asm)): a(n) = floor(n*sqrt(e)).
 * [A061418](http://oeis.org/A061418) ([L07 program](061/A061418.asm)): a(n) = floor(a(n-1)*3/2) with a(1) = 2.
 * [A061419](http://oeis.org/A061419) ([L16 program](061/A061419.asm)): a(n) = ceiling(a(n-1)*3/2) with a(1) = 1.
-* [A061420](http://oeis.org/A061420) ([L08 program](061/A061420.asm)): a(n) = a(ceiling((n-1)*2/3)) + 1 with a(0) = 0.
+* [A061420](http://oeis.org/A061420) ([L10 program](061/A061420.asm)): a(n) = a(ceiling((n-1)*2/3)) + 1 with a(0) = 0.
 * [A061462](http://oeis.org/A061462) ([L09 program](061/A061462.asm)): The exact power of 2 that divides the n-th Bell number (A000110). Has period 12.
 * [A061479](http://oeis.org/A061479) ([L51 program](061/A061479.asm)): Smallest number m such that first digit - second digit + third digit - fourth digit ... (of m) = n.
 * [A061486](http://oeis.org/A061486) ([L09 program](061/A061486.asm)): Let the number of digits in n be k; a(n) = sum of the products of the digits of n taken r at a time where r ranges from 1 to k.
@@ -7226,6 +7228,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080956](http://oeis.org/A080956) ([L03 program](080/A080956.asm)): a(n) = (n+1)*(2-n)/2.
 * [A080957](http://oeis.org/A080957) ([L09 program](080/A080957.asm)): Expansion of (5 - 9*x + 6*x^2)/(1-x)^4.
 * [A080960](http://oeis.org/A080960) ([L12 program](080/A080960.asm)): Third binomial transform of A010685 (period 2: repeat 1,4).
+* [A080961](http://oeis.org/A080961) ([L105 program](080/A080961.asm)): Fourth binomial transform of A010686 (period 2: repeat 1,5).
 * [A080978](http://oeis.org/A080978) ([L30 program](080/A080978.asm)): a(n) = 2*A006046(n) + 1.
 * [A080995](http://oeis.org/A080995) ([L13 program](080/A080995.asm)): Characteristic function of generalized pentagonal numbers A001318.
 * [A081002](http://oeis.org/A081002) ([L09 program](081/A081002.asm)): a(n) = Fibonacci(4n) + 1, or Fibonacci(2n-1)*Lucas(2n+1).
@@ -7871,6 +7874,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087447](http://oeis.org/A087447) ([L10 program](087/A087447.asm)): a(0) = a(1) = 1; for n>1, a(n) = (n+2)*2^(n-2).
 * [A087448](http://oeis.org/A087448) ([L10 program](087/A087448.asm)): 3^(n-1)(n+3)/2-(n-1)/2.
 * [A087449](http://oeis.org/A087449) ([L14 program](087/A087449.asm)): a(n) = n * 4^(n-1) + (2*4^n + 1) / 3.
+* [A087451](http://oeis.org/A087451) ([L103 program](087/A087451.asm)): G.f.: (2-x)/((1+2x)(1-3x)); e.g.f.: exp(3x)+exp(-2x); a(n)=3^n+(-2)^n.
 * [A087452](http://oeis.org/A087452) ([L11 program](087/A087452.asm)): G.f.: (2-x)/((1+3x)(1-4x)); e.g.f.: exp(4x) + exp(-3x); a(n) = 4^n + (-3)^n.
 * [A087455](http://oeis.org/A087455) ([L22 program](087/A087455.asm)): Expansion of (1 - x)/(1 - 2*x + 3*x^2) in powers of x.
 * [A087475](http://oeis.org/A087475) ([L03 program](087/A087475.asm)): a(n) = n^2 + 4.

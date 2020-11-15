@@ -1582,7 +1582,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239683](http://oeis.org/A239683) ([L07 program](239/A239683.asm)): Number of digits in decimal expansion of n^5.
 * [A239684](http://oeis.org/A239684) ([L14 program](239/A239684.asm)): Number of digits in the decimal expansion of n^4.
 * [A239745](http://oeis.org/A239745) ([L08 program](239/A239745.asm)): a(n) = (3*2^(n+2) + n*(n+5))/2 - 6.
-* [A239767](http://oeis.org/A239767) ([L12 program](239/A239767.asm)): Degrees of polynomial on the fermionic side of the finite generalization of identity 46 from Slater's List.
+* [A239767](http://oeis.org/A239767) ([L16 program](239/A239767.asm)): Degrees of polynomial on the fermionic side of the finite generalization of identity 46 from Slater's List.
 * [A239794](http://oeis.org/A239794) ([L14 program](239/A239794.asm)): 5*n^2 + 4*n - 15.
 * [A239796](http://oeis.org/A239796) ([L14 program](239/A239796.asm)): 7n^2 + 2n - 15.
 * [A239844](http://oeis.org/A239844) ([L29 program](239/A239844.asm)): Number of n X 2 0..3 arrays with no element equal to one plus the sum of elements to its left or one plus the sum of elements above it or two plus the sum of the elements diagonally to its northwest, modulo 4.
@@ -2718,8 +2718,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267036](http://oeis.org/A267036) ([L07 program](267/A267036.asm)): Decimal representation of the n-th iteration of the "Rule 85" elementary cellular automaton starting with a single ON (black) cell.
 * [A267043](http://oeis.org/A267043) ([L07 program](267/A267043.asm)): Middle column of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267045](http://oeis.org/A267045) ([L14 program](267/A267045.asm)): Decimal representation of the middle column of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
-* [A267046](http://oeis.org/A267046) ([L60 program](267/A267046.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
-* [A267047](http://oeis.org/A267047) ([L73 program](267/A267047.asm)): Total number of ON (black) cells after n iterations of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
+* [A267046](http://oeis.org/A267046) ([L10 program](267/A267046.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
+* [A267047](http://oeis.org/A267047) ([L21 program](267/A267047.asm)): Total number of ON (black) cells after n iterations of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267048](http://oeis.org/A267048) ([L13 program](267/A267048.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267049](http://oeis.org/A267049) ([L17 program](267/A267049.asm)): Total number of OFF (white) cells after n iterations of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267052](http://oeis.org/A267052) ([L16 program](267/A267052.asm)): Decimal representation of the n-th iteration of the "Rule 92" elementary cellular automaton starting with a single ON (black) cell.
@@ -3288,6 +3288,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276856](http://oeis.org/A276856) ([L357 program](276/A276856.asm)): First differences of the Beatty sequence A022840 for sqrt(6).
 * [A276857](http://oeis.org/A276857) ([L30 program](276/A276857.asm)): First differences of the Beatty sequence A022841 for sqrt(7).
 * [A276858](http://oeis.org/A276858) ([L30 program](276/A276858.asm)): First differences of the Beatty sequence A022842 for sqrt(8).
+* [A276859](http://oeis.org/A276859) ([L110 program](276/A276859.asm)): First differences of the Beatty sequence A022843 for e.
 * [A276862](http://oeis.org/A276862) ([L32 program](276/A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
 * [A276864](http://oeis.org/A276864) ([L45 program](276/A276864.asm)): First differences of the Beatty sequence A001952 for 2 + sqrt(2).
 * [A276865](http://oeis.org/A276865) ([L33 program](276/A276865.asm)): First differences of the Beatty sequence A003512 for 2 + sqrt(3).
@@ -3568,6 +3569,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A284624](http://oeis.org/A284624) ([L23 program](284/A284624.asm)): Positions of 1 in A284749.
 * [A284625](http://oeis.org/A284625) ([L17 program](284/A284625.asm)): Positions of 2 in A284749.
 * [A284647](http://oeis.org/A284647) ([L11 program](284/A284647.asm)): Number of nonisomorphic unfoldings in an n-gonal Archimedean antiprism.
+* [A284676](http://oeis.org/A284676) ([L133 program](284/A284676.asm)): Positions of 1 in A284674; complement of A284675.
+* [A284678](http://oeis.org/A284678) ([L109 program](284/A284678.asm)): Positions of 0 in A284677; complement of A284679.
 * [A284723](http://oeis.org/A284723) ([L27 program](284/A284723.asm)): Smallest odd prime that is relatively prime to n.
 * [A284850](http://oeis.org/A284850) ([L30 program](284/A284850.asm)): a(n) = 4^n - 3^n - n.
 * [A284948](http://oeis.org/A284948) ([L07 program](284/A284948.asm)): 1-limiting word of the morphism 0 -> 10, 1 -> 00

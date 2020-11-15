@@ -1,104 +1,15 @@
 ; A153036: Integer parts of the full Stern-Brocot tree.
 ; 0,1,0,2,0,0,1,3,0,0,0,0,1,1,2,4,0,0,0,0,0,0,0,0,1,1,1,1,2,2,3,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,3,3,4,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1
 
-add $1,3
 mul $0,4
-add $2,$0
-add $7,$1
-mov $9,1
-add $9,1
-sub $2,$7
-mul $1,2
-add $1,$2
-add $5,1
-mov $1,$5
-mov $1,1
-trn $9,$9
-mov $10,$2
-mov $6,$9
-sub $7,$9
-mov $10,$5
-sub $1,$5
-mov $9,1
-mov $7,1
-mov $5,$5
-sub $10,1
-mul $5,$9
-sub $0,$1
-mul $1,$5
-mov $1,$7
-add $10,1
-add $7,$9
-add $9,3
-mov $4,6
-mov $1,$1
-add $0,1
-sub $7,1
-mov $2,$10
 lpb $0,1
-  mov $5,1
-  sub $9,$5
-  mul $4,$4
-  mov $9,1
-  sub $6,$5
-  sub $7,$4
-  mov $7,2
-  mov $8,$9
-  mov $10,1
-  add $6,$0
-  sub $6,4
-  div $2,6
-  add $3,$5
-  mov $10,$7
-  sub $9,4
-  mov $7,1
-  mov $7,3
-  cmp $9,$4
-  mov $2,192
-  add $6,$7
-  add $2,4
-  sub $5,1
-  mov $1,1
-  mov $5,$1
-  add $2,9
-  mul $7,$0
+  mov $2,1
+  add $3,$2
   div $0,2
-  add $5,3
+  add $2,3
   sub $0,1
-  trn $7,$2
-  add $8,$2
-  sub $6,2
-  add $4,2
-  mov $8,1
-  add $1,1
-  div $0,$8
-  mul $9,$1
-  mov $6,$2
-  mov $10,$5
-  add $5,$0
-  mov $9,1
-  mov $2,$4
-  add $6,$5
-  trn $10,1
-  pow $9,3
-  add $10,$5
-  sub $6,$4
-  mov $8,$7
-  sub $4,$2
-  sub $7,$9
-  mov $1,0
-  add $9,3
-  sub $8,5
-  sub $9,1
-  mod $5,2
-  sub $1,$7
-  add $2,$6
-  mul $2,$6
-  add $8,$0
-  mul $3,$5
-  add $8,$9
-  mov $7,$6
-  add $1,1
+  add $2,$0
+  mod $2,2
+  mul $3,$2
 lpe
-mul $4,2
 mov $1,$3
