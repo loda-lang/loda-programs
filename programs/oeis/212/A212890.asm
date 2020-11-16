@@ -15,12 +15,10 @@ lpb $14,1
     mov $0,$9
     sub $0,$11
     mov $8,$0
-    mov $6,1
     mul $8,6
-    mov $5,8
-    sub $5,$6
+    mov $5,7
     pow $8,2
-    add $6,6
+    mov $6,7
     add $6,$8
     gcd $0,2
     lpb $0,1

@@ -5,20 +5,16 @@ mov $2,1
 lpb $0,1
   mov $4,$0
   add $4,$2
-  mov $3,4
   trn $4,5
-  mov $0,2
-  trn $2,$3
-  sub $0,1
-  add $2,$0
-  add $0,1
-  add $4,$0
+  trn $2,4
+  add $2,1
+  add $4,2
   add $2,2
   gcd $4,$2
-  mov $5,1
-  log $0,$0
+  mov $3,1
+  mov $0,1
 lpe
-add $4,$5
+add $4,$3
 mov $1,$4
 div $1,2
 add $1,1

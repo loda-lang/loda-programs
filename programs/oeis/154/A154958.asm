@@ -4,17 +4,16 @@
 mov $1,$0
 gcd $0,2
 mov $2,$0
-mov $6,9
-add $6,$2
+mov $5,9
+add $5,$2
 mov $4,$1
-add $6,$4
-sub $6,9
-mul $6,$2
+add $5,$4
+sub $5,9
+mul $5,$2
 lpb $0,1
-  add $6,4
-  mov $3,$6
+  add $5,4
+  mov $3,$5
   trn $0,6
 lpe
-mov $5,6
-div $3,$5
+div $3,6
 mov $1,$3

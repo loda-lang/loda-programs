@@ -23,10 +23,8 @@ lpb $97,1
     mul $2,$1
     mov $3,$2
     sub $3,1
-    mov $0,1
-    mul $0,2
     mov $4,$3
-    trn $4,$0
+    trn $4,2
     div $4,3
     mul $4,4
     add $4,2

@@ -14,11 +14,10 @@ lpb $8,1
     mov $6,$0
     add $6,$0
     mov $0,$6
-    mov $1,1
     add $0,3
     mov $3,$6
     mov $2,$0
-    mov $4,$1
+    mov $4,1
     lpb $2,1
       add $2,$3
       div $0,$0

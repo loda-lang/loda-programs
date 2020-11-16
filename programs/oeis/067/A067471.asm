@@ -6,26 +6,24 @@ mov $0,4
 mul $0,$1
 mov $3,5
 mov $5,$1
-mov $7,1
+mov $2,1
 mov $6,15
 lpb $0,1
-  mov $2,1
-  sub $6,$7
-  mul $2,2
-  bin $5,$2
+  sub $6,$2
+  bin $5,2
   trn $5,$3
   add $5,$0
   mul $5,2
   add $5,6
   mul $6,$5
   mov $4,$6
-  mul $7,$5
+  mul $2,$5
   mov $0,$3
   sub $0,1
-  add $7,1
+  add $2,1
   sub $4,$5
   mov $3,1
-  mul $3,$7
+  mul $3,$2
   add $3,11
   div $4,$3
   sub $4,$0

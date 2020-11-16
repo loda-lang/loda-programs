@@ -24,12 +24,10 @@ lpb $21,1
       add $0,$14
       sub $0,1
       bin $0,2
-      mov $1,8
-      mov $2,$1
+      mov $2,8
       add $2,$0
       mul $2,$0
-      mov $7,2
-      mul $2,$7
+      mul $2,2
       gcd $4,2
       add $4,1
       add $2,$4

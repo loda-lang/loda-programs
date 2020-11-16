@@ -16,26 +16,19 @@ lpb $0,1
   add $0,$4
   add $3,$7
   add $0,$7
-  mov $2,6
   add $4,$3
   sub $0,7
   mov $7,2
-  mov $5,3
   mov $1,$4
   add $0,$4
-  fac $2
-  mul $5,$2
-  log $5,5
-  mov $3,1
+  mov $5,4
   gcd $7,$1
-  add $3,$5
   add $0,4
   mod $0,3
   trn $4,7
-  add $3,8
+  mov $3,13
   add $3,$7
-  add $0,$5
-  sub $0,1
+  add $0,3
 lpe
 add $0,$5
 mov $1,$0

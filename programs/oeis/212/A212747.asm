@@ -26,8 +26,7 @@ lpb $17,1
       sub $0,$11
       div $0,2
       lpb $0,1
-        mov $5,2
-        mod $0,$5
+        mod $0,2
         mov $3,$0
         add $3,2
         fac $3

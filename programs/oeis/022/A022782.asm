@@ -27,8 +27,7 @@ lpb $22,1
       mov $4,1
       pow $0,2
       mov $3,$1
-      mov $2,8
-      mov $1,$2
+      mov $1,8
       trn $3,$0
       lpb $0,13
         trn $0,$3

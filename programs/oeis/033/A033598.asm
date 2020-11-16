@@ -17,8 +17,7 @@ sub $1,$3
 add $2,$4
 add $1,$2
 add $3,1
-mov $0,4
-mod $1,$0
+mod $1,4
 add $3,$1
 mov $1,$3
 mov $6,$5

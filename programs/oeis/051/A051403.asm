@@ -18,9 +18,8 @@ lpb $10,1
     lpb $0,1
       mov $3,$0
       mov $1,1
-      mov $4,2
       add $1,$3
-      div $1,$4
+      div $1,2
       mov $3,$1
       fac $3
       mov $1,$3

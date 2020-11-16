@@ -10,10 +10,7 @@ add $0,$4
 sub $0,1
 add $0,$4
 sub $0,$4
-mov $5,2
-mul $5,5
-mov $2,$5
-sub $2,3
+mov $2,7
 gcd $2,$0
 div $0,$2
 mov $3,$0

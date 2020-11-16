@@ -16,11 +16,6 @@ lpb $14,1
     trn $11,1
     mov $0,$9
     sub $0,$11
-    mov $3,2
-    mov $5,$3
-    sub $5,1
-    add $0,1
-    sub $0,$5
     mov $7,$0
     add $0,1
     mov $8,$0

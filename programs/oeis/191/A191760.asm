@@ -10,15 +10,11 @@ sub $5,3
 mul $5,$2
 mov $6,7
 lpb $0,1
-  mov $7,2
-  mul $7,2
-  mov $3,$7
+  mov $3,4
   sub $6,1
   mul $3,$6
   mod $5,9
-  add $3,2
-  mul $7,2
-  sub $3,$7
+  sub $3,6
   add $5,$3
   add $5,1
   mov $0,1

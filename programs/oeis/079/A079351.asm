@@ -9,7 +9,7 @@ lpb $4,1
   mov $0,$5
   sub $0,$4
   mov $2,2
-  add $3,$2
+  add $3,2
   lpb $0,1
     sub $0,1
     bin $2,3

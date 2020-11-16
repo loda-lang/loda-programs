@@ -12,15 +12,8 @@ div $1,$6
 mul $5,$1
 add $5,3
 lpb $0,1
-  mov $1,5
-  sub $1,9
-  sub $5,$1
-  sub $5,1
-  add $1,2
-  mov $0,8
-  sub $5,$1
-  sub $5,1
-  cmp $0,2
+  sub $5,-4
+  mov $0,0
 lpe
 mov $1,$5
 sub $1,6

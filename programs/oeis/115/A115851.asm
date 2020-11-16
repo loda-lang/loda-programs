@@ -6,17 +6,15 @@ mov $2,2
 pow $2,$0
 lpb $0,1
   add $2,$1
-  mov $1,15
-  mov $3,$1
   trn $1,$2
-  add $1,$3
+  add $1,15
   mod $0,2
 lpe
 div $2,$1
 mov $1,$2
-mov $4,$1
-add $4,5
-mov $0,$4
+mov $3,$1
+add $3,5
+mov $0,$3
 add $0,8
 mov $1,$0
 sub $1,13

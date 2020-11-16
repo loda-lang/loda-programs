@@ -8,16 +8,15 @@ pow $0,2
 lpb $0,1
   sub $0,1
   mov $6,$0
-  mov $4,2
   add $2,$3
-  sub $0,$4
+  sub $0,2
   mul $2,$6
   pow $2,2
   mov $5,$0
   mul $2,$5
   mov $0,1
-  mov $7,$2
+  mov $4,$2
 lpe
-add $1,$7
+add $1,$4
 div $1,300
 add $1,1

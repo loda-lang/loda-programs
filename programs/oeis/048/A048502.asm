@@ -6,13 +6,12 @@ lpb $0,1
   add $1,$6
   add $3,$1
   add $2,$3
-  mov $1,2
   add $5,$2
   sub $0,1
   mov $6,$0
   mov $4,$5
   sub $3,$6
-  add $1,3
+  mov $1,5
   add $1,$3
   sub $5,$4
   mul $2,2

@@ -19,18 +19,10 @@ lpb $11,1
   mul $2,$4
   add $8,$4
   lpb $0,1
-    mov $5,10
-    mov $0,1
-    mov $4,$0
-    add $6,$4
-    mul $5,2
+    add $6,1
     mov $1,$6
-    mul $5,2
-    add $0,$5
     sub $8,$1
-    mul $0,2
-    div $0,10
-    mul $0,5
+    mov $0,40
     mov $2,$8
     add $3,$2
     pow $3,$8

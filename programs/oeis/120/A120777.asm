@@ -12,13 +12,11 @@ lpb $0,1
   sub $0,1
 lpe
 mov $5,$2
-mov $3,2
-mov $7,1
-add $7,$5
-mov $0,1
-sub $7,$0
-mov $4,$3
-pow $4,$7
+mov $3,1
+add $3,$5
+sub $3,1
+mov $4,2
+pow $4,$3
 mov $1,$4
 sub $1,254
 div $1,256

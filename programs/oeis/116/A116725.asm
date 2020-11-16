@@ -23,15 +23,13 @@ lpb $16,1
       mov $0,$7
       add $0,$9
       mov $1,$0
-      mov $0,2
-      mov $2,2
       add $5,$1
-      mov $3,$2
+      mov $3,2
       pow $5,2
       mov $4,$1
-      mov $1,$2
+      mov $1,2
       add $1,$5
-      trn $4,$0
+      trn $4,2
       add $4,1
       mov $0,$1
       pow $3,$4

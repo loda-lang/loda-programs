@@ -20,7 +20,7 @@ lpb $14,1
     mov $1,$3
     mov $5,3
     gcd $1,2
-    mov $3,$5
+    mov $3,3
     sub $5,$1
     add $3,$5
     mul $3,$7

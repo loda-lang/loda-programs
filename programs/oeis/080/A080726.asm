@@ -13,11 +13,10 @@ lpb $10,1
     lpb $2,2
       lpb $3,1
         mov $2,$1
-        mov $1,1
         div $0,2
         mul $3,$0
         sub $3,1
-        trn $1,2
+        mov $1,0
       lpe
     lpe
     div $0,3

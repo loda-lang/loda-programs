@@ -40,8 +40,7 @@ lpb $23,1
           add $4,3
           mul $4,$0
           mov $2,$4
-          mov $3,1
-          sub $3,1
+          mov $3,0
           mov $6,2
           lpb $0,1
             add $2,$6

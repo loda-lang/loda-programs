@@ -12,7 +12,6 @@ lpe
 mov $1,$3
 mov $2,$1
 mul $2,2
-mov $3,5
-mod $2,$3
+mod $2,5
 mov $1,$2
 mul $1,2

@@ -28,15 +28,11 @@ lpb $14,1
       trn $3,6
       div $5,5
       add $5,3
-      mov $6,2
       add $3,2
       trn $5,$3
-      mov $1,4
-      sub $4,$1
-      add $4,$6
+      sub $4,2
       mov $3,6
-      mov $0,8
-      sub $0,7
+      mov $0,1
     lpe
     add $5,4
     sub $4,7

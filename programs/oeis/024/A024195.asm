@@ -20,15 +20,12 @@ lpb $17,1
     mul $8,$0
     add $8,$0
     lpb $0,1
-      mov $4,9
-      mov $0,$4
-      mov $1,2
-      mov $6,$1
+      mov $0,9
+      mov $6,2
     lpe
     add $6,$8
-    mov $1,6
     div $6,8
-    mul $6,$1
+    mul $6,6
     mov $1,$6
     mov $14,$13
     lpb $14,1

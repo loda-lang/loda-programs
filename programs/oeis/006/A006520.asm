@@ -8,11 +8,9 @@ lpb $2,1
   sub $2,1
   mov $0,$5
   sub $0,$2
-  mov $4,3
-  div $4,$4
+  mov $4,1
   add $4,$0
-  mov $1,8
-  pow $1,6
+  mov $1,262144
   mov $0,$4
   gcd $1,$0
   add $3,$1

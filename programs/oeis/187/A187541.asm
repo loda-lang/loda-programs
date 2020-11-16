@@ -5,11 +5,10 @@ mov $1,$0
 pow $0,2
 lpb $0,1
   mod $0,8
-  mov $3,$1
-  mov $2,4
+  mov $2,$1
   mul $1,8
-  div $0,$2
-  mul $0,$3
+  div $0,4
+  mul $0,$2
   pow $0,6
 lpe
 div $1,2

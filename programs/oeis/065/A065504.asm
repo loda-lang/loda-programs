@@ -30,11 +30,11 @@ lpb $17,1
         mov $7,$3
         add $0,$7
         mov $3,2
-        mov $7,$3
+        mov $7,2
         sub $0,4
         mov $6,$0
-        mov $2,$3
-        mov $5,$7
+        mov $2,2
+        mov $5,2
         lpb $5,1
           sub $5,$2
           add $6,4

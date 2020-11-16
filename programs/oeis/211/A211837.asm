@@ -12,12 +12,4 @@ lpb $0,1
   sub $1,4
   add $1,$4
 lpe
-mov $6,3
-add $1,6
-add $6,3
-mov $5,4
-sub $1,5
-add $6,$5
-add $1,10
-sub $6,1
-sub $1,$6
+add $1,2

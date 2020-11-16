@@ -9,10 +9,8 @@ lpb $2,1
   sub $0,$2
   mov $5,$0
   mul $5,$0
-  mov $7,7
-  add $5,$7
-  sub $5,3
-  div $5,$7
+  add $5,4
+  div $5,7
   lpb $0,1
     trn $0,5
     mov $4,$5

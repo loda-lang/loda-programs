@@ -3,15 +3,14 @@
 
 pow $0,2
 trn $0,4
-mov $3,8
+mov $2,8
 lpb $0,1
-  add $3,16
-  trn $1,$3
+  add $2,16
+  trn $1,$2
   sub $0,1
-  trn $0,$3
-  mov $2,1
-  add $1,$2
+  trn $0,$2
+  add $1,1
   add $0,$1
 lpe
-mov $1,$3
+mov $1,$2
 div $1,16

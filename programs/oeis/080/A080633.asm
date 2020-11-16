@@ -13,7 +13,7 @@ lpb $13,1
   lpb $2,1
     clr $5,6
     mov $3,1
-    mov $1,$3
+    mov $1,1
     add $6,3
     lpb $6,1
       mov $4,$2

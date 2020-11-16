@@ -4,10 +4,9 @@
 mov $2,$0
 mul $2,11
 lpb $2,1
-  mov $4,2
   add $3,2
   mul $2,2
-  div $2,$4
+  div $2,2
   sub $2,$3
   trn $2,1
 lpe

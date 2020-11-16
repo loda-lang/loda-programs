@@ -19,16 +19,12 @@ lpb $13,1
   mov $3,$9
   sub $5,2
   div $9,37
-  mov $6,4
-  mul $6,2
   sub $3,3
-  add $6,2
   sub $5,2
-  add $3,$6
-  mov $8,$6
+  add $3,10
   add $3,$9
   add $3,$5
-  div $3,$8
+  div $3,10
   mov $1,$3
   add $12,$1
 lpe

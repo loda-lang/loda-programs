@@ -19,13 +19,11 @@ lpb $9,1
     mov $3,$4
     mov $6,7
     sub $3,2
-    mov $1,1
     sub $4,$0
     add $6,$4
     mov $2,$6
     add $2,$6
-    trn $1,7
-    add $1,2
+    mov $1,2
     add $5,2
     mov $6,$5
     add $3,1

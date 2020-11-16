@@ -20,9 +20,8 @@ lpb $0,1
   mul $3,$7
   gcd $0,2
   sub $0,1
-  mov $7,1
   mov $4,$3
-  mul $7,2
+  mov $7,2
 lpe
 mov $1,$4
 div $1,128

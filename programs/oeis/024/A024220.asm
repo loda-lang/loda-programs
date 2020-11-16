@@ -32,8 +32,7 @@ lpb $10,1
     mod $0,9
     mov $1,1
     lpb $0,1
-      mov $2,2
-      sub $4,$2
+      sub $4,2
       mov $2,$1
       add $4,$2
       mov $0,1

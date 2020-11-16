@@ -4,10 +4,9 @@
 lpb $0,1
   add $3,1
   add $2,$3
-  mov $3,6
   add $2,5
   mov $4,$2
-  sub $4,$3
+  sub $4,6
   mov $5,$2
   add $1,$2
   trn $4,2

@@ -13,8 +13,7 @@ lpb $0,1
   add $5,2
   mul $4,$5
   sub $0,1
-  mov $5,2
-  div $5,2
+  mov $5,1
 lpe
 add $4,1
 mov $2,$4

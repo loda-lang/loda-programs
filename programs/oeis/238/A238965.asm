@@ -12,7 +12,7 @@ lpb $0,1
   mul $1,$6
   mov $5,$4
   mov $0,2
-  add $5,$0
+  add $5,2
   add $0,$2
   add $3,21
   add $0,$1

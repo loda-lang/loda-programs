@@ -11,7 +11,7 @@ mov $0,$3
 mod $0,$1
 lpb $0,1
   mov $2,1
-  mov $0,$2
+  mov $0,1
 lpe
 mov $1,$2
 sub $1,1

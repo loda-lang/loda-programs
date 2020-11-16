@@ -3,11 +3,8 @@
 
 add $0,48
 lpb $0,1
-  mov $2,1
-  trn $2,2
-  add $2,7
   mul $0,2
-  mod $0,$2
+  mod $0,7
   sub $0,1
 lpe
 mov $2,$0

@@ -3,21 +3,18 @@
 
 mov $4,$0
 add $4,1
-mov $5,$4
-mul $5,2
-add $5,$0
+mov $2,$4
+mul $2,2
+add $2,$0
 mov $0,1
-mov $3,$5
+mov $3,$2
 add $0,$3
 gcd $0,2
-sub $5,$0
+sub $2,$0
 lpb $0,1
-  add $3,$5
+  add $3,$2
   add $3,3
-  mov $0,2
-  mul $0,8
-  mov $2,11
-  div $0,$2
+  mov $0,1
 lpe
 mov $1,$3
 div $1,2

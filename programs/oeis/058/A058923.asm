@@ -4,7 +4,7 @@
 mov $3,$0
 mov $1,$3
 pow $1,2
-mov $7,$0
+mov $2,$0
 mov $6,$3
 bin $6,4
 add $1,4
@@ -12,14 +12,13 @@ mov $0,5
 mov $5,1
 mul $6,2
 mov $3,7
-mul $5,$7
+mul $5,$2
 sub $6,$1
 lpb $0,1
-  mov $7,$6
-  add $5,$7
+  mov $2,$6
+  add $5,$2
   add $3,$5
-  mov $2,4
-  sub $0,$2
+  sub $0,4
 lpe
 mov $4,$3
 mov $1,$4

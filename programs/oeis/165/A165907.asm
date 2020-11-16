@@ -10,9 +10,8 @@ lpb $2,1
     mov $5,6
     add $0,$2
   lpe
-  mov $3,1
-  add $3,8
-  trn $2,$3
+  mov $3,9
+  trn $2,9
   lpb $5,1
     div $0,7
     add $2,5

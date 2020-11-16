@@ -16,7 +16,7 @@ lpb $7,1
     sub $0,1
     mov $8,$0
     mov $1,2
-    add $8,$1
+    add $8,2
     mov $3,$8
     pow $1,$3
     div $1,7

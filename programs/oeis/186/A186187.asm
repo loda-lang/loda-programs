@@ -5,20 +5,16 @@ lpb $0,1
   gcd $0,8
   mov $1,4
   add $1,$0
-  mov $0,3
-  sub $1,$0
-  mov $3,7
-  mul $3,2
-  mov $4,$3
-  sub $0,3
+  sub $1,3
+  mov $0,0
   add $1,5
-  add $4,2
+  mov $4,16
   mod $4,$1
 lpe
 mov $2,$4
 add $2,2
-add $5,$2
-mov $1,$5
+add $3,$2
+mov $1,$3
 sub $1,2
 div $1,2
 add $1,1

@@ -25,13 +25,11 @@ lpb $15,1
       mov $2,$0
       mov $1,$0
       add $1,1
-      mov $4,5
-      add $4,1
+      mov $4,6
       add $1,1
       mul $1,$2
       mov $0,1
-      mov $3,2
-      add $3,$0
+      mov $3,3
       lpb $0,1
         trn $0,$4
         add $3,$1

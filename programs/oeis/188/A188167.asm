@@ -10,9 +10,8 @@ mov $2,2
 mul $5,2
 lpb $2,1
   lpb $4,1
-    mov $2,8
     mov $4,$3
-    pow $2,2
+    mov $2,64
   lpe
   mul $5,4
   trn $2,7

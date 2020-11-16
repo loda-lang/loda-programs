@@ -23,7 +23,7 @@ lpb $9,1
     sub $6,$5
     lpb $6,1
       mov $2,1
-      gcd $3,$2
+      gcd $3,1
       sub $6,$3
       mov $1,2
     lpe

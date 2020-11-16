@@ -12,9 +12,8 @@ lpb $3,1
   mov $1,$2
   lpb $2,1
     lpb $5,1
-      mov $6,2
       trn $5,$1
-      pow $6,8
+      mov $6,256
     lpe
     sub $2,$2
     lpb $6,1

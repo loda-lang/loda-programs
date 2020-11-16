@@ -30,7 +30,7 @@ lpb $9,1
     lpb $5,1
       mov $6,$7
       mov $8,4
-      trn $5,$8
+      trn $5,4
     lpe
     mov $2,$0
     add $4,2

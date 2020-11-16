@@ -13,8 +13,7 @@ lpe
 add $2,1
 mov $0,$2
 add $2,$0
-mov $1,1
-add $2,$1
+add $2,1
 mov $1,$2
 sub $1,7
 div $1,2

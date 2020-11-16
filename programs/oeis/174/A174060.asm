@@ -12,14 +12,12 @@ lpb $8,1
   mov $10,10
   mov $2,$3
   lpb $2,1
-    mov $6,2
-    add $4,$6
+    add $4,2
     mov $2,$10
-    trn $6,7
     add $6,$7
     lpb $4,1
       mov $9,3
-      sub $4,$9
+      sub $4,3
     lpe
     sub $2,9
     mov $4,$9

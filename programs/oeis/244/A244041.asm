@@ -5,8 +5,7 @@ mov $5,$0
 lpb $4,3
   div $5,4
   sub $0,$5
-  mov $1,3
-  mul $5,$1
+  mul $5,3
 lpe
 mul $0,2
 mov $1,$0

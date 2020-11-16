@@ -17,12 +17,10 @@ lpb $3,1
     mov $5,1
     add $5,$0
     pow $5,5
-    mov $2,2
     mov $6,$5
-    add $2,7
     add $6,6
     mov $7,$6
-    add $2,7
+    mov $2,16
     add $2,$7
     mov $5,$2
     add $5,9

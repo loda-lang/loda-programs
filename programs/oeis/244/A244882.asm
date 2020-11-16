@@ -19,10 +19,9 @@ lpb $3,1
     mov $1,$0
     bin $1,2
     sub $0,1
-    mov $4,3
     pow $2,2
     sub $1,$2
-    mul $4,2
+    mov $4,6
     add $0,$2
     add $1,3
     add $2,$0

@@ -18,6 +18,4 @@ lpb $0,1
   add $1,$0
   sub $0,1
 lpe
-add $1,1
-mov $0,4
-sub $1,$0
+sub $1,3

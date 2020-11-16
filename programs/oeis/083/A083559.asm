@@ -14,10 +14,8 @@ add $2,1
 lpb $0,1
   mov $0,1
   sub $3,4
-  mov $1,30
   add $0,$3
-  mul $1,5
-  mul $0,$1
+  mul $0,150
 lpe
 mul $4,$7
 add $0,$2

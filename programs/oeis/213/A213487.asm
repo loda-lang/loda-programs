@@ -28,13 +28,11 @@ lpb $17,1
       mov $5,4
       lpb $0,1
         add $0,1
-        mov $6,3
         mov $3,$5
         mod $0,$3
         add $0,1
-        mov $8,1
-        div $0,$6
-        add $0,$8
+        div $0,3
+        add $0,1
         mov $5,1
       lpe
       add $3,1

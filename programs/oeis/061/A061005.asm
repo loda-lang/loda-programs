@@ -6,20 +6,17 @@ mov $2,9
 add $0,1
 lpb $0,1
   mod $2,$6
-  mov $7,$0
-  mov $1,3
+  mov $3,$0
   fac $2
   div $2,10
-  mov $3,4
-  pow $1,$3
-  pow $7,6
-  mov $4,$7
+  pow $3,6
+  mov $4,$3
   div $4,9
   add $4,4
   mul $2,2
   gcd $5,$2
   div $4,$5
-  trn $0,$1
+  trn $0,81
 lpe
 mov $1,$4
 div $1,2

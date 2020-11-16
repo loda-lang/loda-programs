@@ -12,8 +12,7 @@ mov $4,17
 lpb $0,1
   add $1,$4
   bin $3,5
-  mov $5,4
-  sub $1,$5
+  sub $1,4
   mul $1,$3
   sub $0,$0
   mov $3,6

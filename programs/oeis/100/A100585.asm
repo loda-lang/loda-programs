@@ -4,13 +4,12 @@
 mov $2,$0
 mov $1,3
 lpb $2,1
-  add $5,$1
+  add $4,$1
   mov $3,1
-  sub $5,2
-  lpb $5,1
-    sub $5,$3
-    mov $4,2
-    trn $5,$4
+  sub $4,2
+  lpb $4,1
+    sub $4,$3
+    trn $4,2
     add $1,1
   lpe
   sub $2,1

@@ -9,7 +9,6 @@ lpb $3,1
     trn $0,4
     add $1,$0
   lpe
-  mov $2,3
-  sub $3,$2
+  sub $3,3
   add $0,$3
 lpe

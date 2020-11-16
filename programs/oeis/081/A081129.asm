@@ -10,19 +10,17 @@ lpb $7,1
   sub $0,1
   mov $4,$0
   mov $3,$4
-  mov $2,24
   add $3,1
-  sub $2,2
   gcd $0,$3
-  add $0,$2
+  add $0,22
   mul $3,$0
   sub $3,1
   div $3,52
   mov $1,$3
-  mov $8,$7
-  lpb $8,1
+  mov $2,$7
+  lpb $2,1
     mov $6,$1
-    sub $8,1
+    sub $2,1
   lpe
 lpe
 lpb $5,1

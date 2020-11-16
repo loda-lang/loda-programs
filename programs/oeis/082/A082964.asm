@@ -6,19 +6,13 @@ lpb $0,1
   mov $3,$1
   mov $4,7
   mul $4,$3
-  mov $5,4
-  mov $2,7
   cmp $3,$4
   add $4,7
-  sub $2,$5
   mov $1,$4
-  add $1,$2
-  mov $6,$1
-  mov $4,4
-  add $6,8
+  add $1,3
+  mov $2,$1
+  add $2,8
   mul $0,$3
-  add $4,7
-  div $6,$4
-  div $6,2
+  div $2,22
 lpe
-mov $1,$6
+mov $1,$2

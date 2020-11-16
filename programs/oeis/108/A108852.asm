@@ -32,7 +32,7 @@ lpb $19,1
         add $0,$9
         mov $2,$0
         mov $0,8
-        pow $2,$0
+        pow $2,8
         lpb $2,1
           div $2,$0
           add $0,4

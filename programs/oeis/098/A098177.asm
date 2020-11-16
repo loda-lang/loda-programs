@@ -9,16 +9,14 @@ trn $0,5
 add $0,$5
 sub $5,1
 lpb $0,1
-  mov $0,4
-  sub $0,1
-  mov $4,$0
+  mov $4,3
   sub $3,1
   trn $4,$3
   add $5,$3
   sub $5,1
   sub $3,8
   mov $0,2
-  mov $2,$0
+  mov $2,2
 lpe
 sub $5,$4
 add $2,$5

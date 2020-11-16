@@ -24,13 +24,11 @@ lpb $19,1
       sub $13,1
       mov $0,$11
       sub $0,$13
-      mov $3,1
-      add $10,$3
-      add $0,$3
+      add $10,1
+      add $0,1
       mov $4,$10
-      mov $1,2
-      trn $3,4
-      mov $8,$1
+      mov $3,0
+      mov $8,2
       lpb $0,1
         add $8,1
         trn $8,$0

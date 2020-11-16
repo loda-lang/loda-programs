@@ -10,21 +10,17 @@ bin $4,4
 add $4,$0
 add $4,3
 lpb $0,1
-  mov $5,2
-  mov $8,$4
+  mov $5,$4
   mov $0,0
-  mov $6,$5
-  sub $0,$5
-  add $0,$6
-  add $8,$5
+  add $5,2
 lpe
-add $0,$8
+add $0,$5
 mov $1,$0
 sub $1,5
-mov $7,$2
-mov $3,$7
+mov $6,$2
+mov $3,$6
 mul $3,2
 add $1,$3
-mul $7,$2
-mov $3,$7
+mul $6,$2
+mov $3,$6
 add $1,$3

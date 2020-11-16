@@ -13,10 +13,9 @@ lpb $0,1
   mul $3,3
   mov $2,$0
   mov $1,2
-  mov $0,4
   mov $4,3
   mul $1,$6
-  mul $0,2
+  mov $0,8
   sub $1,1
   add $0,$1
   sub $4,$0
@@ -31,8 +30,7 @@ lpb $0,1
   mov $4,1
   add $4,$0
   add $5,$4
-  mov $4,1
-  mov $0,$4
+  mov $0,1
   add $0,$5
   div $0,10
   add $0,1

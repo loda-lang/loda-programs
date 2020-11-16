@@ -11,9 +11,7 @@ lpb $0,1
   add $3,$6
   sub $0,1
 lpe
-add $4,2
-mov $5,4
-add $4,$5
+add $4,6
 mul $1,$3
 gcd $3,$4
 add $0,$3

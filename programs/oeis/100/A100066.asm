@@ -12,9 +12,7 @@ lpb $7,1
     mov $4,$0
     lpb $4,1
       mov $2,$0
-      mov $4,1
-      mov $3,2
-      trn $4,$3
+      mov $4,0
       div $0,2
     lpe
     mov $1,$0

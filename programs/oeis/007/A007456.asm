@@ -7,16 +7,12 @@ mov $3,$0
 mul $2,$3
 lpb $0,1
   mul $2,4
-  mov $4,4
-  mov $0,$5
-  mov $5,2
-  add $2,5
-  sub $2,$4
+  mov $0,$4
+  mov $4,2
+  add $2,1
 lpe
-mul $5,$2
-mov $2,2
-log $5,2
-add $2,1
-add $5,$2
-mov $1,$5
+mul $4,$2
+log $4,2
+add $4,3
+mov $1,$4
 trn $1,5

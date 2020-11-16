@@ -7,8 +7,7 @@ add $2,6
 bin $2,3
 lpb $0,1
   mov $3,$2
-  mov $1,9
-  mul $3,$1
+  mul $3,9
   clr $0,1
   log $3,2
 lpe

@@ -17,12 +17,10 @@ lpb $0,1
 lpe
 add $1,1
 mov $4,$1
-mov $2,1
 pow $4,2
-sub $2,4
 add $4,$3
 mov $0,$3
-mul $0,$2
+mul $0,-3
 add $4,$0
 mov $1,$4
 sub $1,3

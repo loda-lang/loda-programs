@@ -3,18 +3,17 @@
 
 add $0,2
 mov $4,$0
-mov $5,$4
-add $5,$4
-mov $3,$5
+mov $2,$4
+add $2,$4
+mov $3,$2
 mul $3,$0
 gcd $0,8
 mov $1,$3
-mul $5,4
+mul $2,4
 lpb $0,1
   mov $1,2
-  add $1,$5
-  mov $2,1
-  mov $0,$2
+  add $1,$2
+  mov $0,1
 lpe
 sub $1,17
 div $1,16

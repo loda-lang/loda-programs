@@ -9,8 +9,7 @@ add $0,1
 mul $0,3
 lpb $0,1
   mov $1,$4
-  mov $4,3
-  div $1,$4
+  div $1,3
   sub $0,1
   mov $5,$0
   trn $0,7

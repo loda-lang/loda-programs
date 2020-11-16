@@ -20,11 +20,10 @@ lpb $11,1
     mov $1,$8
     add $2,$1
     mod $2,10
-    mov $3,30
     mul $2,3
     mov $0,$2
     mul $0,2
-    mov $5,$3
+    mov $5,30
   lpe
   mov $1,$5
   div $1,30

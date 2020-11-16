@@ -29,8 +29,7 @@ lpb $16,1
       add $1,$0
       mul $1,2
       div $1,4
-      mov $3,1
-      add $1,$3
+      add $1,1
       add $9,$1
     lpe
     mov $1,$9

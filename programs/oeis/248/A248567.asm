@@ -15,10 +15,9 @@ lpb $2,1
   mul $3,$1
   lpb $4,1
     mul $5,2
-    mov $2,9
-    mov $4,$2
+    mov $4,9
     sub $3,1
-    add $2,4
+    mov $2,13
   lpe
   add $5,$3
   trn $6,8
@@ -26,11 +25,9 @@ lpb $2,1
   add $6,8
   lpb $6,1
     add $5,$3
-    mov $2,1
-    sub $6,$2
+    sub $6,1
   lpe
   log $5,2
-  mov $2,$4
   mov $1,1
   sub $2,1
   sub $5,2

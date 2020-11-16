@@ -30,10 +30,9 @@ lpb $18,1
       lpb $0,1
         div $3,7
         mov $8,$3
-        mov $2,3
         pow $1,$8
-        sub $2,1
-        div $1,$2
+        mov $2,2
+        div $1,2
         mov $0,7
       lpe
       mov $12,$11

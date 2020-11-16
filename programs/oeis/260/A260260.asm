@@ -21,13 +21,12 @@ lpb $16,1
       mul $1,$5
       add $1,$8
       mul $1,2
-      mov $8,8
       div $1,2
       sub $1,9
-      mul $1,$8
+      mul $1,8
       add $1,3
       mov $0,$1
-      gcd $0,$8
+      gcd $0,8
     lpe
     add $12,$1
   lpe

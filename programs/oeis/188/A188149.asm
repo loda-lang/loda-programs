@@ -33,13 +33,12 @@ lpb $18,1
         lpe
         mov $6,7
         add $0,7
-        mov $1,3
-        trn $2,$1
+        trn $2,3
         add $2,2
         lpb $6,1
           mov $3,7
           sub $6,$4
-          mov $8,$3
+          mov $8,7
         lpe
         sub $3,3
         mov $4,$8

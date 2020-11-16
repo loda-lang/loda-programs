@@ -4,15 +4,11 @@
 mov $9,$0
 mov $2,531441
 lpb $2,1
-  mov $1,4
-  mov $5,1
-  div $1,4
-  add $0,$1
+  add $0,1
   mov $6,3
-  mov $8,4
   mov $3,2
-  pow $8,2
-  add $5,1
+  mov $8,16
+  mov $5,2
   mul $8,$0
   lpb $6,1
     add $5,5

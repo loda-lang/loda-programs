@@ -15,8 +15,7 @@ lpb $0,1
   gcd $4,$0
   mov $0,$2
 lpe
-mov $1,6
-div $4,$1
+div $4,6
 mov $1,$4
 add $1,40
 mov $6,$5

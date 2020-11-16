@@ -14,6 +14,5 @@ lpe
 add $0,3
 sub $0,$2
 mov $3,$0
-mov $1,4
-pow $1,4
+mov $1,256
 gcd $1,$3

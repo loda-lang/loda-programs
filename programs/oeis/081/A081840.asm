@@ -4,10 +4,9 @@
 mov $7,$0
 mov $2,$0
 lpb $2,1
-  mov $3,1
   bin $0,2
   mul $0,3
-  add $3,1
+  mov $3,2
   mov $6,$0
   lpb $6,1
     trn $6,$3

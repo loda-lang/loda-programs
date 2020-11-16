@@ -7,9 +7,8 @@ mov $2,$0
 lpb $2,1
   mov $3,$2
   lpb $3,1
-    mov $0,5
-    mov $2,$0
-    trn $3,$2
+    mov $2,5
+    trn $3,5
     add $1,$3
   lpe
 lpe

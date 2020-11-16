@@ -10,15 +10,13 @@ lpb $6,1
   sub $0,$6
   mov $3,$0
   add $3,3
-  mov $0,1
-  mov $2,3
-  add $9,$0
-  sub $3,$2
+  add $9,1
+  sub $3,3
   mod $3,2
   mul $3,2
-  mov $10,$3
-  add $10,3
-  mov $4,$10
+  mov $2,$3
+  add $2,3
+  mov $4,$2
   mov $5,$9
   pow $5,$4
   mov $1,$5

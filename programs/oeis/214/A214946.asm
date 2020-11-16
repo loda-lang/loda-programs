@@ -9,18 +9,14 @@ mov $4,$1
 mov $2,$3
 mul $1,$2
 lpb $0,1
-  mov $3,1
   add $1,1
   mul $1,$4
-  mov $5,2
-  sub $4,$3
+  sub $4,1
   mul $4,$1
   mov $2,2
   add $2,$4
   cmp $4,1
-  mov $0,2
-  sub $0,1
-  div $0,$5
+  mov $0,0
 lpe
 mov $1,$2
 div $1,12

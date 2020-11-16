@@ -24,16 +24,13 @@ lpb $11,1
       mov $1,$0
       bin $1,2
       lpb $0,1
-        mov $0,4
-        sub $0,1
+        mov $0,3
       lpe
       add $1,1
       gcd $1,6
       pow $1,$1
       add $0,$1
-      mov $2,8
-      sub $2,2
-      mul $0,$2
+      mul $0,6
       mov $1,$0
       sub $1,6
       div $1,6

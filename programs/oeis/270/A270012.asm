@@ -11,18 +11,16 @@ lpb $2,1
   mov $1,$0
   add $4,1
   add $1,$4
-  mov $3,4
   mov $6,$1
   add $6,1
-  mod $6,$3
+  mod $6,4
   add $5,1
   lpb $0,1
     mov $5,$1
     mov $3,$1
     mul $5,$3
-    mov $1,1
     trn $6,1
-    div $1,2
+    mov $1,0
     mov $0,$6
   lpe
   mul $5,2

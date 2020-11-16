@@ -11,10 +11,7 @@ lpb $0,1
   mov $4,$3
   sub $0,1
 lpe
-sub $3,2
-mov $2,1
-mov $5,$2
-sub $3,$5
+sub $3,3
 pow $3,2
 mov $1,$3
 div $1,8

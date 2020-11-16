@@ -9,12 +9,10 @@ mov $4,$0
 add $4,1
 mov $0,$4
 add $0,1
-mov $6,$0
-mov $4,$6
+mov $2,$0
+mov $4,$2
 lpb $0,1
-  mov $2,9
-  div $2,4
-  div $0,$2
+  div $0,2
   sub $4,$0
 lpe
 mov $3,$4

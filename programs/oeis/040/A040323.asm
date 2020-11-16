@@ -9,7 +9,7 @@ add $0,5
 lpb $0,1
   div $0,2
   mov $4,2
-  pow $0,$4
+  pow $0,2
 lpe
 sub $3,2
 div $3,$2

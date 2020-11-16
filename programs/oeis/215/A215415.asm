@@ -7,11 +7,9 @@ gcd $0,4
 lpb $0,1
   mul $0,17
   lpb $0,1
-    mov $3,2
-    add $3,1
-    mul $3,2
+    mov $3,6
     mov $2,$5
-    add $4,$3
+    add $4,6
     lpb $0,1
       sub $2,4
       mul $0,2

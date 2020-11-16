@@ -5,17 +5,12 @@ mov $2,$0
 add $2,1
 lpb $2,1
   sub $2,1
-  mov $0,$9
+  mov $0,$7
   sub $0,$2
-  mov $8,5
-  mov $1,8
-  mov $7,$8
-  pow $1,$7
+  mov $1,32768
   gcd $1,$0
-  mov $3,0
-  pow $3,$3
   mod $1,3
-  mul $3,2
+  mov $3,2
   add $6,$1
   add $6,3
   gcd $3,$6

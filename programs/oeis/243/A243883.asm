@@ -8,18 +8,13 @@ lpb $0,1
   add $1,$5
   mul $1,$0
   mov $4,$1
-  mov $3,1
-  mov $1,$3
-  add $3,2
-  add $3,$1
-  mov $0,$3
   mov $2,$4
-  add $2,$0
-  mov $6,$2
+  add $2,4
+  mov $3,$2
   mul $2,2
-  gcd $6,8
-  div $2,$6
-  bin $0,8
+  gcd $3,8
+  div $2,$3
+  mov $0,0
   add $5,$2
   add $5,$2
   add $2,$5

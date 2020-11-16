@@ -7,20 +7,17 @@ trn $0,1
 mov $2,2
 lpb $0,1
   pow $0,$6
-  mov $6,2
-  mov $5,1
   mov $2,1
-  add $6,$5
-  add $6,4
+  mov $6,7
   sub $0,1
 lpe
 mov $4,$0
 mul $2,2
 sub $6,1
-mov $7,$4
-sub $7,1
-div $7,$6
-add $6,$7
+mov $5,$4
+sub $5,1
+div $5,$6
+add $6,$5
 sub $2,1
 add $6,1
 add $6,$2

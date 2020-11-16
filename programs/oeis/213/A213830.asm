@@ -16,10 +16,8 @@ lpb $14,1
     sub $11,1
     mov $0,$9
     sub $0,$11
-    mov $6,6
     mul $0,3
-    mod $6,6
-    fac $6
+    mov $6,1
     mov $1,$0
     mul $6,$1
     pow $6,2

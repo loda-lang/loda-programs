@@ -17,12 +17,8 @@ lpb $16,1
     mov $0,$11
     sub $0,$13
     mov $8,2
-    mov $6,2
-    mov $1,1
-    sub $6,1
-    add $0,$1
-    sub $0,1
-    trn $1,2
+    mov $6,1
+    mov $1,0
     mov $3,2
     lpb $0,1
       mov $9,$1

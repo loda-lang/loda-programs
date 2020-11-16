@@ -10,9 +10,7 @@ mov $1,$6
 mov $3,1
 mov $0,6
 lpb $0,1
-  mov $3,10
   add $8,4
-  div $3,9
   add $5,$8
   mov $0,$1
   gcd $0,10

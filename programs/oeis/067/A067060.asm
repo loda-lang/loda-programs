@@ -16,8 +16,7 @@ add $6,$3
 add $0,2
 lpb $0,1
   mov $0,$5
-  mov $5,8
-  add $6,$5
+  add $6,8
   add $4,$6
   trn $0,13
   add $4,1

@@ -28,7 +28,6 @@ lpb $14,1
     add $0,$7
     mul $1,5
     lpb $0,1
-      mov $8,5
       mod $0,$5
       add $2,3
       add $1,$5
@@ -41,7 +40,7 @@ lpb $14,1
       mov $4,$0
       mul $4,2
       div $4,8
-      add $5,$8
+      add $5,5
       trn $3,$5
       div $0,$1
       add $3,6

@@ -11,12 +11,10 @@ lpb $0,1
   mod $2,10
   clr $0,2
 lpe
-mov $5,5
-add $2,$5
+add $2,5
 mov $1,$2
 mul $1,2
-mov $10,5
 sub $1,4
-add $6,$10
+add $6,5
 sub $1,$6
 div $1,2

@@ -11,14 +11,11 @@ lpb $3,1
   gcd $0,2
   lpb $0,1
     div $2,2
-    mov $6,1
-    add $2,$6
+    add $2,1
     mov $6,$2
     mov $5,$6
     bin $5,$0
-    mov $6,9
-    add $5,$6
-    add $5,8
+    add $5,17
     trn $0,$2
   lpe
   mov $1,$5

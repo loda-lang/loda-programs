@@ -7,25 +7,23 @@ mov $1,2
 sub $3,1
 gcd $1,$3
 sub $3,1
-mov $4,3
+mov $2,3
 div $3,2
 mul $1,2
 sub $3,2
 mov $0,2
-sub $4,$1
-sub $3,$4
+sub $2,$1
+sub $3,$2
 lpb $0,1
   pow $3,2
-  mov $5,2
-  trn $4,2
-  mov $2,2
-  div $3,$5
-  sub $3,$2
-  sub $4,14
+  trn $2,2
+  div $3,2
+  sub $3,2
+  sub $2,14
   add $3,1
   div $0,3
 lpe
-sub $3,$4
+sub $3,$2
 mov $1,$3
 sub $1,13
 div $1,2

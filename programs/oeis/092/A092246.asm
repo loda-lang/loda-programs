@@ -20,8 +20,7 @@ mov $1,$5
 mov $6,$1
 mov $7,$6
 mov $4,$1
-mov $6,2
-gcd $4,$6
+gcd $4,2
 add $4,$7
 mov $1,$4
 sub $1,13

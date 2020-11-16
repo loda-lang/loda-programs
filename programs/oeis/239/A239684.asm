@@ -3,12 +3,10 @@
 
 pow $0,4
 lpb $0,1
-  mov $4,10
-  add $5,8
-  add $5,$0
-  mov $2,$5
-  mov $5,$4
-  log $2,$5
+  add $4,8
+  add $4,$0
+  mov $2,$4
+  log $2,10
   mov $0,$3
   mul $2,4
 lpe

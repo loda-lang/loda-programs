@@ -7,15 +7,8 @@ lpb $11,1
   sub $11,1
   mov $0,$9
   add $0,$11
-  sub $0,1
-  mov $8,5
-  mov $5,$8
-  mov $2,2
-  mov $3,$5
-  add $0,$2
-  mov $8,2
-  add $3,$8
-  mov $6,$3
+  add $0,1
+  mov $6,7
   lpb $0,1
     sub $0,1
     pow $0,4

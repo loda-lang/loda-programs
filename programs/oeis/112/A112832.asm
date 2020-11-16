@@ -7,10 +7,8 @@ lpb $0,13
   add $7,1
   add $10,$7
   add $7,$10
-  mov $0,1
   add $7,$10
-  mov $5,$0
-  sub $1,$5
+  sub $1,1
 lpe
 mul $7,2
 div $7,4

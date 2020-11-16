@@ -14,9 +14,9 @@ mul $2,$4
 add $4,$2
 add $4,3
 mov $3,3
-div $4,$3
+div $4,3
 add $1,$4
-sub $1,$3
+sub $1,3
 add $4,$1
 add $3,$4
 add $3,1

@@ -3,14 +3,10 @@
 
 mov $5,$0
 mul $0,2
-lpb $0,1
-  mov $0,14
-  fac $0
-lpe
 mov $3,$5
 add $0,2
 mov $4,$0
-add $6,$0
+mov $6,$0
 pow $4,2
 sub $0,4
 add $4,$0

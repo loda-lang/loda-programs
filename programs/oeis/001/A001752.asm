@@ -18,17 +18,11 @@ lpb $14,1
     sub $0,$11
     mov $1,$0
     add $1,7
-    mov $6,2
-    mov $4,$6
     add $1,$0
-    mov $2,$4
-    div $4,$4
-    add $4,1
-    sub $1,$2
+    sub $1,2
     div $1,2
-    pow $1,$2
-    div $1,$4
-    div $1,2
+    pow $1,2
+    div $1,4
     add $10,$1
   lpe
   mov $1,$10

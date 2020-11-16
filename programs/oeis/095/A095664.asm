@@ -8,13 +8,12 @@ bin $1,7
 add $2,14
 add $0,2
 lpb $0,1
-  mov $5,3
-  add $5,$2
-  mov $4,1
+  mov $4,3
+  add $4,$2
   mov $3,$1
-  mul $3,$5
+  mul $3,$4
   add $3,2
-  mov $0,$4
+  mov $0,1
   div $3,2
 lpe
 add $3,$0

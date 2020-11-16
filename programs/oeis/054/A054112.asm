@@ -42,16 +42,13 @@ lpb $21,1
             add $0,1
             sub $5,$0
             add $8,$0
-            mov $3,2
-            sub $5,$3
+            sub $5,2
           lpe
           bin $0,$8
-          mov $2,1
-          sub $2,1
+          mov $2,0
           add $0,7
         lpe
-        mov $5,1
-        mov $8,$5
+        mov $8,1
         mov $1,$0
         mov $12,$11
         lpb $12,1

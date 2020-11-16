@@ -3,13 +3,11 @@
 
 lpb $0,1
   trn $0,17
-  add $5,6
-  mov $3,4
-  add $0,$5
-  add $4,6
-  add $4,$3
+  add $3,6
+  add $0,$3
+  add $4,10
   add $0,2
-  mov $5,0
+  mov $3,0
 lpe
 mov $2,$4
 add $2,5

@@ -15,9 +15,8 @@ lpb $4,1
     mov $3,$0
     mov $2,6
     bin $2,$3
-    mov $0,1
     mov $3,$2
-    sub $0,1
+    mov $0,0
     mov $1,$3
   lpe
   sub $0,$3

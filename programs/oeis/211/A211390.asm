@@ -6,23 +6,15 @@ mov $5,$0
 mov $8,5
 mov $7,$5
 add $8,$0
-mov $9,$0
+mov $2,$0
 trn $7,6
 add $0,1
 add $7,1
 add $0,$7
-sub $0,$9
+sub $0,$2
 sub $8,1
 lpb $0,1
-  mov $9,1
-  add $8,1
-  mov $2,$9
-  add $2,1
-  add $8,2
-  add $2,3
-  mov $0,$2
-  add $8,1
-  sub $0,1
+  mov $0,4
 lpe
 add $8,1
 gcd $0,$8

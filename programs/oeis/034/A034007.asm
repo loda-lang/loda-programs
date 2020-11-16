@@ -26,9 +26,8 @@ lpb $4,1
       mov $7,$6
       add $7,2
       pow $7,$3
-      mov $1,10
       mul $7,2
-      gcd $1,9
+      mov $1,1
       add $1,$9
       add $1,1
       mul $1,$7

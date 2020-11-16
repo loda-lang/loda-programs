@@ -12,8 +12,7 @@ pow $4,$5
 mov $2,2
 lpb $0,1
   mul $2,2
-  mov $3,3
-  add $3,2
+  mov $3,5
   mul $4,2
   trn $3,$2
   mov $0,$3

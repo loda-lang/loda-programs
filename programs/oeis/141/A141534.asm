@@ -22,10 +22,9 @@ lpb $14,1
     trn $5,5
     add $5,$0
     mov $2,$0
-    mov $3,1
     bin $2,2
     add $5,$2
-    add $5,$3
+    add $5,1
     mov $1,$5
     add $10,$1
   lpe

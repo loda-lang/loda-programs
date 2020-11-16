@@ -14,14 +14,12 @@ mov $4,$2
 mov $0,2
 sub $3,$5
 lpb $0,1
-  mov $1,2
   add $4,1
-  mov $2,1
   mov $6,$0
   add $4,$3
-  add $4,$2
+  add $4,1
   pow $4,$6
-  mul $4,$1
+  mul $4,2
   div $4,2
   mov $0,1
 lpe

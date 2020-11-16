@@ -11,8 +11,7 @@ mod $5,$7
 mov $1,65536
 lpb $3,7
   mod $1,$8
-  mov $7,7
-  mul $7,8
+  mov $7,56
   lpb $6,6
     cmp $1,$2
     pow $8,$1

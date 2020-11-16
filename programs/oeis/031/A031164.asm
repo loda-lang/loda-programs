@@ -45,7 +45,7 @@ lpb $18,1
           add $4,1
           bin $4,3
           mov $0,5
-          add $4,$0
+          add $4,5
         lpe
         mov $1,$4
         sub $1,5

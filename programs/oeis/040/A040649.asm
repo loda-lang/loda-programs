@@ -21,8 +21,7 @@ mov $3,$6
 add $3,1
 add $2,$3
 mov $5,$2
-mov $4,7
-trn $5,$4
+trn $5,7
 mov $1,$5
 div $1,4
 add $1,1

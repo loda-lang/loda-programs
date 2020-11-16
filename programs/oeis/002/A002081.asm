@@ -22,10 +22,8 @@ lpb $0,1
   add $3,$2
   mul $3,2
   add $1,8
-  mov $5,0
   trn $0,1
   add $1,4
-  add $5,5
 lpe
 add $3,3
 add $1,$3

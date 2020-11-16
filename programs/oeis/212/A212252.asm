@@ -21,25 +21,16 @@ lpb $17,1
       sub $11,1
       mov $0,$9
       sub $0,$11
-      mov $2,2
-      mov $5,2
-      add $0,$5
-      mul $0,$5
+      add $0,2
+      mul $0,2
       sub $0,8
       mod $0,3
-      mov $8,3
-      mov $6,6
-      mul $5,$6
-      mov $1,2
-      mul $1,8
+      mov $5,12
       add $5,$0
-      div $2,$6
-      mov $3,$1
-      sub $3,$8
+      mov $2,0
       add $2,$5
-      mul $3,3
       mul $2,7
-      sub $2,$3
+      sub $2,39
       div $2,4
       mov $1,$2
       trn $1,11

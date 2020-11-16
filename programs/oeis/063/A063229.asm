@@ -16,19 +16,17 @@ mov $3,3
 add $3,$0
 lpb $0,1
   trn $5,1
-  mov $2,16
   add $3,$4
   add $5,$3
   add $3,1
   add $5,$3
-  add $5,$2
-  mov $0,1
-  sub $0,1
+  add $5,16
+  mov $0,0
 lpe
 mov $0,$5
 mov $1,$0
 sub $1,24
-mov $8,$7
-mov $6,$8
+mov $2,$7
+mov $6,$2
 mul $6,4
 add $1,$6

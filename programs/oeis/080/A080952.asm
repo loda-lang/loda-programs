@@ -8,9 +8,8 @@ add $2,5
 bin $2,$0
 lpb $0,1
   sub $0,1
-  mov $3,9
   mul $2,2
-  add $3,12
+  mov $3,21
 lpe
 mov $1,$2
 mul $3,2

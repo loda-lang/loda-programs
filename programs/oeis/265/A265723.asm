@@ -6,9 +6,8 @@ mul $3,2
 mov $2,$0
 gcd $2,4
 lpb $2,1
-  mov $3,2
   pow $2,2
-  add $3,1
+  mov $3,3
   sub $2,1
 lpe
 mov $1,$3

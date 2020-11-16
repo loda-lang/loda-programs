@@ -5,24 +5,22 @@ mov $6,$0
 pow $0,2
 mov $5,3
 add $5,$0
-mov $8,8
+mov $2,8
 gcd $0,8
 lpb $0,1
-  mov $2,7
   mul $0,2
-  sub $8,$2
+  sub $2,7
   mul $5,2
   sub $5,7
   mod $0,5
   sub $0,1
   mov $7,$5
 lpe
-mov $0,$8
+mov $0,$2
 sub $7,$0
 trn $7,$0
 mov $5,$7
-mov $0,4
-add $5,$0
+add $5,4
 mov $1,$5
 sub $1,3
 mov $4,$6

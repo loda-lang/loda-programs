@@ -22,9 +22,7 @@ lpb $7,1
     mov $4,$2
     pow $4,4
     mov $1,$4
-    add $1,7
-    mov $2,8
-    add $1,$2
+    add $1,15
     mov $12,$11
     lpb $12,1
       mov $10,$1

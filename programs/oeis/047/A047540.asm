@@ -4,14 +4,10 @@
 mov $5,$0
 mod $0,4
 lpb $0,1
-  mov $6,1
-  mov $3,2
-  add $3,1
-  sub $3,$6
   mov $0,2
-  mov $6,$3
+  mov $3,2
 lpe
-mov $1,$6
+mov $1,$3
 trn $1,1
 mov $4,$5
 mov $2,$4

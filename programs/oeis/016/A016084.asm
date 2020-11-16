@@ -18,10 +18,6 @@ lpb $0,1
   sub $0,1
 lpe
 sub $1,1
-mov $5,5
-mov $2,$5
-mod $2,2
-add $2,1
 mul $1,2
-div $1,$2
+div $1,2
 add $1,1

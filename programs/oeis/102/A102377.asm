@@ -9,9 +9,8 @@ lpb $2,1
   mul $1,10
   div $3,2
   sub $2,$3
-  mov $4,1
   sub $2,1
-  add $1,$4
+  add $1,1
 lpe
 div $1,21000
 mul $1,9

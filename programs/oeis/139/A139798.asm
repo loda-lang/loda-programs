@@ -35,10 +35,8 @@ lpb $20,1
         mov $1,$0
         cmp $2,$1
         lpb $2,1
-          mov $0,6
           div $2,5
-          div $0,2
-          mov $1,$0
+          mov $1,3
         lpe
         add $1,5
         add $10,$1

@@ -4,10 +4,8 @@
 mov $5,$0
 mov $2,$0
 lpb $0,1
-  mov $2,1
   mov $0,1
-  add $2,12
-  pow $2,2
+  mov $2,169
 lpe
 add $2,7
 mul $2,3

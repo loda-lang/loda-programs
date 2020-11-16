@@ -12,11 +12,10 @@ lpb $2,1
   lpb $0,1
     mov $1,$0
     gcd $1,2
-    mov $7,1
     mul $5,2
     mul $1,2
-    cmp $0,$7
-    sub $1,$7
+    cmp $0,1
+    sub $1,1
     add $5,1
     mov $6,$5
     log $6,2

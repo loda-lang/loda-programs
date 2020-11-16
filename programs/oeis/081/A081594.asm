@@ -11,9 +11,8 @@ add $2,3
 add $1,1
 lpb $0,1
   sub $1,$2
-  mov $2,3
   sub $0,1
-  add $2,5
+  mov $2,8
   sub $0,1
-  trn $0,$2
+  trn $0,8
 lpe

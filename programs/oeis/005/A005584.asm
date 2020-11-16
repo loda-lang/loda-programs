@@ -17,8 +17,7 @@ mov $3,4
 lpb $0,1
   sub $4,7
   add $4,$3
-  mov $0,2
-  div $0,10
+  mov $0,0
 lpe
 mov $1,$4
 sub $1,6

@@ -13,9 +13,8 @@ lpb $5,1
   mov $2,$0
   mul $2,$1
   sub $2,$3
-  mov $0,9
   mov $6,$2
-  mul $6,$0
+  mul $6,9
   add $6,$3
   mul $3,$6
   mov $1,$3

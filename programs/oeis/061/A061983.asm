@@ -11,12 +11,8 @@ lpb $0,1
   mov $2,$4
   add $3,1
 lpe
-mov $4,12
-mov $1,$4
 mov $0,3
-add $4,$1
 mul $0,$2
 mov $1,$0
-add $1,$4
-sub $1,26
+sub $1,2
 div $1,3

@@ -10,7 +10,7 @@ lpb $2,1
   sub $0,$2
   mov $4,$8
   mov $1,8
-  mov $6,$1
+  mov $6,8
   lpb $0,1
     mov $7,$0
     mov $5,$4

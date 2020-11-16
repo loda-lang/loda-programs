@@ -15,9 +15,7 @@ lpb $5,1
     mov $0,$1
   lpe
   gcd $2,2
-  mov $1,12
-  mov $0,3
-  pow $0,$1
+  mov $0,531441
   mul $0,$2
   mov $1,$0
   sub $1,531441

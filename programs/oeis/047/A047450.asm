@@ -10,9 +10,8 @@ lpb $7,1
   sub $0,$7
   mov $6,$3
   lpb $0,1
-    mov $3,6
     add $0,1
-    gcd $0,$3
+    gcd $0,6
     add $4,17
     pow $0,$4
     add $2,15

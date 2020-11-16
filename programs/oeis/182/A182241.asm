@@ -20,13 +20,11 @@ lpb $0,1
   mov $4,$6
   sub $5,$2
   mov $3,1
-  add $4,$3
+  add $4,1
   div $0,$2
   add $4,$9
-  mov $6,1
   mov $8,$5
-  add $4,6988080
-  add $4,$6
+  add $4,6988081
   gcd $8,$4
   sub $3,$5
 lpe

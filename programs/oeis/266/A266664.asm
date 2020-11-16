@@ -6,8 +6,8 @@ sub $4,1
 mov $5,$4
 add $0,2
 trn $4,1
-mov $7,$0
-add $5,$7
+mov $3,$0
+add $5,$3
 sub $0,$0
 mov $2,$4
 mov $6,$2
@@ -15,8 +15,7 @@ add $0,2
 mov $2,5
 lpb $0,1
   mov $5,$6
-  mov $3,1
-  sub $2,$3
+  sub $2,1
   mov $0,$5
   mov $5,$2
   gcd $0,2

@@ -12,13 +12,10 @@ lpb $0,1
   sub $2,1
   add $3,$2
   trn $1,4
-  mov $2,3
-  mov $6,5
   trn $3,5
-  sub $2,1
-  add $3,$6
+  add $3,5
   mov $5,$3
-  add $1,$2
+  add $1,2
   add $3,$5
 lpe
 add $1,10

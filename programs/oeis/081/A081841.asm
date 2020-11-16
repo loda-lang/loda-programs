@@ -36,9 +36,8 @@ lpb $25,1
         mov $6,$0
         mul $6,$0
         trn $7,1
-        mov $8,3
         add $7,2
-        mov $2,$8
+        mov $2,3
         lpb $2,1
           lpb $6,1
             add $7,2

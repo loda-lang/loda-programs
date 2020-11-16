@@ -13,16 +13,14 @@ lpb $3,1
   mov $5,$0
   gcd $2,2
   mov $4,$5
-  mov $1,3
   mov $9,$4
-  mod $9,$1
+  mod $9,3
   mov $8,$2
   add $4,$2
   sub $4,2
   add $4,$8
   add $4,$9
-  mov $2,4
-  add $4,$2
+  add $4,4
   mov $1,$4
   sub $1,5
   add $6,$1

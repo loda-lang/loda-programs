@@ -8,10 +8,8 @@ lpb $5,1
   mov $0,$6
   sub $0,$5
   mov $8,2
-  mov $3,$8
-  add $3,6
-  fac $3
-  gcd $0,$3
+  mov $3,40320
+  gcd $0,40320
   lpb $0,1
     sub $0,1
     add $2,$3

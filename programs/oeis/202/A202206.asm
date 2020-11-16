@@ -37,11 +37,7 @@ lpb $24,1
           mov $0,$7
           add $0,$9
           sub $0,1
-          mov $1,3
-          mov $6,$1
-          mov $3,$1
-          add $6,84
-          add $3,$6
+          mov $3,90
           sub $2,$2
           lpb $0,1
             mov $6,$2

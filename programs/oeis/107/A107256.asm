@@ -17,14 +17,13 @@ lpb $5,1
     sub $0,1
     mov $8,$0
     mov $7,6
-    mov $6,7
     mov $0,8
-    add $8,$6
+    add $8,7
     mov $2,$8
-    sub $6,5
-    sub $2,$7
+    mov $6,2
+    sub $2,6
     mul $8,8
-    pow $2,$7
+    pow $2,6
     lpb $0,1
       add $7,$2
       mov $3,$8

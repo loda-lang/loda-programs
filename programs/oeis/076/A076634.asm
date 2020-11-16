@@ -3,37 +3,28 @@
 
 lpb $0,1
   add $3,$0
-  mov $0,2
-  mov $4,2
-  sub $0,1
-  add $0,$4
-  mov $2,$0
-  mul $2,$0
+  mov $0,3
   add $3,1
-  add $4,$2
   sub $0,$3
-  mov $6,$0
-  sub $6,1
-  mul $6,2
-  sub $6,1
-  mul $4,2
+  mov $2,$0
+  sub $2,1
+  mul $2,2
+  sub $2,1
+  mov $4,22
   div $0,10
   add $4,$0
-  add $6,6
+  add $2,6
   mul $0,2
   add $5,3
   add $4,$0
   trn $5,$4
   sub $5,1
   add $0,$5
-  sub $0,$6
+  sub $0,$2
   div $0,3
-  mov $4,2
   add $0,1
-  mov $3,3
-  add $4,2
-  add $1,$4
-  trn $3,27
+  add $1,4
+  mov $3,0
 lpe
 div $1,4
 add $1,1

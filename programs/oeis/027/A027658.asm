@@ -16,16 +16,11 @@ lpb $14,1
     sub $11,1
     mov $0,$9
     sub $0,$11
-    mov $3,6
-    mov $8,1
-    add $8,$3
     add $0,8
     mov $7,$0
     sub $7,6
-    sub $8,4
-    bin $7,$8
-    mov $4,1
-    add $7,$4
+    bin $7,3
+    add $7,1
     mov $2,$7
     mov $1,$2
     add $10,$1

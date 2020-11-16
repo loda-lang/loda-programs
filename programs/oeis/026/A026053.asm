@@ -21,8 +21,7 @@ lpb $14,1
     mov $6,2
     add $4,$8
     add $6,$4
-    mov $5,5
-    div $6,$5
+    div $6,5
     mod $4,5
     mod $4,2
     add $4,$6

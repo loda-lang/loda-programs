@@ -12,17 +12,14 @@ lpb $0,1
   add $3,$1
   sub $3,$2
 lpe
-mov $2,1
 mov $1,$3
-sub $3,$2
+sub $3,1
 sub $1,$3
-mov $0,3
 add $3,3
-trn $1,$0
+trn $1,3
 add $3,1
 add $1,$3
-add $1,2
-add $1,$0
+add $1,5
 lpb $4,1
   add $1,2
   sub $4,1

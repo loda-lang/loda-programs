@@ -11,10 +11,8 @@ lpb $4,1
   mov $6,$0
   add $6,1
   mov $5,$6
-  mov $3,6
   mod $6,5
-  mov $1,8
-  pow $3,$1
+  mov $3,1679616
   mod $3,$5
   mov $0,$3
   trn $6,8

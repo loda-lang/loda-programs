@@ -17,6 +17,5 @@ lpb $0,1
   sub $3,$2
   mov $0,$4
 lpe
-mov $2,1
-cmp $0,$2
+cmp $0,1
 mov $1,$0

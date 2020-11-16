@@ -8,13 +8,12 @@ gcd $1,10
 div $1,3
 mov $2,9
 lpb $2,1
-  mov $5,3
-  div $1,$5
+  div $1,3
   mod $2,3
   gcd $1,8
 lpe
 add $1,69
 mov $4,$3
-mov $6,$4
-mul $6,100
-add $1,$6
+mov $5,$4
+mul $5,100
+add $1,$5

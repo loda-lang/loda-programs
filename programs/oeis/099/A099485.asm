@@ -8,8 +8,7 @@ lpb $2,1
   sub $2,1
   mov $0,$3
   sub $0,$2
-  mov $1,2
-  mov $4,$1
+  mov $4,2
   clr $1,1
   mov $6,$1
   lpb $0,1

@@ -8,8 +8,7 @@ lpb $0,1
   log $0,2
   sub $0,1
 lpe
-mov $3,37
-mul $3,3
+mov $3,111
 mul $3,$2
 mov $1,$3
 sub $1,333

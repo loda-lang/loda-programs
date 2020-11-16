@@ -9,9 +9,8 @@ lpb $13,1
   mov $0,$11
   sub $0,$13
   add $1,$0
-  mov $4,20
   sub $0,1
-  mul $0,$4
+  mul $0,20
   div $0,18
   add $1,$0
   sub $4,$0
@@ -20,13 +19,10 @@ lpb $13,1
   add $1,$4
   mov $10,2
   add $9,$1
-  mov $0,2
-  mod $9,$0
+  mod $9,2
   add $10,$9
-  mul $10,2
-  mov $9,1
-  mul $10,2
-  add $10,$9
+  mul $10,4
+  add $10,1
   mov $0,$10
   mov $1,$0
   sub $1,5

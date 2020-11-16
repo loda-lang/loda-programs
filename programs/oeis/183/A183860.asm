@@ -10,9 +10,8 @@ add $2,8
 mov $4,2
 lpb $0,1
   sub $0,1
-  mov $3,5
   mov $1,$2
-  sub $1,$3
+  sub $1,5
   add $4,2
   add $2,1
   trn $0,$4

@@ -3,10 +3,9 @@
 
 lpb $0,1
   add $3,1
-  mov $2,4
   add $4,$3
-  add $5,$2
-  add $1,$5
+  add $2,4
+  add $1,$2
   mov $3,$1
   mov $1,$4
   sub $0,1

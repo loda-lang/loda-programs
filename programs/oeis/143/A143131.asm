@@ -24,22 +24,16 @@ lpb $19,1
       sub $13,1
       mov $0,$11
       sub $0,$13
-      mov $1,5
-      mov $3,$1
       mul $0,5
-      mov $2,$3
       trn $0,4
-      mov $10,7
-      mov $9,1
-      sub $2,4
-      add $10,$9
+      mov $2,1
+      mov $10,8
       lpb $0,1
         mov $2,$10
-        mov $6,4
         mov $8,$0
         mov $4,$8
         sub $0,$4
-        gcd $0,$6
+        gcd $0,4
         add $2,2
         add $0,6
       lpe

@@ -21,17 +21,12 @@ lpb $19,1
       mov $0,$10
       add $0,$12
       sub $0,1
-      mov $4,9
       mov $1,$0
-      mov $7,4
-      mov $5,$4
-      sub $5,$7
+      mov $5,5
       pow $0,6
       lpb $0,1
         sub $0,1
-        mov $1,20
-        mov $4,$1
-        div $0,$4
+        div $0,20
         mov $1,$5
         add $5,2
       lpe

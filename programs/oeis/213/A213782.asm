@@ -30,8 +30,7 @@ lpb $18,1
       lpb $0,1
         gcd $7,2
         add $7,$1
-        mov $0,2
-        add $7,$0
+        add $7,2
         trn $1,$7
         sub $7,2
         add $1,3

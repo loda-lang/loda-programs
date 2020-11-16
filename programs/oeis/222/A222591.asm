@@ -8,14 +8,12 @@ gcd $0,2
 mul $0,2
 lpb $0,1
   add $1,1
-  mov $2,3
   add $1,$3
   mul $1,$3
-  mov $0,4
-  add $2,3
+  mov $2,6
   add $2,$1
   gcd $1,$2
-  sub $0,1
+  mov $0,3
   div $2,$1
 lpe
 mov $1,$2

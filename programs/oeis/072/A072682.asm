@@ -14,8 +14,7 @@ lpb $5,1
     mod $2,4
     mul $2,2
     bin $4,$2
-    mov $2,1
-    sub $2,1
+    mov $2,0
   lpe
   mov $1,$4
   mul $1,3

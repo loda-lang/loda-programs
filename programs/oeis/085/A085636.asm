@@ -6,13 +6,11 @@ lpb $0,1
   sub $0,1
   trn $0,4
   mov $2,$0
-  mov $3,3
-  add $5,$2
-  add $0,$3
-  sub $0,1
-  add $5,4
+  add $3,$2
+  add $0,2
+  add $3,4
   div $0,2
-  add $4,$5
+  add $4,$3
   mul $4,$0
   add $4,2
   mov $2,$0

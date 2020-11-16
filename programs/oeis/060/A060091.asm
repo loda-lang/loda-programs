@@ -14,15 +14,13 @@ lpb $14,1
     sub $11,1
     mov $0,$9
     sub $0,$11
-    mov $2,3
-    add $0,$2
+    add $0,3
     bin $0,3
     sub $0,5
     lpb $0,1
       add $0,1
       mov $5,$0
-      mov $6,7
-      mov $0,$6
+      mov $0,7
     lpe
     mov $1,$5
     add $10,$1

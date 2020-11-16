@@ -11,13 +11,11 @@ lpe
 add $6,$2
 sub $2,3
 add $3,$6
-mov $0,1
-add $3,$0
+add $3,1
 mov $4,$3
 sub $2,4
-mov $0,2
 trn $2,2
-add $0,5
+mov $0,7
 add $0,$4
 mov $1,2
 sub $0,$2

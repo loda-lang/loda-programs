@@ -4,19 +4,17 @@
 mov $2,1
 lpb $2,1
   sub $2,1
-  add $6,1
-  lpb $6,1
-    sub $6,1
+  add $3,1
+  lpb $3,1
+    sub $3,1
     mov $4,$0
     lpb $4,1
       sub $4,1
       mov $5,$0
       add $5,$0
       bin $5,$0
-      mov $3,1
       mov $1,$0
-      add $1,2
-      sub $1,$3
+      add $1,1
       div $5,$1
     lpe
   lpe

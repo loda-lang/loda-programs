@@ -40,9 +40,7 @@ lpb $31,1
           sub $19,1
           mov $0,$17
           sub $0,$19
-          mov $1,2
-          div $1,3
-          sub $1,4
+          mov $1,-4
           bin $1,$0
           add $1,1
           trn $1,1

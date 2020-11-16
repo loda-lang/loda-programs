@@ -5,9 +5,8 @@ mov $3,$0
 lpb $0,1
   mov $5,$3
   mov $6,$5
-  mov $4,2
   sub $6,3
-  trn $6,$4
+  trn $6,2
   gcd $6,2
   mov $4,$6
   trn $5,3

@@ -7,12 +7,10 @@ lpb $5,1
   sub $5,1
   mov $0,$7
   sub $0,$5
-  mov $1,1
   mov $2,$0
   mov $4,3
-  mov $0,1
-  mul $0,2
-  div $1,17
+  mov $0,2
+  mov $1,0
   lpb $2,1
     lpb $4,1
       mov $3,$0

@@ -10,13 +10,11 @@ lpb $0,1
   add $3,1
   mul $0,$4
 lpe
-mov $4,4
 add $7,6
-mov $0,$4
-mov $1,8
+mov $0,4
 add $0,$3
 mov $2,$7
-mul $0,$1
+mul $0,8
 add $5,24
 add $2,$5
 add $0,6

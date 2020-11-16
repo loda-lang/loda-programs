@@ -31,8 +31,7 @@ lpb $16,1
       mov $9,$10
       add $6,$0
       mov $1,8
-      mov $8,2
-      mov $5,$8
+      mov $5,2
       add $5,$9
       mov $10,$2
       add $10,1

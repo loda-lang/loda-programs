@@ -7,23 +7,19 @@ mov $1,2
 mov $8,$0
 add $0,1
 lpb $0,1
-  mov $9,2
   sub $8,$4
   add $8,$1
   mov $7,$8
-  add $9,1
   add $1,$0
-  add $9,3
   add $1,$8
   mov $4,2
   add $1,3
-  div $1,$9
+  div $1,6
   add $2,20
   mul $4,$1
   mod $7,2
-  mov $0,4
   add $7,$4
-  trn $0,46
+  mov $0,0
   add $0,$7
   mov $1,$2
   sub $0,1

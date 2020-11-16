@@ -22,10 +22,8 @@ lpb $2,1
       mov $1,$6
     lpe
     mov $5,$6
-    mov $1,8
-    mov $6,5
-    sub $6,5
-    div $5,$1
+    mov $6,0
+    div $5,8
     sub $3,$3
   lpe
   mov $1,$5

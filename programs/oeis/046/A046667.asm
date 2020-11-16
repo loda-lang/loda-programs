@@ -5,13 +5,11 @@ add $0,2
 mov $2,$0
 mov $3,2
 lpb $0,1
-  mov $4,4
   sub $3,1
   sub $2,2
   gcd $0,$3
   sub $0,1
-  sub $3,$4
-  add $3,6
+  add $3,2
   add $0,$2
   add $2,1
 lpe

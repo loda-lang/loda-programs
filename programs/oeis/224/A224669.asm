@@ -6,10 +6,9 @@ mul $0,2
 add $0,3
 lpb $0,1
   add $2,1
-  mov $4,2
   sub $0,1
   add $5,5
-  add $4,4
+  mov $4,6
   add $4,$5
   add $2,1
   mov $3,$5

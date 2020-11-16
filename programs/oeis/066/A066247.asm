@@ -4,8 +4,7 @@
 mov $8,$0
 lpb $8,1
   sub $8,1
-  mov $6,1
-  mov $1,$6
+  mov $1,1
   add $1,$0
   lpb $7,10
     gcd $1,$8

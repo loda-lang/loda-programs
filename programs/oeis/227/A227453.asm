@@ -19,8 +19,7 @@ sub $1,1
 add $5,1
 mov $0,1
 mod $3,$5
-mov $7,1
-sub $7,2
+mov $7,-1
 add $7,$1
 sub $3,10
 add $7,11

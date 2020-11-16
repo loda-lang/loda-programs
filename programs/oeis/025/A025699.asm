@@ -16,21 +16,16 @@ lpb $16,1
     sub $13,1
     mov $0,$11
     sub $0,$13
-    mov $3,2
     mov $2,$0
-    sub $2,$3
+    sub $2,2
     mod $2,17
     mov $7,1
     mov $10,$2
-    mov $9,69
-    mov $3,1
-    add $10,$3
-    mov $4,$9
-    mov $0,$4
-    mov $9,1
+    add $10,1
+    mov $0,69
     sub $0,$10
     mov $10,2
-    sub $9,1
+    mov $9,0
     lpb $0,1
       sub $0,1
       mul $10,2

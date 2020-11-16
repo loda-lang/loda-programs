@@ -3,10 +3,8 @@
 
 mov $3,1
 lpb $0,1
-  mov $4,128
-  mov $5,$4
   add $0,$3
-  gcd $0,$5
+  gcd $0,128
   mov $3,$0
   mov $2,$0
 lpe

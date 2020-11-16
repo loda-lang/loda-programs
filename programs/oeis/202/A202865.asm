@@ -23,17 +23,14 @@ lpb $14,1
     add $6,1
     lpb $0,1
       mov $1,$6
-      mov $0,4
       mul $1,$7
-      mov $7,1
-      add $6,$7
+      add $6,1
       mov $3,1
       mov $8,$1
       mov $5,$8
-      sub $0,1
       mul $6,$5
       mul $3,$6
-      mul $3,$0
+      mul $3,3
       trn $0,$6
       mov $4,$3
     lpe

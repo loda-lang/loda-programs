@@ -19,10 +19,8 @@ lpb $12,1
     mov $5,$0
     add $5,$0
     bin $5,$0
-    mov $3,1
     mov $1,$0
-    add $1,2
-    sub $1,$3
+    add $1,1
     div $5,$1
     mov $1,$5
     add $8,$1

@@ -7,10 +7,8 @@ lpb $3,1
   sub $3,1
   add $5,1
   mov $1,7
-  mov $0,$1
   mul $1,$5
-  mod $0,4
-  fac $0
+  mov $0,6
   gcd $0,$1
   lpb $0,1
     pow $0,$2

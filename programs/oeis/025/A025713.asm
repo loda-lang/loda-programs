@@ -24,9 +24,8 @@ lpb $21,1
       trn $0,1
       mov $3,$0
       mov $4,2
-      mov $1,3
       pow $4,$3
-      log $4,$1
+      log $4,3
       mul $4,6
       mov $1,$4
       mov $15,$14

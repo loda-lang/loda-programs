@@ -9,13 +9,10 @@ lpb $3,1
   sub $0,$3
   mov $2,$0
   mul $0,$2
-  mov $5,3
-  add $5,6
-  mov $4,4
-  mul $4,2
+  mov $4,8
   add $0,9
   add $4,$0
-  add $5,10
+  mov $5,19
   add $4,1
   cmp $6,8
   lpb $0,1

@@ -21,8 +21,7 @@ mov $3,1
 mov $4,1
 add $7,2
 lpb $0,1
-  mov $5,1
-  add $7,$5
+  add $7,1
   add $3,$1
   pow $3,2
   add $4,$7

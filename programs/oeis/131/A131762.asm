@@ -18,12 +18,9 @@ lpb $0,1
   add $3,$2
   sub $0,1
 lpe
-mov $1,7
 sub $7,2
 add $7,$3
-mov $8,$1
-pow $8,2
-sub $5,$8
+sub $5,49
 mov $0,$5
 add $7,$0
 mov $3,4

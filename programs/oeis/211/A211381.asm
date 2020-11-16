@@ -39,18 +39,13 @@ lpb $15,1
         add $2,$6
         gcd $4,$0
         mul $2,$4
-        mov $1,2
-        add $1,1
-        mov $3,2
         add $2,$0
-        div $2,$3
-        sub $2,1
-        sub $2,$3
+        div $2,2
+        sub $2,3
         sub $0,$0
         mov $3,1
         mul $3,$2
-        add $3,$1
-        sub $3,1
+        add $3,2
         sub $0,2
       lpe
       mov $1,$3
