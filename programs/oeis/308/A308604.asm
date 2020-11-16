@@ -12,23 +12,19 @@ lpb $0,1
   mul $2,$3
   trn $7,1
   add $7,1
-  mov $0,1
-  mov $5,2
   div $2,2
-  mov $1,2
-  add $0,$5
-  add $7,$1
+  mov $0,3
+  add $7,2
   add $2,2
 lpe
 add $2,1
 mul $7,2
 mul $2,2
-mov $0,2
-add $7,$0
+add $7,2
 sub $2,$7
 mov $1,$2
 add $1,2
 mov $4,$6
 mul $4,$6
-mov $8,$4
-add $1,$8
+mov $5,$4
+add $1,$5

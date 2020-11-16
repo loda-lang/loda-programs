@@ -4,15 +4,12 @@
 mov $4,$0
 gcd $0,2
 lpb $0,1
-  mov $1,1
-  mov $2,$1
-  add $2,1
+  mov $2,2
   trn $4,2
   add $2,$4
   mov $0,1
 lpe
-mov $4,8
-add $4,2
+mov $4,10
 add $3,$2
 mov $1,$3
 pow $4,$1

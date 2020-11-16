@@ -20,9 +20,8 @@ lpb $14,1
   sub $2,$0
   div $0,2
   mov $7,$0
-  mov $4,2
   pow $7,2
-  add $7,$4
+  add $7,2
   mov $0,$7
   add $2,$0
   mov $1,$2

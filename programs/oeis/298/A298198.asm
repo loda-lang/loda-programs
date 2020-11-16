@@ -7,9 +7,8 @@ mov $4,$0
 lpb $0,1
   mul $4,3
   sub $0,1
-  mov $3,18
   add $4,3
-  add $3,36
+  mov $3,54
   mul $2,2
 lpe
 mul $4,$3

@@ -5,25 +5,23 @@ mov $3,$0
 trn $0,1
 lpb $0,1
   sub $0,3
-  mov $2,2
   trn $0,6
-  add $0,5
-  sub $0,$2
+  add $0,3
   add $5,4
   add $0,$5
   sub $0,1
   mov $1,0
   mov $4,$0
   sub $4,5
-  sub $0,$2
-  mov $6,$4
+  sub $0,2
+  mov $2,$4
   sub $0,1
-  add $1,$6
-  sub $0,$6
-  sub $6,$5
-  add $6,$2
-  trn $6,$0
-  mov $0,$6
+  add $1,$2
+  sub $0,$2
+  sub $2,$5
+  add $2,2
+  trn $2,$0
+  mov $0,$2
 lpe
 lpb $3,1
   add $1,5

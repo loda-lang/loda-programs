@@ -12,7 +12,7 @@ lpb $2,1
   mov $7,$3
   mov $0,1
   mov $1,$7
-  mov $7,$0
+  mov $7,1
   mod $1,2
   mul $1,2
   lpb $0,1

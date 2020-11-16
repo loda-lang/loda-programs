@@ -14,15 +14,11 @@ lpb $3,1
     sub $9,1
     add $0,$9
     sub $0,1
-    mov $1,1
     mov $4,1
     add $4,$0
     mov $2,21
-    trn $1,$2
-    add $1,36
     mul $2,$4
-    add $1,1
-    div $2,$1
+    div $2,37
     mov $1,$2
     mov $10,$9
     lpb $10,1

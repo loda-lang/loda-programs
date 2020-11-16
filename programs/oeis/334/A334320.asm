@@ -19,10 +19,9 @@ lpb $2,1
     add $0,2
     mul $0,$5
     cmp $1,$0
-    mov $5,1
     add $0,6
     add $1,$0
-    mov $6,$5
+    mov $6,1
     mul $6,$0
     lpb $0,1
       div $0,$6

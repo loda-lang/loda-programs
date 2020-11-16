@@ -8,8 +8,7 @@ lpb $5,1
   add $5,1
   log $5,2
   add $6,$5
-  mov $1,1
-  sub $5,$1
+  sub $5,1
 lpe
 mov $4,$6
 mov $1,$4

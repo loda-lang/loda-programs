@@ -7,7 +7,7 @@ pow $1,4
 mod $1,3
 lpb $0,1
   mov $0,4
-  trn $1,$0
+  trn $1,4
 lpe
 add $1,2
 mov $3,$4

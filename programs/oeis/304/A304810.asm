@@ -8,10 +8,7 @@ mov $2,$0
 add $1,$0
 sub $2,3
 lpb $2,13
-  mov $4,1
-  add $4,6
-  sub $2,$4
-  add $2,1
+  sub $2,6
   sub $4,$1
   gcd $4,$2
   add $1,1

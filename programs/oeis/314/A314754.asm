@@ -9,16 +9,14 @@ lpb $0,1
   mov $2,$0
   mov $6,$2
   add $3,$6
-  mov $1,2
-  add $1,1
   mov $4,$3
-  add $2,$1
+  add $2,3
   add $6,$2
   sub $0,1
   div $2,$6
   add $2,$4
   mod $2,10
-  sub $2,$1
+  sub $2,3
   add $0,2
   add $2,6
   sub $2,$0

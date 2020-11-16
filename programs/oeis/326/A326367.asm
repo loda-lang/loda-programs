@@ -15,10 +15,8 @@ lpb $14,1
     sub $0,$11
     mov $6,$0
     mov $5,$6
-    mov $6,5
     bin $5,2
-    pow $6,2
-    add $6,2
+    mov $6,27
     mov $2,$5
     mul $6,$2
     trn $6,3

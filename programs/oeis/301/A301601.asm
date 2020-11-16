@@ -12,8 +12,7 @@ lpb $2,1
     add $1,1
   lpe
   add $1,4
-  mov $2,2
-  sub $2,1
+  mov $2,1
   add $1,6
 lpe
 add $1,18

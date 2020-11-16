@@ -13,8 +13,7 @@ lpb $9,1
   mov $2,$0
   lpb $2,1
     lpb $4,1
-      mov $1,1
-      mov $5,$1
+      mov $5,1
       cmp $2,2
       sub $5,$2
       mov $4,2

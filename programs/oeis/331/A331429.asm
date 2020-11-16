@@ -24,8 +24,7 @@ lpb $17,1
       mov $1,$0
       mov $8,1
       add $8,$0
-      mov $6,1
-      sub $8,$6
+      sub $8,1
       mov $4,$0
       add $4,$1
       lpb $0,1
@@ -38,9 +37,7 @@ lpb $17,1
         mov $1,$3
         mod $0,2
         mov $8,6
-        mov $7,6
-        sub $3,$7
-        add $3,1
+        sub $3,5
         mov $4,$1
       lpe
       mov $1,$3

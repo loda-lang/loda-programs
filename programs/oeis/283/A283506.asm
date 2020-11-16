@@ -3,19 +3,17 @@
 
 add $0,1
 lpb $0,1
-  add $4,$2
+  add $3,$2
   trn $1,1
   mul $1,2
   add $1,2
   mov $2,4
-  trn $4,4
-  sub $2,$4
+  trn $3,4
+  sub $2,$3
   sub $0,1
-  trn $4,2
-  add $4,1
+  trn $3,2
+  add $3,1
 lpe
-mov $3,4
-mov $4,$3
 sub $2,3
-trn $1,$4
+trn $1,4
 add $1,$2

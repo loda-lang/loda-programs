@@ -17,9 +17,8 @@ lpb $3,1
     mov $2,$0
     lpb $2,1
       mov $1,$2
-      mov $2,2
       add $1,1
-      trn $2,3
+      mov $2,0
       mul $1,13
     lpe
     div $1,21

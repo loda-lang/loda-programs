@@ -10,13 +10,12 @@ lpb $2,1
   div $5,2
   div $0,2
   mov $3,$0
-  mov $4,3
   mul $3,4
   add $3,$2
   mul $5,6
   add $3,$5
   mov $0,$3
-  add $0,$4
+  add $0,3
   add $1,$0
   trn $2,$3
   div $1,2

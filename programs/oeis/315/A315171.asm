@@ -12,10 +12,7 @@ lpb $0,1
   sub $0,$5
   div $0,10
   sub $5,68
-  sub $0,3
-  mov $1,2
-  add $0,3
-  mul $0,$1
+  mul $0,2
   add $0,1
 lpe
 mov $1,$0

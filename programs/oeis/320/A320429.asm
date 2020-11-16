@@ -23,18 +23,10 @@ lpb $18,1
       mov $0,$9
       add $0,$11
       sub $0,1
-      mov $1,2
-      mov $7,$1
       mul $0,2
-      mov $2,$1
-      div $2,$2
-      add $2,1
-      mul $7,$2
-      add $0,3
-      sub $0,$7
-      mov $1,3
+      sub $0,1
       div $0,3
-      sub $1,1
+      mov $1,2
       lpb $0,1
         sub $0,1
         mul $1,4

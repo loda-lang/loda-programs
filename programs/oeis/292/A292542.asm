@@ -5,13 +5,11 @@ mul $0,2
 mov $2,2
 lpb $0,1
   sub $0,1
-  mul $1,$5
+  mul $1,$3
   mul $2,2
   mov $4,$1
-  mov $3,14
-  mov $5,$2
-  mov $1,$3
-  sub $1,1
+  mov $3,$2
+  mov $1,13
 lpe
 mov $1,$4
 div $1,12

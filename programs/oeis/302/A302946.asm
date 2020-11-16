@@ -10,9 +10,7 @@ lpb $0,1
   add $3,$2
   sub $0,1
 lpe
-mul $3,2
-mov $2,2
-mul $3,$2
+mul $3,4
 pow $3,2
 mov $1,$3
 div $1,128

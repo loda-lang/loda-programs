@@ -15,26 +15,23 @@ lpb $18,1
     clr $8,8
     add $8,2
     add $4,2
-    mov $3,2
     sub $2,6
     mov $7,1
-    sub $0,$7
+    sub $0,1
     mov $6,$8
     sub $7,$2
     add $2,$6
     mov $8,$2
     div $0,$2
     mul $6,$0
-    sub $6,$3
+    sub $6,2
     mov $1,$7
     pow $4,2
-    mov $7,1
-    mov $5,1
-    add $4,$5
+    add $4,1
     gcd $2,$4
     add $1,$8
-    add $7,$5
-    sub $2,$7
+    mov $7,2
+    sub $2,2
     add $1,$6
     add $2,$1
     mov $0,5

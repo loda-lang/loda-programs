@@ -12,8 +12,7 @@ add $2,2
 add $3,$2
 add $3,1
 div $3,6
-mov $4,8
-add $3,$4
+add $3,8
 mov $1,$3
 sub $1,8
 mul $1,4

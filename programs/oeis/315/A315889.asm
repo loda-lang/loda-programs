@@ -22,8 +22,7 @@ add $0,$4
 lpb $0,1
   sub $0,1
   add $1,$4
-  mov $4,2
-  sub $4,1
+  mov $4,1
   sub $1,$3
   trn $0,4
 lpe

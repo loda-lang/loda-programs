@@ -9,10 +9,9 @@ lpb $0,1
   add $2,$3
   mul $2,$3
   clr $3,1
-  mov $0,2
   add $2,1
   add $3,4
-  trn $0,8
+  mov $0,0
 lpe
 mov $0,32
 pow $0,$3

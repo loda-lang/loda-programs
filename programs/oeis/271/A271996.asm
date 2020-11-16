@@ -26,10 +26,9 @@ lpb $18,1
       trn $0,1
       mov $3,$0
       mov $4,2
-      mov $8,$4
       div $0,2
       add $4,$0
-      pow $4,$8
+      pow $4,2
       pow $1,$3
       cmp $5,$1
       add $4,$5

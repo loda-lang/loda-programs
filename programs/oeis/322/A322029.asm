@@ -9,11 +9,10 @@ lpb $3,1
   add $0,$3
   trn $0,1
   add $0,2
-  mov $5,2
-  log $0,$5
-  mov $8,$0
-  add $8,4
-  mov $6,$8
+  log $0,2
+  mov $5,$0
+  add $5,4
+  mov $6,$5
   bin $6,6
   mov $0,$6
   mov $1,$0

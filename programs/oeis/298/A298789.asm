@@ -12,8 +12,7 @@ lpb $0,1
   sub $3,$0
   gcd $3,$1
   div $3,3
-  mov $1,2
-  div $1,2
+  mov $1,1
   mul $1,$3
   pow $3,2
   mov $0,4

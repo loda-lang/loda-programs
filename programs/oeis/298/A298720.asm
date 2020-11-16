@@ -4,15 +4,9 @@
 mov $3,$0
 trn $0,8
 lpb $0,1
-  add $0,2
-  mov $2,4
-  add $2,5
-  sub $0,4
-  add $1,4
-  add $1,$2
-  sub $1,5
-  sub $2,2
-  trn $0,$2
+  sub $0,2
+  add $1,8
+  trn $0,7
   mov $2,1
 lpe
 sub $1,$2

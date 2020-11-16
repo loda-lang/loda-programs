@@ -15,15 +15,14 @@ lpb $11,1
   mov $6,$7
   mov $2,$0
   mov $5,3
-  add $6,$5
+  add $6,3
   mod $0,2
   lpb $2,1
     mov $4,2
     lpb $5,1
-      mov $7,2
       sub $6,$0
       mov $3,$6
-      add $2,$7
+      add $2,2
       sub $5,$5
       mov $8,$2
       mul $8,$4

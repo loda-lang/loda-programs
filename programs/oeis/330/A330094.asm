@@ -7,12 +7,10 @@ add $2,1
 lpb $2,1
   add $3,$0
   mov $6,$2
-  mov $4,1
   add $6,1
   mul $6,$3
-  mov $0,1
-  add $4,$0
-  add $3,$0
+  mov $4,2
+  add $3,1
   lpb $4,1
     mul $3,4
     div $6,5
@@ -29,10 +27,8 @@ lpb $2,1
     mov $2,$0
     add $7,$3
   lpe
-  mov $4,6
   add $3,$7
-  div $3,$4
+  div $3,6
 lpe
 mov $1,$3
-trn $1,1
-add $1,2
+add $1,1

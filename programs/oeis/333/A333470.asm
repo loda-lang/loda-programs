@@ -4,19 +4,16 @@
 mov $6,$0
 mov $7,$0
 add $0,1
-mov $8,-11
-bin $8,$7
-mov $7,$8
+mov $5,-11
+bin $5,$7
+mov $7,$5
 mul $7,6
 add $7,1
 lpb $0,1
   add $7,1
   div $0,2
 lpe
-mov $5,1
 sub $2,$7
-add $2,11
-sub $2,$5
 mod $2,2
 add $2,6
 mov $1,$2

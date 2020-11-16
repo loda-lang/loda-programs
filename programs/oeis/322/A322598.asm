@@ -18,11 +18,8 @@ lpb $21,1
     sub $0,$18
     mov $3,$0
     mov $1,$0
-    mov $2,2
-    mov $0,3
-    mov $7,$2
-    mod $1,$0
-    gcd $3,$7
+    mod $1,3
+    gcd $3,2
     mov $7,$3
     add $1,$7
     sub $1,1

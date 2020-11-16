@@ -31,20 +31,15 @@ lpb $23,1
         mov $0,$11
         add $0,$13
         sub $0,1
-        mov $7,0
         mov $2,$0
-        add $7,6
-        add $2,$7
+        add $2,6
         lpb $0,1
           mul $2,$0
-          add $2,10
-          mov $0,1
-          sub $2,1
-          sub $0,1
+          add $2,9
+          mov $0,0
         lpe
         mov $5,$2
-        mov $8,4
-        sub $5,$8
+        sub $5,4
         div $2,2
         mov $0,$5
         add $0,$2

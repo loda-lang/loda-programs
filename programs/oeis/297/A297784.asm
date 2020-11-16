@@ -13,9 +13,8 @@ lpb $0,1
   pow $4,$2
   sub $4,12
   sub $0,$4
-  mov $2,1
   add $0,2
-  mov $3,$2
+  mov $3,1
 lpe
 mov $1,$3
 add $1,1

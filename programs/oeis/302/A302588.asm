@@ -17,17 +17,16 @@ lpb $14,1
     mov $0,$9
     sub $0,$11
     mov $8,2
-    mov $6,$8
+    mov $6,2
     sub $1,$1
     lpb $0,1
       sub $0,1
       mov $5,$0
-      mov $4,1
       trn $8,$1
       trn $0,2
       mov $2,1
       trn $1,8
-      add $5,$4
+      add $5,1
       add $8,$1
       trn $2,$8
       mov $1,$5

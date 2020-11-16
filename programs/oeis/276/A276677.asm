@@ -17,22 +17,16 @@ lpb $16,1
     mov $0,$11
     sub $0,$13
     mov $6,$0
-    mov $2,1
-    mov $4,$2
-    mov $8,2
-    add $4,$2
     mov $1,$6
     mul $1,2
-    mov $3,2
     sub $1,4
     mov $5,$1
-    mov $1,$3
     mov $10,$6
-    div $5,$1
-    div $8,2
-    mov $0,$4
-    div $5,$4
-    add $5,$8
+    div $5,2
+    mov $8,1
+    mov $0,2
+    div $5,2
+    add $5,1
     lpb $0,1
       mov $1,$10
       sub $1,1
