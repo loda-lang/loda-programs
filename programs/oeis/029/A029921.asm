@@ -1,0 +1,111 @@
+; A029921: Convert n from miles to kilometers (km).
+; 0,2,3,5,6,8,10,11,13,14,16,18,19,21,23,24,26,27,29,31,32,34,35,37,39,40,42,43,45,47,48,50,51,53,55,56,58,60,61,63,64,66,68,69,71,72,74,76,77,79,80,82,84,85,87,89
+
+mov $11,$0
+add $9,3
+mov $10,1
+mov $2,2
+add $0,$9
+add $10,2
+mov $9,1
+mul $2,$0
+add $3,$0
+mul $9,7
+sub $0,5
+mov $6,$2
+mov $10,$0
+mov $0,1
+add $0,$0
+add $4,$2
+sub $4,5
+mul $2,2
+mul $4,64
+div $9,$0
+div $9,$3
+mov $1,0
+mov $0,-3
+mov $9,4
+add $8,$3
+add $1,$4
+lpb $0,1
+  mov $7,1
+  add $9,2
+  mul $10,$7
+  mov $3,$10
+  mov $9,0
+  mov $7,1
+  mov $3,1
+  mov $2,1
+  sub $9,$2
+  mov $8,6
+  mov $5,$7
+  mov $6,2
+  mov $1,$5
+  sub $10,23
+  div $9,2
+  div $0,2
+  sub $4,$7
+  mov $8,$7
+  sub $7,$9
+  sub $5,2
+  add $3,6
+  add $1,$4
+  mul $0,2
+  mov $3,$9
+  sub $4,$2
+  div $0,$2
+lpe
+add $4,$2
+div $3,$1
+add $1,2
+mov $7,1
+add $3,$0
+div $5,2
+sub $8,$8
+add $7,4
+add $8,1
+add $4,$5
+mul $5,$8
+mov $2,$3
+mov $1,151
+add $0,17
+pow $3,$8
+mov $8,1
+add $7,1
+add $4,43
+add $10,4
+mul $10,2
+mov $8,$1
+mov $7,$2
+mov $7,1
+mov $3,3
+mov $5,1
+mul $1,3
+sub $4,$3
+mov $3,2
+mod $1,$5
+add $6,$4
+sub $9,$6
+add $1,$2
+mov $4,$4
+mov $8,3
+sub $0,$1
+mov $5,10
+mov $2,1
+mov $6,11
+add $3,$2
+mov $1,1
+div $10,6
+mul $2,$4
+mov $2,7
+mul $0,$4
+div $4,210
+mov $1,3
+sub $9,1
+mov $1,$4
+mov $12,$11
+mov $13,$12
+mul $13,1
+add $1,$13
+mul $12,$11
+mul $12,$11
