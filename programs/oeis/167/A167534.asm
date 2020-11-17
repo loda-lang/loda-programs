@@ -7,16 +7,14 @@ mov $1,$0
 add $1,1
 lpb $0,1
   sub $0,1
-  mov $4,4
-  add $5,11
+  add $4,11
   trn $0,1
-  sub $4,2
-  sub $1,$4
-  add $1,$5
-  add $5,6
-  add $1,$5
-  add $1,$5
-  mov $5,$3
+  sub $1,2
+  add $1,$4
+  add $4,6
+  add $1,$4
+  add $1,$4
+  mov $4,$3
 lpe
 lpb $2,1
   add $1,17

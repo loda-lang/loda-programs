@@ -8,21 +8,17 @@ lpb $4,1
   sub $4,1
   mov $0,$6
   sub $0,$4
-  mov $2,7
-  sub $2,3
+  mov $2,4
   mul $2,$0
   mov $1,1
   lpb $0,1
-    mov $0,8
     add $1,8
     mov $3,$2
     add $1,2
     mul $3,2
-    mov $2,5
     sub $3,1
-    mul $2,8
-    div $0,6
-    div $3,$2
+    mov $0,1
+    div $3,40
   lpe
   pow $1,$3
   add $5,$1

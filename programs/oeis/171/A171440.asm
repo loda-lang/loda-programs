@@ -48,12 +48,10 @@ lpb $2,1
             mov $9,4
             mul $9,$0
             add $0,5
-            mov $7,4
             mov $3,$9
-            add $7,5
             mul $0,$3
             add $0,6
-            add $1,$7
+            add $1,9
             mov $7,$0
             trn $1,$7
             gcd $1,$7

@@ -16,18 +16,15 @@ lpb $18,1
     add $0,$14
     sub $0,1
     mov $3,8
-    sub $0,1
-    mov $8,2
-    add $0,$8
+    add $0,1
     mov $5,75
     lpb $2,10
       mov $6,3
       lpb $2,5
         lpb $3,4
-          mov $1,1
-          mov $3,$1
+          mov $3,1
           mov $4,$6
-          mod $6,$3
+          mod $6,1
           mul $0,4
         lpe
       lpe

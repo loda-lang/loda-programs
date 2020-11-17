@@ -37,20 +37,11 @@ lpb $28,1
           mov $0,$11
           add $0,$13
           sub $0,1
-          mov $1,2
-          mov $10,10
-          mov $9,4
-          mov $2,9
-          mul $9,$1
-          mov $6,$10
-          add $6,5
-          mul $6,2
-          add $9,5
-          div $6,$2
-          add $0,$6
+          mov $6,3
+          add $0,3
           mov $4,$0
           pow $6,$4
-          div $6,$9
+          div $6,13
           mov $1,$6
           mov $14,$13
           lpb $14,1

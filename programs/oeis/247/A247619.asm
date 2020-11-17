@@ -20,9 +20,8 @@ lpb $16,1
     lpb $0,1
       mov $9,$5
       sub $0,1
-      mov $8,1
       mul $2,2
-      trn $0,$8
+      trn $0,1
       mov $8,$9
       add $2,1
       mov $5,$2

@@ -8,15 +8,9 @@ lpb $2,1
   sub $2,1
   mov $0,$4
   sub $0,$2
-  mov $5,3
-  lpb $0,1
-    mov $5,5
-    mov $0,$5
-    fac $0
-  lpe
   div $0,3
-  add $0,$5
-  bin $0,$5
+  add $0,3
+  bin $0,3
   mov $1,$0
   add $3,$1
 lpe

@@ -17,10 +17,8 @@ lpb $16,1
     mov $5,$0
     mov $3,$5
     mov $4,$3
-    mov $2,7
     mov $8,$4
-    add $2,1
-    add $8,$2
+    add $8,8
     gcd $4,2
     sub $8,3
     mov $6,4

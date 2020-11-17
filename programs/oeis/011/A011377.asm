@@ -9,12 +9,11 @@ lpb $4,1
   mov $0,$2
   sub $0,$4
   add $0,3
-  mov $3,2
-  mov $1,$3
+  mov $1,2
   pow $1,$0
   add $1,4
   div $1,6
   sub $1,1
-  add $5,$1
+  add $3,$1
 lpe
-mov $1,$5
+mov $1,$3

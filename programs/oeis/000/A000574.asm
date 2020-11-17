@@ -6,13 +6,11 @@ mov $3,5
 add $3,$2
 add $3,3
 mov $0,2
-add $3,$0
-mov $1,$0
-mul $1,2
+add $3,2
 add $2,2
 add $0,$2
 add $3,5
-bin $0,$1
+bin $0,4
 mov $2,$0
 mul $3,$2
 mov $1,$3

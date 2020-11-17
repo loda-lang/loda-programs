@@ -4,10 +4,7 @@
 mov $3,$0
 mov $4,1
 add $4,$3
-mov $0,2
-add $0,32
 mov $2,$4
-mul $2,4
-mul $2,$0
+mul $2,136
 div $2,78
 mov $1,$2

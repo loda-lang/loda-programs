@@ -7,7 +7,7 @@ lpb $2,1
   lpb $4,1
     mov $3,1
     mov $4,1
-    mov $1,$3
+    mov $1,1
   lpe
   sub $2,$3
   sub $1,$2

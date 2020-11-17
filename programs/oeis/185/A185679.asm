@@ -4,15 +4,9 @@
 mov $2,$0
 mov $3,$2
 trn $3,1
-mov $0,3
-add $0,2
 add $3,1
-mul $0,2
-div $0,2
-add $0,2
 pow $3,2
 mov $4,$3
-add $0,3
-log $4,$0
+log $4,10
 mov $1,$4
 add $1,1

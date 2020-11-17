@@ -17,7 +17,7 @@ lpb $7,1
     mov $2,$0
     mov $8,10
     mov $4,$2
-    mov $6,$8
+    mov $6,10
     lpb $2,1
       lpb $4,1
         trn $4,$8

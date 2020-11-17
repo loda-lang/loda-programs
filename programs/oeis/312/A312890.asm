@@ -14,12 +14,10 @@ lpb $2,1
   mov $6,$4
   lpb $0,1
     bin $6,2
-    mov $4,6
-    gcd $6,$4
+    gcd $6,6
     mov $1,2
     trn $1,$6
-    mov $0,1
-    add $0,3
+    mov $0,4
   lpe
   add $1,$0
   mul $1,2

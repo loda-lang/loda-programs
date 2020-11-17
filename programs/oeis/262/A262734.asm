@@ -10,10 +10,8 @@ mul $0,2
 mov $2,$0
 mov $3,$2
 mul $4,2
-mov $5,7
 trn $4,$3
-add $4,11
-sub $4,$5
+add $4,4
 mov $1,$4
 mul $1,2
 add $1,$3

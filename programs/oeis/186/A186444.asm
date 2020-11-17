@@ -10,13 +10,9 @@ lpb $16,1
   sub $0,$16
   add $0,1
   mov $2,$0
-  mov $8,4
-  mov $0,3
   add $3,$2
-  mov $7,$8
-  pow $0,6
-  gcd $3,$0
-  mod $3,$7
+  gcd $3,729
+  mod $3,4
   mov $1,$3
   div $1,2
   add $15,$1

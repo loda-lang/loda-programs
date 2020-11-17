@@ -4,11 +4,9 @@
 lpb $0,1
   add $1,2
   sub $0,1
-  add $1,4
-  mov $2,3
-  sub $1,2
+  add $1,2
   trn $0,3
-  sub $2,1
+  mov $2,2
   trn $2,$0
   trn $0,3
   add $0,1

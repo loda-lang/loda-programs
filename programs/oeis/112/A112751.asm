@@ -11,8 +11,7 @@ lpb $4,1
   add $0,1
   mov $1,$0
   mov $0,4
-  mov $3,45
-  pow $3,2
+  mov $3,2025
   mod $3,$1
   trn $0,$3
   mov $1,$0

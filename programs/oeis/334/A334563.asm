@@ -4,10 +4,9 @@
 mov $2,$0
 add $0,3
 mov $4,$2
-mov $2,3
 mov $3,$0
 mul $3,$4
-add $3,$2
+add $3,3
 trn $3,25
 mov $1,$3
 div $1,2

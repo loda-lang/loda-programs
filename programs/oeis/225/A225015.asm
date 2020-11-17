@@ -32,7 +32,7 @@ lpb $4,1
         mov $7,1
         add $5,$2
         bin $5,$2
-        add $0,$7
+        add $0,1
         add $8,2
         div $7,$0
         add $2,$8

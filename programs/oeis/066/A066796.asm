@@ -8,8 +8,7 @@ lpb $4,1
   sub $4,1
   mov $0,$3
   sub $0,$4
-  mov $5,3
-  div $5,$5
+  mov $5,1
   add $5,$0
   mov $1,$5
   mul $1,2

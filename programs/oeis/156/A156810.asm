@@ -12,8 +12,7 @@ mov $5,1
 sub $5,$1
 sub $0,$1
 sub $6,$1
-mov $1,1
-add $6,$1
+add $6,1
 add $5,1
 sub $3,$3
 add $5,$0

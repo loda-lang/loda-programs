@@ -14,7 +14,6 @@ lpb $2,1
     mov $1,$4
   lpe
   mov $5,$4
-  mov $1,8
-  div $5,$1
+  div $5,8
 lpe
 mov $1,$5

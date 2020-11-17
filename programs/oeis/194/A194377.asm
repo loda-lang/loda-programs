@@ -14,21 +14,18 @@ lpb $13,1
   add $6,2
   lpb $0,1
     sub $6,$6
-    mov $3,6
     sub $0,8
-    add $10,$3
-    add $10,4
+    add $10,10
     sub $0,$10
     mov $2,$0
     add $0,1
     mod $2,10
     sub $2,$0
-    mov $8,1
     sub $6,$2
     add $2,1
     mov $0,1
     mov $9,$6
-    mov $10,$8
+    mov $10,1
     sub $0,$9
     mov $6,$0
     div $0,10

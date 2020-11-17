@@ -8,16 +8,12 @@ lpb $4,1
   sub $4,1
   mov $0,$2
   sub $0,$4
-  mov $3,8
-  mov $6,2
-  add $0,$6
-  fac $3
-  gcd $0,$3
+  add $0,2
+  gcd $0,40320
   lpb $0,1
     sub $0,7
     gcd $0,2
-    sub $6,$6
-    pow $1,$6
+    pow $1,$3
     mul $1,2
   lpe
   div $1,2

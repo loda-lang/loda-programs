@@ -9,16 +9,13 @@ lpb $0,1
   trn $3,2
   add $4,$1
   add $4,36
-  mov $1,3
-  mov $2,2
-  mul $4,$1
+  mul $4,3
   mov $5,$3
-  add $5,$1
-  add $2,1
+  add $5,3
+  mov $2,3
   cmp $2,$5
   mov $1,$2
-  mov $3,8
-  sub $5,$3
+  sub $5,8
   gcd $1,$5
   sub $0,1
   mov $3,5

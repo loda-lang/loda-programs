@@ -9,8 +9,7 @@ lpb $0,1
   bin $0,$5
   sub $0,1
   mov $2,$1
-  mov $5,89
-  add $8,$5
+  add $8,89
 lpe
 mov $0,$8
 mov $4,$2

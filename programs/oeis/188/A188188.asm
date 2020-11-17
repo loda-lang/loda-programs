@@ -5,27 +5,23 @@ mov $10,1
 lpb $10,1
   sub $10,1
   mov $9,$0
-  mov $11,2
-  lpb $11,1
-    sub $11,1
+  mov $4,2
+  lpb $4,1
+    sub $4,1
     mov $0,$9
     sub $0,1
-    mov $5,20
-    mov $4,$5
     mov $1,$0
-    add $4,4
-    mov $7,$4
-    add $1,$4
-    mov $3,$7
+    add $1,24
+    mov $3,24
     sub $1,$0
-    add $1,$5
-    add $7,$5
+    add $1,20
+    mov $7,44
     mov $6,$0
     mov $2,1
     add $2,$0
     add $3,$1
     mul $7,$2
-    add $0,$4
+    add $0,24
     add $6,1
     log $0,4
     sub $6,4

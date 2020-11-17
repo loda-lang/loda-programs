@@ -11,13 +11,12 @@ lpb $2,1
   add $0,1
   mov $7,$0
   lpb $0,1
-    mov $8,$6
+    mov $3,$6
     mov $0,4
-    mov $3,1
-    add $8,$3
+    add $3,1
   lpe
-  add $8,9
-  gcd $7,$8
+  add $3,9
+  gcd $7,$3
   add $0,$7
   add $0,4
   mov $6,$0

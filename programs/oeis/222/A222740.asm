@@ -10,15 +10,12 @@ mov $2,$7
 div $2,2
 sub $6,1
 lpb $0,1
-  mov $5,2
-  add $2,$5
-  mov $3,2
-  trn $5,3
+  add $2,2
   mov $4,$2
-  div $4,$3
+  div $4,2
   mod $4,2
   sub $4,2
-  add $5,1
+  mov $5,1
   add $5,$4
   mov $0,$1
   sub $5,$6
@@ -27,11 +24,11 @@ mod $6,$5
 pow $6,2
 mov $1,$6
 add $1,1
-mov $10,$9
-mov $8,$10
+mov $3,$9
+mov $8,$3
 mul $8,4
 add $1,$8
-mul $10,$9
-mov $8,$10
+mul $3,$9
+mov $8,$3
 mul $8,4
 add $1,$8

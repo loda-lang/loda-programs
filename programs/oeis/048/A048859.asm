@@ -6,17 +6,16 @@ mov $1,$0
 mov $4,1
 add $0,2
 lpb $0,1
-  mov $5,$4
+  mov $2,$4
   add $4,1
   sub $0,$4
   sub $0,1
-  mov $3,$5
+  mov $3,$2
   sub $1,2
   add $0,1
   mov $4,$3
-  mov $2,5
   add $1,$4
-  trn $0,$2
+  trn $0,5
   add $0,4
   add $4,1
   add $1,4

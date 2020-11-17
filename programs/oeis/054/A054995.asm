@@ -10,8 +10,7 @@ lpb $0,1
   mul $5,2
   add $2,$5
   add $2,1
-  mov $1,9
-  add $3,$1
+  add $3,9
   mod $3,$2
   sub $5,$4
   gcd $5,$3

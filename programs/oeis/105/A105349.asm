@@ -14,10 +14,8 @@ lpb $9,1
   add $3,2
   pow $3,2
   log $3,6
-  mov $5,1
   mov $6,$3
-  sub $5,4
-  sub $6,$5
+  sub $6,-3
   div $6,2
   mov $5,$6
   mov $2,$5

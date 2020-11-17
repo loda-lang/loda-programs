@@ -9,9 +9,8 @@ mov $1,2
 add $5,4
 pow $5,2
 lpb $2,1
-  mov $6,2
   mov $2,$3
-  mov $3,$6
+  mov $3,2
   lpb $5,1
     add $3,4
     trn $5,$3

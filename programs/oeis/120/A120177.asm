@@ -9,15 +9,11 @@ lpb $0,1
   div $2,5
   add $2,$1
 lpe
-mov $3,1
-add $0,840
-add $0,$3
+add $0,841
 mov $4,$2
-mov $5,$0
-add $3,2
-mul $3,2
-div $4,$3
+mov $3,$0
+div $4,6
 mov $0,$4
-add $0,$5
+add $0,$3
 mov $1,$0
 sub $1,837

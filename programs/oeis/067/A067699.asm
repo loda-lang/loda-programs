@@ -9,9 +9,8 @@ lpb $3,1
   sub $0,$3
   mov $4,$0
   mov $5,$0
-  mov $0,2
   add $4,7
-  mov $2,$0
+  mov $2,2
   lpb $2,1
     lpb $4,1
       div $5,2

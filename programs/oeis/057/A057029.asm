@@ -4,18 +4,15 @@
 mov $4,$0
 add $0,1
 mov $2,$4
-mov $4,0
-sub $4,1
 mov $3,$0
-mov $1,$4
+mov $1,-1
 lpb $0,1
   sub $0,2
   sub $3,$1
 lpe
 mul $3,2
-mov $1,2
 add $3,$2
-bin $3,$1
+bin $3,2
 div $3,4
 mov $1,$3
 add $1,1

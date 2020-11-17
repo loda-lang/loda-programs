@@ -7,9 +7,8 @@ lpb $6,1
   sub $6,1
   mov $0,$5
   sub $0,$6
-  mov $1,2
   mov $2,$0
-  pow $2,$1
+  pow $2,2
   gcd $2,4
   gcd $3,2
   lpb $2,1

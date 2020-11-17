@@ -9,13 +9,10 @@ lpe
 pow $4,$3
 mul $4,2
 add $3,1
-add $4,7
-mov $1,6
-sub $4,8
+sub $4,1
 mul $3,$4
 add $2,8
 add $2,$3
-add $2,$1
-sub $2,7
+sub $2,1
 mov $1,$2
 sub $1,7

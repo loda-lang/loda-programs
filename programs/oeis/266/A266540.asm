@@ -13,11 +13,9 @@ lpb $9,1
       div $2,2
       mov $3,2
       mov $1,$2
-      mov $6,2
-      pow $6,$6
-      add $6,4
+      mov $6,8
       mul $6,$1
-      trn $4,$3
+      trn $4,2
       mov $2,$0
       mul $1,$2
     lpe

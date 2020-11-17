@@ -4,8 +4,6 @@
 mov $7,$0
 mov $5,$0
 mov $0,2
-add $0,3
-div $0,2
 mov $3,$5
 mov $1,8
 mov $4,6

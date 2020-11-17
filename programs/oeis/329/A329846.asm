@@ -7,11 +7,9 @@ add $5,5
 mov $6,$5
 sub $6,2
 mov $2,$6
-mov $5,3
 mul $2,2
-trn $5,5
 sub $2,5
-add $5,7
+mov $5,7
 gcd $3,$2
 lpb $0,1
   mov $0,$7

@@ -11,8 +11,4 @@ lpb $0,1
   add $1,2
   add $3,$4
 lpe
-mov $5,5
-mov $4,$5
 mul $1,2
-add $1,$4
-sub $1,5

@@ -10,9 +10,7 @@ lpb $13,1
   add $0,$13
   sub $0,1
   lpb $0,1
-    mov $4,1
-    add $10,$4
-    add $10,$4
+    add $10,2
     add $0,2
     mov $6,$0
     pow $6,$10
@@ -21,10 +19,8 @@ lpb $13,1
   add $8,4
   div $6,$8
   mov $2,2
-  mov $4,2
   add $2,$6
-  mov $0,$4
-  bin $2,$0
+  bin $2,2
   mov $1,$2
   mov $14,$13
   lpb $14,1

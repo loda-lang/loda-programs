@@ -6,27 +6,19 @@ mov $6,$0
 bin $6,2
 mul $6,2
 lpb $0,1
-  mov $2,2
-  mov $0,$2
-  sub $0,1
-  mov $1,$0
-  sub $2,1
-  mul $1,9
+  mov $1,9
   mul $1,$6
-  mov $5,$2
   div $1,2
-  sub $2,6
   mov $4,$1
-  div $0,$2
-  add $5,$2
-  add $4,$5
-  sub $2,2
+  mov $0,0
+  add $4,-4
+  mov $2,-7
   sub $2,$4
 lpe
 mov $1,$2
-mov $8,$7
-mul $8,$7
-mul $8,$7
-mov $3,$8
+mov $5,$7
+mul $5,$7
+mul $5,$7
+mov $3,$5
 mul $3,4
 add $1,$3

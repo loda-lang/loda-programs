@@ -8,12 +8,11 @@ add $2,2
 mov $4,7
 bin $0,3
 add $0,4
-mov $3,3
 add $4,$0
 add $4,5
 sub $4,$2
 mov $1,2
 div $4,2
-add $4,$3
+add $4,3
 add $1,$4
 sub $1,11

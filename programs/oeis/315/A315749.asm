@@ -10,15 +10,14 @@ lpb $0,1
   mul $4,2
   sub $0,$4
   mod $2,10
-  mov $3,2
-  trn $2,$3
+  trn $2,2
   sub $0,$2
   add $5,$0
   div $0,10
 lpe
 mov $1,$0
 add $1,1
-mov $8,$7
-mov $6,$8
+mov $3,$7
+mov $6,$3
 mul $6,5
 add $1,$6

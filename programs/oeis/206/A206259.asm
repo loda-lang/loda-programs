@@ -9,8 +9,7 @@ bin $4,$0
 sub $4,8
 mov $0,8
 lpb $0,1
-  mov $3,5
-  sub $5,$3
+  sub $5,5
   add $2,$5
   add $4,18
   gcd $0,$2

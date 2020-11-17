@@ -10,13 +10,11 @@ lpb $4,1
   sub $0,$4
   mov $7,$0
   mov $2,$7
-  mov $0,4
-  fac $0
   add $2,$7
   pow $7,$5
   mov $1,$2
   add $1,7
-  mod $0,6
+  mov $0,0
   add $1,$7
   add $0,$1
   lpb $0,1

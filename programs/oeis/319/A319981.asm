@@ -3,19 +3,14 @@
 
 mov $1,1
 lpb $0,1
-  mov $3,$0
-  mov $1,2
-  add $1,1
-  mul $0,$3
-  mov $2,$1
-  gcd $2,2
+  mov $2,$0
+  mul $0,$2
   mod $0,2
   sub $0,1
-  mul $2,2
-  div $3,4
-  sub $0,$2
-  mul $1,2
-  add $3,2
+  div $2,4
+  sub $0,2
+  mov $1,6
+  add $2,2
   add $1,$0
-  div $1,$3
+  div $1,$2
 lpe

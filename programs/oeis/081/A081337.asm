@@ -15,8 +15,7 @@ lpb $0,1
   gcd $1,$4
   add $2,$1
   sub $2,1
-  mov $0,1
-  sub $0,1
+  mov $0,0
 lpe
 mov $1,$2
 trn $1,8

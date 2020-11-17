@@ -24,13 +24,10 @@ lpb $23,1
       add $3,$0
       add $5,$8
       sub $3,$5
-      mov $7,4
       add $2,4
       mov $9,$2
-      add $7,2
-      mov $0,1
       add $1,$3
-      sub $7,$0
+      mov $7,5
       add $7,$9
       mod $1,12
       sub $1,1

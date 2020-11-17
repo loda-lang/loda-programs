@@ -14,14 +14,12 @@ lpb $16,1
     sub $13,1
     mov $0,$11
     sub $0,$13
-    mov $3,9
     mov $6,$0
-    mov $2,3
-    mul $0,$2
+    mul $0,3
     trn $6,2
     sub $0,1
     add $6,$0
-    mod $0,$3
+    mod $0,9
     lpb $0,1
       cmp $6,$0
       mov $0,2

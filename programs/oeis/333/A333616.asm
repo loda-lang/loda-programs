@@ -8,18 +8,14 @@ lpb $0,1
   mov $3,$2
   add $0,1
   sub $3,6
-  mov $5,$3
-  div $5,2
-  add $0,$5
+  mov $4,$3
+  div $4,2
+  add $0,$4
   mod $2,$0
   bin $2,2
-  mul $2,2
-  mov $4,3
-  mul $2,4
-  pow $4,$4
+  mul $2,8
   trn $0,$2
-  mul $2,$4
-  mul $2,3
+  mul $2,81
 lpe
 mov $1,$2
 div $1,648

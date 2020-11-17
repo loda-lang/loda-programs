@@ -10,10 +10,8 @@ mov $1,$6
 add $5,$6
 div $5,4
 sub $5,1
-mov $0,1
-add $0,1
 sub $1,7
-gcd $1,$0
+gcd $1,2
 add $1,$5
 sub $1,2
 mov $3,$4

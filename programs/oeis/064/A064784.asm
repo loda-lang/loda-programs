@@ -6,11 +6,9 @@ mov $6,$0
 mov $4,5
 lpb $2,1
   lpb $4,1
-    mov $5,1
     sub $4,5
-    mul $5,2
     add $6,2
-    bin $6,$5
+    bin $6,2
   lpe
   mov $5,1
   lpb $6,1

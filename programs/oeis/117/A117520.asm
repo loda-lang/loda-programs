@@ -12,8 +12,7 @@ lpb $2,1
   lpb $4,1
     add $1,$2
     mov $2,2
-    mov $5,7
-    trn $4,$5
+    trn $4,7
   lpe
   add $3,$1
   bin $1,$2

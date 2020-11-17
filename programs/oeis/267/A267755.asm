@@ -4,10 +4,8 @@
 mov $4,$0
 mul $0,2
 mov $2,$0
-mov $0,6
-mov $5,$0
 mov $3,$2
-add $3,$5
+add $3,6
 mov $0,$3
 lpb $0,1
   add $1,$0

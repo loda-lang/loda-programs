@@ -15,14 +15,12 @@ lpb $0,1
   mul $3,2
   add $4,9
   mov $5,$4
-  mov $1,4
   sub $0,$5
-  mov $4,$1
   sub $0,1
   sub $3,2
   mov $5,1
   trn $5,$0
-  add $4,4
+  mov $4,8
 lpe
 mul $3,$5
 add $3,$0

@@ -12,13 +12,11 @@ lpb $11,1
   mul $3,$0
   mov $6,2
   lpb $3,2
-    mov $2,5
     mov $4,1
     add $4,$6
     add $3,1
     add $3,$1
-    add $2,1
-    trn $3,$2
+    trn $3,6
     add $6,$0
     mov $1,$4
   lpe

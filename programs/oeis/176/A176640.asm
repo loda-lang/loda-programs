@@ -16,11 +16,10 @@ lpb $2,1
     add $1,$5
   lpe
   bin $1,$0
-  mov $4,4
-  add $5,$4
+  add $5,4
   sub $5,$1
   mov $1,$5
   sub $1,3
-  add $6,$1
+  add $4,$1
 lpe
-mov $1,$6
+mov $1,$4

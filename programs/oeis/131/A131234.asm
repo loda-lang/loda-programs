@@ -3,14 +3,12 @@
 
 mov $6,$0
 mov $2,2
-mov $0,1
-mul $0,6
 mov $5,$6
-add $0,1
+mov $0,7
 pow $5,2
 mov $4,4
 mul $2,$5
-mul $2,$0
+mul $2,7
 mov $3,2
 lpb $0,1
   add $2,$0

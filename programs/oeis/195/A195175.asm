@@ -4,19 +4,15 @@
 mov $5,$0
 mov $3,$0
 lpb $0,1
-  mov $4,2
   div $3,6
-  add $4,1
-  mov $8,$0
-  div $3,$4
-  add $8,$3
-  trn $4,6
-  add $8,3
-  add $4,2
+  mov $4,$0
+  div $3,3
+  add $4,$3
+  add $4,3
   mod $0,2
   trn $0,2
-  mov $2,$8
-  sub $2,$4
+  mov $2,$4
+  sub $2,2
 lpe
 add $2,3
 mov $3,$2

@@ -12,11 +12,7 @@ mov $1,$4
 add $0,$2
 mul $0,3
 mul $0,$1
-mov $2,1
-mov $4,31
-add $0,$4
-add $0,$2
-add $0,6
+add $0,38
 mov $1,$0
 sub $1,38
 div $1,18

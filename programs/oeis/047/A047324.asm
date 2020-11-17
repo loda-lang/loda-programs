@@ -7,6 +7,6 @@ lpb $2,1
   mov $1,$2
   mov $3,3
   add $1,$0
-  add $0,$3
+  add $0,3
   trn $2,1
 lpe

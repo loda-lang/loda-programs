@@ -3,16 +3,11 @@
 
 mov $7,$0
 mov $6,$0
-mov $3,3
 add $6,$0
-mov $0,3
-mov $8,5
 trn $6,1
-div $8,$0
-add $3,$8
-add $0,$3
+mov $3,4
 trn $3,$6
-mul $0,2
+mov $0,14
 lpb $0,1
   mov $1,6
   bin $1,$3

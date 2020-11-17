@@ -10,12 +10,10 @@ mul $5,$2
 mod $0,2
 lpb $0,1
   bin $0,2
-  mov $7,8
-  mul $5,$7
+  mul $5,8
 lpe
 add $6,$5
-mov $0,5
-mov $3,$0
+mov $3,5
 mov $4,$6
 add $3,$4
 mov $1,$3

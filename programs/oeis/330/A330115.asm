@@ -3,14 +3,12 @@
 
 mov $5,$0
 mov $4,$0
-mov $0,7
 mov $1,$4
-mov $3,$0
-div $4,$3
+div $4,7
 sub $1,$4
 div $1,4
 add $1,3
-mov $6,$5
-mov $2,$6
+mov $3,$5
+mov $2,$3
 mul $2,3
 add $1,$2

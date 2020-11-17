@@ -10,8 +10,7 @@ lpb $0,1
   add $1,$2
 lpe
 bin $1,$0
-mov $3,4
-add $2,$3
+add $2,4
 sub $2,$1
 mov $1,$2
 sub $1,3

@@ -27,10 +27,9 @@ lpb $16,1
     mov $8,$2
     trn $4,$5
     lpb $0,1
-      mov $6,1
       add $8,10
       mov $4,$8
-      mov $0,$6
+      mov $0,1
     lpe
     mov $1,$4
     add $12,$1

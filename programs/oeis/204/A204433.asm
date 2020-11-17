@@ -13,8 +13,7 @@ lpb $2,1
   sub $1,2
   mul $1,2
   sub $2,1
-  mov $3,2
   mod $1,3
-  mul $1,$3
+  mul $1,2
 lpe
 div $1,2

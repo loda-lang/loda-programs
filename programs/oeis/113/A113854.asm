@@ -43,18 +43,14 @@ lpb $27,1
           mov $9,1
           lpb $0,1
             mov $6,$0
-            mov $8,3
             mov $5,$0
-            mul $9,$8
+            mul $9,3
             mod $6,$9
-            mov $4,2
             sub $5,1
-            sub $4,1
+            mov $4,1
             add $6,10
             mov $9,$6
-            mov $2,$4
-            mov $8,$2
-            mul $8,2
+            mov $8,2
             sub $9,6
             mov $2,$9
             mov $0,1

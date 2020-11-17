@@ -7,22 +7,16 @@ lpb $2,1
   sub $2,1
   mov $0,$3
   sub $0,$2
-  mov $8,$0
-  mov $9,6
-  mov $7,1
-  mov $1,$8
-  sub $1,$7
-  mov $0,1
-  pow $8,2
-  mov $5,$8
+  mov $7,$0
+  mov $1,$7
+  sub $1,1
+  pow $7,2
+  mov $5,$7
   mov $4,1
-  mul $1,$9
+  mul $1,6
   add $4,$1
   mov $1,$4
   mul $1,$5
-  add $0,1
-  add $1,$0
-  sub $1,2
   add $6,$1
 lpe
 mov $1,$6

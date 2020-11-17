@@ -25,12 +25,10 @@ lpb $16,1
       add $0,$9
       add $6,10
       mul $0,2
-      mov $3,37
       mul $6,2
       mul $6,$0
       mul $6,2
-      mov $0,$3
-      div $6,$0
+      div $6,37
       mul $6,2
       mov $5,$6
       div $5,2

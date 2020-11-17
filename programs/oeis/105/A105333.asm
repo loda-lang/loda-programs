@@ -5,7 +5,6 @@ mov $3,$0
 pow $3,2
 mov $2,$0
 add $2,$3
-mov $0,32
-mod $2,$0
+mod $2,32
 mov $1,$2
 div $1,2

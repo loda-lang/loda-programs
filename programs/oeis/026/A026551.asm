@@ -17,7 +17,7 @@ lpb $0,1
   add $7,$6
   mov $6,$3
   mov $5,6
-  add $7,$5
+  add $7,6
 lpe
 add $7,$3
 mov $2,$7

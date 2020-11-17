@@ -13,10 +13,9 @@ mul $1,$2
 add $1,1
 sub $3,1
 mul $3,$1
-mov $0,2
 mov $4,3
 add $4,$3
-add $4,$0
+add $4,2
 mov $1,$4
 div $1,2
 sub $1,2

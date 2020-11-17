@@ -23,7 +23,6 @@ lpb $14,1
     mov $8,$0
     sub $2,$2
     gcd $0,2
-    mov $7,1
     mov $1,$6
     add $2,1
     sub $1,$2
@@ -32,10 +31,9 @@ lpb $14,1
     add $1,1
     mov $0,$8
     mul $1,2
-    mov $8,1
-    trn $7,5
+    mov $7,0
     sub $1,1
-    add $8,1
+    mov $8,2
     add $7,$1
     trn $2,$7
     mul $8,$0

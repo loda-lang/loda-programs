@@ -17,10 +17,9 @@ lpb $0,1
 lpe
 add $2,$4
 mov $4,1
-mov $0,1
-add $0,2
+mov $0,3
 add $4,$2
-div $4,$0
+div $4,3
 add $0,$4
 sub $0,1
 mov $1,$0

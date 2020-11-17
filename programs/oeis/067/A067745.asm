@@ -4,16 +4,15 @@
 mul $0,6
 add $0,1
 lpb $0,1
-  mov $4,$0
-  bin $4,3
+  mov $3,$0
+  bin $3,3
   add $0,1
-  gcd $4,2
-  mul $4,$0
-  div $4,2
-  sub $4,1
-  mov $3,1
-  mov $2,$3
-  mul $2,$4
+  gcd $3,2
+  mul $3,$0
+  div $3,2
+  sub $3,1
+  mov $2,1
+  mul $2,$3
   mov $0,$2
 lpe
 mov $1,$0

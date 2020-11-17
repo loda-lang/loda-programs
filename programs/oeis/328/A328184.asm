@@ -17,8 +17,7 @@ div $5,$1
 mov $2,$5
 add $3,7
 mov $4,$3
-mov $0,1
-add $4,$0
+add $4,1
 add $2,$4
 mov $3,$2
 mov $1,$3

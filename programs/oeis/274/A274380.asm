@@ -7,12 +7,9 @@ mov $3,$2
 mul $3,2
 add $2,$0
 add $2,$0
-sub $2,2
-mov $0,3
-add $2,2
 cmp $3,2
 mul $3,$2
-mul $3,$0
+mul $3,3
 add $2,$3
 add $2,2
 mov $1,$2

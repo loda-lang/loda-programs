@@ -7,12 +7,9 @@ lpb $2,1
   sub $2,1
   mov $0,$9
   sub $0,$2
-  mov $5,5
-  mov $3,1
-  sub $5,4
-  mov $1,8
-  sub $1,1
-  div $3,6
+  mov $5,1
+  mov $1,7
+  mov $3,0
   mov $7,5
   lpb $0,1
     sub $0,1
@@ -27,9 +24,7 @@ lpb $2,1
   sub $7,5
   add $7,$5
   mod $7,6
-  mov $5,0
-  add $5,12
-  add $7,$5
+  add $7,12
   mov $6,2
   mul $6,$7
   mov $1,$6

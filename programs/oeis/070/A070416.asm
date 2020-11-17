@@ -7,12 +7,10 @@ sub $3,1
 mod $0,4
 add $0,7
 sub $1,$3
-mov $3,1
-mul $3,4
 gcd $1,2
 add $1,3
 mov $2,$1
-mul $0,$3
+mul $0,4
 add $2,$0
 mov $1,$2
 sub $1,28

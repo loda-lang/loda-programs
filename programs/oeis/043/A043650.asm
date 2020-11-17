@@ -7,15 +7,11 @@ mov $5,$2
 mov $3,$2
 lpb $3,1
   lpb $5,1
-    mov $4,2
     add $1,1
-    mov $3,3
-    add $3,$4
-    mov $4,$3
-    add $4,$3
-    sub $5,$3
+    mov $4,10
+    sub $5,5
     trn $5,6
-    add $3,4
+    mov $3,9
   lpe
   add $1,$4
 lpe

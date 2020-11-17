@@ -26,9 +26,8 @@ lpb $3,1
       div $6,4
       sub $8,1
       mul $6,$8
-      mov $4,7
       div $6,2
-      sub $4,4
+      mov $4,3
       mul $6,2
       mul $4,$6
       mov $1,$4

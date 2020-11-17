@@ -9,18 +9,14 @@ lpb $3,1
   sub $0,1
   mov $8,$0
   mov $5,$8
-  mov $6,7
-  sub $6,4
-  mov $1,$6
+  mov $6,3
   mov $4,$0
   add $4,3
   add $5,1
   mul $6,$4
-  add $1,5
   div $5,7
   mul $6,$5
-  div $1,4
-  mul $6,$1
+  mul $6,2
   mov $1,$6
   mov $2,$3
   lpb $2,1

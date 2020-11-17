@@ -8,11 +8,8 @@ mov $2,$3
 sub $2,$0
 bin $2,$0
 mov $4,$2
-mov $2,6
 mov $0,$4
-mul $2,2
-pow $2,2
-mul $0,$2
+mul $0,144
 mul $0,$3
 div $0,8
 mov $1,$0

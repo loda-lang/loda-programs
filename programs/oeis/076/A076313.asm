@@ -3,19 +3,12 @@
 
 add $0,10
 lpb $0,1
-  add $0,1
-  mov $3,1
-  sub $0,12
-  add $0,$3
-  add $3,1
-  mov $2,8
-  add $2,$3
+  sub $0,10
   mov $1,$0
-  div $0,$2
-  mov $4,$0
-  mov $3,$2
-  mod $1,$3
-  mov $0,$3
-  sub $4,$1
+  div $0,10
+  mov $2,$0
+  mod $1,10
+  mov $0,10
+  sub $2,$1
 lpe
-mov $1,$4
+mov $1,$2

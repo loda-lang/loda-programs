@@ -16,12 +16,11 @@ add $8,$5
 mov $6,$8
 lpb $0,1
   add $2,7
-  mov $0,5
   pow $6,2
   mov $3,$2
   sub $7,$3
   mov $3,$7
-  trn $0,8
+  mov $0,0
 lpe
 add $3,$6
 add $3,1

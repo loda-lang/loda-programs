@@ -24,10 +24,9 @@ lpb $17,1
       sub $11,1
       mov $0,$9
       sub $0,$11
-      mov $1,4
       add $0,8
       div $0,2
-      bin $0,$1
+      bin $0,4
       mov $1,$0
       add $10,$1
     lpe

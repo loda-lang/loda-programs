@@ -14,12 +14,9 @@ mul $4,$5
 mov $6,$4
 mod $6,2
 mov $1,2
-add $6,$1
-add $6,$1
+add $6,4
 sub $1,$6
 add $1,2
-mov $3,5
 mov $5,$1
-mov $1,$3
-log $1,5
+mov $1,1
 add $1,$5

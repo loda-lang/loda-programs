@@ -11,14 +11,13 @@ lpb $0,1
   mov $4,$3
   sub $4,1
   add $0,2
-  mov $1,4
   add $4,2
   add $0,3
   sub $2,4
   mov $3,$4
   sub $0,1
-  add $1,2
-  trn $2,$1
+  mov $1,6
+  trn $2,6
   add $1,$0
   trn $1,$2
   add $0,$2

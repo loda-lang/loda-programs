@@ -10,7 +10,7 @@ lpb $0,1
   mul $2,7
   cmp $0,1
   mov $3,1
-  gcd $5,$3
+  gcd $5,1
   sub $0,1
 lpe
 mul $3,$2

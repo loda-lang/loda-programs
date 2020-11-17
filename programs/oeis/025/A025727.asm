@@ -24,15 +24,12 @@ lpb $16,1
       add $0,$9
       sub $0,1
       mul $0,4
-      mov $1,1
-      mov $4,$1
+      mov $4,1
       mul $4,$0
       trn $0,1
       mov $5,$0
-      div $1,3
-      add $1,1
       mov $2,$5
-      add $2,$1
+      add $2,1
       div $4,26
       add $2,3
       sub $2,$4

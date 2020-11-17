@@ -6,14 +6,6 @@ lpb $0,1
   sub $0,1
   add $1,41
 lpe
-mov $3,3
-mov $2,$3
-add $1,1
-mov $0,2
-mul $3,2
-sub $3,40
-add $0,$3
-bin $0,$2
-sub $1,$0
+add $1,5985
 div $1,51
 sub $1,696

@@ -25,20 +25,14 @@ lpb $14,1
       mov $6,3
       add $6,$0
       gcd $2,2
-      mov $0,8
       mul $6,$5
-      mul $0,2
       mul $2,$6
       add $2,3
       mov $4,$3
       mul $2,2
-      sub $0,7
       add $2,6
-      mov $7,$0
       mov $1,$2
-      mov $6,$7
-      add $1,$6
-      add $1,3
+      add $1,12
       add $4,4
       mul $4,3
       trn $0,$4

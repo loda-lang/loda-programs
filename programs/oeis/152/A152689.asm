@@ -41,8 +41,7 @@ lpb $24,1
             mov $1,$0
             sub $1,3
             fac $1
-            mov $2,8
-            sub $2,6
+            mov $2,2
             mul $1,2
           lpe
           mov $12,$11

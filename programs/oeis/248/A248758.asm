@@ -3,10 +3,9 @@
 
 mov $7,$0
 mov $5,$0
-mov $0,36
 mov $4,5
 mul $5,33
-mov $2,$0
+mov $2,36
 mov $3,5
 lpb $2,1
   lpb $4,1

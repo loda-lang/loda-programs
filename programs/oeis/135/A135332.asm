@@ -25,8 +25,7 @@ lpb $3,1
     mod $1,$4
     mov $2,$4
     div $0,$2
-    mov $2,7
-    div $0,$2
+    div $0,7
     mul $0,4
   lpe
   trn $1,2

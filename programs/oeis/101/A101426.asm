@@ -9,8 +9,7 @@ mov $1,$3
 add $0,3
 mov $4,$0
 mov $3,$4
-mov $4,2
-mod $1,$4
+mod $1,2
 add $3,1
 sub $3,$1
 mov $1,$3

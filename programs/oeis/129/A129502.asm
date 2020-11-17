@@ -10,8 +10,7 @@ lpb $6,1
   trn $0,1
   mov $4,$0
   add $4,1
-  mov $2,2
-  log $4,$2
+  log $4,2
   mov $0,127
   lpb $0,1
     mov $3,1
@@ -23,12 +22,12 @@ lpb $6,1
   mov $1,$3
   mov $5,$6
   lpb $5,1
-    mov $8,$1
+    mov $2,$1
     sub $5,1
   lpe
 lpe
 lpb $7,1
-  sub $8,$1
+  sub $2,$1
   mov $7,0
 lpe
-mov $1,$8
+mov $1,$2

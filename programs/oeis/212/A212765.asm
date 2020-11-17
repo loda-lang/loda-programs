@@ -9,6 +9,3 @@ div $0,2
 div $1,4
 pow $0,2
 mul $1,$0
-mov $0,4
-add $1,$0
-sub $1,4

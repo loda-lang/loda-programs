@@ -21,13 +21,11 @@ lpb $11,1
   mov $6,$1
   add $6,1
   add $7,$6
-  mov $2,2
-  add $7,$2
+  add $7,2
   mul $7,11
-  sub $2,1
   mov $1,$7
   div $1,18
-  sub $1,$2
+  sub $1,1
   mov $12,$11
   lpb $12,1
     mov $10,$1

@@ -3,20 +3,10 @@
 
 mov $6,$0
 mov $3,$0
-mov $0,3
-mov $1,$0
-sub $1,1
-mul $1,3
-add $0,$1
-mov $2,$0
-add $0,$2
-div $2,5
 div $3,16
-sub $0,16
-mul $0,6
-mul $2,7
+mov $2,7
 mul $2,$3
-mul $2,$0
+mul $2,12
 mov $1,$2
 mov $5,$6
 mov $4,$5

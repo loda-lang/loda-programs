@@ -19,10 +19,8 @@ lpb $7,1
     add $0,5
     sub $5,$0
     mov $1,$5
-    mov $5,1
-    mul $5,2
     div $1,11
-    add $1,$5
+    add $1,2
     mov $0,4
   lpe
   div $1,3

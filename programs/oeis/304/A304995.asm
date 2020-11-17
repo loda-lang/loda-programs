@@ -3,14 +3,11 @@
 
 add $0,4
 lpb $0,1
-  mov $3,8
-  mod $0,$3
+  mod $0,8
   mov $2,6
   sub $0,1
   bin $2,$0
-  mov $0,5
-  add $0,4
-  mul $0,2
+  mov $0,18
   sub $0,$2
   div $0,8
   add $0,5

@@ -6,9 +6,4 @@ div $0,3
 pow $0,3
 pow $2,3
 sub $2,$0
-lpb $2,1
-  mov $2,4
-  pow $2,2
-  fac $2
-lpe
 mov $1,$2

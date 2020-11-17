@@ -9,9 +9,8 @@ lpb $8,1
   sub $0,$8
   mul $0,2
   mov $6,$0
-  mov $7,1
   mov $5,2
-  mov $3,$7
+  mov $3,1
   log $3,$0
   lpb $0,1
     div $6,2
@@ -26,8 +25,7 @@ lpb $8,1
   mov $6,$1
   mov $7,$6
   mov $4,$1
-  mov $6,2
-  gcd $4,$6
+  gcd $4,2
   add $4,$7
   mov $1,$4
   sub $1,14

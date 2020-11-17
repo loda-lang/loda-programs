@@ -6,11 +6,9 @@ mul $0,3
 lpb $0,1
   add $1,$0
   mul $1,3
-  mov $4,2
-  add $4,4
   mov $0,3
-  mul $4,$0
-  mul $1,$0
+  mov $4,18
+  mul $1,3
 lpe
 add $4,4
 div $1,$4

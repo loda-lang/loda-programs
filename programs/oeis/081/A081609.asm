@@ -7,19 +7,17 @@ lpb $20,1
   sub $20,1
   mov $0,$18
   sub $0,$20
-  mov $9,5
-  mov $6,$9
+  mov $6,5
   mov $10,8
   lpb $10,1
     lpb $0,1
       lpb $8,10
-        mov $5,1
         mul $6,10
         pow $10,$4
         bin $6,2
         gcd $0,8
         mov $8,$0
-        sub $8,$5
+        sub $8,1
       lpe
       div $0,3
     lpe

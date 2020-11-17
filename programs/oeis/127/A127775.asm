@@ -8,15 +8,14 @@ lpb $3,1
   mov $0,$6
   add $0,$3
   sub $0,1
-  mov $8,1
+  mov $7,1
   mov $5,1
   trn $0,1
   lpb $0,1
-    mov $7,1
-    add $8,$7
+    add $7,1
     sub $0,1
-    trn $0,$8
-    mov $5,$8
+    trn $0,$7
+    mov $5,$7
     pow $5,2
   lpe
   mov $1,$5

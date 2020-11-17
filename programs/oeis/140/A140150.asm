@@ -11,12 +11,9 @@ lpb $11,1
   sub $0,$11
   mov $5,$0
   add $5,1
-  mov $6,2
   add $1,$5
-  mov $2,$6
   pow $1,2
-  mov $8,$2
-  gcd $5,$8
+  gcd $5,2
   pow $1,$5
   add $10,$1
 lpe

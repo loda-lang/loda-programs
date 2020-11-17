@@ -9,8 +9,7 @@ mov $4,3
 add $4,$3
 mov $5,$2
 add $4,$5
-mov $5,2
-add $0,$5
+add $0,2
 sub $4,2
 sub $0,5
 add $0,$2

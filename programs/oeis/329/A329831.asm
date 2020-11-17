@@ -12,14 +12,13 @@ mov $5,$0
 mov $1,1
 add $3,4
 mov $0,$3
-mov $6,$0
-sub $5,$6
+mov $2,$0
+sub $5,$2
 lpb $0,1
   mov $4,$5
   mul $1,2
   mul $1,$4
-  mov $2,28
-  trn $0,$2
+  trn $0,28
 lpe
 sub $1,26
 div $1,2

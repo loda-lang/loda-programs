@@ -9,14 +9,12 @@ lpb $0,1
   sub $0,1
   mov $2,$4
   add $1,$2
-  mov $3,2
-  mov $4,$3
+  mov $4,2
   trn $4,$2
-  add $1,$3
+  add $1,2
 lpe
 sub $1,3
-mov $5,4
-trn $1,$5
+trn $1,4
 mov $2,2
 sub $2,$1
 sub $1,1
@@ -24,14 +22,14 @@ trn $2,1
 trn $1,4
 add $1,$2
 mov $7,$6
-mov $9,$6
-lpb $9,1
+mov $5,$6
+lpb $5,1
   add $8,$7
-  sub $9,1
+  sub $5,1
 lpe
 mov $7,$8
-mov $10,4
-lpb $10,1
+mov $3,4
+lpb $3,1
   add $1,$7
-  sub $10,1
+  sub $3,1
 lpe

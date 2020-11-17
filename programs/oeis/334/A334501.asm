@@ -9,7 +9,7 @@ lpb $6,2
   lpb $5,1
     mov $1,$0
     mov $5,2
-    add $8,$5
+    add $8,2
     mov $10,$6
     mov $9,4
     add $10,1

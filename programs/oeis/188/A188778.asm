@@ -37,14 +37,13 @@ lpb $19,1
         add $8,$6
         add $8,$1
         mov $0,0
-        mov $5,$0
+        mov $5,0
       lpe
       add $5,$1
-      mov $7,2
       trn $8,12
       add $8,$5
       mov $1,4
-      mov $10,$7
+      mov $10,2
       mul $1,$8
       add $12,$1
     lpe

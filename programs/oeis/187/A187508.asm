@@ -7,14 +7,12 @@ mov $5,$4
 mov $3,$4
 add $4,$3
 mov $2,$4
-mov $3,8
 mov $4,$1
-mul $5,$3
-mov $1,2
+mul $5,8
 mul $2,18
 mul $2,$4
 sub $2,$5
-sub $2,$1
+sub $2,2
 mov $5,$2
 mov $1,$5
 div $1,4

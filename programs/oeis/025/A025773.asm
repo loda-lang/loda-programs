@@ -17,23 +17,19 @@ lpb $11,1
   add $0,2
   add $4,43
   lpb $0,1
-    mov $3,1
     mov $7,2
-    mul $3,2
     mov $1,$2
     add $1,$4
     mul $7,$1
     add $6,3
     mul $6,2
-    mov $8,3
-    sub $6,$8
+    sub $6,3
     mov $5,$4
     add $6,5
     add $6,$7
-    add $3,2
     mov $0,1
     sub $6,2
-    div $5,$3
+    div $5,4
     div $6,7
     sub $6,$5
   lpe

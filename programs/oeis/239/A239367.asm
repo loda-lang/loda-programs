@@ -24,17 +24,15 @@ lpb $17,1
       sub $11,1
       mov $0,$9
       sub $0,$11
-      mov $6,3
       mov $4,$0
-      mov $3,$6
+      mov $3,3
       mov $5,4
-      mov $2,$6
       mul $3,$0
       mod $3,2
       trn $0,2
       pow $5,$0
       mov $7,$4
-      div $7,$2
+      div $7,3
       mov $1,$7
       add $5,11
       trn $3,$1

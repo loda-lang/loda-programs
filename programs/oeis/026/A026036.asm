@@ -12,17 +12,14 @@ add $6,$2
 add $4,1
 add $6,3
 lpb $0,1
-  mov $7,1
-  add $7,$4
+  mov $3,1
+  add $3,$4
   mov $4,3
-  mov $5,1
-  pow $7,$4
-  mov $0,$7
+  pow $3,3
+  mov $0,$3
   add $6,$0
-  mul $5,2
   div $6,5
-  mov $3,$5
-  add $6,$3
+  add $6,2
   mov $0,1
 lpe
 log $0,9

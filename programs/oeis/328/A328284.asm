@@ -18,8 +18,7 @@ lpb $7,1
     mov $4,$0
     mov $2,$4
     lpb $0,1
-      mov $5,4
-      div $5,2
+      mov $5,2
       cmp $0,2
       pow $5,$2
       div $5,3

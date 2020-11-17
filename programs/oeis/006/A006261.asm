@@ -16,17 +16,12 @@ lpb $16,1
     sub $13,1
     mov $0,$11
     sub $0,$13
-    mov $1,3
     mov $2,$0
     trn $2,1
     mov $9,$2
-    mov $10,$1
-    mov $8,2
     add $2,1
-    mov $6,31
-    mov $4,$8
-    gcd $4,$6
-    bin $9,$10
+    mov $4,1
+    bin $9,3
     trn $4,$0
     mov $0,10
     mov $5,$4

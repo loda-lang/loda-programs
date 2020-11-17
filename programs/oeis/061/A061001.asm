@@ -20,9 +20,7 @@ lpb $3,1
     mod $2,$4
     add $1,5
     add $2,$1
-    mov $1,3
-    pow $1,2
-    div $2,$1
+    div $2,9
   lpe
   pow $2,2
   mov $1,$2

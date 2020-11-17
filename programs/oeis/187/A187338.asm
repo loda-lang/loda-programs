@@ -19,13 +19,9 @@ lpb $2,1
     lpb $7,1
       sub $7,1
       add $0,$7
-      sub $0,1
-      mov $3,1
-      add $0,$3
       pow $0,2
-      mov $1,1
       mul $0,2
-      trn $1,11
+      mov $1,0
       lpb $0,1
         add $1,2
         sub $0,1

@@ -7,16 +7,13 @@ add $1,$0
 sub $0,$1
 lpb $0,1
   sub $1,10
-  mov $2,1
   trn $8,2
-  mov $0,$2
-  mov $6,2
-  mul $6,7
-  add $0,1
+  mov $6,14
+  mov $0,2
   add $1,5
   add $8,1
   sub $6,$1
-  sub $6,$0
+  sub $6,2
   add $8,1
   fac $4
   sub $6,$8

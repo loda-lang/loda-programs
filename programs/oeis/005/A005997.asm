@@ -16,11 +16,10 @@ lpb $14,1
     sub $11,1
     mov $0,$9
     sub $0,$11
-    mov $8,6
     mov $2,$0
     mov $3,$2
     mov $6,$3
-    gcd $6,$8
+    gcd $6,6
     gcd $6,8
     mul $1,$4
     add $2,1

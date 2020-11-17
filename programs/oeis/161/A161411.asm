@@ -5,8 +5,7 @@ mov $5,1
 lpb $5,1
   sub $5,1
   mov $4,$0
-  mov $1,3
-  div $1,2
+  mov $1,1
   mov $3,$4
   mul $1,$3
   mov $2,$0
@@ -18,8 +17,7 @@ lpb $5,1
     mov $0,$4
     sub $2,1
   lpe
-  mov $2,3
-  mov $4,$2
+  mov $4,3
   pow $4,$0
 lpe
 mov $1,$4

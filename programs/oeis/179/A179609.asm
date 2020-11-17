@@ -7,9 +7,7 @@ div $2,2
 sub $0,2
 lpb $0,1
   mul $2,2
-  mov $1,1
   sub $0,1
-  sub $1,1
   add $2,$0
 lpe
 gcd $1,2

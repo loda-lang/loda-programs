@@ -10,7 +10,6 @@ lpb $0,1
   mov $0,$2
   add $1,1
   pow $1,2
-  mov $4,6
-  div $1,$4
+  div $1,6
 lpe
 div $1,4

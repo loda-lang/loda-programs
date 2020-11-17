@@ -6,12 +6,9 @@ sub $0,1
 mod $0,4
 mov $1,$0
 mov $2,$1
-mov $0,1
 mul $2,4
 trn $2,0
-mov $6,2
-sub $6,$0
-add $2,$6
+add $2,1
 lpb $2,1
   sub $2,7
 lpe

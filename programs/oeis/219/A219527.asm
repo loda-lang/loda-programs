@@ -23,8 +23,7 @@ lpb $18,1
       mov $0,$9
       add $0,$11
       sub $0,1
-      mov $5,4
-      sub $5,2
+      mov $5,2
       lpb $0,1
         add $5,$0
         div $5,2

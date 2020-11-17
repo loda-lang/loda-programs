@@ -3,24 +3,21 @@
 
 mov $7,$0
 mov $6,$0
-mov $8,16
-add $8,$7
+mov $2,16
+add $2,$7
 add $6,$0
 mul $6,4
 mov $5,4
-mov $0,$8
+mov $0,$2
 lpb $0,1
   add $5,$6
   gcd $3,$0
   mov $1,$5
   add $1,1
-  mov $2,3
   mov $5,$3
-  sub $1,$2
+  sub $1,3
   mov $0,$4
-  mov $4,5
-  add $1,$4
-  add $1,1
+  add $1,6
 lpe
 bin $5,7
 mul $5,$1

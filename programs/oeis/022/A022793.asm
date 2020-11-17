@@ -24,9 +24,8 @@ lpb $18,1
       add $0,$11
       sub $0,1
       mov $7,$0
-      mov $4,1
       mul $0,99
-      sub $0,$4
+      sub $0,1
       mov $1,$0
       mov $3,$7
       div $1,35

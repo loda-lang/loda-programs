@@ -12,8 +12,7 @@ pow $0,2
 lpb $0,1
   mov $2,$3
   add $2,1
-  mov $3,3
-  sub $3,2
+  mov $3,1
   trn $0,9
   add $3,$0
 lpe

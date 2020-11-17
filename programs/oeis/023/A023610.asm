@@ -6,15 +6,15 @@ add $3,$0
 mov $1,4
 add $1,$3
 mov $5,$1
-mov $8,$1
+mov $6,$1
 sub $5,3
 mul $5,2
 add $0,2
 lpb $0,1
   add $5,$1
   sub $0,1
-  mov $1,$8
-  mov $8,$5
+  mov $1,$6
+  mov $6,$5
   mov $4,1
 lpe
 add $2,7
@@ -23,8 +23,6 @@ mov $7,$5
 mov $1,$7
 mul $1,$4
 mul $1,$2
-mov $6,9
-add $1,$6
-sub $1,218
+sub $1,209
 div $1,210
 add $1,1

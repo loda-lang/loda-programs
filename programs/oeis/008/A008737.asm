@@ -9,19 +9,15 @@ lpb $3,1
   sub $0,$3
   lpb $0,1
     mov $6,$0
-    mov $1,8
-    mov $2,5
-    div $8,$2
-    mul $1,2
-    mov $2,9
-    mov $0,$8
-    div $1,$2
+    div $2,5
+    mov $0,$2
+    mov $1,1
     add $0,$6
     fac $5
     mul $1,$0
     mod $0,6
-    mov $8,$5
-    sub $0,$8
+    mov $2,$5
+    sub $0,$2
   lpe
   div $1,6
   add $4,$1

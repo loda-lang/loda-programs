@@ -25,14 +25,12 @@ lpb $17,1
       sub $0,1
       mov $5,$0
       mul $5,512
-      add $4,2
       mov $0,$4
-      mov $2,1
-      mov $4,$2
+      mov $4,1
       lpb $0,1
         mov $0,1
         mov $2,$5
-        add $4,$0
+        add $4,1
         mov $7,156
         mov $3,$4
       lpe

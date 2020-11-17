@@ -18,8 +18,7 @@ lpb $5,1
   mod $0,8
   lpb $0,1
     mov $7,24
-    mov $0,2
-    div $0,2
+    mov $0,1
   lpe
   mod $7,3
   pow $7,2

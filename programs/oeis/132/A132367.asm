@@ -11,11 +11,9 @@ mov $1,$4
 add $0,$4
 mul $0,$1
 lpb $0,1
-  mov $1,5
-  sub $3,$1
+  sub $3,5
   add $3,$2
-  mov $0,3
-  div $3,$0
+  div $3,3
   mov $0,$3
   mov $2,2
   sub $2,$4

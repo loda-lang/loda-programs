@@ -19,21 +19,19 @@ lpb $14,1
     mov $8,1
     mov $5,$0
     add $5,2
-    mov $2,2
     mov $7,$0
     add $4,1
     sub $5,$4
     add $8,$7
     add $0,$8
-    add $5,$2
+    add $5,2
     mov $6,1
     lpb $0,1
       mov $8,$6
       add $6,$5
       mov $3,$8
       trn $0,2
-      mov $5,3
-      add $5,1
+      mov $5,4
       add $5,$8
     lpe
     mov $1,$3

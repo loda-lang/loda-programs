@@ -20,10 +20,9 @@ lpb $14,1
     pow $5,2
     mul $5,6
     mov $2,$5
-    mov $8,1
     mov $1,$0
     add $1,$2
-    add $1,$8
+    add $1,1
     add $10,$1
   lpe
   mov $1,$10

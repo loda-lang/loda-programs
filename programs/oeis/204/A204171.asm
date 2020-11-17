@@ -24,11 +24,9 @@ lpb $2,1
     gcd $3,$1
   lpe
   gcd $5,2
-  mov $0,1
-  mov $2,1
-  add $0,9
+  mov $0,10
   add $0,$5
-  sub $2,1
+  mov $2,0
 lpe
 mov $1,$0
 sub $1,11

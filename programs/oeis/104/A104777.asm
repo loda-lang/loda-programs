@@ -6,8 +6,7 @@ mul $0,2
 mov $2,$0
 mul $2,3
 div $2,4
-mov $0,2
-bin $2,$0
+bin $2,2
 mov $1,$2
 div $1,3
 mul $1,24

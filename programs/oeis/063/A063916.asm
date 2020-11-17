@@ -20,7 +20,7 @@ lpb $14,1
     mov $6,$2
     mov $1,2
     mov $2,1
-    mov $4,$2
+    mov $4,1
     lpb $2,1
       lpb $6,1
         mul $4,2

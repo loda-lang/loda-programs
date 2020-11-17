@@ -15,7 +15,7 @@ lpb $3,1
   sub $4,$2
 lpe
 mov $0,10
-div $1,$0
+div $1,10
 lpb $2,1
   mod $3,$0
   sub $2,$2

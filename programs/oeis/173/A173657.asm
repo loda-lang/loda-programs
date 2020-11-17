@@ -3,20 +3,19 @@
 
 mov $3,1
 mov $4,5
-mov $5,5
+mov $2,5
 mov $1,5
 lpb $0,1
   mul $1,2
   sub $1,$3
   add $1,$4
-  add $5,1
+  add $2,1
   mov $4,$1
-  mov $2,5
-  add $4,$2
-  sub $1,$5
-  add $5,$2
+  add $4,5
+  sub $1,$2
+  add $2,5
   sub $0,1
-  add $5,$2
+  add $2,5
   mul $3,2
 lpe
 sub $1,1

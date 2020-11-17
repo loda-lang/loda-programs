@@ -21,19 +21,13 @@ lpb $14,1
       mul $2,6
       mul $2,$0
       mul $2,2
-      mov $4,8
       mov $8,$2
-      mov $1,$4
-      add $7,$1
+      add $7,8
       add $7,$8
       mov $5,5
       add $5,$7
-      mov $7,4
-      mov $6,7
-      sub $5,4
-      sub $5,$6
-      add $5,5
-      trn $7,$1
+      sub $5,6
+      mov $7,0
       mov $0,1
     lpe
     mov $1,$5

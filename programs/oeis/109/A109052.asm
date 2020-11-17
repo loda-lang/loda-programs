@@ -4,8 +4,4 @@
 mov $1,$0
 gcd $0,11
 div $1,$0
-mov $0,5
-add $1,1
-add $1,$0
-sub $1,6
 mul $1,11

@@ -8,13 +8,12 @@ mov $1,1
 add $2,1
 mul $0,2
 lpb $0,1
-  mov $5,$2
-  trn $1,$5
+  mov $4,$2
+  trn $1,$4
   add $1,$0
   trn $2,2
-  mov $4,3
   mov $0,$2
-  sub $2,$4
+  sub $2,3
   trn $2,5
 lpe
 lpb $3,1

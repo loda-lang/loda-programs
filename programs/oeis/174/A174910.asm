@@ -20,8 +20,7 @@ lpb $10,1
     lpb $0,1
       add $0,1
       mul $0,2
-      mov $3,8
-      mod $0,$3
+      mod $0,8
     lpe
     mov $1,$0
     div $1,2

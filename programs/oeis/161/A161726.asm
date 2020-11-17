@@ -9,10 +9,8 @@ mov $2,2
 sub $1,1
 mov $0,$1
 sub $0,16
-mov $1,1
 add $2,$0
-add $2,$1
-sub $2,1800
+sub $2,1799
 sub $0,3
 mov $3,$2
 mul $0,$3

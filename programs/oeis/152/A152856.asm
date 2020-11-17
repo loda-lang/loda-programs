@@ -3,14 +3,10 @@
 
 add $0,12
 lpb $0,1
-  mov $3,50
   sub $0,4
-  sub $3,2
-  mul $3,2
-  add $3,1
   mov $2,$0
   sub $0,1
-  mov $1,$3
+  mov $1,97
 lpe
 fac $0
 mov $3,1

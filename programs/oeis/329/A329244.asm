@@ -22,12 +22,8 @@ lpb $19,1
       sub $12,1
       mov $0,$10
       add $0,$12
-      mov $7,1
-      mov $5,$7
-      mov $4,$5
-      add $5,75
       sub $0,2
-      add $5,$4
+      mov $5,77
       clr $7,3
       lpb $0,1
         sub $0,1

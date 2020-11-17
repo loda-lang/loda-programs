@@ -5,9 +5,8 @@ mov $2,$0
 mov $3,6
 mul $2,2
 bin $2,$0
-mov $0,4
 mul $3,$2
-div $3,$0
+div $3,4
 mul $3,40
 mov $1,$3
 sub $1,30

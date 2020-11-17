@@ -11,7 +11,7 @@ mov $3,$4
 mov $2,1
 mov $5,$0
 add $4,$3
-add $4,$2
+add $4,1
 mov $0,$4
 trn $2,$5
 add $0,$5

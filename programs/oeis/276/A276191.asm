@@ -9,10 +9,9 @@ lpb $0,1
   add $4,$2
   div $0,10
 lpe
-mov $2,2
 mov $3,$4
 add $3,2
-mul $2,136
+mov $2,272
 add $2,$3
 mov $1,$2
 sub $1,274

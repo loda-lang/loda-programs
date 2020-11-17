@@ -16,10 +16,9 @@ lpb $17,1
     sub $14,1
     mov $0,$12
     sub $0,$14
-    mov $7,3
     mov $3,$0
     add $3,4
-    bin $3,$7
+    bin $3,3
     sub $3,2
     mov $1,$3
     add $13,$1

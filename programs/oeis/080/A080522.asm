@@ -12,8 +12,7 @@ lpe
 add $4,1
 add $2,$4
 trn $2,5
-mov $0,3
-add $2,$0
+add $2,3
 sub $2,$3
 mov $1,$2
 sub $1,2

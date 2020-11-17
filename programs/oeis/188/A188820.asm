@@ -26,10 +26,7 @@ add $4,2
 sub $3,$4
 add $1,$3
 add $1,$2
-add $1,1
-mov $3,3
-sub $1,$3
-sub $1,2
+sub $1,4
 mov $6,$5
 mov $9,71
 lpb $9,1

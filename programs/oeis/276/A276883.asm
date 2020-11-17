@@ -13,8 +13,7 @@ lpb $7,1
     trn $0,1
     add $0,1
     pow $0,2
-    mov $6,59
-    add $6,1
+    mov $6,60
     lpb $0,1
       sub $0,1
       sub $0,$4
@@ -22,10 +21,8 @@ lpb $7,1
       trn $0,1
       add $4,6
     lpe
-    mov $4,3
-    bin $4,6
     sub $6,1
-    add $4,1
+    mov $4,1
   lpe
 lpe
 mov $1,$6

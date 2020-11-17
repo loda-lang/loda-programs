@@ -3,8 +3,7 @@
 
 lpb $0,1
   mul $0,8
-  mov $2,9
-  mod $0,$2
+  mod $0,9
   trn $0,1
 lpe
 mov $1,$0

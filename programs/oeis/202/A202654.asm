@@ -3,10 +3,9 @@
 
 mov $2,$0
 mov $3,$0
-mov $0,1
 pow $2,2
 mov $1,$2
-sub $1,$0
+sub $1,1
 sub $2,$3
 pow $2,2
 add $2,$3

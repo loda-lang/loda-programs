@@ -9,12 +9,8 @@ sub $5,$2
 mov $6,$5
 mov $7,$6
 mul $0,2
-mov $6,4
-add $0,3
-sub $6,1
-add $0,$6
-sub $6,1
-mod $7,$6
+add $0,6
+mod $7,2
 mov $3,1
 lpb $0,1
   mul $3,2

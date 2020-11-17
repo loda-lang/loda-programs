@@ -17,9 +17,7 @@ sub $7,1
 mov $5,$7
 mul $5,2
 mov $6,$5
-mov $1,1
-add $6,$1
-add $6,1
+add $6,2
 mov $1,$6
 trn $1,2
 div $1,2

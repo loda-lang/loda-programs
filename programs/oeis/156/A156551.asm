@@ -14,15 +14,13 @@ add $0,$3
 add $6,$4
 mov $3,1
 lpb $0,1
-  mov $4,1
   mul $3,2
   add $6,$5
   add $6,45
   sub $2,1
   sub $6,3
-  mov $7,$4
   mul $6,$3
-  add $2,$7
+  add $2,1
   mov $5,$6
   sub $0,1
   mov $7,$0

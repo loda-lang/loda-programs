@@ -15,7 +15,7 @@ add $2,2
 mov $0,1
 mod $5,2
 sub $5,$2
-sub $5,$0
+sub $5,1
 mov $3,$5
 bin $3,2
 mov $2,$3

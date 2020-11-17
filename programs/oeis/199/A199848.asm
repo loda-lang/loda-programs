@@ -31,9 +31,8 @@ lpb $22,1
         add $0,$11
         add $0,3
         mov $5,$0
-        mov $3,3
         pow $5,3
-        div $5,$3
+        div $5,3
         sub $5,$0
         mov $1,$5
         mov $12,$11

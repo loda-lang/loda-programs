@@ -19,15 +19,13 @@ lpb $14,1
     mov $8,1
     lpb $0,1
       mov $7,$0
-      mov $0,2
       mov $6,$7
-      sub $7,$0
+      sub $7,2
       add $6,$7
-      mov $0,1
       mov $8,$7
       div $6,2
-      trn $8,$0
-      sub $0,1
+      trn $8,1
+      mov $0,0
       pow $8,2
     lpe
     add $6,$8

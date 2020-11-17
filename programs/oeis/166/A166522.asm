@@ -10,16 +10,15 @@ lpb $0,1
   add $1,$0
   sub $1,$4
   add $1,6
-  trn $4,$3
-  mov $6,4
+  trn $4,5
   sub $3,$4
-  sub $6,1
+  mov $6,3
   mul $3,2
   mov $2,$3
   mov $4,$2
   add $4,$3
   sub $1,$0
-  mov $5,$6
+  mov $5,3
   trn $6,$4
   add $4,$6
 lpe

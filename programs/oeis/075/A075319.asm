@@ -15,12 +15,10 @@ lpb $4,1
     mov $0,$10
     add $0,$8
     sub $0,1
-    mov $13,$0
+    mov $3,$0
     mov $2,$0
-    mov $3,2
     add $0,1
-    add $3,1
-    add $2,$3
+    add $2,3
     pow $0,2
     lpb $0,1
       add $0,1
@@ -28,14 +26,13 @@ lpb $4,1
       mov $1,$0
       add $1,2
       add $2,1
-      mov $0,1
       trn $1,$2
-      sub $0,1
+      mov $0,0
       add $0,$1
     lpe
     mov $1,$2
     sub $1,4
-    mov $12,$13
+    mov $12,$3
     mov $11,$12
     add $1,$11
     mov $7,$8

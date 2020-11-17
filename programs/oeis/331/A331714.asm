@@ -31,11 +31,10 @@ lpb $21,1
         mov $0,$9
         add $0,$11
         sub $0,1
-        mov $2,5
         gcd $1,5
         mov $7,$0
         div $0,8
-        add $7,$2
+        add $7,5
         div $0,7
         div $7,2
         add $0,5

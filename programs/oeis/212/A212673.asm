@@ -32,8 +32,7 @@ lpb $17,1
       mov $3,$0
       add $3,$4
       lpb $0,1
-        mov $5,1
-        mov $0,$5
+        mov $0,1
         div $3,4
         trn $3,12
         mul $3,2

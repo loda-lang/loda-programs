@@ -33,10 +33,9 @@ lpb $24,1
         mov $1,$0
         mov $6,$1
         mov $5,$0
-        mov $7,2
         add $5,3
         add $6,6
-        mov $0,$7
+        mov $0,2
         pow $0,$6
         mov $3,$5
         add $3,7

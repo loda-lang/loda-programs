@@ -5,15 +5,14 @@ pow $0,2
 add $0,3
 mov $1,1
 lpb $0,1
-  pow $4,2
-  sub $0,$4
+  pow $3,2
+  sub $0,$3
   sub $0,3
   mov $2,$1
-  mov $3,2
-  sub $2,$3
+  sub $2,2
   add $0,1
-  mov $4,$1
-  add $4,$1
+  mov $3,$1
+  add $3,$1
   add $1,1
 lpe
 add $2,2

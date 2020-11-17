@@ -7,14 +7,12 @@ mov $0,4
 mov $1,10
 lpb $0,1
   mul $1,$5
-  mov $3,5
   mul $1,4
-  add $0,$3
+  add $0,5
   sub $1,$5
   sub $0,1
   add $1,3
-  mov $10,1
-  sub $0,$10
+  sub $0,1
   add $4,$1
   div $0,2
   add $1,$4

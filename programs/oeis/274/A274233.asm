@@ -6,9 +6,8 @@ lpb $0,1
   add $2,$0
   sub $0,1
 lpe
-mov $0,7780
 pow $2,2
-add $2,$0
+add $2,7780
 div $2,12
 mov $1,$2
 sub $1,648

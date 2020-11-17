@@ -3,22 +3,19 @@
 
 mov $1,$0
 lpb $0,1
-  mov $3,1
-  mov $2,2
-  sub $1,$3
-  sub $1,2
-  div $0,$2
+  sub $1,3
+  div $0,2
   sub $1,$0
   sub $0,1
-  mov $3,$1
-  add $3,6
-  sub $3,$0
-  add $1,$3
+  mov $2,$1
+  add $2,6
+  sub $2,$0
+  add $1,$2
 lpe
-mov $3,$1
-add $3,1
-mul $3,2
-mov $1,$3
+mov $2,$1
+add $2,1
+mul $2,2
+mov $1,$2
 sub $1,2
 div $1,2
 add $1,1

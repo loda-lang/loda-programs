@@ -10,16 +10,15 @@ lpb $2,1
   mov $5,2
   mov $4,$0
   add $5,$4
-  mov $8,$5
-  mov $6,3
-  add $8,5
-  mov $5,$8
-  add $0,$6
+  mov $6,$5
+  add $6,5
+  mov $5,$6
+  add $0,3
   add $5,3
   div $5,2
   mod $5,5
   gcd $0,$5
-  div $0,$6
+  div $0,3
   trn $1,$4
   sub $0,1
   lpb $0,1

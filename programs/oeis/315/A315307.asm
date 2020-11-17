@@ -7,14 +7,9 @@ mul $4,3
 mov $0,2
 lpb $0,1
   mul $4,$0
-  add $4,4
-  mov $5,1
-  mul $5,7
-  add $4,1
-  sub $5,1
+  add $4,5
   div $0,10
-  add $5,5
-  div $4,$5
+  div $4,11
 lpe
 mov $5,$4
 pow $0,$4

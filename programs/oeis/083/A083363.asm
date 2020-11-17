@@ -12,7 +12,6 @@ lpb $0,1
   add $4,$3
   trn $0,4
 lpe
-mov $2,5
 mov $1,$4
-trn $1,$2
+trn $1,5
 add $1,1

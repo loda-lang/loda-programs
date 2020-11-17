@@ -3,13 +3,10 @@
 
 mov $3,$0
 mov $2,$3
-mov $0,4
 add $2,11
-pow $0,2
 mul $2,4
 bin $2,2
-add $0,2
-add $2,$0
+add $2,18
 mov $1,$2
 sub $1,963
 div $1,2

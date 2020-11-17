@@ -18,11 +18,10 @@ lpb $13,1
   mov $7,$9
   mov $5,3
   gcd $5,$3
-  mov $2,1
   add $4,1
   add $4,$7
   mul $1,$4
-  sub $1,$2
+  sub $1,1
   mul $1,2
   add $1,$4
   sub $5,4

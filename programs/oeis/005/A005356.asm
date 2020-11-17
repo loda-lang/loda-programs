@@ -12,7 +12,7 @@ lpb $2,1
   add $3,1
   mov $7,6
   pow $3,2
-  mov $4,$7
+  mov $4,6
   lpb $3,1
     add $4,1
     add $3,$7

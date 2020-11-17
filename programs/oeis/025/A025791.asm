@@ -24,9 +24,7 @@ lpb $13,1
       mul $2,10
     lpe
     fac $4
-    mov $0,5
-    mul $4,$0
-    mul $4,8
+    mul $4,40
     pow $4,2
   lpe
   mov $1,$4

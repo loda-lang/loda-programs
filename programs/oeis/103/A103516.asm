@@ -4,9 +4,8 @@
 add $0,2
 mov $2,$0
 lpb $2,1
-  mov $1,1
   add $4,$2
-  mov $5,$1
+  mov $5,1
   trn $5,$0
   mov $2,$0
   lpb $5,1

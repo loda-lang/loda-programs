@@ -12,9 +12,7 @@ lpb $4,1
   add $0,2
   mov $1,$0
   mov $6,$1
-  mov $8,3
-  mul $8,8
-  gcd $6,$8
+  gcd $6,24
   lpb $0,1
     mov $3,$6
     log $3,2

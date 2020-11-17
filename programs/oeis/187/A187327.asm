@@ -8,13 +8,9 @@ mov $4,$0
 mul $4,2
 add $2,$4
 mov $1,$2
-mov $0,8
 add $1,22
-mov $2,3
-add $0,$2
-sub $0,1
 mov $3,2
 mul $3,$1
-div $3,$0
+div $3,10
 mov $1,$3
 sub $1,6

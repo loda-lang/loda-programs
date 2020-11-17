@@ -22,16 +22,11 @@ lpb $18,1
       sub $11,1
       mov $0,$9
       add $0,$11
-      sub $0,1
-      mov $5,6
-      add $0,3
-      add $5,6
+      add $0,2
       mov $8,$0
       mul $8,2
       div $8,3
-      mov $6,$5
-      sub $6,5
-      pow $6,2
+      mov $6,49
       bin $8,2
       mul $6,$8
       mov $1,$6

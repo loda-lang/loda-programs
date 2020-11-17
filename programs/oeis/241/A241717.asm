@@ -14,8 +14,7 @@ sub $3,$2
 add $3,2
 mul $3,2
 sub $4,$4
-mov $0,4
-trn $0,5
+mov $0,0
 add $4,1
 add $0,$3
 lpb $0,1

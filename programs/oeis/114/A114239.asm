@@ -16,9 +16,8 @@ lpb $0,1
 lpe
 mul $6,$4
 pow $2,2
-mov $0,1
 mul $2,$6
-add $2,$0
+add $2,1
 mov $1,$2
 sub $1,361
 div $1,360

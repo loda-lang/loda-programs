@@ -7,10 +7,8 @@ mov $6,$1
 mov $3,$1
 add $3,$5
 mov $4,$6
-mov $0,2
-mov $6,$0
 mov $2,$3
-add $4,$6
+add $4,2
 div $5,2
 add $2,1
 sub $2,$5

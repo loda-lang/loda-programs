@@ -7,11 +7,9 @@ lpb $0,1
   add $4,$5
   mov $2,$0
   mod $2,10
-  mov $5,3
-  add $5,2
-  add $0,$5
+  add $0,5
   mov $5,1
-  trn $2,$5
+  trn $2,1
   add $4,3
   sub $5,$4
   sub $5,$0

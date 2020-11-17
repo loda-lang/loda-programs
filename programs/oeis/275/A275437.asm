@@ -10,5 +10,4 @@ lpb $0,1
   trn $1,$0
   trn $0,1
 lpe
-mov $0,1
-add $1,$0
+add $1,1

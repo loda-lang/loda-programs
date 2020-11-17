@@ -31,10 +31,9 @@ lpb $21,1
         mov $1,$0
         mul $1,4
         mov $4,1
-        mov $0,2
         mov $2,32
-        mov $3,$2
-        pow $0,2
+        mov $3,32
+        mov $0,4
         lpb $0,1
           add $1,2
           sub $0,1

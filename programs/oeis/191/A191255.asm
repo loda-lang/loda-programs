@@ -6,13 +6,11 @@ mul $0,2
 gcd $0,262144
 lpb $0,1
   lpb $0,1
-    mov $2,6
-    mul $2,9
-    add $3,$2
+    add $2,54
     mul $0,9
     add $0,1
     mod $0,7
   lpe
 lpe
-mov $1,$3
+mov $1,$2
 div $1,54

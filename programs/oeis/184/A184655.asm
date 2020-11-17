@@ -7,13 +7,9 @@ mov $2,$0
 mov $1,$0
 mov $6,16
 mul $6,$1
-mov $0,12
-add $0,7
-mul $0,2
 sub $6,$2
 sub $6,8
-add $0,3
-div $6,$0
+div $6,41
 add $6,3
 mov $3,$6
 mov $1,$3

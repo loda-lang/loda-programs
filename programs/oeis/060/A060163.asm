@@ -6,8 +6,7 @@ sub $0,1
 mov $3,$0
 add $2,$3
 add $2,24
-mov $0,3
-bin $3,$0
+bin $3,3
 add $2,$3
 mul $2,2
 mov $1,$2

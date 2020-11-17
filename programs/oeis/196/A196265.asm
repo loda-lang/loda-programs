@@ -12,11 +12,10 @@ lpb $3,1
   mov $2,1
   lpb $0,1
     sub $0,1
-    mov $1,1
     add $2,$0
     add $2,2
     sub $0,1
-    sub $2,$1
+    sub $2,1
     add $2,$0
     sub $2,1
     mul $4,$2

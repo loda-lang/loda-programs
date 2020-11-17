@@ -26,11 +26,9 @@ lpb $28,1
       sub $0,$22
       mov $6,5
       bin $6,$0
-      mov $3,3
-      mov $2,7
-      mov $0,$3
+      mov $0,3
       add $0,$6
-      pow $2,4
+      mov $2,2401
       mov $5,7
       add $2,$0
       add $5,$2

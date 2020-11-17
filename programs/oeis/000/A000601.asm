@@ -17,8 +17,7 @@ lpb $14,1
     mov $0,$9
     sub $0,$11
     mov $2,$0
-    mov $8,3
-    gcd $0,$8
+    gcd $0,3
     add $0,3
     add $2,6
     add $2,$0

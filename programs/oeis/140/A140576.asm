@@ -33,9 +33,8 @@ lpb $24,1
         div $3,8
         log $7,9
         add $7,8
-        mov $0,9
         mov $6,$7
-        trn $0,10
+        mov $0,0
       lpe
       pow $6,$3
       mov $4,$6

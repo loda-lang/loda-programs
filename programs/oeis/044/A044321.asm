@@ -10,14 +10,13 @@ lpb $2,1
   sub $2,$3
   lpb $5,1
     mov $3,2
-    sub $5,$3
+    sub $5,2
   lpe
   mov $6,1
   sub $2,6
   lpb $6,1
-    mov $5,1
     sub $3,$2
-    add $5,6
+    mov $5,7
     mov $6,3
     sub $6,$3
     trn $6,$3

@@ -16,8 +16,7 @@ lpb $2,1
     mov $1,$4
   lpe
   add $1,1
-  mov $5,10
-  add $2,$5
+  add $2,10
   cmp $2,7
 lpe
 add $1,1

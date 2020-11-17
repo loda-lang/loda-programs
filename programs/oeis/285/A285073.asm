@@ -15,7 +15,7 @@ lpb $2,1
   mov $8,$5
   mov $0,$3
   mov $3,1
-  add $0,$3
+  add $0,1
   add $0,$8
   sub $0,2
   clr $4,1

@@ -4,20 +4,14 @@
 pow $0,3
 mov $3,$0
 add $3,3
-mov $0,4
-add $0,2
-mov $4,-3
-sub $4,$3
-mul $0,4
-mov $3,3
-sub $0,$3
-gcd $4,$0
+mov $2,-3
+sub $2,$3
+mov $0,21
+gcd $2,21
 lpb $0,1
-  mov $2,5
   mov $0,2
-  pow $4,9
-  mov $1,$2
-  mul $0,$4
-  add $1,6
+  pow $2,9
+  mul $0,$2
+  mov $1,11
 lpe
 div $1,8

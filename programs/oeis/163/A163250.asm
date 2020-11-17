@@ -30,14 +30,9 @@ lpb $16,1
     add $0,$6
     add $6,3
     add $6,$0
-    add $6,1
-    mov $5,7
-    mov $2,$5
-    mov $7,1
-    sub $6,$2
+    sub $6,6
     mov $2,$6
-    mov $5,1
-    sub $5,$7
+    mov $5,0
     mov $1,$2
     add $12,$1
   lpe

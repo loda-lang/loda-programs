@@ -5,21 +5,19 @@ lpb $0,1
   mov $6,$0
   add $0,$6
   mov $5,$0
-  mov $9,$5
+  mov $2,$5
   sub $4,$0
   mov $5,$4
-  trn $5,$9
-  mov $3,$9
+  trn $5,$2
+  mov $3,$2
   mul $6,$5
   mov $5,$6
-  mov $2,4
   mov $7,$3
-  mov $8,$2
   add $5,$7
   mov $0,$5
   mov $4,$0
   mul $5,2
-  div $0,$8
+  div $0,4
 lpe
 mov $1,$5
 trn $1,2

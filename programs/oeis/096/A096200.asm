@@ -21,19 +21,13 @@ lpb $17,1
       sub $11,1
       mov $0,$9
       sub $0,$11
-      mov $7,2
       lpb $0,1
-        mov $3,3
         mov $1,$0
-        mul $1,$3
-        mul $7,$3
-        div $3,$7
+        mul $1,3
         pow $0,$3
         sub $1,6
       lpe
-      mov $3,2
-      pow $3,2
-      mul $1,$3
+      mul $1,4
       trn $1,5
       add $10,$1
     lpe

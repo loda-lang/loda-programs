@@ -17,12 +17,11 @@ lpb $13,1
     trn $0,1
     mov $6,2
     add $0,2
-    log $0,$6
+    log $0,2
     pow $6,$0
-    mov $3,9
     mov $0,$6
     mov $5,$6
-    pow $3,2
+    mov $3,81
     lpb $0,1
       mov $0,$3
       mov $5,$3

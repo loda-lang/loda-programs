@@ -12,8 +12,7 @@ lpe
 add $1,1
 add $4,1
 mov $2,$4
-mov $4,4
-sub $2,$4
+sub $2,4
 add $1,2
 mov $4,$1
 add $4,$2

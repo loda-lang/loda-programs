@@ -3,12 +3,11 @@
 
 add $0,8
 lpb $0,1
-  fac $3
-  mov $2,1
-  sub $0,$2
-  div $3,5
-  sub $3,3
+  fac $2
+  sub $0,1
+  div $2,5
+  sub $2,3
   sub $0,1
 lpe
-mov $1,$3
+mov $1,$2
 add $1,2

@@ -3,12 +3,10 @@
 
 mov $5,$0
 mov $2,$5
-mov $0,1
-add $0,2
+mov $0,3
 add $2,81
-mov $6,$0
 mov $5,$2
-add $6,2
+mov $6,5
 lpb $0,1
   sub $0,1
   add $1,$0

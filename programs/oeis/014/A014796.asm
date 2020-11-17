@@ -5,8 +5,7 @@ mov $3,$0
 add $3,3
 mov $2,4
 mul $2,$3
-mov $0,3
-div $2,$0
+div $2,3
 mov $1,$2
 bin $1,3
 pow $1,2

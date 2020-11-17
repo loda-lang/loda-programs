@@ -19,7 +19,7 @@ lpb $13,1
     add $8,1
     mov $6,1
     div $3,2
-    trn $9,$6
+    trn $9,1
     mul $8,2
     add $6,$9
     mov $9,$6

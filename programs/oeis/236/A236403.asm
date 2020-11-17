@@ -16,12 +16,10 @@ lpb $13,1
     mov $0,$7
     add $0,$9
     sub $0,1
-    mov $4,9
-    div $0,$4
+    div $0,9
     add $3,5
     lpb $0,1
-      mov $3,0
-      add $3,16
+      mov $3,16
       mov $0,8
     lpe
     add $0,$3

@@ -31,14 +31,7 @@ lpb $9,1
     add $0,3
     sub $3,$0
   lpe
-  mov $5,2
-  mul $5,2
-  add $5,1
-  mov $0,2
-  add $0,33
-  add $3,$0
-  add $5,3
-  sub $3,$5
+  add $3,27
   mov $1,$3
   sub $1,24
   add $8,$1

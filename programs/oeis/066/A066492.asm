@@ -19,14 +19,12 @@ lpb $17,1
     lpb $0,1
       mov $2,$0
       mov $10,9
-      mov $7,$10
-      add $2,$7
-      mov $0,$7
-      sub $0,1
+      add $2,9
+      mov $0,8
       mov $4,$2
       mul $10,$4
       trn $2,$10
-      sub $4,$0
+      sub $4,8
       add $2,1
       mov $10,$4
     lpe

@@ -8,13 +8,11 @@ lpb $0,1
   add $5,$4
   mov $3,$2
   trn $5,4
-  mov $4,3
-  add $3,$4
+  add $3,3
   sub $0,1
   mov $1,$3
   add $5,$1
-  mov $4,4
-  add $3,$4
+  add $3,4
   mov $4,$3
   sub $4,6
   mov $1,$4

@@ -11,10 +11,8 @@ lpb $5,1
   lpb $0,1
     mov $2,$0
     sub $2,9
-    mov $1,1
     mov $0,$2
-    mul $1,41
-    div $0,$1
+    div $0,41
     sub $0,1
   lpe
   gcd $0,2

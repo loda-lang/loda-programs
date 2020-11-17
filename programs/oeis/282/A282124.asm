@@ -10,10 +10,8 @@ mov $4,0
 add $4,$3
 mov $2,$4
 div $4,2
-mov $0,5
 add $2,1
-add $0,1
-mod $2,$0
+mod $2,6
 mul $2,$4
 mov $1,$2
 div $1,3

@@ -8,14 +8,12 @@ lpb $0,1
   mov $5,8
   mul $5,$3
   trn $3,10
-  add $6,$5
-  mov $4,9
+  add $4,$5
   mov $2,$3
-  add $1,$6
-  add $4,2
+  add $1,$4
   sub $1,$2
-  div $1,$4
-  mov $2,$4
+  div $1,11
+  mov $2,11
   add $2,$1
   clr $0,1
 lpe

@@ -10,9 +10,8 @@ mul $2,$1
 div $0,$0
 mov $3,9
 add $3,$0
-mov $0,30
 mul $2,4
-add $2,$0
+add $2,30
 mul $2,$3
 mov $1,$2
 sub $1,260

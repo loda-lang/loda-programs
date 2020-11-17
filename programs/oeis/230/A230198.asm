@@ -7,9 +7,7 @@ lpb $0,1
   div $2,7
   mod $0,8
 lpe
-mov $1,2
-sub $1,1
-add $2,$1
+add $2,1
 lpb $0,1
   sub $2,1
   mod $0,7

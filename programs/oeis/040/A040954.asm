@@ -4,8 +4,7 @@
 lpb $0,1
   mov $2,3
   mov $6,$0
-  mov $0,1
-  sub $0,1
+  mov $0,0
   mov $7,1
 lpe
 gcd $2,12
@@ -15,17 +14,14 @@ gcd $5,3
 sub $5,2
 add $4,$7
 add $2,1
-mov $7,3
-add $7,1
-mov $3,2
+mov $7,4
 mov $6,$2
-sub $3,1
 mov $2,$5
 add $6,2
 mov $0,$6
 mov $5,$0
 add $4,3
-add $2,$3
+add $2,1
 pow $4,$2
 mov $2,$4
 add $7,$4

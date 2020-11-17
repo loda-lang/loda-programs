@@ -24,21 +24,20 @@ lpb $2,1
       mov $1,$0
       sub $3,7
       mov $0,$3
-      mov $4,1
       mov $3,1
-      trn $0,$4
+      trn $0,1
     lpe
     mov $5,$6
     lpb $5,1
-      mov $10,$1
+      mov $4,$1
       sub $5,1
     lpe
   lpe
   lpb $9,1
-    sub $10,$1
+    sub $4,$1
     mov $9,0
   lpe
-  mov $1,$10
+  mov $1,$4
   add $1,1
   add $7,$1
 lpe

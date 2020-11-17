@@ -8,8 +8,7 @@ add $1,$3
 add $3,6
 sub $1,1
 mov $2,$3
-mov $0,4
-mod $2,$0
+mod $2,4
 pow $1,2
 div $1,2
 trn $2,1

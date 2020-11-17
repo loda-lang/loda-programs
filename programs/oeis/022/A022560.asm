@@ -21,9 +21,7 @@ lpb $14,1
       mov $1,$0
       lpb $6,1
         cmp $6,5
-        mov $7,4
-        pow $7,7
-        gcd $1,$7
+        gcd $1,16384
       lpe
       mul $2,$4
       mul $1,2

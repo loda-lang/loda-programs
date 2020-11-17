@@ -7,9 +7,7 @@ mov $5,$0
 mov $1,8
 lpb $0,1
   mul $5,2
-  mov $8,4
-  mov $0,4
-  sub $0,$8
+  mov $0,0
   mov $4,$1
 lpe
 mov $3,$5

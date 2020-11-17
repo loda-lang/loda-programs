@@ -9,14 +9,12 @@ lpb $4,1
   add $0,$4
   sub $0,1
   mov $3,$0
-  mov $7,32
-  add $7,6
-  add $0,$7
+  add $0,38
   mul $3,$0
-  mov $8,$0
-  mov $1,$8
+  mov $7,$0
+  mov $1,$7
   add $1,8
-  add $3,$8
+  add $3,$7
   div $3,2
   div $3,$1
   mov $1,$3

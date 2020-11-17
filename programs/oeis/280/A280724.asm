@@ -12,9 +12,4 @@ lpb $0,1
   mul $2,2
   trn $0,$3
 lpe
-mov $4,5
-add $1,3
-mov $0,3
-sub $1,$0
-sub $4,4
-add $1,$4
+add $1,1

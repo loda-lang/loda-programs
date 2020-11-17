@@ -24,9 +24,8 @@ lpb $16,1
       mov $1,$0
       mul $0,5
       mov $2,$0
-      mov $0,2
       div $2,5
-      mul $1,$0
+      mul $1,2
       pow $2,2
       add $1,$2
       add $9,$1

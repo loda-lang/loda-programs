@@ -24,11 +24,8 @@ lpb $20,1
       add $0,$13
       sub $0,1
       mul $0,21
-      mov $4,4
-      pow $4,2
       mov $2,$0
-      add $4,1
-      div $2,$4
+      div $2,17
       mov $1,$2
       mov $14,$13
       lpb $14,1

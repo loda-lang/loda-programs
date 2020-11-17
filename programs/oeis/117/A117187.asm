@@ -5,14 +5,12 @@ div $0,2
 mov $4,$0
 add $0,2
 add $4,$0
-mov $5,$4
-bin $5,$0
-sub $5,1
+mov $3,$4
+bin $3,$0
+sub $3,1
 lpb $0,1
-  mov $3,5
-  mov $1,$3
-  fac $1
-  mul $1,$5
+  mov $1,120
+  mul $1,$3
   div $1,5
   mul $0,$2
 lpe

@@ -10,8 +10,8 @@ lpb $11,1
   sub $0,1
   mov $3,2
   mov $1,1
-  gcd $2,$3
-  add $5,$3
+  gcd $2,2
+  add $5,2
   sub $3,$2
   lpb $0,2
     add $3,1

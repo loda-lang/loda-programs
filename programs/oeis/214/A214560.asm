@@ -12,17 +12,10 @@ lpb $0,1
   mov $2,$3
 lpe
 mov $3,$2
-mov $1,2
-add $3,$1
-mov $1,6
-mov $4,8984250
-add $4,1
-mul $4,2
-add $1,7
-add $4,2
-add $1,1
+add $3,2
+mov $1,14
 add $1,$3
 sub $0,$1
-add $0,$4
+add $0,17968504
 mov $1,$0
 sub $1,17968487

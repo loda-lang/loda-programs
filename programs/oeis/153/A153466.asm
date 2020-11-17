@@ -9,11 +9,8 @@ lpb $0,1
   add $1,$2
   add $4,1
   trn $4,$2
-  mov $3,2
   sub $0,$4
-  mov $4,$3
   sub $0,1
-  div $4,2
   mov $3,$1
   add $4,$1
   add $2,$3

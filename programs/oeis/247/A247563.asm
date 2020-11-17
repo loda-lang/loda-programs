@@ -6,12 +6,11 @@ mov $2,1
 add $0,1
 lpb $0,1
   sub $0,1
-  mov $3,2
   sub $4,$2
   mul $4,2
   add $2,$4
-  mul $4,$3
-  mul $3,2
+  mul $4,2
+  mov $3,4
 lpe
 add $3,$4
 mov $1,$3

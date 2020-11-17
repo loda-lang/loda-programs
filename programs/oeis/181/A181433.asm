@@ -9,12 +9,10 @@ lpb $8,1
   mov $0,$11
   sub $0,$8
   mov $1,$0
-  mov $10,3
-  mov $2,$10
+  mov $2,3
   mov $9,$1
   gcd $0,2
-  mov $10,1
-  mul $10,2
+  mov $10,2
   mov $6,$9
   mul $6,$0
   lpb $0,1
@@ -25,9 +23,7 @@ lpb $8,1
     mov $7,8
     sub $2,1
     mov $3,$4
-    mov $4,1
-    add $4,1
-    mul $4,6
+    mov $4,12
     add $2,3
     div $0,$2
   lpe

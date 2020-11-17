@@ -8,10 +8,9 @@ mov $3,6
 lpb $0,1
   mov $2,$3
   add $2,$3
-  mov $5,36
   div $3,$3
   mov $6,$3
-  add $6,$5
+  add $6,36
   add $4,56
   mov $3,$6
   trn $0,$4

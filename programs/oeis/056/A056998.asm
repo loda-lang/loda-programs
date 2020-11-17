@@ -10,12 +10,11 @@ add $6,$5
 sub $0,34
 cmp $0,$4
 sub $6,1
-mov $5,7
 add $0,5
 mov $3,$6
 mov $6,$0
 mul $3,2
-add $5,1
+mov $5,8
 sub $3,$6
 mov $1,$3
 lpb $0,1

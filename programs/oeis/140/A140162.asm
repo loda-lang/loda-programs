@@ -8,18 +8,14 @@ lpb $2,1
   sub $2,1
   mov $0,$5
   sub $0,$2
-  mov $6,6
   mov $1,$0
-  mov $7,1
-  gcd $8,$7
-  add $1,$8
-  mov $3,$6
-  sub $3,1
+  gcd $6,1
+  add $1,$6
+  mov $3,5
   gcd $0,2
   lpb $0,1
-    mov $8,7
     gcd $1,$0
-    pow $0,$8
+    pow $0,7
     sub $0,1
   lpe
   pow $1,$3

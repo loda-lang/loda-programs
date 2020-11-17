@@ -5,19 +5,12 @@ lpb $0,1
   mod $0,100
   sub $0,3
   bin $0,2
-  mov $5,2
-  mov $2,$5
-  sub $2,3
-  mul $2,$5
-  add $2,1
-  pow $5,2
-  mov $4,$2
-  div $5,2
+  mov $2,2
   mov $3,$0
-  div $3,$4
-  sub $5,$3
+  div $3,-1
+  sub $2,$3
   trn $0,4860
-  mov $4,$5
+  mov $4,$2
   mul $4,2
   cmp $4,6
 lpe

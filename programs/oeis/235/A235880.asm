@@ -10,15 +10,10 @@ lpb $0,1
   mul $2,2
 lpe
 add $3,2
-add $2,4
-mov $1,6
-add $2,4
+add $2,8
 mul $2,2
-mov $4,$1
-mov $0,1
-add $2,$4
-add $3,6
-add $3,$0
+add $2,6
+add $3,7
 add $2,$3
 mov $1,$2
 sub $1,48

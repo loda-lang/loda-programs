@@ -4,10 +4,8 @@
 mov $1,$0
 add $0,6
 mov $4,$0
-mov $3,42
 lpb $3,7
-  mov $3,24
-  trn $4,$3
+  trn $4,24
   add $1,1
 lpe
 add $4,1

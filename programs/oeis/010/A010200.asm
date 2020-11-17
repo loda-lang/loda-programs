@@ -10,9 +10,7 @@ sub $5,1
 lpb $0,1
   add $3,4
   gcd $4,$3
-  mov $2,1
   add $4,1
-  add $2,1
   mov $5,$4
   pow $5,2
   add $5,1

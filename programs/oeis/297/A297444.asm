@@ -11,11 +11,10 @@ lpb $7,1
   mov $1,$0
   mov $4,$1
   mov $3,$4
-  mov $2,1
   add $0,1
   mov $1,1
-  add $0,$2
-  add $4,$1
+  add $0,1
+  add $4,1
   mov $2,$4
   add $1,$3
   mov $4,1
@@ -26,7 +25,7 @@ lpb $7,1
     mov $2,3
     sub $0,1
     mov $4,$0
-    mov $0,$2
+    mov $0,3
     pow $2,$4
   lpe
   mov $1,$2

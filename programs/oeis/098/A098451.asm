@@ -30,27 +30,21 @@ lpb $17,1
       sub $5,1
       lpb $0,1
         mov $0,$1
-        mov $3,8
-        add $3,1
-        add $0,$3
-        mov $3,7
+        add $0,9
         mov $5,1
         sub $0,5
         add $6,$0
         pow $6,2
-        sub $6,$3
-        mov $2,1
-        div $3,5
+        sub $6,7
         mov $0,$6
-        add $3,2
         add $5,$0
         div $0,2
         add $0,1
         add $0,$5
-        sub $3,$2
+        mov $3,2
         mov $6,$1
-        pow $6,$3
-        sub $6,$3
+        pow $6,2
+        sub $6,2
         bin $5,2
       lpe
       sub $0,$5

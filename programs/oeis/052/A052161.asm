@@ -7,17 +7,15 @@ div $6,$0
 mov $4,$6
 mov $3,2
 lpb $0,1
-  mov $7,1
   mul $3,2
   mov $6,$3
   add $3,$6
   mul $6,$0
-  mov $5,28
   sub $0,1
   add $4,$6
   add $3,1
-  sub $5,5
-  add $3,$7
+  mov $5,23
+  add $3,1
   add $5,$4
 lpe
 mov $6,$5

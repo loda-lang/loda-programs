@@ -13,27 +13,21 @@ lpb $3,1
     sub $9,1
     mov $4,$0
     mov $2,$0
-    mov $7,3
-    mov $5,$7
+    mov $5,3
     add $0,$2
     mov $6,$4
     bin $6,2
     lpb $0,1
       div $6,$5
-      add $6,1
-      mov $0,2
-      mov $5,1
-      add $6,2
-      add $5,2
-      mod $6,$5
-      mul $0,2
+      mod $6,3
+      mov $0,4
       add $0,$6
-      add $6,$5
+      add $6,3
       sub $0,1
     lpe
   lpe
   mov $1,$0
   add $1,1
-  add $10,$1
+  add $7,$1
 lpe
-mov $1,$10
+mov $1,$7

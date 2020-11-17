@@ -7,11 +7,9 @@ lpb $0,1
   sub $0,1
   add $1,$3
   mov $2,$3
-  mov $4,4
   mov $3,$1
   add $0,4
-  add $4,2
-  add $2,$4
+  add $2,6
   sub $0,4
   trn $1,$0
 lpe

@@ -4,7 +4,7 @@
 lpb $0,1
   mov $2,$0
   mov $0,10
-  mod $2,$0
+  mod $2,10
   sub $0,$2
   sub $0,1
 lpe

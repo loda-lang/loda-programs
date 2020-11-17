@@ -9,23 +9,22 @@ lpb $4,1
   mov $0,$7
   sub $0,$4
   mov $1,$0
-  mov $9,$1
+  mov $3,$1
   mov $6,5
-  mov $3,9
-  mov $8,$9
+  mov $8,$3
   mov $2,$0
-  gcd $2,$3
+  gcd $2,9
   add $8,4
   add $2,3
-  trn $8,$6
+  trn $8,5
   lpb $2,1
-    add $9,$0
+    add $3,$0
     mov $2,4
     mov $6,7
     lpb $6,1
       mov $8,1
       add $2,1
-      trn $6,$9
+      trn $6,$3
     lpe
     sub $2,1
   lpe

@@ -22,22 +22,15 @@ lpb $17,1
       mov $0,$9
       sub $0,$11
       mov $3,$0
-      mov $6,7
-      div $6,6
       trn $4,$3
-      mov $0,2
       add $4,$3
-      mov $1,2
-      add $4,$6
-      pow $1,2
-      mul $3,$0
-      div $4,$0
+      add $4,1
+      mul $3,2
+      div $4,2
       sub $3,$4
       mul $3,2
-      mod $1,3
-      mul $1,3
-      add $3,$6
-      add $4,$1
+      add $3,1
+      add $4,3
       trn $4,$3
       sub $3,$4
       mov $1,$3

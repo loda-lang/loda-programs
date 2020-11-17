@@ -8,10 +8,8 @@ mov $4,2
 pow $4,$3
 mov $3,$4
 mul $3,4
-mov $2,1
-add $2,10
-sub $3,$2
-div $3,$2
+sub $3,11
+div $3,11
 mul $3,8
 mov $1,$3
 div $1,8

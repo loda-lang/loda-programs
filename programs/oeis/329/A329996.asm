@@ -10,9 +10,8 @@ lpb $0,1
   add $6,$4
   mov $5,17
   mul $6,12
-  mov $2,$5
   add $3,172
-  add $2,1
+  mov $2,18
   mul $2,$4
   add $6,$2
   div $0,$3

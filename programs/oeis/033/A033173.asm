@@ -11,8 +11,7 @@ lpb $4,1
   lpb $0,1
     sub $0,1
     mov $5,$0
-    mov $6,7
-    add $6,3
+    mov $6,10
     gcd $6,$5
     trn $0,3
     mov $1,$6

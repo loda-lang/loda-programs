@@ -3,15 +3,12 @@
 
 mov $7,$0
 mov $2,5
-mov $6,12
 mov $4,$0
 add $2,$4
-mov $0,1
-add $2,$0
-add $6,$0
-sub $0,1
+add $2,1
+mov $0,0
 pow $2,2
-sub $6,2
+mov $6,11
 mov $5,4
 lpb $2,1
   sub $2,5

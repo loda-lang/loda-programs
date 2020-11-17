@@ -3,10 +3,9 @@
 
 mov $5,$0
 mov $2,$0
-mov $0,1
 mov $4,1
 add $4,$2
-div $0,2
+mov $0,0
 add $2,1
 pow $4,2
 mov $1,$4

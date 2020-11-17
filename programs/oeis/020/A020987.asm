@@ -11,8 +11,6 @@ pow $3,2
 mov $0,$3
 sub $2,1
 sub $0,$2
-mov $3,3
-add $3,1
-gcd $0,$3
+gcd $0,4
 mov $1,$0
 sub $1,1

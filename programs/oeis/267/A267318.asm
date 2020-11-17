@@ -17,9 +17,7 @@ add $1,$5
 add $0,2
 sub $1,1
 lpb $0,1
-  add $1,2
-  mov $7,1
-  sub $1,$7
+  add $1,1
   mov $0,$1
   clr $3,400
   gcd $0,6

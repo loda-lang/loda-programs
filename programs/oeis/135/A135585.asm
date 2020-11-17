@@ -28,12 +28,9 @@ lpb $9,1
     add $2,$0
     sub $2,3
     pow $5,2
-    mov $3,1
-    mov $0,1
-    add $0,1
-    add $6,$3
+    add $6,1
     mov $4,$6
-    sub $4,$0
+    sub $4,2
     add $2,1
     mov $0,3
     mov $6,2

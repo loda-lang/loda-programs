@@ -7,18 +7,15 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  mov $8,1
-  add $8,3
-  mul $8,$0
-  mul $8,$0
-  mov $7,1
-  add $8,$7
-  pow $8,2
-  mov $6,$7
-  mul $8,2
-  log $8,7
-  add $8,$6
-  mov $1,$8
+  mov $6,4
+  mul $6,$0
+  mul $6,$0
+  add $6,1
+  pow $6,2
+  mul $6,2
+  log $6,7
+  add $6,1
+  mov $1,$6
   mov $2,$3
   lpb $2,1
     mov $4,$1

@@ -6,12 +6,10 @@ mov $1,10
 mod $0,10
 lpb $0,1
   mov $1,1
-  mov $2,7
-  add $2,$1
-  mov $0,$2
+  mov $0,8
 lpe
 add $1,89
 mov $4,$3
-mov $5,$4
-mul $5,100
-add $1,$5
+mov $2,$4
+mul $2,100
+add $1,$2

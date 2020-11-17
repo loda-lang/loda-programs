@@ -18,9 +18,8 @@ sub $3,3
 sub $1,$1
 mul $3,2
 add $1,1
-mov $4,6
 add $1,$3
-sub $1,$4
+sub $1,6
 lpb $5,1
   add $1,191
   sub $5,1

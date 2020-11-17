@@ -5,8 +5,7 @@ mov $4,$0
 mov $2,$0
 gcd $0,5
 lpb $2,1
-  mov $2,8
-  sub $2,1
+  mov $2,7
   add $0,6
 lpe
 pow $1,$5

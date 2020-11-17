@@ -16,12 +16,11 @@ lpb $14,1
     sub $11,1
     mov $0,$9
     sub $0,$11
-    mov $4,3
     mov $7,$0
-    mov $0,$4
+    mov $0,3
     mov $2,$7
     mov $6,$2
-    add $6,$0
+    add $6,3
     mov $3,$6
     div $0,$3
     bin $6,$2

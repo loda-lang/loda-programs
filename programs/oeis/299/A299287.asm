@@ -4,15 +4,14 @@
 mov $4,$0
 pow $0,2
 lpb $0,1
-  mov $2,6
   mul $0,6
   mov $1,5
-  add $0,$2
+  add $0,6
   add $1,$0
-  add $5,$2
+  add $5,6
   gcd $0,8
   trn $0,$5
-  mov $6,$2
+  mov $6,6
 lpe
 add $6,2
 mul $1,3
@@ -21,6 +20,6 @@ div $1,$6
 add $1,1
 mov $3,$4
 mul $3,$4
-mov $7,$3
-mul $7,7
-add $1,$7
+mov $2,$3
+mul $2,7
+add $1,$2

@@ -12,17 +12,12 @@ lpb $13,1
   mov $1,$0
   sub $0,1
   mov $5,$0
-  mov $0,2
-  mov $8,1
   mov $2,$5
-  add $8,1
-  add $0,2
   add $10,3
-  sub $2,1
-  add $2,$8
+  add $2,1
   mov $7,$10
   add $2,5
-  mul $1,$0
+  mul $1,4
   add $2,$1
   mul $7,4
   mov $10,$7

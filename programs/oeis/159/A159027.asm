@@ -15,9 +15,8 @@ mov $6,$1
 trn $2,5
 mov $3,$6
 mov $4,$3
-mov $1,1
-add $4,$1
-sub $1,$1
+add $4,1
+mov $1,0
 sub $4,$2
 add $1,$4
 lpb $5,1

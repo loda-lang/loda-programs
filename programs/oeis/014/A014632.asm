@@ -9,22 +9,16 @@ div $3,2
 add $4,1
 mul $3,$4
 add $0,3
-mov $5,23
 add $0,$3
 mov $3,$0
-mov $4,2
 add $3,23
-mov $0,5
-mov $2,$4
-add $0,1
-add $5,$0
-add $3,$5
+mov $2,2
+mov $0,6
+add $3,29
 lpb $0,1
-  sub $0,1
-  mov $1,3
-  sub $0,1
+  sub $0,2
   add $3,$2
-  add $1,5
+  mov $1,8
 lpe
 add $1,$3
 sub $1,69

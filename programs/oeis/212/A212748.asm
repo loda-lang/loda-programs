@@ -9,15 +9,13 @@ lpb $4,1
   mov $0,$2
   sub $0,$4
   add $0,2
-  mov $7,2
-  pow $0,$7
+  pow $0,2
   mov $5,$0
   add $5,8
   mod $0,2
   add $5,5
   lpb $0,1
-    mov $5,10
-    add $5,9
+    mov $5,19
     mov $0,$3
   lpe
   mov $1,$5

@@ -9,14 +9,11 @@ lpb $7,1
   mov $0,$9
   sub $0,$7
   mov $5,8
-  mov $8,3
-  mov $2,$5
+  mov $2,8
   mov $1,5
   trn $2,$0
-  mov $6,5
   add $0,2
-  add $8,7
-  gcd $6,8
+  mov $6,1
   lpb $0,1
     add $8,$0
     sub $0,1

@@ -20,8 +20,7 @@ lpb $5,1
     mov $2,$8
     mov $6,$2
     mul $2,$6
-    mov $8,0
-    mov $0,$8
+    mov $0,0
     mov $4,$2
   lpe
   mul $4,2

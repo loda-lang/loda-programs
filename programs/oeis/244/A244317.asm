@@ -3,12 +3,11 @@
 
 mov $2,$0
 mul $2,$0
-mov $4,$2
-add $4,2
+mov $3,$2
+add $3,2
 lpb $0,1
-  mul $4,27
-  mov $0,$4
-  mov $3,8
-  log $0,$3
+  mul $3,27
+  mov $0,$3
+  log $0,8
 lpe
 mov $1,$0

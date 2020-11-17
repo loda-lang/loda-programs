@@ -9,8 +9,7 @@ sub $3,21
 div $3,2
 mov $2,$0
 div $2,3
-mov $0,22
-add $3,$0
+add $3,22
 add $3,$2
 sub $3,2
 mov $1,$3

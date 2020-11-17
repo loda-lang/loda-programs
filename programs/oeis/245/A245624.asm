@@ -11,16 +11,13 @@ lpb $3,1
   mov $6,$0
   mov $4,3
   add $4,$6
-  mov $5,1
-  trn $5,20
+  mov $5,0
   add $5,$0
-  mov $1,1
-  add $0,$1
+  add $0,1
   div $4,2
   add $5,$0
-  mov $0,3
   add $5,1
-  pow $4,$0
+  pow $4,3
   mul $5,$4
   mov $1,$5
   mov $2,$3

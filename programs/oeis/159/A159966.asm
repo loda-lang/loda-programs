@@ -7,16 +7,12 @@ mov $4,$2
 mov $0,3
 mov $5,$4
 lpb $0,1
-  mov $7,1
-  mov $1,1
   mov $6,$4
   add $3,588
-  sub $6,$7
+  sub $6,1
   mov $0,$6
   trn $4,$3
-  mov $6,$7
-  add $6,$1
-  add $5,$6
+  add $5,2
   gcd $0,4
 lpe
 mov $4,$5

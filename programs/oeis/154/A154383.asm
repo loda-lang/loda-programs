@@ -7,8 +7,7 @@ lpb $6,1
   sub $6,1
   add $0,$6
   sub $0,1
-  mov $1,1
-  mul $1,2
+  mov $1,2
   gcd $1,$0
   mov $2,$0
   mov $4,$1

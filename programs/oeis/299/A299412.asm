@@ -18,6 +18,5 @@ lpe
 mul $6,$7
 mov $0,$5
 mul $6,$0
-mov $1,2
-div $6,$1
+div $6,2
 mov $1,$6

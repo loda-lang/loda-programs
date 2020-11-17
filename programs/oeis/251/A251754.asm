@@ -16,9 +16,8 @@ add $1,1
 mul $1,$4
 mul $6,$1
 mov $5,2
-mov $1,1
 add $5,$6
-add $1,1
+mov $1,2
 lpb $0,1
   add $1,7
   mov $0,1

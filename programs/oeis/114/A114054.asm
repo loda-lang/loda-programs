@@ -6,17 +6,14 @@ mov $1,3
 mov $2,1
 mov $5,$0
 lpb $0,1
-  mov $7,4
-  sub $7,3
+  mov $7,1
   add $7,$4
   add $1,3
-  mov $0,1
-  add $7,$0
+  add $7,1
   mov $3,$1
   mov $2,$3
   mov $0,2
-  mov $1,2
-  add $1,2
+  mov $1,4
 lpe
 mov $6,6
 sub $6,$7

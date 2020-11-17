@@ -10,7 +10,6 @@ lpb $0,1
   add $3,1
   add $2,1
 lpe
-mov $2,2
-add $1,$2
+add $1,2
 add $3,$1
 mov $1,$3
