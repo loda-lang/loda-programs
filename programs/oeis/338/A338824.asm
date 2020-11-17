@@ -1,0 +1,46 @@
+; A338824: Lexicographically earliest sequence of nonnegative integers such that for any distinct m and n, a(m) OR a(m+1) <> a(n) OR a(n+1) (where OR denotes the bitwise OR operator).
+; 0,0,1,2,0,4,1,6,0,8,1,10,0,12,1,14,0,16,1,18,0,20,1,22,0,24,1,26,0,28,1,30,0,32,1,34,0,36,1,38,0,40,1,42,0,44,1,46,0,48,1,50,0,52,1,54,0,56,1,58,0,60,1,62,0,64,1,66,0,68,1,70,0,72,1,74
+
+add $1,$0
+mov $3,$0
+mov $0,$0
+mov $2,2
+mul $2,$3
+add $1,1
+mov $0,$2
+add $1,1
+add $3,$0
+sub $1,1
+sub $3,$3
+mov $3,$1
+sub $0,2
+mov $0,$1
+sub $1,16
+mov $1,$3
+add $4,$3
+lpb $0,1
+  sub $4,$4
+  add $1,1
+  mov $4,$0
+  div $4,2
+  mov $4,1
+  gcd $2,$1
+  div $0,$2
+  sub $1,4
+  mov $1,$3
+  sub $1,2
+  mov $3,$4
+  mul $3,2
+  mul $1,6
+lpe
+add $4,3
+mul $1,2
+mod $1,2
+mov $4,$3
+mov $1,$1
+sub $3,$2
+sub $3,$3
+mov $1,$0
+mov $1,$2
+sub $1,2
+div $1,2
