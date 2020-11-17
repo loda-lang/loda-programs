@@ -1490,7 +1490,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A236840](http://oeis.org/A236840) ([L13 program](236/A236840.asm)): n minus number of runs in the binary expansion of n: a(n) = n - A005811(n).
 * [A236916](http://oeis.org/A236916) ([L20 program](236/A236916.asm)): The first "octad" is 0, 1, 2, 2, 2, 2, 3, 3; thereafter add 4 to get the next octad.
 * [A236967](http://oeis.org/A236967) ([L22 program](236/A236967.asm)): Expansion of (1+3*x)^2/(1-3*x)^2.
-* [A236999](http://oeis.org/A236999) ([L85 program](236/A236999.asm)): Odd part of n*(n+3)/2-1 (A034856).
+* [A236999](http://oeis.org/A236999) ([L21 program](236/A236999.asm)): Odd part of n*(n+3)/2-1 (A034856).
 * [A237128](http://oeis.org/A237128) ([L08 program](237/A237128.asm)): Angles n expressed in degrees such that 2*cos(n) = phi where phi is the golden ratio (A001622).
 * [A237133](http://oeis.org/A237133) ([L14 program](237/A237133.asm)): Values of x in the solutions to x^2 - 3xy + y^2 + 19 = 0, where 0 < x < y.
 * [A237250](http://oeis.org/A237250) ([L11 program](237/A237250.asm)): Values of x in the solutions to x^2 - 4xy + y^2 + 11 = 0, where 0 < x < y.
@@ -2703,7 +2703,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266753](http://oeis.org/A266753) ([L06 program](266/A266753.asm)): Decimal representation of the n-th iteration of the "Rule 163" elementary cellular automaton starting with a single ON (black) cell.
 * [A266769](http://oeis.org/A266769) ([L18 program](266/A266769.asm)): Expansion of 1/((1-x)*(1-x^2)^2*(1-x^3)).
 * [A266789](http://oeis.org/A266789) ([L21 program](266/A266789.asm)): Middle column of the "Rule 61" elementary cellular automaton starting with a single ON (black) cell.
-* [A266797](http://oeis.org/A266797) ([L105 program](266/A266797.asm)): a(n) = (6^n + 4^n + 3*2^n)/8.
+* [A266797](http://oeis.org/A266797) ([L20 program](266/A266797.asm)): a(n) = (6^n + 4^n + 3*2^n)/8.
 * [A266873](http://oeis.org/A266873) ([L18 program](266/A266873.asm)): Decimal representation of the n-th iteration of the "Rule 77" elementary cellular automaton starting with a single ON (black) cell.
 * [A266883](http://oeis.org/A266883) ([L16 program](266/A266883.asm)): Numbers of the form m*(4*m+1)+1, where m = 0,-1,1,-2,2,-3,3,...
 * [A266912](http://oeis.org/A266912) ([L22 program](266/A266912.asm)): Numbers n which are anagrams of n+18.

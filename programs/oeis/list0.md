@@ -1760,7 +1760,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016911](http://oeis.org/A016911) ([L03 program](016/A016911.asm)): a(n) = (6*n)^3.
 * [A016912](http://oeis.org/A016912) ([L03 program](016/A016912.asm)): (6n)^4.
 * [A016921](http://oeis.org/A016921) ([L03 program](016/A016921.asm)): a(n) = 6*n + 1.
-* [A016922](http://oeis.org/A016922) ([L04 program](016/A016922.asm)): a(n) = (6n+1)^2.
+* [A016922](http://oeis.org/A016922) ([L04 program](016/A016922.asm)): a(n) = (6*n+1)^2.
 * [A016923](http://oeis.org/A016923) ([L04 program](016/A016923.asm)): a(n) = (6*n + 1)^3.
 * [A016924](http://oeis.org/A016924) ([L04 program](016/A016924.asm)): a(n) = (6*n + 1)^4.
 * [A016933](http://oeis.org/A016933) ([L03 program](016/A016933.asm)): a(n) = 6n + 2.
@@ -1768,7 +1768,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016935](http://oeis.org/A016935) ([L04 program](016/A016935.asm)): a(n) = (6*n + 2)^3.
 * [A016936](http://oeis.org/A016936) ([L04 program](016/A016936.asm)): a(n) = (6*n + 2)^4.
 * [A016945](http://oeis.org/A016945) ([L03 program](016/A016945.asm)): a(n) = 6*n+3.
-* [A016946](http://oeis.org/A016946) ([L04 program](016/A016946.asm)): (6n+3)^2.
+* [A016946](http://oeis.org/A016946) ([L04 program](016/A016946.asm)): a(n) = (6*n+3)^2.
 * [A016947](http://oeis.org/A016947) ([L04 program](016/A016947.asm)): a(n) = (6*n + 3)^3.
 * [A016948](http://oeis.org/A016948) ([L04 program](016/A016948.asm)): a(n) = (6*n + 3)^4.
 * [A016957](http://oeis.org/A016957) ([L03 program](016/A016957.asm)): a(n) = 6*n + 4.
@@ -3096,6 +3096,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A029918](http://oeis.org/A029918) ([L14 program](029/A029918.asm)): Convert n from meters to feet.
 * [A029919](http://oeis.org/A029919) ([L21 program](029/A029919.asm)): Convert n from inches (") to centimeters (cm).
 * [A029920](http://oeis.org/A029920) ([L25 program](029/A029920.asm)): Convert n from centimeters (cm) to inches (").
+* [A029921](http://oeis.org/A029921) ([L18 program](029/A029921.asm)): Convert n from miles to kilometers (km).
 * [A029924](http://oeis.org/A029924) ([L19 program](029/A029924.asm)): Convert n from kilograms (kg) to pounds (lbs).
 * [A029925](http://oeis.org/A029925) ([L05 program](029/A029925.asm)): Convert n from degrees Celsius to Fahrenheit.
 * [A029926](http://oeis.org/A029926) ([L16 program](029/A029926.asm)): Convert n from degrees Fahrenheit to Centigrade (or Celsius).
@@ -3203,7 +3204,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032908](http://oeis.org/A032908) ([L07 program](032/A032908.asm)): One of four 3rd-order recurring sequences for which the first derived sequence and the Galois transformed sequence coincide.
 * [A032925](http://oeis.org/A032925) ([L21 program](032/A032925.asm)): Numbers whose set of base 4 digits is {1,2}.
 * [A032929](http://oeis.org/A032929) ([L20 program](032/A032929.asm)): Numbers whose set of base 8 digits is {1,2}.
-* [A032943](http://oeis.org/A032943) ([L41 program](032/A032943.asm)): Numbers n such that base 8 representation Sum{d(i)*8^i: i=0,1,...,m} has d(i)=0 for all odd i.
+* [A032943](http://oeis.org/A032943) ([L41 program](032/A032943.asm)): Numbers n such that base 8 representation Sum{d(i)*8^(m-i): i=0,1,...,m} has d(i)=0 for all odd i.
 * [A032960](http://oeis.org/A032960) ([L23 program](032/A032960.asm)): Numbers n such that base 10 representation Sum{d(i)*10^i: i=0,1,...,m} has even d(i) for all odd i.
 * [A032961](http://oeis.org/A032961) ([L11 program](032/A032961.asm)): Numbers n such that base 11 representation Sum{d(i)*11^i: i=0,1,...,m} has even d(i) for all odd i.
 * [A032962](http://oeis.org/A032962) ([L04 program](032/A032962.asm)): Numbers n such that base 12 representation Sum{d(i)*12^i: i=0,1,...,m} has even d(i) for all odd i.
@@ -3860,6 +3861,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040188](http://oeis.org/A040188) ([L10 program](040/A040188.asm)): Continued fraction for sqrt(203).
 * [A040195](http://oeis.org/A040195) ([L21 program](040/A040195.asm)): Continued fraction for sqrt(210).
 * [A040200](http://oeis.org/A040200) ([L18 program](040/A040200.asm)): Continued fraction for sqrt(215).
+* [A040205](http://oeis.org/A040205) ([L26 program](040/A040205.asm)): Continued fraction for sqrt(220).
 * [A040209](http://oeis.org/A040209) ([L18 program](040/A040209.asm)): Continued fraction for sqrt(224).
 * [A040210](http://oeis.org/A040210) ([L03 program](040/A040210.asm)): Continued fraction for sqrt(226).
 * [A040211](http://oeis.org/A040211) ([L04 program](040/A040211.asm)): Continued fraction for sqrt(227).
@@ -4683,6 +4685,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047927](http://oeis.org/A047927) ([L06 program](047/A047927.asm)): a(n) = n*(n-1)*(n-2)^2.
 * [A047928](http://oeis.org/A047928) ([L05 program](047/A047928.asm)): a(n) = n*(n-1)^2*(n-2).
 * [A047929](http://oeis.org/A047929) ([L06 program](047/A047929.asm)): a(n) = n^2*(n-1)*(n-2).
+* [A047970](http://oeis.org/A047970) ([L29 program](047/A047970.asm)): Antidiagonal sums of nexus numbers (A047969).
 * [A047974](http://oeis.org/A047974) ([L16 program](047/A047974.asm)): a(n) = a(n-1) + 2*(n-1)*a(n-2).
 * [A048005](http://oeis.org/A048005) ([L05 program](048/A048005.asm)): Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-1)/3.
 * [A048016](http://oeis.org/A048016) ([L11 program](048/A048016.asm)): Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-2)/3.
@@ -4853,7 +4856,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A050404](http://oeis.org/A050404) ([L14 program](050/A050404.asm)): Partial sums of A051878.
 * [A050405](http://oeis.org/A050405) ([L15 program](050/A050405.asm)): Partial sums of A051879.
 * [A050406](http://oeis.org/A050406) ([L14 program](050/A050406.asm)): Partial sums of A051880.
-* [A050407](http://oeis.org/A050407) ([L05 program](050/A050407.asm)): a(n) = n*(n^2 - 6*n + 11)/6.
+* [A050407](http://oeis.org/A050407) ([L04 program](050/A050407.asm)): a(n) = n*(n^2 - 6*n + 11)/6.
 * [A050408](http://oeis.org/A050408) ([L07 program](050/A050408.asm)): a(n) = (117*n^2 - 99*n + 2)/2.
 * [A050409](http://oeis.org/A050409) ([L10 program](050/A050409.asm)): Truncated square pyramid numbers: a(n) = Sum_{k = n..2*n} k^2.
 * [A050410](http://oeis.org/A050410) ([L10 program](050/A050410.asm)): Truncated square pyramid numbers: a(n) = Sum_{k = n..2*n-1} k^2.
@@ -5236,7 +5239,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054886](http://oeis.org/A054886) ([L11 program](054/A054886.asm)): Layer counting sequence for hyperbolic tessellation by cuspidal triangles of angles (Pi/3,Pi/3,0) (this is the classical modular tessellation).
 * [A054888](http://oeis.org/A054888) ([L08 program](054/A054888.asm)): Layer counting sequence for hyperbolic tessellation by regular pentagons of angle Pi/2.
 * [A054890](http://oeis.org/A054890) ([L16 program](054/A054890.asm)): Layer counting sequence for hyperbolic tessellation by regular heptagons of angle Pi/3.
-* [A054893](http://oeis.org/A054893) ([L10 program](054/A054893.asm)): Floor[n/4] + floor[n/16] + floor[n/64] + floor[n/256] + ....
+* [A054893](http://oeis.org/A054893) ([L07 program](054/A054893.asm)): Floor[n/4] + floor[n/16] + floor[n/64] + floor[n/256] + ....
 * [A054895](http://oeis.org/A054895) ([L06 program](054/A054895.asm)): a(n) = Sum_{k>0} floor(n/6^k).
 * [A054896](http://oeis.org/A054896) ([L06 program](054/A054896.asm)): a(n) = Sum_{k>0} floor(n/7^k).
 * [A054897](http://oeis.org/A054897) ([L04 program](054/A054897.asm)): a(n) = Sum_{k>0} floor(n/8^k).
@@ -5449,7 +5452,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A057359](http://oeis.org/A057359) ([L03 program](057/A057359.asm)): a(n) = floor(5*n/7).
 * [A057360](http://oeis.org/A057360) ([L03 program](057/A057360.asm)): a(n) = floor(3*n/8).
 * [A057361](http://oeis.org/A057361) ([L03 program](057/A057361.asm)): a(n) = floor(5*n/8).
-* [A057362](http://oeis.org/A057362) ([L07 program](057/A057362.asm)): a(n) = floor(5*n/13).
+* [A057362](http://oeis.org/A057362) ([L03 program](057/A057362.asm)): a(n) = floor(5*n/13).
 * [A057363](http://oeis.org/A057363) ([L20 program](057/A057363.asm)): a(n) = floor(8*n/13).
 * [A057364](http://oeis.org/A057364) ([L03 program](057/A057364.asm)): a(n) = floor(8*n/21).
 * [A057365](http://oeis.org/A057365) ([L03 program](057/A057365.asm)): a(n) = floor(13*n/21).

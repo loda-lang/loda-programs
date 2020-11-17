@@ -1,4 +1,4 @@
-; A032943: Numbers n such that base 8 representation Sum{d(i)*8^i: i=0,1,...,m} has d(i)=0 for all odd i.
+; A032943: Numbers n such that base 8 representation Sum{d(i)*8^(m-i): i=0,1,...,m} has d(i)=0 for all odd i.
 ; 1,2,3,4,5,6,7,8,16,24,32,40,48,56,64,65,66,67,68,69,70,71,128,129,130,131,132,133,134,135,192,193,194,195,196,197,198,199,256,257,258,259,260,261,262,263,320,321,322,323,324,325,326
 
 mov $11,$0
