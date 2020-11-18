@@ -3,10 +3,10 @@
 
 mov $1,8
 lpb $0,1
+  sub $0,1
+  sub $1,1
   mul $2,2
   trn $2,4
-  sub $1,1
-  sub $0,1
   add $2,$1
   add $1,$2
   mul $1,2

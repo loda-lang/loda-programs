@@ -5,14 +5,14 @@ mov $2,$0
 mov $10,$0
 add $10,1
 lpb $10,1
-  sub $10,1
   mov $0,$2
+  sub $10,1
   sub $0,$10
-  mov $8,$0
   mov $5,2
+  mov $8,$0
   lpb $5,1
-    sub $5,1
     mov $0,$8
+    sub $5,1
     add $0,$5
     mov $7,$0
     mov $4,$7
@@ -20,8 +20,8 @@ lpb $10,1
     div $1,12
     mov $3,$5
     lpb $3,1
-      mov $6,$1
       sub $3,1
+      mov $6,$1
     lpe
   lpe
   lpb $8,1

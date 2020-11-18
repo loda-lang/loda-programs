@@ -6,8 +6,8 @@ add $0,5
 mul $1,$0
 lpb $0,1
   add $1,$0
-  mul $1,2
   sub $0,1
+  mul $1,2
 lpe
 sub $1,257
 div $1,256

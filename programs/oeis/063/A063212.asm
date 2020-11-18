@@ -3,10 +3,10 @@
 
 mov $2,$0
 mov $4,$2
+div $2,3
 mov $3,$4
 add $3,1
 div $3,2
-div $2,3
 add $3,$2
 mov $1,$3
 mul $1,2

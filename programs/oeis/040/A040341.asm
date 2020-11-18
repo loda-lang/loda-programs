@@ -10,14 +10,14 @@ mod $1,2
 mov $2,1
 lpb $3,1
   mov $3,3
-  add $6,2
   mov $4,$1
+  add $6,2
   add $2,$6
   mul $2,$4
 lpe
 lpb $2,1
-  add $4,17
   div $2,2
+  add $4,17
 lpe
 mov $1,$4
 add $1,1

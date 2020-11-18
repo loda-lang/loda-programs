@@ -4,20 +4,18 @@
 mov $1,2
 mov $7,2
 lpb $0,1
-  sub $0,1
-  mov $5,$7
   add $0,1
-  mov $6,$1
-  mov $8,$6
-  add $0,1
-  mov $6,6
   mov $2,$7
   gcd $2,$0
-  add $8,1
-  div $6,2
-  pow $8,$0
   mul $2,2
+  mov $5,$7
+  mov $6,$1
+  mov $8,$6
+  mov $6,6
+  div $6,2
   add $6,$5
+  add $8,1
+  pow $8,$0
   cmp $0,1024
 lpe
 sub $2,$5

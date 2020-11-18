@@ -4,8 +4,8 @@
 mov $2,$0
 mov $3,8
 lpb $2,1
-  mov $3,3
   mov $2,1
+  mov $3,3
 lpe
 mul $3,$2
 mov $1,$3

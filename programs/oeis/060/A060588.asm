@@ -4,18 +4,16 @@
 mul $0,2
 mov $4,$0
 add $0,$4
+mov $1,2
 mov $2,$0
 mov $3,$2
 div $3,3
-add $3,16
-mov $1,2
-add $3,2
 mul $3,5
 mod $3,3
 lpb $0,1
+  mov $0,1
   add $1,8
   add $1,$3
-  mov $0,1
 lpe
 mul $1,2
 trn $1,20

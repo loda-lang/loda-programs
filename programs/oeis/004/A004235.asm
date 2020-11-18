@@ -3,20 +3,20 @@
 
 mul $0,2
 add $0,2
-mov $4,8
 pow $0,7
+mov $4,8
 lpb $0,1
   add $3,15
   sub $0,$3
   div $0,2
+  trn $0,1
   mov $2,$4
   mov $3,1
-  mov $5,9
   add $3,$2
   mov $4,$3
   mov $3,9
-  trn $0,1
   add $4,18
+  mov $5,9
 lpe
 add $5,$4
 mov $1,$5

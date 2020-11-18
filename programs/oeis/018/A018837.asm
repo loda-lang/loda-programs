@@ -3,8 +3,8 @@
 
 mov $2,$0
 mod $0,4
-mov $4,$2
 mov $1,$2
+mov $4,$2
 mov $2,$0
 lpb $2,1
   mov $3,3
@@ -13,9 +13,9 @@ lpb $2,1
     mov $2,9
     mov $4,9
   lpe
-  fac $3
   sub $2,1
   mul $2,9
+  fac $3
   mul $0,$3
 lpe
 add $1,$0

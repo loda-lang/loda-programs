@@ -7,7 +7,7 @@ sub $0,2
 mul $1,$0
 mov $2,$1
 add $1,2
-div $2,2
 mul $1,3
+div $2,2
 sub $1,$2
 sub $1,2

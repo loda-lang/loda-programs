@@ -6,10 +6,8 @@ mov $2,$0
 add $2,5
 mov $0,$2
 bin $0,5
-add $0,1
 mul $1,7
 add $1,7
-sub $0,1
 mul $1,$0
 sub $1,$0
 div $1,3

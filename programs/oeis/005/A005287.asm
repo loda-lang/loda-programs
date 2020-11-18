@@ -7,12 +7,12 @@ mov $2,$0
 add $2,3
 lpb $0,1
   lpb $0,1
-    add $4,$2
     add $3,1
+    add $4,$2
     add $1,$4
-    add $2,$3
     add $1,$0
     sub $0,1
+    add $2,$3
   lpe
 lpe
 lpb $5,1

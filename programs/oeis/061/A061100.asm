@@ -4,24 +4,24 @@
 mov $4,$0
 lpb $0,1
   sub $0,1
-  add $1,3
   trn $0,1
+  add $1,3
 lpe
 pow $1,2
 add $1,4
-mov $5,$4
 mov $2,18
+mov $5,$4
 lpb $2,1
   add $1,$5
   sub $2,1
 lpe
 mov $3,$4
 lpb $3,1
-  add $6,$5
   sub $3,1
+  add $6,$5
 lpe
-mov $5,$6
 mov $2,18
+mov $5,$6
 lpb $2,1
   add $1,$5
   sub $2,1

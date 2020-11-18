@@ -4,9 +4,9 @@
 mov $1,1
 mov $2,$0
 lpb $2,1
+  sub $2,1
   trn $3,1
   mod $3,2
   add $3,2
-  sub $2,1
   mul $1,$3
 lpe

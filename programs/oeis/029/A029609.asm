@@ -6,6 +6,7 @@ add $0,$3
 mov $2,$0
 bin $2,$3
 lpb $0,1
+  mov $0,1
   mov $1,$2
   div $1,2
   sub $2,1
@@ -16,7 +17,6 @@ lpb $0,1
   sub $1,$3
   add $2,2
   add $1,$2
-  mov $0,1
 lpe
 trn $1,8
 add $1,1

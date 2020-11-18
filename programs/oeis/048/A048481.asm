@@ -6,6 +6,6 @@ mov $2,$0
 lpb $2,1
   add $1,$0
   mul $0,2
-  sub $2,1
   sub $0,3
+  sub $2,1
 lpe

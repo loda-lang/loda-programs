@@ -4,10 +4,10 @@
 mov $3,$0
 add $3,1
 mov $5,$3
-mod $3,2
 mov $2,$5
 mov $0,$2
 add $0,1
+mod $3,2
 mov $4,$0
 bin $4,2
 add $4,$3

@@ -4,8 +4,8 @@
 mov $3,$0
 mov $5,$0
 lpb $5,1
-  sub $5,1
   mov $0,$3
+  sub $5,1
   sub $0,$5
   mov $1,$0
   mov $2,19
@@ -14,8 +14,8 @@ lpb $5,1
     div $1,3
     mov $0,$1
   lpe
-  gcd $2,2
   mov $0,531441
+  gcd $2,2
   mul $0,$2
   mov $1,$0
   sub $1,531441

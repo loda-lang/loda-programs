@@ -3,14 +3,14 @@
 
 mov $3,$0
 mov $1,$3
-mov $3,1
 add $0,$1
 mov $2,$0
+mov $3,1
 lpb $2,1
-  add $3,3
   sub $2,7
   trn $2,0
   sub $2,1
+  add $3,3
 lpe
 bin $2,$3
 mov $1,$2

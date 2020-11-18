@@ -4,17 +4,17 @@
 mov $2,$0
 mov $3,$0
 lpb $3,1
-  sub $3,1
   mov $0,$2
+  sub $3,1
   sub $0,$3
   add $0,1
-  pow $5,$5
   mul $0,6
+  pow $5,$5
   add $5,1
   log $0,$5
   sub $0,$5
-  cmp $5,7
   mov $1,$0
   add $4,$1
+  cmp $5,7
 lpe
 mov $1,$4

@@ -4,16 +4,16 @@
 mov $2,1
 mov $3,$0
 pow $0,2
+add $0,1
 add $2,$3
 sub $2,1
-mov $4,30
-add $0,1
 sub $0,$2
+mov $4,30
 mov $5,4
 lpb $0,1
-  add $5,1
   sub $0,$4
   trn $0,1
+  add $5,1
 lpe
 mov $1,$5
 sub $1,5

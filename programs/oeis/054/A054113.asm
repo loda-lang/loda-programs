@@ -5,8 +5,8 @@ mov $13,$0
 mov $15,$0
 add $15,1
 lpb $15,1
-  sub $15,1
   mov $0,$13
+  sub $15,1
   sub $0,$15
   mov $1,$0
   mul $0,2
@@ -22,9 +22,9 @@ lpb $15,1
     add $7,$2
     sub $2,1
   lpe
+  mov $1,$0
   add $5,4
   add $2,$5
-  mov $1,$0
   add $14,$1
 lpe
 mov $1,$14

@@ -5,12 +5,12 @@ mov $4,$0
 mov $5,$0
 mul $4,$5
 lpb $0,1
-  sub $4,2
   sub $0,1
   mov $2,1
   mul $2,$0
-  mul $2,2
   mov $0,1
+  mul $2,2
+  sub $4,2
 lpe
 mov $3,$2
 bin $4,2

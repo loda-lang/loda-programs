@@ -6,6 +6,6 @@ lpb $0,5
   add $3,$0
   mov $1,$3
   add $5,1
-  mov $3,$5
   trn $0,$5
+  mov $3,$5
 lpe

@@ -3,8 +3,8 @@
 
 add $0,1
 lpb $0,1
-  mov $3,$2
   sub $0,1
+  mov $3,$2
   trn $3,$0
   add $3,$2
   trn $0,$3

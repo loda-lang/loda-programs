@@ -5,6 +5,6 @@ add $0,1
 lpb $0,1
   add $0,3
   add $2,$0
-  add $1,$2
   trn $0,5
+  add $1,$2
 lpe

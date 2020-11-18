@@ -3,12 +3,12 @@
 
 mov $1,3
 mov $2,$0
-mov $3,2
 mov $0,0
+mov $3,2
 lpb $2,1
   lpb $4,1
-    trn $4,$3
     mov $1,$5
+    trn $4,$3
   lpe
   mov $4,1
   mov $5,$0

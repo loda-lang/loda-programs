@@ -3,9 +3,9 @@
 
 mov $2,$0
 add $2,2
+mov $0,$2
 mov $1,$2
 log $1,2
 gcd $1,$2
-mov $0,$2
 div $0,$1
 mov $1,$0

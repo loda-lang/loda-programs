@@ -3,8 +3,8 @@
 
 mov $2,$0
 add $0,4
-div $2,8
 mul $0,8
+div $2,8
 mov $3,$2
 add $3,$0
 div $3,6

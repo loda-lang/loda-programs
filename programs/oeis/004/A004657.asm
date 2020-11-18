@@ -6,16 +6,16 @@ mov $13,$0
 add $13,1
 lpb $13,1
   clr $0,11
-  sub $13,1
   mov $0,$11
+  sub $13,1
   sub $0,$13
   add $8,$0
   div $0,2
   sub $8,$0
   mul $0,2
-  add $2,1
   sub $0,$8
   add $0,1
+  add $2,1
   add $4,$2
   mov $1,$4
   mul $1,2

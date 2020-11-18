@@ -3,8 +3,8 @@
 
 mov $2,$0
 mul $2,$0
-add $2,1
 add $0,1
+add $2,1
 log $2,10
 add $2,1
 pow $2,$0

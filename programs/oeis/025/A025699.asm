@@ -6,39 +6,39 @@ mov $16,$0
 add $16,1
 lpb $16,1
   clr $0,14
-  sub $16,1
   mov $0,$14
+  sub $16,1
   sub $0,$16
   mov $11,$0
   mov $13,$0
   add $13,1
   lpb $13,1
-    sub $13,1
     mov $0,$11
+    sub $13,1
     sub $0,$13
     mov $2,$0
+    mov $0,69
     sub $2,2
     mod $2,17
     mov $7,1
     mov $10,$2
     add $10,1
-    mov $0,69
     sub $0,$10
-    mov $10,2
     mov $9,0
+    mov $10,2
     lpb $0,1
       sub $0,1
-      mul $10,2
       gcd $0,2
       add $9,$7
+      mul $0,$9
+      mul $10,2
       div $10,2
       mov $1,$10
       mov $5,$1
-      mul $0,$9
       add $5,2
     lpe
-    sub $5,$0
     sub $2,$2
+    sub $5,$0
     add $2,$5
     mov $1,$2
     sub $1,2

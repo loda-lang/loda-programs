@@ -9,8 +9,8 @@ lpb $0,1
   sub $0,1
   trn $2,$0
   trn $0,5
-  add $2,$3
   sub $1,$1
+  add $2,$3
   add $1,$2
   gcd $2,$0
 lpe

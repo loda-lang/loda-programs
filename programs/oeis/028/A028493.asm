@@ -6,9 +6,9 @@ mov $0,3
 pow $0,$1
 sub $1,1
 sub $0,$1
-mov $2,$0
 sub $1,4
 pow $1,2
+mov $2,$0
 add $1,$2
 sub $1,17
 div $1,2

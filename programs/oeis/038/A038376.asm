@@ -5,8 +5,8 @@ mov $5,$0
 mov $7,$0
 lpb $7,1
   clr $0,5
-  sub $7,1
   mov $0,$5
+  sub $7,1
   sub $0,$7
   sub $0,1
   trn $2,$0

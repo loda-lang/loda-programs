@@ -5,14 +5,14 @@ mov $6,$0
 add $6,1
 mov $0,$6
 mov $2,$6
-mov $4,3
 mov $3,$2
+mov $4,3
 lpb $0,1
+  sub $0,1
   mul $3,$4
   mov $5,6
   div $5,$4
   mov $4,$5
-  sub $0,1
 lpe
 mov $1,$3
 sub $1,3

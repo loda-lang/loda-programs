@@ -3,8 +3,8 @@
 
 add $0,11
 mov $1,$0
-bin $1,11
 sub $0,5
+bin $1,11
 mul $1,$0
 mul $1,2
 sub $1,12

@@ -5,21 +5,21 @@ mov $6,$0
 mov $7,$0
 add $7,1
 lpb $7,1
-  sub $7,1
   mov $0,$6
+  sub $7,1
   sub $0,$7
-  mov $5,7
-  fac $4
   mov $2,$0
   cmp $0,0
+  fac $4
   mov $1,$4
   mul $2,2
+  mov $5,7
   lpb $2,1
-    div $2,2
     mul $1,2
+    div $2,2
     lpb $5,1
-      sub $5,$4
       pow $1,$0
+      sub $5,$4
     lpe
     trn $2,1
   lpe

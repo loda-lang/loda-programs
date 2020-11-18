@@ -5,23 +5,23 @@ mov $2,$0
 mov $8,$0
 add $8,1
 lpb $8,1
-  sub $8,1
   mov $0,$2
+  sub $8,1
   sub $0,$8
-  mov $7,$0
   mov $5,2
+  mov $7,$0
   lpb $5,1
     sub $5,1
     add $0,$5
     sub $0,1
-    mov $3,$0
     mov $1,2
+    mov $3,$0
     add $1,$3
     div $1,4
     mov $4,$5
     lpb $4,1
-      mov $6,$1
       sub $4,1
+      mov $6,$1
     lpe
   lpe
   lpb $7,1

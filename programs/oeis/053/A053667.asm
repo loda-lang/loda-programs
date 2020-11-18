@@ -5,8 +5,8 @@ pow $0,2
 mov $1,34
 lpb $0,1
   mov $2,$0
-  mod $2,10
   div $0,10
+  mod $2,10
   mul $1,$2
   mov $4,$1
 lpe

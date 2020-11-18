@@ -3,19 +3,16 @@
 
 mov $4,$0
 lpb $0,1
+  add $0,1
   add $2,1
-  add $3,1
-  add $0,2
-  add $3,3
+  add $3,4
   mov $1,$3
-  sub $0,1
   sub $1,2
   add $3,$1
-  mul $3,2
-  sub $3,1
   mul $1,2
-  add $3,2
   trn $0,$1
+  mul $3,2
+  add $3,1
 lpe
 mov $1,$2
 lpb $4,1

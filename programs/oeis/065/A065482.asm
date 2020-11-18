@@ -4,12 +4,12 @@
 mov $3,$0
 mov $4,2
 pow $4,$3
-mul $4,4
 add $3,1
-mov $5,$3
+mul $4,4
 mov $2,$4
+mov $5,$3
 add $2,$5
-mul $5,2
 mov $3,$2
+mul $5,2
 div $3,$5
 mov $1,$3

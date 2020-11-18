@@ -8,8 +8,8 @@ lpe
 add $5,$$1
 add $2,4
 mov $$1,1
-add $5,$0
 add $1,$2
+add $5,$0
 mov $$2,$2
 add $$3,2
 sub $$5,$1

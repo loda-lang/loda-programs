@@ -5,32 +5,32 @@ mov $7,$0
 mov $9,$0
 add $9,1
 lpb $9,1
-  sub $9,1
   mov $0,$7
+  sub $9,1
   sub $0,$9
   mov $1,$0
-  mov $6,1
   add $1,2
+  mov $6,1
   lpb $0,1
     mov $4,2
     add $4,$1
-    mov $5,1
-    trn $5,$6
+    mov $1,2
     mov $3,$4
-    mov $6,7
     sub $3,2
     sub $4,$0
+    mov $5,1
+    trn $5,$6
+    mov $6,7
     add $6,$4
     mov $2,$6
     add $2,$6
-    mov $1,2
-    add $5,2
-    mov $6,$5
-    add $3,1
     trn $2,$0
     sub $0,1
-    pow $6,$3
     trn $0,$2
+    add $3,1
+    add $5,2
+    mov $6,$5
+    pow $6,$3
   lpe
   mov $1,$6
   sub $1,1

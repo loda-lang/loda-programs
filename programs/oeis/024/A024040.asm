@@ -6,9 +6,7 @@ pow $2,2
 mov $1,$2
 pow $1,2
 mov $2,4
-sub $1,1
 pow $2,$0
-add $1,1
 sub $2,$1
 add $2,5
 mov $1,$2

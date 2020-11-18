@@ -7,10 +7,10 @@ div $0,2
 sub $1,1
 mov $2,$1
 add $2,$1
-add $2,$0
 mov $1,7776
-mul $2,$0
 add $1,$0
+add $2,$0
+mul $2,$0
 add $2,1
 add $2,$1
 add $2,1

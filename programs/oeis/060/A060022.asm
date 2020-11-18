@@ -3,12 +3,12 @@
 
 add $0,2
 mov $3,$0
-div $3,2
 bin $0,2
+div $3,2
 mov $2,$3
 add $0,$2
 lpb $0,1
-  sub $2,1
   sub $0,6
+  sub $2,1
 lpe
 mov $1,$2

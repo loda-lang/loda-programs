@@ -1,13 +1,13 @@
 ; A050735: Numbers of form 5^k (values of k see A050726) containing no pair of consecutive equal digits (probably finite).
 ; 1,5,25,125,625,3125,15625,78125,390625,1953125,9765625,6103515625,30517578125,152587890625,762939453125,3814697265625,19073486328125,95367431640625,476837158203125,2384185791015625
 
-mov $4,1
 mov $2,$0
 fac $0
+mov $4,1
 lpb $0,1
   mov $0,$4
-  add $2,3
   add $0,4
+  add $2,3
   mul $0,$2
   mul $0,65536
 lpe

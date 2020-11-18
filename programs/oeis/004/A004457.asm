@@ -3,23 +3,21 @@
 
 mov $8,$0
 div $0,16
-mov $6,3
-mov $1,2
 gcd $0,2
+mov $1,2
+mov $6,3
 lpb $0,1
   pow $1,$6
   sub $1,1
   mov $2,1
   add $2,$0
-  add $2,1
   add $0,$1
-  sub $2,1
   pow $2,2
   mov $5,$0
   div $0,10
+  mov $1,16
   sub $2,$5
   mul $2,$5
-  mov $1,16
 lpe
 sub $7,1
 add $1,$7

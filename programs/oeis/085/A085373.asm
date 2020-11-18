@@ -6,11 +6,11 @@ add $3,1
 mov $5,$3
 mov $6,$5
 mov $4,$6
-add $6,1
 mul $4,2
+add $6,1
 mov $2,$6
-bin $4,$6
 pow $2,2
+bin $4,$6
 mul $2,$4
 add $2,2
 mov $1,$2

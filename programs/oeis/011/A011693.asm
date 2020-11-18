@@ -3,9 +3,9 @@
 
 sub $0,3
 sub $3,$0
-mov $4,9
 pow $3,2
 mod $3,17
+mov $4,9
 lpb $3,1
   mov $2,$4
   mod $3,10

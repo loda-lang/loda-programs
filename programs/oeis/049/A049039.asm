@@ -4,8 +4,8 @@
 mul $0,2
 add $0,2
 mov $3,$0
-add $3,2
 log $0,2
+add $3,2
 sub $3,$0
 mul $3,3
 mov $2,$3

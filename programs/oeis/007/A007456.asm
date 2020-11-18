@@ -6,10 +6,10 @@ gcd $0,2
 mov $3,$0
 mul $2,$3
 lpb $0,1
-  mul $2,4
   mov $0,$4
-  mov $4,2
+  mul $2,4
   add $2,1
+  mov $4,2
 lpe
 mul $4,$2
 log $4,2

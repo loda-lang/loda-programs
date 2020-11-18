@@ -4,8 +4,8 @@
 add $0,1
 mul $0,2
 lpb $0,1
-  add $1,4
   trn $0,3
+  add $1,4
   add $1,$0
   trn $0,3
   sub $1,$0

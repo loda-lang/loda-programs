@@ -10,18 +10,17 @@ add $6,4
 add $5,$6
 mov $0,$5
 lpb $0,1
+  sub $0,14
+  trn $0,1
   sub $6,1
-  sub $0,11
   mov $2,$6
   add $2,4
-  sub $0,3
   sub $6,1
   mov $4,$6
-  trn $0,1
   sub $4,5
+  mov $1,$4
   mov $6,$2
   sub $6,4
-  mov $1,$4
 lpe
 sub $1,3
 lpb $3,1

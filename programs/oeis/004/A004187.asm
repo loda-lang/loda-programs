@@ -4,8 +4,8 @@
 lpb $0,1
   add $1,5
   lpb $1,1
-    add $2,$3
     sub $1,1
+    add $2,$3
   lpe
   sub $0,1
   add $2,1

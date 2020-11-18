@@ -3,15 +3,14 @@
 
 mov $2,$0
 mod $0,2
+mov $1,$0
 mul $2,2
 add $2,4
-mov $1,$0
 mov $0,$2
 add $0,15
 lpb $0,1
-  sub $0,1
+  sub $0,4
   mov $3,$1
-  sub $0,3
   mul $1,4
   add $1,2
 lpe

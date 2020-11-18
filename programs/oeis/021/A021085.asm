@@ -3,8 +3,8 @@
 
 mod $0,9
 mov $1,$0
+add $0,1
 div $1,4
 fac $1
-add $0,1
 add $1,$0
 sub $1,2

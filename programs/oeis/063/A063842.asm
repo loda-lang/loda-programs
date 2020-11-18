@@ -3,16 +3,16 @@
 
 mov $3,1
 mov $4,$0
+mov $0,2
 add $3,$4
 mov $5,$3
 mul $5,$3
-mov $0,2
 mov $3,$5
 add $0,$3
-mul $5,$0
 add $3,1
 mov $2,$3
 add $2,6
+mul $5,$0
 mul $2,$5
 mov $1,$2
 sub $1,24

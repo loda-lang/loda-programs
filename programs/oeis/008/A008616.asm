@@ -7,18 +7,18 @@ mul $0,2
 add $0,$1
 mov $5,$0
 mov $2,$5
-mov $4,$2
 mov $3,$5
+mov $4,$2
 sub $2,$4
 sub $5,$4
 lpb $0,1
   mov $1,$2
+  add $2,1
   trn $3,6
   trn $5,1
-  add $2,1
   sub $0,$5
-  trn $2,$3
   sub $0,1
-  mov $5,2
   trn $0,3
+  trn $2,$3
+  mov $5,2
 lpe

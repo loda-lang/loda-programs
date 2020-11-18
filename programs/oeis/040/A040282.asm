@@ -5,10 +5,10 @@ mov $4,$0
 gcd $4,4
 mov $3,$4
 lpb $0,1
-  add $4,2
-  sub $3,1
   sub $0,1
+  sub $3,1
   sub $0,$3
+  add $4,2
   sub $3,$4
   sub $4,1
 lpe

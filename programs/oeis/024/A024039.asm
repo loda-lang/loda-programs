@@ -4,17 +4,17 @@
 mov $2,2
 pow $2,$0
 pow $0,3
+sub $0,1
 mov $1,$2
 mul $2,$1
-sub $0,1
 sub $2,$0
-sub $2,2
 gcd $0,2
+sub $2,2
 mul $2,2
 lpb $0,1
-  mul $2,2
   sub $0,1
   div $0,2
+  mul $2,2
 lpe
 mov $1,$2
 div $1,4

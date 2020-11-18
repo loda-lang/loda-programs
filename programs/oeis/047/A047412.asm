@@ -5,6 +5,6 @@ mov $2,$0
 lpb $2,1
   add $1,2
   trn $1,$0
-  sub $2,1
   trn $0,5
+  sub $2,1
 lpe

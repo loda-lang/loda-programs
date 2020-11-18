@@ -8,13 +8,13 @@ mov $4,$0
 mul $0,2
 add $4,2
 add $4,$0
-gcd $4,98
 mov $0,8
 mov $2,3
+gcd $4,98
 lpb $0,1
-  div $4,6
   div $0,$2
   mov $2,1
+  div $4,6
   mul $4,2
 lpe
 mov $1,$4

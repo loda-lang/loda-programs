@@ -5,8 +5,8 @@ add $0,3
 bin $0,2
 mov $3,$0
 sub $0,1
-pow $3,2
 mov $2,$0
+pow $3,2
 mul $2,$3
 mov $4,$2
 mov $1,$4

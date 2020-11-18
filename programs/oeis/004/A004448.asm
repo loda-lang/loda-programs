@@ -5,16 +5,13 @@ add $0,9
 mov $3,$0
 lpb $0,1
   sub $0,7
-  add $3,1
   mov $1,$4
   add $1,3
   mov $2,$1
-  sub $3,1
-  sub $2,4
-  mov $4,12
-  sub $2,5
-  sub $4,$0
+  sub $2,9
   mov $1,$2
+  mov $4,12
+  sub $4,$0
   trn $0,1
   mul $1,2
   add $1,$3

@@ -9,11 +9,11 @@ div $4,10
 lpb $0,1
   sub $0,$4
   add $2,$0
-  div $2,7
-  mov $4,19691
-  mov $3,$2
-  add $4,$3
   mov $0,1
+  div $2,7
+  mov $3,$2
+  mov $4,19691
+  add $4,$3
 lpe
 add $4,2
 mov $1,$4

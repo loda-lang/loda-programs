@@ -4,6 +4,6 @@
 mov $1,$0
 gcd $1,2
 lpb $0,1
-  pow $1,$1
   pow $0,$2
+  pow $1,$1
 lpe

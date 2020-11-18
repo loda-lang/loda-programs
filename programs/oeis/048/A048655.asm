@@ -3,12 +3,12 @@
 
 mov $1,1
 lpb $0,1
-  add $2,$1
   sub $0,1
-  add $4,$2
+  add $2,$1
   sub $1,$1
-  mov $3,$2
   add $1,6
+  mov $3,$2
+  add $4,$2
   add $1,$4
   sub $1,2
   mov $4,$3

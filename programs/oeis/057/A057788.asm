@@ -4,9 +4,9 @@
 mov $3,$0
 add $3,1
 add $3,$0
+add $3,10
 mov $4,10
 add $4,$0
-add $3,10
 bin $4,10
 mov $2,$4
 mov $1,$2

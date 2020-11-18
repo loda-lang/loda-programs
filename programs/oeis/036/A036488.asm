@@ -7,11 +7,11 @@ mov $3,1
 lpb $0,1
   div $2,9979199
   add $2,$3
-  add $3,1
   sub $0,$2
   sub $0,$2
   trn $0,1
   add $0,1
+  add $3,1
 lpe
 sub $3,$0
 add $3,$0

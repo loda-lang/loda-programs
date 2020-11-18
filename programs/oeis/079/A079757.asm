@@ -8,8 +8,8 @@ add $1,2
 add $0,$1
 div $0,3
 sub $0,1
-mov $3,7
 mov $2,1
+mov $3,7
 lpb $0,1
   sub $0,$3
   sub $0,1

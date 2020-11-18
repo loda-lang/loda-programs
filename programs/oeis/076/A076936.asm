@@ -14,10 +14,10 @@ lpb $0,1
 lpe
 add $0,3
 div $0,2
-add $5,$0
-mov $4,2
-pow $4,$5
 mov $1,3
+mov $4,2
+add $5,$0
+pow $4,$5
 add $1,$4
 sub $1,5
 div $1,2

@@ -5,13 +5,12 @@ mov $3,$0
 add $3,$0
 trn $0,5
 add $0,$3
-add $0,2
+add $0,3
 mov $4,3
-add $0,1
 lpb $0,1
   sub $0,$4
-  add $2,1
   sub $0,1
   trn $0,6
+  add $2,1
 lpe
 add $1,$2

@@ -3,8 +3,8 @@
 
 lpb $0,1
   add $2,$0
-  mod $2,9
   div $0,9
+  mod $2,9
 lpe
 add $2,1
 mov $1,$2

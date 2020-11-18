@@ -5,24 +5,24 @@ mov $5,$0
 mov $7,$0
 add $7,1
 lpb $7,1
-  sub $7,1
   mov $0,$5
+  sub $7,1
   sub $0,$7
   mov $2,2
   lpb $0,1
-    gcd $2,2
     div $0,2
     mul $0,2
+    gcd $2,2
     sub $2,3
-    mov $4,2
     add $0,$2
-    add $4,$0
     mov $3,4
     add $3,$0
+    mov $4,2
+    add $4,$0
     sub $0,1
     div $0,2
-    mul $3,$4
     add $0,1
+    mul $3,$4
     mov $4,1
   lpe
   sub $4,$3

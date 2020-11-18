@@ -3,15 +3,15 @@
 
 mov $11,$0
 sub $0,1
-mov $8,1
 mul $0,4
 mov $5,2
+mov $8,1
 add $8,$0
 lpb $0,1
   sub $0,$5
   add $0,$8
-  sub $8,1
   div $0,10
+  sub $8,1
   clr $5,2
 lpe
 add $0,1

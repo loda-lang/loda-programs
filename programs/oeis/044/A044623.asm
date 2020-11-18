@@ -6,8 +6,8 @@ add $0,2
 mod $0,8
 mov $1,8
 lpb $0,1
-  pow $1,$6
   mov $0,$4
+  pow $1,$6
   div $1,5
 lpe
 add $1,55

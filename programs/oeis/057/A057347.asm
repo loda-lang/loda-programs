@@ -6,8 +6,8 @@ mul $0,4
 mov $3,$2
 sub $0,$3
 mov $1,$0
-add $1,1
 trn $0,4
+add $1,1
 lpb $0,1
   trn $0,11
   sub $1,1

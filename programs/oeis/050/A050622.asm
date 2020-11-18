@@ -3,12 +3,12 @@
 
 mov $3,$0
 mov $4,$0
+mov $0,4
 mov $2,$4
 trn $2,3
 mov $4,$2
-mul $4,2
 sub $2,16
-mov $0,4
+mul $4,2
 mov $1,$4
 trn $2,6
 lpb $0,1
