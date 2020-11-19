@@ -3,15 +3,9 @@
 
 add $0,1
 gcd $0,1073741824
-add $6,$0
 mov $1,$0
 lpb $$0,1
   trn $0,6
-  add $1,$1
-  add $2,$1
-  bin $2,2
-  mul $2,8
-  mov $1,$2
   sub $0,4
 lpe
 mov $1,$0
