@@ -7,8 +7,8 @@ mov $5,$4
 mov $2,$5
 add $2,$4
 mod $2,6
-mov $3,$0
 mov $1,$2
+mov $3,$0
 add $1,$3
 sub $1,3
 div $1,3

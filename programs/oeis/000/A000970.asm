@@ -4,10 +4,10 @@
 mul $0,2
 add $0,5
 mov $3,$0
-mov $4,$3
 add $0,2
 mod $0,$3
 mov $2,$0
+mov $4,$3
 pow $$2,$0
 bin $$2,$2
 mov $5,$2

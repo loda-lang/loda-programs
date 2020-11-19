@@ -12,19 +12,19 @@ lpb $2,1
   add $1,1
   trn $2,4
 lpe
-mov $6,$7
 mov $3,4
+mov $6,$7
 lpb $3,1
   add $1,$6
   sub $3,1
 lpe
 mov $4,$7
 lpb $4,1
-  add $5,$6
   sub $4,1
+  add $5,$6
 lpe
-mov $6,$5
 mov $3,4
+mov $6,$5
 lpb $3,1
   add $1,$6
   sub $3,1
@@ -32,11 +32,11 @@ lpe
 mov $4,$7
 mov $5,0
 lpb $4,1
-  add $5,$6
   sub $4,1
+  add $5,$6
 lpe
-mov $6,$5
 mov $3,1
+mov $6,$5
 lpb $3,1
   add $1,$6
   sub $3,1

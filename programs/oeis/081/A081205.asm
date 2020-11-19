@@ -3,15 +3,15 @@
 
 mov $2,$0
 mov $3,$0
+mov $0,5
 add $3,4
-mov $6,$2
 mov $5,$3
+mov $6,$2
 mov $1,$6
 div $5,2
 add $1,$5
 bin $1,$5
 mov $4,$1
-mov $0,5
 add $0,$4
 mov $1,$0
 sub $1,5

@@ -4,13 +4,13 @@
 mov $4,$0
 lpb $0,1
   sub $0,1
-  mov $7,5
-  mov $6,1
   div $0,12
-  add $7,$0
   mov $1,2
-  mov $5,$7
+  mov $6,1
+  mov $7,5
+  add $7,$0
   mov $0,10
+  mov $5,$7
   add $5,2
   add $6,$5
   add $6,2

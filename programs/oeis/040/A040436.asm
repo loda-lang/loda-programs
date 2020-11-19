@@ -3,8 +3,8 @@
 
 pow $1,$0
 gcd $0,3
-gcd $1,2
 add $0,6
+gcd $1,2
 add $1,$0
 pow $1,2
 sub $1,79

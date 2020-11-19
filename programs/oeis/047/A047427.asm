@@ -3,8 +3,8 @@
 
 mov $1,$0
 mov $0,0
-mov $3,1
 add $1,1
+mov $3,1
 add $3,$1
 sub $3,1
 add $0,$3
@@ -15,6 +15,6 @@ lpb $0,1
   trn $0,3
   sub $3,1
 lpe
-add $3,$2
 sub $1,$1
+add $3,$2
 add $1,$3

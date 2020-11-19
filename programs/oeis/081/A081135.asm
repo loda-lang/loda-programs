@@ -3,8 +3,8 @@
 
 mov $2,5
 pow $2,$0
-mul $2,5
 bin $0,2
+mul $2,5
 mul $2,$0
 mov $1,$2
 div $1,125

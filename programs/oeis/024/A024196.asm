@@ -7,11 +7,11 @@ lpb $0,1
   sub $0,1
   mov $4,$0
   lpb $2,1
-    add $3,$4
     sub $2,1
+    add $3,$4
   lpe
-  mov $2,$4
   add $1,$3
   sub $1,$0
+  mov $2,$4
   add $2,$0
 lpe

@@ -3,19 +3,14 @@
 
 mov $2,$0
 lpb $0,1
-  add $3,6
-  sub $0,4
+  sub $0,7
   mov $1,1
-  add $3,1
+  add $3,7
   add $1,$3
-  sub $0,3
   trn $0,$1
-  add $1,4
-  add $0,7
-  add $1,3
-  add $0,1
+  add $0,13
+  add $1,7
   mov $3,1
-  add $0,5
 lpe
 lpb $2,1
   add $1,1

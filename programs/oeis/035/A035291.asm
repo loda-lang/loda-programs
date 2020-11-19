@@ -4,12 +4,12 @@
 mov $2,$0
 mov $3,$2
 mul $2,2
-add $3,1
 mov $1,$2
 add $1,$2
+add $3,1
 sub $1,$3
-mul $3,2
 mul $2,$1
+mul $3,2
 mul $0,$3
 sub $2,4
 mul $2,$0

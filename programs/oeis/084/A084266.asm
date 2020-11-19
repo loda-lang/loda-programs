@@ -9,9 +9,9 @@ add $1,4
 bin $1,2
 lpb $0,1
   sub $0,1
-  mov $2,1
   sub $1,2
   mul $1,2
+  mov $2,1
 lpe
 add $1,$2
 sub $1,9

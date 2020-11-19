@@ -4,22 +4,21 @@
 mov $17,$0
 mov $19,$0
 lpb $19,1
-  sub $19,1
   mov $0,$17
+  sub $19,1
   sub $0,$19
   mov $8,$0
   lpb $8,1
+    mov $1,1
+    add $1,$0
+    mov $3,1
     mov $7,1
     sub $8,1
-    mov $1,1
-    mov $3,1
-    add $1,$0
     lpb $7,1
       gcd $1,$8
       lpb $1,1
-        add $3,16
+        add $3,20
         add $5,2
-        add $3,4
         add $3,$5
         lpb $4,5
           mov $1,1

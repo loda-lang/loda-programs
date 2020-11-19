@@ -6,14 +6,14 @@ mov $2,2
 add $2,$0
 lpb $0,1
   sub $0,1
+  mov $1,4
   mov $3,$2
+  add $2,9
   add $3,2
   add $3,$0
-  add $2,9
-  mov $1,4
+  trn $0,1
   bin $3,2
   add $3,4
-  trn $0,1
 lpe
 add $1,$3
 sub $1,18

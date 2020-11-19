@@ -6,13 +6,13 @@ mov $0,12
 mov $2,12
 lpb $0,1
   mul $2,$4
-  mov $3,$0
   add $2,3
-  mov $5,$3
   bin $2,2
+  mov $3,$0
+  mov $0,8
+  mov $5,$3
   log $2,$5
   mul $2,9
-  mov $0,8
 lpe
 mov $3,$2
 mov $1,$3

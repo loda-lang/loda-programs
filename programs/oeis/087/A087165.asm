@@ -5,8 +5,8 @@ mov $27,$0
 mov $29,2
 lpb $29,1
   clr $0,27
-  sub $29,1
   mov $0,$27
+  sub $29,1
   add $0,$29
   lpb $0,1
     mul $0,3
@@ -21,8 +21,8 @@ lpb $29,1
   lpe
 lpe
 lpb $27,1
-  sub $28,$1
   mov $27,0
+  sub $28,$1
 lpe
 mov $1,$28
 add $1,1

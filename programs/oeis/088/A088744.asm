@@ -6,12 +6,12 @@ mov $12,$0
 add $12,1
 lpb $12,1
   clr $0,10
-  sub $12,1
   mov $0,$10
+  sub $12,1
   sub $0,$12
   mul $0,2
-  mov $4,1
   mov $2,$0
+  mov $4,1
   lpb $2,1
     mov $0,2
     div $2,2

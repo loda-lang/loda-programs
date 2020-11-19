@@ -4,8 +4,8 @@
 mov $1,$0
 pow $2,$1
 gcd $1,4
-add $2,1
 pow $1,2
+add $2,1
 gcd $0,$2
 trn $1,3
 div $1,$0

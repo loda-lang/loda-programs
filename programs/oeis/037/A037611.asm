@@ -4,8 +4,8 @@
 add $0,3
 mov $3,8
 lpb $0,1
-  sub $3,1
   sub $0,1
+  sub $3,1
   mov $4,$3
   mul $3,4
   div $4,56

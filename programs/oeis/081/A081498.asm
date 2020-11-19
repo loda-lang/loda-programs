@@ -3,7 +3,7 @@
 
 mov $2,2
 mul $2,$0
-add $2,1
 bin $0,3
+add $2,1
 sub $2,$0
 mov $1,$2

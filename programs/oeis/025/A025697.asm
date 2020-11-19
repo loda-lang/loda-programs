@@ -6,22 +6,20 @@ mov $13,$0
 add $13,1
 lpb $13,1
   clr $0,11
-  sub $13,1
   mov $0,$11
+  sub $13,1
   sub $0,$13
   mov $1,$0
   add $2,$0
-  add $5,12
-  mov $9,5
   sub $2,1
-  mul $9,$2
+  add $5,12
   add $5,$1
+  mov $9,5
+  mul $9,$2
   mov $3,$9
-  sub $5,2
+  add $3,7
+  sub $5,4
   div $9,37
-  sub $3,3
-  sub $5,2
-  add $3,10
   add $3,$9
   add $3,$5
   div $3,10

@@ -5,35 +5,35 @@ mov $7,$0
 mul $0,2
 mov $3,6
 lpb $0,1
-  sub $3,1
-  add $6,$5
   sub $0,1
-  add $5,6
   add $1,1
+  sub $3,1
   add $0,$3
+  add $6,$5
+  add $5,6
   sub $5,$6
   sub $0,$5
   add $0,3
+  trn $0,4
   trn $1,6
+  add $1,6
   mov $3,4
   mov $6,0
-  add $1,6
-  trn $0,4
 lpe
 add $1,5
-mov $8,$7
 mov $2,6
+mov $8,$7
 lpb $2,1
   add $1,$8
   sub $2,1
 lpe
 mov $4,$7
 lpb $4,1
-  add $9,$8
   sub $4,1
+  add $9,$8
 lpe
-mov $8,$9
 mov $2,1
+mov $8,$9
 lpb $2,1
   add $1,$8
   sub $2,1

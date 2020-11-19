@@ -3,8 +3,8 @@
 
 mod $0,7
 lpb $0,1
-  gcd $1,4
   mod $0,2
+  gcd $1,4
   mul $0,$1
 lpe
 div $1,4

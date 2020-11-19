@@ -8,10 +8,10 @@ mov $2,1
 mov $3,$0
 gcd $0,2
 div $3,4
-sub $2,$3
 sub $0,$3
+sub $2,$3
 lpb $0,1
-  trn $2,$3
   mov $0,1
+  trn $2,$3
 lpe
 mov $1,$2

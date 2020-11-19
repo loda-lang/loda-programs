@@ -3,16 +3,16 @@
 
 mov $9,1
 lpb $9,1
-  sub $9,1
-  mov $3,1
   mov $1,3
+  mov $3,1
+  sub $9,1
   lpb $0,1
     mov $2,$1
     mov $1,2
     gcd $1,$0
     lpb $1,7
-      mul $3,2
       div $2,$2
+      mul $3,2
     lpe
     div $0,2
   lpe

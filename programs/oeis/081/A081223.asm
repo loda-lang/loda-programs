@@ -3,23 +3,22 @@
 
 add $0,4
 mul $0,2
-mov $5,$0
 mov $3,$0
 add $3,4
+mov $5,$0
 add $5,$3
 mov $0,$5
 lpb $0,1
+  sub $0,14
+  trn $0,1
   sub $3,1
-  sub $0,11
   mov $2,$3
   add $2,4
-  sub $0,3
   sub $3,1
   mov $4,$3
-  trn $0,1
-  sub $4,5
   mov $3,$2
   sub $3,4
+  sub $4,5
   mov $1,$4
 lpe
 sub $1,2

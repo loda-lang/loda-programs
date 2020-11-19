@@ -5,17 +5,17 @@ mov $7,$0
 mov $9,$0
 lpb $9,1
   clr $0,7
-  sub $9,1
   mov $0,$7
+  sub $9,1
   sub $0,$9
+  mov $1,2
+  add $1,$0
+  bin $1,2
   add $3,$0
   mul $3,4
   sub $3,$0
-  mov $1,2
   mov $5,$3
-  add $1,$0
   add $5,1
-  bin $1,2
   mul $1,$5
   add $8,$1
 lpe

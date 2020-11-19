@@ -10,20 +10,20 @@ lpb $5,1
   mov $1,$0
   add $1,2
   log $1,2
-  mov $6,$1
   mov $2,$0
+  mov $6,$1
   add $2,$6
   sub $2,1
   mov $1,$2
   mov $4,$5
   lpb $4,1
-    mov $7,$1
     sub $4,1
+    mov $7,$1
   lpe
 lpe
 lpb $3,1
-  sub $7,$1
   mov $3,0
+  sub $7,$1
 lpe
 mov $1,$7
 add $1,1

@@ -6,14 +6,14 @@ add $0,1
 mul $0,2
 mov $2,$0
 lpb $2,1
-  add $5,4
   sub $2,$3
+  add $5,4
   lpb $5,1
     mov $3,2
     sub $5,2
   lpe
-  mov $6,1
   sub $2,6
+  mov $6,1
   lpb $6,1
     sub $3,$2
     mov $5,7
@@ -21,13 +21,13 @@ lpb $2,1
     sub $6,$3
     trn $6,$3
   lpe
-  trn $2,1
   mov $1,$5
   add $1,1
+  trn $2,1
 lpe
 add $1,62
-mov $8,$7
 mov $4,81
+mov $8,$7
 lpb $4,1
   add $1,$8
   sub $4,1

@@ -3,21 +3,19 @@
 
 mov $7,$0
 add $0,4
-mov $6,4
 mov $5,4
+mov $6,4
 lpb $0,1
-  trn $3,6
+  sub $0,1
   mov $2,$5
-  add $5,$6
+  trn $3,6
   add $3,2
   add $3,$6
-  sub $3,4
-  mov $6,$2
-  sub $3,4
+  sub $3,13
   mov $4,3
-  sub $3,5
+  add $5,$6
+  mov $6,$2
   add $6,3
-  sub $0,1
 lpe
 sub $3,1
 add $4,5

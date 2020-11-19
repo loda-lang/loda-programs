@@ -5,8 +5,8 @@ mov $5,$0
 add $0,4
 mod $0,10
 mul $0,10
-mov $3,6
 mov $1,9
+mov $3,6
 trn $3,$0
 sub $1,$3
 add $1,57

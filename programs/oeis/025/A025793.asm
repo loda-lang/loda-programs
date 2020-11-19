@@ -10,8 +10,8 @@ lpb $16,1
   mov $7,$0
   lpb $7,1
     mov $2,$7
-    add $4,6
     div $2,10
+    add $4,6
     mov $6,$4
     mov $7,11
     mul $7,$2

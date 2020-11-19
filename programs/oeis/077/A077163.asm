@@ -7,9 +7,9 @@ lpb $2,1
   mov $4,$0
   add $5,1
   lpb $4,1
-    bin $2,$3
     mov $1,$0
     pow $1,$5
+    bin $2,$3
     trn $4,$5
     add $5,1
   lpe

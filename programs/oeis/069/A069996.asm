@@ -6,17 +6,17 @@ mov $2,$0
 mov $5,$2
 lpb $2,1
   lpb $0,1
-    add $4,$5
     sub $0,1
+    add $4,$5
   lpe
   mov $3,4
-  mov $6,3
   mov $5,$4
+  mov $6,3
   lpb $6,1
-    sub $6,$3
-    sub $1,$1
     add $0,2
+    sub $1,$1
     add $1,$5
+    sub $6,$3
   lpe
   sub $2,1
 lpe

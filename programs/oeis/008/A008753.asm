@@ -6,26 +6,26 @@ mov $9,$0
 add $9,1
 lpb $9,1
   clr $0,7
-  sub $9,1
   mov $0,$7
+  sub $9,1
   sub $0,$9
   add $2,1
   sub $2,$0
   mov $5,$0
   add $0,5
-  gcd $2,2
   mul $0,$5
+  gcd $2,2
   lpb $0,1
-    fac $4
     pow $0,2
     div $0,10
+    fac $4
   lpe
   mov $0,$5
-  mov $5,$4
   div $0,3
-  add $5,1
   trn $0,$2
+  mov $5,$4
   mov $4,1
+  add $5,1
   add $5,$0
   sub $5,$0
   div $4,$5

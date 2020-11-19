@@ -6,8 +6,8 @@ mov $15,$0
 add $15,1
 lpb $15,1
   clr $0,13
-  sub $15,1
   mov $0,$13
+  sub $15,1
   sub $0,$15
   add $2,$0
   mul $2,$0
@@ -19,9 +19,8 @@ lpb $15,1
       lpb $0,1
         sub $0,2
         lpb $0,1
-          add $1,1
           sub $0,6
-          add $1,3
+          add $1,4
           add $12,$1
         lpe
       lpe

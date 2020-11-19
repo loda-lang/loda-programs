@@ -3,15 +3,14 @@
 
 mov $8,$0
 lpb $8,1
-  sub $8,1
   mov $1,1
   add $1,$0
+  sub $8,1
   lpb $7,10
     gcd $1,$8
     lpb $1,1
-      add $3,16
+      add $3,20
       add $5,2
-      add $3,4
       add $3,$5
       lpb $4,5
         mov $1,1

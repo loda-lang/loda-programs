@@ -4,11 +4,11 @@
 mov $1,5
 mov $2,1
 lpb $0,1
+  gcd $0,2
+  sub $0,1
   gcd $1,3
   add $1,$2
   add $2,5
-  gcd $0,2
-  sub $0,1
 lpe
 add $1,1
 pow $1,2

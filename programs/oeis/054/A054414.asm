@@ -4,9 +4,9 @@
 mov $2,$0
 mul $2,3571
 lpb $2,1
+  mov $3,2
   add $4,$2
   div $4,1318
-  mov $3,2
   lpb $4,1
     pow $2,$1
     mul $3,$4

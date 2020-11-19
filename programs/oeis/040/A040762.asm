@@ -3,10 +3,10 @@
 
 mov $1,3
 lpb $0,1
-  gcd $1,2
-  mul $1,2
   gcd $0,2
   sub $0,1
+  gcd $1,2
+  mul $1,2
 lpe
 mul $1,2
 pow $1,2

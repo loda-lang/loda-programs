@@ -4,13 +4,10 @@
 mov $4,$0
 pow $0,2
 mov $2,$0
+add $2,5
 sub $4,3
 trn $4,2
-add $2,1
 mov $3,$4
-sub $3,1
-add $2,4
-add $3,1
 add $2,$3
 div $2,2
 mov $1,$2

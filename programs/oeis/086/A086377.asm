@@ -5,13 +5,13 @@ mov $9,$0
 add $0,10
 mov $2,$0
 add $0,5
-mov $8,1
 mov $4,$2
+mov $8,1
 lpb $2,1
   mov $6,$8
   lpb $4,1
-    mov $7,$0
     add $6,$0
+    mov $7,$0
     sub $4,$7
     bin $6,2
   lpe

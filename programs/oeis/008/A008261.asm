@@ -4,14 +4,14 @@
 mov $6,$0
 pow $0,2
 sub $0,1
-mov $4,$0
 mov $3,$0
+mov $4,$0
 div $0,3
 mul $0,2
 sub $0,1
 sub $3,$0
-sub $3,$4
 mov $0,1
+sub $3,$4
 add $0,$3
 mov $5,$0
 mov $0,$3

@@ -7,9 +7,9 @@ mov $3,2
 lpb $2,1
   add $3,$2
   lpb $3,1
-    trn $3,6
     add $1,1
+    trn $3,6
   lpe
-  add $3,3
   trn $2,3
+  add $3,3
 lpe

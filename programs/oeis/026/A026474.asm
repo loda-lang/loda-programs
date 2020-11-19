@@ -11,14 +11,14 @@ add $0,1
 mov $6,6
 lpb $0,1
   mov $1,$0
-  add $1,$7
   mov $0,2
   sub $0,2
   add $0,$4
+  add $1,$7
   clr $2,$6
-  trn $1,2
   mul $0,2
   trn $0,1
+  trn $1,2
   mov $7,$1
 lpe
 add $1,1

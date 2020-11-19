@@ -5,8 +5,8 @@ mov $2,$0
 mov $3,$0
 add $3,1
 lpb $3,1
-  sub $3,1
   mov $0,$2
+  sub $3,1
   sub $0,$3
   mov $1,$0
   add $1,$0

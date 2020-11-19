@@ -7,8 +7,8 @@ lpb $0,1
   add $1,11
 lpe
 lpb $0,1
-  add $1,9
   sub $0,5
   div $0,2
+  add $1,9
 lpe
 add $1,12

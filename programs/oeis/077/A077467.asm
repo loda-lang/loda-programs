@@ -4,24 +4,24 @@
 add $0,1
 mov $3,$0
 lpb $0,1
+  div $0,2
   add $1,6
   mov $7,$3
   add $4,$7
-  div $0,2
 lpe
-sub $1,1
-mov $7,4
 sub $0,1
+sub $1,1
 div $4,$0
-add $5,1
 div $4,$1
 mov $2,$4
 sub $2,$3
+add $5,1
 mov $6,$2
 div $6,2
 add $6,$0
 sub $0,$6
 add $5,$0
+mov $7,4
 mul $7,$5
 add $7,$5
 mul $7,5

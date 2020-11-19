@@ -4,11 +4,11 @@
 mov $6,$0
 add $0,9
 lpb $0,1
-  add $4,$0
   gcd $2,2
+  add $4,$0
+  mov $0,$5
   add $2,$4
   bin $2,3
-  mov $0,$5
   add $3,$2
   div $3,2
 lpe

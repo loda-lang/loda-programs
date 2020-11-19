@@ -5,33 +5,33 @@ mov $11,$0
 mov $13,$0
 lpb $13,1
   clr $0,11
-  sub $13,1
   mov $0,$11
+  sub $13,1
   sub $0,$13
   mov $8,$0
   mov $10,$0
   lpb $10,1
     clr $0,8
-    sub $10,1
     mov $0,$8
+    sub $10,1
     sub $0,$10
     mov $5,$0
     mov $7,$0
     lpb $7,1
-      sub $7,1
       mov $0,$5
+      sub $7,1
       sub $0,$7
-      mod $1,1
       add $0,1
+      mod $1,1
       mov $2,1
       lpb $0,1
         mov $3,$1
         add $0,$3
         sub $0,$1
+        sub $0,1
         mov $4,$1
         add $1,$2
         mov $2,$3
-        sub $0,1
       lpe
       mul $4,$2
       mov $1,$4

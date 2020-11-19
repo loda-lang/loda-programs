@@ -3,10 +3,10 @@
 
 mov $6,$0
 mul $0,2
+mov $2,199
 mov $4,$0
 mov $5,$4
 add $5,3
-mov $2,199
 lpb $0,1
   mov $0,$5
   sub $0,1

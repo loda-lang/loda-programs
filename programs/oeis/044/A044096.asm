@@ -5,8 +5,8 @@ mov $1,$0
 add $0,6
 mov $4,$0
 lpb $3,7
-  trn $4,24
   add $1,1
+  trn $4,24
 lpe
 add $4,1
 sub $1,$4

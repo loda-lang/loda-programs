@@ -13,9 +13,9 @@ lpb $16,1
     add $1,1
     mul $1,2
     add $1,1
-    add $5,$4
     gcd $1,$0
     div $0,3
+    add $5,$4
   lpe
   lpb $5,1
     div $1,2

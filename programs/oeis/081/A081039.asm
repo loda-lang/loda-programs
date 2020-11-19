@@ -3,12 +3,12 @@
 
 mov $2,$0
 add $0,1
-mov $3,$0
 add $2,2
+mov $3,$0
 mul $3,2
+add $2,$3
 mov $5,2
 pow $5,$3
-add $2,$3
 mov $4,$5
 mul $4,$2
 mov $1,$4

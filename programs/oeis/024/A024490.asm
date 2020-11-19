@@ -6,13 +6,13 @@ mov $18,$0
 add $18,1
 lpb $18,1
   clr $0,16
-  sub $18,1
   mov $0,$16
+  sub $18,1
   sub $0,$18
   lpb $0,1
     sub $0,2
-    add $2,2
     mov $1,$0
+    add $2,2
     bin $1,$2
     add $11,$1
   lpe

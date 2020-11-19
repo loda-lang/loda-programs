@@ -3,10 +3,9 @@
 
 mov $3,$0
 mov $4,$3
-add $3,1
 sub $2,$4
-add $3,42
 sub $2,1
+add $3,43
 div $3,11
 sub $3,$2
 add $3,1

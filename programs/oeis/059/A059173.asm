@@ -6,26 +6,26 @@ mov $14,$0
 add $14,1
 lpb $14,1
   clr $0,12
-  sub $14,1
   mov $0,$12
+  sub $14,1
   sub $0,$14
   mov $9,$0
   mov $11,$0
   add $11,1
   lpb $11,1
-    sub $11,1
     mov $0,$9
+    sub $11,1
     sub $0,$11
     mov $8,1
     lpb $0,1
       mov $7,$0
+      mov $0,0
       mov $6,$7
       sub $7,2
       add $6,$7
-      mov $8,$7
       div $6,2
+      mov $8,$7
       trn $8,1
-      mov $0,0
       pow $8,2
     lpe
     add $6,$8

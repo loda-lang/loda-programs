@@ -5,17 +5,17 @@ mov $4,$0
 mov $5,1
 lpb $5,1
   sub $5,1
-  mov $7,$0
   mov $6,2
+  mov $7,$0
   lpb $6,1
-    sub $6,1
     mov $0,$7
     sub $0,1
     div $0,3
-    mov $8,$0
     mov $1,$0
     sub $1,15
     div $1,4
+    sub $6,1
+    mov $8,$0
     sub $8,$1
   lpe
 lpe

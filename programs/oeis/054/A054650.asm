@@ -3,9 +3,9 @@
 
 mov $4,$0
 mov $0,1
+add $0,$4
 mov $1,1
 add $1,$4
-add $0,$4
 mov $2,2
 mov $3,$0
 pow $2,$3

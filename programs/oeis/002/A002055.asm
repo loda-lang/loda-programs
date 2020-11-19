@@ -3,16 +3,16 @@
 
 mov $1,$0
 add $0,2
-mov $3,$0
 mov $2,2
+mov $3,$0
 add $3,$0
 bin $3,$1
 lpb $0,1
-  mul $3,$0
-  mul $3,3
   add $2,1
-  add $3,$2
+  mul $3,$0
   sub $0,6
+  mul $3,3
+  add $3,$2
   add $4,$1
   add $5,$4
   trn $0,$5

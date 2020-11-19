@@ -3,12 +3,12 @@
 
 add $0,2
 mov $2,$0
-mul $2,2
 add $0,1
+mul $2,2
 bin $2,3
 lpb $0,1
-  mul $2,4
   sub $0,1
+  mul $2,4
 lpe
 mov $1,$2
 sub $1,256

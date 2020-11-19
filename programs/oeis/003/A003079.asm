@@ -6,9 +6,8 @@ add $1,2
 mul $1,2
 mod $1,5
 mul $1,2
-add $1,8
+add $1,10
 mov $2,841
-add $1,2
 div $2,$1
 add $1,$2
 sub $1,63

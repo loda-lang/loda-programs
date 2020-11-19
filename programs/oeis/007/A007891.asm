@@ -10,12 +10,12 @@ lpb $2,1
   trn $3,$0
   add $3,3
   lpb $4,1
-    trn $4,$3
     trn $2,4
+    trn $4,$3
   lpe
-  add $4,2
   add $2,3
   add $1,$2
+  add $4,2
   sub $1,$4
   sub $2,1
 lpe

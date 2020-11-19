@@ -1,21 +1,21 @@
 ; A059811: Let g_n be the ball packing n-width for the manifold torus X interval; sequence gives numerator of (g_n/Pi)^2.
 ; 1,1,1,1,4,4,9,36,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
+mov $2,2
 mov $3,1
-mov $6,$0
 add $3,$0
 sub $3,1
-mov $2,2
 sub $2,$3
 mov $4,-1
+mov $6,$0
 lpb $0,1
+  mul $0,0
+  sub $0,1
   mul $2,3
   mov $5,$2
-  mul $0,0
   add $5,2
   add $6,1
   add $6,$5
-  sub $0,1
   div $6,2
   mul $0,$6
   pow $0,2

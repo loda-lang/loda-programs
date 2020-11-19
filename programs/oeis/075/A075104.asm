@@ -3,7 +3,7 @@
 
 add $0,1
 mov $2,$0
-mov $3,$0
 log $2,2
+mov $3,$0
 gcd $3,$2
 mov $1,$3

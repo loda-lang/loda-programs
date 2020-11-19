@@ -3,8 +3,8 @@
 
 lpb $0,1
   sub $0,1
-  add $2,4
   mov $1,$0
+  add $2,4
   bin $1,$2
   add $3,$1
 lpe

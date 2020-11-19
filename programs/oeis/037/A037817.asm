@@ -3,14 +3,14 @@
 
 sub $0,6
 mov $2,$0
+trn $0,3
 trn $2,3
 add $2,1
 mov $3,10
-trn $0,3
 lpb $0,1
-  trn $2,$3
   sub $0,1
   trn $0,$3
+  trn $2,$3
 lpe
 add $1,1
 trn $1,$2

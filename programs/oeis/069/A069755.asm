@@ -10,9 +10,9 @@ add $0,4
 add $0,$2
 mov $2,$0
 mov $3,$2
+bin $3,2
 mov $4,$0
 div $4,2
-bin $3,2
 mov $2,$4
 sub $2,1
 mul $2,2

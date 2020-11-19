@@ -4,8 +4,8 @@
 mov $2,1
 sub $2,$0
 pow $0,2
-mul $2,3
 add $0,4
+mul $2,3
 sub $2,$0
 bin $2,2
 mov $1,$2

@@ -10,8 +10,8 @@ bin $4,4
 add $4,$0
 add $4,3
 lpb $0,1
-  mov $5,$4
   mov $0,0
+  mov $5,$4
   add $5,2
 lpe
 add $0,$5

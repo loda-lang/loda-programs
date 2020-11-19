@@ -3,6 +3,6 @@
 
 mod $0,3
 mov $1,$0
-add $1,7
 gcd $0,7
+add $1,7
 div $1,$0

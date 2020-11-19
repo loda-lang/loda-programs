@@ -6,9 +6,9 @@ add $0,2
 mod $0,8
 mul $0,8
 lpb $0,1
+  pow $0,$4
   add $1,3
   fac $1
-  pow $0,$4
 lpe
 add $1,48
 mov $3,$2

@@ -3,9 +3,9 @@
 
 add $0,5
 mov $1,$0
+mov $0,4
 pow $1,3
 mov $2,3
-mov $0,4
 lpb $0,1
   add $1,$2
   mod $1,7

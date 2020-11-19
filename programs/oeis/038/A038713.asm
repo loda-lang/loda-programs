@@ -4,9 +4,9 @@
 add $0,1
 gcd $0,1073741824
 lpb $0,1
+  div $0,2
   add $2,10
   mul $2,10
-  div $0,2
 lpe
 mov $1,$2
 div $1,1000

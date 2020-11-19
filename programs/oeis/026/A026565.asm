@@ -5,17 +5,17 @@ mov $15,$0
 mov $17,2
 lpb $17,1
   clr $0,15
-  sub $17,1
   mov $0,$15
+  sub $17,1
   add $0,$17
   sub $0,1
   mov $2,$0
   lpb $2,1
     gcd $0,2
-    sub $2,1
     add $0,1
     add $1,4
     mul $1,$0
+    sub $2,1
   lpe
   div $1,8
   mul $1,3
@@ -27,7 +27,7 @@ lpb $17,1
   lpe
 lpe
 lpb $15,1
-  sub $16,$1
   mov $15,0
+  sub $16,$1
 lpe
 mov $1,$16

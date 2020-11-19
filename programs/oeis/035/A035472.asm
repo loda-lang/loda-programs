@@ -6,12 +6,12 @@ mul $0,2
 mov $5,1
 lpb $0,1
   mov $1,$0
-  add $2,$0
   add $1,2
+  add $2,$0
   mov $4,$1
   bin $4,5
-  sub $5,1
   add $4,$2
+  sub $5,1
   mov $0,$5
   div $4,2
   mul $4,8

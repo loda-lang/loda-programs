@@ -7,13 +7,11 @@ mul $0,2
 trn $0,7
 mov $3,6
 lpb $0,1
+  add $0,5
   mov $1,$4
   trn $2,6
-  add $3,6
-  add $2,5
-  add $0,5
-  add $2,7
-  sub $3,4
+  add $2,12
+  add $3,2
   trn $0,$3
   mov $3,$2
   add $3,3

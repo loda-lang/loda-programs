@@ -5,8 +5,8 @@ lpb $0,1
   mov $2,$0
   sub $0,$2
   lpb $2,1
-    sub $2,3
     add $0,1
+    sub $2,3
   lpe
   add $3,$2
 lpe

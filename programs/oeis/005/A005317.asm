@@ -8,8 +8,8 @@ bin $0,$3
 pow $2,$3
 add $0,$2
 add $0,4
-mov $3,14
 mul $0,3
+mov $3,14
 add $3,$0
 mov $1,$3
 sub $1,32

@@ -6,13 +6,13 @@ lpb $0,1
   trn $0,2
   mov $1,$0
   add $0,1
-  add $2,$1
   trn $0,3
+  add $2,$1
   mov $1,$0
   trn $0,2
   add $2,$0
-  add $1,$2
   trn $0,1
+  add $1,$2
   mov $2,$1
 lpe
 add $1,1

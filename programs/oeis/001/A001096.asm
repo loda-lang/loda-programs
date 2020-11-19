@@ -3,8 +3,8 @@
 
 mov $2,$0
 mov $3,$0
-bin $3,6
 sub $0,$0
+bin $3,6
 mov $6,720
 mul $6,$3
 add $6,4

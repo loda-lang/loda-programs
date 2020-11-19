@@ -3,8 +3,8 @@
 
 mov $18,1
 lpb $18,1
-  sub $18,1
   mov $3,2
+  sub $18,1
   lpb $0,5
     lpb $0,1
       sub $0,$3

@@ -7,16 +7,16 @@ pow $0,2
 mov $4,$0
 mov $5,3
 lpb $0,1
+  mov $0,1
+  add $3,4
   div $4,2
   sub $4,3
-  add $3,4
   mov $2,$4
   mul $5,$3
   sub $3,$2
   sub $3,3
   add $5,$3
   add $5,7
-  mov $0,1
 lpe
 mov $1,$5
 sub $1,3

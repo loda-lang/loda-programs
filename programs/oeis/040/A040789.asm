@@ -3,11 +3,11 @@
 
 add $0,1
 mul $0,6
-mov $2,$0
-mov $5,$2
 mov $1,4
-mov $6,4
+mov $2,$0
 mov $4,2
+mov $5,$2
+mov $6,4
 lpb $5,1
   add $5,$1
   cmp $$0,$1

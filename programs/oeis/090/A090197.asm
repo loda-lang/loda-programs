@@ -12,10 +12,10 @@ sub $3,2
 mov $0,$1
 mul $4,$3
 lpb $0,1
-  add $2,2
-  add $2,$4
-  add $2,1
-  div $0,$2
+  sub $0,1
+  add $2,6
+  add $3,$2
+  add $1,$3
 lpe
 mov $1,$2
 sub $1,10

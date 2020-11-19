@@ -3,6 +3,6 @@
 
 lpb $0,1
   add $1,$0
-  mod $1,10
   div $0,10
+  mod $1,10
 lpe

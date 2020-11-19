@@ -3,8 +3,8 @@
 
 mov $3,1
 lpb $0,1
-  mul $3,2
   sub $0,1
+  mul $3,2
   mod $3,19
 lpe
 mul $3,2

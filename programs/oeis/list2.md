@@ -385,7 +385,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211265](http://oeis.org/A211265) ([L40 program](211/A211265.asm)): Number of integer pairs (x,y) such that 0<x<y<=n and x*y<=n+1.
 * [A211322](http://oeis.org/A211322) ([L22 program](211/A211322.asm)): Number of (n+1) X (n+1) -3..3 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
 * [A211329](http://oeis.org/A211329) ([L12 program](211/A211329.asm)): Number of (n+1) X (n+1) -5..5 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
-* [A211379](http://oeis.org/A211379) ([L25 program](211/A211379.asm)): Number of pairs of parallel diagonals in a regular n-gon.
+* [A211379](http://oeis.org/A211379) ([L14 program](211/A211379.asm)): Number of pairs of parallel diagonals in a regular n-gon.
 * [A211381](http://oeis.org/A211381) ([L58 program](211/A211381.asm)): Number of pairs of intersecting diagonals in the exterior of a regular n-gon.
 * [A211390](http://oeis.org/A211390) ([L22 program](211/A211390.asm)): The minimum cardinality of an n-qubit unextendible product basis.
 * [A211412](http://oeis.org/A211412) ([L05 program](211/A211412.asm)): a(n) = 4*n^4 + 1.
@@ -416,7 +416,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211543](http://oeis.org/A211543) ([L10 program](211/A211543.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w=3x+5y.
 * [A211545](http://oeis.org/A211545) ([L30 program](211/A211545.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and w+x+y>0.
 * [A211546](http://oeis.org/A211546) ([L07 program](211/A211546.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=3x-3y.
-* [A211547](http://oeis.org/A211547) ([L03 program](211/A211547.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w=3x+3y.
+* [A211547](http://oeis.org/A211547) ([L03 program](211/A211547.asm)): The squares n^2, n >= 0, each one three times.
 * [A211549](http://oeis.org/A211549) ([L16 program](211/A211549.asm)): Number of (n+1) X (n+1) -9..9 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
 * [A211562](http://oeis.org/A211562) ([L10 program](211/A211562.asm)): Number of nonnegative integer arrays of length n+2 with new values 0 upwards introduced in order, and containing the value n-1.
 * [A211612](http://oeis.org/A211612) ([L16 program](211/A211612.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and w+x+y>=0.
@@ -1620,6 +1620,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240932](http://oeis.org/A240932) ([L07 program](240/A240932.asm)): a(n) = n^9 - n^8.
 * [A240933](http://oeis.org/A240933) ([L07 program](240/A240933.asm)): a(n) = n^10 - n^9.
 * [A240951](http://oeis.org/A240951) ([L08 program](240/A240951.asm)): Maximum number of dividing subsets of a set of n natural numbers.
+* [A240977](http://oeis.org/A240977) ([L03 program](240/A240977.asm)): Beatty sequence for cube root of Pi: a(n) = floor(n*Pi^(1/3)).
 * [A241151](http://oeis.org/A241151) ([L13 program](241/A241151.asm)): Number of distinct degrees in the partition graph G(n) defined at A241150.
 * [A241170](http://oeis.org/A241170) ([L08 program](241/A241170.asm)): Steffensen's bracket function [n,n-3].
 * [A241199](http://oeis.org/A241199) ([L08 program](241/A241199.asm)): Numbers n such that 4 consecutive terms of binomial(n,k) satisfy a quadratic relation for 0 <= k <= n/2.
@@ -1673,7 +1674,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242349](http://oeis.org/A242349) ([L13 program](242/A242349.asm)): Largest power of 2 <= n^2.
 * [A242371](http://oeis.org/A242371) ([L06 program](242/A242371.asm)): Modified eccentric connectivity index of the cycle graph with n vertices, C[n].
 * [A242374](http://oeis.org/A242374) ([L09 program](242/A242374.asm)): Number of digits in the decimal expansion of n^8.
-* [A242396](http://oeis.org/A242396) ([L16 program](242/A242396.asm)): Number of rows of equilateral triangles (sides length = 1) that intersect the circumference of a circle of radius n centered at (0,0) or (1/2,0).
+* [A242396](http://oeis.org/A242396) ([L20 program](242/A242396.asm)): Number of rows of equilateral triangles (sides length = 1) that intersect the circumference of a circle of radius n centered at (0,0) or (1/2,0).
 * [A242412](http://oeis.org/A242412) ([L04 program](242/A242412.asm)): a(n) = (2n-1)^2 + 14.
 * [A242426](http://oeis.org/A242426) ([L11 program](242/A242426.asm)): floor(n! / n^3).
 * [A242436](http://oeis.org/A242436) ([L04 program](242/A242436.asm)): n^5 - 2n.
@@ -3876,7 +3877,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291520](http://oeis.org/A291520) ([L06 program](291/A291520.asm)): The arithmetic function uhat(n,4,2).
 * [A291521](http://oeis.org/A291521) ([L11 program](291/A291521.asm)): The arithmetic function uhat(n,4,6).
 * [A291522](http://oeis.org/A291522) ([L10 program](291/A291522.asm)): The arithmetic function uhat(n,4,7).
-* [A291526](http://oeis.org/A291526) ([L11 program](291/A291526.asm)): a(n) = 2^n*(n - 3) + 4.
+* [A291526](http://oeis.org/A291526) ([L14 program](291/A291526.asm)): a(n) = 2^n*(n - 3) + 4.
 * [A291557](http://oeis.org/A291557) ([L05 program](291/A291557.asm)): a(n) = 23*2^n - 1.
 * [A291568](http://oeis.org/A291568) ([L05 program](291/A291568.asm)): The arithmetic function uhat(n,5,5).
 * [A291574](http://oeis.org/A291574) ([L05 program](291/A291574.asm)): The arithmetic function uhat(n,6,6).

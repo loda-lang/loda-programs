@@ -5,10 +5,10 @@ mov $3,$0
 add $0,2
 mov $2,$3
 lpb $0,1
+  trn $0,3
   add $2,2
   mov $3,$2
   add $2,3
-  trn $0,3
   add $3,$0
   trn $0,1
   add $0,1

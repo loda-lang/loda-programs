@@ -5,31 +5,31 @@ mov $6,$0
 mov $10,$0
 add $10,1
 lpb $10,1
-  sub $10,1
   mov $0,$6
+  sub $10,1
   sub $0,$10
+  mov $1,4
   mov $3,$0
   add $3,$0
-  mov $1,4
+  add $0,2
   add $1,$3
   mov $5,$1
-  mov $8,$1
   sub $5,3
   mul $5,2
-  add $0,2
+  mov $8,$1
   lpb $0,1
-    add $5,$1
     sub $0,1
+    add $5,$1
     mov $1,$8
+    mov $4,1
     mov $8,$5
     trn $9,3
-    mov $4,1
   lpe
-  add $9,7
   add $4,2
   mov $7,$5
   mov $1,$7
   mul $1,$4
+  add $9,7
   mul $1,$9
   sub $1,209
   div $1,210
