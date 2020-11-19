@@ -5,9 +5,9 @@ mod $0,6
 mov $2,$0
 mov $1,$2
 trn $1,1
-mov $4,$1
 mov $3,2
 trn $3,$0
+mov $4,$1
 add $3,$4
 lpb $0,1
   mov $0,3

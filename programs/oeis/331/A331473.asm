@@ -5,16 +5,16 @@ mov $16,$0
 mov $18,2
 lpb $18,1
   clr $0,16
-  sub $18,1
   mov $0,$16
+  sub $18,1
   add $0,$18
   lpb $0,1
     mov $1,$0
     sub $0,1
     mul $1,2
     bin $1,$0
-    add $4,$1
     trn $0,1
+    add $4,$1
   lpe
   mov $1,$4
   mov $19,$18
@@ -24,7 +24,7 @@ lpb $18,1
   lpe
 lpe
 lpb $16,1
-  sub $17,$1
   mov $16,0
+  sub $17,$1
 lpe
 mov $1,$17

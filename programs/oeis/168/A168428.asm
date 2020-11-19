@@ -3,9 +3,9 @@
 
 mov $2,$0
 lpb $2,1
-  gcd $2,2
   trn $1,3
   add $1,9
+  gcd $2,2
   sub $2,1
 lpe
 div $1,3

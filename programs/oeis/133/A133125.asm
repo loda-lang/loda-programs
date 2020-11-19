@@ -6,8 +6,8 @@ mov $2,3
 pow $2,$1
 mod $1,2
 add $1,3
-mul $2,7
 mul $1,7
+mul $2,7
 mul $1,$2
 sub $1,147
 div $1,147

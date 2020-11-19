@@ -6,31 +6,31 @@ mov $19,$0
 add $19,1
 lpb $19,1
   clr $0,17
-  sub $19,1
   mov $0,$17
+  sub $19,1
   sub $0,$19
   mov $14,$0
   mov $16,$0
   add $16,1
   lpb $16,1
     clr $0,14
-    sub $16,1
     mov $0,$14
+    sub $16,1
     sub $0,$16
     mov $11,$0
     mov $13,$0
     add $13,1
     lpb $13,1
-      sub $13,1
       mov $0,$11
+      sub $13,1
       sub $0,$13
       add $0,1
+      mov $1,4
       mov $10,$0
-      mov $3,$10
       mov $2,$10
+      mov $3,$10
       gcd $3,2
       mov $9,$3
-      mov $1,4
       add $3,8
       trn $1,$3
       mul $2,$9

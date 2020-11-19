@@ -4,8 +4,8 @@
 mov $2,$0
 add $2,$0
 mod $0,3
-mov $3,$2
 mov $1,5
+mov $3,$2
 add $1,$3
 lpb $0,1
   clr $0,5

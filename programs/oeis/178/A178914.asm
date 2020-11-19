@@ -6,9 +6,8 @@ mov $1,12
 mov $2,$0
 trn $0,11
 lpb $0,1
-  mul $1,4
-  sub $2,6
-  mul $1,2
+  mul $1,8
   trn $0,$1
+  sub $2,6
 lpe
 sub $1,$2

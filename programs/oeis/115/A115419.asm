@@ -4,6 +4,6 @@
 mov $1,$0
 add $0,1
 lpb $0,1
-  add $1,8
   trn $0,8
+  add $1,8
 lpe

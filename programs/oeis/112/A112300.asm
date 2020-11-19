@@ -7,8 +7,8 @@ add $0,11
 lpb $0,1
   sub $0,3
 lpe
-gcd $2,2
 mul $0,16
+gcd $2,2
 mul $2,$0
 mov $1,$2
 div $1,16

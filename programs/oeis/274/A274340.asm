@@ -4,9 +4,9 @@
 mod $0,4
 mov $3,2
 lpb $0,1
-  sub $3,1
   sub $0,1
   mov $2,6
+  sub $3,1
   add $2,$3
   pow $2,$0
   trn $0,3

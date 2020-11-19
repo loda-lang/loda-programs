@@ -4,9 +4,9 @@
 mov $4,$0
 sub $0,2
 mov $5,$0
+mov $0,10
 trn $5,6
 add $5,1
-mov $0,10
 pow $0,$5
 sub $0,2
 sub $0,$5

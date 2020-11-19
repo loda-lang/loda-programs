@@ -5,15 +5,15 @@ mov $2,$0
 add $2,1
 lpb $2,1
   add $3,$2
+  mov $1,$3
   mov $4,$2
   trn $2,$3
-  mov $1,$3
   mov $3,1
   lpb $4,1
+    add $2,1
     trn $4,$3
     mov $3,4
-    add $2,1
   lpe
-  mov $3,$1
   sub $2,1
+  mov $3,$1
 lpe

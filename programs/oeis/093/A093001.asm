@@ -6,8 +6,8 @@ add $0,2
 lpb $0,1
   add $2,$0
   lpb $0,1
-    add $4,$2
     sub $0,1
+    add $4,$2
   lpe
   lpb $4,1
     add $3,2

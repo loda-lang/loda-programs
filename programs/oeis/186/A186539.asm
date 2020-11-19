@@ -3,17 +3,17 @@
 
 mov $7,$0
 add $0,1
-mov $3,1
 pow $0,2
+mov $3,1
 mov $6,60
 lpb $0,1
   sub $0,1
   mov $4,$3
   sub $0,$4
-  mov $1,1
-  add $6,2
   trn $0,1
+  mov $1,1
   add $3,6
+  add $6,2
 lpe
 mul $1,$6
 sub $1,61

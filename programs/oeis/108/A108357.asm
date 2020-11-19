@@ -3,7 +3,7 @@
 
 mod $0,8
 mul $0,3
-mov $2,$0
 mov $1,15
+mov $2,$0
 trn $1,$2
 mod $1,2

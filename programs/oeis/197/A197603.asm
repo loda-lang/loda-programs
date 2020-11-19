@@ -10,19 +10,19 @@ mov $2,$5
 trn $2,5
 mov $1,$2
 add $1,16
-mov $8,$7
 mov $4,8
+mov $8,$7
 lpb $4,1
   add $1,$8
   sub $4,1
 lpe
 mov $6,$7
 lpb $6,1
-  add $9,$8
   sub $6,1
+  add $9,$8
 lpe
-mov $8,$9
 mov $4,10
+mov $8,$9
 lpb $4,1
   add $1,$8
   sub $4,1
@@ -30,11 +30,11 @@ lpe
 mov $6,$7
 mov $9,0
 lpb $6,1
-  add $9,$8
   sub $6,1
+  add $9,$8
 lpe
-mov $8,$9
 mov $4,4
+mov $8,$9
 lpb $4,1
   add $1,$8
   sub $4,1
@@ -42,11 +42,11 @@ lpe
 mov $6,$7
 mov $9,0
 lpb $6,1
-  add $9,$8
   sub $6,1
+  add $9,$8
 lpe
-mov $8,$9
 mov $4,1
+mov $8,$9
 lpb $4,1
   add $1,$8
   sub $4,1

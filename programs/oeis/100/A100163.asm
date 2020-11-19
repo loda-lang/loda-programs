@@ -17,11 +17,11 @@ add $1,3
 add $3,3
 add $1,$3
 add $1,2
-mov $4,$0
 mul $1,2
 mov $2,$1
-mul $4,2
 mov $1,2
+mov $4,$0
+mul $4,2
 add $2,$4
 add $1,$2
 lpb $6,1

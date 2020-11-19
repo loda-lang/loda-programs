@@ -8,10 +8,10 @@ lpb $0,1
   sub $0,1
   mov $2,$0
   mov $0,1
+  mov $1,5
   div $2,12
   mod $2,10
   add $2,6
-  mov $1,5
   add $1,$2
 lpe
 sub $1,11

@@ -4,9 +4,9 @@
 mov $5,2
 lpb $0,1
   mov $3,$0
+  trn $0,4
   mov $2,$3
   div $2,2
-  trn $0,4
   mov $4,4
   mov $5,2
   mul $5,$2

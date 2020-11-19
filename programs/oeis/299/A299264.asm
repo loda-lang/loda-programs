@@ -12,17 +12,17 @@ lpb $11,1
     sub $3,4
     mov $8,$3
     mul $0,$8
-    add $4,$3
     mov $2,$0
     mul $0,2
     mod $2,10
     add $2,$0
     div $0,10
-    sub $4,$2
     mov $1,$0
+    add $4,$3
+    sub $4,$2
     sub $1,$4
-    mov $3,7
     add $1,$0
+    mov $3,7
     sub $3,$1
   lpe
   mov $0,$3

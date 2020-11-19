@@ -4,9 +4,9 @@
 mov $1,$0
 mov $2,1
 add $2,$1
+mov $0,$2
 mul $1,6
 add $1,12
-mov $0,$2
 mul $1,2
 add $1,$0
 div $1,24

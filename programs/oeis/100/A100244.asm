@@ -5,8 +5,8 @@ sub $0,10
 bin $0,2
 div $0,12
 lpb $0,1
-  trn $3,1
   mov $0,$2
+  trn $3,1
   add $3,4
   sub $0,$3
 lpe

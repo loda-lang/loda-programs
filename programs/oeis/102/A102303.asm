@@ -3,8 +3,8 @@
 
 mov $1,7
 pow $1,$0
-div $1,2
 mov $0,6
+div $1,2
 lpb $0,1
   mov $0,5
   mul $1,7

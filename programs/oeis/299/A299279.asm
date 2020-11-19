@@ -3,24 +3,24 @@
 
 mov $4,$0
 pow $0,2
-mov $5,3
 trn $0,2
+mov $1,5
 mov $2,$0
 mod $2,2
-mov $1,5
+mov $5,3
 mul $5,$2
 add $2,7
 mov $3,$0
 lpb $2,1
+  add $1,7
   cmp $2,7
   mul $2,$3
-  add $1,7
   mul $2,4
   lpb $5,1
-    add $6,4
     div $1,5
-    sub $5,$6
     mov $3,5
+    add $6,4
+    sub $5,$6
   lpe
   div $1,8
   gcd $3,$1

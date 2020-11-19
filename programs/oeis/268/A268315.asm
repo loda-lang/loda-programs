@@ -5,12 +5,12 @@ mov $1,9
 lpb $0,1
   mov $1,3
   add $3,$0
+  mov $0,0
   mod $3,3
   pow $1,$3
   mov $3,$1
   mov $1,2
   mov $2,$3
-  mov $0,0
   mod $2,5
   pow $1,$2
   div $1,2

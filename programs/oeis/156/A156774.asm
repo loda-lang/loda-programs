@@ -3,15 +3,14 @@
 
 mov $2,$0
 mul $0,9
-add $2,3
 mov $1,$0
-add $2,1
 sub $0,5
-mov $3,$2
 mul $1,$0
+add $2,4
+mov $3,$2
 mov $0,$3
-add $1,5
 add $0,8
+add $1,5
 add $1,$0
 sub $1,17
 mul $1,81

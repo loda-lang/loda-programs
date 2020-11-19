@@ -6,8 +6,8 @@ mov $40,$0
 add $40,1
 lpb $40,1
   clr $0,38
-  sub $40,1
   mov $0,$38
+  sub $40,1
   sub $0,$40
   sub $0,2
   mul $0,2

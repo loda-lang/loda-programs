@@ -3,29 +3,29 @@
 
 mov $5,$0
 trn $0,1
-mov $3,5
 add $0,6
 mov $2,$0
+mov $3,5
 mov $4,5
 lpb $2,1
   lpb $4,1
     sub $0,3
-    trn $4,$3
     mov $1,4
     sub $1,$6
+    trn $4,$3
   lpe
   sub $2,3
   mov $6,$1
   mov $1,$0
   add $4,2
   lpb $6,1
-    trn $6,$3
     add $2,$3
+    trn $6,$3
     add $6,3
   lpe
+  add $0,4
   sub $2,1
   trn $2,$6
-  add $0,4
 lpe
 lpb $5,1
   add $1,3

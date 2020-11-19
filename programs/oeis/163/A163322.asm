@@ -3,12 +3,12 @@
 
 lpb $0,1
   mov $4,$0
+  mov $0,0
   mov $3,$4
   mul $4,2
   mov $1,$4
-  mov $4,$3
-  mov $0,0
   mov $2,3
+  mov $4,$3
   mul $4,$1
   sub $4,3
 lpe

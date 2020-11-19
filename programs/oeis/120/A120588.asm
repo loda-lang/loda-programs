@@ -4,16 +4,15 @@
 mov $9,$0
 mov $10,2
 lpb $10,1
-  sub $10,1
   mov $0,$9
   sub $0,1
   trn $0,1
   mov $7,$0
   add $0,1
-  mov $8,$0
   mov $5,$7
   mov $3,$5
   mov $4,$6
+  mov $8,$0
   add $4,$8
   add $8,2
   mov $2,$8
@@ -21,5 +20,6 @@ lpb $10,1
   mov $0,$2
   bin $2,$4
   div $2,$0
+  sub $10,1
 lpe
 mov $1,$2

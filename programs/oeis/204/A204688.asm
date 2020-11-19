@@ -5,9 +5,9 @@ trn $0,2
 mov $2,$0
 mul $0,2
 gcd $0,12
+div $0,6
 mod $2,6
 mov $1,$2
-div $0,6
 trn $1,$0
 add $0,7
 mod $1,3

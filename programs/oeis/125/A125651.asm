@@ -4,13 +4,13 @@
 mul $0,2
 mov $3,2
 lpb $0,1
-  add $3,1
+  sub $0,1
   add $1,1
+  add $3,1
   mov $2,$3
   mov $3,$1
   add $3,$1
   add $1,$3
-  sub $0,1
   sub $1,$2
   add $2,2
   trn $3,$2

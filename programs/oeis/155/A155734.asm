@@ -3,13 +3,13 @@
 
 mov $5,$0
 mov $0,1
-mov $3,$5
 trn $0,$5
 mov $1,2
 sub $1,$0
 mul $0,2
 mul $1,$0
 mov $2,3
+mov $3,$5
 mov $0,$3
 add $1,$0
 mov $0,$1

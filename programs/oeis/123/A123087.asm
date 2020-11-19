@@ -5,20 +5,20 @@ mov $9,$0
 mov $11,$0
 lpb $11,1
   clr $0,9
-  sub $11,1
   mov $0,$9
+  sub $11,1
   sub $0,$11
   mov $3,1
   mov $5,$0
-  mov $4,$5
   mov $0,4
+  mov $4,$5
   lpb $0,1
-    mov $2,$3
     pow $0,$0
     gcd $0,$4
     sub $0,1
     gcd $0,3
     pow $0,6
+    mov $2,$3
   lpe
   mov $1,4
   mov $3,$2

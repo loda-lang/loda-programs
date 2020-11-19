@@ -4,17 +4,13 @@
 mul $0,2
 add $0,2
 lpb $0,1
-  mul $2,2
-  add $1,2
   trn $0,4
-  mul $1,2
+  add $0,2
+  add $1,2
+  mul $1,4
+  mul $2,2
   trn $2,1
-  add $0,4
-  mul $1,2
   add $1,$2
-  sub $0,1
-  add $2,4
-  sub $0,1
-  add $2,1
+  add $2,5
 lpe
 add $1,1

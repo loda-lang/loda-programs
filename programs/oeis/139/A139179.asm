@@ -5,6 +5,6 @@ trn $0,1
 mov $1,$0
 trn $0,10
 lpb $0,1
-  sub $1,1
   mov $0,4
+  sub $1,1
 lpe

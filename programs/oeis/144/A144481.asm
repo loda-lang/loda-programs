@@ -6,11 +6,11 @@ mov $4,6
 lpb $0,1
   sub $0,1
   bin $0,2
-  mov $1,1
-  mov $3,$4
   mod $0,9
+  mov $1,1
   mul $1,$0
   sub $0,$1
+  mov $3,$4
   mov $4,$1
   mov $2,$4
 lpe

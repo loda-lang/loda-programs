@@ -6,8 +6,8 @@ trn $0,1
 add $0,2
 lpb $0,1
   sub $0,1
-  sub $3,2
   add $2,3
+  sub $3,2
   trn $3,$0
   add $3,$0
   trn $0,$2

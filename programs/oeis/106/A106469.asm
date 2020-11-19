@@ -6,8 +6,8 @@ div $2,2
 mul $2,2
 trn $2,1
 sub $0,$2
-mov $4,$0
 mov $3,6
+mov $4,$0
 mul $3,$4
 div $3,4
 mov $1,$3

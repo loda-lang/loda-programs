@@ -5,10 +5,10 @@ pow $0,2
 mov $3,$0
 sub $3,1
 mov $0,$3
-div $3,4
-add $3,1
 mov $2,$0
 pow $2,2
+div $3,4
+add $3,1
 mul $2,$3
 mov $1,$2
 div $1,3

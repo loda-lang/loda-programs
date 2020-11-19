@@ -6,16 +6,16 @@ mov $4,2
 lpb $0,1
   mov $0,$3
   add $4,$1
-  add $4,7
   bin $1,2
   mov $3,1
+  add $4,7
   add $4,$1
   mul $3,$4
   mul $3,4
   div $3,5
 lpe
-div $4,2
 mov $2,$3
+div $4,2
 sub $2,$4
 mov $3,$2
 sub $3,2

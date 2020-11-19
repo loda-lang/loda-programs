@@ -3,9 +3,9 @@
 
 lpb $0,1
   add $3,$0
+  sub $0,1
   add $4,$3
   add $2,$4
-  add $4,$3
   add $1,$2
-  sub $0,1
+  add $4,$3
 lpe

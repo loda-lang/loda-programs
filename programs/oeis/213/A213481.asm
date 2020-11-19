@@ -6,42 +6,42 @@ mov $14,$0
 add $14,1
 lpb $14,1
   clr $0,12
-  sub $14,1
   mov $0,$12
+  sub $14,1
   sub $0,$14
   mov $9,$0
   mov $11,$0
   add $11,1
   lpb $11,1
-    sub $11,1
     mov $0,$9
+    sub $11,1
     sub $0,$11
-    mov $8,$0
-    mov $5,$8
+    mov $3,1
+    add $3,$0
     mov $4,1
     add $4,$0
-    mov $3,1
-    add $7,$5
+    mov $8,$0
+    mov $5,$8
     add $4,$5
-    add $3,$0
     sub $4,1
     add $4,$3
-    gcd $7,2
+    sub $3,1
     mov $6,$5
     mul $6,2
-    sub $3,1
     add $6,$4
+    add $7,$5
+    gcd $7,2
     div $3,$7
     sub $6,1
-    trn $7,2
     add $3,$6
     mov $2,$3
     trn $2,1
     mul $2,2
-    add $7,1
     mov $1,$2
     div $1,2
     add $1,1
+    trn $7,2
+    add $7,1
     add $10,$1
   lpe
   mov $1,$10

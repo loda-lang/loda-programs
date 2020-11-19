@@ -4,8 +4,8 @@
 mov $3,$0
 mov $5,$0
 lpb $5,1
-  sub $5,1
   mov $0,$3
+  sub $5,1
   sub $0,$5
   mov $2,$0
   mov $1,$2

@@ -7,8 +7,8 @@ lpb $2,1
   mul $1,2
   div $0,$1
   lpb $0,1
-    mul $1,3
     sub $0,1
+    mul $1,3
   lpe
   sub $2,1
 lpe

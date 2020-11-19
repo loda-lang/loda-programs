@@ -3,18 +3,18 @@
 
 pow $0,2
 mov $5,$0
-sub $5,4
-div $5,2
 div $0,2
 mul $0,2
-mov $2,12
 sub $0,9
+mov $2,12
+sub $5,4
+div $5,2
 lpb $0,1
   mov $0,$2
   add $4,1
 lpe
+mov $1,25
 add $4,$5
 sub $3,$4
-mov $1,25
 sub $1,$3
 sub $1,23

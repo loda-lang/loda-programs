@@ -3,8 +3,8 @@
 
 mov $7,$0
 mod $0,2
-add $7,6
 add $0,2
+add $7,6
 mul $0,$7
 lpb $0,1
   mov $2,$0

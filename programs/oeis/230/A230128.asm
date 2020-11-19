@@ -3,6 +3,6 @@
 
 mov $1,$0
 mod $0,4
-div $1,3
 trn $0,2
+div $1,3
 sub $1,$0

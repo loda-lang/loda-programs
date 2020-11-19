@@ -3,16 +3,16 @@
 
 mov $1,$0
 lpb $0,1
-  mov $3,$1
   mul $0,2
   add $0,1
   mod $0,3
   add $2,$0
   mul $0,$2
   sub $0,1
-  sub $3,1
   fac $0
+  mov $3,$1
   mul $1,2
+  sub $3,1
 lpe
 mod $3,2
 mov $1,$3

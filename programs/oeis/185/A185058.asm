@@ -3,9 +3,9 @@
 
 mov $3,$0
 cmp $0,2
+add $0,1
 gcd $3,7
 mov $2,$3
-add $0,1
 bin $0,$2
 pow $0,2
 add $0,1

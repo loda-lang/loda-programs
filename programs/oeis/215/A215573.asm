@@ -5,10 +5,10 @@ mov $1,$0
 add $0,1
 bin $1,3
 mod $1,$0
+mov $2,$1
 mov $3,$0
 mov $4,$3
 add $4,4
-mov $2,$1
 sub $4,$2
 mov $1,$4
 sub $1,5

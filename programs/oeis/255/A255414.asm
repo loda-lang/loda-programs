@@ -6,17 +6,17 @@ add $0,6
 mov $6,$0
 add $0,1
 mod $0,4
-sub $6,1
 mul $0,2
 mov $2,1
 add $2,$0
+sub $6,1
 mov $4,$6
 add $2,$4
 div $2,8
 mov $5,4
 lpb $5,1
-  add $6,$2
   gcd $5,7
+  add $6,$2
 lpe
 mul $6,2
 mov $1,$6

@@ -9,7 +9,7 @@ lpe
 mov $4,$0
 mov $3,$4
 add $3,8
-sub $4,2
 div $3,4
+sub $4,2
 pow $4,$3
 mov $1,$4

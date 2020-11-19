@@ -7,20 +7,20 @@ mov $0,$3
 sub $0,6
 mov $2,$0
 mov $4,$2
-mov $3,$4
 mov $2,1
-mov $5,$0
+mov $3,$4
 add $4,$3
 add $4,1
+mov $5,$0
 mov $0,$4
-trn $2,$5
 add $0,$5
-mov $5,2
+trn $2,$5
 mov $1,$2
+mov $5,2
 lpb $0,1
+  sub $0,1
   add $2,$5
   trn $2,5
-  add $5,3
   add $1,$2
-  sub $0,1
+  add $5,3
 lpe

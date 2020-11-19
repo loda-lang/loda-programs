@@ -3,34 +3,33 @@
 
 mov $10,1
 lpb $10,1
-  sub $10,1
-  mov $9,$0
   mov $4,2
+  mov $9,$0
+  sub $10,1
   lpb $4,1
-    sub $4,1
     mov $0,$9
     sub $0,1
     mov $1,$0
     add $1,24
-    mov $3,24
     sub $1,$0
     add $1,20
-    mov $7,44
-    mov $6,$0
     mov $2,1
     add $2,$0
+    mov $3,24
     add $3,$1
-    mul $7,$2
+    sub $4,1
+    mov $6,$0
     add $0,24
-    add $6,1
     log $0,4
-    sub $6,4
+    sub $6,3
     mov $5,$6
+    mov $7,44
+    mul $7,$2
     mul $7,2
     mov $8,$5
-    sub $8,$0
     mov $5,$3
     add $7,7
+    sub $8,$0
     mov $1,$8
     add $7,$1
     div $7,$5

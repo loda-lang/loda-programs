@@ -6,15 +6,15 @@ mov $20,$0
 add $20,1
 lpb $20,1
   clr $0,18
-  sub $20,1
   mov $0,$18
+  sub $20,1
   sub $0,$20
   mov $15,$0
   mov $17,$0
   add $17,1
   lpb $17,1
-    sub $17,1
     mov $0,$15
+    sub $17,1
     sub $0,$17
     mov $7,2
     pow $7,$0

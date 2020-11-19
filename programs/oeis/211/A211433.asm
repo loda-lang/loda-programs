@@ -7,11 +7,11 @@ mov $2,$4
 mov $3,$4
 div $3,2
 add $3,$2
+mov $0,$3
+div $0,3
 mov $6,2
 add $6,$2
-mov $0,$3
 sub $6,1
-div $0,3
 mov $5,$6
 div $6,4
 add $6,2

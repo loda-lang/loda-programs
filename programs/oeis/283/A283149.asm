@@ -7,9 +7,9 @@ lpb $0,1
   bin $0,2
   mov $2,2
   mov $3,$0
+  trn $0,4860
   div $3,-1
   sub $2,$3
-  trn $0,4860
   mov $4,$2
   mul $4,2
   cmp $4,6

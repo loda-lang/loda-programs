@@ -10,12 +10,12 @@ add $2,1
 mod $2,4
 mov $5,1
 lpb $0,1
-  mov $5,$1
-  mov $3,$1
-  mul $5,$3
   trn $2,1
-  mov $1,0
   mov $0,$2
+  mov $3,$1
+  mov $5,$1
+  mov $1,0
+  mul $5,$3
 lpe
 mul $5,2
 add $0,$5

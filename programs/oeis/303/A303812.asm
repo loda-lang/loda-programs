@@ -4,16 +4,16 @@
 mov $6,$0
 mov $8,$0
 lpb $8,1
-  sub $8,1
   mov $0,$6
+  sub $8,1
   sub $0,$8
-  mov $7,$0
   mov $1,$0
+  mov $7,$0
   mov $5,$7
   add $2,$5
   lpb $2,1
-    mov $4,6
     mul $1,3
+    mov $4,6
     lpb $4,1
       gcd $2,2
       mov $4,5

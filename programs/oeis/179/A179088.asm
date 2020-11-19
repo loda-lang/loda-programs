@@ -14,8 +14,8 @@ mul $1,10
 mov $0,$1
 add $8,$0
 mov $5,$8
-mov $6,2
 add $5,1
+mov $6,2
 add $6,$5
 mov $1,$6
 mov $7,$2

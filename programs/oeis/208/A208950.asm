@@ -4,21 +4,21 @@
 mov $1,$0
 mov $6,$0
 cmp $0,$1
-mov $5,$0
 add $1,26
 mov $3,$6
 mov $4,$1
-mul $5,2
 mul $4,3
+mov $2,$4
+mov $5,$0
+mul $5,2
 div $5,2
 add $5,$3
 bin $5,3
-mov $2,$4
 lpb $0,1
+  sub $0,1
   mov $3,$2
   gcd $3,12
   mul $3,$5
-  sub $0,1
 lpe
 mov $1,$3
 div $1,12

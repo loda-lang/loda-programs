@@ -11,9 +11,8 @@ lpb $8,1
     gcd $0,128
     add $0,1
     lpb $0,1
-      sub $0,4
+      sub $0,5
       add $3,1
-      sub $0,1
     lpe
     add $0,3
   lpe

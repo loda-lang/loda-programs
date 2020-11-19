@@ -3,8 +3,8 @@
 
 lpb $0,1
   sub $0,1
-  add $2,1
   mov $1,$0
+  add $2,1
   mul $2,2
   trn $0,$2
 lpe

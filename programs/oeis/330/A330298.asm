@@ -4,9 +4,9 @@
 mov $3,$0
 mov $4,$3
 mov $5,$4
-div $5,2
 pow $4,2
 div $4,2
+div $5,2
 mov $3,$5
 mov $2,$3
 sub $2,1

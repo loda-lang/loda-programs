@@ -5,11 +5,11 @@ mov $2,$0
 mov $4,$2
 mov $5,$4
 lpb $0,1
+  sub $0,1
   add $3,5
   add $3,$4
   add $4,6
   add $5,$3
-  sub $0,1
 lpe
 sub $0,1
 sub $5,$0

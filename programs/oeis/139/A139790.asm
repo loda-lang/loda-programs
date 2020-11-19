@@ -9,16 +9,16 @@ lpb $2,1
     sub $4,$4
   lpe
   add $0,1
-  sub $2,2
   sub $0,$1
-  add $4,2
-  div $3,$3
+  sub $2,2
   sub $0,$2
-  sub $4,$1
+  mul $0,2
+  div $3,$3
   trn $3,$2
   add $2,1
-  mul $0,2
   fac $3
+  add $4,2
+  sub $4,$1
   sub $1,2
 lpe
 mov $1,$0

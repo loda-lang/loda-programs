@@ -8,23 +8,23 @@ add $1,$0
 cmp $0,1
 div $0,2
 add $0,1
+mov $2,4
 mov $5,$0
 sub $3,$5
-mov $7,3
-pow $7,$1
-mov $2,4
 add $5,$4
-mov $6,$5
-mov $8,$6
 pow $2,$5
 add $3,1
+mov $6,$5
+mov $7,3
+pow $7,$1
 add $3,$7
+mov $8,$6
 mov $7,$8
 add $3,$7
 lpb $0,1
+  cmp $0,$2
   mov $5,1
   sub $5,$3
-  cmp $0,$2
   mov $8,$2
   add $8,$5
 lpe

@@ -10,9 +10,9 @@ add $2,5
 add $3,$2
 pow $2,2
 pow $3,2
-mov $4,$2
 add $3,$2
 add $3,1
+mov $4,$2
 add $4,$2
 add $4,6
 add $4,$3

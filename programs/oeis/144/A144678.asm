@@ -4,9 +4,9 @@
 add $0,6
 mov $2,$0
 lpb $2,1
+  sub $2,1
   mov $3,$4
   add $3,4
-  sub $2,1
   add $4,$2
   lpb $4,1
     trn $4,$3

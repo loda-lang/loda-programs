@@ -5,7 +5,7 @@ add $0,3
 mov $1,$0
 mov $2,99
 log $2,$1
-mov $3,2
 div $2,2
+mov $3,2
 sub $3,$2
 mov $1,$3

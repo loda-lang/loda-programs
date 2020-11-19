@@ -8,8 +8,8 @@ mov $6,$2
 mul $2,2
 sub $2,2
 lpb $0,1
-  mov $5,$6
   mul $2,7
+  mov $5,$6
   add $5,3
   trn $0,$5
 lpe

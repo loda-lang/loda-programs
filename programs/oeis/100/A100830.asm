@@ -7,8 +7,8 @@ mov $2,$0
 sub $2,1
 mov $3,9
 lpb $2,1
-  mul $3,2
   sub $2,9
+  mul $3,2
   div $3,-2
 lpe
 mov $1,$3

@@ -9,14 +9,14 @@ mov $8,11
 mul $8,$1
 mov $0,$8
 lpb $0,1
-  mov $6,2
-  sub $2,9
   mov $0,6
+  sub $2,9
   div $2,$2
+  sub $2,5
+  mov $6,2
   sub $8,1
   add $6,$8
   div $6,4
-  sub $2,5
 lpe
 add $6,1
 add $6,$8

@@ -9,6 +9,6 @@ lpb $0,1
   trn $0,1
   add $1,1
   trn $2,$0
-  add $1,$2
   trn $0,4
+  add $1,$2
 lpe

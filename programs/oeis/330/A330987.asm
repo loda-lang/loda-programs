@@ -10,8 +10,8 @@ mod $0,2
 mov $5,$2
 add $5,1
 lpb $0,1
-  sub $5,1
   sub $0,1
+  sub $5,1
   bin $5,2
 lpe
 mov $1,$5

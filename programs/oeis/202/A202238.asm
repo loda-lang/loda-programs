@@ -7,19 +7,19 @@ lpb $0,1
     div $0,2
     mov $7,$0
     sub $0,1
-    add $6,2
     mul $0,2
+    add $6,2
     lpb $7,$0
       lpb $0,$6
+        cmp $0,1
+        add $3,3
         gcd $7,$6
         sub $7,2
+        add $0,$7
         mov $6,$7
         add $6,1
         mul $6,2
-        add $3,3
-        cmp $0,1
         add $10,$3
-        add $0,$7
       lpe
     lpe
   lpe
@@ -31,8 +31,8 @@ lpb $10,1
     mov $1,2
   lpe
   lpb $7,1
-    mov $10,1
     div $7,7
+    mov $10,1
   lpe
 lpe
 div $1,2

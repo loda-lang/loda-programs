@@ -3,17 +3,16 @@
 
 mov $3,$0
 add $0,30
-mul $3,7
 mov $1,1
 mov $2,6
-mul $3,2
+mul $3,14
 mov $4,1
 lpb $3,1
   add $3,$4
   lpb $0,1
+    mov $0,1
     div $3,8
     add $4,$1
-    mov $0,1
   lpe
   mov $0,$3
   add $1,1

@@ -7,9 +7,9 @@ add $2,6
 lpb $2,1
   add $3,1
   lpb $3,1
+    add $2,5
     mov $3,$0
     add $3,5
-    add $2,5
   lpe
   sub $2,1
   add $1,$2

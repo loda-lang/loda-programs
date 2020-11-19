@@ -12,8 +12,8 @@ lpb $8,1
       gcd $0,1073741824
       mov $4,$0
       lpb $0,1
-        add $4,1
         div $0,2
+        add $4,1
       lpe
     lpe
   lpe

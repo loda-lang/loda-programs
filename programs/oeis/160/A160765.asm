@@ -14,6 +14,6 @@ mov $0,3
 add $2,$3
 lpb $2,1
   add $1,$3
-  add $3,$0
   sub $2,1
+  add $3,$0
 lpe

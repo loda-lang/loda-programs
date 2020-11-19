@@ -5,10 +5,10 @@ mov $1,12
 mov $2,2
 pow $2,$0
 lpb $0,1
+  mod $0,2
   add $2,$1
   trn $1,$2
   add $1,15
-  mod $0,2
 lpe
 div $2,$1
 mov $1,$2

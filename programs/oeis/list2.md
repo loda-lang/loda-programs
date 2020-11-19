@@ -1772,7 +1772,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244882](http://oeis.org/A244882) ([L35 program](244/A244882.asm)): Expansion of (1 + 2*x + 2*x^2) / (1 - x)^6.
 * [A244887](http://oeis.org/A244887) ([L14 program](244/A244887.asm)): Third column of triangle in A234950.
 * [A244892](http://oeis.org/A244892) ([L05 program](244/A244892.asm)): a(n) = a(n-a(n-1)) with initial values 5,2,5,2.
-* [A244893](http://oeis.org/A244893) ([L09 program](244/A244893.asm)): a(n) = a(n-a(n-1)) with initial values 2,3,2.
+* [A244893](http://oeis.org/A244893) ([L05 program](244/A244893.asm)): a(n) = a(n-a(n-1)) with initial values 2,3,2.
 * [A244895](http://oeis.org/A244895) ([L11 program](244/A244895.asm)): Period 5 sequence [0, 1, 1, -1, -1, ...].
 * [A244919](http://oeis.org/A244919) ([L03 program](244/A244919.asm)): For odd prime p, largest k such that binomial(2p-1, p-1) is congruent to 1 modulo p^k.
 * [A244953](http://oeis.org/A244953) ([L11 program](244/A244953.asm)): a(n) = Sum_{i=0..n} (-i mod 4).
@@ -2254,7 +2254,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256313](http://oeis.org/A256313) ([L08 program](256/A256313.asm)): Number of partitions of 3n into exactly 4 parts.
 * [A256316](http://oeis.org/A256316) ([L39 program](256/A256316.asm)): Number of partitions of 4n into exactly 5 parts.
 * [A256320](http://oeis.org/A256320) ([L04 program](256/A256320.asm)): Number of partitions of 4n into exactly 3 parts.
-* [A256321](http://oeis.org/A256321) ([L20 program](256/A256321.asm)): Number of partitions of 5n into exactly 3 parts.
+* [A256321](http://oeis.org/A256321) ([L17 program](256/A256321.asm)): Number of partitions of 5n into exactly 3 parts.
 * [A256322](http://oeis.org/A256322) ([L20 program](256/A256322.asm)): Number of partitions of 7n into exactly 3 parts.
 * [A256328](http://oeis.org/A256328) ([L10 program](256/A256328.asm)): Number of partitions of 6n into exactly 4 parts.
 * [A256432](http://oeis.org/A256432) ([L11 program](256/A256432.asm)): Characteristic function of octahedral numbers.
@@ -3788,7 +3788,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A289652](http://oeis.org/A289652) ([L24 program](289/A289652.asm)): Catalan numbers - 2 (A120304) with first three terms changed to 1,1,1.
 * [A289692](http://oeis.org/A289692) ([L11 program](289/A289692.asm)): The number of partitions of [n] with exactly 2 blocks without peaks.
 * [A289715](http://oeis.org/A289715) ([L18 program](289/A289715.asm)): The order of the semigroup of orientation-preserving full transformations on n elements.
-* [A289719](http://oeis.org/A289719) ([L08 program](289/A289719.asm)): a(n) = (n/2)*binomial(2*n, n) + 1.
+* [A289719](http://oeis.org/A289719) ([L07 program](289/A289719.asm)): a(n) = (n/2)*binomial(2*n, n) + 1.
 * [A289721](http://oeis.org/A289721) ([L20 program](289/A289721.asm)): Let a(0)=1. Then a(n) = sums of consecutive strings of positive integers of length 3*n, starting with the integer 2.
 * [A289761](http://oeis.org/A289761) ([L17 program](289/A289761.asm)): Maximum length of a perfect Wichmann ruler with n segments.
 * [A289812](http://oeis.org/A289812) ([L26 program](289/A289812.asm)): n for which a Factor Pair Latin Square of order n exists.
@@ -3930,6 +3930,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A292638](http://oeis.org/A292638) ([L14 program](292/A292638.asm)): Rank of (3-r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
 * [A292639](http://oeis.org/A292639) ([L16 program](292/A292639.asm)): Rank of (3+r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
 * [A292641](http://oeis.org/A292641) ([L14 program](292/A292641.asm)): Rank of (4+r)*n when all the numbers (4-r)*j and (4+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
+* [A292648](http://oeis.org/A292648) ([L104 program](292/A292648.asm)): Rank of Pi*n when all the numbers Pi*j and (Pi+1)*k, for j>=1, k>=1, are jointly ranked.
 * [A292649](http://oeis.org/A292649) ([L06 program](292/A292649.asm)): Rank of (Pi+1)*n when all the numbers Pi*j and (Pi+1)*k, for j>=1, k>=1, are jointly ranked.
 * [A292650](http://oeis.org/A292650) ([L18 program](292/A292650.asm)): Rank of n*e when all the numbers j*e and k*Pi, for j>=1, k>=1, are jointly ranked.
 * [A292653](http://oeis.org/A292653) ([L17 program](292/A292653.asm)): Rank of n*sin(1) when all the numbers j*cos(1) and k*sin(1), for j>=1, k>=1, are jointly ranked.
@@ -3980,7 +3981,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293668](http://oeis.org/A293668) ([L34 program](293/A293668.asm)): First differences of A292046.
 * [A293671](http://oeis.org/A293671) ([L44 program](293/A293671.asm)): a(n) is the greatest integer k such that k/Fibonacci(n) < 4/5.
 * [A293703](http://oeis.org/A293703) ([L16 program](293/A293703.asm)): a(n) is the length of the longest palindromic subsequence in the first differences of the list of the first n negative and positive roots of floor(tan(k))=1.
-* [A293706](http://oeis.org/A293706) ([L15 program](293/A293706.asm)): a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
+* [A293706](http://oeis.org/A293706) ([L09 program](293/A293706.asm)): a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
 * [A293727](http://oeis.org/A293727) ([L14 program](293/A293727.asm)): Numbers n such that c(n,0) < c(n,1), where c(n,d) = number of d's in the first n digits of the base-2 expansion of sqrt(2).
 * [A293754](http://oeis.org/A293754) ([L06 program](293/A293754.asm)): Numbers n such that c(n,0) < c(n,1), where c(n,d) = number of d's in the first n digits of the base-2 expansion of tau (the golden ratio, (1+sqrt(5))/2)).
 * [A293990](http://oeis.org/A293990) ([L06 program](293/A293990.asm)): a(n) = (3*n + ((n-2) mod 4))/2.

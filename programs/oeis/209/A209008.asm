@@ -7,7 +7,7 @@ lpb $0,1
     add $1,$2
     sub $2,1
   lpe
-  add $1,1
   trn $0,2
+  add $1,1
 lpe
 add $1,1

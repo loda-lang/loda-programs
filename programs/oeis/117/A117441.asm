@@ -7,12 +7,12 @@ div $2,2
 gcd $2,2
 mul $0,$2
 add $2,$0
-add $2,8
 add $0,4
+add $2,8
 mov $3,$2
 lpb $0,1
-  add $3,1
   mov $0,3
+  add $3,1
   lpb $2,3
     sub $3,3
   lpe

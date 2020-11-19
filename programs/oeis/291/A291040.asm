@@ -8,17 +8,17 @@ add $3,2
 mov $0,$3
 add $4,5
 lpb $0,3
-  sub $4,$0
   sub $3,1
   mul $3,2
+  sub $4,$0
+  mov $0,1
   mov $1,$4
+  mov $2,3
   add $3,$1
   mul $3,2
-  mov $0,1
   mod $3,6
   trn $4,$3
   add $4,1
-  mov $2,3
   lpb $2,1
     sub $2,1
     add $3,4

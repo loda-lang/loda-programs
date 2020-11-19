@@ -4,15 +4,15 @@
 mov $2,$0
 mov $8,$2
 lpb $2,1
+  trn $0,2
   mov $4,$8
   mov $3,$4
   mul $8,$4
-  trn $0,2
   lpb $4,1
     mul $0,2
-    add $8,$0
     mov $1,$3
     sub $1,2
+    add $8,$0
     sub $8,4
     mov $0,$8
     sub $4,$4
@@ -20,7 +20,7 @@ lpb $2,1
   clr $4,$8
   add $1,$0
   mov $0,1
-  sub $2,1
   mul $1,2
+  sub $2,1
 lpe
 div $1,32

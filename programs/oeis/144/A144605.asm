@@ -15,12 +15,12 @@ lpb $7,1
   mov $1,$6
   mov $2,$7
   lpb $2,1
-    mov $5,$1
     sub $2,1
+    mov $5,$1
   lpe
 lpe
 lpb $4,1
-  sub $5,$1
   mov $4,0
+  sub $5,$1
 lpe
 mov $1,$5

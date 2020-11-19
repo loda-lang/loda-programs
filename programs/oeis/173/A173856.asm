@@ -3,9 +3,9 @@
 
 mov $2,$0
 lpb $0,1
+  cmp $0,2
   pow $2,2
   sub $2,2
-  cmp $0,2
   mul $2,2
   div $2,16
   add $2,2

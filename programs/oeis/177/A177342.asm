@@ -4,30 +4,29 @@
 mov $2,8
 mul $2,$0
 mul $0,$2
+add $0,10
+mov $1,9
 add $2,1
 mov $5,$2
-mov $6,1
 add $2,1
-add $5,3
-add $0,10
-add $5,3
-mov $4,2
 add $2,$0
-mov $1,9
+mov $4,2
+add $5,6
+mov $6,1
 lpb $0,1
+  mov $0,3
   mul $4,$2
-  mul $5,$4
   add $2,2
   mov $3,$2
+  mul $5,$4
   mov $4,$3
-  add $5,6
   add $4,$6
   add $1,$4
-  mov $0,3
-  div $5,2
+  mov $2,2
   mov $3,3
   mul $3,$1
-  mov $2,2
+  add $5,6
+  div $5,2
 lpe
 add $5,$3
 mov $1,$5

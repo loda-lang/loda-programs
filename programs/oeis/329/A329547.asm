@@ -6,26 +6,26 @@ mov $18,$0
 add $18,1
 lpb $18,1
   clr $0,16
-  sub $18,1
   mov $0,$16
+  sub $18,1
   sub $0,$18
   mov $1,$0
-  mov $7,$1
   mov $6,$1
+  mov $7,$1
   lpb $6,7
     lpb $0,1
       div $0,2
       mov $5,$3
       mov $6,$3
     lpe
-    trn $6,$7
     mov $0,4
+    trn $6,$7
     sub $7,$3
     mov $3,8
     add $3,$5
   lpe
-  trn $7,1
   mov $2,2
+  trn $7,1
   gcd $2,$7
   mov $1,$2
   sub $1,1

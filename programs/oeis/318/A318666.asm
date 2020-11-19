@@ -9,10 +9,9 @@ add $0,$2
 add $0,1447
 mov $1,5
 lpb $0,1
-  add $0,2
+  add $0,6
   mul $1,2
   gcd $3,3
-  add $0,4
   mov $2,$3
   add $3,$0
   div $0,$2

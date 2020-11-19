@@ -15,8 +15,8 @@ lpb $0,1
   add $3,$1
   mov $0,$3
   mul $3,$0
+  cmp $0,4
   add $3,4
   add $3,$1
-  cmp $0,4
 lpe
 mov $1,$3

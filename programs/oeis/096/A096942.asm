@@ -4,12 +4,12 @@
 add $0,2
 lpb $0,1
   lpb $0,1
-    add $3,1
+    sub $0,1
     add $2,4
+    add $3,1
     add $2,$3
     add $4,$2
     add $5,$4
-    sub $0,1
   lpe
   lpb $2,1
     sub $2,$2

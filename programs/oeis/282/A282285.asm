@@ -10,8 +10,8 @@ add $4,$0
 mod $0,2
 sub $0,1
 lpb $0,1
-  div $4,2
   mov $0,$3
+  div $4,2
 lpe
 mov $2,1
 mul $2,$4

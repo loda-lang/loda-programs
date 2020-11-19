@@ -3,17 +3,16 @@
 
 mov $4,$0
 mov $5,$0
+mov $0,132
 mov $6,$5
 add $6,1
 pow $6,2
 mov $7,$6
-mul $7,4
-mov $0,132
-mul $7,132
+mul $7,528
 sub $7,8
 lpb $0,1
-  mov $5,$7
   mov $0,1
+  mov $5,$7
 lpe
 mov $1,$5
 add $1,7

@@ -3,8 +3,8 @@
 
 mov $2,$0
 add $0,3
-mov $4,$2
 mov $3,$0
+mov $4,$2
 mul $3,$4
 add $3,3
 trn $3,25

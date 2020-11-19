@@ -6,10 +6,10 @@ div $0,2
 mov $1,$0
 add $1,9
 mov $6,$1
-mov $8,$0
 add $6,1
-gcd $8,2
 mul $6,4
+mov $8,$0
+gcd $8,2
 clr $1,2
 pow $8,2
 add $6,$8

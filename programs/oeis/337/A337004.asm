@@ -4,13 +4,13 @@
 mul $0,2
 add $0,1
 lpb $0,1
-  mov $4,3
   mov $1,1
   mov $2,$0
+  mul $0,2
   add $2,$1
   mod $2,10
+  mov $4,3
   mov $5,$2
-  mul $0,2
   clr $0,$5
   div $0,10
 lpe

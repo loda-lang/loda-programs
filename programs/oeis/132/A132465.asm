@@ -3,9 +3,9 @@
 
 mov $2,$0
 mov $3,$2
-bin $3,6
 mul $2,2
 sub $2,5
+bin $3,6
 mul $2,$3
 mul $3,$2
 mov $1,$3

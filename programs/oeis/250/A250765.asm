@@ -3,19 +3,17 @@
 
 add $0,3
 lpb $0,1
-  add $2,6
-  mov $4,2
   sub $0,1
-  add $2,5
+  mov $1,5
+  add $2,11
   add $3,5
   sub $2,$3
-  mov $1,5
+  mov $4,2
   add $4,$2
   add $2,5
   add $2,$4
 lpe
 mul $1,2
-add $3,4
 add $1,$4
-sub $3,6
+sub $3,2
 add $1,$3

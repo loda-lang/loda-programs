@@ -9,15 +9,15 @@ lpb $0,1
   pow $5,8
   gcd $2,$5
   add $1,$2
-  mov $5,$4
   mod $1,6
   add $2,$0
   add $3,2
-  mov $4,$2
   sub $1,$3
+  mov $5,$4
   add $0,$5
   trn $0,7
   add $1,4
   div $1,3
+  mov $4,$2
 lpe
 trn $1,1

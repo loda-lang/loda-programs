@@ -4,9 +4,9 @@
 mov $5,$0
 mov $2,$5
 mov $4,$2
+mod $4,2
 mul $5,2
 bin $5,$2
-mod $4,2
 mov $3,$5
 add $4,1
 mul $4,2

@@ -9,12 +9,12 @@ mov $3,3
 lpb $2,1
   mul $0,2
   lpb $4,1
-    mov $4,$3
     sub $0,$2
+    mov $4,$3
     mov $3,2
     sub $4,1
   lpe
-  sub $4,$3
   sub $2,1
+  sub $4,$3
 lpe
 mov $1,$0

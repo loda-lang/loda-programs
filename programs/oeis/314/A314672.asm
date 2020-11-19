@@ -6,15 +6,15 @@ trn $0,3
 add $0,2
 lpb $0,1
   trn $0,6
-  add $4,2
   mov $2,$0
   sub $0,1
-  add $2,1
   trn $0,1
+  add $2,1
+  add $4,2
 lpe
-add $1,2
 add $0,$4
 add $0,$2
+add $1,2
 add $1,$0
 lpb $3,1
   add $1,4

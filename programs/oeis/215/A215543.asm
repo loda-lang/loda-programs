@@ -3,16 +3,15 @@
 
 mov $2,3
 mov $4,$0
-mov $5,$0
 mul $4,3
-mul $5,3
 mov $3,$4
 sub $3,2
+mov $5,$0
+mul $5,3
 mul $2,$5
 trn $2,6
-add $3,1
 mul $2,2
-add $3,4
+add $3,5
 bin $3,2
 mul $3,$2
 mov $1,$3

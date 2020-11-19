@@ -4,9 +4,9 @@
 lpb $0,1
   mov $2,$0
   lpb $2,1
+    gcd $1,4
     div $2,4
     add $3,$2
-    gcd $1,4
   lpe
   pow $0,$4
 lpe

@@ -3,20 +3,20 @@
 
 lpb $0,1
   trn $5,$1
+  mov $1,$2
+  add $1,1
+  add $2,$0
+  div $0,2
+  gcd $2,2
   add $5,4
   mov $3,$5
-  mov $1,$2
-  add $2,$0
-  gcd $2,2
-  mul $5,$2
-  add $1,1
   mul $1,$3
   sub $3,$2
   mov $4,6
-  div $0,2
-  trn $4,$5
+  mul $5,$2
   mov $2,3
   trn $2,$3
+  trn $4,$5
 lpe
 add $0,$4
 mov $1,$0

@@ -4,14 +4,14 @@
 mov $4,$0
 gcd $0,2
 lpb $0,1
+  mov $0,1
   mov $2,2
   trn $4,2
   add $2,$4
-  mov $0,1
 lpe
-mov $4,10
 add $3,$2
 mov $1,$3
+mov $4,10
 pow $4,$1
 mul $4,2
 mov $3,$4

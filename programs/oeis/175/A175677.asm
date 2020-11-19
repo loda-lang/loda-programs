@@ -3,10 +3,10 @@
 
 add $0,1
 mov $1,$0
-mov $4,$0
 gcd $2,$1
 bin $2,4
 mov $3,$2
+mov $4,$0
 mod $3,$4
 add $3,7
 mov $1,$3

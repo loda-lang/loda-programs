@@ -6,8 +6,8 @@ mov $9,$0
 add $9,1
 lpb $9,1
   clr $0,7
-  sub $9,1
   mov $0,$7
+  sub $9,1
   sub $0,$9
   mov $1,$0
   mul $1,2

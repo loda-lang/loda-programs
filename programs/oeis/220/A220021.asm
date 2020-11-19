@@ -9,6 +9,6 @@ add $2,4
 lpb $2,1
   sub $1,1
   add $1,$0
-  sub $2,1
   add $0,2
+  sub $2,1
 lpe

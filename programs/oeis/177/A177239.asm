@@ -9,9 +9,9 @@ lpb $2,1
   lpe
   mov $2,0
   add $4,$0
-  add $2,$4
   sub $0,2
-  mov $3,5
+  add $2,$4
   sub $2,1
+  mov $3,5
   add $4,2
 lpe

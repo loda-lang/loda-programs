@@ -4,21 +4,21 @@
 add $0,7
 mov $1,$0
 add $1,$0
-mov $2,$0
 add $1,2
+mov $2,$0
+mov $0,5
+mov $3,898
 mov $4,$2
+pow $2,0
 div $4,2
 add $4,$1
-mov $3,898
-mov $0,5
-pow $2,0
-gcd $3,$4
 mul $2,$4
+gcd $3,$4
 add $4,$2
 lpb $0,1
+  sub $0,1
   add $4,3
   sub $4,$3
-  sub $0,1
 lpe
 bin $3,$0
 add $4,2

@@ -5,9 +5,8 @@ mov $2,4
 mul $2,$0
 add $2,1
 gcd $0,$2
-add $0,2
+add $0,4
 mov $3,$2
-add $0,2
 mul $2,$0
 pow $2,2
 sub $2,$3

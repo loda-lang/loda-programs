@@ -4,8 +4,8 @@
 mov $2,$0
 mov $1,$2
 lpb $2,1
-  div $2,2
-  sub $2,1
   pow $1,2
   mod $1,5
+  div $2,2
+  sub $2,1
 lpe

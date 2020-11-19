@@ -4,11 +4,11 @@
 mov $2,$0
 mov $4,$0
 mov $1,$4
+mul $1,7
+pow $1,2
 mov $3,10
 mul $3,$2
 add $3,1
-mul $1,7
-pow $1,2
 mul $3,2
 add $3,8
 add $1,$3

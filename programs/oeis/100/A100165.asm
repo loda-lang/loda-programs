@@ -4,10 +4,10 @@
 mov $3,$0
 mul $0,2
 mov $2,$0
+add $0,2
 add $2,1
 add $2,$3
 mov $4,$2
-add $0,2
 mul $2,$0
 mul $4,$2
 mov $1,$4

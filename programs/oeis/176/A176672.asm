@@ -4,10 +4,10 @@
 mov $3,$0
 sub $0,1
 gcd $0,4
+mov $1,2
 mov $2,3
 mul $2,$3
 div $2,$0
-mov $1,2
 mul $1,$2
 div $1,2
 add $1,1

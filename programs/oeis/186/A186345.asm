@@ -4,20 +4,20 @@
 mov $7,$0
 add $0,1
 mov $2,$0
-mov $3,$0
 pow $2,2
+mov $3,$0
 lpb $2,1
   lpb $4,1
-    mov $4,$3
     mov $0,2
+    mov $4,$3
     mul $4,2
     sub $2,$4
     add $3,1
   lpe
   add $4,$0
   add $0,1
-  trn $4,4
   trn $2,1
+  trn $4,4
   add $4,2
 lpe
 mov $1,$3

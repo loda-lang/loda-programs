@@ -8,19 +8,19 @@ sub $0,1
 mov $6,4
 lpb $0,1
   mov $2,$0
-  mov $5,$2
   mul $0,2
   mov $3,$0
-  sub $5,$0
-  sub $5,4
   mov $1,$3
   add $1,1
+  mov $4,$0
+  mov $5,$2
+  sub $5,$0
+  sub $5,4
   add $5,$1
   sub $6,3
   add $5,$6
-  mov $4,$0
-  add $6,2
   mov $0,$5
+  add $6,2
   add $4,$6
   mov $3,$4
 lpe

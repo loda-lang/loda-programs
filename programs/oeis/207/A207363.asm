@@ -3,13 +3,13 @@
 
 mov $1,$0
 add $1,2
-mov $4,$1
 mov $0,$1
 mov $2,$0
+mov $4,$1
 mul $1,$0
 add $2,1
-mod $4,2
 mov $3,$2
+mod $4,2
 add $3,$4
 add $1,$3
 sub $1,2

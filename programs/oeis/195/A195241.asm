@@ -9,13 +9,12 @@ add $2,$3
 add $2,2
 mov $0,$2
 mov $1,$0
-sub $0,1
+sub $0,4
 mov $4,$2
-sub $0,3
 add $4,$1
 sub $4,3
 lpb $0,1
-  add $1,$4
   sub $0,1
+  add $1,$4
 lpe
 sub $1,1

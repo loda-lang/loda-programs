@@ -5,10 +5,10 @@ sub $0,1
 mov $6,$0
 mov $3,$6
 mov $2,$3
-mov $5,$0
-add $5,6
 trn $4,$2
 div $2,4
+mov $5,$0
+add $5,6
 add $2,$5
 add $4,1
 pow $4,2

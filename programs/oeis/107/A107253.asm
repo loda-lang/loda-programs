@@ -5,8 +5,8 @@ mov $3,$0
 mov $7,$0
 add $7,1
 lpb $7,1
-  sub $7,1
   mov $0,$3
+  sub $7,1
   sub $0,$7
   mov $9,$0
   mov $11,2
@@ -15,8 +15,8 @@ lpb $7,1
     add $0,$11
     sub $0,1
     mov $2,$0
-    mov $6,$0
     mov $5,$0
+    mov $6,$0
     cmp $5,$6
     add $2,$5
     mov $4,$2
@@ -30,8 +30,8 @@ lpb $7,1
     lpe
   lpe
   lpb $9,1
-    sub $10,$1
     mov $9,0
+    sub $10,$1
   lpe
   mov $1,$10
   sub $1,15

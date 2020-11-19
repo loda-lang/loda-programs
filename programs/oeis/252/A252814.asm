@@ -8,9 +8,8 @@ lpb $0,1
   trn $5,2
   add $4,$5
   add $1,$4
-  add $5,2
+  add $5,3
   add $6,$1
-  add $5,1
 lpe
 add $2,$6
 mov $1,$2

@@ -3,6 +3,7 @@
 
 mov $4,$0
 lpb $0,1
+  mov $0,0
   pow $4,2
   add $4,2
   gcd $4,3
@@ -13,7 +14,6 @@ lpb $0,1
   add $2,19
   gcd $3,$2
   mov $2,7
-  mov $0,0
 lpe
 sub $2,$3
 mov $1,$2

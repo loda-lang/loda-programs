@@ -8,12 +8,12 @@ mov $2,$3
 add $2,1
 mov $4,$0
 mov $6,$3
+add $3,$4
+add $3,$4
 mov $5,$6
 mul $6,2
 mul $6,$2
-add $3,$4
 sub $6,$5
-add $3,$4
 add $6,$3
 mov $1,$6
 div $1,2

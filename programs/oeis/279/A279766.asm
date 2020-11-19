@@ -5,8 +5,8 @@ mov $6,$0
 mov $8,$0
 lpb $8,1
   clr $0,6
-  sub $8,1
   mov $0,$6
+  sub $8,1
   sub $0,$8
   add $1,204
   lpb $0,1

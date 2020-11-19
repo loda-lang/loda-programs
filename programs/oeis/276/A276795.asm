@@ -6,10 +6,10 @@ lpb $0,1
   add $2,$0
   mul $0,2
   mov $1,$0
-  add $2,$0
-  mul $2,2
   div $1,4
+  add $2,$0
   mov $0,$1
+  mul $2,2
 lpe
 mov $1,$2
 sub $1,4

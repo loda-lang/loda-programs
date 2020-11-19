@@ -3,9 +3,9 @@
 
 mul $0,5
 mov $2,$0
+pow $0,2
 sub $2,2
 gcd $2,4
-pow $0,2
 div $0,$2
 mov $1,$0
 div $1,25

@@ -3,8 +3,8 @@
 
 pow $0,2
 mov $2,$0
-sub $2,1
 mul $0,8
+sub $2,1
 mul $0,$2
 add $0,1
 pow $0,2

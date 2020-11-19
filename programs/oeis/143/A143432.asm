@@ -3,9 +3,9 @@
 
 div $0,2
 pow $1,$0
+gcd $1,2
 mov $2,$0
 mul $2,2
-gcd $1,2
 gcd $2,4
 add $1,$2
 sub $1,4

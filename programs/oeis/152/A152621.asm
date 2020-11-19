@@ -3,10 +3,10 @@
 
 mov $2,$0
 lpb $2,1
+  sub $2,1
   mul $3,6
   add $3,$1
   add $3,6
-  sub $2,1
   add $1,$3
 lpe
 div $1,6

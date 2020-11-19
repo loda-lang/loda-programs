@@ -6,8 +6,8 @@ lpb $2,1
   mov $3,$2
   add $3,$0
   lpb $3,1
-    trn $3,$2
     add $1,$2
+    trn $3,$2
   lpe
   trn $0,2
   sub $2,1

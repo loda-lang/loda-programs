@@ -4,13 +4,13 @@
 mov $1,1
 lpb $0,36
   mov $2,$0
-  mov $10,1
   div $0,3
+  mov $10,1
   lpb $0,144
     trn $1,30
-    mov $5,1
-    mov $4,2
     mov $3,5
+    mov $4,2
+    mov $5,1
   lpe
   add $2,2
   lpb $10,1
@@ -19,8 +19,8 @@ lpb $0,36
       add $5,3
     lpe
     div $2,3
-    mov $4,$2
     mov $3,3
+    mov $4,$2
     trn $10,$5
   lpe
 lpe

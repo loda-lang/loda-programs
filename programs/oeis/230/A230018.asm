@@ -6,19 +6,18 @@ mov $16,$0
 add $16,1
 lpb $16,1
   clr $0,14
-  sub $16,1
   mov $0,$14
+  sub $16,1
   sub $0,$16
   mov $11,$0
   mov $13,$0
   add $13,1
   lpb $13,1
-    sub $13,1
     mov $0,$11
+    sub $13,1
     sub $0,$13
-    mul $0,3
+    mul $0,27
     mov $7,7
-    mul $0,9
     trn $7,$0
     add $0,$7
     mov $1,$0

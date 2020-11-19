@@ -6,14 +6,13 @@ mov $5,$2
 mov $3,$5
 mul $3,$0
 add $0,7
-mov $4,$3
+mul $0,4
 mov $1,4
+mov $4,$3
 gcd $1,$4
-mul $0,2
 sub $1,3
-sub $3,$1
-mul $0,2
 mov $2,$0
+sub $3,$1
 sub $2,$3
 mov $1,$2
 sub $1,26

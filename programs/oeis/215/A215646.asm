@@ -5,18 +5,18 @@ mov $2,$0
 mov $1,$2
 lpb $2,1
   add $3,$0
+  mov $4,4
   mov $5,1
   mov $6,$2
-  mov $4,4
   lpb $5,1
-    trn $5,3
     add $0,$4
+    trn $5,3
   lpe
   add $3,$6
   lpb $6,1
-    trn $6,$3
     add $0,$4
     add $1,$3
+    trn $6,$3
     sub $3,$2
   lpe
   sub $2,1

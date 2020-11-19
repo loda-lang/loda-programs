@@ -3,12 +3,12 @@
 
 mov $2,$0
 div $0,2
+mov $1,30
+gcd $2,2
 mov $3,7
 pow $3,$0
 mov $4,$3
-mov $1,30
 mul $4,6
-gcd $2,2
 div $4,$2
 mul $1,$4
 div $1,2

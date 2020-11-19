@@ -3,21 +3,21 @@
 
 mov $5,2
 pow $5,$0
-sub $5,1
 mov $0,2
+sub $5,1
 mul $5,2
 mov $3,$5
-mul $5,2
-mov $4,1
 mul $3,2
 add $0,$3
-mul $4,$5
+mov $4,1
+mul $5,2
 mov $2,$5
+mul $4,$5
 add $0,$4
-mov $5,$0
 mov $1,$2
 add $2,3
 mul $2,$1
+mov $5,$0
 add $5,$2
 mov $1,$5
 div $1,12

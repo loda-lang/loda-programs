@@ -4,8 +4,8 @@
 mov $6,$0
 add $0,1
 mov $2,$0
-mov $3,60
 pow $2,2
+mov $3,60
 mul $3,$2
 mul $2,5
 add $2,$3

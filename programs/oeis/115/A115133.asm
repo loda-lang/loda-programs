@@ -4,8 +4,8 @@
 mov $1,15
 add $1,$0
 bin $1,7
-mov $2,13
 mul $1,$0
+mov $2,13
 mul $2,$1
 mov $3,$2
 mov $1,$3

@@ -4,17 +4,16 @@
 mul $0,160
 mov $2,-28
 lpb $0,1
-  mul $0,2
-  mov $4,$2
-  mul $0,2
+  mul $0,4
   mov $1,$2
+  mov $4,$2
   add $2,$4
   mov $4,$2
   mul $1,$4
-  mov $2,1
   add $1,$4
   div $0,$1
   mul $0,5
+  mov $2,1
   mov $3,$0
 lpe
 mov $1,$3

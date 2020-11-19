@@ -5,8 +5,8 @@ sub $0,3
 pow $0,2
 mov $2,$0
 sub $0,$2
-mod $2,7
 add $0,3
+mod $2,7
 add $0,$2
 mod $0,5
 add $0,1

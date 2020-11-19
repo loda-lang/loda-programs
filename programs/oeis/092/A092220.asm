@@ -4,9 +4,9 @@
 gcd $0,6
 mov $2,-1
 lpb $0,1
+  sub $0,1
   sub $2,1
   sub $3,$2
-  sub $0,1
   sub $0,$3
   mov $2,1
 lpe

@@ -4,11 +4,11 @@
 mov $2,$0
 mov $4,$0
 gcd $0,2
+div $2,$0
+pow $2,$0
 mov $5,$0
 div $4,$5
 mov $3,$4
-div $2,$0
-pow $2,$0
 add $2,$3
 mov $0,$2
 mov $1,$0

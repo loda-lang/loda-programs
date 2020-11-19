@@ -5,22 +5,22 @@ mov $12,$0
 mov $14,$0
 lpb $14,1
   clr $0,12
-  sub $14,1
   mov $0,$12
+  sub $14,1
   sub $0,$14
   mov $9,$0
   mov $11,$0
   lpb $11,1
-    sub $11,1
     mov $0,$9
+    sub $11,1
     sub $0,$11
     lpb $0,1
       pow $0,2
+      div $2,8
       mov $4,$0
       mul $4,8
       sub $4,2
       mul $4,2
-      div $2,8
       mov $0,$4
       mov $1,7
       mov $3,$0

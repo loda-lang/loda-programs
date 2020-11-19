@@ -7,12 +7,12 @@ mov $1,$2
 mov $3,1
 lpb $0,1
   mul $0,2
-  mov $4,$1
   add $2,$0
-  add $2,$4
-  mov $1,2
-  div $2,2
   mov $0,2
+  mov $4,$1
+  mov $1,2
+  add $2,$4
+  div $2,2
   mov $3,0
 lpe
 pow $1,$2

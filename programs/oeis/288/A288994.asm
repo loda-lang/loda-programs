@@ -9,18 +9,17 @@ gcd $3,2
 div $0,$3
 mul $0,2
 mov $1,$0
-mov $3,$1
-add $3,128
-mov $4,128
 mov $0,56
 mov $2,-1
-add $3,1
+mov $3,$1
+add $3,129
+mov $4,128
 lpb $0,1
-  div $4,8
   div $0,$2
+  div $4,8
   add $0,$4
-  add $3,$0
   mov $2,4
+  add $3,$0
   mov $0,1
   add $3,4
   add $2,$3

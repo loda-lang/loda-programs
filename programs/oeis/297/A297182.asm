@@ -5,15 +5,15 @@ mov $3,$0
 mov $5,$0
 add $5,1
 lpb $5,1
-  sub $5,1
   mov $0,$3
+  sub $5,1
   sub $0,$5
   mov $4,$0
   sub $4,5
   mov $1,$4
+  mov $2,13
   mov $6,4
   add $6,$1
-  mov $2,13
   div $6,6
   pow $2,$6
   mov $1,$2

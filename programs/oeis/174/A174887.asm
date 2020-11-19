@@ -6,12 +6,12 @@ mov $3,12
 mov $4,11
 lpb $0,1
   sub $0,1
-  mov $2,4
   trn $0,6
+  mov $2,4
   add $2,$1
-  trn $4,3
   add $2,5
   mov $3,$2
+  trn $4,3
 lpe
 add $0,$4
 mov $1,$3

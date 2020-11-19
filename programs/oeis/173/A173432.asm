@@ -6,6 +6,6 @@ mod $1,3
 fac $1
 mod $0,$1
 lpb $0,1
-  div $1,8
   trn $0,2
+  div $1,8
 lpe

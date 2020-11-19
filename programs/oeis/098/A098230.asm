@@ -5,24 +5,23 @@ mov $13,$0
 mov $15,$0
 lpb $15,1
   clr $0,13
-  sub $15,1
   mov $0,$13
+  sub $15,1
   sub $0,$15
   mov $10,$0
   mov $12,$0
   lpb $12,1
-    sub $12,1
     mov $0,$10
+    sub $12,1
     sub $0,$12
     lpb $0,1
-      mov $6,2
       mov $5,$0
       div $0,$5
+      mov $6,2
     lpe
-    pow $6,2
-    mul $6,9
     mov $1,$0
-    mul $6,2
+    pow $6,2
+    mul $6,18
     add $1,$6
     add $11,$1
   lpe

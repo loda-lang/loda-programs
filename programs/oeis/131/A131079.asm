@@ -6,11 +6,10 @@ add $2,1
 mov $4,7
 lpb $4,1
   add $2,1
-  add $3,1
+  sub $3,3
   mov $4,1
-  add $5,1
-  sub $3,4
   add $4,$2
+  add $5,1
   sub $3,$5
   mul $3,2
   lpb $4,1

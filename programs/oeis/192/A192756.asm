@@ -3,8 +3,8 @@
 
 mov $2,1
 lpb $0,1
-  add $1,$2
   sub $0,1
+  add $1,$2
   add $4,5
   add $3,$4
   mov $2,$3

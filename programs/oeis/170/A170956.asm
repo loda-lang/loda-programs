@@ -9,9 +9,9 @@ lpb $0,1
   div $2,6
 lpe
 mov $1,$2
-fac $3
-mov $4,$3
 gcd $1,3
 fac $1
+fac $3
+mov $4,$3
 mul $4,6
 div $1,$4

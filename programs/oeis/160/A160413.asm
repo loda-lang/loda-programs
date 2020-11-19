@@ -4,24 +4,24 @@
 mov $4,3
 mul $4,$0
 gcd $4,2
+mov $1,$4
 mov $2,$4
+mul $4,2
 mov $5,$2
 mul $5,2
-mov $1,$4
 sub $5,$1
-mul $4,2
-mov $1,$4
 mul $0,$5
-mov $3,$0
+mov $1,$4
 sub $1,1
-mul $3,$1
+mov $3,$0
 add $0,1
+mul $3,$1
 add $1,3
 lpb $0,1
+  mov $0,1
+  trn $0,$2
   trn $3,1
   add $1,$3
-  mov $0,1
   div $1,2
-  trn $0,$2
 lpe
 sub $1,1

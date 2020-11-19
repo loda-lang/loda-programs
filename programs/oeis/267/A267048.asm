@@ -3,9 +3,9 @@
 
 mov $2,$0
 lpb $0,1
-  mov $3,3
   sub $0,2
   mul $0,2
+  mov $3,3
   lpb $0,1
     mov $3,$0
     mod $0,4

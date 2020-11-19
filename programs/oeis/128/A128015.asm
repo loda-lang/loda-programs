@@ -6,8 +6,8 @@ div $0,2
 mov $1,$0
 mul $0,2
 bin $0,$1
-sub $2,$0
 mov $1,10
+sub $2,$0
 sub $1,$2
 sub $1,12
 div $1,2

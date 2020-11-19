@@ -7,9 +7,9 @@ lpb $2,1
   add $3,1
   lpb $3,1
     sub $3,1
-    mov $6,1
-    mov $5,4
     mov $4,2
+    mov $5,4
+    mov $6,1
     lpb $0,1
       sub $0,1
       mov $1,$4

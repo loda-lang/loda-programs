@@ -4,8 +4,8 @@
 lpb $0,1
   mov $3,$2
   mov $2,$0
-  mod $2,10
   div $0,10
+  mod $2,10
   add $2,$3
 lpe
 pow $2,2

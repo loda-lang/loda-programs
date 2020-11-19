@@ -4,13 +4,13 @@
 mod $0,5
 mov $2,2
 mul $2,$0
-mov $3,2
 mov $0,$2
 trn $0,2
+mov $3,2
 lpb $0,1
-  sub $3,2
   sub $0,1
   div $0,2
+  sub $3,2
 lpe
 mov $1,$3
 div $1,2

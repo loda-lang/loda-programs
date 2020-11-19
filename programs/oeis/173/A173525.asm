@@ -4,9 +4,9 @@
 lpb $0,1
   mov $2,0
   add $2,$0
+  div $0,5
   mod $2,5
   add $1,$2
-  div $0,5
 lpe
 mul $1,2
 div $1,2

@@ -7,14 +7,14 @@ add $0,$2
 lpb $0,1
   add $0,1
   mov $4,$0
+  div $0,$4
+  mov $1,$4
   mov $5,$4
   add $5,1
   sub $5,$2
-  mov $1,$4
   mod $1,$5
-  mov $3,$2
-  div $0,$4
   gcd $1,2
+  mov $3,$2
   mul $1,$3
   add $1,3
   gcd $3,$0

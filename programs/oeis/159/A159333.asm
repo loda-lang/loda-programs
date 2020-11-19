@@ -3,9 +3,9 @@
 
 sub $2,$0
 trn $0,2
-cmp $2,0
 fac $0
-mov $3,$0
+cmp $2,0
 mul $2,2
+mov $3,$0
 sub $3,$2
 mov $1,$3

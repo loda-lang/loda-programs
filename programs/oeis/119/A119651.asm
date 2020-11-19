@@ -6,38 +6,38 @@ mov $19,$0
 add $19,1
 lpb $19,1
   clr $0,17
-  sub $19,1
   mov $0,$17
+  sub $19,1
   sub $0,$19
   mov $14,$0
   mov $16,$0
   add $16,1
   lpb $16,1
     clr $0,14
-    sub $16,1
     mov $0,$14
+    sub $16,1
     sub $0,$16
     mov $1,$0
     add $0,8
     mov $3,$0
+    mov $0,5
     mov $6,$3
-    mov $10,$6
     mov $5,$6
     sub $5,$1
     trn $1,4
-    mov $8,$5
-    add $2,7
-    add $8,9
     add $1,1
-    mov $0,5
+    sub $0,$1
+    add $2,7
+    mov $8,$5
+    add $8,9
+    mov $10,$6
     mov $6,$8
+    pow $6,2
+    add $2,$6
+    add $2,10
     add $7,7
     gcd $10,9
     trn $10,$7
-    pow $6,2
-    sub $0,$1
-    add $2,$6
-    add $2,10
     sub $0,$10
     add $0,$2
     mov $1,$0

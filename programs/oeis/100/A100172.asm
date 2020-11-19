@@ -8,14 +8,14 @@ sub $3,1
 mul $3,$0
 mov $4,$3
 add $3,1
-mov $8,$7
 add $3,$7
+mov $8,$7
+mul $4,$8
+add $4,6
 add $7,6
 mul $7,$3
 div $7,2
 mul $7,3
-mul $4,$8
-add $4,6
 mov $0,$7
 add $4,1
 sub $0,$4

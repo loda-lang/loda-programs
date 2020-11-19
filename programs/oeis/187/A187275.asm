@@ -6,9 +6,7 @@ lpb $0,1
   sub $0,2
   mul $2,5
 lpe
-sub $2,3
 add $0,1
-add $2,3
 mul $2,2
 mul $0,$2
 mul $0,2

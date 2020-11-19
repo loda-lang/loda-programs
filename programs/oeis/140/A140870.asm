@@ -5,10 +5,10 @@ mov $3,$0
 mov $2,$3
 mul $2,2
 pow $2,2
-mov $5,$2
 mov $4,7
 mul $4,$2
 sub $4,6
+mov $5,$2
 mul $4,$5
 mov $1,$4
 div $1,8

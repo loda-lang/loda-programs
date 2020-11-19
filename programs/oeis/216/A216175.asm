@@ -6,35 +6,35 @@ mov $19,$0
 add $19,1
 lpb $19,1
   clr $0,17
-  sub $19,1
   mov $0,$17
+  sub $19,1
   sub $0,$19
   mov $14,$0
   mov $16,$0
   add $16,1
   lpb $16,1
     clr $0,14
-    sub $16,1
     mov $0,$14
+    sub $16,1
     sub $0,$16
     mov $11,$0
     mov $13,$0
     add $13,1
     lpb $13,1
-      sub $13,1
       mov $0,$11
+      sub $13,1
       sub $0,$13
       mov $7,$0
       mov $0,0
-      mov $9,2
       add $0,$7
       mov $8,$7
+      mov $9,2
       add $9,$8
       add $0,$9
       mul $0,2
       mov $9,$0
-      div $9,8
       div $0,3
+      div $9,8
       add $0,$9
       mov $1,$0
       add $12,$1

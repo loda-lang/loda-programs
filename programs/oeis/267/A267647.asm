@@ -5,14 +5,11 @@ mov $1,4
 mov $2,$0
 lpb $0,1
   mov $1,$0
+  mov $0,0
   trn $2,10
   add $2,$1
+  add $1,9
   trn $2,4
-  add $1,3
-  add $2,1
-  add $1,2
-  add $2,1
-  mov $0,0
-  add $1,4
+  add $2,2
 lpe
 sub $1,$2

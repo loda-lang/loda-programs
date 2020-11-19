@@ -5,12 +5,12 @@ add $0,3
 mov $4,$0
 div $0,3
 mov $1,$0
-mov $3,$1
-mov $2,$1
 add $0,2
+div $0,$1
+mov $2,$1
+mov $3,$1
 mul $3,2
 sub $4,$2
-div $0,$1
 lpb $0,1
   trn $2,$0
   sub $0,1

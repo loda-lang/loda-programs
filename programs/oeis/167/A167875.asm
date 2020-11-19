@@ -6,9 +6,9 @@ mov $3,$1
 sub $1,$3
 add $3,1
 add $1,$3
+pow $1,3
 mov $2,$3
 mul $2,2
-pow $1,3
 add $2,$1
 mov $1,$2
 div $1,3

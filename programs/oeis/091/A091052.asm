@@ -3,8 +3,8 @@
 
 mov $2,$0
 mov $1,$2
-gcd $2,2
 mul $1,2
+gcd $2,2
 mov $3,2
 pow $3,$1
 mul $3,2

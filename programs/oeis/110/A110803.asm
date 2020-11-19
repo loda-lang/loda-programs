@@ -5,28 +5,28 @@ mov $2,$0
 mov $5,$0
 add $5,1
 lpb $5,1
-  sub $5,1
   mov $0,$2
+  sub $5,1
   sub $0,$5
-  mov $11,$0
   mov $6,2
+  mov $11,$0
   lpb $6,1
-    sub $6,1
     mov $0,$11
+    sub $6,1
     add $0,$6
     trn $0,1
     add $0,1
     mov $4,$0
-    gcd $10,4
     mov $8,$0
     log $8,10
+    gcd $10,4
     add $8,$10
     mul $4,$8
     mov $1,$4
     mov $3,$6
     lpb $3,1
-      mov $7,$1
       sub $3,1
+      mov $7,$1
     lpe
   lpe
   lpb $11,1

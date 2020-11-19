@@ -4,8 +4,8 @@
 mov $3,$0
 mov $4,2
 lpb $4,1
-  sub $4,1
   mov $0,$3
+  sub $4,1
   add $0,$4
   mov $1,5
   mov $5,2
@@ -15,12 +15,12 @@ lpb $4,1
   div $1,9
   mov $2,$4
   lpb $2,1
-    mov $6,$1
     sub $2,1
+    mov $6,$1
   lpe
 lpe
 lpb $3,1
-  sub $6,$1
   mov $3,0
+  sub $6,$1
 lpe
 mov $1,$6

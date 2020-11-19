@@ -5,16 +5,16 @@ mov $4,$0
 mov $8,-1
 pow $8,$0
 bin $0,2
-mov $7,5
-mov $5,1
 mul $0,3
+mov $5,1
 add $5,$0
 add $0,2
+mov $7,5
 lpb $0,1
   mov $0,$7
+  sub $0,1
   mov $6,$8
   mul $5,$6
-  sub $0,1
   mul $5,2
 lpe
 mov $0,$5

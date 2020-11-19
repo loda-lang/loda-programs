@@ -3,10 +3,10 @@
 
 mov $1,2
 pow $1,$0
-mov $3,$0
-mul $3,6
 add $1,2
 mov $2,$1
+mov $3,$0
+mul $3,6
 mul $3,$2
 mov $1,$3
 add $3,$1

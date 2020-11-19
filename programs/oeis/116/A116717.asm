@@ -5,21 +5,21 @@ mov $10,$0
 mov $12,$0
 lpb $12,1
   clr $0,10
-  sub $12,1
   mov $0,$10
+  sub $12,1
   sub $0,$12
   mov $7,$0
   mov $9,$0
   lpb $9,1
-    sub $9,1
     mov $0,$7
+    sub $9,1
     sub $0,$9
     mov $3,$6
     mov $4,0
     lpb $0,1
       sub $0,1
-      add $3,1
       mov $2,$4
+      add $3,1
       mov $4,$3
       add $3,$2
       sub $4,1

@@ -8,14 +8,14 @@ lpb $2,1
   mov $4,2
   mov $5,3
   lpb $5,1
-    trn $5,$2
     mov $3,1
+    trn $5,$2
   lpe
   mov $1,$4
   lpb $3,1
+    mov $1,6
     sub $2,$3
     trn $3,$2
-    mov $1,6
   lpe
   sub $2,1
   div $2,2

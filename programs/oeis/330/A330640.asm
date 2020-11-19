@@ -5,8 +5,8 @@ mov $9,$0
 mov $11,$0
 add $11,1
 lpb $11,1
-  sub $11,1
   mov $0,$9
+  sub $11,1
   sub $0,$11
   mov $5,1
   lpb $0,1
@@ -14,13 +14,13 @@ lpb $11,1
     mov $0,6
     div $8,2
     mov $2,$8
-    trn $8,1
-    mov $6,$2
     mov $4,$7
-    mov $5,$2
-    sub $6,$8
     trn $0,$4
+    mov $5,$2
     bin $5,2
+    mov $6,$2
+    trn $8,1
+    sub $6,$8
     mov $7,$6
   lpe
   add $5,7

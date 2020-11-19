@@ -3,11 +3,11 @@
 
 mov $5,$0
 div $5,2
+mov $1,$5
 mov $2,$5
 mov $3,$2
 add $3,5
 mov $4,$0
-mov $1,$5
 add $3,$4
 sub $3,3
 bin $3,$1

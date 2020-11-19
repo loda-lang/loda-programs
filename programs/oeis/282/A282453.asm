@@ -4,10 +4,10 @@
 mov $1,$0
 gcd $0,2
 add $1,$0
-mov $3,2
-mov $2,$1
-pow $3,$2
 add $0,1
+mov $2,$1
+mov $3,2
+pow $3,$2
 lpb $0,1
   sub $0,1
   mul $3,2

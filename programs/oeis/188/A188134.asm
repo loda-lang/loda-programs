@@ -4,9 +4,9 @@
 mov $1,$0
 mov $2,4
 gcd $2,$1
-pow $2,2
 mul $1,4
+pow $2,2
 lpb $0,1
-  div $1,$2
   mod $0,2
+  div $1,$2
 lpe

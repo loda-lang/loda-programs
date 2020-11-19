@@ -4,15 +4,14 @@
 mov $2,1
 lpb $0,1
   mov $4,$0
-  add $4,$2
-  trn $4,5
-  trn $2,4
-  add $2,1
-  add $4,2
-  add $2,2
-  gcd $4,$2
-  mov $3,1
   mov $0,1
+  add $4,$2
+  trn $2,4
+  add $2,3
+  mov $3,1
+  trn $4,5
+  add $4,2
+  gcd $4,$2
 lpe
 add $4,$3
 mov $1,$4

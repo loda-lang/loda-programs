@@ -6,8 +6,8 @@ pow $2,3
 mov $4,1
 lpb $2,1
   add $1,1
-  add $3,3
   add $2,$1
+  add $3,3
   lpb $4,1
     mod $3,2
     sub $4,$3

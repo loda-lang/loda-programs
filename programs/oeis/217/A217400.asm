@@ -4,13 +4,13 @@
 mov $5,$0
 lpb $0,1
   sub $0,1
+  div $0,10
   add $6,2
   mov $4,$6
   sub $4,3
   mov $6,$4
   mul $6,10
   add $6,72
-  div $0,10
 lpe
 fac $0
 add $6,$0

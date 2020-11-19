@@ -4,15 +4,14 @@
 mul $0,2
 mov $1,$0
 lpb $0,1
-  add $3,1
+  sub $0,2
   add $2,$1
+  add $3,1
   add $1,$3
-  sub $0,1
   sub $3,$3
   add $3,$2
-  mul $3,2
-  sub $0,1
-  add $3,1
   mov $2,$0
+  mul $3,2
+  add $3,1
 lpe
 add $1,1

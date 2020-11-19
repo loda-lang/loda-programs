@@ -5,8 +5,8 @@ mov $10,$0
 mov $12,$0
 lpb $12,1
   clr $0,10
-  sub $12,1
   mov $0,$10
+  sub $12,1
   sub $0,$12
   lpb $0,1
     mod $0,8

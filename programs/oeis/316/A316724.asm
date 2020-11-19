@@ -5,16 +5,16 @@ mov $11,$0
 mov $13,$0
 lpb $13,1
   clr $0,11
-  sub $13,1
   mov $0,$11
+  sub $13,1
   sub $0,$13
   mov $2,$0
   lpb $2,1
     gcd $2,8
     add $7,10
     mul $0,$7
-    sub $7,9
     sub $2,1
+    sub $7,9
   lpe
   mov $1,$0
   div $1,10

@@ -3,11 +3,11 @@
 
 pow $0,2
 mov $2,$0
+gcd $0,2
 mov $3,$2
 mul $3,2
-gcd $0,2
-mov $4,11
 add $0,$3
+mov $4,11
 lpb $0,1
   sub $0,1
   sub $4,1

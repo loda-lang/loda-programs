@@ -10,12 +10,12 @@ lpe
 cmp $2,$6
 mov $3,$2
 add $3,$4
-mov $7,1
 add $2,$3
-add $7,$2
 div $3,2
 add $3,1
 mul $3,2
+mov $7,1
+add $7,$2
 sub $7,1
 mov $5,$7
 add $5,36

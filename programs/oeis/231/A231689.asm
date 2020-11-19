@@ -4,15 +4,15 @@
 mov $3,$0
 mov $7,$0
 lpb $7,1
-  sub $7,1
   mov $0,$3
+  sub $7,1
   sub $0,$7
   mov $1,$0
-  mov $5,$1
   mov $0,6
+  mov $5,$1
   lpb $0,1
-    mov $2,$5
     mov $0,3
+    mov $2,$5
     div $2,10
     mul $2,9
     mov $6,$2

@@ -4,34 +4,29 @@
 mov $7,$0
 add $0,1
 lpb $0,1
-  add $1,3
-  add $0,4
-  add $6,6
+  sub $0,1
+  add $1,5
   sub $2,$3
-  add $1,2
-  sub $6,1
+  add $2,2
   mov $4,$1
+  mov $1,1
   add $4,2
+  add $6,5
   mov $3,$6
   add $3,6
   mov $6,1
   add $6,$4
   sub $6,$3
   add $3,6
-  add $0,2
-  add $2,2
-  add $6,1
   add $3,$2
   sub $5,$5
-  mov $1,1
-  sub $0,1
   add $5,1
-  trn $6,1
   add $3,$5
   add $3,$5
-  sub $0,6
   mov $2,$3
   add $1,$2
+  add $6,1
+  trn $6,1
 lpe
 lpb $7,1
   add $1,1

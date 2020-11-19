@@ -3,14 +3,14 @@
 
 pow $0,2
 mov $2,$0
-mul $2,2
 sub $0,1
+div $0,2
+mul $2,2
 mov $3,$2
 sub $3,1
-mov $4,9
 mod $3,2
-div $0,2
 add $3,$0
+mov $4,9
 add $4,$3
 mov $1,$4
 sub $1,7

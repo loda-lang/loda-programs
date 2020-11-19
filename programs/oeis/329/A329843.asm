@@ -3,12 +3,12 @@
 
 mov $6,$0
 lpb $0,1
-  mov $4,15
-  mul $4,$0
   pow $1,$2
   mul $1,14
-  add $1,$4
+  mov $4,15
+  mul $4,$0
   cmp $0,5
+  add $1,$4
   div $1,32
   add $5,$1
 lpe

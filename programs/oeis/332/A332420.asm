@@ -5,15 +5,15 @@ mul $0,5
 mov $2,$0
 div $2,2
 lpb $2,1
+  add $2,7
   add $3,7
   mov $4,$3
-  add $2,7
   lpb $4,1
     gcd $2,8
     sub $4,$4
   lpe
-  sub $2,1
   add $1,7
+  sub $2,1
 lpe
 div $1,7
 add $1,3
