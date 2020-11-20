@@ -829,7 +829,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319924](http://oeis.org/A319924) ([L06 program](319/A319924.asm)): a(n) = A143565(2n,n) for n > 0, a(0) = 1.
 * [A319956](http://oeis.org/A319956) ([L17 program](319/A319956.asm)): Image of 3 under repeated application of the morphism 1 -> 1, 2 -> 22, 3 -> 312.
 * [A319981](http://oeis.org/A319981) ([L12 program](319/A319981.asm)): a(n) is the number of integer partitions of n with largest part <= 3 for which the index of the seaweed algebra formed by the integer partition paired with its weight is 0.
-* [A320007](http://oeis.org/A320007) ([L20 program](320/A320007.asm)): If there is k >= 0 such that floor(n/4^k) is odd and A320006(k) is 1, then a(n) = 1, otherwise a(n) = 0.
+* [A320007](http://oeis.org/A320007) ([L11 program](320/A320007.asm)): If there is k >= 0 such that floor(n/4^k) is odd and A320006(k) is 1, then a(n) = 1, otherwise a(n) = 0.
 * [A320065](http://oeis.org/A320065) ([L20 program](320/A320065.asm)): a(n) is the smallest integer i such that binomial(2i,i) > n.
 * [A320106](http://oeis.org/A320106) ([L12 program](320/A320106.asm)): Möbius transform of A320107.
 * [A320226](http://oeis.org/A320226) ([L17 program](320/A320226.asm)): Number of integer partitions of n whose non-1 parts are all equal.
@@ -1144,7 +1144,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331390](http://oeis.org/A331390) ([L66 program](331/A331390.asm)): Number of binary matrices with 3 distinct columns and any number of nonzero rows with n ones in every column and rows in nonincreasing lexicographic order.
 * [A331429](http://oeis.org/A331429) ([L50 program](331/A331429.asm)): Expansion of x^2*(10-5*x+x^2)/((1-x)^4*(1-x^2)).
 * [A331433](http://oeis.org/A331433) ([L05 program](331/A331433.asm)): Column 1 of triangle in A331431.
-* [A331434](http://oeis.org/A331434) ([L04 program](331/A331434.asm)): Column 2 of triangle in A331431.
+* [A331434](http://oeis.org/A331434) ([L03 program](331/A331434.asm)): Column 2 of triangle in A331431.
 * [A331473](http://oeis.org/A331473) ([L27 program](331/A331473.asm)): Alternating sum of (n+1)*A000108(n+1).
 * [A331505](http://oeis.org/A331505) ([L23 program](331/A331505.asm)): Number of labeled graphs with n nodes and floor(n/2) edges.
 * [A331528](http://oeis.org/A331528) ([L14 program](331/A331528.asm)): a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.

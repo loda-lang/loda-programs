@@ -2442,7 +2442,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134483](http://oeis.org/A134483) ([L10 program](134/A134483.asm)): Triangle read by rows: T(n,k)=2n+k-2; 1<=k<=n.
 * [A134496](http://oeis.org/A134496) ([L07 program](134/A134496.asm)): Numbers that are not lunar pseudoprimes.
 * [A134507](http://oeis.org/A134507) ([L34 program](134/A134507.asm)): Number of rectangles in a pyramid built with squares. The squares counted in A092498 are excluded.
-* [A134519](http://oeis.org/A134519) ([L08 program](134/A134519.asm)): Numbers remaining when the natural numbers (A000027) are arranged into a triangle and only the beginning and end terms of each row are retained.
+* [A134519](http://oeis.org/A134519) ([L06 program](134/A134519.asm)): Numbers remaining when the natural numbers (A000027) are arranged into a triangle and only the beginning and end terms of each row are retained.
 * [A134522](http://oeis.org/A134522) ([L12 program](134/A134522.asm)): a(n) = 2^n + ceiling(n/2).
 * [A134538](http://oeis.org/A134538) ([L05 program](134/A134538.asm)): 5n^2 - 1.
 * [A134547](http://oeis.org/A134547) ([L05 program](134/A134547.asm)): a(n)=5n^2+20n+4.
@@ -4228,7 +4228,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A159955](http://oeis.org/A159955) ([L04 program](159/A159955.asm)): Period 9: repeat [0, 1, 2, 1, 2, 0, 2, 0, 1].
 * [A159956](http://oeis.org/A159956) ([L05 program](159/A159956.asm)): Period 16 : 0,1,2,3,1,2,3,0,2,3,0,1,3,0,1,2 .
 * [A159957](http://oeis.org/A159957) ([L05 program](159/A159957.asm)): Period 25 : 0,1,2,3,4,1,2,3,4,0,2,3,4,0,1,3,4,0,1,2,4,0,1,2,3 .
-* [A159964](http://oeis.org/A159964) ([L07 program](159/A159964.asm)): a(n) = 2^n*(1-n).
+* [A159964](http://oeis.org/A159964) ([L09 program](159/A159964.asm)): a(n) = 2^n*(1-n).
 * [A159966](http://oeis.org/A159966) ([L20 program](159/A159966.asm)): Lodumo_4 of A102370 (sloping binary numbers).
 * [A160050](http://oeis.org/A160050) ([L11 program](160/A160050.asm)): Numerator of the Harary number for the star graph s_n.
 * [A160094](http://oeis.org/A160094) ([L24 program](160/A160094.asm)): 1 + the number of trailing zeros in n (A122840).
@@ -5616,6 +5616,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176260](http://oeis.org/A176260) ([L03 program](176/A176260.asm)): Periodic sequence: Repeat 5, 1.
 * [A176271](http://oeis.org/A176271) ([L03 program](176/A176271.asm)): The odd numbers as a triangle read by rows.
 * [A176355](http://oeis.org/A176355) ([L03 program](176/A176355.asm)): Periodic sequence: Repeat 6, 1.
+* [A176409](http://oeis.org/A176409) ([L72 program](176/A176409.asm)): Multiples of 3 or 7.
 * [A176413](http://oeis.org/A176413) ([L03 program](176/A176413.asm)): a(n) = 19*3^n.
 * [A176414](http://oeis.org/A176414) ([L16 program](176/A176414.asm)): Expansion of (7+8*x)/(1+2*x).
 * [A176415](http://oeis.org/A176415) ([L03 program](176/A176415.asm)): Periodic sequence: repeat 7,1.
@@ -6319,7 +6320,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186317](http://oeis.org/A186317) ([L29 program](186/A186317.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the squares and hexagonal numbers.  Complement of A186318.
 * [A186318](http://oeis.org/A186318) ([L46 program](186/A186318.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the squares and hexagonal numbers.  Complement of A186317.
 * [A186320](http://oeis.org/A186320) ([L40 program](186/A186320.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and heptagonal numbers.  Complement of A186321.
-* [A186321](http://oeis.org/A186321) ([L52 program](186/A186321.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and heptagonal numbers.  Complement of A186320.
+* [A186321](http://oeis.org/A186321) ([L38 program](186/A186321.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and heptagonal numbers.  Complement of A186320.
 * [A186322](http://oeis.org/A186322) ([L29 program](186/A186322.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the squares and heptagonal numbers.  Complement of A186323.
 * [A186324](http://oeis.org/A186324) ([L40 program](186/A186324.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and octagonal numbers.  Complement of A186325.
 * [A186325](http://oeis.org/A186325) ([L43 program](186/A186325.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and octagonal numbers.  Complement of A186324.
@@ -6628,7 +6629,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189935](http://oeis.org/A189935) ([L13 program](189/A189935.asm)): a(n) = A189933(n)/2.
 * [A189976](http://oeis.org/A189976) ([L09 program](189/A189976.asm)): a(n) is the number of incongruent two-color bracelets of n beads, 8 of them black (A005514), having a diameter of symmetry.
 * [A189980](http://oeis.org/A189980) ([L04 program](189/A189980.asm)): a(n) is the number of incongruent two-color bracelets of n beads, 10 from them are black (A005515), having a diameter of symmetry.
-* [A189996](http://oeis.org/A189996) ([L103 program](189/A189996.asm)): Bott periodicity: the homotopy groups of the stable orthogonal group are periodic with period 8 and repeat like [2, 2, 1, 0, 1, 1, 1, 0].
+* [A189996](http://oeis.org/A189996) ([L16 program](189/A189996.asm)): Bott periodicity: the homotopy groups of the stable orthogonal group are periodic with period 8 and repeat like [2, 2, 1, 0, 1, 1, 1, 0].
 * [A190002](http://oeis.org/A190002) ([L22 program](190/A190002.asm)): a(n) = n + [n*s/r] + [n*t/r]; r=1, s=(sinh(1))^2, t=(cosh(1))^2.
 * [A190003](http://oeis.org/A190003) ([L12 program](190/A190003.asm)): a(n) = n + [n*r/s] + [n*t/s]; r=1, s=(sinh(1))^2, t=(cosh(1))^2.
 * [A190004](http://oeis.org/A190004) ([L17 program](190/A190004.asm)): A190002/2.
