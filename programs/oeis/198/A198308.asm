@@ -5,8 +5,8 @@ mov $8,$0
 mov $10,$0
 add $10,1
 lpb $10,1
-  sub $10,1
   mov $0,$8
+  sub $10,1
   sub $0,$10
   lpb $0,1
     sub $0,2
@@ -18,10 +18,10 @@ lpb $10,1
   mov $1,1
   clr $2,6
   add $0,2
-  mov $4,$0
-  div $4,2
   sub $1,5
   sub $3,$1
+  mov $4,$0
+  div $4,2
   sub $3,$4
   mov $1,$3
   sub $1,2

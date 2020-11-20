@@ -8,10 +8,10 @@ lpb $0,1
   trn $0,6
   add $3,1
   trn $3,$0
-  sub $4,2
   mov $0,1
-  trn $4,3
   add $3,1
+  sub $4,2
+  trn $4,3
 lpe
 add $3,$4
 add $3,3

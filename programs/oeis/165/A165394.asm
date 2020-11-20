@@ -10,9 +10,9 @@ mov $2,4
 mov $3,4
 lpb $0,1
   add $2,$0
+  mul $0,$4
   add $3,$2
   sub $3,2
-  mul $0,$4
 lpe
 mov $1,$3
 div $1,3

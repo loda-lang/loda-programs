@@ -3,10 +3,10 @@
 
 lpb $0,1
   mov $2,$0
+  div $0,10
   mod $2,10
   cmp $2,1
   add $3,$2
-  div $0,10
 lpe
 add $3,2
 mov $1,$3

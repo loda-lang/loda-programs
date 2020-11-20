@@ -7,11 +7,11 @@ sub $2,$0
 mov $0,43
 add $0,$2
 add $0,-3
+mov $1,5
 mov $3,1
 add $3,$2
 add $2,1
 add $2,$0
-mov $1,5
 mul $2,$3
 add $1,$2
 sub $1,5

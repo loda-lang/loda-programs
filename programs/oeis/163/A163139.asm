@@ -5,8 +5,8 @@ sub $0,1
 trn $0,2
 mod $0,10
 lpb $0,1
-  mov $2,8
   div $0,8
+  mov $2,8
 lpe
 mov $1,$2
 div $1,6

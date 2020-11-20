@@ -3,8 +3,8 @@
 
 mov $2,$0
 mov $3,$2
-mov $4,$2
 sub $3,2
+mov $4,$2
 bin $4,5
 pow $4,2
 mul $3,$4

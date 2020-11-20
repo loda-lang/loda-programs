@@ -4,9 +4,9 @@
 mov $6,$0
 add $0,1
 mov $2,$0
+mul $0,4
 mov $3,$2
 bin $2,4
-mul $0,4
 mul $3,$0
 add $3,$2
 mul $3,2

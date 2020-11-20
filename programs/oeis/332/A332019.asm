@@ -3,10 +3,10 @@
 
 mov $6,$0
 mul $0,2
-mov $5,7
 mov $3,$0
-trn $5,$3
 mul $0,2
+mov $5,7
+trn $5,$3
 add $5,1
 trn $0,$5
 add $0,1

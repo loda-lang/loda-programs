@@ -4,13 +4,13 @@
 mov $10,$0
 mov $12,$0
 lpb $12,1
-  sub $12,1
   mov $0,$10
+  sub $12,1
   sub $0,$12
   mov $3,2
   lpb $0,1
-    mov $6,$3
     mov $4,1
+    mov $6,$3
     mov $7,6
     lpb $2,6
       div $0,2
@@ -20,8 +20,8 @@ lpb $12,1
     lpe
     trn $0,$3
     lpb $0,1
-      trn $1,$7
       trn $0,6
+      trn $1,$7
     lpe
   lpe
   div $1,2

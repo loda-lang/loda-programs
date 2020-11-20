@@ -4,9 +4,8 @@
 add $0,4
 mov $2,1
 lpb $0,1
-  add $2,20
   sub $0,1
-  add $2,1
+  add $2,21
   mov $3,17
 lpe
 div $2,$3

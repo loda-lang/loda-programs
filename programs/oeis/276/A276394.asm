@@ -4,8 +4,8 @@
 mov $4,$0
 mov $5,2
 lpb $5,1
-  sub $5,1
   mov $0,$4
+  sub $5,1
   add $0,$5
   sub $0,1
   mul $0,2
@@ -16,12 +16,12 @@ lpb $5,1
   mov $1,$2
   mov $3,$5
   lpb $3,1
-    mov $6,$1
     sub $3,1
+    mov $6,$1
   lpe
 lpe
 lpb $4,1
-  sub $6,$1
   mov $4,0
+  sub $6,$1
 lpe
 mov $1,$6

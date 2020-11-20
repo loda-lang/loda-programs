@@ -7,9 +7,9 @@ mov $1,5
 lpb $0,1
   pow $0,6
   sub $0,1
+  mod $0,6
   gcd $2,1
   add $1,$2
-  mod $0,6
 lpe
 add $1,2
 mov $3,$4

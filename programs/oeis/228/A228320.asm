@@ -3,8 +3,8 @@
 
 mov $2,6
 add $2,$0
-pow $2,2
 add $0,5
+pow $2,2
 add $2,5
 mul $2,6
 sub $2,$0

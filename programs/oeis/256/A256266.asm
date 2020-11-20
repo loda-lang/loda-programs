@@ -5,8 +5,8 @@ mov $9,$0
 mov $11,$0
 lpb $11,1
   clr $0,9
-  sub $11,1
   mov $0,$9
+  sub $11,1
   sub $0,$11
   mul $0,8
   mov $2,$0
@@ -19,8 +19,8 @@ lpb $11,1
       mov $3,$1
       sub $6,$6
     lpe
-    add $6,5
     sub $2,1
+    add $6,5
   lpe
   mov $1,$3
   div $1,28

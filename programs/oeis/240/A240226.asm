@@ -4,12 +4,12 @@
 add $0,1
 mul $0,4
 lpb $0,1
-  mov $2,3
   div $0,2
+  mov $2,3
   lpb $0,1
-    mul $2,2
     gcd $0,281474976710656
     div $0,4
+    mul $2,2
   lpe
 lpe
 pow $2,2

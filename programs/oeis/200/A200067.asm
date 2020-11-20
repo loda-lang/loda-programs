@@ -5,6 +5,6 @@ lpb $0,1
   add $1,$3
   add $2,2
   add $3,$0
-  trn $3,$2
   sub $0,1
+  trn $3,$2
 lpe

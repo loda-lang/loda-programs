@@ -4,8 +4,8 @@
 mov $5,$0
 mov $2,$5
 trn $2,3
-mov $3,2
 add $2,6
+mov $3,2
 mov $4,8
 sub $4,$2
 trn $4,1

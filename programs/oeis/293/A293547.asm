@@ -4,13 +4,13 @@
 mov $2,7
 mov $5,3
 lpb $0,1
+  sub $0,1
   mov $4,$2
   sub $5,1
   add $2,$5
-  sub $0,1
+  sub $2,2
   mov $3,2
   add $3,$4
-  sub $2,2
   mov $5,$3
   sub $5,2
 lpe

@@ -8,8 +8,8 @@ mod $0,4
 sub $0,1
 cmp $0,0
 lpb $0,1
-  mov $2,4
   div $0,10
+  mov $2,4
 lpe
 mov $1,$2
 div $1,2

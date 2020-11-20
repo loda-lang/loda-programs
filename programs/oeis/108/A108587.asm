@@ -6,10 +6,9 @@ mul $0,4
 trn $0,8
 mul $0,2
 lpb $0,1
-  add $3,6
   sub $0,25
   trn $0,1
-  sub $3,5
+  add $3,1
 lpe
 mov $1,$3
 add $1,1

@@ -6,13 +6,13 @@ mov $3,$0
 add $0,5
 trn $3,1
 lpb $0,1
-  mov $1,$3
-  sub $3,4
   sub $0,1
-  add $1,5
   trn $0,8
+  mov $1,$3
+  add $1,5
   sub $1,$0
   trn $0,3
+  sub $3,4
 lpe
 lpb $2,1
   add $1,5

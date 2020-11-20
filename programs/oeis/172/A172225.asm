@@ -3,12 +3,12 @@
 
 lpb $0,1
   add $2,$0
-  add $3,$2
   sub $0,1
+  add $3,$2
   add $4,$3
   add $1,$4
   sub $2,$2
-  add $3,4
   add $2,$0
+  add $3,4
 lpe
 mul $1,2

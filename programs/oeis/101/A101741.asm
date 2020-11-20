@@ -5,30 +5,28 @@ mov $7,$0
 add $0,2
 mov $5,$0
 mov $1,$5
-add $5,$1
 mov $2,$0
+add $5,$1
 lpb $2,1
   mov $4,3
   lpb $4,1
-    sub $5,1
     mov $1,1
-    add $5,1
     mov $2,$5
-    mov $6,6
     mov $0,$2
-    mov $5,80
     mod $4,2
+    mov $5,80
+    mov $6,6
   lpe
   lpb $5,1
+    add $1,3
     mov $3,1
     add $4,$0
-    add $1,3
     sub $5,1
   lpe
   lpb $6,1
     add $1,3
-    sub $6,$3
     sub $2,$2
+    sub $6,$3
   lpe
 lpe
 div $4,$1

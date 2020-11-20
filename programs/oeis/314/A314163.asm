@@ -10,12 +10,10 @@ add $0,1
 mov $5,$0
 mov $6,$5
 add $0,$6
-sub $1,$5
 div $0,5
+sub $1,$5
 lpb $1,1
-  add $0,1
   mov $1,1
-  sub $0,1
   sub $5,1
 lpe
 add $5,$0

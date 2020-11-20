@@ -8,12 +8,12 @@ mod $0,4
 mul $1,5
 add $2,4
 add $2,$1
-div $2,4
 sub $1,$1
+div $2,4
 lpb $0,1
+  trn $0,$2
   mov $1,1
   add $1,$2
-  trn $0,$2
 lpe
 div $1,4
 add $1,1

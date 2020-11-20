@@ -4,6 +4,6 @@
 mov $1,$0
 pow $1,8
 lpb $0,1
-  add $1,8
   sub $0,1
+  add $1,8
 lpe

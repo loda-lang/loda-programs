@@ -3,9 +3,8 @@
 
 mov $2,$0
 mod $0,2
-add $0,4
+add $0,1
 add $2,3
-sub $0,3
 lpb $2,1
   add $3,$0
   add $0,1

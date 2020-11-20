@@ -3,6 +3,6 @@
 
 mov $1,$0
 lpb $0,1
-  mul $1,2
   trn $0,2
+  mul $1,2
 lpe

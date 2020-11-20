@@ -3,13 +3,13 @@
 
 mul $0,50
 add $0,8
-mov $2,64
 div $0,9
+mov $2,64
 lpb $0,1
-  add $1,9
   sub $0,1
-  add $1,$2
   trn $0,7
+  add $1,9
+  add $1,$2
 lpe
 div $1,73
 add $1,1

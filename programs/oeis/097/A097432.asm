@@ -9,13 +9,13 @@ pow $4,2
 mov $0,$4
 add $0,4
 lpb $0,1
-  add $5,1
   add $2,1
+  add $5,1
   trn $0,$5
 lpe
 mod $2,$2
-mov $4,$5
 add $2,1
+mov $4,$5
 add $4,$2
 mov $1,$4
 sub $1,39

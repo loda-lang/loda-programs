@@ -3,8 +3,8 @@
 
 mov $2,$0
 mov $1,$2
-mul $2,5
 gcd $1,4
+mul $2,5
 add $1,$2
 sub $1,4
 div $1,2

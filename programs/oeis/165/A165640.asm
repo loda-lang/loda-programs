@@ -5,8 +5,8 @@ add $0,5
 mov $3,$0
 lpb $0,1
   trn $0,3
-  mov $2,$3
   add $1,1
-  trn $3,5
+  mov $2,$3
   trn $1,$2
+  trn $3,5
 lpe

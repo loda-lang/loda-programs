@@ -4,26 +4,26 @@
 mov $5,$0
 mov $6,$5
 add $6,9
-mov $3,$6
 mov $0,$6
+mov $3,$6
 add $3,1
 mul $6,$3
 mov $7,2
 lpb $0,1
+  sub $0,$0
   add $6,$7
   trn $4,$6
+  add $4,1
   mov $5,3
   sub $5,$6
-  add $4,1
+  mod $5,8
   mov $7,$4
   add $7,1
-  mod $5,8
-  sub $0,$0
   add $7,$5
   add $0,$7
+  div $0,3
   mov $5,$7
   mov $2,$5
-  div $0,3
   mov $6,12
 lpe
 mov $1,2

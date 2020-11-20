@@ -3,20 +3,20 @@
 
 mov $5,$0
 add $0,1
+mov $2,$0
 mov $3,$0
 add $3,$0
-mov $2,$0
 add $0,$3
 lpb $3,1
   lpb $2,1
-    add $4,$0
     sub $2,1
+    add $4,$0
   lpe
   mov $3,$2
   add $2,$4
   lpb $2,1
-    add $6,$4
     sub $2,1
+    add $6,$4
   lpe
 lpe
 mov $1,$6

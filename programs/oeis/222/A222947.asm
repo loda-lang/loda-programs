@@ -3,6 +3,8 @@
 
 mov $3,$0
 lpb $0,1
+  trn $0,8
+  mov $2,$3
   mov $5,$3
   mov $6,$5
   sub $6,3
@@ -10,12 +12,10 @@ lpb $0,1
   gcd $6,2
   mov $4,$6
   trn $5,3
-  trn $0,8
-  mov $2,$3
 lpe
-mov $6,$5
 add $2,$4
 add $2,2
+mov $6,$5
 add $2,$6
 add $2,2
 mov $1,$2

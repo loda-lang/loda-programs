@@ -10,26 +10,25 @@ mov $3,1
 mov $7,$0
 mov $0,1
 lpb $0,1
-  mov $6,$7
-  div $6,5
+  mov $0,0
+  mov $2,81
   mov $4,28
   add $4,$3
   mov $3,$7
-  mul $4,2
   mul $3,2
+  mul $4,2
+  mov $6,$7
+  div $6,5
   add $3,$6
-  mov $2,81
-  add $7,81
-  pow $4,2
   add $2,$3
+  pow $4,2
   div $4,2
-  add $7,2
+  add $7,83
   add $2,$7
   add $2,10
   sub $4,1
   mov $5,$2
   add $4,$5
-  mov $0,0
   div $4,22
 lpe
 mov $1,$4

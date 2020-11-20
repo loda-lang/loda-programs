@@ -5,8 +5,8 @@ mov $22,$0
 mov $24,$0
 lpb $24,1
   clr $0,22
-  sub $24,1
   mov $0,$22
+  sub $24,1
   sub $0,$24
   mov $1,$0
   lpb $0,1

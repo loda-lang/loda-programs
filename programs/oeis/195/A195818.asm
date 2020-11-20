@@ -6,8 +6,8 @@ mov $2,$0
 lpb $0,1
   sub $0,1
   mov $4,$2
-  sub $4,1
   add $2,2
+  sub $4,1
   mul $4,2
   sub $4,$0
   trn $0,1

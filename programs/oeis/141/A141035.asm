@@ -7,8 +7,8 @@ lpb $2,1
     sub $0,2
   lpe
   lpb $0,1
-    div $2,2
     div $0,10
+    div $2,2
   lpe
 lpe
 lpb $2,1

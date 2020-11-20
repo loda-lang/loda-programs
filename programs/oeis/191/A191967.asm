@@ -6,15 +6,15 @@ mov $4,$0
 mul $4,2
 add $0,$4
 sub $0,1
-mov $3,2
 add $2,$0
+mov $3,2
 lpb $0,1
-  mov $4,$2
   div $0,$3
+  mov $4,$2
   mul $4,$0
   pow $0,$1
-  add $4,6
   div $0,10
+  add $4,6
 lpe
 mov $1,$4
 sub $1,5

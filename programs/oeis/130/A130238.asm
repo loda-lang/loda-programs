@@ -5,16 +5,16 @@ mov $28,$0
 mov $30,$0
 lpb $30,1
   clr $0,28
-  sub $30,1
   mov $0,$28
+  sub $30,1
   sub $0,$30
-  mov $25,$0
   mov $10,$0
+  mov $25,$0
   lpb $0,1
     mul $0,5
     add $0,1
-    add $9,$10
     div $0,8
+    add $9,$10
   lpe
   mov $1,$9
   mov $26,$25

@@ -7,14 +7,14 @@ lpb $0,1
   lpb $0,1
     add $0,$2
     add $2,$0
-    add $4,$2
     sub $0,1
+    add $4,$2
   lpe
-  add $3,$4
   sub $0,1
+  add $3,$4
   lpb $2,1
-    add $5,$4
     sub $2,1
+    add $5,$4
   lpe
 lpe
 sub $5,$3

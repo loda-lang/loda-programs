@@ -3,10 +3,9 @@
 
 mov $2,1
 lpb $0,1
-  mov $2,$1
-  add $2,1
   sub $0,1
-  add $2,1
+  mov $2,$1
+  add $2,2
   add $0,$2
   mov $2,$0
   trn $0,4

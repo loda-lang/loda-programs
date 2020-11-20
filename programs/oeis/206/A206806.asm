@@ -6,15 +6,15 @@ mov $15,$0
 add $15,1
 lpb $15,1
   clr $0,13
-  sub $15,1
   mov $0,$13
+  sub $15,1
   sub $0,$15
   mov $10,$0
   mov $12,$0
   add $12,1
   lpb $12,1
-    sub $12,1
     mov $0,$10
+    sub $12,1
     sub $0,$12
     add $0,1
     mov $1,$0

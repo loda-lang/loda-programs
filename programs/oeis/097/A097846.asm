@@ -3,18 +3,18 @@
 
 lpb $0,1
   mov $2,$0
-  mod $2,10
   div $0,10
+  mod $2,10
   sub $2,1
   mov $4,$0
-  add $5,1
   sub $2,$4
   mul $2,2
   mov $0,$2
+  add $5,1
   mov $3,$5
-  mov $5,120259084288
   add $0,$3
   add $3,$0
+  mov $5,120259084288
 lpe
 mul $3,3
 mov $1,$3

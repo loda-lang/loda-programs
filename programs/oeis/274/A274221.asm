@@ -7,3 +7,21 @@ div $0,2
 pow $0,2
 div $0,4
 mov $1,$0
+sub $1,1
+lpb $0,1
+  mov $5,$0
+  sub $0,$5
+  div $1,2
+  add $1,$5
+  mov $3,1
+lpe
+mov $0,$1
+mov $2,$0
+mul $3,$2
+mul $2,$3
+mov $4,4
+add $4,$2
+div $4,2
+mov $1,$4
+sub $1,2
+div $1,2

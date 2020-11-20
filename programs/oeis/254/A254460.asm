@@ -7,13 +7,13 @@ pow $5,$0
 gcd $0,3
 mul $0,2
 lpb $0,1
-  mod $5,$0
   mov $3,1
+  mod $5,$0
   lpb $3,1
     mov $2,$5
     lpb $2,2
-      mul $3,$2
       mov $0,2
+      mul $3,$2
     lpe
     sub $0,1
   lpe

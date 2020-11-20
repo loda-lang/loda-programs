@@ -7,17 +7,17 @@ lpb $0,1
   mov $4,$0
   sub $4,18
   mov $1,$4
+  mov $2,$0
   trn $4,15
   sub $4,$1
-  mov $2,$0
   add $4,$2
   add $4,2
   trn $0,$4
   add $3,$0
   add $3,34
-  add $6,2
   mov $2,$3
   mov $4,$2
+  add $6,2
   add $6,$4
   div $6,5
   add $5,$6

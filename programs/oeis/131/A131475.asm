@@ -4,12 +4,12 @@
 mul $0,2
 sub $0,2
 lpb $0,1
-  add $3,4
   add $2,$0
+  trn $0,4
   add $2,4
   add $1,$2
-  trn $0,4
+  trn $1,4
+  add $3,4
   sub $2,$3
   add $2,$0
-  trn $1,4
 lpe

@@ -6,8 +6,8 @@ pow $2,2
 add $2,2
 mov $1,$2
 add $1,$2
-mov $3,$2
 pow $1,2
+mov $3,$2
 add $1,$3
 mul $1,2
 sub $1,36

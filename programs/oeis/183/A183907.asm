@@ -6,22 +6,21 @@ mov $10,$0
 add $10,1
 lpb $10,1
   clr $0,8
-  sub $10,1
   mov $0,$8
+  sub $10,1
   sub $0,$10
   mov $5,$0
   mov $7,$0
   add $7,1
   lpb $7,1
-    sub $7,1
     mov $0,$5
+    sub $7,1
     sub $0,$7
     mov $1,$0
     mov $3,$0
-    add $0,6
-    mul $1,$3
-    sub $0,1
+    add $0,5
     bin $0,2
+    mul $1,$3
     mul $1,$3
     lpb $0,1
       sub $0,3

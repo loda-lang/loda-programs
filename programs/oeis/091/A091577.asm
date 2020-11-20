@@ -12,8 +12,8 @@ add $4,16
 sub $4,$3
 mul $2,$4
 mov $0,$2
-mov $5,33
 mov $2,7
+mov $5,33
 lpb $0,1
   div $0,$2
   trn $2,$5

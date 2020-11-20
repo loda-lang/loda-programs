@@ -3,13 +3,13 @@
 
 mov $3,$0
 add $0,8
+mov $2,49
+mul $2,$0
 mov $4,3
 pow $4,$3
-mov $2,49
 mul $4,9
 mul $3,$4
 mul $3,49
-mul $2,$0
 add $2,$3
 mul $2,2
 mov $1,$2

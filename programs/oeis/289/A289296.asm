@@ -7,9 +7,9 @@ mul $5,2
 sub $5,1
 mov $6,2
 lpb $2,6
-  sub $4,$6
   add $0,$5
   sub $0,1
+  sub $4,$6
   trn $7,$4
 lpe
 sub $0,1

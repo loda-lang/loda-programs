@@ -5,8 +5,8 @@ lpb $0,1
   gcd $3,3
   lpb $0,1
     mul $3,$0
-    mod $3,2
     div $0,2
+    mod $3,2
     add $2,$3
     add $3,1
   lpe

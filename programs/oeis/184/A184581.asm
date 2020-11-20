@@ -3,8 +3,8 @@
 
 mov $5,$0
 add $0,26
-mov $6,$0
 mov $2,$0
+mov $6,$0
 lpb $2,1
   mov $1,1
   pow $6,2

@@ -7,18 +7,18 @@ lpb $2,1
   mov $4,$5
   lpb $4,1
     mov $1,2
-    mov $2,$4
-    sub $4,$2
     pow $1,$0
     add $0,5
     mul $1,2
+    mov $2,$4
+    sub $4,$2
   lpe
   mod $0,2
-  sub $2,$2
-  mov $4,$1
   add $0,3
   mul $0,3
+  sub $2,$2
   fac $3
+  mov $4,$1
   sub $4,$3
   mul $4,$0
 lpe

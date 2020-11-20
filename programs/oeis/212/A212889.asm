@@ -6,8 +6,8 @@ mov $11,$0
 add $11,1
 lpb $11,1
   clr $0,9
-  sub $11,1
   mov $0,$9
+  sub $11,1
   sub $0,$11
   add $0,2
   div $0,2
@@ -17,12 +17,12 @@ lpb $11,1
   mov $5,$0
   sub $4,$5
   lpb $0,1
+    mov $0,1
     mov $1,$3
     pow $4,3
     add $1,$4
     mul $1,2
     add $1,1
-    mov $0,1
     mov $5,2
   lpe
   sub $5,$1

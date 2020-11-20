@@ -4,9 +4,9 @@
 mov $2,$0
 div $0,2
 add $0,1
+fac $0
 sub $2,1
 gcd $2,2
-fac $0
 mov $1,$2
 mul $1,$0
 sub $1,2

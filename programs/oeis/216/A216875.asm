@@ -4,8 +4,8 @@
 mov $2,$0
 sub $0,2
 pow $0,2
-sub $2,5
 sub $0,5
+sub $2,5
 gcd $2,2
 pow $2,2
 add $0,$2

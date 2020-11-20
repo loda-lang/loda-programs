@@ -5,9 +5,9 @@ mov $2,$0
 mov $3,$2
 pow $3,4
 add $3,11
-mov $4,$0
 sub $3,$0
 add $3,1
+mov $4,$0
 pow $4,3
 sub $3,$4
 mov $1,$3

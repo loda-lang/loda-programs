@@ -7,13 +7,13 @@ lpb $0,1
   sub $1,2
   sub $0,$1
   mov $2,$0
-  mod $2,10
   div $0,10
-  sub $4,10
+  mod $2,10
   sub $2,$0
+  mov $0,$2
+  sub $4,10
   mul $4,$3
   mul $4,6
-  mov $0,$2
 lpe
 mul $4,$2
 sub $4,1

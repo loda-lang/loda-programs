@@ -3,19 +3,19 @@
 
 mov $3,$0
 add $3,1
+mov $4,$3
 mov $5,$0
 mod $5,6
-mov $4,$3
 mov $0,$5
-sub $4,3
-mov $2,2
 mul $0,2
 div $0,2
+mov $2,2
+sub $4,3
 add $2,$4
 add $2,$0
 lpb $0,1
-  sub $2,3
   mov $0,2
+  sub $2,3
   mov $3,$2
   add $0,$3
   sub $2,2

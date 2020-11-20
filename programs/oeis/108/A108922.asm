@@ -3,11 +3,8 @@
 
 add $0,1
 lpb $0,1
-  add $2,5
-  add $0,2
-  add $2,7
-  sub $0,10
-  sub $2,4
+  sub $0,8
+  add $2,8
   trn $0,$2
   add $0,$2
 lpe

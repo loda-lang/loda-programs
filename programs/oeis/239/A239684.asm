@@ -5,9 +5,9 @@ pow $0,4
 lpb $0,1
   add $4,8
   add $4,$0
+  mov $0,$3
   mov $2,$4
   log $2,10
-  mov $0,$3
   mul $2,4
 lpe
 mov $1,$2

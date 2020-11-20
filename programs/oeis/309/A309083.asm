@@ -3,12 +3,12 @@
 
 mov $5,$0
 mov $2,$5
+mov $3,40320
 mov $7,1
 add $7,$2
 mov $6,$7
 div $6,8
 mov $4,$6
-mov $3,40320
 mov $0,$4
 div $0,2
 sub $3,$0

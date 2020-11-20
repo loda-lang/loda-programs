@@ -6,9 +6,9 @@ mov $0,2
 mov $4,$3
 add $4,1
 lpb $0,1
+  mov $0,1
   mul $4,2
   mov $1,$4
-  mov $0,1
   bin $1,3
   pow $1,2
   mov $2,24

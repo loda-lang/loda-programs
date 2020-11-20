@@ -9,8 +9,8 @@ lpe
 add $3,2
 mov $2,$3
 sub $2,1
-mov $4,$3
 mul $2,2
+mov $4,$3
 div $4,$4
 mov $1,$4
 bin $2,2

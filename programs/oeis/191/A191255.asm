@@ -6,10 +6,10 @@ mul $0,2
 gcd $0,262144
 lpb $0,1
   lpb $0,1
-    add $2,54
     mul $0,9
     add $0,1
     mod $0,7
+    add $2,54
   lpe
 lpe
 mov $1,$2

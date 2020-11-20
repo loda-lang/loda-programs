@@ -6,8 +6,8 @@ mov $9,$0
 add $9,1
 lpb $9,1
   clr $0,7
-  sub $9,1
   mov $0,$7
+  sub $9,1
   sub $0,$9
   add $3,$0
   lpb $0,1
@@ -15,9 +15,9 @@ lpb $9,1
     bin $0,2
     lpb $1,1
       add $0,1
-      mov $3,1
       gcd $0,4
       mov $1,2
+      mov $3,1
     lpe
     mul $3,$1
   lpe

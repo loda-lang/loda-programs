@@ -6,41 +6,40 @@ mov $16,$0
 add $16,1
 lpb $16,1
   clr $0,14
-  sub $16,1
   mov $0,$14
+  sub $16,1
   sub $0,$16
   mov $11,$0
   mov $13,$0
   add $13,1
   lpb $13,1
     clr $0,11
-    sub $13,1
     mov $0,$11
+    sub $13,1
     sub $0,$13
     add $2,1
     sub $0,$2
-    sub $0,1
+    add $0,2
     add $8,2
-    add $0,3
     sub $1,$8
-    mov $6,1
+    mov $4,1
     trn $5,$8
     add $5,1
-    mov $4,1
+    mov $6,1
     lpb $0,1
+      sub $0,1
       add $4,$5
+      sub $0,$4
       mov $5,2
       sub $5,$1
-      sub $0,1
-      sub $0,$4
     lpe
     cmp $1,2
     mov $9,1
     bin $9,$0
     sub $1,$9
+    add $6,2
     mov $7,$1
     add $7,6
-    add $6,2
     add $7,$6
     mov $1,$7
     sub $1,7

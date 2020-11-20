@@ -3,11 +3,11 @@
 
 lpb $0,8
   div $0,2
+  mul $0,2
+  sub $0,1
   sub $2,1
   bin $2,6
   add $3,1
-  mul $0,2
-  sub $0,1
 lpe
 mul $3,$0
 mov $1,$3

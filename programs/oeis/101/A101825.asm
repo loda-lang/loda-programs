@@ -3,8 +3,8 @@
 
 sub $0,1
 mod $0,3
-mov $4,2
 mov $1,$0
+mov $4,2
 bin $4,$1
 mov $3,$4
 mov $2,$3

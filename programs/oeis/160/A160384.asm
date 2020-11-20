@@ -4,8 +4,8 @@
 lpb $0,1
   lpb $0,1
     div $0,3
-    add $2,1
     mul $0,3
+    add $2,1
   lpe
   div $0,3
 lpe

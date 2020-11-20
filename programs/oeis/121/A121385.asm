@@ -5,28 +5,28 @@ mov $10,$0
 mov $12,$0
 lpb $12,1
   clr $0,10
-  sub $12,1
   mov $0,$10
+  sub $12,1
   sub $0,$12
   mov $2,$0
   lpb $2,1
     mov $1,2
     sub $2,1
     lpb $0,9
-      mov $4,$0
-      mov $2,2
-      add $2,$4
       mov $1,3
+      mov $2,2
+      mov $4,$0
+      add $2,$4
       add $2,1
-      div $4,10
       add $1,$2
-      sub $2,2
       div $1,2
+      sub $2,2
+      div $4,10
     lpe
     add $2,$4
     mov $4,$2
-    div $2,2
     sub $0,$4
+    div $2,2
     sub $4,$2
   lpe
   lpb $2,1

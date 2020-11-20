@@ -8,10 +8,10 @@ sub $2,$0
 mul $2,2
 mul $0,$2
 add $0,1
-add $2,2
 pow $0,2
-div $2,2
 mov $1,3
+add $2,2
+div $2,2
 mul $2,$0
 add $2,1
 mul $2,2

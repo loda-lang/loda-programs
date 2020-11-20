@@ -4,8 +4,8 @@
 mov $1,$0
 mov $2,$1
 add $1,1
-div $2,10
 mul $1,2
+div $2,10
 add $2,1
 mul $2,$1
 mov $1,$2

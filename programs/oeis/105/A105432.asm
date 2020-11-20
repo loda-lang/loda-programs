@@ -6,20 +6,20 @@ mul $0,2
 mov $7,2
 mul $7,$0
 mov $1,$7
-mov $2,$7
 div $1,2
+mov $2,$7
 sub $2,2
 add $1,$2
-sub $2,1
 add $1,4
+sub $2,1
 sub $7,$2
 sub $0,$7
 trn $3,$0
 add $3,$1
 lpb $0,1
-  add $7,$3
-  mul $1,2
   mov $0,-5
+  mul $1,2
+  add $7,$3
   add $1,$7
   mul $1,2
 lpe

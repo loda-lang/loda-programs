@@ -7,9 +7,9 @@ mov $2,$0
 sub $2,1
 lpb $0,1
   sub $0,$0
+  sub $0,2
   sub $2,3
   mul $2,3
-  sub $0,2
   sub $2,$0
   div $2,169
 lpe

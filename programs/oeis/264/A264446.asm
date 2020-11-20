@@ -7,12 +7,12 @@ lpb $2,4
   mod $4,2
   add $4,$1
 lpe
-mov $6,4
 mov $2,5
+mov $6,4
 lpb $5,6
   mul $2,$4
-  sub $6,1
   add $4,5
+  sub $6,1
 lpe
 mov $1,$2
 div $1,120

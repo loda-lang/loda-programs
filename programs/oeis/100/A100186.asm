@@ -6,20 +6,19 @@ mul $0,2
 mov $1,$0
 mov $6,$1
 lpb $0,1
-  add $3,$0
-  add $4,$3
   trn $2,5
-  sub $0,1
+  add $3,$0
+  sub $0,2
   add $1,3
+  add $4,$3
   add $4,$6
   add $1,$4
   add $2,$4
+  add $1,$2
+  mov $2,4
+  sub $3,$3
   add $4,3
   add $6,1
-  sub $0,1
-  add $1,$2
-  sub $3,$3
-  mov $2,4
 lpe
 add $1,5
 lpb $5,1

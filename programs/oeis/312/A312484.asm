@@ -9,11 +9,10 @@ mov $1,$0
 add $0,2
 sub $1,2
 lpb $0,1
-  sub $0,6
-  trn $1,2
-  sub $0,1
-  add $1,4
+  sub $0,7
   trn $0,2
+  trn $1,2
+  add $1,4
 lpe
 lpb $2,1
   add $1,2

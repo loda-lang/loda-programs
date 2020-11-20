@@ -5,10 +5,10 @@ pow $0,2
 trn $0,4
 mov $2,8
 lpb $0,1
-  add $2,16
-  trn $1,$2
   sub $0,1
+  add $2,16
   trn $0,$2
+  trn $1,$2
   add $1,1
   add $0,$1
 lpe

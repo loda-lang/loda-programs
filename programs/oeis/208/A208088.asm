@@ -4,21 +4,21 @@
 add $0,3
 mov $4,6
 lpb $0,1
+  sub $0,1
   mov $5,$4
   sub $5,5
   trn $2,$5
   add $4,$2
-  sub $0,1
+  add $2,5
   add $5,5
   mul $5,2
-  add $2,5
   add $2,$5
   add $2,2
 lpe
+add $1,1
 sub $4,4
 mov $3,$4
 add $4,$3
 add $4,1
-add $1,1
 add $1,$4
 add $1,30

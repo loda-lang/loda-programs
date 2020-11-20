@@ -5,19 +5,19 @@ mov $14,$0
 mov $16,$0
 lpb $16,1
   clr $0,14
-  sub $16,1
   mov $0,$14
+  sub $16,1
   sub $0,$16
   mov $11,$0
   mov $13,$0
   lpb $13,1
-    sub $13,1
     mov $0,$11
+    sub $13,1
     sub $0,$13
     mov $6,$0
     mul $0,3
-    trn $6,2
     sub $0,1
+    trn $6,2
     add $6,$0
     mod $0,9
     lpb $0,1

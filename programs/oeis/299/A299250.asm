@@ -14,14 +14,14 @@ lpb $3,1
   add $4,$1
   add $5,$4
   lpb $5,1
-    add $4,1
-    mov $3,2
     add $1,2
+    mov $3,2
+    add $4,1
     trn $5,2
   lpe
   lpb $4,1
-    trn $4,$3
     add $1,6
+    trn $4,$3
   lpe
 lpe
 sub $1,45

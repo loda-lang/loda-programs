@@ -4,11 +4,11 @@
 pow $0,2
 mov $3,$0
 add $0,1
-mov $4,$0
 mov $2,$3
 div $2,2
-mov $5,$4
 mul $2,4
+mov $4,$0
+mov $5,$4
 add $5,$2
 mov $1,$5
 sub $1,1

@@ -4,8 +4,8 @@
 mov $4,$0
 gcd $0,2
 mov $3,$0
-add $3,$4
 trn $0,2
+add $3,$4
 sub $4,2
 lpb $3,1
   add $0,6

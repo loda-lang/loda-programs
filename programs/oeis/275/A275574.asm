@@ -3,27 +3,27 @@
 
 add $0,2
 mov $4,$0
-div $4,2
 sub $0,1
 mov $1,1
+div $4,2
 pow $0,$4
 mov $2,$0
-mov $4,$2
 mov $0,730
+mov $4,$2
 add $4,730
 lpb $0,1
   add $0,4
+  add $1,1
   mov $3,$4
   add $3,$0
-  add $1,1
   mov $0,5
   mov $4,$3
-  add $4,$1
   mov $3,14
+  add $4,$1
 lpe
+add $0,16
 sub $4,$3
 div $4,2
-add $0,16
 add $0,$4
 mov $1,$0
 sub $1,747

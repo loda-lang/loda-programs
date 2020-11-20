@@ -6,6 +6,6 @@ lpb $0,1
   add $1,$0
   trn $1,4
   add $1,$0
-  add $1,2
   trn $0,4
+  add $1,2
 lpe

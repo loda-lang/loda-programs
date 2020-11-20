@@ -4,35 +4,35 @@
 mov $3,$0
 mov $4,2
 lpb $4,1
-  sub $4,1
   mov $0,$3
+  sub $4,1
   add $0,$4
   sub $0,1
   mov $5,$0
   sub $0,1
+  trn $0,2
   trn $5,2
   add $5,1
-  trn $0,2
   lpb $0,1
-    add $5,2
-    mov $7,0
-    bin $5,3
-    mov $8,$5
-    add $8,2
     mov $0,0
-    add $7,$8
+    add $5,2
+    bin $5,3
+    mov $7,0
+    mov $8,$5
     mov $5,1
+    add $8,2
+    add $7,$8
     add $5,$7
   lpe
   mov $1,$5
   mov $2,$4
   lpb $2,1
-    mov $6,$1
     sub $2,1
+    mov $6,$1
   lpe
 lpe
 lpb $3,1
-  sub $6,$1
   mov $3,0
+  sub $6,$1
 lpe
 mov $1,$6

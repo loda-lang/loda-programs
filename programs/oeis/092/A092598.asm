@@ -3,18 +3,18 @@
 
 mov $5,$0
 add $0,5
-mov $3,$0
 mov $2,$0
-mov $4,42
 add $2,42
-add $3,1
-sub $4,$3
+mov $3,$0
 mov $0,1
+add $3,1
+mov $4,42
+sub $4,$3
 lpb $0,1
+  sub $0,1
   add $2,4
   add $4,2
   div $2,$4
-  sub $0,1
 lpe
 pow $2,2
 add $2,1

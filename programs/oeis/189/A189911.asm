@@ -4,10 +4,10 @@
 mov $4,$0
 div $0,2
 mov $2,$4
-bin $4,$0
 add $2,1
 sub $2,$0
 mov $3,$2
+bin $4,$0
 mul $4,$3
 mul $4,5
 mov $1,$4

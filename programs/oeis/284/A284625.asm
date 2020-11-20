@@ -3,16 +3,15 @@
 
 mov $2,$0
 add $0,1
-add $2,3
 pow $0,2
+add $2,3
 lpb $0,1
   add $0,1
-  add $2,1
   mov $1,$0
-  add $1,2
-  add $2,1
-  trn $1,$2
   mov $0,0
+  add $1,2
+  add $2,2
+  trn $1,$2
   add $0,$1
 lpe
 mov $1,$2

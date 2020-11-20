@@ -8,9 +8,8 @@ lpb $0,1
   mul $1,2
   add $1,1
   mul $1,2
-  add $2,6
   add $1,$0
-  sub $2,2
+  add $2,4
   sub $1,$2
   add $2,1
 lpe

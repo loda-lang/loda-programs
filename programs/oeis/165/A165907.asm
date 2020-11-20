@@ -6,24 +6,23 @@ mov $4,2
 lpb $2,1
   lpb $4,1
     mul $0,2
+    add $0,$2
     trn $4,8
     mov $5,6
-    add $0,$2
   lpe
-  mov $3,9
   trn $2,9
+  mov $3,9
   lpb $5,1
     div $0,7
     add $2,5
-    sub $5,$3
     mod $2,8
+    sub $5,$3
   lpe
-  mov $3,$2
   mul $0,2
+  mov $3,$2
   lpb $3,1
-    add $0,1
+    add $0,2
     sub $3,$3
-    add $0,1
   lpe
   mov $2,0
 lpe

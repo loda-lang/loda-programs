@@ -14,38 +14,38 @@ lpb $6,1
   sub $6,1
 lpe
 mov $4,$5
-mov $6,$3
 mov $5,0
+mov $6,$3
 lpb $6,1
   add $5,$4
   sub $6,1
 lpe
-mov $4,$5
 mov $2,1
+mov $4,$5
 lpb $2,1
   add $1,$4
   sub $2,1
 lpe
-mov $6,$3
 mov $5,0
+mov $6,$3
 lpb $6,1
   add $5,$4
   sub $6,1
 lpe
-mov $4,$5
 mov $2,1
+mov $4,$5
 lpb $2,1
   add $1,$4
   sub $2,1
 lpe
-mov $6,$3
 mov $5,0
+mov $6,$3
 lpb $6,1
   add $5,$4
   sub $6,1
 lpe
-mov $4,$5
 mov $2,1
+mov $4,$5
 lpb $2,1
   add $1,$4
   sub $2,1

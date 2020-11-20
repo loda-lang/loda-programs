@@ -3,15 +3,14 @@
 
 mov $3,$0
 lpb $0,1
-  add $5,1
   sub $0,1
-  add $5,1
+  add $5,2
   sub $0,$5
   sub $0,6
-  mov $5,$2
-  mov $4,$0
   add $1,2
+  mov $4,$0
   trn $0,1
+  mov $5,$2
 lpe
 add $0,2
 trn $1,$0

@@ -10,19 +10,19 @@ mul $3,$0
 mov $1,$3
 add $1,2
 mul $1,3
-mov $7,$6
 mov $2,1
+mov $7,$6
 lpb $2,1
   add $1,$7
   sub $2,1
 lpe
 mov $4,$6
 lpb $4,1
-  add $5,$7
   sub $4,1
+  add $5,$7
 lpe
-mov $7,$5
 mov $2,27
+mov $7,$5
 lpb $2,1
   add $1,$7
   sub $2,1

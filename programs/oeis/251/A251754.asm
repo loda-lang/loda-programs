@@ -4,23 +4,23 @@
 mov $1,$0
 add $0,$1
 sub $0,$1
-mul $1,4
 add $0,5
+mul $1,4
 mov $2,$0
 add $0,8
 add $0,$2
+add $1,1
 mov $4,$0
 mul $4,$0
-mov $6,1
-add $1,1
 mul $1,$4
-mul $6,$1
 mov $5,2
-add $5,$6
+mov $6,1
+mul $6,$1
 mov $1,2
+add $5,$6
 lpb $0,1
-  add $1,7
   mov $0,1
+  add $1,7
   mov $3,$1
 lpe
 mod $5,$3

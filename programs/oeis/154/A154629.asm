@@ -5,14 +5,12 @@ add $0,64
 mul $0,2
 mov $4,5
 lpb $0,1
-  sub $4,1
   mov $2,$0
   pow $2,2
-  mov $5,1
-  add $4,1
   mov $3,$2
-  mov $6,$3
+  mov $5,1
   add $5,$2
+  mov $6,$3
   trn $0,$6
   sub $5,$4
   gcd $5,18

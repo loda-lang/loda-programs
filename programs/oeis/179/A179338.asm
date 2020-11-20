@@ -4,8 +4,8 @@
 mov $2,$0
 mul $2,2
 lpb $0,1
-  add $2,7
   trn $0,2
+  add $2,7
 lpe
 add $2,1
 pow $2,2

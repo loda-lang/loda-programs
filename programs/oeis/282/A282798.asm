@@ -7,11 +7,11 @@ sub $4,$0
 add $4,$0
 pow $4,$0
 lpb $0,1
-  mov $3,$4
   gcd $0,2
-  sub $3,1
-  add $2,$4
   div $0,2
+  add $2,$4
+  mov $3,$4
+  sub $3,1
   sub $2,$3
   add $3,$2
   add $2,$3

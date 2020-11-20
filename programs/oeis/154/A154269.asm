@@ -10,8 +10,8 @@ sub $0,$3
 add $0,1
 mov $2,-2
 lpb $0,1
-  div $3,$2
   div $0,2
+  div $3,$2
 lpe
 sub $3,2
 mov $0,$3

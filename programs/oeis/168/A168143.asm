@@ -5,23 +5,23 @@ mov $11,$0
 mov $13,$0
 add $13,1
 lpb $13,1
-  sub $13,1
   mov $0,$11
+  sub $13,1
   sub $0,$13
   mov $7,$0
   mov $9,2
   lpb $9,1
-    sub $9,1
     mov $0,$7
+    sub $9,1
     add $0,$9
     trn $0,1
-    mov $6,2
     add $0,2
     log $0,2
+    mov $6,2
     pow $6,$0
     mov $0,$6
-    mov $5,$6
     mov $3,81
+    mov $5,$6
     lpb $0,1
       mov $0,$3
       mov $5,$3
@@ -36,8 +36,8 @@ lpb $13,1
     lpe
   lpe
   lpb $7,1
-    trn $8,$1
     mov $7,0
+    trn $8,$1
   lpe
   mov $1,$8
   div $1,2

@@ -9,15 +9,15 @@ lpb $0,1
   add $6,4
   mov $1,$6
   add $1,$6
-  add $6,$1
   mov $4,$1
+  add $6,$1
   add $6,2
   sub $0,$6
   add $0,3
   sub $4,1
-  sub $6,2
   add $0,$4
   div $4,2
+  sub $6,2
   mul $6,2
 lpe
 mov $1,$4

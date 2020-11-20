@@ -4,8 +4,8 @@
 mov $4,$0
 mul $4,6
 mov $2,$4
-mov $3,13
 mov $1,$2
+mov $3,13
 gcd $3,$4
 div $1,$3
 div $1,6

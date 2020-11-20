@@ -6,31 +6,31 @@ mov $28,$0
 add $28,1
 lpb $28,1
   clr $0,26
-  sub $28,1
   mov $0,$26
+  sub $28,1
   sub $0,$28
   mov $23,$0
   mov $25,$0
   add $25,1
   lpb $25,1
     clr $0,23
-    sub $25,1
     mov $0,$23
+    sub $25,1
     sub $0,$25
     mov $20,$0
     mov $22,$0
     add $22,1
     lpb $22,1
-      sub $22,1
       mov $0,$20
+      sub $22,1
       sub $0,$22
       mov $6,5
       bin $6,$0
       mov $0,3
       add $0,$6
       mov $2,2401
-      mov $5,7
       add $2,$0
+      mov $5,7
       add $5,$2
       mov $2,$5
       mov $1,$2

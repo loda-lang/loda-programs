@@ -3,9 +3,9 @@
 
 mov $2,3
 lpb $0,1
+  sub $0,1
   add $3,$2
   add $3,3
-  sub $0,1
   add $2,$3
 lpe
 mul $2,4

@@ -3,36 +3,36 @@
 
 mov $2,1
 add $2,$0
-mov $3,$2
-mov $8,$3
-sub $8,1
-mov $6,1
 mul $0,5
-mov $2,1
 sub $0,1
+mov $3,$2
+mov $2,1
 add $2,$0
-mov $7,$8
 mul $2,2
-sub $6,$0
 sub $2,9
-add $8,$2
-mov $3,2
+mov $6,1
+sub $6,$0
 add $0,4
+mov $8,$3
+mov $3,2
+sub $8,1
+mov $7,$8
+add $8,$2
 sub $2,1
-add $6,$0
 add $2,$8
-mov $5,1
 sub $2,4
+mov $5,1
+add $6,$0
 lpb $0,1
   mov $1,$6
-  mov $9,$1
-  sub $9,$3
   sub $2,$1
-  mul $7,2
   add $5,$2
   add $5,1
+  mul $7,2
   mul $5,$7
   add $5,5
+  mov $9,$1
+  sub $9,$3
   mov $0,$9
   sub $0,1
   add $5,1

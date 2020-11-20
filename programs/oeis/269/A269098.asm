@@ -7,13 +7,13 @@ add $5,$4
 mov $2,$5
 mov $6,$0
 mod $0,3
-mov $3,$6
 add $2,$0
+mov $3,$6
 lpb $0,1
-  mul $3,2
-  mov $2,2
-  mul $2,$3
   mov $0,1
+  mov $2,2
+  mul $3,2
+  mul $2,$3
 lpe
 mov $1,$2
 div $1,3

@@ -8,14 +8,12 @@ lpb $0,1
   sub $0,1
   add $1,5
 lpe
-add $1,1
-add $5,6
 add $0,4
+add $1,5
 add $4,$0
-add $5,3
 add $4,2
+add $5,9
 mul $4,$5
-add $1,4
 sub $4,1
 div $1,$4
 add $1,4

@@ -8,6 +8,6 @@ lpb $2,1
   trn $0,1
   trn $1,$0
   add $1,1
-  mov $3,2
   trn $2,2
+  mov $3,2
 lpe

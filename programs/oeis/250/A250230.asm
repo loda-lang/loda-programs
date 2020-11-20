@@ -4,10 +4,8 @@
 mov $1,$0
 mov $4,2
 add $4,$0
-add $1,1
 add $4,$0
 add $4,4
-sub $1,1
 add $0,$4
 mov $3,1
 lpb $0,1
@@ -15,11 +13,11 @@ lpb $0,1
   add $1,$2
   mov $4,$3
   add $1,$4
-  mov $3,$0
   add $1,1
+  mov $3,$0
   sub $0,1
-  trn $3,4
   trn $0,1
   add $1,1
+  trn $3,4
 lpe
 sub $1,4

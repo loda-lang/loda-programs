@@ -8,14 +8,13 @@ mov $4,$1
 add $1,2
 add $3,$1
 add $3,1
-mov $5,$2
-sub $5,1
 mul $4,2
-add $5,2
 add $3,$4
 sub $3,6
 bin $4,2
 mul $4,$3
+mov $5,$2
+add $5,1
 mul $4,$5
 mov $1,$4
 div $1,2

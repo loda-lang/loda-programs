@@ -3,12 +3,12 @@
 
 mov $1,$0
 bin $0,2
-mov $4,$0
 pow $1,3
+bin $1,2
+mov $4,$0
 mul $4,2
 mov $2,$4
 sub $2,$0
-bin $1,2
 mov $4,$1
 mov $3,$4
 sub $3,$2

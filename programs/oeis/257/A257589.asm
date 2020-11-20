@@ -6,8 +6,8 @@ add $2,1
 add $0,$2
 mov $3,$0
 bin $0,$2
-mul $3,$0
 mov $2,1
+mul $3,$0
 add $2,$3
 mov $1,$2
 sub $1,1

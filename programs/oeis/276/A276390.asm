@@ -4,11 +4,11 @@
 add $0,1
 mov $3,11
 lpb $0,1
-  mul $3,4
   mod $2,2
   add $2,$0
   div $0,2
   gcd $0,$2
+  mul $3,4
 lpe
 mov $1,$3
 div $1,33

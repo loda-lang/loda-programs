@@ -6,9 +6,8 @@ mov $2,-1
 mul $2,$1
 mov $0,$2
 add $0,1
-div $1,-1
+div $1,-3
 mov $4,2
-div $1,3
 mul $4,$1
 mul $4,$0
 mov $3,$4

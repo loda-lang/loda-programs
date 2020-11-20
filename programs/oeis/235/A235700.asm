@@ -5,14 +5,14 @@ add $0,9
 lpb $0,1
   mov $1,$3
   sub $1,1
-  add $4,4
   trn $1,1
-  trn $4,$0
   mov $3,$0
+  add $4,4
+  trn $4,$0
   trn $0,3
-  add $4,$0
   mov $2,$3
   sub $3,4
+  add $4,$0
   trn $0,1
 lpe
 mul $4,2

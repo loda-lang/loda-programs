@@ -7,7 +7,7 @@ mov $3,$2
 pow $3,2
 sub $3,25
 lpb $0,1
-  gcd $3,12
   sub $0,1
+  gcd $3,12
 lpe
 mov $1,$3

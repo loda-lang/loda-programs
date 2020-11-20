@@ -3,9 +3,9 @@
 
 mul $0,7
 div $0,4
+mov $1,7
 mov $2,5
 mul $2,$0
 div $2,7
-mov $1,7
 mul $1,$2
 div $1,7

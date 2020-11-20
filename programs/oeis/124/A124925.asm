@@ -3,8 +3,8 @@
 
 add $0,5
 lpb $0,1
-  add $2,1
   sub $0,3
+  add $2,1
 lpe
 add $0,1
 bin $2,$0

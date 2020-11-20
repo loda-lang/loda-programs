@@ -5,10 +5,10 @@ mov $2,$0
 mul $0,$2
 add $0,1
 mod $0,3
-mov $3,1
 add $0,1
 mul $0,2
 add $2,$0
+mov $3,1
 add $3,$2
 add $2,$3
 mov $1,$2

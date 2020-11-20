@@ -16,14 +16,14 @@ lpb $5,1
   mul $5,2
   lpb $5,1
     add $0,$4
-    sub $5,$3
     add $4,1
+    sub $5,$3
   lpe
   lpb $0,1
-    add $4,2
     trn $1,2
     add $1,$2
     add $1,1
+    add $4,2
     trn $0,$4
     mov $2,2
   lpe

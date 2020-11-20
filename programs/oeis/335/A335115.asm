@@ -3,10 +3,10 @@
 
 lpb $0,1
   mov $1,$0
-  div $1,2
   gcd $0,2
   bin $0,2
   sub $0,1
+  div $1,2
   mul $0,$1
   add $2,$1
 lpe

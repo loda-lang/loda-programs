@@ -4,7 +4,7 @@
 lpb $0,1
   mul $0,6
   sub $0,1
-  add $1,1
   div $0,8
+  add $1,1
 lpe
 add $1,1

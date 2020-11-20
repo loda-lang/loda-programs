@@ -3,10 +3,10 @@
 
 pow $0,2
 sub $0,2
+mov $2,3
 mov $3,$0
 add $3,1
 mul $3,4
-mov $2,3
 add $2,$3
 mul $3,$2
 mul $2,$3

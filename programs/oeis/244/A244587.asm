@@ -5,9 +5,9 @@ mov $2,$0
 div $2,2
 mov $3,$2
 div $2,2
-add $3,1
 mul $2,2
 mod $2,4
+add $3,1
 sub $3,$2
 gcd $1,$3
 sub $1,1

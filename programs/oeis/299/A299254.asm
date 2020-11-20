@@ -7,9 +7,9 @@ pow $0,2
 lpb $0,1
   pow $1,$3
   mul $1,$0
+  gcd $0,1
   add $1,7
   div $1,5
-  gcd $0,1
 lpe
 add $1,1
 mov $5,$4

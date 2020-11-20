@@ -3,21 +3,21 @@
 
 mov $7,$0
 trn $0,2
-mov $5,5
-mov $4,$0
 mov $1,1
-mov $9,17
-mov $6,-14
+mov $4,$0
 mul $0,$4
+mov $5,5
+mov $6,-14
+mov $9,17
 lpb $0,1
-  sub $9,5
-  mul $9,$6
   mul $0,5
   sub $1,$0
+  mov $0,1
+  sub $9,5
+  mul $9,$6
   sub $9,$5
   mov $2,$9
   div $1,$2
-  mov $0,1
 lpe
 mov $8,$7
 mov $3,$8

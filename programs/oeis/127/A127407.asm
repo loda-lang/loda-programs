@@ -4,10 +4,10 @@
 add $0,2
 mov $3,1
 lpb $0,1
-  add $3,2
+  sub $0,1
   add $1,$2
+  add $3,2
   add $4,$3
   add $2,$4
   add $4,1
-  sub $0,1
 lpe

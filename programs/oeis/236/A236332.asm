@@ -3,10 +3,10 @@
 
 add $0,1
 mov $2,$0
-mov $3,$0
 pow $2,7
-pow $3,3
 gcd $2,8
+mov $3,$0
+pow $3,3
 add $3,$2
 mov $1,$3
 sub $1,2

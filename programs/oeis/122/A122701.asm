@@ -4,25 +4,25 @@
 mov $7,$0
 mov $9,$0
 lpb $9,1
-  sub $9,1
   mov $0,$7
+  sub $9,1
   sub $0,$9
-  mov $3,16
   add $0,1
   mov $2,$0
+  mov $3,16
   lpb $2,1
-    mov $5,$0
     gcd $3,$0
     mov $2,$3
     mov $4,$2
+    mov $5,$0
     mov $6,1
     lpb $5,1
       mov $5,$4
       mul $5,2
     lpe
     lpb $6,1
-      sub $6,$6
       add $5,2
+      sub $6,$6
     lpe
     sub $2,$2
   lpe

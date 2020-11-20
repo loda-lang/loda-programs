@@ -5,16 +5,19 @@ mov $5,$0
 mov $6,$0
 add $6,1
 lpb $6,1
-  sub $6,1
   mov $0,$5
+  sub $6,1
   sub $0,$6
-  mov $4,$0
-  mov $10,$4
   mov $2,2
-  add $4,1
+  mov $4,$0
   mul $0,2
+  mov $10,$4
+  add $4,1
   pow $4,2
   lpb $0,1
+    gcd $0,2
+    sub $0,1
+    pow $0,$0
     mov $7,$4
     mov $8,$7
     add $10,$8
@@ -22,9 +25,6 @@ lpb $6,1
     mov $7,$3
     mov $2,$7
     pow $2,2
-    gcd $0,2
-    sub $0,1
-    pow $0,$0
   lpe
   mov $1,$2
   add $9,$1

@@ -6,19 +6,19 @@ mov $13,$0
 add $13,1
 lpb $13,1
   clr $0,11
-  sub $13,1
   mov $0,$11
+  sub $13,1
   sub $0,$13
   mov $1,$0
-  mov $7,$0
   add $1,1
+  mov $7,$0
   add $9,$7
   mov $7,$1
   mov $3,$7
-  mov $7,$9
+  add $4,1
   mov $5,3
   gcd $5,$3
-  add $4,1
+  mov $7,$9
   add $4,$7
   mul $1,$4
   sub $1,1

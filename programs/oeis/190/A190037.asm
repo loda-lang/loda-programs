@@ -4,8 +4,8 @@
 mul $0,2
 mov $5,$0
 mov $2,$5
-mov $4,$2
 mov $3,$5
+mov $4,$2
 trn $2,5
 add $2,$3
 trn $3,5
@@ -13,7 +13,7 @@ mov $1,$3
 add $2,4
 mov $0,$2
 add $1,$2
-trn $4,8
 mov $3,$0
+trn $4,8
 add $3,$4
 add $1,$3

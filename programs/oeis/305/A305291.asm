@@ -5,19 +5,19 @@ mul $0,2
 add $0,1
 pow $0,3
 lpb $0,1
-  add $5,4
   add $2,29
   sub $2,$0
+  add $5,4
   mod $2,$5
   add $2,1
   mov $3,$2
   sub $3,$0
   mul $3,$2
-  add $4,$0
   add $3,1
+  add $4,$0
+  mov $0,$3
   mul $4,2
   sub $4,1
-  mov $0,$3
   div $4,2
   add $0,$4
   sub $0,1

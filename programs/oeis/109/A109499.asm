@@ -4,34 +4,34 @@
 mov $3,$0
 mov $5,2
 lpb $5,1
-  sub $5,1
   mov $0,$3
+  sub $5,1
   add $0,$5
   sub $0,1
   mov $1,1
   gcd $6,3
   lpb $0,1
-    mov $6,5
     sub $0,1
     mul $1,4
     add $1,1
+    mov $6,5
   lpe
-  div $1,2
   mov $0,$6
+  div $1,2
   div $1,$0
+  mov $0,1
   mul $1,2
   mov $4,$1
-  mov $0,1
   add $0,$4
   mov $1,$0
   mov $2,$5
   lpb $2,1
-    mov $7,$1
     sub $2,1
+    mov $7,$1
   lpe
 lpe
 lpb $3,1
-  sub $7,$1
   mov $3,0
+  sub $7,$1
 lpe
 mov $1,$7

@@ -5,17 +5,17 @@ add $0,2523
 mov $3,2
 lpb $0,1
   sub $0,1
-  mul $3,2
   mov $1,$0
+  mov $0,2
   add $1,1
-  mov $4,$1
+  mul $3,2
   add $3,1
+  mov $4,$1
   mul $3,$4
   mul $3,4
   mov $5,$3
   sub $5,4
   div $5,93
-  mov $0,2
   add $5,2
   mov $2,$5
 lpe

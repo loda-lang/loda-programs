@@ -6,14 +6,14 @@ mov $13,$0
 add $13,1
 lpb $13,1
   clr $0,11
-  sub $13,1
   mov $0,$11
+  sub $13,1
   sub $0,$13
-  fac $4
-  pow $2,$6
   fac $1
+  pow $2,$6
   add $0,$2
   mul $1,$0
+  fac $4
   add $4,$0
   gcd $4,2
   pow $1,$4

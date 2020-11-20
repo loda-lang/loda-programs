@@ -4,9 +4,9 @@
 add $0,1
 mul $0,2
 mov $2,$0
-mov $3,9
 gcd $2,8
 mul $0,$2
+mov $3,9
 lpb $2,1
   lpb $3,1
     add $4,5

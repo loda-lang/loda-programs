@@ -7,8 +7,8 @@ add $2,2
 mul $0,$2
 lpb $0,1
   sub $0,1
-  add $1,1
   div $0,2
+  add $1,1
   mod $1,2
   pow $1,2
   sub $1,$0

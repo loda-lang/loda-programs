@@ -4,12 +4,12 @@
 mov $2,$0
 mov $4,$2
 mul $2,2
-sub $4,1
 bin $2,3
-mul $4,6
 mov $3,$2
-sub $4,1
 add $3,55
+sub $4,1
+mul $4,6
+sub $4,1
 mov $2,$4
 add $2,576
 add $2,$3

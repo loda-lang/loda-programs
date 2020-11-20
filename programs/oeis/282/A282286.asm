@@ -3,10 +3,10 @@
 
 mov $1,$0
 mul $1,7
-mov $2,3
 pow $1,2
-add $2,$0
 sub $1,1
+mov $2,3
+add $2,$0
 gcd $2,2
 div $1,$2
 trn $1,1

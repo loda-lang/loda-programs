@@ -13,8 +13,8 @@ lpb $0,1
   add $1,2
 lpe
 add $0,3
-mov $2,$1
 sub $0,$3
+mov $2,$1
 add $2,2
 sub $2,$0
 mov $1,$2

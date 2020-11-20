@@ -12,8 +12,8 @@ lpb $4,1
   add $2,$3
   trn $4,5
   lpb $2,1
+    add $1,1
     add $3,1
     trn $2,$3
-    add $1,1
   lpe
 lpe

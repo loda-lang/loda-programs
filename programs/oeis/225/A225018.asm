@@ -6,15 +6,14 @@ add $0,1
 mov $3,$0
 mov $4,$0
 mul $0,9
-mul $4,$0
-sub $4,3
 div $3,2
-add $4,6
+mul $4,$0
+add $4,3
 mul $3,$4
 div $4,6
 lpb $0,1
-  gcd $4,$3
   mov $0,1
+  gcd $4,$3
   mov $1,$4
 lpe
 add $1,1

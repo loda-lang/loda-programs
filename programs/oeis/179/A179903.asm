@@ -6,13 +6,13 @@ mov $4,$3
 pow $4,2
 mov $1,$4
 lpb $0,1
+  mov $0,0
   mul $1,2
   mov $5,$1
   mov $1,2
   add $3,1
   add $1,$3
   mul $3,$5
-  mov $0,0
   mov $4,$3
   sub $5,$4
 lpe

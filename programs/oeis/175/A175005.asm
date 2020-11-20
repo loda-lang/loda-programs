@@ -7,8 +7,8 @@ lpb $2,1
   lpb $2,1
     add $4,$3
     add $3,$1
-    mul $3,2
     add $1,$4
     sub $2,1
+    mul $3,2
   lpe
 lpe

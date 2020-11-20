@@ -3,14 +3,14 @@
 
 mov $7,$0
 add $0,9
-mov $3,-3
 mov $1,$0
 sub $0,3
+mov $3,-3
 mov $5,2
 lpb $0,1
-  add $3,$1
   mov $2,$5
   add $2,1
+  add $3,$1
   add $0,$3
   add $0,2
   add $2,6
@@ -19,11 +19,10 @@ lpb $0,1
   mov $5,$2
   add $5,$0
   mul $0,2
-  div $0,3
+  div $0,6
   mov $1,108
   div $5,7
   add $5,4
-  div $0,2
 lpe
 mov $1,$5
 sub $1,4

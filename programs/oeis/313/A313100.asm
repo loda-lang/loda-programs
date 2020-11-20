@@ -5,19 +5,19 @@ mov $10,$0
 mov $12,$0
 add $12,1
 lpb $12,1
-  sub $12,1
   mov $0,$10
+  sub $12,1
   sub $0,$12
-  mov $4,1
   mov $2,8
   mul $2,$0
+  add $0,1
+  mov $4,1
   add $4,$2
   sub $4,1
-  add $0,1
   div $4,3
   lpb $4,1
-    mov $3,2
     sub $0,2
+    mov $3,2
     add $4,$0
     lpb $2,8
       sub $4,3

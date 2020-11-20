@@ -5,10 +5,10 @@ mov $5,$0
 mov $6,$5
 mov $2,$6
 mov $3,2
-add $5,$0
 mov $4,1
-bin $5,$2
 add $4,$6
+add $5,$0
+bin $5,$2
 div $5,$4
 add $3,$5
 add $3,1

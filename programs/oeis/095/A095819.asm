@@ -3,11 +3,11 @@
 
 mov $3,4
 add $3,$0
-mov $4,$0
 add $3,4
 bin $3,8
-add $4,36
 mov $2,$3
+mov $4,$0
+add $4,36
 mul $4,$2
 mov $1,$4
 sub $1,36

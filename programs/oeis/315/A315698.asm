@@ -6,27 +6,27 @@ mov $13,$0
 add $13,1
 lpb $13,1
   clr $0,11
-  sub $13,1
   mov $0,$11
+  sub $13,1
   sub $0,$13
-  add $1,3
   mul $0,2
+  add $1,3
   mul $0,$1
   sub $1,$0
   lpb $0,1
     mov $0,$2
+    sub $0,6
     div $1,2
-    mov $4,$1
-    mov $3,$1
-    gcd $3,2
     sub $2,$1
     mod $2,10
-    sub $0,6
+    mov $3,$1
+    gcd $3,2
+    mov $4,$1
     mov $1,$2
     mov $8,$4
     add $0,$8
-    add $3,2
     div $0,10
+    add $3,2
   lpe
   mov $2,$3
   mov $1,$2

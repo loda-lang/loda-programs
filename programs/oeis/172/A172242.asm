@@ -3,9 +3,9 @@
 
 mov $2,$0
 mov $0,10
-mov $1,10
 add $0,$2
 bin $0,$2
+mov $1,10
 lpb $1,1
   sub $1,$1
   lpb $2,1

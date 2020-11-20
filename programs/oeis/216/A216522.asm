@@ -8,10 +8,10 @@ add $0,$2
 add $0,$2
 mul $0,2
 lpb $0,1
-  mov $3,$4
-  add $4,2
   sub $0,4
+  mov $3,$4
   add $3,1
+  add $4,2
   add $3,$4
   trn $0,$3
   add $1,1

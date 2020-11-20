@@ -3,8 +3,8 @@
 
 sub $0,2
 div $0,2
-mov $3,$0
 mov $2,2
+mov $3,$0
 add $3,1
 pow $2,$3
 div $2,2

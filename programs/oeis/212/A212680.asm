@@ -5,24 +5,24 @@ mov $12,$0
 mov $14,$0
 lpb $14,1
   clr $0,12
-  sub $14,1
   mov $0,$12
+  sub $14,1
   sub $0,$14
   mov $9,$0
   mov $11,$0
   lpb $11,1
-    sub $11,1
     mov $0,$9
+    sub $11,1
     sub $0,$11
     sub $0,1
     mov $3,$0
-    mov $7,$0
     mov $1,$3
-    mov $5,3
     gcd $1,2
     mov $3,3
+    mov $5,3
     sub $5,$1
     add $3,$5
+    mov $7,$0
     mul $3,$7
     cmp $5,$3
     add $5,$3

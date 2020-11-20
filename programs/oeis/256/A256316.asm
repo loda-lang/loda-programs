@@ -5,27 +5,27 @@ mov $10,$0
 mov $12,$0
 lpb $12,1
   clr $0,10
-  sub $12,1
   mov $0,$10
+  sub $12,1
   sub $0,$12
   mov $7,$0
   mov $9,$0
   lpb $9,1
-    sub $9,1
     mov $0,$7
+    sub $9,1
     sub $0,$9
     mul $0,2
     mov $1,$0
     lpb $0,1
-      mov $6,$1
       mov $2,2
-      mul $6,2
-      add $2,$6
+      mov $6,$1
       mul $1,0
       mov $0,$1
+      mul $6,2
+      add $1,$6
+      add $2,$6
       sub $2,5
       mov $3,$2
-      add $1,$6
       mov $4,$0
       add $4,$3
       mul $1,$4

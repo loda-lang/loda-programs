@@ -3,19 +3,18 @@
 
 mov $5,$0
 add $0,1
-div $5,2
 gcd $0,2
-add $5,4
-mov $4,3
-sub $5,1
-pow $4,$5
 mov $2,2
+mov $4,3
+div $5,2
+add $5,3
+pow $4,$5
 lpb $0,1
   mul $2,2
   mov $3,5
-  mul $4,2
   trn $3,$2
   mov $0,$3
+  mul $4,2
 lpe
 mov $1,$4
 sub $1,27

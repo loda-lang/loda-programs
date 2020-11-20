@@ -9,8 +9,8 @@ lpb $0,3
   trn $1,$0
   add $4,$0
   lpb $2,3
-    trn $4,4
     add $1,2
     mov $2,4
+    trn $4,4
   lpe
 lpe

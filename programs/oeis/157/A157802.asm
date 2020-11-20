@@ -8,10 +8,10 @@ mul $1,$0
 mov $6,8
 add $6,$1
 mul $1,10
-mov $7,3
 add $6,$1
-add $7,$6
 mov $2,$6
+mov $7,3
+add $7,$6
 mov $0,$7
 mul $0,$2
 mov $1,$0

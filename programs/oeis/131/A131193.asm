@@ -3,9 +3,8 @@
 
 add $0,5
 lpb $0,1
-  sub $0,2
+  sub $0,6
   mov $2,-4
-  add $0,-4
   add $2,$0
   bin $2,-4
   mul $2,6

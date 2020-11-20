@@ -6,9 +6,9 @@ bin $0,4
 mov $2,-5
 lpb $0,1
   div $0,$2
+  add $0,1331
   mov $2,2
   add $3,1
-  add $0,1331
 lpe
 mov $1,$3
 mul $1,2

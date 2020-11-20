@@ -5,13 +5,13 @@ add $0,1
 mov $2,91
 lpb $0,1
   sub $0,1
-  sub $4,$3
   mov $1,1
+  sub $4,$3
   add $1,$4
   mov $3,$1
+  mul $1,2
   add $4,$2
   add $2,$3
-  mul $1,2
   add $2,1
 lpe
 mul $1,11

@@ -6,16 +6,16 @@ mov $3,$4
 mov $5,$4
 mov $2,$5
 clr $4,$3
-mul $2,2
-add $5,1
 mov $0,17
+mul $2,2
 add $2,1
+add $5,1
 lpb $0,1
   add $0,$5
   gcd $5,$2
   sub $0,$5
-  add $5,2
   sub $0,3
+  add $5,2
 lpe
 sub $5,3
 mov $1,$5

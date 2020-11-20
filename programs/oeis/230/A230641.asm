@@ -8,6 +8,6 @@ lpb $2,1
     div $0,3
     sub $1,$0
   lpe
-  mov $2,$3
   mul $1,2
+  mov $2,$3
 lpe

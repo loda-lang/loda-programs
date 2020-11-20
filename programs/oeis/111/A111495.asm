@@ -4,16 +4,16 @@
 mov $8,$0
 add $0,4
 mov $2,$0
-mov $7,10
 add $0,4
+mov $7,10
 lpb $0,1
   mov $5,$2
   add $7,4
   mov $0,$7
   add $0,8
+  mov $4,$5
   mov $7,1
   add $7,$0
-  mov $4,$5
   mov $0,$6
   add $0,7
   mul $4,$0

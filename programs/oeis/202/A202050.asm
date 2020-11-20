@@ -9,14 +9,13 @@ mov $3,$1
 bin $3,8
 sub $3,$0
 mov $2,$3
-add $2,5
+add $2,6
 mov $3,$0
-add $2,1
 mov $7,6
 add $7,$2
 add $3,$7
-add $7,$3
 mov $5,2
+add $7,$3
 mul $5,$7
 mov $1,$5
 sub $1,228

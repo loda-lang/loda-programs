@@ -3,8 +3,8 @@
 
 mov $7,$0
 add $0,4
-mov $2,$0
 mov $1,$0
+mov $2,$0
 mov $6,16
 mul $6,$1
 sub $6,$2

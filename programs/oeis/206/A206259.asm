@@ -6,14 +6,13 @@ mov $3,$0
 mov $4,$3
 mul $4,2
 bin $4,$0
-sub $4,8
 mov $0,8
+sub $4,8
 lpb $0,1
   sub $5,5
   add $2,$5
-  add $4,18
   gcd $0,$2
-  add $4,7
+  add $4,25
 lpe
 trn $5,10
 add $5,$4

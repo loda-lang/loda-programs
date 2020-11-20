@@ -6,15 +6,15 @@ mul $2,$0
 bin $2,$0
 add $0,1
 div $2,$0
+mov $4,1
 mov $7,1
 mul $7,$2
 mov $5,$7
 mul $5,2
-mov $6,1
 sub $5,3
+mov $6,1
 add $6,$5
 sub $6,$5
-mov $4,1
 add $4,$6
 mov $3,$4
 mul $5,$3

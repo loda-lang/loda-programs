@@ -3,14 +3,14 @@
 
 mov $7,$0
 div $0,3
-mov $5,$0
 mov $2,$0
+mov $5,$0
 pow $5,2
 lpb $2,1
   add $1,$2
   lpb $5,1
-    mov $5,$1
     mov $0,3
+    mov $5,$1
   lpe
   mul $0,4
   add $1,$0

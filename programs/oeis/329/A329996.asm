@@ -4,17 +4,17 @@
 mov $6,$0
 add $0,2
 mov $3,$0
-mov $4,20
 sub $3,$6
+mov $4,20
 lpb $0,1
-  add $6,$4
-  mov $5,17
-  mul $6,12
-  add $3,172
   mov $2,18
   mul $2,$4
-  add $6,$2
+  add $3,172
   div $0,$3
+  mov $5,17
+  add $6,$4
+  mul $6,12
+  add $6,$2
   mul $6,2
 lpe
 sub $6,$3

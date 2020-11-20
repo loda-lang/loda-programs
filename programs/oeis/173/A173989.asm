@@ -4,10 +4,10 @@
 add $0,5
 mov $2,$0
 lpb $2,1
-  sub $2,1
   add $1,2
-  trn $2,1
   trn $1,$0
   trn $0,4
+  sub $2,1
+  trn $2,1
 lpe
 trn $1,3

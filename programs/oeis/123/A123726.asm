@@ -5,8 +5,8 @@ mov $12,$0
 mov $14,2
 lpb $14,1
   clr $0,12
-  sub $14,1
   mov $0,$12
+  sub $14,1
   add $0,$14
   sub $0,1
   lpb $0,1
@@ -14,8 +14,8 @@ lpb $14,1
     mov $2,$0
     add $3,2
     lpb $2,1
-      sub $2,1
       add $1,$3
+      sub $2,1
     lpe
     add $1,$0
   lpe
@@ -26,8 +26,8 @@ lpb $14,1
   lpe
 lpe
 lpb $12,1
-  sub $13,$1
   mov $12,0
+  sub $13,$1
 lpe
 mov $1,$13
 add $1,1

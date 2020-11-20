@@ -6,15 +6,15 @@ mov $18,$0
 add $18,1
 lpb $18,1
   clr $0,16
-  sub $18,1
   mov $0,$16
+  sub $18,1
   sub $0,$18
   mov $13,$0
   mov $15,$0
   add $15,1
   lpb $15,1
-    sub $15,1
     mov $0,$13
+    sub $15,1
     sub $0,$15
     mov $9,$0
     mov $11,2
@@ -28,8 +28,8 @@ lpb $18,1
       mov $1,$4
       div $1,3
       mov $7,$1
-      add $7,2
       mov $1,7
+      add $7,2
       pow $1,$7
       mul $1,2
       mov $12,$11
@@ -39,8 +39,8 @@ lpb $18,1
       lpe
     lpe
     lpb $9,1
-      sub $10,$1
       mov $9,0
+      sub $10,$1
     lpe
     mov $1,$10
     div $1,98

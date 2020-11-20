@@ -4,6 +4,6 @@
 mov $1,$0
 gcd $1,2
 lpb $0,1
-  div $1,2
   mov $0,3
+  div $1,2
 lpe

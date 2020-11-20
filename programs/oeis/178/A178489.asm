@@ -3,7 +3,7 @@
 
 mul $0,2
 lpb $0,1
-  add $1,108
   div $0,128
+  add $1,108
 lpe
 div $1,108

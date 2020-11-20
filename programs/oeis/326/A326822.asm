@@ -4,15 +4,15 @@
 mov $9,$0
 mov $11,2
 lpb $11,1
-  sub $11,1
   mov $0,$9
+  sub $11,1
   add $0,$11
   sub $0,1
-  mov $3,2
   mov $1,1
   gcd $2,2
-  add $5,2
+  mov $3,2
   sub $3,$2
+  add $5,2
   lpb $0,2
     add $3,1
     trn $0,$3
@@ -26,7 +26,7 @@ lpb $11,1
   lpe
 lpe
 lpb $9,1
-  sub $10,$1
   mov $9,0
+  sub $10,$1
 lpe
 mov $1,$10

@@ -6,12 +6,12 @@ mov $10,8
 lpb $10,1
   lpb $0,1
     lpb $8,10
-      mul $6,10
-      pow $10,$4
-      bin $6,2
       gcd $0,8
+      mul $6,10
+      bin $6,2
       mov $8,$0
       sub $8,1
+      pow $10,$4
     lpe
     div $0,3
   lpe

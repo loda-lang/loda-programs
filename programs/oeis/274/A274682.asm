@@ -5,14 +5,14 @@ mov $7,$0
 mov $8,$0
 add $0,1
 lpb $0,1
-  add $4,$0
   mov $3,$8
+  add $4,$0
+  trn $0,2
+  mov $1,$4
   mov $5,0
   add $5,$3
-  mov $8,4
-  mov $1,$4
-  trn $0,2
   add $1,$5
+  mov $8,4
   add $8,$5
   mov $5,$1
   mov $4,$5

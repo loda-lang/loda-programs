@@ -4,9 +4,9 @@
 lpb $0,1
   mov $2,$0
   sub $0,1
+  add $2,$0
   mov $3,$0
   trn $3,1
-  add $2,$0
   add $3,$0
   trn $0,3
   add $1,$2

@@ -3,8 +3,8 @@
 
 mov $2,$0
 mov $3,$2
-mov $4,2
 add $3,2
+mov $4,2
 pow $4,$3
 sub $4,896
 mov $1,$4

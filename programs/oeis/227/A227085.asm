@@ -6,32 +6,29 @@ mov $16,$0
 add $16,1
 lpb $16,1
   clr $0,14
-  sub $16,1
   mov $0,$14
+  sub $16,1
   sub $0,$16
   mov $11,$0
   mov $13,$0
   add $13,1
   lpb $13,1
     clr $0,11
-    sub $13,1
     mov $0,$11
+    sub $13,1
     sub $0,$13
     mov $9,$0
     mul $0,2
     mov $1,4
     lpb $0,1
-      mov $3,$9
-      add $9,1
-      mov $5,$3
-      mov $10,$5
-      sub $9,1
+      mov $0,-3
       mov $1,2
       add $1,$9
-      sub $10,-1
-      mov $0,-3
       add $1,1
-      add $10,1
+      mov $3,$9
+      mov $5,$3
+      mov $10,$5
+      add $10,2
     lpe
     bin $10,3
     add $10,$1

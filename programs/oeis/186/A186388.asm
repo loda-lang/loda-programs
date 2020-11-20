@@ -5,9 +5,9 @@ add $0,8
 bin $0,2
 lpb $0,1
   add $3,$0
-  sub $3,9
   mov $0,2
   add $2,6
+  sub $3,9
   div $3,$2
 lpe
 mov $1,$3

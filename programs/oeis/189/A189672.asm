@@ -4,8 +4,8 @@
 mov $33,$0
 mov $35,$0
 lpb $35,1
-  sub $35,1
   mov $0,$33
+  sub $35,1
   sub $0,$35
   mul $0,2
   add $0,2

@@ -6,14 +6,14 @@ mov $8,$0
 div $8,2
 mul $8,2
 mov $1,$8
-mov $2,$8
-mov $5,$1
 mul $0,$1
+mov $2,$8
 div $2,2
 add $0,$2
+mov $5,$1
 add $0,$5
-mov $4,2
 add $0,1
+mov $4,2
 sub $4,$0
 mov $1,$4
 mov $3,$6

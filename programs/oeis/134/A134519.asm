@@ -3,9 +3,7 @@
 
 mov $2,$0
 div $0,2
-add $2,40
 bin $0,2
-mov $3,$0
-add $2,$3
+add $2,$0
 mov $1,$2
-sub $1,39
+add $1,1

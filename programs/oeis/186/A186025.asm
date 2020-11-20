@@ -9,8 +9,8 @@ lpb $2,1
     div $3,$3
     sub $4,$3
   lpe
-  add $4,$1
   sub $2,1
+  add $4,$1
   sub $1,1
   add $1,$4
 lpe

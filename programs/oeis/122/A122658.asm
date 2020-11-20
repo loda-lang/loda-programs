@@ -4,8 +4,8 @@
 mov $3,$0
 div $0,2
 mov $1,$3
-mul $3,2
 mul $1,$0
 pow $1,2
+mul $3,2
 mov $2,$3
 mul $1,$2

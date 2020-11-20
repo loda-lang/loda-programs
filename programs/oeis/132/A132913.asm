@@ -4,12 +4,12 @@
 mul $0,8
 sub $0,1
 lpb $0,1
-  add $1,1
   sub $0,1
+  add $1,1
   lpb $1,1
-    add $2,3
     sub $0,$1
     gcd $1,2
+    add $2,3
   lpe
   mov $1,$2
   add $1,1

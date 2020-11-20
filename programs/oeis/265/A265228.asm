@@ -3,8 +3,8 @@
 
 mov $3,$0
 mov $4,$0
-mov $5,$4
 mod $0,2
+mov $5,$4
 lpb $0,1
   trn $0,1
   pow $1,$0

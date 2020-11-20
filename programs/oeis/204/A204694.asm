@@ -4,9 +4,9 @@
 mov $1,$0
 mov $2,1
 lpb $0,1
+  sub $0,1
   mul $2,$1
   mod $2,8
-  sub $0,1
 lpe
 mov $1,$0
 sub $1,1

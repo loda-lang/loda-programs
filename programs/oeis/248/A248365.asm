@@ -9,8 +9,8 @@ add $0,$1
 mov $2,$0
 lpb $0,1
   lpb $0,1
-    mul $2,10
     div $0,10
+    mul $2,10
   lpe
 lpe
 mov $1,$2

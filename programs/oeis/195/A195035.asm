@@ -6,10 +6,10 @@ add $0,3
 mul $0,5
 mov $5,$0
 add $0,1
-mov $1,$5
 mul $0,7
-mod $1,2
 div $0,10
+mov $1,$5
+mod $1,2
 mul $1,$0
 add $1,4
 mov $4,$2

@@ -11,8 +11,8 @@ lpb $0,1
   sub $0,1
 lpe
 add $1,1
-gcd $6,4
 mul $1,2
+gcd $6,4
 mov $3,$6
 mov $4,$3
 sub $1,$4

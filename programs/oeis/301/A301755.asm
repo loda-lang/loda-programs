@@ -3,11 +3,11 @@
 
 mov $2,$0
 mov $3,$0
-mul $2,$3
 gcd $0,5
+mov $1,8
+sub $1,$0
+mul $2,$3
 mov $4,$3
 mul $2,$4
 trn $2,6
-mov $1,8
-sub $1,$0
 trn $1,$2

@@ -3,18 +3,18 @@
 
 mul $0,2
 mov $1,$0
-mov $3,$1
 mul $0,2
-mov $1,1
-mov $2,$3
 add $0,6
+mov $3,$1
+mov $1,1
 trn $1,$3
+mov $2,$3
 lpb $0,1
-  mul $3,2
-  add $1,$3
   sub $0,5
-  mov $3,1
   sub $0,$2
   trn $0,6
+  mul $3,2
+  add $1,$3
   trn $2,$1
+  mov $3,1
 lpe

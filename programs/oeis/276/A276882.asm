@@ -3,17 +3,17 @@
 
 mov $5,$0
 pow $0,2
-mov $2,$0
 mov $1,2
+mov $2,$0
 lpb $2,1
   add $6,$0
   lpb $6,1
     trn $6,$1
     add $1,4
   lpe
-  mov $2,1
   div $1,2
   sub $1,1
+  mov $2,1
 lpe
 sub $1,1
 mov $4,$5

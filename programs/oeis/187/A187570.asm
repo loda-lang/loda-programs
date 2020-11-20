@@ -3,10 +3,10 @@
 
 mov $3,$0
 div $0,3
-mov $5,$0
 mov $1,$0
 sub $1,15
 div $1,4
+mov $5,$0
 sub $5,$1
 mov $1,$5
 sub $1,2

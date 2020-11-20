@@ -3,18 +3,18 @@
 
 mov $4,$0
 mov $8,$0
+bin $0,3
 mod $8,2
 mov $1,$8
-bin $0,3
 mov $5,2
 lpb $0,1
+  cmp $0,$3
   mov $2,$1
   mul $2,2
-  add $5,8
   add $2,2
   mov $1,$2
   sub $1,2
-  cmp $0,$3
+  add $5,8
   div $5,6
 lpe
 add $1,$5

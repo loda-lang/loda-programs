@@ -6,8 +6,8 @@ gcd $0,3
 add $0,3
 mul $1,3
 lpb $0,1
+  trn $0,4
   add $1,5
   div $1,3
-  trn $0,4
 lpe
 sub $1,2

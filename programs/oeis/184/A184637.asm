@@ -4,13 +4,13 @@
 add $0,1
 pow $0,2
 mov $2,$0
-mov $4,20
-mov $3,$2
 add $0,4
+mov $3,$2
 add $3,2
+mov $4,20
+add $4,$0
 mov $5,10
 sub $5,$3
-add $4,$0
 div $5,3
 sub $4,$5
 mov $1,$4

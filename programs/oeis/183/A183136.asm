@@ -4,17 +4,17 @@
 mov $3,$0
 mov $4,$0
 lpb $4,1
-  sub $4,1
   mov $0,$3
+  sub $4,1
   sub $0,$4
-  mov $6,$0
   mov $2,$0
+  mov $6,$0
   lpb $2,1
     add $6,1
     lpb $6,1
       mov $6,$2
-      pow $6,2
       add $2,2
+      pow $6,2
     lpe
     sub $2,1
     add $6,$0

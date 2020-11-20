@@ -5,23 +5,23 @@ mov $12,$0
 mov $14,$0
 lpb $14,1
   clr $0,12
-  sub $14,1
   mov $0,$12
+  sub $14,1
   sub $0,$14
   mov $9,$0
   mov $11,$0
   lpb $11,1
-    sub $11,1
     mov $0,$9
+    sub $11,1
     sub $0,$11
-    mov $8,$0
     mov $2,$0
+    mov $8,$0
     lpb $2,1
       mod $2,2
       mul $2,6
       mul $8,$2
-      trn $2,$8
       mov $1,$8
+      trn $2,$8
     lpe
     add $10,$1
   lpe

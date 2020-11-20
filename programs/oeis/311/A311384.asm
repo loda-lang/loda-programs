@@ -5,38 +5,38 @@ mov $16,$0
 mov $18,$0
 add $18,1
 lpb $18,1
-  sub $18,1
   mov $0,$16
+  sub $18,1
   sub $0,$18
   mul $0,2
   sub $2,$2
   lpb $0,1
     mov $4,1
     clr $8,8
-    add $8,2
-    add $4,2
-    sub $2,6
-    mov $7,1
     sub $0,1
+    sub $2,6
+    add $4,2
+    mov $7,1
+    add $8,2
     mov $6,$8
     sub $7,$2
     add $2,$6
-    mov $8,$2
     div $0,$2
-    mul $6,$0
-    sub $6,2
     mov $1,$7
     pow $4,2
     add $4,1
-    gcd $2,$4
-    add $1,$8
-    mov $7,2
-    sub $2,2
-    add $1,$6
-    add $2,$1
+    mul $6,$0
     mov $0,5
-    bin $7,$2
+    sub $6,2
+    mov $8,$2
+    add $1,$8
+    add $1,$6
+    gcd $2,$4
+    sub $2,2
+    add $2,$1
     mul $1,2
+    mov $7,2
+    bin $7,$2
     sub $0,$7
     mov $2,$1
   lpe

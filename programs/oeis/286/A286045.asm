@@ -4,8 +4,8 @@
 mov $3,$0
 add $3,1
 lpb $3,1
-  sub $3,1
   mov $0,$2
+  sub $3,1
   sub $0,$3
   gcd $0,262144
   mod $0,3

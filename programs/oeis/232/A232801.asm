@@ -5,19 +5,19 @@ mov $18,$0
 mov $20,$0
 lpb $20,1
   clr $0,18
-  sub $20,1
   mov $0,$18
+  sub $20,1
   sub $0,$20
   mov $1,6
   lpb $1,1
     sub $0,1
     lpb $0,1
-      mul $1,3
       sub $0,2
+      mul $1,3
     lpe
     div $1,12
-    add $2,1
     add $1,1
+    add $2,1
     add $17,$1
     mov $1,$2
     mov $2,$0

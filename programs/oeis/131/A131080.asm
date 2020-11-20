@@ -4,8 +4,8 @@
 lpb $0,1
   sub $0,8
 lpe
-mov $2,4
 bin $0,2
+mov $2,4
 sub $2,$0
 trn $2,0
 mov $1,$2

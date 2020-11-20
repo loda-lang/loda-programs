@@ -7,6 +7,6 @@ mov $3,$2
 pow $1,$3
 lpb $0,1
   sub $0,1
-  mul $1,3
   trn $0,1
+  mul $1,3
 lpe

@@ -8,19 +8,19 @@ lpb $2,1
   lpb $4,1
     trn $4,$1
   lpe
-  mov $6,1
   mov $1,10
   mov $5,$2
+  mov $6,1
   lpb $5,1
-    trn $5,$1
     add $4,$1
+    trn $5,$1
   lpe
   lpb $6,1
     sub $4,$2
-    trn $6,$1
     trn $4,3
-    mov $3,$4
     mov $2,$4
+    mov $3,$4
+    trn $6,$1
   lpe
   add $3,$2
   mov $1,$3

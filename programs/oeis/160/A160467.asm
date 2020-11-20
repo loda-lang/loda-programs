@@ -7,12 +7,12 @@ lpb $0,1
   add $1,$0
   pow $0,$1
   add $0,$4
-  gcd $2,2
   sub $0,1
   div $0,2
+  gcd $2,2
 lpe
 add $0,3
 sub $0,$2
-mov $3,$0
 mov $1,256
+mov $3,$0
 gcd $1,$3

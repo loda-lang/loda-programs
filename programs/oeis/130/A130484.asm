@@ -7,8 +7,8 @@ lpb $2,1
   lpb $4,1
     sub $4,$3
   lpe
-  add $3,$4
-  sub $2,1
-  trn $3,4
   add $1,$4
+  sub $2,1
+  add $3,$4
+  trn $3,4
 lpe

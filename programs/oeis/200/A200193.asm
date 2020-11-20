@@ -6,15 +6,15 @@ mov $97,$0
 add $97,1
 lpb $97,1
   clr $0,95
-  sub $97,1
   mov $0,$95
+  sub $97,1
   sub $0,$97
   mov $92,$0
   mov $94,$0
   add $94,1
   lpb $94,1
-    sub $94,1
     mov $0,$92
+    sub $94,1
     sub $0,$94
     mov $1,$0
     clr $2,90

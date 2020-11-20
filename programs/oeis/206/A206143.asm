@@ -4,21 +4,21 @@
 mov $2,$0
 mov $7,2
 lpb $7,1
-  sub $7,1
   mov $0,$2
+  sub $7,1
   add $0,$7
   sub $0,1
   mov $3,$0
+  mov $0,12
   mov $1,$3
   add $1,2
-  mov $8,$1
-  mov $5,3
   add $3,3
-  pow $5,$8
   mul $3,2
   sub $3,2
+  mov $5,3
+  mov $8,$1
+  pow $5,$8
   sub $5,$3
-  mov $0,12
   lpb $0,1
     add $0,8
     add $5,$0
@@ -33,8 +33,8 @@ lpb $7,1
   lpe
 lpe
 lpb $2,1
-  sub $4,$1
   mov $2,0
+  sub $4,$1
 lpe
 mov $1,$4
 trn $1,360

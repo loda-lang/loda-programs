@@ -3,9 +3,9 @@
 
 mov $7,$0
 add $0,1
-mov $6,$0
 mov $5,$7
 mov $3,$5
+mov $6,$0
 mov $4,$6
 add $6,2
 mov $2,$6

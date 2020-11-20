@@ -5,19 +5,19 @@ mov $1,4
 mov $4,1
 mov $5,$0
 lpb $0,1
-  sub $3,4
   add $1,2
+  sub $3,4
   sub $3,$2
   trn $3,2
   trn $5,$3
-  add $3,$1
   mov $0,$5
-  add $3,3
   trn $0,1
-  trn $4,4
   mov $2,8
-  mul $3,2
+  add $3,$1
   add $1,8
+  add $3,3
+  mul $3,2
+  trn $4,4
 lpe
 add $4,$5
 mov $1,$4

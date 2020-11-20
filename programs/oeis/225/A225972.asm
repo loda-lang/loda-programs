@@ -8,10 +8,10 @@ lpb $2,1
     trn $4,2
   lpe
   lpb $5,1
-    add $4,$5
     add $3,$0
-    trn $5,$3
+    add $4,$5
     sub $1,$4
+    trn $5,$3
   lpe
   add $4,$2
   sub $2,1

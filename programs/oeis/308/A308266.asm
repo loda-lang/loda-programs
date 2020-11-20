@@ -5,14 +5,14 @@ mov $18,$0
 mov $20,$0
 lpb $20,1
   clr $0,18
-  sub $20,1
   mov $0,$18
+  sub $20,1
   sub $0,$20
   lpb $0,1
     lpb $0,1
       sub $0,2
-      add $3,1
       add $2,1
+      add $3,1
       lpb $2,1
         add $1,$3
         mov $2,$0

@@ -3,9 +3,9 @@
 
 lpb $0,1
   lpb $0,1
-    add $2,3
     div $0,2
     mul $0,2
+    add $2,3
   lpe
   div $0,4
 lpe

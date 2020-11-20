@@ -4,13 +4,13 @@
 lpb $0,1
   add $0,2
   mov $2,$0
+  sub $0,6
+  div $0,2
+  add $0,2
   add $2,1
   div $2,3
-  sub $0,6
   sub $2,1
-  div $0,2
   add $3,$2
-  add $0,2
   sub $2,1
 lpe
 bin $2,$3

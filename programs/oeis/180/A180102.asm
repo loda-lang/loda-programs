@@ -3,8 +3,8 @@
 
 add $0,2
 mov $1,$0
-mov $3,$1
 mov $2,200
+mov $3,$1
 div $2,$3
 mov $0,$2
 mov $1,$0

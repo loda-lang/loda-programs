@@ -3,22 +3,22 @@
 
 mul $0,2
 mov $3,$0
-mov $5,$0
 mov $1,$3
+mov $5,$0
 mul $0,2
-mul $5,2
 mov $2,1
+mul $5,2
 lpb $2,1
   add $2,$1
-  mul $5,$0
   mov $4,1
+  mul $5,$0
   lpb $5,1
     trn $5,$2
     add $2,2
   lpe
   lpb $4,1
-    mov $5,$2
     trn $4,$2
+    mov $5,$2
   lpe
   mov $2,0
 lpe

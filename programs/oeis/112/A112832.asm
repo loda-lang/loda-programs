@@ -4,11 +4,11 @@
 mov $1,$0
 mov $7,1
 lpb $0,13
+  sub $1,1
   add $7,1
   add $10,$7
   add $7,$10
   add $7,$10
-  sub $1,1
 lpe
 mul $7,2
 div $7,4

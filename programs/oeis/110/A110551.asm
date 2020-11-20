@@ -3,10 +3,10 @@
 
 mod $0,6
 mul $0,2
-mov $1,1
 pow $0,3
 mod $0,25
 div $0,7
+mov $1,1
 mul $1,$0
 mul $1,2
 add $1,1
