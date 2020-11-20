@@ -1014,7 +1014,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329486](http://oeis.org/A329486) ([L10 program](329/A329486.asm)): a(n) = 3*A006519(n)/2 + n/2 where A006519(n) is the highest power of 2 dividing n.
 * [A329494](http://oeis.org/A329494) ([L13 program](329/A329494.asm)): Numerator of 2*(2*n+1)/(n+2).
 * [A329502](http://oeis.org/A329502) ([L07 program](329/A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
-* [A329503](http://oeis.org/A329503) ([L08 program](329/A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
+* [A329503](http://oeis.org/A329503) ([L07 program](329/A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
 * [A329505](http://oeis.org/A329505) ([L11 program](329/A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
 * [A329506](http://oeis.org/A329506) ([L11 program](329/A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
 * [A329507](http://oeis.org/A329507) ([L29 program](329/A329507.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 + 2*x^3 - 3*x^4) / (1 - x).

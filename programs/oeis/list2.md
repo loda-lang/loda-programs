@@ -408,6 +408,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211522](http://oeis.org/A211522) ([L11 program](211/A211522.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w + 5y = 2x.
 * [A211523](http://oeis.org/A211523) ([L20 program](211/A211523.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w+2x=5y.
 * [A211524](http://oeis.org/A211524) ([L13 program](211/A211524.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=3x+5y.
+* [A211533](http://oeis.org/A211533) ([L93 program](211/A211533.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=3x-5y.
 * [A211534](http://oeis.org/A211534) ([L03 program](211/A211534.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w = 3x + 3y.
 * [A211535](http://oeis.org/A211535) ([L12 program](211/A211535.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=4x+5y.
 * [A211538](http://oeis.org/A211538) ([L07 program](211/A211538.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w=2n-2x-y.
@@ -1998,7 +1999,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A249152](http://oeis.org/A249152) ([L19 program](249/A249152.asm)): Exponent of 2 in the hyperfactorials: a(n) = A007814(A002109(n)).
 * [A249153](http://oeis.org/A249153) ([L23 program](249/A249153.asm)): Exponent of 2 in the hyperfactorial of 2n: a(n) = A007814(A002109(2n)).
 * [A249154](http://oeis.org/A249154) ([L14 program](249/A249154.asm)): (n+1) times the number of 1's in the binary expansion of n.
-* [A249166](http://oeis.org/A249166) ([L47 program](249/A249166.asm)): Odd integers concatenated with themselves.
+* [A249166](http://oeis.org/A249166) ([L38 program](249/A249166.asm)): Odd integers concatenated with themselves.
 * [A249227](http://oeis.org/A249227) ([L03 program](249/A249227.asm)): Number of length n+5 0..2 arrays with no six consecutive terms having two times the sum of any two elements equal to the sum of the remaining four
 * [A249333](http://oeis.org/A249333) ([L08 program](249/A249333.asm)): Number of regions formed by extending the sides of a regular n-gon.
 * [A249354](http://oeis.org/A249354) ([L05 program](249/A249354.asm)): a(n) = n*(3*n^2 + 3*n + 1).

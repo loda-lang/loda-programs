@@ -1197,7 +1197,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118719](http://oeis.org/A118719) ([L09 program](118/A118719.asm)): Cubes for which the digital root is also a cube.
 * [A118729](http://oeis.org/A118729) ([L08 program](118/A118729.asm)): Infinite square array which contains the 8 numbers 4*r^2 - 3*r, 4*r^2 - 2*r, ..., 4*r^2 + 4*r in row r.
 * [A118760](http://oeis.org/A118760) ([L01 program](118/A118760.asm)): A118758(A118758(n)).
-* [A118824](http://oeis.org/A118824) ([L17 program](118/A118824.asm)): 2-adic continued fraction of zero, where a(n) = -2 if n is odd, A006519(n/2) otherwise.
+* [A118824](http://oeis.org/A118824) ([L11 program](118/A118824.asm)): 2-adic continued fraction of zero, where a(n) = -2 if n is odd, A006519(n/2) otherwise.
 * [A118827](http://oeis.org/A118827) ([L09 program](118/A118827.asm)): 2-adic continued fraction of zero, where a(n) = 1 if n is odd, otherwise -2*A006519(n/2).
 * [A118830](http://oeis.org/A118830) ([L11 program](118/A118830.asm)): 2-adic continued fraction of zero, where a(n) = -1 if n is odd, 2*A006519(n/2) otherwise.
 * [A118831](http://oeis.org/A118831) ([L10 program](118/A118831.asm)): Numerators of the convergents of the 2-adic continued fraction of zero given by A118830.
@@ -4371,7 +4371,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162483](http://oeis.org/A162483) ([L08 program](162/A162483.asm)): a(n) is the number of perfect matchings of an edge-labeled 2 X (2n+1) Mobius grid graph.
 * [A162495](http://oeis.org/A162495) ([L24 program](162/A162495.asm)): Number of reduced words of length n in the icosahedral reflection group [3,5] of order 120.
 * [A162540](http://oeis.org/A162540) ([L13 program](162/A162540.asm)): a(n) = (2*n+1)*(2*n+3)*(2*n+5)/3.
-* [A162550](http://oeis.org/A162550) ([L16 program](162/A162550.asm)): 2n repeated C_n times, where C_n = A000108(n) is a Catalan number.
+* [A162550](http://oeis.org/A162550) ([L10 program](162/A162550.asm)): 2n repeated C_n times, where C_n = A000108(n) is a Catalan number.
 * [A162551](http://oeis.org/A162551) ([L07 program](162/A162551.asm)): a(n) = 2 * C(2*n,n-1).
 * [A162559](http://oeis.org/A162559) ([L10 program](162/A162559.asm)): a(n) = ((4+sqrt(3))*(1+sqrt(3))^n + (4-sqrt(3))*(1-sqrt(3))^n)/2.
 * [A162560](http://oeis.org/A162560) ([L25 program](162/A162560.asm)): a(n) = (4+sqrt(3))*(3+sqrt(3))^n + (4-sqrt(3))*(3-sqrt(3))^n.
@@ -5359,7 +5359,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A172272](http://oeis.org/A172272) ([L08 program](172/A172272.asm)): a(n) = floor(n*(sqrt(11)-sqrt(3))).
 * [A172273](http://oeis.org/A172273) ([L06 program](172/A172273.asm)): a(n) = floor(n*(sqrt(11) - sqrt(2))).
 * [A172274](http://oeis.org/A172274) ([L05 program](172/A172274.asm)): a(n) = floor(n*(sqrt(13)-sqrt(11))).
-* [A172276](http://oeis.org/A172276) ([L89 program](172/A172276.asm)): a(n) = floor(n*(sqrt(13)-sqrt(5))).
+* [A172276](http://oeis.org/A172276) ([L11 program](172/A172276.asm)): a(n) = floor(n*(sqrt(13)-sqrt(5))).
 * [A172277](http://oeis.org/A172277) ([L51 program](172/A172277.asm)): floor(n*(sqrt(13)-sqrt(3))).
 * [A172284](http://oeis.org/A172284) ([L26 program](172/A172284.asm)): First positive zeros of Bessel function of order n rounded to nearest integer
 * [A172325](http://oeis.org/A172325) ([L20 program](172/A172325.asm)): Floor(n*(sqrt(7)+sqrt(3))).
@@ -6319,6 +6319,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186317](http://oeis.org/A186317) ([L29 program](186/A186317.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the squares and hexagonal numbers.  Complement of A186318.
 * [A186318](http://oeis.org/A186318) ([L46 program](186/A186318.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the squares and hexagonal numbers.  Complement of A186317.
 * [A186320](http://oeis.org/A186320) ([L40 program](186/A186320.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and heptagonal numbers.  Complement of A186321.
+* [A186321](http://oeis.org/A186321) ([L52 program](186/A186321.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and heptagonal numbers.  Complement of A186320.
 * [A186322](http://oeis.org/A186322) ([L29 program](186/A186322.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the squares and heptagonal numbers.  Complement of A186323.
 * [A186324](http://oeis.org/A186324) ([L40 program](186/A186324.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and octagonal numbers.  Complement of A186325.
 * [A186325](http://oeis.org/A186325) ([L43 program](186/A186325.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and octagonal numbers.  Complement of A186324.
@@ -6627,6 +6628,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189935](http://oeis.org/A189935) ([L13 program](189/A189935.asm)): a(n) = A189933(n)/2.
 * [A189976](http://oeis.org/A189976) ([L09 program](189/A189976.asm)): a(n) is the number of incongruent two-color bracelets of n beads, 8 of them black (A005514), having a diameter of symmetry.
 * [A189980](http://oeis.org/A189980) ([L04 program](189/A189980.asm)): a(n) is the number of incongruent two-color bracelets of n beads, 10 from them are black (A005515), having a diameter of symmetry.
+* [A189996](http://oeis.org/A189996) ([L103 program](189/A189996.asm)): Bott periodicity: the homotopy groups of the stable orthogonal group are periodic with period 8 and repeat like [2, 2, 1, 0, 1, 1, 1, 0].
 * [A190002](http://oeis.org/A190002) ([L22 program](190/A190002.asm)): a(n) = n + [n*s/r] + [n*t/r]; r=1, s=(sinh(1))^2, t=(cosh(1))^2.
 * [A190003](http://oeis.org/A190003) ([L12 program](190/A190003.asm)): a(n) = n + [n*r/s] + [n*t/s]; r=1, s=(sinh(1))^2, t=(cosh(1))^2.
 * [A190004](http://oeis.org/A190004) ([L17 program](190/A190004.asm)): A190002/2.
@@ -7025,8 +7027,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195062](http://oeis.org/A195062) ([L03 program](195/A195062.asm)): Period 7: repeat [1, 0, 1, 0, 1, 0, 1].
 * [A195084](http://oeis.org/A195084) ([L21 program](195/A195084.asm)): a(2n-1) = 2-n, a(2n) = 2+n.
 * [A195119](http://oeis.org/A195119) ([L12 program](195/A195119.asm)): a(n) = 2*n - floor(n*sqrt(2)).
-* [A195128](http://oeis.org/A195128) ([L19 program](195/A195128.asm)): a(n) = 2*n - floor(n*sqrt(1/2)). WebCam
-* [A195129](http://oeis.org/A195129) ([L19 program](195/A195129.asm)): a(n) = 2*n - floor(n*sqrt(1/3)).
+* [A195128](http://oeis.org/A195128) ([L13 program](195/A195128.asm)): a(n) = 2*n - floor(n*sqrt(1/2)). WebCam
+* [A195129](http://oeis.org/A195129) ([L13 program](195/A195129.asm)): a(n) = 2*n - floor(n*sqrt(1/3)).
 * [A195140](http://oeis.org/A195140) ([L12 program](195/A195140.asm)): Multiples of 5 and odd numbers interleaved.
 * [A195142](http://oeis.org/A195142) ([L09 program](195/A195142.asm)): Concentric 10-gonal numbers.
 * [A195143](http://oeis.org/A195143) ([L11 program](195/A195143.asm)): a(n) = n-th concentric 12-gonal number.
