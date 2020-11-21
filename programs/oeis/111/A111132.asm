@@ -6,29 +6,14 @@ mov $17,$0
 add $17,1
 lpb $17,1
   clr $0,15
-  sub $17,1
   mov $0,$15
+  sub $17,1
   sub $0,$17
-  mov $1,1
-  add $14,$1
+  add $14,1
   mov $1,$14
   lpb $0,1
-    mov $5,$1
-    mov $1,$5
     sub $0,1
-    mov $11,2
-    lpb $0,1
-      lpb $1,1
-        sub $1,4
-        trn $2,4
-        mul $3,$4
-        mov $5,$2
-      lpe
-      div $1,3
-      mov $1,$4
-      mul $0,2
-      add $0,3
-    lpe
+    mov $5,$1
     add $3,$5
     add $1,$3
     mod $1,10

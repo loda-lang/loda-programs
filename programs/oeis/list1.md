@@ -711,6 +711,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110451](http://oeis.org/A110451) ([L13 program](110/A110451.asm)): a(n) = n*(4*n^2 + 2*n + 1).
 * [A110512](http://oeis.org/A110512) ([L12 program](110/A110512.asm)): Expansion of (1 + x)/(1 + x + 2x^2).
 * [A110514](http://oeis.org/A110514) ([L14 program](110/A110514.asm)): Expansion of (1 - x + x^2 + x^3)/(1 - x^2 - x^4 + x^6).
+* [A110516](http://oeis.org/A110516) ([L11 program](110/A110516.asm)): Expansion of (1-x+x^2+x^3)/(1+x-x^4-x^5).
 * [A110532](http://oeis.org/A110532) ([L05 program](110/A110532.asm)): a(n) = floor(n/2) + floor(n/5).
 * [A110533](http://oeis.org/A110533) ([L05 program](110/A110533.asm)): a(n) = floor(n/2) * floor(n/5).
 * [A110548](http://oeis.org/A110548) ([L23 program](110/A110548.asm)): One of the three ordered sets of positive integers that solves the minimal magic die puzzle.
@@ -751,6 +752,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A111080](http://oeis.org/A111080) ([L04 program](111/A111080.asm)): Sum of numbers under a triangle on a spiral staircase of width 10.
 * [A111093](http://oeis.org/A111093) ([L18 program](111/A111093.asm)): Like sequence A111072 but moving right by the squares of the sequence of positive integers.
 * [A111097](http://oeis.org/A111097) ([L11 program](111/A111097.asm)): Maximum likelihood estimate of the number of distinguishable marbles in an urn if repeated random sampling of one marble with replacement yields n different marbles before the first repeated marble.
+* [A111132](http://oeis.org/A111132) ([L39 program](111/A111132.asm)): a(n+1) = a(n) + [a(n) - a(n-1) + a(n) mod 10] mod 10 with a(0)=0 and a(1)=1.
 * [A111138](http://oeis.org/A111138) ([L24 program](111/A111138.asm)): Let b(n) denote the number of nontriangular numbers less than or equal to n. Then a(n) = b(n-1) + a(b(n-1)), with a(1) = a(2) = 0, a(3) = 1.
 * [A111144](http://oeis.org/A111144) ([L11 program](111/A111144.asm)): a(n) = n*(n+13)*(n+14)/6.
 * [A111277](http://oeis.org/A111277) ([L08 program](111/A111277.asm)): Number of permutations avoiding the patterns {2413,4213,2431,4231,4321}; also number of permutations avoiding the patterns {3142,3412,3421,4312,4321}; number of weak sorting class based on 2413 or 3142.
@@ -2436,7 +2438,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134465](http://oeis.org/A134465) ([L08 program](134/A134465.asm)): Row sums of triangle A134464.
 * [A134467](http://oeis.org/A134467) ([L09 program](134/A134467.asm)): a(n) = n(n+1) - A000120(n), where A000120(n) = number of 1's in binary expansion of n.
 * [A134478](http://oeis.org/A134478) ([L08 program](134/A134478.asm)): Triangle read by rows, T(0,0) = 1; n-th row = (n+1) terms of n, n+1, n+2...
-* [A134479](http://oeis.org/A134479) ([L07 program](134/A134479.asm)): Row sums of triangle A134478.
+* [A134479](http://oeis.org/A134479) ([L06 program](134/A134479.asm)): Row sums of triangle A134478.
 * [A134481](http://oeis.org/A134481) ([L08 program](134/A134481.asm)): Row sums of triangle A134480.
 * [A134482](http://oeis.org/A134482) ([L09 program](134/A134482.asm)): Triangle read by rows: row n consists of n followed by the numbers n through 2n-2.
 * [A134483](http://oeis.org/A134483) ([L10 program](134/A134483.asm)): Triangle read by rows: T(n,k)=2n+k-2; 1<=k<=n.
@@ -3101,7 +3103,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144605](http://oeis.org/A144605) ([L23 program](144/A144605.asm)): Christoffel word of slope 7/11.
 * [A144606](http://oeis.org/A144606) ([L30 program](144/A144606.asm)): Christoffel word of slope 8/11.
 * [A144607](http://oeis.org/A144607) ([L27 program](144/A144607.asm)): Christoffel word of slope 9/11.
-* [A144608](http://oeis.org/A144608) ([L16 program](144/A144608.asm)): Christoffel word of slope 10/11.
+* [A144608](http://oeis.org/A144608) ([L19 program](144/A144608.asm)): Christoffel word of slope 10/11.
 * [A144610](http://oeis.org/A144610) ([L26 program](144/A144610.asm)): Sturmian word of slope e.
 * [A144619](http://oeis.org/A144619) ([L03 program](144/A144619.asm)): a(n) = 19n + 8.
 * [A144640](http://oeis.org/A144640) ([L09 program](144/A144640.asm)): Row sums from A144562.
@@ -3553,6 +3555,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154633](http://oeis.org/A154633) ([L19 program](154/A154633.asm)): a(n) = (4*n+1)*(4*n+3)*(4*n+5)*(4*n+7).
 * [A154691](http://oeis.org/A154691) ([L08 program](154/A154691.asm)): Expansion of (1+x+x^2) / ((1-x-x^2)*(1-x)).
 * [A154708](http://oeis.org/A154708) ([L05 program](154/A154708.asm)): Numbers a such that b and c exist with b <= a < c and a*(a+1) + b^2 = c^2.
+* [A154811](http://oeis.org/A154811) ([L24 program](154/A154811.asm)): a(n) = Fibonacci(2n+1) mod 9.
 * [A154870](http://oeis.org/A154870) ([L17 program](154/A154870.asm)): Period 6: repeat [7, 5, 1, -7, -5, -1].
 * [A154890](http://oeis.org/A154890) ([L12 program](154/A154890.asm)): Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
 * [A154920](http://oeis.org/A154920) ([L11 program](154/A154920.asm)): Denominators of a ternary BBP-type formula for log(3).
@@ -3657,6 +3660,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A156283](http://oeis.org/A156283) ([L16 program](156/A156283.asm)): Period 6: repeat [1, 2, 4, -4, -2, -1].
 * [A156297](http://oeis.org/A156297) ([L27 program](156/A156297.asm)): Triangle T(n,k) read by rows. If n = k^2 then 1 else 0.
 * [A156319](http://oeis.org/A156319) ([L08 program](156/A156319.asm)): Triangle by columns: (1, 2, 0, 0, 0, ...) in every column.
+* [A156331](http://oeis.org/A156331) ([L27 program](156/A156331.asm)): a(n)=8*A154811(n).
 * [A156376](http://oeis.org/A156376) ([L03 program](156/A156376.asm)): a(n) = 30*n + 19.
 * [A156550](http://oeis.org/A156550) ([L05 program](156/A156550.asm)): 5*(-1)^n*A078008(n).
 * [A156551](http://oeis.org/A156551) ([L38 program](156/A156551.asm)): Period 10: repeat [8,6,0,4,2,2,4,0,6,8].
@@ -5393,7 +5397,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173078](http://oeis.org/A173078) ([L07 program](173/A173078.asm)): a(n) = (5*2^n - 2*(-1)^n - 9)/3.
 * [A173089](http://oeis.org/A173089) ([L05 program](173/A173089.asm)): a(n) = 25*n^2 + n.
 * [A173102](http://oeis.org/A173102) ([L05 program](173/A173102.asm)): Number of partitions x + y = z with {x,y,z} in {1,2,3,..,3n} and z > y >= x.
-* [A173114](http://oeis.org/A173114) ([L10 program](173/A173114.asm)): a(0)=a(1)=1, a(n) = 2*a(n-1)- A010686(n), n>1.
+* [A173114](http://oeis.org/A173114) ([L09 program](173/A173114.asm)): a(0)=a(1)=1, a(n) = 2*a(n-1)- A010686(n), n>1.
 * [A173116](http://oeis.org/A173116) ([L04 program](173/A173116.asm)): a(n) = sinh(2*arcsinh(n))^2 = 4*n^2*(n^2 + 1).
 * [A173121](http://oeis.org/A173121) ([L04 program](173/A173121.asm)): a(n) = sinh(2*arccosh(n))^2 = 4*n^2*(n^2 - 1).
 * [A173141](http://oeis.org/A173141) ([L06 program](173/A173141.asm)): a(n) = 49*n^2 + n.
@@ -6245,7 +6249,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185065](http://oeis.org/A185065) ([L04 program](185/A185065.asm)): a(n) = n*(n^3 + 2).
 * [A185096](http://oeis.org/A185096) ([L06 program](185/A185096.asm)): Let T(n) = n(n+1)/2 be the n-th triangular number (A000217); a(n) = T(8T(n)).
 * [A185114](http://oeis.org/A185114) ([L03 program](185/A185114.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 4.
-* [A185115](http://oeis.org/A185115) ([L06 program](185/A185115.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 5.
+* [A185115](http://oeis.org/A185115) ([L05 program](185/A185115.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 5.
 * [A185116](http://oeis.org/A185116) ([L05 program](185/A185116.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 6.
 * [A185117](http://oeis.org/A185117) ([L04 program](185/A185117.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 7.
 * [A185118](http://oeis.org/A185118) ([L06 program](185/A185118.asm)): Number of connected 2-regular simple graphs on n vertices with girth at least 8.

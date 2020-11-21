@@ -3019,6 +3019,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A028358](http://oeis.org/A028358) ([L25 program](028/A028358.asm)): Partial sums of A028357.
 * [A028375](http://oeis.org/A028375) ([L12 program](028/A028375.asm)): Squares of (odd numbers not divisible by 5).
 * [A028387](http://oeis.org/A028387) ([L04 program](028/A028387.asm)): a(n) = n + (n+1)^2.
+* [A028390](http://oeis.org/A028390) ([L39 program](028/A028390.asm)): Nearest integer to 3n/4 unless that is an integer, when 3n/2.
 * [A028391](http://oeis.org/A028391) ([L07 program](028/A028391.asm)): a(n) = n - floor(sqrt(n)).
 * [A028392](http://oeis.org/A028392) ([L07 program](028/A028392.asm)): a(n) = n + floor(sqrt(n)).
 * [A028399](http://oeis.org/A028399) ([L04 program](028/A028399.asm)): a(n) = 2^n - 4.
@@ -3167,7 +3168,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032169](http://oeis.org/A032169) ([L15 program](032/A032169.asm)): Number of aperiodic necklaces of n beads of 2 colors, 11 of them black.
 * [A032192](http://oeis.org/A032192) ([L07 program](032/A032192.asm)): Number of necklaces with 7 black beads and n-7 white beads.
 * [A032196](http://oeis.org/A032196) ([L18 program](032/A032196.asm)): Number of necklaces with 11 black beads and n-11 white beads.
-* [A032260](http://oeis.org/A032260) ([L17 program](032/A032260.asm)): Number of n X n (0,1) matrices such that each row and each column is nondecreasing or nonincreasing.
+* [A032260](http://oeis.org/A032260) ([L14 program](032/A032260.asm)): Number of n X n (0,1) matrices such that each row and each column is nondecreasing or nonincreasing.
 * [A032378](http://oeis.org/A032378) ([L08 program](032/A032378.asm)): Noncubes such that n is divisible by floor(n^(1/3)).
 * [A032438](http://oeis.org/A032438) ([L09 program](032/A032438.asm)): a(n) = n^2 - floor((n+1)/2)^2.
 * [A032441](http://oeis.org/A032441) ([L76 program](032/A032441.asm)): a(n) = Sum_{i=0..2} binomial(Fibonacci(n),i).
@@ -7540,6 +7541,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083102](http://oeis.org/A083102) ([L15 program](083/A083102.asm)): a(n) = 2*a(n-1) + 10*a(n-2).
 * [A083120](http://oeis.org/A083120) ([L06 program](083/A083120.asm)): Numbers that are congruent to {0, 2, 4, 5, 7, 9, 10} mod 12.
 * [A083127](http://oeis.org/A083127) ([L15 program](083/A083127.asm)): 3*n^3+n^2-4*n.
+* [A083187](http://oeis.org/A083187) ([L80 program](083/A083187.asm)): a(n) = floor(log_3/2(n+1)) - floor(log_3/2(n)).
 * [A083196](http://oeis.org/A083196) ([L10 program](083/A083196.asm)): 8*n^4+9*n^2+2.
 * [A083217](http://oeis.org/A083217) ([L05 program](083/A083217.asm)): a(n) = (2*5^n+(-1)^n)/3.
 * [A083219](http://oeis.org/A083219) ([L04 program](083/A083219.asm)): a(n) = n - 2*floor(n/4).

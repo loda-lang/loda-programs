@@ -4,15 +4,9 @@
 mov $3,$0
 mul $0,351
 mov $2,$0
-cmp $2,6
-add $2,$0
-add $2,1
 div $2,512
-add $1,15
 mov $1,$2
 mov $4,$3
 mov $5,$4
 mul $5,4
 add $1,$5
-mul $4,$3
-mul $4,$3

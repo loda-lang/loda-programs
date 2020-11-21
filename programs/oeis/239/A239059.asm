@@ -1,0 +1,106 @@
+; A239059: Sum of the two smallest parts from the partitions of 4n into 4 parts with smallest part = 1.
+; 2,9,27,61,108,178,276,395,549,743,966,1236,1558,1917,2335,2817,3344,3942,4616,5343,6153,7051,8010,9064,10218,11441,12771,14213,15732,17370,19132,20979,22957,25071,27278,29628,32126,34725,37479,40393,43416,46606,49968
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $11,$0
+  mov $13,$0
+  add $13,1
+  lpb $13,1
+    clr $0,11
+    sub $13,1
+    mov $0,$11
+    sub $0,$13
+    mov $7,$0
+    mov $9,2
+    lpb $9,1
+      clr $0,7
+      sub $9,1
+      mov $0,$7
+      add $0,$9
+      sub $0,1
+      mul $0,4
+      div $0,2
+      mul $0,12
+      add $6,1
+      add $3,3
+      mov $5,2
+      mul $3,$3
+      mov $2,2
+      mov $2,$5
+      add $6,9
+      sub $6,3
+      mul $3,$2
+      mov $5,3
+      add $2,$6
+      mov $2,$2
+      mov $5,1
+      add $5,$2
+      lpb $0,1
+        mov $5,8
+        div $0,$2
+        mov $1,2
+        mov $2,1
+        mov $5,$2
+        add $3,2
+        pow $5,4
+        add $4,$2
+        mul $5,3
+      lpe
+      mul $3,2
+      div $5,2
+      mul $6,$0
+      mul $3,2
+      mov $3,4
+      add $6,1
+      div $6,$6
+      add $6,$0
+      mov $3,$2
+      mov $4,3
+      mul $5,$6
+      add $2,$3
+      sub $4,$6
+      mov $4,1
+      trn $3,1
+      add $3,$2
+      add $0,$0
+      add $3,$6
+      mul $5,2
+      bin $6,2
+      add $0,$6
+      log $4,2
+      mov $1,1
+      div $0,2
+      mul $6,$1
+      sub $4,$4
+      div $6,$3
+      add $4,$3
+      add $2,1
+      pow $6,$1
+      mov $3,1
+      add $4,1
+      mov $1,$0
+      mov $10,$9
+      lpb $10,1
+        mov $8,$1
+        sub $10,1
+      lpe
+    lpe
+    lpb $7,1
+      sub $8,$1
+      mov $7,0
+    lpe
+    mov $1,$8
+    add $1,2
+    add $12,$1
+  lpe
+  mov $1,$12
+  add $15,$1
+lpe
+mov $1,$15

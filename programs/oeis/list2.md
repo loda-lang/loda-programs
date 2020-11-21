@@ -767,7 +767,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215247](http://oeis.org/A215247) ([L26 program](215/A215247.asm)): A Beatty sequence: a(n) = floor((n-1/2)*(2 + 2*sqrt(2))).
 * [A215414](http://oeis.org/A215414) ([L07 program](215/A215414.asm)): Unix epoch timestamp for start of year, beginning with 1970.
 * [A215415](http://oeis.org/A215415) ([L25 program](215/A215415.asm)): a(2*n) = n, a(4*n+1) = 2*n-1, a(4*n+3) = 2*n+3.
-* [A215418](http://oeis.org/A215418) ([L82 program](215/A215418.asm)): Number of Regular and Stellar polytopes in n-dimensional Euclidean space, or -1 if infinite.
+* [A215418](http://oeis.org/A215418) ([L29 program](215/A215418.asm)): Number of Regular and Stellar polytopes in n-dimensional Euclidean space, or -1 if infinite.
 * [A215459](http://oeis.org/A215459) ([L10 program](215/A215459.asm)): Arises in quick gossiping without duplicate transmission.
 * [A215495](http://oeis.org/A215495) ([L06 program](215/A215495.asm)): a(4*n) = a(4*n+2) = a(2*n+1) = 2*n + 1.
 * [A215532](http://oeis.org/A215532) ([L27 program](215/A215532.asm)): The limit of the string "0, 1" under the operation 'append first k terms, increment k' with k=2 initially.
@@ -1093,7 +1093,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226097](http://oeis.org/A226097) ([L23 program](226/A226097.asm)): a(n) = ((-1)^n + 2*n - 38)*(2*n - 38) + 41.
 * [A226107](http://oeis.org/A226107) ([L14 program](226/A226107.asm)): Number of strict partitions of n with Cookie Monster number 2.
 * [A226164](http://oeis.org/A226164) ([L30 program](226/A226164.asm)): Sequence used for the quadratic irrational number belonging to the principal indefinite binary quadratic form.
-* [A226198](http://oeis.org/A226198) ([L06 program](226/A226198.asm)): Floor((n-1)!/n).
+* [A226198](http://oeis.org/A226198) ([L05 program](226/A226198.asm)): Floor((n-1)!/n).
 * [A226199](http://oeis.org/A226199) ([L03 program](226/A226199.asm)): 7^n + n.
 * [A226200](http://oeis.org/A226200) ([L03 program](226/A226200.asm)): 6^n + n.
 * [A226205](http://oeis.org/A226205) ([L72 program](226/A226205.asm)): a(n) = F(n)^2 - F(n-1)^2 or F(n+1) * F(n-2) where F(n) = A000045(n), the Fibonacci numbers.
@@ -1193,6 +1193,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228141](http://oeis.org/A228141) ([L06 program](228/A228141.asm)): Numbers that are congruent to {1, 5} mod 20.
 * [A228142](http://oeis.org/A228142) ([L23 program](228/A228142.asm)): Number of blocks in a Steiner system S(2, 5, A228141(n+1)).
 * [A228157](http://oeis.org/A228157) ([L09 program](228/A228157.asm)): Numbers n which are anagrams of n+9.
+* [A228177](http://oeis.org/A228177) ([L15 program](228/A228177.asm)): Floor(n*(sqrt(6)+sqrt(5))).
 * [A228219](http://oeis.org/A228219) ([L06 program](228/A228219.asm)): Number of second differences of arrays of length 4 of numbers in 0..n.
 * [A228220](http://oeis.org/A228220) ([L13 program](228/A228220.asm)): Number of second differences of arrays of length 5 of numbers in 0..n.
 * [A228221](http://oeis.org/A228221) ([L66 program](228/A228221.asm)): Number of second differences of arrays of length 6 of numbers in 0..n.
@@ -1770,7 +1771,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244803](http://oeis.org/A244803) ([L05 program](244/A244803.asm)): The 360º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244804](http://oeis.org/A244804) ([L06 program](244/A244804.asm)): The 300º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244805](http://oeis.org/A244805) ([L06 program](244/A244805.asm)): The 240º spoke (or ray) of a hexagonal spiral of Ulam.
-* [A244806](http://oeis.org/A244806) ([L09 program](244/A244806.asm)): The 180º spoke (or ray) of a hexagonal spiral of Ulam.
+* [A244806](http://oeis.org/A244806) ([L08 program](244/A244806.asm)): The 180º spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244855](http://oeis.org/A244855) ([L14 program](244/A244855.asm)): a(n) = Fibonacci(n)^4-1.
 * [A244870](http://oeis.org/A244870) ([L43 program](244/A244870.asm)): Number of magic labelings with magic sum n of 2nd graph shown in link.
 * [A244882](http://oeis.org/A244882) ([L35 program](244/A244882.asm)): Expansion of (1 + 2*x + 2*x^2) / (1 - x)^6.
@@ -3272,6 +3273,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276026](http://oeis.org/A276026) ([L06 program](276/A276026.asm)): a(n) = Sum_{k=0..7} (n + k)^2.
 * [A276041](http://oeis.org/A276041) ([L10 program](276/A276041.asm)): Exponential convolution of odd numbers (A005408) with themselves.
 * [A276134](http://oeis.org/A276134) ([L14 program](276/A276134.asm)): a(5n) = a(n), a(5n+1) = a(5n+2) = a(5n+3) = a(5n+4) = a(n) + 1, a(0) = 0.
+* [A276153](http://oeis.org/A276153) ([L81 program](276/A276153.asm)): The most significant digit when n is written in primorial base (A049345).
 * [A276191](http://oeis.org/A276191) ([L15 program](276/A276191.asm)): Sum of the squares of the digits of the base-5 representation of n.
 * [A276234](http://oeis.org/A276234) ([L13 program](276/A276234.asm)): a(n) = n/gcd(n, 256).
 * [A276265](http://oeis.org/A276265) ([L14 program](276/A276265.asm)): Expansion of (1 + 2*x)/(1 - 6*x + 6*x^2).
