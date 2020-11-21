@@ -10,10 +10,4 @@ lpb $0,1
   sub $2,2
   add $2,$3
 lpe
-sub $2,1
-bin $2,2
-div $2,2
-sub $2,1
-add $0,$2
-div $0,2
-mov $1,$0
+sub $1,3
