@@ -3,14 +3,12 @@
 
 mul $0,3
 add $0,3
-lpb $0,1
-  add $2,$0
-  mov $0,0
-  div $2,2
-  bin $2,2
-  mul $2,4
-lpe
+div $0,2
+mov $2,$0
+sub $2,1
+add $2,$0
+pow $2,2
 mov $1,$2
-div $1,12
+div $1,24
 mul $1,12
 add $1,1
