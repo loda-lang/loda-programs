@@ -2061,7 +2061,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131452](http://oeis.org/A131452) ([L09 program](131/A131452.asm)): a(3n)=4n, a(3n+1)=4n+2, a(3n+2)=4n+1.
 * [A131464](http://oeis.org/A131464) ([L13 program](131/A131464.asm)): a(n) = 4*n^3 - 3*n^2 + 2*n - 1.
 * [A131465](http://oeis.org/A131465) ([L25 program](131/A131465.asm)): a(n)=4n^4-3n^3+2n^2-n+1.
-* [A131466](http://oeis.org/A131466) ([L65 program](131/A131466.asm)): a(n) = 5n^4 - 4n^3 + 3n^2 - 2n + 1.
+* [A131466](http://oeis.org/A131466) ([L24 program](131/A131466.asm)): a(n) = 5n^4 - 4n^3 + 3n^2 - 2n + 1.
 * [A131471](http://oeis.org/A131471) ([L03 program](131/A131471.asm)): a(n)=n^5+n.
 * [A131472](http://oeis.org/A131472) ([L03 program](131/A131472.asm)): a(n) = n^6 + n.
 * [A131473](http://oeis.org/A131473) ([L03 program](131/A131473.asm)): a(n) = n^6 - n.
@@ -2095,7 +2095,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131664](http://oeis.org/A131664) ([L11 program](131/A131664.asm)): A string of n 1's repeated n times.
 * [A131666](http://oeis.org/A131666) ([L23 program](131/A131666.asm)): First differences of (A113405 prefixed with a 0).
 * [A131669](http://oeis.org/A131669) ([L04 program](131/A131669.asm)): Odd digits followed by positive even digits.
-* [A131670](http://oeis.org/A131670) ([L29 program](131/A131670.asm)): Period 5: repeat [1, 0, -1, 0, 1].
+* [A131670](http://oeis.org/A131670) ([L12 program](131/A131670.asm)): Period 5: repeat [1, 0, -1, 0, 1].
 * [A131673](http://oeis.org/A131673) ([L23 program](131/A131673.asm)): Size of the largest BDD of symmetric Boolean functions of n variables when the sink nodes are counted.
 * [A131674](http://oeis.org/A131674) ([L09 program](131/A131674.asm)): Size of the largest BDD of symmetric Boolean functions of n variables when the sink nodes are not counted.
 * [A131708](http://oeis.org/A131708) ([L09 program](131/A131708.asm)): A024494 prefixed by a 0.
@@ -3197,7 +3197,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A146087](http://oeis.org/A146087) ([L28 program](146/A146087.asm)): a(n) = 3*A146085(n) - 1.
 * [A146091](http://oeis.org/A146091) ([L28 program](146/A146091.asm)): a(n) = 3*A146085(n) - 2.
 * [A146160](http://oeis.org/A146160) ([L04 program](146/A146160.asm)): Period 4: repeat [1, 4, 1, 16].
-* [A146298](http://oeis.org/A146298) ([L11 program](146/A146298.asm)): Difference between the cubes and 2*tetrahedral numbers; A000578(n) - 2*A000292(n).
+* [A146298](http://oeis.org/A146298) ([L08 program](146/A146298.asm)): Difference between the cubes and 2*tetrahedral numbers; A000578(n) - 2*A000292(n).
 * [A146301](http://oeis.org/A146301) ([L05 program](146/A146301.asm)): a(n) = (8*n+3)*(8*n+7)
 * [A146302](http://oeis.org/A146302) ([L05 program](146/A146302.asm)): a(n) = (8*n+5)*(8*n+9).
 * [A146306](http://oeis.org/A146306) ([L15 program](146/A146306.asm)): a(n) = numerator of (n-6)/(2n)
