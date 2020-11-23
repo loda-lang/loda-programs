@@ -299,7 +299,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306753](http://oeis.org/A306753) ([L09 program](306/A306753.asm)): a(n) = Sum_{k=0..n} binomial(k, 9*(n-k)).
 * [A306764](http://oeis.org/A306764) ([L06 program](306/A306764.asm)): a(n) is a sequence of period 12: repeat [1, 1, 6, 2, 1, 3, 2, 2, 3, 1, 2, 6].
 * [A306771](http://oeis.org/A306771) ([L06 program](306/A306771.asm)): Numbers m such that phi(m) = phi(i + j) = phi(i) + phi(j) and phi(m) = phi(k * l) = phi(k) * phi(l) for some i, j, k, l, where phi is the Euler totient function A000010.
-* [A306904](http://oeis.org/A306904) ([L63 program](306/A306904.asm)): The geometric mean of the first n integers, rounded to the nearest integer.
 * [A306957](http://oeis.org/A306957) ([L14 program](306/A306957.asm)): a(n) = n!*binomial(10,n).
 * [A307018](http://oeis.org/A307018) ([L11 program](307/A307018.asm)): Total number of parts of size 3 in the partitions of n into parts of size 2 and 3.
 * [A307136](http://oeis.org/A307136) ([L08 program](307/A307136.asm)): a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
@@ -355,6 +354,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309127](http://oeis.org/A309127) ([L09 program](309/A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309214](http://oeis.org/A309214) ([L10 program](309/A309214.asm)): a(0)=0; thereafter a(n) = a(n-1)+n if a(n-1) even, otherwise a(n) = a(n-1)-n.
 * [A309231](http://oeis.org/A309231) ([L13 program](309/A309231.asm)): Column 3 of the array at A326662 see Comments.
+* [A309250](http://oeis.org/A309250) ([L103 program](309/A309250.asm)): a(n) is the index of the binary string of a Post's Correspondence Problem Encoding with index n.
 * [A309294](http://oeis.org/A309294) ([L12 program](309/A309294.asm)): (1/2) times the sum of the elements of all subsets of [n] whose sum is divisible by two.
 * [A309315](http://oeis.org/A309315) ([L06 program](309/A309315.asm)): Number of 5-colorings of an n-wheel graph.
 * [A309335](http://oeis.org/A309335) ([L09 program](309/A309335.asm)): a(n) = n^3 if n odd, 7*n^3/8 if n even.
@@ -933,6 +933,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324466](http://oeis.org/A324466) ([L10 program](324/A324466.asm)): Exponent of highest power of 2 that divides multinomial(3*n;n,n,n).
 * [A324467](http://oeis.org/A324467) ([L13 program](324/A324467.asm)): Three times the binary weight of n: 3*A000120(n).
 * [A324468](http://oeis.org/A324468) ([L19 program](324/A324468.asm)): a(n)=r(n)+r(n+1)+r(n+2), where r(n) is the ruler sequence A007814.
+* [A324469](http://oeis.org/A324469) ([L19 program](324/A324469.asm)): Exponent of highest power of 3 that divides multinomial(4*n;n,n,n,n).
 * [A324471](http://oeis.org/A324471) ([L03 program](324/A324471.asm)): a(n) = 10 mod n.
 * [A324472](http://oeis.org/A324472) ([L04 program](324/A324472.asm)): a(n) = 1000 mod n.
 * [A324560](http://oeis.org/A324560) ([L09 program](324/A324560.asm)): Numbers > 1 where the minimum prime index is less than or equal to the number of prime factors counted with multiplicity.
@@ -994,7 +995,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328752](http://oeis.org/A328752) ([L26 program](328/A328752.asm)): Lexicographically earliest sequence of distinct positive numbers such that for any n > 0, the first nonzero digit of a(n+1)/a(n) is "1".
 * [A328778](http://oeis.org/A328778) ([L34 program](328/A328778.asm)): Number of indecomposable closed walks of length 2n along the edges of a cube based at a vertex.
 * [A328824](http://oeis.org/A328824) ([L24 program](328/A328824.asm)): Numerators of A113405(-n) (see the comment for details).
-* [A328881](http://oeis.org/A328881) ([L32 program](328/A328881.asm)): a(n+3) = 2^n - a(n), a(0)=a(2)=1, a(1)=0 for n >= 0.
+* [A328881](http://oeis.org/A328881) ([L14 program](328/A328881.asm)): a(n+3) = 2^n - a(n), a(0)=a(2)=1, a(1)=0 for n >= 0.
 * [A328890](http://oeis.org/A328890) ([L07 program](328/A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
 * [A328943](http://oeis.org/A328943) ([L03 program](328/A328943.asm)): a(n) = 2 + (n mod 4).
 * [A328950](http://oeis.org/A328950) ([L36 program](328/A328950.asm)): Numerators for the "Minimum-Redundancy Code" card problem.
