@@ -1,0 +1,67 @@
+; A111186: Difference between the closest squares surrounding squarefree composite numbers.
+; 5,5,7,7,7,7,9,9,9,9,9,11,11,11,11,11,11,11,11,13,13,13,13,13,13,13,13,15,15,15,15,15,15,15,15,15,15,15,17,17,17,17,17,17,17,17,17,17,17,17,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19
+
+add $6,1
+mul $0,2
+mov $3,1
+pow $6,7
+sub $0,2
+mov $5,$3
+mov $1,16777500
+fac $3
+add $5,$1
+mul $1,2
+mov $4,$5
+fac $3
+mov $5,4
+mul $4,2
+add $5,$0
+sub $6,32
+add $3,$4
+mov $3,5
+bin $1,2
+add $6,$4
+sub $3,1
+mul $3,3
+sub $4,$4
+div $5,2
+mov $1,$0
+trn $1,0
+mul $5,2
+add $0,1
+sub $4,$3
+mov $3,$5
+add $1,1
+mov $2,1
+mov $3,$3
+trn $5,$0
+div $2,2
+add $0,$1
+lpb $0,1
+  add $6,2
+  sub $0,1
+  add $5,7
+  mov $6,2
+  mov $4,$5
+  mov $3,39
+  sub $0,$5
+  add $2,4
+  mov $2,6
+lpe
+div $4,$4
+mov $1,$5
+mov $2,1
+add $2,$4
+mul $6,2
+mov $2,$6
+trn $3,$5
+mov $6,4
+mul $5,7
+add $0,2
+add $0,$0
+sub $2,3
+mov $5,$1
+sub $1,3
+div $1,7
+mul $1,2
+add $1,5
