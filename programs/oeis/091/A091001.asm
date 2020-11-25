@@ -1,0 +1,85 @@
+; A091001: Number of walks of length n between adjacent nodes on the Petersen graph.
+; 0,1,0,5,4,33,56,253,588,2105,5632,18261,52052,161617,473928,1443629,4287196,12948969,38672144,116365957,348398820,1046594561,3136987480,9416554845,28238479724,84737808793,254168687136,762595539893
+
+add $1,11
+mov $2,2
+mov $4,1
+sub $4,1
+mov $7,$4
+add $2,$4
+mov $3,$4
+sub $7,$2
+add $8,7
+mov $8,2
+mov $8,3
+add $7,$8
+sub $7,1
+mov $8,1
+add $6,$2
+pow $6,$7
+add $3,5
+mul $3,2
+sub $3,$7
+mov $5,2
+add $1,$6
+add $6,$7
+mov $2,2
+lpb $0,1
+  add $8,2
+  sub $1,$1
+  mov $1,$6
+  mov $4,$4
+  sub $2,2
+  mul $1,$1
+  mov $7,$4
+  mov $6,$7
+  add $2,2
+  div $3,2
+  mov $3,2
+  mov $2,1
+  mov $4,$7
+  add $5,$6
+  mov $8,2
+  mov $4,$5
+  mov $6,1
+  sub $5,3
+  add $4,$4
+  sub $4,2
+  sub $4,$7
+  add $5,2
+  mov $3,$7
+  mov $8,3
+  mul $2,2
+  add $1,1
+  mul $1,2
+  trn $5,15
+  mul $7,3
+  mov $1,$4
+  mov $5,$7
+  sub $3,$0
+  sub $2,$1
+  mov $3,$5
+  mul $5,$6
+  mov $2,1
+  add $6,$2
+  mov $1,$7
+  mov $4,$4
+  div $0,$2
+  mov $7,$3
+  mul $3,$0
+  sub $0,1
+  mul $7,2
+lpe
+clr $1,1
+mov $3,$4
+mov $6,$8
+mov $0,1
+add $0,$5
+add $1,1
+mov $8,$4
+mov $6,1
+mov $0,15
+mov $7,$7
+add $6,1
+mov $1,$3
+div $1,2
