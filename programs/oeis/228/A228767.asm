@@ -1,0 +1,84 @@
+; A228767: Second bisection of the inverse binomial transform of the rational sequence with e.g.f. (x/2)*(exp(-x)+1)/(exp(x)-1).
+; -2,-9,-45,-231,-1161,-5643,-26637,-122895,-557073,-2490387,-11010069,-48234519,-209715225,-905969691,-3892314141,-16642998303,-70866960417,-300647710755,-1271310319653,-5360119185447,-22539988369449,-94557999988779,-395824185999405
+
+mov $4,$0
+mov $5,$0
+mov $4,6
+add $5,$5
+mul $4,2
+mov $6,$4
+mov $4,3
+mov $6,$5
+add $2,2
+add $7,$0
+pow $2,$6
+add $2,$4
+add $7,1
+sub $7,$5
+add $8,2
+mov $3,$7
+div $2,2
+sub $7,1
+add $3,$7
+mov $1,13
+sub $4,8
+sub $7,$0
+add $5,1
+pow $0,2
+mov $4,$3
+mov $0,$8
+mov $5,$2
+sub $7,1
+sub $6,6
+mov $3,$2
+mov $6,1
+add $3,$6
+mod $8,2
+mov $6,1
+mov $4,2
+lpb $0,1
+  mov $7,1
+  div $1,8
+  mov $7,1
+  mov $5,$3
+  mov $1,$7
+  mul $3,8
+  mul $8,2
+  pow $6,$6
+  mov $3,$2
+  sub $1,$6
+  mov $8,2
+  mov $1,$3
+  sub $3,6
+  mov $3,$3
+  add $8,$8
+  sub $8,2
+  trn $5,$4
+  sub $5,1
+  add $0,1
+  sub $0,1
+  add $7,4
+  add $8,1
+  sub $6,1
+  sub $6,$4
+  mov $7,5
+  mov $3,$1
+  add $0,1
+  sub $2,$2
+lpe
+add $4,$0
+mov $3,$1
+mov $1,$1
+cmp $3,1
+mod $6,2
+trn $3,0
+sub $3,1
+sub $6,1
+mul $7,$5
+sub $5,$5
+mov $0,6
+gcd $6,2
+mov $5,$8
+mov $2,1
+mov $5,$3
+mov $1,$7
