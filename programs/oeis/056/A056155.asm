@@ -4,28 +4,15 @@
 mul $0,8
 trn $0,1
 lpb $0,1
-  mov $4,$0
   add $1,$0
-  add $24,$1
-  mov $1,$4
   add $2,6
-  add $1,$4
-  add $1,1
-  add $1,-3
-  lpb $24,1
-    mov $1,1
-    div $24,2
+  add $3,$1
+  lpb $3,1
     sub $0,4
-    add $4,$0
-    mov $4,$6
-    mov $1,$8
-    sub $13,1
+    mov $1,$4
+    div $3,2
   lpe
-  div $24,4
-  mul $1,4
-  trn $6,$4
   trn $0,$1
-  mov $9,2
 lpe
 mov $1,$2
 div $1,6
