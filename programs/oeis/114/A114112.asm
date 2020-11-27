@@ -3,13 +3,7 @@
 
 mov $1,$0
 sub $1,2
-mov $2,$1
-mov $4,-1
-pow $4,$2
-add $2,6
-sub $2,$4
-sub $2,3
-mov $3,$4
-mul $3,2
-add $2,$3
-mov $1,$2
+mov $2,-1
+pow $2,$1
+add $1,3
+add $1,$2
