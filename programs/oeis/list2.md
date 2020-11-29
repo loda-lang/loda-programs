@@ -494,6 +494,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212503](http://oeis.org/A212503) ([L07 program](212/A212503.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<2x and y<2z.
 * [A212505](http://oeis.org/A212505) ([L07 program](212/A212505.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<2x and y>=2z.
 * [A212506](http://oeis.org/A212506) ([L07 program](212/A212506.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<=2x and y<=2z.
+* [A212518](http://oeis.org/A212518) ([L16 program](212/A212518.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w>2x and y>3z.
 * [A212519](http://oeis.org/A212519) ([L18 program](212/A212519.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w>2x and y>=3z.
 * [A212523](http://oeis.org/A212523) ([L15 program](212/A212523.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<y+z.
 * [A212560](http://oeis.org/A212560) ([L11 program](212/A212560.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<=y+z.
@@ -632,7 +633,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213480](http://oeis.org/A213480) ([L31 program](213/A213480.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y| != w+x+y.
 * [A213481](http://oeis.org/A213481) ([L47 program](213/A213481.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y| <= w+x+y.
 * [A213483](http://oeis.org/A213483) ([L60 program](213/A213483.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y| >= w+x+y.
-* [A213484](http://oeis.org/A213484) ([L08 program](213/A213484.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| >= w+x+y.
+* [A213484](http://oeis.org/A213484) ([L07 program](213/A213484.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| >= w+x+y.
 * [A213485](http://oeis.org/A213485) ([L14 program](213/A213485.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| != w+x+y.
 * [A213486](http://oeis.org/A213486) ([L13 program](213/A213486.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| > w+x+y.
 * [A213487](http://oeis.org/A213487) ([L46 program](213/A213487.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| <= w+x+y.
@@ -722,7 +723,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214489](http://oeis.org/A214489) ([L15 program](214/A214489.asm)): Numbers m such that A070939(m) = A070939(m + A070939(m)), A070939 = length of binary representation.
 * [A214493](http://oeis.org/A214493) ([L21 program](214/A214493.asm)): Numbers of the form ((6k+5)^2+9)/2 or 2(3k+4)^2-9.
 * [A214560](http://oeis.org/A214560) ([L18 program](214/A214560.asm)): Number of 0's in binary expansion of n^2.
-* [A214587](http://oeis.org/A214587) ([L11 program](214/A214587.asm)): Greatest common divisor of a number and its last decimal digit: a(n) = gcd(n, n mod 10).
+* [A214587](http://oeis.org/A214587) ([L08 program](214/A214587.asm)): Greatest common divisor of a number and its last decimal digit: a(n) = gcd(n, n mod 10).
 * [A214628](http://oeis.org/A214628) ([L17 program](214/A214628.asm)): Intersections of radii with the cycloid.
 * [A214630](http://oeis.org/A214630) ([L10 program](214/A214630.asm)): a(n) is the reduced numerator of 1/4 - 1/A109043(n)^2 = (1 - 1/A026741(n)^2)/4.
 * [A214656](http://oeis.org/A214656) ([L03 program](214/A214656.asm)): Floor of the imaginary part of the zeros of the complex Fibonacci function on the left half plane.
@@ -2645,7 +2646,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A265429](http://oeis.org/A265429) ([L09 program](265/A265429.asm)): Total number of ON (black) cells after n iterations of the "Rule 188" elementary cellular automaton starting with a single ON (black) cell.
 * [A265430](http://oeis.org/A265430) ([L12 program](265/A265430.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 188" elementary cellular automaton starting with a single ON (black) cell.
 * [A265431](http://oeis.org/A265431) ([L09 program](265/A265431.asm)): Total number of OFF (white) cells after n iterations of the "Rule 188" elementary cellular automaton starting with a single ON (black) cell.
-* [A265541](http://oeis.org/A265541) ([L19 program](265/A265541.asm)): Largest base-9 palindrome m <= n, written in base 10.
+* [A265541](http://oeis.org/A265541) ([L09 program](265/A265541.asm)): Largest base-9 palindrome m <= n, written in base 10.
 * [A265611](http://oeis.org/A265611) ([L07 program](265/A265611.asm)): a(n) = a(n-1) + floor((n-1)/2) - (-1)^n + 2 for n>=2, a(0)=1, a(1)=3.
 * [A265645](http://oeis.org/A265645) ([L04 program](265/A265645.asm)): a(n) = n^2 * floor(n/2).
 * [A265667](http://oeis.org/A265667) ([L09 program](265/A265667.asm)): Permutation of nonnegative integers: a(n) = n + floor(n/3)*(-1)^(n mod 3).
@@ -3512,7 +3513,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A281333](http://oeis.org/A281333) ([L07 program](281/A281333.asm)): a(n) = 1 + floor(n/2) + floor(n^2/3).
 * [A281375](http://oeis.org/A281375) ([L10 program](281/A281375.asm)): a(n) = floor(2^(n+1)/n).
 * [A281376](http://oeis.org/A281376) ([L13 program](281/A281376.asm)): Total number of counts where floor(N/k) < floor((N+k)/n) for k = {1, 2, ..., n-1} and N >= n.
-* [A281381](http://oeis.org/A281381) ([L20 program](281/A281381.asm)): a(n) = n*(n + 1)*(4*n + 5)/2.
+* [A281381](http://oeis.org/A281381) ([L16 program](281/A281381.asm)): a(n) = n*(n + 1)*(4*n + 5)/2.
 * [A281387](http://oeis.org/A281387) ([L07 program](281/A281387.asm)): Pairs (x, y) of relatively prime positive integers such that (x^2 - 5)/y and (y^2 - 5)/x are both positive integers.
 * [A281445](http://oeis.org/A281445) ([L10 program](281/A281445.asm)): Nonnegative k for which (2*k^2 + 1)/11 is an integer.
 * [A281481](http://oeis.org/A281481) ([L06 program](281/A281481.asm)): a(n) = 2^(n - 1) * (2^n + 1) + 1.
