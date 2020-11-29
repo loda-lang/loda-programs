@@ -891,6 +891,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322465](http://oeis.org/A322465) ([L08 program](322/A322465.asm)): Numbers on the 0-9-10-line in a spiral on an equilateral triangular lattice.
 * [A322489](http://oeis.org/A322489) ([L08 program](322/A322489.asm)): Numbers k such that k^k ends with 4.
 * [A322490](http://oeis.org/A322490) ([L08 program](322/A322490.asm)): Numbers k such that k^k ends with 7.
+* [A322533](http://oeis.org/A322533) ([L18 program](322/A322533.asm)): Position of 1/3^n in the sequence of all numbers 1/2^m, 1/3^m, 2/3^m arranged in decreasing order.
+* [A322534](http://oeis.org/A322534) ([L18 program](322/A322534.asm)): Position of 2/3^n in the sequence of all numbers 1/2^m, 1/3^m, 2/3^m arranged in decreasing order.
 * [A322593](http://oeis.org/A322593) ([L08 program](322/A322593.asm)): a(n) = 2^n + 2*n^2 + 1.
 * [A322594](http://oeis.org/A322594) ([L09 program](322/A322594.asm)): a(n) = (4*n^3 + 12*n^2 - 4*n + 3)/3.
 * [A322595](http://oeis.org/A322595) ([L08 program](322/A322595.asm)): a(n) = (n^3 + 9*n + 14*n + 9)/3.
@@ -925,7 +927,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323724](http://oeis.org/A323724) ([L15 program](323/A323724.asm)): a(n) = n*(2*(n - 2)*n + (-1)^n + 3)/4.
 * [A323735](http://oeis.org/A323735) ([L13 program](323/A323735.asm)): a(n) is the largest minimal distance of a binary LCD [n,2] code.
 * [A323824](http://oeis.org/A323824) ([L05 program](323/A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
-* [A323847](http://oeis.org/A323847) ([L15 program](323/A323847.asm)): a(n) = (n-1)*(n-2)*(n^2+9*n+12)/24.
+* [A323847](http://oeis.org/A323847) ([L12 program](323/A323847.asm)): a(n) = (n-1)*(n-2)*(n^2+9*n+12)/24.
 * [A323956](http://oeis.org/A323956) ([L13 program](323/A323956.asm)): Triangle read by rows: T(n, k) = 1 + n * (n - k) for 1 <= k <= n.
 * [A324015](http://oeis.org/A324015) ([L10 program](324/A324015.asm)): Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
 * [A324172](http://oeis.org/A324172) ([L11 program](324/A324172.asm)): Number of subsets of {1,...,n} that cross their complement.
@@ -1161,7 +1163,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331739](http://oeis.org/A331739) ([L34 program](331/A331739.asm)): a(n) is n minus its largest odd divisor.
 * [A331801](http://oeis.org/A331801) ([L24 program](331/A331801.asm)): Integers that are sum of two nonsquarefree numbers.
 * [A331943](http://oeis.org/A331943) ([L09 program](331/A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
-* [A331952](http://oeis.org/A331952) ([L08 program](331/A331952.asm)): a(n) = (-7 + (-1)^(1+n) + 6*n^2) / 8.
+* [A331952](http://oeis.org/A331952) ([L07 program](331/A331952.asm)): a(n) = (-7 + (-1)^(1+n) + 6*n^2) / 8.
 * [A331987](http://oeis.org/A331987) ([L20 program](331/A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
 * [A332019](http://oeis.org/A332019) ([L14 program](332/A332019.asm)): The number of cells added in the n-th generation of the following procedure: start by coloring any triangle on the snub square tiling, then repeatedly color every cell that shares a vertex with a colored cell.
 * [A332023](http://oeis.org/A332023) ([L27 program](332/A332023.asm)): T(n, k) = binomial(n+2, 3) + binomial(k+1, 2) + binomial(k, 1). Triangle read by rows, T(n, k) for 0 <= k <= n.
@@ -1264,7 +1266,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337624](http://oeis.org/A337624) ([L24 program](337/A337624.asm)): a(n) is the least positive integer in base n that when multiplied by 2n-1 will contain only the digits 0 and 1.
 * [A337843](http://oeis.org/A337843) ([L07 program](337/A337843.asm)): a(n) is n + the number of digits in the decimal expansion of n.
 * [A337864](http://oeis.org/A337864) ([L15 program](337/A337864.asm)): Numbers formed by removing from n each digit if it is a duplicate of the previous digit, from left to right.
-* [A337899](http://oeis.org/A337899) ([L10 program](337/A337899.asm)): Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.
+* [A337899](http://oeis.org/A337899) ([L07 program](337/A337899.asm)): Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.
 * [A337909](http://oeis.org/A337909) ([L21 program](337/A337909.asm)): Distinct terms of A080079 in the order in which they appear.
 * [A337928](http://oeis.org/A337928) ([L20 program](337/A337928.asm)): Numbers w such that (F(2n+1)^2, -F(2n)^2, -w) are primitive solutions of the Diophantine equation 2*x^3 + 2*y^3 + z^3 = 1, where F(n) is the n-th Fibonacci number (A000045).
 * [A337929](http://oeis.org/A337929) ([L17 program](337/A337929.asm)): Numbers w such that (F(2*n-1)^2, -F(2*n)^2, w) are primitive solutions of the Diophantine equation 2*x^3 + 2*y^3 + z^3 = 1, where F(n) is the n-th Fibonacci number (A000045).
@@ -1287,3 +1289,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338760](http://oeis.org/A338760) ([L30 program](338/A338760.asm)): Subword complexity of a certain infinite word.
 * [A338824](http://oeis.org/A338824) ([L13 program](338/A338824.asm)): Lexicographically earliest sequence of nonnegative integers such that for any distinct m and n, a(m) OR a(m+1) <> a(n) OR a(n+1) (where OR denotes the bitwise OR operator).
 * [A339136](http://oeis.org/A339136) ([L29 program](339/A339136.asm)): Number of (undirected) cycles in the graph C_3 X P_n.
+* [A339196](http://oeis.org/A339196) ([L92 program](339/A339196.asm)): Number of (undirected) cycles on the n X 2 king graph.
