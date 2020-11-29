@@ -2584,7 +2584,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135708](http://oeis.org/A135708) ([L19 program](135/A135708.asm)): Minimal total number of edges in a polyhex consisting of n hexagonal cells.
 * [A135711](http://oeis.org/A135711) ([L15 program](135/A135711.asm)): Minimal perimeter of a polyhex with n cells.
 * [A135712](http://oeis.org/A135712) ([L13 program](135/A135712.asm)): a(n) = (4*n^3 + 11*n^2 + 9*n + 2)/2.
-* [A135713](http://oeis.org/A135713) ([L19 program](135/A135713.asm)): a(n) = n*(n+1)*(4*n+1)/2.
+* [A135713](http://oeis.org/A135713) ([L16 program](135/A135713.asm)): a(n) = n*(n+1)*(4*n+1)/2.
 * [A135854](http://oeis.org/A135854) ([L13 program](135/A135854.asm)): a(n) = (n+1)*(2^n+1) for n>0 with a(0)=1.
 * [A135859](http://oeis.org/A135859) ([L05 program](135/A135859.asm)): Row sums of triangle A135858.
 * [A135913](http://oeis.org/A135913) ([L17 program](135/A135913.asm)): 2+4*2^n-3^n.
@@ -3426,7 +3426,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152965](http://oeis.org/A152965) ([L04 program](152/A152965.asm)): Twice 12-gonal numbers: a(n) = 2*n*(5*n-4).
 * [A152994](http://oeis.org/A152994) ([L04 program](152/A152994.asm)): Nine times hexagonal numbers: a(n) = 9*n*(2*n-1).
 * [A152995](http://oeis.org/A152995) ([L04 program](152/A152995.asm)): Twice 11-gonal numbers: a(n) = n*(9*n-7).
-* [A152996](http://oeis.org/A152996) ([L05 program](152/A152996.asm)): 9 times pentagonal numbers: 9*n*(3*n-1)/2.
+* [A152996](http://oeis.org/A152996) ([L04 program](152/A152996.asm)): 9 times pentagonal numbers: 9*n*(3*n-1)/2.
 * [A152997](http://oeis.org/A152997) ([L04 program](152/A152997.asm)): Twice 13-gonal numbers: a(n) = n*(11*n - 9).
 * [A153010](http://oeis.org/A153010) ([L12 program](153/A153010.asm)): Indices of A153007 where the entry equals zero.
 * [A153026](http://oeis.org/A153026) ([L25 program](153/A153026.asm)): a(1)=0, a(n) = n^3 - a(n-1).
@@ -3482,7 +3482,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A153784](http://oeis.org/A153784) ([L04 program](153/A153784.asm)): 4 times heptagonal numbers: 2n(5n-3).
 * [A153785](http://oeis.org/A153785) ([L06 program](153/A153785.asm)): 5 times heptagonal numbers: a(n) = 5*n*(5*n-3)/2.
 * [A153786](http://oeis.org/A153786) ([L05 program](153/A153786.asm)): 6 times heptagonal numbers: a(n) = 3*n*(5*n-3).
-* [A153792](http://oeis.org/A153792) ([L05 program](153/A153792.asm)): 12 times pentagonal numbers: a(n) = 6*n*(3*n-1).
+* [A153792](http://oeis.org/A153792) ([L04 program](153/A153792.asm)): 12 times pentagonal numbers: a(n) = 6*n*(3*n-1).
 * [A153793](http://oeis.org/A153793) ([L05 program](153/A153793.asm)): 13 times pentagonal numbers: a(n) = 13*n*(3*n-1)/2.
 * [A153794](http://oeis.org/A153794) ([L04 program](153/A153794.asm)): 4 times octagonal numbers: a(n) = 4*n*(3*n-2).
 * [A153795](http://oeis.org/A153795) ([L06 program](153/A153795.asm)): 5 times octagonal numbers: a(n) = 5*n*(3*n-2).
@@ -3574,6 +3574,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154708](http://oeis.org/A154708) ([L05 program](154/A154708.asm)): Numbers a such that b and c exist with b <= a < c and a*(a+1) + b^2 = c^2.
 * [A154811](http://oeis.org/A154811) ([L08 program](154/A154811.asm)): a(n) = Fibonacci(2n+1) mod 9.
 * [A154870](http://oeis.org/A154870) ([L17 program](154/A154870.asm)): Period 6: repeat [7, 5, 1, -7, -5, -1].
+* [A154879](http://oeis.org/A154879) ([L62 program](154/A154879.asm)): Third differences of the Jacobsthal sequence A001045.
 * [A154890](http://oeis.org/A154890) ([L12 program](154/A154890.asm)): Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
 * [A154920](http://oeis.org/A154920) ([L11 program](154/A154920.asm)): Denominators of a ternary BBP-type formula for log(3).
 * [A154955](http://oeis.org/A154955) ([L03 program](154/A154955.asm)): a(1) = 1, a(2) = -1, followed by 0, 0, 0, ... .
@@ -4304,7 +4305,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160811](http://oeis.org/A160811) ([L16 program](160/A160811.asm)): Numbers not dividing 24.
 * [A160827](http://oeis.org/A160827) ([L08 program](160/A160827.asm)): a(n) = 3*n^4 + 12*n^3 + 30*n^2 + 36*n + 17.
 * [A160828](http://oeis.org/A160828) ([L10 program](160/A160828.asm)): a(n) = 4*n^4 + 24*n^3 + 84*n^2 + 144*n + 98.
-* [A160842](http://oeis.org/A160842) ([L06 program](160/A160842.asm)): Number of lines through at least 2 points of a 2 X n grid of points.
+* [A160842](http://oeis.org/A160842) ([L08 program](160/A160842.asm)): Number of lines through at least 2 points of a 2 X n grid of points.
 * [A160843](http://oeis.org/A160843) ([L19 program](160/A160843.asm)): Number of lines through at least 2 points of a 3 X n grid of points.
 * [A160912](http://oeis.org/A160912) ([L04 program](160/A160912.asm)): [1, 3, 5, 7,...] convolved with [1, 4, 0, 0, 0,...]
 * [A160914](http://oeis.org/A160914) ([L32 program](160/A160914.asm)): Extended s-block elements for Janet table.
@@ -6827,7 +6828,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192790](http://oeis.org/A192790) ([L05 program](192/A192790.asm)): Molecular topological index of the Andrasfai graphs
 * [A192791](http://oeis.org/A192791) ([L13 program](192/A192791.asm)): Molecular topological indices of the antiprism graphs
 * [A192793](http://oeis.org/A192793) ([L16 program](192/A192793.asm)): Molecular topological indices of the crossed prism graphs
-* [A192796](http://oeis.org/A192796) ([L24 program](192/A192796.asm)): Molecular topological indices of the crown graphs
+* [A192796](http://oeis.org/A192796) ([L17 program](192/A192796.asm)): Molecular topological indices of the crown graphs
 * [A192797](http://oeis.org/A192797) ([L08 program](192/A192797.asm)): Molecular topological indices of the cycle graphs
 * [A192827](http://oeis.org/A192827) ([L07 program](192/A192827.asm)): Molecular topological indices of the gear graphs
 * [A192831](http://oeis.org/A192831) ([L28 program](192/A192831.asm)): Molecular topological indices of the hypercube graphs.

@@ -1163,7 +1163,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331739](http://oeis.org/A331739) ([L34 program](331/A331739.asm)): a(n) is n minus its largest odd divisor.
 * [A331801](http://oeis.org/A331801) ([L24 program](331/A331801.asm)): Integers that are sum of two nonsquarefree numbers.
 * [A331943](http://oeis.org/A331943) ([L09 program](331/A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
-* [A331952](http://oeis.org/A331952) ([L08 program](331/A331952.asm)): a(n) = (-7 + (-1)^(1+n) + 6*n^2) / 8.
+* [A331952](http://oeis.org/A331952) ([L07 program](331/A331952.asm)): a(n) = (-7 + (-1)^(1+n) + 6*n^2) / 8.
 * [A331987](http://oeis.org/A331987) ([L20 program](331/A331987.asm)): a(n) = ((n + 1) - 9*(n + 1)^2 + 8*(n + 1)^3)/6.
 * [A332019](http://oeis.org/A332019) ([L14 program](332/A332019.asm)): The number of cells added in the n-th generation of the following procedure: start by coloring any triangle on the snub square tiling, then repeatedly color every cell that shares a vertex with a colored cell.
 * [A332023](http://oeis.org/A332023) ([L27 program](332/A332023.asm)): T(n, k) = binomial(n+2, 3) + binomial(k+1, 2) + binomial(k, 1). Triangle read by rows, T(n, k) for 0 <= k <= n.
@@ -1289,3 +1289,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338760](http://oeis.org/A338760) ([L30 program](338/A338760.asm)): Subword complexity of a certain infinite word.
 * [A338824](http://oeis.org/A338824) ([L13 program](338/A338824.asm)): Lexicographically earliest sequence of nonnegative integers such that for any distinct m and n, a(m) OR a(m+1) <> a(n) OR a(n+1) (where OR denotes the bitwise OR operator).
 * [A339136](http://oeis.org/A339136) ([L29 program](339/A339136.asm)): Number of (undirected) cycles in the graph C_3 X P_n.
+* [A339196](http://oeis.org/A339196) ([L92 program](339/A339196.asm)): Number of (undirected) cycles on the n X 2 king graph.

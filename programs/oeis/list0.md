@@ -1166,7 +1166,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010059](http://oeis.org/A010059) ([L08 program](010/A010059.asm)): Another version of the Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
 * [A010060](http://oeis.org/A010060) ([L09 program](010/A010060.asm)): Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
 * [A010062](http://oeis.org/A010062) ([L14 program](010/A010062.asm)): a(0)=1; thereafter a(n+1) = a(n) + number of 1's in binary representation of a(n).
-* [A010070](http://oeis.org/A010070) ([L22 program](010/A010070.asm)): Base 8 self or Colombian numbers (not of form n + sum of base 8 digits of n).
+* [A010070](http://oeis.org/A010070) ([L22 program](010/A010070.asm)): Base 8 self or Colombian numbers (not of form k + sum of base 8 digits of k).
 * [A010078](http://oeis.org/A010078) ([L10 program](010/A010078.asm)): Shortest representation of -n in 2's-complement format.
 * [A010079](http://oeis.org/A010079) ([L25 program](010/A010079.asm)): Coordination sequence for net formed by holes in D_4 lattice.
 * [A010096](http://oeis.org/A010096) ([L08 program](010/A010096.asm)): log2*(n) (version 1): number of times floor(log_2(x)) is used in floor(log_2(floor(log_2(...(floor(log_2(n)))...)))) = 0.
@@ -2430,7 +2430,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022850](http://oeis.org/A022850) ([L14 program](022/A022850.asm)): Integer nearest nx, where x = sqrt(7).
 * [A022851](http://oeis.org/A022851) ([L08 program](022/A022851.asm)): a(n) = integer nearest nx, where x = sqrt(8).
 * [A022856](http://oeis.org/A022856) ([L12 program](022/A022856.asm)): a(n) = n-2 + Sum_{i = 1..n-2} (a(i+1) mod a(i)) for n >= 3 with a(1) = a(2) = 1.
-* [A022921](http://oeis.org/A022921) ([L124 program](022/A022921.asm)): Number of 2^m between 3^n and 3^(n+1).
+* [A022921](http://oeis.org/A022921) ([L36 program](022/A022921.asm)): Number of 2^m between 3^n and 3^(n+1).
 * [A022926](http://oeis.org/A022926) ([L22 program](022/A022926.asm)): Number of powers of 7 between 2^n and 2^(n+1).
 * [A022927](http://oeis.org/A022927) ([L43 program](022/A022927.asm)): Number of 3^m between 5^n and 5^(n+1).
 * [A022931](http://oeis.org/A022931) ([L16 program](022/A022931.asm)): Number of e^m between Pi^n and Pi^(n+1).
@@ -4978,7 +4978,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A051880](http://oeis.org/A051880) ([L15 program](051/A051880.asm)): a(n) = binomial(n+4,4)*(2*n+1).
 * [A051885](http://oeis.org/A051885) ([L24 program](051/A051885.asm)): Smallest number whose sum of digits is n.
 * [A051890](http://oeis.org/A051890) ([L04 program](051/A051890.asm)): a(n) = 2*(n^2 - n + 1).
-* [A051895](http://oeis.org/A051895) ([L23 program](051/A051895.asm)): Partial sums of second pentagonal numbers with even index (A049453).
+* [A051895](http://oeis.org/A051895) ([L16 program](051/A051895.asm)): Partial sums of second pentagonal numbers with even index (A049453).
 * [A051920](http://oeis.org/A051920) ([L06 program](051/A051920.asm)): a(n) = binomial(n, floor(n/2)) + 1.
 * [A051923](http://oeis.org/A051923) ([L11 program](051/A051923.asm)): Partial sums of A051836.
 * [A051924](http://oeis.org/A051924) ([L36 program](051/A051924.asm)): a(n) = binomial(2*n,n) - binomial(2*n-2,n-1); or (3n-2)*C(n-1), where C = Catalan numbers (A000108).
@@ -5029,6 +5029,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052549](http://oeis.org/A052549) ([L05 program](052/A052549.asm)): a(n) = 5*2^(n-1) - 1, n>0, with a(0)=1.
 * [A052551](http://oeis.org/A052551) ([L05 program](052/A052551.asm)): Expansion of 1/((1 - x)*(1 - 2*x^2)).
 * [A052552](http://oeis.org/A052552) ([L11 program](052/A052552.asm)): a(2*n+1) = 1, a(2*n) = 2*a(2*n-2) - 1.
+* [A052553](http://oeis.org/A052553) ([L15 program](052/A052553.asm)): Square array of binomial coefficients T(n,k) = binomial(n,k), n >= 0, k >= 0, read by antidiagonals.
 * [A052747](http://oeis.org/A052747) ([L72 program](052/A052747.asm)): a(0) = a(1) = a(2) = 0; a(n) = n!/(n-2) for n > 2.
 * [A052749](http://oeis.org/A052749) ([L07 program](052/A052749.asm)): 2n*S2(n-1,2).
 * [A052759](http://oeis.org/A052759) ([L12 program](052/A052759.asm)): E.g.f.: x^3*log(1/(1-x)).
