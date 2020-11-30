@@ -73,7 +73,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301727](http://oeis.org/A301727) ([L42 program](301/A301727.asm)): Partial sums of A301726.
 * [A301729](http://oeis.org/A301729) ([L18 program](301/A301729.asm)): a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
 * [A301755](http://oeis.org/A301755) ([L10 program](301/A301755.asm)): Decimal expansion of 3/8.
-* [A301773](http://oeis.org/A301773) ([L84 program](301/A301773.asm)): Number of odd chordless cycles in the 2n-Moebius ladder graph.
+* [A301773](http://oeis.org/A301773) ([L21 program](301/A301773.asm)): Number of odd chordless cycles in the 2n-Moebius ladder graph.
 * [A301787](http://oeis.org/A301787) ([L17 program](301/A301787.asm)): Number of nX5 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301791](http://oeis.org/A301791) ([L18 program](301/A301791.asm)): Number of 2Xn 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
 * [A301819](http://oeis.org/A301819) ([L10 program](301/A301819.asm)): Number of nX4 0..1 arrays with every element equal to 1 or 2 horizontally or antidiagonally adjacent elements, with upper left element zero.
@@ -516,6 +516,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313752](http://oeis.org/A313752) ([L37 program](313/A313752.asm)): Coordination sequence Gal.5.300.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313753](http://oeis.org/A313753) ([L37 program](313/A313753.asm)): Coordination sequence Gal.6.253.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313754](http://oeis.org/A313754) ([L37 program](313/A313754.asm)): Coordination sequence Gal.4.142.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313772](http://oeis.org/A313772) ([L120 program](313/A313772.asm)): Coordination sequence Gal.6.328.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313773](http://oeis.org/A313773) ([L24 program](313/A313773.asm)): Coordination sequence Gal.5.131.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313780](http://oeis.org/A313780) ([L11 program](313/A313780.asm)): Coordination sequence Gal.3.23.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313781](http://oeis.org/A313781) ([L24 program](313/A313781.asm)): Coordination sequence Gal.6.617.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -1291,3 +1292,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338824](http://oeis.org/A338824) ([L13 program](338/A338824.asm)): Lexicographically earliest sequence of nonnegative integers such that for any distinct m and n, a(m) OR a(m+1) <> a(n) OR a(n+1) (where OR denotes the bitwise OR operator).
 * [A339136](http://oeis.org/A339136) ([L29 program](339/A339136.asm)): Number of (undirected) cycles in the graph C_3 X P_n.
 * [A339196](http://oeis.org/A339196) ([L23 program](339/A339196.asm)): Number of (undirected) cycles on the n X 2 king graph.
+* [A339252](http://oeis.org/A339252) ([L104 program](339/A339252.asm)): a(1) = 1, a(2) = 4, a(3) = 11, and a(n) = 4*a(n-1) + 4*a(n-2) for n >= 4.

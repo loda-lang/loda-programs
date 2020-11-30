@@ -3728,7 +3728,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037958](http://oeis.org/A037958) ([L07 program](037/A037958.asm)): a(n) = binomial(n, floor((n-8)/2)).
 * [A037965](http://oeis.org/A037965) ([L15 program](037/A037965.asm)): a(n) = n*binomial(2*n-2, n-1).
 * [A038123](http://oeis.org/A038123) ([L05 program](038/A038123.asm)): Beatty sequence for Feigenbaum's constant.
-* [A038124](http://oeis.org/A038124) ([L103 program](038/A038124.asm)): Beatty sequence for Brun's constant.
+* [A038124](http://oeis.org/A038124) ([L13 program](038/A038124.asm)): Beatty sequence for Brun's constant.
 * [A038125](http://oeis.org/A038125) ([L12 program](038/A038125.asm)): Sum_{k=0..n} (k-n)^k.
 * [A038129](http://oeis.org/A038129) ([L07 program](038/A038129.asm)): Beatty sequence for cube root of 2.
 * [A038130](http://oeis.org/A038130) ([L14 program](038/A038130.asm)): Beatty sequence for 2*Pi.
@@ -5589,7 +5589,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059141](http://oeis.org/A059141) ([L13 program](059/A059141.asm)): A hierarchical sequence (W2{3}*c - see A059126).
 * [A059144](http://oeis.org/A059144) ([L16 program](059/A059144.asm)): A hierarchical sequence (W3{2,2}*cc - see A059126).
 * [A059152](http://oeis.org/A059152) ([L06 program](059/A059152.asm)): A hierarchical sequence (W'2{2}c - see A059126).
-* [A059153](http://oeis.org/A059153) ([L06 program](059/A059153.asm)): a(n) = 2^(n+2)*(2^(n+1)-1).
+* [A059153](http://oeis.org/A059153) ([L05 program](059/A059153.asm)): a(n) = 2^(n+2)*(2^(n+1)-1).
 * [A059154](http://oeis.org/A059154) ([L06 program](059/A059154.asm)): A hierarchical sequence (W'2{3}c - see A059126).
 * [A059157](http://oeis.org/A059157) ([L07 program](059/A059157.asm)): A hierarchical sequence (W'3{2,2}cc - see A059126).
 * [A059159](http://oeis.org/A059159) ([L05 program](059/A059159.asm)): A hierarchical sequence (W'2{2}*c) - see A059126).

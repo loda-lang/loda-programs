@@ -333,7 +333,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A209726](http://oeis.org/A209726) ([L16 program](209/A209726.asm)): 1/4 the number of (n+1) X 8 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
 * [A209876](http://oeis.org/A209876) ([L03 program](209/A209876.asm)): a(n) = 36*n - 6.
 * [A209890](http://oeis.org/A209890) ([L21 program](209/A209890.asm)): Number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having two distinct values, and new values 0..2 introduced in row major order.
-* [A209899](http://oeis.org/A209899) ([L13 program](209/A209899.asm)): Floor of the expected number of empty cells in a random placement of 2n balls into n cells.
+* [A209899](http://oeis.org/A209899) ([L03 program](209/A209899.asm)): Floor of the expected number of empty cells in a random placement of 2n balls into n cells.
 * [A209900](http://oeis.org/A209900) ([L05 program](209/A209900.asm)): Floor of the expected number of occupied cells in a random placement of 2n balls into n cells.
 * [A209931](http://oeis.org/A209931) ([L04 program](209/A209931.asm)):  Numbers n such that smallest digit of all divisors of n is 1.
 * [A209971](http://oeis.org/A209971) ([L12 program](209/A209971.asm)): a(n) = A000129(n) + n.
@@ -432,7 +432,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211620](http://oeis.org/A211620) ([L52 program](211/A211620.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and -1<=2w+x+y<=1.
 * [A211622](http://oeis.org/A211622) ([L22 program](211/A211622.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and w+2x+3y>1.
 * [A211623](http://oeis.org/A211623) ([L17 program](211/A211623.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and -1<=w+2x+3y<=1.
-* [A211661](http://oeis.org/A211661) ([L06 program](211/A211661.asm)): Number of iterations log_3(log_3(log_3(...(n)...))) such that the result is < 1.
+* [A211661](http://oeis.org/A211661) ([L05 program](211/A211661.asm)): Number of iterations log_3(log_3(log_3(...(n)...))) such that the result is < 1.
 * [A211662](http://oeis.org/A211662) ([L08 program](211/A211662.asm)): Number of iterations log_3(log_3(log_3(...(n)...))) such that the result is < 2.
 * [A211663](http://oeis.org/A211663) ([L06 program](211/A211663.asm)): Number of iterations log(log(log(...(n)...))) such that the result is < 1, where log is the natural logarithm.
 * [A211664](http://oeis.org/A211664) ([L08 program](211/A211664.asm)): Number of iterations (...f_4(f_3(f_2(n))))...) such that the result is < 1, where f_j(x):=log_j(x).
@@ -871,6 +871,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218130](http://oeis.org/A218130) ([L16 program](218/A218130.asm)): Number of length 6 primitive (=aperiodic or period 6) n-ary words.
 * [A218131](http://oeis.org/A218131) ([L05 program](218/A218131.asm)): Number of length 8 primitive (=aperiodic or period 8) n-ary words.
 * [A218132](http://oeis.org/A218132) ([L07 program](218/A218132.asm)): Number of length 9 primitive (=aperiodic or period 9) n-ary words.
+* [A218133](http://oeis.org/A218133) ([L18 program](218/A218133.asm)): Number of length 10 primitive (=aperiodic or period 10) n-ary words.
 * [A218152](http://oeis.org/A218152) ([L07 program](218/A218152.asm)): a(n) = 1 + n + ((n-1)*n^2)/2.
 * [A218155](http://oeis.org/A218155) ([L19 program](218/A218155.asm)): Numbers congruent to 2, 3, 6, 11 mod 12.
 * [A218234](http://oeis.org/A218234) ([L08 program](218/A218234.asm)): Infinitesimal generator for padded Pascal matrix A097805 (as lower triangular matrices).
@@ -924,7 +925,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A219768](http://oeis.org/A219768) ([L63 program](219/A219768.asm)): Number of n X 3 arrays of the minimum value of corresponding elements and their horizontal or antidiagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and columns, 0..1 n X 3 array.
 * [A219810](http://oeis.org/A219810) ([L25 program](219/A219810.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal, vertical or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 n X 2 array.
 * [A219846](http://oeis.org/A219846) ([L14 program](219/A219846.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal or antidiagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 n X 2 array.
-* [A219977](http://oeis.org/A219977) ([L10 program](219/A219977.asm)): Expansion of 1/(1+x+x^2+x^3).
+* [A219977](http://oeis.org/A219977) ([L11 program](219/A219977.asm)): Expansion of 1/(1+x+x^2+x^3).
 * [A220000](http://oeis.org/A220000) ([L14 program](220/A220000.asm)): Sixty fourths of an inch in thousandths, rounded to nearest integer.
 * [A220018](http://oeis.org/A220018) ([L21 program](220/A220018.asm)): Number of cyclotomic cosets of 3 mod 10^n.
 * [A220020](http://oeis.org/A220020) ([L24 program](220/A220020.asm)): Number of cyclotomic cosets of 9 mod 10^n.
@@ -2077,6 +2078,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250750](http://oeis.org/A250750) ([L13 program](250/A250750.asm)): Number of (n+1) X (3+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250751](http://oeis.org/A250751) ([L20 program](250/A250751.asm)): Number of (n+1) X (4+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250753](http://oeis.org/A250753) ([L13 program](250/A250753.asm)): Number of (n+1) X (6+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
+* [A250754](http://oeis.org/A250754) ([L84 program](250/A250754.asm)): Number of (n+1) X (7+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250756](http://oeis.org/A250756) ([L15 program](250/A250756.asm)): Number of (1+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250757](http://oeis.org/A250757) ([L09 program](250/A250757.asm)): Number of (2+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A250758](http://oeis.org/A250758) ([L20 program](250/A250758.asm)): Number of (3+1) X (n+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
@@ -2688,7 +2690,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266302](http://oeis.org/A266302) ([L14 program](266/A266302.asm)): Decimal representation of the n-th iteration of the "Rule 15" elementary cellular automaton starting with a single ON (black) cell.
 * [A266303](http://oeis.org/A266303) ([L04 program](266/A266303.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 15" elementary cellular automaton starting with a single ON (black) cell.
 * [A266304](http://oeis.org/A266304) ([L08 program](266/A266304.asm)): Total number of OFF (white) cells after n iterations of the "Rule 15" elementary cellular automaton starting with a single ON (black) cell.
-* [A266313](http://oeis.org/A266313) ([L07 program](266/A266313.asm)): Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+* [A266313](http://oeis.org/A266313) ([L05 program](266/A266313.asm)): Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
 * [A266327](http://oeis.org/A266327) ([L03 program](266/A266327.asm)): Binary representation of the n-th iteration of the "Rule 20" elementary cellular automaton starting with a single ON (black) cell.
 * [A266387](http://oeis.org/A266387) ([L03 program](266/A266387.asm)): Number of orbits of Aut(Z^7) as function of the infinity norm n of the representative lattice point of the orbit, when the cardinality of the orbit is equal to 322560.
 * [A266395](http://oeis.org/A266395) ([L03 program](266/A266395.asm)): Number of orbits of Aut(Z^7) as function of the infinity norm n of the representative lattice point of the orbit, when the cardinality of the orbit is equal to 161280.
@@ -2824,7 +2826,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267747](http://oeis.org/A267747) ([L05 program](267/A267747.asm)): Numbers n such that n (mod 2) = n (mod 3) = n (mod 5).
 * [A267755](http://oeis.org/A267755) ([L18 program](267/A267755.asm)): Expansion of (1 + 2*x + x^2 + x^3 + 4*x^4 + 2*x^5)/(1 - x - x^5 + x^6).
 * [A267773](http://oeis.org/A267773) ([L16 program](267/A267773.asm)): Triangle read by rows giving successive states of cellular automaton generated by "Rule 207" initiated with a single ON (black) cell.
-* [A267774](http://oeis.org/A267774) ([L16 program](267/A267774.asm)): Decimal representation of the n-th iteration of the "Rule 207" elementary cellular automaton starting with a single ON (black) cell.
+* [A267774](http://oeis.org/A267774) ([L07 program](267/A267774.asm)): Decimal representation of the n-th iteration of the "Rule 207" elementary cellular automaton starting with a single ON (black) cell.
 * [A267776](http://oeis.org/A267776) ([L13 program](267/A267776.asm)): Triangle read by rows giving successive states of cellular automaton generated by "Rule 209" initiated with a single ON (black) cell.
 * [A267780](http://oeis.org/A267780) ([L12 program](267/A267780.asm)): Decimal representation of the n-th iteration of the "Rule 211" elementary cellular automaton starting with a single ON (black) cell.
 * [A267783](http://oeis.org/A267783) ([L08 program](267/A267783.asm)): Number of n X 3 0..1 arrays with every repeated value in every row greater than or equal to, and in every column greater than, the previous repeated value.
