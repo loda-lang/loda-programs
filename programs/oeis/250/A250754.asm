@@ -1,0 +1,87 @@
+; A250754: Number of (n+1) X (7+1) 0..2 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
+; 527,1707,5471,17211,53327,163467,497471,1506651,4548527,13702827,41223071,123898491,372154127,1117379787,3353974271,10065592731,30204118127,90627034347,271910463071,815790109371,2447487768527
+
+mov $4,1
+add $3,$0
+add $0,3
+add $5,5
+mov $6,$0
+add $2,4
+div $5,$5
+sub $4,1
+lpb $0,1
+  mul $4,$3
+  mov $6,1
+  mov $4,$0
+  mov $6,$4
+  add $6,$0
+  bin $3,$4
+  mov $7,1
+  sub $6,$7
+  mul $5,6
+  mov $5,3
+  add $1,$2
+  sub $0,1
+  sub $5,$3
+  mov $6,$1
+  mov $3,1
+  mov $3,3
+  mod $3,2
+  sub $1,1
+  add $4,7
+  mul $1,3
+  mul $2,2
+  mov $5,$5
+  mov $3,5
+  add $5,1
+  sub $7,2
+  mov $2,$2
+  add $2,3
+  add $7,$2
+  add $8,7
+  mov $8,$1
+  mov $8,1
+  add $1,9
+  mul $7,5
+  div $5,$4
+  mov $6,$4
+  mul $8,$4
+  add $7,1
+lpe
+mov $2,$4
+pow $5,2
+add $1,$1
+sub $7,$7
+trn $5,1
+add $1,$6
+pow $4,$6
+sub $2,1
+trn $6,1
+mov $4,2
+add $8,$7
+add $2,1
+sub $0,$6
+div $0,$2
+add $0,20
+add $8,$1
+gcd $5,5
+sub $8,$5
+mov $2,$7
+sub $3,$7
+sub $0,8
+mov $3,6
+gcd $7,2
+sub $7,1
+add $0,$3
+sub $4,$3
+mov $1,$6
+mov $1,$8
+mov $8,$1
+sub $4,1
+add $6,$1
+add $3,$7
+div $4,$1
+sub $1,731
+div $1,6
+mul $1,4
+add $1,527

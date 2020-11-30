@@ -223,7 +223,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206612](http://oeis.org/A206612) ([L17 program](206/A206612.asm)): Fibonacci sequence beginning 13, 6.
 * [A206641](http://oeis.org/A206641) ([L12 program](206/A206641.asm)): Fibonacci sequence beginning 14, 9.
 * [A206723](http://oeis.org/A206723) ([L14 program](206/A206723.asm)): a(n) = 7*( ((3 + sqrt(5))/2)^n + ((3 - sqrt(5))/2)^n - 2 ).
-* [A206735](http://oeis.org/A206735) ([L67 program](206/A206735.asm)): Triangle T(n,k), read by rows, given by (0, 2, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (1, 0, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
+* [A206735](http://oeis.org/A206735) ([L07 program](206/A206735.asm)): Triangle T(n,k), read by rows, given by (0, 2, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (1, 0, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
 * [A206776](http://oeis.org/A206776) ([L12 program](206/A206776.asm)): a(n) = 3*a(n-1) + 2*a(n-2) for n>1, a(0)=2, a(1)=3.
 * [A206806](http://oeis.org/A206806) ([L27 program](206/A206806.asm)): Sum_{0<j<k<=n} s(k)-s(j), where s(j)=A002620(j) is the j-th quarter-square.
 * [A206807](http://oeis.org/A206807) ([L34 program](206/A206807.asm)): Position of 3^n when {2^j} and {3^k} are jointly ranked; complement of A206805.
@@ -768,7 +768,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215146](http://oeis.org/A215146) ([L03 program](215/A215146.asm)): a(n) = 21*n + 1.
 * [A215147](http://oeis.org/A215147) ([L13 program](215/A215147.asm)): For n odd, a(n)= 1^2+2^2+3^2+...+n^2; for n even, a(n)=(1^2+2^2+3^2+...+n^2) + 1.
 * [A215148](http://oeis.org/A215148) ([L03 program](215/A215148.asm)): a(n) = 23*n + 1.
-* [A215149](http://oeis.org/A215149) ([L11 program](215/A215149.asm)): a(n) = n * (1 + 2^(n-1)).
+* [A215149](http://oeis.org/A215149) ([L09 program](215/A215149.asm)): a(n) = n * (1 + 2^(n-1)).
 * [A215229](http://oeis.org/A215229) ([L69 program](215/A215229.asm)): Number of length-6 0..k arrays connected end-around, with no sequence of L<n elements immediately followed by itself (periodic "squarefree").
 * [A215247](http://oeis.org/A215247) ([L26 program](215/A215247.asm)): A Beatty sequence: a(n) = floor((n-1/2)*(2 + 2*sqrt(2))).
 * [A215414](http://oeis.org/A215414) ([L07 program](215/A215414.asm)): Unix epoch timestamp for start of year, beginning with 1970.
@@ -1802,7 +1802,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245179](http://oeis.org/A245179) ([L20 program](245/A245179.asm)): Numbers of the form 2^k+3 or 3*2^k+1, k >= 2.
 * [A245207](http://oeis.org/A245207) ([L12 program](245/A245207.asm)): a(n) = floor((n + sqrt(2))^2).
 * [A245219](http://oeis.org/A245219) ([L70 program](245/A245219.asm)): Continued fraction expansion of the constant c in A245218; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A001951, else f(n,x) = 1/x.
-* [A245222](http://oeis.org/A245222) ([L34 program](245/A245222.asm)): Continued fraction of the constant c in A245221; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A022838, else f(n,x) = 1/x.
+* [A245222](http://oeis.org/A245222) ([L27 program](245/A245222.asm)): Continued fraction of the constant c in A245221; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A022838, else f(n,x) = 1/x.
 * [A245231](http://oeis.org/A245231) ([L12 program](245/A245231.asm)): Maximum frustration of complete bipartite graph K(n,4).
 * [A245235](http://oeis.org/A245235) ([L19 program](245/A245235.asm)): Repeat 2^(n*(n+1)/2) n+1 times.
 * [A245288](http://oeis.org/A245288) ([L40 program](245/A245288.asm)): a(n) = (4*n^2 - 2*n - 1 + (2*n^2 - 2*n + 1)*(-1)^n)/16.
@@ -3044,7 +3044,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271208](http://oeis.org/A271208) ([L06 program](271/A271208.asm)): a(n) = n^5 + n - 1.
 * [A271209](http://oeis.org/A271209) ([L04 program](271/A271209.asm)): a(n) = n^5 + n + 1.
 * [A271216](http://oeis.org/A271216) ([L15 program](271/A271216.asm)): a(n) = 2^n floor(n/2)!
-* [A271220](http://oeis.org/A271220) ([L10 program](271/A271220.asm)): Concatenate sum of digits of previous term and product of digits of previous term, starting with 6.
+* [A271220](http://oeis.org/A271220) ([L09 program](271/A271220.asm)): Concatenate sum of digits of previous term and product of digits of previous term, starting with 6.
 * [A271324](http://oeis.org/A271324) ([L07 program](271/A271324.asm)): a(n) = n + floor(n/4) + (n mod 4).
 * [A271342](http://oeis.org/A271342) ([L09 program](271/A271342.asm)): Sum of all even divisors of all positive integers <= n.
 * [A271346](http://oeis.org/A271346) ([L21 program](271/A271346.asm)): Numbers k such that the final digit of k^k is 6.

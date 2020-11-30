@@ -3574,7 +3574,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154708](http://oeis.org/A154708) ([L05 program](154/A154708.asm)): Numbers a such that b and c exist with b <= a < c and a*(a+1) + b^2 = c^2.
 * [A154811](http://oeis.org/A154811) ([L08 program](154/A154811.asm)): a(n) = Fibonacci(2n+1) mod 9.
 * [A154870](http://oeis.org/A154870) ([L17 program](154/A154870.asm)): Period 6: repeat [7, 5, 1, -7, -5, -1].
-* [A154879](http://oeis.org/A154879) ([L62 program](154/A154879.asm)): Third differences of the Jacobsthal sequence A001045.
+* [A154879](http://oeis.org/A154879) ([L24 program](154/A154879.asm)): Third differences of the Jacobsthal sequence A001045.
 * [A154890](http://oeis.org/A154890) ([L12 program](154/A154890.asm)): Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
 * [A154920](http://oeis.org/A154920) ([L11 program](154/A154920.asm)): Denominators of a ternary BBP-type formula for log(3).
 * [A154955](http://oeis.org/A154955) ([L03 program](154/A154955.asm)): a(1) = 1, a(2) = -1, followed by 0, 0, 0, ... .
@@ -6572,7 +6572,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188589](http://oeis.org/A188589) ([L12 program](188/A188589.asm)): Expansion of (1-3*x+6*x^2-3*x^3)/((1-x)^2*(1-2*x)).
 * [A188590](http://oeis.org/A188590) ([L35 program](188/A188590.asm)): [(n+1)*r] - [n*r], where r = 3/2 + sqrt(13)/2 and [...] denotes the floor function.
 * [A188623](http://oeis.org/A188623) ([L08 program](188/A188623.asm)): Number of reachable configurations in a chip-firing game on a triangle starting with n chips on one vertex.
-* [A188626](http://oeis.org/A188626) ([L12 program](188/A188626.asm)): a(n) = n + (n-1)*2^(n-2).
+* [A188626](http://oeis.org/A188626) ([L10 program](188/A188626.asm)): a(n) = n + (n-1)*2^(n-2).
 * [A188653](http://oeis.org/A188653) ([L14 program](188/A188653.asm)): Second differences of A000463; first differences of A188652.
 * [A188667](http://oeis.org/A188667) ([L08 program](188/A188667.asm)): Ordered (2,2)-selections from the multiset {1,1,2,2,3,3,...,n,n}.
 * [A188675](http://oeis.org/A188675) ([L13 program](188/A188675.asm)): Partial sums of the binomial coefficients binomial(3*n,n) (A005809).
