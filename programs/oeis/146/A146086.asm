@@ -1,67 +1,22 @@
 ; A146086: Number of n-digit numbers with each digit odd where the digits 1 and 3 occur an even number of times.
 ; 3,11,45,197,903,4271,20625,100937,498123,2470931,12295605,61300877,305972943,1528270391,7636568985,38168496017,190799433363,953868026651,4768952712765,23843601302357,119214519727383,596062138283711,2980279310358945,14901302408615897
 
-mov $2,$0
-mov $2,2
 add $0,1
-mov $2,$2
-sub $2,1
-div $2,2
 mov $5,$0
-add $1,$5
-mov $1,9
-add $1,2
-sub $1,$2
-mov $4,1
-sub $1,$1
-mov $6,2
-mov $1,$6
-add $4,$5
 mov $2,$5
-mov $6,4
-mov $6,3
-mul $5,2
-mov $3,$6
-add $6,$1
-pow $6,$0
+mov $3,3
 pow $3,$2
-mov $0,$5
-add $4,1
-sub $4,$2
-sub $2,1
-mov $2,1
-mov $1,1
-mul $5,2
-sub $1,$0
+mov $4,5
+pow $4,$0
 lpb $0,1
-  mov $0,$6
-  mov $5,1
-  mul $4,2
-  pow $1,$5
-  add $2,$6
-  sub $0,$5
-  mov $1,$3
-  add $6,1
-  mov $4,$2
-  sub $5,$6
-  sub $3,1
-  div $0,$2
-  mov $5,5
-  add $3,$6
-  mod $5,$2
-  add $1,$1
-  mul $0,7
-  mod $3,2
   mov $0,1
-  sub $2,$1
-  add $5,1
-  add $5,1
+  mov $1,$3
+  mul $1,2
+  add $4,1
 lpe
-mul $3,$0
-add $6,$1
-add $6,3
-sub $1,$3
-mov $1,$6
+add $4,$1
+add $4,3
+mov $1,$4
 sub $1,15
 div $1,8
 mul $1,2
