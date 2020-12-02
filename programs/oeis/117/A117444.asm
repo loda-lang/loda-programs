@@ -3,7 +3,6 @@
 
 mov $2,$0
 add $2,2
-mov $3,$2
-mod $3,5
-sub $3,2
-mov $1,$3
+mov $1,$2
+mod $1,5
+sub $1,2
