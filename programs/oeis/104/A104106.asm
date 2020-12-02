@@ -4,14 +4,11 @@
 add $0,1
 gcd $0,1073741824
 mod $0,9
-trn $1,$0
-add $2,$0
 mov $2,$0
 lpb $0,1
-  add $3,6
-  add $0,4
+  sub $0,3
   mul $2,2
+  add $3,6
   div $2,$3
-  sub $0,7
 lpe
 mov $1,$2
