@@ -712,6 +712,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005587](http://oeis.org/A005587) ([L06 program](005/A005587.asm)): a(n) = n*(n+5)*(n+6)*(n+7)/24.
 * [A005592](http://oeis.org/A005592) ([L07 program](005/A005592.asm)): a(n) = F(2n+1) + F(2n-1) - 1.
 * [A005610](http://oeis.org/A005610) ([L04 program](005/A005610.asm)): Number of Boolean functions realized by cascades of n gates.
+* [A005614](http://oeis.org/A005614) ([L30 program](005/A005614.asm)): The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
 * [A005618](http://oeis.org/A005618) ([L05 program](005/A005618.asm)): a(n) = 6*a(n-1) - 8.
 * [A005665](http://oeis.org/A005665) ([L11 program](005/A005665.asm)): Tower of Hanoi with 3 pegs and cyclic moves only (clockwise).
 * [A005666](http://oeis.org/A005666) ([L12 program](005/A005666.asm)): Tower of Hanoi with 3 pegs and cyclic moves only (counterclockwise).
@@ -1087,7 +1088,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008804](http://oeis.org/A008804) ([L11 program](008/A008804.asm)): Expansion of 1/((1-x)^2*(1-x^2)*(1-x^4)).
 * [A008805](http://oeis.org/A008805) ([L04 program](008/A008805.asm)): Triangular numbers repeated.
 * [A008806](http://oeis.org/A008806) ([L09 program](008/A008806.asm)): Expansion of (1+x^3)/((1-x^2)^2*(1-x^3)).
-* [A008810](http://oeis.org/A008810) ([L05 program](008/A008810.asm)): a(n) = ceiling(n^2/3).
+* [A008810](http://oeis.org/A008810) ([L04 program](008/A008810.asm)): a(n) = ceiling(n^2/3).
 * [A008811](http://oeis.org/A008811) ([L05 program](008/A008811.asm)): Expansion of x*(1+x^4)/((1-x)^2*(1-x^4)).
 * [A008812](http://oeis.org/A008812) ([L06 program](008/A008812.asm)): Expansion of (1+x^5)/((1-x)^2*(1-x^5)).
 * [A008813](http://oeis.org/A008813) ([L06 program](008/A008813.asm)): Expansion of (1+x^6)/((1-x)^2*(1-x^6)).
@@ -1446,7 +1447,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011871](http://oeis.org/A011871) ([L03 program](011/A011871.asm)): [ n(n-1)/18 ].
 * [A011872](http://oeis.org/A011872) ([L04 program](011/A011872.asm)): [ n(n-1)/19 ].
 * [A011873](http://oeis.org/A011873) ([L03 program](011/A011873.asm)): a(n) = floor(n(n-1)/20).
-* [A011874](http://oeis.org/A011874) ([L18 program](011/A011874.asm)): [ n(n-1)/21 ].
+* [A011874](http://oeis.org/A011874) ([L13 program](011/A011874.asm)): [ n(n-1)/21 ].
 * [A011875](http://oeis.org/A011875) ([L03 program](011/A011875.asm)): Floor( n*(n-1)/22 ).
 * [A011876](http://oeis.org/A011876) ([L06 program](011/A011876.asm)): [ n(n-1)/23 ].
 * [A011877](http://oeis.org/A011877) ([L03 program](011/A011877.asm)): [ n(n-1)/24 ].
@@ -1608,6 +1609,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014640](http://oeis.org/A014640) ([L16 program](014/A014640.asm)): Even heptagonal numbers (A000566).
 * [A014641](http://oeis.org/A014641) ([L06 program](014/A014641.asm)): Odd octagonal numbers: (2n+1)(6n+1).
 * [A014642](http://oeis.org/A014642) ([L05 program](014/A014642.asm)): Even octagonal numbers: 4*n*(3*n-1).
+* [A014675](http://oeis.org/A014675) ([L31 program](014/A014675.asm)): The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
 * [A014679](http://oeis.org/A014679) ([L27 program](014/A014679.asm)): G.f.: (1+x^3)^2/((1-x^2)*(1-x^3)*(1-x^4)).
 * [A014681](http://oeis.org/A014681) ([L05 program](014/A014681.asm)): Fix 0; exchange even and odd numbers.
 * [A014682](http://oeis.org/A014682) ([L17 program](014/A014682.asm)): The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
@@ -2679,6 +2681,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024495](http://oeis.org/A024495) ([L11 program](024/A024495.asm)): a(n) = C(n,2) + C(n,5) + ... + C(n, 3*floor(n/3)+2).
 * [A024498](http://oeis.org/A024498) ([L22 program](024/A024498.asm)): a(n) = [ C(2n,n)/n ].
 * [A024499](http://oeis.org/A024499) ([L14 program](024/A024499.asm)): a(n) = [ C(2n,n)/(n-1) ].
+* [A024500](http://oeis.org/A024500) ([L07 program](024/A024500.asm)): a(n) = [ C(2n,n)/n^2 ].
 * [A024537](http://oeis.org/A024537) ([L10 program](024/A024537.asm)): a(n) = floor( a(n-1)/(sqrt(2) - 1) ), with a(0) = 1.
 * [A024551](http://oeis.org/A024551) ([L14 program](024/A024551.asm)): a(n) = floor(a(n-1)/(sqrt(5) - 2)) for n > 0 and a(0) = 1.
 * [A024598](http://oeis.org/A024598) ([L14 program](024/A024598.asm)): a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n+1-k), where k = floor((n+1)/2), s = (odd natural numbers).
@@ -3019,6 +3022,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027993](http://oeis.org/A027993) ([L09 program](027/A027993.asm)): a(n) = 1*T(n,2n) + 2*T(n,2n-1) + ... + (2n+1)*T(n,0), T given by A027926.
 * [A028242](http://oeis.org/A028242) ([L05 program](028/A028242.asm)): Follow n+1 by n. Also (essentially) Molien series of 2-dimensional quaternion group Q_8.
 * [A028243](http://oeis.org/A028243) ([L09 program](028/A028243.asm)): a(n) = 3^(n-1) - 2*2^(n-1) + 1 (essentially Stirling numbers of second kind).
+* [A028249](http://oeis.org/A028249) ([L73 program](028/A028249.asm)): Molien series for complete weight enumerator of self-dual code over GF(4) containing 1^n.
 * [A028250](http://oeis.org/A028250) ([L12 program](028/A028250.asm)): Sequence arising in multiprocessor page migration.
 * [A028253](http://oeis.org/A028253) ([L07 program](028/A028253.asm)): n mod Fibonacci(n).
 * [A028289](http://oeis.org/A028289) ([L42 program](028/A028289.asm)): Expansion of (1+x^2+x^3+x^5)/((1-x)(1-x^3)(1-x^4)(1-x^6)).
@@ -4127,6 +4131,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044241](http://oeis.org/A044241) ([L14 program](044/A044241.asm)): Numbers n such that string 6,6 occurs in the base 8 representation of n but not of n-1.
 * [A044242](http://oeis.org/A044242) ([L03 program](044/A044242.asm)): Numbers n such that string 6,7 occurs in the base 8 representation of n but not of n-1.
 * [A044251](http://oeis.org/A044251) ([L03 program](044/A044251.asm)): Numbers n such that string 0,0 occurs in the base 9 representation of n but not of n-1.
+* [A044261](http://oeis.org/A044261) ([L25 program](044/A044261.asm)): Numbers n such that string 1,1 occurs in the base 9 representation of n but not of n-1.
 * [A044271](http://oeis.org/A044271) ([L21 program](044/A044271.asm)): Numbers n such that string 2,2 occurs in the base 9 representation of n but not of n-1.
 * [A044287](http://oeis.org/A044287) ([L27 program](044/A044287.asm)): Numbers n such that string 4,0 occurs in the base 9 representation of n but not of n-1.
 * [A044291](http://oeis.org/A044291) ([L12 program](044/A044291.asm)): Numbers n such that string 4,4 occurs in the base 9 representation of n but not of n-1.
@@ -4598,7 +4603,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047537](http://oeis.org/A047537) ([L04 program](047/A047537.asm)): Numbers that are congruent to {1, 4, 7} mod 8.
 * [A047538](http://oeis.org/A047538) ([L12 program](047/A047538.asm)): Numbers that are congruent to {0, 1, 4, 7} mod 8.
 * [A047539](http://oeis.org/A047539) ([L04 program](047/A047539.asm)): Numbers that are congruent to {2, 4, 7} mod 8.
-* [A047540](http://oeis.org/A047540) ([L12 program](047/A047540.asm)): Numbers that are congruent to {0, 2, 4, 7} mod 8.
+* [A047540](http://oeis.org/A047540) ([L13 program](047/A047540.asm)): Numbers that are congruent to {0, 2, 4, 7} mod 8.
 * [A047541](http://oeis.org/A047541) ([L09 program](047/A047541.asm)): Numbers that are congruent to {1, 2, 4, 7} mod 8.
 * [A047542](http://oeis.org/A047542) ([L12 program](047/A047542.asm)): Numbers that are congruent to {0, 1, 2, 4, 7} mod 8.
 * [A047543](http://oeis.org/A047543) ([L09 program](047/A047543.asm)): Numbers that are congruent to {3, 4, 7} mod 8.
@@ -4682,7 +4687,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047621](http://oeis.org/A047621) ([L06 program](047/A047621.asm)): Numbers that are congruent to {3, 5} mod 8.
 * [A047622](http://oeis.org/A047622) ([L04 program](047/A047622.asm)): Numbers that are congruent to {0, 3, 5} mod 8.
 * [A047623](http://oeis.org/A047623) ([L05 program](047/A047623.asm)): Numbers that are congruent to {1, 3, 5} mod 8.
-* [A047624](http://oeis.org/A047624) ([L09 program](047/A047624.asm)): Numbers that are congruent to {0, 1, 3, 5} mod 8.
+* [A047624](http://oeis.org/A047624) ([L10 program](047/A047624.asm)): Numbers that are congruent to {0, 1, 3, 5} mod 8.
 * [A047667](http://oeis.org/A047667) ([L08 program](047/A047667.asm)): Row 3 of array in A047666.
 * [A047668](http://oeis.org/A047668) ([L07 program](047/A047668.asm)): Row 4 of array in A047666.
 * [A047672](http://oeis.org/A047672) ([L11 program](047/A047672.asm)): Row 3 of square array defined in A047671.
@@ -4942,7 +4947,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A051494](http://oeis.org/A051494) ([L08 program](051/A051494.asm)): Expansion of (1 - x + x^2 + x^3)/(1 - x^2)^3.
 * [A051503](http://oeis.org/A051503) ([L25 program](051/A051503.asm)): a(n) = min { n, floor(100/n) }.
 * [A051515](http://oeis.org/A051515) ([L11 program](051/A051515.asm)): (Terms in A014738)/4.
-* [A051596](http://oeis.org/A051596) ([L15 program](051/A051596.asm)): Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tet}.
+* [A051596](http://oeis.org/A051596) ([L15 program](051/A051596.asm)): Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
 * [A051624](http://oeis.org/A051624) ([L04 program](051/A051624.asm)): 12-gonal (or dodecagonal) numbers: a(n) = n*(5*n-4).
 * [A051633](http://oeis.org/A051633) ([L04 program](051/A051633.asm)): a(n) = 5*2^n - 2.
 * [A051662](http://oeis.org/A051662) ([L13 program](051/A051662.asm)): House numbers: a(n) = (n+1)^3 + Sum_{i=1..n} i^2.
@@ -5276,8 +5281,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054886](http://oeis.org/A054886) ([L11 program](054/A054886.asm)): Layer counting sequence for hyperbolic tessellation by cuspidal triangles of angles (Pi/3,Pi/3,0) (this is the classical modular tessellation).
 * [A054888](http://oeis.org/A054888) ([L08 program](054/A054888.asm)): Layer counting sequence for hyperbolic tessellation by regular pentagons of angle Pi/2.
 * [A054890](http://oeis.org/A054890) ([L15 program](054/A054890.asm)): Layer counting sequence for hyperbolic tessellation by regular heptagons of angle Pi/3.
-* [A054893](http://oeis.org/A054893) ([L07 program](054/A054893.asm)): Floor[n/4] + floor[n/16] + floor[n/64] + floor[n/256] + ....
-* [A054895](http://oeis.org/A054895) ([L06 program](054/A054895.asm)): a(n) = Sum_{k>0} floor(n/6^k).
+* [A054893](http://oeis.org/A054893) ([L05 program](054/A054893.asm)): Floor[n/4] + floor[n/16] + floor[n/64] + floor[n/256] + ....
+* [A054895](http://oeis.org/A054895) ([L05 program](054/A054895.asm)): a(n) = Sum_{k>0} floor(n/6^k).
 * [A054896](http://oeis.org/A054896) ([L06 program](054/A054896.asm)): a(n) = Sum_{k>0} floor(n/7^k).
 * [A054897](http://oeis.org/A054897) ([L04 program](054/A054897.asm)): a(n) = Sum_{k>0} floor(n/8^k).
 * [A054898](http://oeis.org/A054898) ([L06 program](054/A054898.asm)): a(n) = Sum_{k>0} floor(n/9^k).
@@ -6710,7 +6715,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071238](http://oeis.org/A071238) ([L11 program](071/A071238.asm)): a(n) = n*(n+1)*(2*n^2+1)/6.
 * [A071239](http://oeis.org/A071239) ([L08 program](071/A071239.asm)): a(n) = n*(n+1)*(n^2+2)/6.
 * [A071244](http://oeis.org/A071244) ([L06 program](071/A071244.asm)): n*(n-1)*(n^2+2)/6.
-* [A071245](http://oeis.org/A071245) ([L09 program](071/A071245.asm)): a(n) = n*(n-1)*(2*n^2+1)/6.
+* [A071245](http://oeis.org/A071245) ([L12 program](071/A071245.asm)): a(n) = n*(n-1)*(2*n^2+1)/6.
 * [A071246](http://oeis.org/A071246) ([L11 program](071/A071246.asm)): a(n) = n*(n - 1)*(2*n^2 + n + 2)/6.
 * [A071252](http://oeis.org/A071252) ([L05 program](071/A071252.asm)): a(n) = n*(n - 1)*(n^2 + 1)/2.
 * [A071253](http://oeis.org/A071253) ([L04 program](071/A071253.asm)): a(n) = n^2*(n^2+1).
@@ -7521,7 +7526,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A082524](http://oeis.org/A082524) ([L22 program](082/A082524.asm)): a(1)=1, a(2)=2, then use the rule when a(n) is the end of a run, n appears a(n) times.
 * [A082528](http://oeis.org/A082528) ([L13 program](082/A082528.asm)): Least k such that x(k)=0 where x(1)=n x(k)=k^3*floor(x(k-1)/k^3).
 * [A082541](http://oeis.org/A082541) ([L09 program](082/A082541.asm)): a(n) = (7*3^n - 4*0^n)/3.
-* [A082562](http://oeis.org/A082562) ([L13 program](082/A082562.asm)): a(n) = number of values of m such that m can be expressed as the sum of distinct odd numbers with largest odd number in the sum = 2n+1.
+* [A082562](http://oeis.org/A082562) ([L14 program](082/A082562.asm)): a(n) = number of values of m such that m can be expressed as the sum of distinct odd numbers with largest odd number in the sum = 2n+1.
 * [A082574](http://oeis.org/A082574) ([L14 program](082/A082574.asm)): a(1)=1, a(n) = ceiling(r(3)*a(n-1)) where r(3) = (1/2)*(3 + sqrt(13)) is the positive root of X^2 = 3*X + 1.
 * [A082605](http://oeis.org/A082605) ([L17 program](082/A082605.asm)): Using Euler's 6-term sequence A014556, we define the partial recurrence relation a(0)=2, a(1)=3, a(2)=5; a(k) = 2*a(k-1) - 1 + (-1)^(k-1)*2^(k-2), 3 <= k <= 5.
 * [A082630](http://oeis.org/A082630) ([L11 program](082/A082630.asm)): Limit of the sequence obtained from S(0) = (1,1) and, for n > 0, S(n) = I(S(n-1)), where I consists of inserting, for i = 1, 2, 3..., the term a(i) + a(i+1) between any two terms for which 7*a(i+1) <= 11*a(i).
@@ -7713,7 +7718,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084555](http://oeis.org/A084555) ([L16 program](084/A084555.asm)): Partial sums of A084556.
 * [A084556](http://oeis.org/A084556) ([L05 program](084/A084556.asm)): n occurs n! times.
 * [A084558](http://oeis.org/A084558) ([L07 program](084/A084558.asm)): a(0) = 0; for n >= 1: a(n) = largest m such that n >= m!.
-* [A084567](http://oeis.org/A084567) ([L05 program](084/A084567.asm)): Binomial transform of (1,-1,4,-16,64,-256,1024,....)=(3*0^n-(-4)^n)/4.
+* [A084567](http://oeis.org/A084567) ([L04 program](084/A084567.asm)): Binomial transform of (1,-1,4,-16,64,-256,1024,....)=(3*0^n-(-4)^n)/4.
 * [A084568](http://oeis.org/A084568) ([L34 program](084/A084568.asm)): a(0)=1, a(1)=5, a(n+2)=4a(n), n>0.
 * [A084569](http://oeis.org/A084569) ([L49 program](084/A084569.asm)): Partial sums of A084570.
 * [A084570](http://oeis.org/A084570) ([L13 program](084/A084570.asm)): Partial sums of A084263.
@@ -8168,6 +8173,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A091084](http://oeis.org/A091084) ([L07 program](091/A091084.asm)): a(n) = A001045(n) mod 10.
 * [A091085](http://oeis.org/A091085) ([L14 program](091/A091085.asm)): a(n) = mod(A078008(n),10).
 * [A091086](http://oeis.org/A091086) ([L05 program](091/A091086.asm)): a(n) = A000975(n) mod 10.
+* [A091087](http://oeis.org/A091087) ([L12 program](091/A091087.asm)): a(n) = floor(r*n) + floor(n/r), where r=sqrt(2).
 * [A091090](http://oeis.org/A091090) ([L28 program](091/A091090.asm)): In binary representation: number of editing steps (delete, insert, or substitute) to transform n into n + 1.
 * [A091270](http://oeis.org/A091270) ([L10 program](091/A091270.asm)): Smallest number having in binary representation a prefix of length n that is also a suffix of its successor.
 * [A091307](http://oeis.org/A091307) ([L08 program](091/A091307.asm)): a(n)=6*2^n+4 (Bode Number A003461(n+2)) except for a(1)=6.
@@ -8234,7 +8240,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092352](http://oeis.org/A092352) ([L33 program](092/A092352.asm)): G.f.: (1+3*x^3)/((1-x)^2*(1-x^3)^2).
 * [A092353](http://oeis.org/A092353) ([L14 program](092/A092353.asm)): Expansion of (1+x^3)/((1-x)^2*(1-x^3)^2).
 * [A092364](http://oeis.org/A092364) ([L05 program](092/A092364.asm)): a(n) = n^2*binomial(n,2).
-* [A092365](http://oeis.org/A092365) ([L19 program](092/A092365.asm)): Coefficient of X^2 in expansion of (1 + n*X + n*X^2)^n.
+* [A092365](http://oeis.org/A092365) ([L12 program](092/A092365.asm)): Coefficient of X^2 in expansion of (1 + n*X + n*X^2)^n.
 * [A092387](http://oeis.org/A092387) ([L08 program](092/A092387.asm)): a(n) = Fibonacci(2*n+1) + Fibonacci(2*n-1) + 2.
 * [A092391](http://oeis.org/A092391) ([L13 program](092/A092391.asm)): a(n) = n + wt(n), where wt(n) = A000120(n) = binary weight of n.
 * [A092405](http://oeis.org/A092405) ([L48 program](092/A092405.asm)): a(n) = tau(n) + tau(n+1), where tau(n) = A000005(n), the number of divisors of n.
