@@ -6,69 +6,22 @@ mov $9,$0
 add $9,1
 lpb $9,1
   clr $0,7
-  sub $9,1
   mov $0,$7
+  sub $9,1
   sub $0,$9
+  mov $1,1
   add $3,$0
-  mov $0,3
   mov $2,$3
-  mov $4,1
-  div $3,$0
-  add $2,$4
+  add $2,1
   div $2,2
-  mov $1,$4
-  add $0,15
-  add $4,$0
-  sub $2,$1
+  sub $2,1
   mul $1,$2
-  sub $4,$0
+  div $3,3
   mul $3,2
   sub $3,$1
-  sub $0,2
-  add $0,$2
-  mul $1,$2
   mov $5,1
-  add $1,$1
   add $5,$3
-  mov $0,0
-  mov $4,7
-  sub $4,2
-  pow $1,2
-  mov $1,$4
   mul $5,$3
-  add $2,1
-  add $2,$5
-  add $0,1
-  trn $3,$1
-  add $2,$2
-  mov $2,2
-  add $2,1
-  gcd $3,$0
-  mov $1,$1
-  mov $2,$1
-  mov $6,$5
-  add $2,$0
-  mov $4,1
-  mov $2,2
-  mov $0,2
-  mov $4,$6
-  mul $1,$1
-  div $0,$0
-  pow $2,8
-  mov $4,2
-  lpb $0,1
-    div $1,$1
-    div $2,2
-    div $0,$2
-    add $3,4
-    mul $4,$6
-    sub $2,$0
-    add $3,$5
-    add $5,1
-    add $0,1
-    mov $2,$4
-    mul $0,2
-  lpe
   mov $1,$5
   div $1,2
   add $8,$1
