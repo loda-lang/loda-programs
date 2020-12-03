@@ -1,0 +1,76 @@
+; A028249: Molien series for complete weight enumerator of self-dual code over GF(4) containing 1^n.
+; 1,1,1,2,3,3,6,7,8,11,14,15,21,24,27,33,39,42,52,58,64,74,84,90,105,115,125,140,155,165,186,201,216,237,258,273,301,322,343,371,399,420,456,484,512,548,584,612,657,693
+
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  add $3,$0
+  mov $0,3
+  mov $2,$3
+  mov $4,1
+  div $3,$0
+  add $2,$4
+  div $2,2
+  mov $1,$4
+  add $0,15
+  add $4,$0
+  sub $2,$1
+  mul $1,$2
+  sub $4,$0
+  mul $3,2
+  sub $3,$1
+  sub $0,2
+  add $0,$2
+  mul $1,$2
+  mov $5,1
+  add $1,$1
+  add $5,$3
+  mov $0,0
+  mov $4,7
+  sub $4,2
+  pow $1,2
+  mov $1,$4
+  mul $5,$3
+  add $2,1
+  add $2,$5
+  add $0,1
+  trn $3,$1
+  add $2,$2
+  mov $2,2
+  add $2,1
+  gcd $3,$0
+  mov $1,$1
+  mov $2,$1
+  mov $6,$5
+  add $2,$0
+  mov $4,1
+  mov $2,2
+  mov $0,2
+  mov $4,$6
+  mul $1,$1
+  div $0,$0
+  pow $2,8
+  mov $4,2
+  lpb $0,1
+    div $1,$1
+    div $2,2
+    div $0,$2
+    add $3,4
+    mul $4,$6
+    sub $2,$0
+    add $3,$5
+    add $5,1
+    add $0,1
+    mov $2,$4
+    mul $0,2
+  lpe
+  mov $1,$5
+  div $1,2
+  add $8,$1
+lpe
+mov $1,$8
