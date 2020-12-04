@@ -1294,6 +1294,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339136](http://oeis.org/A339136) ([L29 program](339/A339136.asm)): Number of (undirected) cycles in the graph C_3 X P_n.
 * [A339196](http://oeis.org/A339196) ([L23 program](339/A339196.asm)): Number of (undirected) cycles on the n X 2 king graph.
 * [A339252](http://oeis.org/A339252) ([L20 program](339/A339252.asm)): a(0) = 1, a(1) = 4, a(2) = 11, and a(n) = 4*a(n-1) - 4*a(n-2) for n >= 3.
-* [A339255](http://oeis.org/A339255) ([L20 program](339/A339255.asm)): Leading digit of n in base 5.
-* [A339256](http://oeis.org/A339256) ([L20 program](339/A339256.asm)): Leading digit of n in base 6.
+* [A339255](http://oeis.org/A339255) ([L10 program](339/A339255.asm)): Leading digit of n in base 5.
+* [A339256](http://oeis.org/A339256) ([L10 program](339/A339256.asm)): Leading digit of n in base 6.
 * [A339355](http://oeis.org/A339355) ([L52 program](339/A339355.asm)): Maximum number of copies of a 12345 permutation pattern in an alternating (or zig-zag) permutation of length n + 7.
