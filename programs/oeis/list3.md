@@ -1155,7 +1155,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331347](http://oeis.org/A331347) ([L15 program](331/A331347.asm)): Number of permutations w in S_n that form Boolean intervals [s, w] in the Bruhat order for every simple reflection s in the support of w.
 * [A331390](http://oeis.org/A331390) ([L66 program](331/A331390.asm)): Number of binary matrices with 3 distinct columns and any number of nonzero rows with n ones in every column and rows in nonincreasing lexicographic order.
 * [A331429](http://oeis.org/A331429) ([L50 program](331/A331429.asm)): Expansion of x^2*(10-5*x+x^2)/((1-x)^4*(1-x^2)).
-* [A331433](http://oeis.org/A331433) ([L05 program](331/A331433.asm)): Column 1 of triangle in A331431.
+* [A331433](http://oeis.org/A331433) ([L04 program](331/A331433.asm)): Column 1 of triangle in A331431.
 * [A331434](http://oeis.org/A331434) ([L03 program](331/A331434.asm)): Column 2 of triangle in A331431.
 * [A331473](http://oeis.org/A331473) ([L27 program](331/A331473.asm)): Alternating sum of (n+1)*A000108(n+1).
 * [A331505](http://oeis.org/A331505) ([L23 program](331/A331505.asm)): Number of labeled graphs with n nodes and floor(n/2) edges.

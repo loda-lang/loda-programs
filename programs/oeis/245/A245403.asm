@@ -1,0 +1,74 @@
+; A245403: Number of nonnegative integers with property that their base 10/9 expansion (see A024664) has n digits.
+; 10,10,10,10,10,10,10,10,10,10,20,20,20,20,20,30,30,30,40,40,50,50,60,60,70,80,90,100,110,120,130,150,160,180,200,220,250,280,310,340,380,420,470,520,580,640,710,790,880,980,1090,1210,1340,1490,1660
+
+mov $14,$0
+mov $16,$0
+add $16,1
+lpb $16,1
+  clr $0,14
+  sub $16,1
+  mov $0,$14
+  sub $0,$16
+  mov $10,$0
+  mov $12,2
+  lpb $12,1
+    clr $0,10
+    sub $12,1
+    mov $0,$10
+    add $0,$12
+    sub $0,1
+    mov $6,$0
+    mov $8,2
+    lpb $8,1
+      clr $0,6
+      sub $8,1
+      mov $0,$6
+      add $0,$8
+      sub $0,1
+      sub $3,$0
+      lpb $0,1
+        sub $0,1
+        sub $0,1
+        add $1,1
+        mov $4,$1
+        mov $3,$4
+        div $1,9
+        add $0,1
+        add $1,$4
+      lpe
+      sub $4,1
+      add $1,$0
+      mov $5,$4
+      add $0,$4
+      sub $5,1
+      mov $1,$0
+      add $0,2
+      mul $4,28
+      sub $4,1
+      mov $1,$0
+      mov $9,$8
+      lpb $9,1
+        mov $7,$1
+        sub $9,1
+      lpe
+    lpe
+    lpb $6,1
+      sub $7,$1
+      mov $6,0
+    lpe
+    mov $1,$7
+    mov $13,$12
+    lpb $13,1
+      mov $11,$1
+      sub $13,1
+    lpe
+  lpe
+  lpb $10,1
+    sub $11,$1
+    mov $10,0
+  lpe
+  mov $1,$11
+  mul $1,10
+  add $15,$1
+lpe
+mov $1,$15

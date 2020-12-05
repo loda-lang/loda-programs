@@ -3,26 +3,17 @@
 
 add $0,1
 mod $0,8
+mov $1,$0
 mov $3,$0
 mov $2,$3
 trn $2,3
 add $2,$0
-mov $6,$0
-mov $1,$0
-mov $1,$0
+mov $4,$0
 mov $0,$2
 mul $0,$1
-mov $11,$0
-mul $0,$6
-mov $1,$6
-sub $1,3
+mul $0,$4
 lpb $0,1
-  add $1,8
-  mov $4,$3
-  add $1,$2
   mod $0,3
 lpe
-mov $2,$1
 sub $0,1
-add $1,1
 mov $1,$0
