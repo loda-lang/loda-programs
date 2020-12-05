@@ -756,7 +756,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214946](http://oeis.org/A214946) ([L20 program](214/A214946.asm)): Number of squarefree words of length 7 in an (n+1)-ary alphabet.
 * [A214971](http://oeis.org/A214971) ([L20 program](214/A214971.asm)): Integers k for which the base-phi representation of k includes 1.
 * [A214972](http://oeis.org/A214972) ([L11 program](214/A214972.asm)): a(n) = a(floor(2*(n-1)/3)) + 1, where a(0) = 0.
-* [A214988](http://oeis.org/A214988) ([L39 program](214/A214988.asm)): Beatty sequence for sqrt(r), where r = (1+sqrt(5))/2 = golden ratio; complement of A214989.
+* [A214988](http://oeis.org/A214988) ([L32 program](214/A214988.asm)): Beatty sequence for sqrt(r), where r = (1+sqrt(5))/2 = golden ratio; complement of A214989.
 * [A215036](http://oeis.org/A215036) ([L04 program](215/A215036.asm)): 2 followed by "1,0" repeated.
 * [A215052](http://oeis.org/A215052) ([L19 program](215/A215052.asm)): a(n) = (binomial(n,5) - floor(n/5)) / 5.
 * [A215053](http://oeis.org/A215053) ([L05 program](215/A215053.asm)): a(n) = 1/7*( binomial(n,7) - floor(n/7) ).
@@ -1150,7 +1150,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227043](http://oeis.org/A227043) ([L08 program](227/A227043.asm)): Numerator of harmonic mean H(n,2), n>= 0.
 * [A227071](http://oeis.org/A227071) ([L09 program](227/A227071.asm)): Let s(m) = the set of k > 0 such that k^m ends with k. Then a(n) = least m such that s(m) = s(n).
 * [A227085](http://oeis.org/A227085) ([L38 program](227/A227085.asm)): Number of n X 2 binary arrays indicating whether each 2 X 2 subblock of a larger binary array has lexicographically increasing rows and columns, for some larger (n+1) X 3 binary array with rows and columns of the latter in lexicographically nondecreasing order.
-* [A227108](http://oeis.org/A227108) ([L81 program](227/A227108.asm)): Denominators of harmonic mean H(n,5), n >= 0.
+* [A227108](http://oeis.org/A227108) ([L16 program](227/A227108.asm)): Denominators of harmonic mean H(n,5), n >= 0.
 * [A227121](http://oeis.org/A227121) ([L15 program](227/A227121.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of zero, with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227140](http://oeis.org/A227140) ([L05 program](227/A227140.asm)): a(n) = n/gcd(n,2^5), n >= 0.
 * [A227148](http://oeis.org/A227148) ([L09 program](227/A227148.asm)): Numbers n for which the sum of digits is even when n is written in the factorial base (A007623).
@@ -1829,6 +1829,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245400](http://oeis.org/A245400) ([L63 program](245/A245400.asm)): Number of nonnegative integers with property that their base 9/8 expansion (see A024656) has n digits.
 * [A245401](http://oeis.org/A245401) ([L69 program](245/A245401.asm)): Number of nonnegative integers with property that their base 8/7 expansion (see A024649) has n digits.
 * [A245402](http://oeis.org/A245402) ([L67 program](245/A245402.asm)): Number of nonnegative integers with property that their base 7/6 expansion (see A024643) has n digits.
+* [A245403](http://oeis.org/A245403) ([L71 program](245/A245403.asm)): Number of nonnegative integers with property that their base 10/9 expansion (see A024664) has n digits.
 * [A245404](http://oeis.org/A245404) ([L34 program](245/A245404.asm)): Number of nonnegative integers with property that their base 7/2 expansion (see A024639) has n digits.
 * [A245415](http://oeis.org/A245415) ([L85 program](245/A245415.asm)): Number of nonnegative integers with property that their base 5/2 expansion (see A024632) has n digits.
 * [A245416](http://oeis.org/A245416) ([L27 program](245/A245416.asm)): Number of nonnegative integers with property that their base 9/2 expansion (see A024650) has n digits.
@@ -2931,7 +2932,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268965](http://oeis.org/A268965) ([L08 program](268/A268965.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two not more than once.
 * [A269019](http://oeis.org/A269019) ([L16 program](269/A269019.asm)): a(n) = 2^n + 2*(-1)^n - 1.
 * [A269020](http://oeis.org/A269020) ([L11 program](269/A269020.asm)): a(n) = ceiling(n^(1+1/n)).
-* [A269024](http://oeis.org/A269024) ([L11 program](269/A269024.asm)): a(n) = A269020(n) - n.
+* [A269024](http://oeis.org/A269024) ([L08 program](269/A269024.asm)): a(n) = A269020(n) - n.
 * [A269027](http://oeis.org/A269027) ([L09 program](269/A269027.asm)): Parity of the number of 1's in A039724(n).
 * [A269036](http://oeis.org/A269036) ([L88 program](269/A269036.asm)): Number of 2 X n 0..2 arrays with some element plus some horizontally, diagonally or antidiagonally adjacent neighbor totalling two exactly once.
 * [A269044](http://oeis.org/A269044) ([L03 program](269/A269044.asm)): a(n) = 13*n + 7.
@@ -2948,7 +2949,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269266](http://oeis.org/A269266) ([L03 program](269/A269266.asm)): a(n) = 2^n mod 31.
 * [A269304](http://oeis.org/A269304) ([L16 program](269/A269304.asm)): a(n) = n + n/gpf(n) + 1, where gpf(n) is the greatest prime factor of n or 1 if n = 1.
 * [A269342](http://oeis.org/A269342) ([L08 program](269/A269342.asm)): a(n) = (n + 1)*(2*n + 1)*(4*n + 9)/3.
-* [A269352](http://oeis.org/A269352) ([L09 program](269/A269352.asm)): Kolakoski-(1,10) sequence: a(n) is length of n-th run.
+* [A269352](http://oeis.org/A269352) ([L07 program](269/A269352.asm)): Kolakoski-(1,10) sequence: a(n) is length of n-th run.
 * [A269403](http://oeis.org/A269403) ([L11 program](269/A269403.asm)): Expansion of x*(2 - x + 2*x^2 + x^3)/((1 - x)^3*(1 + x + x^2 + x^3)).
 * [A269410](http://oeis.org/A269410) ([L50 program](269/A269410.asm)): Number of length-4 0..n arrays with no repeated value greater than or equal to the previous repeated value.
 * [A269412](http://oeis.org/A269412) ([L101 program](269/A269412.asm)): Number of length-6 0..n arrays with no repeated value greater than or equal to the previous repeated value.
@@ -3347,7 +3348,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276871](http://oeis.org/A276871) ([L20 program](276/A276871.asm)): Sums-complement of the Beatty sequence for sqrt(5).
 * [A276872](http://oeis.org/A276872) ([L24 program](276/A276872.asm)): Sums-complement of the Beatty sequence for sqrt(6).
 * [A276873](http://oeis.org/A276873) ([L37 program](276/A276873.asm)): Sums-complement of the Beatty sequence for sqrt(7).
-* [A276874](http://oeis.org/A276874) ([L133 program](276/A276874.asm)): Sums-complement of the Beatty sequence for sqrt(8).
+* [A276874](http://oeis.org/A276874) ([L49 program](276/A276874.asm)): Sums-complement of the Beatty sequence for sqrt(8).
 * [A276875](http://oeis.org/A276875) ([L13 program](276/A276875.asm)): Sums-complement of the Beatty sequence for e.
 * [A276876](http://oeis.org/A276876) ([L10 program](276/A276876.asm)): Sums-complement of the Beatty sequence for 2e.
 * [A276877](http://oeis.org/A276877) ([L12 program](276/A276877.asm)): Sums-complement of the Beatty sequence for Pi.
@@ -3695,7 +3696,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286667](http://oeis.org/A286667) ([L23 program](286/A286667.asm)): Positions of 1 in A286665; complement of A286666.
 * [A286690](http://oeis.org/A286690) ([L46 program](286/A286690.asm)): Positions of 1 in A286688; complement of A286689.
 * [A286716](http://oeis.org/A286716) ([L07 program](286/A286716.asm)): a(n) = floor(n/2) - floor((n+1)/5), n >= 0.
-* [A286717](http://oeis.org/A286717) ([L06 program](286/A286717.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-phi, +phi), with the golden section phi = (1 + sqrt(5))/2.
+* [A286717](http://oeis.org/A286717) ([L14 program](286/A286717.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-phi, +phi), with the golden section phi = (1 + sqrt(5))/2.
 * [A286728](http://oeis.org/A286728) ([L15 program](286/A286728.asm)): Positions of 1 in A286063; complement of A286727.
 * [A286751](http://oeis.org/A286751) ([L62 program](286/A286751.asm)): Positions of 1 in A286749; complement of A286750.
 * [A286753](http://oeis.org/A286753) ([L28 program](286/A286753.asm)): Positions of 0 in A286752; complement of A286753.

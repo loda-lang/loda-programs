@@ -207,7 +207,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304614](http://oeis.org/A304614) ([L05 program](304/A304614.asm)): a(n) = 420*2^n - 222.
 * [A304615](http://oeis.org/A304615) ([L05 program](304/A304615.asm)): a(n) = 507*2^n - 273.
 * [A304616](http://oeis.org/A304616) ([L19 program](304/A304616.asm)): a(n) = 81*n^2 - 69*n + 24.
-* [A304617](http://oeis.org/A304617) ([L14 program](304/A304617.asm)): a(n) = 324*n^2 - 564*n + 321 (n>=1).
+* [A304617](http://oeis.org/A304617) ([L13 program](304/A304617.asm)): a(n) = 324*n^2 - 564*n + 321 (n>=1).
 * [A304618](http://oeis.org/A304618) ([L07 program](304/A304618.asm)): a(n) = 108*n^2 - 228*n + 114 (n>=2).
 * [A304619](http://oeis.org/A304619) ([L23 program](304/A304619.asm)): a(n) = 324*n^2 - 804*n + 468 (n>=2).
 * [A304659](http://oeis.org/A304659) ([L10 program](304/A304659.asm)): a(n) = n*(n + 1)*(16*n - 1)/6.
@@ -775,6 +775,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317451](http://oeis.org/A317451) ([L18 program](317/A317451.asm)): a(n) = (n*A003500(n) - A231896(n))/2.
 * [A317538](http://oeis.org/A317538) ([L53 program](317/A317538.asm)): Indices m for which A317413(m) = 1.
 * [A317551](http://oeis.org/A317551) ([L11 program](317/A317551.asm)): Fertility numbers.
+* [A317591](http://oeis.org/A317591) ([L73 program](317/A317591.asm)): Lexicographically earliest sequence of distinct terms such that erasing the last digit of a(n+1) and adding the resulting integer to a(n) gives back a(n+1).
 * [A317594](http://oeis.org/A317594) ([L02 program](317/A317594.asm)): Lexicographically first sequence of different terms such that erasing the last three digits of a(n+1) and adding this new reshaped integer to a(n) gives back a(n+1).
 * [A317613](http://oeis.org/A317613) ([L18 program](317/A317613.asm)): Permutation of the nonnegative integers: lodumo_4 of A047247.
 * [A317614](http://oeis.org/A317614) ([L14 program](317/A317614.asm)): a(n) = (1/2)*(n^3 + n*(n mod 2)).

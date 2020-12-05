@@ -77,7 +77,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000520](http://oeis.org/A000520) ([L05 program](000/A000520.asm)): Nearest integer to log_10(n).
 * [A000523](http://oeis.org/A000523) ([L03 program](000/A000523.asm)): a(n) = floor(log_2(n)).
 * [A000529](http://oeis.org/A000529) ([L54 program](000/A000529.asm)): Powers of rooted tree enumerator.
-* [A000537](http://oeis.org/A000537) ([L04 program](000/A000537.asm)): Sum of first n cubes; or n-th triangular number squared.
+* [A000537](http://oeis.org/A000537) ([L03 program](000/A000537.asm)): Sum of first n cubes; or n-th triangular number squared.
 * [A000538](http://oeis.org/A000538) ([L16 program](000/A000538.asm)): Sum of fourth powers: 0^4 + 1^4 + ... + n^4.
 * [A000539](http://oeis.org/A000539) ([L08 program](000/A000539.asm)): Sum of 5th powers: 0^5 + 1^5 + 2^5 + ... + n^5.
 * [A000540](http://oeis.org/A000540) ([L15 program](000/A000540.asm)): Sum of 6th powers: 0^6 + 1^6 + 2^6 + ... + n^6.
@@ -5866,7 +5866,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062123](http://oeis.org/A062123) ([L04 program](062/A062123.asm)): a(n) = 2 + 9*n*(1 + n)/2.
 * [A062124](http://oeis.org/A062124) ([L20 program](062/A062124.asm)): Fourth column of A046741.
 * [A062153](http://oeis.org/A062153) ([L03 program](062/A062153.asm)): a(n) = floor(log_3(n)).
-* [A062157](http://oeis.org/A062157) ([L19 program](062/A062157.asm)): a(n) = 0^n-(-1)^n.
+* [A062157](http://oeis.org/A062157) ([L08 program](062/A062157.asm)): a(n) = 0^n-(-1)^n.
 * [A062158](http://oeis.org/A062158) ([L06 program](062/A062158.asm)): a(n) = n^3 - n^2 + n - 1.
 * [A062159](http://oeis.org/A062159) ([L11 program](062/A062159.asm)): a(n) = n^5 - n^4 + n^3 - n^2 + n - 1.
 * [A062173](http://oeis.org/A062173) ([L14 program](062/A062173.asm)): a(n) = 2^(n-1) mod n.
@@ -6924,7 +6924,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A075362](http://oeis.org/A075362) ([L14 program](075/A075362.asm)): Triangle read by rows with the n-th row containing the first n multiples of n.
 * [A075427](http://oeis.org/A075427) ([L07 program](075/A075427.asm)): a(0) = 1; a(n) = if n is even then a(n-1)+1 else 2*a(n-1).
 * [A075543](http://oeis.org/A075543) ([L22 program](075/A075543.asm)): a[n] = a[n-1] + digit sum(n) - 1.
-* [A075553](http://oeis.org/A075553) ([L25 program](075/A075553.asm)): Numerators in the Maclaurin series for arctan(1+x).
+* [A075553](http://oeis.org/A075553) ([L16 program](075/A075553.asm)): Numerators in the Maclaurin series for arctan(1+x).
 * [A075561](http://oeis.org/A075561) ([L04 program](075/A075561.asm)): Domination number for kings' graph K(n).
 * [A075677](http://oeis.org/A075677) ([L20 program](075/A075677.asm)): Reduced Collatz function R applied to the odd integers: a(n) = R(2n-1), where R(k) = (3k+1)/2^r, with r as large as possible.
 * [A075682](http://oeis.org/A075682) ([L30 program](075/A075682.asm)): First differences of A075681.
@@ -8176,7 +8176,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A091086](http://oeis.org/A091086) ([L05 program](091/A091086.asm)): a(n) = A000975(n) mod 10.
 * [A091087](http://oeis.org/A091087) ([L12 program](091/A091087.asm)): a(n) = floor(r*n) + floor(n/r), where r=sqrt(2).
 * [A091090](http://oeis.org/A091090) ([L28 program](091/A091090.asm)): In binary representation: number of editing steps (delete, insert, or substitute) to transform n into n + 1.
-* [A091095](http://oeis.org/A091095) ([L65 program](091/A091095.asm)): Expansion of (1+4x-24x^2)/((1-4x)(1+4x)).
+* [A091095](http://oeis.org/A091095) ([L17 program](091/A091095.asm)): Expansion of (1+4x-24x^2)/((1-4x)(1+4x)).
 * [A091270](http://oeis.org/A091270) ([L10 program](091/A091270.asm)): Smallest number having in binary representation a prefix of length n that is also a suffix of its successor.
 * [A091307](http://oeis.org/A091307) ([L08 program](091/A091307.asm)): a(n)=6*2^n+4 (Bode Number A003461(n+2)) except for a(1)=6.
 * [A091311](http://oeis.org/A091311) ([L20 program](091/A091311.asm)): Partial sums of 3^A007814(n).
