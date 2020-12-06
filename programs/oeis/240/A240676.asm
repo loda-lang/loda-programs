@@ -3,15 +3,8 @@
 
 mov $2,$0
 pow $2,7
-lpb $0,1
-  add $0,1
-  div $0,$0
-  add $2,1
-  log $2,10
-  add $2,5
-lpe
-mul $2,2
-mov $1,$2
-trn $1,10
-div $1,2
+add $2,5
+mov $3,$2
+log $3,10
+mov $1,$3
 add $1,1
