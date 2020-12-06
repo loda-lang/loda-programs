@@ -734,6 +734,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316824](http://oeis.org/A316824) ([L11 program](316/A316824.asm)): A second example of a word that is uniform morphic and recurrent, but neither pure morphic nor primitive morphic.
 * [A316829](http://oeis.org/A316829) ([L19 program](316/A316829.asm)): Image of 0 under repeated application of the morphism 0 -> 0,1,0, 1 -> 1,1,1.
 * [A316843](http://oeis.org/A316843) ([L15 program](316/A316843.asm)): Column 1 of table A316841.
+* [A316868](http://oeis.org/A316868) ([L23 program](316/A316868.asm)): Number of times 7 appears in decimal expansion of n.
 * [A316936](http://oeis.org/A316936) ([L37 program](316/A316936.asm)): a(n) is the maximum state complexity of the language C(w) of conjugates of w, over all length-n binary strings w.
 * [A316966](http://oeis.org/A316966) ([L08 program](316/A316966.asm)): Same as A316671, except numbering of the squares starts at 0 rather than 1.
 * [A317095](http://oeis.org/A317095) ([L02 program](317/A317095.asm)): a(n) = 40*n.
@@ -775,7 +776,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317451](http://oeis.org/A317451) ([L18 program](317/A317451.asm)): a(n) = (n*A003500(n) - A231896(n))/2.
 * [A317538](http://oeis.org/A317538) ([L53 program](317/A317538.asm)): Indices m for which A317413(m) = 1.
 * [A317551](http://oeis.org/A317551) ([L11 program](317/A317551.asm)): Fertility numbers.
-* [A317591](http://oeis.org/A317591) ([L73 program](317/A317591.asm)): Lexicographically earliest sequence of distinct terms such that erasing the last digit of a(n+1) and adding the resulting integer to a(n) gives back a(n+1).
+* [A317591](http://oeis.org/A317591) ([L40 program](317/A317591.asm)): Lexicographically earliest sequence of distinct terms such that erasing the last digit of a(n+1) and adding the resulting integer to a(n) gives back a(n+1).
 * [A317594](http://oeis.org/A317594) ([L02 program](317/A317594.asm)): Lexicographically first sequence of different terms such that erasing the last three digits of a(n+1) and adding this new reshaped integer to a(n) gives back a(n+1).
 * [A317613](http://oeis.org/A317613) ([L18 program](317/A317613.asm)): Permutation of the nonnegative integers: lodumo_4 of A047247.
 * [A317614](http://oeis.org/A317614) ([L14 program](317/A317614.asm)): a(n) = (1/2)*(n^3 + n*(n mod 2)).
