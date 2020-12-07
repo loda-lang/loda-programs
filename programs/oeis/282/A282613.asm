@@ -1,0 +1,105 @@
+; A282613: Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to rotations.
+; 0,1,140,4995,65824,489125,2521476,10092775,33562880,96870249,250025500,589527851,1290008160,2651218765,5165397524,9611031375,17180133376,29647326545,49590297900,80672546899,128000804000,198571037301,301818598180,450289780535
+
+mov $9,$0
+mul $9,2
+pow $0,2
+mul $9,$0
+mov $9,$9
+add $8,1
+add $0,5
+div $9,2
+mul $8,$9
+add $6,2
+mov $2,2
+mov $10,10
+pow $9,2
+mov $10,1
+add $0,$9
+sub $0,3
+mul $10,$2
+mov $1,9
+mov $5,$9
+mul $0,$8
+pow $2,2
+add $6,1
+sub $5,5
+mov $9,$1
+mov $9,10
+mov $2,3
+mov $3,$1
+mov $7,1
+mov $8,1
+mov $8,$0
+mul $5,$3
+lpb $0,1
+  add $8,$3
+  mov $7,2
+  mul $0,$2
+  trn $5,1
+  mov $2,$0
+  div $0,2
+  mov $7,$1
+  mul $8,2
+  sub $9,1
+  add $1,2
+  mul $3,2
+  div $7,2
+  mov $8,1
+  add $4,$0
+  mov $1,4
+  mov $5,$3
+  mov $5,1
+  add $6,1345599
+  mov $8,1
+  mul $4,6
+  mov $8,$10
+  mul $0,2
+  bin $7,2
+  add $5,2
+  add $0,4
+  mov $7,$4
+  mov $8,3
+  sub $0,$2
+  add $7,18
+  mov $1,$8
+  add $5,3
+  sub $3,$10
+  mov $8,$0
+  add $4,$8
+  sub $2,731
+  div $0,$2
+  trn $0,$4
+  mov $5,3
+  mov $8,$10
+  cmp $10,$9
+  mul $4,2
+  add $2,$8
+  add $1,$2
+  add $0,$10
+  sub $10,$5
+  mov $6,3
+  add $2,$3
+  sub $3,$0
+  mov $1,$8
+  add $3,2
+  mov $10,$1
+  sub $4,$10
+  mov $6,$7
+  mov $0,$4
+  mov $0,3
+  sub $4,$0
+  trn $10,1
+  add $1,2
+  mov $0,$4
+  sub $1,2
+  pow $1,3
+  mul $9,$2
+  add $9,$3
+  sub $9,1
+  mov $8,$1
+  add $7,$5
+  add $2,$0
+lpe
+mov $1,$0
+div $1,4
