@@ -1,117 +1,32 @@
 ; A034132: Decimal part of cube root of a(n) starts with 6: first term of runs.
 ; 18,47,98,176,288,439,637,885,1192,1561,2001,2516,3113,3797,4575,5452,6435,7530,8742,10078,11544,13145,14887,16778,18822,21025,23394,25935,28653,31555,34646,37934,41422,45119,49028,53158,57513,62100,66924
 
-mov $11,$0
-mul $0,2
-mul $0,5
-mov $2,2
+mov $5,$0
+mul $0,10
 mov $3,$0
-mov $4,$2
+mov $0,43071
 mov $1,$3
-mov $5,2
-mov $3,$3
-mov $0,$4
-mul $4,$1
-mul $0,6
-sub $3,4
-add $8,1
-add $3,1
-mul $0,25
-sub $0,6
-mov $5,2
-bin $0,2
-mov $5,$2
-mov $9,$1
-add $2,$8
-add $1,3
-add $8,$2
-mov $3,3
-div $4,7
-mov $8,$2
-mul $3,$4
-div $5,2
-mov $2,5
-sub $1,7
-add $3,4
-mov $9,$1
-mov $4,1
-add $9,54
-add $6,$3
-mul $2,2
-add $3,1
-mov $1,$0
-add $4,6
+sub $1,4
+mov $6,$1
 mov $1,3
-div $3,$5
-cmp $8,5
-mov $8,30
-mov $6,$9
-mul $2,$9
+add $6,54
 lpb $0,1
-  add $8,$9
-  mov $1,$1
-  sub $9,4
-  mov $10,$0
-  bin $9,2
-  div $0,$2
-  mov $4,4
-  mul $9,2
-  mod $4,2
-  add $10,3
-  add $8,1
-  sub $0,1
-  sub $6,10
-  add $0,$5
-  gcd $10,$1
-  add $1,$9
-  mul $0,6
-  mov $5,2
-  mov $10,$8
-  add $2,$3
-  mov $6,$4
-  mul $5,$4
-  mul $0,$10
-  mov $0,1
-  mul $8,$0
-  sub $2,$5
-  add $9,$4
-  add $6,1
-  add $6,3
-  mul $9,$10
-  mov $0,$9
-  mov $2,127
-  mod $9,2
-  mov $0,3
-  sub $10,3
-  mov $6,2
-  trn $2,2
-  mov $0,3
-  add $7,$8
-  sub $7,$4
-  trn $4,$4
-  add $5,$4
-  add $9,$9
-  fac $0
-  bin $5,$4
-  mov $7,1
-  div $1,$2
-  bin $6,$6
-  mov $9,1
-  mul $7,$2
-  mul $9,$7
-  mov $4,$8
+  mov $0,6
+  sub $6,4
+  bin $6,2
+  mul $6,2
+  add $1,$6
+  div $1,125
 lpe
-mov $2,$10
 add $1,2
-mov $12,$11
-mov $13,$12
-mul $13,13
-add $1,$13
-mul $12,$11
-mov $13,$12
-mul $13,7
-add $1,$13
-mul $12,$11
-mov $13,$12
-mul $13,1
-add $1,$13
+mov $4,$5
+mov $2,$4
+mul $2,13
+add $1,$2
+mul $4,$5
+mov $2,$4
+mul $2,7
+add $1,$2
+mul $4,$5
+mov $2,$4
+add $1,$2
