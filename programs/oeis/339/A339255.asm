@@ -6,8 +6,4 @@ lpb $0,1
   mov $2,$0
   div $0,5
 lpe
-mul $2,2
 mov $1,$2
-sub $1,2
-div $1,2
-add $1,1
