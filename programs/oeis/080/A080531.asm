@@ -1,0 +1,46 @@
+; A080531: Number of nucleons in longest known radioactive decay series ending with Lead 208 ("thorium series"), reversed.
+; 208,208,212,212,216,220,224,224,228,228,232,236,240,244,248,252,252,256,260,264,268,272
+
+add $0,1
+mov $1,$0
+mov $4,66
+sub $1,5
+add $4,$4
+mov $2,$0
+sub $1,2
+mul $4,2
+mov $4,$2
+add $2,$4
+mul $4,$4
+trn $2,2
+add $4,$2
+mov $4,$2
+mul $2,2
+mov $2,2
+mov $2,$2
+sub $2,1
+mov $1,3
+div $2,2
+add $4,2
+lpb $0,1
+  add $4,1
+  add $4,$2
+  mov $3,1
+  add $1,$3
+  mov $3,$4
+  mul $0,$3
+  mov $2,11
+  mov $3,$1
+  sub $3,$0
+  mul $3,$1
+  add $2,$4
+  div $0,$2
+  mul $3,2
+  sub $3,$3
+lpe
+add $3,5
+sub $2,1
+add $1,5
+sub $1,9
+mul $1,4
+add $1,208

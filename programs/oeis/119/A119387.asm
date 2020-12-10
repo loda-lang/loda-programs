@@ -1,0 +1,43 @@
+; A119387: a(n) = number of binary digits (1's and nonleading 0's) which remain unchanged in their positions when n and (n+1) are written in binary.
+; 0,0,1,0,2,1,2,0,3,2,3,1,3,2,3,0,4,3,4,2,4,3,4,1,4,3,4,2,4,3,4,0,5,4,5,3,5,4,5,2,5,4,5,3,5,4,5,1,5,4,5,3,5,4,5,2,5,4,5,3,5,4,5,0,6,5,6,4,6,5,6,3,6,5,6,4,6,5,6,2,6,5,6,4,6,5,6,3,6,5,6,4,6,5,6,1,6,5,6,4,6,5,6,3,6
+
+mov $4,1
+mov $2,2
+lpb $0,1
+  mov $4,1
+  add $3,$0
+  div $2,2
+  mul $3,$2
+  mov $1,$4
+  add $3,1
+  gcd $3,2
+  mov $2,2
+  mov $2,$3
+  div $0,$4
+  sub $1,1
+  sub $0,$1
+  mov $0,$0
+  div $0,$2
+lpe
+mov $2,$4
+add $1,1
+mov $3,625
+add $1,1
+mov $4,1
+mov $2,1
+div $4,$3
+sub $4,$0
+mov $3,1
+mov $4,$0
+add $3,1
+mul $1,$0
+mov $2,1
+mov $1,3
+add $4,$0
+mov $1,1
+mov $1,$0
+add $1,1
+log $1,$3
+mov $0,1
+mul $3,2
+add $4,$3
