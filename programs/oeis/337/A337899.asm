@@ -1,10 +1,9 @@
 ; A337899: Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.
 ; 0,1,21,140,575,1785,4606,10416,21330,40425,71995,121836,197561,308945,468300,690880,995316,1404081,1943985,2646700,3549315,4694921,6133226,7921200,10123750,12814425,16076151,20001996
 
-sub $0,2
+add $0,1
 mov $2,$0
-add $2,3
-pow $2,2
+mul $2,$0
 bin $2,3
 mov $1,$2
 div $1,4
