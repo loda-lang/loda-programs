@@ -1479,7 +1479,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A235921](http://oeis.org/A235921) ([L03 program](235/A235921.asm)): Numbers n such that smallest number not dividing n^2 (A236454) is different from smallest prime not dividing n (A053669).
 * [A235963](http://oeis.org/A235963) ([L12 program](235/A235963.asm)): n appears (n+1)/(1 + (n mod 2)) times.
 * [A235988](http://oeis.org/A235988) ([L30 program](235/A235988.asm)): Sum of the partition parts of 3n into 3 parts.
-* [A236185](http://oeis.org/A236185) ([L103 program](236/A236185.asm)): Differences between terms of compacting Eratosthenes sieve for prime(4) = 7.
+* [A236185](http://oeis.org/A236185) ([L25 program](236/A236185.asm)): Differences between terms of compacting Eratosthenes sieve for prime(4) = 7.
 * [A236194](http://oeis.org/A236194) ([L10 program](236/A236194.asm)): a(n) = binomial(3n+1, n-1).
 * [A236203](http://oeis.org/A236203) ([L08 program](236/A236203.asm)): Interleave A005563(n), A028347(n).
 * [A236213](http://oeis.org/A236213) ([L07 program](236/A236213.asm)): Number of units in the imaginary quadratic field Q(sqrt(-d)), where d > 0 is the n-th squarefree number.

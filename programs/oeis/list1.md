@@ -5459,7 +5459,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173267](http://oeis.org/A173267) ([L12 program](173/A173267.asm)): a(n) = 121*n^2 + n.
 * [A173275](http://oeis.org/A173275) ([L14 program](173/A173275.asm)): a(n) = 169*n^2 + n.
 * [A173276](http://oeis.org/A173276) ([L04 program](173/A173276.asm)): a(n) = a(n-2) + a(n-3) - floor(a(n-3)/2) - floor(a(n-4)/2).
-* [A173294](http://oeis.org/A173294) ([L08 program](173/A173294.asm)): Values of 16*n^2+24*n+7, n>=0, each duplicated.
+* [A173294](http://oeis.org/A173294) ([L06 program](173/A173294.asm)): Values of 16*n^2+24*n+7, n>=0, each duplicated.
 * [A173300](http://oeis.org/A173300) ([L12 program](173/A173300.asm)): Denominators of fractions that answer the question "If x + y = 1 and x^2 + y^2 = 2, then x^n + y^n ="
 * [A173307](http://oeis.org/A173307) ([L03 program](173/A173307.asm)): a(n) = 13*n*(n+1).
 * [A173308](http://oeis.org/A173308) ([L03 program](173/A173308.asm)): 17*n*(n+1).
@@ -5935,7 +5935,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180577](http://oeis.org/A180577) ([L06 program](180/A180577.asm)): The Wiener index of the windmill graph D(6,n). The windmill graph D(m,n) is the graph obtained by taking n copies of the complete graph K_m with a vertex in common (i.e., a bouquet of n pieces of K_m graphs).
 * [A180578](http://oeis.org/A180578) ([L06 program](180/A180578.asm)): The Wiener index of the Dutch windmill graph D(6,n) (n>=1).
 * [A180579](http://oeis.org/A180579) ([L06 program](180/A180579.asm)): The Wiener index of the Dutch windmill graph D(5,n) (n>=1).
-* [A180592](http://oeis.org/A180592) ([L05 program](180/A180592.asm)): Digital root of 2n.
+* [A180592](http://oeis.org/A180592) ([L13 program](180/A180592.asm)): Digital root of 2n.
 * [A180593](http://oeis.org/A180593) ([L05 program](180/A180593.asm)): Digital root of 3n.
 * [A180594](http://oeis.org/A180594) ([L05 program](180/A180594.asm)): Digital root of 4n.
 * [A180595](http://oeis.org/A180595) ([L09 program](180/A180595.asm)): Digital root of 5n.
@@ -6631,7 +6631,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189407](http://oeis.org/A189407) ([L37 program](189/A189407.asm)): n+[nr/t]+[ns/t]; r=1, s=-1+sqrt(3), t=1+sqrt(3).
 * [A189467](http://oeis.org/A189467) ([L27 program](189/A189467.asm)): a(n) = n + [n*r/s] + [n*t/s]; r=1, s=1+sqrt(2), t=1/2+sqrt(2).
 * [A189479](http://oeis.org/A189479) ([L27 program](189/A189479.asm)): Fixed point starting with 0 of the morphism 0->01, 1->101.
-* [A189480](http://oeis.org/A189480) ([L101 program](189/A189480.asm)): [4rn]-4[rn], where r=sqrt(5) and [ ]=floor.
+* [A189480](http://oeis.org/A189480) ([L07 program](189/A189480.asm)): [4rn]-4[rn], where r=sqrt(5) and [ ]=floor.
 * [A189572](http://oeis.org/A189572) ([L43 program](189/A189572.asm)): Fixed point of the morphism 0->01, 1->001.
 * [A189573](http://oeis.org/A189573) ([L16 program](189/A189573.asm)): Positions of 0 in A189572; complement of A080652 (conjectured).
 * [A189574](http://oeis.org/A189574) ([L49 program](189/A189574.asm)): Partial sums of A189572.

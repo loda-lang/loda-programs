@@ -521,7 +521,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004320](http://oeis.org/A004320) ([L05 program](004/A004320.asm)): a(n) = n*(n+1)*(n+2)^2/6.
 * [A004396](http://oeis.org/A004396) ([L04 program](004/A004396.asm)): One even number followed by two odd numbers.
 * [A004442](http://oeis.org/A004442) ([L04 program](004/A004442.asm)): Natural numbers, pairs reversed: a(n) = n + (-1)^n; also Nimsum n + 1.
-* [A004443](http://oeis.org/A004443) ([L15 program](004/A004443.asm)): Nimsum n + 2.
+* [A004443](http://oeis.org/A004443) ([L13 program](004/A004443.asm)): Nimsum n + 2.
 * [A004444](http://oeis.org/A004444) ([L07 program](004/A004444.asm)): Nimsum n + 3.
 * [A004445](http://oeis.org/A004445) ([L17 program](004/A004445.asm)): Nimsum n + 4.
 * [A004447](http://oeis.org/A004447) ([L21 program](004/A004447.asm)): Nimsum n + 6.
@@ -4905,7 +4905,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A050492](http://oeis.org/A050492) ([L06 program](050/A050492.asm)): Thickened cube numbers: n*(n^2+(n-1)^2)+(n-1)*2*n*(n-1).
 * [A050493](http://oeis.org/A050493) ([L11 program](050/A050493.asm)): a(n) = sum of binary digits of n-th triangular number.
 * [A050506](http://oeis.org/A050506) ([L12 program](050/A050506.asm)): Nearest integer to log(Fibonacci(n)).
-* [A050509](http://oeis.org/A050509) ([L16 program](050/A050509.asm)): House numbers (version 2): a(n) = (n+1)^3 + (n+1)*Sum_{i=0..n} i.
+* [A050509](http://oeis.org/A050509) ([L11 program](050/A050509.asm)): House numbers (version 2): a(n) = (n+1)^3 + (n+1)*Sum_{i=0..n} i.
 * [A050514](http://oeis.org/A050514) ([L06 program](050/A050514.asm)): Cards left over after dealing evenly to n people.
 * [A050533](http://oeis.org/A050533) ([L09 program](050/A050533.asm)): Thickened pyramidal numbers: a(n) = sum(4*i*(i-1)+1, i=1..n) + 2*(n+1)*n.
 * [A050534](http://oeis.org/A050534) ([L03 program](050/A050534.asm)): Tritriangular numbers: a(n) = binomial(binomial(n,2),2) = n(n + 1)(n - 1)(n - 2)/8.
@@ -6189,6 +6189,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065681](http://oeis.org/A065681) ([L20 program](065/A065681.asm)): Number of primes <= prime(n) which begin with a 2.
 * [A065855](http://oeis.org/A065855) ([L35 program](065/A065855.asm)): Number of composites <= n.
 * [A065881](http://oeis.org/A065881) ([L20 program](065/A065881.asm)): Ultimate modulo 10: right-hand nonzero digit of n.
+* [A065882](http://oeis.org/A065882) ([L23 program](065/A065882.asm)): Ultimate modulo 4: right-hand nonzero digit of n when written in base 4.
 * [A065883](http://oeis.org/A065883) ([L12 program](065/A065883.asm)): Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
 * [A065915](http://oeis.org/A065915) ([L10 program](065/A065915.asm)): Numerator of sigma(8*n^2)/sigma(4*n^2).
 * [A065916](http://oeis.org/A065916) ([L07 program](065/A065916.asm)): Denominator of sigma(8*n^2)/sigma(4*n^2).
@@ -7553,6 +7554,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A082841](http://oeis.org/A082841) ([L07 program](082/A082841.asm)): a(n) = 4*a(n-1) - a(n-2) for n>1, a(0)=3, a(1)=9.
 * [A082844](http://oeis.org/A082844) ([L23 program](082/A082844.asm)): Start with 3,2 and apply the rule a(a(1)+a(2)+...+a(n)) = a(n), fill in any undefined terms with a(t) = 2 if a(t-1) = 3 and a(t) = 3 if a(t-1) = 2.
 * [A082845](http://oeis.org/A082845) ([L31 program](082/A082845.asm)): Partial sums of A082844.
+* [A082848](http://oeis.org/A082848) ([L21 program](082/A082848.asm)): Duplicate of A078588.
 * [A082908](http://oeis.org/A082908) ([L16 program](082/A082908.asm)): Largest value of gcd(2^n, binomial(n,j)) with j=0..n-1; maximal value of largest power of 2 dividing binomial(n,j) in the n-th row of Pascal's triangle.
 * [A082942](http://oeis.org/A082942) ([L52 program](082/A082942.asm)): (n^2+1)*(4*n^2+1)*(4*n^2+3).
 * [A082964](http://oeis.org/A082964) ([L15 program](082/A082964.asm)): a(n) = m given by arctan(tan(n)) = n - m*Pi.

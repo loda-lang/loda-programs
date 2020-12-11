@@ -1311,9 +1311,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338760](http://oeis.org/A338760) ([L30 program](338/A338760.asm)): Subword complexity of a certain infinite word.
 * [A338824](http://oeis.org/A338824) ([L13 program](338/A338824.asm)): Lexicographically earliest sequence of nonnegative integers such that for any distinct m and n, a(m) OR a(m+1) <> a(n) OR a(n+1) (where OR denotes the bitwise OR operator).
 * [A339136](http://oeis.org/A339136) ([L29 program](339/A339136.asm)): Number of (undirected) cycles in the graph C_3 X P_n.
+* [A339183](http://oeis.org/A339183) ([L19 program](339/A339183.asm)): Number of partitions of n into two parts such that the smaller part is a nonzero square.
 * [A339196](http://oeis.org/A339196) ([L23 program](339/A339196.asm)): Number of (undirected) cycles on the n X 2 king graph.
 * [A339252](http://oeis.org/A339252) ([L07 program](339/A339252.asm)): a(0) = 1, a(1) = 4, a(2) = 11, and a(n) = 4*a(n-1) - 4*a(n-2) for n >= 3.
 * [A339255](http://oeis.org/A339255) ([L06 program](339/A339255.asm)): Leading digit of n in base 5.
 * [A339256](http://oeis.org/A339256) ([L06 program](339/A339256.asm)): Leading digit of n in base 6.
 * [A339355](http://oeis.org/A339355) ([L52 program](339/A339355.asm)): Maximum number of copies of a 12345 permutation pattern in an alternating (or zig-zag) permutation of length n + 7.
-* [A339483](http://oeis.org/A339483) ([L64 program](339/A339483.asm)): Number of regular polygons that can be drawn on centered hexagonal grid with side length n
+* [A339483](http://oeis.org/A339483) ([L12 program](339/A339483.asm)): Number of regular polygons that can be drawn on centered hexagonal grid with side length n
