@@ -464,6 +464,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212039](http://oeis.org/A212039) ([L13 program](212/A212039.asm)): Number of lower triangular n X n arrays colored with integers 0 upwards introduced in row major order, with no element equal to any element within a city block distance of two, and containing the value n(n+1)/2-2.
 * [A212068](http://oeis.org/A212068) ([L27 program](212/A212068.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 2w=x+y+z.
 * [A212069](http://oeis.org/A212069) ([L33 program](212/A212069.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 3*w = x+y+z.
+* [A212088](http://oeis.org/A212088) ([L08 program](212/A212088.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<average{x,y,z}.
 * [A212090](http://oeis.org/A212090) ([L52 program](212/A212090.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<x+y+z.
 * [A212126](http://oeis.org/A212126) ([L22 program](212/A212126.asm)): Period 13: repeat (0,0,1,0,0,1,0,1,0,0,1,0,1).
 * [A212133](http://oeis.org/A212133) ([L09 program](212/A212133.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and median=mean.
@@ -1208,7 +1209,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228141](http://oeis.org/A228141) ([L06 program](228/A228141.asm)): Numbers that are congruent to {1, 5} mod 20.
 * [A228142](http://oeis.org/A228142) ([L23 program](228/A228142.asm)): Number of blocks in a Steiner system S(2, 5, A228141(n+1)).
 * [A228157](http://oeis.org/A228157) ([L09 program](228/A228157.asm)): Numbers n which are anagrams of n+9.
-* [A228176](http://oeis.org/A228176) ([L71 program](228/A228176.asm)): Floor(n*(sqrt(10)+sqrt(3))).
+* [A228176](http://oeis.org/A228176) ([L08 program](228/A228176.asm)): Floor(n*(sqrt(10)+sqrt(3))).
 * [A228177](http://oeis.org/A228177) ([L09 program](228/A228177.asm)): Floor(n*(sqrt(6)+sqrt(5))).
 * [A228219](http://oeis.org/A228219) ([L06 program](228/A228219.asm)): Number of second differences of arrays of length 4 of numbers in 0..n.
 * [A228220](http://oeis.org/A228220) ([L13 program](228/A228220.asm)): Number of second differences of arrays of length 5 of numbers in 0..n.
@@ -2323,7 +2324,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257052](http://oeis.org/A257052) ([L37 program](257/A257052.asm)): a(n) = cpg(3, n) + cpg(4, n) + ... + cpg(n, n) where cpg(m, n) is the n-th m-th-order centered polygonal number.
 * [A257055](http://oeis.org/A257055) ([L11 program](257/A257055.asm)): a(n) = n*(n + 1)*(n^2 - n + 3)/6.
 * [A257063](http://oeis.org/A257063) ([L13 program](257/A257063.asm)): Number of length 1 1..(n+1) arrays with every leading partial sum divisible by 2 or 3.
-* [A257075](http://oeis.org/A257075) ([L07 program](257/A257075.asm)): a(n) = (-1)^(n mod 3).
+* [A257075](http://oeis.org/A257075) ([L05 program](257/A257075.asm)): a(n) = (-1)^(n mod 3).
 * [A257076](http://oeis.org/A257076) ([L21 program](257/A257076.asm)): Expansion of (1 - x^3) / (1 - x + x^2) in powers of x.
 * [A257083](http://oeis.org/A257083) ([L08 program](257/A257083.asm)): Partial sums of A257088.
 * [A257088](http://oeis.org/A257088) ([L05 program](257/A257088.asm)): a(2*n) = 4*n if n>0, a(2*n + 1) = 2*n + 1, a(0) = 1.

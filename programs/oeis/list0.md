@@ -2911,7 +2911,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027472](http://oeis.org/A027472) ([L12 program](027/A027472.asm)): Third convolution of the powers of 3 (A000244).
 * [A027480](http://oeis.org/A027480) ([L04 program](027/A027480.asm)): a(n) = n*(n+1)*(n+2)/2.
 * [A027482](http://oeis.org/A027482) ([L07 program](027/A027482.asm)): a(n) = n*(n^3 - 1)/2.
-* [A027484](http://oeis.org/A027484) ([L10 program](027/A027484.asm)): n(n^4-1)/2.
+* [A027484](http://oeis.org/A027484) ([L09 program](027/A027484.asm)): n(n^4-1)/2.
 * [A027540](http://oeis.org/A027540) ([L09 program](027/A027540.asm)): Second diagonal of A027537.
 * [A027556](http://oeis.org/A027556) ([L09 program](027/A027556.asm)): Unbalanced strings of length n.
 * [A027575](http://oeis.org/A027575) ([L05 program](027/A027575.asm)): a(n) = n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2.
@@ -3403,7 +3403,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033443](http://oeis.org/A033443) ([L07 program](033/A033443.asm)): Number of edges in 11-partite Turán graph of order n.
 * [A033444](http://oeis.org/A033444) ([L07 program](033/A033444.asm)): Number of edges in 12-partite Turán graph of order n.
 * [A033445](http://oeis.org/A033445) ([L06 program](033/A033445.asm)): a(n) = (n - 1)*(n^2 + n - 1).
-* [A033455](http://oeis.org/A033455) ([L09 program](033/A033455.asm)): Convolution of nonzero squares A000290 with themselves.
+* [A033455](http://oeis.org/A033455) ([L08 program](033/A033455.asm)): Convolution of nonzero squares A000290 with themselves.
 * [A033465](http://oeis.org/A033465) ([L14 program](033/A033465.asm)): First differences of sequence {1/(n^2+1)} (numerators).
 * [A033484](http://oeis.org/A033484) ([L04 program](033/A033484.asm)): a(n) = 3*2^n - 2.
 * [A033486](http://oeis.org/A033486) ([L03 program](033/A033486.asm)): a(n) = n*(n + 1)*(n + 2)*(n + 3)/2.
@@ -5373,7 +5373,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A055850](http://oeis.org/A055850) ([L08 program](055/A055850.asm)): a(n) = 3*a(n-1) - a(n-2) with a(0)=1, a(1)=10.
 * [A055874](http://oeis.org/A055874) ([L13 program](055/A055874.asm)): a(n) = largest m such that 1, 2, ..., m divide n.
 * [A055881](http://oeis.org/A055881) ([L27 program](055/A055881.asm)): a(n) = largest m such that m! divides n.
-* [A055899](http://oeis.org/A055899) ([L105 program](055/A055899.asm)): Column 3 of triangle A055898.
+* [A055899](http://oeis.org/A055899) ([L55 program](055/A055899.asm)): Column 3 of triangle A055898.
 * [A055908](http://oeis.org/A055908) ([L40 program](055/A055908.asm)): Column 2 of triangle A055907.
 * [A055944](http://oeis.org/A055944) ([L14 program](055/A055944.asm)): n + reversal of base 2 digits of n (written in base 10).
 * [A055989](http://oeis.org/A055989) ([L09 program](055/A055989.asm)): a(n) is its own 4th difference.

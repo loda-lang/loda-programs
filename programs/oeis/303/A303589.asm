@@ -1,84 +1,11 @@
 ; A303589: Floor(n*alpha)-1, where alpha is the number with continued fraction expansion [1;1,2,3,4,5,...] (A247844).
 ; 0,2,4,5,7,9,10,12,14,15,17,19,21,22,24,26,27,29,31,32,34,36,38,39,41,43,44,46,48,49,51,53,55,56,58,60,61,63,65,66,68,70,72,73,75,77,78,80,82,83,85,87,88,90,92,94,95,97,99,100,102,104,105,107,109,111,112,114
 
-add $0,2
-mov $1,2
-sub $0,$1
-add $1,34
-sub $0,1
-mov $5,16
+add $0,1
+mov $1,36
 mov $2,5
-sub $5,$0
-add $0,2
 mul $2,$0
 mul $1,$2
-cmp $0,1
-mov $6,6
 sub $1,1
-trn $1,1
-mov $2,1
-add $6,$0
-sub $5,1
-sub $2,$6
-mov $5,$2
-div $2,$2
-mul $6,$5
-div $6,2
-sub $6,1
-add $5,121
-add $5,$6
-mov $7,$0
-mov $7,1
-add $1,$0
-add $7,4
-sub $2,$0
-add $4,1
-bin $0,$2
-add $5,6
-div $1,$5
-mov $2,2
-mul $2,$2
-lpb $0,1
-  add $4,1
-  sub $4,$5
-  mul $1,2
-  mul $4,2
-  mov $6,5
-  mov $3,$5
-  mov $1,$1
-  div $0,$5
-  sub $7,$4
-  mov $6,1
-  add $0,5
-  sub $7,$5
-  mov $5,6
-  add $2,2
-  mov $3,9
-  sub $2,8
-  sub $3,1
-  mov $2,7
-  sub $0,1
-  mul $0,$7
-  sub $5,$6
-  mul $6,2
-  mov $5,7
-  div $0,$2
-  mov $7,$2
-  mov $0,1
-  pow $2,$0
-  mul $0,2
-  add $2,$6
-  gcd $1,2
-  mov $7,1
-  mov $5,2
-  mov $0,1
-  mov $3,$4
-  mul $5,2
-  sub $7,28
-  mov $7,$3
-  div $4,$3
-  add $0,$7
-  mov $1,$0
-  mod $3,2
-lpe
+div $1,106
 sub $1,1
