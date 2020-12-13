@@ -1372,6 +1372,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231672](http://oeis.org/A231672) ([L17 program](231/A231672.asm)): a(n) = Sum_{i=0..n} digsum_6(i), where digsum_6(i) = A053827(i).
 * [A231676](http://oeis.org/A231676) ([L17 program](231/A231676.asm)): a(n) = Sum_{i=0..n} digsum_7(i), where digsum_7(i) = A053828(i).
 * [A231680](http://oeis.org/A231680) ([L18 program](231/A231680.asm)): a(n) = Sum_{i=0..n} digsum_8(i), where digsum_8(i) = A053829(i).
+* [A231682](http://oeis.org/A231682) ([L22 program](231/A231682.asm)): a(n) = Sum_{i=0..n} digsum_8(i)^3, where digsum_8(i) = A053829(i).
+* [A231683](http://oeis.org/A231683) ([L22 program](231/A231683.asm)): a(n) = Sum_{i=0..n} digsum_8(i)^4, where digsum_8(i) = A053829(i).
 * [A231684](http://oeis.org/A231684) ([L17 program](231/A231684.asm)): a(n) = Sum_{i=0..n} digsum_9(i), where digsum_9(i) = A053830(i).
 * [A231686](http://oeis.org/A231686) ([L14 program](231/A231686.asm)): a(n) = Sum_{i=0..n} digsum_9(i)^3, where digsum_9(i) = A053830(i).
 * [A231687](http://oeis.org/A231687) ([L18 program](231/A231687.asm)): a(n) = Sum_{i=0..n} digsum_9(i)^4, where digsum_9(i) = A053830(i).
@@ -1387,7 +1389,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A232600](http://oeis.org/A232600) ([L12 program](232/A232600.asm)): a(n) = Sum_{k=0..n} k^p*q^k, where p=1, q=-2.
 * [A232625](http://oeis.org/A232625) ([L29 program](232/A232625.asm)): Denominators of abs(n-8)/(2*n), n >= 1
 * [A232713](http://oeis.org/A232713) ([L05 program](232/A232713.asm)): Doubly pentagonal numbers: a(n) = n*(3*n-2)*(3*n-1)*(3*n+1)/8.
-* [A232741](http://oeis.org/A232741) ([L75 program](232/A232741.asm)): Numbers n for which the largest m such that (m-1)! divides n is a prime.
 * [A232746](http://oeis.org/A232746) ([L21 program](232/A232746.asm)): n occurs A030124(n) times; a(n) = one less than the least k such that A005228(k) > n.
 * [A232765](http://oeis.org/A232765) ([L11 program](232/A232765.asm)): Values of y solving x^2 = floor(y^2/3 + y).
 * [A232771](http://oeis.org/A232771) ([L09 program](232/A232771.asm)): Values of x satisfying x^2 = floor(y^2/3 + y).
@@ -3349,6 +3350,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276857](http://oeis.org/A276857) ([L27 program](276/A276857.asm)): First differences of the Beatty sequence A022841 for sqrt(7).
 * [A276858](http://oeis.org/A276858) ([L27 program](276/A276858.asm)): First differences of the Beatty sequence A022842 for sqrt(8).
 * [A276859](http://oeis.org/A276859) ([L47 program](276/A276859.asm)): First differences of the Beatty sequence A022843 for e.
+* [A276860](http://oeis.org/A276860) ([L102 program](276/A276860.asm)): First differences of the Beatty sequence A276853 for 2*e.
 * [A276862](http://oeis.org/A276862) ([L30 program](276/A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
 * [A276864](http://oeis.org/A276864) ([L41 program](276/A276864.asm)): First differences of the Beatty sequence A001952 for 2 + sqrt(2).
 * [A276865](http://oeis.org/A276865) ([L29 program](276/A276865.asm)): First differences of the Beatty sequence A003512 for 2 + sqrt(3).

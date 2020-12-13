@@ -3,22 +3,18 @@
 
 mov $4,$0
 mov $6,$0
-add $6,1
 lpb $6,1
   clr $0,4
-  sub $6,1
   mov $0,$4
+  sub $6,1
   sub $0,$6
   add $2,$0
   lpb $0,1
-    div $2,8
     mod $0,8
-    mod $3,8
+    div $2,8
     add $2,$0
-    mov $1,-1
   lpe
   pow $2,3
-  mov $1,$0
   mov $1,$2
   add $5,$1
 lpe

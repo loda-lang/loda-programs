@@ -3927,6 +3927,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040314](http://oeis.org/A040314) ([L11 program](040/A040314.asm)): Continued fraction for sqrt(333).
 * [A040316](http://oeis.org/A040316) ([L17 program](040/A040316.asm)): Continued fraction for sqrt(335).
 * [A040317](http://oeis.org/A040317) ([L11 program](040/A040317.asm)): Continued fraction for sqrt(336).
+* [A040319](http://oeis.org/A040319) ([L26 program](040/A040319.asm)): Continued fraction for sqrt(338).
 * [A040323](http://oeis.org/A040323) ([L11 program](040/A040323.asm)): Continued fraction for sqrt(342).
 * [A040327](http://oeis.org/A040327) ([L17 program](040/A040327.asm)): Continued fraction for sqrt(346).
 * [A040329](http://oeis.org/A040329) ([L13 program](040/A040329.asm)): Continued fraction for sqrt(348).
@@ -4673,7 +4674,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047602](http://oeis.org/A047602) ([L04 program](047/A047602.asm)): Numbers that are congruent to {0, 1, 2, 3, 4, 5} mod 8.
 * [A047603](http://oeis.org/A047603) ([L05 program](047/A047603.asm)): Numbers that are congruent to {1, 2, 3, 4, 5} mod 8.
 * [A047604](http://oeis.org/A047604) ([L13 program](047/A047604.asm)): Numbers that are congruent to {2, 3, 5} mod 8.
-* [A047605](http://oeis.org/A047605) ([L08 program](047/A047605.asm)): Numbers that are congruent to {0, 2, 3, 5} mod 8.
+* [A047605](http://oeis.org/A047605) ([L07 program](047/A047605.asm)): Numbers that are congruent to {0, 2, 3, 5} mod 8.
 * [A047606](http://oeis.org/A047606) ([L11 program](047/A047606.asm)): Numbers that are congruent to {1, 2, 3, 5} mod 8.
 * [A047607](http://oeis.org/A047607) ([L14 program](047/A047607.asm)): Numbers that are congruent to {0, 1, 2, 3, 5} mod 8.
 * [A047608](http://oeis.org/A047608) ([L05 program](047/A047608.asm)): Numbers that are congruent to {4, 5} mod 8.
@@ -6062,8 +6063,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063498](http://oeis.org/A063498) ([L13 program](063/A063498.asm)): Atoms in cluster of n layers around C_60.
 * [A063510](http://oeis.org/A063510) ([L08 program](063/A063510.asm)): a(1) = 1, a(n) = a(floor(square root(n)) + 1 for n > 1.
 * [A063511](http://oeis.org/A063511) ([L11 program](063/A063511.asm)): a(n) = a(floor(square root(n))) * 2.
-* [A063521](http://oeis.org/A063521) ([L13 program](063/A063521.asm)): a(n) = n*(7*n^2-4)/3.
-* [A063522](http://oeis.org/A063522) ([L14 program](063/A063522.asm)): a(n) = n*(5*n^2 - 3)/2.
+* [A063521](http://oeis.org/A063521) ([L11 program](063/A063521.asm)): a(n) = n*(7*n^2-4)/3.
+* [A063522](http://oeis.org/A063522) ([L10 program](063/A063522.asm)): a(n) = n*(5*n^2 - 3)/2.
 * [A063523](http://oeis.org/A063523) ([L14 program](063/A063523.asm)): a(n) = n*(8*n^2 - 5)/3.
 * [A063524](http://oeis.org/A063524) ([L02 program](063/A063524.asm)): Characteristic function of 1.
 * [A063656](http://oeis.org/A063656) ([L07 program](063/A063656.asm)): Numbers k such that the truncated square root of k is equal to the rounded square root of k.
@@ -6164,6 +6165,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065120](http://oeis.org/A065120) ([L14 program](065/A065120.asm)): Highest power of 2 dividing A057335(n).
 * [A065130](http://oeis.org/A065130) ([L48 program](065/A065130.asm)): a(n) = A005228(n) - A000217(n).
 * [A065164](http://oeis.org/A065164) ([L14 program](065/A065164.asm)): Permutation t->t+1 of Z, folded to N.
+* [A065165](http://oeis.org/A065165) ([L89 program](065/A065165.asm)): Permutation t->t+2 of Z, folded to N.
 * [A065168](http://oeis.org/A065168) ([L21 program](065/A065168.asm)): Permutation t->t-1 of Z, folded to N.
 * [A065171](http://oeis.org/A065171) ([L11 program](065/A065171.asm)): Permutation of Z, folded to N, corresponding to the site swap pattern ...26120123456... which ascends infinitely after t=0.
 * [A065176](http://oeis.org/A065176) ([L11 program](065/A065176.asm)): Site swap sequence associated with the permutation A065174 of Z.
