@@ -1,0 +1,92 @@
+; A014152: Inverse of 143rd cyclotomic polynomial.
+; 1,1,1,1,1,1,1,1,1,1,1,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+mov $6,1
+sub $0,2
+mov $6,2
+sub $0,2
+add $7,$0
+mov $1,$7
+mov $8,1
+sub $8,$7
+add $7,$1
+mov $5,1
+mod $5,4
+mov $7,3
+trn $7,$1
+mov $6,$1
+mov $1,3
+mov $3,2
+lpb $8,1
+  add $1,$8
+  sub $7,$7
+  mov $1,25
+  sub $5,$7
+  mov $5,1
+  add $7,$5
+  add $6,$8
+  lpb $7,2
+    mov $3,5
+    mov $8,2
+    add $6,1
+    mov $7,$7
+    mov $1,6
+    div $6,2
+    mul $7,$6
+    add $1,$8
+    add $3,12
+    div $6,$1
+    sub $1,$7
+    sub $5,$0
+    mov $6,1
+    sub $8,1
+    add $8,4
+    sub $5,$1
+    add $5,1
+    add $4,1
+    lpb $0,1
+      div $0,9
+      mov $4,3
+      mov $4,$3
+      trn $3,1
+    lpe
+    lpb $5,1
+      add $1,1
+      mov $2,$7
+      div $5,5
+    lpe
+    sub $3,$1
+    mod $3,2
+    add $5,23
+    mul $0,$6
+    add $6,$8
+    mod $5,7
+  lpe
+  lpb $0,1
+    mov $7,1
+    mov $5,12
+    add $8,$8
+    lpb $8,31
+      add $4,$1
+      add $4,$4
+      mod $8,4
+    lpe
+    sub $5,2
+    mod $8,4
+  lpe
+  mov $8,2
+  trn $7,$5
+  mov $4,1901
+  mov $7,$6
+  mov $6,$2
+lpe
+pow $4,2
+add $1,5
+mov $2,$2
+sub $3,1
+sub $8,$1
+add $4,1
+mov $0,$4
+sub $2,2
+sub $6,2
+mov $1,$3
