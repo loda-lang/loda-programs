@@ -3,43 +3,9 @@
 
 mul $0,7
 div $0,3
-mov $2,$0
-mov $1,4
 sub $0,1
-mov $2,$0
-mul $1,297754
-add $6,$1
-mov $1,$2
 pow $0,2
-add $2,$1
-lpb $6,1
-  lpb $2,1
-    mov $1,5
-    mov $3,6
-    div $2,2
-  lpe
-  lpb $2,1
-    lpb $0,1
-      mod $0,10
-      add $4,1
-      add $1,$6
-      mov $1,$0
-      mov $0,$6
-      mov $6,$0
-    lpe
-    mod $0,10
-    mov $8,$0
-    sub $1,3
-    mul $0,5
-  lpe
-  sub $0,4
-  add $1,52
-  add $3,1
-lpe
 lpb $0,1
   mod $0,5
-  mul $1,$0
-  mul $1,$0
-  mul $6,8
 lpe
 mov $1,$0

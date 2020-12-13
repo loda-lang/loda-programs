@@ -434,7 +434,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105812](http://oeis.org/A105812) ([L09 program](105/A105812.asm)): Expansion of (1+x-x^2)/(1+x).
 * [A105814](http://oeis.org/A105814) ([L21 program](105/A105814.asm)): a(n) = n^2 + (n concatenated with n).
 * [A105899](http://oeis.org/A105899) ([L04 program](105/A105899.asm)): Period 6: repeat [1, 1, 2, 2, 3, 3].
-* [A105938](http://oeis.org/A105938) ([L11 program](105/A105938.asm)): a(n) = binomial(n+2,2)*binomial(n+5,2).
+* [A105938](http://oeis.org/A105938) ([L09 program](105/A105938.asm)): a(n) = binomial(n+2,2)*binomial(n+5,2).
 * [A105939](http://oeis.org/A105939) ([L04 program](105/A105939.asm)): a(n) = C(n+3,3)*C(n+6,3).
 * [A105963](http://oeis.org/A105963) ([L18 program](105/A105963.asm)): Expansion of (1+4*x)/(1-x-3*x^2).
 * [A105968](http://oeis.org/A105968) ([L15 program](105/A105968.asm)): a(n) = 4*a(n-1) - a(n-2) - 2*(-1)^n, a(0) = 1, a(1) = 4.
@@ -667,7 +667,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109522](http://oeis.org/A109522) ([L88 program](109/A109522.asm)): a(n)=the (1,2)-entry in the matrix P^n + F^n, where the 2 X 2 matrices P and F are defined by P=[0,1;1,0] and F=[0,1;1,1].
 * [A109534](http://oeis.org/A109534) ([L21 program](109/A109534.asm)): a(0)=1, a(n)=n+a(n-1) if n mod 2=0, a(n)=3n-a(n-1) if n mod 2 = 1.
 * [A109546](http://oeis.org/A109546) ([L10 program](109/A109546.asm)): (4^(n+1)-(-1)^n 9 )/5.
-* [A109588](http://oeis.org/A109588) ([L83 program](109/A109588.asm)): n followed by n^2 followed by n^3.
+* [A109588](http://oeis.org/A109588) ([L14 program](109/A109588.asm)): n followed by n^2 followed by n^3.
 * [A109592](http://oeis.org/A109592) ([L52 program](109/A109592.asm)): Sequence and first differences include all even numbers exactly once and no odd numbers.
 * [A109610](http://oeis.org/A109610) ([L10 program](109/A109610.asm)): Expansion of (1+3*x^4-2*x^7+x^10-x^12)/((x+1)*(x^2+1)*(x^2+x+1)*(x^2-x+1)*(x^4-x^2+1)*(x-1)^2).
 * [A109613](http://oeis.org/A109613) ([L04 program](109/A109613.asm)): Odd numbers repeated.
@@ -4391,8 +4391,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162260](http://oeis.org/A162260) ([L10 program](162/A162260.asm)): a(n) = (n^3 + 4*n^2 - n)/2.
 * [A162261](http://oeis.org/A162261) ([L07 program](162/A162261.asm)): a(n) = (2*n^3 + 5*n^2 - 7*n)/2.
 * [A162262](http://oeis.org/A162262) ([L13 program](162/A162262.asm)): a(n) = (2*n^3 + 5*n^2 - 13*n)/2.
-* [A162263](http://oeis.org/A162263) ([L12 program](162/A162263.asm)): a(n) = (2*n^3 + 5*n^2 + 11*n)/2.
-* [A162264](http://oeis.org/A162264) ([L10 program](162/A162264.asm)): a(n) = (2*n^3 + 5*n^2 + 7*n)/2.
+* [A162263](http://oeis.org/A162263) ([L22 program](162/A162263.asm)): a(n) = (2*n^3 + 5*n^2 + 11*n)/2.
+* [A162264](http://oeis.org/A162264) ([L22 program](162/A162264.asm)): a(n) = (2*n^3 + 5*n^2 + 7*n)/2.
 * [A162265](http://oeis.org/A162265) ([L13 program](162/A162265.asm)): a(n) = (2*n^3 + 5*n^2 - 5*n)/2.
 * [A162266](http://oeis.org/A162266) ([L11 program](162/A162266.asm)): a(n) = (2*n^3 + 5*n^2 + 21*n)/2.
 * [A162267](http://oeis.org/A162267) ([L17 program](162/A162267.asm)): a(n) = (2*n^3 + 5*n^2 + 5*n)/2.
@@ -6306,7 +6306,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185212](http://oeis.org/A185212) ([L05 program](185/A185212.asm)): a(n) = 12*n^2 - 8*n + 1.
 * [A185270](http://oeis.org/A185270) ([L03 program](185/A185270.asm)): a(n) = 648 * n^6.
 * [A185273](http://oeis.org/A185273) ([L20 program](185/A185273.asm)): Period 6: repeat [1, 6, 5, 6, 1, 0].
-* [A185294](http://oeis.org/A185294) ([L15 program](185/A185294.asm)): Number of disconnected 9-regular simple graphs on 2n vertices with girth at least 4.
+* [A185294](http://oeis.org/A185294) ([L12 program](185/A185294.asm)): Number of disconnected 9-regular simple graphs on 2n vertices with girth at least 4.
 * [A185346](http://oeis.org/A185346) ([L03 program](185/A185346.asm)): a(n) = 2^n - 9.
 * [A185355](http://oeis.org/A185355) ([L12 program](185/A185355.asm)): Number of n X n symmetric (0,1)-matrices containing four ones.
 * [A185387](http://oeis.org/A185387) ([L07 program](185/A185387.asm)): E.g.f. exp(x)+log(1/(1-x)).
@@ -6528,7 +6528,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187891](http://oeis.org/A187891) ([L09 program](187/A187891.asm)): a(0)=0, a(1)=5, a(n)=a(n-1)+a(n-2)-1.
 * [A187892](http://oeis.org/A187892) ([L14 program](187/A187892.asm)): a(0)=0, a(1)=6, a(n)=a(n-1)+a(n-2)-1.
 * [A187893](http://oeis.org/A187893) ([L14 program](187/A187893.asm)): a(0)=1, a(1)=4, a(n) = a(n-1) + a(n-2) - 1.
-* [A187968](http://oeis.org/A187968) ([L89 program](187/A187968.asm)): Positions of 1 in A187967; complement (conjectured) of A098021.
+* [A187968](http://oeis.org/A187968) ([L31 program](187/A187968.asm)): Positions of 1 in A187967; complement (conjectured) of A098021.
 * [A187971](http://oeis.org/A187971) ([L60 program](187/A187971.asm)): Positions of 1 in A187969; complement of A187970.
 * [A187975](http://oeis.org/A187975) ([L52 program](187/A187975.asm)): Positions of 1 in the zero-one sequence given by s(n)=[nr+5r]-[nr]-[5r], where r=sqrt(2), n>=1, [ ]=floor.
 * [A188010](http://oeis.org/A188010) ([L27 program](188/A188010.asm)): Positions of 0 in A188009; complement of A101866.
@@ -7224,7 +7224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A198473](http://oeis.org/A198473) ([L17 program](198/A198473.asm)): Duplicate of A026185.
 * [A198480](http://oeis.org/A198480) ([L04 program](198/A198480.asm)): 2*7^n - 1.
 * [A198517](http://oeis.org/A198517) ([L04 program](198/A198517.asm)): Period 5: repeat [1,0,1,0,0].
-* [A198633](http://oeis.org/A198633) ([L10 program](198/A198633.asm)): Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
+* [A198633](http://oeis.org/A198633) ([L08 program](198/A198633.asm)): Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
 * [A198635](http://oeis.org/A198635) ([L06 program](198/A198635.asm)): Total number of round trips, each of length 2*n on the graph P_5 (o-o-o-o-o).
 * [A198643](http://oeis.org/A198643) ([L04 program](198/A198643.asm)): 5*3^n-1.
 * [A198644](http://oeis.org/A198644) ([L04 program](198/A198644.asm)): 8*3^n-1.
