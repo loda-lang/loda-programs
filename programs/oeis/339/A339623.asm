@@ -1,0 +1,51 @@
+; A339623: Consider a square drawn on the perimeter of a square lattice with side length n. a(n) is the number of regions inside the square after drawing unit circles centered at each interior lattice point of the square.
+; 1,5,21,52,97,156,229,316,417,532,661,804,961,1132,1317,1516,1729,1956,2197,2452,2721,3004,3301,3612,3937,4276,4629,4996,5377,5772,6181,6604,7041,7492,7957,8436,8929,9436,9957,10492,11041,11604,12181,12772,13377,13996,14629,15276,15937,16612,17301
+
+mov $5,$0
+sub $0,1
+mul $0,$0
+mov $2,2
+mul $2,$2
+mov $4,2
+add $1,$2
+mov $2,$1
+lpb $0,1
+  mov $3,4
+  div $4,$2
+  mov $4,$0
+  sub $1,$0
+  mov $2,1
+  bin $4,4
+  sub $0,$0
+  mov $4,1
+  sub $0,$1
+  div $0,$2
+  mov $0,1
+  sub $1,5
+  add $1,$1
+  mov $1,$1
+  add $4,$0
+  div $4,$4
+  add $3,$1
+  mov $1,6
+  div $2,2
+  mul $4,2
+  mov $2,1
+  add $2,5
+  mov $1,$1
+  mov $2,2
+lpe
+trn $0,$3
+trn $4,1
+mov $1,$2
+mul $1,8
+mul $0,$4
+mov $1,$3
+mov $4,$0
+mov $1,$0
+mov $6,$5
+mul $6,$5
+mov $7,$6
+mul $7,5
+add $1,$7
+mul $6,$5
