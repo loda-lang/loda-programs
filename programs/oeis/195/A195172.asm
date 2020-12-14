@@ -3,12 +3,9 @@
 
 mul $0,55
 mov $1,$0
-mov $1,$0
-add $5,4
 lpb $0,1
-  div $1,36
   mov $0,1
-  div $1,2
+  div $1,72
 lpe
 add $0,$1
 mov $1,$0
