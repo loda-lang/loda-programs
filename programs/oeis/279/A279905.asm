@@ -1,0 +1,106 @@
+; A279905: Number of 2 X 2 matrices with entries in {0,1,...,n} and odd trace with no elements repeated.
+; 0,0,0,16,72,216,480,960,1680,2800,4320,6480,9240,12936,17472,23296,30240,38880,48960,61200,75240,91960,110880,133056,157872,186576,218400,254800,294840,340200,389760,445440,505920,573376,646272,727056,813960,909720
+
+add $9,$0
+mov $7,$0
+mov $3,$7
+mov $8,$7
+mul $9,2
+mov $2,$8
+mov $9,1
+mov $3,$8
+sub $2,4
+add $2,3
+mov $5,0
+add $0,$8
+trn $2,5
+mov $1,$2
+mov $9,3
+add $10,$7
+sub $9,$8
+mov $6,$9
+add $4,$8
+mov $4,1
+add $8,$10
+trn $8,$10
+mov $8,3
+trn $0,1
+add $1,1
+cmp $0,$1
+add $6,$6
+mov $8,1
+add $10,1
+sub $9,1
+mul $10,$10
+trn $3,3
+mov $5,3
+lpb $0,1
+  add $3,$7
+  add $3,2
+  sub $2,$7
+  mov $0,$5
+  add $6,2
+  add $9,$1
+  mov $2,1
+  sub $1,$8
+  mov $2,$8
+  mul $7,2
+  mov $6,$5
+  mul $8,434
+  sub $7,$5
+  sub $1,$5
+  sub $0,$5
+  mov $9,$10
+  add $0,$10
+  mov $5,7629217
+  div $3,$2
+  mul $4,2
+  mov $3,$10
+  mov $8,$7
+  add $7,1
+  mov $1,3
+  mov $6,$0
+  add $6,$3
+  mov $2,$4
+  add $10,7
+  mov $3,6
+  mul $10,682
+  mov $5,$0
+  mov $2,$6
+  add $6,$1
+  add $10,$8
+  mov $4,$7
+  mul $10,$4
+  mov $7,$2
+  sub $2,1
+  sub $6,$6
+  mov $8,$8
+  bin $6,2
+  mov $4,$9
+  pow $4,2
+  sub $5,$4
+  add $3,$4
+  sub $0,1
+  sub $9,$0
+  mov $0,1
+  cmp $5,$4
+lpe
+trn $3,1
+add $7,$7
+mov $2,2
+add $3,1
+mov $1,1
+sub $5,$4
+sub $1,6
+bin $9,2
+mul $5,$5
+div $10,$2
+mov $2,1
+mul $10,$9
+add $1,$3
+pow $8,5
+mul $8,2
+mov $6,1
+mov $1,$10
+div $1,4
+mul $1,8
