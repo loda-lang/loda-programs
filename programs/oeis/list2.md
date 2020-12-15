@@ -40,7 +40,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A201500](http://oeis.org/A201500) ([L10 program](201/A201500.asm)): Number of n X 3 0..1 arrays with every row and column running average nondecreasing rightwards and downwards, and the number of instances of each value within one of each other.
 * [A201629](http://oeis.org/A201629) ([L09 program](201/A201629.asm)): a(n) = n if n is even and otherwise its nearest multiple of 4.
 * [A201630](http://oeis.org/A201630) ([L09 program](201/A201630.asm)): a(n) = a(n-1)+2*a(n-2) with n>1, a(0)=2, a(1)=7.
-* [A201686](http://oeis.org/A201686) ([L07 program](201/A201686.asm)): a(n) = binomial(n, [n/2]) - 2.
+* [A201686](http://oeis.org/A201686) ([L05 program](201/A201686.asm)): a(n) = binomial(n, [n/2]) - 2.
 * [A201722](http://oeis.org/A201722) ([L12 program](201/A201722.asm)): Number of n X 1 0..4 arrays with rows and columns lexicographically nondecreasing and no element equal to the number of horizontal and vertical neighbors equal to itself.
 * [A201812](http://oeis.org/A201812) ([L10 program](201/A201812.asm)): Number of arrays of 4 integers in -n..n with sum zero and equal numbers of elements greater than zero and less than zero.
 * [A201813](http://oeis.org/A201813) ([L11 program](201/A201813.asm)): Number of arrays of 5 integers in -n..n with sum zero and equal numbers of elements greater than zero and less than zero.
@@ -1129,7 +1129,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226488](http://oeis.org/A226488) ([L05 program](226/A226488.asm)): a(n) = n*(13*n - 9)/2.
 * [A226489](http://oeis.org/A226489) ([L08 program](226/A226489.asm)): a(n) = n*(15*n-11)/2.
 * [A226490](http://oeis.org/A226490) ([L19 program](226/A226490.asm)): a(n) = n*(19*n-15)/2.
-* [A226491](http://oeis.org/A226491) ([L19 program](226/A226491.asm)): a(n) = n*(21*n-17)/2.
+* [A226491](http://oeis.org/A226491) ([L13 program](226/A226491.asm)): a(n) = n*(21*n-17)/2.
 * [A226492](http://oeis.org/A226492) ([L06 program](226/A226492.asm)): a(n) = n*(11*n-5)/2.
 * [A226493](http://oeis.org/A226493) ([L05 program](226/A226493.asm)): Closed walks of length n in K_4 graph.
 * [A226511](http://oeis.org/A226511) ([L08 program](226/A226511.asm)): 3*(5^n-3^n)/2.
@@ -2592,7 +2592,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A263646](http://oeis.org/A263646) ([L28 program](263/A263646.asm)): Coefficients for an expansion of the Schwarzian derivative of a power series.
 * [A263689](http://oeis.org/A263689) ([L24 program](263/A263689.asm)): a(n) = (2*n^6 - 6*n^5 + 5*n^4 - n^2 + 12)/12.
 * [A263772](http://oeis.org/A263772) ([L04 program](263/A263772.asm)): Perimeters of integer-sided scalene triangles.
-* [A263794](http://oeis.org/A263794) ([L13 program](263/A263794.asm)): Number of (n+1) X (3+1) 0..1 arrays with each row and column divisible by 3, read as a binary number with top and left being the most significant bits, and rows and columns lexicographically nonincreasing.
+* [A263794](http://oeis.org/A263794) ([L19 program](263/A263794.asm)): Number of (n+1) X (3+1) 0..1 arrays with each row and column divisible by 3, read as a binary number with top and left being the most significant bits, and rows and columns lexicographically nonincreasing.
 * [A263807](http://oeis.org/A263807) ([L06 program](263/A263807.asm)): Total number of ON (black) cells after n iterations of the "Rule 157" elementary cellular automaton starting with a single ON (black) cell.
 * [A263824](http://oeis.org/A263824) ([L15 program](263/A263824.asm)): Permutation of the nonnegative integers: [6k+3, 6k+4, 6k+5, 6k, 6k+1, 6k+2, ...].
 * [A263845](http://oeis.org/A263845) ([L31 program](263/A263845.asm)): A258059(n)+1.
@@ -2688,7 +2688,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266220](http://oeis.org/A266220) ([L11 program](266/A266220.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
 * [A266221](http://oeis.org/A266221) ([L08 program](266/A266221.asm)): Total number of ON (black) cells after n iterations of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
 * [A266222](http://oeis.org/A266222) ([L11 program](266/A266222.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
-* [A266223](http://oeis.org/A266223) ([L09 program](266/A266223.asm)): Total number of OFF (white) cells after n iterations of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
+* [A266223](http://oeis.org/A266223) ([L27 program](266/A266223.asm)): Total number of OFF (white) cells after n iterations of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
 * [A266242](http://oeis.org/A266242) ([L26 program](266/A266242.asm)): Numbers n such that the initial digit of the fractional part of n*Pi is 0.
 * [A266246](http://oeis.org/A266246) ([L05 program](266/A266246.asm)): Middle column of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
 * [A266252](http://oeis.org/A266252) ([L24 program](266/A266252.asm)): Total number of OFF (white) cells after n iterations of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.

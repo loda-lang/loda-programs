@@ -118,7 +118,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000934](http://oeis.org/A000934) ([L16 program](000/A000934.asm)): Chromatic number (or Heawood number) Chi(n) of surface of genus n.
 * [A000960](http://oeis.org/A000960) ([L12 program](000/A000960.asm)): Flavius Josephus's sieve: Start with the natural numbers; at the k-th sieving step, remove every (k+1)-st term of the sequence remaining after the (k-1)-st sieving step; iterate.
 * [A000969](http://oeis.org/A000969) ([L07 program](000/A000969.asm)): Expansion of (1+x+2*x^2)/((1-x)^2*(1-x^3)).
-* [A000970](http://oeis.org/A000970) ([L13 program](000/A000970.asm)): Fermat coefficients.
+* [A000970](http://oeis.org/A000970) ([L06 program](000/A000970.asm)): Fermat coefficients.
 * [A000971](http://oeis.org/A000971) ([L12 program](000/A000971.asm)): Fermat coefficients.
 * [A000972](http://oeis.org/A000972) ([L13 program](000/A000972.asm)): Fermat coefficients.
 * [A000973](http://oeis.org/A000973) ([L06 program](000/A000973.asm)): Fermat coefficients.
@@ -179,7 +179,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001360](http://oeis.org/A001360) ([L07 program](001/A001360.asm)): Crystal ball sequence for hyperbolic tessellation 3^7 (from triangle group (2,3,7)).
 * [A001386](http://oeis.org/A001386) ([L12 program](001/A001386.asm)): Coordination sequence for 4-dimensional I-centered tetragonal orthogonal lattice.
 * [A001399](http://oeis.org/A001399) ([L05 program](001/A001399.asm)): a(n) is the number of partitions of n into at most 3 parts; also partitions of n+3 in which the greatest part is 3; also number of unlabeled multigraphs with 3 nodes and n edges.
-* [A001405](http://oeis.org/A001405) ([L05 program](001/A001405.asm)): a(n) = binomial(n, floor(n/2)).
+* [A001405](http://oeis.org/A001405) ([L04 program](001/A001405.asm)): a(n) = binomial(n, floor(n/2)).
 * [A001445](http://oeis.org/A001445) ([L13 program](001/A001445.asm)): a(n) = (2^n + 2^[ n/2 ] )/2.
 * [A001446](http://oeis.org/A001446) ([L28 program](001/A001446.asm)): a(n) = (4^n + 4^[ n/2 ] )/2.
 * [A001453](http://oeis.org/A001453) ([L10 program](001/A001453.asm)): Catalan numbers - 1.
@@ -1030,7 +1030,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008606](http://oeis.org/A008606) ([L02 program](008/A008606.asm)): Multiples of 24.
 * [A008607](http://oeis.org/A008607) ([L02 program](008/A008607.asm)): Multiples of 25.
 * [A008610](http://oeis.org/A008610) ([L34 program](008/A008610.asm)): Molien series of 4-dimensional representation of cyclic group of order 4 over GF(2) (not Cohen-Macaulay).
-* [A008611](http://oeis.org/A008611) ([L11 program](008/A008611.asm)): a(n) = a(n-3) + 1, with a(0)=a(2)=1, a(1)=0.
+* [A008611](http://oeis.org/A008611) ([L09 program](008/A008611.asm)): a(n) = a(n-3) + 1, with a(0)=a(2)=1, a(1)=0.
 * [A008612](http://oeis.org/A008612) ([L20 program](008/A008612.asm)): Molien series of 2-dimensional representation of SL(2,3).
 * [A008615](http://oeis.org/A008615) ([L08 program](008/A008615.asm)): a(n) = floor(n/2) - floor(n/3).
 * [A008616](http://oeis.org/A008616) ([L21 program](008/A008616.asm)): Expansion of 1/((1-x^2)(1-x^5)).
@@ -1061,7 +1061,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008729](http://oeis.org/A008729) ([L05 program](008/A008729.asm)): Molien series for 3-dimensional group [2, n] = *22n.
 * [A008730](http://oeis.org/A008730) ([L05 program](008/A008730.asm)): Molien series 1/((1-x)^2*(1-x^12)) for 3-dimensional group [2,n] = *22n.
 * [A008731](http://oeis.org/A008731) ([L07 program](008/A008731.asm)): Molien series for 3-dimensional group [2, n] = *22n.
-* [A008732](http://oeis.org/A008732) ([L07 program](008/A008732.asm)): Molien series for 3-dimensional group [2,n] = *22n.
+* [A008732](http://oeis.org/A008732) ([L06 program](008/A008732.asm)): Molien series for 3-dimensional group [2,n] = *22n.
 * [A008733](http://oeis.org/A008733) ([L18 program](008/A008733.asm)): Molien series for 3-dimensional group [2+, n] = 2*(n/2).
 * [A008737](http://oeis.org/A008737) ([L22 program](008/A008737.asm)): a(n) = floor(n/6)*ceiling(n/6).
 * [A008738](http://oeis.org/A008738) ([L04 program](008/A008738.asm)): a(n) = floor((n^2 + 1)/5).
@@ -1594,7 +1594,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014480](http://oeis.org/A014480) ([L06 program](014/A014480.asm)): Expansion of (1+2*x)/(1-2*x)^2.
 * [A014493](http://oeis.org/A014493) ([L12 program](014/A014493.asm)): Odd triangular numbers.
 * [A014494](http://oeis.org/A014494) ([L16 program](014/A014494.asm)): Even triangular numbers.
-* [A014495](http://oeis.org/A014495) ([L06 program](014/A014495.asm)): Central binomial coefficient - 1.
+* [A014495](http://oeis.org/A014495) ([L05 program](014/A014495.asm)): Central binomial coefficient - 1.
 * [A014551](http://oeis.org/A014551) ([L19 program](014/A014551.asm)): Jacobsthal-Lucas numbers.
 * [A014557](http://oeis.org/A014557) ([L16 program](014/A014557.asm)): Multiplicity of K_3 in K_n.
 * [A014577](http://oeis.org/A014577) ([L22 program](014/A014577.asm)): The regular paper-folding sequence (or dragon curve sequence).
@@ -3647,7 +3647,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037124](http://oeis.org/A037124) ([L15 program](037/A037124.asm)): Numbers that contain only one nonzero digit.
 * [A037140](http://oeis.org/A037140) ([L16 program](037/A037140.asm)): Convolution of natural numbers n >= 1 with Fibonacci numbers F(k), for k >= 5.
 * [A037141](http://oeis.org/A037141) ([L20 program](037/A037141.asm)): Convolution of natural numbers n >= 1 with Fibonacci numbers F(k), for k >= -5, with F(-n)=(-1)^(n+1)*F(n);.
-* [A037147](http://oeis.org/A037147) ([L06 program](037/A037147.asm)): Denominators of Fourier coefficients of Eisenstein series of degree 2 and weight 10 when evaluated at Gram(A_2)*z.
+* [A037147](http://oeis.org/A037147) ([L07 program](037/A037147.asm)): Denominators of Fourier coefficients of Eisenstein series of degree 2 and weight 10 when evaluated at Gram(A_2)*z.
 * [A037157](http://oeis.org/A037157) ([L37 program](037/A037157.asm)): Convolution of natural numbers n >= 1 with Fibonacci numbers F(k), for k >= 6.
 * [A037158](http://oeis.org/A037158) ([L16 program](037/A037158.asm)): Convolution of natural numbers n >= 1 with Fibonacci numbers F(k), for k >= -7, with F(-n)=(-1)^(n+1)*F(n).
 * [A037206](http://oeis.org/A037206) ([L05 program](037/A037206.asm)): Duplicate of A065530.
@@ -3750,7 +3750,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038163](http://oeis.org/A038163) ([L27 program](038/A038163.asm)): G.f.: 1/((1-x)*(1-x^2))^3.
 * [A038164](http://oeis.org/A038164) ([L36 program](038/A038164.asm)): G.f.: 1/((1-x)*(1-x^2))^4.
 * [A038165](http://oeis.org/A038165) ([L48 program](038/A038165.asm)): G.f.: 1/((1-x)*(1-x^2))^5.
-* [A038179](http://oeis.org/A038179) ([L09 program](038/A038179.asm)): Result of second stage of sieve of Eratosthenes.
+* [A038179](http://oeis.org/A038179) ([L09 program](038/A038179.asm)): Result of second stage of sieve of Eratosthenes (after eliminating multiples of 2 and 3).
 * [A038189](http://oeis.org/A038189) ([L10 program](038/A038189.asm)): Bit to left of least significant 1-bit in binary expansion of n.
 * [A038213](http://oeis.org/A038213) ([L08 program](038/A038213.asm)): Top line of 3-wave sequence A038196, also bisection of A006356.
 * [A038223](http://oeis.org/A038223) ([L10 program](038/A038223.asm)): Bottom line of 3-wave sequence A038196, also bisection of A006356.
@@ -4999,7 +4999,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A051885](http://oeis.org/A051885) ([L24 program](051/A051885.asm)): Smallest number whose sum of digits is n.
 * [A051890](http://oeis.org/A051890) ([L04 program](051/A051890.asm)): a(n) = 2*(n^2 - n + 1).
 * [A051895](http://oeis.org/A051895) ([L16 program](051/A051895.asm)): Partial sums of second pentagonal numbers with even index (A049453).
-* [A051920](http://oeis.org/A051920) ([L06 program](051/A051920.asm)): a(n) = binomial(n, floor(n/2)) + 1.
+* [A051920](http://oeis.org/A051920) ([L05 program](051/A051920.asm)): a(n) = binomial(n, floor(n/2)) + 1.
 * [A051923](http://oeis.org/A051923) ([L11 program](051/A051923.asm)): Partial sums of A051836.
 * [A051924](http://oeis.org/A051924) ([L36 program](051/A051924.asm)): a(n) = binomial(2*n,n) - binomial(2*n-2,n-1); or (3n-2)*C(n-1), where C = Catalan numbers (A000108).
 * [A051925](http://oeis.org/A051925) ([L06 program](051/A051925.asm)): a(n) = n*(2*n+5)*(n-1)/6.
@@ -7395,7 +7395,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081272](http://oeis.org/A081272) ([L06 program](081/A081272.asm)): Downward vertical of triangular spiral in A051682.
 * [A081275](http://oeis.org/A081275) ([L07 program](081/A081275.asm)): Shallow diagonal of triangular spiral in A051682.
 * [A081276](http://oeis.org/A081276) ([L03 program](081/A081276.asm)): Floor(n^3/8).
-* [A081278](http://oeis.org/A081278) ([L64 program](081/A081278.asm)): Binomial transform of Chebyshev polynomial coefficients A001793.
+* [A081278](http://oeis.org/A081278) ([L16 program](081/A081278.asm)): Binomial transform of Chebyshev polynomial coefficients A001793.
 * [A081283](http://oeis.org/A081283) ([L36 program](081/A081283.asm)): An interleaved sequence of pyramidal and polygonal numbers.
 * [A081284](http://oeis.org/A081284) ([L32 program](081/A081284.asm)): An interleaved sequence of pyramidal and polygonal numbers.
 * [A081288](http://oeis.org/A081288) ([L19 program](081/A081288.asm)): a(n) is the minimal i such that A000108(i) > n.

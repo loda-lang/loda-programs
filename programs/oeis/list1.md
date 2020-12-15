@@ -2657,7 +2657,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136771](http://oeis.org/A136771) ([L25 program](136/A136771.asm)): n! never ends in this many 0's in base 11.
 * [A136775](http://oeis.org/A136775) ([L52 program](136/A136775.asm)): Number of multiplex juggling sequences of length n, base state <1,1> and hand capacity 2.
 * [A137173](http://oeis.org/A137173) ([L08 program](137/A137173.asm)): A006516 at positions with even indices, A007582 at positions with odd indices.
-* [A137180](http://oeis.org/A137180) ([L21 program](137/A137180.asm)): Number of palindromes in the range [1,n] inclusive.
+* [A137180](http://oeis.org/A137180) ([L08 program](137/A137180.asm)): Number of palindromes in the range [1,n] inclusive.
 * [A137203](http://oeis.org/A137203) ([L17 program](137/A137203.asm)): Number of Fibonacci numbers less than or equal to n^2.
 * [A137208](http://oeis.org/A137208) ([L13 program](137/A137208.asm)): a(n) = a(n-1) + 4*a(n-2) - 4*a(n-3) for n > 2; a(0)=2, a(1)=3, a(2)=6.
 * [A137221](http://oeis.org/A137221) ([L07 program](137/A137221.asm)): a(n) = 5*a(n-1) - 9*a(n-2) + 8*a(n-3) - 4*a(n-4).
@@ -6730,7 +6730,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190640](http://oeis.org/A190640) ([L21 program](190/A190640.asm)): Numbers whose base-3 expansion ends in 2 and does not contain any 1's.
 * [A190705](http://oeis.org/A190705) ([L06 program](190/A190705.asm)): a(n) = 6*n^2*(2*n + 1).
 * [A190716](http://oeis.org/A190716) ([L10 program](190/A190716.asm)): a(2*n) = 2*n and a(2*n-1) = A054569(n).
-* [A190717](http://oeis.org/A190717) ([L08 program](190/A190717.asm)): Triplicated tetrahedral numbers A000292
+* [A190717](http://oeis.org/A190717) ([L21 program](190/A190717.asm)): Triplicated tetrahedral numbers A000292
 * [A190718](http://oeis.org/A190718) ([L05 program](190/A190718.asm)): Quadruplicated tetrahedral numbers A000292
 * [A190719](http://oeis.org/A190719) ([L19 program](190/A190719.asm)): Numbers that are congruent to {0, 1, 3, 5, 7, 8, 11} mod 12.
 * [A190727](http://oeis.org/A190727) ([L10 program](190/A190727.asm)): Product of (digits of n each incremented by 1) - 2.
