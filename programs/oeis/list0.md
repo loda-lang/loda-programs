@@ -1433,7 +1433,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011851](http://oeis.org/A011851) ([L03 program](011/A011851.asm)): a(n) = floor(binomial(n,5)/5).
 * [A011852](http://oeis.org/A011852) ([L04 program](011/A011852.asm)): a(n) = floor(binomial(n,6)/6).
 * [A011853](http://oeis.org/A011853) ([L04 program](011/A011853.asm)): [ binomial(n,7)/7 ].
-* [A011854](http://oeis.org/A011854) ([L04 program](011/A011854.asm)): a(n) = floor(binomial(n,8)/8).
+* [A011854](http://oeis.org/A011854) ([L03 program](011/A011854.asm)): a(n) = floor(binomial(n,8)/8).
 * [A011855](http://oeis.org/A011855) ([L04 program](011/A011855.asm)): a(n) = floor(binomial(n,9)/9).
 * [A011856](http://oeis.org/A011856) ([L03 program](011/A011856.asm)): a(n) = floor(binomial(n,10)/10).
 * [A011858](http://oeis.org/A011858) ([L04 program](011/A011858.asm)): a(n) = floor( n*(n-1)/5 ).
@@ -2901,7 +2901,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027327](http://oeis.org/A027327) ([L12 program](027/A027327.asm)): a(n) = Sum_{k=0..m} (k+1) * A026120(n, m-k), where m=0 for n=0,1; m=n for n >= 2.
 * [A027334](http://oeis.org/A027334) ([L11 program](027/A027334.asm)): a(n) = Sum_{k=0..m} (k+1) * A026148(n, m-k), where m=0 for n=1; m=n+1 for n >= 2.
 * [A027378](http://oeis.org/A027378) ([L11 program](027/A027378.asm)): Expansion of (1+x^2-x^3)/(1-x)^4.
-* [A027379](http://oeis.org/A027379) ([L07 program](027/A027379.asm)): Expansion of (1+x^2-x^3)/(1-x)^3.
+* [A027379](http://oeis.org/A027379) ([L06 program](027/A027379.asm)): Expansion of (1+x^2-x^3)/(1-x)^3.
 * [A027382](http://oeis.org/A027382) ([L17 program](027/A027382.asm)): a(n) = n^4 - 6*n^3 + 12*n^2 - 4*n + 1.
 * [A027383](http://oeis.org/A027383) ([L20 program](027/A027383.asm)): Number of balanced strings of length n: let d(S) = #(1's) - #(0's), # == count in S, then S is balanced if every substring T of S has -2 <= d(T) <= 2.
 * [A027434](http://oeis.org/A027434) ([L08 program](027/A027434.asm)): a(1) = 2; then defined by property that a(n) = smallest number >= a(n-1) such that successive runs have lengths 1,1,2,2,3,3,4,4.
@@ -5914,7 +5914,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062724](http://oeis.org/A062724) ([L19 program](062/A062724.asm)): a(n) = floor(tau^n) + 1, where tau = (1 + sqrt(5))/2.
 * [A062725](http://oeis.org/A062725) ([L05 program](062/A062725.asm)): Write 0,1,2,3,4,... in a triangular spiral, then a(n) is the sequence found by reading the terms along the line from 0 in the direction 0,7,...
 * [A062728](http://oeis.org/A062728) ([L05 program](062/A062728.asm)): Second 11-gonal (or hendecagonal) numbers: a(n) = n*(9*n+7)/2.
-* [A062730](http://oeis.org/A062730) ([L69 program](062/A062730.asm)): Rows of Pascal's triangle which contain 3 terms in arithmetic progression.
+* [A062730](http://oeis.org/A062730) ([L21 program](062/A062730.asm)): Rows of Pascal's triangle which contain 3 terms in arithmetic progression.
 * [A062741](http://oeis.org/A062741) ([L03 program](062/A062741.asm)): 3 times pentagonal numbers: 3*n*(3*n-1)/2.
 * [A062748](http://oeis.org/A062748) ([L04 program](062/A062748.asm)): Fourth column (r=3) of FS(3) staircase array A062745.
 * [A062749](http://oeis.org/A062749) ([L17 program](062/A062749.asm)): Sixth column (r=5) of FS(3) staircase array A062745.
@@ -7395,6 +7395,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081272](http://oeis.org/A081272) ([L06 program](081/A081272.asm)): Downward vertical of triangular spiral in A051682.
 * [A081275](http://oeis.org/A081275) ([L07 program](081/A081275.asm)): Shallow diagonal of triangular spiral in A051682.
 * [A081276](http://oeis.org/A081276) ([L03 program](081/A081276.asm)): Floor(n^3/8).
+* [A081278](http://oeis.org/A081278) ([L64 program](081/A081278.asm)): Binomial transform of Chebyshev polynomial coefficients A001793.
 * [A081283](http://oeis.org/A081283) ([L36 program](081/A081283.asm)): An interleaved sequence of pyramidal and polygonal numbers.
 * [A081284](http://oeis.org/A081284) ([L32 program](081/A081284.asm)): An interleaved sequence of pyramidal and polygonal numbers.
 * [A081288](http://oeis.org/A081288) ([L19 program](081/A081288.asm)): a(n) is the minimal i such that A000108(i) > n.
@@ -7466,7 +7467,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081628](http://oeis.org/A081628) ([L24 program](081/A081628.asm)): 2*(-1)^n-(-5)^n.
 * [A081630](http://oeis.org/A081630) ([L09 program](081/A081630.asm)): 2-(-3)^n.
 * [A081631](http://oeis.org/A081631) ([L13 program](081/A081631.asm)): 2*2^n-(-2)^n.
-* [A081632](http://oeis.org/A081632) ([L09 program](081/A081632.asm)): 2*3^n-(-1)^n.
+* [A081632](http://oeis.org/A081632) ([L08 program](081/A081632.asm)): 2*3^n-(-1)^n.
 * [A081654](http://oeis.org/A081654) ([L06 program](081/A081654.asm)): a(n) = 2*4^n - 0^n.
 * [A081655](http://oeis.org/A081655) ([L04 program](081/A081655.asm)): 2*5^n-1.
 * [A081656](http://oeis.org/A081656) ([L21 program](081/A081656.asm)): 2*6^n-2^n.

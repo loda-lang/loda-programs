@@ -576,7 +576,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212974](http://oeis.org/A212974) ([L14 program](212/A212974.asm)): Number of (w,x,y) with all terms in {0,...,n} and w>floor((x+y)/3)).
 * [A212975](http://oeis.org/A212975) ([L49 program](212/A212975.asm)): Number of (w,x,y) with all terms in {0,...,n} and even range.
 * [A212976](http://oeis.org/A212976) ([L28 program](212/A212976.asm)): Number of (w,x,y) with all terms in {0,...,n} and odd range.
-* [A212978](http://oeis.org/A212978) ([L09 program](212/A212978.asm)): Number of (w,x,y) with all terms in {0,...,n} and range = 2*n-w-x.
+* [A212978](http://oeis.org/A212978) ([L26 program](212/A212978.asm)): Number of (w,x,y) with all terms in {0,...,n} and range = 2*n-w-x.
 * [A212979](http://oeis.org/A212979) ([L22 program](212/A212979.asm)): Number of (w,x,y) with all terms in {0,...,n} and range=average.
 * [A212980](http://oeis.org/A212980) ([L09 program](212/A212980.asm)): Number of (w,x,y) with all terms in {0,...,n} and w<x+y and x<y.
 * [A212981](http://oeis.org/A212981) ([L10 program](212/A212981.asm)): Number of (w,x,y) with all terms in {0,...,n} and w <= x + y and x < y.
@@ -3492,14 +3492,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A279872](http://oeis.org/A279872) ([L05 program](279/A279872.asm)): Decimal representation of the x-axis, from the left edge to the origin, (and also from the origin to the right edge) of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 209", based on the 5-celled von Neumann neighborhood.
 * [A279891](http://oeis.org/A279891) ([L08 program](279/A279891.asm)): Triangle read by rows, T(n,k) = 2*n, with n>=k>=0.
 * [A279895](http://oeis.org/A279895) ([L06 program](279/A279895.asm)): a(n) = n*(5*n + 11)/2.
-* [A279905](http://oeis.org/A279905) ([L103 program](279/A279905.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} and odd trace with no elements repeated.
+* [A279905](http://oeis.org/A279905) ([L14 program](279/A279905.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} and odd trace with no elements repeated.
 * [A280014](http://oeis.org/A280014) ([L26 program](280/A280014.asm)): Numbers n == +- 2 (mod 10) but not n == 2 (mod 6).
 * [A280026](http://oeis.org/A280026) ([L13 program](280/A280026.asm)): Fill an infinite square array by following a spiral around the origin; in the n-th cell, enter the number of earlier cells that can be seen from that cell.
 * [A280050](http://oeis.org/A280050) ([L19 program](280/A280050.asm)): a(n) = Sum_{k=2..n} k/lpf(k), where lpf(k) is the least prime dividing k (A020639).
 * [A280056](http://oeis.org/A280056) ([L10 program](280/A280056.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} and even trace with no entries repeated.
 * [A280058](http://oeis.org/A280058) ([L03 program](280/A280058.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} with determinant = permanent with no entries repeated.
 * [A280059](http://oeis.org/A280059) ([L15 program](280/A280059.asm)): Number of 2 X 2 matrices having all elements in {-n,..,0,..,n} with determinant = permanent.
-* [A280089](http://oeis.org/A280089) ([L09 program](280/A280089.asm)): a(n) = 4 * n^3 - 3 * n + 1.
+* [A280089](http://oeis.org/A280089) ([L08 program](280/A280089.asm)): a(n) = 4 * n^3 - 3 * n + 1.
 * [A280154](http://oeis.org/A280154) ([L12 program](280/A280154.asm)): a(n) = 5*Lucas(n).
 * [A280166](http://oeis.org/A280166) ([L14 program](280/A280166.asm)): a(2*n) = 4*n if n>0, a(2*n + 1) = -(2*n + 1), a(0) = 1.
 * [A280167](http://oeis.org/A280167) ([L26 program](280/A280167.asm)): a(2*n) = 3*n if n>0, a(2*n + 1) = -(2*n + 1), a(0) = 1.

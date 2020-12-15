@@ -3086,7 +3086,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144110](http://oeis.org/A144110) ([L03 program](144/A144110.asm)): Period 6: repeat [2, 2, 2, 1, 1, 1].
 * [A144112](http://oeis.org/A144112) ([L14 program](144/A144112.asm)): Weight array W={w(i,j)} of the natural number array A000027.
 * [A144124](http://oeis.org/A144124) ([L43 program](144/A144124.asm)): P_4(2n+1), the Legendre polynomial of order 4 at 2n+1.
-* [A144129](http://oeis.org/A144129) ([L08 program](144/A144129.asm)): ChebyshevT(3, n).
+* [A144129](http://oeis.org/A144129) ([L07 program](144/A144129.asm)): ChebyshevT(3, n).
 * [A144130](http://oeis.org/A144130) ([L06 program](144/A144130.asm)): a(n) = ChebyshevT(4, n).
 * [A144138](http://oeis.org/A144138) ([L07 program](144/A144138.asm)): Chebyshev polynomial of the second kind U(3,n).
 * [A144139](http://oeis.org/A144139) ([L08 program](144/A144139.asm)): Chebyshev polynomial of the second kind U(4,n).
@@ -6146,7 +6146,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183860](http://oeis.org/A183860) ([L15 program](183/A183860.asm)): n+floor(sqrt(3n+1)); complement of A183861.
 * [A183861](http://oeis.org/A183861) ([L07 program](183/A183861.asm)): n-1+ceiling((-1+n^2)/3); complement of A183860.
 * [A183862](http://oeis.org/A183862) ([L22 program](183/A183862.asm)): n+floor(sqrt(5n/2)); complement of A183863.
-* [A183863](http://oeis.org/A183863) ([L09 program](183/A183863.asm)): n-1+ceiling((2/5)(-1/2+n^2)); complement of A183862.
+* [A183863](http://oeis.org/A183863) ([L07 program](183/A183863.asm)): n-1+ceiling((2/5)(-1/2+n^2)); complement of A183862.
 * [A183864](http://oeis.org/A183864) ([L16 program](183/A183864.asm)): n+floor(sqrt(5*n/3)); complement of A183865.
 * [A183865](http://oeis.org/A183865) ([L11 program](183/A183865.asm)): n-1+ceiling(3(n+2)/5); complement of A183864.
 * [A183866](http://oeis.org/A183866) ([L15 program](183/A183866.asm)): n+floor(2*sqrt(n-1)); complement of A035106.
@@ -6453,7 +6453,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186950](http://oeis.org/A186950) ([L06 program](186/A186950.asm)): a(n) = n^2 - 47*n + 479.
 * [A187012](http://oeis.org/A187012) ([L12 program](187/A187012.asm)): Antidiagonal sums of A103516.
 * [A187035](http://oeis.org/A187035) ([L22 program](187/A187035.asm)): Diagonal sums of number triangle A187034.
-* [A187074](http://oeis.org/A187074) ([L14 program](187/A187074.asm)): a(n) = 0 if and only if n is of the form 3*k or 4*k + 2, otherwise a(n) = 1.
+* [A187074](http://oeis.org/A187074) ([L11 program](187/A187074.asm)): a(n) = 0 if and only if n is of the form 3*k or 4*k + 2, otherwise a(n) = 1.
 * [A187093](http://oeis.org/A187093) ([L14 program](187/A187093.asm)): a(0)=0, a(1)=a(2)=1; thereafter, a(n+1) = n^2 - a(n-1).
 * [A187107](http://oeis.org/A187107) ([L10 program](187/A187107.asm)): Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
 * [A187156](http://oeis.org/A187156) ([L07 program](187/A187156.asm)): Number of 3-step one space at a time bishop's tours on an n X n board summed over all starting positions.
@@ -6649,9 +6649,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189638](http://oeis.org/A189638) ([L40 program](189/A189638.asm)): Partial sums of A116178.
 * [A189640](http://oeis.org/A189640) ([L31 program](189/A189640.asm)): Fixed point of the morphism 0->001, 1->101.
 * [A189641](http://oeis.org/A189641) ([L26 program](189/A189641.asm)): Partial sums of A189640.
-* [A189661](http://oeis.org/A189661) ([L31 program](189/A189661.asm)): Fixed point of the morphism 0->010, 1->10 starting with 0.
+* [A189661](http://oeis.org/A189661) ([L26 program](189/A189661.asm)): Fixed point of the morphism 0->010, 1->10 starting with 0.
 * [A189662](http://oeis.org/A189662) ([L11 program](189/A189662.asm)): Positions of 0 in A189661; complement of A026356.
-* [A189663](http://oeis.org/A189663) ([L12 program](189/A189663.asm)): Partial sums of A189661.
+* [A189663](http://oeis.org/A189663) ([L08 program](189/A189663.asm)): Partial sums of A189661.
 * [A189672](http://oeis.org/A189672) ([L21 program](189/A189672.asm)): Partial sums of A080846.
 * [A189673](http://oeis.org/A189673) ([L19 program](189/A189673.asm)): Fixed point of the morphism 0->010, 1->110.
 * [A189674](http://oeis.org/A189674) ([L26 program](189/A189674.asm)): Partial sums of A189673.
@@ -7094,8 +7094,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195062](http://oeis.org/A195062) ([L03 program](195/A195062.asm)): Period 7: repeat [1, 0, 1, 0, 1, 0, 1].
 * [A195084](http://oeis.org/A195084) ([L21 program](195/A195084.asm)): a(2n-1) = 2-n, a(2n) = 2+n.
 * [A195119](http://oeis.org/A195119) ([L12 program](195/A195119.asm)): a(n) = 2*n - floor(n*sqrt(2)).
-* [A195121](http://oeis.org/A195121) ([L19 program](195/A195121.asm)): a(n) = 2*n - floor(n/r), where r = (1 + sqrt(5))/2 (the golden ratio).
-* [A195122](http://oeis.org/A195122) ([L19 program](195/A195122.asm)): a(n) = 2*n - floor(n*r/2), where r=(1+sqrt(5))/2.
+* [A195121](http://oeis.org/A195121) ([L12 program](195/A195121.asm)): a(n) = 2*n - floor(n/r), where r = (1 + sqrt(5))/2 (the golden ratio).
+* [A195122](http://oeis.org/A195122) ([L12 program](195/A195122.asm)): a(n) = 2*n - floor(n*r/2), where r=(1+sqrt(5))/2.
 * [A195128](http://oeis.org/A195128) ([L13 program](195/A195128.asm)): a(n) = 2*n - floor(n*sqrt(1/2)). WebCam
 * [A195129](http://oeis.org/A195129) ([L13 program](195/A195129.asm)): a(n) = 2*n - floor(n*sqrt(1/3)).
 * [A195140](http://oeis.org/A195140) ([L12 program](195/A195140.asm)): Multiples of 5 and odd numbers interleaved.
@@ -7112,12 +7112,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195161](http://oeis.org/A195161) ([L04 program](195/A195161.asm)): Multiples of 8 and odd numbers interleaved.
 * [A195162](http://oeis.org/A195162) ([L10 program](195/A195162.asm)): Generalized 12-gonal numbers: k*(5*k-4) for k = 0, +-1, +-2, ...
 * [A195163](http://oeis.org/A195163) ([L43 program](195/A195163.asm)): 1000-gonal numbers: a(n) = n*(499*n - 498).
-* [A195167](http://oeis.org/A195167) ([L19 program](195/A195167.asm)): a(n) = 3*n - floor(n*r/2), where r=(1+sqrt(5))/2 (the golden ratio).
+* [A195167](http://oeis.org/A195167) ([L13 program](195/A195167.asm)): a(n) = 3*n - floor(n*r/2), where r=(1+sqrt(5))/2 (the golden ratio).
 * [A195169](http://oeis.org/A195169) ([L11 program](195/A195169.asm)): a(n) = 3*n - floor(2*n*r/3), where r=(1+sqrt(5))/2 (the golden ratio).
-* [A195170](http://oeis.org/A195170) ([L19 program](195/A195170.asm)): a(n) = 4*n - floor(n*r), where r=(1+sqrt(5))/2 (the golden ratio).
-* [A195171](http://oeis.org/A195171) ([L19 program](195/A195171.asm)): a(n) = 5*n - floor(n*r), where r=(1+sqrt(5))/2 (the golden ratio).
-* [A195172](http://oeis.org/A195172) ([L11 program](195/A195172.asm)): a(n) = 4*n - floor(2*n*r), where r=(1+sqrt(5))/2 (the golden ratio).
-* [A195173](http://oeis.org/A195173) ([L19 program](195/A195173.asm)): a(n) = 5*n - floor(2n*r), where r=(1+sqrt(5))/2 (the golden ratio).
+* [A195170](http://oeis.org/A195170) ([L13 program](195/A195170.asm)): a(n) = 4*n - floor(n*r), where r=(1+sqrt(5))/2 (the golden ratio).
+* [A195171](http://oeis.org/A195171) ([L13 program](195/A195171.asm)): a(n) = 5*n - floor(n*r), where r=(1+sqrt(5))/2 (the golden ratio).
+* [A195172](http://oeis.org/A195172) ([L08 program](195/A195172.asm)): a(n) = 4*n - floor(2*n*r), where r=(1+sqrt(5))/2 (the golden ratio).
+* [A195173](http://oeis.org/A195173) ([L12 program](195/A195173.asm)): a(n) = 5*n - floor(2n*r), where r=(1+sqrt(5))/2 (the golden ratio).
 * [A195174](http://oeis.org/A195174) ([L16 program](195/A195174.asm)): a(n) = 5*n - floor(3*n*r), where r=(1+sqrt(5))/2 (the golden ratio.)
 * [A195175](http://oeis.org/A195175) ([L20 program](195/A195175.asm)): a(n) = 8*n - floor(4*n*r), where r=(1+sqrt(5))/2 (the golden ratio.)
 * [A195176](http://oeis.org/A195176) ([L12 program](195/A195176.asm)): a(n) = 3*n - floor(n*sqrt(2)).
