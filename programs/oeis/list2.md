@@ -576,7 +576,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212974](http://oeis.org/A212974) ([L14 program](212/A212974.asm)): Number of (w,x,y) with all terms in {0,...,n} and w>floor((x+y)/3)).
 * [A212975](http://oeis.org/A212975) ([L49 program](212/A212975.asm)): Number of (w,x,y) with all terms in {0,...,n} and even range.
 * [A212976](http://oeis.org/A212976) ([L28 program](212/A212976.asm)): Number of (w,x,y) with all terms in {0,...,n} and odd range.
-* [A212978](http://oeis.org/A212978) ([L09 program](212/A212978.asm)): Number of (w,x,y) with all terms in {0,...,n} and range = 2*n-w-x.
+* [A212978](http://oeis.org/A212978) ([L26 program](212/A212978.asm)): Number of (w,x,y) with all terms in {0,...,n} and range = 2*n-w-x.
 * [A212979](http://oeis.org/A212979) ([L22 program](212/A212979.asm)): Number of (w,x,y) with all terms in {0,...,n} and range=average.
 * [A212980](http://oeis.org/A212980) ([L09 program](212/A212980.asm)): Number of (w,x,y) with all terms in {0,...,n} and w<x+y and x<y.
 * [A212981](http://oeis.org/A212981) ([L10 program](212/A212981.asm)): Number of (w,x,y) with all terms in {0,...,n} and w <= x + y and x < y.
@@ -804,7 +804,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A216106](http://oeis.org/A216106) ([L23 program](216/A216106.asm)): The Wiener index of the tetrameric 1,3-adamantane TA(n) (see the Fath-Tabar et al. reference).
 * [A216108](http://oeis.org/A216108) ([L13 program](216/A216108.asm)): The Wiener index of the ortho-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
 * [A216109](http://oeis.org/A216109) ([L50 program](216/A216109.asm)): The hyper-Wiener index of the ortho-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
-* [A216110](http://oeis.org/A216110) ([L15 program](216/A216110.asm)): The Wiener index of the meta-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
+* [A216110](http://oeis.org/A216110) ([L12 program](216/A216110.asm)): The Wiener index of the meta-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
 * [A216112](http://oeis.org/A216112) ([L08 program](216/A216112.asm)): The Wiener index of the para-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
 * [A216113](http://oeis.org/A216113) ([L57 program](216/A216113.asm)): The hyper-Wiener index of the meta-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
 * [A216114](http://oeis.org/A216114) ([L12 program](216/A216114.asm)): The Wiener index of a link of n fullerenes C_{20} (see the Ghorbani and Hosseinzadeh reference).
@@ -940,7 +940,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A220084](http://oeis.org/A220084) ([L14 program](220/A220084.asm)): a(n) = (n + 1)*(20*n^2 + 19*n + 6)/6.
 * [A220087](http://oeis.org/A220087) ([L03 program](220/A220087.asm)): 2^n - 27.
 * [A220088](http://oeis.org/A220088) ([L04 program](220/A220088.asm)): a(n) = 2^n - 81.
-* [A220089](http://oeis.org/A220089) ([L10 program](220/A220089.asm)): a(n) = 2^n - 243.
+* [A220089](http://oeis.org/A220089) ([L08 program](220/A220089.asm)): a(n) = 2^n - 243.
 * [A220104](http://oeis.org/A220104) ([L07 program](220/A220104.asm)): n appears n*(n+1) times.
 * [A220128](http://oeis.org/A220128) ([L10 program](220/A220128.asm)): 1 followed by period 6: (1, 3, 2, 3, 1, 4) repeated; offset 0.
 * [A220129](http://oeis.org/A220129) ([L28 program](220/A220129.asm)): 1 followed by period 12: (1, 5, 3, 9, 1, 7, 1, 9, 3, 5, 1, 11) repeated; offset 0.
@@ -1313,7 +1313,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229912](http://oeis.org/A229912) ([L16 program](229/A229912.asm)): a(n) = Fibonacci(n) * (2*Fibonacci(n) + 1).
 * [A230018](http://oeis.org/A230018) ([L26 program](230/A230018.asm)): a(n) = (9*n^3 + 5*n)/2.
 * [A230059](http://oeis.org/A230059) ([L04 program](230/A230059.asm)): Conjectural number of irreducible zeta values of weight 2*n+1 and depth three.
-* [A230074](http://oeis.org/A230074) ([L06 program](230/A230074.asm)): Period 4: repeat [1, -2, 1, 0].
+* [A230074](http://oeis.org/A230074) ([L05 program](230/A230074.asm)): Period 4: repeat [1, -2, 1, 0].
 * [A230088](http://oeis.org/A230088) ([L24 program](230/A230088.asm)): Partial sums of A010062.
 * [A230089](http://oeis.org/A230089) ([L07 program](230/A230089.asm)): If n is divisible by 4 then 4, if n is divisible by 2 then 2, otherwise n.
 * [A230096](http://oeis.org/A230096) ([L10 program](230/A230096.asm)): Number of tilings of an n X 1 rectangle (using tiles of dimension 1 X 1 and 2 X 1) that share no tile at the same position with their mirrored image.
@@ -2716,7 +2716,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266434](http://oeis.org/A266434) ([L13 program](266/A266434.asm)): Triangle read by rows giving successive states of cellular automaton generated by "Rule 23" initiated with a single ON (black) cell.
 * [A266436](http://oeis.org/A266436) ([L11 program](266/A266436.asm)): Decimal representation of the n-th iteration of the "Rule 23" elementary cellular automaton starting with a single ON (black) cell.
 * [A266437](http://oeis.org/A266437) ([L14 program](266/A266437.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 23" elementary cellular automaton starting with a single ON (black) cell.
-* [A266438](http://oeis.org/A266438) ([L11 program](266/A266438.asm)): Total number of ON (black) cells after n iterations of the "Rule 23" elementary cellular automaton starting with a single ON (black) cell.
+* [A266438](http://oeis.org/A266438) ([L09 program](266/A266438.asm)): Total number of ON (black) cells after n iterations of the "Rule 23" elementary cellular automaton starting with a single ON (black) cell.
 * [A266439](http://oeis.org/A266439) ([L31 program](266/A266439.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 23" elementary cellular automaton starting with a single ON (black) cell.
 * [A266440](http://oeis.org/A266440) ([L06 program](266/A266440.asm)): Total number of OFF (white) cells after n iterations of the "Rule 23" elementary cellular automaton starting with a single ON (black) cell.
 * [A266464](http://oeis.org/A266464) ([L13 program](266/A266464.asm)): Number of n X 2 binary arrays with rows and columns lexicographically nondecreasing and column sums nonincreasing.
@@ -3197,7 +3197,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273420](http://oeis.org/A273420) ([L35 program](273/A273420.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 705", based on the 5-celled von Neumann neighborhood.
 * [A273448](http://oeis.org/A273448) ([L36 program](273/A273448.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
 * [A273480](http://oeis.org/A273480) ([L14 program](273/A273480.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
-* [A273481](http://oeis.org/A273481) ([L12 program](273/A273481.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
+* [A273481](http://oeis.org/A273481) ([L20 program](273/A273481.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
 * [A273652](http://oeis.org/A273652) ([L07 program](273/A273652.asm)): Number of forests of labeled rooted trees of height at most 1, with n labels, two of which are used for root nodes and any root may contain >= 1 labels.
 * [A273669](http://oeis.org/A273669) ([L12 program](273/A273669.asm)): Decimal representation ends with either 2 or 9.
 * [A273675](http://oeis.org/A273675) ([L22 program](273/A273675.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
@@ -3492,13 +3492,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A279872](http://oeis.org/A279872) ([L05 program](279/A279872.asm)): Decimal representation of the x-axis, from the left edge to the origin, (and also from the origin to the right edge) of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 209", based on the 5-celled von Neumann neighborhood.
 * [A279891](http://oeis.org/A279891) ([L08 program](279/A279891.asm)): Triangle read by rows, T(n,k) = 2*n, with n>=k>=0.
 * [A279895](http://oeis.org/A279895) ([L06 program](279/A279895.asm)): a(n) = n*(5*n + 11)/2.
+* [A279905](http://oeis.org/A279905) ([L14 program](279/A279905.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} and odd trace with no elements repeated.
 * [A280014](http://oeis.org/A280014) ([L26 program](280/A280014.asm)): Numbers n == +- 2 (mod 10) but not n == 2 (mod 6).
 * [A280026](http://oeis.org/A280026) ([L13 program](280/A280026.asm)): Fill an infinite square array by following a spiral around the origin; in the n-th cell, enter the number of earlier cells that can be seen from that cell.
 * [A280050](http://oeis.org/A280050) ([L19 program](280/A280050.asm)): a(n) = Sum_{k=2..n} k/lpf(k), where lpf(k) is the least prime dividing k (A020639).
 * [A280056](http://oeis.org/A280056) ([L10 program](280/A280056.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} and even trace with no entries repeated.
 * [A280058](http://oeis.org/A280058) ([L03 program](280/A280058.asm)): Number of 2 X 2 matrices with entries in {0,1,...,n} with determinant = permanent with no entries repeated.
 * [A280059](http://oeis.org/A280059) ([L15 program](280/A280059.asm)): Number of 2 X 2 matrices having all elements in {-n,..,0,..,n} with determinant = permanent.
-* [A280089](http://oeis.org/A280089) ([L09 program](280/A280089.asm)): a(n) = 4 * n^3 - 3 * n + 1.
+* [A280089](http://oeis.org/A280089) ([L08 program](280/A280089.asm)): a(n) = 4 * n^3 - 3 * n + 1.
 * [A280154](http://oeis.org/A280154) ([L12 program](280/A280154.asm)): a(n) = 5*Lucas(n).
 * [A280166](http://oeis.org/A280166) ([L14 program](280/A280166.asm)): a(2*n) = 4*n if n>0, a(2*n + 1) = -(2*n + 1), a(0) = 1.
 * [A280167](http://oeis.org/A280167) ([L26 program](280/A280167.asm)): a(2*n) = 3*n if n>0, a(2*n + 1) = -(2*n + 1), a(0) = 1.
