@@ -40,7 +40,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A201500](http://oeis.org/A201500) ([L10 program](201/A201500.asm)): Number of n X 3 0..1 arrays with every row and column running average nondecreasing rightwards and downwards, and the number of instances of each value within one of each other.
 * [A201629](http://oeis.org/A201629) ([L09 program](201/A201629.asm)): a(n) = n if n is even and otherwise its nearest multiple of 4.
 * [A201630](http://oeis.org/A201630) ([L09 program](201/A201630.asm)): a(n) = a(n-1)+2*a(n-2) with n>1, a(0)=2, a(1)=7.
-* [A201686](http://oeis.org/A201686) ([L05 program](201/A201686.asm)): a(n) = binomial(n, [n/2]) - 2.
+* [A201686](http://oeis.org/A201686) ([L04 program](201/A201686.asm)): a(n) = binomial(n, [n/2]) - 2.
 * [A201722](http://oeis.org/A201722) ([L12 program](201/A201722.asm)): Number of n X 1 0..4 arrays with rows and columns lexicographically nondecreasing and no element equal to the number of horizontal and vertical neighbors equal to itself.
 * [A201812](http://oeis.org/A201812) ([L10 program](201/A201812.asm)): Number of arrays of 4 integers in -n..n with sum zero and equal numbers of elements greater than zero and less than zero.
 * [A201813](http://oeis.org/A201813) ([L11 program](201/A201813.asm)): Number of arrays of 5 integers in -n..n with sum zero and equal numbers of elements greater than zero and less than zero.
@@ -870,10 +870,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A217873](http://oeis.org/A217873) ([L06 program](217/A217873.asm)): 4*n*(n^2+2)/3.
 * [A217923](http://oeis.org/A217923) ([L09 program](217/A217923.asm)): F-block elements for Janet periodic table.
 * [A217947](http://oeis.org/A217947) ([L39 program](217/A217947.asm)): a(n) = (n+1)*(n^3+15*n^2+74*n+132)/12.
-* [A218008](http://oeis.org/A218008) ([L06 program](218/A218008.asm)): Sum of successive absolute differences of the binomial coefficients = 2*A014495(n)
+* [A218008](http://oeis.org/A218008) ([L05 program](218/A218008.asm)): Sum of successive absolute differences of the binomial coefficients = 2*A014495(n)
 * [A218078](http://oeis.org/A218078) ([L15 program](218/A218078.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal, vertical or antidiagonal neighbors in a random 0..1 n X 2 array.
 * [A218130](http://oeis.org/A218130) ([L16 program](218/A218130.asm)): Number of length 6 primitive (=aperiodic or period 6) n-ary words.
-* [A218131](http://oeis.org/A218131) ([L05 program](218/A218131.asm)): Number of length 8 primitive (=aperiodic or period 8) n-ary words.
+* [A218131](http://oeis.org/A218131) ([L04 program](218/A218131.asm)): Number of length 8 primitive (=aperiodic or period 8) n-ary words.
 * [A218132](http://oeis.org/A218132) ([L07 program](218/A218132.asm)): Number of length 9 primitive (=aperiodic or period 9) n-ary words.
 * [A218133](http://oeis.org/A218133) ([L09 program](218/A218133.asm)): Number of length 10 primitive (=aperiodic or period 10) n-ary words.
 * [A218152](http://oeis.org/A218152) ([L07 program](218/A218152.asm)): a(n) = 1 + n + ((n-1)*n^2)/2.
@@ -2567,8 +2567,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A262773](http://oeis.org/A262773) ([L04 program](262/A262773.asm)): A Beatty sequence: a(n)=floor(q*n) where q=A231187.
 * [A262789](http://oeis.org/A262789) ([L09 program](262/A262789.asm)): Number of (n+2) X (2+2) 0..1 arrays with each row divisible by 5 and column not divisible by 5, read as a binary number with top and left being the most significant bits.
 * [A262864](http://oeis.org/A262864) ([L06 program](262/A262864.asm)): Decimal representation of the middle column of the "Rule 147" elementary cellular automaton starting with a single ON (black) cell.
+* [A262925](http://oeis.org/A262925) ([L21 program](262/A262925.asm)): Sum of n consecutive fourth powers starting with n^4.
 * [A262997](http://oeis.org/A262997) ([L11 program](262/A262997.asm)): a(n+3) = a(n) + 24*n + 40, a(0)=0, a(1)=5, a(2)=19.
-* [A263013](http://oeis.org/A263013) ([L11 program](263/A263013.asm)): a(0) = -a(1) = a(2) = 1, a(n) = 0 for n>2.
+* [A263013](http://oeis.org/A263013) ([L07 program](263/A263013.asm)): a(0) = -a(1) = a(2) = 1, a(n) = 0 for n>2.
 * [A263053](http://oeis.org/A263053) ([L06 program](263/A263053.asm)): Number of (n+1) X (1+1) 0..1 arrays with each row and column not divisible by 3, read as a binary number with top and left being the most significant bits.
 * [A263085](http://oeis.org/A263085) ([L20 program](263/A263085.asm)): Partial sums of A099774 (A099774(n) = number of divisors of n-th odd number).
 * [A263119](http://oeis.org/A263119) ([L19 program](263/A263119.asm)): Number of (n+3) X (1+3) 0..1 arrays with each row divisible by 15 and column not divisible by 15, read as a binary number with top and left being the most significant bits.
@@ -3777,7 +3778,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288170](http://oeis.org/A288170) ([L48 program](288/A288170.asm)): a(n) = 3*a(n-1) - a(n-2) - 4*a(n-3) + 2*a(n-4) for n >= 4, where a(0) = 2, a(1) = 4, a(2) = 8, a(3) = 16, a(4) = 34, a(5) = 70 .
 * [A288203](http://oeis.org/A288203) ([L30 program](288/A288203.asm)): Fixed point of the mapping 00->0010, 1->010, starting with 00.
 * [A288204](http://oeis.org/A288204) ([L29 program](288/A288204.asm)): Positions of 0 in A288203; complement of A288205.
-* [A288205](http://oeis.org/A288205) ([L15 program](288/A288205.asm)): Positions of 1 in A288203; complement of A288204.
+* [A288205](http://oeis.org/A288205) ([L12 program](288/A288205.asm)): Positions of 1 in A288203; complement of A288204.
 * [A288206](http://oeis.org/A288206) ([L49 program](288/A288206.asm)): a(n) = 3*a(n-1) - a(n-2) - 3*a(n-3) + 2*a(n-4), where a(0) = 2, a(1) = 4, a(2) = 8, a(3) = 18.
 * [A288219](http://oeis.org/A288219) ([L16 program](288/A288219.asm)): a(n) = a(n-1) + a(n-2) for n >= 3, where a(0) = 2, a(1) = 4, a(2) = 7.
 * [A288309](http://oeis.org/A288309) ([L11 program](288/A288309.asm)): a(n) = 2*a(n-1) + 2*a(n-2) - 3*a(n-3), where a(0) = 2, a(1) = 4, a(2) = 8.
