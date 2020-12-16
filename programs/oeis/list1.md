@@ -1020,7 +1020,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115384](http://oeis.org/A115384) ([L32 program](115/A115384.asm)): Partial sums of Thue-Morse numbers A010060.
 * [A115390](http://oeis.org/A115390) ([L10 program](115/A115390.asm)): Binomial transform of tribonacci sequence A000073.
 * [A115391](http://oeis.org/A115391) ([L28 program](115/A115391.asm)): a(0)=0; then a(4*k+1)=a(4*k)+(4*k+1)^2, a(4*k+2)=a(4*k+1)+(4*k+3)^2, a(4*k+3)=a(4*k+2)+(4*k+2)^2, a(4*k+4)=a(4*k+3)+(4*k+4)^2.
-* [A115419](http://oeis.org/A115419) ([L11 program](115/A115419.asm)): Numbers having a 1 in position 3 of their binary expansion.
+* [A115419](http://oeis.org/A115419) ([L09 program](115/A115419.asm)): Numbers having a 1 in position 3 of their binary expansion.
 * [A115420](http://oeis.org/A115420) ([L08 program](115/A115420.asm)): Numbers having a 1 in position 4 of their binary expansion.
 * [A115451](http://oeis.org/A115451) ([L09 program](115/A115451.asm)): Expansion of 1/((1+x)*(1-2*x)*(1+x^2)).
 * [A115519](http://oeis.org/A115519) ([L12 program](115/A115519.asm)): n*(1+3*n+6*n^2)/2.
@@ -2789,6 +2789,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139279](http://oeis.org/A139279) ([L03 program](139/A139279.asm)): a(n) = 40*n - 32.
 * [A139280](http://oeis.org/A139280) ([L03 program](139/A139280.asm)): a(n) = 90*n - 81.
 * [A139283](http://oeis.org/A139283) ([L20 program](139/A139283.asm)): Numbers of spots seen on ladybugs.
+* [A139329](http://oeis.org/A139329) ([L52 program](139/A139329.asm)): a(n) = (factorial of the number of 0's in the binary expansion of n).
 * [A139351](http://oeis.org/A139351) ([L10 program](139/A139351.asm)): Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k's that are even, o(n) the number that are odd; sequence gives e(n).
 * [A139352](http://oeis.org/A139352) ([L09 program](139/A139352.asm)): Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k's that are even, o(n) the number that are odd; sequence gives o(n).
 * [A139477](http://oeis.org/A139477) ([L32 program](139/A139477.asm)): Number of binary digits in A001109(n).
@@ -4103,7 +4104,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158558](http://oeis.org/A158558) ([L04 program](158/A158558.asm)): a(n) = 30n^2 + 1.
 * [A158559](http://oeis.org/A158559) ([L05 program](158/A158559.asm)): a(n) = 225*n^2 - 15.
 * [A158560](http://oeis.org/A158560) ([L05 program](158/A158560.asm)): a(n) = 30n^2 - 1.
-* [A158561](http://oeis.org/A158561) ([L15 program](158/A158561.asm)): a(n)=((2^n)*((2^n)+1) - (2^(n-1))*((2^(n-1))+1))/2, a(1)=3.
+* [A158561](http://oeis.org/A158561) ([L09 program](158/A158561.asm)): a(n)=((2^n)*((2^n)+1) - (2^(n-1))*((2^(n-1))+1))/2, a(1)=3.
 * [A158562](http://oeis.org/A158562) ([L05 program](158/A158562.asm)): a(n) = 256*n^2 - 16.
 * [A158563](http://oeis.org/A158563) ([L05 program](158/A158563.asm)): 32n^2 - 1.
 * [A158574](http://oeis.org/A158574) ([L04 program](158/A158574.asm)): a(n) = 256*n^2 + 16.
@@ -4379,7 +4380,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A161938](http://oeis.org/A161938) ([L09 program](161/A161938.asm)): a(n) = ((3+sqrt(2))*(2+sqrt(2))^n + (3-sqrt(2))*(2-sqrt(2))^n)/2.
 * [A161941](http://oeis.org/A161941) ([L10 program](161/A161941.asm)): a(n) = ((4+sqrt(2))*(2+sqrt(2))^n + (4-sqrt(2))*(2-sqrt(2))^n)/4.
 * [A161983](http://oeis.org/A161983) ([L07 program](161/A161983.asm)): Irregular triangle read by rows: the group of 2n + 1 integers starting at A014105(n).
-* [A162024](http://oeis.org/A162024) ([L11 program](162/A162024.asm)): Number of n X n binary arrays with rows and columns, considered as binary numbers, in nondecreasing order, and all but the outermost row or column zero.
+* [A162024](http://oeis.org/A162024) ([L09 program](162/A162024.asm)): Number of n X n binary arrays with rows and columns, considered as binary numbers, in nondecreasing order, and all but the outermost row or column zero.
 * [A162147](http://oeis.org/A162147) ([L19 program](162/A162147.asm)): a(n) = n*(n+1)*(5*n+4)/6.
 * [A162148](http://oeis.org/A162148) ([L07 program](162/A162148.asm)): a(n) = n*(n+1)*(5*n+7)/6.
 * [A162213](http://oeis.org/A162213) ([L08 program](162/A162213.asm)): a(n) = the smallest positive multiple of n with exactly n digits when written in binary.

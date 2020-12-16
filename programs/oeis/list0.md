@@ -4089,10 +4089,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A043642](http://oeis.org/A043642) ([L07 program](043/A043642.asm)): Numbers n such that base 10 representation has exactly 6 runs.
 * [A043643](http://oeis.org/A043643) ([L25 program](043/A043643.asm)): Numbers n such that base 10 representation has exactly 7 runs.
 * [A043644](http://oeis.org/A043644) ([L10 program](043/A043644.asm)): Numbers n such that base 10 representation has exactly 8 runs.
-* [A043645](http://oeis.org/A043645) ([L10 program](043/A043645.asm)): Numbers n such that base 11 representation has exactly 2 runs.
-* [A043647](http://oeis.org/A043647) ([L10 program](043/A043647.asm)): Numbers n such that base 11 representation has exactly 4 runs.
+* [A043645](http://oeis.org/A043645) ([L08 program](043/A043645.asm)): Numbers n such that base 11 representation has exactly 2 runs.
+* [A043647](http://oeis.org/A043647) ([L08 program](043/A043647.asm)): Numbers n such that base 11 representation has exactly 4 runs.
 * [A043648](http://oeis.org/A043648) ([L19 program](043/A043648.asm)): Numbers n such that base 11 representation has exactly 5 runs.
-* [A043649](http://oeis.org/A043649) ([L10 program](043/A043649.asm)): Numbers n such that base 11 representation has exactly 6 runs.
+* [A043649](http://oeis.org/A043649) ([L08 program](043/A043649.asm)): Numbers n such that base 11 representation has exactly 6 runs.
 * [A043650](http://oeis.org/A043650) ([L19 program](043/A043650.asm)): Numbers n such that base 11 representation has exactly 7 runs.
 * [A043651](http://oeis.org/A043651) ([L08 program](043/A043651.asm)): Numbers n such that base 12 representation has exactly 2 runs.
 * [A043652](http://oeis.org/A043652) ([L20 program](043/A043652.asm)): Numbers n such that base 12 representation has exactly 3 runs.
@@ -4117,7 +4117,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A043679](http://oeis.org/A043679) ([L07 program](043/A043679.asm)): Numbers n such that base 16 representation has exactly 6 runs.
 * [A043680](http://oeis.org/A043680) ([L34 program](043/A043680.asm)): Numbers n such that base 16 representation has exactly 7 runs.
 * [A043698](http://oeis.org/A043698) ([L10 program](043/A043698.asm)): Numbers n such that number of runs in the base 9 representation of n is even.
-* [A043700](http://oeis.org/A043700) ([L10 program](043/A043700.asm)): Numbers n such that number of runs in the base 11 representation of n is even.
+* [A043700](http://oeis.org/A043700) ([L08 program](043/A043700.asm)): Numbers n such that number of runs in the base 11 representation of n is even.
 * [A043701](http://oeis.org/A043701) ([L08 program](043/A043701.asm)): Numbers n such that number of runs in the base 12 representation of n is even.
 * [A043702](http://oeis.org/A043702) ([L07 program](043/A043702.asm)): Numbers n such that number of runs in the base 13 representation of n is even.
 * [A043703](http://oeis.org/A043703) ([L07 program](043/A043703.asm)): Numbers n such that number of runs in the base 14 representation of n is even.
@@ -4877,7 +4877,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049652](http://oeis.org/A049652) ([L11 program](049/A049652.asm)): a(n) = (F(3*n+2) - 1)/4, where F=A000045 (the Fibonacci sequence).
 * [A049684](http://oeis.org/A049684) ([L12 program](049/A049684.asm)): a(n) = Fibonacci(2n)^2.
 * [A049773](http://oeis.org/A049773) ([L18 program](049/A049773.asm)): Triangular array T read by rows: if row n is r(1),...,r(m), then row n+1 is 2r(1)-1,...,2r(m)-1,2r(1),...,2r(m).
-* [A049775](http://oeis.org/A049775) ([L13 program](049/A049775.asm)): a(n) is the sum of all integers from 2^(n-2)+1 to 2^(n-1).
+* [A049775](http://oeis.org/A049775) ([L09 program](049/A049775.asm)): a(n) is the sum of all integers from 2^(n-2)+1 to 2^(n-1).
 * [A049777](http://oeis.org/A049777) ([L14 program](049/A049777.asm)): Triangular array read by rows: T(m,n) = n + n+1 + ... + m = (m+n)(m-n+1)/2.
 * [A049778](http://oeis.org/A049778) ([L10 program](049/A049778.asm)): a(n) = Sum_{k=1..floor((n+1)/2)} T(n,2k-1), array T as in A049777.
 * [A049779](http://oeis.org/A049779) ([L09 program](049/A049779.asm)): a(n) = Sum_{k=1..floor(n/2)} T(n, 2k), array T as in A049777.
@@ -5598,7 +5598,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059018](http://oeis.org/A059018) ([L09 program](059/A059018.asm)): Write 10*n in base 4; a(n) = sum of digits mod 4.
 * [A059020](http://oeis.org/A059020) ([L10 program](059/A059020.asm)): Number of 2 X n checkerboards (with at least one red square) in which the set of red squares is edge connected.
 * [A059029](http://oeis.org/A059029) ([L05 program](059/A059029.asm)): a(n) = n if n is even, 2*n + 1 if n is odd.
-* [A059030](http://oeis.org/A059030) ([L12 program](059/A059030.asm)): Fourth main diagonal of A059026: a(n) = B(n+3,n) = lcm(n+3,n)/(n+3) + lcm(n+3,n)/n - 1 for all n >= 1.
+* [A059030](http://oeis.org/A059030) ([L08 program](059/A059030.asm)): Fourth main diagonal of A059026: a(n) = B(n+3,n) = lcm(n+3,n)/(n+3) + lcm(n+3,n)/n - 1 for all n >= 1.
 * [A059031](http://oeis.org/A059031) ([L09 program](059/A059031.asm)): Fifth main diagonal of A059026: a(n) = B(n+4,n) = lcm(n+4,n)/(n+4) + lcm(n+4,n)/n - 1 for all n >= 1.
 * [A059036](http://oeis.org/A059036) ([L16 program](059/A059036.asm)): In a triangle of numbers (such as that in A059032, A059033, A059034) how many entries lie above position (n,k)? Answer: T(n,k) = (n+1)*(k+1)-1 (n >= 0, k >= 0).
 * [A059100](http://oeis.org/A059100) ([L03 program](059/A059100.asm)): a(n) = n^2 + 2.
@@ -8000,7 +8000,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087908](http://oeis.org/A087908) ([L07 program](087/A087908.asm)): Largest integer not expressible as a nonnegative linear combination of n and n^2 + 1.
 * [A087940](http://oeis.org/A087940) ([L13 program](087/A087940.asm)): a(n)=sum(k=0,n,binomial(n+(-1)^k,k)).
 * [A087953](http://oeis.org/A087953) ([L18 program](087/A087953.asm)): Floor((fibonacci(2*n+1)+1)/2).
-* [A087960](http://oeis.org/A087960) ([L06 program](087/A087960.asm)): a(n) = (-1)^binomial(n+1,2).
+* [A087960](http://oeis.org/A087960) ([L05 program](087/A087960.asm)): a(n) = (-1)^binomial(n+1,2).
 * [A088003](http://oeis.org/A088003) ([L08 program](088/A088003.asm)): Take the list t(n,0) = {1,...,n}; denote by t(n,j) this list after rotating to left (or right) by j positions. Calculate inner product of t(n,0) and t(n,j) and denote the value by s(n,j). Compute this inner product for all j = 1..n and choose the smallest. This is a(n).
 * [A088023](http://oeis.org/A088023) ([L33 program](088/A088023.asm)): Set a(1) = 1. Then take the list of defined initial terms, reverse their order, add 1, 2, 3...to the reversed list in succession and append this new list to the right of the previously defined terms. Repeat this process indefinitely.
 * [A088037](http://oeis.org/A088037) ([L19 program](088/A088037.asm)): Smallest square k == 1 (mod some n-th power), k > 1.
