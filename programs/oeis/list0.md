@@ -1673,10 +1673,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A015446](http://oeis.org/A015446) ([L14 program](015/A015446.asm)): Generalized Fibonacci numbers: a(n) = a(n-1) + 10*a(n-2).
 * [A015447](http://oeis.org/A015447) ([L20 program](015/A015447.asm)): Generalized Fibonacci numbers: a(n) = a(n-1) + 11*a(n-2).
 * [A015448](http://oeis.org/A015448) ([L12 program](015/A015448.asm)): a(0) = 1, a(1) = 1, and a(n) = 4*a(n-1) + a(n-2) for n >= 2.
-* [A015449](http://oeis.org/A015449) ([L53 program](015/A015449.asm)): Expansion of (1-4*x)/(1-5*x-x^2).
-* [A015451](http://oeis.org/A015451) ([L61 program](015/A015451.asm)): a(n) = 6*a(n-1) + a(n-2) for n > 1, with a(0) = a(1) = 1.
-* [A015453](http://oeis.org/A015453) ([L57 program](015/A015453.asm)): Generalized Fibonacci numbers.
-* [A015454](http://oeis.org/A015454) ([L61 program](015/A015454.asm)): Generalized Fibonacci numbers.
+* [A015449](http://oeis.org/A015449) ([L18 program](015/A015449.asm)): Expansion of (1-4*x)/(1-5*x-x^2).
+* [A015451](http://oeis.org/A015451) ([L18 program](015/A015451.asm)): a(n) = 6*a(n-1) + a(n-2) for n > 1, with a(0) = a(1) = 1.
+* [A015453](http://oeis.org/A015453) ([L18 program](015/A015453.asm)): Generalized Fibonacci numbers.
+* [A015454](http://oeis.org/A015454) ([L18 program](015/A015454.asm)): Generalized Fibonacci numbers.
 * [A015518](http://oeis.org/A015518) ([L04 program](015/A015518.asm)): a(n) = 2*a(n-1) + 3*a(n-2), with a(0)=0, a(1)=1.
 * [A015521](http://oeis.org/A015521) ([L05 program](015/A015521.asm)): a(n) = 3*a(n-1) + 4*a(n-2), a(0) = 0, a(1) = 1.
 * [A015528](http://oeis.org/A015528) ([L09 program](015/A015528.asm)): a(n) = 3*a(n-1) + 10*a(n-2).
@@ -3193,6 +3193,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032093](http://oeis.org/A032093) ([L55 program](032/A032093.asm)): Number of reversible strings with n-1 beads of 2 colors. 6 beads are black. Strings are not palindromic.
 * [A032096](http://oeis.org/A032096) ([L11 program](032/A032096.asm)): "BHK" (reversible, identity, unlabeled) transform of 2,2,2,2,...
 * [A032098](http://oeis.org/A032098) ([L06 program](032/A032098.asm)): "BHK" (reversible, identity, unlabeled) transform of 3,3,3,3,...
+* [A032121](http://oeis.org/A032121) ([L85 program](032/A032121.asm)): Number of reversible strings with n beads of 4 colors.
 * [A032125](http://oeis.org/A032125) ([L06 program](032/A032125.asm)): "BIK" (reversible, indistinct, unlabeled) transform of 3,3,3,3...
 * [A032169](http://oeis.org/A032169) ([L15 program](032/A032169.asm)): Number of aperiodic necklaces of n beads of 2 colors, 11 of them black.
 * [A032192](http://oeis.org/A032192) ([L07 program](032/A032192.asm)): Number of necklaces with 7 black beads and n-7 white beads.
@@ -5057,7 +5058,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052747](http://oeis.org/A052747) ([L72 program](052/A052747.asm)): a(0) = a(1) = a(2) = 0; a(n) = n!/(n-2) for n > 2.
 * [A052749](http://oeis.org/A052749) ([L07 program](052/A052749.asm)): 2n*S2(n-1,2).
 * [A052759](http://oeis.org/A052759) ([L12 program](052/A052759.asm)): E.g.f.: x^3*log(1/(1-x)).
-* [A052760](http://oeis.org/A052760) ([L21 program](052/A052760.asm)): Expansion of e.g.f.: x^2*(exp(x)-1)^2.
+* [A052760](http://oeis.org/A052760) ([L13 program](052/A052760.asm)): Expansion of e.g.f.: x^2*(exp(x)-1)^2.
 * [A052762](http://oeis.org/A052762) ([L03 program](052/A052762.asm)): Products of 4 consecutive integers: a(n) = n*(n-1)*(n-2)*(n-3).
 * [A052768](http://oeis.org/A052768) ([L07 program](052/A052768.asm)): A simple grammar.
 * [A052771](http://oeis.org/A052771) ([L08 program](052/A052771.asm)): E.g.f.: x^3*exp(x)^2.
@@ -5342,7 +5343,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A055426](http://oeis.org/A055426) ([L26 program](055/A055426.asm)): Number of points in Z^n of norm <= 2.
 * [A055436](http://oeis.org/A055436) ([L37 program](055/A055436.asm)): a(n) = concatenation of n^2 and n.
 * [A055437](http://oeis.org/A055437) ([L05 program](055/A055437.asm)): a(n) = 10*n^2+n.
-* [A055438](http://oeis.org/A055438) ([L09 program](055/A055438.asm)): a(n) = 100*n^2 + n.
+* [A055438](http://oeis.org/A055438) ([L08 program](055/A055438.asm)): a(n) = 100*n^2 + n.
 * [A055443](http://oeis.org/A055443) ([L33 program](055/A055443.asm)): Base 3 distribution of first digit of mantissa following Benford's Law, to minimize chi-squared statistic.
 * [A055457](http://oeis.org/A055457) ([L25 program](055/A055457.asm)): 5^a(n) exactly divides 5n. Or, 5-adic valuation of 5n.
 * [A055461](http://oeis.org/A055461) ([L16 program](055/A055461.asm)): Square decrescendo subsequences: triangle T(n,k) = (n-k)^2, n >= 1, 0 <= k < n.
@@ -5772,7 +5773,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060890](http://oeis.org/A060890) ([L03 program](060/A060890.asm)): n^8 + 1.
 * [A060891](http://oeis.org/A060891) ([L05 program](060/A060891.asm)): a(n) = n^6 - n^3 + 1.
 * [A060892](http://oeis.org/A060892) ([L11 program](060/A060892.asm)): n^8-n^6+n^4-n^2+1.
-* [A060893](http://oeis.org/A060893) ([L06 program](060/A060893.asm)): n^8 - n^4 + 1.
+* [A060893](http://oeis.org/A060893) ([L05 program](060/A060893.asm)): n^8 - n^4 + 1.
 * [A060899](http://oeis.org/A060899) ([L19 program](060/A060899.asm)): Number of walks of length n on square lattice, starting at origin, staying on points with x+y >= 0.
 * [A060901](http://oeis.org/A060901) ([L12 program](060/A060901.asm)): Exact power of 3 that divides the n-th Fibonacci number (sequence A000045).
 * [A060904](http://oeis.org/A060904) ([L04 program](060/A060904.asm)): Largest power of 5 that divides n.
@@ -6741,7 +6742,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071246](http://oeis.org/A071246) ([L11 program](071/A071246.asm)): a(n) = n*(n - 1)*(2*n^2 + n + 2)/6.
 * [A071252](http://oeis.org/A071252) ([L05 program](071/A071252.asm)): a(n) = n*(n - 1)*(n^2 + 1)/2.
 * [A071253](http://oeis.org/A071253) ([L04 program](071/A071253.asm)): a(n) = n^2*(n^2+1).
-* [A071270](http://oeis.org/A071270) ([L06 program](071/A071270.asm)): a(n) = n^2*(2*n^2+1)/3.
+* [A071270](http://oeis.org/A071270) ([L05 program](071/A071270.asm)): a(n) = n^2*(2*n^2+1)/3.
 * [A071271](http://oeis.org/A071271) ([L07 program](071/A071271.asm)): Duplicate of A066492.
 * [A071274](http://oeis.org/A071274) ([L18 program](071/A071274.asm)): A071273 divided by 11.
 * [A071279](http://oeis.org/A071279) ([L05 program](071/A071279.asm)): Kissing number of regular n-gon.
@@ -7737,7 +7738,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A084505](http://oeis.org/A084505) ([L24 program](084/A084505.asm)): Partial sums of A084506.
 * [A084506](http://oeis.org/A084506) ([L10 program](084/A084506.asm)): The length of each successively larger 3-ball ground-state site swap given in A084501, i.e., the number of digits in each term of A084502.
 * [A084508](http://oeis.org/A084508) ([L10 program](084/A084508.asm)): Partial sums of A084509. Positions of ones in the first differences of A084506.
-* [A084509](http://oeis.org/A084509) ([L99 program](084/A084509.asm)): Number of ground-state 3-ball juggling sequences of period n.
+* [A084509](http://oeis.org/A084509) ([L49 program](084/A084509.asm)): Number of ground-state 3-ball juggling sequences of period n.
 * [A084515](http://oeis.org/A084515) ([L11 program](084/A084515.asm)): Partial sums of A084516.
 * [A084516](http://oeis.org/A084516) ([L12 program](084/A084516.asm)): The length of each successively larger, indecomposable 3-ball ground-state site swap given in A084511, i.e., the number of digits in each term of A084512.
 * [A084525](http://oeis.org/A084525) ([L19 program](084/A084525.asm)): Partial sums of A084526.
