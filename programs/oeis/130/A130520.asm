@@ -3,7 +3,5 @@
 
 sub $0,1
 bin $0,2
-mov $2,$0
-div $2,5
-mov $3,$2
-mov $1,$3
+div $0,5
+mov $1,$0
