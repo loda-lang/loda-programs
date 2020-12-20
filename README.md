@@ -22,19 +22,13 @@ OEIS commands:
   update           Update OEIS index
 General options:
   -l <string>      Log level (values:debug,info,warn,error,alert)
+  -k <string>      Configuration file (default:loda.json)
   -t <number>      Number of sequence terms (default:20)
   -s <number>      Maximum physical memory (default:1024)
 Interpreter options:
   -c <number>      Maximum number of interpreter cycles (default:10000000)
   -m <number>      Maximum number of used memory cells (default:100000)
-Generator options:
-  -g <number>      Generator version (default:1)
-  -p <number>      Maximum number of operations (default:20)
-  -n <number>      Maximum constant (default:4)
-  -i <number>      Maximum index (default:4)
-  -o <string>      Operation types (default:^;m:mov,a:add,s:sub,t:trn,u:mul,d:div,o:mod,p:pow,k:log,f:fac,g:gcd,b:bin,c:cmp,l:lpb,r:clr;^:negate pattern)
-  -a <string>      Operand types (default:cd;c:constant,d:direct mem,i:indirect mem)
-  -e <file>        Program template
+Miner options:
   -r               Search for programs of linear sequences (slow)
   -x               Optimize and overwrite existing programs
 ```
