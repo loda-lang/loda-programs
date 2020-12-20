@@ -783,13 +783,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317317](http://oeis.org/A317317) ([L18 program](317/A317317.asm)): Multiples of 17 and odd numbers interleaved.
 * [A317318](http://oeis.org/A317318) ([L09 program](317/A317318.asm)): Multiples of 18 and odd numbers interleaved.
 * [A317319](http://oeis.org/A317319) ([L17 program](317/A317319.asm)): Multiples of 19 and odd numbers interleaved.
-* [A317320](http://oeis.org/A317320) ([L13 program](317/A317320.asm)): Multiples of 20 and odd numbers interleaved.
+* [A317320](http://oeis.org/A317320) ([L09 program](317/A317320.asm)): Multiples of 20 and odd numbers interleaved.
 * [A317321](http://oeis.org/A317321) ([L32 program](317/A317321.asm)): Multiples of 21 and odd numbers interleaved.
 * [A317322](http://oeis.org/A317322) ([L09 program](317/A317322.asm)): Multiples of 22 and odd numbers interleaved.
 * [A317323](http://oeis.org/A317323) ([L13 program](317/A317323.asm)): Multiples of 23 and odd numbers interleaved.
-* [A317324](http://oeis.org/A317324) ([L11 program](317/A317324.asm)): Multiples of 24 and odd numbers interleaved.
+* [A317324](http://oeis.org/A317324) ([L09 program](317/A317324.asm)): Multiples of 24 and odd numbers interleaved.
 * [A317325](http://oeis.org/A317325) ([L08 program](317/A317325.asm)): Multiples of 25 and odd numbers interleaved.
-* [A317326](http://oeis.org/A317326) ([L18 program](317/A317326.asm)): Multiples of 26 and odd numbers interleaved.
+* [A317326](http://oeis.org/A317326) ([L09 program](317/A317326.asm)): Multiples of 26 and odd numbers interleaved.
 * [A317331](http://oeis.org/A317331) ([L27 program](317/A317331.asm)): Indices m for which A058304(m) = 1.
 * [A317332](http://oeis.org/A317332) ([L22 program](317/A317332.asm)): Indices m for which A058304(m) = 8.
 * [A317333](http://oeis.org/A317333) ([L23 program](317/A317333.asm)): Indices m for which A058304(m) = 9.
@@ -1329,7 +1329,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339256](http://oeis.org/A339256) ([L05 program](339/A339256.asm)): Leading digit of n in base 6.
 * [A339265](http://oeis.org/A339265) ([L15 program](339/A339265.asm)): Expansion of Product_{n >= 1} (1 - x^(2*n))*(1 - x^(2*n-1))*(1 - x^(2*n+1)).
 * [A339355](http://oeis.org/A339355) ([L52 program](339/A339355.asm)): Maximum number of copies of a 12345 permutation pattern in an alternating (or zig-zag) permutation of length n + 7.
-* [A339483](http://oeis.org/A339483) ([L10 program](339/A339483.asm)): Number of regular polygons that can be drawn with vertices on a centered hexagonal grid with side length n.
+* [A339483](http://oeis.org/A339483) ([L08 program](339/A339483.asm)): Number of regular polygons that can be drawn with vertices on a centered hexagonal grid with side length n.
 * [A339488](http://oeis.org/A339488) ([L13 program](339/A339488.asm)): a(n) = H(n-1, n, n+1) where H(a, b, c) = (a + b + c)*(a + b - c)*(b + c - a)*(c + a - b) is Heron's polynomial.
 * [A339531](http://oeis.org/A339531) ([L06 program](339/A339531.asm)): Numbers b > 1 such that the smallest two primes, i.e., 2 and 3 are base-b Wieferich primes.
 * [A339570](http://oeis.org/A339570) ([L09 program](339/A339570.asm)): Denote the van der Corput sequence of fractions 1/2, 1/4, 3/4, 1/8, 5/8, 3/8, 7/8, 1/16, ... (A030101/A062383) by v(n), n >= 1. Then a(n) = denominator of v(A014486(n)).

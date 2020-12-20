@@ -3,20 +3,4 @@
 
 mul $0,8
 div $0,13
-add $0,13
-mul $0,-2
-mov $2,4
-mov $4,$0
-mov $5,4
-lpb $0,1
-  div $0,$2
-  mov $3,$0
-  sub $0,6
-lpe
-mul $4,$3
-add $4,$5
-add $0,$4
-sub $0,16
 mov $1,$0
-sub $1,32
-div $1,4
