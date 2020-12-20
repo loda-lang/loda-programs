@@ -3,10 +3,9 @@
 
 mov $1,3
 pow $1,$0
-lpb $0,1
-  mov $0,0
-  mul $1,7
-lpe
+mul $1,14
 div $1,6
+sub $1,1
+div $1,2
 mul $1,2
 add $1,1
