@@ -5,4 +5,3 @@ lpb $0,1
   add $1,$0
   div $0,3
 lpe
-add $1,1
