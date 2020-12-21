@@ -4,9 +4,4 @@
 sub $0,1
 bin $0,2
 bin $0,3
-add $0,13
-mov $2,$0
-sub $2,2
-mov $3,$2
-mov $1,$3
-sub $1,11
+mov $1,$0
