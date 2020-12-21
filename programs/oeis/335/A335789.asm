@@ -1,46 +1,17 @@
 ; A335789: a(n) = time to the nearest second at the n-th instant (n>=0) when the hour and minute hands on a clock face coincide, starting at time 0:00.
 ; 0,3927,7855,11782,15709,19636,23564,27491,31418,35345,39273,43200,47127,51055,54982,58909,62836,66764,70691,74618,78545,82473,86400,90327,94255,98182,102109,106036,109964,113891,117818,121745,125673,129600,133527,137455,141382
 
-add $0,$0
-add $2,1
-add $3,1
-mov $2,1
-add $4,2
-sub $0,$2
+mul $0,2
 add $0,1
-mov $4,$3
-mul $2,4
-add $1,3
-mov $2,1
-mov $4,2
-pow $4,$3
-add $0,1
-mov $2,$4
-mov $1,6
-mov $3,$4
 mov $1,$0
-sub $2,$2
-mov $4,6
 mul $1,32400
-trn $1,$3
-mov $3,$3
-mov $0,$4
-bin $3,$4
-add $3,$1
-div $0,$1
-sub $3,$3
-mul $2,2
+sub $1,2
 mul $1,2
-sub $2,2
-mov $0,$3
-add $1,$0
-lpb $1,3
+lpb $1,1
   sub $1,32
-  mov $2,$0
   trn $1,1
-  add $3,3
+  add $2,3
 lpe
-sub $4,$4
-mov $1,$3
+mov $1,$2
 sub $1,5892
 div $1,3

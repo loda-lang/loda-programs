@@ -3,7 +3,5 @@
 
 add $0,1
 bin $0,2
-lpb $0,1
-  mod $0,8
-lpe
+mod $0,8
 mov $1,$0
