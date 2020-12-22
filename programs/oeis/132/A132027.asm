@@ -7,5 +7,3 @@ lpb $0,1
   mul $1,$0
   div $0,3
 lpe
-mul $1,3
-div $1,3
