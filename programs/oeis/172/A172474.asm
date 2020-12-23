@@ -3,10 +3,7 @@
 
 pow $0,2
 lpb $0,1
-  lpb $0,1
-    add $2,4
-    sub $0,$2
-  lpe
+  add $1,16
+  sub $0,$1
 lpe
-mov $1,$2
-div $1,8
+div $1,16
