@@ -4,10 +4,8 @@
 add $0,2
 bin $0,2
 add $0,2
-pow $0,2
-mul $0,2
 mov $1,$0
-sub $1,18
-div $1,2
+mul $1,$0
+sub $1,9
 mul $1,16
 add $1,98
