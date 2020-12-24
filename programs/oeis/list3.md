@@ -1097,7 +1097,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329826](http://oeis.org/A329826) ([L15 program](329/A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
 * [A329827](http://oeis.org/A329827) ([L04 program](329/A329827.asm)): Beatty sequence for (5+sqrt(37))/6.
 * [A329828](http://oeis.org/A329828) ([L05 program](329/A329828.asm)): Beatty sequence for (7+sqrt(37))/6.
-* [A329829](http://oeis.org/A329829) ([L06 program](329/A329829.asm)): Beatty sequence for (2+sqrt(10))/3.
+* [A329829](http://oeis.org/A329829) ([L05 program](329/A329829.asm)): Beatty sequence for (2+sqrt(10))/3.
 * [A329830](http://oeis.org/A329830) ([L04 program](329/A329830.asm)): Beatty sequence for (4+sqrt(10))/3.
 * [A329831](http://oeis.org/A329831) ([L04 program](329/A329831.asm)): Beatty sequence for (7+sqrt(65))/8.
 * [A329832](http://oeis.org/A329832) ([L10 program](329/A329832.asm)): Beatty sequence for (9+sqrt(65))/8.
@@ -1158,7 +1158,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330115](http://oeis.org/A330115) ([L11 program](330/A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
 * [A330116](http://oeis.org/A330116) ([L44 program](330/A330116.asm)): Beatty sequence for sinh(x), where 1/e^x + csch(x) = 1.
 * [A330117](http://oeis.org/A330117) ([L19 program](330/A330117.asm)): Beatty sequence for 1+x, where 1/(1+x) + 1/(1+x+x^2) = 1.
-* [A330118](http://oeis.org/A330118) ([L06 program](330/A330118.asm)): Beatty sequence for 1+x+x^2, where 1/(1+x) + 1/(1+x+x^2) = 1.
+* [A330118](http://oeis.org/A330118) ([L05 program](330/A330118.asm)): Beatty sequence for 1+x+x^2, where 1/(1+x) + 1/(1+x+x^2) = 1.
 * [A330133](http://oeis.org/A330133) ([L05 program](330/A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330143](http://oeis.org/A330143) ([L34 program](330/A330143.asm)): Beatty sequence for (3/2)^x, where (3/2)^x + (5/2)^x = 1.
 * [A330144](http://oeis.org/A330144) ([L19 program](330/A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
