@@ -998,7 +998,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325765](http://oeis.org/A325765) ([L31 program](325/A325765.asm)): Number of integer partitions of n with a unique consecutive subsequence summing to every positive integer from 1 to n.
 * [A325909](http://oeis.org/A325909) ([L25 program](325/A325909.asm)): Lexicographically earliest sequence of distinct positive terms such that for any n > 0, n divides Sum_{k = 1..n} (-1)^k * a(k).
 * [A325958](http://oeis.org/A325958) ([L07 program](325/A325958.asm)): Sum of corners of a 2n+1 X 2n+1 square spiral.
-* [A326178](http://oeis.org/A326178) ([L06 program](326/A326178.asm)): Number of subsets of {1..n} whose product is equal to their sum.
+* [A326178](http://oeis.org/A326178) ([L04 program](326/A326178.asm)): Number of subsets of {1..n} whose product is equal to their sum.
 * [A326247](http://oeis.org/A326247) ([L15 program](326/A326247.asm)): Number of labeled n-vertex 2-edge multigraphs that are neither crossing nor nesting.
 * [A326278](http://oeis.org/A326278) ([L12 program](326/A326278.asm)): Number of n-vertex, 2-edge multigraphs that are not nesting. Number of n-vertex, 2-edge multigraphs that are not crossing.
 * [A326300](http://oeis.org/A326300) ([L14 program](326/A326300.asm)): Steinhaus sums.
@@ -1097,7 +1097,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329826](http://oeis.org/A329826) ([L15 program](329/A329826.asm)): Beatty sequence for (5+sqrt(17))/4.
 * [A329827](http://oeis.org/A329827) ([L04 program](329/A329827.asm)): Beatty sequence for (5+sqrt(37))/6.
 * [A329828](http://oeis.org/A329828) ([L05 program](329/A329828.asm)): Beatty sequence for (7+sqrt(37))/6.
-* [A329829](http://oeis.org/A329829) ([L06 program](329/A329829.asm)): Beatty sequence for (2+sqrt(10))/3.
+* [A329829](http://oeis.org/A329829) ([L05 program](329/A329829.asm)): Beatty sequence for (2+sqrt(10))/3.
 * [A329830](http://oeis.org/A329830) ([L04 program](329/A329830.asm)): Beatty sequence for (4+sqrt(10))/3.
 * [A329831](http://oeis.org/A329831) ([L04 program](329/A329831.asm)): Beatty sequence for (7+sqrt(65))/8.
 * [A329832](http://oeis.org/A329832) ([L10 program](329/A329832.asm)): Beatty sequence for (9+sqrt(65))/8.
@@ -1158,7 +1158,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330115](http://oeis.org/A330115) ([L11 program](330/A330115.asm)): Beatty sequence for e^x, where 1/e^x + csch(x) = 1.
 * [A330116](http://oeis.org/A330116) ([L44 program](330/A330116.asm)): Beatty sequence for sinh(x), where 1/e^x + csch(x) = 1.
 * [A330117](http://oeis.org/A330117) ([L19 program](330/A330117.asm)): Beatty sequence for 1+x, where 1/(1+x) + 1/(1+x+x^2) = 1.
-* [A330118](http://oeis.org/A330118) ([L06 program](330/A330118.asm)): Beatty sequence for 1+x+x^2, where 1/(1+x) + 1/(1+x+x^2) = 1.
+* [A330118](http://oeis.org/A330118) ([L05 program](330/A330118.asm)): Beatty sequence for 1+x+x^2, where 1/(1+x) + 1/(1+x+x^2) = 1.
 * [A330133](http://oeis.org/A330133) ([L05 program](330/A330133.asm)): a(n) = (1/16)*(5 + (-1)^(1+n) - 4*cos(n*Pi/2) + 10*n^2).
 * [A330143](http://oeis.org/A330143) ([L34 program](330/A330143.asm)): Beatty sequence for (3/2)^x, where (3/2)^x + (5/2)^x = 1.
 * [A330144](http://oeis.org/A330144) ([L19 program](330/A330144.asm)): Beatty sequence for (5/2)^x, where (3/2)^x + (5/2)^x = 1.
@@ -1309,7 +1309,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337484](http://oeis.org/A337484) ([L11 program](337/A337484.asm)): Number of ordered triples of positive integers summing to n that are neither strictly increasing nor strictly decreasing.
 * [A337519](http://oeis.org/A337519) ([L18 program](337/A337519.asm)): Length of the shortest walk in a n X n grid graph that starts in one corner and visits every edge.
 * [A337624](http://oeis.org/A337624) ([L24 program](337/A337624.asm)): a(n) is the least positive integer in base n that when multiplied by 2n-1 will contain only the digits 0 and 1.
-* [A337843](http://oeis.org/A337843) ([L07 program](337/A337843.asm)): a(n) is n + the number of digits in the decimal expansion of n.
+* [A337843](http://oeis.org/A337843) ([L05 program](337/A337843.asm)): a(n) is n + the number of digits in the decimal expansion of n.
 * [A337864](http://oeis.org/A337864) ([L04 program](337/A337864.asm)): Numbers formed by removing from n each digit if it is a duplicate of the previous digit, from left to right.
 * [A337899](http://oeis.org/A337899) ([L05 program](337/A337899.asm)): Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.
 * [A337909](http://oeis.org/A337909) ([L21 program](337/A337909.asm)): Distinct terms of A080079 in the order in which they appear.
