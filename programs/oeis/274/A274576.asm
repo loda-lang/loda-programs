@@ -3,22 +3,9 @@
 
 add $0,1
 mov $1,$0
-mov $2,$0
-add $2,$0
-mov $3,$2
 lpb $1,1
-  lpb $3,1
-    lpb $3,1
-      div $2,2
-      lpb $3,1
-        mov $1,0
-        gcd $3,$2
-      lpe
-    lpe
-    div $2,2
-  lpe
+  mov $2,$1
+  bin $2,2
+  gcd $1,$2
 lpe
-add $3,3
-mul $2,$3
-mov $1,$2
 div $1,4
