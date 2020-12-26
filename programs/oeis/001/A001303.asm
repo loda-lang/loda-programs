@@ -5,18 +5,10 @@ add $0,2
 mov $2,-3
 bin $2,$0
 bin $0,2
-add $4,$2
-mul $2,$2
 mul $0,2
-mov $4,$0
-add $3,$2
-mul $2,$4
-add $5,$2
-lpb $$0,3
-  mov $1,$0
-  add $1,$4
-  div $0,8
-lpe
+pow $2,2
+mov $3,$0
+mul $2,$3
 mov $1,$2
 sub $1,72
 div $1,12

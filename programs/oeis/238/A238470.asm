@@ -5,9 +5,7 @@ lpb $0,1
   sub $0,7
 lpe
 lpb $0,1
-  pow $0,3
-  mov $2,$0
-  mod $0,7
+  mod $0,3
 lpe
-mov $1,$2
-div $1,8
+mov $1,$0
+div $1,2
