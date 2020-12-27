@@ -1,4 +1,4 @@
-; A224915: Sum of (n XOR k) for k = 0, 1, 2, ..., n, where XOR is the bitwise logical exclusive-or operator.
+; A224915: a(n) = Sum_{k=0..n} n XOR k where XOR is the bitwise logical exclusive-or operator.
 ; 0,1,5,6,22,23,27,28,92,93,97,98,114,115,119,120,376,377,381,382,398,399,403,404,468,469,473,474,490,491,495,496,1520,1521,1525,1526,1542,1543,1547,1548,1612,1613,1617,1618,1634,1635,1639,1640,1896,1897,1901,1902,1918
 
 mov $3,$0
