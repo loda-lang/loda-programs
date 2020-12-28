@@ -3,8 +3,7 @@
 
 add $0,1
 log $0,2
-mod $0,2
-sub $0,3
-mov $1,3
-sub $1,$0
-sub $1,5
+mov $2,$0
+gcd $2,2
+sub $2,1
+mov $1,$2
