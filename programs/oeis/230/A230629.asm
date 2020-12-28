@@ -5,6 +5,5 @@ lpb $0,1
   div $0,2
   add $2,1
 lpe
-add $0,$2
-mod $0,3
-mov $1,$0
+mod $2,3
+mov $1,$2
