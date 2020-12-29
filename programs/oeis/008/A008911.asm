@@ -3,6 +3,5 @@
 
 pow $0,2
 bin $0,2
+div $0,3
 mov $1,$0
-div $1,6
-mul $1,2
