@@ -12,7 +12,7 @@ mul $3,$4
 sub $3,4
 mov $2,$3
 mov $5,$0
-add $5,-2
+sub $5,2
 mul $2,$5
 add $2,$0
 mov $1,$2

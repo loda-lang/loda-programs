@@ -5,6 +5,6 @@ sub $0,1
 lpb $0,1
   mod $0,9
 lpe
-add $0,1
-mod $0,2
+gcd $0,2
 mov $1,$0
+sub $1,1
