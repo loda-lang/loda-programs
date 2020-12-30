@@ -4,6 +4,4 @@
 div $0,2
 bin $0,2
 div $0,3
-add $0,5
 mov $1,$0
-sub $1,5

@@ -224,7 +224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304833](http://oeis.org/A304833) ([L08 program](304/A304833.asm)): a(n) = 3*n^2 + 38*n - 76 (n>=2).
 * [A304834](http://oeis.org/A304834) ([L06 program](304/A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L08 program](304/A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
-* [A304836](http://oeis.org/A304836) ([L06 program](304/A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
+* [A304836](http://oeis.org/A304836) ([L05 program](304/A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304837](http://oeis.org/A304837) ([L23 program](304/A304837.asm)): a(n) = 6*(n - 1)*(81*n - 104) for n >= 1.
 * [A304838](http://oeis.org/A304838) ([L17 program](304/A304838.asm)): a(n) = 1944*n^2 - 5016*n + 3138 (n >= 1).
 * [A304839](http://oeis.org/A304839) ([L03 program](304/A304839.asm)): a(n) = 61*n - 38 (n>=1).
@@ -1091,7 +1091,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329684](http://oeis.org/A329684) ([L03 program](329/A329684.asm)): Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UD and HH.
 * [A329723](http://oeis.org/A329723) ([L35 program](329/A329723.asm)): Coefficients of expansion of (1-2x^3)/(1-x-x^2) in powers of x.
 * [A329754](http://oeis.org/A329754) ([L21 program](329/A329754.asm)): Doubly pentagonal pyramidal numbers.
-* [A329757](http://oeis.org/A329757) ([L63 program](329/A329757.asm)): Doubly octagonal pyramidal numbers.
+* [A329757](http://oeis.org/A329757) ([L26 program](329/A329757.asm)): Doubly octagonal pyramidal numbers.
 * [A329774](http://oeis.org/A329774) ([L55 program](329/A329774.asm)): a(n) = n+1 for n <= 2; otherwise a(n) = 3*a(n-3)+1.
 * [A329822](http://oeis.org/A329822) ([L06 program](329/A329822.asm)): The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
 * [A329825](http://oeis.org/A329825) ([L17 program](329/A329825.asm)): Beatty sequence for (3+sqrt(17))/4.
