@@ -3,15 +3,9 @@
 
 pow $0,5
 mov $2,$0
-mov $3,$0
-mov $4,2
-add $4,$0
-lpb $2,1
-  lpb $4,1
-    mov $2,8
-    div $3,2
-    sub $4,$3
-  lpe
+lpb $0,1
+  div $2,2
+  sub $0,$2
 lpe
-mov $1,$4
-sub $1,2
+mov $3,$0
+mov $1,$3
