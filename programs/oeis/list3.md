@@ -793,13 +793,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317317](http://oeis.org/A317317) ([L18 program](317/A317317.asm)): Multiples of 17 and odd numbers interleaved.
 * [A317318](http://oeis.org/A317318) ([L09 program](317/A317318.asm)): Multiples of 18 and odd numbers interleaved.
 * [A317319](http://oeis.org/A317319) ([L17 program](317/A317319.asm)): Multiples of 19 and odd numbers interleaved.
-* [A317320](http://oeis.org/A317320) ([L09 program](317/A317320.asm)): Multiples of 20 and odd numbers interleaved.
+* [A317320](http://oeis.org/A317320) ([L08 program](317/A317320.asm)): Multiples of 20 and odd numbers interleaved.
 * [A317321](http://oeis.org/A317321) ([L32 program](317/A317321.asm)): Multiples of 21 and odd numbers interleaved.
 * [A317322](http://oeis.org/A317322) ([L09 program](317/A317322.asm)): Multiples of 22 and odd numbers interleaved.
 * [A317323](http://oeis.org/A317323) ([L13 program](317/A317323.asm)): Multiples of 23 and odd numbers interleaved.
-* [A317324](http://oeis.org/A317324) ([L09 program](317/A317324.asm)): Multiples of 24 and odd numbers interleaved.
+* [A317324](http://oeis.org/A317324) ([L08 program](317/A317324.asm)): Multiples of 24 and odd numbers interleaved.
 * [A317325](http://oeis.org/A317325) ([L08 program](317/A317325.asm)): Multiples of 25 and odd numbers interleaved.
-* [A317326](http://oeis.org/A317326) ([L09 program](317/A317326.asm)): Multiples of 26 and odd numbers interleaved.
+* [A317326](http://oeis.org/A317326) ([L08 program](317/A317326.asm)): Multiples of 26 and odd numbers interleaved.
 * [A317331](http://oeis.org/A317331) ([L27 program](317/A317331.asm)): Indices m for which A058304(m) = 1.
 * [A317332](http://oeis.org/A317332) ([L22 program](317/A317332.asm)): Indices m for which A058304(m) = 8.
 * [A317333](http://oeis.org/A317333) ([L23 program](317/A317333.asm)): Indices m for which A058304(m) = 9.
@@ -948,7 +948,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323048](http://oeis.org/A323048) ([L09 program](323/A323048.asm)): Sums of no more than two 5-smooth numbers.
 * [A323178](http://oeis.org/A323178) ([L04 program](323/A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
 * [A323202](http://oeis.org/A323202) ([L14 program](323/A323202.asm)): Expansion of (1 - x) * (1 - x^3) / (1 - x^4) in powers of x.
-* [A323210](http://oeis.org/A323210) ([L12 program](323/A323210.asm)): a(n) = 9*J(n)^2 where J(n) are the Jacobsthal numbers A001045 with J(0) = 1.
+* [A323210](http://oeis.org/A323210) ([L08 program](323/A323210.asm)): a(n) = 9*J(n)^2 where J(n) are the Jacobsthal numbers A001045 with J(0) = 1.
 * [A323218](http://oeis.org/A323218) ([L09 program](323/A323218.asm)): a(n) = (4*n^3 + 30*n^2 + 50*n)/3 + 1.
 * [A323220](http://oeis.org/A323220) ([L48 program](323/A323220.asm)): a(n) = n*(n + 5)*(n + 7)*(n + 10)/24 + 1.
 * [A323221](http://oeis.org/A323221) ([L10 program](323/A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
@@ -1027,7 +1027,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327706](http://oeis.org/A327706) ([L10 program](327/A327706.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 6 parts can be obtained by coalescing the parts of lambda.
 * [A327707](http://oeis.org/A327707) ([L15 program](327/A327707.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 7 parts can be obtained by coalescing the parts of lambda.
 * [A327708](http://oeis.org/A327708) ([L14 program](327/A327708.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 8 parts can be obtained by coalescing the parts of lambda.
-* [A327767](http://oeis.org/A327767) ([L04 program](327/A327767.asm)): Period 2: repeat [1, -2].
+* [A327767](http://oeis.org/A327767) ([L03 program](327/A327767.asm)): Period 2: repeat [1, -2].
 * [A327896](http://oeis.org/A327896) ([L22 program](327/A327896.asm)): a(n) is the minimum number of tiles needed for constructing a polyiamond with n holes.
 * [A327999](http://oeis.org/A327999) ([L22 program](327/A327999.asm)): a(n) = Sum_{k=0..2n}(k!*(2n - k)!)/(floor(k/2)!*floor((2n - k)/2)!)^2.
 * [A328005](http://oeis.org/A328005) ([L17 program](328/A328005.asm)): Number of distinct coefficients in functional composition of 1 + x + ... + x^(n-1) with itself.
@@ -1256,7 +1256,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334413](http://oeis.org/A334413) ([L33 program](334/A334413.asm)): First differences of A101803.
 * [A334414](http://oeis.org/A334414) ([L26 program](334/A334414.asm)): First differences of A334415.
 * [A334415](http://oeis.org/A334415) ([L14 program](334/A334415.asm)): Nearest integer to n*(2-phi), where phi is the golden ratio (A001622).
-* [A334501](http://oeis.org/A334501) ([L11 program](334/A334501.asm)): Eventual period of a single cell in rule 190 cellular automaton in a cyclic universe of width n.
+* [A334501](http://oeis.org/A334501) ([L10 program](334/A334501.asm)): Eventual period of a single cell in rule 190 cellular automaton in a cyclic universe of width n.
 * [A334563](http://oeis.org/A334563) ([L04 program](334/A334563.asm)): a(n) is the maximum number of 4-cycles possible in an n-vertex planar graph.
 * [A334625](http://oeis.org/A334625) ([L14 program](334/A334625.asm)): Maximal size of a subset T of S = {1,2,...,n} with a cyclic arrangement of T such that any three neighbors can be reordered in an arithmetic progression.
 * [A334694](http://oeis.org/A334694) ([L12 program](334/A334694.asm)): a(n) = (n/4)*(n^3+2*n^2+5*n+8).

@@ -33,7 +33,7 @@ lpb $7,1
       mul $6,2
       sub $6,4
       add $0,$6
-      add $0,-11
+      sub $0,11
       div $5,$0
       mov $0,2
       mul $6,$5

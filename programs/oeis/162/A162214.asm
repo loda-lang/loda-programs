@@ -12,7 +12,7 @@ mul $2,$1
 add $2,3
 lpb $0,1
   mov $0,0
-  sub $2,-4
+  add $2,4
 lpe
 mov $1,$2
 sub $1,7

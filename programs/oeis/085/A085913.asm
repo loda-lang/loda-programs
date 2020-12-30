@@ -5,4 +5,4 @@ pow $0,2
 sub $0,2
 mov $1,$0
 div $1,2
-sub $1,-2
+add $1,2
