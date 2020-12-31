@@ -10,7 +10,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300254](http://oeis.org/A300254) ([L13 program](300/A300254.asm)): a(n) = 25*(n + 1)*(4*n + 3)*(5*n + 4)/3.
 * [A300287](http://oeis.org/A300287) ([L18 program](300/A300287.asm)): a(n) = floor((1/n) * Sum_{k=1..n} sqrt(k)).
 * [A300290](http://oeis.org/A300290) ([L09 program](300/A300290.asm)): Period 6: repeat [0, 1, 2, 2, 3, 3].
-* [A300293](http://oeis.org/A300293) ([L28 program](300/A300293.asm)): A sequence based on the period 6 sequence A151899.
+* [A300293](http://oeis.org/A300293) ([L08 program](300/A300293.asm)): A sequence based on the period 6 sequence A151899.
 * [A300402](http://oeis.org/A300402) ([L05 program](300/A300402.asm)): Smallest integer i such that TREE(i) >= n.
 * [A300403](http://oeis.org/A300403) ([L06 program](300/A300403.asm)): Smallest integer i such that SSCG(i) >= n.
 * [A300404](http://oeis.org/A300404) ([L06 program](300/A300404.asm)): Smallest integer k such that the largest term in the Goodstein sequence starting at k is > n.
@@ -107,7 +107,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302588](http://oeis.org/A302588) ([L43 program](302/A302588.asm)): a(n) = a(n-3) + 7*(n-2), a(0)=1, a(1)=2, a(2)=4.
 * [A302647](http://oeis.org/A302647) ([L18 program](302/A302647.asm)): a(n) = (2*n^2*(n^2 - 3) - (2*n^2 + 1)*(-1)^n + 1)/64.
 * [A302650](http://oeis.org/A302650) ([L09 program](302/A302650.asm)): Number of minimal total dominating sets in the n-barbell graph.
-* [A302689](http://oeis.org/A302689) ([L06 program](302/A302689.asm)): a(n) = 4 + 2^n - 4*n.
+* [A302689](http://oeis.org/A302689) ([L05 program](302/A302689.asm)): a(n) = 4 + 2^n - 4*n.
 * [A302709](http://oeis.org/A302709) ([L12 program](302/A302709.asm)): a(n) = Trinomial(2*n+1, 4) = (1/6)*n*(2*n + 1)*(2*n^2 + 9*n + 1), n >= 0.
 * [A302710](http://oeis.org/A302710) ([L32 program](302/A302710.asm)): a(n) = trinomial(2*n, 4) = (1/6)*n*(2*n - 1)*(2*n^2 + 7*n - 3).
 * [A302748](http://oeis.org/A302748) ([L09 program](302/A302748.asm)): Half thrice the previous number, rounded down, plus 1, starting with 6.
@@ -758,7 +758,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316533](http://oeis.org/A316533) ([L23 program](316/A316533.asm)): a(n) is the Sprague-Grundy value of the Node-Kayles game played on the generalized Petersen graph P(n,2).
 * [A316562](http://oeis.org/A316562) ([L09 program](316/A316562.asm)): Koechel number for the works of W. A. Mozart rounded from age 11.
 * [A316569](http://oeis.org/A316569) ([L11 program](316/A316569.asm)): a(n) = Jacobi (or Kronecker) symbol (n, 15).
-* [A316571](http://oeis.org/A316571) ([L07 program](316/A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
+* [A316571](http://oeis.org/A316571) ([L10 program](316/A316571.asm)): a(1) = 1; for n > 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1
 * [A316631](http://oeis.org/A316631) ([L16 program](316/A316631.asm)): Expansion of A(x) = x*(1+3*x^2+x^3+3*x^4+x^6)/(1-x^4)^2.
 * [A316669](http://oeis.org/A316669) ([L11 program](316/A316669.asm)): Squares visited by queen moves on a diagonally numbered board and moving to the lowest available unvisited square at each step.
 * [A316671](http://oeis.org/A316671) ([L10 program](316/A316671.asm)): Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
@@ -1290,7 +1290,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336529](http://oeis.org/A336529) ([L41 program](336/A336529.asm)): a(n) = (n^3+5*n+3)/3 + 2*floor(n/2) + a(n-2), with a(0)=1 and a(1)=3.
 * [A336535](http://oeis.org/A336535) ([L06 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
 * [A336627](http://oeis.org/A336627) ([L41 program](336/A336627.asm)): Coordination sequence for the Manhattan lattice.
-* [A336705](http://oeis.org/A336705) ([L21 program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
+* [A336705](http://oeis.org/A336705) ([L11 program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
 * [A336751](http://oeis.org/A336751) ([L13 program](336/A336751.asm)): Smallest side of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336754](http://oeis.org/A336754) ([L09 program](336/A336754.asm)): Perimeters in increasing order of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336819](http://oeis.org/A336819) ([L14 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
@@ -1351,7 +1351,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339355](http://oeis.org/A339355) ([L52 program](339/A339355.asm)): Maximum number of copies of a 12345 permutation pattern in an alternating (or zig-zag) permutation of length n + 7.
 * [A339356](http://oeis.org/A339356) ([L36 program](339/A339356.asm)): Maximum number of copies of a 123456 permutation pattern in an alternating (or zig-zag) permutation of length n + 9.
 * [A339483](http://oeis.org/A339483) ([L08 program](339/A339483.asm)): Number of regular polygons that can be drawn with vertices on a centered hexagonal grid with side length n.
-* [A339488](http://oeis.org/A339488) ([L07 program](339/A339488.asm)): a(n) = H(n-1, n, n+1) where H(a, b, c) = (a + b + c)*(a + b - c)*(b + c - a)*(c + a - b) is Heron's polynomial.
+* [A339488](http://oeis.org/A339488) ([L06 program](339/A339488.asm)): a(n) = H(n-1, n, n+1) where H(a, b, c) = (a + b + c)*(a + b - c)*(b + c - a)*(c + a - b) is Heron's polynomial.
 * [A339531](http://oeis.org/A339531) ([L06 program](339/A339531.asm)): Numbers b > 1 such that the smallest two primes, i.e., 2 and 3 are base-b Wieferich primes.
 * [A339570](http://oeis.org/A339570) ([L09 program](339/A339570.asm)): Denote the van der Corput sequence of fractions 1/2, 1/4, 3/4, 1/8, 5/8, 3/8, 7/8, 1/16, ... (A030101/A062383) by v(n), n >= 1. Then a(n) = denominator of v(A014486(n)).
 * [A339573](http://oeis.org/A339573) ([L04 program](339/A339573.asm)): a(n) = floor(n*(n+1)/6) - 1.
