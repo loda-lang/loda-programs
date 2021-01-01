@@ -5,10 +5,8 @@ lpb $0,1
   sub $0,6
 lpe
 lpb $0,1
-  pow $0,3
-  mod $0,9
-lpe
-lpb $0,1
   mod $0,2
+  mov $1,$0
+  add $0,$1
 lpe
 mov $1,$0
