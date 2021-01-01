@@ -5,12 +5,9 @@ sub $0,1
 mod $0,2
 mul $0,11
 add $0,2
-mul $0,5
 pow $0,2
-mov $2,$0
-mov $1,$2
-div $1,99
-mul $1,4
-div $1,14
+mov $1,$0
+sub $1,4
+div $1,13
 mul $1,2
 add $1,4
