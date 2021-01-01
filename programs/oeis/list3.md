@@ -57,7 +57,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301689](http://oeis.org/A301689) ([L22 program](301/A301689.asm)): Partial sums of A301688.
 * [A301694](http://oeis.org/A301694) ([L08 program](301/A301694.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)*(1 - x^3)).
 * [A301695](http://oeis.org/A301695) ([L06 program](301/A301695.asm)): Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)^2*(1 - x^3)).
-* [A301696](http://oeis.org/A301696) ([L07 program](301/A301696.asm)): Partial sums of A219529.
+* [A301696](http://oeis.org/A301696) ([L06 program](301/A301696.asm)): Partial sums of A219529.
 * [A301697](http://oeis.org/A301697) ([L23 program](301/A301697.asm)): Coordination sequence for node of type V2 in "krj" 2-D tiling (or net).
 * [A301698](http://oeis.org/A301698) ([L28 program](301/A301698.asm)): Partial sums of A301697.
 * [A301708](http://oeis.org/A301708) ([L18 program](301/A301708.asm)): Coordination sequence for node of type V1 in "krc" 2-D tiling (or net).
@@ -385,7 +385,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309878](http://oeis.org/A309878) ([L13 program](309/A309878.asm)): The real part of b(n) where b(n) = (n + b(n-1)) * (1 + i) with b(-1)=0; i = sqrt(-1).
 * [A309945](http://oeis.org/A309945) ([L13 program](309/A309945.asm)): a(n) = floor(n - sqrt(2*n-1)).
 * [A309954](http://oeis.org/A309954) ([L12 program](309/A309954.asm)): Product of digits of (n written in base 4).
-* [A309970](http://oeis.org/A309970) ([L14 program](309/A309970.asm)): Period 12: repeat [1, 1, 0, 0, -1, -1, -1, -1, 0, 0, 1, 1].
+* [A309970](http://oeis.org/A309970) ([L09 program](309/A309970.asm)): Period 12: repeat [1, 1, 0, 0, -1, -1, -1, -1, 0, 0, 1, 1].
 * [A310342](http://oeis.org/A310342) ([L43 program](310/A310342.asm)): Coordination sequence Gal.5.253.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310368](http://oeis.org/A310368) ([L21 program](310/A310368.asm)): Coordination sequence Gal.6.230.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A310370](http://oeis.org/A310370) ([L25 program](310/A310370.asm)): Coordination sequence Gal.5.109.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -1227,7 +1227,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332410](http://oeis.org/A332410) ([L06 program](332/A332410.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-5) - 2*a(n-6) + a(n-7) with a(0)=0, a(1)=1, a(2)=3, a(3)=6, a(4)=11, a(5)=17, a(6)=24.
 * [A332420](http://oeis.org/A332420) ([L16 program](332/A332420.asm)): Number of Maclaurin polynomials of sin x having exactly n positive zeros.
 * [A332490](http://oeis.org/A332490) ([L42 program](332/A332490.asm)): a(n) = Sum_{k=1..n} k * ceiling(n/k).
-* [A332495](http://oeis.org/A332495) ([L07 program](332/A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
+* [A332495](http://oeis.org/A332495) ([L05 program](332/A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
 * [A332519](http://oeis.org/A332519) ([L04 program](332/A332519.asm)): a(n) = 4*(n^2+n-2).
 * [A332663](http://oeis.org/A332663) ([L16 program](332/A332663.asm)): Even bisection of A332662: the x-coordinates of an enumeration of N X N.
 * [A332697](http://oeis.org/A332697) ([L40 program](332/A332697.asm)): a(n) = (n^4 + 5*n^3 + 11*n^2 + 7*n)/6.
