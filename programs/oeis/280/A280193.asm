@@ -3,12 +3,10 @@
 
 sub $0,1
 mod $0,2
-mov $1,-4
-mov $2,$0
-lpb $0,1
-  mov $1,$2
-  sub $0,$1
-  add $1,1
-lpe
-div $1,2
+mul $0,10
+add $0,1
+pow $0,2
+mov $1,$0
+sub $1,79
+div $1,39
 add $1,1

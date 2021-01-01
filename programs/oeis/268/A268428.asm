@@ -3,9 +3,8 @@
 
 add $0,1
 bin $0,2
-mov $2,$0
-mul $2,9
-div $2,6
-mov $1,$2
+mul $0,6
+div $0,4
+mov $1,$0
 mul $1,2
 add $1,149

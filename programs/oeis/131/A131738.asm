@@ -3,8 +3,7 @@
 
 mov $1,-2
 bin $1,$0
+mul $0,$1
 lpb $1,1
-  cmp $1,0
-  add $1,$0
-  mul $1,12
+  mov $1,$0
 lpe

@@ -4,6 +4,6 @@
 lpb $0,1
   add $1,$0
   div $0,3
-  mod $1,3
 lpe
+mod $1,3
 add $1,1

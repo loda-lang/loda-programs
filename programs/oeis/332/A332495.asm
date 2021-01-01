@@ -3,7 +3,6 @@
 
 add $0,1
 bin $0,2
-mov $2,$0
-mul $2,5
-div $2,2
-mov $1,$2
+mul $0,10
+div $0,4
+mov $1,$0
