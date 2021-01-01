@@ -13,7 +13,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300293](http://oeis.org/A300293) ([L08 program](300/A300293.asm)): A sequence based on the period 6 sequence A151899.
 * [A300402](http://oeis.org/A300402) ([L05 program](300/A300402.asm)): Smallest integer i such that TREE(i) >= n.
 * [A300403](http://oeis.org/A300403) ([L06 program](300/A300403.asm)): Smallest integer i such that SSCG(i) >= n.
-* [A300404](http://oeis.org/A300404) ([L06 program](300/A300404.asm)): Smallest integer k such that the largest term in the Goodstein sequence starting at k is > n.
+* [A300404](http://oeis.org/A300404) ([L05 program](300/A300404.asm)): Smallest integer k such that the largest term in the Goodstein sequence starting at k is > n.
 * [A300451](http://oeis.org/A300451) ([L17 program](300/A300451.asm)): a(n) = (3*n^2 - 3*n + 8)*2^(n - 3).
 * [A300522](http://oeis.org/A300522) ([L04 program](300/A300522.asm)): a(n) = (5*n + 3)*(5*n + 4)*(5*n + 5)/6.
 * [A300523](http://oeis.org/A300523) ([L04 program](300/A300523.asm)): a(n) = (5*n + 5)*(5*n + 6)*(5*n + 7)/6.
@@ -894,7 +894,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321014](http://oeis.org/A321014) ([L28 program](321/A321014.asm)): Number of divisors of n which are greater than 3.
 * [A321123](http://oeis.org/A321123) ([L12 program](321/A321123.asm)): a(n) = 2^n + 2*n^2 + 2*n + 1.
 * [A321124](http://oeis.org/A321124) ([L09 program](321/A321124.asm)): a(n) =  (4*n^3 - 6*n^2 + 14*n + 3)/3.
-* [A321180](http://oeis.org/A321180) ([L05 program](321/A321180.asm)): a(n) = 17*n^2 - 1.
+* [A321180](http://oeis.org/A321180) ([L04 program](321/A321180.asm)): a(n) = 17*n^2 - 1.
 * [A321195](http://oeis.org/A321195) ([L06 program](321/A321195.asm)): Minimum number of monochromatic Schur triples over all 2-colorings of [n].
 * [A321212](http://oeis.org/A321212) ([L05 program](321/A321212.asm)): Numbers that are congruent to {2, 3} mod 16.
 * [A321220](http://oeis.org/A321220) ([L06 program](321/A321220.asm)): a(n) = n+2 if n is even, otherwise a(n) = 2*n+1 if n is odd.

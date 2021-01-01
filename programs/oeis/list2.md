@@ -1209,7 +1209,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228138](http://oeis.org/A228138) ([L25 program](228/A228138.asm)): Number of blocks in a Steiner system S(2, 4, A228137(n+1)).
 * [A228141](http://oeis.org/A228141) ([L06 program](228/A228141.asm)): Numbers that are congruent to {1, 5} mod 20.
 * [A228142](http://oeis.org/A228142) ([L23 program](228/A228142.asm)): Number of blocks in a Steiner system S(2, 5, A228141(n+1)).
-* [A228157](http://oeis.org/A228157) ([L09 program](228/A228157.asm)): Numbers n which are anagrams of n+9.
+* [A228157](http://oeis.org/A228157) ([L05 program](228/A228157.asm)): Numbers n which are anagrams of n+9.
 * [A228176](http://oeis.org/A228176) ([L08 program](228/A228176.asm)): Floor(n*(sqrt(10)+sqrt(3))).
 * [A228177](http://oeis.org/A228177) ([L09 program](228/A228177.asm)): Floor(n*(sqrt(6)+sqrt(5))).
 * [A228219](http://oeis.org/A228219) ([L06 program](228/A228219.asm)): Number of second differences of arrays of length 4 of numbers in 0..n.
