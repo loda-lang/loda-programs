@@ -2663,6 +2663,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136619](http://oeis.org/A136619) ([L06 program](136/A136619.asm)): a(1) = 1, then repeat period 3: [1, 4, 2].
 * [A136690](http://oeis.org/A136690) ([L10 program](136/A136690.asm)): Final nonzero digit of n! in base 3.
 * [A136724](http://oeis.org/A136724) ([L12 program](136/A136724.asm)): Numbers divisible by 4 that are not powers of 2.
+* [A136746](http://oeis.org/A136746) ([L73 program](136/A136746.asm)): G.f.: (z^12+1-z^11-z^10+z^8-z^6+z^5-z^3+z)/((z+1)*(z-1)^2).
 * [A136768](http://oeis.org/A136768) ([L12 program](136/A136768.asm)): n! never ends in this many 0's in base 7.
 * [A136771](http://oeis.org/A136771) ([L25 program](136/A136771.asm)): n! never ends in this many 0's in base 11.
 * [A136775](http://oeis.org/A136775) ([L52 program](136/A136775.asm)): Number of multiplex juggling sequences of length n, base state <1,1> and hand capacity 2.
@@ -3009,7 +3010,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A141530](http://oeis.org/A141530) ([L07 program](141/A141530.asm)): 4*n^3-6*n^2+1
 * [A141531](http://oeis.org/A141531) ([L03 program](141/A141531.asm)): Inverse binomial transform of A001651.
 * [A141534](http://oeis.org/A141534) ([L31 program](141/A141534.asm)): Derived from the centered polygonal numbers: start with the first triangular number, then the sum of the first square number and the second triangular number, then the sum of first pentagonal number, the second square number and the third triangular number, and so on and so on...
-* [A141571](http://oeis.org/A141571) ([L11 program](141/A141571.asm)): Decimal expansion of 11999/99900.
+* [A141571](http://oeis.org/A141571) ([L06 program](141/A141571.asm)): Decimal expansion of 11999/99900.
 * [A141631](http://oeis.org/A141631) ([L05 program](141/A141631.asm)): 3*n^2 - 4*n + 3.
 * [A141683](http://oeis.org/A141683) ([L25 program](141/A141683.asm)): a(n) = Sum_{k=1..n} b(k)*a(n - k) for n >= 1, where b(n) = b(n-2) + b(n-3) for n >= 3 with b(0) = 0 and b(1) = b(2) = 1.
 * [A141694](http://oeis.org/A141694) ([L03 program](141/A141694.asm)): a(n) = 22*n + 12.
@@ -4274,7 +4275,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A159913](http://oeis.org/A159913) ([L15 program](159/A159913.asm)): a(n) = 2^(A000120(n)+1)-1, where A000120(n) = number of nonzero bits in n.
 * [A159914](http://oeis.org/A159914) ([L15 program](159/A159914.asm)): Half the number of (n-3)-element subsets of {1,...,n} whose elements sum up to an odd value.
 * [A159915](http://oeis.org/A159915) ([L09 program](159/A159915.asm)): a(n) = floor((n+1)/4)*floor(n/2).
-* [A159918](http://oeis.org/A159918) ([L06 program](159/A159918.asm)): Number of ones in binary representation of n^2.
+* [A159918](http://oeis.org/A159918) ([L08 program](159/A159918.asm)): Number of ones in binary representation of n^2.
 * [A159920](http://oeis.org/A159920) ([L07 program](159/A159920.asm)): Sums of the antidiagonals of Sundaram's sieve (A159919).
 * [A159938](http://oeis.org/A159938) ([L08 program](159/A159938.asm)): The number of homogeneous trisubstituted linear alkanes.
 * [A159940](http://oeis.org/A159940) ([L12 program](159/A159940.asm)): The number of trisubstitution products with composition C_n H_(2n-1) X_2 Y.
@@ -4919,6 +4920,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168125](http://oeis.org/A168125) ([L05 program](168/A168125.asm)): a(n) = n^2*(n^7+1)/2.
 * [A168126](http://oeis.org/A168126) ([L05 program](168/A168126.asm)): a(n) = n^2*(n^8+1)/2.
 * [A168143](http://oeis.org/A168143) ([L45 program](168/A168143.asm)): a(17)=37; for n>=17, a(n)=3n-14 if gcd(n,a(n-1))>1 and all prime divisors of n more than 17; a(n)=a(n-1)+1, otherwise
+* [A168150](http://oeis.org/A168150) ([L63 program](168/A168150.asm)): Inverse binomial transform of A026741.
 * [A168153](http://oeis.org/A168153) ([L05 program](168/A168153.asm)): a(n) = n^2*(n^9 + 1)/2.
 * [A168176](http://oeis.org/A168176) ([L05 program](168/A168176.asm)): a(n) = n^2*(n^10 + 1)/2.
 * [A168178](http://oeis.org/A168178) ([L09 program](168/A168178.asm)): a(n) = n^3*(n^2 + 1)/2.
@@ -6851,7 +6853,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192023](http://oeis.org/A192023) ([L09 program](192/A192023.asm)): The Wiener index of the comb-shaped graph |_|_|...|_| with 2n (n>=1) nodes. The Wiener index of a connected graph is the sum of the distances between all unordered pairs of vertices in the graph.
 * [A192025](http://oeis.org/A192025) ([L27 program](192/A192025.asm)): The Wiener index of the double-comb graph \/_\/_\/...\/_\/ with 3n (n>=1) nodes. The Wiener index of a connected graph is the sum of the distances between all unordered pairs of vertices in the graph.
 * [A192033](http://oeis.org/A192033) ([L12 program](192/A192033.asm)): Expansion of x*(3*x^2+x+1)/((x-1)*(2*x-1)*(x+1)).
-* [A192085](http://oeis.org/A192085) ([L14 program](192/A192085.asm)): Number of ones in the binary expansion of n^3.
+* [A192085](http://oeis.org/A192085) ([L08 program](192/A192085.asm)): Number of ones in the binary expansion of n^3.
 * [A192136](http://oeis.org/A192136) ([L05 program](192/A192136.asm)): a(n) = (5*n^2 - 3*n + 2)/2.
 * [A192245](http://oeis.org/A192245) ([L83 program](192/A192245.asm)): 1-sequence of reduction of triangular number sequence by x^2 -> x+1.
 * [A192304](http://oeis.org/A192304) ([L21 program](192/A192304.asm)): 0-sequence of reduction of (2n-1) by x^2 -> x+1.
