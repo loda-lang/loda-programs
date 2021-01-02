@@ -892,7 +892,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007413](http://oeis.org/A007413) ([L43 program](007/A007413.asm)): A squarefree (or Thue-Morse) ternary sequence: closed under 1->123, 2->13, 3->2. Start with 1.
 * [A007456](http://oeis.org/A007456) ([L15 program](007/A007456.asm)): Days required to spread gossip to n people.
 * [A007466](http://oeis.org/A007466) ([L11 program](007/A007466.asm)): Exponential-convolution of natural numbers with themselves.
-* [A007482](http://oeis.org/A007482) ([L11 program](007/A007482.asm)): a(n) = number of subsequences of [ 1, ..., 2n ] in which each odd number has an even neighbor.
+* [A007482](http://oeis.org/A007482) ([L11 program](007/A007482.asm)): a(n) is the number of subsequences of [ 1, ..., 2n ] in which each odd number has an even neighbor.
 * [A007483](http://oeis.org/A007483) ([L14 program](007/A007483.asm)): a(n) = 3*a(n-1) + 2*a(n-2), with a(0)=1, a(1)=5.
 * [A007484](http://oeis.org/A007484) ([L20 program](007/A007484.asm)): a(n) = 3*a(n-1) + 2*a(n-2), with a(0)=2, a(1)=7.
 * [A007487](http://oeis.org/A007487) ([L13 program](007/A007487.asm)): Sum of 9th powers.
@@ -1467,33 +1467,33 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011884](http://oeis.org/A011884) ([L04 program](011/A011884.asm)): Floor(n(n - 1)/31).
 * [A011885](http://oeis.org/A011885) ([L03 program](011/A011885.asm)): [ n(n-1)/32 ].
 * [A011886](http://oeis.org/A011886) ([L04 program](011/A011886.asm)): a(n) = floor(n*(n-1)*(n-2)/4).
-* [A011887](http://oeis.org/A011887) ([L05 program](011/A011887.asm)): [ n(n-1)(n-2)/5 ].
+* [A011887](http://oeis.org/A011887) ([L04 program](011/A011887.asm)): [ n(n-1)(n-2)/5 ].
 * [A011888](http://oeis.org/A011888) ([L15 program](011/A011888.asm)): Partial sums of A011863.
 * [A011889](http://oeis.org/A011889) ([L04 program](011/A011889.asm)): a(n) = floor(n*(n-1)*(n-2)/7).
 * [A011890](http://oeis.org/A011890) ([L04 program](011/A011890.asm)): [ n(n-1)(n-2)/8 ].
 * [A011891](http://oeis.org/A011891) ([L04 program](011/A011891.asm)): a(n) = floor( n*(n-1)*(n-2)/9 ).
-* [A011892](http://oeis.org/A011892) ([L05 program](011/A011892.asm)): [ n(n-1)(n-2)/10 ].
-* [A011893](http://oeis.org/A011893) ([L05 program](011/A011893.asm)): [ n(n-1)(n-2)/11 ].
+* [A011892](http://oeis.org/A011892) ([L04 program](011/A011892.asm)): [ n(n-1)(n-2)/10 ].
+* [A011893](http://oeis.org/A011893) ([L04 program](011/A011893.asm)): [ n(n-1)(n-2)/11 ].
 * [A011894](http://oeis.org/A011894) ([L03 program](011/A011894.asm)): a(n) = floor(n(n-1)(n-2)/12).
-* [A011895](http://oeis.org/A011895) ([L05 program](011/A011895.asm)): a(n) = floor(n*(n-1)*(n-2)/13).
+* [A011895](http://oeis.org/A011895) ([L04 program](011/A011895.asm)): a(n) = floor(n*(n-1)*(n-2)/13).
 * [A011896](http://oeis.org/A011896) ([L04 program](011/A011896.asm)): [ n(n-1)(n-2)/14 ].
 * [A011897](http://oeis.org/A011897) ([L04 program](011/A011897.asm)): a(n) = floor(n*(n-1)*(n-2)/15).
-* [A011898](http://oeis.org/A011898) ([L05 program](011/A011898.asm)): a(n) = floor(n*(n-1)*(n-2)/16).
-* [A011899](http://oeis.org/A011899) ([L05 program](011/A011899.asm)): a(n) = floor(n*(n-1)*(n-2)/17).
+* [A011898](http://oeis.org/A011898) ([L04 program](011/A011898.asm)): a(n) = floor(n*(n-1)*(n-2)/16).
+* [A011899](http://oeis.org/A011899) ([L04 program](011/A011899.asm)): a(n) = floor(n*(n-1)*(n-2)/17).
 * [A011900](http://oeis.org/A011900) ([L12 program](011/A011900.asm)): a(n) = 6*a(n-1) - a(n-2) - 2 with a(0) = 1, a(1) = 3.
-* [A011901](http://oeis.org/A011901) ([L05 program](011/A011901.asm)): [ n(n-1)(n-2)/19 ].
+* [A011901](http://oeis.org/A011901) ([L04 program](011/A011901.asm)): [ n(n-1)(n-2)/19 ].
 * [A011902](http://oeis.org/A011902) ([L04 program](011/A011902.asm)): [ n(n-1)(n-2)/20 ].
 * [A011903](http://oeis.org/A011903) ([L04 program](011/A011903.asm)): a(n) = floor(n*(n-1)*(n-2)/21).
-* [A011904](http://oeis.org/A011904) ([L05 program](011/A011904.asm)): [ n(n-1)(n-2)/22 ].
-* [A011905](http://oeis.org/A011905) ([L05 program](011/A011905.asm)): [ n(n-1)(n-2)/23 ].
-* [A011907](http://oeis.org/A011907) ([L05 program](011/A011907.asm)): [ n(n-1)(n-2)/25 ].
-* [A011908](http://oeis.org/A011908) ([L05 program](011/A011908.asm)): [ n(n-1)(n-2)/26 ].
+* [A011904](http://oeis.org/A011904) ([L04 program](011/A011904.asm)): [ n(n-1)(n-2)/22 ].
+* [A011905](http://oeis.org/A011905) ([L04 program](011/A011905.asm)): [ n(n-1)(n-2)/23 ].
+* [A011907](http://oeis.org/A011907) ([L04 program](011/A011907.asm)): [ n(n-1)(n-2)/25 ].
+* [A011908](http://oeis.org/A011908) ([L04 program](011/A011908.asm)): [ n(n-1)(n-2)/26 ].
 * [A011909](http://oeis.org/A011909) ([L04 program](011/A011909.asm)): a(n) = floor( n*(n-1)*(n-2)/27 ).
-* [A011910](http://oeis.org/A011910) ([L05 program](011/A011910.asm)): Floor( n(n-1)(n-2)/28 ).
-* [A011911](http://oeis.org/A011911) ([L05 program](011/A011911.asm)): [ n(n-1)(n-2)/29 ].
+* [A011910](http://oeis.org/A011910) ([L04 program](011/A011910.asm)): Floor( n(n-1)(n-2)/28 ).
+* [A011911](http://oeis.org/A011911) ([L04 program](011/A011911.asm)): [ n(n-1)(n-2)/29 ].
 * [A011912](http://oeis.org/A011912) ([L03 program](011/A011912.asm)): a(n) = floor(n(n-1)(n-2)/30).
-* [A011913](http://oeis.org/A011913) ([L05 program](011/A011913.asm)): a(n) = floor(n*(n - 1)*(n - 2)/31).
-* [A011914](http://oeis.org/A011914) ([L05 program](011/A011914.asm)): a(n) = floor(n*(n - 1)*(n - 2)/32).
+* [A011913](http://oeis.org/A011913) ([L04 program](011/A011913.asm)): a(n) = floor(n*(n - 1)*(n - 2)/31).
+* [A011914](http://oeis.org/A011914) ([L04 program](011/A011914.asm)): a(n) = floor(n*(n - 1)*(n - 2)/32).
 * [A011915](http://oeis.org/A011915) ([L04 program](011/A011915.asm)): a(n) = floor(n(n-1)(n-2)(n-3)/5).
 * [A011917](http://oeis.org/A011917) ([L04 program](011/A011917.asm)): [ n(n-1)(n-2)(n-3)/7 ].
 * [A011919](http://oeis.org/A011919) ([L04 program](011/A011919.asm)): a(n) = floor(n*(n-1)*(n-2)*(n-3)/9).
@@ -8540,7 +8540,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A096129](http://oeis.org/A096129) ([L05 program](096/A096129.asm)): Middle term of a triple of consecutive numbers which are sums of two squares.
 * [A096143](http://oeis.org/A096143) ([L12 program](096/A096143.asm)): Ceiling(sum(1/i, i=1..n)).
 * [A096182](http://oeis.org/A096182) ([L24 program](096/A096182.asm)): Index of first occurrence of n in A095773.
-* [A096200](http://oeis.org/A096200) ([L37 program](096/A096200.asm)): n*(n-1)*(n-2)*(3*n-2)/6.
+* [A096200](http://oeis.org/A096200) ([L06 program](096/A096200.asm)): n*(n-1)*(n-2)*(3*n-2)/6.
 * [A096230](http://oeis.org/A096230) ([L04 program](096/A096230.asm)): Period 5: repeat [9, 7, 5, 3, 1].
 * [A096268](http://oeis.org/A096268) ([L08 program](096/A096268.asm)): Period-doubling sequence (or period-doubling word): fixed point of the morphism 0 -> 01, 1 -> 00.
 * [A096270](http://oeis.org/A096270) ([L30 program](096/A096270.asm)): Fixed point of the morphism 0->01, 1->011.
