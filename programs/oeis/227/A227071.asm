@@ -3,10 +3,6 @@
 
 lpb $0,1
   gcd $0,100000000
-  mov $3,$0
-  mov $0,$2
-  mul $3,7
 lpe
-mov $1,$3
-div $1,7
+mov $1,$0
 add $1,1

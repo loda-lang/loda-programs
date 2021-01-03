@@ -2615,7 +2615,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A264147](http://oeis.org/A264147) ([L19 program](264/A264147.asm)): a(n) = n*F(n+1) - (n+1)*F(n), where F = A000045.
 * [A264440](http://oeis.org/A264440) ([L32 program](264/A264440.asm)): Row lengths of the irregular triangle A137510 (number of divisors d of n with 1 < d < n, or 0 if no such d exists).
 * [A264443](http://oeis.org/A264443) ([L06 program](264/A264443.asm)): a(n) = n*(n + 5)*(n + 10)/6.
-* [A264444](http://oeis.org/A264444) ([L12 program](264/A264444.asm)): a(n) = n*(n + 7)*(n + 14)/6.
+* [A264444](http://oeis.org/A264444) ([L11 program](264/A264444.asm)): a(n) = n*(n + 7)*(n + 14)/6.
 * [A264445](http://oeis.org/A264445) ([L13 program](264/A264445.asm)): a(n) = n*(n + 11)*(n + 22)/6.
 * [A264446](http://oeis.org/A264446) ([L15 program](264/A264446.asm)): a(n) = n*(n + 5)*(n + 10)*(n + 15)/24.
 * [A264447](http://oeis.org/A264447) ([L37 program](264/A264447.asm)): a(n) = n*(n + 7)*(n + 14)*(n + 21)/24.
@@ -3282,7 +3282,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274772](http://oeis.org/A274772) ([L12 program](274/A274772.asm)): Zero together with the partial sums of A056640.
 * [A274773](http://oeis.org/A274773) ([L12 program](274/A274773.asm)): a(n) = floor(sqrt(2*n-1) + 1/2) - abs(2*(n-1) - (floor(sqrt(2*n-1) + 1/2))^2) + 1.
 * [A274830](http://oeis.org/A274830) ([L11 program](274/A274830.asm)): Numbers n such that 7*n+1 is a triangular number (A000217).
-* [A274922](http://oeis.org/A274922) ([L06 program](274/A274922.asm)): a(n) = (-1)^n * n if n>0, a(0) = 1.
+* [A274922](http://oeis.org/A274922) ([L05 program](274/A274922.asm)): a(n) = (-1)^n * n if n>0, a(0) = 1.
 * [A274933](http://oeis.org/A274933) ([L17 program](274/A274933.asm)): Maximal number of non-attacking queens on a quarter chessboard containing n^2 squares.
 * [A274973](http://oeis.org/A274973) ([L09 program](274/A274973.asm)): Centered cubohemioctahedral numbers: a(n) = 2*n^3+9*n^2+n+1.
 * [A274974](http://oeis.org/A274974) ([L10 program](274/A274974.asm)): Centered octahemioctahedral numbers: a(n) = (4*n^3+24*n^2+8*n+3)/3.
