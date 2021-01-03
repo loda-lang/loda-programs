@@ -21,7 +21,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300622](http://oeis.org/A300622) ([L12 program](300/A300622.asm)): Denominators of sequence whose exponential self-convolution yields sequence 1, 2, 3, 5, 7, 11, 13, ... (1 with primes).
 * [A300659](http://oeis.org/A300659) ([L46 program](300/A300659.asm)): Product of digits of n!.
 * [A300758](http://oeis.org/A300758) ([L05 program](300/A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
-* [A300846](http://oeis.org/A300846) ([L06 program](300/A300846.asm)): a(n) = 3*(n - 1)^2*n^3.
+* [A300846](http://oeis.org/A300846) ([L05 program](300/A300846.asm)): a(n) = 3*(n - 1)^2*n^3.
 * [A300847](http://oeis.org/A300847) ([L03 program](300/A300847.asm)): a(n) = 12*binomial(n, 5).
 * [A300950](http://oeis.org/A300950) ([L36 program](300/A300950.asm)): Fixed points of A300948.
 * [A301291](http://oeis.org/A301291) ([L14 program](301/A301291.asm)): Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).

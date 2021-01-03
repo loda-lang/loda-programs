@@ -1546,7 +1546,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014021](http://oeis.org/A014021) ([L12 program](014/A014021.asm)): Inverse of 12th cyclotomic polynomial.
 * [A014022](http://oeis.org/A014022) ([L07 program](014/A014022.asm)): Inverse of 13th cyclotomic polynomial.
 * [A014024](http://oeis.org/A014024) ([L15 program](014/A014024.asm)): Inverse of 15th cyclotomic polynomial.
-* [A014025](http://oeis.org/A014025) ([L13 program](014/A014025.asm)): Expansion of the inverse of the 16th cyclotomic polynomial.
+* [A014025](http://oeis.org/A014025) ([L08 program](014/A014025.asm)): Expansion of the inverse of the 16th cyclotomic polynomial.
 * [A014026](http://oeis.org/A014026) ([L14 program](014/A014026.asm)): Inverse of 17th cyclotomic polynomial.
 * [A014027](http://oeis.org/A014027) ([L12 program](014/A014027.asm)): Inverse of 18th cyclotomic polynomial.
 * [A014028](http://oeis.org/A014028) ([L07 program](014/A014028.asm)): Inverse of 19th cyclotomic polynomial.
@@ -5583,7 +5583,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A058187](http://oeis.org/A058187) ([L04 program](058/A058187.asm)): Expansion of (1+x)/(1-x^2)^4: duplicated tetrahedral numbers.
 * [A058195](http://oeis.org/A058195) ([L31 program](058/A058195.asm)): Areas of a sequence of right-angled figures described below.
 * [A058207](http://oeis.org/A058207) ([L19 program](058/A058207.asm)): Three steps forward, two steps back.
-* [A058212](http://oeis.org/A058212) ([L08 program](058/A058212.asm)): a(n) = 1 + floor(n*(n-3)/6).
+* [A058212](http://oeis.org/A058212) ([L05 program](058/A058212.asm)): a(n) = 1 + floor(n*(n-3)/6).
 * [A058224](http://oeis.org/A058224) ([L08 program](058/A058224.asm)): Largest d such that the linear programming bound for quantum codes of length n is feasible for some real K>1.
 * [A058281](http://oeis.org/A058281) ([L07 program](058/A058281.asm)): Continued fraction for square root of e.
 * [A058310](http://oeis.org/A058310) ([L08 program](058/A058310.asm)): (1/2)*(n^2+n+2)*(n^2+3*n+1).
@@ -7017,7 +7017,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A076844](http://oeis.org/A076844) ([L12 program](076/A076844.asm)): a(1) = a(2) = a(3) = 1; a(n) = (a(n-1) + a(n-2) + 1)/a(n-3) (for n>3).
 * [A076874](http://oeis.org/A076874) ([L19 program](076/A076874.asm)): n - floor ( ( 4*n + 1 )^(1/2) ).
 * [A076877](http://oeis.org/A076877) ([L07 program](076/A076877.asm)): a(n) = A020330(n) / n.
-* [A076878](http://oeis.org/A076878) ([L07 program](076/A076878.asm)): a(n) = ceiling(n^(1/n))^n - n.
+* [A076878](http://oeis.org/A076878) ([L13 program](076/A076878.asm)): a(n) = ceiling(n^(1/n))^n - n.
 * [A076883](http://oeis.org/A076883) ([L07 program](076/A076883.asm)): Let u(0)=1, u(n) = 5/2 * floor(u(n-1)); then a(n) = (2/5)*u(n).
 * [A076885](http://oeis.org/A076885) ([L14 program](076/A076885.asm)): Let u(0)=1, u(1)=1 u(n) = u(n-1) + u(n-2) - n*z where z = (5-sqrt(5))/10 =0.27..., then a(n)=floor(u(n)).
 * [A076895](http://oeis.org/A076895) ([L18 program](076/A076895.asm)): a(1) = 1, a(n) = n - a(ceiling(n/2)).
@@ -7915,7 +7915,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086445](http://oeis.org/A086445) ([L16 program](086/A086445.asm)): Partial sums of A005578.
 * [A086462](http://oeis.org/A086462) ([L06 program](086/A086462.asm)): Expansion of (1+x)(1+4x)/((1-x)(1-4x)).
 * [A086500](http://oeis.org/A086500) ([L21 program](086/A086500.asm)): Group the natural numbers such that the n-th group sum is divisible by the n-th triangular number: (1), (2, 3, 4), (5, 6, 7), (8, 9, 10, 11, 12), (13, 14, 15, 16, 17), (18, 19, 20, 21, 22, 23, 24), ... Sequence contains the group sum.
-* [A086514](http://oeis.org/A086514) ([L06 program](086/A086514.asm)): Difference between the arithmetic mean of the neighbors of the terms and the term itself follows the pattern 0,1,2,3,4,5,...
+* [A086514](http://oeis.org/A086514) ([L05 program](086/A086514.asm)): Difference between the arithmetic mean of the neighbors of the terms and the term itself follows the pattern 0,1,2,3,4,5,...
 * [A086515](http://oeis.org/A086515) ([L05 program](086/A086515.asm)): Duplicate of A047241.
 * [A086520](http://oeis.org/A086520) ([L14 program](086/A086520.asm)): Number of integers strictly greater than (n-sqrt(n))/2 and strictly less than (n+sqrt(n))/2.
 * [A086570](http://oeis.org/A086570) ([L05 program](086/A086570.asm)): Expansion of (1 + 3x + 5x^2 + 7x^3...) / (1 - 2x + 3x^2 - 4x^3...).

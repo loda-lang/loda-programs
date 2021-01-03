@@ -2102,7 +2102,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131531](http://oeis.org/A131531) ([L14 program](131/A131531.asm)): Period 6: repeat [0, 0, 1, 0, 0, -1].
 * [A131532](http://oeis.org/A131532) ([L03 program](131/A131532.asm)): Period 6: repeat [0, 0, 0, 0, 1, 1].
 * [A131533](http://oeis.org/A131533) ([L07 program](131/A131533.asm)): Period 6: repeat [0, 0, 0, 0, 1, -1].
-* [A131534](http://oeis.org/A131534) ([L04 program](131/A131534.asm)): Period 3: repeat [1, 2, 1].
+* [A131534](http://oeis.org/A131534) ([L03 program](131/A131534.asm)): Period 3: repeat [1, 2, 1].
 * [A131554](http://oeis.org/A131554) ([L04 program](131/A131554.asm)): Period 5: repeat [1, 1, -1, 1, -1].
 * [A131555](http://oeis.org/A131555) ([L03 program](131/A131555.asm)): Period 6: repeat [0, 0, 1, 1, 2, 2].
 * [A131556](http://oeis.org/A131556) ([L12 program](131/A131556.asm)): Period 6: repeat [1, -2, 1, -1, 2, -1].
@@ -5632,7 +5632,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175395](http://oeis.org/A175395) ([L14 program](175/A175395.asm)): a(n) = 2*Fibonacci(n)^2.
 * [A175406](http://oeis.org/A175406) ([L04 program](175/A175406.asm)): The greatest integer k such that (1+1/n)^k <= 2.
 * [A175409](http://oeis.org/A175409) ([L34 program](175/A175409.asm)): Successive numbers of consecutive positive terms to add when rearranging the alternating harmonic series to sum to log[7/3].
-* [A175629](http://oeis.org/A175629) ([L05 program](175/A175629.asm)): Legendre symbol (n,7).
+* [A175629](http://oeis.org/A175629) ([L09 program](175/A175629.asm)): Legendre symbol (n,7).
 * [A175630](http://oeis.org/A175630) ([L18 program](175/A175630.asm)): a(n) = n-th pentagonal number mod (n+2).
 * [A175631](http://oeis.org/A175631) ([L11 program](175/A175631.asm)): a(n) = (n-th pentagonal number) modulo (n-th triangular number).
 * [A175658](http://oeis.org/A175658) ([L25 program](175/A175658.asm)): Eight bishops and one elephant on a 3 X 3 chessboard: a(n) = 2*Pell(n+1)+2*Pell(n)-2^n, with Pell = A000129.
