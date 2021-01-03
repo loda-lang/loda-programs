@@ -17,7 +17,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300451](http://oeis.org/A300451) ([L17 program](300/A300451.asm)): a(n) = (3*n^2 - 3*n + 8)*2^(n - 3).
 * [A300522](http://oeis.org/A300522) ([L04 program](300/A300522.asm)): a(n) = (5*n + 3)*(5*n + 4)*(5*n + 5)/6.
 * [A300523](http://oeis.org/A300523) ([L04 program](300/A300523.asm)): a(n) = (5*n + 5)*(5*n + 6)*(5*n + 7)/6.
-* [A300576](http://oeis.org/A300576) ([L10 program](300/A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
+* [A300576](http://oeis.org/A300576) ([L09 program](300/A300576.asm)): Number of nights required in the worst case to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 * [A300622](http://oeis.org/A300622) ([L12 program](300/A300622.asm)): Denominators of sequence whose exponential self-convolution yields sequence 1, 2, 3, 5, 7, 11, 13, ... (1 with primes).
 * [A300659](http://oeis.org/A300659) ([L46 program](300/A300659.asm)): Product of digits of n!.
 * [A300758](http://oeis.org/A300758) ([L05 program](300/A300758.asm)): a(n) = 2n*(n+1)*(2n+1).
@@ -366,7 +366,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309336](http://oeis.org/A309336) ([L14 program](309/A309336.asm)): a(n) = n^4 if n odd, 15*n^4/16 if n even.
 * [A309337](http://oeis.org/A309337) ([L08 program](309/A309337.asm)): a(n) = n^3 if n odd, 3*n^3/4 if n even.
 * [A309338](http://oeis.org/A309338) ([L14 program](309/A309338.asm)): a(n) = n^4 if n odd, 7*n^4/8 if n even.
-* [A309372](http://oeis.org/A309372) ([L09 program](309/A309372.asm)): a(n) = n^2 - n^3 + n^4.
+* [A309372](http://oeis.org/A309372) ([L06 program](309/A309372.asm)): a(n) = n^2 - n^3 + n^4.
 * [A309398](http://oeis.org/A309398) ([L15 program](309/A309398.asm)): a(n) is the nearest integer to log(log(10^n)).
 * [A309434](http://oeis.org/A309434) ([L44 program](309/A309434.asm)): a(n) = floor(n*Im(2*e^(i*Pi/5))/(Im(2*e^(i*Pi/5)) - 1)).
 * [A309674](http://oeis.org/A309674) ([L31 program](309/A309674.asm)): a(1) = 1, a(n) = hamming_weight(Sum_{k=1..n-1} a(k) ) for n>=2.
@@ -381,7 +381,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309805](http://oeis.org/A309805) ([L18 program](309/A309805.asm)): Maximum number of nonattacking kings placeable on a hexagonal board with edge-length n in Glinski's hexagonal chess.
 * [A309809](http://oeis.org/A309809) ([L19 program](309/A309809.asm)): a(n) is the concatenation of n and 2n+1.
 * [A309842](http://oeis.org/A309842) ([L05 program](309/A309842.asm)): a(n) is the total surface area of a hollow cubic block (defined as a block with a shell thickness of 1 cube) where n is the edge length of the removed volume.
-* [A309873](http://oeis.org/A309873) ([L08 program](309/A309873.asm)): Period-doubling turn sequence, +1 when the 2-adic valuation of n is even or -1 when odd.
+* [A309873](http://oeis.org/A309873) ([L07 program](309/A309873.asm)): Period-doubling turn sequence, +1 when the 2-adic valuation of n is even or -1 when odd.
 * [A309878](http://oeis.org/A309878) ([L13 program](309/A309878.asm)): The real part of b(n) where b(n) = (n + b(n-1)) * (1 + i) with b(-1)=0; i = sqrt(-1).
 * [A309945](http://oeis.org/A309945) ([L13 program](309/A309945.asm)): a(n) = floor(n - sqrt(2*n-1)).
 * [A309954](http://oeis.org/A309954) ([L12 program](309/A309954.asm)): Product of digits of (n written in base 4).
@@ -952,7 +952,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323210](http://oeis.org/A323210) ([L08 program](323/A323210.asm)): a(n) = 9*J(n)^2 where J(n) are the Jacobsthal numbers A001045 with J(0) = 1.
 * [A323218](http://oeis.org/A323218) ([L09 program](323/A323218.asm)): a(n) = (4*n^3 + 30*n^2 + 50*n)/3 + 1.
 * [A323220](http://oeis.org/A323220) ([L48 program](323/A323220.asm)): a(n) = n*(n + 5)*(n + 7)*(n + 10)/24 + 1.
-* [A323221](http://oeis.org/A323221) ([L10 program](323/A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
+* [A323221](http://oeis.org/A323221) ([L07 program](323/A323221.asm)): a(n) = n*(n + 5)*(n + 7)/6 + 1.
 * [A323227](http://oeis.org/A323227) ([L06 program](323/A323227.asm)): a(n) = [x^n] (-x^4 + 2*x^3 - x^2 + 2*x - 1)/((x - 1)^2*(2*x - 1)).
 * [A323228](http://oeis.org/A323228) ([L04 program](323/A323228.asm)): a(n) = binomial(n + 4, n - 1) + 1.
 * [A323229](http://oeis.org/A323229) ([L05 program](323/A323229.asm)): a(n) = binomial(2*n, n+1) + 1.
@@ -1351,7 +1351,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339276](http://oeis.org/A339276) ([L09 program](339/A339276.asm)): Nearest integer to the fourth root of n.
 * [A339355](http://oeis.org/A339355) ([L52 program](339/A339355.asm)): Maximum number of copies of a 12345 permutation pattern in an alternating (or zig-zag) permutation of length n + 7.
 * [A339356](http://oeis.org/A339356) ([L36 program](339/A339356.asm)): Maximum number of copies of a 123456 permutation pattern in an alternating (or zig-zag) permutation of length n + 9.
-* [A339483](http://oeis.org/A339483) ([L08 program](339/A339483.asm)): Number of regular polygons that can be drawn with vertices on a centered hexagonal grid with side length n.
+* [A339483](http://oeis.org/A339483) ([L07 program](339/A339483.asm)): Number of regular polygons that can be drawn with vertices on a centered hexagonal grid with side length n.
 * [A339488](http://oeis.org/A339488) ([L06 program](339/A339488.asm)): a(n) = H(n-1, n, n+1) where H(a, b, c) = (a + b + c)*(a + b - c)*(b + c - a)*(c + a - b) is Heron's polynomial.
 * [A339531](http://oeis.org/A339531) ([L06 program](339/A339531.asm)): Numbers b > 1 such that the smallest two primes, i.e., 2 and 3 are base-b Wieferich primes.
 * [A339570](http://oeis.org/A339570) ([L09 program](339/A339570.asm)): Denote the van der Corput sequence of fractions 1/2, 1/4, 3/4, 1/8, 5/8, 3/8, 7/8, 1/16, ... (A030101/A062383) by v(n), n >= 1. Then a(n) = denominator of v(A014486(n)).
