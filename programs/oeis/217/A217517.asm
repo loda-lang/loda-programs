@@ -6,6 +6,4 @@ trn $0,1
 mov $1,-3
 add $1,$0
 bin $1,4
-mul $1,4
-div $1,4
 add $1,5

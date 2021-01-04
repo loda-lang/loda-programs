@@ -20,8 +20,6 @@ lpb $14,1
     gcd $1,$2
     mul $1,2
     mod $1,$0
-    mul $1,7
-    div $1,7
     mul $1,6
     add $10,$1
   lpe

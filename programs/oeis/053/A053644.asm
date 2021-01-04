@@ -8,5 +8,3 @@ mov $2,2
 pow $2,$0
 mov $1,$2
 div $1,2
-mul $1,3
-div $1,3

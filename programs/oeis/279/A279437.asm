@@ -4,8 +4,7 @@
 mov $3,$0
 pow $0,2
 mov $1,$3
-mul $1,6
-div $1,2
+mul $1,3
 mov $4,$3
 add $4,$0
 mov $2,$4

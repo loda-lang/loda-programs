@@ -9,6 +9,4 @@ sub $1,2
 div $1,6
 mul $1,7
 div $1,4
-mul $1,6
-div $1,6
 add $1,1

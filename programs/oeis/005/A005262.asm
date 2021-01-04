@@ -14,8 +14,6 @@ lpb $0,1
   bin $5,4
 lpe
 mul $2,2
-div $2,2
-mul $2,2
 add $2,16
 mov $4,$2
 mov $3,$4

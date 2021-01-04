@@ -13,6 +13,4 @@ mul $5,$2
 add $4,$5
 mov $1,$4
 mul $1,2
-div $1,2
-mul $1,2
 add $1,2

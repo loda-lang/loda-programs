@@ -4,8 +4,6 @@
 add $0,1
 mov $5,2
 gcd $5,$0
-mul $5,2
-div $5,2
 lpb $0,1
   sub $0,1
   mov $2,3

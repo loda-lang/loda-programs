@@ -31,8 +31,6 @@ lpb $16,1
       gcd $0,2
       add $9,$7
       mul $0,$9
-      mul $10,2
-      div $10,2
       mov $1,$10
       mov $5,$1
       add $5,2

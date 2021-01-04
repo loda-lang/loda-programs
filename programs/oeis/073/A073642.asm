@@ -14,5 +14,3 @@ lpb $0,1
     lpe
   lpe
 lpe
-mul $1,9
-div $1,9

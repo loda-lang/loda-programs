@@ -11,8 +11,6 @@ add $3,1
 mul $3,4
 mul $3,$0
 mul $2,$3
-mul $2,4
-div $2,4
 mov $1,$2
 div $1,240
 mul $1,12

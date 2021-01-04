@@ -13,6 +13,4 @@ lpe
 add $2,$3
 mod $2,2
 mov $1,$2
-mul $1,2
-div $1,2
 add $1,1

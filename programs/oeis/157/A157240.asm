@@ -15,6 +15,4 @@ mov $1,$3
 sub $1,2
 div $1,6
 mul $1,3
-div $1,3
-mul $1,3
 add $1,2
