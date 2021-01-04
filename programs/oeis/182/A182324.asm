@@ -6,5 +6,4 @@ lpb $0,1
   mov $1,$0
   div $0,10
 lpe
-add $2,$1
-mov $1,$2
+add $1,$2
