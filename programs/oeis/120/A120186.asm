@@ -62,10 +62,4 @@ lpe
 mov $1,$16
 trn $1,4
 div $1,4
-mul $1,5
-div $1,5
-mul $1,6
-div $1,6
-mul $1,7
-div $1,7
 add $1,1

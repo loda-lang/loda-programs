@@ -19,8 +19,6 @@ lpb $2,1
   add $1,$4
   add $1,1
   div $1,3
-  mul $1,2
-  div $1,2
   add $5,$1
 lpe
 mov $1,$5

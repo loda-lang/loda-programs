@@ -8,5 +8,3 @@ mul $0,$1
 pow $1,3
 add $1,$0
 div $1,8
-mul $1,9
-div $1,9

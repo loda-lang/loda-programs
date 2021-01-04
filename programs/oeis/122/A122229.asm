@@ -8,5 +8,3 @@ div $1,20
 mul $1,6
 div $1,4
 mul $1,2
-div $1,2
-mul $1,2

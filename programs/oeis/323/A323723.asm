@@ -10,6 +10,4 @@ div $1,2
 div $2,4
 mul $2,$0
 sub $1,$2
-mul $1,3
-div $1,3
 mul $1,2

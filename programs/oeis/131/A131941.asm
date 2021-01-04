@@ -7,5 +7,3 @@ mov $1,$0
 bin $1,3
 add $1,$0
 div $1,8
-mul $1,6
-div $1,6

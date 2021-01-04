@@ -14,5 +14,3 @@ lpb $0,1
   pow $2,4
   mov $0,$2
 lpe
-mul $1,5
-div $1,5

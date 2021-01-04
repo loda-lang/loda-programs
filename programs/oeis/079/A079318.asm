@@ -52,6 +52,4 @@ lpb $16,1
 lpe
 mov $1,$17
 div $1,6
-mul $1,2
-div $1,2
 add $1,1

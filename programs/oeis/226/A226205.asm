@@ -33,10 +33,6 @@ lpb $4,1
       lpe
       div $1,15
       add $1,1
-      mul $1,2
-      div $1,2
-      mul $1,10
-      div $1,10
       mul $1,4
       sub $1,4
       div $1,4

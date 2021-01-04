@@ -12,6 +12,4 @@ mul $1,$2
 div $1,16
 sub $1,1
 div $1,2
-mul $1,4
-div $1,4
 add $1,1

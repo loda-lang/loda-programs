@@ -8,6 +8,4 @@ sub $2,1
 div $2,2
 mul $1,$2
 div $1,7
-mul $1,2
-div $1,2
 add $1,1

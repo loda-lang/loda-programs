@@ -17,7 +17,5 @@ lpb $0,1
   mul $4,2
 lpe
 sub $1,1
-mul $1,2
-div $1,2
 mul $1,10
 add $1,11

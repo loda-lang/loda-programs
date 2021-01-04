@@ -8,6 +8,4 @@ sub $1,4
 div $1,8
 mul $1,5
 div $1,3
-mul $1,60
-div $1,60
 add $1,2

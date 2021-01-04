@@ -19,6 +19,4 @@ lpb $0,1
   mov $1,$3
   add $2,1
 lpe
-mul $1,3
-div $1,3
 trn $1,22

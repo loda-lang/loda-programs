@@ -57,7 +57,5 @@ lpe
 mov $1,$36
 sub $1,2
 div $1,6
-mul $1,4
-div $1,4
 mul $1,9
 add $1,8
