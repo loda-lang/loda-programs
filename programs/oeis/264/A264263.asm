@@ -1,0 +1,33 @@
+; A264263: The number of distinct nontrivial integral cevians of an isosceles triangle, with base of length 1 and legs of length n, that divide the base into two integral parts.
+; 0,1,1,2,2,1,3,3,1,3,3,2,5,3,1,3,7,3,3,3,1,5,5,2,5,3,3,7,3,1,5,11,3,3,3,1,5,11,3,4,4,3,7,3,3,7,7,3,5,5,1,7,7,1,3,3,3,11,11,5,5,7,3,3,3,3,15,7,1,3,7,7,11,5,1,5,11,3,3,7,3,7,7,2
+
+add $0,1
+add $0,$0
+mov $3,$0
+mul $0,$3
+mul $3,$0
+sub $0,2
+add $3,2
+div $3,21
+mov $2,$3
+add $3,1
+mul $2,2
+cal $0,5
+add $1,1
+mov $1,$0
+trn $3,$3
+sub $3,$1
+add $4,1
+mov $26,$3
+cmp $26,0
+add $3,$26
+div $4,$3
+sub $4,$2
+add $1,$0
+mov $1,$0
+sub $1,3
+div $1,2
+add $1,2
+mov $1,$0
+sub $1,2
+div $1,2

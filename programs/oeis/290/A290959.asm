@@ -1,0 +1,44 @@
+; A290959: Matrix rank of the number of dots in the pairwise intersections of Ferrers diagrams.
+; 1,2,3,5,7,11,13,17,20,24,26,32,34,38,42,47,49,55,57,63,67,71,73,81,84,88
+
+mov $27,$0
+mov $29,$0
+add $29,1
+lpb $29,1
+  clr $0,27
+  sub $29,1
+  mov $0,$27
+  sub $0,$29
+  mov $4,4
+  add $4,1
+  trn $4,$0
+  add $2,$0
+  mov $26,$4
+  cmp $26,0
+  add $4,$26
+  div $0,$4
+  mov $3,1
+  trn $4,3
+  mov $1,$3
+  cal $0,5
+  add $4,$1
+  sub $4,$2
+  add $0,6
+  mov $4,5
+  sub $1,$0
+  sub $0,$1
+  mov $1,$0
+  add $0,$4
+  gcd $4,2
+  add $4,$4
+  mov $26,$3
+  cmp $26,0
+  add $3,$26
+  log $3,3
+  mov $1,$0
+  sub $1,18
+  div $1,2
+  add $1,1
+  add $28,$1
+lpe
+mov $1,$28
