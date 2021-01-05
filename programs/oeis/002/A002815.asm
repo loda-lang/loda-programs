@@ -3,43 +3,24 @@
 
 mov $30,$0
 mov $32,$0
-add $32,1
 lpb $32,1
   clr $0,30
-  sub $32,1
   mov $0,$30
+  sub $32,1
   sub $0,$32
   mov $27,$0
   mov $29,$0
-  add $29,1
   lpb $29,1
-    clr $0,27
-    sub $29,1
     mov $0,$27
+    sub $29,1
     sub $0,$29
-    mov $3,6
-    mul $3,2
     sub $0,1
-    mov $4,1
     mov $26,$0
     cmp $26,0
     add $0,$26
-    div $3,$0
-    add $0,$3
-    mov $1,$0
-    add $1,1
-    add $2,$1
-    add $4,2040
-    mov $1,2
-    mov $4,1
-    add $1,$4
-    trn $0,$3
-    add $4,$2
+    mov $1,3
     cal $0,10051
-    pow $1,1
-    mov $4,$2
     mul $1,$0
-    mov $0,$2
     div $1,3
     add $28,$1
   lpe
