@@ -4,7 +4,8 @@
 mov $2,1
 lpb $0,1
   sub $0,1
-  mul $2,$0
-  bin $0,2
+  pow $0,2
+  mov $1,$0
+  div $0,3
 lpe
 mov $1,$2

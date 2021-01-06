@@ -6,5 +6,3 @@ pow $1,$0
 mul $1,4
 add $1,3
 div $1,7
-mul $1,2
-div $1,2

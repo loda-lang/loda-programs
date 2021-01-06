@@ -13,7 +13,5 @@ mul $3,4
 pow $3,2
 mov $1,$3
 div $1,128
-mul $1,32
-div $1,32
 mul $1,8
 add $1,1

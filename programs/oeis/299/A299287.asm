@@ -13,8 +13,6 @@ lpb $0,1
   trn $0,$5
   mov $6,6
 lpe
-mul $1,3
-div $1,3
 add $6,2
 div $1,$6
 add $1,1

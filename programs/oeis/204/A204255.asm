@@ -9,6 +9,4 @@ lpb $0,1
 lpe
 add $1,1
 mod $1,4
-mul $1,2
-div $1,2
 add $1,1

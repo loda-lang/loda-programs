@@ -4,8 +4,7 @@
 add $0,1
 mov $1,44
 mul $1,$0
-mul $1,44
-div $1,2
+mul $1,22
 add $1,4
 mul $1,$0
 sub $1,972

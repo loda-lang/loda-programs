@@ -6,6 +6,4 @@ pow $1,$0
 mov $2,2
 div $2,$1
 trn $1,$2
-mul $1,2
-div $1,2
 add $1,2
