@@ -3,14 +3,10 @@
 
 add $0,1
 pow $0,2
-mov $2,10
-mul $2,$0
-mov $3,2
-sub $3,$2
-add $3,1
-mov $4,$3
-pow $4,2
-mov $1,$4
-sub $1,49
-div $1,40
+mul $0,5
+sub $0,1
+bin $0,2
+mov $1,$0
+sub $1,6
+div $1,5
 add $1,1
