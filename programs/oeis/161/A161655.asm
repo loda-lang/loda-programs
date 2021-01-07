@@ -6,7 +6,7 @@ mov $7,$0
 cal $0,5
 mod $1,$0
 mov $2,$1
-add $3,4
+mov $3,4
 mov $4,18
 add $4,$0
 sub $4,2

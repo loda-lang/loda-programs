@@ -7,6 +7,4 @@ pow $1,$0
 mul $1,$0
 div $1,2048
 mul $1,2
-div $1,2
-mul $1,2
 sub $1,1

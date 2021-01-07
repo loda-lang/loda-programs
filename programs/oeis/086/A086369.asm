@@ -7,7 +7,7 @@ cal $0,5
 mov $1,$0
 sub $2,181
 sub $2,$0
-add $3,1
+mov $3,1
 mul $3,$2
 sub $1,$3
 sub $1,182

@@ -1,74 +1,32 @@
 ; A043369: Numbers n such that number of 0's in base 6 is 1.
 ; 6,12,18,24,30,37,38,39,40,41,42,48,54,60,66,73,74,75,76,77,78,84,90,96,102,109,110,111,112,113,114,120,126,132,138,145,146,147,148,149,150,156,162,168,174,181,182,183,184,185,186,192
 
+mov $3,$0
+add $3,1
 mov $5,$0
-mov $7,$0
-add $7,1
-lpb $7,1
-  clr $0,5
-  sub $7,1
+lpb $3,1
   mov $0,$5
-  sub $0,$7
-  mov $4,1
+  sub $3,1
+  sub $0,$3
   sub $0,1
-  mov $1,$0
-  mov $0,$1
-  add $4,$1
   mod $0,10
-  mul $1,2
-  mov $3,$0
-  mov $4,1
-  sub $1,$4
-  mov $1,2
   trn $0,3
-  sub $1,1
-  mov $2,1
-  add $0,$1
-  add $0,$2
-  add $1,2
+  add $0,2
+  mov $1,3
+  mov $4,1
   lpb $0,1
-    mov $0,$3
-    fac $2
+    mov $0,-5
+    mov $1,2
     sub $4,2
-    sub $2,1
-    mov $1,5
-    pow $4,$4
-    mov $3,$2
-    sub $3,$3
-    add $3,$3
-    add $1,1
-    sub $1,4
     mov $2,$4
-    trn $3,$3
-    mov $0,4
     sub $1,$2
-    mov $4,6
-    sub $0,9
     div $0,$1
-    mul $2,10
-    sub $4,1
-    mov $2,2
-    mul $3,$2
     sub $0,2
-    sub $4,$1
   lpe
-  sub $2,$4
-  trn $1,1
-  mul $4,$4
+  sub $1,1
   add $0,$1
-  trn $2,9
-  add $0,10
-  add $4,$1
-  sub $0,2
-  mov $3,1
-  add $4,$3
-  mul $1,3
+  add $0,8
   mul $0,3
-  mov $1,2
-  add $1,2
-  add $1,1
-  add $4,$1
-  mov $4,3
   mov $1,$0
   sub $1,21
   div $1,3
