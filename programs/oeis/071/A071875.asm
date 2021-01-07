@@ -1,0 +1,72 @@
+; A071875: Decimal expansion of the eighth (of 10) decimal selvage number; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
+; 7,4,2,9,7,4,2,9,6,4,1,9,6,4,1,8,6,3,1,8,6,3,0,8,5,3,0,8,5,2,0,7,5,2,0,7,4,2,9,7,4,2,9,6,4,1,9,6,4,1,8,6,3,1,8,6,3,0,8,5,3,0,8,5,2,0,7,5,2,0,7,4,2,9,7,4,2,9,6,4,1,9,6,4,1,8,6,3,1,8,6,3,0,8,5,3,0,8,5,2
+
+cal $0,71791
+mov $4,3
+add $2,16
+sub $0,1
+cmp $4,$4
+sub $2,$0
+lpb $4,16
+  lpb $0,1
+    sub $2,3
+    bin $0,$4
+    lpb $0,1
+      mov $0,21
+      mov $3,$2
+      sub $3,$3
+      mov $6,$4
+      mov $2,3
+      sub $4,5
+      sub $6,$4
+      add $3,120
+      mov $1,4
+      sub $6,2
+      mov $3,3
+      trn $2,$2
+      sub $4,1
+      mov $5,$0
+      mov $6,$4
+      mov $26,$0
+      cmp $26,0
+      add $0,$26
+      mod $5,$0
+      sub $0,1
+      mov $6,10
+      add $4,2
+    lpe
+    mov $2,1
+    mov $3,1
+  lpe
+  trn $3,2
+  mov $1,6
+  mul $1,2
+  mov $5,1
+  mov $1,$0
+  mov $6,1
+  mov $2,2
+  mov $0,1
+  mul $2,3
+  div $6,3
+  sub $0,1
+  pow $6,2
+  add $6,$0
+lpe
+lpb $5,8
+  mov $2,4
+  sub $6,3
+  mov $26,$4
+  cmp $26,0
+  add $4,$26
+  div $1,$4
+  mov $0,$4
+  div $5,7
+lpe
+sub $5,$0
+div $5,2
+add $1,$6
+mov $6,6
+add $2,1
+pow $1,4
+mov $1,$2
+sub $1,9
