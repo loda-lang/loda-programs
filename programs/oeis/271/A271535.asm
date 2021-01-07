@@ -4,7 +4,6 @@
 add $0,1
 mul $0,2
 bin $0,3
-mov $2,$0
-mul $2,$0
-mov $1,$2
+pow $0,2
+mov $1,$0
 div $1,16
