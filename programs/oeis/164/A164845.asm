@@ -4,6 +4,6 @@
 add $0,2
 mov $1,$0
 bin $0,2
-mul $0,$1
-add $1,$0
+add $0,1
+mul $1,$0
 sub $1,1

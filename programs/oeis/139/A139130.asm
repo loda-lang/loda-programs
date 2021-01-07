@@ -8,10 +8,9 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  mov $1,5
   cal $0,5
   sub $0,1
-  cal $0,$1
+  cal $0,5
   mov $1,$0
   add $3,$1
 lpe

@@ -5,8 +5,6 @@ add $0,1
 mov $2,$0
 div $0,2
 bin $0,2
-add $2,40
 mov $3,$0
-add $2,$3
-mov $1,$2
-sub $1,40
+add $3,$2
+mov $1,$3

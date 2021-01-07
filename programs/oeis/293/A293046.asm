@@ -3,27 +3,21 @@
 
 mov $7,$0
 mov $9,$0
-add $9,1
 lpb $9,1
-  clr $0,7
-  sub $9,1
   mov $0,$7
+  sub $9,1
   sub $0,$9
   mov $3,$0
   mov $5,2
   lpb $5,1
-    clr $0,3
     sub $5,1
-    mov $0,$3
     add $0,$5
     sub $0,1
     mov $1,-2
-    add $2,$0
     pow $1,$0
+    add $2,$0
     add $1,$2
-    div $2,3
     sub $1,1
-    mov $2,$0
     bin $2,$1
     gcd $1,$2
     mov $6,$5
@@ -33,8 +27,8 @@ lpb $9,1
     lpe
   lpe
   lpb $3,1
-    sub $4,$1
     mov $3,0
+    sub $4,$1
   lpe
   mov $1,$4
   sub $1,1
