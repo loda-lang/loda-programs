@@ -3,23 +3,4 @@
 
 cal $0,99926
 mov $1,$0
-add $3,$1
-add $1,1
-mov $1,4
-mov $2,1
-mov $5,$0
-sub $2,$5
-mov $1,$0
-add $2,$3
-add $1,$2
-add $4,$3
-mov $2,1
-add $3,$4
-mov $0,2
-div $1,2
-cal $0,10051
-mov $3,$4
-mov $3,$2
-mul $1,$0
-mov $1,$4
 sub $1,1

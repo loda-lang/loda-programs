@@ -3,11 +3,9 @@
 
 add $0,1
 pow $0,2
-mov $1,$0
-mod $0,4
-sub $1,1
-lpb $0,1
-  div $1,4
-  add $2,4
-  div $0,$2
-lpe
+mov $2,$0
+gcd $0,4
+mul $2,$0
+sub $2,$0
+mov $1,$2
+div $1,4
