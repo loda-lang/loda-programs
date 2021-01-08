@@ -1,31 +1,12 @@
 ; A220494: Number of toothpicks and D-toothpicks after n-th stage in the structure of the D-toothpick "wide" triangle of the first kind.
 ; 0,1,3,7,11,15,19,27,35,39,43,51,59,67,75,91,107,111,115,123,131,139,147,163,179,187,195,211,227,243,259,291,323,327,331,339,347,355,363,379,395,403,411,427,443,459,475,507,539,547,555,571,587,603
 
-mov $27,$0
 cal $0,160742
-mov $1,$0
-mov $26,$0
-cmp $26,0
-add $0,$26
-div $1,$0
+mov $2,$0
+cmp $2,0
+add $0,$2
 add $0,1
 add $4,$0
-add $1,1
-trn $0,$4
-cal $0,10051
 mov $3,$4
-mul $1,$0
-add $1,$0
-add $1,1
-mov $4,3
-mov $0,$4
-mul $0,$1
-mul $1,$3
-add $3,1
-mov $1,1
-sub $3,3
-add $4,$3
+sub $3,2
 mov $1,$3
-mov $28,$27
-mul $28,$27
-mul $28,$27

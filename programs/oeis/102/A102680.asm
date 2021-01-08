@@ -1,82 +1,36 @@
 ; A102680: Number of digits >= 7 in the decimal representations of all integers from 0 to n.
 ; 0,0,0,0,0,0,0,1,2,3,3,3,3,3,3,3,3,4,5,6,6,6,6,6,6,6,6,7,8,9,9,9,9,9,9,9,9,10,11,12,12,12,12,12,12,12,12,13,14,15,15,15,15,15,15,15,15,16,17,18,18,18,18,18,18,18,18,19,20,21,22,23,24,25,26,27,28,30,32,34,35,36
 
-mov $27,$0
-mov $29,$0
-add $29,1
-lpb $29,1
-  clr $0,27
-  sub $29,1
-  mov $0,$27
-  sub $0,$29
-  sub $0,3
-  mov $1,32
-  add $6,2
-  mov $1,$6
+mov $5,$0
+mov $7,$0
+add $7,1
+lpb $7,1
+  clr $0,5
+  sub $7,1
+  mov $0,$5
+  sub $0,$7
+  cal $0,102679
   mov $1,$0
-  mov $3,$0
-  mul $0,$6
-  mov $0,2
-  add $2,1
-  add $2,1
+  add $1,2
+  mov $0,$1
+  mov $1,$0
+  mov $1,$0
   add $1,1
-  bin $2,2
-  add $4,1
-  add $2,1
-  add $5,3
-  sub $5,2
-  mul $5,$2
-  add $1,$5
-  add $6,1
-  mov $6,$0
-  lpb $6,5
-    mov $26,$2
-    cmp $26,0
-    add $2,$26
-    div $3,$2
-    sub $3,1
-    mul $3,$2
-    sub $6,8
-    mov $4,1
-    mul $0,5
-    mov $0,$3
-    add $5,56
-    add $0,$5
-    mov $0,2
-    mod $2,5
-    mov $4,4
-    add $3,$4
-    add $2,$6
-    mov $2,5
-    sub $3,1
-    gcd $6,$4
-    mov $26,$0
-    cmp $26,0
-    add $0,$26
-    div $5,$0
-    mov $6,1
-    add $5,$1
-    add $4,1
-  lpe
-  add $3,$5
-  mov $4,$5
-  div $4,4
+  cal $0,10051
+  pow $0,1
+  bin $0,2
+  add $3,$1
+  div $1,2
   mov $2,1
-  lpb $0,2
-    pow $5,0
-    sub $5,$4
-    div $0,4
-  lpe
-  cal $1,102679
-  add $3,$4
-  sub $5,3
-  mov $3,1
-  add $4,2
-  mul $1,6
-  mov $4,1
-  mov $6,34
-  mov $3,$6
-  div $1,6
-  add $28,$1
+  mul $1,$0
+  mov $4,$0
+  mul $0,2
+  mul $4,$0
+  sub $0,3
+  mov $1,4
+  add $2,2
+  mov $1,$3
+  sub $1,3
+  add $6,$1
 lpe
-mov $1,$28
+mov $1,$6

@@ -9,27 +9,28 @@ lpb $7,1
   sub $7,1
   mov $0,$5
   sub $0,$7
-  div $0,2
-  mov $4,1
-  mul $0,2
+  cal $0,102677
   mov $1,$0
-  mov $2,1
-  mov $4,$2
+  add $1,2
+  mov $0,$1
   mov $1,$0
-  mul $2,$0
-  sub $4,$0
-  sub $4,9
+  mov $1,$0
   add $1,1
-  cal $2,102677
-  add $1,$4
-  mul $4,9
   cal $0,10051
+  pow $0,1
+  bin $0,2
+  add $3,$1
+  div $1,2
+  mov $2,1
   mul $1,$0
-  mov $0,12
-  mov $4,$1
-  sub $0,$4
-  sub $4,3
-  mov $1,$2
+  mov $4,$0
+  mul $0,2
+  mul $4,$0
+  sub $0,3
+  mov $1,4
+  add $2,2
+  mov $1,$3
+  sub $1,3
   add $6,$1
 lpe
 mov $1,$6
