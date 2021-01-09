@@ -1,0 +1,33 @@
+; A308188: Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {1,2}.
+; 1,1,2,1,1,2,2,1,1,2,1,1,2,2,2,1,1,2,1,1,2,2,1,1,2,1,1,2,2,2,2,1,1,2,1,1,2,2,1,1,2,1,1,2,2,2,1,1,2,1,1,2,2,1,1,2,1,1,2,2,2,2,2
+
+cal $0,79559
+add $1,7
+div $1,2
+mov $4,$1
+add $0,2
+mov $1,$0
+add $4,$4
+mov $26,$4
+cmp $26,0
+add $4,$26
+div $0,$4
+add $1,$0
+mul $4,$4
+mov $3,1
+pow $0,2
+mov $26,$1
+cmp $26,0
+add $1,$26
+div $4,$1
+add $1,1
+clr $3,$3
+cal $0,10051
+add $4,$4
+mul $1,$0
+add $3,$0
+div $1,2
+mov $1,$4
+sub $1,24
+div $1,12
+add $1,1
