@@ -3,22 +3,5 @@
 
 pow $0,2
 cal $0,48762
-mov $4,$0
-mul $0,$0
 mov $2,$0
-sub $2,$0
-mov $1,$0
-add $1,2
-sub $2,$2
-div $2,2
-mov $1,$0
-sub $2,$0
-add $1,1
-mov $1,2
 mov $1,$2
-mul $2,2
-cal $0,10051
-mov $0,1
-mul $1,$0
-add $1,$0
-mov $1,$4
