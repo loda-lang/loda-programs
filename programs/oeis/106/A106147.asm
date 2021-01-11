@@ -3,10 +3,8 @@
 
 mul $0,2
 lpb $0,1
-  lpb $0,1
-    add $2,$0
-    div $0,2
-  lpe
+  add $2,$0
+  div $0,2
 lpe
 add $1,1
 pow $3,$0

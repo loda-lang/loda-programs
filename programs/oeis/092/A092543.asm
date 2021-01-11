@@ -1,0 +1,75 @@
+; A092543: Table below read by antidiagonals alternately upwards and downwards.
+; 1,2,1,1,2,3,4,3,2,1,1,2,3,4,5,6,5,4,3,2,1,1,2,3,4,5,6,7,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,11,12,11,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,13,12,11,10,9,8
+
+add $6,2
+sub $6,$0
+cal $0,319573
+cmp $6,$6
+mov $3,$6
+sub $6,$6
+mov $2,1
+lpb $6,3
+  sub $2,$0
+  lpb $6,27
+    sub $0,1
+    pow $6,2
+    mov $5,47
+    mul $6,12
+    add $2,6
+    trn $2,1
+    mov $1,4
+    add $1,$1
+    mov $2,$6
+    add $6,3
+    trn $6,3
+    lpb $6,2
+      mul $1,2
+      mov $1,$5
+      mov $1,2
+      bin $1,2
+      mov $5,$5
+      mov $26,$5
+      cmp $26,0
+      add $5,$26
+      div $1,$5
+      mov $4,1
+      mov $2,$6
+      trn $3,6
+      add $5,-6
+      mov $4,1
+      mod $6,10
+    lpe
+    sub $6,1
+  lpe
+  sub $1,$3
+  mov $3,3
+  mul $2,2
+  mov $2,$4
+  add $4,$0
+  mov $4,8
+  mod $6,5
+lpe
+sub $1,$6
+pow $1,6
+mov $6,$5
+mov $2,7
+lpb $5,1
+  mov $6,$3
+  sub $4,$0
+  mov $3,1
+  mov $3,$2
+  mov $26,$2
+  cmp $26,0
+  add $2,$26
+  div $3,$2
+  pow $4,3
+  pow $3,0
+  div $5,8
+lpe
+mov $2,1
+add $5,3
+mov $4,$6
+trn $4,1
+add $2,1
+mov $1,$0
+add $1,1

@@ -12,13 +12,11 @@ lpb $9,1
   sub $0,$1
   lpb $0,1
     lpb $0,1
-      lpb $0,1
-        mod $0,10
-        bin $6,$2
-      lpe
-      div $0,8
-      add $6,2
+      mod $0,10
+      bin $6,$2
     lpe
+    div $0,8
+    add $6,2
   lpe
   mov $1,$6
   add $1,1

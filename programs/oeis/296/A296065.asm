@@ -15,10 +15,8 @@ lpb $5,1
     lpb $5,1
       mov $4,2
       lpb $4,1
-        lpb $4,1
-          div $4,2
-          sub $5,1
-        lpe
+        div $4,2
+        sub $5,1
       lpe
     lpe
   lpe

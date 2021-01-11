@@ -5,12 +5,10 @@ lpb $0,1
   div $0,2
   add $3,1
   lpb $0,1
-    lpb $0,1
-      div $0,2
-      mov $4,$3
-      add $1,$4
-      mov $2,$0
-      add $0,$2
-    lpe
+    div $0,2
+    mov $4,$3
+    add $1,$4
+    mov $2,$0
+    add $0,$2
   lpe
 lpe

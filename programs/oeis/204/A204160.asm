@@ -3,17 +3,12 @@
 
 lpb $0,1
   add $1,4
-  add $4,4
-  lpb $4,1
-    add $2,1
-    mov $4,$0
-  lpe
-  sub $0,$4
-  lpb $2,1
-    mov $3,$1
-    trn $2,$3
-  lpe
-  sub $1,1
-  trn $1,$3
+  sub $0,$1
 lpe
+lpb $0,1
+  div $0,8
+  mov $1,$2
+lpe
+div $1,4
+mul $1,3
 add $1,1

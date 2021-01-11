@@ -5,11 +5,9 @@ mov $2,$0
 mov $7,$0
 mul $0,2
 lpb $0,1
-  lpb $0,1
-    add $2,$0
-    sub $0,1
-    mov $1,$2
-  lpe
+  add $2,$0
+  sub $0,1
+  mov $1,$2
 lpe
 mov $4,$7
 mov $6,$7

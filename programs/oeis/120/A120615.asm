@@ -3,32 +3,18 @@
 
 mov $5,$0
 mov $7,$0
-add $7,1
 lpb $7,1
   clr $0,5
-  sub $7,1
   mov $0,$5
+  sub $7,1
   sub $0,$7
-  add $4,$0
   mov $1,$0
   add $1,1
-  mov $3,$4
-  sub $4,1
-  cal $3,114986
-  mul $0,$4
-  mov $4,2
-  add $3,$1
-  cal $0,10051
-  mov $2,3
   add $4,$0
-  add $4,1
-  add $2,2
-  mov $1,$4
+  mov $3,$4
+  cal $3,114986
+  add $3,$1
   sub $3,2
-  mul $2,2
-  mul $1,$0
-  mul $2,36
-  mul $0,$3
   mov $1,$3
   add $6,$1
 lpe

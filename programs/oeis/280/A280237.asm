@@ -3,9 +3,7 @@
 
 gcd $0,8
 lpb $0,1
-  lpb $0,1
-    mod $0,3
-    sub $0,2
-  lpe
+  mod $0,3
+  sub $0,2
 lpe
 mov $1,$0
