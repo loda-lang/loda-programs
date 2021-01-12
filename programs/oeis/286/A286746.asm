@@ -5,33 +5,16 @@ mov $6,$0
 mov $8,2
 lpb $8,1
   clr $0,6
-  sub $8,1
   mov $0,$6
+  sub $8,1
   add $0,$8
   sub $0,1
   cal $0,190506
-  mov $3,$0
-  mov $1,$0
   add $4,$0
-  mov $5,$4
-  mul $5,2
-  add $1,1
-  add $2,4
-  add $3,$1
-  add $3,$1
-  mul $1,64
-  cal $0,10051
   add $4,3
-  add $0,$0
   div $4,2
-  sub $1,7
-  add $1,1
-  sub $3,$0
-  mul $3,7
-  mul $1,$0
   mov $1,$4
-  sub $1,2
-  add $1,1
+  sub $1,1
   mov $9,$8
   lpb $9,1
     mov $7,$1
@@ -39,8 +22,8 @@ lpb $8,1
   lpe
 lpe
 lpb $6,1
-  sub $7,$1
   mov $6,0
+  sub $7,$1
 lpe
 mov $1,$7
 sub $1,1

@@ -6,37 +6,19 @@ mov $10,$0
 add $10,1
 lpb $10,1
   clr $0,8
-  sub $10,1
   mov $0,$8
+  sub $10,1
   sub $0,$10
   mov $5,$0
   mov $7,$0
   add $7,1
   lpb $7,1
-    clr $0,5
-    sub $7,1
     mov $0,$5
+    sub $7,1
     sub $0,$7
     mov $2,$0
     cal $2,52547
-    mov $1,$0
-    add $3,$2
-    mov $0,4
-    add $2,$0
-    add $1,1
-    add $0,1
-    add $1,$1
-    mul $0,$3
-    add $1,$2
-    mul $0,$2
-    mov $0,1
-    mul $3,$0
-    sub $0,3
-    sub $1,$1
-    mov $4,$3
-    cal $0,10051
-    mov $1,1
-    mul $1,$0
+    add $2,4
     mov $1,$2
     sub $1,4
     add $6,$1
