@@ -1,0 +1,30 @@
+; A238259: Area of smallest square containing n dominoes with short side lengths 1, 2, ..., n.
+; 0,4,16,36,64,121,196,289,441,576,784,1024,1369,1681,2116,2500,3025,3600,4356,5041
+
+cal $0,237886
+mov $3,$0
+mul $3,$0
+mov $4,2
+mov $2,$3
+mov $4,$3
+mov $1,$0
+mov $2,2
+add $2,232
+mov $2,1
+sub $2,1
+add $1,1
+cal $2,157375
+mul $4,6
+div $4,6
+cal $0,10051
+mul $1,$0
+mov $2,6
+mov $26,$0
+cmp $26,0
+add $0,$26
+div $1,$0
+mov $26,$0
+cmp $26,0
+add $0,$26
+div $4,$0
+mov $1,$3

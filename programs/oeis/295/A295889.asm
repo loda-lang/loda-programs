@@ -3,14 +3,7 @@
 
 cal $0,295890
 mov $2,$0
+div $0,52
 sub $2,1
-mov $3,$2
-mul $2,2
-sub $4,$3
-sub $3,$4
-mul $3,$2
-lpb $3,1
-  add $1,5
-  mov $3,2
-lpe
-div $1,5
+sub $0,$2
+mov $1,$0
