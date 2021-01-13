@@ -3,10 +3,9 @@
 
 add $0,1
 pow $0,2
-sub $0,2
+trn $0,2
 cal $0,5
-add $0,5
 mov $1,$0
-sub $1,6
+sub $1,2
 div $1,2
 add $1,1

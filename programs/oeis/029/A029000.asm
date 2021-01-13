@@ -14,15 +14,13 @@ lpb $15,1
   gcd $2,4
   add $0,$2
   lpb $0,1
+    add $0,3
     lpb $0,1
-      add $0,3
+      sub $0,2
       lpb $0,1
-        sub $0,2
-        lpb $0,1
-          sub $0,6
-          add $1,4
-          add $12,$1
-        lpe
+        sub $0,6
+        add $1,4
+        add $12,$1
       lpe
     lpe
   lpe

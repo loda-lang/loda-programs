@@ -1,32 +1,10 @@
 ; A153778: Binary sequence constructed like a Stern-Brocot tree between 0 and 1, where XOR is applied instead of the mediant operation.
 ; 1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1
 
-mov $4,$0
-mov $4,1
-mov $4,3
 cal $0,59893
-mov $4,$4
-add $0,$4
-mov $26,$4
-cmp $26,0
-add $4,$26
-mod $0,$4
-sub $4,2
-mov $26,$4
-cmp $26,0
-add $4,$26
-div $4,$4
-mov $2,$4
-add $1,1
+mod $0,3
 cal $0,5
-mov $1,$0
-mov $1,$0
 cal $0,184747
-mov $2,$1
-mul $0,$0
-sub $4,$0
-add $1,5
-mov $2,$1
+pow $0,2
 mov $1,$0
-sub $1,25
 div $1,39

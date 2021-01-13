@@ -13,9 +13,7 @@ lpb $2,1
   add $0,$1
   lpb $0,1
     lpb $0,1
-      lpb $0,1
-        mod $0,10
-      lpe
+      mod $0,10
     lpe
     div $0,4
     add $0,4
