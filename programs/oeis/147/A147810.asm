@@ -4,8 +4,5 @@
 add $0,1
 pow $0,2
 cal $0,5
-mul $0,2
 mov $1,$0
-sub $1,4
-div $1,4
-add $1,1
+div $1,2
