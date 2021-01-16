@@ -287,6 +287,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305498](http://oeis.org/A305498) ([L11 program](305/A305498.asm)): The smallest positive even integer that can be represented with n digits in base 3/2.
 * [A305503](http://oeis.org/A305503) ([L09 program](305/A305503.asm)): Largest cardinality of subsets A of {0,1,...,n-1} with |A + A| > |A - A|.
 * [A305548](http://oeis.org/A305548) ([L02 program](305/A305548.asm)): a(n) = 27*n.
+* [A305549](http://oeis.org/A305549) ([L24 program](305/A305549.asm)): Crystal ball sequence for the lattice C_6.
 * [A305559](http://oeis.org/A305559) ([L15 program](305/A305559.asm)): [0, -1, -1] together with A000290.
 * [A305750](http://oeis.org/A305750) ([L22 program](305/A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
 * [A305753](http://oeis.org/A305753) ([L12 program](305/A305753.asm)): A base 3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
@@ -370,12 +371,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308720](http://oeis.org/A308720) ([L23 program](308/A308720.asm)): The maximum value in the continued fraction of sqrt(n), or 0 if there is no fractional part.
 * [A308754](http://oeis.org/A308754) ([L18 program](308/A308754.asm)): a(0) = 0, a(n) = a(n-1) + 1 if 2*n + 3 is prime, otherwise a(n) = a(n-1).
 * [A308807](http://oeis.org/A308807) ([L07 program](308/A308807.asm)): a(n) = 4*5^(n-1) + n.
+* [A309074](http://oeis.org/A309074) ([L25 program](309/A309074.asm)): a(0) = 1; a(2*n) = 4*a(n), a(2*n+1) = a(n).
 * [A309083](http://oeis.org/A309083) ([L06 program](309/A309083.asm)): a(n) = n - floor(n/2^4) + floor(n/3^4) - floor(n/4^4) + ...
 * [A309093](http://oeis.org/A309093) ([L04 program](309/A309093.asm)): The analog of A309077(n), but allowing fractional powers.
 * [A309097](http://oeis.org/A309097) ([L30 program](309/A309097.asm)): Number of partitions of n avoiding the partition (4,2,1).
 * [A309118](http://oeis.org/A309118) ([L37 program](309/A309118.asm)): Number of tiles added at iteration n when successively, layer by layer, building a symmetric patch of a rhombille tiling around a central star of six rhombs.
 * [A309127](http://oeis.org/A309127) ([L09 program](309/A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309214](http://oeis.org/A309214) ([L10 program](309/A309214.asm)): a(0)=0; thereafter a(n) = a(n-1)+n if a(n-1) even, otherwise a(n) = a(n-1)-n.
+* [A309215](http://oeis.org/A309215) ([L23 program](309/A309215.asm)): a(0)=0; thereafter a(n) = a(n-1)+n if a(n-1) odd, otherwise a(n) = a(n-1)-n.
 * [A309231](http://oeis.org/A309231) ([L13 program](309/A309231.asm)): Column 3 of the array at A326662 see Comments.
 * [A309250](http://oeis.org/A309250) ([L12 program](309/A309250.asm)): a(n) is the index of the binary string of a Post's Correspondence Problem Encoding with index n.
 * [A309294](http://oeis.org/A309294) ([L09 program](309/A309294.asm)): (1/2) times the sum of the elements of all subsets of [n] whose sum is divisible by two.
@@ -385,7 +388,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309337](http://oeis.org/A309337) ([L08 program](309/A309337.asm)): a(n) = n^3 if n odd, 3*n^3/4 if n even.
 * [A309338](http://oeis.org/A309338) ([L14 program](309/A309338.asm)): a(n) = n^4 if n odd, 7*n^4/8 if n even.
 * [A309372](http://oeis.org/A309372) ([L06 program](309/A309372.asm)): a(n) = n^2 - n^3 + n^4.
-* [A309398](http://oeis.org/A309398) ([L15 program](309/A309398.asm)): a(n) is the nearest integer to log(log(10^n)).
+* [A309398](http://oeis.org/A309398) ([L12 program](309/A309398.asm)): a(n) is the nearest integer to log(log(10^n)).
 * [A309434](http://oeis.org/A309434) ([L44 program](309/A309434.asm)): a(n) = floor(n*Im(2*e^(i*Pi/5))/(Im(2*e^(i*Pi/5)) - 1)).
 * [A309674](http://oeis.org/A309674) ([L31 program](309/A309674.asm)): a(1) = 1, a(n) = hamming_weight(Sum_{k=1..n-1} a(k) ) for n>=2.
 * [A309683](http://oeis.org/A309683) ([L07 program](309/A309683.asm)): Number of odd parts appearing among the smallest parts of the partitions of n into 3 parts.
@@ -651,6 +654,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A314896](http://oeis.org/A314896) ([L22 program](314/A314896.asm)): Coordination sequence Gal.4.53.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314898](http://oeis.org/A314898) ([L26 program](314/A314898.asm)): Coordination sequence Gal.5.136.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314899](http://oeis.org/A314899) ([L32 program](314/A314899.asm)): Coordination sequence Gal.6.153.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A314954](http://oeis.org/A314954) ([L52 program](314/A314954.asm)): Coordination sequence Gal.4.77.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315019](http://oeis.org/A315019) ([L17 program](315/A315019.asm)): Coordination sequence Gal.6.320.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315020](http://oeis.org/A315020) ([L24 program](315/A315020.asm)): Coordination sequence Gal.4.76.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315032](http://oeis.org/A315032) ([L14 program](315/A315032.asm)): Coordination sequence Gal.4.72.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
