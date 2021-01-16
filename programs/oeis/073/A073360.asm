@@ -3,24 +3,8 @@
 
 mov $2,$0
 add $2,1
-mov $4,1
-add $3,1
-mov $1,$0
-add $4,$0
-add $1,1
-mov $3,1
-cal $0,10051
 cal $2,112560
-sub $1,$3
-mul $3,2
-sub $3,2
 mov $3,$2
-sub $4,$4
-add $4,2
-sub $2,$2
-add $0,3
-trn $2,$0
-mul $1,$0
 mov $1,$3
 sub $1,4
 div $1,3
