@@ -3,23 +3,9 @@
 
 cal $0,225975
 mov $3,$0
-add $4,$3
-mov $2,2
-mov $2,$4
-mov $4,$2
 mov $1,$3
-add $1,$1
-add $0,$3
-add $2,$1
-trn $2,$2
-sub $0,5
-mov $4,$1
-mul $4,$4
-trn $2,1
-cal $0,5
-mov $3,1
-add $2,1
-mov $1,$0
-sub $3,$1
-mov $1,$4
+mul $1,2
+mov $2,$1
+pow $2,2
+mov $1,$2
 div $1,4

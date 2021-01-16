@@ -1,0 +1,110 @@
+; A007844: Least positive integer k for which 3^n divides k!.
+; 1,3,6,9,9,12,15,18,18,21,24,27,27,27,30,33,36,36,39,42,45,45,48,51,54,54,54,57,60,63,63,66,69,72,72,75,78,81,81,81,81,84,87,90,90,93,96,99,99,102,105,108,108,108,111,114,117,117,120,123,126,126,129,132,135,135,135
+
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17,1
+  clr $0,15
+  sub $17,1
+  mov $0,$15
+  sub $0,$17
+  mov $12,$0
+  mov $14,$0
+  add $14,1
+  lpb $14,1
+    clr $0,12
+    sub $14,1
+    mov $0,$12
+    sub $0,$14
+    mov $8,$0
+    mov $10,2
+    lpb $10,1
+      clr $0,8
+      sub $10,1
+      mov $0,$8
+      add $0,$10
+      sub $0,1
+      mov $1,1
+      add $5,2
+      mov $3,3
+      lpb $5,3
+        mov $2,6
+        mul $0,$1
+        mov $3,1
+        add $3,1
+        trn $0,0
+        mov $5,1
+        mov $4,1
+        add $2,$2
+        add $3,$5
+        mov $2,1
+        mov $5,$3
+        mul $1,$4
+        cal $0,80579
+        add $2,64
+        sub $1,1
+        sub $1,4
+        add $1,1
+        mov $3,1
+        bin $4,$0
+        lpb $5,1
+          add $5,$2
+          mul $5,$4
+          mov $2,2
+          lpb $1,1
+            mov $5,$2
+            mul $1,$3
+            sub $5,$0
+            mod $1,5
+          lpe
+          mov $0,$3
+          mov $3,1
+          mov $3,$4
+          add $4,2
+          mov $5,2
+          mov $4,$3
+          trn $3,2
+          add $3,2
+          pow $5,2
+          sub $1,$0
+          add $4,$0
+          mov $3,1
+        lpe
+        mov $5,$3
+        mov $6,$3
+      lpe
+      add $4,$0
+      mov $1,12
+      mov $3,1
+      sub $3,$0
+      add $2,$6
+      mov $5,$1
+      mov $2,1
+      mov $5,$3
+      mul $1,2
+      mov $3,$2
+      mov $2,$0
+      trn $0,2
+      mov $1,$4
+      mov $11,$10
+      lpb $11,1
+        mov $9,$1
+        sub $11,1
+      lpe
+    lpe
+    lpb $8,1
+      sub $9,$1
+      mov $8,0
+    lpe
+    mov $1,$9
+    sub $1,1
+    div $1,2
+    add $13,$1
+  lpe
+  mov $1,$13
+  mov $1,$9
+  sub $1,1
+  add $16,$1
+lpe
+mov $1,$16

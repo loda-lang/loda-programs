@@ -3,70 +3,47 @@
 
 mov $42,$0
 mov $44,$0
-add $44,1
 lpb $44,1
   clr $0,42
-  sub $44,1
   mov $0,$42
+  sub $44,1
   sub $0,$44
   mov $39,$0
   mov $41,$0
-  add $41,1
   lpb $41,1
-    clr $0,39
-    sub $41,1
     mov $0,$39
+    sub $41,1
     sub $0,$41
     mov $35,$0
     mov $37,2
     lpb $37,1
-      clr $0,35
-      sub $37,1
       mov $0,$35
+      sub $37,1
       add $0,$37
       sub $0,1
       mov $31,$0
       mov $33,2
       lpb $33,1
-        clr $0,31
-        sub $33,1
         mov $0,$31
+        sub $33,1
         add $0,$33
         sub $0,1
         mov $27,$0
         mov $29,2
         lpb $29,1
           clr $0,27
-          sub $29,1
           mov $0,$27
+          sub $29,1
           add $0,$29
           sub $0,1
-          add $3,1
           add $2,$0
           mov $4,1
           mul $4,$2
-          mul $3,4
           cal $4,137531
-          mov $26,$3
           cmp $26,0
           add $3,$26
-          div $3,$3
           sub $4,$3
-          add $0,$3
-          cal $0,5
-          mov $26,$0
-          cmp $26,0
-          add $0,$26
-          div $2,$0
-          add $0,13
-          mov $0,$2
-          mul $3,2
-          mov $1,$0
-          sub $1,1
-          mov $2,$4
           mul $4,2
-          div $2,2
-          mov $1,2
           mov $1,$4
           mov $30,$29
           lpb $30,1
@@ -75,8 +52,8 @@ lpb $44,1
           lpe
         lpe
         lpb $27,1
-          sub $28,$1
           mov $27,0
+          sub $28,$1
         lpe
         mov $1,$28
         mov $34,$33
@@ -86,8 +63,8 @@ lpb $44,1
         lpe
       lpe
       lpb $31,1
-        sub $32,$1
         mov $31,0
+        sub $32,$1
       lpe
       mov $1,$32
       mov $38,$37
@@ -97,8 +74,8 @@ lpb $44,1
       lpe
     lpe
     lpb $35,1
-      sub $36,$1
       mov $35,0
+      sub $36,$1
     lpe
     mov $1,$36
     div $1,2

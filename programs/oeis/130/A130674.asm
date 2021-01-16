@@ -3,8 +3,4 @@
 
 cal $0,5
 fac $0
-mul $0,2
 mov $1,$0
-sub $1,2
-div $1,2
-add $1,1

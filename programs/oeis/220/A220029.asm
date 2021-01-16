@@ -1,0 +1,99 @@
+; A220029: Number of n X 5 arrays of the minimum value of corresponding elements and their horizontal or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..1 n X 5 array.
+; 5,12,30,61,111,187,297,450,656,926,1272,1707,2245,2901,3691,4632,5742,7040,8546,10281,12267,14527,17085,19966,23196,26802,30812,35255,40161,45561,51487,57972,65050,72756,81126,90197,100007,110595,122001,134266
+
+mov $30,$0
+mov $32,$0
+add $32,1
+lpb $32,1
+  clr $0,30
+  sub $32,1
+  mov $0,$30
+  sub $0,$32
+  mov $27,$0
+  mov $29,$0
+  add $29,1
+  lpb $29,1
+    clr $0,27
+    sub $29,1
+    mov $0,$27
+    sub $0,$29
+    mov $2,$0
+    add $0,1
+    add $5,$2
+    add $3,$0
+    cal $2,100542
+    trn $5,1
+    add $2,1
+    mov $5,1
+    sub $2,2
+    mov $3,$2
+    add $1,$3
+    add $0,$2
+    add $0,2411
+    mov $3,3
+    mov $5,$1
+    sub $2,3
+    sub $3,$0
+    mov $4,$3
+    sub $0,1
+    mov $2,1
+    pow $0,2
+    mov $3,3
+    sub $2,$4
+    mov $0,2
+    add $4,$0
+    mov $5,$3
+    add $5,$3
+    mov $1,1
+    lpb $0,3
+      mov $0,6
+      mov $6,$0
+      sub $1,$3
+      add $4,$0
+      sub $5,8
+      lpb $2,1
+        mov $6,$0
+        sub $0,5
+        pow $2,2
+        add $3,1
+        mov $5,2
+        add $2,4
+        sub $2,7
+      lpe
+      mod $2,7
+    lpe
+    add $2,1
+    lpb $2,1
+      mul $1,10
+      lpb $3,1
+        mov $26,$3
+        cmp $26,0
+        add $3,$26
+        div $1,$3
+        lpb $4,2
+          mov $5,$6
+          div $4,8
+          mov $4,1
+          mov $0,9
+          trn $3,$5
+        lpe
+        add $0,1
+        sub $4,3
+      lpe
+      mov $6,$5
+      sub $3,$2
+      mov $1,21
+      mov $6,$4
+      mod $4,10
+    lpe
+    mov $3,1
+    add $2,1
+    mov $1,$2
+    sub $1,2413
+    add $1,2
+    add $28,$1
+  lpe
+  mov $1,$28
+  add $31,$1
+lpe
+mov $1,$31
