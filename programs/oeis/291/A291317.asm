@@ -1,0 +1,32 @@
+; A291317: A variation of the Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, at k-th stage, move k places clockwise and delete the current number.
+; 1,1,1,3,4,3,7,7,6,10,7,12,3,10,11,7,11,1,12,6,21,1,7,12,25,3,25,28,16,26,25,6,32,19,15,21,28,3,12,21,24,13,21,36,17,45,41,45,8,40,11,6,25,41,23,4,43,52,51,57,28,21,11,47,26,29,57,51,48,56,12
+
+add $0,2
+add $2,$0
+mov $3,1
+add $4,$3
+mov $26,$3
+cmp $26,0
+add $3,$26
+div $4,$3
+mul $3,2
+cal $0,7495
+add $4,$2
+div $3,2
+mov $1,$0
+mul $1,$0
+sub $2,$2
+mov $1,$0
+mov $4,$1
+sub $4,$3
+mov $26,$1
+cmp $26,0
+add $1,$26
+log $1,$0
+mul $1,$4
+mov $1,1
+mov $2,17
+sub $2,$1
+mov $1,$0
+sub $1,2
+add $1,1
