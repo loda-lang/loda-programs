@@ -1,0 +1,31 @@
+; A246331: Total number of ON cells at stage 2n of two-dimensional 5-neighbor outer totalistic cellular automaton defined by "Rule 465".
+; 1,9,25,49,89,113,161,233,345,369,417,489,609,681,825,1041,1369,1393,1441,1513,1633,1705,1849,2065,2401,2473,2617,2833,3193,3409,3841,4489,5465,5489,5537,5609,5729,5801,5945,6161,6497,6569,6713,6929,7289,7505,7937
+
+mov $1,$0
+add $0,$1
+add $4,2
+trn $4,$0
+cal $0,130665
+pow $1,0
+add $3,6
+add $2,6
+add $0,$0
+mov $4,$3
+mov $4,$1
+sub $2,1
+mov $26,$1
+cmp $26,0
+add $1,$26
+log $1,56
+mov $1,1
+add $1,$4
+mov $2,$0
+pow $4,2
+mov $4,1
+sub $4,2
+mov $1,$0
+mov $1,$0
+sub $1,2
+div $1,12
+mul $1,8
+add $1,1

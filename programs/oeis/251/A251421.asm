@@ -1,0 +1,33 @@
+; A251421: Number of length n+2 0..1 arrays with the sum of the maximum minus twice the median plus the minimum of adjacent triples multiplied by some arrangement of +-1 equal to zero.
+; 2,12,12,40,56,144,240,544,992,2112,4032,8320,16256,33024,65280,131584,261632,525312,1047552,2099200,4192256,8392704,16773120,33562624,67100672,134234112,268419072,536903680,1073709056,2147549184,4294901760
+
+mov $1,$0
+mov $2,$0
+mov $0,1
+add $0,1
+mov $1,$2
+mov $26,$0
+cmp $26,0
+add $0,$26
+div $1,$0
+add $2,$0
+mov $0,$2
+add $4,$1
+mul $1,2
+sub $2,1
+mul $1,3
+mov $2,$4
+mov $26,$4
+cmp $26,0
+add $4,$26
+div $1,$4
+mov $3,$0
+mov $3,$2
+cal $0,113979
+add $0,1
+mov $1,$3
+mov $1,$0
+mov $1,$0
+sub $1,2
+mul $1,2
+add $1,2
