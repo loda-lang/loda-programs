@@ -1,0 +1,27 @@
+; A143977: Rectangular array R by antidiagonals: label each unit square in the first quadrant lattice by its northeast vertex (x,y) and mark squares having |x-y|=0(mod 3); then R(m,n) is the number of marked squares in the rectangle [0,m] X [0,n].
+; 1,1,1,1,2,1,2,2,2,2,2,3,3,3,2,2,4,4,4,4,2,3,4,5,6,5,4,3,3,5,6,7,7,6,5,3,3,6,7,8,9,8,7,6,3,4,6,8,10,10,10,10,8,6,4,4,7,9,11,12,12,12,11,9,7,4,4,8,10,12,14,14,14,14,12,10,8,4,5,8,11,14,15,16,17,16,15,14,11,8,5,5,9
+
+mov $4,2
+mov $2,1
+trn $4,$0
+mov $3,1
+trn $2,2
+mov $4,$3
+mov $26,$0
+cmp $26,0
+add $0,$26
+div $2,$0
+cal $0,143976
+sub $4,$3
+div $2,2
+add $2,7
+add $0,$3
+mul $4,6
+mul $0,$3
+sub $4,$2
+mov $1,$0
+mov $4,$2
+bin $2,2
+div $0,2
+pow $1,2
+mov $1,$0
