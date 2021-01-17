@@ -3,25 +3,6 @@
 
 cal $0,26043
 mov $1,$0
-add $1,1
-mov $1,$0
-add $2,1
-add $2,$1
-sub $0,2
-mov $26,$1
-cmp $26,0
-add $1,$26
-mod $0,$1
-mul $0,2
-cal $0,10051
 mov $2,$1
-add $0,2
-mul $1,2
 div $2,5
-add $4,$2
-mul $1,$0
-add $3,$4
-mov $1,57
-mov $4,2
-mov $4,$3
 mov $1,$2

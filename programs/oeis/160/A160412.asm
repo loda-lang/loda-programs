@@ -1,39 +1,9 @@
 ; A160412: Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
 ; 0,3,12,21,48,57,84,111,192,201,228,255,336,363,444,525,768,777,804,831,912,939,1020,1101,1344,1371,1452,1533,1776,1857,2100,2343,3072,3081,3108,3135,3216,3243,3324,3405,3648,3675,3756,3837,4080,4161,4404,4647
 
-mov $27,$0
-mov $29,$0
-add $29,1
-lpb $29,1
-  clr $0,27
-  sub $29,1
-  mov $0,$27
-  sub $0,$29
-  mov $1,2
-  mov $3,281474976710656
-  mov $1,$0
-  mov $0,$1
-  mov $1,$0
-  mov $3,$0
-  mov $1,$3
-  mov $26,$0
-  cmp $26,0
-  add $0,$26
-  mod $1,$0
-  add $1,1
-  mul $3,$1
-  sub $3,1
-  cal $0,10051
-  mov $3,$3
-  mov $0,$1
-  mov $1,1
-  cal $3,48883
-  trn $1,$3
-  mov $4,$3
-  mul $1,$0
-  mul $3,$4
-  mov $1,$4
-  mul $1,3
-  add $28,$1
-lpe
-mov $1,$28
+sub $0,1
+cal $0,130665
+add $0,5
+mov $1,$0
+sub $1,5
+mul $1,3

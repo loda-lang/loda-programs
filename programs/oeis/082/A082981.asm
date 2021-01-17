@@ -25,26 +25,26 @@ lpb $14,1
       mov $0,$5
       add $0,$7
       sub $0,1
-      sub $1,$0
-      add $4,1
-      div $4,2
-      mov $3,1
-      mov $1,2
-      sub $4,$4
       div $0,4
-      sub $3,8
-      div $1,2
-      cal $0,156157
+      sub $4,$0
+      mov $4,$0
+      add $2,1
+      mov $4,1
+      add $4,2
+      mul $4,2
+      fac $4
+      add $2,$4
+      cal $0,77445
+      add $3,1
+      mov $2,6
+      mov $4,1
+      mov $2,16
       mov $1,$0
-      mul $3,$3
-      mov $2,2
-      mov $4,2
-      mov $3,$0
-      sub $3,1
-      mul $4,$2
-      mov $4,$3
-      add $3,$1
-      clr $1,1
+      pow $1,0
+      trn $2,$1
+      add $1,$4
+      add $3,1
+      add $1,2
       mov $1,$0
       mov $8,$7
       lpb $8,1
@@ -57,7 +57,7 @@ lpb $14,1
       mov $5,0
     lpe
     mov $1,$6
-    div $1,17
+    div $1,4
     add $10,$1
   lpe
   mov $1,$10

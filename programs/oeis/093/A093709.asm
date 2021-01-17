@@ -3,22 +3,8 @@
 
 sub $0,1
 cal $0,53866
-mul $0,2
-pow $0,2
-mul $0,2
-mov $1,$0
-div $1,2
-mov $2,1
-mov $1,$0
-add $4,$0
-add $1,1
-div $4,2
-sub $0,$4
-cal $0,10051
-mul $4,120259084288
-sub $1,1
-mov $1,$2
-add $4,$4
-add $4,8
-mul $1,$0
-mov $1,$0
+mov $1,1
+add $2,$0
+add $2,2
+add $1,$2
+sub $1,3

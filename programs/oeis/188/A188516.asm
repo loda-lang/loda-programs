@@ -1,69 +1,9 @@
 ; A188516: Number of nX2 binary arrays without the pattern 1 1 0 diagonally, vertically or horizontally
 ; 4,16,49,144,400,1089,2916,7744,20449,53824,141376,370881,972196,2547216,6671889,17472400,45751696,119793025,313644100,821166336,2149898689,5628600576,14736017664,38579637889,101003196100,264430435984
 
-add $2,$0
+cal $0,204644
+pow $0,2
 mov $1,$0
-add $3,$2
-mov $0,$3
-mov $0,6
-fac $0
-mul $0,6
-add $6,1
-mov $0,1
-mul $3,$6
-add $1,2
-add $0,2
-mov $4,$2
-mov $5,$2
-sub $2,1
-mov $0,1
-mov $0,2
-bin $2,2
-sub $2,1
-trn $0,$2
-add $4,$3
-sub $5,2
-add $5,4
-mov $0,$6
-add $3,1
-sub $5,$5
-sub $2,1
-mov $2,1
-mov $5,$4
-add $5,1
-mov $5,1
-sub $4,$2
-add $4,$6
-add $4,$6
-add $0,1
-cal $3,267661
-mov $2,$6
-lpb $2,2
-  mov $4,1
-  sub $5,$2
-  pow $6,2
-  mov $2,$1
-  add $3,1
-  lpb $0,1
-    mov $5,$2
-    mov $1,1
-    pow $3,1
-    add $2,$4
-    div $3,5
-    mov $5,1
-    mov $6,1
-    sub $3,$2
-    mov $4,1
-    sub $0,1
-  lpe
-  sub $1,12
-  add $1,1
-  mod $0,4
-lpe
-sub $0,2
-mov $2,1
-sub $4,1
-mov $1,$3
-sub $1,8
-div $1,2
+sub $1,62
+div $1,16
 add $1,4
