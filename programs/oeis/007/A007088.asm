@@ -1,70 +1,63 @@
 ; A007088: The binary numbers (or binary words, or binary vectors): numbers written in base 2.
 ; 0,1,10,11,100,101,110,111,1000,1001,1010,1011,1100,1101,1110,1111,10000,10001,10010,10011,10100,10101,10110,10111,11000,11001,11010,11011,11100,11101,11110,11111,100000,100001,100010,100011,100100,100101,100110,100111
 
-mov $34,$0
-mov $36,$0
-add $36,1
-lpb $36,1
-  clr $0,34
-  sub $36,1
-  mov $0,$34
-  sub $0,$36
-  mov $30,$0
-  mov $32,2
-  lpb $32,1
-    clr $0,30
-    sub $32,1
-    mov $0,$30
-    add $0,$32
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14,1
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $8,$0
+  mov $10,2
+  lpb $10,1
+    clr $0,8
+    sub $10,1
+    mov $0,$8
+    add $0,$10
     sub $0,1
-    mov $27,$0
-    mul $0,2
-    cal $0,228071
+    mov $5,$0
+    sub $4,$0
+    add $0,$0
+    mov $2,$0
+    sub $2,$2
+    mov $3,2
+    add $4,4
     add $4,1
-    mov $4,$4
-    sub $0,1
-    div $4,2
+    mov $1,1
+    add $2,$2
     add $0,1
-    mov $26,$4
-    cmp $26,0
-    add $4,$26
-    log $4,3
-    mov $26,$4
-    cmp $26,0
-    add $4,$26
-    div $0,$4
-    add $3,$0
-    mul $3,$4
-    sub $3,$4
-    add $4,$3
-    add $1,1
-    sub $3,2
-    add $4,1
-    mov $5,$4
+    mov $2,$4
+    add $1,2
+    add $3,$1
+    mov $3,3
+    cal $0,228071
     mov $1,$0
-    sub $1,$0
-    add $3,1
-    mov $1,$0
+    cmp $3,6
+    add $4,$2
+    add $4,3
+    trn $0,100
     add $1,1
-    mov $28,$27
-    mov $29,$28
-    mul $29,3
-    add $1,$29
-    mul $28,$27
-    mul $28,$27
-    mov $33,$32
-    lpb $33,1
-      mov $31,$1
-      sub $33,1
+    mov $6,$5
+    mov $7,$6
+    mul $7,3
+    add $1,$7
+    mul $6,$5
+    mul $6,$5
+    mov $11,$10
+    lpb $11,1
+      mov $9,$1
+      sub $11,1
     lpe
   lpe
-  lpb $30,1
-    sub $31,$1
-    mov $30,0
+  lpb $8,1
+    sub $9,$1
+    mov $8,0
   lpe
-  mov $1,$31
+  mov $1,$9
   sub $1,1
   div $1,10
-  add $35,$1
+  add $13,$1
 lpe
-mov $1,$35
+mov $1,$13

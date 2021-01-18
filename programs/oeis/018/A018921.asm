@@ -1,80 +1,27 @@
 ; A018921: Define the generalized Pisot sequence T(a(0),a(1)) by: a(n+2) is the greatest integer such that a(n+2)/a(n+1) < a(n+1)/a(n). This is T(4,8).
 ; 4,8,15,28,52,96,177,326,600,1104,2031,3736,6872,12640,23249,42762,78652,144664,266079,489396,900140,1655616,3045153,5600910,10301680,18947744,34850335,64099760,117897840,216847936,398845537,733591314,1349284788,2481721640
 
-mov $34,$0
-mov $36,$0
-add $36,1
-lpb $36,1
-  clr $0,34
-  sub $36,1
-  mov $0,$34
-  sub $0,$36
-  mov $31,$0
-  mov $33,$0
-  add $33,1
-  lpb $33,1
-    clr $0,31
-    sub $33,1
-    mov $0,$31
-    sub $0,$33
-    mov $27,$0
-    mov $29,2
-    lpb $29,1
-      clr $0,27
-      sub $29,1
-      mov $0,$27
-      add $0,$29
-      sub $0,1
-      mov $1,$0
-      add $3,5
-      add $4,$0
-      mov $2,$1
-      sub $0,$0
-      add $1,1
-      add $3,1
-      sub $2,6
-      cal $0,10051
-      mul $1,$0
-      mov $3,$0
-      add $0,$4
-      add $0,4
-      add $2,4
-      sub $1,$0
-      mov $0,$4
-      mov $4,225
-      add $2,4
-      mov $26,$2
-      cmp $26,0
-      add $2,$26
-      div $3,$2
-      cal $2,232508
-      mov $1,$2
-      mov $30,$29
-      lpb $30,1
-        mov $28,$1
-        sub $30,1
-      lpe
-    lpe
-    lpb $27,0
-      sub $28,$1
-      mov $27,1
-    lpe
-    mov $1,$28
-    div $1,4
-    add $32,$1
-  lpe
-  mov $1,$32
-  add $35,$1
-lpe
-mov $1,$35
+mov $1,2
+mov $3,5
+sub $3,1
+add $2,2
+mov $2,1
+add $4,1
 mul $1,2
-add $1,2
-sub $1,2
-div $1,2
-mov $1,$32
-sub $1,1
-mul $1,2
-add $1,2
-sub $1,4
+mov $2,$4
+add $0,$2
+cal $0,27024
+mov $2,$4
+mov $1,$0
+add $3,$0
+mov $1,4
+mov $2,$1
+mov $4,3
+add $4,2
+sub $1,$1
+add $3,3
+add $4,1
+mov $1,$0
+sub $1,5
 div $1,2
 add $1,4

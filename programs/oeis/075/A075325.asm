@@ -1,0 +1,32 @@
+; A075325: Pair the natural numbers such that the m-th pair is (r, s) where r, s and s-r are the smallest numbers which have not occurred earlier and also are not equal to the difference of any earlier pair: (1, 3), (4, 9), (6, 13), (8, 18), (11, 23), (14, 29), (16, 33), (19, 39), (21, 43), (24, 49), (26, 53), (28, 58), ... Sequence gives first term of each pair.
+; 1,4,6,8,11,14,16,19,21,24,26,28,31,34,36,38,41,44,46,48,51,54,56,59,61,64,66,68,71,74,76,79,81,84,86,88,91,94,96,99,101,104,106,108,111,114,116,118,121,124,126,128,131,134,136,139,141,144,146,148,151,154,156
+
+add $1,3
+cal $0,75327
+add $2,7
+mov $26,$1
+cmp $26,0
+add $1,$26
+div $0,$1
+sub $1,3
+mul $2,3
+add $0,$1
+add $0,1
+add $1,$0
+mov $2,1
+sub $2,$1
+add $0,2
+mov $1,4
+add $1,$0
+mov $3,$1
+mov $1,$0
+mul $1,2
+mov $26,$0
+cmp $26,0
+add $0,$26
+mod $1,$0
+mul $0,$0
+mov $0,$1
+mov $1,$3
+sub $1,8
+add $1,1

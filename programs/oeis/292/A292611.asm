@@ -1,0 +1,6 @@
+; A292611: Skip 3 triangle numbers, take 1 triangle number, skip 4 triangle numbers, take 2 triangle numbers, skip 5 triangle numbers, take 3 triangle numbers, ...
+; 10,45,55,136,153,171,325,351,378,406,666,703,741,780,820,1225,1275,1326,1378,1431,1485,2080,2145,2211,2278,2346,2415,2485,3321,3403,3486,3570,3655,3741,3828,3916,5050,5151,5253,5356,5460,5565,5671,5778,5886,7381
+
+cal $0,189151
+bin $0,2
+mov $1,$0
