@@ -5,36 +5,13 @@ mov $27,$0
 mov $29,2
 lpb $29,1
   clr $0,27
-  sub $29,1
   mov $0,$27
+  sub $29,1
   add $0,$29
   sub $0,1
-  add $2,$0
-  add $2,1
   add $4,$0
-  add $3,$2
   cal $0,56738
-  mul $2,2
-  mov $2,1
-  mov $1,$4
-  add $3,$4
-  add $3,2
-  gcd $3,2
-  mov $26,$1
-  cmp $26,0
-  add $1,$26
-  div $3,$1
-  mov $26,$2
-  cmp $26,0
-  add $2,$26
-  log $2,$0
-  mov $1,$0
-  div $2,28
   add $0,$4
-  trn $4,5
-  sub $1,1
-  mov $2,3
-  mul $3,38
   mov $1,$0
   mov $30,$29
   lpb $30,1
@@ -43,7 +20,7 @@ lpb $29,1
   lpe
 lpe
 lpb $27,1
-  sub $28,$1
   mov $27,0
+  sub $28,$1
 lpe
 mov $1,$28

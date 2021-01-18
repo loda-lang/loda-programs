@@ -3,9 +3,7 @@
 
 add $0,1
 cal $0,77852
+mul $0,2
 mov $1,$0
-sub $1,7
-mul $1,8
-sub $1,72
-div $1,8
-add $1,17
+div $1,2
+add $1,1

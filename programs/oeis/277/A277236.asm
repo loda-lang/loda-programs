@@ -1,31 +1,8 @@
 ; A277236: Number of strings of length n composed of symbols from the circular list [1,2,3,4] such that adjacent symbols in the string must be adjacent in the list. No runs of length 2 or more are allowed for symbols 1 and 3.
 ; 1,4,10,26,66,170,434,1114,2850,7306,18706,47930,122754,314474,805490,2063386,5285346,13538890,34680274,88835834,227556930,582900266,1493127986,3824729050,9797240994,25096157194,64285121170,164669749946,421810234626,1080489234410,2767730172914
 
-mov $1,$0
 cal $0,183682
 div $0,8
-add $3,1
-sub $0,2
-mul $0,$3
-mov $4,$0
-trn $3,1
-mul $3,$4
-mul $3,$0
-mov $3,$4
 sub $0,1
-mov $4,$3
-mov $3,1
-add $0,2
-mov $26,$1
-cmp $26,0
-add $1,$26
-div $4,$1
-sub $4,7
-mov $26,$3
-cmp $26,0
-add $3,$26
-div $0,$3
-mov $1,1
-mov $1,$0
 mov $1,$0
 add $1,1
