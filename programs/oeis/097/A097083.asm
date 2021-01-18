@@ -1,42 +1,29 @@
 ; A097083: Values of k such that there is exactly one permutation p of (1,2,3,...,k) such that i+p(i) is a Fibonacci number for 1<=i<=k.
 ; 1,2,3,5,9,15,24,39,64,104,168,272,441,714,1155,1869,3025,4895,7920,12815,20736,33552,54288,87840,142129,229970,372099,602069,974169,1576239,2550408,4126647,6677056,10803704,17480760,28284464,45765225
 
-mov $27,$0
-mov $29,$0
-add $29,1
-lpb $29,1
-  clr $0,27
-  sub $29,1
-  mov $0,$27
-  sub $0,$29
-  add $2,$0
-  sub $0,2
-  mov $4,24
-  add $2,2
-  add $2,$0
-  add $4,119071
-  mov $1,1
-  pow $1,4
-  add $4,3
-  mov $26,$1
-  cmp $26,0
-  add $1,$26
-  div $1,$1
-  sub $2,$1
-  bin $1,$1
-  mov $3,1
-  mov $4,1
-  mov $4,$0
-  mov $26,$2
-  cmp $26,0
-  add $2,$26
-  div $1,$2
-  cal $0,92263
-  div $0,2
-  sub $3,362883
-  mov $1,$0
-  mov $1,$0
-  add $1,1
-  add $28,$1
-lpe
-mov $1,$28
+mov $6,$0
+add $2,2
+cal $0,92263
+mov $1,900
+mov $2,$2
+add $3,3
+sub $0,1
+mov $4,2
+cal $2,159741
+mul $1,$1
+mov $3,$4
+mov $3,3
+mul $3,2
+mov $5,$4
+mov $1,$2
+sub $1,1
+mov $1,$3
+div $0,2
+div $4,2
+mov $1,$0
+add $4,1
+mov $1,$0
+add $1,1
+mov $7,$6
+mul $7,$6
+mul $7,$6

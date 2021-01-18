@@ -3,27 +3,6 @@
 
 cal $0,195172
 mul $0,2
-mov $1,$0
 cal $0,70370
-add $3,2
-add $4,1
-mov $3,$0
-mov $4,$3
-trn $3,$4
-mov $0,10
-mov $3,1
-mul $4,$3
-mov $0,$4
-mov $3,4
-sub $4,1
-mov $26,$3
-cmp $26,0
-add $3,$26
-div $4,$3
 mov $1,$0
-add $2,1
-add $1,$3
-fac $3
-mov $1,$0
-sub $1,1
 div $1,8

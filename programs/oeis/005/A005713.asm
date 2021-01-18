@@ -9,30 +9,30 @@ lpb $29,1
   mov $0,$27
   add $0,$29
   sub $0,1
-  add $4,2
-  sub $0,1
-  add $3,2
-  add $0,3
-  sub $4,$0
-  mov $3,$4
-  mul $3,4
-  mov $2,$4
-  trn $0,1
+  add $0,1
   cal $0,287724
-  sub $0,1
+  add $2,1
+  mul $2,$2
+  add $4,$0
+  mov $4,$0
+  trn $4,1
+  mov $0,$2
+  add $1,1
+  mov $3,$0
+  mov $0,2
+  pow $2,0
+  mov $1,1
+  mov $2,1
+  add $1,$4
+  add $2,1
+  mov $1,$0
+  add $1,$0
+  add $0,$0
   mov $26,$3
   cmp $26,0
   add $3,$26
-  div $4,$3
-  mul $4,$4
-  sub $4,$0
-  add $4,$0
-  mov $4,2
-  mov $1,$0
-  mov $4,$3
-  mov $4,$3
-  add $3,1
-  mov $1,$0
+  div $0,$3
+  mov $1,$4
   mov $30,$29
   lpb $30,1
     mov $28,$1
