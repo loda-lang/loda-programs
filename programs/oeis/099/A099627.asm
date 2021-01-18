@@ -6,41 +6,13 @@ mov $7,$0
 add $7,1
 lpb $7,1
   clr $0,5
-  sub $7,1
   mov $0,$5
+  sub $7,1
   sub $0,$7
   cal $0,25675
-  mov $3,1
   mov $4,2
   pow $4,$0
   add $1,$4
-  add $3,1
-  add $3,2
-  add $1,$3
-  mov $2,$1
-  add $3,1
-  mul $4,2
-  trn $0,6
-  add $1,$2
-  add $0,$3
-  mov $1,$3
-  sub $4,1
-  mov $1,$0
-  mov $1,$2
-  add $3,$3
-  mov $2,$1
-  sub $1,5
-  mul $1,2
-  add $1,1
-  sub $1,1
-  div $1,6
-  mul $1,3
-  add $1,1
-  mov $1,$2
-  sub $1,5
-  div $1,2
-  mul $1,2
-  add $1,1
   sub $1,1
   div $1,2
   add $1,1

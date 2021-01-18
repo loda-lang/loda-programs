@@ -1,0 +1,30 @@
+; A243383: Number of length n+3 0..2 arrays with no four elements in a row with pattern abba (with a!=b) and new values 0..2 introduced in 0..2 order.
+; 13,35,96,265,733,2029,5618,15557,43081,119303,330384,914929,2533705,7016569,19430930,53809925,149015413,412667243,1142796240,3164736889,8764081669,24270304357,67211568290,186128482181,515444182609
+
+add $2,$0
+add $2,2
+mov $0,1
+mov $4,$2
+mov $2,$2
+add $4,1
+add $4,$0
+mov $0,$4
+cal $0,98182
+add $1,7
+add $1,$2
+mov $2,$0
+mov $1,$0
+mov $26,$1
+cmp $26,0
+add $1,$26
+div $4,$1
+sub $4,1
+mov $1,2
+mov $4,$1
+add $3,2
+mov $2,1
+add $3,$2
+mov $1,$0
+sub $1,25
+div $1,2
+add $1,13
