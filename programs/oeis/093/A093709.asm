@@ -3,8 +3,6 @@
 
 sub $0,1
 cal $0,53866
-mov $1,1
-add $2,$0
-add $2,2
-add $1,$2
-sub $1,3
+add $0,1
+bin $0,2
+mov $1,$0

@@ -1,113 +1,32 @@
 ; A087136: Smallest positive number m such that A073642(m)=n.
 ; 1,2,4,6,10,12,14,22,26,28,30,46,54,58,60,62,94,110,118,122,124,126,190,222,238,246,250,252,254,382,446,478,494,502,506,508,510,766,894,958,990,1006,1014,1018,1020,1022,1534,1790,1918,1982,2014,2030,2038
 
-mov $22,$0
-mov $24,$0
-add $24,1
-lpb $24,1
-  clr $0,22
-  sub $24,1
-  mov $0,$22
-  sub $0,$24
-  mov $19,$0
-  mov $15,$0
-  mov $17,2
-  lpb $17,1
-    clr $0,15
-    sub $17,1
-    mov $0,$15
-    add $0,$17
-    sub $0,1
-    mov $12,$0
-    mov $8,$0
-    mov $10,2
-    lpb $10,1
-      clr $0,8
-      sub $10,1
-      mov $0,$8
-      add $0,$10
-      sub $0,1
-      mov $5,$0
-      mov $7,$0
-      add $7,0
-      lpb $7,1
-        clr $0,5
-        sub $7,1
-        mov $0,$5
-        sub $0,$7
-        cal $0,4736
-        mov $3,$0
-        add $3,$0
-        add $1,$0
-        mov $3,$1
-        cal $0,4
-        mov $1,48
-        sub $1,1
-        add $1,11
-        mov $1,$0
-        mov $4,$1
-        sub $1,$1
-        sub $1,9
-        mov $1,$1
-        mov $1,$4
-        add $0,$1
-        mov $1,$1
-        cal $3,53208
-        mov $4,2
-        sub $4,1
-        mov $1,$3
-        sub $1,5
-        div $1,7
-        add $1,1
-        add $6,$1
-      lpe
-      mov $1,$6
-      mov $11,$10
-      lpb $11,1
-        mov $9,$1
-        sub $11,1
-      lpe
-    lpe
-    lpb $8,1
-      sub $9,$1
-      mov $8,0
-    lpe
-    mov $1,$9
-    sub $1,1
-    mul $1,2
-    add $1,1
-    mov $1,$6
-    add $1,3
-    mov $13,$12
-    mov $14,$13
-    mul $14,2
-    add $1,$14
-    mul $13,$12
-    mul $13,$12
-    mov $18,$17
-    lpb $18,1
-      mov $16,$1
-      sub $18,1
-    lpe
-  lpe
-  lpb $15,1
-    sub $16,$1
-    mov $15,0
-  lpe
-  mov $1,$16
-  sub $1,3
-  div $1,2
-  add $1,1
-  mov $1,$6
-  add $1,1
-  mov $20,$19
-  mov $21,$20
-  mul $21,1
-  add $1,$21
-  mul $20,$19
-  mul $20,$19
-  mov $1,$9
-  add $1,1
-  add $23,$1
-lpe
-mov $1,$23
+mov $1,2
+mov $3,2
+mov $26,$3
+cmp $26,0
+add $3,$26
+div $1,$3
+mov $1,$0
+add $2,2
+add $4,$0
+cal $0,89633
+div $3,7
+cmp $3,$4
+pow $3,2
+add $2,$0
+mul $1,2
+sub $3,17
+add $3,2
+mov $1,$0
+mul $1,2
+mov $4,3
+mov $26,$0
+cmp $26,0
+add $0,$26
+div $1,$0
+add $0,$2
+gcd $2,$1
+mov $1,$0
+sub $1,3
+add $1,1
