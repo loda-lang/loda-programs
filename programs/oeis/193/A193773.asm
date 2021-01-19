@@ -3,8 +3,7 @@
 
 mul $0,2
 cal $0,5
-add $0,15
+sub $0,1
 div $0,2
-sub $0,6
 mov $1,$0
-sub $1,1
+add $1,1
