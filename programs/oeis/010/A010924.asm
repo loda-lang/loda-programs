@@ -3,24 +3,7 @@
 
 add $0,2
 cal $0,180167
-add $2,6
-sub $2,$0
-mov $5,$0
-trn $2,$2
-mul $2,2
-add $1,1
-mov $3,1
-mov $2,$1
-mov $1,$0
-sub $2,1
-mov $2,$0
-mov $3,$1
-sub $1,2
-mov $3,1
-add $3,2
-sub $2,1
 add $0,48
-mov $4,$3
 mov $1,$0
 sub $1,96
 div $1,6

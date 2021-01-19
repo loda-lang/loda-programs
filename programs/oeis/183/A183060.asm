@@ -1,0 +1,30 @@
+; A183060: Number of "ON" cells at n-th stage in a simple 2-dimensional cellular automaton (see Comments for precise definition).
+; 0,1,4,7,14,17,24,31,50,53,60,67,86,93,112,131,186,189,196,203,222,229,248,267,322,329,348,367,422,441,496,551,714,717,724,731,750,757,776,795,850,857,876,895,950,969,1024,1079,1242,1249,1268,1287
+
+mov $5,$0
+add $3,1
+mov $1,$0
+mov $1,0
+mov $1,$0
+mul $3,2
+mov $4,1
+sub $4,$3
+mul $1,$0
+add $1,$3
+mov $2,3
+cal $0,147562
+mov $1,$0
+add $3,$3
+mov $4,1
+mov $1,10
+add $4,1
+add $1,$0
+mov $1,$0
+div $1,2
+pow $0,2
+mov $6,$5
+mov $7,$6
+mul $7,1
+add $1,$7
+mul $6,$5
+mul $6,$5

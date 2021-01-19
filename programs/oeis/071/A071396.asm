@@ -3,23 +3,10 @@
 
 pow $0,2
 mul $0,2
-mov $4,1
-mov $1,$0
-sub $1,$1
-add $1,1
 cal $0,22847
-mul $4,2
 mov $2,$0
-sub $1,1
-mov $0,3
-sub $1,1
-add $2,$1
-mov $0,1
-add $4,1
-add $2,$2
-add $3,$2
-mov $1,$0
-mov $0,7
+sub $2,1
+mul $2,2
 add $2,2
 mov $1,$2
 div $1,2
