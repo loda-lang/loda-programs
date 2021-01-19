@@ -6,40 +6,28 @@ mov $32,$0
 add $32,1
 lpb $32,1
   clr $0,30
-  sub $32,1
   mov $0,$30
+  sub $32,1
   sub $0,$32
   mov $27,$0
   mov $29,$0
   add $29,1
   lpb $29,1
     clr $0,27
-    sub $29,1
     mov $0,$27
+    sub $29,1
     sub $0,$29
     mov $2,$0
     add $0,2
     add $3,$0
-    mul $0,$0
     mov $0,$2
     cal $0,5586
     sub $0,$2
     mul $2,$3
     add $0,$2
-    mov $1,$3
     sub $0,1
     mov $2,$3
     add $2,$0
-    mul $3,2
-    add $1,1
-    sub $3,$0
-    mov $26,$3
-    cmp $26,0
-    add $3,$26
-    div $1,$3
-    add $4,1
-    trn $0,$0
-    mov $1,$0
     mov $1,$2
     add $28,$1
   lpe
