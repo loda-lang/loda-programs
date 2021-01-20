@@ -1,0 +1,36 @@
+; A019445: Form a permutation of the positive integers, p_1, p_2, ..., such that the average of each initial segment is an integer, using the greedy algorithm to define p_n; sequence gives p_1+..+p_n.
+; 1,4,6,12,20,24,35,40,54,70,77,96,117,126,150,160,187,216,228,260,273,308,345,360,400,442,459,504,522,570,620,640,693,748,770,828,851,912,975,1000,1066,1092,1161,1232,1260,1334,1410,1440,1519,1550
+
+mov $7,$0
+mov $5,$0
+sub $2,$0
+add $1,$0
+mul $1,$0
+mul $1,$0
+mov $2,2
+add $4,$0
+sub $1,5
+sub $2,1
+cal $0,73869
+mov $1,$0
+mov $2,$4
+div $4,2
+add $1,$2
+mov $1,$0
+mul $1,$2
+sub $0,1
+mov $2,1
+add $1,$0
+mov $3,$1
+add $0,$4
+add $1,3
+mov $6,$5
+mul $6,$5
+mul $6,$5
+sub $1,1
+mov $8,$7
+mov $9,$8
+mul $9,1
+add $1,$9
+mul $8,$7
+mul $8,$7

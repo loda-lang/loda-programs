@@ -1,0 +1,42 @@
+; A267368: Total number of ON (black) cells after n iterations of the "Rule 126" elementary cellular automaton starting with a single ON (black) cell.
+; 1,4,8,15,19,27,35,50,54,62,70,86,94,110,126,157,161,169,177,193,201,217,233,265,273,289,305,337,353,385,417,480,484,492,500,516,524,540,556,588,596,612,628,660,676,708,740,804,812,828,844,876,892,924,956
+
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  mov $5,$0
+  mov $1,$0
+  add $1,$0
+  mov $2,$0
+  mov $0,$2
+  add $2,$1
+  sub $1,2
+  cal $0,71050
+  mov $3,$1
+  mov $3,$1
+  sub $3,$0
+  mov $2,2
+  add $0,3
+  mov $0,$1
+  mov $1,$0
+  add $0,4
+  mov $2,$3
+  mul $1,$2
+  sub $0,2
+  add $3,1
+  mov $4,$3
+  mov $1,$2
+  add $1,12
+  mov $6,$5
+  mul $6,$5
+  mul $6,$5
+  sub $1,10
+  add $1,1
+  add $8,$1
+lpe
+mov $1,$8
