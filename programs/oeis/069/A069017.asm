@@ -3,8 +3,7 @@
 
 cal $0,77442
 pow $0,2
-mul $0,6
 mov $1,$0
-div $1,48
+div $1,8
 mul $1,2
 add $1,1
