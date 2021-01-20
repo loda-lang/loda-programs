@@ -1,0 +1,42 @@
+; A156039: Number of compositions (ordered partitions) of n into 4 parts, where the first is at least as great as each of the others.
+; 1,1,4,7,11,17,26,35,48,63,81,102,127,154,187,223,263,308,359,413,474,540,612,690,775,865,964,1069,1181,1301,1430,1565,1710,1863,2025,2196,2377,2566,2767,2977,3197,3428,3671,3923,4188,4464,4752,5052,5365,5689
+
+mov $27,$0
+mov $29,$0
+add $29,1
+lpb $29,1
+  clr $0,27
+  sub $29,1
+  mov $0,$27
+  sub $0,$29
+  cal $0,8806
+  sub $3,$0
+  add $2,2
+  mov $2,22
+  mov $3,$0
+  mul $3,$0
+  trn $2,$3
+  add $4,$2
+  mov $3,$2
+  mov $2,1
+  add $0,2
+  mov $3,2
+  mul $2,2
+  mov $1,$0
+  mov $1,$0
+  mov $26,$3
+  cmp $26,0
+  add $3,$26
+  log $3,$3
+  mov $26,$2
+  cmp $26,0
+  add $2,$26
+  div $1,$2
+  add $4,3
+  add $0,$1
+  mov $4,$1
+  mov $1,$0
+  sub $1,3
+  add $28,$1
+lpe
+mov $1,$28
