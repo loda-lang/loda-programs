@@ -3,22 +3,7 @@
 
 cal $0,294317
 mod $0,3
-sub $4,$0
-mov $4,$0
-mov $0,$4
-mov $2,1
-sub $2,$0
 add $0,6
-sub $4,1
 cal $0,5
 mov $1,$0
-cmp $1,1
-mul $1,6
-mul $4,$0
-mov $4,$0
-mov $1,$0
-div $0,2
-add $1,9
-cmp $0,$2
-mov $2,4
-sub $1,11
+sub $1,2

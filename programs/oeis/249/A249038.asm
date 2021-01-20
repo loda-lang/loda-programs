@@ -6,29 +6,18 @@ mov $7,$0
 add $7,1
 lpb $7,1
   clr $0,5
-  sub $7,1
   mov $0,$5
+  sub $7,1
   sub $0,$7
   cal $0,249036
   gcd $0,2
   add $0,1
   add $2,1
   sub $0,$2
-  mul $0,2
-  mul $0,6
-  sub $2,5
+  mul $0,12
   mov $1,$0
-  sub $0,1
   sub $1,67
-  mul $2,$0
-  add $1,$0
-  add $4,1
-  mov $0,4
   sub $4,$1
-  mov $1,$4
-  mov $2,1
-  cal $1,144478
-  add $3,1
   mov $1,$4
   sub $1,21
   div $1,24
