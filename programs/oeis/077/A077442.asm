@@ -3,10 +3,4 @@
 
 mul $0,2
 cal $0,82981
-mov $2,$0
-add $2,3
-mov $1,$2
-sub $1,4
-div $1,2
-mul $1,2
-add $1,1
+mov $1,$0
