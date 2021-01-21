@@ -3,9 +3,8 @@
 
 div $0,3
 lpb $0,1
-  mul $0,2
-  div $0,3
-  add $2,1
+  mul $0,6
+  div $0,9
+  add $1,1
 lpe
-mov $1,$2
 add $1,1
