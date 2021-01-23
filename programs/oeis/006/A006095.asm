@@ -4,7 +4,6 @@
 mov $2,2
 pow $2,$0
 sub $2,1
-mov $0,$2
-bin $0,2
-mov $1,$0
+bin $2,2
+mov $1,$2
 div $1,3
