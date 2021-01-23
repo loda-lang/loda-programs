@@ -1,0 +1,49 @@
+; A267448: Total number of OFF (white) cells after n iterations of the "Rule 129" elementary cellular automaton starting with a single ON (black) cell.
+; 0,3,7,14,18,26,34,49,53,61,69,85,93,109,125,156,160,168,176,192,200,216,232,264,272,288,304,336,352,384,416,479,483,491,499,515,523,539,555,587,595,611,627,659,675,707,739,803,811,827,843,875,891,923,955
+
+mov $10,$0
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9,1
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  mov $5,$0
+  mov $1,$0
+  add $1,$0
+  mov $2,$0
+  mov $0,$2
+  add $2,$1
+  sub $1,2
+  cal $0,71050
+  mov $3,$1
+  mov $3,$1
+  sub $3,$0
+  mov $2,2
+  add $0,3
+  mov $0,$1
+  mov $1,$0
+  add $0,4
+  mov $2,$3
+  mul $1,$2
+  sub $0,2
+  add $3,1
+  mov $4,$3
+  mov $1,$2
+  add $1,12
+  mov $6,$5
+  mul $6,$5
+  mul $6,$5
+  sub $1,10
+  add $1,0
+  add $8,$1
+lpe
+mov $1,$8
+mov $11,$10
+mov $12,$11
+mul $12,1
+add $1,$12
+mul $11,$10
+mul $11,$10
