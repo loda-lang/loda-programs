@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,135679
+  cal $1,135679 ; a(n) = n if n = 1 or if n is prime. Otherwise, a(n) = 2 if n is even and a(n) = 3 if n is odd.
   add $2,$1
   mov $0,$2
   add $0,1

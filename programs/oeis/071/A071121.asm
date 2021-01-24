@@ -11,7 +11,7 @@ lpb $7,1
   sub $0,$7
   add $2,$0
   add $2,1
-  cal $2,4164
+  cal $2,4164 ; Sum of digits of n^3.
   mov $1,$2
   add $6,$1
 lpe

@@ -21,7 +21,7 @@ lpb $14,1
       sub $7,1
       add $0,$7
       sub $0,2
-      cal $0,130665
+      cal $0,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
       mov $1,$0
       mov $8,$7
       lpb $8,1

@@ -10,7 +10,7 @@ lpb $29,1
   sub $29,1
   sub $0,$29
   sub $0,168
-  cal $0,3849
+  cal $0,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
   add $3,$0
   sub $2,$3
   add $2,6

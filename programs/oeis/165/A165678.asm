@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,165677
+  cal $1,165677 ; Fifth right hand column of triangle A165674
   sub $0,1
   add $2,$1
 lpe

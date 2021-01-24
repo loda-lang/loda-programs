@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$2
-cal $0,8733
+cal $0,8733 ; Molien series for 3-dimensional group [2+, n] = 2*(n/2).
 add $0,2
 mov $4,1
 mov $5,$3

@@ -3,7 +3,7 @@
 
 mov $4,$0
 mov $5,$0
-cal $4,93
+cal $4,93 ; a(n) = floor(n^(3/2)).
 pow $4,2
 mov $1,$4
 mov $3,$5

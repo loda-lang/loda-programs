@@ -9,7 +9,7 @@ lpb $7,1
   mov $0,$5
   sub $7,1
   sub $0,$7
-  cal $0,87165
+  cal $0,87165 ; a(n)=1 when n == 1 (mod 4), otherwise a(n) = a(n - ceiling(n/4)) + 1. Removing all the 1's results in the original sequence with every term incremented by 1.
   add $2,$0
   mov $4,$2
   mod $4,2

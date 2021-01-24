@@ -9,7 +9,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,87451
+  cal $0,87451 ; G.f.: (2-x)/((1+2x)(1-3x)); e.g.f.: exp(3x)+exp(-2x); a(n)=3^n+(-2)^n.
   mov $1,$0
   add $3,$1
 lpe

@@ -7,7 +7,7 @@ lpb $4,1
   mov $0,$2
   sub $4,1
   add $0,$4
-  cal $0,87432
+  cal $0,87432 ; Expansion of 1+x*(1-x-4*x^2)/((1+x)*(1-2*x)*(1-3*x)).
   mov $1,$0
   mov $3,$4
   lpb $3,1

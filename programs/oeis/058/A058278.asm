@@ -8,7 +8,7 @@ lpb $4,1
   sub $4,1
   add $0,$4
   sub $0,1
-  cal $0,97333
+  cal $0,97333 ; Sum k=0..n, C(n-k, floor(k/2)).
   mov $3,$0
   mov $1,$3
   mov $2,$4

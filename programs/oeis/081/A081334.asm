@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,81325
+cal $0,81325 ; sigma(n^2) modulo 4.
 mov $1,$0

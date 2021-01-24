@@ -9,7 +9,7 @@ lpb $29,1
   sub $29,1
   add $0,$29
   sub $0,1
-  cal $0,271342
+  cal $0,271342 ; Sum of all even divisors of all positive integers <= n.
   add $5,$0
   add $0,$5
   mov $4,$0

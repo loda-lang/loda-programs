@@ -15,7 +15,7 @@ lpb $2,1
     sub $7,1
     add $0,$7
     sub $0,2
-    cal $0,306683
+    cal $0,306683 ; Integers k for which the base-phi representation of k does not include 1 or phi.
     mov $10,$0
     cmp $10,0
     add $0,$10

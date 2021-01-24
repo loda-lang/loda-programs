@@ -4,7 +4,7 @@
 mov $2,2
 mov $4,$0
 add $0,8
-cal $0,88842
+cal $0,88842 ; Denominator of quotient=sigma(7n)/sigma(n).
 add $2,$0
 mov $0,2
 add $2,2

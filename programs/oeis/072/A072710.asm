@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,1
-cal $1,72682
+cal $1,72682 ; Numbers congruent to {3, 36, 54, 57} mod 60.
 sub $1,36
 div $1,3
 mul $1,3

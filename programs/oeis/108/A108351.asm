@@ -9,7 +9,7 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   add $0,1
-  cal $0,1590
+  cal $0,1590 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) with a(0)=0, a(1)=1, a(2)=0.
   add $0,1
   mov $1,$0
   div $1,2

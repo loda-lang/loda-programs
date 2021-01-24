@@ -16,7 +16,7 @@ lpb $32,1
     mov $0,$27
     sub $29,1
     sub $0,$29
-    cal $0,144065
+    cal $0,144065 ; Values of n such that the expression sqrt(4!*(n+1) + 1) yields an integer.
     mov $26,$0
     cmp $26,0
     add $0,$26

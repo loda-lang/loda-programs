@@ -8,7 +8,7 @@ cmp $3,0
 add $2,$3
 mov $4,$1
 div $4,$2
-cal $0,84159
+cal $0,84159 ; Pell oblongs.
 add $4,27
 add $4,$0
 mov $1,$4

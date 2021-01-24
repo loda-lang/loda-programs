@@ -6,5 +6,5 @@ trn $0,1
 mov $2,$0
 add $2,$3
 mov $0,$2
-cal $0,53298
+cal $0,53298 ; Partial sums of A027964.
 mov $1,$0

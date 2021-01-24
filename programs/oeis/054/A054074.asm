@@ -12,7 +12,7 @@ lpb $2,1
   mov $1,$0
   mov $4,$1
   add $4,2
-  cal $4,285073
+  cal $4,285073 ; 0-limiting word of the morphism 0->10, 1-> 010.
   mov $0,$4
   add $1,1
   add $1,$0

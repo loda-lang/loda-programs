@@ -8,7 +8,7 @@ lpb $2,1
   mov $0,$5
   sub $2,1
   sub $0,$2
-  cal $0,158894
+  cal $0,158894 ; Sawtooth pattern of one, then two, then three, then four etc. consecutive odd numbers, starting each time at 3.
   pow $0,2
   mov $4,$0
   mov $1,$4

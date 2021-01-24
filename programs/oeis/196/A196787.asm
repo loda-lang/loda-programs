@@ -9,7 +9,7 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   mov $2,$0
-  cal $2,141523
+  cal $2,141523 ; Expansion of (3-2*x-3*x^2)/(1-x-x^2-x^3).
   mul $2,100
   mov $4,$2
   mov $1,$4

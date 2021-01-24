@@ -5,7 +5,7 @@ mov $2,$0
 mov $1,$2
 mov $3,$0
 add $1,$3
-cal $1,278484
+cal $1,278484 ; Main diagonal of A278482.
 div $1,2
 mul $1,2
 add $1,1

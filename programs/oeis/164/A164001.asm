@@ -11,7 +11,7 @@ lpb $7,1
   sub $0,1
   add $3,$0
   add $3,8
-  cal $3,134816
+  cal $3,134816 ; Padovan's spiral numbers.
   mov $1,$3
   sub $1,6
   mov $8,$7

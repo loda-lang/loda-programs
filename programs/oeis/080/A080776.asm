@@ -4,7 +4,7 @@
 mov $2,$0
 add $0,$2
 sub $2,1
-cal $0,279521
+cal $0,279521 ; Maximum numbers of single-direction edges in leveled binary trees with n nodes.
 add $0,2
 sub $0,$2
 mov $1,$0

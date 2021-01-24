@@ -7,7 +7,7 @@ lpb $3,1
   mov $0,$5
   sub $3,1
   add $0,$3
-  cal $0,192243
+  cal $0,192243 ; 0-sequence of reduction of Lucas sequence by x^2 -> x+1.
   mov $1,$0
   sub $1,1
   mov $2,$3

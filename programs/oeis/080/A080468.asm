@@ -7,7 +7,7 @@ lpb $3,1
   mov $0,$5
   sub $3,1
   add $0,$3
-  cal $0,87805
+  cal $0,87805 ; Partial sums of b(k) where {b(k)}_{k>=0} = limit n ->infty {A080578(k)-2k : k=2^n,2^n+1,2^n+2,......}.
   mov $1,$0
   mov $2,$3
   lpb $2,1

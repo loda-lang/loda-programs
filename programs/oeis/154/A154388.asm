@@ -10,7 +10,7 @@ lpb $7,1
   add $0,$7
   add $0,1
   add $2,1
-  cal $0,130855
+  cal $0,130855 ; 2n appears 2n+1 times, 2n+1 appears 2n times.
   sub $0,$2
   mov $1,$0
   mov $8,$7

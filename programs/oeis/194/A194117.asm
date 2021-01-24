@@ -8,7 +8,7 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,180122
+  cal $0,180122 ; First of three "least, sum, least" self-generating sequences.
   mov $1,$0
   add $1,1
   div $1,2

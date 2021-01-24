@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,1
-cal $1,284675
+cal $1,284675 ; Positions of 0 in A284674; complement of A284676.
 sub $1,3
 mul $1,4
 sub $1,12

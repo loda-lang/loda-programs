@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,3
-  cal $0,5313
+  cal $0,5313 ; Number of triangular anti-Hadamard matrices of order n.
   mov $1,$0
   add $1,1
   mov $2,$3

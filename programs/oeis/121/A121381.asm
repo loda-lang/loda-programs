@@ -15,7 +15,7 @@ lpb $6,1
     sub $10,1
     add $0,$10
     sub $0,1
-    cal $0,63459
+    cal $0,63459 ; A Beatty sequence: a(n) = floor(n*(Pi - 1)).
     mov $4,$0
     add $4,1
     mul $4,11

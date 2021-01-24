@@ -3,7 +3,7 @@
 
 add $0,1
 pow $0,2
-cal $0,54519
+cal $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
 sub $0,2
 mov $1,$0
 add $1,1

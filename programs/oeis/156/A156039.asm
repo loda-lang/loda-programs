@@ -8,7 +8,7 @@ lpb $4,1
   mov $0,$2
   sub $4,1
   sub $0,$4
-  cal $0,8806
+  cal $0,8806 ; Expansion of (1+x^3)/((1-x^2)^2*(1-x^3)).
   add $0,2
   mov $1,$0
   div $1,2

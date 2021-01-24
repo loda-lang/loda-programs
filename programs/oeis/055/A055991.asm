@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,55990
+  cal $1,55990 ; a(n) is its own 4th difference.
   sub $0,1
   add $2,$1
   mov $3,$2

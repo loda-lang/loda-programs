@@ -3,7 +3,7 @@
 
 mov $4,$0
 mul $0,2
-cal $0,228071
+cal $0,228071 ; Write n in binary and interpret as a decimal number; a(n) is this quantity minus n.
 mov $1,$0
 add $1,1
 mov $3,$4

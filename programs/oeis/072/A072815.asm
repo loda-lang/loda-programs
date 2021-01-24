@@ -3,7 +3,7 @@
 
 mul $0,6
 mov $1,$0
-cal $1,62967
+cal $1,62967 ; a(n) = 2*(sigma(n)-n-1)+1, where sigma = A000203, sum of divisors of n.
 mov $2,$1
 add $2,1
 mov $1,$2

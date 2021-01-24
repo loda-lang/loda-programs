@@ -3,4 +3,4 @@
 
 mul $0,2
 mov $1,$0
-cal $1,53298
+cal $1,53298 ; Partial sums of A027964.

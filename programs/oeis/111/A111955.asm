@@ -12,7 +12,7 @@ lpb $29,1
   mod $2,2
   mul $2,2
   clr $3,2
-  cal $0,48655
+  cal $0,48655 ; Generalized Pellian with second term equal to 5.
   sub $2,$0
   sub $3,$2
   div $3,2

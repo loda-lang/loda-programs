@@ -15,7 +15,7 @@ lpb $2,1
     sub $7,1
     add $0,$7
     sub $0,1
-    cal $0,80579
+    cal $0,80579 ; a(1)=1; for n>1, a(n)=a(n-1)+1 if n is already in the sequence, a(n)=a(n-1)+4 otherwise.
     sub $0,1
     mov $10,$0
     cmp $10,0

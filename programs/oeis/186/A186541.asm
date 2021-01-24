@@ -3,7 +3,7 @@
 
 mov $4,$0
 mov $5,$0
-cal $4,225215
+cal $4,225215 ; Floor of the Euclidean distance of a point on the (1, 1, 1; 1, 1, 1) 3D walk.
 sub $4,4
 add $2,$4
 add $2,4

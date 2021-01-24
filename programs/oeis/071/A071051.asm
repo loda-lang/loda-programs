@@ -4,7 +4,7 @@
 mov $1,$0
 add $1,$0
 sub $1,2
-cal $0,71050
+cal $0,71050 ; Number of 0's in n-th row of triangle in A071035.
 mov $3,$1
 sub $3,$0
 mov $2,$3

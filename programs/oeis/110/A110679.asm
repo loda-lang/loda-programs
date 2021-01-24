@@ -9,7 +9,7 @@ lpb $7,1
   mov $0,$5
   sub $7,1
   sub $0,$7
-  cal $0,1076
+  cal $0,1076 ; Denominators of continued fraction convergents to sqrt(5).
   div $0,2
   add $3,$0
   mov $0,2

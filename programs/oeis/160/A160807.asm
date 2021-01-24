@@ -8,7 +8,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,130665
+  cal $0,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
   mov $1,$0
   add $4,$1
 lpe

@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,$2
-cal $0,40329
+cal $0,40329 ; Continued fraction for sqrt(348).
 mov $3,$0
 mul $3,3
 div $3,2

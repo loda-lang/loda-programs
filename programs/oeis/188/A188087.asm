@@ -3,7 +3,7 @@
 
 mov $2,$0
 div $0,3
-cal $0,76538
+cal $0,76538 ; Numerators a(n) of fractions slowly converging to e: let a(1) = 0, b(n) = n - a(n); if (a(n) + 1) / b(n) < e then a(n+1) = a(n) + 1, else a(n+1)= a(n).
 add $0,2
 mov $1,$0
 sub $1,1

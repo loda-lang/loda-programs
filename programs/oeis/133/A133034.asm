@@ -4,7 +4,7 @@
 lpb $0,1
   sub $0,2
   mov $1,$0
-  cal $1,78027
+  cal $1,78027 ; Expansion of (1 - x)/(1 - x^2 - x^3).
   mov $0,1
 lpe
 add $0,$1

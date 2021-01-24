@@ -3,6 +3,6 @@
 
 add $0,1
 pow $0,3
-cal $0,307136
+cal $0,307136 ; a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
 mov $1,$0
 sub $1,2

@@ -3,7 +3,7 @@
 
 mov $2,-1
 pow $2,$0
-cal $0,4453
+cal $0,4453 ; Nimsum n + 12.
 add $2,2
 add $2,$0
 mov $1,$2

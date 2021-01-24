@@ -8,7 +8,7 @@ lpb $4,1
   mov $0,$2
   sub $4,1
   sub $0,$4
-  cal $0,8937
+  cal $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
   trn $0,1
   mov $3,1
   add $3,$0

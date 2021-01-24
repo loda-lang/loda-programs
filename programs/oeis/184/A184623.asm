@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,361
-cal $0,186315
+cal $0,186315 ; Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and hexagonal numbers.  Complement of A186316.
 mov $1,$0
 sub $1,614

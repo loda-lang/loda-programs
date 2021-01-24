@@ -3,7 +3,7 @@
 
 mov $5,$0
 pow $0,2
-cal $0,48763
+cal $0,48763 ; Smallest cube >= n.
 mov $4,$0
 mov $1,$4
 mov $2,$5

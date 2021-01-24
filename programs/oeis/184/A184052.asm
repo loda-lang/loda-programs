@@ -29,7 +29,7 @@ lpb $36,1
       add $0,$26
       div $1,$0
       mov $4,$1
-      cal $0,183979
+      cal $0,183979 ; 1/4 the number of (n+1) X 3 binary arrays with all 2 X 2 subblock sums the same.
       mov $1,$0
       sub $4,6
       add $1,$4

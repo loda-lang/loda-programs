@@ -4,7 +4,7 @@
 sub $2,$0
 lpb $0,1
   mov $1,$0
-  cal $1,116717
+  cal $1,116717 ; Number of permutations of length n which avoid the patterns 231, 1423, 3214.
   sub $0,1
   add $2,$1
 lpe

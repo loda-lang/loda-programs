@@ -40,7 +40,7 @@ lpb $22,1
           sub $0,1
           add $3,1
           add $0,$3
-          cal $0,175660
+          cal $0,175660 ; Eight bishops and one elephant on a 3 X 3 chessboard. a(n) = 2^(n+2) - 3*F(n+2).
           sub $0,1
           mov $1,$0
           mul $0,2

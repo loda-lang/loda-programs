@@ -31,7 +31,7 @@ lpb $4,1
         add $1,4
         mov $2,$1
         sub $7,1
-        cal $2,139748
+        cal $2,139748 ; a(n) = Sum_{ k >= 0} binomial(n,5*k+3).
       lpe
       mov $1,$2
       mov $12,$11

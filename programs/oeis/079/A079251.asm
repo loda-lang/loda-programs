@@ -20,7 +20,7 @@ lpb $33,1
     cmp $26,0
     add $0,$26
     add $4,6
-    cal $0,79250
+    cal $0,79250 ; Even numbers in A079000.
     sub $4,$0
     sub $0,$4
     mov $1,$0

@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,217233
+  cal $0,217233 ; Expansion of (1-2*x+x^2)/(1-3*x-3*x^2+x^3).
   add $0,1
   mov $1,$0
   mov $2,$3

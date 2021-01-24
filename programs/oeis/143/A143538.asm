@@ -5,6 +5,6 @@ mov $1,$0
 add $1,1
 mov $2,$0
 sub $1,$2
-cal $0,25691
-cal $0,10051
+cal $0,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mul $1,$0

@@ -3,7 +3,7 @@
 
 mov $2,1
 add $2,$0
-cal $0,93474
+cal $0,93474 ; Duplicate of A030101.
 sub $2,$0
 mov $1,$2
 sub $1,1

@@ -5,7 +5,7 @@ mov $2,$0
 div $0,2
 mod $2,2
 sub $0,$2
-cal $0,153981
+cal $0,153981 ; a(n) = 36*Fibonacci(2*n+1) - 4.
 div $0,2
 mov $1,$0
 div $1,18

@@ -10,7 +10,7 @@ lpb $5,1
     add $1,5
     trn $5,4
   lpe
-  cal $1,184117
+  cal $1,184117 ; Lower s-Wythoff sequence, where s(n) = 2n + 1.
 lpe
 sub $1,7
 mov $4,$3

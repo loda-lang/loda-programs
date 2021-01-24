@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,1
-cal $1,249032
+cal $1,249032 ; First differences of A075326.
 mul $1,4
 sub $1,15
 div $1,4

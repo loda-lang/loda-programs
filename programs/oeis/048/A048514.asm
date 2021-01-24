@@ -31,7 +31,7 @@ lpb $39,1
         sub $29,1
         add $0,$29
         sub $0,1
-        cal $0,84851
+        cal $0,84851 ; Binomial transform of binomial(n+2,2).
         sub $0,1
         mov $26,$0
         cmp $26,0

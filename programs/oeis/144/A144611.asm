@@ -16,8 +16,8 @@ lpb $10,1
     mov $0,$5
     sub $7,1
     sub $0,$7
-    cal $0,276864
-    cal $0,5
+    cal $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+    cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
     mov $2,$0
     add $2,1
     mov $0,$2

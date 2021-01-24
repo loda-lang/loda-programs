@@ -7,7 +7,7 @@ lpb $5,1
   mov $0,$2
   sub $5,1
   add $0,$5
-  cal $0,82752
+  cal $0,82752 ; Duplicate of A023758.
   mov $4,$0
   div $4,2
   mov $1,$4

@@ -3,7 +3,7 @@
 
 add $0,1
 bin $0,2
-cal $0,4738
+cal $0,4738 ; Concatenation of sequences (1,2,...,n-1,n,n-1,...,2) for n >= 2.
 mov $2,$0
 mov $3,$2
 add $3,$2

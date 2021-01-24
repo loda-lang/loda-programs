@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,1
-cal $1,84968
+cal $1,84968 ; Multiples of 7 coprime to 30.
 sub $1,49
 div $1,14
 mul $1,2

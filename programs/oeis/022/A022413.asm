@@ -12,7 +12,7 @@ lpb $10,1
   sub $2,1
   mov $3,$2
   mov $5,$0
-  cal $3,183136
+  cal $3,183136 ; a(n) = [1/r]+[2/r]+...+[n/r], where r = golden ratio = (1+sqrt(5))/2 and []=floor.
   add $3,1
   mov $1,$3
   mov $6,$5

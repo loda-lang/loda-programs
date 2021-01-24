@@ -9,7 +9,7 @@ lpb $7,1
   sub $7,1
   add $0,$7
   sub $0,1
-  cal $0,241151
+  cal $0,241151 ; Number of distinct degrees in the partition graph G(n) defined at A241150.
   add $3,$0
   mul $3,$0
   add $0,$3

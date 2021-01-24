@@ -3,6 +3,6 @@
 
 add $0,1
 mov $2,$0
-cal $2,112560
+cal $2,112560 ; Sieve performed by successive iterations of steps where step m is: keep m terms, remove the next 2 and repeat; as m = 1,2,3,.. the remaining terms form this sequence.
 mov $1,$2
 div $1,3

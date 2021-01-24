@@ -9,10 +9,10 @@ lpb $7,1
   mov $0,$5
   sub $7,1
   sub $0,$7
-  cal $0,4738
+  cal $0,4738 ; Concatenation of sequences (1,2,...,n-1,n,n-1,...,2) for n >= 2.
   add $1,$0
   mov $3,$1
-  cal $3,53208
+  cal $3,53208 ; Row sums of A053207.
   mov $1,$3
   div $1,7
   add $1,1

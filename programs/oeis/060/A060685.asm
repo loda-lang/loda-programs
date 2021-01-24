@@ -4,7 +4,7 @@
 mov $2,$0
 add $0,$2
 add $0,2
-cal $0,60681
+cal $0,60681 ; Largest difference between consecutive divisors of n (ordered by size).
 add $0,5
 mov $1,$0
 sub $1,7

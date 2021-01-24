@@ -8,7 +8,7 @@ lpb $4,1
   sub $4,1
   add $0,$4
   sub $0,2
-  cal $0,156875
+  cal $0,156875 ; Number of safe primes <= n.
   mov $1,$0
   mov $2,$4
   lpb $2,1

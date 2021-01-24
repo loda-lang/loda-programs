@@ -3,6 +3,6 @@
 
 mov $1,$0
 add $1,1
-cal $0,5
+cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mul $1,$0
 add $1,1

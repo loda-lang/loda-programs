@@ -4,7 +4,7 @@
 mov $4,$0
 add $4,$0
 mov $0,$4
-cal $0,122918
+cal $0,122918 ; Expansion of (1+x)^2/(1+x+x^2)^2.
 add $1,$0
 mov $3,$1
 add $3,12

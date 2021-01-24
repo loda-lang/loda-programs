@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,6053
+  cal $0,6053 ; a(n) = a(n-1) + 2*a(n-2) - a(n-3).
   mov $1,$0
   add $1,1
   mov $2,$3

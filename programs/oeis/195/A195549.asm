@@ -5,7 +5,7 @@ mov $2,$0
 add $2,2
 mul $2,2
 sub $2,1
-cal $2,167808
+cal $2,167808 ; Numerator of x(n) = x(n-1) + x(n-2), x(0)=0, x(1)=1/2.
 mul $2,2
 mov $1,$2
 div $1,8

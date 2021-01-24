@@ -23,7 +23,7 @@ lpb $14,1
       sub $7,1
       add $0,$7
       sub $0,2
-      cal $0,83658
+      cal $0,83658 ; a(n) = a(n-1) + a(n-2) + gcd(a(n-1),a(n-2)) for n>1, with a(0)=1, a(1)=1.
       mul $0,3
       mov $1,$0
       mov $8,$7

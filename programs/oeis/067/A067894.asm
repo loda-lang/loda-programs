@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,97256
+  cal $1,97256 ; Numbers whose set of base 10 digits is {0,9}.
   sub $0,1
   add $2,$1
   mul $1,5

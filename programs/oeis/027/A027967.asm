@@ -8,7 +8,7 @@ lpb $3,1
   mov $0,$5
   sub $3,1
   sub $0,$3
-  cal $0,27966
+  cal $0,27966 ; T(n, 2*n-4), T given by A027960.
   trn $0,3
   mov $2,3
   add $2,$0

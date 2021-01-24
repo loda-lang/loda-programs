@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $4,$0
-cal $0,1065
+cal $0,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
 add $3,1
 mul $0,$3
 add $0,3

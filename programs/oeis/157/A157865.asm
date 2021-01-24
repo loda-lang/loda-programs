@@ -12,7 +12,7 @@ lpb $3,1
   sub $0,4
   mov $1,$0
   add $1,5
-  cal $1,99802
+  cal $1,99802 ; Bisection of A000720.
   mov $2,$3
   lpb $2,1
     sub $2,1

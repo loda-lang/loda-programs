@@ -8,7 +8,7 @@ lpb $3,1
   mov $0,$5
   sub $3,1
   sub $0,$3
-  cal $0,39834
+  cal $0,39834 ; a(n+2) = -a(n+1) + a(n) (signed Fibonacci numbers) with a(-2) = a(-1) = 1; or Fibonacci numbers (A000045) extended to negative indices.
   pow $0,2
   mov $2,36
   add $2,$0

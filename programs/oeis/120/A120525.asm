@@ -8,7 +8,7 @@ lpb $5,1
   sub $5,1
   add $0,$5
   sub $0,1
-  cal $0,96346
+  cal $0,96346 ; Complement of A004128.
   mov $2,$0
   mov $4,$2
   mov $1,$4

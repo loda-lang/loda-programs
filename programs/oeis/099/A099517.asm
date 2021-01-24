@@ -7,7 +7,7 @@ lpb $3,1
   mov $0,$5
   sub $3,1
   add $0,$3
-  cal $0,126
+  cal $0,126 ; A nonlinear binomial sum.
   div $0,2
   mov $1,$0
   mov $2,$3

@@ -4,7 +4,7 @@
 mov $2,$0
 trn $2,1
 sub $2,2
-cal $0,8763
+cal $0,8763 ; Expansion of g.f.: x^4/((1-x)*(1-x^2)^2*(1-x^3)).
 add $0,$2
 mov $2,$0
 add $2,32

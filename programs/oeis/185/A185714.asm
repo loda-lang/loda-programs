@@ -8,8 +8,8 @@ lpb $8,1
   mov $0,$6
   sub $8,1
   sub $0,$8
-  cal $0,185708
-  cal $0,5
+  cal $0,185708 ; Characteristic function of positive numbers that are primes ending in 7.
+  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $0,6
   add $3,1
   add $0,$3

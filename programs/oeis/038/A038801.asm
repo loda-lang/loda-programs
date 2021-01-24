@@ -3,7 +3,7 @@
 
 mul $0,5
 add $0,4
-cal $0,99801
+cal $0,99801 ; PrimePi(2n+1), the number of primes less than or equal to 2n+1.
 add $0,44
 mul $0,14
 mov $1,$0

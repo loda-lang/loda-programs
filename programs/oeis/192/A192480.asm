@@ -4,7 +4,7 @@
 mov $3,$0
 lpb $0,1
   mov $1,$0
-  cal $1,120588
+  cal $1,120588 ; G.f. is 1 + x*c(x), where c(x) is the g.f. of the Catalan numbers (A000108).
   mov $0,1
 lpe
 mov $4,$3

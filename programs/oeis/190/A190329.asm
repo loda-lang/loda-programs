@@ -15,7 +15,7 @@ lpb $2,1
     sub $7,1
     add $0,$7
     sub $0,1
-    cal $0,188302
+    cal $0,188302 ; Positions of 1 in A188300; complement of A188301.
     sub $0,1
     mov $3,$0
     sub $3,6

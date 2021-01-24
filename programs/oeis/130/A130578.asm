@@ -6,6 +6,6 @@ mov $0,1
 add $2,1
 mov $3,$2
 add $0,$3
-cal $0,5252
+cal $0,5252 ; a(n) = Sum_{k=0..floor(n/4)} binomial(n-2k,2k).
 mov $1,$0
 sub $1,1

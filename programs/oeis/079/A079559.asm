@@ -7,7 +7,7 @@ lpb $6,1
   mov $0,$7
   sub $6,1
   add $0,$6
-  cal $0,80578
+  cal $0,80578 ; a(1)=1; for n > 1, a(n) = a(n-1) + 1 if n is already in the sequence, a(n) = a(n-1) + 3 otherwise.
   mov $2,$0
   mov $3,$2
   mov $1,$3

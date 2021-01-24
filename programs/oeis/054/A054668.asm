@@ -17,7 +17,7 @@ lpb $10,1
     sub $0,$7
     sub $0,1
     mov $3,$0
-    cal $0,116734
+    cal $0,116734 ; Number of permutations of length n which avoid the patterns 231, 1432, 4123.
     sub $0,$2
     mov $1,$0
     add $2,2

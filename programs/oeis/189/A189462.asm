@@ -4,7 +4,7 @@
 mov $1,$0
 mov $2,$0
 mov $5,$1
-cal $5,1950
+cal $5,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 add $5,1
 div $5,2
 mov $1,$5

@@ -8,5 +8,5 @@ sub $0,$3
 div $0,2
 mov $2,$3
 add $0,$2
-cal $0,154949
+cal $0,154949 ; Diagonal sums of Riordan array A154948.
 mov $1,$0

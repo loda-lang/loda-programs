@@ -12,7 +12,7 @@ lpb $2,1
   div $0,2
   mod $3,2
   sub $0,$3
-  cal $0,153981
+  cal $0,153981 ; a(n) = 36*Fibonacci(2*n+1) - 4.
   div $0,2
   mov $1,$0
   div $1,18

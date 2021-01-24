@@ -4,7 +4,7 @@
 mov $2,1
 lpb $0,1
   mov $1,$0
-  cal $1,77973
+  cal $1,77973 ; Expansion of 1/(1+x-2*x^3).
   sub $0,1
   add $2,$1
 lpe

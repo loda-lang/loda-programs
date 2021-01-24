@@ -18,7 +18,7 @@ lpb $2,1
     add $5,2
     lpb $5,1
       mov $4,2
-      cal $0,80578
+      cal $0,80578 ; a(1)=1; for n > 1, a(n) = a(n-1) + 1 if n is already in the sequence, a(n) = a(n-1) + 3 otherwise.
       bin $4,$0
       mov $5,$3
     lpe

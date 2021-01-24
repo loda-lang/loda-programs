@@ -4,7 +4,7 @@
 mov $1,$0
 mov $2,1
 mul $2,$1
-cal $2,131040
+cal $2,131040 ; a(n) = (1/2+1/2*i*sqrt(11))^n + (1/2-1/2*i*sqrt(11))^n, where i=sqrt(-1).
 mov $1,$2
 mul $2,$1
 mov $1,$2

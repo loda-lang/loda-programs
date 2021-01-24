@@ -10,8 +10,8 @@ lpb $7,1
   sub $0,$7
   add $1,1
   sub $0,$1
-  cal $0,89196
-  cal $0,10051
+  cal $0,89196 ; Floor(n / (smallest prime factor of n+1)).
+  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $0,4
   mov $1,$0
   sub $1,4

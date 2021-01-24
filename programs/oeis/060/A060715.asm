@@ -9,6 +9,6 @@ add $3,$2
 div $1,$3
 lpb $0,1
   mov $1,$0
-  cal $1,108954
+  cal $1,108954 ; a(n) = pi(2*n) - pi(n). Number of primes in the interval (n,2n].
   mov $0,2
 lpe

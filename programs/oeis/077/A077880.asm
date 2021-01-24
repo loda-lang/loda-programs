@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $4,$1
-cal $0,119282
+cal $0,119282 ; Alternating sum of the first n Fibonacci numbers.
 sub $0,$1
 add $0,2
 mov $2,4

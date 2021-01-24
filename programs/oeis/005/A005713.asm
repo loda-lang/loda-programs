@@ -7,7 +7,7 @@ lpb $5,1
   mov $0,$3
   sub $5,1
   add $0,$5
-  cal $0,287724
+  cal $0,287724 ; Positions of 1 in A287722; complement of A287723.
   mov $4,$0
   sub $4,1
   mov $1,$4

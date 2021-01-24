@@ -16,7 +16,7 @@ lpb $10,1
     sub $7,1
     sub $0,$7
     add $3,$0
-    cal $0,236840
+    cal $0,236840 ; n minus number of runs in the binary expansion of n: a(n) = n - A005811(n).
     sub $3,$0
     mul $3,2
     mov $0,$3

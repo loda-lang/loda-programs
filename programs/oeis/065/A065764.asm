@@ -5,7 +5,7 @@ mov $2,$0
 add $0,1
 add $2,1
 mul $2,$0
-cal $2,39653
+cal $2,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
 mov $1,$2
 div $1,2
 mul $1,2

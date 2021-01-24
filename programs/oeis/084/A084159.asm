@@ -12,7 +12,7 @@ lpb $3,1
   mov $0,0
   add $1,1
   add $0,$1
-  cal $0,79291
+  cal $0,79291 ; Squares of Pell numbers.
   mov $1,$0
   mov $2,$3
   lpb $2,1

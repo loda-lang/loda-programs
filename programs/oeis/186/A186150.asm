@@ -14,7 +14,7 @@ lpb $2,1
     mov $0,$5
     sub $7,1
     add $0,$7
-    cal $0,93
+    cal $0,93 ; a(n) = floor(n^(3/2)).
     div $0,2
     mul $0,2
     mov $1,$0

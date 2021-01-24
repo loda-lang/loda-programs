@@ -4,7 +4,7 @@
 lpb $0,1
   mov $1,$0
   add $2,20
-  cal $1,25691
+  cal $1,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
   mov $0,$1
 lpe
 mov $1,$2

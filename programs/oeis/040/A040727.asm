@@ -9,7 +9,7 @@ lpb $3,1
   add $0,$3
   sub $0,1
   div $0,2
-  cal $0,248474
+  cal $0,248474 ; Numbers congruent to 13 or 17 mod 30.
   mov $1,$0
   mul $1,2
   sub $1,1

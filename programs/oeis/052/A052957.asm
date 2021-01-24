@@ -11,8 +11,8 @@ lpb $3,1
   mov $1,$0
   pow $0,2
   add $1,1
-  cal $1,56326
-  cal $0,10051
+  cal $1,56326 ; Number of reversible string structures with n beads using exactly two different colors.
+  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $6,$0
   cmp $6,0
   add $0,$6

@@ -4,7 +4,7 @@
 mov $2,1
 lpb $0,1
   mov $1,$0
-  cal $1,86926
+  cal $1,86926 ; Product of Fibonacci and (shifted) triangular numbers.
   sub $0,1
   add $2,$1
 lpe

@@ -5,7 +5,7 @@ add $0,1
 mul $0,2
 mov $2,$0
 sub $2,1
-cal $2,50406
+cal $2,50406 ; Partial sums of A051880.
 mov $1,$2
 sub $1,16
 div $1,16

@@ -3,7 +3,7 @@
 
 mov $2,1
 mul $2,$0
-cal $0,198082
+cal $0,198082 ; Ceiling(n*Sqrt(5)).
 add $0,29
 mul $2,2
 add $2,$0

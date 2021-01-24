@@ -7,7 +7,7 @@ lpb $2,1
   sub $2,1
   mov $3,$0
   sub $3,1
-  cal $0,142242
+  cal $0,142242 ; Row sums of A143200.
   add $3,$0
   trn $3,2
 lpe

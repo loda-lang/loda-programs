@@ -11,7 +11,7 @@ lpb $4,1
   mul $0,2
   mov $1,$0
   add $1,1
-  cal $1,19446
+  cal $1,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
   div $1,2
   mov $3,$1
   mul $3,2

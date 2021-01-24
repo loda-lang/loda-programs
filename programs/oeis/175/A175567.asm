@@ -6,7 +6,7 @@ mov $3,$0
 add $0,1
 mul $3,$1
 mov $2,$3
-cal $0,10051
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 add $1,$2
 mul $1,$0
 div $1,2

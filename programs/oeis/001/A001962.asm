@@ -5,7 +5,7 @@ mul $0,2
 mov $1,$0
 add $1,1
 mov $3,$1
-cal $1,3623
+cal $1,3623 ; Wythoff AB-numbers: [[n*phi^2]*phi], where phi = (1+sqrt(5))/2.
 add $2,$1
 add $2,$3
 mov $1,$2

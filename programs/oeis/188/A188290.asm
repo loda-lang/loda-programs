@@ -4,7 +4,7 @@
 add $0,1
 mov $2,$0
 add $0,$2
-cal $0,188026
+cal $0,188026 ; Positions of 0 in the zero-one sequence given by z(n)=[nr]-[nr-8r]-[8r], where r=(1+sqrt(5))/2, [ ]=floor, n>=1.
 sub $2,$2
 add $2,$0
 add $2,1

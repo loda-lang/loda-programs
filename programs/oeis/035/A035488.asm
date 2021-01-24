@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $2,$0
-cal $2,134860
+cal $2,134860 ; Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
 add $2,1
 div $2,2
 mov $0,$2

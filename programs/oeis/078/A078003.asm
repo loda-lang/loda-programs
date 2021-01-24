@@ -17,7 +17,7 @@ lpb $33,1
     add $0,$29
     sub $0,1
     add $1,$0
-    cal $1,77858
+    cal $1,77858 ; Expansion of (1-x)^(-1)/(1-2*x+2*x^2-2*x^3).
     add $2,$1
     mul $2,2
     mov $1,$2

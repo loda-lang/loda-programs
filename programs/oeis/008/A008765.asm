@@ -9,7 +9,7 @@ lpb $7,1
   mov $0,$5
   sub $7,1
   sub $0,$7
-  cal $0,8733
+  cal $0,8733 ; Molien series for 3-dimensional group [2+, n] = 2*(n/2).
   mov $1,$0
   add $0,16
   mov $4,$0

@@ -17,7 +17,7 @@ lpb $3,1
     mov $5,$0
     add $0,$5
     add $0,3
-    cal $0,184517
+    cal $0,184517 ; Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
     add $0,1
     div $0,2
     mov $1,$0

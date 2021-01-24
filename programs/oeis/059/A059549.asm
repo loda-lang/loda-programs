@@ -3,7 +3,7 @@
 
 mov $3,$0
 add $0,1
-cal $0,254528
+cal $0,254528 ; Number of decimal digits in the integer part of e^n.
 add $0,13
 mov $1,$0
 sub $1,13

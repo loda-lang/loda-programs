@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,69720
+  cal $1,69720 ; a(n) = 2^(n-1)*binomial(2n-1, n).
   sub $0,1
   add $2,$1
 lpe

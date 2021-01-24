@@ -10,7 +10,7 @@ lpb $7,1
   add $0,$7
   sub $0,2
   add $3,3
-  cal $0,137709
+  cal $0,137709 ; Secondary Upper Wythoff Sequence.
   mul $0,$3
   mov $1,$0
   mov $8,$7

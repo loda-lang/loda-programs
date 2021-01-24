@@ -8,7 +8,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,147582
+  cal $0,147582 ; First differences of A147562.
   add $0,3
   div $0,2
   mov $1,$0

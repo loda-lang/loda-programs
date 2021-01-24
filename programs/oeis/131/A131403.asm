@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$2
-cal $0,167821
+cal $0,167821 ; a(n) is the number of n-tosses having a run of 3 or more heads or a run of 3 or more tails for a fair coin (i.e., probability is a(n)/2^n).
 add $0,3
 add $3,$0
 mov $1,$3

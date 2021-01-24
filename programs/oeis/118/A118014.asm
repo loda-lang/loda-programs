@@ -3,6 +3,6 @@
 
 mov $2,$0
 mul $0,$2
-cal $0,226355
+cal $0,226355 ; Number of ordered pairs (i,j) with |i| * |j| <= n.
 mov $1,$0
 div $1,8

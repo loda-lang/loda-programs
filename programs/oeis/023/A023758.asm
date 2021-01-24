@@ -4,7 +4,7 @@
 lpb $0,1
   mov $1,$0
   sub $1,1
-  cal $1,224195
+  cal $1,224195 ; Ordered sequence of numbers of form (2^n - 1)*2^m + 1 where n >= 1, m >= 1.
   mov $0,0
   mul $1,2
 lpe

@@ -3,7 +3,7 @@
 
 pow $0,2
 mul $0,2
-cal $0,22847
+cal $0,22847 ; Integer nearest n*sqrt(3).
 mov $2,$0
 sub $2,1
 mul $2,2

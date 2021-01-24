@@ -8,7 +8,7 @@ add $1,1
 mov $2,$4
 mul $2,2
 mov $5,$0
-cal $0,10051
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mul $1,$0
 sub $2,$1
 mov $1,$2

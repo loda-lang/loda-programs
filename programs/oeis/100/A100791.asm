@@ -8,7 +8,7 @@ lpb $5,1
   sub $5,1
   add $0,$5
   sub $0,1
-  cal $0,212013
+  cal $0,212013 ; Triangle read by rows: total number of pairs of states of the first n subshells of the nuclear shell model in which the subshells are ordered by energy level in increasing order.
   mov $1,$0
   add $0,$1
   mov $4,$0

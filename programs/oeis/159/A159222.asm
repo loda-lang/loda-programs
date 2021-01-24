@@ -4,7 +4,7 @@
 mov $2,1
 mul $2,$0
 add $2,2
-cal $2,159221
+cal $2,159221 ; 1/2 the number of n X n arrays of squares of integers with every 2X2 subblock summing to 20
 mov $1,$2
 sub $1,48
 div $1,4

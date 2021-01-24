@@ -15,7 +15,7 @@ lpb $7,1
   mov $0,$1
   add $0,$4
   sub $0,1
-  cal $0,10051
+  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $1,$0
   add $1,1
   gcd $1,3

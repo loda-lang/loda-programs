@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,48739
+  cal $0,48739 ; Expansion of 1/((1 - x)*(1 - 2*x - x^2)).
   sub $0,1
   div $0,2
   add $0,10

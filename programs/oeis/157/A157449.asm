@@ -3,6 +3,6 @@
 
 add $0,1
 mov $2,1
-cal $0,33879
+cal $0,33879 ; Deficiency of n, or 2n - (sum of divisors of n).
 add $2,$0
 mov $1,$2

@@ -15,7 +15,7 @@ lpb $4,1
     sub $8,1
     add $0,$8
     sub $0,2
-    cal $0,33811
+    cal $0,33811 ; Convolution of natural numbers n >= 1 with Lucas numbers L(k)(A000032) for k >= 2.
     mov $1,$0
     div $1,2
     mov $7,$8

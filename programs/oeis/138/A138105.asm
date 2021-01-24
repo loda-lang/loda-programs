@@ -8,7 +8,7 @@ lpb $3,1
   mov $0,$4
   sub $3,1
   sub $0,$3
-  cal $0,1690
+  cal $0,1690 ; Non-Fibonacci numbers.
   mov $2,$0
   mov $1,$2
   add $5,$1

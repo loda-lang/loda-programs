@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,1
-cal $0,324964
+cal $0,324964 ; a(n) = A000139(n) mod 2; Characteristic function of odd fibbinary numbers (A022341).
 add $0,1
 mov $1,$0
 sub $1,1

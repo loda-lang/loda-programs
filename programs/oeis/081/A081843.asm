@@ -3,7 +3,7 @@
 
 mov $4,$0
 sub $0,1
-cal $0,184516
+cal $0,184516 ; Lower s-Wythoff sequence, where s=4n-2.  Complement of A184517.
 mov $1,$0
 mov $3,$4
 mov $2,$3

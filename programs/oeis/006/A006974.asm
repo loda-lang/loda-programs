@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $2,7
-cal $0,1789
+cal $0,1789 ; a(n) = binomial(n,3)*2^(n-3).
 mul $2,$0
 mov $1,$2
 add $1,$0

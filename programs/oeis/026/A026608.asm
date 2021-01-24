@@ -7,7 +7,7 @@ lpb $3,1
   mov $0,$4
   sub $3,1
   add $0,$3
-  cal $0,26601
+  cal $0,26601 ; a(n) is the n-th number k such that s(k) = 1, where s = A026600.
   div $0,3
   mov $1,$0
   mov $2,$3

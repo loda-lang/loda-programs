@@ -8,7 +8,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   mul $0,2
-  cal $0,156595
+  cal $0,156595 ; Fixed point of the morphism 0->011, 1->010.
   mov $1,$0
   mov $0,8
   add $1,1

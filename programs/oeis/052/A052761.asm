@@ -4,7 +4,7 @@
 sub $0,2
 mov $2,2
 add $2,$0
-cal $0,28243
+cal $0,28243 ; a(n) = 3^(n-1) - 2*2^(n-1) + 1 (essentially Stirling numbers of second kind).
 mul $0,$2
 mov $1,$0
 div $1,4

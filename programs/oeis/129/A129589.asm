@@ -10,7 +10,7 @@ lpb $2,1
   sub $0,$2
   mov $1,$0
   add $1,1
-  cal $1,265278
+  cal $1,265278 ; Expansion of (x^4+x^3-x^2+x)/(x^3+x^2-3*x+1).
   add $3,$1
 lpe
 mov $1,$3

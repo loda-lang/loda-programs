@@ -7,7 +7,7 @@ cmp $5,0
 add $0,$5
 div $1,$0
 mov $3,$1
-cal $0,14473
+cal $0,14473 ; Pascal's triangle - 1.
 mov $1,$0
 sub $2,$1
 add $3,1

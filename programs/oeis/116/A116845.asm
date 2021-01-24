@@ -4,7 +4,7 @@
 mov $1,$0
 sub $1,1
 mov $3,$1
-cal $3,238846
+cal $3,238846 ; Expansion of (1-2*x)/(1-3*x+x^2)^2.
 mul $3,2
 add $2,$3
 add $2,2

@@ -15,7 +15,7 @@ lpb $2,1
     sub $7,1
     add $0,$7
     sub $0,1
-    cal $0,248365
+    cal $0,248365 ; 4n concatenated with itself.
     mov $1,$0
     mov $8,$7
     lpb $8,1

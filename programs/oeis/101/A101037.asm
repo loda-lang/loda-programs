@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,49581
+  cal $1,49581 ; Table T(n,k) = |n-k| read by antidiagonals (n >= 0, k >= 0).
   add $2,$1
   mov $4,$2
   cmp $4,0

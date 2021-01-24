@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,288876
+  cal $1,288876 ; a(n) = binomial(n+4, n)^2. Square of the fifth diagonal sequence of A007318 (Pascal). Fifth diagonal sequence of A008459.
   sub $0,1
   add $2,$1
 lpe

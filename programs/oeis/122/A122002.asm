@@ -10,7 +10,7 @@ lpb $4,1
   sub $0,1
   mov $3,1
   mul $3,$0
-  cal $0,255070
+  cal $0,255070 ; (1/2)*(n minus number of runs in the binary expansion of n): a(n) = (n - A005811(n)) / 2 = A236840(n)/2.
   add $0,2
   div $3,2
   mul $3,2

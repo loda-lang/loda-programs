@@ -8,7 +8,7 @@ lpb $4,1
   sub $4,1
   add $0,$4
   sub $0,1
-  cal $0,104859
+  cal $0,104859 ; Partial sums of A001764.
   mov $1,$0
   sub $1,1
   mov $3,$0

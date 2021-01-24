@@ -10,7 +10,7 @@ lpb $7,1
   add $0,$7
   sub $0,1
   add $4,$0
-  cal $0,105564
+  cal $0,105564 ; Number of blocks of exactly 4 Fibonacci numbers having equal length <= n.
   add $2,$0
   sub $4,$2
   add $4,2
