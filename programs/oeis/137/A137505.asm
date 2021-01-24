@@ -4,9 +4,6 @@
 mov $1,$0
 add $1,2
 cal $1,77973
-mul $1,10
-sub $1,10
-div $1,40
-mul $1,2
-add $1,2
-div $1,2
+sub $1,1
+div $1,4
+add $1,1
