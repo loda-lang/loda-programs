@@ -16,7 +16,7 @@ lpb $11,1
     sub $7,1
     add $0,$7
     sub $0,1
-    cal $0,307136
+    cal $0,307136 ; a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
     pow $0,2
     div $0,2
     add $2,$0

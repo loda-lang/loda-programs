@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,2
-  cal $0,48589
+  cal $0,48589 ; Pisot sequence L(7,9).
   div $0,3
   sub $0,1
   mov $1,$0

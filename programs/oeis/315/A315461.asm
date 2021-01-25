@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $5,$0
-cal $3,163812
+cal $3,163812 ; Expansion of (1 - x^5) * (1 - x^6) / ((1 - x) * (1 - x^10)) in powers of x.
 add $3,$0
 mov $1,$3
 mov $4,$5

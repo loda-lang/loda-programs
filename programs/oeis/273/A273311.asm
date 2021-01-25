@@ -10,7 +10,7 @@ lpb $29,1
   sub $29,1
   sub $0,$29
   add $4,$0
-  cal $4,273309
+  cal $4,273309 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
   mov $3,$4
   mov $1,$3
   add $28,$1

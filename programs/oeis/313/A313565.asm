@@ -4,7 +4,7 @@
 mov $2,$0
 mov $5,$0
 sub $0,2
-cal $0,9947
+cal $0,9947 ; Sequence of nonnegative integers, but insert n/2 after every even number n.
 add $0,$2
 div $0,2
 mov $1,$0

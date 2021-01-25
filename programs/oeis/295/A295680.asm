@@ -29,7 +29,7 @@ lpb $2,1
         mul $0,2
         add $0,1
         sub $7,1
-        cal $0,259626
+        cal $0,259626 ; List of numbers L and L + 1, where L = A000032, the Lucas numbers, sorted into increasing order and duplicates removed.
         div $0,5
       lpe
       mov $1,$0

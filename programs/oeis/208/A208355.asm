@@ -3,7 +3,7 @@
 
 sub $0,1
 div $0,2
-cal $0,128634
+cal $0,128634 ; Number of parallel permutations of length n.
 mov $1,$0
 div $1,2
 add $1,1

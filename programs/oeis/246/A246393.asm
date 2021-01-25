@@ -4,6 +4,6 @@
 mov $1,$0
 add $1,959
 mov $2,$1
-cal $2,4082
+cal $2,4082 ; Numbers n such that sin(n-1) <= 0 and sin(n) > 0.
 mov $1,$2
 sub $1,6025

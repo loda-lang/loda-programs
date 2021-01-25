@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,48050
+  cal $1,48050 ; Chowla's function: sum of divisors of n except 1 and n.
   sub $1,$0
   sub $0,$1
   sub $0,1

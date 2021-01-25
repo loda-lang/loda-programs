@@ -10,7 +10,7 @@ lpb $7,1
   sub $0,$7
   add $4,1
   sub $0,$4
-  cal $0,138342
+  cal $0,138342 ; First differences of A007088.
   mov $1,$0
   div $1,8
   mul $1,8

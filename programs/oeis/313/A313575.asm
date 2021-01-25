@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $7,$0
-cal $0,316316
+cal $0,316316 ; Coordination sequence for tetravalent node in chamfered version of square grid.
 sub $0,1
 mov $4,$0
 div $4,4

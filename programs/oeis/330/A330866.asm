@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $2,1
-cal $0,65608
+cal $0,65608 ; Sum of divisors of n minus the number of divisors of n.
 mov $1,2
 mul $2,$0
 mul $1,$2

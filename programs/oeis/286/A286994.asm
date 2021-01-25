@@ -3,7 +3,7 @@
 
 mov $4,$0
 div $0,3
-cal $0,182770
+cal $0,182770 ; Beatty sequence for 3-sqrt(2).
 mov $1,$0
 add $1,2
 mov $3,$4

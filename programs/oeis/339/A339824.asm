@@ -4,5 +4,5 @@
 add $0,1
 mul $0,2
 mov $2,$0
-cal $2,189661
+cal $2,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
 mov $1,$2

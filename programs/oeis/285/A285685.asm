@@ -7,7 +7,7 @@ lpb $4,1
   mov $0,$3
   sub $4,1
   add $0,$4
-  cal $0,194964
+  cal $0,194964 ; a(n) = 1 + floor(n/sqrt(5)).
   sub $0,1
   mov $1,$0
   mov $2,$4

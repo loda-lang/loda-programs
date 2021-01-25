@@ -4,7 +4,7 @@
 mov $4,$0
 sub $0,1
 mul $0,2
-cal $0,267610
+cal $0,267610 ; Total number of OFF (white) cells after n iterations of the "Rule 182" elementary cellular automaton starting with a single ON (black) cell.
 mov $1,$0
 mov $3,$4
 mov $2,$3

@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $2,2
-cal $0,33885
+cal $0,33885 ; a(n) = 3*n - sum of divisors of n.
 sub $0,$2
 mov $1,$0
 sub $2,$2

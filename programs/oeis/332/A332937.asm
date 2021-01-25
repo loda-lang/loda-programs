@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$2
-cal $0,90908
+cal $0,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
 gcd $0,$3
 add $0,1
 mov $1,$0

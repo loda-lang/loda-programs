@@ -3,7 +3,7 @@
 
 mov $2,1
 add $2,$0
-cal $2,30221
+cal $2,30221 ; Chebyshev even indexed U-polynomials evaluated at sqrt(7)/2.
 mov $1,$2
 sub $1,6
 mul $1,7

@@ -9,7 +9,7 @@ lpb $8,1
   sub $8,1
   add $0,$8
   sub $0,1
-  cal $0,190506
+  cal $0,190506 ; n+[nr/t]+[ns/t]+[nu/t];  r=golden ratio, s=r+1, t=r+2, u=r+3.
   add $4,$0
   add $4,3
   div $4,2

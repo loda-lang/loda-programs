@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   sub $0,2
-  cal $0,216607
+  cal $0,216607 ; The sequence used to represent partition binary diagram as an array.
   add $0,4
   mov $2,5
   log $2,$0

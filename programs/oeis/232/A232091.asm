@@ -4,7 +4,7 @@
 mov $5,$0
 sub $0,1
 mov $4,$0
-cal $4,216607
+cal $4,216607 ; The sequence used to represent partition binary diagram as an array.
 mov $1,$4
 mov $2,$5
 mov $3,$2

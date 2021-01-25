@@ -4,7 +4,7 @@
 mov $3,$0
 mov $2,$3
 pow $2,3
-cal $3,22365
+cal $3,22365 ; Fibonacci sequence beginning 0, 31.
 mul $2,$3
 mov $1,$2
 div $1,31

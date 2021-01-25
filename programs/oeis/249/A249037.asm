@@ -8,7 +8,7 @@ lpb $7,1
   mov $0,$5
   sub $7,1
   sub $0,$7
-  cal $0,249036
+  cal $0,249036 ; a(1)=1, a(2)=2; thereafter a(n) = a(n-1-(number of even terms so far)) + a(n-1-(number of odd terms so far)).
   gcd $0,2
   add $0,1
   add $2,1
@@ -17,7 +17,7 @@ lpb $7,1
   mov $1,$0
   sub $4,$1
   mov $1,$4
-  cal $1,144478
+  cal $1,144478 ; Period 9: repeat 1,0,5,7,6,2,4,3,8.
   div $1,6
   add $6,$1
 lpe

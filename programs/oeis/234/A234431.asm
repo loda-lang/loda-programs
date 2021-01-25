@@ -5,7 +5,7 @@ mov $5,$0
 mul $0,2
 sub $2,$0
 sub $2,2
-cal $2,36585
+cal $2,36585 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 mov $1,$2
 add $1,1
 mov $4,$5

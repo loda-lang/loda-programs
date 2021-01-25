@@ -9,7 +9,7 @@ lpb $2,1
   sub $0,$2
   cmp $3,3
   add $3,$0
-  cal $3,299285
+  cal $3,299285 ; Coordination sequence for "tea" 3D uniform tiling.
   mov $1,$3
   add $4,$1
 lpe

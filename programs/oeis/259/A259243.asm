@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,1
-cal $1,162740
+cal $1,162740 ; Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^3 = I.
 cmp $0,$1
 add $0,1
 mul $0,4

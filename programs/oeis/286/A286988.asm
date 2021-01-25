@@ -4,7 +4,7 @@
 mov $1,$0
 add $1,1
 mov $5,$0
-cal $1,195176
+cal $1,195176 ; a(n) = 3*n - floor(n*sqrt(2)).
 mov $3,$1
 add $1,$3
 sub $1,4

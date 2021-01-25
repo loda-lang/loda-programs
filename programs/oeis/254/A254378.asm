@@ -9,7 +9,7 @@ lpb $3,1
   add $0,$3
   sub $0,1
   div $0,2
-  cal $0,93505
+  cal $0,93505 ; a(n) = floor(A001969(n)/2 + 1/2).
   mov $1,$0
   mov $2,$3
   lpb $2,1

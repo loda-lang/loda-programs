@@ -9,7 +9,7 @@ lpb $3,1
   add $0,$3
   sub $0,2
   div $0,2
-  cal $0,294013
+  cal $0,294013 ; Sum of the differences of the larger and smaller parts in the partitions of 2n into two parts with the smaller part prime.
   mov $1,$0
   mov $2,$3
   lpb $2,1

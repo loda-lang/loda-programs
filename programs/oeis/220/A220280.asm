@@ -3,7 +3,7 @@
 
 mov $2,4
 lpb $2,1
-  cal $0,25691
+  cal $0,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
   div $2,4
 lpe
 mov $1,$0

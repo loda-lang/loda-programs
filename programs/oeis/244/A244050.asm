@@ -11,7 +11,7 @@ lpb $6,1
   sub $0,$6
   add $3,1
   mul $3,$0
-  cal $3,24916
+  cal $3,24916 ; a(n) = Sum_{k=1..n} k*floor(n/k); also Sum_{k=1..n} sigma(k) where sigma(n) = sum of divisors of n (A000203).
   mov $2,$3
   mov $1,$2
   add $5,$1

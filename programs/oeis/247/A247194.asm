@@ -3,6 +3,6 @@
 
 pow $0,3
 add $0,1
-cal $0,327136
+cal $0,327136 ; a(n) = n-th number k such that sin(2k) > sin(2k+2) < sin(2k+4).
 mov $1,$0
 sub $1,4

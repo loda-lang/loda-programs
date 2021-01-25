@@ -7,8 +7,8 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,267584
-  cal $0,83094
+  cal $0,267584 ; a(0)=1; thereafter a(n) = 2^(1 + number of zeros in binary expansion of n).
+  cal $0,83094 ; Numbers n such that sum(k=0,n,C(n,k) mod 3) is odd.
   mov $1,$0
   div $1,12
   mul $1,2

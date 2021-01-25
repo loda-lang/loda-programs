@@ -5,7 +5,7 @@ mul $0,2
 mov $2,$0
 sub $0,1
 pow $2,2
-cal $0,146076
+cal $0,146076 ; Sum of even divisors of n.
 mul $2,$0
 mov $1,$2
 div $1,8

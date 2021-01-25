@@ -10,7 +10,7 @@ lpb $7,1
   sub $0,1
   add $3,$0
   mov $2,$3
-  cal $0,192953
+  cal $0,192953 ; Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
   add $0,$2
   div $0,2
   mov $1,$0

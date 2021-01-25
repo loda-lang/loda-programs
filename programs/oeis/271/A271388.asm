@@ -4,7 +4,7 @@
 lpb $0,1
   mov $1,$0
   sub $1,2
-  cal $1,24551
+  cal $1,24551 ; a(n) = floor(a(n-1)/(sqrt(5) - 2)) for n > 0 and a(0) = 1.
   sub $0,1
   mul $1,2
   add $2,$1

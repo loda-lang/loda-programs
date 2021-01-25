@@ -3,6 +3,6 @@
 
 add $0,170
 mov $2,$0
-cal $2,121381
+cal $2,121381 ; a(n) = Ceiling(n*Pi).
 mov $1,$2
 sub $1,534

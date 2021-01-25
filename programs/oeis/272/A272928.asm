@@ -21,7 +21,7 @@ lpb $36,1
       sub $29,1
       add $0,$29
       sub $0,1
-      cal $0,160410
+      cal $0,160410 ; Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
       mov $1,$0
       mov $30,$29
       lpb $30,1

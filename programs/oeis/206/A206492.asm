@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,213040
+  cal $0,213040 ; Partial sums of A004738, leftmost column of the sequence of triangles defined in A206492.
   mov $1,$0
   bin $1,2
   add $1,$0

@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,2
-  cal $0,208900
+  cal $0,208900 ; Number of bitstrings of length n which (if having two or more runs) the last two runs have different lengths.
   sub $0,3
   mov $1,$0
   sub $1,4

@@ -5,6 +5,6 @@ mov $2,1
 mul $2,$0
 mul $2,2
 mov $3,$2
-cal $3,266538
+cal $3,266538 ; Twice the partial sums of A006257 (Josephus problem).
 mov $1,$3
 div $1,4

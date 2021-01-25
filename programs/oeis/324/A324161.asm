@@ -11,7 +11,7 @@ lpb $12,1
   mov $5,1
   add $6,4
   lpb $4,1
-    cal $0,98736
+    cal $0,98736 ; a(n) = product of n and all its digits.
     add $4,$0
     sub $4,$5
     mov $6,1

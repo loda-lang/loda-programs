@@ -3,5 +3,5 @@
 
 mov $2,$0
 add $0,$2
-cal $0,34887
+cal $0,34887 ; Number of digits in 2^n.
 mov $1,$0

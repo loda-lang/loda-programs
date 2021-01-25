@@ -7,7 +7,7 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,20906
+  cal $0,20906 ; Triangle where n-th row is the first n terms of the sequence in reverse order, starting with a(1) = 1 and a(2) = 2.
   mov $1,$0
   sub $1,1
   add $3,$1

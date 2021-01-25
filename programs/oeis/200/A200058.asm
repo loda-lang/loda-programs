@@ -18,7 +18,7 @@ lpb $10,1
     sub $0,$7
     mov $4,$0
     add $0,$4
-    cal $0,63087
+    cal $0,63087 ; Dimension of the space of weight 2n cusp forms for Gamma_0( 19 ).
     mov $1,$0
     mov $4,4
     add $4,$1

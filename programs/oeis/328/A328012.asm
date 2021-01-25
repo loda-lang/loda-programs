@@ -5,7 +5,7 @@ lpb $0,1
   sub $0,1
   mov $1,$0
   mov $2,$0
-  cal $1,59010
+  cal $1,59010 ; Natural numbers having an even number of nonleading zeros in their binary expansion.
   add $1,$0
   mov $0,0
   sub $1,$2

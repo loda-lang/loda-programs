@@ -9,7 +9,7 @@ lpb $3,1
   sub $0,$3
   mov $2,1
   mul $2,$0
-  cal $0,48625
+  cal $0,48625 ; Pisot sequence P(4,6).
   sub $2,1
   sub $0,$2
   sub $0,6

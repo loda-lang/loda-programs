@@ -9,7 +9,7 @@ lpb $4,1
   add $0,$4
   add $0,1
   mov $3,$0
-  cal $3,195129
+  cal $3,195129 ; a(n) = 2*n - floor(n*sqrt(1/3)).
   mov $1,$3
   sub $1,2
   mov $2,$4

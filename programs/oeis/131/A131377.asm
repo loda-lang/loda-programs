@@ -1,9 +1,11 @@
 ; A131377: Starting with 1, the sequence a(n) changes from 1 to 0 or back when the next number n is a prime.
 ; 1,1,0,1,1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
 
-cal $0,171512 ; a(n) = numbers m such that are not the sum of k-th nonprime number and k for any k >= 1.
-gcd $0,2
-mov $2,2
-bin $2,$0
-mov $1,$2
-div $1,2
+sub $0,1
+cal $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
+mov $2,$0
+add $5,$2
+lpb $2,9
+  mod $5,2
+lpe
+mov $1,$5

@@ -1,31 +1,14 @@
 ; A239091: Prefix overlap of dictionary consisting of binary expansions of 0 through n.
 ; 0,1,2,3,5,6,8,9,12,14,17,18,21,23,26,27,31,34,38,40,44,47,51,52,56,59,63,65,69,72,76,77,82,86,91,94,99,103,108,110,115,119,124,127,132,136,141,142,147,151,156,159,164,168,173,175,180,184,189,192,197,201,206
 
-mov $27,$0
-mov $4,$0
-sub $4,1
-mov $4,$0
 lpb $0,1
-  mov $1,17
   mov $1,$0
-  cal $1,119387
-  add $4,1
-  add $4,$1
-  add $2,$1
-  mul $2,2
-  mov $26,$1
-  cmp $26,0
-  add $1,$26
-  mod $2,$1
-  add $3,$1
+  cal $1,119387 ; a(n) = number of binary digits (1's and nonleading 0's) which remain unchanged in their positions when n and (n+1) are written in binary.
   sub $0,1
-  mov $2,17
-  mov $2,2
+  mov $4,$1
+  cmp $4,0
+  add $1,$4
+  add $3,$1
 lpe
-sub $1,1
 mov $2,$3
-add $1,$4
 mov $1,$2
-mov $28,$27
-mul $28,$27
-mul $28,$27

@@ -5,6 +5,6 @@ mov $2,$0
 sub $0,2
 add $2,1
 add $2,$0
-cal $2,86893
+cal $2,86893 ; a(n) is the index of F(n+1) at the unique occurrence of the ordered pair of reversed consecutive terms (F(n+1),F(n)) in Stern's diatomic sequence A002487, where F(k) denotes the k-th term of the Fibonacci sequence A000045.
 mov $1,$2
 add $1,3

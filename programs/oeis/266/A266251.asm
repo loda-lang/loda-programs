@@ -10,7 +10,7 @@ lpb $29,1
   add $0,$29
   sub $0,1
   add $2,$0
-  cal $2,266252
+  cal $2,266252 ; Total number of OFF (white) cells after n iterations of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
   add $1,$2
   mov $30,$29
   lpb $30,1

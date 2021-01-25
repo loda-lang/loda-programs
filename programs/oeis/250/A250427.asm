@@ -1,0 +1,10 @@
+; A250427: Number of (n+1)X(3+1) 0..1 arrays with nondecreasing sum of every two consecutive values in every row and column
+; 81,324,1296,3600,10000,22500,50625,99225,194481,345744,614656,1016064,1679616,2624400,4100625,6125625,9150625,13176900,18974736,26501904,37015056,50381604,68574961,91298025,121550625,158760000,207360000
+
+add $0,6
+cal $0,307182 ; Crossing number of the n-crown graph (conjectured).
+mov $1,$0
+pow $1,2
+sub $1,5184
+div $1,16
+add $1,324

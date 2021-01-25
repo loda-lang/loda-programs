@@ -9,7 +9,7 @@ lpb $29,1
   sub $29,1
   add $0,$29
   sub $0,1
-  cal $0,233774
+  cal $0,233774 ; Total number of vertices in the first n rows of Sierpinski gasket, with a(0) = 1.
   add $0,1
   add $3,$0
   sub $3,1

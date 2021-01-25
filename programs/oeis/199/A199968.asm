@@ -3,6 +3,6 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,7978
+  cal $1,7978 ; Least non-divisor of n.
   mov $0,1
 lpe

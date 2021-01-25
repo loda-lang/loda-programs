@@ -4,7 +4,7 @@
 mov $2,$0
 add $2,1
 mov $3,$2
-cal $0,134393
+cal $0,134393 ; Row sums of triangle A134392.
 gcd $3,$0
 add $3,3
 mov $1,$3

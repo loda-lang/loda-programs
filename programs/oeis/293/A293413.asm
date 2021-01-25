@@ -3,5 +3,5 @@
 
 mov $2,$0
 mul $2,$0
-cal $2,121384
+cal $2,121384 ; Ceiling(n*e).
 mov $1,$2

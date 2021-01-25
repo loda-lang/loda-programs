@@ -33,7 +33,7 @@ lpb $40,1
         mov $2,$0
         mul $2,2
         add $2,5
-        cal $0,574
+        cal $0,574 ; Coefficient of x^5 in expansion of (1 + x + x^2)^n.
         mov $1,$0
         add $1,$2
         mov $30,$29

@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $2,$3
-cal $0,204897
+cal $0,204897 ; a(n) = (p(n)-q(n))/n, where (p(n), q(n)) is the least pair of primes for which n divides p(n)-q(n).
 mov $1,$0
 mul $2,$1
 add $2,$1

@@ -11,7 +11,7 @@ lpb $2,1
   add $1,4
   lpb $0,1
     mov $1,$0
-    cal $1,97132
+    cal $1,97132 ; a(n) = Sum_{k=0..n} Fibonacci(k) + (-1)^k*Fibonacci(k-1).
     mod $0,-1
     sub $1,2
   lpe

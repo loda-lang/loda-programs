@@ -11,7 +11,7 @@ lpb $3,1
   mov $4,$0
   div $4,2
   sub $0,$4
-  cal $0,189574
+  cal $0,189574 ; Partial sums of A189572.
   mov $1,$0
   mov $2,$3
   lpb $2,1

@@ -9,7 +9,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   mov $1,$0
-  cal $1,60144
+  cal $1,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
   mov $0,$1
   add $0,1
   mov $1,$0

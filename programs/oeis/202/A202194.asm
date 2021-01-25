@@ -4,7 +4,7 @@
 mov $2,$0
 mov $0,3
 add $0,$2
-cal $0,37966
+cal $0,37966 ; a(n) = n^2*binomial(2*n-2, n-1).
 mov $1,$0
 sub $1,54
 div $1,2

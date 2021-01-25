@@ -10,7 +10,7 @@ lpb $5,1
   sub $0,1
   mul $0,2
   add $0,1
-  cal $0,161205
+  cal $0,161205 ; Triangle read by rows in which row n lists 2n-1 followed by 2n numbers 2n.
   mov $3,$0
   sub $3,1
   mov $1,$3

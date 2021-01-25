@@ -5,6 +5,6 @@ mov $2,$0
 mov $3,$2
 cmp $3,0
 add $2,$3
-cal $2,126120
+cal $2,126120 ; Catalan numbers (A000108) interpolated with 0's.
 mov $1,$2
 add $1,1

@@ -4,7 +4,7 @@
 mul $0,2
 add $0,1
 mov $2,16
-cal $0,4737
+cal $0,4737 ; Concatenation of sequences (1,2,..,n-1,n,n-1,..,1) for n >= 1.
 add $2,$0
 mov $0,$2
 mul $0,8

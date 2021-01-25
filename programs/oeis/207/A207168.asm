@@ -3,7 +3,7 @@
 
 mov $2,$0
 sub $2,6
-cal $0,117066
+cal $0,117066 ; Partial sums of cupolar numbers (1/3)*(n+1)*(5*n^2+7*n+3) (A096000).
 sub $2,5
 sub $0,$2
 mov $1,$0

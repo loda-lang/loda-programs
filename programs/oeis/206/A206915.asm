@@ -8,7 +8,7 @@ lpb $3,1
   mov $0,$5
   sub $3,1
   sub $0,$3
-  cal $0,55945
+  cal $0,55945 ; n - reversal of base 2 digits of n (and then the result is written in base 10).
   cmp $0,$2
   add $0,4
   mov $1,$0

@@ -8,7 +8,7 @@ lpb $4,1
   mov $0,$3
   sub $4,1
   sub $0,$4
-  cal $0,59727
+  cal $0,59727 ; a(n) = Fibonacci(n)*(Fibonacci(n) + 1).
   mov $2,$0
   cmp $2,0
   add $0,$2

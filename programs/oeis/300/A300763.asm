@@ -14,7 +14,7 @@ lpb $2,1
     sub $6,1
     add $0,$6
     sub $0,1
-    cal $0,198082
+    cal $0,198082 ; Ceiling(n*Sqrt(5)).
     mov $1,$0
     mov $5,$6
     lpb $5,1

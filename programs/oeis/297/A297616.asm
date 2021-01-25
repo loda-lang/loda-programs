@@ -6,7 +6,7 @@ lpb $0,1
   sub $2,$0
   add $4,$2
   lpb $3,1
-    cal $0,76225
+    cal $0,76225 ; Counts of the maximum value in n-th row of A076221.
     lpb $4,1
       cmp $3,7
       div $4,8

@@ -9,7 +9,7 @@ lpb $8,1
   mov $0,$6
   sub $8,1
   sub $0,$8
-  cal $0,36450
+  cal $0,36450 ; a(n) = d(d(d(n))), the 3rd iterate of the number-of-divisors function with an initial value of n.
   add $4,1
   add $0,$4
   sub $0,1

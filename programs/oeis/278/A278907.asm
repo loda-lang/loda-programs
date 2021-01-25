@@ -7,7 +7,7 @@ div $0,2
 mul $0,2
 mov $2,1
 mov $4,$3
-cal $0,10051
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 trn $2,$4
 mov $3,$2
 mul $3,2

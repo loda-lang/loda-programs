@@ -37,7 +37,7 @@ lpb $44,1
           sub $29,1
           add $0,$29
           sub $0,1
-          cal $0,20704
+          cal $0,20704 ; Pisot sequences E(3,10), P(3,10).
           div $0,3
           mov $1,$0
           mov $30,$29

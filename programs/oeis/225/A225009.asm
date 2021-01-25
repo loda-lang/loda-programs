@@ -6,7 +6,7 @@ lpb $0,1
   mov $3,$1
   add $1,$3
   add $1,4
-  cal $1,240440
+  cal $1,240440 ; Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
   sub $0,1
   add $2,$1
 lpe

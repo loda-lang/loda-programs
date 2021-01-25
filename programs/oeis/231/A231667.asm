@@ -7,7 +7,7 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,53737
+  cal $0,53737 ; Sum of digits of (n written in base 4).
   pow $0,4
   mov $1,$0
   add $1,2

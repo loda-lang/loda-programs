@@ -3,7 +3,7 @@
 
 mov $5,$0
 add $0,2
-cal $0,10051
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 add $0,13
 mov $4,1
 add $4,$0

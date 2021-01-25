@@ -5,7 +5,7 @@ mov $1,$0
 add $0,$1
 add $0,1
 mov $2,$0
-cal $2,6046
+cal $2,6046 ; Total number of odd entries in first n rows of Pascal's triangle: a(0) = 0, a(1) = 1, a(2k) = 3*a(k), a(2k+1) = 2*a(k) + a(k+1).
 add $2,1
 mov $1,$2
 sub $1,2

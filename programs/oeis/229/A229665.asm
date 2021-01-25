@@ -4,7 +4,7 @@
 mov $2,$0
 sub $0,1
 mov $1,$2
-cal $0,229472
+cal $0,229472 ; Number of defective 4-colorings of an n X 1 0..3 array connected horizontally, antidiagonally and vertically with exactly one mistake, and colors introduced in row-major 0..3 order.
 mul $0,$1
 mov $1,$0
 div $1,2

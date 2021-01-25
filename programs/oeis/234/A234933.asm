@@ -9,7 +9,7 @@ lpb $2,1
   sub $0,$2
   sub $0,2
   mov $3,$0
-  cal $3,8466
+  cal $3,8466 ; a(n) = 2^n - Fibonacci(n+2).
   mov $1,$3
   add $4,$1
 lpe

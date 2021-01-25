@@ -8,7 +8,7 @@ lpb $8,1
   mov $0,$6
   sub $8,1
   sub $0,$8
-  cal $0,334136
+  cal $0,334136 ; a(n) = (n-1)*sigma(n) where sigma is the sum of divisors A000203.
   add $2,$0
   mul $2,2
   mov $0,$2

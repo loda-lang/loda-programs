@@ -24,7 +24,7 @@ lpb $37,1
       add $0,$29
       sub $0,1
       add $5,$0
-      cal $5,316357
+      cal $5,316357 ; Partial sums of A316316.
       mul $5,2
       mov $1,$5
       mov $30,$29

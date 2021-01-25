@@ -10,7 +10,7 @@ lpb $7,1
   sub $7,1
   sub $0,$7
   add $3,$0
-  cal $0,12245
+  cal $0,12245 ; Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.
   mov $2,$3
   mov $4,$0
   add $2,$4

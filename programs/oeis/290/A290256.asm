@@ -4,7 +4,7 @@
 mov $2,$0
 add $0,1
 add $0,$2
-cal $0,290255
+cal $0,290255 ; Number of 0's following directly the first 1 in the binary representation of n.
 sub $0,2
 mov $1,$0
 add $1,2

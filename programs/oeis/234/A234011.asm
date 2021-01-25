@@ -5,7 +5,7 @@ mov $5,$0
 mul $0,2
 mov $4,1
 add $4,$0
-cal $4,7413
+cal $4,7413 ; A squarefree (or Thue-Morse) ternary sequence: closed under 1->123, 2->13, 3->2. Start with 1.
 mov $1,$4
 add $1,1
 mov $2,$5
