@@ -3,23 +3,10 @@
 
 lpb $0,1
   sub $0,2
-  add $1,326122
   mov $1,$0
-  mul $0,2
-  cal $1,163563
-  add $3,1
-  add $4,$1
-  sub $3,$4
-  mul $0,2
-  div $1,2
-  sub $0,$1
-  mov $0,$4
-  sub $0,$3
+  cal $1,163563 ; n occurs 1+a(n) times starting with a(1)=1.
   add $2,$1
+  mov $0,$2
   sub $0,1
-  sub $1,1
-  mov $1,2
 lpe
-mov $3,$2
-mov $1,$4
 add $1,1
