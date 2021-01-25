@@ -1,0 +1,40 @@
+mov $4,$0
+lpb $0,1
+  mov $1,10
+  mov $2,$4
+  add $1,2
+  add $2,8
+  mov $3,8
+  mov $2,2
+  sub $0,1
+  add $2,1
+  mov $3,2
+  sub $0,$1
+  mov $2,$0
+  clr $3,120259084288
+  mov $3,$0
+  mov $1,$0
+  trn $4,1
+  mov $4,1
+  mov $3,$4
+  sub $2,4
+  mul $3,$4
+  add $3,$0
+  sub $4,3
+  add $1,1
+  clr $0,1
+  add $3,$2
+  add $1,13
+  mov $0,1
+  mov $1,$2
+  mov $4,$3
+  sub $3,$2
+  mov $2,1
+  mov $2,$0
+  mul $0,$1
+  div $4,4
+  add $1,$2
+  mov $3,$1
+  gcd $1,2
+  mov $3,2
+lpe
