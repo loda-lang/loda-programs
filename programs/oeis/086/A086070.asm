@@ -22,10 +22,10 @@ lpb $17,1
       mov $0,$5
       sub $7,1
       sub $0,$7
-      cal $0,4736
+      cal $0,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
       add $1,$0
       mov $3,$1
-      cal $3,53208
+      cal $3,53208 ; Row sums of A053207.
       mov $1,$3
       sub $1,5
       div $1,7

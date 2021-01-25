@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,2
-cal $0,6367
+cal $0,6367 ; Number of binary vectors of length n+1 beginning with 0 and containing just 1 singleton.
 add $2,$1
 mul $2,$0
 mov $1,$2

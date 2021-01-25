@@ -11,7 +11,7 @@ lpb $4,1
   mul $0,2
   mov $5,$0
   add $5,1
-  cal $5,36256
+  cal $5,36256 ; a(n) = Sum_{i=0..n} binomial(i,floor(i/2)).
   mov $1,$5
   mov $3,$4
   lpb $3,1

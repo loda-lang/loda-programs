@@ -15,7 +15,7 @@ lpb $2,1
   mov $4,$1
   cmp $4,0
   add $1,$4
-  cal $0,241575
+  cal $0,241575 ; Sturmian expansion of 1/2 in base sqrt(2)-1.
   sub $1,$0
   add $1,1
   add $3,$1

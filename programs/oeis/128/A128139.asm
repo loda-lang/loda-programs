@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $2,$3
-cal $0,144216
+cal $0,144216 ; C(m,2)+C(n,2), m>=1, n>=1: a rectangular array R read by antidiagonals.
 sub $2,$0
 add $2,1
 mov $1,$2

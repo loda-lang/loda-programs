@@ -4,7 +4,7 @@
 mov $1,$0
 add $1,1
 mov $2,$1
-cal $2,68551
+cal $2,68551 ; a(n) = 4^n - binomial(2*n,n).
 add $2,2
 mov $1,$2
 sub $1,4

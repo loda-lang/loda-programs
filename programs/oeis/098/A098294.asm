@@ -14,7 +14,7 @@ lpb $3,1
     sub $7,1
     add $0,$7
     sub $0,1
-    cal $0,20914
+    cal $0,20914 ; Number of digits in the base-2 representation of 3^n.
     mov $2,$0
     cmp $0,1
     sub $2,$0

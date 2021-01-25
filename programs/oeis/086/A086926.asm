@@ -4,7 +4,7 @@
 mov $1,$0
 mul $1,$0
 sub $1,$0
-cal $0,22362
+cal $0,22362 ; Fibonacci sequence beginning 0, 28.
 mul $0,2
 mul $0,$1
 mov $1,$0

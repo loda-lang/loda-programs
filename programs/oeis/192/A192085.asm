@@ -4,7 +4,7 @@
 pow $0,3
 mul $0,4
 add $0,2
-cal $0,178493
+cal $0,178493 ; Numbers of powers of phi in base-phi expansion of phi-antipalindromic numbers (A178482).
 mov $1,$0
 sub $1,3
 div $1,2

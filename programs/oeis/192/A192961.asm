@@ -3,7 +3,7 @@
 
 mov $4,$0
 sub $0,1
-cal $0,163250
+cal $0,163250 ; The number of nonisomorphic complete simple games with n voters of two different types.
 mul $0,2
 mov $1,$0
 mov $3,$4

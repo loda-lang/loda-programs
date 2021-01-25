@@ -7,7 +7,7 @@ cmp $2,0
 add $0,$2
 div $1,$0
 mul $0,2
-cal $0,122788
+cal $0,122788 ; (1,3)-entry of the 3 X 3 matrix M^n, where M = {{0, -1, 1}, {1, 1, 0}, {0, 1, 1}}.
 add $1,$0
 add $1,1
 mul $1,5

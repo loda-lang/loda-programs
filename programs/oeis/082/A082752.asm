@@ -16,7 +16,7 @@ lpb $10,1
     mov $0,$5
     sub $7,1
     sub $0,$7
-    cal $0,25676
+    cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
     mov $4,2
     pow $4,$0
     add $1,$4

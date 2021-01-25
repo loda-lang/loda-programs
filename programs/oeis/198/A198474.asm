@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,$2
-cal $0,26597
+cal $0,26597 ; Expansion of (1+x)/(1-x-4*x^2).
 mul $0,6
 mov $1,$0
 sub $1,6

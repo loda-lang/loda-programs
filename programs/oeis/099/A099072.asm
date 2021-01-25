@@ -9,7 +9,7 @@ lpb $29,1
   sub $29,1
   add $0,$29
   sub $0,1
-  cal $0,73359
+  cal $0,73359 ; Nested floor product of n and fractions (2k+2)/(2k+1) for all k>=0, divided by 2.
   add $3,$0
   mov $1,$3
   mov $30,$29

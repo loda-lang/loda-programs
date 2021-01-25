@@ -11,7 +11,7 @@ lpb $29,1
   sub $0,$29
   add $4,2
   add $0,$4
-  cal $0,27053
+  cal $0,27053 ; a(n) = T(n,n+2), T given by A027052.
   sub $0,2
   mov $1,$0
   add $28,$1

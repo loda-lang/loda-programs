@@ -3,7 +3,7 @@
 
 mul $0,3
 add $0,2
-cal $0,20878
+cal $0,20878 ; Number of maximum matchings in the n-Moebius ladder M_n.
 add $0,1
 mov $1,$0
 div $1,2

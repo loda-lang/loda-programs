@@ -15,7 +15,7 @@ lpb $5,1
     sub $9,1
     add $0,$9
     sub $0,2
-    cal $0,2940
+    cal $0,2940 ; Arrays of dumbbells.
     mov $4,$0
     mov $12,$4
     cmp $12,0

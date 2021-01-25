@@ -11,7 +11,7 @@ lpb $4,1
   mov $6,$5
   mov $3,$6
   cmp $5,$1
-  cal $3,33505
+  cal $3,33505 ; Expansion of 1/(1 - 3*x - x^2 + x^3).
   mov $1,$3
   mov $2,$4
   lpb $2,1

@@ -16,7 +16,7 @@ lpb $4,1
     add $0,$8
     mov $3,$0
     add $0,$3
-    cal $0,91087
+    cal $0,91087 ; a(n) = floor(r*n) + floor(n/r), where r=sqrt(2).
     mov $1,$0
     mov $7,$8
     lpb $7,1

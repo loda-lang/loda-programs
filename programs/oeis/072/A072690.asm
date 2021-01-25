@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,20703
+  cal $1,20703 ; Take the sequence of natural numbers (A000027) and reverse successive subsequences of lengths 1,3,5,7,...
   sub $1,$0
   sub $0,1
   sub $1,1

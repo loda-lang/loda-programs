@@ -9,7 +9,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   add $0,2
-  cal $0,1629
+  cal $0,1629 ; Self-convolution of Fibonacci numbers.
   mov $1,$0
   add $3,$1
 lpe

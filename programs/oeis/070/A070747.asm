@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,493
+  cal $1,493 ; a(n) = floor(sin(n)).
   mov $0,0
   mov $2,$1
   add $1,1

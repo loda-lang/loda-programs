@@ -7,7 +7,7 @@ lpb $3,1
   mov $0,$5
   sub $3,1
   add $0,$3
-  cal $0,14742
+  cal $0,14742 ; Expansion of (1+x^2)/(1 - 2*x - 2*x^2 + x^3).
   sub $0,1
   mov $1,$0
   mov $2,$3

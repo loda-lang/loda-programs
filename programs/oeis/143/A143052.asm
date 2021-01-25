@@ -10,7 +10,7 @@ lpb $4,1
   sub $0,1
   mov $3,$0
   mul $3,$0
-  cal $0,94765
+  cal $0,94765 ; a(n) = n + 2 * square excess of n.
   add $0,$3
   div $0,2
   mov $1,$0

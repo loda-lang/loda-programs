@@ -8,6 +8,6 @@ sub $1,1
 mov $2,$1
 div $2,2
 mov $0,$2
-cal $0,79000
+cal $0,79000 ; a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) is odd".
 mov $1,$0
 add $1,1

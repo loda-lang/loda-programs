@@ -10,7 +10,7 @@ lpb $29,1
   sub $0,$29
   lpb $0,1
     mov $1,$0
-    cal $1,131516
+    cal $1,131516 ; a(n)=1 if n is an odd prime number, otherwise, a(n)=n.
     mov $0,$1
     mov $2,$1
   lpe

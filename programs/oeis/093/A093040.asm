@@ -9,7 +9,7 @@ lpb $6,1
   sub $6,1
   add $0,$6
   sub $0,1
-  cal $0,48584
+  cal $0,48584 ; Pisot sequence L(5,7).
   add $3,$0
   trn $1,$3
   add $1,1

@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $2,1
-cal $2,236428
+cal $2,236428 ; a(n) = F(n+1)^2 + F(n+1)*F(n) - F(n)^2, where F = A000045.
 mov $1,$2
 div $1,2
 add $1,1

@@ -9,7 +9,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,135992
+  cal $0,135992 ; Positive Fibonacci numbers swapped in pairs.
   mul $0,2
   add $3,$0
   add $0,$3

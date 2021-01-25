@@ -17,7 +17,7 @@ lpb $3,1
     add $1,1
     pow $1,2
     mov $5,$0
-    cal $1,77113
+    cal $1,77113 ; Number of integer cubes <= n^2.
     mov $6,$5
     mov $7,$6
     add $1,$7

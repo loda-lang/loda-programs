@@ -14,7 +14,7 @@ lpb $2,1
     sub $6,1
     add $0,$6
     sub $0,1
-    cal $0,23549
+    cal $0,23549 ; Convolution of natural numbers >= 2 and Lucas numbers.
     div $0,2
     mul $0,2
     mov $1,$0

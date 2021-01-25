@@ -10,7 +10,7 @@ lpb $4,1
   mov $1,$0
   add $1,1
   mov $2,$1
-  cal $2,139748
+  cal $2,139748 ; a(n) = Sum_{ k >= 0} binomial(n,5*k+3).
   mov $1,$2
   mov $3,$4
   lpb $3,1

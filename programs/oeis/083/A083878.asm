@@ -9,7 +9,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,86351
+  cal $0,86351 ; T(n,3) of A086350.
   mov $1,2
   mul $1,$0
   mov $4,$1

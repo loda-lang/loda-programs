@@ -16,7 +16,7 @@ lpb $10,1
     mov $0,$5
     sub $7,1
     sub $0,$7
-    cal $0,25795
+    cal $0,25795 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^5)).
     mov $1,$0
     add $1,2
     mul $1,5

@@ -8,7 +8,7 @@ lpb $7,1
   mov $0,$5
   sub $7,1
   add $0,$7
-  cal $0,62724
+  cal $0,62724 ; a(n) = floor(tau^n) + 1, where tau = (1 + sqrt(5))/2.
   add $4,$0
   sub $4,2
   mov $1,$4

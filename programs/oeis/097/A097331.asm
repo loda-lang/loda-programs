@@ -10,7 +10,7 @@ lpb $29,1
   add $0,$29
   sub $0,1
   trn $0,0
-  cal $0,166588
+  cal $0,166588 ; Partial sums of A097331; binomial transform of A166587.
   mul $0,2
   add $4,$0
   add $4,$0

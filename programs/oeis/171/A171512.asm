@@ -10,7 +10,7 @@ lpb $7,1
   sub $7,1
   sub $0,$7
   trn $0,1
-  cal $0,10051
+  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $1,$0
   mov $4,2
   gcd $4,$1

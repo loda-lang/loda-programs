@@ -7,7 +7,7 @@ lpb $3,1
   mov $0,$5
   sub $3,1
   add $0,$3
-  cal $0,141752
+  cal $0,141752 ; a(n) = Sum_{k=0..n} [ Fibonacci(2k-1) + (n-k)*Fibonacci(2k) ].
   div $0,2
   mov $1,$0
   mov $2,$3

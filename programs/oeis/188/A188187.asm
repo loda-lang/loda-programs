@@ -8,7 +8,7 @@ lpb $6,1
   sub $6,1
   add $0,$6
   sub $0,1
-  cal $0,22839
+  cal $0,22839 ; Beatty sequence for sqrt(5).
   mov $3,$0
   mov $2,$3
   mul $2,2

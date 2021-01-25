@@ -17,7 +17,7 @@ lpb $10,1
     sub $7,1
     sub $0,$7
     mov $2,$0
-    cal $2,52547
+    cal $2,52547 ; Expansion of (1-x)/(1-x-2*x^2+x^3).
     add $2,4
     mov $1,$2
     sub $1,4

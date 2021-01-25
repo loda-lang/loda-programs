@@ -3,7 +3,7 @@
 
 mov $2,1
 add $2,$0
-cal $0,97613
+cal $0,97613 ; a(n) = binomial(2n-3,n-1) + binomial(2n-2,n-2).
 sub $0,1
 add $0,$2
 mov $1,$0

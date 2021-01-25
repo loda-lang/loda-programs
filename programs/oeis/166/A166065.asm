@@ -8,7 +8,7 @@ lpb $5,1
   sub $5,1
   add $0,$5
   sub $0,1
-  cal $0,143038
+  cal $0,143038 ; Triangle read by rows, A000012 * A134309 * A000012; where A134309 = an infinite lower triangular matrix with (1, 1, 2, 4, 8, 16,...) in the main diagonal and the rest zeros.
   mul $0,2
   sub $0,1
   mov $1,$0

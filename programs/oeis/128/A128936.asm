@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$2
-cal $0,209685
+cal $0,209685 ; Sum of last two digits of n.
 bin $3,$0
 mov $0,$3
 mov $1,$0

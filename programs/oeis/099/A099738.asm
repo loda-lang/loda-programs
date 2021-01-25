@@ -8,7 +8,7 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,33885
+  cal $0,33885 ; a(n) = 3*n - sum of divisors of n.
   mov $1,$0
   add $3,$1
 lpe

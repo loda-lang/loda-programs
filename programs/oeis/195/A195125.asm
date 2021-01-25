@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $5,$0
-cal $0,187320
+cal $0,187320 ; a(n) = floor((Pi-2)*n); complement of A186544.
 sub $0,$3
 mov $1,1
 sub $3,$0

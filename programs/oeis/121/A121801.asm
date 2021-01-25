@@ -26,7 +26,7 @@ lpb $37,1
       add $4,$0
       sub $1,$4
       fac $1
-      cal $4,200408
+      cal $4,200408 ; -4 + 5*Fibonacci(n+1)^2.
       mov $0,$4
       mul $1,$0
       sub $1,1

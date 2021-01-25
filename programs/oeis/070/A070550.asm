@@ -7,7 +7,7 @@ lpb $2,1
   mov $0,$5
   sub $2,1
   add $0,$2
-  cal $0,92263
+  cal $0,92263 ; a(1)=1, a(n+1)=ceiling(phi*a(n))+1 if a(n) is odd, a(n+1)=ceiling(phi*a(n)) if a(n) is even, where phi=(1+sqrt(5))/2.
   div $0,2
   mov $1,$0
   mov $4,$2

@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,169622
+  cal $0,169622 ; a(n) = a(n-1) + Fibonacci(n), a(1)=5.
   sub $0,3
   bin $0,2
   mov $1,$0

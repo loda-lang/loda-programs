@@ -8,7 +8,7 @@ lpb $4,1
   sub $4,1
   add $0,$4
   sub $0,1
-  cal $0,122800
+  cal $0,122800 ; A P_4-stuttered arithmetic progression with a(n+1)=a(n) if n is square, a(n+1)=a(n)+2 otherwise.
   mov $1,$0
   pow $1,2
   mov $2,$1

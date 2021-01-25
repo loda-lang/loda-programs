@@ -4,7 +4,7 @@
 mov $2,2
 lpb $0,1
   mov $1,$0
-  cal $1,45889
+  cal $1,45889 ; Partial sums of A045618.
   sub $0,1
   add $2,$1
 lpe

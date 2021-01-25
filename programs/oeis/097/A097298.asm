@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,97297
+  cal $1,97297 ; Seventh column (m=6) of (1,6)-Pascal triangle A096956.
   sub $0,1
   add $2,$1
 lpe

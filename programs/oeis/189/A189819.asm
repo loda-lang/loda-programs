@@ -7,7 +7,7 @@ lpb $29,1
   clr $0,27
   sub $29,1
   sub $0,$29
-  cal $0,215879
+  cal $0,215879 ; Written in base 3, n ends in a(n) consecutive nonzero digits.
   mul $0,2
   mov $1,$0
   pow $1,2

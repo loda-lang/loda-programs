@@ -9,7 +9,7 @@ lpb $4,1
   add $0,$4
   sub $0,1
   mov $3,$0
-  cal $0,232580
+  cal $0,232580 ; Number of binary sequences of length n that contain at least one contiguous subsequence 011.
   mul $0,2
   add $0,$3
   mov $1,$0

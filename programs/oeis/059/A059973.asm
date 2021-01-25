@@ -30,7 +30,7 @@ lpb $15,1
       add $4,$1
       add $4,2
       add $0,$4
-      cal $0,96748
+      cal $0,96748 ; Expansion of (1+x)^2/(1-x^2-x^4).
       mov $1,$0
       mov $8,$7
       lpb $8,1

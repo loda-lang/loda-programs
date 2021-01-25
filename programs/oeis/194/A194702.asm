@@ -5,7 +5,7 @@ mov $1,$0
 div $1,3
 mov $2,1
 trn $2,$1
-cal $0,167194
+cal $0,167194 ; Triangle read by rows. A130713 in the columns.
 mod $0,2
 add $2,2
 bin $2,$0

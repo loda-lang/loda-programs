@@ -8,7 +8,7 @@ lpb $0,1
   mov $3,$0
   add $0,$2
   div $3,$0
-  cal $1,34887
+  cal $1,34887 ; Number of digits in 2^n.
   mov $0,$3
   sub $0,1
 lpe

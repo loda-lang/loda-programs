@@ -12,7 +12,7 @@ lpb $3,1
   mov $2,$0
   cmp $2,0
   add $0,$2
-  cal $0,76225
+  cal $0,76225 ; Counts of the maximum value in n-th row of A076221.
   mov $1,$0
   sub $1,1
   add $4,$1

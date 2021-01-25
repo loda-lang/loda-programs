@@ -4,7 +4,7 @@
 mov $3,$0
 add $0,1
 mul $0,2
-cal $0,100196
+cal $0,100196 ; Numbers of positive integer cubes <= n^2.
 add $0,2
 mov $1,$0
 sub $1,1

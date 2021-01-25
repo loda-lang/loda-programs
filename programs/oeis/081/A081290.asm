@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,10058
+  cal $1,10058 ; 1 if n is a Catalan number else 0.
   add $0,$1
   sub $0,1
 lpe

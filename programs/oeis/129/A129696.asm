@@ -10,7 +10,7 @@ lpb $3,1
   sub $0,$3
   mov $1,$0
   add $1,1
-  cal $1,74331
+  cal $1,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
   add $4,$1
 lpe
 mov $1,$4

@@ -6,6 +6,6 @@ mov $0,1
 mov $3,2
 sub $3,$2
 sub $0,$3
-cal $0,81187
+cal $0,81187 ; 5th binomial transform of (1,0,1,0,1,...), A059841.
 mul $2,$0
 mov $1,$2

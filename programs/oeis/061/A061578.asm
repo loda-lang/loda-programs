@@ -10,7 +10,7 @@ lpb $29,1
   add $0,$29
   sub $0,1
   add $4,$0
-  cal $0,56738
+  cal $0,56738 ; Positions where 2's occur in A056731.
   add $0,$4
   mov $1,$0
   mov $30,$29

@@ -4,7 +4,7 @@
 mov $3,$0
 mov $1,$3
 mov $4,2
-cal $0,10051
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 sub $0,1
 mul $0,2
 sub $4,$1

@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,1
-cal $1,71271
+cal $1,71271 ; Duplicate of A066492.
 mov $2,$1
 add $2,7
 mov $1,$2

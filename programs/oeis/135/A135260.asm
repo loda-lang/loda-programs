@@ -8,7 +8,7 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,192687
+  cal $0,192687 ; Male-female differences: a(n) = A005378(n) - A005379(n).
   mov $5,$0
   cmp $5,0
   mov $1,$5

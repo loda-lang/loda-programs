@@ -4,7 +4,7 @@
 trn $2,$0
 add $2,$0
 mov $5,$0
-cal $2,85060
+cal $2,85060 ; Integer reached in A085058.
 gcd $2,2
 mov $1,$2
 add $1,1

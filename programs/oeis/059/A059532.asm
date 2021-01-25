@@ -5,7 +5,7 @@ mov $1,$0
 add $1,1
 mov $2,$1
 mov $3,$0
-cal $2,22844
+cal $2,22844 ; a(n) = floor(n*Pi).
 mov $1,$2
 add $1,1
 mov $4,$3

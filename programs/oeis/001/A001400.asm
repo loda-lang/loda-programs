@@ -5,7 +5,7 @@ mov $2,17
 lpb $0,1
   mov $1,$0
   sub $0,1
-  cal $1,25767
+  cal $1,25767 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^4)).
   sub $0,1
   add $2,$1
 lpe

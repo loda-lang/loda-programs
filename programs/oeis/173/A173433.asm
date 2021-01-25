@@ -22,7 +22,7 @@ lpb $4,1
       sub $12,1
       add $0,$12
       sub $0,1
-      cal $0,255875
+      cal $0,255875 ; a(n) = Fibonacci(n+2) + n - 2.
       div $0,2
       add $0,1
       mul $0,2

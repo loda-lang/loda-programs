@@ -8,7 +8,7 @@ lpb $4,1
   sub $4,1
   add $0,$4
   sub $0,1
-  cal $0,157681
+  cal $0,157681 ; Fibonacci sequence beginning 29, 31.
   sub $0,2
   mov $1,$0
   mov $2,$4

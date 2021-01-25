@@ -9,7 +9,7 @@ lpb $3,1
   add $0,$3
   sub $0,1
   mul $0,2
-  cal $0,151920
+  cal $0,151920 ; a(n) = (Sum_{i=1..n+1} 3^wt(i))/3, where wt() = A000120().
   mov $1,$0
   mov $2,$3
   lpb $2,1

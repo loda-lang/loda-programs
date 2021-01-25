@@ -8,7 +8,7 @@ lpb $3,1
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,134816
+  cal $0,134816 ; Padovan's spiral numbers.
   pow $0,2
   mov $1,$0
   add $4,$1

@@ -18,7 +18,7 @@ lpb $33,1
     sub $0,1
     add $3,$0
     mul $3,2
-    cal $3,77868
+    cal $3,77868 ; Expansion of (1-x)^(-1)/(1-x-x^3).
     mov $1,$3
     mov $30,$29
     lpb $30,1

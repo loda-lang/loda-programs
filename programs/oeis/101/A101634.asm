@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $2,25
-cal $0,117643
+cal $0,117643 ; a(n) = n*(a(n-1)-1) starting with a(0)=3.
 mov $1,$0
 mul $1,2
 sub $1,1

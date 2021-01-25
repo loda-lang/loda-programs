@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,66796
+  cal $1,66796 ; a(n) = Sum_{i=1..n} binomial(2*i,i).
   sub $1,1
   mul $0,$1
   mod $0,$1

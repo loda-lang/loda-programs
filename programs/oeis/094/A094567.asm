@@ -3,7 +3,7 @@
 
 mul $0,4
 sub $0,1
-cal $0,211329
+cal $0,211329 ; Number of (n+1) X (n+1) -5..5 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
 mov $1,$0
 div $1,6
 sub $1,1

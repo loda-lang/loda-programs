@@ -10,7 +10,7 @@ lpb $29,1
   add $0,$29
   sub $0,1
   add $4,$0
-  cal $4,50250
+  cal $4,50250 ; Number of nonzero palindromes less than 10^n.
   mul $4,2
   mov $0,$4
   mov $1,$0

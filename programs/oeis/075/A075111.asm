@@ -8,7 +8,7 @@ lpb $4,1
   sub $4,1
   add $0,$4
   sub $0,1
-  cal $0,301657
+  cal $0,301657 ; Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
   mov $1,$0
   mov $0,1
   add $1,195178

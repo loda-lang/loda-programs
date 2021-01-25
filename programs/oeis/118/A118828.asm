@@ -4,5 +4,5 @@
 mul $0,10
 bin $0,2
 add $0,2
-cal $0,46978
+cal $0,46978 ; Numerators of Taylor series for exp(x)*sin(x).
 mov $1,$0

@@ -9,10 +9,10 @@ lpb $247,1
   mov $0,$245
   sub $247,1
   sub $0,$247
-  cal $0,54844
+  cal $0,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
   cmp $26,0
   add $2,$26
-  cal $2,55269
+  cal $2,55269 ; a(n) = 4*a(n-1) - a(n-2) + 3 with a(0)=1, a(1)=7.
   lpb $0,1
     add $1,1
     add $5,$2

@@ -10,7 +10,7 @@ lpb $3,1
   mov $1,8
   sub $1,$0
   mov $2,8
-  cal $0,97135
+  cal $0,97135 ; a(0) = 1; for n>0, a(n) = 3*Fibonacci(n).
   sub $0,1
   add $0,$1
   add $2,$0

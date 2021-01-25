@@ -3,7 +3,7 @@
 
 mul $0,2
 mov $1,$0
-cal $0,142242
+cal $0,142242 ; Row sums of A143200.
 add $0,$1
 add $1,$0
 sub $1,1

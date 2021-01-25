@@ -3,5 +3,5 @@
 
 add $0,1
 pow $0,2
-cal $0,202307
+cal $0,202307 ; Floor(sqrt(11*n)).
 mov $1,$0

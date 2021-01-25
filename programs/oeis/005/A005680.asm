@@ -3,7 +3,7 @@
 
 sub $0,1
 mov $2,2
-cal $0,36579
+cal $0,36579 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 add $2,$0
 mov $0,14
 add $0,$2

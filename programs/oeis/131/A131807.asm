@@ -12,7 +12,7 @@ lpb $7,1
   add $2,8
   mov $3,$2
   mul $2,18
-  cal $0,171512
+  cal $0,171512 ; a(n) = numbers m such that are not the sum of k-th nonprime number and k for any k >= 1.
   gcd $0,2
   bin $2,2
   sub $3,$0

@@ -10,7 +10,7 @@ lpb $3,1
   add $0,2
   mov $4,$0
   div $4,2
-  cal $0,14217
+  cal $0,14217 ; a(n) = floor(phi^n), where phi = (1+sqrt(5))/2 is the golden ratio.
   mov $1,$0
   sub $1,$4
   sub $1,1

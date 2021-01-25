@@ -26,7 +26,7 @@ lpb $13,1
       sub $0,$2
       mov $4,$2
       mov $3,$4
-      cal $0,10051
+      cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
       mov $2,6
       sub $2,$3
       mov $4,$2

@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,16084
+  cal $0,16084 ; a(n+1) = a(n) + its digital root.
   mul $0,2
   mov $1,$0
   sub $1,8

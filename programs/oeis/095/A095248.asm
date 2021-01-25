@@ -16,7 +16,7 @@ lpb $33,1
     sub $29,1
     add $0,$29
     sub $0,1
-    cal $0,333996
+    cal $0,333996 ; Number of composite numbers in the triangular n X n multiplication table.
     add $3,2
     mov $5,$0
     mul $0,2

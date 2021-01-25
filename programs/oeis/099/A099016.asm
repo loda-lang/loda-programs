@@ -37,7 +37,7 @@ lpb $22,1
           sub $7,1
           add $0,$7
           sub $0,1
-          cal $0,264080
+          cal $0,264080 ; a(n) = 6*F(n)*F(n+1) + (-1)^n, where F = A000045.
           mov $1,$0
           add $1,1
           mov $8,$7

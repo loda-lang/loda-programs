@@ -4,7 +4,7 @@
 mov $1,$0
 add $1,1
 mov $3,$0
-cal $1,77113
+cal $1,77113 ; Number of integer cubes <= n^2.
 mov $4,$3
 mov $2,$4
 add $1,$2

@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,27608
+  cal $1,27608 ; Expansion of 1/((1-x)*(1-2x)^4).
   sub $0,1
   add $2,$1
 lpe

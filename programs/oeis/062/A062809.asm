@@ -3,7 +3,7 @@
 
 sub $3,$0
 add $0,1
-cal $0,3101
+cal $0,3101 ; a(n) = Sum_{k = 1..n} (n - k + 1)^k.
 add $3,$0
 mov $0,$3
 add $0,1

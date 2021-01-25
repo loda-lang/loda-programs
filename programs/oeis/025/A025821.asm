@@ -13,7 +13,7 @@ lpb $7,1
   lpb $0,1
     mov $1,$0
     sub $0,1
-    cal $1,25789
+    cal $1,25789 ; Expansion of 1/((1-x)(1-x^8)(1-x^9)).
     sub $0,1
     add $2,$1
   lpe

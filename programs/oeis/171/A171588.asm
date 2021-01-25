@@ -4,7 +4,7 @@
 mov $2,1
 add $2,$0
 mov $3,6
-cal $2,188295
+cal $2,188295 ; [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
 mov $0,$2
 mov $1,$0
 sub $3,$1

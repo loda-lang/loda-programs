@@ -10,7 +10,7 @@ lpb $8,1
   sub $8,1
   sub $0,$8
   add $3,$0
-  cal $0,18804
+  cal $0,18804 ; Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
   sub $3,$0
   add $0,2
   sub $0,$3

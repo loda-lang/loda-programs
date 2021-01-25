@@ -9,7 +9,7 @@ lpb $3,1
   sub $0,1
   mov $4,1
   add $4,$0
-  cal $4,249153
+  cal $4,249153 ; Exponent of 2 in the hyperfactorial of 2n: a(n) = A007814(A002109(2n)).
   mov $1,$4
   mov $2,$3
   lpb $2,1

@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,55797
+  cal $1,55797 ; T(2n+4,n), array T as in A055794.
   sub $0,1
   add $2,$1
 lpe

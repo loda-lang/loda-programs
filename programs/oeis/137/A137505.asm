@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,2
-cal $1,77973
+cal $1,77973 ; Expansion of 1/(1+x-2*x^3).
 sub $1,1
 div $1,4
 add $1,1

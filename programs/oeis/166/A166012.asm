@@ -9,7 +9,7 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   sub $0,3
-  cal $0,127968
+  cal $0,127968 ; a(n) = F(n+1) + (1-(-1)^n)/2, where F() = Fibonacci numbers A000045.
   mov $1,$0
   sub $1,1
   mul $1,2

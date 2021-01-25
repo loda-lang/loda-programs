@@ -11,9 +11,9 @@ lpb $2,1
   add $5,1
   lpb $5,1
     sub $5,1
-    cal $0,120614
+    cal $0,120614 ; a(n) = g(n+1) - g(n) where g(k) = floor(phi*floor(k/phi)) and phi = (1+sqrt(5))/2.
     add $0,2
-    cal $0,10054
+    cal $0,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
     mov $1,1
     mul $1,$0
     mov $3,10

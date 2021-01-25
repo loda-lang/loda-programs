@@ -4,7 +4,7 @@
 add $0,1
 lpb $0,1
   mov $1,$0
-  cal $1,540
+  cal $1,540 ; Sum of 6th powers: 0^6 + 1^6 + 2^6 + ... + n^6.
   sub $0,1
   add $2,$1
 lpe

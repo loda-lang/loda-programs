@@ -11,7 +11,7 @@ lpb $29,1
   add $2,2
   lpb $2,1
     mov $1,$0
-    cal $1,194964
+    cal $1,194964 ; a(n) = 1 + floor(n/sqrt(5)).
     sub $2,1
   lpe
   add $1,1

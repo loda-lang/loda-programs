@@ -5,5 +5,5 @@ lpb $0,1
   sub $0,1
   pow $0,2
 lpe
-cal $0,10051
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $1,$0

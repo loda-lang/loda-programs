@@ -16,7 +16,7 @@ lpb $2,1
     sub $0,1
     mov $1,$0
     add $1,1
-    cal $1,195129
+    cal $1,195129 ; a(n) = 2*n - floor(n*sqrt(1/3)).
     mov $8,$7
     lpb $8,1
       mov $6,$1

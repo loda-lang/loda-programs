@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-cal $1,184427
+cal $1,184427 ; Lower s-Wythoff sequence of A000290 (the squares).  Complement of A184428.
 add $1,1
 mov $4,$2
 mov $3,$4

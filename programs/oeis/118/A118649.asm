@@ -16,7 +16,7 @@ lpb $32,1
     sub $29,1
     sub $0,$29
     mov $1,$0
-    cal $1,52528
+    cal $1,52528 ; Expansion of (1 - x)/(1 - 2*x - 2*x^2 + 2*x^3).
     add $28,$1
   lpe
   mov $1,$28

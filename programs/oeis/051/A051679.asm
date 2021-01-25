@@ -9,7 +9,7 @@ lpb $2,1
   sub $0,$2
   mul $0,2
   mov $4,$0
-  cal $0,142242
+  cal $0,142242 ; Row sums of A143200.
   add $4,$0
   sub $4,1
   mov $1,$4

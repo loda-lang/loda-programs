@@ -16,7 +16,7 @@ lpb $3,1
     add $0,$7
     sub $0,1
     mul $0,2
-    cal $0,279607
+    cal $0,279607 ; Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
     mov $2,$0
     mov $1,$2
     mov $6,$7

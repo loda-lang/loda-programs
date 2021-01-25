@@ -8,7 +8,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   mul $0,2
-  cal $0,196564
+  cal $0,196564 ; Number of odd digits in decimal representation of n.
   add $0,1
   mul $0,2
   mov $1,$0

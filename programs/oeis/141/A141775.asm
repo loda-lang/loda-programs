@@ -8,7 +8,7 @@ lpb $4,1
   sub $4,1
   add $0,$4
   sub $0,1
-  cal $0,130785
+  cal $0,130785 ; Sequence identical to its third differences: a(n+3) = 3a(n+2)-3a(n+1)+2a(n), with a(0)=1, a(1)=4, a(2)=9.
   mov $3,$0
   mov $1,$3
   mov $2,$4

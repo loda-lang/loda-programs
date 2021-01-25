@@ -5,7 +5,7 @@ mov $1,$0
 add $1,1
 mov $2,$1
 mov $3,$2
-cal $3,6333
+cal $3,6333 ; From the enumeration of corners.
 mov $1,$3
 sub $1,2
 div $1,2

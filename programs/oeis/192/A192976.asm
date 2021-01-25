@@ -24,9 +24,9 @@ lpb $14,1
       mov $3,$0
       sub $0,1
       bin $0,$3
-      cal $3,22131
+      cal $3,22131 ; Fibonacci sequence beginning 4, 11.
       sub $3,2
-      cal $0,75349
+      cal $0,75349 ; a(1) = 1; first differences follow the pattern 1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,..., i.e., the next n differences are n.
       mul $3,$0
       mov $1,$3
       mov $8,$7

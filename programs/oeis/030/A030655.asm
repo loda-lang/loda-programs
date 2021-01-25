@@ -4,5 +4,5 @@
 mov $1,$0
 add $1,1
 mov $2,$1
-cal $2,98080
+cal $2,98080 ; Nontrivial slowest increasing sequence whose succession of digits is that of the nonnegative integers.
 mov $1,$2

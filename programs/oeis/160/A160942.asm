@@ -7,7 +7,7 @@ add $0,$3
 sub $0,$2
 mov $4,$3
 mul $4,6
-cal $0,169805
+cal $0,169805 ; Twice the sum of the digits of n.
 mov $1,$0
 add $4,6
 mul $4,$1

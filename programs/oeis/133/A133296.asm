@@ -9,7 +9,7 @@ lpb $2,1
   mov $6,$4
   mul $6,2
 lpe
-cal $6,71061
+cal $6,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
 mov $5,$6
 mov $1,$5
 sub $1,1

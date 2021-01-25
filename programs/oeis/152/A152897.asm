@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,152896
+  cal $1,152896 ; a=b=c=0;c(n)=c+n+a;b(n)=b+n+c;a(n)=a+n+b.
   sub $0,1
   add $2,$1
 lpe

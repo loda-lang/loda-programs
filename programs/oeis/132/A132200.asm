@@ -16,7 +16,7 @@ lpb $11,1
     sub $7,1
     add $0,$7
     sub $0,1
-    cal $0,163866
+    cal $0,163866 ; Partial sums of A007318.
     mul $0,2
     add $3,1
     add $0,$3

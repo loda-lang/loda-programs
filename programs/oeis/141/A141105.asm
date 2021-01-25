@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$1
-cal $2,1950
+cal $2,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 add $2,1
 div $2,2
 mov $1,$2

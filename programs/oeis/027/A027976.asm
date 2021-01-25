@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   add $0,1
-  cal $0,192981
+  cal $0,192981 ; Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
   div $0,2
   mov $1,$0
   mov $2,$3

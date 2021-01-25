@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-cal $2,335262
+cal $2,335262 ; Triangle of triangular numbers, read by rows, constructed like this: Given a sequence t, start row 0 with t(0). Compute row n for n > 0 by reversing row n-1 and prepending t(n). The sequence t is here chosen as the triangular numbers.
 add $2,$1
 mov $1,$2
 div $1,2

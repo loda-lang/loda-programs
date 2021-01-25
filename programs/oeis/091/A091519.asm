@@ -4,7 +4,7 @@
 mov $4,$0
 add $4,1
 mov $5,$0
-cal $0,331739
+cal $0,331739 ; a(n) is n minus its largest odd divisor.
 mov $2,5
 mul $4,$0
 mov $3,$4

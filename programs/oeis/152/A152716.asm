@@ -4,6 +4,6 @@
 mov $2,$0
 add $0,$2
 add $0,1
-cal $0,82693
+cal $0,82693 ; Pyramidal sequence built with powers of 2.
 mov $1,$0
 div $1,2

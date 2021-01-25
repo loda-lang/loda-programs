@@ -3,5 +3,5 @@
 
 add $0,1
 mov $1,$0
-cal $1,53641
+cal $1,53641 ; Rotate one binary digit to the right, calculate, then rotate one binary digit to the left.
 div $1,2

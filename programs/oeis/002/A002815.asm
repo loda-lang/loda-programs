@@ -19,7 +19,7 @@ lpb $32,1
     cmp $26,0
     add $0,$26
     mov $1,3
-    cal $0,10051
+    cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     mul $1,$0
     div $1,3
     add $28,$1

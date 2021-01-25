@@ -9,7 +9,7 @@ lpb $4,1
   add $0,$4
   sub $0,1
   mul $0,2
-  cal $0,82981
+  cal $0,82981 ; Start with the sequence S(0)={1,1} and for k>0 define S(k) to be I(S(k-1)) where I denotes the operation of inserting, for i=1,2,3..., the term a(i)+a(i+1) between any two terms for which 4a(i+1)<=5a(i). The listed terms are the initial terms of the limit of this process as k goes to infinity.
   mov $2,$0
   add $2,3
   mov $1,$2

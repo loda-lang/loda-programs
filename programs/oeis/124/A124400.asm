@@ -26,7 +26,7 @@ lpb $15,1
       sub $3,1
       pow $3,$0
       add $0,2
-      cal $0,52994
+      cal $0,52994 ; Expansion of 2x(1-x)/(1-2x-x^2+x^3).
       add $3,$0
       mov $1,$3
       mov $8,$7

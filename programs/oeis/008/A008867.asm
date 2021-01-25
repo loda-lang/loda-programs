@@ -3,7 +3,7 @@
 
 mov $4,$0
 add $0,1
-cal $0,128139
+cal $0,128139 ; Triangle read by rows: matrix product A004736 * A128132.
 mov $1,$0
 mov $3,$4
 mov $2,$3

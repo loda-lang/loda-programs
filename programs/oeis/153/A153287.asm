@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   pow $0,2
-  cal $0,60143
+  cal $0,60143 ; a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
   mov $1,$0
   mov $2,$3
   lpb $2,1

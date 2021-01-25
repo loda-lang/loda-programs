@@ -7,7 +7,7 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,294935
+  cal $0,294935 ; Characteristic function for nonabundant numbers (A263837): a(n) = 1 if A001065(n) <= n, 0 otherwise.
   sub $0,6
   pow $0,16
   mul $0,4

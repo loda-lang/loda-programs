@@ -8,7 +8,7 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,8796
+  cal $0,8796 ; Molien series for 3-dimensional group [2,3]+ = 223; also for group H_{1,2} of order 384.
   add $0,3
   div $0,2
   mov $1,$0

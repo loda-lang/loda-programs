@@ -5,6 +5,6 @@ add $0,8
 mov $1,$0
 add $0,$1
 sub $0,4
-cal $0,279054
+cal $0,279054 ; Largest integer m for which binomial(m,n-1) > binomial(m-1,n).
 mov $1,$0
 sub $1,32

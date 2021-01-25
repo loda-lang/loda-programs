@@ -7,7 +7,7 @@ lpb $4,1
   mov $0,$3
   sub $4,1
   add $0,$4
-  cal $0,108035
+  cal $0,108035 ; Triangle read by rows: n-th row is n-th nonzero Fibonacci number repeated n times.
   mul $0,2
   sub $0,2
   mov $1,$0

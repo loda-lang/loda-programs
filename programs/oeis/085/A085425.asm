@@ -3,7 +3,7 @@
 
 sub $0,131327
 mul $0,2
-cal $0,114285
-cal $0,85424
+cal $0,114285 ; Expansion of (1-3*x)/((1-x)*(1-x^2)).
+cal $0,85424 ; Number of ones in the symmetric signed digit expansion of n with q=2 (i.e., the representation of n in the (-1,0,1)_2 number system).
 mov $1,$0
 sub $1,2

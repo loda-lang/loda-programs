@@ -9,7 +9,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   mul $0,2
-  cal $0,164394
+  cal $0,164394 ; Number of binary strings of length n with no substrings equal to 0001 or 0100.
   mov $1,$0
   sub $1,2
   div $1,2

@@ -12,7 +12,7 @@ lpb $6,1
   add $3,3
   mul $0,$3
   mov $2,1
-  cal $0,277
+  cal $0,277 ; 3*n - 2*floor(sqrt(4*n+5)) + 5.
   add $2,$0
   mov $1,$2
   mov $7,$6

@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,2
-cal $0,330063
+cal $0,330063 ; Beatty sequence for x, where 1/x + sech(x) = 1.
 div $0,2
 mov $1,$0
 mov $3,$2

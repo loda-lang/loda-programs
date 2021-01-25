@@ -9,7 +9,7 @@ lpb $5,1
   add $0,$5
   sub $0,1
   mul $0,2
-  cal $0,89068
+  cal $0,89068 ; a(n) = a(n-1)+a(n-2)+a(n-3)+2 with a(0)=0, a(1)=0 and a(2)=1.
   mov $1,$0
   mov $3,$1
   add $3,1

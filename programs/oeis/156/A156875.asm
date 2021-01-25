@@ -3,5 +3,5 @@
 
 div $0,2
 sub $0,1
-cal $0,156874
+cal $0,156874 ; Number of Sophie Germain primes <= n.
 mov $1,$0

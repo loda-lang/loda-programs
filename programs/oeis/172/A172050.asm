@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $5,$0
-cal $0,29907
+cal $0,29907 ; a(n+1) = a(n) + a(n-1) + Fibonacci(n).
 mov $1,$0
 mul $3,2
 mov $4,$1

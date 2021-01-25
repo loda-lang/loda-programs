@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $0,$1
-cal $0,297469
+cal $0,297469 ; Solution (bb(n)) of the system of 3 complementary equations in Comments.
 div $0,2
 mov $1,$0
 mov $2,1

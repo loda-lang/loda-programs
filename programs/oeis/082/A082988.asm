@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,85449
+  cal $1,85449 ; Horadam sequence (0,1,4,2).
   sub $0,1
   add $2,$1
   mul $2,2

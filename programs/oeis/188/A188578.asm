@@ -5,5 +5,5 @@ mov $2,$0
 mul $2,2
 add $2,1
 mov $0,$2
-cal $0,316569
+cal $0,316569 ; a(n) = Jacobi (or Kronecker) symbol (n, 15).
 mov $1,$0

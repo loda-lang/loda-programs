@@ -9,7 +9,7 @@ lpb $7,1
   sub $7,1
   add $0,$7
   sub $0,2
-  cal $0,156874
+  cal $0,156874 ; Number of Sophie Germain primes <= n.
   sub $0,9
   mov $1,$0
   add $4,9

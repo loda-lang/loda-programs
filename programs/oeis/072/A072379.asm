@@ -9,7 +9,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   mov $3,$0
-  cal $3,74400
+  cal $3,74400 ; Sum of the even divisors of 2n.
   pow $3,2
   mov $1,$3
   sub $1,4

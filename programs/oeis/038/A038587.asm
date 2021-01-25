@@ -9,7 +9,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   mul $0,3
-  cal $0,84301
+  cal $0,84301 ; a(n) = sigma(n) mod 6.
   add $0,9
   mov $1,$0
   mul $1,2

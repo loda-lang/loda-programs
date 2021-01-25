@@ -1,35 +1,11 @@
 ; A118966: If n doesn't occur among the first (n-1) terms of the sequence, then a(n)= 2n-1. If n occurs among the first (n-1) terms of the sequence, then a(n) = (n+1)/2.
 ; 1,3,2,7,9,11,4,15,5,19,6,23,25,27,8,31,33,35,10,39,41,43,12,47,13,51,14,55,57,59,16,63,17,67,18,71,73,75,20,79,21,83,22,87,89,91,24,95,97,99,26,103,105,107,28,111,29,115,30,119,121,123,32,127,129,131,34,135
 
-add $1,1
-mov $4,1
-mov $3,$4
-sub $0,$3
-mov $4,$3
-mov $26,$1
-cmp $26,0
-add $1,$26
-div $4,$1
-mov $2,1
-cal $0,73675
-sub $1,2
-add $4,$3
-mul $0,2
-cal $3,4
-mov $2,2
-mul $0,2
-mov $26,$2
-cmp $26,0
-add $2,$26
-div $3,$2
+sub $0,1
+cal $0,73675 ; Rearrangement of natural numbers such that a(n) is the smallest proper divisor of n not included earlier but if no such divisor exists then a(n) is the smallest proper multiple of n not included earlier, subject always to the condition that a(n) is not equal to n.
+mul $0,4
+add $0,5
 mov $1,$0
-mov $4,2
-mov $1,1
-mov $3,1
-mov $26,$2
-cmp $26,0
-add $2,$26
-div $3,$2
-mov $1,$0
+sub $1,5
 div $1,4
 add $1,1

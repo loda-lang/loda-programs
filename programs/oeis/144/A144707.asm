@@ -6,6 +6,6 @@ mov $2,$3
 cmp $2,0
 add $3,$2
 mov $0,$3
-cal $0,131326
+cal $0,131326 ; Row sums of A131325.
 mov $1,$0
 sub $1,2

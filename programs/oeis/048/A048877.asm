@@ -5,7 +5,7 @@ mov $1,$0
 mov $2,3
 mov $3,$1
 mul $2,$3
-cal $2,22320
+cal $2,22320 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 6.
 mov $1,$2
 div $1,2
 add $1,1

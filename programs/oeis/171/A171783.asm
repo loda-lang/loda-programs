@@ -4,7 +4,7 @@
 mov $2,2
 lpb $2,1
   add $0,$2
-  cal $0,105661
+  cal $0,105661 ; a(n)=1 if n is a prime, 2 if n is an even semiprime, otherwise 0.
   mov $1,50853
   add $2,$0
   gcd $2,2

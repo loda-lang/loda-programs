@@ -4,7 +4,7 @@
 mov $1,1
 lpb $0,1
   mov $1,$0
-  cal $1,206735
+  cal $1,206735 ; Triangle T(n,k), read by rows, given by (0, 2, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (1, 0, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
   sub $0,$0
   mul $1,3
   mov $2,$1

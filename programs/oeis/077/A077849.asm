@@ -25,7 +25,7 @@ lpb $36,1
       add $0,$29
       sub $0,1
       add $3,$0
-      cal $3,77997
+      cal $3,77997 ; Expansion of (1-x)/(1-2*x-x^2-x^3).
       mul $3,3
       mov $1,$3
       mov $30,$29

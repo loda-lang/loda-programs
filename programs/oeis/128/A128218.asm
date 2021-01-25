@@ -10,7 +10,7 @@ lpb $7,1
   add $4,$0
   mov $2,$4
   add $2,1
-  cal $2,128217
+  cal $2,128217 ; Nonnegative integers n such that the square-root of n differs from its nearest integer by less than 1/4.
   mov $1,$2
   mov $3,$7
   mov $4,$5

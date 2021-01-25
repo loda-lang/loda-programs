@@ -7,7 +7,7 @@ lpb $29,1
   clr $0,27
   sub $29,1
   sub $0,$29
-  cal $0,131372
+  cal $0,131372 ; Period 7: repeat [1, -1, 0, 1, 0, -1, 1].
   mov $3,$0
   add $1,$3
   mul $1,2

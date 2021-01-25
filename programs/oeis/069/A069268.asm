@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$1
-cal $0,88140
+cal $0,88140 ; a(n) = 1 if n is an odd prime otherwise a(n) = n.
 add $2,1
 mul $2,$0
 sub $2,1

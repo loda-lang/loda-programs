@@ -7,9 +7,9 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,5
+  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $0,2
-  cal $0,214560
+  cal $0,214560 ; Number of 0's in binary expansion of n^2.
   mov $1,$0
   sub $1,2
   div $1,2

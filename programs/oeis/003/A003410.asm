@@ -9,7 +9,7 @@ lpb $3,1
   add $0,$3
   sub $0,1
   mul $0,2
-  cal $0,238383
+  cal $0,238383 ; Row sums of triangle in A139040.
   mov $1,$0
   mov $2,$3
   lpb $2,1

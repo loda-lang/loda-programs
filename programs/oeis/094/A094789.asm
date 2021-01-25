@@ -8,7 +8,7 @@ lpb $4,1
   mov $0,$2
   sub $4,1
   sub $0,$4
-  cal $0,60557
+  cal $0,60557 ; Row sums of triangle A060556.
   mov $1,$0
   add $3,$1
 lpe

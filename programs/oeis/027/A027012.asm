@@ -4,5 +4,5 @@
 mov $2,$0
 add $0,$2
 trn $0,1
-cal $0,27963
+cal $0,27963 ; T(n,n+3), T given by A027960.
 mov $1,$0

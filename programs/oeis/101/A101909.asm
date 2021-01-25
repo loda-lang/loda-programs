@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,108954
+cal $0,108954 ; a(n) = pi(2*n) - pi(n). Number of primes in the interval (n,2n].
 mov $1,$0

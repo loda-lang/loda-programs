@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,$0
-cal $1,195508
+cal $1,195508 ; Number of iterations in a Draim factorization of 2n+1.
 sub $1,1
 mul $1,2
 add $1,3

@@ -4,7 +4,7 @@
 add $0,2
 bin $0,2
 sub $0,1
-cal $0,5
+cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 add $0,102
 mov $1,$0
 sub $1,102

@@ -12,7 +12,7 @@ lpb $7,1
   add $1,1
   add $4,$0
   mov $3,$4
-  cal $3,114986
+  cal $3,114986 ; Characteristic function of (A000201 prefixed with 0).
   add $3,$1
   sub $3,2
   mov $1,$3

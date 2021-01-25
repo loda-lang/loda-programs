@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,1
-cal $0,186515
+cal $0,186515 ; Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=4+5j^2.  Complement of A186516.
 mov $1,$0
 sub $1,2
 mul $1,2
