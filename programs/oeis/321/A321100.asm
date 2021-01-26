@@ -12,7 +12,7 @@ lpb $7,1
   add $2,$0
   add $4,$0
   add $0,$4
-  cal $0,156595
+  cal $0,156595 ; Fixed point of the morphism 0->011, 1->010.
   mov $1,$0
   add $1,$2
   mul $1,2

@@ -7,7 +7,7 @@ lpb $7,1
   mov $0,$5
   sub $7,1
   add $0,$7
-  cal $0,69497
+  cal $0,69497 ; Triangular numbers of the form 6k.
   mov $3,$0
   mov $2,$3
   mul $2,2

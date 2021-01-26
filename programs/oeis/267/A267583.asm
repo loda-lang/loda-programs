@@ -3,7 +3,7 @@
 
 mov $4,$0
 sub $0,1
-cal $0,262867
+cal $0,262867 ; Total number of ON (black) cells after n iterations of the "Rule 153" elementary cellular automaton starting with a single ON (black) cell.
 mov $1,$0
 mov $3,$4
 mov $2,$3

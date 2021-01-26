@@ -8,7 +8,7 @@ lpb $29,1
   mov $0,$27
   sub $29,1
   sub $0,$29
-  cal $0,337281
+  cal $0,337281 ; a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
   mov $4,$0
   add $3,$4
   mul $4,$3

@@ -27,7 +27,7 @@ lpb $14,1
       add $3,2
       mov $4,$0
       pow $3,$4
-      cal $0,326122
+      cal $0,326122 ; a(n) = 10 * sigma(n).
       mul $3,$0
       mov $1,$3
       mov $8,$7

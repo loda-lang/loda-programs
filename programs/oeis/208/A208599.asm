@@ -5,7 +5,7 @@ mov $1,$0
 add $1,1
 mov $2,$1
 mov $1,0
-cal $2,83669
+cal $2,83669 ; Number of ordered quintuples (a,b,c,d,e), -n <= a,b,c,d,e <= n, such that a+b+c+d+e = 0.
 add $1,$2
 sub $1,51
 div $1,10

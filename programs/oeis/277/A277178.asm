@@ -5,7 +5,7 @@ mul $0,2
 mov $2,4
 lpb $0,1
   mov $1,$0
-  cal $1,100071
+  cal $1,100071 ; a(n) = n * binomial(n-1, floor((n-1)/2)) = n * max_{i=0..n} binomial(n-1, i).
   sub $0,1
   add $2,$1
 lpe

@@ -11,7 +11,7 @@ lpb $2,1
   mov $1,$0
   add $1,1
   mul $1,2
-  cal $1,39653
+  cal $1,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
   add $1,1
   add $3,$1
 lpe

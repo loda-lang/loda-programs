@@ -6,7 +6,7 @@ lpb $0,1
   mov $1,$0
   add $2,4
   mul $2,$1
-  cal $1,115180
+  cal $1,115180 ; Beatty sequence for (Champernowne constant)*10 = 1.234567891011121314....
   mov $0,0
   div $1,4
   add $2,$1

@@ -11,7 +11,7 @@ lpb $7,1
   sub $0,$7
   sub $0,2
   add $3,$0
-  cal $3,87440
+  cal $3,87440 ; Expansion of (1-2x-3x^2)/((1-2x)(1-4x)).
   mov $1,$3
   add $6,$1
 lpe

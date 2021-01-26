@@ -11,7 +11,7 @@ lpb $8,1
   sub $0,$8
   mul $0,6
   add $4,$0
-  cal $4,71055
+  cal $4,71055 ; Number of 0's in n-th row of triangle in A071038.
   mov $1,$4
   div $1,2
   add $1,1

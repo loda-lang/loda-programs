@@ -7,7 +7,7 @@ lpb $4,1
   mov $0,$2
   sub $4,1
   sub $0,$4
-  cal $0,99463
+  cal $0,99463 ; Bisection of tribonacci numbers.
   mul $0,2
   mov $1,$0
   add $3,$1

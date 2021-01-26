@@ -3,5 +3,5 @@
 
 mul $0,2
 mov $2,$0
-cal $2,37453
+cal $2,37453 ; Positive numbers n such that the base 5 representation of n contains no 3 or 4.
 mov $1,$2

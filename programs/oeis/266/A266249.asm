@@ -3,7 +3,7 @@
 
 mov $3,$0
 mul $3,2
-cal $0,266251
+cal $0,266251 ; Number of OFF (white) cells in the n-th iteration of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
 mov $2,$0
 add $3,22
 sub $3,$2

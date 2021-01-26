@@ -17,7 +17,7 @@ lpb $14,1
     sub $0,1
     mov $5,$0
     mul $0,2
-    cal $0,228071
+    cal $0,228071 ; Write n in binary and interpret as a decimal number; a(n) is this quantity minus n.
     mov $1,$0
     mov $6,$5
     mov $7,$6

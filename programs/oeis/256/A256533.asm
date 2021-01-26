@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$1
-cal $0,24916
+cal $0,24916 ; a(n) = Sum_{k=1..n} k*floor(n/k); also Sum_{k=1..n} sigma(k) where sigma(n) = sum of divisors of n (A000203).
 mov $1,$0
 mul $2,$0
 add $1,$2

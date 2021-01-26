@@ -12,7 +12,7 @@ lpb $8,1
   mul $0,2
   sub $3,1
   mul $3,4
-  cal $0,115384
+  cal $0,115384 ; Partial sums of Thue-Morse numbers A010060.
   sub $0,$3
   sub $0,1
   mov $1,$0

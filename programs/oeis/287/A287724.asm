@@ -8,11 +8,11 @@ lpb $2,1
   mov $0,$5
   sub $2,1
   sub $0,$2
-  cal $0,120614
+  cal $0,120614 ; a(n) = g(n+1) - g(n) where g(k) = floor(phi*floor(k/phi)) and phi = (1+sqrt(5))/2.
   add $0,2
   mul $0,2
   sub $0,6
-  cal $0,10051
+  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $1,1
   mul $1,$0
   mov $3,10

@@ -12,7 +12,7 @@ lpb $4,1
   cmp $2,0
   add $0,$2
   sub $0,1
-  cal $0,226275
+  cal $0,226275 ; Number of new rationals produced at the n-th iteration by applying the map t -> {t+1, -1/t} to nonzero terms, starting with S[0] = {1}.
   mov $3,$0
   mov $1,$3
   add $5,$1

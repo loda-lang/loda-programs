@@ -3,7 +3,7 @@
 
 mul $0,5
 add $0,4
-cal $0,319528
+cal $0,319528 ; a(n) = 8 * sigma(n).
 add $0,4
 mov $1,$0
 sub $1,51

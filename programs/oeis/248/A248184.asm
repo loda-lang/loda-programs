@@ -5,7 +5,7 @@ mov $2,$0
 sub $2,2
 mov $4,$0
 mov $0,$2
-cal $0,248233
+cal $0,248233 ; Numbers k such that A248231(k+1) = A248231(k) + 1.
 mov $1,$0
 sub $1,1
 mov $3,$4

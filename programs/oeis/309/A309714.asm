@@ -6,6 +6,6 @@ add $2,$0
 mov $0,$2
 pow $2,2
 add $0,$2
-cal $0,174028
+cal $0,174028 ; Triangle T(n,k) = 2+4k read by rows.
 mov $1,$0
 div $1,4

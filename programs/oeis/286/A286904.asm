@@ -17,7 +17,7 @@ lpb $2,1
     sub $0,1
     mov $4,$0
     div $4,2
-    cal $4,22804
+    cal $4,22804 ; a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is the complement of B.
     cmp $11,0
     add $3,$11
     div $3,$3

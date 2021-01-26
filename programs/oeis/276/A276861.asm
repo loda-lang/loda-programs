@@ -7,7 +7,7 @@ lpb $4,1
   mov $0,$3
   sub $4,1
   add $0,$4
-  cal $0,4082
+  cal $0,4082 ; Numbers n such that sin(n-1) <= 0 and sin(n) > 0.
   sub $0,1
   mul $0,3
   mov $1,$0

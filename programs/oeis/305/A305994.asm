@@ -8,7 +8,7 @@ mov $0,$1
 mov $1,1
 mul $1,$0
 mov $2,$1
-cal $2,14710
+cal $2,14710 ; The regular paper-folding (or dragon curve) sequence.
 mov $0,$2
 mov $1,$0
 sub $1,1

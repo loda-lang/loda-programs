@@ -8,7 +8,7 @@ mul $2,2
 sub $2,1
 add $0,$2
 mov $2,$0
-cal $0,54844
+cal $0,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
 add $2,1
 mul $2,$0
 mov $1,$2

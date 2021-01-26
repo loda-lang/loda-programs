@@ -8,7 +8,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,142474
+  cal $0,142474 ; 1 followed by A141015.
   mul $0,2
   mov $1,$0
   div $1,2

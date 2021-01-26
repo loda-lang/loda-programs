@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,101102
+  cal $1,101102 ; Fifth partial sums of cubes (A000578).
   sub $0,1
   add $2,$1
 lpe

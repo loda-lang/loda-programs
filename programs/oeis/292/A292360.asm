@@ -4,7 +4,7 @@
 mov $2,$0
 mov $0,1
 mul $0,$2
-cal $0,215602
+cal $0,215602 ; a(n) = L(n)*L(n+1), where L = A000032 (Lucas numbers).
 sub $0,2
 mul $2,2
 mul $2,$0

@@ -15,7 +15,7 @@ lpb $3,1
     sub $7,1
     add $0,$7
     add $0,2
-    cal $0,111926
+    cal $0,111926 ; Expansion of x^4/((1-2*x)*(x^2-x+1)*(x-1)^2).
     div $0,2
     mov $1,$0
     mov $8,$7

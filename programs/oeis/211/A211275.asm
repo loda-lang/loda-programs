@@ -8,8 +8,8 @@ lpb $7,1
   mov $0,$5
   sub $7,1
   sub $0,$7
-  cal $0,183063
-  cal $0,168328
+  cal $0,183063 ; Number of even divisors of n.
+  cal $0,168328 ; a(n) = 6 * floor( n/2 ).
   add $3,$0
   add $3,11
   mov $1,$3

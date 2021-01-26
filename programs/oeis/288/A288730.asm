@@ -11,7 +11,7 @@ lpb $2,1
   div $0,2
   mov $1,$0
   add $1,1
-  cal $1,308188
+  cal $1,308188 ; Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {1,2}.
   mul $1,2
   sub $1,2
   div $1,2

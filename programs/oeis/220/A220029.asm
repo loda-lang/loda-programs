@@ -18,7 +18,7 @@ lpb $32,1
     sub $0,$29
     mov $2,$0
     add $0,1
-    cal $2,100542
+    cal $2,100542 ; Two-color Rado numbers R(0,n).
     sub $2,1
     add $0,$2
     add $0,2411

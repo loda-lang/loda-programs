@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$1
-cal $2,14140
+cal $2,14140 ; Apply partial sum operator twice to Catalan numbers.
 add $1,1
 sub $2,$1
 mov $1,$2

@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,330173
+cal $0,330173 ; a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(2), s = sqrt(2) + 1, t = sqrt(2) + 2.
 mov $1,$0

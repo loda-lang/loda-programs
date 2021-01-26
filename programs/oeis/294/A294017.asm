@@ -24,7 +24,7 @@ lpb $16,1
       add $0,$9
       sub $0,1
       mov $4,$0
-      cal $0,244049
+      cal $0,244049 ; Sum of all proper divisors of all positive integers <= n.
       mul $0,2
       mov $3,$0
       mov $1,$3

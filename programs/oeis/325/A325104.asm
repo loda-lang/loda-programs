@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   mov $2,$0
-  cal $0,80100
+  cal $0,80100 ; a(n) = 2^(number of 0's in binary representation of n).
   sub $2,$0
   mul $2,2
   mov $1,$2

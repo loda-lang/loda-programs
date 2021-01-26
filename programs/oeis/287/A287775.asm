@@ -6,7 +6,7 @@ add $0,2
 mov $4,$0
 mov $2,$4
 div $2,2
-cal $2,189662
+cal $2,189662 ; Positions of 0 in A189661; complement of A026356.
 mov $1,$2
 sub $1,1
 mov $6,$5

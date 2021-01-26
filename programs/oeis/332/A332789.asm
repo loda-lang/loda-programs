@@ -12,7 +12,7 @@ lpb $6,1
   add $3,$0
   add $3,1
   mov $0,$3
-  cal $0,7069
+  cal $0,7069 ; First column of spectral array W(sqrt 2).
   sub $0,$3
   sub $0,1
   mov $1,$0

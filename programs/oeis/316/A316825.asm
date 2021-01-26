@@ -7,7 +7,7 @@ lpb $3,1
   mov $0,$4
   sub $3,1
   add $0,$3
-  cal $0,182761
+  cal $0,182761 ; Beatty sequence for (7 - sqrt(5))/2.
   mul $0,14
   mov $1,$0
   mov $2,$3

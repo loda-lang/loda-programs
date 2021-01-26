@@ -10,7 +10,7 @@ lpb $4,1
   sub $0,2
   trn $0,1
   sub $0,2
-  cal $0,183409
+  cal $0,183409 ; Number of n X 2 binary arrays with each sum of a(1..i,1..j) no greater than i*j/2 and rows and columns in nondecreasing order.
   mov $1,$0
   mov $2,$4
   lpb $2,1

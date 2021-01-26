@@ -6,7 +6,7 @@ mov $1,$0
 mov $2,3
 mov $3,3
 add $3,$0
-cal $3,189661
+cal $3,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
 sub $2,$0
 add $2,$3
 add $2,$1

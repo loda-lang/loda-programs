@@ -11,11 +11,11 @@ lpb $2,1
   sub $0,$0
   sub $0,7
   sub $1,1
-  cal $0,10051
+  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $0,1
   mul $1,$0
   mov $0,$1
-  cal $0,92405
+  cal $0,92405 ; a(n) = tau(n) + tau(n+1), where tau(n) = A000005(n), the number of divisors of n.
   mov $1,$0
   sub $1,2
   add $3,$1

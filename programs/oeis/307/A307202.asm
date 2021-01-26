@@ -11,7 +11,7 @@ lpb $5,1
   mov $3,$0
   mul $3,$0
   sub $0,2
-  cal $0,296159
+  cal $0,296159 ; Sum of the smaller parts in the partitions of n into two distinct parts with the larger part odd.
   add $3,5
   mov $4,0
   sub $4,$0

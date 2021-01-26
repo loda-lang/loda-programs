@@ -5,7 +5,7 @@ mov $5,$0
 div $0,2
 sub $0,1
 mov $3,$0
-cal $3,3152
+cal $3,3152 ; A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
 add $3,2
 mov $2,$3
 mov $1,$2

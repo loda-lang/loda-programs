@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $4,$0
-cal $1,3849
+cal $1,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 add $1,1
 mov $3,$4
 mov $2,$3

@@ -24,7 +24,7 @@ lpb $17,1
       add $3,$0
       add $3,6
       sub $7,1
-      cal $3,134816
+      cal $3,134816 ; Padovan's spiral numbers.
     lpe
     mov $1,$3
     sub $1,2

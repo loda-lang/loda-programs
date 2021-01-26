@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,37834
+  cal $1,37834 ; Sum{|d(i)-d(i-1)|: i=1,...,m}, where Sum{d(i)*2^i: i=0,1,...,m} is base 2 representation of n.
   sub $0,1
   sub $1,2
   sub $0,$1

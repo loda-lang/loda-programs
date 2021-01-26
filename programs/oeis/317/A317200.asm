@@ -8,7 +8,7 @@ lpb $0,1
   mul $0,$2
   div $0,$2
   mov $1,$0
-  cal $1,213
+  cal $1,213 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) with a(0)=a(1)=a(2)=1.
   add $3,1
   mov $0,$3
   add $1,3

@@ -4,5 +4,5 @@
 mul $0,2
 mov $2,$0
 add $2,1
-cal $2,36256
+cal $2,36256 ; a(n) = Sum_{i=0..n} binomial(i,floor(i/2)).
 mov $1,$2

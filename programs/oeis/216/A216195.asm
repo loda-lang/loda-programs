@@ -7,7 +7,7 @@ lpb $0,1
   add $2,2
   add $3,6
   add $3,$2
-  cal $0,80776
+  cal $0,80776 ; Oscillating sequence which rises to 2^(k-1) in k-th segment (k>=1) then falls back to 0.
   mov $1,4
   mul $1,$3
   mov $2,1

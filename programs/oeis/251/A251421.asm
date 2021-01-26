@@ -4,7 +4,7 @@
 mov $2,$0
 add $2,2
 mov $0,$2
-cal $0,113979
+cal $0,113979 ; Number of compositions of n with an even number of 1's.
 add $0,1
 mov $1,$0
 sub $1,2

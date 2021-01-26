@@ -5,7 +5,7 @@ mov $2,$0
 sub $2,$0
 sub $2,1
 sub $2,$0
-cal $0,155085
+cal $0,155085 ; a(n) = n + sum of divisors of n.
 div $0,$2
 sub $0,2
 sub $1,$0

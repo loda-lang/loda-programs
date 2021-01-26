@@ -3,7 +3,7 @@
 
 mul $0,2
 trn $2,$0
-cal $0,164394
+cal $0,164394 ; Number of binary strings of length n with no substrings equal to 0001 or 0100.
 add $2,$0
 add $2,1
 mov $0,$2

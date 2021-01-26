@@ -6,7 +6,7 @@ mul $0,2
 mov $2,$1
 lpb $0,1
   mov $3,$2
-  cal $3,134816
+  cal $3,134816 ; Padovan's spiral numbers.
   sub $0,7
 lpe
 mov $1,$3

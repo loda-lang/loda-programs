@@ -13,7 +13,7 @@ lpb $7,1
   add $4,$0
   add $3,$4
   mul $4,$3
-  cal $0,203
+  cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $4,$0
   mov $0,$4
   mov $1,$0

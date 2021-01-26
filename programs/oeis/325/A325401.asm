@@ -4,7 +4,7 @@
 lpb $0,1
   mov $1,$0
   mov $0,1
-  cal $1,93474
+  cal $1,93474 ; Duplicate of A030101.
   add $2,$1
   add $0,$2
   sub $0,1

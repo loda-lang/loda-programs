@@ -4,7 +4,7 @@
 lpb $0,1
   mov $1,$0
   sub $1,1
-  cal $1,77140
+  cal $1,77140 ; a(1) = 1 and then add n to the previous term if n is coprime to the previous term, otherwise subtract n from the previous term. a(1) = 1 and a(n) = a(n-1) + n if gcd(n, a(n-1)) = 1, otherwise a(n) = a(n-1) - n.
   mov $0,0
   add $2,$1
   add $2,$1

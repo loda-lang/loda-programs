@@ -10,7 +10,7 @@ mod $1,2
 mov $2,$1
 mov $3,2
 add $3,$2
-cal $0,10051
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 sub $3,$0
 mov $1,$3
 sub $1,1

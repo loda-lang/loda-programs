@@ -4,7 +4,7 @@
 mov $3,$0
 add $0,1
 mov $1,$0
-cal $1,158919
+cal $1,158919 ; Beatty sequence for the tribonacci constant tau (A058265): a(n) = floor(n*tau).
 add $1,1
 mov $4,$3
 mov $2,$4

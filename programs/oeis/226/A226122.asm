@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,226023
+  cal $0,226023 ; A142705 (numerators of 1/4-1/(4n^2)) sorted to natural order.
   mov $1,$0
   add $1,1
   mov $2,$3

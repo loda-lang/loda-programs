@@ -9,7 +9,7 @@ lpb $8,1
   mov $0,$6
   sub $8,1
   sub $0,$8
-  cal $0,131067
+  cal $0,131067 ; Triangle read by rows: T(n,k) = 7*binomial(n,k) - 6 for 0 <= k <= n.
   add $0,3
   add $3,$0
   gcd $3,2

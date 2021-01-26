@@ -10,7 +10,7 @@ lpb $4,1
   add $2,1
   lpb $2,1
     sub $2,1
-    cal $0,53827
+    cal $0,53827 ; Sum of digits of (n written in base 6).
     mul $0,2
     mov $1,$0
     pow $1,3

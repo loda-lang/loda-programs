@@ -37,7 +37,7 @@ lpb $44,1
           sub $29,1
           add $0,$29
           add $0,1
-          cal $0,33192
+          cal $0,33192 ; a(n) = binomial(Fibonacci(n) + 1, 2).
           mul $0,2
           mov $1,$0
           mov $30,$29

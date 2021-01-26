@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   mov $4,$0
-  cal $0,137319
+  cal $0,137319 ; Start with the set of natural numbers. Add 1 to every 2nd term, 2 to every 3rd term, 3 to every 4th term, etc.
   sub $0,$4
   add $0,1
   mov $1,$0

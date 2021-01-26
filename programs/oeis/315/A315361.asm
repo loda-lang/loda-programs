@@ -9,7 +9,7 @@ lpb $7,1
   sub $7,1
   add $0,$7
   sub $0,1
-  cal $0,298790
+  cal $0,298790 ; Partial sums of A298788.
   div $0,2
   add $0,3
   mov $1,$0

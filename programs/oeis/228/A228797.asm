@@ -7,7 +7,7 @@ lpb $4,1
   mov $0,$6
   sub $4,1
   add $0,$4
-  cal $0,52937
+  cal $0,52937 ; Expansion of (2-3*x-x^2)/((1-x)*(1-2*x-x^2)).
   add $0,9
   mov $1,$0
   div $1,2

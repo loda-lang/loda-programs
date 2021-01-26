@@ -12,7 +12,7 @@ lpb $7,1
   mul $3,2
   lpb $0,1
     mov $1,$0
-    cal $1,232091
+    cal $1,232091 ; Smallest square or promic (oblong) number greater than or equal to n.
     mov $0,2
     sub $1,$3
     mov $2,$1

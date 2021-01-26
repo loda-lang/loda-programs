@@ -19,7 +19,7 @@ lpb $11,1
     mul $0,2
     add $2,2
     add $4,5
-    cal $0,312100
+    cal $0,312100 ; Coordination sequence Gal.5.54.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
     add $2,$4
     add $0,$2
     sub $0,3

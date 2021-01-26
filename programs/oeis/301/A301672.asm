@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,301673
+  cal $0,301673 ; Partial sums of A301672.
   mov $1,$0
   mov $2,$3
   lpb $2,1

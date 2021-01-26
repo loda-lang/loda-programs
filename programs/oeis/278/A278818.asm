@@ -4,7 +4,7 @@
 mov $2,$0
 mov $4,$0
 mul $4,2
-cal $4,80883
+cal $4,80883 ; Distance of n to next square.
 mov $3,$4
 mov $1,$3
 mov $6,$2

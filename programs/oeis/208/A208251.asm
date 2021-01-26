@@ -10,7 +10,7 @@ lpb $7,1
   sub $7,1
   sub $0,$7
   mov $4,$0
-  cal $0,161654
+  cal $0,161654 ; a(n) = the largest multiple of {the number of divisors of n} that is <= n.
   add $2,$0
   sub $0,$0
   sub $4,$2

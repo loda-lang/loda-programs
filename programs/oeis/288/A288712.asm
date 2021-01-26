@@ -9,7 +9,7 @@ lpb $5,1
   sub $0,1
   trn $0,1
   sub $5,1
-  cal $0,192002
+  cal $0,192002 ; Counting sequence for Wythoff AB-numbers smaller than n.
   add $0,1
 lpe
 mov $1,$0

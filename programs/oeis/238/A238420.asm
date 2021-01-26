@@ -3,7 +3,7 @@
 
 mov $4,$0
 mov $3,$4
-cal $0,59929
+cal $0,59929 ; a(n) = Fibonacci(n)*Fibonacci(n+2).
 mov $2,1
 mul $2,$0
 add $3,1

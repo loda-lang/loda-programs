@@ -16,7 +16,7 @@ lpb $29,1
   sub $4,1
   add $0,$4
   mov $4,$0
-  cal $0,54844
+  cal $0,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
   add $4,1
   mul $4,$0
   mov $1,$4

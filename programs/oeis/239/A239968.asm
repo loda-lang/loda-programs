@@ -8,7 +8,7 @@ lpb $4,1
   sub $4,1
   add $0,$4
   sub $0,1
-  cal $0,62298
+  cal $0,62298 ; Number of nonprimes <= n.
   mov $3,$0
   add $3,1
   mul $0,$3

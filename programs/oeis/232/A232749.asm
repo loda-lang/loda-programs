@@ -9,7 +9,7 @@ lpb $6,1
   add $0,$6
   sub $0,1
   mov $3,4
-  cal $0,232748
+  cal $0,232748 ; Partial sums of the characteristic function of Hofstadter's A030124.
   mov $4,$0
   mov $1,$4
   mul $3,$1

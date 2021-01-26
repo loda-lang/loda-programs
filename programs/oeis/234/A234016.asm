@@ -7,10 +7,10 @@ lpb $4,1
   mov $0,$5
   sub $4,1
   sub $0,$4
-  cal $0,308187
+  cal $0,308187 ; Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {0,1}.
   mov $3,$0
   sub $3,2
-  cal $0,5
+  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $1,$0
   add $0,8
   mov $2,10

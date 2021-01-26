@@ -4,7 +4,7 @@
 mov $2,$0
 sub $2,$0
 add $2,$0
-cal $0,18804
+cal $0,18804 ; Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
 mov $1,$2
 add $1,$2
 sub $2,$1

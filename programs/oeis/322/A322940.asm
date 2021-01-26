@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,106434
+  cal $0,106434 ; The (1,1)-entry of the matrix A^n, where A = [0,1;2,3].
   add $0,1
   mov $1,$0
   mov $2,$3

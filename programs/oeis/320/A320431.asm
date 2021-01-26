@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $1,$0
-  cal $1,70260
+  cal $1,70260 ; Third diagonal of triangle defined in A051537.
   mov $0,-1
   mul $1,2
 lpe
