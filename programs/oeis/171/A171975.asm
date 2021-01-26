@@ -3,6 +3,4 @@
 
 cal $0,277644 ; Beatty sequence for sqrt(6)/2.
 div $0,2
-mul $0,3
 mov $1,$0
-div $1,3
