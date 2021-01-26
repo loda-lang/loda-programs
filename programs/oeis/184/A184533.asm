@@ -3,15 +3,9 @@
 
 add $0,1
 pow $0,2
-mov $2,$0
-add $0,4
-mov $3,$2
-add $3,2
-mov $4,20
-add $4,$0
-mov $5,10
-sub $5,$3
-div $5,2
-sub $4,$5
-mov $1,$4
-sub $1,20
+mov $1,$0
+add $0,16
+div $0,2
+trn $1,2
+add $1,$0
+sub $1,6

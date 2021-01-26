@@ -3,6 +3,4 @@
 
 cal $0,77917 ; Expansion of (1-x)^(-1)/(1+2*x-2*x^2).
 gcd $0,$0
-mov $3,$0
-mov $2,$3
-mov $1,$2
+mov $1,$0
