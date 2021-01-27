@@ -3,8 +3,5 @@
 
 cal $0,14637 ; Odd heptagonal numbers (A000566).
 mov $2,$0
-pow $2,2
-mov $1,$2
-div $1,8
-mul $1,8
-add $1,1
+mul $0,$2
+mov $1,$0
