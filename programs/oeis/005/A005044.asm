@@ -5,38 +5,19 @@ mov $8,$0
 mov $10,2
 lpb $10,1
   clr $0,8
-  sub $10,1
   mov $0,$8
+  sub $10,1
   add $0,$10
   sub $0,1
   mov $5,$0
   mov $7,$0
-  add $7,1
   lpb $7,1
-    clr $0,5
-    sub $7,1
     mov $0,$5
+    sub $7,1
     sub $0,$7
-    mov $4,$0
-    add $0,1
-    add $1,$0
-    mov $4,2
-    sub $0,4
-    mov $1,14
-    mov $2,$1
-    add $2,$2
-    mov $3,$4
-    add $4,3
-    mov $2,1
-    cal $0,266755
+    sub $0,3
+    cal $0,266755 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^4)).
     mov $1,$0
-    sub $4,$2
-    mov $4,$0
-    mov $2,$3
-    mov $2,1
-    sub $0,$1
-    div $0,2
-    pow $0,2
     add $6,$1
   lpe
   mov $1,$6
@@ -47,7 +28,7 @@ lpb $10,1
   lpe
 lpe
 lpb $8,1
-  sub $9,$1
   mov $8,0
+  sub $9,$1
 lpe
 mov $1,$9

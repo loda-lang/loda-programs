@@ -4,26 +4,8 @@
 sub $0,1
 lpb $0,1
   mov $1,$0
-  mov $1,$0
-  cal $1,5059
-  mov $3,3
-  sub $3,$0
-  add $2,$1
+  cal $1,5058 ; a(n) = 5^n - 3^n.
   sub $0,1
-  add $4,$1
-  mov $4,1
+  add $2,$1
 lpe
-mul $2,3
-mov $4,$2
-div $4,4
-mul $4,2
-mov $0,3
-add $4,1
-add $3,$0
-mov $26,$0
-cmp $26,0
-add $0,$26
-mod $1,$0
 mov $1,$2
-div $1,3
-mul $1,2
