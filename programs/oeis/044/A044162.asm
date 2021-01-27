@@ -16,12 +16,10 @@ mul $3,$2
 sub $3,1
 mov $1,$3
 add $1,13
-mov $6,$5
-mov $7,$6
+mov $7,$5
 mul $7,24
 add $1,$7
 add $1,12
-mov $9,$8
-mov $10,$9
-mul $10,24
-add $1,$10
+mov $6,$8
+mul $6,24
+add $1,$6

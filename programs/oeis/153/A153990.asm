@@ -5,16 +5,14 @@ mod $0,6
 mov $2,$0
 mod $2,2
 mov $3,$0
-mov $6,$0
+mov $4,$0
 mul $0,2
-add $6,5
-mul $2,$6
+add $4,5
+mul $2,$4
+trn $2,$0
 mov $5,$0
-trn $2,$5
 lpb $0,1
-  mov $4,$3
-  mov $7,$4
-  mul $2,$7
+  mul $2,$3
   mov $0,$2
   add $5,3
 lpe

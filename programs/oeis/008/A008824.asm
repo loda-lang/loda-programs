@@ -9,7 +9,4 @@ add $2,1
 gcd $1,$2
 mul $1,2
 sub $1,1
-mov $5,$0
-mov $4,$5
-mov $3,$4
-add $1,$3
+add $1,$0

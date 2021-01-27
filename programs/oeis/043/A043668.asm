@@ -9,14 +9,14 @@ add $0,2
 add $4,$0
 lpb $0,1
   add $5,5
+  trn $0,$5
   mov $3,$5
-  trn $0,$3
   add $5,1
   trn $5,$4
   mov $4,$3
   add $5,12
   add $0,$5
-  mov $1,$4
+  mov $1,$3
 lpe
 lpb $2,1
   add $1,1

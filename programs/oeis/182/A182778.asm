@@ -3,9 +3,9 @@
 
 mov $2,$0
 add $2,1
-mov $9,$0
+mov $3,$0
 lpb $2,1
-  mov $0,$9
+  mov $0,$3
   sub $2,1
   sub $0,$2
   mov $5,$0
@@ -20,8 +20,7 @@ lpb $2,1
     lpb $0,1
       sub $0,1
       add $1,2
-      mov $3,$1
-      trn $0,$3
+      trn $0,$1
     lpe
     mov $8,$7
     lpb $8,1

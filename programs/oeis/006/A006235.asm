@@ -6,10 +6,8 @@ add $0,1
 mov $3,$0
 cal $0,278417 ; a(n) = n*((2+sqrt(3))^n + (2-sqrt(3))^n)/2.
 mul $3,2
-mov $5,$0
-sub $5,$3
-mov $1,$5
+mov $4,$0
+sub $4,$3
+mov $1,$4
 add $1,1
-mov $6,$2
-mov $4,$6
-add $1,$4
+add $1,$2

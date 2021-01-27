@@ -4,6 +4,5 @@
 mod $0,8
 mul $0,3
 mov $1,15
-mov $2,$0
-trn $1,$2
+trn $1,$0
 mod $1,2

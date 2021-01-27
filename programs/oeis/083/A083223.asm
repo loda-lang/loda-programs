@@ -3,13 +3,12 @@
 
 mov $1,$0
 mov $2,6
-mov $8,$0
-add $8,1
-mov $3,$8
+mov $3,$0
+add $3,1
 mov $4,1
 mov $5,1
 add $5,$3
-mov $6,$8
+mov $6,$3
 add $6,1
 add $4,$6
 pow $2,$4
@@ -21,7 +20,7 @@ mul $2,$7
 add $2,$5
 add $2,5
 add $1,$2
-add $1,$8
+add $1,$3
 sub $1,658
 div $1,648
 add $1,1

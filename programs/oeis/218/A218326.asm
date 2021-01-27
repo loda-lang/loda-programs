@@ -11,7 +11,7 @@ mov $2,$3
 sub $2,1
 mul $2,2
 mov $4,$3
-div $4,$4
+div $4,$3
 mov $1,$4
 bin $2,2
 mul $3,2

@@ -22,9 +22,7 @@ lpb $10,1
   div $2,3
   mov $1,$2
   add $1,2
-  mov $6,$5
-  mov $7,$6
-  add $1,$7
+  add $1,$5
   mov $11,$10
   lpb $11,1
     mov $9,$1

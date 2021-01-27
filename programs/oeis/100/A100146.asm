@@ -3,19 +3,19 @@
 
 mov $1,$0
 mov $5,$0
-add $0,$1
-mov $4,$0
-mul $1,$4
+mul $0,2
+mul $1,$0
 add $1,1
 mul $1,5
+mov $4,$0
 mul $4,2
 mul $1,$4
 div $1,3
 add $1,1
-mov $3,$5
-mov $2,$3
+mov $2,$5
 mul $2,4
 add $1,$2
+mov $3,$5
 mul $3,$5
 mov $2,$3
 mul $2,23

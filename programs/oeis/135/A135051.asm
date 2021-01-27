@@ -8,12 +8,11 @@ add $1,$0
 mul $1,2
 pow $1,2
 add $1,7
-mov $4,$0
-mov $5,$4
-mov $3,$5
+mov $3,$0
 mul $3,28
 add $1,$3
-mul $5,$4
-mov $3,$5
+mov $4,$0
+mul $4,$0
+mov $3,$4
 mul $3,28
 add $1,$3

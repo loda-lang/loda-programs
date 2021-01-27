@@ -3,19 +3,17 @@
 
 mov $2,$0
 mov $6,$0
-add $0,$2
-mov $8,$6
-mul $2,$8
+mul $0,2
+mul $2,$6
 add $2,$0
 mov $3,$0
-mov $4,$6
-bin $3,$4
+bin $3,$6
+mov $4,$2
+add $4,$2
+mov $2,1
 mov $5,1
 mul $5,$3
-mov $9,$2
-add $9,$2
-mov $2,1
-mov $7,$9
+mov $7,$4
 mul $7,$5
 add $2,$7
 add $2,21

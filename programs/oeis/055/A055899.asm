@@ -43,16 +43,12 @@ lpb $18,1
         sub $6,1
         mul $6,$2
         add $6,$3
-        mov $1,$6
-        add $8,$1
+        add $8,$6
       lpe
-      mov $1,$8
-      add $11,$1
+      add $11,$8
     lpe
-    mov $1,$11
-    add $14,$1
+    add $14,$11
   lpe
-  mov $1,$14
-  add $17,$1
+  add $17,$14
 lpe
 mov $1,$17

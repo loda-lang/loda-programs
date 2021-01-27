@@ -6,14 +6,12 @@ mov $5,3
 lpb $2,1
   add $5,$0
   mov $0,$5
-  mov $3,$5
-  mov $6,$3
-  mov $3,$4
-  lpb $6,1
+  mov $4,$5
+  lpb $4,1
     add $3,$0
     gcd $5,2
     add $3,$5
-    sub $6,$5
+    sub $4,$5
   lpe
   sub $2,1
 lpe

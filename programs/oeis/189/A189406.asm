@@ -9,7 +9,6 @@ mul $1,2
 add $1,$0
 div $1,2
 add $1,4
-mov $4,$3
-mov $2,$4
+mov $2,$3
 mul $2,2
 add $1,$2

@@ -16,8 +16,7 @@ lpb $35,1
     div $2,3
     gcd $2,$1
   lpe
-  mov $0,$2
-  mov $1,$0
+  mov $1,$2
   sub $1,1
   add $34,$1
 lpe

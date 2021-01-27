@@ -31,9 +31,7 @@ lpb $20,1
         add $3,$9
         trn $5,$1
         mov $1,0
-        mov $7,$9
-        mov $8,$7
-        add $3,$8
+        add $3,$9
         mul $10,$0
         mov $0,6
         add $6,$10
@@ -60,7 +58,6 @@ lpb $20,1
     sub $1,36
     add $16,$1
   lpe
-  mov $1,$16
-  add $19,$1
+  add $19,$16
 lpe
 mov $1,$19

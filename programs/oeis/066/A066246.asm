@@ -3,7 +3,7 @@
 
 cal $0,239968 ; 0 unless n is a nonprime A018252(k) when a(n) = k.
 mov $1,$0
-mov $2,$1
+mov $2,$0
 cmp $2,0
 add $1,$2
 sub $1,1

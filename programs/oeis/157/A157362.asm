@@ -5,8 +5,6 @@ mov $1,$0
 mul $1,7
 pow $1,2
 add $1,47
-mov $3,$0
-mov $2,$3
-mov $4,$2
-mul $4,96
-add $1,$4
+mov $2,$0
+mul $2,96
+add $1,$2

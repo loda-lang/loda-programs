@@ -21,7 +21,6 @@ lpe
 mod $4,2
 mov $1,$4
 add $1,1
-mov $8,$7
-mov $9,$8
+mov $9,$7
 mul $9,2
 add $1,$9

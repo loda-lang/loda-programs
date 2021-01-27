@@ -19,8 +19,7 @@ lpb $2,1
   gcd $7,$3
   add $0,$7
   add $0,4
-  mov $6,$0
-  mov $1,$6
+  mov $1,$0
   sub $1,8
   div $1,10
   mul $1,1320

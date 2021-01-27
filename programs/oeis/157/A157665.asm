@@ -21,7 +21,6 @@ add $4,2
 add $2,$4
 mov $1,$2
 add $1,2
-mov $8,$7
-mov $5,$8
+mov $5,$7
 mul $5,2
 add $1,$5

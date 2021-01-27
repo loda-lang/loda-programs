@@ -35,8 +35,7 @@ lpb $2,1
           mov $0,$7
           sub $9,1
           add $0,$9
-          mov $6,$0
-          add $0,$6
+          mul $0,2
           mov $1,4
           add $3,1
           sub $1,$3

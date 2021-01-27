@@ -3,13 +3,12 @@
 
 mov $1,7
 mov $2,$0
-mov $3,$2
-trn $3,2
+trn $2,2
 lpb $0,1
   mul $1,2
-  add $1,$3
+  add $1,$2
   sub $1,$0
   sub $0,1
-  trn $3,2
+  trn $2,2
 lpe
 add $1,74

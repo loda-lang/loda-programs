@@ -6,12 +6,11 @@ mov $2,1
 sub $2,$0
 sub $2,57600
 mov $3,2
-mov $4,$2
-mov $5,$4
-mov $6,$4
-gcd $3,$6
+gcd $3,$2
 mov $4,1
+mov $5,$2
 add $5,8
+mov $6,$2
 mul $6,$3
 add $3,$5
 mov $0,$3

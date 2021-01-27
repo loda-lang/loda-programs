@@ -3,7 +3,7 @@
 
 mul $0,3
 mov $1,$0
-add $0,$1
+mul $0,2
 gcd $1,5
 add $1,$0
 sub $1,5

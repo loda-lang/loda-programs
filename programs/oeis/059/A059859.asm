@@ -8,12 +8,11 @@ lpb $4,1
   sub $4,1
   sub $0,$4
   mov $1,2
-  mov $5,$0
-  mov $3,$5
-  mul $3,$5
+  mov $3,$0
+  mul $3,$0
   mul $1,$3
   div $1,8
   pow $1,2
-  add $6,$1
+  add $5,$1
 lpe
-mov $1,$6
+mov $1,$5

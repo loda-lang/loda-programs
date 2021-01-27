@@ -7,10 +7,10 @@ mov $1,$0
 gcd $0,4
 mul $1,$0
 add $1,109
-mov $3,$4
-mov $2,$3
+mov $2,$4
 mul $2,110
 add $1,$2
+mov $3,$4
 mul $3,$4
 mov $2,$3
 mul $2,44

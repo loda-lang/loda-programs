@@ -11,7 +11,6 @@ lpb $2,1
   cal $0,79644 ; n (mod sqrtint(n)).
   mov $5,$0
   cmp $5,0
-  mov $1,$5
-  add $3,$1
+  add $3,$5
 lpe
 mov $1,$3

@@ -22,16 +22,12 @@ lpb $12,1
       mov $0,2
       trn $1,3
       mov $2,$1
+      mul $1,2
       add $1,$2
-      add $1,$2
-      mov $4,$1
-      mov $6,$4
-      mov $3,$6
+      mov $3,$1
     lpe
-    mov $1,$3
-    add $8,$1
+    add $8,$3
   lpe
-  mov $1,$8
-  add $11,$1
+  add $11,$8
 lpe
 mov $1,$11

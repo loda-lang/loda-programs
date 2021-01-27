@@ -4,9 +4,8 @@
 mov $1,1
 add $1,$0
 mul $1,2
-mov $2,$0
-mov $3,$2
 mov $2,3
+mov $3,$0
 add $3,1
 mov $4,$3
 lpb $0,1

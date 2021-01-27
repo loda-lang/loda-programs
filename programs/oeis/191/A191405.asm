@@ -8,14 +8,13 @@ add $6,$0
 mov $3,$6
 add $3,7
 sub $4,$3
-mov $7,$0
+mov $5,$0
 sub $0,$4
 mul $0,2
 add $0,4
 div $0,5
 mov $1,$0
 add $1,1
-mov $5,$7
 mov $2,$5
 mul $2,2
 add $1,$2

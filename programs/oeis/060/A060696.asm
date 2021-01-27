@@ -4,7 +4,7 @@
 sub $0,2
 cal $0,76051 ; Sum of product of odd numbers <= n and the product of even numbers <= n.
 mov $1,$0
-mov $2,$1
+mov $2,$0
 cmp $2,0
 add $1,$2
 mul $1,2

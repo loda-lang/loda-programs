@@ -6,9 +6,8 @@ mov $1,-2
 pow $1,$0
 mov $3,10
 add $3,$1
-mov $2,$3
-gcd $4,$2
-mov $1,$4
+gcd $2,$3
+mov $1,$2
 div $1,6
 mul $1,2
 add $1,1

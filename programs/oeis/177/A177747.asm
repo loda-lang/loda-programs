@@ -11,7 +11,6 @@ lpb $2,1
   add $0,8
   div $0,2
   bin $0,4
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

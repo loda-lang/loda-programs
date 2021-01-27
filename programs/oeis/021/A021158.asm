@@ -6,7 +6,7 @@ sub $0,1
 cal $0,36118 ; a(n) = 2^n mod 13.
 sub $0,1
 mov $1,$0
-mov $2,$1
+mov $2,$0
 cmp $2,0
 add $1,$2
 sub $1,1

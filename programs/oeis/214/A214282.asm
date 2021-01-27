@@ -3,13 +3,12 @@
 
 mov $5,$0
 mov $0,9
-mov $4,$5
-mov $7,$5
-mov $2,$7
+mov $2,$5
 add $2,1
 div $2,4
 mul $2,2
 mov $3,9
+mov $4,$5
 bin $4,$2
 mov $6,2
 mov $7,1

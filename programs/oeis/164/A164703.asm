@@ -9,10 +9,9 @@ lpb $2,1
   mul $0,2
   add $0,2
   mov $4,$0
-  mov $5,$4
-  lpb $5,1
+  lpb $4,1
     mul $1,2
-    trn $5,$2
+    trn $4,$2
   lpe
   trn $2,2
   mov $3,$2

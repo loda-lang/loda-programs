@@ -25,8 +25,7 @@ lpb $9,1
       sub $0,$2
       trn $0,1
     lpe
-    mov $0,$2
-    mov $1,$0
+    mov $1,$2
     mov $6,$5
     lpb $6,1
       mov $4,$1

@@ -3,8 +3,7 @@
 
 add $0,7
 cal $0,97333 ; Sum k=0..n, C(n-k, floor(k/2)).
-mov $3,$0
-sub $3,12
-mov $2,$3
+mov $2,$0
+sub $2,12
 mov $1,$2
 add $1,10

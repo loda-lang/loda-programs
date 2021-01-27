@@ -4,7 +4,7 @@
 add $0,2
 mov $2,$0
 mov $3,1
-sub $3,$2
+sub $3,$0
 mov $1,$3
 add $1,1
 fac $1

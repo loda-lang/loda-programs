@@ -8,13 +8,12 @@ lpb $4,1
   mov $0,$7
   sub $4,1
   sub $0,$4
-  mov $1,$0
   mov $2,$0
   gcd $2,9
   add $2,3
-  mov $3,$1
+  mov $3,$0
   mov $6,5
-  mov $8,$3
+  mov $8,$0
   add $8,4
   trn $8,5
   lpb $2,1
@@ -29,7 +28,6 @@ lpb $4,1
     sub $2,1
   lpe
   add $6,$8
-  mov $1,$6
-  add $5,$1
+  add $5,$6
 lpe
 mov $1,$5

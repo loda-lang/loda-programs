@@ -13,8 +13,7 @@ lpb $0,1
 lpe
 add $4,3
 add $4,$3
-mov $5,$4
-add $1,$5
+add $1,$4
 sub $1,13
 div $1,8
 add $1,1

@@ -26,9 +26,8 @@ lpb $39,1
       trn $0,1
       cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
       add $0,2
-      mov $1,$0
       mov $4,0
-      gcd $4,$1
+      gcd $4,$0
       mul $4,2
       mov $1,$4
       sub $1,1
@@ -36,9 +35,7 @@ lpb $39,1
       add $28,$1
     lpe
     mov $1,$28
-    mov $31,$30
-    mov $32,$31
-    add $1,$32
+    add $1,$30
     mov $36,$35
     lpb $36,1
       mov $34,$1

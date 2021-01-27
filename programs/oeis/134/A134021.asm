@@ -3,7 +3,7 @@
 
 mul $0,2
 mov $1,$0
-mov $2,$1
+mov $2,$0
 cmp $2,0
 add $1,$2
 log $1,3

@@ -12,8 +12,7 @@ lpb $6,1
   add $1,3
   mov $3,$0
   gcd $3,$1
-  mov $0,$3
-  add $2,$0
+  add $2,$3
   mov $1,$2
   div $1,2
   add $5,$1

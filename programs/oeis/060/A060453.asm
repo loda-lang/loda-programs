@@ -68,10 +68,8 @@ lpb $25,1
       mul $1,2
       add $18,$1
     lpe
-    mov $1,$18
-    add $21,$1
+    add $21,$18
   lpe
-  mov $1,$21
-  add $24,$1
+  add $24,$21
 lpe
 mov $1,$24

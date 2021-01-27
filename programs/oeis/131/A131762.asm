@@ -8,8 +8,8 @@ mov $6,40320
 sub $6,$0
 bin $0,0
 add $4,$0
+mov $0,$6
 mov $5,$6
-mov $0,$5
 mov $7,4
 sub $7,$4
 add $7,1
@@ -19,11 +19,10 @@ lpb $0,1
   add $3,$2
 lpe
 sub $5,49
-mov $0,$5
 sub $7,2
 add $7,$3
 mov $3,4
-add $7,$0
+add $7,$5
 mul $3,$7
 mul $3,3
 mov $1,$3

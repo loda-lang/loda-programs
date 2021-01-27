@@ -6,8 +6,7 @@ add $2,$0
 mov $5,$0
 add $0,2
 add $2,1
-mov $3,$5
-mul $2,$3
+mul $2,$5
 mov $3,-45
 mov $4,$2
 mov $6,-47

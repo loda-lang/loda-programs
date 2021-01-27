@@ -3,13 +3,11 @@
 
 mov $1,3
 mov $2,$0
-mov $5,$0
+mov $3,$0
 lpb $2,1
   mul $1,2
   sub $2,1
   div $2,2
 lpe
 add $1,1
-mov $4,$5
-mov $3,$4
 add $1,$3

@@ -41,9 +41,7 @@ lpb $13,1
   lpe
   mov $1,$6
   div $1,2
-  mov $9,$8
-  mov $10,$9
-  add $1,$10
+  add $1,$8
   mov $14,$13
   lpb $14,1
     mov $12,$1

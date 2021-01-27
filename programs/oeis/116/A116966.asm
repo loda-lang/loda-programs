@@ -5,7 +5,4 @@ mov $1,$0
 mod $1,4
 add $1,1
 mod $1,3
-mov $4,$0
-mov $3,$4
-mov $2,$3
-add $1,$2
+add $1,$0

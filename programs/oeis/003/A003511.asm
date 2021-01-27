@@ -12,8 +12,7 @@ lpb $2,1
   add $0,10
   cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $0,1
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3
 sub $1,1

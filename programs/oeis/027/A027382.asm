@@ -11,10 +11,9 @@ lpe
 mov $1,1
 add $1,$3
 pow $1,2
-mov $4,$6
-mov $2,$4
+mov $2,$6
 mul $2,2
 add $1,$2
+mov $4,$6
 mul $4,$6
-mov $2,$4
-add $1,$2
+add $1,$4

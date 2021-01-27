@@ -12,8 +12,7 @@ mul $3,9
 mov $5,7
 pow $5,$0
 mul $3,$5
-mov $5,$3
-mov $1,$5
+mov $1,$3
 div $1,1764
 mul $1,4
 add $1,1

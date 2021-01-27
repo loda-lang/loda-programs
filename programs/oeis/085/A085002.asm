@@ -7,11 +7,10 @@ mov $4,$0
 mov $0,631
 mul $4,631
 lpb $0,1
+  mul $3,2
   mov $2,$3
-  add $3,$2
-  mov $5,$3
-  pow $5,2
-  mov $1,$5
+  pow $2,2
+  mov $1,$2
   mul $1,2
   mul $4,2
   div $4,$1

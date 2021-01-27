@@ -17,13 +17,11 @@ lpb $0,1
   mul $4,8
   mov $3,$4
 lpe
-mov $6,$3
-add $5,$6
-mov $4,$5
-mov $1,$4
+add $5,$3
+mov $1,$5
 mov $8,$7
 mul $8,$7
 mul $8,$7
-mov $9,$8
-mul $9,4
-add $1,$9
+mov $6,$8
+mul $6,4
+add $1,$6

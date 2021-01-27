@@ -17,10 +17,9 @@ lpe
 add $0,$5
 mov $1,$0
 sub $1,5
-mov $6,$2
-mov $3,$6
+mov $3,$2
 mul $3,2
 add $1,$3
+mov $6,$2
 mul $6,$2
-mov $3,$6
-add $1,$3
+add $1,$6

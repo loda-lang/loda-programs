@@ -23,10 +23,8 @@ lpb $12,1
       div $0,2
       add $5,$6
     lpe
-    mov $1,$5
-    add $8,$1
+    add $8,$5
   lpe
-  mov $1,$8
-  add $11,$1
+  add $11,$8
 lpe
 mov $1,$11

@@ -15,7 +15,7 @@ lpb $0,1
   add $4,$1
   trn $0,$4
   mov $1,$3
-  sub $2,$1
+  sub $2,$3
 lpe
 lpb $5,1
   add $1,1

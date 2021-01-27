@@ -21,15 +21,12 @@ lpb $8,1
   add $6,1
   gcd $5,$6
   add $5,12
-  mov $1,$5
-  mov $4,$1
+  mov $4,$5
   gcd $4,2
-  mov $6,$1
-  mov $7,$6
-  add $4,$7
+  add $4,$5
   mov $1,$4
   sub $1,14
   div $1,2
-  add $9,$1
+  add $7,$1
 lpe
-mov $1,$9
+mov $1,$7

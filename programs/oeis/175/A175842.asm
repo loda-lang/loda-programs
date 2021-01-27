@@ -8,13 +8,12 @@ lpb $6,1
   sub $6,1
   sub $0,$6
   lpb $0,1
-    mov $5,7
-    mov $7,$0
+    mov $3,$0
     mov $0,0
-    pow $7,2
-    sub $7,1
-    div $7,2
-    mov $3,$7
+    pow $3,2
+    sub $3,1
+    div $3,2
+    mov $5,7
     add $5,$3
     mov $1,$5
     div $1,7

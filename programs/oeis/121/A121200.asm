@@ -9,6 +9,4 @@ add $1,2
 add $0,$1
 mov $1,$0
 sub $1,1
-mov $4,$2
-mov $3,$4
-add $1,$3
+add $1,$2

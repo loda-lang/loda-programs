@@ -3,20 +3,19 @@
 
 mov $2,$0
 cal $0,153976 ; a(n) = n^3 + (n+2)^3.
-mov $3,$0
-add $0,$3
+mul $0,2
 div $0,12
 mul $0,4
 mov $1,$0
+mov $3,$2
+mul $3,2
+add $1,$3
 mov $4,$2
-mov $5,$4
-mul $5,2
-add $1,$5
 mul $4,$2
-mov $5,$4
-mul $5,6
-add $1,$5
+mov $3,$4
+mul $3,6
+add $1,$3
 mul $4,$2
-mov $5,$4
-mul $5,4
-add $1,$5
+mov $3,$4
+mul $3,4
+add $1,$3

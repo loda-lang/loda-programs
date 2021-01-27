@@ -5,7 +5,6 @@ mov $1,$0
 add $1,2
 cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $2,$1
-mov $3,$0
-gcd $2,$3
+gcd $2,$0
 mov $1,$2
 sub $1,1

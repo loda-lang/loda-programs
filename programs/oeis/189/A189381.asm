@@ -14,21 +14,20 @@ lpb $4,1
     mov $0,$2
     sub $8,1
     add $0,$8
-    mov $3,$0
-    add $0,$3
+    mul $0,2
     cal $0,91087 ; a(n) = floor(r*n) + floor(n/r), where r=sqrt(2).
     mov $1,$0
     mov $7,$8
     lpb $7,1
+      mov $3,$1
       sub $7,1
-      mov $9,$1
     lpe
   lpe
   lpb $2,1
     mov $2,0
-    sub $9,$1
+    sub $3,$1
   lpe
-  mov $1,$9
+  mov $1,$3
   add $1,5
   add $5,$1
 lpe

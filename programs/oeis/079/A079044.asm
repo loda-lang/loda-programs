@@ -7,12 +7,11 @@ mov $5,$0
 gcd $0,1
 add $0,22
 add $2,2
-mov $6,158
-mul $6,$2
-div $6,$0
-mov $1,$6
+mov $4,158
+mul $4,$2
+div $4,$0
+mov $1,$4
 add $1,6
-mov $4,$5
-mov $3,$4
+mov $3,$5
 mul $3,6
 add $1,$3

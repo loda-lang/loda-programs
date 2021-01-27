@@ -3,13 +3,12 @@
 
 mov $2,$0
 mov $3,$0
-add $0,$3
+mul $0,2
 sub $0,$2
 mov $4,$3
 mul $4,6
 cal $0,169805 ; Twice the sum of the digits of n.
-mov $1,$0
 add $4,6
-mul $4,$1
+mul $4,$0
 mov $1,$4
 div $1,12

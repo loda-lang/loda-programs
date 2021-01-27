@@ -21,8 +21,7 @@ lpb $33,1
     add $2,$1
     mov $4,$2
     cal $4,49611 ; a(n) = T(n,2), array T as in A049600.
-    mov $5,$4
-    mov $1,$5
+    mov $1,$4
     mov $30,$29
     lpb $30,1
       mov $28,$1

@@ -13,7 +13,6 @@ lpb $29,1
   add $0,$4
   cal $0,27053 ; a(n) = T(n,n+2), T given by A027052.
   sub $0,2
-  mov $1,$0
-  add $28,$1
+  add $28,$0
 lpe
 mov $1,$28

@@ -4,10 +4,9 @@
 mov $1,$0
 add $0,1
 gcd $1,2
-mov $4,$1
-mov $5,-7
-div $5,$4
-mul $0,$5
+mov $4,-7
+div $4,$1
+mul $0,$4
 sub $0,7
 lpb $0,1
   mov $2,$0

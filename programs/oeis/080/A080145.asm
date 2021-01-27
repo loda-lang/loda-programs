@@ -25,22 +25,19 @@ lpb $13,1
       mod $1,1
       mov $2,1
       lpb $0,1
-        mov $3,$1
-        add $0,$3
+        add $0,$1
         sub $0,$1
         sub $0,1
+        mov $3,$1
         mov $4,$1
         add $1,$2
         mov $2,$3
       lpe
       mul $4,$2
-      mov $1,$4
-      add $6,$1
+      add $6,$4
     lpe
-    mov $1,$6
-    add $9,$1
+    add $9,$6
   lpe
-  mov $1,$9
-  add $12,$1
+  add $12,$9
 lpe
 mov $1,$12

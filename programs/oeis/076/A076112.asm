@@ -13,11 +13,10 @@ add $0,19
 pow $5,$4
 add $5,5
 add $5,$0
-mov $3,$5
-add $0,$3
-add $3,24
-mov $5,$3
 add $0,$5
+mov $3,$5
+add $3,24
+add $0,$3
 mov $1,$0
 sub $1,93
 div $1,2

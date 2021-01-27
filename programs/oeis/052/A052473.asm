@@ -5,6 +5,5 @@ sub $0,3
 mov $1,$0
 add $0,1
 add $1,$0
-mov $2,$0
-bin $1,$2
+bin $1,$0
 add $1,2

@@ -10,7 +10,6 @@ lpb $2,1
   sub $0,$2
   sub $0,1
   cal $0,1444 ; Bending a piece of wire of length n+1 (configurations that can only be brought into coincidence by turning the figure over are counted as different).
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

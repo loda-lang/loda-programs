@@ -17,10 +17,10 @@ lpe
 mul $4,$1
 mov $1,$4
 add $1,34
-mov $5,$7
-mov $2,$5
+mov $2,$7
 mul $2,93
 add $1,$2
+mov $5,$7
 mul $5,$7
 mov $2,$5
 mul $2,153

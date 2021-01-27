@@ -18,7 +18,6 @@ pow $5,2
 mov $1,$5
 add $1,$4
 add $1,1
-mov $7,$6
-mov $2,$7
+mov $2,$6
 mul $2,2
 add $1,$2

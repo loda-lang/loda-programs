@@ -6,8 +6,6 @@ add $1,$0
 pow $1,3
 mul $1,5
 add $1,60
-mov $4,$0
-mov $3,$4
-mov $2,$3
+mov $2,$0
 mul $2,30
 add $1,$2

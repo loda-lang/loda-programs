@@ -17,9 +17,8 @@ lpb $3,1
   mov $5,$7
   lpb $0,1
     mov $0,1
-    mov $9,$5
+    mov $4,$5
   lpe
-  mov $4,$9
   mov $1,$4
   mov $2,$3
   lpb $2,1

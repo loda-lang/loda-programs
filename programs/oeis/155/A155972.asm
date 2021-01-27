@@ -23,8 +23,7 @@ lpb $5,1
   mul $4,3
   log $4,2
   mul $4,2
-  mov $0,$4
-  mov $1,$0
+  mov $1,$4
   sub $1,10
   div $1,2
   mov $3,$5

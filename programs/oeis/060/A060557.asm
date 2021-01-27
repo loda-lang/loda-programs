@@ -15,7 +15,7 @@ lpb $0,1
   add $2,$3
   fac $4
   add $3,$4
-  mov $6,$1
+  mov $6,$5
   add $6,1
 lpe
 trn $1,5

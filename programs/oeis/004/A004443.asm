@@ -9,8 +9,6 @@ add $2,5
 mov $3,8
 sub $3,$0
 sub $3,2
-mov $5,$2
-add $3,$5
-mov $4,$3
-mov $1,$4
+add $3,$2
+mov $1,$3
 sub $1,9

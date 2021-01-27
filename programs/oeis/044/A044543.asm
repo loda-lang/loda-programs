@@ -9,6 +9,5 @@ gcd $1,$0
 div $1,2
 add $1,24
 mov $2,$3
-mov $4,$2
-mul $4,49
-add $1,$4
+mul $2,49
+add $1,$2

@@ -24,16 +24,13 @@ lpb $14,1
       mul $2,2
       mov $5,5
       add $7,8
-      mov $8,$2
-      add $7,$8
+      add $7,$2
       add $5,$7
       sub $5,6
       mov $7,0
     lpe
-    mov $1,$5
-    add $10,$1
+    add $10,$5
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

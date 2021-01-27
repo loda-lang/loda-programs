@@ -8,7 +8,6 @@ mul $1,$0
 sub $1,$0
 pow $1,2
 add $1,2
-mov $4,$3
-mov $2,$4
+mov $2,$3
 mul $2,2
 add $1,$2

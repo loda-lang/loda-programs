@@ -3,12 +3,10 @@
 
 mov $1,2
 gcd $1,$0
-mov $4,$0
+mov $2,$0
 pow $0,$1
 mul $1,2
 mod $1,3
 add $1,$0
 sub $1,1
-mov $3,$4
-mov $2,$3
 add $1,$2

@@ -3,14 +3,13 @@
 
 mov $1,1
 sub $1,$0
+mov $2,$0
+mul $0,3
 mov $4,$1
 bin $4,4
-mov $5,$0
-mul $0,3
 mul $4,$0
 mov $1,$4
-mov $3,$5
-mul $3,$5
-mul $3,$5
-mov $2,$3
-add $1,$2
+mov $3,$2
+mul $3,$2
+mul $3,$2
+add $1,$3

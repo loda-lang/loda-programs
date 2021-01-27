@@ -4,16 +4,14 @@
 mov $2,$0
 lpb $2,1
   add $1,1
-  sub $2,$4
-  mul $4,2
-  lpb $4,1
+  sub $2,$3
+  mul $3,2
+  lpb $3,1
     mov $3,$1
-    mov $4,$3
-    mov $3,$2
-    trn $4,$3
+    trn $3,$2
   lpe
-  sub $1,$4
+  sub $1,$3
   sub $2,1
   trn $2,1
-  mov $4,1
+  mov $3,1
 lpe

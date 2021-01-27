@@ -5,7 +5,6 @@ mov $3,$0
 add $0,1
 mov $2,$3
 cal $0,63957 ; Numbers not of the form round(m*sqrt(2)) for any integer m, i.e., complement of A022846.
-mov $1,$0
-add $2,$1
+add $2,$0
 div $2,2
 mov $1,$2

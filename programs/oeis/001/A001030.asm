@@ -23,8 +23,7 @@ lpb $3,1
   sub $1,6
   div $1,2
   add $1,4
-  mov $9,$8
-  mov $7,$9
+  mov $7,$8
   mul $7,2
   add $1,$7
   mov $2,$3

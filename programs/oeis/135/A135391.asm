@@ -25,8 +25,8 @@ lpb $11,1
       pow $4,$3
       add $4,4
       sub $4,$2
+      div $0,$4
       mov $2,$4
-      div $0,$2
     lpe
     mov $1,$0
     mov $8,$7

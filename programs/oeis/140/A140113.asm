@@ -13,8 +13,7 @@ lpb $3,1
   mul $0,2
   add $1,$5
   gcd $0,$1
-  mov $6,$0
-  pow $1,$6
+  pow $1,$0
   add $4,$1
 lpe
 mov $1,$4

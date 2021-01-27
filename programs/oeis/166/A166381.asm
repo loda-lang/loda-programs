@@ -4,8 +4,6 @@
 add $0,1
 pow $0,2
 cal $0,320226 ; Number of integer partitions of n whose non-1 parts are all equal.
-mul $0,2
-mov $2,$0
-add $0,$2
+mul $0,4
 mov $1,$0
 div $1,8

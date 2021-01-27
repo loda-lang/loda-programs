@@ -7,10 +7,9 @@ mov $3,$2
 lpb $0,1
   trn $0,$2
   mod $3,6
-  mov $5,8
+  mov $4,8
 lpe
-add $5,7
-mov $4,$5
+add $4,7
 gcd $3,$4
 mov $1,$3
 div $1,2

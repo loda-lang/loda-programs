@@ -3,9 +3,8 @@
 
 cal $0,204255 ; Symmetric matrix given by f(i,j)=1+[(i+j) mod 4].
 div $0,2
-mov $3,40
-sub $3,$0
-mov $2,$3
+mov $2,40
+sub $2,$0
 mov $1,$2
 sub $1,18
 div $1,21

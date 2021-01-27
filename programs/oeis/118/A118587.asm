@@ -22,10 +22,10 @@ sub $3,$2
 add $3,$0
 mov $1,$3
 add $1,4
-mov $7,$6
-mov $5,$7
+mov $5,$6
 mul $5,3
 add $1,$5
+mov $7,$6
 mul $7,$6
 mov $5,$7
 mul $5,2

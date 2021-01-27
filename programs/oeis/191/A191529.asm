@@ -16,7 +16,7 @@ lpb $4,1
     add $0,$11
     sub $0,1
     mov $3,$0
-    mov $7,$3
+    mov $7,$0
     div $7,2
     bin $0,$7
     add $3,$0

@@ -8,8 +8,6 @@ add $2,$0
 gcd $1,$2
 mod $1,3
 add $1,3
-mov $4,$0
-mov $5,$4
-mov $3,$5
+mov $3,$0
 mul $3,2
 add $1,$3

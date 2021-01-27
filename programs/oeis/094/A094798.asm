@@ -3,18 +3,13 @@
 
 mov $2,$0
 add $2,1
-mov $5,$0
 lpb $2,1
-  mov $0,$5
   sub $2,1
-  sub $0,$2
-  mov $3,$0
   add $3,1
   mov $0,$3
   cal $0,268643 ; Number of 1's in decimal representation of n.
   mov $1,$0
-  mov $3,$1
-  add $1,$3
+  add $1,$0
   div $1,2
   add $4,$1
 lpe

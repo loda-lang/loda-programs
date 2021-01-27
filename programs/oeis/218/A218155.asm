@@ -16,7 +16,6 @@ add $3,1
 add $0,$3
 mov $1,$0
 sub $1,5
-mov $6,$5
-mov $2,$6
+mov $2,$5
 mul $2,3
 add $1,$2

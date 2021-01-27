@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  mov $8,$0
+  mov $6,$0
   add $0,2
   cal $0,195121 ; a(n) = 2*n - floor(n/r), where r = (1 + sqrt(5))/2 (the golden ratio).
   add $0,4
@@ -16,8 +16,6 @@ lpb $3,1
   add $0,1
   mov $1,$0
   sub $1,1
-  mov $7,$8
-  mov $6,$7
   add $1,$6
   mov $2,$3
   lpb $2,1

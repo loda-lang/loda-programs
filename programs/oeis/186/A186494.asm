@@ -7,10 +7,9 @@ bin $0,2
 pow $1,2
 add $0,$1
 lpb $0,1
-  mov $2,$0
-  mov $1,$2
+  mov $1,$0
   div $1,5
-  trn $3,$0
-  mov $0,$3
+  trn $2,$0
+  mov $0,$2
 lpe
 sub $1,2

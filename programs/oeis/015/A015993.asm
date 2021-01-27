@@ -9,14 +9,13 @@ mul $3,2
 add $4,2
 mov $0,$4
 mul $0,2
+mov $2,2
 mov $5,$0
-mov $6,2
 lpb $0,1
-  mov $2,$0
-  div $0,$2
+  div $0,$0
+  add $2,$5
   div $3,111
-  add $6,$5
-  add $3,$6
+  add $3,$2
   add $3,2
 lpe
 mov $1,$3

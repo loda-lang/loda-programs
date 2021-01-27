@@ -3,9 +3,9 @@
 
 add $0,1
 mov $2,$0
-mov $4,$2
 add $2,$0
 add $2,3
+mov $4,$0
 add $4,2
 mul $2,$4
 mov $3,$2

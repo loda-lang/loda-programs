@@ -28,9 +28,8 @@ lpb $23,1
           add $13,2
           sub $0,$13
         lpe
-        mov $2,$0
         mov $7,$0
-        add $0,$2
+        mul $0,2
         mov $1,$0
         sub $0,$7
         trn $0,$1

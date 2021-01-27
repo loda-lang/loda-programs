@@ -3,11 +3,10 @@
 
 add $0,2
 mov $1,$0
-mov $3,$0
-add $3,$0
+mov $2,$0
+add $2,$0
 sub $0,1
-mov $2,$1
-bin $3,$0
-div $3,$2
-mov $1,$3
+bin $2,$0
+div $2,$1
+mov $1,$2
 sub $1,1

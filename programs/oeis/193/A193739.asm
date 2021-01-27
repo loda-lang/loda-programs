@@ -5,12 +5,12 @@ lpb $0,1
   add $4,5
   mov $5,$0
   sub $0,1
+  add $3,1
+  trn $0,$3
   sub $4,4
-  add $6,1
-  trn $0,$6
 lpe
 add $1,1
-trn $2,$6
+trn $2,$3
 trn $4,1
 add $4,3
 add $2,$4
@@ -18,6 +18,5 @@ add $2,1
 add $1,$2
 trn $5,2
 add $5,3
-mov $3,$5
-sub $1,$3
+sub $1,$5
 sub $1,1

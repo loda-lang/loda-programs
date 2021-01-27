@@ -16,13 +16,11 @@ lpb $0,1
 lpe
 sub $4,1
 add $1,$4
-mov $5,$4
-mov $6,$5
+mov $6,$4
 sub $6,2
 mul $6,2
 add $1,$6
 sub $1,105
-mov $8,$3
-mov $7,$8
-mul $7,26
-add $1,$7
+mov $5,$3
+mul $5,26
+add $1,$5

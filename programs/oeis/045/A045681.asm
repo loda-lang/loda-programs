@@ -6,15 +6,13 @@ add $0,1
 mov $1,$0
 div $0,3
 div $1,2
-mov $4,24
+mov $2,24
 lpb $0,1
   sub $0,5
   trn $0,1
   sub $1,1
 lpe
-add $1,$4
+add $1,$2
 div $1,2
 sub $1,12
-mov $5,$3
-mov $2,$5
-add $1,$2
+add $1,$3

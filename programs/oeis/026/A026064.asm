@@ -17,10 +17,9 @@ sub $5,2
 div $5,2
 mov $1,$5
 sub $1,8
-mov $8,$2
-mov $7,$8
+mov $7,$2
 mul $7,5
 add $1,$7
+mov $8,$2
 mul $8,$2
-mov $7,$8
-add $1,$7
+add $1,$8

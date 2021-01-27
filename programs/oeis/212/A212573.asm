@@ -9,10 +9,8 @@ lpb $2,1
   sub $0,$2
   sub $0,1
   cal $0,212578 ; Number of (w,x,y,z) with all terms in {1,...,n} and |w-x| = 2*|x-y| - |y-z|.
-  mov $1,$0
   mov $3,$0
-  add $3,$1
-  mov $1,$3
-  add $4,$1
+  add $3,$0
+  add $4,$3
 lpe
 mov $1,$4

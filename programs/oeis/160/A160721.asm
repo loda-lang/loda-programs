@@ -10,9 +10,8 @@ lpb $4,1
   sub $0,1
   cal $0,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
   mul $0,4
-  mov $1,$0
   mov $2,4
-  add $2,$1
+  add $2,$0
   sub $2,3
   mov $1,$2
   mov $3,$4

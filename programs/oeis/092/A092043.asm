@@ -4,7 +4,6 @@
 mov $2,$0
 add $0,1
 fac $2
-mov $3,$2
-gcd $0,$3
+gcd $0,$2
 div $2,$0
 mov $1,$2

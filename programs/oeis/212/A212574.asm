@@ -22,7 +22,6 @@ lpb $29,1
     div $0,$1
     sub $0,1
   lpe
-  mov $1,$2
-  add $28,$1
+  add $28,$2
 lpe
 mov $1,$28

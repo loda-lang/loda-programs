@@ -4,23 +4,21 @@
 mod $0,9
 trn $0,1
 mov $2,2
-mov $6,4
+mov $3,4
 lpb $0,1
-  pow $0,$6
+  pow $0,$3
   sub $0,1
   mov $2,1
-  mov $6,7
+  mov $3,7
 lpe
 mul $2,2
 sub $2,1
+sub $3,1
 mov $4,$0
-mov $5,$4
-sub $5,1
-sub $6,1
-div $5,$6
-add $6,$5
-add $6,1
-add $6,$2
-mov $3,$6
+sub $4,1
+div $4,$3
+add $3,$4
+add $3,1
+add $3,$2
 mov $1,$3
 sub $1,6

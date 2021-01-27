@@ -5,10 +5,8 @@ mov $4,$0
 bin $0,5
 mov $3,$0
 mul $3,120
-mov $6,$3
-add $6,2
-mov $1,$6
+mov $2,$3
+add $2,2
+mov $1,$2
 sub $1,2
-mov $2,$4
-mov $5,$2
-add $1,$5
+add $1,$4

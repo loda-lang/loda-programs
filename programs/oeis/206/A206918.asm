@@ -7,11 +7,9 @@ lpb $3,1
   mov $0,$7
   sub $3,1
   sub $0,$3
-  mov $1,1
-  mov $4,$0
   mov $8,2
-  mul $8,$4
-  mov $9,$4
+  mul $8,$0
+  mov $9,$0
   sub $9,2
   add $8,$9
   mov $0,$8
@@ -19,13 +17,12 @@ lpb $3,1
   mov $9,1
   lpb $0,1
     trn $0,2
-    trn $1,$2
+    sub $1,$2
     add $9,$4
     mul $9,2
   lpe
   add $0,1
   mul $0,4
-  mov $2,6
   mov $5,$9
   add $5,1
   mov $4,$5
@@ -33,8 +30,6 @@ lpb $3,1
   mov $8,$1
   add $8,$0
   div $4,$8
-  mov $5,$4
-  mov $1,$5
-  add $6,$1
+  add $6,$4
 lpe
 mov $1,$6

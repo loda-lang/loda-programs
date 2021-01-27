@@ -9,10 +9,8 @@ lpb $29,1
   mov $0,$27
   sub $29,1
   sub $0,$29
-  mov $1,$0
-  add $3,$1
+  add $3,$0
   cal $3,52975 ; Expansion of (1-2*x)*(1-x)/(1-5*x+6*x^2-x^3).
-  mov $1,$3
-  add $28,$1
+  add $28,$3
 lpe
 mov $1,$28

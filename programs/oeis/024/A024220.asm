@@ -33,14 +33,11 @@ lpb $10,1
     bin $4,2
     lpb $0,1
       mov $0,1
-      mov $2,$1
       sub $4,2
-      add $4,$2
+      add $4,$1
     lpe
-    mov $1,$4
-    add $6,$1
+    add $6,$4
   lpe
-  mov $1,$6
-  add $9,$1
+  add $9,$6
 lpe
 mov $1,$9

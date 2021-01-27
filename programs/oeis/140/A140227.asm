@@ -28,16 +28,13 @@ lpb $17,1
       mov $5,$0
       add $0,4
       div $0,$0
-      mov $4,$0
-      add $1,$4
+      add $1,$0
       trn $5,4
       add $1,$5
       add $10,$1
     lpe
-    mov $1,$10
-    add $13,$1
+    add $13,$10
   lpe
-  mov $1,$13
-  add $16,$1
+  add $16,$13
 lpe
 mov $1,$16

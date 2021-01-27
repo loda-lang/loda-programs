@@ -7,9 +7,8 @@ add $0,$2
 mov $1,$0
 mov $0,6
 add $0,$1
+sub $1,$1
 add $2,2
-mov $4,$1
-sub $1,$4
 lpb $0,1
   sub $0,1
   trn $0,1

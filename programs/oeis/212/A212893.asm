@@ -5,11 +5,8 @@ sub $0,1
 mov $2,$0
 add $2,2
 pow $2,2
-mov $1,$2
 mov $3,1
-mov $4,$1
-add $3,$4
+add $3,$2
 div $3,2
 pow $3,2
-mov $2,$3
-mov $1,$2
+mov $1,$3

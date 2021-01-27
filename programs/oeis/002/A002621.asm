@@ -11,7 +11,6 @@ lpb $29,1
   sub $0,$29
   cal $0,1400 ; Number of partitions of n into at most 4 parts.
   add $4,$0
-  mov $1,$4
-  add $28,$1
+  add $28,$4
 lpe
 mov $1,$28

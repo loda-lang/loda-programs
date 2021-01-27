@@ -22,9 +22,8 @@ lpb $21,1
       sub $14,1
       add $0,$14
       trn $0,1
-      mov $3,$0
       mov $4,2
-      pow $4,$3
+      pow $4,$0
       log $4,3
       mul $4,6
       mov $1,$4
@@ -43,7 +42,6 @@ lpb $21,1
     add $1,1
     add $17,$1
   lpe
-  mov $1,$17
-  add $20,$1
+  add $20,$17
 lpe
 mov $1,$20

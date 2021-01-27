@@ -23,9 +23,8 @@ lpb $13,1
     sub $2,$0
     mov $0,1
     sub $6,$2
+    sub $0,$6
     add $2,1
-    mov $9,$6
-    sub $0,$9
     mov $6,$0
     div $0,10
     trn $0,$2

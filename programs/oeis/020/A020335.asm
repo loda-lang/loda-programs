@@ -14,10 +14,10 @@ lpb $0,1
   add $4,$0
   mov $0,5
   add $3,$4
-  mov $5,$3
-  mov $1,$5
+  mov $1,$3
   mul $1,2
-  add $1,$5
+  add $1,$3
+  mov $5,$3
   mul $5,2
   add $1,$5
   add $1,$5

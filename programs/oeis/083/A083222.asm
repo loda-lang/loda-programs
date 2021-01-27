@@ -3,11 +3,11 @@
 
 mov $1,4
 mov $2,5
-mov $4,$0
-pow $2,$4
+pow $2,$0
 mul $2,2
 mul $1,$2
 mov $3,10
+mov $4,$0
 mod $4,2
 mul $4,4
 sub $3,$4

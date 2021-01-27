@@ -10,13 +10,12 @@ lpb $2,1
   sub $1,1
   sub $1,$0
   cal $0,254378 ; Run lengths of A228495 (Characteristic function of the odd odious numbers).
-  mov $4,$1
-  mov $3,$4
+  mov $3,$1
   add $3,$1
   sub $0,$3
   add $0,$1
   mov $1,$0
   sub $1,1
-  add $6,$1
+  add $4,$1
 lpe
-mov $1,$6
+mov $1,$4

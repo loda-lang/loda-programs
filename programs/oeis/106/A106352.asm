@@ -8,18 +8,15 @@ lpb $3,1
   mov $0,$7
   sub $3,1
   sub $0,$3
-  mov $8,$0
-  mov $2,$8
+  mov $2,$0
   gcd $2,2
-  mov $5,$0
-  mov $4,$5
-  mov $8,$2
-  mov $9,$4
+  mov $4,$0
   add $4,$2
   sub $4,2
-  add $4,$8
-  mod $9,3
-  add $4,$9
+  add $4,$2
+  mov $5,$0
+  mod $5,3
+  add $4,$5
   add $4,4
   mov $1,$4
   sub $1,5

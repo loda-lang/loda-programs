@@ -13,7 +13,6 @@ lpb $11,1
   add $8,8
   add $5,$8
   div $5,17
-  mov $1,$5
-  add $10,$1
+  add $10,$5
 lpe
 mov $1,$10

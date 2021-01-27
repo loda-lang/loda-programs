@@ -3,15 +3,13 @@
 
 add $0,1
 mov $2,1
-mov $4,1
+mov $3,1
 lpb $0,1
-  add $2,$4
+  add $2,$3
   div $0,$2
   mov $1,1
 lpe
-mov $3,$1
-sub $2,$3
-mov $1,$2
-mov $4,$1
-fac $4
-mov $1,$4
+sub $2,$1
+mov $3,$2
+fac $3
+mov $1,$3

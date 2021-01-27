@@ -7,8 +7,7 @@ add $1,2
 gcd $2,$0
 sub $2,$0
 add $2,1
-mov $3,$2
-add $1,$3
+add $1,$2
 sub $1,5
 div $1,5
 mul $1,2

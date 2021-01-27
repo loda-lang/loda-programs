@@ -12,9 +12,7 @@ lpb $9,1
   sub $1,$0
   cal $0,279101 ; a(n) = Sum_{k=0..n} ceiling((1 + sqrt(2))^k).
   add $0,$1
-  mov $3,$0
-  mov $4,$3
-  mov $1,$4
+  mov $1,$0
   mov $10,$9
   lpb $10,1
     mov $8,$1

@@ -3,17 +3,16 @@
 
 mul $0,5
 add $0,1
-mov $4,$0
+mov $2,$0
 lpb $0,1
+  div $2,2
+  sub $0,$2
   mov $3,2
-  div $4,2
-  sub $0,$4
   mul $3,$0
 lpe
-sub $3,$4
+sub $3,$2
 add $3,6
-mov $2,$3
-mov $1,$2
+mov $1,$3
 sub $1,6
 div $1,2
 add $1,1

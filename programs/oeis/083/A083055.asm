@@ -10,8 +10,7 @@ lpb $29,1
   sub $29,1
   sub $0,$29
   sub $0,1
-  mov $2,$0
-  add $0,$2
+  mul $0,2
   add $0,4
   cal $0,172475 ; a(n) = floor(n*sqrt(3)/2).
   mul $0,2

@@ -33,8 +33,7 @@ lpb $17,1
     mov $5,9605
     lpb $0,1
       div $0,$2
-      mov $10,$5
-      div $3,$10
+      div $3,$5
     lpe
     mov $1,$3
     mov $14,$13

@@ -7,11 +7,10 @@ mod $0,8
 mov $1,8
 lpb $0,1
   mov $0,$4
-  pow $1,$6
+  pow $1,$2
   div $1,5
 lpe
 add $1,55
-mov $2,$3
-mov $5,$2
+mov $5,$3
 mul $5,64
 add $1,$5

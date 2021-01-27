@@ -33,7 +33,7 @@ lpb $20,1
         sub $11,1
         sub $0,$11
         mov $1,$0
-        cmp $2,$1
+        cmp $2,$0
         lpb $2,1
           mov $1,3
           div $2,5
@@ -41,13 +41,10 @@ lpb $20,1
         add $1,5
         add $10,$1
       lpe
-      mov $1,$10
-      add $13,$1
+      add $13,$10
     lpe
-    mov $1,$13
-    add $16,$1
+    add $16,$13
   lpe
-  mov $1,$16
-  add $19,$1
+  add $19,$16
 lpe
 mov $1,$19

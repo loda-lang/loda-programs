@@ -6,7 +6,7 @@ add $1,1
 mov $2,$0
 sub $2,2
 mov $3,$2
-mov $4,$3
+mov $4,$2
 cmp $4,0
 add $3,$4
 div $2,$3

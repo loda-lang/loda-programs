@@ -3,17 +3,15 @@
 
 mov $1,$0
 gcd $0,2
-mov $2,$0
-mov $4,$1
-mov $5,9
-add $5,$2
-add $5,$4
-sub $5,9
-mul $5,$2
+mov $2,9
+add $2,$0
+add $2,$1
+sub $2,9
+mul $2,$0
 lpb $0,1
   trn $0,6
-  add $5,4
-  mov $3,$5
+  add $2,4
+  mov $3,$2
 lpe
 div $3,6
 mov $1,$3

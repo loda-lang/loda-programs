@@ -7,12 +7,10 @@ mul $1,2
 mov $3,10
 mov $4,$1
 lpb $0,1
-  mov $2,$3
-  bin $0,$2
+  bin $0,$3
   add $4,1
   div $4,3
 lpe
-mov $2,1
 add $2,$4
 mul $4,7
 add $4,$2

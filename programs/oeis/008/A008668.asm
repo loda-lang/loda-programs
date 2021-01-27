@@ -12,7 +12,7 @@ lpb $7,1
   add $2,4
   mov $3,$2
   cal $0,8651 ; Molien series of binary icosahedral group.
-  add $2,$3
+  mul $2,2
   mov $4,$0
   pow $0,2
   mul $2,$0

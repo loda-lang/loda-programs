@@ -18,8 +18,7 @@ lpb $13,1
     sub $0,6
     sub $3,$3
     add $3,3
-    mov $10,$3
-    add $2,$10
+    add $2,$3
     sub $2,1
     mov $3,$0
     div $3,3

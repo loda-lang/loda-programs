@@ -17,17 +17,14 @@ lpb $10,1
     sub $7,1
     sub $0,$7
     add $0,2
-    mov $1,$0
-    mov $2,$1
+    mov $2,$0
     add $2,2
     bin $2,5
-    add $2,$1
+    add $2,$0
     mov $4,$2
     sub $4,1
-    mov $1,$4
-    add $6,$1
+    add $6,$4
   lpe
-  mov $1,$6
-  add $9,$1
+  add $9,$6
 lpe
 mov $1,$9

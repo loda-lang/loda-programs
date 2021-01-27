@@ -3,8 +3,7 @@
 
 cal $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 sub $0,1
-mov $4,$0
-mov $1,$4
+mov $1,$0
 mov $2,$0
 add $0,1
 sub $2,$0

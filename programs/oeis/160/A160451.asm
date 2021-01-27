@@ -10,9 +10,8 @@ add $0,$1
 mov $2,$0
 add $2,1
 mov $3,$0
-mov $0,$2
 add $3,4
-mul $3,$0
+mul $3,$2
 bin $3,2
 mov $1,$3
 sub $1,378

@@ -28,11 +28,10 @@ lpb $12,1
       sub $4,1
       mov $3,$4
     lpe
+    pow $4,0
     mov $5,5
     sub $5,$3
-    mov $2,$5
-    pow $4,0
-    sub $4,$2
+    sub $4,$5
     add $4,1
     mov $1,$4
     add $1,1

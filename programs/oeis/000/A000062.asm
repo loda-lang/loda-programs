@@ -5,18 +5,16 @@ mov $2,$0
 add $0,10
 mov $1,$0
 mul $1,20
-mov $5,3
+mov $3,3
 lpb $0,1
   mov $0,8
   sub $1,40
-  div $5,2
-  sub $1,$5
+  div $3,2
+  sub $1,$3
 lpe
 add $0,4
 add $1,2
 add $1,$0
 div $1,51
 sub $1,2
-mov $3,$2
-mov $4,$3
-add $1,$4
+add $1,$2

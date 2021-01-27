@@ -6,11 +6,10 @@ mul $0,2
 add $1,2
 mov $2,$0
 add $2,5
-mov $3,$2
-sub $1,$3
+sub $1,$2
 div $1,35
 add $1,1
-mov $4,$0
-sub $4,1
-add $1,$4
+mov $3,$0
+sub $3,1
+add $1,$3
 add $1,1

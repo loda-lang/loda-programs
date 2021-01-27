@@ -11,11 +11,10 @@ lpb $2,1
   mul $0,7
   mov $6,9
   add $6,$0
-  mov $5,$6
-  mov $1,$5
-  mov $7,9
-  trn $7,$0
-  add $1,$7
+  mov $1,$6
+  mov $5,9
+  trn $5,$0
+  add $1,$5
   div $1,10
   add $3,$1
 lpe

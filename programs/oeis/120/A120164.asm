@@ -7,10 +7,9 @@ mov $0,4
 mov $5,5
 lpb $2,1
   add $3,$0
-  mov $0,$3
-  add $5,$1
-  mov $1,$0
   trn $0,5
+  add $5,$1
+  mov $1,$3
   mov $4,$5
   lpb $4,1
     add $1,1

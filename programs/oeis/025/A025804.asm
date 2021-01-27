@@ -12,9 +12,8 @@ lpb $8,1
   cal $0,29009 ; Expansion of 1/((1-x)(1-x^2)(1-x^4)(1-x^9)).
   mul $0,3
   add $3,$0
-  mov $4,$3
-  mov $5,$4
   mov $4,2
+  mov $5,$3
   mul $5,2
   mul $4,$5
   mov $1,$4

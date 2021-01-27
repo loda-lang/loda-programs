@@ -5,7 +5,6 @@ cal $0,265667 ; Permutation of nonnegative integers: a(n) = n + floor(n/3)*(-1)^
 mul $0,2
 sub $2,$0
 add $2,2
-mov $3,$2
-mul $2,$3
+pow $2,2
 mov $1,$2
 div $1,4

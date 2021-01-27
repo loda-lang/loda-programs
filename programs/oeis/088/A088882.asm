@@ -9,12 +9,12 @@ lpb $0,1
   mov $0,2
   sub $1,5
   fac $4
+  trn $5,2
+  add $5,2
   mov $6,14
   sub $6,$1
   sub $6,2
-  trn $8,2
-  add $8,2
-  sub $6,$8
+  sub $6,$5
   add $4,$6
   mov $2,$4
   mod $2,10
@@ -23,10 +23,8 @@ lpb $0,1
   mov $6,$2
   sub $6,$4
 lpe
-mov $0,$6
-mov $1,$0
+mov $1,$6
 add $1,107
-mov $5,$7
-mov $3,$5
+mov $3,$7
 mul $3,11
 add $1,$3

@@ -19,10 +19,8 @@ lpb $22,1
     add $0,5
     bin $0,4
     sub $0,1
-    mov $1,$0
-    add $18,$1
+    add $18,$0
   lpe
-  mov $1,$18
-  add $21,$1
+  add $21,$18
 lpe
 mov $1,$21

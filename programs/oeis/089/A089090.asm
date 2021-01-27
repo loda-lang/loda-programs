@@ -3,8 +3,7 @@
 
 cal $0,53669 ; Smallest prime not dividing n.
 mul $0,12
-mov $1,$0
-mul $0,$1
+pow $0,2
 mov $1,$0
 sub $1,576
 div $1,144

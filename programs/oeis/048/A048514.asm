@@ -55,10 +55,8 @@ lpb $39,1
       div $1,2
       add $32,$1
     lpe
-    mov $1,$32
-    add $35,$1
+    add $35,$32
   lpe
-  mov $1,$35
-  add $38,$1
+  add $38,$35
 lpe
 mov $1,$38

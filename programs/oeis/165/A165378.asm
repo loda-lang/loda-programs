@@ -22,10 +22,10 @@ lpb $0,1
 lpe
 trn $1,1
 add $1,33
-mov $9,$8
-mov $2,$9
+mov $2,$8
 mul $2,40
 add $1,$2
+mov $9,$8
 mul $9,$8
 mov $2,$9
 mul $2,9

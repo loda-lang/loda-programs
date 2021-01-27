@@ -7,8 +7,7 @@ bin $2,$0
 bin $0,2
 mul $0,2
 pow $2,2
-mov $3,$0
-mul $2,$3
+mul $2,$0
 mov $1,$2
 sub $1,72
 div $1,12

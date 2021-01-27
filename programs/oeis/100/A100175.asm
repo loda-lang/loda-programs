@@ -11,8 +11,7 @@ add $2,2
 mul $2,$0
 mov $0,$1
 sub $0,$2
-mov $4,$0
-sub $3,$4
+sub $3,$0
 mov $1,$3
 div $1,18
 add $1,1

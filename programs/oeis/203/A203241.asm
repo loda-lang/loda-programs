@@ -14,9 +14,8 @@ mul $5,2
 mov $2,$5
 mul $4,$5
 add $0,$4
-mov $1,$2
 add $2,3
-mul $2,$1
+mul $2,$5
 mov $5,$0
 add $5,$2
 mov $1,$5

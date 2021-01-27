@@ -10,8 +10,7 @@ lpb $4,1
   sub $0,$4
   mul $0,2
   add $0,2
-  mov $1,$0
-  mov $6,$1
+  mov $6,$0
   gcd $6,24
   lpb $0,1
     mov $0,$7
@@ -19,7 +18,6 @@ lpb $4,1
     log $3,2
     mov $6,$3
   lpe
-  mov $1,$6
-  add $5,$1
+  add $5,$6
 lpe
 mov $1,$5

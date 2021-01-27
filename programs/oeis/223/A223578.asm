@@ -16,9 +16,8 @@ lpb $3,1
     add $0,$7
     sub $0,1
     cal $0,223577 ; Positive integers n for which there is exactly one negative integer m such that -n = floor(cot(pi/(2m))).
-    mov $2,$0
     mov $4,$0
-    add $4,$2
+    add $4,$0
     mov $1,$4
     add $1,1
     mov $8,$7
@@ -33,6 +32,6 @@ lpb $3,1
   lpe
   mov $1,$6
   sub $1,1
-  add $10,$1
+  add $2,$1
 lpe
-mov $1,$10
+mov $1,$2

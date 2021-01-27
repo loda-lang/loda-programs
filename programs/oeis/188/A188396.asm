@@ -30,8 +30,8 @@ lpb $2,1
     mov $3,$1
     trn $6,6
   lpe
+  add $1,$4
   mov $2,$4
-  add $1,$2
 lpe
 lpb $7,1
   add $1,3

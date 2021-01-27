@@ -32,9 +32,9 @@ lpb $22,1
       lpb $0,13
         trn $0,$3
         mov $1,$4
-        trn $3,$1
+        trn $3,$4
         mov $4,$3
-        add $3,$4
+        mul $3,2
         add $3,7
       lpe
       mov $1,$4
@@ -52,7 +52,6 @@ lpb $22,1
     div $1,7
     add $18,$1
   lpe
-  mov $1,$18
-  add $21,$1
+  add $21,$18
 lpe
 mov $1,$21

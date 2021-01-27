@@ -15,10 +15,10 @@ mul $3,$0
 add $1,$3
 div $1,3
 add $1,4
-mov $5,$4
-mov $2,$5
+mov $2,$4
 mul $2,6
 add $1,$2
+mov $5,$4
 mul $5,$4
 mov $2,$5
 mul $2,2

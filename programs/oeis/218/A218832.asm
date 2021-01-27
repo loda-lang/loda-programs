@@ -5,8 +5,7 @@ add $0,1
 pow $0,2
 mov $2,$0
 sub $2,2
-mov $1,$2
-mul $2,$1
+pow $2,2
 div $2,4
 mul $2,11
 mov $1,$2

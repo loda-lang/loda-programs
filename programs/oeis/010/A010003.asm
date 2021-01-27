@@ -3,9 +3,8 @@
 
 pow $1,$0
 gcd $1,2
-mov $2,$0
-mov $3,$2
-mul $3,$2
-mov $4,$3
-mul $4,11
-add $1,$4
+mov $3,$0
+mul $3,$0
+mov $2,$3
+mul $2,11
+add $1,$2

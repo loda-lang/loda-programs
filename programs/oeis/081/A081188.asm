@@ -7,8 +7,7 @@ add $1,4
 mov $2,7
 pow $2,$0
 add $2,$1
-mov $3,$2
-add $2,$3
+mul $2,2
 mov $1,$2
 sub $1,12
 div $1,4

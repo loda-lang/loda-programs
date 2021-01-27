@@ -3,13 +3,11 @@
 
 mov $1,$0
 div $1,6
-mov $4,$0
-mov $5,5
-lpb $5,1
+mov $2,5
+mov $3,$0
+lpb $2,1
   div $1,5
-  mov $5,3
+  mov $2,3
 lpe
 add $1,1
-mov $3,$4
-mov $2,$3
-add $1,$2
+add $1,$3

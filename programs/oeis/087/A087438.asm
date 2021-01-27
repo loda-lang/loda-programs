@@ -6,8 +6,8 @@ pow $1,$0
 add $0,1
 mov $3,2
 mul $3,$1
+add $0,$3
 mov $2,$3
-add $0,$2
 add $2,$1
 sub $3,$1
 add $3,$0

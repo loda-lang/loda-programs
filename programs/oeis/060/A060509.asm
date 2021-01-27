@@ -4,8 +4,7 @@
 mov $1,2
 mov $2,2
 add $2,$0
-mov $0,$2
 pow $1,$2
-log $1,$0
+log $1,$2
 pow $2,$1
 mov $1,$2

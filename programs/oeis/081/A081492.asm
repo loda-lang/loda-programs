@@ -17,18 +17,15 @@ lpb $12,1
     sub $9,1
     sub $0,$9
     mov $1,$0
-    mov $4,$0
-    add $1,$4
+    add $1,$0
     mov $6,$1
     trn $6,2
     mov $4,$6
     pow $4,2
     add $4,1
     add $4,$1
-    mov $1,$4
-    add $8,$1
+    add $8,$4
   lpe
-  mov $1,$8
-  add $11,$1
+  add $11,$8
 lpe
 mov $1,$11

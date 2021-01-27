@@ -23,9 +23,8 @@ lpb $16,1
     mov $4,1
     trn $4,$0
     mov $0,10
-    mov $5,$4
     bin $9,3
-    add $9,$5
+    add $9,$4
     lpb $0,1
       mov $0,$10
       add $2,$9
@@ -34,7 +33,6 @@ lpb $16,1
     sub $1,1
     add $12,$1
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

@@ -19,10 +19,10 @@ lpb $2,1
   mod $2,2
 lpe
 add $1,8
-mov $5,$6
-mov $3,$5
+mov $3,$6
 mul $3,68
 add $1,$3
+mov $5,$6
 mul $5,$6
 mov $3,$5
 mul $3,149

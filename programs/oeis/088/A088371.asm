@@ -4,8 +4,7 @@
 mov $2,$0
 cal $0,233931 ; a(2n) = a(n) + n, a(2n+1) = a(n), with a(0)=0.
 sub $0,2
-mov $1,$0
-sub $2,$1
+sub $2,$0
 add $2,16382
 mov $1,$2
 sub $1,16383

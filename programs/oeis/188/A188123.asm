@@ -32,8 +32,7 @@ lpb $14,1
       add $0,5
       add $1,$5
       add $2,12
-      mov $4,$2
-      sub $1,$4
+      sub $1,$2
       sub $1,6
       mov $4,$0
       div $0,$1
@@ -54,7 +53,6 @@ lpb $14,1
     mov $7,$0
     add $10,$1
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

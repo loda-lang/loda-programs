@@ -20,7 +20,6 @@ lpb $3,1
     add $2,$1
   lpe
   div $2,2
-  mov $1,$2
-  add $4,$1
+  add $4,$2
 lpe
 mov $1,$4

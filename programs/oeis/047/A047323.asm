@@ -6,7 +6,6 @@ add $2,511
 add $2,$0
 div $2,3
 mul $2,2
-mov $3,$2
-add $0,$3
+add $0,$2
 mov $1,$0
 sub $1,338

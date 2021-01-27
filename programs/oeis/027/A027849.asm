@@ -6,9 +6,8 @@ pow $1,3
 add $1,$0
 mul $1,5
 add $1,1
-mov $4,$0
-mov $3,$4
-mul $3,$4
+mov $3,$0
+mul $3,$0
 mov $2,$3
 mul $2,9
 add $1,$2

@@ -27,13 +27,10 @@ lpb $15,1
     mov $5,$6
     sub $5,2
     div $5,6
-    mov $1,$5
-    add $8,$1
+    add $8,$5
   lpe
   mov $1,$8
-  mov $11,$10
-  mov $12,$11
-  add $1,$12
+  add $1,$10
   mov $16,$15
   lpb $16,1
     mov $14,$1

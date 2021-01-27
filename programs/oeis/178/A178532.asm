@@ -30,11 +30,9 @@ lpb $16,1
       log $7,6
       mov $2,$7
     lpe
-    mov $1,$2
     mov $3,3
-    add $12,$1
+    add $12,$2
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

@@ -9,6 +9,5 @@ div $0,52
 mov $1,$0
 sub $1,1
 mov $3,$2
-mov $4,$3
-mul $4,6
-add $1,$4
+mul $3,6
+add $1,$3

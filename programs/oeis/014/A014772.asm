@@ -5,5 +5,4 @@ mul $0,4
 add $0,4
 bin $0,2
 mov $1,$0
-mov $2,$1
-mul $1,$2
+mul $1,$0

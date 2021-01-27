@@ -7,7 +7,5 @@ mod $1,9
 div $1,8
 add $1,70
 mov $2,$0
-mov $4,$2
-mov $3,$4
-mul $3,81
-add $1,$3
+mul $2,81
+add $1,$2

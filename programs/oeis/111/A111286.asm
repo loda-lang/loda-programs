@@ -5,7 +5,6 @@ mov $2,2
 pow $2,$0
 mov $3,$2
 div $2,4
-mov $0,$2
 add $3,$2
-add $3,$0
+add $3,$2
 mov $1,$3

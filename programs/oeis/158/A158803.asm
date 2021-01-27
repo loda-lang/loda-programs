@@ -9,7 +9,6 @@ add $3,6
 mul $1,$3
 mul $1,3
 sub $1,145
-mov $5,$2
-mov $4,$5
+mov $4,$2
 mul $4,7
 add $1,$4

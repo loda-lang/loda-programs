@@ -3,14 +3,13 @@
 
 mul $0,2
 add $0,2
-mov $3,512
-gcd $3,$0
+mov $2,512
+gcd $2,$0
 add $0,2
-mul $3,$0
-add $3,7
-mov $2,$3
-add $3,$2
-mov $1,$3
+mul $2,$0
+add $2,7
+mul $2,2
+mov $1,$2
 sub $1,24
 div $1,16
 add $1,1

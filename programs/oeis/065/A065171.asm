@@ -4,10 +4,8 @@
 mov $2,$0
 add $2,$0
 add $2,5
-mov $4,$0
-mov $5,4
-gcd $5,$4
-mov $3,$5
+mov $3,4
+gcd $3,$0
 div $2,$3
 add $2,$3
 mov $1,$2

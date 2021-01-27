@@ -24,24 +24,19 @@ lpb $21,1
       mov $0,$13
       sub $15,1
       sub $0,$15
-      mov $10,$0
-      mov $4,$10
-      add $0,$4
+      mul $0,2
       add $4,9
       lpb $0,1
         add $0,5
         bin $0,2
         mov $4,$0
-        sub $0,$4
+        sub $0,$0
       lpe
       sub $4,4
-      mov $1,$4
-      add $14,$1
+      add $14,$4
     lpe
-    mov $1,$14
-    add $17,$1
+    add $17,$14
   lpe
-  mov $1,$17
-  add $20,$1
+  add $20,$17
 lpe
 mov $1,$20

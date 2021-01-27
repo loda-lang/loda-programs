@@ -39,9 +39,8 @@ lpb $2,1
     mul $1,3
     add $1,5
     mov $12,$11
-    mov $13,$12
-    mul $13,6
-    add $1,$13
+    mul $12,6
+    add $1,$12
     sub $1,7
     div $1,6
     mul $1,4

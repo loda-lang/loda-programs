@@ -6,9 +6,8 @@ lpb $0,1
   cal $1,106187 ; Sequence array for central binomial numbers A000984.
   mov $0,2
   mov $2,$1
-  mov $3,$2
-  sub $3,2
+  sub $2,2
 lpe
-mov $1,$3
+mov $1,$2
 div $1,2
 add $1,1

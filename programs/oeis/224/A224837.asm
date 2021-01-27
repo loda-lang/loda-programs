@@ -3,9 +3,8 @@
 
 add $0,1
 pow $0,2
-mov $1,$0
 mov $2,1
-sub $2,$1
+sub $2,$0
 cal $0,80590 ; a(1)=1; for n>1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+4 otherwise.
 add $0,$2
 add $0,2

@@ -10,5 +10,4 @@ lpb $1,3
   div $2,3
   gcd $2,$1
 lpe
-mov $0,$2
-mov $1,$0
+mov $1,$2

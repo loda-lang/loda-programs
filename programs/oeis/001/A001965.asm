@@ -24,14 +24,13 @@ lpb $4,1
       trn $2,1
     lpe
     mov $1,$3
-    mov $8,$7
-    mov $9,$8
+    mov $9,$7
     mul $9,2
     add $1,$9
-    mov $13,$12
-    lpb $13,1
+    mov $8,$12
+    lpb $8,1
+      sub $8,1
       mov $11,$1
-      sub $13,1
     lpe
   lpe
   lpb $10,1

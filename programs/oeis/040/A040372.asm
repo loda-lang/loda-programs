@@ -3,6 +3,6 @@
 
 cal $0,40370 ; Continued fraction for sqrt(390).
 mov $1,$0
-mov $2,$1
+mov $2,$0
 cmp $2,2
 add $1,$2

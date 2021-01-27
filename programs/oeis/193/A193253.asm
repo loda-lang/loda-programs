@@ -7,10 +7,10 @@ mul $0,18
 mov $1,$0
 mul $1,5
 add $1,1
-mov $3,$4
-mov $2,$3
+mov $2,$4
 mul $2,32
 add $1,$2
+mov $3,$4
 mul $3,$4
 mul $3,$4
 mov $2,$3

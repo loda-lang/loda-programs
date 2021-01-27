@@ -32,10 +32,9 @@ lpb $2,1
   add $2,$0
 lpe
 mov $1,$5
-mov $10,$9
-mov $6,$10
+mov $6,$9
 mul $6,4
 add $1,$6
+mov $10,$9
 mul $10,$9
-mov $6,$10
-add $1,$6
+add $1,$10

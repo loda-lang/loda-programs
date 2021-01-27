@@ -8,8 +8,7 @@ mul $1,64
 mov $2,$1
 pow $2,2
 mov $3,$1
-mov $5,$2
-add $3,$5
+add $3,$2
 mov $4,42
 add $4,$3
 mov $1,$4

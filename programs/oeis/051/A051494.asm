@@ -6,6 +6,5 @@ gcd $2,2
 mov $3,2
 add $3,$0
 div $3,-2
-mov $4,$2
-pow $3,$4
+pow $3,$2
 mov $1,$3

@@ -17,11 +17,9 @@ lpb $18,1
     mov $10,$0
     mov $12,$0
     lpb $12,1
-      mov $0,$10
       mov $1,1
-      mov $4,$0
-      mov $3,$4
-      mul $1,$3
+      mul $1,$10
+      mov $4,$10
       sub $12,1
       lpb $2,1
         lpb $4,1
@@ -35,8 +33,7 @@ lpb $18,1
       mov $4,4
       pow $4,$0
     lpe
-    mov $1,$4
-    add $14,$1
+    add $14,$4
   lpe
   mov $1,$14
   mov $19,$18

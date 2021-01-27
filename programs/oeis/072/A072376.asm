@@ -7,5 +7,5 @@ lpb $0,2
   trn $0,$2
   mov $1,$3
   mov $3,$2
-  add $2,$3
+  mul $2,2
 lpe

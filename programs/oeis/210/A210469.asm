@@ -14,7 +14,6 @@ lpb $2,1
   bin $4,$0
   add $1,$4
   div $0,$1
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

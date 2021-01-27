@@ -6,10 +6,9 @@ cal $0,211438 ; Number of ordered triples (w,x,y) with all terms in {-n,...,0,..
 div $0,6
 mov $1,$0
 add $1,1
-mov $4,$3
-mov $2,$4
+mov $2,$3
 mul $2,2
 add $1,$2
+mov $4,$3
 mul $4,$3
-mov $2,$4
-add $1,$2
+add $1,$4

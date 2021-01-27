@@ -3,18 +3,16 @@
 
 mov $2,$0
 add $2,2520
-mov $5,2
-mov $6,4
-add $6,$0
-add $6,1
+mov $3,4
+add $3,$0
+add $3,1
+mov $4,2
 lpb $0,1
   mov $0,4
-  mov $3,$5
-  add $2,$3
+  add $2,$4
   sub $2,3
-  mov $4,$2
-  mov $6,1
-  add $6,$4
+  mov $3,1
+  add $3,$2
 lpe
-mov $1,$6
+mov $1,$3
 add $1,100

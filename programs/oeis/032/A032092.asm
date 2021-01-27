@@ -20,10 +20,8 @@ lpb $32,1
     gcd $2,2
     mul $0,$2
     cal $0,24853 ; a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (natural numbers), t = (natural numbers >= 2).
-    mov $1,$0
-    add $28,$1
+    add $28,$0
   lpe
-  mov $1,$28
-  add $31,$1
+  add $31,$28
 lpe
 mov $1,$31

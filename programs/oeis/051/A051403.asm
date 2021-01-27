@@ -27,10 +27,8 @@ lpb $10,1
     lpe
     add $0,$1
     div $0,2
-    mov $1,$0
-    add $6,$1
+    add $6,$0
   lpe
-  mov $1,$6
-  add $9,$1
+  add $9,$6
 lpe
 mov $1,$9

@@ -5,7 +5,6 @@ mod $0,5
 mov $2,2
 lpb $2,1
   sub $2,$0
-  mov $0,$2
-  add $3,$0
+  add $3,$2
 lpe
 mov $1,$3

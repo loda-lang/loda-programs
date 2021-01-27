@@ -4,8 +4,7 @@
 trn $0,1
 cal $0,66629 ; a(n) = 2*Fibonacci(n+2) + ((-1)^n - 3)/2.
 mul $0,2
-mov $2,$0
-mov $1,$2
+mov $1,$0
 sub $1,2
 div $1,2
 add $1,1

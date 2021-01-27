@@ -14,10 +14,9 @@ add $1,$0
 add $3,$0
 add $3,21
 div $4,6
-mov $2,$4
-sub $0,$2
+sub $0,$4
 mul $0,15
-add $1,$2
+add $1,$4
 div $0,$1
 mov $4,$3
 sub $4,$0
@@ -27,7 +26,6 @@ lpb $0,1
   div $1,6
 lpe
 sub $1,2
-mov $6,$5
-mov $7,$6
-mul $7,2
-add $1,$7
+mov $2,$5
+mul $2,2
+add $1,$2

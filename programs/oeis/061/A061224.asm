@@ -19,8 +19,7 @@ lpb $0,1
   mov $4,$3
   mov $5,1
   add $6,1
-  mov $7,$4
-  add $6,$7
+  add $6,$3
 lpe
 sub $1,290
 div $1,2

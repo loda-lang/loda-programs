@@ -10,7 +10,6 @@ lpb $2,1
   sub $0,$2
   add $0,12
   cal $0,24165 ; Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such that c - b > b - a.
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

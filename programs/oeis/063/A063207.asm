@@ -3,8 +3,7 @@
 
 mov $2,$0
 mov $3,$0
-mov $4,$0
-add $0,$4
+mul $0,2
 lpb $3,1
   lpb $0,1
     trn $0,3

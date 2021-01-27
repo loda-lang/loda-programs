@@ -4,9 +4,8 @@
 mov $2,5
 pow $2,$0
 gcd $0,2
-mov $4,$2
-div $4,$0
-add $0,$4
-mov $3,$0
-mov $1,$3
+mov $3,$2
+div $3,$0
+add $0,$3
+mov $1,$0
 div $1,4

@@ -3,13 +3,12 @@
 
 mov $1,9
 mov $2,$0
-mov $3,$2
 trn $2,2
 gcd $2,2
-mov $4,$3
-lpb $4,1
+mov $3,$0
+lpb $3,1
   mul $1,$2
-  sub $4,1
+  sub $3,1
 lpe
 sub $1,9
 div $1,9

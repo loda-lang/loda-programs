@@ -3,21 +3,20 @@
 
 mov $2,$0
 mov $3,4
-mov $5,$2
 lpb $0,1
   add $0,1
   div $0,2
   mul $0,2
   sub $0,1
   sub $3,4
-  mov $5,$3
+  mov $2,$3
 lpe
 add $0,3
 div $0,2
 mov $1,3
+add $2,$0
 mov $4,2
-add $5,$0
-pow $4,$5
+pow $4,$2
 add $1,$4
 sub $1,5
 div $1,2

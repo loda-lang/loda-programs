@@ -11,22 +11,17 @@ lpb $6,1
   mov $2,2
   mov $4,$0
   mul $0,2
-  mov $10,$4
+  mov $3,$4
   add $4,1
   pow $4,2
   lpb $0,1
     gcd $0,2
     sub $0,1
     pow $0,$0
-    mov $7,$4
-    mov $8,$7
-    add $10,$8
-    mov $3,$10
-    mov $7,$3
-    mov $2,$7
+    add $3,$4
+    mov $2,$3
     pow $2,2
   lpe
-  mov $1,$2
-  add $9,$1
+  add $7,$2
 lpe
-mov $1,$9
+mov $1,$7

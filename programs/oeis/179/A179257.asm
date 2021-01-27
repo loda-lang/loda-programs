@@ -3,31 +3,24 @@
 
 mov $4,$0
 add $4,1
-mov $9,$0
+mov $7,$0
 lpb $4,1
-  mov $0,$9
+  mov $0,$7
   sub $4,1
   sub $0,$4
   mov $2,4
-  mov $5,$0
   add $5,1
   mov $1,$5
   bin $1,4
   lpb $0,1
     sub $0,1
     sub $2,1
-    mov $8,$2
-    mov $5,$8
-    add $1,$5
+    add $1,$2
     add $1,$0
     mov $0,$3
-    mov $8,$1
-    mov $2,$8
+    mov $2,$1
   lpe
-  mov $7,$2
-  mov $5,$7
-  mov $0,$5
-  mov $1,$0
+  mov $1,$2
   sub $1,3
   add $6,$1
 lpe

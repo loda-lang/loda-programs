@@ -4,9 +4,8 @@
 mov $1,$0
 add $1,1
 mov $2,$0
-mov $3,$2
-cal $3,114986 ; Characteristic function of (A000201 prefixed with 0).
-add $3,$1
-sub $3,1
-mov $1,$3
+cal $2,114986 ; Characteristic function of (A000201 prefixed with 0).
+add $2,$1
+sub $2,1
+mov $1,$2
 sub $1,1

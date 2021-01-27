@@ -3,15 +3,14 @@
 
 mov $4,$0
 add $4,1
-mov $5,$4
-mov $3,$5
-add $4,$3
-bin $4,$5
-mov $6,$5
-mul $6,6
-mov $2,$6
-mul $2,$6
+mov $3,$4
+mul $3,6
+mov $2,$3
+mul $2,$3
 mul $2,5
+mov $5,$4
+mul $4,2
+bin $4,$5
 mul $4,2
 mul $2,$4
 mov $1,$2

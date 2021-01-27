@@ -22,18 +22,16 @@ lpb $16,1
       mov $0,$7
       sub $9,1
       add $0,$9
-      mov $1,$0
-      mov $3,2
-      mov $4,$1
-      add $5,$1
       mov $1,2
+      mov $3,2
+      mov $4,$0
+      add $5,$0
       pow $5,2
       add $1,$5
-      mov $0,$1
       trn $4,2
       add $4,1
       pow $3,$4
-      add $3,$0
+      add $3,$1
       mov $1,$3
       sub $5,$5
       mov $10,$9
@@ -51,7 +49,6 @@ lpb $16,1
     div $1,2
     add $12,$1
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

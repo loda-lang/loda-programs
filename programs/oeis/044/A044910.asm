@@ -17,11 +17,10 @@ lpb $2,1
     sub $0,1
     mov $3,$0
     div $0,7
-    mov $1,$3
+    add $0,$3
     mov $5,9
     mov $6,0
-    mov $10,$1
-    add $0,$10
+    mov $10,$3
     lpb $0,1
       mov $1,1
       pow $5,2
@@ -34,7 +33,7 @@ lpb $2,1
       div $10,$5
       mov $0,$10
       mov $5,6
-      mov $6,$0
+      mov $6,$10
     lpe
     mov $1,$6
     mov $9,$8

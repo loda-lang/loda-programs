@@ -37,13 +37,10 @@ lpb $19,1
         add $1,6
         add $9,$1
       lpe
-      mov $1,$9
-      add $12,$1
+      add $12,$9
     lpe
-    mov $1,$12
-    add $15,$1
+    add $15,$12
   lpe
-  mov $1,$15
-  add $18,$1
+  add $18,$15
 lpe
 mov $1,$18

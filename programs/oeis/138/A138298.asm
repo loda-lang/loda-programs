@@ -43,7 +43,7 @@ lpb $23,1
             add $2,$1
             add $3,7
             mov $1,$3
-            add $5,$1
+            add $5,$3
           lpe
           mov $1,$5
           mov $9,$8
@@ -82,7 +82,6 @@ lpb $23,1
     div $1,7
     add $19,$1
   lpe
-  mov $1,$19
-  add $22,$1
+  add $22,$19
 lpe
 mov $1,$22

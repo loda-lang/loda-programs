@@ -41,10 +41,10 @@ lpb $22,1
         trn $2,$0
         mov $0,2
         add $3,9
-        mov $8,$2
-        add $5,$8
+        add $5,$2
         add $5,1
         gcd $0,$5
+        mov $8,$2
         add $8,$3
         mul $8,9
         add $6,$8
@@ -58,13 +58,10 @@ lpb $22,1
         mov $8,0
         add $12,$1
       lpe
-      mov $1,$12
-      add $15,$1
+      add $15,$12
     lpe
-    mov $1,$15
-    add $18,$1
+    add $18,$15
   lpe
-  mov $1,$18
-  add $21,$1
+  add $21,$18
 lpe
 mov $1,$21

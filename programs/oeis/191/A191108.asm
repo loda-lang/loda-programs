@@ -22,6 +22,4 @@ lpb $6,1
   add $5,$1
 lpe
 mov $1,$5
-mov $8,$7
-mov $9,$8
-add $1,$9
+add $1,$7

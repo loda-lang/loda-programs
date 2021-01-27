@@ -4,9 +4,8 @@
 mov $3,5
 pow $3,$0
 add $3,2
-mov $0,$3
-trn $2,$0
-add $2,$0
+trn $2,$3
+add $2,$3
 div $2,31
 mul $3,6
 sub $3,$2

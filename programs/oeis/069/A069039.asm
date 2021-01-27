@@ -7,14 +7,12 @@ pow $1,2
 add $1,11
 mov $2,10
 mov $3,2
-mov $4,$0
-add $3,$4
+add $3,$0
 sub $3,2
 add $2,$3
 mul $2,$1
 mul $2,2
 add $3,$2
-mov $4,$3
-mov $1,$4
+mov $1,$3
 sub $1,207
 div $1,45

@@ -9,7 +9,6 @@ lpb $2,1
   sub $0,$2
   sub $0,1
   cal $0,60872 ; Sum of d*d' over all unordered pairs (d,d') with d*d' = n.
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

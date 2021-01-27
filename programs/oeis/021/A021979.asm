@@ -17,6 +17,6 @@ lpb $0,1
   add $2,1
   trn $2,5
   add $3,5
-  sub $3,$1
+  sub $3,$4
   add $3,4
 lpe

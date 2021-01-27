@@ -18,15 +18,14 @@ lpb $11,1
     lpb $6,1
       add $5,1
       mov $0,$5
-      mov $3,$0
-      trn $6,$3
+      mov $3,$5
       fac $3
+      trn $6,$5
       add $8,$2
       mov $4,$8
     lpe
     sub $2,1
   lpe
-  mov $1,$3
-  add $10,$1
+  add $10,$3
 lpe
 mov $1,$10

@@ -13,10 +13,9 @@ lpb $2,1
   mov $1,2
   mul $1,$0
   mov $4,$1
-  mov $6,$4
+  mov $6,$1
   cmp $6,0
   add $4,$6
-  mov $1,$4
-  add $3,$1
+  add $3,$4
 lpe
 mov $1,$3

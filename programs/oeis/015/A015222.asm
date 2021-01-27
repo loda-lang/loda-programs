@@ -11,8 +11,7 @@ mov $4,2
 add $4,$3
 mov $1,$4
 add $1,2
-mov $5,$0
-add $2,$5
+add $2,$0
 add $2,$1
 mul $2,2
 bin $2,3

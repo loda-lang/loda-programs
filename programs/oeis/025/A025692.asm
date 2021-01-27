@@ -13,7 +13,6 @@ lpb $2,1
   mov $6,$5
   mul $6,6
   log $6,6
-  mov $1,$6
-  add $4,$1
+  add $4,$6
 lpe
 mov $1,$4
