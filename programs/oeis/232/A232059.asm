@@ -11,7 +11,6 @@ lpb $3,1
   mov $2,$0
   cal $2,52910 ; Expansion of 1 + 2/(1-2*x-x^3).
   mul $2,2
-  mov $1,$2
-  add $4,$1
+  add $4,$2
 lpe
 mov $1,$4

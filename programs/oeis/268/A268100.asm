@@ -14,7 +14,6 @@ lpb $0,1
   sub $3,$1
   mov $1,$3
 lpe
-mov $0,$2
-mov $1,$0
+mov $1,$2
 div $1,500
 add $1,1

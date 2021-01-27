@@ -10,8 +10,7 @@ mov $2,9
 trn $2,$1
 sub $1,1
 add $2,1
-mov $3,$2
-trn $1,$3
+trn $1,$2
 sub $2,3
 trn $2,4
 add $1,$2

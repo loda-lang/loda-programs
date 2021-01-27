@@ -4,8 +4,7 @@
 mov $2,$0
 sub $2,35
 gcd $2,2
-mov $4,$0
-mov $3,$4
+mov $3,$0
 add $3,1
 mul $3,$0
 trn $3,1

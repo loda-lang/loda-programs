@@ -11,21 +11,20 @@ lpb $4,1
   cal $0,121384 ; Ceiling(n*e).
   add $0,2
   mov $1,4
-  mov $2,$0
-  add $1,$2
+  add $1,$0
   sub $1,1
   mul $1,3
   mov $3,$4
   lpb $3,1
+    mov $2,$1
     sub $3,1
-    mov $6,$1
   lpe
 lpe
 lpb $5,1
+  sub $2,$1
   mov $5,0
-  sub $6,$1
 lpe
-mov $1,$6
+mov $1,$2
 sub $1,6
 div $1,3
 add $1,1

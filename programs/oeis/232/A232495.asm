@@ -6,7 +6,7 @@ add $0,4
 mov $1,$0
 mov $2,$0
 mul $2,$0
-sub $2,$1
+sub $2,$0
 mul $1,$2
 div $1,6
 sub $1,2

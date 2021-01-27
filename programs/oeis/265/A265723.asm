@@ -8,7 +8,6 @@ gcd $0,2
 mov $1,1
 div $1,$0
 sub $2,1
-mov $3,$1
-pow $2,$3
+pow $2,$1
 add $2,$0
 mov $1,$2

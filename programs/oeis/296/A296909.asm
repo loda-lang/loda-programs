@@ -14,9 +14,8 @@ lpb $0,1
 lpe
 trn $1,2
 add $1,1
+add $1,$6
 mov $5,$6
-mov $4,$5
-add $1,$4
 mul $5,$6
 mov $4,$5
 mul $4,2

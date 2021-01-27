@@ -4,8 +4,8 @@
 add $0,2
 bin $0,2
 mov $1,1031
+mul $1,$0
 mov $2,$0
-mul $1,$2
 add $2,1
 sub $1,$2
 gcd $2,2

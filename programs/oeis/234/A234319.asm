@@ -14,16 +14,15 @@ add $6,$3
 lpb $0,1
   add $6,$0
   add $6,1
-  mov $5,$6
-  add $0,$5
+  add $0,$6
   sub $0,1
   div $0,2
+  mov $5,$6
   add $5,1
   mul $6,2
   add $6,$5
   mov $4,$6
-  mov $2,$4
-  sub $5,$2
+  sub $5,$6
   pow $5,2
   mov $6,$0
 lpe

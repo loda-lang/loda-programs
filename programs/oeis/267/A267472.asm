@@ -19,10 +19,9 @@ lpe
 add $1,1
 add $1,$3
 add $1,2
-add $5,3
-mov $0,$5
 mov $2,$1
-mov $1,$0
+add $5,3
+mov $1,$5
 sub $1,$2
 sub $1,1
 mov $4,6

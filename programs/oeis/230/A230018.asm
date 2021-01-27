@@ -20,10 +20,8 @@ lpb $16,1
     mov $7,7
     trn $7,$0
     add $0,$7
-    mov $1,$0
-    add $12,$1
+    add $12,$0
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

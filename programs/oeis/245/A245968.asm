@@ -3,11 +3,9 @@
 
 mov $2,$0
 add $0,1
-mov $3,$2
 mov $4,2
 mov $5,1
-mov $7,$3
-mov $6,$7
+mov $6,$2
 lpb $0,1
   mov $1,1
   mov $3,$5
@@ -21,6 +19,5 @@ add $4,$1
 mov $3,$4
 add $3,$7
 div $3,$7
-mov $2,$3
-mov $1,$2
+mov $1,$3
 sub $1,2

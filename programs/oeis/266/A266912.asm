@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$0
-sub $0,$3
+sub $0,$0
 add $0,3
 trn $3,3
 add $0,$3

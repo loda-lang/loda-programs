@@ -22,10 +22,8 @@ lpb $14,1
     add $8,$3
     add $8,$0
     add $4,$8
-    mov $1,$4
-    add $10,$1
+    add $10,$4
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

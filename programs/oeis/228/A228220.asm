@@ -5,12 +5,11 @@ mov $1,$0
 pow $1,3
 mul $1,20
 add $1,31
-mov $4,$0
-mov $3,$4
-mov $2,$3
+mov $2,$0
 mul $2,79
 add $1,$2
-mul $3,$4
+mov $3,$0
+mul $3,$0
 mov $2,$3
 mul $2,69
 add $1,$2

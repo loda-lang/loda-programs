@@ -15,8 +15,7 @@ lpb $7,1
     cal $1,232091 ; Smallest square or promic (oblong) number greater than or equal to n.
     mov $0,2
     sub $1,$3
-    mov $2,$1
-    sub $0,$2
+    sub $0,$1
     sub $0,1
     mov $4,4
   lpe

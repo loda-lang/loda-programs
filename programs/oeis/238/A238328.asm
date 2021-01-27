@@ -5,8 +5,7 @@ mov $1,$0
 cal $0,238340 ; Number of partitions of 4n into 4 parts.
 add $1,1
 mul $0,$1
-mov $2,$0
-mov $1,$2
+mov $1,$0
 sub $1,1
 mul $1,4
 add $1,4

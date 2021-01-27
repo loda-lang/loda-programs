@@ -7,8 +7,6 @@ mod $3,3
 mov $1,$3
 sub $1,1
 gcd $1,2
-mov $4,$0
-mov $2,$4
-mov $5,$2
-mul $5,5
-add $1,$5
+mov $2,$0
+mul $2,5
+add $1,$2

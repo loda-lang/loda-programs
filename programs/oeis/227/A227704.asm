@@ -18,12 +18,10 @@ lpb $0,1
 lpe
 mov $2,$7
 mul $2,2
-mov $0,$2
-mov $1,$0
-mov $5,$6
-mov $4,$5
+mov $1,$2
+mov $4,$6
 mul $4,4
 add $1,$4
+mov $5,$6
 mul $5,$6
-mov $4,$5
-add $1,$4
+add $1,$5

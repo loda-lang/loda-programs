@@ -9,12 +9,11 @@ lpb $5,1
   sub $5,1
   sub $0,$5
   mul $0,2
-  mov $1,$0
   mov $2,$0
   mul $2,8
   mov $4,1
   mov $6,$0
-  mul $6,$1
+  mul $6,$0
   lpb $2,1
     lpb $4,1
       trn $4,$7

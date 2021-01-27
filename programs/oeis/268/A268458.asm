@@ -7,7 +7,4 @@ pow $1,2
 sub $1,1
 pow $1,2
 add $1,2
-mov $2,$0
-mov $3,$2
-mov $4,$3
-add $1,$4
+add $1,$0

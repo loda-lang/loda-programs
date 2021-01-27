@@ -3,22 +3,9 @@
 
 add $0,3
 pow $0,2
-mov $2,7
-mov $3,1
-lpb $2,1
-  mul $0,2
-  mov $1,3
-  add $4,$0
-  lpb $4,1
-    mov $2,4
-    trn $4,$3
-    add $3,$1
-    sub $3,1
-  lpe
-  sub $3,6
-  add $3,$1
+lpb $0,1
+  add $2,1
+  sub $0,$2
 lpe
-mov $1,$3
-sub $1,8
-div $1,2
-add $1,1
+mov $1,$2
+sub $1,3

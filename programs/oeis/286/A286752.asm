@@ -3,7 +3,6 @@
 
 cal $0,287775 ; Positions of 0 in A287772; complement of A050140 (conjectured and proved).
 mod $0,2
-mov $3,$0
-mov $2,$3
+mov $2,$0
 cmp $2,0
 mov $1,$2

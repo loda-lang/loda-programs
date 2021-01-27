@@ -3,13 +3,9 @@
 
 mov $1,$0
 add $1,1
-mov $5,$0
 cal $1,195176 ; a(n) = 3*n - floor(n*sqrt(2)).
-mov $3,$1
-add $1,$3
+mul $1,2
 sub $1,4
 div $1,2
 add $1,3
-mov $2,$5
-mov $4,$2
-add $1,$4
+add $1,$0

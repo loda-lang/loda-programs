@@ -3,15 +3,14 @@
 
 mov $2,$0
 add $2,1
-mov $9,$0
+mov $3,$0
 lpb $2,1
-  mov $0,$9
+  mov $0,$3
   sub $2,1
   sub $0,$2
   mul $0,2
-  mov $3,$0
   mov $4,2
-  mov $6,$3
+  mov $6,$0
   mov $8,1
   lpb $0,1
     sub $0,1
@@ -19,15 +18,13 @@ lpb $2,1
     div $6,2
     add $4,$6
   lpe
-  mov $0,$4
   mov $6,2
   mov $7,$8
   add $7,4
-  sub $7,$0
+  sub $7,$4
   trn $7,2
   sub $6,$7
-  gcd $6,$0
-  mov $1,$6
-  add $5,$1
+  gcd $6,$4
+  add $5,$6
 lpe
 mov $1,$5

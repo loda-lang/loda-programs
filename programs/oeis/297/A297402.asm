@@ -15,6 +15,5 @@ lpb $0,1
 lpe
 mov $0,32
 pow $0,$3
-mov $3,$0
-gcd $2,$3
+gcd $2,$0
 mov $1,$2

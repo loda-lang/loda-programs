@@ -10,8 +10,8 @@ lpb $0,1
   add $3,$0
   sub $0,1
 lpe
+add $0,$1
 mov $4,$1
-add $0,$4
 add $1,1
 add $1,$0
 sub $3,$2

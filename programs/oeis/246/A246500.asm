@@ -11,7 +11,7 @@ lpb $5,1
   trn $0,1
   cal $0,100637 ; Trisection of A000720.
   mov $1,$0
-  log $0,$1
+  log $0,$0
   add $4,$0
   sub $4,2
   add $1,$4

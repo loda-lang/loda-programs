@@ -5,9 +5,8 @@ cal $0,82903 ; a(n) = gcd(2^n, sigma_1(n)) = gcd(A000079(n), A000203(n)) also a(
 mul $0,2
 mov $3,$0
 sub $0,1
-mov $1,$0
 mov $2,1
-add $2,$1
+add $2,$0
 pow $3,2
 div $3,$2
 mov $0,$3

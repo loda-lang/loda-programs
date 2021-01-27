@@ -26,11 +26,9 @@ lpb $16,1
       mov $4,$0
       cal $0,244049 ; Sum of all proper divisors of all positive integers <= n.
       mul $0,2
-      mov $3,$0
-      mov $1,$3
+      mov $1,$0
       add $1,7
-      mov $5,$4
-      mov $6,$5
+      mov $6,$4
       mul $6,3
       add $1,$6
       sub $1,7
@@ -51,7 +49,6 @@ lpb $16,1
     add $1,1
     add $12,$1
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

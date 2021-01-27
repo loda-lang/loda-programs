@@ -4,7 +4,6 @@
 mov $3,$0
 cal $0,282154 ; Coefficients in expansion of Eisenstein series -q*(d/dq)(q*(d/dq)E_2).
 mul $3,$0
-mov $4,$3
-add $2,$4
+add $2,$3
 mov $1,$2
 div $1,24

@@ -5,10 +5,10 @@ mov $4,$0
 div $0,5
 mov $1,$0
 add $1,10
-mov $3,$4
-mov $2,$3
+mov $2,$4
 mul $2,34
 add $1,$2
+mov $3,$4
 mul $3,$4
 mov $2,$3
 mul $2,36

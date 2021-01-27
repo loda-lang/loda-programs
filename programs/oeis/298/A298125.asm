@@ -3,13 +3,11 @@
 
 mov $1,$0
 mul $1,2
-mov $4,$0
+mov $2,$0
 trn $0,2
 mul $1,$0
 add $1,1
-mov $3,$4
-mov $2,$3
 add $1,$2
-mul $3,$4
-mov $2,$3
-add $1,$2
+mov $3,$2
+mul $3,$2
+add $1,$3

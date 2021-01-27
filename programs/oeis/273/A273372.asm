@@ -11,12 +11,11 @@ mul $1,$2
 add $1,1
 mul $1,3
 sub $1,2
-mov $3,$0
-mov $5,$3
-mov $4,$5
+mov $4,$0
 mul $4,10
 add $1,$4
-mul $5,$3
-mov $4,$5
+mov $3,$0
+mul $3,$0
+mov $4,$3
 mul $4,10
 add $1,$4

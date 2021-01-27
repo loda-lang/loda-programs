@@ -33,18 +33,15 @@ lpb $17,1
       pow $5,$0
       mov $7,$4
       div $7,3
-      mov $1,$7
-      trn $3,$1
+      trn $3,$7
       add $5,11
       add $3,$5
       mov $1,$3
       sub $1,11
       add $10,$1
     lpe
-    mov $1,$10
-    add $13,$1
+    add $13,$10
   lpe
-  mov $1,$13
-  add $16,$1
+  add $16,$13
 lpe
 mov $1,$16

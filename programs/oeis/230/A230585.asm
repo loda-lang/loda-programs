@@ -4,8 +4,7 @@
 mov $2,$0
 mov $0,16
 mov $1,2
-mov $3,$2
-add $1,$3
+add $1,$2
 cal $1,289652 ; Catalan numbers - 2 (A120304) with first three terms changed to 1,1,1.
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $2,$1

@@ -3,12 +3,10 @@
 
 mov $4,$0
 cal $0,287452 ; Positions of 0 in A287451.
-mov $1,$0
-add $2,$1
+add $2,$0
 mod $2,3
 mov $1,$2
 add $1,1
-mov $5,$4
-mov $3,$5
+mov $3,$4
 mul $3,3
 add $1,$3

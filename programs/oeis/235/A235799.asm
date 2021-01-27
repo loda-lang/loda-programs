@@ -8,7 +8,6 @@ cal $0,235796 ; 2*n - 1 - sigma(n).
 add $0,11
 pow $2,2
 sub $2,3
-mov $1,$2
-add $0,$1
+add $0,$2
 mov $1,$0
 sub $1,8

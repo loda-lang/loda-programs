@@ -3,12 +3,11 @@
 
 mov $1,$0
 add $1,$0
-mov $5,$0
+mov $2,$0
 div $0,2
 div $1,4
-mov $2,$1
-mov $4,$5
-sub $4,$2
+mov $4,$2
+sub $4,$1
 mov $3,$4
 pow $3,$0
 fac $4

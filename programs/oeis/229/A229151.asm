@@ -3,13 +3,12 @@
 
 mov $2,$0
 mul $2,5
+mov $3,$0
+pow $3,8
 mov $4,$2
 add $4,4
 mul $4,4
-mov $5,$0
-pow $5,8
-mul $5,$4
-mul $5,10
-mov $3,$5
+mul $3,$4
+mul $3,10
 mov $1,$3
 div $1,40

@@ -16,6 +16,5 @@ lpe
 add $2,2
 add $2,$0
 add $4,$2
-mov $2,$4
-mov $1,$2
+mov $1,$4
 sub $1,7

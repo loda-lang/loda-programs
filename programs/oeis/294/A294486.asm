@@ -4,10 +4,9 @@
 mov $2,$0
 add $2,1
 mov $3,$0
-mov $5,$0
-add $3,$5
-bin $3,$5
-mov $4,$5
+add $3,$0
+bin $3,$0
+mov $4,$0
 add $4,$2
 pow $4,2
 mul $3,$4

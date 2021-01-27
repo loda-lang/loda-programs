@@ -33,13 +33,10 @@ lpb $17,1
         lpe
         mul $0,$8
       lpe
-      mov $1,$0
-      add $10,$1
+      add $10,$0
     lpe
-    mov $1,$10
-    add $13,$1
+    add $13,$10
   lpe
-  mov $1,$13
-  add $16,$1
+  add $16,$13
 lpe
 mov $1,$16

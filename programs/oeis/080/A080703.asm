@@ -2,25 +2,10 @@
 ; 5,6,7,8,12,16,20,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,44,48,52,56,60,64,68,72,76,80,84,88,92,96,100,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127
 
 sub $0,1
-sub $3,$0
 mul $0,2
-add $4,$0
 add $0,7
-add $4,1
-add $2,1
-mov $3,$0
-add $4,10
-sub $4,$2
-mov $2,$4
-mov $3,4
-cal $0,80646
-mov $1,$0
-mov $4,10
-mod $3,4
-add $3,$4
-sub $1,$1
+cal $0,80646 ; a(1) = 3; for n>1, a(n) is taken to be the smallest integer greater than a(n-1) which is consistent with the condition "if n is a member of the sequence then a(n) is divisible by 3".
 sub $0,3
-add $2,$3
 mov $1,$0
 sub $1,11
 div $1,2

@@ -8,8 +8,8 @@ lpb $6,1
   sub $6,1
   sub $0,$6
   mov $2,$0
+  add $2,$0
   mov $4,$0
-  add $2,$4
   lpb $2,1
     gcd $2,32
     mov $3,$4

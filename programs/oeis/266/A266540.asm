@@ -17,7 +17,7 @@ lpb $9,1
       trn $4,2
       mov $6,8
       mul $6,$1
-      mul $1,$2
+      mul $1,$0
     lpe
     trn $2,$1
     lpb $6,1

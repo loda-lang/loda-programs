@@ -15,8 +15,7 @@ div $2,3
 add $2,1
 mov $1,$2
 sub $1,$5
-mov $3,$2
-mov $5,$3
+mov $5,$2
 mul $5,$1
 add $5,4
 mov $1,$5

@@ -14,8 +14,7 @@ lpb $7,1
   add $2,1
   sub $0,$2
   mul $0,12
-  mov $1,$0
-  sub $4,$1
+  sub $4,$0
   mov $1,$4
   cal $1,144478 ; Period 9: repeat 1,0,5,7,6,2,4,3,8.
   div $1,6

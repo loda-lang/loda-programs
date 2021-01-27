@@ -17,7 +17,6 @@ lpe
 mov $0,2
 trn $1,6
 mul $4,2
-mov $3,$4
-add $0,$3
+add $0,$4
 add $1,$0
 add $1,313

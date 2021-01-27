@@ -9,7 +9,6 @@ lpb $3,1
   sub $0,$3
   gcd $0,262144
   mod $0,3
-  mov $1,$0
-  add $4,$1
+  add $4,$0
 lpe
 mov $1,$4

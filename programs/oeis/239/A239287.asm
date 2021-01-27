@@ -6,6 +6,5 @@ cal $0,143182 ; Triangle T(n,m) = 1 + abs(n-2*m), read by rows, 0<=m<=n.
 add $2,$0
 mul $2,2
 div $2,4
-mov $0,$2
-mov $1,$0
+mov $1,$2
 sub $1,1

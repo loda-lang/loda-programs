@@ -3,8 +3,7 @@
 
 lpb $0,1
   sub $0,1
-  add $4,6
-  mov $2,$4
+  add $2,6
   add $3,$2
 lpe
 add $3,1

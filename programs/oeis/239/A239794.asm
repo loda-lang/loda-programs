@@ -5,10 +5,9 @@ mul $0,5
 mov $1,1031
 mov $3,$0
 sub $0,1
-add $3,14
-mov $4,$0
-mul $1,$4
+mul $1,$0
 mov $2,$1
+add $3,14
 mul $2,$3
 add $1,$2
 div $1,5155

@@ -12,8 +12,7 @@ mov $5,11
 add $5,$0
 mov $1,$5
 sub $1,2
-mov $6,$4
-mul $6,$4
-mul $6,$4
-mov $3,$6
+mov $3,$4
+mul $3,$4
+mul $3,$4
 add $1,$3

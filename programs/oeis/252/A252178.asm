@@ -22,7 +22,7 @@ lpe
 mov $1,$2
 add $1,6
 mov $6,$5
-mov $7,$6
+mov $7,$5
 mul $7,3
 add $1,$7
 mul $6,$5
@@ -32,9 +32,8 @@ mul $7,6
 add $1,$7
 add $1,2
 mov $9,$8
-mov $10,$9
+mov $10,$8
 mul $10,3
 add $1,$10
 mul $9,$8
-mov $10,$9
-add $1,$10
+add $1,$9

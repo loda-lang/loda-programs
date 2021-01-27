@@ -8,7 +8,6 @@ lpb $7,1
   sub $7,1
   sub $0,$7
   cal $0,299279 ; Coordination sequence for "reo" 3D uniform tiling.
-  mov $1,$0
-  add $6,$1
+  add $6,$0
 lpe
 mov $1,$6

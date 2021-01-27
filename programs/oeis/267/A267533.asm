@@ -4,9 +4,8 @@
 mov $2,2
 cal $0,53186 ; Square excess of n: difference between n and largest square <= n.
 sub $0,2
-mov $1,$0
 mov $3,1
-bin $3,$1
+bin $3,$0
 sub $2,$3
 mov $1,$2
 sub $1,1

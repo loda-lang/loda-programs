@@ -20,10 +20,8 @@ lpb $10,1
     mul $1,7
     add $0,$1
     cal $0,25770 ; Expansion of 1/((1-x)(1-x^3)(1-x^10)).
-    mov $1,$0
-    add $6,$1
+    add $6,$0
   lpe
-  mov $1,$6
-  add $9,$1
+  add $9,$6
 lpe
 mov $1,$9

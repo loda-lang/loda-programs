@@ -3,8 +3,7 @@
 
 mov $1,$0
 cal $0,253203 ; The least square larger than n with same parity as n.
-mov $2,$1
-sub $0,$2
+sub $0,$1
 mul $0,2
 add $0,179
 mov $1,$0

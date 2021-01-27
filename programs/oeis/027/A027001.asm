@@ -3,6 +3,4 @@
 
 mul $0,2
 cal $0,27964 ; T(n,n+4), T given by A027960.
-sub $0,1
 mov $1,$0
-add $1,1

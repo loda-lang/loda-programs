@@ -25,17 +25,13 @@ lpb $16,1
       mov $1,2
       add $1,$9
       add $1,1
-      mov $3,$9
-      mov $5,$3
-      mov $10,$5
+      mov $10,$9
       add $10,2
     lpe
     bin $10,3
     add $10,$1
-    mov $1,$10
-    add $12,$1
+    add $12,$10
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

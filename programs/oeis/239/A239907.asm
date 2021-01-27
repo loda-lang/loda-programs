@@ -4,5 +4,4 @@
 mov $2,$0
 cal $0,329320 ; a(n) = Sum_{k=0..floor(log_2(n))} 1 - A035263(1 + floor(n/2^k)).
 sub $2,$0
-mov $0,$2
-mov $1,$0
+mov $1,$2
