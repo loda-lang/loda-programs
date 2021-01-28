@@ -3,9 +3,9 @@
 
 pow $0,2
 mov $2,7
-mov $3,$0
-gcd $2,$3
+gcd $2,$0
 add $2,3
+mov $3,$0
 sub $4,$2
 sub $3,$4
 div $3,7

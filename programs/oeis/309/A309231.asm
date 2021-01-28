@@ -3,14 +3,13 @@
 
 mov $2,$0
 add $2,1
-mov $5,$0
+mov $4,$0
 mul $0,2
 pow $0,7
 gcd $0,$2
 mov $1,$0
 mod $1,3
 add $1,6
-mov $4,$5
 mov $3,$4
 mul $3,9
 add $1,$3

@@ -4,11 +4,10 @@
 mov $4,$0
 cal $0,281746 ; Nonnegative numbers n such that n == 0 mod 3 or n == 0 mod 5.
 mov $2,$0
-mov $3,$2
+mov $3,$0
 cmp $3,0
 add $2,$3
 mov $1,$2
-mov $6,$4
-mov $5,$6
+mov $5,$4
 mul $5,3
 add $1,$5

@@ -9,6 +9,4 @@ lpb $0,1
   add $1,1
 lpe
 bin $1,$0
-mov $3,$2
-mov $4,$3
-add $1,$4
+add $1,$2

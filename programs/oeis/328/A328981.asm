@@ -11,13 +11,13 @@ lpb $0,1
   add $1,$2
   mod $1,6
   add $2,$0
+  add $0,$4
+  trn $0,7
   add $3,2
   sub $1,$3
-  mov $5,$4
-  add $0,$5
-  trn $0,7
   add $1,4
   div $1,3
+  mov $5,$4
   mov $4,$2
 lpe
 trn $1,1

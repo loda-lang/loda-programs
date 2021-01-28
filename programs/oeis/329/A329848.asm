@@ -7,8 +7,6 @@ mul $3,41
 mov $1,$3
 div $1,51
 add $1,2
-mov $5,$0
-mov $4,$5
-mov $2,$4
+mov $2,$0
 mul $2,2
 add $1,$2

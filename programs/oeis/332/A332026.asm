@@ -12,8 +12,7 @@ lpb $2,1
   lpe
   trn $2,1
   pow $1,$2
-  mov $5,$3
-  trn $2,$5
+  trn $2,$3
 lpe
 add $3,$1
 mov $1,$3

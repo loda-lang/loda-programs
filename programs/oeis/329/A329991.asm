@@ -6,11 +6,9 @@ div $3,25
 mov $4,$0
 sub $0,$3
 mov $1,3
-mov $2,$0
-mul $1,$2
+mul $1,$0
 div $1,6
 add $1,2
-mov $6,$4
-mov $5,$6
-mul $5,2
-add $1,$5
+mov $2,$4
+mul $2,2
+add $1,$2

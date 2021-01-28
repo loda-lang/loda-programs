@@ -26,12 +26,11 @@ lpb $31,1
       add $6,2
       mov $8,$0
       div $8,2
-      mov $9,$8
-      add $2,$9
+      add $2,$8
       mov $0,$2
-      sub $6,$3
-      add $6,$0
       bin $0,3
+      sub $6,$3
+      add $6,$2
       bin $6,2
       mul $0,$6
       mul $0,2
@@ -50,7 +49,6 @@ lpb $31,1
     div $1,2
     add $27,$1
   lpe
-  mov $1,$27
-  add $30,$1
+  add $30,$27
 lpe
 mov $1,$30

@@ -7,8 +7,7 @@ mul $0,4
 mov $1,1
 add $2,1
 lpb $0,1
-  mov $4,$2
-  trn $1,$4
+  trn $1,$2
   add $1,$0
   trn $2,2
   mov $0,$2

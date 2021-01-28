@@ -5,7 +5,7 @@ mov $1,5
 mov $2,$0
 mov $4,$0
 mul $4,4
-mov $7,$0
+mov $5,$0
 lpb $2,1
   div $2,2
   mov $3,$1
@@ -21,6 +21,4 @@ lpe
 mov $2,$4
 trn $2,3
 mov $1,$2
-mov $6,$7
-mov $5,$6
 add $1,$5

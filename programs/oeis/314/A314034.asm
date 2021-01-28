@@ -12,8 +12,8 @@ lpb $7,1
   add $0,1
   pow $0,2
   mov $2,30
+  mul $2,$0
   mov $3,$0
-  mul $2,$3
   add $3,$2
   add $3,2
   add $2,$3

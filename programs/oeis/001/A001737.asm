@@ -4,21 +4,12 @@
 pow $0,2
 sub $2,$0
 lpb $0,1
-  sub $4,$0
   mov $1,$0
-  add $0,$1
+  mul $0,2
   add $2,$0
-  mov $0,$1
-  mov $0,1
-  cal $1,228071
-  add $3,7
+  cal $1,228071 ; Write n in binary and interpret as a decimal number; a(n) is this quantity minus n.
+  mov $0,0
   add $2,$1
-  mov $3,$0
-  mov $1,$0
-  div $1,2
-  sub $0,1
 lpe
 sub $1,$1
 add $1,$2
-add $1,$1
-div $1,2

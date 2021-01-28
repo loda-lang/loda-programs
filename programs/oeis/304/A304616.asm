@@ -4,8 +4,7 @@
 mul $0,27
 sub $0,11
 bin $0,2
-mov $2,$0
-mov $1,$2
+mov $1,$0
 sub $1,66
 div $1,27
 mul $1,6

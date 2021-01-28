@@ -15,11 +15,10 @@ lpb $3,1
     mul $0,2
     add $1,10
     gcd $1,4
-    mov $4,$1
-    mov $2,$4
+    mov $2,$1
   lpe
   mov $1,$2
   sub $1,1
-  add $6,$1
+  add $4,$1
 lpe
-mov $1,$6
+mov $1,$4

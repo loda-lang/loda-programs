@@ -20,9 +20,9 @@ lpb $16,1
       sub $9,1
       add $0,$9
       sub $0,1
-      mov $2,$0
-      mov $1,$2
+      mov $1,$0
       add $1,1
+      mov $2,$0
       mov $4,1
       mov $6,1
       lpb $2,1
@@ -49,7 +49,6 @@ lpb $16,1
     trn $1,3
     add $12,$1
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

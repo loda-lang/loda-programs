@@ -29,12 +29,9 @@ lpb $16,1
     sub $9,$1
     trn $9,9
     mov $4,$9
-    mov $5,$9
-    add $4,$5
-    mov $1,$4
-    add $12,$1
+    add $4,$9
+    add $12,$4
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

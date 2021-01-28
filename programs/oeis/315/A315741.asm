@@ -23,7 +23,6 @@ lpb $11,1
   lpe
   trn $6,1
   add $6,1
-  mov $1,$6
-  add $10,$1
+  add $10,$6
 lpe
 mov $1,$10

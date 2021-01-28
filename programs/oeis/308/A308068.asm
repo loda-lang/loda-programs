@@ -4,8 +4,7 @@
 div $0,2
 sub $0,2
 cal $0,8731 ; Molien series for 3-dimensional group [2, n] = *22n.
-mov $1,$0
 mov $2,1
-add $2,$1
+add $2,$0
 mov $1,$2
 sub $1,1

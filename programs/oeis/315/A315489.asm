@@ -3,11 +3,11 @@
 
 mov $5,$0
 sub $0,1
-mov $6,$0
-div $6,10
-add $0,$6
+mov $3,$0
+div $3,10
+add $0,$3
 mov $1,$0
-add $1,$6
+add $1,$3
 lpb $0,1
   mov $0,2
   mov $4,$1
@@ -15,7 +15,6 @@ lpe
 div $4,3
 add $4,1
 mov $1,$4
-mov $3,$5
-mov $2,$3
+mov $2,$5
 mul $2,5
 add $1,$2

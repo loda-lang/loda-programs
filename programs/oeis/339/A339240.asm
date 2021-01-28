@@ -4,8 +4,7 @@
 mov $1,$0
 mov $2,$0
 cal $2,114121 ; Expansion of (sqrt(1 - 4*x) + (1 - 2*x))/(2*(1 - 4*x)).
-mov $0,$2
-mul $1,$0
+mul $1,$2
 add $1,8
 mul $1,3
 sub $1,24

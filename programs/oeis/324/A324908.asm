@@ -6,9 +6,8 @@ cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 gcd $0,$3
 gcd $0,2
 sub $0,4
-mov $1,$0
 mov $2,2
-div $2,$1
+div $2,$0
 mov $4,5
 mul $4,$2
 sub $2,$4

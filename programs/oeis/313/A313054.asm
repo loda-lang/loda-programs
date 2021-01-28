@@ -16,7 +16,6 @@ trn $2,1
 add $2,$3
 mov $1,$2
 sub $1,1
-mov $6,$4
-mov $5,$6
+mov $5,$4
 mul $5,4
 add $1,$5

@@ -10,7 +10,6 @@ lpe
 trn $0,2
 mov $1,$0
 add $1,5
-mov $4,$3
-mov $2,$4
+mov $2,$3
 mul $2,7
 add $1,$2

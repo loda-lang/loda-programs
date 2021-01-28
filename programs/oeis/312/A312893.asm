@@ -5,7 +5,7 @@ mov $1,1
 mov $2,$0
 mov $4,1
 mov $6,$0
-mov $8,$0
+mov $7,$0
 lpb $2,1
   lpb $4,1
     gcd $5,4
@@ -27,7 +27,6 @@ lpb $2,1
     sub $6,1
   lpe
 lpe
-mov $7,$8
 mov $3,$7
 mul $3,4
 add $1,$3

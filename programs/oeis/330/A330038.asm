@@ -9,7 +9,7 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   mov $2,$0
-  mov $4,$2
+  mov $4,$0
   lpb $2,1
     lpb $4,1
       div $2,2

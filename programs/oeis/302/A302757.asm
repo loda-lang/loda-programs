@@ -6,8 +6,7 @@ pow $2,$0
 sub $0,$2
 mul $0,3
 sub $2,$0
-mov $3,$2
-mov $1,$3
+mov $1,$2
 div $1,9
 mul $1,2
 add $1,1

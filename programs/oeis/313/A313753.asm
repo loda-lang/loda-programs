@@ -18,11 +18,10 @@ lpb $9,1
     mov $2,$0
     mod $2,11
     sub $2,5
-    pow $4,2
-    mov $6,$5
-    mov $3,$6
-    sub $4,$3
+    mov $3,$5
     add $3,1
+    pow $4,2
+    sub $4,$5
     sub $5,$2
     sub $4,$5
     mov $0,$4

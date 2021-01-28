@@ -7,8 +7,8 @@ mul $3,2
 add $3,$0
 mov $0,5
 trn $3,1
+add $0,$3
 mov $4,$3
-add $0,$4
 lpb $0,1
   sub $0,1
   trn $0,6

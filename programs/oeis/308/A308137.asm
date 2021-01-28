@@ -3,21 +3,20 @@
 
 mov $4,$0
 add $0,3
+mov $1,$0
 mov $2,$0
-mov $1,$2
 div $2,2
 mul $1,$2
 add $1,3
 mul $1,2
 add $1,18
-mov $5,$4
-mov $3,$5
+mov $3,$4
 mul $3,23
 add $1,$3
+mov $5,$4
 mul $5,$4
 mov $3,$5
 mul $3,8
 add $1,$3
 mul $5,$4
-mov $3,$5
-add $1,$3
+add $1,$5

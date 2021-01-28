@@ -3,8 +3,8 @@
 
 pow $0,2
 mov $2,2
+mov $3,$0
 mov $4,$0
-mov $3,$4
 sub $4,1
 mul $3,$4
 lpb $0,1

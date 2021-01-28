@@ -9,6 +9,5 @@ div $4,2
 add $4,1
 mov $1,$4
 mov $2,$3
-mov $5,$2
-mul $5,3
-add $1,$5
+mul $2,3
+add $1,$2

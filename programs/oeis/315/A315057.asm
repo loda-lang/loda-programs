@@ -8,15 +8,14 @@ lpb $4,1
   sub $4,1
   add $0,$4
   sub $0,1
-  mov $5,$0
-  mov $3,$5
+  mov $3,$0
   add $3,1
   mul $3,2
+  mov $5,$0
+  mov $0,1
   mul $5,32
   mul $5,$3
-  mov $0,$5
-  mov $3,$0
-  mov $0,1
+  mov $3,$5
   add $3,3
   lpb $0,1
     sub $0,1

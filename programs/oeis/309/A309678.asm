@@ -10,7 +10,6 @@ lpb $2,1
   sub $0,$2
   div $0,4
   cal $0,189376 ; Expansion of 1/((1-x)^5*(x^3+x^2+x+1)^2).
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

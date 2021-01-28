@@ -15,8 +15,7 @@ lpb $7,1
     sub $11,1
     add $0,$11
     sub $0,1
-    mov $4,$0
-    mov $2,$4
+    mov $2,$0
     lpb $0,1
       cmp $0,2
       mod $4,2
