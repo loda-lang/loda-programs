@@ -3,9 +3,4 @@
 
 div $0,2
 cal $0,174565 ; Expansion of (1+3*x)/((1-x)*(1+3*x+4*x^2)).
-add $0,1
 mov $1,$0
-sub $1,2
-div $1,4
-mul $1,4
-add $1,1

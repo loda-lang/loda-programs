@@ -3,7 +3,6 @@
 
 add $0,1
 lpb $0,1
-  gcd $2,$0
+  gcd $1,$0
   div $0,10
 lpe
-mov $1,$2
