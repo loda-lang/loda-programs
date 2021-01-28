@@ -10,19 +10,18 @@ lpb $4,1
   sub $0,$4
   mov $5,$0
   mov $0,6
-  mov $1,6
+  mov $3,6
   mul $5,8
   lpb $0,1
     mov $0,2
-    mov $2,$1
+    mov $2,$3
     mul $2,7
     sub $5,1
     trn $5,3
     mul $5,3
     add $2,$5
-    mov $1,$2
-    div $1,31
+    mov $3,$2
+    div $3,31
   lpe
-  add $3,$1
+  add $1,$3
 lpe
-mov $1,$3

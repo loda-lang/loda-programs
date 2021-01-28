@@ -19,19 +19,18 @@ lpb $3,1
     cal $0,184517 ; Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
     add $0,1
     div $0,2
-    mov $1,$0
+    mov $4,$0
     mov $5,$8
     lpb $5,1
       sub $5,1
-      mov $7,$1
+      mov $7,$4
     lpe
   lpe
   lpb $6,1
     mov $6,0
-    sub $7,$1
+    sub $7,$4
   lpe
-  mov $1,$7
-  sub $1,4
-  add $4,$1
+  mov $4,$7
+  sub $4,4
+  add $1,$4
 lpe
-mov $1,$4

@@ -4,7 +4,6 @@
 lpb $0,1
   mul $0,2
   mod $0,3
-  add $2,3
+  add $1,3
 lpe
-trn $2,1
-mov $1,$2
+trn $1,1

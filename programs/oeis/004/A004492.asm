@@ -4,16 +4,14 @@
 mov $2,$0
 mod $0,9
 sub $0,2
-mov $3,6
-add $3,$2
+mov $1,6
+add $1,$2
 add $2,3
-mov $4,6
+mov $3,6
 lpb $0,1
   sub $0,7
-  sub $2,$3
-  mov $4,$2
+  sub $2,$1
+  mov $3,$2
 lpe
-add $3,$4
-add $3,1
-mov $1,$3
-sub $1,10
+add $1,$3
+sub $1,9

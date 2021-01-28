@@ -11,13 +11,12 @@ lpb $3,1
     mov $6,$0
     mov $0,$2
     add $0,$6
-    mov $1,1
-    mul $1,$0
+    mov $4,1
+    mul $4,$0
     mod $0,6
     fac $5
     sub $0,$5
   lpe
-  div $1,6
-  add $4,$1
+  div $4,6
+  add $1,$4
 lpe
-mov $1,$4

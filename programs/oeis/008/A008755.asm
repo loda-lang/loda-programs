@@ -10,17 +10,16 @@ lpb $3,1
   sub $0,$3
   sub $0,1
   cal $0,63195 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 6 ).
-  mov $1,$0
+  mov $4,$0
   add $0,1
   mov $2,1
-  mov $6,$1
+  mov $6,$4
   cmp $6,0
-  add $1,$6
-  div $0,$1
+  add $4,$6
+  div $0,$4
   add $2,$0
-  add $2,$1
-  mov $1,$2
-  sub $1,3
-  add $4,$1
+  add $2,$4
+  mov $4,$2
+  sub $4,3
+  add $1,$4
 lpe
-mov $1,$4

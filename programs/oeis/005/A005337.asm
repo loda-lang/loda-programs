@@ -5,10 +5,9 @@ add $0,1
 mov $3,1
 lpb $0,1
   sub $0,1
-  add $4,$3
-  add $4,8
-  add $2,$4
-  add $2,6
+  add $2,$3
+  add $2,8
+  add $1,$2
+  add $1,6
   add $3,1
 lpe
-mov $1,$2

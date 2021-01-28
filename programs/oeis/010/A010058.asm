@@ -13,15 +13,14 @@ lpb $2,1
   add $0,15
   log $0,10
   sub $0,1
-  mov $1,$0
   mov $3,$2
+  mov $4,$0
   lpb $3,1
+    mov $1,$4
     sub $3,1
-    mov $4,$1
   lpe
 lpe
 lpb $5,1
-  sub $4,$1
+  sub $1,$4
   mov $5,0
 lpe
-mov $1,$4

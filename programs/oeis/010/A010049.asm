@@ -21,43 +21,42 @@ lpb $15,1
       sub $7,1
       add $0,$7
       sub $0,1
-      mov $1,0
       mov $2,$0
       sub $2,1
       mov $3,2
+      mov $14,0
       lpb $0,1
         sub $0,1
-        trn $2,$1
-        mov $4,$1
-        add $1,$3
-        add $1,3
+        trn $2,$14
         add $2,$0
-        add $1,$2
+        mov $4,$14
+        add $14,$3
         mov $3,$4
+        add $14,3
+        add $14,$2
       lpe
       mov $8,$7
       lpb $8,1
-        mov $6,$1
+        mov $6,$14
         sub $8,1
       lpe
     lpe
     lpb $5,1
       mov $5,0
-      sub $6,$1
+      sub $6,$14
     lpe
-    mov $1,$6
     mov $12,$11
+    mov $14,$6
     lpb $12,1
-      mov $10,$1
+      mov $10,$14
       sub $12,1
     lpe
   lpe
   lpb $9,1
     mov $9,0
-    sub $10,$1
+    sub $10,$14
   lpe
-  mov $1,$10
-  div $1,5
-  add $14,$1
+  mov $14,$10
+  div $14,5
+  add $1,$14
 lpe
-mov $1,$14

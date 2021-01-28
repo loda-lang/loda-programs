@@ -17,12 +17,10 @@ lpb $0,1
   mov $4,$0
   mov $0,$3
 lpe
+mov $1,$2
 add $4,1
-mov $5,$2
-fac $6
-mul $6,$4
-div $5,$6
-add $5,$6
-sub $5,3
-mov $1,$5
-sub $1,4
+fac $5
+mul $5,$4
+div $1,$5
+add $1,$5
+sub $1,7

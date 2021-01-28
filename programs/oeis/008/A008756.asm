@@ -11,27 +11,26 @@ lpb $4,1
   add $0,4
   mov $2,2
   lpb $0,1
-    mov $1,$0
+    mov $6,$0
     sub $0,1
-    sub $1,2
-    mov $3,$1
-    mov $1,$0
+    sub $6,2
+    mov $3,$6
+    mov $6,$0
     add $0,$3
     div $0,6
     sub $3,$0
     sub $0,1
     trn $0,3
-    add $1,1
     add $2,$3
     mul $2,2
     add $0,$2
-    sub $0,$1
+    add $6,1
+    sub $0,$6
   lpe
   div $0,2
   mul $0,2
-  mov $1,$0
-  sub $1,2
-  div $1,2
-  add $6,$1
+  mov $6,$0
+  sub $6,2
+  div $6,2
+  add $1,$6
 lpe
-mov $1,$6

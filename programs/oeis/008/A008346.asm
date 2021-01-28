@@ -7,17 +7,16 @@ lpb $5,1
   sub $5,1
   add $0,$5
   sub $0,1
-  mov $1,$0
-  add $1,1
-  cal $1,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
+  mov $4,$0
+  add $4,1
+  cal $4,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
   mov $3,$5
   lpb $3,1
+    mov $1,$4
     sub $3,1
-    mov $4,$1
   lpe
 lpe
 lpb $2,1
+  sub $1,$4
   mov $2,0
-  sub $4,$1
 lpe
-mov $1,$4

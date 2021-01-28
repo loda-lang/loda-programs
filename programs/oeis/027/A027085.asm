@@ -3,14 +3,13 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2,1
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
   add $0,3
   cal $0,288599 ; a(n) = 2*a(n-1) - a(n-4) for n >= 4, where a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 10, a(4) = 16.
   sub $0,5
-  add $3,$0
+  add $1,$0
 lpe
-mov $1,$3

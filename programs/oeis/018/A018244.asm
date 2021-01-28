@@ -13,16 +13,15 @@ lpb $6,1
   sub $0,$4
   div $0,4
   add $0,$4
-  mov $1,$0
+  mov $2,$0
   mov $5,$6
   lpb $5,1
-    mov $2,$1
+    mov $1,$2
     sub $5,1
   lpe
 lpe
 lpb $3,1
-  sub $2,$1
+  sub $1,$2
   mov $3,0
 lpe
-mov $1,$2
 add $1,3

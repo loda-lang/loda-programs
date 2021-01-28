@@ -3,12 +3,11 @@
 
 cal $0,22415 ; Kim-sums: "Kimberling sums" K_n + K_4.
 sub $0,3
-mov $2,13
-add $2,$0
-mul $2,$0
-mov $3,$0
-cmp $3,0
-add $0,$3
-div $2,$0
-mov $1,$2
+mov $1,13
+add $1,$0
+mul $1,$0
+mov $2,$0
+cmp $2,0
+add $0,$2
+div $1,$0
 add $1,11

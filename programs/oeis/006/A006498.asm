@@ -11,16 +11,15 @@ lpb $3,1
   cal $0,92263 ; a(1)=1, a(n+1)=ceiling(phi*a(n))+1 if a(n) is odd, a(n+1)=ceiling(phi*a(n)) if a(n) is even, where phi=(1+sqrt(5))/2.
   sub $0,1
   div $0,2
-  mov $1,$0
-  add $1,1
   mov $2,$3
+  mov $4,$0
+  add $4,1
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $5,1
-  sub $4,$1
+  sub $1,$4
   mov $5,0
 lpe
-mov $1,$4

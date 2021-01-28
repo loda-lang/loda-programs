@@ -6,6 +6,5 @@ sub $0,5
 lpb $0,1
   pow $0,2
   trn $0,7
-  mov $2,1
+  mov $1,1
 lpe
-mov $1,$2

@@ -4,14 +4,13 @@
 mul $0,4
 mod $0,68
 mul $0,2
-mov $2,1
-mov $3,$0
+mov $1,1
+mov $2,$0
 gcd $0,2
-div $3,4
-sub $0,$3
-sub $2,$3
+div $2,4
+sub $0,$2
+sub $1,$2
 lpb $0,1
   mov $0,1
-  trn $2,$3
+  trn $1,$2
 lpe
-mov $1,$2

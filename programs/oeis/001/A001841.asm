@@ -6,10 +6,9 @@ add $0,3
 div $2,2
 add $2,$0
 mul $0,$2
-mov $4,$0
+mov $3,$0
 lpb $0,1
   sub $0,1
-  mov $3,$4
-  div $3,3
+  mov $1,$3
+  div $1,3
 lpe
-mov $1,$3

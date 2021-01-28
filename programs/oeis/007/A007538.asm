@@ -9,23 +9,22 @@ lpb $4,1
   add $0,$4
   pow $0,2
   mul $0,3
-  mov $1,0
+  mov $3,0
   lpb $0,1
     sub $0,1
-    add $1,2
-    trn $0,$1
+    add $3,2
+    trn $0,$3
   lpe
   mov $2,$4
   lpb $2,1
+    mov $1,$3
     sub $2,1
-    mov $3,$1
   lpe
 lpe
 lpb $5,1
-  sub $3,$1
+  sub $1,$3
   mov $5,0
 lpe
-mov $1,$3
 sub $1,2
 div $1,2
 add $1,2

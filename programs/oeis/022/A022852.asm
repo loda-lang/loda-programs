@@ -4,8 +4,4 @@
 mov $1,$0
 mul $1,2
 cal $1,121384 ; Ceiling(n*e).
-mov $2,$1
-div $2,2
-sub $2,1
-mov $1,$2
-add $1,1
+div $1,2
