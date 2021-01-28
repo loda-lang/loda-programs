@@ -3,7 +3,5 @@
 
 sub $0,1
 cal $0,206915 ; The index (in A006995) of the greatest binary palindrome <= n; also the 'lower inverse' of A006995.
-mul $0,2
 mov $1,$0
-div $1,2
 add $1,1

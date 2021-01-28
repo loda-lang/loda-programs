@@ -1,19 +1,13 @@
 ; A101100: The first summation of row 5 of Euler's triangle - a row that will recursively accumulate to the power of 5.
 ; 1,27,93,119,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120
 
-mov $5,$0
-add $5,1
-mov $8,$0
+mov $5,1
 lpb $5,1
-  mov $0,$8
   sub $5,1
-  sub $0,$5
-  mov $21,$0
-  mov $23,2
-  lpb $23,1
-    mov $0,$21
-    sub $23,1
-    add $0,$23
+  mov $7,2
+  lpb $7,1
+    sub $7,1
+    add $0,$7
     sub $0,1
     mov $17,$0
     mov $19,2
@@ -37,10 +31,10 @@ lpb $5,1
           add $0,$11
           sub $0,1
           mov $2,$0
-          add $0,$2
+          mul $0,2
           mov $1,2
+          mul $1,$2
           mov $4,$2
-          mul $1,$4
           mov $2,$0
           pow $2,2
           mov $3,$2
@@ -48,8 +42,7 @@ lpb $5,1
           lpb $2,1
             lpb $4,1
               mul $3,$1
-              mov $7,$4
-              sub $4,$7
+              sub $4,$4
             lpe
             mov $2,1
             mul $3,5
@@ -88,18 +81,12 @@ lpb $5,1
       sub $18,$1
     lpe
     mov $1,$18
-    mov $24,$23
-    lpb $24,1
-      mov $22,$1
-      sub $24,1
+    mov $6,$7
+    lpb $6,1
+      sub $6,1
+      mov $8,$1
     lpe
   lpe
-  lpb $21,1
-    mov $21,0
-    sub $22,$1
-  lpe
-  mov $1,$22
-  div $1,2
-  add $6,$1
 lpe
-mov $1,$6
+mov $1,$8
+div $1,2
