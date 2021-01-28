@@ -20,15 +20,14 @@ OEIS commands:
   synthesize       Synthesize programs for OEIS sequences
   maintain         Maintain programs for OEIS sequences
   update           Update OEIS index
-General options:
+Options:
   -l <string>      Log level (values:debug,info,warn,error,alert)
   -k <string>      Configuration file (default:loda.json)
   -t <number>      Number of sequence terms (default:20)
-  -s <number>      Maximum physical memory (default:1024)
-Interpreter options:
+  -p <number>      Maximum physical memory in MB (default:1024)
   -c <number>      Maximum number of interpreter cycles (default:10000000)
   -m <number>      Maximum number of used memory cells (default:100000)
-Miner options:
+  -s               Evaluate to number of execution steps
   -r               Search for programs of linear sequences (slow)
   -x               Optimize and overwrite existing programs
 ```
