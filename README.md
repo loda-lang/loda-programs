@@ -81,11 +81,12 @@ Programs can be used to generate integer sequences. A program generates a sequen
 
 ### Example Programs
 
-The following programs include some classical examples of sequences and functions on the natural numbers.
+The following programs include some classical examples of integer sequences and functions.
 
 * [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
 * [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
-* [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm): Uses `gcd` instruction.
+* [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm)
+* [Number of primes <= n, starting at n=0 (A230980)](programs/oeis/230/A230980.asm)
 * [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
 
 # Mining Programs for Integer Sequences
