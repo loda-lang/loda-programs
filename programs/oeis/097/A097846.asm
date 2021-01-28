@@ -6,15 +6,14 @@ lpb $0,1
   div $0,10
   mod $2,10
   sub $2,1
-  mov $4,$0
-  sub $2,$4
+  sub $2,$0
   mul $2,2
   mov $0,$2
-  add $5,1
-  mov $3,$5
-  add $0,$3
+  add $4,1
+  add $0,$4
+  mov $3,$4
   add $3,$0
-  mov $5,120259084288
+  mov $4,120259084288
 lpe
 mul $3,3
 mov $1,$3

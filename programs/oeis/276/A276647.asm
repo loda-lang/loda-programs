@@ -15,7 +15,6 @@ lpb $7,1
   mov $0,$1
   sub $0,1
   cal $0,276677 ; Number of squares added at the n-th generation of a symmetric (with 45-degree angles), non-overlapping Pythagoras tree.
-  mov $1,$0
-  add $6,$1
+  add $6,$0
 lpe
 mov $1,$6

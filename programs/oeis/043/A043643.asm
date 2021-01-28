@@ -11,8 +11,8 @@ lpb $2,1
   add $3,4
   mov $1,$3
   mov $3,$0
-  mov $6,$3
   sub $3,$2
+  mov $6,$0
   lpb $6,1
     add $3,5
     add $5,1

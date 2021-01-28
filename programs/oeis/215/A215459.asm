@@ -6,8 +6,7 @@ lpb $1,1
   mov $1,6
 lpe
 add $0,1
-mov $2,$1
-add $1,$2
+mul $1,2
 add $1,$0
 trn $1,6
 add $1,$0

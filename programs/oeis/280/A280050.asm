@@ -16,7 +16,6 @@ lpb $7,1
       gcd $1,$4
     lpe
   lpe
-  mov $1,$0
-  add $6,$1
+  add $6,$0
 lpe
 mov $1,$6

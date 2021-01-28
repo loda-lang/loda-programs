@@ -5,9 +5,7 @@ mov $1,$0
 add $1,1
 mov $2,$0
 mov $3,$0
-mov $4,$0
-mov $5,$4
-sub $5,1
-add $2,$5
-bin $2,$3
+sub $3,1
+add $2,$3
+bin $2,$0
 mul $1,$2

@@ -18,13 +18,10 @@ lpb $14,1
     div $1,2
     mul $1,8
     trn $1,3
-    mov $6,$0
-    mov $4,$6
-    add $1,$4
+    add $1,$0
     div $1,2
     add $10,$1
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

@@ -18,10 +18,10 @@ lpb $0,1
   add $4,5
   mov $0,$4
   add $0,3
+  add $0,$4
   add $1,$4
   sub $1,10
   mov $3,$4
-  add $0,$3
 lpe
 lpb $2,1
   add $1,5

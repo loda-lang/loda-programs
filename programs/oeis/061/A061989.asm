@@ -6,6 +6,5 @@ trn $0,4
 mov $1,$0
 pow $0,2
 add $0,3
-mov $2,$1
-mul $0,$2
+mul $0,$1
 mov $1,$0

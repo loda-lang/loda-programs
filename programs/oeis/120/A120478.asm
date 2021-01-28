@@ -3,8 +3,7 @@
 
 add $0,1
 mov $2,$0
-mov $3,$2
-mul $2,$3
+mul $2,$0
 add $2,8
 bin $2,2
 mov $1,$2

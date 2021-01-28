@@ -8,6 +8,5 @@ mov $2,$3
 sub $2,4
 bin $3,4
 add $2,$3
-mov $4,$2
-mov $1,$4
+mov $1,$2
 add $1,4

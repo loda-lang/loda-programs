@@ -5,14 +5,14 @@ mov $4,$0
 mov $0,1
 mul $4,3
 mov $1,$4
-mov $6,$4
+mov $3,$4
+mul $3,4
+sub $3,1
+trn $3,1
+add $3,2
 mov $4,2
 add $4,$1
 mov $5,6
-mul $6,4
-sub $6,1
-trn $6,1
-add $6,2
 lpb $0,1
   sub $0,$0
   sub $1,2
@@ -22,8 +22,7 @@ lpb $0,1
 lpe
 sub $4,3
 sub $4,$2
-add $6,$4
-mov $3,$6
+add $3,$4
 mov $1,$3
 sub $1,8
 mul $1,2

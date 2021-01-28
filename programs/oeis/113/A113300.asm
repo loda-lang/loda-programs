@@ -10,7 +10,6 @@ lpb $4,1
   mov $2,$0
   mul $2,2
   cal $2,73 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.
-  mov $1,$2
-  add $3,$1
+  add $3,$2
 lpe
 mov $1,$3

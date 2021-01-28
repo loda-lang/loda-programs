@@ -30,8 +30,7 @@ lpb $2,1
         add $0,$11
         lpb $0,1
           mov $4,5
-          mov $6,$0
-          pow $4,$6
+          pow $4,$0
           add $4,5
           add $1,$4
           trn $0,$1
@@ -62,15 +61,15 @@ lpb $2,1
     mov $1,$14
     mov $7,$8
     lpb $7,1
+      mov $6,$1
       sub $7,1
-      mov $18,$1
     lpe
   lpe
   lpb $17,1
+    sub $6,$1
     mov $17,0
-    sub $18,$1
   lpe
-  mov $1,$18
+  mov $1,$6
   mul $1,2
   add $3,$1
 lpe

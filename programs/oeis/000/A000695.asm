@@ -12,16 +12,15 @@ lpb $2,1
     add $1,$0
     mov $0,0
     gcd $1,281474976710656
+    mov $4,3
     mov $6,0
     add $6,$1
     mov $7,1
-    mov $8,3
   lpe
-  sub $8,$7
-  mul $6,$8
-  mov $4,$6
+  sub $4,$7
   mul $6,$4
-  add $6,$8
+  pow $6,2
+  add $6,$4
   mov $1,$6
   div $1,6
   add $1,1

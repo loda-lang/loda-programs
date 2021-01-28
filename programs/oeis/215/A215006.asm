@@ -12,7 +12,6 @@ lpb $2,1
   cmp $5,0
   add $0,$5
   cal $0,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

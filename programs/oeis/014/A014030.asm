@@ -14,11 +14,10 @@ lpe
 add $0,1
 sub $2,$3
 div $2,4
+mul $0,$2
+mul $0,2
 gcd $4,2
 mul $4,2
-mov $6,$2
-mul $0,$6
-mul $0,2
 sub $0,$4
 add $0,6
 mov $1,$0

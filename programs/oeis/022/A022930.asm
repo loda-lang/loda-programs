@@ -9,8 +9,7 @@ lpb $7,1
   add $0,$7
   mov $4,1
   cal $0,56576 ; Highest k with 2^k <= 3^n.
-  mov $1,$0
-  mov $2,$1
+  mov $2,$0
   div $2,2
   add $4,$2
   sub $4,1

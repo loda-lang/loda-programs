@@ -4,6 +4,5 @@
 mov $2,$0
 cal $0,117973 ; a(n) = 2^(wt(n)+1), where wt() = A000120().
 sub $2,$0
-mov $3,$2
-mov $1,$3
+mov $1,$2
 add $1,1

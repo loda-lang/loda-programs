@@ -4,9 +4,8 @@
 mov $3,$0
 cal $0,257953 ; Number of permutations p of [n] with no fixed points and cyclic displacement of elements restricted by nine: p(i)<>i and (i-p(i) mod n <= 9 or p(i)-i mod n <= 9).
 mul $0,2
-mov $1,$3
 add $2,$0
-add $2,$1
+add $2,$3
 add $3,$2
 mov $1,$3
 div $1,4

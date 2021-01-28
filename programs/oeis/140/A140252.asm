@@ -6,7 +6,6 @@ lpb $0,1
   trn $0,2
   mul $2,2
   mov $1,$2
-  mov $3,$2
-  add $2,$3
+  mul $2,2
 lpe
 trn $1,1

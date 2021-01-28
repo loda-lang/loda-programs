@@ -10,10 +10,7 @@ bin $3,2
 div $3,2
 mov $2,$3
 add $2,$3
-mov $4,$0
-mov $1,$4
-mov $3,$1
-add $2,$3
+add $2,$0
 mov $1,$2
 sub $1,4
 div $1,2

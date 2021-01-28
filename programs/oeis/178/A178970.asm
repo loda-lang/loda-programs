@@ -5,11 +5,9 @@ mul $0,2
 add $0,1
 cal $0,213859 ; 2^n mod (n+2).
 add $2,$0
-mov $1,$2
-add $3,$1
+add $3,$2
 mul $3,2
-mov $0,$3
-mov $1,$0
+mov $1,$3
 sub $1,4
 div $1,2
 add $1,2

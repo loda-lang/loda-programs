@@ -5,9 +5,8 @@ sub $3,$0
 cal $0,53156 ; Number of 2-element intersecting families (with not necessary distinct sets) whose union is an n-element set.
 add $0,7
 mul $0,2
-mov $1,$0
 add $3,$0
 mov $2,$3
-add $2,$1
+add $2,$0
 mov $1,$2
 sub $1,31

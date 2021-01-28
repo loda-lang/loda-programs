@@ -9,6 +9,5 @@ mul $1,$0
 mul $1,169
 add $1,2
 mov $3,$2
-mov $4,$3
-mul $4,2
-add $1,$4
+mul $3,2
+add $1,$3

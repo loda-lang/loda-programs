@@ -5,10 +5,9 @@ mov $1,$0
 add $1,1
 mov $2,2
 gcd $2,$0
-mov $3,$2
-mov $4,1
-sub $4,$1
-sub $4,1
-bin $4,2
-mul $4,$3
-mov $1,$4
+mov $3,1
+sub $3,$1
+sub $3,1
+bin $3,2
+mul $3,$2
+mov $1,$3

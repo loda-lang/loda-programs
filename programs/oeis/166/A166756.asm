@@ -3,19 +3,16 @@
 
 mov $2,$0
 pow $0,2
-mov $4,$0
-add $0,$4
+mul $0,2
 mov $1,$0
 add $1,4
 mul $1,$0
 add $1,$0
-mov $5,$2
-mov $3,$5
-add $1,$3
-mul $5,$2
-mov $3,$5
-add $1,$3
-mul $5,$2
-mov $3,$5
+add $1,$2
+mov $4,$2
+mul $4,$2
+add $1,$4
+mul $4,$2
+mov $3,$4
 mul $3,8
 add $1,$3

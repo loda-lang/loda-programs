@@ -6,8 +6,6 @@ mod $1,8
 trn $1,6
 mul $1,7
 add $1,64
-mov $4,$0
-mov $3,$4
-mov $2,$3
+mov $2,$0
 mul $2,64
 add $1,$2

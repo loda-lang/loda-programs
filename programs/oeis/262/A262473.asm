@@ -15,6 +15,4 @@ lpb $0,1
 lpe
 div $4,$3
 pow $4,2
-mov $7,$4
-mov $6,$7
-mov $1,$6
+mov $1,$4

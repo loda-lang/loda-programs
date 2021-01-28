@@ -13,10 +13,9 @@ add $6,$5
 sub $6,1
 mov $3,$6
 mul $3,2
-mov $5,8
-mov $6,$0
-sub $3,$6
+sub $3,$0
 mov $1,$3
+mov $5,8
 lpb $0,1
   gcd $0,$1
   sub $0,1

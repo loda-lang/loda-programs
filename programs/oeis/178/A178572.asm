@@ -6,7 +6,7 @@ add $0,1
 mov $2,$4
 mov $3,$0
 mul $3,4
-add $3,$2
+add $3,$4
 add $2,$3
 bin $3,2
 add $3,1

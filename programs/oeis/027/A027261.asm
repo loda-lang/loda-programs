@@ -11,8 +11,7 @@ lpe
 mov $0,$3
 sub $0,1
 add $2,6
-mov $3,$0
-mul $2,$3
+mul $2,$0
 mov $1,$2
 div $1,18
 add $1,1

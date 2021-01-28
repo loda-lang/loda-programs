@@ -7,7 +7,6 @@ mov $1,$0
 mul $1,6
 pow $1,2
 add $1,45
-mov $4,$2
-mov $3,$4
+mov $3,$2
 mul $3,161
 add $1,$3

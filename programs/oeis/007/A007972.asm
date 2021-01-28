@@ -15,9 +15,8 @@ mul $1,2
 div $1,3
 add $1,2
 mov $5,$4
-mov $6,$5
+mov $6,$4
 mul $6,2
 add $1,$6
 mul $5,$4
-mov $6,$5
-add $1,$6
+add $1,$5

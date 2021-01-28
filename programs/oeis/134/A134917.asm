@@ -4,9 +4,7 @@
 sub $1,$0
 add $1,1
 cal $0,135677 ; Ceiling(n^(4/3)+n).
-mov $2,$1
-add $3,$2
-add $3,$0
-mov $0,$3
-mov $1,$0
+add $2,$1
+add $2,$0
+mov $1,$2
 sub $1,2

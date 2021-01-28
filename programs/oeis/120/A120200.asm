@@ -33,9 +33,9 @@ lpb $26,1
           add $0,1
           mov $4,$1
           div $1,8
-          mov $3,$4
-          add $1,$3
+          add $1,$4
           add $1,1
+          mov $3,$4
           trn $3,$1
         lpe
         mov $2,$1

@@ -5,12 +5,11 @@ mov $2,1
 mov $5,$0
 mov $0,0
 add $0,$5
-mov $6,1
+mov $3,1
 lpb $0,1
   trn $0,$4
-  mov $3,$6
   mov $1,$3
-  add $1,$6
+  add $1,$3
   mov $2,$0
   mov $5,$0
   trn $0,1

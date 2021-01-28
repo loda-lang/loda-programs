@@ -4,14 +4,13 @@
 add $0,1
 mod $0,8
 mov $1,$0
-mov $3,$0
-mov $2,$3
+mov $2,$0
 trn $2,3
 add $2,$0
-mov $4,$0
+mov $3,$0
 mov $0,$2
 mul $0,$1
-mul $0,$4
+mul $0,$3
 lpb $0,1
   mod $0,3
 lpe

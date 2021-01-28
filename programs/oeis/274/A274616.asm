@@ -5,8 +5,7 @@ mov $1,14
 add $1,$0
 cmp $0,4
 sub $0,$1
-mov $2,$0
-sub $1,$2
+sub $1,$0
 add $1,90
 div $1,3
 sub $1,39

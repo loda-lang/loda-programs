@@ -11,15 +11,13 @@ lpb $0,1
     mov $3,$0
     mov $6,3
     add $6,$5
+    mov $5,$4
     mov $7,$2
-    mov $8,$4
-    mov $5,$8
     add $7,95
     gcd $7,$6
     sub $5,$7
+    mov $0,$5
     add $6,8
-    mov $7,$5
-    mov $0,$7
   lpe
   mov $3,3
   add $6,8

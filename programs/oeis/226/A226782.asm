@@ -7,11 +7,10 @@ lpb $7,1
   sub $7,1
   add $0,$7
   sub $0,1
-  mov $2,$0
-  mov $1,$2
-  mov $3,$1
+  mov $1,$0
   add $1,2
   div $1,2
+  mov $3,$0
   add $3,$1
   mov $4,$1
   trn $1,2
@@ -20,10 +19,10 @@ lpb $7,1
     add $3,$4
   lpe
   mov $1,$3
-  mov $8,$7
-  lpb $8,1
+  mov $2,$7
+  lpb $2,1
+    sub $2,1
     mov $6,$1
-    sub $8,1
   lpe
 lpe
 lpb $5,1

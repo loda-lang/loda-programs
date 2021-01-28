@@ -31,15 +31,12 @@ lpb $12,1
       trn $4,19
       mov $6,3
       trn $6,$4
-      mov $3,$6
-      sub $2,$3
+      sub $2,$6
     lpe
     sub $2,1
     add $0,$2
-    mov $1,$0
-    add $8,$1
+    add $8,$0
   lpe
-  mov $1,$8
-  add $11,$1
+  add $11,$8
 lpe
 mov $1,$11

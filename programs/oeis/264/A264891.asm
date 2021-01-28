@@ -3,22 +3,21 @@
 
 mov $1,-5
 mov $2,$0
-mov $3,$2
-add $3,1
-mul $1,$3
+add $2,1
+mul $1,$2
 mov $0,$1
 add $0,6
 pow $0,2
-mov $3,$1
+mov $2,$1
 add $1,$0
-mul $0,$3
+mul $0,$2
 lpb $0,1
   mov $0,1
   add $1,1
-  mov $3,$1
-  pow $3,2
-  add $3,700
+  mov $2,$1
+  pow $2,2
+  add $2,700
 lpe
-mov $1,$3
+mov $1,$2
 sub $1,709
 div $1,40

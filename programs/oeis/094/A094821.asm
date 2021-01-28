@@ -12,10 +12,8 @@ lpb $7,1
   cal $0,181367 ; Number of 2-compositions of n containing at least one 0 entry. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
   add $2,$0
   add $4,$2
-  mov $1,$4
-  add $3,$1
+  add $3,$4
   div $3,2
-  mov $1,$3
-  add $6,$1
+  add $6,$3
 lpe
 mov $1,$6

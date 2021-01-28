@@ -10,10 +10,7 @@ lpb $7,1
   sub $0,$7
   add $4,$0
   cal $0,8811 ; Expansion of x*(1+x^4)/((1-x)^2*(1-x^4)).
-  mov $1,$0
-  mul $4,$1
-  mov $2,$4
-  mov $1,$2
-  add $6,$1
+  mul $4,$0
+  add $6,$4
 lpe
 mov $1,$6

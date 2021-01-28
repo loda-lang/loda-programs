@@ -9,10 +9,9 @@ bin $5,3
 div $5,2
 mov $1,$5
 add $1,5
-mov $3,$4
-mov $2,$3
+mov $2,$4
 mul $2,6
 add $1,$2
+mov $3,$4
 mul $3,$4
-mov $2,$3
-add $1,$2
+add $1,$3

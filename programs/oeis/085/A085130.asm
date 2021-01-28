@@ -19,12 +19,11 @@ lpb $9,1
     pow $6,2
     sub $6,1
     mod $6,$1
-    mov $4,$6
-    add $3,$4
+    add $3,$6
     mov $0,$3
     div $0,10
     mov $3,1
-    sub $3,$4
+    sub $3,$6
   lpe
   mov $0,6
   sub $3,$2

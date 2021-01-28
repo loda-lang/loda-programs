@@ -16,12 +16,11 @@ lpb $6,1
     add $0,$13
     sub $0,1
     mov $2,$0
-    mov $3,1
-    mov $7,$0
-    mov $4,$7
-    add $2,$4
+    add $2,$0
     div $2,2
     mul $2,$0
+    mov $3,1
+    mov $4,$0
     add $0,$2
     mov $2,1
     lpb $2,1

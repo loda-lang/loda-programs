@@ -10,8 +10,8 @@ lpb $0,1
   mov $3,$0
   mov $0,0
   bin $2,$3
+  mov $1,$2
   mov $3,$2
-  mov $1,$3
 lpe
 sub $0,$3
 sub $1,$0

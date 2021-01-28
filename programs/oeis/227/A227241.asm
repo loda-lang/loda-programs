@@ -3,11 +3,10 @@
 
 mov $2,1
 cal $0,274536 ; a(n) = 6 * sigma(n).
-mov $1,$0
 mul $2,$0
 mov $3,$2
 add $3,3
-add $3,$1
+add $3,$0
 pow $3,2
 mov $1,$3
 sub $1,225

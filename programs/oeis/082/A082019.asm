@@ -10,10 +10,10 @@ lpb $0,1
 lpe
 gcd $1,2
 sub $1,1
-mov $3,$4
-mov $2,$3
+mov $2,$4
 mul $2,2
 add $1,$2
+mov $3,$4
 mul $3,$4
 mov $2,$3
 mul $2,2

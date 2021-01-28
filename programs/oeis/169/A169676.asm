@@ -3,11 +3,10 @@
 
 mod $0,9
 lpb $0,1
-  mov $4,$0
-  mov $2,$4
+  mov $2,$0
   mod $3,2
   sub $3,2
-  mul $3,$2
+  mul $3,$0
   sub $3,1
   mov $0,$3
   sub $2,1

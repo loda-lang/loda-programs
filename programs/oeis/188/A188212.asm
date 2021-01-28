@@ -21,15 +21,13 @@ lpb $11,1
   lpb $0,1
     mov $0,40
     add $6,1
-    mov $1,$6
-    sub $8,$1
+    sub $8,$6
     mov $2,$8
-    add $3,$2
+    add $3,$8
     pow $3,$8
   lpe
   sub $3,$2
   div $3,3
-  mov $1,$3
-  add $10,$1
+  add $10,$3
 lpe
 mov $1,$10

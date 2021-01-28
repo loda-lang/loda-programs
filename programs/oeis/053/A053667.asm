@@ -8,8 +8,7 @@ lpb $0,1
   div $0,10
   mod $2,10
   mul $1,$2
-  mov $4,$1
+  mov $3,$1
 lpe
-mov $3,$4
 mov $1,$3
 div $1,34

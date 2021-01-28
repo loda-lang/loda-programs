@@ -36,19 +36,15 @@ lpb $19,1
       mov $2,$4
       add $9,1
       add $10,$0
-      mov $0,$9
       sub $2,$10
-      trn $2,$0
+      trn $2,$9
       add $2,7
-      mov $1,$2
       trn $5,$10
       mov $10,$5
-      add $12,$1
+      add $12,$2
     lpe
-    mov $1,$12
-    add $15,$1
+    add $15,$12
   lpe
-  mov $1,$15
-  add $18,$1
+  add $18,$15
 lpe
 mov $1,$18

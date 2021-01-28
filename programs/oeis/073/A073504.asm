@@ -8,8 +8,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   mov $5,150
-  mov $6,$0
-  sub $5,$6
+  sub $5,$0
   sub $5,1
   lpb $0,1
     trn $0,2

@@ -10,9 +10,8 @@ lpb $29,1
   add $0,$29
   sub $0,1
   cal $0,93129 ; Binomial transform of Fibonacci(2n-1) (A001519).
-  mov $1,$0
   add $2,2
-  mul $2,$1
+  mul $2,$0
   sub $2,1
   mov $1,$2
   mov $30,$29

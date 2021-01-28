@@ -12,13 +12,11 @@ lpb $11,1
   mov $6,$0
   cal $0,101803 ; Nearest integer to n*(phi-1), where phi is golden ratio 1.618033988749895... (A001622).
   mov $3,$0
-  mov $4,$2
-  mul $3,$4
+  mul $3,$2
   mov $1,$3
   mov $7,$6
   mul $7,$6
-  mov $8,$7
-  add $1,$8
+  add $1,$7
   add $10,$1
 lpe
 mov $1,$10

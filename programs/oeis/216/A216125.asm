@@ -10,7 +10,6 @@ lpb $4,1
     add $4,2
   lpe
 lpe
-mov $2,$4
-mov $5,5
-pow $5,$2
-mov $1,$5
+mov $2,5
+pow $2,$4
+mov $1,$2

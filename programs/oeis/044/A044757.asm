@@ -8,8 +8,6 @@ trn $2,5
 add $2,28
 mov $1,$2
 add $1,16
-mov $4,$0
-mov $5,$4
-mov $3,$5
+mov $3,$0
 mul $3,100
 add $1,$3

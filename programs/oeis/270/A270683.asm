@@ -9,7 +9,6 @@ lpb $4,1
   sub $4,1
   sub $0,$4
   cal $0,270681 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
-  mov $1,$0
-  add $2,$1
+  add $2,$0
 lpe
 mov $1,$2

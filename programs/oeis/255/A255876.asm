@@ -4,12 +4,11 @@
 mov $1,$0
 gcd $1,2
 pow $1,2
-mov $3,$0
-mov $4,$3
-mov $2,$4
+mov $2,$0
 mul $2,6
 add $1,$2
-mul $4,$3
-mov $2,$4
+mov $3,$0
+mul $3,$0
+mov $2,$3
 mul $2,2
 add $1,$2

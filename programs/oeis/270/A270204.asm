@@ -3,9 +3,9 @@
 
 pow $0,2
 mov $1,$0
-mov $2,2
-add $2,$1
 pow $1,7
+mov $2,2
+add $2,$0
 sub $2,1
 div $1,$2
 div $1,252

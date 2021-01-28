@@ -27,22 +27,18 @@ lpb $19,1
       mov $7,$0
       mov $0,0
       add $0,$7
-      mov $8,$7
       mov $9,2
-      add $9,$8
+      add $9,$7
       add $0,$9
       mul $0,2
       mov $9,$0
       div $0,3
       div $9,8
       add $0,$9
-      mov $1,$0
-      add $12,$1
+      add $12,$0
     lpe
-    mov $1,$12
-    add $15,$1
+    add $15,$12
   lpe
-  mov $1,$15
-  add $18,$1
+  add $18,$15
 lpe
 mov $1,$18

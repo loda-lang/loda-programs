@@ -31,16 +31,15 @@ lpb $30,1
       mov $19,$0
       lpb $24,1
         mov $0,$19
-        add $1,$8
-        add $1,5
-        mov $15,$0
         add $0,$22
         sub $0,1
-        mov $4,$1
-        add $0,$4
+        add $1,$8
+        add $1,5
+        add $0,$1
         add $0,1
         mov $8,$0
         sub $8,8
+        mov $15,$19
         mov $19,$8
         sub $24,1
       lpe
@@ -50,7 +49,6 @@ lpb $30,1
     add $1,1
     add $26,$1
   lpe
-  mov $1,$26
-  add $29,$1
+  add $29,$26
 lpe
 mov $1,$29

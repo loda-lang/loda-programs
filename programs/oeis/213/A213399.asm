@@ -10,9 +10,8 @@ mov $1,$4
 div $1,6
 mul $1,$0
 add $1,1
+add $1,$5
 mov $3,$5
-mov $2,$3
-add $1,$2
 mul $3,$5
 mov $2,$3
 mul $2,2

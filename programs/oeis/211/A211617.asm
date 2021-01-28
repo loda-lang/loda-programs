@@ -3,18 +3,16 @@
 
 mov $3,$0
 mov $4,$0
-mov $7,$0
-mul $0,$7
+pow $0,2
 lpb $0,1
   sub $0,1
   trn $0,1
   sub $3,2
 lpe
-mov $2,$3
-mov $1,$2
-mov $6,$4
-mul $6,$4
-mul $6,$4
-mov $5,$6
+mov $1,$3
+mov $2,$4
+mul $2,$4
+mul $2,$4
+mov $5,$2
 mul $5,4
 add $1,$5

@@ -8,6 +8,5 @@ lpb $0,1
   trn $0,6
   mul $0,2
   trn $1,$0
-  mov $3,$2
-  trn $0,$3
+  trn $0,$2
 lpe

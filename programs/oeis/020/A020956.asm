@@ -25,8 +25,7 @@ lpb $36,1
       sub $0,1
       cal $0,14217 ; a(n) = floor(phi^n), where phi = (1+sqrt(5))/2 is the golden ratio.
       mul $0,2
-      mov $3,$0
-      mov $1,$3
+      mov $1,$0
       mov $30,$29
       lpb $30,1
         mov $28,$1
@@ -41,7 +40,6 @@ lpb $36,1
     div $1,2
     add $32,$1
   lpe
-  mov $1,$32
-  add $35,$1
+  add $35,$32
 lpe
 mov $1,$35

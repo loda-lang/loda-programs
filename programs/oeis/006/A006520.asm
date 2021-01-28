@@ -11,8 +11,7 @@ lpb $2,1
   mov $1,262144
   mov $4,1
   add $4,$0
-  mov $0,$4
-  gcd $1,$0
+  gcd $1,$4
   add $3,$1
 lpe
 mov $1,$3

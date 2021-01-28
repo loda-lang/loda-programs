@@ -15,8 +15,7 @@ gcd $4,2
 add $1,$4
 mov $2,$1
 add $2,7
-mov $0,$2
-mov $1,$0
+mov $1,$2
 sub $1,9
 div $1,2
 mul $1,2

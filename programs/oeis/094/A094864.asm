@@ -15,16 +15,15 @@ lpb $7,1
   mov $3,$0
   lpb $7,1
     mov $0,$3
-    add $1,$2
-    add $1,5
-    mov $5,$0
     add $0,$6
     sub $0,1
-    mov $4,$1
-    add $0,$4
+    add $1,$2
+    add $1,5
+    add $0,$1
     add $0,1
     mov $2,$0
     sub $2,8
+    mov $5,$3
     mov $3,$2
     sub $7,1
   lpe

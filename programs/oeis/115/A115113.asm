@@ -37,8 +37,7 @@ lpb $21,1
           sub $6,1
           add $0,$6
           sub $0,1
-          mov $2,$0
-          add $0,$2
+          mul $0,2
           cal $0,215095 ; a(0)=0, a(1)=1, a(n) = least k>a(n-1) such that k+a(n-2) is a Jacobsthal number.
           mov $1,$0
           add $1,1
@@ -78,7 +77,6 @@ lpb $21,1
     mul $1,2
     add $17,$1
   lpe
-  mov $1,$17
-  add $20,$1
+  add $20,$17
 lpe
 mov $1,$20

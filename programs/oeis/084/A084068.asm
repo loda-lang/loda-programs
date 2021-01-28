@@ -10,7 +10,6 @@ lpb $2,1
   sub $0,$2
   div $0,2
   cal $0,1653 ; Numbers k such that 2*k^2 - 1 is a square.
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

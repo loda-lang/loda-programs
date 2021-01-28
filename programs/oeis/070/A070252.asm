@@ -13,8 +13,8 @@ lpb $29,1
   cal $4,50250 ; Number of nonzero palindromes less than 10^n.
   mul $4,2
   mov $0,$4
-  mov $1,$0
-  mov $26,$0
+  mov $1,$4
+  mov $26,$4
   cmp $26,0
   add $0,$26
   mul $1,2

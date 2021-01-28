@@ -23,7 +23,6 @@ lpb $13,1
     sub $8,1
   lpe
   add $7,$2
-  mov $1,$7
-  add $12,$1
+  add $12,$7
 lpe
 mov $1,$12

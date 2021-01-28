@@ -13,8 +13,7 @@ lpb $3,1
   add $5,1
   log $0,$5
   sub $0,$5
-  mov $1,$0
-  add $4,$1
+  add $4,$0
   cmp $5,7
 lpe
 mov $1,$4

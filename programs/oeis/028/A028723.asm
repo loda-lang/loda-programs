@@ -24,15 +24,13 @@ lpb $12,1
         sub $4,$0
       lpe
       gcd $0,2
-      mov $1,$0
-      mov $2,$1
+      mov $2,$0
       div $3,$0
     lpe
     mov $1,$3
     div $1,4
     add $8,$1
   lpe
-  mov $1,$8
-  add $11,$1
+  add $11,$8
 lpe
 mov $1,$11

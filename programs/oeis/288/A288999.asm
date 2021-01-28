@@ -29,9 +29,8 @@ lpb $2,1
     mov $1,$3
     add $1,1
     mov $12,$11
-    mov $13,$12
-    mul $13,2
-    add $1,$13
+    mul $12,2
+    add $1,$12
     mov $8,$9
     lpb $8,1
       sub $8,1

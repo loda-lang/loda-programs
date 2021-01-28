@@ -9,17 +9,16 @@ lpb $9,1
   sub $0,$9
   lpb $2,1
     add $0,1
+    mov $3,$2
     mov $5,$2
-    mov $3,$5
     add $5,1
     mov $6,$0
     mul $0,$4
-    add $6,$3
+    add $6,$2
     sub $6,3
     lpb $6,1
       add $3,1
-      mov $2,$3
-      trn $6,$2
+      trn $6,$3
     lpe
     mov $1,$5
     mul $1,2

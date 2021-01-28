@@ -3,14 +3,13 @@
 
 mov $3,$0
 add $3,1
-mov $5,$3
-mov $6,$5
-mov $4,$6
+mov $4,$3
 mul $4,2
-add $6,1
-mov $2,$6
+mov $5,$3
+add $5,1
+mov $2,$5
 pow $2,2
-bin $4,$6
+bin $4,$5
 mul $2,$4
 add $2,2
 mov $1,$2

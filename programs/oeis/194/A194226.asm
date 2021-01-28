@@ -8,14 +8,14 @@ lpb $0,1
   add $6,$4
   sub $4,2
   mov $1,$4
-  mov $2,$1
-  add $2,$1
+  trn $1,1
+  mov $2,$4
+  add $2,$4
   sub $2,1
   add $3,$4
   sub $2,$3
   mov $5,$6
-  add $5,$1
-  trn $1,1
+  add $5,$4
   add $1,$5
   trn $2,1
   mov $0,$2

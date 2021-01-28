@@ -12,7 +12,7 @@ lpb $2,1
     sub $4,2
     mov $5,8
     mul $5,$1
-    mul $1,$2
+    mul $1,$0
   lpe
   trn $2,$1
   lpb $5,1

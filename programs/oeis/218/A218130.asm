@@ -9,8 +9,7 @@ mov $4,$0
 mul $4,2
 mov $2,$4
 sub $2,$0
-mov $4,$1
-mov $3,$4
+mov $3,$1
 sub $3,$2
 add $3,3
 mov $1,$3

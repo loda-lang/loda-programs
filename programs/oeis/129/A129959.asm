@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-mul $2,$1
+mul $2,$0
 mov $4,$0
 add $4,3
 mod $4,2
@@ -17,10 +17,8 @@ lpb $0,1
   mov $1,$0
   trn $0,11
 lpe
-mov $6,$5
-mul $6,$5
-mov $3,$6
+mov $3,$5
+mul $3,$5
 add $1,$3
-mul $6,$5
-mov $3,$6
+mul $3,$5
 add $1,$3

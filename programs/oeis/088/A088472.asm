@@ -4,21 +4,19 @@
 mov $4,$0
 bin $0,4
 mov $2,6
-mov $6,2
+mov $3,2
 lpb $0,1
   div $0,10
   add $0,1
+  mul $3,$2
+  sub $3,60
   mov $5,2
-  mul $6,$2
-  sub $6,60
-  add $5,$6
+  add $5,$3
   sub $0,$5
   add $0,37
   mov $2,$0
-  mov $6,0
+  mov $3,0
 lpe
 mov $1,$2
 sub $1,5
-mov $3,$4
-mov $7,$3
-add $1,$7
+add $1,$4

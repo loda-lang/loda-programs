@@ -8,5 +8,4 @@ lpb $0,1
   mov $2,$3
 lpe
 mul $2,2
-mov $4,$2
-pow $1,$4
+pow $1,$2

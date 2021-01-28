@@ -28,10 +28,8 @@ lpb $32,1
     sub $0,1
     mov $2,$3
     add $2,$0
-    mov $1,$2
-    add $28,$1
+    add $28,$2
   lpe
-  mov $1,$28
-  add $31,$1
+  add $31,$28
 lpe
 mov $1,$31

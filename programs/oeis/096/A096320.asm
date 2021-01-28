@@ -15,6 +15,5 @@ mul $3,3
 mul $4,3
 mul $0,$4
 mod $3,$0
-mov $6,$3
-mov $1,$6
+mov $1,$3
 div $1,3

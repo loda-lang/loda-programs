@@ -9,7 +9,6 @@ lpb $2,1
   sub $0,$2
   sub $0,4
   cal $0,266755 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^4)).
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

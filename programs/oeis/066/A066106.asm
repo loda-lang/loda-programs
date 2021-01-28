@@ -3,13 +3,12 @@
 
 mov $1,$0
 pow $1,2
-mov $4,$0
+mov $3,$0
 mod $0,2
 lpb $0,1
   trn $0,9
   mov $1,2
 lpe
-mov $3,$4
 mov $2,$3
 mul $2,2
 add $1,$2

@@ -25,8 +25,7 @@ lpb $2,1
 lpe
 sub $3,3
 add $1,$3
-mov $6,$1
-add $1,$6
+mul $1,2
 trn $1,2
 div $1,2
 add $1,1

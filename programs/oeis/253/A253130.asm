@@ -13,10 +13,10 @@ pow $4,2
 div $4,3
 mov $1,$4
 add $1,4
-mov $6,$2
-mov $5,$6
+mov $5,$2
 mul $5,2
 add $1,$5
+mov $6,$2
 mul $6,$2
 mov $5,$6
 mul $5,6

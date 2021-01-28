@@ -20,8 +20,7 @@ lpb $16,1
     gcd $5,$10
     mov $7,6
     gcd $7,$5
-    mov $3,$7
-    mov $5,$3
+    mov $5,$7
     pow $5,$7
     mov $9,$0
     add $9,9
@@ -32,7 +31,6 @@ lpb $16,1
     add $10,1
     add $12,$1
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

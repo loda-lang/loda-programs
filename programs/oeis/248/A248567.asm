@@ -35,6 +35,5 @@ lpe
 mov $1,$5
 add $1,2
 mov $8,$7
-mov $9,$8
-mul $9,2
-add $1,$9
+mul $8,2
+add $1,$8

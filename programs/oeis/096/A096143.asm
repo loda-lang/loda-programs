@@ -9,7 +9,6 @@ lpb $0,1
   div $0,2
   trn $0,1
 lpe
-mov $3,$2
-mov $1,$3
+mov $1,$2
 div $1,3
 add $1,1

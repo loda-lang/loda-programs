@@ -6,9 +6,8 @@ mov $0,1
 mov $7,1
 add $7,$6
 mul $0,$7
-mov $3,$0
 mov $4,$0
-add $0,$3
+mul $0,2
 mul $4,2
 trn $2,$4
 add $2,4

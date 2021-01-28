@@ -11,10 +11,9 @@ lpb $20,1
   mov $0,1
   lpb $0,1
     mov $0,$11
-    add $2,$0
     gcd $0,81
-    mov $1,$2
-    add $2,$1
+    add $2,$11
+    mul $2,2
     mov $3,$0
     mov $0,$11
     mul $3,4

@@ -7,9 +7,9 @@ mov $3,2
 mov $4,2
 lpb $0,1
   mov $2,$4
-  add $3,$2
   gcd $2,$0
   div $0,$2
+  add $3,$4
   trn $4,4
   add $3,$4
   add $3,10

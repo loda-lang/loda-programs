@@ -4,6 +4,4 @@
 mul $0,2
 sub $0,1
 cal $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
-mov $2,$0
-mov $3,$2
-mov $1,$3
+mov $1,$0

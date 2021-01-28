@@ -18,8 +18,6 @@ lpb $4,1
   lpe
   add $0,$6
   pow $0,2
-  mov $3,$0
-  mov $1,$3
-  add $8,$1
+  add $3,$0
 lpe
-mov $1,$8
+mov $1,$3

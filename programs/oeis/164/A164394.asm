@@ -9,7 +9,6 @@ lpb $0,1
   add $1,$4
   mov $4,$2
   add $2,$3
-  mov $5,$1
-  mov $3,$5
+  mov $3,$1
 lpe
 add $1,$3

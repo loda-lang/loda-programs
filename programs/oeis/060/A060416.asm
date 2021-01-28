@@ -6,8 +6,7 @@ lpb $0,1
   pow $2,$0
   pow $2,2
   mul $2,$0
-  mov $1,$2
-  trn $0,$1
+  trn $0,$2
 lpe
 add $2,1
 mov $1,$2

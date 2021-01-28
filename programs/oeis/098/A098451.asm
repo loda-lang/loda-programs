@@ -36,9 +36,9 @@ lpb $17,1
         pow $6,2
         sub $6,7
         mov $0,$6
-        add $5,$0
         div $0,2
         add $0,1
+        add $5,$6
         add $0,$5
         mov $3,2
         bin $5,2

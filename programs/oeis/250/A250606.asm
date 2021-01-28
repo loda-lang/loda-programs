@@ -44,8 +44,7 @@ lpb $24,1
         sub $8,8
         sub $8,$3
         sub $8,5
-        mov $6,$8
-        mov $1,$6
+        mov $1,$8
         mov $14,$13
         lpb $14,1
           mov $12,$1
@@ -71,7 +70,6 @@ lpb $24,1
     add $1,10
     add $20,$1
   lpe
-  mov $1,$20
-  add $23,$1
+  add $23,$20
 lpe
 mov $1,$23

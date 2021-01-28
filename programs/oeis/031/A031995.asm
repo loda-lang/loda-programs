@@ -6,7 +6,4 @@ sub $1,1
 div $1,10
 mul $1,7
 div $1,4
-mov $4,$0
-mov $3,$4
-mov $2,$3
-add $1,$2
+add $1,$0

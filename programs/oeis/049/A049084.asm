@@ -5,7 +5,6 @@ mov $1,$0
 cal $1,230980 ; Number of primes <= n, starting at n=0.
 add $1,1
 cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mov $2,$0
-add $0,$2
+mul $0,2
 mul $1,$0
 div $1,2

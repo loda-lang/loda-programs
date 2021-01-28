@@ -5,7 +5,7 @@ div $0,2
 mov $2,2
 cal $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
 mov $1,$0
-add $2,$1
+add $2,$0
 sub $2,$0
 add $1,$2
 sub $1,2

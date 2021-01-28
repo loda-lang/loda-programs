@@ -3,16 +3,14 @@
 
 mov $1,2
 mov $3,$0
-mov $5,$0
-mul $5,6
-sub $5,4
-add $1,$5
+mul $3,6
+sub $3,4
+add $1,$3
 sub $1,6
 pow $1,2
 sub $1,5
 mul $1,2
 div $1,216
-mov $4,$3
-mov $2,$4
+mov $2,$0
 mul $2,2
 add $1,$2

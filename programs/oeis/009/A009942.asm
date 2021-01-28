@@ -3,13 +3,11 @@
 
 mov $2,7
 mov $5,$0
-mov $6,$0
-mul $0,$6
-mov $7,7
-mov $8,$0
-add $7,$8
-mod $2,$7
-add $2,$7
+pow $0,2
+mov $6,7
+add $6,$0
+mod $2,$6
+add $2,$6
 mod $2,6
 add $2,5
 mov $1,$2

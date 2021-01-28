@@ -16,16 +16,13 @@ lpb $12,1
     mov $0,$7
     trn $9,1
     sub $0,$9
-    mov $1,$0
     add $1,1
     mov $5,$0
     add $5,$0
     bin $5,$0
     div $5,$1
-    mov $1,$5
-    add $8,$1
+    add $8,$5
   lpe
-  mov $1,$8
-  add $11,$1
+  add $11,$8
 lpe
 mov $1,$11

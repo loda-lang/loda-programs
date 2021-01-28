@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $4,$0
-mul $0,$2
+pow $0,2
 add $2,$4
 mov $4,$2
 lpb $0,1
@@ -17,10 +17,9 @@ div $3,2
 mov $0,$3
 add $0,1
 trn $0,1
-mov $2,$3
 sub $4,1
 gcd $4,2
-sub $4,$2
+sub $4,$3
 add $4,1
 trn $4,2
 sub $0,$4

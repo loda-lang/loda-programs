@@ -7,7 +7,4 @@ add $1,5
 div $1,5
 mul $1,6
 div $1,4
-mov $2,$0
-mov $4,$2
-mov $3,$4
-add $1,$3
+add $1,$0

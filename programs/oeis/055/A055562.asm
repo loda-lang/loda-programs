@@ -9,15 +9,14 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   mov $2,$0
-  mov $8,0
+  mov $4,0
   lpb $0,1
     div $2,2
-    cmp $8,$2
+    cmp $4,$2
     clr $5,1
     sub $0,1
   lpe
-  cmp $8,$5
-  mov $4,$8
+  cmp $4,$5
   add $5,3
   add $5,$4
   add $0,$5

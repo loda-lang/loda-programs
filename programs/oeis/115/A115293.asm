@@ -32,15 +32,12 @@ lpb $28,1
       add $2,$0
       mov $5,7
       add $5,$2
-      mov $2,$5
-      mov $1,$2
+      mov $1,$5
       sub $1,2411
       add $21,$1
     lpe
-    mov $1,$21
-    add $24,$1
+    add $24,$21
   lpe
-  mov $1,$24
-  add $27,$1
+  add $27,$24
 lpe
 mov $1,$27

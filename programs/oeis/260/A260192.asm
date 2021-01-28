@@ -5,8 +5,7 @@ mov $1,$0
 add $0,318
 add $1,1
 cal $1,117441 ; Periodic with repeating part {1,1,0,1,-1,0,-1,-1,0,-1,1,0}.
-mov $2,$0
-add $0,$2
+mul $0,2
 div $0,200
 mul $1,$0
 div $1,3

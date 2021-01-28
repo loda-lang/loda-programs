@@ -4,7 +4,6 @@
 mov $2,5
 add $2,$0
 bin $2,$0
-mov $1,$2
-mul $0,$1
+mul $0,$2
 add $2,$0
 mov $1,$2

@@ -21,7 +21,7 @@ lpb $14,1
     bin $0,2
     mov $1,$0
     mov $7,$6
-    mov $8,$7
+    mov $8,$6
     mul $8,5
     add $1,$8
     mul $7,$6
@@ -30,7 +30,6 @@ lpb $14,1
     add $1,$8
     add $10,$1
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

@@ -18,10 +18,10 @@ lpb $6,1
     mov $1,$5
     mov $3,$0
     mov $0,1
-    mov $8,$5
-    add $3,$8
+    add $3,$5
     mul $3,$5
     add $3,$4
+    mov $8,$5
     pow $8,$4
     mul $1,$8
     mod $1,$3

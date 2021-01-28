@@ -6,13 +6,12 @@ mov $5,$0
 mod $0,2
 mov $2,$4
 mov $3,$0
-add $0,$3
+mul $0,2
 mul $2,2
 add $5,$4
 add $5,$3
 mul $5,$2
 mul $5,$4
-mov $2,$5
-add $0,$2
+add $0,$5
 mov $1,$0
 div $1,8

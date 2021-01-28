@@ -3,8 +3,7 @@
 
 mov $5,$0
 trn $5,1
-mov $4,$5
-mov $1,$4
+mov $1,$5
 bin $1,9
 add $1,3
 mov $9,$0
@@ -12,6 +11,4 @@ lpb $0,5
   mod $1,11
 lpe
 sub $1,2
-mov $10,$9
-mov $11,$10
-add $1,$11
+add $1,$9

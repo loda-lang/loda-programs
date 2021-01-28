@@ -15,7 +15,6 @@ lpb $29,1
     mov $2,$1
   lpe
   add $0,$2
-  mov $1,$0
-  add $28,$1
+  add $28,$0
 lpe
 mov $1,$28

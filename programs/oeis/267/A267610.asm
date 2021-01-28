@@ -12,8 +12,8 @@ lpb $3,1
   lpb $2,1
     lpb $4,1
       trn $4,$1
+      mov $1,$2
       mov $5,$2
-      mov $1,$5
     lpe
     add $4,2
     add $5,1
@@ -24,7 +24,6 @@ lpb $3,1
       trn $5,$1
     lpe
   lpe
-  mov $1,$2
-  add $6,$1
+  add $6,$2
 lpe
 mov $1,$6

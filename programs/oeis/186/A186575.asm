@@ -14,9 +14,9 @@ lpb $0,1
   mov $0,2
   mul $2,$3
   mul $4,2
-  mov $6,$4
-  add $3,$6
+  add $3,$4
   add $3,10
+  mov $6,$4
   add $6,6
   gcd $6,$2
   add $6,105

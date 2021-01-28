@@ -19,14 +19,13 @@ lpb $7,1
   lpe
   div $1,6
   add $1,1
-  mov $2,$1
-  mul $1,$2
+  pow $1,2
   add $3,$1
   mov $1,$3
-  mov $8,$7
-  lpb $8,1
+  mov $2,$7
+  lpb $2,1
+    sub $2,1
     mov $6,$1
-    sub $8,1
   lpe
 lpe
 lpb $5,1

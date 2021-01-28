@@ -5,9 +5,8 @@ mov $3,$0
 add $0,1
 sub $3,25
 bin $3,$0
-mov $4,$3
-sub $4,2
-mov $2,$4
+mov $2,$3
+sub $2,2
 mov $1,$2
 sub $1,298
 div $1,5

@@ -16,16 +16,13 @@ lpb $10,1
     mov $0,$5
     sub $7,1
     sub $0,$7
-    mov $4,$0
-    mov $2,$4
-    mov $3,$2
+    mov $3,$0
     clr $0,2
     cal $3,282153 ; Expansion of x*(1 - 2*x + 3*x^2)/((1 - x)*(1 - 2*x)*(1 - x + x^2)).
     add $1,$3
     add $1,2
     add $6,$1
   lpe
-  mov $1,$6
-  add $9,$1
+  add $9,$6
 lpe
 mov $1,$9

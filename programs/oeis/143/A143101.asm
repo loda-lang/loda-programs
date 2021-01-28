@@ -3,13 +3,12 @@
 
 mov $2,$0
 add $2,1
+add $2,$0
 mov $3,$0
-add $2,$3
-mov $4,$0
 mov $0,4
-add $4,$2
-add $4,6
-add $0,$4
+add $3,$2
+add $3,6
+add $0,$3
 sub $0,7
 lpb $0,1
   trn $0,5

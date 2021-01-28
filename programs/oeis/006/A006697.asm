@@ -8,5 +8,5 @@ lpb $0,1
   add $2,1
   sub $2,$1
   mov $1,$2
-  add $2,$1
+  mul $2,2
 lpe

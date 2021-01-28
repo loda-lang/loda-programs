@@ -6,12 +6,11 @@ add $0,1
 gcd $2,6
 lpb $0,1
   mov $0,$2
-  add $2,$0
   sub $0,1
+  mul $2,2
   trn $2,6
   add $2,2
 lpe
-mov $1,$2
-add $0,$1
+add $0,$2
 mov $1,$0
 sub $1,1

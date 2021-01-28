@@ -12,10 +12,9 @@ lpb $40,1
   mov $18,$0
   mov $37,$0
   lpb $37,1
-    mov $0,$18
     mov $1,1
     add $3,5
-    mov $7,$0
+    mov $7,$18
     sub $18,1
     sub $37,1
     lpb $7,1

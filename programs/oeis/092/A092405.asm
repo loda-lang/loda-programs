@@ -11,14 +11,12 @@ lpb $19,1
   mov $13,$0
   mov $15,2
   lpb $15,1
-    mov $0,$13
-    mov $10,$0
+    mov $10,$13
     add $12,1
     sub $15,1
     lpb $12,1
       clr $0,10
-      mov $0,$10
-      mov $6,$0
+      mov $6,$10
       mov $8,2
       sub $12,1
       lpb $8,1

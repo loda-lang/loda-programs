@@ -56,7 +56,6 @@ lpb $73,1
     sub $1,2
     add $69,$1
   lpe
-  mov $1,$69
-  add $72,$1
+  add $72,$69
 lpe
 mov $1,$72

@@ -7,11 +7,9 @@ mov $4,-3
 bin $4,$1
 sub $4,$1
 mov $1,$4
-mov $5,$0
-mov $2,$5
-mov $3,$2
+mov $2,$0
+mov $3,$0
 mul $3,3
 add $1,$3
-mul $2,$5
-mov $3,$2
-add $1,$3
+mul $2,$0
+add $1,$2

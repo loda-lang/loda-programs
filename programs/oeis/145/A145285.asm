@@ -12,6 +12,5 @@ pow $1,$5
 mod $1,$0
 add $1,4
 mov $3,$4
-mov $6,$3
-mul $6,4
-add $1,$6
+mul $3,4
+add $1,$3

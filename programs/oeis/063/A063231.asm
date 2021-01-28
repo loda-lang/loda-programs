@@ -3,11 +3,10 @@
 
 mov $1,$0
 div $1,3
-mov $4,$0
+mov $3,$0
 mod $0,2
 add $1,$0
 add $1,3
-mov $3,$4
 mov $2,$3
 mul $2,6
 add $1,$2

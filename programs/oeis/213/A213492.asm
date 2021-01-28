@@ -19,10 +19,8 @@ lpe
 mul $2,2
 add $0,$2
 mov $1,$0
-mov $6,$5
-mul $6,$5
-mov $4,$6
+mov $4,$5
+mul $4,$5
 add $1,$4
-mul $6,$5
-mov $4,$6
+mul $4,$5
 add $1,$4

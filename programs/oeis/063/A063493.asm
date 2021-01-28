@@ -14,8 +14,8 @@ add $0,1
 add $3,$0
 add $0,$3
 mov $1,$0
-add $3,$1
 sub $1,3
+add $3,$0
 add $1,$3
 lpb $4,1
   add $1,2

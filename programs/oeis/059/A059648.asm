@@ -3,13 +3,12 @@
 
 mul $0,2
 mov $2,$0
-mov $4,$0
-cmp $4,0
-add $0,$4
+mov $3,$0
+cmp $3,0
+add $0,$3
 div $2,$0
 add $0,1
-mov $3,$2
 cal $0,289035 ; Fixed point of the mapping 00->0010, 01->010, 10->010, starting with 00.
-add $0,$3
+add $0,$2
 mov $1,$0
 sub $1,1

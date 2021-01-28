@@ -4,6 +4,5 @@
 mov $2,$0
 cal $0,61705 ; Number of matchings in the wheel graph with n spokes.
 sub $0,$2
-mov $3,$0
-mov $1,$3
+mov $1,$0
 sub $1,1

@@ -6,6 +6,4 @@ gcd $0,6
 mod $0,5
 mov $1,$0
 mod $1,3
-mov $3,$2
-mov $4,$3
-add $1,$4
+add $1,$2

@@ -7,8 +7,7 @@ add $2,$0
 bin $2,$0
 bin $0,2
 mul $0,4
-mov $3,$2
-mul $0,$3
+mul $0,$2
 mov $1,$0
 sub $1,24
 div $1,24

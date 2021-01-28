@@ -19,8 +19,7 @@ lpb $2,1
     mul $3,$0
     cal $0,192754 ; Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
     sub $0,$3
-    mov $1,$0
-    add $0,$1
+    mul $0,2
     mov $1,$0
     mov $8,$7
     lpb $8,1

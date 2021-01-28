@@ -6,10 +6,10 @@ mul $0,2
 mov $1,$0
 pow $1,3
 add $1,17
-mov $3,$4
-mov $2,$3
+mov $2,$4
 mul $2,41
 add $1,$2
+mov $3,$4
 mul $3,$4
 mov $2,$3
 mul $2,32

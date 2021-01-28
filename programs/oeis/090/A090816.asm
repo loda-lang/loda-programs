@@ -7,6 +7,5 @@ mul $0,2
 mov $3,$0
 add $3,$2
 bin $3,$2
-mov $4,$2
-mul $3,$4
+mul $3,$2
 mov $1,$3

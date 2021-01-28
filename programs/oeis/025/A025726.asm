@@ -22,13 +22,12 @@ lpb $19,1
       sub $12,1
       add $0,$12
       sub $0,1
-      mov $1,$0
       mov $4,23
-      mov $6,$1
-      mul $4,$6
+      mul $4,$0
       div $4,26
       mov $5,$4
       add $5,2
+      mov $6,$0
       lpb $5,1
         sub $5,1
         add $6,1
@@ -48,7 +47,6 @@ lpb $19,1
     sub $1,1
     add $15,$1
   lpe
-  mov $1,$15
-  add $18,$1
+  add $18,$15
 lpe
 mov $1,$18

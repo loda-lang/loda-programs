@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $5,$0
-mov $8,$5
+mov $8,$0
 mov $9,$0
 bin $0,4
 add $0,$8
@@ -17,19 +17,18 @@ mov $6,$8
 lpb $0,1
   mov $0,0
   add $2,7
-  mov $3,$2
   pow $6,2
-  sub $7,$3
+  sub $7,$2
   mov $3,$7
 lpe
 add $3,$6
 add $3,1
 mov $1,$3
 trn $1,4
-mov $10,$9
-mov $4,$10
+mov $4,$9
 mul $4,85
 add $1,$4
+mov $10,$9
 mul $10,$9
 mov $4,$10
 mul $4,13

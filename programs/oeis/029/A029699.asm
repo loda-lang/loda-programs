@@ -19,11 +19,8 @@ lpb $14,1
     add $2,$0
     pow $0,2
     sub $0,$2
-    mov $2,$0
-    mov $1,$2
-    add $10,$1
+    add $10,$0
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

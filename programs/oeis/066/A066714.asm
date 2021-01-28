@@ -7,16 +7,16 @@ trn $6,1
 add $2,$6
 mov $7,$0
 mod $0,2
+mov $3,$2
 mov $4,$2
-mov $8,2
-mov $9,$4
 mul $4,2
+mul $3,$4
 add $6,3
+mov $8,2
 gcd $8,$6
-mul $9,$4
 lpb $0,1
   trn $0,6
-  add $8,$9
+  add $8,$3
   add $8,2
 lpe
 mov $6,$8
@@ -25,5 +25,4 @@ mov $1,$6
 sub $1,1
 mov $5,$7
 mul $5,$7
-mov $3,$5
-add $1,$3
+add $1,$5

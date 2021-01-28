@@ -24,9 +24,9 @@ lpb $5,1
     mov $7,1
   lpe
   mov $0,$6
-  trn $7,$0
   add $0,1
   pow $4,$3
+  trn $7,$6
   add $4,$7
   add $4,$0
   mov $1,$4

@@ -7,14 +7,12 @@ mov $5,$0
 cal $0,331739 ; a(n) is n minus its largest odd divisor.
 mov $2,5
 mul $4,$0
-mov $3,$4
-add $2,$3
+add $2,$4
 mov $1,$2
 sub $1,4
+mov $3,$5
+mul $3,2
+add $1,$3
 mov $6,$5
-mov $7,$6
-mul $7,2
-add $1,$7
 mul $6,$5
-mov $7,$6
-add $1,$7
+add $1,$6

@@ -20,22 +20,21 @@ lpb $3,1
     pow $5,5
     mov $6,$5
     add $6,6
-    mov $7,$6
-    add $2,$7
+    add $2,$6
     mov $5,$2
     add $5,9
     mov $1,$5
     mov $9,$10
     lpb $9,1
+      mov $7,$1
       sub $9,1
-      mov $12,$1
     lpe
   lpe
   lpb $11,1
+    sub $7,$1
     mov $11,0
-    sub $12,$1
   lpe
-  mov $1,$12
+  mov $1,$7
   sub $1,31
   add $4,$1
 lpe

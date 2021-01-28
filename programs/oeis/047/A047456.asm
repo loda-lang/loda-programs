@@ -6,5 +6,4 @@ mul $0,2
 mov $1,$0
 mod $2,4
 trn $2,1
-mov $3,$2
-sub $1,$3
+sub $1,$2

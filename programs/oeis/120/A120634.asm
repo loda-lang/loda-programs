@@ -5,10 +5,9 @@ add $0,46079
 mov $4,-9
 add $4,$0
 mod $0,4
-mov $1,$4
 mov $2,$0
 mul $2,2
-mov $3,$1
+mov $3,$4
 sub $3,$2
 mov $1,$3
 sub $1,46064

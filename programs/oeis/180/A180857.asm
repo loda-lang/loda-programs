@@ -8,12 +8,11 @@ pow $3,2
 add $3,2
 div $3,2
 mul $1,$3
-mov $5,$0
-mov $4,$5
-mov $2,$4
+mov $2,$0
 mul $2,2
 add $1,$2
-mul $4,$5
+mov $4,$0
+mul $4,$0
 mov $2,$4
 mul $2,2
 add $1,$2

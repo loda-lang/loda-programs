@@ -9,6 +9,5 @@ cal $0,248233 ; Numbers k such that A248231(k+1) = A248231(k) + 1.
 mov $1,$0
 sub $1,1
 mov $3,$4
-mov $5,$3
-mul $5,2
-add $1,$5
+mul $3,2
+add $1,$3

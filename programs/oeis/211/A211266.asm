@@ -8,8 +8,7 @@ lpb $8,1
   mov $0,$6
   sub $8,1
   sub $0,$8
-  mov $5,$0
-  add $3,$5
+  add $3,$0
   mul $3,2
   cal $3,92405 ; a(n) = tau(n) + tau(n+1), where tau(n) = A000005(n), the number of divisors of n.
   div $3,2

@@ -16,6 +16,4 @@ lpe
 add $4,40
 div $4,210
 mov $1,$4
-mov $6,$3
-mov $5,$6
-add $1,$5
+add $1,$3

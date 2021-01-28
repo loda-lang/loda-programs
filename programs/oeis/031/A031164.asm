@@ -52,13 +52,10 @@ lpb $18,1
         div $1,4
         add $8,$1
       lpe
-      mov $1,$8
-      add $11,$1
+      add $11,$8
     lpe
-    mov $1,$11
-    add $14,$1
+    add $14,$11
   lpe
-  mov $1,$14
-  add $17,$1
+  add $17,$14
 lpe
 mov $1,$17

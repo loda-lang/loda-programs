@@ -17,8 +17,8 @@ lpb $0,1
   sub $5,$5
 lpe
 mov $0,$5
-trn $2,$0
 add $0,1
+trn $2,$5
 pow $4,$3
 add $4,$2
 add $4,$0

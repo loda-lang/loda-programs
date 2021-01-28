@@ -6,6 +6,5 @@ cal $0,171588 ; The Pell word: Fixed point of the morphism 0->001, 1->0.
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$0
 mov $3,$2
-mov $4,$3
-mul $4,2
-add $1,$4
+mul $3,2
+add $1,$3

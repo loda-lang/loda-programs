@@ -17,12 +17,11 @@ lpb $29,1
   mul $1,$0
   mov $0,$1
   mov $3,2
-  mov $26,$0
+  mov $26,$1
   cmp $26,0
   add $0,$26
   div $3,$0
-  mov $0,$3
-  add $1,$0
+  add $1,$3
   sub $1,2
   add $28,$1
 lpe

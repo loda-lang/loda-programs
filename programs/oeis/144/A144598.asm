@@ -12,15 +12,13 @@ lpb $13,1
   mov $1,$0
   sub $0,1
   mul $1,4
-  mov $5,$0
-  mov $2,$5
+  mov $2,$0
   add $2,6
   add $2,$1
   add $10,3
   mov $7,$10
   mul $7,4
-  mov $10,$7
-  div $2,$10
+  div $2,$7
   mov $1,$2
   mov $14,$13
   lpb $14,1

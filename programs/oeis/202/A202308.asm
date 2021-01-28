@@ -3,15 +3,13 @@
 
 mul $0,13
 mov $2,1
-mov $5,1
+mov $3,1
 lpb $0,1
   sub $0,$2
   trn $0,2
-  add $5,2
-  mov $3,$5
+  add $3,2
   trn $2,$3
-  mov $4,$5
-  add $2,$4
+  add $2,$3
 lpe
 mov $1,$2
 div $1,2

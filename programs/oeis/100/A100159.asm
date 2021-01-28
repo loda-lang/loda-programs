@@ -6,12 +6,11 @@ add $1,6
 pow $1,2
 sub $1,35
 mov $3,$0
-mov $4,$3
-mul $4,$3
-mov $2,$4
+mul $3,$0
+mov $2,$3
 mul $2,29
 add $1,$2
-mul $4,$3
-mov $2,$4
+mul $3,$0
+mov $2,$3
 mul $2,19
 add $1,$2

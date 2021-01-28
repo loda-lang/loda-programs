@@ -4,24 +4,22 @@
 mov $5,$0
 mov $8,$0
 add $0,3
+mov $1,$0
+mov $2,$0
 pow $5,2
-mov $7,$0
-mov $1,$7
-mov $2,$1
-mov $9,2
+mov $6,2
 lpb $2,1
   mov $7,2
   lpb $5,1
     trn $5,$1
     add $1,$7
-    add $9,1
+    add $6,1
   lpe
   mov $2,$5
-  mov $3,$9
+  mov $3,$6
 lpe
 mov $1,$3
 sub $1,1
-mov $6,$8
-mov $4,$6
+mov $4,$8
 mul $4,2
 add $1,$4

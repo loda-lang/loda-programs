@@ -73,7 +73,6 @@ lpb $22,1
     div $1,25
     add $18,$1
   lpe
-  mov $1,$18
-  add $21,$1
+  add $21,$18
 lpe
 mov $1,$21

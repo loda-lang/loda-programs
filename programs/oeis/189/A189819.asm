@@ -12,8 +12,7 @@ lpb $29,1
   mov $1,$0
   pow $1,2
   add $3,1
-  mov $4,$3
-  add $3,$4
+  mul $3,2
   pow $3,3
   mod $1,$3
   mul $1,2

@@ -5,11 +5,9 @@ mul $0,900
 add $0,1
 mov $2,900
 add $2,$0
-mov $1,$2
-mov $3,$1
-mov $4,$3
-mul $4,$3
-mov $1,$4
+mov $3,$2
+mul $3,$2
+mov $1,$3
 sub $1,811801
 div $1,1800
 mul $1,2

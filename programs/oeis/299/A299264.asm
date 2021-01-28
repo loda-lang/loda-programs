@@ -10,8 +10,7 @@ lpb $11,1
   pow $0,2
   lpb $0,1
     sub $3,4
-    mov $8,$3
-    mul $0,$8
+    mul $0,$3
     mov $2,$0
     mul $0,2
     mod $2,10

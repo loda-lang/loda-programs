@@ -23,10 +23,8 @@ lpb $12,1
     trn $3,5
     mul $2,$3
     mul $2,2
-    mov $1,$2
-    add $8,$1
+    add $8,$2
   lpe
-  mov $1,$8
-  add $11,$1
+  add $11,$8
 lpe
 mov $1,$11

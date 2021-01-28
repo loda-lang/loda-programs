@@ -31,14 +31,12 @@ lpb $14,1
       mov $0,1
       add $6,2
     lpe
-    mov $0,$6
-    mov $1,$0
+    mov $1,$6
     sub $1,1
     div $1,2
     add $1,1
     add $10,$1
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

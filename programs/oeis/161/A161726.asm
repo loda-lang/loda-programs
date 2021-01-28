@@ -3,8 +3,7 @@
 
 mov $2,$0
 mul $2,2
-mov $4,$2
-mov $1,$4
+mov $1,$2
 sub $1,1
 mov $0,$1
 sub $0,16
@@ -12,8 +11,7 @@ mov $2,2
 add $2,$0
 sub $0,3
 sub $2,1799
-mov $3,$2
-mul $0,$3
+mul $0,$2
 mov $1,$0
 div $1,8
 mul $1,2

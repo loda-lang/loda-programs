@@ -14,13 +14,10 @@ lpb $12,1
   cal $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
   mov $1,$0
   sub $0,1
-  mov $2,$4
-  mul $1,$2
+  mul $1,$4
   add $1,$0
   add $1,2
-  mov $8,$7
-  mov $9,$8
-  add $1,$9
+  add $1,$7
   mov $13,$12
   lpb $13,1
     mov $11,$1

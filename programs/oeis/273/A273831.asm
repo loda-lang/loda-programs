@@ -4,24 +4,22 @@
 mov $1,$0
 add $1,1
 mov $7,2
-mov $11,$0
+mov $10,$0
 lpb $0,1
   mov $3,$0
   mul $3,$0
   mov $0,1
-  mov $4,$1
   mov $6,1
   sub $6,$3
   mov $9,$1
-  sub $1,$4
-  pow $9,$7
-  add $9,3
-  mov $5,$9
-  mov $10,$3
-  add $1,$10
+  sub $1,$1
+  add $1,$3
   mod $1,2
   mov $2,4
   mov $3,5
+  pow $9,$7
+  add $9,3
+  mov $5,$9
   sub $5,5
   add $6,$1
   div $3,$6
@@ -32,8 +30,8 @@ lpe
 div $2,2
 add $3,$2
 sub $1,$3
-mov $12,$11
-mul $12,$11
-mov $8,$12
+mov $4,$10
+mul $4,$10
+mov $8,$4
 mul $8,2
 add $1,$8

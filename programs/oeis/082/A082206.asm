@@ -10,13 +10,11 @@ lpb $0,1
   div $2,3
   add $3,1
   mov $1,$3
-  mov $4,$2
-  sub $1,$4
+  sub $1,$2
   mov $2,0
   add $2,$1
 lpe
 add $3,$2
-mov $0,$3
-add $2,$0
+add $2,$3
 mov $1,$2
 sub $1,2

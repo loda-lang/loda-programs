@@ -7,8 +7,6 @@ mov $3,$0
 mul $3,2
 trn $3,1
 add $1,$3
-mov $5,$0
-mov $4,$5
-mul $4,$5
-mov $2,$4
+mov $2,$0
+mul $2,$0
 add $1,$2

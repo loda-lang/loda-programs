@@ -8,15 +8,13 @@ lpb $2,1
   trn $3,$0
   add $3,1
   mul $3,$0
-  mov $4,$3
-  mov $1,$4
+  add $4,$3
   mov $5,$0
   add $5,1
-  add $6,$1
-  lpb $6,1
-    add $6,1
-    mul $0,$6
-    sub $6,$5
+  lpb $4,1
+    add $4,1
+    mul $0,$4
+    sub $4,$5
   lpe
   mul $0,2
   mov $2,0

@@ -14,14 +14,13 @@ lpb $2,1
   mul $2,$0
 lpe
 add $1,4
-mov $4,$5
-mov $3,$4
+mov $3,$5
 mul $3,6
 add $1,$3
+mov $4,$5
 mul $4,$5
 mov $3,$4
 mul $3,3
 add $1,$3
 mul $4,$5
-mov $3,$4
-add $1,$3
+add $1,$4

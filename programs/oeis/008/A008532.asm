@@ -3,12 +3,11 @@
 
 pow $1,$0
 mov $2,$0
-mov $3,$2
-mov $4,$3
-mul $4,6
-add $1,$4
-mul $3,$2
-mul $3,$2
-mov $4,$3
-mul $4,4
-add $1,$4
+mul $2,6
+add $1,$2
+mov $3,$0
+mul $3,$0
+mul $3,$0
+mov $2,$3
+mul $2,4
+add $1,$2

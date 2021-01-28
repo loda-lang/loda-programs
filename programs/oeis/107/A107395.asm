@@ -8,13 +8,11 @@ mov $3,$0
 add $3,6
 mov $4,$0
 mov $0,9
-mov $5,$4
-bin $3,$5
+bin $3,$4
 mov $4,$3
 mul $4,$2
 mul $4,2
-mov $6,$4
-mul $0,$6
+mul $0,$4
 mov $1,$0
 sub $1,99
 div $1,36

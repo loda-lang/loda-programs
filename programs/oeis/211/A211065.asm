@@ -9,7 +9,6 @@ mov $3,1
 add $3,$2
 pow $3,2
 sub $3,$0
-mov $2,$3
-mul $0,$2
+mul $0,$3
 mov $1,$0
 mul $1,2

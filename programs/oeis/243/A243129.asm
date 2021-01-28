@@ -3,11 +3,10 @@
 
 cal $0,36450 ; a(n) = d(d(d(n))), the 3rd iterate of the number-of-divisors function with an initial value of n.
 mov $3,4
-mov $4,$0
-mod $3,$4
+mod $3,$0
 mov $1,$3
-mov $2,$4
-sub $1,$2
-sub $4,1
-sub $4,$1
-mov $1,$4
+sub $1,$0
+mov $2,$0
+sub $2,1
+sub $2,$1
+mov $1,$2

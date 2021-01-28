@@ -8,6 +8,4 @@ mul $0,2
 cal $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
 mov $1,$0
 add $1,1
-mov $4,$2
-mov $3,$4
-add $1,$3
+add $1,$2

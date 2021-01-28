@@ -9,7 +9,6 @@ lpb $0,1
   pow $3,$2
 lpe
 add $3,10001
-mov $1,$3
-add $0,$1
+add $0,$3
 mov $1,$0
 sub $1,10000

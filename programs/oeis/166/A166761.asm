@@ -33,21 +33,16 @@ lpb $19,1
         add $8,1
         trn $8,$0
         sub $0,1
-        mov $2,$8
         mul $3,2
         add $3,2
-        pow $4,$2
+        pow $4,$8
       lpe
       add $4,1
       mul $4,$3
-      mov $2,$4
-      mov $1,$2
-      add $12,$1
+      add $12,$4
     lpe
-    mov $1,$12
-    add $15,$1
+    add $15,$12
   lpe
-  mov $1,$15
-  add $18,$1
+  add $18,$15
 lpe
 mov $1,$18

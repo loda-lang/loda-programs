@@ -79,13 +79,10 @@ lpb $29,1
   add $28,$1
 lpe
 mov $1,$28
-mov $31,$30
-mov $32,$31
+mov $32,$30
 mul $32,3
 add $1,$32
-mov $34,$33
-mov $35,$34
-add $1,$35
+add $1,$33
 sub $1,2
 div $1,2
 add $1,1

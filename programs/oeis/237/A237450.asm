@@ -26,7 +26,6 @@ lpb $3,1
     sub $2,1
   lpe
   fac $2
-  mov $1,$2
-  add $6,$1
+  add $6,$2
 lpe
 mov $1,$6

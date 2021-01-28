@@ -10,6 +10,5 @@ mov $1,1
 mul $1,$0
 add $1,7
 mov $3,$2
-mov $4,$3
-mul $4,4
-add $1,$4
+mul $3,4
+add $1,$3

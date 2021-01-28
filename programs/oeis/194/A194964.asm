@@ -3,13 +3,9 @@
 
 add $0,1
 pow $0,2
-mov $1,6
 lpb $0,1
-  sub $0,1
-  mov $2,$1
-  add $1,10
-  sub $2,2
-  trn $0,$2
+  add $2,10
+  sub $0,$2
 lpe
 mov $1,$2
 div $1,10

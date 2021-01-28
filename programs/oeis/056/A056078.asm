@@ -16,14 +16,11 @@ lpb $16,1
     sub $0,$13
     mov $1,$8
     pow $1,2
-    mov $5,$0
-    mov $3,$5
-    mov $4,$3
+    mov $3,$0
     add $3,2
-    mov $7,$3
-    trn $4,$7
-    mov $10,$7
-    add $4,$10
+    mov $4,$0
+    trn $4,$3
+    add $4,$3
     bin $4,3
     sub $4,1
     add $1,$4
@@ -31,7 +28,6 @@ lpb $16,1
     add $8,1
     add $12,$1
   lpe
-  mov $1,$12
-  add $15,$1
+  add $15,$12
 lpe
 mov $1,$15

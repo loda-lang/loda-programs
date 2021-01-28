@@ -18,17 +18,14 @@ lpb $14,1
     sub $0,$11
     mov $2,$0
     bin $2,2
-    mov $3,$0
     mov $5,$0
-    add $5,$3
+    add $5,$0
     trn $5,5
     add $5,$0
     add $5,$2
     add $5,1
-    mov $1,$5
-    add $10,$1
+    add $10,$5
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

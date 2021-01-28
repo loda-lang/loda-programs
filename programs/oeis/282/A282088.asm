@@ -10,10 +10,8 @@ lpb $0,1
   add $2,$4
 lpe
 add $3,$2
-mov $1,$3
 mov $4,10
-pow $4,$1
+pow $4,$3
 mul $4,2
-mov $3,$4
-mov $1,$3
+mov $1,$4
 div $1,198

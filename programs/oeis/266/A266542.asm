@@ -3,8 +3,7 @@
 
 add $0,3
 bin $0,2
-sub $0,1
+add $0,14
 div $0,3
-mov $2,$0
-mov $1,$2
-add $1,2
+mov $1,$0
+sub $1,3

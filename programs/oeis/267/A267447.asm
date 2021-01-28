@@ -23,15 +23,12 @@ lpb $15,1
     cal $0,71050 ; Number of 0's in n-th row of triangle in A071035.
     mov $3,$1
     sub $3,$0
-    mov $2,$3
-    mov $1,$2
+    mov $1,$3
     add $1,8
     add $8,$1
   lpe
   mov $1,$8
-  mov $11,$10
-  mov $12,$11
-  add $1,$12
+  add $1,$10
   mov $16,$15
   lpb $16,1
     mov $14,$1

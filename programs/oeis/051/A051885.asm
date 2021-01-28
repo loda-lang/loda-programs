@@ -13,15 +13,13 @@ lpb $7,1
     add $3,9
     fac $4
     mov $5,$0
-    mov $6,$4
-    mod $0,$6
+    mod $0,$4
     div $5,$3
     mov $9,$10
     pow $9,$5
     mov $2,$9
   lpe
-  mov $1,$2
   cmp $3,$8
-  add $12,$1
+  add $6,$2
 lpe
-mov $1,$12
+mov $1,$6

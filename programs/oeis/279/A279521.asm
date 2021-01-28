@@ -8,5 +8,5 @@ lpb $0,1
   sub $2,$1
   trn $0,$2
   mov $1,$2
-  add $2,$1
+  mul $2,2
 lpe

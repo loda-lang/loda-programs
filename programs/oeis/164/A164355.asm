@@ -4,10 +4,9 @@
 mov $2,$0
 cal $0,186813 ; a(n) = n if n odd, a(2n) = 3n if n odd, a(4n) = 2n.
 mov $1,$0
-mov $4,$1
+mov $4,$0
 cmp $4,0
 add $1,$4
-mov $5,$2
-mov $3,$5
+mov $3,$2
 mul $3,4
 add $1,$3

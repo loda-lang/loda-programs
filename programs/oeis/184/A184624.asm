@@ -4,9 +4,7 @@
 mov $2,$0
 add $2,2
 add $0,$2
-mov $3,$0
-mov $2,$3
-mul $0,$2
+pow $0,2
 mov $1,2
 lpb $0,1
   sub $0,$1

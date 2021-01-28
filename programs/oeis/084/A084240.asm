@@ -7,8 +7,7 @@ sub $2,$0
 mov $3,$2
 sub $3,$0
 mod $3,10
-mov $4,$3
-add $0,$4
+add $0,$3
 mul $0,10
 mov $1,$0
 div $1,10

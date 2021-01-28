@@ -3,8 +3,7 @@
 
 cal $0,328333 ; Expansion of (1 + 4*x - 6*x^2) / ((1 - x) * (1 - 10*x^2)).
 sub $0,2
-mov $1,$0
-mov $3,$1
+mov $3,$0
 add $3,1
 mov $2,$3
 cmp $2,0

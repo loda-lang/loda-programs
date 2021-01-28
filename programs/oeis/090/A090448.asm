@@ -3,17 +3,16 @@
 
 mov $2,1
 mov $4,$0
-mov $5,$4
 add $4,2
 gcd $3,$4
-mov $6,$5
-add $6,2
-add $2,$6
+mov $5,$0
+add $5,2
+add $2,$5
 pow $3,2
 sub $3,1
-mul $6,$2
-pow $6,2
-mul $3,$6
+mul $5,$2
+pow $5,2
+mul $3,$5
 mov $1,$3
 sub $1,108
 div $1,12

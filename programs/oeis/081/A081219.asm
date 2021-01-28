@@ -5,10 +5,8 @@ mul $0,2
 mov $2,$0
 add $2,2
 pow $2,5
-mov $4,$0
-sub $2,$4
-mov $3,$2
-mov $1,$3
+sub $2,$0
+mov $1,$2
 sub $1,27
 div $1,30
 add $1,1

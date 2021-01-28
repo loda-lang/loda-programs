@@ -7,8 +7,7 @@ bin $1,7
 mul $1,$0
 mov $2,13
 mul $2,$1
-mov $3,$2
-mov $1,$3
+mov $1,$2
 mul $1,24
 div $1,2496
 add $1,429

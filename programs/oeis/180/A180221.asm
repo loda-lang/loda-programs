@@ -12,11 +12,11 @@ lpb $2,1
   mul $0,2
   mov $5,32768
   lpb $0,1
-    mov $5,$1
-    mov $0,$5
+    mov $0,$1
     mod $0,4
     trn $0,1
     mul $0,8
+    mov $5,$1
   lpe
   mov $1,$5
   div $1,32741

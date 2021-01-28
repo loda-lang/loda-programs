@@ -4,10 +4,8 @@
 mov $1,$0
 add $1,1
 mov $0,$1
-mov $3,$0
 cal $0,55997 ; Numbers n such that n(n - 1)/2 is a square.
-mov $1,$0
-mov $2,$1
-sub $2,$3
+mov $2,$0
+sub $2,$1
 mov $1,$2
 div $1,2

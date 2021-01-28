@@ -26,7 +26,7 @@ lpb $18,1
       mov $5,$0
       sub $0,$0
       mov $1,$0
-      cmp $2,$1
+      cmp $2,$0
       lpb $2,1
         gcd $1,4
         lpb $5,1
@@ -49,7 +49,6 @@ lpb $18,1
     div $1,4
     add $14,$1
   lpe
-  mov $1,$14
-  add $17,$1
+  add $17,$14
 lpe
 mov $1,$17

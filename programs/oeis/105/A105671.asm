@@ -4,8 +4,7 @@
 add $0,1
 cal $0,87123 ; a(n) = Fibonacci(n+1) - (-1)^n*Fibonacci(n).
 mov $1,$0
-mov $2,$0
-mul $1,$2
+mul $1,$0
 div $1,3
 mul $1,15
 add $1,1

@@ -3,8 +3,7 @@
 
 cal $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 cal $0,170156 ; Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
-mov $2,$0
-mov $1,$2
+mov $1,$0
 sub $1,3
 div $1,3
 mul $1,2

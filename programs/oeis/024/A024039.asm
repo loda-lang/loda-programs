@@ -5,8 +5,7 @@ mov $2,2
 pow $2,$0
 pow $0,3
 sub $0,1
-mov $1,$2
-mul $2,$1
+pow $2,2
 sub $2,$0
 gcd $0,2
 sub $2,2

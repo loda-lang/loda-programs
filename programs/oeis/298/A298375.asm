@@ -9,7 +9,6 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   cal $0,230584 ; Either two less than a square or two more than a square.
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

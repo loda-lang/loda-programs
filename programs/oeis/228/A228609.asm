@@ -21,9 +21,8 @@ lpb $14,1
       sub $7,1
       add $0,$7
       cal $0,73 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.
-      mov $1,$0
       mov $4,$0
-      add $4,$1
+      add $4,$0
       pow $4,3
       mov $1,$4
       mov $8,$7
@@ -40,7 +39,6 @@ lpb $14,1
     div $1,8
     add $10,$1
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

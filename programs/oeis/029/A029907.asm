@@ -16,13 +16,12 @@ lpb $5,1
     add $0,$9
     sub $0,2
     cal $0,2940 ; Arrays of dumbbells.
-    mov $4,$0
-    mov $12,$4
-    cmp $12,0
-    add $4,$12
-    div $0,$4
     mov $3,$0
-    mul $4,$3
+    cmp $3,0
+    mov $4,$0
+    add $4,$3
+    div $0,$4
+    mul $4,$0
     mov $1,$4
     mov $8,$9
     lpb $8,1

@@ -3,12 +3,10 @@
 
 trn $2,$0
 add $2,$0
-mov $5,$0
 cal $2,85060 ; Integer reached in A085058.
 gcd $2,2
 mov $1,$2
 add $1,1
-mov $4,$5
-mov $3,$4
+mov $3,$0
 mul $3,3
 add $1,$3

@@ -8,9 +8,9 @@ mov $1,-1
 mov $4,3
 add $4,$2
 sub $4,1
-mov $3,$4
-pow $1,$3
+pow $1,$4
 add $1,2
+mov $3,$4
 div $3,2
 add $1,$3
 add $1,$3

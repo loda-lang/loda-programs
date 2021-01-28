@@ -7,7 +7,6 @@ mov $3,$2
 cmp $3,0
 add $2,$3
 log $2,7
-mov $4,$0
-add $2,$4
+add $2,$0
 mov $1,$2
 add $1,2

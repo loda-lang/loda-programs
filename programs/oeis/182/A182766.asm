@@ -6,8 +6,7 @@ cal $0,195179
 mov $1,$0
 add $1,1
 cal $1,195179 ; a(n) = 5*n - floor(2*n*sqrt(2)).
-mov $2,$1
-add $1,$2
+mul $1,2
 sub $1,6
 div $1,2
 add $1,2

@@ -39,7 +39,6 @@ lpb $9,1
     lpe
     trn $2,1
   lpe
-  mov $1,$4
-  add $8,$1
+  add $8,$4
 lpe
 mov $1,$8

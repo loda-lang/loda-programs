@@ -5,11 +5,9 @@ mov $3,$0
 mod $0,2
 mov $1,$0
 pow $1,$0
-mov $2,$3
-mov $5,1
-add $5,$2
-mov $3,$5
-mov $0,$3
+mov $2,1
+add $2,$3
+mov $0,$2
 mov $4,4
 lpb $0,1
   sub $0,1

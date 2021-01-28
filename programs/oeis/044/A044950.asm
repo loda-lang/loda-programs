@@ -15,13 +15,13 @@ lpb $8,1
   mov $9,$0
   add $9,$5
   mov $2,$9
-  mov $6,$5
-  mov $10,$2
   add $2,1
   div $4,11
+  mov $6,$5
   add $6,$4
   add $7,$6
   add $7,$4
+  mov $10,$9
   add $10,4
   trn $10,$7
   add $10,$2

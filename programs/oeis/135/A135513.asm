@@ -8,8 +8,7 @@ pow $2,2
 mov $4,9
 sub $4,$0
 sub $4,$3
-mov $5,$2
-add $4,$5
+add $4,$2
 mov $2,$4
 sub $2,1
 gcd $2,12

@@ -19,10 +19,8 @@ lpb $10,1
     add $0,2
     cal $0,27934 ; a(0)=0, a(1)=1, a(2)=2; for n > 2, a(n) = 3*a(n-1) - a(n-2) - 2*a(n-3).
     mul $0,2
-    mov $1,$0
-    add $6,$1
+    add $6,$0
   lpe
-  mov $1,$6
-  add $9,$1
+  add $9,$6
 lpe
 mov $1,$9

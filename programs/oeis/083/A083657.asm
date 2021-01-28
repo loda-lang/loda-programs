@@ -23,8 +23,7 @@ lpb $3,1
   lpe
   mov $1,$0
   add $1,1
-  mov $8,$7
-  mov $6,$8
+  mov $6,$7
   mul $6,3
   add $1,$6
   add $4,$1

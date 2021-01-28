@@ -8,12 +8,11 @@ lpb $0,1
   mul $3,2
 lpe
 add $4,2
-mov $2,$4
-add $3,$2
+add $3,$4
 add $3,15
-add $5,$3
-mul $5,$3
-mov $1,$5
+add $2,$3
+mul $2,$3
+mov $1,$2
 sub $1,2401
 div $1,64
 add $1,34

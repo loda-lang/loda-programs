@@ -24,14 +24,13 @@ sub $2,4
 mov $5,1
 add $6,$0
 lpb $0,1
-  mov $1,$6
-  sub $2,$1
+  sub $2,$6
   add $5,$2
   add $5,1
   mul $7,2
   mul $5,$7
   add $5,5
-  mov $9,$1
+  mov $9,$6
   sub $9,$3
   mov $0,$9
   sub $0,1

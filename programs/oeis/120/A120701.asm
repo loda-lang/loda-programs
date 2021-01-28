@@ -4,8 +4,7 @@
 mul $0,2
 mov $1,1
 mov $2,11
-mov $3,$0
-mul $2,$3
+mul $2,$0
 div $2,7
 trn $1,$2
 gcd $1,2

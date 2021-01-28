@@ -13,8 +13,8 @@ lpb $7,1
   add $3,$0
   cal $0,12245 ; Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.
   mov $2,$3
+  add $2,$0
   mov $4,$0
-  add $2,$4
   mul $4,$2
   add $4,3
   mov $1,$4
@@ -23,6 +23,4 @@ lpb $7,1
 lpe
 mov $1,$6
 add $1,2
-mov $9,$8
-mov $10,$9
-add $1,$10
+add $1,$8

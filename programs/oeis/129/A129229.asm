@@ -5,41 +5,21 @@ mov $30,$0
 mov $32,2
 lpb $32,1
   clr $0,30
-  sub $32,1
   mov $0,$30
+  sub $32,1
   add $0,$32
   sub $0,1
   mov $27,$0
   lpb $0,1
-    add $4,1
-    mov $26,$4
-    cmp $26,0
-    add $4,$26
-    div $4,$4
-    bin $0,$4
     sub $0,1
     mov $1,$0
-    cal $1,57843
+    cal $1,57843 ; a(n) = floor(n*tau^2) - 3, where tau = (1+sqrt(5))/2.
     add $2,$1
     sub $2,$0
     sub $0,1
-    add $4,$4
-    add $1,5
-    sub $1,1
-    sub $1,1
-    add $3,$0
-    mul $4,9
-    add $1,$2
   lpe
-  mul $0,$0
-  sub $1,$4
   mov $1,$2
-  mov $28,$27
-  mov $29,$28
-  mul $29,1
-  add $1,$29
-  mul $28,$27
-  mul $28,$27
+  add $1,$27
   mov $33,$32
   lpb $33,1
     mov $31,$1
@@ -47,7 +27,7 @@ lpb $32,1
   lpe
 lpe
 lpb $30,1
-  sub $31,$1
   mov $30,0
+  sub $31,$1
 lpe
 mov $1,$31

@@ -12,11 +12,10 @@ lpb $2,1
   mov $4,$0
   mov $0,631
   mul $4,631
-  mov $8,6
+  mov $7,6
   lpb $0,1
-    mov $7,$8
-    add $8,$7
-    mov $5,$8
+    mul $7,2
+    mov $5,$7
     pow $5,2
     mov $1,$5
     mul $1,2

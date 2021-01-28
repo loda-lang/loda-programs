@@ -24,10 +24,8 @@ lpb $12,1
       add $3,$2
       sub $4,1
     lpe
-    mov $1,$3
-    add $8,$1
+    add $8,$3
   lpe
-  mov $1,$8
-  add $11,$1
+  add $11,$8
 lpe
 mov $1,$11

@@ -4,12 +4,11 @@
 mov $1,8
 mov $2,$0
 mov $3,$0
-mov $4,$3
 lpb $2,1
-  mul $1,$4
+  mul $1,$3
   mov $0,$1
   sub $2,1
-  sub $4,2
+  sub $3,2
 lpe
 mov $1,$0
 div $1,8

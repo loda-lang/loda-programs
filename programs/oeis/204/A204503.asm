@@ -3,8 +3,8 @@
 
 mov $4,$0
 trn $0,5
+add $0,$4
 mov $5,$4
-add $0,$5
 trn $5,4
 add $0,$5
 add $0,1

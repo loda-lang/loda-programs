@@ -5,10 +5,10 @@ add $0,1
 mov $2,$0
 mov $8,$0
 add $0,2
+add $0,$8
 mov $4,$8
 gcd $4,3
 mov $7,$8
-add $0,$7
 lpb $2,1
   add $0,2
   bin $1,$9
@@ -17,8 +17,7 @@ lpb $2,1
   mov $6,$4
   add $8,1
   sub $2,$8
-  mov $8,$2
-  mov $9,$8
+  mov $9,$2
   lpb $4,1
     sub $9,$5
     mov $0,$9

@@ -9,10 +9,8 @@ lpb $29,1
   sub $29,1
   sub $0,$29
   add $4,1
-  mov $2,$4
-  add $0,$2
+  add $0,$4
   cal $0,244048 ; Antisigma(n) minus the sum of remainders of n mod k, for k = 1,2,3,...,n.
-  mov $1,$0
-  add $28,$1
+  add $28,$0
 lpe
 mov $1,$28

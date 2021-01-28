@@ -8,10 +8,10 @@ mul $1,$0
 gcd $0,2
 pow $1,$0
 add $1,45
-mov $3,$4
-mov $2,$3
+mov $2,$4
 mul $2,57
 add $1,$2
+mov $3,$4
 mul $3,$4
 mov $2,$3
 mul $2,23

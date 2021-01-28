@@ -22,9 +22,9 @@ lpb $11,1
       mul $1,2
     lpe
     mov $2,$1
-    mov $3,$2
-    div $3,$2
     div $2,6
+    mov $3,$1
+    div $3,$1
     add $3,$2
     add $2,$3
     mov $1,$2

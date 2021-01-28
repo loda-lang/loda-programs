@@ -19,10 +19,8 @@ lpb $32,1
     div $0,2
     mul $0,2
     cal $0,23855 ; a(n) = 1*(n) + 2*(n-1) + 3*(n-2) + ... + (n+1-k)*k, where k = floor((n+1)/2).
-    mov $1,$0
-    add $28,$1
+    add $28,$0
   lpe
-  mov $1,$28
-  add $31,$1
+  add $31,$28
 lpe
 mov $1,$31

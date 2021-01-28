@@ -6,10 +6,8 @@ div $0,3
 mov $1,$0
 sub $1,15
 div $1,4
-mov $5,$0
-sub $5,$1
-mov $1,$5
+mov $2,$0
+sub $2,$1
+mov $1,$2
 sub $1,2
-mov $4,$3
-mov $2,$4
-add $1,$2
+add $1,$3

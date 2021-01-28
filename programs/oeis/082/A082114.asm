@@ -46,7 +46,6 @@ lpb $21,1
     div $1,3
     add $17,$1
   lpe
-  mov $1,$17
-  add $20,$1
+  add $20,$17
 lpe
 mov $1,$20

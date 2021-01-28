@@ -4,12 +4,12 @@
 lpb $0,1
   add $3,4
   mov $2,$3
-  add $3,$2
   sub $2,1
   add $0,$2
   sub $0,1
   mov $1,$0
   add $1,5
+  mul $3,2
   sub $3,1
   add $4,$2
   trn $0,$4

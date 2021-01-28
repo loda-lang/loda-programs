@@ -5,7 +5,7 @@ mov $2,$0
 bin $2,2
 mov $3,$0
 mul $3,2
-mov $6,$0
+mov $5,$0
 lpb $2,1
   add $3,1
   sub $2,$3
@@ -13,7 +13,6 @@ lpb $2,1
 lpe
 mov $1,$3
 add $1,3
-mov $5,$6
 mov $4,$5
 mul $4,3
 add $1,$4

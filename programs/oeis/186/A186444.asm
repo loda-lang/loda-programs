@@ -9,8 +9,7 @@ lpb $16,1
   sub $16,1
   sub $0,$16
   add $0,1
-  mov $2,$0
-  add $3,$2
+  add $3,$0
   gcd $3,729
   mod $3,4
   mov $1,$3

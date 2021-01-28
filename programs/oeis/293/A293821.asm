@@ -3,8 +3,7 @@
 
 cal $0,159693 ; Partial sums of A000463.
 add $0,11
-mov $1,$0
-mov $2,$1
+mov $2,$0
 div $2,2
 mul $2,301657
 mov $1,$2

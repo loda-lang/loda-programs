@@ -27,15 +27,13 @@ lpb $14,1
       mov $8,1
       add $8,$0
       mov $0,0
-      mov $2,$8
-      mul $7,$2
+      mul $7,$8
       mov $1,$7
       mul $1,2
       add $1,4
     lpe
     add $10,$1
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

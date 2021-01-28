@@ -33,14 +33,10 @@ lpb $19,1
         trn $5,$4
         add $5,6
       lpe
-      mov $3,$5
-      mov $1,$3
-      add $12,$1
+      add $12,$5
     lpe
-    mov $1,$12
-    add $15,$1
+    add $15,$12
   lpe
-  mov $1,$15
-  add $18,$1
+  add $18,$15
 lpe
 mov $1,$18

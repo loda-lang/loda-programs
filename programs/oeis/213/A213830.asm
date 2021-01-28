@@ -19,13 +19,12 @@ lpb $14,1
     mul $0,3
     mov $1,$0
     mov $6,1
-    mul $6,$1
+    mul $6,$0
     pow $6,2
     add $6,2
     add $1,$6
     add $10,$1
   lpe
-  mov $1,$10
-  add $13,$1
+  add $13,$10
 lpe
 mov $1,$13

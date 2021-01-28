@@ -10,7 +10,7 @@ add $4,$0
 mov $1,$4
 sub $1,12
 mov $3,$2
-mov $5,$3
+mov $5,$2
 mul $5,8
 add $1,$5
 mul $3,$2

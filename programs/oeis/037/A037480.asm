@@ -4,7 +4,6 @@
 mov $1,3
 mov $2,$0
 add $2,1
-mov $3,$2
-pow $1,$3
+pow $1,$2
 mul $1,5
 div $1,8

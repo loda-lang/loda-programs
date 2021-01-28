@@ -17,10 +17,10 @@ add $5,2
 mul $4,$5
 mov $1,$4
 sub $1,2
-mov $6,$7
-mov $3,$6
+mov $3,$7
 mul $3,3
 add $1,$3
+mov $6,$7
 mul $6,$7
 mov $3,$6
 mul $3,2

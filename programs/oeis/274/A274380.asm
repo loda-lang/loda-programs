@@ -3,9 +3,9 @@
 
 mod $0,4
 mov $2,$0
-mov $3,$2
 add $2,$0
 add $2,$0
+mov $3,$0
 mul $3,2
 cmp $3,2
 mul $3,$2

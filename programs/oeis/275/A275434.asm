@@ -18,8 +18,7 @@ lpb $16,1
       add $3,$1
       mov $4,$0
       log $7,$7
-      mov $9,$7
-      sub $4,$9
+      sub $4,$7
       add $4,1
     lpe
     mov $0,1

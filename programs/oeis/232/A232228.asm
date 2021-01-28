@@ -15,12 +15,10 @@ lpb $6,1
   lpb $0,1
     div $0,$2
     sub $2,$0
-    mov $4,$2
     mov $5,2
-    pow $5,$4
+    pow $5,$2
     add $5,1
   lpe
-  mov $1,$5
-  add $8,$1
+  add $4,$5
 lpe
-mov $1,$8
+mov $1,$4

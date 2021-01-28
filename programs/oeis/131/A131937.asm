@@ -24,8 +24,7 @@ lpb $20,1
       add $0,$13
       mov $2,$0
       mul $2,4
-      mov $0,$2
-      mov $5,$0
+      mov $5,$2
       mov $6,0
       lpb $2,1
         lpb $5,1
@@ -52,7 +51,6 @@ lpb $20,1
     add $1,1
     add $16,$1
   lpe
-  mov $1,$16
-  add $19,$1
+  add $19,$16
 lpe
 mov $1,$19

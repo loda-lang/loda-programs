@@ -3,18 +3,15 @@
 
 mov $1,$0
 mov $2,2
-add $2,$1
+add $2,$0
 add $1,$2
 mov $3,$0
 pow $3,2
 add $2,$3
 add $2,$1
-mov $4,$0
-add $3,$4
-mov $4,$2
-add $1,$4
+add $1,$2
+add $3,$0
 pow $3,2
-mov $4,$1
-mul $3,$4
+mul $3,$1
 mov $1,$3
 div $1,48

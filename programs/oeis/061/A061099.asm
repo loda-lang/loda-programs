@@ -12,10 +12,10 @@ pow $4,2
 mul $4,5
 mov $1,$4
 add $1,1
-mov $3,$5
-mov $2,$3
+mov $2,$5
 mul $2,9
 add $1,$2
+mov $3,$5
 mul $3,$5
 mov $2,$3
 mul $2,9

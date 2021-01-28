@@ -3,20 +3,18 @@
 
 mov $4,$0
 add $4,10
-mov $6,$4
-mov $1,$6
-mov $3,$1
+mov $3,$4
 bin $3,8
 sub $3,$0
 mov $2,$3
 add $2,6
 mov $3,$0
-mov $7,6
-add $7,$2
-add $3,$7
+mov $6,6
+add $6,$2
+add $3,$6
 mov $5,2
-add $7,$3
-mul $5,$7
+add $6,$3
+mul $5,$6
 mov $1,$5
 sub $1,228
 div $1,2

@@ -5,10 +5,10 @@ mov $1,4
 mov $4,$0
 gcd $0,2
 div $1,$0
-mov $3,$4
-mov $2,$3
+mov $2,$4
 mul $2,10
 add $1,$2
+mov $3,$4
 mul $3,$4
 mov $2,$3
 mul $2,14

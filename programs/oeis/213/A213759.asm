@@ -9,8 +9,7 @@ mul $5,2
 mov $2,$5
 bin $2,3
 mul $3,2
-mov $5,$3
-mul $1,$5
+mul $1,$3
 mov $4,$2
 sub $4,$1
 mov $1,$4

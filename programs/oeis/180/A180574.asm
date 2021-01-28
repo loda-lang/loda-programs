@@ -11,10 +11,9 @@ div $1,2
 add $1,$0
 mul $1,$2
 add $1,3
-mov $5,$4
-mov $3,$5
+mov $3,$4
 mul $3,4
 add $1,$3
+mov $5,$4
 mul $5,$4
-mov $3,$5
-add $1,$3
+add $1,$5

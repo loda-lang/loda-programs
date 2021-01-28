@@ -5,21 +5,18 @@ mov $5,$0
 pow $0,2
 mov $7,1
 lpb $0,1
-  mov $2,$7
-  mov $6,$2
-  add $0,$6
+  add $0,$7
   div $0,8
   mul $0,4
-  add $9,1
-  mov $4,$9
+  add $4,1
   add $3,$4
   add $0,$3
   mul $7,$0
 lpe
 add $0,1
 mov $1,$0
-mov $10,$5
-mul $10,$5
-mov $8,$10
-mul $8,4
-add $1,$8
+mov $2,$5
+mul $2,$5
+mov $6,$2
+mul $6,4
+add $1,$6

@@ -4,9 +4,9 @@
 add $0,1
 bin $0,3
 mov $1,1031
+mul $1,$0
+sub $1,$0
 mov $2,$0
-mul $1,$2
-sub $1,$2
 gcd $2,2
 div $1,$2
 div $1,1030

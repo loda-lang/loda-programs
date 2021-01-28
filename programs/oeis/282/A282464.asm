@@ -8,7 +8,6 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   cal $0,169630 ; a(n) = n times the square of Fibonacci(n).
-  mov $1,$0
-  add $4,$1
+  add $4,$0
 lpe
 mov $1,$4

@@ -4,11 +4,10 @@
 mov $2,$0
 sub $0,1
 mov $1,4
-pow $2,2
-mov $3,$0
-add $1,$3
+add $1,$0
 bin $1,3
-add $2,$3
+pow $2,2
+add $2,$0
 add $2,$1
 mov $1,$2
 add $1,1

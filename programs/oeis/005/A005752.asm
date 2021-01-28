@@ -14,7 +14,6 @@ lpe
 mov $2,4
 add $2,$1
 add $2,$1
-mov $0,$2
-mov $1,$0
+mov $1,$2
 sub $1,4
 div $1,2

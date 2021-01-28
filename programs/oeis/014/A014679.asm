@@ -7,23 +7,21 @@ mov $0,4
 mov $2,2
 mov $3,5
 bin $6,2
-mov $7,$6
+mov $4,$6
+sub $4,6
+add $3,$4
+div $3,2
+sub $2,$3
 add $6,1
 mov $5,$6
 add $5,1
 div $5,3
 add $5,17
-sub $7,6
-add $3,$7
-div $3,2
-sub $2,$3
 lpb $0,1
   mod $0,2
   add $2,2
   add $2,$5
-  mov $4,$5
-  mov $1,$4
-  add $2,$1
+  add $2,$5
   sub $2,1
 lpe
 mov $1,$2

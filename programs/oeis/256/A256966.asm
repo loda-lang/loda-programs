@@ -8,14 +8,12 @@ lpb $3,1
   mov $0,$6
   sub $3,1
   sub $0,$3
-  mov $7,$0
-  add $7,2
-  pow $7,5
-  mov $2,$7
-  mov $4,$7
+  mov $4,$0
+  add $4,2
+  pow $4,5
+  mov $2,$4
   add $2,$4
   log $2,10
-  mov $1,$2
-  add $5,$1
+  add $5,$2
 lpe
 mov $1,$5

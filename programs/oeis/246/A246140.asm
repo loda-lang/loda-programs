@@ -3,6 +3,5 @@
 
 add $0,8
 cal $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-mov $2,$0
-mov $1,$2
+mov $1,$0
 sub $1,2

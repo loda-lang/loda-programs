@@ -14,11 +14,10 @@ lpb $0,1
   sub $6,$3
   sub $6,$1
   add $6,$4
-  mov $1,$6
   add $2,$6
   sub $2,$0
   trn $0,$6
-  add $2,$1
+  add $2,$6
   sub $2,3
 lpe
 mov $1,0

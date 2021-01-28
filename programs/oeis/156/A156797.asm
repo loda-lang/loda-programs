@@ -7,7 +7,5 @@ add $1,4
 mul $1,7
 sub $1,6
 mov $2,$0
-mov $3,$2
-mov $4,$3
-mul $4,37
-add $1,$4
+mul $2,37
+add $1,$2

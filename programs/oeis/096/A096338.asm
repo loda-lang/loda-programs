@@ -4,10 +4,9 @@
 lpb $0,1
   sub $0,1
   add $4,1
-  mov $3,$4
-  add $2,$3
-  add $5,$2
+  add $2,$4
+  add $3,$2
   trn $2,$0
-  trn $5,$0
-  add $1,$5
+  trn $3,$0
+  add $1,$3
 lpe

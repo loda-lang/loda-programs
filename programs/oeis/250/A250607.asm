@@ -42,9 +42,7 @@ lpb $22,1
         lpe
         add $3,2
         add $8,$1
-        mov $4,$8
-        mov $6,$4
-        mov $0,$6
+        mov $0,$8
         mul $0,$3
         mov $1,$0
       lpe
@@ -65,7 +63,6 @@ lpb $22,1
     add $1,50
     add $18,$1
   lpe
-  mov $1,$18
-  add $21,$1
+  add $21,$18
 lpe
 mov $1,$21

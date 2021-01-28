@@ -3,18 +3,15 @@
 
 mov $4,$0
 add $0,4
-mov $2,$4
-mov $1,$2
-mov $7,1
+mov $1,$4
+mov $5,1
 lpb $0,1
   mov $0,1
-  mov $6,$4
-  add $1,$6
+  add $1,$4
   add $3,15
   mov $2,$3
   trn $2,$1
   add $2,$1
-  mov $5,$7
   add $2,$5
   mov $4,1
   sub $4,$2

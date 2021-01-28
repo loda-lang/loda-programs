@@ -6,8 +6,7 @@ lpb $0,1
   sub $0,1
   sub $0,$3
   sub $0,$3
-  mov $4,$0
-  mov $2,$4
+  mov $2,$0
   mod $2,2
   div $3,$0
   sub $3,$0

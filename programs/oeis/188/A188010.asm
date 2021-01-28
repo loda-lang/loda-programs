@@ -18,13 +18,10 @@ lpb $3,1
   add $4,$1
   mul $4,42
 lpe
-mov $3,$1
-add $0,$3
+add $0,$1
 mov $1,$4
 div $1,5
 sub $1,$0
 div $1,24
 add $1,1
-mov $6,$5
-mov $7,$6
-add $1,$7
+add $1,$5

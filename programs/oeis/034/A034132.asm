@@ -19,14 +19,13 @@ lpb $0,1
   div $1,125
 lpe
 add $1,2
-mov $4,$5
-mov $2,$4
+mov $2,$5
 mul $2,13
 add $1,$2
+mov $4,$5
 mul $4,$5
 mov $2,$4
 mul $2,7
 add $1,$2
 mul $4,$5
-mov $2,$4
-add $1,$2
+add $1,$4

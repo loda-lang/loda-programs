@@ -3,9 +3,9 @@
 
 add $0,3
 mov $2,$0
-mov $3,$2
 add $2,6
 bin $2,7
+mov $3,$0
 mul $3,$2
 mov $1,$3
 sub $1,108

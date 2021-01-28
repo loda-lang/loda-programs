@@ -5,10 +5,9 @@ lpb $0,1
   mov $1,$0
   cal $1,119387 ; a(n) = number of binary digits (1's and nonleading 0's) which remain unchanged in their positions when n and (n+1) are written in binary.
   sub $0,1
-  mov $4,$1
-  cmp $4,0
-  add $1,$4
+  mov $2,$1
+  cmp $2,0
+  add $1,$2
   add $3,$1
 lpe
-mov $2,$3
-mov $1,$2
+mov $1,$3

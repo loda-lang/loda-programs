@@ -4,8 +4,6 @@
 mov $1,$0
 trn $1,1
 gcd $1,2
-mov $4,$0
-mov $3,$4
-mov $2,$3
+mov $2,$0
 mul $2,7
 add $1,$2

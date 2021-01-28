@@ -22,10 +22,8 @@ lpb $10,1
     sub $1,$4
     cal $0,136252 ; a(n) = a(n-1) + 2*a(n-2) - 2*a(n-3).
     sub $0,$1
-    mov $1,$0
-    add $6,$1
+    add $6,$0
   lpe
-  mov $1,$6
-  add $9,$1
+  add $9,$6
 lpe
 mov $1,$9

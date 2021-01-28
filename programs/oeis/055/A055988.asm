@@ -8,16 +8,15 @@ lpb $5,1
   sub $5,1
   add $0,$5
   sub $0,1
+  mov $3,2
   mov $4,$0
-  mov $10,2
-  lpb $10,1
-    sub $10,1
-    add $0,$10
+  lpb $3,1
+    sub $3,1
+    add $0,$3
     sub $0,1
-    mov $3,$0
-    mov $1,$3
+    mov $1,$0
     cal $1,55990 ; a(n) is its own 4th difference.
-    mov $9,$10
+    mov $9,$3
     lpb $9,1
       mov $6,$1
       sub $9,1

@@ -8,11 +8,9 @@ mov $3,$0
 div $3,3
 mov $5,3
 lpb $0,1
-  mov $1,$3
   mov $2,$3
-  sub $5,$1
-  mov $1,$5
-  mov $0,$1
+  sub $5,$3
+  mov $0,$5
   mov $3,8
   mov $6,1
 lpe

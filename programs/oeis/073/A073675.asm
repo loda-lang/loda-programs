@@ -6,7 +6,6 @@ cal $0,214682 ; Remove 2s that do not contribute to a factor of 4 from the prime
 mov $1,$0
 add $2,$0
 add $0,$2
-mov $3,$1
-add $0,$3
+add $0,$1
 mov $1,$0
 sub $1,1

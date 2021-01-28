@@ -10,15 +10,12 @@ lpb $11,1
   sub $11,1
   sub $0,$11
   add $4,1
-  mov $5,$4
   mov $6,$0
   sub $0,1
   cal $0,99738 ; a(n) = 2*Sum_{k=1..n} (n+1-k) (Sum_{j|k} 1/floor(n/j)).
-  add $0,$5
+  add $0,$4
   mov $1,$0
-  mov $7,$6
-  mov $8,$7
-  add $1,$8
+  add $1,$6
   add $10,$1
 lpe
 mov $1,$10

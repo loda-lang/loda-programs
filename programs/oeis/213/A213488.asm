@@ -36,10 +36,8 @@ lpb $11,1
       div $1,6
       add $4,$1
     lpe
-    mov $1,$4
-    add $7,$1
+    add $7,$4
   lpe
-  mov $1,$7
-  add $10,$1
+  add $10,$7
 lpe
 mov $1,$10

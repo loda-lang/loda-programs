@@ -5,7 +5,6 @@ mov $1,$0
 cal $0,280098 ; The sum of the divisors of 24*n - 1, divided by 24.
 mov $2,6
 add $2,$0
-mov $3,$1
-sub $2,$3
+sub $2,$1
 mov $1,$2
 sub $1,7

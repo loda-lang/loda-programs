@@ -16,10 +16,8 @@ lpb $32,1
     sub $0,$29
     sub $0,1
     cal $0,99488 ; Expansion of (1-x)^2/((1+x^2)(1-4x+x^2)).
-    mov $1,$0
-    add $28,$1
+    add $28,$0
   lpe
-  mov $1,$28
-  add $31,$1
+  add $31,$28
 lpe
 mov $1,$31

@@ -11,9 +11,9 @@ lpb $0,1
   add $3,3
   add $3,$4
   add $3,1
-  mov $4,$3
-  trn $2,$4
+  trn $2,$3
   add $2,$1
+  mov $4,$3
   mul $3,2
 lpe
 mov $1,$2

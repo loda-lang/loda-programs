@@ -6,8 +6,7 @@ mov $2,46656
 gcd $2,$0
 mul $0,5
 div $0,$2
-mov $3,$0
-mov $1,$3
+mov $1,$0
 sub $1,5
 div $1,10
 mul $1,2

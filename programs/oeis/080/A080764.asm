@@ -36,8 +36,7 @@ lpb $19,1
         add $2,$1
       lpe
       div $2,2
-      mov $1,$2
-      add $11,$1
+      add $11,$2
     lpe
     mov $1,$11
     mov $16,$15

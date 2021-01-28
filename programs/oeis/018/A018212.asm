@@ -46,16 +46,12 @@ lpb $31,1
           trn $1,1
           add $18,$1
         lpe
-        mov $1,$18
-        add $21,$1
+        add $21,$18
       lpe
-      mov $1,$21
-      add $24,$1
+      add $24,$21
     lpe
-    mov $1,$24
-    add $27,$1
+    add $27,$24
   lpe
-  mov $1,$27
-  add $30,$1
+  add $30,$27
 lpe
 mov $1,$30

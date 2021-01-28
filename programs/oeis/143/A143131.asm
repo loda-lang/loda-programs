@@ -29,22 +29,17 @@ lpb $19,1
       mov $2,1
       mov $10,8
       lpb $0,1
-        mov $2,$10
-        mov $8,$0
-        mov $4,$8
-        sub $0,$4
+        sub $0,$0
         gcd $0,4
         add $0,6
+        mov $2,$10
         add $2,2
       lpe
       add $2,$0
-      mov $1,$2
-      add $12,$1
+      add $12,$2
     lpe
-    mov $1,$12
-    add $15,$1
+    add $15,$12
   lpe
-  mov $1,$15
-  add $18,$1
+  add $18,$15
 lpe
 mov $1,$18

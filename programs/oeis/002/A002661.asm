@@ -3,8 +3,7 @@
 
 mov $5,$0
 div $0,2
-mov $3,$5
-mov $2,$3
+mov $2,$5
 add $2,2
 mov $6,1
 add $6,$0

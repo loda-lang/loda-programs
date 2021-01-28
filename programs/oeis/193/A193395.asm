@@ -20,10 +20,10 @@ sub $2,8
 mul $2,4
 mov $1,$2
 add $1,13
-mov $4,$5
-mov $3,$4
+mov $3,$5
 mul $3,58
 add $1,$3
+mov $4,$5
 mul $4,$5
 mov $3,$4
 mul $3,24

@@ -3,5 +3,4 @@
 
 div $0,2
 cal $0,30379 ; Length of n-th run of digit 0 in A030373.
-mov $2,$0
-mov $1,$2
+mov $1,$0

@@ -7,6 +7,4 @@ cal $0,192747 ; Coefficient of x in the reduction by x^2->x+1 of the polynomial 
 mov $1,$0
 div $0,2
 sub $1,$0
-mov $3,$2
-mov $4,$3
-add $1,$4
+add $1,$2

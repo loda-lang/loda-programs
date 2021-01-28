@@ -10,11 +10,10 @@ mul $6,2
 lpb $0,1
   mov $0,$6
   pow $0,2
-  mov $2,$4
   add $5,1
   mul $5,$0
   sub $0,1
-  div $5,$2
+  div $5,$4
   mov $2,$5
   mul $2,$0
   mov $0,$7

@@ -19,8 +19,8 @@ lpb $0,1
   add $1,5
   sub $2,$5
   add $2,$1
+  trn $2,$0
   mov $4,$0
-  trn $2,$4
   mov $0,$2
   trn $6,$4
   add $6,$3

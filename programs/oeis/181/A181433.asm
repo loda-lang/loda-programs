@@ -3,16 +3,15 @@
 
 mov $8,$0
 add $8,1
-mov $11,$0
+mov $9,$0
 lpb $8,1
-  mov $0,$11
+  mov $0,$9
   sub $8,1
   sub $0,$8
   mov $1,$0
   gcd $0,2
   mov $2,3
-  mov $9,$1
-  mov $6,$9
+  mov $6,$1
   mul $6,$0
   mov $10,2
   lpb $0,1

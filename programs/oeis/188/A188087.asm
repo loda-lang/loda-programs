@@ -7,6 +7,4 @@ cal $0,76538 ; Numerators a(n) of fractions slowly converging to e: let a(1) = 0
 add $0,2
 mov $1,$0
 sub $1,1
-mov $3,$2
-mov $4,$3
-add $1,$4
+add $1,$2

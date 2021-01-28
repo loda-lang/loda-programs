@@ -9,5 +9,4 @@ lpb $0,1
   mov $2,$0
 lpe
 sub $1,16
-mov $3,$2
-gcd $1,$3
+gcd $1,$2

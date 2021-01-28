@@ -9,8 +9,8 @@ lpb $4,1
   sub $4,1
   sub $0,$4
   mov $2,7
+  mov $3,$0
   mov $8,$0
-  mov $3,$8
   lpb $2,1
     mov $5,2401
     lpb $5,1

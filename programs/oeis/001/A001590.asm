@@ -8,16 +8,14 @@ lpb $6,1
   sub $6,1
   add $0,$6
   sub $0,1
+  add $4,1
   mov $12,$0
-  add $13,1
-  lpb $13,1
-    mov $0,$12
-    mov $9,$0
+  lpb $4,1
+    sub $4,1
+    mov $9,$12
     add $11,1
-    sub $13,1
     lpb $11,1
-      mov $0,$9
-      mov $5,$0
+      mov $5,$9
       mov $7,2
       sub $11,1
       lpb $7,1
@@ -28,8 +26,7 @@ lpb $6,1
         cal $3,232508 ; Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally, diagonally or antidiagonally, with no adjacent elements equal.
         trn $0,$3
         cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-        mov $4,$3
-        mul $0,$4
+        mul $0,$3
         mov $1,$0
       lpe
     lpe

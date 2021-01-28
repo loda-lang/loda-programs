@@ -14,8 +14,7 @@ div $3,$3
 add $3,1
 pow $3,$0
 mul $3,2
-mov $4,$1
-add $3,$4
+add $3,$1
 mov $1,$3
 sub $1,17
 div $1,4

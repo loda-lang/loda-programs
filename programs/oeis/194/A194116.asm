@@ -9,7 +9,6 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   cal $0,171983 ; Beatty sequence for sqrt(13).
-  mov $1,$0
-  add $3,$1
+  add $3,$0
 lpe
 mov $1,$3

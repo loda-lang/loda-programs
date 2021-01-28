@@ -10,14 +10,12 @@ lpb $0,1
   trn $0,1
   add $5,1
   mod $2,$5
-  add $6,1
-  mov $7,$2
-  trn $1,$7
+  trn $1,$2
   add $0,$1
+  add $3,1
 lpe
-add $5,$6
-mov $3,$5
-mov $1,$3
+add $5,$3
+mov $1,$5
 div $1,2
 add $1,2
 cmp $4,0

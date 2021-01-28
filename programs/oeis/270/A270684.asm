@@ -16,9 +16,8 @@ lpb $3,1
     add $4,3
     mov $7,$0
     trn $0,1
-    mov $10,$6
-    add $10,$4
-    mov $9,$10
+    mov $9,$6
+    add $9,$4
     mov $1,$9
   lpe
   mul $1,$6

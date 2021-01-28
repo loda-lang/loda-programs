@@ -24,7 +24,7 @@ add $2,$0
 mov $1,$2
 sub $1,1
 mov $4,$7
-mov $5,$4
+mov $5,$7
 mul $5,12
 add $1,$5
 mul $4,$7

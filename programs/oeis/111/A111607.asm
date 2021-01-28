@@ -8,9 +8,8 @@ bin $4,4
 mod $4,$6
 sub $4,$6
 mov $2,$4
-div $2,$2
-mov $1,$2
-mod $0,$1
+div $2,$4
+mod $0,$2
 add $4,1
 mov $5,2
 sub $5,$4

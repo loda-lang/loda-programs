@@ -4,16 +4,15 @@
 mov $1,2
 add $1,$0
 mov $3,$0
-mov $5,1
-lpb $5,1
-  lpb $5,1
+mov $4,1
+lpb $4,1
+  lpb $4,1
     add $1,5
-    trn $5,4
+    trn $4,4
   lpe
   cal $1,184117 ; Lower s-Wythoff sequence, where s(n) = 2n + 1.
 lpe
 sub $1,7
-mov $4,$3
-mov $2,$4
+mov $2,$3
 mul $2,2
 add $1,$2

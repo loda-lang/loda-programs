@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $5,1
-mov $9,$0
+mov $7,$0
 add $0,7
 mov $2,$0
 add $5,$3
@@ -26,7 +26,5 @@ lpe
 sub $3,1
 mov $1,$3
 sub $1,1
-mov $8,$9
-mov $7,$8
 add $1,$7
 sub $1,1

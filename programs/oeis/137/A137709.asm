@@ -3,9 +3,9 @@
 
 mov $3,$0
 add $3,1
-mov $12,$0
+mov $6,$0
 lpb $3,1
-  mov $0,$12
+  mov $0,$6
   sub $3,1
   sub $0,$3
   mov $8,$0
@@ -17,19 +17,16 @@ lpb $3,1
     sub $0,1
     mov $5,$0
     add $0,2
-    mov $4,$0
-    mov $2,$4
+    mov $2,$0
     div $2,2
     cal $2,189662 ; Positions of 0 in A189661; complement of A026356.
     mov $1,$2
     sub $1,1
-    mov $6,$5
-    mov $7,$6
-    add $1,$7
-    mov $11,$10
-    lpb $11,1
+    add $1,$5
+    mov $7,$10
+    lpb $7,1
+      sub $7,1
       mov $9,$1
-      sub $11,1
     lpe
   lpe
   lpb $8,1
@@ -40,6 +37,6 @@ lpb $3,1
   sub $1,1
   mul $1,2
   add $1,1
-  add $13,$1
+  add $4,$1
 lpe
-mov $1,$13
+mov $1,$4
