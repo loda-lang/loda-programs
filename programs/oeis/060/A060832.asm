@@ -12,8 +12,6 @@ lpb $0,1
   add $2,1
 lpe
 add $0,25
-mov $2,$1
-mul $2,$0
-mov $1,$2
+mul $1,$0
 sub $1,625
 div $1,25

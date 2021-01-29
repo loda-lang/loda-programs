@@ -8,18 +8,17 @@ mod $0,3
 sub $4,$0
 mov $0,$4
 sub $0,1
-mov $2,2
+mov $1,2
+mov $2,$4
+mul $2,2
+div $2,4
 mov $5,3
 sub $5,$4
-mov $6,$4
-mul $6,2
-div $6,4
-sub $6,$5
+sub $2,$5
 lpb $0,1
   sub $0,$0
-  add $2,$6
-  add $2,2
+  add $1,$2
+  add $1,2
 lpe
-mov $1,$2
 add $1,2
 add $1,$3

@@ -9,13 +9,12 @@ lpb $0,1
   sub $2,$0
   mul $2,2
   mov $0,$2
-  add $4,1
-  add $0,$4
-  mov $3,$4
-  add $3,$0
-  mov $4,120259084288
+  add $3,1
+  add $0,$3
+  mov $1,$3
+  add $1,$0
+  mov $3,120259084288
 lpe
-mul $3,3
-mov $1,$3
+mul $1,3
 div $1,6
 mul $1,99

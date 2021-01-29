@@ -14,12 +14,11 @@ lpb $0,1
   mul $5,$0
   sub $0,1
   div $5,$4
-  mov $2,$5
-  mul $2,$0
-  mov $0,$7
+  mov $1,$5
+  mul $1,$0
+  mov $0,$2
   mov $6,$3
 lpe
-mov $1,$2
 sub $1,2015
 div $1,12
 mul $1,3

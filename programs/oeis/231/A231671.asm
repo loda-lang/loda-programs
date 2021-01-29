@@ -9,13 +9,12 @@ lpb $5,1
   sub $0,$5
   cal $0,53824 ; Sum of digits of (n written in base 5).
   mul $0,2
-  mov $1,$0
-  pow $1,4
-  mov $4,$1
-  mul $1,2
-  sub $1,$4
-  div $1,8
-  add $3,$1
+  mov $3,$0
+  pow $3,4
+  mov $4,$3
+  mul $3,2
+  sub $3,$4
+  div $3,8
+  add $1,$3
 lpe
-mov $1,$3
 div $1,2

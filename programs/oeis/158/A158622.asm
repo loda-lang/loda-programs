@@ -4,12 +4,11 @@
 mov $2,$0
 add $2,3
 bin $2,2
+mov $1,$2
 mov $3,$0
 add $3,25
 gcd $3,3
-mov $4,$2
-div $4,$3
-mov $1,$4
+div $1,$3
 sub $1,3
 div $1,3
 mul $1,6

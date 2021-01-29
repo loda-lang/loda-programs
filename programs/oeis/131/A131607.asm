@@ -3,6 +3,5 @@
 
 add $0,2
 cal $0,48739 ; Expansion of 1/((1 - x)*(1 - 2*x - x^2)).
-mov $2,$0
-div $2,5
-mov $1,$2
+mov $1,$0
+div $1,5

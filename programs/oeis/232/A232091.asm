@@ -3,7 +3,6 @@
 
 mov $2,$0
 sub $0,1
-mov $3,$0
-cal $3,216607 ; The sequence used to represent partition binary diagram as an array.
-mov $1,$3
+mov $1,$0
+cal $1,216607 ; The sequence used to represent partition binary diagram as an array.
 add $1,$2

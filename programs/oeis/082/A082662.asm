@@ -10,19 +10,18 @@ lpb $7,1
   sub $0,$7
   mov $2,$0
   cmp $0,0
-  fac $4
-  mov $1,$4
   mul $2,2
+  fac $4
+  mov $3,$4
   mov $5,7
   lpb $2,1
-    mul $1,2
     div $2,2
+    mul $3,2
     lpb $5,1
-      pow $1,$0
+      pow $3,$0
       sub $5,$4
     lpe
     trn $2,1
   lpe
-  add $3,$1
+  add $1,$3
 lpe
-mov $1,$3

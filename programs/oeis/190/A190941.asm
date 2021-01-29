@@ -14,12 +14,11 @@ lpb $6,1
       mod $0,3
       sub $0,1
       sub $0,$2
-      mov $1,5
+      mov $4,5
     lpe
     div $0,3
   lpe
-  div $1,3
-  add $4,$1
+  div $4,3
+  add $1,$4
 lpe
-mov $1,$4
 add $1,$5

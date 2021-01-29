@@ -7,25 +7,24 @@ lpb $2,1
   mov $0,$5
   sub $2,1
   sub $0,$2
-  mov $1,$0
+  mov $3,$0
   lpb $0,1
-    add $1,$0
+    add $3,$0
     mov $0,0
-    gcd $1,281474976710656
+    gcd $3,281474976710656
     mov $4,3
     mov $6,0
-    add $6,$1
+    add $6,$3
     mov $7,1
   lpe
   sub $4,$7
   mul $6,$4
   pow $6,2
   add $6,$4
-  mov $1,$6
-  div $1,6
-  add $1,1
-  add $3,$1
+  mov $3,$6
+  div $3,6
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3
 div $1,4
 mul $1,2

@@ -8,6 +8,5 @@ cal $0,172475 ; a(n) = floor(n*sqrt(3)/2).
 mul $0,2
 add $2,$0
 mod $2,-6
-add $3,$2
-mov $1,$3
+add $1,$2
 div $1,2

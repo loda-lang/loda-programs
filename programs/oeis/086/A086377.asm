@@ -10,17 +10,16 @@ mov $5,1
 lpb $2,1
   mov $6,$5
   lpb $4,1
+    mov $1,$0
     sub $4,$0
     add $6,$0
     bin $6,2
-    mov $7,$0
   lpe
   lpb $6,1
-    trn $6,$7
-    add $7,1
+    trn $6,$1
+    add $1,1
   lpe
   mov $2,3
 lpe
-mov $1,$7
 sub $1,21
 add $1,$3

@@ -3,14 +3,13 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2,1
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
   mul $0,2
   add $0,1
   cal $0,56171 ; a(n) = pi(n) - pi(floor(n/2)), where pi is A000720.
-  add $3,$0
+  add $1,$0
 lpe
-mov $1,$3

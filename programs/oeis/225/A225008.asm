@@ -3,14 +3,13 @@
 
 add $0,1
 lpb $0,1
-  mov $1,$0
-  add $1,$0
-  cal $1,331434 ; Column 2 of triangle in A331431.
+  mov $2,$0
+  add $2,$0
+  cal $2,331434 ; Column 2 of triangle in A331431.
   sub $0,1
-  add $2,$1
+  add $1,$2
 lpe
-mul $2,$1
-mov $1,$2
+mul $1,$2
 sub $1,396900
 div $1,18900
 add $1,22

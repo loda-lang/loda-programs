@@ -19,10 +19,9 @@ lpb $3,1
     mov $2,1
     trn $6,9
   lpe
-  mov $1,$6
-  div $1,2
-  mul $1,2
-  add $1,9
-  add $5,$1
+  mov $5,$6
+  div $5,2
+  mul $5,2
+  add $5,9
+  add $1,$5
 lpe
-mov $1,$5

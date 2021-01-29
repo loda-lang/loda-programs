@@ -4,12 +4,11 @@
 mov $3,$0
 div $3,2
 bin $0,$3
-mov $2,$0
-mov $4,3
-pow $4,$3
-mul $4,6
-mul $2,$4
-mov $1,$2
+mov $1,$0
+mov $2,3
+pow $2,$3
+mul $2,6
+mul $1,$2
 sub $1,6
 div $1,6
 add $1,1

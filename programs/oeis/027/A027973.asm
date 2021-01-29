@@ -13,15 +13,14 @@ lpb $5,1
   sub $4,$0
   mov $3,$4
   cal $3,27974 ; a(n) = Sum_{i=0..n} Sum_{j=0..i} T(i,j), T given by A027960.
-  mov $1,$3
   mov $2,$5
+  mov $7,$3
   lpb $2,1
+    mov $1,$7
     sub $2,1
-    mov $7,$1
   lpe
 lpe
 lpb $6,1
+  sub $1,$7
   mov $6,0
-  sub $7,$1
 lpe
-mov $1,$7

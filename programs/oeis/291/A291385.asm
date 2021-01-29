@@ -3,9 +3,8 @@
 
 add $0,1
 cal $0,73388 ; Convolution of A002605(n) (generalized (2,2)-Fibonacci), n >= 0, with itself.
-mov $2,1
-mul $2,$0
-mov $1,$2
+mov $1,1
+mul $1,$0
 sub $1,4
 div $1,4
 add $1,1

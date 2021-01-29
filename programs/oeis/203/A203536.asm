@@ -14,19 +14,18 @@ lpb $2,1
     sub $6,1
     add $0,$6
     cal $0,85697 ; a(n) = T(n+2)^2, where T(n) = tribonacci numbers (A000073).
-    mov $1,$0
+    mov $3,$0
     mov $5,$6
     lpb $5,1
       sub $5,1
-      mov $7,$1
+      mov $7,$3
     lpe
   lpe
   lpb $8,1
-    sub $7,$1
+    sub $7,$3
     mov $8,0
   lpe
-  mov $1,$7
-  mul $1,4
-  add $3,$1
+  mov $3,$7
+  mul $3,4
+  add $1,$3
 lpe
-mov $1,$3

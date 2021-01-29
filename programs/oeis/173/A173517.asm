@@ -9,20 +9,19 @@ lpb $4,1
   add $0,$4
   sub $0,1
   cal $0,122800 ; A P_4-stuttered arithmetic progression with a(n+1)=a(n) if n is square, a(n+1)=a(n)+2 otherwise.
-  mov $1,$0
-  pow $1,2
-  mov $2,$1
+  mov $5,$0
+  pow $5,2
+  mov $2,$5
   div $2,2
-  mov $1,$2
   mov $3,$4
+  mov $5,$2
   lpb $3,1
+    mov $1,$5
     sub $3,1
-    mov $5,$1
   lpe
 lpe
 lpb $6,1
-  sub $5,$1
+  sub $1,$5
   mov $6,0
 lpe
-mov $1,$5
 div $1,4

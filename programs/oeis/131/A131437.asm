@@ -13,16 +13,15 @@ lpb $7,1
   mov $2,$4
   lpb $0,1
     sub $0,1
-    mov $1,2
-    pow $1,$0
     add $2,1
+    mov $6,2
+    pow $6,$0
     trn $0,$2
   lpe
-  add $1,5
-  trn $1,7
-  add $1,1
   sub $4,4
-  add $6,$1
+  add $6,5
+  trn $6,7
+  add $6,1
+  add $1,$6
 lpe
-mov $1,$6
 add $1,$8

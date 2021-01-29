@@ -3,5 +3,4 @@
 
 cal $0,194028 ; Beatty sequence for sqrt(12).
 mod $0,2
-add $2,$0
-mov $1,$2
+add $1,$0

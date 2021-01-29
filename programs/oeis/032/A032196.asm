@@ -3,17 +3,16 @@
 
 mov $2,$0
 mov $0,4
+mov $1,10
+add $1,$2
+bin $1,10
+mul $1,4
 mov $3,11
-mov $4,10
-add $4,$2
-bin $4,10
-mul $4,4
 lpb $0,1
   mov $0,1
-  sub $4,1
-  div $4,4
-  div $4,$3
-  add $4,2
+  sub $1,1
+  div $1,4
+  div $1,$3
+  add $1,2
 lpe
-mov $1,$4
 sub $1,1

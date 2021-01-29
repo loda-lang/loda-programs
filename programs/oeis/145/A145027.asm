@@ -17,20 +17,19 @@ lpb $2,1
     sub $0,1
     cal $0,196787 ; a(n) = 3*a(n-1) - 2*a(n-2) - a(n-4) + a(n-5) with initial terms 1, 1, 1, 3, 6.
     mul $0,2
-    mov $1,$0
-    sub $1,1
+    mov $3,$0
+    sub $3,1
     mov $5,$8
     lpb $5,1
       sub $5,1
-      mov $7,$1
+      mov $7,$3
     lpe
   lpe
   lpb $6,1
     mov $6,0
-    sub $7,$1
+    sub $7,$3
   lpe
-  mov $1,$7
-  add $1,1
-  add $3,$1
+  mov $3,$7
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3

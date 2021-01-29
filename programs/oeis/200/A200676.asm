@@ -10,16 +10,15 @@ lpb $3,1
   sub $0,3
   cal $0,49086 ; Number of tilings of 4 X 3n rectangle by 1 X 3 rectangles. Rotations and reflections are considered distinct tilings.
   add $0,1
-  mov $1,$0
   mov $2,$3
+  mov $4,$0
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $5,1
-  sub $4,$1
+  sub $1,$4
   mov $5,0
 lpe
-mov $1,$4
 div $1,2

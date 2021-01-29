@@ -9,22 +9,21 @@ lpb $3,1
   add $0,$3
   sub $0,1
   cal $0,213040 ; Partial sums of A004738, leftmost column of the sequence of triangles defined in A206492.
-  mov $1,$0
-  bin $1,2
-  add $1,$0
-  add $0,$1
-  sub $0,$1
-  mov $4,$1
-  sub $4,$0
-  mov $1,$4
+  mov $5,$0
+  bin $5,2
+  add $5,$0
+  add $0,$5
+  sub $0,$5
   mov $2,$3
+  mov $4,$5
+  sub $4,$0
+  mov $5,$4
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $6,1
-  sub $5,$1
+  sub $1,$5
   mov $6,0
 lpe
-mov $1,$5

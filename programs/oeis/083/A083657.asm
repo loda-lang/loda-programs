@@ -21,11 +21,10 @@ lpb $3,1
     lpe
     div $0,2
   lpe
-  mov $1,$0
-  add $1,1
+  mov $4,$0
+  add $4,1
   mov $6,$7
   mul $6,3
-  add $1,$6
-  add $4,$1
+  add $4,$6
+  add $1,$4
 lpe
-mov $1,$4

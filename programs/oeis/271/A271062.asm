@@ -16,14 +16,13 @@ lpb $6,1
   add $4,7
   lpb $0,1
     sub $0,1
-    mov $1,$0
+    mov $3,$0
     mov $0,0
     sub $4,$2
     add $4,$7
     pow $4,2
     sub $4,1
-    gcd $1,$4
+    gcd $3,$4
   lpe
-  add $3,$1
+  add $1,$3
 lpe
-mov $1,$3

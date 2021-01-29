@@ -11,8 +11,7 @@ lpb $3,1
   cal $0,55945 ; n - reversal of base 2 digits of n (and then the result is written in base 10).
   cmp $0,$2
   add $0,4
-  mov $1,$0
-  sub $1,4
-  add $4,$1
+  mov $4,$0
+  sub $4,4
+  add $1,$4
 lpe
-mov $1,$4

@@ -10,14 +10,13 @@ lpb $4,1
   mov $6,$0
   lpb $0,1
     mov $0,0
-    mov $1,2
+    mov $2,2
     mov $5,$6
     gcd $5,64
     mul $5,4
     pow $5,2
-    add $1,$5
+    add $2,$5
   lpe
-  div $1,16
-  add $2,$1
+  div $2,16
+  add $1,$2
 lpe
-mov $1,$2

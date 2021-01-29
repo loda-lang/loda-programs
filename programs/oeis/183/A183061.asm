@@ -10,17 +10,16 @@ lpb $3,1
   sub $0,1
   mov $5,$0
   cal $0,147562 ; Number of "ON" cells at n-th stage in the "Ulam-Warburton" two-dimensional cellular automaton.
-  mov $1,$0
-  div $1,2
-  add $1,$5
   mov $2,$3
+  mov $4,$0
+  div $4,2
+  add $4,$5
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $6,1
-  sub $4,$1
+  sub $1,$4
   mov $6,0
 lpe
-mov $1,$4

@@ -5,12 +5,11 @@ mov $4,$0
 cal $0,36582 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 div $0,3
 mul $0,2
-add $1,$4
-mov $3,$1
-mov $1,$0
+add $3,$4
+mov $1,$3
 mov $2,$0
 cmp $2,0
-add $1,$2
-div $3,$1
-mov $1,$3
+mov $3,$0
+add $3,$2
+div $1,$3
 add $1,1

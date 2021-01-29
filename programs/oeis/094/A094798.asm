@@ -8,9 +8,8 @@ lpb $2,1
   add $3,1
   mov $0,$3
   cal $0,268643 ; Number of 1's in decimal representation of n.
-  mov $1,$0
-  add $1,$0
-  div $1,2
-  add $4,$1
+  mov $4,$0
+  add $4,$0
+  div $4,2
+  add $1,$4
 lpe
-mov $1,$4

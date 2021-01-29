@@ -16,15 +16,14 @@ lpb $5,1
     log $0,2
   lpe
   bin $0,2
-  mov $1,$0
   mov $3,$5
+  mov $6,$0
   lpb $3,1
+    mov $1,$6
     sub $3,1
-    mov $6,$1
   lpe
 lpe
 lpb $2,1
+  sub $1,$6
   mov $2,0
-  sub $6,$1
 lpe
-mov $1,$6

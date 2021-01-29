@@ -8,6 +8,5 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   cal $0,81714 ; a(n) = F(n)*L(n+1) where F=Fibonacci and L=Lucas numbers.
-  add $4,$0
+  add $1,$0
 lpe
-mov $1,$4

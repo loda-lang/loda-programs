@@ -3,12 +3,10 @@
 
 mul $0,2
 cal $0,38502 ; Remove 3's from n.
-mov $2,$0
-div $2,3
-add $2,15127
-mul $2,3
-add $2,2
-mov $1,$2
-sub $1,45383
+mov $1,$0
+div $1,3
+add $1,15127
+mul $1,3
+sub $1,45381
 div $1,3
 add $1,1

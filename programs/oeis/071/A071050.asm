@@ -4,11 +4,10 @@
 mov $2,1
 lpb $2,1
   mul $0,2
+  mov $1,$0
+  sub $1,1
   sub $2,1
-  mov $3,$0
-  sub $3,1
   cal $0,142242 ; Row sums of A143200.
-  add $3,$0
-  trn $3,2
+  add $1,$0
+  trn $1,2
 lpe
-mov $1,$3

@@ -15,8 +15,7 @@ lpb $4,1
     gcd $3,128
   lpe
   pow $3,2
-  mov $1,$3
-  div $1,3
-  add $5,$1
+  mov $5,$3
+  div $5,3
+  add $1,$5
 lpe
-mov $1,$5

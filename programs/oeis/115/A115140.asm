@@ -3,9 +3,7 @@
 
 sub $0,2
 cal $0,128634 ; Number of parallel permutations of length n.
-sub $2,$0
-sub $2,1
-mov $1,$2
-sub $1,3
+sub $1,$0
+sub $1,4
 div $1,2
 add $1,1

@@ -3,17 +3,16 @@
 
 lpb $0,1
   add $0,1
-  mov $1,$0
+  mov $2,$0
   mov $3,$0
-  cal $1,118658 ; a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
+  cal $2,118658 ; a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
   sub $0,1
-  mul $1,$3
+  mul $2,$3
   mov $3,$0
   add $0,1
-  mul $1,$0
+  mul $2,$0
   mov $0,$3
   sub $0,1
-  add $2,$1
+  add $1,$2
 lpe
-mov $1,$2
 div $1,2

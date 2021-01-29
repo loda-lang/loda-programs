@@ -1,6 +1,0 @@
-; A228189: Volume of right circular cone (rounded down) with the diameter of base and height equal to n.
-; 0,2,7,16,32,56,89,134,190,261,348,452,575,718,883,1072,1286,1526,1795,2094,2424,2787,3185,3619,4090,4601,5152,5747,6385,7068,7799,8578,9408,10289,11224,12214,13260,14365,15529,16755,18043,19396,20814,22301,23856,25482
-
-cal $0,114378 ; Area of annuli of consecutive integer thickness.
-mov $1,$0
-div $1,12

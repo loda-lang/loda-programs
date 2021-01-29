@@ -8,10 +8,9 @@ lpb $0,1
     add $4,$2
   lpe
   lpb $4,1
+    trn $3,1
+    add $3,$2
+    add $1,$3
     sub $4,1
-    trn $5,1
-    add $5,$2
-    add $3,$5
   lpe
 lpe
-mov $1,$3

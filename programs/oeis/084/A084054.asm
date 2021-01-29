@@ -4,10 +4,9 @@
 add $0,2
 div $0,2
 lpb $0,1
-  mov $2,$0
+  mov $1,$0
   div $0,10
 lpe
-lpb $2,1
-  mod $2,5
+lpb $1,1
+  mod $1,5
 lpe
-mov $1,$2

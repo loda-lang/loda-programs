@@ -16,19 +16,18 @@ lpb $2,1
     add $0,$7
     add $0,1
     cal $0,196382 ; Number of sequences of n coin flips, that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,1).
-    mov $1,$0
+    mov $3,$0
     mov $8,$7
     lpb $8,1
-      mov $6,$1
+      mov $6,$3
       sub $8,1
     lpe
   lpe
   lpb $5,1
     mov $5,0
-    sub $6,$1
+    sub $6,$3
   lpe
-  mov $1,$6
-  sub $1,1
-  add $3,$1
+  mov $3,$6
+  sub $3,1
+  add $1,$3
 lpe
-mov $1,$3

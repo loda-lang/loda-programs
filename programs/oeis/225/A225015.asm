@@ -41,41 +41,40 @@ lpb $4,1
           mov $2,1
           cmp $5,$3
         lpe
-        mov $1,$5
+        mov $6,$5
         mov $12,$11
         lpb $12,1
-          mov $10,$1
+          mov $10,$6
           sub $12,1
         lpe
       lpe
       lpb $9,1
         mov $9,0
-        sub $10,$1
+        sub $10,$6
       lpe
-      mov $1,$10
+      mov $6,$10
       mov $16,$15
       lpb $16,1
-        mov $14,$1
+        mov $14,$6
         sub $16,1
       lpe
     lpe
     lpb $13,1
       mov $13,0
-      sub $14,$1
+      sub $14,$6
     lpe
-    mov $1,$14
+    mov $6,$14
     mov $20,$19
     lpb $20,1
-      mov $18,$1
+      mov $18,$6
       sub $20,1
     lpe
   lpe
   lpb $17,1
     mov $17,0
-    sub $18,$1
+    sub $18,$6
   lpe
-  mov $1,$18
-  div $1,2
-  add $6,$1
+  mov $6,$18
+  div $6,2
+  add $1,$6
 lpe
-mov $1,$6

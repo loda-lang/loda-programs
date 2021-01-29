@@ -6,5 +6,4 @@ pow $0,2
 sub $0,1
 pow $0,2
 sub $0,9
-sub $2,$0
-mov $1,$2
+sub $1,$0

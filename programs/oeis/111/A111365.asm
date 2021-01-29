@@ -2,14 +2,13 @@
 ; 1,1,8,43,239,1324,7337,40657,225296,1248451,6918143,38336068,212434769,1177182049,6523214552,36147618907,200307738191,1109981547676,6150830952953,34084099407793,188872989897824,1046617247712499
 
 sub $0,1
-mov $2,12
+mov $1,12
 lpb $0,1
-  mov $1,$0
-  cal $1,106569 ; First entry of the vector (M^n)v, where M is the 2 X 2 matrix [[0,4],[1,4]] and v is the column vector [0,1].
+  mov $2,$0
+  cal $2,106569 ; First entry of the vector (M^n)v, where M is the 2 X 2 matrix [[0,4],[1,4]] and v is the column vector [0,1].
   sub $0,1
-  add $2,$1
+  add $1,$2
 lpe
-mov $1,$2
 sub $1,11
 div $1,3
 mul $1,7

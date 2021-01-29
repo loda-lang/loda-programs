@@ -8,13 +8,12 @@ sub $0,1
 trn $4,$0
 add $0,$4
 mov $2,6
-mov $5,$0
-mul $5,15
+mov $3,$0
+mul $3,15
 lpb $0,1
   div $0,$2
-  add $3,6
-  add $3,$5
+  add $1,6
+  add $1,$3
 lpe
-mov $1,$3
 div $1,5
 sub $1,6

@@ -19,9 +19,8 @@ lpb $3,1
     gcd $0,8
   lpe
   add $2,5
-  mov $1,$2
-  trn $1,5
-  add $1,1
-  add $4,$1
+  mov $4,$2
+  trn $4,5
+  add $4,1
+  add $1,$4
 lpe
-mov $1,$4

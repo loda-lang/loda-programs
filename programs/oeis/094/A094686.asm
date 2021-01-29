@@ -22,22 +22,21 @@ lpb $9,1
   mov $6,3
   add $6,$0
   add $2,$6
-  mov $1,$2
-  sub $1,12
-  mul $1,3
-  sub $1,3
-  div $1,3
-  mul $1,2
-  add $1,2
   mov $5,$9
+  mov $8,$2
+  sub $8,12
+  mul $8,3
+  sub $8,3
+  div $8,3
+  mul $8,2
+  add $8,2
   lpb $5,1
+    mov $1,$8
     sub $5,1
-    mov $8,$1
   lpe
 lpe
 lpb $7,1
+  sub $1,$8
   mov $7,0
-  sub $8,$1
 lpe
-mov $1,$8
 div $1,2

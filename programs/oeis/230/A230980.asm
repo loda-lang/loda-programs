@@ -17,12 +17,11 @@ lpb $6,1
       sub $4,$3
       mul $3,2
     lpe
-    mov $1,1
-    sub $3,3
-    trn $1,$3
     mov $2,1
+    sub $3,3
+    mov $5,1
+    trn $5,$3
   lpe
-  div $1,2
-  add $5,$1
+  div $5,2
+  add $1,$5
 lpe
-mov $1,$5

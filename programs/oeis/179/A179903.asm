@@ -8,16 +8,14 @@ mov $1,$4
 lpb $0,1
   mov $0,0
   mul $1,2
-  mov $5,$1
+  mov $2,$1
   mov $1,2
   add $3,1
   add $1,$3
-  mul $3,$5
-  sub $5,$3
+  mul $3,$2
+  sub $2,$3
 lpe
-sub $1,$5
-mov $2,$1
-mul $2,44
-mov $1,$2
+sub $1,$2
+mul $1,44
 div $1,132
 add $1,1

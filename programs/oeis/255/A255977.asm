@@ -3,8 +3,7 @@
 
 mov $2,$0
 sub $2,1
-mov $3,$2
-cal $3,183136 ; a(n) = [1/r]+[2/r]+...+[n/r], where r = golden ratio = (1+sqrt(5))/2 and []=floor.
-add $3,1
-mov $1,$3
+mov $1,$2
+cal $1,183136 ; a(n) = [1/r]+[2/r]+...+[n/r], where r = golden ratio = (1+sqrt(5))/2 and []=floor.
+add $1,1
 add $1,$0

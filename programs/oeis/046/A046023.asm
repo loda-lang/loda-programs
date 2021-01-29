@@ -3,10 +3,8 @@
 
 pow $0,2
 add $0,2
-mov $2,$0
+mov $1,$0
 bin $0,3
-add $2,$0
-add $2,4
-mov $1,$2
-sub $1,6
+add $1,$0
+sub $1,2
 div $1,2

@@ -5,6 +5,5 @@ trn $0,1
 gcd $0,4
 lpb $0,1
   sub $0,3
-  mov $2,$0
+  mov $1,$0
 lpe
-mov $1,$2

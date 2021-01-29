@@ -8,8 +8,7 @@ lpb $0,1
   mul $0,$2
   mul $2,2
 lpe
-mov $4,2
-pow $4,$3
-div $4,2
-pow $4,$0
-mov $1,$4
+mov $1,2
+pow $1,$3
+div $1,2
+pow $1,$0

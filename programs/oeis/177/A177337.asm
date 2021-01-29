@@ -7,10 +7,9 @@ lpb $4,1
   mov $0,$3
   sub $4,1
   sub $0,$4
-  mov $1,$0
-  pow $1,2
-  add $1,13
-  div $1,36
-  add $2,$1
+  mov $2,$0
+  pow $2,2
+  add $2,13
+  div $2,36
+  add $1,$2
 lpe
-mov $1,$2

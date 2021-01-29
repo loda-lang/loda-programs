@@ -11,8 +11,7 @@ lpb $3,1
   cal $0,137319 ; Start with the set of natural numbers. Add 1 to every 2nd term, 2 to every 3rd term, 3 to every 4th term, etc.
   sub $0,$4
   add $0,1
-  mov $1,$0
-  sub $1,2
-  add $2,$1
+  mov $2,$0
+  sub $2,2
+  add $1,$2
 lpe
-mov $1,$2

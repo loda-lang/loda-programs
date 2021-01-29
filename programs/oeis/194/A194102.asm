@@ -13,19 +13,18 @@ lpb $7,1
   pow $2,2
   mov $4,$2
   sub $2,$2
-  mov $1,$2
   add $4,$0
   sub $0,$4
-  sub $1,$0
   mov $4,$0
-  add $4,$1
+  mov $6,$2
+  sub $6,$0
+  add $4,$6
   lpb $0,1
-    mov $1,-1
     mov $3,$4
     add $4,1
     add $0,$4
+    mov $6,-1
   lpe
-  sub $3,$1
-  add $6,$3
+  sub $3,$6
+  add $1,$3
 lpe
-mov $1,$6

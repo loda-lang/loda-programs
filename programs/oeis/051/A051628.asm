@@ -6,7 +6,6 @@ lpb $0,1
   add $2,1
   gcd $2,10
   div $0,$2
-  add $3,23
+  add $1,23
 lpe
-mov $1,$3
 div $1,23

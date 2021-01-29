@@ -7,11 +7,9 @@ trn $2,$0
 sub $2,48
 mul $0,$2
 sub $0,1
-mov $3,$0
-pow $3,2
-add $3,11
-mov $1,$3
-sub $1,332940
+mov $1,$0
+pow $1,2
+sub $1,332929
 div $1,1152
 mul $1,2
 add $1,578

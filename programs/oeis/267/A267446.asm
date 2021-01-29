@@ -7,17 +7,16 @@ lpb $2,1
   mov $0,$5
   sub $2,1
   sub $0,$2
-  add $6,1
-  lpb $6,1
+  add $3,1
+  lpb $3,1
     mul $0,2
+    sub $3,1
     mov $4,$0
     sub $4,1
-    sub $6,1
     cal $0,142242 ; Row sums of A143200.
     add $4,$0
     trn $4,2
   lpe
-  add $3,$4
+  add $1,$4
 lpe
-mov $1,$3
 add $1,1

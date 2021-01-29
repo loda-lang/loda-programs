@@ -10,12 +10,11 @@ lpb $2,1
   sub $0,$2
   sub $0,1
   cal $0,86351 ; T(n,3) of A086350.
-  mov $1,2
-  mul $1,$0
-  mov $4,$1
-  mov $6,$1
+  mov $3,2
+  mul $3,$0
+  mov $4,$3
+  mov $6,$3
   cmp $6,0
   add $4,$6
-  add $3,$4
+  add $1,$4
 lpe
-mov $1,$3

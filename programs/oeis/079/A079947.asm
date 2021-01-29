@@ -12,18 +12,17 @@ lpb $4,1
   mov $0,0
   mov $2,$7
   add $2,$7
-  mov $1,$2
-  add $1,7
+  mov $6,$2
+  add $6,7
   pow $7,$5
-  add $1,$7
-  add $0,$1
+  add $6,$7
+  add $0,$6
   lpb $0,1
     div $0,2
     add $0,3
-    mod $1,2
-    add $1,7
+    mod $6,2
+    add $6,7
   lpe
-  sub $1,7
-  add $6,$1
+  sub $6,7
+  add $1,$6
 lpe
-mov $1,$6

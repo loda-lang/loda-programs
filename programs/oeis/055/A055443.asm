@@ -18,18 +18,17 @@ lpb $7,1
     add $3,6
   lpe
   mul $3,90
-  mov $1,$3
   mov $4,$7
+  mov $6,$3
   lpb $4,1
+    mov $1,$6
     sub $4,1
-    mov $6,$1
   lpe
 lpe
 lpb $5,1
+  sub $1,$6
   mov $5,0
-  sub $6,$1
 lpe
-mov $1,$6
 sub $1,1170
 div $1,540
 add $1,1

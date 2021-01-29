@@ -7,17 +7,16 @@ div $3,2
 add $3,$0
 mov $0,$3
 div $0,3
-mov $4,2
-add $4,$2
-sub $4,1
-mov $5,$4
-div $4,4
-add $4,2
+mov $1,2
+add $1,$2
+sub $1,1
+mov $4,$1
+div $1,4
+add $1,2
 lpb $0,1
   sub $0,1
-  add $4,$5
+  add $1,$4
 lpe
-mov $1,$4
 sub $1,2
 mul $1,2
 add $1,1

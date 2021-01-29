@@ -8,24 +8,23 @@ lpb $6,1
   sub $6,1
   add $0,$6
   sub $0,1
-  mov $1,$2
+  mov $4,$2
   mov $5,3
   lpb $0,1
     div $5,2
     add $5,$0
     sub $0,1
-    add $1,$5
-    sub $1,$0
+    add $4,$5
+    sub $4,$0
   lpe
   mov $3,$6
   lpb $3,1
+    mov $1,$4
     sub $3,1
-    mov $4,$1
   lpe
 lpe
 lpb $7,1
-  sub $4,$1
+  sub $1,$4
   mov $7,0
 lpe
-mov $1,$4
 trn $1,1

@@ -20,9 +20,8 @@ lpb $2,1
     add $6,1
   lpe
   mul $6,6
-  mov $1,$6
-  sub $1,6
-  div $1,6
-  add $3,$1
+  mov $3,$6
+  sub $3,6
+  div $3,6
+  add $1,$3
 lpe
-mov $1,$3

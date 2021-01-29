@@ -21,24 +21,23 @@ lpb $2,1
     sub $0,$0
     add $0,$7
     div $0,2
+    mov $3,$11
     sub $6,5
     mul $6,8
     mov $4,$6
     add $4,$0
     div $4,12
-    mov $1,$4
-    mov $3,$11
+    mov $5,$4
     lpb $3,1
       sub $3,1
-      mov $10,$1
+      mov $10,$5
     lpe
   lpe
   lpb $9,1
     mov $9,0
-    sub $10,$1
+    sub $10,$5
   lpe
-  mov $1,$10
-  add $1,6
-  add $5,$1
+  mov $5,$10
+  add $5,6
+  add $1,$5
 lpe
-mov $1,$5

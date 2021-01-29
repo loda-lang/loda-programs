@@ -18,17 +18,16 @@ lpb $2,1
     mov $6,$0
     add $0,2
     bin $0,2
-    mov $1,$0
+    mov $3,$0
     mov $7,$6
     mov $8,$6
     mul $8,5
-    add $1,$8
+    add $3,$8
     mul $7,$6
     mov $8,$7
     mul $8,5
-    add $1,$8
-    add $10,$1
+    add $3,$8
+    add $10,$3
   lpe
-  add $3,$10
+  add $1,$10
 lpe
-mov $1,$3

@@ -25,20 +25,19 @@ lpb $4,1
       add $3,2
       trn $0,$3
     lpe
-    mov $1,$3
+    mov $2,$3
     mov $8,$7
     lpb $8,1
-      mov $6,$1
+      mov $6,$2
       sub $8,1
     lpe
   lpe
   lpb $5,1
     mov $5,0
-    sub $6,$1
+    sub $6,$2
   lpe
-  mov $1,$6
-  div $1,2
-  add $1,1
-  add $2,$1
+  mov $2,$6
+  div $2,2
+  add $2,1
+  add $1,$2
 lpe
-mov $1,$2

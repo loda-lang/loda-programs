@@ -4,10 +4,9 @@
 pow $0,4
 mul $0,2
 lpb $0,1
-  sub $0,$3
+  sub $0,$1
   trn $0,1
   add $2,2
-  mov $3,$2
+  mov $1,$2
 lpe
-mov $1,$3
 div $1,2

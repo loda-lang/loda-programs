@@ -3,11 +3,10 @@
 
 lpb $0,1
   sub $0,1
-  mul $3,6
-  add $3,$2
+  mul $1,6
+  add $1,$2
   mul $2,2
   add $2,2
 lpe
-mov $1,$3
 div $1,2
 mul $1,5

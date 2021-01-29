@@ -16,15 +16,13 @@ lpb $2,1
     add $3,2
     trn $4,$3
   lpe
-  add $6,$3
+  add $5,$3
   sub $3,1
-  lpb $6,1
-    mov $5,$3
-    sub $6,$3
+  lpb $5,1
+    mov $1,$3
+    sub $5,$3
   lpe
 lpe
-sub $5,1
-mov $1,$5
-sub $1,2
+sub $1,3
 div $1,2
 add $1,2

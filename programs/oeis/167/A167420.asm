@@ -4,7 +4,6 @@
 sub $0,1
 mod $0,3
 sub $0,4
-mov $2,-23
-div $2,$0
-mov $1,$2
+mov $1,-23
+div $1,$0
 sub $1,3

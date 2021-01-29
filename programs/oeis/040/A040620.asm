@@ -24,18 +24,17 @@ lpb $3,1
     trn $0,$10
     add $8,$10
   lpe
+  mov $2,$3
   add $4,$8
   add $4,7
-  mov $1,$4
-  mov $2,$3
+  mov $9,$4
   lpb $2,1
+    mov $1,$9
     sub $2,1
-    mov $9,$1
   lpe
 lpe
 lpb $11,1
-  sub $9,$1
+  sub $1,$9
   mov $11,0
 lpe
-mov $1,$9
 add $1,2

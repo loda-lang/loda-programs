@@ -3,10 +3,9 @@
 
 mul $0,4
 cal $0,80755 ; a(n) = ceiling(n*(1+1/sqrt(2))).
-add $2,$0
-add $3,$2
-add $3,27
-add $2,$3
-div $2,18
-sub $2,1
-mov $1,$2
+add $1,$0
+add $2,$1
+add $2,27
+add $1,$2
+div $1,18
+sub $1,1

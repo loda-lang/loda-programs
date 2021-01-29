@@ -14,25 +14,24 @@ lpb $2,1
     sub $7,1
     add $0,$7
     sub $0,1
-    mov $1,$0
+    mov $3,$0
     lpb $0,1
-      mov $1,$0
-      sub $1,1
-      cal $1,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
+      mov $3,$0
+      sub $3,1
+      cal $3,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
       sub $0,$0
     lpe
     mov $8,$7
     lpb $8,1
-      mov $6,$1
+      mov $6,$3
       sub $8,1
     lpe
   lpe
   lpb $5,1
     mov $5,0
-    sub $6,$1
+    sub $6,$3
   lpe
-  mov $1,$6
-  mul $1,2
-  add $3,$1
+  mov $3,$6
+  mul $3,2
+  add $1,$3
 lpe
-mov $1,$3

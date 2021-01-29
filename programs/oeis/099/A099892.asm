@@ -20,15 +20,14 @@ lpb $2,1
     mul $6,2
   lpe
   trn $4,3
-  mov $1,$4
   mov $7,$2
+  mov $8,$4
   lpb $7,1
+    mov $1,$8
     sub $7,1
-    mov $8,$1
   lpe
 lpe
 lpb $9,1
-  sub $8,$1
+  sub $1,$8
   mov $9,0
 lpe
-mov $1,$8

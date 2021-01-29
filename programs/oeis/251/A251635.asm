@@ -3,15 +3,14 @@
 
 cal $0,136157 ; Triangle by columns, (3, 1, 0, 0, 0,...) in every column.
 sub $0,2
-mov $1,$0
-add $1,1
-mov $2,$1
+mov $1,2
+add $1,$0
+mov $3,$0
+add $3,1
+mov $2,$3
 cmp $2,0
-add $1,$2
-mov $3,2
-add $3,$0
-div $0,$1
-sub $3,1
-add $3,$0
-mov $1,$3
+add $3,$2
+div $0,$3
+sub $1,1
+add $1,$0
 sub $1,1

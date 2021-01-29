@@ -26,33 +26,32 @@ lpb $3,1
       lpb $7,1
         mov $0,$5
         sub $0,1
-        mov $1,$0
-        add $1,4
-        mov $2,$1
+        mov $14,$0
+        add $14,4
+        mov $2,$14
         sub $7,1
         cal $2,139748 ; a(n) = Sum_{ k >= 0} binomial(n,5*k+3).
       lpe
-      mov $1,$2
       mov $12,$11
+      mov $14,$2
       lpb $12,1
-        mov $10,$1
+        mov $10,$14
         sub $12,1
       lpe
     lpe
     lpb $9,1
       mov $9,0
-      sub $10,$1
+      sub $10,$14
     lpe
-    mov $1,$10
     mov $6,$8
+    mov $14,$10
     lpb $6,1
+      mov $1,$14
       sub $6,1
-      mov $14,$1
     lpe
   lpe
   lpb $13,1
+    sub $1,$14
     mov $13,0
-    sub $14,$1
   lpe
 lpe
-mov $1,$14

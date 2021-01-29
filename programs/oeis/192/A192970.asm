@@ -8,15 +8,14 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
+  add $3,1
   mov $5,$0
-  add $6,1
-  lpb $6,1
+  lpb $3,1
     mov $0,$5
     sub $0,1
-    sub $6,1
+    sub $3,1
     cal $0,192969 ; Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
   lpe
-  add $3,$0
+  add $1,$0
 lpe
-mov $1,$3
 sub $1,1

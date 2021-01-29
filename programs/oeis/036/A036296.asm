@@ -5,6 +5,4 @@ add $0,1
 mov $1,$0
 cal $1,84623 ; Numerator of 2^(n-1)/n.
 add $1,1
-mov $2,$1
-div $2,2
-mov $1,$2
+div $1,2

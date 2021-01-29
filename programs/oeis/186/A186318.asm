@@ -30,20 +30,19 @@ lpb $9,1
       lpe
       sub $2,1
     lpe
-    mov $1,$3
     mov $6,$7
+    mov $10,$3
     lpb $6,1
       sub $6,1
-      mov $8,$1
+      mov $8,$10
     lpe
   lpe
   lpb $11,1
-    sub $8,$1
+    sub $8,$10
     mov $11,0
   lpe
-  mov $1,$8
-  div $1,2
-  add $1,1
-  add $10,$1
+  mov $10,$8
+  div $10,2
+  add $10,1
+  add $1,$10
 lpe
-mov $1,$10

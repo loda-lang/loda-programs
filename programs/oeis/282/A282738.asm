@@ -14,7 +14,6 @@ lpe
 add $4,4
 mul $4,2
 add $3,$4
-add $6,$3
-mov $1,$6
+add $1,$3
 div $1,4
 sub $1,1

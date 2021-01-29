@@ -22,28 +22,27 @@ lpb $3,1
       add $0,2
       sub $10,1
       cal $0,8466 ; a(n) = 2^n - Fibonacci(n+2).
-      mov $1,$0
+      mov $4,$0
     lpe
     mov $6,$7
     lpb $6,1
       sub $6,1
-      mov $8,$1
+      mov $8,$4
     lpe
   lpe
   lpb $9,1
-    sub $8,$1
+    sub $8,$4
     mov $9,0
   lpe
-  mov $1,$8
   mov $2,$3
+  mov $4,$8
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $5,1
-  sub $4,$1
+  sub $1,$4
   mov $5,0
 lpe
-mov $1,$4
 sub $1,1

@@ -3,11 +3,9 @@
 
 cal $0,77985 ; Expansion of 1/(1 + 2*x - x^2).
 pow $0,2
-add $2,$0
-mul $2,3
-div $2,2
-add $2,1
-mov $1,$2
-sub $1,2
+add $1,$0
+mul $1,3
+div $1,2
+sub $1,1
 mul $1,4
 add $1,5

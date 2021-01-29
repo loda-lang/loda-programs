@@ -3,12 +3,7 @@
 
 mov $2,$0
 add $0,1
-mov $4,3
-pow $4,$0
+mov $1,3
+pow $1,$0
 add $0,$2
-mov $3,$4
-div $3,$0
-mov $4,$3
-add $4,3
-mov $1,$4
-sub $1,3
+div $1,$0

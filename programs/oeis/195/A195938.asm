@@ -7,9 +7,8 @@ add $0,5
 gcd $0,4
 add $3,1
 add $0,$3
+mov $1,$3
+add $1,$0
 add $2,$3
-mov $4,$3
-add $4,$0
-gcd $4,$2
-mov $1,$4
+gcd $1,$2
 div $1,2

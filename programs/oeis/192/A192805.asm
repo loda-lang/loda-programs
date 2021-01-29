@@ -3,6 +3,5 @@
 
 sub $0,3
 cal $0,77864 ; Expansion of (1-x)^(-1)/(1-x-2*x^2-x^3).
-add $2,$0
-mov $1,$2
+add $1,$0
 add $1,1

@@ -12,13 +12,12 @@ lpb $5,1
     sub $0,1
     div $0,3
     mov $1,$0
-    sub $1,15
-    div $1,4
     mov $2,$0
-    sub $2,$1
+    sub $2,15
+    div $2,4
+    sub $1,$2
     sub $6,1
   lpe
 lpe
-mov $1,$2
 sub $1,3
 add $1,$4

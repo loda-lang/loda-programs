@@ -10,15 +10,14 @@ lpb $3,1
   sub $0,$3
   mul $0,2
   add $0,2
+  mov $4,1
   mov $5,4
   add $5,$0
   bin $5,4
-  mov $6,1
   lpb $0,1
     sub $0,2
     pow $0,2
-    add $5,$6
+    add $5,$4
   lpe
-  add $4,$5
+  add $1,$5
 lpe
-mov $1,$4

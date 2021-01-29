@@ -4,18 +4,17 @@
 mov $3,26
 add $3,$0
 add $3,2
-mov $4,$3
-pow $4,2
-mov $0,$4
+mov $1,$3
+pow $1,2
+mov $0,$1
 add $0,4
 lpb $0,1
   add $2,1
-  add $5,1
-  trn $0,$5
+  add $4,1
+  trn $0,$4
 lpe
+mov $1,$4
 mod $2,$2
 add $2,1
-mov $4,$5
-add $4,$2
-mov $1,$4
+add $1,$2
 sub $1,39

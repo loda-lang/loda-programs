@@ -5,6 +5,5 @@ mov $2,4
 trn $2,$0
 mov $0,$2
 bin $0,2
-mov $3,6
-sub $3,$0
-mov $1,$3
+mov $1,6
+sub $1,$0

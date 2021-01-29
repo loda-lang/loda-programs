@@ -12,10 +12,9 @@ lpb $2,1
   cal $0,128138 ; A000012 * A128132.
   add $0,3
   mul $0,2
-  mov $1,$0
-  sub $1,6
-  div $1,2
-  add $1,2
-  add $3,$1
+  mov $3,$0
+  sub $3,6
+  div $3,2
+  add $3,2
+  add $1,$3
 lpe
-mov $1,$3

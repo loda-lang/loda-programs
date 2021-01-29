@@ -3,10 +3,10 @@
 
 mov $3,$0
 div $0,10
-mov $2,3
+mov $1,3
 lpb $0,1
-  mov $0,$5
-  sub $0,$2
+  mov $0,$2
+  sub $0,$1
   mov $4,$0
   sub $0,$0
   sub $0,$4
@@ -14,8 +14,7 @@ lpb $0,1
 lpe
 add $0,6
 mul $0,2
-mov $2,$0
-mul $2,5
-mov $1,$2
+mov $1,$0
+mul $1,5
 sub $1,50
 add $1,$3

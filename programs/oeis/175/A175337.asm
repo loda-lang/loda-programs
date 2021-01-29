@@ -3,8 +3,7 @@
 
 cal $0,277543 ; a(n) = n/5^m mod 5, where 5^m is the greatest power of 5 that divides n.
 cal $0,59542 ; Beatty sequence for 1 + 1/log(2).
-mov $2,$0
-gcd $2,3
-mul $2,2
-mov $1,$2
+mov $1,$0
+gcd $1,3
+mul $1,2
 div $1,4

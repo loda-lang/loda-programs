@@ -13,18 +13,17 @@ lpb $2,1
   mul $5,$0
   mov $6,2
   lpb $0,1
-    cmp $1,4
-    add $1,$0
+    cmp $7,4
+    add $7,$0
     sub $0,1
     gcd $3,$6
-    add $5,$1
-    mov $1,6
+    add $5,$7
     add $5,8
+    mov $7,6
   lpe
   add $3,$5
   add $3,3
-  mov $1,$3
-  add $1,26
-  add $7,$1
+  mov $7,$3
+  add $7,26
+  add $1,$7
 lpe
-mov $1,$7

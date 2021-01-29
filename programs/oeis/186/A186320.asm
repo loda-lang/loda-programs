@@ -15,29 +15,28 @@ lpb $2,1
     sub $5,1
     add $0,$5
     sub $0,1
-    mov $1,$0
-    add $1,1
-    trn $0,$1
-    pow $1,2
-    lpb $1,1
+    mov $8,$0
+    add $8,1
+    trn $0,$8
+    pow $8,2
+    lpb $8,1
       add $0,5
-      trn $1,$0
-      sub $1,1
+      trn $8,$0
+      sub $8,1
     lpe
-    mov $1,$0
     mov $6,$5
+    mov $8,$0
     lpb $6,1
-      mov $4,$1
+      mov $4,$8
       sub $6,1
     lpe
   lpe
   lpb $3,1
     mov $3,0
-    sub $4,$1
+    sub $4,$8
   lpe
-  mov $1,$4
-  div $1,5
-  add $1,1
-  add $8,$1
+  mov $8,$4
+  div $8,5
+  add $8,1
+  add $1,$8
 lpe
-mov $1,$8

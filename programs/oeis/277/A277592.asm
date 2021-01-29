@@ -30,10 +30,9 @@ lpb $5,1
       mov $7,2
     lpe
   lpe
-  mov $1,$3
-  trn $1,2
-  mul $1,5
-  add $1,5
-  add $8,$1
+  mov $8,$3
+  trn $8,2
+  mul $8,5
+  add $8,5
+  add $1,$8
 lpe
-mov $1,$8

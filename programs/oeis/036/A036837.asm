@@ -3,9 +3,9 @@
 
 mov $4,$0
 add $4,1
-mov $7,$0
+mov $6,$0
 lpb $4,1
-  mov $0,$7
+  mov $0,$6
   sub $4,1
   sub $0,$4
   mov $3,$0
@@ -16,6 +16,5 @@ lpb $4,1
   bin $5,$0
   mov $2,$5
   div $2,5
-  add $6,$2
+  add $1,$2
 lpe
-mov $1,$6

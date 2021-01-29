@@ -3,24 +3,20 @@
 
 add $0,1
 mul $0,2
-mov $2,1
-mov $3,2
-pow $3,$0
+mov $2,2
+pow $2,$0
 mul $0,2
-add $2,$0
-mov $4,$3
-add $4,1
-mov $0,$4
-lpb $0,1
-  div $0,$2
-  mov $4,60
-  add $4,$0
-  mov $0,2
-  mov $2,$4
-  sub $2,1
-lpe
-sub $2,2
+mov $1,1
+add $1,$0
 mov $3,$2
 add $3,1
-mov $1,$3
-sub $1,58
+mov $0,$3
+lpb $0,1
+  div $0,$1
+  mov $3,60
+  add $3,$0
+  mov $0,2
+  mov $1,$3
+  sub $1,1
+lpe
+sub $1,59

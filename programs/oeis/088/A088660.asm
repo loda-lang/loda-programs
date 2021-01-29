@@ -4,7 +4,6 @@
 add $0,2
 cal $0,70940 ; Number of digits that must be counted from left to right to reach the last 1 in the binary representation of n.
 add $0,2
-mov $2,9
-sub $2,$0
-mov $1,$2
+mov $1,9
+sub $1,$0
 add $1,2

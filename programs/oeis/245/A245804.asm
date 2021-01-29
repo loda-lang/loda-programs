@@ -6,10 +6,9 @@ mov $1,-8
 mov $2,-8
 mov $3,$0
 lpb $3,1
-  sub $2,$1
-  mul $1,2
-  mul $2,3
+  sub $1,$2
+  mul $1,3
+  mul $2,2
   sub $3,2
 lpe
-mov $1,$2
 div $1,8

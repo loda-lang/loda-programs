@@ -3,10 +3,9 @@
 
 add $0,2
 pow $0,2
-mov $2,$0
-pow $2,3
-sub $2,$0
-mov $1,$2
+mov $1,$0
+pow $1,3
+sub $1,$0
 sub $1,60
 div $1,60
 add $1,1

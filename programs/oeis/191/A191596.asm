@@ -3,12 +3,11 @@
 
 add $0,1
 lpb $0,1
-  mov $1,$0
-  cal $1,35599 ; Number of points of L1 norm 5 in cubic lattice Z^n.
+  mov $2,$0
+  cal $2,35599 ; Number of points of L1 norm 5 in cubic lattice Z^n.
   sub $0,1
-  add $2,$1
+  add $1,$2
 lpe
-mov $1,$2
 sub $1,2
 div $1,2
 add $1,1

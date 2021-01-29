@@ -9,6 +9,5 @@ lpb $2,1
   sub $0,$2
   mov $3,$0
   cal $3,100196 ; Numbers of positive integer cubes <= n^2.
-  add $5,$3
+  add $1,$3
 lpe
-mov $1,$5

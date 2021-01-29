@@ -14,10 +14,9 @@ lpb $4,1
     trn $0,3
     mov $6,10
     gcd $6,$5
-    mov $1,$6
+    mov $2,$6
   lpe
-  div $1,9
-  add $1,365
-  add $2,$1
+  div $2,9
+  add $2,365
+  add $1,$2
 lpe
-mov $1,$2

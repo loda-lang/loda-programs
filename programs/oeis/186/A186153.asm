@@ -18,19 +18,18 @@ lpb $3,1
     mul $0,2
     add $0,1
     cal $0,186157 ; Rank of 2n^2 when {i^3: i>=1} and {2j^2: j>=1} are jointly ranked with i^3 before 2j^2 when i^3=2j^2.  Complement of A186156.
-    mov $1,$0
+    mov $4,$0
     mov $6,$7
     lpb $6,1
       sub $6,1
-      mov $8,$1
+      mov $8,$4
     lpe
   lpe
   lpb $2,1
     mov $2,0
-    sub $8,$1
+    sub $8,$4
   lpe
-  mov $1,$8
-  sub $1,1
-  add $4,$1
+  mov $4,$8
+  sub $4,1
+  add $1,$4
 lpe
-mov $1,$4

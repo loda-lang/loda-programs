@@ -7,11 +7,10 @@ mul $0,2
 lpb $0,1
   add $0,7
   gcd $0,45
-  mov $2,$0
+  mov $1,$0
   mov $0,1
-  add $2,1
+  add $1,1
 lpe
-mov $1,$2
 sub $1,2
 div $1,2
 mul $1,2

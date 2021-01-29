@@ -3,11 +3,10 @@
 
 add $0,2
 cal $0,81611 ; Number of numbers <= n having no 2 in their ternary representation.
-mov $1,1
+mov $1,81
 add $2,$0
-add $1,$2
-mov $3,81
-add $3,$1
-div $3,2
-mov $1,$3
+mov $3,1
+add $3,$2
+add $1,$3
+div $1,2
 sub $1,41

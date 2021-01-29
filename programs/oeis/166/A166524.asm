@@ -4,11 +4,10 @@
 add $0,20
 lpb $0,1
   mul $0,9
-  add $2,$0
+  add $1,$0
   mul $0,6
   mod $0,4
-  add $2,5
+  add $1,5
 lpe
-mov $1,$2
 sub $1,183
 div $1,2

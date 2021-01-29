@@ -36,19 +36,18 @@ lpb $3,1
     lpe
     mul $0,$2
     div $0,6
-    mov $1,$0
+    mov $5,$0
     mov $10,$9
     lpb $10,1
-      mov $8,$1
+      mov $8,$5
       sub $10,1
     lpe
   lpe
   lpb $7,1
     mov $7,0
-    sub $8,$1
+    sub $8,$5
   lpe
-  mov $1,$8
-  add $1,1
-  add $5,$1
+  mov $5,$8
+  add $5,1
+  add $1,$5
 lpe
-mov $1,$5

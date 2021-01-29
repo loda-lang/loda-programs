@@ -5,6 +5,5 @@ lpb $0,1
   mul $0,5
   sub $0,1
   div $0,13
-  add $2,1
+  add $1,1
 lpe
-mov $1,$2

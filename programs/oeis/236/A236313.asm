@@ -5,9 +5,8 @@ add $0,1
 gcd $0,1073741824
 lpb $0,1
   div $0,2
-  add $2,3
-  mul $2,3
+  add $1,3
+  mul $1,3
 lpe
-mov $1,$2
 div $1,27
 add $1,1

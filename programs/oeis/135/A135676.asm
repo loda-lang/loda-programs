@@ -13,23 +13,22 @@ lpb $3,1
     sub $6,1
     add $0,$6
     sub $0,1
-    mov $1,$0
-    add $1,1
-    pow $1,2
-    cal $1,77113 ; Number of integer cubes <= n^2.
-    add $1,$0
+    mov $2,$0
+    add $2,1
+    pow $2,2
+    cal $2,77113 ; Number of integer cubes <= n^2.
+    add $2,$0
     mov $5,$6
     lpb $5,1
       sub $5,1
-      mov $7,$1
+      mov $7,$2
     lpe
   lpe
   lpb $8,1
-    sub $7,$1
+    sub $7,$2
     mov $8,0
   lpe
-  mov $1,$7
-  sub $1,2
-  add $2,$1
+  mov $2,$7
+  sub $2,2
+  add $1,$2
 lpe
-mov $1,$2

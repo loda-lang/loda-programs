@@ -12,19 +12,18 @@ lpb $7,1
   mov $5,3
   mov $8,6
   lpb $2,1
-    mov $1,$5
+    mov $3,$5
     mov $4,2
     lpb $4,1
       cmp $0,$4
-      add $1,$2
-      add $1,1
+      add $3,$2
+      add $3,1
       add $8,7
-      div $1,$8
+      div $3,$8
       div $4,$4
       pow $6,$0
       gcd $2,$6
     lpe
   lpe
-  add $3,$1
+  add $1,$3
 lpe
-mov $1,$3

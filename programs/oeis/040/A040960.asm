@@ -11,22 +11,21 @@ lpb $6,1
   mov $5,$0
   gcd $0,2
   add $0,$5
-  mov $1,$0
+  mov $3,$0
   div $0,$0
-  sub $1,$0
+  sub $3,$0
   mov $7,31
   sub $7,$0
-  mul $1,$7
-  sub $1,1
+  mul $3,$7
+  sub $3,1
   mov $4,$6
   lpb $4,1
-    mov $3,$1
+    mov $1,$3
     sub $4,1
   lpe
 lpe
 lpb $2,1
+  sub $1,$3
   mov $2,0
-  sub $3,$1
 lpe
-mov $1,$3
 add $1,2

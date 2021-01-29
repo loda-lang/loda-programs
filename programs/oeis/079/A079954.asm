@@ -15,14 +15,13 @@ lpb $2,1
     mul $3,3
     fac $3
   lpe
-  add $1,5
   div $3,5
+  add $4,5
   div $6,4
   add $6,1
   sub $6,$3
   mul $6,2
-  mul $1,$6
-  div $1,10
-  add $4,$1
+  mul $4,$6
+  div $4,10
+  add $1,$4
 lpe
-mov $1,$4

@@ -4,26 +4,25 @@
 mov $2,2
 add $2,$0
 gcd $0,$2
-mov $3,7
-add $3,$2
+mov $1,7
+add $1,$2
 lpb $0,1
   mov $5,$0
   add $0,7
-  add $1,$5
-  mov $4,$3
+  add $3,$5
+  mov $4,$1
+  mov $1,8
   mul $5,5
   add $5,2
-  add $1,$5
-  mov $3,8
+  add $3,$5
   add $4,$0
   mov $0,1
-  mov $5,$1
+  mov $5,$3
   mul $5,2
-  add $3,$5
-  add $3,8
-  add $3,$4
+  add $1,$5
+  add $1,8
+  add $1,$4
 lpe
-mov $1,$3
 sub $1,9
 div $1,2
 add $1,1

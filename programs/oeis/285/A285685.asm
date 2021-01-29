@@ -9,15 +9,14 @@ lpb $4,1
   add $0,$4
   cal $0,194964 ; a(n) = 1 + floor(n/sqrt(5)).
   sub $0,1
-  mov $1,$0
   mov $2,$4
+  mov $5,$0
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $3,1
+  sub $1,$5
   mov $3,0
-  sub $5,$1
 lpe
-mov $1,$5

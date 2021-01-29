@@ -20,16 +20,15 @@ lpb $7,1
   add $0,2
   pow $0,2
   add $4,$3
-  mov $1,$4
-  pow $1,5
-  sub $1,8
-  div $1,$0
-  gcd $1,4
-  sub $1,1
-  mul $1,2
-  add $1,1
-  add $2,$1
+  mov $2,$4
+  pow $2,5
+  sub $2,8
+  div $2,$0
+  gcd $2,4
+  sub $2,1
+  mul $2,2
+  add $2,1
+  add $1,$2
   mov $4,2
   cmp $4,$6
 lpe
-mov $1,$2

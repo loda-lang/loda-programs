@@ -3,14 +3,13 @@
 
 mov $3,$0
 add $3,1
-mov $5,$0
+mov $4,$0
 lpb $3,1
-  mov $0,$5
+  mov $0,$4
   sub $3,1
   sub $0,$3
   mov $2,$0
   cal $2,52910 ; Expansion of 1 + 2/(1-2*x-x^3).
   mul $2,2
-  add $4,$2
+  add $1,$2
 lpe
-mov $1,$4

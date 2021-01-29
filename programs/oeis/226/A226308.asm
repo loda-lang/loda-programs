@@ -9,16 +9,15 @@ lpb $3,1
   add $0,$3
   add $0,3
   cal $0,166578 ; a(n) = a(n-3) + 2^(n-4) with a(1) = 1, a(2) = 2, a(3) = 1.
-  mov $1,$0
-  sub $1,2
   mov $2,$3
+  mov $5,$0
+  sub $5,2
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $4,1
+  sub $1,$5
   mov $4,0
-  sub $5,$1
 lpe
-mov $1,$5

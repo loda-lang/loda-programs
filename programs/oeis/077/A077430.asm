@@ -3,10 +3,7 @@
 
 add $0,1
 pow $0,2
-mov $2,$0
-mul $2,2
-log $2,10
-mul $2,162
-mov $1,$2
-div $1,162
+mov $1,$0
+mul $1,2
+log $1,10
 add $1,1

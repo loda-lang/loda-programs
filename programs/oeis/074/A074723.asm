@@ -3,19 +3,18 @@
 
 mov $4,$0
 add $0,9
+mov $1,4
 mov $3,$4
 mul $3,2
 add $3,2
-mov $5,4
 lpb $0,1
   sub $0,1
+  pow $1,2
   mov $2,9
-  pow $5,2
-  trn $2,$5
+  trn $2,$1
   add $3,$2
-  gcd $5,$3
+  gcd $1,$3
 lpe
-mov $1,$5
 sub $1,1
 mul $1,2
 add $1,2

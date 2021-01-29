@@ -28,13 +28,12 @@ lpb $7,1
     lpe
     mul $4,2
     mov $6,$4
-    trn $8,$1
+    trn $8,$10
     mul $3,$8
     add $5,2
     pow $6,2
   lpe
-  mov $1,$6
-  div $1,4
-  add $10,$1
+  mov $10,$6
+  div $10,4
+  add $1,$10
 lpe
-mov $1,$10

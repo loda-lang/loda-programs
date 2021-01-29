@@ -10,19 +10,18 @@ lpb $2,1
   sub $0,$2
   mov $5,$0
   lpb $0,1
-    mov $1,$0
+    mov $3,$0
     cmp $0,1
-    gcd $1,2
-    mul $1,2
-    sub $1,1
+    gcd $3,2
+    mul $3,2
+    sub $3,1
     mul $5,2
     add $5,1
     mov $6,$5
     log $6,2
   lpe
-  add $1,$6
-  trn $1,2
-  add $1,1
-  add $3,$1
+  add $3,$6
+  trn $3,2
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3

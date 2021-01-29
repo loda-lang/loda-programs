@@ -10,12 +10,11 @@ lpb $2,1
   sub $0,$2
   mul $0,3
   cal $0,278907 ; a(n) = floor((n*2^(n+1)+2)/(2*n-(-1)^n+3)) - floor((n*2^(n+1)-2)/(2*n-(-1)^n+3)).
-  mov $1,2
+  mov $3,2
   mov $4,$0
   add $4,1
-  mul $1,$4
-  sub $1,2
-  div $1,2
-  add $3,$1
+  mul $3,$4
+  sub $3,2
+  div $3,2
+  add $1,$3
 lpe
-mov $1,$3

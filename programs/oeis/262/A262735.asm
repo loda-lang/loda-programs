@@ -10,8 +10,7 @@ lpb $2,1
   sub $0,1
   cal $0,142474 ; 1 followed by A141015.
   mul $0,2
-  mov $1,$0
-  div $1,2
-  add $3,$1
+  mov $3,$0
+  div $3,2
+  add $1,$3
 lpe
-mov $1,$3

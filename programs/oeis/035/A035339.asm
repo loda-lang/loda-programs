@@ -5,11 +5,10 @@ mov $3,$0
 cal $0,3623 ; Wythoff AB-numbers: [[n*phi^2]*phi], where phi = (1+sqrt(5))/2.
 add $0,2
 mul $0,2
-mov $1,$0
-mul $1,2
-add $1,1
-mov $2,2
-add $2,$1
-mov $1,$2
+mov $1,2
+mov $2,$0
+mul $2,2
+add $2,1
+add $1,$2
 sub $1,15
 add $1,$3

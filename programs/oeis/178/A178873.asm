@@ -15,8 +15,7 @@ lpb $2,1
   div $3,7
   lpb $0,1
     mov $0,4
-    mov $1,$3
+    mov $6,$3
   lpe
-  add $6,$1
+  add $1,$6
 lpe
-mov $1,$6

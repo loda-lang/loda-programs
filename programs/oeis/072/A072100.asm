@@ -8,11 +8,10 @@ lpb $2,1
   mov $0,$5
   sub $2,1
   sub $0,$2
-  mov $1,$0
-  sub $1,1
+  mov $3,$0
+  sub $3,1
   mov $4,$0
   div $4,2
-  bin $1,$4
-  add $3,$1
+  bin $3,$4
+  add $1,$3
 lpe
-mov $1,$3

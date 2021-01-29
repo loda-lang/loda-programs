@@ -14,6 +14,5 @@ lpb $2,1
     div $0,3
     gcd $0,1073741824
   lpe
-  add $4,$0
+  add $1,$0
 lpe
-mov $1,$4

@@ -8,19 +8,18 @@ lpb $3,1
   sub $3,1
   add $0,$3
   cal $0,264619 ; a(0) = 1; for n>0, working in binary, write n followed by 1 then n-reversed (including leading zeros); show result in base 10.
-  mov $1,$0
-  div $1,2
   mov $2,$3
+  mov $4,$0
+  div $4,2
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $5,1
-  sub $4,$1
+  sub $1,$4
   mov $5,0
 lpe
-mov $1,$4
 sub $1,3
 mul $1,2
 add $1,6

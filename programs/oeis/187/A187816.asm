@@ -3,10 +3,9 @@
 
 cal $0,290255 ; Number of 0's following directly the first 1 in the binary representation of n.
 add $0,1
+mov $1,2
 add $2,$0
-mov $3,2
-pow $3,$2
-mov $1,$3
+pow $1,$2
 sub $1,2
 div $1,2
 add $1,1

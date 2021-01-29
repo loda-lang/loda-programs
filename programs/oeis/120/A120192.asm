@@ -26,42 +26,41 @@ lpb $15,1
       sub $4,1
       sub $4,$2
       sub $0,$4
-      mov $1,1
+      mov $14,1
       lpb $0,1
         sub $0,1
-        add $1,1
-        div $1,7
-        mov $3,$1
-        mov $1,5
+        add $14,1
+        div $14,7
+        mov $3,$14
         add $3,7
         mul $3,8
-        add $1,$3
+        mov $14,5
+        add $14,$3
       lpe
       mov $8,$7
       lpb $8,1
-        mov $6,$1
+        mov $6,$14
         sub $8,1
       lpe
     lpe
     lpb $5,1
       mov $5,0
-      sub $6,$1
+      sub $6,$14
     lpe
-    mov $1,$6
     mov $12,$11
+    mov $14,$6
     lpb $12,1
-      mov $10,$1
+      mov $10,$14
       sub $12,1
     lpe
   lpe
   lpb $9,1
     mov $9,0
-    sub $10,$1
+    sub $10,$14
   lpe
-  mov $1,$10
-  sub $1,8
-  div $1,8
-  add $1,1
-  add $14,$1
+  mov $14,$10
+  sub $14,8
+  div $14,8
+  add $14,1
+  add $1,$14
 lpe
-mov $1,$14

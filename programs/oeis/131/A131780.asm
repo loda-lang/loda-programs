@@ -17,20 +17,19 @@ lpb $2,1
     sub $0,1
     cal $0,131269 ; a(n) = 3*a(n-1) - 2*a(n-2) - a(n-3) + a(n-4) with n>3, a(0)=1, a(1)=2, a(2)=3, a(3)=6.
     div $0,2
-    mov $1,$0
+    mov $3,$0
     mov $5,$6
     lpb $5,1
       sub $5,1
-      mov $7,$1
+      mov $7,$3
     lpe
   lpe
   lpb $8,1
-    sub $7,$1
+    sub $7,$3
     mov $8,0
   lpe
-  mov $1,$7
-  mul $1,2
-  add $1,1
-  add $3,$1
+  mov $3,$7
+  mul $3,2
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3

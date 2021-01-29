@@ -9,6 +9,5 @@ mul $2,3
 lpb $2,1
   mod $2,10
 lpe
-add $3,$2
-mov $1,$3
+add $1,$2
 sub $1,1

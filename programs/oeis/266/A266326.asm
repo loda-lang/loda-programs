@@ -9,18 +9,17 @@ lpb $4,1
   add $0,$4
   mov $3,0
   cal $0,316355 ; 2k-1 appears 2k times after 2k-2 appears once.
+  mov $2,$4
   sub $3,$0
   div $3,4
   add $3,$0
-  mov $1,$3
-  mov $2,$4
+  mov $6,$3
   lpb $2,1
+    mov $1,$6
     sub $2,1
-    mov $6,$1
   lpe
 lpe
 lpb $5,1
+  sub $1,$6
   mov $5,0
-  sub $6,$1
 lpe
-mov $1,$6

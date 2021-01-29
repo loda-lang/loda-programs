@@ -7,8 +7,5 @@ lpe
 fac $0
 sub $0,1
 mod $0,9
-mov $2,$0
-mul $2,3
-mov $1,$2
-div $1,3
+mov $1,$0
 add $1,1

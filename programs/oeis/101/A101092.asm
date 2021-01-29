@@ -3,9 +3,8 @@
 
 add $0,1
 lpb $0,1
-  mov $1,$0
-  cal $1,539 ; Sum of 5th powers: 0^5 + 1^5 + 2^5 + ... + n^5.
+  mov $2,$0
+  cal $2,539 ; Sum of 5th powers: 0^5 + 1^5 + 2^5 + ... + n^5.
   sub $0,1
-  add $2,$1
+  add $1,$2
 lpe
-mov $1,$2

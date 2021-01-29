@@ -18,23 +18,22 @@ lpb $2,1
     mov $5,$0
     mul $0,2
     cal $0,228071 ; Write n in binary and interpret as a decimal number; a(n) is this quantity minus n.
-    mov $1,$0
+    mov $3,$0
     mov $7,$5
     mul $7,3
-    add $1,$7
+    add $3,$7
     mov $11,$10
     lpb $11,1
-      mov $9,$1
+      mov $9,$3
       sub $11,1
     lpe
   lpe
   lpb $8,1
     mov $8,0
-    sub $9,$1
+    sub $9,$3
   lpe
-  mov $1,$9
-  div $1,10
-  add $3,$1
+  mov $3,$9
+  div $3,10
+  add $1,$3
 lpe
-mov $1,$3
 add $1,$4

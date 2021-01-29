@@ -11,11 +11,10 @@ lpb $3,1
   mov $2,$0
   cal $0,131738 ; a(0) = 0. a(n) = (n+1)*(-1)^n, n>0 .
   div $0,8
-  mov $1,$0
   div $2,2
   mul $2,2
-  add $1,$2
-  add $1,1
-  add $4,$1
+  mov $4,$0
+  add $4,$2
+  add $4,1
+  add $1,$4
 lpe
-mov $1,$4

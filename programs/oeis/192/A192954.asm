@@ -20,27 +20,26 @@ lpb $2,1
     trn $7,$10
     lpb $0,1
       sub $0,1
-      mov $1,9
-      add $1,$7
+      mov $6,9
+      add $6,$7
       sub $8,2
       add $7,$8
-      mov $8,$1
+      mov $8,$6
       add $8,11
     lpe
-    mul $1,2
     mov $5,$3
+    mul $6,2
     lpb $5,1
-      mov $4,$1
+      mov $4,$6
       sub $5,1
     lpe
   lpe
   lpb $11,1
-    sub $4,$1
+    sub $4,$6
     mov $11,0
   lpe
-  mov $1,$4
-  sub $1,12
-  div $1,6
-  add $6,$1
+  mov $6,$4
+  sub $6,12
+  div $6,6
+  add $1,$6
 lpe
-mov $1,$6

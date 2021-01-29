@@ -13,8 +13,7 @@ lpb $3,1
   mov $2,5
   log $2,$0
   add $2,2
-  mov $1,$2
-  sub $1,2
-  add $4,$1
+  mov $4,$2
+  sub $4,2
+  add $1,$4
 lpe
-mov $1,$4

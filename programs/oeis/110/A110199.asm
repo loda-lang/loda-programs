@@ -11,16 +11,15 @@ lpb $2,1
   mov $4,$0
   lpb $0,1
     sub $0,1
-    mov $1,$4
+    mov $3,$4
     mov $6,$4
   lpe
   add $0,2
-  div $1,2
-  mul $1,2
+  div $3,2
+  mul $3,2
   div $6,$0
-  bin $1,$6
+  bin $3,$6
   add $6,1
-  div $1,$6
-  add $3,$1
+  div $3,$6
+  add $1,$3
 lpe
-mov $1,$3

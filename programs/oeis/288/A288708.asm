@@ -5,7 +5,6 @@ mov $2,$0
 sub $0,2
 cal $0,192002 ; Counting sequence for Wythoff AB-numbers smaller than n.
 add $0,18
-add $3,$0
-mov $1,$3
+add $1,$0
 sub $1,16
 add $1,$2

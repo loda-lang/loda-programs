@@ -24,30 +24,29 @@ lpb $2,1
       mov $4,$0
       cal $0,130707 ; a(n+3) = 3*(a(n+2) - a(n+1)) + 2*a(n).
       mul $4,$0
-      mov $1,$4
+      mov $3,$4
       mov $8,$7
       lpb $8,1
-        mov $6,$1
+        mov $6,$3
         sub $8,1
       lpe
     lpe
     lpb $5,1
       mov $5,0
-      sub $6,$1
+      sub $6,$3
     lpe
-    mov $1,$6
+    mov $3,$6
     mov $12,$11
     lpb $12,1
-      mov $10,$1
+      mov $10,$3
       sub $12,1
     lpe
   lpe
   lpb $9,1
     mov $9,0
-    sub $10,$1
+    sub $10,$3
   lpe
-  mov $1,$10
-  div $1,2
-  add $3,$1
+  mov $3,$10
+  div $3,2
+  add $1,$3
 lpe
-mov $1,$3

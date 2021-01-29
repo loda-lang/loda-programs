@@ -3,17 +3,16 @@
 
 pow $0,5
 add $0,1
-mov $3,1
+mov $1,1
 lpb $0,1
   div $2,9979199
-  add $2,$3
+  add $2,$1
   sub $0,$2
   sub $0,$2
   trn $0,1
   add $0,1
-  add $3,1
+  add $1,1
 lpe
-sub $3,$0
-add $3,$0
-mov $1,$3
+sub $1,$0
+add $1,$0
 sub $1,1

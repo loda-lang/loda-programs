@@ -22,25 +22,24 @@ lpb $6,1
     sub $9,1
     lpb $2,1
       lpb $4,1
-        mov $1,$0
+        mov $8,$0
         mov $0,$4
         sub $4,$4
       lpe
       sub $2,2
       mov $4,$3
       add $3,$0
-      sub $4,$1
+      sub $4,$8
     lpe
   lpe
-  mov $1,$4
   mov $5,$6
+  mov $8,$4
   lpb $5,1
+    mov $1,$8
     sub $5,1
-    mov $8,$1
   lpe
 lpe
 lpb $10,1
-  sub $8,$1
+  sub $1,$8
   mov $10,0
 lpe
-mov $1,$8

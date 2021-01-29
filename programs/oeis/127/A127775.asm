@@ -18,15 +18,14 @@ lpb $3,1
     mov $5,$7
     pow $5,2
   lpe
-  mov $1,$5
   mov $2,$3
+  mov $4,$5
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $6,1
-  sub $4,$1
+  sub $1,$4
   mov $6,0
 lpe
-mov $1,$4

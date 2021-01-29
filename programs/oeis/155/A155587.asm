@@ -8,9 +8,9 @@ lpb $10,1
   mov $0,$3
   trn $10,1
   sub $0,$10
+  mov $5,2
   mov $9,$0
-  mov $11,2
-  lpb $11,1
+  lpb $5,1
     mov $0,$9
     sub $0,1
     trn $0,1
@@ -25,8 +25,7 @@ lpb $10,1
     mov $0,$2
     bin $2,$4
     div $2,$0
-    sub $11,1
+    sub $5,1
   lpe
-  add $5,$2
+  add $1,$2
 lpe
-mov $1,$5

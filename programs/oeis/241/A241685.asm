@@ -1,23 +1,19 @@
 ; A241685: The total number of squares and rectangles appearing in the Thue-Morse sequence logical matrices after n stages.
 ; 0,2,4,18,60,242,924,3698,14620,58482,233244,932978,3729180,14916722,59655964,238623858,954451740,3817806962,15271053084,61084212338,244336150300,977344601202,3909375608604,15637502434418,62549998552860,250199994211442,1000799932106524,4003199728426098
 
+mov $1,1
 mov $2,1
 mov $3,$0
 gcd $3,2
 mov $4,$3
-mov $5,1
 lpb $0,1
   sub $0,1
-  mul $2,2
-  mod $5,$4
+  mul $1,2
+  mod $2,$4
 lpe
-div $2,3
-add $2,1
-mov $1,$2
-sub $1,$5
-mov $5,$2
-mul $5,$1
-add $5,4
-mov $1,$5
-sub $1,4
+div $1,3
+add $1,1
+mov $5,$1
+sub $5,$2
+mul $1,$5
 mul $1,2

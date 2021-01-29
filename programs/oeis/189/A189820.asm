@@ -6,10 +6,9 @@ lpb $0,1
   lpb $0,1
     mod $0,3
     mul $0,-120259084286
-    mov $2,4
+    mov $1,4
   lpe
   div $0,3
 lpe
-add $2,4
-mov $1,$2
+add $1,4
 div $1,8

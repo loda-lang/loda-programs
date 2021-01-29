@@ -11,15 +11,14 @@ lpb $5,1
   cal $0,143038 ; Triangle read by rows, A000012 * A134309 * A000012; where A134309 = an infinite lower triangular matrix with (1, 1, 2, 4, 8, 16,...) in the main diagonal and the rest zeros.
   mul $0,2
   sub $0,1
-  mov $1,$0
+  mov $3,$0
   mov $4,$5
   lpb $4,1
-    mov $3,$1
+    mov $1,$3
     sub $4,1
   lpe
 lpe
 lpb $2,1
+  sub $1,$3
   mov $2,0
-  sub $3,$1
 lpe
-mov $1,$3

@@ -12,10 +12,9 @@ lpb $3,1
   pow $0,2
   mov $5,59049
   gcd $5,$0
-  mov $1,$5
-  div $1,8
-  mul $1,18
-  add $1,3
-  add $2,$1
+  mov $2,$5
+  div $2,8
+  mul $2,18
+  add $2,3
+  add $1,$2
 lpe
-mov $1,$2

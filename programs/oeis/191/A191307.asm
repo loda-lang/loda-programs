@@ -20,6 +20,5 @@ lpb $4,1
     div $3,6
     bin $2,$3
   lpe
-  add $6,$2
+  add $1,$2
 lpe
-mov $1,$6

@@ -3,14 +3,13 @@
 
 mul $0,4
 pow $0,2
-mov $2,1
-mov $3,4
+mov $1,1
+mov $2,4
 lpb $0,1
   sub $0,1
-  trn $0,$2
-  add $2,$3
+  trn $0,$1
+  add $1,$2
 lpe
-add $2,$3
-mov $1,$2
+add $1,$2
 sub $1,5
 div $1,4

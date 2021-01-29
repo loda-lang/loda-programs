@@ -10,24 +10,23 @@ lpb $4,1
   sub $0,1
   cal $0,52937 ; Expansion of (2-3*x-x^2)/((1-x)*(1-2*x-x^2)).
   add $0,2
-  mov $1,$0
-  div $1,2
-  mul $1,4
-  sub $1,9
-  mov $2,$1
+  mov $5,$0
+  div $5,2
+  mul $5,4
+  sub $5,9
+  mov $2,$5
   add $2,9
-  mov $1,$2
-  sub $1,7
-  div $1,4
-  add $1,1
   mov $3,$4
+  mov $5,$2
+  sub $5,7
+  div $5,4
+  add $5,1
   lpb $3,1
+    mov $1,$5
     sub $3,1
-    mov $5,$1
   lpe
 lpe
 lpb $6,1
-  sub $5,$1
+  sub $1,$5
   mov $6,0
 lpe
-mov $1,$5

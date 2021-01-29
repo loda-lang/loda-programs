@@ -8,16 +8,15 @@ lpb $4,1
   sub $4,1
   add $0,$4
   cal $0,46699 ; a(1) = a(2) = 1, a(n) = a(n - a(n-1)) + a(n-1 - a(n-2)) if n > 2.
-  mov $1,$0
-  mul $1,$0
   mov $2,$4
+  mov $5,$0
+  mul $5,$0
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $3,1
+  sub $1,$5
   mov $3,0
-  sub $5,$1
 lpe
-mov $1,$5

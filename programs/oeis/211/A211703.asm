@@ -13,11 +13,10 @@ lpb $4,1
   mov $6,$0
   gcd $6,24
   lpb $0,1
-    mov $0,$7
+    mov $0,$5
     mov $3,$6
     log $3,2
     mov $6,$3
   lpe
-  add $5,$6
+  add $1,$6
 lpe
-mov $1,$5

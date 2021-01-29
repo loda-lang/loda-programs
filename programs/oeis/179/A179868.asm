@@ -6,6 +6,5 @@ lpb $0,1
   div $2,2
   sub $0,$2
 lpe
-mov $3,$0
-mod $3,4
-mov $1,$3
+mov $1,$0
+mod $1,4

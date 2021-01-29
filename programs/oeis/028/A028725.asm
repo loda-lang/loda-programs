@@ -9,15 +9,14 @@ lpb $3,1
   add $0,$3
   sub $0,1
   cal $0,331574 ; a(n) is the number of subsets of {1..n} that contain 3 even and 3 odd numbers.
-  mov $1,$0
   mov $2,$3
+  mov $5,$0
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $4,1
+  sub $1,$5
   mov $4,0
-  sub $5,$1
 lpe
-mov $1,$5

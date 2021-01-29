@@ -6,9 +6,6 @@ cal $0,278597 ; One half of A278481.
 add $2,$0
 add $1,$2
 mul $1,$0
-mov $2,$1
-add $2,3
-mov $1,$2
-sub $1,5
+sub $1,2
 div $1,2
 add $1,3

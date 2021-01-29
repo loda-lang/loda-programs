@@ -1,26 +1,25 @@
 ; A267685: Decimal representation of the n-th iteration of the "Rule 203" elementary cellular automaton starting with a single ON (black) cell.
 ; 1,4,27,119,495,2015,8127,32639,130815,523775,2096127,8386559,33550335,134209535,536854527,2147450879,8589869055,34359607295,137438691327,549755289599,2199022206975,8796090925055,35184367894527,140737479966719,562949936644095,2251799780130815,9007199187632127
 
-mov $1,1
-mov $3,2
+mov $1,2
+mov $3,1
 lpb $0,1
   sub $0,1
-  mul $1,2
+  div $1,3
   mov $2,5
-  div $3,3
+  mul $3,2
 lpe
 add $0,1
-mul $1,2
-trn $2,$1
-sub $2,$1
+mul $3,2
+trn $2,$3
+sub $2,$3
 sub $0,$2
 add $0,1
-sub $3,$1
-sub $1,2
-mul $0,$1
-add $3,6
-add $3,$0
-mov $1,$3
+sub $1,$3
+sub $3,2
+mul $0,$3
+add $1,6
+add $1,$0
 sub $1,6
 div $1,2
 add $1,1

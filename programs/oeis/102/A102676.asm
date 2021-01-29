@@ -11,9 +11,8 @@ lpb $2,1
   cal $0,196564 ; Number of odd digits in decimal representation of n.
   add $0,1
   mul $0,2
-  mov $1,$0
-  sub $1,2
-  div $1,2
-  add $4,$1
+  mov $4,$0
+  sub $4,2
+  div $4,2
+  add $1,$4
 lpe
-mov $1,$4

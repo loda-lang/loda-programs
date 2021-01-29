@@ -8,17 +8,15 @@ lpb $0,1
   mov $4,3
   mul $5,4
 lpe
-add $1,26
-mov $2,5
+mov $1,5
+add $2,26
 pow $4,$3
 mul $4,2
-add $2,$4
+add $1,$4
 add $5,2
-add $5,$1
-add $2,$5
-add $2,3
-mov $1,$2
-sub $1,38
+add $5,$2
+add $1,$5
+sub $1,35
 div $1,4
 mul $1,2
 add $1,1

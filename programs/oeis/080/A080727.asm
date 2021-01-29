@@ -14,11 +14,10 @@ lpb $2,1
     div $0,3
     div $5,2
     add $5,8
-    mov $1,$5
+    mov $3,$5
   lpe
-  trn $1,8
-  mul $1,2
-  add $1,1
-  add $3,$1
+  trn $3,8
+  mul $3,2
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3

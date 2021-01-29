@@ -14,11 +14,10 @@ lpb $2,1
   pow $3,$4
   mul $0,$3
   cmp $0,7
-  mov $1,1
+  mov $5,1
   add $7,$3
-  add $1,$7
-  div $1,2
-  add $5,$1
+  add $5,$7
+  div $5,2
+  add $1,$5
   mov $7,$0
 lpe
-mov $1,$5

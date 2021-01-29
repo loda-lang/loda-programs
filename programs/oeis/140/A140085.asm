@@ -11,8 +11,7 @@ mov $2,$0
 lpb $0,1
   add $0,$2
   div $0,3
-  add $3,7
+  add $1,7
 lpe
-mov $1,$3
 sub $1,14
 div $1,7

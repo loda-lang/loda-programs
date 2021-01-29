@@ -4,7 +4,6 @@
 add $0,1
 lpb $0,1
   gcd $0,1073741824
-  add $2,1
+  add $1,1
 lpe
-mov $1,$2
 add $1,1

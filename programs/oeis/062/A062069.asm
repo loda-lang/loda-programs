@@ -4,9 +4,8 @@
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,1
 add $2,$0
-mov $3,$2
-cal $3,74400 ; Sum of the even divisors of 2n.
-mov $1,$3
+mov $1,$2
+cal $1,74400 ; Sum of the even divisors of 2n.
 sub $1,2
 div $1,2
 add $1,1

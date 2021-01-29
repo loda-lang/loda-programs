@@ -13,6 +13,5 @@ lpb $3,1
   bin $4,3
   add $4,$2
   add $4,$0
-  add $6,$4
+  add $1,$4
 lpe
-mov $1,$6

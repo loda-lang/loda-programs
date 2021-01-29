@@ -11,9 +11,8 @@ lpb $2,1
   mov $4,$0
   add $4,6
   bin $4,4
-  mov $6,$0
-  add $6,3
-  sub $4,$6
-  add $5,$4
+  mov $5,$0
+  add $5,3
+  sub $4,$5
+  add $1,$4
 lpe
-mov $1,$5

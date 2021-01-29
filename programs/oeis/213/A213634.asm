@@ -4,6 +4,5 @@
 mov $2,$0
 cal $0,213633 ; [A000027/A007978], where [ ] = floor.
 sub $2,$0
-add $3,$2
-mov $1,$3
+add $1,$2
 add $1,1

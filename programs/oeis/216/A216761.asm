@@ -8,9 +8,8 @@ lpb $0,1
   log $0,2
   sub $0,1
 lpe
-mov $3,111
-mul $3,$2
-mov $1,$3
+mov $1,111
+mul $1,$2
 sub $1,333
 div $1,333
 add $1,1

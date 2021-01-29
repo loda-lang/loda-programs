@@ -3,6 +3,5 @@
 
 mul $0,6
 cal $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
-add $2,$0
-mov $1,$2
+add $1,$0
 div $1,100

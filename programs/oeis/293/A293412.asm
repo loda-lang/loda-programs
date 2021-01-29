@@ -3,5 +3,4 @@
 
 pow $0,2
 cal $0,22843 ; Beatty sequence for e: a(n) = floor(n*e).
-add $2,$0
-mov $1,$2
+add $1,$0

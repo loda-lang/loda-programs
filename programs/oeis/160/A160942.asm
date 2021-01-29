@@ -5,10 +5,9 @@ mov $2,$0
 mov $3,$0
 mul $0,2
 sub $0,$2
-mov $4,$3
-mul $4,6
+mov $1,$3
+mul $1,6
 cal $0,169805 ; Twice the sum of the digits of n.
-add $4,6
-mul $4,$0
-mov $1,$4
+add $1,6
+mul $1,$0
 div $1,12

@@ -3,6 +3,5 @@
 
 cal $0,230405 ; a(n) = A000217(A230404(n+1)); the first differences of A219650.
 mul $0,2
-add $2,$0
-div $2,4
-mov $1,$2
+add $1,$0
+div $1,4

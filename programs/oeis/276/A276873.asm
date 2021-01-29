@@ -20,20 +20,19 @@ lpb $2,1
     mul $9,4
     mov $3,$9
     div $3,31
-    mov $1,$3
+    mov $4,$3
     mov $7,$10
     lpb $7,1
       sub $7,1
-      mov $8,$1
+      mov $8,$4
     lpe
   lpe
   lpb $5,1
     mov $5,0
-    sub $8,$1
+    sub $8,$4
   lpe
-  mov $1,$8
-  mul $1,2
-  add $1,1
-  add $4,$1
+  mov $4,$8
+  mul $4,2
+  add $4,1
+  add $1,$4
 lpe
-mov $1,$4

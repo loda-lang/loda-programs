@@ -3,10 +3,9 @@
 
 mov $3,$0
 cal $3,81200 ; 6th binomial transform of (0,1,0,1,0,1,....), A000035.
+mov $1,2
 sub $3,$0
-mov $1,$3
-mul $1,2
-sub $1,2
-mov $2,2
-add $2,$1
-mov $1,$2
+mov $2,$3
+mul $2,2
+sub $2,2
+add $1,$2

@@ -20,12 +20,11 @@ lpb $2,1
   gcd $0,$5
   div $0,3
   sub $0,1
-  trn $1,$4
+  trn $3,$4
   lpb $0,1
     sub $0,1
-    add $1,5
+    add $3,5
   lpe
-  div $1,15
-  add $3,$1
+  div $3,15
+  add $1,$3
 lpe
-mov $1,$3

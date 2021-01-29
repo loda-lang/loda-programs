@@ -17,18 +17,17 @@ lpb $3,1
       trn $5,$2
       mov $6,1
     lpe
-    mov $1,$4
     add $5,1
+    mov $8,$4
     lpb $6,1
-      mov $1,6
       sub $2,$6
       trn $6,$2
+      mov $8,6
     lpe
     sub $2,1
     div $2,2
   lpe
-  div $1,2
-  add $1,1
-  add $8,$1
+  div $8,2
+  add $8,1
+  add $1,$8
 lpe
-mov $1,$8

@@ -3,15 +3,14 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2,1
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
   cal $0,245222 ; Continued fraction of the constant c in A245221; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A022838, else f(n,x) = 1/x.
   add $0,5
   cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $0,1
-  add $3,$0
+  add $1,$0
 lpe
-mov $1,$3

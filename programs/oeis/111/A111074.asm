@@ -6,14 +6,13 @@ gcd $0,8
 mov $5,$3
 add $5,3
 mov $2,$5
-mov $6,3
+mov $4,3
 lpb $0,1
   mov $0,1
-  add $2,$6
+  add $2,$4
   add $2,2
 lpe
 sub $2,3
 pow $2,2
-add $4,$2
-mov $1,$4
+add $1,$2
 div $1,8

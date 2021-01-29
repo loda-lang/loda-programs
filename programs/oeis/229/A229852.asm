@@ -4,9 +4,8 @@
 mul $0,3
 add $0,3
 div $0,2
-mov $2,$0
-sub $2,1
-add $2,$0
-pow $2,2
-mov $1,$2
+mov $1,$0
+sub $1,1
+add $1,$0
+pow $1,2
 mul $1,3

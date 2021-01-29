@@ -4,11 +4,8 @@
 cal $0,29883 ; First differences of Thue-Morse sequence A001285.
 mul $0,3
 add $0,1
-mov $2,$0
-div $2,2
-pow $2,2
-add $2,1
-div $2,2
-add $2,1
-mov $1,$2
-sub $1,1
+mov $1,$0
+div $1,2
+pow $1,2
+add $1,1
+div $1,2

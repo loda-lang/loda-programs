@@ -16,18 +16,17 @@ lpb $5,1
   pow $3,2
   sub $3,4
   mul $0,$3
-  mov $1,$0
   mov $2,$5
+  mov $4,$0
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $6,1
-  sub $4,$1
+  sub $1,$4
   mov $6,0
 lpe
-mov $1,$4
 sub $1,96
 div $1,18
 mul $1,2

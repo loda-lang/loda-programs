@@ -3,16 +3,14 @@
 
 mov $2,$0
 mod $0,2
-mov $3,$2
+mov $1,9
+sub $1,$0
+sub $1,$2
 pow $2,2
-mov $4,9
-sub $4,$0
-sub $4,$3
-add $4,$2
-mov $2,$4
+add $1,$2
+mov $2,$1
+mov $1,3
 sub $2,1
 gcd $2,12
-mov $4,3
-div $4,$2
-mov $1,$4
+div $1,$2
 add $1,1

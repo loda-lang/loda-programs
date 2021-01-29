@@ -5,9 +5,7 @@ mul $0,8
 cal $0,285974 ; Positions of 1 in A285972; complement of A285973.
 mod $0,2
 sub $0,20
-mov $2,1
-sub $2,$0
-sub $2,$0
-sub $2,1
-mov $1,$2
-sub $1,39
+mov $1,1
+sub $1,$0
+sub $1,$0
+sub $1,40

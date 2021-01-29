@@ -3,31 +3,29 @@
 
 mov $2,$0
 add $2,1
-mov $8,$0
+mov $3,$0
 lpb $2,1
-  mov $0,$8
+  mov $0,$3
   trn $2,2
   sub $0,$2
-  mov $1,$0
   mov $4,$0
   add $4,1
-  add $1,$4
   add $5,1
-  mov $6,$1
+  mov $7,$0
+  add $7,$4
+  mov $6,$7
   add $6,1
   mod $6,4
   lpb $0,1
-    mov $3,$1
-    mov $5,$1
-    mov $1,0
-    mul $5,$3
+    mov $5,$7
+    mul $5,$7
     trn $6,1
     mov $0,$6
+    mov $7,0
   lpe
   mul $5,2
   add $0,$5
-  mov $1,$0
-  div $1,2
-  add $7,$1
+  mov $7,$0
+  div $7,2
+  add $1,$7
 lpe
-mov $1,$7

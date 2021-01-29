@@ -12,17 +12,16 @@ lpb $7,1
   gcd $4,2
   lpb $0,1
     sub $0,1
-    mov $1,$2
+    mov $6,$2
     mov $2,$3
-    add $3,$1
+    add $3,$6
     mul $4,2
     sub $4,1
   lpe
   add $3,$4
   add $3,3
-  mov $1,$3
-  sub $1,5
   add $4,3
-  add $6,$1
+  mov $6,$3
+  sub $6,5
+  add $1,$6
 lpe
-mov $1,$6

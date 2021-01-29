@@ -3,10 +3,9 @@
 
 add $0,1
 cal $0,59387 ; Jordan function J_n(6) (see A059379).
-sub $1,$0
-sub $2,$1
-mul $2,2
-mov $1,$2
+sub $2,$0
+sub $1,$2
+mul $1,2
 sub $1,4
 div $1,4
 add $1,1

@@ -5,8 +5,6 @@ add $0,1
 mov $1,$0
 bin $0,3
 add $0,$1
-mov $2,$1
-add $2,1
-mul $2,$0
-mov $1,$2
+add $1,1
+mul $1,$0
 div $1,2

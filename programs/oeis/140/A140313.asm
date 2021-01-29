@@ -10,15 +10,14 @@ lpb $3,1
   sub $0,1
   trn $0,2
   cal $0,140298 ; a(0)=1; a(3n+1) = a(3n)+1, a(3n+2) = a(3n+1) + a(3n) (=3*A000244), a(3n+3) = a(3n+2) + a(3n) (=A003462(n+2)).
-  mov $1,$0
   mov $2,$3
+  mov $5,$0
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $4,1
+  sub $1,$5
   mov $4,0
-  sub $5,$1
 lpe
-mov $1,$5

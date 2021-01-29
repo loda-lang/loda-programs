@@ -3,13 +3,12 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2,1
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
   sub $0,1
   cal $0,165310 ; a(0)=1, a(1)=3, a(n) = 7*a(n-1) - 9*a(n-2) for n > 1.
-  add $3,$0
+  add $1,$0
 lpe
-mov $1,$3

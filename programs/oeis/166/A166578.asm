@@ -14,31 +14,30 @@ lpb $7,1
     sub $3,1
     add $0,$3
     sub $0,1
-    mov $1,2
+    mov $2,2
     mov $8,$0
     add $8,2
-    pow $1,$8
-    div $1,7
+    pow $2,$8
+    div $2,7
     mov $6,$3
     lpb $6,1
       sub $6,1
-      mov $10,$1
+      mov $10,$2
     lpe
   lpe
   lpb $9,1
     mov $9,0
-    sub $10,$1
+    sub $10,$2
   lpe
-  mov $1,$10
+  mov $2,$10
   mov $4,$7
   lpb $4,1
-    mov $2,$1
+    mov $1,$2
     sub $4,1
   lpe
 lpe
 lpb $5,1
-  sub $2,$1
+  sub $1,$2
   mov $5,0
 lpe
-mov $1,$2
 add $1,1

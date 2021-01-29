@@ -3,7 +3,6 @@
 
 mul $0,2
 cal $0,40329 ; Continued fraction for sqrt(348).
-mov $2,$0
-mul $2,3
-div $2,2
-mov $1,$2
+mov $1,$0
+mul $1,3
+div $1,2

@@ -3,8 +3,7 @@
 
 cal $0,265667 ; Permutation of nonnegative integers: a(n) = n + floor(n/3)*(-1)^(n mod 3).
 mul $0,2
-sub $2,$0
-add $2,2
-pow $2,2
-mov $1,$2
+sub $1,$0
+add $1,2
+pow $1,2
 div $1,4

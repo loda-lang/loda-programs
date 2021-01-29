@@ -8,13 +8,12 @@ add $2,4
 pow $2,2
 lpb $0,1
   trn $0,$2
-  add $4,$2
+  add $3,$2
 lpe
-add $4,16
-add $3,$4
-log $3,7
-mul $3,2
-mov $1,$3
+add $3,16
+add $1,$3
+log $1,7
+mul $1,2
 sub $1,2
 div $1,2
 add $1,1
