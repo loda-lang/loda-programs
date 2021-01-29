@@ -11,6 +11,5 @@ lpb $3,1
   cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $2,$0
   pow $2,3
-  add $5,$2
+  add $1,$2
 lpe
-mov $1,$5

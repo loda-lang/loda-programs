@@ -3,7 +3,6 @@
 
 pow $0,2
 cal $0,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
-mov $2,$0
-add $2,$0
-mov $1,$2
+mov $1,$0
+add $1,$0
 div $1,2

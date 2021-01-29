@@ -30,16 +30,15 @@ lpb $4,1
     sub $2,1
   lpe
   add $2,$0
-  mov $1,$2
+  mov $7,$2
   mov $8,$4
   lpb $8,1
-    mov $7,$1
+    mov $1,$7
     sub $8,1
   lpe
 lpe
 lpb $9,1
-  sub $7,$1
+  sub $1,$7
   mov $9,0
 lpe
-mov $1,$7
 add $1,1

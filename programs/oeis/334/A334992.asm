@@ -10,10 +10,9 @@ lpb $4,1
   sub $0,$4
   cal $0,240226 ; 4-adic value of 1/n, n >= 1.
   pow $0,2
-  mov $1,$0
-  div $1,10
-  mul $1,2
-  add $1,1
-  add $2,$1
+  mov $2,$0
+  div $2,10
+  mul $2,2
+  add $2,1
+  add $1,$2
 lpe
-mov $1,$2

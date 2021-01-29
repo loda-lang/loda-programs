@@ -4,24 +4,10 @@
 sub $0,1
 mul $0,2
 lpb $0,1
-  mov $1,$0
-  trn $0,$1
-  add $1,1
-  cal $1,99549
-  mov $3,$0
-  add $2,$1
-  sub $2,1
-  mov $1,$0
-  mov $0,2
-  fac $1
-  mul $0,2
-  mov $1,$0
-  mov $26,$3
-  cmp $26,0
-  add $3,$26
-  div $0,$3
-  sub $0,1
-  mov $4,2
+  mov $2,$0
+  sub $0,$0
+  add $2,1
+  cal $2,99549 ; Odd part of n modulo 8.
+  add $1,$2
 lpe
-div $2,4
-mov $1,$2
+div $1,4

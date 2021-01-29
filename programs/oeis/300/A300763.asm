@@ -15,19 +15,18 @@ lpb $2,1
     add $0,$6
     sub $0,1
     cal $0,198082 ; Ceiling(n*Sqrt(5)).
-    mov $1,$0
+    mov $3,$0
     mov $5,$6
     lpb $5,1
       sub $5,1
-      mov $7,$1
+      mov $7,$3
     lpe
   lpe
   lpb $8,1
-    sub $7,$1
+    sub $7,$3
     mov $8,0
   lpe
-  mov $1,$7
-  sub $1,2
-  add $3,$1
+  mov $3,$7
+  sub $3,2
+  add $1,$3
 lpe
-mov $1,$3

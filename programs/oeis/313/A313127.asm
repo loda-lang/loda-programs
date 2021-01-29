@@ -15,29 +15,28 @@ lpb $2,1
     sub $7,1
     add $0,$7
     sub $0,1
-    mov $1,$0
+    mov $3,$0
     cal $0,330025 ; a(n) = (-1)^floor(n/5) * sign(mod(n, 5)).
-    mul $1,2
-    mov $4,$1
+    mul $3,2
+    mov $4,$3
     mul $4,2
     sub $4,$0
     mov $10,$4
     cmp $10,0
     add $4,$10
     sub $4,1
-    mov $1,$4
+    mov $3,$4
     mov $6,$7
     lpb $6,1
       sub $6,1
-      mov $8,$1
+      mov $8,$3
     lpe
   lpe
   lpb $9,1
-    sub $8,$1
+    sub $8,$3
     mov $9,0
   lpe
-  mov $1,$8
-  add $1,1
-  add $3,$1
+  mov $3,$8
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3

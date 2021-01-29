@@ -8,14 +8,13 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   cal $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); 2^A000120(n).
-  mov $1,$0
-  add $1,$0
+  mov $3,$0
+  add $3,$0
   bin $0,3
-  mul $1,3
+  mul $3,3
   cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,$0
-  mul $1,2
-  div $1,48
-  add $3,$1
+  mul $3,$0
+  mul $3,2
+  div $3,48
+  add $1,$3
 lpe
-mov $1,$3

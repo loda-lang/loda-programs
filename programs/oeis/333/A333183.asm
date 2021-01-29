@@ -29,6 +29,5 @@ lpb $4,1
     lpe
     log $0,$3
   lpe
-  add $8,$0
+  add $1,$0
 lpe
-mov $1,$8

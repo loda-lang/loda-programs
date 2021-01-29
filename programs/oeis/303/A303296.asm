@@ -3,10 +3,8 @@
 
 add $0,1
 pow $0,2
-mov $2,$0
-pow $2,2
-sub $2,1
-mod $2,9
-add $2,6
-mov $1,$2
-sub $1,5
+mov $1,$0
+pow $1,2
+sub $1,1
+mod $1,9
+add $1,1

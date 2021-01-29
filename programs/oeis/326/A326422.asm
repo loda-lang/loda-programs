@@ -7,18 +7,15 @@ div $0,2
 add $0,3
 add $2,$4
 add $2,8
-mov $5,$2
-sub $5,4
+mov $3,$2
+sub $3,4
 lpb $0,1
-  mov $3,$0
+  mov $1,$0
   trn $0,2
+  add $3,6
+  add $1,$3
   div $4,6
   add $4,2
-  add $5,6
-  add $3,$5
 lpe
-add $3,$4
-mul $3,7
-mov $1,$3
-div $1,7
+add $1,$4
 sub $1,22

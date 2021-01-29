@@ -7,19 +7,18 @@ lpb $0,1
   add $0,1
   div $3,10
   add $3,4
-  mov $1,$3
-  add $1,$3
-  add $3,$1
+  mov $4,$3
+  add $4,$3
+  add $3,$4
   add $3,2
   sub $0,$3
   add $0,3
-  mov $4,$1
-  sub $4,1
-  add $0,$4
+  mov $1,$4
+  sub $1,1
+  add $0,$1
+  div $1,2
   sub $3,2
   mul $3,2
-  div $4,2
 lpe
-mov $1,$4
 add $1,8
 add $1,$2

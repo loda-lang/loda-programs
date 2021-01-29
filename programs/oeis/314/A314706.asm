@@ -24,8 +24,7 @@ lpb $4,1
     mov $5,$2
     add $5,2
   lpe
-  mov $1,$5
-  sub $1,1
-  add $6,$1
+  mov $6,$5
+  sub $6,1
+  add $1,$6
 lpe
-mov $1,$6

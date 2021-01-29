@@ -3,11 +3,10 @@
 
 mov $3,$0
 div $3,2
-mov $2,$3
-sub $2,1
-mov $4,$0
-pow $4,2
-div $4,2
-mul $2,$4
-mov $1,$2
+mov $1,$3
+sub $1,1
+mov $2,$0
+pow $2,2
+div $2,2
+mul $1,$2
 div $1,4

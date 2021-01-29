@@ -10,10 +10,9 @@ mov $0,$4
 bin $4,2
 mul $3,$4
 sub $3,4
-mov $2,$3
-mov $5,$0
-sub $5,2
-mul $2,$5
-add $2,$0
-mov $1,$2
+mov $1,$3
+mov $2,$0
+sub $2,2
+mul $1,$2
+add $1,$0
 div $1,12

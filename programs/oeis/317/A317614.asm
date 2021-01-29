@@ -7,11 +7,10 @@ mul $0,2
 lpb $0,1
   lpb $0,1
     sub $0,1
-    add $4,$2
-  lpe
-  lpb $4,1
     add $3,$2
-    trn $4,4
+  lpe
+  lpb $3,1
+    add $1,$2
+    trn $3,4
   lpe
 lpe
-mov $1,$3

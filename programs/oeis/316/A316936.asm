@@ -8,10 +8,10 @@ lpb $11,1
   mov $0,$9
   sub $11,1
   sub $0,$11
-  mov $1,$0
-  trn $1,1
   mov $7,$0
-  add $0,$1
+  mov $10,$0
+  trn $10,1
+  add $0,$10
   mov $2,$0
   mod $0,2
   mov $5,3
@@ -27,13 +27,12 @@ lpb $11,1
       mov $8,$2
       mul $8,$4
     lpe
-    mov $1,$8
-    log $1,2
     sub $2,$2
     add $5,$3
-    sub $5,$1
+    mov $10,$8
+    log $10,2
+    sub $5,$10
     mul $5,2
   lpe
-  add $10,$5
+  add $1,$5
 lpe
-mov $1,$10

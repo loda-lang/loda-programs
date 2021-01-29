@@ -13,19 +13,18 @@ lpb $4,1
   add $0,$2
   mul $0,2
   sub $0,1
-  mov $1,9
   add $5,$0
+  mov $6,9
   lpb $0,1
-    mov $1,$0
+    mov $6,$0
     mov $0,6
     mul $5,9
   lpe
-  add $5,$1
+  add $5,$6
   div $5,$0
   gcd $5,3
   sub $0,$5
-  mov $1,$0
-  add $1,1
-  add $6,$1
+  mov $6,$0
+  add $6,1
+  add $1,$6
 lpe
-mov $1,$6

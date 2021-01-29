@@ -14,15 +14,14 @@ lpb $2,1
     cal $0,120614 ; a(n) = g(n+1) - g(n) where g(k) = floor(phi*floor(k/phi)) and phi = (1+sqrt(5))/2.
     add $0,2
     cal $0,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
-    mov $1,1
-    mul $1,$0
     mov $3,10
-    mul $3,$1
+    mov $4,1
+    mul $4,$0
+    mul $3,$4
     mov $0,$3
   lpe
-  mov $1,$0
-  div $1,10
-  add $1,2
-  add $4,$1
+  mov $4,$0
+  div $4,10
+  add $4,2
+  add $1,$4
 lpe
-mov $1,$4

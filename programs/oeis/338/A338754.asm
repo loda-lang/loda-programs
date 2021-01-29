@@ -13,9 +13,8 @@ lpb $2,1
     mod $0,10
     pow $3,2
   lpe
-  mov $1,$3
-  div $1,72
-  mul $1,11
-  add $4,$1
+  mov $4,$3
+  div $4,72
+  mul $4,11
+  add $1,$4
 lpe
-mov $1,$4
