@@ -11,17 +11,16 @@ lpb $7,1
   cal $0,56576 ; Highest k with 2^k <= 3^n.
   mov $2,$0
   div $2,2
+  mov $3,$7
   add $4,$2
   sub $4,1
-  mov $1,$4
-  mov $3,$7
+  mov $6,$4
   lpb $3,1
+    mov $1,$6
     sub $3,1
-    mov $6,$1
   lpe
 lpe
 lpb $5,1
+  sub $1,$6
   mov $5,0
-  sub $6,$1
 lpe
-mov $1,$6

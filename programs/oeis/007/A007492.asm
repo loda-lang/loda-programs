@@ -17,26 +17,25 @@ lpb $3,1
     add $0,1
     cal $0,215004 ; a(0) = a(1) = 1; for n>1, a(n) = a(n-1) + a(n-2) + floor(n/2).
     sub $0,1
-    mov $1,$0
+    mov $4,$0
     mov $8,$7
     lpb $8,1
-      mov $6,$1
+      mov $6,$4
       sub $8,1
     lpe
   lpe
   lpb $5,1
     mov $5,0
-    sub $6,$1
+    sub $6,$4
   lpe
-  mov $1,$6
   mov $2,$3
+  mov $4,$6
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $9,1
-  sub $4,$1
+  sub $1,$4
   mov $9,0
 lpe
-mov $1,$4

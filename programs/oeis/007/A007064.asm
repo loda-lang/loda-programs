@@ -9,22 +9,21 @@ lpb $7,1
   add $0,$7
   sub $0,1
   mul $0,2
-  mov $1,$0
+  mov $6,$0
   sub $0,3
-  cal $1,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
+  cal $6,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
   add $0,1
-  div $1,2
+  div $6,2
   cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mov $3,$1
+  mov $3,$6
   mul $3,2
-  mov $1,$3
   mov $4,$7
+  mov $6,$3
   lpb $4,1
+    mov $1,$6
     sub $4,1
-    mov $6,$1
   lpe
 lpe
-mov $1,$6
 div $1,2
 add $1,$2
 add $1,2

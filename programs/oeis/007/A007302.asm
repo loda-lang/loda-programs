@@ -3,8 +3,6 @@
 
 mul $0,4
 cal $0,216195 ; Abelian complexity function of the period-doubling sequence (A096268).
-mov $2,1
-mul $2,$0
-sub $2,1
-mov $1,$2
-sub $1,1
+mov $1,1
+mul $1,$0
+sub $1,2

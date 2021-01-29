@@ -4,5 +4,4 @@
 mov $2,$0
 cal $0,329562 ; a(n) = 2^(sum of digits of n).
 sub $2,$0
-mov $0,$2
-mov $1,$0
+mov $1,$2

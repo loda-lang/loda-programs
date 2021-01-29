@@ -8,14 +8,12 @@ lpb $0,1
   mul $0,4
   mov $4,1
 lpe
-mov $1,$4
-mov $2,$1
+mov $2,$4
 mov $3,1
-bin $3,$1
+bin $3,$4
 add $2,$3
 add $2,$0
 mov $1,$2
 mov $6,$5
-mov $7,$6
-mul $7,4
-add $1,$7
+mul $6,4
+add $1,$6

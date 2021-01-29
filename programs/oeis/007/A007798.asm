@@ -3,9 +3,8 @@
 
 sub $0,1
 lpb $0,1
-  mov $1,$0
-  cal $1,5058 ; a(n) = 5^n - 3^n.
+  mov $2,$0
+  cal $2,5058 ; a(n) = 5^n - 3^n.
   sub $0,1
-  add $2,$1
+  add $1,$2
 lpe
-mov $1,$2

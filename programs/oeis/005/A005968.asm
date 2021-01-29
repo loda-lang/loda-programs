@@ -8,21 +8,20 @@ lpb $4,1
   sub $4,1
   sub $0,$4
   add $0,1
-  mov $1,3
   mov $2,3
   mov $5,-2
+  mov $6,3
   lpb $0,1
     sub $0,1
     sub $3,$2
-    add $5,$1
-    mov $1,$3
     mov $2,1
+    add $5,$6
+    mov $6,$3
     mov $3,$5
     add $3,6
   lpe
-  pow $1,3
-  div $1,216
   mov $3,3
-  add $6,$1
+  pow $6,3
+  div $6,216
+  add $1,$6
 lpe
-mov $1,$6

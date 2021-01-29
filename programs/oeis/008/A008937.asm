@@ -8,15 +8,14 @@ lpb $4,1
   sub $4,1
   sub $0,$4
   mov $2,$0
-  mov $7,2
-  lpb $7,1
+  mov $5,2
+  lpb $5,1
     mov $0,$2
     sub $0,1
-    sub $7,1
+    sub $5,1
     cal $0,89068 ; a(n) = a(n-1)+a(n-2)+a(n-3)+2 with a(0)=0, a(1)=0 and a(2)=1.
     mov $3,$0
     add $3,1
   lpe
-  add $5,$3
+  add $1,$3
 lpe
-mov $1,$5

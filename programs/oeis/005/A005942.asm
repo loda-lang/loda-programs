@@ -10,18 +10,17 @@ lpb $2,1
   sub $0,$2
   mov $6,$0
   lpb $0,1
-    mov $1,$6
-    div $1,2
     mov $3,$6
-    sub $3,$1
+    mov $4,$6
+    div $4,2
+    sub $3,$4
     mov $0,$3
-    mov $6,$1
+    mov $6,$4
     add $6,1
   lpe
   bin $6,2
   add $6,12
-  mov $1,$6
-  sub $1,11
-  add $4,$1
+  mov $4,$6
+  sub $4,11
+  add $1,$4
 lpe
-mov $1,$4

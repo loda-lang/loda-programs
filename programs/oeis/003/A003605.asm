@@ -9,7 +9,6 @@ lpb $5,1
   sub $0,$5
   mov $2,$0
   lpb $0,1
-    mov $1,1
     mov $2,$0
     sub $2,2
     mov $3,$0
@@ -17,13 +16,13 @@ lpb $5,1
     div $3,3
     mov $0,$3
     sub $0,1
+    mov $4,1
   lpe
-  add $1,2
+  add $4,2
   mov $6,16777500
   add $6,$2
-  add $1,$6
-  add $1,$6
-  sub $1,33555002
-  add $4,$1
+  add $4,$6
+  add $4,$6
+  sub $4,33555002
+  add $1,$4
 lpe
-mov $1,$4

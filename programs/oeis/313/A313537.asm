@@ -17,19 +17,16 @@ lpb $13,1
     mov $0,$2
     sub $0,6
     div $1,2
+    add $0,$1
+    div $0,10
     sub $2,$1
     mod $2,10
     mov $3,$1
-    gcd $3,2
-    mov $4,$1
     mov $1,$2
-    mov $8,$4
-    add $0,$8
-    div $0,10
+    gcd $3,2
     add $3,2
   lpe
-  mov $2,$3
-  mov $1,$2
+  mov $1,$3
   add $1,1
   add $12,$1
 lpe

@@ -4,18 +4,16 @@
 mov $2,$0
 div $0,3
 sub $2,1
-mov $4,$0
+mov $3,$0
 add $0,10
 lpb $0,1
   mov $0,6
-  trn $3,2
-  div $4,2
-  add $4,1
-  div $4,4
-  add $4,$2
-  add $3,$4
-  div $3,3
+  trn $1,2
+  div $3,2
+  add $3,1
+  div $3,4
+  add $3,$2
+  add $1,$3
+  div $1,3
 lpe
-add $3,5
-mov $1,$3
-sub $1,4
+add $1,1

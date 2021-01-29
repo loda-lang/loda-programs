@@ -26,18 +26,15 @@ lpb $17,1
       mov $6,$0
       trn $6,3
       gcd $8,2
-      mov $4,$8
       add $6,$8
       add $6,1
-      div $6,$4
+      div $6,$8
       mov $1,$6
       sub $1,1
       add $10,$1
     lpe
-    mov $1,$10
-    add $13,$1
+    add $13,$10
   lpe
-  mov $1,$13
-  add $16,$1
+  add $16,$13
 lpe
 mov $1,$16

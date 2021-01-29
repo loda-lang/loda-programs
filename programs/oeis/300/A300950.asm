@@ -18,13 +18,12 @@ lpb $13,1
   sub $3,1
   mov $8,288
   lpb $0,1
+    mov $0,0
     add $4,$3
-    mov $0,$4
     sub $3,$4
     mov $2,$3
     mov $7,$1
-    sub $7,$0
-    mov $0,0
+    sub $7,$4
     add $2,$7
     mul $8,2
   lpe

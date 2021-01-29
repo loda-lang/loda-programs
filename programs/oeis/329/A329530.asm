@@ -28,17 +28,14 @@ lpb $19,1
         trn $8,$0
         mov $0,$3
         mul $8,2
-        mov $7,$8
-        sub $1,$7
+        sub $1,$8
         mul $1,2
         add $1,1
       lpe
       add $12,$1
     lpe
-    mov $1,$12
-    add $15,$1
+    add $15,$12
   lpe
-  mov $1,$15
-  add $18,$1
+  add $18,$15
 lpe
 mov $1,$18

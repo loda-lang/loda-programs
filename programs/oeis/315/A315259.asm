@@ -15,6 +15,5 @@ lpe
 mov $1,$3
 add $1,1
 mov $4,$2
-mov $5,$4
-mul $5,4
-add $1,$5
+mul $4,4
+add $1,$4

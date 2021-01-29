@@ -3,9 +3,7 @@
 
 mov $1,$0
 cal $1,14447 ; Odd Lucas numbers.
-mov $2,$1
-pow $2,2
-mov $1,$2
+pow $1,2
 div $1,8
 mul $1,8
 add $1,1

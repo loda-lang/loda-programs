@@ -12,8 +12,7 @@ lpb $12,1
   add $1,3
   sub $0,$1
   mov $1,$0
-  mov $9,$0
-  add $1,$9
+  add $1,$0
   mov $4,$0
   div $0,4
   add $4,$1

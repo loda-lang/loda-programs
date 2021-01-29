@@ -20,8 +20,7 @@ lpb $20,1
     mov $6,$0
     mul $6,2
     bin $2,$6
-    mov $3,$2
-    add $1,$3
+    add $1,$2
     add $8,$2
     add $1,$8
     add $1,1

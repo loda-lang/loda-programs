@@ -4,11 +4,10 @@
 mov $2,2
 lpb $0,1
   mov $1,$0
-  mov $3,$2
   cal $1,248517 ; Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
-  div $0,$3
+  div $0,$2
   add $2,$1
   sub $2,$1
-  add $4,$1
+  add $3,$1
 lpe
-mov $1,$4
+mov $1,$3

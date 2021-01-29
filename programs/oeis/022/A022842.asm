@@ -5,16 +5,15 @@ add $0,1
 mul $0,2
 pow $0,2
 mul $0,2
-mov $3,11
+mov $1,11
 lpb $0,1
   sub $0,1
-  add $1,2
-  trn $0,$1
+  add $3,2
+  trn $0,$3
+  add $1,4
   mov $2,5
-  add $3,4
 lpe
-add $3,$2
-mov $1,$3
+add $1,$2
 sub $1,24
 div $1,4
 add $1,2

@@ -12,6 +12,5 @@ div $0,5
 mov $1,$0
 add $1,1
 mov $2,$3
-mov $4,$2
-mul $4,5
-add $1,$4
+mul $2,5
+add $1,$2

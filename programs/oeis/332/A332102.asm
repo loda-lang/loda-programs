@@ -3,9 +3,8 @@
 
 mov $7,$0
 mov $0,11
-mov $2,$7
-mov $3,$2
 mov $2,3
+mov $3,$7
 add $3,1
 mov $5,$3
 add $3,6

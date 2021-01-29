@@ -12,13 +12,12 @@ lpb $2,1
   add $3,1
   pow $3,2
   mov $4,6
-  mov $7,6
+  mov $5,6
   lpb $3,1
-    add $3,$7
+    add $3,$5
     div $3,3
     add $4,1
   lpe
   sub $4,8
-  add $5,$4
+  add $1,$4
 lpe
-mov $1,$5

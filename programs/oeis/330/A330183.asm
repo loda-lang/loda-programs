@@ -3,7 +3,7 @@
 
 cal $0,292641 ; Rank of (4+r)*n when all the numbers (4-r)*j and (4+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
 mov $1,$0
-add $0,$1
+mul $0,2
 mov $2,2
 add $2,$1
 mov $1,$0

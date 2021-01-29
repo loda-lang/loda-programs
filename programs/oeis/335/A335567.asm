@@ -4,12 +4,11 @@
 mov $1,$0
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,$1
-mov $3,$0
+mov $2,$0
 mov $0,0
-mov $2,$3
-add $3,$2
-sub $3,3
-pow $3,2
-add $0,$3
+mul $2,2
+sub $2,3
+pow $2,2
+add $0,$2
 mov $1,$0
 div $1,8

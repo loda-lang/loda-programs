@@ -3,17 +3,16 @@
 
 pow $0,2
 mul $0,2
-mov $2,15
+mov $1,15
+mov $2,12
 mov $3,3
 mul $3,$0
-mov $4,12
 lpb $0,1
   mov $0,1
+  mul $2,2
   div $3,2
-  mul $4,2
-  gcd $4,$3
-  mov $2,$4
-  add $2,2
+  gcd $2,$3
+  mov $1,$2
+  add $1,2
 lpe
-mov $1,$2
 sub $1,4

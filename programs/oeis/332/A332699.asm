@@ -18,7 +18,7 @@ lpb $24,1
   lpe
   lpb $0,1
     mov $0,$7
-    pow $1,$0
+    pow $1,$7
   lpe
   add $23,$1
 lpe

@@ -9,11 +9,10 @@ lpb $3,1
   sub $0,$3
   add $0,1
   mul $0,6
-  pow $5,$5
-  add $5,1
-  log $0,$5
-  sub $0,$5
-  add $4,$0
-  cmp $5,7
+  pow $4,$4
+  add $4,1
+  log $0,$4
+  sub $0,$4
+  add $1,$0
+  cmp $4,7
 lpe
-mov $1,$4

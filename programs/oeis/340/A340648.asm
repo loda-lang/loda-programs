@@ -33,7 +33,6 @@ lpb $32,1
     div $1,2
     add $28,$1
   lpe
-  mov $1,$28
-  add $31,$1
+  add $31,$28
 lpe
 mov $1,$31

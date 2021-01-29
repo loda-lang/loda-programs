@@ -4,7 +4,4 @@
 mul $0,2
 cal $0,1965 ; Wythoff game.
 div $0,2
-mov $2,$0
-add $2,1
-mov $1,$2
-sub $1,1
+mov $1,$0

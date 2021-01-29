@@ -3,14 +3,13 @@
 
 mov $2,$0
 mul $2,$0
-mov $3,$2
+mov $1,$2
 lpb $0,1
   trn $0,$2
-  mod $3,6
-  mov $4,8
+  mod $1,6
+  mov $3,8
 lpe
-add $4,7
-gcd $3,$4
-mov $1,$3
+add $3,7
+gcd $1,$3
 div $1,2
 add $1,1

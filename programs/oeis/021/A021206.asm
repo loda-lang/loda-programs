@@ -4,19 +4,16 @@
 lpb $0,1
   mov $4,$0
   trn $0,3
-  mov $1,$0
+  mov $2,$0
   pow $4,2
-  mov $2,$4
-  cal $1,117793 ; Pentagonal numbers divisible by 5.
+  mov $1,$4
+  cal $2,117793 ; Pentagonal numbers divisible by 5.
   sub $0,1
-  add $2,$1
-  div $1,2
-  pow $1,2
-  mov $3,$1
+  add $1,$2
+  div $2,2
+  pow $2,2
+  mov $3,$2
   cmp $3,0
-  add $1,$3
-  div $2,$1
+  add $2,$3
+  div $1,$2
 lpe
-add $2,2
-mov $1,$2
-sub $1,2

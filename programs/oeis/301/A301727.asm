@@ -19,7 +19,7 @@ lpb $12,1
     mul $0,3
     lpb $0,1
       mov $2,$0
-      mov $3,$2
+      mov $3,$0
       sub $3,$5
       sub $0,$3
       add $0,$1
@@ -39,7 +39,6 @@ lpb $12,1
     add $1,1
     add $8,$1
   lpe
-  mov $1,$8
-  add $11,$1
+  add $11,$8
 lpe
 mov $1,$11

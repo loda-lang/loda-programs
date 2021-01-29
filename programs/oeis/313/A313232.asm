@@ -8,6 +8,5 @@ cmp $2,0
 add $0,$2
 mov $1,$0
 mov $4,$3
-mov $5,$4
-mul $5,3
-add $1,$5
+mul $4,3
+add $1,$4

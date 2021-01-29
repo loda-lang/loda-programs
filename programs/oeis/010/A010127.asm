@@ -3,14 +3,13 @@
 
 pow $2,$0
 gcd $0,4
-mov $3,1
+mov $1,1
 lpb $0,1
   add $2,$0
   sub $0,1
-  mul $3,2
-  div $3,$2
+  mul $1,2
+  div $1,$2
+  add $1,5
   gcd $2,2
-  add $3,5
 lpe
-mov $1,$3
 sub $1,6

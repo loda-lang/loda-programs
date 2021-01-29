@@ -32,44 +32,43 @@ lpb $2,1
           add $0,$7
           sub $0,1
           cal $0,264080 ; a(n) = 6*F(n)*F(n+1) + (-1)^n, where F = A000045.
-          mov $1,$0
+          mov $3,$0
           mov $0,6
-          add $1,1
+          add $3,1
           mov $8,$7
           lpb $8,1
-            mov $6,$1
+            mov $6,$3
             sub $8,1
           lpe
         lpe
         lpb $5,1
           mov $5,0
-          sub $6,$1
+          sub $6,$3
         lpe
-        mov $1,$6
+        mov $3,$6
         mov $12,$11
         lpb $12,1
-          mov $10,$1
+          mov $10,$3
           sub $12,1
         lpe
       lpe
       lpb $9,1
         mov $9,0
-        sub $10,$1
+        sub $10,$3
       lpe
-      mov $1,$10
+      mov $3,$10
       mov $16,$15
       lpb $16,1
-        mov $14,$1
+        mov $14,$3
         sub $16,1
       lpe
     lpe
     lpb $13,1
       mov $13,0
-      sub $14,$1
+      sub $14,$3
     lpe
-    mov $1,$14
-    div $1,2
-    add $3,$1
+    mov $3,$14
+    div $3,2
+    add $1,$3
   lpe
 lpe
-mov $1,$3

@@ -6,13 +6,11 @@ lpb $0,1
   sub $0,1
   add $2,$4
   add $3,1
-  add $1,$3
+  add $5,$3
   add $6,$2
-  mov $2,$1
+  mov $2,$5
   sub $6,4
-  add $5,$6
-  sub $5,$1
+  add $1,$6
+  sub $1,$5
 lpe
-add $5,7
-mov $1,$5
-sub $1,6
+add $1,1

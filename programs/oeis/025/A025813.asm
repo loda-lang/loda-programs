@@ -9,15 +9,14 @@ lpb $4,1
   add $0,$4
   sub $0,1
   cal $0,29017 ; Expansion of 1/((1-x)(1-x^2)(1-x^6)(1-x^7)).
-  mov $1,$0
+  mov $3,$0
   mov $5,$4
   lpb $5,1
-    mov $3,$1
+    mov $1,$3
     sub $5,1
   lpe
 lpe
 lpb $2,1
+  sub $1,$3
   mov $2,0
-  sub $3,$1
 lpe
-mov $1,$3

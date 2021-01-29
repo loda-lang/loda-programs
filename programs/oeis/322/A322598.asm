@@ -20,12 +20,10 @@ lpb $21,1
     mod $1,3
     mov $3,$0
     gcd $3,2
-    mov $7,$3
-    add $1,$7
+    add $1,$3
     sub $1,1
     add $17,$1
   lpe
-  mov $1,$17
-  add $20,$1
+  add $20,$17
 lpe
 mov $1,$20

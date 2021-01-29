@@ -7,11 +7,11 @@ lpb $2,1
   sub $2,1
   add $8,1
   lpb $8,1
+    mov $4,$0
     mov $6,$0
     sub $8,1
-    mov $9,$0
     lpb $6,1
-      mov $5,$9
+      mov $5,$4
       sub $6,1
       mov $7,2
       lpb $7,1
@@ -21,10 +21,9 @@ lpb $2,1
         sub $7,1
         cal $3,232508 ; Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally, diagonally or antidiagonally, with no adjacent elements equal.
         sub $0,$3
-        mov $4,$3
+        mov $1,$3
       lpe
     lpe
   lpe
 lpe
-mov $1,$4
 div $1,4

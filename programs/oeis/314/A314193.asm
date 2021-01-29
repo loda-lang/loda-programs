@@ -5,7 +5,7 @@ mov $1,$0
 mov $2,$0
 mov $3,$0
 mov $5,3
-add $5,$3
+add $5,$0
 trn $0,$5
 add $1,$3
 add $0,$1

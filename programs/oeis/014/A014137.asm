@@ -8,11 +8,10 @@ lpb $2,1
   mov $0,$3
   trn $2,1
   sub $0,$2
-  add $1,1
+  add $4,1
   mov $5,$0
   add $5,$0
   bin $5,$0
-  div $5,$1
-  add $4,$5
+  div $5,$4
+  add $1,$5
 lpe
-mov $1,$4

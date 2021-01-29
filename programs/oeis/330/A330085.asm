@@ -25,10 +25,10 @@ lpb $7,1
     pow $3,6
     add $1,$3
     add $6,4
-    mov $8,$6
-    gcd $1,$8
+    gcd $1,$6
     add $4,1
     mod $0,$4
+    mov $8,$6
   lpe
   sub $1,2
   div $1,2

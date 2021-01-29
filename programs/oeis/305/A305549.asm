@@ -3,9 +3,7 @@
 
 mov $2,$0
 mul $2,2
-mov $0,$2
-mov $1,$0
-mov $4,$1
+mov $4,$2
 add $4,1
 cal $4,69039 ; Expansion of x(1+x)^5/(1-x)^7.
 add $3,$4

@@ -14,9 +14,9 @@ lpb $0,1
   mov $4,$0
   sub $0,3
   sub $4,5
+  sub $0,$4
+  add $1,$4
   mov $2,$4
-  sub $0,$2
-  add $1,$2
   sub $2,$5
   add $2,2
   trn $2,$0

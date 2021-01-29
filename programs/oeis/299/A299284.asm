@@ -11,7 +11,6 @@ lpb $2,1
   cmp $4,5
   add $4,$0
   cal $4,299283 ; Coordination sequence for "svh" 3D uniform tiling.
-  mov $1,$4
-  add $5,$1
+  add $5,$4
 lpe
 mov $1,$5

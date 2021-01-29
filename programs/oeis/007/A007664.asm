@@ -19,13 +19,12 @@ lpb $9,1
       add $3,1
       trn $6,$3
     lpe
-    mov $1,$5
-    mul $1,2
     mov $2,$0
     sub $3,1
+    mov $8,$5
+    mul $8,2
   lpe
-  pow $1,$3
   add $2,1
-  add $8,$1
+  pow $8,$3
+  add $1,$8
 lpe
-mov $1,$8

@@ -9,27 +9,26 @@ lpb $0,1
   add $3,$5
   sub $0,$3
   sub $0,1
+  add $2,$5
   mov $6,$0
-  add $8,$5
   lpb $3,1
     lpb $0,1
       mod $0,10
       sub $0,1
-      sub $2,$4
-      mov $4,$8
+      sub $1,$4
+      mov $4,$2
     lpe
     add $0,1
-    mov $3,$2
+    mov $3,$1
   lpe
   lpb $0,1
     sub $0,7
     mov $6,$7
   lpe
-  mov $2,$0
-  add $2,3
+  mov $1,$0
+  add $1,3
 lpe
 lpb $6,1
-  sub $2,$2
+  sub $1,$1
   sub $6,$3
 lpe
-mov $1,$2

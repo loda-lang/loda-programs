@@ -8,11 +8,9 @@ add $1,2
 div $1,2
 pow $1,2
 add $1,1
-mov $4,$0
-mov $3,$4
-mov $2,$3
+mov $2,$0
 mul $2,2
 add $1,$2
-mul $3,$4
-mov $2,$3
-add $1,$2
+mov $3,$0
+mul $3,$0
+add $1,$3

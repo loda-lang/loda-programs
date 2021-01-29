@@ -4,12 +4,10 @@
 mov $3,$0
 mod $0,2
 mov $1,1
-mov $4,$0
-add $1,$4
+add $1,$0
 gcd $2,$1
 mul $2,2
+trn $1,$2
+add $1,$2
 div $3,$2
-mov $5,$2
-trn $1,$5
-add $1,$5
 pow $1,$3

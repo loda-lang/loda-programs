@@ -8,6 +8,5 @@ div $0,2
 sub $0,2
 mov $1,$0
 mov $3,$2
-mov $4,$3
-mul $4,3
-add $1,$4
+mul $3,3
+add $1,$3
