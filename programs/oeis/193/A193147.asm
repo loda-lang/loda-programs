@@ -5,43 +5,25 @@ mov $30,$0
 mov $32,2
 lpb $32,1
   clr $0,30
-  sub $32,1
   mov $0,$30
+  sub $32,1
   add $0,$32
-  sub $0,0
   mov $27,$0
   mov $29,$0
-  add $29,0
   lpb $29,1
-    clr $0,27
-    sub $29,1
     mov $0,$27
+    sub $29,1
     sub $0,$29
-    add $2,$0
     mov $2,$0
-    mov $1,2
-    sub $2,$2
-    mov $1,1
-    add $4,1
-    add $2,$2
-    mov $26,$0
-    cmp $26,0
-    add $0,$26
-    div $1,$0
+    sub $2,$0
     lpb $0,1
-      sub $4,1
       mov $1,$0
-      cal $1,5251
-      add $2,$1
-      div $4,2
-      mov $1,1
-      gcd $4,2
-      add $1,6
+      cal $1,5251 ; a(0) = 0, a(1) = a(2) = a(3) = 1; thereafter, a(n) = a(n-1) + a(n-2) + a(n-4).
       sub $0,1
       trn $0,2
+      add $2,$1
     lpe
-    mov $1,$2
-    add $28,$1
+    add $28,$2
   lpe
   mov $1,$28
   mov $33,$32
@@ -51,7 +33,7 @@ lpb $32,1
   lpe
 lpe
 lpb $30,1
-  sub $31,$1
   mov $30,0
+  sub $31,$1
 lpe
 mov $1,$31

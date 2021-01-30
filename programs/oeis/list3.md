@@ -2688,7 +2688,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A177756](http://oeis.org/A177756) ([L10 program](177/A177756.asm)): Number of ways to place 3 nonattacking bishops on an n X n toroidal board.
 * [A177769](http://oeis.org/A177769) ([L03 program](177/A177769.asm)): a(n) = 111*n.
 * [A177787](http://oeis.org/A177787) ([L06 program](177/A177787.asm)): Number of paths from (0,0) to (n+2,n) using only up and right steps and avoiding two or more consecutive moves up or three or more consecutive moves right.
-* [A177881](http://oeis.org/A177881) ([L14 program](177/A177881.asm)): Partial sums of round(3^n/10).
+* [A177881](http://oeis.org/A177881) ([L06 program](177/A177881.asm)): Partial sums of round(3^n/10).
 * [A177883](http://oeis.org/A177883) ([L11 program](177/A177883.asm)): Period 6: repeat [4, 5, 7, 2, 1, 8].
 * [A177890](http://oeis.org/A177890) ([L07 program](177/A177890.asm)): 15-gonal (or pentadecagonal) pyramidal numbers:  a(n) = n*(n+1)*(13*n-10)/6.
 * [A177898](http://oeis.org/A177898) ([L07 program](177/A177898.asm)): Duplicate of A168198.
@@ -2744,7 +2744,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178675](http://oeis.org/A178675) ([L03 program](178/A178675.asm)): a(n) = 4^n + 4.
 * [A178676](http://oeis.org/A178676) ([L03 program](178/A178676.asm)): a(n) = 5^n + 5.
 * [A178681](http://oeis.org/A178681) ([L03 program](178/A178681.asm)): a(n) = 6^n + 6.
-* [A178703](http://oeis.org/A178703) ([L13 program](178/A178703.asm)): Partial sums of round(3^n/7).
+* [A178703](http://oeis.org/A178703) ([L06 program](178/A178703.asm)): Partial sums of round(3^n/7).
 * [A178704](http://oeis.org/A178704) ([L11 program](178/A178704.asm)): Partial sums of floor(3^n/7).
 * [A178706](http://oeis.org/A178706) ([L16 program](178/A178706.asm)): Partial sums of floor(3^n/5).
 * [A178710](http://oeis.org/A178710) ([L12 program](178/A178710.asm)): Partial sums of floor(4^n/7).
@@ -2954,6 +2954,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181509](http://oeis.org/A181509) ([L16 program](181/A181509.asm)): a(1) = 2, a(n) = (n-th-even n^3) - (sum of previous terms)
 * [A181510](http://oeis.org/A181510) ([L05 program](181/A181510.asm)): Number of permutations of the multiset {1,1,2,2,3,3,...,n+1,n+1} avoiding the permutation patterns {132, 231, 2134}
 * [A181527](http://oeis.org/A181527) ([L08 program](181/A181527.asm)): Binomial transform of A113127; (1, 1, 3, 7, 15, 31,...) convolved with (1, 3, 7, 15, 31, 63,...).
+* [A181532](http://oeis.org/A181532) ([L54 program](181/A181532.asm)): a(0) = 0, a(1) = 1, a(2) = 1; a(n) = a(n-1) + a(n-2) + a(n-4)
 * [A181534](http://oeis.org/A181534) ([L11 program](181/A181534.asm)): Minimum number of rounds to be played to decide a two-player game of up to n rounds in which the winner of round j receives j points.
 * [A181543](http://oeis.org/A181543) ([L03 program](181/A181543.asm)): Triangle of cubed binomial coefficients, T(n,k) = C(n,k)^3, read by rows.
 * [A181565](http://oeis.org/A181565) ([L04 program](181/A181565.asm)): a(n) = 3*2^n + 1.
@@ -3250,7 +3251,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184584](http://oeis.org/A184584) ([L12 program](184/A184584.asm)): floor[(n-1/3)r], where r=sqrt(5); complement of A184585.
 * [A184585](http://oeis.org/A184585) ([L06 program](184/A184585.asm)): floor[(n+1/3)(1+r)], where r=sqrt(5); complement of A184584.
 * [A184586](http://oeis.org/A184586) ([L18 program](184/A184586.asm)): a(n) = floor((n-1/2)*r), where r=sqrt(5); complement of A184587.
-* [A184587](http://oeis.org/A184587) ([L29 program](184/A184587.asm)): a(n) = floor((n+1/2)*s), where s=(5+sqrt(5))/4; complement of A184586.
+* [A184587](http://oeis.org/A184587) ([L09 program](184/A184587.asm)): a(n) = floor((n+1/2)*s), where s=(5+sqrt(5))/4; complement of A184586.
 * [A184589](http://oeis.org/A184589) ([L26 program](184/A184589.asm)): floor(n*e-1); complement of A184590.
 * [A184590](http://oeis.org/A184590) ([L33 program](184/A184590.asm)): floor[(n*e+1)/(e-1)]; complement of A184589.
 * [A184591](http://oeis.org/A184591) ([L27 program](184/A184591.asm)): floor[(n*(pi-1)-1]; complement of A184592.
@@ -4045,6 +4046,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193068](http://oeis.org/A193068) ([L10 program](193/A193068.asm)): Generating primitive Pythagorean triangles by using (n, n+1) gives perimeters for each n.  This sequence list the sum of these perimeters for each n triangles.
 * [A193090](http://oeis.org/A193090) ([L09 program](193/A193090.asm)): Digital roots of the nonzero pentagonal numbers.
 * [A193108](http://oeis.org/A193108) ([L04 program](193/A193108.asm)): The tetrahedral numbers A000292 mod 10.
+* [A193147](http://oeis.org/A193147) ([L54 program](193/A193147.asm)): G.f.: 1/(1 - x - 2*x^3 - x^5).
 * [A193218](http://oeis.org/A193218) ([L13 program](193/A193218.asm)): Number of vertices in truncated tetrahedron with faces that are centered polygons.
 * [A193228](http://oeis.org/A193228) ([L11 program](193/A193228.asm)): Truncated octahedron with faces of centered polygons.
 * [A193248](http://oeis.org/A193248) ([L13 program](193/A193248.asm)): Truncated dodecahedron, and truncated icosahedron with faces of centered polygons.
@@ -4080,6 +4082,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193596](http://oeis.org/A193596) ([L04 program](193/A193596.asm)): Triangle given by p(n,k) = ceiling(C(n,k)/2).
 * [A193608](http://oeis.org/A193608) ([L11 program](193/A193608.asm)): The consecutive squares of numbers multiplied by their next consecutive integer.
 * [A193641](http://oeis.org/A193641) ([L03 program](193/A193641.asm)): Number of arrays of -1..1 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero.
+* [A193643](http://oeis.org/A193643) ([L26 program](193/A193643.asm)): Number of arrays of -3..3 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero
 * [A193649](http://oeis.org/A193649) ([L15 program](193/A193649.asm)): Q-residue of the (n+1)st Fibonacci polynomial, where Q is the triangular array (t(i,j)) given by t(i,j)=1.  (See Comments.)
 * [A193652](http://oeis.org/A193652) ([L06 program](193/A193652.asm)): A020988 and A007583 interleaved.
 * [A193653](http://oeis.org/A193653) ([L11 program](193/A193653.asm)): Q-residue of the Delannoy triangle A008288, where Q is the triangular array (t(i,j)) given by t(i,j)=1.

@@ -3,9 +3,5 @@
 
 add $0,1
 cal $0,116796 ; Number of permutations of length n which avoid the patterns 2314, 3241, 4132.
-add $0,1
-mul $0,2
 mov $1,$0
-sub $1,6
-div $1,2
-add $1,1
+sub $1,1
