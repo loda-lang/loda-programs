@@ -3,8 +3,5 @@
 
 add $0,2
 cal $0,15449 ; Expansion of (1-4*x)/(1-5*x-x^2).
-add $0,4
 mov $1,$0
-sub $1,10
 div $1,5
-add $1,1

@@ -3,7 +3,5 @@
 
 add $0,3
 cal $0,257984 ; Nonhomogeneous Beatty sequence: ceiling((n - 1/2)*Pi))
-mul $0,108
 mov $1,$0
-sub $1,1188
-div $1,108
+sub $1,11

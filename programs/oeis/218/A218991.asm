@@ -3,9 +3,8 @@
 
 add $0,2
 cal $0,15451 ; a(n) = 6*a(n-1) + a(n-2) for n > 1, with a(0) = a(1) = 1.
-add $0,4
 mov $1,$0
-sub $1,11
+sub $1,7
 div $1,6
 mul $1,5
 add $1,6
