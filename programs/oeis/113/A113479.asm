@@ -1,0 +1,31 @@
+; A113479: Starting with the fraction 4/1 as the first term, a(n) is the numerator of the reduced fraction of the n-th term according to the rule: if n is even, multiply the previous term by n/(n+1); otherwise multiply the previous term by (n+1)/n.
+; 4,8,32,128,256,512,4096,32768,65536,131072,524288,2097152,4194304,8388608,134217728,2147483648,4294967296,8589934592,34359738368,137438953472,274877906944,549755813888,4398046511104,35184372088832
+
+cal $0,92054
+add $2,$0
+mov $4,2
+mov $2,1
+mov $3,1
+add $2,10
+add $0,$4
+pow $4,$0
+sub $2,2
+mov $1,$0
+mov $0,5
+pow $3,2
+add $1,$2
+add $1,$4
+sub $3,6
+mov $26,$4
+cmp $26,0
+add $4,$26
+div $0,$4
+mov $1,$3
+sub $4,4
+sub $0,6
+sub $4,$0
+mov $1,$4
+sub $1,10
+div $1,8
+mul $1,4
+add $1,4

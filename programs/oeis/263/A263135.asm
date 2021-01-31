@@ -1,0 +1,29 @@
+; A263135: The maximum number of penny-to-penny connections when n pennies are placed on the vertices of a hexagonal tiling.
+; 0,0,1,2,3,4,6,7,8,9,11,12,13,15,16,17,19,20,21,23,24,25,27,28,30,31,32,34,35,36,38,39,41,42,43,45,46,48,49,50,52,53,55,56,57,59,60,62,63,64,66,67,69,70,72,73,74,76,77,79,80,81,83,84,86,87,89,90
+
+mov $2,$0
+add $2,$2
+add $1,$0
+mov $0,$1
+add $2,$1
+add $1,24
+add $2,18
+mov $1,2
+cal $0,67628
+mov $1,$0
+mov $26,$2
+cmp $26,0
+add $2,$26
+div $1,$2
+sub $2,$0
+add $1,5
+mov $3,0
+mul $1,32
+gcd $0,$1
+mov $1,11
+mov $3,$0
+mov $3,1
+add $4,$0
+mov $1,$2
+sub $1,18
+div $1,2
