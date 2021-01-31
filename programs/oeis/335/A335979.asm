@@ -3,6 +3,4 @@
 
 cal $0,61486 ; Let the number of digits in n be k; a(n) = sum of the products of the digits of n taken r at a time where r ranges from 1 to k.
 div $0,2
-add $0,2
 mov $1,$0
-sub $1,2

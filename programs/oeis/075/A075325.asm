@@ -3,7 +3,4 @@
 
 cal $0,75327 ; Sum of n-th pair in A075325.
 div $0,3
-add $0,3
-mov $1,4
-add $1,$0
-sub $1,7
+mov $1,$0
