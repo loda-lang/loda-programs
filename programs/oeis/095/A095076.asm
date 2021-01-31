@@ -1,29 +1,6 @@
 ; A095076: Parity of 1-fibits in Zeckendorf expansion A014417(n).
 ; 0,1,1,1,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,0,1,1,1,0,1,0,0,0,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,1,0,0,0,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,0,1,1,1,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,1,1,0,1,1,1,0
 
-mov $5,$0
-cal $0,7895
-add $1,10
-mov $4,$0
-mov $0,3
-add $0,$4
-mul $1,2
-mod $4,2
-mov $3,1
-mov $1,19
-fac $3
-sub $4,$3
-mov $2,1
-mov $0,1
-mul $3,2
-mov $0,$4
+cal $0,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
 mov $1,$0
-mov $0,0
-add $2,2
-mov $0,$4
-mov $2,1
-mov $1,$0
-add $1,1
-mov $6,$5
-mul $6,$5
-mul $6,$5
+mod $1,2

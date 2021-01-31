@@ -3,33 +3,20 @@
 
 mov $5,$0
 mov $7,$0
-add $7,1
 lpb $7,1
   clr $0,5
-  sub $7,1
   mov $0,$5
+  sub $7,1
   sub $0,$7
   mul $0,2
   lpb $0,1
     div $0,3
     mov $1,$0
-    mov $4,1
-    cal $1,147582
+    cal $1,147582 ; First differences of A147562.
+    mov $0,0
     add $2,$1
     add $3,$2
-    add $1,2
-    mov $0,$4
-    sub $0,1
-    mul $4,$2
-    mov $4,2
   lpe
-  mul $2,$0
-  mov $0,6
-  mov $1,1
-  add $0,6
-  mov $0,$1
-  mul $4,$0
-  mov $1,$3
-  add $6,$1
+  add $6,$3
 lpe
 mov $1,$6

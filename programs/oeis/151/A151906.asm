@@ -4,21 +4,9 @@
 mul $0,2
 lpb $0,1
   div $0,3
-  mov $1,$0
-  mov $4,1
-  cal $1,147582
-  add $2,$1
-  add $3,$2
-  add $1,2
-  mov $0,$4
-  sub $0,1
-  mul $4,$2
-  mov $4,2
+  mov $3,$0
+  cal $3,147582 ; First differences of A147562.
+  mov $0,0
+  add $2,$3
+  add $1,$2
 lpe
-mul $2,$0
-mov $0,6
-mov $1,1
-add $0,6
-mov $0,$1
-mul $4,$0
-mov $1,$3
