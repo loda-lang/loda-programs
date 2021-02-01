@@ -2,7 +2,5 @@
 ; 1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1
 
 add $0,1
-cal $0,308187 ; Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {0,1}.
-mov $1,1
-add $2,$0
-sub $1,$2
+cal $0,79559 ; Number of partitions of n into distinct parts of the form 2^j-1, j=1,2,....
+mov $1,$0

@@ -1543,10 +1543,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011656](http://oeis.org/A011656) ([L08 program](011/A011656.asm)): A binary m-sequence: expansion of reciprocal of x^3 + x^2 + 1 (mod 2), shifted by 2 initial 0's.
 * [A011657](http://oeis.org/A011657) ([L07 program](011/A011657.asm)): A binary m-sequence: expansion of reciprocal of x^3 + x + 1 (mod 2, shifted by 2 initial 0's).
 * [A011658](http://oeis.org/A011658) ([L03 program](011/A011658.asm)): Period 5: repeat [0, 0, 0, 1, 1]; also expansion of 1/(x^4 + x^3 + x^2 + x + 1) (mod 2).
-* [A011662](http://oeis.org/A011662) ([L22 program](011/A011662.asm)): A binary m-sequence: expansion of reciprocal of x^5 + x^2 + 1.
+* [A011662](http://oeis.org/A011662) ([L05 program](011/A011662.asm)): A binary m-sequence: expansion of reciprocal of x^5 + x^2 + 1.
 * [A011671](http://oeis.org/A011671) ([L14 program](011/A011671.asm)): A binary m-sequence: expansion of reciprocal of x^6+x^5+x^4+x^2+1.
 * [A011672](http://oeis.org/A011672) ([L06 program](011/A011672.asm)): Expansion of reciprocal of x^6+x^3+1 (mod 2).
 * [A011693](http://oeis.org/A011693) ([L10 program](011/A011693.asm)): A binary m-sequence: expansion of reciprocal of x^8+x^5+x^4+x^3+1.
+* [A011707](http://oeis.org/A011707) ([L22 program](011/A011707.asm)): A binary m-sequence: expansion of reciprocal of x^8+x^7+x^6+x^4+x^2+x+1.
 * [A011746](http://oeis.org/A011746) ([L05 program](011/A011746.asm)): Expansion of (1 + x^2)/(1 + x^2 + x^5) mod 2.
 * [A011750](http://oeis.org/A011750) ([L03 program](011/A011750.asm)): Expansion of (1 + x^2)/(1 + x + x^2 + x^3 + x^5) mod 2.
 * [A011751](http://oeis.org/A011751) ([L08 program](011/A011751.asm)): Expansion of (1 + x^4)/(1 + x + x^3 + x^4 + x^5) mod 2.
@@ -1706,7 +1707,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014151](http://oeis.org/A014151) ([L35 program](014/A014151.asm)): Apply partial sum operator thrice to Catalan numbers.
 * [A014162](http://oeis.org/A014162) ([L28 program](014/A014162.asm)): Apply partial sum operator thrice to Fibonacci numbers.
 * [A014166](http://oeis.org/A014166) ([L10 program](014/A014166.asm)): Apply partial sum operator 4 times to Fibonacci numbers.
-* [A014205](http://oeis.org/A014205) ([L11 program](014/A014205.asm)): (1/12)*(n+5)*(n+1)*n^2.
+* [A014205](http://oeis.org/A014205) ([L07 program](014/A014205.asm)): (1/12)*(n+5)*(n+1)*n^2.
 * [A014206](http://oeis.org/A014206) ([L04 program](014/A014206.asm)): a(n) = n^2 + n + 2.
 * [A014209](http://oeis.org/A014209) ([L04 program](014/A014209.asm)): a(n) = n^2 + 3*n - 1.
 * [A014217](http://oeis.org/A014217) ([L18 program](014/A014217.asm)): a(n) = floor(phi^n), where phi = (1+sqrt(5))/2 is the golden ratio.
@@ -2380,6 +2381,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021226](http://oeis.org/A021226) ([L09 program](021/A021226.asm)): Decimal expansion of 1/222.
 * [A021250](http://oeis.org/A021250) ([L13 program](021/A021250.asm)): Decimal expansion of 1/246.
 * [A021256](http://oeis.org/A021256) ([L06 program](021/A021256.asm)): Decimal expansion of 1/252.
+* [A021263](http://oeis.org/A021263) ([L25 program](021/A021263.asm)): Decimal expansion of 1/259.
 * [A021275](http://oeis.org/A021275) ([L04 program](021/A021275.asm)): Decimal expansion of 1/271.
 * [A021277](http://oeis.org/A021277) ([L09 program](021/A021277.asm)): Decimal expansion of 1/273.
 * [A021292](http://oeis.org/A021292) ([L09 program](021/A021292.asm)): Decimal expansion of 1/288.
@@ -3575,6 +3577,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032924](http://oeis.org/A032924) ([L04 program](032/A032924.asm)): Numbers whose ternary expansion contains no 0.
 * [A032925](http://oeis.org/A032925) ([L20 program](032/A032925.asm)): Numbers whose set of base 4 digits is {1,2}.
 * [A032929](http://oeis.org/A032929) ([L19 program](032/A032929.asm)): Numbers whose set of base 8 digits is {1,2}.
+* [A032936](http://oeis.org/A032936) ([L39 program](032/A032936.asm)): Numbers whose set of base 16 digits is {1,2}.
 * [A032943](http://oeis.org/A032943) ([L41 program](032/A032943.asm)): Numbers n such that base 8 representation Sum{d(i)*8^(m-i): i=0,1,...,m} has d(i)=0 for all odd i.
 * [A032960](http://oeis.org/A032960) ([L23 program](032/A032960.asm)): Numbers n such that base 10 representation Sum_{i=0..m} d(i)*10^(m-i) has even d(i) for all odd i.
 * [A032961](http://oeis.org/A032961) ([L09 program](032/A032961.asm)): Numbers n such that base 11 representation Sum_{i=0..m} d(i)*11^(m-i) has even d(i) for all odd i.
@@ -4192,7 +4195,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038725](http://oeis.org/A038725) ([L11 program](038/A038725.asm)): a(n) = 6*a(n-1) - a(n-2), n >= 2, a(0)=1, a(1)=2.
 * [A038731](http://oeis.org/A038731) ([L14 program](038/A038731.asm)): Number of columns in all directed column-convex polyominoes of area n+1.
 * [A038732](http://oeis.org/A038732) ([L16 program](038/A038732.asm)): T(n,n-3), array T as in A038730.
-* [A038733](http://oeis.org/A038733) ([L26 program](038/A038733.asm)): T(n,n-4), array T as in A038730.
+* [A038733](http://oeis.org/A038733) ([L07 program](038/A038733.asm)): T(n,n-4), array T as in A038730.
 * [A038737](http://oeis.org/A038737) ([L11 program](038/A038737.asm)): T(n,n-2), array T as in A038792.
 * [A038739](http://oeis.org/A038739) ([L16 program](038/A038739.asm)): T(n,n-2), array T as in A038738.
 * [A038740](http://oeis.org/A038740) ([L09 program](038/A038740.asm)): T(n,n-3), array T as in A038738.
