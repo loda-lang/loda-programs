@@ -3,7 +3,5 @@
 
 add $0,1
 cal $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-mul $0,2
 mov $1,$0
-div $1,2
 add $1,1
