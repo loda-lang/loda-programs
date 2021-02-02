@@ -3,5 +3,6 @@
 
 add $0,1
 cal $0,184519 ; Upper s-Wythoff sequence, where s=4n-3.  Complement of A184518.
-sub $0,2
+sub $0,1
 mov $1,$0
+sub $1,1

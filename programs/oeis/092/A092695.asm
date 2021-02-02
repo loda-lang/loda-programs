@@ -15,12 +15,11 @@ lpb $5,1
     add $2,$3
     mov $4,$2
     add $4,$2
-    gcd $1,$4
+    gcd $7,$4
   lpe
   mov $2,$8
   add $2,10
-  mul $1,$2
-  div $1,887018
-  add $7,$1
+  mul $7,$2
+  div $7,887018
+  add $1,$7
 lpe
-mov $1,$7

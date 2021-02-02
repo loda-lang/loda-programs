@@ -4,8 +4,6 @@
 cal $0,4197 ; Table of min(x,y), where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
 fac $0
 add $0,1
-mov $2,1
-add $2,$0
-add $2,3
-mov $1,$2
-sub $1,5
+mov $1,1
+add $1,$0
+sub $1,2

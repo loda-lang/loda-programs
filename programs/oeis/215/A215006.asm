@@ -8,10 +8,9 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   sub $0,1
-  mov $5,$0
-  cmp $5,0
-  add $0,$5
+  mov $3,$0
+  cmp $3,0
+  add $0,$3
   cal $0,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
-  add $3,$0
+  add $1,$0
 lpe
-mov $1,$3

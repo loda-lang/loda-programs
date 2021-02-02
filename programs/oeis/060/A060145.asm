@@ -4,7 +4,5 @@
 trn $0,1
 cal $0,339765 ; a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 sub $0,1
-mov $2,$0
-add $2,3
-mov $1,$2
-sub $1,1
+mov $1,$0
+add $1,2

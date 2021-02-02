@@ -3,16 +3,15 @@
 
 mov $3,$0
 mul $0,2
-mov $2,4
-mul $2,$0
-add $2,1
-mov $4,$0
-bin $4,$3
-mul $4,2
-mul $2,$4
-add $2,1
+mov $1,4
+mul $1,$0
+add $1,1
+mov $2,$0
+bin $2,$3
 mul $2,2
-mov $1,$2
+mul $1,$2
+add $1,1
+mul $1,2
 sub $1,6
 div $1,4
 add $1,1

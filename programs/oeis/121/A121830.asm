@@ -5,14 +5,13 @@ mul $0,160
 mov $2,-28
 lpb $0,1
   mul $0,4
-  mov $1,$2
+  mov $3,$2
   mul $2,2
-  mul $1,$2
-  add $1,$2
-  div $0,$1
+  mul $3,$2
+  add $3,$2
+  div $0,$3
   mul $0,5
+  mov $1,$0
   mov $2,1
-  mov $3,$0
 lpe
-mov $1,$3
 div $1,5

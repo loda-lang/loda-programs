@@ -11,10 +11,9 @@ lpb $2,1
   mov $3,$0
   cal $3,74400 ; Sum of the even divisors of 2n.
   pow $3,2
-  mov $1,$3
-  sub $1,4
-  div $1,4
-  add $1,1
-  add $4,$1
+  mov $4,$3
+  sub $4,4
+  div $4,4
+  add $4,1
+  add $1,$4
 lpe
-mov $1,$4

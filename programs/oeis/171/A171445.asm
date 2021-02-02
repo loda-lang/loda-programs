@@ -10,6 +10,5 @@ lpb $3,1
   sub $0,$3
   mov $4,24
   bin $4,$0
-  add $5,$4
+  add $1,$4
 lpe
-mov $1,$5

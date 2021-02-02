@@ -4,14 +4,13 @@
 add $0,1
 mul $0,3
 sub $0,1
-sub $1,$0
 mov $2,$0
 pow $2,2
 add $2,2
 mul $2,$0
-mov $0,$1
-sub $0,$2
 sub $3,$0
-mov $1,$3
+mov $0,$3
+sub $0,$2
+sub $1,$0
 div $1,18
 add $1,1

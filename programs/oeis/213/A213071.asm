@@ -6,9 +6,8 @@ add $0,9
 lpb $0,1
   add $2,$0
   sub $0,2
-  add $3,$2
+  add $1,$2
 lpe
-mov $1,$3
 sub $1,70
 div $1,3
 mul $1,24

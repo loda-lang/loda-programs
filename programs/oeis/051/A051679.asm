@@ -12,8 +12,7 @@ lpb $2,1
   cal $0,142242 ; Row sums of A143200.
   add $4,$0
   sub $4,1
-  mov $1,$4
-  div $1,2
-  add $3,$1
+  mov $3,$4
+  div $3,2
+  add $1,$3
 lpe
-mov $1,$3

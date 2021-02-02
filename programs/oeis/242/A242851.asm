@@ -11,9 +11,7 @@ mul $1,$2
 sub $1,$0
 mul $1,2
 mul $1,$2
-mov $2,$1
-mul $2,2
-mov $1,$2
+mul $1,2
 sub $1,24
 div $1,32
 mul $1,8

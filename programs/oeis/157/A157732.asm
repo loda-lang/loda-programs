@@ -5,24 +5,23 @@ mul $0,9
 mov $4,-4
 sub $4,$0
 mov $0,1
+mov $1,1
 mov $2,1
 mov $3,5
 mov $5,49
 mul $5,$4
+sub $1,$5
+pow $1,2
+add $1,3
 mov $6,1
-sub $6,$5
-pow $6,2
-add $6,3
-mov $7,1
 lpb $0,1
   sub $0,1
   mul $2,2
   mul $3,$2
-  add $7,5
-  mul $6,$7
-  add $6,$3
+  add $6,5
+  mul $1,$6
+  add $1,$3
 lpe
-mov $1,$6
 sub $1,232882
 div $1,2646
 mul $1,882

@@ -4,12 +4,11 @@
 mov $2,9
 mov $4,$0
 lpb $2,1
-  mov $5,$4
-  lpb $5,1
+  mov $1,$4
+  lpb $1,1
     div $4,2
-    sub $5,$4
+    sub $1,$4
   lpe
+  fac $1
   mov $2,$3
-  fac $5
 lpe
-mov $1,$5

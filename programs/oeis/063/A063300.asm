@@ -3,8 +3,7 @@
 
 mul $0,16
 trn $0,5
-mov $2,$0
+mov $1,$0
 div $0,3
-add $2,$0
-mov $1,$2
+add $1,$0
 sub $1,1

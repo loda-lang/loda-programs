@@ -16,15 +16,14 @@ lpb $7,1
     log $0,$8
     add $2,$0
   lpe
-  mov $1,$2
   mov $4,$7
+  mov $5,$2
   lpb $4,1
+    mov $1,$5
     sub $4,1
-    mov $5,$1
   lpe
 lpe
 lpb $3,1
+  sub $1,$5
   mov $3,0
-  sub $5,$1
 lpe
-mov $1,$5

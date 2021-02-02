@@ -3,11 +3,8 @@
 
 mov $2,$0
 mul $2,2
-mov $3,$2
-cal $3,147596 ; a(n) is the number whose binary representation is A138145(n).
-add $3,1
-mov $1,$3
-sub $1,2
+mov $1,$2
+cal $1,147596 ; a(n) is the number whose binary representation is A138145(n).
 div $1,2
 mul $1,2
 add $1,1

@@ -22,8 +22,7 @@ lpb $2,1
   div $0,$3
   add $4,$0
   div $4,2
-  mov $1,$4
-  add $1,1
-  add $5,$1
+  mov $5,$4
+  add $5,1
+  add $1,$5
 lpe
-mov $1,$5

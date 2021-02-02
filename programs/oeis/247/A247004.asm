@@ -4,10 +4,9 @@
 sub $0,4
 gcd $0,16
 sub $0,3
-mov $2,$0
-add $2,2
-lpb $2,1
-  mod $2,7
+mov $1,$0
+add $1,2
+lpb $1,1
+  mod $1,7
 lpe
-mov $1,$2
 add $1,1

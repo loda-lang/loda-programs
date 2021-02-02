@@ -5,14 +5,13 @@ mov $2,$0
 add $2,$0
 div $2,2
 sub $2,1
-mov $3,$2
+mov $1,$2
 lpb $0,1
   mod $0,2
   mov $2,1
-  add $2,$3
+  add $2,$1
 lpe
 lpb $2,1
+  add $1,$0
   sub $2,4
-  add $3,$0
 lpe
-mov $1,$3

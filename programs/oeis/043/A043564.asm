@@ -7,9 +7,8 @@ lpb $0,1
   gcd $0,$2
   mul $0,6
   sub $0,1
-  mov $3,2
+  mov $1,2
 lpe
-mov $1,$3
 pow $1,3
 div $1,8
 add $1,1

@@ -8,15 +8,14 @@ lpb $2,1
   mov $0,$5
   sub $2,1
   sub $0,$2
-  mov $1,$0
-  add $1,$0
-  sub $1,2
+  mov $4,$0
+  add $4,$0
+  sub $4,2
   cal $0,71050 ; Number of 0's in n-th row of triangle in A071035.
-  mov $3,$1
+  mov $3,$4
   sub $3,$0
-  mov $1,$3
-  add $1,2
-  add $4,$1
+  mov $4,$3
+  add $4,2
+  add $1,$4
 lpe
-mov $1,$4
 add $1,$6

@@ -9,14 +9,13 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   mul $0,2
-  mov $1,$0
+  mov $4,$0
   mov $5,$0
   cal $5,294015 ; Sum of the even divisors of 2n, minus the (n-1)st odd number.
-  mul $1,2
-  add $5,$1
-  mov $1,$5
-  div $1,2
-  add $1,1
-  add $4,$1
+  mul $4,2
+  add $5,$4
+  mov $4,$5
+  div $4,2
+  add $4,1
+  add $1,$4
 lpe
-mov $1,$4

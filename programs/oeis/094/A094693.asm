@@ -7,10 +7,9 @@ pow $0,3
 lpb $0,1
   add $0,$4
   sub $0,1
-  add $3,17
+  add $1,17
+  add $3,2
   mov $4,$2
-  add $5,2
-  sub $4,$5
+  sub $4,$3
 lpe
-mov $1,$3
 div $1,17

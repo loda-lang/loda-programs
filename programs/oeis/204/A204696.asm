@@ -10,17 +10,16 @@ lpb $3,1
   sub $0,2
   cal $0,208900 ; Number of bitstrings of length n which (if having two or more runs) the last two runs have different lengths.
   sub $0,3
-  mov $1,$0
-  sub $1,4
-  trn $1,3
   mov $2,$3
+  mov $4,$0
+  sub $4,4
+  trn $4,3
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $5,1
-  sub $4,$1
+  sub $1,$4
   mov $5,0
 lpe
-mov $1,$4

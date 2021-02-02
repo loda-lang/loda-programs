@@ -3,6 +3,5 @@
 
 cal $0,62173 ; a(n) = 2^(n-1) mod n.
 sub $0,4
-mov $2,$0
-cmp $2,0
-mov $1,$2
+mov $1,$0
+cmp $1,0

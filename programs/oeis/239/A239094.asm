@@ -3,6 +3,4 @@
 
 sub $0,2
 cal $0,250212 ; Second partial sums of seventh powers (A001015).
-add $0,1
 mov $1,$0
-sub $1,1

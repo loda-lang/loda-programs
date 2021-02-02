@@ -9,13 +9,12 @@ lpb $3,1
   sub $3,1
   sub $0,$3
   add $0,14
-  mov $1,5
+  mov $2,5
   add $5,1
   gcd $0,$5
-  add $1,$0
-  div $1,12
-  mul $1,2184
-  add $1,14
-  add $2,$1
+  add $2,$0
+  div $2,12
+  mul $2,2184
+  add $2,14
+  add $1,$2
 lpe
-mov $1,$2

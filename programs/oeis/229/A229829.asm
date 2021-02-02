@@ -17,8 +17,7 @@ lpb $2,1
     mod $0,3
     add $0,1
   lpe
-  mov $1,$0
-  add $1,1
-  add $3,$1
+  mov $3,$0
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3

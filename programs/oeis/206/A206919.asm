@@ -11,8 +11,7 @@ lpb $3,1
   cal $2,178225 ; Characteristic function of A006995 (binary palindromes).
   mul $2,$0
   mul $2,2
-  mov $1,$2
-  div $1,2
-  add $4,$1
+  mov $4,$2
+  div $4,2
+  add $1,$4
 lpe
-mov $1,$4

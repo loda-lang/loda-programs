@@ -4,9 +4,7 @@
 mov $1,$0
 cal $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
 pow $1,$0
-mov $2,$1
-mul $2,2
-mov $1,$2
+mul $1,2
 sub $1,2
 div $1,2
 add $1,1

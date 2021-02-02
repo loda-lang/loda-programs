@@ -6,10 +6,9 @@ sub $3,1
 div $3,2
 sub $3,$0
 gcd $0,4
+mov $1,2
 mul $3,2
 mov $2,$3
 div $2,$0
-mov $4,2
-sub $4,$2
-mov $1,$4
+sub $1,$2
 sub $1,3

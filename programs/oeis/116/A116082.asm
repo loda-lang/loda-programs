@@ -15,10 +15,9 @@ lpb $4,1
     sub $0,1
     sub $3,1
     cal $0,115567 ; a(n) = C(n,6) + C(n,5) + C(n,4) + C(n,3) + C(n,2) + C(n,1).
-    mov $1,1
-    add $1,$0
+    mov $6,1
+    add $6,$0
   lpe
-  add $6,$1
+  add $1,$6
 lpe
-mov $1,$6
 sub $1,1

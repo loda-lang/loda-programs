@@ -6,13 +6,11 @@ mov $2,7
 lpb $0,1
   sub $0,1
   mul $2,3
-  mov $3,$2
-  add $3,8
-  mov $2,$3
-  div $3,13
+  mov $1,$2
+  add $1,8
+  mov $2,$1
+  div $1,13
 lpe
-add $3,3
-mov $1,$3
-sub $1,5
+sub $1,2
 div $1,2
 add $1,1

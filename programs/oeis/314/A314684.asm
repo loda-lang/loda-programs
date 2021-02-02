@@ -20,15 +20,14 @@ lpb $5,1
   mov $2,1
   div $6,2
   sub $2,$6
-  mov $1,$2
   mov $3,$5
+  mov $4,$2
   lpb $3,1
+    mov $1,$4
     sub $3,1
-    mov $4,$1
   lpe
 lpe
 lpb $7,1
-  sub $4,$1
+  sub $1,$4
   mov $7,0
 lpe
-mov $1,$4

@@ -9,16 +9,15 @@ lpb $6,1
   sub $0,1
   mov $4,$0
   cal $4,287659 ; Positions of 1 in A287657; complement of A287658.
-  mov $1,$4
   mov $2,$6
+  mov $5,$4
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $3,1
+  sub $1,$5
   mov $3,0
-  sub $5,$1
 lpe
-mov $1,$5
 sub $1,1

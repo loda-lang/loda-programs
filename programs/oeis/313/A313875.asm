@@ -21,17 +21,16 @@ lpb $6,1
   div $7,4
   mov $2,$7
   add $2,$8
-  mov $1,$2
   mov $3,$6
   mov $7,$8
+  mov $10,$2
   lpb $3,1
+    mov $1,$10
     trn $3,2
-    mov $10,$1
   lpe
 lpe
 lpb $9,1
+  sub $1,$10
   mov $9,0
-  sub $10,$1
 lpe
-mov $1,$10
 add $1,$5

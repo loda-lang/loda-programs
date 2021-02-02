@@ -5,10 +5,9 @@ mov $2,$0
 mul $0,2
 add $2,1
 gcd $0,$2
-mov $3,$2
+mov $1,$2
 lpb $0,1
   mov $0,1
-  div $3,2
-  pow $3,2
+  div $1,2
+  pow $1,2
 lpe
-mov $1,$3

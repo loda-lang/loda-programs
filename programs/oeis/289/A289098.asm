@@ -8,14 +8,13 @@ add $0,6
 mov $3,1
 mov $5,1
 sub $5,$2
-mov $6,$5
-mod $6,2
+mov $1,$5
+mod $1,2
 lpb $0,1
   sub $0,2
   mul $3,2
 lpe
 add $4,1
-add $6,$4
-add $6,$3
-mov $1,$6
+add $1,$4
+add $1,$3
 sub $1,3

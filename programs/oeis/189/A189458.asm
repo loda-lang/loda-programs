@@ -3,11 +3,10 @@
 
 cal $0,188302 ; Positions of 1 in A188300; complement of A188301.
 sub $0,1
-mov $2,$0
-sub $2,6
-div $2,2
-mul $2,2
-mov $1,$2
+mov $1,$0
+sub $1,6
+div $1,2
+mul $1,2
 sub $1,2
 div $1,2
 add $1,3

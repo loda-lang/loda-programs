@@ -3,9 +3,7 @@
 
 mod $0,6
 sub $0,5
-mov $2,1
-mul $2,$0
+mov $1,1
+mul $1,$0
 add $0,4
-mov $3,$2
-bin $3,$0
-mov $1,$3
+bin $1,$0

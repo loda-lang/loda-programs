@@ -4,20 +4,19 @@
 mov $2,$0
 add $2,1
 mov $0,$2
-mov $1,1
 mov $2,1
 mul $2,$0
 add $0,1
 log $2,2
 mov $3,4
 mov $4,1
+mov $5,1
 lpb $0,1
   div $0,2
-  sub $1,$2
+  sub $5,$2
+  mov $1,$5
   mov $2,1
-  mov $5,$1
-  add $1,$3
   add $2,$4
+  add $5,$3
 lpe
-mov $1,$5
 sub $1,2

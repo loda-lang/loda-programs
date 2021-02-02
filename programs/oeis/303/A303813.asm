@@ -28,8 +28,7 @@ lpb $2,1
     add $6,8
     mov $3,$6
   lpe
-  mov $1,$3
-  sub $1,24
-  add $7,$1
+  mov $7,$3
+  sub $7,24
+  add $1,$7
 lpe
-mov $1,$7

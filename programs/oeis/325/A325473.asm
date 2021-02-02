@@ -3,10 +3,9 @@
 
 sub $0,1
 lpb $0,1
-  mov $1,$0
-  cal $1,192804 ; Constant term in the reduction of the polynomial 1+x+x^2+...+x^n by x^3->x^2+x+1. See Comments.
+  mov $2,$0
+  cal $2,192804 ; Constant term in the reduction of the polynomial 1+x+x^2+...+x^n by x^3->x^2+x+1. See Comments.
   sub $0,1
-  add $2,$1
+  add $1,$2
 lpe
-mov $1,$2
 add $1,1

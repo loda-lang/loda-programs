@@ -4,24 +4,23 @@
 mov $2,$0
 mov $5,8
 lpb $2,1
-  mov $4,$5
-  lpb $4,1
-    mov $1,2
-    pow $1,$0
+  mov $1,$5
+  lpb $1,1
+    mov $4,2
+    pow $4,$0
     add $0,5
-    mul $1,2
-    sub $4,$4
+    sub $1,$1
+    mul $4,2
   lpe
   mod $0,2
   add $0,3
   mul $0,3
+  mov $1,$4
   sub $2,$2
   fac $3
-  mov $4,$1
-  sub $4,$3
-  mul $4,$0
+  sub $1,$3
+  mul $1,$0
 lpe
-mov $1,$4
 div $1,18
 mul $1,2
 add $1,2

@@ -4,9 +4,6 @@
 cal $0,177227 ; Triangle T(n,m) read by rows: equals -binomial(n,m) in general, but 2 if n=m or m=0.
 sub $0,1
 mul $0,2
-trn $2,$0
-add $2,7
-mov $1,$2
-sub $1,7
+trn $1,$0
 div $1,2
 add $1,1

@@ -7,17 +7,15 @@ lpb $0,1
 lpe
 add $0,4
 add $0,$2
+mov $1,$0
+bin $1,2
 mov $3,$0
-bin $3,2
-mov $4,$0
-div $4,2
-mov $2,$4
+div $3,2
+mov $2,$3
 sub $2,1
 mul $2,2
-mul $3,$2
-add $3,1
-mov $1,$3
-sub $1,13
+mul $1,$2
+sub $1,12
 div $1,4
 mul $1,6
 add $1,17

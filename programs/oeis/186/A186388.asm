@@ -4,11 +4,10 @@
 add $0,8
 bin $0,2
 lpb $0,1
-  add $3,$0
+  add $1,$0
   mov $0,2
+  sub $1,9
   add $2,6
-  sub $3,9
-  div $3,$2
+  div $1,$2
 lpe
-mov $1,$3
 sub $1,2

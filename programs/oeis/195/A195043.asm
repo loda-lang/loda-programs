@@ -3,8 +3,7 @@
 
 pow $0,2
 mov $1,$0
-div $1,4
-mul $1,7
 mov $2,$0
-add $2,$1
-mov $1,$2
+div $2,4
+mul $2,7
+add $1,$2

@@ -13,11 +13,10 @@ lpb $3,1
   sub $2,1
   sub $0,$2
   sub $0,6
-  mov $1,$0
+  mov $4,$0
   cmp $6,0
-  add $1,$6
-  div $0,$1
-  add $0,$1
-  add $4,$0
+  add $4,$6
+  div $0,$4
+  add $0,$4
+  add $1,$0
 lpe
-mov $1,$4

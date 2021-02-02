@@ -15,22 +15,21 @@ lpb $3,1
     mov $0,$9
     sub $7,1
     sub $0,$7
-    mov $1,$0
-    bin $1,2
     mov $2,$0
+    mov $5,$0
     sub $0,1
     pow $2,2
     add $0,$2
-    sub $1,$2
-    add $1,3
+    bin $5,2
+    sub $5,$2
     add $2,$0
-    sub $2,$1
+    add $5,3
+    sub $2,$5
     mov $0,$2
     sub $0,1
     mov $4,6
     add $4,$0
     add $8,$4
   lpe
-  add $5,$8
+  add $1,$8
 lpe
-mov $1,$5

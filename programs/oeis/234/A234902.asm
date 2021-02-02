@@ -14,10 +14,9 @@ lpb $2,1
   lpb $0,1
     mov $0,5
   lpe
-  mov $1,3
-  mul $1,$0
-  div $1,3
-  add $1,2
-  add $3,$1
+  mov $3,3
+  mul $3,$0
+  div $3,3
+  add $3,2
+  add $1,$3
 lpe
-mov $1,$3

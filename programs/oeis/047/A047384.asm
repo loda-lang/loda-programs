@@ -22,19 +22,18 @@ lpb $9,1
     lpe
     mov $0,$2
     div $0,2
-    mov $1,$0
     mov $6,$5
+    mov $8,$0
     lpb $6,1
-      mov $4,$1
+      mov $4,$8
       sub $6,1
     lpe
   lpe
   lpb $3,1
     mov $3,0
-    sub $4,$1
+    sub $4,$8
   lpe
-  mov $1,$4
-  sub $1,1
-  add $8,$1
+  mov $8,$4
+  sub $8,1
+  add $1,$8
 lpe
-mov $1,$8

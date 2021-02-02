@@ -8,17 +8,16 @@ lpb $3,1
   sub $3,1
   add $0,$3
   cal $0,80578 ; a(1)=1; for n > 1, a(n) = a(n-1) + 1 if n is already in the sequence, a(n) = a(n-1) + 3 otherwise.
-  mov $1,$0
+  mov $4,$0
   mov $5,$3
   lpb $5,1
-    mov $4,$1
+    mov $1,$4
     sub $5,1
   lpe
 lpe
 lpb $2,1
+  sub $1,$4
   mov $2,0
-  sub $4,$1
 lpe
-mov $1,$4
 sub $1,1
 div $1,2

@@ -3,20 +3,17 @@
 
 mov $1,$0
 pow $1,2
-mov $2,$1
+mov $2,3
+add $2,$1
 mov $1,-1
-mov $4,3
-add $4,$2
-sub $4,1
-pow $1,$4
+sub $2,1
+pow $1,$2
 add $1,2
-mov $3,$4
+mov $3,$2
 div $3,2
 add $1,$3
 add $1,$3
-mov $5,$1
-mod $5,18
-mov $1,$5
+mod $1,18
 sub $1,3
 div $1,2
 add $1,1

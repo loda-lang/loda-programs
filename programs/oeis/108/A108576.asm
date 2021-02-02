@@ -9,10 +9,9 @@ lpb $2,1
   sub $0,$2
   add $0,1
   div $0,2
-  mov $4,$1
+  mov $4,$3
   add $4,1
   sub $0,$4
   cal $0,108578 ; Number of 3 X 3 magic squares with magic sum 3n.
-  add $3,$0
+  add $1,$0
 lpe
-mov $1,$3

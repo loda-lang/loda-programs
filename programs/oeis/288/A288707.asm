@@ -10,18 +10,17 @@ lpb $3,1
   sub $0,1
   div $0,2
   cal $0,189663 ; Partial sums of A189661.
+  mov $2,$3
   mov $4,$0
   mul $4,2
-  mov $1,$4
-  mov $2,$3
+  mov $6,$4
   lpb $2,1
+    mov $1,$6
     sub $2,1
-    mov $6,$1
   lpe
 lpe
 lpb $5,1
+  sub $1,$6
   mov $5,0
-  sub $6,$1
 lpe
-mov $1,$6
 div $1,2

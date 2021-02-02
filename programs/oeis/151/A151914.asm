@@ -11,9 +11,8 @@ lpb $2,1
   cal $0,147582 ; First differences of A147562.
   add $0,3
   div $0,2
-  mov $1,$0
-  sub $1,1
-  mul $1,4
-  add $3,$1
+  mov $3,$0
+  sub $3,1
+  mul $3,4
+  add $1,$3
 lpe
-mov $1,$3

@@ -6,10 +6,6 @@ add $0,9
 mov $1,$0
 div $1,2
 mul $1,4
-sub $1,9
-mov $2,$1
-add $2,9
-mov $1,$2
 sub $1,8
 div $1,4
 sub $1,3

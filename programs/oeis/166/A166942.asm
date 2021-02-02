@@ -22,6 +22,5 @@ lpb $6,1
     mov $2,$3
     pow $2,2
   lpe
-  add $7,$2
+  add $1,$2
 lpe
-mov $1,$7

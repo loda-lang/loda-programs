@@ -4,17 +4,16 @@
 lpb $0,1
   mov $2,$0
   mul $0,2
-  sub $4,$0
-  mov $3,$4
-  trn $3,$0
-  mul $2,$3
-  mov $3,$2
-  add $3,$0
-  mov $0,$3
+  sub $3,$0
+  mov $1,$3
+  trn $1,$0
+  mul $2,$1
+  mov $1,$2
+  add $1,$0
+  mov $0,$1
   div $0,4
-  mov $4,$3
-  mul $3,2
+  mov $3,$1
+  mul $1,2
 lpe
-mov $1,$3
 trn $1,2
 div $1,2

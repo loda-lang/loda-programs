@@ -3,9 +3,8 @@
 
 mov $2,$0
 cal $0,188299 ; Positions of 1 in A188297; complement of A188298.
-mov $3,$0
-sub $3,2
-div $3,2
-mov $1,$3
+mov $1,$0
+sub $1,2
+div $1,2
 add $1,1
 add $1,$2

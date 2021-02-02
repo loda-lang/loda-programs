@@ -7,16 +7,16 @@ sub $2,$0
 mov $0,2
 mov $3,2
 lpb $0,1
-  mov $1,$0
+  mov $4,$0
   mov $0,0
   add $2,$3
   add $2,2
   sub $2,$3
-  add $1,$2
+  add $4,$2
   sub $2,1
-  add $3,$1
-  sub $1,1
-  pow $1,3
+  add $3,$4
+  sub $4,1
+  pow $4,3
   trn $5,2
   add $5,$2
   add $2,1
@@ -24,9 +24,8 @@ lpb $0,1
   mul $5,$2
   mul $3,$5
 lpe
-add $4,$3
-mul $4,$1
-mov $1,$4
+add $1,$3
+mul $1,$4
 sub $1,432
 div $1,24
 add $1,18

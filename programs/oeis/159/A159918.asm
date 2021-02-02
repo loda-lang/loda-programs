@@ -4,8 +4,7 @@
 pow $0,2
 mov $1,$0
 mov $2,$0
-lpb $2,1
-  div $1,2
-  sub $2,$1
+lpb $1,1
+  div $2,2
+  sub $1,$2
 lpe
-mov $1,$2

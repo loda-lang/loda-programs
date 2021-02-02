@@ -6,6 +6,5 @@ cal $0,56944 ; Amount by which used area of rectangle needed to enclose a non-to
 sub $0,$2
 add $3,$0
 add $0,$3
-sub $4,$0
-mov $1,$4
+sub $1,$0
 div $1,2

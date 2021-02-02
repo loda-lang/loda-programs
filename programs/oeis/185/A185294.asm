@@ -4,10 +4,8 @@
 div $0,2
 sub $0,3
 pow $0,2
-mov $2,$0
-div $2,8
-sub $2,$0
-add $2,$0
-mov $3,$2
-bin $3,4
-mov $1,$3
+mov $1,$0
+div $1,8
+sub $1,$0
+add $1,$0
+bin $1,4

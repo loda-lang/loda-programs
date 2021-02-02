@@ -16,27 +16,26 @@ lpb $6,1
   mul $3,$7
   lpb $0,1
     sub $0,$0
-    mov $1,1
     add $3,1
     mov $5,3
+    mov $8,1
   lpe
-  add $1,$3
-  mul $1,$5
-  mul $1,4
+  mov $2,$6
   mov $4,$5
   add $4,1
   mul $4,4
+  add $8,$3
+  mul $8,$5
+  mul $8,4
   mov $10,$4
   add $10,1
-  div $1,$10
-  mov $2,$6
+  div $8,$10
   lpb $2,1
+    mov $1,$8
     sub $2,1
-    mov $8,$1
   lpe
 lpe
 lpb $9,1
-  sub $8,$1
+  sub $1,$8
   mov $9,0
 lpe
-mov $1,$8

@@ -3,16 +3,15 @@
 
 mov $3,$0
 add $3,2
-mov $2,$3
-pow $2,9
+mov $1,$3
+pow $1,9
 pow $3,5
 lpb $0,1
-  trn $0,$2
-  sub $2,$3
-  mov $4,10
+  trn $0,$1
+  sub $1,$3
+  mov $2,10
 lpe
-add $2,$4
-mov $1,$2
+add $1,$2
 sub $1,490
 div $1,240
 mul $1,60

@@ -12,15 +12,14 @@ lpb $3,1
   add $0,3
   cal $0,259626 ; List of numbers L and L + 1, where L = A000032, the Lucas numbers, sorted into increasing order and duplicates removed.
   div $0,5
-  mov $1,$0
   mov $2,$3
+  mov $4,$0
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $5,1
-  sub $4,$1
+  sub $1,$4
   mov $5,0
 lpe
-mov $1,$4

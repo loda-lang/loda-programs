@@ -16,20 +16,19 @@ lpb $2,1
     add $0,$7
     sub $0,1
     cal $0,315468 ; Coordination sequence Gal.5.300.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-    mov $1,$0
-    cal $1,180004 ; Nearest integer to n*(27/26)
+    mov $3,$0
+    cal $3,180004 ; Nearest integer to n*(27/26)
     mov $8,$7
     lpb $8,1
-      mov $6,$1
+      mov $6,$3
       sub $8,1
     lpe
   lpe
   lpb $5,1
     mov $5,0
-    sub $6,$1
+    sub $6,$3
   lpe
-  mov $1,$6
-  sub $1,1
-  add $3,$1
+  mov $3,$6
+  sub $3,1
+  add $1,$3
 lpe
-mov $1,$3

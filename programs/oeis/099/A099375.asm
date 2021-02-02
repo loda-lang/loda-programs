@@ -8,11 +8,10 @@ mov $2,$0
 add $3,1
 lpb $2,1
   lpb $3,1
-    mov $1,$3
-    add $4,2
-    trn $3,$4
+    add $1,2
+    mov $4,$3
+    trn $3,$1
   lpe
   sub $2,1
 lpe
-sub $4,$1
-mov $1,$4
+sub $1,$4

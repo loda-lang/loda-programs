@@ -9,26 +9,25 @@ mul $6,$0
 lpb $6,1
   add $4,$5
   lpb $6,1
-    add $3,2
+    add $1,2
     add $4,5
     add $6,$4
     sub $4,1
     div $6,5
   lpe
 lpe
-add $1,2
-pow $1,2
-add $3,1
-add $3,$1
-lpb $1,1
-  lpb $1,1
-    add $1,$5
-    sub $1,2
+add $1,1
+add $3,2
+pow $3,2
+add $1,$3
+lpb $3,1
+  lpb $3,1
+    add $3,$5
+    sub $3,2
   lpe
-  sub $1,7
-  sub $3,2
+  sub $1,2
+  sub $3,7
 lpe
-mov $1,$3
 sub $1,5
 div $1,2
 add $1,1

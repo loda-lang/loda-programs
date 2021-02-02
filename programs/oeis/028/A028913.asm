@@ -27,15 +27,14 @@ lpb $7,1
     mov $4,$3
     mov $5,1
   lpe
-  mov $1,$0
   mov $6,$7
+  mov $9,$0
   lpb $6,1
+    mov $1,$9
     sub $6,1
-    mov $9,$1
   lpe
 lpe
 lpb $10,1
-  sub $9,$1
+  sub $1,$9
   mov $10,0
 lpe
-mov $1,$9

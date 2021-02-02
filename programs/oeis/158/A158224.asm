@@ -4,8 +4,6 @@
 mul $0,98
 mov $1,98
 add $1,$0
-mov $2,$1
-bin $2,2
-mov $1,$2
+bin $1,2
 div $1,49
 mul $1,2

@@ -5,11 +5,6 @@ lpb $0,1
   mov $2,$0
   div $0,10
   mod $2,10
-  add $4,$2
+  add $1,$2
 lpe
-fac $4
-add $4,1
-mov $3,$4
-add $3,6
-mov $1,$3
-sub $1,7
+fac $1

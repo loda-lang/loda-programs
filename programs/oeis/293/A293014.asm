@@ -10,15 +10,14 @@ lpb $4,1
   sub $0,2
   mov $3,$0
   cal $3,173434 ; a(n) = (A000045(n)-A173432(n))/2.
-  mov $1,$3
   mov $2,$4
+  mov $5,$3
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $6,1
-  sub $5,$1
+  sub $1,$5
   mov $6,0
 lpe
-mov $1,$5

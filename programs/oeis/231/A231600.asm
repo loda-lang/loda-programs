@@ -9,6 +9,5 @@ lpe
 mod $0,3
 lpb $0,1
   sub $0,3
-  mov $3,$2
+  mov $1,$2
 lpe
-mov $1,$3

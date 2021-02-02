@@ -11,11 +11,10 @@ lpb $0,1
   gcd $3,$0
   sub $0,52
   div $0,52
+  mov $1,52
   trn $3,3
   mov $4,2
-  mov $5,52
 lpe
-mov $1,$5
 add $1,$4
 sub $1,$3
 trn $1,41

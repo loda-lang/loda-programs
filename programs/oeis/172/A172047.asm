@@ -11,12 +11,11 @@ lpb $6,1
   mul $4,$0
   mul $0,$4
   mul $0,5
-  mov $2,$1
+  mov $2,$7
   add $2,2
   mov $3,$4
   add $3,$4
   mul $3,$2
   sub $0,$3
-  add $7,$0
+  add $1,$0
 lpe
-mov $1,$7

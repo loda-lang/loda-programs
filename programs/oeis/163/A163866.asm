@@ -9,9 +9,8 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   cal $0,131063 ; Triangle read by rows: T(n,k) = 5*binomial(n,k) - 4  for 0 <= k <= n.
-  mov $1,$0
-  div $1,5
-  add $1,1
-  add $3,$1
+  mov $3,$0
+  div $3,5
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3

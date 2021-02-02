@@ -14,27 +14,26 @@ lpb $5,1
     sub $3,1
     add $0,$3
     sub $0,1
-    mov $1,$0
-    cal $1,55990 ; a(n) is its own 4th difference.
+    mov $7,$0
+    cal $7,55990 ; a(n) is its own 4th difference.
     mov $9,$3
     lpb $9,1
-      mov $6,$1
+      mov $6,$7
       sub $9,1
     lpe
   lpe
   lpb $4,1
     mov $4,0
-    sub $6,$1
+    sub $6,$7
   lpe
-  mov $1,$6
   mov $2,$5
+  mov $7,$6
   lpb $2,1
+    mov $1,$7
     sub $2,1
-    mov $7,$1
   lpe
 lpe
 lpb $8,1
-  sub $7,$1
+  sub $1,$7
   mov $8,0
 lpe
-mov $1,$7

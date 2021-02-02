@@ -17,26 +17,25 @@ lpb $3,1
     sub $0,1
     mul $0,2
     cal $0,313475 ; Coordination sequence Gal.6.119.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-    mov $1,$0
-    sub $1,1
-    mov $2,$1
+    mov $4,$0
+    sub $4,1
+    mov $2,$4
     add $2,5
     mul $2,2
-    mov $1,$2
+    mov $4,$2
     mov $8,$7
     lpb $8,1
-      mov $6,$1
+      mov $6,$4
       sub $8,1
     lpe
   lpe
   lpb $5,1
     mov $5,0
-    sub $6,$1
+    sub $6,$4
   lpe
-  mov $1,$6
-  sub $1,10
-  div $1,2
-  add $1,1
-  add $4,$1
+  mov $4,$6
+  sub $4,10
+  div $4,2
+  add $4,1
+  add $1,$4
 lpe
-mov $1,$4

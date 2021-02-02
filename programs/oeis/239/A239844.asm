@@ -8,23 +8,22 @@ lpb $3,1
   mov $0,$6
   sub $3,1
   sub $0,$3
-  mov $1,$0
   mov $2,$0
   pow $2,2
   add $2,$0
+  mov $7,$0
   add $0,$2
-  mov $5,$1
-  mov $1,4
-  add $1,$2
-  sub $1,2
+  mov $5,$7
   bin $5,3
+  mov $7,4
+  add $7,$2
+  sub $7,2
   lpb $0,1
     mov $0,$4
     add $0,8
-    add $1,2
-    add $1,$5
+    add $7,2
+    add $7,$5
   lpe
-  add $1,1
-  add $7,$1
+  add $7,1
+  add $1,$7
 lpe
-mov $1,$7

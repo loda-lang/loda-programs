@@ -20,10 +20,9 @@ lpb $4,1
   cmp $0,$2
   lpb $0,1
     div $0,5
-    fac $1
-    mul $1,$3
+    fac $7
+    mul $7,$3
   lpe
-  div $1,3
-  add $7,$1
+  div $7,3
+  add $1,$7
 lpe
-mov $1,$7

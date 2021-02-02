@@ -20,20 +20,16 @@ lpb $0,1
   mul $6,$3
   mov $5,$6
   add $5,1
-  mov $7,$0
-  mov $0,$5
+  mov $1,$5
+  add $1,$2
+  add $1,3
   mov $3,$2
+  add $3,2
   mod $5,$2
   mov $6,2
   add $6,$5
-  mov $8,$0
-  mov $0,$7
-  add $3,2
   add $6,7
-  add $8,$2
-  add $8,3
 lpe
-mov $1,$8
 sub $1,723
 div $1,28
 mul $1,2

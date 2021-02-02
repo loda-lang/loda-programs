@@ -18,22 +18,21 @@ lpb $5,1
     trn $0,$7
     mul $4,2
   lpe
+  mov $3,$5
   add $4,8
   add $4,$7
   mul $4,3
   log $4,2
   mul $4,2
-  mov $1,$4
-  sub $1,10
-  div $1,2
-  mov $3,$5
+  mov $6,$4
+  sub $6,10
+  div $6,2
   lpb $3,1
+    mov $1,$6
     sub $3,1
-    mov $6,$1
   lpe
 lpe
 lpb $8,1
-  sub $6,$1
+  sub $1,$6
   mov $8,0
 lpe
-mov $1,$6

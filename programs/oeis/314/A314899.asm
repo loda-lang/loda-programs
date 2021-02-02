@@ -21,15 +21,14 @@ lpb $6,1
       mul $0,$2
       mod $0,12
       div $0,2
-      mul $1,2
-      gcd $1,2
-      add $1,$3
-      mov $2,$1
+      mul $5,2
+      gcd $5,2
+      add $5,$3
+      mov $2,$5
       mov $3,2
     lpe
   lpe
-  mov $1,$2
-  add $1,1
-  add $5,$1
+  mov $5,$2
+  add $5,1
+  add $1,$5
 lpe
-mov $1,$5

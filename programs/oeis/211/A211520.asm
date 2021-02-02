@@ -30,30 +30,29 @@ lpb $3,1
       div $6,2
       mul $6,2
       mul $4,$6
-      mov $1,$4
+      mov $5,$4
       mov $12,$11
       lpb $12,1
-        mov $10,$1
+        mov $10,$5
         sub $12,1
       lpe
     lpe
     lpb $9,1
       mov $9,0
-      sub $10,$1
+      sub $10,$5
     lpe
-    mov $1,$10
+    mov $5,$10
     mov $7,$15
     lpb $7,1
       sub $7,1
-      mov $14,$1
+      mov $14,$5
     lpe
   lpe
   lpb $13,1
     mov $13,0
-    sub $14,$1
+    sub $14,$5
   lpe
-  mov $1,$14
-  div $1,12
-  add $5,$1
+  mov $5,$14
+  div $5,12
+  add $1,$5
 lpe
-mov $1,$5

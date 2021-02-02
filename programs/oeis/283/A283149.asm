@@ -10,9 +10,8 @@ lpb $0,1
   trn $0,4860
   div $3,-1
   sub $2,$3
-  mov $4,$2
-  mul $4,2
-  cmp $4,6
+  mov $1,$2
+  mul $1,2
+  cmp $1,6
 lpe
-mov $1,$4
 add $1,1

@@ -13,10 +13,9 @@ lpb $4,1
   add $0,1
   mov $6,1
   trn $6,$3
-  mov $1,$6
-  mul $1,2
-  add $1,6
-  pow $1,$0
-  add $5,$1
+  mov $5,$6
+  mul $5,2
+  add $5,6
+  pow $5,$0
+  add $1,$5
 lpe
-mov $1,$5

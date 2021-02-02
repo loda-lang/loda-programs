@@ -4,11 +4,10 @@
 mod $0,6
 mov $2,5
 bin $2,$0
-mov $3,$2
-lpb $3,1
-  mod $3,7
+mov $1,$2
+lpb $1,1
+  mod $1,7
 lpe
-mov $1,$3
 div $1,2
 mul $1,3
 add $1,1

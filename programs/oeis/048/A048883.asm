@@ -3,20 +3,19 @@
 
 mov $3,1
 lpb $3,1
-  mov $1,1
-  mul $1,$0
+  mov $1,$0
   mov $2,$0
   sub $3,1
-  mov $4,$0
+  mov $4,1
+  mul $4,$0
   lpb $2,1
-    lpb $4,1
-      div $1,2
-      sub $4,$1
+    lpb $1,1
+      div $4,2
+      sub $1,$4
     lpe
-    mov $0,$4
+    mov $0,$1
     sub $2,1
   lpe
-  mov $4,3
-  pow $4,$0
+  mov $1,3
+  pow $1,$0
 lpe
-mov $1,$4

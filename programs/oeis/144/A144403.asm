@@ -5,10 +5,8 @@ cal $0,109128 ; Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k) + 1 for 0<
 pow $0,2
 mul $0,2
 sub $0,1
-add $2,$0
-sub $2,3
-mov $1,$2
-sub $1,14
+add $1,$0
+sub $1,17
 div $1,16
 mul $1,2
 add $1,1

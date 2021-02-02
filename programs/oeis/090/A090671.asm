@@ -5,19 +5,17 @@ mov $3,21
 mov $4,$0
 mov $5,21
 lpb $0,1
-  mov $2,$0
+  mov $1,$0
   mov $0,8
-  add $2,2
+  add $1,2
   add $3,100
   sub $4,$4
-  mov $5,$1
+  mov $5,$2
   add $5,1
   add $5,$3
 lpe
-add $4,$2
-add $1,$4
-mov $2,$5
-sub $2,$1
-sub $2,2
-mov $1,$2
-sub $1,10
+add $4,$1
+mov $1,$5
+add $2,$4
+sub $1,$2
+sub $1,12

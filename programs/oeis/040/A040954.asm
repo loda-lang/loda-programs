@@ -3,30 +3,28 @@
 
 lpb $0,1
   mov $2,3
-  mov $6,$0
+  mov $3,$0
   mov $0,0
-  mov $7,1
+  mov $1,1
 lpe
 gcd $2,12
 add $2,1
 mov $4,2
-add $4,$7
-mov $5,$6
+add $4,$1
+mov $1,4
+mov $5,$3
+mov $3,$2
 gcd $5,3
 sub $5,2
-mov $6,$2
 mov $2,$5
 add $2,1
 add $4,3
 pow $4,$2
+add $1,$4
 mov $2,$4
-add $6,2
-sub $2,$6
-mov $7,4
-add $7,$4
-mov $3,$7
-add $3,$2
-add $3,27
-mov $1,$3
+add $3,2
+sub $2,$3
+add $1,$2
+add $1,27
 trn $1,37
 add $1,2

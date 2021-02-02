@@ -9,8 +9,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   cal $0,79644 ; n (mod sqrtint(n)).
-  mov $5,$0
-  cmp $5,0
-  add $3,$5
+  mov $3,$0
+  cmp $3,0
+  add $1,$3
 lpe
-mov $1,$3

@@ -8,11 +8,10 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  mov $1,$0
-  mod $1,9
-  div $1,8
-  mul $1,720
-  add $1,10
-  add $3,$1
+  mov $3,$0
+  mod $3,9
+  div $3,8
+  mul $3,720
+  add $3,10
+  add $1,$3
 lpe
-mov $1,$3

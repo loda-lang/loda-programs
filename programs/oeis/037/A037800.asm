@@ -3,17 +3,16 @@
 
 lpb $0,1
   mov $2,$0
-  mul $2,$1
-  add $2,$1
+  mul $2,$3
+  add $2,$3
   mod $2,10
   mov $4,$0
   mul $4,5
   mov $0,$4
   div $0,10
-  mov $1,$4
   div $2,2
-  add $3,$2
+  add $1,$2
+  mov $3,$4
 lpe
-mul $3,2
-mov $1,$3
+mul $1,2
 div $1,4

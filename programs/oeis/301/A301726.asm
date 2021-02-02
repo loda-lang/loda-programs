@@ -14,21 +14,20 @@ lpb $4,1
     mov $3,$0
     sub $3,$5
     sub $0,$3
-    add $0,$1
+    add $0,$6
     div $0,20
     add $2,5
     mod $2,10
-    mov $1,$2
-    mul $1,3
-    add $1,3
     mov $3,3
     sub $3,$0
     add $3,2
     mov $0,$3
     mov $5,6
+    mov $6,$2
+    mul $6,3
+    add $6,3
   lpe
-  mov $1,$0
-  add $1,1
-  add $6,$1
+  mov $6,$0
+  add $6,1
+  add $1,$6
 lpe
-mov $1,$6

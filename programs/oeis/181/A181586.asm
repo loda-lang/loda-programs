@@ -15,28 +15,27 @@ lpb $4,1
     sub $2,1
     add $0,$2
     add $0,2
-    mov $1,2
-    pow $1,$0
-    div $1,30
+    mov $5,2
+    pow $5,$0
+    div $5,30
     mov $7,$2
     lpb $7,1
       sub $7,1
-      mov $8,$1
+      mov $8,$5
     lpe
   lpe
   lpb $9,1
-    sub $8,$1
+    sub $8,$5
     mov $9,0
   lpe
-  mov $1,$8
   mov $3,$4
+  mov $5,$8
   lpb $3,1
+    mov $1,$5
     sub $3,1
-    mov $5,$1
   lpe
 lpe
 lpb $6,1
-  sub $5,$1
+  sub $1,$5
   mov $6,0
 lpe
-mov $1,$5

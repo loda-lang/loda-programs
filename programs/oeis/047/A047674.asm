@@ -2,12 +2,11 @@
 ; 1,16,91,346,1021,2524,5479,10774,19609,33544,54547,85042,127957,186772,265567,369070,502705,672640,885835,1150090,1474093,1867468,2340823,2905798,3575113,4362616,5283331,6353506,7590661,9013636
 
 lpb $0,1
-  mov $1,$0
-  cal $1,8413 ; Coordination sequence for 5-dimensional cubic lattice.
+  mov $2,$0
+  cal $2,8413 ; Coordination sequence for 5-dimensional cubic lattice.
   sub $0,1
-  add $2,$1
+  add $1,$2
 lpe
-mov $1,$2
 div $1,2
 mul $1,3
 add $1,1

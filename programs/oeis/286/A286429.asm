@@ -10,7 +10,5 @@ lpb $0,1
   mov $1,1
   add $1,$2
 lpe
-mov $3,$1
-mul $3,$1
-mov $1,$3
+pow $1,2
 sub $1,9

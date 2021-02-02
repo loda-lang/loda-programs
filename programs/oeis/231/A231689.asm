@@ -7,21 +7,20 @@ lpb $6,1
   mov $0,$3
   sub $6,1
   sub $0,$6
-  mov $1,$0
+  mov $4,$0
   mov $0,6
-  mov $5,$1
+  mov $5,$4
   lpb $0,1
     mov $0,3
     mov $2,$5
     div $2,10
     mul $2,9
-    sub $1,$2
-    mov $2,$1
+    sub $4,$2
+    mov $2,$4
     pow $2,4
   lpe
   add $2,1
-  mov $1,$2
-  sub $1,1
-  add $4,$1
+  mov $4,$2
+  sub $4,1
+  add $1,$4
 lpe
-mov $1,$4

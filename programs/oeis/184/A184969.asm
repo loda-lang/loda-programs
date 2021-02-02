@@ -4,10 +4,9 @@
 mov $3,$0
 add $3,1
 lpb $3,1
-  add $1,1
-  mov $2,$1
+  add $4,1
+  mov $2,$4
   sub $3,1
   cal $2,22844 ; a(n) = floor(n*Pi).
-  add $4,$2
+  add $1,$2
 lpe
-mov $1,$4

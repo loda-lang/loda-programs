@@ -16,16 +16,15 @@ lpb $7,1
     mov $0,1
     mov $4,$2
   lpe
-  div $4,93
-  mov $1,$4
   mov $3,$7
+  div $4,93
+  mov $8,$4
   lpb $3,1
+    mov $1,$8
     sub $3,1
-    mov $8,$1
   lpe
 lpe
 lpb $6,1
+  sub $1,$8
   mov $6,0
-  sub $8,$1
 lpe
-mov $1,$8

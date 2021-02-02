@@ -10,18 +10,17 @@ lpb $4,1
   sub $0,1
   cal $0,128634 ; Number of parallel permutations of length n.
   sub $0,3
-  mov $1,$0
+  mov $2,$4
   mod $3,2
   add $3,4
-  add $1,$3
-  mov $2,$4
+  mov $5,$0
+  add $5,$3
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $6,1
-  sub $5,$1
+  sub $1,$5
   mov $6,0
 lpe
-mov $1,$5

@@ -28,7 +28,5 @@ lpb $2,1
   div $1,$4
   sub $1,$2
 lpe
-mov $2,$1
-mul $2,$0
-mov $1,$2
+mul $1,$0
 sub $1,1

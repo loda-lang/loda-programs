@@ -4,11 +4,8 @@
 add $0,1
 mul $0,3
 div $0,2
-mov $2,$0
-bin $2,2
-add $2,9
-mov $1,$2
-sub $1,9
+mov $1,$0
+bin $1,2
 div $1,3
 mul $1,12
 add $1,1

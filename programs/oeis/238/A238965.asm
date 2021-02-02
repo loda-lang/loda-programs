@@ -3,29 +3,28 @@
 
 mov $6,$0
 mov $0,16
-mov $1,$6
+mov $1,1
 mov $2,4
 mov $3,10
-mov $4,1
+mov $4,$6
 add $6,16
 lpb $0,1
   mov $0,2
   add $0,$2
-  mul $1,$6
-  add $0,$1
+  mul $4,$6
+  add $0,$4
   add $3,21
   add $3,$2
-  mov $5,$4
-  add $4,$0
+  mov $5,$1
+  add $1,$0
   add $5,2
-  mul $5,$4
+  mul $5,$1
   add $3,$5
   log $3,2
-  mov $4,$3
+  mov $1,$3
   mod $5,3
   mov $0,$5
   add $0,3
-  sub $4,$0
+  sub $1,$0
 lpe
-mov $1,$4
 sub $1,2

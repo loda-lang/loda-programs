@@ -22,19 +22,18 @@ lpb $5,1
   sub $3,5
   trn $6,$0
   mul $6,$7
-  mov $1,$6
   trn $3,$6
   mov $4,$5
+  mov $9,$6
   lpb $4,1
+    mov $1,$9
     sub $4,1
-    mov $9,$1
   lpe
 lpe
 lpb $8,1
+  sub $1,$9
   mov $8,0
-  sub $9,$1
 lpe
-mov $1,$9
 div $1,2
 mul $1,6
 add $1,6

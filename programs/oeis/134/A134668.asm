@@ -5,10 +5,9 @@ mul $0,136
 div $0,12
 gcd $0,4
 div $0,2
-mov $2,$0
+mov $1,$0
 mov $3,4
 lpb $3,1
-  sub $2,1
-  mov $3,$4
+  sub $1,1
+  mov $3,$2
 lpe
-mov $1,$2

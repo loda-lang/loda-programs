@@ -3,7 +3,4 @@
 
 mul $0,2
 cal $0,156595 ; Fixed point of the morphism 0->011, 1->010.
-mov $2,$0
-add $2,7
-mov $1,$2
-sub $1,7
+mov $1,$0

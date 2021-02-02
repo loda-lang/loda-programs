@@ -12,22 +12,21 @@ lpb $4,1
   gcd $2,9
   add $2,3
   mov $3,$0
+  mov $5,$0
+  add $5,4
+  trn $5,5
   mov $6,5
-  mov $8,$0
-  add $8,4
-  trn $8,5
   lpb $2,1
     mov $2,4
     add $3,$0
     mov $6,7
     lpb $6,1
       add $2,1
+      mov $5,1
       trn $6,$3
-      mov $8,1
     lpe
     sub $2,1
   lpe
-  add $6,$8
-  add $5,$6
+  add $6,$5
+  add $1,$6
 lpe
-mov $1,$5

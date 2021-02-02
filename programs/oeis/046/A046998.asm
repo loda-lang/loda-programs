@@ -42,8 +42,7 @@ lpb $9,1
     add $3,$2
     add $5,$8
   lpe
-  mov $1,$5
-  trn $1,3
-  add $10,$1
+  mov $10,$5
+  trn $10,3
+  add $1,$10
 lpe
-mov $1,$10

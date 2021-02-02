@@ -10,8 +10,7 @@ lpb $2,1
   cal $0,81603 ; Number of 2's in ternary representation of n.
   mod $0,2
   add $0,1
-  mov $1,$0
-  sub $1,1
-  add $3,$1
+  mov $3,$0
+  sub $3,1
+  add $1,$3
 lpe
-mov $1,$3

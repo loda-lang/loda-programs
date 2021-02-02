@@ -9,20 +9,19 @@ mul $0,$7
 mov $4,$0
 mul $0,2
 mul $4,2
+mov $1,$4
+sub $1,1
 trn $2,$4
 add $2,4
-mov $3,$4
-sub $3,1
 mov $5,$0
-add $5,$3
+add $5,$1
 mul $4,$5
 lpb $0,1
-  mov $1,6
   add $2,$4
   add $2,11
   div $0,$2
-  mov $3,$2
+  mov $1,$2
+  mov $3,6
 lpe
-div $3,$1
-mov $1,$3
+div $1,$3
 sub $1,2

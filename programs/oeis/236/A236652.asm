@@ -14,8 +14,7 @@ lpb $2,1
     trn $0,5
     mod $0,10
   lpe
-  mov $1,$0
-  add $1,1
-  add $3,$1
+  mov $3,$0
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3

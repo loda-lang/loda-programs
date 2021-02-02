@@ -3,7 +3,6 @@
 
 cal $0,49651 ; a(n) = (F(3*n+1) - 1)/2, where F=A000045 (the Fibonacci sequence).
 add $0,41
-mov $2,$0
-div $2,2
-mov $1,$2
+mov $1,$0
+div $1,2
 sub $1,20

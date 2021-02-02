@@ -19,15 +19,14 @@ lpb $5,1
   mov $0,$2
   bin $2,$4
   div $2,$0
-  mov $1,$2
   mov $3,$5
+  mov $10,$2
   lpb $3,1
+    mov $1,$10
     sub $3,1
-    mov $10,$1
   lpe
 lpe
 lpb $9,1
+  sub $1,$10
   mov $9,0
-  sub $10,$1
 lpe
-mov $1,$10

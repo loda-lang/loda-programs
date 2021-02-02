@@ -12,8 +12,7 @@ lpb $3,1
   gcd $2,2
   cal $0,6355 ; Number of binary vectors of length n containing no singletons.
   mul $0,$2
-  mov $1,$0
-  div $1,2
-  add $4,$1
+  mov $4,$0
+  div $4,2
+  add $1,$4
 lpe
-mov $1,$4

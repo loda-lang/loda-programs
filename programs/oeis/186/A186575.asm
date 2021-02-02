@@ -10,20 +10,19 @@ pow $0,$5
 add $0,2
 lpb $0,1
   add $0,1
-  mov $3,$0
+  mov $1,$0
   mov $0,2
-  mul $2,$3
+  mul $2,$1
   mul $4,2
-  add $3,$4
-  add $3,10
-  mov $6,$4
-  add $6,6
-  gcd $6,$2
-  add $6,105
-  mul $6,2
+  add $1,$4
+  add $1,10
+  mov $3,$4
+  add $3,6
+  gcd $3,$2
+  add $3,105
+  mul $3,2
 lpe
-add $3,$6
-mov $1,$3
+add $1,$3
 sub $1,241
 div $1,4
 add $1,1

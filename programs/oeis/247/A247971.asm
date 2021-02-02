@@ -3,8 +3,6 @@
 
 add $0,1
 cal $0,22853 ; a(n) = integer nearest n*Pi.
-add $2,$0
-div $2,4
-sub $2,1
-mov $1,$2
-add $1,2
+add $1,$0
+div $1,4
+add $1,1

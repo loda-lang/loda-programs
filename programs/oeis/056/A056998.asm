@@ -6,21 +6,19 @@ sub $0,34
 mod $4,2
 cmp $0,$4
 add $0,5
+mov $1,1
+mul $1,$4
 mov $5,1
-mul $5,$4
-mov $6,1
-add $6,$5
-sub $6,1
-mov $3,$6
+add $5,$1
+mov $1,8
+sub $5,1
+mov $3,$5
 mul $3,2
 sub $3,$0
-mov $1,$3
-mov $5,8
+mov $2,$3
 lpb $0,1
-  gcd $0,$1
+  gcd $0,$2
   sub $0,1
-  add $5,1
+  add $1,1
 lpe
-mov $2,$5
-add $2,20
-mov $1,$2
+add $1,20

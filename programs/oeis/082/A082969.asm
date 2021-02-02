@@ -4,9 +4,8 @@
 sub $0,1
 cal $0,129771 ; Evil odd numbers.
 add $0,1
-mov $2,$0
-trn $2,2
-mov $1,$2
+mov $1,$0
+trn $1,2
 div $1,2
 mul $1,8
 add $1,2

@@ -10,17 +10,16 @@ lpb $3,1
   sub $0,1
   div $0,2
   cal $0,93505 ; a(n) = floor(A001969(n)/2 + 1/2).
-  mov $1,$0
   mov $2,$3
+  mov $5,$0
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $4,1
+  sub $1,$5
   mov $4,0
-  sub $5,$1
 lpe
-mov $1,$5
 mul $1,2
 add $1,1

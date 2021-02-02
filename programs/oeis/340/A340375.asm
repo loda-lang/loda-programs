@@ -3,6 +3,5 @@
 
 cal $0,69010 ; Number of runs of 1's in binary representation of n.
 div $0,2
-mov $2,$0
-cmp $2,0
-mov $1,$2
+mov $1,$0
+cmp $1,0

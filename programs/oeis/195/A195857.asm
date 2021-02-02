@@ -3,10 +3,9 @@
 
 mov $3,2
 pow $3,$0
-mov $2,$3
-mov $4,$0
-add $4,18
-mul $2,$4
-mov $1,$2
+mov $1,$3
+mov $2,$0
+add $2,18
+mul $1,$2
 div $1,2
 sub $1,8

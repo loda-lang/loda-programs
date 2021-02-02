@@ -3,36 +3,35 @@
 
 mov $3,$0
 gcd $0,4
-mov $5,$0
+mov $4,$0
 add $0,1
+mov $1,2
+trn $1,$3
 mov $2,$0
-mov $4,2
-trn $4,$3
-fac $5
-add $0,$5
+fac $4
+add $0,$4
 mov $3,$0
 mul $0,2
 lpb $2,1
-  mov $2,$5
-  lpb $4,1
+  mov $2,$4
+  lpb $1,1
     mov $0,1
-    sub $4,$4
+    sub $1,$1
   lpe
-  lpb $5,1
-    mov $4,$3
-    mov $5,$0
+  lpb $4,1
+    mov $1,$3
+    mov $4,$0
   lpe
+  trn $1,1
   sub $2,1
   mov $3,2
   trn $3,$2
-  trn $4,1
-  mov $5,1
+  mov $4,1
   lpb $3,1
     trn $3,$0
-    trn $5,2
+    trn $4,2
   lpe
-  pow $0,$5
+  pow $0,$4
+  add $1,$0
   mov $2,1
-  add $4,$0
 lpe
-mov $1,$4

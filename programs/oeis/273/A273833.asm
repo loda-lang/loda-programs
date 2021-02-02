@@ -8,40 +8,39 @@ lpb $8,1
   mov $0,$10
   sub $8,1
   sub $0,$8
-  mov $1,$0
-  add $1,1
+  mov $4,$0
+  add $4,1
   mov $7,2
   mov $11,$0
   lpb $0,1
     mov $3,$0
     mul $3,$0
     mov $0,1
+    mov $2,4
     mov $6,1
     sub $6,$3
-    mov $9,$1
-    sub $1,$1
-    add $1,$3
-    mod $1,2
-    mov $2,4
+    mov $9,$4
+    sub $4,$4
+    add $4,$3
     mov $3,5
+    mod $4,2
     pow $9,$7
     add $9,3
     mov $5,$9
     sub $5,5
-    add $6,$1
+    add $6,$4
     div $3,$6
-    add $1,$3
+    add $4,$3
     sub $3,$5
-    sub $1,$3
+    sub $4,$3
   lpe
   div $2,2
   add $3,$2
-  sub $1,$3
+  sub $4,$3
   mov $12,$11
   mul $12,$11
   mov $13,$12
   mul $13,2
-  add $1,$13
-  add $4,$1
+  add $4,$13
+  add $1,$4
 lpe
-mov $1,$4

@@ -3,15 +3,14 @@
 
 mov $3,$0
 lpb $0,1
-  mov $1,$0
-  add $2,4
-  mul $2,$0
-  cal $1,115180 ; Beatty sequence for (Champernowne constant)*10 = 1.234567891011121314....
+  add $1,4
+  mul $1,$0
+  mov $2,$0
+  cal $2,115180 ; Beatty sequence for (Champernowne constant)*10 = 1.234567891011121314....
   mov $0,0
-  div $1,4
-  add $2,$1
-  add $2,$1
+  div $2,4
+  add $1,$2
+  add $1,$2
 lpe
-mov $1,$2
 add $1,3
 add $1,$3

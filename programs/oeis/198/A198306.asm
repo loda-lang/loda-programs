@@ -8,18 +8,17 @@ lpb $4,1
   mov $0,$6
   sub $4,1
   sub $0,$4
-  mov $1,4
+  mov $2,4
   mov $5,1
   add $5,$0
   add $5,$0
-  sub $1,$5
-  trn $1,2
-  mov $3,$1
-  add $1,5
+  sub $2,$5
+  trn $2,2
+  mov $3,$2
+  add $2,5
   div $5,4
   add $5,1
-  pow $1,$5
-  add $1,$3
-  add $2,$1
+  pow $2,$5
+  add $2,$3
+  add $1,$2
 lpe
-mov $1,$2

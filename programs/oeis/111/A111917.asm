@@ -17,18 +17,17 @@ lpb $2,1
     cal $0,23549 ; Convolution of natural numbers >= 2 and Lucas numbers.
     div $0,2
     mul $0,2
-    mov $1,$0
+    mov $5,$0
     mov $7,$6
     lpb $7,1
-      mov $5,$1
+      mov $1,$5
       sub $7,1
     lpe
   lpe
   lpb $4,1
+    sub $1,$5
     mov $4,0
-    sub $5,$1
   lpe
 lpe
-mov $1,$5
 div $1,2
 add $1,2

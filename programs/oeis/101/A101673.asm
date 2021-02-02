@@ -5,7 +5,5 @@ cal $0,102392 ; Odious numbers in odious places.
 sub $0,1
 mod $0,2
 sub $0,1
-mov $2,$0
-add $2,1
-mov $1,$2
-add $1,1
+mov $1,$0
+add $1,2

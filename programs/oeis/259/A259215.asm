@@ -10,12 +10,11 @@ lpb $3,1
   sub $0,$3
   cal $0,101353 ; a(n) = Sum_{k=0..n} (2^k + Fibonacci(k)).
   sub $0,3
-  mov $1,$0
-  gcd $1,$0
-  mul $1,2
-  sub $1,2
-  div $1,2
-  add $1,6
-  add $4,$1
+  mov $4,$0
+  gcd $4,$0
+  mul $4,2
+  sub $4,2
+  div $4,2
+  add $4,6
+  add $1,$4
 lpe
-mov $1,$4

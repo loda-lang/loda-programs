@@ -4,10 +4,8 @@
 cal $0,230404 ; a(n) = the largest k such that (k+1)! divides 2n; the number of trailing zeros in the factorial base representation of even numbers.
 mul $0,2
 add $0,1
-add $2,$0
-mov $3,$2
-pow $3,2
-mov $1,$3
+add $1,$0
+pow $1,2
 sub $1,9
 div $1,8
 add $1,1

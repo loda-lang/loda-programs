@@ -9,15 +9,14 @@ lpb $3,1
   add $0,$3
   pow $0,2
   cal $0,60143 ; a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
-  mov $1,$0
   mov $2,$3
+  mov $4,$0
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $5,1
-  sub $4,$1
+  sub $1,$4
   mov $5,0
 lpe
-mov $1,$4

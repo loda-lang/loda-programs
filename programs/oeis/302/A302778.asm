@@ -14,8 +14,7 @@ lpb $2,1
   sub $4,1
   log $0,$4
   add $0,2
-  mov $1,$0
-  sub $1,2
-  add $3,$1
+  mov $3,$0
+  sub $3,2
+  add $1,$3
 lpe
-mov $1,$3

@@ -11,8 +11,7 @@ lpb $2,1
   sub $0,2
   cal $0,160721 ; First differences of A160720.
   mul $0,4
-  mov $1,$0
-  div $1,4
-  add $3,$1
+  mov $3,$0
+  div $3,4
+  add $1,$3
 lpe
-mov $1,$3

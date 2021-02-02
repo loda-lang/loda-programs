@@ -9,17 +9,16 @@ gcd $4,2
 mul $4,2
 sub $2,$4
 add $2,1
-mov $1,$2
+mov $3,$2
 trn $2,52
 mov $4,2
 div $5,2
-add $5,$1
+add $5,$3
 lpb $0,1
   div $0,2
   sub $0,1
   sub $2,$5
   sub $4,$2
   mul $5,$4
-  mov $3,$5
+  mov $1,$5
 lpe
-mov $1,$3

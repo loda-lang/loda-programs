@@ -14,10 +14,9 @@ lpb $2,1
   sub $0,$3
   cal $0,153981 ; a(n) = 36*Fibonacci(2*n+1) - 4.
   div $0,2
-  mov $1,$0
-  div $1,18
-  add $1,1
   mov $3,14
-  add $4,$1
+  mov $4,$0
+  div $4,18
+  add $4,1
+  add $1,$4
 lpe
-mov $1,$4

@@ -32,30 +32,29 @@ lpb $2,1
         cal $0,259626 ; List of numbers L and L + 1, where L = A000032, the Lucas numbers, sorted into increasing order and duplicates removed.
         div $0,5
       lpe
-      mov $1,$0
+      mov $3,$0
       mov $12,$11
       lpb $12,1
-        mov $10,$1
+        mov $10,$3
         sub $12,1
       lpe
     lpe
     lpb $9,1
       mov $9,0
-      sub $10,$1
+      sub $10,$3
     lpe
-    mov $1,$10
+    mov $3,$10
     mov $6,$8
     lpb $6,1
       sub $6,1
-      mov $14,$1
+      mov $14,$3
     lpe
   lpe
   lpb $13,1
     mov $13,0
-    sub $14,$1
+    sub $14,$3
   lpe
-  mov $1,$14
-  mul $1,2
-  add $3,$1
+  mov $3,$14
+  mul $3,2
+  add $1,$3
 lpe
-mov $1,$3

@@ -3,20 +3,19 @@
 
 add $0,1
 mul $0,2
+mov $1,2
 mov $3,2
-mov $4,2
 lpb $0,1
-  mov $2,$4
+  mov $2,$3
   gcd $2,$0
   div $0,$2
-  add $3,$4
-  trn $4,4
-  add $3,$4
-  add $3,10
-  mul $3,6
-  mov $4,6
+  add $1,$3
+  trn $3,4
+  add $1,$3
+  add $1,10
+  mul $1,6
+  mov $3,6
 lpe
-mov $1,$3
 div $1,528
 mul $1,5
 add $1,1

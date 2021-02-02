@@ -5,11 +5,10 @@ lpb $0,1
   lpb $0,1
     mod $0,5
     mul $0,120259084288
-    add $1,130
+    add $2,130
   lpe
   div $0,5
-  sub $0,$1
-  add $2,6
+  sub $0,$2
+  add $1,6
 lpe
-mov $1,$2
 div $1,6

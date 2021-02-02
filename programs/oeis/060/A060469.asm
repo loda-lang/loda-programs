@@ -24,13 +24,12 @@ lpb $2,1
     mov $8,$9
     mul $8,2
   lpe
-  add $8,2
-  mov $1,$8
-  sub $1,2
-  div $1,2
-  add $1,1
   add $3,1
-  add $6,$1
+  add $8,2
+  mov $6,$8
+  sub $6,2
+  div $6,2
+  add $6,1
+  add $1,$6
   sub $8,$8
 lpe
-mov $1,$6

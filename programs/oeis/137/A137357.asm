@@ -3,8 +3,7 @@
 
 lpb $0,1
   sub $0,1
-  mov $1,$0
-  cal $1,137356 ; a(n) = Sum_{k <= n/2 } binomial(n-2k, 3k).
-  add $2,$1
+  mov $2,$0
+  cal $2,137356 ; a(n) = Sum_{k <= n/2 } binomial(n-2k, 3k).
+  add $1,$2
 lpe
-mov $1,$2

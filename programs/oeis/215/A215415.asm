@@ -19,10 +19,9 @@ lpb $0,1
     gcd $0,$3
     sub $2,2
   lpe
-  mov $6,$2
+  mov $1,$2
   lpb $0,1
     div $0,8
   lpe
 lpe
-mov $1,$6
 div $1,2

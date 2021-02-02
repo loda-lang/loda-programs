@@ -3,13 +3,12 @@
 
 cal $0,276084 ; a(n) = Number of trailing zeros in primorial base representation of n (A049345); largest k such that A002110(k) divides n.
 pow $0,2
-mov $1,$0
 mov $2,$0
 cmp $2,0
+mov $3,$0
 add $0,$2
-mov $3,$1
-div $1,2
-add $3,$1
-sub $3,$0
 mov $1,$3
+div $3,2
+add $1,$3
+sub $1,$0
 add $1,2

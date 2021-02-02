@@ -23,16 +23,15 @@ lpb $4,1
   bin $7,2
   add $0,$7
   mul $0,2
-  mov $1,$0
   mov $3,$4
+  mov $8,$0
   lpb $3,1
+    mov $1,$8
     sub $3,1
-    mov $8,$1
   lpe
 lpe
 lpb $9,1
-  sub $8,$1
+  sub $1,$8
   mov $9,0
 lpe
-mov $1,$8
 div $1,6

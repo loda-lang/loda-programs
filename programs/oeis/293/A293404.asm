@@ -4,7 +4,3 @@
 pow $0,2
 mov $1,$0
 cal $1,4957 ; a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
-mov $2,$1
-add $2,1
-mov $1,$2
-sub $1,1

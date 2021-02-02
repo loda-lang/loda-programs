@@ -15,21 +15,20 @@ lpb $5,1
   add $0,5
   mov $6,$2
   lpb $0,1
-    pow $4,2
-    trn $4,$6
-    div $4,2
-    mov $1,$4
     div $3,$3
     mul $3,8
     div $0,$3
     add $0,6
-    gcd $1,5
+    pow $4,2
+    trn $4,$6
+    div $4,2
     mov $6,$8
+    mov $7,$4
+    gcd $7,5
   lpe
-  pow $1,$1
-  mul $1,8
-  div $1,24993
-  add $1,1
-  add $7,$1
+  pow $7,$7
+  mul $7,8
+  div $7,24993
+  add $7,1
+  add $1,$7
 lpe
-mov $1,$7

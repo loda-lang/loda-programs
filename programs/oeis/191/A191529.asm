@@ -20,26 +20,25 @@ lpb $4,1
     div $7,2
     bin $0,$7
     add $3,$0
-    mov $1,$3
     mov $6,$11
+    mov $8,$3
     lpb $6,1
       sub $6,1
-      mov $10,$1
+      mov $10,$8
     lpe
   lpe
   lpb $9,1
     mov $9,0
-    sub $10,$1
+    sub $10,$8
   lpe
-  mov $1,$10
   mov $5,$4
+  mov $8,$10
   lpb $5,1
+    mov $1,$8
     sub $5,1
-    mov $8,$1
   lpe
 lpe
 lpb $2,1
+  sub $1,$8
   mov $2,0
-  sub $8,$1
 lpe
-mov $1,$8

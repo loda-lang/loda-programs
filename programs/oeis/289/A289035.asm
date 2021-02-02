@@ -10,16 +10,15 @@ lpb $4,1
   mov $2,$0
   sub $2,2
   cal $2,194920 ; a(n) = n - floor(n/sqrt(2)).
-  sub $2,$1
-  add $1,$2
+  sub $2,$6
   mov $3,$4
+  add $6,$2
   lpb $3,1
+    mov $1,$6
     sub $3,1
-    mov $6,$1
   lpe
 lpe
 lpb $5,1
+  sub $1,$6
   mov $5,0
-  sub $6,$1
 lpe
-mov $1,$6

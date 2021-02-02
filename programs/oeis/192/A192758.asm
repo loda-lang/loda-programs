@@ -8,8 +8,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   cal $0,293411 ; a(n) = a(n-1) + a(n-3) + a(n-4), where a(0) = 1, a(1) = 2, a(2) = 3, a(3) = 4.
-  mov $1,$0
-  div $1,2
-  add $3,$1
+  mov $3,$0
+  div $3,2
+  add $1,$3
 lpe
-mov $1,$3

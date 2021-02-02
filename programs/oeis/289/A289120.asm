@@ -16,15 +16,14 @@ lpb $6,1
     trn $0,5
     mov $4,$5
   lpe
-  mov $1,$4
   mov $2,$6
+  mov $3,$4
   lpb $2,1
+    mov $1,$3
     sub $2,1
-    mov $3,$1
   lpe
 lpe
 lpb $7,1
-  sub $3,$1
+  sub $1,$3
   mov $7,0
 lpe
-mov $1,$3

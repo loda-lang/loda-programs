@@ -14,20 +14,19 @@ lpb $4,1
   add $3,$0
   div $0,14
   add $0,$3
+  mov $2,$4
   mov $3,$0
   div $3,4
-  mov $1,$3
-  sub $1,15
-  add $1,$5
-  mov $2,$4
+  mov $6,$3
+  sub $6,15
+  add $6,$5
   lpb $2,1
+    mov $1,$6
     sub $2,1
-    mov $6,$1
   lpe
 lpe
 lpb $7,1
-  sub $6,$1
+  sub $1,$6
   mov $7,0
 lpe
-mov $1,$6
 sub $1,1

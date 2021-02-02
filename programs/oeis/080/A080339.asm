@@ -3,6 +3,5 @@
 
 cal $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
 sub $0,1
-mov $2,$0
-cmp $2,0
-mov $1,$2
+mov $1,$0
+cmp $1,0

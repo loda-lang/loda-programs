@@ -7,15 +7,14 @@ lpb $3,1
   mov $0,$5
   sub $3,1
   sub $0,$3
-  mov $1,8
-  sub $1,$0
   mov $2,8
+  mov $4,8
+  sub $4,$0
   cal $0,97135 ; a(0) = 1; for n>0, a(n) = 3*Fibonacci(n).
   sub $0,1
-  add $0,$1
+  add $0,$4
   add $2,$0
-  mov $1,$2
-  sub $1,16
-  add $4,$1
+  mov $4,$2
+  sub $4,16
+  add $1,$4
 lpe
-mov $1,$4

@@ -8,11 +8,10 @@ mov $3,$0
 div $3,5
 lpb $0,1
   mov $0,$3
+  mov $1,9
   add $2,$3
   add $2,4
-  mov $4,9
-  add $4,$2
+  add $1,$2
 lpe
-div $4,5
-mov $1,$4
+div $1,5
 sub $1,3

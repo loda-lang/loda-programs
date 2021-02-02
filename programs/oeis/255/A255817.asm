@@ -3,8 +3,4 @@
 
 cal $0,788 ; Total number of 1's in binary expansions of 0, ..., n.
 mod $0,2
-mul $0,8
 mov $1,$0
-mul $1,2
-mul $1,$0
-div $1,80

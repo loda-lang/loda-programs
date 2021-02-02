@@ -5,10 +5,9 @@ add $0,1
 mul $0,2
 add $0,1
 lpb $0,1
-  mov $2,24
-  add $3,2
-  sub $0,$3
+  mov $1,24
+  add $2,2
+  sub $0,$2
 lpe
-mul $0,$2
-div $2,$0
-mov $1,$2
+mul $0,$1
+div $1,$0

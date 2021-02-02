@@ -9,15 +9,14 @@ lpb $2,1
   sub $0,$2
   mul $0,2
   cal $0,156595 ; Fixed point of the morphism 0->011, 1->010.
-  mov $1,$0
+  mov $3,$0
   mov $0,8
-  add $1,1
-  pow $1,2
-  add $1,8
-  add $0,$1
-  mov $1,$0
-  sub $1,17
-  div $1,3
-  add $3,$1
+  add $3,1
+  pow $3,2
+  add $3,8
+  add $0,$3
+  mov $3,$0
+  sub $3,17
+  div $3,3
+  add $1,$3
 lpe
-mov $1,$3

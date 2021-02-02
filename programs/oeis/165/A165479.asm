@@ -14,8 +14,8 @@ lpb $9,1
     gcd $0,2
     mov $5,$0
     trn $0,7
-    add $2,$1
-    sub $2,$1
+    add $2,$3
+    sub $2,$3
     mul $2,2
     mov $6,$5
     pow $5,$5
@@ -23,15 +23,14 @@ lpb $9,1
     gcd $7,3
     fac $8
   lpe
-  mov $1,$8
-  add $1,$7
+  mov $3,$8
+  add $3,$7
   add $5,$2
   pow $6,7
-  pow $6,$1
+  pow $6,$3
   mul $6,$5
-  mov $1,$6
-  div $1,3
-  add $1,43690
-  add $3,$1
+  mov $3,$6
+  div $3,3
+  add $3,43690
+  add $1,$3
 lpe
-mov $1,$3

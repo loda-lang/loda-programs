@@ -14,9 +14,8 @@ lpb $3,1
   sub $2,1
   cal $2,151787 ; a(1)=1; for n > 1, a(n)=3*2^{wt(n-1)-1}.
   add $2,6
-  mov $1,$2
-  sub $1,6
-  div $1,3
-  add $4,$1
+  mov $4,$2
+  sub $4,6
+  div $4,3
+  add $1,$4
 lpe
-mov $1,$4

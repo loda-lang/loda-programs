@@ -9,18 +9,17 @@ lpb $5,1
   add $0,$5
   sub $0,1
   cal $0,232746 ; n occurs A030124(n) times; a(n) = one less than the least k such that A005228(k) > n.
-  mov $1,$0
-  add $1,1
-  mul $1,$0
+  mov $3,$0
+  add $3,1
+  mul $3,$0
   mov $4,$5
   lpb $4,1
-    mov $3,$1
+    mov $1,$3
     sub $4,1
   lpe
 lpe
 lpb $2,1
+  sub $1,$3
   mov $2,0
-  sub $3,$1
 lpe
-mov $1,$3
 div $1,2

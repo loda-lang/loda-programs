@@ -7,6 +7,5 @@ gcd $0,262144
 mod $0,14
 lpb $0,1
   mod $0,3
-  mov $2,$0
+  mov $1,$0
 lpe
-mov $1,$2

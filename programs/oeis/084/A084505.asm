@@ -13,12 +13,11 @@ lpb $7,1
     add $2,1
     add $0,$2
     log $0,4
-    mov $1,1
-    add $1,$0
+    mov $6,1
+    add $6,$0
     bin $0,$4
-    mov $3,$1
+    mov $3,$6
   lpe
   add $3,1
-  add $6,$3
+  add $1,$3
 lpe
-mov $1,$6

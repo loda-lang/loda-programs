@@ -3,9 +3,6 @@
 
 mov $2,$0
 add $2,1
-mov $3,$2
+mov $1,$2
 cal $0,134393 ; Row sums of triangle A134392.
-gcd $3,$0
-add $3,3
-mov $1,$3
-sub $1,3
+gcd $1,$0

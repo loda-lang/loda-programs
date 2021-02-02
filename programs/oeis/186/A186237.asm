@@ -3,9 +3,8 @@
 
 mul $0,123
 sub $0,1
+mov $1,2
 mov $2,1
 sub $2,$0
 div $2,85
-mov $3,2
-sub $3,$2
-mov $1,$3
+sub $1,$2

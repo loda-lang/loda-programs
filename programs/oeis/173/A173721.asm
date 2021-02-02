@@ -15,6 +15,5 @@ lpb $2,1
     trn $0,5
     mov $4,$5
   lpe
-  add $6,$4
+  add $1,$4
 lpe
-mov $1,$6

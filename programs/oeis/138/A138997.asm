@@ -7,22 +7,21 @@ lpb $5,1
   sub $5,1
   add $0,$5
   sub $0,1
-  mov $1,4
-  add $1,$0
-  sub $1,1
+  mov $2,4
+  add $2,$0
+  sub $2,1
   mov $4,1
   add $4,$0
   div $4,5
-  mul $1,$4
+  mul $2,$4
   mov $6,$5
   lpb $6,1
-    mov $2,$1
+    mov $1,$2
     sub $6,1
   lpe
 lpe
 lpb $3,1
-  sub $2,$1
+  sub $1,$2
   mov $3,0
 lpe
-mov $1,$2
 add $1,1

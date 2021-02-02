@@ -17,28 +17,27 @@ lpb $2,1
     sub $0,2
     mul $0,3
     trn $0,2
-    mov $1,$0
     mov $3,$0
+    mov $7,$0
     lpb $0,1
-      mov $1,$0
       mul $3,2
       sub $3,7
+      mov $7,$0
       mov $0,$3
       trn $0,1
       mov $3,1
     lpe
     mov $5,$6
     lpb $5,1
-      mov $4,$1
+      mov $4,$7
       sub $5,1
     lpe
   lpe
   lpb $9,1
-    sub $4,$1
+    sub $4,$7
     mov $9,0
   lpe
-  mov $1,$4
-  add $1,1
-  add $7,$1
+  mov $7,$4
+  add $7,1
+  add $1,$7
 lpe
-mov $1,$7

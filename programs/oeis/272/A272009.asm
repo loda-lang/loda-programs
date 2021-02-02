@@ -29,9 +29,8 @@ lpb $5,1
   trn $7,$6
   add $4,$7
   add $4,$0
-  mov $1,$4
-  trn $1,2
-  add $1,1
-  add $2,$1
+  mov $2,$4
+  trn $2,2
+  add $2,1
+  add $1,$2
 lpe
-mov $1,$2

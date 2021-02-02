@@ -3,9 +3,9 @@
 
 mov $6,$0
 add $6,1
-mov $11,$0
+mov $9,$0
 lpb $6,1
-  mov $0,$11
+  mov $0,$9
   sub $6,1
   sub $0,$6
   mov $2,$0
@@ -33,6 +33,5 @@ lpb $6,1
   add $3,4
   add $4,5
   gcd $4,8
-  add $9,$4
+  add $1,$4
 lpe
-mov $1,$9

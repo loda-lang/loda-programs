@@ -3,15 +3,14 @@
 
 mov $3,$0
 add $3,1
-mov $5,$0
+mov $4,$0
 lpb $3,1
-  mov $0,$5
+  mov $0,$4
   sub $3,1
   sub $0,$3
   cal $0,27966 ; T(n, 2*n-4), T given by A027960.
   trn $0,3
   mov $2,3
   add $2,$0
-  add $4,$2
+  add $1,$2
 lpe
-mov $1,$4

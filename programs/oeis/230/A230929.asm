@@ -1,12 +1,11 @@
 ; A230929: Number of black-square subarrays of (n+2) X (2+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
 ; 2,6,16,48,146,438,1312,3936,11810,35430,106288,318864,956594,2869782,8609344,25828032,77484098,232452294,697356880,2092070640,6276211922,18828635766,56485907296,169457721888,508373165666,1525119496998,4575358490992,13726075472976,41178226418930,123534679256790,370604037770368,1111812113311104,3335436339933314
 
-mov $2,9
-mov $3,3
-pow $3,$0
-add $3,5
-mul $2,$3
-div $2,10
-mov $1,$2
+mov $1,9
+mov $2,3
+pow $2,$0
+add $2,5
+mul $1,$2
+div $1,10
 sub $1,4
 mul $1,2

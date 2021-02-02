@@ -4,28 +4,27 @@
 mov $5,$0
 mul $0,2
 add $0,1
-mov $1,20
+mov $2,20
 mov $4,1
 sub $5,8
 lpb $0,1
   sub $0,1
-  mov $2,$0
+  mov $1,$0
   add $0,1
-  add $2,2
+  add $1,2
   add $5,$4
-  gcd $5,$2
+  gcd $5,$1
   div $0,$5
-  mov $2,$0
+  mov $1,$0
   mov $3,1
   sub $3,$0
   add $3,$0
-  cmp $0,$1
-  mov $6,$2
+  cmp $0,$2
+  mov $6,$1
   add $6,8
 lpe
-add $2,$6
-add $2,$3
-mov $1,$2
+add $1,$6
+add $1,$3
 sub $1,9
 div $1,2
 add $1,1

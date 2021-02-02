@@ -8,11 +8,10 @@ lpb $3,1
   mov $0,$4
   sub $3,1
   sub $0,$3
-  mov $1,$0
-  cal $1,163606 ; a(n) = ((3 + 2*sqrt(2))*(3 + sqrt(2))^n + (3 - 2*sqrt(2))*(3 - sqrt(2))^n)/2.
-  add $2,$1
+  mov $2,$0
+  cal $2,163606 ; a(n) = ((3 + 2*sqrt(2))*(3 + sqrt(2))^n + (3 - 2*sqrt(2))*(3 - sqrt(2))^n)/2.
+  add $1,$2
 lpe
-mov $1,$2
 sub $1,3
 mul $1,4
 add $1,16

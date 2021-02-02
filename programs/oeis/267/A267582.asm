@@ -11,18 +11,17 @@ lpb $3,1
   mov $5,$0
   sub $0,1
   cal $0,262867 ; Total number of ON (black) cells after n iterations of the "Rule 153" elementary cellular automaton starting with a single ON (black) cell.
-  mov $1,$0
+  mov $2,$3
+  mov $4,$0
   mov $7,$5
   mul $7,2
-  add $1,$7
-  mov $2,$3
+  add $4,$7
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $6,1
-  sub $4,$1
+  sub $1,$4
   mov $6,0
 lpe
-mov $1,$4

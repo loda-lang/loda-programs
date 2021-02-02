@@ -3,19 +3,17 @@
 
 mov $4,$0
 mod $0,2
-mov $1,1
-mov $2,$4
-div $2,2
+mov $1,$4
+div $1,2
+mov $2,1
 mov $4,$0
 add $0,4
-sub $1,$4
+sub $2,$4
 sub $3,$0
-mov $5,$1
+mov $5,$2
 mul $5,44
 add $5,2
 add $5,$3
 sub $5,4
-sub $2,$5
-add $2,7
-mov $1,$2
-add $1,9
+sub $1,$5
+add $1,16

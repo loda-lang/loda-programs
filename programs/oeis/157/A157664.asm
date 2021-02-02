@@ -3,11 +3,10 @@
 
 mov $2,$0
 add $0,2
+mov $1,1
 mul $2,100
-mov $3,1
-add $3,$2
-mul $3,$0
-mov $1,$3
+add $1,$2
+mul $1,$0
 sub $1,2
 mul $1,800
 add $1,80801

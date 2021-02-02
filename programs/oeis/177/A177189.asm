@@ -9,10 +9,9 @@ lpb $4,1
   sub $0,$4
   mov $3,$0
   mul $3,$0
-  mov $1,$3
-  div $1,8
-  add $1,1
-  div $1,2
-  add $5,$1
+  mov $5,$3
+  div $5,8
+  add $5,1
+  div $5,2
+  add $1,$5
 lpe
-mov $1,$5

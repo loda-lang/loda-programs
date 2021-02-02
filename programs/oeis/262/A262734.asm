@@ -4,13 +4,12 @@
 add $0,1
 lpb $0,1
   sub $0,16
-  pow $2,$2
+  pow $1,$1
 lpe
 mul $0,2
-mul $2,2
-trn $2,$0
-add $2,4
-mov $1,$2
+mul $1,2
+trn $1,$0
+add $1,4
 mul $1,2
 add $1,$0
 sub $1,10

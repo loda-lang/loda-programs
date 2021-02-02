@@ -11,6 +11,5 @@ lpb $4,1
   sub $0,1
   cal $0,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   mul $3,$0
-  add $5,$3
+  add $1,$3
 lpe
-mov $1,$5

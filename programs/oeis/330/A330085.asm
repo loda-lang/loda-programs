@@ -8,31 +8,30 @@ lpb $7,1
   mov $0,$9
   sub $7,1
   sub $0,$7
-  mov $1,5
   mov $2,8
   trn $2,$0
   add $0,2
   mov $5,8
   mov $6,1
+  mov $10,5
   lpb $0,1
     add $8,$0
     sub $0,1
-    sub $1,$0
     mov $3,$8
-    div $5,2
-    mul $1,$5
-    add $1,$2
     pow $3,6
-    add $1,$3
-    add $6,4
-    gcd $1,$6
     add $4,1
+    div $5,2
+    add $6,4
+    sub $10,$0
     mod $0,$4
     mov $8,$6
+    mul $10,$5
+    add $10,$2
+    add $10,$3
+    gcd $10,$6
   lpe
-  sub $1,2
-  div $1,2
-  add $1,2
-  add $10,$1
+  sub $10,2
+  div $10,2
+  add $10,2
+  add $1,$10
 lpe
-mov $1,$10

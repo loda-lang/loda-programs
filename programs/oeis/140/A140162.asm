@@ -8,17 +8,16 @@ lpb $2,1
   mov $0,$5
   sub $2,1
   sub $0,$2
-  mov $1,$0
+  mov $4,$0
   gcd $0,2
-  gcd $6,1
-  add $1,$6
   mov $3,5
+  gcd $6,1
+  add $4,$6
   lpb $0,1
-    gcd $1,$0
+    gcd $4,$0
     pow $0,7
     sub $0,1
   lpe
-  pow $1,$3
-  add $4,$1
+  pow $4,$3
+  add $1,$4
 lpe
-mov $1,$4

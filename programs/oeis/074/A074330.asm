@@ -33,10 +33,9 @@ lpb $3,1
     bin $5,2
     add $5,$0
   lpe
-  mov $1,$5
-  sub $1,2
-  mul $1,2
-  add $1,2
-  add $8,$1
+  mov $8,$5
+  sub $8,2
+  mul $8,2
+  add $8,2
+  add $1,$8
 lpe
-mov $1,$8

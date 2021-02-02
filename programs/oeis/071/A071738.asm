@@ -16,37 +16,36 @@ lpb $8,1
     trn $0,1
     mov $5,$0
     add $0,1
-    mov $1,$5
     mov $2,$5
     mov $7,1
     add $7,$0
+    mov $9,$5
     add $5,$7
     bin $5,$7
     div $5,$0
     mov $6,$2
     add $6,$2
     add $6,$5
-    sub $6,$1
-    mov $1,$6
+    sub $6,$9
+    mov $9,$6
     mov $11,$12
     lpb $11,1
-      mov $4,$1
+      mov $4,$9
       sub $11,1
     lpe
   lpe
   lpb $13,1
-    sub $4,$1
+    sub $4,$9
     mov $13,0
   lpe
-  mov $1,$4
   mov $3,$8
+  mov $9,$4
   lpb $3,1
+    mov $1,$9
     sub $3,1
-    mov $9,$1
   lpe
 lpe
 lpb $10,1
-  sub $9,$1
+  sub $1,$9
   mov $10,0
 lpe
-mov $1,$9

@@ -3,17 +3,16 @@
 
 mov $3,2
 pow $3,$0
-mov $2,$3
-bin $2,2
-add $2,$3
-mul $2,$3
+mov $1,$3
+bin $1,2
+add $1,$3
+mul $1,$3
 mov $4,8
 lpb $0,1
   mov $0,0
-  gcd $1,$4
-  add $2,$1
-  sub $2,1
+  gcd $2,$4
+  add $1,$2
+  sub $1,1
 lpe
-mov $1,$2
 trn $1,8
 add $1,1

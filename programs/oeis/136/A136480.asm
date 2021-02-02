@@ -8,19 +8,18 @@ lpb $4,1
   mov $0,$5
   sub $4,2
   sub $0,$4
-  mov $1,$0
-  mov $2,1
+  mov $1,1
+  mov $2,$0
   mov $6,$0
   lpb $6,1
-    div $1,2
-    add $2,7
+    add $1,7
+    div $2,2
     mov $3,$6
     sub $6,$6
     sub $6,2
-    bin $6,$1
+    bin $6,$2
     add $6,$3
   lpe
 lpe
-mov $1,$2
 div $1,7
 add $1,1

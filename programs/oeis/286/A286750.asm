@@ -4,10 +4,8 @@
 mov $2,$0
 cal $0,137709 ; Secondary Upper Wythoff Sequence.
 sub $0,3
-mov $3,$0
-div $3,2
-add $3,1
-mov $1,$3
-add $1,1
+mov $1,$0
+div $1,2
+add $1,2
 add $1,$2
 add $1,1

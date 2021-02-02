@@ -5,17 +5,16 @@ add $0,1
 mul $0,3
 mov $3,$0
 mov $4,123
-mov $6,5038
+mov $5,5038
 lpb $0,1
   mov $0,0
   add $2,2
   mul $2,17
   add $4,1
-  mul $6,$3
-  div $6,$4
-  div $6,$2
-  mov $5,$6
-  add $5,41
+  mul $5,$3
+  div $5,$4
+  div $5,$2
+  mov $1,$5
+  add $1,41
 lpe
-mov $1,$5
 sub $1,41

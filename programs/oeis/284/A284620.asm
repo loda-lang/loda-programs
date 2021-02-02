@@ -11,22 +11,21 @@ lpb $6,1
   mov $5,$0
   div $0,2
   cal $0,339765 ; a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
+  mov $2,$6
   mov $3,$0
   add $3,3
-  mov $1,$3
-  sub $1,1
+  mov $4,$3
+  sub $4,1
   mov $7,$5
   mul $7,2
-  add $1,$7
-  mov $2,$6
+  add $4,$7
   lpb $2,1
+    mov $1,$4
     sub $2,1
-    mov $4,$1
   lpe
 lpe
 lpb $8,1
-  sub $4,$1
+  sub $1,$4
   mov $8,0
 lpe
-mov $1,$4
 sub $1,1

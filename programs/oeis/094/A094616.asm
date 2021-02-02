@@ -1,12 +1,10 @@
 ; A094616: Row sums of A094615.
 ; 1,8,35,126,417,1324,4111,12602,38333,116040,350187,1054678,3172249,9533156,28632263,85962354,258018165,774316672,2323474339,6971471630,20916512081,62753730588,188269580415,564825518506,1694510109997
 
-sub $3,$0
+sub $1,$0
 cal $0,53156 ; Number of 2-element intersecting families (with not necessary distinct sets) whose union is an n-element set.
 add $0,7
 mul $0,2
-add $3,$0
-mov $2,$3
-add $2,$0
-mov $1,$2
+add $1,$0
+add $1,$0
 sub $1,31

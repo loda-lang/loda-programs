@@ -3,8 +3,5 @@
 
 cal $0,283709 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
 add $0,2
-add $2,$0
-div $2,3
-add $2,1
-mov $1,$2
-sub $1,1
+add $1,$0
+div $1,3

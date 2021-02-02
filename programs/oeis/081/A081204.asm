@@ -8,5 +8,4 @@ lpb $0,1
   add $2,1
 lpe
 bin $2,$3
-add $4,$2
-mov $1,$4
+add $1,$2

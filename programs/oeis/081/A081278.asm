@@ -3,17 +3,16 @@
 
 mov $3,$0
 trn $0,36
-sub $5,$3
-sub $5,4
-sub $2,$5
+sub $1,$3
+sub $1,4
+sub $2,$1
 add $0,$2
+mov $1,3
+pow $1,$0
 mov $4,$0
 mul $4,$0
 sub $4,7
-mov $5,3
-pow $5,$0
-mul $5,$4
-mov $1,$5
+mul $1,$4
 sub $1,729
 div $1,729
 add $1,1

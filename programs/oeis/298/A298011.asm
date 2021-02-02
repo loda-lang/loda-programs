@@ -3,10 +3,9 @@
 
 mul $0,2
 lpb $0,1
+  add $1,$0
   mov $2,$0
   gcd $2,4096
-  add $3,$0
   sub $0,$2
 lpe
-mov $1,$3
 div $1,2

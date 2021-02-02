@@ -9,15 +9,14 @@ lpb $3,1
   trn $0,1
   mov $7,$0
   add $0,1
+  mov $2,$0
+  add $2,2
+  mov $1,$2
+  add $1,$7
   mov $4,$6
   add $4,$0
-  mov $8,$0
-  add $8,2
-  mov $2,$8
-  add $2,$7
-  mov $0,$2
-  bin $2,$4
-  div $2,$0
+  mov $0,$1
+  bin $1,$4
+  div $1,$0
   sub $3,1
 lpe
-mov $1,$2

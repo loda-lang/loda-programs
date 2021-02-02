@@ -3,9 +3,8 @@
 
 mul $0,160378
 div $0,32768
-mov $3,3
-lpb $3,1
-  mov $2,$0
-  div $3,5
+mov $2,3
+lpb $2,1
+  mov $1,$0
+  div $2,5
 lpe
-mov $1,$2

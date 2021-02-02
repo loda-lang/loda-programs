@@ -6,11 +6,9 @@ add $2,$0
 mov $0,$2
 cal $0,122918 ; Expansion of (1+x)^2/(1+x+x^2)^2.
 add $1,$0
+add $1,12
 add $2,3
-mov $3,$1
-add $3,12
-add $3,$2
-mov $1,$3
+add $1,$2
 sub $1,15
 mul $1,4
 add $1,4

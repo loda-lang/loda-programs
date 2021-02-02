@@ -7,11 +7,10 @@ mov $2,$4
 mul $2,4
 mov $5,$0
 mul $5,2
+mov $1,$5
 mov $3,$5
-mov $6,$5
-pow $6,2
-mul $2,$6
-mul $3,$2
-mov $1,$3
+pow $3,2
+mul $2,$3
+mul $1,$2
 div $1,96
 mul $1,3

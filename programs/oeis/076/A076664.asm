@@ -13,8 +13,7 @@ lpb $2,1
   cal $0,91818 ; Sum of even proper divisors of 2n. Sum of the even divisors of 2n that are less than 2n.
   sub $3,$0
   add $4,$3
-  mov $1,$4
-  div $1,2
-  add $6,$1
+  mov $6,$4
+  div $6,2
+  add $1,$6
 lpe
-mov $1,$6

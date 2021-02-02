@@ -17,11 +17,10 @@ lpb $4,1
     mov $0,$3
     mov $5,19
   lpe
-  mov $1,$5
-  sub $1,17
-  div $1,2
-  mul $1,2
-  add $1,1
-  add $6,$1
+  mov $6,$5
+  sub $6,17
+  div $6,2
+  mul $6,2
+  add $6,1
+  add $1,$6
 lpe
-mov $1,$6

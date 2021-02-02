@@ -3,13 +3,12 @@
 
 sub $3,$0
 cal $0,132171 ; 3^n repeated 3^n times.
-mov $1,$0
-sub $1,1
-mul $1,2
-add $1,1
-mov $2,1
+mov $1,1
+mov $2,$0
+sub $2,1
+mul $2,2
+add $2,1
 add $3,3
-add $3,$1
-mul $2,$3
-mov $1,$2
+add $3,$2
+mul $1,$3
 sub $1,3

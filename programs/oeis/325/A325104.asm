@@ -11,8 +11,7 @@ lpb $3,1
   cal $0,80100 ; a(n) = 2^(number of 0's in binary representation of n).
   sub $2,$0
   mul $2,2
-  mov $1,$2
-  div $1,2
-  add $4,$1
+  mov $4,$2
+  div $4,2
+  add $1,$4
 lpe
-mov $1,$4

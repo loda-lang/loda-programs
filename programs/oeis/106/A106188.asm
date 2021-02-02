@@ -10,6 +10,5 @@ lpb $3,1
   sub $0,$3
   sub $0,1
   cal $0,54108 ; a(n)=(-1)^(n+1)*sum(k=0,n+1,(-1)^k*binomial(2*k,k)).
-  add $4,$0
+  add $1,$0
 lpe
-mov $1,$4

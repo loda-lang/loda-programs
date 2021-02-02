@@ -28,11 +28,10 @@ lpb $2,1
   sub $4,$6
   add $4,1
   mul $4,2
-  mov $1,$4
-  sub $1,3
-  div $1,2
-  add $1,1
-  add $7,$1
+  mov $7,$4
+  sub $7,3
+  div $7,2
+  add $7,1
+  add $1,$7
 lpe
-mov $1,$7
 sub $1,2

@@ -7,20 +7,19 @@ lpb $4,1
   mov $0,$6
   sub $4,1
   sub $0,$4
-  mov $1,8
   mov $2,32
   gcd $2,$0
   mov $3,5
+  mov $5,8
   lpb $0,1
-    add $3,$1
-    mov $1,$2
+    add $3,$5
+    mov $5,$2
     add $2,$0
     trn $0,$2
-    add $3,$1
+    add $3,$5
     sub $3,7
   lpe
-  mov $1,$3
-  sub $1,5
-  add $5,$1
+  mov $5,$3
+  sub $5,5
+  add $1,$5
 lpe
-mov $1,$5

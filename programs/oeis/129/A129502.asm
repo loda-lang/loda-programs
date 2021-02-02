@@ -19,15 +19,14 @@ lpb $6,1
     add $3,2
     bin $3,3
   lpe
-  mov $1,$3
+  mov $2,$3
   mov $5,$6
   lpb $5,1
-    mov $2,$1
+    mov $1,$2
     sub $5,1
   lpe
 lpe
 lpb $7,1
-  sub $2,$1
+  sub $1,$2
   mov $7,0
 lpe
-mov $1,$2

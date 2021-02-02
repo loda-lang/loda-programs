@@ -20,8 +20,7 @@ lpb $6,1
     mov $2,$4
   lpe
   mul $4,2
-  mov $1,$4
-  div $1,2
-  add $8,$1
+  mov $8,$4
+  div $8,2
+  add $1,$8
 lpe
-mov $1,$8

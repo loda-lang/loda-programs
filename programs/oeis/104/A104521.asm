@@ -29,19 +29,18 @@ lpb $8,1
     lpe
     mov $2,1
   lpe
-  mov $1,$3
-  add $1,$9
-  trn $1,3
-  add $1,2
   mov $7,$8
+  mov $10,$3
+  add $10,$9
+  trn $10,3
+  add $10,2
   lpb $7,1
+    mov $1,$10
     sub $7,1
-    mov $10,$1
   lpe
 lpe
 lpb $11,1
-  sub $10,$1
+  sub $1,$10
   mov $11,0
 lpe
-mov $1,$10
 trn $1,1

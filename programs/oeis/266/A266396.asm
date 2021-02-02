@@ -3,24 +3,23 @@
 
 mov $4,$0
 mov $0,4
-mov $1,2
+mov $2,2
 mov $6,5
 lpb $0,1
   trn $0,$6
-  mov $3,$1
-  mul $1,20
-  add $0,$1
+  mov $3,$2
+  mul $2,20
+  add $0,$2
   add $0,$3
   add $0,$4
   sub $0,12
-  mov $2,$6
-  sub $2,1
-  add $2,$0
+  mov $1,$6
+  sub $1,1
+  add $1,$0
   mov $0,$5
   add $3,1
-  add $2,$3
+  add $1,$3
 lpe
 bin $4,3
-mul $2,$4
-mov $1,$2
+mul $1,$4
 div $1,4

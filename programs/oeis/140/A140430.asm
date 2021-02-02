@@ -5,21 +5,20 @@ mov $3,3
 add $3,$0
 mod $0,6
 sub $0,6
-gcd $3,2
-mov $1,$3
+mov $1,2
 mov $2,5
-mov $4,2
+gcd $3,2
+mov $4,$3
 lpb $0,1
   mov $0,3
   div $0,$2
-  add $4,$2
-  add $4,2
-  add $4,$1
-  div $4,2
-  add $0,$4
-  add $1,13
+  add $1,$2
+  add $1,2
+  add $1,$4
+  div $1,2
+  add $0,$1
+  add $4,13
 lpe
-div $0,$1
-sub $4,$0
-mov $1,$4
+div $0,$4
+sub $1,$0
 sub $1,2

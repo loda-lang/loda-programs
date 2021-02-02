@@ -3,8 +3,7 @@
 
 cal $0,81012 ; a(n) = Fibonacci(4n+1) - 2, or Fibonacci(2n+2)*Lucas(2n-1).
 add $0,1
-mov $2,$0
-sub $2,1
-div $2,3
-mov $1,$2
+mov $1,$0
+sub $1,1
+div $1,3
 add $1,1

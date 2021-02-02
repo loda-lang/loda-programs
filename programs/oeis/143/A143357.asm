@@ -9,11 +9,10 @@ add $2,1
 mul $0,$2
 mov $4,$0
 fac $4
-mov $3,$4
+mov $1,$4
+mov $3,1
 mov $5,1
 add $5,$0
-mov $6,1
-add $6,$5
-mul $5,$6
-div $3,$5
-mov $1,$3
+add $3,$5
+mul $5,$3
+div $1,$5

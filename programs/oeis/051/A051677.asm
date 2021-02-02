@@ -10,10 +10,9 @@ lpb $2,1
   sub $0,$2
   cal $0,158894 ; Sawtooth pattern of one, then two, then three, then four etc. consecutive odd numbers, starting each time at 3.
   pow $0,2
-  mov $1,$0
-  sub $1,9
-  div $1,8
-  add $1,1
-  add $3,$1
+  mov $3,$0
+  sub $3,9
+  div $3,8
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3

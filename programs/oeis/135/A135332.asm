@@ -13,23 +13,22 @@ lpb $3,1
   add $2,$0
   mov $4,$0
   add $0,$2
-  mov $1,$0
+  mov $6,$0
   mov $0,$2
   pow $0,2
-  sub $1,$4
-  mul $1,$0
-  mul $1,2
+  sub $6,$4
+  mul $6,$0
+  mul $6,2
   lpb $0,1
     mul $0,2
     gcd $4,2
     div $0,$4
     div $0,7
     mul $0,4
-    mod $1,$4
+    mod $6,$4
   lpe
-  trn $1,2
-  div $1,2
-  add $1,1
-  add $6,$1
+  trn $6,2
+  div $6,2
+  add $6,1
+  add $1,$6
 lpe
-mov $1,$6

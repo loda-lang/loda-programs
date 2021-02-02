@@ -9,13 +9,12 @@ lpb $4,1
   sub $4,1
   sub $0,$4
   add $0,1
-  mov $1,$0
+  mov $5,$0
   mov $0,4
   mov $3,2025
-  mod $3,$1
+  mod $3,$5
   trn $0,$3
-  mov $1,$0
-  div $1,4
-  add $5,$1
+  mov $5,$0
+  div $5,4
+  add $1,$5
 lpe
-mov $1,$5

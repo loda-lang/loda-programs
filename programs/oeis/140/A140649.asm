@@ -3,6 +3,5 @@
 
 add $0,1
 cal $0,130321 ; Triangle, (2^0, 2^1, 2^2, ...) in every column.
-add $2,$0
-div $2,2
-mov $1,$2
+add $1,$0
+div $1,2

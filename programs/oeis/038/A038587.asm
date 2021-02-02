@@ -11,11 +11,10 @@ lpb $2,1
   mul $0,3
   cal $0,84301 ; a(n) = sigma(n) mod 6.
   add $0,9
-  mov $1,$0
-  mul $1,2
-  sub $1,18
-  div $1,2
-  mul $1,3
-  add $3,$1
+  mov $3,$0
+  mul $3,2
+  sub $3,18
+  div $3,2
+  mul $3,3
+  add $1,$3
 lpe
-mov $1,$3

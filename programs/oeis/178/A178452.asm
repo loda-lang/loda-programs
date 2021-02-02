@@ -7,14 +7,13 @@ lpb $3,1
   mov $0,$2
   sub $3,1
   sub $0,$3
-  mov $1,2
-  pow $1,$0
+  mov $5,2
+  pow $5,$0
   pow $0,$4
-  mul $1,2
+  mul $5,2
   lpb $0,1
     sub $0,1
-    div $1,5
+    div $5,5
   lpe
-  add $5,$1
+  add $1,$5
 lpe
-mov $1,$5

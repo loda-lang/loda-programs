@@ -10,16 +10,15 @@ lpb $4,1
   cal $0,108035 ; Triangle read by rows: n-th row is n-th nonzero Fibonacci number repeated n times.
   mul $0,2
   sub $0,2
-  mov $1,$0
   mov $2,$4
+  mov $5,$0
   lpb $2,1
+    mov $1,$5
     sub $2,1
-    mov $5,$1
   lpe
 lpe
 lpb $3,1
+  sub $1,$5
   mov $3,0
-  sub $5,$1
 lpe
-mov $1,$5
 div $1,2

@@ -3,9 +3,8 @@
 
 cal $0,54995 ; A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer two places clockwise from i. Repeat, counting two places from the next undeleted integer, until only one integer remains.
 mod $0,3
-mov $1,$0
-cmp $1,1
-mov $2,10
-sub $2,$1
-mov $1,$2
+mov $1,10
+mov $2,$0
+cmp $2,1
+sub $1,$2
 sub $1,8

@@ -3,9 +3,4 @@
 
 mul $0,5
 cal $0,154127 ; Period 6: repeat [1, 2, 5, 8, 7, 4].
-mul $0,2
-add $0,4
 mov $1,$0
-sub $1,6
-div $1,2
-add $1,1

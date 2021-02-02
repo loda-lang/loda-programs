@@ -4,5 +4,4 @@
 cal $0,128227 ; Right border (1,1,1,...) added to A002260.
 sub $0,7
 mod $0,2
-bin $2,$0
-mov $1,$2
+bin $1,$0

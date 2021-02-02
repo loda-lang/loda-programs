@@ -9,15 +9,14 @@ lpb $4,1
   sub $0,1
   mov $5,$0
   cal $5,301677 ; Partial sums of A301676.
-  mov $1,$5
   mov $2,$4
+  mov $3,$5
   lpb $2,1
+    mov $1,$3
     sub $2,1
-    mov $3,$1
   lpe
 lpe
 lpb $6,1
-  sub $3,$1
+  sub $1,$3
   mov $6,0
 lpe
-mov $1,$3

@@ -19,14 +19,13 @@ lpb $7,1
     mul $0,$2
     mod $0,11
     div $0,3
-    mul $1,2
-    gcd $1,2
-    add $1,$3
-    mov $2,$1
+    mul $6,2
+    gcd $6,2
+    add $6,$3
+    mov $2,$6
     mov $3,2
   lpe
-  add $1,1
-  add $6,$1
+  add $6,1
+  add $1,$6
 lpe
-mov $1,$6
 add $1,$4

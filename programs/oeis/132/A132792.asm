@@ -18,18 +18,17 @@ lpb $3,1
     sub $5,1
     trn $0,$5
   lpe
+  mov $2,$3
   sub $6,1
   bin $6,3
-  mov $1,$6
-  mov $2,$3
+  mov $8,$6
   lpb $2,1
+    mov $1,$8
     sub $2,1
-    mov $8,$1
   lpe
 lpe
 lpb $7,1
+  sub $1,$8
   mov $7,0
-  sub $8,$1
 lpe
-mov $1,$8
 mul $1,2

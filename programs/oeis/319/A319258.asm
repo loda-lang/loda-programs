@@ -3,9 +3,9 @@
 
 mov $2,$0
 add $2,1
-mov $7,$0
+mov $6,$0
 lpb $2,1
-  mov $0,$7
+  mov $0,$6
   sub $2,1
   sub $0,$2
   mov $3,1
@@ -21,6 +21,5 @@ lpb $2,1
     pow $5,2
     mov $4,$5
   lpe
-  add $6,$4
+  add $1,$4
 lpe
-mov $1,$6

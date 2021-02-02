@@ -3,10 +3,9 @@
 
 sub $0,1
 cal $0,86351 ; T(n,3) of A086350.
-mov $1,2
-mul $1,$0
-mov $2,$1
-cmp $2,0
-mov $3,$1
-add $3,$2
+mov $3,2
+mul $3,$0
 mov $1,$3
+mov $2,$3
+cmp $2,0
+add $1,$2

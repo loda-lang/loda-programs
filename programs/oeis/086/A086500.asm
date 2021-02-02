@@ -10,15 +10,14 @@ lpb $5,1
   sub $0,$5
   mov $4,$0
   mod $0,2
-  mov $1,$0
-  add $1,1
+  mov $2,$0
+  add $2,1
   add $4,1
   pow $4,2
   mul $4,2
-  mul $1,$4
-  sub $1,2
-  div $1,2
-  add $1,1
-  add $2,$1
+  mul $2,$4
+  sub $2,2
+  div $2,2
+  add $2,1
+  add $1,$2
 lpe
-mov $1,$2

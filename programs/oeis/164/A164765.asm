@@ -11,9 +11,8 @@ lpb $2,1
   mov $3,7
   add $3,$0
   mod $3,3
-  mov $6,$0
-  add $6,$3
-  pow $6,2
-  add $4,$6
+  mov $4,$0
+  add $4,$3
+  pow $4,2
+  add $1,$4
 lpe
-mov $1,$4

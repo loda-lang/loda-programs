@@ -6,19 +6,17 @@ add $5,2
 mov $0,$5
 lpb $0,1
   sub $0,1
-  trn $7,3
-  mov $3,$7
-  mov $4,$2
+  mov $1,$2
+  add $1,1
   add $2,4
-  add $4,1
-  mov $7,$1
-  mov $1,$4
-  add $2,$3
-  sub $7,$3
+  trn $4,3
+  add $2,$4
+  mov $3,$4
+  mov $4,$6
+  sub $4,$3
+  mov $6,$1
 lpe
-mov $6,$4
-mul $6,232
-mov $1,$6
+mul $1,232
 sub $1,1160
 div $1,464
 add $1,1

@@ -8,13 +8,12 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  mov $1,2
-  pow $1,$0
-  gcd $1,$0
-  pow $1,2
-  div $1,3
-  mul $1,2
-  add $1,1
-  add $3,$1
+  mov $3,2
+  pow $3,$0
+  gcd $3,$0
+  pow $3,2
+  div $3,3
+  mul $3,2
+  add $3,1
+  add $1,$3
 lpe
-mov $1,$3
