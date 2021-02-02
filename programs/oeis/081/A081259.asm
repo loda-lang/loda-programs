@@ -4,7 +4,3 @@
 mul $0,3
 cal $0,7917 ; Version 1 of the "previous prime" function: largest prime <= n.
 mov $1,$0
-mul $1,7
-sub $1,14
-div $1,7
-add $1,2
