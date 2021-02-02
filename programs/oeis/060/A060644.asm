@@ -3,6 +3,4 @@
 
 mul $0,2
 cal $0,279607 ; Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
-add $0,93
 mov $1,$0
-sub $1,93

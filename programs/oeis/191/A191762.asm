@@ -7,8 +7,10 @@ mul $0,2
 bin $0,2
 sub $0,$2
 mul $0,2
-lpb $0,1
-  mod $0,9
-lpe
-mov $1,$0
+sub $0,1
+pow $0,2
+sub $0,1
+mov $2,$0
+mod $2,9
+mov $1,$2
 add $1,1

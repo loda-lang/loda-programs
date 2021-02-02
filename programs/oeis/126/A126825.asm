@@ -3,6 +3,4 @@
 
 cal $0,64987 ; a(n) = n*sigma(n).
 mod $0,3
-add $0,1
 mov $1,$0
-sub $1,1
