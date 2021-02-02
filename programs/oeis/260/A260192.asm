@@ -3,6 +3,4 @@
 
 add $0,1
 cal $0,117441 ; Periodic with repeating part {1,1,0,1,-1,0,-1,-1,0,-1,1,0}.
-mul $0,12345679
 mov $1,$0
-div $1,12345679
