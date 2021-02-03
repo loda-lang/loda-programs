@@ -3,6 +3,4 @@
 
 cal $0,1227 ; Number of odd divisors of n.
 mod $0,2
-mul $0,4479999995520
 mov $1,$0
-div $1,4479999995520

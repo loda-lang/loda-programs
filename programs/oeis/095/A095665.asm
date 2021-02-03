@@ -3,24 +3,10 @@
 
 lpb $0,1
   mov $3,$0
-  mov $1,$0
-  cal $1,95664
-  add $2,$1
-  sub $3,$0
+  cal $3,95664 ; Ninth column (m=8) of (1,3)-Pascal triangle A095660.
   sub $0,1
-  mov $4,$0
-  mov $3,$1
-  mov $1,$2
-  add $4,$2
+  mov $1,$0
+  add $2,$3
+  add $1,$2
 lpe
-fac $0
-mul $4,47
-sub $2,2
-add $3,1
-sub $3,$1
-mov $1,8
-mov $5,$4
-add $3,$2
-mov $1,$4
-div $1,47
 add $1,3

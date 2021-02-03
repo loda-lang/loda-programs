@@ -5,31 +5,15 @@ mov $5,$0
 lpb $0,1
   sub $0,1
   mov $1,$0
-  mov $1,$0
-  cal $1,63197
-  mov $3,$1
-  sub $3,$1
-  add $2,$1
+  cal $1,63197 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 9 ).
   sub $0,1
-  sub $1,$0
-  mov $4,$3
-  mov $4,$0
-  mov $3,$2
-  mov $3,$2
-  add $3,4
-  mov $4,$3
+  add $2,$1
 lpe
-add $1,1
-add $4,2
-trn $3,$3
 mov $1,$2
 add $1,1
-mov $6,$5
-mov $7,$6
-mul $7,2
-add $1,$7
-mul $6,$5
-mov $7,$6
-mul $7,1
-add $1,$7
-mul $6,$5
+mov $4,$5
+mul $4,2
+add $1,$4
+mov $3,$5
+mul $3,$5
+add $1,$3
