@@ -3,6 +3,4 @@
 
 cal $0,92028 ; a(n) is the smallest m > 1 such that m divides n^m-1.
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-add $0,2
 mov $1,$0
-sub $1,2

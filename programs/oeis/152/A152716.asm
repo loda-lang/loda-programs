@@ -1,8 +1,14 @@
 ; A152716: Triangle T(n,k) read by rows: T(n,k) = 4^min(k, n-k) = 4^A004197(n,k).
 ; 1,1,1,1,4,1,1,4,4,1,1,4,16,4,1,1,4,16,16,4,1,1,4,16,64,16,4,1,1,4,16,64,64,16,4,1,1,4,16,64,256,64,16,4,1,1,4,16,64,256,256,64,16,4,1,1,4,16,64,256,1024,256,64,16,4,1
 
-mul $0,2
-add $0,1
-cal $0,82693 ; Pyramidal sequence built with powers of 2.
-mov $1,$0
+mov $1,4
+cal $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
+pow $1,$0
+add $1,2207
+div $1,3
+sub $1,736
 div $1,2
+mul $1,2
+div $1,4
+mul $1,3
+add $1,1

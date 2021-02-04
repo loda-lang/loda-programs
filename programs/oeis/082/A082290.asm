@@ -6,29 +6,15 @@ mov $7,$0
 add $7,1
 lpb $7,1
   clr $0,5
-  sub $7,1
   mov $0,$5
+  sub $7,1
   sub $0,$7
   lpb $0,1
     mov $1,$0
-    mov $0,$1
-    cal $1,260220
+    cal $1,260220 ; Number of symmetry-allowed, linearly-independent terms at n-th order in the expansion of T1 x t1 rovibrational perturbation matrix H(Jx,Jy,Jz).
+    sub $0,2
     add $2,$1
-    add $1,5
-    add $3,1
-    clr $1,1
-    sub $0,1
-    sub $0,1
-    mov $1,4
   lpe
-  add $4,$0
-  mov $4,4
-  mov $0,$4
-  mov $1,1
-  mul $1,$4
-  sub $1,$4
-  mov $3,$4
-  gcd $0,$4
   mov $1,$2
   add $1,1
   add $6,$1
