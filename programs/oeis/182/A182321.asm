@@ -6,4 +6,3 @@ lpb $0,1
   add $1,1
   cal $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 lpe
-sub $1,$0

@@ -3,6 +3,4 @@
 
 cal $0,80820 ; Least m such that m^2 >= n*(n+1)/2.
 pow $0,2
-mul $0,87
 mov $1,$0
-div $1,87
