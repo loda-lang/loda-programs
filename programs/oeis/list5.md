@@ -1329,7 +1329,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273782](http://oeis.org/A273782) ([L20 program](273/A273782.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
 * [A273789](http://oeis.org/A273789) ([L07 program](273/A273789.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
 * [A273790](http://oeis.org/A273790) ([L18 program](273/A273790.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
-* [A273791](http://oeis.org/A273791) ([L08 program](273/A273791.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
+* [A273791](http://oeis.org/A273791) ([L07 program](273/A273791.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 931", based on the 5-celled von Neumann neighborhood.
 * [A273831](http://oeis.org/A273831) ([L34 program](273/A273831.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
 * [A273833](http://oeis.org/A273833) ([L43 program](273/A273833.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
 * [A273834](http://oeis.org/A273834) ([L16 program](273/A273834.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
@@ -2369,7 +2369,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A294017](http://oeis.org/A294017) ([L51 program](294/A294017.asm)): Partial sums of A294016.
 * [A294023](http://oeis.org/A294023) ([L31 program](294/A294023.asm)): Sum of the differences of the larger and smaller parts in the partitions of n into two parts with the smaller part prime.
 * [A294070](http://oeis.org/A294070) ([L06 program](294/A294070.asm)): a(n) = (1/4)*(n^2 - 2*n)^2 + (9/4)*(n^2 - 2*n) + 6.
-* [A294114](http://oeis.org/A294114) ([L53 program](294/A294114.asm)): Sum of the larger parts of the partitions of 2n into two parts with smaller part prime.
 * [A294116](http://oeis.org/A294116) ([L11 program](294/A294116.asm)): Fibonacci sequence beginning 2, 21.
 * [A294129](http://oeis.org/A294129) ([L25 program](294/A294129.asm)): Numbers n for which exactly one length minimal language exists having exactly n nonempty words over a countably infinite alphabet such that within each prefix of a word every letter of the alphabet is at least as frequent as the subsequent alphabet letter.
 * [A294140](http://oeis.org/A294140) ([L10 program](294/A294140.asm)): Number of total dominating sets in the n-crown graph.

@@ -1371,6 +1371,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330038](http://oeis.org/A330038) ([L21 program](330/A330038.asm)): a(1) = 1, a(n) = [n/2] + a([n/2]) + a([(n+1)/2]) for n > 1, where [x] = floor(x).
 * [A330063](http://oeis.org/A330063) ([L71 program](330/A330063.asm)): Beatty sequence for x, where 1/x + sech(x) = 1.
 * [A330064](http://oeis.org/A330064) ([L35 program](330/A330064.asm)): Beatty sequence for cosh(x), where 1/x + sech(x) = 1.
+* [A330066](http://oeis.org/A330066) ([L44 program](330/A330066.asm)): Beatty sequence for x, where 1/x + csch(x) = 1.
 * [A330067](http://oeis.org/A330067) ([L06 program](330/A330067.asm)): Beatty sequence for sinh(x), where 1/x + 1/sinh(x) = 1.
 * [A330082](http://oeis.org/A330082) ([L10 program](330/A330082.asm)): a(n) = 5*A064038(n).
 * [A330085](http://oeis.org/A330085) ([L34 program](330/A330085.asm)): Length of longest binary word with the property that all distinct occurrences of identical-length blocks agree on at most n positions.

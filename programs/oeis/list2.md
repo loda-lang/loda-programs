@@ -2217,7 +2217,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130253](http://oeis.org/A130253) ([L04 program](130/A130253.asm)): Number of Jacobsthal numbers (A001045) <=n.
 * [A130254](http://oeis.org/A130254) ([L24 program](130/A130254.asm)): Duplicate of A130252.
 * [A130255](http://oeis.org/A130255) ([L15 program](130/A130255.asm)): Maximal index k of an odd Fibonacci number (A001519) such that A001519(k) = Fibonacci(2k-1) <= n (the 'lower' odd Fibonacci Inverse).
+* [A130256](http://oeis.org/A130256) ([L36 program](130/A130256.asm)): Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) >= n (the 'upper' odd Fibonacci Inverse).
 * [A130257](http://oeis.org/A130257) ([L11 program](130/A130257.asm)): Partial sums of the 'lower' odd Fibonacci Inverse A130255.
+* [A130258](http://oeis.org/A130258) ([L47 program](130/A130258.asm)): Partial sums of the 'upper' odd Fibonacci Inverse A130256.
 * [A130259](http://oeis.org/A130259) ([L06 program](130/A130259.asm)): Maximal index k of an even Fibonacci number (A001906) such that A001906(k) = Fib(2k) <= n (the 'lower' even Fibonacci Inverse).
 * [A130260](http://oeis.org/A130260) ([L08 program](130/A130260.asm)): Minimal index k of an even Fibonacci number A001906 such that A001906(k) = Fib(2k) >= n (the 'upper' even Fibonacci Inverse).
 * [A130261](http://oeis.org/A130261) ([L07 program](130/A130261.asm)): Partial sums of the 'lower' even Fibonacci Inverse A130259.
@@ -2396,7 +2398,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131369](http://oeis.org/A131369) ([L16 program](131/A131369.asm)): Period 10: repeat [5, 4, 5, 4, 3, 4, 5, 4, 5, 0].
 * [A131370](http://oeis.org/A131370) ([L22 program](131/A131370.asm)): a(n) = 3a(n-1) - 3a(n-2) + 2a(n-3), a(0) = 3, a(1) = 2, a(2) = 0.
 * [A131372](http://oeis.org/A131372) ([L07 program](131/A131372.asm)): Period 7: repeat [1, -1, 0, 1, 0, -1, 1].
-* [A131377](http://oeis.org/A131377) ([L08 program](131/A131377.asm)): Starting with 1, the sequence a(n) changes from 1 to 0 or back when the next number n is a prime.
+* [A131377](http://oeis.org/A131377) ([L04 program](131/A131377.asm)): Starting with 1, the sequence a(n) changes from 1 to 0 or back when the next number n is a prime.
 * [A131378](http://oeis.org/A131378) ([L03 program](131/A131378.asm)): Starting with 0, the sequence a(n) changes from 0 to 1 or back when the next number n is a prime.
 * [A131379](http://oeis.org/A131379) ([L07 program](131/A131379.asm)): Period 4: repeat [1, 0, -1, 1].
 * [A131380](http://oeis.org/A131380) ([L26 program](131/A131380.asm)): a(3n) = 2n, a(3n+1) = 2n+2, a(3n+2) = 2n+1.
@@ -2867,7 +2869,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134507](http://oeis.org/A134507) ([L33 program](134/A134507.asm)): Number of rectangles in a pyramid built with squares. The squares counted in A092498 are excluded.
 * [A134519](http://oeis.org/A134519) ([L05 program](134/A134519.asm)): Numbers remaining when the natural numbers (A000027) are arranged into a triangle and only the beginning and end terms of each row are retained.
 * [A134522](http://oeis.org/A134522) ([L09 program](134/A134522.asm)): a(n) = 2^n + ceiling(n/2).
-* [A134538](http://oeis.org/A134538) ([L05 program](134/A134538.asm)): 5n^2 - 1.
+* [A134538](http://oeis.org/A134538) ([L05 program](134/A134538.asm)): a(n) = 5*n^2 - 1.
 * [A134547](http://oeis.org/A134547) ([L05 program](134/A134547.asm)): a(n)=5n^2+20n+4.
 * [A134582](http://oeis.org/A134582) ([L04 program](134/A134582.asm)): a(n) = (2*n)^2 - 4.
 * [A134593](http://oeis.org/A134593) ([L05 program](134/A134593.asm)): a(n) = 5*n^2 + 10*n + 1. Coefficients of the rational part of (1 + sqrt(n))^5.
@@ -3191,7 +3193,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A138467](http://oeis.org/A138467) ([L05 program](138/A138467.asm)): a(1)=1, then for n>=2 a(n) = n - floor((1/3)*a(a(n-1))).
 * [A138531](http://oeis.org/A138531) ([L03 program](138/A138531.asm)): Decimal expansion of 109739369/111111111.
 * [A138591](http://oeis.org/A138591) ([L07 program](138/A138591.asm)): Sums of two or more consecutive nonnegative integers.
-* [A138709](http://oeis.org/A138709) ([L04 program](138/A138709.asm)): n-th run has length n-th positive Fibonacci numbers, with digits 0 and 1 only, starting with 1.
+* [A138709](http://oeis.org/A138709) ([L03 program](138/A138709.asm)): n-th run has length n-th positive Fibonacci numbers, with digits 0 and 1 only, starting with 1.
 * [A138710](http://oeis.org/A138710) ([L11 program](138/A138710.asm)): n-th run has length n-th positive Fibonacci numbers, with digits 0 and 1 only, starting with 0.
 * [A138711](http://oeis.org/A138711) ([L04 program](138/A138711.asm)): n-th run has length n-th positive triangular number, with digits 0 and 1 only, starting with 1.
 * [A138712](http://oeis.org/A138712) ([L03 program](138/A138712.asm)): n-th run has length n-th positive triangular number, with digits 0 and 1 only, starting with 0.
@@ -3420,7 +3422,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140801](http://oeis.org/A140801) ([L03 program](140/A140801.asm)): a(0)=360, a(n)=a(n-1)+720 for n>=1.
 * [A140805](http://oeis.org/A140805) ([L03 program](140/A140805.asm)): Positive triangular sequence of coefficients inspired by the Belyi transform: x'->(m + n)^(n + m)*x^m*(1 - x)^n/(m^m*n^n): t(n,m)=Binomial[n, m]^Binomial[n, m].
 * [A140807](http://oeis.org/A140807) ([L28 program](140/A140807.asm)): a(n) is the largest integer such that n^k is palindromic in binary for all nonnegative integers k that are <= a(n).
-* [A140811](http://oeis.org/A140811) ([L04 program](140/A140811.asm)): a(n) = 6n^2 - 1.
+* [A140811](http://oeis.org/A140811) ([L04 program](140/A140811.asm)): a(n) = 6*n^2 - 1.
 * [A140823](http://oeis.org/A140823) ([L04 program](140/A140823.asm)): Natural numbers which are not perfect fourth powers.
 * [A140824](http://oeis.org/A140824) ([L21 program](140/A140824.asm)): Expansion of (x-x^3)/(1-3*x+2*x^2-3*x^3+x^4).
 * [A140833](http://oeis.org/A140833) ([L06 program](140/A140833.asm)): Sum of Fibonacci numbers between F(-n)....F(n), inclusive.

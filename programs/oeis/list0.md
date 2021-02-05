@@ -23,7 +23,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000073](http://oeis.org/A000073) ([L26 program](000/A000073.asm)): Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.
 * [A000079](http://oeis.org/A000079) ([L02 program](000/A000079.asm)): Powers of 2: a(n) = 2^n.
 * [A000085](http://oeis.org/A000085) ([L13 program](000/A000085.asm)): Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
-* [A000093](http://oeis.org/A000093) ([L26 program](000/A000093.asm)): a(n) = floor(n^(3/2)).
+* [A000093](http://oeis.org/A000093) ([L07 program](000/A000093.asm)): a(n) = floor(n^(3/2)).
 * [A000096](http://oeis.org/A000096) ([L04 program](000/A000096.asm)): a(n) = n*(n+3)/2.
 * [A000108](http://oeis.org/A000108) ([L06 program](000/A000108.asm)): Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 * [A000115](http://oeis.org/A000115) ([L05 program](000/A000115.asm)): Denumerants: Expansion of 1/((1-x)*(1-x^2)*(1-x^5)).
@@ -367,7 +367,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002417](http://oeis.org/A002417) ([L05 program](002/A002417.asm)): 4-dimensional figurate numbers: a(n) = n*binomial(n+2, 3).
 * [A002418](http://oeis.org/A002418) ([L08 program](002/A002418.asm)): 4-dimensional figurate numbers: (5*n-1)*binomial(n+2,3)/4.
 * [A002419](http://oeis.org/A002419) ([L09 program](002/A002419.asm)): 4-dimensional figurate numbers: (6*n-2)*binomial(n+2,3)/4.
-* [A002420](http://oeis.org/A002420) ([L39 program](002/A002420.asm)): Expansion of sqrt(1 - 4*x) in powers of x.
+* [A002420](http://oeis.org/A002420) ([L09 program](002/A002420.asm)): Expansion of sqrt(1 - 4*x) in powers of x.
 * [A002446](http://oeis.org/A002446) ([L04 program](002/A002446.asm)): a(n) = 2^(2*n+1) - 2.
 * [A002450](http://oeis.org/A002450) ([L03 program](002/A002450.asm)): a(n) = (4^n - 1)/3.
 * [A002457](http://oeis.org/A002457) ([L08 program](002/A002457.asm)): a(n) = (2n+1)!/n!^2.
@@ -415,7 +415,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002807](http://oeis.org/A002807) ([L10 program](002/A002807.asm)): a(n) = Sum_{k=3..n} (k-1)!*C(n,k)/2.
 * [A002815](http://oeis.org/A002815) ([L26 program](002/A002815.asm)): a(n) = n + Sum_{k=1..n} pi(k), where pi() = A000720.
 * [A002817](http://oeis.org/A002817) ([L05 program](002/A002817.asm)): Doubly triangular numbers: a(n) = n*(n+1)*(n^2+n+2)/8.
-* [A002821](http://oeis.org/A002821) ([L09 program](002/A002821.asm)): a(n) = nearest integer to n^(3/2).
+* [A002821](http://oeis.org/A002821) ([L07 program](002/A002821.asm)): a(n) = nearest integer to n^(3/2).
 * [A002878](http://oeis.org/A002878) ([L07 program](002/A002878.asm)): Bisection of Lucas sequence: a(n) = L(2*n+1).
 * [A002901](http://oeis.org/A002901) ([L05 program](002/A002901.asm)): n^3 - floor( n/3 ).
 * [A002939](http://oeis.org/A002939) ([L04 program](002/A002939.asm)): a(n) = 2*n*(2*n-1).
@@ -1343,6 +1343,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010199](http://oeis.org/A010199) ([L22 program](010/A010199.asm)): Continued fraction for sqrt(140).
 * [A010200](http://oeis.org/A010200) ([L17 program](010/A010200.asm)): Continued fraction for sqrt(141).
 * [A010201](http://oeis.org/A010201) ([L15 program](010/A010201.asm)): Continued fraction for sqrt(142).
+* [A010209](http://oeis.org/A010209) ([L38 program](010/A010209.asm)): Continued fraction for sqrt(160).
 * [A010218](http://oeis.org/A010218) ([L06 program](010/A010218.asm)): Continued fraction for sqrt(174).
 * [A010227](http://oeis.org/A010227) ([L26 program](010/A010227.asm)): Continued fraction for sqrt(185).
 * [A010231](http://oeis.org/A010231) ([L10 program](010/A010231.asm)): Continued fraction for sqrt(189).
@@ -1865,7 +1866,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016029](http://oeis.org/A016029) ([L06 program](016/A016029.asm)): a(1) = a(2) = 1, a(2n + 1) = 2*a(2n) and a(2n) = 2*a(2n - 1) + (-1)^n.
 * [A016051](http://oeis.org/A016051) ([L05 program](016/A016051.asm)): Numbers of the form 9n+3 or 9n+6.
 * [A016061](http://oeis.org/A016061) ([L06 program](016/A016061.asm)): a(n) = n*(n+1)*(4*n+5)/6.
-* [A016064](http://oeis.org/A016064) ([L08 program](016/A016064.asm)): Smallest side lengths of almost-equilateral Heronian triangles (sides are consecutive integers, area is an integer).
+* [A016064](http://oeis.org/A016064) ([L08 program](016/A016064.asm)): Smallest side lengths of almost-equilateral Heronian triangles (sides are consecutive positive integers, area is a nonnegative integer).
 * [A016084](http://oeis.org/A016084) ([L14 program](016/A016084.asm)): a(n+1) = a(n) + its digital root.
 * [A016116](http://oeis.org/A016116) ([L03 program](016/A016116.asm)): a(n) = 2^floor(n/2).
 * [A016127](http://oeis.org/A016127) ([L13 program](016/A016127.asm)): Expansion of 1/((1-2*x)*(1-5*x)).
@@ -4445,6 +4446,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040563](http://oeis.org/A040563) ([L09 program](040/A040563.asm)): Continued fraction for sqrt(588).
 * [A040567](http://oeis.org/A040567) ([L09 program](040/A040567.asm)): Continued fraction for sqrt(592).
 * [A040575](http://oeis.org/A040575) ([L07 program](040/A040575.asm)): Continued fraction for sqrt(600).
+* [A040583](http://oeis.org/A040583) ([L42 program](040/A040583.asm)): Continued fraction for sqrt(608).
 * [A040599](http://oeis.org/A040599) ([L06 program](040/A040599.asm)): Continued fraction for sqrt(624).
 * [A040600](http://oeis.org/A040600) ([L03 program](040/A040600.asm)): Continued fraction for sqrt(626).
 * [A040601](http://oeis.org/A040601) ([L04 program](040/A040601.asm)): Continued fraction for sqrt(627).
@@ -4506,6 +4508,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040889](http://oeis.org/A040889) ([L07 program](040/A040889.asm)): Continued fraction for sqrt(920).
 * [A040894](http://oeis.org/A040894) ([L28 program](040/A040894.asm)): Continued fraction for sqrt(925).
 * [A040899](http://oeis.org/A040899) ([L07 program](040/A040899.asm)): Continued fraction for sqrt(930).
+* [A040909](http://oeis.org/A040909) ([L46 program](040/A040909.asm)): Continued fraction for sqrt(940).
 * [A040929](http://oeis.org/A040929) ([L06 program](040/A040929.asm)): Continued fraction for sqrt(960).
 * [A040930](http://oeis.org/A040930) ([L03 program](040/A040930.asm)): Continued fraction for sqrt(962).
 * [A040931](http://oeis.org/A040931) ([L04 program](040/A040931.asm)): Continued fraction for sqrt(963).
@@ -4691,7 +4694,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A045623](http://oeis.org/A045623) ([L08 program](045/A045623.asm)): Number of 1's in all compositions of n+1.
 * [A045654](http://oeis.org/A045654) ([L05 program](045/A045654.asm)): Number of 2n-bead balanced binary strings, rotationally equivalent to complement.
 * [A045670](http://oeis.org/A045670) ([L14 program](045/A045670.asm)): Digital sum (in base 10) of numbers in base 3 of the alternate number system.
-* [A045678](http://oeis.org/A045678) ([L50 program](045/A045678.asm)): Number of 2n-bead balanced binary necklaces which are equivalent to their reversed complement, but not equivalent to their reverse and complement.
+* [A045678](http://oeis.org/A045678) ([L30 program](045/A045678.asm)): Number of 2n-bead balanced binary necklaces which are equivalent to their reversed complement, but not equivalent to their reverse and complement.
 * [A045681](http://oeis.org/A045681) ([L15 program](045/A045681.asm)): Extension of Beatty sequence; complement of A045682.
 * [A045682](http://oeis.org/A045682) ([L14 program](045/A045682.asm)): Extension of Beatty sequence; complement of A045681.
 * [A045721](http://oeis.org/A045721) ([L04 program](045/A045721.asm)): a(n) = binomial(3*n+1,n).
@@ -5381,7 +5384,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049652](http://oeis.org/A049652) ([L09 program](049/A049652.asm)): a(n) = (F(3*n+2) - 1)/4, where F=A000045 (the Fibonacci sequence).
 * [A049653](http://oeis.org/A049653) ([L08 program](049/A049653.asm)): a(n) = 2*n - prevprime(2*n).
 * [A049684](http://oeis.org/A049684) ([L12 program](049/A049684.asm)): a(n) = Fibonacci(2n)^2.
-* [A049711](http://oeis.org/A049711) ([L04 program](049/A049711.asm)): a(n) = n - prevprime(n).
+* [A049711](http://oeis.org/A049711) ([L03 program](049/A049711.asm)): a(n) = n - prevprime(n).
 * [A049716](http://oeis.org/A049716) ([L04 program](049/A049716.asm)): a(n) = 2*n + 1 - prevprime(2*n + 1).
 * [A049766](http://oeis.org/A049766) ([L11 program](049/A049766.asm)): a(n) = Sum_{k=1..n} T(n,k), array T as in A049765.
 * [A049773](http://oeis.org/A049773) ([L18 program](049/A049773.asm)): Triangular array T read by rows: if row n is r(1),...,r(m), then row n+1 is 2r(1)-1,...,2r(m)-1,2r(1),...,2r(m).

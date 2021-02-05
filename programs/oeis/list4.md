@@ -405,7 +405,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210440](http://oeis.org/A210440) ([L04 program](210/A210440.asm)): a(n) = 2*n*(n+1)*(n+2)/3.
 * [A210448](http://oeis.org/A210448) ([L09 program](210/A210448.asm)): Total number of different letters summed over all ternary words of length n.
 * [A210464](http://oeis.org/A210464) ([L20 program](210/A210464.asm)): Number of bracelets with 2 blue, 2 red, and n black beads.
-* [A210469](http://oeis.org/A210469) ([L15 program](210/A210469.asm)): a(n) = n - primepi(2n).
+* [A210469](http://oeis.org/A210469) ([L04 program](210/A210469.asm)): a(n) = n - primepi(2n).
 * [A210521](http://oeis.org/A210521) ([L12 program](210/A210521.asm)): Array read by downward antidiagonals: T(n,k) = (n+k-1)*(n+k-2) + n + floor((n+k)/2)*(1-2*floor((n+k)/2)), for n, k > 0
 * [A210527](http://oeis.org/A210527) ([L07 program](210/A210527.asm)): a(n) = 9*n^2 + 39*n + 83.
 * [A210530](http://oeis.org/A210530) ([L07 program](210/A210530.asm)): T(n,k) = (k + 3*n - 2 - (k+n-2)*(-1)^(k+n))/2 n, k > 0, read by antidiagonals.
@@ -1930,7 +1930,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240836](http://oeis.org/A240836) ([L12 program](240/A240836.asm)): Numbers n such that n^3 = x*y*z where 2 <= x <= y <= z , n^3+1 = (x-1)*(y+1)*(z+1).
 * [A240848](http://oeis.org/A240848) ([L17 program](240/A240848.asm)): Sum of n, digitsum(n) and number of digits of n.
 * [A240883](http://oeis.org/A240883) ([L16 program](240/A240883.asm)): Central terms of the triangle in A240857.
-* [A240924](http://oeis.org/A240924) ([L35 program](240/A240924.asm)): Digital root of squares of numbers not divisible by 2, 3 or 5.
+* [A240924](http://oeis.org/A240924) ([L11 program](240/A240924.asm)): Digital root of squares of numbers not divisible by 2, 3 or 5.
 * [A240926](http://oeis.org/A240926) ([L08 program](240/A240926.asm)): a(n) = 2 + L(2*n) = 2 + A005248(n), n >= 0, with the Lucas numbers (A000032).
 * [A240930](http://oeis.org/A240930) ([L04 program](240/A240930.asm)): a(n) = n^7 - n^6.
 * [A240931](http://oeis.org/A240931) ([L04 program](240/A240931.asm)): a(n) = n^8 - n^7.

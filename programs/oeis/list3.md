@@ -852,7 +852,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158481](http://oeis.org/A158481) ([L05 program](158/A158481.asm)): 49n^2 + 7.
 * [A158482](http://oeis.org/A158482) ([L05 program](158/A158482.asm)): 14n^2 + 1.
 * [A158484](http://oeis.org/A158484) ([L05 program](158/A158484.asm)): 49n^2 - 7.
-* [A158485](http://oeis.org/A158485) ([L05 program](158/A158485.asm)): 14n^2 - 1.
+* [A158485](http://oeis.org/A158485) ([L05 program](158/A158485.asm)): a(n) = 14*n^2 - 1.
 * [A158487](http://oeis.org/A158487) ([L05 program](158/A158487.asm)): a(n) = 64*n^2 - 8.
 * [A158488](http://oeis.org/A158488) ([L05 program](158/A158488.asm)): a(n) = 64*n^2 + 8.
 * [A158490](http://oeis.org/A158490) ([L05 program](158/A158490.asm)): 100n^2 - 10.
@@ -1513,7 +1513,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165721](http://oeis.org/A165721) ([L06 program](165/A165721.asm)): Integers of the form k*(k+13)/12.
 * [A165725](http://oeis.org/A165725) ([L07 program](165/A165725.asm)): Largest divisor of n coprime to 30. I.e., a(n) = max { k | gcd(n, k) = k and gcd(k, 30) = 1 }.
 * [A165734](http://oeis.org/A165734) ([L04 program](165/A165734.asm)): Period 2: repeat 6,30.
-* [A165735](http://oeis.org/A165735) ([L07 program](165/A165735.asm)): Surviving integers under the double-count Josephus problem (see A054995), modulo 3.
+* [A165735](http://oeis.org/A165735) ([L03 program](165/A165735.asm)): Surviving integers under the double-count Josephus problem (see A054995), modulo 3.
 * [A165743](http://oeis.org/A165743) ([L03 program](165/A165743.asm)): The greatest common divisor of n and 210.
 * [A165746](http://oeis.org/A165746) ([L05 program](165/A165746.asm)): a(n) = 3 - 2*3^n.
 * [A165747](http://oeis.org/A165747) ([L05 program](165/A165747.asm)): a(n) = 1-2n.
@@ -3617,7 +3617,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187971](http://oeis.org/A187971) ([L56 program](187/A187971.asm)): Positions of 1 in A187969; complement of A187970.
 * [A187973](http://oeis.org/A187973) ([L10 program](187/A187973.asm)): Positions of 0 in A187972; complement of A187974.
 * [A187975](http://oeis.org/A187975) ([L50 program](187/A187975.asm)): Positions of 1 in the zero-one sequence given by s(n)=[nr+5r]-[nr]-[5r], where r=sqrt(2), n>=1, [ ]=floor.
-* [A188009](http://oeis.org/A188009) ([L06 program](188/A188009.asm)): [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
+* [A188009](http://oeis.org/A188009) ([L03 program](188/A188009.asm)): [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
 * [A188010](http://oeis.org/A188010) ([L23 program](188/A188010.asm)): Positions of 0 in A188009; complement of A101866.
 * [A188012](http://oeis.org/A188012) ([L09 program](188/A188012.asm)): Positions of 0 in A188011; complement of A188013.
 * [A188026](http://oeis.org/A188026) ([L08 program](188/A188026.asm)): Positions of 0 in the zero-one sequence given by z(n)=[nr]-[nr-8r]-[8r], where r=(1+sqrt(5))/2, [ ]=floor, n>=1.
