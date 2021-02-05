@@ -4,7 +4,3 @@
 mul $0,2
 cal $0,5995 ; Alkane (or paraffin) numbers l(8,n).
 mov $1,$0
-mul $1,2
-sub $1,2
-div $1,2
-add $1,1

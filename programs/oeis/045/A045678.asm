@@ -5,37 +5,17 @@ mov $729,$0
 mov $731,2
 lpb $731,1
   clr $0,729
-  sub $731,1
   mov $0,$729
+  sub $731,1
   add $0,$731
   sub $0,1
   lpb $0,1
+    mov $1,$0
     add $2,$0
     sub $2,$0
-    mov $1,$0
-    cal $1,27556
+    cal $1,27556 ; Unbalanced strings of length n.
     div $0,2
-    lpb $1,1
-      add $5,$2
-      add $1,$2
-      lpb $0,301
-        sub $5,$0
-        mov $3,$0
-        lpb $0,729
-          div $0,9
-          add $2,2
-          clr $4,2
-          add $2,$1
-          trn $4,1
-          div $0,2
-          pow $4,2
-        lpe
-      lpe
-    lpe
-    mov $4,1
     sub $1,1
-    mov $4,2
-    mov $5,9
     add $2,1
     add $2,$1
   lpe
@@ -47,7 +27,7 @@ lpb $731,1
   lpe
 lpe
 lpb $729,1
-  sub $730,$1
   mov $729,0
+  sub $730,$1
 lpe
 mov $1,$730
