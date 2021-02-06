@@ -173,6 +173,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001189](http://oeis.org/A001189) ([L19 program](001/A001189.asm)): Number of degree-n permutations of order exactly 2.
 * [A001196](http://oeis.org/A001196) ([L27 program](001/A001196.asm)): Double-bitters: only even length runs in binary expansion.
 * [A001218](http://oeis.org/A001218) ([L06 program](001/A001218.asm)): a(n) = 3^n mod 100.
+* [A001222](http://oeis.org/A001222) ([L80 program](001/A001222.asm)): Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
 * [A001227](http://oeis.org/A001227) ([L28 program](001/A001227.asm)): Number of odd divisors of n.
 * [A001249](http://oeis.org/A001249) ([L03 program](001/A001249.asm)): Squares of tetrahedral numbers: binomial(n+3,n)^2.
 * [A001254](http://oeis.org/A001254) ([L20 program](001/A001254.asm)): Squares of Lucas numbers.
@@ -1343,7 +1344,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010199](http://oeis.org/A010199) ([L22 program](010/A010199.asm)): Continued fraction for sqrt(140).
 * [A010200](http://oeis.org/A010200) ([L17 program](010/A010200.asm)): Continued fraction for sqrt(141).
 * [A010201](http://oeis.org/A010201) ([L15 program](010/A010201.asm)): Continued fraction for sqrt(142).
-* [A010209](http://oeis.org/A010209) ([L38 program](010/A010209.asm)): Continued fraction for sqrt(160).
+* [A010209](http://oeis.org/A010209) ([L13 program](010/A010209.asm)): Continued fraction for sqrt(160).
 * [A010218](http://oeis.org/A010218) ([L06 program](010/A010218.asm)): Continued fraction for sqrt(174).
 * [A010227](http://oeis.org/A010227) ([L26 program](010/A010227.asm)): Continued fraction for sqrt(185).
 * [A010231](http://oeis.org/A010231) ([L10 program](010/A010231.asm)): Continued fraction for sqrt(189).
@@ -4446,7 +4447,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040563](http://oeis.org/A040563) ([L09 program](040/A040563.asm)): Continued fraction for sqrt(588).
 * [A040567](http://oeis.org/A040567) ([L09 program](040/A040567.asm)): Continued fraction for sqrt(592).
 * [A040575](http://oeis.org/A040575) ([L07 program](040/A040575.asm)): Continued fraction for sqrt(600).
-* [A040583](http://oeis.org/A040583) ([L42 program](040/A040583.asm)): Continued fraction for sqrt(608).
+* [A040583](http://oeis.org/A040583) ([L13 program](040/A040583.asm)): Continued fraction for sqrt(608).
 * [A040599](http://oeis.org/A040599) ([L06 program](040/A040599.asm)): Continued fraction for sqrt(624).
 * [A040600](http://oeis.org/A040600) ([L03 program](040/A040600.asm)): Continued fraction for sqrt(626).
 * [A040601](http://oeis.org/A040601) ([L04 program](040/A040601.asm)): Continued fraction for sqrt(627).
@@ -4508,7 +4509,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040889](http://oeis.org/A040889) ([L07 program](040/A040889.asm)): Continued fraction for sqrt(920).
 * [A040894](http://oeis.org/A040894) ([L28 program](040/A040894.asm)): Continued fraction for sqrt(925).
 * [A040899](http://oeis.org/A040899) ([L07 program](040/A040899.asm)): Continued fraction for sqrt(930).
-* [A040909](http://oeis.org/A040909) ([L46 program](040/A040909.asm)): Continued fraction for sqrt(940).
+* [A040909](http://oeis.org/A040909) ([L13 program](040/A040909.asm)): Continued fraction for sqrt(940).
 * [A040929](http://oeis.org/A040929) ([L06 program](040/A040929.asm)): Continued fraction for sqrt(960).
 * [A040930](http://oeis.org/A040930) ([L03 program](040/A040930.asm)): Continued fraction for sqrt(962).
 * [A040931](http://oeis.org/A040931) ([L04 program](040/A040931.asm)): Continued fraction for sqrt(963).
@@ -4844,7 +4845,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047281](http://oeis.org/A047281) ([L07 program](047/A047281.asm)): Numbers that are congruent to {0, 3, 6} mod 7.
 * [A047282](http://oeis.org/A047282) ([L04 program](047/A047282.asm)): Numbers that are congruent to {1, 3, 6} mod 7.
 * [A047283](http://oeis.org/A047283) ([L13 program](047/A047283.asm)): Numbers that are congruent to {0, 1, 3, 6} mod 7.
-* [A047284](http://oeis.org/A047284) ([L07 program](047/A047284.asm)): Numbers that are congruent to {2, 3, 6} mod 7.
+* [A047284](http://oeis.org/A047284) ([L06 program](047/A047284.asm)): Numbers that are congruent to {2, 3, 6} mod 7.
 * [A047285](http://oeis.org/A047285) ([L08 program](047/A047285.asm)): Numbers that are congruent to {0, 2, 3, 6} mod 7.
 * [A047286](http://oeis.org/A047286) ([L12 program](047/A047286.asm)): Numbers that are congruent to {1, 2, 3, 6} mod 7.
 * [A047287](http://oeis.org/A047287) ([L05 program](047/A047287.asm)): Numbers that are congruent to {0, 1, 2, 3, 6} mod 7.
@@ -4907,7 +4908,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047344](http://oeis.org/A047344) ([L05 program](047/A047344.asm)): Numbers that are congruent to {0, 1, 3, 4} mod 7.
 * [A047345](http://oeis.org/A047345) ([L04 program](047/A047345.asm)): Numbers that are congruent to {0, 4} mod 7.
 * [A047346](http://oeis.org/A047346) ([L04 program](047/A047346.asm)): Numbers that are congruent to {1, 4} mod 7.
-* [A047347](http://oeis.org/A047347) ([L06 program](047/A047347.asm)): Numbers that are congruent to {0, 1, 4} mod 7.
+* [A047347](http://oeis.org/A047347) ([L05 program](047/A047347.asm)): Numbers that are congruent to {0, 1, 4} mod 7.
 * [A047348](http://oeis.org/A047348) ([L06 program](047/A047348.asm)): Numbers that are congruent to {2, 4} mod 7.
 * [A047349](http://oeis.org/A047349) ([L03 program](047/A047349.asm)): Numbers that are congruent to {0, 2, 4} mod 7.
 * [A047350](http://oeis.org/A047350) ([L20 program](047/A047350.asm)): Numbers that are congruent to {1, 2, 4} mod 7.
@@ -4947,7 +4948,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047384](http://oeis.org/A047384) ([L36 program](047/A047384.asm)): Numbers that are congruent to {0, 1, 5} mod 7.
 * [A047385](http://oeis.org/A047385) ([L04 program](047/A047385.asm)): Numbers that are congruent to {2, 5} mod 7.
 * [A047386](http://oeis.org/A047386) ([L04 program](047/A047386.asm)): Numbers that are congruent to {0, 2, 5} mod 7.
-* [A047387](http://oeis.org/A047387) ([L07 program](047/A047387.asm)): Numbers that are congruent to {1, 2, 5} mod 7.
+* [A047387](http://oeis.org/A047387) ([L06 program](047/A047387.asm)): Numbers that are congruent to {1, 2, 5} mod 7.
 * [A047388](http://oeis.org/A047388) ([L12 program](047/A047388.asm)): Numbers that are congruent to {0, 1, 2, 5} mod 7.
 * [A047389](http://oeis.org/A047389) ([L06 program](047/A047389.asm)): Numbers that are congruent to {3, 5} mod 7.
 * [A047390](http://oeis.org/A047390) ([L04 program](047/A047390.asm)): Numbers that are congruent to {0, 3, 5} mod 7.

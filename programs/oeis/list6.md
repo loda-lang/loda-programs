@@ -306,6 +306,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305548](http://oeis.org/A305548) ([L02 program](305/A305548.asm)): a(n) = 27*n.
 * [A305549](http://oeis.org/A305549) ([L06 program](305/A305549.asm)): Crystal ball sequence for the lattice C_6.
 * [A305559](http://oeis.org/A305559) ([L15 program](305/A305559.asm)): [0, -1, -1] together with A000290.
+* [A305716](http://oeis.org/A305716) ([L81 program](305/A305716.asm)): Order of rowmotion on the divisor lattice for n.
 * [A305750](http://oeis.org/A305750) ([L21 program](305/A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
 * [A305753](http://oeis.org/A305753) ([L11 program](305/A305753.asm)): A base 3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
 * [A305801](http://oeis.org/A305801) ([L09 program](305/A305801.asm)): Filter sequence for a(odd prime) = constant sequences.
@@ -1371,7 +1372,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330038](http://oeis.org/A330038) ([L21 program](330/A330038.asm)): a(1) = 1, a(n) = [n/2] + a([n/2]) + a([(n+1)/2]) for n > 1, where [x] = floor(x).
 * [A330063](http://oeis.org/A330063) ([L71 program](330/A330063.asm)): Beatty sequence for x, where 1/x + sech(x) = 1.
 * [A330064](http://oeis.org/A330064) ([L35 program](330/A330064.asm)): Beatty sequence for cosh(x), where 1/x + sech(x) = 1.
-* [A330066](http://oeis.org/A330066) ([L44 program](330/A330066.asm)): Beatty sequence for x, where 1/x + csch(x) = 1.
+* [A330066](http://oeis.org/A330066) ([L07 program](330/A330066.asm)): Beatty sequence for x, where 1/x + csch(x) = 1.
 * [A330067](http://oeis.org/A330067) ([L06 program](330/A330067.asm)): Beatty sequence for sinh(x), where 1/x + 1/sinh(x) = 1.
 * [A330082](http://oeis.org/A330082) ([L10 program](330/A330082.asm)): a(n) = 5*A064038(n).
 * [A330085](http://oeis.org/A330085) ([L34 program](330/A330085.asm)): Length of longest binary word with the property that all distinct occurrences of identical-length blocks agree on at most n positions.

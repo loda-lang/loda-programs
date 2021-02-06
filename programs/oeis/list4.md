@@ -393,6 +393,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210032](http://oeis.org/A210032) ([L04 program](210/A210032.asm)): a(n)=n for n=1,2,3 and 4; a(n)=5 for n>=5.
 * [A210062](http://oeis.org/A210062) ([L05 program](210/A210062.asm)): Number of digits in 7^n.
 * [A210100](http://oeis.org/A210100) ([L10 program](210/A210100.asm)): Number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having one or three distinct values, and new values 0..2 introduced in row major order.
+* [A210241](http://oeis.org/A210241) ([L58 program](210/A210241.asm)): Partial sums of A073093.
 * [A210357](http://oeis.org/A210357) ([L14 program](210/A210357.asm)): Location of the maximum modulus in the inverse of Hilbert's matrix.
 * [A210374](http://oeis.org/A210374) ([L10 program](210/A210374.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and (sum of terms) = n+2.
 * [A210375](http://oeis.org/A210375) ([L34 program](210/A210375.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and (sum of terms) = n + 3.
@@ -1130,7 +1131,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A221151](http://oeis.org/A221151) ([L34 program](221/A221151.asm)): The generalized Fibonacci word f^[4].
 * [A221152](http://oeis.org/A221152) ([L20 program](221/A221152.asm)): The generalized Fibonacci word f^[5].
 * [A221414](http://oeis.org/A221414) ([L33 program](221/A221414.asm)): Number of nX3 arrays of occupancy after each element stays put or moves to some horizontal or antidiagonal neighbor, with every occupancy equal to zero or two
-* [A221440](http://oeis.org/A221440) ([L08 program](221/A221440.asm)): Hilltop maps: number of n X 2 binary arrays indicating the locations of corresponding elements not exceeded by any horizontal or antidiagonal neighbor in a random 0..1 n X 2 array.
+* [A221440](http://oeis.org/A221440) ([L06 program](221/A221440.asm)): Hilltop maps: number of n X 2 binary arrays indicating the locations of corresponding elements not exceeded by any horizontal or antidiagonal neighbor in a random 0..1 n X 2 array.
 * [A221461](http://oeis.org/A221461) ([L14 program](221/A221461.asm)): Number of 0..6 arrays of length n with each element unequal to at least one neighbor, starting with 0
 * [A221462](http://oeis.org/A221462) ([L14 program](221/A221462.asm)): Number of 0..7 arrays of length n with each element unequal to at least one neighbor, starting with 0
 * [A221464](http://oeis.org/A221464) ([L05 program](221/A221464.asm)): Number of 0..n arrays of length 5 with each element unequal to at least one neighbor, starting with 0.
@@ -1160,6 +1161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A222259](http://oeis.org/A222259) ([L19 program](222/A222259.asm)): Lexicographically earliest injective sequence of positive integers such that the sum of 8 consecutive terms is always divisible by 8.
 * [A222260](http://oeis.org/A222260) ([L08 program](222/A222260.asm)): Lexicographically earliest injective sequence of nonnegative integers such that the sum of 10 consecutive terms is always divisible by 10.
 * [A222261](http://oeis.org/A222261) ([L09 program](222/A222261.asm)): Lexicographically earliest injective sequence of positive integers such that the sum of 10 consecutive terms is always divisible by 10.
+* [A222312](http://oeis.org/A222312) ([L87 program](222/A222312.asm)): a(n) = n + A001222(n) - 1.
 * [A222408](http://oeis.org/A222408) ([L07 program](222/A222408.asm)): Partial sums of A008531, or crystal ball sequence for {A_4}* lattice.
 * [A222410](http://oeis.org/A222410) ([L15 program](222/A222410.asm)): Partial sums of A008534, or crystal ball sequence for {A_6}* lattice.
 * [A222465](http://oeis.org/A222465) ([L04 program](222/A222465.asm)): a(n) = 4*n^2 + 3.

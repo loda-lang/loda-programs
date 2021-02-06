@@ -1789,6 +1789,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123357](http://oeis.org/A123357) ([L12 program](123/A123357.asm)): Kekulé numbers for certain benzenoids (see the Cyvin-Gutman book for details).
 * [A123363](http://oeis.org/A123363) ([L07 program](123/A123363.asm)): a(n) = n^3 + (-1)^(n+1).
 * [A123384](http://oeis.org/A123384) ([L11 program](123/A123384.asm)): Number of bits in binary expansion of 10^n.
+* [A123567](http://oeis.org/A123567) ([L62 program](123/A123567.asm)): Recursive sum of 2*Omega(n), where Omega(n) is the sequence A001222.
 * [A123578](http://oeis.org/A123578) ([L04 program](123/A123578.asm)): The Kruskal-Macaulay function M_2(n).
 * [A123596](http://oeis.org/A123596) ([L05 program](123/A123596.asm)): Squares alternating with triangular numbers.
 * [A123620](http://oeis.org/A123620) ([L38 program](123/A123620.asm)): Expansion of (1 + x + x^2) / (1 - 3*x - 3*x^2).
@@ -2217,9 +2218,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130253](http://oeis.org/A130253) ([L04 program](130/A130253.asm)): Number of Jacobsthal numbers (A001045) <=n.
 * [A130254](http://oeis.org/A130254) ([L24 program](130/A130254.asm)): Duplicate of A130252.
 * [A130255](http://oeis.org/A130255) ([L15 program](130/A130255.asm)): Maximal index k of an odd Fibonacci number (A001519) such that A001519(k) = Fibonacci(2k-1) <= n (the 'lower' odd Fibonacci Inverse).
-* [A130256](http://oeis.org/A130256) ([L36 program](130/A130256.asm)): Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) >= n (the 'upper' odd Fibonacci Inverse).
+* [A130256](http://oeis.org/A130256) ([L07 program](130/A130256.asm)): Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) >= n (the 'upper' odd Fibonacci Inverse).
 * [A130257](http://oeis.org/A130257) ([L11 program](130/A130257.asm)): Partial sums of the 'lower' odd Fibonacci Inverse A130255.
-* [A130258](http://oeis.org/A130258) ([L47 program](130/A130258.asm)): Partial sums of the 'upper' odd Fibonacci Inverse A130256.
+* [A130258](http://oeis.org/A130258) ([L17 program](130/A130258.asm)): Partial sums of the 'upper' odd Fibonacci Inverse A130256.
 * [A130259](http://oeis.org/A130259) ([L06 program](130/A130259.asm)): Maximal index k of an even Fibonacci number (A001906) such that A001906(k) = Fib(2k) <= n (the 'lower' even Fibonacci Inverse).
 * [A130260](http://oeis.org/A130260) ([L08 program](130/A130260.asm)): Minimal index k of an even Fibonacci number A001906 such that A001906(k) = Fib(2k) >= n (the 'upper' even Fibonacci Inverse).
 * [A130261](http://oeis.org/A130261) ([L07 program](130/A130261.asm)): Partial sums of the 'lower' even Fibonacci Inverse A130259.

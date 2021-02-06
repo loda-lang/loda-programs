@@ -2383,7 +2383,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173510](http://oeis.org/A173510) ([L16 program](173/A173510.asm)): a(n) = a(n-1) + a(n-2) - floor( a(n-1)/2 ).
 * [A173511](http://oeis.org/A173511) ([L05 program](173/A173511.asm)): a(n) = 4*n^2 + floor(n/2).
 * [A173512](http://oeis.org/A173512) ([L05 program](173/A173512.asm)): a(n) = 8*n + 4 + n mod 2.
-* [A173513](http://oeis.org/A173513) ([L08 program](173/A173513.asm)): a(n) = ceiling(A173510(n)/2).
+* [A173513](http://oeis.org/A173513) ([L05 program](173/A173513.asm)): a(n) = ceiling(A173510(n)/2).
 * [A173517](http://oeis.org/A173517) ([L24 program](173/A173517.asm)): a(n) = k if n is the k-th nonsquare, zero otherwise.
 * [A173522](http://oeis.org/A173522) ([L18 program](173/A173522.asm)): Zero together with the partial sums of A105321.
 * [A173523](http://oeis.org/A173523) ([L09 program](173/A173523.asm)): 1+A053735(n-1), where A053735 is the sum-of-digits function in base 3.
