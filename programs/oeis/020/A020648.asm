@@ -3,9 +3,4 @@
 
 mul $0,2
 cal $0,7844 ; Least positive integer k for which 3^n divides k!.
-add $0,11
 mov $1,$0
-mov $0,2
-add $0,$1
-mov $1,$0
-sub $1,13
