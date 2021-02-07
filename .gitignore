@@ -2,4 +2,5 @@
 /loda
 /completer.hist
 /.settings
-/stats/program_counts.png
+/.vscode
+/stats/*.png

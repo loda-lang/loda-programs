@@ -3,10 +3,6 @@
 
 cal $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
 div $0,2
-mov $1,4
-add $1,$0
-mul $1,2
-sub $1,8
-div $1,2
+mov $1,$0
 mul $1,4
 add $1,1

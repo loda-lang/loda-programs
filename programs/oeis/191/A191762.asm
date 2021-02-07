@@ -1,39 +1,6 @@
 ; A191762: Digital roots of the nonzero even squares.
 ; 4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9,4,7,9,1,1,9,7,4,9
 
-add $2,$0
-add $0,2
+sub $0,4
+cal $0,191760 ; Digital root of the n-th odd square.
 mov $1,$0
-add $0,$0
-add $1,$0
-pow $0,2
-add $2,$0
-sub $2,3
-add $3,1
-mov $0,1
-add $3,$0
-div $1,2
-cal $0,108765
-sub $2,1
-trn $0,5
-add $3,$0
-sub $0,2
-trn $3,4
-mov $3,$0
-add $4,$0
-trn $4,2
-mov $1,$0
-mul $0,$2
-mul $0,$3
-cmp $1,1
-trn $0,$4
-sub $0,1
-mul $3,$0
-lpb $2,1
-  mod $2,9
-  trn $4,24
-  add $4,$3
-  add $0,2
-lpe
-mov $1,$2
-add $1,1

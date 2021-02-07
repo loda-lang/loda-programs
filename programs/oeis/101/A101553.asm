@@ -3,9 +3,7 @@
 
 add $0,1
 cal $0,100747 ; A modular recurrence.
-add $2,$0
-add $0,$2
-mov $1,$0
-div $1,12
-mul $1,2
-add $1,1
+add $0,12
+add $1,$0
+div $1,3
+sub $1,4
