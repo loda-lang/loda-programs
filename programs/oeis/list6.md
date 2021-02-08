@@ -1083,7 +1083,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321773](http://oeis.org/A321773) ([L17 program](321/A321773.asm)): Number of compositions of n into parts with distinct multiplicities and with exactly three parts.
 * [A321789](http://oeis.org/A321789) ([L03 program](321/A321789.asm)): Factorials of terms of Pascal's triangle by row.
 * [A321883](http://oeis.org/A321883) ([L06 program](321/A321883.asm)): Nonnegative integers n for which n! + 1 is not a square.
-* [A321885](http://oeis.org/A321885) ([L46 program](321/A321885.asm)): a(1) = 1, a(n) = n + d(a(n-1)).
+* [A321885](http://oeis.org/A321885) ([L12 program](321/A321885.asm)): a(1) = 1, a(n) = n + d(a(n-1)).
 * [A321986](http://oeis.org/A321986) ([L08 program](321/A321986.asm)): Number of integer pairs (x,y) with x+y < 3*n/4, x-y < 3*n/4 and -x/2 < y < 2*x.
 * [A321999](http://oeis.org/A321999) ([L07 program](321/A321999.asm)): Sum of digits of n minus the number of digits of n.
 * [A322008](http://oeis.org/A322008) ([L10 program](322/A322008.asm)): 1/(1 - Integral_{x=0..1} x^(x^n) dx), rounded to the nearest integer.

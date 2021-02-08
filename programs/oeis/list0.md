@@ -3519,6 +3519,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A030556](http://oeis.org/A030556) ([L04 program](030/A030556.asm)): run length of n-th run of digit 0 in A030548.
 * [A030653](http://oeis.org/A030653) ([L04 program](030/A030653.asm)): n^3*a(n) is number of circles in complex projective plane tangent to three smooth curves of degree n in general position.
 * [A030655](http://oeis.org/A030655) ([L03 program](030/A030655.asm)): Pair up the numbers.
+* [A030656](http://oeis.org/A030656) ([L38 program](030/A030656.asm)): Pair up the numbers.
 * [A030662](http://oeis.org/A030662) ([L07 program](030/A030662.asm)): Number of combinations of n things from 1 to n at a time, with repeats allowed.
 * [A030695](http://oeis.org/A030695) ([L03 program](030/A030695.asm)): Smallest nontrivial extension of n-th cube which is a cube.
 * [A030696](http://oeis.org/A030696) ([L11 program](030/A030696.asm)): Cube root of A030695.
@@ -3838,7 +3839,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033817](http://oeis.org/A033817) ([L55 program](033/A033817.asm)): Convolution of natural numbers n >= 1 with Lucas numbers L(k) for k >= -4.
 * [A033818](http://oeis.org/A033818) ([L17 program](033/A033818.asm)): Convolution of natural numbers n >= 1 with Lucas numbers L(k) for k >= -2.
 * [A033876](http://oeis.org/A033876) ([L10 program](033/A033876.asm)): Expansion of 1/(2*x) * (1/(1-4*x)^(3/2)-1).
-* [A033879](http://oeis.org/A033879) ([L08 program](033/A033879.asm)): Deficiency of n, or 2n - (sum of divisors of n).
+* [A033879](http://oeis.org/A033879) ([L04 program](033/A033879.asm)): Deficiency of n, or 2n - (sum of divisors of n).
 * [A033880](http://oeis.org/A033880) ([L06 program](033/A033880.asm)): Abundance of n, or (sum of divisors of n) - 2n.
 * [A033885](http://oeis.org/A033885) ([L08 program](033/A033885.asm)): a(n) = 3*n - sum of divisors of n.
 * [A033887](http://oeis.org/A033887) ([L11 program](033/A033887.asm)): a(n) = Fibonacci(3*n+1).

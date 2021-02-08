@@ -537,7 +537,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212088](http://oeis.org/A212088) ([L08 program](212/A212088.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<average{x,y,z}.
 * [A212089](http://oeis.org/A212089) ([L07 program](212/A212089.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w>=average{x,y,z}.
 * [A212090](http://oeis.org/A212090) ([L49 program](212/A212090.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<x+y+z.
-* [A212126](http://oeis.org/A212126) ([L21 program](212/A212126.asm)): Period 13: repeat (0,0,1,0,0,1,0,1,0,0,1,0,1).
+* [A212126](http://oeis.org/A212126) ([L04 program](212/A212126.asm)): Period 13: repeat (0,0,1,0,0,1,0,1,0,0,1,0,1).
 * [A212133](http://oeis.org/A212133) ([L09 program](212/A212133.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and median=mean.
 * [A212134](http://oeis.org/A212134) ([L10 program](212/A212134.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and median<=mean.
 * [A212135](http://oeis.org/A212135) ([L05 program](212/A212135.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and median<mean.
@@ -861,11 +861,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214944](http://oeis.org/A214944) ([L51 program](214/A214944.asm)): Number of squarefree words of length 5 in an (n+1)-ary alphabet.
 * [A214945](http://oeis.org/A214945) ([L66 program](214/A214945.asm)): Number of squarefree words of length 6 in an (n+1)-ary alphabet.
 * [A214946](http://oeis.org/A214946) ([L17 program](214/A214946.asm)): Number of squarefree words of length 7 in an (n+1)-ary alphabet.
+* [A214955](http://oeis.org/A214955) ([L34 program](214/A214955.asm)): Number of solid standard Young tableaux of shape [[n,n-1],[1]].
 * [A214971](http://oeis.org/A214971) ([L19 program](214/A214971.asm)): Integers k for which the base-phi representation of k includes 1.
 * [A214972](http://oeis.org/A214972) ([L06 program](214/A214972.asm)): a(n) = a(floor(2*(n-1)/3)) + 1, where a(0) = 0.
 * [A214982](http://oeis.org/A214982) ([L04 program](214/A214982.asm)): a(n) = (Fibonacci(5n)/Fibonacci(n) - 5)/50.
 * [A214988](http://oeis.org/A214988) ([L31 program](214/A214988.asm)): Beatty sequence for sqrt(r), where r = (1+sqrt(5))/2 = golden ratio; complement of A214989.
-* [A214997](http://oeis.org/A214997) ([L35 program](214/A214997.asm)): Power ceiling-floor sequence of 2+sqrt(2).
+* [A214997](http://oeis.org/A214997) ([L06 program](214/A214997.asm)): Power ceiling-floor sequence of 2+sqrt(2).
 * [A215004](http://oeis.org/A215004) ([L08 program](215/A215004.asm)): a(0) = a(1) = 1; for n>1, a(n) = a(n-1) + a(n-2) + floor(n/2).
 * [A215005](http://oeis.org/A215005) ([L07 program](215/A215005.asm)): a(n) = a(n-2) + a(n-1) + floor(n/2) + 1 for n > 1 and a(0)=0, a(1)=1.
 * [A215006](http://oeis.org/A215006) ([L13 program](215/A215006.asm)): a(0)=0, a(n+1) is the least k>a(n) such that k+a(n)+n+1 is a Fibonacci number.

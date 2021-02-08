@@ -1412,7 +1412,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A275161](http://oeis.org/A275161) ([L38 program](275/A275161.asm)): Number of sides of a polygon formed by tiling n squares in a spiral.
 * [A275163](http://oeis.org/A275163) ([L05 program](275/A275163.asm)): a(n) = 13*2^(n+1) - 19.
 * [A275202](http://oeis.org/A275202) ([L21 program](275/A275202.asm)): Subword complexity (number of distinct blocks of length n) of the period doubling sequence A096268.
-* [A275229](http://oeis.org/A275229) ([L06 program](275/A275229.asm)): Number of 3 X n 0..2 arrays with no element equal to any value at offset (-2,-1) (-2,1) or (-1,0) and new values introduced in order 0..2.
+* [A275229](http://oeis.org/A275229) ([L04 program](275/A275229.asm)): Number of 3 X n 0..2 arrays with no element equal to any value at offset (-2,-1) (-2,1) or (-1,0) and new values introduced in order 0..2.
 * [A275324](http://oeis.org/A275324) ([L19 program](275/A275324.asm)): Expansion of (x*(1-4*x^2)^(-3/2) + (1-4*x^2)^(-1/2) + x + 1)/2.
 * [A275346](http://oeis.org/A275346) ([L06 program](275/A275346.asm)): In Go, minimum total number of liberties player 1 (black) can have on a standard 19 X 19 board after n moves when no player passes a move, with no repeating game positions allowed.
 * [A275363](http://oeis.org/A275363) ([L14 program](275/A275363.asm)): a(1)=3, a(2)=6, a(3)=3; thereafter a(n) = a(n-a(n-1)) + a(n-1-a(n-2)).
@@ -1879,7 +1879,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285684](http://oeis.org/A285684) ([L22 program](285/A285684.asm)): Characteristic sequence of the Beatty sequence, A022838, of sqrt(3).
 * [A285685](http://oeis.org/A285685) ([L19 program](285/A285685.asm)): Characteristic sequence of the Beatty sequence, A022839, of sqrt(5).
 * [A285686](http://oeis.org/A285686) ([L25 program](285/A285686.asm)): Characteristic sequence of the Beatty sequence, A022840, of sqrt(6).
-* [A285716](http://oeis.org/A285716) ([L36 program](285/A285716.asm)): a(n) = A080791(A245611(n)).
+* [A285716](http://oeis.org/A285716) ([L11 program](285/A285716.asm)): a(n) = A080791(A245611(n)).
 * [A285766](http://oeis.org/A285766) ([L11 program](285/A285766.asm)): Maximum spillway height for a zero or one bend minimal area lake in a number square.
 * [A285779](http://oeis.org/A285779) ([L05 program](285/A285779.asm)): Parity index: number of integers z with 1 <= z <= n for which A010060(z) = A010060(n), negated if A010060(n) = 1.
 * [A285869](http://oeis.org/A285869) ([L05 program](285/A285869.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial in the open interval (-sqrt(2), +sqrt(2)).

@@ -4,6 +4,4 @@
 add $0,1
 cal $0,208044 ; Number of n X 3 0..3 arrays with new values 0..3 introduced in row major order and no element equal to any horizontal, vertical or antidiagonal neighbor (colorings ignoring permutations of colors).
 mov $1,$0
-sub $1,8
 div $1,4
-add $1,2
