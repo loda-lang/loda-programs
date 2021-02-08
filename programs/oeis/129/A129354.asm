@@ -5,55 +5,19 @@ mov $27,$0
 mov $29,2
 lpb $29,1
   clr $0,27
-  sub $29,1
   mov $0,$27
+  sub $29,1
   add $0,$29
   sub $0,1
   lpb $0,1
-    mov $5,$0
     mov $1,$0
-    mov $5,2
     sub $1,$0
-    mov $4,3
-    mov $3,5
-    add $4,25
-    mov $3,2
-    mov $3,2
-    mul $3,2
     add $1,$0
-    mov $5,1
-    sub $5,1
-    cal $1,75995
-    add $2,$1
-    mov $26,$5
-    cmp $26,0
-    add $5,$26
-    div $2,$5
-    trn $0,1
-    add $5,2
-    mul $5,2
-    mov $1,1
+    cal $1,75995 ; a(n) = Sum_{k=1..floor(n/2)} floor(n/k) for n >= 2, with a(1) = 1.
+    sub $0,1
     div $0,2
+    add $2,$1
   lpe
-  lpb $1,1
-    mov $26,$3
-    cmp $26,0
-    add $3,$26
-    div $2,$3
-    lpb $1,2
-      mod $1,9
-      mul $3,$4
-      sub $0,1
-      mov $2,0
-      mov $4,1
-    lpe
-    sub $1,3
-    mul $4,2
-    mov $3,4
-    mov $4,$1
-  lpe
-  mov $4,$3
-  mul $1,2
   mov $1,$2
   mov $30,$29
   lpb $30,1
@@ -62,8 +26,8 @@ lpb $29,1
   lpe
 lpe
 lpb $27,1
-  sub $28,$1
   mov $27,0
+  sub $28,$1
 lpe
 mov $1,$28
 add $1,1

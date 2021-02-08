@@ -353,7 +353,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257446](http://oeis.org/A257446) ([L19 program](257/A257446.asm)): Number of (n+2) X (7+2) 0..1 arrays with no 3 x 3 subblock diagonal sum 0 and no antidiagonal sum 3 and no row sum 1 and no column sum 1.
 * [A257448](http://oeis.org/A257448) ([L16 program](257/A257448.asm)): a(n) = 13*(2^n - 1) - 3*n^2 - 9*n.
 * [A257487](http://oeis.org/A257487) ([L11 program](257/A257487.asm)): Expansion of ( -4+15*x-8*x^2 ) / ( (x-1)*(x^2-4*x+1) ).
-* [A257531](http://oeis.org/A257531) ([L06 program](257/A257531.asm)): If 2^(n-1) mod n = 1, then 1 else 0.
+* [A257531](http://oeis.org/A257531) ([L05 program](257/A257531.asm)): If 2^(n-1) mod n = 1, then 1 else 0.
 * [A257542](http://oeis.org/A257542) ([L07 program](257/A257542.asm)): Square-sum pairs: Numbers n such that 0,1, ..., 2n-1 can be partitioned into n pairs, where each pair adds up to a perfect square.
 * [A257564](http://oeis.org/A257564) ([L14 program](257/A257564.asm)): Irregular triangle read by rows: T(n,k) = r(n+k)+r(n-k) with r(n) = (n-(n mod 2))/2 for n>=0 and -n<=k<=n.
 * [A257589](http://oeis.org/A257589) ([L09 program](257/A257589.asm)): a(n) = (2n+1)^2*Catalan(n).
@@ -1456,7 +1456,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276283](http://oeis.org/A276283) ([L07 program](276/A276283.asm)): Expansion of (1 + x + 3*x^2 + x^3)/((1 - x)^2*(1 + x^2)).
 * [A276289](http://oeis.org/A276289) ([L11 program](276/A276289.asm)): Expansion of x*(1 + x)/(1 - 2*x)^3.
 * [A276293](http://oeis.org/A276293) ([L04 program](276/A276293.asm)): Number of n X 2 0..2 arrays with no element equal to any value at offset (-2,-1) (-1,1) or (0,-1) and new values introduced in order 0..2.
-* [A276349](http://oeis.org/A276349) ([L06 program](276/A276349.asm)): Numbers consisting of a nonempty string of 1's followed by a nonempty string of 0's.
 * [A276351](http://oeis.org/A276351) ([L66 program](276/A276351.asm)): a(n) = 2*(3 + 2 n + 3 n^2 + 3 n^3 + 3 n^4 + n^5 + n^6).
 * [A276382](http://oeis.org/A276382) ([L07 program](276/A276382.asm)): a(1) = 1, and a(n) = a(n-1) + floor(3*n/2) + 1 for n >= 2.
 * [A276383](http://oeis.org/A276383) ([L18 program](276/A276383.asm)): Complement of A158919: complementary Beatty sequence to the Beatty sequence defined by the tribonacci constant tau = A058265.
@@ -1572,7 +1571,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277936](http://oeis.org/A277936) ([L15 program](277/A277936.asm)): Decimal representation of the x-axis, from the left edge to the origin, or from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.
 * [A277954](http://oeis.org/A277954) ([L17 program](277/A277954.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 14", based on the 5-celled von Neumann neighborhood.
 * [A277955](http://oeis.org/A277955) ([L06 program](277/A277955.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 14", based on the 5-celled von Neumann neighborhood.
-* [A277975](http://oeis.org/A277975) ([L08 program](277/A277975.asm)): a(n) = n*x^n + (n-1)*x^(n-1) + . . . + x + 1 for x=5.
+* [A277975](http://oeis.org/A277975) ([L06 program](277/A277975.asm)): a(n) = n*x^n + (n-1)*x^(n-1) + . . . + x + 1 for x=5.
 * [A277976](http://oeis.org/A277976) ([L04 program](277/A277976.asm)): a(n) = n*(3*n + 23).
 * [A277977](http://oeis.org/A277977) ([L40 program](277/A277977.asm)): a(n) = n*(1-3n+2*n^2+2*n^3)/2.
 * [A277978](http://oeis.org/A277978) ([L04 program](277/A277978.asm)): a(n) = 3n(n+3).
@@ -1880,6 +1879,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285684](http://oeis.org/A285684) ([L22 program](285/A285684.asm)): Characteristic sequence of the Beatty sequence, A022838, of sqrt(3).
 * [A285685](http://oeis.org/A285685) ([L19 program](285/A285685.asm)): Characteristic sequence of the Beatty sequence, A022839, of sqrt(5).
 * [A285686](http://oeis.org/A285686) ([L25 program](285/A285686.asm)): Characteristic sequence of the Beatty sequence, A022840, of sqrt(6).
+* [A285716](http://oeis.org/A285716) ([L36 program](285/A285716.asm)): a(n) = A080791(A245611(n)).
 * [A285766](http://oeis.org/A285766) ([L11 program](285/A285766.asm)): Maximum spillway height for a zero or one bend minimal area lake in a number square.
 * [A285779](http://oeis.org/A285779) ([L05 program](285/A285779.asm)): Parity index: number of integers z with 1 <= z <= n for which A010060(z) = A010060(n), negated if A010060(n) = 1.
 * [A285869](http://oeis.org/A285869) ([L05 program](285/A285869.asm)): a(n) is the number of zeros of the Chebyshev S(n, x) polynomial in the open interval (-sqrt(2), +sqrt(2)).

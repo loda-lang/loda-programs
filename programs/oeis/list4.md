@@ -865,6 +865,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214972](http://oeis.org/A214972) ([L06 program](214/A214972.asm)): a(n) = a(floor(2*(n-1)/3)) + 1, where a(0) = 0.
 * [A214982](http://oeis.org/A214982) ([L04 program](214/A214982.asm)): a(n) = (Fibonacci(5n)/Fibonacci(n) - 5)/50.
 * [A214988](http://oeis.org/A214988) ([L31 program](214/A214988.asm)): Beatty sequence for sqrt(r), where r = (1+sqrt(5))/2 = golden ratio; complement of A214989.
+* [A214997](http://oeis.org/A214997) ([L35 program](214/A214997.asm)): Power ceiling-floor sequence of 2+sqrt(2).
 * [A215004](http://oeis.org/A215004) ([L08 program](215/A215004.asm)): a(0) = a(1) = 1; for n>1, a(n) = a(n-1) + a(n-2) + floor(n/2).
 * [A215005](http://oeis.org/A215005) ([L07 program](215/A215005.asm)): a(n) = a(n-2) + a(n-1) + floor(n/2) + 1 for n > 1 and a(0)=0, a(1)=1.
 * [A215006](http://oeis.org/A215006) ([L13 program](215/A215006.asm)): a(0)=0, a(n+1) is the least k>a(n) such that k+a(n)+n+1 is a Fibonacci number.
@@ -2013,7 +2014,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242601](http://oeis.org/A242601) ([L12 program](242/A242601.asm)): Integers repeated twice in a canonical order.
 * [A242602](http://oeis.org/A242602) ([L21 program](242/A242602.asm)): Integers repeated thrice in a canonical order.
 * [A242603](http://oeis.org/A242603) ([L05 program](242/A242603.asm)): Largest divisor of n not divisible by 7. Remove factors 7 from n.
-* [A242604](http://oeis.org/A242604) ([L10 program](242/A242604.asm)): a(n) = (n - 1)*(n^3 + 1) = n^4 - n^3 + n - 1, for n >= 1.
+* [A242604](http://oeis.org/A242604) ([L05 program](242/A242604.asm)): a(n) = (n - 1)*(n^3 + 1) = n^4 - n^3 + n - 1, for n >= 1.
 * [A242658](http://oeis.org/A242658) ([L04 program](242/A242658.asm)): a(n) = 3n^2-3n+2.
 * [A242659](http://oeis.org/A242659) ([L06 program](242/A242659.asm)): a(n) = n*(n^2 - 3*n + 4).
 * [A242660](http://oeis.org/A242660) ([L07 program](242/A242660.asm)): Nonnegative numbers of the form x^2+xy-2y^2.
