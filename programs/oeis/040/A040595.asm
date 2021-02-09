@@ -1,47 +1,23 @@
 ; A040595: Continued fraction for sqrt(620).
 ; 24,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1
 
-cal $0,10200
-lpb $0,2
-  sub $2,$0
+cal $0,10200 ; Continued fraction for sqrt(141).
+lpb $0,1
   sub $0,3
-  gcd $0,$0
-  mov $2,2
-  lpb $0,4
-    mov $1,$0
-    add $4,16
-    mov $1,$0
+  lpb $0,1
     sub $0,3
+    add $1,16
   lpe
-  sub $4,1
-  mov $5,$4
-  mov $5,$4
-  mov $1,2
-  sub $4,1
-  mod $0,4
+  mov $2,$1
+  sub $1,1
 lpe
-lpb $5,1
-  mul $1,2
-  mul $4,2
-  add $0,$2
-  mov $2,$5
-  sub $2,$2
-  add $1,1
-  mul $4,2
-  sub $5,39
-  add $1,2
-  lpb $1,1
-    sub $1,1
-    mov $5,2
-    mov $3,2
-    add $2,1
+lpb $2,1
+  mul $1,4
+  add $3,3
+  lpb $3,1
+    mov $2,2
+    sub $3,1
   lpe
-  div $1,8
-  sub $0,$4
-  mul $3,$0
-  cmp $2,$3
-  div $5,2
 lpe
-mov $1,$4
 div $1,8
 add $1,1
