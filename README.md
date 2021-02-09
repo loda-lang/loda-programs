@@ -19,7 +19,6 @@ OEIS commands:
   mine             Mine programs for OEIS sequences
   synthesize       Synthesize programs for OEIS sequences
   maintain         Maintain programs for OEIS sequences
-  update           Update OEIS index
 Options:
   -l <string>      Log level (values:debug,info,warn,error,alert)
   -k <string>      Configuration file (default:loda.json)
@@ -94,7 +93,7 @@ The [programs/oeis](programs/oeis) folder contains programs that generate intege
 
 All programs in the [oeis](oeis) folder have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
-Before mining programs for integer sequences, you need to download files from the [OEIS website](https://oeis.org). Use `loda update` to download the required files. After that, you may run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. When using the command-line flag `-x`, existing programs are overriden if the new program is simpler or faster than the existing one.
+To mine programs for integer sequences, LODA automatically download files from the [OEIS website](https://oeis.org). You can run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. When using the command-line flag `-x`, existing programs are overriden if the new program is simpler or faster than the existing one.
 
 If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
 

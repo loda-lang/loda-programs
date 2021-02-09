@@ -1,0 +1,42 @@
+; A227252: Number of n X 2 binary arrays indicating whether each 2 X 2 subblock of a larger binary array has lexicographically nondecreasing rows and columns, for some larger (n+1) X 3 binary array with rows and columns of the latter in lexicographically nondecreasing order.
+; 2,3,9,23,53,113,225,421,745,1255,2025,3147,4733,6917,9857,13737,18769,25195,33289,43359,55749,70841,89057,110861,136761,167311,203113,244819,293133,348813,412673,485585,568481,662355,768265,887335,1020757,1169793
+
+sub $0,1
+mov $3,1
+sub $3,$0
+add $5,2
+add $5,1
+add $1,$5
+mov $3,3
+cal $0,27660
+mov $3,$5
+mov $1,$0
+mov $2,6
+mov $4,$3
+add $0,1
+mov $2,2
+mov $3,$4
+mov $26,$1
+cmp $26,0
+add $1,$26
+div $3,$1
+add $0,$2
+add $0,$1
+sub $5,55881
+add $4,$0
+mov $5,$4
+mov $3,$0
+clr $3,1
+sub $0,$3
+mov $3,3
+mov $2,$4
+lpb $5,5
+  mov $5,4
+  mul $3,$2
+  sub $4,$2
+  mov $1,$5
+lpe
+sub $1,42
+mov $1,$0
+sub $1,4
+add $1,2
