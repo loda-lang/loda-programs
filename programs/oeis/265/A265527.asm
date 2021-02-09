@@ -4,7 +4,3 @@
 mul $0,2
 cal $0,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
 mov $1,$0
-add $1,141540
-mul $1,2
-sub $1,283080
-div $1,2

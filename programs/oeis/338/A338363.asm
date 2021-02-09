@@ -6,44 +6,22 @@ mov $8,$0
 add $8,1
 lpb $8,1
   clr $0,6
-  sub $8,1
   mov $0,$6
+  sub $8,1
   sub $0,$8
   add $1,1
-  cal $0,105661
-  add $5,$0
+  cal $0,105661 ; a(n)=1 if n is a prime, 2 if n is an even semiprime, otherwise 0.
   add $4,2
+  add $5,$0
   lpb $4,2
     mov $1,3
-    lpb $4,2
-      sub $0,$4
-      pow $4,$4
-      div $4,2
-      lpb $5,1
-        mov $0,1
-        mov $3,$5
-        mov $1,$5
-        add $0,$5
-        add $2,4
-        mov $4,2
-        div $5,8
-      lpe
-      mov $2,2
-      add $2,49
-      sub $5,5
-    lpe
     mov $2,$0
     div $5,10
   lpe
-  lpb $1,2
-    bin $4,$2
-    mul $1,2
+  lpb $1,1
     div $1,3
+    bin $4,$2
   lpe
-  sub $3,1
-  pow $5,3
-  mov $1,$0
-  mov $1,$4
-  add $7,$1
+  add $7,$4
 lpe
 mov $1,$7

@@ -6,55 +6,22 @@ mov $32,$0
 add $32,1
 lpb $32,1
   clr $0,30
-  sub $32,1
   mov $0,$30
+  sub $32,1
   sub $0,$32
   mov $27,$0
   mov $29,$0
   add $29,1
   lpb $29,1
     clr $0,27
-    sub $29,1
     mov $0,$27
+    sub $29,1
     sub $0,$29
     add $4,$0
     add $0,$4
-    mov $2,$4
-    sub $2,$4
-    gcd $2,2
-    add $2,$0
-    trn $2,$4
-    sub $4,4
-    mul $2,$4
-    mov $5,$4
-    div $4,3
-    mov $3,$2
-    cal $0,187580
-    cmp $3,1
-    mov $1,$0
-    mov $5,7
-    mov $2,1718
-    add $3,$1
-    add $2,$0
-    add $1,$2
-    lpb $2,1
-      add $1,11
-      mov $26,$0
-      cmp $26,0
-      add $0,$26
-      div $5,$0
-      mov $1,$0
-      sub $1,6
-      add $3,1
-      add $4,1
-      div $2,9
-    lpe
-    add $1,$0
-    sub $3,2
-    mov $1,$0
-    add $28,$1
+    cal $0,187580 ; Rank transform of the sequence 2*floor(n/2); complement of A187581.
+    add $28,$0
   lpe
-  mov $1,$28
-  add $31,$1
+  add $31,$28
 lpe
 mov $1,$31
