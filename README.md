@@ -12,12 +12,10 @@ Core commands:
   evaluate <file>  Evaluate a program to a sequence
   optimize <file>  Optimize a program and print it
   minimize <file>  Minimize a program and print it (use -t to set the number of terms)
-  optmin <file>    Optimize and minimize a program and print it (use -t to set the number of terms)
   generate         Generate a random program and print it
   test             Run test suite
 OEIS commands:
   mine             Mine programs for OEIS sequences
-  synthesize       Synthesize programs for OEIS sequences
   maintain         Maintain programs for OEIS sequences
 Options:
   -l <string>      Log level (values:debug,info,warn,error,alert)
