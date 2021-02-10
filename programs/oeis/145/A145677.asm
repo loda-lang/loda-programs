@@ -3,6 +3,4 @@
 
 sub $0,1
 cal $0,128229 ; A natural number transform, inverse of signed A094587.
-mul $0,4
 mov $1,$0
-div $1,4

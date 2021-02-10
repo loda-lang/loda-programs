@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,1
-cal $0,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
+cal $0,14473 ; Pascal's triangle - 1.
 mov $1,$0
-div $1,2
+add $1,1

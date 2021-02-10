@@ -4537,6 +4537,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199420](http://oeis.org/A199420) ([L05 program](199/A199420.asm)): a(n) = (5*7^n+1)/3.
 * [A199421](http://oeis.org/A199421) ([L05 program](199/A199421.asm)): (5*7^n+1)/2.
 * [A199422](http://oeis.org/A199422) ([L05 program](199/A199422.asm)): 5*7^n+1.
+* [A199474](http://oeis.org/A199474) ([L43 program](199/A199474.asm)): Leftmost column in the monotonic justified array of all positive generalized Fibonacci sequences (A160271).
 * [A199483](http://oeis.org/A199483) ([L04 program](199/A199483.asm)): 6*7^n+1.
 * [A199484](http://oeis.org/A199484) ([L05 program](199/A199484.asm)): (8*7^n+1)/3.
 * [A199485](http://oeis.org/A199485) ([L05 program](199/A199485.asm)): 8*7^n+1.

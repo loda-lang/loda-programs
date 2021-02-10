@@ -6,42 +6,23 @@ mov $71820,$0
 add $71820,1
 lpb $71820,1
   clr $0,71818
-  sub $71820,1
   mov $0,$71818
+  sub $71820,1
   sub $0,$71820
-  trn $1,$0
-  add $2,4
-  add $2,2
-  add $2,$2
-  cal $0,305716
-  mov $1,1
-  add $1,2
+  cal $0,305716 ; Order of rowmotion on the divisor lattice for n.
   sub $0,2
-  pow $1,0
   mov $1,$0
-  mul $2,2
-  add $4,$2
-  trn $2,0
-  sub $0,1
-  add $1,1
+  add $1,4
   mov $4,2
-  add $1,3
-  cmp $2,$4
   lpb $2,71816
-    lpb $4,2
+    lpb $4,1
       mov $5,3
-      lpb $1,2
-        sub $4,$5
-        mov $0,$1
+      lpb $1,1
         div $1,7
+        sub $4,$5
       lpe
-      mod $1,10
     lpe
-    mul $1,$0
-    add $1,1
-    sub $1,4
   lpe
-  add $4,$4
   mov $1,$5
   div $1,3
   add $71819,$1
