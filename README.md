@@ -2,6 +2,21 @@
 
 LODA is an assembly language, computational model and a tool for mining integer sequences. You can use it to search programs that calculate sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
 
+The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. All of these programs have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
+
+To mine programs for integer sequences, LODA automatically download files from the [OEIS website](https://oeis.org). You can run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. When using the command-line flag `-x`, existing programs are overriden if the new program is simpler or faster than the existing one.
+
+If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
+
+### Available Programs
+
+Currently, there are currently more than 25k programs available. You can find lists with descriptions and links here:
+
+* [A000001-A050000](programs/oeis/list0.md), [A050001-A100000](programs/oeis/list1.md), 
+* [A100001-A150000](programs/oeis/list2.md), [A150001-A200000](programs/oeis/list3.md), 
+* [A200001-A250000](programs/oeis/list4.md), [A250001-A300000](programs/oeis/list5.md),
+* [A300001-A350000](programs/oeis/list6.md), [A350001-A400000](programs/oeis/list7.md)
+
 ## Tool
 
 The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0. To build it, run `make` in the `src` folder. The `loda` command-line tool provides the following commands and options:
@@ -29,7 +44,41 @@ Options:
   -x               Optimize and overwrite existing programs
 ```
 
-For example, run `./loda eval programs/oeis/000/A000045.asm` to generate the first terms of the Fibonacci sequence.
+### Commands
+
+#### evaluate (eval)
+
+Evaluate a LODA program to an integer sequence. For example, run `./loda eval programs/oeis/000/A000045.asm` to generate the first terms of the Fibonacci sequence. Use the option `-t` to set the number of terms to be calculated.
+
+#### optimize (opt)
+
+Optimize a LODA program and print the optimized version. The optimization is based on a static code analysis and does not any program evaluation. It is guaranteed to be semantics preserving for the entire integer sequence.
+
+#### minimize (min)
+
+Minimize a LODA program and print the minimized version. The minimization includes an optimization and additional a brute-force removal of operations based on trial and error. It guarantees that the generated integer sequence is preserved, but only up to the number of terms specified using `-t`. In contrast to optimization, minimization is not guaranteed to be semantics preserving for the entire sequences. In practice, it yields much shorter programs than optimization and we usually apply it with a larger number of terms to increase the probability of correctness.
+
+#### generate (gen)
+
+Generate a random LODA program and print it. Multiple generators are supported and configured in [loda.json](loda.json). The generators use statistics from the existing programs stored in the [stats](stats) folder. This operation is mainly used for testing the generators and should not be used to generate large amounts of programs.
+
+#### mine
+
+Mine programs for OEIS integer sequences. It generates programs in a loop and tries to match them to sequencens. If a match was found, an alert is printed and the program is automatically saved to the [programs/oeis](programs/oeis) folder. By default, existing programs for sequences are not overwritten, but if you specify the `-x` option, programs are updated if they are faster. This refers to the number of execution steps needed to calculate the sequence. 
+
+LODA is single-threaded and therefore uses one CPU during mining. It supports multiple process instances for parallel mining. You can try the [mine_parallel.sh](mine_parallel.sh) script for this.
+
+You need an Internet connection to access the OEIS database to run this command. You can also configure a Twitter client to get notified when a match was found!
+
+#### maintain
+
+Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder. This checks the correctness of all programs. Incorrect programs are removed and correct programs are minimized based on the first 250 terms of the sequence. In addition, the description of the sequence in the comment of the program is updated to the latest version of the OEIS database.
+
+You need an Internet connection to access the OEIS database to run this command.
+
+#### test
+
+Run the test suite of LODA.
 
 ## Language
 
@@ -84,26 +133,3 @@ The following programs include some classical examples of integer sequences and 
 * [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm)
 * [Number of primes <= n, starting at n=0 (A230980)](programs/oeis/230/A230980.asm)
 * [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
-
-# Mining Programs for Integer Sequences
-
-The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
-
-All programs in the [oeis](oeis) folder have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
-
-To mine programs for integer sequences, LODA automatically download files from the [OEIS website](https://oeis.org). You can run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. When using the command-line flag `-x`, existing programs are overriden if the new program is simpler or faster than the existing one.
-
-If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
-
-### Available Programs
-
-Currently, there are currently more than 24k programs available.
-
-* [A000001-A050000](programs/oeis/list0.md)
-* [A050001-A100000](programs/oeis/list1.md)
-* [A100001-A150000](programs/oeis/list2.md)
-* [A150001-A200000](programs/oeis/list3.md)
-* [A200001-A250000](programs/oeis/list4.md)
-* [A250001-A300000](programs/oeis/list5.md)
-* [A300001-A350000](programs/oeis/list6.md)
-* [A350001-A400000](programs/oeis/list7.md)
