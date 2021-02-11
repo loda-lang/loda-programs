@@ -19,7 +19,11 @@ Currently, there are currently more than 25k programs available. You can find li
 
 ## Tool
 
-The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0. To build it, run `make` in the `src` folder. The `loda` command-line tool provides the following commands and options:
+The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0.
+
+There are currently no binaries available. You need to build it by running `make` in the `src` folder. It has been tested on Linux and MacOS and does not require any libraries except for STD and the `wget`, `gzip` command-line tools.
+
+The `loda` command-line tool provides the following commands and options:
 
 ```
 Usage:             loda <command> <options>
