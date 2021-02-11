@@ -3,9 +3,5 @@
 
 sub $0,1
 cal $0,73675 ; Rearrangement of natural numbers such that a(n) is the smallest proper divisor of n not included earlier but if no such divisor exists then a(n) is the smallest proper multiple of n not included earlier, subject always to the condition that a(n) is not equal to n.
-mul $0,4
-add $0,5
 mov $1,$0
-sub $1,5
-div $1,4
 add $1,1

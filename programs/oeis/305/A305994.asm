@@ -1,12 +1,7 @@
 ; A305994: a(n) = ((A000265(3*n + 1) + 1) mod 4)/2.
 ; 1,1,0,1,1,1,0,0,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,1,0,0,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,1
 
-mul $0,6
-mov $2,$0
-add $2,1
-mov $0,$2
-mov $2,1
-mul $2,$0
-mov $1,$2
-cal $1,14710 ; The regular paper-folding (or dragon curve) sequence.
-sub $1,1
+mul $0,3
+add $0,1
+cal $0,82410 ; a(1)=0. Thereafter, the sequence is constructed using the rule: for any k >= 0, if a(1), a(2), ..., a(2^k+1) are known, the next 2^k terms are given as follows: a(2^k+1+i) = 1 - a(2^k+1-i) for 1 <= i <= 2^k.
+mov $1,$0
