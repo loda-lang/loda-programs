@@ -4,7 +4,7 @@ LODA is an assembly language, a computational model and a tool for mining intege
 
 The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. All of these programs have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
-To mine programs for integer sequences, LODA automatically download files from the [OEIS website](https://oeis.org). You can run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. When using the command-line flag `-x`, existing programs are overriden if the new program is simpler or faster than the existing one.
+To mine programs for integer sequences, LODA automatically downloads files from the [OEIS website](https://oeis.org). You can run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. When using the command-line flag `-x`, existing programs are overriden if the new program is simpler or faster than the existing one.
 
 If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
 
@@ -68,13 +68,15 @@ Mine programs for OEIS integer sequences. It generates programs in a loop and tr
 
 LODA is single-threaded and therefore uses one CPU during mining. It supports multiple process instances for parallel mining. You can try the [mine_parallel.sh](mine_parallel.sh) script for this.
 
-You need an Internet connection to access the OEIS database to run this command. You can also configure a Twitter client to get notified when a match was found!
+You need an Internet connection to access the OEIS database to run this command. Downloaded files are cached in the `$HOME/.loda` folder.
+
+You can also configure a Twitter client to get notified when a match was found!
 
 #### maintain
 
 Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder. This checks the correctness of all programs. Incorrect programs are removed and correct programs are minimized based on the first 250 terms of the sequence. In addition, the description of the sequence in the comment of the program is updated to the latest version of the OEIS database.
 
-You need an Internet connection to access the OEIS database to run this command.
+Warning: when running this command for the first time, a large number of files need to be downloaded. After the first run, only deltas are downloaded.
 
 #### test
 
