@@ -1107,8 +1107,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A220464](http://oeis.org/A220464) ([L04 program](220/A220464.asm)): Reverse reluctant sequence of reluctant sequence A002260.
 * [A220465](http://oeis.org/A220465) ([L04 program](220/A220465.asm)): Reverse reluctant sequence of reverse reluctant sequence A004736.
 * [A220466](http://oeis.org/A220466) ([L11 program](220/A220466.asm)): a((2*n-1)*2^p) = 4^p*(n-1) + 2^(p-1)*(1+2^p), p >= 0 and n >= 1.
+* [A220492](http://oeis.org/A220492) ([L53 program](220/A220492.asm)): Number of primes p between quarter-squares, Q(n) < p <= Q(n+1), where Q(n) = A002620(n).
 * [A220494](http://oeis.org/A220494) ([L07 program](220/A220494.asm)): Number of toothpicks and D-toothpicks after n-th stage in the structure of the D-toothpick "wide" triangle of the first kind.
 * [A220495](http://oeis.org/A220495) ([L26 program](220/A220495.asm)): Number of toothpicks or D-toothpicks added at n-th stage to the structure of A220494.
+* [A220506](http://oeis.org/A220506) ([L34 program](220/A220506.asm)): Number of primes <= n-th quarter-square.
 * [A220509](http://oeis.org/A220509) ([L30 program](220/A220509.asm)): n^3 + 3n + 3^n.
 * [A220511](http://oeis.org/A220511) ([L15 program](220/A220511.asm)): n^5 + 5n + 5^n.
 * [A220588](http://oeis.org/A220588) ([L06 program](220/A220588.asm)): a(n) = 2^n - n^2 - n.

@@ -642,7 +642,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A107750](http://oeis.org/A107750) ([L04 program](107/A107750.asm)): If n=0 then 0, else smallest number greater than its predecessor and having either more or fewer zeros in its binary representation.
 * [A107751](http://oeis.org/A107751) ([L04 program](107/A107751.asm)): a(n) = A107750(n+1) - A107750(n).
 * [A107755](http://oeis.org/A107755) ([L06 program](107/A107755.asm)): Numbers k such that Sum_{j=1..k} Catalan(j) == 0 (mod 3).
-* [A107757](http://oeis.org/A107757) ([L07 program](107/A107757.asm)): Numbers n such that Sum_{k=1..n} Catalan(k) == 2 mod 3.
+* [A107757](http://oeis.org/A107757) ([L07 program](107/A107757.asm)): Numbers k such that Sum_{j=1..k} Catalan(j) == 2 (mod 3).
 * [A107782](http://oeis.org/A107782) ([L07 program](107/A107782.asm)): In binary representation of n: (number of zeros) minus (number of blocks of contiguous zeros).
 * [A107820](http://oeis.org/A107820) ([L08 program](107/A107820.asm)): a(1)=3, a(2)=5; thereafter a(n) = n+5.
 * [A107839](http://oeis.org/A107839) ([L08 program](107/A107839.asm)): a(n) = 5*a(n-1) - 2*a(n-2); a(0)=1, a(1)=5.
@@ -1779,7 +1779,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123198](http://oeis.org/A123198) ([L07 program](123/A123198.asm)): a(n)=[(n+1)(2n-1)]^2.
 * [A123203](http://oeis.org/A123203) ([L06 program](123/A123203.asm)): A007318 * [1, 1, 4, 4, 4,...].
 * [A123208](http://oeis.org/A123208) ([L17 program](123/A123208.asm)): Start with 1, then alternately add 2 or double.
-* [A123246](http://oeis.org/A123246) ([L36 program](123/A123246.asm)): a(n) = PrimePi(n) + (-1)^(PrimePi(n) + 1) (cf. A000720).
+* [A123246](http://oeis.org/A123246) ([L16 program](123/A123246.asm)): a(n) = PrimePi(n) + (-1)^(PrimePi(n) + 1) (cf. A000720).
 * [A123253](http://oeis.org/A123253) ([L07 program](123/A123253.asm)): Sum of 7th powers of digits of n.
 * [A123270](http://oeis.org/A123270) ([L14 program](123/A123270.asm)): a(0)=1, a(1)=1, a(n) = 5*a(n-1) + 4*a(n-2).
 * [A123273](http://oeis.org/A123273) ([L24 program](123/A123273.asm)): a(0) = 1; a(n) = the number of earlier terms, a(k), where gcd(a(k), a(floor(k/2))) = 1.
@@ -3252,6 +3252,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139264](http://oeis.org/A139264) ([L03 program](139/A139264.asm)): a(n) = 70*n - 63.
 * [A139267](http://oeis.org/A139267) ([L04 program](139/A139267.asm)): Twice octagonal numbers: 2*n*(3*n-2).
 * [A139268](http://oeis.org/A139268) ([L04 program](139/A139268.asm)): Twice nonagonal numbers (or twice 9-gonal numbers): a(n) = n(7n-5).
+* [A139270](http://oeis.org/A139270) ([L69 program](139/A139270.asm)): Twice nonprime numbers.
 * [A139271](http://oeis.org/A139271) ([L04 program](139/A139271.asm)): a(n) = 2*n*(4*n-3).
 * [A139272](http://oeis.org/A139272) ([L04 program](139/A139272.asm)): a(n) = n*(8*n-5).
 * [A139273](http://oeis.org/A139273) ([L04 program](139/A139273.asm)): a(n) = n*(8*n - 3).
@@ -3386,6 +3387,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140325](http://oeis.org/A140325) ([L15 program](140/A140325.asm)): a(n) = binomial(n+8,8) * 2^n.
 * [A140341](http://oeis.org/A140341) ([L20 program](140/A140341.asm)): The number of bits needed to write the universal code for an Elias delta coding, the simplest asymptotically optimal code.
 * [A140345](http://oeis.org/A140345) ([L05 program](140/A140345.asm)): a(n)=a(n-1)^2-a(n-2)-a(n-3)-a(n-4), a(1)=a(2)=a(3)=a(4)=1.
+* [A140347](http://oeis.org/A140347) ([L64 program](140/A140347.asm)): Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
 * [A140354](http://oeis.org/A140354) ([L15 program](140/A140354.asm)): a(n) = binomial(n+9,9)*2^n.
 * [A140356](http://oeis.org/A140356) ([L06 program](140/A140356.asm)): Triangle T(n,m) read by rows: m! if m <= floor(n/2), and (n-m)! otherwise.
 * [A140359](http://oeis.org/A140359) ([L05 program](140/A140359.asm)): a(n) = 2*a(n-1) + a(n-2) - 2*a(n-3).
@@ -3472,7 +3474,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A141213](http://oeis.org/A141213) ([L05 program](141/A141213.asm)): Defining A to be the interior angle of a regular polygon, the number of constructible regular polygons such that A is in a field extension = degree 2^n, starting with n=0. This is also the number of values of x such that phi(x)/2 = 2^n (where phi is Euler's phi function), also starting with n=0.
 * [A141214](http://oeis.org/A141214) ([L14 program](141/A141214.asm)): Defining A to be the interior angle of a regular polygon, the number of constructible regular polygons such that A is in a field extension <= degree 2^n, starting with n=0. This is also the number of values of x such that phi(x)/2 is a power of 2 <= 2^n (where phi is Euler's phi function), also starting with n=0.
 * [A141259](http://oeis.org/A141259) ([L18 program](141/A141259.asm)): a(n) == {0,1,3,4,5,7,9,11} mod 12; n>0.
-* [A141260](http://oeis.org/A141260) ([L08 program](141/A141260.asm)): a(n) = 1 if n == {0,1,3,4,5,7,9,11} mod 12, otherwise a(n) = 0.
+* [A141260](http://oeis.org/A141260) ([L05 program](141/A141260.asm)): a(n) = 1 if n == {0,1,3,4,5,7,9,11} mod 12, otherwise a(n) = 0.
 * [A141291](http://oeis.org/A141291) ([L07 program](141/A141291.asm)): a(n) = 4*a(n-1) + 2*n-1
 * [A141310](http://oeis.org/A141310) ([L05 program](141/A141310.asm)): The odd numbers interlaced with the constant-2 sequence.
 * [A141317](http://oeis.org/A141317) ([L04 program](141/A141317.asm)): a(n) = A000244(n) - A010684(n).

@@ -1765,6 +1765,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A282612](http://oeis.org/A282612) ([L04 program](282/A282612.asm)): Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to row permutations.
 * [A282613](http://oeis.org/A282613) ([L14 program](282/A282613.asm)): Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to rotations.
 * [A282622](http://oeis.org/A282622) ([L04 program](282/A282622.asm)): Number of digits of the representation of n in the alternating sexagesimal-decimal number system.
+* [A282671](http://oeis.org/A282671) ([L74 program](282/A282671.asm)): Twice composite numbers.
 * [A282702](http://oeis.org/A282702) ([L12 program](282/A282702.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=4, a(1)=11.
 * [A282703](http://oeis.org/A282703) ([L13 program](282/A282703.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=7, a(1)=26.
 * [A282718](http://oeis.org/A282718) ([L62 program](282/A282718.asm)): Satisfies the tribonacci recurrence: a(n) = a(n-1) + a(n-2) + a(n-3).

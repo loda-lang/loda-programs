@@ -1242,7 +1242,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327706](http://oeis.org/A327706) ([L07 program](327/A327706.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 6 parts can be obtained by coalescing the parts of lambda.
 * [A327707](http://oeis.org/A327707) ([L07 program](327/A327707.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 7 parts can be obtained by coalescing the parts of lambda.
 * [A327708](http://oeis.org/A327708) ([L08 program](327/A327708.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 8 parts can be obtained by coalescing the parts of lambda.
-* [A327721](http://oeis.org/A327721) ([L12 program](327/A327721.asm)): Dimension of quantum lens space needed for non-uniqueness.
+* [A327721](http://oeis.org/A327721) ([L06 program](327/A327721.asm)): Dimension of quantum lens space needed for non-uniqueness.
 * [A327767](http://oeis.org/A327767) ([L03 program](327/A327767.asm)): Period 2: repeat [1, -2].
 * [A327896](http://oeis.org/A327896) ([L20 program](327/A327896.asm)): a(n) is the minimum number of tiles needed for constructing a polyiamond with n holes.
 * [A327998](http://oeis.org/A327998) ([L03 program](327/A327998.asm)): a(n) = (n!/floor(n/2)!^2)^2.
