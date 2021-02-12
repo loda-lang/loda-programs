@@ -3,8 +3,4 @@
 
 cal $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
 div $0,2
-mul $0,2
-add $0,2
-mov $1,$0
-sub $1,2
-div $1,2
+add $1,$0

@@ -3,7 +3,5 @@
 
 add $0,4
 cal $0,301657 ; Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
-mul $0,4
 mov $1,$0
-div $1,4
 sub $1,1

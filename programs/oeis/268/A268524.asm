@@ -8,7 +8,7 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   cal $0,267584 ; a(0)=1; thereafter a(n) = 2^(1 + number of zeros in binary expansion of n).
-  cal $0,83094 ; Numbers n such that sum(k=0,n,C(n,k) mod 3) is odd.
+  cal $0,83094 ; Numbers k such that Sum_{j=0..k} (binomial(k,j) mod 3) is odd.
   mov $3,$0
   div $3,12
   mul $3,2

@@ -3,6 +3,6 @@
 
 lpb $0,1
   sub $0,2
-  cal $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
+  cal $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 lpe
 mov $1,$0
