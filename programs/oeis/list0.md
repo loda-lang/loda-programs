@@ -973,7 +973,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007283](http://oeis.org/A007283) ([L03 program](007/A007283.asm)): a(n) = 3*2^n.
 * [A007290](http://oeis.org/A007290) ([L03 program](007/A007290.asm)): a(n) = 2*binomial(n,3).
 * [A007291](http://oeis.org/A007291) ([L47 program](007/A007291.asm)): Series expansion for rectilinear polymers on square lattice.
-* [A007302](http://oeis.org/A007302) ([L05 program](007/A007302.asm)): Optimal cost function between two processors at distance n.
+* [A007302](http://oeis.org/A007302) ([L04 program](007/A007302.asm)): Optimal cost function between two processors at distance n.
 * [A007310](http://oeis.org/A007310) ([L05 program](007/A007310.asm)): Numbers congruent to 1 or 5 mod 6.
 * [A007318](http://oeis.org/A007318) ([L04 program](007/A007318.asm)): Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 * [A007378](http://oeis.org/A007378) ([L15 program](007/A007378.asm)): a(n), n>=2, is smallest positive integer which is consistent with sequence being monotonically increasing and satisfying a(a(n)) = 2n.
@@ -4049,7 +4049,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036987](http://oeis.org/A036987) ([L05 program](036/A036987.asm)): Fredholm-Rueppel sequence.
 * [A036999](http://oeis.org/A036999) ([L10 program](036/A036999.asm)): Restricted permutations.
 * [A037011](http://oeis.org/A037011) ([L13 program](037/A037011.asm)): Baum-Sweet cubic sequence.
-* [A037031](http://oeis.org/A037031) ([L32 program](037/A037031.asm)): Number of combinations of n objects taken pi(n) at a time.
+* [A037031](http://oeis.org/A037031) ([L06 program](037/A037031.asm)): Number of combinations of n objects taken pi(n) at a time.
 * [A037085](http://oeis.org/A037085) ([L44 program](037/A037085.asm)): Beatty sequence for Pi^2.
 * [A037086](http://oeis.org/A037086) ([L05 program](037/A037086.asm)): Beatty sequence for sqrt(Pi).
 * [A037087](http://oeis.org/A037087) ([L03 program](037/A037087.asm)): Beatty sequence for e^(1/e).

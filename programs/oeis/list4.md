@@ -2342,6 +2342,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248462](http://oeis.org/A248462) ([L07 program](248/A248462.asm)): Number of length 1+2 0..n arrays with no three consecutive terms having the sum of any two elements equal to twice the third.
 * [A248474](http://oeis.org/A248474) ([L08 program](248/A248474.asm)): Numbers congruent to 13 or 17 mod 30.
 * [A248515](http://oeis.org/A248515) ([L06 program](248/A248515.asm)): Least number k such that 1 - k*sin(1/k) < 1/n^2.
+* [A248516](http://oeis.org/A248516) ([L04 program](248/A248516.asm)): n^2+1 divided by its largest prime factor.
 * [A248517](http://oeis.org/A248517) ([L07 program](248/A248517.asm)): Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
 * [A248522](http://oeis.org/A248522) ([L17 program](248/A248522.asm)): Beatty sequence for 1/(1-exp(-1/3)): a(n) = floor(n/(1-exp(-1/3))).
 * [A248524](http://oeis.org/A248524) ([L38 program](248/A248524.asm)): Beatty sequence for 1/(1-Pi^(-1/3)).

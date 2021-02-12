@@ -1465,6 +1465,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065039](http://oeis.org/A065039) ([L04 program](065/A065039.asm)): If n in base 10 is d_1 d_2 ... d_k then a(n) = d_1 + d_1d_2 + d_1d_2d_3 + ... + d_1...d_k.
 * [A065040](http://oeis.org/A065040) ([L03 program](065/A065040.asm)): Triangle T(m,k): exponent of the highest power of 2 dividing binomial coefficient binomial(m,k).
 * [A065043](http://oeis.org/A065043) ([L10 program](065/A065043.asm)): Characteristic function of the numbers with an even number of prime factors (counted with multiplicity): a(n) = 1 if n = A028260(k) for some k then 1 else 0.
+* [A065090](http://oeis.org/A065090) ([L41 program](065/A065090.asm)): Natural numbers which are not odd primes: composites plus 1 and 2.
 * [A065113](http://oeis.org/A065113) ([L13 program](065/A065113.asm)): Sum of the squares of the n-th and the (n+1)st triangular numbers (A000217) is a perfect square.
 * [A065120](http://oeis.org/A065120) ([L14 program](065/A065120.asm)): Highest power of 2 dividing A057335(n).
 * [A065130](http://oeis.org/A065130) ([L47 program](065/A065130.asm)): a(n) = A005228(n) - A000217(n).
@@ -3546,7 +3547,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087229](http://oeis.org/A087229) ([L11 program](087/A087229.asm)): Exponent of p=2 in 12n+4=3(4n+1)+1 numbers.
 * [A087230](http://oeis.org/A087230) ([L11 program](087/A087230.asm)): Exponent of p=2 in 6*n + 4 = 3*(2*n+1) + 1 (2-adic valuation of 6*n + 4).
 * [A087233](http://oeis.org/A087233) ([L52 program](087/A087233.asm)): a(n)=floor[sigma[A002110(n)]/A002110(n)]; integer quotient of divisor-sum of primorial numbers and primorials.
-* [A087267](http://oeis.org/A087267) ([L37 program](087/A087267.asm)): a(n) = gcd(n, pi(n)) where pi is A000720.
+* [A087267](http://oeis.org/A087267) ([L12 program](087/A087267.asm)): a(n) = gcd(n, pi(n)) where pi is A000720.
 * [A087275](http://oeis.org/A087275) ([L11 program](087/A087275.asm)): Write n in binary: 1ab..yz, then a(n) = 1b..yz + ... + 1yz + 1z + 1.
 * [A087276](http://oeis.org/A087276) ([L14 program](087/A087276.asm)): Write n in binary: 1ab..yz, then a(n) = 1ab..yz + ... + 1yz + 1z + 1.
 * [A087278](http://oeis.org/A087278) ([L06 program](087/A087278.asm)): Distance to nearest square is not greater than 1.

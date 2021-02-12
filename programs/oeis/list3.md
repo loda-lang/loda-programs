@@ -1732,6 +1732,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168039](http://oeis.org/A168039) ([L10 program](168/A168039.asm)): Squares closest to 3*n.
 * [A168043](http://oeis.org/A168043) ([L15 program](168/A168043.asm)): Let S(1)={1} and, for n>1 let S(n) be the smallest set containing x+1, x+2, and 2*x for each element x in S(n-1). a(n) is the number of elements in S(n).
 * [A168046](http://oeis.org/A168046) ([L10 program](168/A168046.asm)): Characteristic function of zerofree numbers in decimal representation.
+* [A168048](http://oeis.org/A168048) ([L34 program](168/A168048.asm)): a(n) = C(n)*Pi(n) where C(n) = number of nonprimes <= n, Pi(n) = number of primes <= n.
 * [A168050](http://oeis.org/A168050) ([L04 program](168/A168050.asm)): Hankel transform of A168049.
 * [A168052](http://oeis.org/A168052) ([L11 program](168/A168052.asm)): Hankel transform of a Motzkin variant.
 * [A168053](http://oeis.org/A168053) ([L05 program](168/A168053.asm)): Expansion of (1-2*x^2-3*x^3)/((1-x)^2*(1+x+x^2)).

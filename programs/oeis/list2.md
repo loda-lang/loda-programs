@@ -615,7 +615,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A107253](http://oeis.org/A107253) ([L35 program](107/A107253.asm)): a(n) = n^4 - 15*n + 15.
 * [A107255](http://oeis.org/A107255) ([L37 program](107/A107255.asm)): a(n) = n^5 - 31*n + 31, with n*a(n) + n*( n - 1 )*31 = n^6.
 * [A107256](http://oeis.org/A107256) ([L50 program](107/A107256.asm)): a(n) = n^6 - 63*n + 63, with n*a(n) + n*(n-1)*63 = n^7.
-* [A107279](http://oeis.org/A107279) ([L53 program](107/A107279.asm)): a(n) = 1 if n is an odd prime, a(n) = 2 if n is a nonzero even number, otherwise a(n) = 0.
+* [A107279](http://oeis.org/A107279) ([L30 program](107/A107279.asm)): a(n) = 1 if n is an odd prime, a(n) = 2 if n is a nonzero even number, otherwise a(n) = 0.
 * [A107328](http://oeis.org/A107328) ([L07 program](107/A107328.asm)): Duplicate of A065034.
 * [A107351](http://oeis.org/A107351) ([L30 program](107/A107351.asm)): Expansion of (1+x^3)/((1-x)^3*(1-x^2)^3*(1-x^3)).
 * [A107386](http://oeis.org/A107386) ([L09 program](107/A107386.asm)): a(n) = 2*a(n-1) - 2*a(n-3) + a(n-4), n>6.
@@ -1779,6 +1779,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123198](http://oeis.org/A123198) ([L07 program](123/A123198.asm)): a(n)=[(n+1)(2n-1)]^2.
 * [A123203](http://oeis.org/A123203) ([L06 program](123/A123203.asm)): A007318 * [1, 1, 4, 4, 4,...].
 * [A123208](http://oeis.org/A123208) ([L17 program](123/A123208.asm)): Start with 1, then alternately add 2 or double.
+* [A123246](http://oeis.org/A123246) ([L36 program](123/A123246.asm)): a(n) = PrimePi(n) + (-1)^(PrimePi(n) + 1) (cf. A000720).
 * [A123253](http://oeis.org/A123253) ([L07 program](123/A123253.asm)): Sum of 7th powers of digits of n.
 * [A123270](http://oeis.org/A123270) ([L14 program](123/A123270.asm)): a(0)=1, a(1)=1, a(n) = 5*a(n-1) + 4*a(n-2).
 * [A123273](http://oeis.org/A123273) ([L24 program](123/A123273.asm)): a(0) = 1; a(n) = the number of earlier terms, a(k), where gcd(a(k), a(floor(k/2))) = 1.
@@ -1883,7 +1884,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125200](http://oeis.org/A125200) ([L15 program](125/A125200.asm)): n*(4*n^2 + n -1)/2.
 * [A125201](http://oeis.org/A125201) ([L05 program](125/A125201.asm)): a(n) = 8*n^2 - 7*n + 1.
 * [A125202](http://oeis.org/A125202) ([L05 program](125/A125202.asm)): a(n) = 4*n^2 - 6*n + 1.
-* [A125255](http://oeis.org/A125255) ([L05 program](125/A125255.asm)): Smallest prime divisor of 4n-1.
+* [A125255](http://oeis.org/A125255) ([L04 program](125/A125255.asm)): Smallest prime divisor of 4n-1.
 * [A125256](http://oeis.org/A125256) ([L09 program](125/A125256.asm)): Smallest odd prime divisor of n^2 + 1.
 * [A125299](http://oeis.org/A125299) ([L11 program](125/A125299.asm)): Numbers starting with a consonant.
 * [A125521](http://oeis.org/A125521) ([L11 program](125/A125521.asm)): a(n) is the minimal difference between two distinct n-digit numbers with property that when one of them is typed into a calculator and rotated 180 degrees, the other one is seen.
@@ -2620,9 +2621,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132728](http://oeis.org/A132728) ([L28 program](132/A132728.asm)): Triangle read by rows: row n contains n terms of the sequence 1, 7, 1, 7, ...
 * [A132729](http://oeis.org/A132729) ([L05 program](132/A132729.asm)): 2*A132044 - A000012.
 * [A132730](http://oeis.org/A132730) ([L09 program](132/A132730.asm)): Row sums of triangle A132729.
-* [A132731](http://oeis.org/A132731) ([L04 program](132/A132731.asm)): 2*A007318 + A103451 - 2*A000012.
+* [A132731](http://oeis.org/A132731) ([L06 program](132/A132731.asm)): 2*A007318 + A103451 - 2*A000012.
 * [A132732](http://oeis.org/A132732) ([L13 program](132/A132732.asm)): Row sums of triangle A132731.
-* [A132733](http://oeis.org/A132733) ([L05 program](132/A132733.asm)): Triangle read by rows: 2*A132731 - A000012 as infinite lower triangular matrices.
+* [A132733](http://oeis.org/A132733) ([L07 program](132/A132733.asm)): Triangle read by rows: 2*A132731 - A000012 as infinite lower triangular matrices.
 * [A132734](http://oeis.org/A132734) ([L12 program](132/A132734.asm)): Row sums of triangle A132733.
 * [A132735](http://oeis.org/A132735) ([L07 program](132/A132735.asm)): A007318 + A000012 - A103451.
 * [A132736](http://oeis.org/A132736) ([L04 program](132/A132736.asm)): Row sums of triangle A132735.
