@@ -199,6 +199,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101384](http://oeis.org/A101384) ([L11 program](101/A101384.asm)): a(n) = n*(n-1)^3*(n^2-n-1)/2.
 * [A101386](http://oeis.org/A101386) ([L11 program](101/A101386.asm)): Expansion of g.f.: (5 - 3*x)/(1 - 6*x + x^2).
 * [A101399](http://oeis.org/A101399) ([L03 program](101/A101399.asm)): a(0) = 1, a(1) = 2, a(2) = 5; for n >= 3, a(n) = a(n-1) + 2*a(n-2) + a(n-3).
+* [A101405](http://oeis.org/A101405) ([L31 program](101/A101405.asm)): a(n) = n^(pi(n-1)).
 * [A101423](http://oeis.org/A101423) ([L06 program](101/A101423.asm)): Number of different cuboids with volume p^3 * q^n, where p,q are distinct prime numbers.
 * [A101424](http://oeis.org/A101424) ([L06 program](101/A101424.asm)): Number of different cuboids with volume p^4 * q^n, where p,q are distinct prime numbers.
 * [A101425](http://oeis.org/A101425) ([L10 program](101/A101425.asm)): Number of different cuboids with volume p^5 X q^n, where p,q are distinct prime numbers.
@@ -3252,7 +3253,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139264](http://oeis.org/A139264) ([L03 program](139/A139264.asm)): a(n) = 70*n - 63.
 * [A139267](http://oeis.org/A139267) ([L04 program](139/A139267.asm)): Twice octagonal numbers: 2*n*(3*n-2).
 * [A139268](http://oeis.org/A139268) ([L04 program](139/A139268.asm)): Twice nonagonal numbers (or twice 9-gonal numbers): a(n) = n(7n-5).
-* [A139270](http://oeis.org/A139270) ([L69 program](139/A139270.asm)): Twice nonprime numbers.
+* [A139270](http://oeis.org/A139270) ([L27 program](139/A139270.asm)): Twice nonprime numbers.
 * [A139271](http://oeis.org/A139271) ([L04 program](139/A139271.asm)): a(n) = 2*n*(4*n-3).
 * [A139272](http://oeis.org/A139272) ([L04 program](139/A139272.asm)): a(n) = n*(8*n-5).
 * [A139273](http://oeis.org/A139273) ([L04 program](139/A139273.asm)): a(n) = n*(8*n - 3).
@@ -3387,7 +3388,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140325](http://oeis.org/A140325) ([L15 program](140/A140325.asm)): a(n) = binomial(n+8,8) * 2^n.
 * [A140341](http://oeis.org/A140341) ([L20 program](140/A140341.asm)): The number of bits needed to write the universal code for an Elias delta coding, the simplest asymptotically optimal code.
 * [A140345](http://oeis.org/A140345) ([L05 program](140/A140345.asm)): a(n)=a(n-1)^2-a(n-2)-a(n-3)-a(n-4), a(1)=a(2)=a(3)=a(4)=1.
-* [A140347](http://oeis.org/A140347) ([L64 program](140/A140347.asm)): Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
+* [A140347](http://oeis.org/A140347) ([L23 program](140/A140347.asm)): Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
 * [A140354](http://oeis.org/A140354) ([L15 program](140/A140354.asm)): a(n) = binomial(n+9,9)*2^n.
 * [A140356](http://oeis.org/A140356) ([L06 program](140/A140356.asm)): Triangle T(n,m) read by rows: m! if m <= floor(n/2), and (n-m)! otherwise.
 * [A140359](http://oeis.org/A140359) ([L05 program](140/A140359.asm)): a(n) = 2*a(n-1) + a(n-2) - 2*a(n-3).

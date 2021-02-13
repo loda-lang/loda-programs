@@ -907,7 +907,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059952](http://oeis.org/A059952) ([L25 program](059/A059952.asm)): Ordering of a deck of 52 cards after an in-shuffle.
 * [A059953](http://oeis.org/A059953) ([L09 program](059/A059953.asm)): Ordering of a deck of 52 cards after an out-shuffle.
 * [A059973](http://oeis.org/A059973) ([L57 program](059/A059973.asm)): Expansion of (x + x^2 - 2*x^3) / ( 1 - 4*x^2 - x^4).
-* [A059975](http://oeis.org/A059975) ([L74 program](059/A059975.asm)): a(n) is the least number of prime factors (counted with multiplicity) of any integer with n divisors.
+* [A059974](http://oeis.org/A059974) ([L41 program](059/A059974.asm)): a(n)=a(p)+a(q) where p and q are the two primes less than n and closest to n; with a(1)=1, a(2)=1.
+* [A059975](http://oeis.org/A059975) ([L27 program](059/A059975.asm)): a(n) is the least number of prime factors (counted with multiplicity) of any integer with n divisors.
 * [A059977](http://oeis.org/A059977) ([L03 program](059/A059977.asm)): a(n) = binomial(n+2, 2)^4.
 * [A059978](http://oeis.org/A059978) ([L03 program](059/A059978.asm)): a(n) = binomial(n+2,n)^6.
 * [A059986](http://oeis.org/A059986) ([L05 program](059/A059986.asm)): Number of rods required to make a 3-D cube of side length n.
@@ -2058,6 +2059,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070727](http://oeis.org/A070727) ([L03 program](070/A070727.asm)): n^7 mod 47.
 * [A070728](http://oeis.org/A070728) ([L03 program](070/A070728.asm)): n^7 mod 48.
 * [A070747](http://oeis.org/A070747) ([L08 program](070/A070747.asm)): signum(sin(n)), where signum=A057427.
+* [A070803](http://oeis.org/A070803) ([L37 program](070/A070803.asm)): Number of primes not exceeding sum of divisors of n.
 * [A070824](http://oeis.org/A070824) ([L30 program](070/A070824.asm)): Number of divisors of n which are > 1 and < n (nontrivial divisors).
 * [A070875](http://oeis.org/A070875) ([L10 program](070/A070875.asm)): Binary expansion is 1x100...0 where x = 0 or 1.
 * [A070876](http://oeis.org/A070876) ([L11 program](070/A070876.asm)): Binary expansion is 1xx100...0 where xx = 00 or 11.
@@ -2226,6 +2228,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073388](http://oeis.org/A073388) ([L15 program](073/A073388.asm)): Convolution of A002605(n) (generalized (2,2)-Fibonacci), n >= 0, with itself.
 * [A073423](http://oeis.org/A073423) ([L08 program](073/A073423.asm)): Sums of two powers of zero: triangle read by rows: T(m,n) = 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n
 * [A073424](http://oeis.org/A073424) ([L12 program](073/A073424.asm)): Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.
+* [A073425](http://oeis.org/A073425) ([L36 program](073/A073425.asm)): a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
 * [A073504](http://oeis.org/A073504) ([L19 program](073/A073504.asm)): A possible basis for finite fractal sequences: let u(1) = 1, u(2) = n, u(k) = floor(u(k-1)/2) + floor(u(k-2)/2); then a(n) = lim_{k->infinity} u(k).
 * [A073577](http://oeis.org/A073577) ([L05 program](073/A073577.asm)): a(n) = 4*n^2 + 4*n - 1.
 * [A073636](http://oeis.org/A073636) ([L05 program](073/A073636.asm)): Period 3: repeat [1, 8, 9] ; Digital root of A000578(n) = n^3 for n >= 1.
@@ -3592,7 +3595,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087627](http://oeis.org/A087627) ([L20 program](087/A087627.asm)): Count ...n,2n,2n...
 * [A087635](http://oeis.org/A087635) ([L12 program](087/A087635.asm)): a(n)=S(n,3) where S(n,m)=sum(k=0,n,binomial(n,k)*fibonacci(m*k)).
 * [A087645](http://oeis.org/A087645) ([L12 program](087/A087645.asm)): Third column of A071223.
-* [A087656](http://oeis.org/A087656) ([L74 program](087/A087656.asm)): Let f be defined on the rationals by f(p/q) =(p+1)/(q+1)=p_{1}/q_{1} where (p_{1},q_{1})=1. Let f^k(p/q)=p_{k}/q_{k} where (p_{k},q_{k})=1. Sequence gives least k such that p_{k}-q_{k} = 1 starting at n.
+* [A087656](http://oeis.org/A087656) ([L27 program](087/A087656.asm)): Let f be defined on the rationals by f(p/q) =(p+1)/(q+1)=p_{1}/q_{1} where (p_{1},q_{1})=1. Let f^k(p/q)=p_{k}/q_{k} where (p_{k},q_{k})=1. Sequence gives least k such that p_{k}-q_{k} = 1 starting at n.
 * [A087719](http://oeis.org/A087719) ([L13 program](087/A087719.asm)): Least number m such that the number of numbers k <= m with k > spf(k)^n exceeds the number of numbers with k <= spf(k)^n.
 * [A087733](http://oeis.org/A087733) ([L17 program](087/A087733.asm)): Partial sums of A068639.
 * [A087737](http://oeis.org/A087737) ([L14 program](087/A087737.asm)): Value of (n,n+1) concatenated in binary representation.

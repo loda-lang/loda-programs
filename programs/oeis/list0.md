@@ -2,7 +2,7 @@
 
 List of integer sequences with links to LODA programs. An _Ln_ program is a LODA program of length _n_.
 
-* [A000004](http://oeis.org/A000004) ([L01 program](000/A000004.asm)): The zero sequence.
+* [A000004](http://oeis.org/A000004) ([L00 program](000/A000004.asm)): The zero sequence.
 * [A000005](http://oeis.org/A000005) ([L16 program](000/A000005.asm)): d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 * [A000007](http://oeis.org/A000007) ([L01 program](000/A000007.asm)): The characteristic function of {0}: a(n) = 0^n.
 * [A000008](http://oeis.org/A000008) ([L14 program](000/A000008.asm)): Number of ways of making change for n cents using coins of 1, 2, 5, 10 cents.
@@ -2974,7 +2974,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025700](http://oeis.org/A025700) ([L14 program](025/A025700.asm)): Index of 3^n within sequence of numbers of form 3^i*10^j.
 * [A025701](http://oeis.org/A025701) ([L42 program](025/A025701.asm)): Index of 4^n within sequence of numbers of form 3^i*4^j.
 * [A025704](http://oeis.org/A025704) ([L42 program](025/A025704.asm)): Index of 4^n within sequence of numbers of form 4^i*7^j.
-* [A025705](http://oeis.org/A025705) ([L11 program](025/A025705.asm)): Index of 4^n within sequence of numbers of form 4^i*10^j.
+* [A025705](http://oeis.org/A025705) ([L10 program](025/A025705.asm)): Index of 4^n within sequence of numbers of form 4^i*10^j.
 * [A025709](http://oeis.org/A025709) ([L24 program](025/A025709.asm)): Index of 5^n within sequence of numbers of form 5^i*8^j.
 * [A025710](http://oeis.org/A025710) ([L20 program](025/A025710.asm)): Index of 5^n within sequence of numbers of form 5^i*9^j.
 * [A025711](http://oeis.org/A025711) ([L17 program](025/A025711.asm)): Index of 5^n within sequence of numbers of form 5^i*10^j.

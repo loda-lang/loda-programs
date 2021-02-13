@@ -383,7 +383,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308136](http://oeis.org/A308136) ([L17 program](308/A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
 * [A308137](http://oeis.org/A308137) ([L19 program](308/A308137.asm)): Number of (undirected) Hamiltonian paths on the n-prism graph.
 * [A308187](http://oeis.org/A308187) ([L03 program](308/A308187.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {0,1}.
-* [A308188](http://oeis.org/A308188) ([L04 program](308/A308188.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {1,2}.
+* [A308188](http://oeis.org/A308188) ([L03 program](308/A308188.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {1,2}.
 * [A308196](http://oeis.org/A308196) ([L07 program](308/A308196.asm)): Partial sums of A063808.
 * [A308215](http://oeis.org/A308215) ([L12 program](308/A308215.asm)): a(n) is the multiplicative inverse of A001844(n+1) modulo A001844(n); where A001844 is the sequence of centered square numbers.
 * [A308217](http://oeis.org/A308217) ([L23 program](308/A308217.asm)): a(n) is the multiplicative inverse of A001844(n) modulo A001844(n+1); where A001844 is the sequence of centered square numbers.

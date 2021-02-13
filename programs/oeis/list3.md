@@ -2208,7 +2208,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171498](http://oeis.org/A171498) ([L04 program](171/A171498.asm)): 4*3^n-1.
 * [A171499](http://oeis.org/A171499) ([L05 program](171/A171499.asm)): a(n) = 6*a(n-1) - 8*a(n-2) for n > 1; a(0) = 3, a(1) = 14.
 * [A171501](http://oeis.org/A171501) ([L15 program](171/A171501.asm)): Inverse binomial transform of A084640.
-* [A171504](http://oeis.org/A171504) ([L66 program](171/A171504.asm)): a(n) = n-th nonprime + n.
+* [A171504](http://oeis.org/A171504) ([L27 program](171/A171504.asm)): a(n) = n-th nonprime + n.
 * [A171507](http://oeis.org/A171507) ([L13 program](171/A171507.asm)): a(n) = (5*2^(n+1)-9-(-1)^n)/6-2*n.
 * [A171508](http://oeis.org/A171508) ([L51 program](171/A171508.asm)): Numbers n that are not the sum of the k-th noncomposite number and k for any k >= 1.
 * [A171511](http://oeis.org/A171511) ([L27 program](171/A171511.asm)): Numbers that are not the sum of the k-th composite number and k for any k >= 1.
@@ -2344,7 +2344,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173035](http://oeis.org/A173035) ([L14 program](173/A173035.asm)): Cat years in human years: a(0) = 0, a(1) = 15, a(2) = 24, a(n) = a(n-1) + 4 for n >= 3.
 * [A173036](http://oeis.org/A173036) ([L03 program](173/A173036.asm)): Triangular numbers + 13.
 * [A173044](http://oeis.org/A173044) ([L55 program](173/A173044.asm)): Product plus sum of five consecutive nonnegative numbers.
-* [A173073](http://oeis.org/A173073) ([L33 program](173/A173073.asm)): (n-th nonnegative nonprime) minus (n-1).
+* [A173073](http://oeis.org/A173073) ([L12 program](173/A173073.asm)): (n-th nonnegative nonprime) minus (n-1).
 * [A173078](http://oeis.org/A173078) ([L07 program](173/A173078.asm)): a(n) = (5*2^n - 2*(-1)^n - 9)/3.
 * [A173089](http://oeis.org/A173089) ([L05 program](173/A173089.asm)): a(n) = 25*n^2 + n.
 * [A173102](http://oeis.org/A173102) ([L05 program](173/A173102.asm)): Number of partitions x + y = z with {x,y,z} in {1,2,3,..,3n} and z > y >= x.
@@ -2793,7 +2793,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178947](http://oeis.org/A178947) ([L44 program](178/A178947.asm)): Expansion of x*(1+2*x+8*x^2+3*x^4+4*x^3) / ( (1+x)^2*(x-1)^4 ).
 * [A178960](http://oeis.org/A178960) ([L22 program](178/A178960.asm)): Numbers n such that n! contains every digit at least once.
 * [A178970](http://oeis.org/A178970) ([L09 program](178/A178970.asm)): 2^(2n-1) mod (2n+1).
-* [A178977](http://oeis.org/A178977) ([L06 program](178/A178977.asm)): (3*n+2)*(3*n+5)/2.
+* [A178977](http://oeis.org/A178977) ([L05 program](178/A178977.asm)): (3*n+2)*(3*n+5)/2.
 * [A178982](http://oeis.org/A178982) ([L27 program](178/A178982.asm)): Partial sums of floor(Fibonacci(n)/2).
 * [A178987](http://oeis.org/A178987) ([L09 program](178/A178987.asm)): a(n) = n*(n-3)*2^(n-2).
 * [A179001](http://oeis.org/A179001) ([L20 program](179/A179001.asm)): Partial sums of floor(Fibonacci(n)/3).
@@ -2949,7 +2949,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181155](http://oeis.org/A181155) ([L14 program](181/A181155.asm)): Odious numbers (A000069) plus one; complement of A026147.
 * [A181156](http://oeis.org/A181156) ([L17 program](181/A181156.asm)): Odd Fibonacci numbers F which have a proper Fibonacci divisor G such that F/G is a Lucas number or a product of Lucas numbers.
 * [A181176](http://oeis.org/A181176) ([L11 program](181/A181176.asm)): The minimum absolute value obtainable by partitioning the first n consecutive integers into two sets and subtracting the two sums of the sets.
-* [A181183](http://oeis.org/A181183) ([L07 program](181/A181183.asm)): a(n) = sigma(tau(n)) (mod 2).
+* [A181183](http://oeis.org/A181183) ([L03 program](181/A181183.asm)): a(n) = sigma(tau(n)) (mod 2).
 * [A181208](http://oeis.org/A181208) ([L09 program](181/A181208.asm)): Number of n X 4 binary matrices with no two 1's adjacent diagonally or antidiagonally.
 * [A181286](http://oeis.org/A181286) ([L10 program](181/A181286.asm)): Partial sums of floor(n^2/3) (A000212).
 * [A181287](http://oeis.org/A181287) ([L48 program](181/A181287.asm)): Numbers of the form i*5^j-1 (i=1..4, j >= 0).

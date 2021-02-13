@@ -1016,7 +1016,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268644](http://oeis.org/A268644) ([L12 program](268/A268644.asm)): a(n) = 4*n^3 - 3*n^2 - 2*n - 1.
 * [A268676](http://oeis.org/A268676) ([L07 program](268/A268676.asm)): a(n) = A101080(n,A268823(3+n)), where A101080(x,y) gives the Hamming distance between binary expansions of x and y.
 * [A268684](http://oeis.org/A268684) ([L09 program](268/A268684.asm)): a(n) = n*(n + 1)*(4*n - 1)/3.
-* [A268685](http://oeis.org/A268685) ([L13 program](268/A268685.asm)): a(n) = 3*(n + 1)*(n + 2)*(3*n + 1)*(3*n + 4)/4.
+* [A268685](http://oeis.org/A268685) ([L08 program](268/A268685.asm)): a(n) = 3*(n + 1)*(n + 2)*(3*n + 1)*(3*n + 4)/4.
 * [A268741](http://oeis.org/A268741) ([L07 program](268/A268741.asm)): a(n) = 2*a(n - 2) - a(n - 1) for n>1,  a(0) = 4, a(1) = 5.
 * [A268744](http://oeis.org/A268744) ([L13 program](268/A268744.asm)): Number of n X 2 binary arrays with some element plus some horizontally or vertically adjacent neighbor totalling two no more than once.
 * [A268775](http://oeis.org/A268775) ([L14 program](268/A268775.asm)): Number of n X 2 binary arrays with some element plus some horizontally, vertically, diagonally or antidiagonally adjacent neighbor totalling two no more than once.
@@ -1765,7 +1765,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A282612](http://oeis.org/A282612) ([L04 program](282/A282612.asm)): Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to row permutations.
 * [A282613](http://oeis.org/A282613) ([L14 program](282/A282613.asm)): Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to rotations.
 * [A282622](http://oeis.org/A282622) ([L04 program](282/A282622.asm)): Number of digits of the representation of n in the alternating sexagesimal-decimal number system.
-* [A282671](http://oeis.org/A282671) ([L74 program](282/A282671.asm)): Twice composite numbers.
+* [A282671](http://oeis.org/A282671) ([L26 program](282/A282671.asm)): Twice composite numbers.
 * [A282702](http://oeis.org/A282702) ([L12 program](282/A282702.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=4, a(1)=11.
 * [A282703](http://oeis.org/A282703) ([L13 program](282/A282703.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=7, a(1)=26.
 * [A282718](http://oeis.org/A282718) ([L62 program](282/A282718.asm)): Satisfies the tribonacci recurrence: a(n) = a(n-1) + a(n-2) + a(n-3).
@@ -1796,7 +1796,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A283323](http://oeis.org/A283323) ([L55 program](283/A283323.asm)): a(n) = 4*a(n-2)+1 with initial terms 1,3,7.
 * [A283353](http://oeis.org/A283353) ([L12 program](283/A283353.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 619", based on the 5-celled von Neumann neighborhood.
 * [A283393](http://oeis.org/A283393) ([L04 program](283/A283393.asm)): a(n) = gcd(n^2-1, n^2+9).
-* [A283394](http://oeis.org/A283394) ([L06 program](283/A283394.asm)): a(n) = 3*n*(3*n + 7)/2 + 4.
+* [A283394](http://oeis.org/A283394) ([L05 program](283/A283394.asm)): a(n) = 3*n*(3*n + 7)/2 + 4.
 * [A283437](http://oeis.org/A283437) ([L14 program](283/A283437.asm)): Periodic {1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1}.
 * [A283442](http://oeis.org/A283442) ([L10 program](283/A283442.asm)): a(n) = lcm(n,5) / gcd(n,5).
 * [A283443](http://oeis.org/A283443) ([L06 program](283/A283443.asm)): a(n) = lcm(n,6) / gcd(n,6).
