@@ -1,4 +1,4 @@
-; A020332: Numbers n such that base 4 representation is the juxtaposition of two identical strings.
+; A020332: Numbers whose base-4 representation is the juxtaposition of two identical strings.
 ; 5,10,15,68,85,102,119,136,153,170,187,204,221,238,255,1040,1105,1170,1235,1300,1365,1430,1495,1560,1625,1690,1755,1820,1885,1950,2015,2080,2145,2210,2275,2340,2405,2470,2535,2600,2665,2730,2795,2860,2925,2990
 
 mov $11,$0

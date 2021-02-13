@@ -1,4 +1,4 @@
-; A020334: Numbers n such that base 6 representation is the juxtaposition of two identical strings.
+; A020334: Numbers whose base-6 representation is the juxtaposition of two identical strings.
 ; 7,14,21,28,35,222,259,296,333,370,407,444,481,518,555,592,629,666,703,740,777,814,851,888,925,962,999,1036,1073,1110,1147,1184,1221,1258,1295,7812,8029,8246,8463,8680,8897,9114,9331,9548,9765,9982,10199,10416
 
 mov $1,$0
