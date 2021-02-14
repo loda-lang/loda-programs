@@ -1,9 +1,8 @@
 ; A273129: The Rote-Fibonacci infinite sequence.
 ; 0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,1
 
-add $0,1
-cal $0,171587 ; Sequence of the diagonal variant of the Fibonacci word fractal. Sequence of the Fibonacci tile.
-mov $1,2
-mov $2,1
-add $2,$0
-sub $1,$2
+add $0,2
+cal $0,195121 ; a(n) = 2*n - floor(n/r), where r = (1 + sqrt(5))/2 (the golden ratio).
+gcd $0,2
+mov $1,$0
+sub $1,1
