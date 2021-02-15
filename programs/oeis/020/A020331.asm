@@ -1,4 +1,4 @@
-; A020331: Numbers n such that base 3 representation is the juxtaposition of two identical strings.
+; A020331: Numbers whose base-3 representation is the juxtaposition of two identical strings.
 ; 4,8,30,40,50,60,70,80,252,280,308,336,364,392,420,448,476,504,532,560,588,616,644,672,700,728,2214,2296,2378,2460,2542,2624,2706,2788,2870,2952,3034,3116,3198,3280,3362,3444,3526,3608,3690,3772,3854,3936,4018
 
 mov $2,$0

@@ -107,7 +107,7 @@ These are the following instructions supported by LODA. In the following, let `a
 | `mov a,b` | Assignment     | Assign the value of the source to the target operand: `a:=b` |
 | `add a,b` | Addition       | Add the source to the target operand: `a:=a+b` |
 | `sub a,b` | Subtraction    | Subtract the source from the target operand: `a:=a-b` |
-| `trn a,b` | Truncation     | Subtract and truncate if result is negative: `a:=(a>=b)?(a-b):0` |
+| `trn a,b` | Truncation     | Subtract and ensure non-negative result: `a:=max(a-b,0)` |
 | `mul a,b` | Multiplication | Multiply the target with the source value: `a:=a*b` |
 | `div a,b` | Division       | Divide the target by the source value: `a:=floor(a/b)`  |
 | `mod a,b` | Modulus        | Remainder of division of target by source: `a:=a%b` |

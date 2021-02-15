@@ -2,7 +2,7 @@
 
 List of integer sequences with links to LODA programs. An _Ln_ program is a LODA program of length _n_.
 
-* [A000004](http://oeis.org/A000004) ([L00 program](000/A000004.asm)): The zero sequence.
+* [A000004](http://oeis.org/A000004) ([L01 program](000/A000004.asm)): The zero sequence.
 * [A000005](http://oeis.org/A000005) ([L16 program](000/A000005.asm)): d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 * [A000007](http://oeis.org/A000007) ([L01 program](000/A000007.asm)): The characteristic function of {0}: a(n) = 0^n.
 * [A000008](http://oeis.org/A000008) ([L14 program](000/A000008.asm)): Number of ways of making change for n cents using coins of 1, 2, 5, 10 cents.
@@ -139,8 +139,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000975](http://oeis.org/A000975) ([L04 program](000/A000975.asm)): a(2n) = 2*a(2n-1), a(2n+1) = 2*a(2n)+1 (also a(n) is the n-th number without consecutive equal binary digits).
 * [A000982](http://oeis.org/A000982) ([L04 program](000/A000982.asm)): a(n) = ceiling(n^2/2).
 * [A000984](http://oeis.org/A000984) ([L03 program](000/A000984.asm)): Central binomial coefficients: binomial(2*n,n) = (2*n)!/(n!)^2.
-* [A000989](http://oeis.org/A000989) ([L08 program](000/A000989.asm)): 3-adic valuation of binomial(2n ,n): largest k such that 3^k divides binomial(2n ,n).
-* [A000999](http://oeis.org/A000999) ([L08 program](000/A000999.asm)): 5^a(n) divides C(2n,n).
+* [A000989](http://oeis.org/A000989) ([L08 program](000/A000989.asm)): 3-adic valuation of binomial(2*n, n): largest k such that 3^k divides binomial(2*n, n).
+* [A000999](http://oeis.org/A000999) ([L08 program](000/A000999.asm)): 5-adic valuation of binomial(2*n,n): largest k such that 5^k divides binomial(2*n, n).
 * [A001014](http://oeis.org/A001014) ([L02 program](001/A001014.asm)): Sixth powers: a(n) = n^6.
 * [A001015](http://oeis.org/A001015) ([L02 program](001/A001015.asm)): Seventh powers: a(n) = n^7.
 * [A001016](http://oeis.org/A001016) ([L02 program](001/A001016.asm)): Eighth powers: a(n) = n^8.
@@ -622,7 +622,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004759](http://oeis.org/A004759) ([L10 program](004/A004759.asm)): Binary expansion starts 111.
 * [A004760](http://oeis.org/A004760) ([L08 program](004/A004760.asm)): List of numbers whose binary expansion does not begin 10.
 * [A004761](http://oeis.org/A004761) ([L09 program](004/A004761.asm)): Numbers n whose binary expansion does not begin with 11.
-* [A004762](http://oeis.org/A004762) ([L16 program](004/A004762.asm)): Numbers n such that binary expansion does not begin 100.
+* [A004762](http://oeis.org/A004762) ([L16 program](004/A004762.asm)): Numbers whose binary expansion does not begin 100.
 * [A004763](http://oeis.org/A004763) ([L17 program](004/A004763.asm)): Numbers n such that binary expansion does not begin 101.
 * [A004764](http://oeis.org/A004764) ([L32 program](004/A004764.asm)): Numbers n such that binary expansion does not begin 110.
 * [A004765](http://oeis.org/A004765) ([L19 program](004/A004765.asm)): Numbers n such that binary expansion does not begin 111.
@@ -706,7 +706,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005030](http://oeis.org/A005030) ([L03 program](005/A005030.asm)): a(n) = 5*3^n.
 * [A005032](http://oeis.org/A005032) ([L03 program](005/A005032.asm)): a(n) = 7*3^n.
 * [A005041](http://oeis.org/A005041) ([L09 program](005/A005041.asm)): A self-generating sequence.
-* [A005044](http://oeis.org/A005044) ([L30 program](005/A005044.asm)): Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
+* [A005044](http://oeis.org/A005044) ([L03 program](005/A005044.asm)): Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
 * [A005051](http://oeis.org/A005051) ([L03 program](005/A005051.asm)): a(n) = 8*3^n.
 * [A005052](http://oeis.org/A005052) ([L03 program](005/A005052.asm)): 10*3^n.
 * [A005053](http://oeis.org/A005053) ([L06 program](005/A005053.asm)): Expand (1-2*x)/(1-5*x).
@@ -1163,7 +1163,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008669](http://oeis.org/A008669) ([L15 program](008/A008669.asm)): Molien series for 4-dimensional complex reflection group of order 7680 (in powers of x^4).
 * [A008670](http://oeis.org/A008670) ([L11 program](008/A008670.asm)): Molien series for Weyl group F_4.
 * [A008671](http://oeis.org/A008671) ([L19 program](008/A008671.asm)): Expansion of 1/((1-x^2)*(1-x^3)*(1-x^7)).
-* [A008672](http://oeis.org/A008672) ([L19 program](008/A008672.asm)): Expansion of 1/((1-x)*(1-x^3)*(1-x^5)).
+* [A008672](http://oeis.org/A008672) ([L10 program](008/A008672.asm)): Expansion of 1/((1-x)*(1-x^3)*(1-x^5)).
 * [A008676](http://oeis.org/A008676) ([L11 program](008/A008676.asm)): Expansion of 1/((1-x^3)*(1-x^5)).
 * [A008679](http://oeis.org/A008679) ([L10 program](008/A008679.asm)): Expansion of 1/((1-x^3)*(1-x^4)).
 * [A008687](http://oeis.org/A008687) ([L11 program](008/A008687.asm)): Number of 1's in 2's complement representation of -n.
@@ -1558,7 +1558,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011662](http://oeis.org/A011662) ([L05 program](011/A011662.asm)): A binary m-sequence: expansion of reciprocal of x^5 + x^2 + 1.
 * [A011663](http://oeis.org/A011663) ([L08 program](011/A011663.asm)): A binary m-sequence: expansion of reciprocal of x^5+x^4+x^3+x+1.
 * [A011671](http://oeis.org/A011671) ([L14 program](011/A011671.asm)): A binary m-sequence: expansion of reciprocal of x^6+x^5+x^4+x^2+1.
-* [A011672](http://oeis.org/A011672) ([L06 program](011/A011672.asm)): Expansion of reciprocal of x^6+x^3+1 (mod 2).
+* [A011672](http://oeis.org/A011672) ([L04 program](011/A011672.asm)): Expansion of reciprocal of x^6+x^3+1 (mod 2).
 * [A011693](http://oeis.org/A011693) ([L10 program](011/A011693.asm)): A binary m-sequence: expansion of reciprocal of x^8+x^5+x^4+x^3+1.
 * [A011707](http://oeis.org/A011707) ([L06 program](011/A011707.asm)): A binary m-sequence: expansion of reciprocal of x^8+x^7+x^6+x^4+x^2+x+1.
 * [A011746](http://oeis.org/A011746) ([L03 program](011/A011746.asm)): Expansion of (1 + x^2)/(1 + x^2 + x^5) mod 2.
@@ -2271,13 +2271,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A019584](http://oeis.org/A019584) ([L06 program](019/A019584.asm)): a(n) = n^2*(n-1)^3/4.
 * [A019590](http://oeis.org/A019590) ([L02 program](019/A019590.asm)): Fermat's Last Theorem: a(n) = 1 if x^n + y^n = z^n has a nontrivial solution in integers, otherwise a(n) = 0.
 * [A020330](http://oeis.org/A020330) ([L12 program](020/A020330.asm)): Numbers whose base 2 representation is the juxtaposition of two identical strings.
-* [A020331](http://oeis.org/A020331) ([L11 program](020/A020331.asm)): Numbers n such that base 3 representation is the juxtaposition of two identical strings.
-* [A020332](http://oeis.org/A020332) ([L49 program](020/A020332.asm)): Numbers n such that base 4 representation is the juxtaposition of two identical strings.
-* [A020333](http://oeis.org/A020333) ([L10 program](020/A020333.asm)): Numbers n such that base 5 representation is the juxtaposition of two identical strings.
-* [A020334](http://oeis.org/A020334) ([L10 program](020/A020334.asm)): Numbers n such that base 6 representation is the juxtaposition of two identical strings.
-* [A020335](http://oeis.org/A020335) ([L26 program](020/A020335.asm)): Numbers n such that base 7 representation is the juxtaposition of two identical strings.
-* [A020336](http://oeis.org/A020336) ([L29 program](020/A020336.asm)): Numbers n such that base 8 representation is the juxtaposition of two identical strings.
-* [A020337](http://oeis.org/A020337) ([L39 program](020/A020337.asm)): Numbers n such that base 9 representation is the juxtaposition of two identical strings.
+* [A020331](http://oeis.org/A020331) ([L11 program](020/A020331.asm)): Numbers whose base-3 representation is the juxtaposition of two identical strings.
+* [A020332](http://oeis.org/A020332) ([L49 program](020/A020332.asm)): Numbers whose base-4 representation is the juxtaposition of two identical strings.
+* [A020333](http://oeis.org/A020333) ([L10 program](020/A020333.asm)): Numbers whose base-5 representation is the juxtaposition of two identical strings.
+* [A020334](http://oeis.org/A020334) ([L10 program](020/A020334.asm)): Numbers whose base-6 representation is the juxtaposition of two identical strings.
+* [A020335](http://oeis.org/A020335) ([L26 program](020/A020335.asm)): Numbers whose base-7 representation is the juxtaposition of two identical strings.
+* [A020336](http://oeis.org/A020336) ([L29 program](020/A020336.asm)): Numbers whose base-8 representation is the juxtaposition of two identical strings.
+* [A020337](http://oeis.org/A020337) ([L39 program](020/A020337.asm)): Numbers whose base-9 representation is the juxtaposition of two identical strings.
 * [A020338](http://oeis.org/A020338) ([L10 program](020/A020338.asm)): Doublets: base-10 representation is the juxtaposition of two identical strings.
 * [A020515](http://oeis.org/A020515) ([L05 program](020/A020515.asm)): a(n) = 4^n - 2^n + 1.
 * [A020522](http://oeis.org/A020522) ([L04 program](020/A020522.asm)): a(n) = 4^n - 2^n.
@@ -2901,7 +2901,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024202](http://oeis.org/A024202) ([L09 program](024/A024202.asm)): a(n) = [ (3rd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+2 odd positive integers}.
 * [A024204](http://oeis.org/A024204) ([L13 program](024/A024204.asm)): [ (3rd elementary symmetric function of S(n))/(2nd elementary symmetric function of S(n)) ], where S(n) = {first n+2 odd positive integers}.
 * [A024206](http://oeis.org/A024206) ([L04 program](024/A024206.asm)): Expansion of x^2*(1+x-x^2)/((1-x^2)*(1-x)^2).
-* [A024212](http://oeis.org/A024212) ([L17 program](024/A024212.asm)): 2nd elementary symmetric function of first n+1 positive integers congruent to 1 mod 3.
+* [A024212](http://oeis.org/A024212) ([L07 program](024/A024212.asm)): 2nd elementary symmetric function of first n+1 positive integers congruent to 1 mod 3.
 * [A024215](http://oeis.org/A024215) ([L11 program](024/A024215.asm)): Sum of squares of first n positive integers congruent to 1 mod 3.
 * [A024219](http://oeis.org/A024219) ([L12 program](024/A024219.asm)): a(n) = floor( (2nd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ), where S(n) = {first n+1 positive integers congruent to 1 mod 3}.
 * [A024220](http://oeis.org/A024220) ([L40 program](024/A024220.asm)): a(n) = [ (3rd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+2 positive integers congruent to 1 mod 3}.
@@ -2915,7 +2915,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024381](http://oeis.org/A024381) ([L11 program](024/A024381.asm)): a(n) = sum of squares of first n positive integers congruent to 1 mod 4.
 * [A024385](http://oeis.org/A024385) ([L09 program](024/A024385.asm)): a(n) = [ (2nd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+1 positive integers congruent to 1 mod 4}.
 * [A024386](http://oeis.org/A024386) ([L29 program](024/A024386.asm)): [ (3rd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+2 positive integers congruent to 1 mod 4}.
-* [A024391](http://oeis.org/A024391) ([L19 program](024/A024391.asm)): 2nd elementary symmetric function of the first n+1 positive integers congruent to 2 mod 3.
+* [A024391](http://oeis.org/A024391) ([L07 program](024/A024391.asm)): 2nd elementary symmetric function of the first n+1 positive integers congruent to 2 mod 3.
 * [A024394](http://oeis.org/A024394) ([L19 program](024/A024394.asm)): a(n) is the sum of squares of the first n positive integers congruent to 2 mod 3.
 * [A024398](http://oeis.org/A024398) ([L06 program](024/A024398.asm)): a(n) = [ (2nd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+1 positive integers congruent to 2 mod 3}.
 * [A024399](http://oeis.org/A024399) ([L40 program](024/A024399.asm)): a(n) = [ (3rd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+2 positive integers congruent to 2 mod 3}.
@@ -2974,7 +2974,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025700](http://oeis.org/A025700) ([L14 program](025/A025700.asm)): Index of 3^n within sequence of numbers of form 3^i*10^j.
 * [A025701](http://oeis.org/A025701) ([L42 program](025/A025701.asm)): Index of 4^n within sequence of numbers of form 3^i*4^j.
 * [A025704](http://oeis.org/A025704) ([L42 program](025/A025704.asm)): Index of 4^n within sequence of numbers of form 4^i*7^j.
-* [A025705](http://oeis.org/A025705) ([L11 program](025/A025705.asm)): Index of 4^n within sequence of numbers of form 4^i*10^j.
+* [A025705](http://oeis.org/A025705) ([L10 program](025/A025705.asm)): Index of 4^n within sequence of numbers of form 4^i*10^j.
 * [A025709](http://oeis.org/A025709) ([L24 program](025/A025709.asm)): Index of 5^n within sequence of numbers of form 5^i*8^j.
 * [A025710](http://oeis.org/A025710) ([L20 program](025/A025710.asm)): Index of 5^n within sequence of numbers of form 5^i*9^j.
 * [A025711](http://oeis.org/A025711) ([L17 program](025/A025711.asm)): Index of 5^n within sequence of numbers of form 5^i*10^j.
@@ -3058,7 +3058,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025827](http://oeis.org/A025827) ([L27 program](025/A025827.asm)): Expansion of 1/((1-x^2)(1-x^11)(1-x^12)).
 * [A025828](http://oeis.org/A025828) ([L03 program](025/A025828.asm)): Expansion of 1/((1-x^3)(1-x^4)(1-x^6)).
 * [A025834](http://oeis.org/A025834) ([L05 program](025/A025834.asm)): Expansion of 1/((1-x^3)(1-x^4)(1-x^12)).
-* [A026035](http://oeis.org/A026035) ([L13 program](026/A026035.asm)): Expansion of x^2*(2 - x + x^2) / ((1 + x)*(1 - x)^4).
+* [A026035](http://oeis.org/A026035) ([L06 program](026/A026035.asm)): Expansion of x^2*(2 - x + x^2) / ((1 + x)*(1 - x)^4).
 * [A026036](http://oeis.org/A026036) ([L24 program](026/A026036.asm)): (d(n)-r(n))/5, where d = A006527 and r is the periodic sequence with fundamental period (4,1,4,0,1).
 * [A026037](http://oeis.org/A026037) ([L07 program](026/A026037.asm)): a(n) = dot_product(1,2,...,n)*(3,4,...,n,1,2).
 * [A026038](http://oeis.org/A026038) ([L37 program](026/A026038.asm)): a(n) = (d(n)-r(n))/2, where d = A026037 and r is the periodic sequence with fundamental period (1,0,0,1).
@@ -3179,7 +3179,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027013](http://oeis.org/A027013) ([L07 program](027/A027013.asm)): a(n) = T(2*n, n+2), T given by A027011.
 * [A027016](http://oeis.org/A027016) ([L04 program](027/A027016.asm)): T(2n+1,n+1), T given by A027011.
 * [A027024](http://oeis.org/A027024) ([L16 program](027/A027024.asm)): a(n) = T(n,n+2), T given by A027023.
-* [A027053](http://oeis.org/A027053) ([L04 program](027/A027053.asm)): a(n) = T(n,n+2), T given by A027052.
+* [A027053](http://oeis.org/A027053) ([L05 program](027/A027053.asm)): a(n) = T(n,n+2), T given by A027052.
 * [A027054](http://oeis.org/A027054) ([L09 program](027/A027054.asm)): a(n) = T(n, n+3), T given by A027052.
 * [A027083](http://oeis.org/A027083) ([L03 program](027/A027083.asm)): a(n) = A027082(n, n+2)
 * [A027084](http://oeis.org/A027084) ([L13 program](027/A027084.asm)): G.f.: x^2*(x^2 + x + 1)/(x^4 - 2*x + 1).
@@ -3602,15 +3602,15 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032925](http://oeis.org/A032925) ([L20 program](032/A032925.asm)): Numbers whose set of base 4 digits is {1,2}.
 * [A032929](http://oeis.org/A032929) ([L19 program](032/A032929.asm)): Numbers whose set of base 8 digits is {1,2}.
 * [A032936](http://oeis.org/A032936) ([L22 program](032/A032936.asm)): Numbers whose set of base 16 digits is {1,2}.
-* [A032943](http://oeis.org/A032943) ([L41 program](032/A032943.asm)): Numbers n such that base 8 representation Sum{d(i)*8^(m-i): i=0,1,...,m} has d(i)=0 for all odd i.
-* [A032960](http://oeis.org/A032960) ([L23 program](032/A032960.asm)): Numbers n such that base 10 representation Sum_{i=0..m} d(i)*10^(m-i) has even d(i) for all odd i.
-* [A032961](http://oeis.org/A032961) ([L09 program](032/A032961.asm)): Numbers n such that base 11 representation Sum_{i=0..m} d(i)*11^(m-i) has even d(i) for all odd i.
-* [A032962](http://oeis.org/A032962) ([L04 program](032/A032962.asm)): Numbers n such that base 12 representation Sum_{i=0..m} d(i)*12^(m-i) has even d(i) for all odd i.
-* [A032963](http://oeis.org/A032963) ([L15 program](032/A032963.asm)): Numbers n such that base 13 representation Sum_{i=0..m} d(i)*13^(m-i) has even d(i) for all odd i.
-* [A032964](http://oeis.org/A032964) ([L04 program](032/A032964.asm)): Numbers n such that base 14 representation Sum_{i=0..m} d(i)*14^(m-i) has even d(i) for all odd i.
-* [A032965](http://oeis.org/A032965) ([L11 program](032/A032965.asm)): Numbers n such that base 15 representation Sum_{i=0..m} d(i)*15^(m-i) has even d(i) for all odd i.
-* [A032966](http://oeis.org/A032966) ([L04 program](032/A032966.asm)): Numbers n such that base 16 representation Sum_{i=0..m} d(i)*16^(m-i) has even d(i) for all odd i.
-* [A032973](http://oeis.org/A032973) ([L07 program](032/A032973.asm)): Numbers n with property that all pairs of consecutive digits differ by more than 1.
+* [A032943](http://oeis.org/A032943) ([L41 program](032/A032943.asm)): Numbers whose base-8 representation Sum_{i=0..m} d(i)*8^(m-i) has d(i)=0 for all odd i.
+* [A032960](http://oeis.org/A032960) ([L23 program](032/A032960.asm)): Numbers whose base-10 representation Sum_{i=0..m} d(i)*10^(m-i) has even d(i) for all odd i.
+* [A032961](http://oeis.org/A032961) ([L09 program](032/A032961.asm)): Numbers whose base-11 representation Sum_{i=0..m} d(i)*11^(m-i) has even d(i) for all odd i.
+* [A032962](http://oeis.org/A032962) ([L04 program](032/A032962.asm)): Numbers whose base-12 representation Sum_{i=0..m} d(i)*12^(m-i) has even d(i) for all odd i.
+* [A032963](http://oeis.org/A032963) ([L15 program](032/A032963.asm)): Numbers whose base-13 representation Sum_{i=0..m} d(i)*13^(m-i) has even d(i) for all odd i.
+* [A032964](http://oeis.org/A032964) ([L04 program](032/A032964.asm)): Numbers whose base-14 representation Sum_{i=0..m} d(i)*14^(m-i) has even d(i) for all odd i.
+* [A032965](http://oeis.org/A032965) ([L11 program](032/A032965.asm)): Numbers whose base-15 representation Sum_{i=0..m} d(i)*15^(m-i) has even d(i) for all odd i.
+* [A032966](http://oeis.org/A032966) ([L04 program](032/A032966.asm)): Numbers whose base-16 representation Sum_{i=0..m} d(i)*16^(m-i) has even d(i) for all odd i.
+* [A032973](http://oeis.org/A032973) ([L07 program](032/A032973.asm)): Numbers with the property that all pairs of consecutive digits differ by more than 1.
 * [A033037](http://oeis.org/A033037) ([L10 program](033/A033037.asm)): Numbers all of whose base 12 digits are odd.
 * [A033040](http://oeis.org/A033040) ([L26 program](033/A033040.asm)): Numbers all of whose base 15 digits are odd.
 * [A033041](http://oeis.org/A033041) ([L10 program](033/A033041.asm)): Numbers all of whose base 16 digits are odd.
@@ -3632,11 +3632,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033121](http://oeis.org/A033121) ([L17 program](033/A033121.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,1.
 * [A033122](http://oeis.org/A033122) ([L04 program](033/A033122.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,1.
 * [A033123](http://oeis.org/A033123) ([L13 program](033/A033123.asm)): Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,1.
+* [A033124](http://oeis.org/A033124) ([L05 program](033/A033124.asm)): Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,1.
 * [A033129](http://oeis.org/A033129) ([L04 program](033/A033129.asm)): Base 2 digits are, in order, the first n terms of the periodic sequence with initial period [1,1,0].
 * [A033130](http://oeis.org/A033130) ([L13 program](033/A033130.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
 * [A033131](http://oeis.org/A033131) ([L04 program](033/A033131.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
 * [A033132](http://oeis.org/A033132) ([L15 program](033/A033132.asm)): Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
-* [A033133](http://oeis.org/A033133) ([L07 program](033/A033133.asm)): Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
+* [A033133](http://oeis.org/A033133) ([L04 program](033/A033133.asm)): Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
 * [A033138](http://oeis.org/A033138) ([L04 program](033/A033138.asm)): a(n) = floor(2^(n+2)/7).
 * [A033139](http://oeis.org/A033139) ([L07 program](033/A033139.asm)): Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,0.
 * [A033140](http://oeis.org/A033140) ([L04 program](033/A033140.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,0.
@@ -4090,10 +4091,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037496](http://oeis.org/A037496) ([L13 program](037/A037496.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,2.
 * [A037497](http://oeis.org/A037497) ([L04 program](037/A037497.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,2.
 * [A037498](http://oeis.org/A037498) ([L13 program](037/A037498.asm)): Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,2.
+* [A037499](http://oeis.org/A037499) ([L04 program](037/A037499.asm)): Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,2.
 * [A037504](http://oeis.org/A037504) ([L10 program](037/A037504.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,0.
 * [A037505](http://oeis.org/A037505) ([L04 program](037/A037505.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,0.
 * [A037506](http://oeis.org/A037506) ([L15 program](037/A037506.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,0.
-* [A037507](http://oeis.org/A037507) ([L07 program](037/A037507.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,0.
+* [A037507](http://oeis.org/A037507) ([L04 program](037/A037507.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,0.
 * [A037512](http://oeis.org/A037512) ([L10 program](037/A037512.asm)): Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,1.
 * [A037513](http://oeis.org/A037513) ([L04 program](037/A037513.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,1.
 * [A037520](http://oeis.org/A037520) ([L10 program](037/A037520.asm)): Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,0.
@@ -4103,13 +4105,15 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037528](http://oeis.org/A037528) ([L10 program](037/A037528.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,2.
 * [A037529](http://oeis.org/A037529) ([L04 program](037/A037529.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,2.
 * [A037530](http://oeis.org/A037530) ([L12 program](037/A037530.asm)): Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,2.
+* [A037531](http://oeis.org/A037531) ([L04 program](037/A037531.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,2.
 * [A037536](http://oeis.org/A037536) ([L10 program](037/A037536.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
 * [A037537](http://oeis.org/A037537) ([L04 program](037/A037537.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
 * [A037538](http://oeis.org/A037538) ([L10 program](037/A037538.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
-* [A037539](http://oeis.org/A037539) ([L13 program](037/A037539.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
+* [A037539](http://oeis.org/A037539) ([L05 program](037/A037539.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
 * [A037544](http://oeis.org/A037544) ([L10 program](037/A037544.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,2.
 * [A037545](http://oeis.org/A037545) ([L04 program](037/A037545.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,2.
 * [A037546](http://oeis.org/A037546) ([L11 program](037/A037546.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,2.
+* [A037547](http://oeis.org/A037547) ([L04 program](037/A037547.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,2.
 * [A037552](http://oeis.org/A037552) ([L10 program](037/A037552.asm)): Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,1.
 * [A037553](http://oeis.org/A037553) ([L10 program](037/A037553.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,1.
 * [A037554](http://oeis.org/A037554) ([L13 program](037/A037554.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,1.
@@ -4118,6 +4122,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037568](http://oeis.org/A037568) ([L10 program](037/A037568.asm)): Base 3 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,2.
 * [A037569](http://oeis.org/A037569) ([L10 program](037/A037569.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,2.
 * [A037570](http://oeis.org/A037570) ([L13 program](037/A037570.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,2.
+* [A037571](http://oeis.org/A037571) ([L04 program](037/A037571.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,2.
 * [A037576](http://oeis.org/A037576) ([L04 program](037/A037576.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
 * [A037577](http://oeis.org/A037577) ([L04 program](037/A037577.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
 * [A037578](http://oeis.org/A037578) ([L11 program](037/A037578.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,3.
@@ -4129,25 +4134,30 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037592](http://oeis.org/A037592) ([L04 program](037/A037592.asm)): Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,3.
 * [A037597](http://oeis.org/A037597) ([L04 program](037/A037597.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,0.
 * [A037598](http://oeis.org/A037598) ([L15 program](037/A037598.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,0.
-* [A037599](http://oeis.org/A037599) ([L07 program](037/A037599.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,0.
+* [A037599](http://oeis.org/A037599) ([L04 program](037/A037599.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,0.
 * [A037604](http://oeis.org/A037604) ([L04 program](037/A037604.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,3.
 * [A037605](http://oeis.org/A037605) ([L12 program](037/A037605.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,3.
+* [A037606](http://oeis.org/A037606) ([L04 program](037/A037606.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,3.
 * [A037611](http://oeis.org/A037611) ([L04 program](037/A037611.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,2.
 * [A037612](http://oeis.org/A037612) ([L10 program](037/A037612.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,2.
-* [A037613](http://oeis.org/A037613) ([L12 program](037/A037613.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,2.
+* [A037613](http://oeis.org/A037613) ([L04 program](037/A037613.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,2.
 * [A037618](http://oeis.org/A037618) ([L04 program](037/A037618.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,3.
+* [A037620](http://oeis.org/A037620) ([L04 program](037/A037620.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,3.
 * [A037625](http://oeis.org/A037625) ([L10 program](037/A037625.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,0.
-* [A037626](http://oeis.org/A037626) ([L13 program](037/A037626.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,0.
-* [A037627](http://oeis.org/A037627) ([L06 program](037/A037627.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,0.
+* [A037626](http://oeis.org/A037626) ([L04 program](037/A037626.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,0.
+* [A037627](http://oeis.org/A037627) ([L04 program](037/A037627.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,0.
 * [A037632](http://oeis.org/A037632) ([L04 program](037/A037632.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,3.
-* [A037634](http://oeis.org/A037634) ([L07 program](037/A037634.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,3.
+* [A037634](http://oeis.org/A037634) ([L04 program](037/A037634.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,3.
 * [A037639](http://oeis.org/A037639) ([L04 program](037/A037639.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1.
-* [A037641](http://oeis.org/A037641) ([L13 program](037/A037641.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1.
+* [A037641](http://oeis.org/A037641) ([L04 program](037/A037641.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1.
 * [A037646](http://oeis.org/A037646) ([L04 program](037/A037646.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,0,1.
 * [A037653](http://oeis.org/A037653) ([L10 program](037/A037653.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,0,2.
+* [A037655](http://oeis.org/A037655) ([L04 program](037/A037655.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 3,0,2.
 * [A037660](http://oeis.org/A037660) ([L10 program](037/A037660.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,1,0.
 * [A037661](http://oeis.org/A037661) ([L04 program](037/A037661.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 3,1,0.
+* [A037662](http://oeis.org/A037662) ([L04 program](037/A037662.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 3,1,0.
 * [A037667](http://oeis.org/A037667) ([L04 program](037/A037667.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,2,0.
+* [A037669](http://oeis.org/A037669) ([L04 program](037/A037669.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 3,2,0.
 * [A037674](http://oeis.org/A037674) ([L04 program](037/A037674.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,2,3.
 * [A037709](http://oeis.org/A037709) ([L04 program](037/A037709.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,2,0.
 * [A037716](http://oeis.org/A037716) ([L04 program](037/A037716.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,1,3.
@@ -4162,7 +4172,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037824](http://oeis.org/A037824) ([L07 program](037/A037824.asm)): Number of i such that d(i)>d(i-1), where Sum{d(i)*9^i: i=0,1,....,m} is base 9 representation of n.
 * [A037825](http://oeis.org/A037825) ([L20 program](037/A037825.asm)): Number of i such that d(i)>d(i-1), where Sum{d(i)*10^i: i=0,1,....,m} is base 10 representation of n.
 * [A037833](http://oeis.org/A037833) ([L09 program](037/A037833.asm)): Number of i such that d(i)>=d(i-1), where Sum{d(i)*10^i: i=0,1,...,m} is base 10 representation of n.
-* [A037834](http://oeis.org/A037834) ([L35 program](037/A037834.asm)): Sum{|d(i)-d(i-1)|: i=1,...,m}, where Sum{d(i)*2^i: i=0,1,...,m} is base 2 representation of n.
+* [A037834](http://oeis.org/A037834) ([L04 program](037/A037834.asm)): Sum{|d(i)-d(i-1)|: i=1,...,m}, where Sum{d(i)*2^i: i=0,1,...,m} is base 2 representation of n.
 * [A037852](http://oeis.org/A037852) ([L08 program](037/A037852.asm)): Number of normal subgroups of dihedral group with 2n elements.
 * [A037878](http://oeis.org/A037878) ([L11 program](037/A037878.asm)): (1/2)*Sum{|d(i)-e(i)|}, where Sum{d(i)*10^i} is base 10 representation of n and e(i) are digits d(i) in nonincreasing order, for i=0,1,...,m.
 * [A037887](http://oeis.org/A037887) ([L09 program](037/A037887.asm)): a(n)=(1/2)*Sum{|d(i)-e(i)|} where Sum{d(i)*10^i) is the base 10 representation of n and e(i) are the digits d(i) in nondecreasing order.
@@ -5249,7 +5259,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048329](http://oeis.org/A048329) ([L16 program](048/A048329.asm)): a(n) in base 4 is a repdigit.
 * [A048395](http://oeis.org/A048395) ([L06 program](048/A048395.asm)): Sum of consecutive nonsquares.
 * [A048396](http://oeis.org/A048396) ([L61 program](048/A048396.asm)): Sums of consecutive noncubes.
-* [A048460](http://oeis.org/A048460) ([L06 program](048/A048460.asm)): Total of odd numbers in the generations from 2 onwards.
+* [A048460](http://oeis.org/A048460) ([L04 program](048/A048460.asm)): Total of odd numbers in the generations from 2 onwards.
 * [A048467](http://oeis.org/A048467) ([L08 program](048/A048467.asm)): a(n) = T(6,n), array T given by A047858.
 * [A048468](http://oeis.org/A048468) ([L08 program](048/A048468.asm)): a(n) = T(7,n), array T given by A047858.
 * [A048469](http://oeis.org/A048469) ([L08 program](048/A048469.asm)): a(n) = T(8,n), array T given by A047858.
@@ -5379,7 +5389,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049598](http://oeis.org/A049598) ([L03 program](049/A049598.asm)): 12 times triangular numbers.
 * [A049610](http://oeis.org/A049610) ([L04 program](049/A049610.asm)): a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3)).
 * [A049611](http://oeis.org/A049611) ([L12 program](049/A049611.asm)): a(n) = T(n,2), array T as in A049600.
-* [A049613](http://oeis.org/A049613) ([L08 program](049/A049613.asm)): a(n) = 2n - (largest prime < 2n-2).
+* [A049613](http://oeis.org/A049613) ([L07 program](049/A049613.asm)): a(n) = 2n - (largest prime < 2n-2).
 * [A049624](http://oeis.org/A049624) ([L04 program](049/A049624.asm)): Essentially the same as A032766.
 * [A049625](http://oeis.org/A049625) ([L14 program](049/A049625.asm)): Congruent to 1, 2, 4, 6, 8 or 9 mod 11, but with 2 instead of 1.
 * [A049626](http://oeis.org/A049626) ([L60 program](049/A049626.asm)): a(n)=T(n,4), array T as in A049615.
@@ -5388,10 +5398,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049638](http://oeis.org/A049638) ([L22 program](049/A049638.asm)): a(n)=T(n,4), array T as in A049627.
 * [A049651](http://oeis.org/A049651) ([L10 program](049/A049651.asm)): a(n) = (F(3*n+1) - 1)/2, where F=A000045 (the Fibonacci sequence).
 * [A049652](http://oeis.org/A049652) ([L09 program](049/A049652.asm)): a(n) = (F(3*n+2) - 1)/4, where F=A000045 (the Fibonacci sequence).
-* [A049653](http://oeis.org/A049653) ([L08 program](049/A049653.asm)): a(n) = 2*n - prevprime(2*n).
+* [A049653](http://oeis.org/A049653) ([L06 program](049/A049653.asm)): a(n) = 2*n - prevprime(2*n).
 * [A049684](http://oeis.org/A049684) ([L12 program](049/A049684.asm)): a(n) = Fibonacci(2n)^2.
 * [A049711](http://oeis.org/A049711) ([L03 program](049/A049711.asm)): a(n) = n - prevprime(n).
-* [A049716](http://oeis.org/A049716) ([L04 program](049/A049716.asm)): a(n) = 2*n + 1 - prevprime(2*n + 1).
+* [A049716](http://oeis.org/A049716) ([L03 program](049/A049716.asm)): a(n) = 2*n + 1 - prevprime(2*n + 1).
 * [A049766](http://oeis.org/A049766) ([L11 program](049/A049766.asm)): a(n) = Sum_{k=1..n} T(n,k), array T as in A049765.
 * [A049773](http://oeis.org/A049773) ([L18 program](049/A049773.asm)): Triangular array T read by rows: if row n is r(1),...,r(m), then row n+1 is 2r(1)-1,...,2r(m)-1,2r(1),...,2r(m).
 * [A049775](http://oeis.org/A049775) ([L08 program](049/A049775.asm)): a(n) is the sum of all integers from 2^(n-2)+1 to 2^(n-1).

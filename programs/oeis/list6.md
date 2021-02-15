@@ -309,7 +309,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305559](http://oeis.org/A305559) ([L15 program](305/A305559.asm)): [0, -1, -1] together with A000290.
 * [A305716](http://oeis.org/A305716) ([L43 program](305/A305716.asm)): Order of rowmotion on the divisor lattice for n.
 * [A305750](http://oeis.org/A305750) ([L21 program](305/A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
-* [A305753](http://oeis.org/A305753) ([L11 program](305/A305753.asm)): A base 3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
+* [A305753](http://oeis.org/A305753) ([L11 program](305/A305753.asm)): A base-3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
 * [A305801](http://oeis.org/A305801) ([L09 program](305/A305801.asm)): Filter sequence for a(odd prime) = constant sequences.
 * [A305859](http://oeis.org/A305859) ([L07 program](305/A305859.asm)): Numbers that are congruent to {1, 3, 11} mod 12.
 * [A305861](http://oeis.org/A305861) ([L12 program](305/A305861.asm)): a(n) = 32*3^n - 2^(n+5) + 5.
@@ -383,7 +383,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308136](http://oeis.org/A308136) ([L17 program](308/A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
 * [A308137](http://oeis.org/A308137) ([L19 program](308/A308137.asm)): Number of (undirected) Hamiltonian paths on the n-prism graph.
 * [A308187](http://oeis.org/A308187) ([L03 program](308/A308187.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {0,1}.
-* [A308188](http://oeis.org/A308188) ([L04 program](308/A308188.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {1,2}.
+* [A308188](http://oeis.org/A308188) ([L03 program](308/A308188.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {1,2}.
 * [A308196](http://oeis.org/A308196) ([L07 program](308/A308196.asm)): Partial sums of A063808.
 * [A308215](http://oeis.org/A308215) ([L12 program](308/A308215.asm)): a(n) is the multiplicative inverse of A001844(n+1) modulo A001844(n); where A001844 is the sequence of centered square numbers.
 * [A308217](http://oeis.org/A308217) ([L23 program](308/A308217.asm)): a(n) is the multiplicative inverse of A001844(n) modulo A001844(n+1); where A001844 is the sequence of centered square numbers.
@@ -974,7 +974,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318624](http://oeis.org/A318624) ([L44 program](318/A318624.asm)): Number of 3-member subsets of [3*n] whose elements sum to a multiple of n.
 * [A318666](http://oeis.org/A318666) ([L20 program](318/A318666.asm)): a(n) = 2^{the 3-adic valuation of n}.
 * [A318755](http://oeis.org/A318755) ([L12 program](318/A318755.asm)): a(n) = Sum_{k=1..n} tau(k)^3, where tau is A000005.
-* [A318765](http://oeis.org/A318765) ([L07 program](318/A318765.asm)): a(n) = (n + 2)*(n^2 + n - 1).
+* [A318765](http://oeis.org/A318765) ([L06 program](318/A318765.asm)): a(n) = (n + 2)*(n^2 + n - 1).
 * [A318791](http://oeis.org/A318791) ([L08 program](318/A318791.asm)): Prime generating polynomial: a(n) = 9*n^2 - 249*n + 1763.
 * [A318919](http://oeis.org/A318919) ([L16 program](318/A318919.asm)): Define b(0)=0, b(1)[1]=1, b(1)[2]=1; and for n>=2, b(n)[1] = total number of digits in b(n-1), and b(n)[2] = total number of digits in b(0),...,b(n-1); a(n) = b(n)[2].
 * [A318930](http://oeis.org/A318930) ([L23 program](318/A318930.asm)): RUNS transform of A279620.
@@ -1110,7 +1110,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322593](http://oeis.org/A322593) ([L07 program](322/A322593.asm)): a(n) = 2^n + 2*n^2 + 1.
 * [A322594](http://oeis.org/A322594) ([L09 program](322/A322594.asm)): a(n) = (4*n^3 + 12*n^2 - 4*n + 3)/3.
 * [A322595](http://oeis.org/A322595) ([L08 program](322/A322595.asm)): a(n) = (n^3 + 9*n + 14*n + 9)/3.
-* [A322597](http://oeis.org/A322597) ([L11 program](322/A322597.asm)): a(n) = (4*n^3 - 6*n^2 + 20*n + 3)/3.
+* [A322597](http://oeis.org/A322597) ([L10 program](322/A322597.asm)): a(n) = (4*n^3 - 6*n^2 + 20*n + 3)/3.
 * [A322598](http://oeis.org/A322598) ([L26 program](322/A322598.asm)): a(n) is the number of unlabeled rank-3 graded lattices with 3 coatoms and n atoms.
 * [A322675](http://oeis.org/A322675) ([L07 program](322/A322675.asm)): a(n) = n * (4*n + 3)^2.
 * [A322677](http://oeis.org/A322677) ([L07 program](322/A322677.asm)): a(n) = 16 * n * (n+1) * (2*n+1)^2.
@@ -1171,7 +1171,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324469](http://oeis.org/A324469) ([L09 program](324/A324469.asm)): Exponent of highest power of 3 that divides multinomial(4*n;n,n,n,n).
 * [A324471](http://oeis.org/A324471) ([L03 program](324/A324471.asm)): a(n) = 10 mod n.
 * [A324472](http://oeis.org/A324472) ([L03 program](324/A324472.asm)): a(n) = 1000 mod n.
-* [A324487](http://oeis.org/A324487) ([L06 program](324/A324487.asm)): a(n) = A001350(n)^3.
+* [A324487](http://oeis.org/A324487) ([L04 program](324/A324487.asm)): a(n) = A001350(n)^3.
 * [A324560](http://oeis.org/A324560) ([L09 program](324/A324560.asm)): Numbers > 1 where the minimum prime index is less than or equal to the number of prime factors counted with multiplicity.
 * [A324772](http://oeis.org/A324772) ([L03 program](324/A324772.asm)): The "Octanacci" sequence: Trajectory of 0 under the morphism 0->{0,1,0}, 1->{0}.
 * [A324908](http://oeis.org/A324908) ([L09 program](324/A324908.asm)): a(n) = 1 if n is an odd number which is not a square, 0 otherwise.
@@ -1242,7 +1242,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327706](http://oeis.org/A327706) ([L07 program](327/A327706.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 6 parts can be obtained by coalescing the parts of lambda.
 * [A327707](http://oeis.org/A327707) ([L07 program](327/A327707.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 7 parts can be obtained by coalescing the parts of lambda.
 * [A327708](http://oeis.org/A327708) ([L08 program](327/A327708.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 8 parts can be obtained by coalescing the parts of lambda.
-* [A327721](http://oeis.org/A327721) ([L12 program](327/A327721.asm)): Dimension of quantum lens space needed for non-uniqueness.
+* [A327721](http://oeis.org/A327721) ([L06 program](327/A327721.asm)): Dimension of quantum lens space needed for non-uniqueness.
 * [A327767](http://oeis.org/A327767) ([L03 program](327/A327767.asm)): Period 2: repeat [1, -2].
 * [A327896](http://oeis.org/A327896) ([L20 program](327/A327896.asm)): a(n) is the minimum number of tiles needed for constructing a polyiamond with n holes.
 * [A327998](http://oeis.org/A327998) ([L03 program](327/A327998.asm)): a(n) = (n!/floor(n/2)!^2)^2.
@@ -1540,7 +1540,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335927](http://oeis.org/A335927) ([L74 program](335/A335927.asm)): a(n+1) = Sum_{k=1..n} (a(k) + k*(n-k)), with a(1)=1.
 * [A335956](http://oeis.org/A335956) ([L05 program](335/A335956.asm)): a(n) = (2^n - 1)*2^valuation(n, 2) for n > 0 and a(0) = 0.
 * [A335979](http://oeis.org/A335979) ([L03 program](335/A335979.asm)): Number of partitions of n into exactly two parts with no decimal carries.
-* [A336040](http://oeis.org/A336040) ([L09 program](336/A336040.asm)): Characteristic function of refactorable numbers (A033950).
+* [A336040](http://oeis.org/A336040) ([L03 program](336/A336040.asm)): Characteristic function of refactorable numbers (A033950).
 * [A336102](http://oeis.org/A336102) ([L12 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
 * [A336109](http://oeis.org/A336109) ([L38 program](336/A336109.asm)): First column of dispersion array A120861.
 * [A336288](http://oeis.org/A336288) ([L08 program](336/A336288.asm)): Numbers of squares formed by this procedure on n-th step: Step 1, draw a unit square. Step n, draw a unit square with center in every intersection of lines of the figure in step n-1.
