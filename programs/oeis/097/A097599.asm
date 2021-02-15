@@ -1,7 +1,13 @@
 ; A097599: Differences between A097598 and A047842.
 ; 0,0,0,0,0,0,0,0,0,0,0,0,99,198,297,396,495,594,693,792,0,0,0,99,198,297,396,495,594,693,0
 
-sub $0,1
-cal $0,37887 ; a(n)=(1/2)*Sum{|d(i)-e(i)|} where Sum{d(i)*10^i) is the base 10 representation of n and e(i) are the digits d(i) in nondecreasing order.
-mov $1,$0
+lpb $0,1
+  mov $1,$3
+  mod $1,10
+  trn $1,$0
+  add $4,$0
+  div $0,10
+  add $2,$4
+  mov $3,$2
+lpe
 mul $1,99

@@ -3,10 +3,4 @@
 
 cal $0,99375 ; Sequence matrix for odd numbers.
 mod $0,3
-add $0,2
 mov $1,$0
-add $1,2
-mov $0,$1
-sub $0,1
-mov $1,$0
-sub $1,3
