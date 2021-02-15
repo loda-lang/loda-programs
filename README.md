@@ -68,7 +68,7 @@ Generate a random LODA program and print it. Multiple generators are supported a
 
 #### mine
 
-Mine programs for OEIS integer sequences. It generates programs in a loop and tries to match them to sequencens. If a match was found, an alert is printed and the program is automatically saved to the [programs/oeis](programs/oeis) folder. By default, existing programs for sequences are not overwritten, but if you specify the `-x` option, programs are updated if they are faster. This refers to the number of execution steps needed to calculate the sequence. 
+Mine programs for OEIS integer sequences. It generates programs in a loop and tries to match them to sequences. If a match was found, an alert is printed and the program is automatically saved to the [programs/oeis](programs/oeis) folder. By default, existing programs for sequences are not overwritten, but if you specify the `-x` option, programs are updated if they are faster. This refers to the number of execution steps needed to calculate the sequence. 
 
 LODA is single-threaded and therefore uses one CPU during mining. It supports multiple process instances for parallel mining. You can try the [mine_parallel.sh](mine_parallel.sh) script for this.
 
@@ -78,9 +78,7 @@ You can also configure a Twitter client to get notified when a match was found!
 
 #### maintain
 
-Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder. This checks the correctness of all programs. Incorrect programs are removed and correct programs are minimized based on the first 250 terms of the sequence. In addition, the description of the sequence in the comment of the program is updated to the latest version of the OEIS database.
-
-Warning: when running this command for the first time, a large number of files need to be downloaded. After the first run, only deltas are downloaded.
+Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder. This checks the correctness of all programs. Incorrect programs are removed and correct programs are minimized based on the first 250 terms of the sequence. In addition, the description of the sequence in the comment of the program is updated to the latest version of the OEIS database. The statistics in the [stats](stats) folder and program lists are regenerated. 
 
 #### test
 
@@ -120,7 +118,7 @@ These are the following instructions supported by LODA. In the following, let `a
 
 ### Loops and Calls
 
-The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
+The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynomial) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
 Calling another LODA program is supported using the `cal` operation. This assumes you are evaluating the program as a sequence (see below). It takes two arguments. The first one is the parameter of the called program. The second argument is the number of the OEIS program to be called (see below). The result is stored in the first argument. For example, the operation `cal $2,45` evaluates the program A000045 (Fibonacci numbers) using the argument value in `$2` and overrides it with the result.
 
