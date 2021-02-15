@@ -2229,11 +2229,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291522](http://oeis.org/A291522) ([L07 program](291/A291522.asm)): The arithmetic function uhat(n,4,7).
 * [A291526](http://oeis.org/A291526) ([L08 program](291/A291526.asm)): a(n) = 2^n*(n - 3) + 4.
 * [A291557](http://oeis.org/A291557) ([L05 program](291/A291557.asm)): a(n) = 23*2^n - 1.
-* [A291568](http://oeis.org/A291568) ([L05 program](291/A291568.asm)): The arithmetic function uhat(n,5,5).
-* [A291574](http://oeis.org/A291574) ([L05 program](291/A291574.asm)): The arithmetic function uhat(n,6,6).
-* [A291578](http://oeis.org/A291578) ([L05 program](291/A291578.asm)): The arithmetic function uhat(n,7,7).
+* [A291568](http://oeis.org/A291568) ([L04 program](291/A291568.asm)): The arithmetic function uhat(n,5,5).
+* [A291574](http://oeis.org/A291574) ([L04 program](291/A291574.asm)): The arithmetic function uhat(n,6,6).
+* [A291578](http://oeis.org/A291578) ([L04 program](291/A291578.asm)): The arithmetic function uhat(n,7,7).
 * [A291582](http://oeis.org/A291582) ([L05 program](291/A291582.asm)): Maximum number of 6 sphinx tile shapes in a sphinx tiled hexagon of order n.
-* [A291584](http://oeis.org/A291584) ([L05 program](291/A291584.asm)): The arithmetic function uhat(n,8,8).
+* [A291584](http://oeis.org/A291584) ([L04 program](291/A291584.asm)): The arithmetic function uhat(n,8,8).
 * [A291632](http://oeis.org/A291632) ([L24 program](291/A291632.asm)): Column 1 of A122832.
 * [A291662](http://oeis.org/A291662) ([L07 program](291/A291662.asm)): Number of ordered rooted trees with 2n non-root nodes such that the maximal outdegree equals n.
 * [A291773](http://oeis.org/A291773) ([L13 program](291/A291773.asm)): Domination number of the n-Apollonian network.

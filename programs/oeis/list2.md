@@ -1799,7 +1799,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123357](http://oeis.org/A123357) ([L12 program](123/A123357.asm)): Kekulé numbers for certain benzenoids (see the Cyvin-Gutman book for details).
 * [A123363](http://oeis.org/A123363) ([L07 program](123/A123363.asm)): a(n) = n^3 + (-1)^(n+1).
 * [A123384](http://oeis.org/A123384) ([L11 program](123/A123384.asm)): Number of bits in binary expansion of 10^n.
-* [A123567](http://oeis.org/A123567) ([L18 program](123/A123567.asm)): Recursive sum of 2*Omega(n), where Omega(n) is the sequence A001222.
+* [A123567](http://oeis.org/A123567) ([L05 program](123/A123567.asm)): Recursive sum of 2*Omega(n), where Omega(n) is the sequence A001222.
 * [A123578](http://oeis.org/A123578) ([L04 program](123/A123578.asm)): The Kruskal-Macaulay function M_2(n).
 * [A123596](http://oeis.org/A123596) ([L05 program](123/A123596.asm)): Squares alternating with triangular numbers.
 * [A123620](http://oeis.org/A123620) ([L38 program](123/A123620.asm)): Expansion of (1 + x + x^2) / (1 - 3*x - 3*x^2).
@@ -1981,6 +1981,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127255](http://oeis.org/A127255) ([L08 program](127/A127255.asm)): Partial sums of A127252.
 * [A127261](http://oeis.org/A127261) ([L59 program](127/A127261.asm)): a(0)=2, a(1)=2, a(n) = 2*a(n-1) + 10*a(n-2).
 * [A127262](http://oeis.org/A127262) ([L59 program](127/A127262.asm)): a(0)=2, a(1)=2, a(n) = 2*a(n-1) + 12*a(n-2).
+* [A127267](http://oeis.org/A127267) ([L08 program](127/A127267.asm)): a(n) = floor(n/pi(n)), where pi(n)=A000720(n) is the number of primes <=n.
 * [A127276](http://oeis.org/A127276) ([L12 program](127/A127276.asm)): Hankel transform of A127275.
 * [A127316](http://oeis.org/A127316) ([L04 program](127/A127316.asm)): a(n) = 2*n^2 - 4*n + 73.
 * [A127321](http://oeis.org/A127321) ([L09 program](127/A127321.asm)): First 4-dimensional hyper-tetrahedral coordinate; repeat m C(m+3,4) times; 4-D analog of A056556.
@@ -2621,7 +2622,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132720](http://oeis.org/A132720) ([L09 program](132/A132720.asm)): Sequence is identical to its second differences in absolute values.
 * [A132723](http://oeis.org/A132723) ([L16 program](132/A132723.asm)): Binomial transform of A132429.
 * [A132728](http://oeis.org/A132728) ([L28 program](132/A132728.asm)): Triangle read by rows: row n contains n terms of the sequence 1, 7, 1, 7, ...
-* [A132729](http://oeis.org/A132729) ([L05 program](132/A132729.asm)): 2*A132044 - A000012.
+* [A132729](http://oeis.org/A132729) ([L05 program](132/A132729.asm)): Triangle T(n, k) = 2*binomial(n, k) - 3 with T(n, 0) = T(n, n) = 1, read by rows.
 * [A132730](http://oeis.org/A132730) ([L09 program](132/A132730.asm)): Row sums of triangle A132729.
 * [A132731](http://oeis.org/A132731) ([L06 program](132/A132731.asm)): 2*A007318 + A103451 - 2*A000012.
 * [A132732](http://oeis.org/A132732) ([L13 program](132/A132732.asm)): Row sums of triangle A132731.

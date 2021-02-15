@@ -152,7 +152,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204421](http://oeis.org/A204421) ([L23 program](204/A204421.asm)): Symmetric matrix: f(i,j)=(i+j+2 mod 3), by antidiagonals.
 * [A204423](http://oeis.org/A204423) ([L03 program](204/A204423.asm)): Infinite matrix: f(i,j)=(2i+j mod 3), by antidiagonals.
 * [A204425](http://oeis.org/A204425) ([L08 program](204/A204425.asm)): Infinite matrix: f(i,j)=(2i+j+1 mod 3), by antidiagonals.
-* [A204427](http://oeis.org/A204427) ([L06 program](204/A204427.asm)): Infinite matrix: f(i,j)=(2i+j+2 mod 3), read by antidiagonals.
+* [A204427](http://oeis.org/A204427) ([L03 program](204/A204427.asm)): Infinite matrix: f(i,j)=(2i+j+2 mod 3), read by antidiagonals.
 * [A204429](http://oeis.org/A204429) ([L13 program](204/A204429.asm)): Symmetric matrix: f(i,j)=(2i+j mod 3), by antidiagonals.
 * [A204431](http://oeis.org/A204431) ([L15 program](204/A204431.asm)): Symmetric matrix: f(i,j)=(2i+j+1 mod 3), by antidiagonals.
 * [A204433](http://oeis.org/A204433) ([L16 program](204/A204433.asm)): Symmetric matrix: f(i,j)=(2i+j+2 mod 3), by antidiagonals.
@@ -1409,7 +1409,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228141](http://oeis.org/A228141) ([L06 program](228/A228141.asm)): Numbers that are congruent to {1, 5} mod 20.
 * [A228142](http://oeis.org/A228142) ([L20 program](228/A228142.asm)): Number of blocks in a Steiner system S(2, 5, A228141(n+1)).
 * [A228157](http://oeis.org/A228157) ([L05 program](228/A228157.asm)): Numbers n which are anagrams of n+9.
-* [A228176](http://oeis.org/A228176) ([L07 program](228/A228176.asm)): Floor(n*(sqrt(10)+sqrt(3))).
+* [A228176](http://oeis.org/A228176) ([L05 program](228/A228176.asm)): Floor(n*(sqrt(10)+sqrt(3))).
 * [A228177](http://oeis.org/A228177) ([L08 program](228/A228177.asm)): Floor(n*(sqrt(6)+sqrt(5))).
 * [A228219](http://oeis.org/A228219) ([L06 program](228/A228219.asm)): Number of second differences of arrays of length 4 of numbers in 0..n.
 * [A228220](http://oeis.org/A228220) ([L12 program](228/A228220.asm)): Number of second differences of arrays of length 5 of numbers in 0..n.
@@ -2247,7 +2247,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246443](http://oeis.org/A246443) ([L28 program](246/A246443.asm)): Nonnegative integers k satisfying cos(k)*sin(k+1) > 0.
 * [A246447](http://oeis.org/A246447) ([L16 program](246/A246447.asm)): The odd primes squared plus 1 and the composites squared minus 1.
 * [A246450](http://oeis.org/A246450) ([L29 program](246/A246450.asm)): Nonnegative integers k satisfying sin(k)*cos(k+1) < 0.
-* [A246474](http://oeis.org/A246474) ([L04 program](246/A246474.asm)): Number of length n+3 0..3 arrays with no pair in any consecutive four terms totalling exactly 3.
+* [A246474](http://oeis.org/A246474) ([L05 program](246/A246474.asm)): Number of length n+3 0..3 arrays with no pair in any consecutive four terms totalling exactly 3.
 * [A246500](http://oeis.org/A246500) ([L27 program](246/A246500.asm)): Characteristic function of the prime numbers mod 9 over the set {2,4,8,1,5,7}.
 * [A246552](http://oeis.org/A246552) ([L11 program](246/A246552.asm)): 2-adic valuation of the number of involutions of n (A000085).
 * [A246574](http://oeis.org/A246574) ([L07 program](246/A246574.asm)): a(n) = 2*(n-1)*Catalan(n).
