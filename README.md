@@ -1,12 +1,10 @@
 # LODA: Lexicographical Order Descent Assembly
 
-LODA is an assembly language, a computational model and a tool for mining integer sequences. You can use it to search programs that calculate sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
+LODA is an assembly language, a computational model and a tool for mining integer sequences. You can use it to search (or "mine") programs that calculate sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
 
 The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. All of these programs have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
-To mine programs for integer sequences, LODA automatically downloads files from the [OEIS website](https://oeis.org). You can run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. When using the command-line flag `-x`, existing programs are overriden if the new program is simpler or faster than the existing one.
-
-If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
+If you are interested in integer sequences and programming models, consider [contributing to this project](CONTRIBUTING.md)!!! :eyes:
 
 ## Programs
 
@@ -24,6 +22,8 @@ In total, there are currently more than 25k programs available. You can find lis
 * [A100001-A150000](programs/oeis/list2.md), [A150001-A200000](programs/oeis/list3.md), 
 * [A200001-A250000](programs/oeis/list4.md), [A250001-A300000](programs/oeis/list5.md),
 * [A300001-A350000](programs/oeis/list6.md), [A350001-A400000](programs/oeis/list7.md)
+
+If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
 
 ## Tool
 
@@ -106,7 +106,7 @@ Programs operate on memory consisting of an unbounded sequence of memory cells `
 
 ### Arithmetic Operations
 
-These are the following instructions supported by LODA. In the following, let `a` be a direct or an indirect memory access, and let `b` be a constant, a direct or an indirect memory access.
+The table below summarizes the operations currently supported by LODA. We use the [Intel assembly syntax](https://en.wikipedia.org/wiki/X86_assembly_language), i.e., target before source. In the following, let `a` be a direct or an indirect memory access, and let `b` be a constant, a direct or an indirect memory access.
 
 | Operation | Name           | Description |
 |:---------:|:--------------:|-------------|
@@ -124,14 +124,28 @@ These are the following instructions supported by LODA. In the following, let `a
 | `bin a,b` | Binomial Coefficient | Target over source: `a:=a!/(b!(a-b)!)`|
 | `cmp a,b` | Comparison | Compare target with source value: `a:=(a=b)?1:0` |
 
-### Loops and Calls
+### Loops
 
-The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynomial) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
+The instructions `lpb x,y` ... `lpe` define the beginning and the end of a so-called "lexicographical-order descent loop." The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynomial) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. Since we allow negative integers, we consider the absolute values. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
+
+Below you can find a simple example of a for-loop. It first assigns 1 to the output cell `$1`. Inside the loop, the input cell `$0` is counted down to zero and in every step `$1` is multiplied by 2. Note that this could be also achieved without loops using the `pow` operation.
+
+```asm
+mov $1,1      ; assign $1:=1
+lpb $0,1      ; begin loop on $0
+  mul $1,5    ; multiply $1 with 5
+  sub $0,1    ; decrement $0
+lpe           ; end loop on $0
+```
+
+### Calls
 
 Calling another LODA program is supported using the `cal` operation. This assumes you are evaluating the program as a sequence (see below). It takes two arguments. The first one is the parameter of the called program. The second argument is the number of the OEIS program to be called (see below). The result is stored in the first argument. For example, the operation `cal $2,45` evaluates the program A000045 (Fibonacci numbers) using the argument value in `$2` and overrides it with the result.
 
-__Termination:__ all LODA programs are guaranteed to halt on every input. Recursive calls are not allowed. An infinite loop also cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
+### Termination
+
+All LODA programs are guaranteed to halt on every input. Recursive calls are not allowed. An infinite loop also cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
 
 ### Integer Sequences
 
-Programs can be used to generate integer sequences. A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
+Programs operate on an unbounded set of memory cells. To compute integer sequences, we consider `$0` as the input and `$1` as the output of the program. Thus, a sequence `a(n)` is generated by taking `$0=n` as input and producing the output `a(n)=$1`.
