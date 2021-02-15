@@ -8,9 +8,17 @@ To mine programs for integer sequences, LODA automatically downloads files from 
 
 If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
 
-### Available Programs
+## Programs
 
-Currently, there are currently more than 25k programs available. You can find lists with descriptions and links here:
+The following programs include some classical examples of integer sequences and functions.
+
+* [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
+* [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
+* [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm)
+* [Number of primes <= n, starting at n=0 (A230980)](programs/oeis/230/A230980.asm)
+* [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
+
+In total, there are currently more than 25k programs available. You can find lists with descriptions and links here:
 
 * [A000001-A050000](programs/oeis/list0.md), [A050001-A100000](programs/oeis/list1.md), 
 * [A100001-A150000](programs/oeis/list2.md), [A150001-A200000](programs/oeis/list3.md), 
@@ -127,13 +135,3 @@ __Termination:__ all LODA programs are guaranteed to halt on every input. Recurs
 ### Integer Sequences
 
 Programs can be used to generate integer sequences. A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
-
-### Example Programs
-
-The following programs include some classical examples of integer sequences and functions.
-
-* [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
-* [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
-* [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm)
-* [Number of primes <= n, starting at n=0 (A230980)](programs/oeis/230/A230980.asm)
-* [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
