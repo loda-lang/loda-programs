@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,60462
+  cal $0,60462 ; Integers k such that k! is divisible by k*(k+1)/2.
   lpb $0,1
     pow $0,2
     sub $0,1
