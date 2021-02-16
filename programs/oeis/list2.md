@@ -210,7 +210,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101455](http://oeis.org/A101455) ([L04 program](101/A101455.asm)): a(n) = 0 for even n, a(n) = (-1)^((n-1)/2) for odd n. Periodic sequence 1,0,-1,0,...
 * [A101553](http://oeis.org/A101553) ([L06 program](101/A101553.asm)): A modular recurrence.
 * [A101604](http://oeis.org/A101604) ([L19 program](101/A101604.asm)): a(n) = 2*a(n-1) + 5*a(n-2) + 2*a(n-3).
-* [A101605](http://oeis.org/A101605) ([L09 program](101/A101605.asm)): a(n) = 1 if n is a product of exactly 3 (not necessarily distinct) primes, otherwise 0.
+* [A101605](http://oeis.org/A101605) ([L07 program](101/A101605.asm)): a(n) = 1 if n is a product of exactly 3 (not necessarily distinct) primes, otherwise 0.
 * [A101622](http://oeis.org/A101622) ([L07 program](101/A101622.asm)): A Horadam-Jacobsthal sequence.
 * [A101634](http://oeis.org/A101634) ([L09 program](101/A101634.asm)): Subtract 1, multiply by 1, subtract 2, multiply by 2, etc.
 * [A101637](http://oeis.org/A101637) ([L08 program](101/A101637.asm)): a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
@@ -1300,7 +1300,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A116922](http://oeis.org/A116922) ([L14 program](116/A116922.asm)): a(n) = smallest integer >= n/2 which is coprime to n.
 * [A116939](http://oeis.org/A116939) ([L08 program](116/A116939.asm)): Lexicographically earliest sequence such that each i occurs exactly i+1 times and succeeding terms differ exactly by -1 or +1.
 * [A116940](http://oeis.org/A116940) ([L05 program](116/A116940.asm)): Greatest m such that A116939(m) = n.
-* [A116948](http://oeis.org/A116948) ([L09 program](116/A116948.asm)): Riordan array ((1+2x^2)/(1-x^3),x).
+* [A116948](http://oeis.org/A116948) ([L03 program](116/A116948.asm)): Riordan array ((1+2x^2)/(1-x^3),x).
 * [A116952](http://oeis.org/A116952) ([L05 program](116/A116952.asm)): a(n) = 3*a(n-1) + 5 with a(0) = 1.
 * [A116955](http://oeis.org/A116955) ([L17 program](116/A116955.asm)): a(n+1) = a(n) + (if a(n) is odd then (next odd square) else (next even square)), a(0) = 1.
 * [A116966](http://oeis.org/A116966) ([L05 program](116/A116966.asm)): a(n) = n + {1,2,0,1} according as n == {0,1,2,3} mod 4.
@@ -2531,7 +2531,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131878](http://oeis.org/A131878) ([L30 program](131/A131878.asm)): Row sums of triangle A131876.
 * [A131885](http://oeis.org/A131885) ([L08 program](131/A131885.asm)): a(n) = 4*a(n-1) - 6*a(n-2) + 4*a(n-3) for n >= 4 starting with a(0) = 1, a(1) = 2, a(2) = 4, and a(3) = 6.
 * [A131895](http://oeis.org/A131895) ([L06 program](131/A131895.asm)): a(n) = (n + 2)*(5*n + 1)/2.
-* [A131898](http://oeis.org/A131898) ([L06 program](131/A131898.asm)): a(n) = 2^(n+1)+2*n-1.
+* [A131898](http://oeis.org/A131898) ([L06 program](131/A131898.asm)): a(n) = 2^(n+1) + 2*n - 1.
 * [A131912](http://oeis.org/A131912) ([L04 program](131/A131912.asm)): Row sums of triangle A131911.
 * [A131914](http://oeis.org/A131914) ([L14 program](131/A131914.asm)): 3*A002024 - 2*A051340.
 * [A131922](http://oeis.org/A131922) ([L15 program](131/A131922.asm)): 2*A002024 - A130296.
@@ -2624,9 +2624,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132728](http://oeis.org/A132728) ([L28 program](132/A132728.asm)): Triangle read by rows: row n contains n terms of the sequence 1, 7, 1, 7, ...
 * [A132729](http://oeis.org/A132729) ([L05 program](132/A132729.asm)): Triangle T(n, k) = 2*binomial(n, k) - 3 with T(n, 0) = T(n, n) = 1, read by rows.
 * [A132730](http://oeis.org/A132730) ([L09 program](132/A132730.asm)): Row sums of triangle A132729.
-* [A132731](http://oeis.org/A132731) ([L06 program](132/A132731.asm)): 2*A007318 + A103451 - 2*A000012.
+* [A132731](http://oeis.org/A132731) ([L06 program](132/A132731.asm)): Triangle T(n,k) = 2 * binomial(n,k) - 2 with T(n,0) = T(n,n) = 1, read by rows.
 * [A132732](http://oeis.org/A132732) ([L13 program](132/A132732.asm)): Row sums of triangle A132731.
-* [A132733](http://oeis.org/A132733) ([L07 program](132/A132733.asm)): Triangle read by rows: 2*A132731 - A000012 as infinite lower triangular matrices.
+* [A132733](http://oeis.org/A132733) ([L07 program](132/A132733.asm)): Triangle T(n, k) = 4*binomial(n, k) - 5 with T(n, 0) = T(n, n) = 1, read by rows.
 * [A132734](http://oeis.org/A132734) ([L12 program](132/A132734.asm)): Row sums of triangle A132733.
 * [A132735](http://oeis.org/A132735) ([L07 program](132/A132735.asm)): A007318 + A000012 - A103451.
 * [A132736](http://oeis.org/A132736) ([L04 program](132/A132736.asm)): Row sums of triangle A132735.

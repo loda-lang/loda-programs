@@ -3,8 +3,8 @@
 
 mov $3,$0
 add $0,2
-cal $0,65090
-cal $0,230980
+cal $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+cal $0,230980 ; Number of primes <= n, starting at n=0.
 mov $1,$0
 add $1,3
 mov $2,$3

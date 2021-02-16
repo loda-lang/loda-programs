@@ -414,6 +414,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002802](http://oeis.org/A002802) ([L11 program](002/A002802.asm)): a(n) = (2*n+3)!/(6*n!*(n+1)!).
 * [A002803](http://oeis.org/A002803) ([L07 program](002/A002803.asm)): (2n+4)!/(4!n!(n+1)!).
 * [A002807](http://oeis.org/A002807) ([L10 program](002/A002807.asm)): a(n) = Sum_{k=3..n} (k-1)!*C(n,k)/2.
+* [A002808](http://oeis.org/A002808) ([L07 program](002/A002808.asm)): The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 * [A002815](http://oeis.org/A002815) ([L26 program](002/A002815.asm)): a(n) = n + Sum_{k=1..n} pi(k), where pi() = A000720.
 * [A002817](http://oeis.org/A002817) ([L05 program](002/A002817.asm)): Doubly triangular numbers: a(n) = n*(n+1)*(n^2+n+2)/8.
 * [A002821](http://oeis.org/A002821) ([L07 program](002/A002821.asm)): a(n) = nearest integer to n^(3/2).
@@ -1082,7 +1083,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008402](http://oeis.org/A008402) ([L68 program](008/A008402.asm)): Crystal ball sequence for {E_6}* lattice.
 * [A008412](http://oeis.org/A008412) ([L11 program](008/A008412.asm)): Coordination sequence for 4-dimensional cubic lattice (points on surface of 4-dimensional cross-polytope).
 * [A008413](http://oeis.org/A008413) ([L12 program](008/A008413.asm)): Coordination sequence for 5-dimensional cubic lattice.
-* [A008438](http://oeis.org/A008438) ([L03 program](008/A008438.asm)): Sum of divisors of 2n + 1.
+* [A008438](http://oeis.org/A008438) ([L03 program](008/A008438.asm)): Sum of divisors of 2*n + 1.
 * [A008454](http://oeis.org/A008454) ([L02 program](008/A008454.asm)): Tenth powers: a(n) = n^10.
 * [A008455](http://oeis.org/A008455) ([L02 program](008/A008455.asm)): 11th powers: a(n) = n^11.
 * [A008458](http://oeis.org/A008458) ([L03 program](008/A008458.asm)): Coordination sequence for hexagonal lattice.

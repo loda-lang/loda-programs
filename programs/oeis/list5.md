@@ -2022,7 +2022,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A287866](http://oeis.org/A287866) ([L09 program](287/A287866.asm)): n - A274933(n).
 * [A287893](http://oeis.org/A287893) ([L04 program](287/A287893.asm)): a(n) = floor(n*(n+2)/9).
 * [A288038](http://oeis.org/A288038) ([L07 program](288/A288038.asm)): Number of independent vertex sets in the n-Andrasfai graph.
-* [A288040](http://oeis.org/A288040) ([L06 program](288/A288040.asm)): Integers whose number of distinct decimal digits is prime.
+* [A288040](http://oeis.org/A288040) ([L05 program](288/A288040.asm)): Integers whose number of distinct decimal digits is prime.
 * [A288132](http://oeis.org/A288132) ([L11 program](288/A288132.asm)): Fixed point of the mapping 00->0010, 1->11, starting with 00.
 * [A288133](http://oeis.org/A288133) ([L06 program](288/A288133.asm)): Positions of 0 in A288132; complement of A288134.
 * [A288134](http://oeis.org/A288134) ([L05 program](288/A288134.asm)): Positions of 1 in A288132; complement of A288133.

@@ -307,7 +307,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305548](http://oeis.org/A305548) ([L02 program](305/A305548.asm)): a(n) = 27*n.
 * [A305549](http://oeis.org/A305549) ([L06 program](305/A305549.asm)): Crystal ball sequence for the lattice C_6.
 * [A305559](http://oeis.org/A305559) ([L15 program](305/A305559.asm)): [0, -1, -1] together with A000290.
-* [A305716](http://oeis.org/A305716) ([L43 program](305/A305716.asm)): Order of rowmotion on the divisor lattice for n.
+* [A305716](http://oeis.org/A305716) ([L10 program](305/A305716.asm)): Order of rowmotion on the divisor lattice for n.
 * [A305750](http://oeis.org/A305750) ([L21 program](305/A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
 * [A305753](http://oeis.org/A305753) ([L11 program](305/A305753.asm)): A base-3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
 * [A305801](http://oeis.org/A305801) ([L09 program](305/A305801.asm)): Filter sequence for a(odd prime) = constant sequences.
@@ -1543,7 +1543,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336040](http://oeis.org/A336040) ([L03 program](336/A336040.asm)): Characteristic function of refactorable numbers (A033950).
 * [A336102](http://oeis.org/A336102) ([L12 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
 * [A336109](http://oeis.org/A336109) ([L38 program](336/A336109.asm)): First column of dispersion array A120861.
-* [A336288](http://oeis.org/A336288) ([L08 program](336/A336288.asm)): Numbers of squares formed by this procedure on n-th step: Step 1, draw a unit square. Step n, draw a unit square with center in every intersection of lines of the figure in step n-1.
+* [A336288](http://oeis.org/A336288) ([L07 program](336/A336288.asm)): Numbers of squares formed by this procedure on n-th step: Step 1, draw a unit square. Step n, draw a unit square with center in every intersection of lines of the figure in step n-1.
 * [A336483](http://oeis.org/A336483) ([L11 program](336/A336483.asm)): Floor(n/10) + (5 times last digit of n).
 * [A336529](http://oeis.org/A336529) ([L37 program](336/A336529.asm)): a(n) = (n^3+5*n+3)/3 + 2*floor(n/2) + a(n-2), with a(0)=1 and a(1)=3.
 * [A336535](http://oeis.org/A336535) ([L06 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
@@ -1605,7 +1605,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338130](http://oeis.org/A338130) ([L49 program](338/A338130.asm)): Positive numbers k such that the ternary representation of k^k ends with that of k.
 * [A338200](http://oeis.org/A338200) ([L12 program](338/A338200.asm)): The number of similarity classes of pointed reflection spaces of residue two in an n-dimensional vector space over GF(2).
 * [A338206](http://oeis.org/A338206) ([L10 program](338/A338206.asm)): Inverse of A160016.
-* [A338281](http://oeis.org/A338281) ([L03 program](338/A338281.asm)): a(n) is the sum of n and the largest proper divisor of n.
+* [A338281](http://oeis.org/A338281) ([L05 program](338/A338281.asm)): a(n) is the sum of n and the largest proper divisor of n.
 * [A338329](http://oeis.org/A338329) ([L14 program](338/A338329.asm)): First differences of A326118.
 * [A338363](http://oeis.org/A338363) ([L24 program](338/A338363.asm)): a(n) = n + pi(n) - pi(floor(n/2)), where pi = A000720.
 * [A338429](http://oeis.org/A338429) ([L28 program](338/A338429.asm)): Maximum number of copies of a 1234 permutation pattern in an alternating (or zig-zag) permutation of length n + 5.
@@ -1667,6 +1667,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A340495](http://oeis.org/A340495) ([L36 program](340/A340495.asm)): Records in first differences of A340494.
 * [A340498](http://oeis.org/A340498) ([L06 program](340/A340498.asm)): Where 2^n appears in A340488 for the first time.
 * [A340507](http://oeis.org/A340507) ([L03 program](340/A340507.asm)): a(n) = floor(sqrt(2*n)) - A003056(n).
+* [A340519](http://oeis.org/A340519) ([L15 program](340/A340519.asm)): Smallest order of a non-abelian group with a center of order n.
 * [A340520](http://oeis.org/A340520) ([L15 program](340/A340520.asm)): a(n) = 2*A006463(n) + 1.
 * [A340528](http://oeis.org/A340528) ([L05 program](340/A340528.asm)): Radio number of the path graph P_n.
 * [A340536](http://oeis.org/A340536) ([L10 program](340/A340536.asm)): Digital root of 2*n^2.
@@ -1674,3 +1675,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A340745](http://oeis.org/A340745) ([L05 program](340/A340745.asm)): a(n) is the number of "add the square" iterations required to reach or exceed 1 starting at 1/n.
 * [A340757](http://oeis.org/A340757) ([L06 program](340/A340757.asm)): Counterexamples to a conjecture of Ramanujan about congruences related to the partition function.
 * [A340849](http://oeis.org/A340849) ([L46 program](340/A340849.asm)): a(n) = A001045(n) + A052928(n).
+* [A341543](http://oeis.org/A341543) ([L05 program](341/A341543.asm)): a(n) = sqrt( Product_{j=1..n} Product_{k=1..2} (4*sin((2*j-1)*Pi/(2*n))^2 + 4*sin((2*k-1)*Pi/2)^2) ).

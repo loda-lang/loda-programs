@@ -1759,7 +1759,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A236185](http://oeis.org/A236185) ([L23 program](236/A236185.asm)): Differences between terms of compacting Eratosthenes sieve for prime(4) = 7.
 * [A236194](http://oeis.org/A236194) ([L05 program](236/A236194.asm)): a(n) = binomial(3n+1, n-1).
 * [A236203](http://oeis.org/A236203) ([L08 program](236/A236203.asm)): Interleave A005563(n), A028347(n).
-* [A236213](http://oeis.org/A236213) ([L07 program](236/A236213.asm)): Number of units in the imaginary quadratic field Q(sqrt(-d)), where d > 0 is the n-th squarefree number.
+* [A236213](http://oeis.org/A236213) ([L06 program](236/A236213.asm)): Number of units in the imaginary quadratic field Q(sqrt(-d)), where d > 0 is the n-th squarefree number.
 * [A236257](http://oeis.org/A236257) ([L05 program](236/A236257.asm)): a(n) = 2*n^2 - 7*n + 9.
 * [A236267](http://oeis.org/A236267) ([L05 program](236/A236267.asm)): a(n) = 8n^2 + 3n + 1.
 * [A236283](http://oeis.org/A236283) ([L09 program](236/A236283.asm)): The number of orbits of triples of {1,2,...,n} under the action of the dihedral group of order 2n.
@@ -2021,7 +2021,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242603](http://oeis.org/A242603) ([L05 program](242/A242603.asm)): Largest divisor of n not divisible by 7. Remove factors 7 from n.
 * [A242604](http://oeis.org/A242604) ([L05 program](242/A242604.asm)): a(n) = (n - 1)*(n^3 + 1) = n^4 - n^3 + n - 1, for n >= 1.
 * [A242658](http://oeis.org/A242658) ([L04 program](242/A242658.asm)): a(n) = 3n^2-3n+2.
-* [A242659](http://oeis.org/A242659) ([L06 program](242/A242659.asm)): a(n) = n*(n^2 - 3*n + 4).
+* [A242659](http://oeis.org/A242659) ([L05 program](242/A242659.asm)): a(n) = n*(n^2 - 3*n + 4).
 * [A242660](http://oeis.org/A242660) ([L07 program](242/A242660.asm)): Nonnegative numbers of the form x^2+xy-2y^2.
 * [A242669](http://oeis.org/A242669) ([L03 program](242/A242669.asm)): a(n) = n*floor(n/3).
 * [A242709](http://oeis.org/A242709) ([L16 program](242/A242709.asm)): Nonequivalent ways to place two different markers (e.g., a pair of Go stones, black and white) on an n X n grid.
