@@ -7,7 +7,7 @@ lpb $1,36
   mov $2,$0
   mov $3,130665
   lpb $3,1
-    cal $0,230980
+    cal $0,230980 ; Number of primes <= n, starting at n=0.
     sub $0,$2
     mov $1,6
     div $3,5
