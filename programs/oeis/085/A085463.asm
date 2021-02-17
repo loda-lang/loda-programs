@@ -4,6 +4,4 @@
 add $0,1
 cal $0,302298 ; Wiener index of the graph of nodes (i,j) of the square lattice such that abs(i) + abs(j) <= n.
 mov $1,$0
-sub $1,16
 div $1,16
-add $1,1

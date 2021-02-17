@@ -4,18 +4,24 @@ LODA is an assembly language, a computational model and a tool for mining intege
 
 The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. All of these programs have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
-To mine programs for integer sequences, LODA automatically downloads files from the [OEIS website](https://oeis.org). You can run `loda mine` to search for programs for integer sequences from OEIS. Found programs are written to `programs/oeis`. When using the command-line flag `-x`, existing programs are overriden if the new program is simpler or faster than the existing one.
+If you are interested in integer sequences and programming models, consider [contributing to this project](CONTRIBUTING.md)!!! :eyes:
+
+## Programs
+
+The following programs include some classical examples of integer sequences and functions.
+
+* [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
+* [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
+* [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm)
+* [Number of primes <= n, starting at n=0 (A230980)](programs/oeis/230/A230980.asm)
+* [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. In contrast to the other programs, this one was written by hand.
+
+In total, there are currently more than 25k programs available. You can find lists with descriptions and links here:
+
+* [A000001-A050000](programs/oeis/list0.md), [A050001-A100000](programs/oeis/list1.md), [A100001-A150000](programs/oeis/list2.md), [A150001-A200000](programs/oeis/list3.md), 
+* [A200001-A250000](programs/oeis/list4.md), [A250001-A300000](programs/oeis/list5.md), [A300001-A350000](programs/oeis/list6.md), [A350001-A400000](programs/oeis/list7.md)
 
 If you would like to get updates on new programs, you can check out the [@lodaminer](https://twitter.com/lodaminer) Twitter account.
-
-### Available Programs
-
-Currently, there are currently more than 25k programs available. You can find lists with descriptions and links here:
-
-* [A000001-A050000](programs/oeis/list0.md), [A050001-A100000](programs/oeis/list1.md), 
-* [A100001-A150000](programs/oeis/list2.md), [A150001-A200000](programs/oeis/list3.md), 
-* [A200001-A250000](programs/oeis/list4.md), [A250001-A300000](programs/oeis/list5.md),
-* [A300001-A350000](programs/oeis/list6.md), [A350001-A400000](programs/oeis/list7.md)
 
 ## Tool
 
@@ -68,7 +74,7 @@ Generate a random LODA program and print it. Multiple generators are supported a
 
 #### mine
 
-Mine programs for OEIS integer sequences. It generates programs in a loop and tries to match them to sequencens. If a match was found, an alert is printed and the program is automatically saved to the [programs/oeis](programs/oeis) folder. By default, existing programs for sequences are not overwritten, but if you specify the `-x` option, programs are updated if they are faster. This refers to the number of execution steps needed to calculate the sequence. 
+Mine programs for OEIS integer sequences. It generates programs in a loop and tries to match them to sequences. If a match was found, an alert is printed and the program is automatically saved to the [programs/oeis](programs/oeis) folder. By default, existing programs for sequences are not overwritten, but if you specify the `-x` option, programs are updated if they are faster. This refers to the number of execution steps needed to calculate the sequence. 
 
 LODA is single-threaded and therefore uses one CPU during mining. It supports multiple process instances for parallel mining. You can try the [mine_parallel.sh](mine_parallel.sh) script for this.
 
@@ -78,9 +84,7 @@ You can also configure a Twitter client to get notified when a match was found!
 
 #### maintain
 
-Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder. This checks the correctness of all programs. Incorrect programs are removed and correct programs are minimized based on the first 250 terms of the sequence. In addition, the description of the sequence in the comment of the program is updated to the latest version of the OEIS database.
-
-Warning: when running this command for the first time, a large number of files need to be downloaded. After the first run, only deltas are downloaded.
+Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder. This checks the correctness of all programs. Incorrect programs are removed and correct programs are minimized based on the first 250 terms of the sequence. In addition, the description of the sequence in the comment of the program is updated to the latest version of the OEIS database. The statistics in the [stats](stats) folder and program lists are regenerated. 
 
 #### test
 
@@ -100,7 +104,7 @@ Programs operate on memory consisting of an unbounded sequence of memory cells `
 
 ### Arithmetic Operations
 
-These are the following instructions supported by LODA. In the following, let `a` be a direct or an indirect memory access, and let `b` be a constant, a direct or an indirect memory access.
+The table below summarizes the operations currently supported by LODA. We use the [Intel assembly syntax](https://en.wikipedia.org/wiki/X86_assembly_language), i.e., target before source. In the following, let `a` be a direct or an indirect memory access, and let `b` be a constant, a direct or an indirect memory access.
 
 | Operation | Name           | Description |
 |:---------:|:--------------:|-------------|
@@ -118,24 +122,28 @@ These are the following instructions supported by LODA. In the following, let `a
 | `bin a,b` | Binomial Coefficient | Target over source: `a:=a!/(b!(a-b)!)`|
 | `cmp a,b` | Comparison | Compare target with source value: `a:=(a=b)?1:0` |
 
-### Loops and Calls
+### Loops
 
-The instructions `lpb x,y` ... `lpe` define the beginning and the end of an lexicographical order descent loop. The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynom) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
+The instructions `lpb x,y` ... `lpe` define the beginning and the end of a so-called "lexicographical-order descent loop." The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynomial) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. Since we allow negative integers, we consider the absolute values. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
+
+Below you can find a simple example of a for-loop. It first assigns 1 to the output cell `$1`. Inside the loop, the input cell `$0` is counted down to zero and in every step `$1` is multiplied by 2. Note that this could be also achieved without loops using the `pow` operation.
+
+```asm
+mov $1,1      ; assign $1:=1
+lpb $0,1      ; begin loop on $0
+  mul $1,5    ; multiply $1 with 5
+  sub $0,1    ; decrement $0
+lpe           ; end loop on $0
+```
+
+### Calls
 
 Calling another LODA program is supported using the `cal` operation. This assumes you are evaluating the program as a sequence (see below). It takes two arguments. The first one is the parameter of the called program. The second argument is the number of the OEIS program to be called (see below). The result is stored in the first argument. For example, the operation `cal $2,45` evaluates the program A000045 (Fibonacci numbers) using the argument value in `$2` and overrides it with the result.
 
-__Termination:__ all LODA programs are guaranteed to halt on every input. Recursive calls are not allowed. An infinite loop also cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
+### Termination
+
+All LODA programs are guaranteed to halt on every input. Recursive calls are not allowed. An infinite loop also cannot occur, because the values of the memory region strictly decrease in every iteration and can at most reach the region consisting only of zeros. Hence, all loops therefore also all LODA programs eventually terminate.
 
 ### Integer Sequences
 
-Programs can be used to generate integer sequences. A program generates a sequence `a(n)` by taking `$0=n` as input and producing the output `a(n)=$1`.
-
-### Example Programs
-
-The following programs include some classical examples of integer sequences and functions.
-
-* [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
-* [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
-* [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm)
-* [Number of primes <= n, starting at n=0 (A230980)](programs/oeis/230/A230980.asm)
-* [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. 
+Programs operate on an unbounded set of memory cells. To compute integer sequences, we consider `$0` as the input and `$1` as the output of the program. Thus, a sequence `a(n)` is generated by taking `$0=n` as input and producing the output `a(n)=$1`.
