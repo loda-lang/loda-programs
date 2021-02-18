@@ -1,8 +1,9 @@
 ; A049847: a(n) = (2*n + 1 - prevprime(2*n+1))/2.
 ; 1,1,1,2,1,1,2,1,1,2,1,2,3,1,1,2,3,1,2,1,1,2,1,2,3,1,2,3,1,1,2,3,1,2,1,1,2,3,1,2,1,2,3,1,2,3,4,1,2,1,1,2,1,1,2,1,2,3,4,5,6,7,1,2,1,2,3,1,1,2,3,4,5,1,1,2,3,1,2,3,1,2,1,2,3,1,2,3,1,1,2,3,4
 
-mul $0,2
 add $0,1
-cal $0,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
-div $0,2
+mul $0,2
+cal $0,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
 mov $1,$0
+div $1,2
+add $1,1
