@@ -16,7 +16,7 @@ lpb $11,1
     mov $0,$6
     sub $8,1
     sub $0,$8
-    cal $0,140347
+    cal $0,140347 ; Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
     add $7,$0
   lpe
   add $10,$7

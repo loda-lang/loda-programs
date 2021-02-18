@@ -4,10 +4,7 @@
 mov $2,$0
 gcd $0,4
 cmp $2,0
-add $2,1
-sub $0,$2
-lpb $2,1
-  sub $0,1
-  div $2,4
-lpe
+cmp $2,0
+sub $2,3
+add $0,$2
 mov $1,$0
