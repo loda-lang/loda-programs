@@ -2049,7 +2049,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288492](http://oeis.org/A288492) ([L15 program](288/A288492.asm)): Indices of terms of A288349 that are powers of 2.
 * [A288516](http://oeis.org/A288516) ([L32 program](288/A288516.asm)): Number of (undirected) paths in the ladder graph P_2 X P_n.
 * [A288534](http://oeis.org/A288534) ([L10 program](288/A288534.asm)): a(n) = n*(2*n^2 + 3), n >= 1; a(0)=1.
-* [A288599](http://oeis.org/A288599) ([L64 program](288/A288599.asm)): a(n) = 2*a(n-1) - a(n-4) for n >= 4, where a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 10, a(4) = 16.
+* [A288599](http://oeis.org/A288599) ([L09 program](288/A288599.asm)): a(n) = 2*a(n-1) - a(n-4) for n >= 4, where a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 10, a(4) = 16.
 * [A288601](http://oeis.org/A288601) ([L39 program](288/A288601.asm)): Positions of 0 in A288600; complement of A288602.
 * [A288603](http://oeis.org/A288603) ([L14 program](288/A288603.asm)): a(n) = 2*a(n-1) - a(n-3) for n >= 3, where a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 8.
 * [A288604](http://oeis.org/A288604) ([L06 program](288/A288604.asm)): a(n) = (n^9 - n)/10.

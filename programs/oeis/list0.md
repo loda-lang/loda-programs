@@ -624,9 +624,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004760](http://oeis.org/A004760) ([L08 program](004/A004760.asm)): List of numbers whose binary expansion does not begin 10.
 * [A004761](http://oeis.org/A004761) ([L09 program](004/A004761.asm)): Numbers n whose binary expansion does not begin with 11.
 * [A004762](http://oeis.org/A004762) ([L16 program](004/A004762.asm)): Numbers whose binary expansion does not begin 100.
-* [A004763](http://oeis.org/A004763) ([L17 program](004/A004763.asm)): Numbers n such that binary expansion does not begin 101.
-* [A004764](http://oeis.org/A004764) ([L32 program](004/A004764.asm)): Numbers n such that binary expansion does not begin 110.
-* [A004765](http://oeis.org/A004765) ([L19 program](004/A004765.asm)): Numbers n such that binary expansion does not begin 111.
+* [A004763](http://oeis.org/A004763) ([L17 program](004/A004763.asm)): Numbers whose binary expansion does not begin 101.
+* [A004764](http://oeis.org/A004764) ([L32 program](004/A004764.asm)): Numbers whose binary expansion does not begin 110.
+* [A004765](http://oeis.org/A004765) ([L19 program](004/A004765.asm)): Numbers whose binary expansion does not begin 111.
 * [A004766](http://oeis.org/A004766) ([L03 program](004/A004766.asm)): Numbers whose binary expansion ends 01.
 * [A004767](http://oeis.org/A004767) ([L03 program](004/A004767.asm)): a(n) = 4*n + 3.
 * [A004768](http://oeis.org/A004768) ([L03 program](004/A004768.asm)): Binary expansion ends 001.
@@ -1057,7 +1057,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007993](http://oeis.org/A007993) ([L35 program](007/A007993.asm)): Poincaré series [or Poincare series] of Lie algebra associated with a certain braid group.
 * [A007997](http://oeis.org/A007997) ([L04 program](007/A007997.asm)): a(n) = ceiling((n-3)(n-4)/6).
 * [A008000](http://oeis.org/A008000) ([L18 program](008/A008000.asm)): Coordination sequence T1 for Zeolite Code ABW and ATN.
-* [A008084](http://oeis.org/A008084) ([L24 program](008/A008084.asm)): Coordination sequence T1 for Zeolite Code ASV, EDI and THO.
+* [A008084](http://oeis.org/A008084) ([L24 program](008/A008084.asm)): Coordination sequence T1 for Zeolite Code ACO, ASV, EDI, and THO.
 * [A008123](http://oeis.org/A008123) ([L14 program](008/A008123.asm)): Coordination sequence T1 for Zeolite Code KFI.
 * [A008130](http://oeis.org/A008130) ([L06 program](008/A008130.asm)): a(n) = floor(n/3)*ceiling(n/3).
 * [A008133](http://oeis.org/A008133) ([L05 program](008/A008133.asm)): a(n) = floor(n/3)*floor((n+1)/3).
@@ -3833,7 +3833,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033594](http://oeis.org/A033594) ([L19 program](033/A033594.asm)): a(n) = (n-1)*(2*n-1)*(3*n-1).
 * [A033595](http://oeis.org/A033595) ([L05 program](033/A033595.asm)): a(n) = (n^2-1)*(2*n^2-1).
 * [A033596](http://oeis.org/A033596) ([L05 program](033/A033596.asm)): a(n) = (n^2 - 1)*(n^2 - 3).
-* [A033598](http://oeis.org/A033598) ([L24 program](033/A033598.asm)): Coordination sequence T1 for Zeolite Code ACO.
+* [A033598](http://oeis.org/A033598) ([L24 program](033/A033598.asm)): Duplicate of A008084.
 * [A033622](http://oeis.org/A033622) ([L19 program](033/A033622.asm)): Good sequence of increments for Shell sort (best on big values).
 * [A033627](http://oeis.org/A033627) ([L05 program](033/A033627.asm)): 0-additive sequence: not the sum of any previous pair.
 * [A033638](http://oeis.org/A033638) ([L04 program](033/A033638.asm)): Quarter-squares plus 1 (that is, a(n) = A002620(n) + 1).

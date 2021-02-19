@@ -1721,7 +1721,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A069921](http://oeis.org/A069921) ([L19 program](069/A069921.asm)): Define C(n) by the recursion C(0) = 1 + I where I^2 = -1, C(n+1) = 1/(1+C(n)); then a(n) = (-1)^n/Im(C(n)) where Im(z) is the imaginary part of the complex number z.
 * [A069924](http://oeis.org/A069924) ([L10 program](069/A069924.asm)): Number of k, 1<=k<=n, such that phi(k) divides k.
 * [A069930](http://oeis.org/A069930) ([L05 program](069/A069930.asm)): Number of integers of the form (n+k)/(n-k) with 1<=k<=n-1.
-* [A069975](http://oeis.org/A069975) ([L06 program](069/A069975.asm)): n*(16n^2-1).
+* [A069975](http://oeis.org/A069975) ([L06 program](069/A069975.asm)): a(n) = n*(16n^2-1).
 * [A069981](http://oeis.org/A069981) ([L12 program](069/A069981.asm)): Hermite's problem: number of positive integral solutions to x + y + z = n subject to x <= y + z, y <= z + x and z <= x + y.
 * [A069984](http://oeis.org/A069984) ([L03 program](069/A069984.asm)): 1123+21460n.
 * [A069993](http://oeis.org/A069993) ([L05 program](069/A069993.asm)): a(n) = 2^(2n+1)*Sum_{k=1..2*n} binomial(2n+1,k)*Bernoulli(k)/2^k.
@@ -3161,7 +3161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083120](http://oeis.org/A083120) ([L04 program](083/A083120.asm)): Numbers that are congruent to {0, 2, 4, 5, 7, 9, 10} mod 12.
 * [A083127](http://oeis.org/A083127) ([L14 program](083/A083127.asm)): 3*n^3+n^2-4*n.
 * [A083187](http://oeis.org/A083187) ([L29 program](083/A083187.asm)): a(n) = floor(log_3/2(n+1)) - floor(log_3/2(n)).
-* [A083196](http://oeis.org/A083196) ([L08 program](083/A083196.asm)): 8*n^4+9*n^2+2.
+* [A083196](http://oeis.org/A083196) ([L08 program](083/A083196.asm)): a(n) = 8*n^4 + 9*n^2 + 2.
 * [A083217](http://oeis.org/A083217) ([L05 program](083/A083217.asm)): a(n) = (2*5^n+(-1)^n)/3.
 * [A083219](http://oeis.org/A083219) ([L04 program](083/A083219.asm)): a(n) = n - 2*floor(n/4).
 * [A083220](http://oeis.org/A083220) ([L03 program](083/A083220.asm)): a(n) = n + (n mod 4).
@@ -3779,8 +3779,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A090176](http://oeis.org/A090176) ([L08 program](090/A090176.asm)): G.f.: (1+x^9)/((1-x^4)(1-x^6)(1-x^12)).
 * [A090193](http://oeis.org/A090193) ([L13 program](090/A090193.asm)): a(n) = A053838(n) + 1 modulo 3.
 * [A090197](http://oeis.org/A090197) ([L07 program](090/A090197.asm)): a(n) = n^3 + 6*n^2 + 6*n + 1.
-* [A090198](http://oeis.org/A090198) ([L43 program](090/A090198.asm)): N(5,n) where N(5,x) is the 5th Narayana polynomial.
-* [A090199](http://oeis.org/A090199) ([L55 program](090/A090199.asm)): N(6,n) where N(6,x) is the 6th Narayana polynomial.
+* [A090198](http://oeis.org/A090198) ([L43 program](090/A090198.asm)): a(n) = N(5,n), where N(5,x) is the 5th Narayana polynomial.
+* [A090199](http://oeis.org/A090199) ([L55 program](090/A090199.asm)): a(n) = N(6,n), where N(6,x) is the 6th Narayana polynomial.
 * [A090223](http://oeis.org/A090223) ([L03 program](090/A090223.asm)): Nonnegative integers with doubled multiples of 4.
 * [A090239](http://oeis.org/A090239) ([L13 program](090/A090239.asm)): a(n) = A053838(n) + 2 modulo 3.
 * [A090281](http://oeis.org/A090281) ([L06 program](090/A090281.asm)): "Plain Bob Minimus" in bell-ringing is a sequence of permutations p_1=(1,2,3,4), p_2=(2,1,4,3), ... which runs through all permutations of {1,2,3,4} with period 24; sequence gives position of bell 1 (the treble bell) in n-th permutation.

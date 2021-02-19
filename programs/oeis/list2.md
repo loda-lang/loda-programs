@@ -471,7 +471,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105374](http://oeis.org/A105374) ([L04 program](105/A105374.asm)): a(n) = 4*n^3 + 4*n.
 * [A105384](http://oeis.org/A105384) ([L06 program](105/A105384.asm)): Expansion of x/(1 + x + x^2 + x^3 + x^4).
 * [A105385](http://oeis.org/A105385) ([L05 program](105/A105385.asm)): Expansion of (1-x^2)/(1-x^5).
-* [A105395](http://oeis.org/A105395) ([L06 program](105/A105395.asm)): A simple "Fractal Jump Sequence" (FJS).
+* [A105395](http://oeis.org/A105395) ([L05 program](105/A105395.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105396](http://oeis.org/A105396) ([L04 program](105/A105396.asm)): A simple "Fractal Jump Sequence" (FJS).
 * [A105397](http://oeis.org/A105397) ([L03 program](105/A105397.asm)): Periodic with period 2: repeat [4,2].
 * [A105398](http://oeis.org/A105398) ([L03 program](105/A105398.asm)): A simple "Fractal Jump Sequence" (FJS).
@@ -2291,6 +2291,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130665](http://oeis.org/A130665) ([L27 program](130/A130665.asm)): a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
 * [A130667](http://oeis.org/A130667) ([L23 program](130/A130667.asm)): a(1) = 1; a(n) = max{ 5*a(k) + a(n-k) | 1 <= k <= n/2 } for n > 1.
 * [A130674](http://oeis.org/A130674) ([L03 program](130/A130674.asm)): a(n) = d(n)!, where d denotes the number of divisors of n.
+* [A130675](http://oeis.org/A130675) ([L03 program](130/A130675.asm)): Factorial of bigomega(n).
 * [A130692](http://oeis.org/A130692) ([L13 program](130/A130692.asm)): a(n) is the smallest number m such that the sum of the digits of n+m is n.
 * [A130706](http://oeis.org/A130706) ([L03 program](130/A130706.asm)): a(0) = 1, a(1) = 2, a(n) = 0 for n > 1.
 * [A130707](http://oeis.org/A130707) ([L17 program](130/A130707.asm)): a(n+3) = 3*(a(n+2) - a(n+1)) + 2*a(n).
@@ -2312,7 +2313,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130770](http://oeis.org/A130770) ([L11 program](130/A130770.asm)): One third of the least common multiple of 3 and n^2+n+1.
 * [A130772](http://oeis.org/A130772) ([L18 program](130/A130772.asm)): Periodic sequence with period 2 2 0 -2 -2 0.
 * [A130773](http://oeis.org/A130773) ([L05 program](130/A130773.asm)): a(0)=0, a(1)=2, a(n)=2n+1 for n >= 2.
-* [A130778](http://oeis.org/A130778) ([L12 program](130/A130778.asm)): Period 6: repeat [1, -1, -3, -3, -1, 1].
+* [A130778](http://oeis.org/A130778) ([L10 program](130/A130778.asm)): Period 6: repeat [1, -1, -3, -3, -1, 1].
 * [A130779](http://oeis.org/A130779) ([L03 program](130/A130779.asm)): a(0)=a(1)=1, a(2)=2, a(n)=0 for n >= 3.
 * [A130781](http://oeis.org/A130781) ([L12 program](130/A130781.asm)): Sequence is identical to its third differences: a(n+3)=3a(n+2)-3a(n+1)+2a(n), with a(0)=a(1)=1, a(2)=2.
 * [A130782](http://oeis.org/A130782) ([L04 program](130/A130782.asm)): Periodic sequence with period 1, 1, 2, 1, 1.
@@ -2357,7 +2358,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131017](http://oeis.org/A131017) ([L07 program](131/A131017.asm)): Period 6 sequence (1, 1, 2, -1, 2, 1).
 * [A131026](http://oeis.org/A131026) ([L08 program](131/A131026.asm)): Periodic sequence (2, 2, 1, 0, 0, 1).
 * [A131027](http://oeis.org/A131027) ([L08 program](131/A131027.asm)): Period 6: repeat [4, 3, 1, 0, 1, 3].
-* [A131028](http://oeis.org/A131028) ([L16 program](131/A131028.asm)): Periodic sequence (7, 4, 1, 1, 4, 7).
+* [A131028](http://oeis.org/A131028) ([L13 program](131/A131028.asm)): Periodic sequence (7, 4, 1, 1, 4, 7).
 * [A131029](http://oeis.org/A131029) ([L12 program](131/A131029.asm)): Periodic sequence (11, 5, 2, 5, 11, 14).
 * [A131030](http://oeis.org/A131030) ([L13 program](131/A131030.asm)): Period 6: repeat [16, 7, 7, 16, 25, 25].
 * [A131032](http://oeis.org/A131032) ([L16 program](131/A131032.asm)): A097806 * A051340.

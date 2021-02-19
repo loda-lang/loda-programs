@@ -2368,7 +2368,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173209](http://oeis.org/A173209) ([L56 program](173/A173209.asm)): Partial sums of A000069.
 * [A173234](http://oeis.org/A173234) ([L24 program](173/A173234.asm)): Expansion of x*(1+3*x^2-2*x^3+2*x^4-x^5)/((1+x)*(x-1)^2*(x^2+1)^2).
 * [A173237](http://oeis.org/A173237) ([L09 program](173/A173237.asm)): Alternate n and 10n for each n.
-* [A173246](http://oeis.org/A173246) ([L19 program](173/A173246.asm)): Expansion sequence of p(x)=(x + 1)^50/Sum[x^i, {i, 0, 50}];
+* [A173246](http://oeis.org/A173246) ([L19 program](173/A173246.asm)): Expansion of (1+x)^50 * (1-x)/(1 - x^51).
 * [A173254](http://oeis.org/A173254) ([L12 program](173/A173254.asm)): a(n) = a(n-1) + a(n-2) - [a(n-2)/2] - [a(n-4)/2].
 * [A173259](http://oeis.org/A173259) ([L04 program](173/A173259.asm)): Period 3: repeat [4, 1, 4].
 * [A173263](http://oeis.org/A173263) ([L10 program](173/A173263.asm)): Successive numbers n such that ChebyshevT[n/2, n] is not an integer.
@@ -2994,7 +2994,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181565](http://oeis.org/A181565) ([L04 program](181/A181565.asm)): a(n) = 3*2^n + 1.
 * [A181569](http://oeis.org/A181569) ([L14 program](181/A181569.asm)): Greatest common divisor of n! and n+1.
 * [A181586](http://oeis.org/A181586) ([L38 program](181/A181586.asm)): a(0)=0; a(n+1) = 2*a(n) + period 4:repeat 0,1,-2,1.
-* [A181617](http://oeis.org/A181617) ([L05 program](181/A181617.asm)): Molecular topological indices of the complete graph K_n.
+* [A181617](http://oeis.org/A181617) ([L04 program](181/A181617.asm)): Molecular topological indices of the complete graph K_n.
 * [A181640](http://oeis.org/A181640) ([L11 program](181/A181640.asm)): Partial sums of floor(n^2/5) (A118015).
 * [A181655](http://oeis.org/A181655) ([L15 program](181/A181655.asm)): Expansion of (1+2x-x^3+x^4)/(1-4x^2+3x^4).
 * [A181658](http://oeis.org/A181658) ([L07 program](181/A181658.asm)): Row sums of A181657.
