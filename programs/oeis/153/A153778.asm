@@ -1,10 +1,15 @@
 ; A153778: Binary sequence constructed like a Stern-Brocot tree between 0 and 1, where XOR is applied instead of the mediant operation.
 ; 1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1
 
-cal $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
-mod $0,3
-cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-cal $0,184747 ; floor(n*s+h-h*s), where s=1+sqrt(5), h=1/2; complement of A184746.
-pow $0,2
-mov $1,$0
-div $1,39
+cal $0,65252 ; The sequence A065251 reduced modulo 3 (i.e., replace every -1 with 2).
+add $0,1
+div $0,2
+add $0,1
+div $0,2
+lpb $0,1
+  sub $2,$0
+  lpb $0,1
+    add $0,$2
+    add $1,1
+  lpe
+lpe

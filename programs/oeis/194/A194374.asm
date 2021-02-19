@@ -1,4 +1,4 @@
-; A194374: Numbers n such that sum{<1/2+k*r>-<k*r> : 1<=k<=n}=0, where r=sqrt(5) and < > denotes fractional part.
+; A194374: Numbers m such that Sum_{k=1..m} (<1/2 + k*r> - <k*r>) = 0, where r=sqrt(5) and < > denotes fractional part.
 ; 4,8,12,16,72,76,80,84,88,144,148,152,156,160,216,220,224,228,232,288,292,296,300,304
 
 mov $1,4

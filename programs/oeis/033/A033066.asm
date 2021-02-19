@@ -1,4 +1,4 @@
-; A033066: Numbers n such that base 15 representation Sum{d(i)*15^i: i=0,1,...,m} has odd d(i) for all odd i.
+; A033066: Numbers whose base-15 representation Sum_{i=0..m} d(i)*15^i has odd d(i) for all odd i.
 ; 1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,18,20,22,24,26,28,31,33,35,37,39,41,43,46,48,50,52,54,56,58,61,63,65,67,69,71,73,76,78,80,82,84,86,88,91,93,95,97,99,101,103,106,108,110,112,114
 
 mov $2,$0
