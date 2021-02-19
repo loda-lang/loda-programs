@@ -631,7 +631,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056487](http://oeis.org/A056487) ([L16 program](056/A056487.asm)): a(n) = 5^(n/2) for n even, a(n) = 3*5^((n-1)/2) for n odd.
 * [A056488](http://oeis.org/A056488) ([L18 program](056/A056488.asm)): Number of periodic palindromes using a maximum of six different symbols.
 * [A056489](http://oeis.org/A056489) ([L41 program](056/A056489.asm)): Number of periodic palindromes using exactly three different symbols.
-* [A056520](http://oeis.org/A056520) ([L06 program](056/A056520.asm)): a(n) = (n + 2)*(2*n^2 - n + 3)/6.
+* [A056520](http://oeis.org/A056520) ([L05 program](056/A056520.asm)): a(n) = (n + 2)*(2*n^2 - n + 3)/6.
 * [A056524](http://oeis.org/A056524) ([L04 program](056/A056524.asm)): Palindromes with even number of digits.
 * [A056526](http://oeis.org/A056526) ([L25 program](056/A056526.asm)): First differences of Flavius Josephus's sieve.
 * [A056527](http://oeis.org/A056527) ([L25 program](056/A056527.asm)): Numbers where iterated sum of digits of square settles down to a cyclic pattern (in fact 13, 16, 13, 16, ...).
@@ -1352,7 +1352,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063494](http://oeis.org/A063494) ([L11 program](063/A063494.asm)): a(n) = (2*n - 1)*(7*n^2 - 7*n + 3)/3.
 * [A063495](http://oeis.org/A063495) ([L17 program](063/A063495.asm)): a(n) = (2*n-1)*(5*n^2-5*n+2)/2.
 * [A063496](http://oeis.org/A063496) ([L07 program](063/A063496.asm)): a(n) = (2*n-1)*(8*n^2-8*n+3)/3.
-* [A063497](http://oeis.org/A063497) ([L06 program](063/A063497.asm)): Number of atoms in first n shells of type I hyperfullerene.
+* [A063497](http://oeis.org/A063497) ([L05 program](063/A063497.asm)): Number of atoms in first n shells of type I hyperfullerene.
 * [A063498](http://oeis.org/A063498) ([L13 program](063/A063498.asm)): Atoms in cluster of n layers around C_60.
 * [A063510](http://oeis.org/A063510) ([L07 program](063/A063510.asm)): a(1) = 1, a(n) = a(floor(square root(n)) + 1 for n > 1.
 * [A063511](http://oeis.org/A063511) ([L09 program](063/A063511.asm)): a(n) = a(floor(square root(n))) * 2.
@@ -2701,7 +2701,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080260](http://oeis.org/A080260) ([L14 program](080/A080260.asm)): a(n)=1+(1/12)(n*(n+1)*(n+3)*(4-n)).
 * [A080276](http://oeis.org/A080276) ([L12 program](080/A080276.asm)): Variation on Connell sequence (A001614). In this one, a(1)=1, terms a(n) onwards are generated in "blocks" as the next a(n-1) odd numbers > a(n-1) if the previous block ends with a(n-1) even and the next a(n-1) even numbers > a(n-1) if the previous block ends with a(n-1) odd.
 * [A080277](http://oeis.org/A080277) ([L17 program](080/A080277.asm)): Partial sums of A038712.
-* [A080278](http://oeis.org/A080278) ([L06 program](080/A080278.asm)): a(n) = (3^(v_3(n) + 1) - 1)/2, where v_3(n) = highest power of 3 dividing n = A007949(n).
+* [A080278](http://oeis.org/A080278) ([L05 program](080/A080278.asm)): a(n) = (3^(v_3(n) + 1) - 1)/2, where v_3(n) = highest power of 3 dividing n = A007949(n).
 * [A080333](http://oeis.org/A080333) ([L14 program](080/A080333.asm)): Partial sums of A080278.
 * [A080335](http://oeis.org/A080335) ([L06 program](080/A080335.asm)): Diagonal in square spiral or maze arrangement of natural numbers.
 * [A080339](http://oeis.org/A080339) ([L04 program](080/A080339.asm)): Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
@@ -4495,7 +4495,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099431](http://oeis.org/A099431) ([L08 program](099/A099431.asm)): Expansion of x(1-2x+3x^2)/(1-x-2x)^2;.
 * [A099443](http://oeis.org/A099443) ([L22 program](099/A099443.asm)): A Chebyshev transform of Fib(n+1).
 * [A099459](http://oeis.org/A099459) ([L14 program](099/A099459.asm)): Expansion of 1/(1 - 7x + 9x^2).
-* [A099462](http://oeis.org/A099462) ([L12 program](099/A099462.asm)): Expansion of x/(1-4x^2-4x^3).
+* [A099462](http://oeis.org/A099462) ([L03 program](099/A099462.asm)): Expansion of x/(1-4x^2-4x^3).
 * [A099463](http://oeis.org/A099463) ([L03 program](099/A099463.asm)): Bisection of tribonacci numbers.
 * [A099464](http://oeis.org/A099464) ([L03 program](099/A099464.asm)): Trisection of tribonacci numbers.
 * [A099467](http://oeis.org/A099467) ([L20 program](099/A099467.asm)): a(1) = a(2) = 1; for n > 2, a(n) is the smallest number > a(n-1) which is not the sum of 2 consecutive elements of the sequence.

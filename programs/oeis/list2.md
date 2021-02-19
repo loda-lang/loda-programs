@@ -22,7 +22,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100103](http://oeis.org/A100103) ([L04 program](100/A100103.asm)): a(n) = 2^(2*n) - 2*n.
 * [A100104](http://oeis.org/A100104) ([L05 program](100/A100104.asm)): a(n) = n^3 - n^2 + 1.
 * [A100109](http://oeis.org/A100109) ([L06 program](100/A100109.asm)): a(n) = n^3 - 2*n^2 + 2.
-* [A100119](http://oeis.org/A100119) ([L05 program](100/A100119.asm)): a(n) = n-th centered n-gonal number.
+* [A100119](http://oeis.org/A100119) ([L04 program](100/A100119.asm)): a(n) = n-th centered n-gonal number.
 * [A100131](http://oeis.org/A100131) ([L15 program](100/A100131.asm)): a(n) = Sum_{k=0..floor(n/4)} binomial(n-2k, 2k)*2^(n-4k).
 * [A100145](http://oeis.org/A100145) ([L13 program](100/A100145.asm)): Structured great rhombicosidodecahedral numbers.
 * [A100146](http://oeis.org/A100146) ([L19 program](100/A100146.asm)): Structured great rhombicubeoctahedral numbers.

@@ -971,6 +971,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318159](http://oeis.org/A318159) ([L47 program](318/A318159.asm)): Figurate numbers based on the small stellated dodecahedron: a(n) = n*(21*n^2 - 33*n + 14)/2.
 * [A318162](http://oeis.org/A318162) ([L15 program](318/A318162.asm)): Number of compositions of 2n-1 into exactly 2n-1 nonnegative parts with largest part n.
 * [A318274](http://oeis.org/A318274) ([L12 program](318/A318274.asm)): Triangle read by rows: T(n,k) = n for 0 < k < n and T(n,0) = T(n,n) = 1.
+* [A318455](http://oeis.org/A318455) ([L13 program](318/A318455.asm)): The 2-adic valuation of A318454(n).
 * [A318624](http://oeis.org/A318624) ([L44 program](318/A318624.asm)): Number of 3-member subsets of [3*n] whose elements sum to a multiple of n.
 * [A318666](http://oeis.org/A318666) ([L20 program](318/A318666.asm)): a(n) = 2^{the 3-adic valuation of n}.
 * [A318755](http://oeis.org/A318755) ([L12 program](318/A318755.asm)): a(n) = Sum_{k=1..n} tau(k)^3, where tau is A000005.
