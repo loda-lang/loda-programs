@@ -3,10 +3,5 @@
 
 sub $0,1
 cal $0,187577 ; Complement of A187576.
-add $0,16
-mul $0,4
-add $0,72
 mov $1,$0
-sub $1,136
-div $1,4
 add $1,2

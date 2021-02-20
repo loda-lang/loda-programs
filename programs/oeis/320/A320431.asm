@@ -4,9 +4,7 @@
 lpb $0,1
   mov $1,$0
   cal $1,70260 ; Third diagonal of triangle defined in A051537.
-  mov $0,-1
-  mul $1,2
+  mod $0,2
 lpe
-div $1,2
 mul $1,2
 add $1,1
