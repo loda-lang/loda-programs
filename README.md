@@ -62,11 +62,11 @@ Evaluate a LODA program to an integer sequence. For example, run `./loda eval pr
 
 #### optimize (opt)
 
-Optimize a LODA program and print the optimized version. The optimization is based on a static code analysis and does not any program evaluation. It is guaranteed to be semantics preserving for the entire integer sequence.
+Optimize a LODA program and print the optimized version. The optimization is based on a static code analysis and does not involve any program evaluation. It is guaranteed to be semantics preserving for the entire integer sequence.
 
 #### minimize (min)
 
-Minimize a LODA program and print the minimized version. The minimization includes an optimization and additional a brute-force removal of operations based on trial and error. It guarantees that the generated integer sequence is preserved, but only up to the number of terms specified using `-t`. In contrast to optimization, minimization is not guaranteed to be semantics preserving for the entire sequences. In practice, it yields much shorter programs than optimization and we usually apply it with a larger number of terms to increase the probability of correctness.
+Minimize a LODA program and print the minimized version. The minimization includes an optimization and additionally a brute-force removal of operations based on trial and error. It guarantees that the generated integer sequence is preserved, but only up to the number of terms specified using `-t`. In contrast to optimization, minimization is not guaranteed to be semantics preserving for the entire sequences. In practice, it yields much shorter programs than optimization and we usually apply it with a larger number of terms to increase the probability of correctness.
 
 #### generate (gen)
 
