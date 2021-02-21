@@ -9,7 +9,7 @@ lpb $29,1
   mov $0,$27
   sub $29,1
   sub $0,$29
-  cal $0,82850
+  cal $0,82850 ; Let S(0) = {}, S(n) = {S(n-1), S(n-1), n}; sequence gives S(infinity).
   mul $0,2
   add $5,$0
   add $4,$5

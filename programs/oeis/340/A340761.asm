@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $2,$0
-  cal $2,38714
+  cal $2,38714 ; Promic numbers repeated 4 times; a(n) = floor(n/4) * ceiling((n+1)/4).
   sub $0,3
   add $1,$2
 lpe
