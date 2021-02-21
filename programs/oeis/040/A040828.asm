@@ -1,85 +1,9 @@
 ; A040828: Continued fraction for sqrt(858).
 ; 29,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3
 
-mov $3,1
-cal $0,40855
-lpb $3,1
-  mul $0,$3
-  mov $3,$0
-  add $6,$0
-  mod $3,4
-  mul $6,2
-  mov $3,$3
-  sub $6,$6
-  mul $3,194
-  sub $6,1
-  add $2,$3
-  sub $6,1
-  lpb $0,7
-    cal $0,100066
-    div $3,3
-    mod $0,4
-    sub $0,$5
-    sub $3,3
-    mov $6,$4
-  lpe
-  mov $6,$2
-  mov $2,$3
-  sub $0,$2
-  pow $6,0
-  mul $0,2
-  mov $26,$6
-  cmp $26,0
-  add $6,$26
-  div $2,$6
-  add $5,$2
-  lpb $0,1
-    mov $5,$5
-    pow $3,3
-    pow $2,2
-    sub $2,3
-    mod $5,2
-    mov $3,$5
-    mov $6,$5
-    mov $3,1
-    mov $3,$2
-    add $2,1
-    add $0,56
-    add $5,$5
-    add $6,2
-    add $0,$3
-    add $0,$2
-    sub $0,8
-  lpe
-  mov $1,1
-  mov $1,$3
-  lpb $5,6
-    sub $0,$3
-    add $1,3
-    div $5,7
-  lpe
-  add $3,8
-  trn $6,19
-  sub $0,36
-  mov $2,8
-  sub $5,$2
-  add $1,2
-  bin $6,2
-  sub $5,1
-lpe
-add $1,3
+cal $0,40855 ; Continued fraction for sqrt(885).
+mov $1,3
 lpb $0,1
-  add $4,$0
   mov $1,$0
   mov $0,1
-  mov $2,1
-  sub $2,2
 lpe
-mov $26,$2
-cmp $26,0
-add $2,$26
-div $5,$2
-mov $2,4
-mov $5,$6
-mov $3,1
-add $3,$4

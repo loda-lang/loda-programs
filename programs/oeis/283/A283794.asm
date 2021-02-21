@@ -7,7 +7,7 @@ lpb $0,1
   add $3,2
   lpb $3,1
     mov $2,$0
-    cal $2,87172
+    cal $2,87172 ; Greatest Fibonacci number that does not exceed n.
     sub $0,1
     add $1,$2
     sub $2,$3

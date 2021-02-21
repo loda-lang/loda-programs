@@ -4,7 +4,7 @@
 lpb $0,1
   mov $1,$0
   sub $1,2
-  cal $1,52254
+  cal $1,52254 ; Partial sums of A050406.
   mov $0,1
   mul $1,3
 lpe

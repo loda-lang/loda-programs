@@ -6,7 +6,7 @@ add $4,1
 mov $0,$4
 sub $4,2
 mov $3,$4
-cal $0,230980
+cal $0,230980 ; Number of primes <= n, starting at n=0.
 mov $1,$0
 mov $2,$0
 sub $2,2

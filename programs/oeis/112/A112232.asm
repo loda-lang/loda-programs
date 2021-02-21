@@ -7,7 +7,7 @@ lpb $0,1
   cmp $3,0
   add $4,$3
   add $4,$2
-  cal $0,230980
+  cal $0,230980 ; Number of primes <= n, starting at n=0.
   add $0,$4
   div $0,2
   mod $4,$4

@@ -3,8 +3,8 @@
 
 mov $2,$0
 add $0,1
-cal $2,5
-cal $0,230980
+cal $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+cal $0,230980 ; Number of primes <= n, starting at n=0.
 add $0,$2
 mul $0,8
 mov $1,$0
