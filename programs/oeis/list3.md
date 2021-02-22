@@ -247,7 +247,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A153795](http://oeis.org/A153795) ([L04 program](153/A153795.asm)): 5 times octagonal numbers: a(n) = 5*n*(3*n-2).
 * [A153796](http://oeis.org/A153796) ([L04 program](153/A153796.asm)): 6 times octagonal numbers: a(n) = 6*n*(3*n-2).
 * [A153797](http://oeis.org/A153797) ([L04 program](153/A153797.asm)): 7 times octagonal numbers: a(n) = 7*n*(3*n-2).
-* [A153808](http://oeis.org/A153808) ([L05 program](153/A153808.asm)): 8 times octagonal numbers: 8*n*(3*n-2).
+* [A153808](http://oeis.org/A153808) ([L04 program](153/A153808.asm)): 8 times octagonal numbers: 8*n*(3*n-2).
 * [A153814](http://oeis.org/A153814) ([L03 program](153/A153814.asm)): a(n) = 1001*n.
 * [A153819](http://oeis.org/A153819) ([L08 program](153/A153819.asm)): Linear recurrence with a(n) = 3a(n-1) - a(n-2) + 2 = 4a(n-1) - 4a(n-2) + a(n-3). Full sequence for A153466.
 * [A153873](http://oeis.org/A153873) ([L07 program](153/A153873.asm)): a(n) = 9*Fibonacci(2n+1) - 1.
@@ -2166,7 +2166,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A170938](http://oeis.org/A170938) ([L07 program](170/A170938.asm)): 4^n+2^n+2.
 * [A170939](http://oeis.org/A170939) ([L05 program](170/A170939.asm)): 4^n-2^n+2.
 * [A170940](http://oeis.org/A170940) ([L06 program](170/A170940.asm)): 4^n-2^n-2.
-* [A170956](http://oeis.org/A170956) ([L08 program](170/A170956.asm)): Expansion of Product_{i=1..m} (1 + x^(4*i-1)) for m = 3.
+* [A170956](http://oeis.org/A170956) ([L06 program](170/A170956.asm)): Expansion of Product_{i=1..m} (1 + x^(4*i-1)) for m = 3.
 * [A171001](http://oeis.org/A171001) ([L11 program](171/A171001.asm)): Binomial(n-k,k)^2 where k = ceiling(n/4).
 * [A171074](http://oeis.org/A171074) ([L08 program](171/A171074.asm)): A115112 with initial term changed from 0 to 1.
 * [A171088](http://oeis.org/A171088) ([L16 program](171/A171088.asm)): To find 3 consecutive integers in the sequence, you have to take 4 consecutive terms, no more and no less.

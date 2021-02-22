@@ -1302,7 +1302,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A116757](http://oeis.org/A116757) ([L13 program](116/A116757.asm)): Number of permutations of length n which avoid the patterns 1324, 2314, 4312.
 * [A116774](http://oeis.org/A116774) ([L40 program](116/A116774.asm)): Number of permutations of length n which avoid the patterns 2143, 2341, 4312; or avoid the patterns 1234, 1432, 3412.
 * [A116796](http://oeis.org/A116796) ([L15 program](116/A116796.asm)): Number of permutations of length n which avoid the patterns 2314, 3241, 4132.
-* [A116845](http://oeis.org/A116845) ([L08 program](116/A116845.asm)): Number of permutations of length n which avoid the patterns 231, 12534.
+* [A116845](http://oeis.org/A116845) ([L04 program](116/A116845.asm)): Number of permutations of length n which avoid the patterns 231, 12534.
 * [A116882](http://oeis.org/A116882) ([L20 program](116/A116882.asm)): A number n is included if (highest odd divisor of n)^2 <= n.
 * [A116921](http://oeis.org/A116921) ([L11 program](116/A116921.asm)): a(n) = largest integer <= n/2 which is coprime to n.
 * [A116922](http://oeis.org/A116922) ([L14 program](116/A116922.asm)): a(n) = smallest integer >= n/2 which is coprime to n.
@@ -2285,7 +2285,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130520](http://oeis.org/A130520) ([L04 program](130/A130520.asm)): a(n) = Sum_{k=0..n} floor(k/5). (Partial sums of A002266.)
 * [A130526](http://oeis.org/A130526) ([L07 program](130/A130526.asm)): A permutation of the integers induced by the lower and upper Wythoff sequences.
 * [A130543](http://oeis.org/A130543) ([L03 program](130/A130543.asm)): Multiplicative persistence of n!.
-* [A130566](http://oeis.org/A130566) ([L47 program](130/A130566.asm)): Pyramidal 47-gonal numbers.
+* [A130566](http://oeis.org/A130566) ([L08 program](130/A130566.asm)): Pyramidal 47-gonal numbers.
 * [A130567](http://oeis.org/A130567) ([L05 program](130/A130567.asm)): Expansion of x*(2 - 7*x + 2*x^2)/((1-x)*(1-4*x)*(1-2*x)).
 * [A130568](http://oeis.org/A130568) ([L06 program](130/A130568.asm)): Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
 * [A130578](http://oeis.org/A130578) ([L04 program](130/A130578.asm)): Number of different possible rows (or columns) in an n X n crossword puzzle.
@@ -2505,6 +2505,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131722](http://oeis.org/A131722) ([L04 program](131/A131722.asm)): Period 6: repeat [0, 10, 10, 10, 10, 10].
 * [A131723](http://oeis.org/A131723) ([L14 program](131/A131723.asm)): a(2*n) = 1-n^2, a(2*n+1) = n*(n+1).
 * [A131724](http://oeis.org/A131724) ([L13 program](131/A131724.asm)): Period 6: repeat [1, 9, 7, 13, 11, 9].
+* [A131725](http://oeis.org/A131725) ([L21 program](131/A131725.asm)): Partial sums of A131711.
 * [A131726](http://oeis.org/A131726) ([L04 program](131/A131726.asm)): Pell numbers A000129 with 0 instead of last digit.
 * [A131727](http://oeis.org/A131727) ([L06 program](131/A131727.asm)): Pell numbers A000129 without last digit.
 * [A131728](http://oeis.org/A131728) ([L28 program](131/A131728.asm)): a(4n) = n, a(4n+1) = 2n+1, a(4n+2) = n+1, a(4n+3) = 0.

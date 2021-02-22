@@ -3,7 +3,7 @@
 
 mov $4,$0
 mov $5,$0
-cal $0,71222
+cal $0,71222 ; Smallest k such that gcd(n,k) = gcd(n+1,k+1).
 sub $0,1
 mov $3,16
 mul $5,$0
