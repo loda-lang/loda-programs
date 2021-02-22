@@ -25,7 +25,8 @@ There is a test suite in [test.cpp](/src/test.cpp) which can be executed using `
 ## 2. Mining Programs
 
 If you want to mine programs, great! Please fork this repo. Then go to the `src` folder and run `make`
-to build it. Then run `./loda mine` in the root folder to start mining!
+to build it. Then run `./loda mine` in the root folder to start mining! Found programs are automatically
+stored int the [programs/oeis](/programs/oeis) folder.
 
 If you want to use multiple CPUs, you can also try `mine_parallel.sh`. Caution: this additionally
 auto-commits found programs to your repo! If you found new or faster programs, you can open pull
