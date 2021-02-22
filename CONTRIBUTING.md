@@ -14,7 +14,7 @@ See the sections below for more details.
 Please familiarize yourself with the C++ code and open issues to discuss and plan changes.
 Apart from that, we follow the usual GitHub workflow using pull requests. 
 
-The best starting point for reading the code is probably [program.hpp](/src/include/program.hpp). It countains the model classes for LODA propgrams including operands, operations and programs. You can find the implementation of all arithmetics operations in [semantics.cpp](/src/semantics.cpp). Apart from container classes for sequences and memory, the rest of the operational semantics of programs is implemented in [interpreter.cpp](/src/interpreter.cpp).
+The best starting point for reading the code is probably [program.hpp](/src/include/program.hpp). It countains the model classes for LODA programs including operands, operations and programs. You can find the implementation of all arithmetics operations in [semantics.cpp](/src/semantics.cpp). Apart from container classes for sequences and memory, the rest of the operational semantics of programs is implemented in [interpreter.cpp](/src/interpreter.cpp).
 
 For mining, there are multiple generator implementations, which are used to create random programs. They are configured via [loda.json](/loda.json) and use statisctics from the existing programs stored in [stats](/stats). To index the target sequences, we use [Matcher](/src/include/matcher.hpp) classes. They allow matching of sequences modulo additional operations such as linear transformations.
 
