@@ -3,6 +3,4 @@
 
 mov $1,$0
 cal $0,38759 ; a(n) = ceiling(sqrt(n))*floor(sqrt(n)).
-sub $0,1
-add $1,1
 add $1,$0

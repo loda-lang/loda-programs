@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,173318 ; Partial sums of A005811.
-add $0,$1
-mov $1,$0
+add $1,$0
 add $1,1

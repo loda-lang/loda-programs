@@ -3,5 +3,5 @@
 
 add $0,2
 mov $1,$0
-cal $0,230980
+cal $0,230980 ; Number of primes <= n, starting at n=0.
 mod $1,$0

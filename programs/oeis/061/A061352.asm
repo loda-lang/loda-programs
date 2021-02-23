@@ -3,7 +3,6 @@
 
 add $0,5
 cal $0,61353 ; First column of array shown in A061352.
-mul $0,2
+mul $0,169
 mov $1,$0
-mul $1,2
-div $1,4
+div $1,169

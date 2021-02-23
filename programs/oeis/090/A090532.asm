@@ -3,36 +3,9 @@
 
 add $0,2
 lpb $0,1
-  mov $1,$0
-  mov $2,$1
-  cal $1,230980
-  sub $2,1
-  add $5,1
-  lpb $5,$0
-    mov $3,$1
-    mov $3,$3
-    sub $5,$3
-    sub $3,$1
-    lpb $3,106
-      mov $3,62967
-      mov $1,$0
-      mov $5,2
-    lpe
-    add $2,$1
-    add $5,$0
-    div $0,2
-  lpe
-  sub $0,$1
-  mov $1,$0
-  mul $3,$5
-  mov $2,$5
-  sub $1,1
+  mov $2,$0
+  cal $2,230980 ; Number of primes <= n, starting at n=0.
+  sub $0,$2
+  add $3,1
+  mov $1,$3
 lpe
-lpb $0,1
-  mul $3,6
-  div $0,2
-  add $0,1
-  gcd $1,4
-  sub $4,4
-lpe
-mov $1,$2

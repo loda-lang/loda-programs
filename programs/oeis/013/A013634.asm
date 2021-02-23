@@ -7,7 +7,7 @@ mov $3,$0
 add $0,$2
 lpb $0,1
   mov $1,$0
-  cal $1,159477
+  cal $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   mov $0,0
 lpe
 add $1,$3
