@@ -1077,7 +1077,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061319](http://oeis.org/A061319) ([L14 program](061/A061319.asm)): Column 4 of A061315.
 * [A061347](http://oeis.org/A061347) ([L05 program](061/A061347.asm)): Period 3: repeat [1, 1, -2].
 * [A061349](http://oeis.org/A061349) ([L32 program](061/A061349.asm)): Sum of antidiagonals of A060736.
-* [A061352](http://oeis.org/A061352) ([L06 program](061/A061352.asm)): First row of array shown below.
+* [A061352](http://oeis.org/A061352) ([L05 program](061/A061352.asm)): First row of array shown below.
 * [A061353](http://oeis.org/A061353) ([L11 program](061/A061353.asm)): First column of array shown in A061352.
 * [A061370](http://oeis.org/A061370) ([L21 program](061/A061370.asm)): a(n) = floor(ratio of product and sum of first n numbers).
 * [A061392](http://oeis.org/A061392) ([L25 program](061/A061392.asm)): a(n) = a(floor(n/3)) + a(ceiling(n/3)) with a(0) = 0 and a(1) = 1.
@@ -1813,7 +1813,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070403](http://oeis.org/A070403) ([L04 program](070/A070403.asm)): a(n) = 7^n mod 9.
 * [A070404](http://oeis.org/A070404) ([L07 program](070/A070404.asm)): a(n) = 7^n mod 11.
 * [A070405](http://oeis.org/A070405) ([L07 program](070/A070405.asm)): a(n) = 7^n mod 13.
-* [A070406](http://oeis.org/A070406) ([L07 program](070/A070406.asm)): a(n) = 7^n mod 15.
+* [A070406](http://oeis.org/A070406) ([L08 program](070/A070406.asm)): a(n) = 7^n mod 15.
 * [A070407](http://oeis.org/A070407) ([L06 program](070/A070407.asm)): a(n) = 7^n mod 17.
 * [A070408](http://oeis.org/A070408) ([L07 program](070/A070408.asm)): a(n) = 7^n mod 22.
 * [A070409](http://oeis.org/A070409) ([L07 program](070/A070409.asm)): a(n) = 7^n mod 23.
