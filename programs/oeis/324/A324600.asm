@@ -15,7 +15,7 @@ lpb $2,1
     sub $6,1
     add $0,$6
     sub $0,1
-    cal $0,166257
+    cal $0,166257 ; Odd numbers not of the form prime(k) + phi(prime(k)).
     add $0,2
     pow $0,2
     mov $3,$0

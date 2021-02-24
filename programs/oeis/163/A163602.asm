@@ -8,7 +8,7 @@ lpb $3,1
   sub $3,1
   add $0,$3
   sub $0,1
-  cal $0,166257
+  cal $0,166257 ; Odd numbers not of the form prime(k) + phi(prime(k)).
   add $0,1
   pow $0,2
   mov $2,$3
