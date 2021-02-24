@@ -1,17 +1,6 @@
 ; A293838: "Look once to the left" sequence starting with 1,2 (see comment).
 ; 1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,2
 
-cal $0,164349
-mov $3,$0
-lpb $3,1
-  sub $1,169
-  lpb $1,1
-    add $0,2
-    mod $1,7
-  lpe
-  mov $1,$0
-  sub $2,1
-  add $3,$2
-lpe
-div $1,3
-add $1,1
+cal $0,164349 ; The limit of the string "0, 1" under the operation 'repeat string twice and remove last symbol'.
+add $0,1
+mov $1,$0
