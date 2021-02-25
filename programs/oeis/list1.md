@@ -999,7 +999,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060788](http://oeis.org/A060788) ([L09 program](060/A060788.asm)): a(n) = 9*(n-2)^2 * (n^2 - 2*n - 1).
 * [A060789](http://oeis.org/A060789) ([L04 program](060/A060789.asm)): a(n) = n / (gcd(n,2) * gcd(n,3)).
 * [A060791](http://oeis.org/A060791) ([L04 program](060/A060791.asm)): a(n) = n / gcd(n,5).
-* [A060798](http://oeis.org/A060798) ([L07 program](060/A060798.asm)): Numbers k such that difference between the upper and lower central divisors of k is 1.
+* [A060798](http://oeis.org/A060798) ([L06 program](060/A060798.asm)): Numbers k such that difference between the upper and lower central divisors of k is 1.
 * [A060801](http://oeis.org/A060801) ([L09 program](060/A060801.asm)): Invert transform of odd numbers: a(n) = Sum_{k=1..n} (2*k+1)*a(n-k), a(0)=1.
 * [A060805](http://oeis.org/A060805) ([L11 program](060/A060805.asm)): Numerators of special continued fraction for 2*zeta(3).
 * [A060816](http://oeis.org/A060816) ([L06 program](060/A060816.asm)): a(0) = 1; a(n) = (5*3^(n-1) - 1)/2 for n > 0.
@@ -1051,6 +1051,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061082](http://oeis.org/A061082) ([L36 program](061/A061082.asm)): a(n) = A053061(n)/n.
 * [A061084](http://oeis.org/A061084) ([L13 program](061/A061084.asm)): Fibonacci-type sequence based on subtraction: a(0) = 1, a(1) = 2 and a(n) = a(n-2)-a(n-1).
 * [A061085](http://oeis.org/A061085) ([L18 program](061/A061085.asm)): a(n) = A019550(n) / 3.
+* [A061086](http://oeis.org/A061086) ([L12 program](061/A061086.asm)): a(n) is the concatenation of n with n^3.
 * [A061087](http://oeis.org/A061087) ([L42 program](061/A061087.asm)): a(n) = A061086(n) / n.
 * [A061094](http://oeis.org/A061094) ([L12 program](061/A061094.asm)): The alternating group A_n contains an element x which is not conjugate to its inverse (equivalently not all the entries in the character table of A_n are real numbers).
 * [A061099](http://oeis.org/A061099) ([L19 program](061/A061099.asm)): Squares with digital root 1.
@@ -4555,7 +4556,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099777](http://oeis.org/A099777) ([L04 program](099/A099777.asm)): Number of divisors of 2n.
 * [A099801](http://oeis.org/A099801) ([L03 program](099/A099801.asm)): PrimePi(2n+1), the number of primes less than or equal to 2n+1.
 * [A099802](http://oeis.org/A099802) ([L06 program](099/A099802.asm)): Bisection of A000720.
-* [A099813](http://oeis.org/A099813) ([L05 program](099/A099813.asm)): Bisection of A007318.
+* [A099813](http://oeis.org/A099813) ([L04 program](099/A099813.asm)): Bisection of A007318.
 * [A099820](http://oeis.org/A099820) ([L07 program](099/A099820.asm)): Even nonnegative integers in base 2 (bisection of A007088).
 * [A099821](http://oeis.org/A099821) ([L08 program](099/A099821.asm)): Odd positive integers in base 2 (bisection of A007088).
 * [A099837](http://oeis.org/A099837) ([L08 program](099/A099837.asm)): Expansion of (1 - x^2) / (1 + x + x^2) in powers of x.

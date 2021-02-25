@@ -2058,7 +2058,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169865](http://oeis.org/A169865) ([L10 program](169/A169865.asm)): The sequence T of a pair S, T generalizing Golomb's sequence A001462 and the pair A093848, A169863. See Comments for definition.
 * [A169919](http://oeis.org/A169919) ([L06 program](169/A169919.asm)): a(n) = n*n in the arithmetic where digits are added in base 10 (as usual) but when digits are to be multiplied they are also added in base 10.
 * [A169932](http://oeis.org/A169932) ([L03 program](169/A169932.asm)): a(n) = 0+n in the arithmetic defined in A169918.
-* [A169933](http://oeis.org/A169933) ([L07 program](169/A169933.asm)): a(n) = 2+n in the arithmetic defined in A169918.
+* [A169933](http://oeis.org/A169933) ([L06 program](169/A169933.asm)): a(n) = 2+n in the arithmetic defined in A169918.
 * [A169938](http://oeis.org/A169938) ([L05 program](169/A169938.asm)): a(n) = n*(n+1)*(n*(n+1)+1).
 * [A169964](http://oeis.org/A169964) ([L03 program](169/A169964.asm)): Numbers whose decimal expansion contains only 0's and 5's.
 * [A169965](http://oeis.org/A169965) ([L03 program](169/A169965.asm)): Numbers whose decimal expansion contains only 0's and 2's.
@@ -2925,7 +2925,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180355](http://oeis.org/A180355) ([L04 program](180/A180355.asm)): n^5+5n
 * [A180356](http://oeis.org/A180356) ([L04 program](180/A180356.asm)): n^6+6n
 * [A180357](http://oeis.org/A180357) ([L05 program](180/A180357.asm)): a(n) = n^7 + 7*n.
-* [A180358](http://oeis.org/A180358) ([L06 program](180/A180358.asm)): n^8+8n
+* [A180358](http://oeis.org/A180358) ([L05 program](180/A180358.asm)): n^8+8n
 * [A180359](http://oeis.org/A180359) ([L05 program](180/A180359.asm)): n^9+9n
 * [A180413](http://oeis.org/A180413) ([L04 program](180/A180413.asm)): Total number of possible knight moves on an n X n X n chessboard, if the knight is placed anywhere
 * [A180415](http://oeis.org/A180415) ([L06 program](180/A180415.asm)): (n^3 - 3n^2 + 14n - 6)/6.

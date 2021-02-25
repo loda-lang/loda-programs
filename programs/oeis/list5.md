@@ -503,7 +503,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A260307](http://oeis.org/A260307) ([L13 program](260/A260307.asm)): a(n) = a(n-1) + a(n-2) - a(n-3) + a(n-6) - a(n-7) - a(n-8) + a(n-9) with a(0) - a(8) as shown below.
 * [A260316](http://oeis.org/A260316) ([L10 program](260/A260316.asm)): n/3 if 3 divides n, else n-1.
 * [A260440](http://oeis.org/A260440) ([L29 program](260/A260440.asm)): Unlucky numbers removed at the stage four of Lucky sieve.
-* [A260446](http://oeis.org/A260446) ([L07 program](260/A260446.asm)): Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1,0) and midword sequence (a(n)); see Comments.
+* [A260446](http://oeis.org/A260446) ([L03 program](260/A260446.asm)): Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1,0) and midword sequence (a(n)); see Comments.
 * [A260479](http://oeis.org/A260479) ([L06 program](260/A260479.asm)): Positions of 0 in the infinite palindromic word at A260455.
 * [A260483](http://oeis.org/A260483) ([L05 program](260/A260483.asm)): Beatty sequence for e^(1/Pi) = A179706.
 * [A260637](http://oeis.org/A260637) ([L04 program](260/A260637.asm)): Sums of seven consecutive squares: a(n) = n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2 + (n+4)^2 + (n+5)^2 + (n+6)^2.
@@ -2286,7 +2286,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A292344](http://oeis.org/A292344) ([L06 program](292/A292344.asm)): The first Zagreb index of the Aztec diamond AZ(n) (see the Ramanes et al. reference, Theorem 2.1).
 * [A292345](http://oeis.org/A292345) ([L06 program](292/A292345.asm)): The second Zagreb index of the Aztec diamond AZ(n) (see the Ramanes et al. reference, Theorem 2.2).
 * [A292346](http://oeis.org/A292346) ([L07 program](292/A292346.asm)): The forgotten topological index of the Aztec diamond AZ(n) (see the Ramanes et al. reference, Theorem 2.1).
-* [A292350](http://oeis.org/A292350) ([L06 program](292/A292350.asm)): Number of Lyndon words (aperiodic necklaces) with 6 beads of n colors.
+* [A292350](http://oeis.org/A292350) ([L04 program](292/A292350.asm)): Number of Lyndon words (aperiodic necklaces) with 6 beads of n colors.
 * [A292360](http://oeis.org/A292360) ([L08 program](292/A292360.asm)): a(n) = n*(Lucas(n)*Lucas(n+1) - 2).
 * [A292400](http://oeis.org/A292400) ([L13 program](292/A292400.asm)): p-INVERT of (1,2,2,2,2,2,2,...) (A040000), where p(S) = (1 - S)^2.
 * [A292410](http://oeis.org/A292410) ([L20 program](292/A292410.asm)): Difference between (2n+1)^2 and highest power of 2 less than or equal to (2n+1)^2.

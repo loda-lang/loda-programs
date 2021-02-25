@@ -493,7 +493,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105577](http://oeis.org/A105577) ([L13 program](105/A105577.asm)): a(n+3) = 2a(n+2) - 3a(n+1) + 2a(n); a(0) = 1, a(1) = 5, a(2) = 6.
 * [A105578](http://oeis.org/A105578) ([L13 program](105/A105578.asm)): a(n+3) = 2a(n+2) - 3a(n+1) + 2a(n); a(0) = 1, a(1) = 1, a(2) = 0.
 * [A105579](http://oeis.org/A105579) ([L13 program](105/A105579.asm)): a(n+3) = 2a(n+2) - 3a(n+1) + 2a(n); a(0) = 1, a(1) = 3, a(2) = 4.
-* [A105635](http://oeis.org/A105635) ([L08 program](105/A105635.asm)): a(n) = (2*Pell(n+2) - (1+(-1)^n))/4.
+* [A105635](http://oeis.org/A105635) ([L05 program](105/A105635.asm)): a(n) = (2*Pell(n+2) - (1+(-1)^n))/4.
 * [A105636](http://oeis.org/A105636) ([L06 program](105/A105636.asm)): Transform of n^3 by the Riordan array (1/(1-x^2), x).
 * [A105637](http://oeis.org/A105637) ([L05 program](105/A105637.asm)): a(n) = a(n-2)+a(n-3)-a(n-5).
 * [A105638](http://oeis.org/A105638) ([L06 program](105/A105638.asm)): Maximum number of intersections in self-intersecting n-gon.
@@ -1455,6 +1455,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118755](http://oeis.org/A118755) ([L07 program](118/A118755.asm)): Smallest prime >= 6*n.
 * [A118760](http://oeis.org/A118760) ([L01 program](118/A118760.asm)): A118758(A118758(n)).
 * [A118777](http://oeis.org/A118777) ([L06 program](118/A118777.asm)): a(0) = 1; n > 0: a(n) = a(n-1) + d, d = -/+1 if n is prime/nonprime.
+* [A118821](http://oeis.org/A118821) ([L02 program](118/A118821.asm)): 2-adic continued fraction of zero, where a(n) = 2 if n is odd, -A006519(n/2) otherwise.
 * [A118824](http://oeis.org/A118824) ([L08 program](118/A118824.asm)): 2-adic continued fraction of zero, where a(n) = -2 if n is odd, A006519(n/2) otherwise.
 * [A118827](http://oeis.org/A118827) ([L09 program](118/A118827.asm)): 2-adic continued fraction of zero, where a(n) = 1 if n is odd, otherwise -2*A006519(n/2).
 * [A118828](http://oeis.org/A118828) ([L05 program](118/A118828.asm)): Numerators of the convergents of the 2-adic continued fraction of zero given by A118827.
@@ -3278,7 +3279,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139264](http://oeis.org/A139264) ([L03 program](139/A139264.asm)): a(n) = 70*n - 63.
 * [A139267](http://oeis.org/A139267) ([L04 program](139/A139267.asm)): Twice octagonal numbers: 2*n*(3*n-2).
 * [A139268](http://oeis.org/A139268) ([L04 program](139/A139268.asm)): Twice nonagonal numbers (or twice 9-gonal numbers): a(n) = n(7n-5).
-* [A139270](http://oeis.org/A139270) ([L27 program](139/A139270.asm)): Twice nonprime numbers.
+* [A139270](http://oeis.org/A139270) ([L05 program](139/A139270.asm)): Twice nonprime numbers.
 * [A139271](http://oeis.org/A139271) ([L04 program](139/A139271.asm)): a(n) = 2*n*(4*n-3).
 * [A139272](http://oeis.org/A139272) ([L04 program](139/A139272.asm)): a(n) = n*(8*n-5).
 * [A139273](http://oeis.org/A139273) ([L04 program](139/A139273.asm)): a(n) = n*(8*n - 3).

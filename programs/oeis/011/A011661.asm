@@ -5,7 +5,7 @@ mul $0,3
 mov $5,$0
 lpb $0,$5
   sub $0,2
-  cal $0,11749
+  cal $0,11749 ; Expansion of 1/(1 + x^3 + x^5) mod 2.
   mov $1,$5
   lpb $0,2
     sub $1,1
