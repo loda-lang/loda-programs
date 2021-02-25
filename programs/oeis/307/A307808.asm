@@ -1,10 +1,9 @@
 ; A307808: Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 ; 3,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,4
-trn $1,$0
-mov $2,$0
-add $2,9
-mul $1,$2
-mul $1,8
-mod $1,5
+add $0,8
+lpb $0,1
+  div $0,3
+  pow $0,2
+  add $1,1
+lpe
