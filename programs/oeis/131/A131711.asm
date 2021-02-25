@@ -3,6 +3,4 @@
 
 cal $0,129 ; Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
 mod $0,10
-mul $0,405064233
 mov $1,$0
-div $1,405064233
