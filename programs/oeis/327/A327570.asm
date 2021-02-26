@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $2,1
-cal $0,10
+cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mul $2,$0
 mul $0,$2
 mov $1,$0

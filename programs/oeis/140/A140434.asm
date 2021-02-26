@@ -16,7 +16,7 @@ lpb $12,1
     mov $0,$7
     sub $9,1
     sub $0,$9
-    cal $0,10
+    cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
     add $0,2
     mov $1,$0
     sub $1,2

@@ -3,7 +3,7 @@
 
 mov $2,$0
 trn $0,1
-cal $0,10
+cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,$2
 mov $1,1
 mov $3,$0

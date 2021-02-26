@@ -3,6 +3,6 @@
 
 add $0,1
 mul $0,2
-cal $0,338101
+cal $0,338101 ; Smallest odd prime dividing n is a(n)-th prime, or 0 if no such prime exists.
 mov $1,$0
 sub $1,1

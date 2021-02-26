@@ -8,7 +8,7 @@ lpb $2,1
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,10
+  cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$0
   pow $3,2
   add $1,$3

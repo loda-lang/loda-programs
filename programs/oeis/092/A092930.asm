@@ -10,7 +10,7 @@ lpb $8,1
   add $0,$8
   sub $0,1
   add $3,$0
-  cal $0,282671
+  cal $0,282671 ; Twice composite numbers.
   mul $3,2
   mov $4,2
   add $4,$3

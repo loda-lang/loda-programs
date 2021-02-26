@@ -32,7 +32,7 @@ lpb $18,1
         sub $8,1
         sub $0,$8
         trn $0,1
-        cal $0,10
+        cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
         add $0,1
         mov $1,$0
         sub $1,1

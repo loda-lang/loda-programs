@@ -1,4 +1,4 @@
-; A081245: Number of days in months in the Haab year of Mayan/mesoamerican calendars.
+; A081245: Number of days in months in the Haab year of Mayan/Mesoamerican calendars.
 ; 20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,5,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,5,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,5
 
 add $0,1

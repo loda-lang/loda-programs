@@ -6,7 +6,7 @@ mov $1,2
 add $1,$0
 mul $0,$1
 add $0,$1
-cal $0,57237
+cal $0,57237 ; Maximum k <= n such that 1, 2, ..., k are all relatively prime to n.
 mov $1,$0
 sub $1,2
 div $1,2

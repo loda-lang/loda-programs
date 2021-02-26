@@ -9,7 +9,7 @@ lpb $5,1
   mov $0,$2
   sub $5,1
   sub $0,$5
-  cal $0,10
+  cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $1,$0
   sub $1,1
   mul $1,8

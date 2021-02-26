@@ -4,7 +4,7 @@
 add $0,1
 mul $0,2
 mov $2,$0
-cal $0,10
+cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,$2
 mov $1,2
 sub $1,$0

@@ -10,7 +10,7 @@ lpb $29,1
   sub $29,1
   sub $0,$29
   add $1,$0
-  cal $0,10
+  cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $0,6
   mul $1,$0
   add $0,$1
