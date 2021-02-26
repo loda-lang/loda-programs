@@ -8,4 +8,4 @@ lpb $2,1
   add $1,1
   mov $2,0
 lpe
-cal $1,127712
+cal $1,127712 ; Row sums of the inverse of the triangle A(n,k) = 1/F(n+1) if k <= n <= 2k, 0 otherwise.

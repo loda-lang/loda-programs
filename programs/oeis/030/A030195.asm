@@ -12,7 +12,7 @@ lpb $29,1
   lpb $0,1
     mov $1,$0
     sub $1,1
-    cal $1,103820
+    cal $1,103820 ; Whitney transform of 3^n.
     mov $0,$5
   lpe
   mov $30,$29

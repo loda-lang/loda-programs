@@ -8,6 +8,6 @@ lpb $2,1
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,86905
+  cal $0,86905 ; a(n) = Sum_{k=0..n} (-1)^(n-k)*binomial(k,floor(k/2)).
   add $1,$0
 lpe
