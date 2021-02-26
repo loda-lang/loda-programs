@@ -1,7 +1,8 @@
 ; A276086 o=0: Prime product form of primorial base expansion of n: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 ; Coded manually 2021-02-26 by Antti Karttunen, https://github.com/karttu
 ; With signed 64-bit implementation this works only up to n=2306, as A276086(2306) = 5721585125405716875 is still < 2^63.
-; 
+; 1,2,3,6,9,18,5,10,15,30,45,90,25,50,75,150,225,450,125,250,375,750,1125,2250,625,1250,1875,3750,5625,11250,7,14,21,42,63,126,35,70,105,210,315,630,175,350,525,1050,1575,3150,875,1750,2625,5250,7875,15750,4375,8750,13125,26250,39375,78750,49,98,147,294,441,882,245,490,735,1470,2205,4410,1225,2450 
+;
 ; Essentially, we implement the algorithm of the following PARI-script:
 ;
 ; A276086(n) =
@@ -35,7 +36,9 @@
 ; A051903(a(n)) = A328114(n). [Largest digit]
 ; A055396(a(n)) = A257993(n). [Number of trailing zeros + 1] , A276084(n) = A257993(n)-1.
 ;
-; See the Formula-section of https://oeis.org/A276086 for more.
+; And also things like:
+; gcd(n, a(n))  = A324198(n).
+; See the Formula-section of https://oeis.org/A276086 for many more.
 ;
 mov $1,1     ;; Initialize the result-register, the result (which is a product) is constructed to this
 mov $2,1     ;; Last prime used so far, this one from the beginning of the 20th century (see A008578)
@@ -43,8 +46,7 @@ mov $3,1     ;; Current primorial.
 mov $8,$0    ;; Main loop counter.
 mov $9,1     ;; Main loop "decrement register" (for delayed falling out from the loop, yes, kludges!)
 lpb $8,1     ;; Loop until n is zero, to compute A276086(n). Note that A235224(n) <= n for all n >= 0.
-  mov $5,$2  ;; Set search-limit for "find-next-prime loop" below
-  add $5,$5  ;;  = 2*current prime, by Bertrand's postulate we will surely find the next prime!
+  mov $5,$2  ;; Set search-limit for "find-next-prime loop" below, this should be enough by Bertrand's postulate
   lpb $5,1   ;; (Bertrand is a great friend of all LODA-coders!). Start the inner loop.
     add $2,1   ;; First increment the prime past previous
     mov $6,$2  ;; And make temp. copy of it
@@ -68,5 +70,5 @@ lpb $8,1     ;; Loop until n is zero, to compute A276086(n). Note that A235224(n
   sub $8,$9  ;; Subtract the loop counter now, before possibly updating $8
   mov $7,$0  ;; Check whether $0 has reached zero?
   cmp $7,0
-  sub $9,$7  ; If so, then set $8 from 1 to 0 (to stop in the next iteration!)
+  sub $9,$7  ; If so, then set $9 from 1 to 0 (so that $8 will no more be decreased in the _next_ iteration, and the loop will terminate)
 lpe

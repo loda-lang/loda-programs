@@ -10,8 +10,7 @@ mov $3,1     ;; Current primorial.
 mov $8,$0    ;; Main loop counter.
 mov $9,1     ;; Main loop "decrement register" (for delayed falling out from the loop, yes, kludges!)
 lpb $8,1     ;; Loop until n is zero, to compute A276086(n). Note that A235224(n) <= n for all n >= 0.
-  mov $5,$2  ;; Set search-limit for "find-next-prime loop" below
-  add $5,$5  ;;  = 2*current prime, by Bertrand's postulate we will surely find the next prime!
+  mov $5,$2  ;; Set search-limit for "find-next-prime loop" below, this should be enough by Bertrand's postulate
   lpb $5,1   ;; (Bertrand is a great friend of all LODA-coders!). Start the inner loop.
     add $2,1   ;; First increment the prime past previous
     mov $6,$2  ;; And make temp. copy of it
@@ -33,5 +32,5 @@ lpb $8,1     ;; Loop until n is zero, to compute A276086(n). Note that A235224(n
   sub $8,$9  ;; Subtract the loop counter now, before possibly updating $8
   mov $7,$0  ;; Check whether $0 has reached zero?
   cmp $7,0
-  sub $9,$7  ; If so, then set $8 from 1 to 0 (to stop in the next iteration!)
+  sub $9,$7  ; If so, then set $9 from 1 to 0 (so that $8 will no more be decreased in the _next_ iteration, and the loop will terminate)
 lpe
