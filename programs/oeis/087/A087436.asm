@@ -19,7 +19,7 @@ lpe
 ; Essentially implemented by counting the number of iterations of A032742 needed to reach 1 from n.
 ;
 mov $1,0     ; Initialize the result-register, which is the sum of prime exponents
-mov $2,2     ; This is the smallest prime-divisor encountered so far.
+mov $2,3     ; This is the smallest prime-divisor encountered so far. 3 is the smallest possible for this.
 mov $3,$0
 mov $6,$0    ; Have an original A000265(n) retained in a safe place.
 lpb $3,1     ; Note that A001222(n) < n always.
@@ -31,7 +31,8 @@ lpb $3,1     ; Note that A001222(n) < n always.
   pow $5,$4
   div $0,$5    ; Divide n by $2^1 (= $2) or by $2^0 (= 1) depending on whether $2 is a divisor of (the remaining) n.
   cmp $4,0
-  add $2,$4    ; Add one to spf-candidate if the current one did not divide $0
+  mul $4,2     ; <-- The minimizer will throw this away, but it is actually useful, as there will be only half of the prime-searching iterations!
+  add $2,$4    ; Add two to spf-candidate if the current one did not divide $0. We are using only the odd primes here!
   mov $4,$0
   cmp $4,1
   cmp $4,0
