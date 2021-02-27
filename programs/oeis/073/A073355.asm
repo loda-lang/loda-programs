@@ -8,6 +8,6 @@ lpb $2,1
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,7947
+  cal $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
   add $1,$0
 lpe

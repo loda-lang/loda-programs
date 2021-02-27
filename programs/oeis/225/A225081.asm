@@ -3,9 +3,5 @@
 
 add $0,1
 cal $0,166242 ; Sequence generated from A014577, the dragon curve.
-mul $0,2
 mov $1,$0
-mul $1,50
-sub $1,100
-div $1,200
-add $1,1
+div $1,2

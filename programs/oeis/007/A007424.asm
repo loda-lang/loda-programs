@@ -9,7 +9,7 @@ lpb $4,1
     mov $1,$3
     mov $2,$0
     mov $4,$3
-    cal $2,8833
+    cal $2,8833 ; Largest square dividing n.
   lpe
 lpe
 div $1,2

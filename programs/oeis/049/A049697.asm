@@ -5,7 +5,7 @@ mul $0,2
 lpb $0,1
   mov $2,$0
   div $2,2
-  cal $2,10
+  cal $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $0,1
   mul $2,2
   add $1,$2
