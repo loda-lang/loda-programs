@@ -20,13 +20,12 @@ lpe
 ; Then follows the final loop, where we divide every instance of that $1 out of n. 
 ; Note that for n=1, $1 is erroneously 3, but valuation(1,3) = 0, which is just what we want!
 ; Now an innovation: Use $0 itself as a loop register, and just make sure that div is effectively no-op when $1 does not divide $0 anymore
-mov $3,$1    ; Have an extra copy of spf in $3.
 lpb $0,1
   mov $4,$0
   mod $4,$1
   cmp $4,0
-  pow $3,$4    ; we divide either with $1 (if it still divides $0) or with 1 if it does not.
-  div $0,$3
+  pow $1,$4    ; we divide either with $1 (if it still divides $0) or with 1 if it does not. (it doesn't matter if $1 is ruined, because then we have finished anyways!)
+  div $0,$1
   add $2,1
 lpe
 pow $1,$2

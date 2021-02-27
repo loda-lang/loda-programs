@@ -19,13 +19,12 @@ lpe
 ; Note that for n=1, $2 is erroneously 3, but valuation(1,3) = 0, which is just what we want!
 ; Now an innovation: Use $0 itself as a loop register, and just make sure that div is effectively no-op when $2 does not divide $0 anymore
 mov $1,0     ; Initialize the result-register, which will be the prime exponent of the least dividing prime (0 if n=1).
-mov $3,$2    ; Have an extra copy of spf in $2.
 lpb $0,1
   mov $4,$0
   mod $4,$2
   cmp $4,0
-  pow $3,$4    ; we divide either with $2 (if it still divides $0) or with 1 if it does not.
-  div $0,$3
+  pow $2,$4    ; we divide either with $2 (if it still divides $0) or with 1 if it does not. (Ruination of $2 at the end does not matter!)
+  div $0,$2
   add $1,1
 lpe
 mov $1,$0
