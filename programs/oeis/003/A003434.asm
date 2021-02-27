@@ -3,7 +3,7 @@
 
 lpb $0,1
   mov $3,$0
-  cal $3,10
+  cal $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $0,$3
   sub $0,1
   add $2,153793

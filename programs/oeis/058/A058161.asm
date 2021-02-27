@@ -3,5 +3,5 @@
 
 mov $1,$0
 fac $1
-cal $0,10
+cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 div $1,$0

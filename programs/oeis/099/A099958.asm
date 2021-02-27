@@ -10,7 +10,7 @@ lpb $0,1
   div $0,2
   add $1,1
   sub $2,1
-  cal $1,10
+  cal $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $0,1
   add $2,$1
 lpe
