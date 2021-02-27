@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,1
-cal $0,282671
+cal $0,282671 ; Twice composite numbers.
 mov $1,$0
 sub $1,12
 div $1,2
