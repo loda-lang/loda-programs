@@ -49,6 +49,7 @@ Options:
   -p <number>      Maximum physical memory in MB (default:1024)
   -c <number>      Maximum number of interpreter cycles (default:10000000)
   -m <number>      Maximum number of used memory cells (default:100000)
+  -o <number>      Evaluate starting from a given offset (default:0)
   -s               Evaluate to number of execution steps
   -r               Search for programs of linear sequences (slow)
   -x               Optimize and overwrite existing programs
