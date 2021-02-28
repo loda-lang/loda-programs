@@ -59,7 +59,7 @@ Options:
 
 #### evaluate (eval)
 
-Evaluate a LODA program to an integer sequence. For example, run `./loda eval programs/oeis/000/A000045.asm` to generate the first terms of the Fibonacci sequence. Use the option `-t` to set the number of terms to be calculated.
+Evaluate a LODA program to an integer sequence. Takes a path to a program (`.asm` file) or the ID an OEIS sequence as argument. For example, run `./loda eval A000045` to generate the first terms of the Fibonacci sequence. Use the option `-t` to set the number of terms to be calculated and `-o` to change the start offset.
 
 #### optimize (opt)
 
