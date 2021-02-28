@@ -8,7 +8,7 @@
 ; a(n) = a(A032742(n)) * A020639(n) + A032742(n), for n > 1.
 ;
 ; mov $1,0    ; Initialize the result-register, the result (which is a sum) is constructed to this (such zero-inits actually not needed in LODA!)
-mov $2,2     ; This is the smallest prime-divisor encountered so far, this one from the beginning of the 20th century (see A008578)
+mov $2,2     ; This is the smallest prime-divisor we have encountered so far.
 mov $5,1     ; Current product m in the above PARI-script.
 lpb $0,1     ; Start the main loop. We stop when there's nothing remaining in $0 anymore. Guaranteed to decrease on every iteration.
   mov $3,$0    ; What's remaining of $0 is safe upper limit for finding its smallest prime factor.
