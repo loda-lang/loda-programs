@@ -8,7 +8,7 @@ lpb $130,1
   mov $0,$128
   sub $130,1
   sub $0,$130
-  cal $0,293810
+  cal $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
   lpb $0,1
     add $0,8
     div $0,6

@@ -3,6 +3,4 @@
 
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mod $0,6
-add $0,12
 mov $1,$0
-sub $1,12

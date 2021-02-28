@@ -8,7 +8,7 @@ lpb $3,1
   mov $0,$7
   sub $3,1
   sub $0,$3
-  cal $0,297086
+  cal $0,297086 ; a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
   add $4,10
   mov $5,$0
   add $5,2
