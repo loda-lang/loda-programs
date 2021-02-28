@@ -8,7 +8,7 @@ add $2,1
 sub $2,$0
 mov $3,$2
 mul $2,2
-cal $0,10
+cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mul $0,$2
 mul $2,$3
 mul $0,$2
