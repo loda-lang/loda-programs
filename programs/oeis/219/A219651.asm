@@ -3,10 +3,4 @@
 
 mov $1,$0
 cal $0,34968 ; Minimal number of factorials that add to n.
-mov $2,2
-sub $2,$0
-add $2,2
-add $2,$1
-sub $2,$1
-add $1,$2
-sub $1,4
+sub $1,$0
