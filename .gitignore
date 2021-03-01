@@ -1,6 +1,7 @@
 *.o
 /loda
 /completer.hist
+/.DS_Store
 /.settings
 /.vscode
 /stats/*.png

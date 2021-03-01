@@ -3,6 +3,4 @@
 
 cal $0,169611 ; Number of prime divisors of n that are not greater than 3, counted with multiplicity.
 mod $0,2
-mul $0,28
 mov $1,$0
-div $1,28

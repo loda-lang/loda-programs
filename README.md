@@ -49,6 +49,7 @@ Options:
   -p <number>      Maximum physical memory in MB (default:1024)
   -c <number>      Maximum number of interpreter cycles (default:10000000)
   -m <number>      Maximum number of used memory cells (default:100000)
+  -o <number>      Evaluate starting from a given offset (default:0)
   -s               Evaluate to number of execution steps
   -r               Search for programs of linear sequences (slow)
   -x               Optimize and overwrite existing programs
@@ -58,7 +59,7 @@ Options:
 
 #### evaluate (eval)
 
-Evaluate a LODA program to an integer sequence. For example, run `./loda eval programs/oeis/000/A000045.asm` to generate the first terms of the Fibonacci sequence. Use the option `-t` to set the number of terms to be calculated.
+Evaluate a LODA program to an integer sequence. Takes a path to a program (`.asm` file) or the ID an OEIS sequence as argument. For example, run `./loda eval A000045` to generate the first terms of the Fibonacci sequence. Use the option `-t` to set the number of terms to be calculated and `-o` to change the start offset.
 
 #### optimize (opt)
 
@@ -100,7 +101,7 @@ Programs operate on memory consisting of an unbounded sequence of memory cells `
 
 1. __Constants__, for example 5.
 2. __Direct memory access__, for example `$5`. Reads or writes the value of the fifth memory cell.
-3. __Indirect memory access__, for example `$$7`. Reads the value at memory cell #7 and interpretes it as an address. For instance, if the value of `$7` is 13, then `$$7` accesses the memory cell #13.
+3. __Indirect memory access__, for example `$$7`. Reads the value at memory cell #7 and interprets it as an address. For instance, if the value of `$7` is 13, then `$$7` accesses the memory cell #13.
 
 ### Arithmetic Operations
 
@@ -126,7 +127,7 @@ The table below summarizes the operations currently supported by LODA. We use th
 
 The instructions `lpb x,y` ... `lpe` define the beginning and the end of a so-called "lexicographical-order descent loop." The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynomial) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. Since we allow negative integers, we consider the absolute values. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
-Below you can find a simple example of a for-loop. It first assigns 1 to the output cell `$1`. Inside the loop, the input cell `$0` is counted down to zero and in every step `$1` is multiplied by 2. Note that this could be also achieved without loops using the `pow` operation.
+Below you can find a simple example of a for-loop. It first assigns 1 to the output cell `$1`. Inside the loop, the input cell `$0` is counted down to zero and in every step `$1` is multiplied by 5. Note that this could be also achieved without loops using the `pow` operation.
 
 ```asm
 mov $1,1      ; assign $1:=1
