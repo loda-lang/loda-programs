@@ -10,7 +10,7 @@ lpb $2,1
   div $0,2
   lpb $0,1
     mov $4,$0
-    cal $4,49643
+    cal $4,49643 ; Number of fractions in Farey series of order n.
     mov $0,0
   lpe
   add $1,$4
