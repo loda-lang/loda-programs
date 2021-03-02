@@ -3,5 +3,5 @@
 
 add $0,1
 cal $0,226205 ; a(n) = F(n)^2 - F(n-1)^2 or F(n+1) * F(n-2) where F(n) = A000045(n), the Fibonacci numbers.
-mov $1,$0
-mul $1,2
+mul $0,2
+add $1,$0
