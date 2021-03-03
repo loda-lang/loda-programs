@@ -18,7 +18,7 @@ mov $4,$6
 add $4,$1
 mul $3,$4
 add $3,3
-lpb $0,1
+lpb $0
   mov $0,2
   add $3,3
 lpe

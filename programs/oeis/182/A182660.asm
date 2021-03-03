@@ -3,14 +3,14 @@
 
 mov $2,$0
 mov $5,2
-lpb $5,1
+lpb $5
   mov $0,$2
   sub $5,1
   add $0,$5
   sub $0,1
   mov $4,$0
   trn $4,3
-  lpb $0,1
+  lpb $0
     mov $0,3
     add $0,$4
     log $0,2
@@ -18,12 +18,12 @@ lpb $5,1
   bin $0,2
   mov $3,$5
   mov $6,$0
-  lpb $3,1
+  lpb $3
     mov $1,$6
     sub $3,1
   lpe
 lpe
-lpb $2,1
+lpb $2
   sub $1,$6
   mov $2,0
 lpe

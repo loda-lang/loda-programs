@@ -9,7 +9,7 @@ mov $7,4
 gcd $7,$0
 mov $0,1
 pow $7,3
-lpb $0,1
+lpb $0
   mul $1,4
   mov $10,6
   clr $3,$7

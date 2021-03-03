@@ -20,7 +20,7 @@ add $1,$4
 div $0,$1
 mov $4,$3
 sub $4,$0
-lpb $0,1
+lpb $0
   mov $0,1
   mov $1,$4
   div $1,6

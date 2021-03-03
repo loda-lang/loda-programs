@@ -3,14 +3,14 @@
 
 mov $5,$0
 mov $6,$0
-lpb $5,1
+lpb $5
   mov $0,$6
   sub $5,1
   sub $0,$5
   gcd $0,40320
   mov $3,40320
   mov $8,2
-  lpb $0,1
+  lpb $0
     sub $0,1
     add $2,$3
     mov $4,$2

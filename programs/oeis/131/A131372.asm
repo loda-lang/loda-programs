@@ -4,7 +4,7 @@
 mod $0,7
 gcd $0,6
 sub $0,2
-lpb $0,1
+lpb $0
   mov $0,1
 lpe
 mov $1,$0

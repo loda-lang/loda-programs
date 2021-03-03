@@ -3,7 +3,7 @@
 
 cal $0,223544 ; Triangle T(n,k), 0 < k <= n, T(n,1) = n - 1, T(n,k) = T(n,k-1) + n; read by rows.
 add $1,$0
-lpb $1,1
+lpb $1
   mod $1,9
 lpe
 add $1,1

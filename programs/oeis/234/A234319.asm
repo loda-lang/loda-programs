@@ -11,7 +11,7 @@ mov $3,$4
 sub $3,3
 add $2,$3
 mov $5,-5
-lpb $0,1
+lpb $0
   add $2,$0
   add $2,1
   add $0,$2

@@ -6,7 +6,7 @@ mov $2,$0
 div $2,$0
 mov $3,2
 mov $4,$2
-lpb $0,1
+lpb $0
   mul $3,2
   mov $2,$3
   mul $2,$0

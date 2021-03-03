@@ -7,7 +7,7 @@ mov $3,3
 pow $3,$0
 mov $4,5
 pow $4,$0
-lpb $0,1
+lpb $0
   mov $0,1
   add $1,$4
   mov $2,$3

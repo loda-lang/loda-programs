@@ -5,7 +5,7 @@ mov $1,4
 mov $2,$0
 gcd $2,4
 pow $1,$2
-lpb $0,1
+lpb $0
   mov $0,1
   mul $1,2
 lpe

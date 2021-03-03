@@ -4,14 +4,14 @@
 mov $5,$0
 add $5,1
 mov $6,$0
-lpb $5,1
+lpb $5
   mov $0,$6
   sub $5,1
   sub $0,$5
   add $0,1
   pow $0,4
   mov $4,1
-  lpb $0,1
+  lpb $0
     mov $2,$0
     div $0,10
     mod $2,10

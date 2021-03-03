@@ -6,9 +6,9 @@ mov $6,$0
 bin $6,3
 sub $6,$0
 sub $6,$0
-lpb $0,1
+lpb $0
   mul $6,3
-  lpb $0,1
+  lpb $0
     add $$1,1
     mul $0,$6
     mul $0,100

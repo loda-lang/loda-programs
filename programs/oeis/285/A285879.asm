@@ -4,7 +4,7 @@
 mov $18,$0
 mov $20,$0
 add $20,1
-lpb $20,1
+lpb $20
   clr $0,18
   mov $0,$18
   sub $20,1
@@ -12,7 +12,7 @@ lpb $20,1
   mul $0,2
   add $0,1
   cal $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-  lpb $0,1
+  lpb $0
     div $0,10
     mov $5,1
   lpe

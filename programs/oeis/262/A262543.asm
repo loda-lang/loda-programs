@@ -11,7 +11,7 @@ bin $3,$2
 div $3,$5
 mov $4,6
 mov $6,$2
-lpb $6,1
+lpb $6
   lpb $4,4
     add $0,$3
     mov $6,$4

@@ -3,11 +3,11 @@
 
 mov $2,$0
 mov $4,$0
-lpb $2,1
+lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  lpb $0,1
+  lpb $0
     sub $0,2
     mov $3,$0
     cal $3,26937 ; a(n) = Sum_{k=0..n} (k+1)*T(n,n-k), where T is given by A008288.

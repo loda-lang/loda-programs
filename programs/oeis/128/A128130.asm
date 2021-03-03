@@ -8,7 +8,7 @@ mov $3,$6
 add $3,1
 mul $6,$3
 mov $7,2
-lpb $0,1
+lpb $0
   sub $0,$0
   add $6,$7
   trn $4,$6

@@ -3,7 +3,7 @@
 
 mov $4,$0
 mul $0,2
-lpb $0,1
+lpb $0
   mov $1,$0
   cal $1,7917 ; Version 1 of the "previous prime" function: largest prime <= n.
   mul $0,2

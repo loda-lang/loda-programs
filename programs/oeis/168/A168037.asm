@@ -6,6 +6,6 @@ pow $0,2
 gcd $2,2
 div $0,$2
 mov $1,$0
-lpb $1,1
+lpb $1
   mod $1,9
 lpe

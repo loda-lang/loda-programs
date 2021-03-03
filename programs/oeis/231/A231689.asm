@@ -3,14 +3,14 @@
 
 mov $3,$0
 mov $6,$0
-lpb $6,1
+lpb $6
   mov $0,$3
   sub $6,1
   sub $0,$6
   mov $4,$0
   mov $0,6
   mov $5,$4
-  lpb $0,1
+  lpb $0
     mov $0,3
     mov $2,$5
     div $2,10

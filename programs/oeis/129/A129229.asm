@@ -3,14 +3,14 @@
 
 mov $30,$0
 mov $32,2
-lpb $32,1
+lpb $32
   clr $0,30
   mov $0,$30
   sub $32,1
   add $0,$32
   sub $0,1
   mov $27,$0
-  lpb $0,1
+  lpb $0
     sub $0,1
     mov $1,$0
     cal $1,57843 ; a(n) = floor(n*tau^2) - 3, where tau = (1+sqrt(5))/2.
@@ -21,12 +21,12 @@ lpb $32,1
   mov $1,$2
   add $1,$27
   mov $33,$32
-  lpb $33,1
+  lpb $33
     mov $31,$1
     sub $33,1
   lpe
 lpe
-lpb $30,1
+lpb $30
   mov $30,0
   sub $31,$1
 lpe

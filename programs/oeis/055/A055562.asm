@@ -4,13 +4,13 @@
 mov $3,$0
 add $3,1
 mov $7,$0
-lpb $3,1
+lpb $3
   mov $0,$7
   sub $3,1
   sub $0,$3
   mov $2,$0
   mov $4,0
-  lpb $0,1
+  lpb $0
     div $2,2
     cmp $4,$2
     clr $5,1

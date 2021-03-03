@@ -4,9 +4,9 @@
 mov $1,1
 mov $2,$0
 mul $2,2
-lpb $2,1
+lpb $2
   sub $2,$1
-  lpb $1,1
+  lpb $1
     add $3,2
     mov $1,$3
     add $2,1

@@ -9,8 +9,8 @@ mov $2,4
 mov $4,$0
 mul $4,5
 add $4,1
-lpb $2,1
-  lpb $4,1
+lpb $2
+  lpb $4
     add $1,2
     trn $4,$1
   lpe

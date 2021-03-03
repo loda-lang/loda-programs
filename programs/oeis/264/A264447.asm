@@ -14,7 +14,7 @@ add $7,2
 add $8,$5
 add $8,$5
 mov $6,$8
-lpb $0,1
+lpb $0
   mov $0,0
   add $2,7
   pow $6,2

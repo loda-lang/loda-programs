@@ -5,7 +5,7 @@ add $0,4
 mul $0,7
 mov $2,7
 mov $3,4
-lpb $0,1
+lpb $0
   sub $0,1
   fac $3
   sub $0,$3

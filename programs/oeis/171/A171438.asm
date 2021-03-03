@@ -3,13 +3,13 @@
 
 mov $20,$0
 add $20,1
-lpb $20,1
+lpb $20
   clr $0,18
   sub $20,1
   sub $0,$20
   mov $11,$0
   mov $0,1
-  lpb $0,1
+  lpb $0
     mov $0,$11
     gcd $0,81
     add $2,$11
@@ -17,7 +17,7 @@ lpb $20,1
     mov $3,$0
     mov $0,$11
     mul $3,4
-    lpb $2,1
+    lpb $2
       div $0,$3
       mov $2,$3
       div $2,3

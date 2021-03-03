@@ -9,7 +9,7 @@ mov $2,$4
 mov $5,1
 add $5,$0
 bin $5,3
-lpb $0,1
+lpb $0
   sub $0,1
   mov $1,$2
   gcd $1,12

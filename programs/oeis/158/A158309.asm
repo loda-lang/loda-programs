@@ -8,11 +8,11 @@ mov $3,$1
 mov $5,1
 lpb $4,6
   mov $5,4
-  lpb $5,1
+  lpb $5
     add $0,$3
     sub $5,1
   lpe
-  lpb $0,1
+  lpb $0
     sub $0,1
     add $1,3
   lpe
@@ -25,11 +25,11 @@ lpb $0,2
 lpe
 mov $3,$6
 add $4,$6
-lpb $4,1
+lpb $4
   add $1,$3
   sub $4,1
 lpe
-lpb $10,1
+lpb $10
   add $1,591
   sub $10,1
 lpe

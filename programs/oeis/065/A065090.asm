@@ -7,7 +7,7 @@ mov $4,$0
 sub $4,$0
 sub $4,$0
 mov $0,1
-lpb $2,1
+lpb $2
   sub $0,$4
   cal $0,230980 ; Number of primes <= n, starting at n=0.
   div $2,2

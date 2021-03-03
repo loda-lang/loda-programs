@@ -4,7 +4,7 @@
 cal $0,204257 ; Matrix given by f(i,j)=1+[(i+2j) mod 3], by antidiagonals.
 add $0,1
 mov $2,14
-lpb $2,1
+lpb $2
   mov $1,$0
   sub $2,$0
   mod $2,5

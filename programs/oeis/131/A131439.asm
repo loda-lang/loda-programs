@@ -12,7 +12,7 @@ mul $0,4
 mov $4,$2
 mul $4,$3
 mov $3,$4
-lpb $0,1
+lpb $0
   mov $0,$3
 lpe
 mov $1,$0

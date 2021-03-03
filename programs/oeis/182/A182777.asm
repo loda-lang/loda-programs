@@ -8,7 +8,7 @@ mov $1,5
 mul $1,$0
 mov $0,200
 mov $4,5
-lpb $0,1
+lpb $0
   mov $2,$0
   mov $0,1
   mul $2,14

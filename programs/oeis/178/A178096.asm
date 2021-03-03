@@ -6,9 +6,9 @@ div $0,3
 mov $2,$0
 mov $5,$0
 pow $5,2
-lpb $2,1
+lpb $2
   add $1,$2
-  lpb $5,1
+  lpb $5
     mov $0,3
     mov $5,$1
   lpe

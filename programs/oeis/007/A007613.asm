@@ -8,7 +8,7 @@ pow $3,$0
 div $3,2
 add $1,$3
 mov $2,5
-lpb $0,1
+lpb $0
   mul $1,2
   trn $0,$1
   sub $1,$2

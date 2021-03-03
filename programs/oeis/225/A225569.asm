@@ -4,7 +4,7 @@
 mov $1,13
 mov $2,1
 add $2,$0
-lpb $2,1
+lpb $2
   sub $1,$1
   gcd $2,729
 lpe

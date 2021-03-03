@@ -4,19 +4,19 @@
 mov $14,$0
 mov $16,$0
 add $16,1
-lpb $16,1
+lpb $16
   clr $0,14
   mov $0,$14
   sub $16,1
   sub $0,$16
   add $2,$0
-  lpb $2,1
-    lpb $0,1
+  lpb $2
+    lpb $0
       sub $0,9
       add $12,1
       mul $12,10
     lpe
-    lpb $0,1
+    lpb $0
       div $0,10
       mul $2,5
     lpe

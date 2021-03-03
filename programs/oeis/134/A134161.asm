@@ -8,7 +8,7 @@ mov $2,27
 mov $4,$0
 mov $0,27
 add $1,$4
-lpb $0,1
+lpb $0
   mov $0,$2
   sub $0,1
   mov $2,2

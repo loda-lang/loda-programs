@@ -3,21 +3,21 @@
 
 mov $12,$0
 mov $14,$0
-lpb $14,1
+lpb $14
   clr $0,12
   mov $0,$12
   sub $14,1
   sub $0,$14
   mov $9,$0
   mov $11,$0
-  lpb $11,1
+  lpb $11
     mov $0,$9
     sub $11,1
     sub $0,$11
     add $0,3
     bin $0,3
     sub $0,5
-    lpb $0,1
+    lpb $0
       add $0,1
       mov $5,$0
       mov $0,7

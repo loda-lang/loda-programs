@@ -7,7 +7,7 @@ mul $3,$0
 mov $4,4
 mov $5,5
 mov $6,3
-lpb $0,1
+lpb $0
   gcd $4,$3
   log $6,$2
   sub $0,$6

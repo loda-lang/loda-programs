@@ -4,21 +4,21 @@
 mov $11,$0
 mov $13,$0
 add $13,1
-lpb $13,1
+lpb $13
   clr $0,11
   mov $0,$11
   sub $13,1
   sub $0,$13
   add $0,3
   mov $2,$0
-  lpb $2,1
+  lpb $2
     mov $4,3
-    lpb $4,1
+    lpb $4
       add $2,6
       trn $4,$2
     lpe
     mov $5,8
-    lpb $5,1
+    lpb $5
       trn $5,$2
       mod $2,9
       mul $2,10

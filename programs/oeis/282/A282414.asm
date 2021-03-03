@@ -7,7 +7,7 @@ mov $4,$0
 mov $0,$3
 mov $1,$0
 sub $4,1
-lpb $0,1
+lpb $0
   gcd $4,2
   clr $0,$4
   sub $0,1

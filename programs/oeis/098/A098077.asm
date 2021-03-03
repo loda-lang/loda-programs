@@ -11,7 +11,7 @@ add $3,$1
 add $3,$2
 add $3,2
 pow $3,2
-lpb $0,1
+lpb $0
   mov $0,$1
   div $3,3
   mov $1,$3

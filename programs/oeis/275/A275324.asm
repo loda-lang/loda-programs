@@ -13,7 +13,7 @@ div $3,2
 bin $1,$3
 mul $1,$2
 mov $4,4
-lpb $0,1
+lpb $0
   sub $0,$4
   add $1,$0
   pow $0,$0

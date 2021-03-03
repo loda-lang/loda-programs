@@ -4,7 +4,7 @@
 mov $1,$0
 pow $1,2
 mov $3,$0
-lpb $0,1
+lpb $0
   gcd $1,2
   div $0,$1
 lpe

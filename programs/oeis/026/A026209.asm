@@ -8,17 +8,17 @@ mul $0,$2
 mov $1,2
 mov $2,$0
 mov $3,$0
-lpb $2,1
+lpb $2
   add $3,1
   div $3,3
   mov $4,8
-  lpb $1,1
+  lpb $1
     mov $1,1
     sub $2,2
     gcd $2,8
     add $5,1
   lpe
-  lpb $5,1
+  lpb $5
     mov $1,$3
     trn $5,$4
   lpe

@@ -4,7 +4,7 @@
 sub $0,10
 bin $0,2
 div $0,12
-lpb $0,1
+lpb $0
   mov $0,$2
   trn $3,1
   add $3,4

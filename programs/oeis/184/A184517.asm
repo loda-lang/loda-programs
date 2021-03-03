@@ -6,7 +6,7 @@ bin $2,2
 mov $3,$0
 mul $3,2
 mov $5,$0
-lpb $2,1
+lpb $2
   add $3,1
   sub $2,$3
   trn $2,1

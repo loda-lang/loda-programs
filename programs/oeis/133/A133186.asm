@@ -3,7 +3,7 @@
 
 add $0,1
 gcd $0,4
-lpb $0,1
+lpb $0
   sub $0,6
 lpe
 mul $0,2

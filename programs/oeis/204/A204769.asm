@@ -6,17 +6,17 @@ mov $2,$0
 mov $3,$0
 mov $0,2
 trn $2,1
-lpb $2,1
+lpb $2
   add $0,4
   add $0,$1
   trn $2,2
 lpe
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,3
 lpe
 add $1,5
-lpb $3,1
+lpb $3
   add $1,59
   sub $3,1
 lpe

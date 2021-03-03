@@ -3,15 +3,15 @@
 
 mov $4,$0
 mov $6,$0
-lpb $4,1
+lpb $4
   mov $0,$6
   sub $4,1
   sub $0,$4
   add $3,1
-  lpb $3,1
+  lpb $3
     add $2,1
     sub $3,1
-    lpb $2,1
+    lpb $2
       sub $2,1
       cal $0,53829 ; Sum of digits of (n written in base 8).
       mul $0,2

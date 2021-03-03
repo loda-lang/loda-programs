@@ -4,9 +4,9 @@
 mov $1,6
 mov $2,$0
 mov $3,3
-lpb $2,1
+lpb $2
   add $4,5
-  lpb $4,1
+  lpb $4
     mul $1,2
     mul $3,6
     sub $4,$4

@@ -5,7 +5,7 @@ mul $0,7
 div $0,22
 gcd $0,2
 mov $1,90
-lpb $0,1
+lpb $0
   mov $0,1
   add $1,1
 lpe

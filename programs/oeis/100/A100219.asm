@@ -3,7 +3,7 @@
 
 pow $0,2
 gcd $0,12
-lpb $0,1
+lpb $0
   sub $0,5
 lpe
 mov $1,$0

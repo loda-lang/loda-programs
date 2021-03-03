@@ -7,7 +7,7 @@ gcd $0,4
 div $0,2
 mov $1,$0
 mov $3,4
-lpb $3,1
+lpb $3
   sub $1,1
   mov $3,$2
 lpe

@@ -8,7 +8,7 @@ mov $1,$2
 mul $1,$2
 sub $1,1
 mul $1,$2
-lpb $0,1
+lpb $0
   sub $0,1
   mul $1,4
 lpe

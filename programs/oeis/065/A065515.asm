@@ -4,7 +4,7 @@
 mov $27,$0
 mov $29,$0
 add $29,1
-lpb $29,1
+lpb $29
   clr $0,27
   mov $0,$27
   sub $29,1
@@ -12,10 +12,10 @@ lpb $29,1
   mov $6,6
   cal $0,143731 ; Characteristic function of numbers n with at least two distinct prime factors.
   sub $0,2
-  lpb $0,1
+  lpb $0
     mov $1,$0
     mul $6,$0
-    lpb $6,1
+    lpb $6
       mod $0,2
       mov $2,$5
       sub $5,$1

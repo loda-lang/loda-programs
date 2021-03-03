@@ -3,11 +3,11 @@
 
 mov $2,$0
 mov $3,$0
-lpb $3,1
-  lpb $2,1
+lpb $3
+  lpb $2
     gcd $2,2
   lpe
-  lpb $2,1
+  lpb $2
     add $3,2
     pow $3,$2
     sub $2,1

@@ -12,7 +12,7 @@ mul $3,$4
 mul $3,2
 div $3,$2
 mov $6,1
-lpb $0,1
+lpb $0
   mov $0,2
   mov $5,$3
   pow $5,2

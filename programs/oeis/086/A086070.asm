@@ -4,20 +4,20 @@
 mov $15,$0
 mov $17,2
 mov $19,$0
-lpb $17,1
+lpb $17
   mov $0,$15
   sub $0,1
   mov $8,$0
   mov $10,2
   sub $17,1
-  lpb $10,1
+  lpb $10
     clr $0,8
     mov $0,$8
     sub $0,1
     mov $5,$0
     mov $7,$0
     sub $10,1
-    lpb $7,1
+    lpb $7
       clr $0,5
       mov $0,$5
       sub $7,1

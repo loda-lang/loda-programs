@@ -3,13 +3,13 @@
 
 mov $128,$0
 mov $130,$0
-lpb $130,1
+lpb $130
   clr $0,128
   mov $0,$128
   sub $130,1
   sub $0,$130
   cal $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
-  lpb $0,1
+  lpb $0
     add $0,8
     div $0,6
     mov $2,2

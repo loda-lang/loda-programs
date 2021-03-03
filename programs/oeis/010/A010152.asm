@@ -5,7 +5,7 @@ pow $1,$0
 gcd $1,3
 add $1,2
 gcd $0,$1
-lpb $0,1
+lpb $0
   gcd $0,2
   mul $1,4
 lpe

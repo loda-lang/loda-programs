@@ -4,9 +4,9 @@
 mul $0,2
 mov $2,2
 mov $4,$0
-lpb $2,1
+lpb $2
   add $4,$2
-  lpb $4,1
+  lpb $4
     mov $3,$4
     pow $3,4
     trn $4,$2

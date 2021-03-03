@@ -3,7 +3,7 @@
 
 add $0,2
 cal $0,230980 ; Number of primes <= n, starting at n=0.
-lpb $0,1
+lpb $0
   cal $0,271478 ; If n is even, a(n)=n/2, otherwise 2*n+2.
 lpe
 mov $1,$0

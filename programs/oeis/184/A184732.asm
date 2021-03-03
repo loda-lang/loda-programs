@@ -4,23 +4,23 @@
 mov $6,$0
 add $0,5
 mov $2,$0
-lpb $0,1
+lpb $0
   add $3,$2
-  lpb $2,1
+  lpb $2
     sub $2,1
     add $4,$3
   lpe
   mov $1,1
   add $5,$4
   sub $5,$0
-  lpb $5,1
+  lpb $5
     sub $0,$0
     add $1,1
     add $3,2
     trn $5,$3
   lpe
 lpe
-lpb $6,1
+lpb $6
   add $1,1
   sub $6,1
 lpe

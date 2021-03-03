@@ -3,10 +3,10 @@
 
 add $0,2
 div $0,2
-lpb $0,1
+lpb $0
   mov $1,$0
   div $0,10
 lpe
-lpb $1,1
+lpb $1
   mod $1,5
 lpe

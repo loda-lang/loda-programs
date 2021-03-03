@@ -10,7 +10,7 @@ add $4,$3
 add $2,$4
 mul $4,2
 mov $5,$0
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,4
   add $4,1
@@ -21,7 +21,7 @@ lpb $0,1
   add $4,$2
   add $4,3
 lpe
-lpb $5,1
+lpb $5
   add $1,3
   sub $5,1
 lpe

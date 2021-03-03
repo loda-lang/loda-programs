@@ -6,7 +6,7 @@ add $0,1
 mod $0,10
 mov $1,9
 mov $3,30
-lpb $0,1
+lpb $0
   mov $0,$4
   trn $1,$3
 lpe

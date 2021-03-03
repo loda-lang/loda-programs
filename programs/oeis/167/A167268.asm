@@ -3,10 +3,10 @@
 
 mov $2,$0
 mov $4,$0
-lpb $2,1
+lpb $2
   mov $3,1
   mul $4,2
-  lpb $4,1
+  lpb $4
     mov $1,$3
     div $1,2
     add $3,1

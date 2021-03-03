@@ -3,13 +3,13 @@
 
 mov $27,$0
 mov $29,2
-lpb $29,1
+lpb $29
   clr $0,27
   mov $0,$27
   sub $29,1
   add $0,$29
   sub $0,1
-  lpb $0,1
+  lpb $0
     mov $1,$0
     cal $1,27306 ; a(n) = 2^(n-1) + ((1 + (-1)^n)/4)*binomial(n, n/2).
     sub $0,2
@@ -19,12 +19,12 @@ lpb $29,1
   mul $2,2
   mov $1,$2
   mov $30,$29
-  lpb $30,1
+  lpb $30
     mov $28,$1
     sub $30,1
   lpe
 lpe
-lpb $27,1
+lpb $27
   mov $27,0
   sub $28,$1
 lpe

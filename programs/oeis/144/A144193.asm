@@ -3,7 +3,7 @@
 
 pow $0,7
 div $0,7
-lpb $0,1
+lpb $0
   mod $0,8
   mov $1,$0
   div $1,4

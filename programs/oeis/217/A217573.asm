@@ -11,7 +11,7 @@ mov $6,$3
 add $6,2
 add $4,$6
 trn $6,$4
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,3
   add $2,2

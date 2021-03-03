@@ -3,7 +3,7 @@
 
 mov $2,1
 mov $4,1
-lpb $0,1
+lpb $0
   sub $0,1
   trn $1,3
   add $3,$2

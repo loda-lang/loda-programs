@@ -6,10 +6,10 @@ mov $5,4
 pow $5,$0
 gcd $0,3
 mul $0,2
-lpb $0,1
+lpb $0
   mov $3,1
   mod $5,$0
-  lpb $3,1
+  lpb $3
     mov $2,$5
     lpb $2,2
       mov $0,2

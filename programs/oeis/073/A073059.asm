@@ -3,7 +3,7 @@
 
 mov $17,$0
 mov $19,2
-lpb $19,1
+lpb $19
   clr $0,17
   mov $0,$17
   sub $19,1
@@ -11,7 +11,7 @@ lpb $19,1
   add $0,1
   sub $1,$0
   add $1,$0
-  lpb $0,1
+  lpb $0
     sub $0,$1
     div $0,2
     mov $1,$0
@@ -20,12 +20,12 @@ lpb $19,1
   lpe
   mov $1,$10
   mov $20,$19
-  lpb $20,1
+  lpb $20
     mov $18,$1
     sub $20,1
   lpe
 lpe
-lpb $17,1
+lpb $17
   mov $17,0
   sub $18,$1
 lpe

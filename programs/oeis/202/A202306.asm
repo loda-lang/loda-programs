@@ -3,11 +3,11 @@
 
 mov $1,6
 mov $2,$0
-lpb $2,1
+lpb $2
   mov $3,$2
   add $3,$0
   mul $3,7
-  lpb $3,1
+  lpb $3
     trn $3,$1
     add $1,4
   lpe

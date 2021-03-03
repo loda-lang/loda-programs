@@ -5,7 +5,7 @@ add $0,2
 cal $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
 sub $0,1
 mov $4,1
-lpb $0,1
+lpb $0
   clr $0,16
 lpe
 mov $1,$4

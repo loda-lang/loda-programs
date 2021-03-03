@@ -1,7 +1,7 @@
 ; A137575: Successive structures central number of Seaborg's periodic table of the elements (extended to 32 columns) for odd rows.
 ; 1,2,8,8,8,8,8,8,8,8,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32
 
-lpb $0,1
+lpb $0
   add $0,2
   add $2,2
   add $1,$2

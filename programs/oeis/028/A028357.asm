@@ -6,7 +6,7 @@ mov $4,$0
 mod $0,6
 mov $2,$0
 mul $2,3
-lpb $2,1
+lpb $2
   add $1,4
   mov $2,8
 lpe

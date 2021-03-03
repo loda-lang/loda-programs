@@ -8,7 +8,7 @@ mov $1,7
 mov $2,2
 mov $4,$0
 mov $5,3
-lpb $0,1
+lpb $0
   sub $0,1
   add $4,$2
   add $4,1
@@ -18,7 +18,7 @@ lpb $0,1
   mov $2,$5
   sub $2,1
 lpe
-lpb $3,1
+lpb $3
   add $1,34
   sub $3,1
 lpe

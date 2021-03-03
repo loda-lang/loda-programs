@@ -13,7 +13,7 @@ sub $6,1
 add $2,$6
 div $2,8
 mov $5,4
-lpb $5,1
+lpb $5
   gcd $5,7
   add $6,$2
 lpe

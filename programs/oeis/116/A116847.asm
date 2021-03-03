@@ -4,7 +4,7 @@
 mov $9,$0
 mov $11,$0
 add $11,1
-lpb $11,1
+lpb $11
   clr $0,9
   mov $0,$9
   sub $11,1
@@ -12,24 +12,24 @@ lpb $11,1
   mov $6,$0
   mov $8,$0
   add $8,1
-  lpb $8,1
+  lpb $8
     mov $0,$6
     sub $8,1
     sub $0,$8
     mov $5,1
-    lpb $5,1
+    lpb $5
       mov $4,$0
       add $4,1
-      lpb $4,1
+      lpb $4
         mul $5,2
-        lpb $4,1
+        lpb $4
           sub $0,3
           mov $4,1
           add $5,$0
         lpe
       lpe
     lpe
-    cal $0,54452
+    cal $0,54452 ; Partial sums of A027941(n-1) with a(-1) = 0.
     mov $1,$0
     add $1,$5
     add $7,$1

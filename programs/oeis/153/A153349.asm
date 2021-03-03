@@ -5,7 +5,7 @@ mod $0,6
 mov $2,5
 bin $2,$0
 mov $1,$2
-lpb $1,1
+lpb $1
   mod $1,7
 lpe
 div $1,2

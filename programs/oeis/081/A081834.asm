@@ -6,7 +6,7 @@ add $0,155
 mov $1,36
 mov $2,109
 mov $6,2
-lpb $0,1
+lpb $0
   add $6,$2
   add $6,$0
   div $0,$1

@@ -3,7 +3,7 @@
 
 mov $7,1
 mov $11,$0
-lpb $7,1
+lpb $7
   mov $2,$0
   mov $5,$0
   mov $8,$7
@@ -14,7 +14,7 @@ lpb $7,1
   sub $2,$8
   mul $5,$2
   trn $8,$7
-  lpb $5,1
+  lpb $5
     div $5,2
     lpb $5,3
       mul $0,$8

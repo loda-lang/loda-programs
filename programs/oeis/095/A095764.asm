@@ -6,19 +6,19 @@ add $0,1
 mov $1,$0
 mov $0,4
 mov $2,4
-lpb $2,1
+lpb $2
   sub $0,$2
   sub $3,5
   trn $3,$1
   mov $6,$1
   sub $1,$1
   mov $5,3
-  lpb $5,1
+  lpb $5
     add $0,3
     sub $5,$5
   lpe
   mov $5,$0
-  lpb $6,1
+  lpb $6
     mov $2,$5
     add $3,1
     add $1,$3
@@ -28,7 +28,7 @@ lpb $2,1
   lpe
   sub $0,3
 lpe
-lpb $4,1
+lpb $4
   add $1,1
   sub $4,1
 lpe

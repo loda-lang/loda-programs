@@ -4,7 +4,7 @@
 mov $26,$0
 mov $28,$0
 add $28,1
-lpb $28,1
+lpb $28
   clr $0,26
   mov $0,$26
   sub $28,1
@@ -12,7 +12,7 @@ lpb $28,1
   mov $23,$0
   mov $25,$0
   add $25,1
-  lpb $25,1
+  lpb $25
     clr $0,23
     mov $0,$23
     sub $25,1
@@ -20,7 +20,7 @@ lpb $28,1
     mov $20,$0
     mov $22,$0
     add $22,1
-    lpb $22,1
+    lpb $22
       mov $0,$20
       sub $22,1
       sub $0,$22

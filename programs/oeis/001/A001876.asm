@@ -3,7 +3,7 @@
 
 mov $38,$0
 mov $40,2
-lpb $40,1
+lpb $40
   clr $0,38
   mov $0,$38
   sub $40,1
@@ -11,25 +11,25 @@ lpb $40,1
   sub $0,1
   mov $18,$0
   mov $37,$0
-  lpb $37,1
+  lpb $37
     mov $1,1
     add $3,5
     mov $7,$18
     sub $18,1
     sub $37,1
-    lpb $7,1
+    lpb $7
       trn $7,$3
       add $8,$1
     lpe
   lpe
   mov $1,$8
   mov $41,$40
-  lpb $41,1
+  lpb $41
     mov $39,$1
     sub $41,1
   lpe
 lpe
-lpb $38,1
+lpb $38
   mov $38,0
   sub $39,$1
 lpe

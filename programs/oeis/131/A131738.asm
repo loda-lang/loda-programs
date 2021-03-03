@@ -4,6 +4,6 @@
 mov $1,-2
 bin $1,$0
 mul $0,$1
-lpb $1,1
+lpb $1
   mov $1,$0
 lpe

@@ -7,7 +7,7 @@ mul $1,$0
 mul $1,2
 sub $1,1
 mul $1,$0
-lpb $0,1
+lpb $0
   mul $0,$2
   sub $1,8
 lpe

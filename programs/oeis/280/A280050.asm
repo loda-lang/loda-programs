@@ -3,15 +3,15 @@
 
 mov $5,$0
 mov $7,$0
-lpb $7,1
+lpb $7
   clr $0,5
   mov $0,$5
   sub $7,1
   sub $0,$7
-  lpb $0,1
+  lpb $0
     mov $1,$0
     add $4,1
-    lpb $1,1
+    lpb $1
       sub $0,1
       gcd $1,$4
     lpe

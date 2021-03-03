@@ -5,13 +5,13 @@ mov $5,$0
 mov $7,$0
 add $7,1
 mov $8,$0
-lpb $7,1
+lpb $7
   mov $0,$5
   sub $7,1
   sub $0,$7
   cmp $4,$3
   mov $2,$4
-  lpb $0,1
+  lpb $0
     sub $0,1
     add $2,1
     mov $6,2

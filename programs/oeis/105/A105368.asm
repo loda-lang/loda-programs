@@ -20,7 +20,7 @@ sub $0,$2
 mul $0,$3
 sub $0,10
 mov $1,1
-lpb $0,1
+lpb $0
   mov $2,$0
   mov $0,$3
   mod $2,10

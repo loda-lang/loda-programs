@@ -3,7 +3,7 @@
 
 mov $3,2
 mov $6,$0
-lpb $3,1
+lpb $3
   mov $0,$6
   sub $3,1
   add $0,$3
@@ -16,7 +16,7 @@ lpb $3,1
   add $5,$0
   mov $0,$4
   pow $0,2
-  lpb $0,1
+  lpb $0
     trn $0,$5
     add $5,2
   lpe
@@ -27,12 +27,12 @@ lpb $3,1
   mov $7,$8
   mul $7,2
   add $5,$7
-  lpb $2,1
+  lpb $2
     mov $1,$5
     sub $2,1
   lpe
 lpe
-lpb $6,1
+lpb $6
   sub $1,$5
   mov $6,0
 lpe

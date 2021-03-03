@@ -3,9 +3,9 @@
 
 add $0,5
 pow $0,2
-lpb $0,1
+lpb $0
   sub $0,11
-  lpb $0,1
+  lpb $0
     mod $0,10
   lpe
   mod $0,6

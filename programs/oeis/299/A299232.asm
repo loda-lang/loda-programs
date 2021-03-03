@@ -5,7 +5,7 @@ mov $1,$0
 pow $1,4
 mod $1,3
 mov $3,$0
-lpb $0,1
+lpb $0
   mov $0,4
   trn $1,4
 lpe

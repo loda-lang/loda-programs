@@ -11,7 +11,7 @@ log $2,2
 mov $3,4
 mov $4,1
 mov $5,1
-lpb $0,1
+lpb $0
   div $0,2
   sub $5,$2
   mov $1,$5

@@ -6,7 +6,7 @@ mod $0,9
 mov $1,896
 add $1,$3
 mov $2,7
-lpb $0,1
+lpb $0
   mov $0,2
   sub $1,$2
   sub $1,2

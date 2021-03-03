@@ -4,12 +4,12 @@
 add $0,2
 mov $2,$0
 mov $3,5
-lpb $2,1
+lpb $2
   pow $3,$2
   mov $0,$3
   add $4,1
   mov $5,$4
-  lpb $5,1
+  lpb $5
     trn $5,$2
     mov $2,-2
   lpe

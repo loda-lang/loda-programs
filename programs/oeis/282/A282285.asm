@@ -9,7 +9,7 @@ mov $2,1
 add $2,$0
 mod $0,2
 sub $0,1
-lpb $0,1
+lpb $0
   mov $0,$3
   div $2,2
 lpe

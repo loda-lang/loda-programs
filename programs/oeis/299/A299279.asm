@@ -11,12 +11,12 @@ mov $5,3
 mul $5,$2
 add $2,7
 mov $3,$0
-lpb $2,1
+lpb $2
   add $1,7
   cmp $2,7
   mul $2,$3
   mul $2,4
-  lpb $5,1
+  lpb $5
     div $1,5
     mov $3,5
     add $6,4

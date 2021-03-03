@@ -5,7 +5,7 @@ mov $1,2
 pow $1,$0
 mov $3,3
 mov $4,-1
-lpb $0,1
+lpb $0
   add $0,4
   div $0,2
   mov $2,$1

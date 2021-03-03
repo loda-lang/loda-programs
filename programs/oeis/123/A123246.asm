@@ -6,13 +6,13 @@ cal $0,230980 ; Number of primes <= n, starting at n=0.
 add $2,$0
 mov $0,1
 cal $0,44712 ; Numbers n such that string 8,8 occurs in the base 9 representation of n but not of n+1.
-lpb $0,1
+lpb $0
   sub $0,$2
   cal $0,115634 ; Expansion of (1-4x^2)/(1-x^2).
   sub $2,$0
   sub $2,1
   mov $1,$2
-  lpb $0,1
+  lpb $0
     mod $0,2
     sub $1,1
   lpe

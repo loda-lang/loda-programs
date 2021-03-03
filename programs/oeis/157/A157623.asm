@@ -3,14 +3,14 @@
 
 mov $2,531441
 mov $7,$0
-lpb $2,1
+lpb $2
   add $0,1
   mov $3,2
   mov $5,2
   mov $6,3
   mov $8,16
   mul $8,$0
-  lpb $6,1
+  lpb $6
     mul $0,25
     add $5,5
     sub $6,$3

@@ -4,20 +4,20 @@
 mov $2,$0
 mov $6,$0
 add $6,1
-lpb $6,1
+lpb $6
   mov $0,$2
   sub $6,1
   sub $0,$6
   mov $9,2
   mov $11,$0
-  lpb $9,1
+  lpb $9
     mov $0,$11
     sub $9,1
     add $0,$9
     sub $0,1
     mov $5,6
     mov $7,11
-    lpb $0,1
+    lpb $0
       sub $0,1
       mov $3,$5
       mov $5,$7
@@ -27,12 +27,12 @@ lpb $6,1
     mov $4,$9
     sub $5,1
     mov $8,$5
-    lpb $4,1
+    lpb $4
       sub $4,1
       mov $10,$8
     lpe
   lpe
-  lpb $11,1
+  lpb $11
     sub $10,$8
     mov $11,0
   lpe

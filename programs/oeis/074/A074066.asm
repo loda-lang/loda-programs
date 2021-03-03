@@ -5,7 +5,7 @@ mov $1,$0
 mul $0,2
 add $1,5
 mov $2,4
-lpb $0,1
+lpb $0
   mov $2,$0
   trn $0,6
 lpe

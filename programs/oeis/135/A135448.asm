@@ -4,7 +4,7 @@
 mod $0,5
 pow $0,4
 mov $2,1
-lpb $0,1
+lpb $0
   sub $2,$0
   mov $1,$2
   sub $1,1

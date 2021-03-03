@@ -6,9 +6,9 @@ mov $1,$0
 mov $2,$0
 mov $4,4
 mov $5,3
-lpb $2,1
+lpb $2
   log $0,$5
-  lpb $4,1
+  lpb $4
     sub $0,2
     add $1,$0
     mul $2,$3

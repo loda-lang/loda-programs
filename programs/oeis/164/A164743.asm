@@ -3,7 +3,7 @@
 
 mod $0,8
 trn $0,1
-lpb $0,1
+lpb $0
   mul $0,2
   mod $0,5
 lpe

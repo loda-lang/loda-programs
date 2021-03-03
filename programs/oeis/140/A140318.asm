@@ -12,7 +12,7 @@ mov $1,2
 mov $4,4
 sub $4,$2
 add $4,1
-lpb $4,1
+lpb $4
   add $0,$1
   sub $3,$0
   mov $1,$3

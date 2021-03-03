@@ -3,27 +3,27 @@
 
 mov $17,$0
 mov $19,$0
-lpb $19,1
+lpb $19
   clr $0,17
   mov $0,$17
   sub $19,1
   sub $0,$19
   mov $14,$0
   mov $16,$0
-  lpb $16,1
+  lpb $16
     clr $0,14
     mov $0,$14
     sub $16,1
     sub $0,$16
     mov $11,$0
     mov $13,$0
-    lpb $13,1
+    lpb $13
       mov $0,$11
       sub $13,1
       sub $0,$13
       mov $5,$0
       mov $6,2
-      lpb $0,1
+      lpb $0
         mov $1,$0
         mov $0,2
         add $1,2

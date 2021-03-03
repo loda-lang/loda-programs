@@ -5,9 +5,9 @@ mov $1,1
 mov $2,$0
 mov $3,6
 mov $4,4
-lpb $2,1
+lpb $2
   mov $0,$1
-  lpb $4,1
+  lpb $4
     trn $0,$3
     mov $3,1
     mov $4,1

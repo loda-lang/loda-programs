@@ -18,7 +18,7 @@ mov $7,3
 pow $7,$6
 add $3,$7
 add $3,$5
-lpb $0,1
+lpb $0
   cmp $0,$2
   mov $1,$2
   mov $5,1

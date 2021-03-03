@@ -8,7 +8,7 @@ add $3,2
 mov $5,1
 add $5,$0
 add $0,$3
-lpb $0,1
+lpb $0
   mov $2,$0
   mov $0,1
   mov $4,2

@@ -5,7 +5,7 @@ mod $0,47
 mov $2,$0
 mov $0,4
 sub $0,$2
-lpb $0,1
+lpb $0
   mul $0,2
   sub $0,7
   mov $1,$0

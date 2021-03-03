@@ -15,7 +15,7 @@ pow $3,3
 mov $4,$3
 sub $4,1
 mul $4,2
-lpb $0,1
+lpb $0
   mov $0,1
   mul $1,$4
 lpe

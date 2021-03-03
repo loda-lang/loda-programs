@@ -6,7 +6,7 @@ mov $2,1
 mul $2,$0
 mov $3,$0
 add $3,511
-lpb $3,1
+lpb $3
   add $1,27
   div $2,2
   sub $3,8

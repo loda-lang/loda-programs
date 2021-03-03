@@ -11,7 +11,7 @@ sub $0,$2
 sub $0,800
 mov $4,-1
 add $4,$2
-lpb $0,1
+lpb $0
   sub $4,$0
   mov $0,2
   div $4,10

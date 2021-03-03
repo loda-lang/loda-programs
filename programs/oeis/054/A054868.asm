@@ -3,10 +3,10 @@
 
 mov $1,1
 mov $2,4
-lpb $2,1
+lpb $2
   add $1,108
   mov $2,$0
-  lpb $1,1
+  lpb $1
     sub $1,8
     div $2,2
     sub $0,$2

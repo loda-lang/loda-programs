@@ -6,7 +6,7 @@ mul $0,2
 sub $0,5
 mul $2,6
 add $2,2
-lpb $0,1
+lpb $0
   div $0,-62
   pow $2,2
 lpe

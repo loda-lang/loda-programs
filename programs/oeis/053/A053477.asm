@@ -3,7 +3,7 @@
 
 trn $1,$0
 mov $2,$0
-lpb $0,1
+lpb $0
   cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $1,$0
   add $0,$1

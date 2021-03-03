@@ -3,19 +3,19 @@
 
 mov $10,$0
 mov $12,$0
-lpb $12,1
+lpb $12
   clr $0,10
   mov $0,$10
   sub $12,1
   sub $0,$12
-  lpb $0,1
+  lpb $0
     mod $0,8
   lpe
   add $0,2
   pow $0,2
   add $0,2
   mov $9,$0
-  lpb $0,1
+  lpb $0
     add $0,$9
     div $0,3
     add $5,7

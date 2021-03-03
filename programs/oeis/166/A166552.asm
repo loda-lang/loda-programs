@@ -9,7 +9,7 @@ mov $2,2
 div $4,2
 add $4,3
 pow $1,$4
-lpb $0,1
+lpb $0
   mul $2,2
   mov $3,5
   trn $3,$2

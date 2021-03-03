@@ -7,8 +7,8 @@ mov $1,1031
 add $2,$0
 add $2,1066
 mov $3,1031
-lpb $2,1
-  lpb $3,1
+lpb $2
+  lpb $3
     add $2,$3
     sub $3,$3
   lpe

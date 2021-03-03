@@ -10,7 +10,7 @@ pow $1,$3
 add $1,2
 div $1,6
 mov $2,1
-lpb $0,1
+lpb $0
   mov $0,2
   mul $1,14
 lpe

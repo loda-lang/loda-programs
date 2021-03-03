@@ -3,12 +3,12 @@
 
 mov $5,$0
 mov $7,2
-lpb $7,1
+lpb $7
   clr $0,5
   mov $0,$5
   sub $0,1
   sub $7,1
-  lpb $0,1
+  lpb $0
     sub $1,1
     cal $1,33505 ; Expansion of 1/(1 - 3*x - x^2 + x^3).
     add $2,$1

@@ -16,7 +16,7 @@ sub $4,$2
 sub $0,$4
 trn $3,$0
 add $3,$1
-lpb $0,1
+lpb $0
   mov $0,-5
   mul $1,2
   add $4,$3

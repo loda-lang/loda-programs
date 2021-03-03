@@ -13,7 +13,7 @@ add $4,$2
 pow $4,2
 add $4,$3
 add $4,2
-lpb $0,1
+lpb $0
   sub $0,1
   mov $1,7
   add $1,$4

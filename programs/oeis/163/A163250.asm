@@ -3,20 +3,20 @@
 
 mov $14,$0
 mov $16,$0
-lpb $16,1
+lpb $16
   clr $0,14
   mov $0,$14
   sub $16,1
   sub $0,$16
   mov $11,$0
   mov $13,$0
-  lpb $13,1
+  lpb $13
     mov $0,$11
     sub $13,1
     sub $0,$13
     mov $3,$0
     mov $4,$0
-    lpb $0,1
+    lpb $0
       sub $4,$0
       sub $0,1
       mov $7,$4

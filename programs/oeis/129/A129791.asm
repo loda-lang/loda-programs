@@ -11,7 +11,7 @@ mov $3,1
 mul $3,$1
 div $3,$2
 add $3,9
-lpb $0,1
+lpb $0
   mul $0,$4
   mov $1,4
   mul $1,$3

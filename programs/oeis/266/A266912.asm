@@ -10,14 +10,14 @@ add $0,$3
 sub $0,1
 mov $1,5
 mov $3,4
-lpb $0,1
+lpb $0
   add $0,$3
   sub $0,5
   trn $0,4
   add $1,12
   mov $3,1
 lpe
-lpb $2,1
+lpb $2
   add $1,11
   sub $2,1
 lpe

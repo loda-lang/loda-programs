@@ -11,12 +11,12 @@ add $0,$3
 add $2,$3
 add $0,$2
 sub $2,$2
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,$2
   add $2,2
 lpe
-lpb $4,1
+lpb $4
   add $1,211
   sub $4,1
 lpe

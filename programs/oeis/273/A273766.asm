@@ -10,10 +10,10 @@ add $3,4
 mul $3,$2
 mov $6,$0
 mov $0,1
-lpb $3,1
+lpb $3
   mul $3,2
   trn $3,$6
-  lpb $6,1
+  lpb $6
     sub $6,1
   lpe
 lpe

@@ -7,7 +7,7 @@ mov $3,$0
 trn $3,1
 mov $4,$0
 mov $6,$3
-lpb $4,1
+lpb $4
   div $4,10
   mul $6,10
 lpe

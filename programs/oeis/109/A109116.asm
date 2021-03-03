@@ -9,73 +9,73 @@ mul $0,2
 add $2,1
 mov $1,$2
 mov $5,$2
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,$5
 lpe
 sub $1,1
 mov $3,38
 mov $7,$6
-lpb $3,1
+lpb $3
   add $1,$7
   sub $3,1
 lpe
 mov $4,$6
-lpb $4,1
+lpb $4
   sub $4,1
   add $8,$7
 lpe
 mov $3,133
 mov $7,$8
-lpb $3,1
+lpb $3
   add $1,$7
   sub $3,1
 lpe
 mov $4,$6
 mov $8,0
-lpb $4,1
+lpb $4
   sub $4,1
   add $8,$7
 lpe
 mov $3,120
 mov $7,$8
-lpb $3,1
+lpb $3
   add $1,$7
   sub $3,1
 lpe
 mov $4,$6
 mov $8,0
-lpb $4,1
+lpb $4
   sub $4,1
   add $8,$7
 lpe
 mov $3,54
 mov $7,$8
-lpb $3,1
+lpb $3
   add $1,$7
   sub $3,1
 lpe
 mov $4,$6
 mov $8,0
-lpb $4,1
+lpb $4
   sub $4,1
   add $8,$7
 lpe
 mov $3,12
 mov $7,$8
-lpb $3,1
+lpb $3
   add $1,$7
   sub $3,1
 lpe
 mov $4,$6
 mov $8,0
-lpb $4,1
+lpb $4
   sub $4,1
   add $8,$7
 lpe
 mov $3,1
 mov $7,$8
-lpb $3,1
+lpb $3
   add $1,$7
   sub $3,1
 lpe

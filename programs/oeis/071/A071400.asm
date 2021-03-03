@@ -3,7 +3,7 @@
 
 pow $0,6
 trn $0,4
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,8
   trn $0,$1

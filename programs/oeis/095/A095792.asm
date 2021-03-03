@@ -3,7 +3,7 @@
 
 add $0,1
 cal $0,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
-lpb $0,1
+lpb $0
   mov $0,1
   mov $1,1
 lpe

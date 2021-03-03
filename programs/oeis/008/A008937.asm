@@ -3,13 +3,13 @@
 
 mov $4,$0
 mov $6,$0
-lpb $4,1
+lpb $4
   mov $0,$6
   sub $4,1
   sub $0,$4
   mov $2,$0
   mov $5,2
-  lpb $5,1
+  lpb $5
     mov $0,$2
     sub $0,1
     sub $5,1

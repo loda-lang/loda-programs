@@ -4,7 +4,7 @@
 mov $8,$0
 mov $10,$0
 add $10,1
-lpb $10,1
+lpb $10
   clr $0,8
   mov $0,$8
   sub $10,1
@@ -12,7 +12,7 @@ lpb $10,1
   mov $5,$0
   mov $7,$0
   add $7,1
-  lpb $7,1
+  lpb $7
     clr $0,5
     mov $0,$5
     sub $7,1
@@ -27,7 +27,7 @@ lpb $10,1
     sub $0,$3
     mov $2,5
     pow $3,$0
-    lpb $0,1
+    lpb $0
       add $0,4
       sub $2,1
       div $0,$2

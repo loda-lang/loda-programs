@@ -6,7 +6,7 @@ add $3,2
 mov $1,$3
 pow $1,9
 pow $3,5
-lpb $0,1
+lpb $0
   trn $0,$1
   sub $1,$3
   mov $2,10

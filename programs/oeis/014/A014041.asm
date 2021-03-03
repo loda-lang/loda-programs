@@ -3,7 +3,7 @@
 
 gcd $0,128
 div $0,-9
-lpb $0,1
+lpb $0
   mov $0,1
 lpe
 mov $1,$0

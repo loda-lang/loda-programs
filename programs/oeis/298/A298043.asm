@@ -5,7 +5,7 @@ mov $2,$0
 add $0,1
 sub $2,1
 add $0,$2
-lpb $0,1
+lpb $0
   add $3,$0
   cal $0,53645 ; Distance to largest power of 2 less than or equal to n; write n in binary, change the first digit to zero, and convert back to decimal.
   sub $0,1

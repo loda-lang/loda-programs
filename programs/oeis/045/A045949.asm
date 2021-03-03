@@ -3,38 +3,38 @@
 
 mov $2,$0
 mov $7,$0
-lpb $0,1
-  lpb $0,1
+lpb $0
+  lpb $0
     sub $0,1
     add $4,$2
     add $1,$4
   lpe
-  lpb $1,1
+  lpb $1
     sub $2,2
     sub $1,$2
   lpe
 lpe
 mov $5,$7
 mov $8,$7
-lpb $5,1
+lpb $5
   sub $5,1
   add $6,$8
 lpe
 mov $3,2
 mov $8,$6
-lpb $3,1
+lpb $3
   add $1,$8
   sub $3,1
 lpe
 mov $5,$7
 mov $6,0
-lpb $5,1
+lpb $5
   sub $5,1
   add $6,$8
 lpe
 mov $3,3
 mov $8,$6
-lpb $3,1
+lpb $3
   add $1,$8
   sub $3,1
 lpe

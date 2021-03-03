@@ -6,9 +6,9 @@ mov $2,$0
 add $2,3
 mov $5,11
 mov $6,$2
-lpb $2,1
+lpb $2
   mov $3,$5
-  lpb $6,1
+  lpb $6
     add $1,$4
     trn $1,$2
     add $3,5

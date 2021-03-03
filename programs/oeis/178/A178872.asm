@@ -3,7 +3,7 @@
 
 mov $5,$0
 mov $8,$0
-lpb $8,1
+lpb $8
   mov $0,$5
   sub $8,1
   sub $0,$8

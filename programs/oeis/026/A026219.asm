@@ -6,7 +6,7 @@ mod $0,2
 mov $3,10
 mul $4,2
 mov $1,$4
-lpb $0,1
+lpb $0
   bin $0,$3
   add $1,1
   div $1,3

@@ -12,7 +12,7 @@ mov $1,$4
 add $1,$3
 trn $4,1
 mov $5,$4
-lpb $0,1
+lpb $0
   mov $0,$5
   gcd $0,2
   sub $2,1

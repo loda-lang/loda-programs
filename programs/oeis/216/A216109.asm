@@ -5,49 +5,49 @@ mov $4,$0
 add $0,8
 mov $1,3
 add $1,$0
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,$0
 lpe
 add $1,3
 mov $2,176
 mov $5,$4
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe
 mov $3,$4
-lpb $3,1
+lpb $3
   sub $3,1
   add $6,$5
 lpe
 mov $2,190
 mov $5,$6
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe
 mov $3,$4
 mov $6,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $6,$5
 lpe
 mov $2,54
 mov $5,$6
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe
 mov $3,$4
 mov $6,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $6,$5
 lpe
 mov $2,6
 mov $5,$6
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe

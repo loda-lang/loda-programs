@@ -7,7 +7,7 @@ add $2,1
 mov $3,2
 mul $3,$2
 pow $3,2
-lpb $0,1
+lpb $0
   bin $0,2
   mul $3,8
 lpe

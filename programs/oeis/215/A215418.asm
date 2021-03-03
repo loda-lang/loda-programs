@@ -15,7 +15,7 @@ clr $4,$0
 sub $5,$7
 add $0,$5
 add $1,1
-lpb $0,1
+lpb $0
   mov $0,$7
   add $0,$7
   mov $2,$1

@@ -3,7 +3,7 @@
 
 mov $2,1
 mov $5,$0
-lpb $0,1
+lpb $0
   mov $1,$0
   mov $4,$0
   cal $1,38737 ; T(n,n-2), array T as in A038792.

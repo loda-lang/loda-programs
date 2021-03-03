@@ -11,7 +11,7 @@ trn $0,4
 add $0,$4
 mov $3,7
 mov $4,$1
-lpb $0,1
+lpb $0
   trn $0,4
   trn $1,$3
   mov $3,$1

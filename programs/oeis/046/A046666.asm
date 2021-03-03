@@ -4,7 +4,7 @@
 add $0,2
 mov $2,$0
 mov $3,2
-lpb $0,1
+lpb $0
   sub $2,2
   sub $3,1
   gcd $0,$3

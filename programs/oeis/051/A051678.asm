@@ -4,15 +4,15 @@
 mov $5,$0
 add $5,1
 mov $9,$0
-lpb $5,1
+lpb $5
   mov $0,$9
   sub $5,1
   sub $0,$5
   cmp $3,$0
   mov $4,$0
   mov $7,1
-  lpb $2,1
-    lpb $4,1
+  lpb $2
+    lpb $4
       add $7,1
       mov $8,$4
       trn $4,$7

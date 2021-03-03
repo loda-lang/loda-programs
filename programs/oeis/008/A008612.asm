@@ -4,10 +4,10 @@
 add $0,2
 mov $2,$0
 mov $3,$0
-lpb $3,1
+lpb $3
   sub $0,6
   div $2,2
-  lpb $3,1
+  lpb $3
     sub $0,2
     mov $1,$2
     sub $1,$0

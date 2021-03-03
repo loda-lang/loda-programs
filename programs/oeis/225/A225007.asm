@@ -4,7 +4,7 @@
 mov $2,$0
 mov $3,$0
 add $3,1
-lpb $3,1
+lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
@@ -14,7 +14,7 @@ lpb $3,1
   mov $5,4
   add $5,$0
   bin $5,4
-  lpb $0,1
+  lpb $0
     sub $0,2
     pow $0,2
     add $5,$4

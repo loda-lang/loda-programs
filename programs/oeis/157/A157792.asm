@@ -9,13 +9,13 @@ mov $1,1
 mov $2,$0
 trn $4,5
 sub $6,4
-lpb $2,1
+lpb $2
   mov $1,$4
   add $5,$0
   add $6,5
   mov $3,$6
   sub $6,3
-  lpb $5,1
+  lpb $5
     add $1,1
     trn $5,$3
     add $5,$6

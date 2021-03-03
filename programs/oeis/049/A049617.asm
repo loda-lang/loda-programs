@@ -4,13 +4,13 @@
 mov $2,$0
 mov $3,$0
 mov $5,$0
-lpb $3,1
+lpb $3
   mov $0,$5
   sub $3,1
   sub $0,$3
   mul $0,4
   sub $0,1
-  lpb $0,1
+  lpb $0
     mov $4,$0
     cal $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
     mov $0,-2

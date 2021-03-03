@@ -4,7 +4,7 @@
 mov $3,$0
 add $0,2
 mov $5,5
-lpb $0,1
+lpb $0
   sub $0,1
   add $2,$5
   trn $1,$2
@@ -23,7 +23,7 @@ sub $5,$1
 mov $1,5
 add $1,$5
 sub $1,3
-lpb $3,1
+lpb $3
   add $1,2
   sub $3,1
 lpe

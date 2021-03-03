@@ -9,7 +9,7 @@ lpb $0,6
   mov $2,$14
 lpe
 div $0,89
-lpb $14,1
+lpb $14
   mov $2,$0
   sub $14,4
 lpe

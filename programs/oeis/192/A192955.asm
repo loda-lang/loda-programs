@@ -3,27 +3,27 @@
 
 mov $71,$0
 mov $73,$0
-lpb $73,1
+lpb $73
   clr $0,71
   mov $0,$71
   sub $73,1
   sub $0,$73
   mov $68,$0
   mov $70,$0
-  lpb $70,1
+  lpb $70
     mov $0,$68
     sub $70,1
     sub $0,$70
     mov $64,$0
     mov $66,2
-    lpb $66,1
+    lpb $66
       mov $0,$64
       sub $66,1
       add $0,$66
       sub $0,1
       mov $60,$0
       mov $62,2
-      lpb $62,1
+      lpb $62
         sub $62,1
         add $0,$62
         sub $0,1
@@ -32,23 +32,23 @@ lpb $73,1
         cal $4,210728 ; a(n) = a(n-1) + a(n-2) + n + 2 with n>1, a(0)=1, a(1)=2.
         mov $1,$4
         mov $63,$62
-        lpb $63,1
+        lpb $63
           mov $61,$1
           sub $63,1
         lpe
       lpe
-      lpb $60,1
+      lpb $60
         mov $60,0
         sub $61,$1
       lpe
       mov $1,$61
       mov $67,$66
-      lpb $67,1
+      lpb $67
         mov $65,$1
         sub $67,1
       lpe
     lpe
-    lpb $64,1
+    lpb $64
       mov $64,0
       sub $65,$1
     lpe

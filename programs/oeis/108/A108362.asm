@@ -3,7 +3,7 @@
 
 mov $27,$0
 mov $29,2
-lpb $29,1
+lpb $29
   clr $0,27
   mov $0,$27
   sub $29,1
@@ -11,7 +11,7 @@ lpb $29,1
   sub $0,1
   add $2,3
   div $2,2
-  lpb $0,1
+  lpb $0
     sub $0,1
     mov $1,$0
     cal $1,133586 ; Expansion of x*(1+2*x)/( (x^2-x-1)*(x^2+x-1) ).
@@ -20,12 +20,12 @@ lpb $29,1
   lpe
   mov $1,$2
   mov $30,$29
-  lpb $30,1
+  lpb $30
     mov $28,$1
     sub $30,1
   lpe
 lpe
-lpb $27,1
+lpb $27
   mov $27,0
   sub $28,$1
 lpe

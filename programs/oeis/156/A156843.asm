@@ -8,9 +8,9 @@ sub $1,1
 pow $1,2
 sub $1,1
 mov $2,2
-lpb $2,1
+lpb $2
   mov $4,2
-  lpb $4,1
+  lpb $4
     mul $1,5
     sub $4,$2
   lpe

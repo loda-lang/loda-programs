@@ -3,8 +3,8 @@
 
 mov $2,$0
 mov $4,4
-lpb $2,1
-  lpb $4,1
+lpb $2
+  lpb $4
     div $2,2
     mov $1,$2
     mov $2,$0
@@ -15,7 +15,7 @@ lpb $2,1
     mul $1,$0
   lpe
   trn $2,$1
-  lpb $5,1
+  lpb $5
     mul $3,2
     mov $4,$5
     trn $5,$3

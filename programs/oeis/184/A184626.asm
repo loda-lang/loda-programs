@@ -3,15 +3,15 @@
 
 add $0,4
 mov $2,$0
-lpb $2,1
+lpb $2
   mov $3,$2
   sub $3,1
   mov $4,1
-  lpb $4,1
+  lpb $4
     pow $3,2
     trn $4,$2
   lpe
-  lpb $3,1
+  lpb $3
     trn $3,$2
     add $2,1
   lpe

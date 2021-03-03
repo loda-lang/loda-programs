@@ -9,7 +9,7 @@ mul $4,2
 add $4,1
 mov $2,$4
 mul $2,$4
-lpb $0,1
+lpb $0
   mov $1,$3
   mov $2,8
   add $5,1
