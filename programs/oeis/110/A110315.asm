@@ -3,7 +3,7 @@
 
 mov $1,2
 gcd $1,$0
-cal $0,110332
+cal $0,110332 ; Diagonal sums of number a triangle related to the Pell numbers.
 mul $0,$1
 mov $1,$0
 sub $1,2

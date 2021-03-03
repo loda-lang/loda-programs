@@ -129,6 +129,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253724](http://oeis.org/A253724) ([L22 program](253/A253724.asm)): Numbers c(n) whose squares are equal to the sums of a number M(n) of consecutive cubed integers b^3 + (b+1)^3 + ... + (b+M-1)^3 = c^2, starting at b(n) (A002593) for M(n) being twice a squared integer (A001105).
 * [A253786](http://oeis.org/A253786) ([L28 program](253/A253786.asm)): a(3n) = 0, a(3n+1) = 0, a(3n+2) = 1 + a(n+1).
 * [A253811](http://oeis.org/A253811) ([L10 program](253/A253811.asm)): Part of the y solutions of the Pell equation x^2 - 2*y^2 = +7.
+* [A253885](http://oeis.org/A253885) ([L04 program](253/A253885.asm)): Permutation of even numbers: a(n) = A003961(n+1) - 1.
 * [A253887](http://oeis.org/A253887) ([L09 program](253/A253887.asm)): Row index of n in A191450: a(3n) = 2n, a(3n+1) = 2n+1, a(3n+2) = a(n+1).
 * [A253903](http://oeis.org/A253903) ([L10 program](253/A253903.asm)): The characteristic function of square pyramidal numbers.
 * [A253909](http://oeis.org/A253909) ([L03 program](253/A253909.asm)): 1 together with the positive squares.
@@ -1264,7 +1265,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272399](http://oeis.org/A272399) ([L03 program](272/A272399.asm)): The intersection of hexagonal numbers (A000384) and centered 9-gonal numbers (A060544).
 * [A272459](http://oeis.org/A272459) ([L14 program](272/A272459.asm)): The total number of different isosceles trapezoids, excluding squares, that can be drawn on a n X n square grid where the corners of each individual trapezoid lie on a lattice point.
 * [A272476](http://oeis.org/A272476) ([L13 program](272/A272476.asm)): a(n) = n if n is prime, a(n) = 2*n+3 otherwise.
-* [A272532](http://oeis.org/A272532) ([L03 program](272/A272532.asm)): Single bit representation of the sum of two sinusoids with periods 2 and 2*sqrt(2).
+* [A272532](http://oeis.org/A272532) ([L07 program](272/A272532.asm)): Single bit representation of the sum of two sinusoids with periods 2 and 2*sqrt(2).
 * [A272549](http://oeis.org/A272549) ([L03 program](272/A272549.asm)): Expansion of x*(1 + 5*x - 3*x^2 + 7*x^3 + 3*x^4 + 3 *x^5 - x^6 + x^7)/((1 - x)^3*(1 + x + x^2 + x^3)^2).
 * [A272574](http://oeis.org/A272574) ([L04 program](272/A272574.asm)): a(n) = f(9, f(8, n)), where f(k,m) = floor(m*k/(k-1)).
 * [A272576](http://oeis.org/A272576) ([L04 program](272/A272576.asm)): a(n) = f(10, f(9, n)), where f(k,m) = floor(m*k/(k-1)).
@@ -2172,6 +2173,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A290074](http://oeis.org/A290074) ([L17 program](290/A290074.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
 * [A290113](http://oeis.org/A290113) ([L10 program](290/A290113.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
 * [A290114](http://oeis.org/A290114) ([L07 program](290/A290114.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
+* [A290124](http://oeis.org/A290124) ([L12 program](290/A290124.asm)): a(n) = a(n-1) + 12*a(n-2) with a(1) = 1 and a(2) = 2.
 * [A290140](http://oeis.org/A290140) ([L10 program](290/A290140.asm)): The number of maximal subsemigroups of the Jones monoid on the set [1..n].
 * [A290168](http://oeis.org/A290168) ([L04 program](290/A290168.asm)): If n is even then a(n) = n^2*(n+2)/8, otherwise a(n) = (n-1)*n*(n+1)/8.
 * [A290198](http://oeis.org/A290198) ([L14 program](290/A290198.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
