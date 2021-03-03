@@ -4,16 +4,16 @@
 mov $27,$0
 mov $29,$0
 add $29,1
-lpb $29,1
+lpb $29
   clr $0,27
   mov $0,$27
   sub $29,1
   sub $0,$29
-  cal $0,76479
+  cal $0,76479 ; a(n) = mu(rad(n)), where mu is the Moebius-function (A008683) and rad is the radical or squarefree kernel (A007947).
   mov $1,$0
   add $4,$0
   mul $4,3
-  lpb $4,1
+  lpb $4
     mul $1,$4
     sub $4,4
   lpe

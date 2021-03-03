@@ -12,7 +12,7 @@ mul $0,$4
 sub $0,$4
 div $0,144
 mov $3,1761
-lpb $0,1
+lpb $0
   sub $0,$4
   div $0,$3
   mov $1,$0

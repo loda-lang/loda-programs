@@ -6,7 +6,7 @@ add $1,$0
 bin $0,2
 pow $1,2
 add $0,$1
-lpb $0,1
+lpb $0
   mov $1,$0
   div $1,5
   trn $2,$0

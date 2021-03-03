@@ -6,7 +6,7 @@ mov $2,2
 mov $3,$0
 add $3,8
 add $1,$3
-lpb $0,1
+lpb $0
   div $0,$2
   add $1,$0
   add $2,1

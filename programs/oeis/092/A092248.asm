@@ -5,7 +5,7 @@ cal $0,76479 ; a(n) = mu(rad(n)), where mu is the Moebius-function (A008683) and
 sub $0,5
 mov $2,$0
 pow $2,2
-lpb $0,1
+lpb $0
   mov $0,$3
   mov $1,$2
 lpe

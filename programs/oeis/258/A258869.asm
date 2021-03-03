@@ -6,12 +6,12 @@ mov $3,$0
 add $3,$0
 mov $4,$0
 mov $5,$0
-lpb $2,1
+lpb $2
   mov $1,$4
   sub $1,4
   cmp $1,4
   mul $5,$3
-  lpb $5,1
+  lpb $5
     gcd $1,2
     trn $3,7
     add $1,$3

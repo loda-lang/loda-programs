@@ -8,7 +8,7 @@ add $4,$3
 pow $4,2
 add $0,$4
 sub $0,2
-lpb $0,1
+lpb $0
   sub $0,3
   trn $0,$1
   mov $2,$1

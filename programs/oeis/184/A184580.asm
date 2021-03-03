@@ -8,18 +8,18 @@ mov $5,$0
 pow $0,2
 mov $1,1
 mov $2,3
-lpb $2,1
-  lpb $4,1
+lpb $2
+  lpb $4
     mov $2,1
     sub $4,1
     add $5,$3
   lpe
   mov $6,$0
-  lpb $5,1
+  lpb $5
     sub $5,$2
     add $6,3
   lpe
-  lpb $6,1
+  lpb $6
     add $1,1
     mov $2,$1
     add $1,3

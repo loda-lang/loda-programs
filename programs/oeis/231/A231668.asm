@@ -3,12 +3,12 @@
 
 mov $10,$0
 mov $12,$0
-lpb $12,1
+lpb $12
   clr $0,10
   mov $0,$10
   sub $12,1
   sub $0,$12
-  lpb $0,1
+  lpb $0
     mov $2,0
     add $2,$0
     div $0,5

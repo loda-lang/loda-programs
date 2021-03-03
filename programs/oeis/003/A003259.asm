@@ -8,9 +8,9 @@ mov $1,$0
 mov $2,$0
 pow $5,2
 mov $6,2
-lpb $2,1
+lpb $2
   mov $7,2
-  lpb $5,1
+  lpb $5
     trn $5,$1
     add $1,$7
     add $6,1

@@ -4,7 +4,7 @@
 add $0,1
 mul $0,7
 div $0,11
-lpb $0,1
+lpb $0
   mod $0,4
 lpe
 sub $0,1

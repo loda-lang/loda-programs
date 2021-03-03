@@ -3,12 +3,12 @@
 
 mov $2,$0
 mov $5,$0
-lpb $2,1
+lpb $2
   bin $0,2
   mul $0,3
   mov $3,2
   mov $6,$0
-  lpb $6,1
+  lpb $6
     trn $6,$3
     add $3,1
   lpe

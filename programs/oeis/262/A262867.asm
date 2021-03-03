@@ -3,11 +3,11 @@
 
 mov $2,1
 mov $5,$0
-lpb $2,1
+lpb $2
   sub $2,1
   mov $3,$0
   mov $6,$0
-  lpb $3,1
+  lpb $3
     mov $0,$6
     sub $3,1
     sub $0,$3

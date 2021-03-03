@@ -9,7 +9,7 @@ mov $0,-3
 mov $1,$2
 sub $1,5
 mul $1,64
-lpb $0,1
+lpb $0
   div $0,2
   sub $1,1
 lpe

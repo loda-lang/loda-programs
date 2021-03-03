@@ -4,7 +4,7 @@
 add $0,1
 mul $0,2
 gcd $0,262144
-lpb $0,1
+lpb $0
   mul $0,9
   add $0,1
   mod $0,7

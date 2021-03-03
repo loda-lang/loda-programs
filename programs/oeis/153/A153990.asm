@@ -11,7 +11,7 @@ mov $1,$0
 add $4,5
 mul $2,$4
 trn $2,$0
-lpb $0,1
+lpb $0
   mul $2,$3
   mov $0,$2
   add $1,3

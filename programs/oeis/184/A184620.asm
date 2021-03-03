@@ -4,9 +4,9 @@
 add $0,100
 mov $2,$0
 mov $4,$0
-lpb $2,1
+lpb $2
   add $4,3
-  lpb $5,1
+  lpb $5
     add $2,$3
     trn $5,$1
   lpe
@@ -15,7 +15,7 @@ lpb $2,1
   pow $4,2
   mul $4,2
   mov $5,2
-  lpb $4,1
+  lpb $4
     add $1,2
     trn $4,$1
   lpe

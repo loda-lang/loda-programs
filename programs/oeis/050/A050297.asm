@@ -3,24 +3,24 @@
 
 mov $12,$0
 mov $14,$0
-lpb $14,1
+lpb $14
   clr $0,12
   mov $0,$12
   sub $14,1
   sub $0,$14
   mov $9,$0
   mov $11,$0
-  lpb $11,1
+  lpb $11
     mov $0,$9
     sub $11,1
     sub $0,$11
     mov $2,$0
-    lpb $2,1
+    lpb $2
       mov $7,$2
       mul $2,$0
       mov $3,$7
       mov $5,4
-      lpb $5,1
+      lpb $5
         mov $1,$0
         sub $1,1
         trn $2,2

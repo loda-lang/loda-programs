@@ -4,10 +4,10 @@
 mov $3,6
 cal $0,143731 ; Characteristic function of numbers n with at least two distinct prime factors.
 sub $0,2
-lpb $0,1
+lpb $0
   mov $2,$0
   mul $3,$0
-  lpb $3,1
+  lpb $3
     mod $0,2
     mov $1,$4
     div $3,3

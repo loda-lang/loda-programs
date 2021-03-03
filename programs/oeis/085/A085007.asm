@@ -4,13 +4,13 @@
 mov $2,$0
 add $2,1
 mov $3,$0
-lpb $2,1
+lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
   mul $0,2
   add $0,3
-  lpb $0,1
+  lpb $0
     div $0,3
     gcd $0,1073741824
   lpe

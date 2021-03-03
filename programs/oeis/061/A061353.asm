@@ -9,6 +9,6 @@ mod $2,2
 add $1,$2
 bin $1,2
 add $1,$2
-lpb $1,1
+lpb $1
   mod $1,10
 lpe

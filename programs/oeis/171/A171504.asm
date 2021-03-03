@@ -3,15 +3,15 @@
 
 mov $29,2
 mov $31,$0
-lpb $29,1
+lpb $29
   sub $29,1
   add $0,$29
   sub $0,1
   mov $5,$0
   mov $6,$0
-  lpb $0,1
+  lpb $0
     add $3,$6
-    lpb $3,1
+    lpb $3
       mov $1,9
       mul $1,$5
       lpb $0,2

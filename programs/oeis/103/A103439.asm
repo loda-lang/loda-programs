@@ -3,14 +3,14 @@
 
 mov $10,$0
 mov $12,$0
-lpb $12,1
+lpb $12
   clr $0,10
   mov $0,$10
   sub $12,1
   sub $0,$12
   add $1,1
   add $9,$0
-  lpb $9,1
+  lpb $9
     pow $1,$9
     add $3,1
     add $4,$1

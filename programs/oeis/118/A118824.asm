@@ -3,7 +3,7 @@
 
 cal $0,330569 ; a(n) = 1 if n is odd, otherwise a(n) = 2^(v-1)+1 where v is the 2-adic valuation of n (A007814(n)).
 sub $1,$0
-lpb $0,1
+lpb $0
   add $2,$0
   mov $0,1
   mov $1,$2

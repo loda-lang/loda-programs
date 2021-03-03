@@ -7,7 +7,7 @@ add $0,24
 mul $4,2
 mov $7,24
 add $7,$4
-lpb $0,1
+lpb $0
   mov $6,64
   add $6,$7
   mov $8,7

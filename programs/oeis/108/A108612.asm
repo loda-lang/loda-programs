@@ -12,7 +12,7 @@ div $2,16
 mul $2,$1
 mov $4,10
 add $4,$2
-lpb $0,1
+lpb $0
   sub $0,1
   sub $4,7
   mul $4,2

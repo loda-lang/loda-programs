@@ -4,18 +4,18 @@
 mov $1,1
 mov $2,$0
 mov $4,7
-lpb $2,1
+lpb $2
   mov $3,$0
   trn $4,5
   add $4,1
   trn $2,$4
   add $4,$2
   sub $4,1
-  lpb $4,1
+  lpb $4
     sub $4,$3
   lpe
   sub $4,1
-  lpb $0,1
+  lpb $0
     mov $0,5
   lpe
   sub $0,3

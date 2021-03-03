@@ -3,14 +3,14 @@
 
 mov $8,$0
 mov $10,$0
-lpb $10,1
+lpb $10
   clr $0,8
   mov $0,$8
   sub $10,1
   sub $0,$10
   mov $5,$0
   mov $7,$0
-  lpb $7,1
+  lpb $7
     mov $0,$5
     sub $7,1
     sub $0,$7
@@ -20,7 +20,7 @@ lpb $10,1
     add $4,$0
     div $4,3
     add $4,$0
-    lpb $0,1
+    lpb $0
       trn $0,$3
       add $0,2
       add $4,$3

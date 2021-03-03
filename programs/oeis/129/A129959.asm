@@ -9,7 +9,7 @@ add $4,3
 mod $4,2
 mov $5,$0
 add $0,1
-lpb $0,1
+lpb $0
   bin $1,2
   sub $4,$1
   mov $0,$4

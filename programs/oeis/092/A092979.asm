@@ -21,7 +21,7 @@ mov $4,4
 sub $4,$3
 add $4,1
 mov $7,$3
-lpb $0,1
+lpb $0
   sub $0,1
   sub $7,$4
 lpe

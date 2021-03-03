@@ -6,7 +6,7 @@ mov $1,6
 mov $2,5
 mov $4,11
 mov $6,27
-lpb $0,1
+lpb $0
   add $6,6
   trn $1,$6
   add $1,6

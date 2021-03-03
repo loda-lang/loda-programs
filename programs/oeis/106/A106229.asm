@@ -7,7 +7,7 @@ div $1,6
 mov $4,$0
 mov $5,4
 add $5,$0
-lpb $0,1
+lpb $0
   mov $0,1
   mov $1,1
   sub $1,$5

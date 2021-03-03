@@ -3,7 +3,7 @@
 
 mov $1,2
 gcd $1,$0
-lpb $0,1
+lpb $0
   div $0,216
   add $1,5
 lpe

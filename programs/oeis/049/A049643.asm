@@ -4,13 +4,13 @@
 mov $8,$0
 mov $10,$0
 add $10,1
-lpb $10,1
+lpb $10
   clr $0,8
   mov $0,$8
   sub $10,1
   sub $0,$10
   add $2,$0
-  lpb $0,1
+  lpb $0
     mov $1,$0
     trn $1,1
     sub $2,$2

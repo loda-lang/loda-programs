@@ -3,7 +3,7 @@
 
 add $0,170
 mov $2,2
-lpb $0,1
+lpb $0
   add $1,$0
   div $0,2
 lpe

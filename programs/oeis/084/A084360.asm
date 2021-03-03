@@ -3,13 +3,13 @@
 
 mov $15,$0
 mov $17,2
-lpb $17,1
+lpb $17
   clr $0,15
   mov $0,$15
   sub $17,1
   add $0,$17
   sub $0,1
-  lpb $0,1
+  lpb $0
     sub $0,1
     mov $1,$0
     cal $1,230980 ; Number of primes <= n, starting at n=0.
@@ -18,12 +18,12 @@ lpb $17,1
   lpe
   mov $1,$2
   mov $18,$17
-  lpb $18,1
+  lpb $18
     mov $16,$1
     sub $18,1
   lpe
 lpe
-lpb $15,1
+lpb $15
   mov $15,0
   sub $16,$1
 lpe

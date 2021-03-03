@@ -10,7 +10,7 @@ mov $4,$3
 sub $4,1
 mov $2,$4
 sub $2,1
-lpb $0,1
+lpb $0
   mov $0,$7
   add $1,$2
   sub $3,$3

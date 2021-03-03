@@ -4,11 +4,11 @@
 mul $0,8
 mov $2,$0
 div $2,2
-lpb $2,1
+lpb $2
   sub $1,7
   add $3,7
   trn $4,$1
-  lpb $4,1
+  lpb $4
     mov $1,$3
     sub $4,$4
   lpe

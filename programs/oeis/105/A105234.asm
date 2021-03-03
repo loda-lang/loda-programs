@@ -3,7 +3,7 @@
 
 sub $0,1
 mov $1,6
-lpb $1,1
+lpb $1
   lpb $1,5
     add $2,$0
     mod $2,2
@@ -16,7 +16,7 @@ lpb $1,1
 lpe
 mov $5,$0
 add $5,1
-lpb $5,1
+lpb $5
   add $1,3
   sub $5,$5
 lpe

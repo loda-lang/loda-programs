@@ -5,11 +5,11 @@ mul $0,2
 mov $1,$0
 add $1,1
 mov $2,1
-lpb $1,1
+lpb $1
   add $2,1
   sub $1,$2
 lpe
-lpb $2,1
+lpb $2
   add $1,1
   sub $2,2
 lpe

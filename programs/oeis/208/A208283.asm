@@ -13,7 +13,7 @@ mov $5,2
 add $5,$2
 mov $8,$2
 add $8,$5
-lpb $0,1
+lpb $0
   mov $0,1
   mov $1,$8
   add $8,$4

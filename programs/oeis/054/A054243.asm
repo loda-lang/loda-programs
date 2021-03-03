@@ -4,10 +4,10 @@
 mov $1,4
 mov $2,$0
 trn $2,2
-lpb $2,1
+lpb $2
   mov $3,$2
   div $2,2
-  lpb $3,1
+  lpb $3
     mul $1,2
     trn $3,2
   lpe

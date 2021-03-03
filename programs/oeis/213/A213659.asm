@@ -11,7 +11,7 @@ mul $3,3
 add $3,$1
 mul $3,8
 add $1,$3
-lpb $0,1
+lpb $0
   mov $0,$2
   add $1,1
 lpe

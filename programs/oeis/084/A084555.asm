@@ -3,13 +3,13 @@
 
 mov $9,$0
 mov $11,$0
-lpb $11,1
+lpb $11
   clr $0,9
   mov $0,$9
   sub $11,1
   sub $0,$11
   mov $2,$0
-  lpb $2,1
+  lpb $2
     add $1,1
     sub $2,1
     div $2,$1

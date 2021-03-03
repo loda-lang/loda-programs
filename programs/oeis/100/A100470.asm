@@ -5,6 +5,6 @@ mov $2,10
 add $2,$0
 div $2,2
 mov $1,$2
-lpb $1,1
+lpb $1
   mov $1,$0
 lpe

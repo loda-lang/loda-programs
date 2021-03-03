@@ -7,7 +7,7 @@ mov $3,1
 log $3,$0
 mov $5,2
 mov $6,$0
-lpb $0,1
+lpb $0
   sub $0,1
   div $6,2
   add $3,$6

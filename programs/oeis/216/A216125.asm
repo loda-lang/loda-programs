@@ -3,8 +3,8 @@
 
 mov $2,$0
 mov $3,$0
-lpb $2,1
-  lpb $3,1
+lpb $2
+  lpb $3
     gcd $2,2
     add $2,2
     mod $3,2

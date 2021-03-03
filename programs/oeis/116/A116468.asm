@@ -8,7 +8,7 @@ mov $1,$0
 mul $1,4
 trn $1,0
 add $1,1
-lpb $1,1
+lpb $1
   sub $1,7
 lpe
 add $1,1

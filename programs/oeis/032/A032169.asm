@@ -4,7 +4,7 @@
 add $0,11
 mov $2,10
 mov $3,$0
-lpb $0,1
+lpb $0
   mov $0,7
   mov $1,$3
   bin $1,$2

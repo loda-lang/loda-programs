@@ -5,7 +5,7 @@ mul $0,50
 add $0,8
 div $0,9
 mov $2,64
-lpb $0,1
+lpb $0
   sub $0,1
   trn $0,7
   add $1,9

@@ -18,7 +18,7 @@ sub $4,$5
 add $1,$4
 mul $5,$1
 add $5,2
-lpb $0,1
+lpb $0
   mul $4,$5
   mov $0,$4
   add $4,$1

@@ -6,21 +6,21 @@ mov $7,$0
 mov $0,3
 mov $1,1
 mov $2,3
-lpb $2,1
+lpb $2
   add $1,$4
   mov $4,$1
-  lpb $4,1
+  lpb $4
     add $2,$1
     trn $4,$2
   lpe
   mov $5,2
-  lpb $5,1
+  lpb $5
     trn $5,$2
     mov $6,$0
     add $6,$2
   lpe
   bin $6,$2
-  lpb $6,1
+  lpb $6
     sub $6,$2
     sub $2,2
   lpe

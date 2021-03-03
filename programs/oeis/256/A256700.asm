@@ -3,7 +3,7 @@
 
 mov $1,138150
 mov $2,$0
-lpb $0,1
+lpb $0
   add $1,1
   cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
   sub $1,1

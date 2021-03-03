@@ -4,16 +4,16 @@
 mov $16,$0
 mov $18,$0
 add $18,1
-lpb $18,1
+lpb $18
   mov $0,$16
   sub $18,1
   sub $0,$18
   add $0,1
   mul $0,2
-  lpb $0,1
+  lpb $0
     lpb $0,16
       mov $8,$0
-      lpb $8,1
+      lpb $8
         mov $3,5
         add $6,3
         sub $7,1
@@ -22,7 +22,7 @@ lpb $18,1
         div $3,$6
         sub $8,7
         mod $8,2
-        lpb $8,1
+        lpb $8
           sub $0,1
           add $1,$6
           mov $6,$7

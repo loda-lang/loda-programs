@@ -9,7 +9,7 @@ add $1,36
 sub $2,4
 div $2,3
 mov $3,1
-lpb $2,1
+lpb $2
   add $1,$2
   sub $2,$3
 lpe

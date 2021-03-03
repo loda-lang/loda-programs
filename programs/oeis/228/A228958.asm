@@ -4,13 +4,13 @@
 mov $2,$0
 add $2,1
 mov $5,$0
-lpb $2,1
+lpb $2
   mov $0,$5
   sub $2,1
   sub $0,$2
   mov $4,$0
   mod $0,2
-  lpb $0,1
+  lpb $0
     fac $3
     mod $0,$3
     pow $4,2

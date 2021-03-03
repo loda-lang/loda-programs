@@ -7,8 +7,8 @@ mov $4,$2
 bin $4,$0
 mov $0,$4
 add $0,$4
-lpb $2,1
-  lpb $4,1
+lpb $2
+  lpb $4
     mul $0,2
     add $3,$4
     trn $4,$3

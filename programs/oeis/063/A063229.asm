@@ -14,7 +14,7 @@ div $4,2
 mul $4,4
 mov $5,$4
 mov $4,1
-lpb $0,1
+lpb $0
   mov $0,0
   add $3,$4
   trn $5,1

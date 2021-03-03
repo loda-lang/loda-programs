@@ -3,7 +3,7 @@
 
 mov $1,5
 mov $3,24
-lpb $0,1
+lpb $0
   gcd $0,4
   mov $3,9
   sub $4,$0

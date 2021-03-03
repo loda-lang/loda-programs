@@ -11,7 +11,7 @@ add $5,$4
 gcd $5,81
 mov $4,$5
 mov $6,83
-lpb $0,1
+lpb $0
   mov $0,$7
   sub $6,$4
   div $6,4

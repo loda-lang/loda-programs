@@ -3,7 +3,7 @@
 
 mov $1,3
 pow $1,$0
-lpb $0,1
+lpb $0
   mod $0,1
   mul $1,2
 lpe

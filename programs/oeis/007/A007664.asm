@@ -3,11 +3,11 @@
 
 mov $7,$0
 mov $9,$0
-lpb $9,1
+lpb $9
   mov $0,$7
   sub $9,1
   sub $0,$9
-  lpb $2,1
+  lpb $2
     add $0,1
     fac $5
     mov $3,$5
@@ -15,7 +15,7 @@ lpb $9,1
     mul $0,$4
     add $6,$5
     sub $6,3
-    lpb $6,1
+    lpb $6
       add $3,1
       trn $6,$3
     lpe

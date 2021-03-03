@@ -5,6 +5,6 @@ cal $0,188302 ; Positions of 1 in A188300; complement of A188301.
 div $0,2
 add $2,$0
 add $1,$2
-lpb $1,1
+lpb $1
   mod $1,2
 lpe

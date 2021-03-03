@@ -7,7 +7,7 @@ sub $2,$0
 mov $3,1
 mov $5,$0
 add $0,1
-lpb $0,1
+lpb $0
   mov $0,0
   add $2,$3
   cmp $1,$2

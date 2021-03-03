@@ -3,7 +3,7 @@
 
 sub $0,2
 mov $1,2
-lpb $0,1
+lpb $0
   trn $0,$1
   sub $0,1
   gcd $2,$1

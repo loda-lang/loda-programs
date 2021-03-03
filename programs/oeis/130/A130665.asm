@@ -4,18 +4,18 @@
 mov $5,$0
 add $5,1
 mov $7,$0
-lpb $5,1
+lpb $5
   mov $0,$7
   sub $5,1
   sub $0,$5
   add $3,1
-  lpb $3,1
+  lpb $3
     sub $3,1
     mov $4,$0
     mov $6,1
     mul $6,$0
-    lpb $2,1
-      lpb $4,1
+    lpb $2
+      lpb $4
         div $6,2
         sub $4,$6
       lpe

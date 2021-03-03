@@ -3,11 +3,11 @@
 
 sub $1,$0
 add $1,1
-lpb $0,1
+lpb $0
   sub $0,$1
   mov $2,$1
   cal $0,230980 ; Number of primes <= n, starting at n=0.
-  lpb $1,1
+  lpb $1
     mul $1,$3
     sub $1,$2
   lpe

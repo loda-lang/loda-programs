@@ -10,7 +10,7 @@ mov $6,4
 add $6,$0
 add $0,$6
 mov $2,5
-lpb $2,1
+lpb $2
   add $1,$0
   mov $2,1
 lpe

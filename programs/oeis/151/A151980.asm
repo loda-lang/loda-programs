@@ -15,7 +15,7 @@ add $1,$4
 mul $2,$1
 gcd $3,$1
 add $1,$2
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,3
   sub $1,$3

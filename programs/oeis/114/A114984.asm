@@ -4,7 +4,7 @@
 mov $3,$0
 mod $0,2
 mov $1,126
-lpb $0,1
+lpb $0
   trn $0,4
   mov $1,4
 lpe

@@ -3,27 +3,27 @@
 
 mov $2,$0
 mov $5,$0
-lpb $0,1
+lpb $0
   mov $0,4
-  lpb $0,1
+  lpb $0
     sub $0,1
     add $4,$2
     add $2,$4
   lpe
   add $0,$4
   mov $3,$4
-  lpb $2,1
+  lpb $2
     mov $2,$0
     sub $3,2
   lpe
-  lpb $2,1
+  lpb $2
     sub $0,1
     add $1,$3
     sub $2,1
   lpe
 lpe
 add $1,4
-lpb $5,1
+lpb $5
   add $1,530
   sub $5,1
 lpe

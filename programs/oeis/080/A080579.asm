@@ -3,14 +3,14 @@
 
 mov $6,$0
 mov $7,1
-lpb $7,1
+lpb $7
   mov $1,4
   mov $2,$0
   sub $7,1
-  lpb $2,1
+  lpb $2
     mov $3,1
     mov $4,$0
-    lpb $4,1
+    lpb $4
       sub $0,$0
       trn $0,1
       mov $2,$4

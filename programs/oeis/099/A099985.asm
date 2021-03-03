@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,1
-cal $0,76618
+cal $0,76618 ; Least x>1 such that x^d == 1 (mod d) for each divisor d of n.
 mov $1,$0
 div $1,4
 mul $1,4

@@ -6,10 +6,10 @@ mov $2,$0
 mov $3,$0
 add $3,2
 mov $4,$0
-lpb $2,1
+lpb $2
   mov $2,1
   sub $3,1
-  lpb $3,1
+  lpb $3
     mul $1,$2
     add $2,1
     trn $3,$1

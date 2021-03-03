@@ -6,7 +6,7 @@ bin $0,2
 add $0,1
 mov $2,$0
 mul $2,3
-lpb $2,1
+lpb $2
   mod $2,10
 lpe
 add $1,$2

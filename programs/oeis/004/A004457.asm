@@ -6,7 +6,7 @@ div $0,16
 gcd $0,2
 mov $1,2
 mov $6,3
-lpb $0,1
+lpb $0
   pow $1,$6
   sub $1,1
   mov $2,1

@@ -4,7 +4,7 @@
 mov $12,$0
 mov $14,$0
 add $14,1
-lpb $14,1
+lpb $14
   clr $0,12
   mov $0,$12
   sub $14,1
@@ -12,16 +12,16 @@ lpb $14,1
   mov $9,$0
   mov $11,$0
   add $11,1
-  lpb $11,1
+  lpb $11
     mov $0,$9
     sub $11,1
     sub $0,$11
     mov $3,$0
     mov $6,$0
-    lpb $2,1
+    lpb $2
       mov $4,$0
       mov $7,$0
-      lpb $4,1
+      lpb $4
         mul $0,$3
         sub $0,$3
         gcd $0,4
@@ -30,7 +30,7 @@ lpb $14,1
         add $7,2
         add $0,$7
       lpe
-      lpb $6,1
+      lpb $6
         add $0,8
         sub $6,$6
       lpe

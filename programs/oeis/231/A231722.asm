@@ -4,14 +4,14 @@
 mov $6,$0
 mov $8,$0
 add $8,1
-lpb $8,1
+lpb $8
   clr $0,6
   mov $0,$6
   sub $8,1
   sub $0,$8
   mov $4,1
   add $5,1
-  lpb $0,1
+  lpb $0
     mov $1,$0
     cal $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
     sub $0,1

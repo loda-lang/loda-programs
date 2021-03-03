@@ -8,7 +8,7 @@ bin $1,2
 add $1,$3
 mul $1,$3
 mov $4,8
-lpb $0,1
+lpb $0
   mov $0,0
   gcd $2,$4
   add $1,$2

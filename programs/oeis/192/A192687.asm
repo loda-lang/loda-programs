@@ -3,20 +3,20 @@
 
 mov $23,$0
 mov $25,2
-lpb $25,1
+lpb $25
   clr $0,23
   mov $0,$23
   sub $25,1
   add $0,$25
   sub $0,1
-  lpb $0,1
+  lpb $0
     mul $0,100
     mov $3,$0
     div $3,6
     mov $0,$3
     mov $1,4
     mov $3,1
-    lpb $1,1
+    lpb $1
       div $0,3
       div $1,2
       add $4,$3
@@ -26,12 +26,12 @@ lpb $25,1
   div $1,3
   add $1,1
   mov $26,$25
-  lpb $26,1
+  lpb $26
     mov $24,$1
     sub $26,1
   lpe
 lpe
-lpb $23,1
+lpb $23
   mov $23,0
   sub $24,$1
 lpe

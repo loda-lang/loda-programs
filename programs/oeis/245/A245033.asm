@@ -10,7 +10,7 @@ add $2,$1
 sub $1,$0
 mov $5,$0
 mov $0,2
-lpb $0,1
+lpb $0
   sub $2,$0
   mul $2,7
   trn $0,$2

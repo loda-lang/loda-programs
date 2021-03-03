@@ -5,7 +5,7 @@ mov $3,1
 mov $5,$0
 mov $7,1
 mov $8,$0
-lpb $0,1
+lpb $0
   gcd $0,5
   div $0,7
   add $7,$3

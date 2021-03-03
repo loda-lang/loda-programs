@@ -13,7 +13,7 @@ mov $1,8
 mul $1,$2
 mov $5,$1
 mul $5,4
-lpb $0,1
+lpb $0
   gcd $0,2
   sub $0,1
   mul $3,$5

@@ -6,13 +6,13 @@ mov $2,$0
 sub $2,1
 sub $3,$0
 mov $4,$0
-lpb $4,1
+lpb $4
   sub $0,$2
   sub $4,9
 lpe
 sub $0,3
-lpb $0,1
-  lpb $0,1
+lpb $0
+  lpb $0
     div $0,6
     add $3,$2
     mov $2,$0

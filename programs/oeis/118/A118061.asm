@@ -3,26 +3,26 @@
 
 mov $3,$0
 mov $6,$0
-lpb $6,1
+lpb $6
   add $1,3
   sub $6,1
 lpe
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,4
 lpe
 mov $2,$1
-lpb $1,1
+lpb $1
   sub $1,1
   add $2,4
 lpe
 mov $4,$2
 add $6,6
-lpb $6,1
-  lpb $6,1
+lpb $6
+  lpb $6
     sub $6,1
   lpe
-  lpb $4,1
+  lpb $4
     sub $4,1
     add $5,4
   lpe
@@ -31,7 +31,7 @@ lpb $4,5
   add $1,$5
   sub $5,1
 lpe
-lpb $3,1
+lpb $3
   add $1,13790
   sub $3,1
 lpe

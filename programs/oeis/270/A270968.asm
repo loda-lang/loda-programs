@@ -18,7 +18,7 @@ gcd $2,$3
 div $3,$2
 add $3,8
 mov $1,$3
-lpb $0,1
+lpb $0
   sub $0,1
   mul $1,3
   add $1,1

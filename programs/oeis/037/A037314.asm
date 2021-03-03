@@ -3,17 +3,17 @@
 
 mov $20,$0
 add $20,1
-lpb $20,1
+lpb $20
   clr $0,18
   sub $20,1
   sub $0,$20
-  lpb $0,1
+  lpb $0
     gcd $0,81
-    lpb $0,1
+    lpb $0
       pow $0,2
       mul $0,9
       mov $4,$0
-      lpb $0,1
+      lpb $0
         trn $0,2
       lpe
     lpe

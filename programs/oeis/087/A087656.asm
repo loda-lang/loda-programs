@@ -3,7 +3,7 @@
 
 mov $6,$0
 mov $7,$0
-lpb $6,1
+lpb $6
   sub $6,$7
   sub $6,1
   mul $6,2
@@ -15,8 +15,8 @@ lpb $6,1
   mov $1,$0
   sub $1,1
   add $6,2
-  lpb $2,1
-    lpb $1,1
+  lpb $2
+    lpb $1
       mov $3,$2
       gcd $3,$1
       sub $1,$3

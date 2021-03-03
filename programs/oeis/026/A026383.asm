@@ -5,17 +5,17 @@ mov $2,3
 mov $3,3
 mov $4,1
 mov $7,3
-lpb $2,1
+lpb $2
   mov $2,$6
   mov $8,$0
-  lpb $4,1
+  lpb $4
     trn $4,$3
     mov $5,$8
     add $7,2
   lpe
   add $5,1
   mov $6,1
-  lpb $5,1
+  lpb $5
     mov $1,$5
     trn $5,2
     mul $6,$7

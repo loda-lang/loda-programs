@@ -3,18 +3,18 @@
 
 add $0,2
 mov $2,$0
-lpb $2,1
+lpb $2
   add $4,$2
   mov $2,$0
   mov $3,1
   trn $3,$0
-  lpb $3,1
+  lpb $3
     sub $1,$1
     bin $4,2
     trn $3,$4
   lpe
   add $1,1
-  lpb $4,1
+  lpb $4
     sub $0,$1
     sub $4,$4
   lpe

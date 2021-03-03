@@ -6,7 +6,7 @@ sub $2,2
 mov $3,1
 mov $4,$0
 sub $4,$2
-lpb $0,1
+lpb $0
   sub $0,1
   sub $3,$4
   sub $4,$3

@@ -4,12 +4,12 @@
 mov $27,$0
 mov $29,$0
 add $29,1
-lpb $29,1
+lpb $29
   clr $0,27
   mov $0,$27
   sub $29,1
   sub $0,$29
-  lpb $0,1
+  lpb $0
     mov $1,$0
     cal $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
     mov $0,$1

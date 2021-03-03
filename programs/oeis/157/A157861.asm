@@ -3,27 +3,27 @@
 
 mov $4,6
 mov $6,$0
-lpb $0,1
+lpb $0
   sub $0,1
   add $1,5
 lpe
-lpb $4,1
+lpb $4
   add $1,1
   add $2,$1
   sub $4,3
 lpe
-lpb $2,1
+lpb $2
   sub $2,1
   add $3,6
 lpe
 mov $1,5
 add $5,$3
 mov $2,$5
-lpb $2,1
+lpb $2
   add $1,$3
   sub $2,1
 lpe
-lpb $6,1
+lpb $6
   add $1,5041
   sub $6,1
 lpe

@@ -13,7 +13,7 @@ div $3,5
 sub $4,1
 add $3,$4
 add $3,3
-lpb $0,1
+lpb $0
   mov $1,$0
   add $0,2
   add $3,4

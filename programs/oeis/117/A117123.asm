@@ -9,7 +9,7 @@ add $3,2
 mov $4,1
 add $4,$3
 add $4,362
-lpb $0,1
+lpb $0
   add $0,2
   div $0,2
   mov $2,$0

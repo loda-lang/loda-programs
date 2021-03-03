@@ -4,23 +4,23 @@
 mov $2,$0
 add $2,1
 mov $3,$0
-lpb $2,1
+lpb $2
   add $4,$2
-  lpb $4,1
+  lpb $4
     mov $1,3
     add $3,$2
     add $3,3
     sub $4,$4
     mov $5,$2
   lpe
-  lpb $5,1
+  lpb $5
     add $3,$1
     add $4,1
     sub $5,$4
   lpe
   add $5,$0
   add $5,$3
-  lpb $3,1
+  lpb $3
     gcd $3,$1
     sub $5,$0
   lpe

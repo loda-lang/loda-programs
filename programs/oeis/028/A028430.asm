@@ -4,13 +4,13 @@
 mov $139,$0
 mov $141,$0
 add $141,1
-lpb $141,1
+lpb $141
   mov $0,$139
   sub $141,1
   sub $0,$141
   mov $135,$0
   mov $137,2
-  lpb $137,1
+  lpb $137
     clr $0,135
     mov $0,$135
     sub $137,1
@@ -21,18 +21,18 @@ lpb $141,1
     div $3,2
     add $5,1
     sub $3,$5
-    lpb $3,1
+    lpb $3
       add $2,2
       mod $3,5
     lpe
     mov $1,$2
     mov $138,$137
-    lpb $138,1
+    lpb $138
       mov $136,$1
       sub $138,1
     lpe
   lpe
-  lpb $135,1
+  lpb $135
     mov $135,0
     sub $136,$1
   lpe

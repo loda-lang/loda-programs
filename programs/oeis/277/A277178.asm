@@ -3,7 +3,7 @@
 
 mul $0,2
 mov $1,4
-lpb $0,1
+lpb $0
   mov $2,$0
   cal $2,100071 ; a(n) = n * binomial(n-1, floor((n-1)/2)) = n * max_{i=0..n} binomial(n-1, i).
   sub $0,1

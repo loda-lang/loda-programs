@@ -3,17 +3,17 @@
 
 mov $3,$0
 mov $6,$0
-lpb $3,1
+lpb $3
   mov $0,$6
   sub $3,1
   sub $0,$3
   mov $2,$0
   mul $0,2
-  lpb $0,1
+  lpb $0
     add $0,$2
     cal $0,230980 ; Number of primes <= n, starting at n=0.
   lpe
-  lpb $2,1
+  lpb $2
     mov $2,$5
     mov $4,$0
   lpe

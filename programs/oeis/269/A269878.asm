@@ -6,8 +6,8 @@ mul $2,2
 mov $5,$0
 mul $0,2
 mov $3,3
-lpb $3,1
-  lpb $2,1
+lpb $3
+  lpb $2
     trn $2,4
     add $4,$0
     add $0,4
@@ -16,7 +16,7 @@ lpb $3,1
   mul $1,2
   trn $3,$0
 lpe
-lpb $5,1
+lpb $5
   add $1,1
   sub $5,1
 lpe

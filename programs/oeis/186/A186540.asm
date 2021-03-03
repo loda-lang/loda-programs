@@ -4,22 +4,22 @@
 mov $6,$0
 add $0,5
 mov $5,$0
-lpb $5,1
+lpb $5
   add $3,2
   add $4,$3
-  lpb $4,1
+  lpb $4
     sub $4,$3
     add $5,4
   lpe
   sub $3,1
   sub $5,5
   mul $5,2
-  lpb $5,1
+  lpb $5
     add $0,$4
     add $4,1
     sub $5,$3
   lpe
-  lpb $0,1
+  lpb $0
     trn $1,2
     add $1,$2
     add $1,1
@@ -30,7 +30,7 @@ lpb $5,1
   sub $2,1
   add $1,$2
 lpe
-lpb $6,1
+lpb $6
   add $1,2
   sub $6,1
 lpe

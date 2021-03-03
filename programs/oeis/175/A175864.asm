@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$0
-lpb $3,1
+lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
@@ -14,7 +14,7 @@ lpb $3,1
   add $4,1
   mov $5,19
   cmp $6,8
-  lpb $0,1
+  lpb $0
     mov $0,$7
     add $6,$4
     div $6,$5

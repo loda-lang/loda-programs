@@ -6,7 +6,7 @@ add $0,2
 div $0,3
 mov $1,4
 mov $2,3
-lpb $0,1
+lpb $0
   div $0,$2
   div $0,20
   add $1,3

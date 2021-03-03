@@ -11,17 +11,17 @@ sub $0,1
 add $0,$4
 sub $2,$4
 mov $4,$2
-lpb $2,1
+lpb $2
   mov $1,-1
   mov $2,1
-  lpb $0,1
+  lpb $0
     sub $0,3
     mul $1,2
     mov $3,$4
     sub $4,1
   lpe
   add $1,$0
-  lpb $3,1
+  lpb $3
     sub $3,1
     add $4,1
   lpe

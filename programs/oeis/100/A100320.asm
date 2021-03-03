@@ -10,7 +10,7 @@ pow $0,$3
 mul $4,2
 bin $4,$2
 mul $1,$4
-lpb $0,1
+lpb $0
   sub $0,1
   mov $1,5
 lpe

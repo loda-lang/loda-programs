@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,1
-lpb $0,1
+lpb $0
   mov $1,$0
   cal $1,284122 ; Number of binary words w of length n for which s, the longest proper suffix of w that appears at least twice in w, is of length 1 (i.e., either s = 0 or s = 1).
   mov $0,1

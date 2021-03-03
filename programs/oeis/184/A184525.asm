@@ -11,7 +11,7 @@ mul $3,675
 add $0,$3
 mov $5,$3
 mov $3,1
-lpb $0,1
+lpb $0
   sub $1,$2
   sub $2,$0
   add $2,$0

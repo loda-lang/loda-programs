@@ -10,7 +10,7 @@ add $2,$0
 add $0,4
 add $2,8
 mov $3,$2
-lpb $0,1
+lpb $0
   mov $0,3
   add $3,1
   lpb $2,3

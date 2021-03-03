@@ -5,7 +5,7 @@ sub $0,453061
 mul $0,9
 sub $0,7
 mov $2,4
-lpb $0,1
+lpb $0
   mul $0,2
   gcd $2,$0
   div $0,$2

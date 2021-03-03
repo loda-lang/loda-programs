@@ -9,7 +9,7 @@ add $2,$3
 mov $4,$0
 div $4,$2
 mov $0,$4
-lpb $0,1
+lpb $0
   mov $2,$0
   cal $2,208140 ; Number of n X 6 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
   sub $0,1

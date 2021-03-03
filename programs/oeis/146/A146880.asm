@@ -5,11 +5,11 @@ cal $0,141540 ; Duplicate of A132046.
 mov $1,1
 mov $2,2
 add $2,$0
-lpb $0,1
+lpb $0
   sub $0,2
   div $2,2
   sub $2,1
-  lpb $0,1
+  lpb $0
     div $0,2
     gcd $0,2
     add $2,2

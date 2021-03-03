@@ -4,14 +4,14 @@
 mov $2,$0
 mov $3,$0
 mov $4,5
-lpb $2,1
-  lpb $4,1
+lpb $2
+  lpb $4
     add $3,2
     bin $3,2
     sub $4,5
   lpe
   mov $5,1
-  lpb $3,1
+  lpb $3
     mov $1,$3
     add $5,2
     trn $3,$5

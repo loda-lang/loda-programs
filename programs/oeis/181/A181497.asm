@@ -3,14 +3,14 @@
 
 mov $3,$0
 mov $7,$0
-lpb $3,1
+lpb $3
   mov $0,$7
   sub $3,1
   sub $0,$3
   mov $5,$0
-  lpb $2,1
+  lpb $2
     trn $5,$6
-    lpb $5,1
+    lpb $5
       add $4,$5
       trn $5,$6
       mul $6,2

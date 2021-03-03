@@ -15,7 +15,7 @@ add $0,2
 gcd $1,$3
 add $1,$2
 mov $2,$1
-lpb $2,1
+lpb $2
   add $0,1
   sub $2,1
 lpe

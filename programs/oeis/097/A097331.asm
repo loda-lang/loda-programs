@@ -3,7 +3,7 @@
 
 mov $27,$0
 mov $29,2
-lpb $29,1
+lpb $29
   clr $0,27
   mov $0,$27
   sub $29,1
@@ -17,12 +17,12 @@ lpb $29,1
   sub $4,$0
   mov $1,$4
   mov $30,$29
-  lpb $30,1
+  lpb $30
     mov $28,$1
     sub $30,1
   lpe
 lpe
-lpb $27,1
+lpb $27
   mov $27,0
   sub $28,$1
 lpe

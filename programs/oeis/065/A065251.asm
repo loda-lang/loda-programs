@@ -3,7 +3,7 @@
 
 cal $0,65252 ; The sequence A065251 reduced modulo 3 (i.e., replace every -1 with 2).
 mov $1,$0
-lpb $1,1
+lpb $1
   sub $0,$1
   mov $1,1
   add $1,$0

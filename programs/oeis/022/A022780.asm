@@ -3,13 +3,13 @@
 
 mov $29,$0
 add $29,1
-lpb $29,1
+lpb $29
   clr $0,27
   sub $29,1
   sub $0,$29
   sub $0,1
   add $2,2
-  lpb $2,1
+  lpb $2
     mov $1,$0
     cal $1,194964 ; a(n) = 1 + floor(n/sqrt(5)).
     sub $2,1

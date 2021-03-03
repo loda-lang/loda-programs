@@ -3,7 +3,7 @@
 
 mov $4,2
 mov $5,$0
-lpb $4,1
+lpb $4
   mov $0,$5
   sub $4,1
   add $0,$4
@@ -12,12 +12,12 @@ lpb $4,1
   cal $2,193494 ; Worst case of an unbalanced recursive algorithm over all n-node binary trees.
   mov $3,$4
   mov $6,$2
-  lpb $3,1
+  lpb $3
     mov $1,$6
     sub $3,1
   lpe
 lpe
-lpb $5,1
+lpb $5
   sub $1,$6
   mov $5,0
 lpe

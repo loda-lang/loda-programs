@@ -10,10 +10,10 @@ mov $4,2
 mov $5,$0
 add $5,2
 mov $6,2
-lpb $2,1
+lpb $2
   mov $1,$5
   mul $5,2
-  lpb $5,1
+  lpb $5
     sub $1,$4
     add $6,1
     sub $5,$6

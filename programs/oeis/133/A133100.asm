@@ -3,7 +3,7 @@
 
 mul $0,5
 add $0,2
-lpb $0,1
+lpb $0
   sub $2,1
   add $0,$2
 lpe

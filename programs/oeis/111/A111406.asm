@@ -3,13 +3,13 @@
 
 cal $0,78442 ; a(p) = a(n) + 1 if p is the n-th prime, prime(n); a(n)=0 if n is not prime.
 mov $2,3
-lpb $0,1
+lpb $0
   mov $1,$2
   mov $5,$2
-  lpb $5,1
+  lpb $5
     mov $4,$5
-    lpb $4,1
-      lpb $4,1
+    lpb $4
+      lpb $4
         mul $0,$5
         sub $4,1
         trn $5,$2

@@ -12,7 +12,7 @@ add $0,1
 cmp $3,0
 add $1,$3
 div $2,$1
-lpb $2,1
+lpb $2
   add $0,1
   add $2,3
   mod $2,5

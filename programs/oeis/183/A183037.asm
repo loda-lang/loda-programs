@@ -3,9 +3,9 @@
 
 add $0,1
 gcd $0,281474976710656
-lpb $0,1
+lpb $0
   mov $2,$0
-  lpb $0,1
+  lpb $0
     div $0,2
     add $3,$2
   lpe

@@ -3,13 +3,13 @@
 
 mov $729,$0
 mov $731,2
-lpb $731,1
+lpb $731
   clr $0,729
   mov $0,$729
   sub $731,1
   add $0,$731
   sub $0,1
-  lpb $0,1
+  lpb $0
     mov $1,$0
     add $2,$0
     sub $2,$0
@@ -21,12 +21,12 @@ lpb $731,1
   lpe
   mov $1,$2
   mov $732,$731
-  lpb $732,1
+  lpb $732
     mov $730,$1
     sub $732,1
   lpe
 lpe
-lpb $729,1
+lpb $729
   mov $729,0
   sub $730,$1
 lpe

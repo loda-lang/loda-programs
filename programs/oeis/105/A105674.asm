@@ -4,9 +4,9 @@
 mov $1,$0
 mov $2,$0
 mov $3,1
-lpb $2,1
+lpb $2
   pow $4,$4
-  lpb $4,1
+  lpb $4
     add $1,$3
     add $2,7
     trn $4,$3

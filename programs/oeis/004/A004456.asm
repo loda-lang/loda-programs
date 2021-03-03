@@ -15,7 +15,7 @@ add $3,$0
 mov $5,$2
 add $5,7
 add $3,$5
-lpb $0,1
+lpb $0
   mov $0,6
   sub $1,$3
 lpe

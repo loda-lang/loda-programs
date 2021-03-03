@@ -12,18 +12,18 @@ add $1,2
 mul $1,3
 mov $2,1
 mov $7,$6
-lpb $2,1
+lpb $2
   add $1,$7
   sub $2,1
 lpe
 mov $4,$6
-lpb $4,1
+lpb $4
   sub $4,1
   add $5,$7
 lpe
 mov $2,27
 mov $7,$5
-lpb $2,1
+lpb $2
   add $1,$7
   sub $2,1
 lpe

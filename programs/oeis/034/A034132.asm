@@ -10,7 +10,7 @@ sub $1,4
 mov $6,$1
 mov $1,3
 add $6,54
-lpb $0,1
+lpb $0
   mov $0,6
   sub $6,4
   bin $6,2

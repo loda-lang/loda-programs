@@ -8,7 +8,7 @@ div $2,$0
 trn $2,1
 mov $4,51
 sub $4,$2
-lpb $0,1
+lpb $0
   sub $0,1
   mov $1,$4
 lpe

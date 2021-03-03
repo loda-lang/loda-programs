@@ -7,15 +7,15 @@ mov $3,$4
 mov $5,1
 add $5,$0
 mov $6,1
-lpb $6,1
+lpb $6
   sub $6,1
-  lpb $4,1
+  lpb $4
     div $4,2
     sub $3,$4
   lpe
   mov $1,$3
   mov $2,$5
-  lpb $2,1
+  lpb $2
     gcd $2,2
   lpe
   sub $1,$2

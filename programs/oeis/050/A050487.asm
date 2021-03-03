@@ -6,9 +6,9 @@ add $1,1
 mov $2,$0
 mov $3,1
 mov $4,$0
-lpb $2,1
+lpb $2
   add $1,2
-  lpb $4,1
+  lpb $4
     sub $1,2
     mul $3,2
     trn $4,$3

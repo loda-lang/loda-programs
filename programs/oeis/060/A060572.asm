@@ -5,7 +5,7 @@ add $0,1
 mov $2,$0
 gcd $2,262144
 add $0,$2
-lpb $0,1
+lpb $0
   mod $0,6
 lpe
 mov $1,$0

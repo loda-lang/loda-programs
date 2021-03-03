@@ -3,25 +3,25 @@
 
 mov $6,$0
 mov $8,2
-lpb $8,1
+lpb $8
   clr $0,6
   mov $0,$6
   sub $8,1
   add $0,$8
   sub $0,1
-  lpb $0,1
+  lpb $0
     sub $0,1
     mov $1,$0
     cal $1,236305 ; The number of P-positions in the game of Nim with up to 3 piles, allowing for piles of zero, such that the number of objects in each pile does not exceed n.
     mov $0,0
   lpe
   mov $9,$8
-  lpb $9,1
+  lpb $9
     mov $7,$1
     sub $9,1
   lpe
 lpe
-lpb $6,1
+lpb $6
   mov $6,0
   sub $7,$1
 lpe

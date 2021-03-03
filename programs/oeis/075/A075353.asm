@@ -4,7 +4,7 @@
 mov $30,$0
 mov $32,$0
 add $32,1
-lpb $32,1
+lpb $32
   clr $0,30
   mov $0,$30
   sub $32,1
@@ -12,7 +12,7 @@ lpb $32,1
   mov $27,$0
   mov $29,$0
   add $29,1
-  lpb $29,1
+  lpb $29
     clr $0,27
     mov $0,$27
     sub $29,1

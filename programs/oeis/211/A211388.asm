@@ -3,7 +3,7 @@
 
 mov $1,2
 cal $1,16805 ; (4n)^5.
-lpb $0,1
+lpb $0
   mov $2,$0
   cal $2,82139 ; A transform of binomial(n,5).
   sub $0,1

@@ -5,7 +5,7 @@ sub $0,1
 div $0,2
 sub $0,2
 trn $0,1
-lpb $0,1
+lpb $0
   mov $0,5
 lpe
 mov $1,$0

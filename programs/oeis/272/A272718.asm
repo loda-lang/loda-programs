@@ -4,13 +4,13 @@
 mov $10,$0
 mov $12,$0
 add $12,1
-lpb $12,1
+lpb $12
   clr $0,10
   mov $0,$10
   sub $12,1
   sub $0,$12
   mov $7,$0
-  lpb $0,1
+  lpb $0
     add $2,1
     mov $1,$2
     gcd $1,$0

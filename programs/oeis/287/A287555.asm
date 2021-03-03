@@ -6,16 +6,16 @@ mov $3,$0
 mul $3,8
 mov $0,$3
 mov $5,$3
-lpb $0,1
+lpb $0
   add $0,$5
-  lpb $0,1
+  lpb $0
     add $3,$0
     div $0,4
   lpe
 lpe
 sub $0,1
 mov $1,$0
-lpb $3,1
+lpb $3
   mod $3,4
 lpe
 mul $1,$3

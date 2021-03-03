@@ -3,11 +3,11 @@
 
 mov $2,$0
 mov $4,$0
-lpb $2,1
+lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  lpb $0,1
+  lpb $0
     mov $3,$0
     sub $3,1
     cal $3,87432 ; Expansion of 1+x*(1-x-4*x^2)/((1+x)*(1-2*x)*(1-3*x)).

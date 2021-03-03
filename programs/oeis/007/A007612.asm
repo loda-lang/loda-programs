@@ -4,15 +4,15 @@
 mov $10,$0
 mov $12,$0
 add $12,1
-lpb $12,1
+lpb $12
   clr $0,10
   mov $0,$10
   sub $12,1
   sub $0,$12
   mov $2,$0
   mov $4,1
-  lpb $2,1
-    lpb $5,1
+  lpb $2
+    lpb $5
       mul $4,2
       mod $4,9
       sub $5,1

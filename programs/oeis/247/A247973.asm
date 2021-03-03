@@ -13,7 +13,7 @@ mov $2,1
 mov $4,2
 add $5,4
 mov $6,4
-lpb $0,1
+lpb $0
   sub $0,$0
   sub $0,1
   add $1,7

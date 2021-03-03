@@ -19,7 +19,7 @@ mul $8,4
 sub $3,$8
 sub $3,9
 mov $4,$8
-lpb $0,1
+lpb $0
   add $0,1
   mov $4,$3
 lpe

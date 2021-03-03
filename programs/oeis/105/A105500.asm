@@ -6,7 +6,7 @@ cal $0,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gr
 sub $0,1
 mov $5,$0
 lpb $4,32768
-  lpb $0,1
+  lpb $0
     mov $0,0
     gcd $0,$4
   lpe

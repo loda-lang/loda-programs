@@ -6,7 +6,7 @@ mov $2,9
 sub $3,$0
 pow $3,2
 mod $3,17
-lpb $3,1
+lpb $3
   mov $1,$2
   mod $3,10
 lpe

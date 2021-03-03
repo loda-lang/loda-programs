@@ -6,12 +6,12 @@ add $2,$0
 div $2,2
 sub $2,1
 mov $1,$2
-lpb $0,1
+lpb $0
   mod $0,2
   mov $2,1
   add $2,$1
 lpe
-lpb $2,1
+lpb $2
   add $1,$0
   sub $2,4
 lpe

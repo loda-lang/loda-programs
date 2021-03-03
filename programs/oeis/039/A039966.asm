@@ -4,7 +4,7 @@
 mov $1,2
 mov $2,$0
 mul $2,2
-lpb $2,1
+lpb $2
   div $2,3
   gcd $1,$2
 lpe

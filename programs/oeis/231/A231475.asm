@@ -3,7 +3,7 @@
 
 add $0,41
 mov $2,6
-lpb $0,1
+lpb $0
   sub $0,1
   gcd $0,$2
   add $0,1

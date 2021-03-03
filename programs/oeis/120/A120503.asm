@@ -4,13 +4,13 @@
 mov $3,$0
 add $3,1
 mov $6,$0
-lpb $3,1
+lpb $3
   mov $0,$6
   sub $3,1
   sub $0,$3
   mov $2,$0
   mov $8,2
-  lpb $8,1
+  lpb $8
     mov $0,$2
     sub $8,1
     add $0,$8
@@ -18,12 +18,12 @@ lpb $3,1
     cal $0,96346 ; Complement of A004128.
     mov $5,$0
     mov $7,$8
-    lpb $7,1
+    lpb $7
       mov $4,$5
       sub $7,1
     lpe
   lpe
-  lpb $2,1
+  lpb $2
     mov $2,0
     sub $4,$5
   lpe

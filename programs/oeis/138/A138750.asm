@@ -9,7 +9,7 @@ add $0,$8
 mov $4,$8
 gcd $4,3
 mov $7,$8
-lpb $2,1
+lpb $2
   add $0,2
   bin $1,$9
   mov $2,$0
@@ -18,7 +18,7 @@ lpb $2,1
   add $8,1
   sub $2,$8
   mov $9,$2
-  lpb $4,1
+  lpb $4
     sub $9,$5
     mov $0,$9
     add $0,6
@@ -26,7 +26,7 @@ lpb $2,1
     add $3,$2
     trn $4,$7
   lpe
-  lpb $6,1
+  lpb $6
     mov $3,2
     mov $6,1
   lpe

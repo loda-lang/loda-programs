@@ -5,7 +5,7 @@ mov $1,5040
 mov $2,6
 mov $3,6
 mov $4,3
-lpb $0,1
+lpb $0
   sub $0,1
   sub $1,$4
   sub $1,2

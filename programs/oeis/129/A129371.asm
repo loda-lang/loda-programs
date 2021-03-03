@@ -3,7 +3,7 @@
 
 mov $9,$0
 mov $11,$0
-lpb $11,1
+lpb $11
   clr $0,9
   mov $0,$9
   sub $11,1
@@ -12,9 +12,9 @@ lpb $11,1
   mov $4,$0
   pow $4,2
   mov $8,$0
-  lpb $2,1
+  lpb $2
     mov $2,1
-    lpb $4,1
+    lpb $4
       sub $0,$2
       sub $8,2
       sub $4,$8

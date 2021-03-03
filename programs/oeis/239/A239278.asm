@@ -10,7 +10,7 @@ mov $0,17
 mul $2,2
 add $2,1
 add $5,1
-lpb $0,1
+lpb $0
   add $0,$5
   gcd $5,$2
   sub $0,$5

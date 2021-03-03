@@ -3,16 +3,16 @@
 
 mov $11,$0
 mov $13,$0
-lpb $13,1
+lpb $13
   clr $0,11
   mov $0,$11
   sub $13,1
   sub $0,$13
   mov $2,$0
   mov $9,$0
-  lpb $2,1
+  lpb $2
     mov $5,$9
-    lpb $5,1
+    lpb $5
       div $9,2
       sub $5,$9
     lpe

@@ -9,7 +9,7 @@ bin $2,$0
 add $1,$2
 mov $4,$0
 add $0,3
-lpb $0,1
+lpb $0
   mov $0,$3
   add $1,8
 lpe

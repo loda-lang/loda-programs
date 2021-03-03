@@ -5,7 +5,7 @@ mov $1,$0
 mul $0,2042
 mul $1,4072
 mov $2,2
-lpb $1,1
+lpb $1
   div $0,$2
   sub $1,$2
   sub $1,$0

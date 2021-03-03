@@ -17,7 +17,7 @@ mov $5,$2
 add $5,1
 div $5,3
 add $5,17
-lpb $0,1
+lpb $0
   mod $0,2
   add $1,2
   add $1,$5

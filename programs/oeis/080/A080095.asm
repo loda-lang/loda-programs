@@ -4,7 +4,7 @@
 add $0,5
 mov $1,2
 pow $1,$0
-lpb $0,1
+lpb $0
   bin $0,2
   mod $0,6
   div $1,2

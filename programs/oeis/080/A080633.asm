@@ -4,18 +4,18 @@
 mov $11,$0
 mov $13,$0
 add $13,1
-lpb $13,1
+lpb $13
   mov $0,$11
   sub $13,1
   sub $0,$13
   mov $2,$0
   mov $3,6
-  lpb $2,1
+  lpb $2
     clr $5,6
     mov $1,1
     mov $3,1
     add $6,3
-    lpb $6,1
+    lpb $6
       mov $1,3
       mul $3,2
       mov $6,5

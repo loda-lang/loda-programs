@@ -6,6 +6,6 @@ mul $1,2
 add $1,1
 mov $2,9
 trn $2,$1
-lpb $1,1
+lpb $1
   mov $1,$2
 lpe

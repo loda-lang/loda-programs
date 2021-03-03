@@ -5,7 +5,7 @@ mov $2,5
 mul $2,$0
 add $2,6
 bin $2,3
-lpb $0,1
+lpb $0
   mov $3,$2
   mul $3,9
   clr $0,1

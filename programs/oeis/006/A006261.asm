@@ -4,7 +4,7 @@
 mov $14,$0
 mov $16,$0
 add $16,1
-lpb $16,1
+lpb $16
   clr $0,14
   mov $0,$14
   sub $16,1
@@ -12,7 +12,7 @@ lpb $16,1
   mov $11,$0
   mov $13,$0
   add $13,1
-  lpb $13,1
+  lpb $13
     mov $0,$11
     sub $13,1
     sub $0,$13
@@ -25,7 +25,7 @@ lpb $16,1
     mov $0,10
     bin $9,3
     add $9,$4
-    lpb $0,1
+    lpb $0
       mov $0,$10
       add $2,$9
     lpe

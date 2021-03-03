@@ -13,7 +13,7 @@ add $0,$3
 trn $1,$3
 sub $1,$0
 mov $0,3
-lpb $0,1
+lpb $0
   pow $1,2
   add $4,52
   lpb $3,2

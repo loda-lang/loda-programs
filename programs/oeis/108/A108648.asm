@@ -7,7 +7,7 @@ bin $0,2
 add $1,$0
 mul $1,4
 mov $2,3
-lpb $2,1
+lpb $2
   mul $1,$0
   div $2,2
 lpe

@@ -9,7 +9,7 @@ mov $2,6
 add $2,$0
 mod $0,2
 add $0,$2
-lpb $0,1
+lpb $0
   mul $0,5
   div $0,8
   add $1,1
