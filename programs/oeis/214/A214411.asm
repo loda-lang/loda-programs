@@ -4,6 +4,5 @@
 add $0,1
 lpb $0
   dif $0,7
-  add $1,3
+  add $1,1
 lpe
-div $1,3
