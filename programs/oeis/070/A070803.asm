@@ -3,11 +3,11 @@
 
 mov $2,7
 mov $3,4
-lpb $2,1
+lpb $2
   add $5,$3
-  lpb $5,1
+  lpb $5
     cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-    lpb $3,1
+    lpb $3
       cal $0,230980 ; Number of primes <= n, starting at n=0.
       mul $0,2
       mov $3,0

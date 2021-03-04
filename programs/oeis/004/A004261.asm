@@ -3,7 +3,7 @@
 
 add $0,1
 pow $0,10
-lpb $0,1
+lpb $0
   div $0,2
   add $0,3
   add $2,6

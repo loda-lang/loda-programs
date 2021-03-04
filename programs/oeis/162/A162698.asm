@@ -8,7 +8,7 @@ add $0,$4
 add $4,$0
 gcd $0,4
 mov $3,2
-lpb $0,1
+lpb $0
   mov $0,1
   mov $3,$4
   mod $3,5

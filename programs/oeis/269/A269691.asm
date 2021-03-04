@@ -3,61 +3,61 @@
 
 mov $1,11
 mov $5,$0
-lpb $0,1
+lpb $0
   sub $0,$0
   mov $1,3
 lpe
 add $1,13
 mov $2,60
 mov $6,$5
-lpb $2,1
+lpb $2
   add $1,$6
   sub $2,1
 lpe
 mov $3,$5
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$6
 lpe
 mov $2,74
 mov $6,$4
-lpb $2,1
+lpb $2
   add $1,$6
   sub $2,1
 lpe
 mov $3,$5
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$6
 lpe
 mov $2,40
 mov $6,$4
-lpb $2,1
+lpb $2
   add $1,$6
   sub $2,1
 lpe
 mov $3,$5
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$6
 lpe
 mov $2,10
 mov $6,$4
-lpb $2,1
+lpb $2
   add $1,$6
   sub $2,1
 lpe
 mov $3,$5
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$6
 lpe
 mov $2,1
 mov $6,$4
-lpb $2,1
+lpb $2
   add $1,$6
   sub $2,1
 lpe

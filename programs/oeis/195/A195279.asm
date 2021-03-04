@@ -13,7 +13,7 @@ mul $0,$4
 mov $3,$4
 mul $3,2
 add $3,1
-lpb $0,1
+lpb $0
   mul $3,$0
   sub $0,$0
   mov $1,$3

@@ -4,14 +4,14 @@
 mov $38,$0
 mov $40,$0
 add $40,1
-lpb $40,1
+lpb $40
   clr $0,38
   mov $0,$38
   sub $40,1
   sub $0,$40
   sub $0,2
   mul $0,2
-  lpb $0,1
+  lpb $0
     mov $7,$0
     add $0,1
     mul $0,3

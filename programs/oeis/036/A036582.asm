@@ -4,7 +4,7 @@
 cal $0,29883 ; First differences of Thue-Morse sequence A001285.
 mov $1,2
 sub $1,$0
-lpb $0,1
+lpb $0
   cmp $0,$1
   cmp $1,0
 lpe

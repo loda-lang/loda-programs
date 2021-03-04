@@ -4,7 +4,7 @@
 add $0,1
 mov $2,9
 mov $4,5
-lpb $0,1
+lpb $0
   mod $2,$4
   fac $2
   div $2,10

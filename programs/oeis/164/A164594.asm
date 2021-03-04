@@ -6,9 +6,9 @@ mov $2,$0
 add $0,2
 sub $0,$2
 mov $3,2
-lpb $2,1
+lpb $2
   mov $4,$0
-  lpb $4,1
+  lpb $4
     mul $3,4
     clr $4,$4
     add $3,$0

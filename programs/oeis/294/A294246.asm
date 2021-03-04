@@ -3,7 +3,7 @@
 
 mov $27,$0
 mov $29,$0
-lpb $29,1
+lpb $29
   clr $0,27
   mov $0,$27
   sub $29,1
@@ -11,7 +11,7 @@ lpb $29,1
   add $3,$0
   add $3,2
   cal $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-  lpb $0,1
+  lpb $0
     div $0,2
     mov $3,1
   lpe

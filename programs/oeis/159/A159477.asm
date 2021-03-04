@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$0
-lpb $3,1
+lpb $3
   cal $2,14684 ; In the sequence of positive integers subtract 1 from each prime number.
   mov $0,$2
   sub $2,$2

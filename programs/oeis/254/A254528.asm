@@ -7,7 +7,7 @@ mov $3,1
 mov $5,$0
 mov $0,4
 mul $5,12
-lpb $0,1
+lpb $0
   mov $4,$0
   mov $0,1
   mov $1,$5

@@ -3,8 +3,8 @@
 
 add $0,3
 pow $0,2
-lpb $0,1
-  lpb $0,1
+lpb $0
+  lpb $0
     mod $0,5
   lpe
   sub $0,3

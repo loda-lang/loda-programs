@@ -4,7 +4,7 @@
 mov $8,$0
 add $8,1
 mov $9,$0
-lpb $8,1
+lpb $8
   mov $0,$9
   sub $8,1
   sub $0,$8
@@ -15,12 +15,12 @@ lpb $8,1
   gcd $0,2
   mov $4,5
   sub $4,$0
-  lpb $2,1
+  lpb $2
     mov $10,$2
     mov $2,1
     div $3,7
     pow $6,$5
-    lpb $4,1
+    lpb $4
       mov $3,$6
       add $7,8
       gcd $4,$7

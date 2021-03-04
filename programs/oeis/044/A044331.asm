@@ -4,7 +4,7 @@
 mov $1,9
 mov $3,$0
 mod $0,9
-lpb $0,1
+lpb $0
   mov $0,7
   mov $1,1
 lpe

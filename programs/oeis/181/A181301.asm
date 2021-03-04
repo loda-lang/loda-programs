@@ -3,13 +3,13 @@
 
 mov $5,$0
 mov $7,2
-lpb $7,1
+lpb $7
   clr $0,5
   mov $0,$5
   sub $7,1
   add $0,$7
   sub $0,1
-  lpb $0,1
+  lpb $0
     sub $1,1
     cal $1,33505 ; Expansion of 1/(1 - 3*x - x^2 + x^3).
     add $2,$1
@@ -20,12 +20,12 @@ lpb $7,1
   mul $1,2
   add $1,1
   mov $8,$7
-  lpb $8,1
+  lpb $8
     mov $6,$1
     sub $8,1
   lpe
 lpe
-lpb $5,1
+lpb $5
   mov $5,0
   sub $6,$1
 lpe

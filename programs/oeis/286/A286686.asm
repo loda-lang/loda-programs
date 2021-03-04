@@ -4,7 +4,7 @@
 mov $1,$0
 cal $0,171588 ; The Pell word: Fixed point of the morphism 0->001, 1->0.
 mul $1,2
-lpb $0,1
+lpb $0
   div $0,10
   add $1,1
 lpe

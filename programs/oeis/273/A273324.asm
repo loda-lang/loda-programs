@@ -3,13 +3,13 @@
 
 mov $6,$0
 add $6,1
-lpb $6,1
+lpb $6
   mov $0,$5
   sub $6,1
   sub $0,$6
   pow $0,2
   mov $2,$0
-  lpb $2,1
+  lpb $2
     sub $0,1
     sub $2,6
   lpe
@@ -18,7 +18,7 @@ lpb $6,1
   add $2,4
   mov $3,$0
   mov $4,3
-  lpb $2,1
+  lpb $2
     sub $2,5
     sub $3,1
     add $3,$4

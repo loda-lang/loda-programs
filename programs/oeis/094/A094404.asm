@@ -12,21 +12,21 @@ lpb $$0,3
 lpe
 add $$3,$$1
 add $4,$3
-lpb $$4,1
+lpb $$4
   sub $4,1
   add $5,4
 lpe
 trn $0,$4
 mov $4,$$5
-lpb $2,1
+lpb $2
   sub $2,1
 lpe
 add $$1,1
 mov $$4,0
-lpb $4,1
+lpb $4
   sub $4,1
 lpe
-lpb $1,1
+lpb $1
   sub $1,1
   add $2,4
 lpe

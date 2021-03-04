@@ -5,7 +5,7 @@ add $0,1
 gcd $0,1073741824
 mod $0,9
 mov $1,$0
-lpb $0,1
+lpb $0
   sub $0,3
   mul $1,2
   add $2,6

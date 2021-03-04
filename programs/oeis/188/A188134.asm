@@ -6,7 +6,7 @@ mul $1,4
 mov $2,4
 gcd $2,$0
 pow $2,2
-lpb $0,1
+lpb $0
   mod $0,2
   div $1,$2
 lpe

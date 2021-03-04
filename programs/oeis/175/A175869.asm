@@ -3,7 +3,7 @@
 
 mov $8,$0
 mov $9,$0
-lpb $8,1
+lpb $8
   mov $0,$9
   sub $8,1
   sub $0,$8
@@ -11,7 +11,7 @@ lpb $8,1
   trn $3,$0
   mov $4,1
   mov $5,$0
-  lpb $0,1
+  lpb $0
     sub $0,$0
     mov $2,2
     sub $5,2

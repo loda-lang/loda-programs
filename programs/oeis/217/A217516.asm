@@ -6,10 +6,10 @@ mov $5,6
 mov $6,$0
 add $6,7
 mov $7,7
-lpb $2,1
+lpb $2
   mov $4,$7
   sub $6,$0
-  lpb $4,1
+  lpb $4
     mod $2,4
     mov $3,5
     sub $4,$7

@@ -3,7 +3,7 @@
 
 add $0,1
 mov $3,$0
-lpb $0,1
+lpb $0
   trn $2,$0
   trn $4,$3
   mov $1,$4

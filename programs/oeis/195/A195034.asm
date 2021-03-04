@@ -6,10 +6,10 @@ mov $3,2
 mov $7,5
 mov $8,$0
 mov $9,$0
-lpb $2,1
+lpb $2
   mov $5,$9
   mul $7,2
-  lpb $5,1
+  lpb $5
     add $7,1
     add $1,$7
     trn $5,$3

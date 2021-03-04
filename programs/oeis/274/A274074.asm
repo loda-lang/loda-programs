@@ -6,7 +6,7 @@ pow $1,$0
 mod $0,2
 mul $0,2
 mul $1,2
-lpb $0,1
+lpb $0
   sub $0,1
   gcd $0,2
   sub $1,4

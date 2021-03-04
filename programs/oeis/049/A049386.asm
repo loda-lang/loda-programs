@@ -12,7 +12,7 @@ sub $0,1
 sub $2,1
 add $0,$2
 add $4,1
-lpb $0,1
+lpb $0
   mul $3,2
   sub $0,$3
   sub $0,1

@@ -6,8 +6,8 @@ mov $5,$0
 div $0,2
 mov $1,4
 trn $1,$0
-lpb $2,1
-  lpb $0,1
+lpb $2
+  lpb $0
     sub $0,1
   lpe
   div $1,2

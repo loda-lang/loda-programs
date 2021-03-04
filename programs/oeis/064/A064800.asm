@@ -4,13 +4,13 @@
 mov $12,$0
 mov $14,2
 mov $16,$0
-lpb $14,1
+lpb $14
   mov $0,$12
   sub $0,1
   mov $6,$0
   mov $8,2
   sub $14,1
-  lpb $8,1
+  lpb $8
     clr $0,6
     mov $0,$6
     sub $8,1
@@ -22,10 +22,10 @@ lpb $14,1
     mul $1,2
     add $0,$1
     cal $0,22559 ; Sum of exponents in prime-power factorization of n!.
-    lpb $4,1
+    lpb $4
       mov $2,$0
       mov $0,$3
-      lpb $4,1
+      lpb $4
         sub $4,1
       lpe
       add $0,$2
@@ -33,12 +33,12 @@ lpb $14,1
     lpe
     mov $1,$0
     mov $9,$8
-    lpb $9,1
+    lpb $9
       mov $7,$1
       sub $9,1
     lpe
   lpe
-  lpb $6,1
+  lpb $6
     mov $6,0
     sub $7,$1
   lpe

@@ -9,7 +9,7 @@ add $6,$0
 mov $0,6
 mov $1,$6
 mov $3,1
-lpb $0,1
+lpb $0
   mov $0,$1
   gcd $0,10
   add $7,4

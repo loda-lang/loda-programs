@@ -8,7 +8,7 @@ add $0,1
 mov $1,3125
 gcd $1,$0
 div $1,4
-lpb $0,1
+lpb $0
   mul $0,$2
   add $1,$4
 lpe

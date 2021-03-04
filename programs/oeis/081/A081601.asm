@@ -4,14 +4,14 @@
 mov $27,$0
 add $27,1
 mov $28,$0
-lpb $27,1
+lpb $27
   clr $0,25
   sub $27,1
   sub $0,$27
-  lpb $0,1
+  lpb $0
     gcd $0,1073741824
     add $3,3
-    lpb $0,1
+    lpb $0
       div $0,2
       mul $3,3
     lpe

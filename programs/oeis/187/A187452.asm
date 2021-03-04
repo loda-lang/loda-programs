@@ -3,28 +3,28 @@
 
 mov $13,$0
 mov $15,$0
-lpb $15,1
+lpb $15
   clr $0,13
   mov $0,$13
   sub $15,1
   sub $0,$15
   mov $10,$0
   mov $12,$0
-  lpb $12,1
+  lpb $12
     mov $0,$10
     sub $12,1
     sub $0,$12
     mov $3,2
-    lpb $3,1
+    lpb $3
       pow $0,2
       mov $1,$0
       mul $1,5
       pow $4,$4
-      lpb $4,1
+      lpb $4
         div $1,2
         mul $1,2
         trn $3,6
-        lpb $4,1
+        lpb $4
           div $4,2
         lpe
       lpe

@@ -4,7 +4,9 @@ LODA is an assembly language, a computational model and a tool for mining intege
 
 The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. All of these programs have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
-:sweat_drops: **[We warmly welcome contributions to this project!!](CONTRIBUTING.md)** :eyes:
+:sweat_drops: **[We warmly welcome contributions to this project!](CONTRIBUTING.md)** :eyes:
+
+:woman: **[Please open a GitHub issue if you want to get in touch with us on Slack!](https://github.com/ckrause/loda/issues)** :man:
 
 ## Programs
 
@@ -27,7 +29,7 @@ If you would like to get updates on new programs, you can check out the [@lodami
 
 The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0.
 
-There are currently no binaries available. You need to build it by running `make` in the `src` folder. It has been tested on Linux and MacOS and does not require any libraries except for STD and the `wget`, `gzip` command-line tools.
+There are currently no binaries available. You need to build it by running `make` in the `src` folder. It has been tested on Linux and MacOS and does not require any external libraries, but only the `wget`, `gzip` command-line tools.
 
 The `loda` command-line tool provides the following commands and options:
 
@@ -115,6 +117,7 @@ The table below summarizes the operations currently supported by LODA. We use th
 | `trn a,b` | Truncation     | Subtract and ensure non-negative result: `a:=max(a-b,0)` |
 | `mul a,b` | Multiplication | Multiply the target with the source value: `a:=a*b` |
 | `div a,b` | Division       | Divide the target by the source value: `a:=floor(a/b)`  |
+| `dif a,b` | Divide-If-Divides | Divide the target by the source value if the source is a divisor: `a:=(a%b=0)?a/b:a `  |
 | `mod a,b` | Modulus        | Remainder of division of target by source: `a:=a%b` |
 | `pow a,b` | Power          | Raise source to the power of target: `a:=a^b` |
 | `log a,b` | Logarithm      | Logarithm of target with source as base: `a:=floor(log_b(a))` |
@@ -123,19 +126,28 @@ The table below summarizes the operations currently supported by LODA. We use th
 | `bin a,b` | Binomial Coefficient | Target over source: `a:=a!/(b!(a-b)!)`|
 | `cmp a,b` | Comparison | Compare target with source value: `a:=(a=b)?1:0` |
 
-### Loops
+### Loops and Conditionals
 
-The instructions `lpb x,y` ... `lpe` define the beginning and the end of a so-called "lexicographical-order descent loop." The part between these two instructions is executed in a loop as long as a defined, finite memory region strictly decreases in every iteration of the loop. `x` marks the start of that memory region, whereas `y` is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynomial) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. Since we allow negative integers, we consider the absolute values. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
-
-Below you can find a simple example of a for-loop. It first assigns 1 to the output cell `$1`. Inside the loop, the input cell `$0` is counted down to zero and in every step `$1` is multiplied by 5. Note that this could be also achieved without loops using the `pow` operation.
+Loops are implemented as code blocks between `lpb` and `lpe` operations. The block is executed as long as a variable is decreasing (in absolute value). For example, consider the following program:
 
 ```asm
-mov $1,1      ; assign $1:=1
-lpb $0,1      ; begin loop on $0
-  mul $1,5    ; multiply $1 with 5
-  sub $0,1    ; decrement $0
-lpe           ; end loop on $0
+mov $1,1
+lpb $0
+  mul $1,5
+  sub $0,1
+lpe
 ```
+
+It first assigns 1 to the output cell `$1`. Inside the loop, the input cell `$0` is counted down to zero and in every step `$1` is multiplied by 5. Note that this could be also achieved without loops using the `pow` operation. Note that if the loop counter is not decreasing, the side effects of this iteration are undone. This also enables the usage of this concept as conditional. For example, the following code multiplies `$1` by 5 if `$0` is greater than `17`.
+
+```asm
+lpb $0
+  mul $1,5
+  mov $0,17
+lpe
+```
+
+The `lpb` can also have a second (optional) argument. In that case, the loop counter is not a single variable, but a finite memory region, which must strictly decreases in every iteration of the loop. The loop counter cell marks the start of that memory region, whereas the second argument is interpreted as a number and defines the length of this region. For example, `lpb $4,3` ... `lpe` is executed as long as the vector (or polynomial) `$4`,`$5`,`$6` is strictly decreasing in every iteration according to the lexicographical ordering. Since we allow negative integers, we consider the absolute values. If `y` is not a constant and evaluates to different values in subsequent iterations, the minimum length is used to compare the memory regions.
 
 ### Calls
 

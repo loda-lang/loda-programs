@@ -4,12 +4,12 @@
 mov $7,$0
 add $0,8
 mov $2,$0
-lpb $2,1
+lpb $2
   mov $0,2
   pow $2,2
   mov $6,$2
   mov $2,5
-  lpb $6,1
+  lpb $6
     add $5,1
     mov $4,$5
     trn $6,$5

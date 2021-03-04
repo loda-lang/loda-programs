@@ -8,9 +8,9 @@ add $4,1
 mov $5,$0
 mov $6,$0
 mul $6,$0
-lpb $2,1
+lpb $2
   add $0,$2
-  lpb $6,1
+  lpb $6
     add $0,2
     add $4,2
     trn $6,$4

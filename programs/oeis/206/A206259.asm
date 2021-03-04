@@ -7,7 +7,7 @@ mul $3,2
 bin $3,$0
 mov $0,8
 sub $3,8
-lpb $0,1
+lpb $0
   sub $1,5
   add $2,$1
   gcd $0,$2

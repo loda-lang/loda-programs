@@ -14,7 +14,7 @@ mul $3,$4
 add $6,3
 mov $8,2
 gcd $8,$6
-lpb $0,1
+lpb $0
   trn $0,6
   add $8,$3
   add $8,2

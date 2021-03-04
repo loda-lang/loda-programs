@@ -12,12 +12,12 @@ sub $0,6
 add $0,$3
 trn $0,5
 mov $1,5
-lpb $0,1
+lpb $0
   sub $0,6
   trn $0,11
   add $1,1
 lpe
-lpb $2,1
+lpb $2
   add $1,1
   sub $2,1
 lpe

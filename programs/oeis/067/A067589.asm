@@ -16,7 +16,7 @@ mov $5,3
 add $6,2
 add $5,$6
 sub $8,$2
-lpb $0,1
+lpb $0
   mov $0,$4
   div $0,2
   sub $0,1

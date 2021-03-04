@@ -4,7 +4,7 @@
 mov $1,$0
 mov $2,$0
 trn $2,8
-lpb $0,1
+lpb $0
   mod $0,10
   mov $2,$0
 lpe

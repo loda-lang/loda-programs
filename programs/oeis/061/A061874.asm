@@ -8,7 +8,7 @@ sub $2,$0
 div $2,10
 add $0,$2
 add $0,1
-lpb $0,1
+lpb $0
   mov $2,$0
   mov $0,1
   add $2,3

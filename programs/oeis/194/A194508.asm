@@ -6,7 +6,7 @@ sub $0,1
 mul $1,2
 sub $1,1
 add $0,$1
-lpb $0,1
+lpb $0
   sub $0,5
   sub $1,3
 lpe

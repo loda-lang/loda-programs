@@ -4,7 +4,7 @@
 mov $2,$0
 add $2,1
 mov $4,$0
-lpb $2,1
+lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
@@ -18,7 +18,7 @@ lpb $2,1
   gcd $5,958003200
   add $5,$3
   sub $5,6
-  lpb $0,1
+  lpb $0
     mov $0,$5
     sub $0,1
   lpe

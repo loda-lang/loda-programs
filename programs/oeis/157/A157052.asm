@@ -11,7 +11,7 @@ mov $5,$2
 bin $5,2
 add $5,3
 mov $6,2
-lpb $0,1
+lpb $0
   mov $1,$5
   mul $3,$6
   add $1,$3

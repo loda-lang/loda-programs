@@ -17,7 +17,7 @@ mov $3,$0
 add $0,1
 mul $3,$1
 add $1,3
-lpb $0,1
+lpb $0
   mov $0,1
   trn $0,$2
   trn $3,1

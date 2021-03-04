@@ -4,12 +4,12 @@
 mov $5,$0
 mov $7,$0
 add $7,1
-lpb $7,1
+lpb $7
   clr $0,5
   mov $0,$5
   sub $7,1
   sub $0,$7
-  lpb $0,1
+  lpb $0
     mov $1,$0
     sub $1,1
     cal $1,273850 ; First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 969", based on the 5-celled von Neumann neighborhood.

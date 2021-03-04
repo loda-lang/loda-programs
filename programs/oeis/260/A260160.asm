@@ -3,7 +3,7 @@
 
 mov $2,-2
 bin $2,$0
-lpb $2,1
+lpb $2
   add $1,6
   sub $2,6
 lpe

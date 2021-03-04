@@ -4,22 +4,22 @@
 mov $4,$0
 add $4,1
 mov $7,$0
-lpb $4,1
+lpb $4
   mov $0,$7
   sub $4,1
   sub $0,$4
   mov $2,$0
   mov $3,1
-  lpb $2,1
+  lpb $2
     add $5,$3
     mov $6,$3
-    lpb $5,1
+    lpb $5
       sub $2,1
       sub $5,$5
       add $6,$2
       mov $8,$5
     lpe
-    lpb $6,1
+    lpb $6
       add $8,1
       mov $3,$8
       sub $6,1

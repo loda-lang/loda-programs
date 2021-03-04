@@ -11,7 +11,7 @@ mov $1,$0
 mov $2,$0
 sub $2,2
 sub $3,$2
-lpb $3,1
+lpb $3
   mul $1,2
   sub $3,1
 lpe

@@ -4,11 +4,11 @@
 mov $9,$0
 add $9,1
 mov $10,$0
-lpb $9,1
+lpb $9
   clr $0,8
   sub $9,1
   sub $0,$9
-  lpb $0,1
+  lpb $0
     add $0,56
     mov $2,$0
     mov $0,0

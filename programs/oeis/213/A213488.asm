@@ -3,27 +3,27 @@
 
 mov $9,$0
 mov $11,$0
-lpb $11,1
+lpb $11
   clr $0,9
   mov $0,$9
   sub $11,1
   sub $0,$11
   mov $6,$0
   mov $8,$0
-  lpb $8,1
+  lpb $8
     clr $0,6
     mov $0,$6
     sub $8,1
     sub $0,$8
     mov $3,$0
     mov $5,$0
-    lpb $5,1
+    lpb $5
       mov $0,$3
       sub $5,1
       sub $0,$5
       mov $1,$0
       bin $1,2
-      lpb $0,1
+      lpb $0
         mov $0,3
       lpe
       add $1,1

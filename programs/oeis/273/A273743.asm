@@ -7,7 +7,7 @@ mov $2,$0
 mov $3,2
 add $3,$0
 mov $4,5
-lpb $2,1
+lpb $2
   add $1,$3
   trn $4,$3
   sub $1,$4

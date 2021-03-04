@@ -4,7 +4,7 @@
 cal $0,90044 ; Triangle read by rows: T(n,k) = A083093 with 1's and 2's interchanged.
 mul $0,2
 pow $0,2
-lpb $0,1
+lpb $0
   sub $0,5
 lpe
 mov $1,$0

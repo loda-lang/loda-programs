@@ -4,7 +4,7 @@
 mov $2,6
 mov $4,3
 mov $6,$0
-lpb $0,1
+lpb $0
   trn $1,6
   add $1,4
   add $2,$0

@@ -3,7 +3,7 @@
 
 mov $1,$0
 gcd $1,2
-lpb $0,1
+lpb $0
   sub $0,1
   mul $1,6
 lpe

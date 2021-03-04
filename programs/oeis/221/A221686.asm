@@ -8,7 +8,7 @@ trn $6,1
 trn $3,$6
 mov $7,$0
 mov $0,14
-lpb $0,1
+lpb $0
   mov $0,7
   mov $1,6
   bin $1,$3

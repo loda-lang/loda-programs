@@ -6,7 +6,7 @@ div $0,7
 add $0,7
 mod $0,5
 mov $1,7
-lpb $0,1
+lpb $0
   sub $0,1
   div $1,$1
 lpe

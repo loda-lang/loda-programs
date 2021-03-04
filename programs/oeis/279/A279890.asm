@@ -3,7 +3,7 @@
 
 mov $2,2
 mov $5,$0
-lpb $2,1
+lpb $2
   mov $0,$5
   sub $2,1
   add $0,$2
@@ -15,12 +15,12 @@ lpb $2,1
   sub $3,$3
   mov $4,$2
   mov $6,$0
-  lpb $4,1
+  lpb $4
     mov $1,$6
     sub $4,1
   lpe
 lpe
-lpb $5,1
+lpb $5
   sub $1,$6
   mov $5,0
 lpe

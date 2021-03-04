@@ -4,11 +4,11 @@
 mov $6,$0
 add $6,1
 mov $7,$0
-lpb $6,1
+lpb $6
   clr $0,4
   sub $6,1
   sub $0,$6
-  lpb $0,1
+  lpb $0
     gcd $0,262144
     div $0,2
     add $1,1

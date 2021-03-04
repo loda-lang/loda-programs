@@ -3,15 +3,15 @@
 
 mov $8,$0
 mov $10,$0
-lpb $10,1
+lpb $10
   mov $0,$8
   sub $10,1
   sub $0,$10
   mov $3,6
-  lpb $0,1
+  lpb $0
     mov $1,$3
     lpb $2,2
-      lpb $3,1
+      lpb $3
         div $0,2
         mov $2,$1
         mov $1,0

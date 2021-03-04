@@ -3,11 +3,11 @@
 
 mov $2,$0
 gcd $0,81
-lpb $0,1
+lpb $0
   mod $0,4
   add $0,1
 lpe
-lpb $0,1
+lpb $0
   sub $0,3
 lpe
 mov $1,$0

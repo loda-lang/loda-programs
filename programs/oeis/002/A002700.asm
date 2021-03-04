@@ -6,15 +6,15 @@ mov $2,2
 add $2,$0
 add $0,$2
 trn $2,$0
-lpb $1,1
+lpb $1
   sub $1,1
   add $2,2
 lpe
-lpb $0,1
+lpb $0
   add $1,$0
   sub $0,1
 lpe
-lpb $2,1
+lpb $2
   mul $1,2
   sub $2,1
 lpe

@@ -9,7 +9,7 @@ lpb $2,2
   mov $2,$0
   mul $2,3
   mov $4,$0
-  lpb $4,1
+  lpb $4
     sub $1,$2
     mov $2,2
     mov $3,0

@@ -16,7 +16,7 @@ add $0,$3
 mov $5,$0
 mov $0,$3
 add $4,2
-lpb $0,1
+lpb $0
   add $0,$4
   mov $5,$0
   mov $0,2

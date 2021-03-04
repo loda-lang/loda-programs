@@ -3,13 +3,13 @@
 
 mov $3,$0
 add $3,1
-lpb $3,1
+lpb $3
   mov $0,$8
   sub $3,1
   sub $0,$3
   mov $5,2
   mov $10,$0
-  lpb $5,1
+  lpb $5
     sub $5,1
     add $0,$5
     sub $0,1
@@ -21,12 +21,12 @@ lpb $3,1
     div $2,17
     mov $4,$5
     mov $7,$2
-    lpb $4,1
+    lpb $4
       sub $4,1
       mov $9,$7
     lpe
   lpe
-  lpb $10,1
+  lpb $10
     sub $9,$7
     mov $10,0
   lpe

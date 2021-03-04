@@ -1,6 +1,8 @@
 # Contributing to LODA
 
-:sweat_drops: **[We warmly welcome contributions to this project!!](CONTRIBUTING.md)** :eyes:
+:sweat_drops: **We warmly welcome contributions to this project!** :eyes:
+
+:woman: **[Please open a GitHub issue if you want to get in touch with us on Slack!](https://github.com/ckrause/loda/issues)** :man:
 
 You have mainly two options: 
 

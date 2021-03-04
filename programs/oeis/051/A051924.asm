@@ -3,7 +3,7 @@
 
 mov $6,2
 mov $8,$0
-lpb $6,1
+lpb $6
   mov $0,$8
   sub $6,1
   add $0,$6
@@ -14,8 +14,8 @@ lpb $6,1
   add $3,1
   bin $3,$0
   add $5,7
-  lpb $2,1
-    lpb $5,1
+  lpb $2
+    lpb $5
       sub $2,$2
       mul $3,2
       mov $5,6
@@ -25,12 +25,12 @@ lpb $6,1
   lpe
   mov $4,$6
   mov $7,$0
-  lpb $4,1
+  lpb $4
     mov $1,$7
     sub $4,1
   lpe
 lpe
-lpb $8,1
+lpb $8
   sub $1,$7
   mov $8,0
 lpe

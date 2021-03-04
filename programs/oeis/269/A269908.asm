@@ -4,7 +4,7 @@
 mov $6,$0
 add $6,1
 mov $8,$0
-lpb $6,1
+lpb $6
   mov $0,$8
   sub $6,1
   sub $0,$6
@@ -16,7 +16,7 @@ lpb $6,1
   add $4,1
   mov $2,$4
   mul $2,$4
-  lpb $0,1
+  lpb $0
     mov $0,1
     mov $2,8
     mov $5,$3

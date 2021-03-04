@@ -3,25 +3,25 @@
 
 mov $26,$0
 mov $28,$0
-lpb $28,1
+lpb $28
   clr $0,26
   mov $0,$26
   sub $28,1
   sub $0,$28
   mov $23,$0
   mov $25,$0
-  lpb $25,1
+  lpb $25
     clr $0,23
     mov $0,$23
     sub $25,1
     sub $0,$25
     mov $1,$0
-    lpb $0,1
+    lpb $0
       sub $0,2
       mov $3,$1
       gcd $3,$0
       add $3,1
-      lpb $3,1
+      lpb $3
         pow $0,3
         mod $3,5
         mov $7,1

@@ -18,7 +18,7 @@ mov $6,1
 mul $6,$5
 add $1,$6
 mov $5,2
-lpb $0,1
+lpb $0
   mov $0,1
   add $5,7
   mov $3,$5

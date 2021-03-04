@@ -7,7 +7,7 @@ add $0,6
 add $3,7
 mov $6,2
 add $6,$3
-lpb $0,1
+lpb $0
   mov $0,$4
   bin $6,3
 lpe

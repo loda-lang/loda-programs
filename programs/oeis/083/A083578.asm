@@ -13,7 +13,7 @@ mov $4,$2
 pow $4,$5
 sub $6,$2
 add $4,$6
-lpb $0,1
+lpb $0
   sub $0,1
   mov $1,259
 lpe

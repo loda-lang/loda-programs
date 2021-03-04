@@ -3,14 +3,14 @@
 
 mov $28,$0
 mov $30,$0
-lpb $30,1
+lpb $30
   clr $0,28
   mov $0,$28
   sub $30,1
   sub $0,$30
   mov $10,$0
   mov $25,$0
-  lpb $0,1
+  lpb $0
     mul $0,5
     add $0,1
     div $0,8

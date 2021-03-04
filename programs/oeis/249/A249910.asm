@@ -7,7 +7,7 @@ trn $1,$0
 mov $2,$0
 add $2,$0
 add $1,$2
-lpb $0,1
+lpb $0
   mov $0,5
   mov $1,1
 lpe

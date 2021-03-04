@@ -7,14 +7,14 @@ mul $0,2
 add $0,1
 mov $4,$2
 sub $4,3
-lpb $0,1
+lpb $0
   mov $0,$4
   trn $0,1
   add $0,4
   mov $4,3
 lpe
 mov $1,$0
-lpb $3,1
+lpb $3
   add $1,1
   sub $3,1
 lpe

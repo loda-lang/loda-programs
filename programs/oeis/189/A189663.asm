@@ -3,7 +3,7 @@
 
 mul $0,55
 mov $1,$0
-lpb $0,1
+lpb $0
   mov $0,1
   div $1,144
 lpe

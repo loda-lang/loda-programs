@@ -4,7 +4,7 @@
 mul $0,48
 mov $3,$0
 sub $3,3
-lpb $0,1
+lpb $0
   mov $1,$3
   mov $3,$0
   mov $0,$1
@@ -13,7 +13,7 @@ lpb $0,1
 lpe
 sub $0,3
 gcd $0,2
-lpb $0,1
+lpb $0
   sub $0,1
   mul $0,14
   mov $1,$2

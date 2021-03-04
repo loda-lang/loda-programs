@@ -8,51 +8,51 @@ sub $1,$0
 add $1,1
 mov $3,$6
 mov $5,$6
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $2,56
 mov $5,$4
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe
 mov $3,$6
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $3,$6
 mov $5,$4
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $2,140
 mov $5,$4
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe
 mov $3,$6
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $3,$6
 mov $5,$4
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $2,56
 mov $5,$4
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe

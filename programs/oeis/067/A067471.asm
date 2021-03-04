@@ -8,7 +8,7 @@ mov $2,1
 mov $3,5
 mov $5,$4
 mov $6,15
-lpb $0,1
+lpb $0
   bin $5,2
   trn $5,$3
   add $5,$0

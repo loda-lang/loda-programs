@@ -9,7 +9,7 @@ mov $2,$1
 add $2,1
 mod $2,4
 mov $5,1
-lpb $0,1
+lpb $0
   trn $2,1
   mov $0,$2
   mov $3,$1

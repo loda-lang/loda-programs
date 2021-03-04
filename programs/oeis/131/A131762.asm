@@ -13,7 +13,7 @@ mov $3,4
 sub $3,$4
 add $3,1
 mov $5,$6
-lpb $0,1
+lpb $0
   sub $0,1
   div $2,2
   add $1,$2

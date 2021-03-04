@@ -7,17 +7,17 @@ mov $4,$0
 sub $0,1
 mov $2,$0
 trn $3,4
-lpb $2,1
+lpb $2
   add $0,2
   trn $1,$2
   add $1,$0
-  lpb $3,1
+  lpb $3
     add $1,1
     trn $3,$1
   lpe
   sub $2,1
 lpe
-lpb $4,1
+lpb $4
   add $1,2
   sub $4,1
 lpe

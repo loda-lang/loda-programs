@@ -7,23 +7,23 @@ pow $7,2
 add $0,$7
 mov $4,1
 gcd $7,2
-lpb $2,1
+lpb $2
   mov $1,$0
-  lpb $4,1
+  lpb $4
     gcd $7,7
     sub $1,$7
     sub $4,$7
     mov $5,$7
   lpe
   pow $1,3
-  lpb $5,1
+  lpb $5
     add $1,1
     div $2,7
     mov $3,1
     sub $5,$7
   lpe
   mov $6,$3
-  lpb $6,1
+  lpb $6
     div $1,2
     sub $6,$7
   lpe

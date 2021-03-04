@@ -3,10 +3,10 @@
 
 add $0,1
 mul $0,4
-lpb $0,1
+lpb $0
   div $0,2
   mov $1,3
-  lpb $0,1
+  lpb $0
     gcd $0,281474976710656
     div $0,4
     mul $1,2

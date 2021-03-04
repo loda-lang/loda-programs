@@ -4,9 +4,9 @@
 add $0,6
 mov $2,6
 mov $3,6
-lpb $0,1
+lpb $0
   add $0,1
-  lpb $2,1
+  lpb $2
     add $1,4
     trn $2,12
   lpe

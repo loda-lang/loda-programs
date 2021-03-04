@@ -3,14 +3,14 @@
 
 mov $8,$0
 add $8,1
-lpb $8,1
+lpb $8
   clr $0,6
   sub $8,1
   sub $0,$8
-  lpb $0,1
+  lpb $0
     gcd $0,1073741824
     mov $4,$0
-    lpb $0,1
+    lpb $0
       div $0,2
       add $4,1
     lpe

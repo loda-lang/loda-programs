@@ -7,10 +7,10 @@ mul $2,2
 mov $4,$2
 add $4,4
 pow $4,2
-lpb $2,1
+lpb $2
   mov $2,$3
   mov $3,2
-  lpb $4,1
+  lpb $4
     add $1,1
     add $3,4
     trn $4,$3

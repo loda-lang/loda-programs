@@ -16,7 +16,7 @@ add $3,$4
 mov $2,$3
 add $2,3
 sub $4,$0
-lpb $0,1
+lpb $0
   sub $0,1
   sub $0,$4
   add $1,$2

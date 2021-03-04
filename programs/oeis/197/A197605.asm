@@ -12,7 +12,7 @@ sub $2,$3
 trn $2,1
 trn $3,1
 add $3,2
-lpb $0,1
+lpb $0
   sub $0,1
   mov $1,$3
   add $1,4
@@ -23,66 +23,66 @@ lpe
 add $1,35
 mov $4,42
 mov $6,$5
-lpb $4,1
+lpb $4
   add $1,$6
   sub $4,1
 lpe
 mov $8,$5
-lpb $8,1
+lpb $8
   add $7,$6
   sub $8,1
 lpe
 mov $4,66
 mov $6,$7
-lpb $4,1
+lpb $4
   add $1,$6
   sub $4,1
 lpe
 mov $7,0
 mov $8,$5
-lpb $8,1
+lpb $8
   add $7,$6
   sub $8,1
 lpe
 mov $4,44
 mov $6,$7
-lpb $4,1
+lpb $4
   add $1,$6
   sub $4,1
 lpe
 mov $7,0
 mov $8,$5
-lpb $8,1
+lpb $8
   add $7,$6
   sub $8,1
 lpe
 mov $4,21
 mov $6,$7
-lpb $4,1
+lpb $4
   add $1,$6
   sub $4,1
 lpe
 mov $7,0
 mov $8,$5
-lpb $8,1
+lpb $8
   add $7,$6
   sub $8,1
 lpe
 mov $4,6
 mov $6,$7
-lpb $4,1
+lpb $4
   add $1,$6
   sub $4,1
 lpe
 mov $7,0
 mov $8,$5
-lpb $8,1
+lpb $8
   add $7,$6
   sub $8,1
 lpe
 mov $4,1
 mov $6,$7
-lpb $4,1
+lpb $4
   add $1,$6
   sub $4,1
 lpe

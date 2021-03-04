@@ -7,7 +7,7 @@ mov $1,$0
 div $0,3
 div $1,2
 mov $2,24
-lpb $0,1
+lpb $0
   sub $0,5
   trn $0,1
   sub $1,1

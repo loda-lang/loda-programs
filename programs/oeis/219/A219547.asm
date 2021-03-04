@@ -3,7 +3,7 @@
 
 mov $15,$0
 add $15,1
-lpb $15,1
+lpb $15
   clr $0,13
   sub $15,1
   sub $0,$15
@@ -11,14 +11,14 @@ lpb $15,1
   pow $2,2
   add $5,3
   mov $7,1
-  lpb $2,1
+  lpb $2
     mov $1,$7
     sub $1,1
     add $2,$7
     mov $6,$2
     mov $2,$4
     add $5,$6
-    lpb $6,1
+    lpb $6
       mod $5,2
       mul $1,$5
       add $3,7

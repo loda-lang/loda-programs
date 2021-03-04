@@ -19,7 +19,7 @@ mov $3,1
 mov $4,1
 add $7,$8
 add $7,2
-lpb $0,1
+lpb $0
   mov $0,2
   add $3,$1
   pow $3,2

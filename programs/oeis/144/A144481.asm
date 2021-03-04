@@ -3,7 +3,7 @@
 
 add $0,3
 mov $4,6
-lpb $0,1
+lpb $0
   sub $0,1
   bin $0,2
   mod $0,9

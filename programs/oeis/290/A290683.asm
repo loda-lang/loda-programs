@@ -4,8 +4,8 @@
 mov $1,2
 mov $2,$0
 mov $4,2
-lpb $2,1
-  lpb $4,1
+lpb $2
+  lpb $4
     mov $2,$1
     mov $3,$0
     sub $3,2

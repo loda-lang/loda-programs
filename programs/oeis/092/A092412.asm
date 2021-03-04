@@ -3,7 +3,7 @@
 
 cal $0,90739 ; Exponent of 2 in 9^n - 1.
 add $$1,2
-lpb $0,1
+lpb $0
   mod $0,4
 lpe
 mov $1,$0

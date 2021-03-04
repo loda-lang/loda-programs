@@ -3,7 +3,7 @@
 
 mod $0,5
 mov $2,2
-lpb $2,1
+lpb $2
   sub $2,$0
   add $1,$2
 lpe

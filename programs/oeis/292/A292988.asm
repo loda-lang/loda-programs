@@ -7,13 +7,13 @@ add $0,1
 mul $0,2
 mov $2,60
 mov $3,1
-lpb $3,1
+lpb $3
   mov $3,$2
   trn $3,$5
   add $4,14
   add $0,$4
   mov $1,$0
-  lpb $3,1
+  lpb $3
     add $1,1
     trn $3,4
   lpe

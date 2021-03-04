@@ -8,7 +8,7 @@ sub $0,1
 mov $1,97
 mul $1,$2
 div $1,51
-lpb $0,1
+lpb $0
   add $1,2
   div $0,$1
 lpe

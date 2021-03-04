@@ -8,7 +8,7 @@ trn $0,5
 add $0,$2
 mov $5,$2
 sub $5,1
-lpb $0,1
+lpb $0
   mov $0,2
   mov $2,2
   sub $3,1

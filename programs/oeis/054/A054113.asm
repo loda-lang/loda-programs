@@ -4,7 +4,7 @@
 mov $13,$0
 mov $15,$0
 add $15,1
-lpb $15,1
+lpb $15
   mov $0,$13
   sub $15,1
   sub $0,$15
@@ -12,9 +12,9 @@ lpb $15,1
   mul $0,2
   clr $5,8
   bin $0,$1
-  lpb $2,1
+  lpb $2
     mul $0,2
-    lpb $5,1
+    lpb $5
       add $2,7
       trn $5,$7
     lpe

@@ -5,7 +5,7 @@ div $0,2
 add $0,2
 mov $1,4
 mov $2,2
-lpb $0,1
+lpb $0
   div $0,$2
   add $1,1
   gcd $2,$0

@@ -3,20 +3,20 @@
 
 mov $3,$0
 mov $7,$0
-lpb $3,1
+lpb $3
   mov $0,$7
   sub $3,1
   sub $0,$3
   mov $2,$0
   mov $4,$0
   mov $5,2
-  lpb $2,1
-    lpb $5,1
+  lpb $2
+    lpb $5
       trn $5,$4
       mov $6,256
     lpe
     sub $2,$2
-    lpb $6,1
+    lpb $6
       div $4,4
       sub $6,$4
     lpe

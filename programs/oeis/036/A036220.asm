@@ -8,9 +8,9 @@ mov $6,6
 add $6,$0
 bin $6,$0
 mov $0,$6
-lpb $2,1
+lpb $2
   add $4,$3
-  lpb $4,1
+  lpb $4
     mul $0,$3
     trn $4,$5
     add $4,$5

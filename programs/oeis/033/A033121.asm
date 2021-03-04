@@ -4,7 +4,7 @@
 mov $3,14
 mov $4,15
 mov $5,6
-lpb $0,1
+lpb $0
   sub $0,1
   mul $4,3
 lpe

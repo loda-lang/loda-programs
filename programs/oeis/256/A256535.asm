@@ -6,7 +6,7 @@ mul $0,2
 trn $0,5
 add $1,5
 trn $1,6
-lpb $0,1
+lpb $0
   trn $0,3
   add $0,2
   add $1,$0

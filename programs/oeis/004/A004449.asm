@@ -4,9 +4,9 @@
 mov $1,$0
 mov $4,$0
 mov $5,32
-lpb $1,1
+lpb $1
   mov $1,0
-  lpb $5,1
+  lpb $5
     mov $2,$0
     div $2,8
     mov $5,7

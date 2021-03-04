@@ -9,7 +9,7 @@ mov $5,1
 mul $5,$0
 div $5,2
 mov $2,$5
-lpb $0,1
+lpb $0
   div $3,4
   sub $5,$3
   mov $0,$5

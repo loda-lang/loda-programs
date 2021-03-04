@@ -19,30 +19,30 @@ mov $1,$6
 sub $1,91
 mov $4,3
 mov $8,$7
-lpb $4,1
+lpb $4
   add $1,$8
   sub $4,1
 lpe
 mov $2,$7
-lpb $2,1
+lpb $2
   sub $2,1
   add $9,$8
 lpe
 mov $4,1
 mov $8,$9
-lpb $4,1
+lpb $4
   add $1,$8
   sub $4,1
 lpe
 mov $2,$7
 mov $9,0
-lpb $2,1
+lpb $2
   sub $2,1
   add $9,$8
 lpe
 mov $4,125
 mov $8,$9
-lpb $4,1
+lpb $4
   add $1,$8
   sub $4,1
 lpe

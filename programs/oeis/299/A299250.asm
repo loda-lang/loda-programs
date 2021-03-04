@@ -8,17 +8,17 @@ add $0,$2
 mov $3,$0
 add $5,$0
 add $5,4
-lpb $3,1
+lpb $3
   add $1,4
   add $4,$1
   add $5,$4
-  lpb $5,1
+  lpb $5
     add $1,2
     mov $3,2
     add $4,1
     trn $5,2
   lpe
-  lpb $4,1
+  lpb $4
     add $1,6
     trn $4,$3
   lpe

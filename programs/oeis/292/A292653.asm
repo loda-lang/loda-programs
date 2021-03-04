@@ -7,7 +7,7 @@ div $0,122
 add $0,1
 mov $2,5
 mov $3,1
-lpb $0,1
+lpb $0
   sub $0,1
   fac $1
   add $3,2

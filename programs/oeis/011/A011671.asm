@@ -8,7 +8,7 @@ mov $0,21
 add $3,3
 sub $2,$3
 gcd $2,21
-lpb $0,1
+lpb $0
   mov $0,2
   pow $2,9
   mul $0,$2

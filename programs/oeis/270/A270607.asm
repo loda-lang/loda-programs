@@ -14,7 +14,7 @@ pow $3,$0
 sub $0,$3
 add $0,2
 add $2,$3
-lpb $0,1
+lpb $0
   sub $0,1
   sub $0,$2
   add $0,2

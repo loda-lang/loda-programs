@@ -8,8 +8,8 @@ add $2,4
 mov $4,1
 add $4,$2
 mov $3,$4
-lpb $2,1
-  lpb $4,1
+lpb $2
+  lpb $4
     pow $2,2
     mov $4,$2
   lpe

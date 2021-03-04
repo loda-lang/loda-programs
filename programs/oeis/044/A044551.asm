@@ -4,7 +4,7 @@
 mov $5,$0
 mul $0,3
 add $0,3
-lpb $0,1
+lpb $0
   sub $0,1
   gcd $0,49
   mov $3,2

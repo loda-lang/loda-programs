@@ -3,9 +3,9 @@
 
 cal $0,49696 ; a(n)=T(n,n), array T as in A049695.
 add $1,$0
-lpb $0,1
+lpb $0
   trn $2,$0
-  lpb $0,1
+  lpb $0
     mov $0,$2
     add $1,1
   lpe

@@ -4,7 +4,7 @@
 mov $3,$0
 add $3,1
 mov $5,$0
-lpb $3,1
+lpb $3
   mov $0,$5
   sub $3,1
   sub $0,$3
@@ -13,7 +13,7 @@ lpb $3,1
   mov $6,$0
   cmp $6,0
   add $0,$6
-  lpb $0,1
+  lpb $0
     mov $4,$0
     cal $4,5251 ; a(0) = 0, a(1) = a(2) = a(3) = 1; thereafter, a(n) = a(n-1) + a(n-2) + a(n-4).
     sub $0,1

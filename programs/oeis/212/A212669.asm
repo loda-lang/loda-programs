@@ -11,7 +11,7 @@ mov $1,$3
 mul $1,16
 mov $3,$0
 mul $0,2
-lpb $0,1
+lpb $0
   mov $0,1
   sub $1,9
   add $1,$3

@@ -5,8 +5,8 @@ mov $1,2
 mov $2,$0
 mov $3,$0
 sub $3,1
-lpb $2,1
-  lpb $3,1
+lpb $2
+  lpb $3
     sub $3,$1
   lpe
   sub $1,$3

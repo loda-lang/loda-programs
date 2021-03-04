@@ -8,7 +8,7 @@ mov $3,18
 sub $3,$0
 div $0,3
 sub $0,1
-lpb $0,1
+lpb $0
   gcd $2,$3
   div $0,$2
   mov $2,1

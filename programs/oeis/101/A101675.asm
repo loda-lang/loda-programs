@@ -6,7 +6,7 @@ sub $1,$0
 mov $2,$1
 cmp $2,0
 add $1,$2
-lpb $1,1
+lpb $1
   add $1,6
   div $1,2
 lpe

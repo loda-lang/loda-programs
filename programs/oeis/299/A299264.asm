@@ -3,12 +3,12 @@
 
 mov $11,$0
 add $11,1
-lpb $11,1
+lpb $11
   clr $0,9
   sub $11,1
   sub $0,$11
   pow $0,2
-  lpb $0,1
+  lpb $0
     sub $3,4
     mul $0,$3
     mov $2,$0

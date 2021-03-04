@@ -3,21 +3,21 @@
 
 mov $30,$0
 mov $32,$0
-lpb $32,1
+lpb $32
   clr $0,30
   mov $0,$30
   sub $32,1
   sub $0,$32
   mov $27,$0
   mov $29,$0
-  lpb $29,1
+  lpb $29
     mov $0,$27
     sub $29,1
     sub $0,$29
     add $1,$0
     mov $5,2
     add $5,$0
-    lpb $0,1
+    lpb $0
       mov $1,$0
       sub $1,1
       mov $4,1

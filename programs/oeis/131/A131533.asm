@@ -3,7 +3,7 @@
 
 mod $0,6
 bin $0,4
-lpb $0,1
+lpb $0
   sub $0,3
 lpe
 mov $1,$0

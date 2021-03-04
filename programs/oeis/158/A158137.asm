@@ -15,7 +15,7 @@ div $1,3
 mov $0,$1
 add $0,7
 mov $2,2
-lpb $0,1
+lpb $0
   sub $0,$2
   sub $0,1
 lpe

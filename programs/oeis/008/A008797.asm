@@ -14,7 +14,7 @@ sub $1,2
 mul $3,2
 sub $2,$3
 sub $1,$2
-lpb $0,1
+lpb $0
   div $0,3
   pow $1,2
   div $1,2

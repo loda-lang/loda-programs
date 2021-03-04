@@ -5,51 +5,51 @@ mov $1,3
 mov $3,$0
 mov $5,$0
 mov $6,$0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $2,19
 mov $5,$4
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe
 mov $3,$6
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $3,$6
 mov $5,$4
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $2,32
 mov $5,$4
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe
 mov $3,$6
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $3,$6
 mov $5,$4
 mov $4,0
-lpb $3,1
+lpb $3
   sub $3,1
   add $4,$5
 lpe
 mov $2,16
 mov $5,$4
-lpb $2,1
+lpb $2
   add $1,$5
   sub $2,1
 lpe

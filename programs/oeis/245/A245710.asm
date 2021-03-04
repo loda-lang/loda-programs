@@ -3,20 +3,20 @@
 
 mov $3,$0
 mov $6,$0
-lpb $6,1
+lpb $6
   mov $0,$3
   sub $6,1
   sub $0,$6
   mov $2,$0
-  lpb $2,1
+  lpb $2
     mov $4,$0
     mov $5,$0
-    lpb $4,1
+    lpb $4
       div $5,2
       sub $4,$5
     lpe
     mov $7,$4
-    lpb $5,1
+    lpb $5
       gcd $2,2
       sub $5,$5
       mul $7,3

@@ -6,7 +6,7 @@ gcd $0,16
 sub $0,3
 mov $1,$0
 add $1,2
-lpb $1,1
+lpb $1
   mod $1,7
 lpe
 add $1,1

@@ -19,7 +19,7 @@ lpb $0,3
   mod $3,6
   trn $4,$3
   add $4,1
-  lpb $2,1
+  lpb $2
     sub $2,1
     add $3,4
   lpe

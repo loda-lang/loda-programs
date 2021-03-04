@@ -12,7 +12,7 @@ add $0,$4
 mul $0,2
 sub $0,5
 add $0,$1
-lpb $0,1
+lpb $0
   sub $0,1
   add $6,$3
   add $3,$2
@@ -24,7 +24,7 @@ add $0,1
 mov $1,$0
 add $1,3
 sub $1,$2
-lpb $7,1
+lpb $7
   add $1,6
   sub $7,1
 lpe

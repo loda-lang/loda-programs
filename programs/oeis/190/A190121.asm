@@ -3,12 +3,12 @@
 
 mov $3,$0
 mov $4,$0
-lpb $3,1
+lpb $3
   mov $0,$4
   sub $3,1
   sub $0,$3
   add $0,1
-  cal $0,3415
+  cal $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   add $0,2
   mov $2,$0
   sub $2,2

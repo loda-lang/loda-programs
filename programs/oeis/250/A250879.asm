@@ -14,30 +14,30 @@ add $3,$4
 mov $1,$3
 mov $2,1
 mov $6,$5
-lpb $2,1
+lpb $2
   add $1,$6
   sub $2,1
 lpe
 mov $8,$5
-lpb $8,1
+lpb $8
   add $7,$6
   sub $8,1
 lpe
 mov $2,10
 mov $6,$7
-lpb $2,1
+lpb $2
   add $1,$6
   sub $2,1
 lpe
 mov $7,0
 mov $8,$5
-lpb $8,1
+lpb $8
   add $7,$6
   sub $8,1
 lpe
 mov $2,5
 mov $6,$7
-lpb $2,1
+lpb $2
   add $1,$6
   sub $2,1
 lpe

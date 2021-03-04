@@ -10,7 +10,7 @@ mov $3,$0
 add $3,1
 bin $2,$3
 mov $1,$2
-lpb $0,1
+lpb $0
   sub $0,$2
   trn $0,15
   mul $1,2

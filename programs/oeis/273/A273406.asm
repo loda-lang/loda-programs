@@ -4,7 +4,7 @@
 mov $2,$0
 add $2,1
 mov $7,$0
-lpb $2,1
+lpb $2
   mov $0,$7
   sub $2,1
   sub $0,$2
@@ -20,7 +20,7 @@ lpb $2,1
   mul $8,$4
   mov $4,$3
   mov $10,$8
-  lpb $0,1
+  lpb $0
     gcd $4,2
     mov $5,$10
     trn $5,$6

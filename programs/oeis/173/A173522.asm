@@ -3,11 +3,11 @@
 
 mov $2,$0
 mov $4,$0
-lpb $2,1
+lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  lpb $0,1
+  lpb $0
     sub $0,1
     mov $3,$0
     cal $3,105321 ; Convolution of binomial(1,n) and Gould's sequence A001316.

@@ -18,7 +18,7 @@ add $5,9
 mul $3,$5
 mul $3,4
 add $0,$3
-lpb $0,1
+lpb $0
   mul $1,59
   sub $0,$1
   trn $0,1

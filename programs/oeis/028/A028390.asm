@@ -3,15 +3,15 @@
 
 mul $0,6
 mov $3,$0
-lpb $0,1
+lpb $0
   add $2,$0
-  lpb $0,1
+  lpb $0
     mul $3,2
     mov $4,$2
-    lpb $0,1
-      lpb $4,1
+    lpb $0
+      lpb $4
         div $3,8
-        lpb $0,1
+        lpb $0
           mov $0,$3
           mod $0,6
           div $2,2

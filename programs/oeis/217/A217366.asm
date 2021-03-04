@@ -3,9 +3,9 @@
 
 mov $1,$0
 add $0,6
-lpb $0,1
+lpb $0
   mul $0,2
-  lpb $0,1
+  lpb $0
     mov $2,$0
     mod $0,8
     mul $1,$2

@@ -5,7 +5,7 @@ add $0,2
 mov $1,12
 mov $2,$0
 trn $0,11
-lpb $0,1
+lpb $0
   mul $1,8
   trn $0,$1
   sub $2,6

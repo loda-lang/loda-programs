@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $8,$0
-lpb $8,1
+lpb $8
   mov $0,$2
   sub $8,1
   sub $0,$8
@@ -12,7 +12,7 @@ lpb $8,1
   log $3,$0
   mov $5,2
   mov $6,$0
-  lpb $0,1
+  lpb $0
     sub $0,1
     div $6,2
     add $3,$6

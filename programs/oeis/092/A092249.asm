@@ -4,7 +4,7 @@
 mov $6,$0
 mov $8,$0
 add $8,1
-lpb $8,1
+lpb $8
   clr $0,6
   mov $0,$6
   sub $8,1

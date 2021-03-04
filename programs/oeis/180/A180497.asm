@@ -6,12 +6,12 @@ add $5,1
 mov $2,$5
 mov $3,3
 mov $4,1
-lpb $2,1
-  lpb $4,1
+lpb $2
+  lpb $4
     trn $4,$3
     pow $5,2
   lpe
-  lpb $5,1
+  lpb $5
     mov $1,9
     mov $6,$5
     trn $5,$3

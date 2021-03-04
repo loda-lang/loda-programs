@@ -7,7 +7,7 @@ add $2,$0
 add $2,2
 add $1,$2
 add $1,$0
-lpb $0,1
+lpb $0
   add $3,5
   sub $0,$3
   trn $0,1

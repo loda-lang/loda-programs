@@ -3,11 +3,11 @@
 
 mul $0,3
 mov $2,$0
-lpb $0,1
+lpb $0
   sub $0,3
   mov $4,4
   mov $5,1
-  lpb $3,1
+  lpb $3
     mov $1,3
     add $1,$5
     mov $3,$0

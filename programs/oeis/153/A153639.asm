@@ -7,7 +7,7 @@ sub $0,3
 pow $0,2
 mov $1,5
 mov $2,5
-lpb $0,1
+lpb $0
   sub $0,1
   div $0,2
   mod $1,2

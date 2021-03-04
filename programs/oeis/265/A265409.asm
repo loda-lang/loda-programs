@@ -3,14 +3,14 @@
 
 mov $5,$0
 mov $7,$0
-lpb $7,1
+lpb $7
   clr $0,5
   mov $0,$5
   sub $7,1
   sub $0,$7
   add $3,$0
   mul $3,2
-  lpb $0,1
+  lpb $0
     mov $1,$0
     cal $1,232091 ; Smallest square or promic (oblong) number greater than or equal to n.
     mov $0,2

@@ -8,7 +8,7 @@ log $0,2
 mul $0,2
 mov $3,1
 mov $4,$0
-lpb $0,1
+lpb $0
   div $0,2
   add $0,1
   add $1,$4

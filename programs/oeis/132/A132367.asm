@@ -9,7 +9,7 @@ mov $2,$0
 sub $2,1
 add $0,$2
 mul $0,$2
-lpb $0,1
+lpb $0
   sub $3,5
   add $3,$1
   div $3,3

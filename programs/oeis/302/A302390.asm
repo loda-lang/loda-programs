@@ -7,7 +7,7 @@ bin $0,3
 mod $6,2
 mov $1,$6
 mov $5,2
-lpb $0,1
+lpb $0
   cmp $0,$3
   mov $2,$1
   mul $2,2

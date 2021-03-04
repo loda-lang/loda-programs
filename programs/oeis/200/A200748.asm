@@ -3,19 +3,19 @@
 
 mov $9,$0
 mov $11,$0
-lpb $11,1
+lpb $11
   clr $0,9
   mov $0,$9
   sub $11,1
   sub $0,$11
   mov $2,$0
-  lpb $2,1
+  lpb $2
     mov $6,$0
-    lpb $4,1
+    lpb $4
       mov $2,$8
       trn $4,$3
     lpe
-    lpb $6,1
+    lpb $6
       add $5,1
       mov $0,$5
       mov $3,$5

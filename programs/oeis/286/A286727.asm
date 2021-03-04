@@ -4,13 +4,13 @@
 mov $2,$0
 add $2,1
 mov $5,$0
-lpb $2,1
+lpb $2
   mov $0,$5
   sub $2,1
   sub $0,$2
   mov $4,$0
   mov $7,2
-  lpb $7,1
+  lpb $7
     mov $0,$4
     sub $7,1
     add $0,$7
@@ -19,12 +19,12 @@ lpb $2,1
     cal $0,93505 ; a(n) = floor(A001969(n)/2 + 1/2).
     mov $3,$0
     mov $6,$7
-    lpb $6,1
+    lpb $6
       sub $6,1
       mov $8,$3
     lpe
   lpe
-  lpb $4,1
+  lpb $4
     mov $4,0
     sub $8,$3
   lpe

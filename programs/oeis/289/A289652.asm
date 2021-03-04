@@ -15,7 +15,7 @@ add $10,$9
 bin $10,$2
 div $10,$5
 sub $10,3
-lpb $0,1
+lpb $0
   add $10,1
   clr $6,$4
   sub $0,1

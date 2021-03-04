@@ -15,13 +15,13 @@ mul $5,2
 add $5,1
 mov $3,$5
 add $3,$4
-lpb $0,1
+lpb $0
   sub $0,1
   add $5,$3
   add $1,$5
   sub $1,$3
 lpe
-lpb $2,1
+lpb $2
   add $1,20
   sub $2,1
 lpe

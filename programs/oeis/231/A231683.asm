@@ -3,12 +3,12 @@
 
 mov $6,$0
 add $6,1
-lpb $6,1
+lpb $6
   clr $0,4
   sub $6,1
   sub $0,$6
   add $2,$0
-  lpb $0,1
+  lpb $0
     mod $0,8
     div $2,8
     add $2,$0

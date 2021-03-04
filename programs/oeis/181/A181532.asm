@@ -3,7 +3,7 @@
 
 mov $30,$0
 mov $32,2
-lpb $32,1
+lpb $32
   clr $0,30
   mov $0,$30
   sub $32,1
@@ -11,13 +11,13 @@ lpb $32,1
   sub $0,1
   mov $27,$0
   mov $29,$0
-  lpb $29,1
+  lpb $29
     mov $0,$27
     sub $29,1
     sub $0,$29
     mov $2,$0
     sub $2,$0
-    lpb $0,1
+    lpb $0
       mov $1,$0
       cal $1,5251 ; a(0) = 0, a(1) = a(2) = a(3) = 1; thereafter, a(n) = a(n-1) + a(n-2) + a(n-4).
       sub $0,1
@@ -28,12 +28,12 @@ lpb $32,1
   lpe
   mov $1,$28
   mov $33,$32
-  lpb $33,1
+  lpb $33
     mov $31,$1
     sub $33,1
   lpe
 lpe
-lpb $30,1
+lpb $30
   mov $30,0
   sub $31,$1
 lpe

@@ -7,17 +7,17 @@ mov $3,$0
 mov $4,4
 gcd $4,$0
 mov $7,8
-lpb $2,1
+lpb $2
   mul $1,$3
   mov $2,$7
   mul $2,$4
   mov $6,$7
-  lpb $4,1
+  lpb $4
     sub $2,9
     trn $4,$1
     mov $5,5
   lpe
-  lpb $1,1
+  lpb $1
     sub $1,$1
     mov $6,$2
   lpe

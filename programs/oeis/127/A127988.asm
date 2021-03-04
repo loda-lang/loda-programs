@@ -3,13 +3,13 @@
 
 mov $7,$0
 mov $9,$0
-lpb $7,1
+lpb $7
   mov $0,$9
   sub $7,1
   sub $0,$7
   mov $4,$0
   gcd $4,32
-  lpb $0,1
+  lpb $0
     sub $0,$0
     mov $2,$4
     add $3,2

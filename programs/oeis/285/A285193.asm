@@ -10,7 +10,7 @@ add $0,$3
 add $0,$3
 mul $3,2
 gcd $0,$3
-lpb $0,1
+lpb $0
   add $0,$2
   mov $1,$0
   mov $0,4

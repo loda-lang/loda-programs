@@ -8,7 +8,7 @@ mul $1,$0
 bin $1,$0
 mov $2,2
 pow $2,$3
-lpb $0,1
+lpb $0
   mov $0,1
   sub $1,$2
   add $1,36

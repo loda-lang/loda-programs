@@ -7,7 +7,7 @@ mov $3,$0
 div $3,3
 add $3,1
 bin $2,$3
-lpb $0,1
+lpb $0
   mov $0,1
   add $2,6
   mov $1,$2

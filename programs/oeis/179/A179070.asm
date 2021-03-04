@@ -4,7 +4,7 @@
 sub $0,1
 mov $1,1
 mov $4,3
-lpb $0,1
+lpb $0
   sub $0,1
   mov $2,$4
   trn $3,1

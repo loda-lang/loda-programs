@@ -6,7 +6,7 @@ mov $6,$0
 mov $0,2
 mov $3,2
 gcd $3,$6
-lpb $0,1
+lpb $0
   mov $4,$0
   mov $0,1
   mov $2,3

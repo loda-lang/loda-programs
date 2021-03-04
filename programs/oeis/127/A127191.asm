@@ -9,7 +9,7 @@ mov $0,0
 pow $2,2
 mov $5,4
 mov $6,11
-lpb $2,1
+lpb $2
   add $0,11
   sub $2,5
   trn $2,$5

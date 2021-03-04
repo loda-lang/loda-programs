@@ -10,7 +10,7 @@ mov $1,20
 mov $4,5
 mul $5,2
 mov $3,$5
-lpb $0,1
+lpb $0
   mov $2,$1
   sub $2,$4
   mul $2,2

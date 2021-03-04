@@ -11,7 +11,7 @@ mov $2,0
 div $3,$0
 mul $3,$0
 mov $4,4
-lpb $4,1
+lpb $4
   mov $0,$3
   mul $4,$2
 lpe

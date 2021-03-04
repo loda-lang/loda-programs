@@ -5,7 +5,7 @@ mov $1,$0
 gcd $1,2
 mov $2,$0
 add $2,$0
-lpb $2,1
+lpb $2
   gcd $1,$2
   div $2,5
 lpe

@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,2
-lpb $2,1
+lpb $2
   cal $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   bin $2,2
 lpe

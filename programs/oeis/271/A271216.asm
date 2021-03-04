@@ -9,7 +9,7 @@ div $3,4
 fac $3
 mul $3,2
 mov $1,$3
-lpb $2,1
+lpb $2
   mul $1,2
   sub $2,1
 lpe

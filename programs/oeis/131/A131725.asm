@@ -3,15 +3,15 @@
 
 mov $27,$0
 mov $29,$0
-lpb $29,1
+lpb $29
   clr $0,27
   mov $0,$27
   sub $29,1
   sub $0,$29
-  lpb $0,1
+  lpb $0
     mov $1,$0
     cal $1,131711 ; Period 12: repeat 0, 1, 2, 5, 2, 9, 0, 9, 8, 5, 8, 1.
-    lpb $1,1
+    lpb $1
       add $2,$1
       clr $0,2
     lpe

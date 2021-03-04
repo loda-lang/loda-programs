@@ -3,7 +3,7 @@
 
 cal $0,40855 ; Continued fraction for sqrt(885).
 mov $1,3
-lpb $0,1
+lpb $0
   mov $1,$0
   mov $0,1
 lpe

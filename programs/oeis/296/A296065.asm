@@ -4,16 +4,16 @@
 mov $2,$0
 mov $3,$0
 add $3,1
-lpb $2,1
+lpb $2
   mov $1,$3
   sub $2,1
-  lpb $2,1
-    lpb $1,1
+  lpb $2
+    lpb $1
       div $1,6
     lpe
-    lpb $2,1
+    lpb $2
       mov $4,2
-      lpb $4,1
+      lpb $4
         sub $2,1
         div $4,2
       lpe

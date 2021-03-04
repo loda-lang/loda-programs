@@ -4,8 +4,8 @@
 mov $1,3
 mov $2,$0
 mov $3,$0
-lpb $2,1
-  lpb $0,1
+lpb $2
+  lpb $0
     sub $0,1
     mul $1,2
   lpe
@@ -13,7 +13,7 @@ lpb $2,1
   sub $2,1
   trn $2,1
 lpe
-lpb $3,1
+lpb $3
   add $1,2
   sub $3,1
 lpe

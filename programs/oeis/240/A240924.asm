@@ -4,7 +4,7 @@
 cal $0,84968 ; Multiples of 7 coprime to 30.
 mul $0,2
 pow $0,2
-lpb $0,1
+lpb $0
   add $0,2
   mod $0,9
 lpe

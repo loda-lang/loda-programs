@@ -3,7 +3,7 @@
 
 mov $2,$0
 cal $0,98736 ; a(n) = product of n and all its digits.
-lpb $2,1
+lpb $2
   mov $1,1
   trn $2,$0
 lpe

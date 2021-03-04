@@ -3,7 +3,7 @@
 
 mod $0,7
 sub $0,5
-lpb $0,1
+lpb $0
   pow $0,2
   trn $0,7
   mov $1,1

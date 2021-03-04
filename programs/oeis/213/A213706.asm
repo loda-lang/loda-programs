@@ -3,13 +3,13 @@
 
 mov $21,$0
 add $21,1
-lpb $21,1
+lpb $21
   clr $0,19
   sub $21,1
   sub $0,$21
-  lpb $0,1
+  lpb $0
     mov $9,$0
-    lpb $9,1
+    lpb $9
       sub $0,$9
       div $9,2
     lpe

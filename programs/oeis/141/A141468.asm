@@ -6,14 +6,14 @@ mov $1,100
 lpb $1,36
   mov $2,$0
   mov $3,130665
-  lpb $3,1
+  lpb $3
     cal $0,230980 ; Number of primes <= n, starting at n=0.
     sub $0,$2
     mov $1,6
     div $3,5
     mov $5,1
   lpe
-  lpb $5,1
+  lpb $5
     add $0,1
     div $5,3
   lpe

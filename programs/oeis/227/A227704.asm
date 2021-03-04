@@ -12,7 +12,7 @@ add $3,$1
 add $7,$1
 bin $7,4
 add $7,$3
-lpb $0,1
+lpb $0
   sub $0,$0
   sub $7,1
 lpe

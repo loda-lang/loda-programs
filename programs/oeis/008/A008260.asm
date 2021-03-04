@@ -6,7 +6,7 @@ mov $5,$0
 pow $0,2
 mov $6,$0
 add $6,6
-lpb $0,1
+lpb $0
   add $6,4
   cmp $0,$6
   cmp $1,$4

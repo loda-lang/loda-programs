@@ -9,7 +9,7 @@ mov $1,$0
 div $0,2
 bin $1,$0
 mov $0,8
-lpb $0,1
+lpb $0
   mov $0,7
   mul $1,2
 lpe
