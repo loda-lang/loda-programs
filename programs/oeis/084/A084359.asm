@@ -3,6 +3,4 @@
 
 sub $0,2
 cal $0,83023 ; a(n) = number of partitions of n into a pair of parts n=p+q, p>=q>=0, with p-q equal to a square >= 0.
-mul $0,8
 mov $1,$0
-div $1,8

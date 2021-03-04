@@ -5,7 +5,7 @@
 mov $1,0 
 ; $1 = result = 0
 
-lpb $0,1
+lpb $0
     mov $2, $0
     mod $2, 9
     ; $2 = last digit
