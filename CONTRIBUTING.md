@@ -28,7 +28,7 @@ There is a test suite in [test.cpp](/src/test.cpp) which can be executed using `
 
 ## 2. Program Development (Assembler)
 
-If you would like to implement an existing integer sequence in LODA, please go ahead! You should first check if there exists already aprogram for it.
+If you would like to implement an existing integer sequence in LODA, please go ahead! You should first check if there exists already a program for it.
 Please included a comment in the second line "Coded manually" to mark it as hand-written. You can also include your name there is you like. You can
 take a look at the programs for [A000010](https://github.com/ckrause/loda/blob/master/programs/oeis/000/A000010.asm) or
 [A030103](https://github.com/ckrause/loda/blob/master/programs/oeis/030/A030103.asm) for examples. When implementing your program, use
