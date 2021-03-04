@@ -10,7 +10,7 @@ lpb $29
   sub $0,$29
   sub $0,1
   add $5,2
-  cal $0,7913
+  cal $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
   sub $0,$5
   mov $1,$0
   mul $0,4

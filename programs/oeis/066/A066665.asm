@@ -9,7 +9,7 @@ lpb $6
   sub $6,1
   sub $0,$6
   mul $0,2
-  cal $0,56171
+  cal $0,56171 ; a(n) = pi(n) - pi(floor(n/2)), where pi is A000720.
   trn $0,1
   add $0,2
   mul $0,4

@@ -18,7 +18,7 @@ lpb $13
     sub $0,1
     mov $3,$0
     add $5,3
-    cal $0,38124
+    cal $0,38124 ; Beatty sequence for Brun's constant.
     add $3,$0
     mul $3,2
     add $3,8
