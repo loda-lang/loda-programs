@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,49697
+  cal $2,49697 ; a(n)=T(n,n+1), array T as in A049695.
   mov $0,0
   add $1,1
   sub $2,1

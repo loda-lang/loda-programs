@@ -4,9 +4,7 @@
 add $0,1
 mov $1,$0
 lpb $1
-  mov $2,$1
-  bin $2,2
-  gcd $1,$2
+  dif $1,2
 lpe
 sub $1,2
 div $1,2

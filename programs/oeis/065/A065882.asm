@@ -3,8 +3,9 @@
 
 add $0,1
 lpb $0
-  add $1,$0
-  mod $1,4
-  gcd $0,$1
-  div $0,4
+  dif $0,4
 lpe
+lpb $0
+  mod $0,4
+lpe
+mov $1,$0
