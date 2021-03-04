@@ -8,7 +8,7 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
-  cal $0,128634
+  cal $0,128634 ; Number of parallel permutations of length n.
   div $0,2
   mov $3,$5
   mov $4,$0

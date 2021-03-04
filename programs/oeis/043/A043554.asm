@@ -1,9 +1,7 @@
 ; A043554: Essentially same as A005811.
 ; 1,1,2,1,2,3,2,1,2,3,4,3,2,3,2,1,2,3,4,3,4,5,4,3,2,3,4,3
 
-mov $2,$0
-cmp $2,0
-add $0,$2
-cal $0,88748 ; a(n) = 1 + Sum_{k=0..n-1} 2 * A014577(k) - 1.
-mov $1,$0
-sub $1,1
+cal $0,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+trn $0,1
+add $1,$0
+add $1,1

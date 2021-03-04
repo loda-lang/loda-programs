@@ -1,6 +1,8 @@
 ; A065040: Triangle T(m,k): exponent of the highest power of 2 dividing binomial coefficient binomial(m,k).
 ; 0,0,0,0,1,0,0,0,0,0,0,2,1,2,0,0,0,1,1,0,0,0,1,0,2,0,1,0,0,0,0,0,0,0,0,0,0,3,2,3,1,3,2,3,0,0,0,2,2,1,1,2,2,0,0,0,1,0,3,1,2,1,3,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,2,1,2,0,3,2,3,0,2,1,2,0,0,0,1,1,0,0,2,2,0,0,1,1,0,0,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,4,2,4,3,4,1,4,3,4,2,4,3,4,0,0,0,3,3,2,2,3,3,1,1,3,3,2,2,3,3,0,0,0,1,0,4,2,3,2,4,1,2,1,4,2,3,2,4,0,1,0,0,0,0,0,2,2,2,2,1,1,1,1,2,2,2,2,0,0,0,0,0,2,1,2,0,4,3,4,1,3,2,3,1,4,3,4,0,2,1,2,0,0,0,1,1,0,0,3,3,1,1,2,2,1,1,3,3,0,0,1
 
-cal $0,82907 ; A modified Pascal's triangle, read by rows, and modified as follows: binomial(n,j) is replaced by gcd(2^n, binomial(n,j)), i.e., the largest power of 2 dividing binomial(n,j).
-log $0,2
-mov $1,$0
+cal $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+lpb $0
+  dif $0,2
+  add $1,1
+lpe

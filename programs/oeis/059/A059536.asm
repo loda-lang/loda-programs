@@ -15,7 +15,7 @@ lpb $29
   add $0,$26
   div $4,$0
   sub $4,3
-  cal $0,276856
+  cal $0,276856 ; First differences of the Beatty sequence A022840 for sqrt(6).
   mul $0,3
   mov $1,$0
   mul $4,2

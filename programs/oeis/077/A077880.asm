@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,119282 ; Alternating sum of the first n Fibonacci numbers.
-add $0,$1
-mov $1,$0
+add $1,$0
 add $1,1
