@@ -29,7 +29,7 @@ If you would like to get updates on new programs, you can check out the [@lodami
 
 The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0.
 
-There are currently no binaries available. You need to build it by running `make` in the `src` folder. It has been tested on Linux and MacOS and does not require any libraries except for STD and the `wget`, `gzip` command-line tools.
+There are currently no binaries available. You need to build it by running `make` in the `src` folder. It has been tested on Linux and MacOS and does not require any external libraries, but only the `wget`, `gzip` command-line tools.
 
 The `loda` command-line tool provides the following commands and options:
 
@@ -117,7 +117,7 @@ The table below summarizes the operations currently supported by LODA. We use th
 | `trn a,b` | Truncation     | Subtract and ensure non-negative result: `a:=max(a-b,0)` |
 | `mul a,b` | Multiplication | Multiply the target with the source value: `a:=a*b` |
 | `div a,b` | Division       | Divide the target by the source value: `a:=floor(a/b)`  |
-| `dif a,b` | Divide-If-Divides | Divide the target by the source value if the source is a divisor: `a:=(a%b=0)?a/b:1 `  |
+| `dif a,b` | Divide-If-Divides | Divide the target by the source value if the source is a divisor: `a:=(a%b=0)?a/b:a `  |
 | `mod a,b` | Modulus        | Remainder of division of target by source: `a:=a%b` |
 | `pow a,b` | Power          | Raise source to the power of target: `a:=a^b` |
 | `log a,b` | Logarithm      | Logarithm of target with source as base: `a:=floor(log_b(a))` |
