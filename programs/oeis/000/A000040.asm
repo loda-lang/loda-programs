@@ -2,10 +2,16 @@
 ; Coded manually 2021-03-04 by Simon Strandgaard, https://github.com/neoneye
 ; 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271
 
+; Determine the guaranteed max number of iterations before stopping.
+; The upper bound uses Legendre's conjecture. (n+1)^2
+; https://en.wikipedia.org/wiki/Legendre%27s_conjecture
 mov $2,$0
+add $2,1
 pow $2,2
-add $2,2
-; $2 = guaranteed max number of iterations before stopping, n*n+2
+; $2 = guaranteed max number of iterations before stopping.
+
+; Increment to the upper bound, since the most computer languages starts from 0 rather than 1.
+add $2,1
 
 mov $1,0        ; result = 0
 lpb $2
