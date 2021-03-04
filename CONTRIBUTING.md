@@ -13,7 +13,7 @@ You can contribute to this project in several ways:
 
 See the sections below for more details.
 
-## 1. LODA Tool Development (C++)
+## 1. Tool Development (C++)
 
 Contributions to the LODA tool and documentation are very welcome. Please familiarize yourself with the C++ code and open issues to discuss and plan changes.
 Apart from that, we follow the usual GitHub workflow using pull requests. 
@@ -26,7 +26,7 @@ To reduce and normalize the programs we use the [Optimizer](/src/include/optimiz
 
 There is a test suite in [test.cpp](/src/test.cpp) which can be executed using `./loda test`. This is also automatically executed as an action in the GitHub workflow.
 
-## 2. LODA Program Development (Assembler)
+## 2. Program Development (Assembler)
 
 If you would like to implement an existing integer sequence in LODA, please go ahead! You should first check if there exists already aprogram for it.
 Please included a comment in the second line "Coded manually" to mark it as hand-written. You can also include your name there is you like. You can
@@ -36,11 +36,11 @@ take a look at the programs for [A000010](https://github.com/ckrause/loda/blob/m
 
 **Note:** if the LODA Miner _should_ eventually find a faster program for your sequence, your program would get overwritten (but you are still in the Git history). 
 
-## 3. LODA Program Analysis (Assembler)
+## 3. Program Analysis (Assembler)
 
 Since there are so many OEIS sequences and LODA programs, it is hard to analyze their relationship in more detail. If you find an interesting insight in a generated LODA program, please share it with us. For instance, if you derived a new formula or conjecture from the program. Please let us know in this case by opening a GitHub issue or contacting us via e-mail or Slack. Also, if you plan to publish a formula or conjecture from one of the programs, please indicate that you found it using LODA and reference it in your OEIS entry. Thank you!
 
-## 4. Mining Programs
+## 4. Mining
 
 If you want to mine programs, great! Please fork this repo. Then go to the `src` folder and run `make`
 to build it. Then run `./loda mine` in the root folder to start mining! Found programs are automatically
