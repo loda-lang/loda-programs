@@ -51,7 +51,7 @@ lpb $0
   
   mov $30,0  ; result = 0
   ; loop while (value0 > 0) || (value1 > 0)
-  lpb $18,1
+  lpb $18
     mov $20,$17
     mod $20,2
     ; $20 = remainder0 = value0 % 2

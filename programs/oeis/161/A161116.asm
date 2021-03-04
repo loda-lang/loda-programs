@@ -3,7 +3,6 @@
 
 add $0,1
 mul $0,2
-cal $0,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+cal $0,1227 ; Number of odd divisors of n.
 mov $1,$0
-sub $1,4
-div $1,2
+sub $1,2
