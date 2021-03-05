@@ -9,6 +9,4 @@ lpb $0
   cal $0,259748 ; a(n) = (Sum_{0<x<y<n} x*y) mod n.
   add $0,$2
 lpe
-mul $0,2
 mov $1,$0
-div $1,2

@@ -7,7 +7,7 @@ mul $0,2
 sub $0,4
 mov $4,4
 mov $7,6
-lpb $0,1
+lpb $0
   mov $2,$0
   div $0,10
   sub $7,2

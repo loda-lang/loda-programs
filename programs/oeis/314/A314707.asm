@@ -3,7 +3,7 @@
 
 mov $4,$0
 sub $0,1
-lpb $0,1
+lpb $0
   mov $1,$0
   cal $1,170956 ; Expansion of Product_{i=1..m} (1 + x^(4*i-1)) for m = 3.
   sub $0,1

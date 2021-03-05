@@ -6,12 +6,12 @@ sub $0,1
 mov $1,$0
 add $1,3
 mov $2,$0
-lpb $2,1
+lpb $2
   add $1,3
   sub $2,2
   add $3,$0
   add $0,1
-  lpb $0,1
+  lpb $0
     trn $0,$3
     sub $2,1
   lpe
@@ -22,7 +22,7 @@ lpe
 sub $1,2
 mov $4,3
 mov $5,$6
-lpb $4,1
+lpb $4
   add $1,$5
   sub $4,1
 lpe

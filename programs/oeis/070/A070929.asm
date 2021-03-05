@@ -3,6 +3,4 @@
 
 pow $0,3
 cal $0,68527 ; Difference between smallest square >= n and n.
-mul $0,2
 mov $1,$0
-div $1,2

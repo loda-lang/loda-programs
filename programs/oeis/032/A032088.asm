@@ -4,8 +4,6 @@
 cal $0,240437 ; Number of non-palindromic n-tuples of 5 distinct elements.
 sub $0,1
 div $0,10
-add $0,2
 mov $1,$0
-sub $1,2
 mul $1,5
 add $1,5

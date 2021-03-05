@@ -6,7 +6,7 @@ cal $0,338117 ; Number of partitions of n into two parts (s,t) such that (t-s) |
 sub $0,$2
 mul $2,$0
 sub $0,$2
-lpb $0,1
+lpb $0
   mod $0,2
 lpe
 mov $1,$0

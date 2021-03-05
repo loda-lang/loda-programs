@@ -4,25 +4,25 @@
 mov $1,$0
 mov $2,$0
 add $2,1
-lpb $2,1
+lpb $2
   add $1,$0
   mov $4,2
   mov $6,$2
   add $6,1
   mul $6,$1
   add $1,1
-  lpb $4,1
+  lpb $4
     mul $1,4
     mov $4,1
     div $6,5
   lpe
   add $5,$6
   mov $6,2
-  lpb $5,1
+  lpb $5
     add $1,$4
     trn $5,$1
   lpe
-  lpb $6,1
+  lpb $6
     mov $2,$0
     add $3,$1
     trn $6,$1

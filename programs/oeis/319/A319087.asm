@@ -4,7 +4,7 @@
 mov $6,$0
 mov $8,$0
 add $8,1
-lpb $8,1
+lpb $8
   clr $0,6
   mov $0,$6
   sub $8,1
@@ -15,9 +15,6 @@ lpb $8,1
   add $4,1
   pow $4,2
   mul $4,$0
-  add $4,230980
-  mov $1,$4
-  sub $1,230980
-  add $7,$1
+  add $7,$4
 lpe
 mov $1,$7

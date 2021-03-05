@@ -5,7 +5,7 @@ mov $1,1
 mov $2,$0
 mul $2,2
 mov $5,$0
-lpb $0,1
+lpb $0
   mov $0,1
   mov $6,4
   bin $6,$2

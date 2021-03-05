@@ -6,6 +6,4 @@ add $2,1
 mov $0,$2
 add $0,$2
 cal $0,60143 ; a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
-mul $0,131069
 mov $1,$0
-div $1,131069

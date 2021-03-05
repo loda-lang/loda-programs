@@ -8,7 +8,7 @@ mov $0,3
 sub $1,1
 gcd $1,5
 mul $1,2
-lpb $0,1
+lpb $0
   sub $0,2
   mul $1,9
 lpe

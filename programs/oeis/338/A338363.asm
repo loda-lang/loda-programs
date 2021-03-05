@@ -4,7 +4,7 @@
 mov $6,$0
 mov $8,$0
 add $8,1
-lpb $8,1
+lpb $8
   clr $0,6
   mov $0,$6
   sub $8,1
@@ -18,7 +18,7 @@ lpb $8,1
     mov $2,$0
     div $5,10
   lpe
-  lpb $1,1
+  lpb $1
     div $1,3
     bin $4,$2
   lpe

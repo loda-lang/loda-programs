@@ -7,6 +7,6 @@ cal $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if 
 pow $0,2
 mul $0,$2
 mov $1,$0
-lpb $1,1
+lpb $1
   sub $1,3
 lpe

@@ -4,7 +4,5 @@
 sub $0,1
 cal $0,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
 mod $0,4
-add $0,9
 mov $1,$0
-sub $1,9
 div $1,2

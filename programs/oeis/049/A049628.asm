@@ -34,10 +34,7 @@ lpb $18
         sub $0,$8
         trn $0,1
         cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-        add $0,1
-        mov $1,$0
-        sub $1,1
-        add $7,$1
+        add $7,$0
       lpe
       mov $1,$7
       sub $1,1

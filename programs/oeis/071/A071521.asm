@@ -8,16 +8,13 @@ lpb $4
   mov $0,$5
   sub $4,1
   sub $0,$4
-  mov $3,1679616
-  mov $6,$0
-  add $6,1
-  mod $3,$6
-  mov $0,$3
-  mod $6,5
-  trn $6,8
-  cmp $0,$6
-  add $0,7
   mov $2,$0
-  sub $2,7
-  add $1,$2
+  add $2,1
+  mov $3,1679616
+  mod $3,$2
+  mov $0,$3
+  mod $2,5
+  trn $2,8
+  cmp $0,$2
+  add $1,$0
 lpe

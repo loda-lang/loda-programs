@@ -3,16 +3,16 @@
 
 mov $10,$0
 mov $12,$0
-lpb $12,1
+lpb $12
   mov $0,$10
   sub $12,1
   sub $0,$12
   add $9,1
-  lpb $9,1
+  lpb $9
     mov $1,3
     mov $3,1
     sub $9,1
-    lpb $0,1
+    lpb $0
       mov $2,$1
       mov $1,2
       gcd $1,$0

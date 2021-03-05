@@ -3,19 +3,19 @@
 
 mov $3,2
 mov $5,$0
-lpb $3,1
+lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
   cal $0,327326 ; a(n) = A006218(n) - A005187(n).
   mov $2,$3
   mov $4,$0
-  lpb $2,1
+  lpb $2
     mov $1,$4
     sub $2,1
   lpe
 lpe
-lpb $5,1
+lpb $5
   sub $1,$4
   mov $5,0
 lpe

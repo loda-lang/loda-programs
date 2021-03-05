@@ -4,7 +4,7 @@
 mul $0,2
 add $0,1
 pow $0,3
-lpb $0,1
+lpb $0
   add $2,29
   sub $2,$0
   add $5,4

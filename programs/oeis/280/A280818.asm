@@ -5,7 +5,7 @@ mul $0,2
 sub $0,2
 mul $0,2
 add $0,4
-cal $0,117818
+cal $0,117818 ; a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
 add $0,2
 mov $1,$0
 sub $1,3

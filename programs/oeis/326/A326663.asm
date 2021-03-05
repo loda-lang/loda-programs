@@ -4,7 +4,7 @@
 mov $3,$0
 add $0,1
 gcd $0,19683
-lpb $0,1
+lpb $0
   sub $0,8
 lpe
 trn $0,2

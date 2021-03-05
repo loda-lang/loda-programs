@@ -4,8 +4,6 @@
 sub $0,1
 cal $0,293014 ; a(n) = a(n-1) + a(n-2) - a(n-3) + a(n-4) for n > 4, where a(n)=0 for n < 4 and a(4) = 1.
 div $0,2
-add $0,38
 mov $1,$0
-sub $1,38
 mul $1,6
 add $1,1

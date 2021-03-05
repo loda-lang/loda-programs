@@ -5,6 +5,4 @@ mov $2,$0
 mul $0,2
 add $0,$2
 cal $0,287451 ; Start with 0 and repeatedly substitute 0->012, 1->201, 2->120.
-mul $0,4
 mov $1,$0
-div $1,4

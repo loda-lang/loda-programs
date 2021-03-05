@@ -3,7 +3,5 @@
 
 add $0,2
 cal $0,113979 ; Number of compositions of n with an even number of 1's.
-add $0,12
 mov $1,$0
-sub $1,12
 mul $1,2

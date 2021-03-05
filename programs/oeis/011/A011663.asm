@@ -6,6 +6,4 @@ add $0,1
 add $2,2
 add $0,$2
 cal $0,11751 ; Expansion of (1 + x^4)/(1 + x + x^3 + x^4 + x^5) mod 2.
-add $0,4
 mov $1,$0
-sub $1,4

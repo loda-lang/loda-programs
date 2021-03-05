@@ -3,6 +3,4 @@
 
 pow $0,3
 cal $0,316868 ; Number of times 7 appears in decimal expansion of n.
-add $0,1
 mov $1,$0
-sub $1,1

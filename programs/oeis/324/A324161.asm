@@ -3,14 +3,14 @@
 
 mov $12,$0
 add $12,1
-lpb $12,1
+lpb $12
   clr $0,10
   sub $12,1
   sub $0,$12
   mov $4,1
   mov $5,1
   add $6,4
-  lpb $4,1
+  lpb $4
     cal $0,98736 ; a(n) = product of n and all its digits.
     add $4,$0
     sub $4,$5

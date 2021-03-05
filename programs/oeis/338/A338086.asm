@@ -3,18 +3,18 @@
 
 mov $18,$0
 add $18,1
-lpb $18,1
+lpb $18
   clr $0,16
   sub $18,1
   sub $0,$18
   pow $0,2
-  lpb $0,1
+  lpb $0
     mov $7,$0
     gcd $7,19683
     mul $7,3
     add $7,2
     add $3,$7
-    lpb $0,1
+    lpb $0
       div $0,5
     lpe
     sub $3,1

@@ -19,7 +19,7 @@ trn $0,$5
 add $0,$4
 add $1,10
 mov $3,5
-lpb $0,1
+lpb $0
   sub $0,1
   trn $0,4
   add $1,$4

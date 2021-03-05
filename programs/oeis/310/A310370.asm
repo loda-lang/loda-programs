@@ -4,16 +4,16 @@
 mov $7,$0
 mov $9,$0
 add $9,1
-lpb $9,1
+lpb $9
   clr $0,7
   mov $0,$7
   sub $9,1
   sub $0,$9
   add $3,$0
-  lpb $0,1
+  lpb $0
     mov $1,$0
     bin $0,2
-    lpb $1,1
+    lpb $1
       add $0,1
       gcd $0,4
       mov $1,2

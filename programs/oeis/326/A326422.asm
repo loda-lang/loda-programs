@@ -9,7 +9,7 @@ add $2,$4
 add $2,8
 mov $3,$2
 sub $3,4
-lpb $0,1
+lpb $0
   mov $1,$0
   trn $0,2
   add $3,6

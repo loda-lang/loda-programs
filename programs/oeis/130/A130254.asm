@@ -20,8 +20,5 @@ lpb $3
   lpe
   add $7,1
   log $7,$0
-  add $7,1
-  mov $2,$7
-  sub $2,1
-  add $1,$2
+  add $1,$7
 lpe

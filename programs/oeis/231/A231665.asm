@@ -4,16 +4,13 @@
 mov $2,$0
 add $2,1
 lpb $2
-  mov $0,$5
+  mov $0,$3
   sub $2,1
   sub $0,$2
   cal $0,53737 ; Sum of digits of (n written in base 4).
   mul $0,2
   pow $0,2
-  mov $3,$0
-  add $3,28
-  mov $4,$3
-  sub $4,28
+  mov $4,$0
   div $4,4
   add $1,$4
 lpe

@@ -3,17 +3,14 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
   trn $0,1
   cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  add $0,1
-  mov $3,$0
-  sub $3,1
-  add $1,$3
+  add $1,$0
 lpe
 sub $1,1
 mul $1,4
