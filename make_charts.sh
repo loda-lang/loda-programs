@@ -7,6 +7,21 @@ for cmd in cat date git gnuplot grep seq; do
   fi
 done
 
+echo "Generating operation type distribution chart"
+cat << EOF > operation_type_counts.gp
+set terminal pngcairo font "arial,9" size 600,300
+set output 'stats/operation_type_counts.png'
+set datafile separator ","
+set boxwidth 0.5
+set style fill solid
+unset key
+set title "LODA Operation Type Distribution"
+plot "stats/operation_type_counts.csv" using 2:xtic(1) with boxes linecolor rgb "#0000FF"
+EOF
+
+gnuplot operation_type_counts.gp
+rm operation_type_counts.gp
+
 echo "Generating length distribution chart"
 cat << EOF > lengths.gp
 set terminal pngcairo font "arial,9" size 600,300
