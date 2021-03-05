@@ -3,7 +3,7 @@
 
 mov $44,$0
 mov $46,2
-lpb $46,1
+lpb $46
   clr $0,44
   mov $0,$44
   sub $46,1
@@ -11,17 +11,17 @@ lpb $46,1
   sub $0,1
   mov $41,$0
   mov $43,$0
-  lpb $43,1
+  lpb $43
     clr $0,41
     mov $0,$41
     sub $43,1
     sub $0,$43
-    lpb $0,1
+    lpb $0
       mov $1,511879
       cal $0,60681 ; Largest difference between consecutive divisors of n (ordered by size).
       mul $0,2
       add $2,511879
-      lpb $1,1
+      lpb $1
         div $0,2
         mov $1,1
       lpe
@@ -32,12 +32,12 @@ lpb $46,1
   lpe
   mov $1,$42
   mov $47,$46
-  lpb $47,1
+  lpb $47
     mov $45,$1
     sub $47,1
   lpe
 lpe
-lpb $44,1
+lpb $44
   mov $44,0
   sub $45,$1
 lpe

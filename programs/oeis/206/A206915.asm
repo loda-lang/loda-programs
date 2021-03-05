@@ -3,15 +3,12 @@
 
 mov $3,$0
 add $3,1
-mov $5,$0
+mov $4,$0
 lpb $3
-  mov $0,$5
+  mov $0,$4
   sub $3,1
   sub $0,$3
   cal $0,55945 ; n - reversal of base 2 digits of n (and then the result is written in base 10).
   cmp $0,$2
-  add $0,4
-  mov $4,$0
-  sub $4,4
-  add $1,$4
+  add $1,$0
 lpe

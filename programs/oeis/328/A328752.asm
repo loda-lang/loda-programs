@@ -10,7 +10,7 @@ mov $4,$0
 mov $0,$1
 mov $5,2
 mov $6,6
-lpb $0,1
+lpb $0
   sub $0,$6
   add $2,1
   div $0,$2

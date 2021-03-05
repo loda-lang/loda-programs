@@ -8,7 +8,5 @@ mov $0,$3
 mul $0,5
 bin $0,2
 log $0,8
-add $0,3
 mov $1,$0
-sub $1,3
 add $1,$2

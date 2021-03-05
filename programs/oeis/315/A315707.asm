@@ -14,7 +14,7 @@ mov $0,$4
 mul $0,2
 add $0,2
 add $1,$3
-lpb $0,1
+lpb $0
   trn $0,5
   add $1,1
 lpe

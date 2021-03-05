@@ -4,7 +4,7 @@
 mov $1,$0
 cal $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
 mov $2,17
-lpb $2,1
+lpb $2
   sub $0,1
   mul $1,$2
   mov $2,$1

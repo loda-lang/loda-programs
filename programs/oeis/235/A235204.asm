@@ -4,7 +4,5 @@
 cal $0,87058 ; Smallest square number greater than 2*n^2.
 sub $0,3
 div $0,2
-mul $0,2
 mov $1,$0
-div $1,2
 add $1,2

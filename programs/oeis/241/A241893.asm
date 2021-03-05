@@ -3,7 +3,5 @@
 
 cal $0,321579 ; Number of n-tuples of 4 elements excluding reverse duplicates and those consisting of repetitions of the same element only.
 div $0,18
-add $0,3
 mov $1,$0
-sub $1,3
 mul $1,4

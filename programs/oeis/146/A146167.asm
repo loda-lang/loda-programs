@@ -16,10 +16,7 @@ lpb $20
     add $0,1
     bin $5,$0
   lpe
-  add $5,2
-  mov $1,$5
-  sub $1,2
-  add $19,$1
+  add $19,$5
 lpe
 mov $1,$19
 sub $1,1

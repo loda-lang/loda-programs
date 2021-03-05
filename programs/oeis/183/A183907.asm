@@ -31,10 +31,7 @@ lpb $10
       sub $0,1
       add $1,1
     lpe
-    add $0,6
-    mov $1,$0
-    sub $1,6
-    add $6,$1
+    add $6,$0
   lpe
   add $9,$6
 lpe

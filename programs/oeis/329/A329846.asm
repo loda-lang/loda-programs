@@ -11,7 +11,7 @@ sub $2,5
 gcd $3,$2
 mov $5,7
 mov $8,$0
-lpb $0,1
+lpb $0
   mov $0,$7
   add $3,1
   mul $3,5

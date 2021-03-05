@@ -8,7 +8,7 @@ mov $3,$2
 mul $2,2
 mul $0,$2
 mov $4,$2
-lpb $0,1
+lpb $0
   pow $1,2
   sub $1,2
   mov $3,5

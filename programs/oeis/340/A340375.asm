@@ -3,7 +3,7 @@
 
 cal $0,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
 mov $1,2
-lpb $0,1
+lpb $0
   sub $0,4
   div $1,6
 lpe

@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$0
-lpb $3,1
+lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
@@ -13,8 +13,5 @@ lpb $3,1
   mov $0,$4
   add $0,1
   cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,3
-  mov $4,$0
-  sub $4,3
-  add $1,$4
+  add $1,$0
 lpe

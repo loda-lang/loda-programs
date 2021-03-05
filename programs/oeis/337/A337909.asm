@@ -13,7 +13,7 @@ mov $5,$0
 mov $0,$2
 mov $1,3
 add $4,$5
-lpb $0,1
+lpb $0
   div $0,2
   mul $1,2
 lpe

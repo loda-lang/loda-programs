@@ -17,8 +17,5 @@ lpb $3
   add $5,1
   add $5,$2
   pow $0,$5
-  add $0,1
-  mov $6,$0
-  sub $6,1
-  add $1,$6
+  add $1,$0
 lpe

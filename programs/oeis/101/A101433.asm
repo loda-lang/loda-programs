@@ -15,10 +15,7 @@ lpb $32
     sub $29,1
     sub $0,$29
     cal $0,164349 ; The limit of the string "0, 1" under the operation 'repeat string twice and remove last symbol'.
-    add $0,1
-    mov $1,$0
-    sub $1,1
-    add $28,$1
+    add $28,$0
   lpe
   add $31,$28
 lpe

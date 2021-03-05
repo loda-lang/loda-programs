@@ -7,7 +7,7 @@ mov $2,$1
 sub $2,1
 mov $0,$2
 mov $3,$1
-lpb $0,1
+lpb $0
   trn $0,4
   add $0,1
   trn $3,2

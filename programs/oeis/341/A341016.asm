@@ -3,7 +3,7 @@
 
 mov $49,$0
 add $49,1
-lpb $49,1
+lpb $49
   clr $0,47
   sub $49,1
   sub $0,$49
@@ -11,12 +11,12 @@ lpb $49,1
   mov $6,$0
   sub $6,2
   mov $7,$0
-  lpb $6,1
+  lpb $6
     mov $1,1
     bin $6,$7
     sub $6,1
     mul $6,2
-    lpb $0,1
+    lpb $0
       mov $0,45
       sub $3,2
       mov $5,2

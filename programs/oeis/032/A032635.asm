@@ -6,6 +6,4 @@ mov $2,32
 mul $2,$0
 mov $0,$2
 div $0,87
-mul $0,2
 mov $1,$0
-div $1,2

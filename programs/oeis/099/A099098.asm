@@ -4,6 +4,4 @@
 mul $0,2
 add $0,1
 cal $0,5251 ; a(0) = 0, a(1) = a(2) = a(3) = 1; thereafter, a(n) = a(n-1) + a(n-2) + a(n-4).
-add $0,1
 mov $1,$0
-sub $1,1

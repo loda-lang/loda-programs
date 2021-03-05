@@ -4,20 +4,20 @@
 mov $2,$0
 add $2,1
 mov $3,$0
-lpb $2,1
+lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
   mov $6,2
   mov $10,$0
-  lpb $6,1
+  lpb $6
     mov $0,$10
     sub $6,1
     add $0,$6
     trn $0,4
     mov $9,$0
     mul $9,2
-    lpb $0,1
+    lpb $0
       mov $0,2
       mov $9,2
     lpe
@@ -26,12 +26,12 @@ lpb $2,1
     add $4,$9
     mov $5,$6
     mov $8,$4
-    lpb $5,1
+    lpb $5
       sub $5,1
       mov $7,$8
     lpe
   lpe
-  lpb $10,1
+  lpb $10
     trn $7,$8
     mov $10,0
   lpe

@@ -3,8 +3,6 @@
 
 sub $0,1
 cal $0,272718 ; Partial sums of gcd-sum sequence A018804.
-add $0,1
 mov $1,$0
-sub $1,1
 mul $1,32
 add $1,1

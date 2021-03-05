@@ -6,6 +6,4 @@ add $2,2
 mov $0,$2
 log $2,2
 mod $0,$2
-mul $0,3
 mov $1,$0
-div $1,3

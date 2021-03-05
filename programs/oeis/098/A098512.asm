@@ -5,6 +5,4 @@ mov $1,$0
 add $1,1
 cal $0,195686 ; a(n) = C(2*n,n) / gcd(n,C(2*n,n)).
 div $0,$1
-add $0,16
 mov $1,$0
-sub $1,16

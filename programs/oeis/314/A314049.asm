@@ -6,7 +6,7 @@ mov $1,$0
 mul $0,4
 trn $0,1
 add $0,1
-lpb $0,1
+lpb $0
   trn $0,4
   mov $2,$0
   trn $0,1

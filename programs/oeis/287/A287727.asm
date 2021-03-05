@@ -6,7 +6,5 @@ add $0,3
 cal $0,195121 ; a(n) = 2*n - floor(n/r), where r = (1 + sqrt(5))/2 (the golden ratio).
 add $0,4
 div $0,5
-add $0,1
 mov $1,$0
-sub $1,1
 add $1,$2

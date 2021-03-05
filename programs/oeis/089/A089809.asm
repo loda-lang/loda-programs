@@ -5,6 +5,4 @@ mul $0,2
 cal $0,26274 ; Greatest k such that s(k) = n, where s = A026272.
 sub $0,1
 mod $0,2
-add $0,12
 mov $1,$0
-sub $1,12

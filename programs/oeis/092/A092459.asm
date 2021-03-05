@@ -19,7 +19,5 @@ lpb $2
   log $0,3
   sub $2,1
 lpe
-add $0,2
 mov $1,$0
-sub $1,2
 add $1,$4

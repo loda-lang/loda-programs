@@ -3,7 +3,7 @@
 
 mov $1,5
 mov $2,1
-lpb $0,1
+lpb $0
   mov $3,$0
   cal $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $0,1

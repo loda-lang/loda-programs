@@ -3,7 +3,7 @@
 
 mov $8,$0
 mov $10,2
-lpb $10,1
+lpb $10
   clr $0,8
   mov $0,$8
   sub $10,1
@@ -11,12 +11,12 @@ lpb $10,1
   sub $0,1
   mov $5,$0
   mov $7,$0
-  lpb $7,1
+  lpb $7
     clr $0,5
     mov $0,$5
     sub $7,1
     sub $0,$7
-    lpb $0,1
+    lpb $0
       mov $1,$0
       add $1,$0
       cal $1,81753 ; a(n) = floor(n/12) if n==2 (mod 12); a(n)=floor(n/12)+1 otherwise.
@@ -27,12 +27,12 @@ lpb $10,1
   lpe
   mov $1,$6
   mov $11,$10
-  lpb $11,1
+  lpb $11
     mov $9,$1
     sub $11,1
   lpe
 lpe
-lpb $8,1
+lpb $8
   mov $8,0
   sub $9,$1
 lpe

@@ -34,9 +34,7 @@ lpb $14
     add $3,$6
     mov $2,$3
     trn $2,1
-    mul $2,2
     mov $1,$2
-    div $1,2
     add $1,1
     trn $7,2
     add $7,1

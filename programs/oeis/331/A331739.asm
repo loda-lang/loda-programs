@@ -3,9 +3,7 @@
 
 add $0,1
 lpb $0
-  add $1,2
   add $1,$0
   dif $0,2
-  sub $1,2
 lpe
 div $1,2

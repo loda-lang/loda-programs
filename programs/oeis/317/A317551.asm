@@ -3,10 +3,8 @@
 
 mov $2,$0
 div $0,3
-lpb $0,1
+lpb $0
   mov $0,6
 lpe
-add $0,6
 mov $1,$0
-sub $1,6
 add $1,$2

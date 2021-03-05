@@ -30,9 +30,6 @@ lpb $9
   sub $5,$0
   div $4,$5
   add $0,$4
-  add $0,1
-  mov $1,$0
-  sub $1,1
-  add $8,$1
+  add $8,$0
 lpe
 mov $1,$8

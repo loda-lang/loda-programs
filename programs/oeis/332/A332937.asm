@@ -4,6 +4,4 @@
 mov $2,$0
 cal $0,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
 gcd $0,$2
-add $0,1
 mov $1,$0
-sub $1,1

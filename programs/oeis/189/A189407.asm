@@ -20,9 +20,7 @@ lpb $2
     mul $0,70
     sub $0,70
     div $0,442
-    add $0,7
     mov $3,$0
-    sub $3,7
     mov $8,$7
     lpb $8
       mov $6,$3

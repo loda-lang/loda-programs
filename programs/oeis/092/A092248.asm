@@ -3,6 +3,4 @@
 
 cal $0,76479 ; a(n) = mu(rad(n)), where mu is the Moebius-function (A008683) and rad is the radical or squarefree kernel (A007947).
 bin $0,2
-mul $0,48
 mov $1,$0
-div $1,48

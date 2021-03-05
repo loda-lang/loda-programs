@@ -11,7 +11,7 @@ div $2,$0
 sub $2,1
 mul $2,2
 add $1,$2
-lpb $1,1
+lpb $1
   mod $1,8
 lpe
 sub $1,2

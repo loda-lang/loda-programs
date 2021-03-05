@@ -8,8 +8,5 @@ lpb $2
   sub $2,1
   sub $0,$2
   cal $0,164349 ; The limit of the string "0, 1" under the operation 'repeat string twice and remove last symbol'.
-  add $0,1
-  mov $4,$0
-  sub $4,1
-  add $1,$4
+  add $1,$0
 lpe

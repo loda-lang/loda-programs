@@ -5,9 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   cal $2,212598 ; a(n) = n - m!, where m is the largest number such that m! <= n.
-  add $2,1
   mov $0,$2
-  sub $0,1
   add $1,2
 lpe
 div $1,2

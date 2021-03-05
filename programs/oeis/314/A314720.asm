@@ -4,18 +4,18 @@
 mov $5,$0
 mov $7,$0
 add $7,1
-lpb $7,1
+lpb $7
   clr $0,5
   mov $0,$5
   sub $7,1
   sub $0,$7
-  lpb $0,1
+  lpb $0
     mov $1,$0
     sub $1,$0
     add $1,1
     add $1,$0
     sub $3,1
-    lpb $3,1
+    lpb $3
       sub $0,1
       mod $3,8
     lpe

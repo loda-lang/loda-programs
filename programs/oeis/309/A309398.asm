@@ -4,8 +4,8 @@
 mov $2,$0
 bin $2,2
 add $2,1
-lpb $0,1
-  lpb $2,1
+lpb $0
+  lpb $2
     div $0,7
     add $1,3
     div $2,9

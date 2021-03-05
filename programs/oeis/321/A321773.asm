@@ -6,7 +6,7 @@ add $0,2
 div $0,2
 mov $3,$2
 gcd $3,3
-lpb $0,1
+lpb $0
   mul $0,3
   sub $0,$3
   mov $2,0

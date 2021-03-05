@@ -10,7 +10,7 @@ trn $1,$5
 mov $3,$2
 mul $3,2
 mul $1,$3
-lpb $1,1
+lpb $1
   mov $1,$4
   add $1,17
   fac $1

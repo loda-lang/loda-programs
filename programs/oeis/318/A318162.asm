@@ -12,7 +12,7 @@ add $3,$2
 bin $3,$2
 mul $1,$3
 mul $1,2
-lpb $0,1
+lpb $0
   mov $0,0
   add $1,$3
 lpe

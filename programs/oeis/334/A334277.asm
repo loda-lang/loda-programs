@@ -4,8 +4,8 @@
 mov $1,8
 mov $2,$0
 mov $3,8
-lpb $2,1
-  lpb $3,1
+lpb $2
+  lpb $3
     mov $0,4
     sub $3,$3
   lpe

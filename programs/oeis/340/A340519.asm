@@ -5,7 +5,7 @@ mov $2,$0
 mov $3,$0
 add $0,2
 cal $2,204904 ; p(n)-q(n), where (p(n), q(n)) is the least pair of odd primes for which n divides p(n)-q(n).
-lpb $0,1
+lpb $0
   mul $2,2
   sub $0,$2
   trn $0,5

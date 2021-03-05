@@ -10,6 +10,4 @@ lpe
 mov $3,$0
 cmp $3,0
 add $0,$3
-add $0,18
 mov $1,$0
-sub $1,18

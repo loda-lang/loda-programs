@@ -4,6 +4,4 @@
 mov $1,$0
 cal $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
 bin $0,$1
-add $0,2
 mov $1,$0
-sub $1,2

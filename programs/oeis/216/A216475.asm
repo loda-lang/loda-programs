@@ -9,7 +9,5 @@ add $3,1
 gcd $3,2
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,$3
-mul $0,2
 mov $1,$0
-div $1,2
 add $1,1
