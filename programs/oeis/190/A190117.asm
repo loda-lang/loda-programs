@@ -8,8 +8,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   cal $0,68720 ; Arithmetic derivative of squares: a(n) = 2*n*A003415(n).
-  mul $0,12
   mov $4,$0
-  div $4,24
+  div $4,2
   add $1,$4
 lpe
