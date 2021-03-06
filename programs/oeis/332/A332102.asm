@@ -11,7 +11,7 @@ add $3,6
 mul $5,44
 div $5,30
 add $5,$3
-lpb $0,1
+lpb $0
   mov $0,1
   mov $1,$5
   mov $3,13

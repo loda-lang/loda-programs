@@ -8,13 +8,13 @@ trn $3,1
 add $3,7
 add $1,$3
 mov $0,$1
-lpb $0,1
+lpb $0
   sub $0,6
   trn $0,5
   sub $1,2
 lpe
 add $1,1
-lpb $2,1
+lpb $2
   add $1,4
   sub $2,1
 lpe

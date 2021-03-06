@@ -6,7 +6,7 @@ trn $0,1
 mul $0,2
 mov $2,$0
 mov $3,1
-lpb $2,1
+lpb $2
   add $0,$3
   mod $2,7
 lpe

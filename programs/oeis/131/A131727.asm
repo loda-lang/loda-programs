@@ -4,6 +4,4 @@
 add $0,1
 cal $0,69306 ; Number of 2 X n binary arrays with a path of adjacent 1's from upper left corner to anywhere in right hand column.
 div $0,10
-add $0,1
 mov $1,$0
-sub $1,1

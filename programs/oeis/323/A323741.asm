@@ -3,15 +3,5 @@
 
 mul $0,2
 add $0,1
-lpb $0
-  mov $2,$0
-  cal $2,56927 ; Difference between n^2 and largest prime less than n^2.
-  mov $0,0
-  mov $1,4
-  mul $2,2
-lpe
-add $1,$2
-sub $1,8
-div $1,4
-mul $1,2
-add $1,2
+cal $0,56927 ; Difference between n^2 and largest prime less than n^2.
+mov $1,$0

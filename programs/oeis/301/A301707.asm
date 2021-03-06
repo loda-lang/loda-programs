@@ -6,6 +6,4 @@ cal $0,34387 ; Sum of primes <= n.
 add $1,1
 add $2,$1
 mul $0,$2
-mul $0,15
 mov $1,$0
-div $1,15

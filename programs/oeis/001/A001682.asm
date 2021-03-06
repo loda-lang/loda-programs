@@ -10,14 +10,14 @@ lpb $3
   lpb $0
     sub $0,1
     mov $6,$0
-    cal $6,151910
+    cal $6,151910 ; First differences of A001682.
     mov $2,$0
     mul $6,2
     add $2,$6
     sub $0,$2
     mov $5,$0
     mul $5,2
-    cal $0,94012
+    cal $0,94012 ; Expansion of x(1-6x+10x^2)/(1-4x+2x^2)^2.
     mov $6,0
     sub $6,$5
   lpe

@@ -3,7 +3,6 @@
 
 mov $1,$0
 mov $2,$0
-gcd $2,3
-div $0,$2
-add $1,$0
+dif $2,3
+add $1,$2
 div $1,2

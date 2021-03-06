@@ -10,8 +10,5 @@ lpb $2
   cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,1
   cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,3
-  mov $4,$0
-  sub $4,3
-  add $1,$4
+  add $1,$0
 lpe

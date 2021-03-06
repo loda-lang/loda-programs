@@ -14,10 +14,7 @@ lpb $9
   mul $6,$0
   mul $6,2
   div $6,37
-  mul $6,2
-  mov $5,$6
-  div $5,2
-  mov $1,$5
+  mov $1,$6
   mov $10,$9
   lpb $10
     mov $8,$1

@@ -15,10 +15,7 @@ lpb $10
     sub $7,1
     sub $0,$7
     cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-    add $0,1
-    mov $1,$0
-    sub $1,1
-    add $6,$1
+    add $6,$0
   lpe
   add $9,$6
 lpe

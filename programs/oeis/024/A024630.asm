@@ -5,9 +5,7 @@ mov $2,$0
 sub $0,2
 div $0,2
 add $0,1
-cal $0,228071
+cal $0,228071 ; Write n in binary and interpret as a decimal number; a(n) is this quantity minus n.
 mul $0,2
-add $0,1
 mov $1,$0
-sub $1,1
 add $1,$2

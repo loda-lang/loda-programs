@@ -25,10 +25,7 @@ lpb $12
       trn $0,$3
       add $0,1
     lpe
-    add $3,4
-    mov $1,$3
-    sub $1,4
-    add $8,$1
+    add $8,$3
   lpe
   add $11,$8
 lpe

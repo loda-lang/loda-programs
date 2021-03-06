@@ -10,7 +10,7 @@ add $2,1
 pow $2,2
 add $2,1
 bin $2,2
-lpb $0,1
+lpb $0
   sub $0,2
   mul $0,$2
   add $1,1

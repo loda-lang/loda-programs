@@ -17,6 +17,4 @@ lpb $2
     sub $5,$4
   lpe
 lpe
-mul $5,2
 mov $1,$5
-div $1,2

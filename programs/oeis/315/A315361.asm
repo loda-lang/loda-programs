@@ -4,25 +4,23 @@
 mov $4,$0
 mov $5,$0
 mov $7,2
-lpb $7,1
+lpb $7
   mov $0,$5
   sub $7,1
   add $0,$7
   sub $0,1
   cal $0,298790 ; Partial sums of A298788.
   div $0,2
-  add $0,3
   mov $1,$0
-  sub $1,3
   mul $1,2
   add $1,1
   mov $3,$7
-  lpb $3,1
+  lpb $3
     sub $3,1
     mov $6,$1
   lpe
 lpe
-lpb $5,1
+lpb $5
   mov $5,0
   sub $6,$1
 lpe

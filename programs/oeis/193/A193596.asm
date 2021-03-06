@@ -4,7 +4,5 @@
 cal $0,206735 ; Triangle T(n,k), read by rows, given by (0, 2, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (1, 0, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
 sub $0,1
 div $0,2
-mul $0,5
 mov $1,$0
-div $1,5
 add $1,1

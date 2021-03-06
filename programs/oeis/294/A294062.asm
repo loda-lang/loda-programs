@@ -22,9 +22,7 @@ lpb $32
     cmp $26,0
     add $1,$26
     div $2,$1
-    add $2,1
     mov $1,$2
-    sub $1,1
     mul $1,2
     add $28,$1
   lpe

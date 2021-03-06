@@ -3,6 +3,4 @@
 
 cal $0,185914 ; Array: T(n,k)=k-n+1 for k>=n; T(n,k)=0 for k<n; by antidiagonals.
 bin $0,2
-add $0,3
 mov $1,$0
-sub $1,3

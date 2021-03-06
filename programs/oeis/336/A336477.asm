@@ -3,7 +3,7 @@
 
 mov $1,1
 mov $2,-2
-lpb $2,1
+lpb $2
   cal $0,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
   sub $2,$2
   add $2,16

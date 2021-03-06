@@ -5,6 +5,4 @@ mov $1,$0
 cal $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mul $0,$1
-add $0,9
 mov $1,$0
-sub $1,9

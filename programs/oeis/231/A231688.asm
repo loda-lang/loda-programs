@@ -18,10 +18,6 @@ lpb $9
   lpe
   sub $4,$3
   pow $4,3
-  mov $6,$4
-  mul $6,3
-  mov $1,$6
-  div $1,3
-  add $8,$1
+  add $8,$4
 lpe
 mov $1,$8

@@ -4,6 +4,4 @@
 add $0,1
 cal $0,214080 ; a(n) = (floor(sqrt(n)))!
 pow $0,2
-add $0,2
 mov $1,$0
-sub $1,2

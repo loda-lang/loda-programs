@@ -6,6 +6,4 @@ mov $2,6
 div $2,$0
 add $0,4
 sub $0,$2
-add $0,4
 mov $1,$0
-sub $1,4

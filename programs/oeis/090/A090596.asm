@@ -4,8 +4,4 @@
 cal $0,56309 ; Number of reversible strings with n beads using exactly two different colors.
 mov $1,$0
 div $1,3
-add $1,3
-mul $1,2
-sub $1,6
-div $1,2
 add $1,1

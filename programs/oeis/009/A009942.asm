@@ -9,9 +9,7 @@ add $6,$0
 mod $2,$6
 add $2,$6
 mod $2,6
-add $2,5
 mov $1,$2
-sub $1,5
 mov $4,$5
 mul $4,$5
 mov $3,$4

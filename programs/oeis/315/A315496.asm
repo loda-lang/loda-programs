@@ -3,11 +3,11 @@
 
 mov $9,$0
 add $9,1
-lpb $9,1
+lpb $9
   clr $0,7
   sub $9,1
   sub $0,$9
-  lpb $0,1
+  lpb $0
     div $0,2
     mul $0,2
     pow $0,2

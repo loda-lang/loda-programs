@@ -3,12 +3,9 @@
 
 mov $1,$0
 add $0,1
-add $1,2
-lpb $0,16
-  mov $1,$0
-  add $2,$0
+lpb $0
   dif $0,2
+  add $1,$0
 lpe
-mov $1,$2
 div $1,2
 add $1,1

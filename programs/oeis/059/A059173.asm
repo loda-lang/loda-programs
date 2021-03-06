@@ -29,10 +29,7 @@ lpb $14
       pow $8,2
     lpe
     add $6,$8
-    add $6,5
-    mov $1,$6
-    sub $1,5
-    add $10,$1
+    add $10,$6
   lpe
   add $13,$10
 lpe

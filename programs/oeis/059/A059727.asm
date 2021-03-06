@@ -26,9 +26,7 @@ lpb $15
       mov $2,$5
     lpe
     bin $5,2
-    mul $5,2
     mov $1,$5
-    div $1,2
     mov $12,$11
     lpb $12
       mov $10,$1

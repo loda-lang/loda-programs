@@ -4,6 +4,4 @@
 add $0,2
 cal $0,8797 ; Molien series for group [2,4]+ = 224.
 div $0,2
-add $0,1
 mov $1,$0
-sub $1,1

@@ -11,9 +11,7 @@ lpb $7
   cal $0,183063 ; Number of even divisors of n.
   cal $0,168328 ; a(n) = 6 * floor( n/2 ).
   add $3,$0
-  add $3,11
   mov $1,$3
-  sub $1,11
   div $1,6
   add $6,$1
 lpe

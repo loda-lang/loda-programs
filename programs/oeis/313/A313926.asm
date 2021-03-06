@@ -11,13 +11,13 @@ trn $5,$0
 sub $2,$5
 add $2,$4
 sub $2,1
-lpb $0,1
+lpb $0
   sub $0,1
   trn $2,8
   trn $1,$2
   add $1,4
 lpe
-lpb $3,1
+lpb $3
   add $1,2
   sub $3,1
 lpe

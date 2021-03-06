@@ -5,3 +5,6 @@ pow $0,4
 add $0,3
 div $0,4
 mov $1,$0
+pow $1,4
+add $1,3
+div $1,4

@@ -11,14 +11,14 @@ mul $0,2
 sub $0,1
 mov $1,12
 mov $3,6
-lpb $0,1
+lpb $0
   add $3,6
   sub $0,$3
   trn $0,1
   add $1,1
   mov $3,4
 lpe
-lpb $2,1
+lpb $2
   add $1,4
   sub $2,1
 lpe

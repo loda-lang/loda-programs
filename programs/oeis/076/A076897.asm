@@ -13,9 +13,6 @@ lpb $7
   add $2,$0
   mov $4,$2
   mod $4,2
-  add $4,19
-  mov $1,$4
-  sub $1,19
-  add $6,$1
+  add $6,$4
 lpe
 mov $1,$6

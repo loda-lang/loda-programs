@@ -11,12 +11,10 @@ lpb $2,$0
   sub $2,1
   mov $6,$4
 lpe
-lpb $6,1
+lpb $6
   mov $5,5
   sub $5,$2
   mod $6,5
 lpe
-add $5,6
 mov $1,$5
-sub $1,6
 div $1,2

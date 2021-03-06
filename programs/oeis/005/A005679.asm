@@ -10,7 +10,5 @@ mov $0,$3
 mov $2,11
 div $2,$3
 mod $0,$2
-mul $0,2
 mov $1,$0
-div $1,2
 add $1,1

@@ -6,7 +6,7 @@ sub $1,$0
 mov $3,1708
 mul $3,$0
 sub $3,$0
-lpb $0,1
+lpb $0
   mov $0,$2
   add $3,$1
   div $3,729

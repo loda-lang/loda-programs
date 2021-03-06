@@ -5,6 +5,4 @@ mov $1,$0
 cal $0,26491 ; a(n) = least k > a(n-1) such that t(k) = t(n), for n >= 1, where t = A001285 (Thue-Morse sequence).
 div $1,2
 add $0,$1
-add $0,2
 mov $1,$0
-sub $1,2

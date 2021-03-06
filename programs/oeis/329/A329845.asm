@@ -15,7 +15,7 @@ lpb $5,2
   add $0,$3
   sub $6,1
 lpe
-lpb $2,1
+lpb $2
   add $0,19
   div $2,3810
 lpe

@@ -3,7 +3,7 @@
 
 mul $0,4
 sub $0,1
-cal $0,58065
+cal $0,58065 ; Complement of A057843.
 mov $1,$0
 mov $0,2
 sub $1,3
