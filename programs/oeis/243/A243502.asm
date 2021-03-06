@@ -4,6 +4,4 @@
 mul $0,2
 cal $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
 mov $1,$0
-sub $1,1
 mul $1,2
-add $1,2

@@ -3,8 +3,4 @@
 
 div $0,2
 cal $0,29000 ; Expansion of 1/((1-x)(1-x^2)(1-x^3)(1-x^6)).
-mul $0,6
 mov $1,$0
-sub $1,6
-div $1,6
-add $1,1
