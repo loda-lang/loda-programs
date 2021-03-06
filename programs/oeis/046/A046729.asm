@@ -8,7 +8,7 @@ lpb $9
   mov $0,$7
   sub $9,1
   sub $0,$9
-  fac $1
+  cal $1,142
   sub $1,1
   mov $2,5
   add $3,55

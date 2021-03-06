@@ -8,7 +8,7 @@ lpb $0
   add $2,$0
   add $0,1
 lpe
-fac $1
+cal $1,142
 mul $2,2
 mul $1,$2
 div $1,2

@@ -13,7 +13,7 @@ mul $1,$3
 lpb $1
   mov $1,$4
   add $1,17
-  fac $1
+  cal $1,142
 lpe
 mul $1,2
 div $1,8

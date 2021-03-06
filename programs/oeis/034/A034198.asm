@@ -19,7 +19,7 @@ lpb $14
     gcd $4,$0
     mov $6,$0
     cmp $0,7
-    fac $0
+    cal $0,142
     mov $1,1
     add $6,$4
     add $6,8

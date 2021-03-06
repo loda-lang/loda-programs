@@ -30,7 +30,7 @@ lpb $18
       add $6,$0
       mul $0,2
       mov $1,$3
-      fac $1
+      cal $1,142
       add $1,$0
       mov $4,$6
       mul $6,$1

@@ -5,7 +5,7 @@ mov $3,$0
 lpb $0
   div $0,140
   div $1,6
-  fac $2
+  cal $2,142
   add $2,$0
   add $1,$2
 lpe

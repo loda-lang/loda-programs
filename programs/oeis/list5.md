@@ -132,6 +132,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253811](http://oeis.org/A253811) ([L10 program](253/A253811.asm)): Part of the y solutions of the Pell equation x^2 - 2*y^2 = +7.
 * [A253885](http://oeis.org/A253885) ([L03 program](253/A253885.asm)): Permutation of even numbers: a(n) = A003961(n+1) - 1.
 * [A253887](http://oeis.org/A253887) ([L09 program](253/A253887.asm)): Row index of n in A191450: a(3n) = 2n, a(3n+1) = 2n+1, a(3n+2) = a(n+1).
+* [A253893](http://oeis.org/A253893) ([L20 program](253/A253893.asm)): a(1) = 0, for n > 1, a(n) = 1 + a(A253889(n)).
+* [A253894](http://oeis.org/A253894) ([L21 program](253/A253894.asm)): a(1) = 1, for n > 1, a(n) = 1 + a(A253889(n)).
 * [A253903](http://oeis.org/A253903) ([L10 program](253/A253903.asm)): The characteristic function of square pyramidal numbers.
 * [A253909](http://oeis.org/A253909) ([L03 program](253/A253909.asm)): 1 together with the positive squares.
 * [A253942](http://oeis.org/A253942) ([L04 program](253/A253942.asm)): a(n) = 3*binomial(n+1, 5).
@@ -595,7 +597,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A262565](http://oeis.org/A262565) ([L05 program](262/A262565.asm)): A weaver's answer to the question "What comes next after 2,3,5?".
 * [A262592](http://oeis.org/A262592) ([L41 program](262/A262592.asm)): a(n) =  (3^(n+1) - 2n^2 + 4n + 5) / 8..
 * [A262594](http://oeis.org/A262594) ([L39 program](262/A262594.asm)): Expansion of (1-2*x)^2/((1-x)^4*(1-4*x)).
-* [A262616](http://oeis.org/A262616) ([L08 program](262/A262616.asm)): Triangle read by rows: T(n,k) = 4^(n-k), n>=0, 0<=k<=n.
+* [A262616](http://oeis.org/A262616) ([L03 program](262/A262616.asm)): Triangle read by rows: T(n,k) = 4^(n-k), n>=0, 0<=k<=n.
 * [A262617](http://oeis.org/A262617) ([L16 program](262/A262617.asm)): First differences of A256266.
 * [A262620](http://oeis.org/A262620) ([L43 program](262/A262620.asm)): Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton on the square grid (see Comments lines for definition).
 * [A262621](http://oeis.org/A262621) ([L35 program](262/A262621.asm)): First differences of A262620.
@@ -1074,6 +1076,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269232](http://oeis.org/A269232) ([L24 program](269/A269232.asm)): a(n) = (n + 1)*(6*n^2 + 15*n + 4)/2.
 * [A269237](http://oeis.org/A269237) ([L09 program](269/A269237.asm)): a(n) = (n + 1)^2*(5*n^2 + 10*n + 2)/2.
 * [A269241](http://oeis.org/A269241) ([L03 program](269/A269241.asm)): Number of times the digit 1 appears in the decimal expansion of n^3.
+* [A269243](http://oeis.org/A269243) ([L07 program](269/A269243.asm)): Number of times the digit 3 appears in the decimal expansion of n^3.
 * [A269247](http://oeis.org/A269247) ([L03 program](269/A269247.asm)): Number of times the digit 7 appears in the decimal expansion of n^3.
 * [A269266](http://oeis.org/A269266) ([L03 program](269/A269266.asm)): a(n) = 2^n mod 31.
 * [A269304](http://oeis.org/A269304) ([L13 program](269/A269304.asm)): a(n) = n + n/gpf(n) + 1, where gpf(n) is the greatest prime factor of n or 1 if n = 1.
@@ -1492,7 +1495,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276351](http://oeis.org/A276351) ([L66 program](276/A276351.asm)): a(n) = 2*(3 + 2 n + 3 n^2 + 3 n^3 + 3 n^4 + n^5 + n^6).
 * [A276382](http://oeis.org/A276382) ([L07 program](276/A276382.asm)): a(1) = 1, and a(n) = a(n-1) + floor(3*n/2) + 1 for n >= 2.
 * [A276383](http://oeis.org/A276383) ([L18 program](276/A276383.asm)): Complement of A158919: complementary Beatty sequence to the Beatty sequence defined by the tribonacci constant tau = A058265.
-* [A276384](http://oeis.org/A276384) ([L09 program](276/A276384.asm)): Defined by the properties that it starts with 0, and when you successively apply DIFF, RUNS, BISECT, RUNS you get (4,1,3,1) repeated infinitely often.
+* [A276384](http://oeis.org/A276384) ([L03 program](276/A276384.asm)): Defined by the properties that it starts with 0, and when you successively apply DIFF, RUNS, BISECT, RUNS you get (4,1,3,1) repeated infinitely often.
 * [A276385](http://oeis.org/A276385) ([L06 program](276/A276385.asm)): Defined by the properties that it starts with 2, and when you successively apply DIFF, RUNS, BISECT, RUNS you get (4,1,3,1) repeated infinitely often.
 * [A276390](http://oeis.org/A276390) ([L12 program](276/A276390.asm)): Bisection of A115716.
 * [A276391](http://oeis.org/A276391) ([L07 program](276/A276391.asm)): G.f. satisfies A(x) - 4*A(x^2) = x/(1+x).
@@ -1588,6 +1591,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277544](http://oeis.org/A277544) ([L08 program](277/A277544.asm)): a(n) = n/6^m mod 6, where 6^m is the greatest power of 6 that divides n.
 * [A277545](http://oeis.org/A277545) ([L08 program](277/A277545.asm)): a(n) = n/7^m mod 7, where 7^m is the greatest power of 7 that divides n.
 * [A277546](http://oeis.org/A277546) ([L08 program](277/A277546.asm)): a(n) = n/8^m mod 8, where 8^m is the greatest power of 8 that divides n.
+* [A277547](http://oeis.org/A277547) ([L14 program](277/A277547.asm)): a(n) = n/9^m mod 9, where 9^m is the greatest power of 9 that divides n.
 * [A277561](http://oeis.org/A277561) ([L06 program](277/A277561.asm)): a(n) = Sum_{k=0..n} ({binomial(n+2k,2k)*binomial(n,k)} mod 2).
 * [A277592](http://oeis.org/A277592) ([L35 program](277/A277592.asm)): Numbers k such that k/10^m == 5 mod 10, where 10^m is the greatest power of 10 that divides n.
 * [A277618](http://oeis.org/A277618) ([L05 program](277/A277618.asm)): Lexicographically earliest nonnegative sequence such that |a(n+1)-a(n)| is a prime number, and no number occurs twice; a(0) = 0.
@@ -2073,6 +2077,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A287864](http://oeis.org/A287864) ([L08 program](287/A287864.asm)): Consider a symmetric pyramid-shaped chessboard with rows of squares of lengths n, n-2, n-4, ..., ending with either 2 or 1 squares; a(n) is the maximal number of mutually non-attacking queens that can be placed on this board.
 * [A287866](http://oeis.org/A287866) ([L09 program](287/A287866.asm)): n - A274933(n).
 * [A287893](http://oeis.org/A287893) ([L04 program](287/A287893.asm)): a(n) = floor(n*(n+2)/9).
+* [A287925](http://oeis.org/A287925) ([L13 program](287/A287925.asm)): a(n) = prime(1)^4 + prime(n)^4
 * [A288038](http://oeis.org/A288038) ([L07 program](288/A288038.asm)): Number of independent vertex sets in the n-Andrasfai graph.
 * [A288040](http://oeis.org/A288040) ([L05 program](288/A288040.asm)): Integers whose number of distinct decimal digits is prime.
 * [A288132](http://oeis.org/A288132) ([L11 program](288/A288132.asm)): Fixed point of the mapping 00->0010, 1->11, starting with 00.

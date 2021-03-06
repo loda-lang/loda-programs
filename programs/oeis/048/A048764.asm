@@ -10,4 +10,4 @@ lpb $0
   mov $3,1
 lpe
 sub $1,$3
-fac $1
+cal $1,142

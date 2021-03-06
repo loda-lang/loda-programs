@@ -3,7 +3,7 @@
 
 sub $2,$0
 trn $0,2
-fac $0
+cal $0,142
 mov $1,$0
 cmp $2,0
 mul $2,2

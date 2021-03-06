@@ -9,6 +9,6 @@ lpb $2
     div $4,2
     sub $1,$4
   lpe
-  fac $1
+  cal $1,142
   mov $2,$3
 lpe

@@ -20,7 +20,7 @@ lpb $5
   lpe
   mov $2,$8
   add $2,5
-  fac $6
+  cal $6,142
   sub $2,$6
   mov $7,$2
   sub $7,4

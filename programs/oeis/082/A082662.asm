@@ -11,7 +11,7 @@ lpb $7
   mov $2,$0
   cmp $0,0
   mul $2,2
-  fac $4
+  cal $4,142
   mov $3,$4
   mov $5,7
   lpb $2

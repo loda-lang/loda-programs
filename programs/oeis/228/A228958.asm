@@ -11,7 +11,7 @@ lpb $2
   mov $4,$0
   mod $0,2
   lpb $0
-    fac $3
+    cal $3,142
     mod $0,$3
     pow $4,2
   lpe

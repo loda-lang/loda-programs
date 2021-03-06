@@ -10,7 +10,7 @@ lpb $2
   div $0,9
   mov $4,10
   pow $4,$0
-  fac $5
+  cal $5,142
   sub $4,$5
   add $1,$4
 lpe

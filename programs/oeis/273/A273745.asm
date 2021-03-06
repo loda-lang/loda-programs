@@ -3,7 +3,7 @@
 
 mov $1,3
 trn $1,$0
-fac $1
+cal $1,142
 mod $1,6
 add $1,7
 mov $2,$0

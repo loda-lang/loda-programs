@@ -7,10 +7,10 @@ lpb $0
   sub $0,7
   mov $1,$2
 lpe
-fac $1
+cal $1,142
 mul $1,2
 mod $2,10
-fac $2
+cal $2,142
 div $1,$2
 mul $1,4
 trn $1,8

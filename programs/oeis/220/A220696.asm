@@ -8,5 +8,5 @@ lpb $2
   sub $2,1
   div $2,$1
 lpe
-fac $1
+cal $1,142
 add $1,$3

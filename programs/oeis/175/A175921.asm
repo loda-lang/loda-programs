@@ -5,5 +5,5 @@ add $0,1
 lpb $0
   sub $0,5
 lpe
-fac $0
+cal $0,142
 mov $1,$0

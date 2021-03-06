@@ -30,7 +30,7 @@ lpb $17
         mov $3,$0
         trn $0,6
         add $3,2
-        fac $3
+        cal $3,142
         mov $1,$3
       lpe
       div $1,2

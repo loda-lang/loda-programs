@@ -30,7 +30,7 @@ lpb $24
         sub $0,1
         mov $1,2
         mov $3,$0
-        fac $3
+        cal $3,142
         mov $7,$0
         add $0,10
         div $3,2

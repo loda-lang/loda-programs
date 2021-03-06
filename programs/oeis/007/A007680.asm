@@ -5,6 +5,6 @@ mov $2,$0
 mov $1,1
 mul $1,$2
 mul $1,2
-fac $2
+cal $2,142
 add $1,1
 mul $1,$2

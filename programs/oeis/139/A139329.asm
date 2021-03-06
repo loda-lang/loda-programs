@@ -14,5 +14,5 @@ lpb $0
     add $4,$2
   lpe
 lpe
-fac $4
+cal $4,142
 add $1,$4

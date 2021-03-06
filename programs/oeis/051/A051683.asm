@@ -16,7 +16,7 @@ lpb $11
     mov $1,$7
     trn $2,1
   lpe
-  fac $1
+  cal $1,142
   add $10,$1
 lpe
 mov $1,$10

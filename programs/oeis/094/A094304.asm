@@ -7,7 +7,7 @@ lpb $0,1
   gcd $2,$0
   mov $1,$2
   mov $3,$1
-  fac $1
+  cal $1,142
   mul $1,$3
   sub $0,$0
 lpe

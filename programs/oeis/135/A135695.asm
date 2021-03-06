@@ -4,7 +4,7 @@
 add $0,8
 lpb $0
   sub $0,2
-  fac $1
+  cal $1,142
   div $1,5
   sub $1,3
 lpe

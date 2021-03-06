@@ -9,7 +9,7 @@ lpb $0
   add $2,100
 lpe
 sub $0,1
-fac $3
+cal $3,142
 add $2,$3
 add $2,2
 add $0,$2

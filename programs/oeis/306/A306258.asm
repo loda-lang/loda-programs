@@ -5,5 +5,5 @@ mov $2,$0
 pow $2,2
 mov $1,$0
 div $2,4
-fac $1
+cal $1,142
 mul $1,$2

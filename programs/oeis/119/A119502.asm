@@ -3,4 +3,4 @@
 
 cal $0,25581 ; Triangle T(n, k) = n-k, 0 <= k <= n.
 mov $1,$0
-fac $1
+cal $1,142

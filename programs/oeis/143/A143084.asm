@@ -3,4 +3,4 @@
 
 cal $0,134478 ; Triangle read by rows, T(0,0) = 1; n-th row = (n+1) terms of n, n+1, n+2...
 mov $1,$0
-fac $1
+cal $1,142

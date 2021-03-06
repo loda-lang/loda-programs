@@ -12,7 +12,7 @@ lpb $0
   add $1,$3
   add $5,$2
   add $2,$1
-  fac $4
+  cal $4,142
   add $1,$4
   mov $3,$5
   add $3,1

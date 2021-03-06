@@ -9,7 +9,7 @@ mov $2,5
 mov $3,1
 lpb $0
   sub $0,1
-  fac $1
+  cal $1,142
   add $3,2
 lpe
 add $2,$3

@@ -18,7 +18,7 @@ lpb $11
       trn $5,$1
       add $6,592
     lpe
-    fac $5
+    cal $5,142
     lpb $6
       add $4,$3
       sub $3,1

@@ -16,7 +16,7 @@ lpb $2
   div $3,$3
   trn $3,$2
   add $2,1
-  fac $3
+  cal $3,142
   add $4,2
   sub $4,$1
   sub $1,2

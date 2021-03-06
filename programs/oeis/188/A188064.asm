@@ -17,6 +17,6 @@ lpb $3
     lpe
     mov $2,1
   lpe
-  fac $4
+  cal $4,142
   add $1,$4
 lpe

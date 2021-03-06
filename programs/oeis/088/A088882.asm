@@ -8,7 +8,7 @@ sub $0,$1
 lpb $0
   mov $0,2
   sub $1,5
-  fac $4
+  cal $4,142
   trn $5,2
   add $5,2
   mov $6,14

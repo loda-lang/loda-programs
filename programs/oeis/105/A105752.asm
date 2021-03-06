@@ -7,7 +7,7 @@ mov $3,1
 sub $3,$0
 mov $1,$3
 add $1,1
-fac $1
+cal $1,142
 sub $2,4
 trn $3,$2
 gcd $3,2

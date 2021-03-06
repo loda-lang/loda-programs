@@ -9,7 +9,7 @@ lpb $0
   add $2,$0
   mul $0,$2
   sub $0,1
-  fac $0
+  cal $0,142
   mov $1,$3
   sub $1,1
   mul $3,2
