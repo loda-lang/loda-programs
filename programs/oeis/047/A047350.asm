@@ -21,3 +21,4 @@ lpb $2
   add $4,$2
   trn $2,1
 lpe
+add $1,1

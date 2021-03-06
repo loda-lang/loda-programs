@@ -22,4 +22,4 @@ lpb $12
   lpe
   add $11,$4
 lpe
-mov $1,$11
+add $1,1
