@@ -4,9 +4,9 @@
 add $0,2
 mov $2,-95
 mov $5,96
-lpb $0,1
-  lpb $2,1
-    lpb $5,1
+lpb $0
+  lpb $2
+    lpb $5
       mov $1,2
       mov $3,$4
       cmp $3,0
