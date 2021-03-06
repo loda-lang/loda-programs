@@ -4,7 +4,7 @@
 lpb $0
   mov $0,6
 lpe
-fac $0
+cal $0,142
 sub $0,1
 mod $0,9
 mov $1,$0

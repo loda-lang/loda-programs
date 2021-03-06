@@ -3,7 +3,7 @@
 
 cal $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
 trn $0,2
-fac $0
+cal $0,142
 mul $0,2
 add $0,14
 mov $1,$0

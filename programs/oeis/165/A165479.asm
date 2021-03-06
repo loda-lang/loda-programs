@@ -21,7 +21,7 @@ lpb $9
     pow $5,$5
     add $7,1
     gcd $7,3
-    fac $8
+    cal $8,142
   lpe
   mov $3,$8
   add $3,$7

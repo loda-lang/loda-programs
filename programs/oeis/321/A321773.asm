@@ -13,7 +13,7 @@ lpb $0
   add $2,$0
   sub $0,$2
 lpe
-fac $0
+cal $0,142
 mul $0,$2
 mov $1,2
 add $1,$0

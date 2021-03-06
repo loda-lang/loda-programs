@@ -19,7 +19,7 @@ lpb $0
 lpe
 mov $1,$2
 add $4,1
-fac $5
+cal $5,142
 mul $5,$4
 div $1,$5
 add $1,$5

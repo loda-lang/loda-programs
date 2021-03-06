@@ -10,4 +10,4 @@ lpb $0
   trn $0,1
   mov $2,$1
 lpe
-fac $1
+cal $1,142

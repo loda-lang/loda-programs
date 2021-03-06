@@ -3,7 +3,7 @@
 
 cal $0,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
 add $0,2
-fac $0
+cal $0,142
 mov $1,$0
 sub $1,2
 div $1,2

@@ -19,7 +19,7 @@ lpb $11
       add $5,1
       mov $0,$5
       mov $3,$5
-      fac $3
+      cal $3,142
       trn $6,$5
       add $8,$2
       mov $4,$8

@@ -22,7 +22,7 @@ lpb $10
       add $1,$3
       div $1,2
       mov $3,$1
-      fac $3
+      cal $3,142
       mov $1,$3
     lpe
     add $0,$1

@@ -4,6 +4,6 @@
 mov $1,$0
 div $0,2
 gcd $2,$0
-fac $1
+cal $1,142
 mul $2,$1
 add $1,$2

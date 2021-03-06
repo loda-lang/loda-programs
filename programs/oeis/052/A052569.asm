@@ -5,5 +5,5 @@ mov $2,$0
 mov $1,1
 div $2,3
 add $1,$2
-fac $0
+cal $0,142
 mul $1,$0

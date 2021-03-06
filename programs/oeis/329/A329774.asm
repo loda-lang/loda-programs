@@ -25,7 +25,7 @@ lpb $18
       sub $0,1
       mov $8,$0
       sub $0,$0
-      fac $0
+      cal $0,142
       trn $8,$0
       lpb $0
         trn $0,8

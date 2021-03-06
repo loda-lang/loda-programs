@@ -8,7 +8,7 @@ lpb $0
   sub $0,1
   mov $3,97
 lpe
-fac $0
+cal $0,142
 mov $1,1
 add $2,$3
 sub $2,5

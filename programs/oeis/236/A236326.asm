@@ -12,7 +12,7 @@ lpb $3
   mov $5,4
   lpb $5
     mod $4,5
-    fac $4
+    cal $4,142
     sub $5,4
   lpe
   lpb $4

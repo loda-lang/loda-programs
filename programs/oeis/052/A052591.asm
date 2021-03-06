@@ -5,5 +5,5 @@ gcd $1,$0
 mov $2,1
 add $2,$0
 div $2,2
-fac $1
+cal $1,142
 mul $1,$2

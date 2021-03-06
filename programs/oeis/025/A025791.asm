@@ -23,7 +23,7 @@ lpb $13
       mod $2,9
       mul $2,10
     lpe
-    fac $4
+    cal $4,142
     mul $4,40
     pow $4,2
   lpe

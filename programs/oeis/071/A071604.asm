@@ -13,7 +13,7 @@ lpb $2
   mov $5,8
   mov $7,$0
   lpb $0
-    fac $5
+    cal $5,142
     pow $5,3
     gcd $7,$5
     mov $0,$7

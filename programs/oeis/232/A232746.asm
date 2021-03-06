@@ -7,7 +7,7 @@ mov $2,7
 mov $3,4
 lpb $0
   sub $0,1
-  fac $3
+  cal $3,142
   sub $0,$3
   add $2,8
   sub $0,$2

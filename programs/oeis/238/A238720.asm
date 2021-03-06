@@ -17,7 +17,7 @@ lpb $2
   mul $0,3
   mov $1,$4
   sub $2,$2
-  fac $3
+  cal $3,142
   sub $1,$3
   mul $1,$0
 lpe

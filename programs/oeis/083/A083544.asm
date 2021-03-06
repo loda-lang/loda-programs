@@ -20,7 +20,7 @@ lpb $4
   cmp $0,$2
   lpb $0
     div $0,5
-    fac $7
+    cal $7,142
     mul $7,$3
   lpe
   div $7,3

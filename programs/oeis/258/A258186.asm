@@ -5,7 +5,7 @@ div $0,2
 sub $0,5
 mov $1,1
 mov $3,$0
-fac $0
+cal $0,142
 mul $1,$3
 mov $2,6
 lpb $0

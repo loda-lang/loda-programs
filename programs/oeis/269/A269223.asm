@@ -3,7 +3,7 @@
 
 mov $2,$0
 cal $2,53735 ; Sum of digits of (n written in base 3).
-fac $2
+cal $2,142
 sub $2,1
 mov $3,2
 mul $3,$2

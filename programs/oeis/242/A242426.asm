@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $0,1
-fac $1
+cal $1,142
 div $1,$0
 div $1,$0
 mov $0,6

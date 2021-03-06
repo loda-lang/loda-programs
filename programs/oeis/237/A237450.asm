@@ -25,6 +25,6 @@ lpb $3
     lpe
     sub $2,1
   lpe
-  fac $2
+  cal $2,142
   add $1,$2
 lpe

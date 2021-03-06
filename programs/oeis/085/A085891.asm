@@ -25,7 +25,7 @@ lpb $14
     add $2,3
     lpb $0
       mod $0,2
-      fac $0
+      cal $0,142
       pow $1,$4
       add $0,$1
       pow $0,2

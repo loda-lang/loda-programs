@@ -4,7 +4,7 @@
 mov $2,2
 pow $2,$0
 mov $3,$0
-fac $3
+cal $3,142
 add $3,$2
 sub $3,2
 mov $1,$3
