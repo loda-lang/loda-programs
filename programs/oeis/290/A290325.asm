@@ -3,7 +3,11 @@
 
 add $0,1
 pow $0,2
+lpb $0
+  add $1,$0
+  mul $0,$1
+  div $0,4
+lpe
 mov $1,$0
-log $1,$0
-add $1,$0
 mul $1,3
+add $1,3
