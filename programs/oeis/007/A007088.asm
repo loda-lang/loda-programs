@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,228071 ; Write n in binary and interpret as a decimal number; a(n) is this quantity minus n.
-add $2,$1
-add $0,$2
+add $0,$1
 mov $1,$0

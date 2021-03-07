@@ -9,5 +9,5 @@ lpb $0
 lpe
 sub $1,1
 cal $1,142
-trn $1,1
+sub $1,1
 add $1,1

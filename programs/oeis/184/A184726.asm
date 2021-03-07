@@ -8,11 +8,9 @@ mov $3,$2
 add $3,5
 mov $0,$3
 mov $3,1
-lpb $0,1
+lpb $0
   add $3,$0
-  cal $0,166250
+  cal $0,166250 ; a(n) = n-1 plus the largest proper divisor of n.
   sub $0,$3
 lpe
-mul $0,2
 mov $1,$0
-div $1,2

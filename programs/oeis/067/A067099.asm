@@ -3,8 +3,5 @@
 
 add $0,1
 cal $0,62300 ; a(n) = floor(cosec(Pi/(n+1))).
-mov $1,8
-mov $2,$0
-div $2,2
-mul $1,$2
-div $1,8
+mov $1,$0
+div $1,2

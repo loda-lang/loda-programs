@@ -1,10 +1,9 @@
 ; A099985: Bisection of A007947.
 ; 2,2,6,2,10,6,14,2,6,10,22,6,26,14,30,2,34,6,38,10,42,22,46,6,10,26,6,14,58,30,62,2,66,34,70,6,74,38,78,10,82,42,86,22,30,46,94,6,14,10,102,26,106,6,110,14,114,58,118,30,122,62,42,2,130,66,134,34,138,70,142,6
 
-mul $0,2
-add $0,1
-cal $0,76618 ; Least x>1 such that x^d == 1 (mod d) for each divisor d of n.
+cal $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 mov $1,$0
-div $1,4
-mul $1,4
-add $1,2
+lpb $1
+  dif $1,2
+lpe
+mul $1,2

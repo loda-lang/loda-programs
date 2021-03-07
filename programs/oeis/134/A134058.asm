@@ -1,10 +1,9 @@
 ; A134058: Triangle read by rows, T(n,k) = 2*binomial(n,k) if k > 0, (0 <= k <= n), left column = (1,2,2,2,...).
 ; 1,2,2,2,4,2,2,6,6,2,2,8,12,8,2,2,10,20,20,10,2,2,12,30,40,30,12,2,2,14,42,70,70,42,14,2,2,16,56,112,140,112,56,16,2,2,18,72,168,252,252,168,72,18,2
 
-mov $1,$0
-lpb $1
-  cal $0,109128 ; Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k) + 1 for 0<k<n, T(n,0) = T(n,n) = 1.
-  mod $1,2
-lpe
-mov $1,$0
+mov $2,1
+trn $2,$0
+cal $0,109128 ; Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k) + 1 for 0<k<n, T(n,0) = T(n,n) = 1.
+sub $0,$2
+add $1,$0
 add $1,1

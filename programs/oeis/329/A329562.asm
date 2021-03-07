@@ -8,7 +8,7 @@ lpb $0
   add $2,$1
 lpe
 mov $1,2
-trn $3,1
+sub $3,1
 cal $3,142
 mul $3,2
 pow $3,$2

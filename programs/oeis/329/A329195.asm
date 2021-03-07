@@ -3,5 +3,8 @@
 
 add $0,1
 pow $0,2
-log $0,5
-mov $1,$0
+lpb $0
+  div $0,5
+  add $1,1
+lpe
+sub $1,1
