@@ -3,6 +3,6 @@
 
 add $0,1
 cal $0,36795 ; Integers that can be decomposed into sums of different Fibonacci numbers of even argument.
-add $0,2
+add $0,1
 mov $1,$0
-sub $1,3
+sub $1,2
