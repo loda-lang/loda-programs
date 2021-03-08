@@ -5,7 +5,7 @@
 add $0,1     ;; Add one, because A000010 is starting offset=1 sequence.
 mov $1,0     ;; Initialize the result-register (is this really needed?)
 mov $2,$0    ;; Make a copy of an argument, to be used as
-lpb $2,1     ;;  a loop-counter
+lpb $2       ;;  a loop-counter
   mov $3,$2    ;; Get a temp copy of loop counter
   gcd $3,$0    ;; now $3 = gcd(original_n,loop_counter)
   cmp $3,1     ;; now $3 = 1 if loop_counter was coprime, 0 otherwise
