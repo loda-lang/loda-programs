@@ -3,9 +3,5 @@
 
 mov $2,$0
 cal $0,30108 ; Base 9 reversal of n (written in base 10).
-mov $1,1
-mov $3,$0
-add $3,2
-mul $1,$3
-sub $1,2
-add $1,$2
+add $0,$2
+mov $1,$0

@@ -3,6 +3,4 @@
 
 add $0,2
 cal $0,188189 ; [nr]-[kr]-[nr-kr], where r=sqrt(5), k=2, [ ]=floor.
-mov $1,1
-add $1,$0
-sub $1,1
+mov $1,$0
