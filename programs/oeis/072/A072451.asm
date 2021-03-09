@@ -3,7 +3,6 @@
 
 mul $0,2
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-sub $0,1
+add $0,1
+div $0,2
 mov $1,$0
-div $1,2
-add $1,1
