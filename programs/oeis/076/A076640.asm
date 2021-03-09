@@ -3,13 +3,8 @@
 
 lpb $0
   mov $2,$0
-  add $0,2
-  mov $3,$2
-  cal $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  add $3,1
-  sub $0,$3
-  sub $0,1
-  add $1,2
+  cal $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $0,$2
+  add $1,1
 lpe
-div $1,2
 add $1,1
