@@ -5,7 +5,6 @@ mul $0,2
 trn $0,1
 lpb $0
   div $0,4
-  add $1,14
+  add $1,1
 lpe
-div $1,14
 add $1,1

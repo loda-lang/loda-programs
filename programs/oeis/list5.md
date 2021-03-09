@@ -568,7 +568,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261882](http://oeis.org/A261882) ([L16 program](261/A261882.asm)): Decimal expansion of 32/27.
 * [A261893](http://oeis.org/A261893) ([L07 program](261/A261893.asm)): a(n) = (n+1)^3 - n^2.
 * [A261953](http://oeis.org/A261953) ([L07 program](261/A261953.asm)): Start with a single equilateral triangle for n=0; for the odd n-th generation add a triangle at each expandable side of the triangles of the (n-1)-th generation (this is the "side to side" version); for the even n-th generation use the "vertex to vertex" version; a(n) is the number of triangles added in the n-th generation.
-* [A261971](http://oeis.org/A261971) ([L09 program](261/A261971.asm)): Number of unit cubes that have a side on the surface of a p X p X p cube composed of p^3 unit cubes, where p is the n-th prime.
+* [A261971](http://oeis.org/A261971) ([L07 program](261/A261971.asm)): Number of unit cubes that have a side on the surface of a p X p X p cube composed of p^3 unit cubes, where p is the n-th prime.
 * [A262000](http://oeis.org/A262000) ([L14 program](262/A262000.asm)): a(n) = n^2*(7*n - 5)/2.
 * [A262033](http://oeis.org/A262033) ([L10 program](262/A262033.asm)): Number of permutations of [n] beginning with at least floor(n/2) ascents.
 * [A262037](http://oeis.org/A262037) ([L18 program](262/A262037.asm)): Replace the second half of digits of n with the first half in reverse order.
@@ -870,6 +870,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267092](http://oeis.org/A267092) ([L08 program](267/A267092.asm)): a(n) is the number of P-positions for n-modular Nim with 2 piles.
 * [A267133](http://oeis.org/A267133) ([L08 program](267/A267133.asm)): a(n) = (1/n)(2/n)(3/n)...((n-1)/n) where (k/n) is the Kronecker symbol, n >= 1.
 * [A267142](http://oeis.org/A267142) ([L02 program](267/A267142.asm)): The characteristic function of the multiples of 9.
+* [A267144](http://oeis.org/A267144) ([L09 program](267/A267144.asm)): Octagonal numbers with prime indices.
 * [A267155](http://oeis.org/A267155) ([L19 program](267/A267155.asm)): Middle column of the "Rule 107" elementary cellular automaton starting with a single ON (black) cell.
 * [A267182](http://oeis.org/A267182) ([L11 program](267/A267182.asm)): Row 2 of the square array in A267181.
 * [A267185](http://oeis.org/A267185) ([L10 program](267/A267185.asm)): Column 2 of the square array in A267181.
@@ -1094,6 +1095,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269410](http://oeis.org/A269410) ([L50 program](269/A269410.asm)): Number of length-4 0..n arrays with no repeated value greater than or equal to the previous repeated value.
 * [A269412](http://oeis.org/A269412) ([L101 program](269/A269412.asm)): Number of length-6 0..n arrays with no repeated value greater than or equal to the previous repeated value.
 * [A269416](http://oeis.org/A269416) ([L19 program](269/A269416.asm)): Expansion of 3*(2 - x)/((1 - x)*(1 + x)^2).
+* [A269429](http://oeis.org/A269429) ([L13 program](269/A269429.asm)): Alternating sum of octagonal pyramidal numbers.
 * [A269436](http://oeis.org/A269436) ([L48 program](269/A269436.asm)): Number of length-4 0..n arrays with no repeated value greater than the previous repeated value.
 * [A269445](http://oeis.org/A269445) ([L05 program](269/A269445.asm)): a(n) = Sum_{k=0..n} floor(k/13).
 * [A269457](http://oeis.org/A269457) ([L05 program](269/A269457.asm)): a(n) = 5*(n + 1)*(n + 4)/2.
@@ -1642,7 +1644,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277989](http://oeis.org/A277989) ([L05 program](277/A277989.asm)): a(n) = 424*2^n + 37.
 * [A277990](http://oeis.org/A277990) ([L05 program](277/A277990.asm)): a(n) = 54*n^2 + 6*n.
 * [A277991](http://oeis.org/A277991) ([L04 program](277/A277991.asm)): a(n) = 81*n^2 - 9*n.
-* [A277992](http://oeis.org/A277992) ([L13 program](277/A277992.asm)): b(n, 2) where b(n, m) is defined by expansion of ((Product_{k>=1} (1 - x^(prime(n)*k))/(1 - x^k)^prime(n)) - 1)/prime(n) in powers of x.
+* [A277992](http://oeis.org/A277992) ([L05 program](277/A277992.asm)): b(n, 2) where b(n, m) is defined by expansion of ((Product_{k>=1} (1 - x^(prime(n)*k))/(1 - x^k)^prime(n)) - 1)/prime(n) in powers of x.
 * [A278049](http://oeis.org/A278049) ([L13 program](278/A278049.asm)): a(n) = 3*(Sum_{k=1..n} phi(k)) - 1, where phi = A000010.
 * [A278105](http://oeis.org/A278105) ([L03 program](278/A278105.asm)): a(n) = floor(3/n).
 * [A278122](http://oeis.org/A278122) ([L05 program](278/A278122.asm)): a(n) = 204*2^n - 248.
@@ -1910,6 +1912,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A284968](http://oeis.org/A284968) ([L20 program](284/A284968.asm)): Least hairpin family matchings with n edges that are both L&P and C&C whose leftmost edge is part of a hairpin.
 * [A285009](http://oeis.org/A285009) ([L06 program](285/A285009.asm)): Subset sums (see Comments).
 * [A285043](http://oeis.org/A285043) ([L14 program](285/A285043.asm)): Expansion of cosh(3*arctanh(2*sqrt(x))).
+* [A285052](http://oeis.org/A285052) ([L09 program](285/A285052.asm)): Number of idempotent equivalence classes for multiplication in Zn.
 * [A285054](http://oeis.org/A285054) ([L14 program](285/A285054.asm)): Numbers whose sum of digits are congruent (mod 10) to the string 1,2, ..., 9.
 * [A285073](http://oeis.org/A285073) ([L38 program](285/A285073.asm)): 0-limiting word of the morphism 0->10, 1-> 010.
 * [A285074](http://oeis.org/A285074) ([L15 program](285/A285074.asm)): Positions of 0 in A285073; complement of A285075.
@@ -2548,7 +2551,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296021](http://oeis.org/A296021) ([L10 program](296/A296021.asm)): Number of primes of the form 4*k+1 <= 4*n+1.
 * [A296028](http://oeis.org/A296028) ([L04 program](296/A296028.asm)): Characteristic function of primes in the nonmultiples of 3.
 * [A296063](http://oeis.org/A296063) ([L05 program](296/A296063.asm)): a(n) is the smallest number (in absolute value) not yet in the sequence such that the arithmetic mean of the first n terms a(1), a(2), ..., a(n) is an integer. Preference is given to positive values of a(n); a(1)=1; 0 not allowed.
-* [A296065](http://oeis.org/A296065) ([L19 program](296/A296065.asm)): Partial sums of A296064.
+* [A296065](http://oeis.org/A296065) ([L11 program](296/A296065.asm)): Partial sums of A296064.
 * [A296066](http://oeis.org/A296066) ([L04 program](296/A296066.asm)): a(n) = A296065(n)/n.
 * [A296070](http://oeis.org/A296070) ([L08 program](296/A296070.asm)): Partial sums of A296069.
 * [A296079](http://oeis.org/A296079) ([L03 program](296/A296079.asm)): a(n) = 1 if 1+phi(n) is prime, 0 otherwise, where phi = A000010, Euler totient function.
@@ -2585,6 +2588,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297044](http://oeis.org/A297044) ([L03 program](297/A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
 * [A297045](http://oeis.org/A297045) ([L03 program](297/A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
 * [A297086](http://oeis.org/A297086) ([L03 program](297/A297086.asm)): a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
+* [A297155](http://oeis.org/A297155) ([L06 program](297/A297155.asm)): a(1) = a(2) = 0, after which, a(n) = 1+a(n/2) if n is of the form 4k+2, otherwise a(n) = a(A252463(n)).
 * [A297180](http://oeis.org/A297180) ([L47 program](297/A297180.asm)): a(n) is the smallest positive integer of length (distance from origin) n in the Cayley graph of the integers generated by all powers of 7.
 * [A297181](http://oeis.org/A297181) ([L21 program](297/A297181.asm)): a(n) is the smallest positive integer of length (distance from origin) n in the Cayley graph of the integers generated by all powers of 11.
 * [A297182](http://oeis.org/A297182) ([L16 program](297/A297182.asm)): a(n) is the smallest positive integer of length (distance from origin) n in the Cayley graph of the integers generated by all powers of 13.

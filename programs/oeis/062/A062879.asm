@@ -3,8 +3,4 @@
 
 mul $0,2
 cal $0,62877 ; Apart from the initial term (0), each a(n) is representable as a sum of distinct odd-indexed Fibonacci numbers.
-add $0,169256
-mul $0,338512
 mov $1,$0
-sub $1,57295187072
-div $1,338512
