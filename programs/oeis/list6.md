@@ -1360,7 +1360,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329530](http://oeis.org/A329530) ([L38 program](329/A329530.asm)): a(n) = n * (7*binomial(n, 2) + 1).
 * [A329533](http://oeis.org/A329533) ([L43 program](329/A329533.asm)): First differences of A051924, or second differences of Central binomial coefficients A000984.
 * [A329547](http://oeis.org/A329547) ([L30 program](329/A329547.asm)): Number of natural numbers k <= n such that k^k is a square.
-* [A329562](http://oeis.org/A329562) ([L13 program](329/A329562.asm)): a(n) = 2^(sum of digits of n).
+* [A329562](http://oeis.org/A329562) ([L12 program](329/A329562.asm)): a(n) = 2^(sum of digits of n).
 * [A329598](http://oeis.org/A329598) ([L54 program](329/A329598.asm)): Partial sums of the nontriangular numbers (A014132).
 * [A329614](http://oeis.org/A329614) ([L04 program](329/A329614.asm)): Smallest prime factor of the number of divisors of A108951(n).
 * [A329670](http://oeis.org/A329670) ([L03 program](329/A329670.asm)): Number of excursions of length n with Motzkin-steps allowing only consecutive steps UH and HD.
@@ -1564,7 +1564,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334277](http://oeis.org/A334277) ([L17 program](334/A334277.asm)): Perimeters of almost-equilateral Heronian triangles.
 * [A334293](http://oeis.org/A334293) ([L03 program](334/A334293.asm)): First quadrisection of Padovan sequence.
 * [A334320](http://oeis.org/A334320) ([L09 program](334/A334320.asm)): Number of even integers in base n with exactly two distinct digits.
-* [A334387](http://oeis.org/A334387) ([L09 program](334/A334387.asm)): The difference version of the 'Decade transform' : to obtain a(n) write n as a sum of its power-of-ten parts and then continue to calculate the absolute value of the difference between the adjacent parts until a single number remains.
+* [A334387](http://oeis.org/A334387) ([L07 program](334/A334387.asm)): The difference version of the 'Decade transform' : to obtain a(n) write n as a sum of its power-of-ten parts and then continue to calculate the absolute value of the difference between the adjacent parts until a single number remains.
 * [A334413](http://oeis.org/A334413) ([L31 program](334/A334413.asm)): First differences of A101803.
 * [A334414](http://oeis.org/A334414) ([L26 program](334/A334414.asm)): First differences of A334415.
 * [A334415](http://oeis.org/A334415) ([L13 program](334/A334415.asm)): Nearest integer to n*(2-phi), where phi is the golden ratio (A001622).
@@ -1775,4 +1775,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A341995](http://oeis.org/A341995) ([L07 program](341/A341995.asm)): a(n) = 1 if the arithmetic derivative (A003415) of n is a prime, otherwise 0.
 * [A342089](http://oeis.org/A342089) ([L05 program](342/A342089.asm)): Numbers that have two representations as the sum of distinct non-consecutive Lucas numbers (A000032).
 * [A342131](http://oeis.org/A342131) ([L03 program](342/A342131.asm)): a(n) = n/2 + floor(n/4) if n is even, otherwise (3*n+1)/2.
-* [A342235](http://oeis.org/A342235) ([L16 program](342/A342235.asm)): Coordination sequence of David Eppstein's "Tetrastix" graph.
+* [A342235](http://oeis.org/A342235) ([L14 program](342/A342235.asm)): Coordination sequence of David Eppstein's "Tetrastix" graph.

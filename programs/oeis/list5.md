@@ -4,6 +4,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 
 * [A250015](http://oeis.org/A250015) ([L67 program](250/A250015.asm)): Number of length 1+5 0..n arrays with no six consecutive terms having the maximum of any three terms equal to the minimum of the remaining three terms.
 * [A250024](http://oeis.org/A250024) ([L03 program](250/A250024.asm)): 40n - 21.
+* [A250069](http://oeis.org/A250069) ([L06 program](250/A250069.asm)): a(n) = n^2 mod gpf(n^2 + 1) where gpf(k) is the greatest prime dividing k.
 * [A250082](http://oeis.org/A250082) ([L61 program](250/A250082.asm)): Number of length 1+5 0..n arrays with every six consecutive terms having the maximum of some two terms equal to the minimum of the remaining four terms.
 * [A250108](http://oeis.org/A250108) ([L16 program](250/A250108.asm)): n*(n-1)/2 mod 2 + n*(n-1)/2 - n*( (n-1) mod 2 ).
 * [A250120](http://oeis.org/A250120) ([L12 program](250/A250120.asm)): Coordination sequence for planar net 3.3.3.3.6 (also called the fsz net).
@@ -866,7 +867,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267048](http://oeis.org/A267048) ([L11 program](267/A267048.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267049](http://oeis.org/A267049) ([L15 program](267/A267049.asm)): Total number of OFF (white) cells after n iterations of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
 * [A267052](http://oeis.org/A267052) ([L12 program](267/A267052.asm)): Decimal representation of the n-th iteration of the "Rule 92" elementary cellular automaton starting with a single ON (black) cell.
-* [A267092](http://oeis.org/A267092) ([L11 program](267/A267092.asm)): a(n) is the number of P-positions for n-modular Nim with 2 piles.
+* [A267092](http://oeis.org/A267092) ([L08 program](267/A267092.asm)): a(n) is the number of P-positions for n-modular Nim with 2 piles.
 * [A267133](http://oeis.org/A267133) ([L08 program](267/A267133.asm)): a(n) = (1/n)(2/n)(3/n)...((n-1)/n) where (k/n) is the Kronecker symbol, n >= 1.
 * [A267142](http://oeis.org/A267142) ([L02 program](267/A267142.asm)): The characteristic function of the multiples of 9.
 * [A267155](http://oeis.org/A267155) ([L19 program](267/A267155.asm)): Middle column of the "Rule 107" elementary cellular automaton starting with a single ON (black) cell.
@@ -2456,6 +2457,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293810](http://oeis.org/A293810) ([L27 program](293/A293810.asm)): The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 * [A293821](http://oeis.org/A293821) ([L08 program](293/A293821.asm)): Number of integer-sided quadrilaterals having perimeter n, modulo rotations but not reflections.
 * [A293838](http://oeis.org/A293838) ([L03 program](293/A293838.asm)): "Look once to the left" sequence starting with 1,2 (see comment).
+* [A293958](http://oeis.org/A293958) ([L04 program](293/A293958.asm)): Smallest odd prime divisor of (2n+1)^2 + 1.
 * [A293990](http://oeis.org/A293990) ([L06 program](293/A293990.asm)): a(n) = (3*n + ((n-2) mod 4))/2.
 * [A294013](http://oeis.org/A294013) ([L29 program](294/A294013.asm)): Sum of the differences of the larger and smaller parts in the partitions of 2n into two parts with the smaller part prime.
 * [A294015](http://oeis.org/A294015) ([L03 program](294/A294015.asm)): Sum of the even divisors of 2n, minus the (n-1)st odd number.
@@ -2525,6 +2527,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A295664](http://oeis.org/A295664) ([L05 program](295/A295664.asm)): Exponent of the highest power of 2 dividing number of divisors of n: a(n) = A007814(A000005(n)); 2-adic valuation of tau(n).
 * [A295680](http://oeis.org/A295680) ([L57 program](295/A295680.asm)): a(n) = a(n-1) + a(n-3) + a(n-4), where a(0) = 0, a(1) = 0, a(2) = 0, a(3) = 2.
 * [A295687](http://oeis.org/A295687) ([L42 program](295/A295687.asm)): a(n) = a(n-1) + a(n-3) + a(n-4), where a(0) = 1, a(1) = 2, a(2) = 2, a(3) = 1.
+* [A295689](http://oeis.org/A295689) ([L27 program](295/A295689.asm)): a(n) = a(n-1) + a(n-3) + a(n-4), where a(0) = 2, a(1) = 0, a(2) = 2, a(3) = 1
 * [A295774](http://oeis.org/A295774) ([L03 program](295/A295774.asm)): a(n) is the minimum size of a restricted planar additive basis for the square [0,2n]^2.
 * [A295821](http://oeis.org/A295821) ([L09 program](295/A295821.asm)): Number of coprime pairs (a,b) with -n <= a <= n, -2 <= b <= 2.
 * [A295822](http://oeis.org/A295822) ([L27 program](295/A295822.asm)): Number of coprime pairs (a,b) with -n <= a <= n, -3 <= b <= 3.
