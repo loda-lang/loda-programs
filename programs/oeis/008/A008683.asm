@@ -9,7 +9,7 @@ mov $1,1     ; Initialize the result-register, which will be (-1)^k for some k, 
 mov $2,1     ; The smallest candidate prime divisor, will be incremented to 2 in the beginning of the loop.
 mov $3,$0
 mov $6,1     ; The loop decrement register, for delayed exits.
-lpb $3,1     ; 
+lpb $3       ; 
   sub $3,$6
   add $2,1
   mov $7,$0

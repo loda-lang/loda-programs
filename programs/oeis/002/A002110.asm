@@ -5,9 +5,9 @@
 ;
 mov $1,1     ;; Initialize the result-register, the primorials are constructed to this
 mov $2,1     ;; Last prime found so far, this one from the beginning of the 20th century (A008578)
-lpb $0,1     ;; Loop from n to 1, to find the n-th primorial, we start from the "zeroth" one, A002110(0)=1.
+lpb $0       ;; Loop from n to 1, to find the n-th primorial, we start from the "zeroth" one, A002110(0)=1.
   mov $3,$2  ;; Set search-limit for "find-next-prime loop" below, this should be enough by Bertrand's postulate.
-  lpb $3,1   ;; (Bertrand is a great friend of all LODA-coders!). Start the inner loop.
+  lpb $3     ;; (Bertrand is a great friend of all LODA-coders!). Start the inner loop.
     add $2,1   ;; First increment the prime past previous
     mov $4,$1  ;; And make temp. copy of it
     gcd $4,$2  ;; Take the greatest common divisor with the primorial constructed so far

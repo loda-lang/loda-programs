@@ -11,10 +11,10 @@ add $0,1     ; Add one, because A003958 is offset=1 sequence.
 mov $1,1     ; Initialize the result-register, the result (which is a product) is constructed into this.
 mov $2,2     ; This is the smallest prime-divisor we have encountered so far.
 mov $4,1
-lpb $0,1     ; Start the main loop. We stop when there's nothing remaining in $0 anymore. Guaranteed to decrease on every iteration.
+lpb $0       ; Start the main loop. We stop when there's nothing remaining in $0 anymore. Guaranteed to decrease on every iteration.
   mul $1,$4    ; Multiply m by ($2-1) of the previous iteration (and by 1 on the first iteration).
   mov $3,$0    ; What's remaining of $0 is safe upper limit for finding its smallest prime factor.
-  lpb $3,1     ; Which is done in this subloop: find the next prime >= $2 that divides $0, which = A020639($0).
+  lpb $3       ; Which is done in this subloop: find the next prime >= $2 that divides $0, which = A020639($0).
     mov $4,$0
     mod $4,$2
     cmp $4,0

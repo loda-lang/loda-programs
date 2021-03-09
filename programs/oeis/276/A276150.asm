@@ -9,9 +9,9 @@ mov $2,1     ;; Last prime used so far, this one from the beginning of the 20th 
 mov $3,1     ;; Current primorial.
 mov $8,$0    ;; Main loop counter.
 mov $9,1     ;; Main loop "decrement register" (for delayed falling out from the loop, yes, kludges!)
-lpb $8,1     ;; Loop until n is zero, to compute A276086(n). Note that A235224(n) <= n for all n >= 0.
+lpb $8       ;; Loop until n is zero, to compute A276086(n). Note that A235224(n) <= n for all n >= 0.
   mov $5,$2  ;; Set search-limit for "find-next-prime loop" below, this should be enough by Bertrand's postulate
-  lpb $5,1   ;; (Bertrand is a great friend of all LODA-coders!). Start the inner loop.
+  lpb $5     ;; (Bertrand is a great friend of all LODA-coders!). Start the inner loop.
     add $2,1   ;; First increment the prime past previous
     mov $6,$2  ;; And make temp. copy of it
     gcd $6,$3  ;; Take the greatest common divisor with the primorial constructed so far

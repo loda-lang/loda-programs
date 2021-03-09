@@ -8,10 +8,10 @@ mov $1,1     ; Initialize the result-register, eventually a product of dividing 
 mov $2,2     ; Will contain candidates for successive numbers (primes) that will divide what's remaining of n, after all earlier divisors have been divided out.
 mov $3,$0    ; Make a copy of an argument, for later use as a loop counter (outer loop)
 mov $4,$3    ; also another copy (for the inner loop)
-lpb $3,1
+lpb $3
   mov $5,$4    ; Get a fresh copy of orig n for the the inner loop counter
   mov $6,0     ; will be valuation(n,$2)
-  lpb $5,1
+  lpb $5
     add $6,1
     mov $7,$0
     mod $7,$2    ; Does our prime candidate divide what is remaining of n?
