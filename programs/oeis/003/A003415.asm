@@ -10,9 +10,9 @@
 ; mov $1,0    ; Initialize the result-register, the result (which is a sum) is constructed to this (such zero-inits actually not needed in LODA!)
 mov $2,2     ; This is the smallest prime-divisor we have encountered so far.
 mov $5,1     ; Current product m in the above PARI-script.
-lpb $0,1     ; Start the main loop. We stop when there's nothing remaining in $0 anymore. Guaranteed to decrease on every iteration.
+lpb $0       ; Start the main loop. We stop when there's nothing remaining in $0 anymore. Guaranteed to decrease on every iteration.
   mov $3,$0    ; What's remaining of $0 is safe upper limit for finding its smallest prime factor.
-  lpb $3,1     ; Done in this subloop, find the next prime >= $2 that divides $0, which = A020639($0).
+  lpb $3       ; Done in this subloop, find the next prime >= $2 that divides $0, which = A020639($0).
     mov $4,$0
     mod $4,$2
     cmp $4,0

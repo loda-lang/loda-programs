@@ -9,10 +9,10 @@ add $0,1     ; Add one, because A003961 is offset=1 sequence.
 mov $1,1     ; Initialize the result-register, the result (which is a product) is constructed into this.
 mov $2,2     ; This is the smallest prime-divisor we have encountered so far.
 mov $4,1
-lpb $0,1     ; Start the main loop. We stop when there's nothing remaining in $0 anymore. Guaranteed to decrease on every iteration.
+lpb $0       ; Start the main loop. We stop when there's nothing remaining in $0 anymore. Guaranteed to decrease on every iteration.
   mul $1,$4    ; Multiply m by ($2-1) of the previous iteration (and by 1 on the first iteration).
   mov $3,$0    ; What's remaining of $0 is safe upper limit for finding its smallest prime factor.
-  lpb $3,1     ; Which is done in this subloop: find the next prime >= $2 that divides $0, which = A020639($0).
+  lpb $3       ; Which is done in this subloop: find the next prime >= $2 that divides $0, which = A020639($0).
     mov $4,$0
     mod $4,$2
     cmp $4,0
@@ -24,10 +24,10 @@ lpb $0,1     ; Start the main loop. We stop when there's nothing remaining in $0
   div $0,$2    ; Divide one instance of that (current) smallest prime factor out of $0.
   mov $4,$2
   mov $5,$2
-  lpb $5,1     ; Then search the first prime > $2 in this naive little loop.
+  lpb $5       ; Then search the first prime > $2 in this naive little loop.
     mov $6,$4
     add $4,1
-    lpb $6,1     ; That contains another naive loop for the primality check. Check whether gcd($4,k) = 1 for all k = 1..($4-1).
+    lpb $6       ; That contains another naive loop for the primality check. Check whether gcd($4,k) = 1 for all k = 1..($4-1).
       mov $7,$4
       gcd $7,$6
       cmp $7,1

@@ -7,7 +7,7 @@
 ;
 add $0,1
 mov $2,$0
-lpb $2,1
+lpb $2
   mov $1,$0
   mod $1,2
   div $0,2
@@ -22,7 +22,7 @@ mov $1,0     ; Initialize the result-register, which is the sum of prime exponen
 mov $2,3     ; This is the smallest prime-divisor encountered so far. 3 is the smallest possible for this.
 mov $3,$0
 mov $6,$0    ; Have an original A000265(n) retained in a safe place.
-lpb $3,1     ; Note that A001222(n) < n always.
+lpb $3       ; Note that A001222(n) < n always.
   mov $4,$0
   mod $4,$2
   cmp $4,0
