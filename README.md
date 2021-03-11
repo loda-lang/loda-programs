@@ -96,7 +96,7 @@ Run the test suite of LODA.
 ## LODA Language
 
 The LODA language is an assembly language with focus on arithmetic and number-theoretical operations.
-For a detailed overview, please take a look the [language documentation](language.MD).
+For a detailed overview, please take a look the [language documentation](LANGUAGE.md).
 
 ## Related Projects
 
