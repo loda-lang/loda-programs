@@ -4,6 +4,4 @@
 mov $2,$0
 cal $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
 add $0,$2
-sub $0,$2
-add $0,$2
 mov $1,$0
