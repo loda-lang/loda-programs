@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,1
-gcd $1,243
+gcd $1,729
 div $1,2
 mul $1,9
 add $1,4
