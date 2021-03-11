@@ -93,7 +93,7 @@ Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder.
 
 Run the test suite of LODA.
 
-## Language
+## LODA Language
 
 The LODA language is an assembly language with focus on arithmetic and number-theoretical operations.
 For a detailed overview, please take a look the [language documentation](language.MD).
