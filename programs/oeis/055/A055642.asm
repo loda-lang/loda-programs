@@ -3,7 +3,6 @@
 
 lpb $0,$0
   div $0,10
-  add $1,23
+  add $1,1
 lpe
-div $1,23
 add $1,1
