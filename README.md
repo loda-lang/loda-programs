@@ -103,3 +103,4 @@ For a detailed overview, please take a look the [language documentation](LANGUAG
 * [LODA Lab](https://github.com/neoneye/loda-lab) by Simon Strandgaard is an experimental implementation of the LODA language in Rust.
 * [jOEIS](https://github.com/archmageirvine/joeis) by Sean A. Irvine and Georg Fischer is a collection of pure Java programs implementing sequences from the OEIS.
 * [Sequence Database](http://sequencedb.net) by [Jon Maiga](http://www.jonkagstrom.com/) is a database with machine generated integer and decimal sequences.
+* [The Ramanujan Machine](https://github.com/ShaharGottlieb/MasseyRamanujan) by Shahar Gottlieb is an algorithmic approach to discover new mathematical conjectures.
