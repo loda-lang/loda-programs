@@ -7,7 +7,7 @@ lpb $0
   gcd $1,$3
   pow $1,$0
   mod $0,2
-  fac $0
+  cal $0,142
 lpe
 add $2,$0
 add $1,$2

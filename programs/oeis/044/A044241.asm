@@ -8,7 +8,7 @@ mul $0,8
 lpb $0
   pow $0,$4
   add $1,3
-  fac $1
+  cal $1,142
 lpe
 add $1,48
 mov $3,$2

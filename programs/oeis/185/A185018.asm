@@ -1,15 +1,7 @@
 ; A185018: Inverse to sequence matrix for natural numbers.
 ; 1,-2,1,1,-2,1,0,1,-2,1,0,0,1,-2,1,0,0,0,1,-2,1,0,0,0,0,1,-2,1,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,0,0,0,1,-2,1
 
-cal $0,167194 ; Triangle read by rows. A130713 in the columns.
-lpb $0
-  sub $0,2
-  mov $1,-2
-lpe
-sub $0,2
-add $1,3
-lpb $1
-  add $0,2
-  mov $1,1
-lpe
-mov $1,$0
+cal $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
+add $1,$0
+sub $1,3
+bin $1,$0

@@ -6,7 +6,7 @@ lpb $0,1
   gcd $2,$3
   mov $4,$2
   sub $2,1
-  fac $2
+  cal $2,142
   add $1,$4
   add $1,1
   mul $2,$1

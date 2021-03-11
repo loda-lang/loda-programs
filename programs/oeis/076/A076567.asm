@@ -4,6 +4,4 @@
 add $0,2
 mul $0,2
 cal $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-sub $0,4
 mov $1,$0
-add $1,4

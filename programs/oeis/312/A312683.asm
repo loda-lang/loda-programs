@@ -12,7 +12,7 @@ lpb $9
   mov $2,1
   lpb $0
     add $0,$2
-    fac $1
+    cal $1,142
     mov $2,$0
     mov $0,1
     mod $2,9

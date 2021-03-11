@@ -4,7 +4,7 @@
 mov $1,$0
 div $0,2
 add $0,1
-fac $0
+cal $0,142
 sub $1,1
 gcd $1,2
 mul $1,$0

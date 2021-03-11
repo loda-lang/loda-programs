@@ -13,7 +13,7 @@ lpb $2
     div $0,2
     mod $3,3
     mul $3,3
-    fac $3
+    cal $3,142
   lpe
   div $3,5
   add $4,5

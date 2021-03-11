@@ -4,20 +4,20 @@
 add $0,1
 mul $0,2
 mov $2,1
-lpb $0,1
+lpb $0
   sub $0,$2
-  lpb $0,1
+  lpb $0
     mov $4,$0
     mul $0,2
     mov $3,$0
     cmp $3,0
     add $0,$3
     div $2,$0
-    cal $4,130188
+    cal $4,130188 ; Denominators of rationals r(n) related to the z-sequence of the Sheffer matrix A060821 for Hermite polynomials.
     add $2,$4
     mul $2,$0
     add $1,$2
-    lpb $2,1
+    lpb $2
       mov $0,1
       mov $2,1
     lpe

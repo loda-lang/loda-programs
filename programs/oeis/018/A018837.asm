@@ -15,7 +15,7 @@ lpb $2
   lpe
   sub $2,1
   mul $2,9
-  fac $3
+  cal $3,142
   mul $0,$3
 lpe
 add $1,$0

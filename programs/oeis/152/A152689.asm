@@ -40,7 +40,7 @@ lpb $24
           lpb $2
             mov $1,$0
             sub $1,3
-            fac $1
+            cal $1,142
             mul $1,2
             mov $2,2
           lpe

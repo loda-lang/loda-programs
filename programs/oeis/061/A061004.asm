@@ -6,7 +6,7 @@ mov $2,9
 mov $4,5
 lpb $0
   mod $2,$4
-  fac $2
+  cal $2,142
   div $2,10
   mul $2,2
   mov $3,$0

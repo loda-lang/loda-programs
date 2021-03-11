@@ -4,11 +4,11 @@
 mov $3,$0
 add $0,2
 mov $2,5
-fac $3
+cal $3,142
 mul $3,2
 div $3,$0
 lpb $0
-  fac $1
+  cal $1,142
   add $2,$3
   add $4,$2
   div $0,$4

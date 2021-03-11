@@ -8,8 +8,7 @@ lpb $0
   add $2,$1
 lpe
 mov $1,2
-trn $3,1
-fac $3
+cal $3,142
 mul $3,2
 pow $3,$2
 add $1,$3

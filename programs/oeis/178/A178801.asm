@@ -3,5 +3,5 @@
 
 add $0,1
 cal $0,238965 ; Duplicate of A036042.
-fac $0
+cal $0,142
 mov $1,$0

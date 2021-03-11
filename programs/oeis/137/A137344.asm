@@ -10,10 +10,10 @@ lpb $2
   add $4,$2
   lpb $4
     gcd $4,2
-    trn $4,$3
+    sub $4,$3
   lpe
   sub $2,1
-  fac $4
+  cal $4,142
   mul $1,$4
 lpe
 div $1,7

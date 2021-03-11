@@ -4,7 +4,7 @@
 mul $0,4
 lpb $0
   sub $0,1
-  add $2,2
-  trn $0,$2
-  add $1,1
+  add $1,2
+  trn $0,$1
 lpe
+div $1,2

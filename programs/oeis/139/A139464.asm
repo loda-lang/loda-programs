@@ -5,7 +5,7 @@ mov $1,1
 mov $3,$0
 mov $4,3
 add $3,1
-fac $3
+cal $3,142
 mul $4,$0
 mov $2,$4
 sub $3,$0

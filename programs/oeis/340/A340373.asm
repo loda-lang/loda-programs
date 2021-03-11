@@ -4,6 +4,4 @@
 mul $0,2
 add $0,1
 cal $0,215480 ; Characteristic function of numbers n with exactly two distinct prime factors
-cal $0,8607 ; Multiples of 25.
 mov $1,$0
-div $1,25

@@ -12,7 +12,7 @@ lpb $0
   mul $1,10
   add $1,72
 lpe
-fac $0
+cal $0,142
 add $1,$0
 add $1,6
 add $1,$3

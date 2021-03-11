@@ -9,7 +9,7 @@ lpb $0
   mov $1,10
   sub $2,8
   pow $1,$2
-  trn $0,$1
-  fac $0
+  sub $0,$1
+  cal $0,142
 lpe
 sub $1,1

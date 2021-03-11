@@ -21,9 +21,8 @@ lpb $14
     pow $1,2
     div $1,4
     sub $1,1
-    mov $4,$0
     sub $4,$0
-    fac $4
+    cal $4,142
     add $4,1
     add $1,$4
     div $1,3

@@ -7,7 +7,7 @@ mov $1,1     ; Initialize the result-register, will successively contain those s
 mov $3,1     ; Odd numbers: 1, 3, 5, 7, 9, ...	
 mov $4,1     ; Square candidates: 1, 4, 9, 16, 25, ... (partial sums of the above)
 mov $2,$0    ; Make a copy of an argument, to be used as
-lpb $2,1     ;  a loop-counter
+lpb $2       ;  a loop-counter
   add $3,2     ; Get the next odd number
   add $4,$3    ; Get the next square
   mov $5,$0    ; Get a work copy of the original n

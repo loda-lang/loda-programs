@@ -7,4 +7,4 @@ lpb $0
   mod $2,10
   add $1,$2
 lpe
-fac $1
+cal $1,142

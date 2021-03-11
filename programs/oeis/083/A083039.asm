@@ -3,6 +3,6 @@
 
 mov $1,$0
 mod $0,3
-fac $0
+cal $0,142
 mod $1,2
 add $1,$0

@@ -4,9 +4,4 @@
 add $0,1
 mul $0,3
 cal $0,90368 ; a(1) = 1; for n>1, smallest divisor > 1 of 2n-1.
-mul $0,2
 mov $1,$0
-sub $1,10
-div $1,4
-mul $1,2
-add $1,5

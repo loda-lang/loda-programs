@@ -7,4 +7,4 @@ lpb $0
   trn $0,1
   add $1,1
 lpe
-fac $1
+cal $1,142

@@ -3,13 +3,10 @@
 
 sub $0,1
 cal $0,62026 ; a(n) = n(n+1)(n^2 -3n +6)/4
-add $0,11
-mov $2,$0
-mul $0,3
-sub $2,$0
-sub $2,$0
-sub $1,$2
-sub $1,46
-div $1,10
+add $0,20
+mul $0,2
+mov $1,$0
+sub $1,40
+div $1,4
 mul $1,2
 add $1,1

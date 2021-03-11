@@ -4,9 +4,9 @@
 gcd $2,$0
 mov $3,$0
 sub $3,2
-fac $3
+cal $3,142
 add $3,3
-fac $2
+cal $2,142
 div $2,2
 mul $2,2
 add $2,$3

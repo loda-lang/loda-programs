@@ -9,11 +9,11 @@ lpb $13
   mov $0,$11
   sub $13,1
   sub $0,$13
-  fac $1
+  cal $1,142
   pow $2,$6
   add $0,$2
   mul $1,$0
-  fac $4
+  cal $4,142
   add $4,$0
   gcd $4,2
   pow $1,$4

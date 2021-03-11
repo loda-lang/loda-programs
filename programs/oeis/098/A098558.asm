@@ -3,7 +3,7 @@
 
 mov $1,$0
 pow $3,$0
-fac $1
+cal $1,142
 mov $2,$3
 mul $1,2
 sub $1,$2

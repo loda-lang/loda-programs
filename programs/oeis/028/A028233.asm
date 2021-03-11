@@ -8,7 +8,7 @@
 add $0,1     ; Add one, because A067029 is offset=1 sequence.
 mov $1,2     ; This is the smallest prime-divisor encountered so far.
 mov $3,$0
-lpb $3,1
+lpb $3
   mov $4,$0
   mod $4,$1
   add $1,1
@@ -20,7 +20,7 @@ lpe
 ; Then follows the final loop, where we divide every instance of that $1 out of n. 
 ; Note that for n=1, $1 is erroneously 3, but valuation(1,3) = 0, which is just what we want!
 ; Now an innovation: Use $0 itself as a loop register, and just make sure that div is effectively no-op when $1 does not divide $0 anymore
-lpb $0,1
+lpb $0
   mov $4,$0
   mod $4,$1
   cmp $4,0

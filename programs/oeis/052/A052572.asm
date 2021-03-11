@@ -3,13 +3,13 @@
 
 mov $1,$0
 mov $2,$0
-fac $0
+cal $0,142
 add $1,2
 mul $1,$0
 lpb $2,1
   add $1,$0
   mov $2,$3
-  fac $4
+  cal $4,142
   add $1,$4
 lpe
 sub $1,1

@@ -3,7 +3,7 @@
 
 mov $1,$0
 sub $0,5
-fac $1
+cal $1,142
 gcd $0,$1
 mul $0,5
 div $1,$0

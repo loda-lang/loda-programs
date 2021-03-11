@@ -14,7 +14,7 @@ lpb $3
     mov $4,1
     mul $4,$0
     mod $0,6
-    fac $5
+    cal $5,142
     sub $0,$5
   lpe
   div $4,6

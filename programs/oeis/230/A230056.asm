@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$2
-fac $3
+cal $3,142
 gcd $5,$0
 mov $4,8
 lpb $2,1

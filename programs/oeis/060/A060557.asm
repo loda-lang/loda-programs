@@ -13,7 +13,7 @@ lpb $0
   trn $6,6
   add $3,$6
   add $2,$3
-  fac $4
+  cal $4,142
   add $3,$4
   mov $6,$5
   add $6,1

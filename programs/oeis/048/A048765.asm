@@ -6,4 +6,4 @@ lpb $0
   add $1,1
   div $0,$1
 lpe
-fac $1
+cal $1,142

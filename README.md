@@ -121,7 +121,6 @@ The table below summarizes the operations currently supported by LODA. We use th
 | `mod a,b` | Modulus        | Remainder of division of target by source: `a:=a%b` |
 | `pow a,b` | Power          | Raise source to the power of target: `a:=a^b` |
 | `log a,b` | Logarithm      | Logarithm of target with source as base: `a:=floor(log_b(a))` |
-| `fac a`   | Factorial      | Apply factorial function to target: `a:=a!` |
 | `gcd a,b` | Greatest Common Divisor | Greatest common divisor or target and source: `a:=gcd(a,b)`. Undefinied for 0,0. Otherwise always positive. |
 | `bin a,b` | Binomial Coefficient | Target over source: `a:=a!/(b!(a-b)!)`|
 | `cmp a,b` | Comparison | Compare target with source value: `a:=(a=b)?1:0` |

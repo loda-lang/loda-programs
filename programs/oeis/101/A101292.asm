@@ -8,7 +8,7 @@ sub $4,1
 mul $4,$1
 add $4,2
 div $4,2
-fac $1
+cal $1,142
 sub $1,$4
 add $1,1
 mov $3,$5
