@@ -6,7 +6,7 @@ mov $2,$0
 cal $0,142
 add $1,2
 mul $1,$0
-lpb $2,1
+lpb $2
   add $1,$0
   mov $2,$3
   cal $4,142

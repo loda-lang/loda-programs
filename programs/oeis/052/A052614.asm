@@ -7,7 +7,7 @@ cal $3,142
 div $2,2
 gcd $1,$3
 div $2,2
-lpb $2,1
+lpb $2
   add $1,$3
   sub $2,1
 lpe
