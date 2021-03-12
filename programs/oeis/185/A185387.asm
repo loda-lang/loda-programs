@@ -1,41 +1,26 @@
 ; A185387: E.g.f. exp(x)+log(1/(1-x)).
 ; 1,2,2,3,7,25,121,721,5041,40321,362881,3628801,39916801,479001601,6227020801,87178291201,1307674368001,20922789888001,355687428096001,6402373705728001
 
-mov $3,2
-mov $5,$0
-lpb $3
-  mov $0,$5
-  sub $3,1
-  add $0,$3
-  sub $0,1
-  mov $7,2
-  mov $9,$0
-  lpb $7
-    mov $0,$9
-    sub $7,1
-    add $0,$7
-    sub $0,1
-    cal $0,14144 ; Apply partial sum operator twice to factorials.
-    mov $4,$0
-    mov $6,$7
-    lpb $6
-      sub $6,1
-      mov $8,$4
-    lpe
-  lpe
-  lpb $9
-    sub $8,$4
-    mov $9,0
-  lpe
+mov $3,3
+lpb $0
+  mov $1,$3
   mov $2,$3
-  mov $4,$8
-  lpb $2
-    mov $1,$4
-    sub $2,1
-  lpe
+  mov $4,$0
+  mov $4,$0
+  sub $0,1
+  mov $2,$0
+  mul $3,$0
+  div $4,22
+  add $6,$0
 lpe
-lpb $5
-  sub $1,$4
-  mov $5,1
+lpb $0
+  mov $2,$0
+  mov $5,$3
+  cal $0,788 ; Total number of 1's in binary expansions of 0, ..., n.
 lpe
+add $4,$3
+add $4,$2
+mod $4,2
+mov $4,$1
+div $1,3
 add $1,1

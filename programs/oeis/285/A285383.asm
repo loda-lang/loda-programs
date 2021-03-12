@@ -4,7 +4,5 @@
 lpb $0
   dif $0,4
 lpe
-sub $0,3
-gcd $0,2
+mod $0,2
 mov $1,$0
-sub $1,1

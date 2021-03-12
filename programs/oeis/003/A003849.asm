@@ -3,13 +3,4 @@
 
 cal $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
 sub $1,$0
-mov $2,$0
-mov $0,9
-mul $2,5
-div $0,$2
-lpb $2
-  add $1,$0
-  mul $2,$1
-lpe
 add $1,2
-div $1,2
