@@ -3,8 +3,4 @@
 
 cal $0,165827 ; Totally multiplicative sequence with a(p) = 6.
 pow $0,2
-mul $0,35
 mov $1,$0
-div $1,1225
-mul $1,35
-add $1,1

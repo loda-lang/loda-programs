@@ -5,9 +5,7 @@ mul $0,2
 lpb $0
   lpb $0
     dif $0,2
-    add $1,17
+    add $1,1
   lpe
-  mul $0,3
-  div $0,6
+  div $0,2
 lpe
-div $1,17

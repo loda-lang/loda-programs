@@ -3,7 +3,6 @@
 
 lpb $0
   dif $0,3
-  mov $1,1
+  mov $1,6
 lpe
-mul $1,6
 add $1,1
