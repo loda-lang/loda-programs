@@ -12,7 +12,7 @@ lpb $0
   add $6,$3
   add $6,1
   mov $4,$6
-  clr $0,$2
+  mov $0,0
 lpe
 mov $1,$4
 mul $1,5
