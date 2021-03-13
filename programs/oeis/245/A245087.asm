@@ -3,9 +3,9 @@
 
 mov $3,1
 mov $2,$0
-lpb $3,1
+lpb $3
   cal $2,142
-  lpb $2,1
+  lpb $2
     div $2,2
     sub $3,$0
     add $1,$2

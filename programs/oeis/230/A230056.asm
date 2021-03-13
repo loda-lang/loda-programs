@@ -6,9 +6,9 @@ mov $3,$2
 cal $3,142
 gcd $5,$0
 mov $4,8
-lpb $2,1
+lpb $2
   div $2,5
-  lpb $4,1
+  lpb $4
     add $5,7
     gcd $1,$3
     mul $1,$5
