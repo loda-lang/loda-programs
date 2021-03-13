@@ -3,13 +3,8 @@
 
 add $0,1
 lpb $0
-  lpb $0
-    add $2,$0
-    sub $0,1
-    add $3,$2
-  lpe
-  lpb $2
-    add $1,$3
-    sub $2,1
-  lpe
+  add $2,$0
+  sub $0,1
+  add $1,$2
 lpe
+mul $1,$2
