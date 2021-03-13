@@ -1,0 +1,105 @@
+; A237589: Sum of first n odd noncomposite numbers.
+; 1,4,9,16,27,40,57,76,99,128,159,196,237,280,327,380,439,500,567,638,711,790,873,962,1059,1160,1263,1370,1479,1592,1719,1850,1987,2126,2275,2426,2583,2746,2913,3086,3265,3446,3637,3830,4027,4226,4437,4660,4887
+
+mov $37,$0
+mov $39,$0
+add $39,1
+mov $40,$0
+lpb $39
+  clr $0,37
+  mov $0,$37
+  sub $39,1
+  sub $0,$39
+  mov $31,$0
+  mov $33,2
+  mov $35,$0
+  lpb $33
+    clr $0,31
+    mov $0,$31
+    sub $33,1
+    add $0,$33
+    sub $0,1
+    mov $1,$0
+    sub $1,$0
+    mov $27,$0
+    mov $29,$0
+    add $0,2
+    add $0,$1
+    sub $0,5
+    add $1,1
+    trn $1,$1
+    mov $3,$0
+    mov $5,2
+    mov $26,$1
+    cmp $26,0
+    add $1,$26
+    div $0,$1
+    mov $5,$0
+    cal $0,172407 ; Positive numbers n such that n+10 is a prime.
+    mov $2,$1
+    add $2,$1
+    add $4,$1
+    sub $2,$4
+    mov $5,$1
+    mov $1,$0
+    sub $0,$2
+    add $1,$4
+    add $2,2
+    mov $3,6
+    mov $4,$0
+    add $0,$2
+    add $2,3
+    sub $4,2
+    add $4,$5
+    mul $4,2
+    trn $5,$1
+    sub $5,$0
+    mov $0,37
+    add $1,7
+    mov $0,$1
+    mov $3,2
+    mov $4,$2
+    sub $2,5
+    mov $26,$5
+    cmp $26,0
+    add $5,$26
+    div $2,$5
+    trn $2,$4
+    mul $4,$1
+    add $1,3
+    mov $1,$0
+    mov $28,$27
+    mul $28,$27
+    mul $28,$27
+    mov $30,$29
+    mul $30,$29
+    mul $30,$29
+    mov $34,$33
+    lpb $34
+      mov $32,$1
+      sub $34,1
+    lpe
+  lpe
+  lpb $31
+    mov $31,0
+    sub $32,$1
+  lpe
+  mov $1,$32
+  sub $1,2
+  div $1,4
+  mov $1,$4
+  add $1,8
+  mov $1,$0
+  mov $36,$35
+  mul $36,$35
+  mul $36,$35
+  add $38,$0
+lpe
+mov $1,$38
+add $1,1
+mov $41,$40
+mov $42,$40
+mul $42,2
+add $1,$42
+mul $41,$40
+mul $41,$40
