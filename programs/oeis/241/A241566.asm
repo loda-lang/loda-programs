@@ -1,0 +1,54 @@
+; A241566: Number of 2-element subsets of {1,...,n} whose sum has more than 2 divisors.
+; 0,0,1,2,5,8,12,17,22,27,34,41,50,60,70,80,92,105,119,134,149,164,181,198,216,235,254,274,296,318,341,365,390,415,441,467,494,522,551,580,611,642,675,709,743,778,815,853,891,930,969,1008,1049,1090,1131
+
+mov $27,$0
+mov $29,$0
+add $29,1
+lpb $29
+  clr $0,27
+  mov $0,$27
+  sub $29,1
+  sub $0,$29
+  mov $1,$0
+  add $1,2
+  mov $2,$0
+  mov $3,768
+  cal $0,60715 ; Number of primes between n and 2n exclusive.
+  mov $3,3072
+  mov $4,$1
+  mov $4,$0
+  add $0,1
+  add $1,1
+  mov $1,$0
+  mov $1,$0
+  mov $0,12
+  sub $1,$2
+  mov $3,1
+  trn $4,1
+  add $4,1
+  mul $4,$2
+  mov $5,13
+  mov $26,$2
+  cmp $26,0
+  add $2,$26
+  div $4,$2
+  mov $2,2
+  mov $4,6
+  sub $5,$1
+  add $1,1
+  mov $2,$5
+  mul $2,3
+  add $4,$5
+  add $4,$5
+  trn $5,$4
+  sub $5,$5
+  mov $26,$1
+  cmp $26,0
+  add $1,$26
+  div $0,$1
+  mov $1,$2
+  sub $1,35
+  div $1,3
+  add $28,$1
+lpe
+mov $1,$28
