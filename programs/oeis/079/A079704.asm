@@ -4,7 +4,5 @@
 cal $0,60429 ; a(n) = 4*prime(n)^2+1.
 mul $0,7
 mov $1,$0
-sub $1,118
 div $1,28
 mul $1,2
-add $1,8
