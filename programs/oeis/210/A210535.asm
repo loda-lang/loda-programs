@@ -3,12 +3,5 @@
 
 mul $0,2
 add $0,1
-mov $2,16
 cal $0,4739 ; Concatenation of sequences (1,2,2,...,n-1,n-1,n,n,n-1,n-1,...,2,2,1) for n >= 1.
-add $2,$0
-mov $0,$2
-mul $0,8
 mov $1,$0
-sub $1,136
-div $1,8
-add $1,1
