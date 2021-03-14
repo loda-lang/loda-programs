@@ -9,7 +9,7 @@ lpb $7
   mov $0,$5
   sub $7,1
   sub $0,$7
-  cal $0,32
+  cal $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
   mov $1,$0
   div $1,5
   mul $1,2

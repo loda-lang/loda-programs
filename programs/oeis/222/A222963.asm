@@ -3,5 +3,4 @@
 
 cal $0,74367 ; (p^2-5)/4 for odd primes p.
 mov $1,$0
-div $1,2
-mul $1,2
+sub $1,1

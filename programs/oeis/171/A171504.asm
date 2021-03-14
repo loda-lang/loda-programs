@@ -1,30 +1,10 @@
 ; A171504: a(n) = n-th nonprime + n.
 ; 2,6,9,12,14,16,19,22,24,26,29,32,34,36,39,41,43,45,47,50,53,55,57,59,61,64,66,68,71,74,76,78,81,83,85,87,89,92,94,96,98,100,103,106,108,110,112,114,117,119
 
-mov $29,2
-mov $31,$0
-lpb $29
-  sub $29,1
-  add $0,$29
-  sub $0,1
-  mov $5,$0
-  mov $6,$0
-  lpb $0
-    add $3,$6
-    lpb $3
-      mov $1,9
-      mul $1,$5
-      lpb $0,2
-        add $1,$6
-        mov $3,$0
-        cal $1,230980 ; Number of primes <= n, starting at n=0.
-        div $0,4
-      lpe
-    lpe
-  lpe
-lpe
-add $1,3
-mov $33,$31
-mul $33,2
-add $1,$33
-sub $1,1
+mov $2,$0
+mul $2,2
+cal $0,139270 ; Twice nonprime numbers.
+add $0,$2
+mov $1,$0
+div $1,2
+add $1,1

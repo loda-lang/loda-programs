@@ -5,6 +5,5 @@ sub $0,1
 mov $1,$0
 cal $0,40 ; The prime numbers.
 sub $0,$1
-add $2,$1
 mov $1,$0
 sub $1,2
