@@ -4,7 +4,5 @@
 lpb $0
   sub $0,5
 lpe
-lpb $0
-  dif $0,2
-lpe
+dif $0,2
 mov $1,$0
