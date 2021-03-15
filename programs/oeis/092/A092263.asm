@@ -17,8 +17,7 @@ lpb $10
     mov $0,$5
     sub $7,1
     sub $0,$7
-    add $4,32
-    cal $0,$4
+    cal $0,32
     mov $1,$0
     div $1,5
     mul $1,2
