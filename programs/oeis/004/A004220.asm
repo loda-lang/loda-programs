@@ -6,10 +6,9 @@ mul $2,$0
 add $2,6
 bin $2,3
 lpb $0
-  mov $3,$2
-  mul $3,9
   mov $0,0
-  log $3,2
+  mov $1,$2
+  mul $1,9
+  log $1,2
 lpe
-mov $1,$3
 trn $1,7

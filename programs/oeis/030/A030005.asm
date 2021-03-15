@@ -3,5 +3,4 @@
 
 cal $0,103729 ; Column k=2 sequence of array A103728.
 mov $1,$0
-mul $1,2
-div $1,8
+div $1,4

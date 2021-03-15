@@ -3,9 +3,8 @@
 
 mul $0,3
 lpb $0
-  trn $0,3
   div $0,2
-  add $1,6
+  sub $0,1
+  add $1,1
 lpe
-div $1,6
 add $1,1

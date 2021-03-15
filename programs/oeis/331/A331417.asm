@@ -1,53 +1,16 @@
 ; A331417: Maximum sum of primes of the parts of an integer partition of n.
 ; 0,2,4,6,8,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269
 
-mov $1,$0
 mov $2,$0
-mov $3,0
-mov $8,$0
 lpb $0
-  add $0,$3
   mov $1,$0
   cal $1,182986 ; Zero together with the prime numbers (A000040).
-  add $0,$3
   mul $0,2
-  add $2,$1
-  trn $3,$0
-  mov $4,$0
-  sub $4,$1
-  sub $4,1
-  sub $2,$4
-  gcd $2,$1
-  sub $2,$3
-  mov $2,$4
-  mov $5,$3
-  add $5,1
-  mov $9,$1
-  cmp $9,0
-  add $1,$9
-  div $2,$1
   mov $4,$1
   trn $4,$0
   mov $0,2
-  trn $1,1
-  mov $3,$5
-  add $3,2
 lpe
-mov $9,$5
-cmp $9,0
-add $5,$9
-div $1,$5
-sub $1,1
 mov $1,$4
-add $2,2
-trn $2,1
-mov $5,8
-mul $5,$2
-add $2,$0
-sub $2,$2
-mov $6,$8
-mul $6,2
-add $1,$6
-mov $7,$8
-mul $7,$8
-mul $7,$8
+mov $3,$2
+mul $3,2
+add $1,$3
