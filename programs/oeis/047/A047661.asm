@@ -4,6 +4,4 @@
 add $0,1
 cal $0,47674 ; Row 5 of square array defined in A047671.
 mov $1,$0
-sub $1,16
 div $1,3
-add $1,5
