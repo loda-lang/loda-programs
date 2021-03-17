@@ -9,17 +9,21 @@ lpb $29
   sub $29,1
   sub $0,$29
   sub $0,1
-  cal $0,276868 ; First differences of the Beatty sequence A276855 for 3 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
-  sub $2,$0
-  add $2,8
-  mul $2,2
-  sub $3,$2
-  pow $3,2
-  mul $3,3
-  add $3,122
-  mov $1,$3
-  sub $1,230
-  div $1,84
+  cal $0,282162 ; Difference sequence of the upper Wythoff sequence, A001950, with 2 prepended.
+  add $0,2900
+  add $4,$0
+  add $0,6
+  div $4,2
+  pow $4,2
+  mov $3,$4
+  mod $3,$0
+  mod $3,3
+  mov $5,$0
+  sub $5,$0
+  add $5,$0
+  gcd $5,$3
+  mov $1,$5
+  div $1,2907
   add $28,$1
 lpe
 mov $1,$28

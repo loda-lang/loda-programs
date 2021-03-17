@@ -5,7 +5,7 @@ mov $2,2
 lpb $0
   mov $1,$0
   cal $1,339265 ; Expansion of Product_{n >= 1} (1 - x^(2*n))*(1 - x^(2*n-1))*(1 - x^(2*n+1)).
-  lpb $1,3983
+  lpb $1,2
     add $2,$1
     lpb $1
       sub $1,1

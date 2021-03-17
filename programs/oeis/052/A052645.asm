@@ -6,7 +6,7 @@ div $0,2
 mov $3,$0
 mov $2,$0
 mod $2,4
-lpb $2,1
+lpb $2
   add $3,1
   gcd $4,2
   mov $1,$4

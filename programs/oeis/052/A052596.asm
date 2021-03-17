@@ -5,7 +5,7 @@ mov $1,$0
 cal $1,142
 sub $0,3
 mov $2,$0
-lpb $2,1
+lpb $2
   mul $1,2
   sub $2,1
   mul $2,2

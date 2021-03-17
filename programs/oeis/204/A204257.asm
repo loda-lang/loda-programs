@@ -3,6 +3,5 @@
 
 cal $0,294317 ; Triangle read by rows: T(n, k) = 2*n-k, k <= n.
 mod $0,3
-add $0,56
 mov $1,$0
-sub $1,55
+add $1,1

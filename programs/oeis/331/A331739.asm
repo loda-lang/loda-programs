@@ -3,7 +3,6 @@
 
 add $0,1
 lpb $0
-  add $1,$0
   dif $0,2
+  add $1,$0
 lpe
-div $1,2

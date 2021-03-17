@@ -1,0 +1,44 @@
+; A041031: Denominators of continued fraction convergents to sqrt(20).
+; 1,2,17,36,305,646,5473,11592,98209,208010,1762289,3732588,31622993,66978574,567451585,1201881744,10182505537,21566892818,182717648081,387002188980,3278735159921,6944472508822,58834515230497,124613502969816,1055742538989025,2236098580947866
+
+mov $2,1
+mov $3,0
+mov $4,$0
+mov $5,$0
+add $0,1
+mov $1,$5
+mov $3,0
+mul $4,2
+sub $1,$4
+sub $2,$4
+add $2,6
+sub $5,$0
+sub $5,1
+sub $5,$4
+mov $4,5
+sub $5,1
+mov $6,$5
+cmp $6,0
+add $5,$6
+div $1,$5
+add $5,7
+cal $0,1076 ; Denominators of continued fraction convergents to sqrt(5).
+mov $2,$1
+mov $1,5
+mov $1,$0
+dif $0,2
+cmp $1,5
+mov $3,0
+trn $3,$2
+mov $2,$1
+mov $1,3
+mov $2,4
+mov $4,$3
+mov $3,$0
+mul $0,2
+mov $1,$0
+sub $1,2
+div $1,2
+add $1,1
+add $4,3
+mov $5,4

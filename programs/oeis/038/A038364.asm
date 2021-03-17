@@ -1,7 +1,7 @@
 ; A038364: Numbers n such that n = (product of digits of n) + (sum of digits of n).
 ; 0,19,29,39,49,59,69,79,89,99
 
-lpb $0,1
+lpb $0
   sub $0,1
   mov $2,4
   add $1,5

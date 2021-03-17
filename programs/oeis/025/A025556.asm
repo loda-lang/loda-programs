@@ -3,19 +3,5 @@
 
 add $0,1
 cal $0,65515 ; Number of prime powers <= n.
-mov $3,$0
-trn $4,$0
-sub $4,6
-pow $4,2
-add $4,$0
-mul $4,2
-add $4,4
-mov $2,$4
-sub $2,17
-gcd $3,$2
-add $2,$3
-mov $0,$2
-mul $0,2
 mov $1,$0
-sub $1,128
-div $1,4
+sub $1,2

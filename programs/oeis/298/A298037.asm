@@ -3,9 +3,8 @@
 
 add $0,1
 mul $0,3
-div $0,2
 mov $1,$0
+div $1,2
 bin $1,2
-div $1,3
-mul $1,12
+mul $1,4
 add $1,1

@@ -3,36 +3,11 @@
 
 lpb $0
   mul $0,2
-  lpb $0
-    div $0,2
-    mov $7,$0
-    sub $0,1
-    mul $0,2
-    add $6,2
-    lpb $7,$0
-      lpb $0,$6
-        cmp $0,1
-        add $3,3
-        gcd $7,$6
-        sub $7,2
-        add $0,$7
-        mov $6,$7
-        add $6,1
-        mul $6,2
-        add $10,$3
-      lpe
-    lpe
-  lpe
+  add $0,1
+  cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $2,2
 lpe
-lpb $10
-  mov $2,$10
-  mov $1,$2
-  lpb $0,17
-    mov $1,2
-  lpe
-  lpb $7
-    div $7,7
-    mov $10,1
-  lpe
-lpe
+mov $1,2
+add $1,$2
+sub $1,2
 div $1,2

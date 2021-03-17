@@ -3,8 +3,6 @@
 
 add $0,1
 cal $0,131733 ; Primes (A000040) - odds (A005408).
-mul $0,2
-mov $1,6
-mul $1,$0
-mul $1,2
-div $1,48
+mul $0,6030
+mov $1,$0
+div $1,12060

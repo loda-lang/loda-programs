@@ -4,7 +4,4 @@
 add $0,1
 cal $0,72205 ; a(n) = (p^2 - p + 2)/2 for p = prime(n); number of squares modulo p^2.
 mov $1,$0
-mul $1,17
-sub $1,68
-div $1,17
-add $1,3
+sub $1,1

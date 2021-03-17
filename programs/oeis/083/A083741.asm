@@ -3,8 +3,5 @@
 
 mov $2,$0
 cal $0,298043 ; If n = Sum_{i=1..h} 2^b_i with b_1 > ... > b_h >= 0, then a(n) = Sum_{i=1..h} i * 2^b_i.
-sub $0,1
-sub $2,6
 sub $0,$2
 mov $1,$0
-sub $1,5

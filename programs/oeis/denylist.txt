@@ -1,0 +1,1686 @@
+A000017: Erroneous version of A032522.
+A000154: Erroneous version of A003713.
+A000381: Essentially the same as A001611.
+A000783: Erroneous version of A007535.
+A000858: Duplicate of A003436.
+A001012: Erroneous version of A040082.
+A001180: Erroneous version of A002572.
+A001199: Erroneous version of A056642.
+A001493: Erroneous version of A000637.
+A001984: Erroneous version of A045535.
+A002692: Not integral, withdrawn.
+A002693: Not integral, withdrawn.
+A002719: Erroneous version of A020554.
+A002792: Erroneous version of A108919.
+A002800: Erroneous version of A001157.
+A002811: Erroneous version of A002439.
+A002886: Van der Waerden numbers W(2;2,n-1).
+A002932: Erroneous version of A173380.
+A002933: Erroneous version of A174313.
+A002934: Erroneous version of A174319.
+A003054: Erroneous version of A001011 ("folding a strip of stamps").
+A003058: Duplicate of A000194.
+A003175: Almost certainly an erroneous version of A129427.
+A003189: Erroneous version of A051240.
+A003223: Erroneous version of A006841.
+A003694: Incomplete version of A000053.
+A003697: Duplicate of A006253.
+A004030: Erroneous version of A256413.
+A004049: Erroneous version of A006967.
+A004060: Erroneous version of A028491.
+A004258: Duplicate of A029837.
+A004577: Erroneous version of A000940.
+A004644: Duplicate of A000866
+A004792: Erroneous version of A003278.
+A005000: Erroneous version of A006505.
+A005170: Erroneous version of A226999.
+A005497: Erroneous version of A210696.
+A005693: Erroneous version of A321442.
+A005734: Incomplete version of A001049.
+A005780: Erroneous version of A033678.
+A005844: a(n+1) = 2^a(n) - 1.
+A005932: Erroneous version of A003781.
+A005965: Erroneous version of A000421.
+A005992: Erroneous version of A011260.
+A006031: Erroneous version of A016054.
+A006123: Erroneous version of A000085.
+A006140: Erroneous version of A003406.
+A006263: Erroneous version of A014221.
+A006510: Duplicate of A006055.
+A006775: Erroneous version of A309982.
+A006808: Essentially a duplicate of A006727.
+A006826: Erroneous version of A003182.
+A006860: Erroneous version of A223911: Tiered orders on n nodes.
+A006986: Erroneous version of A038119.
+A007103: Erroneous version of A006903.
+A007172: Erroneous version of A027610.
+A007174: Erroneous version of A182322.
+A007205: Erroneous version of A008349.
+A007342: Erroneous version of A001353.
+A007596: Erroneous version of A226909.
+A007669: Duplicate of A034343.
+A007881: Erroneous version of A001357 printed by mistake on back cover of Encyclopedia of Integer Sequences.
+A007914: Erroneous version of A048798.
+A007915: Duplicate of A004709.
+A008547: Erroneous version of A002906.
+A010682: Erroneous version of A001003.
+A010787: Duplicate of A008933.
+A011783: Duplicate of A001519.
+A011799: Duplicate of A006124.
+A011802: Duplicate of A007065
+A011803: Duplicate of A007625.
+A012266: Duplicate of A009468.
+A012268: Duplicate of A009655.
+A012270: Duplicate of A009585.
+A012272: Duplicate of A009789.
+A012295: Duplicate of A009486.
+A012296: Duplicate of A009675.
+A012298: Duplicate of A009596
+A012300: Duplicate of A009801.
+A012366: Duplicate of A009513.
+A012368: Duplicate of A009705.
+A012369: Duplicate of A009609.
+A012371: Duplicate of A009815.
+A012387: Duplicate of A009518.
+A012389: Duplicate of A009710.
+A012390: Duplicate of A009613.
+A012392: Duplicate of A009819.
+A012545: Duplicate of A009514.
+A012547: Duplicate of A009706.
+A012549: Duplicate of A009610.
+A012550: Duplicate of A009816.
+A013549: Incorrect version of A000085.
+A014277: Erroneous version of A269484.
+A014290: Submitted to the OEIS as "Seen on a billboard in England, definition unknown".
+A014305: Duplicate of A023533.
+A014539: Erroneous version of A003656.
+A014554: Erroneous version of A001606.
+A014558: Erroneous version of A000228.
+A014559: Erroneous version of A001168.
+A014615: Erroneous version of A001272.
+A014666: Erroneous version of A027435.
+A014716: Incomplete version of A016070.
+A014745: Duplicate of A004533.
+A015887: Erroneous version of A007015.
+A015994: Erroneous version of A023109.
+A016013: Probably an erroneous version of A016017.
+A016097: Erroneous version of A063507.
+A016160: Duplicate of A005062.
+A017149: Duplicate of A004771.
+A018781: Duplicate of A003523.
+A018905: Duplicate of A024537.
+A019272: Erroneous version of A006558.
+A019275: Incorrect version of A035010.
+A019513: Erroneous version of A307102.
+A019517: Erroneous version of A031976.
+A021000: Duplicate of A020727.
+A021015: Duplicate of A010680.
+A021037: Duplicate of A010674.
+A022832: Duplicate of A008348.
+A022945: Duplicate of A022443.
+A022948: Duplicate of A022443.
+A023492: Duplicate of A022801.
+A023737: Duplicate of A020654.
+A023812: Duplicate of A062813.
+A023988: Duplicate of A023819.
+A024162: Number of incongruent integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n.
+A024340: Duplicate of A012667.
+A024341: Duplicate of A012528.
+A024344: Duplicate of A012673.
+A024345: Duplicate of A012524.
+A024349: Duplicate of A012529
+A024350: Duplicate of A012669.
+A024353: Duplicate of A020883.
+A024484: Duplicate of A007226.
+A024497: Duplicate of A007228.
+A024521: Erroneous version of A014284.
+A024613: Duplicate of A024606.
+A024852: Duplicate of A023856.
+A024859: Duplicate of A023870.
+A024883: Duplicate of A024328.
+A024911: Duplicate of A024906.
+A025067: Erroneous version of A024371.
+A025068: Erroneous version of A024368.
+A025080: Duplicate of A024468.
+A025236: Duplicate of A014432.
+A025241: Essentially same as A004148.
+A025312: Duplicate of A024508.
+A025630: Duplicate of A036566.
+A026170: Duplicate of A026138.
+A026171: Duplicate of A026141.
+A026172: Duplicate of A026136.
+A026173: Duplicate of A026137.
+A026174: Duplicate of A026138.
+A026175: Duplicate of A026139.
+A026176: Duplicate of A026141.
+A026186: Duplicate of A026136.
+A026187: Duplicate of A026137.
+A026196: Duplicate of A026177.
+A026197: Duplicate of A026178.
+A026198: Duplicate of A026182.
+A026199: Duplicate of A026183.
+A026206: Duplicate of A026182.
+A026207: Duplicate of A026183.
+A026208: Duplicate of A026184.
+A026209: Duplicate of A026185.
+A026210: Duplicate of A026136.
+A026211: Duplicate of A026137.
+A026212: Duplicate of A026188.
+A026213: Duplicate of A026189.
+A026216: Duplicate of A026177.
+A026217: Duplicate of A026178.
+A026220: Duplicate of A026215.
+A026221: Duplicate of A026214.
+A026459: Erroneous version of A026461.
+A026484: Erroneous version of A026488.
+A026544: Duplicate of A026527.
+A026588: Duplicate of A026572.
+A026823: Essentially same as A025148.
+A027320: Duplicate of A027319.
+A027321: Duplicate of A027315.
+A027418: Duplicate of A035508.
+A027843: Duplicate of A027840.
+A027962: Duplicate of A023537.
+A028109: Duplicate of A003468.
+A028443: Erroneous version of A001108.
+A028489: Duplicate of A005808.
+A028490: Erroneous version of A004064.
+A028496: Erroneous version of A152455.
+A028522: Duplicate of A007246.
+A028595: Duplicate of A002653.
+A028695: Duplicate of A008665.
+A028893: Duplicate of A029561.
+A028969: Duplicate of A029681.
+A029810: Erroneous version of A033809, A046067.
+A030660: Erroneous version of A046068.
+A030663: Essentially same as A013638.
+A030759: Duplicate of A030709.
+A030769: Duplicate of A030739.
+A030779: Duplicate of A030729.
+A030789: Duplicate of A030749.
+A031135: Incorrect version of A091967.
+A031365: Expansion of a certain Dirichlet series.
+A031975: Erroneous version of A000452.
+A031977: Erroneous version of A019516.
+A031988: Duplicate of A023745.
+A031989: Duplicate of A023746.
+A031990: Duplicate of A023747.
+A031992: Duplicate of A023749.
+A031993: Duplicate of A023750.
+A031994: Duplicate of A023751.
+A031995: Duplicate of A023752.
+A031996: Duplicate of A023753.
+A031998: Duplicate of A023759.
+A032341: Duplicate of A023761.
+A032342: Duplicate of A023762.
+A032344: Duplicate of A023764.
+A032345: Duplicate of A023765.
+A032511: Duplicate of A036900.
+A033169: Erroneous version of A002464.
+A033195: Erroneous version of A133675.
+A033474: Duplicate of A001896.
+A033555: Duplicate of A130134.
+A033588: Duplicate of A014635.
+A033598: Duplicate of A008084.
+A033957: Duplicate of A031131.
+A034016: Erroneous version of A001403.
+A034183: Erroneous version of A003216.
+A034321: Erroneous version of A034320.
+A034622: Duplicate of A004046.
+A034628: Duplicate of A014496.
+A034634: Duplicate of A014497.
+A034670: Duplicate of A020516
+A034790: Erroneous version of A000602.
+A034805: Erroneous version of A000022.
+A034890: Duplicate of A009490.
+A035007: Duplicate of A002492.
+A035030: Erroneous version of A323468.
+A035238: Essentially the same as A003136.
+A035836: Duplicate of A008395.
+A035880: Duplicate of A010369.
+A036072: Erroneous version of A002569.
+A036237: Duplicate of A015948.
+A036356: Erroneous version of A002854.
+A036357: Erroneous version of A000104.
+A036358: Erroneous version of A001419.
+A036460: Erroneous version of A009287 (the 2 should be omitted).
+A036699: Duplicate of A036694.
+A036712: Erroneous version of A036706.
+A036985: Erroneous version of A036983.
+A036986: Erroneous version of A036984.
+A037142: Erroneous version of A047995: Number of impartial misere games born on or before day n.
+A037163: Erroneous version of A001679.
+A037181: Incorrect version of A107357.
+A037206: Duplicate of A065530.
+A037338: Erroneous version of the sequence A001970(n) - 2.
+A037434: Duplicate of A033170.
+A037457: Duplicate of A037314.
+A037469: nonn,base,dead,synth: Duplicate of A007091.
+A037473: nonn,base,dead,synth: Duplicate of A007092.
+A037476: nonn,base,dead,synth: Duplicate of A007093.
+A037948: Duplicate of A007659.
+A038136: Erroneous version of A134996.
+A038267: Duplicate of A027466.
+A038495: Duplicate of A007059.
+A038628: Erroneous version of A039686.
+A038689: Duplicate of A030000.
+A038811: Duplicate of A028505.
+A039620: Erroneous version of A008296.
+A039659: Erroneous version of A039919.
+A039666: Duplicate of A020493.
+A039668: Replaced by the pair of sequences A048611 and A048612.
+A039684: Erroneous version of A001232.
+A039688: Erroneous version of A005820.
+A039707: Erroneous version of A005470.
+A039747: Erroneous version of A003088.
+A039748: Erroneous version of A051421.
+A039749: Erroneous version of A001930.
+A039750: Erroneous version of A058337.
+A039818: Erroneous version of A158124.
+A039947: Erroneous version of A039952.
+A039962: Duplicate of A046741.
+A039967: Duplicate of A039969.
+A040097: Duplicate of A010174.
+A040103: Duplicate of A045323.
+A040176: Apart from initial terms, same as A007755, which is a better version.
+A041299: Duplicate of A001112.
+A043325: Duplicate of A023692.
+A043329: Duplicate of A023699.
+A043331: Duplicate of A023701.
+A043332: Duplicate of A023702.
+A043334: Duplicate of A023707.
+A043335: Duplicate of A023708.
+A043337: Duplicate of A023710.
+A043338: Duplicate of A023711.
+A043339: Duplicate of A023712.
+A043341: Duplicate of A023714.
+A043342: Duplicate of A023715.
+A043345: Duplicate of A023718.
+A043346: Duplicate of A023719.
+A043350: Duplicate of A023723.
+A043351: Duplicate of A023724.
+A043353: Duplicate of A023726.
+A043354: Duplicate of A023727.
+A043355: Duplicate of A023728.
+A043357: Duplicate of A023730.
+A043358: Duplicate of A023731.
+A043359: Duplicate of A023732.
+A043361: Duplicate of A023734.
+A043362: Duplicate of A023735.
+A043363: Duplicate of A023736.
+A043365: Duplicate of A023738.
+A043366: Duplicate of A023739.
+A043367: Duplicate of A023740.
+A043554: Essentially same as A005811.
+A045640: Duplicate of A043040.
+A045758: Duplicate of A035474.
+A045781: Erroneous version of A045670.
+A045845: Duplicate of A002133.
+A045886: Erroneous version of A003462.
+A045915: Erroneous version of A057835.
+A045916: Erroneous version of A057752.
+A046041: Numbers (not of the form 9n+-4) that were conjectured not to be the sum of 3 positive or negative cubes. However, further research suggests that this sequence is in fact empty.
+A046121: Duplicate of A023271.
+A046140: Duplicate of A023241.
+A046210: Erroneous version of A256957.
+A046648: Duplicate of A006013.
+A046664: Erroneous version of A028419.
+A046690: Duplicate of A008828.
+A046708: Erroneous version of A007281.
+A046743: Erroneous version of A001393.
+A046744: Erroneous version of A000186.
+A046750: Erroneous version of A000088.
+A046863: Erroneous version of A000698.
+A046917: Erroneous version of A000571.
+A047054: Duplicate of A052562.
+A047333: Duplicate of A032796.
+A047334: Duplicate of A032775.
+A047632: Duplicate of A033699.
+A047693: Erroneous version of A002863.
+A047709: Erroneous version of A002911.
+A047756: Duplicate of A047767.
+A047757: Duplicate of A047755.
+A047759: Duplicate of A047772.
+A047782: Erroneous version of A002050.
+A047804: Duplicate of A008691.
+A047805: Duplicate of A008695.
+A047806: Duplicate of A008696.
+A047807: Duplicate of A008700.
+A047810: Duplicate of A002492.
+A047815: Erroneous version of A095844.
+A047816: Erroneous version of A095845.
+A047833: Erroneous version of A002499.
+A047834: Another erroneous version of A002499.
+A047840: Incorrect version of A037189.
+A047867: Erroneous version of A002538.
+A047868: Erroneous version of A002539.
+A047914: Duplicate of A005480.
+A048039: Duplicate of A047194.
+A048056: Duplicate of A038534.
+A048137: Erroneous version of A005806.
+A048171: Erroneous version of A090178.
+A048173: Duplicate of A058349.
+A048237: Duplicate of A048139.
+A048238: Duplicate of A048140.
+A048239: Duplicate of A000786.
+A048609: Duplicate of A048603.
+A048624: Essentially a duplicate of A000129.
+A048658: Erroneous version of A001111.
+A048660: Erroneous version of A134997.
+A048662: Erroneous version of A134998.
+A048690: Erroneous version of A006045 (I think!).
+A048758: Erroneous version of A048798.
+A048780: Erroneous version of A006459.
+A048857: A005420 prefixed with a 0.
+A048897: Duplicate of A049029.
+A048912: Duplicate of A036411.
+A048928: Duplicate of A003328.
+A049013: Duplicate of A020735.
+A049091: Duplicate of A039787.
+A049204: Duplicate of A045924.
+A049280: Essentially same as A008315.
+A049322: Duplicate of A014557.
+A049335: Erroneous version of A004009.
+A049338: Erroneous version of A000109.
+A049379: Erroneous version of A003094.
+A049431: Duplicate of A049428
+A049607: Duplicate of A035029.
+A049624: Essentially the same as A032766.
+A049701: Duplicate of A005598.
+A050485: Duplicate of A034265.
+A050991: Duplicate of A033553.
+A051110: Duplicate of A124586.
+A051520: Duplicate of A051346.
+A051566: Erroneous version of A051567.
+A051665: Duplicate of A028263.
+A051863: Duplicate of A000699
+A051898: Erroneous version of A002095.
+A051905: Duplicate of A051426.
+A051921: Duplicate of A023998.
+A051922: Duplicate of A027810.
+A052285: Duplicate of A046858.
+A052397: Duplicate of A047889.
+A052398: Duplicate of A047890.
+A053345: Duplicate of A032505.
+A053554: Duplicate of A048172.
+A054319: Duplicate of A006061.
+A054517: Duplicate of A054016.
+A054537: Duplicate of A010336.
+A055002: Erroneous version of A000009.
+A055511: Erroneous version of A006794.
+A055718: Erroneous version of A056171.
+A056168: Duplicate of A054041.
+A056209: Duplicate of A056157.
+A056605: Number of stable n-celled patterns ("still lifes") in Conway''s game of Life (incorrect version).
+A056644: Duplicate of A007813.
+A056837: Duplicate of A001971.
+A057310: Duplicate of A008084.
+A057433: Erroneous version of A006074.
+A057497: Erroneous version of A008403.
+A057598: Erroneous version of A007535.
+A057734: Erroneous version of A000084.
+A057745: Erroneous version of A083276.
+A057758: Duplicate of A057125.
+A058093: Erroneous version of A112146.
+A058201: Erroneous version of A064513.
+A058350: Duplicate of A048174.
+A058747: Duplicate of A034322.
+A058869: Duplicate of A054342.
+A058881: Erroneous version of A051504.
+A058882: Erroneous version of A000665.
+A058916: Erroneous version of A001500.
+A059072: Duplicate of A000459.
+A059388: Duplicate of A059392.
+A059740: Erroneous version of A005160.
+A059898: Duplicate of A014752.
+A059961: Duplicate of A027856.
+A059962: Duplicate of A057605.
+A060071: Duplicate of A037205.
+A060079: Duplicate of A052502.
+A060153: Duplicate of A055010.
+A060243: Duplicate of A054225.
+A060321: Erroneous version of A051694.
+A060406: Duplicate of A001839.
+A060686: Duplicate of A004214.
+A060718: Duplicate of A060743.
+A060740: Erroneous version of A003002.
+A060767: Erroneous version of A057981.
+A060799: Erroneous version of A046017.
+A060809: Erroneous version of A006887.
+A060830: Erroneous version of A120427.
+A060960: Duplicate of A073642.
+A060994: Duplicate of A031146.
+A061016: Duplicate of A038366.
+A061058: Duplicate of A060795.
+A061059: Duplicate of A060796.
+A061080: Another erroneous version of A009287.
+A061081: Duplicate of A007368.
+A061089: Duplicate of A067499.
+A061093: Duplicate of A067178.
+A061102: Duplicate of A016779.
+A061103: Duplicate of A016791.
+A061212: Erroneous version of A164883.
+A061271: Duplicate of A061269.
+A061284: Duplicate of A016017.
+A061307: Duplicate of A061300.
+A061562: Old, obsolete version of A003075.
+A061571: Duplicate of A049690.
+A061698: Erroneous version of A061684.
+A061908: Duplicate of A056020.
+A062014: Duplicate of A057890.
+A062019: Erroneous version of A057891.
+A062163: Duplicate of A002729.
+A062290: Erroneous version of A033950.
+A062500: Duplicate of A007965.
+A062744: Duplicate of A059968.
+A062795: Duplicate of A062363.
+A062924: Probably an incomplete version of A001235.
+A062945: Duplicate of A032551.
+A063239: Duplicate of A063226.
+A063243: Duplicate of A063232.
+A063675: Erroneous version of A000943.
+A063779: Duplicate of A063781.
+A063811: Erroneous version of A008579.
+A063873: Duplicate of A063131.
+A063874: Duplicate of A063132.
+A063876: Duplicate of A063156.
+A063878: Duplicate of A063167.
+A063879: Duplicate of A063172.
+A063899: Duplicate of A006889.
+A063931: Duplicate of A001283.
+A063976: Duplicate of A064000.
+A064005: Erroneous version of A000430.
+A064006: Erroneous version of A008318.
+A064035: Erroneous version of A006534.
+A064175: Duplicate of A000028.
+A064176: Duplicate of A000379.
+A064177: Erroneous version of A007666.
+A064196: Duplicate of A060786.
+A064285: Duplicate of A006694.
+A064435: Duplicate of A020488.
+A064454: easy,nonn,dead,synth: Erroneous version of A064461.
+A064581: Duplicate of A064580.
+A064620: Duplicate of A064216.
+A064701: Duplicate of A035142.
+A064972: Duplicate of A064432.
+A065014: Duplicate of A013945.
+A065021: Duplicate of A048652.
+A065032: Erroneous version of A007514.
+A065041: Duplicate of A065393.
+A065351: Duplicate of A002503.
+A065436: Duplicate of A055500.
+A065779: Duplicate of A061839.
+A065901: Duplicate of A053662.
+A066029: Incorrect version of A036459.
+A066078: Duplicate of A058339.
+A066092: Erroneous version of A063427.
+A066093: Duplicate of A022342.
+A066095: Duplicate of A003622.
+A066097: Duplicate of A035336.
+A066243: Superseded by A063428.
+A066276: Duplicate of A060253.
+A066483: base,nonn,dead,synth: Erroneous version of A062239, numbers n with property that every digit is a prime factor of n.
+A066533: Erroneous version of A058986.
+A066579: Erroneous version of A113315.
+A066587: Duplicate of A047621.
+A066614: Erroneous version of A053614.
+A066677: Duplicate of A061026.
+A066762: Duplicate of A066198.
+A066954: Erroneous version of A034444.
+A066960: Duplicate of A061827.
+A066962: Duplicate of A051913.
+A066964: Duplicate of A066967.
+A066965: Duplicate of A066966.
+A066972: Duplicate of A067819.
+A067020: Duplicate of A051913.
+A067045: Duplicate of A061807.
+A067314: Duplicate of A066022.
+A067387: Duplicate of A050922.
+A067496: Duplicate of A054565.
+A067512: Duplicate of A067505.
+A067537: Duplicate of A046339.
+A067839: Duplicate of A047211.
+A067927: Duplicate of A038546.
+A068157: Duplicate of A062530.
+A068198: Duplicate of A064899.
+A068213: Duplicate of A065966.
+A068230: Duplicate of A040117.
+A068357: Duplicate of A067891.
+A068411: Duplicate of A020160.
+A068523: Essentially the same as A055500.
+A068586: Duplicate of A068585.
+A068593: Erroneous version of A007717.
+A068656: Duplicate of A030997.
+A068699: Duplicate of A052089.
+A068709: Duplicate of A068804.
+A068775: Duplicate of A068774
+A068829: Erroneous version of A046869.
+A068871: Duplicate of A004615.
+A068874: Duplicate of A018936.
+A068879: Duplicate of A030152.
+A068892: Incorrect version of A085869.
+A069200: Duplicate of A069218.
+A069454: Duplicate of A035789.
+A069538: Duplicate of A052217.
+A069539: Duplicate of A063997.
+A069541: Duplicate of A062768.
+A069542: Duplicate of A063416.
+A069587: Duplicate of A059843.
+A069599: Duplicate of A088628.
+A069742: Duplicate of A069743.
+A069885: Duplicate of A069748.
+A069936: Duplicate of A043294.
+A069937: Duplicate of A043295.
+A069938: Duplicate of A043296.
+A069967: Duplicate of A061909.
+A069968: Duplicate of A056240.
+A069974: Duplicate of A039650.
+A070019: Duplicate of A056075.
+A070060: Historical estimate for the mass of an electron (in kg). Incorrect version of A081801.
+A070062: Decimal expansion of old estimate for Avogadro''s constant (in mol^(-1)).
+A070068: Duplicate of A068668.
+A070158: Duplicate of A055940.
+A070240: Duplicate of A007369.
+A070241: Erroneous version of A066412.
+A070334: Erroneous version of A001318.
+A070516: Duplicate of A070435.
+A070597: Duplicate of A070474.
+A070608: Duplicate of A070486.
+A070643: Duplicate of A070442.
+A070836: Duplicate of A063432.
+A070983: Erroneous version of A078350.
+A071039: Corrected version is duplicate of A118111.
+A071254: Duplicate of A063528.
+A071257: Duplicate of A067392.
+A071271: Duplicate of A066492.
+A071338: Duplicate of A078826.
+A071376: Duplicate of A064502.
+A071420: Duplicate of A031139.
+A071871: Duplicate of A055030.
+A072067: Duplicate of A072049.
+A072267: Duplicate of A024934.
+A072326: Conjectured values of n such that the sum of proper divisors of x*n is never prime for any x >= 1 (i.e., sigma(xn) - xn is never prime for x >= 1).
+A072538: Erroneous version of A000040 (the primes).
+A072539: Duplicate of A062391.
+A072615: Duplicate of A020871.
+A072714: Duplicate of A051786.
+A072761: Erroneous version of A127885.
+A072763: Duplicate of A057846.
+A072837: Duplicate of A023917.
+A072838: Duplicate of A023919.
+A072889: Duplicate of A072884.
+A072925: Probably an erroneous version of A002845.
+A072935: Duplicate of A072936.
+A073021: Apart from initial 0, same as A055498.
+A073104: Duplicate of A060566.
+A073166: Duplicate of A050169.
+A073552: Duplicate of A067275.
+A073635: Duplicate of A071532.
+A073769: Duplicate of A008937.
+A073801: Duplicate of A065891.
+A073903: Duplicate of A069710.
+A073907: Erroneous version of A085124.
+A073953: Erroneous duplicate of A068620
+A073955: Erroneous duplicate of A068774
+A073959: Erroneous duplicate of A068787
+A073962: Erroneous duplicate of A068790
+A074024: Duplicate of A054661.
+A074026: easy,nonn,dead,changed,synth: Duplicate of A054663.
+A074095: Duplicate of A048692.
+A074099: Duplicate of A006788.
+A074113: Duplicate of A074116.
+A074146: Erroneous version of A074135.
+A074150: Duplicate of A061925.
+A074168: Duplicate of A076978.
+A074175: Duplicate of A074174.
+A074183: Duplicate of A039960.
+A074191: Duplicate of A090630.
+A074227: Duplicate of A042965.
+A074280: Duplicate of A000523.
+A074387: Duplicate of A008848.
+A074492: Duplicate of A059307.
+A074629: Duplicate of A067051
+A074892: Duplicate of A074874.
+A074977: Duplicate of A069155.
+A075012: Duplicate of A067090.
+A075041: Erroneous version of A006049.
+A075042: Duplicate of A045983.
+A075080: Erroneous version of A056218.
+A075265: Duplicate of A053657.
+A075297: Duplicate of A057597.
+A075310: Duplicate of A075797.
+A075379: Erroneous version of A088610.
+A075392: Duplicate of A069901.
+A075398: Duplicate of A072868.
+A075459: Duplicate of A050248.
+A075474: Duplicate of A069225.
+A075542: Duplicate of A064113.
+A075575: Duplicate of A073655.
+A075579: Duplicate of A059788.
+A075582: Duplicate of A059960.
+A075672: Duplicate of A069876.
+A075711: Duplicate of A027611.
+A075724: Duplicate of A049408.
+A075725: Duplicate of A049407.
+A075755: Duplicate of A046638.
+A075759: Duplicate of A000993.
+A075903: Duplicate of A029942.
+A075992: Duplicate of A022294.
+A076032: Duplicate of A004277.
+A076085: Duplicate of A074164.
+A076088: Duplicate of A061211.
+A076089: Essentially a duplicate of A046000.
+A076202: Erroneous version of A000598.
+A076365: Duplicate of A070971.
+A076576: Erroneous version of A084255.
+A076629: Duplicate of A067816.
+A076715: Duplicate of A029549.
+A076718: Duplicate of A076671.
+A076884: Erroneous version of A134915.
+A076908: Duplicate of A060345.
+A076937: Duplicate of A014682.
+A076938: Duplicate of A004526.
+A076939: Duplicate of A016116.
+A076945: Duplicate of A074792.
+A076993: Duplicate of A076698.
+A077004: Duplicate of A002034.
+A077036: Duplicate of A076604.
+A077104: Duplicate of A073815.
+A077108: Duplicate of A075847.
+A077132: Duplicate of A075580.
+A077134: Duplicate of A001710.
+A077137: Duplicate of A023194.
+A077179: Duplicate of A076179.
+A077184: Duplicate of A077183.
+A077200: Erroneous version of A085072.
+A077201: Erroneous version of A120426.
+A077270: Duplicate of A076048.
+A077271: Duplicate of A072037.
+A077276: Duplicate of A073684.
+A077277: Duplicate of A073682.
+A077278: Duplicate of A073683.
+A077284: Duplicate of A070428.
+A077308: Duplicate of A075001.
+A077358: Duplicate of A069686.
+A077434: Duplicate of A076136.
+A077461: Duplicate of A077444.
+A077519: Duplicate of A078215.
+A077524: Duplicate of A069503.
+A077548: Duplicate of A050809.
+A077574: Duplicate of A071126.
+A077580: Duplicate of A069213.
+A077673: Duplicate of A071255.
+A077735: Duplicate of A068121.
+A077736: Duplicate of A068122.
+A077737: Duplicate of A068123.
+A077738: Duplicate of A068124.
+A077756: Erroneous version of A075397.
+A077844: Duplicate of A077827.
+A077893: Duplicate of A077953.
+A077934: Duplicate of A077973.
+A077935: Duplicate of A077835.
+A077994: Duplicate of A077843.
+A078000: Duplicate of A007909.
+A078075: Duplicate of A067616.
+A078092: Duplicate of A076137.
+A078336: Duplicate of A076441.
+A078464: Erroneous version of A177454.
+A078507: Duplicate of A060199.
+A078582: Duplicate of A051336.
+A078645: Duplicate of A067139.
+A078697: Duplicate of A066629.
+A078748: Duplicate of A051131.
+A078749: Duplicate of A051130.
+A078785: Duplicate of A053016.
+A078914: Duplicate of A068147.
+A079077: Duplicate of A027611.
+A079096: Erroneous version of A143293.
+A079211: Duplicate of A026835.
+A079264: Duplicate of A006939.
+A079333: Duplicate of A063938.
+A079420: Duplicate of A076895.
+A079493: Duplicate of A080020.
+A079509: Duplicate of A000096.
+A079525: Erroneous version of A064164 given in the reference.
+A079541: nonn,fini,full,dead,synth: Numbers n such that phi(n) = d(n).
+A079681: Duplicate of A034602.
+A079699: Duplicate of A053176.
+A079720: Incorrect duplicate of A062908.
+A079765: Duplicate of A079743.
+A079795: Duplicate of A052037.
+A079828: Duplicate of A061229
+A079841: Duplicate of A069869.
+A079851: Duplicate of A066720.
+A079855: Duplicate of A048692.
+A079856: Duplicate of A073329.
+A079860: Duplicate of A061256.
+A079970: Duplicate of A079816.
+A080060: Erroneous version of A004137 given in the reference.
+A080091: Duplicate of A000602.
+A080184: Duplicate of A052248.
+A080388: Erroneous version of A057977.
+A080434: Duplicate of A062567.
+A080461: Duplicate of A066578.
+A080499: Duplicate of A072513.
+A080559: Duplicate of A010928.
+A080657: Duplicate of A075152.
+A080749: Duplicate of A070973.
+A080771: Duplicate of A025477.
+A080781: Duplicate of A079357.
+A080784: Duplicate of A072978.
+A081104: Duplicate of A079028.
+A081137: Duplicate of A027474.
+A081191: Duplicate of A060531.
+A081255: Duplicate of A005371.
+A081269: Duplicate of A064226.
+A081273: Duplicate of A060544.
+A081274: Duplicate of A038764.
+A081379: Duplicate of A081377.
+A081385: easy,nonn,dead,synth: Incorrect version of A006254 (or A111333).
+A081416: Duplicate of A051795.
+A081497: Duplicate of A028270.
+A081511: Duplicate of A030283.
+A081525: Erroneous version of A027612.
+A081526: Erroneous version of A027611.
+A081527: Erroneous version of A022819.
+A081529: Duplicate of A002944.
+A081602: nonn,base,dead,synth: Number of 0''s in ternary representation of n.
+A081744: Erroneous version of A087316.
+A081802: Decimal expansion of electron charge 1.602177330000*10-19 (Coulomb).
+A081818: Outdated duplicate of A003672.
+A081822: Outdated value of A070064.
+A081877: Duplicate of A049076.
+A081886: Duplicate of A081530.
+A081940: Duplicate of A082270.
+A081956: Duplicate of A056182.
+A081967: Duplicate of A076099.
+A081968: Duplicate of A076096.
+A081969: Duplicate of A076097.
+A081970: Duplicate of A076098.
+A082016: Duplicate of A074135.
+A082118: Duplicate of A079344.
+A082142: Duplicate of A069723.
+A082165: Duplicate of A006689.
+A082167: Duplicate of A006690.
+A082257: Duplicate of A054750.
+A082310: Duplicate of A015565.
+A082337: Duplicate of A069775.
+A082338: Duplicate of A069776.
+A082487: Duplicate of A081798.
+A082502: Erroneous version of A052200.
+A082535: Duplicate of A007326.
+A082619: Duplicate of A046399.
+A082627: Duplicate of A028888.
+A082628: Duplicate of A028978.
+A082629: Duplicate of A028979.
+A082745: Duplicate of A064955.
+A082752: Duplicate of A023758.
+A082753: Duplicate of A000337.
+A082805: Duplicate of A071119.
+A082809: Duplicate of A070245.
+A082848: Duplicate of A078588.
+A082972: Incorrect version of A082971.
+A082976: dead,tabl,synth: Erroneous version of A036561.
+A082978: Duplicate of A005536.
+A083027: Duplicate of A060107.
+A083042: Duplicate of A082977.
+A083194: Erroneous version of A075618.
+A083265: Duplicate of A067391.
+A083270: Duplicate of A000879.
+A083274: Duplicate of A067913.
+A083298: Duplicate of A083222.
+A083317: Erroneous version of A005047.
+A083369: Essentially a duplicate of A000946.
+A083444: Erroneous duplicate of A052034.
+A083455: Duplicate of A083829.
+A083467: Duplicate of A061807.
+A083473: Erroneous version of A061372.
+A083505: Erroneous version of A027428.
+A083543: Duplicate of A083538.
+A083568: Duplicate of A003121.
+A083596: Duplicate of A082541.
+A083649: Duplicate of A073009.
+A083712: Duplicate of A082806.
+A083814: Duplicate of A073805.
+A084012: Duplicate of A062919.
+A084036: Duplicate of A092117.
+A084045: Duplicate of A083982.
+A084072: Erroneous version of A049534.
+A084133: Duplicate of A005667.
+A084180: Duplicate of A020988.
+A084308: Duplicate of A067605.
+A084312: Duplicate of A066752.
+A084327: Duplicate of A057085.
+A084332: Duplicate of A081145.
+A084333: Erroneous version of A084331.
+A084343: Duplicate of A083907.
+A084347: Duplicate of A084034.
+A084387: Duplicate of A080761.
+A084399: Duplicate of A067057.
+A084415: Erroneous version of A076600.
+A084437: Duplicate of A037083.
+A084533: Duplicate of A082985.
+A084537: Duplicate of A002061.
+A084560: Duplicate of A054681.
+A084607: Duplicate of A006139.
+A084619: Duplicate of A023393.
+A084650: Duplicate of A067919.
+A084664: Duplicate of A045620.
+A084705: Duplicate of A051886.
+A084706: Duplicate of A051900
+A084722: Duplicate of A083566.
+A084731: Duplicate of A066180.
+A084753: Erroneous version of A081964.
+A084811: Duplicate of A051856.
+A084889: Duplicate of A000404.
+A084946: Duplicate of A047055.
+A084982: Erroneous version of A062687.
+A084986: Duplicate of A034844.
+A084987: Duplicate of A083185.
+A084994: Duplicate of A046328.
+A085024: Duplicate of A085001.
+A085038: Erroneous version of A063934.
+A085055: Duplicate of A075070.
+A085088: Duplicate of A073870.
+A085113: Incorrect version of A083179.
+A085130: Duplicate of A080194.
+A085142: Duplicate of A064053.
+A085247: Duplicate of A003016.
+A085316: Duplicate of A006686.
+A085327: Duplicate of A069403.
+A085335: Duplicate of A069137.
+A085406: Duplicate of A022340.
+A085419: Duplicate of A083982.
+A085426: Duplicate of A034289.
+A085437: Duplicate of A024166.
+A085472: Duplicate of A054242.
+A085481: Duplicate of A030195.
+A085488: Duplicate of A072265.
+A085566: Duplicate of A076390.
+A085594: Duplicate of A085587.
+A085615: Duplicate of A054726.
+A085636: Erroneous version of A046142.
+A085654: Duplicate of A074719.
+A085752: Duplicate of A074966
+A085901: Duplicate of A077224.
+A085921: Duplicate of A005243.
+A085922: Duplicate of A048973.
+A085940: After correction, duplicate of A061509.
+A085941: Duplicate of A054842.
+A086126: Duplicate of A023287.
+A086128: Duplicate of A023347.
+A086129: Erroneous version of A023347.
+A086160: Duplicate of A029047.
+A086182: Duplicate of A035294.
+A086219: Duplicate of A055010.
+A086370: Duplicate of A083788.
+A086387: Duplicate of A073264.
+A086388: Duplicate of A008619.
+A086413: Duplicate of A069352.
+A086421: Erroneous version of A000120.
+A086422: Duplicate of A046880.
+A086480: Erroneous version of A056135.
+A086481: dead,nonn,changed,synth: Erroneous version of A072905.
+A086485: Duplicate of A068310.
+A086490: Duplicate of A085876.
+A086515: Duplicate of A047241.
+A086516: Erroneous version of A085641.
+A086544: Duplicate of A031146.
+A086548: Duplicate of A083434.
+A086561: Duplicate of A083790.
+A086562: Duplicate of A083789.
+A086656: Duplicate of A034602.
+A086679: Duplicate of A019508.
+A086745: Duplicate of A086646.
+A086750: Duplicate of A086749.
+A086789: Duplicate of A066537.
+A086807: Erroneous version of A000213.
+A086821: Duplicate of A007576.
+A086907: Duplicate of A132186.
+A086969: Duplicate of A014692.
+A086998: Duplicate of A028416.
+A087067: Incorrect version of A004128.
+A087096: Duplicate of A072959.
+A087113: Essentially a duplicate of A005843.
+A087174: Duplicate of A071963.
+A087250: Duplicate of A065301.
+A087257: Duplicate of A033496.
+A087296: Duplicate of A065731.
+A087300: Duplicate of A074455.
+A087317: Duplicate of A086489.
+A087326: Erroneous version of A075031
+A087399: Duplicate of A085692.
+A087563: Erroneous version of A086547.
+A087568: Erroneous version of A092927.
+A087569: Erroneous version of A092928.
+A087570: Erroneous version of A093016.
+A087578: Duplicate of A023195.
+A087637: Erroneous version of A052458.
+A087746: Erroneous version of A023036.
+A087757: Erroneous version of A088359.
+A087848: Duplicate of A087844.
+A087852: Erroneous generalization of A087851.
+A087853: Erroneous generalization of A087851.
+A087892: Duplicate of A078372.
+A087922: Duplicate of A087921.
+A087992: Duplicate of A062687.
+A088024: Erroneous version of A122547.
+A088025: Erroneous version of A014577.
+A088058: Duplicate of A062392.
+A088059: Duplicate of A028387.
+A088118: Duplicate of A088117.
+A088130: Erroneous version of A076497.
+A088255: Duplicate of A075590.
+A088273: Duplicate of A049054.
+A088321: Duplicate of A061301.
+A088360: Duplicate of A057002.
+A088401: Duplicate of A077491.
+A088402: Duplicate of A077492.
+A088403: Duplicate of A077495.
+A088464: Duplicate of A088463.
+A088474: Duplicate of A087097.
+A088497: Duplicate of A088485.
+A088507: Duplicate of A050001.
+A088525: Duplicate of A054735.
+A088552: Duplicate of A000668.
+A088596: Duplicate of A077293.
+A088620: Duplicate of A068702.
+A088649: Duplicate of A020498.
+A088657: Except for initial 0, same as A005213.
+A088664: Duplicate of A023219.
+A088681: Duplicate of A078584.
+A088706: Duplicate of A087710.
+A088923: Duplicate of A011539.
+A088970: Duplicate of A068425.
+A089023: Duplicate of A035610.
+A089099: Duplicate of A089116.
+A089100: Duplicate of A089117.
+A089104: Duplicate of A007334.
+A089121: Duplicate of A014442.
+A089153: Duplicate of A075136.
+A089176: Duplicate of A049232.
+A089208: Duplicate of A083282.
+A089218: Erroneous version of A052195.
+A089220: Duplicate of A052243.
+A089236: Duplicate of A052239.
+A089375: Duplicate of A069582.
+A089388: Duplicate of A055494.
+A089498: Duplicate of A046729.
+A089714: Duplicate of A070219.
+A089769: Duplicate of A033274.
+A089921: Duplicate of A056899.
+A089972: Duplicate of A008062.
+A090320: Duplicate of A085909.
+A090322: Duplicate of A076084.
+A090389: Duplicate of A061238.
+A090415: a(n) = Floor[4*Pi*n/(E)]
+A090417: Primes of the form floor(2*Pi*n/(e*log(n)))
+A090459: Duplicate of A090417.
+A090489: Duplicate of A090484.
+A090515: Duplicate of A075309.
+A090533: Duplicate of A025003.
+A090542: Incorrect version of A060462.
+A090554: Erroneous version of A007368.
+A090555: Erroneous version of A014573.
+A090558: Duplicate of A068704
+A090571: Duplicate of A088452.
+A090596: Duplicate of A018240.
+A090638: Duplicate of A073869.
+A090662: Duplicate of A088387.
+A090726: Duplicate of A036953.
+A090757: Duplicate of A048739.
+A090766: Duplicate of A069651.
+A090916: Erroneous version of A090940.
+A090917: Erroneous version of A090941.
+A090944: Duplicate of A007340.
+A090952: Erroneous version of A053778.
+A090954: Duplicate of A089778.
+A090974: Duplicate of A038606.
+A091288: Duplicate of A067171.
+A091312: Erroneous version of A018239.
+A091402: Erroneous version of A091401.
+A091525: Duplicate of A091524.
+A091662: Duplicate of A063006.
+A091798: Duplicate of A070198.
+A091902: Erroneous version of A067698.
+A092026: Duplicate of A084749.
+A092027: Duplicate of A084750.
+A092029: Duplicate of A050299.
+A092031: Duplicate of A082914.
+A092033: Duplicate of A061360.
+A092075: Duplicate of A091415.
+A092114: Duplicate of A032711.
+A092115: Duplicate of A083966.
+A092116: Duplicate of A082969.
+A092139: Duplicate of A084558.
+A092199: nonn,more,dead,synth: Number of Ore graphs on n nodes using Skiena''s nonstandard definition > n (instead of the usual >= n)
+A092208: Duplicate of A082919.
+A092240: a(n) is the number of n-dimensional symmetry frieze designs (incorrect).
+A092385: Duplicate of A060248.
+A092409: Erroneous version of A007921.
+A092417: Duplicate of A071543.
+A092458: Erroneous version of A005217.
+A092551: Duplicate of A033560.
+A092564: Duplicate of A068811.
+A092567: Duplicate of A055623.
+A092568: Duplicate of A055624.
+A092631: Duplicate of A061371.
+A092729: Duplicate of A072667.
+A092737: Duplicate of A072669.
+A092758: Duplicate of A030516.
+A092856: Duplicate of A051006.
+A092903: Duplicate of A005153.
+A092907: Duplicate of A051022.
+A092941: Duplicate of A075393.
+A092977: Duplicate of A057218.
+A092999: Duplicate of A077154.
+A093004: Erroneous version of A003588.
+A093326: Duplicate of A001359.
+A093340: Erroneous version of A094004.
+A093363: Erroneous version of A005115.
+A093389: Duplicate of A093342.
+A093410: Erroneous version of A090498.
+A093425: Erroneous version of A075399.
+A093435: Duplicate of A048964.
+A093452: Duplicate of A082103.
+A093474: Duplicate of A030101.
+A093477: Erroneous version of A086547.
+A093495: Erroneous version of A093496.
+A093535: Duplicate of A081093.
+A093551: Erroneous version of A072875.
+A093668: Duplicate of A000926.
+A093763: Duplicate of A002548.
+A093815: Erroneous version of A142859.
+A093816: Duplicate of A093469.
+A093867: Duplicate of A069549.
+A093895: Duplicate of A030057.
+A093904: Duplicate of A093344.
+A093926: Erroneous version of A073698.
+A094017: Duplicate of A092762.
+A094050: Number of Latin squares of order n with fixed first row.
+A094055: Duplicate of A094056.
+A094158: Erroneous version of A002540.
+A094167: Duplicate of A051738.
+A094204: Duplicate of A078584.
+A094212: Duplicate of A070832.
+A094300: Duplicate of A055773.
+A094355: Duplicate of A087334.
+A094356: Duplicate of A087335.
+A094481: Duplicate of A045637.
+A094532: Duplicate of A092980.
+A094560: Initial decimal digit of Pi*n, Pi=3.1415...
+A094579: Duplicate of A029729.
+A094583: Erroneous version of A002058.
+A094742: Duplicate of A008578.
+A094760: Duplicate of A083956.
+A094805: Duplicate of A055193.
+A094979: Duplicate of A065565.
+A095099: Duplicate of A134860.
+A095196: Duplicate of A074828.
+A095241: Duplicate of A061839.
+A095251: Erroneous version of A038772.
+A095721: Duplicate of A072061.
+A095908: Duplicate of A094698.
+A096009: Duplicate of A000224.
+A096056: Duplicate of A050501.
+A096073: Duplicate of A088302.
+A096112: Duplicate of A052330.
+A096118: Duplicate of A050029.
+A096120: Erroneous version of A050030.
+A096263: Duplicate of A007996.
+A096350: Duplicate of A018239.
+A096387: Duplicate of A081512.
+A096593: Erroneous version of A050694.
+A096724: Duplicate of A088553.
+A096767: Duplicate of A052119.
+A096933: Duplicate of A061299.
+A096934: Duplicate of A076912.
+A096984: Another version of A005512, which is the main entry for this sequence.
+A097375: Duplicate of A089189.
+A097396: Duplicate of A056788.
+A097506: Duplicate of A001951.
+A097524: Duplicate of A073703.
+A097577: Duplicate of A097692.
+A097649: Duplicate of A072075.
+A097658: Duplicate of A067725.
+A097874: Duplicate of A097885.
+A097901: Duplicate of A026427.
+A097969: Duplicate of A082280.
+A098049: Duplicate of A055628.
+A098066: Duplicate of A096436.
+A098119: Erroneous version of A006076.
+A098136: Duplicate of A060793.
+A098225: Duplicate of A073532.
+A098671: Duplicate of A056157.
+A098672: Duplicate of A056210.
+A098673: Duplicate of A056211.
+A098674: Duplicate of A056212.
+A098675: Duplicate of A056213.
+A098676: Duplicate of A056214.
+A098677: Duplicate of A056215.
+A098678: Duplicate of A056216.
+A098776: Duplicate of A098897.
+A098881: Duplicate of A073333.
+A098889: Duplicate of A061481.
+A098898: Duplicate of A098768.
+A098899: Duplicate of A098770.
+A098900: Duplicate of A098769.
+A098901: Duplicate of A098767.
+A098938: Duplicate of A098923.
+A098980: Duplicate of A007647.
+A099018: Duplicate of A033484.
+A099404: Duplicate of A095156.
+A099428: Duplicate of A099920.
+A099465: Duplicate of A099094.
+A099639: Duplicate of A003555.
+A099734: Duplicate of A033451.
+A099747: Duplicate of A059916.
+A099758: Duplicate of A099760.
+A099926: Duplicate of A098600.
+A100360: Duplicate of A061421.
+A100507: Erroneous version of A005630.
+A100508: Erroneous version of A001049.
+A100590: Duplicate of A096218.
+A100623: Erroneous version of A005649.
+A100653: Erroneous version of A002208.
+A100654: Erroneous version of A002209.
+A100815: Erroneous version of A010050.
+A100816: Erroneous version of A010050.
+A100991: Duplicate of A075821.
+A101019: Duplicate of A056266.
+A101141: Duplicate of A056258.
+A101149: Duplicate of A056260.
+A101469: Erroneous version of A058832.
+A101470: Erroneous version of A058831.
+A101829: Duplicate of A056252.
+A101832: Duplicate of A056253.
+A101935: Duplicate of A101294.
+A102043: Duplicate of A025017.
+A102081: Duplicate of A068397.
+A102794: Duplicate of A075415.
+A103302: Erroneous version of A007192.
+A103494: Erroneous version of A115016.
+A103613: Duplicate of A104768.
+A103993: Duplicate of A088269.
+A104642: Incorrect version of A115016 caused by reading Table 4.4 of the reference without noticing that a(4) was omitted.
+A104661: Duplicate of A020725.
+A104700: Duplicate of A039941.
+A104784: Erroneous version of A047841.
+A105699: Duplicate of A105698.
+A105724: Duplicate of A063448.
+A105807: Incorrect version of A209616
+A106168: Erroneous version of A106166.
+A106170: Duplicate of A072215.
+A106765: Erroneous version of A000040.
+A107154: Duplicate of A141373.
+A107328: Duplicate of A065034.
+A107394: C(n+2,2)*C(n+4,2).
+A107864: Duplicate of A099121.
+A108123: Duplicate of A105954.
+A108236: Erroneous version of A002849.
+A108247: Duplicate of A108243.
+A108311: Duplicate of A092767.
+A108637: Duplicate of A091296.
+A108799: Erroneous version of A193674.
+A108801: Erroneous version of A193675.
+A109327: Erroneous version of A000236.
+A109623: Incorrect version of A109738.
+A109828: Duplicate of A005603.
+A109894: Duplicate of A079759.
+A110354: Beyond repair - see A245628 for a better version.
+A110366: Duplicate of A070635.
+A111274: Erroneous enumeration of "congruent and symmetric divisions" of n points on a circle.
+A111410: Erroneous version of A073131.
+A111945: Duplicate of A002143.
+A112025: Duplicate of A060512.
+A112089: Erroneous version of A038119.
+A112346: Duplicate of A062318.
+A112427: Erroneous version of A053542.
+A112602: Erroneous version of decimal expansion of Pi (see A000796 for the correct version).
+A112629: Erroneous duplicate of A110284
+A113616: Erroneous version of A062584.
+A113906: Erroneous version of signed Euler numbers (cf. A000364).
+A114142: Duplicate of A020725.
+A114268: Erroneous version of A004029.
+A114532: Erroneous version of A003061
+A115027: Duplicate of A114146.
+A115397: Erroneous version of A218656.
+A115787: Duplicate of A063438.
+A116117: Duplicate of A115431.
+A116123: Duplicate of A054214.
+A116135: Duplicate of A115431.
+A116142: Duplicate of A054214.
+A116546: Erroneous version of A129132.
+A116562: Duplicate of A045925.
+A116724: Erroneous version of A076680.
+A116729: Duplicate of A048840.
+A116984: Duplicate of A046104.
+A117249: Duplicate of A072677.
+A117299: Incorrect duplicate of A117135.
+A117344: Duplicate of A117204.
+A117915: Erroneous version of A117501.
+A118172: Duplicate of A071037.
+A118262: Duplicate of A065484.
+A118300: Duplicate of A090864.
+A118314: Erroneous version of A002033.
+A118320: Duplicate of A108918.
+A118418: Erroneous version of A045545.
+A118579: Erroneous version of A015704.
+A118893: Duplicate of A078326.
+A119255: Duplicate of A071969.
+A119606: Duplicate of A084419.
+A119626: Erroneous version of A178674.
+A119716: Erroneous version of A000626.
+A119717: Erroneous version of A000627.
+A119962: Duplicate of A014234.
+A120407: Duplicate of A080519.
+A121193: Erroneous version of A159866
+A121232: Erroneous version of A049068.
+A121286: Number of catacondensed hexagonal systems with n hexagons.
+A121515: Incorrect duplicate of A226508.
+A121661: Duplicate of A118836.
+A121825: Duplicate of A049423.
+A121954: Incorrect duplicate of A058307.
+A122039: Duplicate of A083706
+A122081: Duplicate of A007140.
+A122527: Duplicate of A121231.
+A122655: Erroneous version of A122547.
+A122661: Erroneous version of A007894.
+A122738: Duplicate of A038381.
+A122901: Erroneous duplicate of A080121.
+A122962: Duplicate of A048648.
+A123032: Duplicate of A085319.
+A123054: Erroneous version of A093703.
+A123215: Duplicate of A051855.
+A123263: Erroneous version of A073043.
+A123408: Duplicate of A033995.
+A123423: Duplicate of A005195.
+A123428: Duplicate of A005975.
+A123458: Duplicate of A048194.
+A123464: Duplicate of A011782.
+A123465: Duplicate of A000055.
+A123537: Erroneous version of A005644 (there appears to be a typo in a(9)).
+A123570: Duplicate of A110567.
+A124160: Erroneous version of A006571.
+A124624: Erroneous version of A058377.
+A125214: Duplicate of A114062.
+A125878: Duplicate of A066674.
+A125963: Duplicate of A111269.
+A126060: Incorrect version of A001349.
+A126361: Duplicate of A002714.
+A126666: Erroneous version of A036983.
+A126667: Erroneous version of A036984.
+A126669: Erroneous version of A126668.
+A126670: Erroneous version of A126668.
+A126811: Duplicate of A098108.
+A127095: Duplicate of A123229.
+A127422: Duplicate of A001703.
+A128052: a(n) = (F(2*n-1) + F(2*n+1))*(5/6 - cos(2*Pi*n/3)/3), where F(n) = Fibonacci(n).
+A128224: Duplicate of A125026.
+A128254: Erroneous version of A103450.
+A128931: Erroneous version of A126203.
+A129266: Duplicate of A129527.
+A129354: Duplicate of A129628.
+A129859: Apparently an erroneous version of A007827.
+A129892: Erroneous version of A099321.
+A130144: Erroneous version of A090201.
+A130254: Duplicate of A130252.
+A130295: Erroneous duplicate of A125026.
+A130627: Duplicate of A006209.
+A130683: Duplicate of A032184.
+A131177: Duplicate of A092498
+A131204: Primes p of the form 16n+1, that is, primes congruent to 1 mod 16.
+A131359: Erroneous version of A108808.
+A131510: Erroneous version of A079342.
+A131831: Duplicate of A100314
+A132149: Duplicate of A129235.
+A132430: Duplicate of A049537.
+A133006: Incorrect version of A001969.
+A133007: Incorrect version of A000069.
+A133465: Erroneous version of A003433.
+A133633: Duplicate of A038509.
+A134203: Duplicate of A014777.
+A134302: Erroneous version of A000027.
+A134329: Erroneous version of A000040.
+A134445: Erroneous version of A001049.
+A134598: Duplicate of A080773.
+A134961: Erroneous version of A024507.
+A135043: Duplicate of A054966.
+A135279: Erroneous version of A005097.
+A135460: Erroneous version of A005251.
+A135584: Duplicate of A124013.
+A135995: Erroneous version of A046850 found on the Internet.
+A136434: Duplicate of A121670.
+A137175: Duplicate of A032589.
+A137592: Duplicate of A098694.
+A137908: Duplicate of A121370.
+A138161: Erroneous version of A105195.
+A138568: Erroneous duplicate of A136094.
+A139470: Incorrect version of A154640 and A154644.
+A139471: Incorrect version of A154641 and A154644.
+A139472: Incorrect version of A154641 and A154645.
+A139599: Duplicate of A141161.
+A139603: Duplicate of A141183.
+A139900: Duplicate of A139857.
+A139901: Duplicate of A139855.
+A139903: Duplicate of A139858.
+A140108: Duplicate of A034295.
+A140279: Duplicate of A096145.
+A140291: Erroneous version of A118561.
+A140382: Duplicate of A094343.
+A140386: Erroneous version of A000040.
+A140393: Erroneous duplicate of A000170, see comments.
+A140441: Erroneous version of A071881.
+A140465: Erroneous version of A141347.
+A140591: Duplicate of A095901.
+A140762: Erroneous version of A159578.
+A140813: Duplicate of A073841.
+A140858: This sequence is identical with A075458.
+A140862: Incorrect duplicate of A081083.
+A141016: Duplicate of A008998.
+A141122: Duplicate of A068228.
+A141131: Duplicate of A038873.
+A141158: Duplicate of A038872.
+A141174: Duplicate of A007519.
+A141175: Duplicate of A007522.
+A141184: Duplicate of A033212.
+A141188: Duplicate of A038883.
+A141301: Duplicate of A107152.
+A141374: Duplicate of A107003.
+A141540: Duplicate of A132046.
+A141718: Duplicate of A055744.
+A141902: Duplicate of A069466.
+A142100: Duplicate of A093838.
+A142957: Duplicate of A038987.
+A143248: Erroneous version of A010790.
+A143303: Duplicate of A074903.
+A143371: Duplicate of A131423.
+A143386: Duplicate of A139430.
+A143580: Duplicate of A010059.
+A143660: Erroneous version of A170946.
+A143679: Duplicate of A081581.
+A144420: Erroneous version of A036984.
+A144538: Erroneous version of A127935.
+A144710: Erroneous version of A070007.
+A144772: Duplicate of A045756.
+A144918: Duplicate of A007528.
+A144919: Duplicate of A007645.
+A144920: Duplicate of A007528.
+A144921: Duplicate of A002476.
+A145039: Duplicate of A112633.
+A145098: Duplicate of A136031.
+A145221: Duplicate of A000387.
+A145287: Duplicate of A016861.
+A145289: Duplicate of A016777.
+A145719: Erroneous version of A031963.
+A145751: Duplicate of A063759.
+A146166: Duplicate of A046388
+A146886: Duplicate of A006093.
+A147531: Weight distribution of [512,130,64] Reed-Muller (or RM) code.
+A147588: Duplicate of A070824.
+A151334: Duplicate of A005789.
+A151342: Duplicate of A001246.
+A151392: Duplicate of A000888.
+A151516: Duplicate of A003104.
+A151565: Duplicate of A060632.
+A151796: Erroneous version of A074721.
+A151814: Erroneous version of A013579.
+A151992: Erroneous version of A003173.
+A151996: Erroneous version of A100200.
+A152137: Apparently an erroneous version of A073520.
+A152164: Erroneous version of A100949.
+A152197: Erroneous version of A100949.
+A152255: Erroneous version of A002848.
+A153222: Duplicate of A023222.
+A153421: Primes of the form 2*n^2+11.
+A153437: Erroneous version of A153436.
+A153447: Duplicate of A076893.
+A154917: Duplicate of A001045.
+A156643: Erroneous duplicate of A071635.
+A157220: Erroneous version of A304182.
+A157222: Erroneous version of A304183.
+A157753: Duplicate of A020500.
+A158079: Duplicate of A090091.
+A158584: Erroneous version of A079866.
+A159577: Erroneous version of A116536.
+A159579: Erroneous version of A140763.
+A159839: Erroneous version of A007770.
+A159942: Duplicate of A102339.
+A159985: Erroneous version of A259667
+A160053: Duplicate of A140612.
+A160507: Duplicate of A071734.
+A160701: Duplicate of A137551.
+A160771: Erroneous version of A040976.
+A161171: Erroneous version of A035008.
+A162383: Duplicate of A123327.
+A163060: Incorrect version of A162734.
+A163302: Duplicate of A084057.
+A163507: Erroneous version of A003963.
+A164486: Duplicate of A084684.
+A164906: Duplicate of A056450
+A165146: Erroneous duplicate version of A181496.
+A165332: dead,nonn,: Duplicate of A031179.
+A165338: Duplicate of A154877.
+A167524: Erroneous version of A114308.
+A168002: Duplicate of A079559.
+A168074: Duplicate of A061891.
+A168560: Incorrect duplicate of A019446.
+A168581: Duplicate of A024699.
+A169763: Duplicate of A004035.
+A169807: Erroneous version of A005028.
+A169930: Duplicate of A048379.
+A169971: Erroneous version of A002689.
+A171112: Duplicate of A171108.
+A171114: Duplicate of A328551.
+A171115: Duplicate of A328552.
+A172321: Duplicate of A154689.
+A172432: Duplicate of A098952.
+A173709: Duplicate of A144226.
+A174112: After correction, duplicate of A111490.
+A174781: Duplicate of A028846.
+A174872: Erroneous version of A088708.
+A175586: Duplicate of A089995.
+A175927: Duplicate of A116990.
+A175951: Duplicate of A072207.
+A176251: Incorrect duplicate of A062341.
+A176471: Duplicate of A136404,
+A177898: Duplicate of A168198.
+A178060: A poorly defined sequence, beyond repair.
+A178673: Duplicate of A028452.
+A180090: Sigma-powerful numbers: powerful numbers n such that sigma(n) is also powerful. An incomplete version of A337045.
+A181030: Duplicate of A006506.
+A181051: Incorrect duplicate of A073821.
+A181630: Duplicate of A112310
+A181757: Erroneous version of A181753.
+A182104: Duplicate of A073587.
+A182291: Duplicate of A071294.
+A185181: Incorrect version of A122705.
+A185272: Erroneous version of A141316.
+A185444: Erroneous version of A061574.
+A185703: Erroneous version of A007352.
+A186517: Duplicate of A094448.
+A187694: Erroneous version of A086596.
+A189075: Erroneous version of A188900.
+A190624: Erroneous version of A190623.
+A191256: Duplicate of A067368.
+A191408: Duplicate of A006641.
+A191550: Erroneous version of A323457.
+A191643: Incorrect version of A001861.
+A191644: Incorrect version of A029706.
+A191779: Erroneous version of A006506.
+A191974: Erroneous version of A001333
+A192723: Erroneous version of A102221.
+A192786: Erroneous version of A292581.
+A192788: Erroneous version of A292624.
+A193174: Duplicate of A126084.
+A193840: Erroneous version of A227590.
+A193841: Erroneous version of A227590.
+A195645: Erroneous version of A000136.
+A195741: Erroneous version of A006758.
+A196417: Erroneous version of A080937.
+A197757: Duplicate of A197488.
+A198473: Duplicate of A026185.
+A199810: Duplicate of A199807.
+A199878: Erroneous version of A076912.
+A202781: Duplicate of A067213.
+A202782: Duplicate of A067214.
+A202783: Duplicate of A067215.
+A204824: Duplicate of A156903.
+A206398: Erroneous version of A000793.
+A206425: Erroneous version of A227428.
+A206799: Based on an erroneous version of A008614.
+A208446: Duplicate of A172634.
+A209270: Duplicate of A083698.
+A210689: Erroneous version of A129416.
+A210690: Erroneous version of A000421.
+A210769: Erroneous version of A295925.
+A212588: Duplicate of A164392.
+A212845: Erroneous version of A212806.
+A213235: Erroneous version of A213234.
+A213429: Erroneous version of A000136.
+A213968: Probably an erroneous version of A213967.
+A214044: Duplicate of A177516.
+A214213: Erroneous version of A005942.
+A214267: Duplicate of A005437.
+A214610: Duplicate of A000104
+A217716: Duplicate of A129824.
+A218877: Erroneous version of A179982.
+A219876: Duplicate of A077042 with alternating up/down antidiagonals.
+A220184: Erroneous version of A007002 found in the 1995 Encyclopedia of Integer Sequences.
+A220832: Erroneous version of A007827.
+A220833: Erroneous version of A339782.
+A220834: Erroneous version of A339783.
+A220835: Erroneous version of A339784.
+A222316: Erroneous version of A222315.
+A224999: Duplicate of A001651.
+A225000: Duplicate of A047211.
+A225001: Duplicate of A047203.
+A225002: Duplicate of A047290.
+A225003: Duplicate of A047332.
+A227434: Duplicate of A173019.
+A228839: Erroneous version of A000453.
+A230748: Duplicate of A078607.
+A231632: Squares that are also sums of 2 and 3 nonzero squares.
+A231893: Erroneous version of A000231.
+A232987: Erroneous version of A232986.
+A233552: Erroneous version of A308177.
+A234594: Erroneous version of Brier numbers A076335.
+A234940: Erroneous version of A010896.
+A234942: Erroneous version of A013577.
+A236479: Duplicate of A116514.
+A238965: Duplicate of A036042.
+A239099: Erroneous version of A006934.
+A239105: Erroneous version of A004001.
+A239911: Erroneous version of A275518.
+A241166: Erroneous version of A000946.
+A241561: Duplicate of A071561.
+A241562: Duplicate of A071562.
+A241586: Erroneous version of A000665.
+A241602: Erroneous version of A000287.
+A241711: Erroneous version of A128240.
+A241712: Erroneous version of A128241.
+A241713: Erroneous version of A128242.
+A241714: Erroneous version of A128243.
+A241715: Erroneous version of column k=7 of A128042.
+A242644: Erroneous version of A242643.
+A243245: Duplicate of A128240.
+A244914: Duplicate of A227126.
+A244969: Duplicate of A090196.
+A246131: Duplicate of A082180.
+A246212: Duplicate of A163951.
+A246598: Erroneous version of A002831.
+A246968: Erroneous version of A001500.
+A246969: Erroneous version of A246970.
+A246976: Sequence B'' of P-positions in Fraenkel''s (2,1)-Wythoff''s game.
+A247194: a(n) = ceiling(Pi*n^3).
+A248361: Erroneous version of A006712.
+A248362: Erroneous version of A006713.
+A249035: Erroneous version of A249386.
+A251560: Erroneous version of A064614.
+A254180: Duplicate of A081800.
+A254290: Duplicate of A003675.
+A257343: Erroneous version of A079339.
+A257344: Erroneous version of A004290.
+A257584: Erroneous version of A006507.
+A257629: Duplicate of A276729.
+A259093: Erroneous version of A006749.
+A259336: Erroneous version of A002824.
+A259339: Erroneous version of A002825.
+A259340: Erroneous version of A002826.
+A259467: Erroneous version of A003092.
+A259470: Erroneous version of A003274.
+A259474: Erroneous version of A002817.
+A259690: Erroneous version of A001002.
+A259699: Erroneous version of A259700.
+A259881: Erroneous version of A005186.
+A260321: Erroneous version of A094047.
+A260337: Erroneous version of A002135.
+A260339: Erroneous version of A254243.
+A260782: Erroneous version of A002469.
+A260783: Erroneous version of A002468.
+A260995: Erroneous version of A250001.
+A261014: Erroneous version of A000616.
+A262263: Duplicate of A072987.
+A262391: Erroneous duplicate of A000944.
+A263621: Appears to be an erroneous version of A263620.
+A263839: Erroneous version of A004028.
+A263840: Erroneous version of A004027.
+A266162: Erroneous version of A004143
+A266757: Erroneous version of A005263.
+A267011: Duplicate of A258206.
+A268428: a(n) = (3*(n^2+n+99)+cos(Pi*n/2)-sin(Pi*n/2))/2.
+A268521: Erroneous version of A268518.
+A269510: Duplicate of A093907.
+A271171: Erroneous version of A270798.
+A271247: Erroneous version of A270800.
+A271501: Erroneous version of A113900.
+A271918: Erroneous version of A003585.
+A272169: Duplicate of A084911.
+A273981: Erroneous version of A005897.
+A274103: Erroneous version of A003323.
+A274302: Erroneous version of A274300.
+A274411: Erroneous version of A274410.
+A274639: Erroneous version of A306879.
+A274643: Erroneous version of A259698,
+A274942: Erroneous version of A129860.
+A275081: Duplicate of A097443.
+A275571: Incorrect duplicate of A004146.
+A279796: Erroneous duplicate of A285022.
+A282320: Erroneous version of A002854.
+A283021: Erroneous version of A263656.
+A283055: Erroneous version of A272435.
+A283823: Erroneous version of A000676.
+A285664: Erroneous version of A049297.
+A288573: Erroneous version of A288574.
+A291303: Appears to be an erroneous version of A019294.
+A291967: Erroneous version of A001699.
+A293032: Erroneous version of A304932.
+A294437: Erroneous version of A007290.
+A294438: Erroneous version of A074650.
+A294455: Erroneous version of A182522.
+A295558: Erroneous version of A295559.
+A296366: Erroneous version of A007334.
+A299917: Erroneous version of A299915.
+A299999: Duplicate of A007341.
+A300754: Erroneous version of A145392.
+A300755: Erroneous version of A145393.
+A306574: Incorrect version of A088527.
+A307289: Erroneous version of A006227.
+A317949: Erroneous version of A013582.
+A318936: Erroneous version of A088750.
+A323461: Erroneous version of A323457.
+A323841: Erroneous version of: Number of Stanley graphs on n nodes.
+A328087: Erroneous version of A001523.
+A328980: Erroneous version of A328910: Number of solutions to Erdős''s Last Equation in n variables.
+A330553: Erroneous version of A275649.
+A331155: Erroneous version of A008299.
+A333798: Erroneous version of A030525.
+A333799: Erroneous version of A030534.
+A333800: Erroneous version of A030532.
+A335704: Erroneous version of A113653.
+A337708: Erroneous version of A000203.
+A338355: Erroneous version of A130131.
+A338710: Erroneous version of A338706.
+A338711: Erroneous version of A130132.
+A338734: Erroneous version of A123828.
+A339386: a(n) is the number of non-isomorphic, serial/parallel indecomposable resistor networks with n edges. (Erroneous version of A338487)
