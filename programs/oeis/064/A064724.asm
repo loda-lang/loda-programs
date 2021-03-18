@@ -4,54 +4,7 @@
 add $0,1
 mul $0,2
 sub $0,1
-sub $1,$0
-mov $3,$0
-div $3,5
-sub $0,$3
-lpb $0,1030
-  add $1,$0
-  mov $2,$0
-  sub $3,$0
-  lpb $3,2
-    mul $0,4
-    mov $1,$0
-    add $1,6
-    mov $3,6
-    mov $3,$1
-    add $4,6
-    cal $1,56220 ; a(n) = 2*n^2 - 1.
-    mov $3,1
-  lpe
-lpe
-add $1,$4
-add $3,$2
-lpb $3,5
-  sub $2,5
-  mov $4,7
-  add $5,$3
-  add $1,$5
-  sub $1,14
-  mov $2,7
-  mov $3,1
-  mov $4,15
-  pow $5,3
-  sub $5,10
-  sub $5,$0
-  lpb $3,2
-    div $0,2
-    div $1,2
-    sub $2,$4
-    mod $3,4
-    add $5,2
-  lpe
-  sub $1,$0
-  add $3,52
-  pow $4,$4
-lpe
-sub $1,1
+mov $2,$0
+div $2,5
+sub $0,$2
 mov $1,$0
-add $2,2
-mov $3,$0
-sub $3,17
-add $4,21
-add $5,$0
