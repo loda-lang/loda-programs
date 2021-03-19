@@ -3,6 +3,5 @@
 
 sub $0,1
 cal $0,65358 ; The Jacob's Ladder sequence: a(n) = Sum_{k=1..n} (-1)^pi(k), where pi = A000720.
-add $0,2
+add $0,1
 mov $1,$0
-sub $1,1

@@ -1,0 +1,10 @@
+; A023574: Sum of exponents in prime-power factorization of p(n)-3.
+; 0,0,1,2,3,2,2,4,3,2,3,2,2,4,3,3,4,2,6,3,3,3,5,2,2,3,4,4,2,3,3,7,2,4,2,3,3,6,3,3,5,2,3,3,2,4,5,4,6,2,3,3,3,4,2,4,3,3,2,2,5,3,5,4,3,2,4,2,4,2,4,3,4,3,4,4,2,2,2,3,6,3,3,3,3,5,2,2,2,4,5,4,4,4,5,5,3,3,5
+
+cal $0,6093 ; a(n) = prime(n) - 1.
+sub $0,2
+pow $0,2
+sub $0,1
+cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+mov $1,$0
+div $1,2

@@ -3,11 +3,6 @@
 
 add $0,1
 bin $0,2
-mov $1,1031
-mul $1,$0
-sub $1,$0
-mov $2,$0
-gcd $2,2
-div $1,$2
-div $1,1030
+dif $0,2
+mov $1,$0
 mul $1,5
