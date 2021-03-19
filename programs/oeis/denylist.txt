@@ -1182,7 +1182,6 @@ A099747: Duplicate of A059916.
 A099758: Duplicate of A099760.
 A099926: Duplicate of A098600.
 A100360: Duplicate of A061421.
-A100455: a(n) = 2^n + sin(n*Pi/2).
 A100507: Erroneous version of A005630.
 A100508: Erroneous version of A001049.
 A100590: Duplicate of A096218.

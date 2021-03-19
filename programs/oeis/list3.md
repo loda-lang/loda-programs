@@ -96,6 +96,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152179](http://oeis.org/A152179) ([L07 program](152/A152179.asm)): (n^2-2=A008865) mod 9. Period 9:repeat 8,2,7,5,5,7,2,8,7.
 * [A152223](http://oeis.org/A152223) ([L18 program](152/A152223.asm)): a(n) = -4*a(n-1) + 6*a(n-2) for n > 1 with a(0) = 1 and a(1) = -6.
 * [A152224](http://oeis.org/A152224) ([L03 program](152/A152224.asm)): a(n)=4*a(n-1)+6*a(n-2), n>1 ; a(0)=1, a(1)=6 .
+* [A152235](http://oeis.org/A152235) ([L04 program](152/A152235.asm)): Largest squarefree number dividing the number of divisors n.
 * [A152268](http://oeis.org/A152268) ([L17 program](152/A152268.asm)): A hidden Markov recursion involving the matrices: M0 = {{0, 1}, {1, 1/2}}; M = {{0, 2}, {2, 1}}; as Mh=M0.M.(M0+I); v[(n)=Mh.v(n-1): first element of v.
 * [A152271](http://oeis.org/A152271) ([L04 program](152/A152271.asm)): a(n)=1 for even n and (n+1)/2 for odd n.
 * [A152291](http://oeis.org/A152291) ([L07 program](152/A152291.asm)): a(n) = (n+1)^floor((n-1)/2).
@@ -934,6 +935,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158603](http://oeis.org/A158603) ([L04 program](158/A158603.asm)): a(n) = 441*n^2 + 21.
 * [A158604](http://oeis.org/A158604) ([L04 program](158/A158604.asm)): a(n) = 42*n^2 + 1.
 * [A158607](http://oeis.org/A158607) ([L05 program](158/A158607.asm)): Period 5: repeat 9,11,13,5,7.
+* [A158611](http://oeis.org/A158611) ([L08 program](158/A158611.asm)): 0, 1 and the primes.
 * [A158622](http://oeis.org/A158622) ([L12 program](158/A158622.asm)): Numerator of the reduced fraction A158620(n)/A158621(n).
 * [A158623](http://oeis.org/A158623) ([L20 program](158/A158623.asm)): Denominator of the reduced fraction A158620(n)/A158621(n).
 * [A158626](http://oeis.org/A158626) ([L05 program](158/A158626.asm)): a(n) = 42*n^2 - 1.
@@ -1204,7 +1206,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A161474](http://oeis.org/A161474) ([L07 program](161/A161474.asm)): Triple factorials n!!!: a(n) = n*a(n-3).
 * [A161511](http://oeis.org/A161511) ([L08 program](161/A161511.asm)): Number of 1...0 pairs in the binary representation of 2n.
 * [A161532](http://oeis.org/A161532) ([L05 program](161/A161532.asm)): a(n) = 2n^2 + 8n + 1.
-* [A161537](http://oeis.org/A161537) ([L09 program](161/A161537.asm)): a(n) = n-th composite + n.
+* [A161537](http://oeis.org/A161537) ([L05 program](161/A161537.asm)): a(n) = n-th composite + n.
 * [A161549](http://oeis.org/A161549) ([L05 program](161/A161549.asm)): a(n) = 2n^2 + 14n + 1.
 * [A161560](http://oeis.org/A161560) ([L14 program](161/A161560.asm)): a(n) = floor(A000069(n)/2-1/2).
 * [A161569](http://oeis.org/A161569) ([L18 program](161/A161569.asm)): Sum of first n nonprimes minus their indices.
@@ -1284,7 +1286,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162484](http://oeis.org/A162484) ([L06 program](162/A162484.asm)): a(1) = 2, a(2) = 8; a(n) = 2 a(n - 1) + a(n - 2) - 4*(n mod 2).
 * [A162485](http://oeis.org/A162485) ([L04 program](162/A162485.asm)): a(1) = 4, a(2) = 6; a(n) = 2 a(n - 1) + a(n - 2) - 4 Mod[n - 1, 2]
 * [A162495](http://oeis.org/A162495) ([L24 program](162/A162495.asm)): Number of reduced words of length n in the icosahedral reflection group [3,5] of order 120.
-* [A162526](http://oeis.org/A162526) ([L10 program](162/A162526.asm)): Numbers k whose largest divisor <= sqrt(k) equals 6.
 * [A162540](http://oeis.org/A162540) ([L12 program](162/A162540.asm)): a(n) = (2*n+1)*(2*n+3)*(2*n+5)/3.
 * [A162550](http://oeis.org/A162550) ([L09 program](162/A162550.asm)): 2n repeated C_n times, where C_n = A000108(n) is a Catalan number.
 * [A162551](http://oeis.org/A162551) ([L05 program](162/A162551.asm)): a(n) = 2 * C(2*n,n-1).
@@ -1532,7 +1533,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164910](http://oeis.org/A164910) ([L04 program](164/A164910.asm)): Partial sums of A088748
 * [A164931](http://oeis.org/A164931) ([L18 program](164/A164931.asm)): n times the n-th noncomposite.
 * [A164938](http://oeis.org/A164938) ([L06 program](164/A164938.asm)): a(n) = (n^5-n)/10, which is always an integer.
-* [A164950](http://oeis.org/A164950) ([L14 program](164/A164950.asm)): 1 if there is a winning strategy for misère Sprouts with n initial points, else 0.
+* [A164950](http://oeis.org/A164950) ([L12 program](164/A164950.asm)): 1 if there is a winning strategy for misère Sprouts with n initial points, else 0.
 * [A164965](http://oeis.org/A164965) ([L04 program](164/A164965.asm)): Cumulative sums of A010892.
 * [A164985](http://oeis.org/A164985) ([L16 program](164/A164985.asm)): Denominators of ternary BBP-type series for log(5)
 * [A165020](http://oeis.org/A165020) ([L03 program](165/A165020.asm)): Length of cycle mentioned in A165019
@@ -1620,23 +1621,38 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165835](http://oeis.org/A165835) ([L13 program](165/A165835.asm)): Totally multiplicative sequence with a(p) = 14.
 * [A165836](http://oeis.org/A165836) ([L13 program](165/A165836.asm)): Totally multiplicative sequence with a(p) = 15.
 * [A165837](http://oeis.org/A165837) ([L03 program](165/A165837.asm)): Totally multiplicative sequence with a(p) = 16.
-* [A165838](http://oeis.org/A165838) ([L13 program](165/A165838.asm)): Totally multiplicative sequence with a(p) = 17.
-* [A165839](http://oeis.org/A165839) ([L13 program](165/A165839.asm)): Totally multiplicative sequence with a(p) = 18.
-* [A165840](http://oeis.org/A165840) ([L13 program](165/A165840.asm)): Totally multiplicative sequence with a(p) = 19.
-* [A165841](http://oeis.org/A165841) ([L13 program](165/A165841.asm)): Totally multiplicative sequence with a(p) = 20.
-* [A165842](http://oeis.org/A165842) ([L13 program](165/A165842.asm)): Totally multiplicative sequence with a(p) = 21.
-* [A165843](http://oeis.org/A165843) ([L13 program](165/A165843.asm)): Totally multiplicative sequence with a(p) = 22.
-* [A165844](http://oeis.org/A165844) ([L13 program](165/A165844.asm)): Totally multiplicative sequence with a(p) = 23.
-* [A165845](http://oeis.org/A165845) ([L13 program](165/A165845.asm)): Totally multiplicative sequence with a(p) = 24.
+* [A165838](http://oeis.org/A165838) ([L07 program](165/A165838.asm)): Totally multiplicative sequence with a(p) = 17.
+* [A165839](http://oeis.org/A165839) ([L07 program](165/A165839.asm)): Totally multiplicative sequence with a(p) = 18.
+* [A165840](http://oeis.org/A165840) ([L07 program](165/A165840.asm)): Totally multiplicative sequence with a(p) = 19.
+* [A165841](http://oeis.org/A165841) ([L07 program](165/A165841.asm)): Totally multiplicative sequence with a(p) = 20.
+* [A165842](http://oeis.org/A165842) ([L07 program](165/A165842.asm)): Totally multiplicative sequence with a(p) = 21.
+* [A165843](http://oeis.org/A165843) ([L07 program](165/A165843.asm)): Totally multiplicative sequence with a(p) = 22.
+* [A165844](http://oeis.org/A165844) ([L07 program](165/A165844.asm)): Totally multiplicative sequence with a(p) = 23.
+* [A165845](http://oeis.org/A165845) ([L07 program](165/A165845.asm)): Totally multiplicative sequence with a(p) = 24.
 * [A165846](http://oeis.org/A165846) ([L03 program](165/A165846.asm)): Totally multiplicative sequence with a(p) = 25.
-* [A165847](http://oeis.org/A165847) ([L13 program](165/A165847.asm)): Totally multiplicative sequence with a(p) = 26.
+* [A165847](http://oeis.org/A165847) ([L07 program](165/A165847.asm)): Totally multiplicative sequence with a(p) = 26.
 * [A165848](http://oeis.org/A165848) ([L06 program](165/A165848.asm)): Totally multiplicative sequence with a(p) = 27.
-* [A165849](http://oeis.org/A165849) ([L13 program](165/A165849.asm)): Totally multiplicative sequence with a(p) = 28.
-* [A165850](http://oeis.org/A165850) ([L13 program](165/A165850.asm)): Totally multiplicative sequence with a(p) = 29.
-* [A165851](http://oeis.org/A165851) ([L13 program](165/A165851.asm)): Totally multiplicative sequence with a(p) = 30.
-* [A165852](http://oeis.org/A165852) ([L13 program](165/A165852.asm)): Totally multiplicative sequence with a(p) = 31.
+* [A165849](http://oeis.org/A165849) ([L07 program](165/A165849.asm)): Totally multiplicative sequence with a(p) = 28.
+* [A165850](http://oeis.org/A165850) ([L07 program](165/A165850.asm)): Totally multiplicative sequence with a(p) = 29.
+* [A165851](http://oeis.org/A165851) ([L07 program](165/A165851.asm)): Totally multiplicative sequence with a(p) = 30.
+* [A165852](http://oeis.org/A165852) ([L07 program](165/A165852.asm)): Totally multiplicative sequence with a(p) = 31.
 * [A165853](http://oeis.org/A165853) ([L03 program](165/A165853.asm)): Totally multiplicative sequence with a(p) = 32.
+* [A165854](http://oeis.org/A165854) ([L07 program](165/A165854.asm)): Totally multiplicative sequence with a(p) = 33.
+* [A165855](http://oeis.org/A165855) ([L07 program](165/A165855.asm)): Totally multiplicative sequence with a(p) = 34.
+* [A165856](http://oeis.org/A165856) ([L07 program](165/A165856.asm)): Totally multiplicative sequence with a(p) = 35.
 * [A165857](http://oeis.org/A165857) ([L03 program](165/A165857.asm)): Totally multiplicative sequence with a(p) = 36.
+* [A165858](http://oeis.org/A165858) ([L07 program](165/A165858.asm)): Totally multiplicative sequence with a(p) = 37.
+* [A165859](http://oeis.org/A165859) ([L07 program](165/A165859.asm)): Totally multiplicative sequence with a(p) = 38.
+* [A165860](http://oeis.org/A165860) ([L07 program](165/A165860.asm)): Totally multiplicative sequence with a(p) = 39.
+* [A165861](http://oeis.org/A165861) ([L07 program](165/A165861.asm)): Totally multiplicative sequence with a(p) = 40.
+* [A165862](http://oeis.org/A165862) ([L07 program](165/A165862.asm)): Totally multiplicative sequence with a(p) = 41.
+* [A165863](http://oeis.org/A165863) ([L07 program](165/A165863.asm)): Totally multiplicative sequence with a(p) = 42.
+* [A165864](http://oeis.org/A165864) ([L07 program](165/A165864.asm)): Totally multiplicative sequence with a(p) = 43.
+* [A165865](http://oeis.org/A165865) ([L07 program](165/A165865.asm)): Totally multiplicative sequence with a(p) = 44.
+* [A165866](http://oeis.org/A165866) ([L07 program](165/A165866.asm)): Totally multiplicative sequence with a(p) = 45.
+* [A165867](http://oeis.org/A165867) ([L07 program](165/A165867.asm)): Totally multiplicative sequence with a(p) = 46.
+* [A165868](http://oeis.org/A165868) ([L07 program](165/A165868.asm)): Totally multiplicative sequence with a(p) = 47.
+* [A165869](http://oeis.org/A165869) ([L07 program](165/A165869.asm)): Totally multiplicative sequence with a(p) = 48.
 * [A165870](http://oeis.org/A165870) ([L03 program](165/A165870.asm)): Totally multiplicative sequence with a(p) = 49.
 * [A165897](http://oeis.org/A165897) ([L03 program](165/A165897.asm)): a(n) = a(n-1) + largest proper divisor of a(n-1), a(1)=4.
 * [A165900](http://oeis.org/A165900) ([L04 program](165/A165900.asm)): Values of Fibonacci polynomial n^2 - n - 1.
@@ -1697,7 +1713,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166466](http://oeis.org/A166466) ([L06 program](166/A166466.asm)): Trisection a(n) = A000265(3n).
 * [A166481](http://oeis.org/A166481) ([L17 program](166/A166481.asm)): a(n) = 3*a(n-2) for n > 2; a(1) = 1; a(2) = 7.
 * [A166486](http://oeis.org/A166486) ([L03 program](166/A166486.asm)): Periodic sequence [0,1,1,1] of length 4.
-* [A166496](http://oeis.org/A166496) ([L13 program](166/A166496.asm)): Prime plus the next composite.
+* [A166496](http://oeis.org/A166496) ([L09 program](166/A166496.asm)): Prime plus the next composite.
 * [A166514](http://oeis.org/A166514) ([L08 program](166/A166514.asm)): Zig-zag function for first two columns of a matrix (take numbers in consecutive pairs).
 * [A166515](http://oeis.org/A166515) ([L08 program](166/A166515.asm)): Partial sum of A166514.
 * [A166516](http://oeis.org/A166516) ([L09 program](166/A166516.asm)): A product of consecutive doubled Fibonacci numbers.
@@ -2492,6 +2508,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173116](http://oeis.org/A173116) ([L04 program](173/A173116.asm)): a(n) = sinh(2*arcsinh(n))^2 = 4*n^2*(n^2 + 1).
 * [A173121](http://oeis.org/A173121) ([L04 program](173/A173121.asm)): a(n) = sinh(2*arccosh(n))^2 = 4*n^2*(n^2 - 1).
 * [A173135](http://oeis.org/A173135) ([L07 program](173/A173135.asm)): Primes other than 3 and 5.
+* [A173137](http://oeis.org/A173137) ([L11 program](173/A173137.asm)): n-th nonnegative noncomposite number plus n.
 * [A173141](http://oeis.org/A173141) ([L06 program](173/A173141.asm)): a(n) = 49*n^2 + n.
 * [A173151](http://oeis.org/A173151) ([L13 program](173/A173151.asm)): a(n) = a(n-1) - [a(n-1)/2] + a(n-2) - [a(n-5)/2] where [k] = floor(k).
 * [A173154](http://oeis.org/A173154) ([L11 program](173/A173154.asm)): a(n) = n^3/6 + 3*n^2/4 + 7*n/3 + 7/8 + (-1)^n/8.
@@ -3034,6 +3051,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179370](http://oeis.org/A179370) ([L11 program](179/A179370.asm)): Positive integers of the form (7*m^2+1)/11.
 * [A179403](http://oeis.org/A179403) ([L17 program](179/A179403.asm)): Number of ways to place 2 nonattacking kings on an n X n toroidal board.
 * [A179436](http://oeis.org/A179436) ([L05 program](179/A179436.asm)): a(n) = (3*n+7)*(3*n+2)/2.
+* [A179437](http://oeis.org/A179437) ([L08 program](179/A179437.asm)): |2n - prime(n)|.
 * [A179508](http://oeis.org/A179508) ([L18 program](179/A179508.asm)): a(n) is the unique integer such that sum_{k=0}^{p-1}b_k/(-n)^k=a(n) (mod p) for any prime p not dividing n, where b_0,b_1,b_2,... are Bell numbers given by A000110.
 * [A179526](http://oeis.org/A179526) ([L10 program](179/A179526.asm)): (3^k - 1)/2 appears 3^(k-1) times, k>0.
 * [A179527](http://oeis.org/A179527) ([L18 program](179/A179527.asm)): Characteristic function of numbers in A083207.
@@ -3069,7 +3087,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179904](http://oeis.org/A179904) ([L08 program](179/A179904.asm)): a(n) = A056520(n)+1 for n>0, a(0)=1.
 * [A179905](http://oeis.org/A179905) ([L18 program](179/A179905.asm)): (1, 4, 7, 10, 13,...) convolved with (1, 0, 4, 7, 10, 13...); given A016777 = (1, 4, 7, 10, 13,...).
 * [A179935](http://oeis.org/A179935) ([L10 program](179/A179935.asm)): Squares where the number of decimal digits is also a square.
-* [A179942](http://oeis.org/A179942) ([L17 program](179/A179942.asm)): Number of times n appears in a 1000 x 1000 multiplication table.
+* [A179942](http://oeis.org/A179942) ([L02 program](179/A179942.asm)): Number of times n appears in a 1000 x 1000 multiplication table.
 * [A179976](http://oeis.org/A179976) ([L03 program](179/A179976.asm)): 2^(2n+1) mod (2n+1).
 * [A179986](http://oeis.org/A179986) ([L05 program](179/A179986.asm)): Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.
 * [A179991](http://oeis.org/A179991) ([L11 program](179/A179991.asm)): Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.
@@ -3207,7 +3225,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181709](http://oeis.org/A181709) ([L10 program](181/A181709.asm)): Indices of primes in A007310.
 * [A181716](http://oeis.org/A181716) ([L22 program](181/A181716.asm)): a(n) = a(n-1) + a(n-2) + (-1)^n, with a(0)=0 and a(1)=1.
 * [A181762](http://oeis.org/A181762) ([L14 program](181/A181762.asm)): a(n) = n/2 if n is even, otherwise 3n+5.
-* [A181763](http://oeis.org/A181763) ([L06 program](181/A181763.asm)): a(n) = A061037(n)^2.
+* [A181763](http://oeis.org/A181763) ([L03 program](181/A181763.asm)): a(n) = A061037(n)^2.
 * [A181773](http://oeis.org/A181773) ([L05 program](181/A181773.asm)): Molecular topological indices of the cocktail party graphs.
 * [A181829](http://oeis.org/A181829) ([L04 program](181/A181829.asm)): a(n) = 4*A060819(n-2)*A060819(n+2).
 * [A181889](http://oeis.org/A181889) ([L21 program](181/A181889.asm)): Bisection of A181888.
