@@ -4,8 +4,4 @@
 add $0,1
 pow $0,3
 cal $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-mul $0,3628800
 mov $1,$0
-sub $1,7257600
-div $1,3628800
-add $1,2
