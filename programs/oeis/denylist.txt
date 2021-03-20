@@ -1,6 +1,7 @@
 A000017: Erroneous version of A032522.
 A000154: Erroneous version of A003713.
 A000381: Essentially the same as A001611.
+A000572: A Beatty sequence: [ n(e+1) ].
 A000783: Erroneous version of A007535.
 A000858: Duplicate of A003436.
 A001012: Erroneous version of A040082.
@@ -118,7 +119,9 @@ A021000: Duplicate of A020727.
 A021015: Duplicate of A010680.
 A021037: Duplicate of A010674.
 A022832: Duplicate of A008348.
+A022843: Beatty sequence for e: a(n) = floor(n*e).
 A022844: a(n) = floor(n*Pi)
+A022852: Integer nearest n * e, where e is the natural log base.
 A022853: a(n) = integer nearest n*Pi.
 A022945: Duplicate of A022443.
 A022948: Duplicate of A022443.
@@ -1284,6 +1287,7 @@ A121193: Erroneous version of A159866
 A121232: Erroneous version of A049068.
 A121286: Number of catacondensed hexagonal systems with n hexagons.
 A121381: a(n) = Ceiling(n*Pi).
+A121384: Ceiling(n*e).
 A121515: Incorrect duplicate of A226508.
 A121661: Duplicate of A118836.
 A121825: Duplicate of A049423.
@@ -1503,7 +1507,11 @@ A181630: Duplicate of A112310
 A181757: Erroneous version of A181753.
 A182104: Duplicate of A073587.
 A182291: Duplicate of A071294.
+A184589: floor(n*e-1); complement of A184590.
+A184590: floor[(n*e+1)/(e-1)]; complement of A184589.
+A184745: floor(n*(e-1/2)+1/2); complement of A184744.
 A184969: a(n) = [Pi]+[2*Pi]+...+[n*Pi], where []=floor.
+A184976: a(n) = [e]+[2*e]+...+[n*e], where []=floor.
 A185181: Incorrect version of A122705.
 A185272: Erroneous version of A141316.
 A185444: Erroneous version of A061574.
@@ -1513,6 +1521,7 @@ A187320: a(n) = floor((Pi-2)*n); complement of A186544.
 A187694: Erroneous version of A086596.
 A189075: Erroneous version of A188900.
 A190624: Erroneous version of A190623.
+A191152: [4n*e]-2[2n*e], where [ ]=floor.
 A191153: a(n) = floor(2*n*Pi) - 2*floor(n*Pi).
 A191256: Duplicate of A067368.
 A191408: Duplicate of A006641.
@@ -1678,6 +1687,8 @@ A274643: Erroneous version of A259698,
 A274942: Erroneous version of A129860.
 A275081: Duplicate of A097443.
 A275571: Incorrect duplicate of A004146.
+A276853: Beatty sequence for 2*e.
+A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279796: Erroneous duplicate of A285022.
 A282320: Erroneous version of A002854.
 A282498: a(n) = nearest integer to Pi*prime(n).
@@ -1688,7 +1699,10 @@ A285664: Erroneous version of A049297.
 A288573: Erroneous version of A288574.
 A291303: Appears to be an erroneous version of A019294.
 A291967: Erroneous version of A001699.
+A292650: Rank of n*e when all the numbers j*e and k*Pi, for j>=1, k>=1, are jointly ranked.
 A293032: Erroneous version of A304932.
+A293412: Greatest integer k such that k/n^2 < e
+A293413: Least integer k such that k/n^2 > e.
 A294437: Erroneous version of A007290.
 A294438: Erroneous version of A074650.
 A294455: Erroneous version of A182522.
