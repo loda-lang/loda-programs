@@ -3,9 +3,4 @@
 
 add $0,1
 cal $0,61037 ; Numerator of 1/4 - 1/n^2.
-mul $0,3
-mov $1,27306
-add $1,$0
-sub $1,27310
-div $1,3
-add $1,2
+mov $1,$0

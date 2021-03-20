@@ -4,4 +4,3 @@
 mul $0,6
 cal $0,7918 ; Least prime >= n (version 1 of the "next prime" function).
 mov $1,$0
-mul $0,14515200

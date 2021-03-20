@@ -1804,6 +1804,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A235361](http://oeis.org/A235361) ([L31 program](235/A235361.asm)): Floor((n + Pi)^2).
 * [A235367](http://oeis.org/A235367) ([L07 program](235/A235367.asm)): Sum of positive even numbers up to n^2.
 * [A235382](http://oeis.org/A235382) ([L08 program](235/A235382.asm)): a(n) = smallest number of unit squares required to enclose n units of area.
+* [A235398](http://oeis.org/A235398) ([L03 program](235/A235398.asm)): Sum of digits of the cubes of prime numbers.
 * [A235399](http://oeis.org/A235399) ([L10 program](235/A235399.asm)): Numbers which are the digital sum of the cube of some prime.
 * [A235451](http://oeis.org/A235451) ([L06 program](235/A235451.asm)): Number of length n words on alphabet {0,1,2} of the form 0^(i)1^(j)2^(k) such that i=j or j=k.
 * [A235497](http://oeis.org/A235497) ([L35 program](235/A235497.asm)): 2n concatenated with n.
@@ -2516,7 +2517,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248698](http://oeis.org/A248698) ([L10 program](248/A248698.asm)): Floor of sums of the non-integer fourth roots of n, as partitioned by the integer roots: floor[sum(j from n^4+1 to (n+1)^4-1, j^(1/4))].
 * [A248720](http://oeis.org/A248720) ([L04 program](248/A248720.asm)): a(n) = (n*(n+1))^5.
 * [A248739](http://oeis.org/A248739) ([L17 program](248/A248739.asm)): a(n) = 29*n + ceiling(n/29).
-* [A248758](http://oeis.org/A248758) ([L25 program](248/A248758.asm)): Ceiling(n*Pi^(1/3)).
 * [A248800](http://oeis.org/A248800) ([L04 program](248/A248800.asm)): n^2 + 3/2 + (1/2)*(-1)^n.
 * [A248812](http://oeis.org/A248812) ([L09 program](248/A248812.asm)): Repeated terms of (2n)! (A010050).
 * [A248825](http://oeis.org/A248825) ([L05 program](248/A248825.asm)): n^2 + 1 - (-1)^n.
@@ -2541,7 +2541,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A249099](http://oeis.org/A249099) ([L04 program](249/A249099.asm)): Position of 3*n^6 in the ordered union of {h^6, h >=1} and {3*k^6, k >=1}.
 * [A249115](http://oeis.org/A249115) ([L12 program](249/A249115.asm)): Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231.
 * [A249118](http://oeis.org/A249118) ([L12 program](249/A249118.asm)): Position of 32n^6 in the ordered union of {h^6, h >=1} and {32*k^6, k >=1}.
-* [A249123](http://oeis.org/A249123) ([L20 program](249/A249123.asm)): Position of n^6 in the ordered union of {h^6, h >= 1} and {2*k^6, k >= 1}.
 * [A249127](http://oeis.org/A249127) ([L04 program](249/A249127.asm)): a(n) = n * floor(3*n/2).
 * [A249140](http://oeis.org/A249140) ([L07 program](249/A249140.asm)): To obtain a(n), write the n-th composite number as a product of primes, subtract 1 from each prime and multiply.
 * [A249152](http://oeis.org/A249152) ([L18 program](249/A249152.asm)): Exponent of 2 in the hyperfactorials: a(n) = A007814(A002109(n)).
