@@ -221,6 +221,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A255226](http://oeis.org/A255226) ([L19 program](255/A255226.asm)): Number of (n+2)X(6+2) 0..1 arrays with no 3x3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2
 * [A255227](http://oeis.org/A255227) ([L19 program](255/A255227.asm)): Number of (n+2)X(7+2) 0..1 arrays with no 3x3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2
 * [A255236](http://oeis.org/A255236) ([L17 program](255/A255236.asm)): All positive solutions x of the second class of the Pell equation x^2 - 2*y^2 = -7.
+* [A255270](http://oeis.org/A255270) ([L03 program](255/A255270.asm)): Integer part of fourth root of n.
 * [A255308](http://oeis.org/A255308) ([L33 program](255/A255308.asm)): Number of times you can apply log_2 to n until the result is not a power of 2. Here log_2 means the base 2 logarithm.
 * [A255309](http://oeis.org/A255309) ([L26 program](255/A255309.asm)): Number of times you can apply log2 until the result is either 1 or not a power of 2. Here log2 means logarithm base 2.
 * [A255413](http://oeis.org/A255413) ([L05 program](255/A255413.asm)): Row 3 of Ludic array A255127: a(n) = A007310((5*n)-3).
@@ -553,6 +554,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261191](http://oeis.org/A261191) ([L04 program](261/A261191.asm)): 40-gonal numbers: a(n) = 38*n*(n-1)/2 + n.
 * [A261241](http://oeis.org/A261241) ([L24 program](261/A261241.asm)): One half of numbers representable in at least two different ways as sums of four nonvanishing cubes. See A259060 for these numbers and their representations.
 * [A261243](http://oeis.org/A261243) ([L05 program](261/A261243.asm)): Row lengths of the irregular triangles A258643 and A261242: maximal number of 0-islands (holes) of certain bisymmetric n X n matrices with 0 or 1 entries only.
+* [A261273](http://oeis.org/A261273) ([L03 program](261/A261273.asm)): Take the list of positive rationals {R(n): n>=1} in the order defined by Calkin and Wilf (Recounting the Rationals, 1999); a(n) = denominator of R(prime(n)).
 * [A261276](http://oeis.org/A261276) ([L09 program](261/A261276.asm)): 100-gonal numbers: a(n) = 98*n*(n-1)/2 + n.
 * [A261327](http://oeis.org/A261327) ([L04 program](261/A261327.asm)): Numerators of 1 + n^2/4.
 * [A261343](http://oeis.org/A261343) ([L04 program](261/A261343.asm)): 50-gonal numbers: a(n) = 48*n*(n-1)/2 + n.
@@ -579,6 +581,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261882](http://oeis.org/A261882) ([L16 program](261/A261882.asm)): Decimal expansion of 32/27.
 * [A261893](http://oeis.org/A261893) ([L07 program](261/A261893.asm)): a(n) = (n+1)^3 - n^2.
 * [A261953](http://oeis.org/A261953) ([L06 program](261/A261953.asm)): Start with a single equilateral triangle for n=0; for the odd n-th generation add a triangle at each expandable side of the triangles of the (n-1)-th generation (this is the "side to side" version); for the even n-th generation use the "vertex to vertex" version; a(n) is the number of triangles added in the n-th generation.
+* [A261969](http://oeis.org/A261969) ([L07 program](261/A261969.asm)): Product of primes dividing n with maximum multiplicity.
 * [A261971](http://oeis.org/A261971) ([L07 program](261/A261971.asm)): Number of unit cubes that have a side on the surface of a p X p X p cube composed of p^3 unit cubes, where p is the n-th prime.
 * [A262000](http://oeis.org/A262000) ([L14 program](262/A262000.asm)): a(n) = n^2*(7*n - 5)/2.
 * [A262033](http://oeis.org/A262033) ([L10 program](262/A262033.asm)): Number of permutations of [n] beginning with at least floor(n/2) ascents.
@@ -1711,7 +1714,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A279077](http://oeis.org/A279077) ([L19 program](279/A279077.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/7) requires n steps to reach 0.
 * [A279078](http://oeis.org/A279078) ([L11 program](279/A279078.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/8) requires n steps to reach 0.
 * [A279079](http://oeis.org/A279079) ([L12 program](279/A279079.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/9) requires n steps to reach 0.
-* [A279080](http://oeis.org/A279080) ([L13 program](279/A279080.asm)): Maximum starting value of X such that repeated replacement of X with X-ceiling(X/10) requires n steps to reach 0.
 * [A279100](http://oeis.org/A279100) ([L46 program](279/A279100.asm)): a(n) = Sum_{k=0..n} ceiling(phi^k), where phi is the golden ratio (A001622).
 * [A279101](http://oeis.org/A279101) ([L08 program](279/A279101.asm)): a(n) = Sum_{k=0..n} ceiling((1 + sqrt(2))^k).
 * [A279169](http://oeis.org/A279169) ([L04 program](279/A279169.asm)): a(n) = floor( 4*n^2/5 ).
@@ -1790,7 +1792,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280710](http://oeis.org/A280710) ([L09 program](280/A280710.asm)): Characteristic function of squarefree semiprimes.
 * [A280724](http://oeis.org/A280724) ([L12 program](280/A280724.asm)): Expansion of 1/(1 - x) + (1/(1 - x)^2)*Sum_{k>=0} x^(3^k).
 * [A280737](http://oeis.org/A280737) ([L03 program](280/A280737.asm)): a(n) = A007302(n)-1.
-* [A280818](http://oeis.org/A280818) ([L11 program](280/A280818.asm)): a(0)=1; for n > 0, if 4n+1 is prime, then a(n)=4n+1, otherwise a(n)=(4n+1)/LPF(4n+1).
+* [A280818](http://oeis.org/A280818) ([L07 program](280/A280818.asm)): a(0)=1; for n > 0, if 4n+1 is prime, then a(n)=4n+1, otherwise a(n)=(4n+1)/LPF(4n+1).
 * [A280931](http://oeis.org/A280931) ([L17 program](280/A280931.asm)): a(n) = 2*F(n-1) + 9*F(n-4) + 9*F(n-7) where n >= 7 and F = A000045.
 * [A281006](http://oeis.org/A281006) ([L21 program](281/A281006.asm)): a(n) = A000203(n) - A052928(n-1).
 * [A281026](http://oeis.org/A281026) ([L05 program](281/A281026.asm)): a(n) = floor(3*n*(n+1)/4).

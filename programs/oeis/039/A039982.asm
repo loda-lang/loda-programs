@@ -7,7 +7,12 @@ lpb $2
   sub $2,1
   lpb $0
     mul $0,2
-    gcd $0,1073741824
+    mov $3,1
+    lpb $0
+      dif $0,2
+      mul $3,2
+    lpe
+    mov $0,$3
   lpe
   pow $0,3
   sub $0,4

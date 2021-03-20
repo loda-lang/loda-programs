@@ -1752,7 +1752,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A233473](http://oeis.org/A233473) ([L13 program](233/A233473.asm)): Least k such that there are n triangular numbers between triangular(k) and k^2.
 * [A233543](http://oeis.org/A233543) ([L08 program](233/A233543.asm)): Table T(n,m) = m! read by rows.
 * [A233581](http://oeis.org/A233581) ([L13 program](233/A233581.asm)): a(n) = 2*a(n-1) - 3*a(n-2) + a(n-3), a(0) = 1, a(1) = 0, a(2) = -1.
-* [A233583](http://oeis.org/A233583) ([L03 program](233/A233583.asm)): Coefficients of the generalized continued fraction expansion e = a(1) +a(1)/(a(2) +a(2)/(a(3) +a(3)/(a(4) +a(4)/....))).
+* [A233583](http://oeis.org/A233583) ([L02 program](233/A233583.asm)): Coefficients of the generalized continued fraction expansion e = a(1) +a(1)/(a(2) +a(2)/(a(3) +a(3)/(a(4) +a(4)/....))).
 * [A233656](http://oeis.org/A233656) ([L06 program](233/A233656.asm)): a(n) = 3*a(n-1) - 2*(n-1), with a(0) = 1.
 * [A233774](http://oeis.org/A233774) ([L04 program](233/A233774.asm)): Total number of vertices in the first n rows of Sierpinski gasket, with a(0) = 1.
 * [A233775](http://oeis.org/A233775) ([L24 program](233/A233775.asm)): Number of vertices in the n-th row of the Sierpinski gasket (cf. A047999).
