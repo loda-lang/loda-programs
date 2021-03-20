@@ -4,8 +4,13 @@
 mov $1,$0
 mov $2,$0
 lpb $1
-  gcd $0,1024
-  mov $1,$0
+  mov $3,1
+  lpb $0
+    dif $0,2
+    mul $3,2
+  lpe
+  mov $0,$3
+  mov $1,$3
 lpe
 add $1,$2
 div $1,2

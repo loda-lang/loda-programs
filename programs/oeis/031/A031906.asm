@@ -4,4 +4,3 @@
 mul $0,6
 cal $0,40 ; The prime numbers.
 mov $1,$0
-mov $2,0

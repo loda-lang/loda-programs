@@ -3,7 +3,6 @@
 
 cal $0,40 ; The prime numbers.
 lpb $0
-  pow $0,2
-  sub $0,4
+  bin $0,2
 lpe
 mov $1,$0

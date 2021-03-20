@@ -3,36 +3,30 @@
 
 mov $2,$0
 add $2,1
-mov $7,$0
+mov $8,$0
 lpb $2
-  mov $0,$7
+  mov $0,$8
   sub $2,1
   sub $0,$2
   mov $4,$0
-  mov $9,2
-  lpb $9
+  mov $6,2
+  lpb $6
     mov $0,$4
-    sub $9,1
-    add $0,$9
-    sub $0,1
-    cal $0,184589 ; floor(n*e-1); complement of A184590.
-    add $0,1
+    sub $6,1
+    add $0,$6
+    cal $0,22843 ; Beatty sequence for e: a(n) = floor(n*e).
     mov $3,$0
-    mul $3,4
-    mov $6,$3
-    mov $8,$9
-    lpb $8
-      mov $5,$6
-      sub $8,1
+    mov $7,$6
+    lpb $7
+      mov $5,$3
+      sub $7,1
     lpe
   lpe
   lpb $4
     mov $4,0
-    sub $5,$6
+    sub $5,$3
   lpe
-  mov $6,$5
-  sub $6,8
-  div $6,4
-  add $6,1
-  add $1,$6
+  mov $3,$5
+  sub $3,1
+  add $1,$3
 lpe

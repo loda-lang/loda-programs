@@ -1,6 +1,7 @@
 A000017: Erroneous version of A032522.
 A000154: Erroneous version of A003713.
 A000381: Essentially the same as A001611.
+A000572: A Beatty sequence: [ n(e+1) ].
 A000783: Erroneous version of A007535.
 A000858: Duplicate of A003436.
 A001012: Erroneous version of A040082.
@@ -28,6 +29,7 @@ A003697: Duplicate of A006253.
 A004030: Erroneous version of A256413.
 A004049: Erroneous version of A006967.
 A004060: Erroneous version of A028491.
+A004082: Numbers n such that sin(n-1) <= 0 and sin(n) > 0.
 A004258: Duplicate of A029837.
 A004577: Erroneous version of A000940.
 A004644: Duplicate of A000866
@@ -117,6 +119,10 @@ A021000: Duplicate of A020727.
 A021015: Duplicate of A010680.
 A021037: Duplicate of A010674.
 A022832: Duplicate of A008348.
+A022843: Beatty sequence for e: a(n) = floor(n*e).
+A022844: a(n) = floor(n*Pi)
+A022852: Integer nearest n * e, where e is the natural log base.
+A022853: a(n) = integer nearest n*Pi.
 A022945: Duplicate of A022443.
 A022948: Duplicate of A022443.
 A023492: Duplicate of A022801.
@@ -1068,6 +1074,7 @@ A092631: Duplicate of A061371.
 A092729: Duplicate of A072667.
 A092737: Duplicate of A072669.
 A092758: Duplicate of A030516.
+A092784: [round(n*Pi)-round(2*n)].
 A092856: Duplicate of A051006.
 A092903: Duplicate of A005153.
 A092907: Duplicate of A051022.
@@ -1220,6 +1227,7 @@ A108123: Duplicate of A105954.
 A108236: Erroneous version of A002849.
 A108247: Duplicate of A108243.
 A108311: Duplicate of A092767.
+A108586: Floor(2*n*Pi/(2*Pi-1)).
 A108637: Duplicate of A091296.
 A108799: Erroneous version of A193674.
 A108801: Erroneous version of A193675.
@@ -1246,6 +1254,7 @@ A114532: Erroneous version of A003061
 A115027: Duplicate of A114146.
 A115397: Erroneous version of A218656.
 A115787: Duplicate of A063438.
+A115788: a(n) = floor(n*Pi) mod 2.
 A116117: Duplicate of A115431.
 A116123: Duplicate of A054214.
 A116135: Duplicate of A115431.
@@ -1277,6 +1286,8 @@ A120407: Duplicate of A080519.
 A121193: Erroneous version of A159866
 A121232: Erroneous version of A049068.
 A121286: Number of catacondensed hexagonal systems with n hexagons.
+A121381: a(n) = Ceiling(n*Pi).
+A121384: Ceiling(n*e).
 A121515: Incorrect duplicate of A226508.
 A121661: Duplicate of A118836.
 A121825: Duplicate of A049423.
@@ -1334,6 +1345,7 @@ A131359: Erroneous version of A108808.
 A131510: Erroneous version of A079342.
 A131831: Duplicate of A100314
 A132149: Duplicate of A129235.
+A132222: Beatty sequence 1+2*floor(n*Pi/2), which contains infinitely many primes.
 A132430: Duplicate of A049537.
 A133006: Incorrect version of A001969.
 A133007: Incorrect version of A000069.
@@ -1373,6 +1385,7 @@ A140393: Erroneous duplicate of A000170, see comments.
 A140441: Erroneous version of A071881.
 A140465: Erroneous version of A141347.
 A140591: Duplicate of A095901.
+A140758: Floor(n*Pi/2).
 A140762: Erroneous version of A159578.
 A140813: Duplicate of A073841.
 A140858: This sequence is identical with A075458.
@@ -1494,14 +1507,22 @@ A181630: Duplicate of A112310
 A181757: Erroneous version of A181753.
 A182104: Duplicate of A073587.
 A182291: Duplicate of A071294.
+A184589: floor(n*e-1); complement of A184590.
+A184590: floor[(n*e+1)/(e-1)]; complement of A184589.
+A184745: floor(n*(e-1/2)+1/2); complement of A184744.
+A184969: a(n) = [Pi]+[2*Pi]+...+[n*Pi], where []=floor.
+A184976: a(n) = [e]+[2*e]+...+[n*e], where []=floor.
 A185181: Incorrect version of A122705.
 A185272: Erroneous version of A141316.
 A185444: Erroneous version of A061574.
 A185703: Erroneous version of A007352.
 A186517: Duplicate of A094448.
+A187320: a(n) = floor((Pi-2)*n); complement of A186544.
 A187694: Erroneous version of A086596.
 A189075: Erroneous version of A188900.
 A190624: Erroneous version of A190623.
+A191152: [4n*e]-2[2n*e], where [ ]=floor.
+A191153: a(n) = floor(2*n*Pi) - 2*floor(n*Pi).
 A191256: Duplicate of A067368.
 A191408: Duplicate of A006641.
 A191550: Erroneous version of A323457.
@@ -1515,9 +1536,14 @@ A192788: Erroneous version of A292624.
 A193174: Duplicate of A126084.
 A193840: Erroneous version of A227590.
 A193841: Erroneous version of A227590.
+A194754: Number of k such that {k*pi} < {n*pi}, where { } = fractional part.
+A194755: Number of k such that {k*pi} > {n*pi}, where { } = fractional part.
+A194756: Number of k such that {-k*pi} < {-n*pi}, where { } = fractional part.
+A194757: Number of k such that {-k*pi} > {-n*pi}, where { } = fractional part.
 A195645: Erroneous version of A000136.
 A195741: Erroneous version of A006758.
 A196417: Erroneous version of A080937.
+A197638: GA1 numbers: composite m with G(m) >= G(m/p) for all prime factors p of m, where G(k) = sigma(k)/(k*log(log(k))) and sigma(k) = sum of divisors of k.
 A197757: Duplicate of A197488.
 A198473: Duplicate of A026185.
 A199810: Duplicate of A199807.
@@ -1588,13 +1614,28 @@ A244914: Duplicate of A227126.
 A244969: Duplicate of A090196.
 A246131: Duplicate of A082180.
 A246212: Duplicate of A163951.
+A246294: Numbers k such that sin(k) < sin(k+1) > sin(k+2).
+A246295: Numbers k such that sin(k) < sin(k+1) < sin(k+2) > sin(k+3).
+A246296: Numbers k such that sin(k) < sin(k+1) < sin(k+2) < sin(k+3) > sin(k+4).
+A246297: Numbers k such that sin(k) > sin(k+1) < sin(k+2).
+A246298: Numbers k such that sin(k) > sin(k+1) > sin(k+2) < sin(k+3).
+A246299: Numbers k such that sin(k) > sin(k+1) > sin(k+2) > sin(k+3) < sin(k+4).
+A246300: Numbers k such that cos(k) < cos(k+1) > cos(k+2).
+A246301: Numbers k such that cos(k) < cos(k+1) < cos(k+2) > cos(k+3).
+A246302: Numbers k such that cos(k) < cos(k+1) < cos(k+2) < cos(k+3) > cos(k+4).
+A246304: Numbers k such that cos(k) > cos(k+1) < cos(k+2).
+A246305: Numbers k such that cos(k) > cos(k+1) < cos(k+2) > cos(k+3).
+A246306: Numbers k such that cos(k) > cos(k+1) < cos(k+2) < cos(k+3) > cos(k+4).
+A246388: Nonnegative integers k satisfying sin(k) >= 0 and sin(k+1) <= 0.
 A246598: Erroneous version of A002831.
 A246968: Erroneous version of A001500.
 A246969: Erroneous version of A246970.
 A246976: Sequence B'' of P-positions in Fraenkel''s (2,1)-Wythoff''s game.
 A247194: a(n) = ceiling(Pi*n^3).
+A247971: Least k such that 4*k/v(2*k)^2 - Pi < 1/n, where the sequence v is defined in Comments.
 A248361: Erroneous version of A006712.
 A248362: Erroneous version of A006713.
+A248758: Ceiling(n*Pi^(1/3)).
 A249035: Erroneous version of A249386.
 A251560: Erroneous version of A064614.
 A254180: Duplicate of A081800.
@@ -1626,6 +1667,7 @@ A263621: Appears to be an erroneous version of A263620.
 A263839: Erroneous version of A004028.
 A263840: Erroneous version of A004027.
 A266162: Erroneous version of A004143
+A266242: Numbers n such that the initial digit of the fractional part of n*Pi is 0.
 A266757: Erroneous version of A005263.
 A267011: Duplicate of A258206.
 A268428: a(n) = (3*(n^2+n+99)+cos(Pi*n/2)-sin(Pi*n/2))/2.
@@ -1645,8 +1687,11 @@ A274643: Erroneous version of A259698,
 A274942: Erroneous version of A129860.
 A275081: Duplicate of A097443.
 A275571: Incorrect duplicate of A004146.
+A276853: Beatty sequence for 2*e.
+A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279796: Erroneous duplicate of A285022.
 A282320: Erroneous version of A002854.
+A282498: a(n) = nearest integer to Pi*prime(n).
 A283021: Erroneous version of A263656.
 A283055: Erroneous version of A272435.
 A283823: Erroneous version of A000676.
@@ -1654,7 +1699,10 @@ A285664: Erroneous version of A049297.
 A288573: Erroneous version of A288574.
 A291303: Appears to be an erroneous version of A019294.
 A291967: Erroneous version of A001699.
+A292650: Rank of n*e when all the numbers j*e and k*Pi, for j>=1, k>=1, are jointly ranked.
 A293032: Erroneous version of A304932.
+A293412: Greatest integer k such that k/n^2 < e
+A293413: Least integer k such that k/n^2 > e.
 A294437: Erroneous version of A007290.
 A294438: Erroneous version of A074650.
 A294455: Erroneous version of A182522.
@@ -1670,6 +1718,7 @@ A317949: Erroneous version of A013582.
 A318936: Erroneous version of A088750.
 A323461: Erroneous version of A323457.
 A323841: Erroneous version of: Number of Stanley graphs on n nodes.
+A327136: a(n) = n-th number k such that sin(2k) > sin(2k+2) < sin(2k+4).
 A328087: Erroneous version of A001523.
 A328980: Erroneous version of A328910: Number of solutions to Erdős''s Last Equation in n variables.
 A330553: Erroneous version of A275649.
