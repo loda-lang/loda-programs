@@ -1,11 +1,13 @@
 ; A165972: Nonprimes k such that the sum of the smallest and largest divisor of k is prime.
 ; 1,4,6,10,12,16,18,22,28,30,36,40,42,46,52,58,60,66,70,72,78,82,88,96,100,102,106,108,112,126,130,136,138,148,150,156,162,166,172,178,180,190,192,196,198,210,222,226,228,232,238,240,250,256,262,268,270,276
 
+add $0,1
+mov $1,$0
 lpb $0
-  mov $2,$0
-  mov $0,0
-  add $2,1
-  mov $1,$2
+  add $2,$0
+  mul $0,$2
+  sub $0,$1
 lpe
-cal $1,40 ; The prime numbers.
+cal $0,40 ; The prime numbers.
+mov $1,$0
 sub $1,1

@@ -13,7 +13,7 @@ lpb $2
     sub $1,$3
     mov $4,$3
   lpe
-  mov $1,9
+  mov $1,2
   sub $4,1
   mov $5,1
   lpb $5
@@ -22,4 +22,4 @@ lpb $2
   lpe
   mov $2,0
 lpe
-div $1,7
+div $1,2

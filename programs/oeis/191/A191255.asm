@@ -3,7 +3,12 @@
 
 add $0,1
 mul $0,2
-gcd $0,262144
+mov $2,1
+lpb $0
+  dif $0,2
+  mul $2,2
+lpe
+mov $0,$2
 lpb $0
   mul $0,9
   add $0,1

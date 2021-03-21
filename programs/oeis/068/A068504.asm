@@ -3,5 +3,8 @@
 
 cal $0,129070 ; Numbers n such that (n-5)/4 is prime.
 bin $0,4
-gcd $0,281474976710656
-mov $1,$0
+mov $1,1
+lpb $0
+  dif $0,2
+  mul $1,2
+lpe

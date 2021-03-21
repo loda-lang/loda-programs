@@ -2,7 +2,7 @@
 
 LODA is an assembly language, a computational model and a tool for mining integer sequences. You can use it to search programs that calculate sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
 
-The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. All of these programs have been automatically generated using the `loda mine` command. Warning: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database. There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
+The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. The vast majority of these programs has been automatically generated using the `loda mine` command. Disclaimer: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database (currently up to 2000 terms). There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
 :sweat_drops: **[We warmly welcome contributions to this project!](CONTRIBUTING.md)** :eyes:
 
@@ -10,7 +10,7 @@ The [programs/oeis](programs/oeis) folder contains programs that generate intege
 
 ## Programs
 
-The following programs include some classical examples of integer sequences and functions.
+The [LODA language](LANGUAGE.md) is a simple assembly language with focus on number-theoretical problem. The following programs include some classical examples of integer sequences and functions expressed in LODA.
 
 * [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
 * [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
@@ -18,7 +18,7 @@ The following programs include some classical examples of integer sequences and 
 * [Number of primes <= n, starting at n=0 (A230980)](programs/oeis/230/A230980.asm)
 * [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. In contrast to the other programs, this one was written by hand.
 
-In total, there are currently more than 25,000 programs available. You can find lists with descriptions and links here:
+In total, there are currently more than 26,000 programs available. You can find lists with descriptions and links here:
 
 * [A000001-A050000](programs/oeis/list0.md), [A050001-A100000](programs/oeis/list1.md), [A100001-A150000](programs/oeis/list2.md), [A150001-A200000](programs/oeis/list3.md), 
 * [A200001-A250000](programs/oeis/list4.md), [A250001-A300000](programs/oeis/list5.md), [A300001-A350000](programs/oeis/list6.md), [A350001-A400000](programs/oeis/list7.md)

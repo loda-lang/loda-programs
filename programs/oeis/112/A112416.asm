@@ -3,7 +3,6 @@
 
 cal $0,40 ; The prime numbers.
 sub $0,2
-sub $2,$0
 lpb $0
   div $0,2
   sub $0,1
