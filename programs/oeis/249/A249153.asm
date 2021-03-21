@@ -12,8 +12,12 @@ lpb $20
   mul $0,1331
   add $1,$0
   pow $0,2
-  gcd $0,281474976710656
-  add $3,$0
+  mov $21,1
+  lpb $0
+    dif $0,2
+    mul $21,2
+  lpe
+  add $3,$21
   lpb $3
     div $3,4
     add $17,$1
