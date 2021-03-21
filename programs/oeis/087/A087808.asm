@@ -3,8 +3,12 @@
 
 lpb $0
   mov $2,$0
-  gcd $2,281474976710656
-  sub $0,$2
+  mov $3,1
+  lpb $2
+    dif $2,2
+    mul $3,2
+  lpe
+  sub $0,$3
   div $0,2
-  add $1,$2
+  add $1,$3
 lpe

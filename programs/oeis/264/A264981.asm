@@ -3,6 +3,9 @@
 
 cal $0,8833 ; Largest square dividing n.
 mul $0,288
-gcd $0,43046721
-mov $1,$0
+mov $1,1
+lpb $0
+  dif $0,3
+  mul $1,3
+lpe
 div $1,9

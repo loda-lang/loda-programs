@@ -20,7 +20,12 @@ lpb $14
       mov $1,$0
       mov $6,2
       lpb $6
-        gcd $1,16384
+        mov $15,1
+        lpb $1
+          dif $1,2
+          mul $15,2
+        lpe
+        mov $1,$15
         cmp $6,5
       lpe
       mul $1,2
