@@ -3,10 +3,7 @@
 
 lpb $0
   dif $0,3
-  trn $1,$0
 lpe
-add $0,5
-lpb $0
-  dif $0,3
-  mov $1,1
-lpe
+mod $0,3
+mod $0,2
+mov $1,$0
