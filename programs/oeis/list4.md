@@ -478,6 +478,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211388](http://oeis.org/A211388) ([L12 program](211/A211388.asm)): Expansion of 1/((1-2*x)^6*(1-x)).
 * [A211390](http://oeis.org/A211390) ([L19 program](211/A211390.asm)): The minimum cardinality of an n-qubit unextendible product basis.
 * [A211412](http://oeis.org/A211412) ([L05 program](211/A211412.asm)): a(n) = 4*n^4 + 1.
+* [A211422](http://oeis.org/A211422) ([L05 program](211/A211422.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w^2 + x*y = 0.
 * [A211430](http://oeis.org/A211430) ([L10 program](211/A211430.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w^2+x+y=0.
 * [A211431](http://oeis.org/A211431) ([L09 program](211/A211431.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w^3+(x+y)^2=0.
 * [A211433](http://oeis.org/A211433) ([L19 program](211/A211433.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+2x+4y=0.
@@ -536,7 +537,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211710](http://oeis.org/A211710) ([L10 program](211/A211710.asm)): Number of (n+1) X (n+1) -11..11 symmetric matrices with every 2 X 2 subblock having sum zero and two distinct values.
 * [A211715](http://oeis.org/A211715) ([L05 program](211/A211715.asm)): Number of (n+1) X (n+1) -11..11 symmetric matrices with every 2 X 2 subblock having sum zero and two or four distinct values.
 * [A211773](http://oeis.org/A211773) ([L06 program](211/A211773.asm)): Prime-generating polynomial: 2*n^2 - 108*n + 1259.
-* [A211775](http://oeis.org/A211775) ([L06 program](211/A211775.asm)): a(n) = 2*n^2 - 212*n + 5419.
+* [A211775](http://oeis.org/A211775) ([L05 program](211/A211775.asm)): a(n) = 2*n^2 - 212*n + 5419.
 * [A211784](http://oeis.org/A211784) ([L15 program](211/A211784.asm)): n^2 + floor(n^2/2) + floor(n^2/3).
 * [A211786](http://oeis.org/A211786) ([L05 program](211/A211786.asm)): n^3 + floor(n^3/2).
 * [A211813](http://oeis.org/A211813) ([L10 program](211/A211813.asm)): Number of (n+1) X (n+1) -10..10 symmetric matrices with every 2 X 2 subblock having sum zero and two distinct values.
@@ -1452,7 +1453,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227970](http://oeis.org/A227970) ([L04 program](227/A227970.asm)): Triangular arithmetic on half-squares: b(n)*(b(n) - 1)/2 where b(n) = floor(n^2/2).
 * [A227978](http://oeis.org/A227978) ([L10 program](227/A227978.asm)): a(0)=1, a(1)=2; for n>1, a(n) = n*(2^n+4)/4.
 * [A227990](http://oeis.org/A227990) ([L05 program](227/A227990.asm)): 3^a(n) is the highest power of 3 dividing prime(n)+1.
-* [A227991](http://oeis.org/A227991) ([L05 program](227/A227991.asm)): Highest power of 3 dividing prime(n)+1.
+* [A227991](http://oeis.org/A227991) ([L09 program](227/A227991.asm)): Highest power of 3 dividing prime(n)+1.
 * [A228025](http://oeis.org/A228025) ([L08 program](228/A228025.asm)): a(1) = least k such that 1/2+1/3+1/4+1/5 < H(k) - H(5); a(2) = least k such that H(a(1)) - H(5) < H(k) -H(a(1)), and for n > 2, a(n) = least k such that H(a(n-1)) - H(a(n-2) > H(k) - H(a(n-1)), where H = harmonic number.
 * [A228039](http://oeis.org/A228039) ([L07 program](228/A228039.asm)): Thue-Morse sequence along the squares: A010060(n^2).
 * [A228071](http://oeis.org/A228071) ([L16 program](228/A228071.asm)): Write n in binary and interpret as a decimal number; a(n) is this quantity minus n.
@@ -2389,9 +2390,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246298](http://oeis.org/A246298) ([L05 program](246/A246298.asm)): Numbers k such that sin(k) > sin(k+1) > sin(k+2) < sin(k+3).
 * [A246299](http://oeis.org/A246299) ([L05 program](246/A246299.asm)): Numbers k such that sin(k) > sin(k+1) > sin(k+2) > sin(k+3) < sin(k+4).
 * [A246300](http://oeis.org/A246300) ([L05 program](246/A246300.asm)): Numbers k such that cos(k) < cos(k+1) > cos(k+2).
-* [A246301](http://oeis.org/A246301) ([L05 program](246/A246301.asm)): Numbers k such that cos(k) < cos(k+1) < cos(k+2) > cos(k+3).
 * [A246302](http://oeis.org/A246302) ([L05 program](246/A246302.asm)): Numbers k such that cos(k) < cos(k+1) < cos(k+2) < cos(k+3) > cos(k+4).
-* [A246304](http://oeis.org/A246304) ([L05 program](246/A246304.asm)): Numbers k such that cos(k) > cos(k+1) < cos(k+2).
 * [A246305](http://oeis.org/A246305) ([L05 program](246/A246305.asm)): Numbers k such that cos(k) > cos(k+1) < cos(k+2) > cos(k+3).
 * [A246331](http://oeis.org/A246331) ([L06 program](246/A246331.asm)): Total number of ON cells at stage 2n of two-dimensional 5-neighbor outer totalistic cellular automaton defined by "Rule 465".
 * [A246347](http://oeis.org/A246347) ([L21 program](246/A246347.asm)): Record values in A135141.
@@ -2546,7 +2545,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A249127](http://oeis.org/A249127) ([L04 program](249/A249127.asm)): a(n) = n * floor(3*n/2).
 * [A249140](http://oeis.org/A249140) ([L07 program](249/A249140.asm)): To obtain a(n), write the n-th composite number as a product of primes, subtract 1 from each prime and multiply.
 * [A249152](http://oeis.org/A249152) ([L18 program](249/A249152.asm)): Exponent of 2 in the hyperfactorials: a(n) = A007814(A002109(n)).
-* [A249153](http://oeis.org/A249153) ([L23 program](249/A249153.asm)): Exponent of 2 in the hyperfactorial of 2n: a(n) = A007814(A002109(2n)).
+* [A249153](http://oeis.org/A249153) ([L27 program](249/A249153.asm)): Exponent of 2 in the hyperfactorial of 2n: a(n) = A007814(A002109(2n)).
 * [A249154](http://oeis.org/A249154) ([L13 program](249/A249154.asm)): (n+1) times the number of 1's in the binary expansion of n.
 * [A249166](http://oeis.org/A249166) ([L37 program](249/A249166.asm)): Odd integers concatenated with themselves.
 * [A249222](http://oeis.org/A249222) ([L09 program](249/A249222.asm)): Expansion of x*(1+5*x-5*x^3)/(1-6*x^2+5*x^4).

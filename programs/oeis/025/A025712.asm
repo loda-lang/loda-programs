@@ -13,50 +13,23 @@ lpb $36
   mov $33,$0
   add $33,1
   lpb $33
-    clr $0,31
     mov $0,$31
     sub $33,1
     sub $0,$33
     mov $27,$0
     mov $29,2
     lpb $29
-      clr $0,27
       mov $0,$27
       sub $29,1
       add $0,$29
       sub $0,1
       mul $0,84
-      add $2,18
-      add $3,$2
-      add $3,3
-      add $5,262142
-      add $4,$5
-      mul $4,2
-      mov $5,3
-      add $5,$3
-      mul $5,81
-      cal $0,88439 ; a(3n) = 3n, otherwise a(n) = 1.
       sub $0,1
-      mov $1,$0
-      add $1,$0
-      mov $3,0
-      mov $4,$2
-      mov $2,53
-      mov $3,53
-      mov $4,1225
-      sub $4,$0
-      mov $5,1225
-      mov $26,$4
       mov $4,1
       add $4,$0
-      sub $0,$4
-      mul $0,2
-      mov $2,53
-      mov $5,1
       mov $5,$4
       div $5,53
       mov $1,$5
-      mov $26,0
       mov $30,$29
       lpb $30
         mov $28,$1
@@ -71,7 +44,6 @@ lpb $36
     add $1,1
     add $32,$1
   lpe
-  mov $1,$32
   add $35,$32
 lpe
 mov $1,$35

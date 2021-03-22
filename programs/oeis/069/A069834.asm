@@ -4,5 +4,9 @@
 add $0,2
 bin $0,2
 mov $1,$0
-gcd $0,281474976710656
-div $1,$0
+mov $2,1
+lpb $0
+  dif $0,2
+  mul $2,2
+lpe
+div $1,$2

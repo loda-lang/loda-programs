@@ -3,6 +3,10 @@
 
 cal $0,40 ; The prime numbers.
 mul $0,26
-mov $1,26
-add $1,$0
-gcd $1,729
+mov $1,1
+mov $2,26
+add $2,$0
+lpb $2
+  mul $1,3
+  dif $2,3
+lpe

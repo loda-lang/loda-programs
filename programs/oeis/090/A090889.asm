@@ -16,7 +16,12 @@ lpb $12
     sub $9,1
     sub $0,$9
     mov $1,$0
-    gcd $0,281474976710656
+    mov $13,1
+    lpb $0
+      dif $0,2
+      mul $13,2
+    lpe
+    mov $0,$13
     sub $0,1
     mov $6,$1
     lpb $0

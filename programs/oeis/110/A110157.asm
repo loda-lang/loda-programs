@@ -3,7 +3,6 @@
 
 lpb $0
   sub $0,1
-  add $2,1
+  add $1,1
   cal $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-  mov $1,$2
 lpe

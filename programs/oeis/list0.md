@@ -175,7 +175,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001117](http://oeis.org/A001117) ([L13 program](001/A001117.asm)): a(n) = 3^n - 3*2^n + 3.
 * [A001148](http://oeis.org/A001148) ([L06 program](001/A001148.asm)): Final digit of 3^n.
 * [A001189](http://oeis.org/A001189) ([L19 program](001/A001189.asm)): Number of degree-n permutations of order exactly 2.
-* [A001196](http://oeis.org/A001196) ([L27 program](001/A001196.asm)): Double-bitters: only even length runs in binary expansion.
+* [A001196](http://oeis.org/A001196) ([L31 program](001/A001196.asm)): Double-bitters: only even length runs in binary expansion.
 * [A001218](http://oeis.org/A001218) ([L06 program](001/A001218.asm)): a(n) = 3^n mod 100.
 * [A001221](http://oeis.org/A001221) ([L06 program](001/A001221.asm)): Number of distinct primes dividing n (also called omega(n)).
 * [A001222](http://oeis.org/A001222) ([L09 program](001/A001222.asm)): Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
@@ -548,7 +548,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004052](http://oeis.org/A004052) ([L05 program](004/A004052.asm)): The coding-theoretic function A(n,14,8).
 * [A004054](http://oeis.org/A004054) ([L41 program](004/A004054.asm)): Expansion of (1-x)/((1+x)*(1-2*x)*(1-3*x)).
 * [A004068](http://oeis.org/A004068) ([L05 program](004/A004068.asm)): Number of atoms in a decahedron with n shells.
-* [A004082](http://oeis.org/A004082) ([L15 program](004/A004082.asm)): Numbers n such that sin(n-1) <= 0 and sin(n) > 0.
 * [A004083](http://oeis.org/A004083) ([L06 program](004/A004083.asm)): Numbers n such that cos(n-1) <= 0 and cos(n) > 0.
 * [A004084](http://oeis.org/A004084) ([L04 program](004/A004084.asm)): a(n) = n-th positive integer k such that tan(k-1) <= 0 and tan(k) > 0.
 * [A004085](http://oeis.org/A004085) ([L03 program](004/A004085.asm)): Sum of digits of Euler totient function of n.
@@ -2771,7 +2770,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022524](http://oeis.org/A022524) ([L19 program](022/A022524.asm)): Nexus numbers (n+1)^8 - n^8.
 * [A022554](http://oeis.org/A022554) ([L06 program](022/A022554.asm)): a(n) = Sum_{k=0..n} floor(sqrt(k)).
 * [A022559](http://oeis.org/A022559) ([L19 program](022/A022559.asm)): Sum of exponents in prime-power factorization of n!.
-* [A022560](http://oeis.org/A022560) ([L31 program](022/A022560.asm)): a(0)=0, a(2*n) = 2*a(n) + 2*a(n-1) + n^2 + n, a(2*n+1) = 4*a(n) + (n+1)^2.
+* [A022560](http://oeis.org/A022560) ([L36 program](022/A022560.asm)): a(0)=0, a(2*n) = 2*a(n) + 2*a(n-1) + n^2 + n, a(2*n+1) = 4*a(n) + (n+1)^2.
 * [A022775](http://oeis.org/A022775) ([L45 program](022/A022775.asm)): Place where n-th 1 occurs in A007336.
 * [A022776](http://oeis.org/A022776) ([L13 program](022/A022776.asm)): Place where n-th 1 occurs in A023115.
 * [A022777](http://oeis.org/A022777) ([L49 program](022/A022777.asm)): Place where n-th 1 occurs in A007337.
@@ -4270,7 +4269,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036828](http://oeis.org/A036828) ([L10 program](036/A036828.asm)): A036827/2.
 * [A036837](http://oeis.org/A036837) ([L17 program](036/A036837.asm)): Schoenheim bound L_1(n,n-5,n-6).
 * [A036982](http://oeis.org/A036982) ([L17 program](036/A036982.asm)): a(n)=[ a*a(n-1)+b ]/p^r, where a=2.001, b=3.2, p=2 and p^r is the highest power of p dividing [ a*a(n-1)+b ].
-* [A036987](http://oeis.org/A036987) ([L05 program](036/A036987.asm)): Fredholm-Rueppel sequence.
+* [A036987](http://oeis.org/A036987) ([L10 program](036/A036987.asm)): Fredholm-Rueppel sequence.
 * [A036999](http://oeis.org/A036999) ([L10 program](036/A036999.asm)): Restricted permutations.
 * [A037011](http://oeis.org/A037011) ([L13 program](037/A037011.asm)): Baum-Sweet cubic sequence.
 * [A037031](http://oeis.org/A037031) ([L06 program](037/A037031.asm)): Number of combinations of n objects taken pi(n) at a time.
@@ -4825,7 +4824,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A043220](http://oeis.org/A043220) ([L21 program](043/A043220.asm)): Numbers n such that 0 and 5 occur juxtaposed in the base 10 representation of n but not of n-1.
 * [A043291](http://oeis.org/A043291) ([L04 program](043/A043291.asm)): Every run length in base 2 is 2.
 * [A043369](http://oeis.org/A043369) ([L31 program](043/A043369.asm)): Numbers n such that number of 0's in base 6 is 1.
-* [A043529](http://oeis.org/A043529) ([L06 program](043/A043529.asm)): Number of distinct base 2 digits of n.
+* [A043529](http://oeis.org/A043529) ([L11 program](043/A043529.asm)): Number of distinct base 2 digits of n.
 * [A043538](http://oeis.org/A043538) ([L15 program](043/A043538.asm)): Number of distinct base 11 digits of n.
 * [A043540](http://oeis.org/A043540) ([L15 program](043/A043540.asm)): Number of distinct base 13 digits of n.
 * [A043543](http://oeis.org/A043543) ([L22 program](043/A043543.asm)): Number of distinct base 16 digits of n.
