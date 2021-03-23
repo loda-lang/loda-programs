@@ -11,10 +11,14 @@ lpb $2
   lpb $0
     add $3,$0
     mov $0,0
-    gcd $3,281474976710656
+    mov $8,1
+    lpb $3
+      dif $3,2
+      mul $8,2
+    lpe
     mov $4,3
     mov $6,0
-    add $6,$3
+    add $6,$8
     mov $7,1
   lpe
   sub $4,$7

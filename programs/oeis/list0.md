@@ -37,7 +37,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000127](http://oeis.org/A000127) ([L13 program](000/A000127.asm)): Maximal number of regions obtained by joining n points around a circle by straight lines. Also number of regions in 4-space formed by n-1 hyperplanes.
 * [A000128](http://oeis.org/A000128) ([L48 program](000/A000128.asm)): A nonlinear binomial sum.
 * [A000129](http://oeis.org/A000129) ([L08 program](000/A000129.asm)): Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
-* [A000134](http://oeis.org/A000134) ([L04 program](000/A000134.asm)): Positive zeros of Bessel function of order 0 rounded to nearest integer.
 * [A000166](http://oeis.org/A000166) ([L09 program](000/A000166.asm)): Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
 * [A000188](http://oeis.org/A000188) ([L19 program](000/A000188.asm)): (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
 * [A000194](http://oeis.org/A000194) ([L05 program](000/A000194.asm)): n appears 2n times, for n >= 1; also nearest integer to square root of n.
@@ -262,6 +261,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001614](http://oeis.org/A001614) ([L09 program](001/A001614.asm)): Connell sequence: 1 odd, 2 even, 3 odd, ...
 * [A001621](http://oeis.org/A001621) ([L05 program](001/A001621.asm)): a(n) = n*(n + 1)*(n^2 + n + 2)/4.
 * [A001629](http://oeis.org/A001629) ([L37 program](001/A001629.asm)): Self-convolution of Fibonacci numbers.
+* [A001633](http://oeis.org/A001633) ([L49 program](001/A001633.asm)): Numbers with an odd number of digits.
 * [A001650](http://oeis.org/A001650) ([L06 program](001/A001650.asm)): n appears n times (n odd).
 * [A001651](http://oeis.org/A001651) ([L04 program](001/A001651.asm)): Numbers not divisible by 3.
 * [A001652](http://oeis.org/A001652) ([L17 program](001/A001652.asm)): a(n) = 6*a(n-1) - a(n-2) + 2 with a(0) = 0, a(1) = 3.
@@ -846,6 +846,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005807](http://oeis.org/A005807) ([L03 program](005/A005807.asm)): Sum of adjacent Catalan numbers.
 * [A005809](http://oeis.org/A005809) ([L03 program](005/A005809.asm)): a(n) = binomial(3n,n).
 * [A005811](http://oeis.org/A005811) ([L03 program](005/A005811.asm)): Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+* [A005812](http://oeis.org/A005812) ([L09 program](005/A005812.asm)): Weight of balanced ternary representation of n.
 * [A005818](http://oeis.org/A005818) ([L05 program](005/A005818.asm)): Numbers n that are primitive solutions to n^2 = a^2 + b^2 + c^2 (a,b,c > 0).
 * [A005819](http://oeis.org/A005819) ([L18 program](005/A005819.asm)): Number of words of length n in a certain language.
 * [A005823](http://oeis.org/A005823) ([L04 program](005/A005823.asm)): Numbers whose ternary expansion contains no 1's.
@@ -2474,6 +2475,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A020911](http://oeis.org/A020911) ([L05 program](020/A020911.asm)): Number of digits in the base 3 representation of n-th Fibonacci number.
 * [A020912](http://oeis.org/A020912) ([L16 program](020/A020912.asm)): Number of terms in base 4 representation of n-th Fibonacci number.
 * [A020913](http://oeis.org/A020913) ([L13 program](020/A020913.asm)): Number of terms in base 5 representation of Fibonacci(n).
+* [A020934](http://oeis.org/A020934) ([L07 program](020/A020934.asm)): Greatest k such that (k-th prime) < (4 times n-th prime).
+* [A020935](http://oeis.org/A020935) ([L10 program](020/A020935.asm)): Greatest k such that (k-th prime) < (5 times n-th prime).
+* [A020937](http://oeis.org/A020937) ([L09 program](020/A020937.asm)): Greatest k such that (k-th prime) < (7 times n-th prime).
+* [A020938](http://oeis.org/A020938) ([L08 program](020/A020938.asm)): Greatest k such that (k-th prime) < (8 times n-th prime).
 * [A020940](http://oeis.org/A020940) ([L04 program](020/A020940.asm)): Greatest k such that (k-th prime) < (10 times n-th prime).
 * [A020956](http://oeis.org/A020956) ([L42 program](020/A020956.asm)): Sum of [tau^(n-k)] for k from 1 to infinity.
 * [A020962](http://oeis.org/A020962) ([L04 program](020/A020962.asm)): a(n) = Sum_{k >= 1} floor((1+sqrt(2))^(n-k)).
@@ -2807,7 +2812,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022849](http://oeis.org/A022849) ([L16 program](022/A022849.asm)): Integer nearest nx, where x = sqrt(6).
 * [A022850](http://oeis.org/A022850) ([L12 program](022/A022850.asm)): Integer nearest nx, where x = sqrt(7).
 * [A022851](http://oeis.org/A022851) ([L06 program](022/A022851.asm)): a(n) = integer nearest nx, where x = sqrt(8).
-* [A022852](http://oeis.org/A022852) ([L04 program](022/A022852.asm)): Integer nearest n * e, where e is the natural log base.
 * [A022856](http://oeis.org/A022856) ([L07 program](022/A022856.asm)): a(n) = n-2 + Sum_{i = 1..n-2} (a(i+1) mod a(i)) for n >= 3 with a(1) = a(2) = 1.
 * [A022926](http://oeis.org/A022926) ([L21 program](022/A022926.asm)): Number of powers of 7 between 2^n and 2^(n+1).
 * [A022927](http://oeis.org/A022927) ([L41 program](022/A022927.asm)): Number of 3^m between 5^n and 5^(n+1).
@@ -3084,10 +3088,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024598](http://oeis.org/A024598) ([L14 program](024/A024598.asm)): a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n+1-k), where k = floor((n+1)/2), s = (odd natural numbers).
 * [A024620](http://oeis.org/A024620) ([L04 program](024/A024620.asm)): Positions of primes among the powers of primes (A000961).
 * [A024630](http://oeis.org/A024630) ([L08 program](024/A024630.asm)): n written in fractional base 4/2.
+* [A024646](http://oeis.org/A024646) ([L06 program](024/A024646.asm)): n written in fractional base 8/4.
 * [A024698](http://oeis.org/A024698) ([L05 program](024/A024698.asm)): a(n) = (prime(n+1) - 1)/4 if this is an integer or (prime(n+1) + 1)/4 otherwise.
-* [A024699](http://oeis.org/A024699) ([L06 program](024/A024699.asm)): a(n) = (prime(n+2)-1)/6 if this is an integer or (prime(n+2)+ 1)/6 otherwise.
-* [A024700](http://oeis.org/A024700) ([L06 program](024/A024700.asm)): a(n) = (prime(n+2)^2 - 1)/3.
-* [A024701](http://oeis.org/A024701) ([L08 program](024/A024701.asm)): a(n) = (-1 + prime(n+1)^2)/4.
+* [A024699](http://oeis.org/A024699) ([L05 program](024/A024699.asm)): a(n) = (prime(n+2)-1)/6 if this is an integer or (prime(n+2)+ 1)/6 otherwise.
+* [A024700](http://oeis.org/A024700) ([L05 program](024/A024700.asm)): a(n) = (prime(n+2)^2 - 1)/3.
+* [A024701](http://oeis.org/A024701) ([L06 program](024/A024701.asm)): a(n) = (-1 + prime(n+1)^2)/4.
 * [A024702](http://oeis.org/A024702) ([L05 program](024/A024702.asm)): a(n) = (prime(n)^2 - 1)/24.
 * [A024711](http://oeis.org/A024711) ([L08 program](024/A024711.asm)): a(n) = residue mod 2 of n-th term of A024702.
 * [A024713](http://oeis.org/A024713) ([L13 program](024/A024713.asm)): a(n) = residue mod 5 of n-th term of A024702.
@@ -3138,7 +3143,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025709](http://oeis.org/A025709) ([L24 program](025/A025709.asm)): Index of 5^n within sequence of numbers of form 5^i*8^j.
 * [A025710](http://oeis.org/A025710) ([L20 program](025/A025710.asm)): Index of 5^n within sequence of numbers of form 5^i*9^j.
 * [A025711](http://oeis.org/A025711) ([L17 program](025/A025711.asm)): Index of 5^n within sequence of numbers of form 5^i*10^j.
-* [A025712](http://oeis.org/A025712) ([L46 program](025/A025712.asm)): Index of 6^n within sequence of numbers of form 2^i*6^j.
 * [A025713](http://oeis.org/A025713) ([L44 program](025/A025713.asm)): Index of 6^n within sequence of numbers of form 3^i*6^j.
 * [A025714](http://oeis.org/A025714) ([L41 program](025/A025714.asm)): Index of 6^n within sequence of numbers of form 4^i*6^j.
 * [A025716](http://oeis.org/A025716) ([L45 program](025/A025716.asm)): Index of 6^n within sequence of numbers of form 6^i*7^j.

@@ -3,11 +3,7 @@
 
 cal $0,40 ; The prime numbers.
 lpb $0
-  lpb $0
-    add $1,$0
-    dif $0,10
-  lpe
-  sub $0,1
+  div $0,10
+  add $1,$0
 lpe
-div $1,10
 mul $1,9
