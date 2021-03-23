@@ -15,10 +15,14 @@ lpb $14
     sub $11,1
     sub $0,$11
     lpb $0
-      gcd $0,262144
-      mov $1,$0
+      mov $15,1
+      lpb $0
+        dif $0,2
+        mul $15,2
+      lpe
       pow $0,$3
       sub $0,1
+      mov $1,$15
       pow $1,2
       mul $1,21
     lpe

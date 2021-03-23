@@ -7,7 +7,12 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  gcd $0,262144
+  mov $4,1
+  lpb $0
+    dif $0,2
+    mul $4,2
+  lpe
+  mov $0,$4
   mod $0,3
   add $1,$0
 lpe
