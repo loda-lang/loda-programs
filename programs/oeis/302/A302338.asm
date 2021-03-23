@@ -5,9 +5,13 @@ mov $1,255875
 mov $4,$0
 add $0,1
 lpb $1
-  gcd $0,1073741824
+  mov $5,1
+  lpb $0
+    dif $0,2
+    mul $5,2
+  lpe
   cmp $1,0
-  add $3,$0
+  add $3,$5
 lpe
 mov $1,$3
 add $1,3

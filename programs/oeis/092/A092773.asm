@@ -1,23 +1,27 @@
 ; A092773: Prime(prime(n))^2+1)/2.
 ; 5,13,61,145,481,841,1741,2245,3445,5941,8065,12325,16021,18241,22261,29041,38365,40045,54781,62305,67345,80401,92881,106261,129541,149605,158485,172285,179401,190345,251341,273061,298765,317605,368941,384565
 
-mov $1,3
-cal $0,40 ; The prime numbers.
-sub $0,1
-clr $4,12
-cal $0,40 ; The prime numbers.
-cal $0,7918 ; Least prime >= n (version 1 of the "next prime" function).
-add $1,1
-mov $2,$0
-pow $0,2
-sub $1,$0
-add $3,$0
-sub $0,1
-pow $1,2
 mov $1,$0
-sub $1,8
-div $1,8
+mov $3,$0
+cal $0,92774 ; Prime(prime(n))^2+1
+mov $1,$0
+mov $1,$0
+mov $2,$0
+sub $3,82
+add $3,$0
+add $3,7
+div $3,4
+mov $3,$0
+add $0,1
+mul $0,5
+mov $1,$0
+add $1,4
+mul $2,$0
+mov $3,2
+mov $3,$1
+sub $1,59
+div $1,40
 mul $1,4
 add $1,5
-mov $5,-3645
-add $6,2
+mov $4,4
+mov $5,0

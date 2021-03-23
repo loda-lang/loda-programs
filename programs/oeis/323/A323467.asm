@@ -3,6 +3,10 @@
 
 mov $1,$0
 add $0,2
-gcd $0,1073741824
-add $1,$0
+mov $2,1
+lpb $0
+  dif $0,2
+  mul $2,2
+lpe
+add $1,$2
 div $1,2

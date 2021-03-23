@@ -5,7 +5,5 @@ add $0,1
 cal $0,40 ; The prime numbers.
 pow $0,2
 mov $1,$0
-sub $1,9
-div $1,8
-mul $1,2
-add $1,1
+sub $1,5
+div $1,4

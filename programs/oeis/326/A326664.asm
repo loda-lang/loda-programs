@@ -4,7 +4,12 @@
 mov $2,$0
 add $0,1
 mul $0,2
-gcd $0,281474976710656
+mov $4,1
+lpb $0
+  dif $0,2
+  mul $4,2
+lpe
+mov $0,$4
 mod $0,5
 mod $0,2
 add $0,1

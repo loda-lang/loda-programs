@@ -3,5 +3,5 @@
 
 sub $0,1
 cal $0,123123 ; Numbers n such that, modulo k with 2<=k<=n, only one of the residues is equal to 2.
-sub $0,1
 mov $1,$0
+sub $1,1
