@@ -39,6 +39,7 @@ Core commands:
   evaluate <file>  Evaluate a program to a sequence
   optimize <file>  Optimize a program and print it
   minimize <file>  Minimize a program and print it (use -t to set the number of terms)
+  dot      <file>  Export a program as dot (Graphviz) format
   generate         Generate a random program and print it
   test             Run test suite
 OEIS commands:
