@@ -1,6 +1,7 @@
 A000017: Erroneous version of A032522.
 A000154: Erroneous version of A003713.
 A000381: Essentially the same as A001611.
+A000480: a(n) = floor(cos(n)).
 A000572: A Beatty sequence: [ n(e+1) ].
 A000783: Erroneous version of A007535.
 A000858: Duplicate of A003436.
@@ -30,6 +31,7 @@ A004030: Erroneous version of A256413.
 A004049: Erroneous version of A006967.
 A004060: Erroneous version of A028491.
 A004082: Numbers n such that sin(n-1) <= 0 and sin(n) > 0.
+A004083: Numbers n such that cos(n-1) <= 0 and cos(n) > 0.
 A004258: Duplicate of A029837.
 A004577: Erroneous version of A000940.
 A004644: Duplicate of A000866
@@ -177,6 +179,7 @@ A026216: Duplicate of A026177.
 A026217: Duplicate of A026178.
 A026220: Duplicate of A026215.
 A026221: Duplicate of A026214.
+A026322: |sin(2n)| > |sin(n)|.
 A026459: Erroneous version of A026461.
 A026484: Erroneous version of A026488.
 A026544: Duplicate of A026527.
@@ -593,6 +596,7 @@ A070516: Duplicate of A070435.
 A070597: Duplicate of A070474.
 A070608: Duplicate of A070486.
 A070643: Duplicate of A070442.
+A070747: signum(sin(n)), where signum=A057427.
 A070836: Duplicate of A063432.
 A070983: Erroneous version of A078350.
 A071039: Corrected version is duplicate of A118111.
@@ -1319,6 +1323,8 @@ A125878: Duplicate of A066674.
 A125963: Duplicate of A111269.
 A126060: Incorrect version of A001349.
 A126361: Duplicate of A002714.
+A126564: Floor( sin(n)*cos(n) ).
+A126565: a(n) = ceiling(sin(n)*cos(n)).
 A126666: Erroneous version of A036983.
 A126667: Erroneous version of A036984.
 A126669: Erroneous version of A126668.
@@ -1555,6 +1561,8 @@ A204824: Duplicate of A156903.
 A206398: Erroneous version of A000793.
 A206425: Erroneous version of A227428.
 A206799: Based on an erroneous version of A008614.
+A206909: Position of 2n+cos(n) when the sets {2k+cos(k)} and {2k+sin(k)} are jointly ranked.
+A206910: Position of 2n+sin(n) when the sets {2k+cos(k)} and {2k+sin(k)} are jointly ranked.
 A208446: Duplicate of A172634.
 A209270: Duplicate of A083698.
 A210689: Erroneous version of A129416.
@@ -1712,6 +1720,7 @@ A299917: Erroneous version of A299915.
 A299999: Duplicate of A007341.
 A300754: Erroneous version of A145392.
 A300755: Erroneous version of A145393.
+A302203: a(n) = floor(sin(n)) + 1.
 A306574: Incorrect version of A088527.
 A307289: Erroneous version of A006227.
 A317949: Erroneous version of A013582.
@@ -1721,6 +1730,8 @@ A323841: Erroneous version of: Number of Stanley graphs on n nodes.
 A327136: a(n) = n-th number k such that sin(2k) > sin(2k+2) < sin(2k+4).
 A328087: Erroneous version of A001523.
 A328980: Erroneous version of A328910: Number of solutions to Erdős''s Last Equation in n variables.
+A330034: a(n) = sign(cos(n)).
+A330035: a(n) = sign(tan(n)).
 A330553: Erroneous version of A275649.
 A331155: Erroneous version of A008299.
 A333798: Erroneous version of A030525.
