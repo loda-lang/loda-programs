@@ -4,13 +4,45 @@ LODA is an assembly language, a computational model and a tool for mining intege
 
 The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. The vast majority of these programs has been automatically generated using the `loda mine` command. Disclaimer: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database (currently up to 2000 terms). There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
-:sweat_drops: **[We warmly welcome contributions to this project!](CONTRIBUTING.md)** :eyes:
+We warmly welcome [contributions to this project](CONTRIBUTING.md). We use [Slack](https://lodachat.slack.com/home) for our communication. Please [open a GitHub issue](https://github.com/ckrause/loda/issues) is you want to get in touch with us, or contact one of the developers directly.
 
-:woman: **[Please open a GitHub issue if you want to get in touch with us on Slack!](https://github.com/ckrause/loda/issues)** :man:
+## Language
+
+The LODA language is an assembly language with focus on arithmetic and number-theoretical operations. It supports an unbounded set of memory cells storing integers, common arithmetic operations, calling other programs, and a loop based on a lexicographical order descent on memory regions.
+
+Here is a basic example of a LODA program for computing the Fibonacci numbers:
+
+```asm
+; A000045: Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+
+; argument is stored in $0
+
+mov $3,1      ; assign $3:=1
+lpb $0        ; loop as long as $0 decreases in absolute values
+  sub $0,1    ; decrement $0
+  mov $2,$1   ; assign $2:=$1
+  add $1,$3   ; add $1:=$1+$3
+  mov $3,$2   ; assign $3:=$2
+lpe           ; end of loop
+
+; result is stored in $1
+```
+
+The corresponding program visualized using dot (run `./loda dot A45` to generate it):
+
+![Fibonacci program](/images/dot/A000045.png)
+
+To evaluate this program to an integer sequence, you can run:
+```bash
+./loda eval A45
+0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181
+```
+
+For a detailed description of the language features, please take a look the [language documentation](LANGUAGE.md). For more details on the available commands, plese see below.
 
 ## Programs
 
-The [LODA language](LANGUAGE.md) is a simple assembly language with focus on number-theoretical problem. The following programs include some classical examples of integer sequences and functions expressed in LODA.
+The following programs include some classical examples of integer sequences and functions expressed in LODA.
 
 * [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
 * [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
@@ -18,7 +50,7 @@ The [LODA language](LANGUAGE.md) is a simple assembly language with focus on num
 * [Number of primes <= n, starting at n=0 (A230980)](programs/oeis/230/A230980.asm)
 * [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. In contrast to the other programs, this one was written by hand.
 
-In total, there are currently more than 26,000 programs available. You can find lists with descriptions and links here:
+In total, there are currently :star: **more than 26,000 programs available** :star:! You can find lists with descriptions and links here:
 
 * [A000001-A050000](programs/oeis/list0.md), [A050001-A100000](programs/oeis/list1.md), [A100001-A150000](programs/oeis/list2.md), [A150001-A200000](programs/oeis/list3.md), 
 * [A200001-A250000](programs/oeis/list4.md), [A250001-A300000](programs/oeis/list5.md), [A300001-A350000](programs/oeis/list6.md), [A350001-A400000](programs/oeis/list7.md)
@@ -62,7 +94,7 @@ Options:
 
 #### evaluate (eval)
 
-Evaluate a LODA program to an integer sequence. Takes a path to a program (`.asm` file) or the ID an OEIS sequence as argument. For example, run `./loda eval A000045` to generate the first terms of the Fibonacci sequence. Use the option `-t` to set the number of terms to be calculated and `-o` to change the start offset.
+Evaluate a LODA program to an integer sequence. Takes a path to a program (`.asm` file) or the ID an OEIS sequence as argument. For example, run `./loda eval A000045` to generate the first terms of the Fibonacci sequence. Use the option `-t` to set the number of terms to be calculated. Use the option `-b <offset>` to generate it row-by-row in the OEIS b-file format. If you get any exception like `Program did not terminate after ... cycles`, you can use the `-c <cycles>` option to increase the maximum number of execution cycles (steps).
 
 #### optimize (opt)
 
@@ -74,7 +106,7 @@ Minimize a LODA program and print the minimized version. The minimization includ
 
 #### dot
 
-Export a program to the [https://graphviz.org/](dot (Graphviz) format). You can find some examples in the [images/dot](images/dot) folder. 
+Export a program to the [dot (Graphviz) format](https://graphviz.org/). You can find some examples in the [images/dot](images/dot) folder. 
 
 #### generate (gen)
 
@@ -97,11 +129,6 @@ Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder.
 #### test
 
 Run the test suite of LODA.
-
-## LODA Language
-
-The LODA language is an assembly language with focus on arithmetic and number-theoretical operations.
-For a detailed overview, please take a look the [language documentation](LANGUAGE.md).
 
 ## Related Projects
 
