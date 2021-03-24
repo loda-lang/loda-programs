@@ -3,12 +3,4 @@
 
 mov $1,$0
 cal $0,244042 ; In ternary representation of n, replace 2's with 0's.
-sub $0,$1
-mov $1,11184811
-mov $2,1076168
-add $2,$0
-sub $1,$2
 sub $1,$0
-sub $1,10108643
-div $1,4
-mul $1,2

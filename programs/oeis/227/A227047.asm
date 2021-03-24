@@ -5,5 +5,4 @@ cal $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1)
 add $0,5
 div $0,4
 mov $1,$0
-mul $0,256
 sub $1,1

@@ -302,6 +302,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102305](http://oeis.org/A102305) ([L04 program](102/A102305.asm)): a(n) = n^2 + 2*n + 3.
 * [A102310](http://oeis.org/A102310) ([L09 program](102/A102310.asm)): Square array read by antidiagonals: Fibonacci(k*n).
 * [A102345](http://oeis.org/A102345) ([L05 program](102/A102345.asm)): a(n) = 3^n + (-1)^n.
+* [A102348](http://oeis.org/A102348) ([L07 program](102/A102348.asm)): Decimated primes: every 10th prime has been omitted.
 * [A102352](http://oeis.org/A102352) ([L05 program](102/A102352.asm)): Numbers n such that n^3 can be partitioned into n primes such that n-1 are consecutive primes and the remaining prime is larger than the sum of the n-1 consecutive primes.
 * [A102363](http://oeis.org/A102363) ([L04 program](102/A102363.asm)): Triangle read by rows, constructed by a Pascal-like rule with left edge = 2^k, right edge = 2^(k+1)-1 (k >= 0).
 * [A102366](http://oeis.org/A102366) ([L05 program](102/A102366.asm)): Number of subsets of {1,2,...,n} in which exactly half of the elements are less than or equal to sqrt(n).
@@ -365,7 +366,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A103157](http://oeis.org/A103157) ([L04 program](103/A103157.asm)): Number of ways to choose 4 distinct points from an (n+1) X (n+1) X (n+1) lattice cube.
 * [A103164](http://oeis.org/A103164) ([L16 program](103/A103164.asm)): Integers but with the primes squared.
 * [A103177](http://oeis.org/A103177) ([L12 program](103/A103177.asm)): (7*3^n + 2n + 5)/4.
-* [A103192](http://oeis.org/A103192) ([L09 program](103/A103192.asm)): Trajectory of 1 under repeated application of the function n -> A102370(n).
 * [A103196](http://oeis.org/A103196) ([L04 program](103/A103196.asm)): a(n) = (1/9)(2^(n+3)-(-1)^n(3n-1)).
 * [A103202](http://oeis.org/A103202) ([L17 program](103/A103202.asm)): A102370 sorted.
 * [A103204](http://oeis.org/A103204) ([L05 program](103/A103204.asm)): a(1) = 2, a(2) = 4; a(n) = 2*a(n-1) - 1.
@@ -379,9 +379,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A103333](http://oeis.org/A103333) ([L10 program](103/A103333.asm)): Number of closed walks on the graph of the (7,4) Hamming code.
 * [A103334](http://oeis.org/A103334) ([L19 program](103/A103334.asm)): Number of closed walks of length 2n at any of the nodes of degree 1 on the graph of the (7,4) Hamming code.
 * [A103354](http://oeis.org/A103354) ([L08 program](103/A103354.asm)): a(n) = floor(x), where x is the solution to x = 2^(n-x).
+* [A103355](http://oeis.org/A103355) ([L06 program](103/A103355.asm)): a(n) = n - floor( sqrt(prime(n) ).
 * [A103368](http://oeis.org/A103368) ([L05 program](103/A103368.asm)): Period 6: repeat [1, 1, -1, -1, 0, 0].
 * [A103390](http://oeis.org/A103390) ([L11 program](103/A103390.asm)): Natural numbers but with nonprimes squared.
 * [A103391](http://oeis.org/A103391) ([L06 program](103/A103391.asm)): 'Even' fractal sequence for the natural numbers: Deleting every even-index term results in the same sequence.
+* [A103416](http://oeis.org/A103416) ([L04 program](103/A103416.asm)): a(n) = n - ceiling(sqrt(prime(n))).
 * [A103424](http://oeis.org/A103424) ([L04 program](103/A103424.asm)): E.g.f.: 1 + sinh(2*x).
 * [A103425](http://oeis.org/A103425) ([L06 program](103/A103425.asm)): a(n) = 3*a(n-1) + a(n-2) - 3*a(n-3).
 * [A103433](http://oeis.org/A103433) ([L19 program](103/A103433.asm)): a(n) = Sum_{i=1..n} Fibonacci(2i-1)^2.
@@ -496,7 +498,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A104765](http://oeis.org/A104765) ([L03 program](104/A104765.asm)): Triangle T(n,k) read by rows: row n contains the first n Lucas numbers A000204.
 * [A104767](http://oeis.org/A104767) ([L09 program](104/A104767.asm)): a(n)=n for n <= 3, a(n) = 2a(n-1) - 2a(n-2) + 2a(n-3) for n >= 4.
 * [A104777](http://oeis.org/A104777) ([L07 program](104/A104777.asm)): Integer squares congruent to 1 mod 6.
-* [A104792](http://oeis.org/A104792) ([L06 program](104/A104792.asm)): Triangle T(n,k) = A000330(n-k), n>=1, 0<=k<n, read by rows.
+* [A104792](http://oeis.org/A104792) ([L04 program](104/A104792.asm)): Triangle T(n,k) = A000330(n-k), n>=1, 0<=k<n, read by rows.
 * [A104793](http://oeis.org/A104793) ([L03 program](104/A104793.asm)): Triangle T(n,k) = A023537(n-k), n >= 1, 0 <= k < n, read by rows.
 * [A104859](http://oeis.org/A104859) ([L16 program](104/A104859.asm)): Partial sums of A001764.
 * [A104879](http://oeis.org/A104879) ([L19 program](104/A104879.asm)): Row sums of a sum-of-powers triangle.
@@ -3245,7 +3247,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134538](http://oeis.org/A134538) ([L05 program](134/A134538.asm)): a(n) = 5*n^2 - 1.
 * [A134547](http://oeis.org/A134547) ([L05 program](134/A134547.asm)): a(n)=5n^2+20n+4.
 * [A134582](http://oeis.org/A134582) ([L04 program](134/A134582.asm)): a(n) = (2*n)^2 - 4.
-* [A134591](http://oeis.org/A134591) ([L06 program](134/A134591.asm)): a(n) is n reflected in n-th prime: distance between a(n) and p(n) equals distance between p(n) and n.
+* [A134591](http://oeis.org/A134591) ([L05 program](134/A134591.asm)): a(n) is n reflected in n-th prime: distance between a(n) and p(n) equals distance between p(n) and n.
 * [A134593](http://oeis.org/A134593) ([L05 program](134/A134593.asm)): a(n) = 5*n^2 + 10*n + 1. Coefficients of the rational part of (1 + sqrt(n))^5.
 * [A134594](http://oeis.org/A134594) ([L04 program](134/A134594.asm)): a(n) = n^2 + 10*n + 5: coefficients of the irrational part of (1 + sqrt(n))^5.
 * [A134632](http://oeis.org/A134632) ([L60 program](134/A134632.asm)): 5*n^5 + 3*n^3 - 2*n^2. Coefficients and exponents are the prime numbers in decreasing order.
@@ -4214,7 +4216,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145813](http://oeis.org/A145813) ([L15 program](145/A145813.asm)): 1/2 the number of islands of ones fitting in an n X n array symmetric about main diagonal with all ones connected only either three adjacent vertically or three adjacent horizontally.
 * [A145816](http://oeis.org/A145816) ([L08 program](145/A145816.asm)): 1/4 of the number of islands of ones fitting in an n X n array symmetric under 90-degree rotation with all ones connected only either three adjacent vertically or three adjacent horizontally.
 * [A145818](http://oeis.org/A145818) ([L05 program](145/A145818.asm)): Odd positive integers a(n) such that for every integer m == 3 (mod 4) there exists a unique representation of the form m = a(l) + 2*a(s), but there are no such representations for m == 1 (mod 4).
-* [A145849](http://oeis.org/A145849) ([L28 program](145/A145849.asm)): a(n) = A145812(2n-1).
+* [A145849](http://oeis.org/A145849) ([L32 program](145/A145849.asm)): a(n) = A145812(2n-1).
 * [A145850](http://oeis.org/A145850) ([L32 program](145/A145850.asm)): a(n) = A145818(2n-1).
 * [A145885](http://oeis.org/A145885) ([L18 program](145/A145885.asm)): a(n) = (n-1)^2*binomial(2n,n)/(2*(n+1)).
 * [A145909](http://oeis.org/A145909) ([L21 program](145/A145909.asm)): First 6-fold decimation of A061039. First bisection of A144454.

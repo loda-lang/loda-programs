@@ -3,9 +3,7 @@
 
 cal $0,40 ; The prime numbers.
 sub $0,1
-pow $0,4
 lpb $0
   dif $0,2
   add $1,1
 lpe
-div $1,4

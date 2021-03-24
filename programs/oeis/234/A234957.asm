@@ -7,7 +7,12 @@ lpb $0
   div $0,2
   mov $1,3
   lpb $0
-    gcd $0,281474976710656
+    mov $2,1
+    lpb $0
+      dif $0,2
+      mul $2,2
+    lpe
+    mov $0,$2
     div $0,4
     mul $1,2
   lpe

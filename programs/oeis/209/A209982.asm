@@ -3,9 +3,8 @@
 
 cal $0,210000 ; Number of unimodular 2 X 2 matrices having all terms in {0,1,...,n}.
 mov $1,1
-lpb $0
-  mov $1,$0
-  mod $0,2
-lpe
-sub $1,1
+trn $1,$0
+add $1,4
+add $1,$0
+sub $1,5
 mul $1,4
