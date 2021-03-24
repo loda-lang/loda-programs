@@ -72,9 +72,13 @@ Optimize a LODA program and print the optimized version. The optimization is bas
 
 Minimize a LODA program and print the minimized version. The minimization includes an optimization and additionally a brute-force removal of operations based on trial and error. It guarantees that the generated integer sequence is preserved, but only up to the number of terms specified using `-t`. In contrast to optimization, minimization is not guaranteed to be semantics preserving for the entire sequences. In practice, it yields much shorter programs than optimization and we usually apply it with a larger number of terms to increase the probability of correctness.
 
+#### dot
+
+Export a program to the [https://graphviz.org/](dot (Graphviz) format). You can find some examples in the [images/dot](images/dot) folder. 
+
 #### generate (gen)
 
-Generate a random LODA program and print it. Multiple generators are supported and configured in [loda.json](loda.json). The generators use statistics from the existing programs stored in the [stats](stats) folder. This operation is mainly used for testing the generators and should not be used to generate large amounts of programs.
+Generate a random LODA program and print it. Multiple generators are supported and configured in [loda.json](loda.json). The generators use statistics from the existing programs stored. This operation is mainly used for testing the generators and should not be used to generate large amounts of programs.
 
 #### mine
 
@@ -88,7 +92,7 @@ You can also configure a Twitter client to get notified when a match was found!
 
 #### maintain
 
-Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder. This checks the correctness of all programs. Incorrect programs are removed and correct programs are minimized based on the first 250 terms of the sequence. In addition, the description of the sequence in the comment of the program is updated to the latest version of the OEIS database. The statistics in the [stats](stats) folder and program lists are regenerated. 
+Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder. This checks the correctness of all programs in a random order. The programs must generate the first 250 terms of the sequence. In addition, up to the first 2000 terms are taken into account if the program is correct. Incorrect programs are removed and correct programs are minimized (see the `minimize` command). In addition, the description of the sequence in the comment of the program is updated to the latest version of the OEIS database. The program statistics and program lists are regenerated. 
 
 #### test
 
