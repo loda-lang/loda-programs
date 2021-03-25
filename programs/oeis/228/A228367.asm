@@ -5,8 +5,13 @@ mov $2,$0
 mul $0,2
 sub $2,1
 sub $0,$2
-gcd $0,1073741824
-mov $1,$0
+mov $3,1
+lpb $0
+  dif $0,2
+  mul $3,2
+lpe
+mov $0,$3
+mov $1,$3
 lpb $0
   div $0,2
   add $1,1
