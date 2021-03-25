@@ -3,12 +3,4 @@
 
 cal $0,6 ; Integer part of square root of n-th prime.
 pow $0,2
-add $0,27
-mov $1,2
-mov $2,8
-add $2,$0
-add $1,$2
-mul $1,58
-sub $1,2204
-div $1,58
-add $1,1
+mov $1,$0

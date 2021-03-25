@@ -1,9 +1,11 @@
 ; A175044: Lengths of runs of consecutive values in A168389(n).
 ; 1,1,1,2,1,2,1,2,2,1,2,2,1,2,2,2,1,2,2,1,2,2,2,2,2,1,2,1,2,2,2,2,1,2,1,2,2,2,2,2,1,2,1,2,1,2,2,2,1,2,2,1,2,2,2,2,1,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,1,2
 
-mov $1,$0
-cal $0,100810 ; a(n) = 0 if prime(n) + 2 = prime(n+1), otherwise 1.
-cmp $1,0
-sub $0,$1
-mov $1,$0
+cal $0,1223 ; Prime gaps: differences between consecutive primes.
+sub $0,1
+lpb $0
+  mov $1,$0
+  sub $0,2
+lpe
+div $1,3
 add $1,1

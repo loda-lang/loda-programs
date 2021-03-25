@@ -3,5 +3,9 @@
 
 bin $0,3
 add $0,1
-mov $1,$0
-gcd $1,32768
+mov $1,1
+mov $2,$0
+lpb $2
+  mul $1,2
+  dif $2,2
+lpe

@@ -5,7 +5,11 @@ mul $0,2
 lpb $0
   add $1,$0
   mov $2,$0
-  gcd $2,4096
-  sub $0,$2
+  mov $3,1
+  lpb $2
+    dif $2,2
+    mul $3,2
+  lpe
+  sub $0,$3
 lpe
 div $1,2

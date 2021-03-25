@@ -5,6 +5,5 @@ cal $0,40 ; The prime numbers.
 sub $0,1
 lpb $0
   dif $0,3
-  add $1,4
+  add $1,1
 lpe
-div $1,4

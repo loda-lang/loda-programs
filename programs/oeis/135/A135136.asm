@@ -4,7 +4,3 @@
 cal $0,179868 ; (Number of 1's in the binary expansion of n) mod 4.
 div $0,2
 mov $1,$0
-mov $0,3
-add $0,$1
-mov $1,$0
-sub $1,3

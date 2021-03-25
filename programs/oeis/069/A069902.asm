@@ -3,9 +3,4 @@
 
 add $0,1
 cal $0,74399 ; a(n) is the largest prime divisor of n(n+1).
-add $0,33144
 mov $1,$0
-sub $1,33147
-div $1,2
-mul $1,2
-add $1,3

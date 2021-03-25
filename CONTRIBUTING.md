@@ -30,15 +30,16 @@ There is a test suite in [test.cpp](/src/test.cpp) which can be executed using `
 
 If you would like to implement an existing integer sequence in LODA, please go ahead! You should first check if there exists already a program for it.
 Please included a comment in the second line "Coded manually" to mark it as hand-written. You can also include your name there is you like. You can
-take a look at the programs for [A000010](https://github.com/ckrause/loda/blob/master/programs/oeis/000/A000010.asm) or
-[A030103](https://github.com/ckrause/loda/blob/master/programs/oeis/030/A030103.asm) for examples. When implementing your program, use
-`loda eval -t 250` to verify it for the first 250 terms. When you think it is ready to be included, please open a pull request!
+take a look at the programs for [A000010](/programs/oeis/000/A000010.asm) or
+[A030103](/programs/oeis/030/A030103.asm) for examples. To check the validity of your program, please generate a b-file using 
+`loda eval -t <terms> -b <offset>` and compare it to the corresponding b-file on [oeis.org](https://oeis.org). 
+When you think it is ready to be included, please open a pull request!
 
 **Note:** if the LODA Miner _should_ eventually find a faster program for your sequence, your program would get overwritten (but you are still in the Git history). 
 
 ## 3. Program Analysis (Assembler)
 
-Since there are so many OEIS sequences and LODA programs, it is hard to analyze their relationship in more detail. If you find an interesting insight in a generated LODA program, please share it with us. For instance, if you derived a new formula or conjecture from the program. Please let us know in this case by opening a GitHub issue or contacting us via e-mail or Slack. Also, if you plan to publish a formula or conjecture from one of the programs, please indicate that you found it using LODA and reference it in your OEIS entry. Thank you!
+Since there are so many OEIS sequences and LODA programs, it is hard to analyze their relationship in more detail. If you find an interesting insight in a generated LODA program, please share it with us. For instance, if you derived a new formula or conjecture from the program. Please let us know in this case by opening a GitHub issue or contacting us via e-mail or Slack. Also, if you plan to publish a formula or conjecture from one of the programs, please add a link to the corresponding LODA program in the LINKS section of the OEIS entry. Thank you!
 
 ## 4. Mining
 

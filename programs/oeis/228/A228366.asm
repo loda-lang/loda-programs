@@ -8,8 +8,13 @@ lpb $8
   sub $8,1
   sub $0,$8
   lpb $0
-    gcd $0,1073741824
-    mov $4,$0
+    mov $9,1
+    lpb $0
+      dif $0,2
+      mul $9,2
+    lpe
+    mov $0,$9
+    mov $4,$9
     lpb $0
       div $0,2
       add $4,1

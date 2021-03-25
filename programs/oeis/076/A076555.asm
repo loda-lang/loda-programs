@@ -3,16 +3,5 @@
 
 cal $0,40 ; The prime numbers.
 add $0,1
-mov $3,6
 cal $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-lpb $3
-  add $2,8
-  add $0,$2
-  mul $0,$2
-  cmp $2,7
-  sub $3,2
-lpe
 mov $1,$0
-sub $1,5696
-div $1,512
-add $1,2

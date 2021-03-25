@@ -12,7 +12,12 @@ lpb $2
   pow $0,2
   mul $0,2
   lpb $0
-    gcd $0,281474976710656
+    mov $5,1
+    lpb $0
+      dif $0,2
+      mul $5,2
+    lpe
+    mov $0,$5
     mul $0,4
   lpe
   mov $3,$0

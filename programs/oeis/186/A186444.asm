@@ -10,7 +10,12 @@ lpb $16
   sub $0,$16
   add $0,1
   add $3,$0
-  gcd $3,729
+  mov $17,1
+  lpb $3
+    dif $3,3
+    mul $17,3
+  lpe
+  mov $3,$17
   mod $3,4
   mov $1,$3
   div $1,2

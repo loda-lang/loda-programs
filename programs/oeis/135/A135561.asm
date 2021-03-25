@@ -8,7 +8,12 @@ add $0,$1
 lpb $0
   div $1,$0
   bin $1,$0
-  gcd $0,262144
+  mov $2,1
+  lpb $0
+    dif $0,2
+    mul $2,2
+  lpe
+  mov $0,$2
 lpe
 add $1,$0
 mul $1,2
