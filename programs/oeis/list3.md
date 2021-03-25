@@ -397,6 +397,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155213](http://oeis.org/A155213) ([L03 program](155/A155213.asm)): a(n) = floor(prime(n)/9).
 * [A155449](http://oeis.org/A155449) ([L06 program](155/A155449.asm)): Numbers k == 6 or 11 (mod 17).
 * [A155450](http://oeis.org/A155450) ([L07 program](155/A155450.asm)): Numbers equal to 5 or 18 mod 23.
+* [A155457](http://oeis.org/A155457) ([L09 program](155/A155457.asm)): a(n) = exp(Lambda(n)), where Lambda(n) is the von Mangoldt function for odd (!) primes.
 * [A155461](http://oeis.org/A155461) ([L04 program](155/A155461.asm)): a(n) = n^2 + 52*n + 30.
 * [A155462](http://oeis.org/A155462) ([L27 program](155/A155462.asm)): Frequency of n in A155213.
 * [A155464](http://oeis.org/A155464) ([L14 program](155/A155464.asm)): a(n) = 7*a(n-1) - 7*a(n-2) + a(n-3) for n > 2; a(0) = 0, a(1) = 51, a(2) = 340.
@@ -1248,6 +1249,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A161842](http://oeis.org/A161842) ([L41 program](161/A161842.asm)): Partial sums of A161841.
 * [A161847](http://oeis.org/A161847) ([L03 program](161/A161847.asm)): Denominator of the ratio (prime((n+1)^2) - prime(n^2))/prime(n).
 * [A161886](http://oeis.org/A161886) ([L20 program](161/A161886.asm)): Number of nonzero elements in the n X n Redheffer matrix.
+* [A161912](http://oeis.org/A161912) ([L07 program](161/A161912.asm)): a(n) = A040976(n+1) - A006218(n).
 * [A161916](http://oeis.org/A161916) ([L07 program](161/A161916.asm)): The smallest k such that A010060(n+k)=A010060(n).
 * [A161935](http://oeis.org/A161935) ([L04 program](161/A161935.asm)): 28-gonal numbers: a(n) = n*(13*n - 12).
 * [A161938](http://oeis.org/A161938) ([L09 program](161/A161938.asm)): a(n) = ((3+sqrt(2))*(2+sqrt(2))^n + (3-sqrt(2))*(2-sqrt(2))^n)/2.
@@ -3764,7 +3766,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186423](http://oeis.org/A186423) ([L08 program](186/A186423.asm)): Partial sums of A186421.
 * [A186424](http://oeis.org/A186424) ([L08 program](186/A186424.asm)): Odd terms in A186423.
 * [A186438](http://oeis.org/A186438) ([L22 program](186/A186438.asm)): Positive numbers whose squares end in two identical digits.
-* [A186444](http://oeis.org/A186444) ([L16 program](186/A186444.asm)): The count of numbers <= n for which 3 is an infinitary divisor.
+* [A186444](http://oeis.org/A186444) ([L21 program](186/A186444.asm)): The count of numbers <= n for which 3 is an infinitary divisor.
 * [A186446](http://oeis.org/A186446) ([L10 program](186/A186446.asm)): Expansion of 1/(1 - 7*x + 2*x^2).
 * [A186493](http://oeis.org/A186493) ([L12 program](186/A186493.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j-th pentagonal number.  Complement of A186494.
 * [A186494](http://oeis.org/A186494) ([L12 program](186/A186494.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j-th pentagonal number.  Complement of A186493.
@@ -4012,6 +4014,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188902](http://oeis.org/A188902) ([L05 program](188/A188902.asm)): Numerator of the base n logarithm of the product of the divisors of n.
 * [A188916](http://oeis.org/A188916) ([L11 program](188/A188916.asm)): Where squares occur in the union of squares and powers of 2.
 * [A188947](http://oeis.org/A188947) ([L06 program](188/A188947.asm)): a(n) = n^3 - 2*n^2 + 2*n + 1.
+* [A188967](http://oeis.org/A188967) ([L05 program](188/A188967.asm)): Zero-one sequence based on (3n-2): a(A016777(k))=a(k); a(A007494(k))=1-a(k); a(1)=0.
 * [A189007](http://oeis.org/A189007) ([L09 program](189/A189007.asm)): Number of ON cells after n generations of the 2D cellular automaton described in the comments.
 * [A189021](http://oeis.org/A189021) ([L03 program](189/A189021.asm)): Apostol's second order Möbius (or Moebius) function mu_2(n).
 * [A189145](http://oeis.org/A189145) ([L08 program](189/A189145.asm)): Number of nX2 array permutations with each element making zero or one knight moves.
@@ -4387,6 +4390,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193259](http://oeis.org/A193259) ([L07 program](193/A193259.asm)): G.f.: x = Sum_{n>=1} x^n * ((1+x)^n - x^n) / (1+x)^a(n).
 * [A193260](http://oeis.org/A193260) ([L07 program](193/A193260.asm)): G.f.: x+x^2 = Sum_{n>=1} x^n * ((1+x+x^2)^n - x^(2*n)) / (1+x+x^2)^a(n).
 * [A193330](http://oeis.org/A193330) ([L03 program](193/A193330.asm)): Number of prime factors of n^2 + 1, counted with multiplicity.
+* [A193335](http://oeis.org/A193335) ([L07 program](193/A193335.asm)): Number of odd divisors of sigma(n).
+* [A193336](http://oeis.org/A193336) ([L08 program](193/A193336.asm)): Sum of even divisors of sigma(n).
 * [A193350](http://oeis.org/A193350) ([L04 program](193/A193350.asm)): Sum of even divisors of tau(n).
 * [A193356](http://oeis.org/A193356) ([L03 program](193/A193356.asm)): If n is even then 0, otherwise n.
 * [A193358](http://oeis.org/A193358) ([L13 program](193/A193358.asm)): a(0)=1; a(1)=2 and for n>1: a(n)=a(n-a(n-2))+2.
