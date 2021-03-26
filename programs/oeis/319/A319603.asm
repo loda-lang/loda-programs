@@ -3,10 +3,5 @@
 
 pow $0,3
 cal $0,160927 ; a(n) = n + reversal(n-1).
-add $0,1
-mov $2,6
-add $2,$0
-add $0,$2
 mov $1,$0
-sub $1,9
-div $1,2
+sub $1,1
