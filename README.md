@@ -28,13 +28,9 @@ lpe           ; end of loop
 ; result is stored in $1
 ```
 
-The corresponding program visualized using dot (run `./loda dot A45` to generate it):
-
-![Fibonacci program](/images/dot/A000045.png)
-
 To evaluate this program to an integer sequence, you can run:
 ```bash
-./loda eval A45
+./loda eval A000045
 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181
 ```
 
