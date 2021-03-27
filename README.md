@@ -90,7 +90,7 @@ Options:
   -x               Optimize and overwrite existing programs
 ```
 
-### Commands
+### Core Commands
 
 #### evaluate (eval)
 
@@ -111,6 +111,12 @@ Export a program to the [dot (Graphviz) format](https://graphviz.org/). You can 
 #### generate (gen)
 
 Generate a random LODA program and print it. Multiple generators are supported and configured in [loda.json](loda.json). The generators use statistics from the existing programs stored. This operation is mainly used for testing the generators and should not be used to generate large amounts of programs.
+
+### OEIS Commands
+
+#### check
+
+Check if a program for an OEIS sequence is correct. For interactive output, use `-b 1` to enable b-file printing. Use `-c <integer>` to increase the maximum number of cycles if needed. 
 
 #### mine
 
