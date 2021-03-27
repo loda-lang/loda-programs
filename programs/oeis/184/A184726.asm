@@ -3,14 +3,12 @@
 
 mul $0,2
 mov $2,$0
-sub $2,8
-mov $3,$2
-add $3,5
-mov $0,$3
-mov $3,1
+sub $2,3
+mov $0,$2
+mov $2,1
 lpb $0
-  add $3,$0
+  add $2,$0
   cal $0,166250 ; a(n) = n-1 plus the largest proper divisor of n.
-  sub $0,$3
+  sub $0,$2
 lpe
 mov $1,$0

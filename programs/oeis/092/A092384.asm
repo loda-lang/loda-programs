@@ -11,6 +11,5 @@ sub $2,$1
 sub $0,$2
 dif $0,2
 cal $0,4155 ; Sum of digits of n-th odd number.
-add $0,2
 mov $1,$0
-sub $1,3
+sub $1,1

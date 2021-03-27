@@ -5,7 +5,7 @@ cal $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
 cal $0,129 ; Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
 mul $0,3
 sub $0,3
-mul $0,1728000000
 mov $1,$0
+mul $1,1728000000
 div $1,5184000000
 add $1,1

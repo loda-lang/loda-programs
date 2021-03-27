@@ -3,8 +3,8 @@
 
 mov $5,9
 mul $5,$0
-mul $5,9
 mov $3,$5
+mul $3,9
 div $3,4
 add $3,84
 mov $10053,$0

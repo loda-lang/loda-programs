@@ -17,8 +17,8 @@ lpb $2
     gcd $3,$5
   lpe
   pow $3,2
-  mul $3,2
   mov $4,$3
+  mul $4,2
   div $4,6
   add $4,1
   add $1,$4

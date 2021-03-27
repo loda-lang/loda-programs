@@ -3,10 +3,8 @@
 
 mov $2,$0
 mul $2,2
-mov $1,$2
-sub $1,1
-mov $0,$1
-sub $0,16
+mov $0,$2
+sub $0,17
 mov $2,2
 add $2,$0
 sub $0,3
