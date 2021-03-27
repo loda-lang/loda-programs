@@ -75,8 +75,10 @@ Core commands:
   generate         Generate a random program and print it
   test             Run test suite
 OEIS commands:
-  mine             Mine programs for OEIS sequences
-  maintain         Maintain programs for OEIS sequences
+  mine             Mine programs for OEIS sequences (use -x to overwrite)
+  match    <file>  Match a program to OEIS sequences (use -x to overwrite)
+  check   <seqID>  Check a program for an OEIS sequence
+  maintain         Maintain all programs for OEIS sequences
 Options:
   -l <string>      Log level (values:debug,info,warn,error,alert)
   -k <string>      Configuration file (default:loda.json)
@@ -114,10 +116,6 @@ Generate a random LODA program and print it. Multiple generators are supported a
 
 ### OEIS Commands
 
-#### check
-
-Check if a program for an OEIS sequence is correct. For interactive output, use `-b 1` to enable b-file printing. Use `-c <integer>` to increase the maximum number of cycles if needed. 
-
 #### mine
 
 Mine programs for OEIS integer sequences. It generates programs in a loop and tries to match them to sequences. If a match was found, an alert is printed and the program is automatically saved to the [programs/oeis](programs/oeis) folder. By default, existing programs for sequences are not overwritten, but if you specify the `-x` option, programs are updated if they are faster. This refers to the number of execution steps needed to calculate the sequence. 
@@ -127,6 +125,14 @@ LODA is single-threaded and therefore uses one CPU during mining. It supports mu
 You need an Internet connection to access the OEIS database to run this command. Downloaded files are cached in the `$HOME/.loda` folder.
 
 You can also configure a Twitter client to get notified when a match was found!
+
+#### match
+
+Match a program against the OEIS database. To overwrite existing programs, use the `-x` option.
+
+#### check
+
+Check if a program for an OEIS sequence is correct. For interactive output, use `-b 1` to enable b-file printing. Use `-c <integer>` to increase the maximum number of cycles if needed. 
 
 #### maintain
 
