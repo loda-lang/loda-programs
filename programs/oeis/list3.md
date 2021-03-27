@@ -1116,7 +1116,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160380](http://oeis.org/A160380) ([L07 program](160/A160380.asm)): Number of 0's in base-4 representation of n.
 * [A160382](http://oeis.org/A160382) ([L08 program](160/A160382.asm)): Number of 2's in base-4 representation of n.
 * [A160383](http://oeis.org/A160383) ([L08 program](160/A160383.asm)): Number of 3's in base-4 representation of n.
-* [A160384](http://oeis.org/A160384) ([L08 program](160/A160384.asm)): Number of nonzero digits in the base-3 representation of n.
+* [A160384](http://oeis.org/A160384) ([L07 program](160/A160384.asm)): Number of nonzero digits in the base-3 representation of n.
 * [A160385](http://oeis.org/A160385) ([L07 program](160/A160385.asm)): Number of nonzero digits in base-4 representation of n.
 * [A160410](http://oeis.org/A160410) ([L04 program](160/A160410.asm)): Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
 * [A160412](http://oeis.org/A160412) ([L04 program](160/A160412.asm)): Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
@@ -2677,6 +2677,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174426](http://oeis.org/A174426) ([L23 program](174/A174426.asm)): Denominator of fractions in A171676.
 * [A174438](http://oeis.org/A174438) ([L08 program](174/A174438.asm)): Numbers that are congruent to {0, 2, 5, 8} mod 9.
 * [A174446](http://oeis.org/A174446) ([L04 program](174/A174446.asm)): A symmetrical triangle sequence: q=1; f(n,q) = 1 + tanh((n-1)/q; t(n,m,q)=If[n == 0 or n == 1, 1, Ceiling[Binomial[n, m]/f[n, q]]].
+* [A174452](http://oeis.org/A174452) ([L03 program](174/A174452.asm)): a(n) = n^2 mod 1000.
 * [A174474](http://oeis.org/A174474) ([L21 program](174/A174474.asm)): a(n) = (2*n^2 - 2*n - 3)/8 + 3*(-1)^n*(1-2*n)/8.
 * [A174542](http://oeis.org/A174542) ([L54 program](174/A174542.asm)): Partial sums of odd Fibonacci numbers (A014437).
 * [A174565](http://oeis.org/A174565) ([L16 program](174/A174565.asm)): Expansion of (1+3*x)/((1-x)*(1+3*x+4*x^2)).
@@ -3971,6 +3972,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188295](http://oeis.org/A188295) ([L78 program](188/A188295.asm)): [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
 * [A188298](http://oeis.org/A188298) ([L10 program](188/A188298.asm)): Positions of 0 in A188297; complement of A188299.
 * [A188299](http://oeis.org/A188299) ([L19 program](188/A188299.asm)): Positions of 1 in A188297; complement of A188298.
+* [A188301](http://oeis.org/A188301) ([L06 program](188/A188301.asm)): Positions of 0 in A188300; complement of A188302.
 * [A188302](http://oeis.org/A188302) ([L20 program](188/A188302.asm)): Positions of 1 in A188300; complement of A188301.
 * [A188319](http://oeis.org/A188319) ([L13 program](188/A188319.asm)): Positions of 0 in A188318; complement of A188320.
 * [A188375](http://oeis.org/A188375) ([L12 program](188/A188375.asm)): Positions of 0 in A188374; complement of A188376.

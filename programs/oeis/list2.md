@@ -537,6 +537,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105336](http://oeis.org/A105336) ([L05 program](105/A105336.asm)): a(n) = n*(n+1)/2 mod 128.
 * [A105337](http://oeis.org/A105337) ([L07 program](105/A105337.asm)): a(n) = n*(n+1)/2 mod 256.
 * [A105338](http://oeis.org/A105338) ([L06 program](105/A105338.asm)): a(n) = n*(n+1)/2 mod 512.
+* [A105339](http://oeis.org/A105339) ([L03 program](105/A105339.asm)): a(n) = n*(n+1)/2 mod 1024.
 * [A105340](http://oeis.org/A105340) ([L06 program](105/A105340.asm)): a(n) = n*(n+1)/2 mod 2048.
 * [A105343](http://oeis.org/A105343) ([L09 program](105/A105343.asm)): Elements of even index in the sequence gives A005893, points on surface of tetrahedron: 2n^2 + 2 for n > 1.
 * [A105348](http://oeis.org/A105348) ([L26 program](105/A105348.asm)): An indicator sequence for the Jacobsthal numbers.
@@ -1485,7 +1486,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117302](http://oeis.org/A117302) ([L04 program](117/A117302.asm)): Number of cases in which the first player gets killed in a Russian roulette game when 7 players use a gun with n chambers and the number of the bullets can be from 1 to n. In the game they do not rotate the cylinder after the game starts.
 * [A117304](http://oeis.org/A117304) ([L42 program](117/A117304.asm)): Numbers with an even number of digits such that the second half is twice the first half.
 * [A117364](http://oeis.org/A117364) ([L04 program](117/A117364.asm)): a(n) = largest prime less than the largest prime dividing n (or 1 if there is no such prime).
-* [A117366](http://oeis.org/A117366) ([L04 program](117/A117366.asm)): a(n) = smallest prime greater than the largest prime dividing n.
+* [A117366](http://oeis.org/A117366) ([L03 program](117/A117366.asm)): a(n) = smallest prime greater than the largest prime dividing n.
 * [A117367](http://oeis.org/A117367) ([L03 program](117/A117367.asm)): a(n) = smallest prime greater than the smallest prime dividing n.
 * [A117373](http://oeis.org/A117373) ([L07 program](117/A117373.asm)): Expansion of (1 - 3x)/(1 - x + x^2).
 * [A117378](http://oeis.org/A117378) ([L07 program](117/A117378.asm)): Expansion of (1-4*x)/(1-x+x^2).
@@ -2969,7 +2970,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132710](http://oeis.org/A132710) ([L29 program](132/A132710.asm)): Infinitesimal generator for a diagonally-shifted Lah matrix, unsigned A105278, related to n! Laguerre(n,-x,1).
 * [A132720](http://oeis.org/A132720) ([L09 program](132/A132720.asm)): Sequence is identical to its second differences in absolute values.
 * [A132723](http://oeis.org/A132723) ([L16 program](132/A132723.asm)): Binomial transform of A132429.
-* [A132728](http://oeis.org/A132728) ([L05 program](132/A132728.asm)): Triangle T(n, k) = 4 - 3*(-1)^k, read by rows.
+* [A132728](http://oeis.org/A132728) ([L06 program](132/A132728.asm)): Triangle T(n, k) = 4 - 3*(-1)^k, read by rows.
 * [A132729](http://oeis.org/A132729) ([L05 program](132/A132729.asm)): Triangle T(n, k) = 2*binomial(n, k) - 3 with T(n, 0) = T(n, n) = 1, read by rows.
 * [A132730](http://oeis.org/A132730) ([L09 program](132/A132730.asm)): Row sums of triangle A132729.
 * [A132731](http://oeis.org/A132731) ([L05 program](132/A132731.asm)): Triangle T(n,k) = 2 * binomial(n,k) - 2 with T(n,0) = T(n,n) = 1, read by rows.

@@ -18,9 +18,8 @@ lpb $0
   mov $2,4
   mov $3,5
   pow $9,$7
-  add $9,3
   mov $5,$9
-  sub $5,5
+  sub $5,2
   add $6,$1
   div $3,$6
   add $1,$3

@@ -34,10 +34,11 @@ lpb $21
         mov $8,1
         add $8,$0
         mul $6,$8
-        mul $6,6
         mov $3,$6
+        mul $3,6
         div $3,97
         mov $1,$3
+        mul $6,6
         mov $12,$11
         lpb $12
           mov $10,$1

@@ -33,9 +33,9 @@ add $3,$6
 log $3,20
 div $3,2
 mul $3,0
-add $3,1
 mov $2,$3
-add $2,9
+add $2,10
+add $3,1
 trn $3,4
 mul $3,$0
 mov $4,$3

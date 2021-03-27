@@ -27,9 +27,8 @@ lpb $10
     lpe
     div $2,4
     pow $2,2
-    div $2,2
     mov $1,$2
-    div $1,2
+    div $1,4
     add $6,$1
   lpe
   add $9,$6

@@ -3,6 +3,5 @@
 
 sub $0,1
 cal $0,263426 ; Permutation of the nonnegative integers: [4k+2, 4k+1, 4k, 4k+3, ...].
-add $0,6
 mov $1,$0
-sub $1,5
+add $1,1

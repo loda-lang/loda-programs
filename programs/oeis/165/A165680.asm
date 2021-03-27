@@ -5,8 +5,7 @@ cal $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
 sub $0,2
 cal $0,142
 mul $0,2
-add $0,14
 mov $1,$0
-sub $1,16
+sub $1,2
 div $1,2
 add $1,1

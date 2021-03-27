@@ -16,8 +16,8 @@ lpb $3
   add $0,$5
   cal $0,180664 ; Golden Triangle sums: a(n) = a(n-1) + A001654(n+1) with a(0)=0.
   div $0,4
-  mul $0,2
   mov $4,$0
+  mul $4,2
   div $4,52
   add $1,$4
 lpe

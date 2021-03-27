@@ -1546,7 +1546,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229135](http://oeis.org/A229135) ([L15 program](229/A229135.asm)): n * (2 + 2^(2*n - 1)).
 * [A229144](http://oeis.org/A229144) ([L31 program](229/A229144.asm)): Partial sums of (Fibonacci numbers mod 3).
 * [A229146](http://oeis.org/A229146) ([L09 program](229/A229146.asm)): a(n) = n^3*(5*n+3)/2.
-* [A229147](http://oeis.org/A229147) ([L39 program](229/A229147.asm)): a(n) = n^4*(3*n+2).
+* [A229147](http://oeis.org/A229147) ([L09 program](229/A229147.asm)): a(n) = n^4*(3*n+2).
 * [A229148](http://oeis.org/A229148) ([L09 program](229/A229148.asm)): a(n) = n^5*(7*n+5)/2.
 * [A229149](http://oeis.org/A229149) ([L08 program](229/A229149.asm)): a(n) = n^6*(4*n+3).
 * [A229151](http://oeis.org/A229151) ([L10 program](229/A229151.asm)): a(n) = n^8*(5*n+4).
@@ -2231,7 +2231,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244586](http://oeis.org/A244586) ([L07 program](244/A244586.asm)): a(n) = n OR 4.
 * [A244587](http://oeis.org/A244587) ([L12 program](244/A244587.asm)): a(n) = n OR 5.
 * [A244588](http://oeis.org/A244588) ([L06 program](244/A244588.asm)): a(n) = n OR 6.
-* [A244590](http://oeis.org/A244590) ([L07 program](244/A244590.asm)): a(n) = sum( floor(k*n/8), k=1..7 ).
+* [A244590](http://oeis.org/A244590) ([L06 program](244/A244590.asm)): a(n) = sum( floor(k*n/8), k=1..7 ).
 * [A244630](http://oeis.org/A244630) ([L03 program](244/A244630.asm)): a(n) = 17*n^2.
 * [A244631](http://oeis.org/A244631) ([L03 program](244/A244631.asm)): 19*n^2.
 * [A244632](http://oeis.org/A244632) ([L03 program](244/A244632.asm)): 23*n^2.

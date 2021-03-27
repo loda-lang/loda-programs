@@ -3,8 +3,8 @@
 
 add $0,2
 cal $0,94626 ; Expansion of x*(1+x)/((1-x)*(1-10*x^2)).
-sub $0,2
 mov $1,$0
-sub $1,1
+sub $0,2
+sub $1,3
 div $1,2
 add $1,1

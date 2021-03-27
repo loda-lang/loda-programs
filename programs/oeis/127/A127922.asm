@@ -6,8 +6,7 @@ cal $0,40 ; The prime numbers.
 add $2,$0
 pow $0,3
 sub $0,$2
-add $0,7
 mov $1,$0
-sub $1,31
+sub $1,24
 div $1,24
 add $1,1

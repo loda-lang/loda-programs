@@ -3,8 +3,6 @@
 
 cal $0,40546 ; Continued fraction for sqrt(570).
 cal $0,214068 ; a(n) = floor((3/2)*floor((3/2)*n)).
-add $0,6
 mov $1,$0
-sub $1,7
 div $1,2
 add $1,1

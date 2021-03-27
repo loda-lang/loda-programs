@@ -5,6 +5,5 @@ mov $1,$0
 add $0,2
 mul $0,$1
 cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
-sub $0,3
 mov $1,$0
-add $1,4
+add $1,1

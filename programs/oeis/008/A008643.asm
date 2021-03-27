@@ -19,8 +19,7 @@ lpb $3
   lpe
   div $2,4
   pow $2,2
-  div $2,2
   mov $4,$2
-  div $4,2
+  div $4,4
   add $1,$4
 lpe
