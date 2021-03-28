@@ -24,9 +24,9 @@ lpb $12
     mov $3,$0
     cal $0,163801 ; a(n)=n-a(a(n-2)) with a(0)=0,a(1)=1
     mov $1,$0
-    add $0,2
     mov $1,$0
-    sub $1,1
+    add $0,2
+    add $1,1
     mov $2,16
     mov $5,$4
     mov $6,$4

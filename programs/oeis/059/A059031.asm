@@ -7,6 +7,5 @@ add $2,$0
 mul $0,2
 gcd $2,4
 div $0,$2
-add $0,7
 mov $1,$0
-sub $1,8
+sub $1,1

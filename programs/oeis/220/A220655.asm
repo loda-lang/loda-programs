@@ -15,9 +15,8 @@ lpb $7
   add $2,$0
   mov $4,$0
   mul $4,$2
-  add $4,3
   mov $1,$4
-  sub $1,2
+  add $1,1
   add $6,$1
 lpe
 mov $1,$6

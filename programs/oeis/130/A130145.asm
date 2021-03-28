@@ -32,10 +32,10 @@ lpb $15
         sub $6,$2
       lpe
       pow $6,2
+      mov $1,$6
+      div $1,4
       mov $4,$6
       div $4,2
-      mov $1,$4
-      div $1,2
       add $8,$1
     lpe
     add $11,$8

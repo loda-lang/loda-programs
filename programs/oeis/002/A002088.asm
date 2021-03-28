@@ -3,6 +3,5 @@
 
 cal $0,210000 ; Number of unimodular 2 X 2 matrices having all terms in {0,1,...,n}.
 add $0,2
-div $0,4
 mov $1,$0
-div $1,2
+div $1,8

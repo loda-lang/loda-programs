@@ -12,9 +12,8 @@ sub $4,6
 add $3,$4
 div $3,2
 sub $1,$3
-add $2,1
 mov $5,$2
-add $5,1
+add $5,2
 div $5,3
 add $5,17
 lpb $0
