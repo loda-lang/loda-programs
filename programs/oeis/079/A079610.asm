@@ -14,9 +14,8 @@ mul $3,7
 mul $1,$3
 mov $6,$1
 mul $6,8
-sub $6,6
 mov $1,$6
-sub $1,91
+sub $1,97
 mov $4,3
 mov $8,$7
 lpb $4

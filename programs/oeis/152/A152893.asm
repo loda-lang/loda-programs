@@ -15,12 +15,10 @@ lpb $0
   add $6,$2
   mov $2,$6
   div $4,2
-  add $4,1
   mov $5,$4
-  sub $5,2
+  sub $5,1
   mul $2,$5
-  add $2,1
   mov $1,$2
-  add $1,1
+  add $1,2
 lpe
 sub $1,2

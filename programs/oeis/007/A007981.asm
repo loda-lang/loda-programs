@@ -4,6 +4,5 @@
 sub $0,3
 trn $0,3
 cal $0,136185 ; Number of metacyclic groups of order p^n, prime p >= 3.
-add $0,1
 mov $1,$0
-sub $1,2
+sub $1,1

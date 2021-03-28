@@ -13,6 +13,5 @@ sub $2,1
 cmp $4,0
 add $2,$4
 div $0,$2
-add $0,4
 mov $1,$0
-sub $1,1
+add $1,3

@@ -9,9 +9,8 @@ lpb $3
   add $0,$3
   sub $0,1
   mul $0,2
-  sub $0,4
   mov $5,$0
-  add $5,5
+  add $5,1
   cal $5,99802 ; Bisection of A000720.
   mov $2,$3
   lpb $2

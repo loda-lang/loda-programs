@@ -14,10 +14,7 @@ lpb $29
   cal $0,219637 ; Numbers that occur twice in A219641.
   mov $2,$0
   mul $2,2
-  sub $2,2
-  mov $0,$2
-  add $0,2
-  mov $1,$0
+  mov $1,$2
   mov $30,$29
   lpb $30
     mov $28,$1

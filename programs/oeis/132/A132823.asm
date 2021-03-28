@@ -10,9 +10,8 @@ mov $3,$1
 cal $0,14473 ; Pascal's triangle - 1.
 mov $1,$0
 sub $2,$0
-add $3,1
 mov $4,$3
-sub $4,3
+sub $4,2
 div $2,$4
 mov $5,$0
 cmp $5,0

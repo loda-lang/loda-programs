@@ -19,9 +19,8 @@ lpb $16
     lpb $9
       sub $9,1
       add $0,$9
-      sub $0,1
       mov $1,$0
-      add $1,1
+      sub $0,1
       mov $2,$0
       mov $4,1
       mov $6,1
