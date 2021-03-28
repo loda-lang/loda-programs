@@ -11,6 +11,5 @@ add $1,$0
 sub $1,1354363
 
 ; Absolute value of $1
-mov $2,$1
-mul $2,-1
+sub $2,$1
 max $1,$2
