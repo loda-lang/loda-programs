@@ -3,10 +3,7 @@
 
 mov $2,$0
 cal $0,285679 ; Positions of 2 in A285677.
-mov $4,$0
-sub $4,2
-mov $1,$4
-add $1,2
+mov $1,$0
 mov $3,$2
 mul $3,3
 add $1,$3

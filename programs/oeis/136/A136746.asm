@@ -22,12 +22,12 @@ lpb $7
     mov $1,5
     add $2,1
     sub $4,11
+    mov $0,$4
+    div $0,16
     div $4,2
     sub $2,$4
     sub $1,$2
     div $4,2
-    mov $0,$4
-    div $0,4
   lpe
   gcd $1,2
   sub $1,1

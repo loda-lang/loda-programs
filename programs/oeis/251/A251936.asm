@@ -13,9 +13,8 @@ add $0,$4
 add $0,1
 pow $0,2
 div $0,6
-add $0,4
 mov $1,$0
-add $1,2
+add $1,6
 mov $2,$5
 mul $2,3
 add $1,$2

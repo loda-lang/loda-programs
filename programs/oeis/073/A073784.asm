@@ -8,9 +8,7 @@ lpb $8
   mov $0,$6
   sub $8,1
   add $0,$8
-  sub $0,1
   mov $4,$0
-  add $4,1
   cal $4,79696 ; Numbers one more than composite numbers.
   sub $4,5
   add $1,$4

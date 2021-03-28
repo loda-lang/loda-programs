@@ -12,9 +12,8 @@ lpb $0
   add $0,1
   sub $2,1
   mod $2,9
-  add $2,20
   mov $5,$2
-  add $5,2
+  add $5,22
   mov $1,$5
   sub $1,$0
   mod $1,10
