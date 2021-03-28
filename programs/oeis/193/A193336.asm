@@ -4,8 +4,4 @@
 cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,1
 cal $0,146076 ; Sum of even divisors of n.
-mov $3,$0
-sub $3,1
-mov $2,$3
-add $2,1
-add $1,$2
+add $1,$0

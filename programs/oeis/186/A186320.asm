@@ -14,10 +14,8 @@ lpb $2
     mov $0,$3
     sub $5,1
     add $0,$5
-    sub $0,1
     mov $8,$0
-    add $8,1
-    trn $0,$8
+    sub $0,$0
     pow $8,2
     lpb $8
       add $0,5

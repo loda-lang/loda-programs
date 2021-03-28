@@ -21,7 +21,7 @@ mov $4,1
 add $4,$2
 div $4,3
 add $0,$4
-sub $0,1
 mov $1,$0
-sub $1,3
+sub $0,1
+sub $1,4
 div $1,2

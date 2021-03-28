@@ -4,9 +4,8 @@
 mov $3,$0
 cal $0,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
 mod $0,2
-add $0,12
 mov $1,$0
-sub $1,11
+add $1,1
 mov $2,$3
 mul $2,2
 add $1,$2

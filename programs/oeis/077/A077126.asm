@@ -39,11 +39,12 @@ lpb $8
   mov $2,$1
   add $3,3
   add $3,$1
+  mov $1,$0
+  add $1,6
   add $4,2
   mov $5,9
   add $5,$0
   add $0,6
-  mov $1,$0
   sub $1,20
   div $1,10
   mul $1,2

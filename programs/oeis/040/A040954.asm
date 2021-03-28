@@ -15,9 +15,8 @@ mov $1,4
 mov $5,$3
 mov $3,$2
 gcd $5,3
-sub $5,2
 mov $2,$5
-add $2,1
+sub $2,1
 add $4,3
 pow $4,$2
 add $1,$4

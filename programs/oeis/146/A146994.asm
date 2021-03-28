@@ -13,10 +13,8 @@ lpb $2
   gcd $4,2
   mov $6,$0
   mul $6,$4
-  mov $0,$6
-  add $0,4
-  mov $3,$0
-  add $3,1
+  mov $3,$6
+  add $3,5
   mul $3,2
   div $3,6
   mov $5,$3

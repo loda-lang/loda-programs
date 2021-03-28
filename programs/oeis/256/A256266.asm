@@ -8,9 +8,8 @@ lpb $11
   mov $0,$9
   sub $11,1
   sub $0,$11
-  mul $0,8
   mov $2,$0
-  div $2,2
+  mul $2,4
   lpb $2
     add $1,7
     sub $3,7

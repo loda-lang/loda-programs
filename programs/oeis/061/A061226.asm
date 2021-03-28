@@ -4,9 +4,7 @@
 mov $3,$0
 pow $0,2
 cal $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-sub $0,1
 mov $1,$0
-add $1,1
 mov $2,$3
 mul $2,$3
 add $1,$2

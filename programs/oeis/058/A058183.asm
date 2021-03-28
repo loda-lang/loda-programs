@@ -9,9 +9,8 @@ lpb $16
   mov $0,$14
   sub $16,1
   sub $0,$16
-  add $0,2
   mov $13,$0
-  sub $13,1
+  add $13,1
   lpb $13
     add $2,1
     div $13,10

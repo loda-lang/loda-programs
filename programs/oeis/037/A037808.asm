@@ -10,8 +10,8 @@ lpb $0
   mov $2,$4
   mod $2,10
   sub $0,$2
-  add $3,55
   mov $1,$3
-  add $1,1
+  add $1,56
+  add $3,55
 lpe
 mod $1,3
