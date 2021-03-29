@@ -1033,6 +1033,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319086](http://oeis.org/A319086) ([L17 program](319/A319086.asm)): a(n) = Sum_{k=1..n} k^2*sigma(k), where sigma is A000203.
 * [A319087](http://oeis.org/A319087) ([L17 program](319/A319087.asm)): a(n) = Sum_{k=1..n} k^2*phi(k), where phi is the Euler totient function A000010.
 * [A319089](http://oeis.org/A319089) ([L03 program](319/A319089.asm)): a(n) = tau(n)^3, where tau is A000005.
+* [A319099](http://oeis.org/A319099) ([L03 program](319/A319099.asm)): Number of solutions to x^5 == 1 (mod n).
 * [A319116](http://oeis.org/A319116) ([L17 program](319/A319116.asm)): Signs of the Maclaurin coefficients of 1/(exp(x) + Pi/2).
 * [A319117](http://oeis.org/A319117) ([L13 program](319/A319117.asm)): Sign of the n-th Maclaurin coefficient of 1/(exp(x) + exp(1)/2).
 * [A319127](http://oeis.org/A319127) ([L04 program](319/A319127.asm)): Crossing number of the complete bipartite graph K_{6,n}.
@@ -1717,7 +1718,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337286](http://oeis.org/A337286) ([L14 program](337/A337286.asm)): a(n) = Sum_{i=0..n} i^2*T(i)^2, where T(i) = A000073(i) is the i-th tribonacci number.
 * [A337300](http://oeis.org/A337300) ([L46 program](337/A337300.asm)): Partial sums of the geometric Connell sequence A049039.
 * [A337313](http://oeis.org/A337313) ([L12 program](337/A337313.asm)): a(n) is the number of n-digit positive integers with exactly three distinct base 10 digits.
-* [A337328](http://oeis.org/A337328) ([L09 program](337/A337328.asm)): Number of pairs of squarefree divisors of n, (d1,d2), such that d1 <= d2.
+* [A337328](http://oeis.org/A337328) ([L05 program](337/A337328.asm)): Number of pairs of squarefree divisors of n, (d1,d2), such that d1 <= d2.
 * [A337333](http://oeis.org/A337333) ([L05 program](337/A337333.asm)): Number of pairs of odd divisors of n, (d1,d2), such that d1 <= d2.
 * [A337336](http://oeis.org/A337336) ([L05 program](337/A337336.asm)): a(n) = A048673(n^2).
 * [A337348](http://oeis.org/A337348) ([L14 program](337/A337348.asm)): Numbers formed as the product of two numbers without consecutive equal binary digits and sharing no common bits between them.

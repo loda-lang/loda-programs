@@ -1637,7 +1637,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230631](http://oeis.org/A230631) ([L12 program](230/A230631.asm)): a(n) = n + (sum of digits in base-4 representation of n).
 * [A230641](http://oeis.org/A230641) ([L06 program](230/A230641.asm)): a(n) = n + (sum of digits in base-3 representation of n).
 * [A230664](http://oeis.org/A230664) ([L05 program](230/A230664.asm)): Floor(3^n / n^2).
-* [A230774](http://oeis.org/A230774) ([L17 program](230/A230774.asm)): Number of primes less than first prime above square root of n.
+* [A230774](http://oeis.org/A230774) ([L04 program](230/A230774.asm)): Number of primes less than first prime above square root of n.
 * [A230775](http://oeis.org/A230775) ([L03 program](230/A230775.asm)): Smallest prime number greater than or equal to the square root of n.
 * [A230846](http://oeis.org/A230846) ([L33 program](230/A230846.asm)): 1 + A075526(n).
 * [A230847](http://oeis.org/A230847) ([L33 program](230/A230847.asm)): 1 + A054541(n).
@@ -2406,8 +2406,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246260](http://oeis.org/A246260) ([L05 program](246/A246260.asm)): Characteristic function of A246261: a(n) = A000035(A048673(n)).
 * [A246262](http://oeis.org/A246262) ([L11 program](246/A246262.asm)): Inverse function to injection A246261, partial sums of A246260.
 * [A246264](http://oeis.org/A246264) ([L15 program](246/A246264.asm)): Inverse function for injection A246263.
-* [A246297](http://oeis.org/A246297) ([L05 program](246/A246297.asm)): Numbers k such that sin(k) > sin(k+1) < sin(k+2).
-* [A246299](http://oeis.org/A246299) ([L05 program](246/A246299.asm)): Numbers k such that sin(k) > sin(k+1) > sin(k+2) > sin(k+3) < sin(k+4).
 * [A246331](http://oeis.org/A246331) ([L06 program](246/A246331.asm)): Total number of ON cells at stage 2n of two-dimensional 5-neighbor outer totalistic cellular automaton defined by "Rule 465".
 * [A246347](http://oeis.org/A246347) ([L21 program](246/A246347.asm)): Record values in A135141.
 * [A246360](http://oeis.org/A246360) ([L12 program](246/A246360.asm)): a(1) = 1, then A007051 ((3^n)+1)/2 interleaved with A057198 (5*3^(n-1)+1)/2.
