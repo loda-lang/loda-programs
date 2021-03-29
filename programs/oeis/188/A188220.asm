@@ -35,10 +35,8 @@ lpb $4
     sub $8,$0
     add $7,$8
     div $7,$3
-    mov $3,$7
-    add $3,2
-    mov $5,$3
-    sub $5,1
+    mov $5,$7
+    add $5,1
     mov $12,$11
     lpb $12
       mov $10,$5

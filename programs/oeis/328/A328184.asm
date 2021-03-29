@@ -14,9 +14,8 @@ gcd $2,$5
 mod $2,4
 div $5,$2
 mov $1,$5
-add $3,7
 mov $4,$3
-add $4,1
+add $4,8
 add $1,$4
 sub $1,9
 mul $1,4

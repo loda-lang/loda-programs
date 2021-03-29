@@ -3,8 +3,9 @@
 
 cal $0,72668 ; Numbers one less than composite numbers.
 cal $0,290114 ; Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
-mul $0,18
 mov $1,$0
+mul $0,18
+mul $1,18
 div $1,216
 mul $1,16
 add $1,16

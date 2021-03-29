@@ -46,12 +46,13 @@ mov $7,$0
 cmp $7,0
 add $0,$7
 mov $1,1
+mov $1,$0
+add $1,2
 mov $3,1
 mov $4,1
 add $5,$2
 dif $6,$0
 add $0,2
-mov $1,$0
 sub $1,15
 div $1,12
 add $1,1

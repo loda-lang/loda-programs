@@ -34,9 +34,8 @@ lpb $10
       mul $2,2
       add $3,2
     lpe
-    add $3,1
     mov $1,$3
-    sub $1,3
+    sub $1,2
     div $1,2
     add $6,$1
   lpe

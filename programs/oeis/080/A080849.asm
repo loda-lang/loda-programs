@@ -11,6 +11,5 @@ mov $4,8
 sub $4,$2
 add $4,1
 add $0,$4
-sub $0,2
 mov $1,$0
-sub $1,6
+sub $1,8
