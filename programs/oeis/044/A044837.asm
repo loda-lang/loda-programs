@@ -18,9 +18,7 @@ lpb $2
   add $3,9
   gcd $7,$3
   add $0,$7
-  add $0,4
   mov $4,$0
-  sub $4,8
   div $4,10
   mul $4,1320
   add $4,12

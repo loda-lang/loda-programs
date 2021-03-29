@@ -3,7 +3,6 @@
 
 cal $0,40 ; The prime numbers.
 mul $0,20
-sub $0,11
 mov $1,$0
-add $1,20
+add $1,9
 mul $1,5

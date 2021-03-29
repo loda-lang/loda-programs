@@ -11,6 +11,5 @@ add $3,$2
 mov $0,$3
 sub $0,2
 mod $0,5
-add $0,3
 mov $1,$0
-sub $1,4
+sub $1,1
