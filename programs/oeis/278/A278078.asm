@@ -3,7 +3,6 @@
 
 cal $0,6 ; Integer part of square root of n-th prime.
 mul $0,4
-mov $1,9454163
 mov $1,$0
 sub $1,7
 div $1,4

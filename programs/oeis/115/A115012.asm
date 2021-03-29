@@ -12,10 +12,7 @@ lpb $2
   mod $0,5
   add $3,8
   lpb $0
-    mov $5,$0
-    add $5,6
-    mov $0,$5
-    add $0,3
+    add $0,9
     div $0,4
     mov $3,3
   lpe

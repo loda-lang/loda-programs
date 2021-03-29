@@ -22,9 +22,8 @@ lpb $20
       div $0,3
     lpe
   lpe
-  mov $0,$6
-  mul $0,5
-  mov $1,$0
+  mov $1,$6
+  mul $1,5
   div $1,6100
   add $19,$1
 lpe
