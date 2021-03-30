@@ -4,20 +4,17 @@
 mul $0,7
 sub $0,3
 mov $2,2
-mov $3,$0
-mov $4,7
-gcd $4,$0
-add $2,$4
-add $2,3
-add $3,6
-mov $0,$3
-add $0,3
+mov $3,7
+gcd $3,$0
+add $0,9
 mov $1,6
+add $2,$3
+add $2,3
 mul $2,2
-add $4,6
+add $3,6
 lpb $0
   sub $0,1
-  add $1,$4
+  add $1,$3
 lpe
 add $1,1
 add $2,5

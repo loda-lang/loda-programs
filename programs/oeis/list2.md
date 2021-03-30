@@ -3299,6 +3299,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134871](http://oeis.org/A134871) ([L32 program](134/A134871.asm)): a(1) = 1, a(n) = tau(n) + n - 2 for n > 1.
 * [A134914](http://oeis.org/A134914) ([L08 program](134/A134914.asm)): Ceiling(n^(1/3)).
 * [A134917](http://oeis.org/A134917) ([L05 program](134/A134917.asm)): Ceiling(n^(4/3)).
+* [A134919](http://oeis.org/A134919) ([L05 program](134/A134919.asm)): Floor(n^(5/3)).
 * [A134927](http://oeis.org/A134927) ([L17 program](134/A134927.asm)): a(0)=a(1)=1; a(n) = 3*(a(n-1) + a(n-2)).
 * [A134931](http://oeis.org/A134931) ([L05 program](134/A134931.asm)): a(n) = (5*3^n-3)/2.
 * [A134934](http://oeis.org/A134934) ([L04 program](134/A134934.asm)): a(n) = (14*n+1)^2.

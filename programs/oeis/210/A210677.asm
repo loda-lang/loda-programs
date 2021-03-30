@@ -28,10 +28,10 @@ lpb $2
       mov $7,$6
     lpe
     add $6,$7
-    add $6,2
     mov $3,$6
-    add $3,2
+    add $3,4
     mov $4,$3
+    add $6,2
     mov $8,7
     mov $12,$11
     lpb $12

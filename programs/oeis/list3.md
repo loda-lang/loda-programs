@@ -2373,7 +2373,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171445](http://oeis.org/A171445) ([L11 program](171/A171445.asm)): Sequence whose G.f is given by f(z)=(1+z)^(24)/(1-z).
 * [A171449](http://oeis.org/A171449) ([L08 program](171/A171449.asm)): Powers of 2 (A000079) with 1 changed to -1.
 * [A171452](http://oeis.org/A171452) ([L04 program](171/A171452.asm)): a(n) = C(n,2) + floor(n/3).
-* [A171462](http://oeis.org/A171462) ([L15 program](171/A171462.asm)): Number of hands a bartender needs to have in order to win at the blind bartender's problem with n glasses in a cycle.
+* [A171462](http://oeis.org/A171462) ([L04 program](171/A171462.asm)): Number of hands a bartender needs to have in order to win at the blind bartender's problem with n glasses in a cycle.
 * [A171463](http://oeis.org/A171463) ([L03 program](171/A171463.asm)): The natural numbers excluding 2 and 3.
 * [A171472](http://oeis.org/A171472) ([L05 program](171/A171472.asm)): a(n) = 6*a(n-1) - 8*a(n-2) for n > 1; a(0) = 7, a(1) = 30.
 * [A171473](http://oeis.org/A171473) ([L08 program](171/A171473.asm)): a(n) = 6*a(n-1) - 8*a(n-2)-3 for n > 1; a(0) = 35, a(1) = 135.
@@ -2762,7 +2762,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175247](http://oeis.org/A175247) ([L25 program](175/A175247.asm)): Primes (A000040) with noncomposite (A008578) subscripts.
 * [A175248](http://oeis.org/A175248) ([L25 program](175/A175248.asm)): Noncomposites (A008578) with noncomposite (A008578) subscripts.
 * [A175249](http://oeis.org/A175249) ([L04 program](175/A175249.asm)): Noncomposites (A008578) with nonprime (A018252) subscripts.
-* [A175250](http://oeis.org/A175250) ([L09 program](175/A175250.asm)): Nonprimes (A018252) with noncomposite (A008578) subscripts.
 * [A175251](http://oeis.org/A175251) ([L06 program](175/A175251.asm)): Composites (A002808) with nonprime (A018252) subscripts.
 * [A175254](http://oeis.org/A175254) ([L14 program](175/A175254.asm)): a(n) = Sum_{k<=n} A000203(k)*(n-k+1), where A000203(m) is the sum of divisors of m.
 * [A175287](http://oeis.org/A175287) ([L12 program](175/A175287.asm)): Partial sums of ceiling(n^2/4).
@@ -3995,6 +3994,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188433](http://oeis.org/A188433) ([L05 program](188/A188433.asm)): a(n) = [2r]-[nr]-[2r-nr], where r=(1+sqrt(5))/2 and [.]=floor.
 * [A188434](http://oeis.org/A188434) ([L44 program](188/A188434.asm)): Positions of 0 in A188433; complement of A188435.
 * [A188435](http://oeis.org/A188435) ([L49 program](188/A188435.asm)): Positions of 1 in A188433; complement of A188434.
+* [A188436](http://oeis.org/A188436) ([L09 program](188/A188436.asm)): [3r]-[nr]-[3r-nr], where r=(1+sqrt(5))/2 and [.]=floor.
 * [A188438](http://oeis.org/A188438) ([L51 program](188/A188438.asm)): Positions of 1 in A188436; complement of A188437.
 * [A188471](http://oeis.org/A188471) ([L45 program](188/A188471.asm)): Positions of 0 in A188470.
 * [A188473](http://oeis.org/A188473) ([L12 program](188/A188473.asm)): Positions of 1 in A188472.

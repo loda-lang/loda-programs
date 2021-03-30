@@ -1335,7 +1335,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008954](http://oeis.org/A008954) ([L03 program](008/A008954.asm)): Final digit of triangular number n*(n+1)/2.
 * [A008959](http://oeis.org/A008959) ([L03 program](008/A008959.asm)): Final digit of squares: n^2 mod 10.
 * [A008960](http://oeis.org/A008960) ([L03 program](008/A008960.asm)): Final digit of cubes: n^3 mod 10.
-* [A008966](http://oeis.org/A008966) ([L04 program](008/A008966.asm)): 1 if n is squarefree, else 0.
+* [A008966](http://oeis.org/A008966) ([L03 program](008/A008966.asm)): 1 if n is squarefree, else 0.
 * [A008967](http://oeis.org/A008967) ([L12 program](008/A008967.asm)): Coefficients of Gaussian polynomials q_binomial(n-2, 2). Also triangle of distribution of rank sums: Wilcoxon's statistic. Irregular triangle read by rows.
 * [A008975](http://oeis.org/A008975) ([L03 program](008/A008975.asm)): Pascal's triangle mod 10.
 * [A008998](http://oeis.org/A008998) ([L11 program](008/A008998.asm)): a(n) = 2*a(n-1) + a(n-3), with a(0)=1 and a(1)=2.
@@ -2838,7 +2838,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022968](http://oeis.org/A022968) ([L04 program](022/A022968.asm)): 12-n.
 * [A022969](http://oeis.org/A022969) ([L04 program](022/A022969.asm)): 13-n.
 * [A022970](http://oeis.org/A022970) ([L04 program](022/A022970.asm)): 14-n.
-* [A022971](http://oeis.org/A022971) ([L04 program](022/A022971.asm)): 15-n.
+* [A022971](http://oeis.org/A022971) ([L03 program](022/A022971.asm)): 15-n.
 * [A022972](http://oeis.org/A022972) ([L04 program](022/A022972.asm)): 16-n.
 * [A022973](http://oeis.org/A022973) ([L04 program](022/A022973.asm)): 17-n.
 * [A022974](http://oeis.org/A022974) ([L04 program](022/A022974.asm)): 18-n.
@@ -5021,6 +5021,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A045721](http://oeis.org/A045721) ([L04 program](045/A045721.asm)): a(n) = binomial(3*n+1,n).
 * [A045749](http://oeis.org/A045749) ([L20 program](045/A045749.asm)): Extension of Beatty sequence; complement of A045750.
 * [A045750](http://oeis.org/A045750) ([L03 program](045/A045750.asm)): Extension of Beatty sequence, complement of A045749.
+* [A045763](http://oeis.org/A045763) ([L11 program](045/A045763.asm)): Number of numbers "unrelated to n": m < n such that m is neither a divisor of n nor relatively prime to n.
 * [A045797](http://oeis.org/A045797) ([L17 program](045/A045797.asm)): Evenish numbers (prime to 10 and 10's digit is even).
 * [A045798](http://oeis.org/A045798) ([L17 program](045/A045798.asm)): Oddish numbers (prime to 10 and 10's digit is odd).
 * [A045801](http://oeis.org/A045801) ([L25 program](045/A045801.asm)): 1-ish numbers (end in 11, 39, 73, 77).
@@ -5068,6 +5069,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A046633](http://oeis.org/A046633) ([L18 program](046/A046633.asm)): Number of cubic residues mod 5^n.
 * [A046635](http://oeis.org/A046635) ([L06 program](046/A046635.asm)): Number of cubic residues mod 7^n.
 * [A046636](http://oeis.org/A046636) ([L05 program](046/A046636.asm)): Number of cubic residues mod 8^n.
+* [A046640](http://oeis.org/A046640) ([L12 program](046/A046640.asm)): a(n) = A045763(n) + 1.
 * [A046646](http://oeis.org/A046646) ([L21 program](046/A046646.asm)): Number of certain rooted planar maps.
 * [A046657](http://oeis.org/A046657) ([L16 program](046/A046657.asm)): a(n) = A002088(n)/2.
 * [A046660](http://oeis.org/A046660) ([L04 program](046/A046660.asm)): Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).

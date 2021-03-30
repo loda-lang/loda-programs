@@ -959,8 +959,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A059502](http://oeis.org/A059502) ([L20 program](059/A059502.asm)): a(n) = (3*n*F(2n-1) + (3-n)*F(2n))/5 where F() = Fibonacci numbers A000045.
 * [A059517](http://oeis.org/A059517) ([L21 program](059/A059517.asm)): The sequence A059515(3,n). Number of ways of placing n identifiable nonnegative intervals with a total of exactly three starting and/or finishing points.
 * [A059535](http://oeis.org/A059535) ([L06 program](059/A059535.asm)): Beatty sequence for Pi^2/6, or zeta(2).
-* [A059539](http://oeis.org/A059539) ([L17 program](059/A059539.asm)): Beatty sequence for 3^(1/3).
-* [A059542](http://oeis.org/A059542) ([L15 program](059/A059542.asm)): Beatty sequence for 1 + 1/log(2).
 * [A059553](http://oeis.org/A059553) ([L31 program](059/A059553.asm)): Beatty sequence for Gamma(2/3).
 * [A059557](http://oeis.org/A059557) ([L04 program](059/A059557.asm)): Beatty sequence for 1 + gamma^2, (gamma is the Euler-Mascheroni constant A001620).
 * [A059562](http://oeis.org/A059562) ([L18 program](059/A059562.asm)): Beatty sequence for log(Pi)/(log(Pi)-1).
@@ -1684,7 +1682,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065737](http://oeis.org/A065737) ([L04 program](065/A065737.asm)): Largest square <= binomial(n,2).
 * [A065764](http://oeis.org/A065764) ([L08 program](065/A065764.asm)): Sum of divisors of square numbers.
 * [A065855](http://oeis.org/A065855) ([L35 program](065/A065855.asm)): Number of composites <= n.
-* [A065858](http://oeis.org/A065858) ([L18 program](065/A065858.asm)): m-th composite number c(m) = A002808(m), where m is the n-th prime number: a(n) = A002808(A000040(n)).
+* [A065858](http://oeis.org/A065858) ([L12 program](065/A065858.asm)): m-th composite number c(m) = A002808(m), where m is the n-th prime number: a(n) = A002808(A000040(n)).
 * [A065881](http://oeis.org/A065881) ([L18 program](065/A065881.asm)): Ultimate modulo 10: right-hand nonzero digit of n.
 * [A065882](http://oeis.org/A065882) ([L08 program](065/A065882.asm)): Ultimate modulo 4: right-hand nonzero digit of n when written in base 4.
 * [A065883](http://oeis.org/A065883) ([L05 program](065/A065883.asm)): Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
@@ -2430,12 +2428,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A072339](http://oeis.org/A072339) ([L22 program](072/A072339.asm)): Any number n can be written (in two ways, one with m even and one with m odd) in the form n = 2^k_1 - 2^k_2 + 2^k_3 - ... + 2^k_m where the signs alternate and k_1 > k_2 > k_3 > ... >k_m >= 0; sequence gives minimal value of m.
 * [A072345](http://oeis.org/A072345) ([L07 program](072/A072345.asm)): Volume of n-dimensional sphere of radius r is V_n*r^n = Pi^(n/2)*r^n/(n/2)! = C_n*Pi^floor(n/2)*r^n; sequence gives numerator of C_n.
 * [A072346](http://oeis.org/A072346) ([L48 program](072/A072346.asm)): Volume of n-dimensional sphere of radius r is V_n*r^n = Pi^(n/2)*r^n/(n/2)! = C_n*Pi^floor(n/2)*r^n; sequence gives denominator of C_n.
+* [A072358](http://oeis.org/A072358) ([L25 program](072/A072358.asm)): Number of cubefree numbers <= n which are not squarefree.
 * [A072376](http://oeis.org/A072376) ([L07 program](072/A072376.asm)): a(n) = a(floor(n/2)) + a(floor(n/4)) + a(floor(n/8)) + ... starting with a(0)=0 and a(1)=1.
 * [A072379](http://oeis.org/A072379) ([L16 program](072/A072379.asm)): Sum_{k<=n} (sigma(k)^2), where sigma(k) denotes the sum of the divisors of k A000203.
 * [A072400](http://oeis.org/A072400) ([L08 program](072/A072400.asm)): (Factors of 4 removed from n) modulo 8.
 * [A072401](http://oeis.org/A072401) ([L02 program](072/A072401.asm)): 1 iff n is of the form 4^m*(8k+7).
 * [A072442](http://oeis.org/A072442) ([L19 program](072/A072442.asm)): Least k such that Sum( Cos(1/Sqrt(i)) i=1..k) > n.
-* [A072451](http://oeis.org/A072451) ([L05 program](072/A072451.asm)): Number of odd terms in the reduced residue system of 2*n-1.
+* [A072451](http://oeis.org/A072451) ([L04 program](072/A072451.asm)): Number of odd terms in the reduced residue system of 2*n-1.
 * [A072464](http://oeis.org/A072464) ([L10 program](072/A072464.asm)): Code word lengths for non-redundant MML code for positive integers.
 * [A072481](http://oeis.org/A072481) ([L17 program](072/A072481.asm)): a(n) = Sum_{k=1..n} Sum_{d=1..k} (k mod d).
 * [A072490](http://oeis.org/A072490) ([L06 program](072/A072490.asm)): Number of squarefree numbers (excluding 1) less than n.
@@ -3057,6 +3056,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080278](http://oeis.org/A080278) ([L06 program](080/A080278.asm)): a(n) = (3^(v_3(n) + 1) - 1)/2, where v_3(n) = highest power of 3 dividing n = A007949(n).
 * [A080304](http://oeis.org/A080304) ([L11 program](080/A080304.asm)): Numerator of n^mu(n), where mu is the Moebius function (A008683).
 * [A080305](http://oeis.org/A080305) ([L13 program](080/A080305.asm)): Denominator of n^mu(n), where mu is the Moebius function (A008683).
+* [A080323](http://oeis.org/A080323) ([L07 program](080/A080323.asm)): a(n) = mu(n)^n, where mu is the Moebius function (A008683).
 * [A080333](http://oeis.org/A080333) ([L14 program](080/A080333.asm)): Partial sums of A080278.
 * [A080335](http://oeis.org/A080335) ([L05 program](080/A080335.asm)): Diagonal in square spiral or maze arrangement of natural numbers.
 * [A080339](http://oeis.org/A080339) ([L04 program](080/A080339.asm)): Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.

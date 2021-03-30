@@ -7,9 +7,8 @@ mov $4,$0
 cal $0,165825 ; Totally multiplicative sequence with a(p) = 4.
 sub $0,2
 mul $0,$2
-add $0,1
 mov $1,$0
-add $1,1
+add $1,2
 mov $3,$4
 mul $3,2
 add $1,$3

@@ -9,8 +9,8 @@ lpb $2
   sub $2,1
   sub $0,$2
   cal $0,301657 ; Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
-  sub $0,1
   mov $3,$0
-  sub $3,1
+  sub $0,1
+  sub $3,2
   add $1,$3
 lpe
