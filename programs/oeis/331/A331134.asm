@@ -17,8 +17,8 @@ lpb $2
   add $3,$5
   mod $3,4
   mul $0,$3
-  mul $0,2
   mov $5,$0
+  mul $5,2
   div $5,10
   add $1,$5
 lpe

@@ -4,6 +4,5 @@
 cal $0,282532 ; Position where the discrete difference of the Poissonian probability distribution function with mean n takes its lowest value. In case of a tie, pick the smallest value.
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$0
-sub $1,1
-div $1,2
-add $1,1
+mul $1,2
+div $1,4

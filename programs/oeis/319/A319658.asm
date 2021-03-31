@@ -13,14 +13,14 @@ lpb $13
   mov $6,$0
   lpb $0
     mul $3,2
-    mov $9,$6
-    add $9,3
-    mov $7,$9
-    add $7,1
+    mov $7,$6
+    add $7,4
     div $3,$7
     mov $7,1
     trn $7,$3
     mov $0,$7
+    mov $9,$6
+    add $9,3
     mov $10,11
     trn $10,$9
     mov $9,5

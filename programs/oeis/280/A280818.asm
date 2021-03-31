@@ -3,8 +3,4 @@
 
 mul $0,4
 cal $0,117818 ; a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
-mul $0,5
 mov $1,$0
-div $1,10
-mul $1,2
-add $1,1

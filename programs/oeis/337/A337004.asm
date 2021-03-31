@@ -14,9 +14,8 @@ lpb $0
   clr $0,$5
   div $0,10
 lpe
-sub $4,2
 mov $1,$4
-sub $1,2
+sub $1,4
 div $1,4
 mul $1,2
 add $1,1

@@ -13,9 +13,8 @@ mov $6,$4
 div $6,3
 add $6,1
 mul $6,$2
-sub $6,4
 mov $0,$6
-add $0,1
+sub $0,3
 mov $1,$0
 mov $7,$5
 mul $7,2
