@@ -6,10 +6,10 @@ sub $3,3
 mov $5,$0
 sub $0,$3
 mov $1,$3
+mov $2,$3
+sub $2,2
 mov $4,$3
 sub $4,1
-mov $2,$4
-sub $2,1
 lpb $0
   mov $0,$7
   add $1,$2

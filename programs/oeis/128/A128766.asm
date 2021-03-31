@@ -4,8 +4,8 @@
 add $0,1
 pow $0,2
 cal $0,207166 ; Number of n X 5 0..1 arrays avoiding 0 0 0 and 1 0 1 horizontally and 0 0 1 and 1 0 1 vertically.
-add $0,456
 mov $1,$0
-sub $1,625
+add $0,456
+sub $1,169
 div $1,156
 add $1,1

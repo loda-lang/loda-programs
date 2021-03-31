@@ -32,10 +32,8 @@ lpb $14
     add $5,1
     add $0,$5
     mul $0,2
-    mov $4,$0
-    add $4,1
-    mov $1,$4
-    sub $1,5
+    mov $1,$0
+    sub $1,4
     div $1,2
     add $1,1
     add $10,$1

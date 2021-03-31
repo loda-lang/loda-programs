@@ -3,9 +3,8 @@
 
 cal $0,174032 ; Triangle, read by rows, T(n, k) = Sum_{j>=0} floor(binomial(n, k)/2^j).
 mod $0,2
-add $0,7
 mov $1,$0
-sub $1,1
+add $1,6
 mul $1,2
 sub $1,12
 div $1,2

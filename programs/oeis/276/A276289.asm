@@ -9,6 +9,7 @@ add $3,$0
 mul $0,$2
 add $3,1
 mul $0,$3
-mul $0,5
 mov $1,$0
+mul $0,5
+mul $1,5
 div $1,80

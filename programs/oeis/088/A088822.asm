@@ -13,9 +13,8 @@ lpb $32
   cal $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
   div $1,$0
   add $1,29
-  mul $1,50
   mov $2,$1
-  mul $2,2
+  mul $2,100
   mov $1,$2
   sub $1,2900
   div $1,100

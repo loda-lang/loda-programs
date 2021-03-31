@@ -26,8 +26,8 @@ lpb $3
       lpb $7
         mov $0,$5
         sub $0,1
-        mov $14,$0
-        add $14,4
+        mov $14,$5
+        add $14,3
         mov $2,$14
         sub $7,1
         cal $2,139748 ; a(n) = Sum_{ k >= 0} binomial(n,5*k+3).
