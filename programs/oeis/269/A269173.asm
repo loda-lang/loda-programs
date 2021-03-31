@@ -1,4 +1,4 @@
-; A269174: Formula for Wolfram's Rule 124 cellular automaton: a(n) = (n OR 2n) AND ((n XOR 2n) OR (n XOR 4n)).
+; A269173: Formula for Wolfram's Rule 126 cellular automaton: a(n) = (n XOR 2n) OR (n XOR 4n).
 ; Coded manually 2021-03-30 by Simon Strandgaard, https://github.com/neoneye
 ; a(n) = A048724(n) OR A048725(n) = (n XOR 2n) OR (n XOR 4n), where OR is a bitwise-or (A003986) and XOR is A003987.
 ; 0,7,14,15,28,31,30,27,56,63,62,63,60,63,54,51,112,119,126,127,124,127,126,123,120,127,126,127,108,111,102,99,224,231,238,239,252,255,254,251,248,255,254,255,252,255,246,243,240,247,254,255,252,255,254,251,216,223,222,223,204,207,198,195,448,455,462
