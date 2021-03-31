@@ -5,6 +5,5 @@ mul $0,2
 cal $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
 mul $0,3
 div $0,2
-add $0,2
 mov $1,$0
-add $1,1
+add $1,3

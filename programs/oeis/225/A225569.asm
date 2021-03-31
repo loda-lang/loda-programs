@@ -6,6 +6,11 @@ mov $2,1
 add $2,$0
 lpb $2
   sub $1,$1
-  gcd $2,729
+  mov $3,1
+  lpb $2
+    dif $2,3
+    mul $3,3
+  lpe
+  mov $2,$3
 lpe
 div $1,13

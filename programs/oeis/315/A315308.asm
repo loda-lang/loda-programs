@@ -8,9 +8,8 @@ add $1,1
 add $1,$0
 mov $4,$0
 add $4,$0
-add $4,3
 mov $0,$4
-add $0,2
+add $0,5
 lpb $0
   trn $1,2
   mov $2,$0

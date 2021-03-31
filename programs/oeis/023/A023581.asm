@@ -4,6 +4,5 @@
 cal $0,40 ; The prime numbers.
 add $0,2
 cal $0,73093 ; Number of prime power divisors of n.
-add $0,1
 mov $1,$0
-sub $1,2
+sub $1,1
