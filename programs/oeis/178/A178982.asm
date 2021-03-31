@@ -21,10 +21,9 @@ lpb $11
   gcd $4,2
   add $1,$4
   mov $6,$1
-  add $6,7
-  mov $1,$6
-  sub $1,9
+  sub $1,2
   div $1,2
+  add $6,7
   add $10,$1
 lpe
 mov $1,$10

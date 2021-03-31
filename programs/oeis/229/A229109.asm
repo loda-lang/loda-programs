@@ -3,7 +3,6 @@
 
 mov $2,$0
 cal $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-sub $0,1
+add $0,$2
 mov $1,$0
-add $1,2
-add $1,$2
+add $1,1

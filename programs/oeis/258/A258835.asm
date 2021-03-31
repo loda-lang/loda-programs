@@ -4,8 +4,7 @@
 mul $0,2
 add $0,1
 cal $0,97723 ; One fourth of sum of divisors of 4n+3.
-add $0,15
 mov $1,$0
-sub $1,17
+sub $1,2
 div $1,2
 add $1,1

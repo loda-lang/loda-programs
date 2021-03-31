@@ -16,10 +16,10 @@ lpb $0
   pow $0,2
   sub $0,1
   div $0,2
-  add $4,1
   mov $1,$4
-  sub $1,13
+  sub $1,12
   mov $3,-89
+  add $4,1
 lpe
 div $1,$3
 add $1,1

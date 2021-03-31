@@ -15,9 +15,8 @@ lpb $3
   cmp $0,1
   mul $2,2
   add $2,$0
-  add $2,12166
   mov $4,$2
-  sub $4,12169
+  sub $4,3
   mul $4,3
   add $4,27
   add $1,$4

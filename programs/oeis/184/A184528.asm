@@ -3,6 +3,5 @@
 
 add $0,25
 cal $0,184530 ; Lower s-Wythoff sequence, where s=5n-4.  Complement of A184531.
-sub $0,25
 mov $1,$0
-sub $1,5
+sub $1,30
