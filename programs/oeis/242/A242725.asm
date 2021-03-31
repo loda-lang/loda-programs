@@ -4,7 +4,8 @@
 sub $0,1
 cal $0,77235 ; Bisection (odd part) of Chebyshev sequence with Diophantine property.
 div $0,2
-mul $0,10051
 mov $1,$0
+mul $0,10051
+mul $1,10051
 div $1,30153
 add $1,1

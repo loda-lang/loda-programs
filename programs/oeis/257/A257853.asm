@@ -4,6 +4,4 @@
 pow $0,3
 mul $0,2
 cal $0,55400 ; Cube excess: difference between n and largest cube <= n.
-sub $0,1
 mov $1,$0
-add $1,1

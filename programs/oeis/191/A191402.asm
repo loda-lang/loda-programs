@@ -5,9 +5,8 @@ mov $3,$0
 mul $0,2
 sub $0,1
 cal $0,163801 ; a(n)=n-a(a(n-2)) with a(0)=0,a(1)=1
-add $0,2
 mov $1,$0
-sub $1,1
+add $1,1
 mov $2,$3
 mul $2,2
 add $1,$2

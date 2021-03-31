@@ -3,7 +3,6 @@
 
 mov $2,$0
 cal $0,65328 ; a(n) is the number of primes less than or equal to prime(n) - n.
-add $0,2
 mov $1,$0
-sub $1,1
+add $1,1
 add $1,$2
