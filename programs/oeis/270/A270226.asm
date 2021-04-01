@@ -31,7 +31,6 @@ lpb $21
       add $7,1
       mov $9,$0
       lpb $2
-        add $0,$2
         lpb $6
           add $0,2
           add $7,2
@@ -39,9 +38,7 @@ lpb $21
         lpe
         mov $2,1
       lpe
-      add $0,5
       mov $1,$0
-      sub $1,10
       mov $11,$9
       mul $11,5
       add $1,$11

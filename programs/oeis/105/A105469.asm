@@ -9,9 +9,8 @@ lpb $4
   add $0,$4
   sub $0,1
   cal $0,135731 ; a(1) = 3; thereafter a(n+1) = a(n) + nextprime(a(n)) - prevprime(a(n)).
-  div $0,2
   mov $2,$0
-  div $2,3
+  div $2,6
   mov $3,$4
   mov $5,$2
   lpb $3

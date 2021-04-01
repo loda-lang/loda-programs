@@ -4,6 +4,6 @@
 cal $0,121907 ; Expansion of g.f.: (1 + x + x^2)/(1 - 2*x - 2*x^2).
 sub $0,5
 div $0,2
-add $0,6
 mov $1,$0
-sub $1,3
+add $0,6
+add $1,3

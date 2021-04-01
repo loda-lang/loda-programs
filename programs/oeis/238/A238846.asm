@@ -36,9 +36,9 @@ lpb $30
         add $1,$8
         add $1,5
         add $0,$1
-        add $0,1
         mov $8,$0
-        sub $8,8
+        add $0,1
+        sub $8,7
         mov $15,$19
         mov $19,$8
         sub $24,1

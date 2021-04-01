@@ -6,9 +6,9 @@ mov $5,$0
 lpb $2
   sub $2,1
   add $0,$2
-  sub $0,1
   mov $3,$0
-  add $3,2
+  sub $0,1
+  add $3,1
   cal $3,77998 ; Expansion of (1-x)/(1-2*x-x^2+x^3).
   sub $3,1
   mov $4,$2

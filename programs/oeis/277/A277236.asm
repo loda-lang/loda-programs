@@ -3,6 +3,5 @@
 
 cal $0,183682 ; Number of (n+1) X 3 binary arrays with every 2 X 2 subblock nonsingular.
 div $0,8
-sub $0,1
 mov $1,$0
-add $1,1
+sub $0,1

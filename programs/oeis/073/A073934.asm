@@ -11,7 +11,6 @@ lpb $0
   add $2,$1
 lpe
 gcd $0,$2
-sub $0,2
 mov $1,$0
-sub $1,5
+sub $1,7
 add $1,$3

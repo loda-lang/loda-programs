@@ -15,9 +15,8 @@ lpb $1
     sub $4,$1
     mod $4,2
   lpe
-  sub $3,2
   mov $1,$3
-  sub $1,1
+  sub $1,3
 lpe
 mul $1,2
 sub $1,2

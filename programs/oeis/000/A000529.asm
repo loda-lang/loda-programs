@@ -43,9 +43,9 @@ lpb $15
       mul $4,3
       add $4,1
       add $4,$1
-      add $4,2
       mov $1,$4
-      add $1,11
+      add $1,13
+      add $4,2
       add $8,$1
     lpe
     add $11,$8

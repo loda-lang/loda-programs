@@ -6,6 +6,5 @@ add $2,2
 cal $0,7954 ; Product of decimal digits of n.
 add $2,1
 add $0,$2
-add $0,1
 mov $1,$0
-sub $1,4
+sub $1,3

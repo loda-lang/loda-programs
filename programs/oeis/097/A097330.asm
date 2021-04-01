@@ -5,6 +5,5 @@ sub $0,1
 cal $0,93515 ; Numbers k such that either k or k-1 is a prime.
 add $0,2
 div $0,2
-add $0,14
 mov $1,$0
-sub $1,15
+sub $1,1

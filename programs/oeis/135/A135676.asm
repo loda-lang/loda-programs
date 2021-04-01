@@ -12,9 +12,8 @@ lpb $3
   lpb $6
     sub $6,1
     add $0,$6
-    sub $0,1
     mov $2,$0
-    add $2,1
+    sub $0,1
     pow $2,2
     cal $2,77113 ; Number of integer cubes <= n^2.
     add $2,$0

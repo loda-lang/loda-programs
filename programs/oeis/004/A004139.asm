@@ -4,9 +4,8 @@
 cal $0,173135 ; Primes other than 3 and 5.
 sub $0,1
 mul $0,2
-add $0,4
 mov $1,$0
-sub $1,6
+sub $1,2
 div $1,4
 mul $1,2
 add $1,3

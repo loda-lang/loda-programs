@@ -3,6 +3,6 @@
 
 add $0,7
 cal $0,276862 ; First differences of the Beatty sequence A003151 for 1 + sqrt(2).
-mul $0,140
 mov $1,$0
+mul $1,140
 div $1,150

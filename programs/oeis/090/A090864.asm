@@ -5,7 +5,6 @@ mov $2,$0
 cal $0,73188 ; n appears 1+[n/3] times.
 mul $0,2
 div $0,3
-add $0,35
 mov $1,$0
-sub $1,32
+add $1,3
 add $1,$2

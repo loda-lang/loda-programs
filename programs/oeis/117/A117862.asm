@@ -6,13 +6,13 @@ mod $0,2
 add $0,1
 mov $3,$0
 mul $4,2
-add $4,3
 mov $0,$4
-sub $0,2
+add $0,1
 mov $2,14
 add $2,$3
 add $0,$2
 add $0,3
+add $4,3
 lpb $0
   sub $0,4
   mov $1,$3

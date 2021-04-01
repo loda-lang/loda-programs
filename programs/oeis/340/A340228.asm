@@ -7,8 +7,8 @@ cal $0,170060 ; Number of reduced words of length n in Coxeter group on 3 genera
 add $0,4
 add $2,2
 mul $0,$2
-add $0,9
 mov $1,$0
-sub $1,29
+add $0,9
+sub $1,20
 div $1,4
 add $1,4

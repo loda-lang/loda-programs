@@ -5,7 +5,3 @@ cal $0,40 ; The prime numbers.
 div $0,2
 dif $0,2
 mov $1,$0
-mul $1,2
-sub $1,2
-div $1,2
-add $1,1

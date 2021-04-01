@@ -16,11 +16,10 @@ lpb $0
   add $9,$3
   sub $9,3
 lpe
+mov $2,$8
+add $2,2
 sub $4,$9
 add $4,1
-add $8,1
-mov $2,$8
-add $2,1
 add $4,$9
 sub $9,$4
 sub $9,1

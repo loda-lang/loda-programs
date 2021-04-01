@@ -7,6 +7,5 @@ add $0,3
 cal $0,184517 ; Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
 sub $0,3
 div $0,2
-add $0,52910
 mov $1,$0
-sub $1,52909
+add $1,1

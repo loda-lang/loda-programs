@@ -6,9 +6,8 @@ cal $0,40 ; The prime numbers.
 mov $1,$0
 bin $0,2
 sub $0,$1
-add $0,4
 mov $1,$0
-sub $1,9
+sub $1,5
 div $1,3
 mul $1,6
 add $1,13

@@ -10,10 +10,9 @@ lpb $0
   add $2,2
   mov $4,$1
   mov $1,1
-  add $4,2
-  add $6,5
   mov $3,$6
-  add $3,6
+  add $3,11
+  add $4,2
   mov $6,1
   add $6,$4
   sub $6,$3

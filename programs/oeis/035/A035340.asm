@@ -3,9 +3,8 @@
 
 mov $3,$0
 cal $0,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
-mul $0,26
 mov $1,$0
-div $1,2
+mul $1,13
 mov $2,$3
 mul $2,21
 add $1,$2

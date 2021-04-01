@@ -3,6 +3,5 @@
 
 add $0,290255
 cal $0,184525 ; Upper s-Wythoff sequence, where s=5n-1.  Complement of A184524.
-sub $0,1
 mov $1,$0
-sub $1,1797448
+sub $1,1797449

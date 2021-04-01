@@ -6,7 +6,7 @@ sub $0,1
 mul $0,4
 add $0,$1
 cal $0,61037 ; Numerator of 1/4 - 1/n^2.
-mul $0,16
 mov $1,$0
+mul $1,16
 div $1,80
 mul $1,5

@@ -11,13 +11,12 @@ lpb $9
   sub $0,1
   mov $2,$0
   lpb $0
-    add $2,12
-    mov $4,$2
-    sub $2,5
     mov $1,$2
-    add $1,1
+    add $1,8
     trn $0,$1
     bin $1,2
+    add $2,12
+    mov $4,$2
     mov $5,1
   lpe
   mul $4,2

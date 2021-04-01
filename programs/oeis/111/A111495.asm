@@ -7,9 +7,8 @@ mov $2,$0
 add $0,4
 mov $7,10
 lpb $0
-  add $7,4
   mov $0,$7
-  add $0,8
+  add $0,12
   mov $4,$2
   mov $7,1
   add $7,$0

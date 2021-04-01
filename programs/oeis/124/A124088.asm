@@ -36,9 +36,8 @@ lpb $21
         lpb $7
           sub $7,1
           add $0,$7
-          sub $0,1
           mov $1,$0
-          add $1,1
+          sub $0,1
           cal $1,124087 ; 9th column of Catalan triangle A009766.
           mov $3,$1
           mul $3,4

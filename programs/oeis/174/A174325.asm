@@ -3,7 +3,7 @@
 
 mul $0,-3
 cal $0,61037 ; Numerator of 1/4 - 1/n^2.
-mul $0,2
 mov $1,$0
+mul $1,2
 div $1,6
 mul $1,3

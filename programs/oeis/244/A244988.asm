@@ -10,8 +10,7 @@ lpb $4
   sub $0,$4
   cal $0,61395 ; Let p be the largest prime factor of n; if p is the k-th prime then set a(n) = k; a(1) = 0 by convention.
   gcd $0,2
-  add $0,15
   mov $3,$0
-  sub $3,16
+  sub $3,1
   add $1,$3
 lpe

@@ -10,9 +10,8 @@ lpb $71820
   sub $71820,1
   sub $0,$71820
   cal $0,305716 ; Order of rowmotion on the divisor lattice for n.
-  sub $0,2
   mov $1,$0
-  add $1,4
+  add $1,2
   mov $4,2
   lpb $2,71816
     lpb $4

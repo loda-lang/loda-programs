@@ -19,12 +19,11 @@ lpb $18
     mov $9,$0
     mov $11,2
     lpb $11
-      mov $0,$9
       sub $11,1
       add $0,$11
       sub $0,1
-      mul $0,14
       mov $1,$0
+      mul $1,14
       div $1,62
       mov $12,$11
       lpb $12

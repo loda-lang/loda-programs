@@ -5,9 +5,8 @@ mov $3,$0
 add $0,4
 mul $0,2
 trn $3,1
-add $3,2
 mov $1,$3
-add $1,3
+add $1,5
 mov $2,6
 mov $3,0
 lpb $0

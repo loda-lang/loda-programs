@@ -3,8 +3,7 @@
 
 mul $0,2
 trn $0,3
-sub $0,1
 mov $1,$0
-add $1,2
+add $1,1
 cal $1,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 sub $1,1

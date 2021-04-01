@@ -5,6 +5,6 @@ add $0,1
 cal $0,56570 ; Third power of Fibonacci numbers (A000045).
 add $0,6
 div $0,4
-add $0,1
 mov $1,$0
-sub $1,2
+add $0,1
+sub $1,1

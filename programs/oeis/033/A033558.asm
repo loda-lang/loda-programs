@@ -4,6 +4,5 @@
 mul $0,2
 add $0,2
 cal $0,308048 ; a(n) = n - nextprime(ceiling(n/2) - 1), where nextprime(n) is the smallest prime > n.
-add $0,6
 mov $1,$0
-sub $1,7
+sub $1,1

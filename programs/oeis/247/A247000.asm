@@ -12,9 +12,9 @@ lpb $2
     mov $0,$2
     add $1,$2
   lpe
-  sub $1,1
   mov $2,$1
-  sub $2,1
+  sub $1,1
+  sub $2,2
   trn $2,$0
   mov $5,5
 lpe

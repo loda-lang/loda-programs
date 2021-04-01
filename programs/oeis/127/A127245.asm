@@ -8,9 +8,8 @@ lpb $18
   mov $0,$16
   sub $18,1
   add $0,$18
-  sub $0,1
   mov $15,$0
-  add $15,1
+  sub $0,1
   lpb $15
     sub $15,1
     sub $0,$15

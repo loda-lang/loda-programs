@@ -16,8 +16,7 @@ add $1,1
 mul $1,2
 mov $3,1
 add $3,$2
-sub $3,1
 mov $5,$3
-add $5,36
+add $5,35
 add $1,$5
 sub $1,39

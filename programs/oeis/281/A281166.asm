@@ -7,9 +7,8 @@ lpb $7
   mov $0,$5
   sub $7,1
   add $0,$7
-  sub $0,1
   mov $3,$0
-  add $3,1
+  sub $0,1
   clr $0,2
   cal $3,282153 ; Expansion of x*(1 - 2*x + 3*x^2)/((1 - x)*(1 - 2*x)*(1 - x + x^2)).
   add $1,$3

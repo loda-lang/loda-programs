@@ -4,6 +4,4 @@
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,1
 cal $0,1227 ; Number of odd divisors of n.
-sub $0,1
 mov $1,$0
-add $1,1

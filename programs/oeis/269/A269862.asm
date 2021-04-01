@@ -13,8 +13,7 @@ lpb $3
   sub $4,1
   add $4,$0
   gcd $4,2
-  add $4,13
   mov $6,$4
-  sub $6,14
+  sub $6,1
   add $1,$6
 lpe

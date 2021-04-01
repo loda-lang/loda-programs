@@ -11,8 +11,8 @@ add $2,1
 add $3,$1
 gcd $3,$2
 div $0,$3
-mul $0,4
 mov $1,$0
+mul $1,4
 div $1,8
 mul $1,2
 add $1,1

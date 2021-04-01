@@ -17,9 +17,8 @@ lpb $2
     sub $0,1
     mov $3,$0
     cal $0,330025 ; a(n) = (-1)^floor(n/5) * sign(mod(n, 5)).
-    mul $3,2
     mov $4,$3
-    mul $4,2
+    mul $4,4
     sub $4,$0
     mov $10,$4
     cmp $10,0

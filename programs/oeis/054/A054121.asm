@@ -19,10 +19,8 @@ lpb $0
   mov $5,$6
   add $6,2
 lpe
-mov $0,$5
-add $0,1
-mov $1,$0
-add $1,3
+mov $1,$5
+add $1,4
 sub $1,$2
 lpb $7
   add $1,6

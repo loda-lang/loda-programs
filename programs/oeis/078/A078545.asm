@@ -3,6 +3,4 @@
 
 add $0,1
 cal $0,71188 ; Largest prime factor of number of divisors of n.
-sub $0,2
 mov $1,$0
-add $1,2

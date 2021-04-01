@@ -30,16 +30,14 @@ lpb $16
         div $0,2
         add $3,$0
       lpe
-      add $3,81
-      add $4,1
       mov $0,$4
-      add $0,1
+      add $0,2
+      add $3,81
       add $5,$3
       mod $5,2
       sub $5,$0
-      add $5,8
       mov $1,$5
-      sub $1,7
+      add $1,1
       mov $10,$9
       lpb $10
         mov $8,$1

@@ -3,9 +3,8 @@
 
 mov $4,$0
 pow $0,2
-mul $0,18
 mov $1,$0
-mul $1,5
+mul $1,90
 add $1,1
 mov $2,$4
 mul $2,32

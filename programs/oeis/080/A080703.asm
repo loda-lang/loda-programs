@@ -5,8 +5,7 @@ sub $0,1
 mul $0,2
 add $0,7
 cal $0,80646 ; a(1) = 3; for n>1, a(n) is taken to be the smallest integer greater than a(n-1) which is consistent with the condition "if n is a member of the sequence then a(n) is divisible by 3".
-sub $0,3
 mov $1,$0
-sub $1,11
+sub $1,14
 div $1,2
 add $1,5

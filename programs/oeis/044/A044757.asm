@@ -5,9 +5,8 @@ mov $2,16
 add $2,$0
 gcd $2,10
 trn $2,5
-add $2,28
 mov $1,$2
-add $1,16
+add $1,44
 mov $3,$0
 mul $3,100
 add $1,$3

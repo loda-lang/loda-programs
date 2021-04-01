@@ -6,9 +6,9 @@ mov $5,$0
 lpb $4
   sub $4,1
   add $0,$4
-  sub $0,1
   mov $2,$0
-  sub $2,2
+  sub $0,1
+  sub $2,3
   cal $2,194920 ; a(n) = n - floor(n/sqrt(2)).
   sub $2,$6
   mov $3,$4

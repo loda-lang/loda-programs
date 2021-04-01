@@ -6,9 +6,8 @@ mov $5,$0
 lpb $4
   sub $4,1
   add $0,$4
-  sub $0,1
   mov $6,$0
-  add $6,1
+  sub $0,1
   cal $6,106006 ; [n/2] + [n/3] + [n/5].
   mov $2,$6
   mul $2,6

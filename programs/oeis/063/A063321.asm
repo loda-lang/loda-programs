@@ -3,12 +3,12 @@
 
 mov $4,$0
 mov $0,1
-mul $4,3
 mov $1,$4
-mul $1,4
+mul $1,12
 sub $1,1
 trn $1,1
 add $1,2
+mul $4,3
 mov $3,$4
 mov $4,2
 add $4,$3

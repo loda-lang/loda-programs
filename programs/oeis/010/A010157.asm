@@ -10,6 +10,5 @@ lpb $0
   mod $0,8
   bin $0,2
 lpe
-add $0,4
 mov $1,$0
-sub $1,3
+add $1,1

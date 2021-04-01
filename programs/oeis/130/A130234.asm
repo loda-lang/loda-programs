@@ -9,7 +9,7 @@ lpb $2
   add $0,4
   trn $2,1
 lpe
-add $0,1
 mov $1,$0
-sub $1,9
+add $0,1
+sub $1,8
 div $1,4

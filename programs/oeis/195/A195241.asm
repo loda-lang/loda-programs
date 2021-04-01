@@ -5,9 +5,9 @@ mov $1,$0
 trn $1,2
 mov $2,$0
 add $2,$1
-add $2,2
 mov $0,$2
-sub $0,4
+sub $0,2
+add $2,2
 mov $1,$2
 mov $3,$2
 add $3,$2

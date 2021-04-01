@@ -13,9 +13,8 @@ lpb $9
     mov $0,$3
     sub $5,1
     add $0,$5
-    sub $0,1
     mov $8,$0
-    add $8,1
+    sub $0,1
     add $0,$8
     mov $2,1
     mov $8,$0

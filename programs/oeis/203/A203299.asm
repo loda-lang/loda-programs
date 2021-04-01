@@ -16,13 +16,12 @@ lpb $10
     mov $0,$5
     sub $7,1
     sub $0,$7
+    mov $3,$0
+    add $3,6
     mov $4,$0
     add $4,1
     gcd $4,2
     mul $4,$0
-    add $0,2
-    mov $3,$0
-    add $3,4
     add $4,1
     mul $4,2
     add $4,2

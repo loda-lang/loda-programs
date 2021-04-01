@@ -5,8 +5,7 @@ cal $0,10199 ; Continued fraction for sqrt(140).
 cal $0,47562 ; Numbers that are congruent to {3, 4, 5, 6, 7} mod 8.
 sub $0,1
 mul $0,2
-add $0,3
 mov $1,$0
-sub $1,9
+sub $1,6
 div $1,2
 add $1,1

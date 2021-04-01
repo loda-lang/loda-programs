@@ -26,9 +26,8 @@ lpb $73
       lpb $62
         sub $62,1
         add $0,$62
-        sub $0,1
         mov $4,$0
-        add $4,1
+        sub $0,1
         cal $4,210728 ; a(n) = a(n-1) + a(n-2) + n + 2 with n>1, a(0)=1, a(1)=2.
         mov $1,$4
         mov $63,$62

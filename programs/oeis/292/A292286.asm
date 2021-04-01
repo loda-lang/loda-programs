@@ -3,8 +3,7 @@
 
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 cal $0,296065 ; Partial sums of A296064.
-sub $0,5
 mov $1,$0
-add $1,6
+add $1,1
 div $1,2
 sub $1,1

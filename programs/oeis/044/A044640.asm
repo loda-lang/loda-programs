@@ -8,8 +8,7 @@ add $2,2
 mul $0,$2
 add $0,1
 cal $0,324161 ; Number of zerofree nonnegative integers <= n.
-add $0,25
 mov $1,$0
-sub $1,35
+sub $1,10
 mul $1,9
 add $1,89

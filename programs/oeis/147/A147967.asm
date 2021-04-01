@@ -4,6 +4,5 @@
 mov $2,$0
 cal $0,141042 ; Product of n and the n-th gap between primes: a(n) = n*A001223(n).
 sub $0,$2
-add $0,2
 mov $1,$0
-sub $1,3
+sub $1,1

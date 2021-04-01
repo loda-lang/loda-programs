@@ -26,7 +26,7 @@ lpb $2
   lpe
   mov $2,0
 lpe
-mul $0,6
 mov $1,$0
+mul $1,6
 div $1,12
 add $1,1

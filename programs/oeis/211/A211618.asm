@@ -8,9 +8,8 @@ div $4,2
 mul $4,2
 mov $5,9
 add $5,$4
-sub $5,8
 mov $1,$5
-sub $1,1
+sub $1,9
 mov $3,$0
 mul $3,$0
 mul $3,$0

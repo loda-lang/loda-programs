@@ -18,10 +18,8 @@ lpb $0
 lpe
 sub $3,$2
 trn $3,$2
-mov $5,$3
-add $5,4
-mov $1,$5
-sub $1,3
+mov $1,$3
+add $1,1
 mov $4,$6
 mul $4,$6
 add $1,$4

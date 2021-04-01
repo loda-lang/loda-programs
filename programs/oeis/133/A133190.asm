@@ -4,10 +4,11 @@
 cal $0,100455 ; a(n) = 2^n + sin(n*Pi/2).
 mov $2,12
 add $2,$0
-mul $2,2
 mov $0,$2
+mul $0,2
 div $0,5
 mov $1,$0
 sub $1,5
 mul $1,2
 add $1,1
+mul $2,2

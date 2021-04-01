@@ -5,8 +5,7 @@ cal $0,167430 ; Fractal sequence of the interspersion A163255.
 dif $0,2
 sub $0,24
 mul $0,2
-add $0,33555002
 mov $1,$0
-sub $1,33554956
+add $1,46
 div $1,2
 add $1,1

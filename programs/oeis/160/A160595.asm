@@ -6,6 +6,5 @@ cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 gcd $2,$0
 sub $0,$2
 div $0,$2
-add $0,14
 mov $1,$0
-sub $1,13
+add $1,1

@@ -17,10 +17,11 @@ add $2,$1
 add $2,1
 mov $3,1
 add $3,$2
-add $3,5
 mov $0,$3
-sub $0,1
+add $0,5
 mov $1,$0
-sub $1,13
+sub $0,1
+sub $1,14
 div $1,7
 add $1,1
+add $3,5

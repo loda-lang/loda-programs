@@ -3,9 +3,8 @@
 
 cal $0,40 ; The prime numbers.
 cal $0,2492 ; Sum of the first n even squares: 2*n*(n+1)*(2*n+1)/3.
-add $0,1
 mov $1,$0
-sub $1,21
+sub $1,20
 div $1,4
 mul $1,6
 add $1,30

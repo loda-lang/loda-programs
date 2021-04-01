@@ -3,8 +3,10 @@
 
 cal $0,40 ; The prime numbers.
 mov $1,$0
-lpb $0
-  gcd $0,4
-  sub $1,2
+mov $2,$0
+lpb $2
+  add $0,$1
+  dif $2,2
 lpe
-add $1,1
+mov $1,$0
+sub $1,1
