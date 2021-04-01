@@ -12,8 +12,8 @@ lpb $3
   cal $0,131136 ; Denominator of (exponential) expansion of log((x/2-1)/(x-1)).
   add $2,$0
   div $2,2
-  mul $2,2
   mov $5,$2
+  mul $5,2
   div $5,16
   add $1,$5
 lpe

@@ -3,9 +3,8 @@
 
 sub $0,1
 cal $0,40 ; The prime numbers.
-lpb $0
-  pow $0,4
-  div $0,4
-lpe
 mov $1,$0
-add $1,1
+trn $0,2
+sub $0,$1
+sub $1,$0
+sub $1,1
