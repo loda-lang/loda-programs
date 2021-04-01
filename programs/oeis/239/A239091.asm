@@ -10,9 +10,8 @@ lpb $2
   cal $0,238845 ; Prefix overlap between binary expansions of n and n+1.
   add $0,2
   mul $0,4
-  add $0,10
   mov $3,$0
-  sub $3,18
+  sub $3,8
   div $3,4
   add $1,$3
 lpe
