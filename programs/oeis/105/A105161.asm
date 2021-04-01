@@ -3,11 +3,6 @@
 
 mov $3,$0
 cal $0,101300 ; Second-smallest prime larger than n.
-add $0,10
 add $2,$3
 sub $0,$2
 mov $1,$0
-mul $1,2
-sub $1,24
-div $1,2
-add $1,2

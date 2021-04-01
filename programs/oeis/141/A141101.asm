@@ -6,6 +6,5 @@ mov $2,$0
 add $0,1
 cal $0,40 ; The prime numbers.
 sub $0,$2
-add $0,26
 mov $1,$0
-sub $1,28
+sub $1,2
