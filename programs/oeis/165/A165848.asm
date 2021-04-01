@@ -3,7 +3,4 @@
 
 cal $0,165824 ; Totally multiplicative sequence with a(p) = 3.
 pow $0,3
-add $1,$0
-div $1,26
-mul $1,26
-add $1,1
+mov $1,$0

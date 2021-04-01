@@ -6,9 +6,8 @@ mov $5,$0
 lpb $4
   sub $4,1
   add $0,$4
-  sub $0,1
   mov $6,$0
-  add $6,1
+  sub $0,1
   mov $2,$6
   cal $2,139748 ; a(n) = Sum_{ k >= 0} binomial(n,5*k+3).
   mov $3,$4

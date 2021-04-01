@@ -8,6 +8,5 @@ mov $3,$0
 add $0,2
 mul $0,$3
 cal $0,194029 ; Natural fractal sequence of the Fibonacci sequence (1,2,3,5,8,...).
-add $0,5
 mov $1,$0
-sub $1,6
+sub $1,1

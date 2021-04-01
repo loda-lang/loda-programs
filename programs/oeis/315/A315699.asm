@@ -7,8 +7,8 @@ mov $4,$0
 sub $0,1
 div $0,11
 add $0,1
-mul $4,2
 mov $2,$4
+mul $2,2
 div $2,11
 mov $6,$2
 add $6,$0
