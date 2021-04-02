@@ -314,7 +314,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305750](http://oeis.org/A305750) ([L21 program](305/A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
 * [A305753](http://oeis.org/A305753) ([L11 program](305/A305753.asm)): A base-3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
 * [A305801](http://oeis.org/A305801) ([L09 program](305/A305801.asm)): Filter sequence for a(odd prime) = constant sequences.
-* [A305848](http://oeis.org/A305848) ([L09 program](305/A305848.asm)): Solution b() of the complementary equation a(n) + b(n) = 5n, where a(1) = 1. See Comments.
+* [A305848](http://oeis.org/A305848) ([L08 program](305/A305848.asm)): Solution b() of the complementary equation a(n) + b(n) = 5n, where a(1) = 1. See Comments.
 * [A305849](http://oeis.org/A305849) ([L08 program](305/A305849.asm)): Positions of 2 in the difference sequence of A305847.
 * [A305859](http://oeis.org/A305859) ([L07 program](305/A305859.asm)): Numbers that are congruent to {1, 3, 11} mod 12.
 * [A305861](http://oeis.org/A305861) ([L12 program](305/A305861.asm)): a(n) = 32*3^n - 2^(n+5) + 5.
@@ -362,6 +362,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307371](http://oeis.org/A307371) ([L08 program](307/A307371.asm)): Numbers k such that the digits of sqrt(k) begin with k.
 * [A307395](http://oeis.org/A307395) ([L11 program](307/A307395.asm)): Expansion of 1/((1 - x) * ((1 - x)^3 + x^3)).
 * [A307421](http://oeis.org/A307421) ([L04 program](307/A307421.asm)): Dirichlet g.f.: zeta(s) * zeta(3*s) / zeta(2*s).
+* [A307430](http://oeis.org/A307430) ([L04 program](307/A307430.asm)): Dirichlet g.f.: zeta(s) / zeta(4*s).
 * [A307465](http://oeis.org/A307465) ([L42 program](307/A307465.asm)): Number of Catalan words of length n avoiding the pattern 110.
 * [A307469](http://oeis.org/A307469) ([L14 program](307/A307469.asm)): a(n) = 2*a(n-1) + 6*a(n-2) for n >= 2, a(0) = 1, a(1) = 5.
 * [A307485](http://oeis.org/A307485) ([L13 program](307/A307485.asm)): A permutation of the nonnegative integers: one odd, two even, four odd, eight even, etc.; extended to nonnegative integer with a(0) = 0.
@@ -430,7 +431,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309127](http://oeis.org/A309127) ([L07 program](309/A309127.asm)): a(n) = n + 2^4 * floor(n/2^4) + 3^4 * floor(n/3^4) + 4^4 * floor(n/4^4) + ...
 * [A309192](http://oeis.org/A309192) ([L16 program](309/A309192.asm)): a(n) = Sum_{k=1..n} mu(k)^2 * k * floor(n/k).
 * [A309214](http://oeis.org/A309214) ([L10 program](309/A309214.asm)): a(0)=0; thereafter a(n) = a(n-1)+n if a(n-1) even, otherwise a(n) = a(n-1)-n.
-* [A309215](http://oeis.org/A309215) ([L07 program](309/A309215.asm)): a(0)=0; thereafter a(n) = a(n-1)+n if a(n-1) odd, otherwise a(n) = a(n-1)-n.
+* [A309215](http://oeis.org/A309215) ([L04 program](309/A309215.asm)): a(0)=0; thereafter a(n) = a(n-1)+n if a(n-1) odd, otherwise a(n) = a(n-1)-n.
 * [A309231](http://oeis.org/A309231) ([L07 program](309/A309231.asm)): Column 3 of the array at A326662 see Comments.
 * [A309250](http://oeis.org/A309250) ([L12 program](309/A309250.asm)): a(n) is the index of the binary string of a Post's Correspondence Problem Encoding with index n.
 * [A309255](http://oeis.org/A309255) ([L04 program](309/A309255.asm)): a(n) = n + 1 - Sum_{k=0..n} (Stirling1(n,k) mod 2).
@@ -921,7 +922,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316320](http://oeis.org/A316320) ([L16 program](316/A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
 * [A316341](http://oeis.org/A316341) ([L28 program](316/A316341.asm)): Characteristic function of the factorials 1!, 2!, 3!, ...
 * [A316342](http://oeis.org/A316342) ([L13 program](316/A316342.asm)): Fibonacci word A003849 with first two terms replaced by 2's.
-* [A316344](http://oeis.org/A316344) ([L34 program](316/A316344.asm)): An example of a word that is uniform morphic, but neither pure morphic, primitive morphic, nor recurrent.
+* [A316344](http://oeis.org/A316344) ([L31 program](316/A316344.asm)): An example of a word that is uniform morphic, but neither pure morphic, primitive morphic, nor recurrent.
 * [A316355](http://oeis.org/A316355) ([L08 program](316/A316355.asm)): 2k-1 appears 2k times after 2k-2 appears once.
 * [A316357](http://oeis.org/A316357) ([L13 program](316/A316357.asm)): Partial sums of A316316.
 * [A316358](http://oeis.org/A316358) ([L16 program](316/A316358.asm)): Partial sums of A316317.
@@ -1236,6 +1237,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324161](http://oeis.org/A324161) ([L20 program](324/A324161.asm)): Number of zerofree nonnegative integers <= n.
 * [A324172](http://oeis.org/A324172) ([L11 program](324/A324172.asm)): Number of subsets of {1,...,n} that cross their complement.
 * [A324174](http://oeis.org/A324174) ([L12 program](324/A324174.asm)): Integers k such that 2*floor(sqrt(k)) divides k.
+* [A324198](http://oeis.org/A324198) ([L03 program](324/A324198.asm)): a(n) = gcd(n, A276086(n)).
 * [A324275](http://oeis.org/A324275) ([L36 program](324/A324275.asm)): Numbers k for which A324274(k) is 0, i.e., starting squares in A324274 that yield a path of infinite length.
 * [A324293](http://oeis.org/A324293) ([L03 program](324/A324293.asm)): a(n) = A002487(sigma(n)).
 * [A324294](http://oeis.org/A324294) ([L06 program](324/A324294.asm)): a(n) = A002487(1+sigma(n)).
@@ -1656,6 +1658,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335262](http://oeis.org/A335262) ([L13 program](335/A335262.asm)): Triangle of triangular numbers, read by rows, constructed like this: Given a sequence t, start row 0 with t(0). Compute row n for n > 0 by reversing row n-1 and prepending t(n). The sequence t is here chosen as the triangular numbers.
 * [A335298](http://oeis.org/A335298) ([L19 program](335/A335298.asm)): a(n) is the squared distance between the points P(n) and P(0) on a plane, n>=0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90°-left-turn is taken in P(n+1).
 * [A335341](http://oeis.org/A335341) ([L03 program](335/A335341.asm)): Sum of divisors of A003557(n).
+* [A335402](http://oeis.org/A335402) ([L10 program](335/A335402.asm)): Numbers m such that the only normal integer partition of m whose run-lengths are a palindrome is (1)^m.
 * [A335439](http://oeis.org/A335439) ([L07 program](335/A335439.asm)): a(n) = n*(n-1)/2 + 2^(n-1) - 1.
 * [A335567](http://oeis.org/A335567) ([L11 program](335/A335567.asm)): Number of distinct positive integer pairs, (s,t), such that s <= t < n where neither s nor t divides n.
 * [A335648](http://oeis.org/A335648) ([L25 program](335/A335648.asm)): Partial sums of A006010.
@@ -1797,7 +1800,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339356](http://oeis.org/A339356) ([L35 program](339/A339356.asm)): Maximum number of copies of a 123456 permutation pattern in an alternating (or zig-zag) permutation of length n + 9.
 * [A339358](http://oeis.org/A339358) ([L50 program](339/A339358.asm)): Maximum number of copies of a 1234567 permutation pattern in an alternating (or zig-zag) permutation of length n + 11.
 * [A339423](http://oeis.org/A339423) ([L03 program](339/A339423.asm)): If n = p_1 * ... * p_m with primes p_i <= p_{i+1}, a(n) = Sum_{k<m} Product_{j <= k} p_j.
-* [A339448](http://oeis.org/A339448) ([L03 program](339/A339448.asm)): a(n) = (prime(n) - a(n-1)) mod 3; a(0)=0.
 * [A339483](http://oeis.org/A339483) ([L07 program](339/A339483.asm)): Number of regular polygons that can be drawn with vertices on a centered hexagonal grid with side length n.
 * [A339488](http://oeis.org/A339488) ([L05 program](339/A339488.asm)): a(n) = H(n-1, n, n+1) where H(a, b, c) = (a + b + c)*(a + b - c)*(b + c - a)*(c + a - b) is Heron's polynomial.
 * [A339531](http://oeis.org/A339531) ([L06 program](339/A339531.asm)): Numbers b > 1 such that the smallest two primes, i.e., 2 and 3 are base-b Wieferich primes.
