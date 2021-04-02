@@ -3,7 +3,7 @@
 
 cal $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
 cal $0,89143 ; a(n) = 9*2^n - 6.
-mul $0,11
 mov $1,$0
+mul $1,11
 div $1,99
 add $1,1

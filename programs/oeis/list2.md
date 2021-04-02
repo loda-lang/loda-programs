@@ -853,7 +853,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108898](http://oeis.org/A108898) ([L16 program](108/A108898.asm)): a(n+3) = 3*a(n+2) - 2*a(n), a(0) = -1, a(1) = 1, a(2) = 3.
 * [A108911](http://oeis.org/A108911) ([L08 program](108/A108911.asm)): Difference between n and the sum of the factorials of its digits.
 * [A108922](http://oeis.org/A108922) ([L08 program](108/A108922.asm)): Expansion of 1/((x^8+1)*(x-1)^2).
-* [A108923](http://oeis.org/A108923) ([L25 program](108/A108923.asm)): Expansion of 1/((x^8+1)*(1-x)^3).
+* [A108923](http://oeis.org/A108923) ([L23 program](108/A108923.asm)): Expansion of 1/((x^8+1)*(1-x)^3).
 * [A108924](http://oeis.org/A108924) ([L22 program](108/A108924.asm)): J(n)^2+J(n+1)^2, with J(n) the Jacobsthal number A001045(n).
 * [A108928](http://oeis.org/A108928) ([L05 program](108/A108928.asm)): a(n) = 8*n^2 - 3.
 * [A108954](http://oeis.org/A108954) ([L05 program](108/A108954.asm)): a(n) = pi(2*n) - pi(n). Number of primes in the interval (n,2n].
@@ -1710,7 +1710,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118742](http://oeis.org/A118742) ([L06 program](118/A118742.asm)): Numbers n for which the expression n!/(n+1) is an integer.
 * [A118749](http://oeis.org/A118749) ([L08 program](118/A118749.asm)): Largest prime <= 3*n.
 * [A118751](http://oeis.org/A118751) ([L03 program](118/A118751.asm)): Smallest prime >= 3*n.
-* [A118753](http://oeis.org/A118753) ([L03 program](118/A118753.asm)): First prime after 4n. Smallest prime >= 4*n. Bisection of A060264.
 * [A118755](http://oeis.org/A118755) ([L03 program](118/A118755.asm)): Smallest prime >= 6*n.
 * [A118760](http://oeis.org/A118760) ([L01 program](118/A118760.asm)): A118758(A118758(n)).
 * [A118777](http://oeis.org/A118777) ([L06 program](118/A118777.asm)): a(0) = 1; n > 0: a(n) = a(n-1) + d, d = -/+1 if n is prime/nonprime.

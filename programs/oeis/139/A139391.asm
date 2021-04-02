@@ -8,8 +8,8 @@ lpb $3,2
   cal $4,6370 ; The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
   mod $3,2
 lpe
-mul $4,2
 mov $1,$4
+mul $1,2
 div $1,4
 mul $1,2
 add $1,1
