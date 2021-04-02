@@ -17,10 +17,10 @@ lpb $0
   trn $6,8
   add $6,3
   add $1,$6
-  add $7,20
   mov $5,$7
-  sub $5,1
+  add $5,19
   mov $0,$5
+  add $7,20
   mul $7,2
   sub $7,2
   add $0,$7

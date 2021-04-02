@@ -15,10 +15,8 @@ lpb $14
     mov $0,$9
     sub $11,1
     sub $0,$11
-    mov $2,$0
-    div $2,4
-    mov $1,$2
-    div $1,2
+    mov $1,$0
+    div $1,8
     gcd $1,2
     div $1,2
     add $10,$1
