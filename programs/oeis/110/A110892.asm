@@ -4,9 +4,8 @@
 add $0,1
 pow $0,2
 cal $0,3132 ; Sum of squares of digits of n.
-mul $0,2
 mov $1,$0
-mul $1,5
+mul $1,10
 sub $1,10
 div $1,10
 add $1,1

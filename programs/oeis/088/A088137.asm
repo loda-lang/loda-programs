@@ -4,8 +4,8 @@
 mul $0,2
 mov $3,$0
 add $3,2
-mov $4,$3
-sub $4,1
+mov $4,$0
+add $4,1
 mov $2,$4
 mov $5,2
 lpb $2

@@ -6,9 +6,8 @@ mov $6,2
 lpb $6
   sub $6,1
   add $0,$6
-  sub $0,1
   mov $3,$0
-  add $3,1
+  sub $0,1
   cal $3,749 ; a(n) = 4a(n-1) - 6a(n-2) + 4a(n-3), n > 3, with a(0)=a(1)=a(2)=0, a(3)=1.
   mov $2,$6
   mov $5,$3

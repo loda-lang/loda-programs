@@ -3,6 +3,5 @@
 
 cal $0,40 ; The prime numbers.
 pow $0,2
-cal $0,66014 ; Highest minimal Euclidean norm of any Type 4^Z self-dual code of length n over Z/4Z which does not have all Euclidean norms divisible by 8, that is, is strictly Type I. Compare A105682.
 mov $1,$0
-div $1,8
+div $1,20

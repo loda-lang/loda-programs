@@ -4,9 +4,8 @@
 mov $3,$0
 add $0,1
 cal $0,5379 ; The male of a pair of recurrences.
-add $0,3
 mov $1,$0
-add $1,1
+add $1,4
 mov $2,$3
 mul $2,3
 add $1,$2

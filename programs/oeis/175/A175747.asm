@@ -4,19 +4,11 @@
 add $0,1
 lpb $0
   lpb $0
-    mov $1,81
-    add $2,$0
-    add $1,$2
-    add $1,2
-    mov $3,$0
-    mov $4,$0
-    cal $0,230847 ; 1 + A054541(n).
     mov $2,$0
     mul $0,2
     mod $0,2
   lpe
-  mov $0,$4
-  mul $3,2
+  mov $0,$2
 lpe
 cal $0,40 ; The prime numbers.
 mov $1,$0
