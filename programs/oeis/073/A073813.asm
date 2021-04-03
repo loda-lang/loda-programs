@@ -6,8 +6,12 @@ lpb $0
   cal $1,56608 ; Least prime factor of the n-th composite number.
   cmp $2,0
   add $3,$2
-  log $3,3
-  pow $0,$3
+  mov $4,-1
+  lpb $3
+    div $3,3
+    add $4,1
+  lpe
+  pow $0,$4
   div $0,$1
   cmp $2,0
 lpe

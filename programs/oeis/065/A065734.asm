@@ -4,8 +4,3 @@
 cal $0,78705 ; Integer part of the square root of sigma(n).
 pow $0,2
 mov $1,$0
-add $1,195
-mul $1,2
-sub $1,392
-div $1,2
-add $1,1

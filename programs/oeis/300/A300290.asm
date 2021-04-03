@@ -4,6 +4,8 @@
 mod $0,6
 lpb $0
   div $0,2
-  add $1,6
+  add $0,$2
+  add $0,1
+  mov $2,11
 lpe
-div $1,6
+mov $1,$0

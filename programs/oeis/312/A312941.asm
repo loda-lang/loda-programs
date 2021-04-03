@@ -21,9 +21,8 @@ mov $4,$7
 add $4,$1
 sub $4,$0
 add $2,$4
-add $2,1
 mov $1,$2
-sub $1,5
+sub $1,4
 mov $5,$6
 mul $5,4
 add $1,$5
