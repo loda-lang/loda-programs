@@ -514,6 +514,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A259754](http://oeis.org/A259754) ([L20 program](259/A259754.asm)): Numbers that are congruent to {3,9,15,18,21} mod 24.
 * [A259755](http://oeis.org/A259755) ([L06 program](259/A259755.asm)): Numbers that are congruent to {4,20} mod 24.
 * [A259821](http://oeis.org/A259821) ([L04 program](259/A259821.asm)): a(n) = floor( (3^n+1)^2/3^n ).
+* [A259936](http://oeis.org/A259936) ([L11 program](259/A259936.asm)): Number of ways to express the integer n as a product of its unitary divisors (A034444).
 * [A259967](http://oeis.org/A259967) ([L44 program](259/A259967.asm)): a(n) = a(n-1) + a(n-2) + a(n-4).
 * [A259968](http://oeis.org/A259968) ([L10 program](259/A259968.asm)): a(n) = a(n-1) + a(n-2) + a(n-4), with a(1)=1, a(2)=1, a(3)=3, a(4)=6.
 * [A259969](http://oeis.org/A259969) ([L10 program](259/A259969.asm)): a(n) = n*A259968(n).
@@ -1356,6 +1357,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272870](http://oeis.org/A272870) ([L05 program](272/A272870.asm)): Real part of (n + i)^4.
 * [A272871](http://oeis.org/A272871) ([L04 program](272/A272871.asm)): Imaginary part of (n + i)^4.
 * [A272900](http://oeis.org/A272900) ([L06 program](272/A272900.asm)): Fibonacci-products fractal sequence.
+* [A272912](http://oeis.org/A272912) ([L24 program](272/A272912.asm)): Difference sequence of the sequence A116470 of all distinct Fibonacci numbers and Lucas numbers (A000032).
 * [A272914](http://oeis.org/A272914) ([L12 program](272/A272914.asm)): Sixth powers ending in digit 6.
 * [A272915](http://oeis.org/A272915) ([L03 program](272/A272915.asm)): a(n) = n + floor(5*n/6).
 * [A272928](http://oeis.org/A272928) ([L39 program](272/A272928.asm)): Partial sums of A147562.
@@ -1407,6 +1409,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273448](http://oeis.org/A273448) ([L35 program](273/A273448.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
 * [A273480](http://oeis.org/A273480) ([L07 program](273/A273480.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
 * [A273481](http://oeis.org/A273481) ([L17 program](273/A273481.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
+* [A273514](http://oeis.org/A273514) ([L05 program](273/A273514.asm)): a(n) is the number of arithmetic progressions m < n < p (three numbers in arithmetic progression) such that m and p contain no 2's in their ternary representation.
 * [A273526](http://oeis.org/A273526) ([L04 program](273/A273526.asm)): Number of 123-avoiding indecomposable permutations.
 * [A273652](http://oeis.org/A273652) ([L07 program](273/A273652.asm)): Number of forests of labeled rooted trees of height at most 1, with n labels, two of which are used for root nodes and any root may contain >= 1 labels.
 * [A273669](http://oeis.org/A273669) ([L06 program](273/A273669.asm)): Decimal representation ends with either 2 or 9.
@@ -1545,6 +1548,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A275973](http://oeis.org/A275973) ([L06 program](275/A275973.asm)): A binary sequence due to Harold Jeffreys.
 * [A275974](http://oeis.org/A275974) ([L19 program](275/A275974.asm)): Partial sums of the Jeffreys binary sequence A275973.
 * [A275989](http://oeis.org/A275989) ([L25 program](275/A275989.asm)): a(n) = prime(prime(n)+1) - prime(n).
+* [A275990](http://oeis.org/A275990) ([L19 program](275/A275990.asm)): a(n) = prime(prime(n)-1) - prime(n).
 * [A275995](http://oeis.org/A275995) ([L23 program](275/A275995.asm)): Denominators of coefficients in the asymptotic expansion of the logarithm of the central binomial coefficient.
 * [A276000](http://oeis.org/A276000) ([L12 program](276/A276000.asm)): Least k such that n! divides phi(k!) (k > 0).
 * [A276026](http://oeis.org/A276026) ([L06 program](276/A276026.asm)): a(n) = Sum_{k=0..7} (n + k)^2.
@@ -2044,7 +2048,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286264](http://oeis.org/A286264) ([L06 program](286/A286264.asm)): a(n) = 2*(ceiling((n^2)/2)+1) - 1.
 * [A286283](http://oeis.org/A286283) ([L04 program](286/A286283.asm)): a(n) = floor(7*n^2/48).
 * [A286298](http://oeis.org/A286298) ([L08 program](286/A286298.asm)): a(0) = 0, a(1) = 1; thereafter, a(2n) = a(n) + 1 + (n mod 2), a(2n+1) = a(n) + 2 - (n mod 2).
-* [A286357](http://oeis.org/A286357) ([L11 program](286/A286357.asm)): One more than the exponent of the highest power of 2 dividing sigma(n): a(n) = A001511(A000203(n)).
+* [A286357](http://oeis.org/A286357) ([L14 program](286/A286357.asm)): One more than the exponent of the highest power of 2 dividing sigma(n): a(n) = A001511(A000203(n)).
 * [A286387](http://oeis.org/A286387) ([L03 program](286/A286387.asm)): a(n) = A002487(n^2).
 * [A286429](http://oeis.org/A286429) ([L11 program](286/A286429.asm)): Highest elevation of an island above sea level in a number square.
 * [A286430](http://oeis.org/A286430) ([L13 program](286/A286430.asm)): Least volume of water to surround the largest possible island in a number square.

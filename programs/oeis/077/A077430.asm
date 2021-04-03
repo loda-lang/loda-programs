@@ -3,7 +3,11 @@
 
 add $0,1
 pow $0,2
-mov $1,$0
-mul $1,2
-log $1,10
+mov $1,-1
+mov $2,$0
+mul $2,2
+lpb $2
+  add $1,1
+  div $2,10
+lpe
 add $1,1

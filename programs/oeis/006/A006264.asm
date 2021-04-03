@@ -7,8 +7,12 @@ lpb $0
   add $4,1
   mov $1,$4
   mov $2,$4
-  log $2,2
-  mov $3,$2
+  mov $5,-1
+  lpb $2
+    div $2,2
+    add $5,1
+  lpe
+  mov $3,$5
   mul $3,2
 lpe
 mov $0,2

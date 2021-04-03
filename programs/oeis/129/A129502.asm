@@ -7,11 +7,16 @@ lpb $6
   mov $0,$7
   sub $6,1
   add $0,$6
-  trn $0,1
+  sub $0,1
   mov $4,$0
   mov $0,127
   add $4,1
-  log $4,2
+  mov $8,-1
+  lpb $4
+    div $4,2
+    add $8,1
+  lpe
+  mov $4,$8
   lpb $0
     mov $0,9
     mov $3,1

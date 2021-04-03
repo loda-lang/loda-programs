@@ -20,7 +20,9 @@ lpb $0
   div $5,5
   add $5,2
 lpe
-log $0,9
+lpb $0
+  div $0,9
+lpe
 div $5,$4
 add $0,$5
 mov $1,$0

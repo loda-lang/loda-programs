@@ -3,8 +3,12 @@
 
 add $0,1
 mov $3,$0
-log $3,2
-mov $1,$3
+mov $4,-1
+lpb $3
+  div $3,2
+  add $4,1
+lpe
+mov $1,$4
 lpb $0
   div $0,3
   sub $2,1

@@ -18,11 +18,11 @@ lpb $5
     mov $7,6
     mov $8,$0
     mov $0,8
-    add $8,7
     mov $2,$8
-    sub $2,6
+    add $2,1
     pow $2,6
     mov $6,2
+    add $8,7
     mul $8,8
     lpb $0
       div $0,$8

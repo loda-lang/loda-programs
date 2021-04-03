@@ -18,5 +18,10 @@ lpb $0
 lpe
 mul $1,2
 gcd $5,3
-log $1,$5
+mov $6,-1
+lpb $1
+  div $1,$5
+  add $6,1
+lpe
+mov $1,$6
 sub $1,2

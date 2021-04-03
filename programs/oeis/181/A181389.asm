@@ -5,9 +5,8 @@ mul $0,4
 mov $1,5
 mov $3,3
 lpb $0
-  sub $0,1
   mov $2,$0
-  sub $2,4
+  sub $2,5
   add $3,3
   trn $1,$3
   trn $2,1
