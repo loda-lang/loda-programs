@@ -4,8 +4,7 @@
 cal $0,40 ; The prime numbers.
 pow $0,5
 mul $0,4
-sub $0,238
 mov $1,$0
-sub $1,734
+sub $1,972
 div $1,4
 add $1,115

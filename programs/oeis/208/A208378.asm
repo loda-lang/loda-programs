@@ -11,7 +11,12 @@ mov $3,$0
 mul $3,6
 trn $3,3
 add $3,5
-log $1,$3
+mov $5,-1
+lpb $1
+  div $1,$3
+  add $5,1
+lpe
+mov $1,$5
 add $1,4
 mul $3,2
 add $2,$3
