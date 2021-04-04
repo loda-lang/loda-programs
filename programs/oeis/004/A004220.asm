@@ -9,6 +9,11 @@ lpb $0
   mov $0,0
   mov $1,$2
   mul $1,9
-  log $1,2
+  mov $3,-1
+  lpb $1
+    div $1,2
+    add $3,1
+  lpe
+  mov $1,$3
 lpe
 trn $1,7

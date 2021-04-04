@@ -3,8 +3,8 @@
 
 mov $4,$0
 cal $0,209981 ; Number of singular 2 X 2 matrices having all elements in {-n,...,n}.
-mul $0,2
 mov $1,$0
+mul $1,2
 div $1,16
 add $1,1
 mov $2,$4

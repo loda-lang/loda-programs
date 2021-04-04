@@ -11,8 +11,7 @@ mov $6,2
 lpb $0
   mov $0,$3
   sub $0,29
-  mov $3,$2
-  log $3,24
+  mov $3,$8
   sub $6,6
   add $0,$6
   mul $2,$1

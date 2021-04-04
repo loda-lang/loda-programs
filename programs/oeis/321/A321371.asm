@@ -5,7 +5,6 @@ mov $2,$0
 mul $0,2
 add $0,1
 cal $0,189378 ; n+[nr/s]+[nt/s]; r=2, s=(-1+sqrt(5))/2, t=(1+sqrt(5))/2.
-add $0,35
 mov $1,$0
-sub $1,34
+add $1,1
 add $1,$2

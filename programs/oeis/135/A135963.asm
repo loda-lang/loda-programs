@@ -4,6 +4,5 @@
 mov $2,$0
 cal $0,90909 ; Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
 bin $0,$2
-sub $0,1
 mov $1,$0
-add $1,1
+sub $0,1

@@ -11,10 +11,13 @@ lpb $7
   mov $2,$6
   mov $8,2
   lpb $0
-    trn $0,1
-    add $0,1
-    log $0,$8
-    add $2,$0
+    mov $9,-1
+    lpb $0
+      div $0,$8
+      add $9,1
+    lpe
+    mov $0,$9
+    add $2,$9
   lpe
   mov $4,$7
   mov $5,$2
