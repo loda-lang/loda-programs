@@ -7,6 +7,10 @@ mul $0,2
 add $0,$2
 pow $2,2
 add $3,$2
-log $3,11
-sub $0,$3
+mov $4,-1
+lpb $3
+  div $3,11
+  add $4,1
+lpe
+sub $0,$4
 mov $1,$0

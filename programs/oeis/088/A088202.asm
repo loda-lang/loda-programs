@@ -11,7 +11,12 @@ lpb $0
   add $3,$2
   mov $1,$3
   sub $1,1
-  log $3,4
+  mov $5,-1
+  lpb $3
+    div $3,4
+    add $5,1
+  lpe
+  mov $3,$5
 lpe
 add $1,1
 add $1,$4

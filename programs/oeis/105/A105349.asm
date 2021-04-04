@@ -11,11 +11,14 @@ lpb $2
   pow $0,2
   mov $3,4
   mul $3,$0
-  add $3,2
   pow $3,2
-  log $3,6
+  mov $8,-1
+  lpb $3
+    div $3,6
+    add $8,1
+  lpe
   mov $4,$2
-  mov $6,$3
+  mov $6,$8
   add $6,3
   div $6,2
   mov $5,$6

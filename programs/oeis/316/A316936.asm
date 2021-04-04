@@ -30,8 +30,12 @@ lpb $11
     sub $2,$2
     add $5,$3
     mov $10,$8
-    log $10,2
-    sub $5,$10
+    mov $12,-1
+    lpb $10
+      div $10,2
+      add $12,1
+    lpe
+    sub $5,$12
     mul $5,2
   lpe
   add $1,$5

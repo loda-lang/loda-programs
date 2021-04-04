@@ -4,6 +4,10 @@
 mov $2,$0
 add $2,2
 mov $0,$2
-log $2,2
-mod $0,$2
+mov $3,-1
+lpb $2
+  div $2,2
+  add $3,1
+lpe
+mod $0,$3
 mov $1,$0

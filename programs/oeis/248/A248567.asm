@@ -29,7 +29,12 @@ lpb $2
   lpe
   mov $1,1
   sub $2,1
-  log $5,2
+  mov $9,-1
+  lpb $5
+    div $5,2
+    add $9,1
+  lpe
+  mov $5,$9
   sub $5,2
 lpe
 mov $1,$5
