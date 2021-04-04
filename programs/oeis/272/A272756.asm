@@ -7,6 +7,11 @@ mul $2,2
 mov $1,$2
 lpb $1
   mul $1,$2
-  log $1,2
+  mov $3,-1
+  lpb $1
+    div $1,2
+    add $3,1
+  lpe
+  mov $1,$3
 lpe
 add $1,1

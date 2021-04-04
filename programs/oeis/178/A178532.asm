@@ -26,9 +26,12 @@ lpb $16
       mov $0,7
       add $3,$1
       add $7,$3
-      add $7,7
-      log $7,6
-      mov $2,$7
+      mov $17,-1
+      lpb $7
+        div $7,6
+        add $17,1
+      lpe
+      mov $2,$17
     lpe
     mov $3,3
     add $12,$2
