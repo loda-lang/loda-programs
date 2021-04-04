@@ -12,7 +12,12 @@ lpb $4
     add $5,1
     mov $2,$5
     mul $2,90
-    log $2,2
+    mov $6,-1
+    lpb $2
+      div $2,2
+      add $6,1
+    lpe
+    mov $2,$6
     sub $5,$5
     mov $0,$5
   lpe

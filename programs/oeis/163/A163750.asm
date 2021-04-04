@@ -10,5 +10,10 @@ lpb $0
   sub $0,1
   bin $0,2
   mov $1,$2
-  log $1,3
+  mov $3,-1
+  lpb $1
+    div $1,3
+    add $3,1
+  lpe
+  mov $1,$3
 lpe

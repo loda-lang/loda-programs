@@ -70,6 +70,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A250879](http://oeis.org/A250879) ([L40 program](250/A250879.asm)): Number of (2+1) X (n+1) 0..3 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing x(i,j)+x(i-1,j) in the j direction.
 * [A251091](http://oeis.org/A251091) ([L08 program](251/A251091.asm)): a(n) = n^2 / gcd(n+2, 4).
 * [A251260](http://oeis.org/A251260) ([L22 program](251/A251260.asm)): Expansion of (1 + 2*x + x^2 + x^3) / ((1 - x^2)^2 * (1 - x^3) * (1 - x^4)) in powers of x.
+* [A251269](http://oeis.org/A251269) ([L41 program](251/A251269.asm)): Number of (2+1) X (n+1) 0..1 arrays with no 2 X 2 subblock having x11-x00 less than x10-x01.
 * [A251418](http://oeis.org/A251418) ([L12 program](251/A251418.asm)): Floor((n^2+7n-23)/14).
 * [A251421](http://oeis.org/A251421) ([L04 program](251/A251421.asm)): Number of length n+2 0..1 arrays with the sum of the maximum minus twice the median plus the minimum of adjacent triples multiplied by some arrangement of +-1 equal to zero.
 * [A251599](http://oeis.org/A251599) ([L13 program](251/A251599.asm)): Centers of rows of the triangular array formed by the natural numbers.
@@ -168,14 +169,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254378](http://oeis.org/A254378) ([L22 program](254/A254378.asm)): Run lengths of A228495 (Characteristic function of the odd odious numbers).
 * [A254379](http://oeis.org/A254379) ([L11 program](254/A254379.asm)): Characteristic function of the even odious numbers (A128309).
 * [A254398](http://oeis.org/A254398) ([L14 program](254/A254398.asm)): Final digits of A237424 in decimal representation.
-* [A254407](http://oeis.org/A254407) ([L07 program](254/A254407.asm)): a(n) = n*(n+1)*(11*n+10)/6.
+* [A254407](http://oeis.org/A254407) ([L07 program](254/A254407.asm)): a(n) = n*(n+1)*(11*n +10)/6.
 * [A254460](http://oeis.org/A254460) ([L21 program](254/A254460.asm)): a(n) is the number of predecessors of the all-ones state of the binary cellular automaton on the n X n grid graph with edges joining diagonal neighbors as well as vertical and horizontal neighbors, whose local rule is f(i,j) = sum of the state at vertex (i,j) and the states at all of its neighbors mod 2.
 * [A254469](http://oeis.org/A254469) ([L07 program](254/A254469.asm)): Sixth partial sums of cubes (A000578).
 * [A254473](http://oeis.org/A254473) ([L13 program](254/A254473.asm)): 24-hedral numbers: a(n) = (2*n + 1)*(8*n^2 + 14*n + 7).
 * [A254474](http://oeis.org/A254474) ([L04 program](254/A254474.asm)): 30-gonal numbers: a(n) = n*(14*n-13).
 * [A254527](http://oeis.org/A254527) ([L05 program](254/A254527.asm)): Total number of points on a sphere when both poles are on an x by x grid where x=8*n+1.
 * [A254594](http://oeis.org/A254594) ([L29 program](254/A254594.asm)): Expansion of 1 / ((1 - x^2)^2 * (1 - x^3) * (1 - x^4)) in powers of x.
-* [A254609](http://oeis.org/A254609) ([L03 program](254/A254609.asm)): Triangle read by rows: T(n,k) = A243757(n)/(A243757(k)*A243757(n-k)).
+* [A254614](http://oeis.org/A254614) ([L06 program](254/A254614.asm)): Union of odd odious (A092246) and evil (A001969) numbers.
 * [A254626](http://oeis.org/A254626) ([L08 program](254/A254626.asm)): Indices of triangular numbers (A000217) that are also centered pentagonal numbers (A005891).
 * [A254627](http://oeis.org/A254627) ([L15 program](254/A254627.asm)): Indices of centered pentagonal numbers (A005891) that are also triangular numbers (A000217).
 * [A254640](http://oeis.org/A254640) ([L07 program](254/A254640.asm)): Third partial sums of sixth powers (A001014).
@@ -435,12 +436,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A258618](http://oeis.org/A258618) ([L06 program](258/A258618.asm)): a(n) = (4*n+9)*n^2.
 * [A258632](http://oeis.org/A258632) ([L18 program](258/A258632.asm)): Number of length 1 1..(n+1) arrays with every leading partial sum divisible by 2, 3, 5 or 7
 * [A258644](http://oeis.org/A258644) ([L06 program](258/A258644.asm)): Fourth arithmetic derivative of n.
-* [A258645](http://oeis.org/A258645) ([L07 program](258/A258645.asm)): Fifth arithmetic derivative of n.
-* [A258646](http://oeis.org/A258646) ([L07 program](258/A258646.asm)): Sixth arithmetic derivative of n.
-* [A258647](http://oeis.org/A258647) ([L07 program](258/A258647.asm)): Seventh arithmetic derivative of n.
-* [A258648](http://oeis.org/A258648) ([L07 program](258/A258648.asm)): Eighth arithmetic derivative of n.
-* [A258649](http://oeis.org/A258649) ([L07 program](258/A258649.asm)): Ninth arithmetic derivative of n.
-* [A258650](http://oeis.org/A258650) ([L07 program](258/A258650.asm)): Tenth arithmetic derivative of n.
+* [A258645](http://oeis.org/A258645) ([L06 program](258/A258645.asm)): Fifth arithmetic derivative of n.
+* [A258646](http://oeis.org/A258646) ([L06 program](258/A258646.asm)): Sixth arithmetic derivative of n.
+* [A258647](http://oeis.org/A258647) ([L06 program](258/A258647.asm)): Seventh arithmetic derivative of n.
+* [A258648](http://oeis.org/A258648) ([L06 program](258/A258648.asm)): Eighth arithmetic derivative of n.
+* [A258649](http://oeis.org/A258649) ([L06 program](258/A258649.asm)): Ninth arithmetic derivative of n.
+* [A258650](http://oeis.org/A258650) ([L06 program](258/A258650.asm)): Tenth arithmetic derivative of n.
 * [A258703](http://oeis.org/A258703) ([L13 program](258/A258703.asm)): a(n) = floor(n/sqrt(2) - 1/2).
 * [A258717](http://oeis.org/A258717) ([L09 program](258/A258717.asm)): If n even then 2*n^2-4*n else 2*n^2-4*n-3.
 * [A258721](http://oeis.org/A258721) ([L07 program](258/A258721.asm)): a(n) = 24*n^2 + 52*n + 29.
@@ -1559,6 +1560,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276087](http://oeis.org/A276087) ([L04 program](276/A276087.asm)): a(n) = A276086(A276086(n)).
 * [A276134](http://oeis.org/A276134) ([L07 program](276/A276134.asm)): a(5n) = a(n), a(5n+1) = a(5n+2) = a(5n+3) = a(5n+4) = a(n) + 1, a(0) = 0.
 * [A276150](http://oeis.org/A276150) ([L29 program](276/A276150.asm)): Sum of digits when n is written in primorial base (A049345); minimal number of primorials (A002110) that add to n.
+* [A276153](http://oeis.org/A276153) ([L32 program](276/A276153.asm)): The most significant digit when n is written in primorial base (A049345).
 * [A276191](http://oeis.org/A276191) ([L14 program](276/A276191.asm)): Sum of the squares of the digits of the base-5 representation of n.
 * [A276233](http://oeis.org/A276233) ([L08 program](276/A276233.asm)): a(n) = (n+256)/gcd(n,256).
 * [A276234](http://oeis.org/A276234) ([L10 program](276/A276234.asm)): a(n) = n/gcd(n, 256).
@@ -2041,6 +2043,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286016](http://oeis.org/A286016) ([L21 program](286/A286016.asm)): Signed continued fraction expansion with all signs negative of tanh(1).
 * [A286033](http://oeis.org/A286033) ([L09 program](286/A286033.asm)): a(n) = binomial(2*n-2, n-1) + (-1)^n.
 * [A286045](http://oeis.org/A286045) ([L07 program](286/A286045.asm)): Positions of 0 in A286044; complement of A003157.
+* [A286063](http://oeis.org/A286063) ([L24 program](286/A286063.asm)): Fixed point of the mapping 00->001, 1->100, starting with 00.
 * [A286100](http://oeis.org/A286100) ([L31 program](286/A286100.asm)): Square array A(n,k): If n = k, then A(n,k) = n, otherwise 0, read by antidiagonals as A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), etc.
 * [A286183](http://oeis.org/A286183) ([L11 program](286/A286183.asm)): Number of connected induced (non-null) subgraphs of the antiprism graph with 2n nodes.
 * [A286186](http://oeis.org/A286186) ([L11 program](286/A286186.asm)): Number of connected induced (non-null) subgraphs of the friendship graph with 2n+1 nodes.

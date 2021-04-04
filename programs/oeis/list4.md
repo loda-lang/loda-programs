@@ -188,7 +188,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204549](http://oeis.org/A204549) ([L10 program](204/A204549.asm)): Symmetric matrix: f(i,j)=floor[(i+j+5)/4]-floor[(i+j+3)/4], by (constant) antidiagonals.
 * [A204551](http://oeis.org/A204551) ([L07 program](204/A204551.asm)): Symmetric matrix: f(i,j)=floor[(2i+2j+1)/4]-floor[(i+j)/4], by (constant) antidiagonals.
 * [A204553](http://oeis.org/A204553) ([L10 program](204/A204553.asm)): Symmetric matrix: f(i,j)=floor[(2i+2j+2)/4]-floor[(i+j+1)/4], by (constant) antidiagonals.
-* [A204556](http://oeis.org/A204556) ([L25 program](204/A204556.asm)): Left edge of the triangle A045975.
+* [A204556](http://oeis.org/A204556) ([L24 program](204/A204556.asm)): Left edge of the triangle A045975.
 * [A204557](http://oeis.org/A204557) ([L22 program](204/A204557.asm)): Right edge of the triangle A045975.
 * [A204558](http://oeis.org/A204558) ([L11 program](204/A204558.asm)): Row sums of the triangle A045975.
 * [A204560](http://oeis.org/A204560) ([L08 program](204/A204560.asm)): Symmetric matrix: f(i,j)=floor[(2i+2j+4)/4]-floor[(i+j+2)/4], by (constant) antidiagonals.
@@ -1001,7 +1001,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A216522](http://oeis.org/A216522) ([L15 program](216/A216522.asm)): Integers of the form 2*x + 3*y with nonnegative x and y, with repetitions.
 * [A216606](http://oeis.org/A216606) ([L14 program](216/A216606.asm)): Decimal expansion of 360/7.
 * [A216607](http://oeis.org/A216607) ([L15 program](216/A216607.asm)): The sequence used to represent partition binary diagram as an array.
-* [A216761](http://oeis.org/A216761) ([L12 program](216/A216761.asm)): n * floor(log_2(n)) * floor(log_2(log_2(n))) * floor(log_2(log_2(log_2(n)))) ....
+* [A216761](http://oeis.org/A216761) ([L17 program](216/A216761.asm)): n * floor(log_2(n)) * floor(log_2(log_2(n))) * floor(log_2(log_2(log_2(n)))) ....
 * [A216778](http://oeis.org/A216778) ([L06 program](216/A216778.asm)): Number of derangements on n elements with an even number of cycles.
 * [A216779](http://oeis.org/A216779) ([L04 program](216/A216779.asm)): Number of derangements on n elements with an odd number of cycles.
 * [A216844](http://oeis.org/A216844) ([L07 program](216/A216844.asm)): 4k^2-8k+2 interleaved with 4k^2-4k+2 for k>=0.
@@ -1531,6 +1531,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228603](http://oeis.org/A228603) ([L21 program](228/A228603.asm)): a(1) = 9, a(2) = 44, a(n) = 4*(a(n-1) + a(n-2)) (n >=3).
 * [A228609](http://oeis.org/A228609) ([L41 program](228/A228609.asm)): Partial sums of the cubes of the tribonacci sequence A000073.
 * [A228612](http://oeis.org/A228612) ([L15 program](228/A228612.asm)): Number of (possibly overlapping) occurrences of the subword given by the binary expansion of n in all binary words of length n.
+* [A228620](http://oeis.org/A228620) ([L04 program](228/A228620.asm)): a(n) = n - phi(n) + mu(n).
 * [A228661](http://oeis.org/A228661) ([L10 program](228/A228661.asm)): Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
 * [A228693](http://oeis.org/A228693) ([L11 program](228/A228693.asm)): Largest number of maximal independent sets of nodes in any tree on n nodes.
 * [A228705](http://oeis.org/A228705) ([L23 program](228/A228705.asm)): Expansion of (1-2*x+4*x^2-2*x^3+x^4)/((1-x)^4*(1+x^2)^2).
@@ -2114,7 +2115,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241892](http://oeis.org/A241892) ([L20 program](241/A241892.asm)): Total number of 2 X 2 squares appearing in the Thue-Morse sequence logical matrices (1, 0 version) after n stages.
 * [A241893](http://oeis.org/A241893) ([L04 program](241/A241893.asm)): The total number of rectangles appearing in the Thue-Morse sequence logical matrices (1, 0 version) after n stages.
 * [A241894](http://oeis.org/A241894) ([L10 program](241/A241894.asm)): The total number of squares and rectangles appearing in the Thue-Morse sequence (1, 0 version) logical matrices after n stages.
-* [A241946](http://oeis.org/A241946) ([L43 program](241/A241946.asm)): Numbers n equal to the sum of all the four-digit numbers formed without repetition from the digits of n.
 * [A241976](http://oeis.org/A241976) ([L12 program](241/A241976.asm)): Values of k such that k^2 + (k+3)^2 is a square.
 * [A241979](http://oeis.org/A241979) ([L10 program](241/A241979.asm)): (0,1) sequence such that lengths of three consecutive runs are always distinct.
 * [A242026](http://oeis.org/A242026) ([L09 program](242/A242026.asm)): Number of non-palindromic n-tuples of 4 distinct elements.
@@ -2266,7 +2266,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244735](http://oeis.org/A244735) ([L05 program](244/A244735.asm)): (Prime(n) mod 5) mod 2.
 * [A244738](http://oeis.org/A244738) ([L07 program](244/A244738.asm)): (Prime(n) mod 5) mod 3.
 * [A244750](http://oeis.org/A244750) ([L13 program](244/A244750.asm)): 0-additive sequence: a(n) is the smallest number larger than a(n-1) which is not the sum of any subset of earlier terms, with initial values {0, 2, 3, 4}.
-* [A244762](http://oeis.org/A244762) ([L09 program](244/A244762.asm)): (5*3^n-2*n-1)/4.
+* [A244762](http://oeis.org/A244762) ([L09 program](244/A244762.asm)): a(n) = (5*3^n-2*n-1)/4.
 * [A244796](http://oeis.org/A244796) ([L05 program](244/A244796.asm)): Number of moduli m such that (prime(n) mod m) = 1.
 * [A244797](http://oeis.org/A244797) ([L05 program](244/A244797.asm)): Number of moduli m such that (prime(n) mod m) = 2.
 * [A244802](http://oeis.org/A244802) ([L05 program](244/A244802.asm)): The 60 degree spoke (or ray) of a hexagonal spiral of Ulam.
@@ -2524,7 +2524,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248517](http://oeis.org/A248517) ([L07 program](248/A248517.asm)): Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
 * [A248522](http://oeis.org/A248522) ([L17 program](248/A248522.asm)): Beatty sequence for 1/(1-exp(-1/3)): a(n) = floor(n/(1-exp(-1/3))).
 * [A248533](http://oeis.org/A248533) ([L17 program](248/A248533.asm)): Number of length n+3 0..4 arrays with every four consecutive terms having the sum of some three elements equal to three times the fourth.
-* [A248567](http://oeis.org/A248567) ([L36 program](248/A248567.asm)): Numbers k such that A248565(k+1) = A248565(k) + 2.
+* [A248567](http://oeis.org/A248567) ([L41 program](248/A248567.asm)): Numbers k such that A248565(k+1) = A248565(k) + 2.
 * [A248572](http://oeis.org/A248572) ([L03 program](248/A248572.asm)): a(n) = 29*n + 1.
 * [A248575](http://oeis.org/A248575) ([L14 program](248/A248575.asm)): Rounded sums of the non-integer cube roots of n, as partitioned by the integer roots: round[sum(j from n^3+1 to (n+1)^3-1, j^(1/3))].
 * [A248598](http://oeis.org/A248598) ([L56 program](248/A248598.asm)): a(n) = (2*n+23)*n*(n-1), a coefficient appearing in the formula a(n)*Pi/324+n+1 giving the average number of regions into which n random planes divide the cube.
