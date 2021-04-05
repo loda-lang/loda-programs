@@ -12,15 +12,8 @@ lpb $4
   gcd $0,2
   div $2,2
   add $0,$2
-  mov $6,$0
-  pow $6,2
-  mov $3,$6
-  div $3,2
-  add $3,1
-  mov $0,$3
-  add $0,4
-  mov $6,$0
-  sub $6,5
-  div $6,2
-  add $1,$6
+  mov $3,$0
+  pow $3,2
+  div $3,4
+  add $1,$3
 lpe

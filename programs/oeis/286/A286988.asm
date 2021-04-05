@@ -3,5 +3,5 @@
 
 add $0,1
 mul $0,2
-cal $0,195128 ; a(n) = 2*n - floor(n*sqrt(1/2)). WebCam
+cal $0,195128 ; a(n) = 2*n - floor(n*sqrt(1/2)).
 mov $1,$0

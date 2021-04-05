@@ -10,7 +10,12 @@ lpb $2
   add $4,$1
   mul $2,$4
   add $1,$2
-  log $1,4
+  mov $5,-1
+  lpb $1
+    div $1,4
+    add $5,1
+  lpe
+  mov $1,$5
   add $1,4
   sub $2,$2
 lpe

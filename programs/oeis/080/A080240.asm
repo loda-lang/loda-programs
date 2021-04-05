@@ -20,7 +20,12 @@ sub $1,2
 lpb $0
   mov $0,$5
   mul $1,4
-  log $1,5
+  mov $6,-1
+  lpb $1
+    div $1,5
+    add $6,1
+  lpe
+  mov $1,$6
 lpe
 sub $1,2
 add $1,$2

@@ -19,6 +19,10 @@ lpb $3
     sub $7,$8
   lpe
   add $7,1
-  log $7,$0
-  add $1,$7
+  mov $9,-1
+  lpb $7
+    div $7,$0
+    add $9,1
+  lpe
+  add $1,$9
 lpe

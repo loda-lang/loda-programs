@@ -15,8 +15,12 @@ lpb $4
   lpb $0
     mov $0,$5
     mov $3,$6
-    log $3,2
-    mov $6,$3
+    mov $7,-1
+    lpb $3
+      div $3,2
+      add $7,1
+    lpe
+    mov $6,$7
   lpe
   add $1,$6
 lpe

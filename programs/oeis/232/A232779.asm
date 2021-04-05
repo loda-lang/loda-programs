@@ -3,9 +3,12 @@
 
 mov $1,22
 lpb $0
-  trn $0,1
-  add $0,1
   add $1,$0
-  log $0,2
+  mov $2,-1
+  lpb $0
+    div $0,2
+    add $2,1
+  lpe
+  mov $0,$2
 lpe
 sub $1,22
