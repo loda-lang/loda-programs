@@ -1604,6 +1604,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276856](http://oeis.org/A276856) ([L19 program](276/A276856.asm)): First differences of the Beatty sequence A022840 for sqrt(6).
 * [A276857](http://oeis.org/A276857) ([L26 program](276/A276857.asm)): First differences of the Beatty sequence A022841 for sqrt(7).
 * [A276858](http://oeis.org/A276858) ([L26 program](276/A276858.asm)): First differences of the Beatty sequence A022842 for sqrt(8).
+* [A276859](http://oeis.org/A276859) ([L38 program](276/A276859.asm)): First differences of the Beatty sequence A022843 for e.
 * [A276860](http://oeis.org/A276860) ([L31 program](276/A276860.asm)): First differences of the Beatty sequence A276853 for 2*e.
 * [A276862](http://oeis.org/A276862) ([L29 program](276/A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
 * [A276863](http://oeis.org/A276863) ([L25 program](276/A276863.asm)): First differences of the Beatty sequence A276854 for 1 + sqrt(5).
@@ -1828,6 +1829,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280818](http://oeis.org/A280818) ([L03 program](280/A280818.asm)): a(0)=1; for n > 0, if 4n+1 is prime, then a(n)=4n+1, otherwise a(n)=(4n+1)/LPF(4n+1).
 * [A280931](http://oeis.org/A280931) ([L17 program](280/A280931.asm)): a(n) = 2*F(n-1) + 9*F(n-4) + 9*F(n-7) where n >= 7 and F = A000045.
 * [A281006](http://oeis.org/A281006) ([L21 program](281/A281006.asm)): a(n) = A000203(n) - A052928(n-1).
+* [A281023](http://oeis.org/A281023) ([L22 program](281/A281023.asm)): Partial sums of A067392.
 * [A281026](http://oeis.org/A281026) ([L05 program](281/A281026.asm)): a(n) = floor(3*n*(n+1)/4).
 * [A281151](http://oeis.org/A281151) ([L05 program](281/A281151.asm)): a(n) = floor(4*n*(n+1)/5).
 * [A281166](http://oeis.org/A281166) ([L22 program](281/A281166.asm)): a(n) = 3*a(n-1) - 3*a(n-2) + 2*a(n-3) for n>2, a(0)=a(1)=1, a(2)=3.
@@ -1898,7 +1900,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A282600](http://oeis.org/A282600) ([L08 program](282/A282600.asm)): a(n) = Sum_(k=1..phi(n)) floor(d_k/2) where d_k are the totatives of n.
 * [A282612](http://oeis.org/A282612) ([L04 program](282/A282612.asm)): Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to row permutations.
 * [A282613](http://oeis.org/A282613) ([L14 program](282/A282613.asm)): Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to rotations.
-* [A282622](http://oeis.org/A282622) ([L04 program](282/A282622.asm)): Number of digits of the representation of n in the alternating sexagesimal-decimal number system.
+* [A282622](http://oeis.org/A282622) ([L07 program](282/A282622.asm)): Number of digits of the representation of n in the alternating sexagesimal-decimal number system.
 * [A282671](http://oeis.org/A282671) ([L04 program](282/A282671.asm)): Twice composite numbers.
 * [A282702](http://oeis.org/A282702) ([L12 program](282/A282702.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=4, a(1)=11.
 * [A282703](http://oeis.org/A282703) ([L13 program](282/A282703.asm)): a(n) = 3*a(n-1) + a(n-2), with a(0)=7, a(1)=26.
@@ -2046,7 +2048,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286033](http://oeis.org/A286033) ([L09 program](286/A286033.asm)): a(n) = binomial(2*n-2, n-1) + (-1)^n.
 * [A286045](http://oeis.org/A286045) ([L07 program](286/A286045.asm)): Positions of 0 in A286044; complement of A003157.
 * [A286063](http://oeis.org/A286063) ([L24 program](286/A286063.asm)): Fixed point of the mapping 00->001, 1->100, starting with 00.
-* [A286100](http://oeis.org/A286100) ([L31 program](286/A286100.asm)): Square array A(n,k): If n = k, then A(n,k) = n, otherwise 0, read by antidiagonals as A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), etc.
+* [A286100](http://oeis.org/A286100) ([L29 program](286/A286100.asm)): Square array A(n,k): If n = k, then A(n,k) = n, otherwise 0, read by antidiagonals as A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), etc.
 * [A286183](http://oeis.org/A286183) ([L11 program](286/A286183.asm)): Number of connected induced (non-null) subgraphs of the antiprism graph with 2n nodes.
 * [A286186](http://oeis.org/A286186) ([L11 program](286/A286186.asm)): Number of connected induced (non-null) subgraphs of the friendship graph with 2n+1 nodes.
 * [A286191](http://oeis.org/A286191) ([L18 program](286/A286191.asm)): a(n) = (2^n-1)^2 + 2*n.
@@ -2572,7 +2574,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A294774](http://oeis.org/A294774) ([L04 program](294/A294774.asm)): a(n) = 2*n^2 + 2*n + 5.
 * [A294790](http://oeis.org/A294790) ([L06 program](294/A294790.asm)): Subtract n from partial sums of partial sums of Catalan numbers.
 * [A294924](http://oeis.org/A294924) ([L24 program](294/A294924.asm)): Numbers n such that the whole sequence of the first n terms of A293699 is a palindrome.
-* [A294934](http://oeis.org/A294934) ([L03 program](294/A294934.asm)): Characteristic function for deficient numbers (A005100): a(n) = 1 if A001065(n) < n, 0 otherwise.
+* [A294934](http://oeis.org/A294934) ([L07 program](294/A294934.asm)): Characteristic function for deficient numbers (A005100): a(n) = 1 if A001065(n) < n, 0 otherwise.
 * [A294935](http://oeis.org/A294935) ([L04 program](294/A294935.asm)): Characteristic function for nonabundant numbers (A263837): a(n) = 1 if A001065(n) <= n, 0 otherwise.
 * [A294936](http://oeis.org/A294936) ([L09 program](294/A294936.asm)): Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
 * [A294937](http://oeis.org/A294937) ([L03 program](294/A294937.asm)): Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
@@ -2612,7 +2614,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A295822](http://oeis.org/A295822) ([L27 program](295/A295822.asm)): Number of coprime pairs (a,b) with -n <= a <= n, -3 <= b <= 3.
 * [A295866](http://oeis.org/A295866) ([L14 program](295/A295866.asm)): Number of decimal digits in the number of partitions of n.
 * [A295869](http://oeis.org/A295869) ([L06 program](295/A295869.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 8.
-* [A295884](http://oeis.org/A295884) ([L20 program](295/A295884.asm)): Number of exponents larger than 3 in the prime factorization of n.
+* [A295884](http://oeis.org/A295884) ([L03 program](295/A295884.asm)): Number of exponents larger than 3 in the prime factorization of n.
 * [A295889](http://oeis.org/A295889) ([L04 program](295/A295889.asm)): a(n) = 1 if binary weights of n and 3n have the same parity, 0 otherwise.
 * [A295890](http://oeis.org/A295890) ([L03 program](295/A295890.asm)): a(n) = 1 if binary weights of n and 3n have different parity, 0 otherwise; a(n) = A010060(n) XOR A010060(3n).
 * [A295896](http://oeis.org/A295896) ([L17 program](295/A295896.asm)): a(n) = 1 if there are no odd runs of 1's in the binary expansion of n followed by a 0 to their right, 0 otherwise.

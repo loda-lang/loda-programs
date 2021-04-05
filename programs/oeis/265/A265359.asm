@@ -11,6 +11,10 @@ lpb $3
   cal $0,216607 ; The sequence used to represent partition binary diagram as an array.
   add $0,4
   mov $2,5
-  log $2,$0
-  add $1,$2
+  mov $5,-1
+  lpb $2
+    div $2,$0
+    add $5,1
+  lpe
+  add $1,$5
 lpe

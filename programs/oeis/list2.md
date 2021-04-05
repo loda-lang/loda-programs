@@ -373,7 +373,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A103164](http://oeis.org/A103164) ([L16 program](103/A103164.asm)): Integers but with the primes squared.
 * [A103168](http://oeis.org/A103168) ([L08 program](103/A103168.asm)): a(n) = remainder when (n written backwards) is divided by n.
 * [A103177](http://oeis.org/A103177) ([L12 program](103/A103177.asm)): (7*3^n + 2n + 5)/4.
-* [A103192](http://oeis.org/A103192) ([L11 program](103/A103192.asm)): Trajectory of 1 under repeated application of the function n -> A102370(n).
 * [A103196](http://oeis.org/A103196) ([L04 program](103/A103196.asm)): a(n) = (1/9)(2^(n+3)-(-1)^n(3n-1)).
 * [A103202](http://oeis.org/A103202) ([L17 program](103/A103202.asm)): A102370 sorted.
 * [A103204](http://oeis.org/A103204) ([L05 program](103/A103204.asm)): a(1) = 2, a(2) = 4; a(n) = 2*a(n-1) - 1.
@@ -2587,7 +2586,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130249](http://oeis.org/A130249) ([L06 program](130/A130249.asm)): Maximal index k of a Jacobsthal number such that A001045(k)<=n (the 'lower' Jacobsthal inverse).
 * [A130250](http://oeis.org/A130250) ([L07 program](130/A130250.asm)): Minimal index k of a Jacobsthal number such that A001045(k) >= n (the 'upper' Jacobsthal inverse).
 * [A130251](http://oeis.org/A130251) ([L12 program](130/A130251.asm)): Partial sums of A130249.
-* [A130252](http://oeis.org/A130252) ([L21 program](130/A130252.asm)): Partial sums of A130250.
+* [A130252](http://oeis.org/A130252) ([L25 program](130/A130252.asm)): Partial sums of A130250.
 * [A130253](http://oeis.org/A130253) ([L07 program](130/A130253.asm)): Number of Jacobsthal numbers (A001045) <=n.
 * [A130255](http://oeis.org/A130255) ([L15 program](130/A130255.asm)): Maximal index k of an odd Fibonacci number (A001519) such that A001519(k) = Fibonacci(2k-1) <= n (the 'lower' odd Fibonacci Inverse).
 * [A130256](http://oeis.org/A130256) ([L07 program](130/A130256.asm)): Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) >= n (the 'upper' odd Fibonacci Inverse).
@@ -3872,7 +3871,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140280](http://oeis.org/A140280) ([L03 program](140/A140280.asm)): Product of digits of values in Pascal's triangle, by rows.
 * [A140282](http://oeis.org/A140282) ([L04 program](140/A140282.asm)): Numbers k such that A000330(k) is multiple of 3.
 * [A140298](http://oeis.org/A140298) ([L17 program](140/A140298.asm)): a(0)=1; a(3n+1) = a(3n)+1, a(3n+2) = a(3n+1) + a(3n) (=3*A000244), a(3n+3) = a(3n+2) + a(3n) (=A003462(n+2)).
-* [A140299](http://oeis.org/A140299) ([L63 program](140/A140299.asm)): a(n) = A100626(n+1)/A100626(n).
+* [A140299](http://oeis.org/A140299) ([L04 program](140/A140299.asm)): a(n) = A100626(n+1)/A100626(n).
 * [A140303](http://oeis.org/A140303) ([L03 program](140/A140303.asm)): Triangle T(n,k) = 3^(n-k) read by rows.
 * [A140313](http://oeis.org/A140313) ([L20 program](140/A140313.asm)): First differences of A140298.
 * [A140318](http://oeis.org/A140318) ([L18 program](140/A140318.asm)): Period 18: repeat 0, 1, -1, 1, 0, -1, 1, -1, 0, 0, -1, 1, -1, 0, 1, -1, 1, 0.

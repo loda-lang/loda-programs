@@ -12,7 +12,12 @@ lpb $0
   trn $0,$2
   gcd $3,$4
   mul $1,$3
-  log $1,3
+  mov $5,-1
+  lpb $1
+    div $1,3
+    add $5,1
+  lpe
+  mov $1,$5
 lpe
 add $1,1
 trn $1,2

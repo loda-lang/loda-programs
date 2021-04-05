@@ -4,10 +4,14 @@
 mov $2,$0
 mul $2,$0
 mov $3,$2
-add $3,2
 lpb $0
   mul $3,27
   mov $0,$3
-  log $0,8
+  mov $4,-1
+  lpb $0
+    div $0,8
+    add $4,1
+  lpe
+  mov $0,$4
 lpe
 mov $1,$0

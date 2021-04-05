@@ -4,5 +4,8 @@
 add $0,1
 mul $0,16
 add $0,2
-log $0,23
-mov $1,$0
+mov $1,-1
+lpb $0
+  div $0,23
+  add $1,1
+lpe
