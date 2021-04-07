@@ -426,6 +426,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002699](http://oeis.org/A002699) ([L04 program](002/A002699.asm)): a(n) = n*2^(2*n-1).
 * [A002700](http://oeis.org/A002700) ([L17 program](002/A002700.asm)): Coefficients of Chebyshev polynomials: n*(2*n+1) * 4^(n-1).
 * [A002717](http://oeis.org/A002717) ([L08 program](002/A002717.asm)): a(n) = floor(n(n+2)(2n+1)/8).
+* [A002734](http://oeis.org/A002734) ([L03 program](002/A002734.asm)): Remove squares!
 * [A002736](http://oeis.org/A002736) ([L06 program](002/A002736.asm)): Apéry numbers: a(n) = n^2*C(2n,n).
 * [A002737](http://oeis.org/A002737) ([L09 program](002/A002737.asm)): a(n) = Sum_{j=0..n} (n+j)*binomial(n+j,j).
 * [A002738](http://oeis.org/A002738) ([L07 program](002/A002738.asm)): Coefficients for extrapolation.
@@ -852,7 +853,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005728](http://oeis.org/A005728) ([L04 program](005/A005728.asm)): Number of fractions in Farey series of order n.
 * [A005744](http://oeis.org/A005744) ([L10 program](005/A005744.asm)): G.f.: x*(1+x-x^2)/((1-x)^4*(1+x)).
 * [A005752](http://oeis.org/A005752) ([L15 program](005/A005752.asm)): a(n) = n^2 + n*floor(n*tau) - floor(n*tau)^2.
-* [A005766](http://oeis.org/A005766) ([L23 program](005/A005766.asm)): a(n) = cost of minimal multiplication-cost addition chain for n.
+* [A005766](http://oeis.org/A005766) ([L22 program](005/A005766.asm)): a(n) = cost of minimal multiplication-cost addition chain for n.
 * [A005803](http://oeis.org/A005803) ([L04 program](005/A005803.asm)): Second-order Eulerian numbers: a(n) = 2^n - 2*n.
 * [A005807](http://oeis.org/A005807) ([L03 program](005/A005807.asm)): Sum of adjacent Catalan numbers.
 * [A005809](http://oeis.org/A005809) ([L03 program](005/A005809.asm)): a(n) = binomial(3n,n).
@@ -1121,6 +1122,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007913](http://oeis.org/A007913) ([L24 program](007/A007913.asm)): Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 * [A007917](http://oeis.org/A007917) ([L06 program](007/A007917.asm)): Version 1 of the "previous prime" function: largest prime <= n.
 * [A007918](http://oeis.org/A007918) ([L03 program](007/A007918.asm)): Least prime >= n (version 1 of the "next prime" function).
+* [A007920](http://oeis.org/A007920) ([L04 program](007/A007920.asm)): Smallest number k such that n + k is prime.
 * [A007929](http://oeis.org/A007929) ([L06 program](007/A007929.asm)): Odd numbers containing an even digit.
 * [A007945](http://oeis.org/A007945) ([L08 program](007/A007945.asm)): Expansion of (2-x-2*x^2)/((1-x)*(1-x+x^2)).
 * [A007947](http://oeis.org/A007947) ([L28 program](007/A007947.asm)): Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
@@ -1667,7 +1669,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011662](http://oeis.org/A011662) ([L03 program](011/A011662.asm)): A binary m-sequence: expansion of reciprocal of x^5 + x^2 + 1.
 * [A011663](http://oeis.org/A011663) ([L03 program](011/A011663.asm)): A binary m-sequence: expansion of reciprocal of x^5+x^4+x^3+x+1.
 * [A011664](http://oeis.org/A011664) ([L06 program](011/A011664.asm)): A binary m-sequence: expansion of reciprocal of x^5+x^3+1.
-* [A011665](http://oeis.org/A011665) ([L11 program](011/A011665.asm)): A binary m-sequence: expansion of reciprocal of x^5+x^4+x^3+x^2+1.
+* [A011665](http://oeis.org/A011665) ([L15 program](011/A011665.asm)): A binary m-sequence: expansion of reciprocal of x^5+x^4+x^3+x^2+1.
 * [A011671](http://oeis.org/A011671) ([L14 program](011/A011671.asm)): A binary m-sequence: expansion of reciprocal of x^6+x^5+x^4+x^2+1.
 * [A011672](http://oeis.org/A011672) ([L04 program](011/A011672.asm)): Expansion of reciprocal of x^6+x^3+1 (mod 2).
 * [A011693](http://oeis.org/A011693) ([L10 program](011/A011693.asm)): A binary m-sequence: expansion of reciprocal of x^8+x^5+x^4+x^3+1.
@@ -2836,7 +2838,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022960](http://oeis.org/A022960) ([L03 program](022/A022960.asm)): 4-n.
 * [A022961](http://oeis.org/A022961) ([L03 program](022/A022961.asm)): 5-n.
 * [A022962](http://oeis.org/A022962) ([L03 program](022/A022962.asm)): 6-n.
-* [A022963](http://oeis.org/A022963) ([L04 program](022/A022963.asm)): 7-n.
+* [A022963](http://oeis.org/A022963) ([L03 program](022/A022963.asm)): 7-n.
 * [A022964](http://oeis.org/A022964) ([L03 program](022/A022964.asm)): 8-n.
 * [A022965](http://oeis.org/A022965) ([L03 program](022/A022965.asm)): 9-n.
 * [A022966](http://oeis.org/A022966) ([L03 program](022/A022966.asm)): 10-n.
@@ -3756,7 +3758,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031904](http://oeis.org/A031904) ([L06 program](031/A031904.asm)): a(n) = prime(9*n - 4).
 * [A031905](http://oeis.org/A031905) ([L40 program](031/A031905.asm)): a(n) = prime(10*n - 4).
 * [A031906](http://oeis.org/A031906) ([L03 program](031/A031906.asm)): a(n) = prime(6*n - 5).
-* [A031907](http://oeis.org/A031907) ([L07 program](031/A031907.asm)): a(n) = prime(7*n - 5).
+* [A031907](http://oeis.org/A031907) ([L05 program](031/A031907.asm)): a(n) = prime(7*n - 5).
 * [A031940](http://oeis.org/A031940) ([L09 program](031/A031940.asm)): Length of longest legal domino snake using full set of dominoes up to [n:n].
 * [A031954](http://oeis.org/A031954) ([L05 program](031/A031954.asm)): n-th number in which the number of distinct base 9 digits is 2.
 * [A031987](http://oeis.org/A031987) ([L08 program](031/A031987.asm)): n-th number in which the number of distinct base 10 digits is 5.
@@ -4720,6 +4722,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040406](http://oeis.org/A040406) ([L41 program](040/A040406.asm)): Continued fraction for sqrt(427).
 * [A040413](http://oeis.org/A040413) ([L09 program](040/A040413.asm)): Continued fraction for sqrt(434).
 * [A040414](http://oeis.org/A040414) ([L06 program](040/A040414.asm)): Continued fraction for sqrt(435).
+* [A040418](http://oeis.org/A040418) ([L06 program](040/A040418.asm)): Continued fraction for sqrt(439).
 * [A040419](http://oeis.org/A040419) ([L08 program](040/A040419.asm)): Continued fraction for sqrt(440).
 * [A040420](http://oeis.org/A040420) ([L03 program](040/A040420.asm)): Continued fraction for sqrt(442).
 * [A040421](http://oeis.org/A040421) ([L04 program](040/A040421.asm)): Continued fraction for sqrt(443).
@@ -5021,6 +5024,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044911](http://oeis.org/A044911) ([L49 program](044/A044911.asm)): Numbers n such that base 10 run lengths alternate: odd, even, odd,...
 * [A044932](http://oeis.org/A044932) ([L07 program](044/A044932.asm)): a(n)=so-se, where so(se)=sum of odd(even) base 10 run lengths of n.
 * [A044950](http://oeis.org/A044950) ([L34 program](044/A044950.asm)): Runs of odd length in the base 10 representation of n.
+* [A044966](http://oeis.org/A044966) ([L10 program](044/A044966.asm)): Numbers n with property that in base 3 representation the numbers of 0's and 1's are 0 and 1, respectively.
 * [A045319](http://oeis.org/A045319) ([L09 program](045/A045319.asm)): Primes congruent to {1, 2, 3, 4} mod 5.
 * [A045344](http://oeis.org/A045344) ([L09 program](045/A045344.asm)): Primes congruent to {1, 2} mod 3.
 * [A045412](http://oeis.org/A045412) ([L04 program](045/A045412.asm)): a(1)=3; for n > 1, a(n) = a(n-1) + 1 if n is already in the sequence, a(n) = a(n-1) + 3 otherwise.
@@ -5657,6 +5661,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048654](http://oeis.org/A048654) ([L10 program](048/A048654.asm)): a(n) = 2*a(n-1) + a(n-2); a(0)=1, a(1)=4.
 * [A048655](http://oeis.org/A048655) ([L11 program](048/A048655.asm)): Generalized Pellian with second term equal to 5.
 * [A048656](http://oeis.org/A048656) ([L06 program](048/A048656.asm)): a(n) is the number of unitary (and also of squarefree) divisors of n!.
+* [A048671](http://oeis.org/A048671) ([L07 program](048/A048671.asm)): a(n) is the least common multiple of the proper divisors of n.
 * [A048673](http://oeis.org/A048673) ([L04 program](048/A048673.asm)): Permutation of natural numbers: a(n) = (A003961(n)+1) / 2 [where A003961(n) shifts the prime factorization of n one step towards larger primes].
 * [A048691](http://oeis.org/A048691) ([L05 program](048/A048691.asm)): a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
 * [A048693](http://oeis.org/A048693) ([L09 program](048/A048693.asm)): Generalized Pellian with 2nd term equal to 6.

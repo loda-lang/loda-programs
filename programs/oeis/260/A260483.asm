@@ -5,7 +5,6 @@ mov $31,$0
 mov $33,$0
 add $33,1
 lpb $33
-  clr $0,31
   mov $0,$31
   sub $33,1
   sub $0,$33
@@ -18,25 +17,12 @@ lpb $33
     add $0,$29
     sub $0,1
     add $2,$0
-    sub $0,1
     add $4,$2
     div $2,2
     add $4,$2
     mov $1,$4
     add $1,1
-    mov $2,1
-    mov $3,1
-    sub $4,5
-    add $5,$4
-    add $4,2
-    sub $4,$1
-    add $0,$4
     div $1,4
-    mov $3,$4
-    mov $5,1
-    mov $26,0
-    cal $0,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
-    mov $2,2
     mov $30,$29
     lpb $30
       mov $28,$1

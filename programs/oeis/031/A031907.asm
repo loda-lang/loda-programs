@@ -3,8 +3,6 @@
 
 mul $0,7
 add $0,1
-mov $2,-3
 cal $0,40 ; The prime numbers.
-mov $1,0
 mov $1,$0
-add $3,$0
+mul $0,3628800
