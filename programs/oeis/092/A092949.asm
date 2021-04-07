@@ -6,5 +6,4 @@ mov $2,$0
 cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 add $0,$2
 mov $1,$0
-mov $1,$0
 add $1,1

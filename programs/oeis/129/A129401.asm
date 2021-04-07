@@ -3,9 +3,4 @@
 
 cal $0,72668 ; Numbers one less than composite numbers.
 cal $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-mul $0,5040
 mov $1,$0
-sub $1,45360
-div $1,10080
-mul $1,2
-add $1,9
