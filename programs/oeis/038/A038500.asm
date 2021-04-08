@@ -3,8 +3,7 @@
 
 add $0,1
 mov $1,1
-mov $2,$0
-lpb $2
+lpb $0
+  dif $0,3
   mul $1,3
-  dif $2,3
 lpe
