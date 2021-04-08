@@ -20,6 +20,5 @@ lpe
 mov $4,2
 add $0,$4
 add $4,$0
-sub $4,1
 mov $1,$4
-sub $1,3
+sub $1,4

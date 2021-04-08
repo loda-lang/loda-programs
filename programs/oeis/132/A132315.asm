@@ -25,11 +25,14 @@ lpb $3
       mov $2,$7
       trn $5,$8
     lpe
-    log $2,8
+    mov $9,-1
+    lpb $2
+      div $2,8
+      add $9,1
+    lpe
+    mov $2,$9
     sub $2,1
     pow $2,5
-    mov $5,6
-    mov $7,6
   lpe
   trn $2,2
   mov $7,$2
