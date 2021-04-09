@@ -6,16 +6,5 @@ add $1,$0
 mul $1,2
 cal $0,92949 ; Numbers of the form prime(n+1) + prime(n) + 1.
 sub $0,$1
-div $1,30
-mov $2,3
-mov $4,2
-mov $6,$0
-lpb $6
-  add $1,1
-  mov $2,$0
-  add $2,2
-  mov $5,$3
-  div $6,5
-lpe
 mov $1,$0
 add $1,2

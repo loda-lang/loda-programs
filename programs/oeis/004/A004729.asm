@@ -3,7 +3,4 @@
 
 cal $0,1317 ; Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal.
 mov $1,$0
-div $1,2
-mul $1,2
-add $1,1
-mov $2,$0
+sub $2,$0

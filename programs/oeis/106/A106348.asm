@@ -7,7 +7,12 @@ mov $0,$2
 mov $2,1
 mul $2,$0
 add $0,1
-log $2,2
+mov $6,-1
+lpb $2
+  div $2,2
+  add $6,1
+lpe
+mov $2,$6
 mov $3,4
 mov $4,1
 mov $5,1

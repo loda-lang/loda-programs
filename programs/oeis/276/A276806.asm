@@ -4,5 +4,8 @@
 cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
 pow $0,3
 add $0,1
-log $0,5
-mov $1,$0
+mov $1,-1
+lpb $0
+  div $0,5
+  add $1,1
+lpe

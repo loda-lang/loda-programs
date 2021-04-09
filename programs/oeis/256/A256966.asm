@@ -13,6 +13,10 @@ lpb $3
   pow $4,5
   mov $2,$4
   add $2,$4
-  log $2,10
-  add $1,$2
+  mov $6,-1
+  lpb $2
+    div $2,10
+    add $6,1
+  lpe
+  add $1,$6
 lpe
