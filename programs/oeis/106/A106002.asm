@@ -3,8 +3,6 @@
 
 cal $0,1223 ; Prime gaps: differences between consecutive primes.
 lpb $0
-  div $0,5
-  sub $0,2
-  mov $1,10
+  sub $0,7
+  mov $1,1
 lpe
-div $1,10
