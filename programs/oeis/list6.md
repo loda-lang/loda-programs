@@ -381,6 +381,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307832](http://oeis.org/A307832) ([L17 program](307/A307832.asm)): Number of palindromic decagonal (10-gonal) numbers of length n whose index is also palindromic.
 * [A307872](http://oeis.org/A307872) ([L18 program](307/A307872.asm)): Sum of the smallest parts in the partitions of n into 3 parts.
 * [A307897](http://oeis.org/A307897) ([L10 program](307/A307897.asm)): Dimensions of space of harmonic polynomials of each degree invariant under the icosahedral rotation group.
+* [A307912](http://oeis.org/A307912) ([L03 program](307/A307912.asm)): a(n) = n - 1 - pi(2*n-1) + pi(n), where pi is the prime counting function.
 * [A307921](http://oeis.org/A307921) ([L13 program](307/A307921.asm)): Number of (undirected) paths in the n-book graph.
 * [A307939](http://oeis.org/A307939) ([L15 program](307/A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
 * [A307985](http://oeis.org/A307985) ([L09 program](307/A307985.asm)): Number of integer-sided triangles with perimeter n and sides a, b, and c such that a <= b <= c and b|n.
@@ -1014,7 +1015,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317714](http://oeis.org/A317714) ([L11 program](317/A317714.asm)): Chessboard rectangles sequence (see Comments), also A037270 interleaved with A163102.
 * [A317790](http://oeis.org/A317790) ([L06 program](317/A317790.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-4) - 2*(n-5) + a(n-6) for n>5, a(0)=a(1)=1, a(2)=a(3)=7, a(4)=13, a(5)=19.
 * [A317849](http://oeis.org/A317849) ([L22 program](317/A317849.asm)): Number of states of the Finite State Automaton Gn accepting the language of maximal (or minimal) lexicographic representatives of elements in the positive braid monoid An.
-* [A317952](http://oeis.org/A317952) ([L08 program](317/A317952.asm)): Trajectory of 1 under repeated application of the morphism 1->121, 2->232, 3->343, 4->414.
+* [A317952](http://oeis.org/A317952) ([L06 program](317/A317952.asm)): Trajectory of 1 under repeated application of the morphism 1->121, 2->232, 3->343, 4->414.
 * [A317960](http://oeis.org/A317960) ([L13 program](317/A317960.asm)): Trajectory of 12 under the morphism f: X -> XYX, where Y=1 if X contains an odd number of 1's, otherwise Y = 2.
 * [A317961](http://oeis.org/A317961) ([L14 program](317/A317961.asm)): Trajectory of 10 under the morphism f: X -> XYX, where Y=1 if X contains an odd number of 1's, otherwise Y = 0.
 * [A317983](http://oeis.org/A317983) ([L22 program](317/A317983.asm)): Expansion of 420*x*(1 + x)*(1 + 10*x + x^2) / (1 - x)^6.
@@ -1192,6 +1193,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322783](http://oeis.org/A322783) ([L41 program](322/A322783.asm)): a(n) = 1 - n + (2^(n+2) - (-1)^n)/3.
 * [A322830](http://oeis.org/A322830) ([L09 program](322/A322830.asm)): a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
 * [A322832](http://oeis.org/A322832) ([L09 program](322/A322832.asm)): Values x + y, where the ordered pairs (x,y) are sorted first by maximal coordinate and then lexicographically.
+* [A322844](http://oeis.org/A322844) ([L09 program](322/A322844.asm)): a(n) = (1/12)*n^2*(3*(1 + n^2) - 2*(2 + n^2)*(n mod 2)).
 * [A322925](http://oeis.org/A322925) ([L11 program](322/A322925.asm)): Expansion of x*(1 + 2*x + 10*x^2)/((1 - x^2)*(1 - 10*x^2)).
 * [A322938](http://oeis.org/A322938) ([L05 program](322/A322938.asm)): a(n) = binomial(2*n + 2, n + 2) - 1.
 * [A322940](http://oeis.org/A322940) ([L20 program](322/A322940.asm)): a(n) = [x^n] (4*x^2 + x - 1)/(2*x^2 + 3*x - 1).
@@ -1401,6 +1403,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329018](http://oeis.org/A329018) ([L10 program](329/A329018.asm)): a(n) = p(1,n), where p(x,n) is the strong divisibility sequence of polynomials based on sqrt(3/2) as in A328644.
 * [A329114](http://oeis.org/A329114) ([L10 program](329/A329114.asm)): a(n) = floor(A026532(n)/5).
 * [A329115](http://oeis.org/A329115) ([L09 program](329/A329115.asm)): a(n) = floor(A026549(n)/5).
+* [A329116](http://oeis.org/A329116) ([L06 program](329/A329116.asm)): Successively count to (-1)^(n+1)*n (n = 0, 1, 2, ... ).
 * [A329193](http://oeis.org/A329193) ([L07 program](329/A329193.asm)): a(n) = floor(log_2(n^3)) = floor(3 log_2(n))
 * [A329194](http://oeis.org/A329194) ([L07 program](329/A329194.asm)): a(n) = floor(log_3(n^2)) = floor(2 log_3(n))
 * [A329195](http://oeis.org/A329195) ([L07 program](329/A329195.asm)): a(n) = floor(log_5(n^2)) = floor(2 log_5(n))
@@ -1665,6 +1668,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335047](http://oeis.org/A335047) ([L18 program](335/A335047.asm)): Maximum sum of primes (see Comments).
 * [A335048](http://oeis.org/A335048) ([L08 program](335/A335048.asm)): Minimum sum of primes (see Comments).
 * [A335063](http://oeis.org/A335063) ([L14 program](335/A335063.asm)): a(n) = Sum_{k=0..n} (binomial(n,k) mod 2) * k.
+* [A335073](http://oeis.org/A335073) ([L14 program](335/A335073.asm)): a(n) = Sum_{k=1..n} 2^(bigomega(k) - omega(k)).
 * [A335087](http://oeis.org/A335087) ([L10 program](335/A335087.asm)): Row sums of A335436.
 * [A335115](http://oeis.org/A335115) ([L11 program](335/A335115.asm)): a(2*n) = 2*n - a(n), a(2*n+1) = 2*n + 1.
 * [A335129](http://oeis.org/A335129) ([L04 program](335/A335129.asm)): a(n) is the number of distinct lines created inside an n-gon when connecting vertex k to vertex 2k mod n.
@@ -1693,6 +1697,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336102](http://oeis.org/A336102) ([L12 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
 * [A336109](http://oeis.org/A336109) ([L38 program](336/A336109.asm)): First column of dispersion array A120861.
 * [A336146](http://oeis.org/A336146) ([L05 program](336/A336146.asm)): Lexicographically earliest infinite sequence such that a(i) = a(j) => A000035(i) = A000035(j) and A000265(i) = A000265(j), for all i, j >= 1.
+* [A336276](http://oeis.org/A336276) ([L07 program](336/A336276.asm)): a(n) = Sum_{k=1..n} mu(k)*k^2.
+* [A336277](http://oeis.org/A336277) ([L07 program](336/A336277.asm)): a(n) = Sum_{k=1..n} mu(k)*k^3.
+* [A336278](http://oeis.org/A336278) ([L07 program](336/A336278.asm)): a(n) = Sum_{k=1..n} mu(k)*k^4.
 * [A336288](http://oeis.org/A336288) ([L07 program](336/A336288.asm)): Numbers of squares formed by this procedure on n-th step: Step 1, draw a unit square. Step n, draw a unit square with center in every intersection of lines of the figure in step n-1.
 * [A336409](http://oeis.org/A336409) ([L05 program](336/A336409.asm)): Distance from prime(n) to the nearest odd composite that is < prime(n).
 * [A336466](http://oeis.org/A336466) ([L05 program](336/A336466.asm)): Fully multiplicative with a(p) = A000265(p-1) for any prime p, where A000265(k) gives the odd part of k.
@@ -1914,6 +1921,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A342379](http://oeis.org/A342379) ([L27 program](342/A342379.asm)): Expansion of e.g.f. (exp(x)-1)*(exp(x) - x^3/6 - x^2/2 - x - 1).
 * [A342380](http://oeis.org/A342380) ([L27 program](342/A342380.asm)): Expansion of e.g.f. (exp(x)-1)*(exp(x) - x^4/24 - x^3/6 - x^2/2 - x - 1).
 * [A342397](http://oeis.org/A342397) ([L09 program](342/A342397.asm)): Expansion of the o.g.f. (2*x^2 + 3*x + 2)*x/((x + 1)^2*(x - 1)^4).
+* [A342482](http://oeis.org/A342482) ([L15 program](342/A342482.asm)): a(n) = n*(2^(n-1) - n - 1).
 * [A342676](http://oeis.org/A342676) ([L03 program](342/A342676.asm)): a(n) is the number of lunar primes less than or equal to n.
 * [A342710](http://oeis.org/A342710) ([L06 program](342/A342710.asm)): Solutions x to the Pell-Fermat equation x^2 - 5*y^2 = 4.
 * [A342761](http://oeis.org/A342761) ([L35 program](342/A342761.asm)): Fold a square sheet of paper alternately vertically to the left and horizontally downwards; after each fold, draw a line along each inward crease; after n folds, the resulting graph has a(n) edges.

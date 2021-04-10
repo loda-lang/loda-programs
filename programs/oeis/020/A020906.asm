@@ -3,6 +3,7 @@
 
 lpb $0
   cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
+  mod $0,9
 lpe
 mov $1,$0
 add $1,1

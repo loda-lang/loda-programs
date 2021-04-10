@@ -5,7 +5,6 @@ mov $2,$0
 add $0,1
 mul $0,36
 cal $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-sub $0,7
 mov $1,$0
-add $1,8
+add $1,1
 add $1,$2
