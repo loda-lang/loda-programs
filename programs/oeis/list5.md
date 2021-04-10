@@ -345,6 +345,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256989](http://oeis.org/A256989) ([L07 program](256/A256989.asm)): One-based column index of n in array A256995.
 * [A256994](http://oeis.org/A256994) ([L19 program](256/A256994.asm)): a(n) = n + 1 when n <= 3, otherwise a(n) = 2^(n-2) + 3; also iterates of A005187 starting from a(1) = 2.
 * [A257022](http://oeis.org/A257022) ([L04 program](257/A257022.asm)): Trace of n in the quarter-sum representation of n.
+* [A257023](http://oeis.org/A257023) ([L09 program](257/A257023.asm)): Number of terms in the quarter-sum representation of n.
 * [A257042](http://oeis.org/A257042) ([L05 program](257/A257042.asm)): a(n) = (3*n+7)*n^2.
 * [A257051](http://oeis.org/A257051) ([L05 program](257/A257051.asm)): a(n) = cpg(n, 3) + cpg(n, 4) + ... + cpg(n, n) where cpg(n, m) is the m-th n-th-order centered polygonal number.
 * [A257052](http://oeis.org/A257052) ([L33 program](257/A257052.asm)): a(n) = cpg(3, n) + cpg(4, n) + ... + cpg(n, n) where cpg(m, n) is the n-th m-th-order centered polygonal number.
@@ -1632,7 +1633,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276866](http://oeis.org/A276866) ([L25 program](276/A276866.asm)): First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 * [A276867](http://oeis.org/A276867) ([L30 program](276/A276867.asm)): First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
 * [A276868](http://oeis.org/A276868) ([L30 program](276/A276868.asm)): First differences of the Beatty sequence A276855 for 3 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
-* [A276869](http://oeis.org/A276869) ([L79 program](276/A276869.asm)): First differences of the Beatty sequence A182769 for 2 + sqrt(1/2).
+* [A276869](http://oeis.org/A276869) ([L05 program](276/A276869.asm)): First differences of the Beatty sequence A182769 for 2 + sqrt(1/2).
 * [A276871](http://oeis.org/A276871) ([L20 program](276/A276871.asm)): Sums-complement of the Beatty sequence for sqrt(5).
 * [A276872](http://oeis.org/A276872) ([L23 program](276/A276872.asm)): Sums-complement of the Beatty sequence for sqrt(6).
 * [A276873](http://oeis.org/A276873) ([L35 program](276/A276873.asm)): Sums-complement of the Beatty sequence for sqrt(7).
