@@ -1,8 +1,9 @@
 ; A101875: Number of Abelian groups of order 4n+2.
 ; 1,1,1,1,2,1,1,1,1,1,1,1,2,3,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,5,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,2,1,3,1,1,1,1,3,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,2,2,1,2,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,2,1
 
+cal $0,101871 ; Number of Abelian groups of order 2n+1.
 mul $0,2
-cal $0,51903 ; Maximal exponent in prime factorization of n.
-sub $0,2
-cal $0,40 ; The prime numbers.
 mov $1,$0
+sub $1,2
+div $1,2
+add $1,1

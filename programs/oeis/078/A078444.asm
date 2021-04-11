@@ -3,6 +3,5 @@
 
 cal $0,92949 ; Numbers of the form prime(n+1) + prime(n) + 1.
 mov $1,$0
-sub $1,9
 div $1,2
-add $1,3
+sub $1,1
