@@ -17,27 +17,18 @@ lpb $11
     mov $0,$6
     sub $8,1
     sub $0,$8
-    sub $4,$0
     lpb $0
       sub $0,1
       mov $2,$0
       cal $2,22926 ; Number of powers of 7 between 2^n and 2^(n+1).
       pow $0,0
-      add $3,$2
-      add $3,1
-      mov $4,$2
-      min $4,1
-      add $5,$4
     lpe
-    mov $1,$5
     add $2,14
     sub $2,$0
     mov $1,$2
     sub $1,13
-    mov $3,1966
     add $7,$1
   lpe
-  mov $1,$7
   add $10,$7
 lpe
 mov $1,$10

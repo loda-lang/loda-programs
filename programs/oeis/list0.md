@@ -356,7 +356,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002064](http://oeis.org/A002064) ([L04 program](002/A002064.asm)): Cullen numbers: n*2^n + 1.
 * [A002066](http://oeis.org/A002066) ([L03 program](002/A002066.asm)): a(n) = 10*4^n.
 * [A002081](http://oeis.org/A002081) ([L30 program](002/A002081.asm)): Numbers congruent to {2, 4, 8, 16} mod 20.
-* [A002088](http://oeis.org/A002088) ([L04 program](002/A002088.asm)): Sum of totient function: a(n) = Sum_{k=1..n} phi(k), cf. A000010.
+* [A002088](http://oeis.org/A002088) ([L03 program](002/A002088.asm)): Sum of totient function: a(n) = Sum_{k=1..n} phi(k), cf. A000010.
 * [A002089](http://oeis.org/A002089) ([L03 program](002/A002089.asm)): a(n) = 11*4^n.
 * [A002104](http://oeis.org/A002104) ([L06 program](002/A002104.asm)): Logarithmic numbers.
 * [A002108](http://oeis.org/A002108) ([L04 program](002/A002108.asm)): 4th powers written backwards.
@@ -1457,6 +1457,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010201](http://oeis.org/A010201) ([L15 program](010/A010201.asm)): Continued fraction for sqrt(142).
 * [A010209](http://oeis.org/A010209) ([L13 program](010/A010209.asm)): Continued fraction for sqrt(160).
 * [A010215](http://oeis.org/A010215) ([L04 program](010/A010215.asm)): Continued fraction for sqrt(167).
+* [A010217](http://oeis.org/A010217) ([L05 program](010/A010217.asm)): Continued fraction for sqrt(173).
 * [A010218](http://oeis.org/A010218) ([L06 program](010/A010218.asm)): Continued fraction for sqrt(174).
 * [A010225](http://oeis.org/A010225) ([L21 program](010/A010225.asm)): Continued fraction for sqrt(183).
 * [A010227](http://oeis.org/A010227) ([L26 program](010/A010227.asm)): Continued fraction for sqrt(185).
@@ -3149,6 +3150,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025170](http://oeis.org/A025170) ([L08 program](025/A025170.asm)): G.f.: 1/(1 + 2*x + 9*x^2).
 * [A025174](http://oeis.org/A025174) ([L04 program](025/A025174.asm)): a(n) = binomial(3n-1, n-1).
 * [A025192](http://oeis.org/A025192) ([L06 program](025/A025192.asm)): a(0)=1; a(n) = 2*3^(n-1) for n >= 1.
+* [A025281](http://oeis.org/A025281) ([L12 program](025/A025281.asm)): a(n) = sopfr(n!), where sopfr = A001414  is the integer log.
 * [A025446](http://oeis.org/A025446) ([L04 program](025/A025446.asm)): Number of partitions of n into 2 nonnegative cubes.
 * [A025480](http://oeis.org/A025480) ([L06 program](025/A025480.asm)): a(2n) = n, a(2n+1) = a(n).
 * [A025528](http://oeis.org/A025528) ([L27 program](025/A025528.asm)): Number of prime powers <= n with exponents > 0 (A246655).
@@ -5805,7 +5807,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049684](http://oeis.org/A049684) ([L12 program](049/A049684.asm)): a(n) = Fibonacci(2n)^2.
 * [A049690](http://oeis.org/A049690) ([L16 program](049/A049690.asm)): a(n) = Sum_{k=1..n} phi(2*k), where phi = Euler totient function, cf. A000010.
 * [A049691](http://oeis.org/A049691) ([L04 program](049/A049691.asm)): a(n)=T(n,n), array T as in A049687. Also a(n)=T(2n,2n), array T given by A049639.
-* [A049696](http://oeis.org/A049696) ([L06 program](049/A049696.asm)): a(n)=T(n,n), array T as in A049695.
+* [A049696](http://oeis.org/A049696) ([L04 program](049/A049696.asm)): a(n)=T(n,n), array T as in A049695.
 * [A049697](http://oeis.org/A049697) ([L11 program](049/A049697.asm)): a(n)=T(n,n+1), array T as in A049695.
 * [A049703](http://oeis.org/A049703) ([L54 program](049/A049703.asm)): a(0) = 0; for n>0, a(n) = A005598(n)/2.
 * [A049706](http://oeis.org/A049706) ([L08 program](049/A049706.asm)): a(n)=T(n,n+2), array T as in A049704.

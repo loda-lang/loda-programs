@@ -9,7 +9,12 @@ add $0,2
 mov $1,3
 add $1,$0
 mov $2,$3
-log $2,2
+mov $4,-1
+lpb $2
+  div $2,2
+  add $4,1
+lpe
+mov $2,$4
 sub $2,5
 sub $1,$2
 sub $1,10
