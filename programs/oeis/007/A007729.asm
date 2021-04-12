@@ -4,9 +4,4 @@
 sub $0,1
 cal $0,70992 ; Partial sums of A002487.
 mov $1,$0
-mul $1,2
-add $1,4096
-add $1,$0
-sub $1,4096
-div $1,3
 add $1,1
