@@ -3,17 +3,7 @@
 
 cal $0,137688 ; 2^A003056: 2^n appears n+1 times.
 sub $0,2
-add $4,$0
-add $0,$4
-div $4,2
-add $0,$4
-add $0,1
-mov $1,0
-add $1,$4
-mov $2,$4
-pow $2,3
-mov $3,$2
-mov $3,$1
+add $2,$0
+div $2,2
+add $1,$2
 add $1,1
-mov $5,1
-mul $5,$4

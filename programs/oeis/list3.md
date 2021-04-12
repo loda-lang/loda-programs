@@ -1177,6 +1177,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160811](http://oeis.org/A160811) ([L16 program](160/A160811.asm)): Numbers not dividing 24.
 * [A160827](http://oeis.org/A160827) ([L08 program](160/A160827.asm)): a(n) = 3*n^4 + 12*n^3 + 30*n^2 + 36*n + 17.
 * [A160828](http://oeis.org/A160828) ([L08 program](160/A160828.asm)): a(n) = 4*n^4 + 24*n^3 + 84*n^2 + 144*n + 98.
+* [A160830](http://oeis.org/A160830) ([L05 program](160/A160830.asm)): Integer part of the product of two consecutive primes divided by their sum.
 * [A160842](http://oeis.org/A160842) ([L06 program](160/A160842.asm)): Number of lines through at least 2 points of a 2 X n grid of points.
 * [A160843](http://oeis.org/A160843) ([L17 program](160/A160843.asm)): Number of lines through at least 2 points of a 3 X n grid of points.
 * [A160869](http://oeis.org/A160869) ([L04 program](160/A160869.asm)): a(n) = sigma(6^(n-1)).
@@ -1885,6 +1886,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167545](http://oeis.org/A167545) ([L03 program](167/A167545.asm)): n^6 mod 16.
 * [A167547](http://oeis.org/A167547) ([L08 program](167/A167547.asm)): The fourth row of the ED1 array A167546.
 * [A167548](http://oeis.org/A167548) ([L49 program](167/A167548.asm)): The fifth row of the ED1 array A167546
+* [A167549](http://oeis.org/A167549) ([L10 program](167/A167549.asm)): The sixth row of the ED1 array A167546.
 * [A167554](http://oeis.org/A167554) ([L08 program](167/A167554.asm)): The second left hand column of triangle A167552.
 * [A167561](http://oeis.org/A167561) ([L08 program](167/A167561.asm)): The fourth row of the ED2 array A167560.
 * [A167562](http://oeis.org/A167562) ([L57 program](167/A167562.asm)): The fifth row of the ED2 array A167560.
@@ -2454,6 +2456,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171723](http://oeis.org/A171723) ([L11 program](171/A171723.asm)): a(n) = 0+1+2+...+n in lunar arithmetic in base 9 written in base 9.
 * [A171757](http://oeis.org/A171757) ([L13 program](171/A171757.asm)): Even numbers whose binary expansion begins 10.
 * [A171763](http://oeis.org/A171763) ([L10 program](171/A171763.asm)): Odd numbers whose binary expansion begins 10.
+* [A171765](http://oeis.org/A171765) ([L10 program](171/A171765.asm)): a(n) = 0 if n <= 10; for n >= 11, a(n) = product of digits of n.
 * [A171769](http://oeis.org/A171769) ([L06 program](171/A171769.asm)): Partial sums of A042964 (numbers congruent to 2 or 3 mod 4).
 * [A171781](http://oeis.org/A171781) ([L11 program](171/A171781.asm)): Numbers for which the second bit of the binary expansion is equal to the last bit.
 * [A171783](http://oeis.org/A171783) ([L05 program](171/A171783.asm)): Third smallest divisor of smallest number having exactly n divisors.
@@ -3402,7 +3405,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A182760](http://oeis.org/A182760) ([L06 program](182/A182760.asm)): Beatty sequence for (3 + 5^(-1/2))/2.
 * [A182761](http://oeis.org/A182761) ([L12 program](182/A182761.asm)): Beatty sequence for (7 - sqrt(5))/2.
 * [A182765](http://oeis.org/A182765) ([L07 program](182/A182765.asm)): Beatty sequence for (6 + sqrt(2))/4.
-* [A182766](http://oeis.org/A182766) ([L05 program](182/A182766.asm)): Beatty sequence for 5 - 2*sqrt(2).
+* [A182766](http://oeis.org/A182766) ([L04 program](182/A182766.asm)): Beatty sequence for 5 - 2*sqrt(2).
 * [A182767](http://oeis.org/A182767) ([L13 program](182/A182767.asm)): Beatty sequence for 1+e^2.
 * [A182768](http://oeis.org/A182768) ([L04 program](182/A182768.asm)): Beatty sequence for 1+e^(-2).
 * [A182769](http://oeis.org/A182769) ([L24 program](182/A182769.asm)): Beatty sequence for (4 + sqrt(2))/2.
@@ -3854,7 +3857,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186544](http://oeis.org/A186544) ([L07 program](186/A186544.asm)): a(n) = floor((Pi-2)*n/(Pi-3)); complement of A187320.
 * [A186575](http://oeis.org/A186575) ([L25 program](186/A186575.asm)): Expansion of (1 + 2*x + 6*x^2)/(1 - x - x^2 - 2*x^3) in powers of x.
 * [A186620](http://oeis.org/A186620) ([L11 program](186/A186620.asm)): Fibonacci sequence beginning 12, 25.
-* [A186636](http://oeis.org/A186636) ([L07 program](186/A186636.asm)): a(n) = n*(n^3+n^2+2*n+1).
+* [A186636](http://oeis.org/A186636) ([L06 program](186/A186636.asm)): a(n) = n*(n^3+n^2+2*n+1).
 * [A186646](http://oeis.org/A186646) ([L09 program](186/A186646.asm)): Every fourth term of the sequence of natural numbers 1,2,3,4,... is halved.
 * [A186680](http://oeis.org/A186680) ([L22 program](186/A186680.asm)): Total number of positive integers below 10^n requiring 17 positive biquadrates in their representation as sum of biquadrates.
 * [A186681](http://oeis.org/A186681) ([L14 program](186/A186681.asm)): Total number of n-digit numbers requiring 17 positive biquadrates in their representation as sum of biquadrates.

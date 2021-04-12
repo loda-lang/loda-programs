@@ -191,6 +191,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001288](http://oeis.org/A001288) ([L03 program](001/A001288.asm)): a(n) = binomial(n,11).
 * [A001296](http://oeis.org/A001296) ([L07 program](001/A001296.asm)): 4-dimensional pyramidal numbers: a(n) = (3*n+1)*binomial(n+2, 3)/4. Also Stirling2(n+2, n).
 * [A001297](http://oeis.org/A001297) ([L13 program](001/A001297.asm)): Stirling numbers of the second kind S(n+3, n).
+* [A001298](http://oeis.org/A001298) ([L08 program](001/A001298.asm)): Stirling numbers of the second kind S(n+4, n).
 * [A001299](http://oeis.org/A001299) ([L03 program](001/A001299.asm)): Number of ways of making change for n cents using coins of 1, 5, 10, 25 cents.
 * [A001300](http://oeis.org/A001300) ([L03 program](001/A001300.asm)): Number of ways of making change for n cents using coins of 1, 5, 10, 25, 50 cents.
 * [A001303](http://oeis.org/A001303) ([L10 program](001/A001303.asm)): Stirling numbers of first kind, s(n+3, n), negated.
@@ -755,6 +756,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005010](http://oeis.org/A005010) ([L03 program](005/A005010.asm)): a(n) = 9*2^n.
 * [A005015](http://oeis.org/A005015) ([L03 program](005/A005015.asm)): 11*2^n.
 * [A005021](http://oeis.org/A005021) ([L07 program](005/A005021.asm)): Random walks (binomial transform of A006054).
+* [A005022](http://oeis.org/A005022) ([L21 program](005/A005022.asm)): Number of walks of length 2n+6 in the path graph P_7 from one end to the other.
 * [A005029](http://oeis.org/A005029) ([L03 program](005/A005029.asm)): 13*2^n.
 * [A005030](http://oeis.org/A005030) ([L03 program](005/A005030.asm)): a(n) = 5*3^n.
 * [A005032](http://oeis.org/A005032) ([L03 program](005/A005032.asm)): a(n) = 7*3^n.
@@ -952,6 +954,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006257](http://oeis.org/A006257) ([L07 program](006/A006257.asm)): Josephus problem: a(2*n) = 2*a(n)-1, a(2*n+1) = 2*a(n)+1.
 * [A006261](http://oeis.org/A006261) ([L35 program](006/A006261.asm)): a(n) = Sum_{k=0..5} C(n,k).
 * [A006264](http://oeis.org/A006264) ([L19 program](006/A006264.asm)): Diagonal length function.
+* [A006287](http://oeis.org/A006287) ([L08 program](006/A006287.asm)): Sum of squares of digits of ternary representation of n.
 * [A006308](http://oeis.org/A006308) ([L04 program](006/A006308.asm)): Coefficients of period polynomials.
 * [A006322](http://oeis.org/A006322) ([L05 program](006/A006322.asm)): 4-dimensional analog of centered polygonal numbers.
 * [A006323](http://oeis.org/A006323) ([L10 program](006/A006323.asm)): 4-dimensional analog of centered polygonal numbers.
@@ -3128,6 +3131,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024701](http://oeis.org/A024701) ([L06 program](024/A024701.asm)): a(n) = (-1 + prime(n+1)^2)/4.
 * [A024702](http://oeis.org/A024702) ([L05 program](024/A024702.asm)): a(n) = (prime(n)^2 - 1)/24.
 * [A024711](http://oeis.org/A024711) ([L08 program](024/A024711.asm)): a(n) = residue mod 2 of n-th term of A024702.
+* [A024712](http://oeis.org/A024712) ([L04 program](024/A024712.asm)): a(n) = residue mod 3 of n-th term of A024702.
 * [A024713](http://oeis.org/A024713) ([L12 program](024/A024713.asm)): a(n) = residue mod 5 of n-th term of A024702.
 * [A024718](http://oeis.org/A024718) ([L18 program](024/A024718.asm)): a(n) = (1/2)*(1 + Sum_{k=0..n} binomial(2*k, k)).
 * [A024719](http://oeis.org/A024719) ([L59 program](024/A024719.asm)): a(n) = (1/3)*(2 + Sum_{k=0..n} C(3k,k)).
@@ -3165,7 +3169,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025683](http://oeis.org/A025683) ([L07 program](025/A025683.asm)): Exponent of 9 (value of i) in n-th number of form 9^i*10^j.
 * [A025685](http://oeis.org/A025685) ([L09 program](025/A025685.asm)): Exponent of 10 (value of j) in n-th number of form 3^i*10^j.
 * [A025691](http://oeis.org/A025691) ([L06 program](025/A025691.asm)): Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
-* [A025693](http://oeis.org/A025693) ([L40 program](025/A025693.asm)): Index of 2^n within sequence of numbers of form 2^i*7^j.
+* [A025693](http://oeis.org/A025693) ([L31 program](025/A025693.asm)): Index of 2^n within sequence of numbers of form 2^i*7^j.
 * [A025695](http://oeis.org/A025695) ([L19 program](025/A025695.asm)): Index of 2^n within sequence of numbers of form 2^i*10^j.
 * [A025696](http://oeis.org/A025696) ([L14 program](025/A025696.asm)): Index of 3^n within sequence of numbers of form 3^i*4^j.
 * [A025697](http://oeis.org/A025697) ([L24 program](025/A025697.asm)): Index of 3^n within sequence of numbers of form 3^i*6^j.
@@ -5113,6 +5117,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A046161](http://oeis.org/A046161) ([L14 program](046/A046161.asm)): a(n) = denominator of binomial(2n,n)/4^n.
 * [A046162](http://oeis.org/A046162) ([L03 program](046/A046162.asm)): Reduced numerators of (n-1)^2/(n^2+n+1). Arises in Routh's theorem.
 * [A046163](http://oeis.org/A046163) ([L10 program](046/A046163.asm)): Reduced denominators of (n-1)^2/(n^2+n+1). Arises in Routh's theorem.
+* [A046219](http://oeis.org/A046219) ([L17 program](046/A046219.asm)): Denominators of elements of 1/2-Pascal triangle (by row).
 * [A046233](http://oeis.org/A046233) ([L10 program](046/A046233.asm)): Numbers n such that n^3 is palindromic in base 5.
 * [A046630](http://oeis.org/A046630) ([L05 program](046/A046630.asm)): Number of cubic residues mod 2^n.
 * [A046632](http://oeis.org/A046632) ([L05 program](046/A046632.asm)): Number of cubic residues mod 4^n.
