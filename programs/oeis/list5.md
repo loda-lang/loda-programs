@@ -91,6 +91,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A252489](http://oeis.org/A252489) ([L03 program](252/A252489.asm)): Index of the largest prime which divides n(n+1).
 * [A252735](http://oeis.org/A252735) ([L03 program](252/A252735.asm)): a(1) = 0; for n > 1: a(2n) = a(n), a(2n+1) =  1 + a(A064989(n)).
 * [A252736](http://oeis.org/A252736) ([L05 program](252/A252736.asm)): a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+* [A252742](http://oeis.org/A252742) ([L06 program](252/A252742.asm)): Characteristic function of A246282: if A003961(n) > 2*n, then a(n) = 1, otherwise 0 (when A003961(n) < 2*n) [where A003961(n) shifts the prime factorization of n one step towards larger primes].
 * [A252748](http://oeis.org/A252748) ([L05 program](252/A252748.asm)): a(n) = A003961(n) - 2*n.
 * [A252749](http://oeis.org/A252749) ([L06 program](252/A252749.asm)): Partial sums of A252748: a(0) = 0, a(n) = A252748(n) + a(n-1).
 * [A252814](http://oeis.org/A252814) ([L17 program](252/A252814.asm)): Number of n X 2 nonnegative integer arrays with upper left 0 and every value within 2 of its city block distance from the upper left and every value increasing by 0 or 1 with every step right or down.
@@ -587,6 +588,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261391](http://oeis.org/A261391) ([L11 program](261/A261391.asm)): a(n) = n^5 + 5*n^3 + 5*n.
 * [A261397](http://oeis.org/A261397) ([L13 program](261/A261397.asm)): a(n) = 3^n*Fibonacci(n).
 * [A261399](http://oeis.org/A261399) ([L05 program](261/A261399.asm)): a(1)=1; thereafter a(n) = (2/5)*(9*6^(n-2)+1).
+* [A261424](http://oeis.org/A261424) ([L08 program](261/A261424.asm)): Difference between n and the largest palindrome <= n.
 * [A261466](http://oeis.org/A261466) ([L25 program](261/A261466.asm)): Records in A261461.
 * [A261491](http://oeis.org/A261491) ([L07 program](261/A261491.asm)): a(n) = ceiling(2 + sqrt(8*n-4)).
 * [A261521](http://oeis.org/A261521) ([L04 program](261/A261521.asm)): a(n) =  n^2 + 2*n + 29.
@@ -1260,7 +1262,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A270869](http://oeis.org/A270869) ([L58 program](270/A270869.asm)): a(n) = n^5 + 4*n^4 + 13*n^3 + 23*n^2 + 25*n + 3.
 * [A270870](http://oeis.org/A270870) ([L77 program](270/A270870.asm)): a(n) = n^6 + 5*n^5 + 19*n^4 + 44*n^3 + 72*n^2 + 69*n + 5.
 * [A270889](http://oeis.org/A270889) ([L11 program](270/A270889.asm)): Integers n such that the circular graph C_n has a square size deficiency.
-* [A270968](http://oeis.org/A270968) ([L24 program](270/A270968.asm)): Reduced 5x+1 function R applied to the odd integers: a(n) = R(2n-1), where R(k) = (5k+1)/2^r, with r as large as possible.
+* [A270968](http://oeis.org/A270968) ([L06 program](270/A270968.asm)): Reduced 5x+1 function R applied to the odd integers: a(n) = R(2n-1), where R(k) = (5k+1)/2^r, with r as large as possible.
 * [A270993](http://oeis.org/A270993) ([L03 program](270/A270993.asm)): Values of A076336(n) such that A076336(n) = A076336(n+1) - 14.
 * [A270994](http://oeis.org/A270994) ([L03 program](270/A270994.asm)): a(n) = 9454129 + 11184810*n.
 * [A271027](http://oeis.org/A271027) ([L03 program](271/A271027.asm)): a(n) = 3661529 + 11184810*n.
@@ -1830,6 +1832,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280193](http://oeis.org/A280193) ([L09 program](280/A280193.asm)): a(2*n) = 2, a(2*n + 1) = -1, a(0) = 1.
 * [A280237](http://oeis.org/A280237) ([L06 program](280/A280237.asm)): Period length 8 sequence [0, 1, 0, 1, -1, 1, 0, 1, ...].
 * [A280261](http://oeis.org/A280261) ([L13 program](280/A280261.asm)): Period length 12 sequence [0, 1, -1, 0, -1, -1, 0, -1, 1, 0, 1, 1, ...].
+* [A280292](http://oeis.org/A280292) ([L06 program](280/A280292.asm)): a(n) = sopfr(n) - sopf(n).
 * [A280293](http://oeis.org/A280293) ([L10 program](280/A280293.asm)): a(0) = 3, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [-5, 4].
 * [A280304](http://oeis.org/A280304) ([L06 program](280/A280304.asm)): a(n) = 3*n*(n^2 + 3*n + 4).
 * [A280321](http://oeis.org/A280321) ([L13 program](280/A280321.asm)): Number of 2 X 2 matrices with all elements in {0,..,n} having determinant = n*permanent.

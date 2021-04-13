@@ -433,6 +433,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308754](http://oeis.org/A308754) ([L11 program](308/A308754.asm)): a(0) = 0, a(n) = a(n-1) + 1 if 2*n + 3 is prime, otherwise a(n) = a(n-1).
 * [A308775](http://oeis.org/A308775) ([L08 program](308/A308775.asm)): Sum of all the parts in the partitions of n into 4 parts.
 * [A308807](http://oeis.org/A308807) ([L07 program](308/A308807.asm)): a(n) = 4*5^(n-1) + n.
+* [A308823](http://oeis.org/A308823) ([L18 program](308/A308823.asm)): Sum of the smallest parts of the partitions of n into 5 parts.
 * [A308901](http://oeis.org/A308901) ([L09 program](308/A308901.asm)): Lexicographically earliest overlap-free binary sequence.
 * [A309057](http://oeis.org/A309057) ([L34 program](309/A309057.asm)): a(0) = 1; a(2*n) = 3*a(n), a(2*n+1) = a(n).
 * [A309074](http://oeis.org/A309074) ([L03 program](309/A309074.asm)): a(0) = 1; a(2*n) = 4*a(n), a(2*n+1) = a(n).
@@ -468,6 +469,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309686](http://oeis.org/A309686) ([L20 program](309/A309686.asm)): Sum of the even parts appearing among the smallest parts of the partitions of n into 3 parts.
 * [A309687](http://oeis.org/A309687) ([L12 program](309/A309687.asm)): Number of odd parts appearing among the second largest parts of the partitions of n into 3 parts.
 * [A309689](http://oeis.org/A309689) ([L17 program](309/A309689.asm)): Number of even parts appearing among the second largest parts of the partitions of n into 3 parts.
+* [A309709](http://oeis.org/A309709) ([L05 program](309/A309709.asm)): Number of binary digits that change when n is multiplied by 4.
 * [A309714](http://oeis.org/A309714) ([L08 program](309/A309714.asm)): The smallest possible nonnegative difference between the sum of the first n positive integers (A000217) and the sum of any number of the directly following and consecutive integers.
 * [A309715](http://oeis.org/A309715) ([L17 program](309/A309715.asm)): Number of even parts appearing among the third largest parts of the partitions of n into 4 parts.
 * [A309779](http://oeis.org/A309779) ([L03 program](309/A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
@@ -935,6 +937,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316317](http://oeis.org/A316317) ([L37 program](316/A316317.asm)): Coordination sequence for trivalent node in chamfered version of square grid.
 * [A316319](http://oeis.org/A316319) ([L30 program](316/A316319.asm)): Coordination sequence for a trivalent node in a chamfered version of the 3^6 triangular tiling of the plane.
 * [A316320](http://oeis.org/A316320) ([L16 program](316/A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
+* [A316340](http://oeis.org/A316340) ([L05 program](316/A316340.asm)): Image of 1 under repeated application of the morphism 1 -> 12312, 2 -> 341, 3 -> 34134, 4 -> 123,
 * [A316341](http://oeis.org/A316341) ([L28 program](316/A316341.asm)): Characteristic function of the factorials 1!, 2!, 3!, ...
 * [A316342](http://oeis.org/A316342) ([L13 program](316/A316342.asm)): Fibonacci word A003849 with first two terms replaced by 2's.
 * [A316344](http://oeis.org/A316344) ([L31 program](316/A316344.asm)): An example of a word that is uniform morphic, but neither pure morphic, primitive morphic, nor recurrent.
@@ -1250,6 +1253,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323824](http://oeis.org/A323824) ([L04 program](323/A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
 * [A323847](http://oeis.org/A323847) ([L10 program](323/A323847.asm)): a(n) = (n-1)*(n-2)*(n^2+9*n+12)/24.
 * [A323921](http://oeis.org/A323921) ([L08 program](323/A323921.asm)): a(n) = (4^(valuation(n, 4) + 1) - 1) / 3.
+* [A323950](http://oeis.org/A323950) ([L16 program](323/A323950.asm)): Number of ways to split an n-cycle into connected subgraphs, none having exactly two vertices.
 * [A323956](http://oeis.org/A323956) ([L11 program](323/A323956.asm)): Triangle read by rows: T(n, k) = 1 + n * (n - k) for 1 <= k <= n.
 * [A324015](http://oeis.org/A324015) ([L10 program](324/A324015.asm)): Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
 * [A324128](http://oeis.org/A324128) ([L08 program](324/A324128.asm)): a(n) = 2*n*Fibonacci(n) + (-1)^n + 1.
@@ -1934,6 +1938,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A342281](http://oeis.org/A342281) ([L33 program](342/A342281.asm)): A bisection of A001951: a(n) = A001951(2*n+1).
 * [A342352](http://oeis.org/A342352) ([L32 program](342/A342352.asm)): Expansion of e.g.f. (exp(x)-1)*(exp(x) - x^2/2 - x - 1).
 * [A342362](http://oeis.org/A342362) ([L12 program](342/A342362.asm)): Expansion of the o.g.f. (1 + 8*x + 10*x^2 + 8*x^3 + x^4)/((1 - x)^4*(1 + x)^2).
+* [A342363](http://oeis.org/A342363) ([L12 program](342/A342363.asm)): First differences of A341282.
 * [A342369](http://oeis.org/A342369) ([L05 program](342/A342369.asm)): If n is congruent to 2 (mod 3), then a(n) = (2*n - 1)/3; otherwise, a(n) = 2*n.
 * [A342379](http://oeis.org/A342379) ([L27 program](342/A342379.asm)): Expansion of e.g.f. (exp(x)-1)*(exp(x) - x^3/6 - x^2/2 - x - 1).
 * [A342380](http://oeis.org/A342380) ([L27 program](342/A342380.asm)): Expansion of e.g.f. (exp(x)-1)*(exp(x) - x^4/24 - x^3/6 - x^2/2 - x - 1).

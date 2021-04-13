@@ -1103,7 +1103,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007665](http://oeis.org/A007665) ([L56 program](007/A007665.asm)): Tower of Hanoi with 5 pegs.
 * [A007689](http://oeis.org/A007689) ([L13 program](007/A007689.asm)): a(n) = 2^n + 3^n.
 * [A007715](http://oeis.org/A007715) ([L34 program](007/A007715.asm)): Number of 5-leaf rooted trees with n levels.
-* [A007729](http://oeis.org/A007729) ([L09 program](007/A007729.asm)): 6th binary partition function.
+* [A007729](http://oeis.org/A007729) ([L04 program](007/A007729.asm)): 6th binary partition function.
 * [A007742](http://oeis.org/A007742) ([L04 program](007/A007742.asm)): a(n) = n*(4*n+1).
 * [A007758](http://oeis.org/A007758) ([L04 program](007/A007758.asm)): a(n) = 2^n*n^2.
 * [A007775](http://oeis.org/A007775) ([L24 program](007/A007775.asm)): Numbers not divisible by 2, 3 or 5.
@@ -3376,6 +3376,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A026915](http://oeis.org/A026915) ([L09 program](026/A026915.asm)): a(n) = T(n,0) + T(n,1) + ... + T(n,n), T given by A026907.
 * [A026917](http://oeis.org/A026917) ([L10 program](026/A026917.asm)): a(n) = Sum{T(i,j)}, 0<=j<=i, 0<=i<=n, T given by A026907.
 * [A026922](http://oeis.org/A026922) ([L04 program](026/A026922.asm)): Number of partitions of n into an odd number of parts, the greatest being 2; also, a(n+3) = number of partitions of n+1 into an even number of parts, each <=2.
+* [A026928](http://oeis.org/A026928) ([L27 program](026/A026928.asm)): Number of partitions of n into an even number of parts, the greatest being 4; also, a(n+7) = number of partitions of n+3 into an odd number of parts, each <=4.
 * [A026937](http://oeis.org/A026937) ([L13 program](026/A026937.asm)): a(n) = Sum_{k=0..n} (k+1)*T(n,n-k), where T is given by A008288.
 * [A026950](http://oeis.org/A026950) ([L36 program](026/A026950.asm)): a(n) = Sum{(k+1)*T(n,k)}, 0<=k<=n, T given by A026374.
 * [A027000](http://oeis.org/A027000) ([L03 program](027/A027000.asm)): a(n) = Lucas(2n+3) - (6n+4).
@@ -4363,6 +4364,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037458](http://oeis.org/A037458) ([L11 program](037/A037458.asm)): a(1)=1; for n > 1, a(n) = n - a(n-floor(sqrt(n))).
 * [A037459](http://oeis.org/A037459) ([L18 program](037/A037459.asm)): Sum{d(i)*5^i: i=0,1,...,m}, where Sum{d(i)*4^i: i=0,1,...,m} is the base 4 representation of n.
 * [A037461](http://oeis.org/A037461) ([L23 program](037/A037461.asm)): a(n)=Sum{d(i)*7^i: i=0,1,...,m}, where Sum{d(i)*4^i: i=0,1,...,m} is the base 4 representation of n.
+* [A037464](http://oeis.org/A037464) ([L07 program](037/A037464.asm)): Bisection of A076605.
 * [A037470](http://oeis.org/A037470) ([L19 program](037/A037470.asm)): a(n)=Sum{d(i)*7^i: i=0,1,...,m}, where Sum{d(i)*6^i: i=0,1,...,m} is the base 6 representation of n.
 * [A037479](http://oeis.org/A037479) ([L04 program](037/A037479.asm)): a(n)=Sum{d(i)*10^i: i=0,1,...,m}, where Sum{d(i)*9^i: i=0,1,...,m} is the base 9 representation of n.
 * [A037480](http://oeis.org/A037480) ([L06 program](037/A037480.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,2.
@@ -5701,7 +5703,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048625](http://oeis.org/A048625) ([L18 program](048/A048625.asm)): Pisot sequence P(4,6).
 * [A048626](http://oeis.org/A048626) ([L20 program](048/A048626.asm)): Pisot sequence P(6,9).
 * [A048641](http://oeis.org/A048641) ([L13 program](048/A048641.asm)): Partial sums of A003188 (Gray code).
-* [A048645](http://oeis.org/A048645) ([L29 program](048/A048645.asm)): Integers with one or two 1-bits in their binary expansion.
+* [A048645](http://oeis.org/A048645) ([L04 program](048/A048645.asm)): Integers with one or two 1-bits in their binary expansion.
 * [A048654](http://oeis.org/A048654) ([L10 program](048/A048654.asm)): a(n) = 2*a(n-1) + a(n-2); a(0)=1, a(1)=4.
 * [A048655](http://oeis.org/A048655) ([L11 program](048/A048655.asm)): Generalized Pellian with second term equal to 5.
 * [A048656](http://oeis.org/A048656) ([L06 program](048/A048656.asm)): a(n) is the number of unitary (and also of squarefree) divisors of n!.

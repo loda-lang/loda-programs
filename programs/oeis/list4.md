@@ -392,7 +392,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A209304](http://oeis.org/A209304) ([L14 program](209/A209304.asm)): Table T(n,k)=n+4*k-4 n, k > 0, read by antidiagonals.
 * [A209345](http://oeis.org/A209345) ([L24 program](209/A209345.asm)): Number of 4-bead necklaces labeled with numbers -n..n allowing reversal, with sum zero with no three beads in a row equal
 * [A209359](http://oeis.org/A209359) ([L10 program](209/A209359.asm)): a(n) = 2^n * (n^4 - 4*n^3 + 18*n^2 - 52*n + 75) - 75.
-* [A209492](http://oeis.org/A209492) ([L30 program](209/A209492.asm)): a(0)=1; for n >= 1, let k = floor((1 + sqrt(8*n-7))/2), m = n - (k^2 - k+2)/2. Then a(n) = 2^k + 2^(m+1) - 1.
+* [A209492](http://oeis.org/A209492) ([L05 program](209/A209492.asm)): a(0)=1; for n >= 1, let k = floor((1 + sqrt(8*n-7))/2), m = n - (k^2 - k+2)/2. Then a(n) = 2^k + 2^(m+1) - 1.
 * [A209505](http://oeis.org/A209505) ([L10 program](209/A209505.asm)): Half the number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having two or four distinct clockwise edge differences.
 * [A209530](http://oeis.org/A209530) ([L10 program](209/A209530.asm)): Half the number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having exactly two distinct clockwise edge differences.
 * [A209594](http://oeis.org/A209594) ([L18 program](209/A209594.asm)): Number of 3 X 3 0..n arrays with every element equal to a diagonal or antidiagonal reflection.
@@ -665,7 +665,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212766](http://oeis.org/A212766) ([L05 program](212/A212766.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w even and x odd.
 * [A212767](http://oeis.org/A212767) ([L11 program](212/A212767.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w even, x even, and w+x=y+z.
 * [A212772](http://oeis.org/A212772) ([L15 program](212/A212772.asm)): Floor((n+1)*(n-3)*(n-4)/12).
-* [A212793](http://oeis.org/A212793) ([L09 program](212/A212793.asm)): Characteristic function of cubefree numbers, A004709.
+* [A212793](http://oeis.org/A212793) ([L03 program](212/A212793.asm)): Characteristic function of cubefree numbers, A004709.
 * [A212797](http://oeis.org/A212797) ([L06 program](212/A212797.asm)): Row 2 of array in A212796.
 * [A212804](http://oeis.org/A212804) ([L07 program](212/A212804.asm)): Expansion of (1 - x)/(1 - x - x^2).
 * [A212823](http://oeis.org/A212823) ([L06 program](212/A212823.asm)): Number of 0..2 arrays of length n with no adjacent pair equal to its immediately preceding adjacent pair, and new values introduced in 0..2 order.
@@ -1332,7 +1332,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A224779](http://oeis.org/A224779) ([L12 program](224/A224779.asm)): One half of the even numbers that are a primitive sum of four nonzero squares at least once.
 * [A224783](http://oeis.org/A224783) ([L12 program](224/A224783.asm)): Denominator of Bernoulli(n,1/2) - Bernoulli(n,0).
 * [A224868](http://oeis.org/A224868) ([L16 program](224/A224868.asm)): a(1) = greatest k such that H(k) - H(4) < 1/3 + 1/4; a(2) = greatest k such that H(k) - H(a(1)) < H(a(1)) - H(4); and for n > 2, a(n) = greatest k such that H(k) - H(a(n-1) > H(a(n-1)) - H(a(n-2)), where H = harmonic number.
-* [A224880](http://oeis.org/A224880) ([L64 program](224/A224880.asm)): a(n) = 2n + sum of divisors of n.
+* [A224880](http://oeis.org/A224880) ([L12 program](224/A224880.asm)): a(n) = 2n + sum of divisors of n.
 * [A224911](http://oeis.org/A224911) ([L04 program](224/A224911.asm)): Greatest prime dividing A190339(n).
 * [A224915](http://oeis.org/A224915) ([L21 program](224/A224915.asm)): a(n) = Sum_{k=0..n} n XOR k where XOR is the bitwise logical exclusive-or operator.
 * [A224923](http://oeis.org/A224923) ([L32 program](224/A224923.asm)): Sum_{i=0..n} Sum_{j=0..n} (i XOR j), where XOR is the binary logical exclusive-or operator.
@@ -1563,6 +1563,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228661](http://oeis.org/A228661) ([L10 program](228/A228661.asm)): Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
 * [A228693](http://oeis.org/A228693) ([L11 program](228/A228693.asm)): Largest number of maximal independent sets of nodes in any tree on n nodes.
 * [A228705](http://oeis.org/A228705) ([L23 program](228/A228705.asm)): Expansion of (1-2*x+4*x^2-2*x^3+x^4)/((1-x)^4*(1+x^2)^2).
+* [A228706](http://oeis.org/A228706) ([L11 program](228/A228706.asm)): Expansion of (1 - 3*x + 5*x^2 - 3*x^3 + x^4)/((1-x)^4*(1+x^2)^2).
 * [A228728](http://oeis.org/A228728) ([L31 program](228/A228728.asm)): a(1)=1, a(2)=2 and for n > 2, a(n) is the least integer > a(n-1) such that there is a permutation b(1), ..., b(n) of a(1), ..., a(n) with b(1) = a(1) and b(n) = a(n), and with the n numbers |b(1)-b(2)|, |b(2)-b(3)|, ..., |b(n-1)-b(n)|, |b(n)-b(1)| pairwise distinct.
 * [A228729](http://oeis.org/A228729) ([L04 program](228/A228729.asm)): Product of the positive squares less than or equal to n.
 * [A228767](http://oeis.org/A228767) ([L13 program](228/A228767.asm)): Second bisection of the inverse binomial transform of the rational sequence with e.g.f. (x/2)*(exp(-x)+1)/(exp(x)-1).
@@ -2022,7 +2023,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239171](http://oeis.org/A239171) ([L11 program](239/A239171.asm)): Number of (n+1) X (1+1) 0..2 arrays with no element greater than all horizontal neighbors or equal to all vertical neighbors.
 * [A239186](http://oeis.org/A239186) ([L13 program](239/A239186.asm)): Sum of the largest two parts in the partitions of 4n into 4 parts with smallest part equal to 1.
 * [A239195](http://oeis.org/A239195) ([L27 program](239/A239195.asm)): Sum of the next to smallest parts in the partitions of 4n into 4 parts with smallest part = 1.
-* [A239229](http://oeis.org/A239229) ([L05 program](239/A239229.asm)): Euler characteristic of n-holed torus: 2 - 2*n.
+* [A239229](http://oeis.org/A239229) ([L03 program](239/A239229.asm)): Euler characteristic of n-holed torus: 2 - 2*n.
 * [A239278](http://oeis.org/A239278) ([L21 program](239/A239278.asm)): Smallest k > 1 such that n*(n+1)*...*(n+k-1) / (n+(n+1)+...+(n+k-1)) is an integer.
 * [A239286](http://oeis.org/A239286) ([L11 program](239/A239286.asm)): Expansion of (x + 1)*(3*x^2 + 2*x + 1)/(x^2 + x + 1)^2.
 * [A239287](http://oeis.org/A239287) ([L04 program](239/A239287.asm)): Triangle T(n,k), 0 <= k <= n, read by rows: T(n,k) = floor(n/2) - min(k,n-k).
@@ -2394,6 +2395,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245555](http://oeis.org/A245555) ([L16 program](245/A245555.asm)): Trajectory of 1 under the morphism 1 -> 12, 2 -> 23, 3 -> 31.
 * [A245578](http://oeis.org/A245578) ([L16 program](245/A245578.asm)): The number of permutations of {0,0,1,1,...,n-1,n-1} that begin with 0 and in which adjacent elements are adjacent mod n.
 * [A245579](http://oeis.org/A245579) ([L13 program](245/A245579.asm)): Number of odd divisors of n multiplied by n.
+* [A245580](http://oeis.org/A245580) ([L21 program](245/A245580.asm)): Smallest Lucas number L(m) > L(n) that is divisible by the n-th Lucas number L(n) = A000204(n).
 * [A245581](http://oeis.org/A245581) ([L09 program](245/A245581.asm)): (5 * (1 + (-1)^(1 + n)) + 2 * n^2) / 4.
 * [A245621](http://oeis.org/A245621) ([L26 program](245/A245621.asm)): Sequence of distinct least nonnegative numbers such that the average of the first n terms is a cube.
 * [A245624](http://oeis.org/A245624) ([L31 program](245/A245624.asm)): Sequence of distinct least positive numbers such that the average of the first n terms is a cube.
