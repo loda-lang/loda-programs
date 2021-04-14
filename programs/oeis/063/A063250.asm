@@ -3,11 +3,15 @@
 
 lpb $0
   mul $0,2
-  mov $1,$0
+  mov $3,$0
   mod $0,2
-  cal $1,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+  cal $3,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
 lpe
-mov $2,$1
+mov $1,-1
+mov $2,$3
 cmp $2,0
-add $1,$2
-log $1,2
+add $3,$2
+lpb $3
+  add $1,1
+  div $3,2
+lpe

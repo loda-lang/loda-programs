@@ -8,14 +8,17 @@ lpb $2
   sub $2,1
   sub $0,$2
   sub $0,2
-  mov $6,$0
-  cmp $6,0
-  add $0,$6
   mul $0,2
-  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mov $4,3
-  sub $4,$0
-  mov $3,$4
-  sub $3,2
-  add $1,$3
+  max $0,2
+  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $0,2
+  mov $4,$0
+  lpb $4
+    mov $3,$4
+    cmp $3,0
+    add $4,$3
+    div $0,$4
+    mov $4,$0
+  lpe
+  add $1,$0
 lpe

@@ -14,7 +14,12 @@ lpb $3
   add $6,1
   pow $6,2
   mul $6,2
-  log $6,7
+  mov $7,-1
+  lpb $6
+    div $6,7
+    add $7,1
+  lpe
+  mov $6,$7
   add $6,1
   mov $4,$6
   lpb $2
