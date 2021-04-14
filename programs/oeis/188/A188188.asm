@@ -20,14 +20,18 @@ lpb $5
     sub $4,1
     mov $6,$0
     add $0,24
-    log $0,4
+    mov $10,-1
+    lpb $0
+      div $0,4
+      add $10,1
+    lpe
     sub $6,3
     mov $7,44
     mul $7,$2
     mul $7,2
     add $7,7
     mov $8,$6
-    sub $8,$0
+    sub $8,$10
     add $7,$8
     div $7,$1
     mov $1,$7
