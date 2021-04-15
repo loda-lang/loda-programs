@@ -3,7 +3,7 @@
 
 sub $1,$0
 add $0,1
-cal $0,253560 ; Multiply n by its largest prime factor: a(n) = A006530(n) * n.
+cal $0,129598 ; a(n) = n * A111089(n).
 add $1,$0
 sub $1,4
 div $1,2
