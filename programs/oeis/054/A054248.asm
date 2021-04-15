@@ -3,7 +3,6 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
 lpb $2
   mov $0,$4
   sub $2,1
@@ -16,9 +15,13 @@ lpb $2
     mul $3,2
     sub $3,1
     mul $5,2
-    add $5,1
     mov $6,$5
-    log $6,2
+    mov $7,-1
+    lpb $6
+      div $6,2
+      add $7,1
+    lpe
+    mov $6,$7
   lpe
   add $3,$6
   trn $3,2

@@ -1,42 +1,27 @@
 ; A272928: Partial sums of A147562.
 ; 0,1,6,15,36,61,98,147,232,321,422,535,684,845,1042,1275,1616,1961,2318,2687,3092,3509,3962,4451,5048,5657,6302,6983,7772,8597,9530,10571,11936,13305,14686,16079,17508,18949,20426,21939,23560,25193,26862,28567,30380
 
-mov $34,$0
-mov $36,$0
-lpb $36
-  clr $0,34
-  mov $0,$34
-  sub $36,1
-  sub $0,$36
-  mov $31,$0
-  mov $33,$0
-  lpb $33
-    mov $0,$31
-    sub $33,1
-    sub $0,$33
-    mov $27,$0
-    mov $29,2
-    lpb $29
-      mov $0,$27
-      sub $29,1
-      add $0,$29
-      sub $0,1
-      cal $0,160410 ; Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
-      mov $1,$0
-      mov $30,$29
-      lpb $30
-        mov $28,$1
-        sub $30,1
-      lpe
-    lpe
-    lpb $27
-      mov $27,0
-      sub $28,$1
-    lpe
-    mov $1,$28
-    div $1,3
-    add $32,$1
-  lpe
-  add $35,$32
+mov $15,$0
+mov $17,$0
+add $17,1
+lpb $17
+  clr $0,15
+  mov $0,$15
+  sub $17,1
+  sub $0,$17
+  add $1,2
+  mul $1,16
+  sub $1,$1
+  sub $1,1
+  add $1,$0
+  mov $2,$0
+  mov $4,$0
+  mov $14,$0
+  mul $14,$0
+  mul $14,$0
+  cal $0,147562 ; Number of "ON" cells at n-th stage in the "Ulam-Warburton" two-dimensional cellular automaton.
+  mov $1,$0
+  div $2,2
+  add $16,$0
 lpe
-mov $1,$35
+mov $1,$16

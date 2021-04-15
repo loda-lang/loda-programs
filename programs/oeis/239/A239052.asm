@@ -1,15 +1,8 @@
 ; A239052: Sum of divisors of 4*n-2.
 ; 3,12,18,24,39,36,42,72,54,60,96,72,93,120,90,96,144,144,114,168,126,132,234,144,171,216,162,216,240,180,186,312,252,204,288,216,222,372,288,240,363,252,324,360,270,336,384,360,294,468,306,312,576
 
-lpb $0
-  mov $1,$0
-  mov $2,$0
-  cmp $2,0
-  add $1,$2
-  mod $0,$1
-  cal $1,5880 ; Theta series of D_4 lattice with respect to edge.
-  sub $1,2
-lpe
-div $1,2
+mul $0,2
+mov $1,3619864
+cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
 mul $1,3
-add $1,3

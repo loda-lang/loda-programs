@@ -4,10 +4,3 @@
 cal $0,37087 ; Beatty sequence for e^(1/e).
 div $0,5
 add $1,$0
-mov $2,0
-mov $4,0
-cal $0,101156 ; a(n) = 2*Fibonacci(n) + 8*Fibonacci(n-5).
-add $0,2
-mul $0,5
-mov $3,1
-mov $4,1

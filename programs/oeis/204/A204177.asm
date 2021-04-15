@@ -1,12 +1,10 @@
 ; A204177: Symmetric matrix based on f(i,j)=(1 if i=1 or j=1 or i=j, and 0 otherwise), by antidiagonals.
 ; 1,1,1,1,1,1,1,0,0,1,1,0,1,0,1,1,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0
 
-mul $0,2
-lpb $0
-  mov $1,$0
-  cal $1,72690 ; (n - A048760(n)) * (A048761(n) - n).
-  mul $1,2
-  add $2,$1
-  sub $0,$2
-lpe
-cmp $1,0
+cal $0,204016 ; Symmetric matrix based on f(i,j) = max{j mod i, i mod j), by antidiagonals.
+mov $1,9
+mov $2,$0
+cmp $2,0
+add $0,$2
+div $1,$0
+div $1,6

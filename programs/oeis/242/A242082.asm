@@ -4,8 +4,6 @@
 lpb $0
   mov $2,$0
   cal $2,96270 ; Fixed point of the morphism 0->01, 1->011.
+  sub $0,$2
   add $1,$2
-  mul $2,$0
-  mov $0,$2
-  sub $0,1
 lpe
