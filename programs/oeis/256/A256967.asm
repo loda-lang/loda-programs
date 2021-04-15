@@ -8,7 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  sub $0,1
+  trn $0,1
   cal $0,72649 ; n occurs Fibonacci(n) times (cf. A000045).
   add $1,$0
 lpe

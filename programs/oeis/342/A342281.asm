@@ -4,6 +4,4 @@
 mul $0,2
 cal $0,286909 ; Positions of 1 in A286907; complement of A286908.
 mov $1,$0
-sub $1,2
 div $1,2
-add $1,1
