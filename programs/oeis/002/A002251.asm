@@ -8,7 +8,7 @@ lpb $12
   mov $0,$10
   sub $12,1
   add $0,$12
-  sub $0,1
+  trn $0,1
   add $4,$0
   mov $7,$0
   cal $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).

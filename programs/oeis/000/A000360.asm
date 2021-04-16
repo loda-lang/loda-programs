@@ -7,7 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
+  trn $0,1
   cal $0,7729 ; 6th binary partition function.
   add $0,1
   div $0,2

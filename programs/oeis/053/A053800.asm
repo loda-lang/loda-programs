@@ -8,7 +8,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  sub $0,1
+  trn $0,1
   cal $0,175846 ; Partial sums of ceiling(n^2/15).
   mul $0,2
   mov $3,$0

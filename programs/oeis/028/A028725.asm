@@ -7,7 +7,7 @@ lpb $3
   mov $0,$4
   sub $3,1
   add $0,$3
-  sub $0,1
+  trn $0,1
   cal $0,331574 ; a(n) is the number of subsets of {1..n} that contain 3 even and 3 odd numbers.
   mov $2,$3
   mov $5,$0

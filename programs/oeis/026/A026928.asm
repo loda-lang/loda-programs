@@ -10,7 +10,7 @@ lpb $29
   add $0,$29
   sub $0,1
   lpb $0
-    sub $0,1
+    trn $0,1
     mov $2,$0
     cal $2,177189 ; Partial sums of round(n^2/16).
     sub $0,5

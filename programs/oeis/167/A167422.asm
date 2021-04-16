@@ -7,7 +7,7 @@ lpb $3
   mov $0,$4
   sub $3,1
   add $0,$3
-  sub $0,1
+  trn $0,1
   mul $0,2
   cal $0,155051 ; Expansion of c(x^2)*(1+x)/(1-x), c(x) the g.f. of A000108.
   mov $2,$3

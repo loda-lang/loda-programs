@@ -8,7 +8,7 @@ lpb $3
   mov $0,$4
   sub $3,1
   sub $0,$3
-  sub $0,1
+  trn $0,1
   mov $2,$0
   cal $2,163606 ; a(n) = ((3 + 2*sqrt(2))*(3 + sqrt(2))^n + (3 - 2*sqrt(2))*(3 - sqrt(2))^n)/2.
   add $1,$2

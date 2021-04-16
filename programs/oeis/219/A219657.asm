@@ -7,7 +7,7 @@ mov $4,$0
 lpb $3
   mov $0,$4
   sub $3,1
-  sub $0,$3
+  trn $0,$3
   cal $0,219652 ; Number of steps to reach 0 starting with n and using the iterated process:  x -> x - (sum of digits in factorial expansion of x).
   add $1,$0
 lpe
