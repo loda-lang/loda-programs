@@ -71,13 +71,14 @@ Core commands:
   generate         Generate a random program and print it
   test             Run test suite
 OEIS commands:
-  mine             Mine programs for OEIS sequences (use -x to overwrite)
-  match    <file>  Match a program to OEIS sequences (use -x to overwrite)
+  mine             Mine programs for OEIS sequences (use -i to use a non-default matcher)
+  match    <file>  Match a program to OEIS sequences (use -i to use a non-default matcher)
   check   <seqID>  Check a program for an OEIS sequence
   maintain         Maintain all programs for OEIS sequences
 Options:
   -l <string>      Log level (values:debug,info,warn,error,alert)
   -k <string>      Configuration file (default:loda.json)
+  -i <string>      Miner to be used (default:default)
   -t <number>      Number of sequence terms (default:20)
   -p <number>      Maximum physical memory in MB (default:1024)
   -c <number>      Maximum number of interpreter cycles (default:10000000)
@@ -85,7 +86,6 @@ Options:
   -b <number>      Print evaluation result in b-file format starting from a given offset
   -s               Evaluate the number of execution steps
   -r               Search for programs of linear sequences (slow)
-  -x               Optimize and overwrite existing programs
 ```
 
 ### Core Commands
