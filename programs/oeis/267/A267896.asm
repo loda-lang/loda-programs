@@ -7,11 +7,10 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  cal $0,74367 ; (p^2-5)/4 for odd primes p.
+  trn $0,0
+  cal $0,222963 ; a(n) = (p-3)*(p+3)/4 where p is the n-th prime.
   mov $2,$3
   mov $4,$0
-  div $4,2
-  mul $4,4
   lpb $2
     mov $1,$4
     sub $2,1
@@ -21,8 +20,6 @@ lpb $5
   sub $1,$4
   mov $5,0
 lpe
-div $1,4
-mul $1,2
 sub $1,4
 div $1,2
 add $1,2

@@ -5,28 +5,3 @@ add $0,1
 mul $0,32
 div $0,20
 mov $1,$0
-add $0,6
-cal $0,40 ; The prime numbers.
-mov $2,$0
-cmp $2,0
-add $3,$0
-add $0,$2
-div $3,$0
-mod $0,2
-mov $0,$1
-div $0,3
-mov $3,$1
-add $3,$0
-mov $3,$0
-mod $3,1
-mov $5,$0
-sub $5,$0
-mov $5,$0
-lpb $3
-  cal $0,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
-  sub $0,$1
-  mov $3,$0
-  mov $4,$5
-lpe
-mov $3,$0
-mov $3,$1
