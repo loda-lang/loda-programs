@@ -4,5 +4,12 @@
 trn $0,1
 cal $0,101357 ; Partial sums of A060354.
 mov $1,$0
+add $0,4
+bin $1,2
+add $0,$1
+bin $1,2
+add $0,$1
+mov $1,$0
+sub $1,4
 mul $1,2
 add $1,1
