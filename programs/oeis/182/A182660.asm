@@ -13,7 +13,12 @@ lpb $5
   lpb $0
     mov $0,3
     add $0,$4
-    log $0,2
+    mov $7,-1
+    lpb $0
+      div $0,2
+      add $7,1
+    lpe
+    mov $0,$7
   lpe
   bin $0,2
   mov $3,$5

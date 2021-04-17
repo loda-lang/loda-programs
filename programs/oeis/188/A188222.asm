@@ -11,13 +11,17 @@ mov $5,24
 add $5,$3
 mov $6,$0
 add $0,25
-log $0,4
+mov $7,-1
+lpb $0
+  div $0,4
+  add $7,1
+lpe
 mov $1,44
 mul $1,$2
 mul $1,2
 add $1,7
 sub $6,3
 mov $4,$6
-sub $4,$0
+sub $4,$7
 add $1,$4
 div $1,$5

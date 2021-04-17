@@ -5,7 +5,12 @@ mov $2,3
 lpb $0
   add $0,1
   mul $2,$0
-  log $0,2
+  mov $3,-1
+  lpb $0
+    div $0,2
+    add $3,1
+  lpe
+  mov $0,$3
   sub $0,1
 lpe
 mov $1,111

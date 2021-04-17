@@ -3,8 +3,4 @@
 
 cal $0,72668 ; Numbers one less than composite numbers.
 cal $0,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
-mul $0,5040
 mov $1,$0
-sub $1,5040
-div $1,5040
-add $1,1

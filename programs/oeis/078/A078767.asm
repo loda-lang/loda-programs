@@ -5,7 +5,12 @@ cal $0,297251 ; Numbers whose base-3 digits have greater up-variation than down-
 mov $2,11700
 sub $2,$0
 mul $2,$0
-log $2,2
+mov $3,-1
+lpb $2
+  div $2,2
+  add $3,1
+lpe
+mov $2,$3
 sub $2,1
 add $1,$2
 sub $1,14

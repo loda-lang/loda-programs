@@ -8,7 +8,7 @@ lpb $7
   mov $0,$5
   sub $7,1
   add $0,$7
-  sub $0,1
+  trn $0,1
   lpb $0
     mov $1,$0
     cal $1,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...

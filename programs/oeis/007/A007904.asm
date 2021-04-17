@@ -17,9 +17,6 @@ lpb $2
   mov $7,$5
   mov $8,10
   lpb $0
-    add $3,5
-    mov $4,$3
-    log $4,2
     mov $0,$4
     mov $3,1
     mov $6,2

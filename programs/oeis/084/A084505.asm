@@ -8,14 +8,17 @@ lpb $7
   sub $7,1
   sub $0,$7
   lpb $0
-    sub $0,1
-    trn $0,1
+    sub $0,2
     add $2,1
     add $0,$2
-    log $0,4
-    mov $6,1
-    add $6,$0
+    mov $8,-1
+    lpb $0
+      div $0,4
+      add $8,1
+    lpe
     bin $0,$4
+    mov $6,1
+    add $6,$8
     mov $3,$6
   lpe
   add $3,1

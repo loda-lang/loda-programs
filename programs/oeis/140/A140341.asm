@@ -4,7 +4,12 @@
 add $0,2
 mul $0,4
 sub $0,1
-log $0,2
+mov $5,-1
+lpb $0
+  div $0,2
+  add $5,1
+lpe
+mov $0,$5
 mul $0,2
 mov $3,1
 mov $4,$0

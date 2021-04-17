@@ -6,13 +6,16 @@ mov $3,$0
 add $3,$0
 mov $4,$0
 mul $0,2
-mov $1,$0
+mov $5,$0
 add $0,$3
-add $1,3
+mov $1,-1
 mul $2,$0
 mul $2,16
-mul $1,$2
-add $1,2
-log $1,7
+add $5,3
+mul $5,$2
+lpb $5
+  add $1,1
+  div $5,7
+lpe
 trn $1,1
 add $1,$4

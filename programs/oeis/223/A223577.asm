@@ -1,4 +1,4 @@
-; A223577: Positive integers n for which there is exactly one negative integer m such that -n = floor(cot(pi/(2m))).
+; A223577: Positive integers n for which there is exactly one negative integer m such that -n = floor(cot(Pi/(2*m))).
 ; 1,2,3,5,8,10,12,15,17,19,22,24,26,29,31,33,35,38,40,42,45,47,49,52,54,56,59,61,63,66,68,70,73,75,77,80,82,84,87,89,91,94,96,98,101,103,105,108,110,112,115,117,119,122,124,126,129,131,133,136,138
 
 mov $6,$0

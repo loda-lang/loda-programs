@@ -14,11 +14,14 @@ lpb $13
     mov $0,$7
     sub $9,1
     add $0,$9
-    trn $0,1
-    add $0,2
-    log $0,2
+    add $0,1
+    mov $14,-1
+    lpb $0
+      div $0,2
+      add $14,1
+    lpe
     mov $6,2
-    pow $6,$0
+    pow $6,$14
     mov $0,$6
     mov $3,81
     mov $5,$6

@@ -3,5 +3,8 @@
 
 add $0,3
 cal $0,87275 ; Write n in binary: 1ab..yz, then a(n) = 1b..yz + ... + 1yz + 1z + 1.
-log $0,2
-mov $1,$0
+mov $1,-1
+lpb $0
+  div $0,2
+  add $1,1
+lpe

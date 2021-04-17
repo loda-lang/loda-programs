@@ -3,6 +3,11 @@
 
 lpb $0
   add $0,1
-  log $0,4
+  mov $2,-1
+  lpb $0
+    div $0,4
+    add $2,1
+  lpe
+  mov $0,$2
   add $1,1
 lpe

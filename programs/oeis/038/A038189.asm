@@ -4,8 +4,6 @@
 lpb $0
   dif $0,2
 lpe
-lpb $0
-  mod $0,4
-lpe
+div $0,2
+mod $0,2
 mov $1,$0
-div $1,2

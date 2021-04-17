@@ -5,12 +5,15 @@ mov $2,$0
 gcd $0,2
 mul $2,$0
 lpb $0
-  mov $0,$1
-  mov $1,2
+  mov $0,$3
   mul $2,4
-  add $2,1
+  mov $3,2
 lpe
-mul $1,$2
-log $1,2
+mov $1,-1
+mul $3,$2
+lpb $3
+  add $1,1
+  div $3,2
+lpe
 add $1,3
 trn $1,5

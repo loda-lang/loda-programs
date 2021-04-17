@@ -1,37 +1,6 @@
 ; A319527: a(n) = 7 * sigma(n).
 ; 7,21,28,49,42,84,56,105,91,126,84,196,98,168,168,217,126,273,140,294,224,252,168,420,217,294,280,392,210,504,224,441,336,378,336,637,266,420,392,630,294,672,308,588,546,504,336,868,399,651,504,686,378,840,504,840,560,630,420,1176,434,672,728,889
 
-mov $3,$0
-mov $5,$0
-mov $7,2
-lpb $7
-  mov $0,$5
-  sub $7,1
-  add $0,$7
-  sub $0,1
-  cal $0,244049 ; Sum of all proper divisors of all positive integers <= n.
-  mov $4,$0
-  mul $4,2
-  sub $4,3
-  mov $1,$4
-  mov $8,$7
-  lpb $8
-    mov $6,$1
-    sub $8,1
-  lpe
-lpe
-lpb $5
-  mov $5,0
-  sub $6,$1
-lpe
-mov $1,$6
-add $1,3
-mul $1,3
-add $1,5
-mov $2,$3
-mul $2,6
-add $1,$2
-sub $1,8
-div $1,6
+cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
 mul $1,7
-add $1,7

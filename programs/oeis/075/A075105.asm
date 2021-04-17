@@ -5,7 +5,12 @@ mov $2,$0
 add $2,2
 mov $0,$2
 mov $1,$2
-log $1,2
+mov $3,-1
+lpb $1
+  div $1,2
+  add $3,1
+lpe
+mov $1,$3
 gcd $1,$2
 div $0,$1
 mov $1,$0

@@ -9,20 +9,24 @@ lpb $0
   mod $6,6
   mul $6,2
   mul $0,$6
-  add $1,1
-  mul $1,2
-  mul $1,$0
   mov $3,1
   add $6,1
+  add $7,1
+  mul $7,2
+  mul $7,$0
 lpe
+mov $1,-1
 mov $2,3
 sub $2,$3
 add $2,4
 add $5,3
 mov $4,$5
-add $4,$1
-mov $1,1
-add $1,$4
-add $2,$1
-add $1,$2
-log $1,17
+add $4,$7
+mov $7,1
+add $7,$4
+add $2,$7
+add $7,$2
+lpb $7
+  add $1,1
+  div $7,17
+lpe

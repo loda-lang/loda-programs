@@ -1,13 +1,24 @@
 ; A107239: Sum of squares of tribonacci numbers (A000073).
 ; 0,0,1,2,6,22,71,240,816,2752,9313,31514,106590,360606,1219935,4126960,13961456,47231280,159782161,540539330,1828631430,6186215574,20927817799,70798300288,239508933824,810252920400,2741065994769
 
-mov $2,$0
-mov $3,$0
-lpb $2
-  mov $0,$3
-  sub $2,1
-  sub $0,$2
-  cal $0,73 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.
-  pow $0,2
-  add $1,$0
+mov $5,$0
+mov $7,$0
+add $7,1
+lpb $7
+  clr $0,5
+  mov $0,$5
+  sub $7,1
+  sub $0,$7
+  add $1,8
+  cmp $1,0
+  mul $1,-1
+  mov $2,7
+  mov $4,2
+  cal $0,85697 ; a(n) = T(n+2)^2, where T(n) = tribonacci numbers (A000073).
+  add $1,7
+  cmp $1,0
+  sub $1,6
+  mov $1,$0
+  add $6,$0
 lpe
+mov $1,$6

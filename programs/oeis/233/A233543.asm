@@ -1,11 +1,6 @@
 ; A233543: Table T(n,m) = m! read by rows.
 ; 1,1,1,1,1,2,1,1,2,6,1,1,2,6,24,1,1,2,6,24,120,1,1,2,6,24,120,720,1,1,2,6,24,120,720,5040,1,1,2,6,24,120,720,5040,40320,1,1,2,6,24,120,720,5040,40320,362880
 
-lpb $0
-  mov $1,$0
-  add $2,1
-  sub $0,$2
-  trn $0,1
-lpe
-sub $1,1
-cal $1,142
+cal $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+cal $0,142
+mov $1,$0

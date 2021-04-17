@@ -4,9 +4,8 @@
 mov $4,$0
 mul $0,2
 cal $0,239195 ; Sum of the next to smallest parts in the partitions of 4n into 4 parts with smallest part = 1.
-sub $0,2
 mov $1,$0
-add $1,3
+add $1,1
 mov $2,$4
 mul $2,3
 add $1,$2

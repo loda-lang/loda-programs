@@ -4,5 +4,9 @@
 add $0,1
 mov $1,$0
 mov $2,$0
-log $2,2
-gcd $1,$2
+mov $3,-1
+lpb $2
+  div $2,2
+  add $3,1
+lpe
+gcd $1,$3

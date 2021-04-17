@@ -3,4 +3,11 @@
 
 cal $0,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
 div $0,2
+mov $2,$0
+add $2,$0
+mul $2,2
+mov $0,$2
+mul $2,2
+add $0,$2
 mov $1,$0
+div $1,12

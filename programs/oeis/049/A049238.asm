@@ -3,5 +3,5 @@
 
 add $0,1
 cal $0,244797 ; Number of moduli m such that (prime(n) mod m) = 2.
-mov $1,$0
+add $1,$0
 add $1,1

@@ -3,13 +3,14 @@
 
 mov $2,$0
 add $2,1
+mov $4,$0
 lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,49474 ; a(n) = ceiling(n/sqrt(2)).
+  mul $0,2
+  cal $0,172474 ; a(n) = floor(n*sqrt(2)/4).
   mov $3,$0
-  cmp $3,0
-  add $0,$3
-  add $1,$0
+  add $3,1
+  add $1,$3
 lpe

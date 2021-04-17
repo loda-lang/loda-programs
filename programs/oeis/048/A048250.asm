@@ -3,8 +3,4 @@
 
 cal $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
 cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mul $0,216
 mov $1,$0
-sub $1,216
-div $1,216
-add $1,1

@@ -3,10 +3,9 @@
 
 mov $4,$0
 mov $0,1
-sub $4,1
+mul $0,$4
 mov $2,$4
-add $2,1
-mul $0,$2
+sub $4,1
 mov $4,$0
 cal $4,142
 mov $1,$4

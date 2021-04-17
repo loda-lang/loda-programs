@@ -3,5 +3,9 @@
 
 cal $0,40 ; The prime numbers.
 mul $0,2
-cal $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+cal $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
 mov $1,$0
+sub $1,2
+div $1,2
+mul $1,2
+add $1,3

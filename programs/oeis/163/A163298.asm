@@ -3,13 +3,11 @@
 
 mov $2,$0
 cal $0,88580 ; a(n) = 1 + sigma(n).
-lpb $2
-  sub $0,1
-  div $2,2
+lpb $0
+  lpb $2
+    sub $0,1
+    div $2,2
+  lpe
 lpe
-add $0,1
-mul $0,3
 mov $1,$0
-sub $1,9
-div $1,3
-add $1,1
+sub $1,1

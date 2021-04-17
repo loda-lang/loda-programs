@@ -4,7 +4,12 @@
 cal $0,122002 ; a(0)=5; otherwise a(n) = (n mod 4) if n is odd, a(n) = h + 4, where h = (highest odd divisor of n) mod 4 if n is even.
 mov $2,4
 sub $2,$0
-log $0,2
+mov $4,-1
+lpb $0
+  div $0,2
+  add $4,1
+lpe
+mov $0,$4
 mov $3,-4
 lpb $3
   add $0,1

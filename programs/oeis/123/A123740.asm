@@ -1,6 +1,13 @@
 ; A123740: Characteristic sequence for Wythoff AB-numbers A003623.
 ; 0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1
 
-cal $0,270788 ; Unique fixed point of the 3-symbol Fibonacci morphism phi-hat_2.
-mov $1,$0
-div $1,3
+mov $1,5
+mov $2,$0
+lpb $1
+  mov $0,$2
+  add $0,1
+  sub $2,1
+  cmp $$0,$1
+  cal $0,120614 ; a(n) = g(n+1) - g(n) where g(k) = floor(phi*floor(k/phi)) and phi = (1+sqrt(5))/2.
+  mov $1,$0
+lpe

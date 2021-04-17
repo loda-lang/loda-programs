@@ -3,22 +3,20 @@
 
 mov $6,$0
 mov $8,$0
+add $8,1
 lpb $8
   clr $0,6
   mov $0,$6
   sub $8,1
   sub $0,$8
+  add $5,$0
   cal $0,334136 ; a(n) = (n-1)*sigma(n) where sigma is the sum of divisors A000203.
-  add $2,$0
-  mul $2,2
-  mov $0,$2
-  mov $2,1
-  add $3,2
-  add $2,$3
-  add $0,$2
+  mov $1,4
+  add $1,$0
+  sub $1,$0
   mov $1,$0
-  sub $1,3
-  div $1,2
-  add $7,$1
+  mov $2,$0
+  mov $2,$0
+  add $7,$0
 lpe
 mov $1,$7
