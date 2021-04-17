@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $3,$0
-  cal $0,55945 ; n - reversal of base 2 digits of n (and then the result is written in base 10).
+  cal $0,55945 ; a(n) = n - (reversal of base-2 digits of n) (and then the result is written in base 10).
   lpb $0
     div $0,4
     mov $3,$0
