@@ -3,8 +3,9 @@
 
 mov $1,$0
 lpb $0
-  mov $0,3
-  mul $1,2
+  pow $0,2
+  div $0,4
 lpe
+add $1,$0
 trn $1,1
 add $1,1
