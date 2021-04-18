@@ -5,5 +5,8 @@ mul $0,2
 add $0,2
 bin $0,2
 add $0,1
-log $0,4
-mov $1,$0
+mov $1,-1
+lpb $0
+  div $0,4
+  add $1,1
+lpe
