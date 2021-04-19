@@ -7,7 +7,7 @@ lpb $3
   mov $0,$4
   sub $3,1
   sub $0,$3
-  sub $0,1
+  trn $0,1
   cal $0,97337 ; Integer part of the edge of a cube that has space-diagonal n.
   mov $2,$0
   add $2,1

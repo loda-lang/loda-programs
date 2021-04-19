@@ -8,7 +8,7 @@ lpb $29
   mov $0,$27
   sub $29,1
   add $0,$29
-  sub $0,1
+  trn $0,1
   cal $0,1400 ; Number of partitions of n into at most 4 parts.
   add $4,$0
   mov $1,$4

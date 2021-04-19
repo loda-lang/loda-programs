@@ -9,14 +9,10 @@ lpb $7
   sub $7,1
   add $0,$7
   sub $0,1
-  lpb $0
-    mov $1,$0
-    cal $1,25791 ; Expansion of 1/((1-x)(1-x^9)(1-x^10)).
-    sub $0,2
-    add $2,$1
-  lpe
-  mov $1,$2
-  add $1,1
+  trn $0,$1
+  add $4,$0
+  cal $4,29027 ; Expansion of 1/((1-x)(1-x^2)(1-x^9)(1-x^10)).
+  mov $1,$4
   mov $8,$7
   lpb $8
     mov $6,$1
