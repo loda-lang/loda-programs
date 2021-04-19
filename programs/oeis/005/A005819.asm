@@ -13,7 +13,7 @@ lpb $2
   lpb $0
     mov $3,$0
     cal $3,49696 ; a(n)=T(n,n), array T as in A049695.
-    sub $3,4
+    trn $3,4
     cal $3,92038 ; a(n+1) = a(n) + (a(n) mod 2)^(n mod a(n)), a(1) = 1.
     mov $0,1
   lpe

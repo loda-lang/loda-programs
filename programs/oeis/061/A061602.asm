@@ -3,8 +3,8 @@
 
 mov $2,$0
 sub $2,$0
-sub $0,1
-sub $2,$0
+trn $0,1
+trn $2,$0
 cal $0,241404 ; Sum of n and the sum of the factorials of its digits.
 add $0,$2
 trn $0,2

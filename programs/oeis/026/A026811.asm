@@ -12,7 +12,7 @@ lpb $4
   lpb $0
     mov $2,$0
     cal $2,5044 ; Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
-    sub $0,5
+    trn $0,5
     add $3,$2
   lpe
   mov $5,$3

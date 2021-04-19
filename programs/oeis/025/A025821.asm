@@ -9,16 +9,10 @@ lpb $7
   sub $7,1
   add $0,$7
   sub $0,1
-  add $2,17
-  lpb $0
-    mov $1,$0
-    sub $0,1
-    cal $1,25789 ; Expansion of 1/((1-x)(1-x^8)(1-x^9)).
-    sub $0,1
-    add $2,$1
-  lpe
-  mov $1,$2
-  sub $1,16
+  trn $0,$1
+  add $4,$0
+  cal $4,29025 ; Expansion of 1/((1-x)(1-x^2)(1-x^8)(1-x^9)).
+  mov $1,$4
   mov $8,$7
   lpb $8
     mov $6,$1

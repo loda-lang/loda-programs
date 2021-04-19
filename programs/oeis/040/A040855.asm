@@ -6,7 +6,7 @@ lpb $0
   mov $1,$0
   cal $1,298011 ; If n = Sum_{i=1..h} 2^b_i with 0 <= b_1 < ... < b_h, then a(n) = Sum_{i=1..h} i * 2^b_i.
   div $0,8
-  sub $0,1
+  trn $0,1
 lpe
 mov $2,$1
 cmp $2,0
