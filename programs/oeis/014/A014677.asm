@@ -10,6 +10,7 @@ lpb $5
   sub $0,1
   mov $6,$0
   add $0,1
+  max $0,0
   cal $0,276868 ; First differences of the Beatty sequence A276855 for 3 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
   mov $3,$0
   pow $3,2

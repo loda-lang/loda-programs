@@ -7,7 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,2
+  trn $0,2
   cal $0,78471 ; Sum of all odd divisors of all positive integers <= n.
   add $0,3
   mul $0,2

@@ -14,7 +14,7 @@ lpb $3
     mov $0,$4
     sub $6,1
     add $0,$6
-    sub $0,1
+    trn $0,1
     cal $0,23550 ; Convolution of natural numbers >= 2 and (F(2), F(3), F(4), ...).
     div $0,2
     mul $0,2

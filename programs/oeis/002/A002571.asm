@@ -9,6 +9,7 @@ lpb $8
   sub $8,1
   add $0,$8
   add $0,1
+  max $0,0
   cal $0,180665 ; Golden Triangle sums: a(n)=a(n-2)+A001654(n) with a(0)=0 and a(1)=1.
   add $2,$0
   sub $2,$0

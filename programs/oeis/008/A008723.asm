@@ -13,6 +13,7 @@ lpb $7
   lpb $0
     mov $1,$0
     sub $0,1
+    max $1,0
     cal $1,25766 ; Expansion of 1/((1-x)(1-x^2)(1-x^11)).
     sub $0,1
     add $2,$1

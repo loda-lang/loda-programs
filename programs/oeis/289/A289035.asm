@@ -8,7 +8,7 @@ lpb $4
   add $0,$4
   mov $2,$0
   sub $0,1
-  sub $2,3
+  trn $2,3
   cal $2,194920 ; a(n) = n - floor(n/sqrt(2)).
   sub $2,$6
   mov $3,$4

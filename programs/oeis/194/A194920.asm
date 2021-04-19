@@ -14,6 +14,7 @@ lpb $2
     sub $7,1
     add $0,$7
     mov $3,$0
+    max $3,0
     sub $0,1
     cal $3,195128 ; a(n) = 2*n - floor(n*sqrt(1/2)).
     mov $8,$7
