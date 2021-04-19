@@ -20,7 +20,7 @@ lpb $2
       mov $0,$5
       sub $7,1
       add $0,$7
-      sub $0,1
+      trn $0,1
       cal $0,28495 ; Expansion of (1-x^2)/(1-x-2*x^2+x^3).
       mul $0,2
       sub $0,2

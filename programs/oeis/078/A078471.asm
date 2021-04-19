@@ -7,7 +7,7 @@ add $4,1
 lpb $4
   mov $0,$2
   sub $4,1
-  sub $0,$4
+  trn $0,$4
   cal $0,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
   cal $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
   mov $3,$0

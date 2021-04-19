@@ -23,7 +23,7 @@ lpb $36
       add $0,$29
       sub $0,1
       lpb $0
-        sub $0,1
+        trn $0,1
         mov $1,$0
         cal $1,99921 ; a(n) = 5*Fibonacci(n)^2.
         add $2,$1
