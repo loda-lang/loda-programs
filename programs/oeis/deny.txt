@@ -51,7 +51,6 @@ A006123: Erroneous version of A000085.
 A006140: Erroneous version of A003406.
 A006263: Erroneous version of A014221.
 A006510: Duplicate of A006055.
-A006519: Highest power of 2 dividing n.
 A006775: Erroneous version of A309982.
 A006808: Essentially a duplicate of A006727.
 A006826: Erroneous version of A003182.
@@ -262,7 +261,6 @@ A037142: Erroneous version of A047995: Number of impartial misere games born on 
 A037163: Erroneous version of A001679.
 A037181: Incorrect version of A107357.
 A037206: Duplicate of A065530.
-A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
 A037338: Erroneous version of the sequence A001970(n) - 2.
 A037434: Duplicate of A033170.
 A037457: Duplicate of A037314.
@@ -273,10 +271,8 @@ A037948: Duplicate of A007659.
 A038136: Erroneous version of A134996.
 A038267: Duplicate of A027466.
 A038495: Duplicate of A007059.
-A038500: Highest power of 3 dividing n.
 A038628: Erroneous version of A039686.
 A038689: Duplicate of A030000.
-A038712: Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
 A038811: Duplicate of A028505.
 A039620: Erroneous version of A008296.
 A039659: Erroneous version of A039919.
@@ -461,7 +457,6 @@ A060767: Erroneous version of A057981.
 A060799: Erroneous version of A046017.
 A060809: Erroneous version of A006887.
 A060830: Erroneous version of A120427.
-A060904: Largest power of 5 that divides n.
 A060960: Duplicate of A073642.
 A060994: Duplicate of A031146.
 A061016: Duplicate of A038366.
@@ -1005,8 +1000,6 @@ A088657: Except for initial 0, same as A005213.
 A088664: Duplicate of A023219.
 A088681: Duplicate of A078584.
 A088706: Duplicate of A087710.
-A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
-A088838: Numerator of the quotient sigma(3n)/sigma(n).
 A088923: Duplicate of A011539.
 A088970: Duplicate of A068425.
 A089023: Duplicate of A035610.
@@ -1204,7 +1197,6 @@ A100653: Erroneous version of A002208.
 A100654: Erroneous version of A002209.
 A100815: Erroneous version of A010050.
 A100816: Erroneous version of A010050.
-A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A100991: Duplicate of A075821.
 A101019: Duplicate of A056266.
 A101141: Duplicate of A056258.
@@ -1374,7 +1366,6 @@ A134961: Erroneous version of A024507.
 A135043: Duplicate of A054966.
 A135279: Erroneous version of A005097.
 A135460: Erroneous version of A005251.
-A135481: a(n) = 2^A007814(n+1) - 1.
 A135584: Duplicate of A124013.
 A135995: Erroneous version of A046850 found on the Internet.
 A136434: Duplicate of A121670.
@@ -1400,7 +1391,6 @@ A140393: Erroneous duplicate of A000170, see comments.
 A140441: Erroneous version of A071881.
 A140465: Erroneous version of A141347.
 A140591: Duplicate of A095901.
-A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 A140758: Floor(n*Pi/2).
 A140762: Erroneous version of A159578.
 A140813: Duplicate of A073841.
@@ -1477,7 +1467,6 @@ A159839: Erroneous version of A007770.
 A159942: Duplicate of A102339.
 A159985: Erroneous version of A259667
 A160053: Duplicate of A140612.
-A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A160507: Duplicate of A071734.
 A160701: Duplicate of A137551.
 A160771: Erroneous version of A040976.
@@ -1503,7 +1492,6 @@ A169971: Erroneous version of A002689.
 A171112: Duplicate of A171108.
 A171114: Duplicate of A328551.
 A171115: Duplicate of A328552.
-A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
 A172321: Duplicate of A154689.
 A172432: Duplicate of A098952.
 A173709: Duplicate of A144226.
@@ -1690,7 +1678,6 @@ A266162: Erroneous version of A004143
 A266242: Numbers n such that the initial digit of the fractional part of n*Pi is 0.
 A266757: Erroneous version of A005263.
 A267011: Duplicate of A258206.
-A268354: Highest power of 7 dividing n.
 A268428: a(n) = (3*(n^2+n+99)+cos(Pi*n/2)-sin(Pi*n/2))/2.
 A268521: Erroneous version of A268518.
 A269510: Duplicate of A093907.
