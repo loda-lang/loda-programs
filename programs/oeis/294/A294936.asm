@@ -3,10 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,48050 ; Chowla's function: sum of divisors of n except 1 and n.
-  sub $2,$0
-  sub $0,$2
-  sub $0,1
-  mov $1,22
+  cal $2,60862 ; a(n) = 0 if n is deficient, 1 if n is abundant, 2 if n is perfect.
+  mov $0,3
+  mov $1,$2
+  min $1,1
 lpe
-div $1,22

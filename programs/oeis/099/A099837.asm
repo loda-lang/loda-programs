@@ -21,5 +21,4 @@ lpb $0
     lpe
   lpe
 lpe
-sub $1,$0
 add $1,1
