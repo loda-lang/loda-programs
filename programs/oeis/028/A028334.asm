@@ -4,6 +4,4 @@
 add $0,1
 cal $0,1223 ; Prime gaps: differences between consecutive primes.
 mov $1,$0
-sub $1,2
 div $1,2
-add $1,1
