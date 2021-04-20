@@ -3,6 +3,5 @@
 
 cal $0,239050 ; a(n) = 4*sigma(n).
 mov $1,$0
-sub $1,4
 div $1,4
-add $1,2
+add $1,1
