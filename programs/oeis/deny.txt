@@ -1122,6 +1122,7 @@ A094532: Duplicate of A092980.
 A094560: Initial decimal digit of Pi*n, Pi=3.1415...
 A094579: Duplicate of A029729.
 A094583: Erroneous version of A002058.
+A094629: Erroneous version of A052216.
 A094742: Duplicate of A008578.
 A094760: Duplicate of A083956.
 A094805: Duplicate of A055193.
