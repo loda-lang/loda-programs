@@ -1977,7 +1977,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A015249](http://oeis.org/A015249) ([L09 program](015/A015249.asm)): Gaussian binomial coefficient [ n,2 ] for q = -2.
 * [A015440](http://oeis.org/A015440) ([L15 program](015/A015440.asm)): Generalized Fibonacci numbers.
 * [A015441](http://oeis.org/A015441) ([L14 program](015/A015441.asm)): Generalized Fibonacci numbers.
-* [A015442](http://oeis.org/A015442) ([L35 program](015/A015442.asm)): Generalized Fibonacci numbers: a(n) = a(n-1) + 7*a(n-2), a(0)=0, a(1)=1.
 * [A015443](http://oeis.org/A015443) ([L18 program](015/A015443.asm)): Generalized Fibonacci numbers: a(n) = a(n-1) + 8*a(n-2).
 * [A015445](http://oeis.org/A015445) ([L14 program](015/A015445.asm)): Generalized Fibonacci numbers: a(n) = a(n-1) + 9*a(n-2).
 * [A015446](http://oeis.org/A015446) ([L13 program](015/A015446.asm)): Generalized Fibonacci numbers: a(n) = a(n-1) + 10*a(n-2).
@@ -5648,9 +5647,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048702](http://oeis.org/A048702) ([L06 program](048/A048702.asm)): Binary palindromes of even length divided by 3.
 * [A048703](http://oeis.org/A048703) ([L09 program](048/A048703.asm)): Numbers which in base 4 are palindromes and have an even number of digits.
 * [A048704](http://oeis.org/A048704) ([L08 program](048/A048704.asm)): Base 4 palindromes of even length divided by 5. a(n) = A048703(n)/5.
-* [A048724](http://oeis.org/A048724) ([L16 program](048/A048724.asm)): Write n and 2n in binary and add them mod 2.
+* [A048724](http://oeis.org/A048724) ([L11 program](048/A048724.asm)): Write n and 2n in binary and add them mod 2.
 * [A048725](http://oeis.org/A048725) ([L16 program](048/A048725.asm)): a(n) = Xmult(n,5) or rule90(n,1).
-* [A048726](http://oeis.org/A048726) ([L03 program](048/A048726.asm)): a(n) = Xmult(n,6), or 2*A048724(n).
+* [A048726](http://oeis.org/A048726) ([L05 program](048/A048726.asm)): a(n) = Xmult(n,6), or 2*A048724(n).
 * [A048728](http://oeis.org/A048728) ([L04 program](048/A048728.asm)): Differences between A008585 (multiples of 3) and A048724.
 * [A048729](http://oeis.org/A048729) ([L08 program](048/A048729.asm)): Differences between A008587 (multiples of 5) and A048725
 * [A048735](http://oeis.org/A048735) ([L03 program](048/A048735.asm)): a(n) = (n AND floor(n/2)), where AND is bitwise and-operator (A004198).
