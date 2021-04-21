@@ -12,12 +12,12 @@ pow $2,2
 
 ; Increment to the upper bound, since the most computer languages starts from 0 rather than 1.
 add $2,1
+
+; Use $5 for the current iteration N.
 lpb $2
     sub $2,1
 
-    mov $3,$1
-    mul $3,-1
-    max $3,$6
+    mov $3,$5
     cal $3,10051  ; Characteristic function of primes: 1 if n is prime, else 0.
     sub $0,$3     ; decrement when it's a prime
 
@@ -27,7 +27,7 @@ lpb $2
     cmp $4,$0
     mul $2,$4
 
-    mul $3,$6    ; keep N, if prime else reset
+    mul $3,$5    ; keep N, if prime else reset
     add $1,$3    ; result += prime or zero
-    add $6,1     ; N += 1
+    add $5,1     ; N += 1
 lpe
