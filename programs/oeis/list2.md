@@ -379,6 +379,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A103164](http://oeis.org/A103164) ([L16 program](103/A103164.asm)): Integers but with the primes squared.
 * [A103168](http://oeis.org/A103168) ([L08 program](103/A103168.asm)): a(n) = remainder when (n written backwards) is divided by n.
 * [A103177](http://oeis.org/A103177) ([L12 program](103/A103177.asm)): (7*3^n + 2n + 5)/4.
+* [A103192](http://oeis.org/A103192) ([L18 program](103/A103192.asm)): Trajectory of 1 under repeated application of the function n -> A102370(n).
 * [A103196](http://oeis.org/A103196) ([L22 program](103/A103196.asm)): a(n) = (1/9)(2^(n+3)-(-1)^n(3n-1)).
 * [A103202](http://oeis.org/A103202) ([L17 program](103/A103202.asm)): A102370 sorted.
 * [A103204](http://oeis.org/A103204) ([L05 program](103/A103204.asm)): a(1) = 2, a(2) = 4; a(n) = 2*a(n-1) - 1.
@@ -728,7 +729,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A107253](http://oeis.org/A107253) ([L35 program](107/A107253.asm)): a(n) = n^4 - 15*n + 15.
 * [A107255](http://oeis.org/A107255) ([L37 program](107/A107255.asm)): a(n) = n^5 - 31*n + 31, with n*a(n) + n*( n - 1 )*31 = n^6.
 * [A107256](http://oeis.org/A107256) ([L50 program](107/A107256.asm)): a(n) = n^6 - 63*n + 63, with n*a(n) + n*(n-1)*63 = n^7.
-* [A107286](http://oeis.org/A107286) ([L06 program](107/A107286.asm)): a(0) = 0; for n>0, minimal prime factor of n, or 1 if n is 1 or a prime.
 * [A107323](http://oeis.org/A107323) ([L07 program](107/A107323.asm)): If n-th prime is 6m-1, then a(n) = 6m+1. If n-th prime is 6m+1, then a(n) = 6m-1.
 * [A107347](http://oeis.org/A107347) ([L05 program](107/A107347.asm)): Number of even semiprimes strictly between prime(n) and 2*prime(n).
 * [A107351](http://oeis.org/A107351) ([L30 program](107/A107351.asm)): Expansion of (1+x^3)/((1-x)^3*(1-x^2)^3*(1-x^3)).
@@ -943,6 +943,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109753](http://oeis.org/A109753) ([L03 program](109/A109753.asm)): n^3 mod 8; the periodic sequence {0,1,0,3,0,5,0,7}.
 * [A109763](http://oeis.org/A109763) ([L03 program](109/A109763.asm)): Primes repeated.
 * [A109764](http://oeis.org/A109764) ([L07 program](109/A109764.asm)): Sum of the first n^2 squares.
+* [A109765](http://oeis.org/A109765) ([L13 program](109/A109765.asm)): Expansion of x/((4*x-1)*(2*x-1)*(x+1)).
 * [A109768](http://oeis.org/A109768) ([L04 program](109/A109768.asm)): a(n) = gcd(3^n-2,2^n-3).
 * [A109786](http://oeis.org/A109786) ([L08 program](109/A109786.asm)): Expansion of -(x+2*x^2+3*x^3-1+5*x^4)/((x+1)*(x^2-3*x+1)*(1+x^2)).
 * [A109794](http://oeis.org/A109794) ([L15 program](109/A109794.asm)): a(2n) = A001906(n+1), a(2n+1) = A002878(n).

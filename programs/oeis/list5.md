@@ -184,6 +184,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254640](http://oeis.org/A254640) ([L07 program](254/A254640.asm)): Third partial sums of sixth powers (A001014).
 * [A254641](http://oeis.org/A254641) ([L20 program](254/A254641.asm)): Third partial sums of seventh powers (A001015).
 * [A254642](http://oeis.org/A254642) ([L07 program](254/A254642.asm)): Third partial sums of eighth powers (A001016).
+* [A254646](http://oeis.org/A254646) ([L13 program](254/A254646.asm)): Fourth partial sums of seventh powers (A001015).
 * [A254647](http://oeis.org/A254647) ([L11 program](254/A254647.asm)): Fourth partial sums of eighth powers (A001016).
 * [A254651](http://oeis.org/A254651) ([L18 program](254/A254651.asm)): Characteristic function of A254614, numbers that are either odd or evil (or both).
 * [A254663](http://oeis.org/A254663) ([L16 program](254/A254663.asm)): Numbers of n-length words on alphabet {0,1,...,7} with no subwords ii, where i is from {0,1,...,5}.
