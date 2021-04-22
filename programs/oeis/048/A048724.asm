@@ -10,7 +10,7 @@ lpb $0
     div $0,2 ; Remove the lowest bit from n
     add $3,$0
     mod $3,2 
-    ; Now $3 holds the bitwise xor with $0 and $5
+    ; Now $3 holds BIT1($0) bitwise xor BIT0($0)
 
     ; Scale up the bit, and add to result
     mul $3,$4

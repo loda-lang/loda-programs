@@ -10,7 +10,7 @@ lpb $0
     div $0,3 ; Remove the lowest trit from n
     add $3,$0
     mod $3,3 
-    ; Now $3 holds the ternary xor with $0 and $5
+    ; Now $3 holds TRIT1($0) ternary xor TRIT0($0)
 
     ; Scale up the trit, and add to result
     mul $3,$4
