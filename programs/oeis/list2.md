@@ -2182,7 +2182,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125202](http://oeis.org/A125202) ([L05 program](125/A125202.asm)): a(n) = 4*n^2 - 6*n + 1.
 * [A125255](http://oeis.org/A125255) ([L04 program](125/A125255.asm)): Smallest prime divisor of 4n-1.
 * [A125256](http://oeis.org/A125256) ([L09 program](125/A125256.asm)): Smallest odd prime divisor of n^2 + 1.
-* [A125266](http://oeis.org/A125266) ([L31 program](125/A125266.asm)): Number of repetitions in A007918.
 * [A125299](http://oeis.org/A125299) ([L11 program](125/A125299.asm)): Numbers starting with a consonant.
 * [A125521](http://oeis.org/A125521) ([L11 program](125/A125521.asm)): a(n) is the minimal difference between two distinct n-digit numbers with property that when one of them is typed into a calculator and rotated 180 degrees, the other one is seen.
 * [A125575](http://oeis.org/A125575) ([L06 program](125/A125575.asm)): Initial digit of squares of primes.

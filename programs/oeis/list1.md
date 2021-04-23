@@ -1176,7 +1176,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061227](http://oeis.org/A061227) ([L04 program](061/A061227.asm)): a(n) = p + R{p} where R{p} is the digit reversal of n-th prime p.
 * [A061228](http://oeis.org/A061228) ([L11 program](061/A061228.asm)): a(1) = 2, a(n) = smallest number greater than n which is not coprime to n.
 * [A061263](http://oeis.org/A061263) ([L03 program](061/A061263.asm)): a(n) = floor(n^3/9).
-* [A061265](http://oeis.org/A061265) ([L19 program](061/A061265.asm)): Number of squares between n-th prime and (n+1)st prime.
 * [A061278](http://oeis.org/A061278) ([L07 program](061/A061278.asm)): a(n) = 5*a(n-1) - 5*a(n-2) + a(n-3) with a(1) = 1 and a(k) = 0 if k <= 0.
 * [A061282](http://oeis.org/A061282) ([L14 program](061/A061282.asm)): Minimal number of steps to get from 0 to n by (a) adding 1 or (b) multiplying by 3. A stopping problem: begin with n and at each stage if a multiple of 3 divide by 3, otherwise subtract 1.
 * [A061285](http://oeis.org/A061285) ([L62 program](061/A061285.asm)): a(n) = 2^((prime(n) - 1)/2).
@@ -1301,6 +1300,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062402](http://oeis.org/A062402) ([L09 program](062/A062402.asm)): a(n) = sigma(phi(n)).
 * [A062458](http://oeis.org/A062458) ([L27 program](062/A062458.asm)): Nearest integer to (n+1)^(n+1)/n^n.
 * [A062510](http://oeis.org/A062510) ([L05 program](062/A062510.asm)): a(n) = 2^n + (-1)^(n+1).
+* [A062544](http://oeis.org/A062544) ([L14 program](062/A062544.asm)): a(n) = n plus sum of previous three terms.
 * [A062545](http://oeis.org/A062545) ([L06 program](062/A062545.asm)): Continued fraction for the 2nd Du Bois-Reymond constant.
 * [A062547](http://oeis.org/A062547) ([L08 program](062/A062547.asm)): a(n) is least odd integer not a partial sum of 1, 3, ..., a(n-1).
 * [A062548](http://oeis.org/A062548) ([L04 program](062/A062548.asm)): Even integers that are not partial sums of A062547.
@@ -2585,7 +2585,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A074378](http://oeis.org/A074378) ([L05 program](074/A074378.asm)): Even triangular numbers halved.
 * [A074392](http://oeis.org/A074392) ([L23 program](074/A074392.asm)): a(n) = Lucas(n+1) + (3*(-1)^n - 1)/2.
 * [A074399](http://oeis.org/A074399) ([L03 program](074/A074399.asm)): a(n) is the largest prime divisor of n(n+1).
-* [A074400](http://oeis.org/A074400) ([L04 program](074/A074400.asm)): Sum of the even divisors of 2n.
+* [A074400](http://oeis.org/A074400) ([L03 program](074/A074400.asm)): Sum of the even divisors of 2n.
 * [A074494](http://oeis.org/A074494) ([L09 program](074/A074494.asm)): Number of 2-input gates used to synthesize parity function in disjunctive normal form (DNF) with n inputs.
 * [A074495](http://oeis.org/A074495) ([L03 program](074/A074495.asm)): a(n) = the first prime > sigma(n).
 * [A074501](http://oeis.org/A074501) ([L06 program](074/A074501.asm)): a(n) = 1^n + 2^n + 5^n.

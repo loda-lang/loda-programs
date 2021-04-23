@@ -3361,7 +3361,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A027017](http://oeis.org/A027017) ([L10 program](027/A027017.asm)): a(n) = T(2*n+1, n+2), T given by A027011.
 * [A027024](http://oeis.org/A027024) ([L16 program](027/A027024.asm)): a(n) = T(n,n+2), T given by A027023.
 * [A027025](http://oeis.org/A027025) ([L11 program](027/A027025.asm)): a(n) = T(n,n+3), T given by A027023.
-* [A027053](http://oeis.org/A027053) ([L07 program](027/A027053.asm)): a(n) = T(n,n+2), T given by A027052.
 * [A027054](http://oeis.org/A027054) ([L09 program](027/A027054.asm)): a(n) = T(n, n+3), T given by A027052.
 * [A027083](http://oeis.org/A027083) ([L03 program](027/A027083.asm)): a(n) = A027082(n, n+2)
 * [A027084](http://oeis.org/A027084) ([L13 program](027/A027084.asm)): G.f.: x^2*(x^2 + x + 1)/(x^4 - 2*x + 1).
@@ -3642,7 +3641,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A029609](http://oeis.org/A029609) ([L17 program](029/A029609.asm)): Central numbers in the (2,3)-Pascal triangle A029600.
 * [A029651](http://oeis.org/A029651) ([L10 program](029/A029651.asm)): Central elements of the (1,2)-Pascal triangle A029635.
 * [A029699](http://oeis.org/A029699) ([L23 program](029/A029699.asm)): Number of words of length 4 in the n(n-1)/2 transpositions of S[ n ] equivalent to the identity.
-* [A029714](http://oeis.org/A029714) ([L47 program](029/A029714.asm)): a(n) = Sum_{k divides 3^n} S(k), where S is the Kempner function A002034.
 * [A029739](http://oeis.org/A029739) ([L06 program](029/A029739.asm)): Numbers that are congruent to {1, 3, 4} mod 6.
 * [A029744](http://oeis.org/A029744) ([L08 program](029/A029744.asm)): Numbers of the form 2^n or 3*2^n.
 * [A029747](http://oeis.org/A029747) ([L17 program](029/A029747.asm)): Numbers of the form 2^k times 1, 3 or 5.
