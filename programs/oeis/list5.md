@@ -99,7 +99,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A252994](http://oeis.org/A252994) ([L02 program](252/A252994.asm)): Multiples of 26.
 * [A253012](http://oeis.org/A253012) ([L05 program](253/A253012.asm)): a(n) = ceiling( (n+1) * (n+2) / 12).
 * [A253068](http://oeis.org/A253068) ([L14 program](253/A253068.asm)): The subsequence A253066(2^n-1).
-* [A253122](http://oeis.org/A253122) ([L04 program](253/A253122.asm)): Number of length n+2 0..1 arrays with the sum of medians of adjacent triples multiplied by some arrangement of +-1 equal to zero.
 * [A253130](http://oeis.org/A253130) ([L24 program](253/A253130.asm)): Number of length 2+2 0..n arrays with the sum of medians of adjacent triples multiplied by some arrangement of +-1 equal to zero.
 * [A253145](http://oeis.org/A253145) ([L04 program](253/A253145.asm)): Triangular numbers (A000217) omitting the term 1.
 * [A253186](http://oeis.org/A253186) ([L04 program](253/A253186.asm)): Number of connected unlabeled multigraphs with 3 vertices and n edges.
@@ -950,7 +949,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267573](http://oeis.org/A267573) ([L04 program](267/A267573.asm)): a(n) = prime(n) + (prime(n) mod 4).
 * [A267579](http://oeis.org/A267579) ([L08 program](267/A267579.asm)): Middle column of the "Rule 167" elementary cellular automaton starting with a single ON (black) cell.
 * [A267582](http://oeis.org/A267582) ([L07 program](267/A267582.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 167" elementary cellular automaton starting with a single ON (black) cell.
-* [A267583](http://oeis.org/A267583) ([L07 program](267/A267583.asm)): Total number of ON (black) cells after n iterations of the "Rule 167" elementary cellular automaton starting with a single ON (black) cell.
 * [A267584](http://oeis.org/A267584) ([L13 program](267/A267584.asm)): a(0)=1; thereafter a(n) = 2^(1 + number of zeros in binary expansion of n).
 * [A267587](http://oeis.org/A267587) ([L06 program](267/A267587.asm)): Middle column of the "Rule 169" elementary cellular automaton starting with a single ON (black) cell.
 * [A267589](http://oeis.org/A267589) ([L22 program](267/A267589.asm)): Decimal representation of the middle column of the "Rule 169" elementary cellular automaton starting with a single ON (black) cell.
@@ -1114,7 +1112,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269112](http://oeis.org/A269112) ([L07 program](269/A269112.asm)): a(n) = (3*(n-1)*n + (-1)^((n-1)*n/2) + 5)/2.
 * [A269130](http://oeis.org/A269130) ([L04 program](269/A269130.asm)): a(n) = n + (n base 2 regarded as a decimal number).
 * [A269132](http://oeis.org/A269132) ([L05 program](269/A269132.asm)): a(n) = n + floor(n*(2*n+1)/5).
-* [A269160](http://oeis.org/A269160) ([L17 program](269/A269160.asm)): Formula for Wolfram's Rule 30 cellular automaton: a(n) = n XOR (2n OR 4n).
+* [A269160](http://oeis.org/A269160) ([L14 program](269/A269160.asm)): Formula for Wolfram's Rule 30 cellular automaton: a(n) = n XOR (2n OR 4n).
 * [A269169](http://oeis.org/A269169) ([L18 program](269/A269169.asm)): The least monotonic left inverse for A269164.
 * [A269170](http://oeis.org/A269170) ([L03 program](269/A269170.asm)): a(n) = n OR floor(n/2), where OR is bitwise-OR (A003986).
 * [A269173](http://oeis.org/A269173) ([L22 program](269/A269173.asm)): Formula for Wolfram's Rule 126 cellular automaton: a(n) = (n XOR 2n) OR (n XOR 4n).
@@ -1719,7 +1717,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A278536](http://oeis.org/A278536) ([L08 program](278/A278536.asm)): First differences of A273324.
 * [A278545](http://oeis.org/A278545) ([L08 program](278/A278545.asm)): Number of neighbors of the n-th term in a full square array read by antidiagonals.
 * [A278597](http://oeis.org/A278597) ([L12 program](278/A278597.asm)): One half of A278481.
-* [A278603](http://oeis.org/A278603) ([L04 program](278/A278603.asm)): A prime mountain: peaks and valleys beyond the origin correspond to prime abscissa (see Comments for precise definition).
 * [A278617](http://oeis.org/A278617) ([L06 program](278/A278617.asm)): Number of distinct odd primes less than or equal to 2n-3 that appear as a part in the partitions of 2n into two parts.
 * [A278718](http://oeis.org/A278718) ([L07 program](278/A278718.asm)): Numerators of A189733: periodic sequence repeating [0, 1, 1, 1, 0, -1].
 * [A278814](http://oeis.org/A278814) ([L08 program](278/A278814.asm)): a(n) = ceiling(sqrt(3n+1)).
@@ -2063,7 +2060,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286666](http://oeis.org/A286666) ([L17 program](286/A286666.asm)): Positions of 0 in A286665; complement of A286667.
 * [A286667](http://oeis.org/A286667) ([L22 program](286/A286667.asm)): Positions of 1 in A286665; complement of A286666.
 * [A286679](http://oeis.org/A286679) ([L08 program](286/A286679.asm)): Numbers of the form (2*prime(n)^2 + 1)/3.
-* [A286686](http://oeis.org/A286686) ([L08 program](286/A286686.asm)): Positions of 0 in A286685; complement of A286687.
 * [A286687](http://oeis.org/A286687) ([L08 program](286/A286687.asm)): Positions of 1 in A286685; complement of A286686.
 * [A286688](http://oeis.org/A286688) ([L21 program](286/A286688.asm)): {0->00, 1->10}-transform of the Pell word, A171588.
 * [A286690](http://oeis.org/A286690) ([L44 program](286/A286690.asm)): Positions of 1 in A286688; complement of A286689.
@@ -2228,7 +2224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A288999](http://oeis.org/A288999) ([L47 program](288/A288999.asm)): Positions of 1 in A288997; complement of A288998.
 * [A289034](http://oeis.org/A289034) ([L03 program](289/A289034.asm)): Fixed point of the morphism 0->010, 1->10 starting with 1.
 * [A289036](http://oeis.org/A289036) ([L08 program](289/A289036.asm)): Positions of 0 in A289035; complement of A289037.
-* [A289037](http://oeis.org/A289037) ([L08 program](289/A289037.asm)): Positions of 1 in A289035; complement of A289036.
+* [A289037](http://oeis.org/A289037) ([L04 program](289/A289037.asm)): Positions of 1 in A289035; complement of A289036.
 * [A289060](http://oeis.org/A289060) ([L27 program](289/A289060.asm)): a(n) = 3*a(n-1) - 3*a(n-2) + *a(n-3) for n >= 8, where a(0) = 2, a(1) = 4, a(2) = 7, a(3) = 11, a(4) = 17, a(5) = 25, a(6) = 36, a(7) = 51.
 * [A289098](http://oeis.org/A289098) ([L17 program](289/A289098.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 545", based on the 5-celled von Neumann neighborhood.
 * [A289120](http://oeis.org/A289120) ([L26 program](289/A289120.asm)): a(n) is the number of odd integers divisible by 7 in ]2*(n-1)^2, 2*n^2[.
@@ -2510,7 +2506,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A293673](http://oeis.org/A293673) ([L05 program](293/A293673.asm)): a(n) is the integer k that minimizes |k/Fibonacci(n) - 4/5|.
 * [A293688](http://oeis.org/A293688) ([L07 program](293/A293688.asm)): Partial sums of A002251.
 * [A293706](http://oeis.org/A293706) ([L31 program](293/A293706.asm)): a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
-* [A293754](http://oeis.org/A293754) ([L05 program](293/A293754.asm)): Numbers n such that c(n,0) < c(n,1), where c(n,d) = number of d's in the first n digits of the base-2 expansion of tau (the golden ratio, (1+sqrt(5))/2)).
+* [A293754](http://oeis.org/A293754) ([L05 program](293/A293754.asm)): Numbers k such that c(k,0) < c(k,1), where c(k,d) = number of d's in the first k digits of the base-2 expansion of tau (the golden ratio, (1+sqrt(5))/2).
 * [A293810](http://oeis.org/A293810) ([L27 program](293/A293810.asm)): The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 * [A293821](http://oeis.org/A293821) ([L08 program](293/A293821.asm)): Number of integer-sided quadrilaterals having perimeter n, modulo rotations but not reflections.
 * [A293958](http://oeis.org/A293958) ([L04 program](293/A293958.asm)): Smallest odd prime divisor of (2n+1)^2 + 1.
