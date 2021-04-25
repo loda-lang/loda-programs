@@ -360,6 +360,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154879](http://oeis.org/A154879) ([L24 program](154/A154879.asm)): Third differences of the Jacobsthal sequence A001045.
 * [A154890](http://oeis.org/A154890) ([L12 program](154/A154890.asm)): Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
 * [A154920](http://oeis.org/A154920) ([L10 program](154/A154920.asm)): Denominators of a ternary BBP-type formula for log(3).
+* [A154949](http://oeis.org/A154949) ([L13 program](154/A154949.asm)): Diagonal sums of Riordan array A154948.
 * [A154955](http://oeis.org/A154955) ([L02 program](154/A154955.asm)): a(1) = 1, a(2) = -1, followed by 0, 0, 0, ... .
 * [A154957](http://oeis.org/A154957) ([L03 program](154/A154957.asm)): A symmetric (0,1)-triangle.
 * [A154958](http://oeis.org/A154958) ([L13 program](154/A154958.asm)): Antidiagonal sums of number triangle A154957 regarded as a lower triangular infinite matrix.
@@ -1545,7 +1546,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164785](http://oeis.org/A164785) ([L04 program](164/A164785.asm)): a(n) = 5^n-4.
 * [A164845](http://oeis.org/A164845) ([L06 program](164/A164845.asm)): a(n) = (6 + 10*n + 5*n^2 + n^3)/2.
 * [A164848](http://oeis.org/A164848) ([L25 program](164/A164848.asm)): a(n) = A026741(n)/A051712(n+1).
-* [A164874](http://oeis.org/A164874) ([L03 program](164/A164874.asm)): Triangle read by rows: T(1,1)=2; T(n,k)=2*T(n-1,k)+1, 1<=k<n; T(n,n)=2*(T(n-1,n-1)+1).
 * [A164897](http://oeis.org/A164897) ([L04 program](164/A164897.asm)): a(n) = 4*n*(n+1) + 3.
 * [A164900](http://oeis.org/A164900) ([L06 program](164/A164900.asm)): a(2n) = 4*n*(n+1) + 3; a(2n+1) = 2*n*(n+2) + 3.
 * [A164907](http://oeis.org/A164907) ([L06 program](164/A164907.asm)): a(n) = (3*3^n-(-1)^n)/2.
@@ -1750,6 +1750,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166552](http://oeis.org/A166552) ([L18 program](166/A166552.asm)): a(n) = 3*a(n-2) for n > 2; a(1) = 1; a(2) = 4.
 * [A166577](http://oeis.org/A166577) ([L10 program](166/A166577.asm)): Inverse binomial transform of A166517.
 * [A166578](http://oeis.org/A166578) ([L40 program](166/A166578.asm)): a(n) = a(n-3) + 2^(n-4) with a(1) = 1, a(2) = 2, a(3) = 1.
+* [A166588](http://oeis.org/A166588) ([L14 program](166/A166588.asm)): Partial sums of A097331; binomial transform of A166587.
 * [A166598](http://oeis.org/A166598) ([L04 program](166/A166598.asm)): a(n) = 5*n - a(n-1), with n>1, a(1)=5.
 * [A166621](http://oeis.org/A166621) ([L05 program](166/A166621.asm)): a(n) = 10*n - a(n-1), with n>1, a(1)=5.
 * [A166624](http://oeis.org/A166624) ([L11 program](166/A166624.asm)): Totally multiplicative sequence with a(p) = 3p for prime p.
@@ -4367,7 +4368,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192958](http://oeis.org/A192958) ([L08 program](192/A192958.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192959](http://oeis.org/A192959) ([L12 program](192/A192959.asm)): Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192960](http://oeis.org/A192960) ([L30 program](192/A192960.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
-* [A192961](http://oeis.org/A192961) ([L08 program](192/A192961.asm)): Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192962](http://oeis.org/A192962) ([L29 program](192/A192962.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192963](http://oeis.org/A192963) ([L13 program](192/A192963.asm)): Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192964](http://oeis.org/A192964) ([L04 program](192/A192964.asm)): Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined at Comments.

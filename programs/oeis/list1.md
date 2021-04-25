@@ -757,6 +757,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056964](http://oeis.org/A056964) ([L03 program](056/A056964.asm)): a(n) = n + reversal of digits of n.
 * [A056965](http://oeis.org/A056965) ([L03 program](056/A056965.asm)): n -> n - reversal of digits of n.
 * [A056973](http://oeis.org/A056973) ([L03 program](056/A056973.asm)): Number of blocks of {0,0} in the binary expansion of n.
+* [A056974](http://oeis.org/A056974) ([L07 program](056/A056974.asm)): Number of blocks of {0, 0, 0} in the binary expansion of n.
 * [A056981](http://oeis.org/A056981) ([L41 program](056/A056981.asm)): a(n) = A002596(n)^2.
 * [A056991](http://oeis.org/A056991) ([L21 program](056/A056991.asm)): Numbers with digital root 1, 4, 7 or 9.
 * [A056992](http://oeis.org/A056992) ([L05 program](056/A056992.asm)): Digital roots of square numbers A000290.
@@ -1695,7 +1696,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065882](http://oeis.org/A065882) ([L08 program](065/A065882.asm)): Ultimate modulo 4: right-hand nonzero digit of n when written in base 4.
 * [A065883](http://oeis.org/A065883) ([L05 program](065/A065883.asm)): Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
 * [A065890](http://oeis.org/A065890) ([L04 program](065/A065890.asm)): Number of composites less than the n-th prime.
-* [A065896](http://oeis.org/A065896) ([L06 program](065/A065896.asm)): Number of composites <= 2*n.
+* [A065896](http://oeis.org/A065896) ([L05 program](065/A065896.asm)): Number of composites <= 2*n.
 * [A065897](http://oeis.org/A065897) ([L03 program](065/A065897.asm)): The a(n)-th composite number is twice the n-th prime.
 * [A065915](http://oeis.org/A065915) ([L09 program](065/A065915.asm)): Numerator of sigma(8*n^2)/sigma(4*n^2).
 * [A065916](http://oeis.org/A065916) ([L09 program](065/A065916.asm)): Denominator of sigma(8*n^2)/sigma(4*n^2).
@@ -2503,7 +2504,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073093](http://oeis.org/A073093) ([L10 program](073/A073093.asm)): Number of prime power divisors of n.
 * [A073121](http://oeis.org/A073121) ([L19 program](073/A073121.asm)): a(n) = r*a(ceiling(n/2)) + s*a(floor(n/2)) with a(1)=1 and (r,s)=(2,2).
 * [A073169](http://oeis.org/A073169) ([L05 program](073/A073169.asm)): a(n)=A002808(n)-n, difference between n-th composite and n.
-* [A073170](http://oeis.org/A073170) ([L07 program](073/A073170.asm)): a(1) = a(2) = 0; for n>2, a(n) = prime(n-1)-n+1.
 * [A073188](http://oeis.org/A073188) ([L08 program](073/A073188.asm)): n appears 1+[n/3] times.
 * [A073189](http://oeis.org/A073189) ([L12 program](073/A073189.asm)): Integers 0..k three times, then 0..k+1 three times, etc.
 * [A073256](http://oeis.org/A073256) ([L03 program](073/A073256.asm)): a(n) = phi(n-th composite number).
@@ -3077,7 +3077,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080086](http://oeis.org/A080086) ([L05 program](080/A080086.asm)): Number of factors of 3 in the factorial of the n-th prime, counted with multiplicity.
 * [A080087](http://oeis.org/A080087) ([L05 program](080/A080087.asm)): Number of factors of 5 in the factorial of the n-th prime, counted with multiplicity.
 * [A080095](http://oeis.org/A080095) ([L10 program](080/A080095.asm)): Let sum(k>=0, k^n/(2*k+1)!) = (x(n)*e + y(n)/e)/z(n), where x(n) and z(n) are >0, then a(n)=z(n).
-* [A080096](http://oeis.org/A080096) ([L09 program](080/A080096.asm)): a(1)=a(2)=1; a(3)=2; a(n)=abs(a(n-1)-a(n-2)-a(n-3)).
 * [A080097](http://oeis.org/A080097) ([L13 program](080/A080097.asm)): a(n) = Fibonacci(n+2)^2 - 1.
 * [A080100](http://oeis.org/A080100) ([L20 program](080/A080100.asm)): a(n) = 2^(number of 0's in binary representation of n).
 * [A080143](http://oeis.org/A080143) ([L22 program](080/A080143.asm)): a(n) = F(3)*F(n)*F(n+1) + F(4)*F(n+1)^2 - F(4) if n even, F(3)*F(n)*F(n+1) + F(4)*F(n+1)^2 if n odd, where F(n) is the n-th Fibonacci number (A000045).
@@ -3275,7 +3274,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081136](http://oeis.org/A081136) ([L05 program](081/A081136.asm)): 6th binomial transform of (0,0,1,0,0,0,........).
 * [A081143](http://oeis.org/A081143) ([L05 program](081/A081143.asm)): 5th binomial transform of (0,0,0,1,0,0,0,0,......).
 * [A081144](http://oeis.org/A081144) ([L05 program](081/A081144.asm)): Starting at 1, four-fold convolution of A000400 (powers of 6).
-* [A081147](http://oeis.org/A081147) ([L25 program](081/A081147.asm)): Differences of Beatty sequence for square root of 5.
 * [A081168](http://oeis.org/A081168) ([L26 program](081/A081168.asm)): Differences of Beatty sequence for square root of 10.
 * [A081181](http://oeis.org/A081181) ([L06 program](081/A081181.asm)): Staircase on Pascal's triangle.
 * [A081186](http://oeis.org/A081186) ([L08 program](081/A081186.asm)): 4th binomial transform of (1,0,1,0,1,...), A059841.
