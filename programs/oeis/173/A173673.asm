@@ -8,6 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
+  max $0,0
   cal $0,94707 ; Partial sums of repeated Fibonacci sequence.
   div $0,2
   mov $2,$3

@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   sub $0,$4
   add $0,$4
+  max $0,0
   cal $0,29013 ; Expansion of 1/((1-x)(1-x^2)(1-x^5)(1-x^8)).
   mov $2,$3
   mov $4,$0

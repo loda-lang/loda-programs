@@ -9,9 +9,9 @@ lpb $29
   sub $29,1
   add $0,$29
   sub $0,1
-  mov $2,1
   add $5,3
-  cal $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $2,2
+  max $0,0
   cal $0,190995 ; Fibonacci sequence beginning 9, 7.
   add $5,$2
   add $0,$5

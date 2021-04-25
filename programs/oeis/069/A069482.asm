@@ -8,6 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
+  max $0,0
   cal $0,74367 ; (p^2-5)/4 for odd primes p.
   mov $2,$3
   mov $4,8
