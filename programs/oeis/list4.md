@@ -280,6 +280,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206723](http://oeis.org/A206723) ([L12 program](206/A206723.asm)): a(n) = 7*( ((3 + sqrt(5))/2)^n + ((3 - sqrt(5))/2)^n - 2 ).
 * [A206735](http://oeis.org/A206735) ([L07 program](206/A206735.asm)): Triangle T(n,k), read by rows, given by (0, 2, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (1, 0, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
 * [A206776](http://oeis.org/A206776) ([L12 program](206/A206776.asm)): a(n) = 3*a(n-1) + 2*a(n-2) for n>1, a(0)=2, a(1)=3.
+* [A206787](http://oeis.org/A206787) ([L08 program](206/A206787.asm)): Sum of the odd squarefree divisors of n.
 * [A206802](http://oeis.org/A206802) ([L21 program](206/A206802.asm)): a(n) = (1/2)*A185382(n).
 * [A206806](http://oeis.org/A206806) ([L26 program](206/A206806.asm)): Sum_{0<j<k<=n} s(k)-s(j), where s(j)=A002620(j) is the j-th quarter-square.
 * [A206807](http://oeis.org/A206807) ([L33 program](206/A206807.asm)): Position of 3^n when {2^j} and {3^k} are jointly ranked; complement of A206805.
@@ -722,6 +723,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213039](http://oeis.org/A213039) ([L05 program](213/A213039.asm)): n^3-[n/3]^3, where [] = floor.
 * [A213040](http://oeis.org/A213040) ([L52 program](213/A213040.asm)): Partial sums of A004738, leftmost column of the sequence of triangles defined in A206492.
 * [A213041](http://oeis.org/A213041) ([L06 program](213/A213041.asm)): Number of (w,x,y) with all terms in {0..n} and 2|w-x| = max(w,x,y)-min(w,x,y).
+* [A213043](http://oeis.org/A213043) ([L32 program](213/A213043.asm)): Convolution of (1,-1,2,-2,3,-3,...) and A000045 (Fibonacci numbers).
 * [A213045](http://oeis.org/A213045) ([L08 program](213/A213045.asm)): Number of (w,x,y) with all terms in {0,...,n} and 2|w-x|>max(w,x,y)-min(w,x,y).
 * [A213046](http://oeis.org/A213046) ([L07 program](213/A213046.asm)): Convolution of Lucas numbers and positive integers repeated (A000032 and A008619).
 * [A213064](http://oeis.org/A213064) ([L07 program](213/A213064.asm)): Bitwise AND of 2n with the one's-complement of n.
@@ -1067,7 +1069,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A217975](http://oeis.org/A217975) ([L42 program](217/A217975.asm)): 2*n^2 - 7 is a square.
 * [A218008](http://oeis.org/A218008) ([L05 program](218/A218008.asm)): Sum of successive absolute differences of the binomial coefficients = 2*A014495(n)
 * [A218073](http://oeis.org/A218073) ([L07 program](218/A218073.asm)): Number of profiles in domino tiling of a 2*n checkboard.
-* [A218075](http://oeis.org/A218075) ([L07 program](218/A218075.asm)): a(n) = 2^(prime(n+1) - prime(n)).
+* [A218075](http://oeis.org/A218075) ([L06 program](218/A218075.asm)): a(n) = 2^(prime(n+1) - prime(n)).
 * [A218078](http://oeis.org/A218078) ([L14 program](218/A218078.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal, vertical or antidiagonal neighbors in a random 0..1 n X 2 array.
 * [A218130](http://oeis.org/A218130) ([L12 program](218/A218130.asm)): Number of length 6 primitive (=aperiodic or period 6) n-ary words.
 * [A218131](http://oeis.org/A218131) ([L04 program](218/A218131.asm)): Number of length 8 primitive (=aperiodic or period 8) n-ary words.
@@ -1389,7 +1391,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226264](http://oeis.org/A226264) ([L05 program](226/A226264.asm)): Number of additive Z_2 Z_8 codes of a certain type (see Siap-Aydogdu for precise definition).
 * [A226265](http://oeis.org/A226265) ([L05 program](226/A226265.asm)): Number of additive Z_2 Z_8 codes of a certain type (see Siap-Aydogdu for precise definition).
 * [A226271](http://oeis.org/A226271) ([L20 program](226/A226271.asm)): Index of 1/n in the Fibonacci (or rabbit) ordering of the positive rationals.
-* [A226275](http://oeis.org/A226275) ([L51 program](226/A226275.asm)): Number of new rationals produced at the n-th iteration by applying the map t -> {t+1, -1/t} to nonzero terms, starting with S[0] = {1}.
+* [A226275](http://oeis.org/A226275) ([L52 program](226/A226275.asm)): Number of new rationals produced at the n-th iteration by applying the map t -> {t+1, -1/t} to nonzero terms, starting with S[0] = {1}.
 * [A226276](http://oeis.org/A226276) ([L04 program](226/A226276.asm)): Period 4: repeat [8, 4, 4, 4].
 * [A226279](http://oeis.org/A226279) ([L07 program](226/A226279.asm)): a(4n) = a(4n+2) = 2*n , a(4n+1) = a(4n+3) = 2*n-1.
 * [A226292](http://oeis.org/A226292) ([L06 program](226/A226292.asm)): (10*n^2+4*n+(1-(-1)^n))/8.
@@ -1990,7 +1992,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239086](http://oeis.org/A239086) ([L11 program](239/A239086.asm)): The sequence S = a(1), a(2), ... is defined by a(1)=1, if d,e,f are consecutive digits then we do not have d < e = f, and S is always extended with the smallest integer not yet present in S.
 * [A239090](http://oeis.org/A239090) ([L26 program](239/A239090.asm)): The sequence S = a(1), a(2), ... is defined by a(1)=1, if d,e,f are consecutive digits then we do not have d >= e < f, and S is always extended with the smallest integer not yet present in S.
 * [A239091](http://oeis.org/A239091) ([L14 program](239/A239091.asm)): Prefix overlap of dictionary consisting of binary expansions of 0 through n.
-* [A239094](http://oeis.org/A239094) ([L03 program](239/A239094.asm)): a(n) = (5*n^9 - 30*n^7 + 63*n^5 - 50*n^3 + 12*n)/360.
+* [A239094](http://oeis.org/A239094) ([L07 program](239/A239094.asm)): a(n) = (5*n^9 - 30*n^7 + 63*n^5 - 50*n^3 + 12*n)/360.
 * [A239123](http://oeis.org/A239123) ([L03 program](239/A239123.asm)): a(n) = 128*n - 107 for n >= 1. Third column of triangle A238475.
 * [A239124](http://oeis.org/A239124) ([L03 program](239/A239124.asm)): a(n) = 64*n - 11 for n >= 1. Third column of triangle A238476.
 * [A239128](http://oeis.org/A239128) ([L03 program](239/A239128.asm)): a(n) = 32*n - 1, n >= 1. Fourth column of triangle A239126, related to the Collatz problem.

@@ -1,0 +1,89 @@
+; A151374: Number of walks within N^2 (the first quadrant of Z^2) starting at (0, 0), ending on the vertical axis and consisting of 2n steps taken from {(-1, -1), (-1, 0), (1, 1)}.
+; 1,2,8,40,224,1344,8448,54912,366080,2489344,17199104,120393728,852017152,6085836800,43818024960,317680680960,2317200261120,16992801914880,125210119372800,926554883358720,6882979133521920,51309480813527040
+
+mov $20,$0
+mov $22,$0
+add $22,1
+lpb $22
+  clr $0,20
+  mov $0,$20
+  sub $22,1
+  sub $0,$22
+  mov $17,$0
+  mov $19,$0
+  add $19,1
+  lpb $19
+    clr $0,17
+    mov $0,$17
+    sub $19,1
+    sub $0,$19
+    mov $13,$0
+    mov $15,2
+    lpb $15
+      clr $0,13
+      mov $0,$13
+      sub $15,1
+      add $0,$15
+      sub $0,1
+      mov $9,$0
+      mov $11,2
+      lpb $11
+        clr $0,9
+        mov $0,$9
+        sub $11,1
+        add $0,$11
+        sub $0,1
+        mov $5,$0
+        mov $7,2
+        lpb $7
+          clr $0,5
+          mov $0,$5
+          sub $7,1
+          add $0,$7
+          sub $0,1
+          sub $4,$0
+          max $0,0
+          cal $0,112696 ; Partial sum of Catalan numbers A000108 multiplied by powers of 2.
+          add $2,$0
+          add $3,1
+          mov $3,$2
+          add $3,$2
+          add $4,$0
+          div $0,2
+          mov $0,$3
+          mov $1,$3
+          mov $1,$3
+          mov $8,$7
+          cmp $8,1
+          mul $8,$3
+          add $6,$8
+        lpe
+        min $5,1
+        mul $5,$1
+        mov $1,$6
+        sub $1,$5
+        mov $12,$11
+        cmp $12,1
+        mul $12,$1
+        add $10,$12
+      lpe
+      min $9,1
+      mul $9,$1
+      mov $1,$10
+      sub $1,$9
+      mov $16,$15
+      cmp $16,1
+      mul $16,$1
+      add $14,$16
+    lpe
+    min $13,1
+    mul $13,$1
+    mov $1,$14
+    sub $1,$13
+    div $1,2
+    add $18,$1
+  lpe
+  mov $1,$18
+  add $21,$18
+lpe
+mov $1,$21
