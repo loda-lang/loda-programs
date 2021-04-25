@@ -19,6 +19,7 @@ lpb $13
     mov $6,$0
     lpb $0
       add $0,$6
+      max $0,0
       cal $0,230980 ; Number of primes <= n, starting at n=0.
       sub $0,2
       mov $1,$0

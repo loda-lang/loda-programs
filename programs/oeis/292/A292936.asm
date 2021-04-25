@@ -4,6 +4,7 @@
 lpb $0
   trn $0,1
   add $1,1
+  max $0,0
   cal $0,69268 ; Greatest common divisor of n! and n*(n+1)/2.
   sub $0,1
 lpe
