@@ -15,6 +15,7 @@ lpb $14
     mov $0,$8
     sub $10,1
     add $0,$10
+    max $0,0
     cal $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
     dif $0,2
     lpb $0
