@@ -3,4 +3,3 @@
 
 cal $0,189479 ; Fixed point starting with 0 of the morphism 0->01, 1->101.
 bin $1,$0
-trn $1,$0
