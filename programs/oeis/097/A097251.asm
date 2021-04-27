@@ -3,6 +3,4 @@
 
 cal $0,33042 ; Sums of distinct powers of 5.
 mov $1,$0
-add $1,$0
-div $1,2
 mul $1,4
