@@ -1884,6 +1884,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120573](http://oeis.org/A120573) ([L63 program](120/A120573.asm)): a(n) = n^5 + 3n^3 + 2n = n(n^2+1)(n^2+2).
 * [A120580](http://oeis.org/A120580) ([L10 program](120/A120580.asm)): Hankel transform of sum{k=0..n, C(2k,k)}.
 * [A120588](http://oeis.org/A120588) ([L20 program](120/A120588.asm)): G.f. is 1 + x*c(x), where c(x) is the g.f. of the Catalan numbers (A000108).
+* [A120612](http://oeis.org/A120612) ([L15 program](120/A120612.asm)): For n>1, a(n) = 2*a(n-1) + 15*a(n-2); a(0)=1, a(1)=1.
 * [A120613](http://oeis.org/A120613) ([L04 program](120/A120613.asm)): a(n) = floor(phi*floor(n/phi)) where phi=(1+sqrt(5))/2.
 * [A120614](http://oeis.org/A120614) ([L33 program](120/A120614.asm)): a(n) = g(n+1) - g(n) where g(k) = floor(phi*floor(k/phi)) and phi = (1+sqrt(5))/2.
 * [A120615](http://oeis.org/A120615) ([L17 program](120/A120615.asm)): a(n) = Sum_{k=0..n} floor(phi*floor(n/phi)) where phi = (1+sqrt(5))/2.
@@ -3569,7 +3570,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A137719](http://oeis.org/A137719) ([L09 program](137/A137719.asm)): Sequence based on the pattern [3n, 3n, 3n, 3n+2, 3n+1, 3n+2].
 * [A137735](http://oeis.org/A137735) ([L14 program](137/A137735.asm)): a(0)=1. a(n) = floor(n/b(n)), where b(n) is the largest value among (a(0),a(1),...,a(n-1)).
 * [A137742](http://oeis.org/A137742) ([L10 program](137/A137742.asm)): a(n) = (n-1)*(n+4)*(n+6)/6 for n>1, a(1)=1.
-* [A137780](http://oeis.org/A137780) ([L03 program](137/A137780.asm)): a(n) = 1 + 2^( prime(n + 1) - prime(n) ).
 * [A137797](http://oeis.org/A137797) ([L10 program](137/A137797.asm)): a(n) = 2*( (n+1) mod 5 ) - 2*( (n+1) mod 2 ).
 * [A137803](http://oeis.org/A137803) ([L12 program](137/A137803.asm)): a(n) = floor(n*(sqrt(2) + 1/2)).
 * [A137807](http://oeis.org/A137807) ([L04 program](137/A137807.asm)): Final digit of prime(n)^2.

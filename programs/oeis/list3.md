@@ -3392,7 +3392,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A182868](http://oeis.org/A182868) ([L05 program](182/A182868.asm)): a(n) = -1 + n + 4*n^2.
 * [A182890](http://oeis.org/A182890) ([L81 program](182/A182890.asm)): Number of (1,0)-steps of weight 1 at level 0 in all weighted lattice paths in L_n.
 * [A182895](http://oeis.org/A182895) ([L81 program](182/A182895.asm)): Number of (1,0)-steps at level 0 in all weighted lattice paths in L_n.
-* [A182936](http://oeis.org/A182936) ([L07 program](182/A182936.asm)): Greatest common divisor of the proper divisors of n, 0 if there are none.
 * [A182986](http://oeis.org/A182986) ([L46 program](182/A182986.asm)): Zero together with the prime numbers (A000040).
 * [A183002](http://oeis.org/A183002) ([L39 program](183/A183002.asm)): Partial sums of A161840.
 * [A183003](http://oeis.org/A183003) ([L38 program](183/A183003.asm)): A183002(n)/2.
@@ -4584,6 +4583,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A194732](http://oeis.org/A194732) ([L05 program](194/A194732.asm)): Units' digits of the nonzero octagonal numbers.
 * [A194767](http://oeis.org/A194767) ([L15 program](194/A194767.asm)): Denominator of the fourth increasing diagonal of the autosequence of second kind from (-1)^n / (n+1).
 * [A194817](http://oeis.org/A194817) ([L15 program](194/A194817.asm)): Number of integers k in [1,n] such that {n*r+k*r} < {n*r-k*r}, where { } = fractional part and r=sqrt(3).
+* [A194818](http://oeis.org/A194818) ([L22 program](194/A194818.asm)): Number of integers k in [1,n] such that {n*r+k*r} > {n*r-k*r}, where { } = fractional part and r=sqrt(3).
 * [A194825](http://oeis.org/A194825) ([L05 program](194/A194825.asm)): Digital roots of the nonzero 9-gonal (nonagonal) numbers.
 * [A194826](http://oeis.org/A194826) ([L15 program](194/A194826.asm)): Units' digits of the nonzero 9-gonal (nonagonal) numbers.
 * [A194847](http://oeis.org/A194847) ([L07 program](194/A194847.asm)): Write n = C(i,3)+C(j,2)+C(k,1) with i>j>k>=0; sequence gives i values.

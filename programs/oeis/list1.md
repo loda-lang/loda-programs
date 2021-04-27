@@ -4308,7 +4308,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A090168](http://oeis.org/A090168) ([L07 program](090/A090168.asm)): Floor( 3n/2 ) - floor( 2n/3 ).
 * [A090169](http://oeis.org/A090169) ([L09 program](090/A090169.asm)): a(n) = floor( 3*n/2 ) + floor( 2*n/3 ).
 * [A090176](http://oeis.org/A090176) ([L06 program](090/A090176.asm)): G.f.: (1+x^9)/((1-x^4)(1-x^6)(1-x^12)).
-* [A090178](http://oeis.org/A090178) ([L20 program](090/A090178.asm)): a(1) = 2; for n > 1, a(n) = n + prime(n-1).
+* [A090178](http://oeis.org/A090178) ([L18 program](090/A090178.asm)): a(1) = 2; for n > 1, a(n) = n + prime(n-1).
 * [A090193](http://oeis.org/A090193) ([L07 program](090/A090193.asm)): a(n) = A053838(n) + 1 modulo 3.
 * [A090197](http://oeis.org/A090197) ([L07 program](090/A090197.asm)): a(n) = n^3 + 6*n^2 + 6*n + 1.
 * [A090198](http://oeis.org/A090198) ([L43 program](090/A090198.asm)): a(n) = N(5,n), where N(5,x) is the 5th Narayana polynomial.
@@ -4848,6 +4848,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A096957](http://oeis.org/A096957) ([L07 program](096/A096957.asm)): Fourth column (m=3) of (1,6)-Pascal triangle A096956.
 * [A096958](http://oeis.org/A096958) ([L06 program](096/A096958.asm)): Fifth column (m=4) of (1,6)-Pascal triangle A096956.
 * [A096959](http://oeis.org/A096959) ([L06 program](096/A096959.asm)): Sixth column (m=5) of (1,6)-Pascal triangle A096956.
+* [A096976](http://oeis.org/A096976) ([L32 program](096/A096976.asm)): Number of walks of length n on P_3 plus a loop at the end.
 * [A096977](http://oeis.org/A096977) ([L18 program](096/A096977.asm)): a(n) = 4*a(n-1) + 3*a(n-2) - 14*a(n-3) + 8*a(n-4).
 * [A096978](http://oeis.org/A096978) ([L17 program](096/A096978.asm)): Sum of the areas of the first n Jacobsthal rectangles.
 * [A096979](http://oeis.org/A096979) ([L12 program](096/A096979.asm)): Sum of the areas of the first n+1 Pell triangles.
@@ -5084,7 +5085,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099074](http://oeis.org/A099074) ([L24 program](099/A099074.asm)): Partial sums of A000960.
 * [A099076](http://oeis.org/A099076) ([L03 program](099/A099076.asm)): a(n) = A000960(n) mod 3.
 * [A099087](http://oeis.org/A099087) ([L10 program](099/A099087.asm)): Expansion of 1/(1 - 2*x + 2*x^2).
-* [A099098](http://oeis.org/A099098) ([L10 program](099/A099098.asm)): Quadrisection of a Padovan sequence.
+* [A099098](http://oeis.org/A099098) ([L13 program](099/A099098.asm)): Quadrisection of a Padovan sequence.
 * [A099132](http://oeis.org/A099132) ([L08 program](099/A099132.asm)): Quintisection of 1/(1-x^5-x^6).
 * [A099156](http://oeis.org/A099156) ([L13 program](099/A099156.asm)): a(n) = 2^(n-1)*U(n-1, 2).
 * [A099188](http://oeis.org/A099188) ([L15 program](099/A099188.asm)): a(n) = 2*ceiling(n/sqrt(2)).
