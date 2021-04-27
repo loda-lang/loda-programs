@@ -82,7 +82,7 @@ Options:
   -i <string>      Miner to be used (default:default)
   -t <number>      Number of sequence terms (default:20)
   -p <number>      Maximum physical memory in MB (default:1024)
-  -c <number>      Maximum number of interpreter cycles (default:10000000)
+  -c <number>      Maximum number of interpreter cycles (default:10000000; no limit:-1)
   -m <number>      Maximum number of used memory cells (default:100000)
   -b <number>      Print evaluation result in b-file format starting from a given offset
   -s               Evaluate the number of execution steps
