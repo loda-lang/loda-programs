@@ -1,37 +1,19 @@
 ; A002571: From a definite integral.
 ; 1,5,10,30,74,199,515,1355,3540,9276,24276,63565,166405,435665,1140574,2986074,7817630,20466835,53582855,140281751,367262376,961505400,2517253800,6590256025,17253514249,45170286749,118257345970
 
-mov $6,$0
-mov $8,2
-lpb $8
-  clr $0,6
-  mov $0,$6
-  sub $8,1
-  add $0,$8
-  add $0,1
-  max $0,0
-  cal $0,180665 ; Golden Triangle sums: a(n)=a(n-2)+A001654(n) with a(0)=0 and a(1)=1.
-  add $2,$0
-  sub $2,$0
-  mov $4,0
-  mov $5,$0
-  mov $0,3
-  mov $1,3
-  mul $2,3
-  mov $3,0
-  mov $4,1
-  sub $5,1
-  mov $1,$5
-  mov $4,$5
-  mov $5,3
-  mov $9,$8
-  lpb $9
-    mov $7,$1
-    sub $9,1
-  lpe
+lpb $0
+  mov $2,1
+  mov $2,$0
+  max $2,0
+  mov $4,3
+  cal $2,222834 ; Number of n X 4 0..3 arrays with no element equal to another at a city block distance of exactly two, and new values 0..3 introduced in row major order.
+  trn $0,2
+  add $1,$2
+  mov $4,$2
+  min $4,1
+  add $5,$4
 lpe
-lpb $6
-  mov $6,0
-  sub $7,$1
-lpe
-mov $1,$7
+mov $3,$2
+mov $3,$1
+div $1,24
+add $1,1

@@ -3,12 +3,13 @@
 
 mov $2,$0
 add $2,1
-mov $3,$0
+mov $4,$0
 lpb $2
-  mov $0,$3
+  mov $0,$4
   sub $2,1
   sub $0,$2
-  add $0,1
-  cal $0,82410 ; a(1)=0. Thereafter, the sequence is constructed using the rule: for any k >= 0, if a(1), a(2), ..., a(2^k+1) are known, the next 2^k terms are given as follows: a(2^k+1+i) = 1 - a(2^k+1-i) for 1 <= i <= 2^k.
-  add $1,$0
+  cal $0,14707 ; a(4n)=0, a(4n+2)=1, a(2n+1)=a(n).
+  mov $3,$0
+  cmp $3,0
+  add $1,$3
 lpe

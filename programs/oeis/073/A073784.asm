@@ -1,7 +1,6 @@
 ; A073784: Number of primes between successive composite numbers.
 ; 1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1,0
 
-add $0,1
-cal $0,65310 ; Number of occurrences of n-th prime in A065308, where A065308(j) = prime(j - pi(j)).
+cal $0,53542 ; Distance from n-th composite number (A002808) to next prime.
+cmp $0,1
 mov $1,$0
-sub $1,1

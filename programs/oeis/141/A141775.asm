@@ -9,18 +9,15 @@ lpb $7
   sub $7,1
   add $0,$7
   sub $0,1
-  add $3,$0
-  add $2,$3
-  mov $4,2
-  mov $4,$3
-  sub $4,$3
-  pow $3,2
-  sub $4,$0
+  mov $1,$0
   max $0,0
-  mov $4,$3
+  add $2,2
+  mul $1,$2
+  sub $2,4
+  add $4,1
+  mul $4,2
   cal $0,130785 ; Sequence identical to its third differences: a(n+3) = 3a(n+2)-3a(n+1)+2a(n), with a(0)=1, a(1)=4, a(2)=9.
-  mul $2,2
-  mov $1,$2
+  mov $1,268234
   mov $1,$0
   mov $8,$7
   cmp $8,1
