@@ -9,21 +9,19 @@ lpb $7
   mov $0,$5
   sub $7,1
   sub $0,$7
+  add $2,1
+  add $2,$0
+  add $4,$0
+  mul $4,$0
   max $0,0
   cal $0,7844 ; Least positive integer k for which 3^n divides k!.
+  mov $1,$4
   mov $1,$0
-  add $1,1
-  mov $2,$0
-  add $3,2
-  mov $3,$0
-  mov $3,$1
-  mov $4,$1
-  mov $1,3
-  mov $1,$0
-  add $2,$0
-  mov $3,1
+  mod $2,2
+  mov $2,$4
+  mov $3,$4
+  sub $3,1
   mul $4,$0
-  add $3,$4
   add $6,$0
 lpe
 mov $1,$6

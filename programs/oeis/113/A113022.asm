@@ -3,13 +3,12 @@
 
 mov $1,$0
 max $0,0
+mov $2,4
 cal $0,308807 ; a(n) = 4*5^(n-1) + n.
-mov $2,1
-mov $2,$1
-mov $4,$0
-sub $0,2
-div $1,2
+add $1,4
+add $3,$0
+add $3,$1
+pow $1,2
 mov $1,$0
-add $1,1
-sub $2,13
-mov $3,7
+sub $1,1
+mov $2,1

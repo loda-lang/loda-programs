@@ -468,6 +468,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210982](http://oeis.org/A210982) ([L16 program](210/A210982.asm)): Zero together with A126264 and positive terms of A051624 interleaved.
 * [A210983](http://oeis.org/A210983) ([L19 program](210/A210983.asm)): Total number of pairs of states of the first n subshells of the nuclear shell model in which the subshells are ordered by energy level in increasing order.
 * [A210984](http://oeis.org/A210984) ([L03 program](210/A210984.asm)): Total number of states of the first n subshells of the nuclear shell model in which the subshells are ordered by energy level in increasing order.
+* [A211005](http://oeis.org/A211005) ([L22 program](211/A211005.asm)): Pair (i, j) where i = number of adjacent nonprimes and j = number of adjacent primes.
 * [A211006](http://oeis.org/A211006) ([L17 program](211/A211006.asm)): Pair (n,p) where n is the sum of adjacent nonprimes and p is the sum of adjacent primes.
 * [A211007](http://oeis.org/A211007) ([L06 program](211/A211007.asm)): Surface area of the first n faces of the structure mentioned in A211006.
 * [A211010](http://oeis.org/A211010) ([L09 program](211/A211010.asm)): Value on the axis "x" of the endpoint of the structure of A211000 at n-th stage.
@@ -789,6 +790,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213510](http://oeis.org/A213510) ([L21 program](213/A213510.asm)): The sequence N(n) arising in the enumeration of balanced ternary trees.
 * [A213511](http://oeis.org/A213511) ([L09 program](213/A213511.asm)): The sequence N'(n) arising in the enumeration of balanced ternary trees.
 * [A213544](http://oeis.org/A213544) ([L21 program](213/A213544.asm)): Sum of numerators of Farey Sequence of order n.
+* [A213546](http://oeis.org/A213546) ([L04 program](213/A213546.asm)): Principal diagonal of the convolution array A213505.
 * [A213547](http://oeis.org/A213547) ([L08 program](213/A213547.asm)): Antidiagonal sums of the convolution array A213505.
 * [A213549](http://oeis.org/A213549) ([L28 program](213/A213549.asm)): Principal diagonal of the convolution array A213548.
 * [A213560](http://oeis.org/A213560) ([L07 program](213/A213560.asm)): Antidiagonal sums of the convolution array A213558.
@@ -995,6 +997,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A216173](http://oeis.org/A216173) ([L11 program](216/A216173.asm)): Number of all possible tetrahedra of any size and orientation, formed when intersecting the original regular tetrahedron by planes parallel to its sides and dividing its edges into n equal parts.
 * [A216175](http://oeis.org/A216175) ([L41 program](216/A216175.asm)): Number of all polyhedra (tetrahedra of any orientation and octahedra) of any size, formed when intersecting a regular tetrahedron by planes parallel to its sides and dividing its edges into n equal parts.
 * [A216195](http://oeis.org/A216195) ([L13 program](216/A216195.asm)): Abelian complexity function of the period-doubling sequence (A096268).
+* [A216197](http://oeis.org/A216197) ([L08 program](216/A216197.asm)): Abelian complexity function of A064990.
 * [A216209](http://oeis.org/A216209) ([L08 program](216/A216209.asm)): Triangle read by rows: T(n,k) = n+k with 0 <= k <= 2*n.
 * [A216223](http://oeis.org/A216223) ([L10 program](216/A216223.asm)): Distance from Fibonacci(n) to the next perfect square.
 * [A216230](http://oeis.org/A216230) ([L10 program](216/A216230.asm)): Square array T, read by antidiagonals: T(n,k) = 0 if n-k>=1 or if k-n>=2, T(0,0) = T(0,1) = 1, T(n,k) = T(n-1,k) + T(n,k-1).
@@ -2294,6 +2297,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244738](http://oeis.org/A244738) ([L07 program](244/A244738.asm)): a(n) = (prime(n) mod 5) mod 3.
 * [A244750](http://oeis.org/A244750) ([L13 program](244/A244750.asm)): 0-additive sequence: a(n) is the smallest number larger than a(n-1) which is not the sum of any subset of earlier terms, with initial values {0, 2, 3, 4}.
 * [A244762](http://oeis.org/A244762) ([L13 program](244/A244762.asm)): a(n) = (5*3^n-2*n-1)/4.
+* [A244796](http://oeis.org/A244796) ([L06 program](244/A244796.asm)): Number of moduli m such that (prime(n) mod m) = 1.
 * [A244797](http://oeis.org/A244797) ([L05 program](244/A244797.asm)): Number of moduli m such that (prime(n) mod m) = 2.
 * [A244802](http://oeis.org/A244802) ([L05 program](244/A244802.asm)): The 60 degree spoke (or ray) of a hexagonal spiral of Ulam.
 * [A244803](http://oeis.org/A244803) ([L05 program](244/A244803.asm)): The 360 degree spoke (or ray) of a hexagonal spiral of Ulam.

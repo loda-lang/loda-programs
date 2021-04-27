@@ -1481,7 +1481,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330285](http://oeis.org/A330285) ([L50 program](330/A330285.asm)): The maximum number of arithmetic progressions for a sequence of length n.
 * [A330298](http://oeis.org/A330298) ([L09 program](330/A330298.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 2 even numbers.
 * [A330299](http://oeis.org/A330299) ([L12 program](330/A330299.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 3 even numbers.
-* [A330320](http://oeis.org/A330320) ([L23 program](330/A330320.asm)): a(n) = Sum_{i=1..n} tau(i)*tau(i+1), where tau(n) = A000005(n) is the number of divisors of n.
+* [A330320](http://oeis.org/A330320) ([L05 program](330/A330320.asm)): a(n) = Sum_{i=1..n} tau(i)*tau(i+1), where tau(n) = A000005(n) is the number of divisors of n.
 * [A330321](http://oeis.org/A330321) ([L03 program](330/A330321.asm)): a(n) = Sum_{i=1..n} tau(i)*tau(i+1)/2, where tau(n) = A000005(n) is the number of divisors of n.
 * [A330323](http://oeis.org/A330323) ([L03 program](330/A330323.asm)): a(n) = Moebius(n)*Moebius(n+1).
 * [A330357](http://oeis.org/A330357) ([L04 program](330/A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
@@ -1548,7 +1548,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332206](http://oeis.org/A332206) ([L17 program](332/A332206.asm)): Numbers k such that A332205(k) = 0.
 * [A332224](http://oeis.org/A332224) ([L07 program](332/A332224.asm)): a(n) = A087808(sigma(n)).
 * [A332243](http://oeis.org/A332243) ([L04 program](332/A332243.asm)): Starhex honeycomb numbers: a(n) = 13 + 60*n + 60*n^2.
-* [A332264](http://oeis.org/A332264) ([L19 program](332/A332264.asm)): Partial sums of A334136.
+* [A332264](http://oeis.org/A332264) ([L09 program](332/A332264.asm)): Partial sums of A334136.
 * [A332410](http://oeis.org/A332410) ([L06 program](332/A332410.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-5) - 2*a(n-6) + a(n-7) with a(0)=0, a(1)=1, a(2)=3, a(3)=6, a(4)=11, a(5)=17, a(6)=24.
 * [A332420](http://oeis.org/A332420) ([L16 program](332/A332420.asm)): Number of Maclaurin polynomials of sin x having exactly n positive zeros.
 * [A332442](http://oeis.org/A332442) ([L03 program](332/A332442.asm)): Triangle read by rows, T(n,k) is the number of regular triangles of length k (in some length unit), for k from {1, 2, ... , n}, in a matchstick arrangement with enclosing triangle of length n, but only triangles with orientation opposite to the enclosing triangle are counted.
@@ -1675,7 +1675,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336643](http://oeis.org/A336643) ([L03 program](336/A336643.asm)): Squarefree kernel of n divided by the squarefree part of n: a(n) = rad(n) / core(n).
 * [A336691](http://oeis.org/A336691) ([L03 program](336/A336691.asm)): Number of distinct prime factors of 1+sigma(n).
 * [A336692](http://oeis.org/A336692) ([L04 program](336/A336692.asm)): Binary weight of 1+sigma(n).
-* [A336696](http://oeis.org/A336696) ([L03 program](336/A336696.asm)): Sum of odd divisors of 1+sigma(n).
 * [A336698](http://oeis.org/A336698) ([L07 program](336/A336698.asm)): a(n) = A000265(1+A000265(sigma(n))), where A000265(k) gives the odd part of k.
 * [A336705](http://oeis.org/A336705) ([L11 program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
 * [A336751](http://oeis.org/A336751) ([L12 program](336/A336751.asm)): Smallest side of integer-sided triangles whose sides a < b < c are in arithmetic progression.
@@ -1741,6 +1740,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338041](http://oeis.org/A338041) ([L22 program](338/A338041.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of regions thus created. See Comments for details.
 * [A338042](http://oeis.org/A338042) ([L15 program](338/A338042.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of vertices thus created. See Comments for details.
 * [A338064](http://oeis.org/A338064) ([L42 program](338/A338064.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is even.
+* [A338086](http://oeis.org/A338086) ([L08 program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
 * [A338101](http://oeis.org/A338101) ([L15 program](338/A338101.asm)): Smallest odd prime dividing n is a(n)-th prime, or 0 if no such prime exists.
 * [A338109](http://oeis.org/A338109) ([L18 program](338/A338109.asm)): a(n)/A002939(n+1) is the Kirchhoff index of the join of the disjoint union of two complete graphs on n vertices with the empty graph on n+1 vertices.
 * [A338117](http://oeis.org/A338117) ([L07 program](338/A338117.asm)): Number of partitions of n into two parts (s,t) such that (t-s) | n, where s < t.

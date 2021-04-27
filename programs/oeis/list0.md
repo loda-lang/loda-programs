@@ -423,6 +423,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002661](http://oeis.org/A002661) ([L15 program](002/A002661.asm)): Least integer having Radon random number n.
 * [A002662](http://oeis.org/A002662) ([L06 program](002/A002662.asm)): a(n) = 2^n - 1 - n*(n+1)/2.
 * [A002663](http://oeis.org/A002663) ([L07 program](002/A002663.asm)): a(n) = 2^n - C(n,0) - C(n,1) - C(n,2) - C(n,3).
+* [A002664](http://oeis.org/A002664) ([L12 program](002/A002664.asm)): a(n) = 2^n - C(n,0)- ... - C(n,4).
 * [A002694](http://oeis.org/A002694) ([L04 program](002/A002694.asm)): Binomial coefficients C(2n, n-2).
 * [A002696](http://oeis.org/A002696) ([L04 program](002/A002696.asm)): Binomial coefficients C(2n,n-3).
 * [A002697](http://oeis.org/A002697) ([L04 program](002/A002697.asm)): a(n) = n*4^(n-1).
@@ -2437,7 +2438,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A020336](http://oeis.org/A020336) ([L29 program](020/A020336.asm)): Numbers whose base-8 representation is the juxtaposition of two identical strings.
 * [A020337](http://oeis.org/A020337) ([L39 program](020/A020337.asm)): Numbers whose base-9 representation is the juxtaposition of two identical strings.
 * [A020338](http://oeis.org/A020338) ([L10 program](020/A020338.asm)): Doublets: base-10 representation is the juxtaposition of two identical strings.
-* [A020500](http://oeis.org/A020500) ([L05 program](020/A020500.asm)): Cyclotomic polynomials at x=1.
+* [A020500](http://oeis.org/A020500) ([L11 program](020/A020500.asm)): Cyclotomic polynomials at x=1.
 * [A020515](http://oeis.org/A020515) ([L05 program](020/A020515.asm)): a(n) = 4^n - 2^n + 1.
 * [A020522](http://oeis.org/A020522) ([L04 program](020/A020522.asm)): a(n) = 4^n - 2^n.
 * [A020527](http://oeis.org/A020527) ([L05 program](020/A020527.asm)): 2nd Bernoulli polynomial evaluated at powers of 2 (multiplied by 6).
@@ -3661,7 +3662,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A029609](http://oeis.org/A029609) ([L17 program](029/A029609.asm)): Central numbers in the (2,3)-Pascal triangle A029600.
 * [A029651](http://oeis.org/A029651) ([L10 program](029/A029651.asm)): Central elements of the (1,2)-Pascal triangle A029635.
 * [A029699](http://oeis.org/A029699) ([L23 program](029/A029699.asm)): Number of words of length 4 in the n(n-1)/2 transpositions of S[ n ] equivalent to the identity.
-* [A029714](http://oeis.org/A029714) ([L26 program](029/A029714.asm)): a(n) = Sum_{k divides 3^n} S(k), where S is the Kempner function A002034.
+* [A029714](http://oeis.org/A029714) ([L24 program](029/A029714.asm)): a(n) = Sum_{k divides 3^n} S(k), where S is the Kempner function A002034.
 * [A029739](http://oeis.org/A029739) ([L06 program](029/A029739.asm)): Numbers that are congruent to {1, 3, 4} mod 6.
 * [A029744](http://oeis.org/A029744) ([L08 program](029/A029744.asm)): Numbers of the form 2^n or 3*2^n.
 * [A029747](http://oeis.org/A029747) ([L17 program](029/A029747.asm)): Numbers of the form 2^k times 1, 3 or 5.
@@ -3853,11 +3854,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033037](http://oeis.org/A033037) ([L10 program](033/A033037.asm)): Numbers all of whose base 12 digits are odd.
 * [A033040](http://oeis.org/A033040) ([L26 program](033/A033040.asm)): Numbers all of whose base 15 digits are odd.
 * [A033041](http://oeis.org/A033041) ([L10 program](033/A033041.asm)): Numbers all of whose base 16 digits are odd.
-* [A033042](http://oeis.org/A033042) ([L04 program](033/A033042.asm)): Sums of distinct powers of 5.
+* [A033042](http://oeis.org/A033042) ([L03 program](033/A033042.asm)): Sums of distinct powers of 5.
 * [A033043](http://oeis.org/A033043) ([L29 program](033/A033043.asm)): Sums of distinct powers of 6.
 * [A033044](http://oeis.org/A033044) ([L26 program](033/A033044.asm)): Sums of distinct powers of 7.
 * [A033045](http://oeis.org/A033045) ([L04 program](033/A033045.asm)): Sums of distinct powers of 8.
-* [A033046](http://oeis.org/A033046) ([L04 program](033/A033046.asm)): Sums of distinct powers of 9.
+* [A033046](http://oeis.org/A033046) ([L03 program](033/A033046.asm)): Sums of distinct powers of 9.
 * [A033047](http://oeis.org/A033047) ([L27 program](033/A033047.asm)): Sums of distinct powers of 11.
 * [A033048](http://oeis.org/A033048) ([L24 program](033/A033048.asm)): Sums of distinct powers of 12.
 * [A033050](http://oeis.org/A033050) ([L22 program](033/A033050.asm)): Numbers whose set of base 14 digits is {0,1}.
@@ -4177,6 +4178,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A035005](http://oeis.org/A035005) ([L07 program](035/A035005.asm)): Number of possible queen moves on an n X n chessboard.
 * [A035006](http://oeis.org/A035006) ([L05 program](035/A035006.asm)): Number of possible rook moves on an n X n chessboard.
 * [A035008](http://oeis.org/A035008) ([L03 program](035/A035008.asm)): Total number of possible knight moves on an (n+2) X (n+2) chessboard, if the knight is placed anywhere.
+* [A035038](http://oeis.org/A035038) ([L12 program](035/A035038.asm)): a(n) = 2^n - C(n,0) - C(n,1) - ... - C(n,5).
 * [A035100](http://oeis.org/A035100) ([L05 program](035/A035100.asm)): Number of bits in binary expansion of n-th prime.
 * [A035104](http://oeis.org/A035104) ([L05 program](035/A035104.asm)): First differences give (essentially) A028242.
 * [A035106](http://oeis.org/A035106) ([L06 program](035/A035106.asm)): 1, together with numbers of the form 1 or k*(k+1) or k*(k+2), k > 0.
@@ -4491,6 +4493,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038500](http://oeis.org/A038500) ([L06 program](038/A038500.asm)): Highest power of 3 dividing n.
 * [A038502](http://oeis.org/A038502) ([L05 program](038/A038502.asm)): Remove 3's from n.
 * [A038503](http://oeis.org/A038503) ([L14 program](038/A038503.asm)): Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose 0".
+* [A038504](http://oeis.org/A038504) ([L13 program](038/A038504.asm)): Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose 1".
 * [A038505](http://oeis.org/A038505) ([L28 program](038/A038505.asm)): Sum of every 4th entry of row n in Pascal's triangle, starting at binomial(n,2).
 * [A038548](http://oeis.org/A038548) ([L30 program](038/A038548.asm)): Number of divisors of n that are at most sqrt(n).
 * [A038572](http://oeis.org/A038572) ([L13 program](038/A038572.asm)): a(n) = n rotated one binary place to the right.

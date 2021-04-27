@@ -3,8 +3,9 @@
 
 cal $0,206735 ; Triangle T(n,k), read by rows, given by (0, 2, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (1, 0, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
 lpb $0
-  mov $1,$0
-  pow $0,0
+  sub $0,1
+  mul $0,2
 lpe
+mov $1,$0
 mul $1,2
 add $1,1
