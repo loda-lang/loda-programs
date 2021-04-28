@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,27803 ; a(n) = 35*(n+1)*binomial(n+4, 7)/4.
+  cal $2,53347 ; a(n) = binomial(n+7, 7)*(n+4)/4.
   sub $0,1
   add $1,$2
 lpe
-div $1,35
 add $1,1

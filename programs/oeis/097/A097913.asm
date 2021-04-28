@@ -4,7 +4,3 @@
 div $0,2
 cal $0,8718 ; Expansion of g.f.: (1+x^9)/((1-x)*(1-x^4)*(1-x^6)*(1-x^12)).
 mov $1,$0
-add $1,$0
-sub $1,2
-div $1,2
-add $1,1

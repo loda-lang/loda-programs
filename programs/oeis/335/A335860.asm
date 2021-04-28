@@ -1,14 +1,9 @@
 ; A335860: Partial sums of A064097.
 ; 0,1,3,5,8,11,15,18,22,26,31,35,40,45,50,54,59,64,70,75,81,87,94,99,105,111,117,123,130,136,143,148,155,161,168,174,181,188,195,201,208,215,223,230,237,245,254,260,268,275,282,289,297,304,312,319,327,335
 
-mov $2,$0
-mov $4,$0
-lpb $2
-  mov $0,$4
-  sub $2,1
-  sub $0,$2
-  cal $0,73933 ; Number of terms in n-th row of triangle in A073932.
-  mov $3,$0
-  sub $3,1
-  add $1,$3
+lpb $0
+  mov $2,$0
+  cal $2,64097 ; A quasi-logarithm defined inductively by a(1) = 0 and a(p) = 1 + a(p-1) if p is prime and a(n*m) = a(n) + a(m) if m,n > 1.
+  sub $0,1
+  add $1,$2
 lpe

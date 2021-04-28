@@ -30,13 +30,12 @@ lpb $15
         mov $2,$0
         max $2,0
         cal $2,33885 ; a(n) = 3*n - sum of divisors of n.
+        mov $1,1
         add $3,$2
         mov $4,$2
-        div $2,4
         min $4,1
         add $5,$4
       lpe
-      mov $1,$2
       mov $1,$3
       mov $9,$8
       cmp $9,1

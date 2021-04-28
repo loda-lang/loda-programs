@@ -3,8 +3,6 @@
 
 cal $0,48967 ; Number of even entries in row n of Pascal's triangle (A007318).
 mul $0,2
-mov $2,$0
-cmp $2,0
-add $0,$2
+max $0,1
 mov $1,$0
 sub $1,1
