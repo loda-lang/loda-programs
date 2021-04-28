@@ -3,7 +3,6 @@
 
 mov $14,$0
 mov $16,$0
-add $16,1
 lpb $16
   clr $0,14
   mov $0,$14
@@ -32,12 +31,12 @@ lpb $16
         cal $2,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
         add $3,$2
         mov $4,$2
-        div $2,2
         min $4,1
         add $5,$4
       lpe
-      mov $1,$4
+      mov $1,$5
       mov $1,$3
+      sub $4,3
       mov $9,$8
       cmp $9,1
       mul $9,$3
@@ -56,7 +55,7 @@ lpb $16
   mul $10,$1
   mov $1,$11
   sub $1,$10
-  mul $1,2
   add $15,$1
 lpe
 mov $1,$15
+mul $1,2

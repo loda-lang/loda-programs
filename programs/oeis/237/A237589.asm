@@ -3,18 +3,14 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1750 ; Primes multiplied by 5.
+  max $2,0
+  cal $2,40 ; The prime numbers.
+  sub $0,1
   add $1,$2
-  mov $4,1
+  mov $3,1
   mov $4,$2
   min $4,1
-  sub $0,$4
-  mov $2,0
-  mov $4,$1
-  mov $4,$0
-  add $5,$0
+  add $5,$4
 lpe
-mov $3,$2
 mov $3,$1
-div $1,5
 add $1,1

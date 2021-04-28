@@ -1,22 +1,16 @@
 ; A279482: Sum of the first n Lucas numbers whose indices are prime.
 ; 3,7,18,47,246,767,4338,13687,77766,1227617,4237966,58256487,428504938,1397827967,8041666846,127260518217,2266556004016,7867304297817,108368654581246,797215157169645,2600638713977566,34961761386236715
 
-mov $3,$0
-mov $5,$0
-add $5,1
-lpb $5
-  clr $0,3
-  mov $0,$3
-  sub $5,1
-  sub $0,$5
-  cal $0,40 ; The prime numbers.
-  mov $2,32
-  cal $0,211 ; a(n) = a(n-1) + a(n-2) - 2, a(0) = 4, a(1) = 3.
-  mov $1,0
-  mov $1,$0
-  mov $1,$0
-  sub $1,2
-  mov $2,0
-  add $4,$1
+lpb $0
+  mov $2,$0
+  max $2,0
+  cal $2,180363 ; L(prime(n)), where L(i) is a Lucas number (A000032).
+  sub $0,1
+  add $1,$2
+  mov $3,1
+  mov $4,$2
+  min $4,1
+  add $5,$4
 lpe
-mov $1,$4
+mov $3,$1
+add $1,3

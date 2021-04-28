@@ -3,7 +3,6 @@
 
 add $0,1
 cal $0,73579 ; Signed primes: if prime(n) even, a(n) = 0; if prime(n) == 1 (mod 4), a(n) = prime(n); if prime(n) == -1 (mod 4), a(n) = -prime(n).
-sub $0,3
 mov $1,$0
+add $1,1
 div $1,2
-add $1,2

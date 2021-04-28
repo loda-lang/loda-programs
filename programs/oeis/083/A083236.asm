@@ -12,15 +12,15 @@ lpb $8
   lpb $0
     mov $2,$0
     max $2,0
-    cal $2,138636 ; a(n) = 6 * prime(n).
+    cal $2,40 ; The prime numbers.
     trn $0,2
     add $3,$2
     mov $4,$2
     min $4,1
+    sub $2,$4
     add $5,$4
-    mov $4,1
   lpe
-  mov $1,2
+  mov $0,2
   mov $1,$3
   mov $9,$8
   cmp $9,1
@@ -31,4 +31,3 @@ min $6,1
 mul $6,$1
 mov $1,$7
 sub $1,$6
-div $1,6

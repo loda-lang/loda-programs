@@ -1,17 +1,17 @@
 ; A007382: Number of strict (-1)st-order maximal independent sets in path graph.
 ; 0,0,3,4,11,16,32,49,87,137,231,369,608,978,1595,2574,4179,6754,10944,17699,28655,46355,75023,121379,196416,317796,514227,832024,1346267
 
-mov $3,2
 lpb $0
   mov $2,$0
-  mov $3,$0
-  cal $2,52952 ; a(n) = Fibonacci(n+2) - (1-(-1)^n)/2.
   sub $0,2
+  max $2,0
+  cal $2,52952 ; a(n) = Fibonacci(n+2) - (1-(-1)^n)/2.
   add $1,$2
-  trn $3,6
+  mov $3,1
   mov $4,$2
   min $4,1
   add $5,$4
-  sub $5,$0
 lpe
+mov $3,$1
+add $3,1
 mov $3,$1

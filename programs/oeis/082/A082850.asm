@@ -3,10 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,308187 ; Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {0,1}.
-  mul $0,$2
-  sub $0,1
+  sub $0,$2
   add $1,$2
 lpe
 add $1,1
