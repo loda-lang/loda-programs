@@ -18,7 +18,7 @@ lpb $5
     lpb $0
       mov $2,$0
       max $2,0
-      cal $2,134058 ; Triangle read by rows, T(n,k) = 2*binomial(n,k) if k > 0, (0 <= k <= n), left column = (1,2,2,2,...).
+      cal $2,134058 ; Triangle T(n, k) = 2*binomial(n, k) with T(0, 0) = 1, read by rows.
       trn $0,2
       add $3,$2
     lpe

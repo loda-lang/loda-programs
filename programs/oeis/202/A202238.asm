@@ -3,8 +3,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,$0
-  cal $2,219839 ; a(n) is the number of odd integers in 2..(n-1) that have a common factor (other than 1) with n.
+  cal $2,339423 ; If n = p_1 * ... * p_m with primes p_i <= p_{i+1}, a(n) = Sum_{k<m} Product_{j <= k} p_j.
   mov $1,$2
+  add $3,1
+  add $3,$2
+  mov $0,$3
   min $1,1
 lpe

@@ -2,11 +2,14 @@
 ; 0,1,5,30,174,1015,5915,34476,200940,1171165,6826049,39785130,231884730,1351523251,7877254775,45912005400,267594777624,1559656660345,9090345184445,52982414446326,308804141493510,1799842434514735
 
 max $0,0
-cal $0,114620 ; 2*A084158 (twice Pell triangles).
+cal $0,46090 ; Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives X+1 values.
+div $0,2
+mov $1,2
 mov $1,$0
-add $3,$0
-mov $0,2
-mov $2,1
-mov $3,1
-mov $3,$1
+mul $1,2
+add $1,1
+mov $1,$0
 div $1,2
+mov $2,1
+mov $3,0
+mov $4,2

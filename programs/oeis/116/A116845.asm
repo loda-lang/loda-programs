@@ -2,20 +2,15 @@
 ; 1,2,5,14,41,121,355,1032,2973,8496,24111,68017,190885,533294,1484021,4115186,11375765,31358377,86223943,236540916,647556621,1769374932,4826148315,13142564449,35736448201,97037995226,263156279525,712795854422,1928547574913,5212430732761,14074179919531,37966831051872,102331044018045,275583771322104,741587950125831,1994125649268241,5358458028139885
 
 mov $1,$0
-cal $0,279735 ; Number of n X 2 0..1 arrays with no element equal to a strict majority of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
-sub $0,1
-sub $1,1
-mov $2,131065
-mov $3,262130
+mov $2,$0
+mov $2,$0
+max $0,0
+mov $3,2
 mov $4,5
-mov $5,$0
-cmp $5,0
-add $0,$5
+cal $0,279735 ; Number of n X 2 0..1 arrays with no element equal to a strict majority of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
+mov $1,243
+add $4,$0
+mov $1,$4
 mov $1,$0
-add $1,15
-div $4,$0
-add $0,15
-sub $1,14
 div $1,2
 add $1,1
-mov $2,393195

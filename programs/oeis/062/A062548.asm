@@ -1,11 +1,7 @@
 ; A062548: Even integers that are not partial sums of A062547.
 ; 2,14,38,50,110,122,146,158,326,338,362,374,434,446,470,482,974,986,1010,1022,1082,1094,1118,1130,1298,1310,1334,1346,1406,1418,1442,1454,2918,2930,2954,2966,3026,3038,3062,3074,3242,3254,3278,3290,3350,3362
 
-lpb $0
-  mov $2,$0
-  sub $0,$0
-  cal $2,5836 ; Numbers n whose base 3 representation contains no 2.
-  add $1,$2
-lpe
+mov $1,$0
+cal $1,5836 ; Numbers n whose base 3 representation contains no 2.
 mul $1,12
 add $1,2

@@ -3,12 +3,12 @@
 
 mul $0,2
 max $0,0
-cal $0,183984 ; 1/4 the number of (n+1) X 8 binary arrays with all 2 X 2 subblock sums the same.
-mov $1,2
-mov $2,4
-add $2,$0
-div $0,2
+cal $0,183980 ; 1/4 the number of (n+1) X 4 binary arrays with all 2 X 2 subblock sums the same.
 mov $1,$0
-sub $1,38
-mov $3,$0
-mov $4,4
+add $1,5
+add $2,$0
+add $0,5
+add $1,1
+div $1,2
+sub $1,5
+mov $3,0

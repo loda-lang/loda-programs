@@ -1,4 +1,4 @@
-; A043639: Numbers n such that base 10 representation has exactly 3 runs.
+; A043639: Numbers whose base-10 representation has exactly 3 runs.
 ; 101,102,103,104,105,106,107,108,109,120,121,123,124,125,126,127,128,129,130,131,132,134,135,136,137,138,139,140,141,142,143,145,146,147,148,149,150,151,152,153,154,156,157,158,159
 
 mov $1,1

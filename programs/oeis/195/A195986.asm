@@ -3,13 +3,9 @@
 
 lpb $0
   sub $0,1
-  mul $0,2
-  dif $0,4
+  mul $0,4
+  dif $0,8
   add $1,1
-  mov $2,1
-lpe
-lpb $2
-  add $1,2
-  sub $2,1
+  max $1,3
 lpe
 add $1,1

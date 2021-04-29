@@ -1,64 +1,17 @@
 ; A134181: Difference between cumulative prime and odd sums.
 ; 0,0,0,2,4,8,12,18,28,38,52,68,84,102,124,150,176,206,238,270,306,344,386,434,484,534,586,638,692,758,826,898,970,1050,1130,1214,1302,1392,1486,1584,1682,1788,1894,2002,2110,2228,2356,2486,2616,2748,2884,3020
 
-mov $1,2
-mov $1,$0
-add $0,1
-mov $3,8
-mov $4,1
-add $4,$1
-mov $8,$1
-cmp $8,0
-add $1,$8
-mod $1,$1
-sub $1,$4
-trn $1,1
-mov $2,8
-mov $3,8
-mov $5,$4
-mov $5,$1
-bin $5,$4
-add $4,$0
-cal $0,108754 ; Difference between partial sum of the first n primes and n^2.
-add $0,$5
-add $0,8
-mov $1,1
-trn $1,$0
-add $1,1
-mov $1,$0
-mov $2,10
-mov $5,$4
-sub $4,5
-mul $4,8
-add $4,$0
-sub $0,$4
+lpb $0
+  mov $2,$0
+  max $2,0
+  sub $4,1
+  cal $2,8507 ; Number of odd composite numbers less than n-th odd prime.
+  trn $0,1
+  add $1,$2
+  mov $4,$2
+  min $4,1
+  mov $3,$4
+  add $5,$4
+lpe
+mov $3,$1
 mul $1,2
-cmp $5,8
-mov $8,$5
-cmp $8,0
-add $5,$8
-dif $2,$5
-mov $3,1
-mov $4,1
-mov $5,1
-add $6,$0
-trn $0,1
-add $0,1
-add $6,$2
-mov $2,2
-mov $3,0
-mov $4,2
-mov $5,1
-sub $6,1
-sub $0,$6
-sub $0,3
-mul $1,2
-sub $1,36
-div $1,8
-mul $1,2
-mov $2,4
-mov $3,19
-mov $5,-3
-mov $7,$6
-add $6,19
-mul $6,3

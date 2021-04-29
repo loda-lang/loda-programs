@@ -3,10 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,250015 ; Number of length 1+5 0..n arrays with no six consecutive terms having the maximum of any three terms equal to the minimum of the remaining three terms.
+  cal $2,85465 ; Number of monotone n-weightings of complete bipartite digraph K(3,3).
   sub $0,1
-  mul $2,2
   add $1,$2
 lpe
-div $1,40
 add $1,1

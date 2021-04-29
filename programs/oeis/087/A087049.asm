@@ -3,8 +3,7 @@
 
 sub $0,1
 max $0,0
-cal $0,334659 ; Dirichlet g.f.: 1 / zeta(s-3).
-pow $0,2
-trn $0,6
+cal $0,55615 ; a(n) = n*moebius(n) (cf. A008683).
+bin $0,6
 mov $1,$0
 cmp $1,0

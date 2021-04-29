@@ -4,18 +4,14 @@
 lpb $0
   mov $2,$0
   max $2,0
+  add $4,2
   cal $2,62724 ; a(n) = floor(tau^n) + 1, where tau = (1 + sqrt(5))/2.
   trn $0,1
   add $1,$2
   mov $4,$2
   min $4,1
-  mov $6,$2
-  cmp $6,0
-  add $2,$6
-  div $4,$2
+  add $4,$2
   add $5,$4
-  mod $4,5
 lpe
-mov $3,$5
 mov $3,$1
 add $1,1
