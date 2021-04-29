@@ -4,6 +4,10 @@
 lpb $0
   dif $0,2
 lpe
-cal $0,90739 ; Exponent of 2 in 9^n - 1.
-mov $1,$0
-sub $1,3
+lpb $0
+  sub $0,1
+  mul $0,2
+  dif $0,4
+  add $1,3413
+lpe
+div $1,3413

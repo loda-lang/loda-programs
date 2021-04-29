@@ -3,13 +3,8 @@
 
 mov $1,1
 lpb $0
-  mov $2,1
-  mul $2,$0
+  mov $2,$0
   cal $2,51798 ; a(n) = (n+1)*(n+2)*(n+3)*(9n+4)/24.
   sub $0,1
   add $1,$2
 lpe
-mul $1,2
-sub $1,2
-div $1,2
-add $1,1

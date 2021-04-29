@@ -5,8 +5,6 @@ lpb $0
   mov $2,$0
   cal $2,52206 ; Partial sums of A050405.
   sub $0,1
-  mul $2,4
   add $1,$2
 lpe
-div $1,4
 add $1,1

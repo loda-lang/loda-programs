@@ -13,15 +13,15 @@ lpb $2
     ; Compute prime for the current iteration
     mov $1,$3
     cal $1,40 ; The prime numbers.
-    
+
     ; Does the prime divide up into n
     mov $4,$0
     mod $4,$1
     cmp $4,0
-    
+
     ; If the prime divides up, then stop the loop
     mul $2,$4
-    
+
     ; Update the iteration counters
     sub $2,1
     add $3,1

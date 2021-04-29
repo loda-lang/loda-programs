@@ -3,12 +3,9 @@
 
 lpb $0
   sub $0,1
-  mov $2,$0
-  sub $2,$0
-  cal $2,7917 ; Version 1 of the "previous prime" function: largest prime <= n.
-  add $1,$2
-  div $0,$1
+  add $1,1
   mul $1,2
+  div $0,$1
 lpe
-div $1,4
+div $1,2
 add $1,1

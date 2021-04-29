@@ -7,21 +7,14 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  cal $0,69497 ; Triangular numbers of the form 6k.
-  mov $2,$0
-  mul $2,2
-  mov $4,$3
-  mov $6,$2
-  lpb $4
-    mov $1,$6
-    sub $4,1
-  lpe
+  max $0,0
+  cal $0,154293 ; Integers of the form t/6, where t is a triangular number (A000217).
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mov $4,$0
 lpe
-lpb $5
-  sub $1,$6
-  mov $5,0
-lpe
-sub $1,12
-div $1,12
+min $5,1
+mul $5,$4
+sub $1,$5
 mul $1,6
-add $1,6

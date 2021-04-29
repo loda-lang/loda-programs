@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,27801 ; a(n) = 5*(n+1)*binomial(n+4,5)/2.
+  cal $2,51923 ; Partial sums of A051836.
   sub $0,1
   add $1,$2
 lpe
-div $1,5
 add $1,1

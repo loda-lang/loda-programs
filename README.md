@@ -1,6 +1,6 @@
-# LODA: Lexicographical Order Descent Assembly
+# LODA: Mining Programs for Integer Sequences
 
-LODA is an assembly language, a computational model and a tool for mining integer sequences. You can use it to search programs that calculate sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
+LODA is an assembly language, a computational model and a tool for mining integer sequences. You can use it to search programs that calculate integer sequences from the [On-Line Encyclopedia of Integer Sequences® (OEIS®)](http://oeis.org/).
 
 The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. The vast majority of these programs has been automatically generated using the `loda mine` command. Disclaimer: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database (currently up to 2000 terms). There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
@@ -8,7 +8,8 @@ We warmly welcome [contributions to this project](CONTRIBUTING.md). We use [Slac
 
 ## Language
 
-The LODA language is an assembly language with focus on arithmetic and number-theoretical operations. It supports an unbounded set of memory cells storing integers, common arithmetic operations, calling other programs, and a loop based on a lexicographical order descent on memory regions.
+The LODA language is an assembly language with focus on arithmetic and number-theoretical operations. It supports an unbounded set of memory cells storing integers, common arithmetic operations, calling other programs, and a loop based on a lexicographical order descent on memory regions. The name "LODA" means
+"Lexicographical Order Descent Assembly."
 
 Here is a basic example of a LODA program for computing the Fibonacci numbers:
 
@@ -81,7 +82,7 @@ Options:
   -i <string>      Miner to be used (default:default)
   -t <number>      Number of sequence terms (default:20)
   -p <number>      Maximum physical memory in MB (default:1024)
-  -c <number>      Maximum number of interpreter cycles (default:10000000)
+  -c <number>      Maximum number of interpreter cycles (default:10000000; no limit:-1)
   -m <number>      Maximum number of used memory cells (default:100000)
   -b <number>      Print evaluation result in b-file format starting from a given offset
   -s               Evaluate the number of execution steps

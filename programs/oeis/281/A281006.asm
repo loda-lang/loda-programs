@@ -8,6 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
+  max $0,0
   cal $0,294016 ; a(n) = sum of all divisors of all positive integers <= n, minus the sum of remainders of n mod k, for k = 1, 2, 3, ..., n.
   div $0,2
   mov $2,$3

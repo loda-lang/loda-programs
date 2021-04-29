@@ -1,14 +1,10 @@
 ; A206915: The index (in A006995) of the greatest binary palindrome <= n; also the 'lower inverse' of A006995.
 ; 1,2,2,3,3,4,4,5,5,6,6,6,6,6,6,7,7,8,8,8,8,9,9,9,9,9,9,10,10,10,10,11,11,12,12,12,12,12,12,12,12,12,12,12,12,13,13,13,13,13,13,14,14,14,14,14,14,14,14,14,14,14,14,15,15,16,16,16,16,16,16,16
 
-mov $3,$0
-add $3,1
-mov $4,$0
-lpb $3
-  mov $0,$4
-  sub $3,1
-  sub $0,$3
-  cal $0,55945 ; a(n) = n - (reversal of base-2 digits of n) (and then the result is written in base 10).
-  cmp $0,$2
-  add $1,$0
+lpb $0
+  mov $2,$0
+  cal $2,178225 ; Characteristic function of A006995 (binary palindromes).
+  sub $0,1
+  add $1,$2
 lpe
+add $1,1

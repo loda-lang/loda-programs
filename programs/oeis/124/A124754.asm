@@ -3,8 +3,10 @@
 
 lpb $0
   mov $2,$0
-  trn $2,1
-  cal $2,186032 ; a(n) = (-1)^A048881(n).
+  cal $2,102394 ; A wicked odious sequence.
   div $0,2
-  add $1,$2
+  sub $2,1
+  mov $3,$2
+  min $3,1
+  add $1,$3
 lpe

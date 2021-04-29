@@ -11,6 +11,7 @@ lpb $5
   lpb $0
     mov $6,$0
     sub $0,1
+    max $6,0
     cal $6,1400 ; Number of partitions of n into at most 4 parts.
     sub $0,1
     add $2,$6

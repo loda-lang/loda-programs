@@ -3,14 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,85463 ; Number of 5-tuples (v1,v2,v3,v4,v5) of nonnegative integers less than n such that v1<=v4, v1<=v5, v2<=v4, v2<=v5 and v3<=v4.
   sub $0,1
-  add $3,$2
-  mov $1,$3
-  mov $4,$2
-  min $4,1
-  add $1,$4
+  cal $2,85463 ; Number of 5-tuples (v1,v2,v3,v4,v5) of nonnegative integers less than n such that v1<=v4, v1<=v5, v2<=v4, v2<=v5 and v3<=v4.
+  add $1,$2
 lpe
-mov $5,$1
-cmp $5,0
-add $1,$5
+add $1,1

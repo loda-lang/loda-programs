@@ -1,8 +1,7 @@
 ; A343461: a(n) is the maximal number of congruent n-gons that can be arranged around a vertex without overlapping.
 ; 6,4,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 
+add $0,1
 mov $1,4
-mov $2,$0
-add $2,1
-div $1,$2
+div $1,$0
 add $1,2

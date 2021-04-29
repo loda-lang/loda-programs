@@ -3,8 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,76074 ; Initial members of groups in A076077.
-  add $2,$0
-  mov $0,-1
-  sub $1,$2
+  cal $1,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  sub $1,$0
+  mod $0,2
 lpe

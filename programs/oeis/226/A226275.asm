@@ -29,6 +29,7 @@ lpb $44
           mov $1,$0
           sub $0,1
           add $1,3
+          max $1,0
           add $4,2
           cal $1,170934 ; a(n) = b(n) + b(n+1) + 2, where b() = A000930().
           mul $1,2

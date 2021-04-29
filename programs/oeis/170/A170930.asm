@@ -3,10 +3,14 @@
 
 lpb $0
   sub $0,1
-  mov $1,$0
-  cal $1,238923 ; Number of (n+1) X (1+1) 0..3 arrays with no element greater than all horizontal neighbors or equal to all vertical neighbors.
-  mov $0,0
-  mul $1,2
+  mov $2,$0
+  max $2,0
+  cal $2,202206 ; a(n) = 3*a(n-1)+3*a(n-2) with a(0)=1 and a(1)=2.
+  add $1,$2
+  mov $4,$2
+  min $4,1
+  add $5,$4
 lpe
-div $1,24
+mov $3,$1
 mul $1,21
+mov $4,2
