@@ -8,20 +8,19 @@ lpb $7
   mov $0,$5
   sub $7,1
   add $0,$7
-  sub $0,1
+  trn $0,1
   max $0,0
   cal $0,216134 ; Numbers n such that T_n and 2*T_n + 1 are triangular.
-  mov $4,$0
-  add $4,3
-  sub $0,$4
-  trn $0,$4
   add $1,1
-  mov $3,3
-  sub $4,2
-  mov $1,$4
+  add $1,$0
+  mov $3,-2
+  add $4,$0
+  add $4,2
+  mul $3,$4
+  mov $3,$4
   mov $8,$7
   cmp $8,1
-  mul $8,$4
+  mul $8,$1
   add $6,$8
 lpe
 min $5,1

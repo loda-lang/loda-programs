@@ -1,24 +1,15 @@
 ; A113300: Sum of even-indexed terms of tribonacci numbers.
 ; 0,1,3,10,34,115,389,1316,4452,15061,50951,172366,583110,1972647,6673417,22576008,76374088,258371689,874065163,2956941266,10003260650,33840788379,114482567053,387291750188,1310198605996,4432370135229,14994600761871,50726371026838
 
-mov $3,$0
-mov $5,$0
-add $5,1
-lpb $5
-  clr $0,3
-  mov $0,$3
-  sub $5,1
-  sub $0,$5
-  mul $0,2
-  mov $1,8
-  mov $1,$0
-  mov $2,150
-  cal $0,73 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.
-  sub $1,7
-  mul $1,$0
-  mov $1,$0
-  mov $2,600
+lpb $0
   mov $2,$0
-  add $4,$0
+  max $2,0
+  cal $2,99463 ; Bisection of tribonacci numbers.
+  sub $0,1
+  add $1,$2
+  add $3,$1
+  mov $4,$2
+  min $4,1
+  add $5,$4
 lpe
-mov $1,$4
+mov $3,$1

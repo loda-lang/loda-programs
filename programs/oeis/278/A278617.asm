@@ -3,8 +3,6 @@
 
 sub $0,1
 max $0,0
-cal $0,99801 ; PrimePi(2n+1), the number of primes less than or equal to 2n+1.
+cal $0,99802 ; Bisection of A000720.
 sub $0,1
 mov $1,$0
-sub $0,$0
-trn $1,$0

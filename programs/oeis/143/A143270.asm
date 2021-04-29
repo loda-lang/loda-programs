@@ -1,53 +1,44 @@
 ; A143270: a(n) = n*A002088(n).
 ; 1,4,12,24,50,72,126,176,252,320,462,552,754,896,1080,1280,1632,1836,2280,2560,2940,3300,3956,4320,5000,5512,6210,6776,7830,8340,9548,10368,11352,12240,13440,14256,15984,17100,18486,19600,21730,22764,25112
 
-mov $31,$0
-mov $33,$0
-add $33,1
-lpb $33
-  clr $0,31
-  mov $0,$31
-  sub $33,1
-  sub $0,$33
-  mov $27,$0
-  mov $29,2
-  lpb $29
-    clr $0,27
-    mov $0,$27
-    sub $29,1
-    add $0,$29
-    sub $0,1
-    add $1,1
-    add $0,$1
-    mov $2,$1
-    sub $1,1
-    max $1,0
-    mov $3,$2
-    cal $1,8740 ; Molien series for 3-dimensional group [2+,n] = 2*(n/2).
-    add $1,$2
-    add $1,62
-    mov $3,$0
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11
+  clr $0,9
+  mov $0,$9
+  sub $11,1
+  sub $0,$11
+  mov $5,$0
+  mov $7,2
+  lpb $7
+    clr $0,5
+    mov $0,$5
+    sub $7,1
+    add $0,$7
+    trn $0,1
+    add $0,1
+    mov $1,$0
     max $0,0
-    cal $0,225531 ; Number of ordered pairs (i, j) with i, j >= 0, i + j <= n and gcd(i, j) <= 1.
-    mul $3,$0
-    mov $26,$0
-    cmp $26,0
-    add $0,$26
-    div $1,$0
-    add $0,17
+    add $2,2
+    mul $2,2
+    mov $3,$2
+    mul $3,$2
+    mov $4,1
+    cal $0,5728 ; Number of fractions in Farey series of order n.
     mov $2,$1
-    mov $1,$3
-    add $2,1
-    mov $30,$29
-    cmp $30,1
-    mul $30,$3
-    add $28,$30
+    mul $2,$0
+    mov $1,$2
+    mov $8,$7
+    cmp $8,1
+    mul $8,$2
+    add $6,$8
   lpe
-  min $27,1
-  mul $27,$1
-  mov $1,$28
-  sub $1,$27
-  sub $1,2
-  add $32,$1
+  min $5,1
+  mul $5,$1
+  mov $1,$6
+  sub $1,$5
+  sub $1,1
+  add $10,$1
 lpe
-mov $1,$32
+mov $1,$10

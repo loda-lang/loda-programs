@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  add $0,3
   cal $2,145229 ; Coefficients in expansion of E'_1(q).
-  sub $0,4
+  sub $0,1
   add $1,$2
 lpe
 div $1,4

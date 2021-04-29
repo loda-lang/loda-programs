@@ -6,6 +6,4 @@ lpb $0
   cal $2,53585 ; If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = p_k^e_k.
   div $0,$2
   add $1,$2
-  add $1,$2
 lpe
-div $1,2

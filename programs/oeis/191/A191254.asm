@@ -5,11 +5,6 @@ lpb $0
   sub $0,1
   mul $0,2
   dif $0,4
-  mov $1,1
-  add $2,7
-lpe
-lpb $2
-  sub $2,1
-  mod $2,2
-  add $1,$2
+  add $1,3
+  gcd $1,2
 lpe

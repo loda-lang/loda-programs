@@ -3,7 +3,6 @@
 
 lpb $0
   cal $0,336551 ; a(n) = A003557(n) - 1.
-  add $1,3
+  add $1,1
 lpe
-div $1,3
 add $1,1

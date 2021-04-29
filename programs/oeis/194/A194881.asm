@@ -6,7 +6,5 @@ lpb $0
   cal $2,195459 ; a(n) = phi(3*n)/2.
   sub $0,1
   add $1,$2
-  sub $1,$2
-  add $1,$2
 lpe
 add $1,2

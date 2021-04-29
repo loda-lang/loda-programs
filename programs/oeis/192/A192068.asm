@@ -7,11 +7,9 @@ lpb $0
   cal $2,81714 ; a(n) = F(n)*L(n+1) where F=Fibonacci and L=Lucas numbers.
   sub $0,1
   add $1,$2
-  add $1,$2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
-mov $3,$0
+mov $3,1
 mov $3,$1
-div $1,2

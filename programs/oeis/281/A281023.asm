@@ -1,25 +1,9 @@
 ; A281023: Partial sums of A067392.
 ; 0,2,5,11,16,31,38,58,76,111,122,176,189,252,312,384,401,518,537,667,772,915,938,1142,1217,1412,1547,1785,1814,2159,2190,2462,2693,3016,3226,3676,3713,4112,4424,4924,4965,5616,5659,6209,6704,7279,7326,8118,8314
 
-mov $30,$0
-mov $32,$0
-lpb $32
-  clr $0,30
-  mov $0,$30
-  sub $32,1
-  sub $0,$32
-  mov $27,$0
-  lpb $0
-    sub $0,2
-    mov $2,$0
-    sub $0,$0
-    add $2,2
-    add $3,1
-    cal $2,308473 ; Sum of numbers < n which have common prime factors with n.
-    add $3,$2
-  lpe
-  mov $1,$3
-  add $1,$27
-  add $31,$1
+lpb $0
+  mov $2,$0
+  cal $2,67392 ; Sum of numbers <= n which have common prime factors with n.
+  sub $0,1
+  add $1,$2
 lpe
-mov $1,$31

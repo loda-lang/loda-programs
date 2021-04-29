@@ -6,7 +6,5 @@ lpb $0
   cal $2,171983 ; Beatty sequence for sqrt(13).
   sub $0,1
   add $1,$2
-  add $1,$2
 lpe
-div $1,2
 add $1,3

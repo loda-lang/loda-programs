@@ -8,12 +8,11 @@ lpb $8
   mov $0,$6
   sub $8,1
   add $0,$8
-  sub $0,1
+  trn $0,1
   lpb $0
     mov $2,$0
-    sub $0,2
-    max $2,0
     cal $2,86520 ; Number of integers strictly greater than (n-sqrt(n))/2 and strictly less than (n+sqrt(n))/2.
+    sub $0,2
     add $3,$2
   lpe
   mov $1,$3
