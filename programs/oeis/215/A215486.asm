@@ -3,5 +3,4 @@
 
 mov $1,$0
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-add $2,$0
-mod $1,$2
+mod $1,$0

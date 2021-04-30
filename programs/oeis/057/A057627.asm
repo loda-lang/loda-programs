@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,326128 ; a(n) = n - A007913(n), where A007913 gives the squarefree part of n.
+  cal $2,336642 ; One less than the largest square dividing n: a(n) = A008833(n)-1.
   sub $0,1
   mov $3,$2
   min $3,1

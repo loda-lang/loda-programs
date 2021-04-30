@@ -3,5 +3,4 @@
 
 cal $0,213370 ; a(n) = n AND 2*n, where AND is the bitwise AND operator.
 mov $1,$0
-div $1,2
-mul $1,4
+mul $1,2

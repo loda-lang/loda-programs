@@ -5,7 +5,5 @@ lpb $0
   mov $2,$0
   cal $2,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
   sub $0,$2
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  add $1,1
 lpe

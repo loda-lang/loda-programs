@@ -3,7 +3,5 @@
 
 add $0,1
 cal $0,99774 ; Number of divisors of 2*n-1.
-mul $0,2
 mov $1,$0
 sub $1,1
-div $1,2

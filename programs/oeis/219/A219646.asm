@@ -4,8 +4,6 @@
 lpb $0
   mov $2,$0
   cal $2,219642 ; Number of steps to reach 0 starting with n and using the iterated process: x -> x - (number of 1's in Zeckendorf expansion of x).
+  sub $0,1
   add $1,$2
-  mov $3,$2
-  min $3,1
-  sub $0,$3
 lpe

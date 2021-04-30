@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   cal $2,60862 ; a(n) = 0 if n is deficient, 1 if n is abundant, 2 if n is perfect.
-  mov $0,3
+  mod $0,2
   mov $1,$2
   min $1,1
 lpe

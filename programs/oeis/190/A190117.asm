@@ -4,8 +4,6 @@
 lpb $0
   mov $2,$0
   cal $2,190116 ; a(n) = n*n', where n' is the arithmetic derivative (A003415) of n.
+  sub $0,1
   add $1,$2
-  mov $3,$2
-  min $3,1
-  sub $0,$3
 lpe
