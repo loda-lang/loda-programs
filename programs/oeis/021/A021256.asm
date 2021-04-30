@@ -4,8 +4,8 @@
 lpb $0
   mov $2,$0
   cal $2,182480 ; Decimal expansion of 16000000/63.
+  mod $0,2
+  mul $2,2
   add $1,$2
-  mov $3,$2
-  min $3,1
-  mov $0,$3
 lpe
+div $1,2

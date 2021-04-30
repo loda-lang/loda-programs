@@ -2,15 +2,16 @@
 ; 1,3,6,8,13,14,21,23,26,27,38,39,52,53,54,56,73,74,93,94,95,96,119,120,125,126,129,130,159,160,191,193,194,195,196,197,234,235,236,237,278,279,322,323,324,325,372,373,380,381,382,383,436,437,438,439,440,441
 
 lpb $0
+  sub $2,$0
   mov $2,$0
   max $2,0
-  cal $2,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
+  cal $2,20500 ; Cyclotomic polynomials at x=1.
   sub $0,1
   add $1,$2
-  add $3,$1
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
+mov $3,$5
 mov $3,$1
 add $1,1

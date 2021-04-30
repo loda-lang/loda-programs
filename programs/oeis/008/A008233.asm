@@ -4,9 +4,6 @@
 lpb $0
   mov $2,$0
   cal $2,8218 ; Floor(n/4)*floor((n+1)/4)*floor((n+2)/4).
+  sub $0,1
   add $1,$2
-  mov $3,$2
-  min $3,1
-  add $0,$3
-  sub $0,2
 lpe

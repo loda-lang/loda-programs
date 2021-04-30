@@ -3,15 +3,14 @@
 
 lpb $0
   mov $2,$0
-  cal $2,68911 ; Number of n step walks (each step +/-1 starting from 0) which are never more than 2 or less than -2.
-  add $0,4
-  trn $0,7
+  max $2,0
+  cal $2,205187 ; Number of (n+1)X2 0..1 arrays with the number of clockwise edge increases in every 2X2 subblock differing from each horizontal or vertical neighbor
+  trn $0,3
   add $1,$2
+  add $3,$1
   mov $4,$2
   min $4,1
-  sub $4,10
   add $5,$4
 lpe
-mov $3,$2
 mov $3,$1
-div $1,2
+div $1,24

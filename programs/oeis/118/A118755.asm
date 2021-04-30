@@ -3,8 +3,4 @@
 
 mul $0,6
 cal $0,7918 ; Least prime >= n (version 1 of the "next prime" function).
-mul $0,405064233
 mov $1,$0
-sub $1,810128465
-div $1,405064233
-add $1,2

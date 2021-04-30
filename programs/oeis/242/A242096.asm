@@ -3,8 +3,7 @@
 
 lpb $0
   div $0,2
+  mov $1,$0
+  cal $1,230980 ; Number of primes <= n, starting at n=0.
   mul $0,2
-  mov $2,$0
-  cal $2,56172 ; Number of non-unitary prime divisors of n!.
-  mov $1,$2
 lpe

@@ -5,7 +5,8 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,8859 ; a(n) = Sum_{k=0..6} C(n,k).
+  cal $2,115567 ; a(n) = C(n,6) + C(n,5) + C(n,4) + C(n,3) + C(n,2) + C(n,1).
   add $1,$2
+  add $1,1
 lpe
 add $1,1

@@ -3,9 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,309074 ; a(0) = 1; a(2*n) = 4*a(n), a(2*n+1) = a(n).
-  mov $0,$2
-  sub $0,1
-  mov $1,3
+  cal $2,145037 ; Unreduced binary digital mean numerators, dm_num(2, n).
+  sub $0,$2
+  mov $1,1
 lpe
-div $1,3

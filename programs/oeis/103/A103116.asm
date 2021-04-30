@@ -3,15 +3,14 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  cal $2,49696 ; a(n)=T(n,n), array T as in A049695.
   sub $0,1
+  max $2,0
+  cal $2,140466 ; a(n) = 4*A002088(n).
   add $1,$2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
-trn $2,$4
 mov $3,$2
 mov $3,$1
-div $1,2
+div $1,4
