@@ -3,9 +3,7 @@
 
 lpb $0
   mov $2,$0
-  mul $2,$0
-  cal $2,33996 ; 8 times triangular numbers: a(n) = 4*n*(n+1).
+  cal $2,37270 ; a(n) = n^2*(n^2 + 1)/2.
   trn $0,2
   add $1,$2
 lpe
-div $1,8

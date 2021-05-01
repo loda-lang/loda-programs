@@ -3,7 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1952 ; A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
+  cal $2,80754 ; a(n) = ceiling(n*(1+sqrt(2))).
+  add $2,$0
   sub $0,1
   add $1,$2
 lpe

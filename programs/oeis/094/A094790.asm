@@ -3,14 +3,14 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  mov $3,1
-  cal $2,52975 ; Expansion of (1-2*x)*(1-x)/(1-5*x+6*x^2-x^3).
   sub $0,1
+  max $2,0
+  cal $2,52975 ; Expansion of (1-2*x)*(1-x)/(1-5*x+6*x^2-x^3).
   add $1,$2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
+mov $3,$2
 mov $3,$1
 add $1,1

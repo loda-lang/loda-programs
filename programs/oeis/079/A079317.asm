@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,161411 ; First differences of A160410.
+  cal $2,147582 ; First differences of A147562.
   trn $0,2
   add $1,$2
 lpe
-div $1,12
+div $1,4
 mul $1,4
 add $1,1

@@ -6,4 +6,3 @@ cal $0,160909 ; Row sums of triangle defined in A096539.
 mov $1,$0
 mov $1,$0
 add $1,1
-mov $2,0

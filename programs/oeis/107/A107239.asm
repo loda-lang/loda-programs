@@ -3,14 +3,14 @@
 
 lpb $0
   mov $2,$0
+  sub $0,1
   max $2,0
-  mov $3,$0
   cal $2,85697 ; a(n) = T(n+2)^2, where T(n) = tribonacci numbers (A000073).
-  trn $0,1
   add $1,$2
-  add $3,2162
-  mov $4,$2
+  mov $2,$0
+  mov $4,$0
   min $4,1
   add $5,$4
 lpe
+mov $3,$2
 mov $3,$1

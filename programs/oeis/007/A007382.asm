@@ -3,15 +3,13 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   max $2,0
   cal $2,52952 ; a(n) = Fibonacci(n+2) - (1-(-1)^n)/2.
+  sub $0,2
   add $1,$2
-  mov $3,1
+  mov $3,15
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
-mov $3,$1
-add $3,1
 mov $3,$1

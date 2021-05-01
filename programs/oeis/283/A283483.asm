@@ -3,8 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,81601 ; Numbers n such that 3 does not divide Sum_{k=0..n} binomial(2k,k) = A006134(n).
+  cal $2,5836 ; Numbers n whose base 3 representation contains no 2.
   div $0,2
   add $1,$2
 lpe
-div $1,3

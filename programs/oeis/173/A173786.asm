@@ -5,7 +5,6 @@ lpb $0
   mov $2,$0
   cal $2,232089 ; Table read by rows, which consist of 1 followed by 2^k, 0 <= k < n ; n = 0,1,2,3,...
   sub $0,1
-  add $3,$2
-  mov $1,$3
+  add $1,$2
 lpe
 add $1,2
