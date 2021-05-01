@@ -3,10 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,161841 ; Number of factors, with repetition, in all distinct pairs (a <= b) such that a*b = n.
   sub $0,1
+  cal $2,38548 ; Number of divisors of n that are at most sqrt(n).
   add $1,$2
 lpe
-div $1,2
 mul $1,2
 add $1,2

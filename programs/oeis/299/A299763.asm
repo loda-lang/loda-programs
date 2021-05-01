@@ -3,8 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,112773 ; 3 together with primes multiplied by 3.
+  cal $1,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   mov $0,0
 lpe
-div $1,3
 add $1,1

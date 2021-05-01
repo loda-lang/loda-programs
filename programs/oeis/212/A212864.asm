@@ -3,8 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,47410 ; Numbers that are congruent to {2, 4, 6} mod 8.
+  cal $2,42968 ; a(n) = 1 + n + floor(n/3).
   trn $0,4
   add $1,$2
 lpe
-div $1,2
