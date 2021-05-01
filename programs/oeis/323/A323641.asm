@@ -4,6 +4,4 @@
 add $0,2
 cal $0,323642 ; Row n of triangle A323641 when n -> infinity.
 mov $1,$0
-sub $1,3
 div $1,3
-add $1,1

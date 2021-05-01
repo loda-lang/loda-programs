@@ -4,4 +4,3 @@
 cal $0,53139 ; a(n) = phi(n) - mu(n).
 trn $0,1
 mov $1,$0
-add $1,1
