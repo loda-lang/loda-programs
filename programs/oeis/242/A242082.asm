@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,96270 ; Fixed point of the morphism 0->01, 1->011.
+  cal $2,114986 ; Characteristic function of (A000201 prefixed with 0).
   sub $0,$2
   add $1,$2
 lpe

@@ -32,7 +32,12 @@ lpb $24
         add $3,$2
         sub $3,4
         div $3,8
-        log $7,9
+        mov $25,-1
+        lpb $7
+          div $7,9
+          add $25,1
+        lpe
+        mov $7,$25
         add $7,8
         mov $6,$7
       lpe

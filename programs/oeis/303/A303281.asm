@@ -1,25 +1,9 @@
 ; A303281: Expansion of (x/(1 - x)) * (d/dx) Sum_{p prime, k>=1} x^(p^k)/(1 - x^(p^k)).
 ; 0,2,5,13,18,30,37,61,79,99,110,146,159,187,217,281,298,352,371,431,473,517,540,636,686,738,819,903,932,1022,1053,1213,1279,1347,1417,1561,1598,1674,1752,1912,1953,2079,2122,2254,2389,2481,2528,2768,2866,3016,3118,3274,3327,3543,3653
 
-mov $27,$0
-mov $29,$0
-lpb $29
-  clr $0,27
-  mov $0,$27
-  sub $29,1
-  sub $0,$29
-  add $5,$0
-  cal $0,73093 ; Number of prime power divisors of n.
+lpb $0
+  mov $2,$0
+  cal $2,66959 ; Bigomega(n^n) where bigomega(x) is the number of prime factors in x (counted with multiplicity).
   sub $0,1
-  mul $5,2
-  add $5,2
-  mul $0,$5
-  add $1,$0
-  mov $5,$1
-  mul $5,2
-  add $2,$5
-  mov $1,$2
-  div $1,4
-  add $28,$1
+  add $1,$2
 lpe
-mov $1,$28

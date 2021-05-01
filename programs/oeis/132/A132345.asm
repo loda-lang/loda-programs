@@ -3,15 +3,7 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  mov $4,1
+  sub $0,1
   cal $2,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
-  trn $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mul $0,2
-mov $3,$0
-mov $3,$1

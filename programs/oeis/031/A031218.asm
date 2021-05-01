@@ -3,12 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
-  cal $2,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
-  mov $4,$0
-  mov $0,$3
-  add $4,$2
-  add $0,$4
+  cal $2,133790 ; A014963*A100994.
+  sub $0,$2
 lpe
 mov $1,$0
 add $1,1

@@ -3,10 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,85090 ; If 2n-1 is prime then a(n) = 2n-1, otherwise a(n) = 0.
+  mul $2,2
+  cal $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,1
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  add $1,$2
 lpe
 add $1,1

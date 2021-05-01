@@ -3,12 +3,6 @@
 
 mul $0,2
 cal $0,71148 ; Partial sums of sequence of odd primes (A065091); a(n) = sum of the first n odd primes.
-mov $1,1
-lpb $0
-  add $0,7
-  mov $2,$0
-lpe
-sub $1,10
+add $0,3
 mov $1,$0
 div $1,2
-add $1,2

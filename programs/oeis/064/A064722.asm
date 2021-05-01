@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,166260 ; a(n) = A089026(n) - 1.
-  add $0,$2
-  sub $0,1
-  add $1,22
+  cal $2,55976 ; Remainder when (n-1)! + 1 is divided by n.
+  sub $0,$2
+  mov $3,$2
+  min $3,1
+  add $1,$3
 lpe
-div $1,22

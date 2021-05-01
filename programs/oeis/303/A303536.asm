@@ -3,11 +3,7 @@
 
 lpb $0
   mov $2,$0
-  mov $3,$0
-  cmp $3,0
-  add $2,$3
-  mod $0,$2
-  cal $2,303534 ; Amount by which n exceeds the largest binary palindrome less than or equal to n.
-  add $0,$2
+  cal $2,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
+  sub $0,$2
   add $1,1
 lpe

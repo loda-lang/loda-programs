@@ -1,4 +1,4 @@
-; A044966: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 0 and 1, respectively.
+; A044966: Numbers having no 0's and one 1 in base 3.
 ; 1,5,7,17,23,25,53,71,77,79,161,215,233,239,241,485,647,701,719,725,727,1457,1943,2105,2159,2177,2183,2185,4373,5831,6317,6479,6533,6551,6557,6559,13121,17495,18953,19439,19601,19655,19673
 
 mov $2,2

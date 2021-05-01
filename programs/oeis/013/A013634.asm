@@ -3,5 +3,4 @@
 
 mov $1,$0
 cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
-add $0,$1
-mov $1,$0
+add $1,$0

@@ -3,15 +3,12 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  add $4,$0
-  cal $2,119692 ; Binomial(2*n,n)*fib(n).
   sub $0,1
+  max $2,0
+  cal $2,119693 ; Binomial(2*n,n)*fib(n)/2.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
+  mov $2,40
+  mov $4,1
+  add $5,1
 lpe
-mov $3,$0
 mov $3,$1
-div $1,2

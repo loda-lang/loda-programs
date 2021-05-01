@@ -12,8 +12,12 @@ mov $4,384
 div $4,$3
 mul $2,$4
 sub $2,$3
-log $2,2
-add $0,$2
+mov $5,-1
+lpb $2
+  div $2,2
+  add $5,1
+lpe
+add $0,$5
 mov $1,1
 mul $1,$0
 mul $1,2

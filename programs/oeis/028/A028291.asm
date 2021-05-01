@@ -5,8 +5,6 @@ lpb $0
   mov $2,$0
   cal $2,8669 ; Molien series for 4-dimensional complex reflection group of order 7680 (in powers of x^4).
   sub $0,1
-  mul $2,2
   add $1,$2
 lpe
-div $1,2
 add $1,1

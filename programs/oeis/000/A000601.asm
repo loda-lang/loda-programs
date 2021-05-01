@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
+  cal $2,1399 ; a(n) is the number of partitions of n into at most 3 parts; also partitions of n+3 in which the greatest part is 3; also number of unlabeled multigraphs with 3 nodes and n edges.
   sub $0,1
-  cal $2,128012 ; a(n) = 3*A001399(n).
   add $1,$2
 lpe
-div $1,3
 add $1,1

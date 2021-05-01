@@ -10,8 +10,8 @@ lpb $8
   sub $0,$8
   lpb $0
     mov $2,$0
-    add $3,$0
     cal $2,131941 ; Partial sums of ceiling(n^2/2) (A000982).
+    add $3,$0
     trn $0,2
     add $3,$2
   lpe

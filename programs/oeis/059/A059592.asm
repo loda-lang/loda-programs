@@ -3,13 +3,4 @@
 
 pow $0,2
 cal $0,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
-mul $0,2
-add $1,$0
-mov $2,$1
-mul $1,2
-add $3,$2
-sub $1,$3
-mul $1,2
-div $1,16
-mul $1,4
-add $1,1
+mov $1,$0

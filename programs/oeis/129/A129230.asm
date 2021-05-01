@@ -3,8 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,4956 ; a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
+  cal $2,66096 ; Duplicate values in A060143.
   trn $0,2
   add $1,$2
-  sub $1,1
 lpe

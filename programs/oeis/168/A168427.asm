@@ -3,13 +3,11 @@
 
 lpb $0
   sub $0,1
-  trn $1,1
-  add $1,10
-  mod $1,160
-  add $1,1
+  dif $0,5
+  mod $1,10
   mul $1,3
+  add $1,2
 lpe
-mul $1,8
-div $1,256
+div $1,2
 mul $1,2
 add $1,1

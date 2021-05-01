@@ -1,23 +1,15 @@
 ; A234933: The number of binary sequences that contain at least two consecutive 1's and contain at least two consecutive 0's.
 ; 0,0,0,0,2,8,24,62,148,336,738,1584,3344,6974,14412,29576,60370,122712,248616,502398,1013156,2039840,4101570,8238560,16534432,33161598,66473244,133189272,266771378,534178376,1069385208,2140434494,4283561524,8571479664,17150008482,34311422736,68641300400,137312461502,274673238636,549424653608,1098975799186,2198156266680,4396643693640,8793823215870,17588513420612,35178429658688,70359129123714,140721930871232,281449804172608,562909223399166,1125834004282428,2251693181102904,4503427092227954,9006920087016104
 
-mov $24,$0
-mov $26,$0
-add $26,1
-lpb $26
-  clr $0,24
-  mov $0,$24
-  sub $26,1
-  sub $0,$26
-  trn $0,2
-  mov $2,$0
-  cal $0,167821 ; a(n) is the number of n-tosses having a run of 3 or more heads or a run of 3 or more tails for a fair coin (i.e., probability is a(n)/2^n).
-  add $1,3
-  mov $3,$0
-  mov $6,$0
-  mul $0,$1
-  mov $1,$3
-  mov $23,0
-  add $25,$3
-lpe
-mov $1,$25
+min $0,1197
+sub $0,1
+max $0,0
+mov $2,1
+mov $3,1
+mov $4,1197
+cal $0,232580 ; Number of binary sequences of length n that contain at least one contiguous subsequence 011.
+mov $1,1197
+mov $1,$0
+mul $1,2
+mov $2,1197
+mov $3,0

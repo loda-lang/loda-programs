@@ -3,21 +3,18 @@
 
 lpb $0
   mov $1,$0
+  max $1,0
+  mov $4,2
   cal $1,7040 ; Number of (marked) cyclic n-bit binary strings containing no runs of length > 2.
-  add $2,1
   add $3,$1
   mov $4,$1
-  mov $6,$1
-  cmp $6,0
-  add $4,$6
-  div $0,$4
   min $4,1
-  add $5,$4
   mov $6,$3
   cmp $6,0
   add $3,$6
-  mod $0,$3
-  mov $4,$2
+  div $0,$3
+  add $5,$4
 lpe
+mov $2,$4
 mov $2,$1
 div $1,2

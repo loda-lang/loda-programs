@@ -3,16 +3,15 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   max $2,0
-  cal $2,59727 ; a(n) = Fibonacci(n)*(Fibonacci(n) + 1).
+  mov $3,$0
+  cal $2,33192 ; a(n) = binomial(Fibonacci(n) + 1, 2).
+  sub $0,1
   add $1,$2
-  add $3,1
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
 mov $3,$1
-div $1,2
 mul $1,2
 add $1,1

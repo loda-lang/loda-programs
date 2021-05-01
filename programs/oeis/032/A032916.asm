@@ -3,13 +3,5 @@
 
 cal $0,32925 ; Numbers whose set of base 4 digits is {1,2}.
 cal $0,33162 ; Begins with (3, 4); avoids 3-term arithmetic progressions.
-sub $0,1
-mul $0,2
-add $2,$0
-mov $0,97064
-sub $2,6
-add $0,$2
 mov $1,$0
-sub $1,97064
-div $1,2
-add $1,1
+sub $1,3

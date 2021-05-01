@@ -1,28 +1,16 @@
 ; A273849: Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 969", based on the 5-celled von Neumann neighborhood.
 ; 1,5,26,71,147,268,437,662,951,1312,1753,2282,2907,3636,4477,5438,6527,7752,9121,10642,12323,14172,16197,18406,20807,23408,26217,29242,32491,35972,39693,43662,47887,52376,57137,62178,67507,73132,79061,85302,91863,98752,105977,113546,121467,129748,138397,147422,156831,166632,176833,187442,198467,209916,221797,234118,246887,260112,273801,287962,302603,317732,333357,349486,366127,383288,400977,419202,437971,457292,477173,497622,518647,540256,562457,585258,608667,632692,657341,682622,708543,735112,762337,790226,818787,848028,877957,908582,939911,971952,1004713,1038202,1072427,1107396,1143117,1179598,1216847,1254872,1293681,1333282,1373683,1414892,1456917,1499766,1543447,1587968,1633337,1679562,1726651,1774612,1823453,1873182,1923807,1975336,2027777,2081138,2135427,2190652,2246821,2303942,2362023,2421072,2481097,2542106,2604107,2667108,2731117,2796142,2862191
 
-mov $6,$0
-mov $8,$0
-add $8,1
-lpb $8
-  clr $0,6
-  mov $0,$6
-  sub $8,1
-  sub $0,$8
-  lpb $0
-    sub $0,1
-    mov $2,$0
-    max $2,0
-    cal $2,273850 ; First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 969", based on the 5-celled von Neumann neighborhood.
-    add $3,$2
-    mov $4,$2
-    min $4,16
-    add $5,$4
-    sub $4,$2
-  lpe
-  mov $1,$5
-  mov $1,$3
-  add $1,1
-  add $7,$1
+mov $3,2
+lpb $0
+  mov $2,$0
+  sub $0,1
+  max $2,0
+  cal $2,273847 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 969", based on the 5-celled von Neumann neighborhood.
+  add $1,$2
+  mov $4,$2
+  min $4,1
+  add $5,$4
 lpe
-mov $1,$7
+mov $3,$1
+add $1,1

@@ -5,8 +5,7 @@ lpb $0
   mov $2,$0
   cal $2,136008 ; a(n) = n^6 - n^2.
   sub $0,2
-  mul $2,2
   add $1,$2
 lpe
-div $1,120
+div $1,60
 mul $1,840

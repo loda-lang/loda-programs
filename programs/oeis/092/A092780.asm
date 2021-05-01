@@ -3,37 +3,10 @@
 
 mov $1,2
 sub $1,$0
-mov $2,$1
-mov $5,$0
 cal $0,5521 ; 1 + (sum of first n odd primes - n)/2.
 mul $0,2
 sub $0,$1
-mov $2,$1
-sub $2,5
-trn $2,1
-mov $4,$1
 mov $1,$0
-mov $2,36
-mod $4,2
-dif $4,2
-mov $5,$0
-sub $0,$4
-mov $2,276853
-mov $4,1
-mov $5,4
-sub $5,$1
-mov $6,$0
-cmp $6,0
-add $0,$6
-log $0,3
 add $1,2
-mov $3,2
-sub $4,$1
-add $5,276853
-mov $5,$0
-div $0,2
 pow $1,2
-mov $5,$4
-add $5,2
-mov $5,$1
 sub $1,1

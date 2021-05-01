@@ -7,10 +7,11 @@ lpb $0
   cal $2,180363 ; L(prime(n)), where L(i) is a Lucas number (A000032).
   sub $0,1
   add $1,$2
-  mov $3,1
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
+trn $2,$4
+mov $3,$5
 mov $3,$1
 add $1,3

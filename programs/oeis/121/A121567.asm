@@ -1,28 +1,14 @@
 ; A121567: Fibonacci[ (p - 1) ], where p = Prime[n].
 ; 1,1,3,8,55,144,987,2584,17711,317811,832040,14930352,102334155,267914296,1836311903,32951280099,591286729879,1548008755920,27777890035288,190392490709135,498454011879264,8944394323791464
 
-cal $0,40 ; The prime numbers.
-mov $1,6468330
-add $2,$0
-mov $5,$0
-sub $0,1
-cal $0,22351 ; Fibonacci sequence beginning 0, 17.
-sub $0,1
-mov $1,3
-sub $1,$0
-sub $1,9
-sub $5,$2
-mul $2,3
-sub $2,1
+mov $1,2
+mul $1,$0
+sub $1,1
 mov $2,$0
-mov $4,1
-lpb $0
-  div $0,8
-  mul $0,4
-  mov $1,$2
-  add $1,$3
-  mul $4,2
-lpe
-sub $1,16
-div $1,17
-add $1,1
+max $0,0
+cal $0,40 ; The prime numbers.
+sub $0,1
+max $0,0
+cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mul $1,8
+mov $1,$0

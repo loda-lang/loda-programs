@@ -21,10 +21,15 @@ lpb $21
     lpb $14
       sub $14,1
       add $0,$14
-      trn $0,1
+      sub $0,1
       mov $4,2
       pow $4,$0
-      log $4,3
+      mov $22,-1
+      lpb $4
+        div $4,3
+        add $22,1
+      lpe
+      mov $4,$22
       mul $4,6
       mov $1,$4
       mov $15,$14
