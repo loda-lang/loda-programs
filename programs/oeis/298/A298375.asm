@@ -5,7 +5,6 @@ lpb $0
   mov $2,$0
   cal $2,230584 ; Either two less than a square or two more than a square.
   sub $0,1
-  add $3,$2
-  mov $1,$3
+  add $1,$2
 lpe
 add $1,2

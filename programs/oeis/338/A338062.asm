@@ -18,21 +18,14 @@ lpb $12
     add $0,$8
     trn $0,1
     lpb $0
-      trn $2,$0
-      mov $2,$0
+      sub $2,$0
       max $2,0
-      mov $4,4
       cal $2,146325 ; Period 3: repeat [1, 4, 1].
       trn $0,2
-      add $3,$2
-      mov $4,$2
-      min $4,1
-      add $5,$4
+      add $5,$2
     lpe
-    mov $1,$3
     mov $1,$5
     mov $9,$8
-    cmp $9,1
     mul $9,$5
     add $7,$9
   lpe

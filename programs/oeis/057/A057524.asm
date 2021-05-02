@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  add $0,1
   cal $2,601 ; Expansion of 1/((1-x)^2*(1-x^2)*(1-x^3)).
-  sub $0,2
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

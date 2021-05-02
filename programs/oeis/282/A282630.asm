@@ -5,9 +5,7 @@ lpb $0
   mov $2,$0
   cal $2,55396 ; Smallest prime dividing n is a(n)-th prime (a(1)=0).
   sub $0,$2
-  add $1,8
   mov $3,$2
   min $3,1
   add $1,$3
 lpe
-div $1,9

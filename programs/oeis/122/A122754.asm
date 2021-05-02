@@ -3,12 +3,11 @@
 
 lpb $0
   mov $2,$0
-  add $0,1
   max $2,0
-  mov $3,1
   cal $2,72003 ; 10's complement of final digit of n-th prime.
-  trn $0,2
+  sub $0,1
   add $1,$2
+  mov $3,1
   mov $4,$2
   min $4,1
   add $5,$4

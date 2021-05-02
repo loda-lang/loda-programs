@@ -4,15 +4,14 @@
 lpb $0
   mov $2,$0
   max $2,0
-  add $4,1
   cal $2,141583 ; Squares of tribonacci numbers A000213.
-  trn $0,1
   add $1,$2
   mov $4,$2
-  sub $4,$2
+  sub $2,25
   min $4,1
+  sub $0,$4
   add $5,$4
 lpe
-mov $3,$2
+mov $3,$5
 mov $3,$1
 add $1,1
