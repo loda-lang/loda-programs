@@ -3,12 +3,8 @@
 
 lpb $0
   mov $2,$0
+  cal $2,133223 ; Sum of digits of primes (A007605), sorted and with duplicates removed.
   div $0,2
-  cal $2,26817 ; Number of sets which can be obtained by selecting unique elements from two sets with 2n and 3n elements respectively and n common elements.
-  add $1,1
-  min $1,1
   mod $2,2
-  add $3,$2
-  sub $3,1
+  add $1,$2
 lpe
-sub $1,$3

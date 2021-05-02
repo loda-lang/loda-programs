@@ -2,6 +2,16 @@
 ; 0,1,6,16,33,56,88,125,172,227,291,363,445,533,633,743,861,989,1128,1275,1434,1601,1779,1967,2170,2376,2597,2827,3072,3324,3588,3859,4143,4439,4749,5070,5399,5738,6091,6458,6834,7221,7618,8027,8448,8884,9329,9783
 
 pow $0,2
-cal $0,226355 ; Number of ordered pairs (i,j) with |i| * |j| <= n.
+sub $2,$0
+mov $4,$0
+max $0,0
+cal $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
+add $0,$4
+mul $4,$0
+mul $0,2
+mov $1,1
 mov $1,$0
-div $1,8
+sub $1,2
+div $1,4
+mov $3,1
+mov $4,24009999
