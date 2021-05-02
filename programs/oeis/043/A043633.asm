@@ -1,4 +1,4 @@
-; A043633: Numbers n such that base 9 representation has exactly 4 runs.
+; A043633: Numbers whose base-9 representation has exactly 4 runs.
 ; 738,740,741,742,743,744,745,746,747,748,750,751,752,753,754,755,756,757,758,760,761,762,763,764,765,766,767,768,770,771,772,773,774,775,776,777,778,780,781,782,783,784,785,786,787
 
 add $0,8

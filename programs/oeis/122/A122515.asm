@@ -7,11 +7,10 @@ lpb $0
   cal $2,111181 ; Prime(n) - Pi(n).
   sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $4,2
-  add $5,$4
+  mov $2,13
+  mov $4,1
+  add $5,1
 lpe
-mov $3,$5
+mov $3,$0
 mov $3,$1
 add $1,2

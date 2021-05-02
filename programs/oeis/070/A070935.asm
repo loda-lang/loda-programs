@@ -3,16 +3,6 @@
 
 add $0,2
 pow $0,2
-sub $3,$0
-mov $0,0
-mov $2,-1
-cal $0,109534 ; a(0)=1, a(n)=n+a(n-1) if n mod 2=0, a(n)=3n-a(n-1) if n mod 2 = 1.
-add $2,$0
-mov $0,$2
-add $3,1
-sub $0,$3
+sub $0,1
 cal $0,117818 ; a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
-add $0,1
-mov $1,1
-add $1,$0
-sub $1,2
+mov $1,$0

@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,208140 ; Number of n X 6 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
+  cal $2,1249 ; Squares of tetrahedral numbers: binomial(n+3,n)^2.
   sub $0,1
   add $1,$2
 lpe
-div $1,16
 add $1,1
