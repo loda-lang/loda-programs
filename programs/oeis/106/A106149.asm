@@ -3,12 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,$0
   cal $2,100820 ; Number of odd numbers between prime(n) and prime(n+1).
-  add $0,$2
-  add $3,2
-  add $3,$2
-  mov $1,$3
-  sub $3,$0
+  mov $0,$2
+  add $1,2
 lpe
 div $1,2

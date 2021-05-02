@@ -1,17 +1,8 @@
 ; A113300: Sum of even-indexed terms of tribonacci numbers.
 ; 0,1,3,10,34,115,389,1316,4452,15061,50951,172366,583110,1972647,6673417,22576008,76374088,258371689,874065163,2956941266,10003260650,33840788379,114482567053,387291750188,1310198605996,4432370135229,14994600761871,50726371026838
 
-lpb $0
-  mov $1,$0
-  mul $1,2
-  max $1,0
-  cal $1,75111 ; a(n)=Sum((-1)^(i+Floor(n/2))T(2i+e),(i=0,..,Floor(n/2))), where T(n) are tribonacci numbers (A000073) and e=(1/2)(1-(-1)^n).
-  add $3,$1
-  trn $0,$3
-  trn $0,1
-  mov $4,$1
-  min $4,1
-  add $5,$4
-lpe
-mov $2,$5
-mov $2,$1
+mul $0,2
+max $0,0
+cal $0,75111 ; a(n)=Sum((-1)^(i+Floor(n/2))T(2i+e),(i=0,..,Floor(n/2))), where T(n) are tribonacci numbers (A000073) and e=(1/2)(1-(-1)^n).
+mov $1,$0
+mul $0,2

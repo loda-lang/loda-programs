@@ -5,8 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,162349 ; First differences of A160412.
+  cal $2,48883 ; a(n) = 3^wt(n), where wt(n) = A000120(n).
   add $1,$2
 lpe
-div $1,3
 mul $1,4

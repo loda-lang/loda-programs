@@ -3,8 +3,5 @@
 
 cal $0,230980 ; Number of primes <= n, starting at n=0.
 add $0,1
-add $1,$0
-cal $1,22346 ; Fibonacci sequence beginning 0, 12.
-sub $1,12
-div $1,12
-add $1,1
+cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mov $1,$0
