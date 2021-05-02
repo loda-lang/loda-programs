@@ -3,8 +3,7 @@
 
 add $0,1
 cal $0,277592 ; Numbers k such that k/10^m == 5 mod 10, where 10^m is the greatest power of 10 that divides n.
-div $0,2
-mov $1,$0
-sub $1,7
+div $0,-2
+sub $1,$0
+sub $1,5
 mul $1,20
-add $1,40

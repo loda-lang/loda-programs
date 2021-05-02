@@ -5,8 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,71118 ; Size of the automorphism group of the group Z X Z_n.
+  cal $2,2618 ; a(n) = n*phi(n).
   add $1,$2
 lpe
-div $1,2
 add $1,1

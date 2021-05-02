@@ -4,8 +4,5 @@
 add $0,2
 pow $0,2
 sub $0,2
-cal $0,255201 ; Number of prime factors of n^2.
-add $1,$0
-sub $1,2
-div $1,2
-add $1,1
+cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+mov $1,$0

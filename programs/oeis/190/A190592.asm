@@ -3,10 +3,11 @@
 
 lpb $0
   mov $2,$0
-  cal $2,6996 ; C(2n,n) mod 3.
-  add $2,$0
-  div $0,$2
+  cal $2,189820 ; a(3*k-2) = a(k), a(3*k-1) = a(k), a(3*k) = 1 for k >= 1, starting with a(1) = 0.
+  add $1,$2
   mov $3,$2
-  min $3,1
-  add $1,$3
+  cmp $3,0
+  add $2,$3
+  mod $0,$2
+  add $1,$2
 lpe

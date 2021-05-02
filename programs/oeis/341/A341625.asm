@@ -6,6 +6,5 @@ lpb $0
   max $2,0
   cal $2,129283 ; (Arithmetic derivative of n) + n.
   sub $0,$2
-  mov $1,$2
-  min $1,1
+  mov $1,1
 lpe

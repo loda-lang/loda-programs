@@ -3,7 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,274830 ; Numbers n such that 7*n+1 is a triangular number (A000217).
-  sub $0,1
+  pow $2,2
+  cal $2,47345 ; Numbers that are congruent to {0, 4} mod 7.
+  trn $0,2
   add $1,$2
 lpe
+div $1,2

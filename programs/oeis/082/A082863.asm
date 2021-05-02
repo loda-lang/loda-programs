@@ -4,6 +4,5 @@
 add $0,2
 pow $0,2
 sub $0,2
-cal $0,83399 ; Number of divisors of n that are not divisors of other divisors of n.
+cal $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 mov $1,$0
-sub $1,1
