@@ -2,13 +2,13 @@
 ; 1,5,25,125,625,3126,15630,78150,390750,1953750,9768751,48843755,244218775,1221093875,6105469375,30527346876,152636734380,763183671900,3815918359500,19079591797500,95397958987501,476989794937505,2384948974687525
 
 add $0,1
+sub $3,$0
 lpb $0
   mov $2,$0
   max $2,0
-  cal $2,169067 ; Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^25 = I.
+  cal $2,169259 ; Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^29 = I.
   trn $0,5
   add $1,$2
-  mov $3,20
   mov $4,$2
   min $4,1
   add $5,$4

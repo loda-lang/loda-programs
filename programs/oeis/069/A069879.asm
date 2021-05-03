@@ -11,8 +11,7 @@ lpb $0
   min $4,1
   add $5,$4
 lpe
-add $1,1
-mov $3,$0
+mov $0,1
+mov $3,$5
 mov $3,$1
-sub $1,1
 mul $1,2

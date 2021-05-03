@@ -3,7 +3,10 @@
 
 lpb $0
   mov $2,$0
+  max $2,0
   cal $2,145037 ; Unreduced binary digital mean numerators, dm_num(2, n).
-  sub $0,$2
-  mov $1,1
+  mov $3,$2
+  min $3,1
+  mov $0,$3
 lpe
+mov $1,$0

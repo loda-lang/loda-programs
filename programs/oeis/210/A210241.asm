@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  cal $2,73093 ; Number of prime power divisors of n.
   sub $0,1
   add $1,$2
-  add $1,2
 lpe
 add $1,1

@@ -5,16 +5,12 @@ lpb $0
   mov $2,$0
   max $2,0
   cal $2,141523 ; Expansion of (3-2*x-3*x^2)/(1-x-x^2-x^3).
-  trn $0,1
+  sub $0,1
   add $1,$2
   mov $4,$2
-  add $2,$1
+  add $2,$0
   min $4,1
   add $5,$4
 lpe
-mov $3,$4
-mov $3,$1
-div $3,2
-add $3,1
 mov $3,$1
 add $1,2

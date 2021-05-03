@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,87734 ; a(n) = f(f(n)), where f() = A035327().
+  cal $2,37800 ; Number of occurrences of 01 in the binary expansion of n.
   sub $0,$2
 lpe
 mov $1,$0

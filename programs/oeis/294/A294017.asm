@@ -4,9 +4,7 @@
 lpb $0
   mov $2,$0
   cal $2,294016 ; a(n) = sum of all divisors of all positive integers <= n, minus the sum of remainders of n mod k, for k = 1, 2, 3, ..., n.
+  sub $0,1
   add $1,$2
-  mov $3,$2
-  min $3,1
-  sub $0,$3
 lpe
 add $1,1

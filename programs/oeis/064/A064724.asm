@@ -5,8 +5,4 @@ add $0,36
 mul $0,8
 div $0,5
 mov $1,$0
-sub $2,$0
-mov $3,$0
-max $0,0
-cal $0,40 ; The prime numbers.
 sub $1,56
