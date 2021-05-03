@@ -16,10 +16,8 @@ lpb $0
   gcd $5,$1
   div $0,$5
   mov $1,$0
-  mov $3,1
-  sub $3,$0
-  add $3,$0
   cmp $0,$2
+  mov $3,1
   mov $6,$1
   add $6,8
 lpe

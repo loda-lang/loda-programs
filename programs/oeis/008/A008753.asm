@@ -26,8 +26,6 @@ lpb $9
   mov $5,$4
   mov $4,1
   add $5,1
-  add $5,$0
-  sub $5,$0
   div $4,$5
   add $0,$4
   add $8,$0

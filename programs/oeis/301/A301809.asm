@@ -9,8 +9,6 @@ lpb $8
   sub $8,1
   add $0,$8
   trn $0,1
-  add $1,$0
-  sub $1,$0
   mov $1,$0
   sub $1,$0
   mov $5,$0

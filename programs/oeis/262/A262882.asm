@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,110962 ; Fractalization of Kimberling's sequence beginning with 0.
+  cal $2,64405 ; Number of even entries (A048967) minus the number of odd entries (A001316) in row n of Pascal's triangle (A007318).
   mov $3,$2
   min $3,1
   sub $0,$3

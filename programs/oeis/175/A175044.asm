@@ -1,10 +1,8 @@
 ; A175044: Lengths of runs of consecutive values in A168389(n).
 ; 1,1,1,2,1,2,1,2,2,1,2,2,1,2,2,2,1,2,2,1,2,2,2,2,2,1,2,1,2,2,2,2,1,2,1,2,2,2,2,2,1,2,1,2,1,2,2,2,1,2,2,1,2,2,2,2,1,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,1,2
 
-cal $0,100820 ; Number of odd numbers between prime(n) and prime(n+1).
-lpb $0
-  div $0,10
-  add $1,2
-lpe
-div $1,2
+cal $0,1223 ; Prime gaps: differences between consecutive primes.
+bin $0,4
+min $0,1
+mov $1,$0
 add $1,1

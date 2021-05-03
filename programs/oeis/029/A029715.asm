@@ -3,11 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,288934 ; Positions of 1 in A288932; complement of A288933.
-  add $0,1
+  cal $2,7843 ; Least positive integer k for which 2^n divides k!.
+  sub $0,1
   add $1,$2
-  sub $1,$0
-  sub $0,2
 lpe
+div $1,2
 mul $1,2
 add $1,1

@@ -5,12 +5,14 @@ mov $4,$0
 lpb $0
   mov $2,$0
   max $2,0
-  cal $2,181294 ; Number of 0's in all 2-compositions of n. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
+  cal $2,181331 ; Number of 0's in the top rows of all 2-compositions of n.
   trn $0,2
   add $1,$2
-  mov $3,1
+  mul $4,2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
+mov $3,$5
 mov $3,$1
+mul $1,2

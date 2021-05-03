@@ -9,11 +9,9 @@ lpb $0
   trn $1,$3
   add $1,$2
   trn $0,$1
+  sub $1,$0
   mov $2,$0
+  trn $2,$1
   sub $3,$3
   add $3,$0
-  sub $0,$3
-  add $0,$3
-  sub $1,$2
-  trn $2,$1
 lpe
