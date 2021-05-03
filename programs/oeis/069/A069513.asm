@@ -3,8 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,120454 ; a(n) = ceiling(GPF(n)/LPF(n)) where GPF is greatest prime factor, LPF is least prime factor.
-  add $2,$1
-  mul $0,$2
-  div $0,2
+  cal $1,28234 ; If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = n/p_1^e_1, with a(1) = 1.
+  add $0,$1
+  trn $0,3
 lpe

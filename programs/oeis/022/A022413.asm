@@ -3,8 +3,7 @@
 
 lpb $0
   mov $1,$0
+  sub $0,$0
   cal $1,7066 ; a(n) = 1 + ceiling((n-1)*phi^2), phi = (1+sqrt(5))/2.
-  add $2,$1
-  div $0,$2
 lpe
 add $1,1

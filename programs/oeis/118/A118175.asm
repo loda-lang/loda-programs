@@ -3,12 +3,9 @@
 
 lpb $0
   sub $0,1
-  add $2,2
-  sub $0,$2
+  add $1,2
+  sub $0,$1
 lpe
-sub $0,$2
-sub $0,1
-lpb $0
-  mov $0,$2
-  mov $1,1
-lpe
+mov $1,2
+clr $1,$0
+div $1,2

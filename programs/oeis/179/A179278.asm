@@ -3,8 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,117818 ; a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
-  mul $0,2
+  cal $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   sub $0,$2
 lpe
 mov $1,$0

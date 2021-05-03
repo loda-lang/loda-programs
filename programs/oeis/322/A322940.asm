@@ -9,19 +9,22 @@ lpb $7
   sub $7,1
   add $0,$7
   trn $0,1
+  mov $1,5
+  mov $2,1
+  mov $3,$0
+  mov $3,$0
+  mul $3,$0
+  sub $4,$0
   max $0,0
   cal $0,106434 ; The (1,1)-entry of the matrix A^n, where A = [0,1;2,3].
-  mov $3,$0
-  gcd $0,8
-  max $0,0
-  mov $1,2
-  cal $0,115378 ; a(n) = number of positive integers k < n such that n XOR k = (n+k).
-  add $3,1
-  add $0,$3
-  mov $1,$3
+  mov $2,1
+  mov $4,$3
+  cal $2,40090 ; Continued fraction for sqrt(101).
+  add $0,1
+  mov $1,$0
   mov $8,$7
   cmp $8,1
-  mul $8,$3
+  mul $8,$0
   add $6,$8
 lpe
 min $5,1

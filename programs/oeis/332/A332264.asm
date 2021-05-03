@@ -3,9 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,74400 ; Sum of the even divisors of 2n.
+  cal $2,334136 ; a(n) = (n-1)*sigma(n) where sigma is the sum of divisors A000203.
   sub $0,1
-  add $3,$2
-  add $1,$3
+  add $1,$2
 lpe
-div $1,2
