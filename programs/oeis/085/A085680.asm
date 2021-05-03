@@ -4,8 +4,6 @@
 lpb $0
   add $2,$0
   sub $0,1
-  add $0,$2
-  sub $0,$2
   trn $0,4
   mov $1,1
   mov $3,5

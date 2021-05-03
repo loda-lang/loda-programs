@@ -8,11 +8,9 @@ cal $0,40 ; The prime numbers.
 max $0,0
 cal $0,65890 ; Number of composites less than the n-th prime.
 mov $1,$0
+sub $0,2
 mov $2,1
 mov $4,2
-add $5,$0
-sub $5,$0
-sub $0,2
 add $5,1
 sub $5,$1
 mov $5,$1

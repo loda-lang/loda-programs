@@ -10,7 +10,7 @@ lpb $3
   lpb $0
     mov $2,$0
     cal $2,130256 ; Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) >= n (the 'upper' odd Fibonacci Inverse).
-    mov $0,1
+    sub $0,$0
   lpe
   add $1,$2
 lpe

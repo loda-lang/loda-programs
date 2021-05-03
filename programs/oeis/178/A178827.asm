@@ -7,11 +7,10 @@ lpb $0
   cal $2,83713 ; a(n) = (8^n - 1)*3/7.
   trn $0,2
   add $1,$2
-  mul $2,2
   mov $4,$2
+  mul $4,4
   min $4,1
   add $5,$4
 lpe
-sub $2,$2
 mov $3,$1
 div $1,3

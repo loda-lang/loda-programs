@@ -3,7 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  cal $2,255201 ; Number of prime factors of n^2.
   trn $0,2
   add $1,$2
 lpe
+mul $1,50
+div $1,100

@@ -9,8 +9,6 @@ lpb $7
   sub $7,1
   add $0,$7
   sub $0,1
-  add $4,$0
-  sub $4,$0
   trn $0,$4
   cmp $4,1
   add $0,$4

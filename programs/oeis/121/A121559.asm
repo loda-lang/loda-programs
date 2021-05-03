@@ -3,6 +3,6 @@
 
 add $0,1
 cal $0,175077 ; Final number reached by iterating r -> A049711(r) starting at r = n.
-cal $0,172190 ; a(n) = 2*prime(n)^3.
+pow $0,4
 mov $1,$0
-div $1,196
+div $1,15
