@@ -3,6 +3,4 @@
 
 cal $0,179088 ; Positive integers of the form (2*m^2+1)/11.
 mov $1,$0
-sub $1,3
 div $1,2
-add $1,1

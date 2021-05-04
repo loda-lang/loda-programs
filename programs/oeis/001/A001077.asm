@@ -3,18 +3,10 @@
 
 max $0,0
 cal $0,100233 ; a(n) = Lucas(3*n) - 1.
-mov $1,$0
-add $1,5
-mov $3,2
-sub $3,$0
-gcd $3,3
-sub $1,$3
-mov $2,$1
-cmp $2,0
-add $1,$2
-add $4,$0
-mod $0,$1
-mov $1,$0
+add $0,15
+mov $1,4
 mov $1,$0
 div $1,2
-add $1,1
+sub $1,7
+mov $2,4
+mov $3,4

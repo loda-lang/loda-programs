@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,60862 ; a(n) = 0 if n is deficient, 1 if n is abundant, 2 if n is perfect.
-  sub $0,$0
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  cal $2,336835 ; Number of iterations of x -> A003961(x) needed before the result is deficient (sigma(x) < 2x), when starting from x=n.
+  mov $0,1
+  mov $1,$2
+  min $1,1
 lpe

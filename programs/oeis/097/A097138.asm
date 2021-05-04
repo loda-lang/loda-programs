@@ -1,44 +1,16 @@
 ; A097138: Convolution of 4^n and floor(n/2).
 ; 0,0,1,5,22,90,363,1455,5824,23300,93205,372825,1491306,5965230,23860927,95443715,381774868,1527099480,6108397929,24433591725,97734366910,390937467650,1563749870611,6254999482455,25019997929832,100079991719340,400319966877373,1601279867509505,6405119470038034
 
-mov $12,$0
-mov $14,$0
-lpb $14
-  clr $0,12
-  mov $0,$12
-  sub $14,1
-  sub $0,$14
-  mov $9,$0
-  mov $11,$0
-  lpb $11
-    mov $0,$9
-    sub $11,1
-    sub $0,$11
-    mov $2,$0
-    sub $0,$0
-    lpb $2
-      mov $1,$6
-      gcd $1,7
-      sub $1,3
-      mov $4,6
-      mov $7,4
-      lpb $4
-        add $0,$7
-        mov $5,$2
-        mov $2,$0
-        mod $4,2
-      lpe
-      pow $1,$5
-      div $2,5
-      lpb $5
-        trn $5,$1
-        add $1,$7
-      lpe
-      div $1,$0
-      div $1,5
-    lpe
-    add $10,$1
-  lpe
-  add $13,$10
+lpb $0
+  sub $0,2
+  mov $2,$0
+  mul $2,2
+  max $2,0
+  cal $2,90860 ; Number of ways of 4-coloring a map in which there is a central circle surrounded by an annulus divided into n-1 regions. There are n regions in all.
+  add $1,$2
+  mov $4,$2
+  min $4,1
+  add $5,$4
 lpe
-mov $1,$13
+mov $3,$1
+div $1,24

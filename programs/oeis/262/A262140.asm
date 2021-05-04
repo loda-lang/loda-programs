@@ -3,29 +3,18 @@
 
 add $0,2
 max $0,0
-mov $3,4
-cal $0,106328 ; Numbers j such that 8*(j^2) + 9 = k^2 for some positive number k.
-sub $0,1
-mov $1,0
-mov $1,$0
-sub $1,2
-div $1,3
-mul $1,14
-add $1,14
-mov $1,$0
-sub $1,8
-div $1,6
-mul $1,50
-add $1,51
-mov $1,$0
-div $1,2
-sub $1,3
-mov $1,$0
-sub $1,17
-div $1,3
-mul $1,4
-add $1,20
-mov $2,86
+mov $2,1
 mov $3,1
-mov $4,0
 mov $5,0
+cal $0,106328 ; Numbers j such that 8*(j^2) + 9 = k^2 for some positive number k.
+mov $1,1
+mov $1,$0
+sub $1,51
+div $1,6
+add $1,22
+mov $1,$0
+div $1,3
+sub $1,1
+mul $1,4
+mov $3,1
+mov $4,1

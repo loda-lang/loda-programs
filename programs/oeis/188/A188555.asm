@@ -5,8 +5,6 @@ mov $1,$0
 mov $2,2
 mov $4,$0
 mov $5,$0
-add $5,$0
-sub $5,$0
 lpb $0
   add $2,$1
   add $1,$3

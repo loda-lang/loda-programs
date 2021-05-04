@@ -2,13 +2,16 @@
 ; 1,1,2,7,26,91,302,967,3026,9331,28502,86527,261626,788971,2375102,7141687,21457826,64439011,193448102,580606447,1742343626,5228079451,15686335502,47063200807,141197991026,423610750291,1270865805302,3812664524767,11438127792026
 
 max $0,0
-cal $0,245023 ; Number of cases of tie (no winner) in the n-person rock-paper-scissors game.
-add $0,1
-mov $1,6
-mov $1,$0
-sub $1,4
-div $1,6
-add $1,1
 mov $2,1
-mov $3,1
-mov $4,4
+cal $0,337313 ; a(n) is the number of n-digit positive integers with exactly three distinct base 10 digits.
+mov $1,1
+mov $1,$0
+div $1,648
+mul $1,4
+add $1,1
+mov $1,$0
+div $1,648
+mul $1,12
+mov $1,$0
+div $1,648
+add $1,1

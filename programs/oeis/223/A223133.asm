@@ -3,6 +3,5 @@
 
 cal $0,222947 ; Number of distinct sums i+j+k with |i|, |j|, |k|, |i*j*k| <= n and gcd(i,j,k) <= 1.
 mov $1,$0
-mul $1,2
-div $1,4
+div $1,2
 add $1,1

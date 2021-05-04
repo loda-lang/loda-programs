@@ -3,7 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,37800 ; Number of occurrences of 01 in the binary expansion of n.
+  cal $2,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+  sub $2,2
   sub $0,$2
 lpe
 mov $1,$0

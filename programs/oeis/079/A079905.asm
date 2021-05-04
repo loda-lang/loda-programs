@@ -4,7 +4,6 @@
 lpb $0
   mov $1,$0
   cal $1,115836 ; Self-describing sequence. The n-th integer of the sequence indicates how many integers of the sequence are strictly < 2n.
-  trn $0,89
-  dif $0,8
+  trn $0,$1
 lpe
 add $1,1

@@ -4,6 +4,5 @@
 max $0,0
 cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 pow $0,2
-mov $1,408170323
 mov $1,$0
-mov $2,408170323
+mov $1,$0

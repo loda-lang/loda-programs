@@ -9,13 +9,10 @@ lpb $8
   sub $8,1
   add $0,$8
   sub $0,1
-  mov $1,0
-  mov $3,36
-  add $4,$0
-  sub $4,$0
   trn $0,0
   mov $1,0
   mov $2,0
+  mov $3,36
   add $4,43
   mov $5,0
   cal $0,55989 ; a(n) is its own 4th difference.

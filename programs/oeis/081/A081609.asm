@@ -3,9 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,62756 ; Number of 1's in ternary (base-3) expansion of n.
   sub $0,1
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  cal $2,316829 ; Image of 0 under repeated application of the morphism 0 -> 0,1,0, 1 -> 1,1,1.
+  add $1,$2
 lpe

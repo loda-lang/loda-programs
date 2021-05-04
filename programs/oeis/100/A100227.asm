@@ -3,10 +3,8 @@
 
 max $0,0
 cal $0,1333 ; Numerators of continued fraction convergents to sqrt(2).
-add $1,$0
-trn $0,3
+mov $1,-78536544890
+mov $1,$0
 div $1,2
-mov $2,$0
-mov $2,$1
 mul $1,4
 add $1,1

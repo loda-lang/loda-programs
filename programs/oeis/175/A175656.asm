@@ -7,15 +7,12 @@ lpb $0
   cal $2,111297 ; First differences of A109975.
   trn $0,2
   add $1,$2
-  mov $6,$2
-  cmp $6,0
-  add $2,$6
-  dif $2,$2
-  mul $1,$2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
-mov $3,$0
+sub $2,$2
+max $2,5
+mov $3,$2
 mov $3,$1
 add $1,1

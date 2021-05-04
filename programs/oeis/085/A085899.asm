@@ -6,8 +6,6 @@ mul $2,2
 add $2,9
 mov $3,$0
 mov $4,$0
-add $4,$0
-sub $4,$0
 mov $5,$0
 add $5,7
 mul $5,2

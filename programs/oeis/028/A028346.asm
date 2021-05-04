@@ -1,37 +1,17 @@
 ; A028346: Expansion of 1/((1-x)^4*(1-x^2)^2).
 ; 1,4,12,28,58,108,188,308,483,728,1064,1512,2100,2856,3816,5016,6501,8316,10516,13156,16302,20020,24388,29484,35399,42224,50064,59024,69224,80784,93840,108528,125001,143412,163932,186732,212002,239932,270732,304612,341803
 
-mov $15,$0
-mov $17,$0
-add $17,1
-lpb $17
-  clr $0,15
-  mov $0,$15
-  sub $17,1
-  sub $0,$17
-  mov $12,$0
-  mov $14,$0
-  add $14,1
-  lpb $14
-    clr $0,12
-    mov $0,$12
-    sub $14,1
-    sub $0,$14
-    mov $9,$0
-    mov $11,$0
-    add $11,1
-    lpb $11
-      mov $0,$9
-      sub $11,1
-      sub $0,$11
-      mov $6,$0
-      add $6,4
-      div $6,2
-      bin $6,2
-      add $10,$6
-    lpe
-    add $13,$10
-  lpe
-  add $16,$13
+lpb $0
+  mov $2,$0
+  max $2,0
+  cal $2,32091 ; Number of reversible strings with n-1 beads of 2 colors. 4 beads are black. String is not palindromic.
+  sub $0,1
+  add $1,$2
+  mov $2,1
+  mov $4,1
+  add $5,1
 lpe
-mov $1,$16
+mov $3,$5
+mov $3,$1
+div $1,2
+add $1,1

@@ -8,8 +8,6 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
-  sub $4,$0
-  add $4,$0
   trn $0,$4
   cal $0,266252 ; Total number of OFF (white) cells after n iterations of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
   mov $2,$3

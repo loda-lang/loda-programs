@@ -3,9 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,166260 ; a(n) = A089026(n) - 1.
-  mov $1,$2
-  cmp $1,0
-  add $2,$1
-  mod $0,$2
+  cal $2,5171 ; 0 if n is prime else 1.
+  mov $0,2
+  add $1,$2
 lpe

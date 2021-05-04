@@ -8,11 +8,11 @@ lpb $0
   trn $0,1
   add $1,$2
   mov $4,$2
-  mov $2,1
   min $4,1
   add $5,$4
 lpe
-mod $0,72668
+pow $2,2
+mov $3,650
 mov $3,$1
 div $1,16
 add $1,1
