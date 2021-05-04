@@ -3,8 +3,6 @@
 
 mov $1,$0
 pow $0,2
-add $1,$0
-sub $1,$0
 add $0,$1
 mul $0,$1
 cal $0,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.

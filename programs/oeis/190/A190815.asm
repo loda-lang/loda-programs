@@ -3,15 +3,4 @@
 
 mul $0,2
 cal $0,49690 ; a(n) = Sum_{k=1..n} phi(2*k), where phi = Euler totient function, cf. A000010.
-add $4,$0
-add $4,1
-mov $0,$4
-mul $0,2
-mov $3,$0
-mul $0,2
-mov $2,$3
-add $2,1
-add $0,$2
 mov $1,$0
-sub $1,7
-div $1,6

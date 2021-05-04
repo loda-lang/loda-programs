@@ -13,7 +13,5 @@ lpb $3
   pow $0,2
   add $2,1
   trn $3,1
-  sub $3,$2
-  add $3,$2
 lpe
 mov $1,$0

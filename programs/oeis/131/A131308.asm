@@ -4,13 +4,10 @@
 lpb $0
   sub $0,1
   add $1,2
-  mov $3,$0
+  mov $2,$0
   trn $0,3
 lpe
-lpb $3
-  sub $3,1
-  mov $2,$3
-  cmp $2,0
-  add $3,$2
-  div $1,$3
+lpb $2
+  div $1,2
+  mov $2,2
 lpe

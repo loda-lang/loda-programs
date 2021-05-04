@@ -4,5 +4,4 @@
 pow $0,2
 cal $0,126606 ; Fixed point of transformation of the seed sequence {0,2}.
 mov $1,$0
-mul $1,2
-div $1,4
+div $1,2

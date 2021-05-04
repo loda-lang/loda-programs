@@ -5,13 +5,11 @@ lpb $0
   mov $2,$0
   mov $3,$0
   cal $2,89451 ; a(n) = mu(prime(n)-1), where mu is the Moebius function (A008683).
+  sub $0,1
   add $3,$2
   add $3,$2
   mov $4,$2
   sub $2,1
-  add $0,$2
-  sub $0,$2
-  sub $0,1
   min $4,1
   add $1,$4
 lpe

@@ -25,8 +25,6 @@ lpb $13
       mod $1,1
       mov $2,1
       lpb $0
-        add $0,$1
-        sub $0,$1
         sub $0,1
         mov $3,$1
         mov $4,$1

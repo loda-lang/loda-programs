@@ -3,8 +3,6 @@
 
 mov $1,$0
 lpb $0
-  add $1,$0
-  sub $1,$0
   div $0,2
   sub $1,$0
   sub $0,1

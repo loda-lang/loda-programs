@@ -6,8 +6,6 @@ mov $4,$0
 cal $0,1961 ; A Beatty sequence: floor(n * (sqrt(5) - 1)).
 mul $3,$0
 div $3,2
-add $3,$0
-sub $3,$0
 add $3,2
 div $3,2
 mov $1,$3

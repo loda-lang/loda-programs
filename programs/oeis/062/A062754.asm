@@ -3,7 +3,5 @@
 
 add $0,1
 mov $1,$0
-add $1,$0
-sub $1,$0
 cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 gcd $1,$0

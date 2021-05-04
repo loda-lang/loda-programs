@@ -7,11 +7,11 @@ lpb $0
   max $2,0
   cal $2,77234 ; Bisection (odd part) of Chebyshev sequence with Diophantine property.
   add $1,$2
-  sub $2,$2
   mov $4,$2
+  sub $2,$1
   min $4,1
   add $5,$4
 lpe
-mov $3,$2
+mov $3,$4
 mov $3,$1
 add $1,1
