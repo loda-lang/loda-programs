@@ -1,22 +1,7 @@
 ; A088512: Number of partitions of n into two parts whose xor-sum is n.
 ; 0,0,0,1,0,1,1,3,0,1,1,3,1,3,3,7,0,1,1,3,1,3,3,7,1,3,3,7,3,7,7,15,0,1,1,3,1,3,3,7,1,3,3,7,3,7,7,15,1,3,3,7,3,7,7,15,3,7,7,15,7,15,15,31,0,1,1,3,1,3,3,7,1,3,3,7,3,7,7,15,1,3,3,7
 
-mov $1,1
-mov $2,$0
-mov $4,3
-lpb $2
-  lpb $4
-    mov $3,$2
-    trn $4,$1
-    mov $1,$2
-  lpe
-  add $4,2
-  lpb $3
-    mul $3,2
-    sub $3,$4
-    mov $2,$3
-    trn $3,$1
-  lpe
-  trn $2,1
-lpe
-div $1,2
+cal $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); 2^A000120(n).
+dif $0,2
+mov $1,$0
+sub $1,1

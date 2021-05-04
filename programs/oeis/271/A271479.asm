@@ -3,12 +3,7 @@
 
 lpb $0
   mov $2,$0
-  lpb $2
-    sub $0,1
-    mov $3,$2
-    trn $2,2
-    mul $3,2
-    sub $3,1
-  lpe
-  add $1,$3
+  cal $2,176040 ; Periodic sequence: Repeat 3, 1.
+  div $0,2
+  add $1,$2
 lpe

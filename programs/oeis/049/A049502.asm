@@ -3,7 +3,9 @@
 
 lpb $0
   mov $2,$0
-  div $0,2
-  cal $2,37800 ; Number of occurrences of 01 in the binary expansion of n.
+  cal $2,69010 ; Number of runs of 1's in binary representation of n.
+  mul $0,2
+  div $0,4
   add $1,$2
+  sub $1,1
 lpe

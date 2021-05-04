@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,98736 ; a(n) = product of n and all its digits.
+  cal $2,321243 ; a(n) is the product of n and all its decimal digits individually except the leftmost digit.
   sub $0,1
   mov $3,$2
   min $3,1

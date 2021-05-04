@@ -3,14 +3,19 @@
 
 lpb $0
   mov $2,$0
+  mov $2,$0
   max $2,0
   cal $2,5995 ; Alkane (or paraffin) numbers l(8,n).
   trn $0,1
   add $1,$2
-  add $3,$2
+  mul $2,3
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
+mov $3,$2
+mov $3,$1
+div $3,2
+add $3,1
+mov $3,$1
 add $1,1
-pow $4,2

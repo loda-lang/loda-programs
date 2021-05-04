@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,109395 ; Denominator of phi(n)/n = Product_{p|n} (1 - 1/p); phi(n)=A000010(n), the Euler totient function.
-sub $1,1
 sub $1,$0
-add $1,2
+add $1,1

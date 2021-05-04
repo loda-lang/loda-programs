@@ -7,5 +7,4 @@ lpb $0
   trn $0,2
   add $1,$2
 lpe
-mul $1,50
-div $1,100
+div $1,2

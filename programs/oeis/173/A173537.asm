@@ -4,8 +4,5 @@
 mul $0,2
 add $0,3
 cal $0,151566 ; Leftist toothpicks (see Comments for definition).
-mul $0,20
 mov $1,$0
-sub $1,80
-div $1,40
-add $1,2
+div $1,2

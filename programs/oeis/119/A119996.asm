@@ -1,67 +1,17 @@
 ; A119996: Numerator of Sum_{k=1..n} 1/(Fibonacci(k)*Fibonacci(k+2)).
 ; 1,5,14,39,103,272,713,1869,4894,12815,33551,87840,229969,602069,1576238,4126647,10803703,28284464,74049689,193864605,507544126,1328767775,3478759199,9107509824,23843770273,62423800997,163427632718,427859097159,1120149658759,2932589879120,7677619978601,20100270056685,52623190191454,137769300517679,360684711361583,944284833567072,2472169789339633,6472224534451829
 
-mov $16,$0
-mov $18,$0
-add $18,1
-lpb $18
-  clr $0,16
-  mov $0,$16
-  sub $18,1
-  sub $0,$18
-  mov $13,$0
-  mov $15,$0
-  add $15,1
-  lpb $15
-    mov $0,$13
-    sub $15,1
-    sub $0,$15
-    mov $9,$0
-    mov $11,2
-    lpb $11
-      mov $0,$9
-      sub $11,1
-      add $0,$11
-      sub $0,1
-      add $3,1
-      mov $4,4
-      mov $6,1
-      trn $6,$0
-      add $6,1
-      mov $7,2
-      lpb $0
-        trn $0,1
-        add $4,$6
-        add $7,$3
-        mov $3,1
-        mov $6,$7
-        mov $7,$4
-      lpe
-      pow $6,2
-      mov $1,$6
-      sub $1,1
-      mul $1,36
-      add $1,36
-      add $6,1
-      mov $12,$11
-      lpb $12
-        mov $10,$1
-        sub $12,1
-      lpe
-    lpe
-    lpb $9
-      mov $9,0
-      sub $10,$1
-    lpe
-    mov $1,$10
-    sub $1,36
-    div $1,36
-    add $1,1
-    add $14,$1
-  lpe
-  add $17,$14
+lpb $0
+  mov $2,$0
+  max $2,0
+  cal $2,222834 ; Number of n X 4 0..3 arrays with no element equal to another at a city block distance of exactly two, and new values 0..3 introduced in row major order.
+  trn $0,1
+  add $1,$2
+  add $3,$2
+  mov $4,$2
+  min $4,1
+  add $5,$4
+  min $4,3
 lpe
-mov $1,$17
-sub $1,1
-div $1,4
+div $1,24
 add $1,1

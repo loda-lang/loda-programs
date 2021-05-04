@@ -1,13 +1,8 @@
 ; A146087: a(n) = 3*A146085(n) - 1.
 ; 2,11,20,83,92,101,164,173,182,731,740,749,812,821,830,893,902,911,1460,1469,1478,1541,1550,1559,1622,1631,1640,6563,6572,6581,6644,6653,6662,6725,6734,6743,7292,7301,7310,7373,7382,7391,7454,7463,7472,8021,8030,8039,8102,8111,8120
 
-lpb $0
-  mov $2,$0
-  mul $0,2
-  cal $2,338086 ; Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
-  mod $0,2
-  add $1,$2
-lpe
+cal $0,338086 ; Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
+mov $1,$0
 div $1,4
 mul $1,9
 add $1,2

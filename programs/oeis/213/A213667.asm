@@ -1,17 +1,18 @@
 ; A213667: Number of dominating subsets with k vertices in all the graphs G(n) (n>=1) obtained by taking n copies of the path P_3 and identifying one of their endpoints (a star with n branches of length 2).
 ; 1,6,16,40,98,238,576,1392,3362,8118,19600,47320,114242,275806,665856,1607520,3880898,9369318,22619536,54608392,131836322,318281038,768398400,1855077840,4478554082,10812186006,26102926096,63018038200,152139002498,367296043198,886731088896,2140758220992,5168247530882,12477253282758,30122754096400,72722761475560,175568277047522,423859315570606,1023286908188736,2470433131948080,5964153172084898
 
-mov $1,1
 lpb $0
-  sub $0,1
-  add $2,4
-  mov $3,$1
-  trn $3,2
+  mov $1,$0
+  max $1,0
+  cal $1,34182 ; Number of not-necessarily-symmetric n X 2 crossword puzzle grids.
+  trn $0,$1
+  mod $0,9
+  add $3,$1
+  add $4,5
   mov $4,$1
-  add $1,1
-  add $4,$2
-  mov $2,$3
-  mov $5,$4
-  sub $5,1
-  add $1,$5
+  min $4,1
+  add $5,$4
 lpe
+mov $2,$0
+mov $2,$1
+add $1,1

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,133790 ; A014963*A100994.
+  cal $2,143731 ; Characteristic function of numbers n with at least two distinct prime factors.
   sub $0,$2
 lpe
 mov $1,$0
