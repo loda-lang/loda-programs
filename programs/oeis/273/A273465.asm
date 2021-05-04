@@ -3,9 +3,5 @@
 
 add $0,1
 cal $0,267313 ; Expansion of x*(-1 + 2*x + 3*x^2 - 2*x^3 + x^4)/((1 - x)^3*(1 + x + x^2)^2).
-add $0,2
-mul $0,2
 mov $1,$0
-sub $1,2
-div $1,2
-add $1,1
+add $1,2

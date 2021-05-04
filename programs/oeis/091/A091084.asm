@@ -3,14 +3,16 @@
 
 lpb $0
   sub $0,1
-  mod $0,4
-  bin $0,2
+  mul $0,2
+  mod $0,8
+  sub $0,3
   add $1,2
-  dif $1,2
 lpe
-add $2,1
-lpb $2
-  mul $1,2
-  sub $2,1
+add $1,1
+add $1,$0
+lpb $0
+  trn $0,1
+  sub $0,$1
+  add $1,2
 lpe
-div $1,2
+sub $1,1
