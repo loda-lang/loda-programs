@@ -1,14 +1,14 @@
 ; A046090: Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives X+1 values.
 ; 1,4,21,120,697,4060,23661,137904,803761,4684660,27304197,159140520,927538921,5406093004,31509019101,183648021600,1070379110497,6238626641380,36361380737781,211929657785304,1235216565974041,7199369738058940
 
-mul $0,2
-mov $1,1
-mov $3,2
-lpb $0
-  sub $0,1
-  add $1,$3
-  mov $2,$1
-  mov $1,$3
-  sub $2,1
-  add $3,$2
-lpe
+mov $1,3415
+mov $2,3415
+mov $3,$0
+sub $3,$0
+max $0,0
+mov $4,3415
+cal $0,77444 ; Numbers k such that (k^2 + 4)/2 is a square.
+mov $1,$0
+div $1,4
+add $1,1
+mov $2,3837

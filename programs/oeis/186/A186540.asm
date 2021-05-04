@@ -1,37 +1,6 @@
 ; A186540: Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=-2+3j^2.  Complement of A186539.
 ; 2,5,8,10,13,16,19,21,24,27,30,32,35,38,40,43,46,49,51,54,57,60,62,65,68,71,73,76,79,81,84,87,90,92,95,98,101,103,106,109,112,114,117,120,122,125,128,131,133,136,139,142,144,147,150,152,155,158,161,163,166,169,172,174,177,180,183,185,188,191,193,196,199,202,204,207,210,213,215,218
 
-mov $6,$0
-add $0,5
-mov $5,$0
-lpb $5
-  add $3,2
-  add $4,$3
-  lpb $4
-    sub $4,$3
-    add $5,4
-  lpe
-  sub $3,1
-  sub $5,5
-  mul $5,2
-  lpb $5
-    add $0,$4
-    add $4,1
-    sub $5,$3
-  lpe
-  lpb $0
-    trn $1,2
-    add $1,$2
-    add $1,1
-    add $4,2
-    trn $0,$4
-    mov $2,2
-  lpe
-  sub $2,1
-  add $1,$2
-lpe
-lpb $6
-  add $1,2
-  sub $6,1
-lpe
-sub $1,3
+cal $0,180122 ; First of three "least, sum, least" self-generating sequences.
+mov $1,$0
+add $1,1

@@ -5,8 +5,6 @@ mov $2,26
 sub $2,$0
 cal $0,178729 ; a(n) = n XOR 3n, where XOR is bitwise XOR.
 add $0,$2
-add $0,$2
-sub $0,$2
 add $$1,$2
 mov $1,$0
 sub $1,52

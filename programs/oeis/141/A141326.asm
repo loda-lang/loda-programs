@@ -4,20 +4,12 @@
 mov $1,$0
 add $0,1
 pow $0,4
-mov $2,4
-mul $2,$0
-mov $3,$0
-sub $3,$2
-lpb $0
-  mov $2,1
-  sub $2,$0
-  add $0,$2
-  sub $0,1
-  sub $1,$3
-  add $1,11
-  mov $2,7
+mov $2,6
+lpb $2
+  add $1,$0
+  add $0,13
+  div $2,2
 lpe
-add $1,$2
 div $1,2
-sub $1,8
+sub $1,19
 mul $1,6

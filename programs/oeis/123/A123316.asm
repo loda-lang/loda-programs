@@ -1,57 +1,17 @@
 ; A123316: Triangle read by rows: T(n,k)=(k+1)*n!/2 (1<=k<=n).
 ; 1,2,3,6,9,12,24,36,48,60,120,180,240,300,360,720,1080,1440,1800,2160,2520,5040,7560,10080,12600,15120,17640,20160,40320,60480,80640,100800,120960,141120,161280,181440,362880,544320,725760,907200,1088640
 
-mov $16,$0
-mov $18,$0
-add $18,1
-lpb $18
-  clr $0,16
-  mov $0,$16
-  sub $18,1
-  sub $0,$18
-  mov $13,$0
-  mov $15,$0
-  add $15,1
-  lpb $15
-    mov $0,$13
-    sub $15,1
-    sub $0,$15
-    mov $9,$0
-    mov $11,2
-    lpb $11
-      sub $11,1
-      add $0,$11
-      sub $0,1
-      mov $2,$0
-      mov $4,4
-      lpb $2
-        lpb $4
-          mov $4,2
-          mov $6,$0
-          mov $7,2
-        lpe
-        lpb $6
-          mov $2,1
-          mul $4,$7
-          trn $6,$7
-          add $7,1
-        lpe
-      lpe
-      mov $1,$4
-      mov $12,$11
-      lpb $12
-        mov $10,$1
-        sub $12,1
-      lpe
-    lpe
-    lpb $9
-      mov $9,0
-      sub $10,$1
-    lpe
-    mov $1,$10
-    div $1,4
-    add $14,$1
-  lpe
-  add $17,$14
+lpb $0
+  mov $2,$0
+  max $2,0
+  cal $2,130493 ; Triangle read by rows in which row n contains n! repeated n times.
+  sub $0,1
+  add $1,$2
+  mov $4,$2
+  add $4,$2
+  min $4,1
+  add $5,$4
 lpe
-mov $1,$17
+mov $3,$1
+div $1,2
+add $1,1

@@ -1,14 +1,10 @@
 ; A183354: One quarter the number of nX2 1..4 arrays with no two neighbors of any element equal to each other
 ; 4,36,144,576,2304,9216,36864,147456,589824,2359296,9437184,37748736,150994944,603979776,2415919104,9663676416,38654705664,154618822656,618475290624,2473901162496,9895604649984,39582418599936,158329674399744,633318697598976,2533274790395904
 
-add $0,1
-mov $1,4
-mov $2,$0
-add $2,$0
-sub $2,2
-mov $3,9
-lpb $2
-  mul $3,2
-  mov $1,$3
-  sub $2,1
-lpe
+max $0,0
+mov $1,5
+cal $0,170156 ; Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^39 = I.
+pow $0,2
+mov $1,0
+mov $1,$0
+mul $1,4

@@ -1,12 +1,15 @@
 ; A114620: 2*A084158 (twice Pell triangles).
 ; 0,2,10,60,348,2030,11830,68952,401880,2342330,13652098,79570260,463769460,2703046502,15754509550,91824010800,535189555248,3119313320690,18180690368890,105964828892652,617608282987020
 
-max $0,0
-mov $3,2401
-cal $0,46090 ; Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives X+1 values.
-div $0,2
-mov $1,6
-mov $1,$0
-mov $2,0
-mov $3,1
+mov $1,3415
+mov $2,3415
 mov $3,$0
+sub $3,$0
+max $0,0
+mov $4,3415
+cal $0,77444 ; Numbers k such that (k^2 + 4)/2 is a square.
+mov $1,$0
+div $1,4
+add $1,1
+div $1,2
+mov $2,3837

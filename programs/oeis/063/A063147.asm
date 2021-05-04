@@ -1,29 +1,7 @@
 ; A063147: Dimension of the space of weight 2n cusp forms for Gamma_0( 79 ).
 ; 6,19,33,45,59,73,85,99,113,125,139,153,165,179,193,205,219,233,245,259,273,285,299,313,325,339,353,365,379,393,405,419,433,445,459,473,485,499,513,525,539,553,565,579,593,605,619,633,645,659
 
-mov $1,6
-mov $4,$0
-add $4,$0
-add $0,$4
-mov $2,$0
-mov $6,1
-lpb $2
-  mul $0,2
-  add $0,2
-  mov $2,3
-  mov $3,2
-  add $5,$6
-  mov $6,$0
-  add $6,$0
-  lpb $4
-    sub $4,$5
-    trn $4,$3
-    add $6,2
-  lpe
-  mov $1,$6
-  lpb $5
-    add $1,$5
-    trn $5,$3
-  lpe
-  sub $2,1
-lpe
+mul $0,4
+cal $0,63207 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 33 ).
+mov $1,$0
+add $1,5

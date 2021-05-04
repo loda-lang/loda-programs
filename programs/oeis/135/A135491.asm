@@ -13,12 +13,10 @@ lpb $8
   mov $4,$0
   add $5,1
   trn $5,$0
-  sub $5,9
-  sub $5,$0
-  add $5,$0
   mul $0,2
   add $3,$0
   sub $4,4
+  sub $5,9
   mov $5,$4
   add $4,1
   sub $5,$3

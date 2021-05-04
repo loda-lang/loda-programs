@@ -1,19 +1,9 @@
 ; A319572: The x coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
 ; 0,0,1,2,1,0,0,1,2,3,4,3,2,1,0,0,1,2,3,4,5,6,5,4,3,2,1,0,0,1,2,3,4,5,6,7,8,7,6,5,4,3,2,1,0,0,1,2,3,4,5,6,7,8,9,10,9,8,7,6,5,4,3,2,1,0,0,1,2,3,4,5,6,7,8,9,10,11,12,11,10,9,8,7,6
 
-mov $2,$0
-mov $0,0
-mov $4,1
-lpb $2
-  add $3,4
-  lpb $4
-    trn $2,$4
-    add $2,$0
-    mov $1,$2
-    trn $4,$3
-  lpe
-  mov $0,$3
-  trn $0,$2
-  sub $2,1
-  add $4,$3
-lpe
+cal $0,92542 ; Table below read by antidiagonals alternately upwards and downwards.
+mul $0,78
+add $0,4
+add $1,$0
+sub $1,82
+div $1,78

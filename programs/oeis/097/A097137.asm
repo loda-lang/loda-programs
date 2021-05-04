@@ -1,14 +1,17 @@
 ; A097137: Convolution of 3^n and floor(n/2).
 ; 0,0,1,4,14,44,135,408,1228,3688,11069,33212,99642,298932,896803,2690416,8071256,24213776,72641337,217924020,653772070,1961316220,5883948671,17651846024,52955538084,158866614264,476599842805,1429799528428,4289398585298,12868195755908,38604587267739,115813761803232,347441285409712,1042323856229152,3126971568687473
 
-mov $2,$0
-mov $3,$0
-lpb $3
-  mov $0,$2
-  sub $3,1
-  sub $0,$3
-  mov $4,3
-  pow $4,$0
-  div $4,8
-  add $1,$4
+lpb $0
+  mov $2,$0
+  max $2,0
+  cal $2,58809 ; The sequence lambda(3,n), where lambda is defined in A055203. Number of ways of placing n identifiable positive intervals with a total of exactly three starting and/or finishing points.
+  trn $0,2
+  add $1,$2
+  mov $4,$2
+  min $4,1
+  add $5,$4
 lpe
+mov $2,1
+mov $3,$4
+mov $3,$1
+div $1,6

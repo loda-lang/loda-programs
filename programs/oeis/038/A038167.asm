@@ -3,7 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,257143 ; a(2*n) = 3*n if n>0, a(2*n + 1) = 2*n + 1, a(0) = 1.
+  cal $2,226294 ; Period 2: repeat [6, 4].
+  mul $2,$0
   trn $0,5
   add $1,$2
 lpe
+div $1,4
