@@ -5,11 +5,13 @@ lpb $0
   mov $2,$0
   max $2,0
   cal $2,337281 ; a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
-  sub $0,1
+  trn $0,1
   add $1,$2
-  mov $3,1
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
+sub $0,1
+add $0,$4
+mov $3,$0
 mov $3,$1

@@ -4,9 +4,8 @@
 max $0,0
 cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 bin $0,2
+mov $1,1
 mov $1,$0
-add $1,$0
 mov $1,$0
 mul $1,10
 add $1,1
-mov $2,$0

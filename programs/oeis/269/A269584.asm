@@ -3,7 +3,4 @@
 
 cal $0,269620 ; Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by other than plus two, zero or minus 1.
 mov $1,$0
-sub $1,15
-div $1,3
-mul $1,3
-add $1,16
+add $1,1

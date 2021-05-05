@@ -7,9 +7,10 @@ lpb $0
   max $2,0
   cal $2,84177 ; Binomial transform of Jacobsthal oblongs.
   add $1,$2
-  add $4,$2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
+mov $3,$2
 mov $3,$1
+sub $4,144

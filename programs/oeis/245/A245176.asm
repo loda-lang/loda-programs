@@ -1,27 +1,18 @@
 ; A245176: a(n) = 2*a(n-1)+(n-2)*a(n-2)-(n-1)*a(n-3) with initial terms (1,2,4).
 ; 1,2,4,8,18,44,120,352,1116,3736,13232,48928,189080,757584,3148064,13497600,59704336,271503648,1268817472,6078518912,29837183008,149789875904,768674514816,4026518397440,21518708975040,117199152735616,650184360936192,3670861106911744
 
-mov $2,$0
-add $2,1
-mov $9,$0
-lpb $2
-  mov $0,$9
-  sub $2,1
-  sub $0,$2
-  mov $3,8
-  mov $4,$8
-  mov $6,8
-  lpb $0
-    mov $5,$4
-    mov $7,$0
-    sub $0,1
-    mov $4,$3
-    mul $7,$5
-    add $6,$7
-    mov $3,$6
-  lpe
-  sub $3,6
-  div $3,8
-  add $3,1
-  add $1,$3
+lpb $0
+  mov $2,$0
+  max $2,0
+  cal $2,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
+  sub $0,1
+  add $1,$2
+  add $1,$2
+  mov $4,$2
+  min $4,1
+  add $5,$4
 lpe
+mov $3,$0
+mov $3,$1
+div $1,2
+add $1,1

@@ -3,7 +3,5 @@
 
 add $0,1
 mov $1,$0
-add $1,$0
-sub $1,$0
 cal $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
 gcd $1,$0

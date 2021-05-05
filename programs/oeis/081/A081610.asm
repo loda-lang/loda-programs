@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,273514 ; a(n) is the number of arithmetic progressions m < n < p (three numbers in arithmetic progression) such that m and p contain no 2's in their ternary representation.
   sub $0,1
+  cal $2,134022 ; Number of negative trits in balanced ternary representation of n.
   mov $3,$2
   min $3,1
   add $1,$3

@@ -1,29 +1,17 @@
 ; A307354: a(n) = Sum_{0<=i<=j<=n} (-1)^(i+j) * (i+j)!/(i!*j!).
 ; 1,2,6,19,65,231,841,3110,11628,43834,166298,634140,2428336,9331688,35967462,138987715,538287881,2088842463,8119916647,31613327405,123251518641,481125828853,1880262896537,7355767408395,28803717914791,112887697489907,442784607413427,1738040721687751,6826930615120919
 
-mov $6,$0
-mov $8,$0
-add $8,1
-lpb $8
-  clr $0,6
-  mov $0,$6
-  sub $8,1
-  sub $0,$8
-  lpb $0
-    sub $0,1
-    mov $2,$0
-    max $2,0
-    cal $2,14301 ; Number of internal nodes of even outdegree in all ordered rooted trees with n edges.
-    add $3,$2
-    mov $4,$2
-    mov $4,$2
-    min $4,1
-    add $5,$4
-  lpe
-  mov $1,$2
+lpb $0
+  mov $1,$0
+  max $1,0
+  cal $1,26641 ; Number of nodes of even outdegree (including leaves) in all ordered trees with n edges.
+  sub $0,1
+  add $3,$1
   mov $1,$3
-  mul $1,3
-  add $1,1
-  add $7,$1
+  mov $4,$3
+  min $4,1
+  add $5,$4
 lpe
-mov $1,$7
+mov $2,$5
+mov $2,$1
+add $1,1

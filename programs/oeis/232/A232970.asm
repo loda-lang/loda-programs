@@ -3,8 +3,6 @@
 
 max $0,0
 cal $0,49651 ; a(n) = (F(3*n+1) - 1)/2, where F=A000045 (the Fibonacci sequence).
-add $2,$0
-add $3,$0
-mov $1,$3
+mov $1,-78536544625
 mov $1,$0
 add $1,1

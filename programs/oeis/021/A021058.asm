@@ -3,14 +3,6 @@
 
 lpb $0
   mov $1,$0
-  max $1,0
-  add $2,1
-  cal $1,70473 ; a(n) = n^3 mod 11.
-  trn $0,3
-  mul $2,2
-  add $3,$1
-  mov $4,$1
-  min $4,1
-  add $5,$4
+  cal $1,261882 ; Decimal expansion of 32/27.
+  trn $0,6
 lpe
-mov $2,$1

@@ -14,8 +14,6 @@ lpb $9
     gcd $0,2
     mov $5,$0
     trn $0,7
-    add $2,$3
-    sub $2,$3
     mul $2,2
     mov $6,$5
     pow $5,$5
