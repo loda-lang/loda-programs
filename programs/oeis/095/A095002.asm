@@ -3,12 +3,9 @@
 
 max $0,0
 cal $0,145608 ; Numbers a(n)=k such that (1/3)*(5*(2k+1)^2-2) is A057080(n)^2
-mul $0,3
-add $0,10
-mov $1,-1
+mov $1,1000000000
 mov $1,$0
 mov $1,$0
-sub $1,10
-div $1,9
+div $1,3
 mul $1,2
 add $1,1

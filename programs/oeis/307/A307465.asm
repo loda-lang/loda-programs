@@ -1,45 +1,18 @@
 ; A307465: Number of Catalan words of length n avoiding the pattern 110.
 ; 1,1,2,5,13,33,82,201,489,1185,2866,6925,16725,40385,97506,235409,568337,1372097,3312546,7997205,19306973,46611169,112529330,271669849,655869049,1583407969,3822685010,9228778013,22280241061,53789260161,129858761410
 
-mov $2,$0
-add $2,1
-mov $8,$0
-lpb $2
-  mov $0,$8
-  sub $2,1
-  sub $0,$2
-  mov $9,$0
-  mov $11,2
-  lpb $11
-    mov $0,$9
-    sub $11,1
-    add $0,$11
-    sub $0,1
-    mov $4,3
-    mov $5,2
-    mov $6,4
-    lpb $0
-      sub $0,1
-      mov $4,$5
-      add $5,$6
-      sub $5,1
-      mov $6,$4
-      add $6,1
-      add $6,$5
-    lpe
-    mov $3,$11
-    mov $7,$4
-    mul $7,2
-    lpb $3
-      sub $3,1
-      mov $10,$7
-    lpe
-  lpe
-  lpb $9
-    mov $9,0
-    sub $10,$7
-  lpe
-  mov $7,$10
-  div $7,4
-  add $1,$7
+lpb $0
+  mov $1,$0
+  max $1,0
+  cal $1,5409 ; Number of polynomials of height n: a(1)=1, a(2)=1, a(3)=4, a(n) = 2*a(n-1) + a(n-2) + 2 for n >= 4.
+  add $3,$1
+  sub $1,$0
+  mov $0,0
+  mov $4,$1
+  min $4,1
+  add $5,$4
 lpe
+mov $2,$5
+mov $2,$1
+div $1,2
+add $1,1
