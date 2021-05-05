@@ -3,10 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,324467 ; Three times the binary weight of n: 3*A000120(n).
+  sub $0,1
+  cal $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   add $1,$2
-  mov $3,$2
-  min $3,1
-  sub $0,$3
 lpe
-div $1,3

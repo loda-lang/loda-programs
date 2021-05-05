@@ -3,7 +3,7 @@
 
 max $0,0
 cal $0,49652 ; a(n) = (F(3*n+2) - 1)/4, where F=A000045 (the Fibonacci sequence).
-mov $1,-4
+mov $1,-78536544625
 mov $1,$0
 mul $1,2
 add $1,1

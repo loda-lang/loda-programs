@@ -3,15 +3,13 @@
 
 add $0,2
 max $0,0
-mov $2,1
-mov $3,1
-mov $5,0
-cal $0,106329 ; Numbers k such that k^2 = 8*j^2 + 9.
-mov $1,1
+cal $0,1108 ; a(n)-th triangular number is a square: a(n+1) = 6*a(n)-a(n-1)+2, with a(0) = 0, a(1) = 1.
+sub $0,1
 mov $1,$0
-sub $1,51
-div $1,6
+mov $1,$0
+mul $1,50
+add $1,51
+mov $1,$0
+sub $1,7
 mul $1,3
 add $1,22
-mov $3,1
-mov $4,1

@@ -3,5 +3,5 @@
 
 add $0,2
 mov $1,$0
-cal $1,4956 ; a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
-sub $1,3
+cal $1,66096 ; Duplicate values in A060143.
+sub $1,2

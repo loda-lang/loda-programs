@@ -6,4 +6,7 @@ max $2,1
 cal $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 add $0,$2
 mov $1,$0
+max $0,2
+cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+add $1,$0
 sub $1,1

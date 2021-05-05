@@ -18,8 +18,6 @@ lpb $2
     mov $6,$0
     add $6,1
     add $3,$6
-    add $3,$0
-    sub $3,$0
     sub $3,5
     mov $7,$6
     div $7,10

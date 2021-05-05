@@ -3,7 +3,6 @@
 
 max $0,0
 cal $0,183979 ; 1/4 the number of (n+1) X 3 binary arrays with all 2 X 2 subblock sums the same.
-mov $1,4
+mov $1,85
 mov $1,$0
 add $1,75
-mov $2,4

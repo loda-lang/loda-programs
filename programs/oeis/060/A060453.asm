@@ -3,12 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,212766 ; Number of (w,x,y,z) with all terms in {0,...,n}, w even and x odd.
+  cal $2,210379 ; Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
+  sub $0,1
   add $1,$2
-  mov $3,$2
-  cmp $3,0
-  mov $4,$2
-  add $4,$3
-  div $2,$4
-  sub $0,$2
 lpe
+div $1,4
+mul $1,2

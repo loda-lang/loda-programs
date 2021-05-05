@@ -3,7 +3,7 @@
 
 max $0,0
 cal $0,22320 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 6.
-mov $1,483
-add $1,$0
+sub $0,1
+mov $1,1
 mov $1,$0
-add $1,1
+add $1,2

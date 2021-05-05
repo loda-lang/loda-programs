@@ -3,17 +3,11 @@
 
 max $0,0
 max $0,0
-mov $2,$0
-max $0,0
+mov $2,3415
 cal $0,22086 ; Fibonacci sequence beginning 0, 3.
-add $0,13
-mul $2,5
-mov $3,$0
-add $0,1
-lpb $3
-  mul $0,$3
-  add $1,$0
-  dif $3,9
-lpe
+add $0,3415
+mov $1,6
 mov $1,$0
-sub $1,13
+sub $1,3414
+sub $2,$0
+mov $3,8

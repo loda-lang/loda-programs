@@ -3,8 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,255845 ; a(n) = 2*n^2 + 10.
+  cal $2,1971 ; Nearest integer to n^2/8.
   sub $0,1
-  div $2,16
+  mul $2,2
   add $1,$2
 lpe
+div $1,2
