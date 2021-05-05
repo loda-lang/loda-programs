@@ -7,12 +7,10 @@ lpb $0
   cal $2,137199 ; a(n)=a(n-1)+3a(n-2)+a(n-3).
   sub $0,1
   add $1,$2
-  mov $4,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
+  mov $2,155587
+  mov $4,0
 lpe
-mov $3,$0
+mov $3,$4
 mov $3,$1
 mul $1,2
 add $1,1

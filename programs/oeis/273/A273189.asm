@@ -3,9 +3,14 @@
 
 add $0,1
 max $0,0
-cal $0,1108 ; a(n)-th triangular number is a square: a(n+1) = 6*a(n)-a(n-1)+2, with a(0) = 0, a(1) = 1.
-sub $0,1
+mov $1,2
+mov $2,11
+mov $3,116179
+cal $0,281237 ; Solutions x to the negative Pell equation y^2 = 72*x^2 - 73728 with x,y >= 0.
+mov $1,1
 mov $1,$0
-mov $1,$0
+sub $1,96
+div $1,64
 mul $1,50
 add $1,51
+mov $3,116181

@@ -5,7 +5,6 @@ lpb $0
   mov $2,$0
   cal $2,253012 ; a(n) = ceiling( (n+1) * (n+2) / 12).
   sub $0,1
-  add $3,$2
-  mov $1,$3
+  add $1,$2
 lpe
 add $1,1

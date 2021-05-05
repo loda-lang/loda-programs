@@ -3,7 +3,5 @@
 
 mov $1,$0
 max $1,0
-mov $2,$0
 cal $1,99036 ; a(n) = 2^n - Fibonacci(n).
-mov $2,$1
 sub $1,1

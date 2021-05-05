@@ -7,10 +7,10 @@ lpb $0
   cal $2,5252 ; a(n) = Sum_{k=0..floor(n/4)} binomial(n-2k,2k).
   sub $0,1
   add $1,$2
-  mov $3,1
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
+mov $3,$4
 mov $3,$1
 add $1,1

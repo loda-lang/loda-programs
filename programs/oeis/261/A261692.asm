@@ -3,10 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,261693 ; Irregular triangle read by rows in which row n lists the positive odd numbers in decreasing order starting with 2^n - 1. T(0, 1) = 0 and T(n, k) for n >= 1, 1 <= k <= 2^(n-1).
+  add $2,$0
+  cal $2,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+  sub $0,1
   add $1,$2
-  mov $3,$2
-  min $3,1
-  add $0,$3
-  sub $0,2
 lpe

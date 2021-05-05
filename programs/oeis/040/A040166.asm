@@ -1,37 +1,10 @@
 ; A040166: Continued fraction for sqrt(180).
 ; 13,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2
 
-mov $5,2
-mov $6,$0
-lpb $5
-  mov $0,$6
-  sub $5,1
-  add $0,$5
-  sub $0,1
-  mov $2,$0
-  mov $0,1
-  div $2,4
-  mul $2,8
-  add $2,1
-  mov $3,$2
-  mov $2,6
-  add $3,2
-  mov $7,2
-  lpb $0
-    sub $0,$0
-    div $2,4
-  lpe
-  mul $2,3
-  mul $2,$3
-  add $2,$7
-  mov $4,$5
-  lpb $4
-    mov $1,$2
-    sub $4,1
-  lpe
-lpe
-lpb $6
-  sub $1,$2
-  mov $6,0
-lpe
-add $1,2
+dif $0,2
+cal $0,40139 ; Continued fraction for sqrt(152).
+mov $1,$0
+mul $1,16
+div $1,19
+mul $1,4
+div $1,3

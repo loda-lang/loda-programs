@@ -4,12 +4,13 @@
 lpb $0
   mov $2,$0
   max $2,0
-  cal $2,129952 ; Binomial transform of A124625.
+  cal $2,59165 ; a(n) = (n+1)*2^(n+4).
   sub $0,2
   add $1,$2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
-mov $3,$2
 mov $3,$1
+div $1,64
+mul $1,2

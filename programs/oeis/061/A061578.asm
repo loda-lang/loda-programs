@@ -8,24 +8,13 @@ lpb $29
   mov $0,$27
   sub $29,1
   add $0,$29
-  sub $0,1
-  mov $2,$0
-  add $0,1
   max $0,0
-  mov $1,3
   add $3,2
-  mov $26,$3
-  cmp $26,0
-  add $3,$26
-  div $2,$3
   cal $0,109592 ; Sequence and first differences include all even numbers exactly once and no odd numbers.
   div $0,2
   sub $0,$3
   mov $1,$0
-  mul $2,2
-  mov $3,3
   mov $30,$29
-  cmp $30,1
   mul $30,$0
   add $28,$30
 lpe

@@ -2,12 +2,10 @@
 ; 3,4,5,6,7,9,11,14,17,21,26,32,40,50,62,77,96,120,150,187,234,292,365,456,570,712,890,1112,1390,1737,2171,2714,3392,4240,5300,6625,8281,10351,12939,16174,20217,25271,31589,39486,49357,61696,77120
 
 max $0,0
-mov $1,0
-mov $2,3
-mov $3,0
-mov $4,14
 cal $0,279075 ; Maximum starting value of X such that repeated replacement of X with X-ceiling(X/5) requires n steps to reach 0.
-mov $1,$0
-add $1,6
+mov $1,12
 mov $1,$0
 add $1,3
+mov $2,0
+mov $3,3
+mov $4,80

@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,225566 ; The set of magic numbers for an idealized harmonic oscillator atomic nucleus with a biaxially deformed prolate ellipsoid shape and an oscillator ratio of 3:1
+  cal $2,144677 ; Related to enumeration of quantum states (see reference for precise definition).
   sub $0,1
   add $1,$2
 lpe
-div $1,2
 add $1,1

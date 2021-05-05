@@ -6,12 +6,6 @@ lpb $0
   cal $2,79318 ; a(0) = 1; for n > 0, a(n) = (3^(A000120(n)-1) + 1)/2.
   trn $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mul $0,5
-mov $3,$4
-mov $3,$1
 mul $1,2
 add $1,1

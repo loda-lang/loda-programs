@@ -1,7 +1,9 @@
 ; A004937: Nearest integer to n*phi^2, where phi is the golden ratio, A001622.
 ; 0,3,5,8,10,13,16,18,21,24,26,29,31,34,37,39,42,45,47,50,52,55,58,60,63,65,68,71,73,76,79,81,84,86,89,92,94,97,99,102,105,107,110,113,115,118,120,123,126,128,131,134
 
-add $0,15
-cal $0,26274 ; Greatest k such that s(k) = n, where s = A026272.
+add $0,17
+cal $0,288713 ; Positions of 1 in A288711; complement of A288712.
 mov $1,$0
-sub $1,42
+sub $1,5
+div $1,2
+sub $1,43

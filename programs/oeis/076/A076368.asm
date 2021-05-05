@@ -3,8 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,125266 ; Number of repetitions in A007918.
-  pow $0,0
-  div $0,5
+  sub $0,$0
+  cal $1,75526 ; A008578(n+2) - A008578(n+1).
 lpe
 add $1,1
