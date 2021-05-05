@@ -13,8 +13,6 @@ clr $3,1
 mov $0,$1
 add $0,$2
 add $3,$0
-sub $3,$0
-add $3,$0
 mov $1,$3
 sub $1,1
 div $1,9

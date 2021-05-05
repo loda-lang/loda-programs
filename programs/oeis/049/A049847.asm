@@ -3,7 +3,7 @@
 
 add $0,1
 mul $0,2
-cal $0,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
+cal $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
 mov $1,$0
 div $1,2
 add $1,1

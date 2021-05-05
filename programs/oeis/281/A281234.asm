@@ -1,15 +1,12 @@
 ; A281234: Solutions y to the negative Pell equation y^2 = 72*x^2 - 288 with x,y >= 0.
 ; 0,48,288,1680,9792,57072,332640,1938768,11299968,65861040,383866272,2237336592,13040153280,76003583088,442981345248,2581884488400,15048325585152,87708069022512,511200088549920,2979492462277008,17365754685112128
 
-mov $1,$0
-add $0,2
-mov $0,$1
+mov $2,$0
+mov $3,$0
+sub $3,$0
 max $0,0
-trn $1,$1
-add $1,2
-mov $2,0
-mov $3,1
-cal $0,276602 ; Values of n such that n^2 + 10 is a triangular number (A000217).
+cal $0,106328 ; Numbers j such that 8*(j^2) + 9 = k^2 for some positive number k.
+mov $1,$3
 mov $1,$0
-div $1,9
+div $1,3
 mul $1,48

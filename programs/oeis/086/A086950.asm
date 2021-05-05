@@ -11,5 +11,3 @@ lpb $0
 lpe
 sub $3,$2
 add $1,$3
-sub $1,$3
-add $1,$3

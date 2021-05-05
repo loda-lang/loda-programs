@@ -3,8 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,128422 ; Projective plane crossing number of K_{4,n}.
+  cal $2,62781 ; Number of arithmetic progressions of four terms and any mean which can be extracted from the set of the first n positive integers.
   sub $0,2
   add $1,$2
 lpe
-div $1,2

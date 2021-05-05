@@ -20,8 +20,6 @@ lpb $29
   mod $3,$0
   mod $3,3
   mov $5,$0
-  sub $5,$0
-  add $5,$0
   gcd $5,$3
   mov $1,$5
   div $1,2906

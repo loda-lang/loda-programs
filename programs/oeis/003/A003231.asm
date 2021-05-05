@@ -1,7 +1,10 @@
 ; A003231: a(n) = floor(n*(sqrt(5)+5)/2).
 ; 3,7,10,14,18,21,25,28,32,36,39,43,47,50,54,57,61,65,68,72,75,79,83,86,90,94,97,101,104,108,112,115,119,123,126,130,133,137,141,144,148,151,155,159,162,166,170,173,177,180,184,188,191,195,198,202,206,209
 
-mul $0,2
-cal $0,287775 ; Positions of 0 in A287772; complement of A050140 (conjectured and proved).
 mov $1,$0
+add $1,$0
+cal $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
+add $1,$0
+add $1,$0
+div $1,2
 add $1,1
