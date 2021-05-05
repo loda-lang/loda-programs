@@ -1,38 +1,7 @@
 ; A330064: Beatty sequence for cosh(x), where 1/x + sech(x) = 1.
 ; 2,5,7,10,13,15,18,20,23,26,28,31,34,36,39,41,44,47,49,52,55,57,60,62,65,68,70,73,75,78,81,83,86,89,91,94,96,99,102,104,107,110,112,115,117,120,123,125,128,130,133,136,138,141,144,146,149,151,154,157
 
-mov $3,$0
-add $3,1
-mov $5,$0
-lpb $3
-  mov $0,$5
-  sub $3,1
-  sub $0,$3
-  mov $7,$0
-  mov $9,2
-  lpb $9
-    sub $9,1
-    add $0,$9
-    sub $0,1
-    mov $2,$0
-    lpb $2
-      mov $4,$2
-      mov $2,0
-      add $4,1
-      mul $4,13
-    lpe
-    div $4,21
-    mov $6,$9
-    lpb $6
-      sub $6,1
-      mov $8,$4
-    lpe
-  lpe
-  lpb $7
-    mov $7,0
-    sub $8,$4
-  lpe
-  mov $4,$8
-  add $4,2
-  add $1,$4
-lpe
+add $0,47
+cal $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
+mov $1,$0
+sub $1,123

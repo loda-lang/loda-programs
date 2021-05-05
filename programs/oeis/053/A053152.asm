@@ -1,9 +1,17 @@
 ; A053152: Number of 2-element intersecting families whose union is an n-element set.
 ; 0,2,9,32,105,332,1029,3152,9585,29012,87549,263672,793065,2383292,7158069,21490592,64504545,193579172,580868589,1742867912,5229128025,15688432652,47067395109,141206379632,423627527505,1270899359732,3812731633629,11438262009752,34314920246985,102945029176412,308835624400149,926507946942272,2779525988310465,8338582259898692
 
+mov $2,$0
+mul $2,$0
+mov $1,$2
+sub $2,$2
+mov $3,$0
+sub $0,5
+mov $0,$3
 max $0,0
-mov $2,1
-cal $0,53156 ; Number of 2-element intersecting families (with not necessary distinct sets) whose union is an n-element set.
-mov $1,15
+mod $1,2
+sub $3,$1
+cal $0,126644 ; a(n) is the number of integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4,5,6 and at least one of digits 7,8,9.
 mov $1,$0
-sub $1,1
+sub $1,4
+div $1,6

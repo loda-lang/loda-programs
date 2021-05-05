@@ -2,6 +2,5 @@
 ; 0,0,4,2,0,4,20,19,28,0,39,35,47,81,40,11,0,13,56,135,79,45,39,67,135,0,152,83,48,53,104,207,7,216,100,26,0,28,116,270,496,277,104,546,503,524,615,139,368,0,391,155,732,652,648,726,55,293,631,170,704
 
 pow $0,3
-cal $0,71797 ; Restart counting after each new odd integer (a fractal sequence).
+cal $0,53186 ; Square excess of n: difference between n and largest square <= n.
 mov $1,$0
-sub $1,1
