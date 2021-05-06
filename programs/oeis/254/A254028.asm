@@ -3,9 +3,8 @@
 
 max $0,0
 cal $0,94374 ; a(n) = (3^n-1)/2 + 2^n.
-sub $0,1
-mov $1,0
 mov $1,$0
+mov $1,$0
+add $1,2
 mul $1,2
-add $1,6
-mov $2,0
+mov $2,2
