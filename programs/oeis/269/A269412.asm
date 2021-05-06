@@ -27,8 +27,6 @@ add $2,5
 mov $3,$6
 sub $4,$2
 add $1,$4
-add $1,$4
-sub $1,$4
 add $1,4
 sub $5,$5
 add $5,1

@@ -5,13 +5,13 @@ lpb $0
   mov $2,$0
   max $2,0
   cal $2,77868 ; Expansion of (1-x)^(-1)/(1-x-x^3).
-  add $1,$2
-  mov $4,$2
-  mov $2,1
-  mov $3,$0
   trn $0,1
+  add $1,$2
+  add $3,$1
+  mov $4,$2
   min $4,1
   add $5,$4
 lpe
+mod $2,2
 mov $3,$1
 add $1,1

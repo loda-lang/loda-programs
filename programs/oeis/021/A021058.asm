@@ -4,5 +4,5 @@
 lpb $0
   mov $1,$0
   cal $1,261882 ; Decimal expansion of 32/27.
-  trn $0,6
+  trn $0,100
 lpe

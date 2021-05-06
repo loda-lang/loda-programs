@@ -9,10 +9,14 @@ sub $3,2
 div $3,$0
 max $0,0
 cal $0,178521 ; The cost of all leaves in the Fibonacci tree of order n.
-mov $1,12
-add $1,$0
-div $0,2
-add $0,$1
-mov $3,$1
-sub $1,11
+sub $0,1
+add $3,$0
+add $0,2
+mov $1,$0
 mul $1,2
+mov $2,$3
+cmp $2,0
+add $3,$2
+mod $3,$3
+mov $4,$3
+pow $3,2

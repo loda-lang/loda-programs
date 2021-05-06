@@ -3,12 +3,10 @@
 
 max $0,0
 cal $0,36551 ; a(n) = 2^(n-1)*(3^n-1) + 1.
-add $0,1
+clr $3,6
+add $3,$0
+mov $1,$3
 mov $1,$0
-mov $1,$0
-sub $1,2
 div $1,2
 mul $1,4
 add $1,1
-mov $2,1
-mov $3,1

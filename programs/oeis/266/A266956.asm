@@ -3,6 +3,5 @@
 
 cal $0,61101 ; Squares with digital root 7.
 mov $1,$0
-sub $1,16
-div $1,9
-add $1,1
+mul $1,3
+div $1,27

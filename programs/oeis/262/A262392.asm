@@ -1,0 +1,17 @@
+; A262392: a(n) = A007504(n) + A010693(n).
+; 2,5,7,13,19,31,43,61,79,103,131,163,199,241,283,331,383,443,503,571,641,715,793,877,965,1063,1163,1267,1373,1483,1595,1723,1853,1991,2129,2279,2429,2587,2749,2917,3089,3269,3449,3641,3833,4031,4229
+
+lpb $0
+  sub $0,1
+  mov $2,$0
+  max $2,0
+  cal $2,14686 ; In sequence of prime numbers add 1 to first prime, 3rd prime, fifth prime, ... then subtract 1 from 2nd prime, fourth prime, sixth prime and so on.
+  add $1,$2
+  mov $4,$2
+  sub $2,$2
+  min $4,1
+  add $5,$4
+lpe
+mov $3,$5
+mov $3,$1
+add $1,2

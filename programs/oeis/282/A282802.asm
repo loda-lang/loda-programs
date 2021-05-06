@@ -3,14 +3,10 @@
 
 add $0,2
 mov $2,2
-sub $2,$0
-add $2,$0
 pow $2,$0
 lpb $0
   gcd $0,2
   div $0,2
-  add $1,$2
-  sub $1,$2
   mov $3,$2
   add $3,$1
   add $1,$3

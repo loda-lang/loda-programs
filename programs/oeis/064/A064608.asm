@@ -3,9 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,7875 ; Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
   sub $0,1
+  cal $2,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   add $1,$2
 lpe
+div $1,2
 mul $1,2
 add $1,1

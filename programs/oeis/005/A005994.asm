@@ -3,8 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,5993 ; Expansion of (1+x^2)/((1-x)^2*(1-x^2)^2).
   sub $0,1
+  cal $2,168380 ; Row sums of A168281.
   add $1,$2
 lpe
+div $1,2
 add $1,1

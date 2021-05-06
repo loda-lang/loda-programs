@@ -4,13 +4,13 @@
 lpb $0
   mov $2,$0
   max $2,0
-  cal $2,120718 ; Expansion of 3*x/(1 - 2*x^2 - 2*x + x^3).
+  cal $2,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
   trn $0,2
-  add $3,$2
+  add $1,$2
+  mov $4,1
   mov $4,$2
   min $4,1
-  mul $4,$2
-  add $1,$4
+  add $5,$4
 lpe
-mov $5,$1
-div $1,3
+mov $3,$4
+mov $3,$1

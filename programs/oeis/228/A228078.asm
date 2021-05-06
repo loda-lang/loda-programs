@@ -4,5 +4,4 @@
 mov $1,$0
 max $1,0
 cal $1,99036 ; a(n) = 2^n - Fibonacci(n).
-sub $0,2
 sub $1,1

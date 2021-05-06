@@ -3,10 +3,8 @@
 
 sub $0,1
 max $0,0
-mov $1,2
-mov $2,1
-cal $0,55588 ; a(n) = 3*a(n-1) - a(n-2) - 1 with a(0) = 1 and a(1) = 2.
-sub $0,1
-pow $0,2
+cal $0,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
 mov $1,$0
+pow $1,2
+div $1,5
 add $1,1

@@ -1,9 +1,18 @@
 ; A082639: Numbers n such that 2*n*(n+2) is a square.
 ; 0,2,16,98,576,3362,19600,114242,665856,3880898,22619536,131836322,768398400,4478554082,26102926096,152139002498,886731088896,5168247530882,30122754096400,175568277047522,1023286908188736
 
-mov $2,$0
 max $0,0
-cal $0,1108 ; a(n)-th triangular number is a square: a(n+1) = 6*a(n)-a(n-1)+2, with a(0) = 0, a(1) = 1.
-mov $1,$2
+mov $1,2
+mov $2,11
+mov $3,116179
+cal $0,281237 ; Solutions x to the negative Pell equation y^2 = 72*x^2 - 73728 with x,y >= 0.
+mov $1,1
 mov $1,$0
+sub $1,96
+div $1,64
+mul $1,4
+add $1,8
+div $1,4
+sub $1,1
 mul $1,2
+mov $3,116181
