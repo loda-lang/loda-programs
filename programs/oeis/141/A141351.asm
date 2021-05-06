@@ -3,16 +3,17 @@
 
 lpb $0
   mov $2,$0
-  div $0,32
   max $2,0
-  cal $2,68875 ; Expansion of (1 + x*C)*C, where C = (1 - (1 - 4*x)^(1/2))/(2*x) is the g.f. for Catalan numbers, A000108.
-  add $3,$2
+  cal $2,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+  bin $0,4
+  add $1,$2
   mov $4,$2
   min $4,1
+  mov $6,$1
+  cmp $6,0
+  add $1,$6
+  div $0,$1
   add $5,$4
-  clr $2,1
 lpe
-mov $1,$2
-mov $1,$3
-div $1,2
+mov $3,$1
 add $1,1
