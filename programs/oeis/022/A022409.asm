@@ -3,8 +3,6 @@
 
 max $0,0
 cal $0,22131 ; Fibonacci sequence beginning 4, 11.
+sub $0,1
 mov $1,$0
-mov $1,$0
-sub $1,1
-mov $2,$0
-mov $3,0
+mov $2,47

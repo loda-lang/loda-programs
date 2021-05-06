@@ -7,12 +7,9 @@ lpb $0
   cal $2,5251 ; a(0) = 0, a(1) = a(2) = a(3) = 1; thereafter, a(n) = a(n-1) + a(n-2) + a(n-4).
   trn $0,2
   add $1,$2
-  add $1,$2
+  add $3,$2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
-sub $2,$0
-mov $3,$2
-mov $3,$1
-div $1,2
+mov $3,$0

@@ -4,7 +4,6 @@
 add $0,4
 cal $0,168380 ; Row sums of A168281.
 mov $1,$0
-sub $1,37
 div $1,2
+sub $1,4
 mul $1,2
-add $1,30

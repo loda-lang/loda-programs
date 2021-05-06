@@ -4,8 +4,7 @@
 cal $0,173740 ; Triangle T(n,k) = binomial(n,k) + 2 for 1 <= k <= n - 1, n >= 2, and T(n,0) = T(n,n) = 1 for n >= 0, read by rows.
 add $0,1
 lpb $0
-  sub $0,2
-  mul $0,2
+  bin $0,2
 lpe
 mov $1,$0
 add $1,1

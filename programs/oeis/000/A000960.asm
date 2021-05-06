@@ -3,6 +3,4 @@
 
 cal $0,278484 ; Main diagonal of A278482.
 mov $1,$0
-div $1,2
-mul $1,2
 add $1,1
