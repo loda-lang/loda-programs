@@ -3,10 +3,9 @@
 
 add $0,1
 max $0,0
-mov $1,2
-mov $2,3
-mov $3,1
-mov $4,1
+mov $2,1
 cal $0,46022 ; Primes together with 1 and 4.
+mov $1,2
 mov $1,$0
 add $1,1
+mov $2,2

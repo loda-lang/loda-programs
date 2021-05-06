@@ -2,15 +2,5 @@
 ; 1,1,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0
 
 mul $0,2
-mov $1,1
-mov $2,1
-lpb $0
-  add $1,2
-  mov $2,$0
-  trn $0,$1
-lpe
-mov $0,1
-sub $1,$2
-trn $1,$2
-trn $0,$1
-mov $1,$0
+cal $0,118175 ; Binary representation of n-th iteration of the Rule 220 elementary cellular automaton starting with a single black cell.
+add $1,$0

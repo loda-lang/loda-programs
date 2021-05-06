@@ -3,14 +3,13 @@
 
 add $0,1
 max $0,0
-mov $1,0
-mov $2,2
-mov $3,1
-cal $0,75870 ; Numbers k such that 2*k^2 - 4 is a square.
+max $0,0
+cal $0,182190 ; a(n) = 6*a(n-1) - a(n-2) + 4 with n > 1, a(0)=0, a(1)=4.
+add $0,20
+mul $1,$0
+add $1,7
 mov $1,$0
-sub $1,10
-div $1,8
+sub $1,24
+div $1,4
 mul $1,8
 add $1,9
-mov $2,1
-mov $3,2

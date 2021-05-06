@@ -3,10 +3,8 @@
 
 max $0,0
 cal $0,78057 ; Expansion of (1+x)/(1-2*x-x^2).
-mov $1,0
-mov $2,5
-mov $3,$0
-add $3,1
-mov $1,$3
-mov $4,$3
-mov $5,0
+mov $1,$0
+mov $1,$0
+div $1,2
+mul $1,2
+add $1,2

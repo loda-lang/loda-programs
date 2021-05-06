@@ -5,8 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
+  cal $2,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
   add $1,$2
 lpe
-div $1,2
 add $1,1

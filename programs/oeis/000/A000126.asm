@@ -3,10 +3,12 @@
 
 max $0,0
 mov $2,2
-mov $3,1
+mov $4,2
 cal $0,1924 ; Apply partial sum operator twice to Fibonacci numbers.
-add $0,1
-mov $1,-9
+add $0,11
+mov $1,4
 mov $1,$0
-mov $2,1
-mov $3,-9
+sub $1,10
+mov $2,$0
+mov $3,2
+mov $4,8
