@@ -3,10 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,55976 ; Remainder when (n-1)! + 1 is divided by n.
+  cal $2,5171 ; 0 if n is prime else 1.
   sub $0,$2
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  add $1,$2
 lpe
 add $1,1

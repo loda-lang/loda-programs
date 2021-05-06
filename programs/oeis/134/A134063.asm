@@ -3,11 +3,10 @@
 
 max $0,0
 cal $0,337313 ; a(n) is the number of n-digit positive integers with exactly three distinct base 10 digits.
-mov $1,5
+mov $1,0
+mov $1,$0
+div $1,16
 mov $1,$0
 div $1,648
 add $1,1
-mov $2,3
-mov $3,64
-mov $4,5
-mov $5,0
+mov $2,2

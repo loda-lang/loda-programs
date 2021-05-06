@@ -3,11 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,66182 ; Permutation of the integers with cycle form {1}, {3, 2}, {6, 5, 4}, {10, 9, 8, 7}, ...
-  div $0,$2
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  cal $2,238303 ; Triangle T(n,k), 0<=k<=n, read by rows given by T(n,0) = 1, T(n,k) = 2 if k>0.
+  add $3,$2
+  mov $0,$3
 lpe
+mov $1,$0
 mul $1,3
 add $1,1

@@ -3,12 +3,9 @@
 
 lpb $0
   mov $2,$0
+  cal $2,235127 ; Greatest k such that 4^k divides n.
   div $0,2
-  mul $2,$0
-  mov $3,$0
-  lpb $3
-    mod $2,2
-    sub $3,1
-  lpe
-  add $1,$2
+  mov $3,$2
+  min $3,1
+  add $1,$3
 lpe

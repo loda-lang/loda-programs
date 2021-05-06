@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
+  cal $2,989 ; 3-adic valuation of binomial(2*n, n): largest k such that 3^k divides binomial(2*n, n).
   sub $0,1
-  cal $2,134022 ; Number of negative trits in balanced ternary representation of n.
   mov $3,$2
   min $3,1
   add $1,$3

@@ -4,13 +4,14 @@
 lpb $0
   mov $2,$0
   max $2,0
-  cal $2,201864 ; ((F(n-1)+F(n-2))-1)/2 if F(n) is odd, otherwise ((F(n-1)+F(n-2))-2)/2, where F(n)=A000045(n) is the n-th Fibonacci number.
-  sub $0,2
+  cal $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  trn $0,3
   add $1,$2
+  sub $1,1
   mov $4,$2
   min $4,1
   add $5,$4
-  sub $4,$4
+  mul $4,$2
 lpe
 mov $3,$0
 mov $3,$1
