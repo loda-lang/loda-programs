@@ -4,6 +4,5 @@
 max $0,0
 cal $0,22086 ; Fibonacci sequence beginning 0, 3.
 div $0,5
+mov $1,27
 mov $1,$0
-mul $0,7
-mov $2,$0

@@ -4,6 +4,8 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,143731 ; Characteristic function of numbers n with at least two distinct prime factors.
-  add $1,$2
+  cal $2,86664 ; n - {sum of prime power components of n}.
+  mov $3,$2
+  min $3,1
+  add $1,$3
 lpe
