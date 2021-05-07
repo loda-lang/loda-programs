@@ -1,8 +1,8 @@
 ; A131136: Denominator of (exponential) expansion of log((x/2-1)/(x-1)).
 ; 1,2,4,4,8,4,8,8,16,4,8,8,16,8,16,16,32,4,8,8,16,8,16,16,32,8,16,16,32,16,32,32,64,4,8,8,16,8,16,16,32,8,16,16,32,16,32,32,64,8,16,16,32,16,32,32,64,16,32,32,64,32,64,64,128,4,8,8,16,8,16,16,32,8,16,16
 
-mul $0,4
+mul $0,2
 sub $0,1
 max $0,0
-cal $0,60632 ; a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
+cal $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); 2^A000120(n).
 mov $1,$0

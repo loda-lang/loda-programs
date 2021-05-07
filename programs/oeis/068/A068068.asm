@@ -5,6 +5,4 @@ mul $0,2
 add $0,1
 cal $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
 mov $1,$0
-sub $1,2
 div $1,2
-add $1,1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,191558 ; a(n) = 0 if n prime, otherwise n.
-  mod $0,3
-  mov $1,$2
-  min $1,1
+  cal $2,14684 ; In the sequence of positive integers subtract 1 from each prime number.
+  add $1,$2
+  sub $1,$0
+  mod $0,2
 lpe

@@ -1,67 +1,7 @@
 ; A027660: a(n) = C(n+2,2) + C(n+2,3) + C(n+2,4) + C(n+2,5).
 ; 1,4,11,26,56,112,210,372,627,1012,1573,2366,3458,4928,6868,9384,12597,16644,21679,27874,35420,44528,55430,68380,83655,101556,122409,146566,174406,206336,242792
 
-mov $20,$0
-mov $22,$0
-add $22,1
-lpb $22
-  clr $0,20
-  mov $0,$20
-  sub $22,1
-  sub $0,$22
-  mov $17,$0
-  mov $19,$0
-  add $19,1
-  lpb $19
-    clr $0,17
-    mov $0,$17
-    sub $19,1
-    sub $0,$19
-    mov $14,$0
-    mov $16,$0
-    add $16,1
-    lpb $16
-      clr $0,14
-      mov $0,$14
-      sub $16,1
-      sub $0,$16
-      mov $11,$0
-      mov $13,$0
-      add $13,1
-      lpb $13
-        mov $0,$11
-        sub $13,1
-        sub $0,$13
-        mov $3,$0
-        trn $5,9
-        add $8,3
-        mul $8,2
-        mov $2,$8
-        gcd $2,10
-        trn $2,$0
-        mov $0,2
-        add $3,9
-        add $5,$2
-        add $5,1
-        gcd $0,$5
-        mov $8,$2
-        add $8,$3
-        mul $8,9
-        add $6,$8
-        lpb $0
-          sub $0,1
-          mov $1,$6
-          pow $6,$4
-        lpe
-        trn $1,90
-        div $1,9
-        mov $8,0
-        add $12,$1
-      lpe
-      add $15,$12
-    lpe
-    add $18,$15
-  lpe
-  add $21,$18
-lpe
-mov $1,$21
+add $0,1
+cal $0,227252 ; Number of n X 2 binary arrays indicating whether each 2 X 2 subblock of a larger binary array has lexicographically nondecreasing rows and columns, for some larger (n+1) X 3 binary array with rows and columns of the latter in lexicographically nondecreasing order.
+mov $1,$0
+div $1,2

@@ -1,62 +1,12 @@
 ; A183143: [1/r]+[2/r]+...+[n/r], where r=sqrt(3) and []=floor.
 ; 0,1,2,4,6,9,13,17,22,27,33,39,46,54,62,71,80,90,100,111,123,135,148,161,175,190,205,221,237,254,271,289,308,327,347,367,388,409,431,454,477,501,525,550,575,601,628,655,683,711,740,770,800,831
 
-mov $20,$0
-mov $22,$0
-lpb $22
-  clr $0,20
-  mov $0,$20
-  sub $22,1
-  sub $0,$22
-  mov $17,$0
-  mov $19,$0
-  lpb $19
-    mov $0,$17
-    sub $19,1
-    sub $0,$19
-    mov $13,$0
-    mov $15,2
-    lpb $15
-      mov $0,$13
-      sub $15,1
-      add $0,$15
-      sub $0,1
-      mov $7,$0
-      mov $10,$0
-      add $0,1
-      pow $0,2
-      mov $3,1
-      mov $6,59
-      lpb $0
-        sub $0,1
-        sub $0,$3
-        trn $0,1
-        mov $1,1
-        add $3,6
-        add $6,2
-      lpe
-      mul $1,$6
-      mov $9,$7
-      mul $9,2
-      add $1,$9
-      div $1,2
-      mov $12,$10
-      mul $12,3
-      add $1,$12
-      mov $16,$15
-      lpb $16
-        mov $14,$1
-        sub $16,1
-      lpe
-    lpe
-    lpb $13
-      mov $13,0
-      sub $14,$1
-    lpe
-    mov $1,$14
-    sub $1,4
-    add $18,$1
-  lpe
-  add $21,$18
+lpb $0
+  mov $2,$0
+  cal $2,97337 ; Integer part of the edge of a cube that has space-diagonal n.
+  sub $0,1
+  mul $2,2
+  add $1,$2
+  add $1,$2
 lpe
-mov $1,$21
+div $1,4

@@ -1,7 +1,6 @@
 ; A096270: Fixed point of the morphism 0->01, 1->011.
 ; 0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0
 
-lpb $0
-  cal $0,114986 ; Characteristic function of (A000201 prefixed with 0).
-lpe
+cal $0,242082 ; Nim sequence of game on n counters whose legal moves are removing some number of counters in A027941.
 mov $1,$0
+dif $1,2

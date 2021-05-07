@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  cal $2,39969 ; An example of a d-perfect sequence: a(n) = Catalan(n) mod 3.
-  sub $0,3
+  cal $2,39968 ; An example of a d-perfect sequence.
+  sub $0,2
   mov $3,$2
   min $3,1
   add $1,$3

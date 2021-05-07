@@ -5,15 +5,13 @@ lpb $0
   mov $1,$0
   max $1,0
   cal $1,52955 ; a(2n) = 2*2^n - 1, a(2n+1) = 3*2^n - 1.
+  add $2,$0
+  trn $0,$1
+  dif $0,5
   add $3,$1
   mov $4,$1
   min $4,1
   add $5,$4
-  mov $6,$1
-  cmp $6,0
-  add $1,$6
-  div $0,$1
-  mov $2,$4
 lpe
 mov $2,$1
 add $1,4

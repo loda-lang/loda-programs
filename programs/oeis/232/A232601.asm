@@ -3,13 +3,14 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  cal $2,85750 ; Determinant of the symmetric n X n matrix A defined by A[i,j] = |i-j| for 1 <= i,j <= n.
-  sub $0,1
-  add $3,$2
-  add $1,$3
-  mov $4,$2
-  min $4,1
-  add $5,$4
+  mul $2,$0
+  trn $0,1
+  add $0,1
+  trn $0,1
+  add $1,$2
+  sub $2,$1
+  sub $2,$1
+  mov $1,$2
 lpe
+mov $3,$1
 mul $1,2

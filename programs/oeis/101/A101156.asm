@@ -4,6 +4,5 @@
 max $0,0
 mov $2,2
 cal $0,22137 ; Fibonacci sequence beginning 5, 12.
-mul $0,2
-add $1,$0
 mov $1,$0
+mul $1,2

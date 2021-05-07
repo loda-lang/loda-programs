@@ -4,15 +4,14 @@
 lpb $0
   mov $2,$0
   max $2,0
+  mov $3,$0
   cal $2,307768 ; Number of n-step random walks on a line starting from the origin and returning to it at least once.
-  add $0,1
-  trn $0,3
+  trn $0,2
   add $1,$2
   mov $4,$2
   min $4,1
-  mod $4,3
   add $5,$4
 lpe
-mov $3,$0
 mov $3,$1
 div $1,2
+mul $4,$0
