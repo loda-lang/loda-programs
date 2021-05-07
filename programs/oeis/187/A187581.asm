@@ -7,11 +7,5 @@ lpb $0
   max $1,0
   cal $1,187577 ; Complement of A187576.
   trn $0,$1
-  add $3,$1
-  mov $4,$1
-  min $4,1
-  add $5,$4
 lpe
-mov $2,$4
-mov $2,$1
 add $1,2

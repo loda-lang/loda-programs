@@ -3,8 +3,7 @@
 
 max $0,0
 cal $0,163271 ; Numerators of fractions in a 'zero-transform' approximation of sqrt(2) by means of a(n) = (a(n-1) + c)/(a(n-1) + 1) with c=2 and a(1)=0.
-mul $0,36
+mov $1,4095
 mov $1,$0
-mov $1,$0
-div $1,72
+div $1,2
 add $1,1

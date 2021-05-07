@@ -4,10 +4,10 @@
 sub $0,1
 mul $0,2
 max $0,0
-mov $1,-1
-cal $0,288465 ; a(n) = 2*a(n-1) - a(n-4), where a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 10.
+cal $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
 mov $1,$0
-div $1,4
+mov $1,$0
+div $1,2
 mul $1,4
 add $1,1
 mov $2,$0

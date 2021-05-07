@@ -1,8 +1,10 @@
 ; A145362: Lower triangular array, called S1hat(-1), related to partition number array A145361.
 ; 1,1,1,0,1,1,0,1,1,1,0,0,1,1,1,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1
 
-cal $0,114114 ; An invertible partition matrix.
-lpb $0
-  mov $1,$0
-  sub $0,1
-lpe
+cal $0,30528 ; Triangle read by rows: a(n,k) = binomial(k,n-k).
+mov $2,$0
+cmp $2,0
+mov $3,$0
+add $3,$2
+div $0,$3
+mov $1,$0

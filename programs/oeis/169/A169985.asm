@@ -3,11 +3,6 @@
 
 max $0,0
 cal $0,324015 ; Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
-mul $0,2
-mov $1,51744
+clr $1,12
 mov $1,$0
-sub $1,4
-mov $1,$0
-div $1,2
 add $1,1
-mov $2,0

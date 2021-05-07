@@ -4,5 +4,5 @@
 pow $0,2
 sub $0,1
 max $0,0
-cal $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
+cal $0,5206 ; Hofstadter G-sequence: a(n) = n - a(a(n-1)).
 mov $1,$0

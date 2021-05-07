@@ -3,10 +3,14 @@
 
 lpb $0
   mov $2,$0
-  cal $2,85449 ; Horadam sequence (0,1,4,2).
-  sub $0,1
+  max $2,0
+  cal $2,103435 ; a(n) = 2^n * Fibonacci(n).
+  trn $0,1
   add $1,$2
   mul $1,2
+  add $3,$2
+  mov $4,$2
+  min $4,1
+  add $5,$4
 lpe
-div $1,2
-mul $1,4
+mov $3,$1
