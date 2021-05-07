@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
+  cal $2,26351 ; Floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
   sub $0,1
-  cal $2,4956 ; a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
   add $1,$2
 lpe
 add $1,1
