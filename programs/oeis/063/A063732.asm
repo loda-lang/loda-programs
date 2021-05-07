@@ -1,6 +1,8 @@
 ; A063732: Numbers n such that Lucas representation of n excludes L_0 = 2.
 ; 0,1,3,4,5,7,8,10,11,12,14,15,16,18,19,21,22,23,25,26,28,29,30,32,33,34,36,37,39,40,41,43,44,45,47,48,50,51,52,54,55,57,58,59,61,62,63,65,66,68,69,70,72,73,75,76,77,79,80,81,83,84,86,87,88,90
 
-cal $0,249115 ; Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231.
+mov $2,$0
+cal $0,286751 ; Positions of 1 in A286749; complement of A286750.
+add $0,$2
 mov $1,$0
-sub $1,1
+div $1,2

@@ -7,12 +7,9 @@ lpb $0
   cal $2,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
   trn $0,2
   add $1,$2
-  add $1,$2
+  add $3,$2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
-sub $2,$0
-mov $3,$2
-mov $3,$1
-div $1,2
+mov $3,$0

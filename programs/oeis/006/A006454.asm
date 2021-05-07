@@ -1,8 +1,14 @@
 ; A006454: Solution to a Diophantine equation: each term is a triangular number and each term + 1 is a square.
 ; 0,3,15,120,528,4095,17955,139128,609960,4726275,20720703,160554240,703893960,5454117903,23911673955,185279454480,812293020528,6294047334435,27594051024015,213812329916328,937385441796000,7263325169820735,31843510970040003
 
-cal $0,77447 ; Numbers n such that (n^2 - 14)/2 is a square.
-pow $0,2
+sub $3,$0
+max $0,0
+cal $0,77446 ; Numbers n such that 2*n^2 + 14 is a square.
 mov $1,$0
-div $1,48
+mov $0,5
+pow $1,2
+sub $1,1
+div $1,24
 mul $1,3
+mov $2,15
+mov $4,2

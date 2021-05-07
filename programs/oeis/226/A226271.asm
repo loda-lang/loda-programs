@@ -4,15 +4,14 @@
 lpb $0
   mov $2,$0
   max $2,0
-  cal $2,71679 ; Least k such that the maximum number of elements among the continued fractions for k/1, k/2, k/3, k/4 ...., k/k equals n.
-  add $3,$2
+  cal $2,20695 ; Pisot sequence E(2,3).
+  add $1,$2
+  sub $2,$2
   mov $4,$2
   min $4,1
+  mov $0,$4
   add $5,$4
-  clr $0,2
-  mul $2,$0
-  trn $0,9
 lpe
-mov $1,$4
-mov $1,$3
+mov $3,$5
+mov $3,$1
 add $1,1
