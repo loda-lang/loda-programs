@@ -3,17 +3,13 @@
 
 lpb $0
   mov $1,$0
-  sub $0,1
-  add $4,1
-  add $2,$4
-  add $3,2
-  add $5,1
-  mov $4,$5
-  trn $4,$3
-  trn $3,4
-  mul $4,2
-  add $1,$4
-  mov $6,2
-  add $6,$2
-  mov $5,$6
+  sub $0,$0
+  max $1,0
+  cal $1,14551 ; Jacobsthal-Lucas numbers.
+  mov $2,1
+  add $3,$1
+  mov $4,$1
+  min $4,1
+  add $5,$4
 lpe
+mov $2,$1

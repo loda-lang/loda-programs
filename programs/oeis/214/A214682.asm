@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,105931 ; a(1) = 1 then a(n) = a(n-1) - (-1)^ceiling(n/2)*a(floor(n/2)).
+  cal $2,56832 ; All a(n) = 1 or 2; a(1) = 1; get next 2^k terms by repeating first 2^k terms and changing last element so sum of first 2^(k+1) terms is odd.
   div $0,$2
 lpe
 mov $1,$0

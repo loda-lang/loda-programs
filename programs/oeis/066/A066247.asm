@@ -3,7 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,5171 ; 0 if n is prime else 1.
-  mov $0,2
+  cal $2,14684 ; In the sequence of positive integers subtract 1 from each prime number.
   add $1,$2
+  sub $1,$0
+  mod $0,2
 lpe

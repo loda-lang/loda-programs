@@ -1,8 +1,9 @@
 ; A339051: Even bisection of the infinite Fibonacci word A096270.
 ; 0,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0
 
+sub $0,1
 mul $0,2
-lpb $0
-  cal $0,114986 ; Characteristic function of (A000201 prefixed with 0).
-lpe
+max $0,0
+cal $0,59426 ; First differences of A026273.
 mov $1,$0
+sub $1,1

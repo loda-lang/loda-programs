@@ -3,15 +3,14 @@
 
 lpb $0
   mov $2,$0
-  mov $2,$0
+  sub $0,1
   max $2,0
   cal $2,62724 ; a(n) = floor(tau^n) + 1, where tau = (1 + sqrt(5))/2.
-  sub $0,1
   add $1,$2
   mov $4,$2
+  sub $2,2
   min $4,1
   add $5,$4
 lpe
-mov $3,$4
 mov $3,$1
 add $1,1

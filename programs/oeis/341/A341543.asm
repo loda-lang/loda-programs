@@ -3,14 +3,19 @@
 
 add $0,1
 max $0,0
-mov $1,2
-mov $2,11
-mov $3,116179
-cal $0,281237 ; Solutions x to the negative Pell equation y^2 = 72*x^2 - 73728 with x,y >= 0.
 mov $1,1
+mov $2,1
+cal $0,3499 ; a(n) = 6*a(n-1) - a(n-2), with a(0) = 2, a(1) = 6.
+add $0,2
+mov $1,2
+mul $1,$0
+sub $0,1
+add $1,17
 mov $1,$0
-sub $1,96
-div $1,64
+sub $1,7
+div $1,4
 mul $1,4
 add $1,8
-mov $3,116181
+mov $2,39
+mov $3,37
+mov $4,39

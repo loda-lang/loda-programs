@@ -3,13 +3,13 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   max $2,0
-  mov $3,7
   cal $2,131711 ; Period 12: repeat 0, 1, 2, 5, 2, 9, 0, 9, 8, 5, 8, 1.
-  add $1,$2
+  sub $0,1
+  add $3,$2
   mov $4,$2
   min $4,1
   add $5,$4
 lpe
-mov $3,$1
+clr $1,2
+mov $1,$3

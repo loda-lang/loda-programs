@@ -3,15 +3,14 @@
 
 lpb $0
   mov $1,$0
+  sub $0,$0
   max $1,0
   cal $1,84634 ; Binomial transform of 1,1,1,2,2,2,2,...
-  sub $0,$0
+  mov $2,2
   add $3,$1
-  div $3,2
   mov $4,$1
   min $4,1
   add $5,$4
 lpe
-mov $2,$5
 mov $2,$1
 add $1,1

@@ -3,8 +3,7 @@
 
 max $0,0
 cal $0,3499 ; a(n) = 6*a(n-1) - a(n-2), with a(0) = 2, a(1) = 6.
-mul $0,3
-mov $1,$0
-mov $1,$0
+add $1,$0
 div $1,2
-mov $2,2
+mul $1,3
+mov $2,$0

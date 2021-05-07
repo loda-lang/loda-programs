@@ -4,8 +4,6 @@
 lpb $0
   sub $0,1
   max $0,0
-  cal $0,73093 ; Number of prime power divisors of n.
-  sub $0,1
-  add $1,3
+  cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+  add $1,1
 lpe
-div $1,3

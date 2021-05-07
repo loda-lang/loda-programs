@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,8253 ; Coordination sequence for diamond.
+  mul $2,$0
+  cal $2,330002 ; Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
   sub $0,1
   add $1,$2
 lpe
-div $1,2
 mul $1,2
 add $1,1

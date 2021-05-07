@@ -3,17 +3,14 @@
 
 lpb $0
   mov $1,$0
+  cmp $0,0
   max $1,0
   cal $1,170931 ; Extended Lucas L(n,i) = n*(L(n,i-1) + L(n,i-2)) = a^i + b^i where d = sqrt(n*(n+4)); a=(n+d)/2; b=(n-d)/2.
   add $3,$1
-  mov $3,$1
   mov $4,$1
   min $4,1
+  add $2,$4
   add $5,$4
-  mov $6,$1
-  cmp $6,0
-  add $1,$6
-  div $0,$1
 lpe
 mov $2,$1
 div $1,4

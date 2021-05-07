@@ -21,7 +21,5 @@ lpb $0
 lpe
 div $1,2
 trn $1,$0
-sub $1,$5
-add $1,$5
 mul $1,4
 add $1,209

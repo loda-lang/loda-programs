@@ -1,15 +1,14 @@
 ; A115598: Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives Z-(X+1) values.
 ; 1,8,49,288,1681,9800,57121,332928,1940449,11309768,65918161,384199200,2239277041,13051463048,76069501249,443365544448,2584123765441,15061377048200,87784138523761,511643454094368,2982076586042449,17380816062160328
 
-add $0,1
 max $0,0
-mov $1,2
-mov $2,11
-mov $3,116179
-cal $0,281237 ; Solutions x to the negative Pell equation y^2 = 72*x^2 - 73728 with x,y >= 0.
+mov $2,1
+cal $0,98212 ; Expansion of (5-x^2)/((1+x)*(1-6*x+x^2)).
 mov $1,1
+add $2,$0
+add $2,$0
+mov $0,$2
+div $0,6
+mov $1,2
+mov $1,$2
 mov $1,$0
-sub $1,96
-div $1,64
-add $1,1
-mov $3,116181
