@@ -3,11 +3,7 @@
 
 max $0,0
 cal $0,1891 ; Hit polynomials; convolution of natural numbers with Fibonacci numbers F(2), F(3), F(4),....
-mov $2,$0
-mul $2,3
-mov $1,$2
 mov $1,$0
 mul $1,5
 add $1,1
-mov $3,$0
-add $4,$0
+add $2,$0

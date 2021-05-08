@@ -3,10 +3,12 @@
 
 lpb $0
   mov $2,$0
-  cal $2,238303 ; Triangle T(n,k), 0<=k<=n, read by rows given by T(n,0) = 1, T(n,k) = 2 if k>0.
-  add $3,$2
-  mov $0,$3
+  cal $2,206735 ; Triangle T(n,k), read by rows, given by (0, 2, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (1, 0, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
+  sub $0,$0
+  mov $1,1
+  mov $3,$2
+  min $3,1
+  add $1,$3
 lpe
-mov $1,$0
 mul $1,3
 add $1,1

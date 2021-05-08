@@ -4,7 +4,4 @@
 mov $1,-4
 pow $1,$0
 dif $1,2
-mov $2,4
 mov $2,$1
-mov $3,1
-mov $3,$0

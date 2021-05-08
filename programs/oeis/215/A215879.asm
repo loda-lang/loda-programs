@@ -3,12 +3,8 @@
 
 mov $2,$0
 lpb $0
-  mod $0,3
-  lpb $0
-    div $0,5
-    add $1,6
-    div $2,3
-  lpe
-  mov $0,$2
+  gcd $0,3
+  add $1,1
+  div $2,3
+  mul $0,$2
 lpe
-div $1,6

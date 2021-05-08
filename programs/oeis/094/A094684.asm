@@ -3,15 +3,6 @@
 
 mul $0,2
 sub $0,1
-mov $3,$0
-pow $0,3
-mod $3,2
-lpb $0
-  add $0,$4
-  sub $0,1
-  add $1,17
-  add $3,2
-  mov $4,$2
-  sub $4,$3
-lpe
-div $1,17
+max $0,0
+cal $0,93 ; a(n) = floor(n^(3/2)).
+mov $1,$0

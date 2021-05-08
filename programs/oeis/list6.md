@@ -1396,7 +1396,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329404](http://oeis.org/A329404) ([L16 program](329/A329404.asm)): Interleave 2*n*(3*n-1), (2*n+1)*(6*n+1) for n >= 0.
 * [A329482](http://oeis.org/A329482) ([L16 program](329/A329482.asm)): Interleave 1 - n + 3*n^2, 1 + 3*n*(1+n) for n >= 0.
 * [A329486](http://oeis.org/A329486) ([L12 program](329/A329486.asm)): a(n) = 3*A006519(n)/2 + n/2 where A006519(n) is the highest power of 2 dividing n.
-* [A329494](http://oeis.org/A329494) ([L11 program](329/A329494.asm)): Numerator of 2*(2*n+1)/(n+2).
+* [A329494](http://oeis.org/A329494) ([L08 program](329/A329494.asm)): Numerator of 2*(2*n+1)/(n+2).
 * [A329502](http://oeis.org/A329502) ([L05 program](329/A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
 * [A329503](http://oeis.org/A329503) ([L07 program](329/A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
 * [A329505](http://oeis.org/A329505) ([L08 program](329/A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
@@ -1405,7 +1405,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329509](http://oeis.org/A329509) ([L11 program](329/A329509.asm)): Expansion of (1 + x)*(1 + x + x^2 - x^3) / (1 - x).
 * [A329510](http://oeis.org/A329510) ([L41 program](329/A329510.asm)): Expansion of (1 + x)*(1 + x + x^2)*(1 + x^2 - x^3) / (1 - x).
 * [A329513](http://oeis.org/A329513) ([L09 program](329/A329513.asm)): G.f. = (1+x)^2*(1+2*x^2-x^3)/(1-x).
-* [A329516](http://oeis.org/A329516) ([L13 program](329/A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
+* [A329516](http://oeis.org/A329516) ([L08 program](329/A329516.asm)): G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
 * [A329523](http://oeis.org/A329523) ([L05 program](329/A329523.asm)): a(n) = n * (binomial(n + 1, 3) + 1).
 * [A329530](http://oeis.org/A329530) ([L38 program](329/A329530.asm)): a(n) = n * (7*binomial(n, 2) + 1).
 * [A329533](http://oeis.org/A329533) ([L43 program](329/A329533.asm)): First differences of A051924, or second differences of Central binomial coefficients A000984.
@@ -1747,7 +1747,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337483](http://oeis.org/A337483) ([L04 program](337/A337483.asm)): Number of ordered triples of positive integers summing to n that are either weakly increasing or weakly decreasing.
 * [A337484](http://oeis.org/A337484) ([L11 program](337/A337484.asm)): Number of ordered triples of positive integers summing to n that are neither strictly increasing nor strictly decreasing.
 * [A337509](http://oeis.org/A337509) ([L03 program](337/A337509.asm)): Number of partitions of n into two distinct parts (s,t), such that (t-s) | n, and where n/(t-s) <= s < t.
-* [A337519](http://oeis.org/A337519) ([L16 program](337/A337519.asm)): Length of the shortest walk in a n X n grid graph that starts in one corner and visits every edge.
+* [A337519](http://oeis.org/A337519) ([L08 program](337/A337519.asm)): Length of the shortest walk in a n X n grid graph that starts in one corner and visits every edge.
 * [A337524](http://oeis.org/A337524) ([L04 program](337/A337524.asm)): a(n) = d(n) * (d(n) - 1), where d is the number of divisors of n (A000005).
 * [A337549](http://oeis.org/A337549) ([L04 program](337/A337549.asm)): a(n) = A003972(n) - n.
 * [A337566](http://oeis.org/A337566) ([L03 program](337/A337566.asm)): a(n) is the number of possible decompositions of the polynomial n * (x + x^2 + ... + x^q), where q>1, into a sum of k polynomials, not necessarily all different; each of these polynomials is to be of the form b_1 * x + b_2 * x^2 + ... + b_q * x^q where each b_i is one of the numbers 1, 2, 3, ..., q and no two b_i are equal.
@@ -1931,7 +1931,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A342710](http://oeis.org/A342710) ([L06 program](342/A342710.asm)): Solutions x to the Pell-Fermat equation x^2 - 5*y^2 = 4.
 * [A342711](http://oeis.org/A342711) ([L07 program](342/A342711.asm)): Partial sums of A000267.
 * [A342712](http://oeis.org/A342712) ([L07 program](342/A342712.asm)): Partial sums of A248333.
-* [A342737](http://oeis.org/A342737) ([L13 program](342/A342737.asm)): Number of wedged n-spheres in the homotopy type of the neighborhood complex of Kneser graph KG_{3,n}.
+* [A342737](http://oeis.org/A342737) ([L10 program](342/A342737.asm)): Number of wedged n-spheres in the homotopy type of the neighborhood complex of Kneser graph KG_{3,n}.
 * [A342761](http://oeis.org/A342761) ([L33 program](342/A342761.asm)): Fold a square sheet of paper alternately vertically to the left and horizontally downwards; after each fold, draw a line along each inward crease; after n folds, the resulting graph has a(n) edges.
 * [A342768](http://oeis.org/A342768) ([L09 program](342/A342768.asm)): a(n) = A342767(n, n).
 * [A342851](http://oeis.org/A342851) ([L04 program](342/A342851.asm)): Remove duplicates in the decimal digit-reversal of n.
@@ -1954,5 +1954,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A343785](http://oeis.org/A343785) ([L09 program](343/A343785.asm)): a(n) is completely multiplicative with a(p^e) = (-1)^e if p == 2 (mod 3) and a(p^e) = 1 otherwise.
 * [A343794](http://oeis.org/A343794) ([L06 program](343/A343794.asm)): Numbers k such that 630*k + 315 is not an abundant number (A005101).
 * [A343808](http://oeis.org/A343808) ([L14 program](343/A343808.asm)): Partial sums of A062074.
-* [A343859](http://oeis.org/A343859) ([L03 program](343/A343859.asm)): Partial sums of the primes excluding 3.
+* [A343859](http://oeis.org/A343859) ([L04 program](343/A343859.asm)): Partial sums of the primes excluding 3.
 * [A343877](http://oeis.org/A343877) ([L04 program](343/A343877.asm)): Number of pairs (d1, d2) of divisors of n such that d1<d2, d1|n, d2|n, and d1 + d2 <= n.

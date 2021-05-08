@@ -3,9 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,989 ; 3-adic valuation of binomial(2*n, n): largest k such that 3^k divides binomial(2*n, n).
   sub $0,1
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  cal $2,189820 ; a(3*k-2) = a(k), a(3*k-1) = a(k), a(3*k) = 1 for k >= 1, starting with a(1) = 0.
+  add $1,$2
 lpe

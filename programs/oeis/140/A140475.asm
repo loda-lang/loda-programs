@@ -3,7 +3,5 @@
 
 add $0,1
 cal $0,40 ; The prime numbers.
-lpb $0
-  dif $0,3
-lpe
+dif $0,3
 mov $1,$0
