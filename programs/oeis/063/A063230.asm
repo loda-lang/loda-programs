@@ -1,32 +1,7 @@
 ; A063230: Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 71 ).
 ; 6,17,29,41,53,63,77,87,99,111,123,133,147,157,169,181,193,203,217,227,239,251,263,273,287,297,309,321,333,343,357,367,379,391,403,413,427,437,449,461,473,483,497,507,519,531,543,553,567,577
 
-mov $1,2
-mov $4,1
-mov $5,$0
-mov $6,$0
-add $0,1
-lpb $0
-  sub $5,$4
-  add $5,$1
-  add $1,$0
-  mov $0,0
-  add $1,$5
-  add $1,3
-  div $1,6
-  add $2,20
-  mov $4,2
-  mul $4,$1
-  mov $7,$5
-  mod $7,2
-  add $7,$4
-  add $0,$7
-  sub $0,1
-  mov $1,$2
-  mov $4,9
-lpe
+mul $0,7
+cal $0,63199 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 11 ).
 mov $1,$0
 add $1,5
-mov $3,$6
-mul $3,11
-add $1,$3

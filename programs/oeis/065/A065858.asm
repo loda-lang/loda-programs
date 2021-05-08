@@ -3,11 +3,12 @@
 
 max $0,0
 cal $0,40 ; The prime numbers.
-sub $0,1
-max $0,0
-mov $2,2
-cal $0,72668 ; Numbers one less than composite numbers.
-sub $0,2
-mov $1,2
 mov $1,$0
-add $1,3
+mov $3,$0
+add $0,1
+max $0,0
+mov $1,-4
+mov $2,$3
+mov $4,$3
+cal $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+mov $1,$0

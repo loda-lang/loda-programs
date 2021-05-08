@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,8742 ; Molien series for 3-dimensional group [3,3 ]+ = 332.
-  sub $0,1
+  cal $2,36410 ; G.f.: (1+x^6)/((1-x)*(1-x^3)*(1-x^4)).
+  sub $0,2
   add $1,$2
 lpe
 add $1,1
