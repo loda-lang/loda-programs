@@ -1,31 +1,12 @@
 ; A171438: a(n) = 0+1+2+...+n in lunar arithmetic in base 3 written in base 10.
 ; 0,1,2,5,5,5,8,8,8,17,17,17,17,17,17,17,17,17,26,26,26,26,26,26,26,26,26,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,53,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80
 
-mov $20,$0
-add $20,1
-lpb $20
-  clr $0,18
-  sub $20,1
-  sub $0,$20
-  mov $11,$0
-  mov $0,1
-  lpb $0
-    mov $0,$11
-    gcd $0,81
-    add $2,$11
-    mul $2,2
-    mov $3,$0
-    mov $0,$11
-    mul $3,4
-    lpb $2
-      div $0,$3
-      mov $2,$3
-      div $2,3
-      mov $7,$3
-    lpe
-  lpe
-  mov $1,$7
-  div $1,4
-  add $19,$1
+lpb $0
+  mov $2,$0
+  cal $2,64235 ; The smallest power of 3 that is greater than or equal to n.
+  add $0,$2
+  div $0,5
+  add $1,$2
 lpe
-mov $1,$19
+mul $1,16377
+div $1,49131
