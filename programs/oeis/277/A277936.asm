@@ -3,7 +3,6 @@
 
 mov $1,$0
 pow $0,2
-sub $0,$0
 add $1,1
 mov $2,$1
 trn $1,2

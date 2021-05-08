@@ -3,8 +3,4 @@
 
 cal $0,72668 ; Numbers one less than composite numbers.
 cal $0,4125 ; Sum of remainders of n mod k, for k = 1, 2, 3, ..., n.
-mul $0,560
 mov $1,$0
-sub $1,560
-div $1,560
-add $1,1
