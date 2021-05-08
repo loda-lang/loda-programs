@@ -4,5 +4,7 @@
 mov $2,$0
 add $2,1
 mov $1,$2
-cal $0,134393 ; Row sums of triangle A134392.
-gcd $1,$0
+sub $2,2
+bin $2,2
+gcd $2,$1
+div $1,$2

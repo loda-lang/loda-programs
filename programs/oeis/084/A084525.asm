@@ -10,8 +10,6 @@ lpb $0
   add $1,$3
   trn $4,5
   add $1,$4
-  add $1,$3
-  sub $1,$3
   mul $3,2
   sub $3,3
   add $1,$3

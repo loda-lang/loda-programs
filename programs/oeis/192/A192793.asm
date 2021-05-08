@@ -3,7 +3,5 @@
 
 cal $0,201812 ; Number of arrays of 4 integers in -n..n with sum zero and equal numbers of elements greater than zero and less than zero.
 mov $1,$0
-sub $1,19
 div $1,6
 mul $1,36
-add $1,108

@@ -3,6 +3,4 @@
 
 mul $0,2
 cal $0,8413 ; Coordination sequence for 5-dimensional cubic lattice.
-add $$1,2
 mov $1,$0
-sub $1,2

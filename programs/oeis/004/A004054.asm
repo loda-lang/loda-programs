@@ -3,12 +3,9 @@
 
 max $0,0
 cal $0,133510 ; Number of primitive H-invariant prime ideals in O_q(M_{2,n}) generic quantum matrices.
-mov $1,$0
+mul $0,2
 mov $1,$0
 sub $1,2
-div $1,3
+div $1,6
 mul $1,2
 add $1,1
-mov $2,0
-mov $3,4
-mov $4,0
