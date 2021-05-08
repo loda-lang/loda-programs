@@ -3,20 +3,9 @@
 
 mov $2,$0
 mov $3,$0
-mul $0,2
 lpb $2
-  lpb $3
-    add $0,2
-    sub $2,2
-    trn $3,$0
-  lpe
+  mov $2,1
+  add $3,1
+  dif $3,3
 lpe
-sub $1,$0
-lpb $0
-  mod $0,3
-lpe
-lpb $0
-  div $0,3
-  mul $1,3
-lpe
-div $1,6
+sub $1,$3
