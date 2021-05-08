@@ -44,7 +44,6 @@ The following programs include some classical examples of integer sequences and 
 * [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
 * [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
 * [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm)
-* [Number of primes <= n, starting at n=0 (A230980)](programs/oeis/230/A230980.asm)
 * [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. In contrast to the other programs, this one was written by hand.
 
 In total, there are currently :star: **more than 26,000 programs available** :star:! You can find lists with descriptions and links here:
