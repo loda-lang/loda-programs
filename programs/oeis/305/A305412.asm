@@ -3,6 +3,7 @@
 
 lpb $0
   mov $2,$0
+  sub $0,1
   max $2,0
   cal $2,59727 ; a(n) = Fibonacci(n)*(Fibonacci(n) + 1).
   sub $0,1

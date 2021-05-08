@@ -3,7 +3,7 @@
 
 max $0,0
 cal $0,14236 ; Expansion of g.f.: 2*x*(1-x)/((1-2*x)*(1-2*x^2)).
-mov $1,$0
+mov $1,1
 mov $1,$0
 div $1,2
 mov $2,$0

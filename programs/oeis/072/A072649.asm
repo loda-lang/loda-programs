@@ -3,8 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,192687 ; Male-female differences: a(n) = A005378(n) - A005379(n).
-  sub $0,1
-  add $1,$2
+  cal $2,95791 ; Number of digits in lazy-Fibonacci-binary representation of n.
+  mov $1,$2
+  cmp $3,0
+  add $4,$3
+  mod $0,$4
 lpe
 add $1,1
