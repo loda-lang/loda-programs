@@ -1,39 +1,11 @@
 ; A080566: Partial sums of A079000.
 ; 1,5,11,18,26,35,46,59,74,90,107,125,144,164,185,208,233,260,289,320,353,387,422,458,495,533,572,612,653,695,738,782,827,874,923,974,1027,1082,1139,1198,1259,1322,1387,1454,1523,1593,1664,1736,1809,1883,1958
 
-mov $10,$0
-mov $12,$0
-add $12,1
-lpb $12
-  clr $0,10
-  mov $0,$10
-  sub $12,1
-  sub $0,$12
-  mov $7,$0
-  mov $9,$0
-  add $9,1
-  lpb $9
-    mov $0,$7
-    sub $9,1
-    sub $0,$9
-    mul $0,4
-    mov $3,1
-    lpb $0
-      sub $0,1
-      div $0,2
-      mov $3,$0
-      sub $0,6
-    lpe
-    add $0,1
-    mov $4,1
-    trn $4,$0
-    div $0,$3
-    add $4,$0
-    div $4,2
-    mov $1,$4
-    add $1,1
-    add $8,$1
-  lpe
-  add $11,$8
+trn $1,$0
+lpb $0
+  mov $2,$0
+  cal $2,79000 ; a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) is odd".
+  sub $0,1
+  add $1,$2
 lpe
-mov $1,$11
+add $1,1

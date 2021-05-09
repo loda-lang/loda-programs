@@ -5,12 +5,10 @@ mov $3,140
 add $3,$0
 add $0,1
 max $0,0
-cal $0,215928 ; a(n) = 2*a(n-1) + a(n-2) for n > 2, a(0) = a(1) = 1, a(2) = 2.
-clr $1,$0
-bin $1,9
+cal $0,163271 ; Numerators of fractions in a 'zero-transform' approximation of sqrt(2) by means of a(n) = (a(n-1) + c)/(a(n-1) + 1) with c=2 and a(1)=0.
 mov $1,$0
-mov $1,$0
+mul $1,52
+trn $0,$1
+max $1,$0
+div $1,104
 add $1,1
-mov $3,1
-pow $3,2
-mov $4,1

@@ -1,22 +1,10 @@
 ; A037825: Number of i such that d(i)>d(i-1), where Sum{d(i)*10^i: i=0,1,....,m} is base 10 representation of n.
 ; 0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1
 
-mov $2,$0
-add $2,7
-mov $5,11
-mov $6,$2
-lpb $2
-  mov $3,$5
-  lpb $6
-    add $1,$4
-    trn $1,$2
-    add $3,5
-    trn $2,$3
-    mov $4,3
-    add $6,1
-    trn $6,$3
-    mov $3,6
-  lpe
-  sub $1,1
+lpb $0
+  mov $2,$0
+  cal $2,37878 ; (1/2)*Sum{|d(i)-e(i)|}, where Sum{d(i)*10^i} is base 10 representation of n and e(i) are digits d(i) in nonincreasing order, for i=0,1,...,m.
+  mov $0,1
+  mov $1,$2
 lpe
-trn $1,1
+min $1,1
