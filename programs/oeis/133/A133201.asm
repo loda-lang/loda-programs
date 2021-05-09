@@ -1,23 +1,19 @@
 ; A133201: A133195/3.
 ; 0,1,2,3,13,23,33,133,233,333,1333,2333,3333,13333,23333,33333,133333,233333,333333,1333333,2333333,3333333,13333333,23333333,33333333,133333333,233333333,333333333,1333333333,2333333333,3333333333
 
-mul $0,3
-mov $1,$0
-max $0,0
-cal $0,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
+mov $1,3
+mov $3,1
+mov $5,$0
+sub $0,1
+mul $1,$5
+max $1,0
+mov $2,$5
+add $2,1
+add $3,$0
+mov $4,3
+sub $5,1
+cmp $5,1
+cal $1,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
+mov $2,$1
 sub $1,1
-div $1,6
-mov $2,58
-mov $3,$0
-add $0,2
-mov $0,$3
-add $0,3
-mov $2,59
-add $3,$1
-mov $1,$0
-sub $1,4
 div $1,3
-mov $3,0
-mov $3,$0
-trn $3,59
-mov $4,1

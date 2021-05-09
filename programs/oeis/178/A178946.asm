@@ -3,8 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,174114 ; Even central polygonal numbers (A193868) divided by 2.
   sub $0,1
+  cal $2,14493 ; Odd triangular numbers.
   add $1,$2
+  add $1,1
 lpe
+div $1,2
 add $1,1

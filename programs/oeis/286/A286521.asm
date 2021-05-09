@@ -5,7 +5,6 @@ mov $1,2
 pow $1,$0
 cmp $0,2
 sub $1,$0
-mov $2,$1
 sub $1,1
 mul $1,2
 add $1,1
