@@ -8,9 +8,9 @@ mov $4,$0
 lpb $3
   mov $5,$4
   lpb $5
-    add $1,1
     mov $6,$0
     div $0,$2
+    add $1,1
     mod $6,$2
     cmp $6,0
     sub $5,$6

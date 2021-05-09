@@ -4,6 +4,5 @@
 mul $0,2
 cal $0,276880 ; Sums-complement of the Beatty sequence for 1 + sqrt(3).
 mov $1,$0
-mul $1,2
-div $1,4
+div $1,2
 add $1,1

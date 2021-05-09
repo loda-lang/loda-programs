@@ -9,16 +9,19 @@ lpb $3
   mov $5,$4
   lpb $5
     lpb $0
+      mov $3,1
       mov $6,$0
       div $0,$2
       mod $6,$2
       cmp $6,0
       sub $5,$6
     lpe
-    mov $1,$2
+    mov $6,$2
   lpe
+  mov $1,$6
   add $2,1
-  cmp $6,5
+  mov $6,$0
+  cmp $6,1
   cmp $6,0
   sub $3,$6
 lpe

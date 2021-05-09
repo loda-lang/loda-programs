@@ -8,20 +8,15 @@ lpb $6
   mov $0,$4
   sub $6,1
   add $0,$6
-  trn $0,1
+  sub $0,1
   max $0,0
-  mov $3,81603
   cal $0,71538 ; Number of twin prime pairs (p, p+2) with p <= n.
   mov $3,$0
   mul $3,$0
   add $0,$3
   add $2,$0
-  trn $0,2
-  pow $3,2
-  mov $1,$3
   mov $1,$2
   mov $7,$6
-  cmp $7,1
   mul $7,$2
   add $5,$7
 lpe

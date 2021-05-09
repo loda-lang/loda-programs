@@ -3,43 +3,19 @@
 
 add $0,1
 mov $2,$0
-mov $8,$0
-pow $0,2
 lpb $0
-  max $0,1
   mov $3,$2
-  add $8,1
-  mov $26,$0
-  cmp $26,0
-  add $0,$26
+  mov $4,$0
+  cmp $4,0
+  add $0,$4
   dif $3,$0
   cmp $3,$2
   cmp $3,0
   mul $3,$0
-  add $4,$3
-  mov $5,1
-  mov $7,$3
-  sub $8,$0
   sub $0,1
-  min $8,73357
-  mov $10,$2
-  mov $11,$10
-  mov $14,$7
-  sub $7,$0
   lpb $3
-    clr $5,$4
     add $1,$3
-    mod $3,4
-    mov $11,$10
+    mov $3,3
   lpe
-  mov $26,$14
-  cmp $26,0
-  add $14,$26
-  div $7,$14
-  mov $9,$3
-  dif $3,2
 lpe
-clr $0,1
 add $1,1
-add $9,4
-mov $11,8
