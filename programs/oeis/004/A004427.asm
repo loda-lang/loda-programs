@@ -9,7 +9,7 @@ cal $0,55642 ; Number of digits in decimal expansion of n.
 mov $2,$1
 mod $2,$0 ; Now $2 holds A007953(n) mod A055642(n)
 cmp $2,0
-cmp $2,0 ; If the remanider is greater than 0, then round up by 1.
+cmp $2,0 ; If the remainder is greater than 0, then round up by 1.
 
 div $1,$0
 add $1,$2  ; Perform ceil
