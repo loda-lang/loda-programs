@@ -1,23 +1,7 @@
 ; A099056: A bisection of A054519.
 ; 2,6,11,17,24,30,38,46,53,61,71,77,88,96,104,114,124,132,143,151,161,171,183,189,202,212,220,232,244,250,264,274,285,295,305,315,329,339,349,359,374,380,396,404,414,430,440,448,462,474,485,495,511,517,531
 
-mov $3,2
-mov $5,$0
 mul $0,2
-mov $2,$0
-lpb $2
-  add $4,$2
-  trn $1,$4
-  lpb $4
-    add $1,$0
-    trn $4,$3
-  lpe
-  mov $0,1
-  sub $2,1
-  add $3,1
-lpe
-lpb $5
-  add $1,2
-  sub $5,1
-lpe
+cal $0,77597 ; Coefficient of x in the n-th Moebius polynomial (A074586), M(n,x), which satisfies M(n,-1)=mu(n) the Moebius function of n.
+mov $1,$0
 add $1,2

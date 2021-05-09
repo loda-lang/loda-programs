@@ -1,30 +1,24 @@
 ; A341642: Number of strictly superior prime divisors of n.
 ; 0,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,0,1,0,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,1,0,1,1,0,0,1,1,1,1,1,0,1,0,1,1,0,1,1,1,1,0,0,1,1,0,1,1,1
 
-mov $1,$0
 mov $2,$0
 mov $3,1
 add $3,$0
-lpb $2
-  mov $0,$3
-  lpb $1
-    mov $3,$1
-    gcd $3,$0
-    sub $1,$3
-    mov $4,$3
-  lpe
-  mov $1,2
-  pow $4,2
-  sub $4,1
-  mov $5,1
-  lpb $5
+mov $4,$0
+lpb $3
+  lpb $2
+    mov $0,$3
+    lpb $4
+      mov $3,$4
+      gcd $3,$0
+      sub $4,$3
+    lpe
+    lpb $2
+      div $2,2
+      mov $5,4
+    lpe
     mov $1,$5
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
-    div $4,$2
-    trn $5,$4
+    pow $3,2
   lpe
-  mov $2,0
 lpe
-div $1,2
+div $1,4
