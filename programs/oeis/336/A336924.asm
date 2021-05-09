@@ -3,8 +3,4 @@
 
 cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 cal $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
-mul $0,2
 mov $1,$0
-sub $1,4
-div $1,2
-add $1,2

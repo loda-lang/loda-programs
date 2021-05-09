@@ -1,16 +1,21 @@
 ; A259290: Number of (n+1) X (1+1) 0..1 arrays with each 2 X 2 subblock having clockwise pattern 0001 0101 or 0111.
 ; 10,26,66,170,434,1114,2850,7306,18706,47930,122754,314474,805490,2063386,5285346,13538890,34680274,88835834,227556930,582900266,1493127986,3824729050,9797240994,25096157194,64285121170,164669749946,421810234626,1080489234410,2767730172914,7089687110554,18160607802210,46519356244426,119161787453266,305239212430970,781886362244034,2002843211967914,5130388660944050
 
-add $0,1
+add $0,2
 max $0,0
-mov $1,1
-cal $0,185761 ; Number of (n+1) X 2 binary arrays with no 2 X 2 subblock trace equal to any horizontal or vertical neighbor 2 X 2 subblock trace.
-sub $0,2
-mov $1,5
+max $0,0
+mov $2,15
+cal $0,204707 ; Number of (n+1) X 3 0..1 arrays with the permanents of all 2 X 2 subblocks equal and nonzero.
+add $0,3
 mov $1,$0
-sub $1,14
-div $1,8
+mov $1,$0
+sub $1,36
+div $1,16
 mul $1,4
 add $1,8
 div $1,4
 mul $1,2
+mul $2,$0
+cmp $2,13
+div $2,240
+mov $3,0

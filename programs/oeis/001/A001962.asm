@@ -3,6 +3,7 @@
 
 add $0,1
 mul $0,2
-cal $0,7066 ; a(n) = 1 + ceiling((n-1)*phi^2), phi = (1+sqrt(5))/2.
+cal $0,288713 ; Positions of 1 in A288711; complement of A288712.
 mov $1,$0
-sub $1,2
+div $1,2
+sub $1,1

@@ -1,31 +1,7 @@
 ; A127775: Triangle read by rows: row n consists of n-1 zeros followed by 2n-1.
 ; 1,0,3,0,0,5,0,0,0,7,0,0,0,0,9,0,0,0,0,0,11,0,0,0,0,0,0,13,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0,0,17,0,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0
 
-mov $3,2
-mov $6,$0
-lpb $3
-  mov $0,$6
-  sub $3,1
-  add $0,$3
-  sub $0,1
-  trn $0,1
-  mov $5,1
-  mov $7,1
-  lpb $0
-    sub $0,1
-    add $7,1
-    trn $0,$7
-    mov $5,$7
-    pow $5,2
-  lpe
-  mov $2,$3
-  mov $4,$5
-  lpb $2
-    mov $1,$4
-    sub $2,1
-  lpe
-lpe
-lpb $6
-  sub $1,$4
-  mov $6,0
-lpe
+cal $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
+mul $0,2
+trn $0,1
+mov $1,$0

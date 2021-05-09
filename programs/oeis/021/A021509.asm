@@ -3,13 +3,8 @@
 
 lpb $0
   mov $1,$0
-  trn $$4,4
+  cal $1,329404 ; Interleave 2*n*(3*n-1), (2*n+1)*(6*n+1) for n >= 0.
+  sub $1,$0
+  trn $0,4
 lpe
-add $5,$$1
-add $2,4
-mov $$1,1
-add $1,$2
-add $5,$0
-mov $$2,$2
-add $$3,2
-sub $$5,$1
+div $1,2

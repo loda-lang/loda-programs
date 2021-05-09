@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   cal $2,188037 ; a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
-  mov $0,1
+  sub $0,$0
+  mov $1,$2
+  cmp $1,0
 lpe
-sub $0,$2
-mov $1,$0

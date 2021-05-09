@@ -1,18 +1,10 @@
 ; A190949: Odd Fibonacci numbers with odd index.
 ; 1,5,13,89,233,1597,4181,28657,75025,514229,1346269,9227465,24157817,165580141,433494437,2971215073,7778742049,53316291173,139583862445,956722026041,2504730781961,17167680177565,44945570212853,308061521170129,806515533049393,5527939700884757
 
-lpb $0
-  mov $2,$0
-  sub $0,$0
-  max $2,0
-  cal $2,77259 ; First member of the Diophantine pair (m,k) that satisfies 5*(m^2 + m) = k^2 + k; a(n) = m.
-  add $1,$2
-  mov $4,$2
-  div $2,2
-  min $4,1
-  add $5,$4
-lpe
-mov $3,$1
+max $0,0
+mov $2,2
+cal $0,77259 ; First member of the Diophantine pair (m,k) that satisfies 5*(m^2 + m) = k^2 + k; a(n) = m.
+mov $1,$0
 div $1,2
 mul $1,4
 add $1,1
