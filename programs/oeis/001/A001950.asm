@@ -4,6 +4,5 @@
 add $0,1
 cal $0,288713 ; Positions of 1 in A288711; complement of A288712.
 mov $1,$0
-sub $1,7
 div $1,2
-add $1,2
+sub $1,1

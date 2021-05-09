@@ -4,5 +4,4 @@
 max $0,0
 cal $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
 pow $0,2
-mov $1,12347247
 mov $1,$0

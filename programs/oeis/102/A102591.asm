@@ -1,14 +1,9 @@
 ; A102591: a(n)=sum k=0..n, C(2n+1,2k)3^(n-k).
 ; 1,6,44,328,2448,18272,136384,1017984,7598336,56714752,423324672,3159738368,23584608256,176037912576,1313964867584,9807567290368,73204678852608,546407161659392,4078438577864704,30441879976280064
 
-mov $2,2
-mov $3,$0
 mul $0,2
 max $0,0
-mov $4,2
 cal $0,232921 ; Number of 2 X n 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally, diagonally or antidiagonally.
-mul $0,2
-mov $1,2
+mov $1,234
 mov $1,$0
-div $1,18
-mul $3,2
+div $1,9
