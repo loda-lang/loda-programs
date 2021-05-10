@@ -1,30 +1,25 @@
 ; A098385: Ordered factorizations over hook-type prime signatures with exactly three distinct primes (third column of A098348).
 ; 13,44,132,368,976,2496,6208,15104,36096,84992,197632,454656,1036288,2342912,5259264,11730944,26017792,57409536,126091264,275775488,600834048,1304428544,2822766592,6090129408,13103005696,28118614016,60196651008,128580583424,274072600576,583041810432,1238024323072,2624225017856,5553392713728,11733850652672,24756191494144,52158082842624,109745004347392,230622563926016,484059994128384,1014849232437248,2125355976491008,4446425022726144
 
-mov $1,8
-mov $3,0
-mov $4,6
-clr $5,1
-mul $1,$3
-add $2,1
-add $0,$2
-add $4,$3
-add $4,$1
-mov $1,1
-add $5,5
-cal $0,107464 ; Number of fuzzy subgroups of rank 3 cyclic group of order (p^n)*q*r where p, q and r are three distinct prime.
-mov $1,216
-sub $2,1
-mov $3,$2
-add $3,$0
-mov $0,46656
-mov $1,128
-mov $4,$3
+clr $2,37
+add $0,1
+max $0,0
 add $3,$2
-mov $1,$3
+mov $4,9
+mov $5,$2
+trn $2,$2
+div $3,3
+mov $26,$2
+cmp $26,0
+add $2,$26
+mod $3,$2
+cal $0,107464 ; Number of fuzzy subgroups of rank 3 cyclic group of order (p^n)*q*r where p, q and r are three distinct prime.
+mov $1,9
+mov $1,$0
 sub $1,51
 div $1,4
 add $1,13
-add $5,31
-mul $5,7
-div $5,36
+sub $3,2
+sub $5,9
+mov $5,$2
+add $2,$3

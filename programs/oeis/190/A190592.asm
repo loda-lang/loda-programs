@@ -3,11 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,189820 ; a(3*k-2) = a(k), a(3*k-1) = a(k), a(3*k) = 1 for k >= 1, starting with a(1) = 0.
-  add $1,$2
-  mov $3,$2
-  cmp $3,0
-  add $2,$3
-  mod $0,$2
-  add $1,$2
+  cal $2,39966 ; a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
+  mov $0,2
+  add $3,$2
 lpe
+sub $0,$3
+mov $1,$0

@@ -3,6 +3,4 @@
 
 cal $0,185018 ; Inverse to sequence matrix for natural numbers.
 max $0,0
-cal $0,267031 ; a(n) = (32*n^3 - 2*n)/3.
 mov $1,$0
-div $1,10

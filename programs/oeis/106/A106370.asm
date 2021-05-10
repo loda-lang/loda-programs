@@ -15,7 +15,7 @@ lpb $3
       cmp $2,0
       sub $5,$2
     lpe
-    mov $0,$3
+    add $0,$3
     add $1,1
   lpe
   cmp $2,0

@@ -1,13 +1,22 @@
 ; A120069: Denominators of partial sums of a convergent series involving scaled Catalan numbers A000108.
 ; 1,2,16,32,128,256,4096,8192,32768,65536,524288,1048576,4194304,8388608,268435456,536870912,2147483648,4294967296,34359738368,68719476736,274877906944,549755813888,8796093022208,17592186044416,70368744177664,140737488355328,1125899906842624,2251799813685248,9007199254740992
 
-mul $0,2
-add $0,5
+mov $3,$0
+div $0,2
+mov $0,$3
+mov $2,1
+pow $3,2
+add $3,$0
+add $0,2
 max $0,0
-mov $1,0
-mov $2,6
-cal $0,86117 ; Denominator of mean deviation of a symmetrical binomial distribution on n elements.
+add $3,479001600
+mov $4,1
+mov $4,$3
+add $4,1
+mov $4,$3
+mov $5,1
+cal $0,101926 ; a(n) = 2^A101925(n).
 mov $1,$0
-div $1,2
 mov $1,$0
 div $1,16
+mov $3,$0

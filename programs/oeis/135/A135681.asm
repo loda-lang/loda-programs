@@ -3,7 +3,7 @@
 
 mov $1,1
 add $1,$0
-mov $2,-2
+mov $2,$0
 mov $3,$0
 lpb $2
   mov $0,$1
@@ -13,17 +13,15 @@ lpb $2
     sub $3,$1
     mov $4,$1
   lpe
+  gcd $1,2
   sub $4,1
   mov $5,1
   lpb $5
-    gcd $1,2
-    lpb $5
-      pow $1,2
-      lpb $0
-        mod $0,3
-        trn $5,$4
-      lpe
-      mov $2,0
-    lpe
+    trn $5,$4
+    mov $6,$3
+    cmp $6,0
+    add $3,$6
+    mod $2,$3
   lpe
+  pow $1,2
 lpe

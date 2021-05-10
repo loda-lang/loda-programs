@@ -1,9 +1,7 @@
 ; A059426: First differences of A026273.
 ; 1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1
 
-add $0,1
-cal $0,194584 ; Differences of A035336.
+add $0,2
+cal $0,114986 ; Characteristic function of (A000201 prefixed with 0).
 mov $1,$0
-sub $1,3
-div $1,2
 add $1,1

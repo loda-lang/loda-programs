@@ -3,9 +3,4 @@
 
 cal $0,78444 ; Floor of geometric mean of consecutive primes.
 div $0,2
-mov $1,20
-mul $1,$0
-mul $1,2
-sub $1,39
-div $1,40
-add $1,1
+mov $1,$0
