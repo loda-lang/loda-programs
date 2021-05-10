@@ -1,30 +1,10 @@
 ; A161342: Number of "ON" cubic cells at n-th stage in simple 3-dimensional cellular automaton: a(n) = A160428(n)/8.
 ; 0,1,8,15,64,71,120,169,512,519,568,617,960,1009,1352,1695,4096,4103,4152,4201,4544,4593,4936,5279,7680,7729,8072,8415,10816,11159,13560,15961,32768,32775,32824,32873
 
-mov $2,$0
-mov $6,$0
-lpb $2
-  mov $0,$6
-  sub $2,1
-  sub $0,$2
-  mov $5,2
-  mov $8,$0
-  lpb $5
-    mov $0,$8
-    sub $0,1
-    sub $5,1
-    add $7,1
-    lpb $7
-      mul $0,2
-      mov $3,$0
-      sub $7,1
-      lpb $0
-        div $3,2
-        sub $0,$3
-        mov $4,7
-      lpe
-      pow $4,$0
-    lpe
-  lpe
-  add $1,$4
+lpb $0
+  sub $0,1
+  mov $2,$0
+  max $2,0
+  cal $2,161343 ; a(n) = 7^A000120(n).
+  add $1,$2
 lpe

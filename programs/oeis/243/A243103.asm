@@ -5,12 +5,11 @@ add $0,1
 mov $1,1
 mov $2,2
 mov $3,$0
+sub $3,2
 mov $4,$0
-mov $9,$0
-pow $9,5
 lpb $3
-  mov $0,$9
-  mov $5,$4
+  mov $1,$0
+  mov $5,21
   mov $6,0
   lpb $5
     add $6,1
@@ -23,22 +22,21 @@ lpb $3
     cmp $8,0
     add $2,$8
     div $0,$2
-    add $0,$9
     cmp $7,0
     sub $5,$7
   lpe
+  add $0,$4
   cmp $6,0
   cmp $6,0
-  sub $7,1
   mov $7,$2
   pow $7,$6
   mul $1,$7
   add $2,1
   mov $7,$0
-  mov $0,$2
+  mov $0,$1
   cmp $7,1
   cmp $7,0
-  mov $10,$1
-  mov $11,$3
   sub $3,$7
+  mov $9,1
 lpe
+mov $1,$0

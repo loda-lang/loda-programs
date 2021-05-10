@@ -3,9 +3,8 @@
 
 max $0,0
 cal $0,247903 ; Start with a single square; at n-th generation add a square at each expandable vertex (this is the "vertex to side" version); a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
-add $2,$0
-mov $1,$2
 mov $1,$0
 div $1,4
 mul $1,6
 add $1,1
+mov $2,$0

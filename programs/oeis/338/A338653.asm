@@ -6,17 +6,14 @@ mov $8,2
 lpb $8
   clr $0,6
   mov $0,$6
-  add $3,8
   sub $8,1
   add $0,$8
   sub $0,1
+  mov $3,9
   lpb $0
     mov $1,$0
     sub $0,1
     add $3,1
-    mov $26,$3
-    cmp $26,9
-    add $3,$26
     div $1,$3
     add $5,$1
   lpe

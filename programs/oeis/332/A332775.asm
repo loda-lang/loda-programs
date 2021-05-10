@@ -19,11 +19,8 @@ lpb $3
   cmp $6,0
   cmp $6,0
   mov $7,$2
+  add $2,1
   pow $7,$6
   add $1,$7
-  add $2,1
-  add $7,1
-  cmp $7,1
-  cmp $7,0
-  sub $3,$7
+  sub $3,1
 lpe

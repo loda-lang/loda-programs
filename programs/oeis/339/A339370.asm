@@ -3,12 +3,10 @@
 
 mov $6,2
 lpb $6
-  sub $6,1
+  add $2,3
+  gcd $6,$2
   add $0,$6
   sub $0,1
-  mov $2,$6
-  cmp $2,0
-  add $6,$2
   lpb $0
     mov $4,$0
     sub $0,1

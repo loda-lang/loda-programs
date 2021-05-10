@@ -4,10 +4,7 @@
 mul $0,2
 add $0,1
 mov $2,$0
-mov $3,8
 lpb $0
-  pow $3,3
-  add $1,$3
   mov $3,$2
   mov $4,$0
   cmp $4,0
@@ -17,6 +14,8 @@ lpb $0
   cmp $3,0
   mul $3,$0
   sub $0,1
+  pow $3,3
+  add $1,$3
 lpe
-sub $1,511
 mul $1,2
+add $1,2

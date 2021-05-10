@@ -13,7 +13,6 @@ lpb $0
   cmp $3,0
   mul $3,$0
   sub $0,1
-  bin $3,2
+  mul $3,$0
   add $1,$3
 lpe
-mul $1,2
