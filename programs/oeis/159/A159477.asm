@@ -3,10 +3,9 @@
 
 mov $2,$0
 cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
-sub $0,1
-add $3,$2
-lpb $3
+lpb $2
   mov $1,$0
-  div $3,3
+  div $2,106
 lpe
-add $1,1
+add $1,$0
+div $1,2

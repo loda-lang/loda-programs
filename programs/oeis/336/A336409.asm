@@ -7,7 +7,6 @@ lpb $0
   add $1,4
   mov $2,$0
   sub $0,$1
-  max $2,3
   cal $2,100821 ; a(n) = 1 if prime(n) + 2 = prime(n+1), otherwise 0.
   mov $1,$2
 lpe

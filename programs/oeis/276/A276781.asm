@@ -3,8 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,133790 ; A014963*A100994.
-  sub $0,$2
+  cal $2,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
+  add $0,$2
+  sub $0,2
   add $1,$2
 lpe
 add $1,1
