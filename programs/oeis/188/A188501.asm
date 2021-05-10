@@ -5,12 +5,5 @@ max $0,0
 cal $0,77855 ; Expansion of (1-x)^(-1)/(1 - 2*x + x^2 - x^3).
 add $0,1
 pow $0,2
-mov $2,2
-mov $3,1
-add $4,$0
-add $4,4
-mul $4,2
-mov $1,$4
 mov $1,$0
-add $3,$4
-mov $5,0
+mov $2,$0
