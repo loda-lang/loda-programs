@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,130065 ; a(n) = (n / GreatestPrimeFactor(n)) * SmallestPrimeFactor(n).
-add $2,$0
-div $1,$2
+div $1,$0
 add $1,1

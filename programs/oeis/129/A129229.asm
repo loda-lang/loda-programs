@@ -3,9 +3,7 @@
 
 lpb $0
   mov $2,$0
-  add $3,1
-  cal $2,287523 ; Fixed point starting with 1 of the morphism 0->01, 1->101.
+  cal $2,245920 ; Limit-reverse of the (2,1)-version of the infinite Fibonacci word A014675 with first term as initial block.
   trn $0,2
-  add $3,$2
+  add $1,$2
 lpe
-add $1,$3

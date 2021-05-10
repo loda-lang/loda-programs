@@ -1,6 +1,6 @@
 ; A078584: a(n) = prime(2n) - prime(2n-1).
 ; 1,2,2,2,6,6,2,6,2,4,6,6,4,4,4,4,2,2,6,6,2,2,2,12,2,6,10,6,2,4,10,4,4,6,2,6,6,4,8,8,2,2,4,8,2,12,4,4,12,18,10,6,6,6,2,6,2,10,4,6,12,6,10,10,6,4,6,8,14,12,10,4,10,4,4,4,4,4,10,4,6,4,6,6,4,2,2,10,10,6,4,4,6,6,22,10
 
-cal $0,256737 ; Number of composites lying between successive pairs of primes, beginning with pair (2,3). Bisection of A046933.
+mul $0,2
+cal $0,1223 ; Prime gaps: differences between consecutive primes.
 mov $1,$0
-add $1,1

@@ -3,12 +3,9 @@
 
 add $0,1
 max $0,0
-mov $2,92
 cal $0,84851 ; Binomial transform of binomial(n+2,2).
-add $0,92
-mov $1,25392
-mov $1,$0
-sub $1,95
-mov $2,236351
-gcd $2,$0
-mov $3,92
+sub $0,4
+mov $1,262146
+add $1,$0
+sub $1,262145
+mov $2,3

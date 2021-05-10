@@ -3,12 +3,9 @@
 
 add $0,1
 max $0,0
-mov $2,1
+mov $2,0
 cal $0,228568 ; a(n) = 2^n*A056236(n).
-mov $1,344949
-lpb $1,0
-  mul $0,$2
-  mov $1,$0
-lpe
+mov $1,1
 mov $1,$0
 div $1,8
+mov $3,17

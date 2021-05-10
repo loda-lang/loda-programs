@@ -3,10 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,74591 ; If n is a prime power then 0 else n.
-  mov $3,$2
-  min $3,1
-  sub $0,$3
+  cal $2,69513 ; Characteristic function of the prime powers p^k, k >= 1.
+  add $0,$2
+  sub $0,1
 lpe
 mov $1,$0
 add $1,1
