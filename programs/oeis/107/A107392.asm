@@ -3,10 +3,7 @@
 
 max $0,0
 cal $0,84851 ; Binomial transform of binomial(n+2,2).
-mov $1,0
+trn $0,1
 mov $1,$0
-sub $1,1
 mul $1,8
 add $1,7
-mov $2,1
-mov $3,1
