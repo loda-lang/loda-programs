@@ -290,6 +290,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001704](http://oeis.org/A001704) ([L12 program](001/A001704.asm)): a(n) = n concatenated with n + 1.
 * [A001710](http://oeis.org/A001710) ([L08 program](001/A001710.asm)): Order of alternating group A_n, or number of even permutations of n letters.
 * [A001737](http://oeis.org/A001737) ([L03 program](001/A001737.asm)): Squares written in base 2.
+* [A001738](http://oeis.org/A001738) ([L03 program](001/A001738.asm)): Squares written in base 3.
+* [A001739](http://oeis.org/A001739) ([L03 program](001/A001739.asm)): Squares written in base 4.
+* [A001740](http://oeis.org/A001740) ([L03 program](001/A001740.asm)): Squares written in base 5.
+* [A001741](http://oeis.org/A001741) ([L03 program](001/A001741.asm)): Squares written in base 6.
 * [A001747](http://oeis.org/A001747) ([L03 program](001/A001747.asm)): 2 together with primes multiplied by 2.
 * [A001748](http://oeis.org/A001748) ([L03 program](001/A001748.asm)): 3 * primes.
 * [A001749](http://oeis.org/A001749) ([L03 program](001/A001749.asm)): Primes multiplied by 4.
@@ -699,7 +703,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004755](http://oeis.org/A004755) ([L09 program](004/A004755.asm)): Binary expansion starts 11.
 * [A004756](http://oeis.org/A004756) ([L10 program](004/A004756.asm)): Binary expansion starts 100.
 * [A004757](http://oeis.org/A004757) ([L10 program](004/A004757.asm)): Binary expansion starts 101.
-* [A004758](http://oeis.org/A004758) ([L35 program](004/A004758.asm)): Binary expansion starts 110.
+* [A004758](http://oeis.org/A004758) ([L34 program](004/A004758.asm)): Binary expansion starts 110.
 * [A004759](http://oeis.org/A004759) ([L10 program](004/A004759.asm)): Binary expansion starts 111.
 * [A004760](http://oeis.org/A004760) ([L08 program](004/A004760.asm)): List of numbers whose binary expansion does not begin 10.
 * [A004761](http://oeis.org/A004761) ([L09 program](004/A004761.asm)): Numbers n whose binary expansion does not begin with 11.
@@ -757,7 +761,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004956](http://oeis.org/A004956) ([L09 program](004/A004956.asm)): a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
 * [A004957](http://oeis.org/A004957) ([L03 program](004/A004957.asm)): a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
 * [A004958](http://oeis.org/A004958) ([L07 program](004/A004958.asm)): a(n) = ceiling(n*phi^3), where phi is the golden ratio, A001622.
-* [A004959](http://oeis.org/A004959) ([L09 program](004/A004959.asm)): a(n) = ceiling(n*phi^4), where phi is the golden ratio, A001622.
 * [A004960](http://oeis.org/A004960) ([L10 program](004/A004960.asm)): a(n) = ceiling(n*phi^5), where phi is the golden ratio, A001622.
 * [A004961](http://oeis.org/A004961) ([L07 program](004/A004961.asm)): a(n) = ceiling(n*phi^6), where phi is the golden ratio.
 * [A004963](http://oeis.org/A004963) ([L02 program](004/A004963.asm)): a(n) = ceiling(n*phi^8), where phi is the golden ratio, A001622.
@@ -3387,7 +3390,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A026353](http://oeis.org/A026353) ([L09 program](026/A026353.asm)): a(n) = sum of the numbers between the two n's in A026350.
 * [A026355](http://oeis.org/A026355) ([L06 program](026/A026355.asm)): a(n) = least k such that s(k) = n+1, where s = A026354.
 * [A026356](http://oeis.org/A026356) ([L03 program](026/A026356.asm)): a(n) = floor((n-1)*phi) + n + 1, n > 0, where phi = (1+sqrt(5))/2.
-* [A026357](http://oeis.org/A026357) ([L05 program](026/A026357.asm)): a(n) = sum of the numbers between the two n's in A026354.
+* [A026357](http://oeis.org/A026357) ([L04 program](026/A026357.asm)): a(n) = sum of the numbers between the two n's in A026354.
 * [A026381](http://oeis.org/A026381) ([L13 program](026/A026381.asm)): T(n,n-2), where T is the array in A026374.
 * [A026383](http://oeis.org/A026383) ([L18 program](026/A026383.asm)): a(n) = 5a(n-2), starting 1,2.
 * [A026384](http://oeis.org/A026384) ([L12 program](026/A026384.asm)): a(n) = Sum_{j=0..i, i=0..n} T(i,j),  where T is the array in A026374.
@@ -3890,7 +3893,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032607](http://oeis.org/A032607) ([L46 program](032/A032607.asm)): Concatenation of n and n + 2 or {n,n+2}.
 * [A032608](http://oeis.org/A032608) ([L43 program](032/A032608.asm)): Concatenation of n and n + 3.
 * [A032609](http://oeis.org/A032609) ([L43 program](032/A032609.asm)): Concatenation of n and n + 4 or {n,n+4}.
-* [A032610](http://oeis.org/A032610) ([L06 program](032/A032610.asm)): Concatenation of n and n + 5 or {n,n+5}.
+* [A032610](http://oeis.org/A032610) ([L05 program](032/A032610.asm)): Concatenation of n and n + 5 or {n,n+5}.
 * [A032611](http://oeis.org/A032611) ([L46 program](032/A032611.asm)): Concatenation of n and n + 6 or {n,n+6}.
 * [A032612](http://oeis.org/A032612) ([L18 program](032/A032612.asm)): Concatenation of n and n+7.
 * [A032613](http://oeis.org/A032613) ([L07 program](032/A032613.asm)): Concatenation of n and n + 8 or {n,n+8}.
@@ -4535,7 +4538,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037754](http://oeis.org/A037754) ([L06 program](037/A037754.asm)): Base 7 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1,0.
 * [A037772](http://oeis.org/A037772) ([L04 program](037/A037772.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,1,0,2.
 * [A037786](http://oeis.org/A037786) ([L04 program](037/A037786.asm)): Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,2,0,1.
-* [A037800](http://oeis.org/A037800) ([L15 program](037/A037800.asm)): Number of occurrences of 01 in the binary expansion of n.
+* [A037800](http://oeis.org/A037800) ([L03 program](037/A037800.asm)): Number of occurrences of 01 in the binary expansion of n.
 * [A037808](http://oeis.org/A037808) ([L14 program](037/A037808.asm)): Number of i such that d(i)<d(i-1), where Sum{d(i)*10^i: i=0,1,...,m} is base 10 representation of n.
 * [A037809](http://oeis.org/A037809) ([L14 program](037/A037809.asm)): Number of i such that d(i) <= d(i-1), where Sum_{i=0..m} d(i)*2^i is the base-2 representation of n.
 * [A037817](http://oeis.org/A037817) ([L13 program](037/A037817.asm)): Number of i such that d(i)<=d(i-1), where Sum{d(i)*10^i: i=0,1,...,m} is base 10 representation of n.
@@ -4860,7 +4863,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040436](http://oeis.org/A040436) ([L07 program](040/A040436.asm)): Continued fraction for sqrt(458).
 * [A040440](http://oeis.org/A040440) ([L09 program](040/A040440.asm)): Continued fraction for sqrt(462).
 * [A040446](http://oeis.org/A040446) ([L35 program](040/A040446.asm)): Continued fraction for sqrt(468).
-* [A040451](http://oeis.org/A040451) ([L35 program](040/A040451.asm)): Continued fraction for sqrt(473).
+* [A040451](http://oeis.org/A040451) ([L04 program](040/A040451.asm)): Continued fraction for sqrt(473).
 * [A040458](http://oeis.org/A040458) ([L17 program](040/A040458.asm)): Continued fraction for sqrt(480).
 * [A040460](http://oeis.org/A040460) ([L05 program](040/A040460.asm)): Continued fraction for sqrt(482).
 * [A040461](http://oeis.org/A040461) ([L08 program](040/A040461.asm)): Continued fraction for sqrt(483).
@@ -5143,9 +5146,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044801](http://oeis.org/A044801) ([L12 program](044/A044801.asm)): Numbers n such that string 8,8 occurs in the base 10 representation of n but not of n+1.
 * [A044802](http://oeis.org/A044802) ([L12 program](044/A044802.asm)): Numbers n such that string 8,9 occurs in the base 10 representation of n but not of n+1.
 * [A044812](http://oeis.org/A044812) ([L03 program](044/A044812.asm)): Numbers n such that string 9,9 occurs in the base 10 representation of n but not of n+1.
-* [A044833](http://oeis.org/A044833) ([L13 program](044/A044833.asm)): Positive integers having more base-7 runs of even length than odd.
-* [A044834](http://oeis.org/A044834) ([L32 program](044/A044834.asm)): Positive integers having more base-8 runs of even length than odd.
-* [A044835](http://oeis.org/A044835) ([L14 program](044/A044835.asm)): Positive integers having more base-9 runs of even length than odd.
+* [A044833](http://oeis.org/A044833) ([L05 program](044/A044833.asm)): Positive integers having more base-7 runs of even length than odd.
+* [A044834](http://oeis.org/A044834) ([L05 program](044/A044834.asm)): Positive integers having more base-8 runs of even length than odd.
+* [A044835](http://oeis.org/A044835) ([L05 program](044/A044835.asm)): Positive integers having more base-9 runs of even length than odd.
 * [A044837](http://oeis.org/A044837) ([L24 program](044/A044837.asm)): Positive integers having more base-11 runs of even length than odd.
 * [A044838](http://oeis.org/A044838) ([L30 program](044/A044838.asm)): Positive integers having more base-12 runs of even length than odd.
 * [A044839](http://oeis.org/A044839) ([L17 program](044/A044839.asm)): Positive integers having more base-13 runs of even length than odd.
@@ -5904,7 +5907,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049632](http://oeis.org/A049632) ([L06 program](049/A049632.asm)): a(n)=T(n,n), array T as in A049627.
 * [A049633](http://oeis.org/A049633) ([L07 program](049/A049633.asm)): a(n)=T(n,n+1), array T as in A049627.
 * [A049636](http://oeis.org/A049636) ([L08 program](049/A049636.asm)): Congruent to 0 or 2 mod 3, but not equal to 0 or 3.
-* [A049637](http://oeis.org/A049637) ([L14 program](049/A049637.asm)): Congruent to 2, 3, 6, 8, 10 or 12 mod 13, but not equal to 3.
+* [A049637](http://oeis.org/A049637) ([L07 program](049/A049637.asm)): Congruent to 2, 3, 6, 8, 10 or 12 mod 13, but not equal to 3.
 * [A049638](http://oeis.org/A049638) ([L22 program](049/A049638.asm)): a(n)=T(n,4), array T as in A049627.
 * [A049640](http://oeis.org/A049640) ([L14 program](049/A049640.asm)): a(n) = Sum_{i=0..n} T(i,n-i), array T as in A049639.
 * [A049641](http://oeis.org/A049641) ([L09 program](049/A049641.asm)): a(n) = Sum_{i=0..n} ((-1)^i)*T(i,n-i), array T as in A049639.

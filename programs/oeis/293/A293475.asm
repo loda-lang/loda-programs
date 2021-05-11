@@ -3,15 +3,6 @@
 
 mov $2,$0
 add $0,1
-lpb $0
-  lpb $0
-    add $3,$0
-    sub $0,1
-    add $5,$3
-    add $4,$5
-  lpe
-  lpb $2
-    add $1,$4
-    sub $2,1
-  lpe
-lpe
+cal $0,1296 ; 4-dimensional pyramidal numbers: a(n) = (3*n+1)*binomial(n+2, 3)/4. Also Stirling2(n+2, n).
+mul $0,$2
+mov $1,$0

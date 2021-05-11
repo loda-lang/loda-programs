@@ -4,9 +4,8 @@
 lpb $0
   mov $2,$0
   cal $2,55961 ; a(n) = n - (reversal of base-11 digits of n) (written in base 10).
-  mod $0,11
-  add $3,$2
-  mul $2,$3
+  mod $0,1
+  pow $2,2
   mov $1,$2
   min $1,1
 lpe
