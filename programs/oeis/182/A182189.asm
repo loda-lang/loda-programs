@@ -3,9 +3,8 @@
 
 max $0,0
 cal $0,276602 ; Values of n such that n^2 + 10 is a triangular number (A000217).
-mov $1,1
 mov $1,$0
 div $1,9
 mul $1,2
 add $1,1
-mov $2,1
+add $2,$0

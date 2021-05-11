@@ -4,10 +4,8 @@
 sub $0,1
 max $0,0
 cal $0,4697 ; a(n) = floor(Fibonacci(n)/4).
-mov $1,2
+mov $1,$0
 mov $1,$0
 mul $1,3
 add $1,1
-mov $2,0
-mov $3,$0
-mov $4,0
+mov $2,2

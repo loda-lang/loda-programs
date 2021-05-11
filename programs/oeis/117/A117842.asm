@@ -8,12 +8,11 @@ lpb $2
   mov $0,$5
   sub $2,1
   sub $0,$2
-  mov $4,$0
-  sub $4,$0
-  mov $3,$4
+  mov $3,$0
   cmp $3,0
-  add $4,$3
-  mul $4,$0
-  cal $4,7918 ; Least prime >= n (version 1 of the "next prime" function).
+  add $0,$3
+  mov $4,$0
+  sub $4,1
+  cal $4,151800 ; Least prime > n (version 2 of the "next prime" function).
   add $1,$4
 lpe

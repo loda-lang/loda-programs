@@ -3,10 +3,9 @@
 
 mov $1,$0
 mov $2,$0
+mov $3,$0
 max $0,0
 cal $0,292295 ; Sum of values of vertices of type A at level n of the hyperbolic Pascal pyramid.
-mul $1,4
 mov $1,$0
-sub $0,1
 div $1,6
 mul $1,2

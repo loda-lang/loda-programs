@@ -1,7 +1,10 @@
 ; A238737: a(n) = 2*n+2 - A224911(n).
 ; 0,1,1,1,3,1,1,3,1,1,3,1,3,5,1,1,3,5,1,3,1,1,3,1,3,5,1,3,5,1,1,3,5,1,3,1,1,3,5,1,3,1,3,5,1,3,5,7,1,3,1,1,3,1,1,3,1,3,5,7,9,11,13,1,3,1,3,5,1,1,3,5,7,9
 
-mul $0,2
-cal $0,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
-mov $1,$0
-sub $1,2
+lpb $0
+  mul $0,2
+  mov $2,$0
+  cal $2,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
+  mod $0,2
+  add $1,$2
+lpe
