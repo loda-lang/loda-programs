@@ -4,6 +4,7 @@
 max $0,0
 cal $0,48589 ; Pisot sequence L(7,9).
 add $1,$0
-mod $0,2
+mov $1,$0
+clr $3,16
 sub $1,3
 mul $1,2

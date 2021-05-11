@@ -1,8 +1,6 @@
 ; A153638: Odiousness of triangular numbers.
 ; 0,1,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,1,1,1,1,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1,1,0,1,0,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0
 
-mov $2,$0
-pow $2,2
-add $0,$2
-cal $0,95190 ; Doubled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0 and 1 with 1,1.
+cal $0,153639 ; Evilness of triangular numbers.
 mov $1,$0
+cmp $1,0

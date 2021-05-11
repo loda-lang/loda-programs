@@ -15,22 +15,21 @@ lpb $33
     mov $0,$27
     sub $29,1
     add $0,$29
-    sub $0,1
-    mov $1,3
+    mov $2,5
     lpb $0
-      sub $0,1
       div $0,2
-      mul $1,2
+      mul $2,2
     lpe
+    mov $1,$2
     mov $30,$29
-    mul $30,$1
+    mul $30,$2
     add $28,$30
   lpe
   min $27,1
   mul $27,$1
   mov $1,$28
   sub $1,$27
-  div $1,3
+  div $1,10
   mul $1,5
   add $1,1
   add $32,$1

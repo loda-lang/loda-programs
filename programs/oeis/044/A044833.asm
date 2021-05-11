@@ -1,16 +1,8 @@
 ; A044833: Positive integers having more base-7 runs of even length than odd.
 ; 8,16,24,32,40,48,392,400,408,416,424,432,440,784,792,800,808,816,824,832,1176,1184,1192,1200,1208,1216,1224,1568,1576,1584,1592,1600,1608,1616,1960,1968,1976,1984,1992,2000,2008,2352
 
+add $0,1
+cal $0,133897 ; Numbers m such that binomial(m+7,m) mod 7 = 0.
 mov $1,$0
-add $0,5
-add $1,11
-mov $2,$0
-sub $2,3
-mov $3,21
-lpb $2
-  add $1,$3
-  add $1,$3
-  trn $2,7
-lpe
-sub $1,52
+sub $1,42
 mul $1,8

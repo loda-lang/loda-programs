@@ -1,6 +1,11 @@
 ; A138886: n-th run has length n-th nonprime number A018252, with digits 0 and 1 only, starting with 0.
 ; 0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-cal $0,138885 ; n-th run has length n-th nonprime number, with digits 0 and 1 only, starting with 1.
-mov $1,$0
-cmp $1,0
+mul $0,2
+mov $2,1
+lpb $0
+  sub $0,8
+  trn $0,$2
+  cmp $1,0
+  add $2,3
+lpe

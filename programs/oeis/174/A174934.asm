@@ -1,42 +1,41 @@
 ; A174934: a(n) = Sum_{k<=n} A007955(k) * A000027(n-k+1) = Sum_{k<=n} A007955(k) * (n-k+1), where A007955(m) = product of divisors of m.
 ; 1,4,10,24,43,98,160,286,439,692,956,2948,4953,7154,9580,13030,16497,25796,35114,52432,70191,88434,106700,456742,806909,1157752,1509324,1882848,2256401,3439954
 
-mov $30,$0
-mov $32,$0
-add $32,1
-lpb $32
-  clr $0,30
-  mov $0,$30
-  sub $32,1
-  sub $0,$32
-  mov $27,$0
-  mov $29,$0
-  lpb $29
-    clr $0,27
-    mov $0,$27
-    sub $29,1
-    sub $0,$29
-    add $2,$0
-    max $0,0
-    mov $3,$2
-    mov $5,$2
-    cal $0,324502 ; a(n) = denominator of  Sum_{d|n} (1/pod(d)) where pod(k) = the product of the divisors of k (A007955).
-    mov $1,-1
+mov $8,$0
+mov $10,$0
+add $10,1
+lpb $10
+  clr $0,8
+  mov $0,$8
+  sub $10,1
+  sub $0,$10
+  mov $5,$0
+  mov $7,$0
+  add $7,1
+  lpb $7
+    clr $0,5
+    mov $0,$5
+    sub $7,1
+    sub $0,$7
+    sub $1,$0
     mov $1,$0
-    sub $1,1
-    pow $2,2
-    add $2,$0
-    sub $0,1
-    add $1,1
-    mov $2,8
-    mov $3,16
-    mov $26,$5
-    mov $5,2
-    cmp $26,0
-    add $28,$1
+    add $2,1
+    mov $3,$0
+    max $0,0
+    sub $3,2
+    trn $2,$3
+    mul $3,2
+    add $3,255184
+    mul $3,$2
+    mod $2,82524
+    add $3,100
+    cal $0,7955 ; Product of divisors of n.
+    mov $1,1
+    mov $1,$0
+    add $4,3
+    add $6,$0
   lpe
-  mov $1,$28
-  add $1,1
-  add $31,$1
+  mov $1,$6
+  add $9,$6
 lpe
-mov $1,$31
+mov $1,$9

@@ -3,27 +3,8 @@
 
 add $0,1
 mov $1,5
-mov $3,5
-mov $4,8
-mov $5,11
 lpb $1
   sub $1,1
-  trn $4,6
   cal $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
-  sub $3,1
-  mov $4,4
-  lpb $5
-    lpb $5
-      add $1,11
-      sub $1,$3
-      sub $1,$3
-      mul $1,25
-      div $4,5
-      mov $$3,$3
-      dif $5,5
-    lpe
-    div $5,4
-  lpe
-  div $5,5
 lpe
 mov $1,$0

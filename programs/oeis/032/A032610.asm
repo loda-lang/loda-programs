@@ -3,7 +3,6 @@
 
 add $0,1
 cal $0,30656 ; Pair up the numbers.
-mov $1,$0
-sub $1,23
-div $1,2
-add $1,16
+div $0,2
+add $1,$0
+add $1,5
