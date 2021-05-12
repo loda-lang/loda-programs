@@ -3,14 +3,13 @@
 
 add $0,3
 max $0,0
+mov $1,1
 cal $0,189743 ; a(1)=4,  a(2)=4, a(n)=4*a(n-1) + 4*a(n-2)
-div $0,-2
-sub $0,22
 sub $1,$0
-mov $2,$0
-mov $2,$1
-div $1,2
-sub $1,47
+cmp $1,0
+mov $1,$0
+div $1,4
+sub $1,36
 div $1,28
 mul $1,3
 add $1,4

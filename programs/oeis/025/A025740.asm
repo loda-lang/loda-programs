@@ -1,49 +1,10 @@
 ; A025740: Index of 10^n within sequence of numbers of form 2^i*10^j.
 ; 1,5,12,22,36,53,73,97,124,154,188,225,265,309,356,406,460,517,577,641,708,778,852,929,1009,1093,1180,1270,1364,1461,1561,1664,1771,1881,1994,2111,2231,2354,2481,2611,2744,2881,3021,3164,3311,3461,3614,3771,3931
 
-mov $14,$0
-mov $16,$0
-add $16,1
-lpb $16
-  clr $0,14
-  mov $0,$14
-  sub $16,1
-  sub $0,$16
-  mov $11,$0
-  mov $13,$0
-  add $13,1
-  lpb $13
-    mov $0,$11
-    sub $13,1
-    sub $0,$13
-    mov $7,$0
-    mov $9,2
-    lpb $9
-      clr $0,7
-      mov $0,$7
-      sub $9,1
-      add $0,$9
-      sub $0,1
-      mov $6,$0
-      mul $6,195
-      add $1,$6
-      mov $0,$1
-      div $0,84
-      mov $1,$0
-      mov $10,$9
-      lpb $10
-        mov $8,$1
-        sub $10,1
-      lpe
-    lpe
-    lpb $7
-      mov $7,0
-      sub $8,$1
-    lpe
-    mov $1,$8
-    add $1,1
-    add $12,$1
-  lpe
-  add $15,$12
+lpb $0
+  mov $2,$0
+  cal $2,123384 ; Number of bits in binary expansion of 10^n.
+  sub $0,1
+  add $1,$2
 lpe
-mov $1,$15
+add $1,1
