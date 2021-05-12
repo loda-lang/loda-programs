@@ -4,6 +4,5 @@
 mul $0,2
 cal $0,24166 ; a(n) = Sum_{1 <= i < j <= n} (j-i)^3.
 mov $1,$0
-mul $1,2
-div $1,4
+div $1,2
 mul $1,5

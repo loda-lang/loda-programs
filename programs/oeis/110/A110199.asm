@@ -3,9 +3,7 @@
 
 div $0,2
 max $0,0
-mov $2,2
-mov $3,2
 cal $0,14137 ; Partial sums of Catalan numbers (A000108).
-add $1,$0
-max $0,0
-cal $0,225058 ; a(4*n) = n-1. a(2*n+1) = a(4*n+2) = 2*n+1.
+mov $1,$0
+mov $1,$0
+mov $2,$0

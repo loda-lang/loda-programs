@@ -4,16 +4,16 @@
 mov $1,$0
 lpb $0
   trn $0,1
-  mul $1,2
-  sub $1,$2
-  add $2,2
-  mov $3,2
+  mov $2,$0
+  max $2,0
+  cal $2,337 ; a(n) = (n-1)*2^n + 1.
+  add $1,$2
+  mov $4,$2
+  mov $2,2
+  min $4,0
+  mov $0,$4
+  add $3,$4
+  add $5,$4
 lpe
-lpb $0
-  trn $0,1
-  dif $0,8
-  mov $3,1
-lpe
-mov $4,$1
-div $1,2
+mov $3,$1
 add $1,1

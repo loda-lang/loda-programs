@@ -2,10 +2,5 @@
 ; 1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0
 
 add $0,1
-lpb $0
-  mov $2,$0
-  cal $2,293838 ; "Look once to the left" sequence starting with 1,2 (see comment).
-  sub $0,$0
-  mov $1,$2
-lpe
-sub $1,1
+cal $0,164349 ; The limit of the string "0, 1" under the operation 'repeat string twice and remove last symbol'.
+mov $1,$0

@@ -4,5 +4,4 @@
 max $0,0
 cal $0,106803 ; Expansion of x*(1-x)/(1-2*x-x^2+x^3).
 mov $1,$0
-mov $1,$0
 mul $1,2

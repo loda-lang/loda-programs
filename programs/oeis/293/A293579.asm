@@ -3,14 +3,10 @@
 
 add $0,2
 max $0,0
-mov $2,3
-mov $3,0
+mov $1,6
+mov $2,1
+mov $3,9
 cal $0,204090 ; The number of 1 X n Haunted Mirror Maze puzzles with a unique solution where mirror orientation is fixed.
-mov $1,-6
 mov $1,$0
 div $1,2
 sub $1,1
-mov $2,1
-mov $4,1
-sub $4,$0
-sub $4,5
