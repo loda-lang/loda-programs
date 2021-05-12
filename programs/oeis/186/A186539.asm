@@ -3,5 +3,4 @@
 
 mov $1,$0
 cal $0,194979 ; 1 + floor(n/sqrt(3)).
-add $2,$0
-add $1,$2
+add $1,$0

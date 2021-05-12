@@ -8,24 +8,21 @@ mov $4,$0
 lpb $3
   mov $5,$4
   lpb $5
-    mov $2,$0
-    mod $2,$1
-    lpb $0
-      div $0,$1
-      cmp $2,0
-      sub $5,$2
-      lpb $3
-        div $3,7
-      lpe
-      pow $0,2
-      mov $2,$1
+    mov $3,$2
+    mov $7,$0
+    div $0,$1
+    mov $6,$1
+    mod $7,$1
+    cmp $7,0
+    lpb $6
+      sub $5,$7
+      mov $6,$0
     lpe
-    trn $3,1
   lpe
   add $1,1
-  mov $2,$0
-  cmp $2,1
-  cmp $2,0
-  sub $3,$2
+  mov $7,$0
+  cmp $7,1
+  cmp $7,0
+  sub $3,$7
 lpe
 sub $1,1
