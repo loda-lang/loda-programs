@@ -4,7 +4,5 @@
 max $0,0
 cal $0,95977 ; Expansion of 2*x / ((1+x)^2*(1-2*x)^2).
 mov $1,$0
-mov $1,$0
 div $1,2
-mov $2,$0
 mov $2,$0

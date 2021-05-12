@@ -3,7 +3,4 @@
 
 cal $0,34870 ; Even-numbered rows of Pascal's triangle.
 mod $0,2
-sub $0,1
-mov $1,2
-add $1,$0
-sub $1,1
+mov $1,$0

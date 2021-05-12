@@ -3,19 +3,10 @@
 
 mov $1,$0
 add $1,1
+mov $2,$1
 div $1,2
-mov $2,5
 mul $2,$1
-mul $1,4
-mul $1,$2
+bin $1,2
+add $1,$2
+mul $1,40
 add $1,1
-mul $1,3
-sub $1,2
-mov $4,$0
-mul $4,10
-add $1,$4
-mov $3,$0
-mul $3,$0
-mov $4,$3
-mul $4,10
-add $1,$4

@@ -3,11 +3,7 @@
 
 max $0,0
 cal $0,232921 ; Number of 2 X n 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally, diagonally or antidiagonally.
-trn $0,1
-trn $0,5
-mov $1,0
+add $0,14
 mov $1,$0
-sub $1,12
+div $0,3
 div $1,18
-add $1,1
-add $2,$0

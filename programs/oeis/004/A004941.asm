@@ -1,28 +1,7 @@
 ; A004941: Nearest integer to n*phi^6, where phi is the golden ratio, A001622.
 ; 0,18,36,54,72,90,108,126,144,161,179,197,215,233,251,269,287,305,323,341,359,377,395,413,431,449,467,484,502,520,538,556,574,592,610,628,646,664,682,700,718,736,754,772
 
-mov $2,19
-mov $3,$0
-add $3,4
-mov $4,1
-mov $5,$0
-mov $6,5
-lpb $0
-  mov $0,6
-  add $3,$4
-  add $0,$3
-  trn $0,$2
-  sub $2,$0
-  sub $3,1
-  add $2,$3
-  add $2,$6
-  sub $4,$4
-lpe
-add $3,$6
-sub $3,2
-mov $1,$3
-lpb $5
-  add $1,17
-  sub $5,1
-lpe
-sub $1,7
+mul $0,2
+cal $0,4961 ; a(n) = ceiling(n*phi^6), where phi is the golden ratio.
+div $0,2
+mov $1,$0
