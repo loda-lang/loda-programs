@@ -19,7 +19,7 @@ Here is a basic example of a LODA program for computing the Fibonacci numbers:
 ; argument is stored in $0
 
 mov $3,1      ; assign $3:=1
-lpb $0        ; loop as long as $0 decreases in absolute values
+lpb $0        ; loop as long as $0 decreases
   sub $0,1    ; decrement $0
   mov $2,$1   ; assign $2:=$1
   add $1,$3   ; add $1:=$1+$3
@@ -43,10 +43,10 @@ The following programs include some classical examples of integer sequences and 
 
 * [Fibonacci numbers (A000045)](programs/oeis/000/A000045.asm)
 * [Number of divisors (A000005)](programs/oeis/000/A000005.asm)
-* [Characteristic function of primes (A010051)](programs/oeis/010/A010051.asm)
+* [Lpf(n): least prime dividing n (when n > 1); a(1) = 1 (A020639)](programs/oeis/020/A020639.asm)
 * [Ackermann function](programs/general/ackermann.asm): The Ackermann function is a non-primitive recursive function can be expressed in LODA. It is based on an algorithm by Grossman and Zeitman. In contrast to the other programs, this one was written by hand.
 
-In total, there are currently :star: **more than 26,000 programs available** :star:! You can find lists with descriptions and links here:
+In total, there are currently :star: **more than 28,000 programs available!** :star: You can find lists with descriptions and links here:
 
 * [A000001-A050000](programs/oeis/list0.md), [A050001-A100000](programs/oeis/list1.md), [A100001-A150000](programs/oeis/list2.md), [A150001-A200000](programs/oeis/list3.md), 
 * [A200001-A250000](programs/oeis/list4.md), [A250001-A300000](programs/oeis/list5.md), [A300001-A350000](programs/oeis/list6.md), [A350001-A400000](programs/oeis/list7.md)
