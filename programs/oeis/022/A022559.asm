@@ -4,7 +4,6 @@
 sub $0,1
 max $0,0
 cal $0,123567 ; Recursive sum of 2*Omega(n), where Omega(n) is the sequence A001222.
-mul $0,2
 mov $1,$0
-sub $1,4
-div $1,4
+sub $1,3
+div $1,2

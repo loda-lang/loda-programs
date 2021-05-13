@@ -3,13 +3,11 @@
 
 add $0,1
 max $0,0
+mov $1,0
+mov $2,1
+mov $3,1
+mov $4,1
 cal $0,63920 ; Numbers n such that n = 2*phi(n) + phi(phi(n)).
-max $0,4
-max $0,2
-mov $1,12
-trn $1,$0
-max $1,0
-cmp $1,0
 mov $1,$0
 div $1,2
 sub $1,3

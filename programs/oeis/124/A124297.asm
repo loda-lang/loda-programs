@@ -4,9 +4,7 @@
 max $0,0
 cal $0,1588 ; a(n) = a(n-1) + a(n-2) - 1.
 pow $0,2
-mul $0,18
 mov $1,$0
-sub $1,18
-div $1,144
+div $1,8
 mul $1,10
 add $1,1
