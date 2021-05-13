@@ -3,13 +3,10 @@
 
 add $0,1
 max $0,0
+mov $1,-5
+mov $2,1
+mov $3,2
 cal $0,94811 ; Number of (s(0), s(1), ..., s(2n+1)) such that 0 < s(i) < 8 and |s(i) - s(i-1)| = 1 for i = 1,2,....,2n+1, s(0) = 1, s(2n+1) = 6.
-mov $3,1
-mov $3,$0
-mul $0,2
-dif $0,2
-mov $1,2
+mov $1,1
 mov $1,$0
-add $2,$0
-mul $3,2
-bin $2,$3
+mov $2,2

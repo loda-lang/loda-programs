@@ -9,8 +9,10 @@ lpb $2
   sub $2,1
   sub $0,$2
   cal $0,276867 ; First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
+  mul $0,2
   mov $3,$0
-  sub $3,3
+  sub $3,6
+  div $3,2
   mul $3,3
   add $3,4
   add $1,$3

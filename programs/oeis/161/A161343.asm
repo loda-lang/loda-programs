@@ -4,3 +4,6 @@
 mul $0,2
 cal $0,151785 ; 7^{wt(n)-1} where wt(n) is the binary weight of n (A000120).
 mov $1,$0
+div $1,6
+mul $1,6
+add $1,1

@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); 2^A000120(n).
-mul $1,2
 mul $1,$0
-div $1,4
+div $1,2

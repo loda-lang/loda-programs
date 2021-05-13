@@ -3,6 +3,5 @@
 
 pow $0,2
 cal $0,320111 ; Number of divisors d of n that are not of the form 4k+2.
-mul $0,2
-add $1,$0
-mul $1,2
+mov $1,$0
+mul $1,4

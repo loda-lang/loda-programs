@@ -4,42 +4,22 @@
 add $0,1
 mov $1,$0
 mov $2,2
-mov $3,1
 mov $4,$0
-mov $6,1
-mov $9,1
 lpb $1
-  mov $3,$2
   mov $5,$4
-  mov $6,0
   lpb $5
-    add $6,1
-    mov $7,$0
-    mov $10,$2
-    cmp $10,0
-    add $2,$10
-    mod $7,$2
-    mov $10,$2
-    cmp $10,0
-    add $2,$10
+    mov $3,$0
     div $0,$2
     mov $1,$0
+    mod $3,$2
+    cmp $3,0
     sub $4,$0
-    cmp $7,0
-    sub $5,$7
-    mov $8,1
-    mov $11,1
+    sub $5,$3
   lpe
-  min $4,1
-  cmp $6,0
-  cmp $6,0
-  mov $7,$2
   add $2,1
-  pow $7,6
-  mul $3,$7
-  mov $7,$0
-  cmp $7,1
-  cmp $7,0
-  sub $1,$7
+  mov $3,$0
+  cmp $3,1
+  cmp $3,0
+  sub $1,$3
+  min $4,1
 lpe
-mov $3,$1

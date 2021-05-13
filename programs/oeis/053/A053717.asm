@@ -3,7 +3,7 @@
 
 max $0,0
 cal $0,228291 ; a(n) = Sum_{k=1..7} n^k.
-mov $1,31
 mov $1,$0
+mov $1,$0
+mul $0,16
 add $1,1
-mov $2,$0

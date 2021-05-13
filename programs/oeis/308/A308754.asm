@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,2
-cal $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+cal $0,82460 ; a(n) = pi(n) - a(n - 1) = A000720(n) - a(n - 1).
 mov $1,$0
-sub $1,2
+sub $1,1

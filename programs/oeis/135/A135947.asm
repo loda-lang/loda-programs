@@ -1,14 +1,6 @@
 ; A135947: a(n)=(floor(3*S2(n)/2)) mod 2, where S2(n) is the binary weight of n.
 ; 0,1,1,1,1,1,1,0,1,1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0
 
+cal $0,179868 ; (Number of 1's in the binary expansion of n) mod 4.
+cal $0,316569 ; a(n) = Jacobi (or Kronecker) symbol (n, 15).
 mov $1,$0
-mul $1,2
-mov $2,$0
-lpb $2
-  lpb $1
-    sub $1,$2
-    div $2,2
-  lpe
-  add $2,$1
-  sub $2,1
-lpe

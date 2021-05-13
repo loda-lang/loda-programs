@@ -3,14 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,93051 ; Exponent of 2 in (3^n-3)*2^n.
+  cal $2,93050 ; Exponent of 2 in (3^n-3)*2^(n-1).
+  mov $0,$3
   add $1,$2
-  mov $3,$2
-  cmp $3,0
-  add $2,$3
-  div $0,$2
-  div $0,2
-  mov $4,$2
-  min $4,1
-  add $1,$4
+  add $1,2
 lpe
