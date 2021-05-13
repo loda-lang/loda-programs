@@ -3,12 +3,10 @@
 
 mov $1,$0
 add $0,3
-bin $0,2
 mov $2,3
-pow $2,$1
+pow $2,$0
+bin $0,2
 mul $0,$2
 mov $1,$0
-mul $1,24
-mov $1,$0
-div $1,3
+div $1,81
 mov $3,0

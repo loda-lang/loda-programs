@@ -1,34 +1,12 @@
 ; A294023: Sum of the differences of the larger and smaller parts in the partitions of n into two parts with the smaller part prime.
 ; 0,0,0,0,1,2,4,6,8,10,13,16,19,22,26,30,34,38,42,46,50,54,59,64,69,74,80,86,92,98,104,110,116,122,129,136,143,150,158,166,174,182,190,198,206,214,223,232,241,250,259,268,277,286,295,304,313,322,332
 
-mov $26,$0
-mov $28,$0
-lpb $28
-  clr $0,26
-  mov $0,$26
-  sub $28,1
-  sub $0,$28
-  mov $23,$0
-  mov $25,$0
-  lpb $25
-    clr $0,23
-    mov $0,$23
-    sub $25,1
-    sub $0,$25
-    mov $1,$0
-    lpb $0
-      sub $0,2
-      mov $3,$1
-      gcd $3,$0
-      add $3,1
-      lpb $3
-        pow $0,3
-        mod $3,5
-        mov $7,1
-      lpe
-    lpe
-    add $24,$7
-  lpe
-  add $27,$24
+mov $1,2
+lpb $0
+  sub $0,1
+  mov $2,$0
+  max $2,0
+  cal $2,56172 ; Number of non-unitary prime divisors of n!.
+  add $1,$2
 lpe
-mov $1,$27
+sub $1,2

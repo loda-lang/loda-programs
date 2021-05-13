@@ -4,15 +4,15 @@
 mov $3,2
 mov $5,$0
 lpb $3
-  mov $0,$5
   sub $3,1
   add $0,$3
-  trn $0,1
-  cal $0,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
+  sub $0,1
   mov $4,$0
+  max $4,0
+  cal $4,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
+  mov $2,$3
+  mul $2,$4
+  add $1,$2
 lpe
 min $5,1
 mul $5,$4

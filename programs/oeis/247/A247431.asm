@@ -1,43 +1,9 @@
 ; A247431: The largest integer m such that A001950(m) < A003231(n).
 ; 1,2,3,5,6,8,9,10,12,13,14,16,17,19,20,21,23,24,25,27,28,30,31,32,34,35,37,38,39,41,42,43,45,46,48,49,50,52,53,55,56,57,59,60,61,63,64,66,67,68,70,71,72,74,75,77,78,79,81,82,84,85,86,88,89,90,92
 
+add $0,16
 mov $2,$0
-add $2,1
-mov $9,$0
-lpb $2
-  mov $0,$9
-  sub $2,1
-  sub $0,$2
-  mov $5,$0
-  mov $7,2
-  lpb $7
-    mov $0,$5
-    sub $7,1
-    add $0,$7
-    sub $0,1
-    mul $0,13
-    add $0,3
-    mov $3,4
-    mov $4,$0
-    lpb $0
-      mov $0,1
-      mul $4,2
-      div $4,68
-      mul $3,$4
-    lpe
-    mov $8,$7
-    mov $10,$3
-    lpb $8
-      mov $6,$10
-      sub $8,1
-    lpe
-  lpe
-  lpb $5
-    mov $5,0
-    sub $6,$10
-  lpe
-  mov $10,$6
-  div $10,4
-  add $10,1
-  add $1,$10
-lpe
+cal $0,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
+add $0,$2
+mov $1,$0
+sub $1,21

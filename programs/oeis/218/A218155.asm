@@ -4,6 +4,5 @@
 add $0,5
 cal $0,269819 ; Numbers that are congruent to {5, 11, 13, 19} mod 24.
 mov $1,$0
-sub $1,35
 div $1,2
-add $1,2
+sub $1,15
