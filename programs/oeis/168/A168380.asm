@@ -4,7 +4,4 @@
 add $0,1
 cal $0,168388 ; First number in the n-th row of A172002.
 mov $1,$0
-sub $1,3
-div $1,2
-mul $1,2
-add $1,2
+sub $1,1

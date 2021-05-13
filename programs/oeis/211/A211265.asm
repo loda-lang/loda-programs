@@ -1,43 +1,10 @@
 ; A211265: Number of integer pairs (x,y) such that 0<x<y<=n and x*y<=n+1.
 ; 0,1,2,3,5,6,8,9,11,12,15,16,18,20,22,23,26,27,30,32,34,35,39,40,42,44,47,48,52,53,56,58,60,62,66,67,69,71,75,76,80,81,84,87,89,90,95,96,99,101,104,105,109,111,115,117,119,120,126,127,129,132,135,137
 
-mov $10,$0
-mov $12,$0
-add $12,1
-lpb $12
-  mov $0,$10
-  sub $12,1
-  sub $0,$12
-  mov $6,$0
-  mov $8,2
-  lpb $8
-    clr $0,6
-    mov $0,$6
-    sub $8,1
-    add $0,$8
-    lpb $0
-      mov $1,$0
-      sub $0,1
-      add $3,1
-      div $1,$3
-      add $5,$1
-    lpe
-    mov $1,$5
-    mov $9,$8
-    lpb $9
-      mov $7,$1
-      sub $9,1
-    lpe
-  lpe
-  lpb $6
-    mov $6,0
-    sub $7,$1
-  lpe
-  mov $1,$7
-  mul $1,2
-  add $1,2
-  div $1,4
-  add $11,$1
+add $0,1
+lpb $0
+  mov $1,$0
+  cal $1,211264 ; Number of integer pairs (x,y) such that 0 < x < y <= n and x*y <= n.
+  trn $0,$1
 lpe
-mov $1,$11
 sub $1,1

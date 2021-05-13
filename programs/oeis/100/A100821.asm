@@ -1,6 +1,6 @@
 ; A100821: a(n) = 1 if prime(n) + 2 = prime(n+1), otherwise 0.
 ; 0,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0
 
-cal $0,1223 ; Prime gaps: differences between consecutive primes.
-cmp $0,2
+add $0,1
+cal $0,62301 ; Number of ways writing n-th prime as a sum of two primes.
 mov $1,$0
