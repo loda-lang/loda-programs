@@ -3,9 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,235127 ; Greatest k such that 4^k divides n.
+  cal $2,11765 ; Period 4: repeat [0, 0, 0, 1].
   div $0,2
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  add $1,$2
 lpe

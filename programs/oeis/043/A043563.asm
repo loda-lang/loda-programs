@@ -1,12 +1,15 @@
 ; A043563: Number of runs in base-11 representation of n.
 ; 1,1,1,1,1,1,1,1,1,1,1,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2
 
-lpb $0
-  mov $2,$0
-  cal $2,55961 ; a(n) = n - (reversal of base-11 digits of n) (written in base 10).
-  mod $0,1
-  pow $2,2
-  mov $1,$2
-  min $1,1
+mov $2,$0
+cal $0,56960 ; Base 11 reversal of n (written in base 10).
+sub $2,$0
+lpb $2
+  lpb $0
+    div $0,10
+    mov $1,83095
+    mov $2,1
+  lpe
 lpe
+div $1,83095
 add $1,1

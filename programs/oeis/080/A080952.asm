@@ -3,13 +3,7 @@
 
 add $0,1
 max $0,0
-mov $1,-1
-mov $2,2
-mov $3,2
-mov $4,-97
-cal $0,82139 ; A transform of binomial(n,5).
-mov $1,4
+mov $1,1
+cal $0,54849 ; a(n) = 2^(n-5)*binomial(n,5). Number of 5D hypercubes in an n-dimensional hypercube.
 mov $1,$0
-div $1,2
-mov $3,-4
-mov $4,2
+div $1,4
