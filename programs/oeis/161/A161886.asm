@@ -3,8 +3,5 @@
 
 add $0,1
 cal $0,6590 ; a(n) = Sum_{k=1..n} ceiling(n/k).
-mul $0,19
 mov $1,$0
-sub $1,56
-div $1,19
-add $1,1
+sub $1,2

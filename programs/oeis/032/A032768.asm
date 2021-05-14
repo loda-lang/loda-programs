@@ -4,8 +4,7 @@
 add $0,2
 pow $0,2
 lpb $0
-  sub $0,1
-  trn $0,4
+  sub $0,5
   add $1,$0
 lpe
 div $1,2

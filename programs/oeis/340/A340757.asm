@@ -1,0 +1,11 @@
+; A340757: Counterexamples to a conjecture of Ramanujan about congruences related to the partition function.
+; 243,586,1272,2301,2644,2987,3673,4702,5045,5388,6074,7103,7446,7789,8475,9504,9847,10190,10876,11905,12248,12591,13277,14306,14649,14992,15678,16707,17050,17393,18079,19108,19451,19794,20480,21509,21852,22195,22881,23910
+
+add $0,2
+cal $0,47313 ; Numbers that are congruent to {1, 4, 5, 6} mod 7.
+add $0,3
+mov $1,5
+add $1,$0
+sub $1,13
+mul $1,343
+add $1,243

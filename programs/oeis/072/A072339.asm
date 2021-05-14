@@ -2,14 +2,10 @@
 ; 1,1,2,1,3,2,2,1,3,3,4,2,3,2,2,1,3,3,4,3,5,4,4,2,3,3,4,2,3,2,2,1,3,3,4,3,5,4,4,3,5,5,6,4,5,4,4,2,3,3,4,3,5,4,4,2,3,3,4,2,3,2,2,1,3,3,4,3,5,4,4,3,5,5,6,4,5,4,4,3,5,5,6,5,7,6,6,4,5,5,6,4,5,4,4,2,3,3,4,3,5,4,4,3,5
 
 lpb $0
-  cal $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
-  sub $0,1
-  mov $2,1
-  lpb $2
-    add $1,2
-    trn $2,$0
-    mul $2,$0
-  lpe
+  mov $2,$0
+  mul $2,2
+  cal $2,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
+  sub $0,$2
+  add $1,1
 lpe
-div $1,2
 add $1,1

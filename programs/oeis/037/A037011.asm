@@ -1,16 +1,6 @@
 ; A037011: Baum-Sweet cubic sequence.
 ; 1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,1
-lpb $0
-  add $4,$1
-  mov $1,$0
-  mul $4,$0
-  lpb $0
-    mod $4,3
-    lpb $4
-      clr $0,12
-    lpe
-  lpe
-  div $0,2
-lpe
+cal $0,57227 ; Smallest member of smallest set S(n) of positive integers containing n which satisfies "k is in S, iff 2k-1 is in S, iff 4k is in S".
+mod $0,2
+mov $1,$0
