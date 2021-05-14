@@ -15,16 +15,10 @@ lpb $8
     cal $2,14495 ; Central binomial coefficient - 1.
     trn $0,2
     add $3,$2
-    add $2,1
     add $3,1
-    mov $4,$2
-    min $4,1
-    add $5,$4
   lpe
-  mov $1,$5
   mov $1,$3
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe

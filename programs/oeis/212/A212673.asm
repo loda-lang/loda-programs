@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  sub $0,$0
+  mov $0,0
   pow $1,2
   cal $1,153448 ; 3 times 12-gonal (or dodecagonal) numbers: 3*n*(5*n-4).
   div $1,24

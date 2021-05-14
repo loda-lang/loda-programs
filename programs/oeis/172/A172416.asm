@@ -6,11 +6,6 @@ lpb $0
   cal $2,84214 ; Inverse binomial transform of a math magic problem.
   sub $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$5
-mov $3,$1
 div $1,2
 add $1,1

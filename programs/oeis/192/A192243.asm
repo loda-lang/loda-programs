@@ -3,18 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,93960 ; a(1) = 1, a(2) = 2, a(n + 1) = n*a(1) + (n-1)*a(2) + ...(n-r)*a(r + 1) + ... + a(n).
   sub $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  mov $6,$1
-  cmp $6,0
-  add $1,$6
-  mod $2,$1
-  add $5,$4
 lpe
-mov $3,$4
-mov $3,$1
 add $1,1

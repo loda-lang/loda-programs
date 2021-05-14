@@ -7,12 +7,6 @@ lpb $0
   max $2,0
   cal $2,14301 ; Number of internal nodes of even outdegree in all ordered rooted trees with n edges.
   add $1,$2
-  mov $4,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1
 mul $1,3
 add $1,1

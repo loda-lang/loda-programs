@@ -3,14 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  mov $3,1
   cal $2,153339 ; Number of zig-zag paths from top to bottom of a rectangle of width 5 with n rows whose color is that of the top right corner
   trn $0,3
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 div $1,4

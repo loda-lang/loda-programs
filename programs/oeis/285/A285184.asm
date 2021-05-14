@@ -3,21 +3,11 @@
 
 lpb $0
   mov $2,$0
-  mov $2,$0
   sub $2,2
   max $2,0
   cal $2,193641 ; Number of arrays of -1..1 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero.
   sub $0,1
   add $1,$2
-  mov $2,2
-  sub $2,$1
-  mov $4,$2
-  div $2,2
-  min $4,1
-  add $5,$4
-  sub $4,$0
 lpe
-mov $3,$4
-mov $3,$1
 mul $1,2
 add $1,1

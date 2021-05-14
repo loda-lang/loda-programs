@@ -3,7 +3,6 @@
 
 add $0,1
 mov $1,$0
-max $0,0
 cal $0,71724 ; a(n) = 3*binomial(2n, n-1)/(n+2), n > 0, with a(0)=1.
 add $1,1
 mul $1,$0

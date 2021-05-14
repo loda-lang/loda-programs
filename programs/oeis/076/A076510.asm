@@ -3,42 +3,13 @@
 
 add $0,1
 mov $1,2
-mov $2,$0
-mov $4,5
-mov $12,4
 lpb $0
-  max $0,1
-  mov $2,$4
-  mov $3,$4
-  add $8,1
-  mul $1,$8
-  lpb $8
-    mov $7,$0
-    cmp $7,0
-    add $0,$7
-    dif $3,$0
-    mul $3,4
-    trn $2,$3
-    cmp $3,$2
-    sub $2,2
-    cmp $3,0
-    mul $3,$0
-    mov $4,1
-    mov $6,1
-    dif $8,4
-    mov $9,1
-    mov $11,1
-    mov $12,1
+  add $2,1
+  mul $1,$2
+  lpb $2
+    dif $2,4
   lpe
   sub $0,1
-  bin $4,2
-  mov $5,1
-  sub $6,6
-  add $6,$3
-  mod $8,4
-  mov $10,1
 lpe
-add $6,1
-mov $6,$1
 div $1,2
 mul $1,3

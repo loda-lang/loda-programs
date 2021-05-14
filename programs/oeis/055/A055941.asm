@@ -3,10 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,48967 ; Number of even entries in row n of Pascal's triangle (A007318).
-  mov $0,$2
+  cal $2,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); 2^A000120(n).
+  sub $0,$2
   mov $3,$2
   min $3,1
-  sub $0,$3
   add $1,$3
 lpe

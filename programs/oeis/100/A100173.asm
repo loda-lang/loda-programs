@@ -4,6 +4,5 @@
 mov $1,$0
 cal $0,100158 ; Structured disdyakis triacontahedral numbers (vertex structure 11).
 add $1,$0
-mul $1,2
-div $1,4
+div $1,2
 add $1,1

@@ -4,13 +4,9 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,141583 ; Squares of tribonacci numbers A000213.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  sub $0,$4
-  add $5,$4
+  mov $3,$2
+  min $3,1
+  sub $0,$3
 lpe
-mov $3,$0
-mov $3,$1

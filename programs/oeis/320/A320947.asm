@@ -9,27 +9,12 @@ lpb $29
   sub $29,1
   add $0,$29
   sub $0,1
-  sub $4,$0
   max $0,0
   cal $0,23610 ; Convolution of Fibonacci numbers and {F(2), F(3), F(4), ...}.
   mul $0,2
   add $1,$0
   sub $1,1
-  add $2,1
-  mov $3,$2
-  mov $4,$2
-  pow $2,2
-  mov $3,1
-  sub $4,1
-  add $4,$0
-  mov $26,$1
-  cmp $26,0
-  add $1,$26
-  dif $2,$1
-  mov $3,1
-  cal $3,130234 ; Minimal index k of a Fibonacci number such that Fibonacci(k) >= n (the 'upper' Fibonacci Inverse).
   mov $30,$29
-  cmp $30,1
   mul $30,$1
   add $28,$30
 lpe

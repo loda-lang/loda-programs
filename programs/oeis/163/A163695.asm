@@ -4,20 +4,8 @@
 mov $1,$0
 cal $0,168043 ; Let S(1)={1} and, for n>1 let S(n) be the smallest set containing x+1, x+2, and 2*x for each element x in S(n-1). a(n) is the number of elements in S(n).
 sub $1,3
-mov $4,$1
-pow $4,2
-mov $5,$1
 add $1,$0
-mov $3,$1
-cmp $3,0
-add $1,$3
-mov $4,$0
-div $0,2
-pow $5,2
-div $5,$1
-add $1,2
-mov $2,2
-add $5,1
-sub $0,$5
-mov $4,$1
-add $1,2
+mov $2,$1
+cmp $2,0
+add $1,$2
+add $1,4

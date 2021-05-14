@@ -43,7 +43,7 @@ lpb $20
         add $0,$9
         sub $1,$7
         add $1,$0
-        sub $0,$0
+        mov $0,0
         pow $8,2
         add $8,$1
         mov $1,$8

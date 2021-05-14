@@ -9,7 +9,7 @@ lpb $3
   add $0,$3
   sub $0,1
   mov $4,$0
-  trn $0,0
+  max $0,0
   cal $0,40 ; The prime numbers.
   mul $4,$0
   add $0,$4

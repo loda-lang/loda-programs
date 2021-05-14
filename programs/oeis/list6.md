@@ -348,7 +348,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306447](http://oeis.org/A306447) ([L08 program](306/A306447.asm)): Number of (undirected) Hamiltonian cycles in the n-antiprism graph.
 * [A306546](http://oeis.org/A306546) ([L09 program](306/A306546.asm)): Modified Collatz Map such that odd numbers are treated the same, but even numbers have all factors of 2 removed.
 * [A306556](http://oeis.org/A306556) ([L03 program](306/A306556.asm)): Integers that appear as (unreduced) numerators of segment endpoints when a ternary Cantor set is created.
-* [A306561](http://oeis.org/A306561) ([L11 program](306/A306561.asm)): Square numbers that are also central polygonal numbers (i.e., square numbers found in the Lazy Caterer's sequence).
+* [A306561](http://oeis.org/A306561) ([L19 program](306/A306561.asm)): Square numbers that are also central polygonal numbers (i.e., square numbers found in the Lazy Caterer's sequence).
 * [A306672](http://oeis.org/A306672) ([L09 program](306/A306672.asm)): Partial sums of the even Lucas numbers (A014448).
 * [A306683](http://oeis.org/A306683) ([L41 program](306/A306683.asm)): Integers k for which the base-phi representation of k does not include 1 or phi.
 * [A306694](http://oeis.org/A306694) ([L04 program](306/A306694.asm)): a(n) is the denominator of log(A014963(n))/log(n) if n > 1 and a(1) = 1.
@@ -935,6 +935,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318505](http://oeis.org/A318505) ([L26 program](318/A318505.asm)): Sum of divisors of n, up to, but not including the second largest of them A032742(n); a(1) = 0 by convention.
 * [A318624](http://oeis.org/A318624) ([L44 program](318/A318624.asm)): Number of 3-member subsets of [3*n] whose elements sum to a multiple of n.
 * [A318666](http://oeis.org/A318666) ([L06 program](318/A318666.asm)): a(n) = 2^{the 3-adic valuation of n}.
+* [A318742](http://oeis.org/A318742) ([L21 program](318/A318742.asm)): a(n) = Sum_{k=1..n} floor(n/k)^3.
+* [A318743](http://oeis.org/A318743) ([L21 program](318/A318743.asm)): a(n) = Sum_{k=1..n} floor(n/k)^4.
+* [A318744](http://oeis.org/A318744) ([L21 program](318/A318744.asm)): a(n) = Sum_{k=1..n} floor(n/k)^5.
 * [A318755](http://oeis.org/A318755) ([L07 program](318/A318755.asm)): a(n) = Sum_{k=1..n} tau(k)^3, where tau is A000005.
 * [A318765](http://oeis.org/A318765) ([L06 program](318/A318765.asm)): a(n) = (n + 2)*(n^2 + n - 1).
 * [A318791](http://oeis.org/A318791) ([L07 program](318/A318791.asm)): Prime generating polynomial: a(n) = 9*n^2 - 249*n + 1763.
@@ -1411,6 +1414,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330002](http://oeis.org/A330002) ([L04 program](330/A330002.asm)): Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
 * [A330003](http://oeis.org/A330003) ([L06 program](330/A330003.asm)): Beatty sequence for (x+1)^2, where 1/x + 1/(x+1)^2 = 1.
 * [A330023](http://oeis.org/A330023) ([L36 program](330/A330023.asm)): a(n) counts the cube-words immediately before a(n), with a(1) = 0.
+* [A330025](http://oeis.org/A330025) ([L06 program](330/A330025.asm)): a(n) = (-1)^floor(n/5) * sign(mod(n, 5)).
 * [A330038](http://oeis.org/A330038) ([L19 program](330/A330038.asm)): a(1) = 1, a(n) = [n/2] + a([n/2]) + a([(n+1)/2]) for n > 1, where [x] = floor(x).
 * [A330063](http://oeis.org/A330063) ([L71 program](330/A330063.asm)): Beatty sequence for x, where 1/x + sech(x) = 1.
 * [A330064](http://oeis.org/A330064) ([L04 program](330/A330064.asm)): Beatty sequence for cosh(x), where 1/x + sech(x) = 1.
@@ -1465,7 +1469,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330859](http://oeis.org/A330859) ([L07 program](330/A330859.asm)): The additive version of the 'Decade transform' : to obtain a(n) write n as a sum of its power-of-ten parts and then continue to calculate the sum of the adjacent parts until a single number remains.
 * [A330866](http://oeis.org/A330866) ([L08 program](330/A330866.asm)): a(n) = Sum_{d|n, d<n} (n/d) * (n-d).
 * [A330881](http://oeis.org/A330881) ([L07 program](330/A330881.asm)): Length of longest LB factorization over all binary strings of length n.
-* [A330926](http://oeis.org/A330926) ([L14 program](330/A330926.asm)): a(n) = Sum_{k=1..n} (ceiling(n/k) mod 2).
+* [A330926](http://oeis.org/A330926) ([L03 program](330/A330926.asm)): a(n) = Sum_{k=1..n} (ceiling(n/k) mod 2).
 * [A330938](http://oeis.org/A330938) ([L59 program](330/A330938.asm)): Numbers that cannot be written as the sum of four proper powers. A proper power is an integer of the form a^b where a,b are integers greater than or equal to 2.
 * [A330983](http://oeis.org/A330983) ([L28 program](330/A330983.asm)): Alternatively add and multiply pairs of the nonnegative integers.
 * [A330987](http://oeis.org/A330987) ([L17 program](330/A330987.asm)): Alternatively add and half-multiply pairs of the nonnegative integers.
@@ -1617,7 +1621,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335956](http://oeis.org/A335956) ([L05 program](335/A335956.asm)): a(n) = (2^n - 1)*2^valuation(n, 2) for n > 0 and a(0) = 0.
 * [A335979](http://oeis.org/A335979) ([L03 program](335/A335979.asm)): Number of partitions of n into exactly two parts with no decimal carries.
 * [A336040](http://oeis.org/A336040) ([L03 program](336/A336040.asm)): Characteristic function of refactorable numbers (A033950).
-* [A336102](http://oeis.org/A336102) ([L16 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
+* [A336102](http://oeis.org/A336102) ([L14 program](336/A336102.asm)): Number of inseparable multisets of size n covering an initial interval of positive integers.
 * [A336109](http://oeis.org/A336109) ([L38 program](336/A336109.asm)): First column of dispersion array A120861.
 * [A336146](http://oeis.org/A336146) ([L05 program](336/A336146.asm)): Lexicographically earliest infinite sequence such that a(i) = a(j) => A000035(i) = A000035(j) and A000265(i) = A000265(j), for all i, j >= 1.
 * [A336276](http://oeis.org/A336276) ([L07 program](336/A336276.asm)): a(n) = Sum_{k=1..n} mu(k)*k^2.
@@ -1649,6 +1653,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337004](http://oeis.org/A337004) ([L18 program](337/A337004.asm)): Turn sequence of the R5 dragon curve.
 * [A337024](http://oeis.org/A337024) ([L05 program](337/A337024.asm)): Number of ways to tile a 2n X 2n square with 1 X 1 white and n X n black squares.
 * [A337130](http://oeis.org/A337130) ([L05 program](337/A337130.asm)): a(n) is the sum of all products of pairs of numbers joined by the diagonals of an n-gon when its vertices are numbered from 1 to n in order.
+* [A337134](http://oeis.org/A337134) ([L12 program](337/A337134.asm)): a(n) = Sum_{k=1..n} floor(sqrt(2k-1)).
 * [A337173](http://oeis.org/A337173) ([L10 program](337/A337173.asm)): a(n) = Sum_{k=1..floor(n/2)} k^2 * (n-k)^2.
 * [A337174](http://oeis.org/A337174) ([L08 program](337/A337174.asm)): Number of pairs of divisors of n (d1,d2) such that d1 <= d2 and d1*d2 >= n.
 * [A337175](http://oeis.org/A337175) ([L04 program](337/A337175.asm)): Number of pairs of divisors of n, (d1,d2), such that d1 <= d2 and d1*d2 < n.
@@ -1845,6 +1850,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A341865](http://oeis.org/A341865) ([L07 program](341/A341865.asm)): The cardinality of the largest multiset of positive integers whose product and sum equals n.
 * [A341866](http://oeis.org/A341866) ([L13 program](341/A341866.asm)): The cardinality of the smallest (nontrivial, except for prime n) multiset of positive integers whose product and sum equal n.
 * [A341995](http://oeis.org/A341995) ([L07 program](341/A341995.asm)): a(n) = 1 if the arithmetic derivative (A003415) of n is a prime, otherwise 0.
+* [A341999](http://oeis.org/A341999) ([L07 program](341/A341999.asm)): a(n) = 1 if the k-th arithmetic derivative is nonzero for all k >= 0, otherwise 0.
+* [A342089](http://oeis.org/A342089) ([L03 program](342/A342089.asm)): Numbers that have two representations as the sum of distinct non-consecutive Lucas numbers (A000032).
 * [A342112](http://oeis.org/A342112) ([L03 program](342/A342112.asm)): Drop the final digit of n^5.
 * [A342126](http://oeis.org/A342126) ([L07 program](342/A342126.asm)): The binary expansion of a(n) corresponds to that of n where all the 1's have been replaced by 0's except in the first run of 1's.
 * [A342131](http://oeis.org/A342131) ([L03 program](342/A342131.asm)): a(n) = n/2 + floor(n/4) if n is even, otherwise (3*n+1)/2.

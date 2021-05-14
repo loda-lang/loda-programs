@@ -7,10 +7,5 @@ lpb $0
   max $2,0
   cal $2,202206 ; a(n) = 3*a(n-1)+3*a(n-2) with a(0)=1 and a(1)=2.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 mul $1,21
-mov $4,2

@@ -8,9 +8,5 @@ lpb $0
   max $2,0
   cal $2,163141 ; a(n) = 5*a(n-2) for n > 2; a(1) = 4, a(2) = 5.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 add $1,1

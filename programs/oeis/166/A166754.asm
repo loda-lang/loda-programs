@@ -3,15 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,284353 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
+  sub $0,1
   add $1,$2
-  mov $3,$0
-  trn $0,1
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-sub $3,$0
-mov $3,$1
 add $1,1

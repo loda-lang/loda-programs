@@ -8,9 +8,5 @@ lpb $0
   max $2,0
   cal $2,90860 ; Number of ways of 4-coloring a map in which there is a central circle surrounded by an annulus divided into n-1 regions. There are n regions in all.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 div $1,24

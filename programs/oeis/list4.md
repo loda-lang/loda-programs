@@ -459,6 +459,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210978](http://oeis.org/A210978) ([L09 program](210/A210978.asm)): A186029 and positive terms of A001106 interleaved.
 * [A210981](http://oeis.org/A210981) ([L06 program](210/A210981.asm)): A062725 and positive terms of A051682 interleaved.
 * [A210982](http://oeis.org/A210982) ([L08 program](210/A210982.asm)): Zero together with A126264 and positive terms of A051624 interleaved.
+* [A210983](http://oeis.org/A210983) ([L10 program](210/A210983.asm)): Total number of pairs of states of the first n subshells of the nuclear shell model in which the subshells are ordered by energy level in increasing order.
+* [A210984](http://oeis.org/A210984) ([L11 program](210/A210984.asm)): Total number of states of the first n subshells of the nuclear shell model in which the subshells are ordered by energy level in increasing order.
 * [A211006](http://oeis.org/A211006) ([L17 program](211/A211006.asm)): Pair (n,p) where n is the sum of adjacent nonprimes and p is the sum of adjacent primes.
 * [A211007](http://oeis.org/A211007) ([L06 program](211/A211007.asm)): Surface area of the first n faces of the structure mentioned in A211006.
 * [A211010](http://oeis.org/A211010) ([L09 program](211/A211010.asm)): Value on the axis "x" of the endpoint of the structure of A211000 at n-th stage.
@@ -1836,7 +1838,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A235089](http://oeis.org/A235089) ([L06 program](235/A235089.asm)): a(n)*Pi is the total length of irregular spiral (center points: 2, 1, 3, 4) after n rotations.
 * [A235115](http://oeis.org/A235115) ([L13 program](235/A235115.asm)): Number of independent vertex subsets of the graph obtained by attaching two pendant edges to each vertex of the star graph S_n (having n vertices; see A235114).
 * [A235127](http://oeis.org/A235127) ([L05 program](235/A235127.asm)): Greatest k such that 4^k divides n.
-* [A235136](http://oeis.org/A235136) ([L26 program](235/A235136.asm)): a(n) = (2*n - 1) * a(n-2) for n>1, a(0) = a(1) = 1.
+* [A235136](http://oeis.org/A235136) ([L16 program](235/A235136.asm)): a(n) = (2*n - 1) * a(n-2) for n>1, a(0) = a(1) = 1.
 * [A235204](http://oeis.org/A235204) ([L05 program](235/A235204.asm)): Number of integer lattice points inside the square ABCD with side length n>0 with A(0|0), B(n*sqrt(2)/2| n*sqrt(2)/2), C(0| n*sqrt(2)) and D(-n*sqrt(2)/2| n*sqrt(2)/2).
 * [A235224](http://oeis.org/A235224) ([L12 program](235/A235224.asm)): a(0) = 0, and for n > 0, a(n) = largest k such that A002110(k-1) <= n, where A002110(k) gives the k-th primorial number.
 * [A235269](http://oeis.org/A235269) ([L07 program](235/A235269.asm)): floor(s*t/(s+t)), where s(n) are the squares, t(n) the triangular numbers.
@@ -1855,6 +1857,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A235537](http://oeis.org/A235537) ([L13 program](235/A235537.asm)): Expansion of (6 + 13*x - 8*x^2 - 8*x^3 + 6*x^4)/((1 + x)^2*(1 - x)^3).
 * [A235643](http://oeis.org/A235643) ([L15 program](235/A235643.asm)): Total number of sides of a tetraflake-like fractal after n iterations, a(1) = 16 (see comments).
 * [A235699](http://oeis.org/A235699) ([L07 program](235/A235699.asm)): a(n+1) = a(n) + (a(n) mod 10) + 1, a(0) = 0.
+* [A235700](http://oeis.org/A235700) ([L14 program](235/A235700.asm)): a(n+1) = a(n) + (a(n) mod 5), a(1)=1.
 * [A235702](http://oeis.org/A235702) ([L08 program](235/A235702.asm)): Fixed points of A001175 (Pisano periods).
 * [A235711](http://oeis.org/A235711) ([L04 program](235/A235711.asm)): Arithmetic derivative of quarter squares.
 * [A235796](http://oeis.org/A235796) ([L03 program](235/A235796.asm)): 2*n - 1 - sigma(n).
@@ -1890,6 +1893,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A236327](http://oeis.org/A236327) ([L16 program](236/A236327.asm)): a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3, 4, 5; pattern 2) after n rotations.
 * [A236332](http://oeis.org/A236332) ([L10 program](236/A236332.asm)): The number of orbits of 4-tuples of the dihedral group of order 2n acting on {1,2,...,n}.
 * [A236337](http://oeis.org/A236337) ([L07 program](236/A236337.asm)): Expansion of (2 - x) / ((1 - x)^2 * (1 - x^3)) in powers of x.
+* [A236343](http://oeis.org/A236343) ([L07 program](236/A236343.asm)): Expansion of (1 - x + 2*x^2 - x^3) / ((1 - x)^2 * (1 - x^3)) in powers of x.
 * [A236348](http://oeis.org/A236348) ([L05 program](236/A236348.asm)): Expansion of (1 - x + 2*x^2 + x^3) / ((1 - x) * (1 - x^3)) in powers of x.
 * [A236364](http://oeis.org/A236364) ([L20 program](236/A236364.asm)): Sum of all the middle parts in the partitions of 3n into 3 parts.
 * [A236398](http://oeis.org/A236398) ([L03 program](236/A236398.asm)): Period 4: repeat 1,1,2,1.
@@ -2097,7 +2101,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241235](http://oeis.org/A241235) ([L26 program](241/A241235.asm)): a(n) = number of times n appears in A006949.
 * [A241271](http://oeis.org/A241271) ([L19 program](241/A241271.asm)): a(n) = 6*a(n-1) + 3*(2^(n-2)-1) for n > 2, a(0)=a(1)=a(2)=0.
 * [A241275](http://oeis.org/A241275) ([L09 program](241/A241275.asm)): a(n) = 6*a(n-1) + 5*(2^(n-1)-1) for n > 0, a(0) = 0.
-* [A241404](http://oeis.org/A241404) ([L18 program](241/A241404.asm)): Sum of n and the sum of the factorials of its digits.
+* [A241404](http://oeis.org/A241404) ([L16 program](241/A241404.asm)): Sum of n and the sum of the factorials of its digits.
 * [A241406](http://oeis.org/A241406) ([L14 program](241/A241406.asm)): Numbers n such that n^2 == -1 (mod 61).
 * [A241407](http://oeis.org/A241407) ([L09 program](241/A241407.asm)): Numbers n such that n^2 == -1 (mod 73).
 * [A241452](http://oeis.org/A241452) ([L07 program](241/A241452.asm)): a(n) = pg(3, n) + pg(4, n) + ... + pg(n, n) where pg(m, n) is the n-th m-th-order polygonal number.

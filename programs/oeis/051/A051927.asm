@@ -18,17 +18,14 @@ lpb $9
     add $0,$5
     sub $0,1
     add $1,$0
-    div $1,2
-    mov $2,$0
     max $0,0
+    div $1,2
     cal $0,34182 ; Number of not-necessarily-symmetric n X 2 crossword puzzle grids.
     add $0,$1
-    div $1,2
     mov $2,$0
     add $2,2
     mov $1,$2
     mov $6,$5
-    cmp $6,1
     mul $6,$2
     add $4,$6
   lpe
@@ -37,7 +34,6 @@ lpb $9
   mov $1,$4
   sub $1,$3
   mov $10,$9
-  cmp $10,1
   mul $10,$1
   add $8,$10
 lpe

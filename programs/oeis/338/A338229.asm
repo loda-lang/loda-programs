@@ -4,17 +4,7 @@
 lpb $0
   sub $1,$0
   mov $2,$0
-  max $2,0
   cal $2,190050 ; Expansion of ((1-x)*(3*x^2-3*x+1))/(1-2*x)^3
-  trn $0,1
+  sub $0,1
   add $1,$2
-  mov $6,$1
-  cmp $6,0
-  add $1,$6
-  mod $2,$1
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1

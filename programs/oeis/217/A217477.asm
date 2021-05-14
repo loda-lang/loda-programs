@@ -9,7 +9,7 @@ sub $2,$3
 sub $1,$2
 bin $2,$0
 lpb $0
-  sub $0,$0
+  mov $0,0
   mov $1,$2
   mul $1,2
 lpe

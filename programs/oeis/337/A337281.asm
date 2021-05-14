@@ -4,7 +4,4 @@
 mov $2,$0
 cal $0,73 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.
 mul $0,$2
-add $0,1
-mov $1,3
 mov $1,$0
-sub $1,1

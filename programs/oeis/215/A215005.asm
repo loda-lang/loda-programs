@@ -3,14 +3,10 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,1595 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $0,$4
+  mov $3,$2
+  min $3,1
+  add $0,$3
   trn $0,3
-  add $5,$4
 lpe
-mov $3,$1
-mov $5,$4

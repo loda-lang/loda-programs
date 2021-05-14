@@ -3,14 +3,7 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  add $4,2
   cal $2,163733 ; Number of n X 2 binary arrays with all 1's connected, all corners 1, and no 1 having more than two 1's adjacent.
   trn $0,2
   add $1,$2
-  add $3,$1
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1

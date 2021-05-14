@@ -3,8 +3,5 @@
 
 mov $1,$0
 trn $1,2
-add $1,32
 gcd $1,2
 pow $1,$0
-mov $2,1
-mov $2,$1

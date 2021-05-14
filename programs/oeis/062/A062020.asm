@@ -11,29 +11,14 @@ lpb $32
   mov $27,$0
   mov $29,$0
   lpb $29
-    clr $0,27
     mov $0,$27
     sub $29,1
     sub $0,$29
     mov $3,$0
-    max $0,0
     cal $0,75526 ; A008578(n+2) - A008578(n+1).
-    mov $5,$0
     mul $0,$3
-    add $1,$0
-    mov $2,$3
-    mov $4,3
-    sub $5,4
-    mov $26,$3
-    cmp $26,0
-    add $2,$26
-    div $1,$2
-    sub $1,$3
-    mov $1,$0
-    mov $5,$0
     add $28,$0
   lpe
-  mov $1,$28
   add $31,$28
 lpe
 mov $1,$31

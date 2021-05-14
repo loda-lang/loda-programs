@@ -6,6 +6,5 @@ pow $1,$0
 mov $2,6
 pow $2,$0
 mov $3,$2
-add $2,7
 sub $3,1
 sub $1,$3

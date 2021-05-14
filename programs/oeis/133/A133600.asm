@@ -3,16 +3,10 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,133628 ; a(1)=1, a(n) = a(n-1) + (p-1)*p^(n/2-1) if n is even, else a(n) = a(n-1) + p^((n-1)/2), where p=4.
-  div $0,7960
+  mov $0,0
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
-  mov $4,1
 lpe
-mov $3,$1
 div $1,4
 mul $1,3
 add $1,1

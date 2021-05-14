@@ -7,6 +7,4 @@ mul $1,$0
 div $0,3
 sub $1,2
 bin $1,$0
-mov $2,$1
 sub $1,1
-mov $3,0

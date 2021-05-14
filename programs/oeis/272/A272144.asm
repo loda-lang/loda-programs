@@ -3,14 +3,7 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  add $4,$0
   cal $2,295 ; Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1 of A173018).
-  trn $0,2
+  sub $0,2
   add $1,$2
-  mov $2,2
-  mov $4,1
-  add $5,1
 lpe
-mov $3,$5
-mov $3,$1

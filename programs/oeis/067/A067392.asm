@@ -5,7 +5,7 @@ mov $3,$0
 lpb $0
   sub $0,2
   mov $2,$0
-  sub $0,$0
+  mov $0,0
   add $1,1
   add $2,2
   cal $2,308473 ; Sum of numbers < n which have common prime factors with n.

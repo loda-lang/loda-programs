@@ -3,11 +3,7 @@
 
 sub $0,1
 max $0,0
-mov $3,1
 cal $0,61534 ; Expansion of (1-x^2)/(1-3*x-x^2+x^3).
 add $0,1
-mov $1,2
 mov $1,$0
 div $1,2
-mov $2,1
-mov $4,4

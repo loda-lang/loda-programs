@@ -7,15 +7,7 @@ lpb $0
   cal $2,97135 ; a(0) = 1; for n>0, a(n) = 3*Fibonacci(n).
   trn $0,5
   add $1,$2
-  pow $2,2
-  mov $4,$2
-  mov $2,30
-  min $4,1
-  add $5,$4
 lpe
-add $0,1
-mov $3,$5
-mov $3,$1
 sub $1,3
 div $1,3
 add $1,1

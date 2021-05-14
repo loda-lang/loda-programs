@@ -3,17 +3,9 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,206981 ; Number of nX2 0..1 arrays avoiding the patterns 0 1 0 or 1 0 1 in any row, column, diagonal or antidiagonal
   trn $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  mov $2,$4
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1
 div $1,4
 add $1,1
-div $4,9

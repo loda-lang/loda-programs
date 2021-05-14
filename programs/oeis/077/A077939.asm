@@ -3,14 +3,10 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,77997 ; Expansion of (1-x)/(1-2*x-x^2-x^3).
   add $1,$2
-  mov $4,$2
-  min $4,1
-  sub $0,$4
-  add $5,$4
+  mov $3,$2
+  min $3,1
+  sub $0,$3
 lpe
-mov $0,530
-mov $3,$1
 add $1,1
