@@ -3,13 +3,11 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,95792 ; a(n) = Z(n) - L(n), where Z=A072649 and L=A095791 are lengths of Zeckendorf and lazy Fibonacci representations in binary notation.
-  mov $3,$0
-  cmp $3,0
-  add $1,$3
+  cal $0,192687 ; Male-female differences: a(n) = A005378(n) - A005379(n).
+  add $1,$0
 lpe
