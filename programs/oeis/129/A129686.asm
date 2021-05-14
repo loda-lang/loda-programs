@@ -1,6 +1,7 @@
 ; A129686: Triangle read by rows: row n is 0^(n-3), 1, 0, 1.
 ; 1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1
 
-cal $0,167194 ; Triangle read by rows. A130713 in the columns.
-add $1,$0
-mod $1,2
+cal $0,185018 ; Inverse to sequence matrix for natural numbers.
+mov $1,1
+sub $1,$0
+cmp $1,0

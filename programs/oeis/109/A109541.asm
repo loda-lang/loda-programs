@@ -7,9 +7,9 @@ max $0,0
 mov $3,3
 sub $3,$2
 mov $1,$3
-sub $2,$2
+mov $2,0
 cal $0,293553 ; a(n) is the integer k that minimizes |k/Fibonacci(n) - 1/4|.
-mov $1,$2
+mov $1,0
 mov $1,$3
 mov $1,$0
 mul $1,6

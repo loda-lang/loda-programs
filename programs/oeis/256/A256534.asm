@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  sub $0,$0
+  mov $0,0
   trn $1,1
   cal $1,236305 ; The number of P-positions in the game of Nim with up to 3 piles, allowing for piles of zero, such that the number of objects in each pile does not exceed n.
 lpe

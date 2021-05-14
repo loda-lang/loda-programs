@@ -4,10 +4,5 @@
 mov $2,$0
 cal $0,91627 ; Number of ordered integer pairs (b,c) with 1 <= b,c <= n such that both roots of x^2+bx+c=0 are integers.
 add $0,$2
-mul $0,2
-add $0,4
-mul $0,2
 mov $1,$0
-sub $1,8
-div $1,4
 add $1,1
