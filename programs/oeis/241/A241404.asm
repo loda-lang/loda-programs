@@ -10,9 +10,7 @@ lpb $0
   cal $2,142
   mov $3,2
   add $4,$2
-  sub $5,$5
-  add $5,1
-  mul $5,2
+  mov $5,2
 lpe
 mov $1,$4
 mul $5,$3

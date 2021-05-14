@@ -8,9 +8,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   cal $0,160093 ; Number of digits in n, excluding any trailing zeros.
-  pow $0,2
   mov $3,$0
   sub $3,1
-  div $3,3
   add $1,$3
 lpe

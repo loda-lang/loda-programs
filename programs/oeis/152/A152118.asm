@@ -5,10 +5,9 @@ sub $0,1
 mov $2,$0
 max $0,0
 mov $1,0
-sub $2,$2
+mov $2,0
 cal $0,41011 ; Denominators of continued fraction convergents to sqrt(8).
 mov $1,-1
 mov $1,$0
-div $2,2
-sub $2,$2
+mov $2,0
 sub $2,$0
