@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,1
-cal $0,62558 ; Number of nonisomorphic cyclic subgroups of dihedral group with 2n elements.
+cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$0
 sub $1,2

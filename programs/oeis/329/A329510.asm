@@ -20,12 +20,9 @@ lpb $4
     lpe
     mov $2,$6
     mov $3,$6
-    mov $6,3
     lpb $6
       add $2,8
-      mov $6,1
-      trn $6,$3
-      mov $3,3
+      sub $6,$3
     lpe
     sub $2,1
   lpe

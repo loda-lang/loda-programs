@@ -1,8 +1,33 @@
 ; A330173: a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(2), s = sqrt(2) + 1, t = sqrt(2) + 2.
 ; 4,9,15,19,25,30,34,40,45,51,55,60,66,70,76,81,87,91,96,102,106,112,117,121,127,132,138,142,148,153,157,163,168,174,178,183,189,193,199,204,208,214,219,225,229,235,240,244,250,255,261,265,270,276,280,286
 
-cal $0,1952 ; A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
-add $1,$0 ; ; add it to the result register (to update the count of coprime k <= n)
-add $2,$1
-div $1,2
-add $1,$2
+mov $31,$0
+mov $33,$0
+add $33,1
+lpb $33
+  clr $0,31
+  mov $0,$31
+  sub $33,1
+  sub $0,$33
+  mov $27,$0
+  mov $29,2
+  lpb $29
+    mov $0,$27
+    sub $29,1
+    add $0,$29
+    sub $0,1
+    max $0,0
+    cal $0,189458 ; a(n) = n+[nr/s]+[nt/s]; r=2, s=sqrt(2), t=1+sqrt(2).
+    mov $1,$0
+    mov $30,$29
+    mul $30,$0
+    add $28,$30
+  lpe
+  min $27,1
+  mul $27,$1
+  mov $1,$28
+  sub $1,$27
+  add $1,1
+  add $32,$1
+lpe
+mov $1,$32

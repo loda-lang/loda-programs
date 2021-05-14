@@ -17,7 +17,7 @@ lpb $0,3
   add $3,$4
   mul $3,2
   mod $3,6
-  trn $4,$3
+  sub $4,$3
   add $4,1
   lpb $2
     sub $2,1

@@ -8,11 +8,5 @@ cal $1,277 ; 3*n - 2*floor(sqrt(4*n+5)) + 5.
 mov $2,1
 mul $2,$0
 mul $2,$1
-lpb $2
-  lpb $2
-    mov $2,1
-  lpe
-  sub $2,3
-lpe
 sub $0,$2
 mov $1,$0

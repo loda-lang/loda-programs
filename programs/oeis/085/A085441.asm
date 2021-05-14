@@ -3,10 +3,11 @@
 
 lpb $0
   mov $2,$0
-  cal $2,59978 ; a(n) = binomial(n+2,n)^6.
   sub $0,1
-  mul $2,2
+  add $2,2
+  bin $2,2
+  pow $2,6
   add $1,$2
 lpe
-div $1,2
+mov $2,$1
 add $1,1

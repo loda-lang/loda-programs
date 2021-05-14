@@ -7,7 +7,7 @@ lpb $0
   sub $0,3
   trn $5,5
   sub $0,$5
-  trn $0,1
+  sub $0,1
   add $1,$0
   mul $3,2
   add $3,4

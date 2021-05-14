@@ -3,10 +3,11 @@
 
 lpb $0
   mov $2,$0
-  cal $2,208138 ; Number of n X 4 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
   sub $0,1
+  add $2,2
+  bin $2,2
+  pow $2,2
   add $1,$2
 lpe
-div $1,9
 mul $1,2
 add $1,2

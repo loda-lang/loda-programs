@@ -8,7 +8,7 @@ lpb $0
   mov $1,$2
   sub $2,15
   add $4,$0
-  trn $0,$4
+  sub $0,$4
   add $0,4
 lpe
 trn $1,$0

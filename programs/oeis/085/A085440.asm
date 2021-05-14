@@ -3,10 +3,11 @@
 
 lpb $0
   mov $2,$0
-  add $2,1
-  cal $2,248720 ; a(n) = (n*(n+1))^5.
   sub $0,1
+  add $2,2
+  bin $2,2
+  pow $2,5
   add $1,$2
 lpe
-div $1,32
+mov $2,$1
 add $1,1

@@ -1,8 +1,7 @@
 ; A156821: Prime factors of 13! listed with multiplicity.
 ; 2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,5,5,7,11,13
 
-sub $0,5
-trn $0,3
+sub $0,8
 mov $2,1
 mov $3,1
 lpb $0

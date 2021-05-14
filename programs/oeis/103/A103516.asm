@@ -7,7 +7,7 @@ lpb $2
   add $4,$2
   mov $2,$0
   mov $3,1
-  trn $3,$0
+  sub $3,$0
   lpb $3
     sub $1,$1
     bin $4,2

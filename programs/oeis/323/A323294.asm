@@ -9,8 +9,7 @@ lpb $4
   add $0,$4
   sub $0,1
   mov $5,$0
-  sub $0,1
-  trn $0,2
+  sub $0,3
   trn $5,2
   add $5,1
   lpb $0

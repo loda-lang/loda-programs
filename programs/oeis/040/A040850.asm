@@ -6,7 +6,7 @@ gcd $0,4
 mov $4,$0
 add $0,1
 mov $1,2
-trn $1,$3
+sub $1,$3
 mov $2,$0
 cal $4,142
 add $0,$4
@@ -25,7 +25,7 @@ lpb $2
   trn $1,1
   sub $2,1
   mov $3,2
-  trn $3,$2
+  sub $3,$2
   mov $4,1
   lpb $3
     trn $3,$0

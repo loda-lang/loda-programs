@@ -11,7 +11,7 @@ lpb $2
     add $3,$2
     add $1,$3
   lpe
-  trn $1,1
+  sub $1,1
   sub $2,1
   trn $2,1
 lpe

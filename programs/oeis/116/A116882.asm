@@ -12,7 +12,7 @@ lpb $2
   sub $4,1
   add $4,$0
   mov $0,$4
-  trn $0,1
+  sub $0,1
   mov $5,1
   lpb $0
     div $0,2

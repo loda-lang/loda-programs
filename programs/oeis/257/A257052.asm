@@ -20,7 +20,7 @@ lpb $16
     add $5,$0
     add $0,$5
     mul $3,$0
-    trn $0,5
+    sub $0,5
     trn $3,10
     trn $4,$5
     mov $8,$3
