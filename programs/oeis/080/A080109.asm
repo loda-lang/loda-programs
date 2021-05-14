@@ -1,26 +1,7 @@
 ; A080109: Square of primes of the form 4k+1 (A002144).
 ; 25,169,289,841,1369,1681,2809,3721,5329,7921,9409,10201,11881,12769,18769,22201,24649,29929,32761,37249,38809,52441,54289,58081,66049,72361,76729,78961,85849,97969,100489,113569,121801,124609,139129
 
-mov $2,261241
-mov $7,4
-lpb $2
-  sub $2,1
-  mov $3,$7
-  mov $5,11
-  cal $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $4,$0
-  trn $4,0
-  cmp $4,$0
-  lpb $5
-    mul $2,$4
-    add $6,5
-    add $1,$6
-    trn $5,6
-    add $7,2
-  lpe
-lpe
-sub $1,15
-div $1,15
-mul $1,24
-add $1,25
+cal $0,55131 ; Those composite s for which A055095[s] = 2.
+add $1,$0
+mul $1,$0
+div $1,9
