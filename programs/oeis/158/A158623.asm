@@ -3,12 +3,7 @@
 
 add $0,3
 bin $0,2
-mov $2,1
-mul $2,$0
-mov $1,$2
-lpb $0
-  sub $0,1
-  mod $0,3
-  add $3,1
-lpe
-mul $1,$3
+mov $2,3
+gcd $2,$0
+mul $0,$2
+mov $1,$0

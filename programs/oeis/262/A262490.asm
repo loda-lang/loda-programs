@@ -3,13 +3,11 @@
 
 add $0,1
 max $0,0
-max $0,0
+mov $1,6
 cal $0,182190 ; a(n) = 6*a(n-1) - a(n-2) + 4 with n > 1, a(0)=0, a(1)=4.
-add $0,20
-mul $1,$0
-add $1,7
+mov $1,-40040
 mov $1,$0
-sub $1,24
+sub $1,4
 div $1,4
 mul $1,8
 add $1,9

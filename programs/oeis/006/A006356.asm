@@ -3,8 +3,7 @@
 
 add $0,2
 max $0,0
-mov $1,18
+mov $1,7
 cal $0,106803 ; Expansion of x*(1-x)/(1-2*x-x^2+x^3).
-mov $1,823150
-max $1,$0
+mov $1,1
 mov $1,$0
