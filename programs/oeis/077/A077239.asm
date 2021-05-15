@@ -3,11 +3,5 @@
 
 mul $0,2
 add $0,1
-max $0,0
 cal $0,48694 ; Generalized Pellian with second term equal to 7.
-mov $1,0
 mov $1,$0
-mov $2,1
-mov $3,1
-mov $4,1
-mov $5,-1

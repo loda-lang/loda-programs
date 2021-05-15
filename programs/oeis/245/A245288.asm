@@ -13,8 +13,8 @@ lpb $9
   mov $5,$0
   lpb $2
     lpb $4
-      sub $0,$0
-      sub $4,$4
+      mov $0,0
+      mov $4,0
     lpe
     mov $3,1
     lpb $5

@@ -8,27 +8,18 @@ lpb $33
   mov $0,$31
   sub $33,1
   add $0,$33
-  trn $0,1
+  sub $0,1
   mov $27,$0
   mov $29,2
   lpb $29
-    clr $0,27
     mov $0,$27
     sub $29,1
     add $0,$29
-    trn $0,1
-    add $0,1
     max $0,0
-    mov $2,3
-    mov $4,4
-    mov $26,0
     cal $0,116734 ; Number of permutations of length n which avoid the patterns 231, 1432, 4123.
     sub $0,1
-    add $1,6
     mov $1,$0
-    mul $4,$0
     mov $30,$29
-    cmp $30,1
     mul $30,$0
     add $28,$30
   lpe
@@ -37,7 +28,6 @@ lpb $33
   mov $1,$28
   sub $1,$27
   mov $34,$33
-  cmp $34,1
   mul $34,$1
   add $32,$34
 lpe

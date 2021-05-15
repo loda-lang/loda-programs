@@ -13,29 +13,12 @@ lpb $10
   mov $7,$0
   add $7,1
   lpb $7
-    clr $0,5
     mov $0,$5
     sub $7,1
     sub $0,$7
-    sub $1,$0
-    mov $1,$0
-    add $2,1
-    mov $3,$0
-    max $0,0
-    sub $3,2
-    trn $2,$3
-    mul $3,2
-    add $3,255184
-    mul $3,$2
-    mod $2,82524
-    add $3,100
     cal $0,7955 ; Product of divisors of n.
-    mov $1,1
-    mov $1,$0
-    add $4,3
     add $6,$0
   lpe
-  mov $1,$6
   add $9,$6
 lpe
 mov $1,$9

@@ -3,9 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,162349 ; First differences of A160412.
-  trn $2,$1
-  mul $0,$2
+  cal $1,48883 ; a(n) = 3^wt(n), where wt(n) = A000120(n).
+  cmp $0,2
 lpe
-div $1,9
+div $1,3
 add $1,1

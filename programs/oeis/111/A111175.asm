@@ -5,46 +5,21 @@ mov $2,$0
 add $2,1
 pow $2,2
 add $2,1
-mov $5,0
-sub $5,$0
 lpb $2
   add $1,15
   sub $2,1
-  mov $11,$5
-  sub $5,$5
+  mov $5,0
   add $5,$1
   mov $3,$5
-  max $3,0
-  add $7,1
-  add $8,$1
-  mov $10,10
-  mov $11,8
+  add $6,1
   cal $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
-  trn $4,0
-  mov $10,4
-  lpb $7
+  max $4,0
+  lpb $6
     cmp $4,$0
     mul $2,$4
-    trn $7,4
+    trn $6,4
   lpe
-  add $5,1
-  div $7,9
 lpe
-mul $5,2
-mov $5,$1
-div $5,18
-mov $5,$1
-div $5,10
-mov $5,$1
-div $5,12
-mov $5,$1
-div $5,14
-mul $5,2
-mov $5,$1
-mov $6,$1
-mul $8,$11
-mov $9,$1
 div $1,30
-add $10,128

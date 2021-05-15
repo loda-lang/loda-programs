@@ -18,14 +18,10 @@ lpb $14
     sub $0,$11
     mov $2,$0
     add $2,$0
-    mov $7,$2
-    sub $2,$2
     mov $8,$0
     gcd $0,2
-    mov $1,$7
-    add $2,1
-    sub $1,$2
-    add $1,3
+    mov $1,$2
+    add $1,2
     mul $1,$0
     mov $0,$8
     add $1,1

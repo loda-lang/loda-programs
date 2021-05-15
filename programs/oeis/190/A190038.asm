@@ -6,9 +6,8 @@ mov $2,$0
 trn $2,1
 mov $3,$0
 lpb $0
-  sub $0,$0
-  sub $1,$1
-  add $1,5
+  mov $0,0
+  mov $1,5
   trn $2,1
 lpe
 sub $1,$2

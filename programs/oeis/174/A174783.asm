@@ -3,16 +3,7 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,210736 ; Expansion of (1 + sqrt( (1 + 2*x) / (1 - 2*x))) / 2 in powers of x.
   trn $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-add $1,2
-add $4,$0
-mov $3,$4
-mov $3,$1
-sub $1,2

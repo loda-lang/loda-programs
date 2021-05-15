@@ -7,11 +7,5 @@ lpb $0
   max $2,0
   cal $2,127546 ; a(n) = F(n)^2 + F(n+1)^2 + F(n+2)^2, where F(n) denotes the n-th Fibonacci number.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1
 add $1,1

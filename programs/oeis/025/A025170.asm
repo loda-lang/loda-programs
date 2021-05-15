@@ -5,7 +5,4 @@ add $0,1
 mul $0,2
 cal $0,88137 ; Generalized Gaussian Fibonacci integers.
 mov $1,$0
-sub $1,2
-div $1,6
-mul $1,3
-add $1,1
+div $1,2

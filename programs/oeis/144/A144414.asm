@@ -8,7 +8,5 @@ pow $1,$0
 mov $2,3
 mul $2,$0
 sub $1,$2
-mov $2,$1
-sub $1,4
 div $1,6
 add $1,1

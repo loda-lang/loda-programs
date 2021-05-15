@@ -3,7 +3,6 @@
 
 add $0,1
 mov $1,1
-mov $2,1
 mov $3,$0
 mov $4,$0
 lpb $3
@@ -12,32 +11,17 @@ lpb $3
   lpb $5
     mul $2,$3
     add $6,1
-    mov $7,$0
     trn $7,$5
-    mov $10,$2
-    cmp $10,0
-    add $2,$10
-    mod $7,$2
-    mov $10,$2
-    cmp $10,0
-    add $2,$10
-    div $0,$2
+    mov $8,$2
+    cmp $8,0
+    add $2,$8
     gcd $2,$6
     cmp $7,0
     sub $5,$7
   lpe
-  cmp $6,0
-  cmp $6,0
-  mov $7,$2
-  pow $7,$6
-  mul $1,$7
-  mov $2,4
+  mul $1,$2
   mov $7,$0
   cmp $7,1
   cmp $7,0
   sub $3,$7
-  add $8,$0
-  mov $9,3
 lpe
-add $4,308663
-mul $7,8

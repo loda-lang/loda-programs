@@ -4,17 +4,10 @@
 mov $1,$0
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,60816 ; a(0) = 1; a(n) = (5*3^(n-1) - 1)/2 for n > 0.
   trn $0,2
   add $1,$2
-  mov $4,$2
-  mov $2,14
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1
 div $1,3
 mul $1,2
 add $1,1

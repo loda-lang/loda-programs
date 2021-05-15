@@ -3,13 +3,11 @@
 
 lpb $0
   mov $2,$0
-  cal $2,276390 ; Bisection of A115716.
-  sub $0,1
-  mov $3,$2
-  min $3,1
-  add $3,$2
-  add $1,$3
+  sub $2,1
+  mov $0,$2
+  max $2,0
+  cal $2,115716 ; A divide-and-conquer sequence.
+  add $1,$2
 lpe
-div $1,4
 mul $1,2
 add $1,1

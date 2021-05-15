@@ -3,13 +3,11 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,4087 ; Primes written backwards.
   add $3,$2
   mov $4,$2
   min $4,1
   sub $0,$4
-  add $5,$4
 lpe
 add $1,$3
 add $1,2
