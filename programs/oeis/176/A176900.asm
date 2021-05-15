@@ -3,7 +3,5 @@
 
 mov $1,$0
 add $1,1
-mov $2,$0
-sub $2,1
 cal $0,128018 ; Expansion of (1-4*x)/(1-2*x+4*x^2).
 mul $1,$0

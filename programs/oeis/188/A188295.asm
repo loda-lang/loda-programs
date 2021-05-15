@@ -39,7 +39,7 @@ lpb $24
           trn $4,$3
           add $5,2
         lpe
-        sub $2,$2
+        mov $2,0
       lpe
       mov $1,$5
       mov $11,$9

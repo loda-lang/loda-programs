@@ -4,9 +4,9 @@
 mov $1,1
 lpb $0
   sub $0,1
-  sub $1,$1
+  mov $1,0
   mov $2,$0
-  sub $0,$0
+  mov $0,0
   max $2,0
   cal $2,120478 ; Binomial(n+6,5)-binomial(n,5).
   add $1,$2

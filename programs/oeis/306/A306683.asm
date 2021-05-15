@@ -12,7 +12,6 @@ lpb $11
   mov $5,$0
   mov $7,2
   lpb $7
-    clr $0,5
     mov $0,$5
     sub $7,1
     add $0,$7
@@ -22,15 +21,7 @@ lpb $11
     cal $0,187576 ; Rank transform of the sequence 2*floor((n-1)/2)); complement of A187577.
     add $0,3
     mov $1,$0
-    mov $1,$0
-    add $2,5
-    mov $3,$0
-    mov $3,$2
-    pow $2,2
-    mul $3,$0
-    mov $4,9
     mov $8,$7
-    cmp $8,1
     mul $8,$0
     add $6,$8
   lpe

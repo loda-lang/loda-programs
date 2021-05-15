@@ -20,7 +20,7 @@ lpb $8
     lpe
     add $10,1
     lpb $6
-      sub $6,$6
+      mov $6,0
     lpe
     pow $2,$3
     sub $2,1

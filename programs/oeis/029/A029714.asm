@@ -4,13 +4,9 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  max $2,0
   cal $2,7844 ; Least positive integer k for which 3^n divides k!.
   add $1,$2
-  mov $4,0
 lpe
-mov $3,$0
-mov $3,$1
 div $1,3
 mul $1,3
 add $1,1

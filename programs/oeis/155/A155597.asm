@@ -4,13 +4,9 @@
 mov $1,$0
 mov $0,6
 pow $0,$1
-mov $2,6
-mov $3,2
-pow $3,$1
-sub $0,$3
-mov $1,$0
-mul $1,32
-add $1,5
+mov $2,2
+pow $2,$1
+sub $0,$2
 mov $1,$0
 div $1,4
 mul $1,4

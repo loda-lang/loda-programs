@@ -7,11 +7,5 @@ lpb $0
   cal $2,296965 ; Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
   trn $0,2
   add $1,$2
-  mov $4,$2
-  add $4,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 div $1,2

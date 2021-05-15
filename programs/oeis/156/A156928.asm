@@ -3,15 +3,10 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,247620 ; Start with a single hexagon; at n-th generation add a hexagon at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
   add $1,$2
   add $3,$0
-  trn $0,1
+  sub $0,1
   sub $1,$3
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 add $1,1

@@ -3,22 +3,10 @@
 
 mov $1,$0
 lpb $1
-  div $1,2
-  mul $1,2
   cal $0,40 ; The prime numbers.
-  trn $0,2
-  sub $0,1
+  sub $0,3
   mov $1,4
-  mov $3,0
 lpe
 div $0,2
-add $1,7
-add $1,$3
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-lpb $3
-  add $1,53
-  mov $2,$0
-  mod $3,5
-lpe
 mov $1,$0
-mov $4,$0

@@ -1,14 +1,9 @@
 ; A229580: Number of defective 3-colorings of an n X 2 0..2 array connected horizontally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.
 ; 1,6,40,224,1152,5632,26624,122880,557056,2490368,11010048,48234496,209715200,905969664,3892314112,16642998272,70866960384,300647710720,1271310319616,5360119185408,22539988369408,94557999988736,395824185999360,1653665488175104,6896136929411072
 
+mov $1,4
+pow $1,$0
+mul $0,$1
+dif $1,2
+add $0,$1
 mov $1,$0
-mul $1,2
-add $1,1
-mov $2,4
-pow $2,$0
-mul $1,$2
-mul $1,2
-sub $1,3
-mul $1,2
-div $1,8
-add $1,1

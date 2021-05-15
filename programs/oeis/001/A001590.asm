@@ -21,18 +21,10 @@ lpb $12
       mov $2,$0
       max $2,0
       cal $2,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
-      trn $0,$0
-      mod $0,6
-      mov $3,2
-      add $3,$2
-      mov $4,$2
-      min $4,1
-      add $5,$4
+      mov $0,0
     lpe
-    mov $1,$0
     mov $1,$2
     mov $9,$8
-    cmp $9,1
     mul $9,$2
     add $7,$9
   lpe
@@ -41,7 +33,6 @@ lpb $12
   mov $1,$7
   sub $1,$6
   mov $13,$12
-  cmp $13,1
   mul $13,$1
   add $11,$13
 lpe

@@ -3,14 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,232508 ; Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally, diagonally or antidiagonally, with no adjacent elements equal.
   trn $0,3
   add $1,$2
-  mov $4,$2
-  mov $2,1
-  mov $4,1
-  add $5,1
 lpe
-mov $3,$1
 div $1,4

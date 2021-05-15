@@ -7,5 +7,4 @@ div $0,2
 gcd $1,2
 pow $1,$0
 div $1,2
-mov $2,$1
 add $1,1

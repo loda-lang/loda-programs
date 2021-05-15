@@ -21,16 +21,10 @@ lpb $18
     mov $3,$7
     cal $0,40 ; The prime numbers.
     add $1,$0
-    mov $4,$1
-    add $4,1
-    mov $8,1
     lpb $3
-      sub $3,1
-      mov $12,$1
       mul $1,2
+      sub $3,1
     lpe
-    sub $3,$0
-    sub $4,1
     add $14,$1
   lpe
   mov $1,$14

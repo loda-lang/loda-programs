@@ -3,15 +3,9 @@
 
 lpb $0
   mov $1,$0
-  max $1,0
   cal $1,56854 ; a(n) = Lucas(4*n).
   mul $0,2
   mod $0,2
-  add $3,$1
-  mov $4,$1
   add $1,1
-  min $4,1
-  add $5,$4
 lpe
-mov $2,$1
 add $1,1

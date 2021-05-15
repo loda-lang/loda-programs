@@ -8,7 +8,7 @@ mov $2,$0
 lpb $2
   mov $3,2
   lpb $0
-    sub $0,$0
+    mov $0,0
     sub $2,$3
     sub $2,$3
     mov $3,0

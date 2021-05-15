@@ -32,7 +32,7 @@ lpb $14
       lpe
       lpb $6
         add $0,8
-        sub $6,$6
+        mov $6,0
       lpe
       mov $2,$1
     lpe

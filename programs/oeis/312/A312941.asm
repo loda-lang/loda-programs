@@ -5,8 +5,7 @@ mov $3,1
 mov $6,$0
 lpb $0
   mov $4,$0
-  sub $0,$0
-  add $0,1
+  mov $0,1
   mov $7,$4
   mov $8,$4
   mod $8,3

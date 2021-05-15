@@ -3,15 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,206776 ; a(n) = 3*a(n-1) + 2*a(n-2) for n>1, a(0)=2, a(1)=3.
-  add $3,$2
   clr $0,2
-  dif $0,9
-  add $1,3
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
 mov $1,$2
 add $1,1

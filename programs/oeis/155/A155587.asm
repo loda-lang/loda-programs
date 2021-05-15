@@ -7,9 +7,6 @@ lpb $0
   max $2,0
   cal $2,212344 ; Sequence of coefficients of x^(n-3) in marked mesh pattern generating function Q_{n,132}^(0,3,0,0)(x).
   add $1,$2
-  mov $4,0
 lpe
-mov $3,$2
-mov $3,$1
 div $1,5
 add $1,1

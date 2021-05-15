@@ -3,6 +3,4 @@
 
 cal $0,184044 ; 1/9 the number of (n+1) X 6 0..2 arrays with all 2 X 2 subblocks having the same four values.
 mov $1,$0
-div $1,2
-sub $1,36
-mul $1,2
+sub $1,73

@@ -7,9 +7,6 @@ lpb $0
   max $2,0
   cal $2,83102 ; a(n) = 2*a(n-1) + 10*a(n-2).
   add $1,$2
-  mov $4,1
-  add $5,1
 lpe
-mov $3,$1
 mul $1,11
 add $1,1

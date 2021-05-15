@@ -3,15 +3,9 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  cal $2,14217 ; a(n) = floor(phi^n), where phi = (1+sqrt(5))/2 is the golden ratio.
-  trn $0,1
+  mov $0,0
+  cal $2,210728 ; a(n) = a(n-1) + a(n-2) + n + 2 with n>1, a(0)=1, a(1)=2.
+  div $2,2
   add $1,$2
-  add $2,67628
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-add $3,$0
-mov $3,$1
 add $1,1

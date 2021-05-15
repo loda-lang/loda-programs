@@ -4,14 +4,14 @@
 add $0,1
 mov $6,2
 pow $6,$0
-sub $0,$0
+mov $0,0
 mov $2,22
 lpb $2
   mov $4,5
   add $6,$2
   mov $2,$5
   lpb $4
-    sub $4,$4
+    mov $4,0
     add $6,1
   lpe
   bin $6,2

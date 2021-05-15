@@ -3,16 +3,9 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,275138 ; Number of n X 4 0..2 arrays with no element equal to any value at offset (-2,-2) (-1,-2) or (0,-1) and new values introduced in order 0..2.
-  trn $0,1
+  sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-pow $2,2
-mov $3,650
-mov $3,$1
 div $1,16
 add $1,1

@@ -4,7 +4,6 @@
 sub $0,1
 mov $1,4
 sub $2,$0
-mov $3,$0
 sub $0,3
 bin $2,$0
 bin $1,$2

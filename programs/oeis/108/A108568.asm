@@ -16,26 +16,15 @@ lpb $12
     mov $0,$6
     sub $8,1
     add $0,$8
-    trn $0,1
+    sub $0,1
     max $0,0
     cal $0,1043 ; Numbers that are the sum of 2 successive primes.
     sub $0,1
-    mov $2,$0
-    trn $2,$0
     add $3,$0
-    sub $0,1
-    mov $1,2
     mov $2,$3
     mul $2,2
     mov $1,$2
-    pow $3,2
-    mul $3,17
-    mov $4,0
-    sub $4,$2
-    add $4,290995
-    mov $5,0
     mov $9,$8
-    cmp $9,1
     mul $9,$2
     add $7,$9
   lpe

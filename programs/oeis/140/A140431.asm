@@ -3,18 +3,12 @@
 
 lpb $0
   mov $1,$0
-  add $2,$0
   cal $1,15441 ; Generalized Fibonacci numbers.
-  sub $0,$0
-  add $3,$1
-  mov $4,$1
+  mov $0,0
+  mov $2,$1
   mul $1,5
-  min $4,1
-  add $5,$4
+  min $2,1
 lpe
-add $1,$4
-mov $3,$2
-mov $2,$1
+add $1,$2
 div $1,6
 mul $1,2
-sub $5,1

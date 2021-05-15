@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  sub $0,$0
+  mov $0,0
   cal $1,266257 ; Total number of ON (black) cells after n iterations of the "Rule 11" elementary cellular automaton starting with a single ON (black) cell.
 lpe
 add $1,1

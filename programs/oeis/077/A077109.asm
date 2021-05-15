@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   cal $2,48763 ; Smallest cube >= n.
   sub $2,$0
-  sub $0,$0
+  mov $0,0
   add $1,$2
   add $1,$2
 lpe

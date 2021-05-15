@@ -4,14 +4,7 @@
 lpb $0
   mov $2,$0
   cal $2,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
-  trn $0,1
+  sub $0,1
   add $1,$2
-  trn $2,5
-  mov $4,$2
-  min $4,1
-  add $5,$4
-  mov $4,$1
 lpe
-mov $3,$0
-mov $3,$1
 add $1,1

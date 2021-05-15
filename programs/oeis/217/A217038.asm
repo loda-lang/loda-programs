@@ -9,7 +9,7 @@ lpb $3
   sub $0,$3
   mov $2,$0
   lpb $0
-    sub $2,$2
+    mov $2,0
     mov $4,$0
     sub $4,1
     cal $4,112526 ; Characteristic function for powerful numbers.

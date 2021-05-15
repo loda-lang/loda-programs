@@ -8,8 +8,4 @@ lpb $0
   max $2,0
   cal $2,54265 ; Sum of composite numbers between successive primes.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1

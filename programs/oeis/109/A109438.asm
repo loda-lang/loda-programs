@@ -3,16 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,105968 ; a(n) = 4*a(n-1) - a(n-2) - 2*(-1)^n, a(0) = 1, a(1) = 4.
-  trn $0,1
+  sub $0,1
   add $1,$2
-  mov $4,$2
-  bin $2,$1
-  min $4,1
-  add $5,$4
 lpe
-sub $2,4
-mov $3,$2
-mov $3,$1
 add $1,1

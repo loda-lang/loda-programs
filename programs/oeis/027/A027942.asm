@@ -5,5 +5,4 @@ mul $0,2
 add $0,1
 cal $0,116717 ; Number of permutations of length n which avoid the patterns 231, 1423, 3214.
 mov $1,$0
-add $0,2
 sub $1,1

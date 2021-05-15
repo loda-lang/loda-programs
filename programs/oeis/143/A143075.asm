@@ -4,13 +4,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,192748 ; Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
   trn $0,6
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-add $3,2
-mov $3,$1

@@ -1,12 +1,13 @@
 ; A046633: Number of cubic residues mod 5^n.
 ; 1,5,21,101,505,2521,12601,63005,315021,1575101,7875505,39377521,196887601,984438005,4922190021,24610950101,123054750505,615273752521,3076368762601,15381843813005,76909219065021,384546095325101
 
-max $0,0
-cal $0,33132 ; Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
-add $1,$0
-div $0,2
-add $1,4
-mov $1,$0
-div $1,3
+lpb $0
+  mov $2,$0
+  cal $2,169355 ; Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^31 = I.
+  trn $0,3
+  add $1,$2
+  add $1,$2
+lpe
+div $1,12
 mul $1,4
 add $1,1

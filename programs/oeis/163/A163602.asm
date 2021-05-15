@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
-  trn $0,0
+  max $0,0
   cal $0,62312 ; Nonprime numbers squared.
   mov $2,$3
   mov $4,$0

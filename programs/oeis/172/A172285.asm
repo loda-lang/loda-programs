@@ -15,15 +15,9 @@ lpb $8
     cal $2,115102 ; a(0)=2, a(1)=8, a(n)=a(n-1)+2*a(n-2).
     trn $0,2
     add $3,$2
-    mov $4,$2
-    min $4,1
-    add $5,$4
   lpe
-  mov $1,2
   mov $1,$3
-  mov $4,2
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe

@@ -3,7 +3,6 @@
 
 mov $21,$0
 mov $23,$0
-add $23,1
 lpb $23
   clr $0,21
   mov $0,$21
@@ -11,7 +10,6 @@ lpb $23
   sub $0,$23
   mov $18,$0
   mov $20,$0
-  add $20,1
   lpb $20
     clr $0,18
     mov $0,$18
@@ -24,7 +22,7 @@ lpb $23
       mov $0,$14
       sub $16,1
       add $0,$16
-      trn $0,1
+      sub $0,1
       mov $10,$0
       mov $12,2
       lpb $12
@@ -32,7 +30,7 @@ lpb $23
         mov $0,$10
         sub $12,1
         add $0,$12
-        trn $0,1
+        sub $0,1
         mov $6,$0
         mov $8,2
         lpb $8
@@ -40,23 +38,17 @@ lpb $23
           mov $0,$6
           sub $8,1
           add $0,$8
-          trn $0,1
+          sub $0,1
           lpb $0
             mov $2,$0
             max $2,0
             cal $2,47240 ; Numbers that are congruent to {0, 1, 2} mod 6.
+            sub $0,1
             add $3,$2
             mul $3,2
-            mov $4,$2
-            min $4,1
-            mov $5,$0
-            trn $0,1
-            add $5,$4
           lpe
-          mov $1,$4
           mov $1,$3
           mov $9,$8
-          cmp $9,1
           mul $9,$3
           add $7,$9
         lpe
@@ -65,7 +57,6 @@ lpb $23
         mov $1,$7
         sub $1,$6
         mov $13,$12
-        cmp $13,1
         mul $13,$1
         add $11,$13
       lpe
@@ -74,7 +65,6 @@ lpb $23
       mov $1,$11
       sub $1,$10
       mov $17,$16
-      cmp $17,1
       mul $17,$1
       add $15,$17
     lpe
@@ -84,7 +74,6 @@ lpb $23
     sub $1,$14
     add $19,$1
   lpe
-  mov $1,$19
   add $22,$19
 lpe
 mov $1,$22

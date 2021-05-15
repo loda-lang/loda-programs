@@ -7,10 +7,5 @@ lpb $0
   max $2,0
   cal $2,332754 ; a(n) = Sum_{k=1..n-1} ((-1)^(k+n+1)*binomial(k,floor(k/2))).
   add $1,$2
-  mov $3,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 add $1,1

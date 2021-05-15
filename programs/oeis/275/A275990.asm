@@ -6,17 +6,8 @@ sub $0,2
 mov $1,$0
 cal $0,40 ; The prime numbers.
 sub $1,2
-trn $0,$1
-div $1,4
-add $2,$1
-sub $1,$2
-sub $1,1
-mul $1,2
-mov $1,$0
+sub $0,$1
 mov $1,$0
 sub $1,4
 div $1,2
 mul $1,2
-mov $3,1
-mov $4,$0
-add $4,1

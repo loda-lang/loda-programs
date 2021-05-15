@@ -17,28 +17,16 @@ lpb $12
     mov $0,$7
     sub $9,1
     sub $0,$9
-    mov $2,$0
     lpb $0
-      mul $2,2
       mov $2,$0
-      max $2,0
-      mov $6,$0
       cal $2,285076 ; 1-limiting word of the morphism 0->10, 1-> 010.
       mov $0,1
       add $3,$2
-      mov $4,$2
-      min $4,1
-      add $5,2
-      add $5,$4
-      mov $6,1
     lpe
-    mov $1,$2
     mov $1,$3
     add $1,1
-    mov $5,4
     add $8,$1
   lpe
-  mov $1,$8
   add $11,$8
 lpe
 mov $1,$11

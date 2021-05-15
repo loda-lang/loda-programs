@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  sub $0,$0
+  mov $0,0
   cal $1,47524 ; Numbers that are congruent to {2, 7} mod 8.
 lpe
 mul $1,2

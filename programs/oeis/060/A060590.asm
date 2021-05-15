@@ -6,7 +6,3 @@ pow $1,$0
 sub $1,1
 dif $1,3
 mul $1,2
-mov $2,2
-min $2,$0
-mov $2,$0
-mov $3,1

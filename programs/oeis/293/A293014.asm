@@ -19,18 +19,13 @@ lpb $12
     sub $0,1
     lpb $0
       sub $0,2
-      add $2,2
       mov $2,$0
       max $2,0
       cal $2,130578 ; Number of different possible rows (or columns) in an n X n crossword puzzle.
       add $3,$2
-      mov $4,$2
-      min $4,1
-      add $5,$4
     lpe
     mov $1,$3
     mov $9,$8
-    cmp $9,1
     mul $9,$3
     add $7,$9
   lpe
@@ -39,7 +34,6 @@ lpb $12
   mov $1,$7
   sub $1,$6
   mov $13,$12
-  cmp $13,1
   mul $13,$1
   add $11,$13
 lpe

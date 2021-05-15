@@ -6,11 +6,5 @@ lpb $0
   cal $2,99571 ; Sum C(n-k+3,k), k=0..floor(n/2).
   sub $0,2
   add $1,$2
-  add $3,1
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
 add $1,1
-pow $3,2
-mov $3,$1

@@ -7,11 +7,5 @@ lpb $0
   max $2,0
   cal $2,162154 ; Odd-indexed terms are the number of consecutive prime numbers until a composite, even-indexed terms are the number of consecutive composite numbers until a prime.
   add $1,$2
-  add $4,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$5
-mov $3,$1
 add $1,2

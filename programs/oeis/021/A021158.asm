@@ -3,7 +3,7 @@
 
 mul $0,2
 sub $0,1
-trn $0,0
+max $0,0
 cal $0,36118 ; a(n) = 2^n mod 13.
 sub $0,1
 mov $1,$0

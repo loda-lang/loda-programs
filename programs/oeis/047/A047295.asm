@@ -6,7 +6,7 @@ lpb $2
   trn $2,2
   add $1,$2
   add $1,$0
-  sub $0,$0
+  mov $0,0
   trn $2,2
   sub $1,$2
   trn $2,1

@@ -3,10 +3,7 @@
 
 mov $1,-2
 pow $1,$0
-sub $2,$0
-add $2,2
-trn $2,$2
-sub $2,8
+mov $2,-8
 bin $2,$0
 mul $1,$2
 mul $1,6

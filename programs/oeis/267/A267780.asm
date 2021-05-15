@@ -3,12 +3,8 @@
 
 mov $1,4
 pow $1,$0
-add $0,1
-mod $0,2
-mul $1,2
-sub $1,4
-lpb $0
-  sub $0,1
-  trn $1,4
-lpe
+gcd $0,2
+div $1,2
+trn $1,$0
+mul $1,4
 add $1,1

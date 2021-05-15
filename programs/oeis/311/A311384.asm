@@ -9,7 +9,7 @@ lpb $18
   sub $18,1
   sub $0,$18
   mul $0,2
-  sub $2,$2
+  mov $2,0
   lpb $0
     mov $4,1
     clr $8,8

@@ -6,8 +6,6 @@ mul $0,2
 max $0,0
 cal $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
 mov $1,$0
-mov $1,$0
 div $1,2
 mul $1,4
 add $1,1
-mov $2,$0

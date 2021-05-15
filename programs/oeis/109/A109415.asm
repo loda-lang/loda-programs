@@ -7,13 +7,7 @@ add $0,$2
 lpb $0
   mov $2,$0
   cal $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  trn $0,2
+  sub $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-sub $0,5
-mov $3,$5
-mov $3,$1
 add $1,1

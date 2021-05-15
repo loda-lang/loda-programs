@@ -3,16 +3,12 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  cal $2,117861 ; Number of palindromes of length n (in base 9).
   sub $0,1
+  add $2,$1
+  gcd $2,2
   add $1,$2
-  mov $3,1
-  mov $4,$2
-  min $4,1
-  add $5,$4
+  mul $1,3
 lpe
-mov $3,$1
-div $1,8
+div $1,2
 mul $1,9
 add $1,11

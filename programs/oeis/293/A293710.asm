@@ -4,11 +4,6 @@
 mul $0,2
 sub $0,3
 max $0,0
-mov $2,1
 cal $0,52910 ; Expansion of 1 + 2/(1-2*x-x^3).
-mov $1,$0
-mov $2,-1
-mov $3,$0
 div $0,2
-sub $3,$1
 mov $1,$0

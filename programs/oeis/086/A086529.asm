@@ -6,12 +6,6 @@ lpb $0
   cal $2,75526 ; A008578(n+2) - A008578(n+1).
   trn $0,2
   add $1,$2
-  mov $3,$2
-  mov $4,$2
-  min $4,1
-  mul $4,2
-  add $5,$4
 lpe
-mov $3,$1
 mul $1,2
 add $1,2

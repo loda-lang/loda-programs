@@ -6,7 +6,7 @@ lpb $0
   add $3,2
   cal $2,88491 ; A factorial subtraction sequence based on Conway's A004001.
   mul $3,$0
-  sub $0,$0
+  mov $0,0
   mov $1,$2
   mod $1,2
   add $1,$3

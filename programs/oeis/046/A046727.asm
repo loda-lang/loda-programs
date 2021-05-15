@@ -3,13 +3,6 @@
 
 lpb $0
   mov $1,$0
-  mul $0,4
+  mov $0,0
   cal $1,84159 ; Pell oblongs.
-  sub $0,$0
-  add $3,$1
-  mov $4,$1
-  min $4,1
-  add $5,$4
 lpe
-mov $2,$0
-mov $2,$1

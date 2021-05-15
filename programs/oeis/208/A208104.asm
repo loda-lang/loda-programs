@@ -5,7 +5,6 @@ cal $0,226271 ; Index of 1/n in the Fibonacci (or rabbit) ordering of the positi
 add $0,1
 bin $0,2
 mov $1,$0
-add $0,3
 sub $1,1
 mul $1,8
 add $1,9

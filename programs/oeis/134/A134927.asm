@@ -3,7 +3,5 @@
 
 sub $0,1
 max $0,0
-mov $2,2
 cal $0,108306 ; Expansion of (3*x+1)/(1-3*x-3*x^2).
 mov $1,$0
-add $2,$0

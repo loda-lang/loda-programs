@@ -7,5 +7,4 @@ lpb $0
   add $2,$1
   mov $1,$3
   add $1,19
-  add $3,15
 lpe

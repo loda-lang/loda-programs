@@ -3,16 +3,9 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,143928 ; 2*p^2, for p an odd prime.
   sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-div $2,5
-mov $3,$5
-mov $3,$1
 div $1,2
 add $1,9

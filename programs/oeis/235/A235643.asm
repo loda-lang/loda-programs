@@ -3,16 +3,9 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,163606 ; a(n) = ((3 + 2*sqrt(2))*(3 + sqrt(2))^n + (3 - 2*sqrt(2))*(3 - sqrt(2))^n)/2.
   sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
-  sub $4,$2
 lpe
-mov $3,$5
-mov $3,$1
 mul $1,4
 add $1,16

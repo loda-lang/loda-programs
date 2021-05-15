@@ -12,7 +12,7 @@ lpb $2
   trn $1,2
   add $1,12
   mov $4,$0
-  trn $4,0
+  max $4,0
   cmp $4,$0
   mul $2,$4
 lpe

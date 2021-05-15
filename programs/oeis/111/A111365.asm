@@ -7,13 +7,7 @@ lpb $0
   max $2,0
   cal $2,106569 ; First entry of the vector (M^n)v, where M is the 2 X 2 matrix [[0,4],[1,4]] and v is the column vector [0,1].
   add $1,$2
-  mov $4,9
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1
 div $1,3
 mul $1,7
 add $1,1

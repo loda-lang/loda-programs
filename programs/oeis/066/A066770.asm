@@ -4,15 +4,5 @@
 sub $0,1
 mul $0,2
 add $0,3
-mov $3,0
-mov $4,1
-mov $4,$0
 cal $0,99456 ; Expansion of 1/(1 - 4*x + 5*x^2).
-mov $2,$0
-sub $4,1
-add $3,$4
-trn $3,$3
-mul $3,7
-trn $4,2
-mov $1,$4
 mov $1,$0

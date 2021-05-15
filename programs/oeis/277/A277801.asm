@@ -4,39 +4,18 @@
 mov $1,2
 pow $1,$0
 mov $2,$0
-mov $2,$0
 add $2,1
 pow $2,2
 add $2,1
-mov $4,0
-mov $5,0
-mov $7,1
-mov $8,1
-sub $8,$0
-div $8,9
-mov $9,1
-mov $10,0
-mov $11,1
-mov $11,$8
 lpb $2
   sub $2,1
-  mov $3,$10
-  max $3,0
-  sub $4,191110
+  mov $3,$5
   cal $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   sub $1,1
   mov $4,$0
-  trn $4,0
+  max $4,0
   cmp $4,$0
   mul $2,$4
-  mov $5,$7
-  cmp $5,0
-  add $7,$5
-  div $3,$7
-  add $10,1
-  mov $12,7
+  add $5,1
 lpe
-mov $4,1
-add $6,$9
-mov $10,$1

@@ -5,8 +5,6 @@ sub $0,1
 max $0,0
 cal $0,4253 ; a(n) = 5*a(n-1) - a(n-2), with a(1)=1, a(2)=4.
 mov $1,$0
-mov $1,$0
 div $1,3
 mul $1,2
 add $1,1
-mov $2,$0

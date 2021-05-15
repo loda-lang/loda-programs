@@ -27,22 +27,14 @@ lpb $20
       mov $7,$0
       mov $9,2
       lpb $9
-        clr $0,7
         mov $0,$7
         sub $9,1
         add $0,$9
         sub $0,1
-        mov $1,6
-        mov $3,$0
         max $0,0
-        add $4,1
         cal $0,56309 ; Number of reversible strings with n beads using exactly two different colors.
-        add $0,1
-        mov $2,86436
-        clr $4,3
         mov $1,$0
         mov $10,$9
-        cmp $10,1
         mul $10,$0
         add $8,$10
       lpe
@@ -51,7 +43,6 @@ lpb $20
       mov $1,$8
       sub $1,$7
       mov $14,$13
-      cmp $14,1
       mul $14,$1
       add $12,$14
     lpe
@@ -68,7 +59,6 @@ lpb $20
   mul $1,4
   add $1,4
   mov $21,$20
-  cmp $21,1
   mul $21,$1
   add $19,$21
 lpe

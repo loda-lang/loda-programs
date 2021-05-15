@@ -4,7 +4,7 @@
 lpb $0
   mov $2,3
   mov $3,$0
-  sub $0,$0
+  mov $0,0
   gcd $3,4
   div $2,$3
   sub $2,1

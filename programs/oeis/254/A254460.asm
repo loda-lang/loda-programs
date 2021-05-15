@@ -9,7 +9,6 @@ add $1,$0
 mod $1,3
 add $2,1
 pow $1,$2
-trn $1,1
 div $1,7
 mul $1,7
 add $1,1

@@ -3,14 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
   sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1
 add $1,1

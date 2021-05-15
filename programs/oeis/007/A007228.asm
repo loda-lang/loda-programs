@@ -5,13 +5,9 @@ mov $1,$0
 mov $2,$0
 add $2,$0
 add $2,$0
-mov $3,$0
-mov $0,1
 add $1,$2
-add $3,1
-mov $4,$1
 bin $1,$2
 mul $1,3
+mov $3,$0
+add $3,1
 div $1,$3
-mov $2,$1
-cmp $4,0

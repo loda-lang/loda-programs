@@ -7,13 +7,4 @@ lpb $0
   max $2,0
   cal $2,142474 ; 1 followed by A141015.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  mov $6,$2
-  cmp $6,0
-  add $2,$6
-  div $4,$2
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1

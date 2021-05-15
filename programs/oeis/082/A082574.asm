@@ -3,18 +3,5 @@
 
 add $0,1
 mov $1,$0
-max $1,0
-mov $3,$0
 cal $1,3688 ; a(n) = 3*a(n-1) + a(n-2), with a(1)=1 and a(2)=4.
-mov $2,$0
-sub $0,14
-mul $2,5
-min $3,1
-cmp $3,0
-lpb $3
-  pow $2,2
-  add $2,$1
-  trn $3,8
-lpe
-mov $2,$1
 div $1,3

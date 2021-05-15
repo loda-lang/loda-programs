@@ -3,14 +3,7 @@
 
 lpb $0
   mov $1,$0
-  max $1,0
   cal $1,71724 ; a(n) = 3*binomial(2n, n-1)/(n+2), n > 0, with a(0)=1.
   min $0,1
   trn $0,5
-  mov $3,1
-  mov $4,$1
-  min $4,1
-  add $5,$4
 lpe
-mov $2,$4
-mov $2,$1

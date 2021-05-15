@@ -26,7 +26,7 @@ lpb $2
       add $3,$0
       mov $0,$3
       mov $6,0
-      sub $10,$10
+      mov $10,0
       lpb $0
         add $6,$10
         mul $6,$0

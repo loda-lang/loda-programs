@@ -4,7 +4,6 @@
 mov $13,$0
 mov $15,2
 lpb $15
-  clr $0,13
   mov $0,$13
   sub $15,1
   add $0,$15
@@ -12,7 +11,6 @@ lpb $15
   mov $9,$0
   mov $11,2
   lpb $11
-    clr $0,9
     mov $0,$9
     sub $11,1
     add $0,$11
@@ -26,16 +24,9 @@ lpb $15
       add $0,$7
       add $0,3
       trn $0,1
-      mov $1,3
       add $2,$0
-      mov $0,-3
-      mov $3,5
-      add $4,3991
-      trn $4,$2
       cal $2,232580 ; Number of binary sequences of length n that contain at least one contiguous subsequence 011.
       mov $1,$2
-      mov $3,$2
-      add $4,$2
       mov $8,$7
       lpb $8
         mov $6,$1

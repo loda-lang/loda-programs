@@ -3,9 +3,7 @@
 
 mov $1,$0
 cal $0,18804 ; Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
-mov $2,$1
-add $2,$1
-sub $1,$2
 mul $1,2
-add $1,$0
+sub $0,$1
+mov $1,$0
 sub $1,1

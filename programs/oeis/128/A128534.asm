@@ -8,7 +8,7 @@ lpb $12
   mov $0,$10
   sub $12,1
   add $0,$12
-  trn $0,1
+  sub $0,1
   mov $6,$0
   mov $8,2
   lpb $8
@@ -16,7 +16,7 @@ lpb $12
     mov $0,$6
     sub $8,1
     add $0,$8
-    trn $0,1
+    sub $0,1
     mul $0,2
     lpb $0
       mov $2,$0
@@ -24,13 +24,9 @@ lpb $12
       cal $2,181716 ; a(n) = a(n-1) + a(n-2) + (-1)^n, with a(0)=0 and a(1)=1.
       trn $0,4
       add $3,$2
-      mov $4,$2
-      min $4,1
-      add $5,$4
     lpe
     mov $1,$3
     mov $9,$8
-    cmp $9,1
     mul $9,$3
     add $7,$9
   lpe
@@ -39,7 +35,6 @@ lpb $12
   mov $1,$7
   sub $1,$6
   mov $13,$12
-  cmp $13,1
   mul $13,$1
   add $11,$13
 lpe

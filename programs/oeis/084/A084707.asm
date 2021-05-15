@@ -7,12 +7,6 @@ lpb $0
   max $2,0
   cal $2,61647 ; Beginning at the well for the topograph of a positive definite quadratic form with values 1, 1, 1 at a superbase (i.e., 1, 1 and 1 are the vonorms of the superbase), these numbers indicate the labels of the edges of the topograph on a path of greatest ascent.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-sub $0,$4
-mov $3,$0
-mov $3,$1
 mul $1,2
 add $1,1

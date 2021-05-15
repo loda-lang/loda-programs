@@ -3,14 +3,8 @@
 
 lpb $0
   sub $0,1
-  sub $2,$0
   mov $2,$0
   max $2,0
   cal $2,35038 ; a(n) = 2^n - C(n,0) - C(n,1) - ... - C(n,5).
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$4
-mov $3,$1

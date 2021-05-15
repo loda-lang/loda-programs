@@ -3,15 +3,10 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  add $4,1
+  add $3,1
   cal $2,103609 ; Fibonacci numbers repeated (cf. A000045).
-  sub $0,$4
+  sub $0,$3
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
+  min $3,1
 lpe
-mov $3,$4
-mov $3,$1
 add $1,1

@@ -3,19 +3,8 @@
 
 add $0,1
 pow $0,3
-mov $1,1
-mov $2,$0
-add $2,285773
 cal $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
 mov $1,$0
-lpb $0
-  add $0,3
-  div $0,9
-  add $2,1
-lpe
-add $1,3
-mov $2,2
-mov $2,$1
-sub $1,13
+sub $1,10
 div $1,10
 add $1,1

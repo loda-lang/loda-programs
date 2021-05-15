@@ -4,16 +4,9 @@
 mul $0,2
 mov $1,2
 lpb $0
-  trn $0,1
-  sub $0,1
-  mov $2,1
-  add $3,$1
+  sub $0,2
+  add $2,$1
   mul $1,6
-  sub $1,$3
+  sub $1,$2
 lpe
-mov $4,$1
-mov $4,$3
-div $4,2
-add $4,1
-mov $4,$1
 div $1,2

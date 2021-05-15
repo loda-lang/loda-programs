@@ -3,8 +3,6 @@
 
 mov $4,$0
 add $4,3
-mov $5,$0
-add $5,1
 mov $5,$4
 mov $6,1
 add $6,$4

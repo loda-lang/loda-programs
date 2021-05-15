@@ -4,16 +4,8 @@
 add $0,1
 mov $2,$0
 add $0,1
-mov $3,$2
 sub $2,$0
 sub $0,$2
-mul $2,2
-mov $4,1
-mov $5,$2
 cal $0,291289 ; The Padovan sequence A000931 doubled.
 mov $1,$0
-mov $1,$0
 div $1,2
-trn $2,$0
-mov $4,$3
-mov $4,$2

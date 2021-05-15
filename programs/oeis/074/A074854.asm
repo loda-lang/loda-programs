@@ -13,9 +13,6 @@ lpb $8
     mov $1,$0
     sub $0,1
     add $3,1
-    mov $26,$3
-    cmp $26,0
-    add $3,$26
     div $1,$3
     add $5,$1
     mul $5,2
@@ -28,13 +25,9 @@ lpb $8
   lpe
   mul $1,2
 lpe
-bin $6,2
 lpb $6
-  mov $2,1
-  mov $3,1
   mov $6,0
   sub $7,$1
-  sub $1,$1
 lpe
 mov $1,$7
 add $1,1

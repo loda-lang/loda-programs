@@ -3,13 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,165665 ; a(n) = (3*2^n - 2) * 2^n.
   trn $0,2
   add $1,$2
-  mov $4,4
-  add $5,4
 lpe
-mov $3,$4
-mov $3,$1
 div $1,8

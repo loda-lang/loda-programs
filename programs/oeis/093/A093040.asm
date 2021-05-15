@@ -9,17 +9,10 @@ lpb $7
   sub $7,1
   add $0,$7
   add $0,1
-  mov $2,1
-  trn $2,$0
-  mov $4,$2
-  mov $2,0
   add $3,1
   add $0,$3
   cal $0,201864 ; ((F(n-1)+F(n-2))-1)/2 if F(n) is odd, otherwise ((F(n-1)+F(n-2))-2)/2, where F(n)=A000045(n) is the n-th Fibonacci number.
-  mov $1,1
   mov $1,$0
-  add $2,$3
-  mov $3,1
   mov $8,$7
   lpb $8
     mov $6,$1
