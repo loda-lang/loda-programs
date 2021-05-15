@@ -4,7 +4,9 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,59827 ; Cubes of triangular numbers: (n*(n+1)/2)^3.
+  add $2,2
+  bin $2,2
+  pow $2,3
   add $1,$2
 lpe
 add $1,1

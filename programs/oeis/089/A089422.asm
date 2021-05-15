@@ -3,11 +3,7 @@
 
 trn $0,1
 mov $1,$0
-sub $0,1
-mov $2,1
-lpb $0
-  pow $0,2
-  sub $0,1
-lpe
-add $0,$2
-add $1,$0
+mov $2,2
+bin $2,$0
+gcd $2,$0
+add $1,$2

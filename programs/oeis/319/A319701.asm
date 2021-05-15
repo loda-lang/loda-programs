@@ -5,7 +5,7 @@ mov $1,$0
 sub $0,1
 dif $0,2
 lpb $0
-  trn $0,1
+  sub $0,1
   sub $1,$0
   mod $0,2
 lpe

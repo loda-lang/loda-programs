@@ -3,9 +3,11 @@
 
 lpb $0
   mov $2,$0
-  cal $2,202107 ; n^4*(n+1)^4/8.
   sub $0,1
+  add $2,2
+  bin $2,2
+  pow $2,4
   add $1,$2
 lpe
-div $1,2
+mov $2,$1
 add $1,1

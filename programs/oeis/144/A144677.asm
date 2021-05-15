@@ -5,6 +5,6 @@ add $0,3
 lpb $0
   mov $2,$0
   cal $2,62781 ; Number of arithmetic progressions of four terms and any mean which can be extracted from the set of the first n positive integers.
-  trn $0,3
+  sub $0,3
   add $1,$2
 lpe

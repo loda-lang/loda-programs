@@ -9,6 +9,6 @@ sub $0,1
 mul $1,2
 lpb $0
   trn $0,4
-  trn $1,3
+  sub $1,3
 lpe
 add $1,2

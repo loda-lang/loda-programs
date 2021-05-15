@@ -3,6 +3,7 @@
 
 add $0,2
 mov $1,$0
-max $1,3
+max $1,0
 cal $1,219754 ; Expansion of x^4*(1-x-x^2)/((1+x)*(1-2*x)*(1-x-2*x^2)).
+max $1,0
 mul $1,2

@@ -10,7 +10,7 @@ lpb $13
   sub $13,1
   sub $0,$13
   mul $0,2
-  trn $0,1
+  sub $0,1
   add $6,2
   lpb $0
     sub $0,8

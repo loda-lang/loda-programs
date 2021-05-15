@@ -1,12 +1,64 @@
 ; A183143: [1/r]+[2/r]+...+[n/r], where r=sqrt(3) and []=floor.
 ; 0,1,2,4,6,9,13,17,22,27,33,39,46,54,62,71,80,90,100,111,123,135,148,161,175,190,205,221,237,254,271,289,308,327,347,367,388,409,431,454,477,501,525,550,575,601,628,655,683,711,740,770,800,831
 
-lpb $0
-  mov $2,$0
-  cal $2,97337 ; Integer part of the edge of a cube that has space-diagonal n.
-  sub $0,1
-  mul $2,2
-  add $1,$2
-  add $1,$2
+mov $34,$0
+mov $36,$0
+add $36,1
+lpb $36
+  clr $0,34
+  mov $0,$34
+  sub $36,1
+  sub $0,$36
+  mov $31,$0
+  mov $33,$0
+  add $33,1
+  lpb $33
+    clr $0,31
+    mov $0,$31
+    sub $33,1
+    sub $0,$33
+    mov $27,$0
+    mov $29,2
+    lpb $29
+      clr $0,27
+      mov $0,$27
+      sub $29,1
+      add $0,$29
+      trn $0,1
+      mov $1,2
+      mov $2,2
+      mov $2,$0
+      mov $3,1
+      mov $4,$0
+      mov $5,$0
+      max $5,0
+      cal $5,188085 ; Positions of 1 in A188083; complement of A188084.
+      add $1,$0
+      div $2,2
+      mov $26,$0
+      cmp $26,0
+      add $0,$26
+      div $1,$0
+      sub $1,10
+      mul $1,$5
+      mov $1,$5
+      mov $3,0
+      add $3,$0
+      add $4,11
+      mov $30,$29
+      cmp $30,1
+      mul $30,$5
+      add $28,$30
+    lpe
+    min $27,1
+    mul $27,$1
+    mov $1,$28
+    sub $1,$27
+    sub $1,1
+    add $32,$1
+  lpe
+  mov $1,$32
+  add $35,$32
 lpe
-div $1,4
+mov $1,$35
+div $1,2

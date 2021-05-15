@@ -3,25 +3,12 @@
 
 lpb $0
   mov $2,$0
+  sub $0,1
   add $2,$0
+  trn $0,0
   bin $2,$0
-  max $0,0
-  trn $0,1
   add $1,$2
 lpe
-lpb $0
-  mul $2,8
-  mov $5,$1
-  lpb $0
-    mod $0,3
-    sub $2,26
-    mul $4,$2
-  lpe
-  mod $0,3
-  add $0,1
-  mov $2,0
-lpe
-mov $2,$0
 mov $2,$1
+mul $1,2
 add $1,1
-mov $3,0

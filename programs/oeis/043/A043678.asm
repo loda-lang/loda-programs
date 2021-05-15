@@ -3,9 +3,7 @@
 
 mov $1,2
 mov $5,$0
-sub $0,8
-trn $0,6
-add $0,3
+sub $0,11
 mov $2,3
 mov $4,6
 lpb $0

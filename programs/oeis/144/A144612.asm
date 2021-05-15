@@ -3,6 +3,5 @@
 
 add $0,1
 cal $0,245222 ; Continued fraction of the constant c in A245221; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A022838, else f(n,x) = 1/x.
-mov $1,5
-sub $1,$0
-sub $1,3
+mod $0,2
+mov $1,$0

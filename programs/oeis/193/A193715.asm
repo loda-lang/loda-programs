@@ -13,7 +13,7 @@ lpb $8
     mov $2,$0
     cal $2,64784 ; Difference between n-th triangular number t(n) and the largest square <= t(n).
     mov $0,$2
-    trn $0,1
+    sub $0,1
     mov $4,$2
     min $4,1
   lpe
