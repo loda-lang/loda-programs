@@ -11,8 +11,7 @@ lpb $2
   add $2,2
   mul $4,$2
   lpb $4
-    sub $0,$0
-    pow $2,$0
+    pow $2,0
     add $3,2
     trn $4,$3
   lpe

@@ -18,8 +18,7 @@ lpb $33
     sub $0,1
     max $0,0
     cal $0,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
-    sub $4,$4
-    add $4,1
+    mov $4,1
     mod $4,$0
     add $0,$4
     mov $1,$0

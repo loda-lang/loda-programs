@@ -6,7 +6,5 @@ lpb $0
   cal $2,53589 ; Greatest primorial number (A002110) which divides n.
   div $0,$2
 lpe
+add $0,1
 mov $1,$0
-div $1,2
-mul $1,2
-add $1,1

@@ -4,5 +4,4 @@
 cal $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
 pow $0,2
 mov $1,$0
-mul $1,54
-div $1,216
+div $1,4

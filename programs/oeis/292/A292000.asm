@@ -30,7 +30,7 @@ lpb $12
       add $3,$0
       sub $3,5
       sub $3,$0
-      sub $0,$0
+      mov $0,0
       add $3,18
       add $2,$3
     lpe

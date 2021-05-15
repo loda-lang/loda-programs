@@ -4,35 +4,22 @@
 mov $5,$0
 mov $7,2
 lpb $7
-  clr $0,5
-  mov $0,$5
   sub $7,1
   add $0,$7
   sub $0,1
-  mov $1,$0
-  sub $0,1
-  add $0,$1
-  max $0,0
-  mov $2,$1
-  cal $0,98080 ; Nontrivial slowest increasing sequence whose succession of digits is that of the nonnegative integers.
-  mov $4,$1
-  max $1,0
-  cal $1,157681 ; Fibonacci sequence beginning 29, 31.
-  mov $0,$1
+  mov $2,$0
+  mov $6,$0
+  max $6,0
+  cal $6,157681 ; Fibonacci sequence beginning 29, 31.
   mul $2,2
-  add $3,4
-  mov $3,$1
+  mov $3,$6
   add $3,$2
-  mov $1,$3
-  div $4,2
-  bin $4,2
-  mov $8,$7
-  cmp $8,1
-  mul $8,$3
-  add $6,$8
+  mov $4,$7
+  mul $4,$3
+  add $1,$4
+  mov $6,$3
 lpe
 min $5,1
-mul $5,$1
-mov $1,$6
+mul $5,$6
 sub $1,$5
 sub $1,2

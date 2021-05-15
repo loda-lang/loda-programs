@@ -5,30 +5,14 @@ lpb $0
   mov $2,$0
   mov $3,$0
   cal $2,54623 ; Number of ways to color vertices of a 9-gon using <= n colors, allowing only rotations.
-  mul $0,2
-  pow $0,2
+  mul $0,18
+  mod $0,6
   pow $3,5
   add $3,$2
-  mov $4,1
-  sub $4,$2
-  mov $4,$2
-  sub $4,$2
-  sub $2,$3
-  min $4,1
-  mov $4,$0
-  mul $0,9
-  add $0,3
-  mul $0,2
-  mod $0,6
   mov $1,$3
-  mov $5,3
-  add $5,$4
-  mov $4,1
 lpe
 mov $0,2
 add $0,$1
 mov $1,$0
 sub $1,2
 div $1,2
-mov $2,1
-sub $4,$4

@@ -6,7 +6,3 @@ mov $1,2
 pow $1,$0
 pow $0,3
 mod $1,$0
-mov $2,1
-mov $3,1
-mov $3,$1
-mov $4,0

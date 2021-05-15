@@ -3,15 +3,8 @@
 
 mov $1,2
 pow $1,$0
-mov $3,4
 lpb $0
   mov $0,2
   div $1,4
-  add $2,3
-  mov $3,$1
   add $1,1
-  mov $4,0
 lpe
-mov $0,$4
-add $0,$3
-mov $4,$1

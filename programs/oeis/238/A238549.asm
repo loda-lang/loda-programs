@@ -5,20 +5,10 @@ add $0,27
 mov $1,27
 lpb $0
   mov $2,$0
-  max $2,0
-  mov $3,$0
   cal $2,79360 ; Sequence of sums of alternating increasing powers of 2.
-  add $1,$2
-  mov $3,2
-  mov $4,$2
-  mul $2,$0
   mod $0,3
-  min $4,1
-  add $5,$4
-  mul $5,2
+  add $1,$2
 lpe
-add $1,1
-mov $3,$1
-sub $1,81943
+sub $1,81942
 div $1,16384
 add $1,1

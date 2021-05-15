@@ -3,8 +3,7 @@
 
 add $0,1
 pow $0,2
-mov $2,1
-mul $2,$0
+mov $2,$0
 cal $0,171512 ; a(n) = numbers m such that are not the sum of k-th nonprime number and k for any k >= 1.
 sub $0,$2
 mov $1,$0

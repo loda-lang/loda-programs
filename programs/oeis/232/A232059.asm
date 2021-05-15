@@ -3,15 +3,10 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,214260 ; First differences of A052980.
   trn $0,2
   add $3,$2
   mov $1,$3
-  mov $4,$2
-  min $4,1
-  add $5,$4
-  mul $4,2
 lpe
 mul $1,4
 add $1,2

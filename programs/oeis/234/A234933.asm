@@ -3,9 +3,6 @@
 
 sub $0,1
 max $0,0
-mov $1,2
 cal $0,232580 ; Number of binary sequences of length n that contain at least one contiguous subsequence 011.
-mul $0,2
-mov $1,17
 mov $1,$0
-mov $2,1
+mul $1,2

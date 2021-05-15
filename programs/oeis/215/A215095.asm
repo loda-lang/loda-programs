@@ -14,7 +14,7 @@ lpb $4
   pow $0,$7
   lpb $0
     mov $3,$0
-    sub $0,$0
+    mov $0,0
     sub $3,5
     div $3,30
   lpe

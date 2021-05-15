@@ -12,30 +12,16 @@ lpb $11
   mov $5,$0
   mov $7,2
   lpb $7
-    clr $0,5
-    mov $0,$5
     sub $7,1
     add $0,$7
-    trn $0,1
-    mov $1,1
-    add $2,$0
-    mov $3,$2
-    mod $2,2
-    div $3,2
-    add $3,$0
+    sub $0,1
     mov $4,$0
     mul $4,2
-    sub $2,$4
-    mov $1,$2
     max $4,0
     cal $4,185546 ; a(n) = floor((1/2)*(n+1)^(3/2)); complement of A185547.
-    mov $0,2
-    add $0,$2
     div $4,4
-    sub $0,$4
     mov $1,$4
     mov $8,$7
-    cmp $8,1
     mul $8,$4
     add $6,$8
   lpe

@@ -3,23 +3,7 @@
 
 mov $2,$0
 add $2,$0
-mov $1,$2
 mul $2,2
-mov $3,$2
-cmp $3,0
-add $2,$3
-div $0,$2
-add $0,8
 div $2,3
-add $0,$2
-sub $0,5
-div $1,2
 mov $1,$2
 cal $1,164073 ; a(n) = 2*a(n-2) for n > 2; a(1) = 1, a(2) = 3.
-mul $0,2
-add $1,3
-mov $2,8
-mov $4,8
-mov $4,$1
-mov $5,$1
-sub $1,3

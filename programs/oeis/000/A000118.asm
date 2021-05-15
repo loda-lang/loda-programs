@@ -12,7 +12,7 @@ lpb $29
   lpb $0
     trn $0,1
     mov $2,$0
-    sub $0,$0
+    mov $0,0
     cal $2,46898 ; Partial sums of A046897.
     add $3,$2
   lpe

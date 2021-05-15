@@ -3,18 +3,7 @@
 
 mov $2,$0
 sub $2,1
-mov $3,3
-mov $5,$0
-mov $5,$0
-max $0,0
-pow $5,2
 cal $0,78642 ; Numbers with two representations as the sum of two Fibonacci numbers.
 sub $0,$2
-add $0,6
 mov $1,$0
-mov $1,$0
-sub $1,11
-sub $5,2
-mov $3,$5
-mov $4,10
-sub $5,$5
+sub $1,5

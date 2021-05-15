@@ -8,7 +8,6 @@ mov $0,$1
 cal $0,11782 ; Coefficients of expansion of (1-x)/(1-2*x) in powers of x.
 mul $0,2
 mov $1,$0
-add $0,3
 sub $1,4
 div $1,4
 mul $1,4

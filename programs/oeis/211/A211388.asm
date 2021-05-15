@@ -3,17 +3,10 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,54849 ; a(n) = 2^(n-5)*binomial(n,5). Number of 5D hypercubes in an n-dimensional hypercube.
   sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-add $0,13
-mov $3,$5
-mov $3,$1
 div $1,4
 mul $1,4
 add $1,1

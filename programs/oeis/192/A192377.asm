@@ -15,16 +15,9 @@ lpb $8
     cal $2,109437 ; a(-1) = a(0) = 0, a(1) = 1; a(n) = 5a(n-1) - 5a(n-2) + a(n-3) + 2*(-1)^(n+1), alternatively a(n) = 3a(n-1) + 3a(n-2) - a(n-3).
     trn $0,2
     add $3,$2
-    mov $4,$2
-    min $4,1
-    add $5,$4
   lpe
-  sub $0,1
-  mov $1,7
   mov $1,$3
-  mov $2,7
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe

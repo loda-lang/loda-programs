@@ -4,14 +4,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,181984 ; INVERT transform of A028310.
-  add $1,$2
-  mov $4,$2
-  mul $4,$0
   trn $0,2
-  min $4,1
-  add $5,$4
+  add $1,$2
 lpe
-mov $3,$4
-mov $3,$1

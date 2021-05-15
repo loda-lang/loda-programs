@@ -16,15 +16,9 @@ lpb $8
     cal $2,80023 ; log_phi(n) is closer to an integer than is log_phi(m) for any m with 2<=m<n, where phi=(1+sqrt(5))/2 is the golden ratio.
     trn $0,4
     add $3,$2
-    mov $4,$2
-    min $4,1
-    add $5,$4
   lpe
-  add $0,2
-  mov $1,$4
   mov $1,$3
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe
