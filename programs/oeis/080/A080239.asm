@@ -5,16 +5,10 @@ add $0,1
 mov $1,1
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,22354 ; Fibonacci sequence beginning 0, 20.
   trn $0,4
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1
 sub $1,21
 div $1,20
 add $1,1

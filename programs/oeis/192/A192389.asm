@@ -3,14 +3,9 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  add $4,$0
   cal $2,192953 ; Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  sub $0,$4
-  add $5,$4
+  mov $3,$2
+  min $3,1
+  sub $0,$3
 lpe
-mov $3,$2
-mov $3,$1

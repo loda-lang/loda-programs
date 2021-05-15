@@ -4,13 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  max $2,0
   cal $2,59502 ; a(n) = (3*n*F(2n-1) + (3-n)*F(2n))/5 where F() = Fibonacci numbers A000045.
   add $1,$2
-  mov $3,$0
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 mul $1,2

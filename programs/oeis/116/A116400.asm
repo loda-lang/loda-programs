@@ -3,8 +3,6 @@
 
 div $0,2
 mov $1,$0
-sub $2,$0
-sub $3,$0
 sub $0,1
 add $1,2
 add $0,$1

@@ -3,7 +3,5 @@
 
 cal $0,6355 ; Number of binary vectors of length n containing no singletons.
 add $1,$0
-add $1,$0
-sub $1,1
-div $1,2
+trn $1,1
 add $1,1

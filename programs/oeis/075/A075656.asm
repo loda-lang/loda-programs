@@ -5,8 +5,7 @@ lpb $0
   mov $1,$0
   mov $2,$0
   cal $2,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
-  sub $0,$0
-  trn $0,6
+  mov $0,0
   add $1,$2
 lpe
 add $1,1

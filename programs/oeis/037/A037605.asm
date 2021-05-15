@@ -5,6 +5,5 @@ cal $0,33132 ; Base-5 digits are, in order, the first n terms of the periodic se
 mul $0,19
 div $0,5
 mov $1,$0
-mul $0,3
 mul $1,3
 div $1,9

@@ -10,7 +10,7 @@ lpb $2
   cal $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
-  trn $4,0
+  max $4,0
   cmp $4,$0
   lpb $5
     add $1,5

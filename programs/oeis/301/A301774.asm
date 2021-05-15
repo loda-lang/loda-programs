@@ -3,20 +3,14 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,301775 ; Number of odd chordless cycles in the (2n+1)-web graph.
   add $1,$2
   sub $1,2
-  mov $4,$2
-  min $4,1
-  add $5,$4
-  mov $6,$2
-  cmp $6,0
-  add $2,$6
+  mov $3,$2
+  cmp $3,0
+  add $2,$3
   div $0,$2
 lpe
-mov $3,$4
-mov $3,$1
 div $1,2
 mul $1,2
 add $1,2

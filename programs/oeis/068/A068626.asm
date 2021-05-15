@@ -9,15 +9,12 @@ lpb $29
   mov $0,$27
   sub $29,1
   sub $0,$29
-  sub $4,2
-  sub $0,$4
+  add $0,1
+  add $4,$0
   lpb $0
-    sub $0,1
-    gcd $0,3
-    sub $0,2
+    dif $0,3
+    mod $4,1
   lpe
-  mov $1,$0
-  sub $1,1
-  add $28,$1
+  add $28,$4
 lpe
 mov $1,$28

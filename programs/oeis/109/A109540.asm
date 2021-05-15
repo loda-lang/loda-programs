@@ -7,12 +7,6 @@ lpb $0
   max $2,0
   cal $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   add $1,$2
-  mov $4,$2
-  pow $2,2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$5
-mov $3,$1
 mul $1,7
 add $1,1

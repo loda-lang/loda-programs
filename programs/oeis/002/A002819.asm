@@ -4,7 +4,7 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  trn $2,0
+  max $2,0
   cal $2,8836 ; Liouville's function lambda(n) = (-1)^k, where k is number of primes dividing n (counted with multiplicity).
   add $1,$2
 lpe

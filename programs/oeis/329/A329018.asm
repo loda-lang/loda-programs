@@ -6,7 +6,6 @@ lpb $0
   dif $0,5
 lpe
 mov $1,$0
-mul $0,2
 mul $1,2
 div $1,8
 mul $1,2

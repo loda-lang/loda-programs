@@ -3,6 +3,5 @@
 
 cal $0,286690 ; Positions of 1 in A286688; complement of A286689.
 mov $1,$0
-sub $1,5
 div $1,2
-add $1,3
+add $1,1

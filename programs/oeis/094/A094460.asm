@@ -7,7 +7,7 @@ add $0,$2
 lpb $0
   mov $1,$0
   cal $1,23592 ; Least odd prime divisor of 2*prime(n)+1.
-  sub $0,$0
+  mov $0,0
   add $3,$1
   div $1,$3
   mul $1,$3

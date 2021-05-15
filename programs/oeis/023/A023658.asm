@@ -21,30 +21,22 @@ lpb $14
     mov $8,$0
     add $8,1
     lpb $8
-      clr $0,6
       mov $0,$6
       sub $8,1
       sub $0,$8
       lpb $0
         mov $2,$0
-        trn $0,$0
         mov $3,2
         cal $2,188009 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
-        trn $0,5
+        mov $0,0
         add $3,$2
-        mov $4,$2
-        min $4,1
-        add $5,$4
       lpe
-      mov $1,$0
       mov $1,$3
       add $1,1
       add $7,$1
     lpe
-    mov $1,$7
     add $10,$7
   lpe
-  mov $1,$10
   add $13,$10
 lpe
 mov $1,$13

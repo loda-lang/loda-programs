@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  sub $0,$0
+  mov $0,0
   add $3,1
   cal $2,131061 ; Triangle read by rows: T(n,k) = 4*binomial(n,k) - 3  for 0 <= k <= n.
   add $3,$2

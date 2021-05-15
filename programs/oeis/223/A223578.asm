@@ -11,21 +11,15 @@ lpb $12
   mov $6,$0
   mov $8,2
   lpb $8
-    clr $0,6
     mov $0,$6
     sub $8,1
     add $0,$8
-    trn $0,1
+    sub $0,1
     max $0,0
-    mov $3,1
-    mov $4,1
     cal $0,223577 ; Positive integers n for which there is exactly one negative integer m such that -n = floor(cot(Pi/(2*m))).
     mul $0,12
-    add $0,6
     mov $1,$0
-    mov $5,1
     mov $9,$8
-    cmp $9,1
     mul $9,$0
     add $7,$9
   lpe

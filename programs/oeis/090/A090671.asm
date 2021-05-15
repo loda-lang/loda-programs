@@ -9,7 +9,7 @@ lpb $0
   mov $0,8
   add $1,2
   add $3,100
-  sub $4,$4
+  mov $4,0
   mov $5,$2
   add $5,1
   add $5,$3

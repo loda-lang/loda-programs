@@ -3,12 +3,6 @@
 
 sub $0,1
 max $0,0
-mov $1,19
-mov $3,1
-mov $4,3
 cal $0,51437 ; Number of undirected walks of length n+1 on an oriented triangle, visiting n+2 vertices, with n "corners"; the symmetry group is C3. Walks are not self-avoiding.
 mov $1,$0
-add $0,3
 mul $1,2
-mov $2,1
-mov $3,2

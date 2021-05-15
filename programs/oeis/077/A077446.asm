@@ -5,14 +5,8 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  add $4,$0
   cal $2,143609 ; Numerators of the upper principal and intermediate convergents to 2^(1/2).
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1
 mul $1,2
 add $1,1

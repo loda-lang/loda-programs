@@ -7,7 +7,5 @@ lpb $0
   max $1,0
   cal $1,83375 ; n appears prime(n) times.
   mov $0,0
-  mul $1,2
 lpe
-div $1,2
 add $1,1

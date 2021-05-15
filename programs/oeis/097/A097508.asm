@@ -9,8 +9,8 @@ lpb $3
   sub $0,$3
   lpb $0
     mov $2,$0
-    cal $2,285073 ; 0-limiting word of the morphism 0->10, 1-> 010.
-    mov $0,$2
+    cal $2,285076 ; 1-limiting word of the morphism 0->10, 1-> 010.
+    mov $0,1
   lpe
   add $1,$2
 lpe

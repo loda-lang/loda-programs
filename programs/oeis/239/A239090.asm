@@ -8,22 +8,18 @@ lpb $2
   mov $0,$5
   sub $2,1
   sub $0,$2
-  mov $4,0
-  mov $6,$0
-  mov $0,13
-  mov $3,$6
+  mov $3,$0
   sub $3,8
-  mov $7,10
-  pow $7,$3
-  trn $0,$7
+  mov $4,0
+  mov $6,10
+  pow $6,$3
+  sub $0,$6
   add $0,7
   lpb $0
     cmp $0,9
-    add $0,1
-    mul $0,9
-    trn $7,9
-    add $7,1
+    trn $6,9
+    add $6,1
   lpe
-  add $4,$7
+  add $4,$6
   add $1,$4
 lpe

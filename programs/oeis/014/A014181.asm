@@ -8,21 +8,13 @@ lpb $8
   mov $0,$6
   sub $8,1
   sub $0,$8
-  max $0,0
-  mov $1,$0
   add $0,3
   trn $1,$0
   add $1,6
   add $3,$0
   mov $2,$3
   add $2,$1
-  max $2,0
-  bin $4,8
-  mov $5,0
   cal $2,27828 ; First differences of A010785.
-  mov $1,$2
-  mod $4,2
-  mov $5,$0
   add $7,$2
 lpe
 mov $1,$7

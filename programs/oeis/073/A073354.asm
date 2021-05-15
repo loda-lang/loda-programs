@@ -4,7 +4,6 @@
 add $0,1
 mov $2,2
 mov $3,$0
-mov $4,2
 mov $4,$0
 mov $5,1
 lpb $3
@@ -13,14 +12,8 @@ lpb $3
   lpb $1
     add $6,1
     mov $7,$0
-    mov $9,$2
-    cmp $9,0
-    add $2,$9
-    mod $7,$2
-    mov $9,$2
-    cmp $9,0
-    add $2,$9
     div $0,$2
+    mod $7,$2
     cmp $7,0
     sub $1,$7
   lpe
@@ -30,22 +23,10 @@ lpb $3
   add $2,1
   pow $7,$6
   mul $5,$7
-  mov $7,$0
-  cmp $7,1
-  sub $7,$4
-  cmp $7,0
-  add $8,$0
-  mov $9,$7
-  cmp $9,0
-  add $7,$9
-  div $0,$7
   bin $1,$5
+  cmp $7,0
+  mov $8,$7
+  cmp $8,0
+  add $7,$8
   sub $3,$7
-  add $10,250
-  add $7,$10
 lpe
-mov $9,$0
-cmp $9,0
-add $0,$9
-div $2,$0
-mov $5,$1

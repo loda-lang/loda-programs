@@ -14,8 +14,7 @@ lpb $8
   add $2,1
   sub $2,$0
   lpb $1
-    sub $1,$1
-    add $1,1
+    mov $1,1
     sub $1,$2
     mov $2,$1
     pow $1,2

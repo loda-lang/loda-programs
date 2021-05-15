@@ -32,8 +32,7 @@ lpb $17
       mov $7,2
       lpb $0
         mov $1,$0
-        sub $0,$0
-        add $0,2
+        mov $0,2
         add $3,1
         div $3,$3
         trn $3,2
