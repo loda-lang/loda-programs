@@ -3,13 +3,7 @@
 
 lpb $0
   mov $2,$0
-  trn $0,1
-  max $2,0
+  sub $0,1
   cal $2,1088 ; Product of totient function: a(n) = Product_{k=1..n} phi(k) (cf. A000010).
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$5
-mov $3,$1

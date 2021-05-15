@@ -3,15 +3,8 @@
 
 lpb $0
   mov $1,$0
-  max $1,0
   cal $1,214927 ; Number of n-digit numbers N that do not end with 0 and are such that the reversal of N divides N but is different from N.
   mod $0,4
-  add $3,$1
-  mov $4,$1
   sub $1,1
-  min $4,1
-  mov $4,$3
-  add $5,$3
 lpe
-mov $2,$1
 add $1,1

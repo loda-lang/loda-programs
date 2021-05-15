@@ -4,14 +4,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,5010 ; a(n) = 9*2^n.
-  add $1,$2
-  add $3,$0
   trn $0,5
-  mov $4,$2
-  min $4,1
-  add $5,$4
+  add $1,$2
 lpe
-mov $3,$1
 div $1,18

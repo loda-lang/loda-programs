@@ -3,6 +3,5 @@
 
 add $0,1
 cal $0,175077 ; Final number reached by iterating r -> A049711(r) starting at r = n.
-pow $0,4
 mov $1,$0
-div $1,15
+sub $1,1

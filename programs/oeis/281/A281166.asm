@@ -3,9 +3,5 @@
 
 sub $0,1
 max $0,0
-mov $1,2
-mov $2,0
 cal $0,130750 ; Binomial transform of A010882.
-sub $1,$0
-cmp $1,0
 mov $1,$0

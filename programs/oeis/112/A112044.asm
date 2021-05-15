@@ -8,11 +8,7 @@ lpb $0
   add $3,$2
   mov $1,$3
   mul $3,2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $0,2
 div $1,2
 mul $1,4
 add $1,1

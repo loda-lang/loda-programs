@@ -13,7 +13,7 @@ lpb $2
   add $5,2
   lpb $5
     sub $1,1
-    sub $5,$5
+    mov $5,0
   lpe
   add $1,5
   sub $2,1

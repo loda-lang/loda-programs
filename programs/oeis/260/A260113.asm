@@ -12,23 +12,18 @@ lpb $12
   mov $6,$0
   mov $8,2
   lpb $8
-    clr $0,6
-    mov $0,$6
     sub $8,1
     add $0,$8
+    mov $2,$0
     sub $0,1
-    add $3,$0
-    add $0,1
-    mul $3,2
-    lpb $0
-      mul $0,$3
-      div $0,9
+    div $2,3
+    lpb $2
+      pow $2,4
+      trn $2,4
     lpe
-    add $5,$0
-    div $5,3
-    mov $1,$5
+    mov $1,$2
     mov $9,$8
-    mul $9,$5
+    mul $9,$2
     add $7,$9
   lpe
   min $6,1

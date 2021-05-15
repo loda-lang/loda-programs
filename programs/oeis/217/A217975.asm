@@ -3,19 +3,10 @@
 
 lpb $0
   sub $0,1
-  mov $2,1
   mov $2,$0
   max $2,0
-  add $3,$0
   cal $2,84068 ; a(1) = 1, a(2) = 2; a(2*k) = 2*a(2*k-1) - a(2*k-2), a(2*k+1) = 4*a(2*k) - a(2*k-1).
   add $1,$2
-  mov $4,$2
-  min $4,1
-  mov $5,1
-  sub $5,$2
-  gcd $2,$4
-  add $5,$4
 lpe
-mov $3,$1
 mul $1,2
 add $1,2

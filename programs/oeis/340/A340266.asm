@@ -6,7 +6,7 @@ lpb $2
   add $0,2
   bin $0,2
   add $0,$2
-  sub $2,$2
+  mov $2,0
 lpe
 mov $1,$0
 add $1,4

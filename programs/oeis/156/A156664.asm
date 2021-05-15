@@ -7,10 +7,5 @@ lpb $0
   max $2,0
   cal $2,175658 ; Eight bishops and one elephant on a 3 X 3 chessboard: a(n) = 2*Pell(n+1)+2*Pell(n)-2^n, with Pell = A000129.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mul $2,$4
-mov $3,$1
 add $1,1

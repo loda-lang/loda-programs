@@ -7,14 +7,5 @@ sub $1,1
 bin $1,$0
 add $0,1
 sub $1,1
-mov $2,90380
-mov $4,1
-mov $5,0
-mov $5,$0
-cmp $5,0
-add $0,$5
 div $1,$0
-mov $3,$0
-mov $3,$1
 add $1,1
-mov $4,-3

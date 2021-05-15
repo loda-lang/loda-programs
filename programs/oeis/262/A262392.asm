@@ -7,11 +7,5 @@ lpb $0
   max $2,0
   cal $2,14686 ; In sequence of prime numbers add 1 to first prime, 3rd prime, fifth prime, ... then subtract 1 from 2nd prime, fourth prime, sixth prime and so on.
   add $1,$2
-  mov $4,$2
-  sub $2,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$5
-mov $3,$1
 add $1,2

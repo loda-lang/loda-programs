@@ -3,21 +3,7 @@
 
 mov $2,$0
 cal $0,80040 ; a(n) = 2*a(n-1) + 2*a(n-2) for n > 1; a(0)=2, a(1)=2.
-add $3,$0
-add $4,$2
 mod $2,2
 add $0,$2
-mov $1,5
-mov $5,$3
-cmp $5,0
-add $3,$5
-div $2,$3
-sub $2,2
-gcd $1,$2
-mov $3,$0
-add $0,2
 mov $1,$0
-add $0,1
-sub $1,3
-mov $2,80
-sub $3,1
+sub $1,1

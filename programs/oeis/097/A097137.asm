@@ -3,15 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,58809 ; The sequence lambda(3,n), where lambda is defined in A055203. Number of ways of placing n identifiable positive intervals with a total of exactly three starting and/or finishing points.
-  trn $0,2
+  sub $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $2,1
-mov $3,$4
-mov $3,$1
 div $1,6

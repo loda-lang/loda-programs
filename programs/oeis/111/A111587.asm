@@ -8,23 +8,16 @@ lpb $7
   mov $0,$5
   sub $7,1
   add $0,$7
-  trn $0,1
-  add $0,2
+  add $0,1
   mov $1,$0
-  max $1,0
   cal $1,116404 ; Expansion of (1-x)/((1-x)^2 - x^2(1+x)^2).
-  mov $0,0
   mul $1,2
   add $1,2
-  mov $3,1
   add $4,2
   sub $1,$4
   div $1,2
   sub $1,1
-  add $2,1
-  mov $4,1
   mov $8,$7
-  cmp $8,1
   mul $8,$1
   add $6,$8
 lpe

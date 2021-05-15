@@ -13,13 +13,11 @@ sub $4,1
 lpb $0
   mov $0,$7
   add $1,$2
-  sub $3,$3
-  add $3,22
   mov $6,$4
   sub $4,5
   sub $4,$1
   sub $4,2
-  add $6,$3
+  add $6,22
   add $1,$6
   mul $1,3
   sub $1,$4

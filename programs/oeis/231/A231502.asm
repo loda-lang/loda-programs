@@ -24,7 +24,7 @@ lpb $7
     lpe
     lpb $6
       pow $4,2
-      sub $6,$6
+      mov $6,0
     lpe
     mul $4,2
     mov $6,$4

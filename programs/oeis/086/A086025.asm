@@ -8,13 +8,6 @@ lpb $0
   cal $2,151974 ; a(n) = n*(n+1)*(n+2)*(n+3)*(n+4)/8.
   pow $2,2
   add $1,$2
-  mov $3,$0
-  mov $3,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
-  mov $6,$2
 lpe
-mov $3,$1
 div $1,225
 add $1,1

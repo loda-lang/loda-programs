@@ -7,10 +7,4 @@ lpb $0
   max $2,0
   cal $2,130493 ; Triangle read by rows in which row n contains n! repeated n times.
   add $1,$2
-  mov $4,$2
-  sub $2,3
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1

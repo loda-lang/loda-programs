@@ -16,7 +16,7 @@ lpb $12
     mov $0,$6
     sub $8,1
     add $0,$8
-    trn $0,1
+    sub $0,1
     lpb $0
       cal $2,81241 ; Position in B of reversal of n-th term of B, where B is the logic-binary sequence, A007931.
       trn $0,2

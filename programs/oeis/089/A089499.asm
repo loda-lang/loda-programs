@@ -5,17 +5,3 @@ cal $0,129 ; Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-
 mov $1,$0
 gcd $0,2
 mul $1,$0
-sub $0,$0
-mov $2,0
-mov $3,$0
-lpb $3
-  mul $3,2
-  lpb $0
-    dif $0,10
-    mov $3,1
-  lpe
-  mov $0,2
-  add $3,4
-lpe
-sub $3,1
-mov $3,$1

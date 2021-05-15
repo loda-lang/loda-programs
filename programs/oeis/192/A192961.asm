@@ -3,9 +3,7 @@
 
 lpb $0
   sub $0,1
-  mov $2,$0
-  max $2,0
   cal $2,192960 ; Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
-  add $3,$2
-  mov $1,$3
+  add $1,$2
+  mov $2,$0
 lpe

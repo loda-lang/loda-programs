@@ -3,51 +3,19 @@
 
 add $0,1
 mov $1,1
-mov $2,2
 mov $3,$0
-mov $4,$0
-mov $9,1
 lpb $3
-  mov $5,$4
-  mov $6,0
-  lpb $5
-    add $5,6
-    add $6,1
-    mov $7,$0
-    mov $8,$2
-    cmp $8,0
-    add $2,$8
-    mod $7,$2
-    mov $8,$2
-    cmp $8,0
-    add $2,$8
-    div $0,$2
-    cmp $7,0
-    sub $5,$7
-  lpe
-  sub $6,$2
-  cmp $6,0
-  cmp $6,0
-  mov $7,$2
-  pow $7,$6
-  mul $1,$7
-  add $2,1
-  mov $5,$4
-  mov $7,$0
-  cmp $7,1
-  cmp $7,0
-  mov $8,$0
-  cmp $8,0
-  add $0,$8
-  mod $2,$0
-  sub $3,$7
-  mov $6,3
-  mov $8,$9
-  cmp $8,0
-  add $9,$8
-  div $3,$9
-  mov $8,$0
-  cmp $8,0
-  add $0,$8
+  mov $4,$2
+  sub $5,$2
+  cmp $5,0
+  cmp $5,0
+  pow $4,$5
+  mul $1,$4
   dif $1,$0
+  add $2,1
+  mod $2,$0
+  mov $4,$0
+  cmp $4,1
+  cmp $4,0
+  sub $3,$4
 lpe

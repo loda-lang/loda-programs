@@ -9,21 +9,15 @@ lpb $8
   sub $8,1
   add $0,$8
   sub $0,1
-  add $2,$0
   lpb $0
     mov $2,$0
     max $2,0
     cal $2,8466 ; a(n) = 2^n - Fibonacci(n+2).
     sub $0,2
     add $3,$2
-    mov $4,$2
-    min $4,1
-    add $5,$4
   lpe
-  mov $1,$0
   mov $1,$3
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe

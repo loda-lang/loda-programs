@@ -3,6 +3,5 @@
 
 cal $0,288913 ; a(n) = Lucas(4*n + 3).
 mov $1,$0
-mul $1,90
-div $1,450
+div $1,5
 add $1,1

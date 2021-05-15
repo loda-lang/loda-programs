@@ -3,16 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,218836 ; Unmatched value maps: number of nX2 binary arrays indicating the locations of corresponding elements not equal to any horizontal or antidiagonal neighbor in a random 0..1 nX2 array.
-  trn $0,1
+  sub $0,1
   add $1,$2
-  mul $2,28
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mul $2,2
-mov $3,$4
-mov $3,$1
 add $1,1

@@ -21,7 +21,7 @@ lpb $10
     mov $4,$0
     sub $4,2
     lpb $0
-      sub $0,$0
+      mov $0,0
       mov $2,$4
       mul $2,$1
       mov $1,5

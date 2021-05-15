@@ -24,10 +24,9 @@ lpb $3
     add $6,2
     sub $4,$6
   lpe
-  sub $6,$6
-  add $6,3
-  div $4,$6
+  div $4,3
   mov $5,$4
   sub $5,3
   add $1,$5
+  mov $6,3
 lpe

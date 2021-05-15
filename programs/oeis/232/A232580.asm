@@ -7,10 +7,5 @@ lpb $0
   max $2,0
   cal $2,167821 ; a(n) is the number of n-tosses having a run of 3 or more heads or a run of 3 or more tails for a fair coin (i.e., probability is a(n)/2^n).
   add $1,$2
-  mov $3,$0
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 div $1,2

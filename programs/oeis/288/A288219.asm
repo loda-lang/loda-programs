@@ -3,15 +3,7 @@
 
 lpb $0
   mov $1,$0
-  max $1,0
   cal $1,14739 ; Expansion of (1+x^2)/(1-2*x+x^3).
-  sub $0,$0
-  add $3,$1
-  add $3,$1
-  mov $4,$1
-  min $4,1
-  add $5,$4
+  mov $0,0
 lpe
-mov $2,$4
-mov $2,$1
 add $1,2

@@ -3,6 +3,6 @@
 
 lpb $0
   mov $1,$0
-  sub $0,$0
+  mov $0,0
   cal $1,56608 ; Least prime factor of the n-th composite number.
 lpe

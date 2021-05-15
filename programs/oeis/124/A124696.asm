@@ -3,15 +3,8 @@
 
 lpb $0
   mov $1,$0
-  add $2,$0
-  sub $0,$0
-  max $1,0
+  mov $0,0
   cal $1,1333 ; Numerators of continued fraction convergents to sqrt(2).
-  add $3,$1
-  mov $4,$1
-  min $4,1
-  add $5,$4
 lpe
-mov $2,$1
 mul $1,2
 add $1,1

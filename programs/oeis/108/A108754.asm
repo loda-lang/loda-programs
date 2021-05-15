@@ -3,17 +3,11 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,14689 ; a(n) = prime(n)-n, the number of nonprimes less than prime(n).
   add $1,$2
-  trn $1,$0
-  trn $0,1
-  mov $3,4
-  mov $4,$2
-  min $4,1
-  add $5,$4
+  sub $1,$0
+  sub $0,1
 lpe
-mov $3,$1
 div $1,2
 mul $1,2
 add $1,1

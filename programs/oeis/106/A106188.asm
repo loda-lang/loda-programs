@@ -7,10 +7,5 @@ lpb $0
   max $2,0
   cal $2,54108 ; a(n)=(-1)^(n+1)*sum(k=0,n+1,(-1)^k*binomial(2*k,k)).
   add $1,$2
-  mov $4,$2
-  sub $2,$0
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 add $1,1

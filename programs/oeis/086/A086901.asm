@@ -3,16 +3,10 @@
 
 lpb $0
   sub $0,2
-  mov $2,3
   mov $2,$0
   max $2,0
   cal $2,126473 ; Number of strings over a 5 symbol alphabet with adjacent symbols differing by three or less.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1
 mul $1,6
 add $1,1
