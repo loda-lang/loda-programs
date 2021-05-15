@@ -6,46 +6,25 @@ mov $1,19
 mov $2,2
 mov $3,$0
 mov $4,$0
-mov $9,1
 lpb $3
   mov $5,$4
-  mov $6,0
-  add $10,3
+  add $6,3
   lpb $5
-    mov $8,$2
-    cmp $8,0
-    add $2,$8
-    div $6,$2
-    add $6,1
     mov $7,$0
-    mov $8,$2
-    cmp $8,0
-    add $2,$8
-    mod $7,$2
-    mov $8,$2
-    cmp $8,0
-    add $2,$8
     div $0,$2
-    lpb $10
+    mod $7,$2
+    lpb $6
       mul $1,$4
       mov $2,1
       cmp $7,0
       sub $5,$7
-      mod $10,2
+      mod $6,2
     lpe
-    cmp $6,0
-    cmp $6,0
-    mov $7,$2
-    mod $10,4
   lpe
   add $2,1
-  pow $7,6
-  mul $9,$7
   mov $7,$0
   cmp $7,1
   cmp $7,0
   sub $3,$7
-  dif $10,4
 lpe
-mov $9,$1
 div $1,19

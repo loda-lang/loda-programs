@@ -11,7 +11,7 @@ lpb $2
   add $0,2
   mov $3,4
   add $3,$0
-  sub $5,$5
+  mov $5,0
   mov $6,$3
   bin $6,5
   div $6,$3

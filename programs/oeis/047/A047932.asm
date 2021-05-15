@@ -17,7 +17,7 @@ lpb $10
     sub $0,1
     add $3,3
     mul $0,$3
-    trn $0,0
+    max $0,0
     cal $0,277 ; 3*n - 2*floor(sqrt(4*n+5)) + 5.
     add $2,$0
     mov $1,$2

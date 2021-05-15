@@ -3,29 +3,9 @@
 
 lpb $0
   mov $1,$0
-  max $1,0
   cal $1,330246 ; a(n) = 4^(n+1) + (4^n-1)/3.
-  trn $1,1
-  add $3,$1
-  mov $6,$1
-  cmp $6,0
-  add $1,$6
   div $0,$1
-  div $3,8
-  mov $4,20
-  mov $6,$1
-  cmp $6,0
-  add $1,$6
-  div $0,$1
-  add $5,20
-  mov $6,$3
-  cmp $6,0
-  add $3,$6
-  div $4,$3
-  mul $3,2
 lpe
-mov $2,$5
-mov $2,$1
 div $1,4
 mul $1,9
 add $1,3

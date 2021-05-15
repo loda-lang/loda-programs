@@ -16,7 +16,7 @@ lpb $6
   mov $2,$6
   mul $2,$0
   add $1,$2
-  sub $3,$3
+  mov $3,0
   mov $5,$0
 lpe
 min $4,1

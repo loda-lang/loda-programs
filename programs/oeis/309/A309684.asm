@@ -15,7 +15,7 @@ lpb $5
   lpb $0
     mov $0,0
     add $3,$7
-    sub $7,$7
+    mov $7,0
     add $7,$3
     div $7,6
     mov $2,$7

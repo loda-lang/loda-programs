@@ -5,6 +5,6 @@ pow $0,3
 lpb $0
   add $1,2
   sub $0,$1
-  trn $0,0
+  max $0,0
 lpe
 div $1,2

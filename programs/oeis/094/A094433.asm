@@ -8,15 +8,6 @@ lpb $0
   cal $2,83881 ; a(n) = 6*a(n-1) - 6*a(n-2), with a(0)=1, a(1)=3.
   sub $0,1
   add $1,$2
-  mov $4,$2
-  mov $2,5
-  add $4,6
-  min $4,1
-  mov $5,$1
-  add $5,$4
 lpe
-add $0,$2
-mov $3,$2
-mov $3,$1
 div $1,3
 add $1,1

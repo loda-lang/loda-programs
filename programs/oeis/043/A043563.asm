@@ -1,12 +1,13 @@
 ; A043563: Number of runs in base-11 representation of n.
 ; 1,1,1,1,1,1,1,1,1,1,1,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2
 
-lpb $0
-  mov $2,$0
-  mul $2,2
-  sub $2,$0
-  cal $2,168185 ; Characteristic function of numbers that are not multiples of 12.
-  mov $0,10
-  mov $1,$2
+mov $3,$0
+dif $3,12
+mov $4,$3
+lpb $3,3
+  mov $2,13
+  sub $4,11
 lpe
+mov $1,$2
+div $1,12
 add $1,1

@@ -3,13 +3,7 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,78012 ; Expansion of (1 - x) / (1 - x - x^3) in powers of x.
   sub $0,3
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1

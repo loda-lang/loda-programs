@@ -8,9 +8,4 @@ lpb $0
   max $2,0
   cal $2,37952 ; a(n) = binomial(n, floor((n-1)/2)).
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1

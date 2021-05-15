@@ -3,7 +3,7 @@
 
 div $0,2
 mov $1,251
-lpb $0,2
+lpb $0
   dif $1,2
   mul $1,$0
   sub $0,1

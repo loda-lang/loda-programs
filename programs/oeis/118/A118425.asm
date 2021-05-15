@@ -7,10 +7,5 @@ lpb $0
   max $2,0
   cal $2,178523 ; The path length of the Fibonacci tree of order n.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-add $3,1
-mov $3,$1
 div $1,2

@@ -3,12 +3,7 @@
 
 mul $0,2
 sub $0,1
-mov $1,$0
 max $0,0
-mov $2,0
-mov $3,4
 cal $0,133190 ; a(n) = 2a(n-1) - a(n-2) + 2a(n-3).
-mov $1,5
 mov $1,$0
 mul $1,2
-mov $2,1

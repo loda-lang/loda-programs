@@ -4,17 +4,8 @@
 lpb $0
   mov $1,$0
   mov $2,$0
-  max $2,0
   cal $2,26644 ; a(n) = a(n-1) + 2*a(n-2) + 2, for n>=3, where a(0)= 1, a(1)= 2, a(2)= 4.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  mov $6,$1
-  cmp $6,0
-  add $1,$6
   div $0,$1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1
 add $1,1

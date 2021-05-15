@@ -7,7 +7,7 @@ lpb $3
   mov $0,$4
   sub $3,1
   add $0,$3
-  trn $0,0
+  max $0,0
   cal $0,26602 ; n-th number k such that s(k) = 2, where s = A026600.
   div $0,3
   mov $2,$3
