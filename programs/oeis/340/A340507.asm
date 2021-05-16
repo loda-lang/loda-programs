@@ -3,10 +3,8 @@
 
 lpb $0
   mov $2,$0
+  mov $0,0
   cal $2,52553 ; Square array of binomial coefficients T(n,k) = binomial(n,k), n >= 0, k >= 0, read by antidiagonals.
-  mov $1,$2
-  cmp $1,0
-  add $2,$1
-  div $2,$2
-  mov $0,$2
+  sub $0,$2
+  mov $1,1
 lpe

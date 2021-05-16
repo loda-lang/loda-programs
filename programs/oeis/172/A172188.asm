@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
+  cal $2,3627 ; Primes of the form 3n-1.
   sub $0,1
-  cal $2,112774 ; Semiprimes of the form 6n+4.
   add $1,$2
 lpe
-div $1,2
 add $1,2

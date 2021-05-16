@@ -4,6 +4,5 @@
 add $0,1
 cal $0,196514 ; Partial sums of A100381.
 mov $1,$0
-mul $1,7
-div $1,112
+div $1,16
 add $1,1
