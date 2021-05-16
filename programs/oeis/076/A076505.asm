@@ -1,20 +1,9 @@
 ; A076505: 3 people at a party are saying Hello to each other. Person 1 says Hello. Person 2 counts the times Hello has been said and says Hello twice that number. Person 3 says Hello 3 times the sum of Hello's and then it is Person 1 again. This is how many Hello's each person says.
 ; 1,2,9,12,48,216,288,1152,5184,6912,27648,124416,165888,663552,2985984,3981312,15925248,71663616,95551488,382205952,1719926784,2293235712,9172942848,41278242816,55037657088,220150628352,990677827584
 
-mov $3,2
-mov $5,$0
-lpb $3
-  mov $0,$5
-  sub $3,1
-  add $0,$3
-  max $0,0
-  cal $0,76510 ; Expansion of 3*(1+2*x+6 x^2)/(1-24*x^3).
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
-lpe
-min $5,1
-mul $5,$4
-sub $1,$5
-div $1,6
+add $0,2
+cal $0,76507 ; Three people (P1, P2, P3) are in a circle and are saying Hello to each other. They start with P2 saying "Hello, Hello". Thereafter Pn says "Hello" for n times the total number of Hello's so far.
+mov $1,$0
+sub $1,16
+div $1,16
+add $1,1

@@ -4,11 +4,9 @@
 mov $3,$0
 lpb $0
   mul $0,2
-  trn $0,1
+  sub $0,1
   mov $2,$0
   div $0,2
   bin $2,$3
   add $1,$2
-  add $4,$3
 lpe
-div $3,2
