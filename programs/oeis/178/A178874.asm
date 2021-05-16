@@ -10,8 +10,7 @@ lpb $4
   mov $3,5
   pow $3,$0
   add $3,4
-  mov $5,1
-  mul $5,$3
+  mov $5,$3
   div $5,8
   add $1,$5
 lpe

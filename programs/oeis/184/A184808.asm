@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,171974 ; Integer part of the height of a regular tetrahedron with edge length n.
-add $0,$1
-mov $1,$0
+add $1,$0
 add $1,1

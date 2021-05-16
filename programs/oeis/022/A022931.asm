@@ -10,7 +10,7 @@ mov $3,1031
 lpb $2
   lpb $3
     add $2,$3
-    sub $3,$3
+    mov $3,0
   lpe
   mul $1,2
   add $2,4

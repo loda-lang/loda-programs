@@ -3,9 +3,12 @@
 
 lpb $0
   mov $2,$0
-  cal $2,268484 ; a(n) = (n + 1)*(4*n^2 + 14*n + 9)/3.
   sub $0,1
+  add $1,1
+  cal $2,199531 ; Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two consecutive zero elements.
   add $1,$2
+  sub $1,1
 lpe
+div $1,4
 mul $1,3
 add $1,9

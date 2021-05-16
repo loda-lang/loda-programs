@@ -4,4 +4,3 @@
 cal $0,142342 ; a(n) = 10*prime(n).
 cal $0,230980 ; Number of primes <= n, starting at n=0.
 mov $1,$0
-mov $1,$0

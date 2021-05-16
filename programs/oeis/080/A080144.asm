@@ -4,18 +4,8 @@
 lpb $0
   mov $2,$0
   add $2,1
-  max $2,0
   cal $2,25169 ; a(n) = 2*Fibonacci(2*n+2).
-  add $1,$2
-  mov $6,$0
-  cmp $6,0
-  add $0,$6
-  div $2,$0
   trn $0,2
-  mov $4,$2
-  min $4,1
-  add $5,$4
+  add $1,$2
 lpe
-mov $3,$0
-mov $3,$1
 div $1,2

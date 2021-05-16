@@ -3,9 +3,7 @@
 
 add $0,2
 cal $0,47313 ; Numbers that are congruent to {1, 4, 5, 6} mod 7.
-add $0,3
-mov $1,5
-add $1,$0
-sub $1,13
+mov $1,$0
+sub $1,5
 mul $1,343
 add $1,243

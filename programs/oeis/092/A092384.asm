@@ -4,10 +4,8 @@
 mov $3,$0
 mov $0,2
 add $0,$3
-mov $1,1
-mul $1,$3
-cmp $0,$1
-sub $2,$1
+cmp $0,$3
+sub $2,$3
 sub $0,$2
 dif $0,2
 cal $0,4155 ; Sum of digits of n-th odd number.
