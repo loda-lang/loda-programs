@@ -4,7 +4,7 @@
 lpb $0
   pow $0,2
   mov $1,$0
-  sub $0,$0
+  mov $0,0
   cal $1,174737 ; a(n) = a(n-1) - a(n-2), with a(0)=2, a(1)=-1.
   sub $1,1
 lpe

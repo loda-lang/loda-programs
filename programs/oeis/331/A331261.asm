@@ -15,15 +15,10 @@ lpb $8
     cal $2,7052 ; Number of order-consecutive partitions of n.
     trn $0,2
     add $3,$2
-    mov $4,$2
-    trn $2,$2
     div $3,2
-    min $4,1
-    add $5,$4
   lpe
   mov $1,$3
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe

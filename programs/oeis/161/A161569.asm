@@ -3,13 +3,7 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,73425 ; a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
   sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1

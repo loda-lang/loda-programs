@@ -6,14 +6,5 @@ lpb $0
   cal $2,77953 ; Expansion of 1/(1-x+2*x^2-2*x^3).
   sub $0,1
   add $1,$2
-  mov $4,$2
-  mov $4,$2
-  mul $2,12
-  min $4,1
-  add $5,$4
 lpe
-pow $2,2
-mov $3,$1
 add $1,1
-add $4,1
-mov $5,$4

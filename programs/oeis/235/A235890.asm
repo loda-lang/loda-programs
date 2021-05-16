@@ -4,10 +4,8 @@
 mov $2,2
 pow $2,$0
 mul $2,2
-add $2,46
-mov $3,1
-mul $3,$2
-add $3,1
+mov $3,$2
+add $3,47
 lpb $0
   trn $0,$3
   mov $1,$3

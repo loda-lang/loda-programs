@@ -5,19 +5,7 @@ add $0,1
 cal $0,49643 ; Number of fractions in Farey series of order n.
 cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 mul $0,8
-mov $3,$0
-sub $0,2
-div $0,3
-add $1,2
-mov $2,26
-sub $0,$2
-add $4,$3
-mov $$2,$2
-add $1,2
-add $1,$3
-add $1,5
-div $1,13
-mov $1,$3
+mov $1,$0
 sub $1,24
 div $1,16
 mul $1,2

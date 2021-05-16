@@ -3,5 +3,4 @@
 
 cal $0,181296 ; The number of odd entries in all the 2-compositions of n.
 mov $1,$0
-mul $1,2
-div $1,4
+div $1,2

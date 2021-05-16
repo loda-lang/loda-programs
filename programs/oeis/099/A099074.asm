@@ -3,20 +3,9 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,278484 ; Main diagonal of A278482.
   sub $0,1
   add $1,$2
   add $1,1
-  add $4,3
-  mov $4,$2
-  min $4,1
-  mov $4,$2
-  mov $5,$2
-  add $5,$2
-  trn $5,$2
-  mov $4,$5
 lpe
-mov $3,$0
-mov $3,$1
 add $1,1

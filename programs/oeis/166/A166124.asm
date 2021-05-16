@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   cal $2,103452 ; Inverse of number triangle A103451.
-  sub $0,$0
+  mov $0,0
   add $1,$2
 lpe
 add $1,1

@@ -12,7 +12,6 @@ lpe
 add $1,3
 mov $2,$4
 sub $2,3
-add $4,1
 mov $4,$1
 mul $1,2
 add $4,$2

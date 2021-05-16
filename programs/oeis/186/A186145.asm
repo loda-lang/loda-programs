@@ -20,7 +20,7 @@ lpb $11
     add $0,$1
     pow $0,2
     sub $0,1
-    trn $0,0
+    max $0,0
     cal $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
     mov $1,$0
     mov $8,$7

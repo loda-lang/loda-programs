@@ -15,15 +15,9 @@ lpb $8
     cal $2,40 ; The prime numbers.
     trn $0,2
     add $3,$2
-    mov $4,$2
-    min $4,1
-    sub $2,$4
-    add $5,$4
   lpe
-  mov $0,2
   mov $1,$3
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe

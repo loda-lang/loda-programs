@@ -8,9 +8,4 @@ lpb $0
   cal $2,272912 ; Difference sequence of the sequence A116470 of all distinct Fibonacci numbers and Lucas numbers (A000032).
   add $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1

@@ -4,8 +4,7 @@
 cal $0,33424 ; [ 10^8/n ].
 sub $0,48
 lpb $0
-  mov $1,1
-  mul $1,$0
+  mov $1,$0
   div $0,10
 lpe
 add $1,1

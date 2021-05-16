@@ -9,9 +9,8 @@ gcd $3,3
 lpb $0
   mul $0,3
   sub $0,$3
-  mov $2,0
-  add $2,$0
-  sub $0,$2
+  mov $2,$0
+  mov $0,0
 lpe
 cal $0,142
 mul $0,$2

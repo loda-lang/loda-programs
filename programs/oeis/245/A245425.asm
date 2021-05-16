@@ -45,9 +45,7 @@ lpb $22
             div $2,4
             add $2,1
           lpe
-          mov $3,1
-          mul $3,$2
-          mov $1,$3
+          mov $1,$2
           mov $8,$7
           lpb $8
             mov $6,$1

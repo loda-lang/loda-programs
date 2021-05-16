@@ -12,19 +12,14 @@ lpb $11
   mov $5,$0
   mov $7,2
   lpb $7
-    clr $0,5
     mov $0,$5
     sub $7,1
     add $0,$7
     sub $0,1
     max $0,0
-    mov $1,1
     cal $0,61667 ; a(n) = Fibonacci(2*n+1) - 2^(n-1).
     mov $1,$0
-    mov $3,0
-    mov $4,6
     mov $8,$7
-    cmp $8,1
     mul $8,$0
     add $6,$8
   lpe
@@ -33,7 +28,6 @@ lpb $11
   mov $1,$6
   sub $1,$5
   mov $12,$11
-  cmp $12,1
   mul $12,$1
   add $10,$12
 lpe

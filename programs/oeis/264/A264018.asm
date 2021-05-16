@@ -6,7 +6,6 @@ mul $0,2
 add $0,$1
 cal $0,97083 ; Values of k such that there is exactly one permutation p of (1,2,3,...,k) such that i+p(i) is a Fibonacci number for 1<=i<=k.
 mov $1,$0
-div $0,2
 div $1,4
 mul $1,4
 add $1,1

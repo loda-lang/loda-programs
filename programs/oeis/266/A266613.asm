@@ -19,8 +19,7 @@ lpe
 mov $1,4
 mov $2,$4
 add $2,4
-mov $6,1
-mul $6,$7
+mov $6,$7
 div $6,6
 mul $6,2
 add $1,$6

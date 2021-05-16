@@ -3,14 +3,10 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,164682 ; a(n) = 2*a(n-2) for n > 2; a(1) = 5, a(2) = 8.
   mul $0,$2
   mod $0,8
   add $3,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
 add $1,$3
 div $1,4

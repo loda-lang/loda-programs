@@ -10,7 +10,7 @@ lpb $0
   mod $1,10
   sub $1,4
   add $1,$0
-  sub $0,$0
+  mov $0,0
 lpe
 sub $1,2
 div $1,3

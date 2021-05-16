@@ -30,8 +30,7 @@ lpb $17
         mov $4,4
         lpb $4
           mov $2,1
-          sub $4,$4
-          pow $4,$4
+          mov $4,1
           mov $6,6
         lpe
         mov $5,$0

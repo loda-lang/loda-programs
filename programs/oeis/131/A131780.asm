@@ -25,20 +25,15 @@ lpb $16
       sub $8,1
       add $0,$8
       sub $0,1
-      add $2,$0
       lpb $0
         sub $0,1
         mov $2,$0
         max $2,0
         cal $2,215004 ; a(0) = a(1) = 1; for n>1, a(n) = a(n-1) + a(n-2) + floor(n/2).
         add $3,$2
-        mov $4,$2
-        min $4,1
-        add $5,$4
       lpe
       mov $1,$3
       mov $9,$8
-      cmp $9,1
       mul $9,$3
       add $7,$9
     lpe
@@ -47,7 +42,6 @@ lpb $16
     mov $1,$7
     sub $1,$6
     mov $13,$12
-    cmp $13,1
     mul $13,$1
     add $11,$13
   lpe

@@ -5,11 +5,9 @@ mov $1,6
 mov $2,$0
 add $2,1
 pow $1,$2
-mov $3,$0
-add $3,2
-mov $4,$1
-div $4,7
-add $1,$4
+mov $3,$1
+div $3,7
+add $1,$3
 sub $1,6
 div $1,5
 add $1,1

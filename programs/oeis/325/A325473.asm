@@ -7,11 +7,6 @@ lpb $0
   max $2,0
   cal $2,288599 ; a(n) = 2*a(n-1) - a(n-4) for n >= 4, where a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 10, a(4) = 16.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$4
-mov $3,$1
 div $1,2
 add $1,1

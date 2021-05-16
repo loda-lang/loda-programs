@@ -3,16 +3,13 @@
 
 mov $14,$0
 mov $16,$0
-add $16,1
 lpb $16
-  clr $0,14
   mov $0,$14
   sub $16,1
   sub $0,$16
   mov $10,$0
   mov $12,2
   lpb $12
-    clr $0,10
     mov $0,$10
     sub $12,1
     add $0,$12
@@ -28,16 +25,9 @@ lpb $16
       lpb $0
         mov $2,$0
         mov $0,4
-        mov $1,1
         trn $2,1
-        mov $4,$2
         cal $2,233411 ; The number of length n binary words with some prefix which contains two more 1's than 0's or two more 0's than 1's.
-        mov $3,1
-        add $3,$2
-        mov $4,$2
-        trn $2,4
-        min $4,1
-        add $5,$4
+        sub $2,4
       lpe
       mov $1,$2
       mov $9,$8

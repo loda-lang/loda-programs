@@ -3,6 +3,6 @@
 
 sub $0,1
 max $0,0
-cal $0,77447 ; Numbers n such that (n^2 - 14)/2 is a square.
+cal $0,217975 ; 2*n^2 - 7 is a square.
 mov $1,$0
-div $1,4
+div $1,2
