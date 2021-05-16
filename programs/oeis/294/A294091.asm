@@ -3,10 +3,7 @@
 
 cal $0,280084 ; 1 together with the Pythagorean primes.
 sub $0,1
-mov $2,$0
-cmp $2,0
-add $0,$2
-mov $1,$0
-sub $1,1
+trn $0,1
+add $1,$0
 mul $1,2
 add $1,5

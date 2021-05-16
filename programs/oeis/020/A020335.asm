@@ -17,17 +17,14 @@ lpb $12
     sub $8,1
     add $0,$8
     sub $0,1
+    mov $3,1
     lpb $0
-      mov $2,$0
-      mov $5,$0
+      add $1,$0
       mod $0,6
-      mov $4,$2
-      min $4,1
-      add $5,$4
+      add $1,$3
     lpe
-    mov $1,$5
     mov $9,$8
-    mul $9,$5
+    mul $9,$1
     add $7,$9
   lpe
   min $6,1
