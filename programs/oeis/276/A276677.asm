@@ -24,14 +24,11 @@ lpb $16
     mov $5,$1
     div $5,4
     add $5,1
-    mov $8,1
     mov $10,$6
     lpb $0
       mov $1,$10
       sub $1,1
       mov $0,$1
-      sub $5,$8
-      add $5,5
     lpe
     pow $0,$5
     add $12,$0

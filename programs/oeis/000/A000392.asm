@@ -3,7 +3,6 @@
 
 sub $0,1
 max $0,0
-mov $1,3
 cal $0,337313 ; a(n) is the number of n-digit positive integers with exactly three distinct base 10 digits.
 mov $1,$0
 div $1,648

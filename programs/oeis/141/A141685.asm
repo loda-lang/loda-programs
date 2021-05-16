@@ -4,11 +4,6 @@
 mul $0,2
 sub $0,2
 max $0,0
-mov $1,12
-mov $3,6
 cal $0,196382 ; Number of sequences of n coin flips, that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,1).
 mov $1,$0
 add $1,1
-add $2,$0
-max $2,6
-mov $3,0

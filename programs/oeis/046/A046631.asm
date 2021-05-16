@@ -8,11 +8,7 @@ lpb $0
   cal $2,199114 ; 11*3^n+1.
   trn $0,3
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 div $1,11
 mul $1,2
 add $1,1

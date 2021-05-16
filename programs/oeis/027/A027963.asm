@@ -3,13 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,23537 ; a(n) = Lucas(n+4) - (3*n+7).
   sub $0,1
   add $1,$2
-  add $3,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
 add $1,1

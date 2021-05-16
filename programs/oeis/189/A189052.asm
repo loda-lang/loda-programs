@@ -8,10 +8,4 @@ lpb $0
   cal $2,49611 ; a(n) = T(n,2), array T as in A049600.
   sub $0,2
   add $1,$2
-  add $2,1
-  add $3,38
-  mov $4,1
-  mov $5,6
 lpe
-mul $2,2
-mov $3,$1

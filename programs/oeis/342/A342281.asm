@@ -3,8 +3,5 @@
 
 mul $0,2
 cal $0,87057 ; Smallest number whose square is larger than 2*n^2.
-sub $0,2
-mov $2,$0
-mov $0,1
-add $0,$2
 mov $1,$0
+sub $1,1

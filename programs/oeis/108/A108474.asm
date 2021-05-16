@@ -6,6 +6,4 @@ add $0,2
 div $1,2
 gcd $1,2
 pow $1,$0
-div $1,2
-mov $2,$1
-div $1,2
+div $1,4

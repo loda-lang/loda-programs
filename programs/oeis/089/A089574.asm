@@ -30,7 +30,7 @@ lpb $21
         add $0,5
         bin $0,2
         mov $4,$0
-        sub $0,$0
+        mov $0,0
       lpe
       sub $4,4
       add $14,$4

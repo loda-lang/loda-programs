@@ -7,8 +7,7 @@ lpb $0
   div $2,2
   mul $2,4
   add $1,$2
-  sub $2,$2
-  add $2,$0
+  mov $2,$0
   trn $0,1
 lpe
 add $0,2

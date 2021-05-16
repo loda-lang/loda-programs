@@ -6,9 +6,7 @@ mul $0,2
 mov $3,5
 cal $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
 sub $3,$0
-mov $0,1
-mul $0,$3
-mov $1,$0
+mov $1,$3
 sub $1,4
 mov $2,$4
 mul $2,2

@@ -3,11 +3,4 @@
 
 cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 cal $0,68527 ; Difference between smallest square >= n and n.
-mul $0,18
 mov $1,$0
-mov $1,$0
-sub $1,18
-div $1,18
-add $1,1
-mov $1,$0
-div $1,18

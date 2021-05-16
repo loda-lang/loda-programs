@@ -7,9 +7,4 @@ lpb $0
   max $2,0
   cal $2,99036 ; a(n) = 2^n - Fibonacci(n).
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1

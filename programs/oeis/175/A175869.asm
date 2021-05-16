@@ -12,7 +12,7 @@ lpb $8
   mov $4,1
   mov $5,$0
   lpb $0
-    sub $0,$0
+    mov $0,0
     mov $2,2
     sub $5,2
     add $3,$5

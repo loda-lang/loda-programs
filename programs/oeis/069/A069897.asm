@@ -4,5 +4,5 @@
 cal $0,120454 ; a(n) = ceiling(GPF(n)/LPF(n)) where GPF is greatest prime factor, LPF is least prime factor.
 sub $0,2
 add $1,$0
-trn $1,0
+max $1,0
 add $1,1

@@ -3,9 +3,6 @@
 
 lpb $0
   mov $1,$0
-  mov $2,$0
-  cmp $2,0
-  add $1,$2
-  mod $0,$1
   cal $1,104103 ; a(n) = ceiling(sqrt(prime(n))).
+  mov $0,0
 lpe

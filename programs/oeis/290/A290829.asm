@@ -10,21 +10,14 @@ lpb $8
   add $0,$8
   sub $0,1
   lpb $0
-    add $2,1
     mov $2,$0
     max $2,0
     cal $2,84221 ; a(n+2) = 4*a(n), with a(0)=1, a(1)=3.
-    add $3,$2
-    mov $4,$2
     sub $2,$0
     mod $0,2
-    min $4,1
-    add $5,$4
   lpe
-  mov $1,$3
   mov $1,$2
   mov $9,$8
-  cmp $9,1
   mul $9,$2
   add $7,$9
 lpe

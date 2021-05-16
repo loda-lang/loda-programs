@@ -3,8 +3,6 @@
 
 add $0,1
 mov $2,$0
-mov $0,1
-mov $0,$2
 sub $0,1
 sub $1,$2
 bin $1,$0

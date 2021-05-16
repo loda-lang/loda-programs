@@ -4,17 +4,9 @@
 lpb $0
   trn $0,1
   mov $2,$0
-  sub $3,$0
-  sub $0,$0
+  mov $0,0
   cal $2,66770 ; 5^n sin(2n arctan(1/2)) or numerator of tan(2n arctan(1/2)).
   mov $1,$2
   add $1,$2
-  add $3,11
-  mov $2,$3
-  mov $2,$3
-  mov $4,$3
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 div $1,8

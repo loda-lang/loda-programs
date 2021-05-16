@@ -8,7 +8,7 @@ lpb $12
   mov $0,$10
   sub $12,1
   add $0,$12
-  trn $0,1
+  sub $0,1
   mov $6,$0
   mov $8,2
   lpb $8
@@ -16,23 +16,17 @@ lpb $12
     mov $0,$6
     sub $8,1
     add $0,$8
-    trn $0,1
+    sub $0,1
     lpb $0
       mov $2,$0
       max $2,0
       cal $2,174192 ; Expansion of (1-x+2x^2)/ ((1-x)*(1-2x-x^2)).
       trn $0,2
       add $3,$2
-      sub $2,$2
       sub $3,1
-      mov $4,$2
-      min $4,1
-      add $5,$4
     lpe
-    mov $1,$4
     mov $1,$3
     mov $9,$8
-    cmp $9,1
     mul $9,$3
     add $7,$9
   lpe
@@ -41,7 +35,6 @@ lpb $12
   mov $1,$7
   sub $1,$6
   mov $13,$12
-  cmp $13,1
   mul $13,$1
   add $11,$13
 lpe

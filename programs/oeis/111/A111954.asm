@@ -12,31 +12,14 @@ lpb $33
   mov $27,$0
   mov $29,2
   lpb $29
-    clr $0,27
     mov $0,$27
     sub $29,1
     add $0,$29
-    sub $1,$0
     max $0,0
     cal $0,105635 ; a(n) = (2*Pell(n+2) - (1+(-1)^n))/4.
-    mov $1,6
-    sub $1,$0
-    add $1,14
-    add $1,$0
-    mov $2,$0
-    add $3,1
-    mul $3,$0
-    mov $0,64722
-    add $3,64722
-    cmp $3,1
-    div $3,2
-    add $0,$3
-    mov $1,$2
-    mov $4,2
-    mov $26,0
+    mov $1,$0
     mov $30,$29
-    cmp $30,1
-    mul $30,$2
+    mul $30,$0
     add $28,$30
   lpe
   min $27,1
@@ -44,7 +27,6 @@ lpb $33
   mov $1,$28
   sub $1,$27
   mov $34,$33
-  cmp $34,1
   mul $34,$1
   add $32,$34
 lpe

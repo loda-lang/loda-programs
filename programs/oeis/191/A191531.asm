@@ -8,9 +8,4 @@ lpb $0
   max $2,0
   cal $2,218008 ; Sum of successive absolute differences of the binomial coefficients = 2*A014495(n)
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1

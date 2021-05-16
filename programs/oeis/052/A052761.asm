@@ -3,17 +3,12 @@
 
 lpb $0
   mov $2,$0
-  trn $2,2
+  sub $2,2
   max $2,0
   cal $2,260217 ; Number of base-3 n-digit pandigital numbers.
   mul $2,$0
   div $0,14
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$5
-mov $3,$1
 div $1,8
 mul $1,12

@@ -6,15 +6,8 @@ lpb $0
   cal $2,40057 ; Continued fraction for sqrt(66).
   trn $0,2
   add $1,$2
-  mov $4,$2
   div $2,4
   mul $1,$2
-  add $2,4
-  min $4,1
-  mul $4,2
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1
 div $1,16
 add $1,1
