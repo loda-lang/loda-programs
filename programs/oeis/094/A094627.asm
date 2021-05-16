@@ -3,17 +3,10 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,70199 ; Number of palindromes of length <= n.
-  trn $0,1
+  sub $0,1
   add $1,$2
   add $1,1
-  mov $4,$2
-  min $4,1
-  mov $5,$4
-  add $5,$4
 lpe
-mov $3,$4
-mov $3,$1
 div $1,10
 add $1,1

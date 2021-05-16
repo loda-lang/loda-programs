@@ -21,9 +21,7 @@ lpb $10
     pow $1,$0
     mov $2,3
     mov $3,2
-    mov $4,0
-    add $4,$0
-    pow $3,$4
+    pow $3,$0
     sub $3,$1
     sub $2,$3
     mov $1,$2

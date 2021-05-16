@@ -15,7 +15,7 @@ lpb $16
     mov $0,$10
     sub $12,1
     add $0,$12
-    trn $0,1
+    sub $0,1
     mov $6,$0
     mov $8,2
     lpb $8
@@ -23,23 +23,18 @@ lpb $16
       mov $0,$6
       sub $8,1
       add $0,$8
-      trn $0,1
+      sub $0,1
       lpb $0
         mov $2,$0
         max $2,0
         cal $2,61776 ; Start with a single triangle; at n-th generation add a triangle at each vertex, allowing triangles to overlap; sequence gives number of triangles in n-th generation.
         div $0,2
         add $3,$2
-        mov $4,$2
-        min $4,1
-        add $5,$4
       lpe
       mov $0,$3
       add $0,3
-      mov $1,$3
       mov $1,$0
       mov $9,$8
-      cmp $9,1
       mul $9,$0
       add $7,$9
     lpe
@@ -48,7 +43,6 @@ lpb $16
     mov $1,$7
     sub $1,$6
     mov $13,$12
-    cmp $13,1
     mul $13,$1
     add $11,$13
   lpe

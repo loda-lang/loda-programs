@@ -3,17 +3,7 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,73717 ; a(n)=T(2n+1), where T(n) are the tribonacci numbers A000073.
-  trn $0,1
+  sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $6,$2
-cmp $6,0
-add $2,$6
-div $2,$2
-mov $3,$0
-mov $3,$1

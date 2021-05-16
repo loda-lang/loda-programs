@@ -3,5 +3,4 @@
 
 cal $0,40 ; The prime numbers.
 cal $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
-mov $1,11
 mov $1,$0
