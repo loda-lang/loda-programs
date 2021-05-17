@@ -3,14 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,38718 ; Number of permutations P of {1,2,...,n} such that P(1)=1 and |P^-1(i+1)-P^-1(i)| equals 1 or 2 for i=1,2,...,n-1.
-  sub $0,$0
-  add $1,$2
+  mov $0,0
   mov $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 add $1,1

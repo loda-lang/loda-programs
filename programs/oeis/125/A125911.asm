@@ -13,18 +13,11 @@ lpb $3
   lpb $5
     add $6,1
     mov $7,$0
-    mov $8,$2
-    cmp $8,0
-    add $2,$8
-    mod $7,$2
-    mov $8,$2
-    cmp $8,0
-    add $2,$8
     div $0,$2
+    mod $7,$2
     cmp $7,0
     sub $5,$7
   lpe
-  mov $0,$1
   sub $3,1
   cmp $6,0
   cmp $6,0
@@ -32,13 +25,8 @@ lpb $3
   pow $7,$6
   mul $1,$7
   add $2,2
-  add $9,$7
-  mov $7,$0
   mov $7,$0
   cmp $7,1
   cmp $7,0
   sub $3,$7
-  add $10,1
-  add $11,$4
-  mov $12,2
 lpe

@@ -6,7 +6,7 @@ mov $1,1
 mov $2,$0
 lpb $0
   sub $0,$1
-  trn $0,0
+  max $0,0
   mul $1,2
 lpe
 sub $1,$2

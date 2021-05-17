@@ -1,6 +1,8 @@
 ; A194641: Digital roots of the nonzero heptagonal numbers.
 ; 1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1
 
-mul $0,2
-cal $0,191760 ; Digital root of the n-th odd square.
+mov $1,$0
+mul $1,4
+mov $0,$1
+cal $0,56992 ; Digital roots of square numbers A000290.
 mov $1,$0

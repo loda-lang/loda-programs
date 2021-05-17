@@ -3,7 +3,6 @@
 
 sub $0,1
 max $0,0
-cal $0,96979 ; Sum of the areas of the first n+1 Pell triangles.
+cal $0,78057 ; Expansion of (1+x)/(1-2*x-x^2).
+pow $0,2
 mov $1,$0
-mul $1,8
-add $1,1

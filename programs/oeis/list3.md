@@ -80,7 +80,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152100](http://oeis.org/A152100) ([L13 program](152/A152100.asm)): G.f.: 1 - 2*x*(-7 - 10*x + x^2)/(x - 1)^4.
 * [A152110](http://oeis.org/A152110) ([L10 program](152/A152110.asm)): G.f.: -2*(-2 - 11*x - 4*x^2 + x^3)/(x - 1)^4.
 * [A152113](http://oeis.org/A152113) ([L03 program](152/A152113.asm)): A001333 with terms repeated.
-* [A152114](http://oeis.org/A152114) ([L11 program](152/A152114.asm)): Numbers a(n) are obtained by the application of an algorithm which is similar to sieve of Eratosthenes for A000045: retaining A000045(3)=2, we delete all multiples of 2, which are more than 2; retaining A000045(4)=3, we delete all multiples of 3, which are more than 3, etc.
+* [A152114](http://oeis.org/A152114) ([L06 program](152/A152114.asm)): Numbers a(n) are obtained by the application of an algorithm which is similar to sieve of Eratosthenes for A000045: retaining A000045(3)=2, we delete all multiples of 2, which are more than 2; retaining A000045(4)=3, we delete all multiples of 3, which are more than 3, etc.
 * [A152118](http://oeis.org/A152118) ([L04 program](152/A152118.asm)): a(n) = product( 4 +4*cos(k*Pi/n)^2, k=1..(n-1)/2 ).
 * [A152132](http://oeis.org/A152132) ([L40 program](152/A152132.asm)): Maximal length of rook tour on an n X n+1 board.
 * [A152133](http://oeis.org/A152133) ([L09 program](152/A152133.asm)): Maximal length of rook tour on an n X n+2 board.
@@ -1354,9 +1354,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162766](http://oeis.org/A162766) ([L03 program](162/A162766.asm)): a(n) = 3*a(n-2) for n > 2; a(1) = 4, a(2) = 3.
 * [A162770](http://oeis.org/A162770) ([L06 program](162/A162770.asm)): a(n) = ((2+sqrt(5))*(1+sqrt(5))^n + (2-sqrt(5))*(1-sqrt(5))^n)/2.
 * [A162771](http://oeis.org/A162771) ([L09 program](162/A162771.asm)): a(n) = ((2+sqrt(5))*(3+sqrt(5))^n + (2-sqrt(5))*(3-sqrt(5))^n)/2.
-* [A162775](http://oeis.org/A162775) ([L08 program](162/A162775.asm)): a(n) = A141042(n+1)/2.
+* [A162775](http://oeis.org/A162775) ([L05 program](162/A162775.asm)): a(n) = A141042(n+1)/2.
 * [A162784](http://oeis.org/A162784) ([L05 program](162/A162784.asm)): a(n) = (A048883(n)+1)/2.
 * [A162786](http://oeis.org/A162786) ([L03 program](162/A162786.asm)): a(n) = A162526(n)/6.
+* [A162801](http://oeis.org/A162801) ([L18 program](162/A162801.asm)): Bisection of A162800.
 * [A162802](http://oeis.org/A162802) ([L04 program](162/A162802.asm)): Bisection of A162800.
 * [A162814](http://oeis.org/A162814) ([L12 program](162/A162814.asm)): a(n) = 6*a(n-1)-6*a(n-2) for n > 1; a(0) = 5, a(1) = 18.
 * [A162852](http://oeis.org/A162852) ([L17 program](162/A162852.asm)): a(n) = 3*a(n-2) for n > 2; a(1) = 3, a(2) = -1.
@@ -1397,7 +1398,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A163291](http://oeis.org/A163291) ([L05 program](163/A163291.asm)): Number of digits of n-th prime written in base 4.
 * [A163292](http://oeis.org/A163292) ([L06 program](163/A163292.asm)): a(n) = n-th prime minus (number of digits of n-th prime written in base 4).
 * [A163293](http://oeis.org/A163293) ([L06 program](163/A163293.asm)): a(n) = n-th prime minus (number of bits in binary expansion of n-th prime).
-* [A163296](http://oeis.org/A163296) ([L07 program](163/A163296.asm)): Absolute value of the Sum_{x=0..A141468(n)} x*(-1)^x.
+* [A163296](http://oeis.org/A163296) ([L08 program](163/A163296.asm)): Absolute value of the Sum_{x=0..A141468(n)} x*(-1)^x.
 * [A163297](http://oeis.org/A163297) ([L15 program](163/A163297.asm)): a(n) = sum of divisors of n plus length of the binary expansion of n.
 * [A163298](http://oeis.org/A163298) ([L10 program](163/A163298.asm)): Sum of divisors of n minus binary order of n.
 * [A163299](http://oeis.org/A163299) ([L10 program](163/A163299.asm)): a(n) = (the number of divisors of n)^(the binary order of n).
@@ -1536,7 +1537,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164429](http://oeis.org/A164429) ([L09 program](164/A164429.asm)): Number of binary strings of length n with no substrings equal to 0000, 0011, or 1011.
 * [A164438](http://oeis.org/A164438) ([L04 program](164/A164438.asm)): Number of binary strings of length n with no substrings equal to 0000 0110 or 0111
 * [A164464](http://oeis.org/A164464) ([L18 program](164/A164464.asm)): Number of binary strings of length n with no substrings equal to 0001, 0100, or 0111.
-* [A164468](http://oeis.org/A164468) ([L11 program](164/A164468.asm)): Number of binary strings of length n with no substrings equal to 0001, 0100, or 1110.
+* [A164468](http://oeis.org/A164468) ([L04 program](164/A164468.asm)): Number of binary strings of length n with no substrings equal to 0001, 0100, or 1110.
 * [A164482](http://oeis.org/A164482) ([L08 program](164/A164482.asm)): Number of binary strings of length n with no substrings equal to 0001, 0110, or 1110.
 * [A164485](http://oeis.org/A164485) ([L10 program](164/A164485.asm)): Number of binary strings of length n with no substrings equal to 0001, 1000 or 1001.
 * [A164487](http://oeis.org/A164487) ([L06 program](164/A164487.asm)): Number of binary strings of length n with no substrings equal to 0001, 1010, or 1100.
@@ -1949,7 +1950,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168037](http://oeis.org/A168037) ([L06 program](168/A168037.asm)): Period length 18: repeat 0,1,2,0,8,7,0,4,5,0,5,4,0,7,8,0,2,1.
 * [A168038](http://oeis.org/A168038) ([L10 program](168/A168038.asm)): Squares closest to 2*n.
 * [A168039](http://oeis.org/A168039) ([L10 program](168/A168039.asm)): Squares closest to 3*n.
-* [A168043](http://oeis.org/A168043) ([L11 program](168/A168043.asm)): Let S(1)={1} and, for n>1 let S(n) be the smallest set containing x+1, x+2, and 2*x for each element x in S(n-1). a(n) is the number of elements in S(n).
+* [A168043](http://oeis.org/A168043) ([L09 program](168/A168043.asm)): Let S(1)={1} and, for n>1 let S(n) be the smallest set containing x+1, x+2, and 2*x for each element x in S(n-1). a(n) is the number of elements in S(n).
 * [A168046](http://oeis.org/A168046) ([L10 program](168/A168046.asm)): Characteristic function of zerofree numbers in decimal representation.
 * [A168048](http://oeis.org/A168048) ([L06 program](168/A168048.asm)): a(n) = C(n)*Pi(n) where C(n) = number of nonprimes <= n, Pi(n) = number of primes <= n.
 * [A168050](http://oeis.org/A168050) ([L04 program](168/A168050.asm)): Hankel transform of A168049.
@@ -2130,7 +2131,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168579](http://oeis.org/A168579) ([L14 program](168/A168579.asm)): G.f.: 1/(1-x-16*x^2).
 * [A168580](http://oeis.org/A168580) ([L08 program](168/A168580.asm)): a(n) = (n-th prime > 3) minus 3*n.
 * [A168582](http://oeis.org/A168582) ([L07 program](168/A168582.asm)): a(n) = (4*n^3 - 6*n^2 + 8*n + 9 + 3*(-1)^n)/12.
-* [A168583](http://oeis.org/A168583) ([L10 program](168/A168583.asm)): The number of ways of partitioning the multiset {1,1,2,3,...,n-1} into exactly three nonempty parts.
+* [A168583](http://oeis.org/A168583) ([L09 program](168/A168583.asm)): The number of ways of partitioning the multiset {1,1,2,3,...,n-1} into exactly three nonempty parts.
 * [A168587](http://oeis.org/A168587) ([L05 program](168/A168587.asm)): Smallest digit sum of an n-digit prime with only digits 0 add 1 (or 0, if no such prime exists).
 * [A168589](http://oeis.org/A168589) ([L06 program](168/A168589.asm)): a(n) = (2 - 3^n)*(-1)^n.
 * [A168596](http://oeis.org/A168596) ([L04 program](168/A168596.asm)): a(n) = 2*a(n-1) - 1 with a(0)=14.
@@ -2402,7 +2403,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171182](http://oeis.org/A171182) ([L06 program](171/A171182.asm)): Period 6: repeat [0, 1, 1, 1, 0, 2].
 * [A171218](http://oeis.org/A171218) ([L07 program](171/A171218.asm)): a(n) = sum(A109613(k)*A005843(n-k): 0<=k<=n).
 * [A171220](http://oeis.org/A171220) ([L06 program](171/A171220.asm)): a(n) = (2n + 1)*5^n.
-* [A171228](http://oeis.org/A171228) ([L05 program](171/A171228.asm)): n^(p-n) where p is smallest prime > n.
+* [A171228](http://oeis.org/A171228) ([L04 program](171/A171228.asm)): n^(p-n) where p is smallest prime > n.
 * [A171230](http://oeis.org/A171230) ([L06 program](171/A171230.asm)): a(n) = 0+1+2+...+n in lunar arithmetic in base 2 written in base 2.
 * [A171231](http://oeis.org/A171231) ([L05 program](171/A171231.asm)): a(n) = (10*2^n + 3 - (-1)^n)/6.
 * [A171237](http://oeis.org/A171237) ([L10 program](171/A171237.asm)): a(0)=2, a(1)=3, a(n) = 3 + a(n-1) + a(n-2) for n >= 2.
@@ -2413,7 +2414,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171378](http://oeis.org/A171378) ([L06 program](171/A171378.asm)): a(n) = (n+1)^2 - A006046(n+1).
 * [A171382](http://oeis.org/A171382) ([L13 program](171/A171382.asm)): a(n) = (2*2^n+7*(-1)^n)/3.
 * [A171386](http://oeis.org/A171386) ([L03 program](171/A171386.asm)): The characteristic function of 2 and 3: 1 if n is prime such that either n-1 or n+1 is prime, else 0.
-* [A171387](http://oeis.org/A171387) ([L03 program](171/A171387.asm)): The characteristic function of primes > 3: 1 if n is prime such that neither prime+-1 is prime else 0.
+* [A171387](http://oeis.org/A171387) ([L04 program](171/A171387.asm)): The characteristic function of primes > 3: 1 if n is prime such that neither prime+-1 is prime else 0.
 * [A171389](http://oeis.org/A171389) ([L05 program](171/A171389.asm)): a(n) = 21*2^n - 1.
 * [A171390](http://oeis.org/A171390) ([L05 program](171/A171390.asm)): a(n) = 37*2^(n-1)-1.
 * [A171405](http://oeis.org/A171405) ([L18 program](171/A171405.asm)): Sum of divisors of n, excluding divisors 2 and 3.
@@ -2473,7 +2474,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171624](http://oeis.org/A171624) ([L04 program](171/A171624.asm)): Floor(n-th nonprime / n).
 * [A171627](http://oeis.org/A171627) ([L04 program](171/A171627.asm)): Ceiling(n-th composite/n).
 * [A171638](http://oeis.org/A171638) ([L09 program](171/A171638.asm)): Denominator of 1/(n-2)^2 - 1/(n+2)^2.
-* [A171647](http://oeis.org/A171647) ([L11 program](171/A171647.asm)): a(1) = 1; for n > 1, a(n) = 2*a(n-1) if n is even, a(n) = ((n+1)/(n-1))*a(n-1) if n is odd.
+* [A171647](http://oeis.org/A171647) ([L08 program](171/A171647.asm)): a(1) = 1; for n > 1, a(n) = 2*a(n-1) if n is even, a(n) = ((n+1)/(n-1))*a(n-1) if n is odd.
 * [A171654](http://oeis.org/A171654) ([L06 program](171/A171654.asm)): Period 10: repeat 0, 1, 6, 7, 2, 3, 8, 9, 4, 5.
 * [A171662](http://oeis.org/A171662) ([L04 program](171/A171662.asm)): a(n) = floor((2*n^2 + n)/6).
 * [A171663](http://oeis.org/A171663) ([L09 program](171/A171663.asm)): Expansion of (1 + 4*x - 6*x^2 - 16*x^3 + 20*x^4)/((1-x)*(1-2*x)*(1+2*x)*(1-2*x^2)).
@@ -2516,7 +2517,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A172022](http://oeis.org/A172022) ([L20 program](172/A172022.asm)): a(n) = prime(n) + (-1)^n.
 * [A172043](http://oeis.org/A172043) ([L05 program](172/A172043.asm)): 5n^2 - n + 1.
 * [A172044](http://oeis.org/A172044) ([L06 program](172/A172044.asm)): 5*n^2+11*n+1.
-* [A172045](http://oeis.org/A172045) ([L13 program](172/A172045.asm)): a(n) = (9*n^4+10*n^3-3*n^2-4*n)/12.
+* [A172045](http://oeis.org/A172045) ([L08 program](172/A172045.asm)): a(n) = (9*n^4+10*n^3-3*n^2-4*n)/12.
 * [A172046](http://oeis.org/A172046) ([L06 program](172/A172046.asm)): Partial sums of floor(n^2/7) (A056834).
 * [A172047](http://oeis.org/A172047) ([L08 program](172/A172047.asm)): n*(n+1)*(15*n^2-n-8)/12.
 * [A172051](http://oeis.org/A172051) ([L03 program](172/A172051.asm)): Decimal expansion of 1/999999.
@@ -2544,7 +2545,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A172172](http://oeis.org/A172172) ([L10 program](172/A172172.asm)): Sums of NW-SE diagonals of triangle A172171.
 * [A172173](http://oeis.org/A172173) ([L08 program](172/A172173.asm)): Sums of NE-SW diagonals of triangle A172171.
 * [A172178](http://oeis.org/A172178) ([L03 program](172/A172178.asm)): 99n+1.
-* [A172188](http://oeis.org/A172188) ([L07 program](172/A172188.asm)): Partial sums of primes of the form 3*k-1.
+* [A172188](http://oeis.org/A172188) ([L09 program](172/A172188.asm)): Partial sums of primes of the form 3*k-1.
 * [A172190](http://oeis.org/A172190) ([L04 program](172/A172190.asm)): a(n) = 2*prime(n)^3.
 * [A172191](http://oeis.org/A172191) ([L04 program](172/A172191.asm)): a(n) = 2*prime(n)^4.
 * [A172193](http://oeis.org/A172193) ([L06 program](172/A172193.asm)): 5*n^2+31*n+1.
@@ -2777,7 +2778,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174928](http://oeis.org/A174928) ([L11 program](174/A174928.asm)): Partial sums of A174927.
 * [A174929](http://oeis.org/A174929) ([L07 program](174/A174929.asm)): Partial sums of A174928.
 * [A174934](http://oeis.org/A174934) ([L21 program](174/A174934.asm)): a(n) = Sum_{k<=n} A007955(k) * A000027(n-k+1) = Sum_{k<=n} A007955(k) * (n-k+1), where A007955(m) = product of divisors of m.
-* [A174935](http://oeis.org/A174935) ([L23 program](174/A174935.asm)): a(n) = Sum_{k<=n} A007955(k) * A000027(k) = Sum_{k<=n} A007955(k) * k, where A007955(m) = product of divisors of m.
+* [A174935](http://oeis.org/A174935) ([L10 program](174/A174935.asm)): a(n) = Sum_{k<=n} A007955(k) * A000027(k) = Sum_{k<=n} A007955(k) * k, where A007955(m) = product of divisors of m.
 * [A174939](http://oeis.org/A174939) ([L07 program](174/A174939.asm)): a(n) = Sum_{k<=n} A007955(k) * A007955(k) = Sum_{k<=n} (A007955(k))^2, where A007955(m) = product of divisors of m.
 * [A174971](http://oeis.org/A174971) ([L03 program](174/A174971.asm)): Periodic sequence: Repeat 3, -3.
 * [A174989](http://oeis.org/A174989) ([L15 program](174/A174989.asm)): Partial sums of A003602.
@@ -2794,7 +2795,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175109](http://oeis.org/A175109) ([L07 program](175/A175109.asm)): a(n) = ((2*n+1)^3+(-1)^n)/2.
 * [A175110](http://oeis.org/A175110) ([L06 program](175/A175110.asm)): a(n) = ((2*n+1)^4+1)/2.
 * [A175111](http://oeis.org/A175111) ([L07 program](175/A175111.asm)): ((2*n+1)^5+(-1)^n)/2.
-* [A175112](http://oeis.org/A175112) ([L40 program](175/A175112.asm)): First differences of A175111.
+* [A175112](http://oeis.org/A175112) ([L39 program](175/A175112.asm)): First differences of A175111.
 * [A175113](http://oeis.org/A175113) ([L06 program](175/A175113.asm)): a(n) = ((2*n + 1)^6 + 1)/2.
 * [A175114](http://oeis.org/A175114) ([L46 program](175/A175114.asm)): First differences of A175113.
 * [A175126](http://oeis.org/A175126) ([L11 program](175/A175126.asm)): a(0) = a(1) = 0, for n >= 2, a(n) = number of steps of iteration of {r - (smallest prime divisor of r)} needed to reach 0 starting at r = n.
@@ -2879,6 +2880,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175887](http://oeis.org/A175887) ([L06 program](175/A175887.asm)): Numbers that are congruent to {1, 14} mod 15.
 * [A175921](http://oeis.org/A175921) ([L13 program](175/A175921.asm)): Period 5: repeat [1, 2, 2, -1, 1].
 * [A175922](http://oeis.org/A175922) ([L05 program](175/A175922.asm)): Period 5: repeat [1, 1, 2, -1, 2].
+* [A175944](http://oeis.org/A175944) ([L16 program](175/A175944.asm)): 1 appears once, n-th prime p appears p times.
 * [A175965](http://oeis.org/A175965) ([L17 program](175/A175965.asm)): Lexicographically earliest sequence with first differences as increasing sequence of noncomposites A008578.
 * [A175966](http://oeis.org/A175966) ([L17 program](175/A175966.asm)): Complement of A175965(n), where A175965(n) = the lexicographically earliest sequence with first differences as increasing sequence of noncomposites A008578.
 * [A175968](http://oeis.org/A175968) ([L03 program](175/A175968.asm)): Complement of A175967(n), where A175967(n) = the lexicographically earliest sequence with first differences as increasing sequence of nonprimes A018252(n).
@@ -3100,7 +3102,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178735](http://oeis.org/A178735) ([L16 program](178/A178735.asm)): a(n) = n XOR 9n, where XOR is bitwise XOR.
 * [A178736](http://oeis.org/A178736) ([L16 program](178/A178736.asm)): a(n) = n XOR 10n, where XOR is bitwise XOR.
 * [A178742](http://oeis.org/A178742) ([L12 program](178/A178742.asm)): Partial sums of floor(2^n/9).
-* [A178744](http://oeis.org/A178744) ([L24 program](178/A178744.asm)): Partial sums of floor(4^n/9).
+* [A178744](http://oeis.org/A178744) ([L23 program](178/A178744.asm)): Partial sums of floor(4^n/9).
 * [A178746](http://oeis.org/A178746) ([L10 program](178/A178746.asm)): Binary counter with intermittent bits. Starting at zero the counter attempts to increment by 1 at each step but each bit in the counter alternately accepts and rejects requests to toggle.
 * [A178759](http://oeis.org/A178759) ([L15 program](178/A178759.asm)): Expansion of e.g.f. 3*x*exp(x)*(exp(x)-1)^2.
 * [A178778](http://oeis.org/A178778) ([L08 program](178/A178778.asm)): Partial sums of walks of length n+1 on a tetrahedron A001998.
@@ -3220,7 +3222,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179935](http://oeis.org/A179935) ([L10 program](179/A179935.asm)): Squares where the number of decimal digits is also a square.
 * [A179976](http://oeis.org/A179976) ([L03 program](179/A179976.asm)): 2^(2n+1) mod (2n+1).
 * [A179986](http://oeis.org/A179986) ([L05 program](179/A179986.asm)): Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.
-* [A179991](http://oeis.org/A179991) ([L11 program](179/A179991.asm)): Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.
+* [A179991](http://oeis.org/A179991) ([L06 program](179/A179991.asm)): Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.
 * [A179995](http://oeis.org/A179995) ([L46 program](179/A179995.asm)): Generating function A(5,t)(1+t+t^2)/(1-t)^6, where A(5,t) is an Eulerian polynomial.
 * [A179999](http://oeis.org/A179999) ([L17 program](179/A179999.asm)): Length of the n-th term in the modified Look and Say sequence A110393.
 * [A180004](http://oeis.org/A180004) ([L05 program](180/A180004.asm)): Nearest integer to n*(27/26)
@@ -3442,6 +3444,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A182664](http://oeis.org/A182664) ([L10 program](182/A182664.asm)): a(n) = A088828(n) + A157502(n).
 * [A182687](http://oeis.org/A182687) ([L07 program](182/A182687.asm)): a(n) = the smallest 1-digit number with exactly n divisors, a(n) = 0 if no such number exists.
 * [A182688](http://oeis.org/A182688) ([L42 program](182/A182688.asm)): a(n) = the largest 1-digit number with exactly n divisors, a(n) = 0 if no such number exists.
+* [A182741](http://oeis.org/A182741) ([L19 program](182/A182741.asm)): A shell model of partitions as a binary code.
 * [A182751](http://oeis.org/A182751) ([L10 program](182/A182751.asm)): a(1)=1, a(2)=3, a(3)=6; a(n) = 3*a(n-2) for n > 3.
 * [A182757](http://oeis.org/A182757) ([L11 program](182/A182757.asm)): Numbers k > 1 such that is no sequence B of type: {b(1) = 1, b(2) = k, for n >= 3; b(n) = the smallest number h > b(n-1) such that [[b(n-2) + b(n-1)] * [b(n-2) + h] * [b(n-1) + h]] / [b(n-2) * b(n-1) * h] is integer}.
 * [A182761](http://oeis.org/A182761) ([L12 program](182/A182761.asm)): Beatty sequence for (7 - sqrt(5))/2.
@@ -3472,6 +3475,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183003](http://oeis.org/A183003) ([L06 program](183/A183003.asm)): A183002(n)/2.
 * [A183010](http://oeis.org/A183010) ([L04 program](183/A183010.asm)): a(n) = 24*n - 1.
 * [A183037](http://oeis.org/A183037) ([L18 program](183/A183037.asm)): a(n) = A001511(n)*2^A001511(n) where A001511(n) equals the 2-adic valuation of 2n.
+* [A183039](http://oeis.org/A183039) ([L11 program](183/A183039.asm)):  a(n) = A051064(n)*3^A051064(n) where A051064(n) equals the 3-adic valuation of 3n.
 * [A183041](http://oeis.org/A183041) ([L21 program](183/A183041.asm)): Least number of knight's moves from (0,0) to (n,1) on infinite chessboard.
 * [A183060](http://oeis.org/A183060) ([L05 program](183/A183060.asm)): Number of "ON" cells at n-th stage in a simple 2-dimensional cellular automaton (see Comments for precise definition).
 * [A183061](http://oeis.org/A183061) ([L17 program](183/A183061.asm)): First differences of A183060.
@@ -3499,7 +3503,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183222](http://oeis.org/A183222) ([L08 program](183/A183222.asm)): Complement of the 10-gonal numbers.
 * [A183223](http://oeis.org/A183223) ([L08 program](183/A183223.asm)): Complement of the 11-gonal numbers.
 * [A183224](http://oeis.org/A183224) ([L07 program](183/A183224.asm)): Complement of the 12-gonal numbers.
-* [A183264](http://oeis.org/A183264) ([L20 program](183/A183264.asm)): Number of singly defective permutations of 1..n with exactly 1 maximum.
+* [A183264](http://oeis.org/A183264) ([L12 program](183/A183264.asm)): Number of singly defective permutations of 1..n with exactly 1 maximum.
 * [A183292](http://oeis.org/A183292) ([L09 program](183/A183292.asm)): Complement of A055999.
 * [A183293](http://oeis.org/A183293) ([L08 program](183/A183293.asm)): Complement of A056000.
 * [A183294](http://oeis.org/A183294) ([L08 program](183/A183294.asm)): Complement of A005449.
@@ -3652,7 +3656,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184592](http://oeis.org/A184592) ([L04 program](184/A184592.asm)): a(n) = floor((n*(Pi-1) + 1)/(Pi-2)); complement of A184591.
 * [A184593](http://oeis.org/A184593) ([L18 program](184/A184593.asm)): 5n - A101306: sum_{i=1..n} the last digit of prime(i).
 * [A184615](http://oeis.org/A184615) ([L04 program](184/A184615.asm)): Positive parts of the nonadjacent forms for n
-* [A184616](http://oeis.org/A184616) ([L08 program](184/A184616.asm)): Negated negative parts of the nonadjacent forms
+* [A184616](http://oeis.org/A184616) ([L05 program](184/A184616.asm)): Negated negative parts of the nonadjacent forms
 * [A184617](http://oeis.org/A184617) ([L03 program](184/A184617.asm)): With nonadjacent forms: A184615(n) + A184616(n).
 * [A184619](http://oeis.org/A184619) ([L04 program](184/A184619.asm)): a(n) = floor((n-h)*s+h), where s=2+sqrt(2) and h=1/3; complement of A184618.
 * [A184620](http://oeis.org/A184620) ([L23 program](184/A184620.asm)): a(n) = floor(nr+h), where r=sqrt(2), h=1/4; complement of A184621.
@@ -3834,7 +3838,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186342](http://oeis.org/A186342) ([L06 program](186/A186342.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the pentagonal numbers and the octagonal numbers.  Complement of A186343.
 * [A186343](http://oeis.org/A186343) ([L24 program](186/A186343.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the pentagonal numbers and the octagonal numbers.  Complement of A186342.
 * [A186345](http://oeis.org/A186345) ([L20 program](186/A186345.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the pentagonal numbers and the octagonal numbers.  Complement of A186344.
-* [A186346](http://oeis.org/A186346) ([L38 program](186/A186346.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=8i and g(j)=j^2.  Complement of A186347.
+* [A186346](http://oeis.org/A186346) ([L11 program](186/A186346.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=8i and g(j)=j^2.  Complement of A186347.
 * [A186347](http://oeis.org/A186347) ([L05 program](186/A186347.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=8i and g(j)=j^2.  Complement of A186346.
 * [A186348](http://oeis.org/A186348) ([L18 program](186/A186348.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=8i and g(j)=j^2.  Complement of A186349.
 * [A186349](http://oeis.org/A186349) ([L06 program](186/A186349.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=8i and g(j)=j^2. Complement of A186348.
@@ -4192,7 +4196,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189889](http://oeis.org/A189889) ([L08 program](189/A189889.asm)): Maximum number of nonattacking kings on an n X n toroidal board.
 * [A189890](http://oeis.org/A189890) ([L06 program](189/A189890.asm)): a(n) = (n^3 - 2*n^2 + 3*n + 2)/2.
 * [A189894](http://oeis.org/A189894) ([L45 program](189/A189894.asm)): Number of isosceles right triangles on a 2nX(n+1) grid
-* [A189911](http://oeis.org/A189911) ([L11 program](189/A189911.asm)): Row sums of the extended Catalan triangle A189231.
+* [A189911](http://oeis.org/A189911) ([L07 program](189/A189911.asm)): Row sums of the extended Catalan triangle A189231.
 * [A189933](http://oeis.org/A189933) ([L05 program](189/A189933.asm)): a(n) = n + [n*r/t] + [n*s/t]; r=1, s=(sin(Pi/5))^2, t=(cos(Pi/5))^2.
 * [A189935](http://oeis.org/A189935) ([L04 program](189/A189935.asm)): a(n) = A189933(n)/2.
 * [A189976](http://oeis.org/A189976) ([L04 program](189/A189976.asm)): a(n) is the number of incongruent two-color bracelets of n beads, 8 of them black (A005514), having a diameter of symmetry.
@@ -4289,7 +4293,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191002](http://oeis.org/A191002) ([L04 program](191/A191002.asm)): Completely multiplicative function with a(prime(k)) = prime(k)*prime(k+1).
 * [A191007](http://oeis.org/A191007) ([L09 program](191/A191007.asm)): Another renewal type of sequence: Let X, X(1),X(2),... denote independent random variables with pdf P(X=1) = P(X=2) = P(X=4) = 1/3. Let N(x) denote the first value of k such that X(1)*X(2)...*X(k) > x, and let H(x) = E(N(x)). The sequence a(n) is given by a(n) = 2^(n+1)*H(2^n).
 * [A191008](http://oeis.org/A191008) ([L21 program](191/A191008.asm)): Another renewal type of sequence. Let X, X(1), X(2),... denote random variables with pdf P(X = 1) = P(X = 4 ) = 1/4 and P(X = 2) = 1/2. Let N(x) denote the first value of k such that X(1)*X(2)*...*X(k) > x and let H(x)= E(N(x)). The sequence is given by a(n) = 3^(n+1)*H(2^n)/4.
-* [A191010](http://oeis.org/A191010) ([L15 program](191/A191010.asm)): a(n) = 4^(n+1)*H(2^n)/5 with H(2^n) = n+(6+(-1)^n/4^(n+1))/5 = E(N(2^n)), where X, X(1), X(2),... denote random variables with pdf P(X = 1) = P(X = 4) = 1/5 and P(X = 2) = 3/5, N(x) is the first value of k such that X(1)*X(2)*...*X(k) > x and H(x)= E(N(x)).
+* [A191010](http://oeis.org/A191010) ([L09 program](191/A191010.asm)): a(n) = 4^(n+1)*H(2^n)/5 with H(2^n) = n+(6+(-1)^n/4^(n+1))/5 = E(N(2^n)), where X, X(1), X(2),... denote random variables with pdf P(X = 1) = P(X = 4) = 1/5 and P(X = 2) = 3/5, N(x) is the first value of k such that X(1)*X(2)*...*X(k) > x and H(x)= E(N(x)).
 * [A191012](http://oeis.org/A191012) ([L08 program](191/A191012.asm)): a(n) = n^5 - n^4 + n^3 - n^2 + n.
 * [A191106](http://oeis.org/A191106) ([L04 program](191/A191106.asm)): Increasing sequence generated by these rules: a(1)=1, and if x is in a then 3x-2 and 3x are in a.
 * [A191107](http://oeis.org/A191107) ([L03 program](191/A191107.asm)): Increasing sequence generated by these rules:  a(1)=1, and if x is in a then 3x-2 and 3x+1 are in a.
@@ -4333,7 +4337,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191628](http://oeis.org/A191628) ([L16 program](191/A191628.asm)): a(n) = floor((3^n)/(3*n - 2)).
 * [A191629](http://oeis.org/A191629) ([L16 program](191/A191629.asm)): a(n) = floor((2^n)/(3*n - 1)).
 * [A191630](http://oeis.org/A191630) ([L07 program](191/A191630.asm)): a(n) = floor((-1 + 2^n)/(1 + 2*n)).
-* [A191631](http://oeis.org/A191631) ([L10 program](191/A191631.asm)): a(n) = floor((2^n)/(2n-1)).
+* [A191631](http://oeis.org/A191631) ([L07 program](191/A191631.asm)): a(n) = floor((2^n)/(2n-1)).
 * [A191632](http://oeis.org/A191632) ([L06 program](191/A191632.asm)): a(n) = floor((3^n)/(2*n - 1)).
 * [A191636](http://oeis.org/A191636) ([L12 program](191/A191636.asm)): a(n) = floor((-1 + 4^n)/(-1 + 2*n)).
 * [A191637](http://oeis.org/A191637) ([L07 program](191/A191637.asm)): a(n) = floor((1 + 4^n)/(1 + 2*n)).
@@ -4351,7 +4355,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191762](http://oeis.org/A191762) ([L08 program](191/A191762.asm)): Digital roots of the nonzero even squares.
 * [A191790](http://oeis.org/A191790) ([L08 program](191/A191790.asm)): Number of base pyramids in all length n left factors of Dyck paths.
 * [A191797](http://oeis.org/A191797) ([L03 program](191/A191797.asm)): a(n) = binomial(F(n), 2) where F(n) = A000045(n).
-* [A191821](http://oeis.org/A191821) ([L13 program](191/A191821.asm)): a(n) = n*(2^n - n + 1) + 2^(n-1)*(n^2 - 3*n + 2).
+* [A191821](http://oeis.org/A191821) ([L12 program](191/A191821.asm)): a(n) = n*(2^n - n + 1) + 2^(n-1)*(n^2 - 3*n + 2).
 * [A191871](http://oeis.org/A191871) ([L05 program](191/A191871.asm)): a(n) = numerator(n^2 / 2^n).
 * [A191899](http://oeis.org/A191899) ([L04 program](191/A191899.asm)): Number of compositions of odd natural numbers into 8 parts <=n
 * [A191900](http://oeis.org/A191900) ([L04 program](191/A191900.asm)): Number of compositions of odd natural numbers into 7 parts <=n
@@ -4360,7 +4364,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191903](http://oeis.org/A191903) ([L04 program](191/A191903.asm)): Number of compositions of odd natural numbers into 4 parts <=n
 * [A191967](http://oeis.org/A191967) ([L06 program](191/A191967.asm)): n * (numbers that are not divisible by 3).
 * [A192002](http://oeis.org/A192002) ([L11 program](192/A192002.asm)): Counting sequence for Wythoff AB-numbers smaller than n.
-* [A192021](http://oeis.org/A192021) ([L11 program](192/A192021.asm)): The Wiener index of the binomial tree of order n.
+* [A192021](http://oeis.org/A192021) ([L10 program](192/A192021.asm)): The Wiener index of the binomial tree of order n.
 * [A192023](http://oeis.org/A192023) ([L09 program](192/A192023.asm)): The Wiener index of the comb-shaped graph |_|_|...|_| with 2n (n>=1) nodes. The Wiener index of a connected graph is the sum of the distances between all unordered pairs of vertices in the graph.
 * [A192025](http://oeis.org/A192025) ([L22 program](192/A192025.asm)): The Wiener index of the double-comb graph \/_\/_\/...\/_\/ with 3n (n>=1) nodes. The Wiener index of a connected graph is the sum of the distances between all unordered pairs of vertices in the graph.
 * [A192033](http://oeis.org/A192033) ([L11 program](192/A192033.asm)): Expansion of x*(3*x^2+x+1)/((x-1)*(2*x-1)*(x+1)).
@@ -4379,7 +4383,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192307](http://oeis.org/A192307) ([L04 program](192/A192307.asm)): 0-sequence of reduction of (3n) by x^2 -> x+1.
 * [A192308](http://oeis.org/A192308) ([L04 program](192/A192308.asm)): 1-sequence of reduction of (3n) by x^2 -> x+1.
 * [A192309](http://oeis.org/A192309) ([L14 program](192/A192309.asm)): 0-sequence of reduction of (3n-1) by x^2 -> x+1.
-* [A192310](http://oeis.org/A192310) ([L19 program](192/A192310.asm)): 1-sequence of reduction of (3n-1) by x^2 -> x+1.
+* [A192310](http://oeis.org/A192310) ([L17 program](192/A192310.asm)): 1-sequence of reduction of (3n-1) by x^2 -> x+1.
 * [A192311](http://oeis.org/A192311) ([L11 program](192/A192311.asm)): 0-sequence of reduction of (3n-2) by x^2 -> x+1.
 * [A192312](http://oeis.org/A192312) ([L10 program](192/A192312.asm)): 1-sequence of reduction of (3n-2) by x^2 -> x+1.
 * [A192326](http://oeis.org/A192326) ([L08 program](192/A192326.asm)): Remainders of primes divided by odd numbers.

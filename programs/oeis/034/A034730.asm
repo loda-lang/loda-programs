@@ -3,45 +3,18 @@
 
 add $0,1
 mov $2,$0
-mov $3,0
-mov $5,1
-mov $5,$0
-mul $5,2
-mov $6,$0
 lpb $0
-  max $0,1
-  mul $3,4
   mov $3,$2
   mov $4,$0
   cmp $4,0
   add $0,$4
   dif $3,$0
+  sub $0,1
   cmp $3,$2
   cmp $3,0
   add $1,$3
-  mod $3,1
-  mul $3,$0
-  sub $0,1
   mul $1,3
-  mov $4,0
-  trn $5,5
-  sub $5,1
-  pow $6,7
-  trn $6,1
-  mov $6,$5
-  add $7,$3
-  mov $8,1
-  add $8,$5
 lpe
-add $7,1
-mov $7,$1
-div $7,4
-mul $7,2
-div $7,8
-mul $7,4
-add $7,1
-mov $7,$1
 div $1,9
 mul $1,3
 add $1,1
-div $6,2
