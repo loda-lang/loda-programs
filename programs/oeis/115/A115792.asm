@@ -2,13 +2,6 @@
 ; 0,0,1,1,2,3,6,11,20,37,69,126,232,426,784,1442,2652,4878,8973,16503,30354,55829,102686,188869,347384
 
 trn $0,1
-mov $1,1
-trn $1,$0
-add $1,$0
-mov $2,0
 cal $0,301657 ; Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
 div $0,4
 mov $1,$0
-mov $2,0
-mov $3,0
-mov $4,8

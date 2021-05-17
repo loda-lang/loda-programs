@@ -5,7 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,69895 ; 2^a(n) divides (2n)^(2n): exponent of 2 in (2n)^(2n).
+  cal $2,91512 ; a(n) is the largest integer m such that 2^m divides (2*n)^n, i.e., the exponent of 2 in (2*n)^n.
   add $1,$2
 lpe
-div $1,2

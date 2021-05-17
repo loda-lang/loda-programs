@@ -19,8 +19,7 @@ lpb $3
     mov $4,$5
     sub $4,$5
     sub $4,1
-    mov $6,0
-    add $6,$4
+    mov $6,$4
     sub $4,1
     mov $5,$8
     add $5,3

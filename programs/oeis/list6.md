@@ -310,7 +310,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305272](http://oeis.org/A305272) ([L05 program](305/A305272.asm)): a(n) = 836*2^n - 676.
 * [A305290](http://oeis.org/A305290) ([L03 program](305/A305290.asm)): Numbers k such that 4*k + 1 is a perfect cube, sorted by absolute values.
 * [A305291](http://oeis.org/A305291) ([L28 program](305/A305291.asm)): Numbers k such that 4*k + 3 is a perfect cube, sorted by absolute values.
-* [A305412](http://oeis.org/A305412) ([L18 program](305/A305412.asm)): a(n) = F(n)*F(n+1) + F(n+2), where F = A000045 (Fibonacci numbers).
+* [A305412](http://oeis.org/A305412) ([L09 program](305/A305412.asm)): a(n) = F(n)*F(n+1) + F(n+2), where F = A000045 (Fibonacci numbers).
 * [A305497](http://oeis.org/A305497) ([L10 program](305/A305497.asm)): The largest positive even integer that can be represented with n digits in base 3/2.
 * [A305498](http://oeis.org/A305498) ([L09 program](305/A305498.asm)): The smallest positive even integer that can be represented with n digits in base 3/2.
 * [A305503](http://oeis.org/A305503) ([L09 program](305/A305503.asm)): Largest cardinality of subsets A of {0,1,...,n-1} with |A + A| > |A - A|.
@@ -708,10 +708,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A314252](http://oeis.org/A314252) ([L17 program](314/A314252.asm)): Coordination sequence Gal.5.295.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314253](http://oeis.org/A314253) ([L23 program](314/A314253.asm)): Coordination sequence Gal.6.627.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314254](http://oeis.org/A314254) ([L03 program](314/A314254.asm)): Coordination sequence Gal.6.628.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A314668](http://oeis.org/A314668) ([L45 program](314/A314668.asm)): Coordination sequence Gal.6.115.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A314668](http://oeis.org/A314668) ([L04 program](314/A314668.asm)): Coordination sequence Gal.6.115.6 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314670](http://oeis.org/A314670) ([L16 program](314/A314670.asm)): Coordination sequence Gal.5.50.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314672](http://oeis.org/A314672) ([L22 program](314/A314672.asm)): Coordination sequence Gal.4.38.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A314677](http://oeis.org/A314677) ([L25 program](314/A314677.asm)): Coordination sequence Gal.3.10.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A314677](http://oeis.org/A314677) ([L04 program](314/A314677.asm)): Coordination sequence Gal.3.10.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314680](http://oeis.org/A314680) ([L21 program](314/A314680.asm)): Coordination sequence Gal.6.149.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314683](http://oeis.org/A314683) ([L13 program](314/A314683.asm)): Coordination sequence Gal.6.130.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A314692](http://oeis.org/A314692) ([L23 program](314/A314692.asm)): Coordination sequence Gal.5.81.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -872,6 +872,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316824](http://oeis.org/A316824) ([L14 program](316/A316824.asm)): A second example of a word that is uniform morphic and recurrent, but neither pure morphic nor primitive morphic.
 * [A316825](http://oeis.org/A316825) ([L22 program](316/A316825.asm)): Fibonacci word A003849 with its initial term changed to 2.
 * [A316826](http://oeis.org/A316826) ([L19 program](316/A316826.asm)): Image of 3 under repeated application of the morphism 3 -> 3,2, 2 -> 1,0,2,0,1,2, 1 -> 1,0,1,2, 0 -> 0,2.
+* [A316828](http://oeis.org/A316828) ([L22 program](316/A316828.asm)): Image of the Thue-Morse sequence A010060 under the morphism {1 -> 1,2; 0 -> 0,2}.
 * [A316829](http://oeis.org/A316829) ([L09 program](316/A316829.asm)): Image of 0 under repeated application of the morphism 0 -> 0,1,0, 1 -> 1,1,1.
 * [A316843](http://oeis.org/A316843) ([L15 program](316/A316843.asm)): Column 1 of table A316841.
 * [A316868](http://oeis.org/A316868) ([L10 program](316/A316868.asm)): Number of times 7 appears in decimal expansion of n.
@@ -1230,7 +1231,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A326186](http://oeis.org/A326186) ([L10 program](326/A326186.asm)): a(n) = n - A057521(n), where A057521 gives the powerful part of n.
 * [A326194](http://oeis.org/A326194) ([L06 program](326/A326194.asm)): Number of iterations of x -> A009194(x) needed to reach a fixed point when starting from x = n, where A009194(x) = gcd(x, sigma(x)).
 * [A326195](http://oeis.org/A326195) ([L06 program](326/A326195.asm)): Number of iterations of x -> A009195(x) needed to reach 1 when starting from x = n, where A009195(x) = gcd(x, phi(x)).
-* [A326247](http://oeis.org/A326247) ([L15 program](326/A326247.asm)): Number of labeled n-vertex 2-edge multigraphs that are neither crossing nor nesting.
+* [A326247](http://oeis.org/A326247) ([L10 program](326/A326247.asm)): Number of labeled n-vertex 2-edge multigraphs that are neither crossing nor nesting.
 * [A326278](http://oeis.org/A326278) ([L08 program](326/A326278.asm)): Number of n-vertex, 2-edge multigraphs that are not nesting. Number of n-vertex, 2-edge multigraphs that are not crossing.
 * [A326300](http://oeis.org/A326300) ([L09 program](326/A326300.asm)): Steinhaus sums.
 * [A326354](http://oeis.org/A326354) ([L06 program](326/A326354.asm)): a(n) is the number of fractions reduced to lowest terms with numerator and denominator less than or equal to n in absolute value.
@@ -1756,7 +1757,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339013](http://oeis.org/A339013) ([L16 program](339/A339013.asm)): Class number m containing n in a partitioning of the natural numbers into classes B_m by William J. Keith.
 * [A339032](http://oeis.org/A339032) ([L13 program](339/A339032.asm)): Expansion of (4*x^5 - 9*x^4 + 17*x^3 - 15*x^2 + 6*x - 1)/((2*x - 1)^2*(x - 1)^3).
 * [A339048](http://oeis.org/A339048) ([L04 program](339/A339048.asm)): a(n) = 2*n^2 + 9.
-* [A339051](http://oeis.org/A339051) ([L06 program](339/A339051.asm)): Even bisection of the infinite Fibonacci word A096270.
+* [A339051](http://oeis.org/A339051) ([L05 program](339/A339051.asm)): Even bisection of the infinite Fibonacci word A096270.
 * [A339052](http://oeis.org/A339052) ([L04 program](339/A339052.asm)): Odd bisection of the infinite Fibonacci word A096270.
 * [A339136](http://oeis.org/A339136) ([L27 program](339/A339136.asm)): Number of (undirected) cycles in the graph C_3 X P_n.
 * [A339183](http://oeis.org/A339183) ([L06 program](339/A339183.asm)): Number of partitions of n into two parts such that the smaller part is a nonzero square.

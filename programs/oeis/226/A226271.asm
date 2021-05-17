@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,1911 ; a(n) = Fibonacci(n+3) - 2.
-  mov $0,0
-  add $1,2
+  cal $1,78642 ; Numbers with two representations as the sum of two Fibonacci numbers.
+  bin $0,$1
 lpe
+div $1,2
 add $1,1

@@ -5,7 +5,6 @@ mov $1,$0
 mov $2,3
 add $2,$0
 bin $2,4
-mov $3,1
-mul $3,$0
+mov $3,$0
 mul $3,$2
 mul $1,$3
