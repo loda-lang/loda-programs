@@ -8,18 +8,16 @@ add $2,1
 lpb $2
   add $1,14
   sub $2,1
-  sub $5,$5
-  add $5,$1
-  mov $3,$5
-  add $6,1
+  mov $3,$1
+  add $5,1
   cal $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
-  trn $4,0
-  lpb $6
+  max $4,0
+  lpb $5
     cmp $4,$0
     mul $2,$4
-    trn $6,4
+    trn $5,4
   lpe
 lpe
 div $1,14

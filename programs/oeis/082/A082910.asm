@@ -1,7 +1,6 @@
 ; A082910: a(n) = prime(prime(n+1)-prime(n)).
 ; 2,3,3,7,3,7,3,7,13,3,13,7,3,7,13,13,3,13,7,3,13,7,13,19,7,3,7,3,7,43,7,13,3,29,3,13,13,7,13,13,3,29,3,7,3,37,37,7,3,7,13,3,29,13,13,13,3,13,7,3,29,43,7,3,7,43,13,29,3,7,13,19,13,13,7,13,19,7,19,29,3,29,3,13,7,13
 
-cal $0,1223 ; Prime gaps: differences between consecutive primes.
-sub $0,1
+cal $0,46933 ; Number of composites between successive primes.
 cal $0,40 ; The prime numbers.
 mov $1,$0

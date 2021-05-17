@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  sub $0,$0
+  mov $0,0
   cal $2,291108 ; Expansion of Sum_{k>=2} k^2*x^(2*k)/(1 - x^k).
   add $1,$2
   add $1,1

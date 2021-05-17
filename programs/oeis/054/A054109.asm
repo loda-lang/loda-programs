@@ -24,7 +24,7 @@ lpb $23
       mov $0,$14
       sub $16,1
       add $0,$16
-      trn $0,1
+      sub $0,1
       mov $10,$0
       mov $12,2
       lpb $12
@@ -32,7 +32,7 @@ lpb $23
         mov $0,$10
         sub $12,1
         add $0,$12
-        trn $0,1
+        sub $0,1
         mov $6,$0
         mov $8,2
         lpb $8
@@ -40,23 +40,15 @@ lpb $23
           mov $0,$6
           sub $8,1
           add $0,$8
-          trn $0,1
-          add $0,1
           lpb $0
             mov $2,$0
             max $2,0
             cal $2,100320 ; A Catalan transform of (1 + 2*x)/(1 - 2*x).
             trn $0,2
             add $3,$2
-            mov $4,$2
-            min $4,1
-            add $5,$4
           lpe
-          mov $0,$2
-          mov $1,$5
           mov $1,$3
           mov $9,$8
-          cmp $9,1
           mul $9,$3
           add $7,$9
         lpe
@@ -65,7 +57,6 @@ lpb $23
         mov $1,$7
         sub $1,$6
         mov $13,$12
-        cmp $13,1
         mul $13,$1
         add $11,$13
       lpe
@@ -74,7 +65,6 @@ lpb $23
       mov $1,$11
       sub $1,$10
       mov $17,$16
-      cmp $17,1
       mul $17,$1
       add $15,$17
     lpe
@@ -85,7 +75,6 @@ lpb $23
     div $1,4
     add $19,$1
   lpe
-  mov $1,$19
   add $22,$19
 lpe
 mov $1,$22

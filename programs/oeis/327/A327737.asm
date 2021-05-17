@@ -16,25 +16,17 @@ lpb $12
     mov $0,$6
     sub $8,1
     add $0,$8
-    trn $0,1
+    sub $0,1
     lpb $0
       mov $2,$0
       mov $3,$0
-      sub $0,$0
+      mov $0,0
       max $2,0
       cal $2,255165 ; a(n) = Sum_{k=2..n} floor(log(n)/log(k)), n >= 1.
-      mul $0,$2
-      mov $1,3
       add $3,$2
-      mov $4,$2
-      min $4,1
-      add $5,$4
     lpe
     mov $1,$3
-    add $2,1
-    mov $5,$3
     mov $9,$8
-    cmp $9,1
     mul $9,$3
     add $7,$9
   lpe

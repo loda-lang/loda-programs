@@ -3,20 +3,7 @@
 
 cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 cal $0,59721 ; Mean of first six positive powers of n, i.e., (n + n^2 + n^3 + n^4 + n^5 + n^6)/6.
-add $2,$0
-clr $4,$0
-sub $0,7
-add $3,1
-mov $26,$4
-cmp $26,0
-add $4,$26
-dif $2,$4
-mov $3,$0
-sub $4,$0
-add $0,1
-mov $1,$2
+add $1,$0
 sub $1,1
 mul $1,6
 add $1,7
-mul $3,2
-sub $3,6

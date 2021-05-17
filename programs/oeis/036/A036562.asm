@@ -3,15 +3,8 @@
 
 lpb $0
   mov $1,$0
-  max $1,0
-  mov $2,$0
   cal $1,235886 ; Number of (n+1) X (1+1) 0..3 arrays with the minimum plus the upper median equal to the lower median plus the maximum in every 2 X 2 subblock.
-  sub $0,$0
-  add $3,$1
-  mov $4,$1
-  min $4,1
-  add $5,$4
+  mov $0,0
 lpe
-mov $2,$1
 div $1,16
 add $1,1

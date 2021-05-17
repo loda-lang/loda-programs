@@ -15,7 +15,6 @@ add $4,$6
 sub $5,$4
 mul $0,$5
 mov $1,$0
-add $0,3
 sub $1,2
 div $1,2
 mul $1,2

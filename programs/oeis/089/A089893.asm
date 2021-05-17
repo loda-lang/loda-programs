@@ -4,5 +4,4 @@
 mul $0,2
 cal $0,1317 ; Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal.
 mov $1,$0
-mul $1,4
-div $1,16
+div $1,4

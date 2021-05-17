@@ -8,28 +8,21 @@ lpb $11
   mov $0,$9
   sub $11,1
   add $0,$11
-  trn $0,1
+  sub $0,1
   mov $5,$0
   mov $7,2
   lpb $7
-    clr $0,5
     mov $0,$5
     sub $7,1
     add $0,$7
-    trn $0,1
+    sub $0,1
     mul $0,2
     max $0,0
-    add $1,33997
     cal $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
-    mov $2,$1
-    add $4,2
-    sub $4,$0
     div $0,2
     mul $0,2
     mov $1,$0
-    sub $4,1
     mov $8,$7
-    cmp $8,1
     mul $8,$0
     add $6,$8
   lpe
@@ -38,7 +31,6 @@ lpb $11
   mov $1,$6
   sub $1,$5
   mov $12,$11
-  cmp $12,1
   mul $12,$1
   add $10,$12
 lpe

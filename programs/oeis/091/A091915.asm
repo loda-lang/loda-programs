@@ -30,15 +30,9 @@ lpb $16
         max $2,0
         cal $2,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
         add $3,$2
-        mov $4,$2
-        min $4,1
-        add $5,$4
       lpe
-      mov $1,$5
       mov $1,$3
-      sub $4,3
       mov $9,$8
-      cmp $9,1
       mul $9,$3
       add $7,$9
     lpe
@@ -47,7 +41,6 @@ lpb $16
     mov $1,$7
     sub $1,$6
     mov $13,$12
-    cmp $13,1
     mul $13,$1
     add $11,$13
   lpe

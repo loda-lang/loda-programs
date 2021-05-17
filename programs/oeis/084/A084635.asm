@@ -4,19 +4,8 @@
 lpb $0
   add $1,2
   sub $0,$1
-  add $3,6
-  mov $4,$1
   mov $1,$0
   max $1,0
-  mov $5,$0
   cal $1,124671 ; Row sums of A126277 = binomial transform of (1, 2, 2, 3, 4, 4, 4,...)
-  mul $3,2
-  add $3,$1
-  mov $4,$1
-  min $4,1
-  mul $5,$1
-  add $5,$4
 lpe
-mov $2,$5
-mov $2,$1
 add $1,1
