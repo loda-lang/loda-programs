@@ -3,7 +3,6 @@
 
 cal $0,2476 ; Primes of the form 6m + 1.
 mov $1,$0
-sub $1,7
 div $1,6
+add $1,1
 mul $1,2
-add $1,4

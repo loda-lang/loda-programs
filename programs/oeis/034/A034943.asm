@@ -3,10 +3,5 @@
 
 mov $1,$0
 sub $1,2
-mov $0,$1
-max $0,0
-mov $1,3
-cal $0,159328 ; Transform of 1 by the T_{1,1} transformation (see link)
-add $1,$0
-sub $1,3
-div $1,2
+max $1,0
+cal $1,181984 ; INVERT transform of A028310.

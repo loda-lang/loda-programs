@@ -22,7 +22,7 @@ lpb $12
       sub $0,2
       div $0,2
       mov $2,$0
-      sub $0,$0
+      mov $0,0
       sub $4,1
       mov $5,$2
     lpe
