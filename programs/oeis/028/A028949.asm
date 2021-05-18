@@ -8,7 +8,7 @@ lpb $0
   sub $0,$2
   pow $0,2
   mov $1,1
-  trn $2,0
+  max $2,0
   cal $2,160651 ; a(n) is the number of triangular nonnegative integers that are each equal to n(n+1)/2 - m(m+1)/2, for some m's where 0 <= m <= n.
   sub $0,1
   add $1,$2

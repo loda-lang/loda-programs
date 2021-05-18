@@ -18,25 +18,16 @@ lpb $15
     mov $6,$0
     mov $8,2
     lpb $8
-      clr $0,6
       mov $0,$6
       sub $8,1
       add $0,$8
-      trn $0,1
-      div $0,2
-      mov $1,$0
       sub $0,1
-      mul $1,2
-      add $3,$0
+      div $0,2
+      sub $0,1
       max $0,0
-      mov $4,3
-      add $5,2
       cal $0,145544 ; 4*(4^n-3^n).
-      mov $1,7
       mov $1,$0
-      mov $4,1
       mov $9,$8
-      cmp $9,1
       mul $9,$0
       add $7,$9
     lpe
@@ -47,7 +38,6 @@ lpb $15
     div $1,4
     add $11,$1
   lpe
-  mov $1,$11
   add $14,$11
 lpe
 mov $1,$14

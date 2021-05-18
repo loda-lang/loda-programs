@@ -10,8 +10,7 @@ mod $0,2
 add $3,$1
 add $1,4
 mov $5,$3
-mov $3,0
-add $3,$2
+mov $3,$2
 add $3,6
 mov $4,2
 add $5,9

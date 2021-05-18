@@ -3,10 +3,5 @@
 
 add $0,2
 mov $1,$0
-max $1,0
 cal $1,116406 ; Expansion of ((1+x-2x^2)+(1+x)sqrt(1-4x^2))/(2(1-4x^2)).
-mov $0,0
 sub $1,1
-mov $2,1
-mov $3,1
-mov $4,1

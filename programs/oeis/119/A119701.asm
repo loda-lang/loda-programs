@@ -5,18 +5,11 @@ mov $1,$0
 lpb $0
   mov $2,$0
   cal $2,119693 ; Binomial(2*n,n)*fib(n)/2.
-  add $3,$2
+  mov $3,$2
+  cmp $3,0
   mov $4,$2
-  mov $6,$2
-  cmp $6,0
-  add $4,$6
+  add $4,$3
   div $0,$4
   mul $1,$2
-  mov $3,$0
-  sub $3,2
-  add $4,$0
-  min $4,1
-  add $5,$4
 lpe
 mul $1,2
-mul $4,$2

@@ -3,6 +3,5 @@
 
 add $0,1
 cal $0,123365 ; Values of k such that A046530(k) = (k+2)/3, where A046530(k) is the number of distinct residues of cubes mod k.
-add $2,$0
-add $1,$2
+gcd $1,$0
 mul $1,2

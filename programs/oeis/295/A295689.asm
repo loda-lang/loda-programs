@@ -10,7 +10,6 @@ lpb $29
   add $0,$29
   sub $0,1
   max $0,0
-  mov $2,2
   add $5,3
   cal $0,190995 ; Fibonacci sequence beginning 9, 7.
   add $5,2

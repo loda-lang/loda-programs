@@ -4,6 +4,4 @@
 add $0,1
 cal $0,60823 ; 4-wave sequence beginning with 2's with middles dropped.
 mov $1,$0
-sub $1,2
 div $1,2
-add $1,1
