@@ -4,5 +4,3 @@
 mov $1,$0
 cal $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
 bin $1,$0
-mov $2,$0
-mov $2,$1

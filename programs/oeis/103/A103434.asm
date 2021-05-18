@@ -3,15 +3,6 @@
 
 mul $0,2
 add $0,1
-max $0,0
 cal $0,54452 ; Partial sums of A027941(n-1) with a(-1) = 0.
-mov $1,8
 mov $1,$0
 div $1,5
-mov $2,$0
-add $2,14
-sub $2,$2
-add $2,1
-mov $3,86117
-mov $3,$0
-trn $3,2

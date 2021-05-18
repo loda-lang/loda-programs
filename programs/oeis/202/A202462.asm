@@ -3,20 +3,9 @@
 
 lpb $0
   mov $2,$0
-  add $3,$0
-  sub $4,$0
   sub $0,1
-  max $2,0
-  add $5,2
   cal $2,267661 ; Number of nX2 0..1 arrays with every repeated value in every row unequal to the previous repeated value, and in every column equal to the previous repeated value, and new values introduced in row-major sequential order.
   add $1,$2
-  mov $4,1
-  mov $4,$2
-  mov $2,1
-  min $4,1
-  add $5,$4
-  sub $4,2
 lpe
-mov $3,$1
 div $1,2
 add $1,1

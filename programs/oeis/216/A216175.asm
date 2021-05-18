@@ -24,11 +24,8 @@ lpb $19
       mov $0,$11
       sub $13,1
       sub $0,$13
-      mov $7,$0
-      mov $0,0
-      add $0,$7
       mov $9,2
-      add $9,$7
+      add $9,$0
       add $0,$9
       mul $0,2
       mov $9,$0
