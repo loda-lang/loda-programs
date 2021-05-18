@@ -7,12 +7,7 @@ lpb $0
   add $0,2
   trn $0,4
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mul $0,9
-mov $3,$1
 div $1,2
 mul $1,2
 add $1,1

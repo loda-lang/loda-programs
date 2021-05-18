@@ -8,7 +8,6 @@ add $1,1
 lpb $0
   add $0,1
   sub $1,$0
-  trn $0,6
-  add $0,2
+  sub $0,4
   mul $1,2
 lpe

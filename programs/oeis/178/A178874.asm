@@ -1,16 +1,14 @@
 ; A178874: Partial sums of round(5^n/8).
 ; 0,1,4,20,98,489,2442,12208,61036,305177,1525880,7629396,38146974,190734865,953674318,4768371584,23841857912,119209289553,596046447756,2980232238772,14901161193850,74505805969241,372529029846194,1862645149230960
 
-mov $2,$0
-mov $4,$0
-lpb $4
-  mov $0,$2
-  sub $4,1
-  sub $0,$4
-  mov $3,5
-  pow $3,$0
-  add $3,4
-  mov $5,$3
-  div $5,8
-  add $1,$5
+lpb $0
+  add $1,1
+  mov $2,$0
+  cal $2,170687 ; Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^50 = I.
+  trn $0,2
+  mov $3,$2
+  min $3,1
+  add $3,$2
+  add $1,$3
 lpe
+div $1,8

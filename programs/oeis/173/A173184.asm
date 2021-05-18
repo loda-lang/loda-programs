@@ -3,10 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
+  cal $2,260216 ; Number of permutations p of [n] with no fixed points and cyclic displacement of elements restricted by ten: p(i)<>i and (i-p(i) mod n <= 10 or p(i)-i mod n <= 10).
+  sub $0,1
   add $1,$2
-  mov $3,$2
-  min $3,1
-  sub $0,$3
 lpe
 add $1,1

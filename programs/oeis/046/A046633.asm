@@ -3,11 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,169355 ; Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^31 = I.
+  cal $2,170687 ; Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^50 = I.
   trn $0,3
   add $1,$2
-  add $1,$2
 lpe
-div $1,12
+div $1,6
 mul $1,4
 add $1,1

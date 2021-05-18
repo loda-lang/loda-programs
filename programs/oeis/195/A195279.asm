@@ -15,7 +15,7 @@ mul $3,2
 add $3,1
 lpb $0
   mul $3,$0
-  sub $0,$0
+  mov $0,0
   mov $1,$3
 lpe
 sub $1,1026

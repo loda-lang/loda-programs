@@ -3,8 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
-  sub $2,2
-  sub $0,$2
+  cal $2,236840 ; n minus number of runs in the binary expansion of n: a(n) = n - A005811(n).
+  sub $2,1
+  mov $3,3
+  add $3,$2
+  mov $0,$3
 lpe
 mov $1,$0

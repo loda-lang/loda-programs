@@ -8,7 +8,6 @@ cmp $0,$2
 mov $1,2
 trn $2,$0
 pow $1,$2
-mov $2,$1
 sub $1,1
 mul $1,2
 add $1,1
