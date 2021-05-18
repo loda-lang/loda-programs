@@ -4,8 +4,7 @@
 mov $2,$0
 lpb $0
   mov $0,1
-  mov $1,1
-  mul $1,$2
+  mov $1,$2
 lpe
 add $0,$1
 cal $0,40 ; The prime numbers.

@@ -3,14 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  cal $2,10785 ; Repdigit numbers, or numbers with repeated digits.
-  trn $0,1
+  cal $2,152966 ; Twice repdigit numbers.
+  sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  mov $2,$4
-  add $5,$4
 lpe
-mov $3,$4
-mov $3,$1
+div $1,2

@@ -10,6 +10,6 @@ mov $3,$1
 cmp $3,0
 add $1,$3
 lpb $0
-  trn $0,1
+  sub $0,1
   mov $1,$2
 lpe

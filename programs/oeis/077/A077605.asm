@@ -1,7 +1,11 @@
 ; A077605: Left summing matrix, S.
 ; 1,1,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0
 
-cal $0,119900 ; Triangle read by rows: T(n,k) is the number of binary words of length n with k strictly increasing runs, for 0<=k<=n.
-div $0,2
-mov $1,$0
-cmp $1,0
+cal $0,52553 ; Square array of binomial coefficients T(n,k) = binomial(n,k), n >= 0, k >= 0, read by antidiagonals.
+add $0,2
+mov $1,1
+add $2,$0
+mov $3,2
+dif $3,$2
+add $1,$3
+sub $1,2

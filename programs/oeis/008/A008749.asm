@@ -6,12 +6,9 @@ add $0,1
 mov $2,1
 sub $2,$0
 mov $1,$2
-sub $2,$2
-mov $5,$1
 add $1,3
-pow $4,$2
-sub $4,1
-add $4,$1
+mov $4,$1
+mov $5,$2
 mov $6,$1
 div $1,2
 add $5,$6

@@ -3,7 +3,6 @@
 
 mov $14,$0
 mov $16,$0
-add $16,1
 lpb $16
   clr $0,14
   mov $0,$14
@@ -31,15 +30,9 @@ lpb $16
         cal $2,196410 ; a(n) = n*2^(n-5).
         trn $0,2
         add $3,$2
-        mov $4,$2
-        sub $4,$2
-        min $4,1
-        add $5,$4
       lpe
       mov $1,$3
-      sub $2,2
       mov $9,$8
-      cmp $9,1
       mul $9,$3
       add $7,$9
     lpe
@@ -48,7 +41,6 @@ lpb $16
     mov $1,$7
     sub $1,$6
     mov $13,$12
-    cmp $13,1
     mul $13,$1
     add $11,$13
   lpe

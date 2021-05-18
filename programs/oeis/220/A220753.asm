@@ -9,7 +9,7 @@ lpb $2
   mov $3,$2
   lpb $3
     mul $1,2
-    sub $3,$3
+    mov $3,0
   lpe
   trn $2,1
 lpe

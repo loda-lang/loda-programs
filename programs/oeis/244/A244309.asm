@@ -7,11 +7,8 @@ add $0,1
 mul $0,$2
 sub $0,$2
 sub $0,$2
-mov $3,$0
-add $3,$2
-lpb $2,6
+lpb $2
   mul $0,$2
-  mov $1,$0
   cmp $2,2
 lpe
 mov $1,$0

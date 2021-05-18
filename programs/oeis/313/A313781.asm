@@ -11,7 +11,7 @@ gcd $2,$5
 mov $6,$0
 lpb $0
   mov $1,$0
-  sub $0,$0
+  mov $0,0
   add $3,5
   mov $5,$2
   add $5,1

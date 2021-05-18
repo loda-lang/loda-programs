@@ -4,15 +4,7 @@
 lpb $0
   sub $0,1
   mov $1,$0
-  mul $0,6
   max $1,0
   cal $1,78003 ; Expansion of (1-x)/(1-2*x+2*x^2-2*x^3).
-  add $3,$1
-  cmp $3,$0
-  sub $0,$0
-  mov $3,10
-  mov $4,0
+  mov $0,0
 lpe
-mov $2,$1
-div $2,2
-mov $2,$1

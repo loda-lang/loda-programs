@@ -4,7 +4,5 @@
 mul $0,2
 add $0,1
 cal $0,7504 ; Sum of the first n primes.
+dif $0,2
 mov $1,$0
-sub $1,2
-div $1,2
-add $1,1

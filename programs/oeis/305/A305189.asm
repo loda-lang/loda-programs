@@ -11,9 +11,8 @@ lpb $3
   mov $2,$0
   mul $0,2
   mod $0,3
-  mov $4,0
-  add $4,$2
-  mov $5,$4
+  mov $4,$2
+  mov $5,$2
   mul $5,2
   lpb $0
     mov $0,1

@@ -5,4 +5,3 @@ mul $0,7
 add $0,1
 cal $0,40 ; The prime numbers.
 mov $1,$0
-mul $0,3628800
