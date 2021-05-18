@@ -7,14 +7,5 @@ lpb $0
   max $2,0
   cal $2,23610 ; Convolution of Fibonacci numbers and {F(2), F(3), F(4), ...}.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $6,$2
-cmp $6,0
-add $2,$6
-mov $3,$5
-mov $3,$1
 mul $1,2
-div $4,$2

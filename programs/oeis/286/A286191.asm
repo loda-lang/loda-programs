@@ -1,13 +1,12 @@
 ; A286191: a(n) = (2^n-1)^2 + 2*n.
 ; 3,13,55,233,971,3981,16143,65041,261139,1046549,4190231,16769049,67092507,268402717,1073676319,4294836257,17179607075,68718952485,274876858407,1099509530665,4398042316843,17592177655853,70368727400495,281474943156273,1125899839733811,4503599493152821
 
-mov $1,$0
 mul $0,2
-lpb $0
-  mov $2,$0
-  cal $2,208901 ; Number of bitstrings of length n (with at least two runs) where the last two runs have different lengths.
-  mov $0,1
-  add $1,$2
-lpe
+mov $2,$0
+add $0,1
+cal $0,208900 ; Number of bitstrings of length n which (if having two or more runs) the last two runs have different lengths.
+add $0,$2
+mov $1,$0
+div $1,2
 mul $1,2
-add $1,3
+add $1,1

@@ -5,15 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  mov $3,$0
   cal $2,30119 ; a(n) = a(n-1) + a(n-2) + n, a(0) = a(1) = 1.
   add $1,$2
-  mov $3,$0
-  mov $4,$2
-  add $2,3
-  min $4,1
-  add $5,$4
 lpe
-mov $0,1
-sub $2,$5
-mov $3,$1

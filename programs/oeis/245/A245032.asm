@@ -5,8 +5,7 @@ mul $0,4
 mov $1,$0
 add $0,3
 mov $2,24
-mov $3,1
-mul $3,$1
+mov $3,$1
 mov $1,$0
 sub $2,$3
 mov $3,$2

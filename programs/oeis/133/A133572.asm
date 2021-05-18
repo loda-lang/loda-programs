@@ -3,15 +3,7 @@
 
 lpb $0
   mov $1,$0
-  trn $0,$0
-  max $1,0
+  mov $0,0
   cal $1,290662 ; Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
-  div $0,5
-  add $3,$1
-  mov $4,$1
-  min $4,1
-  add $5,$4
 lpe
-mov $2,$1
 add $1,1
-mul $3,2

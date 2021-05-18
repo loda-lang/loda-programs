@@ -1,6 +1,11 @@
 ; A094626: Expansion of x*(1+x)/((1-x)*(1-10*x^2)).
 ; 0,1,2,12,22,122,222,1222,2222,12222,22222,122222,222222,1222222,2222222,12222222,22222222,122222222,222222222,1222222222,2222222222,12222222222,22222222222,122222222222,222222222222,1222222222222,2222222222222,12222222222222,22222222222222,122222222222222,222222222222222,1222222222222222,2222222222222222
 
-cal $0,328333 ; Expansion of (1 + 4*x - 6*x^2) / ((1 - x) * (1 - 10*x^2)).
-mov $1,$0
-div $1,4
+lpb $0
+  mov $2,$0
+  cal $2,286508 ; Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
+  sub $0,1
+  add $3,$2
+  mov $1,$3
+lpe
+div $1,10

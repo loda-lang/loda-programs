@@ -1,9 +1,11 @@
 ; A070199: Number of palindromes of length <= n.
 ; 10,19,109,199,1099,1999,10999,19999,109999,199999,1099999,1999999,10999999,19999999,109999999,199999999,1099999999,1999999999,10999999999,19999999999,109999999999,199999999999,1099999999999,1999999999999,10999999999999,19999999999999,109999999999999,199999999999999,1099999999999999,1999999999999999
 
-add $0,1
-cal $0,328333 ; Expansion of (1 + 4*x - 6*x^2) / ((1 - x) * (1 - 10*x^2)).
-mov $1,$0
-div $1,4
+lpb $0
+  mov $2,$0
+  cal $2,286507 ; Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
+  sub $0,1
+  add $1,$2
+lpe
 mul $1,9
-add $1,1
+add $1,10

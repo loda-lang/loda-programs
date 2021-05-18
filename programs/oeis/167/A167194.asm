@@ -1,6 +1,6 @@
 ; A167194: Triangle read by rows. A130713 in the columns.
 ; 1,2,1,1,2,1,0,1,2,1,0,0,1,2,1,0,0,0,1,2,1,0,0,0,0,1,2,1,0,0,0,0,0,1,2,1,0,0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,1,2,1
 
+cal $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 mov $1,2
-cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
 bin $1,$0

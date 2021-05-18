@@ -1,19 +1,12 @@
 ; A120279: a(n) = Sum[Sum[(i+j)!/i!/j!,{i,1,j}],{j,1,n}].
 ; 2,11,45,170,631,2346,8780,33089,125466,478181,1830258,7030557,27088856,104647615,405187809,1571990918,6109558567,23782190466,92705454875,361834392094,1413883873953,5530599237752,21654401079301,84859704298176,332818970772227,1306288683596282,5130633983976501
 
-mov $4,$0
-add $4,1
-mov $5,$0
-lpb $4
-  mov $0,$5
-  sub $4,1
-  sub $0,$4
+lpb $0
   mov $2,$0
-  mov $3,$0
-  add $3,3
-  add $0,$3
-  add $2,2
-  bin $0,$2
   sub $0,1
-  add $1,$0
+  add $2,1
+  cal $2,115112 ; Number of different ways to select n elements from two sets of n elements under the precondition of choosing at least one element from each set.
+  add $1,$2
 lpe
+div $1,2
+add $1,2

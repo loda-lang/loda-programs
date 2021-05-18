@@ -3,15 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,50997 ; Fifth powers of primes.
   sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mul $0,$1
-mov $3,$5
-mov $3,$1
 add $1,32

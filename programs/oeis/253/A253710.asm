@@ -5,12 +5,7 @@ lpb $0
   add $0,1
   mov $2,$0
   cal $2,23002 ; Sum of 10th powers.
-  trn $0,2
+  sub $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-add $0,3
-mov $3,$1
 add $1,1

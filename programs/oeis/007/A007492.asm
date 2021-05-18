@@ -15,7 +15,7 @@ lpb $3
     sub $7,1
     add $0,$7
     add $0,1
-    trn $0,0
+    max $0,0
     cal $0,215004 ; a(0) = a(1) = 1; for n>1, a(n) = a(n-1) + a(n-2) + floor(n/2).
     sub $0,1
     mov $4,$0

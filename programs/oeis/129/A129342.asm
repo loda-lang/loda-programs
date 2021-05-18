@@ -4,13 +4,7 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,16116 ; a(n) = 2^floor(n/2).
   dif $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $2,9
-mov $3,$1

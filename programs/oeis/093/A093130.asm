@@ -1,9 +1,6 @@
 ; A093130: Third binomial transform of Fibonacci(3n).
 ; 0,2,20,160,1200,8800,64000,464000,3360000,24320000,176000000,1273600000,9216000000,66688000000,482560000000,3491840000000,25267200000000,182835200000000,1323008000000000,9573376000000000
 
-lpb $0
-  mov $1,$0
-  cal $1,93145 ; Third binomial transform of Fibonacci(3n)/Fibonacci(3).
-  mov $0,0
-  mul $1,2
-lpe
+mov $1,$0
+cal $1,93145 ; Third binomial transform of Fibonacci(3n)/Fibonacci(3).
+mul $1,2

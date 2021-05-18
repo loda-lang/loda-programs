@@ -9,20 +9,13 @@ lpb $7
   sub $7,1
   add $0,$7
   sub $0,1
-  sub $4,$0
   max $0,0
   cal $0,112696 ; Partial sum of Catalan numbers A000108 multiplied by powers of 2.
   add $2,$0
-  add $3,1
   mov $3,$2
   add $3,$2
-  add $4,$0
-  div $0,2
-  mov $0,$3
-  mov $1,$3
   mov $1,$3
   mov $8,$7
-  cmp $8,1
   mul $8,$3
   add $6,$8
 lpe

@@ -7,15 +7,6 @@ lpb $0
   max $2,0
   cal $2,79773 ; a(n) = 2*a(n-1)+15*a(n-2) with n>0, a(0)=0, a(1)=1.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $6,$2
-cmp $6,0
-add $2,$6
-div $4,$2
-mov $3,$4
-mov $3,$1
 mul $1,16
 add $1,1

@@ -3,6 +3,5 @@
 
 cal $0,275793 ; The x members of the positive proper solutions (x = x1(n), y = y1(n)) of the first class for the Pell equation x^2 - 2*y^2 = +7^2.
 mov $1,$0
-sub $1,9
 div $1,2
-add $1,8
+add $1,4

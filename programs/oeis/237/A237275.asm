@@ -6,17 +6,9 @@ lpb $0
   cal $2,163661 ; a(n) = n*(2*n^2 + 5*n + 17)/2.
   sub $0,1
   mod $2,2
-  add $3,$2
-  mov $4,$2
-  min $4,1
-  add $1,$4
+  add $1,$2
   mul $1,2
-  add $2,56
 lpe
-mov $3,$2
-sub $2,$2
-add $5,$3
-mov $5,$1
 div $1,4
 mul $1,10
 add $1,2

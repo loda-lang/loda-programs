@@ -6,10 +6,7 @@ mov $2,$0
 lpb $0
   mov $1,$0
   cal $1,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
-  sub $0,$0
-  mov $3,$0
-  cmp $3,0
-  add $0,$3
+  mov $0,1
 lpe
 add $1,1
 add $1,$2

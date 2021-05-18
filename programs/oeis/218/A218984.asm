@@ -4,16 +4,9 @@
 add $0,1
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,164549 ; a(n) = 4*a(n-1)+2*a(n-2) for n > 1; a(0) = 1, a(1) = 6.
-  trn $0,1
+  sub $0,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
-  sub $4,2
 lpe
-mov $3,$2
-mov $3,$1
 div $1,2
 add $1,1

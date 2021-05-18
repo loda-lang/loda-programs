@@ -4,7 +4,6 @@
 cal $0,82761 ; Trinomial transform of the Fibonacci numbers (A000045).
 cal $0,47452 ; Numbers that are congruent to {1, 6} mod 8.
 mov $1,$0
-add $0,8
 sub $1,6
 mul $1,5
 add $1,25

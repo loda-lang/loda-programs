@@ -4,8 +4,6 @@
 mov $1,$0
 add $1,$0
 bin $1,$0
-mov $2,$0
-mov $3,$0
 cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 mul $1,$0
 div $1,2

@@ -5,4 +5,3 @@ mov $1,$0
 cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 sub $0,$1
 pow $1,$0
-mov $2,$1

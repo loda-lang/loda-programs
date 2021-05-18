@@ -11,5 +11,5 @@ lpb $2
   sub $2,1
   div $2,3
   mov $1,$2
-  sub $2,$2
+  mov $2,0
 lpe

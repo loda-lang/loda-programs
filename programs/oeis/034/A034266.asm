@@ -4,7 +4,7 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  trn $2,0
+  max $2,0
   cal $2,27818 ; a(n) = (n+1)*binomial(n+6,6).
   add $1,$2
 lpe

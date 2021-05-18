@@ -10,5 +10,4 @@ lpb $0
   mul $1,2
   trn $2,2
 lpe
-mov $3,$1
 div $1,8

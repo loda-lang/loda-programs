@@ -4,10 +4,7 @@
 cal $0,86529 ; Beginning with 2, distinct even numbers such that the arithmetic mean of successive pairs of terms gives odd primes in their natural order. {a(n) + a(n+1)}/2 = prime(n+1).
 add $0,17
 div $0,4
-mov $1,8
 mov $1,$0
 sub $1,4
 mul $1,2
 add $1,1
-mov $2,1
-mov $3,1

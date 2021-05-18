@@ -7,5 +7,3 @@ cal $0,167821 ; a(n) is the number of n-tosses having a run of 3 or more heads o
 add $1,$0
 add $1,$0
 sub $1,168
-mov $2,$0
-mov $3,0

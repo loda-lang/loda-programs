@@ -7,9 +7,4 @@ lpb $0
   max $2,0
   cal $2,122558 ; a(0)=1, a(1)=3, a(n)=4*a(n-1)+3*a(n-2) for n>1.
   add $1,$2
-  mov $3,1
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1

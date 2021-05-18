@@ -8,7 +8,7 @@ lpb $8
   mov $0,$6
   sub $8,1
   add $0,$8
-  trn $0,1
+  sub $0,1
   lpb $0
     sub $0,1
     mov $2,$0
@@ -16,14 +16,9 @@ lpb $8
     max $2,0
     cal $2,23619 ; Convolution of Lucas numbers and (F(2), F(3), F(4), ...).
     add $3,$2
-    mov $4,$2
-    min $4,1
-    add $5,$4
   lpe
-  mov $1,$4
   mov $1,$3
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe

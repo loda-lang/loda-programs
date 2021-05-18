@@ -3,18 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,14140 ; Apply partial sum operator twice to Catalan numbers.
+  sub $0,1
   add $1,$2
-  mov $4,$2
-  mul $2,$0
-  trn $0,1
-  min $4,1
-  add $5,$4
 lpe
-mov $6,$2
-cmp $6,0
-add $2,$6
-mov $3,$1
 add $1,1
-div $4,$2

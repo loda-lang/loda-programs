@@ -3,8 +3,7 @@
 
 cal $0,64303 ; Seventh diagonal of triangle A064094.
 sub $0,1
-mov $1,1
-mul $1,$0
+mov $1,$0
 mod $1,9
 add $1,5
 mul $1,2

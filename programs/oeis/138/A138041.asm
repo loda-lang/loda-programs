@@ -6,14 +6,7 @@ lpb $0
   cal $2,152224 ; a(n)=4*a(n-1)+6*a(n-2), n>1 ; a(0)=1, a(1)=6 .
   trn $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  mul $4,2
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1
 div $1,6
 mul $1,9
 add $1,1
-mov $4,$2

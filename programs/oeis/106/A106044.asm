@@ -3,8 +3,4 @@
 
 cal $0,40 ; The prime numbers.
 cal $0,68527 ; Difference between smallest square >= n and n.
-mul $0,18
 mov $1,$0
-sub $1,18
-div $1,18
-add $1,1

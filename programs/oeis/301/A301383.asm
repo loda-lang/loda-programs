@@ -3,6 +3,5 @@
 
 cal $0,77444 ; Numbers k such that (k^2 + 4)/2 is a square.
 mov $1,$0
-div $1,4
-mul $1,3
-add $1,1
+mul $1,6
+div $1,8

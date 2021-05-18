@@ -1,0 +1,14 @@
+; A325482: Number of colored set partitions of [n] where colors of the elements of subsets are distinct and in increasing order and exactly two colors are used.
+; 3,12,41,140,497,1848,7191,29184,123107,538076,2430353,11317644,54229905,266906856,1347262319,6965034368,36833528195,199037675052,1097912385849,6176578272780,35409316648433,206703355298072,1227820993510151,7416522514174080
+
+add $0,3
+lpb $0
+  mul $1,$0
+  sub $0,1
+  add $2,4
+  add $2,$3
+  add $3,$1
+  mov $1,$2
+lpe
+div $1,4
+sub $1,2

@@ -7,11 +7,6 @@ lpb $0
   max $2,0
   cal $2,33505 ; Expansion of 1/(1 - 3*x - x^2 + x^3).
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 mul $1,2
 add $1,1
-add $4,2

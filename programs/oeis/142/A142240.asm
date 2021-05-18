@@ -3,9 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,130154 ; Triangle read by rows: T(n, k) = 1 + 2*(n-k)*(k-1) (1 <= k <= n).
+  cal $1,77028 ; The rascal triangle, read by rows: T(n,k) (n >= 0, 0 <= k <= n) = k(n-k) + 1.
   mov $0,0
-  add $1,1
 lpe
-div $1,2
 add $1,1

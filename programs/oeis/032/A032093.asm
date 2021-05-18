@@ -3,14 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,32092 ; Number of reversible strings with n-1 beads of 2 colors. 5 beads are black. String is not palindromic.
   sub $0,1
   add $1,$2
-  mov $2,1
-  mov $4,1
-  add $5,1
 lpe
-mov $3,$5
-mov $3,$1
 add $1,3

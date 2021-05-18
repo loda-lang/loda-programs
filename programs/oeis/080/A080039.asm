@@ -9,21 +9,12 @@ lpb $8
   sub $8,1
   add $0,$8
   sub $0,1
-  sub $3,$0
   max $0,0
   cal $0,20962 ; a(n) = Sum_{k >= 1} floor((1+sqrt(2))^(n-k)).
   add $4,$0
-  trn $0,$4
-  mov $1,2
   mov $1,$4
-  mov $2,4
-  mov $3,2
-  mov $5,$4
-  div $4,3
-  sub $4,$5
   mov $9,$8
-  cmp $9,1
-  mul $9,$5
+  mul $9,$4
   add $7,$9
 lpe
 min $6,1

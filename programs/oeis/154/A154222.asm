@@ -4,21 +4,8 @@
 mov $1,$0
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,97067 ; Expansion of (1-4*x+5*x^2)/(1-2*x)^2.
   add $1,$2
-  mov $4,$2
-  mov $5,2
-  mov $6,$1
-  cmp $6,0
-  add $1,$6
   div $0,$1
-  sub $2,1
-  mov $4,3
-  mov $5,4
-  bin $5,$1
-  add $5,3
 lpe
-mov $3,$2
-mov $3,$1
 add $1,1

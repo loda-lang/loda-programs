@@ -3,15 +3,9 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,130493 ; Triangle read by rows in which row n contains n! repeated n times.
   sub $0,1
   add $1,$2
-  mov $4,$2
-  add $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
 div $1,2
 add $1,1

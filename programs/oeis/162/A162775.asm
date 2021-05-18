@@ -1,11 +1,8 @@
 ; A162775: a(n) = A141042(n+1)/2.
 ; 2,3,8,5,12,7,16,27,10,33,24,13,28,45,48,17,54,38,20,63,44,69,96,50,26,54,28,58,210,62,96,33,170,35,108,111,76,117,120,41,210,43,88,45,276,282,96,49,100,153,52,265,162,165,168,57,174,118,60
 
-add $0,1
+mov $2,$0
+add $2,2
+cal $0,28334 ; Differences between consecutive odd primes, divided by 2.
+mul $0,$2
 mov $1,$0
-cal $0,1223 ; Prime gaps: differences between consecutive primes.
-mul $1,$0
-add $1,$0
-sub $1,4
-div $1,2
-add $1,2

@@ -4,17 +4,17 @@
 mov $3,2
 mov $4,$0
 lpb $3
-  mov $0,$4
   sub $3,1
   add $0,$3
   sub $0,1
-  max $0,0
-  cal $0,29113 ; Expansion of 1/((1-x)(1-x^6)(1-x^9)(1-x^10)).
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
   mov $5,$0
+  max $5,0
+  cal $5,29113 ; Expansion of 1/((1-x)(1-x^6)(1-x^9)(1-x^10)).
+  mov $2,$3
+  mul $2,$5
+  add $1,$2
+  mov $6,$5
 lpe
 min $4,1
-mul $4,$5
+mul $4,$6
 sub $1,$4

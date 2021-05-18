@@ -3,12 +3,7 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,191394 ; Number of base pyramids in all dispersed Dyck paths of length n (i.e., in all Motzkin paths of length n with no (1,0)-steps at positive heights).
   sub $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1

@@ -3,19 +3,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,103685 ; Consider the morphism 1->{1,2}, 2->{1,3}, 3->{1}; a(n) is the total number of '3' after n substitutions.
-  mul $0,5
-  add $1,1
-  mov $3,$0
-  trn $0,$0
-  trn $0,3
+  mov $0,0
+  mov $1,1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mul $0,$4
-mov $3,1
-mov $3,$1
-add $4,$1

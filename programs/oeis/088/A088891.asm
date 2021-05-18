@@ -6,6 +6,5 @@ mul $1,$0
 add $0,$1
 cal $0,1296 ; 4-dimensional pyramidal numbers: a(n) = (3*n+1)*binomial(n+2, 3)/4. Also Stirling2(n+2, n).
 mov $1,$0
-mul $0,2
 mul $1,2
 div $1,14

@@ -6,12 +6,6 @@ lpb $0
   sub $2,2
   max $2,0
   cal $2,24551 ; a(n) = floor(a(n-1)/(sqrt(5) - 2)) for n > 0 and a(0) = 1.
-  trn $0,1
+  sub $0,1
   add $1,$2
-  mov $4,$2
-  sub $2,$1
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1

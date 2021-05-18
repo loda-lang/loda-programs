@@ -5,22 +5,10 @@ sub $0,1
 max $0,0
 cal $0,182305 ; a(n+1) = a(n) + floor(a(n)/4) with a(0)=4.
 sub $0,2
-mov $2,$0
 div $0,2
 add $0,1
 div $0,2
 sub $0,1
-mul $2,2
-sub $2,$2
-mov $3,9
-mov $4,$2
-cmp $4,0
-mov $5,$2
-add $2,10
-sub $2,$0
-add $5,$4
-mov $1,$5
 mov $1,$0
 mul $1,5
 add $1,5
-mod $3,$5

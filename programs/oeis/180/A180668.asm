@@ -7,10 +7,4 @@ lpb $0
   max $2,0
   cal $2,27024 ; a(n) = T(n,n+2), T given by A027023.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  mov $5,$4
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1

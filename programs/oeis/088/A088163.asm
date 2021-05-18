@@ -3,7 +3,6 @@
 
 mov $6,$0
 mov $8,$0
-add $8,1
 lpb $8
   clr $0,6
   mov $0,$6
@@ -11,16 +10,13 @@ lpb $8
   sub $0,$8
   cal $0,137824 ; Index at which A137823(n) occurs first in A137822 (gaps in numbers m such that 3 | sum( Catalan(k), k=1..2m)).
   add $2,$0
-  mov $0,4
   add $1,$2
   add $1,2
-  mov $2,1
   add $3,2
   add $3,$1
   div $3,3
   mov $1,$3
   sub $1,1
-  mov $5,4
   add $7,$1
 lpe
 mov $1,$7
