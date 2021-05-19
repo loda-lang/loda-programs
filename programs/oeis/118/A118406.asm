@@ -5,13 +5,7 @@ lpb $0
   sub $0,1
   trn $0,1
   mov $2,$0
-  max $2,0
   cal $2,100088 ; Expansion of (1-x^2)/((1-2x)(1+x^2)).
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$5
-mov $3,$1
 add $1,1

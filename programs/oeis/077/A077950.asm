@@ -3,19 +3,11 @@
 
 lpb $0
   mov $2,$0
-  add $5,6
   cal $2,146559 ; Expansion of (1-x)/(1 - 2*x + 2*x^2).
   sub $0,2
   add $1,$2
   add $1,$2
-  add $3,4
-  mov $4,$2
-  sub $2,$0
-  min $4,1
-  mov $5,3
-  add $5,$4
 lpe
-mov $3,$1
 div $1,4
 mul $1,2
 add $1,1

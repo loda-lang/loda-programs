@@ -4,18 +4,9 @@
 mov $1,4
 lpb $0
   mov $2,$0
-  max $2,0
   cal $2,27180 ; a(n) = Sum_{0<=j<=i<=n} A027170(i, j).
   div $0,12
-  mov $6,$1
-  cmp $6,0
-  add $1,$6
   div $2,$1
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$0
-mov $3,$1
 sub $1,3

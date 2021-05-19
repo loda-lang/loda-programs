@@ -4,8 +4,4 @@
 mul $0,2
 add $0,1
 cal $0,82290 ; Expansion of (1+x+x^2)/((1+x^2)*(1+x)^4*(1-x)^5).
-mul $0,2
 mov $1,$0
-sub $1,4
-div $1,2
-add $1,2

@@ -13,7 +13,7 @@ lpb $2
   mov $4,$0
   lpb $3
     add $1,3
-    trn $4,0
+    max $4,0
     cmp $4,$0
     mul $2,$4
     trn $3,9

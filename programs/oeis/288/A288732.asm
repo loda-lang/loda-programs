@@ -3,7 +3,6 @@
 
 cal $0,248533 ; Number of length n+3 0..4 arrays with every four consecutive terms having the sum of some three elements equal to three times the fourth.
 mov $1,$0
-sub $1,101
 div $1,12
+sub $1,7
 mul $1,2
-add $1,2

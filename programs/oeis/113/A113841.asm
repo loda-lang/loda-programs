@@ -39,7 +39,7 @@ lpb $25
           add $0,$11
           sub $0,1
           mov $2,$0
-          trn $0,2
+          sub $0,2
           mov $7,$2
           add $7,5
           mov $3,$7

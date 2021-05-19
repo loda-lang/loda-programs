@@ -3,41 +3,14 @@
 
 add $0,1
 lpb $0
-  add $10,1
-  lpb $0
-    mov $2,$0
-    sub $2,1
-    mov $5,2
-    lpb $0
-      mov $0,2187
-      mov $3,$2
-      dif $3,3
-      cmp $3,$2
-      mov $4,0
-      div $5,87056
-      add $7,4
-      mov $8,14
-      add $9,1
-    lpe
-    max $2,1
-    add $6,28
-    mov $10,1
-  lpe
-  mov $2,$7
+  add $2,1
   cmp $3,0
   mul $3,$0
   sub $0,1
-  pow $3,$9
+  pow $3,$4
   add $1,$3
-  pow $8,2
-  mov $9,$10
+  mov $4,$2
 lpe
-add $1,1
-mov $4,$0
-cmp $4,0
-add $0,$4
-sub $1,2
+sub $1,1
 mul $1,2
 add $1,1
-div $3,$0
-mov $5,1

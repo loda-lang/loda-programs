@@ -8,8 +8,7 @@ mov $8,7
 sub $8,$0
 lpb $0
   pow $3,2
-  mov $4,1
-  mul $4,$8
+  mov $4,$8
   mul $4,$0
   mov $0,$2
   mov $6,1

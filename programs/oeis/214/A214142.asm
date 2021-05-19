@@ -3,16 +3,9 @@
 
 lpb $0
   mov $2,$0
-  max $2,0
-  mov $4,$0
   cal $2,242985 ; a(n) = 4^n + 2^(n+1).
   sub $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$2
-mov $3,$1
 div $1,8
 add $1,1
