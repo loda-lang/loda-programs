@@ -3,8 +3,12 @@
 
 lpb $0
   mov $2,$0
-  cal $2,111277 ; Number of permutations avoiding the patterns {2413,4213,2431,4231,4321}; also number of permutations avoiding the patterns {3142,3412,3421,4312,4321}; number of weak sorting class based on 2413 or 3142.
-  sub $0,1
+  cal $2,244 ; Powers of 3.
+  sub $0,2
+  div $2,2
+  sub $2,$0
+  add $0,1
   add $1,$2
 lpe
+div $1,2
 add $1,1

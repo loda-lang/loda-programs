@@ -3,8 +3,7 @@
 
 mov $1,$0
 cal $0,205187 ; Number of (n+1)X2 0..1 arrays with the number of clockwise edge increases in every 2X2 subblock differing from each horizontal or vertical neighbor
-add $2,$0
-mul $1,$2
 mul $1,2
+mul $1,$0
 div $1,48
 mul $1,3

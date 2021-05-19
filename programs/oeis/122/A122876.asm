@@ -3,6 +3,5 @@
 
 sub $0,1
 max $0,0
-cal $0,130848 ; Periodic sequence with period (2, 5, 3, -2, -5, -3).
-div $0,2
-add $1,$0
+cal $0,57079 ; Periodic sequence: repeat [1,2,1,-1,-2,-1]; expansion of (1+x)/(1-x+x^2).
+mov $1,$0

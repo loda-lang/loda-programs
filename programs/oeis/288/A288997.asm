@@ -3,6 +3,4 @@
 
 add $0,3
 cal $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
-mov $1,2
-add $1,$0
-sub $1,2
+mov $1,$0

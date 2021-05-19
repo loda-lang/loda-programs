@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
-  div $0,$2
+  cal $2,66247 ; Characteristic function of composite numbers: 1 if n is composite else 0.
+  mul $0,$2
 lpe
 mov $1,$0
 add $1,1

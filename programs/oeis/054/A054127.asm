@@ -3,7 +3,6 @@
 
 mov $2,$0
 cal $0,116453 ; Third smallest number with exactly n prime factors.
-add $0,1
 sub $0,$2
 mov $1,$0
-sub $1,4
+sub $1,3
