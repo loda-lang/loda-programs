@@ -7,7 +7,7 @@ mov $2,2
 lpb $0
   mov $2,$0
   sub $2,3
-  trn $2,0
+  max $2,0
   cal $2,21226 ; Decimal expansion of 1/222.
   mov $0,2
   mov $1,6

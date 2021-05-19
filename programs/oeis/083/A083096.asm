@@ -1,8 +1,15 @@
 ; A083096: Numbers n such that 3 divides sum(k=1,n, C(2k,k) ).
 ; 0,12,30,36,84,90,108,120,246,252,270,282,324,336,354,360,732,738,756,768,810,822,840,846,972,984,1002,1008,1056,1062,1080,1092,2190,2196,2214,2226,2268,2280,2298,2304,2430,2442,2460,2466,2514,2520,2538,2550
 
-mov $1,$0
-cal $1,5836 ; Numbers n whose base 3 representation contains no 2.
+lpb $0
+  add $1,$0
+  add $1,$0
+  mov $2,$0
+  mov $0,0
+  cal $2,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+  add $1,$2
+lpe
+div $1,3
 mul $1,6
 add $1,11
 div $1,4

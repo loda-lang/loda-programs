@@ -3,7 +3,7 @@
 
 cal $0,89723 ; a(1)=1; for n>1, a(n) gives number of ways to write n as n = x^y, 2 <= x, 1 <= y.
 mov $2,$0
-sub $0,$0
+mov $0,0
 cal $0,90381 ; Expansion of (1+4x+7x^2)/((1-x)^2*(1-x^2)).
 add $3,$2
 mul $3,2

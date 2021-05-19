@@ -4,8 +4,5 @@
 cal $0,1223 ; Prime gaps: differences between consecutive primes.
 sub $0,1
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-add $0,1
-mul $0,2
 mov $1,$0
-sub $1,4
-div $1,2
+sub $1,1

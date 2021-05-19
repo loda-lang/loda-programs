@@ -13,7 +13,7 @@ lpb $0
   mul $0,$1
   mul $1,$0
   add $1,$0
-  sub $0,$0
+  mov $0,0
   mul $1,2
 lpe
 sub $1,117

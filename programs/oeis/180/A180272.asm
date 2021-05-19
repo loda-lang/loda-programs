@@ -8,8 +8,5 @@ lpb $0
   add $3,1
   add $2,$3
   trn $0,$2
-  mov $4,$1
-  cmp $4,0
 lpe
 bin $1,$3
-mov $2,$1

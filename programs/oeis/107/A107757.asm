@@ -1,9 +1,17 @@
 ; A107757: Numbers k such that Sum_{j=1..k} Catalan(j) == 2 (mod 3).
 ; 3,9,11,27,29,35,39,81,83,89,93,107,111,117,119,243,245,251,255,269,273,279,281,323,327,333,335,351,353,359,363,729,731,737,741,755,759,765,767,809,813,819,821,837,839,845,849,971,975,981,983,999,1001,1007,1011
 
-cal $0,89118 ; Nonnegative numbers in (3*A005836 - 1) [A005836 are the numbers with base representation containing no 2].
-sub $0,4
-div $0,2
-mov $1,$0
+add $0,1
+lpb $0
+  mov $1,$0
+  mov $2,$0
+  cmp $2,0
+  add $1,$2
+  mod $0,$1
+  cal $1,83094 ; Numbers k such that Sum_{j=0..k} (binomial(k,j) mod 3) is odd.
+  mul $1,2
+lpe
+sub $1,16
+div $1,8
 mul $1,2
-add $1,5
+add $1,3

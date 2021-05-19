@@ -4,5 +4,4 @@
 add $0,1
 cal $0,6094 ; Products of 2 successive primes.
 mov $1,$0
-mul $1,2
-div $1,4
+div $1,2
