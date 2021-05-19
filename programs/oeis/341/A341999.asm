@@ -4,8 +4,8 @@
 lpb $0
   mov $2,$0
   cal $2,258649 ; Ninth arithmetic derivative of n.
-  cmp $0,3
-  add $3,$2
-  mov $1,$3
+  pow $0,0
+  trn $0,9
+  mov $1,$2
   min $1,1
 lpe

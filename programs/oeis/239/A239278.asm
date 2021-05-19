@@ -3,10 +3,4 @@
 
 mul $0,2
 cal $0,284723 ; Smallest odd prime that is relatively prime to n.
-add $0,5
-cal $0,158953 ; Trajectory of 12 under repeated application of the map n --> A102370(n) .
 mov $1,$0
-sub $1,140
-div $1,32
-mul $1,2
-add $1,3
