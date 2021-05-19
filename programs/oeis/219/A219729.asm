@@ -8,11 +8,9 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
+  mov $4,4
   cal $0,33676 ; Largest divisor of n <= sqrt(n).
-  mul $0,2
-  mov $4,$0
-  sub $4,2
-  div $4,2
-  add $4,1
+  add $4,$0
+  sub $4,4
   add $1,$4
 lpe

@@ -8,9 +8,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   cal $0,53828 ; Sum of digits of (n written in base 7).
-  mul $0,2
   pow $0,3
-  mov $4,$0
-  div $4,8
-  add $1,$4
+  add $1,$0
 lpe

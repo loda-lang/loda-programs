@@ -3,9 +3,6 @@
 
 mov $1,$0
 cal $0,40 ; The prime numbers.
-add $0,1
-add $0,$1
-lpb $0
-  mod $0,10
-lpe
-mov $1,$0
+add $1,$0
+add $1,1
+mod $1,10

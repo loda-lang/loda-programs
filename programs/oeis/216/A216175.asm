@@ -1,41 +1,34 @@
 ; A216175: Number of all polyhedra (tetrahedra of any orientation and octahedra) of any size, formed when intersecting a regular tetrahedron by planes parallel to its sides and dividing its edges into n equal parts.
 ; 1,6,20,50,104,193,329,526,800,1169,1652,2271,3049,4011,5184,6597,8280,10266,12589,15285,18392,21950,26000,30586,35753,41548,48020,55220,63200,72015,81721,92376,104040,116775,130644,145713,162049,179721,198800,219359
 
-mov $17,$0
-mov $19,$0
-add $19,1
-lpb $19
-  clr $0,17
-  mov $0,$17
-  sub $19,1
-  sub $0,$19
-  mov $14,$0
-  mov $16,$0
-  add $16,1
-  lpb $16
-    clr $0,14
-    mov $0,$14
-    sub $16,1
-    sub $0,$16
-    mov $11,$0
-    mov $13,$0
-    add $13,1
-    lpb $13
-      mov $0,$11
-      sub $13,1
-      sub $0,$13
-      mov $9,2
-      add $9,$0
-      add $0,$9
-      mul $0,2
-      mov $9,$0
-      div $0,3
-      div $9,8
-      add $0,$9
-      add $12,$0
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14
+  clr $0,12
+  mov $0,$12
+  sub $14,1
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11
+    clr $0,9
+    mov $0,$9
+    sub $11,1
+    sub $0,$11
+    mov $6,$0
+    mov $8,$0
+    add $8,1
+    lpb $8
+      mov $0,$6
+      sub $8,1
+      sub $0,$8
+      cal $0,106252 ; Number of positive integer triples (x,y,z), with x<=y<=z<=n, such that each of x,y and z divides the sum of the other two.
+      add $7,$0
     lpe
-    add $15,$12
+    add $10,$7
   lpe
-  add $18,$15
+  add $13,$10
 lpe
-mov $1,$18
+mov $1,$13

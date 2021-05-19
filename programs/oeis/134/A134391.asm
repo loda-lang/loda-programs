@@ -1,9 +1,8 @@
 ; A134391: The sequence A_0, A_1, A_2, A_3, ..., where the A_k are defined in A064990.
 ; 0,0,0,1,0,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,1,0,1,1,0,1,1,0,0,0,1,0,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,1,0,1,1,0,1,1,0,0,0,1,0,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,1,0,1,1,0,1,1,0,0,0,1,1,1,0,1,1
 
+add $0,1
+cal $0,134024 ; Number of positive trits in balanced ternary representation of n.
 mov $1,$0
-cal $0,189709 ; Partial sums of A189706.
 sub $1,1
-add $1,$0
-gcd $1,2
-sub $1,1
+mod $1,2

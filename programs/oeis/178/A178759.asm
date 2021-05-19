@@ -3,16 +3,9 @@
 
 lpb $0
   mov $1,$0
-  max $1,0
   cal $1,94033 ; Number of connected 2-element antichains on a labeled n-set.
   mul $1,$0
   mod $0,2
-  add $3,$1
-  mov $4,$1
-  min $4,1
-  add $5,$4
 lpe
-add $2,48
-mov $2,$1
 div $1,3
 mul $1,6

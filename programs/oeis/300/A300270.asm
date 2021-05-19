@@ -1,10 +1,19 @@
 ; A300270: a(n) = Sum_{1 <= i <= j <= n} mu(i*j)*floor((n/i)/j)).
 ; 1,1,1,1,1,2,2,2,2,3,3,4,4,5,6,6,6,7,7,8,9,10,10,11,11,12,12,13,13,13,13,13,14,15,16,17,17,18,19,20,20,20,20,21,22,23,23,24,24,25,26,27,27,28,29,30,31,32,32,32,32,33,34,34,35,35,35,36,37,37,37,38,38,39,40,41,42,42,42,43,43,44,44,44,45,46,47,48,48,48
 
-lpb $0
-  mov $2,$0
-  cal $2,215480 ; Characteristic function of numbers n with exactly two distinct prime factors
-  sub $0,1
-  add $1,$2
+mov $2,$0
+mov $3,$0
+add $3,1
+lpb $3
+  mov $0,$2
+  sub $3,1
+  sub $0,$3
+  cal $0,92248 ; Parity of number of distinct primes dividing n (function omega(n)) parity of A001221.
+  mov $4,12
+  cal $0,132032 ; Product{0<=k<=floor(log_8(n)), floor(n/8^k)}, n>=1.
+  div $4,$0
+  mov $5,$4
+  sub $5,6
+  div $5,6
+  add $1,$5
 lpe
-add $1,1

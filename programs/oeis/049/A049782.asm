@@ -3,10 +3,9 @@
 
 lpb $0
   mov $2,$0
-  add $4,1
   cal $2,67462 ; a(n) = (1! + 2! + ... + (n-1)!) mod n.
-  mov $0,$4
-  add $3,$4
+  mod $0,2
+  add $3,$2
   add $1,$3
-  add $1,$2
+  add $1,1
 lpe

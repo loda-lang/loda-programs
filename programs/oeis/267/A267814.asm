@@ -5,11 +5,7 @@ lpb $0
   add $2,2
   sub $0,$2
 lpe
-max $0,$2
-sub $0,1
-sub $2,$0
-lpb $2
-  add $1,40
-  sub $2,1
-lpe
-div $1,40
+trn $0,$2
+mov $1,$0
+add $1,1
+mod $1,2
