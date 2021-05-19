@@ -7,8 +7,7 @@ mov $4,5
 lpb $0
   trn $0,5
   add $3,4
-  sub $4,$4
-  add $4,2
+  mov $4,2
   add $4,$0
   trn $0,3
   mov $5,$3

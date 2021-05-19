@@ -4,8 +4,6 @@
 lpb $0
   mov $2,$0
   cal $2,192953 ; Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
+  sub $0,1
   add $1,$2
-  mov $3,$2
-  min $3,1
-  sub $0,$3
 lpe

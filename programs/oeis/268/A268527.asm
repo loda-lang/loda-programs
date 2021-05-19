@@ -3,8 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,309074 ; a(0) = 1; a(2*n) = 4*a(n), a(2*n+1) = a(n).
+  cal $2,80100 ; a(n) = 2^(number of 0's in binary representation of n).
   sub $0,1
+  pow $2,2
   add $1,$2
 lpe
 mul $1,4

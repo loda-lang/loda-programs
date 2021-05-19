@@ -3,7 +3,5 @@
 
 cal $0,198309 ; Moore lower bound on the order of a (9,g)-cage.
 mov $1,$0
-sub $1,10
 div $1,8
 mul $1,7
-add $1,7

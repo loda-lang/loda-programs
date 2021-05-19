@@ -7,9 +7,4 @@ lpb $0
   max $2,0
   cal $2,137429 ; a(n) = -2*a(n-1) - 2*a(n-2), with a(0)=1 and a(1)=-4.
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-sub $2,$4
-mov $3,$1

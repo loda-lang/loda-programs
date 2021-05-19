@@ -4,6 +4,4 @@
 add $0,4
 cal $0,232059 ; Number of n X 2 0..2 arrays with every 0 next to a 1 and every 1 next to a 2 horizontally or vertically, with no adjacent values equal.
 mov $1,$0
-sub $1,65
 div $1,4
-add $1,16

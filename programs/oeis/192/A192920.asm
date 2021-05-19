@@ -10,20 +10,14 @@ lpb $8
   add $0,$8
   sub $0,1
   lpb $0
-    add $1,2
     mov $2,$0
     max $2,0
     cal $2,48575 ; Pisot sequences L(2,5), E(2,5).
     trn $0,2
     add $3,$2
-    mov $4,$2
-    min $4,1
-    add $5,$4
   lpe
-  add $1,$2
   mov $1,$3
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe

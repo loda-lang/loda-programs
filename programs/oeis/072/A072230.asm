@@ -8,9 +8,7 @@ mov $1,1
 add $1,$2
 mov $3,$2
 sub $3,2
-mov $4,1
-mul $4,$0
-mul $3,$4
+mul $3,$0
 add $3,2
 bin $1,$3
 mul $1,2

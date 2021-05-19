@@ -8,28 +8,17 @@ lpb $10
   mov $0,$8
   sub $10,1
   add $0,$10
-  trn $0,1
+  sub $0,1
   mov $4,$0
   mov $6,2
   lpb $6
-    clr $0,4
     mov $0,$4
     sub $6,1
     add $0,$6
-    trn $0,1
-    add $0,1
-    mov $1,1
-    add $2,$0
-    add $2,$0
     max $0,0
-    mul $2,6
-    add $2,2
     cal $0,49611 ; a(n) = T(n,2), array T as in A049600.
     mov $1,$0
-    mov $2,1
-    mov $3,1
     mov $7,$6
-    cmp $7,1
     mul $7,$0
     add $5,$7
   lpe
@@ -38,7 +27,6 @@ lpb $10
   mov $1,$5
   sub $1,$4
   mov $11,$10
-  cmp $11,1
   mul $11,$1
   add $9,$11
 lpe

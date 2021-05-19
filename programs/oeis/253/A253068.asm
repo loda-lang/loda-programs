@@ -6,9 +6,6 @@ mov $1,-2
 pow $1,$0
 mul $1,2
 bin $1,2
-mov $2,$0
-mul $2,2
-mov $2,$1
 div $1,4
 sub $1,34
 div $1,18
