@@ -5,7 +5,3 @@ cal $0,40 ; The prime numbers.
 mul $0,2
 cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $1,$0
-sub $1,5
-div $1,2
-mul $1,2
-add $1,6

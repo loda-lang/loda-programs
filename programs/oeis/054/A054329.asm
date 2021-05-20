@@ -3,7 +3,6 @@
 
 add $0,2
 mul $0,2
-mov $1,3
 mov $2,2
 pow $2,$0
 bin $0,3

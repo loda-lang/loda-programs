@@ -10,7 +10,6 @@ lpb $3
   sub $0,1
   max $0,0
   cal $0,266250 ; Total number of ON (black) cells after n iterations of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
-  mul $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2
@@ -19,4 +18,3 @@ lpe
 min $5,1
 mul $5,$4
 sub $1,$5
-div $1,2

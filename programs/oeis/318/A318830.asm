@@ -4,7 +4,5 @@
 mov $2,$0
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 gcd $2,$0
-sub $2,$0
-sub $1,$2
-sub $1,$2
-div $1,2
+sub $0,$2
+mov $1,$0

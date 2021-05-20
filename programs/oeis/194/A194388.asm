@@ -8,13 +8,10 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
+  sub $0,2
+  gcd $0,9
   mov $3,$0
-  add $3,7
-  gcd $3,9
-  add $3,9
-  mul $3,2
-  sub $3,20
-  div $3,4
+  div $3,2
   mul $3,2
   add $3,2
   add $1,$3

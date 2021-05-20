@@ -4,6 +4,4 @@
 mov $1,$0
 cal $0,59929 ; a(n) = Fibonacci(n)*Fibonacci(n+2).
 add $1,1
-mov $2,1
-mul $2,$0
-mul $1,$2
+mul $1,$0

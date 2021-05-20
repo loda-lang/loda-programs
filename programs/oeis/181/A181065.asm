@@ -5,9 +5,4 @@ cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1
 lpb $0
   div $0,10
   add $1,$0
-  mov $2,$0
-  mov $3,3
-  mov $4,2
 lpe
-mov $4,$0
-mov $4,$1
