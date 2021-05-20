@@ -6,4 +6,6 @@ lpb $0
   add $1,$0
   sub $0,1
 lpe
+mov $0,2
+div $1,6
 mul $1,3

@@ -8,3 +8,5 @@ lpb $0
 lpe
 mul $1,3
 add $1,1
+pow $2,2
+mov $4,1
