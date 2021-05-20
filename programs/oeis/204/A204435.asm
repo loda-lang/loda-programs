@@ -1,9 +1,7 @@
 ; A204435: Symmetric matrix: f(i,j)=((i+j)^2 mod 3), read by (constant) antidiagonals.
 ; 1,0,0,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0
 
-cal $0,3057 ; n appears n - 1 times.
-lpb $0
-  pow $0,2
-  mod $0,3
-lpe
-add $1,$0
+cal $0,204431 ; Symmetric matrix: f(i,j)=(2i+j+1 mod 3), by antidiagonals.
+mov $1,$0
+add $1,1
+mod $1,2

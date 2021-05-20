@@ -1,22 +1,15 @@
 ; A091369: a(n) = Sum_{i=1..n} phi(i)*ceiling(n/i).
 ; 1,3,7,12,20,27,39,50,64,77,97,112,136,155,177,200,232,255,291,318,350,381,425,456,500,537,581,620,676,713,773,820,872,921,979,1026,1098,1153,1215,1270,1350,1403,1487,1550,1618,1685,1777,1840,1930,1999,2081,2156
 
-mov $6,$0
-mov $8,$0
-add $8,1
-lpb $8
-  clr $0,6
-  mov $0,$6
-  sub $8,1
-  sub $0,$8
-  mov $4,$0
-  add $4,1
-  add $3,$4
-  cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  add $3,5
-  add $3,$0
-  mov $1,$3
-  sub $1,6
-  add $7,$1
+mov $2,$0
+add $2,1
+mov $4,$0
+lpb $2
+  mov $0,$4
+  sub $2,1
+  sub $0,$2
+  cal $0,121048 ; n + phi(n), for Euler totient function phi(n).
+  mov $3,$0
+  sub $3,1
+  add $1,$3
 lpe
-mov $1,$7

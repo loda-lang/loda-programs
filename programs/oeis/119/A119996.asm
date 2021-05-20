@@ -4,6 +4,5 @@
 add $0,2
 cal $0,120718 ; Expansion of 3*x/(1 - 2*x^2 - 2*x + x^3).
 mov $1,$0
-sub $1,6
 div $1,3
-add $1,1
+sub $1,1

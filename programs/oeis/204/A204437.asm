@@ -1,7 +1,10 @@
 ; A204437: Symmetric matrix: f(i,j)=((i+j+1)^2 mod 3), by (constant) antidiagonals.
 ; 0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1
 
-cal $0,204421 ; Symmetric matrix: f(i,j)=(i+j+2 mod 3), by antidiagonals.
-mov $1,$0
-add $1,1
-mod $1,2
+cal $0,204431 ; Symmetric matrix: f(i,j)=(2i+j+1 mod 3), by antidiagonals.
+sub $0,1
+add $1,$0
+add $2,$0
+sub $2,2
+div $1,$2
+cmp $1,0

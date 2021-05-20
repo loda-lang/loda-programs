@@ -1,8 +1,11 @@
 ; A144598: Christoffel word of slope 5/7.
 ; 0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0
 
-mov $1,3
-add $1,$0
-cal $1,313781 ; Coordination sequence Gal.6.617.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+mov $1,$0
+lpb $0
+  sub $0,6
+  add $1,3
+lpe
+pow $1,$0
 sub $1,1
 mod $1,2

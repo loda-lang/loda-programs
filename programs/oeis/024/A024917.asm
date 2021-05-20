@@ -3,18 +3,13 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,239050 ; a(n) = 4*sigma(n).
-  mul $0,3
-  div $0,6
-  mov $3,$0
-  sub $3,6
-  div $3,2
-  add $3,2
-  add $1,$3
+  cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $0,1
+  add $1,$0
 lpe

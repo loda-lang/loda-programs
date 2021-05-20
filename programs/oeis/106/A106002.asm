@@ -1,9 +1,9 @@
 ; A106002: a(n)=1 if there is a number of the form 6k+3 such that prime(n) < 6k+3 < prime(n+1), otherwise 0.
 ; 0,0,0,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1
 
-max $0,2
-cal $0,100821 ; a(n) = 1 if prime(n) + 2 = prime(n+1), otherwise 0.
-sub $0,8
-mov $1,-1
-sub $1,$0
-div $1,7
+add $0,1
+max $0,3
+cal $0,62301 ; Number of ways writing n-th prime as a sum of two primes.
+mov $1,$0
+add $1,1
+mod $1,2

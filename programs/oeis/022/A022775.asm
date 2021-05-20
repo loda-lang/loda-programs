@@ -1,32 +1,28 @@
 ; A022775: Place where n-th 1 occurs in A007336.
 ; 1,3,6,11,17,25,34,44,56,69,84,100,117,136,156,178,201,226,252,279,308,338,370,403,437,473,510,549,589,631,674,718,764,811,860,910,961,1014,1068,1124,1181,1239,1299,1360,1423,1487,1553,1620,1688
 
-mov $10,$0
-mov $12,$0
-add $12,1
-lpb $12
-  clr $0,10
-  mov $0,$10
-  sub $12,1
-  sub $0,$12
-  mov $7,$0
-  mov $9,$0
-  add $9,1
-  lpb $9
-    clr $0,7
-    mov $0,$7
-    sub $9,1
-    sub $0,$9
-    lpb $0
-      mov $2,$0
-      cal $2,285076 ; 1-limiting word of the morphism 0->10, 1-> 010.
-      mov $0,1
-      add $3,$2
-    lpe
-    mov $1,$3
+mov $30,$0
+mov $32,$0
+add $32,1
+lpb $32
+  clr $0,30
+  mov $0,$30
+  sub $32,1
+  sub $0,$32
+  mov $27,$0
+  mov $29,$0
+  add $29,1
+  lpb $29
+    mov $0,$27
+    sub $29,1
+    sub $0,$29
+    sub $0,2
+    max $0,0
+    cal $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
+    mov $1,$0
     add $1,1
-    add $8,$1
+    add $28,$1
   lpe
-  add $11,$8
+  add $31,$28
 lpe
-mov $1,$11
+mov $1,$31

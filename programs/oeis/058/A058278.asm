@@ -10,14 +10,13 @@ lpb $3
   sub $0,1
   max $0,0
   cal $0,97333 ; Sum k=0..n, C(n-k, floor(k/2)).
+  sub $0,1
   mov $2,$3
   mov $4,$0
-  lpb $2
-    mov $1,$4
-    sub $2,1
-  lpe
+  add $4,1
+  mul $2,$4
+  add $1,$2
 lpe
-lpb $5
-  sub $1,$4
-  mov $5,0
-lpe
+min $5,1
+mul $5,$4
+sub $1,$5

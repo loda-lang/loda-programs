@@ -8,8 +8,4 @@ lpb $0
   cal $2,128057 ; Expansion of (1+x)/sqrt(1+4x^2).
   trn $0,2
   add $1,$2
-  mov $4,$2
-  min $4,1
-  add $5,$4
 lpe
-mov $3,$1
