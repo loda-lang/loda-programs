@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,59020 ; Number of 2 X n checkerboards (with at least one red square) in which the set of red squares is edge connected.
-add $0,$1
-mov $1,$0
-add $1,1
+add $0,1
+add $1,$0

@@ -3,7 +3,6 @@
 
 sub $0,1
 max $0,0
-cal $0,184117 ; Lower s-Wythoff sequence, where s(n) = 2n + 1.
-cal $0,40707 ; Continued fraction for sqrt(735).
+cal $0,184118 ; Upper s(n)-Wythoff sequence, where s(n) = 2n + 1.
 mov $1,$0
-div $1,45
+mod $1,2

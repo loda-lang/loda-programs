@@ -28,15 +28,11 @@ lpb $23
       mov $9,$0
       mov $11,2
       lpb $11
-        clr $0,9
-        mov $0,$9
         sub $11,1
         add $0,$11
         sub $0,1
-        mov $2,4
-        pow $2,$0
-        mul $2,2
-        add $1,$2
+        mov $1,4
+        pow $1,$0
         mov $12,$11
         mul $12,$1
         add $10,$12
@@ -69,4 +65,3 @@ min $21,1
 mul $21,$1
 mov $1,$22
 sub $1,$21
-div $1,2
