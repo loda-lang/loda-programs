@@ -1,11 +1,44 @@
 ; A189574: Partial sums of A189572.
 ; 0,1,1,1,2,2,3,3,4,4,4,5,5,6,6,6,7,7,8,8,8,9,9,10,10,11,11,11,12,12,13,13,13,14,14,15,15,16,16,16,17,17,18,18,18,19,19,20,20,21,21,21,22,22,23,23,23,24,24,25,25,25,26,26,27,27,28,28,28,29,29,30,30,30,31,31,32,32,33,33,33,34,34
 
-lpb $0
-  mul $0,2
-  mov $2,$0
-  cal $2,54071 ; Position of 1 in the permutation of 1,2,...,n obtained by ordering the fractional parts {h*sqrt(2)} for h=1,2,...,n.
-  mod $0,2
-  add $1,$2
-  div $1,2
+mov $10,$0
+mov $12,$0
+lpb $12
+  clr $0,10
+  mov $0,$10
+  sub $12,1
+  sub $0,$12
+  mov $6,$0
+  mov $8,2
+  lpb $8
+    clr $0,6
+    mov $0,$6
+    sub $8,1
+    add $0,$8
+    sub $0,1
+    mov $2,$0
+    mov $4,2
+    lpb $4
+      mov $0,$2
+      sub $4,1
+      add $0,$4
+      sub $0,1
+      max $0,0
+      cal $0,1953 ; a(n) = floor((n + 1/2) * sqrt(2)).
+      mov $5,$4
+      mul $5,$0
+      add $3,$5
+    lpe
+    mov $1,$3
+    mov $9,$8
+    mul $9,$3
+    add $7,$9
+  lpe
+  min $6,1
+  mul $6,$1
+  mov $1,$7
+  sub $1,$6
+  sub $1,1
+  add $11,$1
 lpe
+mov $1,$11

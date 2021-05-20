@@ -1,6 +1,22 @@
 ; A096270: Fixed point of the morphism 0->01, 1->011.
 ; 0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0
 
-cal $0,242082 ; Nim sequence of game on n counters whose legal moves are removing some number of counters in A027941.
-mov $1,$0
-dif $1,2
+mov $3,2
+mov $5,$0
+lpb $3
+  sub $3,1
+  add $0,$3
+  sub $0,1
+  mov $4,$0
+  max $4,0
+  cal $4,151915 ; Wythoff AAAA numbers.
+  mov $2,$3
+  mul $2,$4
+  add $1,$2
+  mov $6,$4
+lpe
+min $5,1
+mul $5,$6
+sub $1,$5
+add $1,1
+mod $1,2

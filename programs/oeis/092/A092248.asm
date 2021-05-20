@@ -3,8 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,8475 ; If n = Product (p_j^k_j) then a(n) = Sum (p_j^k_j) (a(1) = 0 by convention).
-  add $0,$2
-  mod $0,2
+  cal $2,28233 ; If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = p_1^e_1, with a(1) = 1.
+  div $0,$2
+  mov $3,$2
+  min $3,1
+  add $1,$3
 lpe
-mov $1,$0
+mod $1,2

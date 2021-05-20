@@ -18,14 +18,14 @@ lpb $12
     add $0,$8
     sub $0,1
     lpb $0
-      cal $2,26517 ; a(n) = t(5n), where t = A001285 (Thue-Morse sequence).
-      mov $4,$2
-      add $4,$0
+      pow $2,0
+      mov $5,$0
       mod $0,9
+      add $5,$2
     lpe
-    mov $1,$4
+    mov $1,$5
     mov $9,$8
-    mul $9,$4
+    mul $9,$5
     add $7,$9
   lpe
   min $6,1

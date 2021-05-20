@@ -3,7 +3,6 @@
 
 mul $0,2
 cal $0,73359 ; Nested floor product of n and fractions (2k+2)/(2k+1) for all k>=0, divided by 2.
+mul $0,2
 mov $1,$0
-sub $1,1
-mul $1,2
-add $1,3
+add $1,1

@@ -15,15 +15,9 @@ lpb $8
     cal $2,123941 ; The (1,2)-entry in the 3 X 3 matrix M^n, where M = {{2, 1, 1}, {1, 1, 0}, {1, 0, 0}}.
     trn $0,2
     add $3,$2
-    mov $4,$2
-    sub $2,2
-    min $4,1
-    add $5,$4
   lpe
-  mov $1,$4
   mov $1,$3
   mov $9,$8
-  cmp $9,1
   mul $9,$3
   add $7,$9
 lpe

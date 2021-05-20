@@ -3,7 +3,10 @@
 
 mul $0,2
 add $0,1
-cal $0,87278 ; Distance to nearest square is not greater than 1.
+sub $2,$0
+div $0,3
+bin $0,2
+div $2,2
+sub $0,$2
 mov $1,$0
-div $1,2
 add $1,1

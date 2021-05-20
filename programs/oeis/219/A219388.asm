@@ -18,8 +18,7 @@ lpb $2
   add $5,1
 lpe
 add $0,$5
-mov $1,1
-mul $1,$0
+mov $1,$0
 mul $1,2
 sub $1,4
 div $1,2

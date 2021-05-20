@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,102741 ; Binomial(n+3,4)*3^4.
+  cal $2,102741 ; a(n) = 3^4 * binomial(n+3, 4).
   sub $0,1
   add $1,$2
   mul $1,2

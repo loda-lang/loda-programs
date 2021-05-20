@@ -1,75 +1,72 @@
 ; A118265: Coefficient of q^n in (1-q)^4/(1-4q); dimensions of the enveloping algebra of the derived free Lie algebra on 4 letters.
 ; 1,0,6,20,81,324,1296,5184,20736,82944,331776,1327104,5308416,21233664,84934656,339738624,1358954496,5435817984,21743271936,86973087744,347892350976,1391569403904,5566277615616,22265110462464,89060441849856
 
-mov $8,2
-mov $10,$0
-lpb $8
-  mov $0,$10
-  sub $8,1
-  add $0,$8
+mov $21,$0
+mov $23,2
+lpb $23
+  clr $0,21
+  mov $0,$21
+  sub $23,1
+  add $0,$23
   sub $0,1
-  mov $4,2
-  mov $6,$0
-  lpb $4
-    mov $0,$6
-    sub $4,1
-    add $0,$4
+  mov $17,$0
+  mov $19,2
+  lpb $19
+    clr $0,17
+    mov $0,$17
+    sub $19,1
+    add $0,$19
     sub $0,1
-    mov $15,$0
-    mov $17,2
-    lpb $17
-      mov $0,$15
-      sub $17,1
-      add $0,$17
-      sub $0,1
-      mov $11,$0
-      mov $13,2
-      lpb $13
-        sub $13,1
-        add $0,$13
-        sub $0,1
-        mov $9,4
-        pow $9,$0
-        mov $14,$13
-        lpb $14
-          mov $12,$9
-          sub $14,1
-        lpe
-      lpe
-      lpb $11
-        mov $11,0
-        sub $12,$9
-      lpe
-      mov $3,$17
-      mov $9,$12
-      lpb $3
-        sub $3,1
-        mov $16,$9
-      lpe
-    lpe
+    mov $13,$0
+    mov $15,2
     lpb $15
-      mov $15,0
-      sub $16,$9
+      clr $0,13
+      mov $0,$13
+      sub $15,1
+      add $0,$15
+      sub $0,1
+      mov $9,$0
+      mov $11,2
+      lpb $11
+        clr $0,9
+        mov $0,$9
+        sub $11,1
+        add $0,$11
+        sub $0,1
+        mov $2,4
+        pow $2,$0
+        mul $2,2
+        add $1,$2
+        mov $12,$11
+        mul $12,$1
+        add $10,$12
+      lpe
+      min $9,1
+      mul $9,$1
+      mov $1,$10
+      sub $1,$9
+      mov $16,$15
+      mul $16,$1
+      add $14,$16
     lpe
-    mov $2,$4
-    mov $9,$16
-    lpb $2
-      sub $2,1
-      mov $5,$9
-    lpe
+    min $13,1
+    mul $13,$1
+    mov $1,$14
+    sub $1,$13
+    mov $20,$19
+    mul $20,$1
+    add $18,$20
   lpe
-  lpb $6
-    sub $5,$9
-    mov $6,0
-  lpe
-  mov $7,$8
-  mov $9,$5
-  lpb $7
-    mov $1,$9
-    sub $7,1
-  lpe
+  min $17,1
+  mul $17,$1
+  mov $1,$18
+  sub $1,$17
+  mov $24,$23
+  mul $24,$1
+  add $22,$24
 lpe
-lpb $10
-  sub $1,$9
-  mov $10,0
-lpe
+min $21,1
+mul $21,$1
+mov $1,$22
+sub $1,$21
+div $1,2

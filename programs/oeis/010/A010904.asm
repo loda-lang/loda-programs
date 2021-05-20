@@ -7,22 +7,17 @@ lpb $3
   mov $0,$4
   sub $3,1
   add $0,$3
-  sub $0,1
-  add $5,$0
-  mov $0,0
-  add $0,$5
-  add $0,3
+  add $0,2
   cal $0,82679 ; Number of Lego towers, one piece per floor, where every floor is perpendicular to the one below it (so we have a kind of 3-dimensional zigzag pattern).
   sub $0,2
   mov $2,$3
-  mov $5,0
-  mov $6,$0
+  mov $5,$0
   lpb $2
-    mov $1,$6
+    mov $1,$5
     sub $2,1
   lpe
 lpe
 lpb $4
-  sub $1,$6
+  sub $1,$5
   mov $4,0
 lpe
