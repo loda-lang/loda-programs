@@ -1,26 +1,7 @@
 ; A174426: Denominator of fractions in A171676.
 ; 4,36,36,144,144,144,400,400,400,400,900,900,900,900,900,1764,1764,1764,1764,1764,1764,3136,3136,3136,3136,3136,3136,3136,5184,5184,5184,5184,5184,5184,5184,5184,8100,8100,8100,8100,8100,8100,8100,8100,8100
 
-mov $3,1
-lpb $0
-  sub $0,1
-  mov $2,2
-  add $3,1
-  add $4,1
-  trn $0,$4
-  mov $1,1
-  add $3,$4
-  mov $5,1
-lpe
-sub $1,$5
-pow $3,$2
-mov $5,$1
-mov $1,1
-add $5,$3
-sub $5,1
-add $1,$5
-mul $1,2
-sub $1,2
-div $1,2
+mov $1,$0
+cal $1,127739 ; Triangle read by rows, in which row n contains the triangular number T(n) = A000217(n) repeated n times; smallest triangular number greater than or equal to n.
+pow $1,2
 mul $1,4
-add $1,4

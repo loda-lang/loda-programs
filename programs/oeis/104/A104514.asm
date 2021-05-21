@@ -17,7 +17,7 @@ lpb $3
     cmp $8,0
     add $2,$8
     mod $7,$2
-    sub $2,$2
+    mov $2,0
     cmp $7,0
     sub $5,$7
   lpe

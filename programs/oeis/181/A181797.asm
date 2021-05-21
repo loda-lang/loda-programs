@@ -3,6 +3,6 @@
 
 mov $1,1
 add $1,$0
-cal $0,48250 ; Sum of squarefree divisors of n.
+cal $0,48250 ; Sum of the squarefree divisors of n.
 mul $0,$1
 mov $1,$0

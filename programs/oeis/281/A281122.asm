@@ -6,6 +6,5 @@ mov $1,1
 lpb $0
   sub $0,$1
   mul $1,2
-  cmp $2,2
 lpe
 bin $1,$0

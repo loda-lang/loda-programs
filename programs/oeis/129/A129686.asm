@@ -1,6 +1,7 @@
 ; A129686: Triangle read by rows: row n is 0^(n-3), 1, 0, 1.
 ; 1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1
 
-cal $0,167194 ; Triangle read by rows. A130713 in the columns.
-mov $1,$0
+cal $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
+mov $1,3
+trn $1,$0
 mod $1,2

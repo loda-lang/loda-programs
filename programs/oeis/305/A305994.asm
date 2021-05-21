@@ -2,6 +2,10 @@
 ; 1,1,0,1,1,1,0,0,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,1,0,0,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,1
 
 mul $0,3
-add $0,1
-cal $0,82410 ; a(1)=0. Thereafter, the sequence is constructed using the rule: for any k >= 0, if a(1), a(2), ..., a(2^k+1) are known, the next 2^k terms are given as follows: a(2^k+1+i) = 1 - a(2^k+1-i) for 1 <= i <= 2^k.
-mov $1,$0
+cal $0,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+sub $0,1
+add $1,$0
+mul $1,$0
+div $1,4
+add $1,1
+mod $1,2

@@ -1,80 +1,53 @@
 ; A225015: Number of sawtooth patterns of length 1 in all Dyck paths of semilength n.
 ; 0,1,1,5,18,66,245,918,3465,13156,50193,192270,739024,2848860,11009778,42642460,165480975,643281480,2504501625,9764299710,38115568260,148955040300,582714871830,2281745337300,8942420595810,35074414899576,137672461877850,540756483094828,2125365141206160,8358412361834136
 
-mov $4,$0
-mov $21,$0
-lpb $4
-  mov $0,$21
-  sub $4,1
-  sub $0,$4
-  mov $17,$0
-  mov $19,2
-  lpb $19
-    mov $0,$17
-    sub $19,1
-    add $0,$19
+mov $13,$0
+mov $15,2
+lpb $15
+  clr $0,13
+  mov $0,$13
+  sub $15,1
+  add $0,$15
+  sub $0,1
+  mov $9,$0
+  mov $11,2
+  lpb $11
+    mov $0,$9
+    sub $11,1
+    add $0,$11
     sub $0,1
-    mov $13,$0
-    mov $15,2
-    lpb $15
-      sub $15,1
-      add $0,$15
-      sub $0,1
-      mov $9,$0
-      mov $11,2
-      lpb $11
-        mov $0,$9
-        sub $11,1
-        add $0,$11
-        trn $0,1
-        mov $2,$0
-        mov $5,$0
-        add $0,1
-        add $5,$2
-        bin $5,$2
-        mov $7,1
-        div $7,$0
-        add $8,2
-        add $2,$8
-        pow $2,$7
-        lpb $2
-          mov $2,1
-          cmp $5,$3
-        lpe
-        mov $6,$5
-        mov $12,$11
-        lpb $12
-          mov $10,$6
-          sub $12,1
-        lpe
+    mov $5,$0
+    mov $7,2
+    lpb $7
+      clr $0,5
+      mov $0,$5
+      add $3,$5
+      sub $7,1
+      lpb $0
+        add $2,$0
+        mov $0,$3
+        sub $0,1
       lpe
-      lpb $9
-        mov $9,0
-        sub $10,$6
-      lpe
-      mov $6,$10
-      mov $16,$15
-      lpb $16
-        mov $14,$6
-        sub $16,1
-      lpe
+      add $0,$2
+      bin $0,$3
+      mov $1,$0
     lpe
-    lpb $13
-      mov $13,0
-      sub $14,$6
-    lpe
-    mov $6,$14
-    mov $20,$19
-    lpb $20
-      mov $18,$6
-      sub $20,1
-    lpe
+    min $5,1
+    mul $5,$1
+    mov $1,$5
+    mov $12,$11
+    mul $12,$5
+    add $10,$12
   lpe
-  lpb $17
-    mov $17,0
-    sub $18,$6
-  lpe
-  mov $6,$18
-  div $6,2
-  add $1,$6
+  min $9,1
+  mul $9,$1
+  mov $1,$10
+  sub $1,$9
+  mov $16,$15
+  mul $16,$1
+  add $14,$16
 lpe
+min $13,1
+mul $13,$1
+mov $1,$14
+sub $1,$13
