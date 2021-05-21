@@ -4,6 +4,4 @@
 add $0,2
 cal $0,72682 ; Numbers congruent to {3, 36, 54, 57} mod 60.
 mov $1,$0
-div $1,3
-sub $1,15
-mul $1,3
+sub $1,45

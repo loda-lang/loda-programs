@@ -10,16 +10,16 @@ lpb $8
   add $0,$8
   sub $0,1
   lpb $0
-    add $3,$0
-    add $3,$0
+    mul $0,2
     sub $0,1
-    div $0,2
-    sub $3,1
+    add $4,$0
+    div $0,4
   lpe
-  add $3,1
-  mov $1,$3
+  add $1,1
+  add $4,$1
+  mov $1,$4
   mov $9,$8
-  mul $9,$3
+  mul $9,$4
   add $7,$9
 lpe
 min $6,1

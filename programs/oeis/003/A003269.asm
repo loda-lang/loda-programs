@@ -12,21 +12,15 @@ lpb $12
   mov $6,$0
   mov $8,2
   lpb $8
-    clr $0,6
     mov $0,$6
     sub $8,1
     add $0,$8
     sub $0,1
-    lpb $0
-      mov $2,$0
-      max $2,0
-      cal $2,98578 ; a(n) = Sum_{k=0..floor(n/4)} C(n-3*k,k+1).
-      sub $0,1
-      add $3,$2
-    lpe
-    mov $1,$3
+    max $0,0
+    cal $0,145131 ; Expansion of x/((1 - x - x^4)*(1 - x)^2).
+    mov $1,$0
     mov $9,$8
-    mul $9,$3
+    mul $9,$0
     add $7,$9
   lpe
   min $6,1

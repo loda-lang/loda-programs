@@ -3,6 +3,5 @@
 
 cal $0,77259 ; First member of the Diophantine pair (m,k) that satisfies 5*(m^2 + m) = k^2 + k; a(n) = m.
 mov $1,$0
-div $1,2
-mul $1,4
+mul $1,2
 add $1,1

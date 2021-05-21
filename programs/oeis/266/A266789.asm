@@ -10,7 +10,5 @@ lpb $0,2
   mod $1,2
   sub $1,1
 lpe
-add $1,1
-mod $1,2
-add $1,2
+add $1,3
 mod $1,2

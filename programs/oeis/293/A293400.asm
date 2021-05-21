@@ -3,7 +3,5 @@
 
 pow $0,2
 cal $0,26351 ; Floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
-add $2,$0
-min $2,1
-sub $0,$2
 mov $1,$0
+sub $1,1

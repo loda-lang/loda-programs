@@ -1,7 +1,18 @@
 ; A129565: A115359 * A000012 as infinite lower triangular matrices.
 ; 1,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1
 
-cal $0,279211 ; Fill an array by antidiagonals upwards; in the n-th cell, enter the number of earlier cells that can be seen from that cell.
-mov $1,$0
-add $1,1
+mul $0,2
+mov $1,1
+mov $4,1
+lpb $0,8
+  div $0,2
+  mul $0,2
+  div $1,2
+  mov $2,$0
+  div $2,$4
+  trn $2,$4
+  add $2,$4
+  add $4,2
+lpe
+mov $1,$2
 mod $1,2

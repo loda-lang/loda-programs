@@ -3,5 +3,4 @@
 
 cal $0,229535 ; Number of defective 3-colorings of a 2 X n 0..2 array connected horizontally, diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.
 mov $1,$0
-div $1,4
-mul $1,24
+mul $1,6

@@ -4,6 +4,5 @@
 cal $0,24905 ; Numbers k such that 7*k + 1 is prime.
 mov $1,$0
 sub $1,4
-div $1,2
-mul $1,14
+mul $1,7
 add $1,29

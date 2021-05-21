@@ -5,6 +5,5 @@ add $0,2
 cal $0,61534 ; Expansion of (1-x^2)/(1-3*x-x^2+x^3).
 mov $1,$0
 sub $1,9
-div $1,2
-mul $1,8
+mul $1,4
 add $1,40
