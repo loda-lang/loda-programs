@@ -2,7 +2,9 @@
 ; 16,27,38,49,510,611,712,813,914,1015,1116,1217,1318,1419,1520,1621,1722,1823,1924,2025,2126,2227,2328,2429,2530,2631,2732,2833,2934,3035,3136,3237,3338,3439,3540,3641,3742,3843,3944,4045,4146,4247
 
 add $0,1
-cal $0,30656 ; Pair up the numbers.
-div $0,2
-add $1,$0
-add $1,5
+mul $0,2
+cal $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
+mov $1,$0
+sub $1,23
+div $1,2
+add $1,16

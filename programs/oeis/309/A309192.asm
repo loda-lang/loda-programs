@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,48250 ; Sum of squarefree divisors of n.
+  cal $2,48250 ; Sum of the squarefree divisors of n.
   sub $0,1
   add $1,$2
 lpe

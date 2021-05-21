@@ -6,36 +6,30 @@ mov $9,2
 lpb $9
   clr $0,7
   mov $0,$7
-  sub $9,1
-  add $0,$9
   sub $0,1
-  mov $2,$0
-  mov $4,$0
-  mul $0,2
-  lpb $2
-    lpb $4
-      trn $4,$2
-      add $5,1
-    lpe
-    lpb $5
-      sub $0,1
-      mov $5,$2
-    lpe
-    sub $0,$2
-    mul $0,2
-    sub $2,1
-    mov $4,1
+  mov $3,$0
+  mov $5,2
+  sub $9,1
+  lpb $5
+    mov $0,$3
+    sub $5,1
+    add $0,$5
+    sub $0,1
+    max $0,0
+    cal $0,122746 ; G.f.: 1/((1-2*x)*(1-2*x^2)).
+    mul $0,4
+    mov $1,$0
+    mov $6,$5
+    mul $6,$0
+    add $4,$6
   lpe
-  add $2,$0
-  mov $1,$2
-  mov $10,$9
-  lpb $10
-    mov $8,$1
-    sub $10,1
-  lpe
+  min $3,1
+  mul $3,$1
+  mov $1,$4
+  sub $1,$3
 lpe
-lpb $7
-  mov $7,0
-  sub $8,$1
-lpe
-mov $1,$8
+min $7,1
+mul $7,$1
+mov $1,$7
+div $1,4
+mul $1,2

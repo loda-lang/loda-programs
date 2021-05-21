@@ -4,6 +4,4 @@
 add $0,1
 cal $0,52987 ; Expansion of (1-2x^2)/(1-2x-2x^2+2x^3).
 mov $1,$0
-sub $1,2
 div $1,2
-add $1,1

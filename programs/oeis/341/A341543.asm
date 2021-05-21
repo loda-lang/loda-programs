@@ -4,7 +4,4 @@
 add $0,1
 cal $0,3499 ; a(n) = 6*a(n-1) - a(n-2), with a(0) = 2, a(1) = 6.
 mov $1,$0
-sub $1,6
-div $1,4
-mul $1,4
-add $1,8
+add $1,2

@@ -3,7 +3,4 @@
 
 mov $1,$0
 cal $0,192954 ; Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
-add $0,162742
-sub $1,1
 add $1,$0
-sub $1,162741

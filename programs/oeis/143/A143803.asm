@@ -3,10 +3,9 @@
 
 mul $0,2
 mov $1,$0
-mov $2,1
 lpb $0
   sub $0,$2
-  trn $0,3
+  sub $0,2
   sub $1,1
   add $2,2
 lpe

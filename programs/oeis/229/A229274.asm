@@ -5,6 +5,5 @@ add $0,1
 cal $0,89033 ; Numbers n such that 7*n+3 is prime.
 mov $1,$0
 sub $1,2
-div $1,2
-mul $1,42
+mul $1,21
 add $1,51

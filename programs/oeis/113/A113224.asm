@@ -4,6 +4,4 @@
 add $0,1
 cal $0,182143 ; Number of independent vertex sets in the Moebius ladder graph with 2n nodes (n >= 0).
 mov $1,$0
-sub $1,3
 div $1,2
-add $1,1

@@ -3,13 +3,8 @@
 
 mov $2,$0
 mul $2,2
-mul $2,$0
-max $0,0
-mov $3,$2
 cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 mod $2,4
 sub $0,$2
 mov $1,$0
-mov $1,$0
 add $1,1
-mov $3,0
