@@ -5,8 +5,5 @@ mul $0,2
 add $0,1
 cal $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
 mov $1,$0
-mul $1,8
-sub $1,8
-div $1,8
 mul $1,2
-add $1,3
+add $1,1

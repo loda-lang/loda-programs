@@ -1,25 +1,8 @@
 ; A022933: Number of e^m between 2^n and 2^(n+1).
 ; 0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1
 
-mov $2,$0
-mov $4,2
-lpb $4
-  mov $0,$2
-  sub $4,1
-  add $0,$4
-  mov $5,$0
-  mul $0,2
-  add $0,$5
-  mul $0,3
-  div $0,13
-  mov $3,$4
-  mov $5,$0
-  lpb $3
-    mov $1,$5
-    sub $3,1
-  lpe
-lpe
-lpb $2
-  sub $1,$5
-  mov $2,0
-lpe
+add $0,2
+cal $0,313054 ; Coordination sequence Gal.6.318.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+sub $0,1
+mov $1,$0
+mod $1,2

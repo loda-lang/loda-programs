@@ -907,7 +907,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317108](http://oeis.org/A317108) ([L03 program](317/A317108.asm)): Numbers missing from A317106.
 * [A317137](http://oeis.org/A317137) ([L08 program](317/A317137.asm)): a(n) is the number of nonzero triangular numbers <= n-th prime.
 * [A317186](http://oeis.org/A317186) ([L05 program](317/A317186.asm)): One of many square spiral sequences: a(n) = n^2 + n - floor((n-1)/2).
-* [A317189](http://oeis.org/A317189) ([L32 program](317/A317189.asm)): A morphic sequence related to the ternary Thue-Morse sequence.
+* [A317189](http://oeis.org/A317189) ([L05 program](317/A317189.asm)): A morphic sequence related to the ternary Thue-Morse sequence.
 * [A317200](http://oeis.org/A317200) ([L13 program](317/A317200.asm)): G.f.: -x*(2*x^3+2*x^2+x-2)/(x^4-2*x+1).
 * [A317297](http://oeis.org/A317297) ([L04 program](317/A317297.asm)): a(n) = (n - 1)*(4*n^2 - 8*n + 5).
 * [A317298](http://oeis.org/A317298) ([L06 program](317/A317298.asm)): a(n) = (1/2)*(1 + (-1)^n + 2*n + 4*n^2).
@@ -1150,7 +1150,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323075](http://oeis.org/A323075) ([L08 program](323/A323075.asm)): The fixed point reached when map x -> 1+(x-(largest divisor d < x)) is iterated, starting from x = n.
 * [A323076](http://oeis.org/A323076) ([L09 program](323/A323076.asm)): Number of iterations of map x -> 1+(x-(largest divisor d < x)), starting from x=n, needed to reach a fixed point, which is always either a prime or 1.
 * [A323152](http://oeis.org/A323152) ([L04 program](323/A323152.asm)): a(n) = 1 if sigma(n) is divisible by all proper divisors of n, 0 otherwise.
-* [A323158](http://oeis.org/A323158) ([L06 program](323/A323158.asm)): If n is a square, a(n) = 1-(n mod 2), otherwise a(n) = (n mod 2); a(n) = A049820(n) mod 2, where A049820(n) = n - number of divisors of n.
+* [A323158](http://oeis.org/A323158) ([L10 program](323/A323158.asm)): If n is a square, a(n) = 1-(n mod 2), otherwise a(n) = (n mod 2); a(n) = A049820(n) mod 2, where A049820(n) = n - number of divisors of n.
 * [A323162](http://oeis.org/A323162) ([L05 program](323/A323162.asm)): a(n) = 1 if both n and n-1 are composite, 0 otherwise.
 * [A323170](http://oeis.org/A323170) ([L07 program](323/A323170.asm)): a(n) = 1 if (2*phi(n)) < n, 0 otherwise, where phi is Euler totient function (A000010).
 * [A323178](http://oeis.org/A323178) ([L04 program](323/A323178.asm)): a(n) = 1 + 100*n^2 for n >= 0.
@@ -1357,7 +1357,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328982](http://oeis.org/A328982) ([L15 program](328/A328982.asm)): Sorted list of the numbers of the form 5m+2 (m>=0) together with numbers of the form 5m-2+eps (m>=1), where eps = 1 if the binary expansion of m ends in an odd number of 0's and is otherwise 0.
 * [A328984](http://oeis.org/A328984) ([L19 program](328/A328984.asm)): If n is even, a(n)=floor((5t+1)/2) where t=n/2; if n==1 (mod 4) then a(n)=10t+1 where t=(n-1)/4; and if n==3 (mod 4) then a(n)=10t+7 where t=(n-3)/4.
 * [A328987](http://oeis.org/A328987) ([L21 program](328/A328987.asm)): The sequence C(n) defined in the comments (A and B smallest missing numbers, offset 0).
-* [A328990](http://oeis.org/A328990) ([L06 program](328/A328990.asm)): a(n) = (3*b(n) + b(n-1) + 1)/2, where b = A005409.
+* [A328990](http://oeis.org/A328990) ([L05 program](328/A328990.asm)): a(n) = (3*b(n) + b(n-1) + 1)/2, where b = A005409.
 * [A328994](http://oeis.org/A328994) ([L08 program](328/A328994.asm)): a(n) = n^2*(1+n)*(1+n^2)/4.
 * [A329014](http://oeis.org/A329014) ([L06 program](329/A329014.asm)): a(n) = p(0,n), where p(x,n) is the strong divisibility sequence of polynomials based on sqrt(6) as in A327323.
 * [A329018](http://oeis.org/A329018) ([L09 program](329/A329018.asm)): a(n) = p(1,n), where p(x,n) is the strong divisibility sequence of polynomials based on sqrt(3/2) as in A328644.
@@ -1774,6 +1774,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338230](http://oeis.org/A338230) ([L15 program](338/A338230.asm)): Number of ternary strings of length n that contain at least two 0's and at most one 1.
 * [A338281](http://oeis.org/A338281) ([L04 program](338/A338281.asm)): a(n) is the sum of n and the largest proper divisor of n.
 * [A338321](http://oeis.org/A338321) ([L08 program](338/A338321.asm)): Trace of complement matrix for polynomial triangle centers of degree n (on the Nagel line).
+* [A338353](http://oeis.org/A338353) ([L25 program](338/A338353.asm)): A (0,1)-matrix in the first quadrant read by downward antidiagonals: an example of a non-uniformly recurrent 2-D word having uniformly recurrent rows and columns.
 * [A338429](http://oeis.org/A338429) ([L06 program](338/A338429.asm)): Maximum number of copies of a 1234 permutation pattern in an alternating (or zig-zag) permutation of length n + 5.
 * [A338506](http://oeis.org/A338506) ([L03 program](338/A338506.asm)): a(n) is the number of subsets of divisors of n.
 * [A338544](http://oeis.org/A338544) ([L10 program](338/A338544.asm)): a(n) = (5*floor((n-1)/2)^2 + (4+(-1)^n)*floor((n-1)/2)) / 2.
@@ -1902,10 +1903,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A341414](http://oeis.org/A341414) ([L03 program](341/A341414.asm)): a(n) = (Fibonacci(n)*Lucas(n)) mod 10.
 * [A341463](http://oeis.org/A341463) ([L05 program](341/A341463.asm)): a(n) = (-1)^(n+1) * (3^n+1)/2.
 * [A341522](http://oeis.org/A341522) ([L09 program](341/A341522.asm)): a(n) = A156552(3*A005940(1+n)).
-* [A341543](http://oeis.org/A341543) ([L07 program](341/A341543.asm)): a(n) = sqrt( Product_{j=1..n} Product_{k=1..2} (4*sin((2*j-1)*Pi/(2*n))^2 + 4*sin((2*k-1)*Pi/2)^2) ).
+* [A341543](http://oeis.org/A341543) ([L04 program](341/A341543.asm)): a(n) = sqrt( Product_{j=1..n} Product_{k=1..2} (4*sin((2*j-1)*Pi/(2*n))^2 + 4*sin((2*k-1)*Pi/2)^2) ).
 * [A341590](http://oeis.org/A341590) ([L06 program](341/A341590.asm)): a(n) = (Sum_{j=1..3} StirlingS1(3,j)*(2^j-1)^n)/3!.
 * [A341591](http://oeis.org/A341591) ([L18 program](341/A341591.asm)): Number of superior prime divisors of n.
-* [A341625](http://oeis.org/A341625) ([L08 program](341/A341625.asm)): a(n) = 1 if the arithmetic derivative of n is less than n, otherwise 0.
+* [A341625](http://oeis.org/A341625) ([L11 program](341/A341625.asm)): a(n) = 1 if the arithmetic derivative of n is less than n, otherwise 0.
 * [A341642](http://oeis.org/A341642) ([L18 program](341/A341642.asm)): Number of strictly superior prime divisors of n.
 * [A341655](http://oeis.org/A341655) ([L09 program](341/A341655.asm)): a(n) is the number of divisors of prime(n)^2 - 1.
 * [A341703](http://oeis.org/A341703) ([L08 program](341/A341703.asm)): a(n) = 6*binomial(n,4) + 2*binomial(n,2) + 1.

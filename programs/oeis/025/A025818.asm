@@ -10,7 +10,6 @@ lpb $4
   sub $0,1
   max $0,0
   cal $0,29022 ; Expansion of 1/((1-x)(1-x^2)(1-x^7)(1-x^10)).
-  mul $0,2
   mov $3,$0
   mov $5,$4
   mul $5,$0
@@ -19,4 +18,3 @@ lpe
 min $2,1
 mul $2,$3
 sub $1,$2
-div $1,2

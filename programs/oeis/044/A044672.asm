@@ -4,7 +4,6 @@
 mul $0,2
 cal $0,44632 ; Numbers n such that string 0,0 occurs in the base 9 representation of n but not of n+1.
 mov $1,$0
-mul $1,2
-sub $1,162
-div $1,4
+sub $1,81
+div $1,2
 add $1,40

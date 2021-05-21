@@ -4,5 +4,4 @@
 add $0,2
 cal $0,104934 ; Expansion of (1-x)/(1 - 3*x - 2*x^2).
 mov $1,$0
-mul $1,14
-div $1,56
+div $1,4
