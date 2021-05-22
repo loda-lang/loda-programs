@@ -2,5 +2,11 @@
 ; 0,1,34,195,644,1605,3366,6279,10760,17289,26410,38731,54924,75725,101934,134415,174096,221969,279090,346579,425620,517461,623414,744855,883224,1040025,1216826,1415259,1637020,1883869,2157630
 
 mul $0,2
-cal $0,326278 ; Number of n-vertex, 2-edge multigraphs that are not nesting. Number of n-vertex, 2-edge multigraphs that are not crossing.
+mov $2,$0
+pow $0,2
+sub $0,2
+pow $0,2
+mul $2,3
+add $0,$2
 mov $1,$0
+div $1,6

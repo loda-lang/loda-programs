@@ -10,7 +10,6 @@ lpb $3
   sub $0,1
   max $0,0
   cal $0,104738 ; Positions of records in A104706.
-  mul $0,507
   mov $2,$3
   mul $2,$0
   add $1,$2
@@ -19,6 +18,3 @@ lpe
 min $5,1
 mul $5,$4
 sub $1,$5
-sub $1,507
-div $1,507
-add $1,1

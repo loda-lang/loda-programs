@@ -4,8 +4,4 @@
 cal $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 sub $0,1
 cal $0,40 ; The prime numbers.
-mul $0,2
-sub $0,3
 mov $1,$0
-div $1,2
-add $1,2

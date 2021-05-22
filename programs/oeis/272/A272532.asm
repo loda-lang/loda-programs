@@ -1,9 +1,9 @@
 ; A272532: Single bit representation of the sum of two sinusoids with periods 2 and 2*sqrt(2).
 ; 1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1
 
-add $0,1
-mov $2,$0
-cal $0,83088 ; First column of table A083087.
-add $0,$2
+sub $0,19
+bin $0,2
+cal $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
 mov $1,$0
+add $1,1
 mod $1,2

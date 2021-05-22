@@ -1,10 +1,7 @@
 ; A204437: Symmetric matrix: f(i,j)=((i+j+1)^2 mod 3), by (constant) antidiagonals.
 ; 0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1
 
-cal $0,204431 ; Symmetric matrix: f(i,j)=(2i+j+1 mod 3), by antidiagonals.
-sub $0,1
-add $1,$0
-add $2,$0
-sub $2,2
-div $1,$2
-cmp $1,0
+cal $0,3056 ; n appears n+1 times. Also the array A(n,k) = n+k (n >= 0, k >= 0) read by antidiagonals. Also inverse of triangular numbers.
+pow $0,4
+mod $0,3
+mov $1,$0

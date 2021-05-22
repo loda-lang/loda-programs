@@ -4,7 +4,6 @@
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,1333 ; Numerators of continued fraction convergents to sqrt(2).
+  cal $1,2203 ; Companion Pell numbers: a(n) = 2*a(n-1) + a(n-2), a(0) = a(1) = 2.
 lpe
-mul $1,2
 add $1,1
