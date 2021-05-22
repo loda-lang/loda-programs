@@ -4,5 +4,4 @@
 add $0,1
 cal $0,88147 ; n-th prime rotated one binary place to the left.
 mov $1,$0
-mul $1,2
-div $1,8
+div $1,4

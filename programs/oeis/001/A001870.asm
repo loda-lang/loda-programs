@@ -1,8 +1,10 @@
 ; A001870: Expansion of (1-x)/(1 - 3*x + x^2)^2.
 ; 1,5,19,65,210,654,1985,5911,17345,50305,144516,411900,1166209,3283145,9197455,25655489,71293590,197452746,545222465,1501460635,4124739581,11306252545,30928921224,84451726200,230204999425,626528283149,1702696141195,4621144002881,12526171163610,33914091513990,91720834160321,247805881286815,668864489877689,1803733158559105,4860004016260620
 
-mul $0,2
-add $0,3
-cal $0,1629 ; Self-convolution of Fibonacci numbers.
-mov $1,$0
+mov $1,1
+mov $2,2
+mul $2,$0
+add $1,$2
+sub $1,$0
+cal $1,281199 ; Number of n X 2 0..1 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
 div $1,2

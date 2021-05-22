@@ -4,20 +4,17 @@
 mov $3,2
 mov $5,$0
 lpb $3
+  mov $0,$5
   sub $3,1
   add $0,$3
   sub $0,1
+  max $0,0
+  cal $0,100284 ; Expansion of (1-4x-x^2)/((1-x)(1-4x-5x^2)).
   mov $2,$3
-  mov $4,5
-  pow $4,$0
-  add $4,5
-  div $4,6
-  lpb $2
-    mov $1,$4
-    sub $2,1
-  lpe
+  mul $2,$0
+  add $1,$2
+  mov $4,$0
 lpe
-lpb $5
-  sub $1,$4
-  mov $5,0
-lpe
+min $5,1
+mul $5,$4
+sub $1,$5

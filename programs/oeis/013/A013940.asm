@@ -7,6 +7,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,56170 ; Number of non-unitary prime divisors of n.
+  cal $0,336551 ; a(n) = A003557(n) - 1.
+  cal $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
   add $1,$0
 lpe

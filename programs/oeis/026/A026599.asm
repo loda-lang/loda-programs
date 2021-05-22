@@ -4,6 +4,4 @@
 add $0,2
 cal $0,26597 ; Expansion of (1+x)/(1-x-4*x^2).
 mov $1,$0
-div $1,8
-mul $1,2
-add $1,1
+div $1,4

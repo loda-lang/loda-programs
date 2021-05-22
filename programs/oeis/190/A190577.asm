@@ -3,14 +3,7 @@
 
 add $0,4
 pow $0,2
-lpb $0
-  mov $2,$0
-  mov $0,$1
-  sub $2,5
-lpe
-add $1,$2
-pow $1,2
-sub $1,121
-div $1,3
-mul $1,3
-add $1,105
+sub $0,5
+pow $0,2
+mov $1,$0
+sub $1,16
