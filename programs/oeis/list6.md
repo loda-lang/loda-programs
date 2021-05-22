@@ -1559,7 +1559,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332101](http://oeis.org/A332101) ([L11 program](332/A332101.asm)): Least m such that m^n <= Sum_{k<m} k^n.
 * [A332102](http://oeis.org/A332102) ([L23 program](332/A332102.asm)): Least m > 0 such that 2*m^n <= Sum_{k < m} k^n.
 * [A332202](http://oeis.org/A332202) ([L09 program](332/A332202.asm)): Largest k >= 0 such that 3^k divides 2^(2^n-1) + 1.
-* [A332206](http://oeis.org/A332206) ([L06 program](332/A332206.asm)): Numbers k such that A332205(k) = 0.
+* [A332206](http://oeis.org/A332206) ([L04 program](332/A332206.asm)): Numbers k such that A332205(k) = 0.
 * [A332224](http://oeis.org/A332224) ([L07 program](332/A332224.asm)): a(n) = A087808(sigma(n)).
 * [A332243](http://oeis.org/A332243) ([L04 program](332/A332243.asm)): Starhex honeycomb numbers: a(n) = 13 + 60*n + 60*n^2.
 * [A332264](http://oeis.org/A332264) ([L06 program](332/A332264.asm)): Partial sums of A334136.
@@ -1765,7 +1765,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338042](http://oeis.org/A338042) ([L10 program](338/A338042.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of vertices thus created. See Comments for details.
 * [A338045](http://oeis.org/A338045) ([L26 program](338/A338045.asm)): G.f.: Sum_{k>=0} x^(2^k) / (1 - x^(2^k))^3.
 * [A338046](http://oeis.org/A338046) ([L38 program](338/A338046.asm)): G.f.: Sum_{k>=0} x^(2^k) / (1 - x^(2^k))^4.
-* [A338062](http://oeis.org/A338062) ([L37 program](338/A338062.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is odd.
+* [A338062](http://oeis.org/A338062) ([L04 program](338/A338062.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is odd.
 * [A338064](http://oeis.org/A338064) ([L29 program](338/A338064.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is even.
 * [A338086](http://oeis.org/A338086) ([L08 program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
 * [A338101](http://oeis.org/A338101) ([L03 program](338/A338101.asm)): Smallest odd prime dividing n is a(n)-th prime, or 0 if no such prime exists.
@@ -1980,7 +1980,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A343859](http://oeis.org/A343859) ([L04 program](343/A343859.asm)): Partial sums of the primes excluding 3.
 * [A343877](http://oeis.org/A343877) ([L04 program](343/A343877.asm)): Number of pairs (d1, d2) of divisors of n such that d1<d2, d1|n, d2|n, and d1 + d2 <= n.
 * [A344259](http://oeis.org/A344259) ([L07 program](344/A344259.asm)): For any number n with binary expansion (b(1), ..., b(k)), the binary expansion of a(n) is (b(1), ..., b(ceiling(k/2))).
-* [A344327](http://oeis.org/A344327) ([L05 program](344/A344327.asm)): Number of divisors of n^4.
+* [A344327](http://oeis.org/A344327) ([L04 program](344/A344327.asm)): Number of divisors of n^4.
 * [A344337](http://oeis.org/A344337) ([L03 program](344/A344337.asm)): a(n) = 9^omega(n), where omega(n) is the number of distinct primes dividing n.
 * [A344372](http://oeis.org/A344372) ([L09 program](344/A344372.asm)): a(n) = Sum_{k=1..2n} (-1)^k gcd(k,2n).
 * [A344399](http://oeis.org/A344399) ([L08 program](344/A344399.asm)): a(n) = 4^n*binomial(n - 1/2, -1/2)*(n^2 + 1).

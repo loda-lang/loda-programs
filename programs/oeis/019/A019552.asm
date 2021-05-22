@@ -18,18 +18,16 @@ lpb $12
     sub $0,1
     max $0,0
     cal $0,248365 ; 4n concatenated with itself.
-    mov $5,461963
-    mul $5,$0
-    mov $1,$5
+    mov $1,$0
     mov $9,$8
-    mul $9,$5
+    mul $9,$0
     add $7,$9
   lpe
   min $6,1
   mul $6,$1
   mov $1,$7
   sub $1,$6
-  div $1,166306680
+  div $1,360
   mul $1,90
   add $1,14
   add $11,$1

@@ -79,7 +79,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A202199](http://oeis.org/A202199) ([L06 program](202/A202199.asm)): Number of (n+2) X 7 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202200](http://oeis.org/A202200) ([L09 program](202/A202200.asm)): Number of (n+2) X 8 binary arrays avoiding patterns 001 and 101 in rows and columns.
 * [A202201](http://oeis.org/A202201) ([L16 program](202/A202201.asm)): Number of (n+2) X 9 binary arrays avoiding patterns 001 and 101 in rows and columns.
-* [A202206](http://oeis.org/A202206) ([L91 program](202/A202206.asm)): a(n) = 3*a(n-1)+3*a(n-2) with a(0)=1 and a(1)=2.
+* [A202206](http://oeis.org/A202206) ([L34 program](202/A202206.asm)): a(n) = 3*a(n-1)+3*a(n-2) with a(0)=1 and a(1)=2.
 * [A202207](http://oeis.org/A202207) ([L09 program](202/A202207.asm)): a(n) = 3*a(n-1) - a(n-2) + a(n-3) with a(0)=1, a(1)=2, a(2)=5.
 * [A202238](http://oeis.org/A202238) ([L04 program](202/A202238.asm)): Characteristic function of positive integers not prime and not a power of 2.
 * [A202253](http://oeis.org/A202253) ([L07 program](202/A202253.asm)): Number of zero-sum -n..n arrays of 3 elements with adjacent element differences also in -n..n.
@@ -195,7 +195,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204551](http://oeis.org/A204551) ([L07 program](204/A204551.asm)): Symmetric matrix: f(i,j)=floor[(2i+2j+1)/4]-floor[(i+j)/4], by (constant) antidiagonals.
 * [A204553](http://oeis.org/A204553) ([L07 program](204/A204553.asm)): Symmetric matrix: f(i,j)=floor[(2i+2j+2)/4]-floor[(i+j+1)/4], by (constant) antidiagonals.
 * [A204556](http://oeis.org/A204556) ([L24 program](204/A204556.asm)): Left edge of the triangle A045975.
-* [A204557](http://oeis.org/A204557) ([L22 program](204/A204557.asm)): Right edge of the triangle A045975.
+* [A204557](http://oeis.org/A204557) ([L12 program](204/A204557.asm)): Right edge of the triangle A045975.
 * [A204558](http://oeis.org/A204558) ([L08 program](204/A204558.asm)): Row sums of the triangle A045975.
 * [A204560](http://oeis.org/A204560) ([L09 program](204/A204560.asm)): Symmetric matrix: f(i,j)=floor[(2i+2j+4)/4]-floor[(i+j+2)/4], by (constant) antidiagonals.
 * [A204562](http://oeis.org/A204562) ([L07 program](204/A204562.asm)): Symmetric matrix: f(i,j) = floor((2i+2j+6)/4)-floor((i+j+3)/4), by (constant) antidiagonals.
@@ -1267,7 +1267,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A221686](http://oeis.org/A221686) ([L24 program](221/A221686.asm)): Number of 0..n arrays of length 7 with each element differing from at least one neighbor by 1 or less, starting with 0.
 * [A221731](http://oeis.org/A221731) ([L17 program](221/A221731.asm)): Number of n X 2 arrays of occupancy after each element stays put or moves to some horizontal or antidiagonal neighbor, without move-in move-out left turns.
 * [A221829](http://oeis.org/A221829) ([L06 program](221/A221829.asm)): Number of 2 X n arrays of occupancy after each element moves to some horizontal, vertical or antidiagonal neighbor, without 2-loops or left turns.
-* [A221837](http://oeis.org/A221837) ([L07 program](221/A221837.asm)): Number of integer Heron triangles of height n such that the angles adjacent to the base are not right.
+* [A221837](http://oeis.org/A221837) ([L03 program](221/A221837.asm)): Number of integer Heron triangles of height n such that the angles adjacent to the base are not right.
 * [A221855](http://oeis.org/A221855) ([L63 program](221/A221855.asm)): Number of cyclotomic cosets of 13 mod 10^n.
 * [A221881](http://oeis.org/A221881) ([L10 program](221/A221881.asm)): Number of order-preserving or order-reversing full contraction mappings (of an n-chain) with (right) waist exactly k.
 * [A221882](http://oeis.org/A221882) ([L07 program](221/A221882.asm)): Number of order-preserving or order-reversing full contraction mappings of an n-chain.
@@ -1813,6 +1813,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A232580](http://oeis.org/A232580) ([L08 program](232/A232580.asm)): Number of binary sequences of length n that contain at least one contiguous subsequence 011.
 * [A232582](http://oeis.org/A232582) ([L09 program](232/A232582.asm)): Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal.
 * [A232584](http://oeis.org/A232584) ([L08 program](232/A232584.asm)): Number of (n+1)X(3+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal
+* [A232599](http://oeis.org/A232599) ([L11 program](232/A232599.asm)): Alternating sum of cubes, i.e., Sum_{k=0..n} k^p*q^k for p=3, q=-1.
 * [A232600](http://oeis.org/A232600) ([L09 program](232/A232600.asm)): a(n) = Sum_{k=0..n} k^p*q^k, where p=1, q=-2.
 * [A232601](http://oeis.org/A232601) ([L10 program](232/A232601.asm)): a(n) = Sum_{k=0..n} k^p*q^k for p = 2 and q = -2.
 * [A232625](http://oeis.org/A232625) ([L25 program](232/A232625.asm)): Denominators of abs(n-8)/(2*n), n >= 1
@@ -2094,7 +2095,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239609](http://oeis.org/A239609) ([L08 program](239/A239609.asm)): Sin(arcsin(n)- 3 arccos(n))^2.
 * [A239619](http://oeis.org/A239619) ([L03 program](239/A239619.asm)): Base 3 sum of digits of prime(n).
 * [A239632](http://oeis.org/A239632) ([L08 program](239/A239632.asm)): Number of parts in all palindromic compositions of n.
-* [A239636](http://oeis.org/A239636) ([L06 program](239/A239636.asm)): Distance between the two occurrences of n-th prime in A082500.
+* [A239636](http://oeis.org/A239636) ([L05 program](239/A239636.asm)): Distance between the two occurrences of n-th prime in A082500.
 * [A239669](http://oeis.org/A239669) ([L05 program](239/A239669.asm)): Total number of prime factors counted with multiplicity of prime(n)-1 and prime(n)+1, where prime(n) is the n-th prime.
 * [A239678](http://oeis.org/A239678) ([L14 program](239/A239678.asm)): Least numbers k such that k*2^n+1 is a square.
 * [A239679](http://oeis.org/A239679) ([L06 program](239/A239679.asm)): Least number k > 0 such that k*2^n+1 is a cube.

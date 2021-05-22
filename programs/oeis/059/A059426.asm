@@ -1,7 +1,9 @@
 ; A059426: First differences of A026273.
 ; 1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1
 
-add $0,2
-cal $0,114986 ; Characteristic function of (A000201 prefixed with 0).
+add $0,3
+cal $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
+add $0,1
 mov $1,$0
+mod $1,2
 add $1,1
