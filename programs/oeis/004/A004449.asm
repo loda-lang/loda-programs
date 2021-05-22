@@ -4,5 +4,4 @@
 mul $0,2
 cal $0,4457 ; Nimsum n + 16.
 mov $1,$0
-mul $1,2
-div $1,4
+div $1,2

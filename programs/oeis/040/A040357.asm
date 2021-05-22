@@ -1,8 +1,6 @@
 ; A040357: Continued fraction for sqrt(377).
 ; 19,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2,38,2,2,2
 
-cal $0,40166 ; Continued fraction for sqrt(180).
-cal $0,49636 ; Congruent to 0 or 2 mod 3, but not equal to 0 or 3.
-mov $1,2
-add $1,$0
-sub $1,6
+dif $0,2
+cal $0,40360 ; Continued fraction for sqrt(380).
+mov $1,$0

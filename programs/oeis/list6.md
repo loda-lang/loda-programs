@@ -9,7 +9,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300076](http://oeis.org/A300076) ([L09 program](300/A300076.asm)): A sequence based on the period 6 sequence A300075.
 * [A300222](http://oeis.org/A300222) ([L03 program](300/A300222.asm)): In ternary (base-3) representation of n, replace 1's with 0's.
 * [A300254](http://oeis.org/A300254) ([L12 program](300/A300254.asm)): a(n) = 25*(n + 1)*(4*n + 3)*(5*n + 4)/3.
-* [A300270](http://oeis.org/A300270) ([L13 program](300/A300270.asm)): a(n) = Sum_{1 <= i <= j <= n} mu(i*j)*floor((n/i)/j)).
+* [A300270](http://oeis.org/A300270) ([L03 program](300/A300270.asm)): a(n) = Sum_{1 <= i <= j <= n} mu(i*j)*floor((n/i)/j)).
 * [A300287](http://oeis.org/A300287) ([L18 program](300/A300287.asm)): a(n) = floor((1/n) * Sum_{k=1..n} sqrt(k)).
 * [A300290](http://oeis.org/A300290) ([L08 program](300/A300290.asm)): Period 6: repeat [0, 1, 2, 2, 3, 3].
 * [A300293](http://oeis.org/A300293) ([L07 program](300/A300293.asm)): A sequence based on the period 6 sequence A151899.
@@ -60,9 +60,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301677](http://oeis.org/A301677) ([L22 program](301/A301677.asm)): Partial sums of A301676.
 * [A301682](http://oeis.org/A301682) ([L17 program](301/A301682.asm)): Coordination sequence for node of type V1 in "krg" 2-D tiling (or net).
 * [A301683](http://oeis.org/A301683) ([L24 program](301/A301683.asm)): Partial sums of A301682.
-* [A301684](http://oeis.org/A301684) ([L53 program](301/A301684.asm)): Coordination sequence for node of type V2 in "krg" 2-D tiling (or net).
+* [A301684](http://oeis.org/A301684) ([L17 program](301/A301684.asm)): Coordination sequence for node of type V2 in "krg" 2-D tiling (or net).
 * [A301685](http://oeis.org/A301685) ([L30 program](301/A301685.asm)): Partial sums of A301684.
-* [A301686](http://oeis.org/A301686) ([L40 program](301/A301686.asm)): Coordination sequence for node of type V1 in "krh" 2-D tiling (or net).
+* [A301686](http://oeis.org/A301686) ([L17 program](301/A301686.asm)): Coordination sequence for node of type V1 in "krh" 2-D tiling (or net).
 * [A301687](http://oeis.org/A301687) ([L20 program](301/A301687.asm)): Partial sums of A301686.
 * [A301688](http://oeis.org/A301688) ([L22 program](301/A301688.asm)): Coordination sequence for node of type V2 in "krh" 2-D tiling (or net).
 * [A301689](http://oeis.org/A301689) ([L22 program](301/A301689.asm)): Partial sums of A301688.
@@ -324,7 +324,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305549](http://oeis.org/A305549) ([L06 program](305/A305549.asm)): Crystal ball sequence for the lattice C_6.
 * [A305559](http://oeis.org/A305559) ([L08 program](305/A305559.asm)): [0, -1, -1] together with A000290.
 * [A305716](http://oeis.org/A305716) ([L03 program](305/A305716.asm)): Order of rowmotion on the divisor lattice for n.
-* [A305728](http://oeis.org/A305728) ([L05 program](305/A305728.asm)): Numbers of the form 216*p^3, where p is a Pythagorean prime (A002144).
+* [A305728](http://oeis.org/A305728) ([L04 program](305/A305728.asm)): Numbers of the form 216*p^3, where p is a Pythagorean prime (A002144).
 * [A305750](http://oeis.org/A305750) ([L10 program](305/A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
 * [A305753](http://oeis.org/A305753) ([L11 program](305/A305753.asm)): A base-3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
 * [A305762](http://oeis.org/A305762) ([L06 program](305/A305762.asm)): a(0) = 24, a(n) = 2^(max(0, min(3, p - 1))) * 3^(max(0, min(1, q - 1))) where n = 2^p * 3^q * 5^r * ... .
@@ -390,7 +390,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307421](http://oeis.org/A307421) ([L04 program](307/A307421.asm)): Dirichlet g.f.: zeta(s) * zeta(3*s) / zeta(2*s).
 * [A307424](http://oeis.org/A307424) ([L08 program](307/A307424.asm)): Dirichlet g.f.: zeta(3*s) / zeta(2*s).
 * [A307430](http://oeis.org/A307430) ([L04 program](307/A307430.asm)): Dirichlet g.f.: zeta(s) / zeta(4*s).
-* [A307465](http://oeis.org/A307465) ([L06 program](307/A307465.asm)): Number of Catalan words of length n avoiding the pattern 110.
+* [A307465](http://oeis.org/A307465) ([L05 program](307/A307465.asm)): Number of Catalan words of length n avoiding the pattern 110.
 * [A307469](http://oeis.org/A307469) ([L14 program](307/A307469.asm)): a(n) = 2*a(n-1) + 6*a(n-2) for n >= 2, a(0) = 1, a(1) = 5.
 * [A307485](http://oeis.org/A307485) ([L09 program](307/A307485.asm)): A permutation of the nonnegative integers: one odd, two even, four odd, eight even, etc.; extended to nonnegative integer with a(0) = 0.
 * [A307513](http://oeis.org/A307513) ([L07 program](307/A307513.asm)): Beatty sequence for 1/log(2).
@@ -1230,6 +1230,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325282](http://oeis.org/A325282) ([L12 program](325/A325282.asm)): Maximum adjusted frequency depth among integer partitions of n.
 * [A325299](http://oeis.org/A325299) ([L03 program](325/A325299.asm)): a(n) = 9 * sigma(n).
 * [A325313](http://oeis.org/A325313) ([L09 program](325/A325313.asm)): a(n) = A048250(n) - n, where A048250(n) is the sum of squarefree divisors of n.
+* [A325321](http://oeis.org/A325321) ([L04 program](325/A325321.asm)): a(n) = 1 if cototient of n is a square, 0 otherwise.
 * [A325334](http://oeis.org/A325334) ([L07 program](325/A325334.asm)): Number of integer partitions of n with adjusted frequency depth 3 whose parts cover an initial interval of positive integers.
 * [A325401](http://oeis.org/A325401) ([L07 program](325/A325401.asm)): minflip(n) = min(n, r(n)) where r(n) is the binary reverse of n.
 * [A325402](http://oeis.org/A325402) ([L08 program](325/A325402.asm)): maxflip(n) = max(n, r(n)) where r(n) is the binary reverse of n.
@@ -1582,6 +1583,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332789](http://oeis.org/A332789) ([L21 program](332/A332789.asm)): First differences of the iterated Beatty sequence A007069.
 * [A332884](http://oeis.org/A332884) ([L04 program](332/A332884.asm)): a(n) = -n^2 + 21*n - 1.
 * [A332917](http://oeis.org/A332917) ([L23 program](332/A332917.asm)): A332916(n)/2^a(n) is the average number of binary strings of length n with Levenshtein distance <= 3 from a uniform randomly sampled binary string of this length.
+* [A332937](http://oeis.org/A332937) ([L03 program](332/A332937.asm)): a(n) is the greatest common divisor of the first two terms of row n of the Wythoff array (A035513).
 * [A332993](http://oeis.org/A332993) ([L04 program](332/A332993.asm)): a(1) = 1, for n > 1, a(n) = n + a(A032742(n)).
 * [A332994](http://oeis.org/A332994) ([L08 program](332/A332994.asm)): a(1) = 1, for n > 1, a(n) = n + a(A052126(n)).
 * [A333167](http://oeis.org/A333167) ([L04 program](333/A333167.asm)): a(n) = r_2(n^2 + 1), where r_2(k) is the number of ways of writing k as a sum of 2 squares (A004018).

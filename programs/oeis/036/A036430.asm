@@ -4,6 +4,5 @@
 lpb $0
   cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
   sub $0,1
-  add $1,5
+  add $1,1
 lpe
-div $1,5
