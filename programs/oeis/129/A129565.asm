@@ -1,18 +1,8 @@
 ; A129565: A115359 * A000012 as infinite lower triangular matrices.
 ; 1,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1
 
-mul $0,2
-mov $1,1
-mov $4,1
-lpb $0,8
-  div $0,2
-  mul $0,2
-  div $1,2
-  mov $2,$0
-  div $2,$4
-  trn $2,$4
-  add $2,$4
-  add $4,2
-lpe
-mov $1,$2
+cal $0,114327 ; Table T(n,m) = n - m read by upwards antidiagonals.
+max $0,0
+mov $1,$0
+add $1,1
 mod $1,2

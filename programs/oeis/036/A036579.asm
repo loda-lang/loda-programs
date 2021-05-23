@@ -1,8 +1,11 @@
 ; A036579: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 ; 1,2,0,1,0,2,1,2,0,2,1,0,1,2,0,1,0,2,1,0,1,2,0,2,1,2,0,1,0,2,1,2,0,2,1,0,1,2,0,2,1,2,0,1,0,2,1,0,1,2,0,1,0,2,1,2,0,2,1,0,1,2,0,1,0,2,1,0,1,2,0,2,1,2,0,1,0,2,1,0,1,2,0,1,0,2,1,2,0,2,1,0,1,2,0,2,1,2,0
 
-cal $0,29883 ; First differences of Thue-Morse sequence A001285.
-add $0,4
+add $0,1
+cal $0,229764 ; Nim sequence of MARK: the game on n counters in which the legal moves are to remove 1 counter or to halve the number of counters and round down.
 mul $0,2
-mod $0,3
-mov $1,$0
+mov $1,2
+mov $2,$0
+cmp $2,0
+add $0,$2
+div $1,$0

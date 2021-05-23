@@ -8,9 +8,8 @@ lpb $4
   sub $4,1
   add $0,$4
   sub $0,1
-  mul $0,2
   max $0,0
-  cal $0,930 ; Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) + a(n-3).
+  cal $0,2478 ; Bisection of A000930.
   mov $3,$0
   mov $5,$4
   mul $5,$0
