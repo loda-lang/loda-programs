@@ -3,8 +3,5 @@
 
 mul $0,8
 add $0,7
-cal $0,2659 ; a(n) = 2*sigma(n) - 1.
+cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $1,$0
-sub $1,28
-div $1,2
-add $1,15

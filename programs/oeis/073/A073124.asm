@@ -4,7 +4,4 @@
 cal $0,40 ; The prime numbers.
 cal $0,230846 ; 1 + A075526(n).
 mov $1,$0
-sub $1,3
-div $1,2
-mul $1,2
-add $1,2
+sub $1,1

@@ -1,6 +1,9 @@
 ; A182582: a(n) = (A096268(n) + A182581(n)) mod 2.
 ; 0,1,1,0,0,0,0,1,0,1,0,1,0,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0,1,1,1,0,1,0,1,0,0,0,0,0,0,1,1,0,1,0,1,1,0,0,0,0,0,0,1,0,1,0,1,1,1,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1
 
-cal $0,169611 ; Number of prime divisors of n that are not greater than 3, counted with multiplicity.
-mod $0,2
+cal $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 mov $1,$0
+add $1,64
+div $1,3
+sub $1,1
+mod $1,2

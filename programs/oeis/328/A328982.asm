@@ -4,8 +4,7 @@
 mov $4,$0
 mov $5,$0
 cal $0,29883 ; First differences of Thue-Morse sequence A001285.
-mov $2,1
-mul $2,$4
+mov $2,$4
 div $2,2
 add $3,$0
 pow $3,2

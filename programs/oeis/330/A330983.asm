@@ -12,7 +12,7 @@ lpb $2
   add $6,$2
   add $2,$3
   lpb $5
-    sub $5,$5
+    mov $5,0
     add $6,1
   lpe
   add $5,$2
