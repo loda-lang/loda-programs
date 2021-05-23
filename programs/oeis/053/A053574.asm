@@ -4,6 +4,5 @@
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 lpb $0
   dif $0,2
-  add $1,6
+  add $1,1
 lpe
-div $1,6
