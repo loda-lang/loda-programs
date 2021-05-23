@@ -16,7 +16,7 @@ lpb $32
     mov $0,$27
     sub $29,1
     sub $0,$29
-    cal $0,97806 ; Riordan array (1+x, 1) read by rows.
+    cal $0,135387 ; Triangle read by rows, with (2, 1, 0, 0, 0,...) in every column.
     mov $26,$0
     cmp $26,0
     mov $1,$26

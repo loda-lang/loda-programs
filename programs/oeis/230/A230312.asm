@@ -3,7 +3,5 @@
 
 add $0,1
 cal $0,75408 ; Perfect powers pp such that pp+1 is prime.
-sub $0,3
 mov $1,$0
 div $1,4
-add $1,1

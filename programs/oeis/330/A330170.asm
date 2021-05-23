@@ -4,6 +4,4 @@
 add $0,1
 cal $0,34488 ; Sum of n-th powers of divisors of 6.
 mov $1,$0
-div $1,2
-sub $1,1
-mul $1,2
+sub $1,2
