@@ -12,25 +12,23 @@ lpb $12
   mov $6,$0
   mov $8,2
   lpb $8
-    clr $0,6
     mov $0,$6
     sub $8,1
     add $0,$8
     sub $0,1
+    mul $0,2
     max $0,0
-    cal $0,342281 ; A bisection of A001951: a(n) = A001951(2*n+1).
-    cal $0,89410 ; Least common multiple of all cycle sizes (also the maximum cycle size) in range [A014137(n-1)..A014138(n-1)] of permutation A074679/A074680.
-    add $3,$0
-    div $3,2
-    mov $1,$3
+    cal $0,189380 ; a(n) = n + floor(n*s/r) + floor(n*t/r); r=1, s=-1+sqrt(2), t=1+sqrt(2).
+    mov $1,$0
     mov $9,$8
-    mul $9,$3
+    mul $9,$0
     add $7,$9
   lpe
   min $6,1
   mul $6,$1
   mov $1,$7
   sub $1,$6
+  sub $1,2
   div $1,2
   add $1,2
   add $11,$1

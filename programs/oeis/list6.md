@@ -360,7 +360,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306546](http://oeis.org/A306546) ([L09 program](306/A306546.asm)): Modified Collatz Map such that odd numbers are treated the same, but even numbers have all factors of 2 removed.
 * [A306556](http://oeis.org/A306556) ([L03 program](306/A306556.asm)): Integers that appear as (unreduced) numerators of segment endpoints when a ternary Cantor set is created.
 * [A306561](http://oeis.org/A306561) ([L04 program](306/A306561.asm)): Square numbers that are also central polygonal numbers (i.e., square numbers found in the Lazy Caterer's sequence).
-* [A306672](http://oeis.org/A306672) ([L05 program](306/A306672.asm)): Partial sums of the even Lucas numbers (A014448).
+* [A306672](http://oeis.org/A306672) ([L04 program](306/A306672.asm)): Partial sums of the even Lucas numbers (A014448).
 * [A306683](http://oeis.org/A306683) ([L31 program](306/A306683.asm)): Integers k for which the base-phi representation of k does not include 1 or phi.
 * [A306694](http://oeis.org/A306694) ([L04 program](306/A306694.asm)): a(n) is the denominator of log(A014963(n))/log(n) if n > 1 and a(1) = 1.
 * [A306696](http://oeis.org/A306696) ([L11 program](306/A306696.asm)): Lexicographically earliest sequence of nonnegative terms such that for any n > 0 and k > 0, if a(n) >= a(n+k), then a(n+2*k) <> a(n+k).
@@ -813,6 +813,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315526](http://oeis.org/A315526) ([L14 program](315/A315526.asm)): Coordination sequence Gal.6.637.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315530](http://oeis.org/A315530) ([L38 program](315/A315530.asm)): Coordination sequence Gal.4.148.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315535](http://oeis.org/A315535) ([L30 program](315/A315535.asm)): Coordination sequence Gal.5.304.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315537](http://oeis.org/A315537) ([L04 program](315/A315537.asm)): Coordination sequence Gal.6.641.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315538](http://oeis.org/A315538) ([L05 program](315/A315538.asm)): Coordination sequence Gal.3.50.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315540](http://oeis.org/A315540) ([L03 program](315/A315540.asm)): Coordination sequence Gal.6.643.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315541](http://oeis.org/A315541) ([L05 program](315/A315541.asm)): Coordination sequence Gal.4.136.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -871,7 +872,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316296](http://oeis.org/A316296) ([L29 program](316/A316296.asm)): a(n) = Sum_{k=1..n} f(k, n), where f(i, j) is the number of multiples of i greater than j and less than 2*j.
 * [A316316](http://oeis.org/A316316) ([L19 program](316/A316316.asm)): Coordination sequence for tetravalent node in chamfered version of square grid.
 * [A316319](http://oeis.org/A316319) ([L30 program](316/A316319.asm)): Coordination sequence for a trivalent node in a chamfered version of the 3^6 triangular tiling of the plane.
-* [A316320](http://oeis.org/A316320) ([L09 program](316/A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
+* [A316320](http://oeis.org/A316320) ([L11 program](316/A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
 * [A316341](http://oeis.org/A316341) ([L21 program](316/A316341.asm)): Characteristic function of the factorials 1!, 2!, 3!, ...
 * [A316342](http://oeis.org/A316342) ([L12 program](316/A316342.asm)): Fibonacci word A003849 with first two terms replaced by 2's.
 * [A316344](http://oeis.org/A316344) ([L31 program](316/A316344.asm)): An example of a word that is uniform morphic, but neither pure morphic, primitive morphic, nor recurrent.
@@ -1262,7 +1263,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A326125](http://oeis.org/A326125) ([L04 program](326/A326125.asm)): Expansion of Sum_{k>=1} k^2 * x^k / (1 + x^k)^2.
 * [A326128](http://oeis.org/A326128) ([L04 program](326/A326128.asm)): a(n) = n - A007913(n), where A007913 gives the squarefree part of n.
 * [A326178](http://oeis.org/A326178) ([L04 program](326/A326178.asm)): Number of subsets of {1..n} whose product is equal to their sum.
-* [A326186](http://oeis.org/A326186) ([L10 program](326/A326186.asm)): a(n) = n - A057521(n), where A057521 gives the powerful part of n.
+* [A326186](http://oeis.org/A326186) ([L04 program](326/A326186.asm)): a(n) = n - A057521(n), where A057521 gives the powerful part of n.
 * [A326194](http://oeis.org/A326194) ([L06 program](326/A326194.asm)): Number of iterations of x -> A009194(x) needed to reach a fixed point when starting from x = n, where A009194(x) = gcd(x, sigma(x)).
 * [A326195](http://oeis.org/A326195) ([L06 program](326/A326195.asm)): Number of iterations of x -> A009195(x) needed to reach 1 when starting from x = n, where A009195(x) = gcd(x, phi(x)).
 * [A326247](http://oeis.org/A326247) ([L10 program](326/A326247.asm)): Number of labeled n-vertex 2-edge multigraphs that are neither crossing nor nesting.
@@ -1997,3 +1998,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344372](http://oeis.org/A344372) ([L09 program](344/A344372.asm)): a(n) = Sum_{k=1..2n} (-1)^k gcd(k,2n).
 * [A344399](http://oeis.org/A344399) ([L08 program](344/A344399.asm)): a(n) = 4^n*binomial(n - 1/2, -1/2)*(n^2 + 1).
 * [A344483](http://oeis.org/A344483) ([L12 program](344/A344483.asm)): a(n) = n^2 + sigma(n) - n*d(n).
+* [A344526](http://oeis.org/A344526) ([L08 program](344/A344526.asm)): a(n) = Sum_{k=1..n} k^3 * phi(k).
