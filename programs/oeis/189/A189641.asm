@@ -3,7 +3,5 @@
 
 mov $1,$0
 cal $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
-add $1,2
 sub $1,$0
-sub $1,2
 div $1,2

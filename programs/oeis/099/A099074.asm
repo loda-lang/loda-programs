@@ -1,29 +1,13 @@
 ; A099074: Partial sums of A000960.
 ; 1,4,11,24,43,70,109,158,221,300,391,500,633,780,961,1168,1391,1644,1933,2240,2589,2976,3375,3834,4315,4844,5411,6024,6673,7382,8145,8952,9795,10722,11671,12680,13773,14884,16073,17334,18655,20014,21485,22968,24547
 
+mov $2,$0
+add $2,1
 mov $3,$0
-add $3,1
-mov $5,$0
-lpb $3
-  mov $0,$5
-  sub $3,1
-  sub $0,$3
-  mov $2,$0
-  mov $6,2
-  lpb $6
-    mov $0,$2
-    sub $0,1
-    max $0,0
-    sub $6,1
-    cal $0,73359 ; Nested floor product of n and fractions (2k+2)/(2k+1) for all k>=0, divided by 2.
-    mul $0,2
-    mov $4,$0
-  lpe
-  min $2,1
-  mul $2,$4
-  mov $4,$2
-  div $4,2
-  mul $4,2
-  add $4,1
-  add $1,$4
+lpb $2
+  mov $0,$3
+  sub $2,1
+  sub $0,$2
+  cal $0,960 ; Flavius Josephus's sieve: Start with the natural numbers; at the k-th sieving step, remove every (k+1)-st term of the sequence remaining after the (k-1)-st sieving step; iterate.
+  add $1,$0
 lpe

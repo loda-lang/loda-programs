@@ -8,7 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,102515 ; a(n) = floor(1 + sqrt(2n + 1)).
-  sub $0,1
+  cal $0,103128 ; a(n) = floor(sqrt(2n-1)).
   add $1,$0
 lpe
