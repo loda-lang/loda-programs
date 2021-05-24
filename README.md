@@ -119,21 +119,19 @@ Generate a random LODA program and print it. Multiple generators are supported a
 
 #### mine
 
-Mine programs for OEIS integer sequences. It generates programs in a loop and tries to match them to sequences. If a match was found, an alert is printed and the program is automatically saved to the [programs/oeis](programs/oeis) folder. By default, existing programs for sequences are not overwritten, but if you specify the `-x` option, programs are updated if they are faster. This refers to the number of execution steps needed to calculate the sequence. 
+Mine programs for OEIS integer sequences. It generates programs in a loop and tries to match them to sequences. If a match was found, an alert is printed and the program is automatically saved to the [programs/oeis](programs/oeis) folder. The miner configurations are defined in [loda.json](loda.json). Depending on the configuration, programs overwritten if they are faster. This refers to the number of execution steps needed to calculate the sequence. 
 
 LODA is single-threaded and therefore uses one CPU during mining. It supports multiple process instances for parallel mining. You can try the [mine_parallel.sh](mine_parallel.sh) script for this.
 
-You need an Internet connection to access the OEIS database to run this command. Downloaded files are cached in the `$HOME/.loda` folder.
-
-You can also configure a Twitter client to get notified when a match was found!
+You need an Internet connection to access the OEIS database to run this command. Downloaded files are cached in the `$HOME/.loda` folder. You can also configure a Twitter client to get notified when a match was found!
 
 #### match
 
-Match a program against the OEIS database. To overwrite existing programs, use the `-x` option.
+Match a program against the OEIS database. To overwrite existing programs, choose a corresponding miner configuration using the `-i` option.
 
 #### check
 
-Check if a program for an OEIS sequence is correct. For interactive output, use `-b 1` to enable b-file printing. Use `-c <integer>` to increase the maximum number of cycles if needed. 
+Check if a program for an OEIS sequence is correct. For interactive output, use `-b 1` to enable b-file printing. Use `-c -1` to allow an unlimited number of execution cycles.
 
 #### maintain
 
