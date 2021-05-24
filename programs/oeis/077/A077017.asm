@@ -4,8 +4,6 @@
 sub $0,1
 max $0,0
 cal $0,40 ; The prime numbers.
-sub $0,1
-div $0,2
+dif $0,2
 mov $1,$0
-mul $1,4
-add $1,2
+mul $1,2

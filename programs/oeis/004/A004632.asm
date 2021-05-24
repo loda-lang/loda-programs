@@ -3,8 +3,5 @@
 
 add $0,1
 pow $0,3
-cal $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
+cal $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
 mov $1,$0
-sub $1,10
-div $1,10
-add $1,1

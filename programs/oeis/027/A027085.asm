@@ -3,7 +3,5 @@
 
 mov $1,$0
 cal $0,27025 ; a(n) = T(n,n+3), T given by A027023.
-add $1,2
-add $0,$1
-mov $1,$0
-add $1,2
+add $1,$0
+add $1,4

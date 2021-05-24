@@ -3,10 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,285052 ; Number of idempotent equivalence classes for multiplication in Zn.
   sub $0,1
+  cal $2,285052 ; Number of idempotent equivalence classes for multiplication in Zn.
   add $1,$2
 lpe
-div $1,4
-mul $1,4
 add $1,1

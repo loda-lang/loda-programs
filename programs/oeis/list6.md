@@ -361,7 +361,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306556](http://oeis.org/A306556) ([L03 program](306/A306556.asm)): Integers that appear as (unreduced) numerators of segment endpoints when a ternary Cantor set is created.
 * [A306561](http://oeis.org/A306561) ([L04 program](306/A306561.asm)): Square numbers that are also central polygonal numbers (i.e., square numbers found in the Lazy Caterer's sequence).
 * [A306672](http://oeis.org/A306672) ([L04 program](306/A306672.asm)): Partial sums of the even Lucas numbers (A014448).
-* [A306683](http://oeis.org/A306683) ([L31 program](306/A306683.asm)): Integers k for which the base-phi representation of k does not include 1 or phi.
+* [A306683](http://oeis.org/A306683) ([L14 program](306/A306683.asm)): Integers k for which the base-phi representation of k does not include 1 or phi.
 * [A306694](http://oeis.org/A306694) ([L04 program](306/A306694.asm)): a(n) is the denominator of log(A014963(n))/log(n) if n > 1 and a(1) = 1.
 * [A306696](http://oeis.org/A306696) ([L11 program](306/A306696.asm)): Lexicographically earliest sequence of nonnegative terms such that for any n > 0 and k > 0, if a(n) >= a(n+k), then a(n+2*k) <> a(n+k).
 * [A306721](http://oeis.org/A306721) ([L08 program](306/A306721.asm)): a(n) = Sum_{k=0..n} binomial(k, 7*(n-k)).
@@ -911,7 +911,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317108](http://oeis.org/A317108) ([L03 program](317/A317108.asm)): Numbers missing from A317106.
 * [A317137](http://oeis.org/A317137) ([L08 program](317/A317137.asm)): a(n) is the number of nonzero triangular numbers <= n-th prime.
 * [A317186](http://oeis.org/A317186) ([L05 program](317/A317186.asm)): One of many square spiral sequences: a(n) = n^2 + n - floor((n-1)/2).
-* [A317189](http://oeis.org/A317189) ([L05 program](317/A317189.asm)): A morphic sequence related to the ternary Thue-Morse sequence.
+* [A317189](http://oeis.org/A317189) ([L18 program](317/A317189.asm)): A morphic sequence related to the ternary Thue-Morse sequence.
 * [A317200](http://oeis.org/A317200) ([L13 program](317/A317200.asm)): G.f.: -x*(2*x^3+2*x^2+x-2)/(x^4-2*x+1).
 * [A317297](http://oeis.org/A317297) ([L04 program](317/A317297.asm)): a(n) = (n - 1)*(4*n^2 - 8*n + 5).
 * [A317298](http://oeis.org/A317298) ([L06 program](317/A317298.asm)): a(n) = (1/2)*(1 + (-1)^n + 2*n + 4*n^2).
@@ -1213,7 +1213,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324560](http://oeis.org/A324560) ([L09 program](324/A324560.asm)): Numbers > 1 where the minimum prime index is less than or equal to the number of prime factors counted with multiplicity.
 * [A324580](http://oeis.org/A324580) ([L03 program](324/A324580.asm)): a(n) = n * A276086(n).
 * [A324600](http://oeis.org/A324600) ([L04 program](324/A324600.asm)): a(n) = (k(n)*(k(n) + 1))/2 with k = A018252 (nonprime numbers), for n >= 1.
-* [A324772](http://oeis.org/A324772) ([L18 program](324/A324772.asm)): The "Octanacci" sequence: Trajectory of 0 under the morphism 0->{0,1,0}, 1->{0}.
 * [A324902](http://oeis.org/A324902) ([L06 program](324/A324902.asm)): The 2-adic valuation of A318456(n), where A318456(n) = n OR (sigma(n)-n).
 * [A324903](http://oeis.org/A324903) ([L09 program](324/A324903.asm)): a(n) = 1 if A007814(sigma(n)) > A007814(n), 0 otherwise. Here A007814(n) gives the 2-adic valuation of n.
 * [A324904](http://oeis.org/A324904) ([L04 program](324/A324904.asm)): The 2-adic valuation of A318466(n), where A318466(n) = 2*n OR sigma(n).
@@ -1391,7 +1390,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329502](http://oeis.org/A329502) ([L05 program](329/A329502.asm)): G.f. = (1+x)*(1+2*x)/(1-x).
 * [A329503](http://oeis.org/A329503) ([L07 program](329/A329503.asm)): G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
 * [A329505](http://oeis.org/A329505) ([L08 program](329/A329505.asm)): Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
-* [A329506](http://oeis.org/A329506) ([L13 program](329/A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
+* [A329506](http://oeis.org/A329506) ([L19 program](329/A329506.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 - 2*x^3) / (1 - x).
 * [A329507](http://oeis.org/A329507) ([L29 program](329/A329507.asm)): Expansion of (1 + x)*(1 + 2*x + 2*x^2 + 2*x^3 - 3*x^4) / (1 - x).
 * [A329509](http://oeis.org/A329509) ([L09 program](329/A329509.asm)): Expansion of (1 + x)*(1 + x + x^2 - x^3) / (1 - x).
 * [A329510](http://oeis.org/A329510) ([L38 program](329/A329510.asm)): Expansion of (1 + x)*(1 + x + x^2)*(1 + x^2 - x^3) / (1 - x).
@@ -1854,6 +1853,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339771](http://oeis.org/A339771) ([L08 program](339/A339771.asm)): a(n) = Sum_{i=0..n} Sum_{j=0..n} 2^max(i,j).
 * [A339824](http://oeis.org/A339824) ([L04 program](339/A339824.asm)): Even bisection of the infinite Fibonacci word A003849.
 * [A339825](http://oeis.org/A339825) ([L04 program](339/A339825.asm)): Odd bisection of the infinite Fibonacci word A003849.
+* [A339904](http://oeis.org/A339904) ([L05 program](339/A339904.asm)): The odd part of {Euler totient function phi applied to the prime shifted n}: a(n) = A000265(A000010(A003961(n))).
 * [A339905](http://oeis.org/A339905) ([L03 program](339/A339905.asm)): Fully multiplicative with a(prime(k)) = prime(k+1) - 1.
 * [A339918](http://oeis.org/A339918) ([L19 program](339/A339918.asm)): a(n) = Sum_{k=1..n} floor(3*n/k).
 * [A339950](http://oeis.org/A339950) ([L04 program](339/A339950.asm)): Numbers k such that all k-sections of the infinite Fibonacci word A014675 have just two different run-lengths.
