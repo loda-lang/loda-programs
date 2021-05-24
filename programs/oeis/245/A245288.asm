@@ -11,13 +11,12 @@ lpb $8
   sub $0,1
   lpb $0
     sub $0,1
-    add $1,$0
+    add $2,$0
     sub $0,1
-    add $4,$1
+    add $1,$2
   lpe
-  mov $1,$4
   mov $9,$8
-  mul $9,$4
+  mul $9,$1
   add $7,$9
 lpe
 min $6,1

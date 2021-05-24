@@ -3,13 +3,5 @@
 
 mov $1,$0
 add $1,5
-mov $2,$0
-add $2,3
-lpb $2
-  trn $2,5
-  mov $3,3
-  trn $3,$2
-  sub $1,$3
-  trn $2,1
-lpe
-sub $1,1
+cal $1,131042 ; Natural numbers A000027 with 6n+3 and 6n+4 terms swapped.
+sub $1,5

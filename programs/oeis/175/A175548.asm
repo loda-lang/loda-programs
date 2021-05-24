@@ -4,6 +4,4 @@
 cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 cal $0,324467 ; Three times the binary weight of n: 3*A000120(n).
 mov $1,$0
-sub $1,3
 div $1,3
-add $1,1

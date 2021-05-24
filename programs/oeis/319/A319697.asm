@@ -16,7 +16,7 @@ lpb $10
     mov $0,$5
     sub $7,2
     sub $0,$7
-    cal $0,48250 ; Sum of squarefree divisors of n.
+    cal $0,48250 ; Sum of the squarefree divisors of n.
     add $6,$0
   lpe
   mov $1,$6

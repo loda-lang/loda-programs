@@ -1,8 +1,12 @@
 ; A050141: a(n) = 2*floor((n+1)*phi) - 2*floor(n*phi) - 1 where phi = (1 + sqrt(5))/2 is the golden ratio.
 ; 3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3
 
-add $0,1
-cal $0,114986 ; Characteristic function of (A000201 prefixed with 0).
+add $0,2
+cal $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
+sub $0,37
 mov $1,$0
+mod $1,2
+add $1,2
+mod $1,2
 mul $1,2
 add $1,1

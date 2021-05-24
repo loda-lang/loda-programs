@@ -8,31 +8,14 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
-  mov $7,$0
-  add $0,1
-  mul $0,2
-  mov $8,1
-  lpb $0
-    dif $0,2
-    mul $8,2
-  lpe
-  mov $0,$8
-  mod $0,3
-  mod $0,2
-  add $0,1
+  max $0,0
+  cal $0,309231 ; Column 3 of the array at A326662 see Comments.
   mov $2,$3
+  mul $2,$0
+  add $1,$2
   mov $4,$0
-  add $4,6
-  mov $6,$7
-  mul $6,9
-  add $4,$6
-  lpb $2
-    mov $1,$4
-    sub $2,1
-  lpe
 lpe
-lpb $5
-  sub $1,$4
-  mov $5,0
-lpe
+min $5,1
+mul $5,$4
+sub $1,$5
 sub $1,4
