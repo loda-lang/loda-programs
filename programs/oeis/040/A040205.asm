@@ -1,8 +1,6 @@
 ; A040205: Continued fraction for sqrt(220).
 ; 14,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1
 
-cal $0,40414 ; Continued fraction for sqrt(435).
+cal $0,40749 ; Continued fraction for sqrt(777).
+cal $0,140472 ; Chaotic sequence related to A004001: a(n) = a(n - a(n-1)) + a(floor(n/2)).
 mov $1,$0
-mul $1,11
-div $1,16
-add $1,1

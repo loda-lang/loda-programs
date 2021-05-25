@@ -7,11 +7,11 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  add $0,1
-  cal $0,40 ; The prime numbers.
+  max $0,0
+  cal $0,48974 ; Odd numbers that are the sum of 2 primes.
   mov $2,$3
   mov $4,$0
-  sub $4,2
+  sub $4,4
   mul $2,$4
   add $1,$2
 lpe
