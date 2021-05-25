@@ -4,6 +4,4 @@
 add $0,1
 cal $0,58482 ; Number of 3 X n binary matrices with no zero rows or columns.
 mov $1,$0
-sub $1,25
 div $1,24
-add $1,1

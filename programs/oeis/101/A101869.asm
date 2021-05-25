@@ -3,9 +3,5 @@
 
 add $0,1
 cal $0,188434 ; Positions of 0 in A188433; complement of A188435.
-cal $0,158393 ; 676n - 1.
+mul $0,2
 mov $1,$0
-sub $1,4055
-div $1,676
-mul $1,2
-add $1,10
