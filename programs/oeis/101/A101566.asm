@@ -3,5 +3,4 @@
 
 cal $0,25581 ; Triangle T(n, k) = n-k, 0 <= k <= n.
 cal $0,8643 ; Molien series for group of 4 X 4 upper triangular matrices over GF(2).
-mod $0,45
 mov $1,$0

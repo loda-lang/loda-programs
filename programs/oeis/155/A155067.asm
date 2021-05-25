@@ -7,9 +7,12 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
+  sub $0,1
   mul $0,2
+  add $0,2
   max $0,0
-  cal $0,140777 ; a(n) = 2*prime(n) - 4.
+  cal $0,40 ; The prime numbers.
+  sub $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2
@@ -18,6 +21,3 @@ lpe
 min $5,1
 mul $5,$4
 sub $1,$5
-sub $1,6
-div $1,2
-add $1,3
