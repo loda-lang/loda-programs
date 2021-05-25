@@ -1,10 +1,10 @@
 ; A105470: a(n)=1 if there is number of the form 6k+3 with prime(n) <= 6k+3 <= prime(n+1), otherwise 0.
 ; 1,1,0,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1
 
-lpb $0
-  add $2,812
-  mul $0,$2
-  sub $0,$2
-lpe
-cal $0,100810 ; a(n) = 0 if prime(n) + 2 = prime(n+1), otherwise 1.
+cal $0,40 ; The prime numbers.
+add $0,1
+max $0,5
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $1,$0
+add $1,1
+mod $1,2

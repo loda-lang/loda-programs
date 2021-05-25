@@ -1,7 +1,8 @@
 ; A040504: Continued fraction for sqrt(527).
 ; 22,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21,1,44,1,21
 
-cal $0,40270 ; Continued fraction for sqrt(287).
-cal $0,72668 ; Numbers one less than composite numbers.
+cal $0,40700 ; Continued fraction for sqrt(727).
+mul $0,40
+div $0,48
 mov $1,$0
-sub $1,4
+add $1,1
