@@ -135,7 +135,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302647](http://oeis.org/A302647) ([L08 program](302/A302647.asm)): a(n) = (2*n^2*(n^2 - 3) - (2*n^2 + 1)*(-1)^n + 1)/64.
 * [A302650](http://oeis.org/A302650) ([L06 program](302/A302650.asm)): Number of minimal total dominating sets in the n-barbell graph.
 * [A302689](http://oeis.org/A302689) ([L05 program](302/A302689.asm)): a(n) = 4 + 2^n - 4*n.
-* [A302707](http://oeis.org/A302707) ([L06 program](302/A302707.asm)): Number of factors of Chebyshev polynomial S(2*n+1, x) (A049310) over the integers. Factorization is into the minimal integer polynomials C (A187360).
+* [A302707](http://oeis.org/A302707) ([L04 program](302/A302707.asm)): Number of factors of Chebyshev polynomial S(2*n+1, x) (A049310) over the integers. Factorization is into the minimal integer polynomials C (A187360).
 * [A302709](http://oeis.org/A302709) ([L10 program](302/A302709.asm)): a(n) = Trinomial(2*n+1, 4) = (1/6)*n*(2*n + 1)*(2*n^2 + 9*n + 1), n >= 0.
 * [A302710](http://oeis.org/A302710) ([L28 program](302/A302710.asm)): a(n) = trinomial(2*n, 4) = (1/6)*n*(2*n - 1)*(2*n^2 + 7*n - 3).
 * [A302748](http://oeis.org/A302748) ([L09 program](302/A302748.asm)): Half thrice the previous number, rounded down, plus 1, starting with 6.
@@ -390,7 +390,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307395](http://oeis.org/A307395) ([L11 program](307/A307395.asm)): Expansion of 1/((1 - x) * ((1 - x)^3 + x^3)).
 * [A307421](http://oeis.org/A307421) ([L04 program](307/A307421.asm)): Dirichlet g.f.: zeta(s) * zeta(3*s) / zeta(2*s).
 * [A307424](http://oeis.org/A307424) ([L08 program](307/A307424.asm)): Dirichlet g.f.: zeta(3*s) / zeta(2*s).
-* [A307430](http://oeis.org/A307430) ([L04 program](307/A307430.asm)): Dirichlet g.f.: zeta(s) / zeta(4*s).
+* [A307430](http://oeis.org/A307430) ([L05 program](307/A307430.asm)): Dirichlet g.f.: zeta(s) / zeta(4*s).
 * [A307465](http://oeis.org/A307465) ([L05 program](307/A307465.asm)): Number of Catalan words of length n avoiding the pattern 110.
 * [A307469](http://oeis.org/A307469) ([L14 program](307/A307469.asm)): a(n) = 2*a(n-1) + 6*a(n-2) for n >= 2, a(0) = 1, a(1) = 5.
 * [A307485](http://oeis.org/A307485) ([L09 program](307/A307485.asm)): A permutation of the nonnegative integers: one odd, two even, four odd, eight even, etc.; extended to nonnegative integer with a(0) = 0.
@@ -873,7 +873,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316316](http://oeis.org/A316316) ([L17 program](316/A316316.asm)): Coordination sequence for tetravalent node in chamfered version of square grid.
 * [A316319](http://oeis.org/A316319) ([L30 program](316/A316319.asm)): Coordination sequence for a trivalent node in a chamfered version of the 3^6 triangular tiling of the plane.
 * [A316320](http://oeis.org/A316320) ([L11 program](316/A316320.asm)): Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
-* [A316341](http://oeis.org/A316341) ([L21 program](316/A316341.asm)): Characteristic function of the factorials 1!, 2!, 3!, ...
+* [A316341](http://oeis.org/A316341) ([L17 program](316/A316341.asm)): Characteristic function of the factorials 1!, 2!, 3!, ...
 * [A316342](http://oeis.org/A316342) ([L12 program](316/A316342.asm)): Fibonacci word A003849 with first two terms replaced by 2's.
 * [A316344](http://oeis.org/A316344) ([L31 program](316/A316344.asm)): An example of a word that is uniform morphic, but neither pure morphic, primitive morphic, nor recurrent.
 * [A316355](http://oeis.org/A316355) ([L08 program](316/A316355.asm)): 2k-1 appears 2k times after 2k-2 appears once.
@@ -1760,7 +1760,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337519](http://oeis.org/A337519) ([L08 program](337/A337519.asm)): Length of the shortest walk in a n X n grid graph that starts in one corner and visits every edge.
 * [A337524](http://oeis.org/A337524) ([L04 program](337/A337524.asm)): a(n) = d(n) * (d(n) - 1), where d is the number of divisors of n (A000005).
 * [A337549](http://oeis.org/A337549) ([L04 program](337/A337549.asm)): a(n) = A003972(n) - n.
-* [A337566](http://oeis.org/A337566) ([L08 program](337/A337566.asm)): a(n) is the number of possible decompositions of the polynomial n * (x + x^2 + ... + x^q), where q>1, into a sum of k polynomials, not necessarily all different; each of these polynomials is to be of the form b_1 * x + b_2 * x^2 + ... + b_q * x^q where each b_i is one of the numbers 1, 2, 3, ..., q and no two b_i are equal.
+* [A337566](http://oeis.org/A337566) ([L06 program](337/A337566.asm)): a(n) is the number of possible decompositions of the polynomial n * (x + x^2 + ... + x^q), where q>1, into a sum of k polynomials, not necessarily all different; each of these polynomials is to be of the form b_1 * x + b_2 * x^2 + ... + b_q * x^q where each b_i is one of the numbers 1, 2, 3, ..., q and no two b_i are equal.
 * [A337623](http://oeis.org/A337623) ([L11 program](337/A337623.asm)): a(n) is the least positive multiple of 2*n-1 containing only the digits 0 and 1 in base n.
 * [A337624](http://oeis.org/A337624) ([L22 program](337/A337624.asm)): a(n) is the least positive integer in base n that when multiplied by 2n-1 will contain only the digits 0 and 1.
 * [A337631](http://oeis.org/A337631) ([L07 program](337/A337631.asm)): a(n) is the sum of the squares of diameters of all nonempty subsets of {1,2,...,n}.
@@ -1967,7 +1967,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A342676](http://oeis.org/A342676) ([L03 program](342/A342676.asm)): a(n) is the number of lunar primes less than or equal to n.
 * [A342710](http://oeis.org/A342710) ([L04 program](342/A342710.asm)): Solutions x to the Pell-Fermat equation x^2 - 5*y^2 = 4.
 * [A342711](http://oeis.org/A342711) ([L07 program](342/A342711.asm)): Partial sums of A000267.
-* [A342712](http://oeis.org/A342712) ([L07 program](342/A342712.asm)): Partial sums of A248333.
+* [A342712](http://oeis.org/A342712) ([L11 program](342/A342712.asm)): Partial sums of A248333.
 * [A342737](http://oeis.org/A342737) ([L08 program](342/A342737.asm)): Number of wedged n-spheres in the homotopy type of the neighborhood complex of Kneser graph KG_{3,n}.
 * [A342761](http://oeis.org/A342761) ([L19 program](342/A342761.asm)): Fold a square sheet of paper alternately vertically to the left and horizontally downwards; after each fold, draw a line along each inward crease; after n folds, the resulting graph has a(n) edges.
 * [A342768](http://oeis.org/A342768) ([L09 program](342/A342768.asm)): a(n) = A342767(n, n).

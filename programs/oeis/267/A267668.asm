@@ -1,7 +1,8 @@
 ; A267668: Number of 3Xn 0..1 arrays with every repeated value in every row unequal to the previous repeated value, and in every column equal to the previous repeated value, and new values introduced in row-major sequential order.
 ; 4,32,108,500,1372,5324,13500,48668,119164,415292,1000188,3429500,8193532,27871484,66325500,224727548,533731324,1804870652,4282396668,14467221500,34309431292,115850907644,274676629500,927260024828,2198218047484,7419891695612,17588965015548,59366380437500,140724603846652,474960032759804,1125848368021500,3799796222656508,9006993097883644
 
-cal $0,52955 ; a(2n) = 2*2^n - 1, a(2n+1) = 3*2^n - 1.
-pow $0,3
 mov $1,$0
+cal $1,209721 ; 1/4 the number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
+sub $1,2
+pow $1,3
 mul $1,4
