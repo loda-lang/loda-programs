@@ -3,9 +3,8 @@
 
 add $0,2
 cal $0,168565 ; Let p = prime(n); then a(n) = p + (p-1)/2.
-add $1,$0
-add $1,$0
-sub $1,9
-div $1,6
+mov $1,$0
+sub $1,10
+div $1,3
 mul $1,2
-sub $1,1
+add $1,1

@@ -11,12 +11,10 @@ lpb $3
   max $0,0
   cal $0,29085 ; Expansion of 1/((1-x)(1-x^5)(1-x^6)(1-x^7)).
   mov $2,$3
-  mov $4,$0
-  mul $4,3
-  mul $2,$4
+  mul $2,$0
   add $1,$2
+  mov $4,$0
 lpe
 min $5,1
 mul $5,$4
 sub $1,$5
-div $1,3

@@ -1578,6 +1578,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332288](http://oeis.org/A332288) ([L23 program](332/A332288.asm)): Number of unimodal permutations of the multiset of prime indices of n.
 * [A332410](http://oeis.org/A332410) ([L06 program](332/A332410.asm)): a(n) = 2*a(n-1) - a(n-2) + a(n-5) - 2*a(n-6) + a(n-7) with a(0)=0, a(1)=1, a(2)=3, a(3)=6, a(4)=11, a(5)=17, a(6)=24.
 * [A332420](http://oeis.org/A332420) ([L09 program](332/A332420.asm)): Number of Maclaurin polynomials of sin x having exactly n positive zeros.
+* [A332442](http://oeis.org/A332442) ([L03 program](332/A332442.asm)): Triangle read by rows, T(n,k) is the number of regular triangles of length k (in some length unit), for k from {1, 2, ... , n}, in a matchstick arrangement with enclosing triangle of length n, but only triangles with orientation opposite to the enclosing triangle are counted.
 * [A332459](http://oeis.org/A332459) ([L05 program](332/A332459.asm)): Odd part of 1+sigma(n).
 * [A332464](http://oeis.org/A332464) ([L03 program](332/A332464.asm)): Rule 124 one-dimensional cellular automaton applied for one step to the configuration read from the base-2 expansion of sigma(n), then converted back to decimal.
 * [A332490](http://oeis.org/A332490) ([L09 program](332/A332490.asm)): a(n) = Sum_{k=1..n} k * ceiling(n/k).
@@ -1698,11 +1699,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336278](http://oeis.org/A336278) ([L07 program](336/A336278.asm)): a(n) = Sum_{k=1..n} mu(k)*k^4.
 * [A336288](http://oeis.org/A336288) ([L07 program](336/A336288.asm)): Numbers of squares formed by this procedure on n-th step: Step 1, draw a unit square. Step n, draw a unit square with center in every intersection of lines of the figure in step n-1.
 * [A336409](http://oeis.org/A336409) ([L05 program](336/A336409.asm)): Distance from prime(n) to the nearest odd composite that is < prime(n).
+* [A336457](http://oeis.org/A336457) ([L06 program](336/A336457.asm)): a(n) = A065330(sigma(n)), where A065330 is fully multiplicative with a(2) = a(3) = 1, and a(p) = p for primes p > 3.
 * [A336466](http://oeis.org/A336466) ([L05 program](336/A336466.asm)): Fully multiplicative with a(p) = A000265(p-1) for any prime p, where A000265(k) gives the odd part of k.
 * [A336477](http://oeis.org/A336477) ([L03 program](336/A336477.asm)): a(n) = 1 if a regular n-gon is constructible with ruler (or, more precisely, an unmarked straightedge) and compass, 0 otherwise.
 * [A336529](http://oeis.org/A336529) ([L41 program](336/A336529.asm)): a(n) = (n^3+5*n+3)/3 + 2*floor(n/2) + a(n-2), with a(0)=1 and a(1)=3.
 * [A336535](http://oeis.org/A336535) ([L06 program](336/A336535.asm)): a(n) = (m(n)^2 + 3)*(m(n)^2 + 7)/32, where m(n) = 2*n - 1.
 * [A336551](http://oeis.org/A336551) ([L03 program](336/A336551.asm)): a(n) = A003557(n) - 1.
+* [A336567](http://oeis.org/A336567) ([L03 program](336/A336567.asm)): Sum of proper divisors of {n divided by its largest squarefree divisor}.
 * [A336627](http://oeis.org/A336627) ([L40 program](336/A336627.asm)): Coordination sequence for the Manhattan lattice.
 * [A336642](http://oeis.org/A336642) ([L03 program](336/A336642.asm)): One less than the largest square dividing n: a(n) = A008833(n)-1.
 * [A336643](http://oeis.org/A336643) ([L03 program](336/A336643.asm)): Squarefree kernel of n divided by the squarefree part of n: a(n) = rad(n) / core(n).
@@ -2008,3 +2011,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344399](http://oeis.org/A344399) ([L08 program](344/A344399.asm)): a(n) = 4^n*binomial(n - 1/2, -1/2)*(n^2 + 1).
 * [A344483](http://oeis.org/A344483) ([L12 program](344/A344483.asm)): a(n) = n^2 + sigma(n) - n*d(n).
 * [A344526](http://oeis.org/A344526) ([L08 program](344/A344526.asm)): a(n) = Sum_{k=1..n} k^3 * phi(k).
+* [A344622](http://oeis.org/A344622) ([L14 program](344/A344622.asm)): a(n) = n(n+1)/2 - sigma(n) + d(n).

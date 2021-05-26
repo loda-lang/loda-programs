@@ -16,8 +16,8 @@ lpb $32
     mov $0,$27
     sub $29,1
     sub $0,$29
-    add $0,6
-    cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+    add $0,2
+    cal $0,20701 ; Pisot sequences E(3,5), P(3,5).
     add $28,$0
   lpe
   add $31,$28

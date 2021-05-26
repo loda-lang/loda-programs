@@ -3,11 +3,15 @@
 
 mov $2,$0
 add $2,1
-mov $3,$0
+mov $4,$0
 lpb $2
-  mov $0,$3
+  mov $0,$4
   sub $2,1
   sub $0,$2
+  mov $3,$0
+  cmp $3,0
+  add $0,$3
   cal $0,33677 ; Smallest divisor of n >= sqrt(n).
   add $1,$0
 lpe
+sub $1,1

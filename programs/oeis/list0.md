@@ -1005,7 +1005,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006002](http://oeis.org/A006002) ([L04 program](006/A006002.asm)): a(n) = n*(n+1)^2/2.
 * [A006003](http://oeis.org/A006003) ([L04 program](006/A006003.asm)): a(n) = n*(n^2 + 1)/2.
 * [A006004](http://oeis.org/A006004) ([L06 program](006/A006004.asm)): a(n) = C(n+2,3) + C(n,3) + C(n-1,3).
-* [A006005](http://oeis.org/A006005) ([L03 program](006/A006005.asm)): The odd prime numbers together with 1.
+* [A006005](http://oeis.org/A006005) ([L04 program](006/A006005.asm)): The odd prime numbers together with 1.
 * [A006007](http://oeis.org/A006007) ([L06 program](006/A006007.asm)): 4-dimensional analog of centered polygonal numbers: a(n) = n(n+1)*(n^2+n+4)/12.
 * [A006008](http://oeis.org/A006008) ([L05 program](006/A006008.asm)): Number of inequivalent ways to color vertices of a regular tetrahedron using <= n colors.
 * [A006009](http://oeis.org/A006009) ([L09 program](006/A006009.asm)): Number of paraffins.
@@ -3049,7 +3049,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A023022](http://oeis.org/A023022) ([L04 program](023/A023022.asm)): Number of partitions of n into two relatively prime parts. After initial term, this is the "half-totient" function phi(n)/2 (A000010(n)/2).
 * [A023054](http://oeis.org/A023054) ([L17 program](023/A023054.asm)): Simon Plouffe's conjectured extension of sequence A008368.
 * [A023105](http://oeis.org/A023105) ([L05 program](023/A023105.asm)): Number of distinct quadratic residues mod 2^n.
-* [A023416](http://oeis.org/A023416) ([L45 program](023/A023416.asm)): Number of 0's in binary expansion of n.
+* [A023416](http://oeis.org/A023416) ([L10 program](023/A023416.asm)): Number of 0's in binary expansion of n.
 * [A023434](http://oeis.org/A023434) ([L04 program](023/A023434.asm)): Dying rabbits: a(n) = a(n-1) + a(n-2) - a(n-4).
 * [A023435](http://oeis.org/A023435) ([L05 program](023/A023435.asm)): Dying rabbits: a(n) = a(n-1) + a(n-2) - a(n-5).
 * [A023443](http://oeis.org/A023443) ([L02 program](023/A023443.asm)): a(n) = n - 1.
@@ -3286,9 +3286,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024630](http://oeis.org/A024630) ([L08 program](024/A024630.asm)): n written in fractional base 4/2.
 * [A024646](http://oeis.org/A024646) ([L06 program](024/A024646.asm)): n written in fractional base 8/4.
 * [A024675](http://oeis.org/A024675) ([L04 program](024/A024675.asm)): Average of two consecutive odd primes.
+* [A024676](http://oeis.org/A024676) ([L04 program](024/A024676.asm)): Prime divisors (not necessarily distinct) of n-th term of sequence A024675 (averages of two consecutive odd primes).
 * [A024678](http://oeis.org/A024678) ([L04 program](024/A024678.asm)): a(n) is the position of (prime(n+1) + prime(n+2))/2 in the ordered nonprimes.
 * [A024698](http://oeis.org/A024698) ([L05 program](024/A024698.asm)): a(n) = (prime(n+1) - 1)/4 if this is an integer or (prime(n+1) + 1)/4 otherwise.
-* [A024699](http://oeis.org/A024699) ([L05 program](024/A024699.asm)): a(n) = (prime(n+2)-1)/6 if this is an integer or (prime(n+2)+ 1)/6 otherwise.
+* [A024699](http://oeis.org/A024699) ([L07 program](024/A024699.asm)): a(n) = (prime(n+2)-1)/6 if this is an integer or (prime(n+2)+ 1)/6 otherwise.
 * [A024700](http://oeis.org/A024700) ([L07 program](024/A024700.asm)): a(n) = (prime(n+2)^2 - 1)/3.
 * [A024701](http://oeis.org/A024701) ([L05 program](024/A024701.asm)): a(n) = (-1 + prime(n+1)^2)/4.
 * [A024702](http://oeis.org/A024702) ([L06 program](024/A024702.asm)): a(n) = (prime(n)^2 - 1)/24.
@@ -3420,7 +3421,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025785](http://oeis.org/A025785) ([L29 program](025/A025785.asm)): Expansion of 1/((1-x)(1-x^7)(1-x^9)).
 * [A025786](http://oeis.org/A025786) ([L27 program](025/A025786.asm)): Expansion of 1/((1-x)(1-x^7)(1-x^10)).
 * [A025789](http://oeis.org/A025789) ([L22 program](025/A025789.asm)): Expansion of 1/((1-x)(1-x^8)(1-x^9)).
-* [A025791](http://oeis.org/A025791) ([L31 program](025/A025791.asm)): Expansion of 1/((1-x)(1-x^9)(1-x^10)).
+* [A025791](http://oeis.org/A025791) ([L23 program](025/A025791.asm)): Expansion of 1/((1-x)(1-x^9)(1-x^10)).
 * [A025793](http://oeis.org/A025793) ([L17 program](025/A025793.asm)): Expansion of 1/((1-x)(1-x^10)(1-x^11)).
 * [A025794](http://oeis.org/A025794) ([L25 program](025/A025794.asm)): Expansion of 1/((1-x)(1-x^11)(1-x^12)).
 * [A025795](http://oeis.org/A025795) ([L11 program](025/A025795.asm)): Expansion of 1/((1-x^2)*(1-x^3)*(1-x^5)).
@@ -3921,7 +3922,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A029837](http://oeis.org/A029837) ([L04 program](029/A029837.asm)): Binary order of n: log_2(n) rounded up to next integer.
 * [A029848](http://oeis.org/A029848) ([L09 program](029/A029848.asm)): a(n) = 1 + C(2*n,n) + C(3*n,n).
 * [A029858](http://oeis.org/A029858) ([L04 program](029/A029858.asm)): a(n) = (3^n - 3)/2.
-* [A029883](http://oeis.org/A029883) ([L30 program](029/A029883.asm)): First differences of Thue-Morse sequence A001285.
+* [A029883](http://oeis.org/A029883) ([L03 program](029/A029883.asm)): First differences of Thue-Morse sequence A001285.
 * [A029898](http://oeis.org/A029898) ([L04 program](029/A029898.asm)): Pitoun's sequence: a(n+1) is digital root of a(0) + ... + a(n).
 * [A029903](http://oeis.org/A029903) ([L45 program](029/A029903.asm)): p(n), where exists one-parameter family of strategic partitions (k+p(n)+q(n), k+q(n), r(n)) for k = 0,1,2,... in Chomp.
 * [A029905](http://oeis.org/A029905) ([L46 program](029/A029905.asm)): r(n), where exists one-parameter family of strategic partitions (k+p(n)+q(n), k+q(n), r(n)) for k = 0,1,2,... in Chomp.
@@ -4471,6 +4472,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A035336](http://oeis.org/A035336) ([L06 program](035/A035336.asm)): a(n) = 2*floor(n*phi) + n - 1, where phi = (1+sqrt(5))/2.
 * [A035337](http://oeis.org/A035337) ([L03 program](035/A035337.asm)): Third column of Wythoff array.
 * [A035338](http://oeis.org/A035338) ([L43 program](035/A035338.asm)): 4th column of Wythoff array.
+* [A035339](http://oeis.org/A035339) ([L03 program](035/A035339.asm)): 5th column of Wythoff array.
 * [A035344](http://oeis.org/A035344) ([L08 program](035/A035344.asm)): Expansion of 1/((1 - x)*(1 - 4*x + 2 * x^2)).
 * [A035471](http://oeis.org/A035471) ([L10 program](035/A035471.asm)): Coordination sequence for lattice D*_4 (with edges defined by l_1 norm = 1).
 * [A035472](http://oeis.org/A035472) ([L24 program](035/A035472.asm)): Coordination sequence for lattice D*_6 (with edges defined by l_1 norm = 1).
@@ -4559,7 +4561,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036564](http://oeis.org/A036564) ([L10 program](036/A036564.asm)): a(n) = 2^n - 45 with n>5, a(5)=1.
 * [A036572](http://oeis.org/A036572) ([L05 program](036/A036572.asm)): Number of tetrahedra in largest triangulation of polygonal prism with regular polygonal base.
 * [A036573](http://oeis.org/A036573) ([L05 program](036/A036573.asm)): Size of maximal triangulation of an n-antiprism with regular polygonal base.
-* [A036577](http://oeis.org/A036577) ([L16 program](036/A036577.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+* [A036577](http://oeis.org/A036577) ([L03 program](036/A036577.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036578](http://oeis.org/A036578) ([L03 program](036/A036578.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036579](http://oeis.org/A036579) ([L08 program](036/A036579.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036580](http://oeis.org/A036580) ([L16 program](036/A036580.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
@@ -4567,7 +4569,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036582](http://oeis.org/A036582) ([L05 program](036/A036582.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036583](http://oeis.org/A036583) ([L05 program](036/A036583.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036584](http://oeis.org/A036584) ([L06 program](036/A036584.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-* [A036585](http://oeis.org/A036585) ([L17 program](036/A036585.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+* [A036585](http://oeis.org/A036585) ([L03 program](036/A036585.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036586](http://oeis.org/A036586) ([L05 program](036/A036586.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036605](http://oeis.org/A036605) ([L08 program](036/A036605.asm)): a(n) = a(n-2) + 2*a(n-3) + a(n-4).
 * [A036659](http://oeis.org/A036659) ([L08 program](036/A036659.asm)): Product of n with sum of next n consecutive integers.

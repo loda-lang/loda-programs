@@ -1,10 +1,7 @@
 ; A187791: Repeat n+1 times 2^A005187(n).
 ; 1,2,2,8,8,8,16,16,16,16,128,128,128,128,128,256,256,256,256,256,256,1024,1024,1024,1024,1024,1024,1024,2048,2048,2048,2048,2048,2048,2048,2048,32768,32768,32768,32768,32768,32768,32768,32768,32768,65536,65536,65536,65536,65536,65536,65536,65536,65536,65536
 
-cal $0,111650 ; 2n appears n times (n>0).
-sub $0,1
-cal $0,86117 ; Denominator of mean deviation of a symmetrical binomial distribution on n elements.
+cal $0,3056 ; n appears n+1 times. Also the array A(n,k) = n+k (n >= 0, k >= 0) read by antidiagonals. Also inverse of triangular numbers.
+cal $0,101926 ; a(n) = 2^A101925(n).
 mov $1,$0
-sub $1,2
 div $1,2
-add $1,1

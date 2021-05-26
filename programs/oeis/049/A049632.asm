@@ -3,8 +3,7 @@
 
 cal $0,206297 ; Position of n in the canonical bijection from the positive integers to the positive rational numbers.
 lpb $0
-  pow $0,2
-  div $0,2
+  div $0,-2
 lpe
 mov $1,$0
 add $1,1
