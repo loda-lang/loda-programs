@@ -3,7 +3,7 @@
 
 sub $0,1
 max $0,0
-cal $0,40 ; The prime numbers.
-dif $0,2
+cal $0,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
 mov $1,$0
+div $1,4
 mul $1,2

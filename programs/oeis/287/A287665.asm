@@ -8,16 +8,13 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  mov $3,$0
-  sub $3,$0
-  mov $5,$3
-  cmp $5,0
-  add $3,$5
-  sub $0,$3
+  sub $0,1
   max $0,0
   cal $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+  mul $0,6
   mov $3,$0
-  sub $3,1
+  sub $3,6
+  div $3,6
   mul $3,3
   add $3,1
   add $1,$3

@@ -4,5 +4,4 @@
 mul $0,2
 cal $0,188026 ; Positions of 0 in the zero-one sequence given by z(n)=[nr]-[nr-8r]-[8r], where r=(1+sqrt(5))/2, [ ]=floor, n>=1.
 mov $1,$0
-mul $1,7
-div $1,14
+div $1,2

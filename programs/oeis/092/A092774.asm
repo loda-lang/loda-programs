@@ -4,8 +4,5 @@
 cal $0,40 ; The prime numbers.
 cal $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
 pow $0,2
-add $1,$0
-sub $1,9
-div $1,8
-mul $1,8
-add $1,10
+mov $1,$0
+add $1,1
