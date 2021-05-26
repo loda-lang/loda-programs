@@ -8,8 +8,13 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
-  max $0,0
-  cal $0,81477 ; Complement of A086377.
+  add $6,1
+  lpb $6
+    add $0,1
+    max $0,0
+    sub $6,1
+    cal $0,49473 ; Nearest integer to n/sqrt(2).
+  lpe
   mov $2,$3
   mul $2,$0
   add $1,$2
@@ -18,5 +23,6 @@ lpe
 min $5,1
 mul $5,$4
 sub $1,$5
+add $1,3
 mod $1,2
 add $1,1

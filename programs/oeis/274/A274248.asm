@@ -13,21 +13,15 @@ lpb $32
   mov $29,$0
   add $29,1
   lpb $29
-    clr $0,27
     mov $0,$27
     sub $29,1
     sub $0,$29
-    add $1,$0
-    add $0,$1
-    add $0,$1
-    div $1,2
+    mul $0,2
+    cal $0,47392 ; Numbers that are congruent to {0, 1, 3, 5} mod 7.
     mov $26,$0
     cmp $26,0
     add $0,$26
-    add $2,$0
-    mov $5,$1
-    add $5,$2
-    add $28,$5
+    add $28,$0
   lpe
   add $31,$28
 lpe
