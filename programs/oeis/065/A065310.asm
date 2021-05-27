@@ -9,7 +9,8 @@ lpb $4
   add $0,$4
   sub $0,1
   max $0,0
-  cal $0,72668 ; Numbers one less than composite numbers.
+  cal $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
+  sub $0,1
   mov $3,$0
   mov $5,$4
   mul $5,$0

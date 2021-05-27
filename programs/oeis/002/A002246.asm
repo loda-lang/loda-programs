@@ -8,8 +8,8 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,326354 ; a(n) is the number of fractions reduced to lowest terms with numerator and denominator less than or equal to n in absolute value.
-  mul $0,2
+  cal $0,140466 ; a(n) = 4*A002088(n).
+  sub $0,1
   mov $2,$3
   mul $2,$0
   add $1,$2
@@ -18,6 +18,3 @@ lpe
 min $5,1
 mul $5,$4
 sub $1,$5
-sub $1,6
-div $1,2
-add $1,3

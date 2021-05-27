@@ -2,7 +2,7 @@
 ; 2,2,0,2,0,0,-4,2,0,0,-4,0,-4,-4,-12,2,0,0,-4,0,-4,-4,-12,0,-4,-4,-12,-4,-12,-12,-28,2,0,0,-4,0,-4,-4,-12,0,-4,-4,-12,-4,-12,-12,-28,0,-4,-4,-12,-4,-12,-12,-28,-4,-12,-12,-28,-12,-28,-28,-60,2,0,0,-4,0,-4,-4,-12
 
 add $0,1
-cal $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); 2^A000120(n).
+cal $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
 mov $1,6
 sub $1,$0
 sub $1,2
