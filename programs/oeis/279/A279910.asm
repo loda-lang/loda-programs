@@ -3,14 +3,12 @@
 
 mov $2,$0
 mov $4,$0
-lpb $2
-  mov $0,$4
-  sub $2,1
-  sub $0,$2
+lpb $4
+  mov $0,$2
+  sub $4,1
+  sub $0,$4
   cal $0,100030 ; Bisection of A008472.
-  mul $0,2
   mov $3,$0
-  sub $3,4
+  sub $3,2
   add $1,$3
 lpe
-div $1,2

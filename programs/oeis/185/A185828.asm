@@ -3,11 +3,6 @@
 
 mul $0,2
 add $0,1
-mov $2,-37
 cal $0,7040 ; Number of (marked) cyclic n-bit binary strings containing no runs of length > 2.
-sub $2,$0
-sub $0,$2
 mov $1,$0
-sub $1,41
-div $1,4
-add $1,1
+div $1,2

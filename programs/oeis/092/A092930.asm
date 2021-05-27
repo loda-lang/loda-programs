@@ -7,19 +7,14 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  trn $0,1
-  mov $4,$0
-  cal $0,72668 ; Numbers one less than composite numbers.
+  sub $0,1
+  max $0,0
+  cal $0,71228 ; a(n) = n*(n-th composite number).
   mov $2,$3
-  add $4,1
-  mul $4,$0
-  lpb $2
-    mov $1,$4
-    sub $2,1
-  lpe
+  mul $2,$0
+  add $1,$2
+  mov $4,$0
 lpe
-lpb $5
-  sub $1,$4
-  mov $5,0
-lpe
-add $1,1
+min $5,1
+mul $5,$4
+sub $1,$5

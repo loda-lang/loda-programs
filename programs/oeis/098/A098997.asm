@@ -3,9 +3,4 @@
 
 cal $0,40 ; The prime numbers.
 cal $0,538 ; Sum of fourth powers: 0^4 + 1^4 + ... + n^4.
-lpb $0
-  sub $0,1
-  mov $1,$0
-  mov $0,$2
-lpe
-add $1,1
+mov $1,$0

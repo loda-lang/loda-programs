@@ -9,10 +9,9 @@ lpb $3
   add $0,$3
   sub $0,1
   mul $0,2
-  add $0,2
   max $0,0
-  cal $0,40 ; The prime numbers.
-  sub $0,2
+  cal $0,173064 ; a(n) = prime(n) - 5.
+  add $0,3
   mov $2,$3
   mul $2,$0
   add $1,$2

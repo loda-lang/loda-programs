@@ -3,10 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,59727 ; a(n) = Fibonacci(n)*(Fibonacci(n) + 1).
   sub $0,1
+  cal $2,33192 ; a(n) = binomial(Fibonacci(n) + 1, 2).
   add $1,$2
 lpe
-div $1,2
 mul $1,2
 add $1,1

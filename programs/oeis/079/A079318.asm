@@ -5,6 +5,5 @@ sub $0,1
 max $0,0
 cal $0,147610 ; a(n) = 3^(wt(n-1)-1), where wt() = A000120().
 mov $1,$0
-mul $1,402
-div $1,804
+div $1,2
 add $1,1

@@ -1,7 +1,10 @@
 ; A116845: Number of permutations of length n which avoid the patterns 231, 12534.
 ; 1,2,5,14,41,121,355,1032,2973,8496,24111,68017,190885,533294,1484021,4115186,11375765,31358377,86223943,236540916,647556621,1769374932,4826148315,13142564449,35736448201,97037995226,263156279525,712795854422,1928547574913,5212430732761,14074179919531,37966831051872,102331044018045,275583771322104,741587950125831,1994125649268241,5358458028139885
 
-cal $0,279735 ; Number of n X 2 0..1 arrays with no element equal to a strict majority of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
-div $0,2
-add $0,1
-mov $1,$0
+lpb $0
+  mov $2,$0
+  cal $2,59502 ; a(n) = (3*n*F(2n-1) + (3-n)*F(2n))/5 where F() = Fibonacci numbers A000045.
+  sub $0,1
+  add $1,$2
+lpe
+add $1,1
