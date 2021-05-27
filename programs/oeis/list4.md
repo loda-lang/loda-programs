@@ -776,6 +776,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213436](http://oeis.org/A213436) ([L52 program](213/A213436.asm)): Principal diagonal of the convolution array A212891.
 * [A213443](http://oeis.org/A213443) ([L08 program](213/A213443.asm)): a(0)=5, thereafter a(n) = chromatic number (or Heawood number) Chi(n) of surface of genus n.
 * [A213472](http://oeis.org/A213472) ([L06 program](213/A213472.asm)): Period 20, repeat 1, 4, 0, 9, 1, 6, 4, 5, 9, 6, 6, 9, 5, 4, 6, 1, 9, 0, 4, 1.
+* [A213479](http://oeis.org/A213479) ([L13 program](213/A213479.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y| = w+x+y.
 * [A213480](http://oeis.org/A213480) ([L23 program](213/A213480.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y| != w+x+y.
 * [A213481](http://oeis.org/A213481) ([L42 program](213/A213481.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y| <= w+x+y.
 * [A213483](http://oeis.org/A213483) ([L59 program](213/A213483.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y| >= w+x+y.
@@ -1926,13 +1927,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A235498](http://oeis.org/A235498) ([L04 program](235/A235498.asm)): For k in {2,3,...,9} define a sequence as follows: a(0)=0; for n>=0, a(n+1)=a(n)+1, unless a(n) ends in k, in which case a(n+1) is obtained by replacing the last digit of a(n) with the digit(s) of k^2. This is k(2).
 * [A235499](http://oeis.org/A235499) ([L05 program](235/A235499.asm)): For k in {2,3,...,9} define a sequence as follows: a(0)=0; for n>=0, a(n+1)=a(n)+1, unless a(n) ends in k, in which case a(n+1) is obtained by replacing the last digit of a(n) with the digit(s) of k^2. This is k(3).
 * [A235537](http://oeis.org/A235537) ([L13 program](235/A235537.asm)): Expansion of (6 + 13*x - 8*x^2 - 8*x^3 + 6*x^4)/((1 + x)^2*(1 - x)^3).
+* [A235602](http://oeis.org/A235602) ([L12 program](235/A235602.asm)): a(n) = n/wt(n) if wt(n) divides n, otherwise a(n) = n, where wt(n) is the binary weight of n (A000120).
 * [A235643](http://oeis.org/A235643) ([L08 program](235/A235643.asm)): Total number of sides of a tetraflake-like fractal after n iterations, a(1) = 16 (see comments).
 * [A235699](http://oeis.org/A235699) ([L07 program](235/A235699.asm)): a(n+1) = a(n) + (a(n) mod 10) + 1, a(0) = 0.
 * [A235700](http://oeis.org/A235700) ([L12 program](235/A235700.asm)): a(n+1) = a(n) + (a(n) mod 5), a(1)=1.
 * [A235702](http://oeis.org/A235702) ([L08 program](235/A235702.asm)): Fixed points of A001175 (Pisano periods).
 * [A235711](http://oeis.org/A235711) ([L04 program](235/A235711.asm)): Arithmetic derivative of quarter squares.
 * [A235796](http://oeis.org/A235796) ([L03 program](235/A235796.asm)): 2*n - 1 - sigma(n).
-* [A235799](http://oeis.org/A235799) ([L08 program](235/A235799.asm)): a(n) = n^2 - sigma(n).
+* [A235799](http://oeis.org/A235799) ([L05 program](235/A235799.asm)): a(n) = n^2 - sigma(n).
 * [A235800](http://oeis.org/A235800) ([L05 program](235/A235800.asm)): Length of n-th vertical line segment from left to right in a diagram of a two-dimensional version of the Collatz (or 3x + 1) problem.
 * [A235801](http://oeis.org/A235801) ([L27 program](235/A235801.asm)): Length of n-th horizontal line segment in a diagram of a two-dimensional version of the Collatz (or 3x + 1) problem.
 * [A235877](http://oeis.org/A235877) ([L04 program](235/A235877.asm)): Number of (n+1) X (1+1) 0..2 arrays with the minimum plus the upper median equal to the lower median plus the maximum in every 2 X 2 subblock.
@@ -2372,7 +2374,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244728](http://oeis.org/A244728) ([L03 program](244/A244728.asm)): a(n) = 9*n^3.
 * [A244729](http://oeis.org/A244729) ([L03 program](244/A244729.asm)): 10*n^3.
 * [A244730](http://oeis.org/A244730) ([L03 program](244/A244730.asm)): a(n) = 2*n^4.
-* [A244735](http://oeis.org/A244735) ([L04 program](244/A244735.asm)): a(n) = (prime(n) mod 5) mod 2.
+* [A244735](http://oeis.org/A244735) ([L08 program](244/A244735.asm)): a(n) = (prime(n) mod 5) mod 2.
 * [A244738](http://oeis.org/A244738) ([L06 program](244/A244738.asm)): a(n) = (prime(n) mod 5) mod 3.
 * [A244750](http://oeis.org/A244750) ([L06 program](244/A244750.asm)): 0-additive sequence: a(n) is the smallest number larger than a(n-1) which is not the sum of any subset of earlier terms, with initial values {0, 2, 3, 4}.
 * [A244762](http://oeis.org/A244762) ([L08 program](244/A244762.asm)): a(n) = (5*3^n-2*n-1)/4.

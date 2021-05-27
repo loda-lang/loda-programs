@@ -9,7 +9,5 @@ lpb $0
   trn $1,$2
   sub $1,$2
 lpe
+mod $1,2
 add $1,1
-mod $1,2
-add $1,2
-mod $1,2

@@ -11,9 +11,9 @@ lpb $9
   lpb $0
     mov $2,$0
     cal $2,255309 ; Number of times log_2 can be applied to n until the result is either 1 or not a power of 2. Here log_2 means the base-2 logarithm.
-    mov $0,$2
-    add $1,$2
+    sub $0,$2
+    add $3,$2
   lpe
-  add $8,$1
+  add $8,$3
 lpe
 mov $1,$8

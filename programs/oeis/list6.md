@@ -272,6 +272,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304974](http://oeis.org/A304974) ([L40 program](304/A304974.asm)): Number of achiral color patterns (set partitions) for a row or loop of length n using exactly 4 colors (sets).
 * [A304993](http://oeis.org/A304993) ([L07 program](304/A304993.asm)): a(n) = n*(n + 1)*(7*n + 5)/6.
 * [A304995](http://oeis.org/A304995) ([L15 program](304/A304995.asm)): Expansion of (1 + 6*x + 6*x^2 + 6*x^3 + x^4 + 6*x^5)/((1 - x)*(1 + x^4)).
+* [A305029](http://oeis.org/A305029) ([L05 program](305/A305029.asm)): Period 10 sequence [ 0, 2, 2, 2, 2, 0, -2, -2, -2, -2, ...] except a(0) = 1.
 * [A305060](http://oeis.org/A305060) ([L05 program](305/A305060.asm)): a(n) = 18*2^n + 10.
 * [A305061](http://oeis.org/A305061) ([L05 program](305/A305061.asm)): a(n) = 20*2^n + 14.
 * [A305062](http://oeis.org/A305062) ([L05 program](305/A305062.asm)): a(n) = 96*2^n + 80.
@@ -1096,7 +1097,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321501](http://oeis.org/A321501) ([L11 program](321/A321501.asm)): Numbers not of the form (x - y)(x^2 - y^2) with x > y > 0; complement of A321499.
 * [A321573](http://oeis.org/A321573) ([L12 program](321/A321573.asm)): Row sums of A321624.
 * [A321579](http://oeis.org/A321579) ([L05 program](321/A321579.asm)): Number of n-tuples of 4 elements excluding reverse duplicates and those consisting of repetitions of the same element only.
-* [A321643](http://oeis.org/A321643) ([L15 program](321/A321643.asm)): a(n) = 5*2^n - (-1)^n.
+* [A321643](http://oeis.org/A321643) ([L08 program](321/A321643.asm)): a(n) = 5*2^n - (-1)^n.
 * [A321672](http://oeis.org/A321672) ([L04 program](321/A321672.asm)): Number of chiral pairs of rows of length 5 using up to n colors.
 * [A321773](http://oeis.org/A321773) ([L16 program](321/A321773.asm)): Number of compositions of n into parts with distinct multiplicities and with exactly three parts.
 * [A321789](http://oeis.org/A321789) ([L03 program](321/A321789.asm)): Factorials of terms of Pascal's triangle by row.
@@ -1194,6 +1195,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323824](http://oeis.org/A323824) ([L04 program](323/A323824.asm)): a(0) = 6; thereafter a(n) = 4*a(n-1) + 1.
 * [A323847](http://oeis.org/A323847) ([L10 program](323/A323847.asm)): a(n) = (n-1)*(n-2)*(n^2+9*n+12)/24.
 * [A323921](http://oeis.org/A323921) ([L08 program](323/A323921.asm)): a(n) = (4^(valuation(n, 4) + 1) - 1) / 3.
+* [A323952](http://oeis.org/A323952) ([L08 program](323/A323952.asm)): Regular triangle read by rows where if k > 1 then T(n, k) is the number of connected subgraphs of an n-cycle with any number of vertices other than 2 through k - 1, n >= 1, 1 <= k <= n - 1. Otherwise T(n, 1) = n.
 * [A324015](http://oeis.org/A324015) ([L10 program](324/A324015.asm)): Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
 * [A324128](http://oeis.org/A324128) ([L08 program](324/A324128.asm)): a(n) = 2*n*Fibonacci(n) + (-1)^n + 1.
 * [A324129](http://oeis.org/A324129) ([L06 program](324/A324129.asm)): a(n) = n*Fibonacci(n) + ((-1)^n + 1)/2.
@@ -1215,7 +1217,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324560](http://oeis.org/A324560) ([L09 program](324/A324560.asm)): Numbers > 1 where the minimum prime index is less than or equal to the number of prime factors counted with multiplicity.
 * [A324580](http://oeis.org/A324580) ([L03 program](324/A324580.asm)): a(n) = n * A276086(n).
 * [A324600](http://oeis.org/A324600) ([L04 program](324/A324600.asm)): a(n) = (k(n)*(k(n) + 1))/2 with k = A018252 (nonprime numbers), for n >= 1.
-* [A324772](http://oeis.org/A324772) ([L03 program](324/A324772.asm)): The "Octanacci" sequence: Trajectory of 0 under the morphism 0->{0,1,0}, 1->{0}.
+* [A324772](http://oeis.org/A324772) ([L24 program](324/A324772.asm)): The "Octanacci" sequence: Trajectory of 0 under the morphism 0->{0,1,0}, 1->{0}.
 * [A324902](http://oeis.org/A324902) ([L06 program](324/A324902.asm)): The 2-adic valuation of A318456(n), where A318456(n) = n OR (sigma(n)-n).
 * [A324903](http://oeis.org/A324903) ([L09 program](324/A324903.asm)): a(n) = 1 if A007814(sigma(n)) > A007814(n), 0 otherwise. Here A007814(n) gives the 2-adic valuation of n.
 * [A324904](http://oeis.org/A324904) ([L04 program](324/A324904.asm)): The 2-adic valuation of A318466(n), where A318466(n) = 2*n OR sigma(n).
@@ -1356,6 +1358,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328407](http://oeis.org/A328407) ([L09 program](328/A328407.asm)): G.f. A(x) satisfies: A(x) = A(x^2) + x * (1 + x) / (1 - x)^3.
 * [A328408](http://oeis.org/A328408) ([L19 program](328/A328408.asm)): G.f. A(x) satisfies: A(x) = A(x^2) + x * (1 + 4*x + x^2) / (1 - x)^4.
 * [A328478](http://oeis.org/A328478) ([L07 program](328/A328478.asm)): Divide n by the largest primorial that divides it and repeat until a fixed point is reached; a(n) is the fixed point.
+* [A328479](http://oeis.org/A328479) ([L07 program](328/A328479.asm)): a(n) = n/A328478(n), where A328478(n) is obtained by repeatedly dividing n by the largest primorial that divides it until a fixed point is reached.
 * [A328778](http://oeis.org/A328778) ([L34 program](328/A328778.asm)): Number of indecomposable closed walks of length 2n along the edges of a cube based at a vertex.
 * [A328823](http://oeis.org/A328823) ([L05 program](328/A328823.asm)): a(n) is the least prime factor of A000096(n) = n*(n+3)/2.
 * [A328824](http://oeis.org/A328824) ([L07 program](328/A328824.asm)): Numerators of A113405(-n) (see the comment for details).

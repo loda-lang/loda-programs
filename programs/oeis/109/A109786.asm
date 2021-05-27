@@ -3,9 +3,7 @@
 
 cal $0,39834 ; a(n+2) = -a(n+1) + a(n) (signed Fibonacci numbers) with a(-2) = a(-1) = 1; or Fibonacci numbers (A000045) extended to negative indices.
 pow $0,2
-mov $1,36
-add $1,$0
-div $1,3
-sub $1,12
+div $0,3
+mov $1,$0
 mul $1,4
 add $1,1

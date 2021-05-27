@@ -3,8 +3,5 @@
 
 add $0,2
 cal $0,105321 ; Convolution of binomial(1,n) and Gould's sequence A001316.
-sub $0,4
 mov $1,$0
-mul $1,2
-div $1,4
-add $1,2
+div $1,2

@@ -16,14 +16,15 @@ lpb $11
     mov $0,$6
     sub $8,1
     sub $0,$8
-    mov $2,$0
-    lpb $0
-      gcd $0,2
-      sub $0,1
-      mul $2,2
-      sub $2,$0
-    lpe
-    mov $1,$2
+    sub $0,1
+    dif $0,2
+    mul $0,4
+    add $0,1
+    max $0,0
+    cal $0,168410 ; a(n) = 3 + 9*floor(n/2).
+    mov $1,$0
+    div $1,9
+    mul $1,2
     add $1,1
     add $7,$1
   lpe

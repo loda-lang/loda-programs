@@ -3,7 +3,6 @@
 
 add $0,2
 cal $0,204707 ; Number of (n+1) X 3 0..1 arrays with the permanents of all 2 X 2 subblocks equal and nonzero.
-sub $0,22
-add $1,$0
-div $1,8
-add $1,3
+mov $1,$0
+div $1,16
+mul $1,2

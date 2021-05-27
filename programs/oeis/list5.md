@@ -146,6 +146,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253893](http://oeis.org/A253893) ([L20 program](253/A253893.asm)): a(1) = 0, for n > 1, a(n) = 1 + a(A253889(n)).
 * [A253894](http://oeis.org/A253894) ([L21 program](253/A253894.asm)): a(1) = 1, for n > 1, a(n) = 1 + a(A253889(n)).
 * [A253900](http://oeis.org/A253900) ([L04 program](253/A253900.asm)): a(n) is the number of squares of the form x^2 + x + n^2 for 0 <= x <= n^2.
+* [A253902](http://oeis.org/A253902) ([L08 program](253/A253902.asm)): Write numbers 1, then 2^2 down to 1, then 3^2 down to 1, then 4^2 down to 1 and so on.
 * [A253903](http://oeis.org/A253903) ([L10 program](253/A253903.asm)): The characteristic function of square pyramidal numbers.
 * [A253909](http://oeis.org/A253909) ([L03 program](253/A253909.asm)): 1 together with the positive squares.
 * [A253942](http://oeis.org/A253942) ([L04 program](253/A253942.asm)): a(n) = 3*binomial(n+1, 5).
@@ -289,7 +290,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256096](http://oeis.org/A256096) ([L10 program](256/A256096.asm)): Expansion of (4+3*x)/(1+3*x).
 * [A256101](http://oeis.org/A256101) ([L03 program](256/A256101.asm)): The broken eggs problem.
 * [A256135](http://oeis.org/A256135) ([L13 program](256/A256135.asm)): a(n) = 5^A000120(n).
-* [A256136](http://oeis.org/A256136) ([L04 program](256/A256136.asm)): a(n) = 6^A000120(n).
+* [A256136](http://oeis.org/A256136) ([L03 program](256/A256136.asm)): a(n) = 6^A000120(n).
 * [A256137](http://oeis.org/A256137) ([L10 program](256/A256137.asm)): a(2) = 1; a(3) = 4; for n >= 4, a(n) = 2 + Sum_{i=4..n} d(i), where d(i) = i for even i, d(i) = i-3 for odd i.
 * [A256162](http://oeis.org/A256162) ([L22 program](256/A256162.asm)): Positive integers a(n) such that number of digits in decimal expansion of a(n)^a(n) is divisible by a(n).
 * [A256233](http://oeis.org/A256233) ([L18 program](256/A256233.asm)): a(n) = L(2*n+1) - 2, where L is A000032.
@@ -490,6 +491,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A259108](http://oeis.org/A259108) ([L08 program](259/A259108.asm)): a(n) = 2 * A000538(n).
 * [A259109](http://oeis.org/A259109) ([L07 program](259/A259109.asm)): 2*A000540.
 * [A259110](http://oeis.org/A259110) ([L05 program](259/A259110.asm)): 2*A000447(n).
+* [A259175](http://oeis.org/A259175) ([L07 program](259/A259175.asm)): a(n) = 1 if n prime, otherwise prime(n).
 * [A259181](http://oeis.org/A259181) ([L07 program](259/A259181.asm)): a(n) = n*(n+1)*(n+2)*(n+3)*(2*n^2+6*n+7)/360.
 * [A259182](http://oeis.org/A259182) ([L05 program](259/A259182.asm)): a(n) = prime(n) if n prime otherwise 1.
 * [A259184](http://oeis.org/A259184) ([L05 program](259/A259184.asm)): a(n) = 1 - sigma(n) + sigma(n)^2.
@@ -772,7 +774,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A264981](http://oeis.org/A264981) ([L08 program](264/A264981.asm)): Highest power of 9 dividing n.
 * [A265021](http://oeis.org/A265021) ([L10 program](265/A265021.asm)): Sum of fifth powers of the first n even numbers.
 * [A265026](http://oeis.org/A265026) ([L27 program](265/A265026.asm)): First differences of A048701.
-* [A265027](http://oeis.org/A265027) ([L07 program](265/A265027.asm)): First differences of A048701 divided by 6.
+* [A265027](http://oeis.org/A265027) ([L04 program](265/A265027.asm)): First differences of A048701 divided by 6.
 * [A265028](http://oeis.org/A265028) ([L16 program](265/A265028.asm)): First differences of A264618.
 * [A265029](http://oeis.org/A265029) ([L17 program](265/A265029.asm)): First differences of A264619.
 * [A265045](http://oeis.org/A265045) ([L27 program](265/A265045.asm)): Coordination sequence for a 6.6.6 point in the 3-transitive tiling {4.6.6, 6.6.6, 6.6.6.6} of the plane by squares and dominoes (hexagons).
@@ -952,7 +954,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A267142](http://oeis.org/A267142) ([L02 program](267/A267142.asm)): The characteristic function of the multiples of 9.
 * [A267144](http://oeis.org/A267144) ([L08 program](267/A267144.asm)): Octagonal numbers with prime indices.
 * [A267155](http://oeis.org/A267155) ([L10 program](267/A267155.asm)): Middle column of the "Rule 107" elementary cellular automaton starting with a single ON (black) cell.
-* [A267182](http://oeis.org/A267182) ([L03 program](267/A267182.asm)): Row 2 of the square array in A267181.
+* [A267182](http://oeis.org/A267182) ([L11 program](267/A267182.asm)): Row 2 of the square array in A267181.
 * [A267185](http://oeis.org/A267185) ([L10 program](267/A267185.asm)): Column 2 of the square array in A267181.
 * [A267208](http://oeis.org/A267208) ([L03 program](267/A267208.asm)): Middle column of the "Rule 109" elementary cellular automaton starting with a single ON (black) cell.
 * [A267210](http://oeis.org/A267210) ([L12 program](267/A267210.asm)): Decimal representation of the middle column of the "Rule 109" elementary cellular automaton starting with a single ON (black) cell.
@@ -1173,7 +1175,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269132](http://oeis.org/A269132) ([L05 program](269/A269132.asm)): a(n) = n + floor(n*(2*n+1)/5).
 * [A269160](http://oeis.org/A269160) ([L14 program](269/A269160.asm)): Formula for Wolfram's Rule 30 cellular automaton: a(n) = n XOR (2n OR 4n).
 * [A269169](http://oeis.org/A269169) ([L18 program](269/A269169.asm)): The least monotonic left inverse for A269164.
-* [A269170](http://oeis.org/A269170) ([L04 program](269/A269170.asm)): a(n) = n OR floor(n/2), where OR is bitwise-OR (A003986).
+* [A269170](http://oeis.org/A269170) ([L03 program](269/A269170.asm)): a(n) = n OR floor(n/2), where OR is bitwise-OR (A003986).
 * [A269173](http://oeis.org/A269173) ([L22 program](269/A269173.asm)): Formula for Wolfram's Rule 126 cellular automaton: a(n) = (n XOR 2n) OR (n XOR 4n).
 * [A269174](http://oeis.org/A269174) ([L20 program](269/A269174.asm)): Formula for Wolfram's Rule 124 cellular automaton: a(n) = (n OR 2n) AND ((n XOR 2n) OR (n XOR 4n)).
 * [A269221](http://oeis.org/A269221) ([L07 program](269/A269221.asm)): Factorial of the sum of decimal digits of n.
@@ -1522,7 +1524,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274230](http://oeis.org/A274230) ([L04 program](274/A274230.asm)): Number of holes in a sheet of paper when you fold it n times and cut off the four corners.
 * [A274232](http://oeis.org/A274232) ([L15 program](274/A274232.asm)): Number of partitions of 2^n into at most three parts.
 * [A274233](http://oeis.org/A274233) ([L09 program](274/A274233.asm)): Number of partitions of n*(n-1)/2 into at most three parts.
-* [A274248](http://oeis.org/A274248) ([L31 program](274/A274248.asm)): Row sums of A273751.
+* [A274248](http://oeis.org/A274248) ([L25 program](274/A274248.asm)): Row sums of A273751.
 * [A274250](http://oeis.org/A274250) ([L06 program](274/A274250.asm)): Number of partitions of n^2 into at most three parts.
 * [A274251](http://oeis.org/A274251) ([L06 program](274/A274251.asm)): Number of partitions of n^3 into at most three parts.
 * [A274252](http://oeis.org/A274252) ([L06 program](274/A274252.asm)): Number of partitions of n^5 into at most three parts.

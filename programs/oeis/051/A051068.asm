@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,63200 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 15 ).
+  cal $2,63224 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 60 ).
   div $0,9
   add $1,$2
 lpe
