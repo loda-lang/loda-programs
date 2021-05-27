@@ -1,6 +1,9 @@
 ; A083583: a(n) = (8*3^n - 5*0^n)/3.
 ; 1,8,24,72,216,648,1944,5832,17496,52488,157464,472392,1417176,4251528,12754584,38263752,114791256,344373768,1033121304,3099363912,9298091736,27894275208,83682825624,251048476872,753145430616,2259436291848,6778308875544,20334926626632,61004779879896,183014339639688,549043018919064,1647129056757192,4941387170271576
 
-cal $0,169257 ; Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^29 = I.
-cal $0,47476 ; Numbers that are congruent to {0, 1, 2, 3} mod 8.
+cal $0,169545 ; Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^35 = I.
 mov $1,$0
+gcd $0,2
+mul $1,2
+add $1,$0
+sub $1,2

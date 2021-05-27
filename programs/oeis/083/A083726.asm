@@ -4,8 +4,6 @@
 mov $1,$0
 sub $0,1
 max $0,0
-mul $1,6
 cal $0,40 ; The prime numbers.
 add $0,1
 mul $1,$0
-div $1,6

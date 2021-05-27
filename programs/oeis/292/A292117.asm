@@ -1,16 +1,6 @@
 ; A292117: Coefficients of a power series f(q) with coefficients +1 or -1 such that Product_{m >= 1} f(q^(2m-1)) = Sum_{m = -oo..oo} q^(m(3m-1)/2).
 ; 1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,-1
 
-lpb $0
-  add $0,2
-  mov $1,$0
-  sub $0,6
-  div $0,2
-  add $0,2
-  add $1,1
-  div $1,3
-  sub $1,1
-  add $2,$1
-  sub $1,1
-lpe
-bin $1,$2
+mov $1,$0
+div $1,3
+cal $1,106400 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 1's and -1's.
