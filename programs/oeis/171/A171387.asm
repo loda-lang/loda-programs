@@ -3,14 +3,8 @@
 
 mov $2,1
 lpb $2
+  max $0,3
   sub $2,1
-  add $3,1
-  lpb $3
-    max $0,3
-    sub $3,1
-    cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
-    mul $0,5
-  lpe
+  cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
 lpe
 mov $1,$0
-div $1,5

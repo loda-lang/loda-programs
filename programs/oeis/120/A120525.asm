@@ -10,10 +10,9 @@ lpb $4
   sub $0,1
   max $0,0
   cal $0,96346 ; Complement of A004128.
-  sub $0,$3
-  add $3,$0
+  mov $3,$0
   mov $5,$4
-  mul $5,$3
+  mul $5,$0
   add $1,$5
 lpe
 min $2,1

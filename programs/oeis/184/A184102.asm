@@ -1,33 +1,8 @@
 ; A184102: n+floor(4*sqrt(n)); complement of A184103.
 ; 5,7,9,12,13,15,17,19,21,22,24,25,27,28,30,32,33,34,36,37,39,40,42,43,45,46,47,49,50,51,53,54,55,57,58,60,61,62,63,65,66,67,69,70,71,73,74,75,77,78,79,80,82,83,84,85,87,88,89,90,92,93,94,96,97,98,99,100,102,103,104,105,107,108,109,110,112,113,114,115,117,118,119,120,121,123,124,125,126,127,129,130,131,132,133,135,136,137,138,140
 
-mov $10,$0
-mov $12,$0
-add $12,1
-lpb $12
-  clr $0,10
-  mov $0,$10
-  sub $12,1
-  sub $0,$12
-  mov $6,$0
-  mov $8,2
-  lpb $8
-    mov $0,$6
-    sub $8,1
-    add $0,$8
-    mul $0,16
-    max $0,0
-    cal $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-    mov $1,$0
-    mov $9,$8
-    mul $9,$0
-    add $7,$9
-  lpe
-  min $6,1
-  mul $6,$1
-  mov $1,$7
-  sub $1,$6
-  add $1,1
-  add $11,$1
-lpe
-mov $1,$11
+mov $1,$0
+mul $0,8
+add $0,8
+cal $0,101776 ; Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
+add $1,$0

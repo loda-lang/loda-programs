@@ -3,8 +3,6 @@
 
 mov $2,$0
 cal $0,96346 ; Complement of A004128.
-sub $0,$2
-mov $1,$0
-sub $1,3
+sub $2,$0
+sub $1,$2
 div $1,3
-add $1,1
