@@ -6,8 +6,5 @@ lpb $0
   cal $2,305060 ; a(n) = 18*2^n + 10.
   sub $0,1
   add $1,$2
-  add $1,$2
 lpe
-div $1,4
-mul $1,2
 add $1,68

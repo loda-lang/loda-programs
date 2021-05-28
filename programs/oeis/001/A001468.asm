@@ -4,18 +4,17 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  mov $0,$2
   sub $4,1
   add $0,$4
   sub $0,1
-  max $0,0
-  cal $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
   mov $3,$0
+  max $3,0
+  cal $3,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
   mov $5,$4
-  mul $5,$0
+  mul $5,$3
   add $1,$5
 lpe
 min $2,1
 mul $2,$3
 sub $1,$2
-add $1,1
+sub $1,1

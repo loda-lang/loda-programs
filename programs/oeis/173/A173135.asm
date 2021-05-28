@@ -3,10 +3,8 @@
 
 add $0,2
 cal $0,40 ; The prime numbers.
-sub $0,2
 lpb $0
-  sub $0,3
-  mul $0,72
+  dif $0,5
+  mul $0,2
 lpe
 mov $1,$0
-add $1,2

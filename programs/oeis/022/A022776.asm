@@ -3,8 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,49474 ; a(n) = ceiling(n/sqrt(2)).
+  cal $2,99188 ; a(n) = 2*ceiling(n/sqrt(2)).
   sub $0,1
   add $1,$2
 lpe
+div $1,2
 add $1,1

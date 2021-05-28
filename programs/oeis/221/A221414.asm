@@ -9,13 +9,11 @@ lpb $8
   sub $8,1
   add $0,$8
   sub $0,1
-  mov $1,1
   lpb $0
-    sub $0,$1
+    sub $0,1
     trn $0,1
-    add $5,1
+    add $5,3
     mul $5,15
-    sub $5,2
   lpe
   mov $1,$5
   mov $9,$8
@@ -26,5 +24,5 @@ min $6,1
 mul $6,$1
 mov $1,$7
 sub $1,$6
-div $1,13
+div $1,45
 mul $1,10

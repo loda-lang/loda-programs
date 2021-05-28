@@ -5,6 +5,4 @@ add $0,1
 mul $0,11
 cal $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 mov $1,$0
-sub $1,11
 div $1,11
-add $1,1

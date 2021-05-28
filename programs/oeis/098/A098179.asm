@@ -3,8 +3,5 @@
 
 add $0,2
 cal $0,38504 ; Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose 1".
-mul $0,2
 mov $1,$0
-sub $1,4
-div $1,2
-add $1,1
+sub $1,1

@@ -9,13 +9,9 @@ lpb $8
   sub $8,1
   add $0,$8
   sub $0,1
-  lpb $0
-    mov $2,$0
-    max $2,0
-    cal $2,340761 ; Number of partitions of n into 4 parts whose 'middle' two parts have the same parity.
-    sub $0,2
-    add $3,$2
-  lpe
+  max $0,0
+  cal $0,308733 ; Sum of the smallest parts of the partitions of n into 4 parts.
+  add $3,$0
   mov $1,$3
   mov $9,$8
   mul $9,$3

@@ -3,6 +3,5 @@
 
 add $0,1
 cal $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
-add $0,1
 mov $1,$0
-mod $1,2
+cmp $1,0
