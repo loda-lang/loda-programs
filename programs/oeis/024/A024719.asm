@@ -3,9 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cal $2,5809 ; a(n) = binomial(3n,n).
   sub $0,1
+  mul $2,2
+  add $2,$0
+  bin $2,$0
   add $1,$2
 lpe
-div $1,3
 add $1,1

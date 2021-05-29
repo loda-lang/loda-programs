@@ -3,9 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,336642 ; One less than the largest square dividing n: a(n) = A008833(n)-1.
+  cal $2,107078 ; Whether n has non-unitary prime divisors.
   sub $0,1
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  add $1,$2
 lpe

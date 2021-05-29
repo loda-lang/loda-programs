@@ -5,8 +5,7 @@ lpb $0
   mov $2,$0
   div $2,2
   cal $2,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
-  mul $0,$2
-  sub $0,2
+  mov $0,1
   add $1,$2
 lpe
 add $1,1
