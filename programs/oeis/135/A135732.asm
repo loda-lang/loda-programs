@@ -8,10 +8,12 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,48974 ; Odd numbers that are the sum of 2 primes.
+  cal $0,98090 ; Numbers k such that 2k-3 is prime.
   mov $2,$3
   mov $4,$0
   sub $4,4
+  mul $4,2
+  add $4,3
   mul $2,$4
   add $1,$2
 lpe

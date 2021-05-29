@@ -3,6 +3,7 @@
 
 cal $0,40 ; The prime numbers.
 mov $1,$0
-cal $1,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+cal $0,6257 ; Josephus problem: a(2*n) = 2*a(n)-1, a(2*n+1) = 2*a(n)+1.
+sub $1,$0
 div $1,2
 mul $1,3

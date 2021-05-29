@@ -7,6 +7,5 @@ lpb $0
   sub $0,1
   add $1,$2
 lpe
-div $1,4
-mul $1,72
+mul $1,18
 add $1,1473
