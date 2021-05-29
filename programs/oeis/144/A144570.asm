@@ -2,9 +2,6 @@
 ; 1,4,8,10,16,20,25,27,33,40,44,51,56,58,64,72,80,82,90,94,96,105,111,118,126,132,134,140,142,146,164,169,176,178,190,194,202,208,213,219,226,230,243,245,249,252,266,282,287,289,294,300,302,315,322,328,335
 
 cal $0,40 ; The prime numbers.
-sub $0,1
-cal $0,176100 ; Even numbers that are not semiprimes, or, twice the nonprimes.
+sub $0,2
+cal $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 mov $1,$0
-sub $1,2
-div $1,2
-add $1,1

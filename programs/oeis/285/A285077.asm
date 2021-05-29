@@ -3,8 +3,6 @@
 
 mov $2,$0
 cal $0,49472 ; a(n) = floor(n/sqrt(2)).
-mov $1,3
-add $2,$0
-mul $1,$2
-div $1,3
+add $0,$2
+mov $1,$0
 add $1,2

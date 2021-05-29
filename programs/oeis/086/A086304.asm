@@ -3,7 +3,6 @@
 
 add $0,2
 cal $0,98090 ; Numbers k such that 2k-3 is prime.
+mul $0,2
 mov $1,$0
-sub $1,5
-mul $1,2
-add $1,1
+sub $1,9

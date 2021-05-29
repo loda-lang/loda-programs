@@ -8,19 +8,21 @@ lpb $8
   mov $0,$6
   sub $8,1
   add $0,$8
-  lpb $0
-    mov $2,$0
-    max $2,0
-    cal $2,79952 ; Number of primes less than prime(n)/2.
-    mod $0,2
-    add $3,$2
-  lpe
-  mov $1,$3
+  sub $0,1
+  max $0,0
+  cal $0,39733 ; a(n)=k such that prime(k) is the prime q<prime(n) for which (prime(n) mod q) is maximal.
+  mul $0,2
+  add $2,$0
+  add $3,3
+  mov $5,$2
+  sub $5,$3
+  mov $1,$5
   mov $9,$8
-  mul $9,$3
+  mul $9,$5
   add $7,$9
 lpe
 min $6,1
 mul $6,$1
 mov $1,$7
 sub $1,$6
+div $1,2

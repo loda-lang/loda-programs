@@ -3,20 +3,12 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
   cal $0,120614 ; a(n) = g(n+1) - g(n) where g(k) = floor(phi*floor(k/phi)) and phi = (1+sqrt(5))/2.
-  sub $0,2
-  mod $0,2
-  mov $5,$0
-  cmp $5,0
-  add $0,$5
-  max $0,0
-  cal $0,88879 ; Numbers n such that 3n + 5 is a prime.
-  mov $3,$0
-  add $3,2
-  add $1,$3
+  gcd $0,2
+  add $1,$0
 lpe
