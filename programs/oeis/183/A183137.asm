@@ -2,12 +2,15 @@
 ; 0,0,1,2,3,5,7,10,13,16,20,24,28,33,38,44,50,56,63,70,78,86,94,103,112,121,131,141,152,163,174,186,198,210,223,236,250,264,278,293,308,324,340,356,373,390,407,425,443,462,481,500,520,540,561,582,603,625
 
 mov $2,$0
-mov $3,$0
-lpb $3
+mov $4,$0
+lpb $4
+  clr $0,2
   mov $0,$2
-  sub $3,1
-  sub $0,$3
-  add $0,1
-  cal $0,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
-  add $1,$0
+  sub $4,1
+  sub $0,$4
+  add $1,$0 ; ; add it to the result register (to update the count of coprime k <= n)
+  cal $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
+  sub $1,$0
+  add $3,$1
 lpe
+mov $1,$3
