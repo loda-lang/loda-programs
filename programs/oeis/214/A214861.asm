@@ -1,49 +1,26 @@
 ; A214861: First differences of round(n*sqrt(5)) (A022848).
 ; 2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3
 
-mov $12,$0
-mov $14,2
-lpb $14
-  clr $0,12
-  mov $0,$12
-  sub $14,1
-  add $0,$14
+mov $6,$0
+mov $8,2
+lpb $8
+  clr $0,6
+  mov $0,$6
+  sub $8,1
+  add $0,$8
   sub $0,1
-  mov $6,$0
-  mov $9,$0
-  add $0,3
-  add $4,$6
-  add $0,$4
-  sub $4,2
-  add $7,7
-  lpb $0
-    mul $0,11
-    sub $4,4
-    sub $4,$0
-    sub $0,$4
-    div $0,$4
-    pow $0,2
-    sub $0,1
-    div $0,2
-    add $4,1
-    mov $7,-89
-    mov $8,$4
-    sub $8,13
-  lpe
-  mov $3,$8
-  div $3,$7
-  mov $1,$3
-  add $1,1
-  add $1,$9
-  mov $15,$14
-  lpb $15
-    mov $13,$1
-    sub $15,1
-  lpe
+  max $0,0
+  cal $0,184738 ; floor(nr+h), where r=-1+sqrt(5), h=1/2; complement of A184735.
+  add $1,$0
+  mul $1,2
+  mov $9,$8
+  mul $9,$1
+  add $7,$9
 lpe
-lpb $12
-  mov $12,0
-  sub $13,$1
-lpe
-mov $1,$13
-add $1,1
+min $6,1
+mul $6,$1
+mov $1,$7
+sub $1,$6
+sub $1,2
+div $1,2
+add $1,2

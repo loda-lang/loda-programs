@@ -17,23 +17,20 @@ lpb $12
     add $0,$8
     sub $0,1
     max $0,0
-    cal $0,3152 ; A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
-    mov $4,$0
-    mul $4,6
-    mov $1,$4
+    cal $0,188376 ; Positions of 1 in A188374; complement of A188375.
+    add $0,2
+    mov $1,$0
     mov $9,$8
-    mul $9,$4
+    mul $9,$0
     add $7,$9
   lpe
   min $6,1
   mul $6,$1
   mov $1,$7
   sub $1,$6
-  sub $1,6
-  div $1,5
+  div $1,2
   mul $1,3
   add $1,2
   add $11,$1
 lpe
 mov $1,$11
-add $1,3

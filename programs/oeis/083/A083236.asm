@@ -12,7 +12,7 @@ lpb $8
   lpb $0
     mov $2,$0
     max $2,0
-    cal $2,40 ; The prime numbers.
+    cal $2,6005 ; The odd prime numbers together with 1.
     trn $0,2
     add $3,$2
   lpe

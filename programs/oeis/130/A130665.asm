@@ -3,12 +3,11 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
-  mov $3,$0
-  cal $3,48883 ; a(n) = 3^wt(n), where wt(n) = A000120(n).
-  add $1,$3
+  cal $0,48883 ; a(n) = 3^wt(n), where wt(n) = A000120(n).
+  add $1,$0
 lpe

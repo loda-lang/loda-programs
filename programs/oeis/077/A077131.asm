@@ -4,9 +4,8 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  cal $2,100484 ; Even semiprimes.
+  cal $2,6005 ; The odd prime numbers together with 1.
   sub $0,2
   add $1,$2
 lpe
-div $1,2
 add $1,2
