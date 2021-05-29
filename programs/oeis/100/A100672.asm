@@ -3,7 +3,6 @@
 
 sub $0,1
 max $0,0
-cal $0,168565 ; Let p = prime(n); then a(n) = p + (p-1)/2.
+cal $0,98090 ; Numbers k such that 2k-3 is prime.
 mov $1,$0
-add $1,1
 mod $1,2

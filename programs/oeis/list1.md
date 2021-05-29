@@ -1101,7 +1101,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060144](http://oeis.org/A060144) ([L19 program](060/A060144.asm)): a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
 * [A060145](http://oeis.org/A060145) ([L04 program](060/A060145.asm)): a(n) = floor(n/tau) - floor(n/(1 + tau)).
 * [A060157](http://oeis.org/A060157) ([L06 program](060/A060157.asm)): Number of permutations of [n] with 3 sequences.
-* [A060161](http://oeis.org/A060161) ([L36 program](060/A060161.asm)): a(n) = 2^n - 1 + 2*Fibonacci(n-1).
+* [A060161](http://oeis.org/A060161) ([L20 program](060/A060161.asm)): a(n) = 2^n - 1 + 2*Fibonacci(n-1).
 * [A060163](http://oeis.org/A060163) ([L05 program](060/A060163.asm)): a(n) = (n^3 + 5*n + 18)/6.
 * [A060182](http://oeis.org/A060182) ([L11 program](060/A060182.asm)): a(0) = 1, a(1) = 5, a(2) = 13; a(n) = 2*a(n-1) + 2, n > 2.
 * [A060188](http://oeis.org/A060188) ([L05 program](060/A060188.asm)): A column and  diagonal of A060187.
@@ -1536,7 +1536,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063217](http://oeis.org/A063217) ([L19 program](063/A063217.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 50 ).
 * [A063218](http://oeis.org/A063218) ([L09 program](063/A063218.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 51 ).
 * [A063219](http://oeis.org/A063219) ([L05 program](063/A063219.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 53 ).
-* [A063220](http://oeis.org/A063220) ([L04 program](063/A063220.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 55 ).
+* [A063220](http://oeis.org/A063220) ([L06 program](063/A063220.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 55 ).
 * [A063221](http://oeis.org/A063221) ([L07 program](063/A063221.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 57 ).
 * [A063222](http://oeis.org/A063222) ([L08 program](063/A063222.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 58 ).
 * [A063223](http://oeis.org/A063223) ([L29 program](063/A063223.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 59 ).
@@ -1550,9 +1550,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063231](http://oeis.org/A063231) ([L09 program](063/A063231.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 75 ).
 * [A063232](http://oeis.org/A063232) ([L07 program](063/A063232.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 77 ).
 * [A063233](http://oeis.org/A063233) ([L08 program](063/A063233.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 79 ).
-* [A063234](http://oeis.org/A063234) ([L04 program](063/A063234.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 82 ).
+* [A063234](http://oeis.org/A063234) ([L06 program](063/A063234.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 82 ).
 * [A063235](http://oeis.org/A063235) ([L15 program](063/A063235.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 83 ).
-* [A063236](http://oeis.org/A063236) ([L11 program](063/A063236.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 85 ).
+* [A063236](http://oeis.org/A063236) ([L06 program](063/A063236.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 85 ).
 * [A063237](http://oeis.org/A063237) ([L08 program](063/A063237.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 86 ).
 * [A063238](http://oeis.org/A063238) ([L09 program](063/A063238.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 87 ).
 * [A063240](http://oeis.org/A063240) ([L13 program](063/A063240.asm)): Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 89 ).
@@ -3048,7 +3048,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A077118](http://oeis.org/A077118) ([L03 program](077/A077118.asm)): Nearest integer square to n^3.
 * [A077121](http://oeis.org/A077121) ([L08 program](077/A077121.asm)): Number of integer squares <= n^3.
 * [A077126](http://oeis.org/A077126) ([L07 program](077/A077126.asm)): Sum of even-indexed primes.
-* [A077131](http://oeis.org/A077131) ([L09 program](077/A077131.asm)): Sum of odd-indexed primes.
+* [A077131](http://oeis.org/A077131) ([L08 program](077/A077131.asm)): Sum of odd-indexed primes.
 * [A077133](http://oeis.org/A077133) ([L04 program](077/A077133.asm)): Difference between the sum of odd-indexed primes and even-indexed primes.
 * [A077140](http://oeis.org/A077140) ([L04 program](077/A077140.asm)): a(1) = 1 and then add n to the previous term if n is coprime to the previous term, otherwise subtract n from the previous term. a(1) = 1 and a(n) = a(n-1) + n if gcd(n, a(n-1)) = 1, otherwise a(n) = a(n-1) - n.
 * [A077152](http://oeis.org/A077152) ([L19 program](077/A077152.asm)): Smallest k such that there are n primes between n and k.
@@ -3358,8 +3358,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080341](http://oeis.org/A080341) ([L07 program](080/A080341.asm)): Sum of the n first terms that are congruent to 1, 4 or 5 mod 6 (A047259).
 * [A080342](http://oeis.org/A080342) ([L04 program](080/A080342.asm)): Number of weighings required to identify a single bad coin out of n coins, using a two-pan balance.
 * [A080343](http://oeis.org/A080343) ([L10 program](080/A080343.asm)): a(n) = round(sqrt(2*n)) - floor(sqrt(2*n)).
-* [A080344](http://oeis.org/A080344) ([L05 program](080/A080344.asm)): Partial sums of A023969.
-* [A080352](http://oeis.org/A080352) ([L06 program](080/A080352.asm)): Partial sums of A080343.
+* [A080344](http://oeis.org/A080344) ([L04 program](080/A080344.asm)): Partial sums of A023969.
+* [A080352](http://oeis.org/A080352) ([L12 program](080/A080352.asm)): Partial sums of A080343.
 * [A080353](http://oeis.org/A080353) ([L06 program](080/A080353.asm)): a(1)=5; for n>1, a(n)=a(n-1)+1 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
 * [A080354](http://oeis.org/A080354) ([L36 program](080/A080354.asm)): First differences of A080353.
 * [A080378](http://oeis.org/A080378) ([L05 program](080/A080378.asm)): Residues mod 4 of the n-th difference between consecutive primes.
@@ -3621,7 +3621,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081585](http://oeis.org/A081585) ([L04 program](081/A081585.asm)): Third row of Pascal-(1,3,1) array A081578.
 * [A081586](http://oeis.org/A081586) ([L06 program](081/A081586.asm)): Fourth row of Pascal-(1,3,1) array A081578.
 * [A081587](http://oeis.org/A081587) ([L04 program](081/A081587.asm)): Third row of Pascal-(1,4,1) array A081579.
-* [A081588](http://oeis.org/A081588) ([L11 program](081/A081588.asm)): Fourth row of the Pascal-(1,4,1) array A081579.
+* [A081588](http://oeis.org/A081588) ([L09 program](081/A081588.asm)): Fourth row of the Pascal-(1,4,1) array A081579.
 * [A081589](http://oeis.org/A081589) ([L06 program](081/A081589.asm)): Third row of Pascal-(1,5,1) array A081580.
 * [A081590](http://oeis.org/A081590) ([L10 program](081/A081590.asm)): Fourth row of Pascal-(1,5,1) array A081580.
 * [A081591](http://oeis.org/A081591) ([L04 program](081/A081591.asm)): Third row of Pascal-(1,6,1) array A081581.
@@ -3681,7 +3681,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081909](http://oeis.org/A081909) ([L10 program](081/A081909.asm)): a(n) = 3^n(n^2 - n + 18)/18.
 * [A081910](http://oeis.org/A081910) ([L18 program](081/A081910.asm)): 4^n*(n^2-n+32)/32.
 * [A081913](http://oeis.org/A081913) ([L11 program](081/A081913.asm)): a(n) = 2^n*(n^3 - 3n^2 + 2n + 48)/48.
-* [A081946](http://oeis.org/A081946) ([L08 program](081/A081946.asm)): a(n) = Sum_{i=1..n} floor(r*floor(i/r)), where r=sqrt(2).
 * [A082019](http://oeis.org/A082019) ([L17 program](082/A082019.asm)): Diagonal of square array T(n,k) with T(1,1) = 1 where antidiagonals are filled alternating upwards and downwards with the smallest number not already used such that the n-th antidiagonal sum is a multiple of n.
 * [A082023](http://oeis.org/A082023) ([L10 program](082/A082023.asm)): Number of partitions of n into 2 parts which are not relatively prime.
 * [A082039](http://oeis.org/A082039) ([L05 program](082/A082039.asm)): Symmetric square array defined by T(n,k)=(k^2*n^2 + kn + 1), read by antidiagonals.
@@ -4293,7 +4292,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087049](http://oeis.org/A087049) ([L09 program](087/A087049.asm)): Characteristic sequence for numbers n>=0 that are either squares or have a square > 1 as factor.
 * [A087055](http://oeis.org/A087055) ([L04 program](087/A087055.asm)): Largest square number less than 2*n^2.
 * [A087056](http://oeis.org/A087056) ([L12 program](087/A087056.asm)): Difference between 2 * n^2 and the next smaller square number.
-* [A087057](http://oeis.org/A087057) ([L04 program](087/A087057.asm)): Smallest number whose square is larger than 2*n^2.
+* [A087057](http://oeis.org/A087057) ([L05 program](087/A087057.asm)): Smallest number whose square is larger than 2*n^2.
 * [A087058](http://oeis.org/A087058) ([L03 program](087/A087058.asm)): Smallest square number greater than 2*n^2.
 * [A087060](http://oeis.org/A087060) ([L05 program](087/A087060.asm)): Difference between 2n^2 and the nearest square number.
 * [A087069](http://oeis.org/A087069) ([L04 program](087/A087069.asm)): a(n) = Sum_{k >= 0} floor(n/(4^k)).
@@ -5168,6 +5167,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A096489](http://oeis.org/A096489) ([L09 program](096/A096489.asm)): Noncomposite numbers n such that number of decimal digits of n = number of divisors of n.
 * [A096491](http://oeis.org/A096491) ([L04 program](096/A096491.asm)): a(n) = sqrt(n) of n if n is a perfect square, otherwise a(n) = largest term in period of continued fraction expansion of square root of n.
 * [A096494](http://oeis.org/A096494) ([L09 program](096/A096494.asm)): Largest value in repeating part of continued fraction of square root of n-th prime.
+* [A096501](http://oeis.org/A096501) ([L28 program](096/A096501.asm)): Difference between primes preceding n+1 and n.
 * [A096582](http://oeis.org/A096582) ([L04 program](096/A096582.asm)): From the "100 Green Bottles" song.
 * [A096603](http://oeis.org/A096603) ([L09 program](096/A096603.asm)): Numbers occurring twice in A096607.
 * [A096604](http://oeis.org/A096604) ([L11 program](096/A096604.asm)): Numbers that appear at most once in A096607.
