@@ -8,22 +8,13 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
-  mov $6,2
-  mov $7,$0
-  lpb $6
-    mov $0,$7
-    sub $0,1
-    max $0,0
-    sub $6,1
-    cal $0,77947 ; Expansion of 1/(1 - x - x^2 - 2*x^3).
-    mov $4,$0
-  lpe
+  max $0,0
+  cal $0,46630 ; Number of cubic residues mod 2^n.
+  div $0,2
   mov $2,$3
-  min $7,1
-  mul $7,$4
-  mul $2,$7
+  mul $2,$0
   add $1,$2
-  mov $4,$7
+  mov $4,$0
 lpe
 min $5,1
 mul $5,$4

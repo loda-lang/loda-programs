@@ -4,6 +4,4 @@
 mul $0,2
 cal $0,4758 ; Binary expansion starts 110.
 mov $1,$0
-sub $1,25
 div $1,2
-add $1,12

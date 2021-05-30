@@ -3,12 +3,6 @@
 
 mov $2,$0
 cal $0,1953 ; a(n) = floor((n + 1/2) * sqrt(2)).
-sub $2,1
 add $0,$2
-mul $0,2
-add $0,1
-mov $1,68
-add $1,$0
-sub $1,67
-div $1,2
+mov $1,$0
 add $1,2

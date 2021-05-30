@@ -3,5 +3,4 @@
 
 mov $1,$0
 cal $0,301672 ; Coordination sequence for node of type V2 in "krr" 2-D tiling (or net).
-add $0,$1
-mov $1,$0
+add $1,$0
