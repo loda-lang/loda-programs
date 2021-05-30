@@ -3,5 +3,4 @@
 
 cal $0,245356 ; Number of numbers with property that their base 4/3 expansion (see A024631) has n digits.
 mov $1,$0
-mul $1,2
-div $1,8
+div $1,4

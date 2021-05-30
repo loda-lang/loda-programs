@@ -1891,7 +1891,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A234043](http://oeis.org/A234043) ([L05 program](234/A234043.asm)): a(n) = C(5*(n+1),4)/5, with n >= 0.
 * [A234044](http://oeis.org/A234044) ([L15 program](234/A234044.asm)): Period 7: repeat [2, -2, 1, 0, 0, 1, -2].
 * [A234045](http://oeis.org/A234045) ([L09 program](234/A234045.asm)): Period 7: repeat [0, 0, 1, -1, -1, 1, 0].
-* [A234046](http://oeis.org/A234046) ([L16 program](234/A234046.asm)): Period 7: repeat [0, 1, -1, 0, 0, -1, 1].
+* [A234046](http://oeis.org/A234046) ([L03 program](234/A234046.asm)): Period 7: repeat [0, 1, -1, 0, 0, -1, 1].
 * [A234249](http://oeis.org/A234249) ([L04 program](234/A234249.asm)): Number of ways to choose 4 points in an n X n X n triangular grid.
 * [A234253](http://oeis.org/A234253) ([L08 program](234/A234253.asm)): a(n) = sum_{i=1..n} C(7+i,8)^2.
 * [A234272](http://oeis.org/A234272) ([L11 program](234/A234272.asm)): G.f.: (1+4*x+x^2)/(1-4*x+x^2).
@@ -2385,8 +2385,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244728](http://oeis.org/A244728) ([L03 program](244/A244728.asm)): a(n) = 9*n^3.
 * [A244729](http://oeis.org/A244729) ([L03 program](244/A244729.asm)): 10*n^3.
 * [A244730](http://oeis.org/A244730) ([L03 program](244/A244730.asm)): a(n) = 2*n^4.
-* [A244735](http://oeis.org/A244735) ([L10 program](244/A244735.asm)): a(n) = (prime(n) mod 5) mod 2.
-* [A244738](http://oeis.org/A244738) ([L13 program](244/A244738.asm)): a(n) = (prime(n) mod 5) mod 3.
+* [A244735](http://oeis.org/A244735) ([L06 program](244/A244735.asm)): a(n) = (prime(n) mod 5) mod 2.
+* [A244738](http://oeis.org/A244738) ([L09 program](244/A244738.asm)): a(n) = (prime(n) mod 5) mod 3.
 * [A244750](http://oeis.org/A244750) ([L06 program](244/A244750.asm)): 0-additive sequence: a(n) is the smallest number larger than a(n-1) which is not the sum of any subset of earlier terms, with initial values {0, 2, 3, 4}.
 * [A244762](http://oeis.org/A244762) ([L08 program](244/A244762.asm)): a(n) = (5*3^n-2*n-1)/4.
 * [A244796](http://oeis.org/A244796) ([L05 program](244/A244796.asm)): Number of moduli m such that (prime(n) mod m) = 1.
@@ -2565,7 +2565,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246780](http://oeis.org/A246780) ([L25 program](246/A246780.asm)): Strictly increasing terms of the sequence A246778: a(1)= A246778(1) and for n>0 a(n+1) is next term greater than a(n) after that a(n) appears in A246778 for the first time.
 * [A246817](http://oeis.org/A246817) ([L16 program](246/A246817.asm)): Possible number of trailing zeros in hyperfactorials (A002109).
 * [A246831](http://oeis.org/A246831) ([L13 program](246/A246831.asm)): a(n) is the concatenation of n and 3n in binary.
-* [A246839](http://oeis.org/A246839) ([L16 program](246/A246839.asm)): Number of trailing zeros in A002109(n).
+* [A246839](http://oeis.org/A246839) ([L15 program](246/A246839.asm)): Number of trailing zeros in A002109(n).
 * [A246934](http://oeis.org/A246934) ([L03 program](246/A246934.asm)): The closest square to n-th prime.
 * [A246943](http://oeis.org/A246943) ([L13 program](246/A246943.asm)): a(4n) = 4*n , a(2n+1) = 8*n+4 , a(4n+2) = 2*n+1.
 * [A246960](http://oeis.org/A246960) ([L03 program](246/A246960.asm)): Directions of the lines in the (Heighway) Dragon Curve.

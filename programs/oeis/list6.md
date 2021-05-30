@@ -236,7 +236,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304519](http://oeis.org/A304519) ([L05 program](304/A304519.asm)): a(n) = 72*2^n -56 (n>=1).
 * [A304577](http://oeis.org/A304577) ([L11 program](304/A304577.asm)): Period 21: repeat (0,0,0,0,1,1,1,1,1,0,1,0,1,0,0,1,1,0,0,0,1).
 * [A304579](http://oeis.org/A304579) ([L05 program](304/A304579.asm)): a(n) = (n^2 + 1)*(n^2 + 2).
-* [A304588](http://oeis.org/A304588) ([L06 program](304/A304588.asm)): Length of shortest prefix of the Thue-Morse word (A010060) such that some length-n block appears twice.
+* [A304588](http://oeis.org/A304588) ([L05 program](304/A304588.asm)): Length of shortest prefix of the Thue-Morse word (A010060) such that some length-n block appears twice.
 * [A304605](http://oeis.org/A304605) ([L05 program](304/A304605.asm)): a(n) = 48*2^n + 26 (n>=1).
 * [A304606](http://oeis.org/A304606) ([L05 program](304/A304606.asm)): a(n) = 54*2^n + 28 (n >= 1).
 * [A304607](http://oeis.org/A304607) ([L05 program](304/A304607.asm)): a(n) = 252*2^n + 140 (n>=1).
@@ -675,7 +675,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313831](http://oeis.org/A313831) ([L13 program](313/A313831.asm)): Coordination sequence Gal.6.328.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313836](http://oeis.org/A313836) ([L20 program](313/A313836.asm)): Coordination sequence Gal.3.23.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313837](http://oeis.org/A313837) ([L53 program](313/A313837.asm)): Coordination sequence Gal.6.618.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A313862](http://oeis.org/A313862) ([L04 program](313/A313862.asm)): Coordination sequence Gal.6.354.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313862](http://oeis.org/A313862) ([L03 program](313/A313862.asm)): Coordination sequence Gal.6.354.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313872](http://oeis.org/A313872) ([L03 program](313/A313872.asm)): Coordination sequence Gal.6.617.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313873](http://oeis.org/A313873) ([L03 program](313/A313873.asm)): Coordination sequence Gal.3.21.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313875](http://oeis.org/A313875) ([L33 program](313/A313875.asm)): Coordination sequence Gal.4.134.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -987,7 +987,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318830](http://oeis.org/A318830) ([L05 program](318/A318830.asm)): a(n) = phi(n) - gcd(phi(n), n-1).
 * [A318841](http://oeis.org/A318841) ([L05 program](318/A318841.asm)): a(n) = n - A173557(n).
 * [A318919](http://oeis.org/A318919) ([L16 program](318/A318919.asm)): Define b(0)=0, b(1)[1]=1, b(1)[2]=1; and for n>=2, b(n)[1] = total number of digits in b(n-1), and b(n)[2] = total number of digits in b(0),...,b(n-1); a(n) = b(n)[2].
-* [A318934](http://oeis.org/A318934) ([L06 program](318/A318934.asm)): Numbers whose binary expansion begins with exactly two 1's.
+* [A318934](http://oeis.org/A318934) ([L04 program](318/A318934.asm)): Numbers whose binary expansion begins with exactly two 1's.
 * [A318935](http://oeis.org/A318935) ([L09 program](318/A318935.asm)): a(n) = Sum_{2^m divides n} 2^(3*m).
 * [A318937](http://oeis.org/A318937) ([L18 program](318/A318937.asm)): a(n) = 16 times the sum of the cubes of the divisors of 2*n+1.
 * [A318972](http://oeis.org/A318972) ([L17 program](318/A318972.asm)): The 7x+-1 function ("shortcut" definition): a(n) = (7n+1)/4 if n == +1 (mod 4), a(n) = (7n-1)/4 if n == -1 (mod 4), otherwise a(n) = n/2.
@@ -1859,7 +1859,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339308](http://oeis.org/A339308) ([L07 program](339/A339308.asm)): Partial sums of products of proper divisors of n (A007956).
 * [A339332](http://oeis.org/A339332) ([L06 program](339/A339332.asm)): Sums of antidiagonals in A283683.
 * [A339355](http://oeis.org/A339355) ([L49 program](339/A339355.asm)): Maximum number of copies of a 12345 permutation pattern in an alternating (or zig-zag) permutation of length n + 7.
-* [A339356](http://oeis.org/A339356) ([L35 program](339/A339356.asm)): Maximum number of copies of a 123456 permutation pattern in an alternating (or zig-zag) permutation of length n + 9.
+* [A339356](http://oeis.org/A339356) ([L10 program](339/A339356.asm)): Maximum number of copies of a 123456 permutation pattern in an alternating (or zig-zag) permutation of length n + 9.
 * [A339358](http://oeis.org/A339358) ([L50 program](339/A339358.asm)): Maximum number of copies of a 1234567 permutation pattern in an alternating (or zig-zag) permutation of length n + 11.
 * [A339370](http://oeis.org/A339370) ([L15 program](339/A339370.asm)): a(n) = Sum_{k=1..floor(n/2)} (n-k) * floor((n-k)/k).
 * [A339423](http://oeis.org/A339423) ([L03 program](339/A339423.asm)): If n = p_1 * ... * p_m with primes p_i <= p_{i+1}, a(n) = Sum_{k<m} Product_{j <= k} p_j.
@@ -2038,4 +2038,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344399](http://oeis.org/A344399) ([L08 program](344/A344399.asm)): a(n) = 4^n*binomial(n - 1/2, -1/2)*(n^2 + 1).
 * [A344483](http://oeis.org/A344483) ([L12 program](344/A344483.asm)): a(n) = n^2 + sigma(n) - n*d(n).
 * [A344526](http://oeis.org/A344526) ([L08 program](344/A344526.asm)): a(n) = Sum_{k=1..n} k^3 * phi(k).
+* [A344587](http://oeis.org/A344587) ([L04 program](344/A344587.asm)): a(n) = 2*A003961(n) - sigma(A003961(n)).
 * [A344622](http://oeis.org/A344622) ([L14 program](344/A344622.asm)): a(n) = n*(n+1)/2 - sigma(n) + d(n).

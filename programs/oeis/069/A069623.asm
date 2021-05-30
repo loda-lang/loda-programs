@@ -3,16 +3,14 @@
 
 mov $2,$0
 mov $4,$0
-lpb $2
-  mov $0,$4
-  sub $2,1
-  sub $0,$2
+lpb $4
+  clr $0,2
+  mov $0,$2
+  sub $4,1
+  sub $0,$4
   cal $0,132350 ; If n > 1 is a k-th power with k >= 2 then a(n) = 0, otherwise a(n) = 1.
-  sub $0,67076
-  pow $0,2
-  mov $3,$0
-  sub $3,4499055625
-  div $3,134150
-  add $1,$3
+  bin $1,$0
+  add $3,$1
 lpe
+mov $1,$3
 add $1,1
