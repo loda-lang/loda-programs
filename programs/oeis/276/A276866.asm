@@ -3,6 +3,4 @@
 
 cal $0,81147 ; Differences of Beatty sequence for square root of 5.
 mov $1,$0
-sub $1,128628
-mod $1,10
-add $1,10
+add $1,2

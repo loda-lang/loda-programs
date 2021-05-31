@@ -3,8 +3,7 @@
 
 add $0,1
 cal $0,228661 ; Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
-pow $0,2
-mov $1,$0
-div $1,12
-mul $1,48
-add $1,16
+add $1,$0
+pow $1,2
+div $1,4
+mul $1,16

@@ -3,18 +3,24 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $5,$0
 lpb $2
-  mov $0,$4
+  mov $0,$5
   sub $2,1
   sub $0,$2
-  cal $0,276869 ; First differences of the Beatty sequence A182769 for 2 + sqrt(1/2).
-  lpb $0
-    cal $0,40 ; The prime numbers.
-    dif $0,5
-    sub $0,1
-  lpe
-  mov $3,$0
+  sub $0,1
+  max $0,0
+  cal $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
+  cal $0,40812 ; Continued fraction for sqrt(842).
+  sub $0,12
+  mov $4,75528
+  sub $4,$0
+  pow $4,2
+  mov $3,$4
+  sub $3,5697683289
+  div $3,4227831
+  mul $3,3
   add $3,2
   add $1,$3
 lpe
+sub $1,3
