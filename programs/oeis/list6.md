@@ -31,7 +31,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300950](http://oeis.org/A300950) ([L35 program](300/A300950.asm)): Fixed points of A300948.
 * [A301291](http://oeis.org/A301291) ([L11 program](301/A301291.asm)): Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
 * [A301292](http://oeis.org/A301292) ([L07 program](301/A301292.asm)): Partial sums of A301291.
-* [A301293](http://oeis.org/A301293) ([L17 program](301/A301293.asm)): Expansion of (x^2+x+1)^2 / ((x^2+1)*(x-1)^2).
+* [A301293](http://oeis.org/A301293) ([L18 program](301/A301293.asm)): Expansion of (x^2+x+1)^2 / ((x^2+1)*(x-1)^2).
 * [A301294](http://oeis.org/A301294) ([L06 program](301/A301294.asm)): Partial sums of A301293.
 * [A301298](http://oeis.org/A301298) ([L05 program](301/A301298.asm)): Expansion of (1 + 4*x + 4*x^2 + 4*x^3 + x^4)/((1 - x)*(1 - x^3)).
 * [A301336](http://oeis.org/A301336) ([L03 program](301/A301336.asm)): a(n) = total number of 1's minus total number of 0's in binary expansions of 0, ..., n.
@@ -1143,6 +1143,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322573](http://oeis.org/A322573) ([L04 program](322/A322573.asm)): G.f. = g(f(x)), where f(x) = g.f. of Fibonacci sequence A000045 and g(x) = g.f. of Jacobsthal sequence A001045.
 * [A322582](http://oeis.org/A322582) ([L04 program](322/A322582.asm)): a(n) = n - A003958(n), where A003958 is fully multiplicative with a(p) = (p-1).
 * [A322585](http://oeis.org/A322585) ([L04 program](322/A322585.asm)): a(n) = 1 if n is a product of primorial numbers (A002110), 0 otherwise.
+* [A322590](http://oeis.org/A322590) ([L04 program](322/A322590.asm)): Lexicographically earliest such positive sequence a that a(i) = a(j) => A007947(i) = A007947(j) for all i, j.
 * [A322593](http://oeis.org/A322593) ([L07 program](322/A322593.asm)): a(n) = 2^n + 2*n^2 + 1.
 * [A322594](http://oeis.org/A322594) ([L09 program](322/A322594.asm)): a(n) = (4*n^3 + 12*n^2 - 4*n + 3)/3.
 * [A322595](http://oeis.org/A322595) ([L08 program](322/A322595.asm)): a(n) = (n^3 + 9*n + 14*n + 9)/3.
@@ -1360,7 +1361,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328259](http://oeis.org/A328259) ([L19 program](328/A328259.asm)): a(n) = n * sigma_2(n).
 * [A328260](http://oeis.org/A328260) ([L04 program](328/A328260.asm)): a(n) = n * omega(n).
 * [A328263](http://oeis.org/A328263) ([L07 program](328/A328263.asm)): a(n) = number of letters in a(n-1) (in Polish), with a(1) = 1.
-* [A328284](http://oeis.org/A328284) ([L48 program](328/A328284.asm)): An extension of the Jacobsthal numbers: 0, 0, 1, followed by A001045.
+* [A328284](http://oeis.org/A328284) ([L05 program](328/A328284.asm)): An extension of the Jacobsthal numbers: 0, 0, 1, followed by A001045.
 * [A328308](http://oeis.org/A328308) ([L03 program](328/A328308.asm)): a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
 * [A328309](http://oeis.org/A328309) ([L07 program](328/A328309.asm)): a(n) tells how many numbers there are in range 0..n such that their k-th arithmetic derivative is zero for some k >= 0.
 * [A328332](http://oeis.org/A328332) ([L06 program](328/A328332.asm)): Expansion of (1 + 4*x - 5*x^2 + 10*x^3) / ((1 - x) * (1 - 10*x^2)).
@@ -1374,6 +1375,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328778](http://oeis.org/A328778) ([L34 program](328/A328778.asm)): Number of indecomposable closed walks of length 2n along the edges of a cube based at a vertex.
 * [A328823](http://oeis.org/A328823) ([L05 program](328/A328823.asm)): a(n) is the least prime factor of A000096(n) = n*(n+3)/2.
 * [A328824](http://oeis.org/A328824) ([L07 program](328/A328824.asm)): Numerators of A113405(-n) (see the comment for details).
+* [A328827](http://oeis.org/A328827) ([L25 program](328/A328827.asm)): a(n) is the largest prime factor of n + n*(n+1)/2 = n*(n+3)/2.
 * [A328881](http://oeis.org/A328881) ([L14 program](328/A328881.asm)): a(n+3) = 2^n - a(n), a(0)=a(2)=1, a(1)=0 for n >= 0.
 * [A328882](http://oeis.org/A328882) ([L03 program](328/A328882.asm)): a(n) = n - 2^(sum of digits of n).
 * [A328890](http://oeis.org/A328890) ([L05 program](328/A328890.asm)): Number of acyclic edge covers of the complete bipartite graph K_{n,2}.
@@ -2045,3 +2047,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344564](http://oeis.org/A344564) ([L03 program](344/A344564.asm)): a(n) = [x^n] -3/(2*x - 1)^5.
 * [A344587](http://oeis.org/A344587) ([L04 program](344/A344587.asm)): a(n) = 2*A003961(n) - sigma(A003961(n)).
 * [A344622](http://oeis.org/A344622) ([L14 program](344/A344622.asm)): a(n) = n*(n+1)/2 - sigma(n) + d(n).
+* [A344814](http://oeis.org/A344814) ([L07 program](344/A344814.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 3^(k-1).

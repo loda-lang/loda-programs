@@ -4,7 +4,3 @@
 add $0,1
 cal $0,171577 ; 0, 1 and primes > 3.
 mov $1,$0
-mul $1,120
-div $1,240
-mul $1,2
-add $1,1

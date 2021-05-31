@@ -3,8 +3,4 @@
 
 pow $0,2
 cal $0,140271 ; Least divisor of n that is > sqrt(n), with a(1) = 1.
-mov $2,2
-cal $2,84266 ; Binomial transform of A084265.
-sub $0,$2
 mov $1,$0
-add $1,11

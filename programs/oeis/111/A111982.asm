@@ -10,19 +10,17 @@ lpb $8
   add $0,$8
   sub $0,1
   lpb $0
-    mul $0,2
     sub $0,1
-    add $4,$0
-    div $0,4
+    add $1,$0
+    div $0,2
+    add $1,$0
   lpe
-  add $1,1
-  add $4,$1
-  mov $1,$4
   mov $9,$8
-  mul $9,$4
+  mul $9,$1
   add $7,$9
 lpe
 min $6,1
 mul $6,$1
 mov $1,$7
 sub $1,$6
+add $1,1

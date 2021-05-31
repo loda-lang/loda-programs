@@ -3,7 +3,6 @@
 
 mul $0,2
 mov $1,$0
-mov $2,$0
-cal $2,320226 ; Number of integer partitions of n whose non-1 parts are all equal.
-add $1,$2
-sub $1,1
+cal $0,320226 ; Number of integer partitions of n whose non-1 parts are all equal.
+sub $0,1
+add $1,$0

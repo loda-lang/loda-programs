@@ -473,7 +473,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210826](http://oeis.org/A210826) ([L05 program](210/A210826.asm)): G.f.: Sum_{n>=1} a(n)*x^n/(1 - x^n) = Sum_{n>=1} x^(n^3).
 * [A210840](http://oeis.org/A210840) ([L07 program](210/A210840.asm)): Sum of the 8th powers of the digits of n.
 * [A210934](http://oeis.org/A210934) ([L03 program](210/A210934.asm)): Sum of prime factors of prime(n)+1 (counted with multiplicity).
-* [A210936](http://oeis.org/A210936) ([L05 program](210/A210936.asm)): Sum of prime factors of prime(n)-1 (counted with multiplicity).
+* [A210936](http://oeis.org/A210936) ([L07 program](210/A210936.asm)): Sum of prime factors of prime(n)-1 (counted with multiplicity).
 * [A210977](http://oeis.org/A210977) ([L07 program](210/A210977.asm)): A005475 and positive terms of A000566 interleaved.
 * [A210978](http://oeis.org/A210978) ([L09 program](210/A210978.asm)): A186029 and positive terms of A001106 interleaved.
 * [A210981](http://oeis.org/A210981) ([L06 program](210/A210981.asm)): A062725 and positive terms of A051682 interleaved.
@@ -538,7 +538,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A211540](http://oeis.org/A211540) ([L06 program](211/A211540.asm)): Number of ordered triples (w,x,y) with all terms in {1..n} and 2w = 3x + 4y.
 * [A211543](http://oeis.org/A211543) ([L09 program](211/A211543.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w=3x+5y.
 * [A211545](http://oeis.org/A211545) ([L21 program](211/A211545.asm)): Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and w+x+y>0.
-* [A211546](http://oeis.org/A211546) ([L12 program](211/A211546.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=3x-3y.
+* [A211546](http://oeis.org/A211546) ([L08 program](211/A211546.asm)): Number of ordered triples (w,x,y) with all terms in {1,...,n} and w=3x-3y.
 * [A211547](http://oeis.org/A211547) ([L03 program](211/A211547.asm)): The squares n^2, n >= 0, each one written three times.
 * [A211549](http://oeis.org/A211549) ([L10 program](211/A211549.asm)): Number of (n+1) X (n+1) -9..9 symmetric matrices with every 2 X 2 subblock having sum zero and one or two distinct values.
 * [A211562](http://oeis.org/A211562) ([L10 program](211/A211562.asm)): Number of nonnegative integer arrays of length n+2 with new values 0 upwards introduced in order, and containing the value n-1.
@@ -1289,7 +1289,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A221829](http://oeis.org/A221829) ([L06 program](221/A221829.asm)): Number of 2 X n arrays of occupancy after each element moves to some horizontal, vertical or antidiagonal neighbor, without 2-loops or left turns.
 * [A221837](http://oeis.org/A221837) ([L03 program](221/A221837.asm)): Number of integer Heron triangles of height n such that the angles adjacent to the base are not right.
 * [A221838](http://oeis.org/A221838) ([L12 program](221/A221838.asm)): Number of integer Heron triangles of height n.
-* [A221855](http://oeis.org/A221855) ([L63 program](221/A221855.asm)): Number of cyclotomic cosets of 13 mod 10^n.
+* [A221855](http://oeis.org/A221855) ([L05 program](221/A221855.asm)): Number of cyclotomic cosets of 13 mod 10^n.
 * [A221881](http://oeis.org/A221881) ([L10 program](221/A221881.asm)): Number of order-preserving or order-reversing full contraction mappings (of an n-chain) with (right) waist exactly k.
 * [A221882](http://oeis.org/A221882) ([L07 program](221/A221882.asm)): Number of order-preserving or order-reversing full contraction mappings of an n-chain.
 * [A221905](http://oeis.org/A221905) ([L05 program](221/A221905.asm)): 3^n + 3*n.

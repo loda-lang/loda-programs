@@ -4109,7 +4109,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032916](http://oeis.org/A032916) ([L04 program](032/A032916.asm)): Numbers whose set of base 9 digits is {1,3}.
 * [A032924](http://oeis.org/A032924) ([L04 program](032/A032924.asm)): Numbers whose ternary expansion contains no 0.
 * [A032925](http://oeis.org/A032925) ([L07 program](032/A032925.asm)): Numbers whose set of base 4 digits is {1,2}.
-* [A032926](http://oeis.org/A032926) ([L22 program](032/A032926.asm)): Numbers whose set of base 5 digits is {1,2}.
+* [A032926](http://oeis.org/A032926) ([L04 program](032/A032926.asm)): Numbers whose set of base 5 digits is {1,2}.
 * [A032927](http://oeis.org/A032927) ([L30 program](032/A032927.asm)): Numbers whose set of base 6 digits is {1,2}.
 * [A032928](http://oeis.org/A032928) ([L24 program](032/A032928.asm)): Numbers whose set of base 7 digits is {1,2}.
 * [A032929](http://oeis.org/A032929) ([L24 program](032/A032929.asm)): Numbers whose set of base 8 digits is {1,2}.
@@ -4174,7 +4174,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033183](http://oeis.org/A033183) ([L10 program](033/A033183.asm)): a(n) = number of pairs (p,q) such that 4*p + 9*q = n.
 * [A033192](http://oeis.org/A033192) ([L04 program](033/A033192.asm)): a(n) = binomial(Fibonacci(n) + 1, 2).
 * [A033264](http://oeis.org/A033264) ([L05 program](033/A033264.asm)): Number of blocks of {1,0} in the binary expansion of n.
-* [A033265](http://oeis.org/A033265) ([L14 program](033/A033265.asm)): Number of i such that d(i) >= d(i-1), where Sum_{i=0..m} d(i)*2^i is the base-2 representation of n.
+* [A033265](http://oeis.org/A033265) ([L08 program](033/A033265.asm)): Number of i such that d(i) >= d(i-1), where Sum_{i=0..m} d(i)*2^i is the base-2 representation of n.
 * [A033270](http://oeis.org/A033270) ([L11 program](033/A033270.asm)): Number of odd primes <= n.
 * [A033271](http://oeis.org/A033271) ([L04 program](033/A033271.asm)): Number of odd nonprimes <= n.
 * [A033275](http://oeis.org/A033275) ([L07 program](033/A033275.asm)): Number of diagonal dissections of an n-gon into 3 regions.

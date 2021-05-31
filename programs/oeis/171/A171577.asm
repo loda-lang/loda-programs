@@ -3,7 +3,8 @@
 
 mov $1,$0
 lpb $0
-  cal $0,160656 ; The odd prime numbers together with 0: p - (-1)^p - 1 where p = n-th prime.
-  mov $1,$0
-  mov $0,1
+  pow $1,0
+  cal $0,40 ; The prime numbers.
+  mul $1,$0
+  mod $0,2
 lpe

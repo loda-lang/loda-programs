@@ -3,12 +3,11 @@
 
 lpb $0
   mov $2,$0
-  cal $2,163661 ; a(n) = n*(2*n^2 + 5*n + 17)/2.
   sub $0,1
+  mul $1,2
+  div $2,2
   mod $2,2
   add $1,$2
-  mul $1,2
 lpe
-div $1,4
-mul $1,10
+mul $1,5
 add $1,2
