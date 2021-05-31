@@ -5,6 +5,5 @@ add $0,3
 cal $0,56182 ; First differences of A003063.
 mov $1,$0
 sub $1,38
-div $1,4
-mul $1,20
+mul $1,5
 add $1,203

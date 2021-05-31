@@ -1,13 +1,9 @@
 ; A086374: Number of factors over Q in the factorization of T_n(x) + 1 where T_n(x) is the Chebyshev polynomial of the first kind.
 ; 1,2,3,2,3,4,3,2,5,4,3,4,3,4,7,2,3,6,3,4,7,4,3,4,5,4,7,4,3,8,3,2,7,4,7,6,3,4,7,4,3,8,3,4,11,4,3,4,5,6,7,4,3,8,7,4,7,4,3,8,3,4,11,2,7,8,3,4,7,8,3,6,3,4,11,4,7,8,3,4,9,4,3,8,7,4,7,4,3,12,7,4,7,4,7,4,3,6,11,6,3,8,3,4,15,4,3,8,3,8,7,4,3,8,7,4,11,4,7,8,5,4,7,4,7,12,3,2,7,8,3,8,7,4,15,4,3,8,3,8,7,4,7,6,7,4,11,4,3,12,3,4,11,8,7,8,3,4,7,4,7,10,3,4,15,4,3,8,5,8,11,4,3,8,11,4,7,4,3,12,3,8,7,4,7,8,7,4,15,8,3,4,3,4,15,6,3,12,3,6,7,4,7,8,7,4,11,4,7,16,3,4,7,4,7,8,7,4,7,8,7,8,3,4,17,4,3,8,3,8,15,4,3,12,7,4,7,8,3,8,3,6,11,4,11,8,7,4,7,8
 
-mov $1,2
-gcd $1,$0
-cal $0,91954 ; Number of odd proper divisors of n. That is, the number of odd divisors of n that are less than n.
-mul $0,2
-add $0,236
-add $1,$0
-mul $1,2
-sub $1,476
-div $1,2
-add $1,1
+mov $2,$0
+mod $0,2
+cal $2,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+add $0,$2
+mov $1,$0
+sub $1,1

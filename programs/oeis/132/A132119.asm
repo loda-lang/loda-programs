@@ -3,9 +3,4 @@
 
 mov $1,$0
 cal $1,130296 ; Triangle read by rows: T[i,1]=i, T[i,j]=1 for 1 < j <= i = 1,2,3,...
-sub $0,1
-sub $1,$0
-mov $2,$0
-mul $2,2
-add $1,$2
-add $1,1
+add $1,$0

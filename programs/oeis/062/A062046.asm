@@ -7,14 +7,17 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
   max $0,0
-  cal $0,222963 ; a(n) = (p-3)*(p+3)/4 where p is the n-th prime.
+  cal $0,153480 ; a(n) = 2*prime(n)^2 - 4.
   mov $2,$3
-  mul $2,$0
-  add $1,$2
   mov $4,$0
+  div $4,16
+  mul $4,4
+  mul $2,$4
+  add $1,$2
 lpe
 min $5,1
 mul $5,$4
 sub $1,$5
+div $1,4
+mul $1,2

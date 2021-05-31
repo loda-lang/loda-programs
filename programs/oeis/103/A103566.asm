@@ -3,14 +3,16 @@
 
 mov $2,$0
 add $2,1
-mov $3,$0
+mov $4,$0
 lpb $2
-  mov $0,$3
+  mov $0,$4
   sub $2,1
   sub $0,$2
   add $0,3
-  cal $0,173950 ; a(n) = 1 if 6 divides (prime(n) + 1), a(n) = -1 if 6 divides (prime(n) - 1), a(n) = 0 otherwise.
-  max $0,0
-  cal $0,131130 ; Binomial transform of [1,1,7,1,7,1,7,1,...].
-  add $1,$0
+  cal $0,39704 ; a(n) = n-th prime modulo 6.
+  cal $0,319279 ; Numbers that are congruent to {0, 3, 7, 10} mod 12.
+  mov $3,$0
+  div $3,12
+  add $3,1
+  add $1,$3
 lpe

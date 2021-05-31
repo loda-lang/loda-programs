@@ -9,18 +9,12 @@ lpb $3
   add $0,$3
   add $0,1
   cal $0,97075 ; Expansion of (1-x-x^2)/(1-x-3*x^2-x^3).
-  mul $0,2
   mov $2,$3
+  mul $2,$0
+  add $1,$2
   mov $4,$0
-  lpb $2
-    mov $1,$4
-    sub $2,1
-  lpe
 lpe
-lpb $5
-  sub $1,$4
-  mov $5,0
-lpe
-sub $1,2
-div $1,2
-add $1,2
+min $5,1
+mul $5,$4
+sub $1,$5
+add $1,1

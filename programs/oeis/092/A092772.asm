@@ -3,8 +3,6 @@
 
 add $0,2
 cal $0,175247 ; Primes (A000040) with noncomposite (A008578) subscripts.
+pow $0,2
 mov $1,$0
-pow $1,2
-sub $1,25
 div $1,24
-add $1,1

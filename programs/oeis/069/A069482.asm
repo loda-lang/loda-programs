@@ -7,20 +7,16 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
   max $0,0
-  cal $0,74367 ; (p^2-5)/4 for odd primes p.
+  cal $0,153480 ; a(n) = 2*prime(n)^2 - 4.
   mov $2,$3
-  mov $4,8
-  mul $4,$0
-  div $4,2
-  add $4,1
-  lpb $2
-    mov $1,$4
-    sub $2,1
-  lpe
+  mov $4,$0
+  div $4,16
+  mul $4,8
+  add $4,5
+  mul $2,$4
+  add $1,$2
 lpe
-lpb $5
-  sub $1,$4
-  mov $5,0
-lpe
+min $5,1
+mul $5,$4
+sub $1,$5
