@@ -3,6 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,116717 ; Number of permutations of length n which avoid the patterns 231, 1423, 3214.
+cal $0,14162 ; Apply partial sum operator thrice to Fibonacci numbers.
 mov $1,$0
-sub $1,1
