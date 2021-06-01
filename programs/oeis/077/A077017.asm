@@ -4,7 +4,6 @@
 sub $0,1
 mul $0,2
 max $0,0
-cal $0,93515 ; Numbers k such that either k or k-1 is a prime.
+cal $0,173919 ; Numbers that are prime or one less than a prime.
 mov $1,$0
-add $1,$0
-sub $1,2
+mul $1,2

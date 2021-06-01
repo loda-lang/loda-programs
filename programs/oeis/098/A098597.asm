@@ -1,11 +1,6 @@
 ; A098597: Numerator of Catalan(n)/2^(2n+1). Also, numerators of (2n-1)!!/(n+1)!. Odd part of the n-th Catalan number.
 ; 1,1,1,5,7,21,33,429,715,2431,4199,29393,52003,185725,334305,9694845,17678835,64822395,119409675,883631595,1641030105,6116566755,11435320455,171529806825,322476036831,1215486600363,2295919134019,17383387729001,32968493968795,125280277081421,238436656380769
 
-cal $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-lpb $0
-  dif $0,2
-lpe
+mul $0,2
+cal $0,134828 ; Numerator of moments of Chebyshev U- (or S-) polynomials.
 mov $1,$0
-div $1,2
-mul $1,2
-add $1,1

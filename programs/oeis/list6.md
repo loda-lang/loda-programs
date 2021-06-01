@@ -461,7 +461,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308710](http://oeis.org/A308710) ([L11 program](308/A308710.asm)): Primitive practical numbers of the form 2^i * prime(k).
 * [A308720](http://oeis.org/A308720) ([L08 program](308/A308720.asm)): The maximum value in the continued fraction of sqrt(n), or 0 if there is no fractional part.
 * [A308733](http://oeis.org/A308733) ([L06 program](308/A308733.asm)): Sum of the smallest parts of the partitions of n into 4 parts.
-* [A308754](http://oeis.org/A308754) ([L04 program](308/A308754.asm)): a(0) = 0, a(n) = a(n-1) + 1 if 2*n + 3 is prime, otherwise a(n) = a(n-1).
+* [A308754](http://oeis.org/A308754) ([L05 program](308/A308754.asm)): a(0) = 0, a(n) = a(n-1) + 1 if 2*n + 3 is prime, otherwise a(n) = a(n-1).
 * [A308807](http://oeis.org/A308807) ([L07 program](308/A308807.asm)): a(n) = 4*5^(n-1) + n.
 * [A308901](http://oeis.org/A308901) ([L20 program](308/A308901.asm)): Lexicographically earliest overlap-free binary sequence.
 * [A309057](http://oeis.org/A309057) ([L03 program](309/A309057.asm)): a(0) = 1; a(2*n) = 3*a(n), a(2*n+1) = a(n).
@@ -587,7 +587,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A312685](http://oeis.org/A312685) ([L27 program](312/A312685.asm)): Coordination sequence Gal.6.253.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312890](http://oeis.org/A312890) ([L25 program](312/A312890.asm)): Coordination sequence Gal.6.115.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312893](http://oeis.org/A312893) ([L29 program](312/A312893.asm)): Coordination sequence Gal.5.95.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A312894](http://oeis.org/A312894) ([L06 program](312/A312894.asm)): Coordination sequence Gal.4.38.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A312894](http://oeis.org/A312894) ([L05 program](312/A312894.asm)): Coordination sequence Gal.4.38.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312895](http://oeis.org/A312895) ([L05 program](312/A312895.asm)): Coordination sequence Gal.4.58.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312901](http://oeis.org/A312901) ([L05 program](312/A312901.asm)): Coordination sequence Gal.3.10.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A312902](http://oeis.org/A312902) ([L06 program](312/A312902.asm)): Coordination sequence Gal.6.129.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -1737,7 +1737,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336751](http://oeis.org/A336751) ([L10 program](336/A336751.asm)): Smallest side of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336754](http://oeis.org/A336754) ([L09 program](336/A336754.asm)): Perimeters in increasing order of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336819](http://oeis.org/A336819) ([L09 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
-* [A336842](http://oeis.org/A336842) ([L03 program](336/A336842.asm)): Number of trailing 1-bits in the binary representation of A003961(n): a(n) = A007814(1+A003961(n)).
+* [A336842](http://oeis.org/A336842) ([L04 program](336/A336842.asm)): Number of trailing 1-bits in the binary representation of A003961(n): a(n) = A007814(1+A003961(n)).
 * [A336845](http://oeis.org/A336845) ([L03 program](336/A336845.asm)): a(n) = A000005(n) * A003961(n), where A003961 is the prime shift towards larger primes, and A000005 gives the number of divisors of n, and also of A003961(n).
 * [A336850](http://oeis.org/A336850) ([L03 program](336/A336850.asm)): a(n) = gcd(A003961(n), sigma(A003961(n))), where A003961 is the prime shift towards larger primes.
 * [A336851](http://oeis.org/A336851) ([L03 program](336/A336851.asm)): a(n) = sigma(A003961(n)) - A003961(n), where A003961 is a prime shift towards larger primes, sigma is the sum of divisors.

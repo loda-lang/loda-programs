@@ -404,7 +404,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155107](http://oeis.org/A155107) ([L23 program](155/A155107.asm)): Numbers that are 23 or 30 (mod 53).
 * [A155110](http://oeis.org/A155110) ([L06 program](155/A155110.asm)): a(n) = 8*Fibonacci(2n+1).
 * [A155116](http://oeis.org/A155116) ([L17 program](155/A155116.asm)): a(n) = 3*a(n-1) + 3*a(n-2), n>2, a(0)=1, a(1)=2, a(2)=8.
-* [A155117](http://oeis.org/A155117) ([L39 program](155/A155117.asm)): a(n) = 4*a(n-1) + 4*a(n-2), n>2, a(0)=1, a(1)=3, a(2)=15.
+* [A155117](http://oeis.org/A155117) ([L06 program](155/A155117.asm)): a(n) = 4*a(n-1) + 4*a(n-2), n>2, a(0)=1, a(1)=3, a(2)=15.
 * [A155120](http://oeis.org/A155120) ([L08 program](155/A155120.asm)): a(n) = 2*(n^3 + n^2 + n - 1).
 * [A155121](http://oeis.org/A155121) ([L09 program](155/A155121.asm)): a(n) = 2*n*(1 + n + n^2 + n^3) - 3.
 * [A155122](http://oeis.org/A155122) ([L16 program](155/A155122.asm)): a(n) = 4*(3*n+2)*(2*n+1)*(n+2)*(n+1).
@@ -612,6 +612,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157335](http://oeis.org/A157335) ([L07 program](157/A157335.asm)): Expansion of 1/( (1+x)*(1-7*x+x^2) ).
 * [A157336](http://oeis.org/A157336) ([L03 program](157/A157336.asm)): a(n) = 8*(8*n + 1).
 * [A157337](http://oeis.org/A157337) ([L07 program](157/A157337.asm)): a(n) = 128*n^2 + 32*n + 1.
+* [A157338](http://oeis.org/A157338) ([L05 program](157/A157338.asm)): First primes in successive prime centuries.
 * [A157362](http://oeis.org/A157362) ([L07 program](157/A157362.asm)): a(n) = 49*n^2 - 2*n.
 * [A157363](http://oeis.org/A157363) ([L03 program](157/A157363.asm)): 686n - 14.
 * [A157364](http://oeis.org/A157364) ([L09 program](157/A157364.asm)): a(n) = 4802*n^2 - 196*n + 1.
@@ -683,7 +684,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157651](http://oeis.org/A157651) ([L07 program](157/A157651.asm)): a(n) = 100*n^2 - 49*n + 6.
 * [A157652](http://oeis.org/A157652) ([L03 program](157/A157652.asm)): a(n) = 40*(200*n - 49).
 * [A157653](http://oeis.org/A157653) ([L07 program](157/A157653.asm)): a(n) = 80000*n^2 - 39200*n + 4801.
-* [A157657](http://oeis.org/A157657) ([L06 program](157/A157657.asm)): a(1) = 1, a(n) = -mu(n) for n >= 2.
+* [A157657](http://oeis.org/A157657) ([L03 program](157/A157657.asm)): a(1) = 1, a(n) = -mu(n) for n >= 2.
 * [A157658](http://oeis.org/A157658) ([L06 program](157/A157658.asm)): a(1) = 0, a(n) = -mu(n) for n >= 2.
 * [A157659](http://oeis.org/A157659) ([L05 program](157/A157659.asm)): a(n) = 100*n^2 - n.
 * [A157660](http://oeis.org/A157660) ([L03 program](157/A157660.asm)): a(n) = 8000*n - 40.
@@ -2506,7 +2507,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171516](http://oeis.org/A171516) ([L09 program](171/A171516.asm)): a(n) = a(n-1) + a(n-2) + k, n>1; with a(0) = 1, a(1) = 2, k = 3.
 * [A171519](http://oeis.org/A171519) ([L18 program](171/A171519.asm)): a(n) = numbers m such that are not the product of k-th noncomposite number and k for any k >= 1.
 * [A171522](http://oeis.org/A171522) ([L06 program](171/A171522.asm)): Denominator of 1/n^2-1/(n+2)^2.
-* [A171523](http://oeis.org/A171523) ([L06 program](171/A171523.asm)): a(n) = n*(n-th nonprime number).
+* [A171523](http://oeis.org/A171523) ([L04 program](171/A171523.asm)): a(n) = n*(n-th nonprime number).
 * [A171524](http://oeis.org/A171524) ([L26 program](171/A171524.asm)): a(n) = numbers m such that are not the product of k-th nonprime number and k for any k >= 1.
 * [A171525](http://oeis.org/A171525) ([L11 program](171/A171525.asm)): Numerator of (n-th noncomposite/n).
 * [A171526](http://oeis.org/A171526) ([L04 program](171/A171526.asm)): Denominator of (n-th noncomposite/n).
@@ -2514,7 +2515,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171556](http://oeis.org/A171556) ([L09 program](171/A171556.asm)): a(n)=3*C(n)-2, where C(n)=A000108(n).
 * [A171559](http://oeis.org/A171559) ([L04 program](171/A171559.asm)): Powers of 2 (cf. A000079) with 1 replaced by 3.
 * [A171575](http://oeis.org/A171575) ([L20 program](171/A171575.asm)): n-th noncomposite number plus n-th even nonprime number.
-* [A171577](http://oeis.org/A171577) ([L06 program](171/A171577.asm)): 0, 1 and primes > 3.
+* [A171577](http://oeis.org/A171577) ([L07 program](171/A171577.asm)): 0, 1 and primes > 3.
 * [A171581](http://oeis.org/A171581) ([L03 program](171/A171581.asm)): The natural numbers without primes > 3.
 * [A171587](http://oeis.org/A171587) ([L05 program](171/A171587.asm)): Sequence of the diagonal variant of the Fibonacci word fractal. Sequence of the Fibonacci tile.
 * [A171588](http://oeis.org/A171588) ([L03 program](171/A171588.asm)): The Pell word: Fixed point of the morphism 0->001, 1->0.
@@ -4158,6 +4159,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188259](http://oeis.org/A188259) ([L25 program](188/A188259.asm)): Positions of 1 in A188257; complement of A188258.
 * [A188261](http://oeis.org/A188261) ([L14 program](188/A188261.asm)): Positions of 0 in A188260; complement of A188262.
 * [A188262](http://oeis.org/A188262) ([L12 program](188/A188262.asm)): Positions of 1 in A188260; complement of A188261.
+* [A188290](http://oeis.org/A188290) ([L06 program](188/A188290.asm)): Positions of 0 in the zero-one sequence [nr+4r]-[nr]-[4r], where r=sqrt(5) and []=floor.
 * [A188293](http://oeis.org/A188293) ([L37 program](188/A188293.asm)): Positions of 1 in A188291; complement of A188292.
 * [A188295](http://oeis.org/A188295) ([L19 program](188/A188295.asm)): [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
 * [A188298](http://oeis.org/A188298) ([L31 program](188/A188298.asm)): Positions of 0 in A188297; complement of A188299.
@@ -4268,7 +4270,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189663](http://oeis.org/A189663) ([L03 program](189/A189663.asm)): Partial sums of A189661.
 * [A189664](http://oeis.org/A189664) ([L03 program](189/A189664.asm)): Fixed point of the morphism 0->010, 1->001.
 * [A189666](http://oeis.org/A189666) ([L05 program](189/A189666.asm)): Positions of 1 in A189664; complement of A189665.
-* [A189667](http://oeis.org/A189667) ([L06 program](189/A189667.asm)): Partial sums of A189664.
+* [A189667](http://oeis.org/A189667) ([L10 program](189/A189667.asm)): Partial sums of A189664.
 * [A189672](http://oeis.org/A189672) ([L03 program](189/A189672.asm)): Partial sums of A080846.
 * [A189673](http://oeis.org/A189673) ([L06 program](189/A189673.asm)): Fixed point of the morphism 0->010, 1->110.
 * [A189674](http://oeis.org/A189674) ([L07 program](189/A189674.asm)): Partial sums of A189673.
@@ -4345,7 +4347,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190329](http://oeis.org/A190329) ([L05 program](190/A190329.asm)): a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=1/s.
 * [A190330](http://oeis.org/A190330) ([L07 program](190/A190330.asm)): a(n) = n + [n*r/s] + [n*t/s];  r=1, s=sqrt(2), t=1/s.
 * [A190332](http://oeis.org/A190332) ([L07 program](190/A190332.asm)): n + [n*s/r] + [n*t/r]; r=1, s=sqrt(3), t=1/s.
-* [A190334](http://oeis.org/A190334) ([L04 program](190/A190334.asm)): a(n) = n + floor(n*r/t) + floor(n*s/t) where r=1, s=sqrt(3), t=1/s.
+* [A190334](http://oeis.org/A190334) ([L05 program](190/A190334.asm)): a(n) = n + floor(n*r/t) + floor(n*s/t) where r=1, s=sqrt(3), t=1/s.
 * [A190335](http://oeis.org/A190335) ([L05 program](190/A190335.asm)): a(n) = n + [n*s/r] + [n*t/r]; r=2, s=sqrt(2), t=1/s.
 * [A190336](http://oeis.org/A190336) ([L05 program](190/A190336.asm)): a(n) = n + [n*r/s] + [n*t/s];  r=2, s=sqrt(2), t=1/s.
 * [A190337](http://oeis.org/A190337) ([L06 program](190/A190337.asm)): a(n) = n + [n*r/t] + [n*s/t];  r=2, s=sqrt(2), t=1/s.
@@ -4583,7 +4585,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A192957](http://oeis.org/A192957) ([L06 program](192/A192957.asm)): Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192958](http://oeis.org/A192958) ([L08 program](192/A192958.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192959](http://oeis.org/A192959) ([L12 program](192/A192959.asm)): Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
-* [A192960](http://oeis.org/A192960) ([L08 program](192/A192960.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
+* [A192960](http://oeis.org/A192960) ([L07 program](192/A192960.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192961](http://oeis.org/A192961) ([L06 program](192/A192961.asm)): Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192962](http://oeis.org/A192962) ([L29 program](192/A192962.asm)): Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 * [A192963](http://oeis.org/A192963) ([L13 program](192/A192963.asm)): Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
