@@ -199,6 +199,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254667](http://oeis.org/A254667) ([L03 program](254/A254667.asm)): The nonnegative numbers with 2 instead of 1.
 * [A254710](http://oeis.org/A254710) ([L12 program](254/A254710.asm)): Indices of centered square numbers (A001844) which are also pentagonal numbers (A000326).
 * [A254729](http://oeis.org/A254729) ([L05 program](254/A254729.asm)): Number of numbers j + k*sqrt(2) of length n, where the length is the least number of steps to reach 0, the allowable steps being x -> x + 1 and x -> x*sqrt(2).
+* [A254732](http://oeis.org/A254732) ([L08 program](254/A254732.asm)): a(n) is the least k > n such that n divides k^2.
 * [A254745](http://oeis.org/A254745) ([L08 program](254/A254745.asm)): Chebyshev polynomials of the second kind, U(n,x)^2, evaluated at x = sqrt(3)/2.
 * [A254749](http://oeis.org/A254749) ([L04 program](254/A254749.asm)): 1-gonal pyramidal numbers.
 * [A254757](http://oeis.org/A254757) ([L20 program](254/A254757.asm)): Part of the positive proper solutions x of the Pell equation x^2 - 2*y^2 = - 7^2 based on the fundamental solution (x0, y0)= (-1, 5).
@@ -1215,7 +1216,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269468](http://oeis.org/A269468) ([L07 program](269/A269468.asm)): Number of length-4 0..n arrays with no repeated value equal to the previous repeated value.
 * [A269469](http://oeis.org/A269469) ([L55 program](269/A269469.asm)): Number of length-5 0..n arrays with no repeated value equal to the previous repeated value.
 * [A269470](http://oeis.org/A269470) ([L67 program](269/A269470.asm)): Number of length-6 0..n arrays with no repeated value equal to the previous repeated value.
-* [A269486](http://oeis.org/A269486) ([L11 program](269/A269486.asm)): a(n) = Sum_{j=0..10} (-n)^j.
+* [A269486](http://oeis.org/A269486) ([L06 program](269/A269486.asm)): a(n) = Sum_{j=0..10} (-n)^j.
 * [A269495](http://oeis.org/A269495) ([L07 program](269/A269495.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by one.
 * [A269496](http://oeis.org/A269496) ([L72 program](269/A269496.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by one.
 * [A269497](http://oeis.org/A269497) ([L76 program](269/A269497.asm)): Number of length-6 0..n arrays with no repeated value differing from the previous repeated value by one.
@@ -1919,6 +1920,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280637](http://oeis.org/A280637) ([L04 program](280/A280637.asm)): Sum of the digits of n^2+1.
 * [A280658](http://oeis.org/A280658) ([L14 program](280/A280658.asm)): Numbers ending with their digital root in decimal representation.
 * [A280682](http://oeis.org/A280682) ([L08 program](280/A280682.asm)): Integers m such that floor(sqrt(m)) is even.
+* [A280700](http://oeis.org/A280700) ([L06 program](280/A280700.asm)): Binary weight of terms of A005187: a(n) = A000120(A005187(n)).
 * [A280710](http://oeis.org/A280710) ([L04 program](280/A280710.asm)): Characteristic function of squarefree semiprimes.
 * [A280713](http://oeis.org/A280713) ([L10 program](280/A280713.asm)): Partial sums of A055067 where A055067(n) is the product of non-divisors of n.
 * [A280724](http://oeis.org/A280724) ([L11 program](280/A280724.asm)): Expansion of 1/(1 - x) + (1/(1 - x)^2)*Sum_{k>=0} x^(3^k).
@@ -2080,7 +2082,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A284354](http://oeis.org/A284354) ([L08 program](284/A284354.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 * [A284359](http://oeis.org/A284359) ([L08 program](284/A284359.asm)): Double triangle (2*n+2 terms by row). Every row is 2*n + 1 followed by 2*n + 1 times 2*n + 2.
 * [A284395](http://oeis.org/A284395) ([L06 program](284/A284395.asm)): Positions of 1 in A284394.
-* [A284396](http://oeis.org/A284396) ([L06 program](284/A284396.asm)): Positions of 2 in A284394.
+* [A284396](http://oeis.org/A284396) ([L04 program](284/A284396.asm)): Positions of 2 in A284394.
 * [A284405](http://oeis.org/A284405) ([L03 program](284/A284405.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 913", based on the 5-celled von Neumann neighborhood.
 * [A284413](http://oeis.org/A284413) ([L27 program](284/A284413.asm)): Exponent of 3 in 2^n + 1.
 * [A284429](http://oeis.org/A284429) ([L10 program](284/A284429.asm)): A quasilinear solution to Hofstadter's Q recurrence.

@@ -288,7 +288,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001651](http://oeis.org/A001651) ([L04 program](001/A001651.asm)): Numbers not divisible by 3.
 * [A001652](http://oeis.org/A001652) ([L03 program](001/A001652.asm)): a(n) = 6*a(n-1) - a(n-2) + 2 with a(0) = 0, a(1) = 3.
 * [A001653](http://oeis.org/A001653) ([L03 program](001/A001653.asm)): Numbers k such that 2*k^2 - 1 is a square.
-* [A001654](http://oeis.org/A001654) ([L03 program](001/A001654.asm)): Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
+* [A001654](http://oeis.org/A001654) ([L04 program](001/A001654.asm)): Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
 * [A001656](http://oeis.org/A001656) ([L07 program](001/A001656.asm)): Fibonomial coefficients.
 * [A001670](http://oeis.org/A001670) ([L05 program](001/A001670.asm)): n appears n times (n even).
 * [A001690](http://oeis.org/A001690) ([L12 program](001/A001690.asm)): Non-Fibonacci numbers.
@@ -1325,7 +1325,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008512](http://oeis.org/A008512) ([L07 program](008/A008512.asm)): Number of points on the surface of 5-dimensional cube.
 * [A008513](http://oeis.org/A008513) ([L44 program](008/A008513.asm)): Number of points on surface of 6-dimensional cube.
 * [A008514](http://oeis.org/A008514) ([L07 program](008/A008514.asm)): 4-dimensional centered cube numbers.
-* [A008515](http://oeis.org/A008515) ([L09 program](008/A008515.asm)): 5-dimensional centered cube numbers.
+* [A008515](http://oeis.org/A008515) ([L07 program](008/A008515.asm)): 5-dimensional centered cube numbers.
 * [A008516](http://oeis.org/A008516) ([L75 program](008/A008516.asm)): 6-dimensional centered cube numbers.
 * [A008522](http://oeis.org/A008522) ([L09 program](008/A008522.asm)): Numbers that contain the letter `t'.
 * [A008527](http://oeis.org/A008527) ([L08 program](008/A008527.asm)): Coordination sequence for body-centered tetragonal lattice.
@@ -3000,7 +3000,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022839](http://oeis.org/A022839) ([L04 program](022/A022839.asm)): Beatty sequence for sqrt(5).
 * [A022840](http://oeis.org/A022840) ([L05 program](022/A022840.asm)): Beatty sequence for sqrt(6).
 * [A022841](http://oeis.org/A022841) ([L11 program](022/A022841.asm)): Beatty sequence for sqrt(7).
-* [A022842](http://oeis.org/A022842) ([L04 program](022/A022842.asm)): Beatty sequence for sqrt(8).
+* [A022842](http://oeis.org/A022842) ([L06 program](022/A022842.asm)): Beatty sequence for sqrt(8).
 * [A022846](http://oeis.org/A022846) ([L05 program](022/A022846.asm)): Nearest integer to n*sqrt(2).
 * [A022847](http://oeis.org/A022847) ([L08 program](022/A022847.asm)): Integer nearest n*sqrt(3).
 * [A022848](http://oeis.org/A022848) ([L04 program](022/A022848.asm)): Integer nearest nx, where x = sqrt(5).
@@ -3301,10 +3301,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024675](http://oeis.org/A024675) ([L04 program](024/A024675.asm)): Average of two consecutive odd primes.
 * [A024676](http://oeis.org/A024676) ([L04 program](024/A024676.asm)): Prime divisors (not necessarily distinct) of n-th term of sequence A024675 (averages of two consecutive odd primes).
 * [A024678](http://oeis.org/A024678) ([L04 program](024/A024678.asm)): a(n) is the position of (prime(n+1) + prime(n+2))/2 in the ordered nonprimes.
-* [A024698](http://oeis.org/A024698) ([L05 program](024/A024698.asm)): a(n) = (prime(n+1) - 1)/4 if this is an integer or (prime(n+1) + 1)/4 otherwise.
+* [A024698](http://oeis.org/A024698) ([L04 program](024/A024698.asm)): a(n) = (prime(n+1) - 1)/4 if this is an integer or (prime(n+1) + 1)/4 otherwise.
 * [A024699](http://oeis.org/A024699) ([L06 program](024/A024699.asm)): a(n) = (prime(n+2)-1)/6 if this is an integer or (prime(n+2)+ 1)/6 otherwise.
 * [A024700](http://oeis.org/A024700) ([L05 program](024/A024700.asm)): a(n) = (prime(n+2)^2 - 1)/3.
-* [A024701](http://oeis.org/A024701) ([L06 program](024/A024701.asm)): a(n) = (-1 + prime(n+1)^2)/4.
+* [A024701](http://oeis.org/A024701) ([L08 program](024/A024701.asm)): a(n) = (-1 + prime(n+1)^2)/4.
 * [A024702](http://oeis.org/A024702) ([L04 program](024/A024702.asm)): a(n) = (prime(n)^2 - 1)/24.
 * [A024711](http://oeis.org/A024711) ([L07 program](024/A024711.asm)): a(n) = residue mod 2 of n-th term of A024702.
 * [A024712](http://oeis.org/A024712) ([L06 program](024/A024712.asm)): a(n) = residue mod 3 of n-th term of A024702.
@@ -4052,7 +4052,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032098](http://oeis.org/A032098) ([L05 program](032/A032098.asm)): "BHK" (reversible, identity, unlabeled) transform of 3,3,3,3,...
 * [A032121](http://oeis.org/A032121) ([L10 program](032/A032121.asm)): Number of reversible strings with n beads of 4 colors.
 * [A032125](http://oeis.org/A032125) ([L05 program](032/A032125.asm)): "BIK" (reversible, indistinct, unlabeled) transform of 3,3,3,3...
-* [A032169](http://oeis.org/A032169) ([L14 program](032/A032169.asm)): Number of aperiodic necklaces of n beads of 2 colors, 11 of them black.
+* [A032169](http://oeis.org/A032169) ([L06 program](032/A032169.asm)): Number of aperiodic necklaces of n beads of 2 colors, 11 of them black.
 * [A032192](http://oeis.org/A032192) ([L06 program](032/A032192.asm)): Number of necklaces with 7 black beads and n-7 white beads.
 * [A032196](http://oeis.org/A032196) ([L15 program](032/A032196.asm)): Number of necklaces with 11 black beads and n-11 white beads.
 * [A032260](http://oeis.org/A032260) ([L08 program](032/A032260.asm)): Number of n X n (0,1) matrices such that each row and each column is nondecreasing or nonincreasing.
@@ -4495,8 +4495,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A035332](http://oeis.org/A035332) ([L05 program](035/A035332.asm)): Smallest number not the concatenation of consecutive earlier terms.
 * [A035336](http://oeis.org/A035336) ([L06 program](035/A035336.asm)): a(n) = 2*floor(n*phi) + n - 1, where phi = (1+sqrt(5))/2.
 * [A035337](http://oeis.org/A035337) ([L03 program](035/A035337.asm)): Third column of Wythoff array.
-* [A035338](http://oeis.org/A035338) ([L04 program](035/A035338.asm)): 4th column of Wythoff array.
+* [A035338](http://oeis.org/A035338) ([L08 program](035/A035338.asm)): 4th column of Wythoff array.
 * [A035339](http://oeis.org/A035339) ([L03 program](035/A035339.asm)): 5th column of Wythoff array.
+* [A035340](http://oeis.org/A035340) ([L32 program](035/A035340.asm)): 6th column of Wythoff array.
 * [A035344](http://oeis.org/A035344) ([L08 program](035/A035344.asm)): Expansion of 1/((1 - x)*(1 - 4*x + 2 * x^2)).
 * [A035471](http://oeis.org/A035471) ([L10 program](035/A035471.asm)): Coordination sequence for lattice D*_4 (with edges defined by l_1 norm = 1).
 * [A035472](http://oeis.org/A035472) ([L24 program](035/A035472.asm)): Coordination sequence for lattice D*_6 (with edges defined by l_1 norm = 1).
@@ -4587,10 +4588,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036573](http://oeis.org/A036573) ([L05 program](036/A036573.asm)): Size of maximal triangulation of an n-antiprism with regular polygonal base.
 * [A036577](http://oeis.org/A036577) ([L03 program](036/A036577.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036578](http://oeis.org/A036578) ([L06 program](036/A036578.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-* [A036579](http://oeis.org/A036579) ([L05 program](036/A036579.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+* [A036579](http://oeis.org/A036579) ([L03 program](036/A036579.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036580](http://oeis.org/A036580) ([L16 program](036/A036580.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036581](http://oeis.org/A036581) ([L04 program](036/A036581.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-* [A036582](http://oeis.org/A036582) ([L03 program](036/A036582.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+* [A036582](http://oeis.org/A036582) ([L04 program](036/A036582.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036583](http://oeis.org/A036583) ([L05 program](036/A036583.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036584](http://oeis.org/A036584) ([L06 program](036/A036584.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 * [A036585](http://oeis.org/A036585) ([L03 program](036/A036585.asm)): Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
@@ -4751,7 +4752,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038130](http://oeis.org/A038130) ([L03 program](038/A038130.asm)): Beatty sequence for 2*Pi.
 * [A038139](http://oeis.org/A038139) ([L07 program](038/A038139.asm)): Order of n (mod 9).
 * [A038152](http://oeis.org/A038152) ([L04 program](038/A038152.asm)): Beatty sequence for e^Pi.
-* [A038163](http://oeis.org/A038163) ([L25 program](038/A038163.asm)): G.f.: 1/((1-x)*(1-x^2))^3.
+* [A038163](http://oeis.org/A038163) ([L23 program](038/A038163.asm)): G.f.: 1/((1-x)*(1-x^2))^3.
 * [A038164](http://oeis.org/A038164) ([L07 program](038/A038164.asm)): G.f.: 1/((1-x)*(1-x^2))^4.
 * [A038165](http://oeis.org/A038165) ([L44 program](038/A038165.asm)): G.f.: 1/((1-x)*(1-x^2))^5.
 * [A038167](http://oeis.org/A038167) ([L08 program](038/A038167.asm)): G.f.: x*(1+3*x+x^2)/((1-x^2)^2*(1-x^5)).
@@ -5357,6 +5358,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A045471](http://oeis.org/A045471) ([L19 program](045/A045471.asm)): Primes congruent to 4 mod 7.
 * [A045473](http://oeis.org/A045473) ([L27 program](045/A045473.asm)): Primes congruent to 6 mod 7.
 * [A045506](http://oeis.org/A045506) ([L09 program](045/A045506.asm)): Inscribe 2 spheres of curvature 2 inside sphere of curvature -1, continue to inscribe spheres where possible; sequence gives list of curvatures.
+* [A045534](http://oeis.org/A045534) ([L23 program](045/A045534.asm)): Number of squarefree self-avoiding walks in 2 dimensions.
 * [A045544](http://oeis.org/A045544) ([L06 program](045/A045544.asm)): Odd values of n for which a regular n-gon can be constructed by compass and straightedge.
 * [A045572](http://oeis.org/A045572) ([L06 program](045/A045572.asm)): Numbers that are odd but not divisible by 5.
 * [A045618](http://oeis.org/A045618) ([L09 program](045/A045618.asm)): Partial sums of A000337(n+4), n >= 0.

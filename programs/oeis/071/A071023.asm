@@ -3,10 +3,13 @@
 
 sub $0,2
 max $0,0
-cal $0,155038 ; Triangle read by rows: T(n,k) is the number of compositions of n with first part k.
-sub $0,14
-pow $0,2
-div $0,3
+cal $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 mov $1,$0
+mul $1,$0
+add $2,$0
+lpb $2
+  sub $1,$0
+  mov $2,$1
+lpe
 add $1,1
 mod $1,2

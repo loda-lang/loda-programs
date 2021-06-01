@@ -1,6 +1,10 @@
 ; A188438: Positions of 1 in A188436; complement of A188437.
 ; 8,16,21,29,37,42,50,55,63,71,76,84,92,97,105,110,118,126,131,139,144,152,160,165,173,181,186,194,199,207,215,220,228,236,241,249,254,262,270,275,283,288,296,304,309,317,325,330,338,343,351,359,364,372,377,385,393,398
 
-cal $0,134860 ; Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
-mov $1,$0
-add $1,4
+cal $0,134859 ; Wythoff AAA numbers.
+cal $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
+mul $0,6
+add $1,$0
+sub $1,42
+div $1,6
+add $1,13

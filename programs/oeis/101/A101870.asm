@@ -1,7 +1,10 @@
 ; A101870: Row 3 of A101866.
 ; 13,26,34,47,60,68,81,89,102,115,123,136,149,157,170,178,191,204,212,225,233,246,259,267,280,293,301,314,322,335,348,356,369,382,390,403,411,424,437,445,458,466,479,492,500,513,526,534,547,555,568,581,589,602,610,623
 
-add $0,1
-cal $0,47925 ; 3rd column of array in A038150.
-mov $1,$0
-sub $1,3
+cal $0,134860 ; Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
+cal $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
+mul $0,6
+add $1,$0
+sub $1,42
+div $1,6
+add $1,13

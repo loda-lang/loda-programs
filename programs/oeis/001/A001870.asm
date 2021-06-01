@@ -4,5 +4,4 @@
 add $0,1
 cal $0,281199 ; Number of n X 2 0..1 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
 mov $1,$0
-mul $1,4
-div $1,8
+div $1,2
