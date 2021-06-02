@@ -3,6 +3,5 @@
 
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,1
-cal $0,73093 ; Number of prime power divisors of n.
+cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
 mov $1,$0
-sub $1,1

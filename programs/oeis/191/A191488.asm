@@ -18,6 +18,4 @@ lpe
 min $2,1
 mul $2,$3
 sub $1,$2
-div $1,2
-add $1,1
-mul $1,2
+add $1,2

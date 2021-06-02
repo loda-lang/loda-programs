@@ -598,7 +598,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212159](http://oeis.org/A212159) ([L05 program](212/A212159.asm)): a(n) =  (-1)^((prime(n) + 1)/2).
 * [A212160](http://oeis.org/A212160) ([L07 program](212/A212160.asm)): Numbers congruent to 2 or 10 modulo 13.
 * [A212161](http://oeis.org/A212161) ([L10 program](212/A212161.asm)): Numbers 6 or 10 modulo 17.
-* [A212181](http://oeis.org/A212181) ([L05 program](212/A212181.asm)): Largest odd divisor of tau(n): a(n) = A000265(A000005(n)).
+* [A212181](http://oeis.org/A212181) ([L07 program](212/A212181.asm)): Largest odd divisor of tau(n): a(n) = A000265(A000005(n)).
 * [A212246](http://oeis.org/A212246) ([L09 program](212/A212246.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w <= x > y <= z.
 * [A212247](http://oeis.org/A212247) ([L23 program](212/A212247.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 3w=x+y+z+n.
 * [A212251](http://oeis.org/A212251) ([L03 program](212/A212251.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and 3w = x + y + z + n + 1.
@@ -667,7 +667,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212740](http://oeis.org/A212740) ([L49 program](212/A212740.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and max{w,x,y,z}<2*min{w,x,y,z}.
 * [A212742](http://oeis.org/A212742) ([L11 program](212/A212742.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and max{w,x,y,z}<=2*min{w,x,y,z}.
 * [A212743](http://oeis.org/A212743) ([L32 program](212/A212743.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and max{w,x,y,z}>2*min{w,x,y,z}.
-* [A212747](http://oeis.org/A212747) ([L42 program](212/A212747.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and 2w=floor((x+y+z)/2)).
+* [A212747](http://oeis.org/A212747) ([L40 program](212/A212747.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and 2w=floor((x+y+z)/2)).
 * [A212748](http://oeis.org/A212748) ([L23 program](212/A212748.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and w=2*floor((x+y+z)/2)).
 * [A212753](http://oeis.org/A212753) ([L32 program](212/A212753.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and at least one of these conditions holds: w<R, x<R, y>R, z>R, where R = max{w,x,y,z} - min{w,x,y,z}.
 * [A212754](http://oeis.org/A212754) ([L32 program](212/A212754.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and at least one of these conditions holds: w<R, x>R, y>R, z>R, where R = max{w,x,y,z} - min{w,x,y,z}.
@@ -1524,7 +1524,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227185](http://oeis.org/A227185) ([L07 program](227/A227185.asm)): The largest part in the unordered partition encoded in the runlengths of the binary expansion of n.
 * [A227192](http://oeis.org/A227192) ([L07 program](227/A227192.asm)): Sum of the partial sums of the run lengths of binary expansion of n, when starting scanning from the least significant end; Row sums of A227188 and A227738.
 * [A227209](http://oeis.org/A227209) ([L21 program](227/A227209.asm)): Expansion of 1/((1-x)^2*(1-2x)*(1-4x)).
-* [A227241](http://oeis.org/A227241) ([L04 program](227/A227241.asm)): a(n) = sigma(n)*( 2*sigma(n)+1 ).
+* [A227241](http://oeis.org/A227241) ([L07 program](227/A227241.asm)): a(n) = sigma(n)*( 2*sigma(n)+1 ).
 * [A227252](http://oeis.org/A227252) ([L10 program](227/A227252.asm)): Number of n X 2 binary arrays indicating whether each 2 X 2 subblock of a larger binary array has lexicographically nondecreasing rows and columns, for some larger (n+1) X 3 binary array with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227259](http://oeis.org/A227259) ([L10 program](227/A227259.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of two or less, with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227265](http://oeis.org/A227265) ([L06 program](227/A227265.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of three or less, with rows and columns of the latter in lexicographically nondecreasing order.
@@ -1555,6 +1555,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227720](http://oeis.org/A227720) ([L13 program](227/A227720.asm)): Round(1/s(n)), where s(n) = n*log(1+1/n) - (2n-1)/(2n).
 * [A227721](http://oeis.org/A227721) ([L05 program](227/A227721.asm)): Floor(1/s(n)), where s(n) = (2n+1)/(2n+2) - n*log((n+1)/n).
 * [A227726](http://oeis.org/A227726) ([L09 program](227/A227726.asm)): a(n) = [x^n] (1 + x)/(1 - x)^(2*n+1).
+* [A227742](http://oeis.org/A227742) ([L09 program](227/A227742.asm)): Fixed points of permutation A227741.
 * [A227776](http://oeis.org/A227776) ([L05 program](227/A227776.asm)): a(n) = 6*n^2 + 1.
 * [A227786](http://oeis.org/A227786) ([L07 program](227/A227786.asm)): Take squares larger than 1, subtract 3 from even squares and 2 from odd squares; a(n) = a(n-1) + A168276(n+1) (with a(1) = 1).
 * [A227790](http://oeis.org/A227790) ([L05 program](227/A227790.asm)): Difference between 3n^2 and the nearest square number.

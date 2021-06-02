@@ -360,7 +360,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A306412](http://oeis.org/A306412) ([L05 program](306/A306412.asm)): a(n) = phi(n^8) = n^7*phi(n).
 * [A306447](http://oeis.org/A306447) ([L08 program](306/A306447.asm)): Number of (undirected) Hamiltonian cycles in the n-antiprism graph.
 * [A306546](http://oeis.org/A306546) ([L09 program](306/A306546.asm)): Modified Collatz Map such that odd numbers are treated the same, but even numbers have all factors of 2 removed.
-* [A306556](http://oeis.org/A306556) ([L03 program](306/A306556.asm)): Integers that appear as (unreduced) numerators of segment endpoints when a ternary Cantor set is created.
+* [A306556](http://oeis.org/A306556) ([L07 program](306/A306556.asm)): Integers that appear as (unreduced) numerators of segment endpoints when a ternary Cantor set is created.
 * [A306561](http://oeis.org/A306561) ([L04 program](306/A306561.asm)): Square numbers that are also central polygonal numbers (i.e., square numbers found in the Lazy Caterer's sequence).
 * [A306672](http://oeis.org/A306672) ([L04 program](306/A306672.asm)): Partial sums of the even Lucas numbers (A014448).
 * [A306683](http://oeis.org/A306683) ([L14 program](306/A306683.asm)): Integers k for which the base-phi representation of k does not include 1 or phi.
@@ -853,7 +853,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A315701](http://oeis.org/A315701) ([L25 program](315/A315701.asm)): Coordination sequence Gal.4.136.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315704](http://oeis.org/A315704) ([L20 program](315/A315704.asm)): Coordination sequence Gal.4.137.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315706](http://oeis.org/A315706) ([L09 program](315/A315706.asm)): Coordination sequence Gal.5.294.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A315707](http://oeis.org/A315707) ([L09 program](315/A315707.asm)): Coordination sequence Gal.5.295.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A315707](http://oeis.org/A315707) ([L05 program](315/A315707.asm)): Coordination sequence Gal.5.295.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315709](http://oeis.org/A315709) ([L07 program](315/A315709.asm)): Coordination sequence Gal.6.627.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315710](http://oeis.org/A315710) ([L20 program](315/A315710.asm)): Coordination sequence Gal.6.628.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A315729](http://oeis.org/A315729) ([L21 program](315/A315729.asm)): Coordination sequence Gal.5.134.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -2049,7 +2049,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344399](http://oeis.org/A344399) ([L08 program](344/A344399.asm)): a(n) = 4^n*binomial(n - 1/2, -1/2)*(n^2 + 1).
 * [A344483](http://oeis.org/A344483) ([L12 program](344/A344483.asm)): a(n) = n^2 + sigma(n) - n*d(n).
 * [A344526](http://oeis.org/A344526) ([L08 program](344/A344526.asm)): a(n) = Sum_{k=1..n} k^3 * phi(k).
-* [A344543](http://oeis.org/A344543) ([L08 program](344/A344543.asm)): Lexicographically earliest sequence S of distinct positive terms such that the product of the last k digits of S is even, k being the rightmost digit of a(n).
+* [A344543](http://oeis.org/A344543) ([L07 program](344/A344543.asm)): Lexicographically earliest sequence S of distinct positive terms such that the product of the last k digits of S is even, k being the rightmost digit of a(n).
 * [A344564](http://oeis.org/A344564) ([L03 program](344/A344564.asm)): a(n) = [x^n] -3/(2*x - 1)^5.
 * [A344587](http://oeis.org/A344587) ([L04 program](344/A344587.asm)): a(n) = 2*A003961(n) - sigma(A003961(n)).
 * [A344622](http://oeis.org/A344622) ([L14 program](344/A344622.asm)): a(n) = n*(n+1)/2 - sigma(n) + d(n).

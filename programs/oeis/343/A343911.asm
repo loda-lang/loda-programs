@@ -3,6 +3,5 @@
 
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,1
-cal $0,73093 ; Number of prime power divisors of n.
+cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
 mov $1,$0
-sub $1,1

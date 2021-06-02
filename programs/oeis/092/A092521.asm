@@ -3,7 +3,5 @@
 
 cal $0,48575 ; Pisot sequences L(2,5), E(2,5).
 pow $0,2
+div $0,3
 mov $1,$0
-sub $1,4
-div $1,3
-add $1,1

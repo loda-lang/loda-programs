@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,262414 ; Number of (n+1) X (2+1) 0..1 arrays with each row divisible by 3 and column not divisible by 3, read as a binary number with top and left being the most significant bits.
+  cal $2,32086 ; Number of reversible strings with n beads of 3 colors. If more than 1 bead, not palindromic.
   sub $0,1
   add $1,$2
 lpe
-div $1,4
+div $1,3
