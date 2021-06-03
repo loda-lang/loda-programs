@@ -1,10 +1,9 @@
 ; A105470: a(n)=1 if there is number of the form 6k+3 with prime(n) <= 6k+3 <= prime(n+1), otherwise 0.
 ; 1,1,0,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1
 
-lpb $0
-  mov $1,$0
-  cal $1,100821 ; a(n) = 1 if prime(n) + 2 = prime(n+1), otherwise 0.
-  mod $0,2
-lpe
+cal $0,175216 ; The first nonprimes after the primes.
+max $0,5
+cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
+mov $1,$0
 add $1,1
 mod $1,2

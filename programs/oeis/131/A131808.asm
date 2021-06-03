@@ -7,7 +7,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,230980 ; Number of primes <= n, starting at n=0.
-  mod $0,2
+  cal $0,131378 ; Starting with 0, the sequence a(n) changes from 0 to 1 or back when the next number n is a prime.
   add $1,$0
 lpe

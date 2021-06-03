@@ -4,7 +4,4 @@
 cal $0,40 ; The prime numbers.
 cal $0,27445 ; a(n) = n^4 + n^3 + n^2 + n^1.
 mov $1,$0
-sub $1,30
-div $1,2
-mul $1,2
-add $1,31
+add $1,1
