@@ -949,7 +949,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317331](http://oeis.org/A317331) ([L25 program](317/A317331.asm)): Indices m for which A058304(m) = 1.
 * [A317332](http://oeis.org/A317332) ([L21 program](317/A317332.asm)): Indices m for which A058304(m) = 8.
 * [A317333](http://oeis.org/A317333) ([L22 program](317/A317333.asm)): Indices m for which A058304(m) = 9.
-* [A317335](http://oeis.org/A317335) ([L07 program](317/A317335.asm)): a(n) = A317332(n) - 8*n.
+* [A317335](http://oeis.org/A317335) ([L04 program](317/A317335.asm)): a(n) = A317332(n) - 8*n.
 * [A317336](http://oeis.org/A317336) ([L07 program](317/A317336.asm)): a(n) = A317333(n) - 8*n.
 * [A317404](http://oeis.org/A317404) ([L05 program](317/A317404.asm)): a(n) = 3*n*(2^n - 1).
 * [A317405](http://oeis.org/A317405) ([L08 program](317/A317405.asm)): a(n) = n * A001353(n).
@@ -1030,7 +1030,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319603](http://oeis.org/A319603) ([L04 program](319/A319603.asm)): a(n) = n^3 + reversal of digits of n^3.
 * [A319610](http://oeis.org/A319610) ([L11 program](319/A319610.asm)): a(n) is the minimal number of successive OFF cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
 * [A319658](http://oeis.org/A319658) ([L13 program](319/A319658.asm)): a(n) is the minimal number of successive ON cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
-* [A319691](http://oeis.org/A319691) ([L04 program](319/A319691.asm)): a(n) = 1 if n is either 1 or divisible only by primes congruent to 1 mod 3, 0 otherwise.
+* [A319691](http://oeis.org/A319691) ([L03 program](319/A319691.asm)): a(n) = 1 if n is either 1 or divisible only by primes congruent to 1 mod 3, 0 otherwise.
 * [A319697](http://oeis.org/A319697) ([L32 program](319/A319697.asm)): Sum of even squarefree divisors of n.
 * [A319701](http://oeis.org/A319701) ([L09 program](319/A319701.asm)): Filter sequence for sequences that are constant for all odd terms >= 3.
 * [A319702](http://oeis.org/A319702) ([L08 program](319/A319702.asm)): Filter sequence for sequences that are constant for all even terms >= 2.
@@ -1237,7 +1237,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324600](http://oeis.org/A324600) ([L04 program](324/A324600.asm)): a(n) = (k(n)*(k(n) + 1))/2 with k = A018252 (nonprime numbers), for n >= 1.
 * [A324772](http://oeis.org/A324772) ([L24 program](324/A324772.asm)): The "Octanacci" sequence: Trajectory of 0 under the morphism 0->{0,1,0}, 1->{0}.
 * [A324902](http://oeis.org/A324902) ([L06 program](324/A324902.asm)): The 2-adic valuation of A318456(n), where A318456(n) = n OR (sigma(n)-n).
-* [A324903](http://oeis.org/A324903) ([L09 program](324/A324903.asm)): a(n) = 1 if A007814(sigma(n)) > A007814(n), 0 otherwise. Here A007814(n) gives the 2-adic valuation of n.
+* [A324903](http://oeis.org/A324903) ([L05 program](324/A324903.asm)): a(n) = 1 if A007814(sigma(n)) > A007814(n), 0 otherwise. Here A007814(n) gives the 2-adic valuation of n.
 * [A324904](http://oeis.org/A324904) ([L04 program](324/A324904.asm)): The 2-adic valuation of A318466(n), where A318466(n) = 2*n OR sigma(n).
 * [A324908](http://oeis.org/A324908) ([L09 program](324/A324908.asm)): a(n) = 1 if n is an odd number which is not a square, 0 otherwise.
 * [A324912](http://oeis.org/A324912) ([L52 program](324/A324912.asm)): Binary weight of A324911(n).
@@ -1637,6 +1637,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A333355](http://oeis.org/A333355) ([L15 program](333/A333355.asm)): Number of bits in binary expansion of n minus the number of digits of n when written in base 3.
 * [A333415](http://oeis.org/A333415) ([L04 program](333/A333415.asm)): Odd positive integers in base 2 read backwards.
 * [A333470](http://oeis.org/A333470) ([L16 program](333/A333470.asm)): Lexicographically earliest sequence of distinct positive terms such that a(n) is the number of commas that a(n) has to step over (to the right) to be met by an odd term. This odd term might not be the closest odd term to a(n).
+* [A333516](http://oeis.org/A333516) ([L04 program](333/A333516.asm)): Irregular triangle read by rows in which row n lists the first A000217(n) terms of A002260, n >= 1.
 * [A333525](http://oeis.org/A333525) ([L05 program](333/A333525.asm)): Degree of polytope representing the number n.
 * [A333535](http://oeis.org/A333535) ([L14 program](333/A333535.asm)): Card{ k<=n, k such that all prime divisors of k are < sqrt(k) }.
 * [A333574](http://oeis.org/A333574) ([L06 program](333/A333574.asm)): Number of  Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.

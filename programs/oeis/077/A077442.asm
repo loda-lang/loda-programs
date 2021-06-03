@@ -1,6 +1,11 @@
 ; A077442: 2*a(n)^2 + 7 is a square.
 ; 1,3,9,19,53,111,309,647,1801,3771,10497,21979,61181,128103,356589,746639,2078353,4351731,12113529,25363747,70602821,147830751,411503397,861620759,2398417561,5021893803,13979001969,29269742059,81475594253,170596558551,474874563549,994309609247,2767771787041,5795261096931,16131756158697,33777256972339,94022765165141,196868280737103,548004834832149,1147432427450279,3194006243827753,6687726283964571
 
-mul $0,2
-cal $0,82981 ; Start with the sequence S(0)={1,1} and for k>0 define S(k) to be I(S(k-1)) where I denotes the operation of inserting, for i=1,2,3..., the term a(i)+a(i+1) between any two terms for which 4a(i+1)<=5a(i). The listed terms are the initial terms of the limit of this process as k goes to infinity.
-mov $1,$0
+lpb $0
+  mov $2,$0
+  cal $2,79496 ; a(0) = a(1) = 1; thereafter a(2*n+1) = 2*a(2*n) - a(2*n-1), a(2*n) = 4*a(2*n-1) - a(2*n-2).
+  sub $0,1
+  add $1,$2
+lpe
+mul $1,2
+add $1,1

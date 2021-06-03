@@ -3,7 +3,5 @@
 
 add $0,1
 cal $0,112561 ; Sieve performed by successive iterations of steps where step m is: keep m terms, remove the next 3 and repeat; as m = 1,2,3,.. the remaining terms form this sequence.
+div $0,4
 mov $1,$0
-sub $1,5
-div $1,4
-add $1,1

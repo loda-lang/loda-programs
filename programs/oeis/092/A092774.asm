@@ -1,8 +1,8 @@
 ; A092774: Prime(prime(n))^2+1
 ; 10,26,122,290,962,1682,3482,4490,6890,11882,16130,24650,32042,36482,44522,58082,76730,80090,109562,124610,134690,160802,185762,212522,259082,299210,316970,344570,358802,380690,502682,546122,597530,635210
 
+cal $0,6093 ; a(n) = prime(n) - 1.
 cal $0,40 ; The prime numbers.
-cal $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
 pow $0,2
 mov $1,$0
 add $1,1

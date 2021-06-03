@@ -1,7 +1,9 @@
 ; A216134: Numbers n such that T_n and 2*T_n + 1 are triangular.
 ; 0,1,4,9,26,55,154,323,900,1885,5248,10989,30590,64051,178294,373319,1039176,2175865,6056764,12681873,35301410,73915375,205751698,430810379,1199208780,2510946901,6989500984,14634871029,40737797126,85298279275,237437281774,497154804623,1383885893520,2897630548465,8065878079348,16888628486169,47011382582570,98434140368551,274002417416074,573716213725139,1597003121913876,3343863141982285
 
-mul $0,2
-cal $0,82981 ; Start with the sequence S(0)={1,1} and for k>0 define S(k) to be I(S(k-1)) where I denotes the operation of inserting, for i=1,2,3..., the term a(i)+a(i+1) between any two terms for which 4a(i+1)<=5a(i). The listed terms are the initial terms of the limit of this process as k goes to infinity.
-mov $1,$0
-div $1,2
+lpb $0
+  mov $2,$0
+  cal $2,79496 ; a(0) = a(1) = 1; thereafter a(2*n+1) = 2*a(2*n) - a(2*n-1), a(2*n) = 4*a(2*n-1) - a(2*n-2).
+  sub $0,1
+  add $1,$2
+lpe
