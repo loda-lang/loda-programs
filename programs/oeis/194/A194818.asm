@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,194817 ; Number of integers k in [1,n] such that {n*r+k*r} < {n*r-k*r}, where { } = fractional part and r=sqrt(3).
-mov $2,1
-sub $2,$0
-add $1,$2
+sub $1,$0
+add $1,1

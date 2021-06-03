@@ -3,5 +3,6 @@
 
 div $0,2
 mov $1,$0
-cal $1,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
+add $1,2
+cal $1,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
 add $1,1
