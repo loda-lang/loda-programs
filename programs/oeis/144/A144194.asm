@@ -1,9 +1,10 @@
 ; A144194: Square array (6 X 6) read by rows.
 ; 0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0
 
-sub $1,$0
-sub $1,$0
-pow $1,4
-mul $1,2
-cal $1,71874 ; Decimal expansion of the seventh (of 10) decimal selvage number; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
-cmp $1,0
+mul $0,-2
+pow $0,4
+div $0,5
+mul $0,12345679
+mod $0,-7
+mov $1,$0
+mod $1,2

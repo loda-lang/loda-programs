@@ -4,7 +4,6 @@
 sub $0,1
 max $0,0
 cal $0,246360 ; a(1) = 1, then A007051 ((3^n)+1)/2 interleaved with A057198 (5*3^(n-1)+1)/2.
-sub $0,1
+mul $0,2
 mov $1,$0
-mul $1,2
-add $1,1
+sub $1,1

@@ -4,6 +4,4 @@
 add $0,1
 cal $0,131137 ; Denominator of (exponential) expansion of log((2*x/3-1)/(x-1)).
 mov $1,$0
-div $1,6
-mul $1,2
-add $1,1
+div $1,3
