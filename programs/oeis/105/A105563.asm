@@ -1,38 +1,20 @@
 ; A105563: a(n) = if (exactly 4 Fibonacci numbers exist with exactly n digits) then 1, otherwise 0.
 ; 0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0
 
-mov $4,$0
-mov $8,2
-lpb $8
-  mov $0,$4
-  sub $8,1
-  add $0,$8
-  add $0,2522
-  mov $7,2
-  lpb $0
-    sub $0,1
-    mov $6,$0
-    mov $0,2
-    add $6,1
-    mul $7,2
-    add $7,1
-    mul $7,$6
-    mul $7,4
-    mov $5,$7
-    sub $5,4
-    div $5,93
-    add $5,2
-    mov $2,$5
-  lpe
-  mov $3,$8
-  mov $6,$2
-  sub $6,544
-  lpb $3
-    mov $1,$6
-    sub $3,1
-  lpe
+mov $3,2
+mov $5,$0
+lpb $3
+  mov $0,$5
+  sub $3,1
+  add $0,$3
+  sub $0,1
+  max $0,0
+  cal $0,105564 ; Number of blocks of exactly 4 Fibonacci numbers having equal length <= n.
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mov $4,$0
 lpe
-lpb $4
-  sub $1,$6
-  mov $4,0
-lpe
+min $5,1
+mul $5,$4
+sub $1,$5

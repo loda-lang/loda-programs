@@ -266,7 +266,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304835](http://oeis.org/A304835) ([L08 program](304/A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
 * [A304836](http://oeis.org/A304836) ([L05 program](304/A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
 * [A304837](http://oeis.org/A304837) ([L10 program](304/A304837.asm)): a(n) = 6*(n - 1)*(81*n - 104) for n >= 1.
-* [A304838](http://oeis.org/A304838) ([L16 program](304/A304838.asm)): a(n) = 1944*n^2 - 5016*n + 3138 (n >= 1).
+* [A304838](http://oeis.org/A304838) ([L07 program](304/A304838.asm)): a(n) = 1944*n^2 - 5016*n + 3138 (n >= 1).
 * [A304839](http://oeis.org/A304839) ([L03 program](304/A304839.asm)): a(n) = 61*n - 38 (n>=1).
 * [A304840](http://oeis.org/A304840) ([L03 program](304/A304840.asm)): a(n) = 52*n - 2 (n>=1).
 * [A304841](http://oeis.org/A304841) ([L03 program](304/A304841.asm)): a(n) = 67*n - 10 (n>=1).
@@ -422,7 +422,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307939](http://oeis.org/A307939) ([L15 program](307/A307939.asm)): Number of (undirected) Hamiltonian paths in the n-dipyramidal graph.
 * [A307985](http://oeis.org/A307985) ([L09 program](307/A307985.asm)): Number of integer-sided triangles with perimeter n and sides a, b, and c such that a <= b <= c and b|n.
 * [A307989](http://oeis.org/A307989) ([L13 program](307/A307989.asm)): a(n) = n - pi(2*n) + pi(n-1), where pi is the prime counting function.
-* [A308044](http://oeis.org/A308044) ([L05 program](308/A308044.asm)): a(n) = 2*prevprime(2*n-1) - 2*n, where prevprime(n) is the largest prime < n.
+* [A308044](http://oeis.org/A308044) ([L07 program](308/A308044.asm)): a(n) = 2*prevprime(2*n-1) - 2*n, where prevprime(n) is the largest prime < n.
 * [A308046](http://oeis.org/A308046) ([L05 program](308/A308046.asm)): a(n) = 2*nextprime(n - 1) - 2*n, where nextprime(n) is the smallest prime > n.
 * [A308047](http://oeis.org/A308047) ([L20 program](308/A308047.asm)): Sum of subgroup indices of dihedral group, Sum_{H <= D(n)} [D(n):H].
 * [A308048](http://oeis.org/A308048) ([L06 program](308/A308048.asm)): a(n) = n - nextprime(ceiling(n/2) - 1), where nextprime(n) is the smallest prime > n.
@@ -1023,6 +1023,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319433](http://oeis.org/A319433) ([L04 program](319/A319433.asm)): Take Zeckendorf representation of n (A014417(n)), drop least significant bit, take inverse Zeckendorf representation.
 * [A319451](http://oeis.org/A319451) ([L04 program](319/A319451.asm)): Numbers that are congruent to {0, 3, 6} mod 12; a(n) = 3*floor(4*n/3).
 * [A319452](http://oeis.org/A319452) ([L07 program](319/A319452.asm)): Numbers that are congruent to {0, 3, 6, 10} mod 12.
+* [A319526](http://oeis.org/A319526) ([L03 program](319/A319526.asm)): Square array read by antidiagonals upwards: T(n,k) = sigma(n*k), n >= 1, k >= 1.
 * [A319527](http://oeis.org/A319527) ([L03 program](319/A319527.asm)): a(n) = 7 * sigma(n).
 * [A319528](http://oeis.org/A319528) ([L03 program](319/A319528.asm)): a(n) = 8 * sigma(n).
 * [A319556](http://oeis.org/A319556) ([L08 program](319/A319556.asm)): a(n) gives the alternating sum of length n, starting at n: n - (n+1) + (n+2) - ... + (-1)^(n+1) * (2n-1).
@@ -1931,7 +1932,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A340395](http://oeis.org/A340395) ([L03 program](340/A340395.asm)): a(n) = A340131(A001006(n)).
 * [A340445](http://oeis.org/A340445) ([L04 program](340/A340445.asm)): Number of partitions of n into 3 parts that are not all the same.
 * [A340461](http://oeis.org/A340461) ([L06 program](340/A340461.asm)): a(n) = 2*sigma(phi(n)) - n.
-* [A340479](http://oeis.org/A340479) ([L04 program](340/A340479.asm)): a(n) = R(n) + digsum(n).
+* [A340479](http://oeis.org/A340479) ([L03 program](340/A340479.asm)): a(n) = R(n) + digsum(n).
 * [A340497](http://oeis.org/A340497) ([L13 program](340/A340497.asm)): Index where 2*n first appears in A340488.
 * [A340498](http://oeis.org/A340498) ([L06 program](340/A340498.asm)): Where 2^n appears in A340488 for the first time.
 * [A340507](http://oeis.org/A340507) ([L04 program](340/A340507.asm)): a(n) = floor(sqrt(2*n)) - A003056(n).
@@ -2048,7 +2049,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A343720](http://oeis.org/A343720) ([L07 program](343/A343720.asm)): Triangle read by rows: T(n,k) = k^2 mod n for k = 0..n-1, n >= 1.
 * [A343754](http://oeis.org/A343754) ([L05 program](343/A343754.asm)): a(n) = 0, and for any n > 0, a(n+1) = a(n) - A065363(n) + 1.
 * [A343785](http://oeis.org/A343785) ([L09 program](343/A343785.asm)): a(n) is completely multiplicative with a(p^e) = (-1)^e if p == 2 (mod 3) and a(p^e) = 1 otherwise.
-* [A343794](http://oeis.org/A343794) ([L06 program](343/A343794.asm)): Numbers k such that 630*k + 315 is not an abundant number (A005101).
+* [A343794](http://oeis.org/A343794) ([L04 program](343/A343794.asm)): Numbers k such that 630*k + 315 is not an abundant number (A005101).
 * [A343808](http://oeis.org/A343808) ([L06 program](343/A343808.asm)): Partial sums of A062074.
 * [A343810](http://oeis.org/A343810) ([L03 program](343/A343810.asm)): Numbers that contain only the digits 0,4,8. Permutable multiples of 4: numbers k such that every permutation of the digits of k is a multiple of 4.
 * [A343842](http://oeis.org/A343842) ([L06 program](343/A343842.asm)): Series expansion of 1/sqrt(8*x^2 + 1), even powers only.
