@@ -7,11 +7,9 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
   max $0,0
-  cal $0,111199 ; Numbers n such that 4k + 9 is prime.
-  add $0,1
-  mul $0,4
+  cal $0,111215 ; Numbers k such that 4k + 5 is prime.
+  mul $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2
@@ -20,3 +18,6 @@ lpe
 min $5,1
 mul $5,$4
 sub $1,$5
+sub $1,2
+mul $1,2
+add $1,4

@@ -43,7 +43,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000188](http://oeis.org/A000188) ([L03 program](000/A000188.asm)): (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
 * [A000194](http://oeis.org/A000194) ([L05 program](000/A000194.asm)): n appears 2n times, for n >= 1; also nearest integer to square root of n.
 * [A000196](http://oeis.org/A000196) ([L06 program](000/A000196.asm)): Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-* [A000201](http://oeis.org/A000201) ([L05 program](000/A000201.asm)): Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
+* [A000201](http://oeis.org/A000201) ([L04 program](000/A000201.asm)): Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
 * [A000202](http://oeis.org/A000202) ([L05 program](000/A000202.asm)): a(8i+j) = 13i + a(j), where 1<=j<=8.
 * [A000203](http://oeis.org/A000203) ([L13 program](000/A000203.asm)): a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 * [A000204](http://oeis.org/A000204) ([L08 program](000/A000204.asm)): Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
@@ -348,7 +348,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001924](http://oeis.org/A001924) ([L09 program](001/A001924.asm)): Apply partial sum operator twice to Fibonacci numbers.
 * [A001950](http://oeis.org/A001950) ([L05 program](001/A001950.asm)): Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 * [A001951](http://oeis.org/A001951) ([L09 program](001/A001951.asm)): A Beatty sequence: a(n) = floor(n*sqrt(2)).
-* [A001952](http://oeis.org/A001952) ([L06 program](001/A001952.asm)): A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
+* [A001952](http://oeis.org/A001952) ([L05 program](001/A001952.asm)): A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
 * [A001953](http://oeis.org/A001953) ([L09 program](001/A001953.asm)): a(n) = floor((n + 1/2) * sqrt(2)).
 * [A001954](http://oeis.org/A001954) ([L07 program](001/A001954.asm)): Wythoff game.
 * [A001961](http://oeis.org/A001961) ([L05 program](001/A001961.asm)): A Beatty sequence: floor(n * (sqrt(5) - 1)).
@@ -862,6 +862,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005097](http://oeis.org/A005097) ([L03 program](005/A005097.asm)): (Odd primes - 1)/2.
 * [A005098](http://oeis.org/A005098) ([L17 program](005/A005098.asm)): Numbers n such that 4n + 1 is prime.
 * [A005099](http://oeis.org/A005099) ([L20 program](005/A005099.asm)): (( Primes == -1 mod 4 ) + 1)/4.
+* [A005122](http://oeis.org/A005122) ([L19 program](005/A005122.asm)): Numbers n such that 8n - 1 is prime.
 * [A005123](http://oeis.org/A005123) ([L20 program](005/A005123.asm)): Numbers n such that 8n + 1 is prime.
 * [A005124](http://oeis.org/A005124) ([L21 program](005/A005124.asm)): Numbers n such that 8n + 3 is prime.
 * [A005125](http://oeis.org/A005125) ([L23 program](005/A005125.asm)): Numbers n such that 8n - 3 is prime.
@@ -1187,6 +1188,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007519](http://oeis.org/A007519) ([L05 program](007/A007519.asm)): Primes of form 8n+1, that is, primes congruent to 1 mod 8.
 * [A007520](http://oeis.org/A007520) ([L21 program](007/A007520.asm)): Primes == 3 (mod 8).
 * [A007521](http://oeis.org/A007521) ([L22 program](007/A007521.asm)): Primes of the form 8n + 5.
+* [A007522](http://oeis.org/A007522) ([L19 program](007/A007522.asm)): Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
 * [A007528](http://oeis.org/A007528) ([L22 program](007/A007528.asm)): Primes of the form 6k-1.
 * [A007531](http://oeis.org/A007531) ([L03 program](007/A007531.asm)): a(n) = n*(n-1)*(n-2) (or n!/(n-3)!).
 * [A007533](http://oeis.org/A007533) ([L07 program](007/A007533.asm)): (5n+1)^2 + 4n+1.
@@ -1229,7 +1231,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007862](http://oeis.org/A007862) ([L05 program](007/A007862.asm)): Number of triangular numbers that divide n.
 * [A007875](http://oeis.org/A007875) ([L03 program](007/A007875.asm)): Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
 * [A007877](http://oeis.org/A007877) ([L03 program](007/A007877.asm)): Period 4 zigzag sequence: repeat [0,1,2,1].
-* [A007886](http://oeis.org/A007886) ([L20 program](007/A007886.asm)): Number of cycles induced by iterating the Gray-coding of an n-bit number: a(n+1) = a(n) + ( 2^n / C_n), where C_n = least power of 2 >= n (C_n is the length of the cycle).
+* [A007886](http://oeis.org/A007886) ([L15 program](007/A007886.asm)): Number of cycles induced by iterating the Gray-coding of an n-bit number: a(n+1) = a(n) + ( 2^n / C_n), where C_n = least power of 2 >= n (C_n is the length of the cycle).
 * [A007891](http://oeis.org/A007891) ([L04 program](007/A007891.asm)): A Kutz sequence.
 * [A007892](http://oeis.org/A007892) ([L07 program](007/A007892.asm)): A Kutz sequence.
 * [A007893](http://oeis.org/A007893) ([L13 program](007/A007893.asm)): A Kutz sequence.
@@ -3342,6 +3344,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024907](http://oeis.org/A024907) ([L19 program](024/A024907.asm)): Numbers n such that 9*n-7 is prime.
 * [A024908](http://oeis.org/A024908) ([L23 program](024/A024908.asm)): Numbers k such that 9*k - 5 is prime.
 * [A024909](http://oeis.org/A024909) ([L23 program](024/A024909.asm)): Numbers n such that 9*n-4 is prime.
+* [A024910](http://oeis.org/A024910) ([L20 program](024/A024910.asm)): Numbers n such that 9*n-2 is prime.
 * [A024912](http://oeis.org/A024912) ([L03 program](024/A024912.asm)): Numbers n such that 10n + 1 is prime.
 * [A024913](http://oeis.org/A024913) ([L17 program](024/A024913.asm)): Numbers n such that 10n - 7 is prime.
 * [A024914](http://oeis.org/A024914) ([L22 program](024/A024914.asm)): Numbers k such that 10*k - 3 is prime.
@@ -5016,8 +5019,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040282](http://oeis.org/A040282) ([L16 program](040/A040282.asm)): Continued fraction for sqrt(300).
 * [A040287](http://oeis.org/A040287) ([L35 program](040/A040287.asm)): Continued fraction for sqrt(305).
 * [A040288](http://oeis.org/A040288) ([L11 program](040/A040288.asm)): Continued fraction for sqrt(306).
-* [A040294](http://oeis.org/A040294) ([L03 program](040/A040294.asm)): Continued fraction for sqrt(312).
-* [A040297](http://oeis.org/A040297) ([L03 program](040/A040297.asm)): Continued fraction for sqrt(315).
+* [A040294](http://oeis.org/A040294) ([L04 program](040/A040294.asm)): Continued fraction for sqrt(312).
+* [A040297](http://oeis.org/A040297) ([L04 program](040/A040297.asm)): Continued fraction for sqrt(315).
 * [A040300](http://oeis.org/A040300) ([L03 program](040/A040300.asm)): Continued fraction for sqrt(318).
 * [A040302](http://oeis.org/A040302) ([L06 program](040/A040302.asm)): Continued fraction for sqrt(320).
 * [A040303](http://oeis.org/A040303) ([L06 program](040/A040303.asm)): Continued fraction for sqrt(321).

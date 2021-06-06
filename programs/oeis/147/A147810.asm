@@ -3,6 +3,6 @@
 
 add $0,1
 pow $0,2
-cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$0
-div $1,2
+cal $1,72670 ; Number of ways to write n as i*j + i + j, 0 < i <= j.
+add $1,1

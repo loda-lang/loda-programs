@@ -1900,7 +1900,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339765](http://oeis.org/A339765) ([L05 program](339/A339765.asm)): a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 * [A339771](http://oeis.org/A339771) ([L08 program](339/A339771.asm)): a(n) = Sum_{i=0..n} Sum_{j=0..n} 2^max(i,j).
 * [A339824](http://oeis.org/A339824) ([L04 program](339/A339824.asm)): Even bisection of the infinite Fibonacci word A003849.
-* [A339825](http://oeis.org/A339825) ([L04 program](339/A339825.asm)): Odd bisection of the infinite Fibonacci word A003849.
+* [A339825](http://oeis.org/A339825) ([L08 program](339/A339825.asm)): Odd bisection of the infinite Fibonacci word A003849.
 * [A339904](http://oeis.org/A339904) ([L05 program](339/A339904.asm)): The odd part of {Euler totient function phi applied to the prime shifted n}: a(n) = A000265(A000010(A003961(n))).
 * [A339905](http://oeis.org/A339905) ([L03 program](339/A339905.asm)): Fully multiplicative with a(prime(k)) = prime(k+1) - 1.
 * [A339918](http://oeis.org/A339918) ([L19 program](339/A339918.asm)): a(n) = Sum_{k=1..n} floor(3*n/k).
@@ -2065,6 +2065,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344543](http://oeis.org/A344543) ([L07 program](344/A344543.asm)): Lexicographically earliest sequence S of distinct positive terms such that the product of the last k digits of S is even, k being the rightmost digit of a(n).
 * [A344564](http://oeis.org/A344564) ([L03 program](344/A344564.asm)): a(n) = [x^n] -3/(2*x - 1)^5.
 * [A344587](http://oeis.org/A344587) ([L04 program](344/A344587.asm)): a(n) = 2*A003961(n) - sigma(A003961(n)).
+* [A344598](http://oeis.org/A344598) ([L17 program](344/A344598.asm)): a(n) = Sum_{k=1..n} phi(k) * (floor(n/k)^2 - floor((n-1)/k)^2).
 * [A344622](http://oeis.org/A344622) ([L14 program](344/A344622.asm)): a(n) = n*(n+1)/2 - sigma(n) + d(n).
 * [A344814](http://oeis.org/A344814) ([L07 program](344/A344814.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 3^(k-1).
 * [A344815](http://oeis.org/A344815) ([L07 program](344/A344815.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 4^(k-1).

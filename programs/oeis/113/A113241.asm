@@ -5,7 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,99777 ; Number of divisors of 2n.
-  sub $2,1
+  cal $2,66660 ; Number of divisors of 2n excluding 1.
   add $1,$2
 lpe

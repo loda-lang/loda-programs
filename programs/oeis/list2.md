@@ -325,7 +325,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102390](http://oeis.org/A102390) ([L12 program](102/A102390.asm)): An odious count.
 * [A102391](http://oeis.org/A102391) ([L09 program](102/A102391.asm)): Evil numbers in evil places.
 * [A102392](http://oeis.org/A102392) ([L03 program](102/A102392.asm)): Odious numbers in odious places.
-* [A102393](http://oeis.org/A102393) ([L05 program](102/A102393.asm)): A wicked evil sequence.
+* [A102393](http://oeis.org/A102393) ([L04 program](102/A102393.asm)): A wicked evil sequence.
 * [A102394](http://oeis.org/A102394) ([L05 program](102/A102394.asm)): A wicked odious sequence.
 * [A102396](http://oeis.org/A102396) ([L04 program](102/A102396.asm)): A mod 2 related Jacobsthal sequence.
 * [A102428](http://oeis.org/A102428) ([L08 program](102/A102428.asm)): Central column of triangle A102427.
@@ -850,6 +850,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108118](http://oeis.org/A108118) ([L16 program](108/A108118.asm)): Integers not divisible by 3 or 4.
 * [A108120](http://oeis.org/A108120) ([L04 program](108/A108120.asm)): Floor[n*1/Sin[1]], or Beatty sequence for 1/sin(1).
 * [A108122](http://oeis.org/A108122) ([L06 program](108/A108122.asm)): G.f.: (1-2*x^2)/(1-x-2*x^2-x^3).
+* [A108137](http://oeis.org/A108137) ([L23 program](108/A108137.asm)): Primes p such that p + 6^k is composite for all k >= 0.
 * [A108151](http://oeis.org/A108151) ([L10 program](108/A108151.asm)): a(n) = n^2 + 3*n + 1 if prime or 0 if composite.
 * [A108154](http://oeis.org/A108154) ([L09 program](108/A108154.asm)): a(n) = n^2 - n + 1 if prime else 0.
 * [A108161](http://oeis.org/A108161) ([L06 program](108/A108161.asm)): Partial sums of the positive integers n according to the rule: if n is square then add sqrt(n) else add n.
@@ -1685,7 +1686,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117589](http://oeis.org/A117589) ([L08 program](117/A117589.asm)): See Comments line.
 * [A117590](http://oeis.org/A117590) ([L08 program](117/A117590.asm)): a(n) = ceiling(x(n)), where x(n) = 3*x(n-1)/2 and x(1) = 1.
 * [A117591](http://oeis.org/A117591) ([L17 program](117/A117591.asm)): 2^n + Fibonacci(n).
-* [A117592](http://oeis.org/A117592) ([L03 program](117/A117592.asm)): a(n)=a(3n)=a(3n+1)=a(3n+2)/2 with a(0)=1.
+* [A117592](http://oeis.org/A117592) ([L10 program](117/A117592.asm)): a(n)=a(3n)=a(3n+1)=a(3n+2)/2 with a(0)=1.
 * [A117614](http://oeis.org/A117614) ([L04 program](117/A117614.asm)): a(0)=1, a(n)=4a(n-1)+2 for n odd, a(n)=4a(n-1) for n even.
 * [A117615](http://oeis.org/A117615) ([L10 program](117/A117615.asm)): a(0)=0, a(1)=1, a(n)=4a(n-1)+2 for n =3,5,7,..., a(n)=4a(n-1) for n =2,4,6,....
 * [A117616](http://oeis.org/A117616) ([L04 program](117/A117616.asm)): a(0)=0, a(n)=4a(n-1)+2 for n odd, a(n)=4a(n-1) for n even.
@@ -2427,7 +2428,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125817](http://oeis.org/A125817) ([L68 program](125/A125817.asm)): a(n) = ((1 + 3*sqrt(2))^n - (1 - 3*sqrt(2))^n)/(2*sqrt(2)).
 * [A125818](http://oeis.org/A125818) ([L29 program](125/A125818.asm)): a(n) = ((1 + 3*sqrt(2))^n + (1 - 3*sqrt(2))^n)/2.
 * [A125823](http://oeis.org/A125823) ([L04 program](125/A125823.asm)): Numbers whose base 7 representation is 4444....4.
-* [A125824](http://oeis.org/A125824) ([L06 program](125/A125824.asm)): Denominator of n!/3^n.
+* [A125824](http://oeis.org/A125824) ([L04 program](125/A125824.asm)): Denominator of n!/3^n.
 * [A125831](http://oeis.org/A125831) ([L03 program](125/A125831.asm)): a(n) = (5^n - 1)/2.
 * [A125833](http://oeis.org/A125833) ([L04 program](125/A125833.asm)): Numbers whose base 5 representation is 333333.......3.
 * [A125835](http://oeis.org/A125835) ([L04 program](125/A125835.asm)): Numbers whose base 8 or octal representation is 22222222.......2.
@@ -4051,6 +4052,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139413](http://oeis.org/A139413) ([L06 program](139/A139413.asm)): Triangle read by rows: row n gives the numbers A010888(n*k) for k = 1..n.
 * [A139477](http://oeis.org/A139477) ([L31 program](139/A139477.asm)): Number of binary digits in A001109(n).
 * [A139482](http://oeis.org/A139482) ([L06 program](139/A139482.asm)): Binomial transform of [1, 1, 2, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, ...].
+* [A139487](http://oeis.org/A139487) ([L18 program](139/A139487.asm)): Numbers k such that 8k + 7 is prime.
 * [A139488](http://oeis.org/A139488) ([L08 program](139/A139488.asm)): Binomial transform of [1, 2, 3, 4, 0, 0, 0, ...].
 * [A139544](http://oeis.org/A139544) ([L06 program](139/A139544.asm)): Numbers which are not the difference of two squares of positive integers.
 * [A139570](http://oeis.org/A139570) ([L04 program](139/A139570.asm)): 2n(n+3).
@@ -4439,6 +4441,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A143976](http://oeis.org/A143976) ([L05 program](143/A143976.asm)): Rectangular array R by antidiagonals: label each unit square in the first quadrant lattice by its northeast vertex (x,y) and mark squares having x+y=1(mod 3); then R(m,n) is the number of UNmarked squares in the rectangle [0,m]x[0,n].
 * [A143977](http://oeis.org/A143977) ([L04 program](143/A143977.asm)): Rectangular array R by antidiagonals: label each unit square in the first quadrant lattice by its northeast vertex (x,y) and mark squares having |x-y|=0(mod 3); then R(m,n) is the number of marked squares in the rectangle [0,m] X [0,n].
 * [A143978](http://oeis.org/A143978) ([L05 program](143/A143978.asm)): a(n) = floor(2*n*(n+1)/3).
+* [A143979](http://oeis.org/A143979) ([L03 program](143/A143979.asm)): Rectangular array R by antidiagonals: label each unit square in the first quadrant lattice by its northeast vertex (x,y) and mark squares having |x-y|=0(mod 3); then R(m,n) is the number of UNmarked squares in the rectangle [0,m]x[0,n].
 * [A143988](http://oeis.org/A143988) ([L05 program](143/A143988.asm)): Numbers congruent to {5, 13} mod 18.
 * [A143996](http://oeis.org/A143996) ([L03 program](143/A143996.asm)): Rectangular array by antidiagonals: label each unit square in the first quadrant lattice by its northeast vertex (x,y) and mark squares for which (x,y) is congruent mod 4 to one of the following: (1,4), (2,2), (3,3), (4,1); then R(m,n) is the number of marked squares in the rectangle [0,m]x[0,n].
 * [A143999](http://oeis.org/A143999) ([L04 program](143/A143999.asm)): Rectangular array by antidiagonals: label each unit square in the first quadrant lattice by its northeast vertex (x,y) and mark squares for which (x,y) is congruent mod 4 to one of the following: (1,1), (2,3), (3,2), (4,0); then R(m,n) is the number of UNmarked squares in the rectangle [0,m]x[0,n].
@@ -4453,12 +4456,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144138](http://oeis.org/A144138) ([L05 program](144/A144138.asm)): Chebyshev polynomial of the second kind U(3,n).
 * [A144139](http://oeis.org/A144139) ([L07 program](144/A144139.asm)): Chebyshev polynomial of the second kind U(4,n).
 * [A144193](http://oeis.org/A144193) ([L07 program](144/A144193.asm)): Square array (5 X 5) read by rows.
-* [A144194](http://oeis.org/A144194) ([L06 program](144/A144194.asm)): Square array (6 X 6) read by rows.
+* [A144194](http://oeis.org/A144194) ([L07 program](144/A144194.asm)): Square array (6 X 6) read by rows.
 * [A144196](http://oeis.org/A144196) ([L14 program](144/A144196.asm)): Square array (6 X 6) read by rows.
 * [A144197](http://oeis.org/A144197) ([L27 program](144/A144197.asm)): Square array 7 x 7 read by rows.
 * [A144204](http://oeis.org/A144204) ([L08 program](144/A144204.asm)): Array A(k,n) = (n+k-2)*(n-1) - 1 (k >= 1, n >= 1) read by antidiagonals.
 * [A144216](http://oeis.org/A144216) ([L04 program](144/A144216.asm)): C(m,2)+C(n,2), m>=1, n>=1: a rectangular array R read by antidiagonals.
 * [A144217](http://oeis.org/A144217) ([L08 program](144/A144217.asm)): Weight array of A144216: a rectangular array by antidiagonals.
+* [A144225](http://oeis.org/A144225) ([L07 program](144/A144225.asm)): Bordered Pascal's triangle in rectangular format.
 * [A144257](http://oeis.org/A144257) ([L03 program](144/A144257.asm)): Weight array of A086270.
 * [A144312](http://oeis.org/A144312) ([L03 program](144/A144312.asm)): 5*n*(5*n+1)/2.
 * [A144314](http://oeis.org/A144314) ([L03 program](144/A144314.asm)): a(n) = 3*n*(6*n+1).
