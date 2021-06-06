@@ -4,6 +4,5 @@
 add $0,27
 cal $0,30102 ; Base-3 reversal of n (written in base 10).
 mov $1,$0
-mul $1,40320
-div $1,120960
+div $1,3
 add $1,1

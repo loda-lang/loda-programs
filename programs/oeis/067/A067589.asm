@@ -4,5 +4,4 @@
 cal $0,269819 ; Numbers that are congruent to {5, 11, 13, 19} mod 24.
 pow $0,2
 mov $1,$0
-mul $1,3
-div $1,72
+div $1,24

@@ -11,8 +11,7 @@ lpb $4
   cal $0,127245 ; Row sums of a signed Thue-Morse related triangle.
   gcd $0,6
   mov $3,$0
-  mul $3,2
-  div $3,12
+  div $3,5
   add $3,1
   add $1,$3
 lpe

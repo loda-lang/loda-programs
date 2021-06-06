@@ -3,6 +3,7 @@
 
 lpb $0
   cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
+  mul $0,2
   mov $1,$0
-  mov $0,2
 lpe
+div $1,2

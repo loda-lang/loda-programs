@@ -11,7 +11,7 @@ lpb $29
   sub $0,$29
   lpb $0
     mov $2,$0
-    cal $2,52410 ; Write n = m^k with m, k integers, k >= 1, then a(n) = smallest possible choice for m.
+    cal $2,52410 ; Write n = m^k with m, k integers, k >= 1, then a(n) is the smallest possible choice for m.
     add $3,$2
     mov $0,$3
   lpe
