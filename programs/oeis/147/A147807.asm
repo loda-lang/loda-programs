@@ -3,19 +3,11 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,147809 ; Half the number of proper divisors (> 1) of n^2 + 1, i.e., tau(n^2 + 1)/2 - 1.
-  mov $3,$0
-  pow $0,2
-  mov $5,$3
-  cmp $5,0
-  add $3,$5
-  div $0,$3
-  mov $3,$0
-  add $3,1
-  add $1,$3
+  cal $0,147810 ; Half the number of divisors of n^2+1.
+  add $1,$0
 lpe
