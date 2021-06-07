@@ -2702,6 +2702,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021078](http://oeis.org/A021078) ([L04 program](021/A021078.asm)): Decimal expansion of 1/74.
 * [A021081](http://oeis.org/A021081) ([L16 program](021/A021081.asm)): Decimal expansion of 1/77.
 * [A021085](http://oeis.org/A021085) ([L04 program](021/A021085.asm)): Decimal expansion of 1/81.
+* [A021086](http://oeis.org/A021086) ([L15 program](021/A021086.asm)): Decimal expansion of 1/82.
 * [A021095](http://oeis.org/A021095) ([L09 program](021/A021095.asm)): Decimal expansion of 1/91.
 * [A021100](http://oeis.org/A021100) ([L08 program](021/A021100.asm)): Decimal expansion of 1/96.
 * [A021105](http://oeis.org/A021105) ([L04 program](021/A021105.asm)): Decimal expansion of 1/101.
@@ -2996,7 +2997,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022791](http://oeis.org/A022791) ([L42 program](022/A022791.asm)): Place where n-th 1 occurs in A023129.
 * [A022792](http://oeis.org/A022792) ([L29 program](022/A022792.asm)): Place where n-th 1 occurs in A023130.
 * [A022793](http://oeis.org/A022793) ([L07 program](022/A022793.asm)): Place where n-th 1 occurs in A023131.
-* [A022794](http://oeis.org/A022794) ([L12 program](022/A022794.asm)): Place where n-th 1 occurs in A023132.
+* [A022794](http://oeis.org/A022794) ([L26 program](022/A022794.asm)): Place where n-th 1 occurs in A023132.
 * [A022795](http://oeis.org/A022795) ([L07 program](022/A022795.asm)): Place where n-th 1 occurs in A023133.
 * [A022803](http://oeis.org/A022803) ([L04 program](022/A022803.asm)): Numbers that reach ...,7,8,4,2,1 under the mapping: if n is even divide by 2 else add 1.
 * [A022804](http://oeis.org/A022804) ([L05 program](022/A022804.asm)): a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is the complement of B.
@@ -4017,8 +4018,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A030179](http://oeis.org/A030179) ([L04 program](030/A030179.asm)): Quarter-squares squared: A002620^2.
 * [A030180](http://oeis.org/A030180) ([L04 program](030/A030180.asm)): a(n) = (n^7 - n)/42.
 * [A030186](http://oeis.org/A030186) ([L17 program](030/A030186.asm)): a(n) = 3*a(n-1) + a(n-2) - a(n-3) for n >= 3, a(0)=1, a(1)=2, a(2)=7.
-* [A030191](http://oeis.org/A030191) ([L13 program](030/A030191.asm)): Scaled Chebyshev U-polynomial evaluated at sqrt(5)/2.
-* [A030192](http://oeis.org/A030192) ([L04 program](030/A030192.asm)): Scaled Chebyshev U-polynomial evaluated at sqrt(6)/2.
+* [A030191](http://oeis.org/A030191) ([L08 program](030/A030191.asm)): Scaled Chebyshev U-polynomial evaluated at sqrt(5)/2.
+* [A030192](http://oeis.org/A030192) ([L08 program](030/A030192.asm)): Scaled Chebyshev U-polynomial evaluated at sqrt(6)/2.
 * [A030195](http://oeis.org/A030195) ([L29 program](030/A030195.asm)): a(n) = 3*a(n-1) + 3*a(n-2), a(0)=0, a(1)=1.
 * [A030221](http://oeis.org/A030221) ([L09 program](030/A030221.asm)): Chebyshev even indexed U-polynomials evaluated at sqrt(7)/2.
 * [A030240](http://oeis.org/A030240) ([L10 program](030/A030240.asm)): Scaled Chebyshev U-polynomials evaluated at sqrt(7)/2.
@@ -4814,7 +4815,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038548](http://oeis.org/A038548) ([L17 program](038/A038548.asm)): Number of divisors of n that are at most sqrt(n).
 * [A038572](http://oeis.org/A038572) ([L13 program](038/A038572.asm)): a(n) = n rotated one binary place to the right.
 * [A038573](http://oeis.org/A038573) ([L11 program](038/A038573.asm)): a(n) = 2^A000120(n) - 1.
-* [A038585](http://oeis.org/A038585) ([L15 program](038/A038585.asm)): Write n in binary, delete 0's.
+* [A038585](http://oeis.org/A038585) ([L06 program](038/A038585.asm)): Write n in binary, delete 0's.
 * [A038587](http://oeis.org/A038587) ([L15 program](038/A038587.asm)): Sizes of successive clusters in hexagonal lattice A_2 centered at deep hole.
 * [A038589](http://oeis.org/A038589) ([L09 program](038/A038589.asm)): Sizes of successive clusters in hexagonal lattice A_2 centered at lattice point.
 * [A038605](http://oeis.org/A038605) ([L05 program](038/A038605.asm)): a(n) = floor( prime(n)/n ).
@@ -5354,7 +5355,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044667](http://oeis.org/A044667) ([L27 program](044/A044667.asm)): Numbers n such that string 3,8 occurs in the base 9 representation of n but not of n+1.
 * [A044672](http://oeis.org/A044672) ([L06 program](044/A044672.asm)): Numbers n such that string 4,4 occurs in the base 9 representation of n but not of n+1.
 * [A044685](http://oeis.org/A044685) ([L24 program](044/A044685.asm)): Numbers n such that string 5,8 occurs in the base 9 representation of n but not of n+1.
-* [A044692](http://oeis.org/A044692) ([L08 program](044/A044692.asm)): Numbers n such that string 6,6 occurs in the base 9 representation of n but not of n+1.
+* [A044692](http://oeis.org/A044692) ([L07 program](044/A044692.asm)): Numbers n such that string 6,6 occurs in the base 9 representation of n but not of n+1.
 * [A044702](http://oeis.org/A044702) ([L08 program](044/A044702.asm)): Numbers n such that string 7,7 occurs in the base 9 representation of n but not of n+1.
 * [A044703](http://oeis.org/A044703) ([L28 program](044/A044703.asm)): Numbers n such that string 7,8 occurs in the base 9 representation of n but not of n+1.
 * [A044712](http://oeis.org/A044712) ([L03 program](044/A044712.asm)): Numbers n such that string 8,8 occurs in the base 9 representation of n but not of n+1.
@@ -5374,7 +5375,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A044837](http://oeis.org/A044837) ([L24 program](044/A044837.asm)): Positive integers having more base-11 runs of even length than odd.
 * [A044838](http://oeis.org/A044838) ([L30 program](044/A044838.asm)): Positive integers having more base-12 runs of even length than odd.
 * [A044839](http://oeis.org/A044839) ([L17 program](044/A044839.asm)): Positive integers having more base-13 runs of even length than odd.
-* [A044840](http://oeis.org/A044840) ([L31 program](044/A044840.asm)): Positive integers having more base-14 runs of even length than odd.
+* [A044840](http://oeis.org/A044840) ([L29 program](044/A044840.asm)): Positive integers having more base-14 runs of even length than odd.
 * [A044842](http://oeis.org/A044842) ([L35 program](044/A044842.asm)): Positive integers having more base-16 runs of even length than odd.
 * [A044909](http://oeis.org/A044909) ([L41 program](044/A044909.asm)): Numbers whose base-8 run lengths alternate: odd, even, odd, ...
 * [A044910](http://oeis.org/A044910) ([L50 program](044/A044910.asm)): Numbers whose base-9 run lengths alternate: odd, even, odd, ...
@@ -5460,7 +5461,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A046162](http://oeis.org/A046162) ([L03 program](046/A046162.asm)): Reduced numerators of (n-1)^2/(n^2+n+1). Arises in Routh's theorem.
 * [A046163](http://oeis.org/A046163) ([L05 program](046/A046163.asm)): Reduced denominators of (n-1)^2/(n^2+n+1). Arises in Routh's theorem.
 * [A046212](http://oeis.org/A046212) ([L08 program](046/A046212.asm)): First numerator and then denominator of central elements of Leibniz's Harmonic Triangle.
-* [A046219](http://oeis.org/A046219) ([L06 program](046/A046219.asm)): Denominators of elements of 1/2-Pascal triangle (by row).
+* [A046219](http://oeis.org/A046219) ([L03 program](046/A046219.asm)): Denominators of elements of 1/2-Pascal triangle (by row).
 * [A046233](http://oeis.org/A046233) ([L07 program](046/A046233.asm)): Numbers n such that n^3 is palindromic in base 5.
 * [A046343](http://oeis.org/A046343) ([L03 program](046/A046343.asm)): Sum of the prime factors of the composite numbers (counted with multiplicity).
 * [A046630](http://oeis.org/A046630) ([L05 program](046/A046630.asm)): Number of cubic residues mod 2^n.
@@ -6105,7 +6106,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048879](http://oeis.org/A048879) ([L12 program](048/A048879.asm)): Generalized Pellian with second term of 10.
 * [A048881](http://oeis.org/A048881) ([L07 program](048/A048881.asm)): a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
 * [A048883](http://oeis.org/A048883) ([L06 program](048/A048883.asm)): a(n) = 3^wt(n), where wt(n) = A000120(n).
-* [A048896](http://oeis.org/A048896) ([L04 program](048/A048896.asm)): a(n) = 2^(A000120(n+1) - 1), n >= 0.
+* [A048896](http://oeis.org/A048896) ([L03 program](048/A048896.asm)): a(n) = 2^(A000120(n+1) - 1), n >= 0.
 * [A048967](http://oeis.org/A048967) ([L03 program](048/A048967.asm)): Number of even entries in row n of Pascal's triangle (A007318).
 * [A048974](http://oeis.org/A048974) ([L04 program](048/A048974.asm)): Odd numbers that are the sum of 2 primes.
 * [A049001](http://oeis.org/A049001) ([L06 program](049/A049001.asm)): a(n) = prime(n)^2 - 2.

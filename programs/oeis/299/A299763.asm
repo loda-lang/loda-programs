@@ -6,8 +6,7 @@ sub $0,1
 max $0,0
 cal $0,40 ; The prime numbers.
 lpb $0
-  add $0,$2
-  sub $0,1
+  mul $0,$2
 lpe
 mov $1,$0
 add $1,1

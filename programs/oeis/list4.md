@@ -1151,7 +1151,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218836](http://oeis.org/A218836) ([L06 program](218/A218836.asm)): Unmatched value maps: number of nX2 binary arrays indicating the locations of corresponding elements not equal to any horizontal or antidiagonal neighbor in a random 0..1 nX2 array.
 * [A218864](http://oeis.org/A218864) ([L05 program](218/A218864.asm)): Numbers of the form 9*k^2 + 8*k, k an integer.
 * [A218984](http://oeis.org/A218984) ([L09 program](218/A218984.asm)): Power floor sequence of 2+sqrt(6).
-* [A218985](http://oeis.org/A218985) ([L12 program](218/A218985.asm)): Power ceiling sequence of 2+sqrt(6).
+* [A218985](http://oeis.org/A218985) ([L07 program](218/A218985.asm)): Power ceiling sequence of 2+sqrt(6).
 * [A218986](http://oeis.org/A218986) ([L05 program](218/A218986.asm)): Power floor sequence of 2+sqrt(7).
 * [A218987](http://oeis.org/A218987) ([L06 program](218/A218987.asm)): Power ceiling sequence of 2+sqrt(7).
 * [A218988](http://oeis.org/A218988) ([L07 program](218/A218988.asm)): Power floor sequence of 2+sqrt(8).
@@ -1207,7 +1207,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A219657](http://oeis.org/A219657) ([L13 program](219/A219657.asm)): Positions of zeros in A219659.
 * [A219680](http://oeis.org/A219680) ([L14 program](219/A219680.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal, vertical or antidiagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 n X 2 array.
 * [A219695](http://oeis.org/A219695) ([L04 program](219/A219695.asm)): For odd numbers 2n - 1, half the difference between the largest divisor not exceeding the square root, and the least divisor not less than the square root.
-* [A219721](http://oeis.org/A219721) ([L21 program](219/A219721.asm)): Expansion of (1+7*x+5*x^2+7*x^3+x^4)/(1-x-x^4+x^5).
+* [A219721](http://oeis.org/A219721) ([L08 program](219/A219721.asm)): Expansion of (1+7*x+5*x^2+7*x^3+x^4)/(1-x-x^4+x^5).
 * [A219729](http://oeis.org/A219729) ([L07 program](219/A219729.asm)): Sum_{x <= n} largest divisor of x that is <= sqrt(x).
 * [A219730](http://oeis.org/A219730) ([L07 program](219/A219730.asm)): Sum_{x <= n} smallest divisor of x that is >= sqrt(x).
 * [A219754](http://oeis.org/A219754) ([L38 program](219/A219754.asm)): Expansion of x^4*(1-x-x^2)/((1+x)*(1-2*x)*(1-x-2*x^2)).
@@ -2224,7 +2224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241526](http://oeis.org/A241526) ([L04 program](241/A241526.asm)): Number of different positions in which a square with side length k, 1 <= k <= n - floor(n/3), can be placed within a bi-symmetric triangle of 1 X 1 squares of height n.
 * [A241527](http://oeis.org/A241527) ([L08 program](241/A241527.asm)): n^3 + (3^n+1)/2.
 * [A241566](http://oeis.org/A241566) ([L06 program](241/A241566.asm)): Number of 2-element subsets of {1,...,n} whose sum has more than 2 divisors.
-* [A241575](http://oeis.org/A241575) ([L23 program](241/A241575.asm)): Sturmian expansion of 1/2 in base sqrt(2)-1.
+* [A241575](http://oeis.org/A241575) ([L04 program](241/A241575.asm)): Sturmian expansion of 1/2 in base sqrt(2)-1.
 * [A241577](http://oeis.org/A241577) ([L06 program](241/A241577.asm)): n^3 + 4*n^2 - 5*n + 1.
 * [A241683](http://oeis.org/A241683) ([L05 program](241/A241683.asm)): Total number of 2 X 2 squares appearing in the Thue-Morse sequence logical matrices after n stages.
 * [A241685](http://oeis.org/A241685) ([L16 program](241/A241685.asm)): The total number of squares and rectangles appearing in the Thue-Morse sequence logical matrices after n stages.
@@ -2307,7 +2307,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242850](http://oeis.org/A242850) ([L09 program](242/A242850.asm)): 32*n^5 - 32*n^3 + 6*n.
 * [A242851](http://oeis.org/A242851) ([L15 program](242/A242851.asm)): 64*n^6 - 80*n^4 + 24*n^2 - 1.
 * [A242853](http://oeis.org/A242853) ([L15 program](242/A242853.asm)): 256*n^8 - 448*n^6 + 240*n^4 - 40*n^2 + 1.
-* [A242856](http://oeis.org/A242856) ([L21 program](242/A242856.asm)): Number of 2-matchings of the n X n grid graph.
+* [A242856](http://oeis.org/A242856) ([L07 program](242/A242856.asm)): Number of 2-matchings of the n X n grid graph.
 * [A242954](http://oeis.org/A242954) ([L10 program](242/A242954.asm)): a(n) = Product_{i=1..n} A234957(i).
 * [A242963](http://oeis.org/A242963) ([L04 program](242/A242963.asm)): Numbers n such that A242962(n) = sigma(n) = A000203(n).
 * [A242971](http://oeis.org/A242971) ([L20 program](242/A242971.asm)): Alternate n+1, 2^n.
@@ -2433,7 +2433,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244992](http://oeis.org/A244992) ([L03 program](244/A244992.asm)): Characteristic function for A244991: a(n) = A000035(A061395(n)).
 * [A245023](http://oeis.org/A245023) ([L04 program](245/A245023.asm)): Number of cases of tie (no winner) in the n-person rock-paper-scissors game.
 * [A245032](http://oeis.org/A245032) ([L12 program](245/A245032.asm)): a(n) = 27*(n - 6)^2 + 4*(n - 6)^3 = ((n - 6)^2)*(4*n + 3).
-* [A245033](http://oeis.org/A245033) ([L25 program](245/A245033.asm)): 4*(n + 7)^3 - 27*(n + 7)^2 = (4*n +1)*(n+7)^2.
+* [A245033](http://oeis.org/A245033) ([L08 program](245/A245033.asm)): 4*(n + 7)^3 - 27*(n + 7)^2 = (4*n +1)*(n+7)^2.
 * [A245034](http://oeis.org/A245034) ([L05 program](245/A245034.asm)): a(n) = prime(n)^2 - 4*prime(n).
 * [A245070](http://oeis.org/A245070) ([L07 program](245/A245070.asm)): Smallest positive non-divisor of the n-th Lucas number (A000032).
 * [A245071](http://oeis.org/A245071) ([L08 program](245/A245071.asm)): a(n) = 12n - prime(n).
