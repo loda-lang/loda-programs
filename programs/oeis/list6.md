@@ -436,8 +436,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308136](http://oeis.org/A308136) ([L08 program](308/A308136.asm)): Number of (undirected) Hamiltonian paths in the 2n-crossed prism graph.
 * [A308137](http://oeis.org/A308137) ([L04 program](308/A308137.asm)): Number of (undirected) Hamiltonian paths on the n-prism graph.
 * [A308167](http://oeis.org/A308167) ([L18 program](308/A308167.asm)): Number of integer-sided triangles with perimeter n and sides a, b, and c such that a <= b <= c and a|b.
-* [A308187](http://oeis.org/A308187) ([L03 program](308/A308187.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {0,1}.
-* [A308188](http://oeis.org/A308188) ([L03 program](308/A308188.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {1,2}.
+* [A308187](http://oeis.org/A308187) ([L04 program](308/A308187.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {0,1}.
+* [A308188](http://oeis.org/A308188) ([L05 program](308/A308188.asm)): Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {1,2}.
 * [A308196](http://oeis.org/A308196) ([L06 program](308/A308196.asm)): Partial sums of A063808.
 * [A308215](http://oeis.org/A308215) ([L08 program](308/A308215.asm)): a(n) is the multiplicative inverse of A001844(n+1) modulo A001844(n); where A001844 is the sequence of centered square numbers.
 * [A308217](http://oeis.org/A308217) ([L09 program](308/A308217.asm)): a(n) is the multiplicative inverse of A001844(n) modulo A001844(n+1); where A001844 is the sequence of centered square numbers.
@@ -1753,6 +1753,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336751](http://oeis.org/A336751) ([L10 program](336/A336751.asm)): Smallest side of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336754](http://oeis.org/A336754) ([L09 program](336/A336754.asm)): Perimeters in increasing order of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336819](http://oeis.org/A336819) ([L09 program](336/A336819.asm)): Odd values of D > 0 for which the generalized Ramanujan-Nagell equation x^2 + D = 2^m has two or more solutions in the positive integers.
+* [A336840](http://oeis.org/A336840) ([L05 program](336/A336840.asm)): Inverse Möbius transform of A048673.
 * [A336842](http://oeis.org/A336842) ([L04 program](336/A336842.asm)): Number of trailing 1-bits in the binary representation of A003961(n): a(n) = A007814(1+A003961(n)).
 * [A336845](http://oeis.org/A336845) ([L03 program](336/A336845.asm)): a(n) = A000005(n) * A003961(n), where A003961 is the prime shift towards larger primes, and A000005 gives the number of divisors of n, and also of A003961(n).
 * [A336850](http://oeis.org/A336850) ([L03 program](336/A336850.asm)): a(n) = gcd(A003961(n), sigma(A003961(n))), where A003961 is the prime shift towards larger primes.
@@ -2059,6 +2060,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A343911](http://oeis.org/A343911) ([L04 program](343/A343911.asm)): a(n) = Omega(phi(n)), where Omega is the number of prime factors of n with multiplicity and phi is the Euler totient function.
 * [A343936](http://oeis.org/A343936) ([L04 program](343/A343936.asm)): Number of ways to choose a multiset of n divisors of n - 1.
 * [A344004](http://oeis.org/A344004) ([L20 program](344/A344004.asm)): Number of ordered subsequences of {1,...,n} containing at least three elements and such that the first differences contain only odd numbers.
+* [A344110](http://oeis.org/A344110) ([L07 program](344/A344110.asm)): Triangle read by rows: T(n,k) = 2^(n*k), n >= 0, 0 <= k <= n.
 * [A344128](http://oeis.org/A344128) ([L15 program](344/A344128.asm)): a(n) = Sum_{k=1..n} k * floor(n/k^2).
 * [A344150](http://oeis.org/A344150) ([L10 program](344/A344150.asm)): Length of the n-th word in A342910.
 * [A344259](http://oeis.org/A344259) ([L07 program](344/A344259.asm)): For any number n with binary expansion (b(1), ..., b(k)), the binary expansion of a(n) is (b(1), ..., b(ceiling(k/2))).

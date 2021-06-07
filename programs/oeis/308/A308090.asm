@@ -1,17 +1,10 @@
 ; A308090: a(n) = gcd(2^n + n!, 3^n + n!, n+1).
 ; 1,1,1,5,1,7,1,1,1,11,1,13,1,1,1,17,1,19,1,1,1,23,1,1,1,1,1,29,1,31,1,1,1,1,1,37,1,1,1,41,1,43,1,1,1,47,1,1,1,1,1,53,1,1,1,1,1,59,1,61,1,1,1,1,1,67,1,1,1,71,1,73,1,1,1,1,1,79,1,1,1,83,1,1,1,1,1,89,1,1,1,1,1,1,1,97,1,1,1
 
-mov $1,1
-mov $2,$0
-cmp $2,0
-add $0,$2
-div $1,$0
-add $0,$1
-mov $1,$0
-add $1,1
-mov $0,$1
-cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mul $1,$0
-div $1,2
-mul $1,2
+lpb $0
+  add $0,1
+  mov $1,$0
+  cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
+  mul $1,$0
+lpe
 add $1,1

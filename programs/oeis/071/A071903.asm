@@ -3,22 +3,17 @@
 
 mov $3,$0
 add $3,1
-mov $7,$0
+mov $5,$0
 lpb $3
-  mov $0,$7
+  mov $0,$5
   sub $3,1
   sub $0,$3
-  lpb $0
-    mov $2,$0
-    cal $2,72436 ; Remove prime factors of form 4*k+3.
-    div $2,2
-    mov $4,$2
-    min $4,1
-    add $5,$4
-    bin $0,$5
+  cal $0,72436 ; Remove prime factors of form 4*k+3.
+  mov $2,$0
+  mov $4,262146
+  lpb $4
+    div $0,$2
+    mov $4,$0
   lpe
-  mov $6,$4
-  cmp $6,0
-  add $1,$6
-  add $4,$6
+  add $1,$0
 lpe

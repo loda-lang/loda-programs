@@ -12,16 +12,15 @@ lpb $12
   mov $6,$0
   mov $8,2
   lpb $8
-    clr $0,6
     mov $0,$6
     sub $8,1
     add $0,$8
     sub $0,1
     max $0,0
     cal $0,187570 ; Rank transform of the sequence ceiling(n/3); complement of A187571.
-    add $1,$0
+    mov $1,$0
     mov $9,$8
-    mul $9,$1
+    mul $9,$0
     add $7,$9
   lpe
   min $6,1

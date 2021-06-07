@@ -1,21 +1,7 @@
 ; A182890: Number of (1,0)-steps of weight 1 at level 0 in all weighted lattice paths in L_n.
 ; 0,1,2,5,14,36,94,247,646,1691,4428,11592,30348,79453,208010,544577,1425722,3732588,9772042,25583539,66978574,175352183,459077976,1201881744,3146567256,8237820025,21566892818,56462858429,147821682470,387002188980,1013184884470
 
-mov $2,$0
-mov $4,2
-lpb $4
-  mov $0,$2
-  sub $4,1
-  add $0,$4
-  sub $0,1
-  max $0,0
-  cal $0,48575 ; Pisot sequences L(2,5), E(2,5).
-  div $0,4
-  mov $3,$0
-  mov $5,$4
-  mul $5,$0
-  add $1,$5
-lpe
-min $2,1
-mul $2,$3
-sub $1,$2
+add $0,1
+mul $0,2
+cal $0,293553 ; a(n) is the integer k that minimizes |k/Fibonacci(n) - 1/4|.
+mov $1,$0

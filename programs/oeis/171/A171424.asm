@@ -4,6 +4,4 @@
 mov $1,$0
 cal $0,171228 ; n^(p-n) where p is smallest prime > n.
 add $1,$0
-div $1,2
-mul $1,2
 add $1,1
