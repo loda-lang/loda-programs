@@ -3,7 +3,7 @@
 
 add $0,2
 mov $2,$0
-cal $0,26383 ; a(n) = 5a(n-2), starting 1,2.
+cal $0,26383 ; a(n) = 5*a(n-2), starting 1,2.
 mov $1,$0
 mul $1,$2
 sub $1,10

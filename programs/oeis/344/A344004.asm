@@ -14,8 +14,8 @@ lpb $7
     mov $0,$2
     sub $4,1
     sub $0,$4
-    sub $0,1
-    cal $0,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
+    cal $0,97133 ; 3*Fibonacci(n)+(-1)^n.
+    div $0,3
     add $3,$0
   lpe
   add $6,$3

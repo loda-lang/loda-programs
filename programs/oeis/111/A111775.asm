@@ -3,7 +3,6 @@
 
 max $0,4
 cal $0,86374 ; Number of factors over Q in the factorization of T_n(x) + 1 where T_n(x) is the Chebyshev polynomial of the first kind.
-add $0,189160
 div $0,2
 mov $1,$0
-sub $1,94581
+sub $1,1
