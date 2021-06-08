@@ -26,7 +26,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A151787](http://oeis.org/A151787) ([L03 program](151/A151787.asm)): a(1)=1; for n > 1, a(n)=3*2^{wt(n-1)-1}.
 * [A151788](http://oeis.org/A151788) ([L06 program](151/A151788.asm)): Partial sums of A151787.
 * [A151789](http://oeis.org/A151789) ([L03 program](151/A151789.asm)): a(1)=1; for n > 1, a(n)=5*4^{wt(n-1)-1}.
-* [A151790](http://oeis.org/A151790) ([L09 program](151/A151790.asm)): Partial sums of A151789.
+* [A151790](http://oeis.org/A151790) ([L10 program](151/A151790.asm)): Partial sums of A151789.
 * [A151791](http://oeis.org/A151791) ([L03 program](151/A151791.asm)): a(1)=1; for n > 1, a(n) = 7*6^(wt(n-1)-1).
 * [A151792](http://oeis.org/A151792) ([L09 program](151/A151792.asm)): Partial sums of A151791.
 * [A151793](http://oeis.org/A151793) ([L06 program](151/A151793.asm)): Partial sums of A151782.
@@ -577,7 +577,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A156866](http://oeis.org/A156866) ([L03 program](156/A156866.asm)): 729000n - 116820.
 * [A156867](http://oeis.org/A156867) ([L03 program](156/A156867.asm)): 729000n - 180.
 * [A156868](http://oeis.org/A156868) ([L03 program](156/A156868.asm)): 729000n + 180.
-* [A156874](http://oeis.org/A156874) ([L06 program](156/A156874.asm)): Number of Sophie Germain primes <= n.
+* [A156874](http://oeis.org/A156874) ([L05 program](156/A156874.asm)): Number of Sophie Germain primes <= n.
 * [A156875](http://oeis.org/A156875) ([L16 program](156/A156875.asm)): Number of safe primes <= n.
 * [A156928](http://oeis.org/A156928) ([L09 program](156/A156928.asm)): G.f. of the z^1 coefficients of the FP1 in the second column of the A156921 matrix.
 * [A157001](http://oeis.org/A157001) ([L11 program](157/A157001.asm)): Fractions x/y, with 1<=x,y<=n, that reduce to (odd)/(even).
@@ -1618,6 +1618,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164611](http://oeis.org/A164611) ([L08 program](164/A164611.asm)): Expansion of (1 + x + 2*x^2 - x^3)/(1 - 2*x + 3*x^2 - 2*x^3 + x^4).
 * [A164632](http://oeis.org/A164632) ([L06 program](164/A164632.asm)): a(1)=1 followed by 2^k appearing 2^(2*k-1) times for k>0.
 * [A164640](http://oeis.org/A164640) ([L10 program](164/A164640.asm)): a(n) = 8*a(n-2) for n > 2; a(1) = 1, a(2) = 6.
+* [A164653](http://oeis.org/A164653) ([L09 program](164/A164653.asm)): a(1) = 1, for n>=2: a(n) = sum of two consecutive noncomposite numbers A008578.
 * [A164654](http://oeis.org/A164654) ([L08 program](164/A164654.asm)): a(n) = 2*a(n-2) for n > 2; a(1) = 3, a(2) = 8.
 * [A164660](http://oeis.org/A164660) ([L04 program](164/A164660.asm)): Numerators of row sums of triangle of rationals A164658/A164659. Definite integral of Chebyshev polynomials of the first kind: Integral_{x=0..1} T(n,x).
 * [A164675](http://oeis.org/A164675) ([L14 program](164/A164675.asm)): a(n) = 8*a(n-2) for n > 2; a(1) = 1, a(2) = 12.
@@ -1769,6 +1770,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165872](http://oeis.org/A165872) ([L05 program](165/A165872.asm)): Totally multiplicative sequence with a(p) = - 2.
 * [A165897](http://oeis.org/A165897) ([L05 program](165/A165897.asm)): a(n) = a(n-1) + largest proper divisor of a(n-1), a(1)=4.
 * [A165900](http://oeis.org/A165900) ([L04 program](165/A165900.asm)): Values of Fibonacci polynomial n^2 - n - 1.
+* [A165907](http://oeis.org/A165907) ([L06 program](165/A165907.asm)): Minimal m for packing the first n primes in a prime(n) X m rectangle
 * [A165943](http://oeis.org/A165943) ([L03 program](165/A165943.asm)): Heptasection A061037(7*n+2).
 * [A165972](http://oeis.org/A165972) ([L07 program](165/A165972.asm)): Nonprimes k such that the sum of the smallest and largest divisor of k is prime.
 * [A165983](http://oeis.org/A165983) ([L03 program](165/A165983.asm)): Period 16: repeat 1,1,1,2,1,1,1,2,1,1,1,4,1,1,1,4.
@@ -2919,7 +2921,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175395](http://oeis.org/A175395) ([L04 program](175/A175395.asm)): a(n) = 2*Fibonacci(n)^2.
 * [A175406](http://oeis.org/A175406) ([L04 program](175/A175406.asm)): The greatest integer k such that (1+1/n)^k <= 2.
 * [A175409](http://oeis.org/A175409) ([L33 program](175/A175409.asm)): Successive numbers of consecutive positive terms to add when rearranging the alternating harmonic series to sum to log[7/3].
-* [A175462](http://oeis.org/A175462) ([L04 program](175/A175462.asm)): Number of divisors of integers of form 5 + 8n.
+* [A175462](http://oeis.org/A175462) ([L05 program](175/A175462.asm)): Number of divisors of integers of form 5 + 8n.
 * [A175485](http://oeis.org/A175485) ([L05 program](175/A175485.asm)): Numerators of averages of squares of the first n positive integers.
 * [A175540](http://oeis.org/A175540) ([L04 program](175/A175540.asm)): a(n) = A067076(n) + n.
 * [A175548](http://oeis.org/A175548) ([L03 program](175/A175548.asm)): Binary weight of sigma(n).
@@ -4132,6 +4134,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187892](http://oeis.org/A187892) ([L12 program](187/A187892.asm)): a(0)=0, a(1)=6, a(n)=a(n-1)+a(n-2)-1.
 * [A187893](http://oeis.org/A187893) ([L03 program](187/A187893.asm)): a(0)=1, a(1)=4, a(n) = a(n-1) + a(n-2) - 1.
 * [A187944](http://oeis.org/A187944) ([L04 program](187/A187944.asm)): [nr+kr]-[nr]-[kr], where r=(1+sqrt(5))/2, k=3, [ ]=floor.
+* [A187948](http://oeis.org/A187948) ([L06 program](187/A187948.asm)): [nr+kr]-[nr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
 * [A187949](http://oeis.org/A187949) ([L04 program](187/A187949.asm)): Positions of 0 in A187948; complement of A187953.
 * [A187952](http://oeis.org/A187952) ([L08 program](187/A187952.asm)): Positions of 1 in A187950; complement of A187951.
 * [A187967](http://oeis.org/A187967) ([L09 program](187/A187967.asm)): [nr+kr]-[nr]-[kr], where r=sqrt(2), k=2, [ ]=floor.
@@ -4459,7 +4462,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191008](http://oeis.org/A191008) ([L19 program](191/A191008.asm)): Another renewal type of sequence. Let X, X(1), X(2),... denote random variables with pdf P(X = 1) = P(X = 4 ) = 1/4 and P(X = 2) = 1/2. Let N(x) denote the first value of k such that X(1)*X(2)*...*X(k) > x and let H(x)= E(N(x)). The sequence is given by a(n) = 3^(n+1)*H(2^n)/4.
 * [A191010](http://oeis.org/A191010) ([L09 program](191/A191010.asm)): a(n) = 4^(n+1)*H(2^n)/5 with H(2^n) = n+(6+(-1)^n/4^(n+1))/5 = E(N(2^n)), where X, X(1), X(2),... denote random variables with pdf P(X = 1) = P(X = 4) = 1/5 and P(X = 2) = 3/5, N(x) is the first value of k such that X(1)*X(2)*...*X(k) > x and H(x)= E(N(x)).
 * [A191012](http://oeis.org/A191012) ([L08 program](191/A191012.asm)): a(n) = n^5 - n^4 + n^3 - n^2 + n.
-* [A191106](http://oeis.org/A191106) ([L05 program](191/A191106.asm)): Increasing sequence generated by these rules: a(1)=1, and if x is in a then 3x-2 and 3x are in a.
+* [A191106](http://oeis.org/A191106) ([L04 program](191/A191106.asm)): Increasing sequence generated by these rules: a(1)=1, and if x is in a then 3x-2 and 3x are in a.
 * [A191107](http://oeis.org/A191107) ([L03 program](191/A191107.asm)): Increasing sequence generated by these rules:  a(1)=1, and if x is in a then 3x-2 and 3x+1 are in a.
 * [A191108](http://oeis.org/A191108) ([L06 program](191/A191108.asm)): Increasing sequence generated by these rules:  a(1)=1, and if x is in a then 3x-2 and 3x+2 are in a.
 * [A191109](http://oeis.org/A191109) ([L08 program](191/A191109.asm)): Increasing sequence generated by these rules:  a(1)=1, and if x is in a then 3x-1 and 3x+2 are in a.

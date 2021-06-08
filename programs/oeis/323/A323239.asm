@@ -3,7 +3,6 @@
 
 mul $0,2
 cal $0,87049 ; Characteristic sequence for numbers n>=0 that are either squares or have a square > 1 as factor.
-cal $0,33422 ; [ 10000/n ].
 mov $1,$0
-sub $1,5000
-div $1,5000
+add $1,1
+mod $1,2

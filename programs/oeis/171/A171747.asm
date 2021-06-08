@@ -3,9 +3,4 @@
 
 cal $0,3627 ; Primes of the form 3n-1.
 cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
-mul $0,144
 mov $1,$0
-sub $1,426
-div $1,288
-mul $1,2
-add $1,3

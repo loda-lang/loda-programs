@@ -1763,6 +1763,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230641](http://oeis.org/A230641) ([L06 program](230/A230641.asm)): a(n) = n + (sum of digits in base-3 representation of n).
 * [A230664](http://oeis.org/A230664) ([L05 program](230/A230664.asm)): Floor(3^n / n^2).
 * [A230774](http://oeis.org/A230774) ([L07 program](230/A230774.asm)): Number of primes less than first prime above square root of n.
+* [A230775](http://oeis.org/A230775) ([L03 program](230/A230775.asm)): Smallest prime number greater than or equal to the square root of n.
 * [A230776](http://oeis.org/A230776) ([L09 program](230/A230776.asm)): Record values in A228098.
 * [A230846](http://oeis.org/A230846) ([L07 program](230/A230846.asm)): 1 + A075526(n).
 * [A230847](http://oeis.org/A230847) ([L06 program](230/A230847.asm)): a(n) = 1 + A054541(n).

@@ -7,6 +7,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,131378 ; Starting with 0, the sequence a(n) changes from 0 to 1 or back when the next number n is a prime.
+  sub $0,1
+  cal $0,71986 ; Parity of the prime-counting function pi(n).
   add $1,$0
 lpe
