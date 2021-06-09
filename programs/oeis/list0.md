@@ -245,7 +245,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001512](http://oeis.org/A001512) ([L05 program](001/A001512.asm)): a(n) = (5*n+1)*(5*n+2)*(5*n+3)*(5*n+4).
 * [A001513](http://oeis.org/A001513) ([L04 program](001/A001513.asm)): (6n+1)(6n+5).
 * [A001519](http://oeis.org/A001519) ([L06 program](001/A001519.asm)): a(n) = 3*a(n-1) - a(n-2) for n >= 2, with a(0) = a(1) = 1.
-* [A001520](http://oeis.org/A001520) ([L07 program](001/A001520.asm)): a(n) = (6*n+1)*(6*n+3)*(6*n+5).
+* [A001520](http://oeis.org/A001520) ([L05 program](001/A001520.asm)): a(n) = (6*n+1)*(6*n+3)*(6*n+5).
 * [A001526](http://oeis.org/A001526) ([L04 program](001/A001526.asm)): (7n+1)(7n+6).
 * [A001533](http://oeis.org/A001533) ([L04 program](001/A001533.asm)): (8n+1)(8n+7).
 * [A001534](http://oeis.org/A001534) ([L04 program](001/A001534.asm)): (9n+1)(9n+8).
@@ -2680,6 +2680,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021003](http://oeis.org/A021003) ([L04 program](021/A021003.asm)): a(n) = (n/2)*(n^4+1).
 * [A021006](http://oeis.org/A021006) ([L04 program](021/A021006.asm)): Pisot sequence P(4,11), a(0)=4, a(1)=11, a(n+1) is the nearest integer to a(n)^2/a(n-1). Evidently satisfies a(n) = 2*a(n-1)+2*a(n-2).
 * [A021016](http://oeis.org/A021016) ([L08 program](021/A021016.asm)): Decimal expansion of 1/12.
+* [A021017](http://oeis.org/A021017) ([L06 program](021/A021017.asm)): Decimal expansion of 1/13.
 * [A021018](http://oeis.org/A021018) ([L19 program](021/A021018.asm)): Decimal expansion of 1/14.
 * [A021019](http://oeis.org/A021019) ([L03 program](021/A021019.asm)): Decimal expansion of 1/15.
 * [A021020](http://oeis.org/A021020) ([L04 program](021/A021020.asm)): Decimal expansion of 1/16.
@@ -3485,12 +3486,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025828](http://oeis.org/A025828) ([L03 program](025/A025828.asm)): Expansion of 1/((1-x^3)(1-x^4)(1-x^6)).
 * [A025829](http://oeis.org/A025829) ([L17 program](025/A025829.asm)): Expansion of 1/((1-x^3)(1-x^4)(1-x^7)).
 * [A025834](http://oeis.org/A025834) ([L05 program](025/A025834.asm)): Expansion of 1/((1-x^3)(1-x^4)(1-x^12)).
-* [A025835](http://oeis.org/A025835) ([L17 program](025/A025835.asm)): Expansion of 1/((1-x^3)(1-x^5)(1-x^6)).
-* [A025836](http://oeis.org/A025836) ([L17 program](025/A025836.asm)): Expansion of 1/((1-x^3)(1-x^5)(1-x^8)).
-* [A025837](http://oeis.org/A025837) ([L17 program](025/A025837.asm)): Expansion of 1/((1-x^3)*(1-x^5)*(1-x^9)).
-* [A025839](http://oeis.org/A025839) ([L17 program](025/A025839.asm)): Expansion of 1/((1-x^3)(1-x^5)(1-x^11)).
-* [A025840](http://oeis.org/A025840) ([L17 program](025/A025840.asm)): Expansion of 1/((1-x^3)*(1-x^5)*(1-x^12)).
-* [A025841](http://oeis.org/A025841) ([L17 program](025/A025841.asm)): Expansion of 1/((1-x^3)(1-x^6)(1-x^7)).
+* [A025835](http://oeis.org/A025835) ([L16 program](025/A025835.asm)): Expansion of 1/((1-x^3)(1-x^5)(1-x^6)).
+* [A025836](http://oeis.org/A025836) ([L16 program](025/A025836.asm)): Expansion of 1/((1-x^3)(1-x^5)(1-x^8)).
+* [A025837](http://oeis.org/A025837) ([L16 program](025/A025837.asm)): Expansion of 1/((1-x^3)*(1-x^5)*(1-x^9)).
+* [A025839](http://oeis.org/A025839) ([L16 program](025/A025839.asm)): Expansion of 1/((1-x^3)(1-x^5)(1-x^11)).
+* [A025840](http://oeis.org/A025840) ([L16 program](025/A025840.asm)): Expansion of 1/((1-x^3)*(1-x^5)*(1-x^12)).
+* [A025841](http://oeis.org/A025841) ([L16 program](025/A025841.asm)): Expansion of 1/((1-x^3)(1-x^6)(1-x^7)).
 * [A025854](http://oeis.org/A025854) ([L17 program](025/A025854.asm)): Expansion of 1/((1-x^3)(1-x^9)(1-x^10)).
 * [A025859](http://oeis.org/A025859) ([L17 program](025/A025859.asm)): Expansion of 1/((1-x^4)(1-x^5)(1-x^7)).
 * [A025860](http://oeis.org/A025860) ([L17 program](025/A025860.asm)): Expansion of 1/((1-x^4)(1-x^5)(1-x^8)).
@@ -5515,7 +5516,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A046951](http://oeis.org/A046951) ([L03 program](046/A046951.asm)): a(n) is the number of squares dividing n.
 * [A046978](http://oeis.org/A046978) ([L08 program](046/A046978.asm)): Numerators of Taylor series for exp(x)*sin(x).
 * [A046980](http://oeis.org/A046980) ([L04 program](046/A046980.asm)): Numerators of Taylor series for exp(x)*cos(x).
-* [A046992](http://oeis.org/A046992) ([L03 program](046/A046992.asm)): a(n) = Sum_{k=1..n} pi(k) (cf. A000720).
+* [A046992](http://oeis.org/A046992) ([L10 program](046/A046992.asm)): a(n) = Sum_{k=1..n} pi(k) (cf. A000720).
 * [A046998](http://oeis.org/A046998) ([L05 program](046/A046998.asm)): a(n) = 1 - (7/6)*n + (2/3)*n^3 + (1/2)*n^4.
 * [A047081](http://oeis.org/A047081) ([L04 program](047/A047081.asm)): Sum{T(n,i): i=0,1,...,n}, array T as in A047080.
 * [A047171](http://oeis.org/A047171) ([L05 program](047/A047171.asm)): Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-1)/2.
