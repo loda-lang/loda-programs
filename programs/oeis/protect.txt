@@ -3,6 +3,7 @@ A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest pow
 A038500: Highest power of 3 dividing n.
 A038712: Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
 A060904: Largest power of 5 that divides n.
+A068503: Highest power of 3 dividing prime(n)-1.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).
 A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
