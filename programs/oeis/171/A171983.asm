@@ -3,21 +3,5 @@
 
 add $0,1
 mov $1,$0
-mul $1,13
-mov $2,$0
-mov $3,1
-mov $4,$0
-mul $4,$1
-lpb $2
-  lpb $4
-    add $0,3
-    trn $4,$3
-    add $3,2
-  lpe
-  sub $0,$2
-  mov $2,$4
-lpe
-mov $1,$0
-sub $1,12
-div $1,3
-add $1,3
+cal $1,198270 ; Ceiling(n*sqrt(13)).
+sub $1,1

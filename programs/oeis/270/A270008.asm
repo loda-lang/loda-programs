@@ -3,10 +3,7 @@
 
 cal $0,270012 ; Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.
 sub $0,1
-add $3,$0
-mov $2,$3
+mov $2,$0
 cmp $2,0
-add $3,$2
-add $3,2
-add $1,$3
-sub $1,2
+add $0,$2
+add $1,$0

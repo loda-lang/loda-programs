@@ -3,6 +3,5 @@
 
 add $0,1
 cal $0,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
-cal $0,168269 ; a(n) = 2*n - (-1)^n.
+div $0,2
 mov $1,$0
-div $1,4
