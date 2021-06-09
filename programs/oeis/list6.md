@@ -72,7 +72,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301697](http://oeis.org/A301697) ([L17 program](301/A301697.asm)): Coordination sequence for node of type V2 in "krj" 2-D tiling (or net).
 * [A301698](http://oeis.org/A301698) ([L27 program](301/A301698.asm)): Partial sums of A301697.
 * [A301707](http://oeis.org/A301707) ([L06 program](301/A301707.asm)): a(n) = n * Sum_{k prime<=n} k.
-* [A301708](http://oeis.org/A301708) ([L17 program](301/A301708.asm)): Coordination sequence for node of type V1 in "krc" 2-D tiling (or net).
+* [A301708](http://oeis.org/A301708) ([L09 program](301/A301708.asm)): Coordination sequence for node of type V1 in "krc" 2-D tiling (or net).
 * [A301709](http://oeis.org/A301709) ([L10 program](301/A301709.asm)): Partial sums of A301708.
 * [A301710](http://oeis.org/A301710) ([L17 program](301/A301710.asm)): Coordination sequence for node of type V2 in "krc" 2-D tiling (or net).
 * [A301711](http://oeis.org/A301711) ([L06 program](301/A301711.asm)): Partial sums of A301710.

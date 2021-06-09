@@ -2,6 +2,5 @@
 ; 1,1,2,1,3,2,4,2,4,3,5,1,9,2,10,3,5,7,9,2,10,9,9,2,13,9,8,4,20,4,15,6,15,8,12,6,22,6,15,15,21,5,13,12,23,7,24,11,19,15,24,6,30,6,26,7
 
 add $0,1
+cal $0,204539 ; a(n) = number of integers N=4k whose "basin" sequence (cf. comment) ends in n^2.
 mov $1,$0
-cal $1,28913 ; First differences of A007952.
-div $1,2

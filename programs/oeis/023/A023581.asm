@@ -3,6 +3,5 @@
 
 cal $0,40 ; The prime numbers.
 add $0,2
-cal $0,73093 ; Number of prime power divisors of n.
+cal $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
 mov $1,$0
-sub $1,1

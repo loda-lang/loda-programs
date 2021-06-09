@@ -964,7 +964,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215004](http://oeis.org/A215004) ([L04 program](215/A215004.asm)): a(0) = a(1) = 1; for n>1, a(n) = a(n-1) + a(n-2) + floor(n/2).
 * [A215005](http://oeis.org/A215005) ([L09 program](215/A215005.asm)): a(n) = a(n-2) + a(n-1) + floor(n/2) + 1 for n > 1 and a(0)=0, a(1)=1.
 * [A215006](http://oeis.org/A215006) ([L13 program](215/A215006.asm)): a(0)=0, a(n+1) is the least k>a(n) such that k+a(n)+n+1 is a Fibonacci number.
-* [A215020](http://oeis.org/A215020) ([L06 program](215/A215020.asm)): a(n) = log_2( A182105(n) ).
+* [A215020](http://oeis.org/A215020) ([L03 program](215/A215020.asm)): a(n) = log_2( A182105(n) ).
 * [A215036](http://oeis.org/A215036) ([L04 program](215/A215036.asm)): 2 followed by "1,0" repeated.
 * [A215052](http://oeis.org/A215052) ([L17 program](215/A215052.asm)): a(n) = (binomial(n,5) - floor(n/5)) / 5.
 * [A215053](http://oeis.org/A215053) ([L04 program](215/A215053.asm)): a(n) = 1/7*( binomial(n,7) - floor(n/7) ).
@@ -1144,6 +1144,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218443](http://oeis.org/A218443) ([L16 program](218/A218443.asm)): a(n) = Sum_{k=0..n} floor(n/(3k+2)).
 * [A218444](http://oeis.org/A218444) ([L10 program](218/A218444.asm)): a(n) = Sum_{k>=0} floor(n/(5*k + 1)).
 * [A218445](http://oeis.org/A218445) ([L16 program](218/A218445.asm)): a(n) = Sum_{k>=0} floor(n/(5*k + 2)).
+* [A218460](http://oeis.org/A218460) ([L03 program](218/A218460.asm)): a(n) = prime(n)^(prime(n + 1) - prime(n)).
 * [A218470](http://oeis.org/A218470) ([L05 program](218/A218470.asm)): Partial sums of floor(n/9).
 * [A218471](http://oeis.org/A218471) ([L05 program](218/A218471.asm)): a(n) = n*(7*n-3)/2.
 * [A218507](http://oeis.org/A218507) ([L09 program](218/A218507.asm)): Number of partitions of n in which any two parts differ by at most 5.
@@ -2702,7 +2703,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248851](http://oeis.org/A248851) ([L09 program](248/A248851.asm)): a(n) = ( 2*n*(2*n^2 + 9*n + 14) + (-1)^n - 1 )/16.
 * [A248877](http://oeis.org/A248877) ([L05 program](248/A248877.asm)): a(1) = 23, a(2) = 71, a(n) = 3*a(n-1) - 2*a(n-2) for n>2.
 * [A248917](http://oeis.org/A248917) ([L07 program](248/A248917.asm)): a(n) = 2^n * n^2 + 1.
-* [A248928](http://oeis.org/A248928) ([L05 program](248/A248928.asm)): Interleave (2*n+2)^2 with (2*n+3)^2, both listed n+1 times.
+* [A248928](http://oeis.org/A248928) ([L03 program](248/A248928.asm)): Interleave (2*n+2)^2 with (2*n+3)^2, both listed n+1 times.
 * [A248974](http://oeis.org/A248974) ([L06 program](248/A248974.asm)): Floor( 1/(n*sinh(1/n) + n*sin(1/n) - 2) ).
 * [A249013](http://oeis.org/A249013) ([L04 program](249/A249013.asm)): a(n) = floor( (n-1) * (n+4) / 10 ).
 * [A249020](http://oeis.org/A249020) ([L05 program](249/A249020.asm)): a(n) = floor( n * (n+5) / 10) + 1.

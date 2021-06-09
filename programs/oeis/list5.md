@@ -1275,7 +1275,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269956](http://oeis.org/A269956) ([L07 program](269/A269956.asm)): Triangle read by rows, T(n,k) = binomial(3*n,n+k) for n>=0 and 0<=k<=n.
 * [A270003](http://oeis.org/A270003) ([L06 program](270/A270003.asm)): Least prime p such that n = p + q - r for some primes q and r with q > p.
 * [A270006](http://oeis.org/A270006) ([L43 program](270/A270006.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
-* [A270008](http://oeis.org/A270008) ([L09 program](270/A270008.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
+* [A270008](http://oeis.org/A270008) ([L06 program](270/A270008.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
 * [A270010](http://oeis.org/A270010) ([L08 program](270/A270010.asm)): Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.
 * [A270012](http://oeis.org/A270012) ([L07 program](270/A270012.asm)): Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.
 * [A270026](http://oeis.org/A270026) ([L24 program](270/A270026.asm)): a(n) is the smallest b for which the base-b representation of n contains at least one 0 (or 0 if no such base exists).
@@ -1714,9 +1714,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276858](http://oeis.org/A276858) ([L26 program](276/A276858.asm)): First differences of the Beatty sequence A022842 for sqrt(8).
 * [A276859](http://oeis.org/A276859) ([L18 program](276/A276859.asm)): First differences of the Beatty sequence A022843 for e.
 * [A276860](http://oeis.org/A276860) ([L31 program](276/A276860.asm)): First differences of the Beatty sequence A276853 for 2*e.
-* [A276862](http://oeis.org/A276862) ([L08 program](276/A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
+* [A276862](http://oeis.org/A276862) ([L04 program](276/A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
 * [A276863](http://oeis.org/A276863) ([L03 program](276/A276863.asm)): First differences of the Beatty sequence A276854 for 1 + sqrt(5).
-* [A276864](http://oeis.org/A276864) ([L04 program](276/A276864.asm)): First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+* [A276864](http://oeis.org/A276864) ([L08 program](276/A276864.asm)): First differences of the Beatty sequence A001952 for 2 + sqrt(2).
 * [A276865](http://oeis.org/A276865) ([L07 program](276/A276865.asm)): First differences of the Beatty sequence A003512 for 2 + sqrt(3).
 * [A276866](http://oeis.org/A276866) ([L03 program](276/A276866.asm)): First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 * [A276867](http://oeis.org/A276867) ([L07 program](276/A276867.asm)): First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
@@ -1799,7 +1799,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277822](http://oeis.org/A277822) ([L07 program](277/A277822.asm)): a(n) = index of the column where n is located in array A277880.
 * [A277823](http://oeis.org/A277823) ([L07 program](277/A277823.asm)): a(n) = A048724(A065621(n)).
 * [A277866](http://oeis.org/A277866) ([L06 program](277/A277866.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
-* [A277867](http://oeis.org/A277867) ([L08 program](277/A277867.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
+* [A277867](http://oeis.org/A277867) ([L12 program](277/A277867.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A277928](http://oeis.org/A277928) ([L18 program](277/A277928.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
 * [A277929](http://oeis.org/A277929) ([L10 program](277/A277929.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
 * [A277935](http://oeis.org/A277935) ([L04 program](277/A277935.asm)): Number of ways 2*n-1 people can vote on three candidates so that the Condorcet paradox arises.
@@ -2008,7 +2008,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A282079](http://oeis.org/A282079) ([L14 program](282/A282079.asm)): Number of n-element subsets of [n+2] having an even sum.
 * [A282088](http://oeis.org/A282088) ([L13 program](282/A282088.asm)): Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 553", based on the 5-celled von Neumann neighborhood.
 * [A282097](http://oeis.org/A282097) ([L08 program](282/A282097.asm)): Coefficients in q-expansion of (3*E_2*E_4 - 2*E_6 - E_2^3)/1728, where E_2, E_4, E_6 are the Eisenstein series shown in A006352, A004009, A013973, respectively.
-* [A282123](http://oeis.org/A282123) ([L16 program](282/A282123.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 430", based on the 5-celled von Neumann neighborhood.
+* [A282123](http://oeis.org/A282123) ([L09 program](282/A282123.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 430", based on the 5-celled von Neumann neighborhood.
 * [A282124](http://oeis.org/A282124) ([L06 program](282/A282124.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 430", based on the 5-celled von Neumann neighborhood.
 * [A282153](http://oeis.org/A282153) ([L10 program](282/A282153.asm)): Expansion of x*(1 - 2*x + 3*x^2)/((1 - x)*(1 - 2*x)*(1 - x + x^2)).
 * [A282154](http://oeis.org/A282154) ([L06 program](282/A282154.asm)): Coefficients in expansion of Eisenstein series -q*(d/dq)(q*(d/dq)E_2).
@@ -2064,7 +2064,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A283233](http://oeis.org/A283233) ([L03 program](283/A283233.asm)): 2*A000201.
 * [A283234](http://oeis.org/A283234) ([L04 program](283/A283234.asm)): 2*A001950.
 * [A283237](http://oeis.org/A283237) ([L17 program](283/A283237.asm)): a(n) = sigma_2(3*n).
-* [A283316](http://oeis.org/A283316) ([L03 program](283/A283316.asm)): Image of 0 under repeated applications of the morphism 0 -> 0,0,0,1, 1 -> 1,1,1,0.
+* [A283316](http://oeis.org/A283316) ([L07 program](283/A283316.asm)): Image of 0 under repeated applications of the morphism 0 -> 0,0,0,1, 1 -> 1,1,1,0.
 * [A283318](http://oeis.org/A283318) ([L07 program](283/A283318.asm)): Image of 0 under repeated applications of the morphism 0 -> 0,1,0,0, 1 -> 1,1,0,1.
 * [A283323](http://oeis.org/A283323) ([L09 program](283/A283323.asm)): a(n) = 4*a(n-2)+1 with initial terms 1,3,7.
 * [A283353](http://oeis.org/A283353) ([L12 program](283/A283353.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 619", based on the 5-celled von Neumann neighborhood.
@@ -2175,7 +2175,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285384](http://oeis.org/A285384) ([L05 program](285/A285384.asm)): Limiting 1-word of the morphism 0 -> 11, 1 -> 01.
 * [A285406](http://oeis.org/A285406) ([L06 program](285/A285406.asm)): Base-2 logarithm of denominator of Sum_{k=0..n^2-1}((-1)^k*sqrt(Pi)/(Gamma(1/2-k)*Gamma(1+k)))/n).
 * [A285440](http://oeis.org/A285440) ([L08 program](285/A285440.asm)): Consider the sums of the numbers < n that share the same greatest common divisor with n. Sequence lists numbers that have only one of those sums equal to n.
-* [A285475](http://oeis.org/A285475) ([L12 program](285/A285475.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
+* [A285475](http://oeis.org/A285475) ([L06 program](285/A285475.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A285476](http://oeis.org/A285476) ([L03 program](285/A285476.asm)): Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 6", based on the 5-celled von Neumann neighborhood.
 * [A285524](http://oeis.org/A285524) ([L08 program](285/A285524.asm)): a(n) is the value d<n/2 maximizing the expression d!*(d + 1)!*(2^(n-2*d-1)*stirling2(n-d, d+1), for n>=4.
 * [A285525](http://oeis.org/A285525) ([L32 program](285/A285525.asm)): The indices that mark the beginning of four consecutive equal terms in A285524.
@@ -2243,7 +2243,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286584](http://oeis.org/A286584) ([L05 program](286/A286584.asm)): a(n) = A048673(n) mod 4.
 * [A286585](http://oeis.org/A286585) ([L05 program](286/A286585.asm)): a(n) = A053735(A048673(n)).
 * [A286655](http://oeis.org/A286655) ([L28 program](286/A286655.asm)): Characteristic sequence of the Beatty sequence, A022842, of sqrt(8).
-* [A286665](http://oeis.org/A286665) ([L09 program](286/A286665.asm)): {0->01}-transform of the Pell word, A171588.
+* [A286665](http://oeis.org/A286665) ([L05 program](286/A286665.asm)): {0->01}-transform of the Pell word, A171588.
 * [A286666](http://oeis.org/A286666) ([L04 program](286/A286666.asm)): Positions of 0 in A286665; complement of A286667.
 * [A286667](http://oeis.org/A286667) ([L05 program](286/A286667.asm)): Positions of 1 in A286665; complement of A286666.
 * [A286679](http://oeis.org/A286679) ([L07 program](286/A286679.asm)): Numbers of the form (2*prime(n)^2 + 1)/3.
@@ -2268,7 +2268,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A286772](http://oeis.org/A286772) ([L03 program](286/A286772.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 221", based on the 5-celled von Neumann neighborhood.
 * [A286773](http://oeis.org/A286773) ([L12 program](286/A286773.asm)): Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 221", based on the 5-celled von Neumann neighborhood.
 * [A286778](http://oeis.org/A286778) ([L17 program](286/A286778.asm)): Sum of the common path length over all 2-tuples of nodes in a complete binary tree of height n.
-* [A286806](http://oeis.org/A286806) ([L15 program](286/A286806.asm)): Positions of 1 in A286804; complement of A286805.
+* [A286806](http://oeis.org/A286806) ([L18 program](286/A286806.asm)): Positions of 1 in A286804; complement of A286805.
 * [A286807](http://oeis.org/A286807) ([L09 program](286/A286807.asm)): Fixed point of the mapping 00->001, 1->101, starting with 00.
 * [A286808](http://oeis.org/A286808) ([L11 program](286/A286808.asm)): Positions of 0 in A286807; complement of A286809.
 * [A286809](http://oeis.org/A286809) ([L10 program](286/A286809.asm)): Positions of 1 in A286807; complement of A286808.

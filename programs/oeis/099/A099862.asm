@@ -3,6 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,72668 ; Numbers one less than composite numbers.
+cal $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 mov $1,$0
-add $1,1
