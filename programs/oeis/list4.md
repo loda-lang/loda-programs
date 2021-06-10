@@ -1088,7 +1088,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A217398](http://oeis.org/A217398) ([L36 program](217/A217398.asm)): Numbers starting with 5.
 * [A217400](http://oeis.org/A217400) ([L14 program](217/A217400.asm)): Numbers starting with 7.
 * [A217402](http://oeis.org/A217402) ([L41 program](217/A217402.asm)): Numbers starting with 9.
-* [A217441](http://oeis.org/A217441) ([L21 program](217/A217441.asm)): Numbers k such that 26*k+1 is a square.
+* [A217441](http://oeis.org/A217441) ([L12 program](217/A217441.asm)): Numbers k such that 26*k+1 is a square.
 * [A217477](http://oeis.org/A217477) ([L12 program](217/A217477.asm)): Z-sequence for the Riordan triangle A111125;
 * [A217482](http://oeis.org/A217482) ([L04 program](217/A217482.asm)): Quarter-square tetrahedrals: a(n) = k*(k - 1)*(k - 2)/6, k = A002620(n).
 * [A217515](http://oeis.org/A217515) ([L04 program](217/A217515.asm)): Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (123)*.
@@ -2332,8 +2332,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A243138](http://oeis.org/A243138) ([L04 program](243/A243138.asm)): n^2 + 15*n + 13.
 * [A243201](http://oeis.org/A243201) ([L09 program](243/A243201.asm)): Odd octagonal numbers indexed by triangular numbers.
 * [A243256](http://oeis.org/A243256) ([L03 program](243/A243256.asm)): Smallest distance of the n-th Fibonacci number to the set of all square integers.
-* [A243282](http://oeis.org/A243282) ([L09 program](243/A243282.asm)): Partial sums of the characteristic function for A070003.
-* [A243283](http://oeis.org/A243283) ([L10 program](243/A243283.asm)): One more than the partial sums of the characteristic function of A070003.
+* [A243282](http://oeis.org/A243282) ([L06 program](243/A243282.asm)): Partial sums of the characteristic function for A070003.
+* [A243283](http://oeis.org/A243283) ([L07 program](243/A243283.asm)): One more than the partial sums of the characteristic function of A070003.
 * [A243285](http://oeis.org/A243285) ([L03 program](243/A243285.asm)): Number of integers 1 <= k <= n which are not divisible by the square of their largest noncomposite divisor.
 * [A243291](http://oeis.org/A243291) ([L04 program](243/A243291.asm)): Difference between n and the index of its largest prime factor: a(n) = n - A061395(n).
 * [A243305](http://oeis.org/A243305) ([L04 program](243/A243305.asm)): a(n) = 2^phi(n)+1 = A066781(n)+1.
