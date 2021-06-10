@@ -3,9 +3,7 @@
 
 add $0,1
 cal $0,65502 ; Positive numbers divisible by 2 or 5; 1/n not purely periodic after decimal point.
-mul $0,4738
 mov $1,$0
-sub $1,18952
-div $1,4738
+sub $1,4
 mul $1,2
 add $1,3

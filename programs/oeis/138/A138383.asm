@@ -1,25 +1,23 @@
 ; A138383: If prime(i) = i-th prime, a(n) = prime(n)+1 + prime(n)+2 + ... + prime(n+1). a(0) = 3 by convention.
 ; 3,3,9,13,38,25,62,37,86,159,61,207,158,85,182,303,339,121,387,278,145,459,326,519,748,398,205,422,217,446,1687,518,807,277,1445,301,927,963,662,1023,1059,361,1865,385,782,397,2466,2610,902,457,926,1419,481,2465,1527
 
-mov $3,$0
 mov $5,2
+mov $7,$0
 lpb $5
-  mov $0,$3
   sub $5,1
   add $0,$5
   sub $0,1
-  max $0,0
-  cal $0,40 ; The prime numbers.
-  mov $2,$5
-  mov $4,$0
-  mul $4,$0
   add $4,$0
-  mul $2,$4
+  mov $3,$4
+  max $3,0
+  sub $4,2
+  bin $4,$0
+  cal $3,34953 ; Triangular numbers (A000217) with prime indices.
+  mov $2,$5
+  mul $2,$3
   add $1,$2
+  mov $6,$3
 lpe
-min $3,1
-mul $3,$4
-sub $1,$3
-sub $1,6
-div $1,2
-add $1,3
+min $7,1
+mul $7,$6
+sub $1,$7

@@ -1,13 +1,7 @@
 ; A128177: A128174 * A004736 as infinite lower triangular matrices.
 ; 1,2,1,4,2,1,6,4,2,1,9,6,4,2,1,12,9,6,4,2,1,16,12,9,6,4,2,1,20,16,12,9,6,4,2,1,25,20,16,12,9,6,4,2,1,30,25,20,16,12,9,6,4,2,1,36,30,25,20,16,12,9,6,4,2,1,42,36,30,25,20,16,12,9,6,4,2,1
 
-cal $0,25683 ; Exponent of 9 (value of i) in n-th number of form 9^i*10^j.
-sub $0,1
-add $$3,3
-pow $0,2
-div $0,2
-mul $0,8388608
+cal $0,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
+cal $0,256885 ; a(n) = n*(n + 1)/2 - pi(n), where pi(n) = A000720(n) is the prime counting function.
 mov $1,$0
-sub $1,16777215
-div $1,16777216
-add $1,1
+div $1,2

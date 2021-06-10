@@ -10,7 +10,6 @@ lpb $3
   sub $0,1
   max $0,0
   cal $0,101184 ; a(n) = n + pi(n) + pi(pi(n)) + pi(pi(pi(n))) + pi(pi(pi(pi(n)))) + ...
-  mul $0,19600
   mov $2,$3
   mul $2,$0
   add $1,$2
@@ -19,6 +18,3 @@ lpe
 min $5,1
 mul $5,$4
 sub $1,$5
-sub $1,19600
-div $1,19600
-add $1,1

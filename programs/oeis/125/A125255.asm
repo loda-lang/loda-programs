@@ -3,7 +3,6 @@
 
 mul $0,2
 cal $0,195508 ; Number of iterations in a Draim factorization of 2n+1.
+mul $0,2
 mov $1,$0
-sub $1,1
-mul $1,2
-add $1,3
+add $1,1

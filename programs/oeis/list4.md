@@ -243,7 +243,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A205646](http://oeis.org/A205646) ([L03 program](205/A205646.asm)): Number of empty faces in Freij's family of Hansen polytopes.
 * [A205651](http://oeis.org/A205651) ([L10 program](205/A205651.asm)): Period 6: repeat [1, 6, 5, 4, 9, 0].
 * [A205745](http://oeis.org/A205745) ([L07 program](205/A205745.asm)): a(n) = card { d | d*p = n, d odd, p prime }
-* [A205794](http://oeis.org/A205794) ([L09 program](205/A205794.asm)): Least positive integer j such that n divides C(k)-C(j) , where k, as in A205793, is the least number for which there is such a j, and C=A002808 (composite numbers).
+* [A205794](http://oeis.org/A205794) ([L06 program](205/A205794.asm)): Least positive integer j such that n divides C(k)-C(j) , where k, as in A205793, is the least number for which there is such a j, and C=A002808 (composite numbers).
 * [A205808](http://oeis.org/A205808) ([L05 program](205/A205808.asm)): G.f.: Sum_{n=-oo..oo} q^(9*n^2 + 2*n).
 * [A205809](http://oeis.org/A205809) ([L06 program](205/A205809.asm)): G.f.: Sum_{n=-oo..oo} q^(9n^2+4n).
 * [A205825](http://oeis.org/A205825) ([L07 program](205/A205825.asm)): a(n) = n!/ceiling(n/2)!.
@@ -1553,6 +1553,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227541](http://oeis.org/A227541) ([L04 program](227/A227541.asm)): a(n) = floor(13*n^2/4).
 * [A227547](http://oeis.org/A227547) ([L03 program](227/A227547.asm)): a(n) = a(n-1) + prime(n-1), with a(1)=3.
 * [A227554](http://oeis.org/A227554) ([L34 program](227/A227554.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having nonzero determinant, with rows and columns of the latter in lexicographically nondecreasing order.
+* [A227559](http://oeis.org/A227559) ([L07 program](227/A227559.asm)): Number of partitions of n into distinct parts with boundary size 2.
 * [A227568](http://oeis.org/A227568) ([L11 program](227/A227568.asm)): Largest k such that a partition of n into distinct parts with boundary size k exists.
 * [A227582](http://oeis.org/A227582) ([L07 program](227/A227582.asm)): Expansion of (2+3*x+2*x^2+2*x^3+3*x^4+x^5-x^6)/(1-2*x+x^2-x^5+2*x^6-x^7).
 * [A227589](http://oeis.org/A227589) ([L08 program](227/A227589.asm)): Maximum label within a minimal labeling of n identical 4-sided dice yielding the most possible sums.
@@ -1677,7 +1678,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229149](http://oeis.org/A229149) ([L06 program](229/A229149.asm)): a(n) = n^6*(4*n+3).
 * [A229151](http://oeis.org/A229151) ([L10 program](229/A229151.asm)): a(n) = n^8*(5*n+4).
 * [A229152](http://oeis.org/A229152) ([L12 program](229/A229152.asm)): a(n) = n^9*(11*n+9)/2.
-* [A229154](http://oeis.org/A229154) ([L16 program](229/A229154.asm)): The clubs patterns appearing in n X n coins, with rotation allowed.
+* [A229154](http://oeis.org/A229154) ([L07 program](229/A229154.asm)): The clubs patterns appearing in n X n coins, with rotation allowed.
 * [A229183](http://oeis.org/A229183) ([L05 program](229/A229183.asm)): a(n) = n*(n^2 + 3)/2.
 * [A229253](http://oeis.org/A229253) ([L08 program](229/A229253.asm)): Total number of elements of nonempty subsets of divisors of n.
 * [A229274](http://oeis.org/A229274) ([L06 program](229/A229274.asm)): Composite squarefree numbers n such that p+tau(n) divides n-sigma(n), where p are the prime factors of n, tau(n) = A000005(n) and sigma(n) = A000203(n).
@@ -2222,6 +2223,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241404](http://oeis.org/A241404) ([L16 program](241/A241404.asm)): Sum of n and the sum of the factorials of its digits.
 * [A241406](http://oeis.org/A241406) ([L14 program](241/A241406.asm)): Numbers n such that n^2 == -1 (mod 61).
 * [A241407](http://oeis.org/A241407) ([L09 program](241/A241407.asm)): Numbers n such that n^2 == -1 (mod 73).
+* [A241422](http://oeis.org/A241422) ([L03 program](241/A241422.asm)): Limit-reverse of the infinite Fibonacci word A003849 with first term as initial block.
 * [A241452](http://oeis.org/A241452) ([L07 program](241/A241452.asm)): a(n) = pg(3, n) + pg(4, n) + ... + pg(n, n) where pg(m, n) is the n-th m-th-order polygonal number.
 * [A241496](http://oeis.org/A241496) ([L05 program](241/A241496.asm)): Expansion of (1 + 4*x + x^2) / (1 - x^2)^3.
 * [A241520](http://oeis.org/A241520) ([L17 program](241/A241520.asm)): Numbers n such that n^2 == -1 (mod 89).
