@@ -1,8 +1,10 @@
 ; A084509: Number of ground-state 3-ball juggling sequences of period n.
 ; 1,1,2,6,24,96,384,1536,6144,24576,98304,393216,1572864,6291456,25165824,100663296,402653184,1610612736,6442450944,25769803776,103079215104,412316860416,1649267441664,6597069766656,26388279066624,105553116266496,422212465065984,1688849860263936,6755399441055744
 
-cal $0,92898 ; Expansion of (1 - 4*x + 4*x^2 - 4*x^3)/(1 - 4*x).
-sub $0,1
+mul $0,2
+cal $0,170396 ; Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^44 = I.
+sub $0,3
+mul $0,4
+div $0,64
 mov $1,$0
-div $1,2
 add $1,1

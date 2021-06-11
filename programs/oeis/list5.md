@@ -835,6 +835,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A265528](http://oeis.org/A265528) ([L03 program](265/A265528.asm)): Largest base-2 palindrome m <= 2n, written in base 2.
 * [A265541](http://oeis.org/A265541) ([L08 program](265/A265541.asm)): Largest base-9 palindrome m <= n, written in base 10.
 * [A265542](http://oeis.org/A265542) ([L05 program](265/A265542.asm)): Largest base-9 palindrome m <= n, written in base 9.
+* [A265574](http://oeis.org/A265574) ([L29 program](265/A265574.asm)): LCM-transform of triangular numbers.
 * [A265611](http://oeis.org/A265611) ([L07 program](265/A265611.asm)): a(n) = a(n-1) + floor((n-1)/2) - (-1)^n + 2 for n>=2, a(0)=1, a(1)=3.
 * [A265645](http://oeis.org/A265645) ([L04 program](265/A265645.asm)): a(n) = n^2 * floor(n/2).
 * [A265667](http://oeis.org/A265667) ([L09 program](265/A265667.asm)): Permutation of nonnegative integers: a(n) = n + floor(n/3)*(-1)^(n mod 3).
@@ -1847,7 +1848,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A278481](http://oeis.org/A278481) ([L09 program](278/A278481.asm)): Number of neighbors of the n-th term in a full isosceles triangle read by rows.
 * [A278484](http://oeis.org/A278484) ([L10 program](278/A278484.asm)): Main diagonal of A278482.
 * [A278536](http://oeis.org/A278536) ([L08 program](278/A278536.asm)): First differences of A273324.
-* [A278545](http://oeis.org/A278545) ([L06 program](278/A278545.asm)): Number of neighbors of the n-th term in a full square array read by antidiagonals.
+* [A278545](http://oeis.org/A278545) ([L05 program](278/A278545.asm)): Number of neighbors of the n-th term in a full square array read by antidiagonals.
 * [A278597](http://oeis.org/A278597) ([L10 program](278/A278597.asm)): One half of A278481.
 * [A278603](http://oeis.org/A278603) ([L07 program](278/A278603.asm)): A prime mountain: peaks and valleys beyond the origin correspond to prime abscissa (see Comments for precise definition).
 * [A278617](http://oeis.org/A278617) ([L05 program](278/A278617.asm)): Number of distinct odd primes less than or equal to 2n-3 that appear as a part in the partitions of 2n into two parts.
@@ -2548,7 +2549,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291108](http://oeis.org/A291108) ([L16 program](291/A291108.asm)): Expansion of Sum_{k>=2} k^2*x^(2*k)/(1 - x^k).
 * [A291142](http://oeis.org/A291142) ([L03 program](291/A291142.asm)): a(n) = (1/4)*A291024(n).
 * [A291264](http://oeis.org/A291264) ([L13 program](291/A291264.asm)): p-INVERT of (0,1,0,1,0,1,...), where p(S) = (1 - 2 S)^2.
-* [A291268](http://oeis.org/A291268) ([L14 program](291/A291268.asm)): The arithmetic function v_3(n,2).
+* [A291268](http://oeis.org/A291268) ([L07 program](291/A291268.asm)): The arithmetic function v_3(n,2).
 * [A291271](http://oeis.org/A291271) ([L05 program](291/A291271.asm)): The arithmetic function v_4(n,2).
 * [A291289](http://oeis.org/A291289) ([L18 program](291/A291289.asm)): The Padovan sequence A000931 doubled.
 * [A291304](http://oeis.org/A291304) ([L15 program](291/A291304.asm)): The arithmetic function v_5(n,2).
@@ -2784,7 +2785,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A294936](http://oeis.org/A294936) ([L06 program](294/A294936.asm)): Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
 * [A294937](http://oeis.org/A294937) ([L03 program](294/A294937.asm)): Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
 * [A294993](http://oeis.org/A294993) ([L03 program](294/A294993.asm)): Numbers n > 1 such that all of 2^(n-1), 3^(n-1), 5^(n-1), (2*n-1)*(2^((n-1)/2)), 4*ceiling((3/4)*n)-2, and (2^((n+1)/2) + floor(n/4)*2^((n+3)/2)) are congruent to 1 (mod n).
-* [A295012](http://oeis.org/A295012) ([L07 program](295/A295012.asm)): a(n) = sigma(12n - 1)/12, where sigma = sum of divisors (A000203).
+* [A295012](http://oeis.org/A295012) ([L05 program](295/A295012.asm)): a(n) = sigma(12n - 1)/12, where sigma = sum of divisors (A000203).
 * [A295077](http://oeis.org/A295077) ([L10 program](295/A295077.asm)): a(n) = 2*n*(n-1) + 2^n - 1.
 * [A295089](http://oeis.org/A295089) ([L05 program](295/A295089.asm)): a(n) = 3*n^2 + n + 3.
 * [A295126](http://oeis.org/A295126) ([L04 program](295/A295126.asm)): Denominator of Sum_{d|n} mu(n/d)/d, where mu is the Möbius function A008683.

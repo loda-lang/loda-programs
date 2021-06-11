@@ -3,7 +3,7 @@
 List of integer sequences with links to LODA programs. An _Ln_ program is a LODA program of length _n_.
 
 * [A000004](http://oeis.org/A000004) ([L01 program](000/A000004.asm)): The zero sequence.
-* [A000005](http://oeis.org/A000005) ([L24 program](000/A000005.asm)): d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+* [A000005](http://oeis.org/A000005) ([L18 program](000/A000005.asm)): d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 * [A000006](http://oeis.org/A000006) ([L08 program](000/A000006.asm)): Integer part of square root of n-th prime.
 * [A000007](http://oeis.org/A000007) ([L01 program](000/A000007.asm)): The characteristic function of {0}: a(n) = 0^n.
 * [A000008](http://oeis.org/A000008) ([L07 program](000/A000008.asm)): Number of ways of making change for n cents using coins of 1, 2, 5, 10 cents.
@@ -4028,7 +4028,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A030110](http://oeis.org/A030110) ([L10 program](030/A030110.asm)): a(n) = 2^n - n^2 + 1.
 * [A030117](http://oeis.org/A030117) ([L31 program](030/A030117.asm)): Number of triangles a queen can make (starting anywhere) on an n X n board.
 * [A030118](http://oeis.org/A030118) ([L08 program](030/A030118.asm)): a(0) = 1, a(1) = 1, a(n) = a(n-1) - a(n-2) + n.
-* [A030119](http://oeis.org/A030119) ([L06 program](030/A030119.asm)): a(n) = a(n-1) + a(n-2) + n, a(0) = a(1) = 1.
+* [A030119](http://oeis.org/A030119) ([L03 program](030/A030119.asm)): a(n) = a(n-1) + a(n-2) + n, a(0) = a(1) = 1.
 * [A030123](http://oeis.org/A030123) ([L07 program](030/A030123.asm)): Most likely total for a roll of n 6-sided dice, choosing the smallest if there is a choice.
 * [A030140](http://oeis.org/A030140) ([L03 program](030/A030140.asm)): The nonsquares squared.
 * [A030179](http://oeis.org/A030179) ([L04 program](030/A030179.asm)): Quarter-squares squared: A002620^2.
@@ -4089,7 +4089,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031904](http://oeis.org/A031904) ([L03 program](031/A031904.asm)): a(n) = prime(9*n - 4).
 * [A031905](http://oeis.org/A031905) ([L04 program](031/A031905.asm)): a(n) = prime(10*n - 4).
 * [A031906](http://oeis.org/A031906) ([L03 program](031/A031906.asm)): a(n) = prime(6*n - 5).
-* [A031907](http://oeis.org/A031907) ([L06 program](031/A031907.asm)): a(n) = prime(7*n - 5).
+* [A031907](http://oeis.org/A031907) ([L05 program](031/A031907.asm)): a(n) = prime(7*n - 5).
 * [A031940](http://oeis.org/A031940) ([L09 program](031/A031940.asm)): Length of longest legal domino snake using full set of dominoes up to [n:n].
 * [A031954](http://oeis.org/A031954) ([L05 program](031/A031954.asm)): n-th number in which the number of distinct base 9 digits is 2.
 * [A031987](http://oeis.org/A031987) ([L08 program](031/A031987.asm)): n-th number in which the number of distinct base 10 digits is 5.
@@ -4143,7 +4143,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032615](http://oeis.org/A032615) ([L03 program](032/A032615.asm)): a(n) = floor(n/Pi).
 * [A032616](http://oeis.org/A032616) ([L12 program](032/A032616.asm)): a(n) = floor(n^2 / Pi).
 * [A032635](http://oeis.org/A032635) ([L06 program](032/A032635.asm)): a(n) = floor(n^2 / e).
-* [A032741](http://oeis.org/A032741) ([L05 program](032/A032741.asm)): a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+* [A032741](http://oeis.org/A032741) ([L17 program](032/A032741.asm)): a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
 * [A032742](http://oeis.org/A032742) ([L04 program](032/A032742.asm)): a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
 * [A032765](http://oeis.org/A032765) ([L04 program](032/A032765.asm)): Floor(n(n+1)(n+2) / (n+ n+1 + n+2)), which equals floor(n(n + 2)/3).
 * [A032766](http://oeis.org/A032766) ([L03 program](032/A032766.asm)): Numbers that are congruent to 0 or 1 (mod 3).
@@ -4432,7 +4432,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033890](http://oeis.org/A033890) ([L08 program](033/A033890.asm)): a(n) = Fibonacci(4*n+2).
 * [A033918](http://oeis.org/A033918) ([L08 program](033/A033918.asm)): Triangular array in which n-th row consists of the numbers 1^1, 2^2, ... n^n.
 * [A033931](http://oeis.org/A033931) ([L07 program](033/A033931.asm)): a(n) = lcm(n,n+1,n+2).
-* [A033937](http://oeis.org/A033937) ([L06 program](033/A033937.asm)): Convolution of natural numbers n >= 1 with Fibonacci numbers F(k), k >= 3.
+* [A033937](http://oeis.org/A033937) ([L05 program](033/A033937.asm)): Convolution of natural numbers n >= 1 with Fibonacci numbers F(k), k >= 3.
 * [A033940](http://oeis.org/A033940) ([L10 program](033/A033940.asm)): a(n) = 10^n mod 7.
 * [A033941](http://oeis.org/A033941) ([L03 program](033/A033941.asm)): Number of ways A002808(n) can be properly factored into 2 integers.
 * [A033951](http://oeis.org/A033951) ([L05 program](033/A033951.asm)): Write 1,2,... in clockwise spiral; sequence gives numbers on positive x axis.
@@ -4505,7 +4505,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A034931](http://oeis.org/A034931) ([L03 program](034/A034931.asm)): Pascal's triangle read modulo 4.
 * [A034932](http://oeis.org/A034932) ([L03 program](034/A034932.asm)): Pascal's triangle read modulo 16.
 * [A034934](http://oeis.org/A034934) ([L19 program](034/A034934.asm)): Numbers k such that (3*k + 1)/2 is prime.
-* [A034936](http://oeis.org/A034936) ([L07 program](034/A034936.asm)): Numbers k such that 3*k + 4 is prime.
+* [A034936](http://oeis.org/A034936) ([L06 program](034/A034936.asm)): Numbers k such that 3*k + 4 is prime.
 * [A034943](http://oeis.org/A034943) ([L04 program](034/A034943.asm)): Binomial transform of Padovan sequence A000931.
 * [A034947](http://oeis.org/A034947) ([L03 program](034/A034947.asm)): Jacobi (or Kronecker) symbol (-1/n).
 * [A034953](http://oeis.org/A034953) ([L04 program](034/A034953.asm)): Triangular numbers (A000217) with prime indices.

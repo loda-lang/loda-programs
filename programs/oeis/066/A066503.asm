@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
-sub $0,17
+sub $0,1
 sub $1,$0
-sub $1,16

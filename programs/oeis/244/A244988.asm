@@ -4,8 +4,4 @@
 mov $1,$0
 cal $0,244989 ; Partial sums of A244992: a(1) = 0, and for n >= 1, a(n) = A244992(n) + a(n-1); Inverse function for A244991.
 sub $1,$0
-mov $0,$1
-add $0,$1
-mov $1,$0
-div $1,2
 add $1,1

@@ -175,7 +175,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100995](http://oeis.org/A100995) ([L05 program](100/A100995.asm)): If n is a prime power p^m, m >= 1, then m, otherwise 0.
 * [A101000](http://oeis.org/A101000) ([L03 program](101/A101000.asm)): Periodic sequence with period 3.
 * [A101037](http://oeis.org/A101037) ([L11 program](101/A101037.asm)): Triangle read by rows: T(n,1) = T(n,n) = n and for 1<k<n: T(n,k) = floor((T(n-1,k-1)+T(n-1,k))/2).
-* [A101040](http://oeis.org/A101040) ([L05 program](101/A101040.asm)): If n has one or two prime-factors then 1 else 0.
+* [A101040](http://oeis.org/A101040) ([L04 program](101/A101040.asm)): If n has one or two prime-factors then 1 else 0.
 * [A101041](http://oeis.org/A101041) ([L07 program](101/A101041.asm)): Number of numbers not greater than n having no more than two prime factors.
 * [A101052](http://oeis.org/A101052) ([L03 program](101/A101052.asm)): Number of preferential arrangements of n labeled elements when only k<=3 ranks are allowed.
 * [A101089](http://oeis.org/A101089) ([L15 program](101/A101089.asm)): Second partial sums of fourth powers (A000583).
@@ -1407,7 +1407,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A113975](http://oeis.org/A113975) ([L04 program](113/A113975.asm)): Devil's Farey: coefficient expansion of a quadratic over quadratic that has 123 roots and a Farey p[1/2]=1 ( correction).
 * [A113979](http://oeis.org/A113979) ([L66 program](113/A113979.asm)): Number of compositions of n with an even number of 1's.
 * [A113980](http://oeis.org/A113980) ([L34 program](113/A113980.asm)): Number of compositions of n with an odd number of 1's.
-* [A114003](http://oeis.org/A114003) ([L04 program](114/A114003.asm)): Rows sums of triangle A114002.
+* [A114003](http://oeis.org/A114003) ([L19 program](114/A114003.asm)): Rows sums of triangle A114002.
 * [A114040](http://oeis.org/A114040) ([L05 program](114/A114040.asm)): a(0) = 1, a(1) = 9, a(n) = 6*a(n-1) - a(n-2) - 4.
 * [A114054](http://oeis.org/A114054) ([L07 program](114/A114054.asm)): Decimal expansion of 998998998998998998998998998/9.
 * [A114112](http://oeis.org/A114112) ([L10 program](114/A114112.asm)): a(1)=1, a(2)=2; thereafter a(n) = n+1 if n odd, n-1 if n even.
@@ -1826,7 +1826,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118415](http://oeis.org/A118415) ([L06 program](118/A118415.asm)): (4*n - 3) * 2^(n - 1).
 * [A118417](http://oeis.org/A118417) ([L07 program](118/A118417.asm)): a(n) = (2*n + 1) * 2^(n + 1).
 * [A118425](http://oeis.org/A118425) ([L08 program](118/A118425.asm)): Number of binary sequences of length n containing exactly one subsequence 001.
-* [A118442](http://oeis.org/A118442) ([L11 program](118/A118442.asm)): Column 0 of triangle A118441, which is the matrix log of triangle A118435.
+* [A118442](http://oeis.org/A118442) ([L06 program](118/A118442.asm)): Column 0 of triangle A118441, which is the matrix log of triangle A118435.
 * [A118465](http://oeis.org/A118465) ([L04 program](118/A118465.asm)): a(n) = 8*n^3 + n.
 * [A118517](http://oeis.org/A118517) ([L05 program](118/A118517.asm)): Define sequence S_m by: initial term = m, reverse digits and add 3 to get next term. Entry shows S_1. This reaches a cycle of length 3 in 1 step.
 * [A118518](http://oeis.org/A118518) ([L08 program](118/A118518.asm)): Define sequence S_m by: initial term = m, reverse digits and add 3 to get next term. Entry shows S_2. This reaches a cycle of length 6 in 3 steps.
@@ -2568,6 +2568,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127705](http://oeis.org/A127705) ([L04 program](127/A127705.asm)): Row sums of A127704.
 * [A127712](http://oeis.org/A127712) ([L54 program](127/A127712.asm)): Row sums of the inverse of the triangle A(n,k) = 1/F(n+1) if k <= n <= 2k, 0 otherwise.
 * [A127713](http://oeis.org/A127713) ([L04 program](127/A127713.asm)): A bisection of the row sums of the inverse of the triangle A(n,k) = 1/F(n+1) if k <= n <= 2k, 0 otherwise.
+* [A127723](http://oeis.org/A127723) ([L04 program](127/A127723.asm)): Floor of square root of sum of squares of the first n consecutive even numbers.
 * [A127733](http://oeis.org/A127733) ([L03 program](127/A127733.asm)): Square of A127648 = Triangle read by rows, n^2 preceded by (n-1) zeros.
 * [A127736](http://oeis.org/A127736) ([L05 program](127/A127736.asm)): a(n) = n*(n^2+2*n-1)/2.
 * [A127739](http://oeis.org/A127739) ([L06 program](127/A127739.asm)): Triangle read by rows, in which row n contains the triangular number T(n) = A000217(n) repeated n times; smallest triangular number greater than or equal to n.

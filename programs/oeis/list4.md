@@ -941,7 +941,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214848](http://oeis.org/A214848) ([L22 program](214/A214848.asm)): First difference of A022846.
 * [A214856](http://oeis.org/A214856) ([L22 program](214/A214856.asm)): Number of triangular numbers in interval ](n-1)^2, n^2] for n>0, a(0)=1.
 * [A214857](http://oeis.org/A214857) ([L07 program](214/A214857.asm)): Number of triangular numbers in interval [0, n^2].
-* [A214858](http://oeis.org/A214858) ([L22 program](214/A214858.asm)): Natural numbers missing from A214857.
+* [A214858](http://oeis.org/A214858) ([L07 program](214/A214858.asm)): Natural numbers missing from A214857.
 * [A214860](http://oeis.org/A214860) ([L38 program](214/A214860.asm)): First differences of round(n*sqrt(3)) (A022847).
 * [A214861](http://oeis.org/A214861) ([L18 program](214/A214861.asm)): First differences of round(n*sqrt(5)) (A022848).
 * [A214863](http://oeis.org/A214863) ([L06 program](214/A214863.asm)): Numbers n such that n XOR 11 = n - 11.
