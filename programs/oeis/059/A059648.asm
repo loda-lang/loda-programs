@@ -4,5 +4,5 @@
 sub $0,1
 mul $0,2
 max $0,0
-cal $0,171588 ; The Pell word: Fixed point of the morphism 0->001, 1->0.
+cal $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
 mov $1,$0

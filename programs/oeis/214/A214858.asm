@@ -1,25 +1,10 @@
 ; A214858: Natural numbers missing from A214857.
 ; 5,8,12,15,19,22,26,29,32,36,39,43,46,49,53,56,60,63,67,70,73,77,80,84,87,90,94,97,101,104,108,111,114,118,121,125,128,131,135,138,142,145,149,152,155,159,162,166,169,172,176,179,183,186,189,193,196,200
 
-mov $5,$0
-add $0,1
-mov $2,$0
-add $0,1
-lpb $0
-  lpb $0
-    sub $0,1
-    add $4,$2
-  lpe
-  lpb $4
-    add $1,1
-    trn $4,$1
-  lpe
-  add $1,3
-  mov $3,4
-lpe
-add $1,$3
-lpb $5
-  add $1,2
-  sub $5,1
-lpe
-sub $1,4
+mov $1,$0
+sub $2,$0
+sub $2,$0
+cal $1,93001 ; Least k such that Sum_{r=n+1..k} r is greater than or equal to the sum of the first n positive integers (i.e., the n-th triangular number, A000217(n)). Or, least k such that (sum of first n positive integers) <= (sum of numbers from n+1 up to k).
+sub $1,1
+sub $1,$2
+add $1,4

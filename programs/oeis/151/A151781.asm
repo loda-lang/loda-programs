@@ -3,19 +3,11 @@
 
 mov $2,$0
 mov $3,$0
-lpb $2
-  mov $0,$3
-  sub $2,1
-  sub $0,$2
+add $3,1
+lpb $3
+  mov $0,$2
+  sub $3,1
+  sub $0,$3
   cal $0,151779 ; a(1)=1; for n > 1, a(n)=6*5^{wt(n-1)-1}.
-  mov $5,$0
-  mul $5,2
-  mov $4,$5
-  sub $4,2
-  div $4,4
-  add $4,1
-  add $1,$4
+  add $1,$0
 lpe
-div $1,3
-mul $1,6
-add $1,1

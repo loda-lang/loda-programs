@@ -2090,7 +2090,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014710](http://oeis.org/A014710) ([L08 program](014/A014710.asm)): The regular paper-folding (or dragon curve) sequence.
 * [A014717](http://oeis.org/A014717) ([L03 program](014/A014717.asm)): a(n) = (F(n+1) + L(n))^2 where F(n) are the Fibonacci numbers (A000045) and L(n) are the Lucas numbers (A000032).
 * [A014718](http://oeis.org/A014718) ([L03 program](014/A014718.asm)): a(n) = (F(n+1)+L(n)+n)^2 where F(n) are the Fibonacci numbers (A000045) and L(n) are the Lucas numbers (A000032).
-* [A014728](http://oeis.org/A014728) ([L05 program](014/A014728.asm)): Squares of odd Fibonacci numbers.
+* [A014728](http://oeis.org/A014728) ([L03 program](014/A014728.asm)): Squares of odd Fibonacci numbers.
 * [A014730](http://oeis.org/A014730) ([L05 program](014/A014730.asm)): Squares of odd Lucas numbers.
 * [A014736](http://oeis.org/A014736) ([L09 program](014/A014736.asm)): Squares of odd triangular numbers.
 * [A014738](http://oeis.org/A014738) ([L09 program](014/A014738.asm)): Squares of even triangular numbers.
