@@ -144,7 +144,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302773](http://oeis.org/A302773) ([L06 program](302/A302773.asm)): Numerators of (3*n + 2)/12.
 * [A302774](http://oeis.org/A302774) ([L11 program](302/A302774.asm)): a(n) is the position of the first term in A303762 that has prime(n) as one of its prime factors.
 * [A302777](http://oeis.org/A302777) ([L29 program](302/A302777.asm)): a(n) = 1 if n is of the form p^(2^k) where p is prime and k >= 0, otherwise 0.
-* [A302778](http://oeis.org/A302778) ([L17 program](302/A302778.asm)): Number of "Fermi-Dirac primes" (A050376) <= n.
+* [A302778](http://oeis.org/A302778) ([L06 program](302/A302778.asm)): Number of "Fermi-Dirac primes" (A050376) <= n.
 * [A302906](http://oeis.org/A302906) ([L05 program](302/A302906.asm)): a(0) = 0; for n > 0, a(n) = a(n-1) + 5*n + 4.
 * [A302930](http://oeis.org/A302930) ([L10 program](302/A302930.asm)): Maximum number of 6's possible in an infinite Minesweeper grid with n mines.
 * [A302946](http://oeis.org/A302946) ([L04 program](302/A302946.asm)): Number of minimal (and minimum) total dominating sets in the 2n-crossed prism graph.
@@ -1362,7 +1362,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327707](http://oeis.org/A327707) ([L07 program](327/A327707.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 7 parts can be obtained by coalescing the parts of lambda.
 * [A327708](http://oeis.org/A327708) ([L08 program](327/A327708.asm)): The minimal size of a partition lambda of n such that every partition of n with at most 8 parts can be obtained by coalescing the parts of lambda.
 * [A327721](http://oeis.org/A327721) ([L05 program](327/A327721.asm)): Dimension of quantum lens space needed for non-uniqueness.
-* [A327737](http://oeis.org/A327737) ([L04 program](327/A327737.asm)): a(n) is the sum of the lengths of the base-b expansions of n for all b with 1 <= b <= n.
+* [A327737](http://oeis.org/A327737) ([L03 program](327/A327737.asm)): a(n) is the sum of the lengths of the base-b expansions of n for all b with 1 <= b <= n.
 * [A327767](http://oeis.org/A327767) ([L03 program](327/A327767.asm)): Period 2: repeat [1, -2].
 * [A327859](http://oeis.org/A327859) ([L03 program](327/A327859.asm)): a(n) = A276086(A003415(n)), where A003415 is the arithmetic derivative and A276086 converts digits of primorial base representation to exponents in prime factorization.
 * [A327860](http://oeis.org/A327860) ([L03 program](327/A327860.asm)): a(n) = A003415(A276086(n)).

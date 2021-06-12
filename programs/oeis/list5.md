@@ -811,7 +811,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A265188](http://oeis.org/A265188) ([L07 program](265/A265188.asm)): Nonnegative m for which 3*floor(m^2/11) = floor(3*m^2/11).
 * [A265207](http://oeis.org/A265207) ([L13 program](265/A265207.asm)): Draw a square and follow these steps: Take a square and place at its edges isosceles right triangles with the edge as hypotenuse. Draw a square at every new edge of the triangles. Repeat for all the new squares of the same size. New figures are only placed on empty space. The structure is symmetric about the first square. The sequence gives the numbers of squares of equal size in successive rings around the center.
 * [A265225](http://oeis.org/A265225) ([L05 program](265/A265225.asm)): Total number of ON (black) cells after n iterations of the "Rule 54" elementary cellular automaton starting with a single ON (black) cell.
-* [A265227](http://oeis.org/A265227) ([L13 program](265/A265227.asm)): Nonnegative m for which k*floor(m^2/9) = floor(k*m^2/9), with 2 < k < 9.
+* [A265227](http://oeis.org/A265227) ([L10 program](265/A265227.asm)): Nonnegative m for which k*floor(m^2/9) = floor(k*m^2/9), with 2 < k < 9.
 * [A265228](http://oeis.org/A265228) ([L12 program](265/A265228.asm)): Interleave the even numbers with the numbers that are congruent to {1, 3, 7} mod 8.
 * [A265278](http://oeis.org/A265278) ([L10 program](265/A265278.asm)): Expansion of (x^4+x^3-x^2+x)/(x^3+x^2-3*x+1).
 * [A265283](http://oeis.org/A265283) ([L07 program](265/A265283.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 94" elementary cellular automaton starting with a single ON (black) cell.
@@ -2172,6 +2172,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285307](http://oeis.org/A285307) ([L05 program](285/A285307.asm)): Positions of 1 in A285305; complement of A285306.
 * [A285326](http://oeis.org/A285326) ([L11 program](285/A285326.asm)): a(0) = 0, for n > 0, a(n) = n + A006519(n).
 * [A285329](http://oeis.org/A285329) ([L05 program](285/A285329.asm)): a(n) = A013928(A007947(n)).
+* [A285345](http://oeis.org/A285345) ([L03 program](285/A285345.asm)): Fixed point of the morphism 0 -> 10, 1 -> 1100.
+* [A285346](http://oeis.org/A285346) ([L04 program](285/A285346.asm)): Positions of 0 in A285345; complement of A285347.
 * [A285347](http://oeis.org/A285347) ([L10 program](285/A285347.asm)): Positions of 1 in A285345; complement of A285346.
 * [A285351](http://oeis.org/A285351) ([L18 program](285/A285351.asm)): a(n) = 2n + 1 - A285346(n).
 * [A285353](http://oeis.org/A285353) ([L10 program](285/A285353.asm)): Positions of 0 in A285351; complement of A285354.
@@ -2954,6 +2956,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298863](http://oeis.org/A298863) ([L07 program](298/A298863.asm)): Ranks of primes p when all primes p and products 3*p are jointly ranked.
 * [A298864](http://oeis.org/A298864) ([L04 program](298/A298864.asm)): Ranks of products 3*p when all primes p and products 3*p are jointly ranked.
 * [A298866](http://oeis.org/A298866) ([L07 program](298/A298866.asm)): Positions of primes p when all p and 4*p are arranged in increasing order.
+* [A298867](http://oeis.org/A298867) ([L07 program](298/A298867.asm)): Positions of numbers 4*p when all primes p and products 4*p are arranged in increasing order.
 * [A298950](http://oeis.org/A298950) ([L07 program](298/A298950.asm)): Numbers k such that 5*k - 4 is a square.
 * [A298952](http://oeis.org/A298952) ([L09 program](298/A298952.asm)): First put a(n)=0 for all n, then start with a(0) = 1 and add at step n >= 0 the term 1 at position 2*n + a(n).
 * [A299090](http://oeis.org/A299090) ([L06 program](299/A299090.asm)): Number of "digits" in the binary representation of the multiset of prime factors of n.

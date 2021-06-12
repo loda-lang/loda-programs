@@ -2081,7 +2081,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A238472](http://oeis.org/A238472) ([L05 program](238/A238472.asm)): C(5*n+7, 4)/5  for n>= 0.
 * [A238473](http://oeis.org/A238473) ([L05 program](238/A238473.asm)): C(5*n+8, 4)/5 for n>= 0.
 * [A238477](http://oeis.org/A238477) ([L03 program](238/A238477.asm)): a(n) = 32*n - 27 for n >= 1. Second column of triangle A238475.
-* [A238497](http://oeis.org/A238497) ([L07 program](238/A238497.asm)): Cubefree Fibonacci numbers.
+* [A238497](http://oeis.org/A238497) ([L05 program](238/A238497.asm)): Cubefree Fibonacci numbers.
 * [A238531](http://oeis.org/A238531) ([L06 program](238/A238531.asm)): Expansion of (1 - x + x^2)^2 / (1 - x)^3 in powers of x.
 * [A238533](http://oeis.org/A238533) ([L12 program](238/A238533.asm)): Number of solutions to gcd(x^2 + y^2 + z^2 + t^2 + h^2, n) = 1 with x,y,z,t,h in [0,n-1].
 * [A238549](http://oeis.org/A238549) ([L08 program](238/A238549.asm)): a(n) is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).

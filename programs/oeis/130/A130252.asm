@@ -1,9 +1,14 @@
 ; A130252: Partial sums of A130250.
 ; 0,1,4,7,11,15,20,25,30,35,40,45,51,57,63,69,75,81,87,93,99,105,112,119,126,133,140,147,154,161,168,175,182,189,196,203,210,217,224,231,238,245,252,259,267,275,283,291,299,307,315,323,331,339,347,355,363,371
 
-lpb $0
-  mov $2,$0
-  cal $2,130250 ; Minimal index k of a Jacobsthal number such that A001045(k) >= n (the 'upper' Jacobsthal inverse).
-  sub $0,1
-  add $1,$2
+mov $2,$0
+mov $3,$0
+lpb $3
+  mov $0,$2
+  sub $3,1
+  sub $0,$3
+  mul $0,3
+  sub $0,2
+  cal $0,29837 ; Binary order of n: log_2(n) rounded up to next integer.
+  add $1,$0
 lpe

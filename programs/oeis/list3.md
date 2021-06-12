@@ -1781,6 +1781,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A165994](http://oeis.org/A165994) ([L04 program](165/A165994.asm)): a(n) is the number of nonzero values of floor (j^2/prime(n)), over 1 <= j < prime(n).
 * [A165998](http://oeis.org/A165998) ([L07 program](165/A165998.asm)): Denominators of Taylor series expansion of 1/(3*x)*log((1+x)/(1-x)^2)
 * [A166010](http://oeis.org/A166010) ([L06 program](166/A166010.asm)): a(n) = prime(n)^2-4.
+* [A166011](http://oeis.org/A166011) ([L18 program](166/A166011.asm)): Least common multiple of prime(n)-3 and prime(n)+3.
 * [A166012](http://oeis.org/A166012) ([L05 program](166/A166012.asm)): a(n) = 2*(A000045(n)-(n mod 2)) + 1 + (n mod 2).
 * [A166021](http://oeis.org/A166021) ([L08 program](166/A166021.asm)): a(n) = 2*A000124(A003056(n-1)) if A002262(n-1)=0, otherwise a(n-1)+1.
 * [A166023](http://oeis.org/A166023) ([L15 program](166/A166023.asm)): a(n) = 6*a(n-2) for n > 2; a(1) = 1, a(2) = 5.
@@ -2223,7 +2224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168635](http://oeis.org/A168635) ([L05 program](168/A168635.asm)): a(n) = n^7*(n + 1)/2.
 * [A168636](http://oeis.org/A168636) ([L05 program](168/A168636.asm)): a(n) = n^7*(n^2 + 1)/2.
 * [A168642](http://oeis.org/A168642) ([L10 program](168/A168642.asm)): a(n) = (8*2^n + (-1)^n)/3 for n > 0; a(0) = 1.
-* [A168648](http://oeis.org/A168648) ([L06 program](168/A168648.asm)): a(n) = (10*2^n + 2*(-1)^n)/3 for n > 0; a(0) = 1.
+* [A168648](http://oeis.org/A168648) ([L07 program](168/A168648.asm)): a(n) = (10*2^n + 2*(-1)^n)/3 for n > 0; a(0) = 1.
 * [A168652](http://oeis.org/A168652) ([L03 program](168/A168652.asm)): Integers that can be generated with a C/C++ expression that is three or more characters shorter than their decimal representation.
 * [A168660](http://oeis.org/A168660) ([L05 program](168/A168660.asm)): a(n) = n^7*(n^3 + 1)/2.
 * [A168668](http://oeis.org/A168668) ([L04 program](168/A168668.asm)): a(n) = n*(2 + 5*n).
@@ -3473,7 +3474,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181440](http://oeis.org/A181440) ([L04 program](181/A181440.asm)): a(1) = 2; for n > 1, a(n) = A000217(n)-(sum of previous terms).
 * [A181475](http://oeis.org/A181475) ([L06 program](181/A181475.asm)): a(n) = 3*n^4 + 6*n^3 - 3*n + 1.
 * [A181497](http://oeis.org/A181497) ([L07 program](181/A181497.asm)): a(n) is the smallest m such that A056753(m) = 2*n + 1.
-* [A181509](http://oeis.org/A181509) ([L16 program](181/A181509.asm)): a(1) = 2, a(n) = (n-th-even n^3) - (sum of previous terms)
+* [A181509](http://oeis.org/A181509) ([L10 program](181/A181509.asm)): a(1) = 2, a(n) = (n-th-even n^3) - (sum of previous terms)
 * [A181510](http://oeis.org/A181510) ([L05 program](181/A181510.asm)): Number of permutations of the multiset {1,1,2,2,3,3,...,n+1,n+1} avoiding the permutation patterns {132, 231, 2134}
 * [A181527](http://oeis.org/A181527) ([L08 program](181/A181527.asm)): Binomial transform of A113127; (1, 1, 3, 7, 15, 31,...) convolved with (1, 3, 7, 15, 31, 63,...).
 * [A181532](http://oeis.org/A181532) ([L18 program](181/A181532.asm)): a(0) = 0, a(1) = 1, a(2) = 1; a(n) = a(n-1) + a(n-2) + a(n-4)
@@ -4310,6 +4311,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189573](http://oeis.org/A189573) ([L04 program](189/A189573.asm)): Positions of 0 in A189572; complement of A080652 (conjectured).
 * [A189574](http://oeis.org/A189574) ([L03 program](189/A189574.asm)): Partial sums of A189572.
 * [A189604](http://oeis.org/A189604) ([L04 program](189/A189604.asm)): Number of nX3 array permutations with each element not moving, or moving one space E, S or NW.
+* [A189628](http://oeis.org/A189628) ([L05 program](189/A189628.asm)): Fixed point of the morphism 0->001, 1->010.
 * [A189638](http://oeis.org/A189638) ([L16 program](189/A189638.asm)): Partial sums of A116178.
 * [A189640](http://oeis.org/A189640) ([L06 program](189/A189640.asm)): Fixed point of the morphism 0->001, 1->101.
 * [A189641](http://oeis.org/A189641) ([L04 program](189/A189641.asm)): Partial sums of A189640.

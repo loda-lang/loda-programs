@@ -37,7 +37,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000125](http://oeis.org/A000125) ([L04 program](000/A000125.asm)): Cake numbers: maximal number of pieces resulting from n planar cuts through a cube (or cake): C(n+1,3)+n+1.
 * [A000126](http://oeis.org/A000126) ([L05 program](000/A000126.asm)): A nonlinear binomial sum.
 * [A000127](http://oeis.org/A000127) ([L03 program](000/A000127.asm)): Maximal number of regions obtained by joining n points around a circle by straight lines. Also number of regions in 4-space formed by n-1 hyperplanes.
-* [A000128](http://oeis.org/A000128) ([L05 program](000/A000128.asm)): A nonlinear binomial sum.
+* [A000128](http://oeis.org/A000128) ([L10 program](000/A000128.asm)): A nonlinear binomial sum.
 * [A000129](http://oeis.org/A000129) ([L08 program](000/A000129.asm)): Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
 * [A000166](http://oeis.org/A000166) ([L09 program](000/A000166.asm)): Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
 * [A000188](http://oeis.org/A000188) ([L03 program](000/A000188.asm)): (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
@@ -1549,7 +1549,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010051](http://oeis.org/A010051) ([L03 program](010/A010051.asm)): Characteristic function of primes: 1 if n is prime, else 0.
 * [A010052](http://oeis.org/A010052) ([L06 program](010/A010052.asm)): Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
 * [A010054](http://oeis.org/A010054) ([L05 program](010/A010054.asm)): a(n) = 1 if n is a triangular number, otherwise 0.
-* [A010055](http://oeis.org/A010055) ([L05 program](010/A010055.asm)): 1 if n is a prime power p^k (k >= 0), otherwise 0.
+* [A010055](http://oeis.org/A010055) ([L04 program](010/A010055.asm)): 1 if n is a prime power p^k (k >= 0), otherwise 0.
 * [A010056](http://oeis.org/A010056) ([L02 program](010/A010056.asm)): Characteristic function of Fibonacci numbers: a(n) = 1 if n is a Fibonacci number, otherwise 0.
 * [A010057](http://oeis.org/A010057) ([L09 program](010/A010057.asm)): a(n) = 1 if n is a cube, else 0.
 * [A010059](http://oeis.org/A010059) ([L06 program](010/A010059.asm)): Another version of the Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
@@ -2039,7 +2039,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014391](http://oeis.org/A014391) ([L10 program](014/A014391.asm)): Final digit of 8^n.
 * [A014392](http://oeis.org/A014392) ([L06 program](014/A014392.asm)): Final 2 digits of 8^n.
 * [A014393](http://oeis.org/A014393) ([L06 program](014/A014393.asm)): Final 2 digits of 9^n.
-* [A014437](http://oeis.org/A014437) ([L07 program](014/A014437.asm)): Odd Fibonacci numbers.
+* [A014437](http://oeis.org/A014437) ([L05 program](014/A014437.asm)): Odd Fibonacci numbers.
 * [A014442](http://oeis.org/A014442) ([L04 program](014/A014442.asm)): Largest prime factor of n^2 + 1.
 * [A014445](http://oeis.org/A014445) ([L10 program](014/A014445.asm)): Even Fibonacci numbers; or, Fibonacci(3*n).
 * [A014447](http://oeis.org/A014447) ([L18 program](014/A014447.asm)): Odd Lucas numbers.
