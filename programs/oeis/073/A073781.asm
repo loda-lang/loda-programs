@@ -3,9 +3,4 @@
 
 cal $0,40 ; The prime numbers.
 cal $0,81603 ; Number of 2's in ternary representation of n.
-lpb $0
-  mov $1,$0
-  add $1,$0
-  div $0,9
-lpe
-div $1,2
+mov $1,$0
