@@ -4,4 +4,5 @@ A000203: a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 A010051: Characteristic function of primes: 1 if n is prime, else 0.
 A020639: Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 A063918: a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
+A080339: Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 A293810: The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n. 

@@ -4,8 +4,7 @@
 lpb $0
   dif $0,2
 lpe
-sub $0,1
-max $0,0
+trn $0,1
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$0
 sub $1,1

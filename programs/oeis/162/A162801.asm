@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,321178 ; One-half the sum of the first 2n + 1 primes.
   sub $0,1
   mov $2,$3

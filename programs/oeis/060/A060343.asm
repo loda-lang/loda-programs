@@ -4,9 +4,4 @@
 add $0,3
 mul $0,2
 cal $0,60264 ; First prime after 2n.
-mul $0,14
 mov $1,$0
-sub $1,182
-div $1,28
-mul $1,2
-add $1,13

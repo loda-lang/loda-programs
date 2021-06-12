@@ -16,8 +16,7 @@ lpb $12
     mov $0,$7
     sub $9,1
     sub $0,$9
-    sub $0,2
-    max $0,0
+    trn $0,2
     cal $0,342363 ; First differences of A341282.
     mov $1,$0
     mul $1,72

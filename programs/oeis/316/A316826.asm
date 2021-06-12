@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,1969 ; Evil numbers: nonnegative integers with an even number of 1's in their binary expansion.
   add $0,4
   mov $2,$3

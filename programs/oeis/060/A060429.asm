@@ -6,6 +6,5 @@ max $0,1
 cal $0,173919 ; Numbers that are prime or one less than a prime.
 mov $1,$0
 pow $1,2
-sub $1,4
 mul $1,4
-add $1,17
+add $1,1

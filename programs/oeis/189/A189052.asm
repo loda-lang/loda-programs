@@ -3,8 +3,7 @@
 
 lpb $0
   mov $2,$0
-  sub $2,2
-  max $2,0
+  trn $2,2
   cal $2,49611 ; a(n) = T(n,2), array T as in A049600.
   sub $0,2
   add $1,$2

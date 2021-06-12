@@ -3,11 +3,8 @@
 
 lpb $0
   pow $0,2
-  mov $2,$0
-  cal $2,48763 ; Smallest cube >= n.
-  sub $2,$0
+  mov $1,$0
+  cal $1,48763 ; Smallest cube >= n.
+  sub $1,$0
   mov $0,0
-  add $1,$2
-  add $1,$2
 lpe
-div $1,2

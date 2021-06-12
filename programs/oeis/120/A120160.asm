@@ -3,7 +3,6 @@
 
 cal $0,182305 ; a(n+1) = a(n) + floor(a(n)/4) with a(0)=4.
 div $0,5
-mov $2,$0
-cmp $2,0
-add $0,$2
+trn $0,1
+add $0,1
 mov $1,$0
