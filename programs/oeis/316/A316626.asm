@@ -3,17 +3,11 @@
 
 mov $2,$0
 add $2,1
-mov $5,$0
+mov $3,$0
 lpb $2
-  mov $0,$5
+  mov $0,$3
   sub $2,1
   sub $0,$2
   cal $0,252488 ; Binary sequence starting with 1 and with run lengths given by the ruler sequence A001511.
-  mul $0,2
-  pow $0,2
-  add $3,$0
-  mov $4,$3
-  mov $3,0
-  div $4,4
-  add $1,$4
+  add $1,$0
 lpe

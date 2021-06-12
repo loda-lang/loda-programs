@@ -3,7 +3,8 @@
 
 cal $0,159290 ; A generalized Jacobsthal sequence.
 lpb $0
-  mov $1,$0
-  mod $0,4
+  mul $0,2
+  sub $0,4
 lpe
+mov $1,$0
 add $1,1
