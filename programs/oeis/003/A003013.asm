@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,116757 ; Number of permutations of length n which avoid the patterns 1324, 2314, 4312.
   mov $2,$3
   mul $2,$0

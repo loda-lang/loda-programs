@@ -1,25 +1,20 @@
 ; A214856: Number of triangular numbers in interval ](n-1)^2, n^2] for n>0, a(0)=1.
 ; 1,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1
 
-mov $3,$0
+mov $4,$0
 mov $5,2
 lpb $5
-  clr $0,3
-  mov $0,$3
   sub $5,1
   add $0,$5
-  trn $0,1
-  pow $0,2
-  lpb $0
-    add $1,1
-    sub $0,$1
-  lpe
-  add $1,1
-  mov $6,$5
-  mul $6,$1
-  add $4,$6
+  sub $0,1
+  mov $3,$0
+  pow $3,2
+  cal $3,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+  mov $2,$5
+  mul $2,$3
+  add $1,$2
+  mov $6,$3
 lpe
-min $3,1
-mul $3,$1
-mov $1,$4
-sub $1,$3
+min $4,1
+mul $4,$6
+sub $1,$4

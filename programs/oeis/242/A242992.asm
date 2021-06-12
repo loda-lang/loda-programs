@@ -3,8 +3,7 @@
 
 mov $2,$0
 mov $3,$0
-sub $3,2
-max $3,0
+trn $3,2
 cal $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 div $0,$3
 add $1,$2

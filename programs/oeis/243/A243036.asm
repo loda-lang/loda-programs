@@ -7,8 +7,7 @@ lpb $5
   mov $0,$3
   sub $5,1
   add $0,$5
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,74330 ; a(n) = Sum_{k=1..n} 2^b(k) where b(k) denotes the number of 1's in the binary representation of k.
   add $0,1
   mov $2,$5

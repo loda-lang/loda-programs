@@ -4,6 +4,4 @@
 cal $0,40 ; The prime numbers.
 cal $0,218130 ; Number of length 6 primitive (=aperiodic or period 6) n-ary words.
 mov $1,$0
-sub $1,52
 div $1,6
-add $1,9
