@@ -6,6 +6,4 @@ cal $0,40 ; The prime numbers.
 sub $0,2
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mov $1,$0
-sub $1,2
 div $1,2
-add $1,1

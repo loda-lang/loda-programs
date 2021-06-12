@@ -4,11 +4,8 @@
 mov $2,$0
 cal $2,53737 ; Sum of digits of (n written in base 4).
 cal $2,142
+mov $1,2
 sub $2,1
-mov $3,2
-mul $3,$2
-add $3,8
-add $1,$3
-sub $1,8
+mul $1,$2
 div $1,2
 add $1,1

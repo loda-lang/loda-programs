@@ -5,7 +5,5 @@ mul $0,2
 add $0,1
 cal $0,27983 ; T(n,n+1) + T(n,n+2) + ... + T(n,2n), T given by A027960.
 mov $1,$0
-sub $1,5
 div $1,5
 mul $1,2
-add $1,2

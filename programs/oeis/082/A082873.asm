@@ -4,6 +4,5 @@
 cal $0,156040 ; Number of compositions (ordered partitions) of n into 3 parts (some of which may be zero), where the first is at least as great as each of the others.
 cal $0,203016 ; Numbers congruent to {1, 2, 3, 4} mod 6, multiplied by 3.
 mov $1,$0
-sub $1,6
 div $1,3
-add $1,1
+sub $1,1

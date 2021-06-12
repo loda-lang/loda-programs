@@ -3,7 +3,6 @@
 
 cal $0,131421 ; Triangle read by rows (n>=1, 1<=k<=n): T(n,k) = 2*(n+k) - 3.
 pow $0,2
+div $0,4
 mov $1,$0
-div $1,8
-mul $1,2
 add $1,41

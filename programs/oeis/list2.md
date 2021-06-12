@@ -372,7 +372,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102741](http://oeis.org/A102741) ([L04 program](102/A102741.asm)): a(n) = 3^4 * binomial(n+3, 4).
 * [A102762](http://oeis.org/A102762) ([L15 program](102/A102762.asm)): Curvatures of (largest) kissing circles along the circumference, starting with curvature = -1 and 2.
 * [A102770](http://oeis.org/A102770) ([L04 program](102/A102770.asm)): (p*q - 1)/2 where p and q are consecutive odd primes.
-* [A102781](http://oeis.org/A102781) ([L04 program](102/A102781.asm)): Number of positive even numbers less than the n-th prime.
+* [A102781](http://oeis.org/A102781) ([L03 program](102/A102781.asm)): Number of positive even numbers less than the n-th prime.
 * [A102815](http://oeis.org/A102815) ([L14 program](102/A102815.asm)): "False so far" sequence.
 * [A102845](http://oeis.org/A102845) ([L04 program](102/A102845.asm)): Number of prime factors of the sum of the first n odd primes.
 * [A102853](http://oeis.org/A102853) ([L05 program](102/A102853.asm)): Number of prime factors (with multiplicity) of number of points on surface of square pyramid.
@@ -1176,7 +1176,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A111286](http://oeis.org/A111286) ([L06 program](111/A111286.asm)): Number of permutations avoiding the patterns {1342, 1432, 2341, 2431, 3142, 3241, 3412, 3421, 4132, 4231, 4312, 4321}; number of strong sorting class based on 1342.
 * [A111297](http://oeis.org/A111297) ([L05 program](111/A111297.asm)): First differences of A109975.
 * [A111314](http://oeis.org/A111314) ([L12 program](111/A111314.asm)): a(n) = a(n-1) + a(n-2) + 2 where a(0) = a(1) = 1.
-* [A111333](http://oeis.org/A111333) ([L04 program](111/A111333.asm)): Number of odd numbers <= n-th prime.
+* [A111333](http://oeis.org/A111333) ([L03 program](111/A111333.asm)): Number of odd numbers <= n-th prime.
 * [A111365](http://oeis.org/A111365) ([L10 program](111/A111365.asm)): a(n) = 5*a(n-1) + 3*a(n-2) where a(0) = a(1) = 1.
 * [A111367](http://oeis.org/A111367) ([L21 program](111/A111367.asm)): Numbers k such that 7*k + 5 is prime.
 * [A111368](http://oeis.org/A111368) ([L18 program](111/A111368.asm)): The number of maximal determinant {-1,1} matrices of order n.
@@ -2492,7 +2492,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126826](http://oeis.org/A126826) ([L04 program](126/A126826.asm)): Ramanujan numbers (A000594) read mod 9.
 * [A126832](http://oeis.org/A126832) ([L03 program](126/A126832.asm)): Ramanujan numbers (A000594) read mod 5.
 * [A126848](http://oeis.org/A126848) ([L17 program](126/A126848.asm)): Arises in lower bound of the spectral norm of n X n symmetric random matrices.
-* [A126862](http://oeis.org/A126862) ([L17 program](126/A126862.asm)): Numbers n that have a component C(1,1) when expanded in the binomial basis of order t=3.
+* [A126862](http://oeis.org/A126862) ([L14 program](126/A126862.asm)): Numbers n that have a component C(1,1) when expanded in the binomial basis of order t=3.
 * [A126864](http://oeis.org/A126864) ([L12 program](126/A126864.asm)): a(n) = gcd(n, Product_{p|n} (p-1)), where the product is over the distinct primes, p, that divide n.
 * [A126869](http://oeis.org/A126869) ([L05 program](126/A126869.asm)): a(n) = Sum_{k = 0..n} binomial(n,floor(k/2))*(-1)^(n-k).
 * [A126890](http://oeis.org/A126890) ([L09 program](126/A126890.asm)): Triangle read by rows: T(n,k) = n*(n+2*k+1)/2, 0 <= k <= n.
@@ -2843,7 +2843,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130249](http://oeis.org/A130249) ([L06 program](130/A130249.asm)): Maximal index k of a Jacobsthal number such that A001045(k)<=n (the 'lower' Jacobsthal inverse).
 * [A130250](http://oeis.org/A130250) ([L07 program](130/A130250.asm)): Minimal index k of a Jacobsthal number such that A001045(k) >= n (the 'upper' Jacobsthal inverse).
 * [A130251](http://oeis.org/A130251) ([L16 program](130/A130251.asm)): Partial sums of A130249.
-* [A130252](http://oeis.org/A130252) ([L06 program](130/A130252.asm)): Partial sums of A130250.
+* [A130252](http://oeis.org/A130252) ([L11 program](130/A130252.asm)): Partial sums of A130250.
 * [A130253](http://oeis.org/A130253) ([L07 program](130/A130253.asm)): Number of Jacobsthal numbers (A001045) <=n.
 * [A130255](http://oeis.org/A130255) ([L08 program](130/A130255.asm)): Maximal index k of an odd Fibonacci number (A001519) such that A001519(k) = Fibonacci(2k-1) <= n (the 'lower' odd Fibonacci Inverse).
 * [A130256](http://oeis.org/A130256) ([L07 program](130/A130256.asm)): Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) >= n (the 'upper' odd Fibonacci Inverse).
@@ -4215,7 +4215,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140430](http://oeis.org/A140430) ([L05 program](140/A140430.asm)): Period 6: repeat [3, 2, 4, 1, 2, 0].
 * [A140431](http://oeis.org/A140431) ([L11 program](140/A140431.asm)): 2*A094555(n).
 * [A140434](http://oeis.org/A140434) ([L07 program](140/A140434.asm)): Number of new visible points created at each step in an n X n grid.
-* [A140435](http://oeis.org/A140435) ([L15 program](140/A140435.asm)): Number of new lattice points created at each step in an n X n grid that are not visible.
+* [A140435](http://oeis.org/A140435) ([L07 program](140/A140435.asm)): Number of new lattice points created at each step in an n X n grid that are not visible.
 * [A140438](http://oeis.org/A140438) ([L03 program](140/A140438.asm)): Number of letters in word for the number n in Tamil.
 * [A140442](http://oeis.org/A140442) ([L06 program](140/A140442.asm)): Primes congruent to 9 mod 14.
 * [A140444](http://oeis.org/A140444) ([L05 program](140/A140444.asm)): Primes congruent to 1 (mod 14).

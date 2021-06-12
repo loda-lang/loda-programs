@@ -3,8 +3,5 @@
 
 cal $0,134860 ; Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
 cal $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
-mul $0,6
-add $1,$0
-sub $1,42
-div $1,6
-add $1,13
+mov $1,$0
+add $1,6

@@ -219,7 +219,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A153151](http://oeis.org/A153151) ([L30 program](153/A153151.asm)): Rotated binary decrementing: For n<2 a(n) = n, if n=2^k, a(n) = 2*n-1, otherwise a(n) = n-1.
 * [A153152](http://oeis.org/A153152) ([L12 program](153/A153152.asm)): Rotated binary incrementing: For n<2 a(n)=n, if n=(2^k)-1, a(n)=(n+1)/2, otherwise a(n)=n+1.
 * [A153169](http://oeis.org/A153169) ([L05 program](153/A153169.asm)): a(n) = 4*n^2 + 12*n + 3.
-* [A153183](http://oeis.org/A153183) ([L07 program](153/A153183.asm)): Numbers k such that 3k-2 is prime.
+* [A153183](http://oeis.org/A153183) ([L05 program](153/A153183.asm)): Numbers k such that 3k-2 is prime.
 * [A153186](http://oeis.org/A153186) ([L15 program](153/A153186.asm)): Period 9: repeat 1,7,4,7,4,7,1,1,1.
 * [A153192](http://oeis.org/A153192) ([L06 program](153/A153192.asm)): Numbers such that the numerator of floor(sqrt(n))/n, when reduced to its lowest terms, is equal to 2.
 * [A153218](http://oeis.org/A153218) ([L05 program](153/A153218.asm)): Numbers n such that 6n + 7 is prime.
@@ -2085,6 +2085,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A168198](http://oeis.org/A168198) ([L06 program](168/A168198.asm)): a(n) = 3*n - a(n-1) + 1 with n > 1, a(1)=1.
 * [A168199](http://oeis.org/A168199) ([L05 program](168/A168199.asm)): a(n) = 3*n - a(n-1) + 1 with n > 1, a(1)=2.
 * [A168200](http://oeis.org/A168200) ([L05 program](168/A168200.asm)): a(n) = 3*n - a(n-1) + 1, with a(1)=4.
+* [A168201](http://oeis.org/A168201) ([L19 program](168/A168201.asm)): Number of representations of n in the form 7*k+11*m (with nonnegative k, m).
 * [A168202](http://oeis.org/A168202) ([L07 program](168/A168202.asm)): a(n) = 3*n - a(n-1) + 1 with n > 1, a(1)=5.
 * [A168203](http://oeis.org/A168203) ([L05 program](168/A168203.asm)): a(n) = 4*n - a(n-1) + 1 with n>1, a(1)=0.
 * [A168204](http://oeis.org/A168204) ([L06 program](168/A168204.asm)): a(n) = 4*n - a(n-1) + 1 with n>1, a(1)=1.
@@ -3617,6 +3618,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183137](http://oeis.org/A183137) ([L13 program](183/A183137.asm)): [1/s]+[2/s]+...+[n/s], where s=(golden ratio)^2 and []=floor.
 * [A183138](http://oeis.org/A183138) ([L08 program](183/A183138.asm)): a(n) = floor(n/(2+sqrt(2))).
 * [A183139](http://oeis.org/A183139) ([L10 program](183/A183139.asm)): a(n) = [1/r]+[2/r]+...+[n/r], where r=sqrt(2) and []=floor.
+* [A183140](http://oeis.org/A183140) ([L15 program](183/A183140.asm)): a(n) = [1/s]+[2/s]+...+[n/s], where s=2+sqrt(2) and []=floor.
 * [A183142](http://oeis.org/A183142) ([L04 program](183/A183142.asm)): Floor(n/s), where s=(3+sqrt(3))/2.
 * [A183143](http://oeis.org/A183143) ([L09 program](183/A183143.asm)): [1/r]+[2/r]+...+[n/r], where r=sqrt(3) and []=floor.
 * [A183144](http://oeis.org/A183144) ([L06 program](183/A183144.asm)): [1/s]+[2/s]+...+[n/s], where s=(3+sqrt(3))/2, []=floor.
@@ -3806,7 +3808,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184635](http://oeis.org/A184635) ([L06 program](184/A184635.asm)): a(n) = floor(1/{(n+n^4)^(1/4)}), where {} = fractional part.
 * [A184636](http://oeis.org/A184636) ([L06 program](184/A184636.asm)): floor(1/{(n^4+2*n)^(1/4)}), where {}=fractional part.
 * [A184637](http://oeis.org/A184637) ([L13 program](184/A184637.asm)): a(n) = floor(1/{(n^4+3*n)^(1/4)}), where {}=fractional part.
-* [A184638](http://oeis.org/A184638) ([L04 program](184/A184638.asm)): floor(nr+h), where r=sqrt(3), h=-1/2; complement of A184653.
+* [A184638](http://oeis.org/A184638) ([L05 program](184/A184638.asm)): floor(nr+h), where r=sqrt(3), h=-1/2; complement of A184653.
 * [A184653](http://oeis.org/A184653) ([L43 program](184/A184653.asm)): floor(n*s+h-h*s), where s=(3+sqrt(3))/2, h=-1/2; complement of A184638.
 * [A184654](http://oeis.org/A184654) ([L09 program](184/A184654.asm)): floor(n*sqrt(3)-2/3); complement of A184655.
 * [A184655](http://oeis.org/A184655) ([L12 program](184/A184655.asm)): floor(n*s+h-h*s), where s=(3+sqrt(3))/2, h=-2/3; complement of A184654.
@@ -4209,7 +4211,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188259](http://oeis.org/A188259) ([L25 program](188/A188259.asm)): Positions of 1 in A188257; complement of A188258.
 * [A188261](http://oeis.org/A188261) ([L14 program](188/A188261.asm)): Positions of 0 in A188260; complement of A188262.
 * [A188262](http://oeis.org/A188262) ([L12 program](188/A188262.asm)): Positions of 1 in A188260; complement of A188261.
-* [A188290](http://oeis.org/A188290) ([L06 program](188/A188290.asm)): Positions of 0 in the zero-one sequence [nr+4r]-[nr]-[4r], where r=sqrt(5) and []=floor.
+* [A188290](http://oeis.org/A188290) ([L05 program](188/A188290.asm)): Positions of 0 in the zero-one sequence [nr+4r]-[nr]-[4r], where r=sqrt(5) and []=floor.
 * [A188293](http://oeis.org/A188293) ([L37 program](188/A188293.asm)): Positions of 1 in A188291; complement of A188292.
 * [A188295](http://oeis.org/A188295) ([L19 program](188/A188295.asm)): [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
 * [A188298](http://oeis.org/A188298) ([L31 program](188/A188298.asm)): Positions of 0 in A188297; complement of A188299.
@@ -4323,7 +4325,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A189666](http://oeis.org/A189666) ([L05 program](189/A189666.asm)): Positions of 1 in A189664; complement of A189665.
 * [A189667](http://oeis.org/A189667) ([L10 program](189/A189667.asm)): Partial sums of A189664.
 * [A189668](http://oeis.org/A189668) ([L03 program](189/A189668.asm)): Fixed point of the morphism 0->010, 1->100.
-* [A189669](http://oeis.org/A189669) ([L14 program](189/A189669.asm)): Positions of 0 in A189668; complement of A189679.
+* [A189669](http://oeis.org/A189669) ([L12 program](189/A189669.asm)): Positions of 0 in A189668; complement of A189679.
 * [A189670](http://oeis.org/A189670) ([L10 program](189/A189670.asm)): Positions of 1 in A189668; complement of A189669.
 * [A189671](http://oeis.org/A189671) ([L09 program](189/A189671.asm)): Partial sums of A189668.
 * [A189672](http://oeis.org/A189672) ([L03 program](189/A189672.asm)): Partial sums of A080846.
@@ -4448,7 +4450,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190816](http://oeis.org/A190816) ([L05 program](190/A190816.asm)): a(n) = 5*n^2 - 4*n + 1.
 * [A190843](http://oeis.org/A190843) ([L05 program](190/A190843.asm)): [2ne]-2[ne], where [ ]=floor.
 * [A190876](http://oeis.org/A190876) ([L05 program](190/A190876.asm)): Numbers 1 through 8 together with numbers congruent to 9 mod 10.
-* [A190941](http://oeis.org/A190941) ([L05 program](190/A190941.asm)): Partial sums of A190592.
+* [A190941](http://oeis.org/A190941) ([L03 program](190/A190941.asm)): Partial sums of A190592.
 * [A190944](http://oeis.org/A190944) ([L03 program](190/A190944.asm)): Multiples of 3 written in base 2.
 * [A190949](http://oeis.org/A190949) ([L04 program](190/A190949.asm)): Odd Fibonacci numbers with odd index.
 * [A190958](http://oeis.org/A190958) ([L09 program](190/A190958.asm)): a(n) = 2*a(n-1) - 10*a(n-2), with a(0) = 0, a(1) = 1.
@@ -4744,7 +4746,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A194029](http://oeis.org/A194029) ([L11 program](194/A194029.asm)): Natural fractal sequence of the Fibonacci sequence (1,2,3,5,8,...).
 * [A194050](http://oeis.org/A194050) ([L15 program](194/A194050.asm)): Natural fractal sequence of A014739.
 * [A194055](http://oeis.org/A194055) ([L03 program](194/A194055.asm)): Natural fractal sequence of A000071 (Fibonacci numbers minus 1; a rectangular array, by antidiagonals.
-* [A194063](http://oeis.org/A194063) ([L16 program](194/A194063.asm)): Natural fractal sequence of A006578.
+* [A194063](http://oeis.org/A194063) ([L09 program](194/A194063.asm)): Natural fractal sequence of A006578.
 * [A194066](http://oeis.org/A194066) ([L09 program](194/A194066.asm)): Natural fractal sequence of A087483; a rectangular array, by antidiagonals.
 * [A194069](http://oeis.org/A194069) ([L06 program](194/A194069.asm)): 1+floor((2/3)*n^2).
 * [A194073](http://oeis.org/A194073) ([L06 program](194/A194073.asm)): a(n) = 1 + floor((3/4)*n^2).
@@ -4841,7 +4843,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A194932](http://oeis.org/A194932) ([L18 program](194/A194932.asm)): Number of lower triangles of a 3 X 3 0..n array with no element differing from any of its horizontal or vertical neighbors by more than one.
 * [A194959](http://oeis.org/A194959) ([L03 program](194/A194959.asm)): Fractalization of (1 + floor(n/2)).
 * [A194960](http://oeis.org/A194960) ([L05 program](194/A194960.asm)): a(n) = floor((n+2)/3) + ((n-1) mod 3).
-* [A194964](http://oeis.org/A194964) ([L10 program](194/A194964.asm)): a(n) = 1 + floor(n/sqrt(5)).
+* [A194964](http://oeis.org/A194964) ([L04 program](194/A194964.asm)): a(n) = 1 + floor(n/sqrt(5)).
 * [A194979](http://oeis.org/A194979) ([L04 program](194/A194979.asm)): 1 + floor(n/sqrt(3)).
 * [A194986](http://oeis.org/A194986) ([L04 program](194/A194986.asm)): a(n) = 1 + floor(n/sqrt(6)).
 * [A194990](http://oeis.org/A194990) ([L14 program](194/A194990.asm)): a(n) = 1+ floor(n/sqrt(8)).

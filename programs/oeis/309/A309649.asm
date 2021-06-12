@@ -4,6 +4,4 @@
 cal $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 cal $0,77017 ; a(1) = 2, a(n+1) = smallest positive integer divisible by the n-th prime that also has a nontrivial common divisor with a(n).
 mov $1,$0
-div $1,4
-mul $1,2
-add $1,1
+div $1,2

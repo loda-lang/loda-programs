@@ -5,6 +5,4 @@ mul $0,4
 add $0,7
 cal $0,122918 ; Expansion of (1+x)^2/(1+x+x^2)^2.
 mov $1,$0
-sub $1,2
 div $1,2
-add $1,1

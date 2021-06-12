@@ -1574,7 +1574,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274380](http://oeis.org/A274380) ([L14 program](274/A274380.asm)): A 4-cycle of the iterated sum of deficient divisors function.
 * [A274382](http://oeis.org/A274382) ([L18 program](274/A274382.asm)): a(n) = gcd(n, n*(n+1)/2 - sigma(n)).
 * [A274406](http://oeis.org/A274406) ([L05 program](274/A274406.asm)): Numbers m such that 9 divides m*(m + 1).
-* [A274427](http://oeis.org/A274427) ([L30 program](274/A274427.asm)): Positions in A274426 of products of distinct Fibonacci numbers > 1.
+* [A274427](http://oeis.org/A274427) ([L04 program](274/A274427.asm)): Positions in A274426 of products of distinct Fibonacci numbers > 1.
 * [A274430](http://oeis.org/A274430) ([L35 program](274/A274430.asm)): Positions in A274429 of products of distinct Fibonacci numbers > 1.
 * [A274431](http://oeis.org/A274431) ([L48 program](274/A274431.asm)): Positions in A274426 of products of distinct Lucas numbers > 1 (excluding 2).
 * [A274497](http://oeis.org/A274497) ([L05 program](274/A274497.asm)): Sum of the degrees of asymmetry of all binary words of length n.

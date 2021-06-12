@@ -4,9 +4,4 @@
 cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 add $0,1
 cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
-mov $1,3
-add $1,$0
-sub $1,6
-div $1,2
-mul $1,2
-add $1,3
+mov $1,$0
