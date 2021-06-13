@@ -4,7 +4,6 @@
 mul $0,2
 add $0,1
 cal $0,46897 ; Sum of divisors of n that are not divisible by 4.
-mul $0,2468
 mov $1,$0
-sub $1,7404
-div $1,7404
+mul $1,2468
+div $1,7407

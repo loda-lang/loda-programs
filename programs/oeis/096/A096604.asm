@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  add $3,2
   cal $2,88491 ; A factorial subtraction sequence based on Conway's A004001.
+  add $3,2
   mul $3,$0
   mov $0,0
   mov $1,$2

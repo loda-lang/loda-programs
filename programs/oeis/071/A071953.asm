@@ -3,10 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,208139 ; Number of n X 5 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
   sub $0,1
+  cal $2,208139 ; Number of n X 5 0..1 arrays avoiding 0 0 1 and 0 1 1 horizontally and 0 0 1 and 1 0 1 vertically.
   add $1,$2
 lpe
-div $1,12
-mul $1,4
+div $1,3
 add $1,4

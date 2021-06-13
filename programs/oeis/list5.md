@@ -1240,7 +1240,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A269538](http://oeis.org/A269538) ([L09 program](269/A269538.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by other than one.
 * [A269539](http://oeis.org/A269539) ([L55 program](269/A269539.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by other than one.
 * [A269540](http://oeis.org/A269540) ([L67 program](269/A269540.asm)): Number of length-6 0..n arrays with no repeated value differing from the previous repeated value by other than one.
-* [A269584](http://oeis.org/A269584) ([L11 program](269/A269584.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by more than one.
+* [A269584](http://oeis.org/A269584) ([L08 program](269/A269584.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by more than one.
 * [A269585](http://oeis.org/A269585) ([L64 program](269/A269585.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by more than one.
 * [A269607](http://oeis.org/A269607) ([L09 program](269/A269607.asm)): Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by one or less.
 * [A269608](http://oeis.org/A269608) ([L55 program](269/A269608.asm)): Number of length-5 0..n arrays with no repeated value differing from the previous repeated value by one or less.
@@ -2792,8 +2792,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A294924](http://oeis.org/A294924) ([L24 program](294/A294924.asm)): Numbers n such that the whole sequence of the first n terms of A293699 is a palindrome.
 * [A294934](http://oeis.org/A294934) ([L02 program](294/A294934.asm)): Characteristic function for deficient numbers (A005100): a(n) = 1 if A001065(n) < n, 0 otherwise.
 * [A294935](http://oeis.org/A294935) ([L04 program](294/A294935.asm)): Characteristic function for nonabundant numbers (A263837): a(n) = 1 if A001065(n) <= n, 0 otherwise.
-* [A294936](http://oeis.org/A294936) ([L06 program](294/A294936.asm)): Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
-* [A294937](http://oeis.org/A294937) ([L03 program](294/A294937.asm)): Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
+* [A294936](http://oeis.org/A294936) ([L05 program](294/A294936.asm)): Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
+* [A294937](http://oeis.org/A294937) ([L06 program](294/A294937.asm)): Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
 * [A294993](http://oeis.org/A294993) ([L03 program](294/A294993.asm)): Numbers n > 1 such that all of 2^(n-1), 3^(n-1), 5^(n-1), (2*n-1)*(2^((n-1)/2)), 4*ceiling((3/4)*n)-2, and (2^((n+1)/2) + floor(n/4)*2^((n+3)/2)) are congruent to 1 (mod n).
 * [A295012](http://oeis.org/A295012) ([L05 program](295/A295012.asm)): a(n) = sigma(12n - 1)/12, where sigma = sum of divisors (A000203).
 * [A295077](http://oeis.org/A295077) ([L10 program](295/A295077.asm)): a(n) = 2*n*(n-1) + 2^n - 1.

@@ -5,6 +5,4 @@ cal $0,40 ; The prime numbers.
 mul $0,2
 cal $0,271342 ; Sum of all even divisors of all positive integers <= n.
 mov $1,$0
-sub $1,8
 div $1,2
-add $1,4

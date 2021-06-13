@@ -4,9 +4,9 @@
 mov $3,$0
 mul $0,2
 max $0,1
+cal $0,173919 ; Numbers that are prime or one less than a prime.
 mov $2,1
 gcd $3,2
-cal $0,173919 ; Numbers that are prime or one less than a prime.
 add $2,$3
 mul $0,$2
 mov $1,$0

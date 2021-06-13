@@ -8,8 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,248515 ; Least number k such that 1 - k*sin(1/k) < 1/n^2.
   add $1,$0
 lpe

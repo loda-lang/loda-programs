@@ -7,10 +7,10 @@ mov $3,$0
 sub $0,2
 mov $1,$3
 div $1,3
+cal $2,25768 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^7)).
 mov $4,$0
 add $4,$1
 sub $4,4
-cal $2,25768 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^7)).
 mov $1,$4
 cal $1,63128 ; Dimension of the space of weight 2n cusp forms for Gamma_0( 60 ).
 add $1,$2

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,66096 ; Duplicate values in A060143.
   trn $0,2
+  cal $2,66096 ; Duplicate values in A060143.
   add $1,$2
 lpe

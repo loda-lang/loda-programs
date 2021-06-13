@@ -4,7 +4,7 @@
 mov $1,2
 lpb $0
   mov $1,$0
-  cal $1,2104 ; Logarithmic numbers.
   mov $0,0
+  cal $1,2104 ; Logarithmic numbers.
 lpe
 sub $1,1

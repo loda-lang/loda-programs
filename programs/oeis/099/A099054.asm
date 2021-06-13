@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,132355 ; Numbers of the form 9*h^2 + 2*h, for h an integer.
   div $0,3
+  cal $2,132355 ; Numbers of the form 9*h^2 + 2*h, for h an integer.
   add $1,$2
   mod $1,3
 lpe

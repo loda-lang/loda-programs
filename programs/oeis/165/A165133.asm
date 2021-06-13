@@ -9,7 +9,6 @@ pow $0,$3
 add $0,8
 bin $0,2
 mov $1,$0
-sub $1,271
-div $1,24
-mul $1,3
+sub $1,276
+div $1,8
 add $1,30

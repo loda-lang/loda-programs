@@ -238,7 +238,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A205354](http://oeis.org/A205354) ([L05 program](205/A205354.asm)): Number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having the same number of equal diagonal or antidiagonal elements, and new values 0..2 introduced in row major order.
 * [A205382](http://oeis.org/A205382) ([L05 program](205/A205382.asm)): s(k)-s(j), where (s(k),s(j)) is the least such pair for which n divides their difference, and s(j)=(2j-1)^2.
 * [A205383](http://oeis.org/A205383) ([L05 program](205/A205383.asm)): a(n) = (1/n)*A205382(n).
-* [A205565](http://oeis.org/A205565) ([L05 program](205/A205565.asm)): Number of ways of writing n = u + v with u <= v, and u,v having in ternary representation no 3.
+* [A205565](http://oeis.org/A205565) ([L06 program](205/A205565.asm)): Number of ways of writing n = u + v with u <= v, and u,v having in ternary representation no 3.
 * [A205633](http://oeis.org/A205633) ([L09 program](205/A205633.asm)): Expansion of f(x^3, x^7) in powers of x where f() is Ramanujan's two-variable theta function.
 * [A205646](http://oeis.org/A205646) ([L03 program](205/A205646.asm)): Number of empty faces in Freij's family of Hansen polytopes.
 * [A205651](http://oeis.org/A205651) ([L10 program](205/A205651.asm)): Period 6: repeat [1, 6, 5, 4, 9, 0].
@@ -863,7 +863,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213826](http://oeis.org/A213826) ([L12 program](213/A213826.asm)): Principal diagonal of the convolution array A213825.
 * [A213827](http://oeis.org/A213827) ([L07 program](213/A213827.asm)): a(n) = n^2*(n+1)*(3*n+1)/4.
 * [A213829](http://oeis.org/A213829) ([L07 program](213/A213829.asm)): Principal diagonal of the convolution array A213828.
-* [A213830](http://oeis.org/A213830) ([L08 program](213/A213830.asm)): Antidiagonal sums of the convolution array A213828.
+* [A213830](http://oeis.org/A213830) ([L09 program](213/A213830.asm)): Antidiagonal sums of the convolution array A213828.
 * [A213832](http://oeis.org/A213832) ([L08 program](213/A213832.asm)): Principal diagonal of the convolution array A213831.
 * [A213834](http://oeis.org/A213834) ([L26 program](213/A213834.asm)): Antidiagonal sums of the convolution array A213833.
 * [A213837](http://oeis.org/A213837) ([L16 program](213/A213837.asm)): Principal diagonal of the convolution array A213836.
@@ -1001,7 +1001,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215537](http://oeis.org/A215537) ([L07 program](215/A215537.asm)): Lowest k such that k is representable as both the sum of n and of n+1 nonzero squares.
 * [A215543](http://oeis.org/A215543) ([L06 program](215/A215543.asm)): Number of standard Young tableaux of shape [3n,3].
 * [A215544](http://oeis.org/A215544) ([L09 program](215/A215544.asm)): Number of standard Young tableaux of shape [4n,4].
-* [A215545](http://oeis.org/A215545) ([L06 program](215/A215545.asm)): Number of standard Young tableaux of shape [5n,5].
+* [A215545](http://oeis.org/A215545) ([L05 program](215/A215545.asm)): Number of standard Young tableaux of shape [5n,5].
 * [A215573](http://oeis.org/A215573) ([L09 program](215/A215573.asm)): a(n) = n*(n+1)*(2n+1)/6 modulo n.
 * [A215580](http://oeis.org/A215580) ([L19 program](215/A215580.asm)): Partial sums of A215602.
 * [A215602](http://oeis.org/A215602) ([L16 program](215/A215602.asm)): a(n) = L(n)*L(n+1), where L = A000032 (Lucas numbers).

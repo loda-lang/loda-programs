@@ -9,6 +9,5 @@ sub $1,5
 mul $0,$1
 mov $1,$0
 sub $1,340
-div $1,22
-mul $1,2
+div $1,11
 add $1,30

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,254378 ; Run lengths of A228495 (Characteristic function of the odd odious numbers).
   sub $0,1
+  cal $2,254378 ; Run lengths of A228495 (Characteristic function of the odd odious numbers).
   add $1,$2
 lpe

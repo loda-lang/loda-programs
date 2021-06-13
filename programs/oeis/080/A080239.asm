@@ -5,8 +5,8 @@ add $0,1
 mov $1,1
 lpb $0
   mov $2,$0
-  cal $2,22354 ; Fibonacci sequence beginning 0, 20.
   trn $0,4
+  cal $2,22354 ; Fibonacci sequence beginning 0, 20.
   add $1,$2
 lpe
 sub $1,21

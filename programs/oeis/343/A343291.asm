@@ -5,9 +5,9 @@ mov $1,$0
 lpb $0
   sub $0,1
   mov $2,$0
+  mov $0,$3
   max $2,0
   cal $2,337 ; a(n) = (n-1)*2^n + 1.
-  mov $0,$3
   add $1,$2
 lpe
 add $1,1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,98586 ; a(n) = (1/2) * (5*P(n+1) + P(n) - 1), where P(k) are the Pell numbers A000129.
   mov $0,0
+  cal $1,98586 ; a(n) = (1/2) * (5*P(n+1) + P(n) - 1), where P(k) are the Pell numbers A000129.
   mul $1,254
 lpe
 div $1,254

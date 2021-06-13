@@ -1,19 +1,7 @@
 ; A220633: Number of ways to reciprocally link elements of an 3 X n array either to themselves or to exactly two horizontal or antidiagonal neighbors.
 ; 1,1,3,12,44,158,564,2010,7160,25502,90828,323490,1152128,4103366,14614356,52049802,185378120,660233966,2351458140,8374842354,29827443344,106232014742,378350930916,1347516822234,4799252328536,17092790630078,60876876547308,216816210902082,772202385800864,2750239579206758
 
-add $0,2
-mov $1,1
-mov $3,2
-lpb $0
-  trn $0,4
-  add $0,3
-  add $3,$2
-  add $2,1
-  add $1,$2
-  add $1,1
-  add $2,$3
-  mov $3,$1
-  mov $1,$2
-  add $3,$2
-  sub $3,1
-lpe
+trn $0,1
+cal $0,7484 ; a(n) = 3*a(n-1) + 2*a(n-2), with a(0)=2, a(1)=7.
+div $0,2
+mov $1,$0

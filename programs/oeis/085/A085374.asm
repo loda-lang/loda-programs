@@ -3,12 +3,12 @@
 
 mov $2,$0
 add $0,1
-add $2,2
 cal $0,119581 ; (2*n+n^2)*(binomial(2*n,n))/2.
 mov $1,$0
 mul $1,2
 add $0,$1
 mov $1,$0
+add $2,2
 mul $1,$2
 sub $1,18
 div $1,18

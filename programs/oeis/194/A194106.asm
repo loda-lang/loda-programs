@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,22838 ; Beatty sequence for sqrt(3); complement of A054406.
   sub $0,1
+  cal $2,22838 ; Beatty sequence for sqrt(3); complement of A054406.
   add $1,$2
 lpe
 add $1,1

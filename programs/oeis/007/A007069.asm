@@ -4,8 +4,8 @@
 mul $0,4
 lpb $0
   mov $2,$0
-  cal $2,286726 ; {0->10, 1->01}-transform of the Pell word, A171588.
   sub $0,1
+  cal $2,286726 ; {0->10, 1->01}-transform of the Pell word, A171588.
   add $1,$2
 lpe
 add $1,1

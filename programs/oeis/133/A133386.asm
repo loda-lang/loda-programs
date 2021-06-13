@@ -3,10 +3,9 @@
 
 lpb $0
   mov $1,$0
-  cal $1,52761 ; a(n) = 3!*n*S(n-1,3), where S denotes the Stirling numbers of second kind.
   sub $0,1
+  cal $1,52761 ; a(n) = 3!*n*S(n-1,3), where S denotes the Stirling numbers of second kind.
   mul $1,$0
   mov $0,0
 lpe
-div $1,12
-mul $1,2
+div $1,6

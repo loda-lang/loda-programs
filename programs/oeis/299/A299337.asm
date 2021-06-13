@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,189980 ; a(n) is the number of incongruent two-color bracelets of n beads, 10 from them are black (A005515), having a diameter of symmetry.
   sub $0,1
+  cal $2,189980 ; a(n) is the number of incongruent two-color bracelets of n beads, 10 from them are black (A005515), having a diameter of symmetry.
   add $1,$2
 lpe
 add $1,1

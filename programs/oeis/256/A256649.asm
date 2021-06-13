@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,255187 ; 29-gonal numbers: a(n) = n*(27*n-25)/2.
   sub $0,1
+  cal $2,255187 ; 29-gonal numbers: a(n) = n*(27*n-25)/2.
   add $1,$2
 lpe

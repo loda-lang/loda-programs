@@ -1207,7 +1207,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160706](http://oeis.org/A160706) ([L11 program](160/A160706.asm)): Hankel transform of A052702(n+1).
 * [A160713](http://oeis.org/A160713) ([L08 program](160/A160713.asm)): 3 times numbers of Gould's sequence: a(n) = A001316(n)*3.
 * [A160720](http://oeis.org/A160720) ([L07 program](160/A160720.asm)): Number of "ON" cells at n-th stage in 2-dimensional cellular automaton (see Comments for precise definition).
-* [A160721](http://oeis.org/A160721) ([L24 program](160/A160721.asm)): First differences of A160720.
+* [A160721](http://oeis.org/A160721) ([L23 program](160/A160721.asm)): First differences of A160720.
 * [A160722](http://oeis.org/A160722) ([L04 program](160/A160722.asm)): Number of "ON" cells at n-th stage in a certain 2-dimensional cellular automaton based on Sierpinski triangles (see Comments for precise definition).
 * [A160723](http://oeis.org/A160723) ([L12 program](160/A160723.asm)): First differences of A160722.
 * [A160742](http://oeis.org/A160742) ([L03 program](160/A160742.asm)): a(n) = A151566(n)*2.
@@ -3146,7 +3146,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178027](http://oeis.org/A178027) ([L02 program](178/A178027.asm)): Multiples of 5291.
 * [A178058](http://oeis.org/A178058) ([L04 program](178/A178058.asm)): Number of 1's in the Gray code for binomial(n,m).
 * [A178069](http://oeis.org/A178069) ([L05 program](178/A178069.asm)): a(n) = 12345679 * A001651(n).
-* [A178073](http://oeis.org/A178073) ([L07 program](178/A178073.asm)): Partial sums of sequence A177342.
+* [A178073](http://oeis.org/A178073) ([L11 program](178/A178073.asm)): Partial sums of sequence A177342.
 * [A178096](http://oeis.org/A178096) ([L18 program](178/A178096.asm)): Cube of n is equal to sum of four positive distinct squares; n^3=a^2+b^2+c^2+d^2; a>b>c>d>0.)
 * [A178129](http://oeis.org/A178129) ([L19 program](178/A178129.asm)): Partial sums of A050508.
 * [A178142](http://oeis.org/A178142) ([L07 program](178/A178142.asm)): Sum over the divisors d = 2 and/or 3 of n.
@@ -5020,7 +5020,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A197863](http://oeis.org/A197863) ([L10 program](197/A197863.asm)): Smallest powerful number that is a multiple of n.
 * [A197870](http://oeis.org/A197870) ([L08 program](197/A197870.asm)): Expansion of false theta series variation of Ramanujan theta function psi(x).
 * [A197878](http://oeis.org/A197878) ([L05 program](197/A197878.asm)): a(n) = floor(2*(1 + sqrt(2))*n).
-* [A197879](http://oeis.org/A197879) ([L07 program](197/A197879.asm)): Parity of floor(n*sqrt(8)).
+* [A197879](http://oeis.org/A197879) ([L05 program](197/A197879.asm)): Parity of floor(n*sqrt(8)).
 * [A197903](http://oeis.org/A197903) ([L48 program](197/A197903.asm)): Ceiling((n+1/n)^4).
 * [A197905](http://oeis.org/A197905) ([L13 program](197/A197905.asm)): Ceiling((n+1/n)^6).
 * [A197911](http://oeis.org/A197911) ([L03 program](197/A197911.asm)): Representable by A001045 (Jacobsthal sequence). Complement of A003158.

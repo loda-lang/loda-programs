@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,141523 ; Expansion of (3-2*x-3*x^2)/(1-x-x^2-x^3).
   sub $0,1
+  cal $2,141523 ; Expansion of (3-2*x-3*x^2)/(1-x-x^2-x^3).
   add $1,$2
 lpe
 add $1,2

@@ -9,9 +9,8 @@ lpb $29
   sub $29,1
   add $0,$29
   trn $0,1
-  add $5,3
   cal $0,190995 ; Fibonacci sequence beginning 9, 7.
-  add $5,2
+  add $5,5
   add $0,$5
   div $0,$5
   mov $1,$0

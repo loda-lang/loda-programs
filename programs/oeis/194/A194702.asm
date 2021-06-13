@@ -3,10 +3,10 @@
 
 mov $1,1
 mov $2,$0
-div $2,3
-trn $1,$2
 cal $0,167194 ; Triangle read by rows. A130713 in the columns.
 mod $0,2
+div $2,3
+trn $1,$2
 add $1,2
 bin $1,$0
 sub $1,1

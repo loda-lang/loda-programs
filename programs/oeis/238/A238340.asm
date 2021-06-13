@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,238705 ; Number of partitions of 4n into 4 parts with smallest part = 1.
   sub $0,1
+  cal $2,238705 ; Number of partitions of 4n into 4 parts with smallest part = 1.
   add $1,$2
 lpe
 add $1,1

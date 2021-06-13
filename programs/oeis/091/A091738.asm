@@ -10,6 +10,5 @@ cal $0,1750 ; Primes multiplied by 5.
 mul $0,8
 mov $1,$0
 sub $1,120
-div $1,80
-mul $1,2
+div $1,40
 add $1,3

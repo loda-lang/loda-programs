@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,14739 ; Expansion of (1+x^2)/(1-2*x+x^3).
   mov $0,0
+  cal $1,14739 ; Expansion of (1+x^2)/(1-2*x+x^3).
 lpe
 add $1,2

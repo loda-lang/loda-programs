@@ -6,10 +6,10 @@ mov $3,2
 lpb $3
   mov $0,$1
   trn $0,1
-  sub $3,1
   cal $0,1043 ; Numbers that are the sum of 2 successive primes.
   div $0,2
   mov $2,$0
+  sub $3,1
 lpe
 min $1,1
 mul $1,$2

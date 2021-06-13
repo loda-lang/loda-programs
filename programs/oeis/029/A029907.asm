@@ -12,9 +12,9 @@ lpb $8
   lpb $0
     sub $0,1
     mov $2,$0
+    div $0,108178
     max $2,0
     cal $2,23610 ; Convolution of Fibonacci numbers and {F(2), F(3), F(4), ...}.
-    div $0,108178
   lpe
   mov $1,$2
   mov $9,$8

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,6564 ; Icosahedral numbers: a(n) = n*(5*n^2 - 5*n + 2)/2.
   sub $0,1
+  cal $2,6564 ; Icosahedral numbers: a(n) = n*(5*n^2 - 5*n + 2)/2.
   add $1,$2
 lpe
 add $1,1

@@ -3,5 +3,6 @@
 
 add $0,1
 mov $1,$0
-cal $1,81221 ; Number of consecutive numbers >= n having at least one square divisor > 1.
-add $1,1
+cal $0,67535 ; Smallest squarefree number >= n.
+sub $0,$1
+mov $1,$0

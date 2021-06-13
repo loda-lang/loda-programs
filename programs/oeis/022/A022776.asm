@@ -9,8 +9,8 @@ lpb $6
   mov $0,$4
   sub $6,1
   sub $0,$6
-  add $3,1
   cal $0,49472 ; a(n) = floor(n/sqrt(2)).
+  add $3,1
   add $3,$0
   add $5,$3
 lpe

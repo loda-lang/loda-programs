@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,97299 ; Ninth column (m=8) of (1,6)-Pascal triangle A096956.
   sub $0,1
+  cal $2,97299 ; Ninth column (m=8) of (1,6)-Pascal triangle A096956.
   add $1,$2
 lpe
 add $1,6

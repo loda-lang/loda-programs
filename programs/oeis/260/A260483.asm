@@ -10,8 +10,8 @@ lpb $3
   sub $0,$3
   lpb $0
     mov $2,$0
-    cal $2,245222 ; Continued fraction of the constant c in A245221; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A022838, else f(n,x) = 1/x.
     trn $0,8
+    cal $2,245222 ; Continued fraction of the constant c in A245221; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A022838, else f(n,x) = 1/x.
     div $2,2
   lpe
   mov $4,$2

@@ -5,12 +5,12 @@ cal $0,92165 ; Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (1,2) entry of M^n.
 mov $1,$0
 mov $3,$0
 sub $3,$0
-cal $3,270567 ; Expansion of (1+4*x)/(1-5*x).
 cal $0,4 ; The zero sequence.
 sub $0,3
 sub $1,1
 mov $2,-1
 mul $2,$1
+cal $3,270567 ; Expansion of (1+4*x)/(1-5*x).
 add $3,2
 mov $4,9
 mul $4,$0

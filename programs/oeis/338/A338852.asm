@@ -3,7 +3,7 @@
 
 mov $1,1
 lpb $0
-  cal $1,47320 ; Numbers that are congruent to {0, 5, 6} mod 7.
   sub $0,1
+  cal $1,47320 ; Numbers that are congruent to {0, 5, 6} mod 7.
 lpe
 add $1,2

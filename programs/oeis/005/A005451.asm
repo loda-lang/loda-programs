@@ -2,5 +2,8 @@
 ; 1,1,4,1,6,1,8,9,10,1,12,1,14,15,16,1,18,1,20,21,22,1,24,25,26,27,28,1,30,1,32,33,34,35,36,1,38,39,40,1,42,1,44,45,46,1,48,49,50,51,52,1,54,55,56,57,58,1,60
 
 add $0,1
+mov $2,$0
+cal $0,66247 ; Characteristic function of composite numbers: 1 if n is composite else 0.
+mul $0,$2
 mov $1,$0
-cal $1,135683 ; a(n)=1 if n is a prime number; otherwise, a(n)=n.
+add $1,1

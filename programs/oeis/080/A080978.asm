@@ -7,7 +7,6 @@ max $0,0
 cal $0,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
 add $1,4
 add $0,$1
+mul $0,2
 mov $1,$0
-sub $1,3
-mul $1,2
-add $1,1
+sub $1,5

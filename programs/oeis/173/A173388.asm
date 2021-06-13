@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,214927 ; Number of n-digit numbers N that do not end with 0 and are such that the reversal of N divides N but is different from N.
   mod $0,4
+  cal $1,214927 ; Number of n-digit numbers N that do not end with 0 and are such that the reversal of N divides N but is different from N.
   sub $1,1
 lpe
 add $1,1

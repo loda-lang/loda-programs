@@ -3,5 +3,6 @@
 
 add $0,1
 mul $0,2
-cal $0,147846 ; Triangular numbers n*(n+1)/2 with n or n+1 prime.
+cal $0,93515 ; Numbers k such that either k or k-1 is a prime.
+bin $0,2
 mov $1,$0

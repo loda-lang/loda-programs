@@ -4,6 +4,5 @@
 cal $0,77442 ; 2*a(n)^2 + 7 is a square.
 pow $0,2
 mov $1,$0
-div $1,8
-mul $1,2
+div $1,4
 add $1,1

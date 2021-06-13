@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,59159 ; A hierarchical sequence (W'2{2}*c) - see A059126).
   sub $0,1
+  cal $2,59159 ; A hierarchical sequence (W'2{2}*c) - see A059126).
   add $1,$2
 lpe
 div $1,4

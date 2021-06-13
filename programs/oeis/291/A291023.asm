@@ -26,9 +26,9 @@ lpb $16
       sub $0,1
       lpb $0
         mov $2,$0
+        trn $0,2
         max $2,0
         cal $2,196410 ; a(n) = n*2^(n-5).
-        trn $0,2
         add $3,$2
       lpe
       mov $1,$3

@@ -7,12 +7,12 @@ pow $0,14
 mov $5,$4
 lpb $0
   trn $0,2
+  cal $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
   trn $1,1
   add $2,8
   mov $3,$1
   cmp $3,0
   add $1,$3
-  cal $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
   sub $1,$2
 lpe
 lpb $2

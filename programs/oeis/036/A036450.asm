@@ -3,9 +3,9 @@
 
 mov $2,5
 lpb $2
-  div $2,2
   cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,1
+  div $2,2
 lpe
 mov $1,$0
 add $1,1

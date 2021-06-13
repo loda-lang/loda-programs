@@ -4,11 +4,10 @@
 mov $1,$0
 mul $0,2
 max $0,1
-mod $1,2
-sub $1,4
-mov $3,$1
 cal $0,173919 ; Numbers that are prime or one less than a prime.
-add $3,3
+mod $1,2
+mov $3,$1
+sub $3,1
 mov $2,$3
 cmp $2,0
 add $3,$2

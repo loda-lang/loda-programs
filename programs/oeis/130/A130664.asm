@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,84556 ; n occurs n! times.
   sub $0,1
+  cal $2,84556 ; n occurs n! times.
   add $1,$2
 lpe
 add $1,1

@@ -1503,7 +1503,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A009194](http://oeis.org/A009194) ([L05 program](009/A009194.asm)): a(n) = gcd(n, sigma(n)).
 * [A009195](http://oeis.org/A009195) ([L04 program](009/A009195.asm)): a(n) = gcd(n, phi(n)).
 * [A009205](http://oeis.org/A009205) ([L04 program](009/A009205.asm)): a(n) = gcd(d(n), sigma(n)).
-* [A009230](http://oeis.org/A009230) ([L12 program](009/A009230.asm)): a(n) = lcm(n, d(n)).
+* [A009230](http://oeis.org/A009230) ([L05 program](009/A009230.asm)): a(n) = lcm(n, d(n)).
 * [A009281](http://oeis.org/A009281) ([L08 program](009/A009281.asm)): Expansion of exp(x)*cosh(log(1+x)).
 * [A009440](http://oeis.org/A009440) ([L41 program](009/A009440.asm)): a(n) is the concatenation of n and 6n.
 * [A009441](http://oeis.org/A009441) ([L37 program](009/A009441.asm)): a(n) is the concatenation of n and 7n.
@@ -3023,7 +3023,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022839](http://oeis.org/A022839) ([L04 program](022/A022839.asm)): Beatty sequence for sqrt(5).
 * [A022840](http://oeis.org/A022840) ([L04 program](022/A022840.asm)): Beatty sequence for sqrt(6).
 * [A022841](http://oeis.org/A022841) ([L04 program](022/A022841.asm)): Beatty sequence for sqrt(7).
-* [A022842](http://oeis.org/A022842) ([L06 program](022/A022842.asm)): Beatty sequence for sqrt(8).
+* [A022842](http://oeis.org/A022842) ([L04 program](022/A022842.asm)): Beatty sequence for sqrt(8).
 * [A022846](http://oeis.org/A022846) ([L05 program](022/A022846.asm)): Nearest integer to n*sqrt(2).
 * [A022847](http://oeis.org/A022847) ([L08 program](022/A022847.asm)): Integer nearest n*sqrt(3).
 * [A022848](http://oeis.org/A022848) ([L04 program](022/A022848.asm)): Integer nearest nx, where x = sqrt(5).

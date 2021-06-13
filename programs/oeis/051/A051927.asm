@@ -1,43 +1,10 @@
 ; A051927: Number of independent vertex sets in the n-prism graph Y_n = K_2 X C_n (n > 2).
 ; 3,1,7,13,35,81,199,477,1155,2785,6727,16237,39203,94641,228487,551613,1331715,3215041,7761799,18738637,45239075,109216785,263672647,636562077,1536796803,3710155681,8957108167,21624372013,52205852195,126036076401,304278004999,734592086397,1773462177795,4281516441985,10336495061767,24954506565517,60245508192803,145445522951121,351136554095047,847718631141213,2046573816377475,4940866263896161
 
-mov $7,$0
-mov $9,2
-lpb $9
-  clr $0,7
-  mov $0,$7
-  sub $9,1
-  add $0,$9
-  sub $0,1
-  mov $3,$0
-  mov $5,2
-  lpb $5
-    clr $0,3
-    mov $0,$3
-    sub $5,1
-    add $0,$5
-    sub $0,1
-    add $1,$0
-    max $0,0
-    div $1,2
-    cal $0,34182 ; Number of not-necessarily-symmetric n X 2 crossword puzzle grids.
-    add $0,$1
-    mov $2,$0
-    add $2,2
-    mov $1,$2
-    mov $6,$5
-    mul $6,$2
-    add $4,$6
-  lpe
-  min $3,1
-  mul $3,$1
-  mov $1,$4
-  sub $1,$3
-  mov $10,$9
-  mul $10,$1
-  add $8,$10
-lpe
-min $7,1
-mul $7,$1
-mov $1,$8
-sub $1,$7
+cal $0,80039 ; a(n) = floor((1+sqrt(2))^n).
+mov $1,162733
+add $1,$0
+cal $1,285869 ; a(n) is the number of zeros of the Chebyshev S(n, x) polynomial in the open interval (-sqrt(2), +sqrt(2)).
+sub $1,81367
+mul $1,2
+add $1,1

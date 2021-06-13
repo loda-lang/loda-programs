@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,103685 ; Consider the morphism 1->{1,2}, 2->{1,3}, 3->{1}; a(n) is the total number of '3' after n substitutions.
   mov $0,0
   mov $1,1
+  cal $2,103685 ; Consider the morphism 1->{1,2}, 2->{1,3}, 3->{1}; a(n) is the total number of '3' after n substitutions.
   add $1,$2
 lpe

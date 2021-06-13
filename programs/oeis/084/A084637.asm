@@ -4,9 +4,9 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  sub $0,1
   max $2,0
   cal $2,84636 ; Binomial transform of (1,0,1,0,1,0,2,0,2,0,2,0....).
-  sub $0,1
   add $1,$2
 lpe
 add $1,1
