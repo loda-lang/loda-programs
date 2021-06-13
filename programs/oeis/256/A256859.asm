@@ -8,6 +8,4 @@ mul $1,255936
 cal $0,101357 ; Partial sums of A060354.
 mul $0,$1
 mov $1,$0
-sub $1,767808
 div $1,767808
-add $1,1

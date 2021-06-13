@@ -6,6 +6,4 @@ lpb $0
   cal $1,47320 ; Numbers that are congruent to {0, 5, 6} mod 7.
   sub $0,1
 lpe
-div $1,4
-mul $1,4
-add $1,3
+add $1,2

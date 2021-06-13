@@ -6,6 +6,4 @@ cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(
 add $0,$2
 cal $0,319528 ; a(n) = 8 * sigma(n).
 mov $1,$0
-sub $1,24
 div $1,8
-add $1,3

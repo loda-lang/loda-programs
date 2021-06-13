@@ -7,8 +7,7 @@ lpb $5
   mov $0,$3
   sub $5,1
   add $0,$5
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,94820 ; Partial sums of A038548.
   mov $2,$5
   mul $2,$0

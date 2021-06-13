@@ -8,8 +8,7 @@ lpb $7
   mov $0,$5
   sub $7,1
   add $0,$7
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,8859 ; a(n) = Sum_{k=0..6} C(n,k).
   add $2,$0
   sub $2,2

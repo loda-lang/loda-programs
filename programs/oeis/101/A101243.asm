@@ -3,11 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $2,1
-  max $2,0
+  trn $2,1
   cal $2,217402 ; Numbers starting with 9.
-  add $3,$2
   clr $0,2
 lpe
-mov $1,$3
+mov $1,$2
 mul $1,10

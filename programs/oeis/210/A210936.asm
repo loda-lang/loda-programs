@@ -3,8 +3,5 @@
 
 cal $0,40976 ; a(n) = prime(n) - 2.
 cal $0,100006 ; Integer log of 2n: sum of primes dividing 2n (with repetition).
-add $1,$0
-add $1,$0
-mul $1,4
-sub $1,16
-div $1,8
+mov $1,$0
+sub $1,2

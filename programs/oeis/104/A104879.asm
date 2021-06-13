@@ -8,8 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,26898 ; a(n) = Sum_{k=0..n} (n-k+1)^k.
   add $1,$0
 lpe

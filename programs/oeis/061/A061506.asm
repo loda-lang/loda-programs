@@ -3,6 +3,5 @@
 
 mul $0,3
 cal $0,33931 ; a(n) = lcm(n,n+1,n+2).
+mul $0,2
 mov $1,$0
-div $1,6
-mul $1,12

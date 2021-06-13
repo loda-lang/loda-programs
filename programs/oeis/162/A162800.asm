@@ -5,8 +5,7 @@ mov $1,$0
 mov $3,2
 lpb $3
   mov $0,$1
-  sub $0,1
-  max $0,0
+  trn $0,1
   sub $3,1
   cal $0,1043 ; Numbers that are the sum of 2 successive primes.
   div $0,2

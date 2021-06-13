@@ -3,8 +3,6 @@
 
 pow $0,2
 cal $0,153448 ; 3 times 12-gonal (or dodecagonal) numbers: 3*n*(5*n-4).
-div $0,4
 mov $1,$0
-mul $1,2
-div $1,24
+div $1,48
 mul $1,2

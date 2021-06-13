@@ -3,12 +3,9 @@
 
 lpb $0
   sub $0,1
-  mov $2,$0
-  max $2,0
-  cal $2,124669 ; Product of successive primes minus 2.
+  mov $1,$0
+  max $1,0
+  cal $1,124669 ; Product of successive primes minus 2.
   mov $0,0
-  add $1,$2
-  mul $1,2
 lpe
-div $1,2
 add $1,1

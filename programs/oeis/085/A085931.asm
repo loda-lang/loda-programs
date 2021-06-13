@@ -15,8 +15,7 @@ lpb $11
     mov $0,$5
     sub $7,1
     add $0,$7
-    sub $0,1
-    max $0,0
+    trn $0,1
     cal $0,181133 ; a(n) = n + A003056(n).
     cal $0,28895 ; 5 times triangular numbers: a(n) = 5*n*(n+1)/2.
     mov $1,$0

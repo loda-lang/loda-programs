@@ -5,7 +5,5 @@ lpb $0
   mov $2,$0
   cal $2,280710 ; Characteristic function of squarefree semiprimes.
   sub $0,1
-  add $3,$2
+  add $1,$2
 lpe
-add $0,$3
-mov $1,$0
