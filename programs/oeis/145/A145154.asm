@@ -8,8 +8,7 @@ lpb $7
   mov $0,$5
   sub $7,1
   add $0,$7
-  sub $0,1
-  max $0,0
+  trn $0,1
   add $1,2
   cal $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
   mul $1,$0

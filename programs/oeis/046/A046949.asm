@@ -3,8 +3,7 @@
 
 lpb $0
   mov $1,$0
-  sub $1,1
-  max $1,0
+  trn $1,1
   cal $1,78471 ; Sum of all odd divisors of all positive integers <= n.
   mov $0,0
 lpe

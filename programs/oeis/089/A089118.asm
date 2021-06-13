@@ -3,7 +3,6 @@
 
 add $0,1
 cal $0,5836 ; Numbers n whose base 3 representation contains no 2.
+mul $0,3
 mov $1,$0
 sub $1,1
-mul $1,3
-add $1,2

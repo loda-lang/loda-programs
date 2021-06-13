@@ -4,7 +4,7 @@
 lpb $0
   dif $0,2
 lpe
-cal $0,37239 ; Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
+cal $0,59159 ; A hierarchical sequence (W'2{2}*c) - see A059126).
 mov $1,$0
-sub $1,8
-div $1,8
+div $1,4
+sub $1,1

@@ -4,8 +4,7 @@
 mov $1,1
 lpb $0
   add $1,$0
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,53645 ; Distance to largest power of 2 less than or equal to n; write n in binary, change the first digit to zero, and convert back to decimal.
   add $1,1
 lpe

@@ -3,19 +3,9 @@
 
 div $0,2
 mov $1,5
-mov $3,$0
-mov $0,3
-add $3,1
-pow $1,$3
+mov $2,$0
+add $2,1
+pow $1,$2
 add $1,2
 div $1,6
-mov $2,1
-lpb $0
-  mov $0,2
-  mul $1,14
-lpe
-add $1,$2
-sub $1,15
-div $1,14
 mul $1,2
-add $1,2

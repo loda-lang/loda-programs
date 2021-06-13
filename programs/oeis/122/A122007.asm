@@ -15,8 +15,7 @@ lpb $12
     mov $0,$6
     sub $8,1
     add $0,$8
-    sub $0,1
-    max $0,0
+    trn $0,1
     cal $0,107767 ; a(n) = (1 + 3^n - 2*3^(n/2))/4 if n is even, (1 + 3^n - 4*3^((n-1)/2))/4 if n odd.
     mov $1,$0
     mov $9,$8

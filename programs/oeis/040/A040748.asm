@@ -1,7 +1,13 @@
 ; A040748: Continued fraction for sqrt(776).
 ; 27,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1
 
-cal $0,40300 ; Continued fraction for sqrt(318).
-cal $0,7067 ; Nearest integer to n*tau.
-mov $1,$0
-sub $1,1
+cal $0,10199 ; Continued fraction for sqrt(140).
+cal $0,47423 ; Numbers that are congruent to {2, 3, 4, 5, 6} mod 8.
+mov $1,10
+mul $1,$0
+div $0,2
+mul $0,7
+add $1,3
+sub $1,$0
+div $1,4
+sub $1,5

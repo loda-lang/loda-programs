@@ -25,8 +25,7 @@ lpb $35
       sub $29,1
       sub $0,$29
       mul $0,2
-      sub $0,2
-      max $0,0
+      trn $0,2
       cal $0,97163 ; Expansion of (1+x-x^2)/((1-x)*(1-4*x^2)).
       add $28,$0
     lpe

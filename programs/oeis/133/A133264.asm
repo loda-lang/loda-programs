@@ -5,7 +5,3 @@ mul $0,3
 add $0,1
 cal $0,51885 ; Smallest number whose sum of digits is n.
 mov $1,$0
-mul $1,2
-div $1,6
-mul $1,3
-add $1,1

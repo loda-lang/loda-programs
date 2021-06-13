@@ -16,8 +16,7 @@ lpb $12
     mov $0,$6
     sub $8,1
     add $0,$8
-    sub $0,1
-    max $0,0
+    trn $0,1
     cal $0,313692 ; Coordination sequence Gal.5.136.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
     mul $0,2
     cal $0,55495 ; Numbers n such that there exists a pair of mutually orthogonal Latin squares of order n.

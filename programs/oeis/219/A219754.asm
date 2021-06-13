@@ -22,8 +22,7 @@ lpb $6
       sub $11,1
       lpb $3
         mov $0,$2
-        sub $0,1
-        max $0,0
+        trn $0,1
         sub $3,1
         cal $0,91596 ; Expansion of x(1-2x^2)/(1-x-2x^2)^2.
         div $0,2

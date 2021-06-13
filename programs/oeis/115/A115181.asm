@@ -15,8 +15,7 @@ lpb $33
     mov $0,$27
     sub $29,1
     add $0,$29
-    sub $0,1
-    max $0,0
+    trn $0,1
     cal $0,160544 ; Not divisible by 19.
     div $0,4
     mul $0,2

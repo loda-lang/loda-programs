@@ -4,6 +4,5 @@
 cal $0,34586 ; Log_2 of dimension of an irreducible Z_2 graded H-module for Clifford algebra Cl_n.
 cal $0,170108 ; Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^38 = I.
 mov $1,$0
-mul $1,15
-div $1,45
+div $1,3
 mul $1,2

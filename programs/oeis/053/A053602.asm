@@ -10,7 +10,4 @@ sub $1,1
 sub $0,$1
 cal $0,118658 ; a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
 mov $1,$0
-add $1,9
-mul $1,2
-sub $1,18
-div $1,4
+div $1,2

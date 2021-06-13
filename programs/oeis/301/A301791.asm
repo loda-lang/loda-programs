@@ -8,6 +8,5 @@ cal $0,78642 ; Numbers with two representations as the sum of two Fibonacci numb
 mul $1,2
 sub $0,$1
 mov $1,$0
-sub $1,1
 div $1,2
-add $1,2
+add $1,1

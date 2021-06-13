@@ -6,6 +6,4 @@ mul $0,4
 sub $0,1
 cal $0,6579 ; Sum of gcd(n,k) for k = 1 to n-1.
 mov $1,$0
-sub $1,4
 div $1,4
-add $1,1

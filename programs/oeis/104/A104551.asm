@@ -3,8 +3,7 @@
 
 lpb $0
   mov $2,$0
-  sub $2,1
-  max $2,0
+  trn $2,1
   cal $2,128057 ; Expansion of (1+x)/sqrt(1+4x^2).
   trn $0,2
   add $1,$2

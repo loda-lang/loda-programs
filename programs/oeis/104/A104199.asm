@@ -4,8 +4,5 @@
 cal $0,72668 ; Numbers one less than composite numbers.
 sub $0,1
 cal $0,70320 ; Max( phi(k) : k=1,2,3,...,n ).
+add $0,1
 mov $1,$0
-sub $1,2
-div $1,2
-mul $1,2
-add $1,3

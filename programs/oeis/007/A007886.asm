@@ -9,8 +9,7 @@ lpb $29
   mov $0,$27
   sub $29,1
   sub $0,$29
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,54243 ; Number of partitions of n into distinct positive parts <= n, where parts are combined by XOR.
   add $2,$0
   add $28,$2

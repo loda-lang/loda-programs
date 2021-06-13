@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,92780 ; Sum(prime(k),k=1..n)^2-1.
   add $0,1
   mov $2,$3

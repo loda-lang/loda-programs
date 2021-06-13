@@ -3,7 +3,6 @@
 
 dif $0,2
 cal $0,40139 ; Continued fraction for sqrt(152).
+div $0,2
 mov $1,$0
-mul $1,8
-div $1,16
 mul $1,3

@@ -3,7 +3,6 @@
 
 mov $2,$0
 mul $2,2
-mov $3,$2
-add $3,1
-cal $3,69038 ; Expansion of x*(1+x)^4/(1-x)^6.
-add $1,$3
+mov $1,$2
+add $1,1
+cal $1,69038 ; Expansion of x*(1+x)^4/(1-x)^6.

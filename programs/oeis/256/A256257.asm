@@ -6,11 +6,6 @@ lpb $0
   div $1,2
   sub $0,$1
 lpe
-mul $1,2
+mov $1,2
 pow $1,$0
-add $1,1
-mul $1,2
-sub $1,4
-div $1,2
 mul $1,6
-add $1,6

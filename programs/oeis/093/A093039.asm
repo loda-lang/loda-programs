@@ -7,7 +7,3 @@ add $0,$1
 div $0,2
 cal $0,189374 ; Expansion of 1/((1-x)^5*(x^2+x+1)^3).
 mov $1,$0
-mul $1,2
-sub $1,2
-div $1,2
-add $1,1

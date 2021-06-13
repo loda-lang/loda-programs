@@ -5,5 +5,3 @@ mul $0,6
 add $0,2
 cal $0,11693 ; A binary m-sequence: expansion of reciprocal of x^8+x^5+x^4+x^3+1.
 mov $1,$0
-add $1,$0
-div $1,2
