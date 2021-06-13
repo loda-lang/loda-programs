@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1962 ; A Beatty sequence: floor(n * (sqrt(5) + 3)).
   sub $0,1
+  cal $2,1962 ; A Beatty sequence: floor(n * (sqrt(5) + 3)).
   add $1,$2
 lpe
 add $1,5

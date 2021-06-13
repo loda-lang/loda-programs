@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
   sub $0,1
+  cal $2,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
   mov $3,$2
   sub $3,1
   min $3,1

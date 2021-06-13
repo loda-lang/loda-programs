@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,96946 ; Ninth column of (1,5)-Pascal triangle A096940.
   sub $0,1
+  cal $2,96946 ; Ninth column of (1,5)-Pascal triangle A096940.
   add $1,$2
 lpe
 add $1,5

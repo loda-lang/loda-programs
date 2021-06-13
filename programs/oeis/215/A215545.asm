@@ -3,7 +3,6 @@
 
 mul $0,5
 trn $0,4
-mov $1,1
 cal $0,115129 ; Partial sums of A005587. Fourth column of triangle A115127.
-mul $1,$0
+mov $1,$0
 sub $1,14

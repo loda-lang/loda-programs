@@ -21,8 +21,8 @@ lpb $12
       sub $0,2
       mov $2,$0
       max $2,0
-      add $3,$0
       cal $2,87278 ; Distance to nearest square is not greater than 1.
+      add $3,$0
       add $3,$2
     lpe
     mov $1,$3

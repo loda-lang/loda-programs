@@ -6,8 +6,7 @@ sub $0,1
 pow $0,14
 mov $5,$4
 lpb $0
-  sub $0,2
-  max $0,0
+  trn $0,2
   trn $1,1
   add $2,8
   mov $3,$1

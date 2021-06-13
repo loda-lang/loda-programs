@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,5985 ; Length of longest trail (i.e., path with all distinct edges) on the edges of an n-cube.
   sub $0,1
+  cal $2,5985 ; Length of longest trail (i.e., path with all distinct edges) on the edges of an n-cube.
   add $1,$2
 lpe

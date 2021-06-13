@@ -4,8 +4,8 @@
 cal $0,40 ; The prime numbers.
 lpb $0
   add $1,$0
-  mul $1,2
   cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,2
   div $1,16
   sub $1,$0
 lpe

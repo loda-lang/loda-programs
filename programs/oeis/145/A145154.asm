@@ -9,8 +9,8 @@ lpb $7
   sub $7,1
   add $0,$7
   trn $0,1
-  add $1,2
   cal $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
+  add $1,2
   mul $1,$0
   mul $1,2
   sub $1,3

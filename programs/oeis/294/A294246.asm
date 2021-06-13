@@ -10,8 +10,8 @@ lpb $8
   sub $0,$8
   lpb $0
     mov $2,$0
-    add $5,$0
     cal $2,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+    add $5,$0
     mov $0,$2
     mov $4,$2
     min $4,1

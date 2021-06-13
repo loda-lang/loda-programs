@@ -4,7 +4,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  cal $2,101092 ; Second partial sums of fifth powers (A000584).
   sub $0,1
+  cal $2,101092 ; Second partial sums of fifth powers (A000584).
   add $1,$2
 lpe

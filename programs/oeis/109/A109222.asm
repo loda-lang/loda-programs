@@ -8,8 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,158943 ; INVERT transform of A027656: (1, 0, 2, 0, 3, 0, 4, 0, 5, ...).
   add $1,$0
 lpe

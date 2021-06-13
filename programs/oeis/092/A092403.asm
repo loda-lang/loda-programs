@@ -8,9 +8,9 @@ lpb $4
   add $0,$4
   mov $5,$0
   sub $0,1
+  mov $3,$4
   max $5,0
   cal $5,332569 ; a(n) = Sum_{k=1..n} floor(n/k) * ceiling(n/k).
-  mov $3,$4
   sub $5,1
   mul $3,$5
   add $1,$3

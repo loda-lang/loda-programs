@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,183142 ; Floor(n/s), where s=(3+sqrt(3))/2.
   sub $0,1
+  cal $2,183142 ; Floor(n/s), where s=(3+sqrt(3))/2.
   add $1,$2
 lpe

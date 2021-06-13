@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,253947 ; a(n) = 6*binomial(n+1,7).
   sub $0,1
+  cal $2,253947 ; a(n) = 6*binomial(n+1,7).
   pow $2,2
   add $1,$2
 lpe

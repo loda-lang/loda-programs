@@ -4,8 +4,8 @@
 mov $2,$0
 mov $0,1
 add $0,$2
-add $2,2
 cal $0,288963 ; Number of 5-cycles in the n X n rook graph.
+add $2,2
 div $0,$2
 mov $1,$0
 div $1,12

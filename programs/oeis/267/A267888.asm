@@ -6,8 +6,8 @@ lpb $0
   mov $2,$0
   mov $0,$1
   mov $1,0
-  add $3,2
   cal $2,2446 ; a(n) = 2^(2*n+1) - 2.
+  add $3,2
   sub $0,$3
   add $1,$2
 lpe
