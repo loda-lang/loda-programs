@@ -7,8 +7,7 @@ lpb $3
   mov $0,$4
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,28290 ; Expansion of 1/((1-x)(1-x^2)(1-x^3)(1-x^5)(1-x^8)).
   mov $2,$3
   mul $2,$0

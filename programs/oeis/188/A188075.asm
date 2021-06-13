@@ -4,8 +4,7 @@
 lpb $0
   mov $1,$0
   mov $0,0
-  sub $1,1
-  max $1,0
+  trn $1,1
   cal $1,188089 ; Positions of 0 in the zero-one sequence [nr+4r]-[nr]-[4r], where r=sqrt(3), n>=1.
 lpe
 add $1,4

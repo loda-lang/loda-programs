@@ -4,8 +4,6 @@
 add $0,1
 cal $0,3063 ; a(n) = 3^(n-1)-2^n.
 mov $1,$0
-mul $1,6
-add $1,12
-div $1,12
-mul $1,4
+add $1,1
+mul $1,2
 add $1,1

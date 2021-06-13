@@ -4,8 +4,4 @@
 add $0,1
 cal $0,1076 ; Denominators of continued fraction convergents to sqrt(5).
 dif $0,4
-mul $0,2
 mov $1,$0
-sub $1,2
-div $1,2
-add $1,1

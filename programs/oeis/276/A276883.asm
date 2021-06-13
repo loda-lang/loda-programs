@@ -4,8 +4,7 @@
 lpb $0
   mov $1,$0
   mov $0,0
-  sub $1,1
-  max $1,0
+  trn $1,1
   cal $1,188085 ; Positions of 1 in A188083; complement of A188084.
 lpe
 add $1,1

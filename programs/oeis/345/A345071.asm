@@ -3,11 +3,5 @@
 
 mul $0,2
 cal $0,111254 ; a(n) = Prime[n+2]+Prime[n]+1.
-add $2,$0
-add $2,1
-mov $3,5
-lpb $3
-  mov $1,$2
-  div $3,2
-lpe
-sub $1,2
+mov $1,$0
+sub $1,1

@@ -3,7 +3,5 @@
 
 cal $0,53738 ; If k is in sequence then 2*k and 2*k+1 are not (and 1 is in the sequence); numbers with an odd number of digits in binary.
 cal $0,128309 ; 2*A000069(n).
-add $1,$0
-sub $1,3
+mov $1,$0
 div $1,2
-add $1,2

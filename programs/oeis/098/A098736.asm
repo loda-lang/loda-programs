@@ -8,8 +8,3 @@ lpb $0
   mod $2,10
   mul $1,$2
 lpe
-add $3,1
-add $1,$3
-add $1,1
-add $1,$3
-sub $1,3

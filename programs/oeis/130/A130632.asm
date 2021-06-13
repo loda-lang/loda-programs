@@ -3,7 +3,6 @@
 
 cal $0,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
 pow $0,2
-sub $0,1
-max $0,0
+trn $0,1
 cal $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
 mov $1,$0

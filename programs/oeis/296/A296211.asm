@@ -3,8 +3,7 @@
 
 lpb $0
   cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $0,2
-  max $0,0
+  trn $0,2
   cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 lpe
 mov $1,$0

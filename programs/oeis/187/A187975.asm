@@ -3,17 +3,15 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
   cal $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-  mul $0,151358
-  mov $3,$0
-  sub $3,454074
-  div $3,151358
-  mul $3,5
-  add $3,12
-  add $1,$3
+  mov $4,$0
+  sub $4,3
+  mul $4,5
+  add $4,12
+  add $1,$4
 lpe

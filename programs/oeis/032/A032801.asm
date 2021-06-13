@@ -8,8 +8,7 @@ lpb $8
   mov $0,$6
   sub $8,1
   sub $0,$8
-  sub $0,3
-  max $0,0
+  trn $0,3
   trn $2,4
   cal $0,166515 ; Partial sum of A166514.
   add $2,$0

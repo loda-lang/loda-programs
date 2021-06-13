@@ -4,6 +4,5 @@
 cal $0,10158 ; Continued fraction for sqrt(85).
 cal $0,64995 ; A Beatty sequence from Khintchine's constant (A002210).
 mov $1,$0
-mul $1,87058
-div $1,174116
+div $1,2
 sub $1,1

@@ -8,8 +8,7 @@ lpb $17
   mov $0,$15
   sub $17,1
   add $0,$17
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,62298 ; Number of nonprimes <= n.
   add $1,$0
   mul $1,$0

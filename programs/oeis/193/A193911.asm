@@ -16,8 +16,7 @@ lpb $11
     mov $0,$6
     sub $8,1
     sub $0,$8
-    sub $0,1
-    max $0,0
+    trn $0,1
     cal $0,97110 ; Expansion of (1 + 2x - 2x^3) / (1 - 3x^2 + 2x^4).
     add $7,$0
   lpe

@@ -7,8 +7,7 @@ lpb $5
   mov $0,$2
   sub $5,1
   add $0,$5
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,6053 ; a(n) = a(n-1) + 2*a(n-2) - a(n-3).
   mov $3,$5
   mov $4,$0

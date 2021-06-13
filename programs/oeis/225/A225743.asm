@@ -3,8 +3,7 @@
 
 cal $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
 cal $0,59134 ; A hierarchical sequence (W2{3}c - see A059126).
-mul $0,2
-add $1,$0
-mul $1,8
-div $1,336
+mov $1,$0
+mul $1,2
+div $1,42
 add $1,1

@@ -3,13 +3,10 @@
 
 lpb $0
   mov $2,$0
-  sub $2,1
-  max $2,0
+  trn $2,1
   cal $2,291008 ; p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 7*S^2.
   sub $0,1
   add $1,$2
   add $1,$2
 lpe
-div $1,14
-mul $1,14
 add $1,2

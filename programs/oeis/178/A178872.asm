@@ -11,8 +11,7 @@ lpb $8
   sub $0,1
   lpb $0
     mov $2,$0
-    sub $2,1
-    max $2,0
+    trn $2,1
     cal $2,33140 ; Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,0.
     mov $0,0
   lpe

@@ -1,6 +1,8 @@
 ; A293067: Sum of values of vertices of type A at level n of the hyperbolic Pascal pyramid PP_(4,5).
 ; 0,0,2,6,18,58,194,658,2242,7650,26114,89154,304386,1039234,3548162,12114178,41360386,141213186,482131970,1646101506,5620142082,19188365314,65513177090,223675977730,763677556738,2607358271490,8902077972482,30393595346946,103770225442818,354293711077378,1209634393423874,4129950151540738
 
-cal $0,292295 ; Sum of values of vertices of type A at level n of the hyperbolic Pascal pyramid.
-div $0,3
+trn $0,1
+cal $0,87161 ; Records in A087159, i.e., A087159(a(n)) = n, and satisfies the recurrence a(n+3) = 5*a(n+2) - 6* a(n+1) + 2*a(n) with a(1) = 1, a(2) = 2, and a(3) = 4.
+mul $0,2
 mov $1,$0
+sub $1,2

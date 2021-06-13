@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,92809 ; Expansion of (1+x-x^2) / ((1-x^2)*(1-4*x^2)).
   mov $2,$3
   mul $2,$0

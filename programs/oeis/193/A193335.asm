@@ -5,6 +5,4 @@ cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(
 sub $0,1
 cal $0,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
 mov $1,$0
-sub $1,2
 div $1,2
-add $1,1

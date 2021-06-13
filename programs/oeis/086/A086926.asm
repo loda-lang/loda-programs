@@ -8,6 +8,4 @@ cal $0,22362 ; Fibonacci sequence beginning 0, 28.
 mul $0,2
 mul $0,$1
 mov $1,$0
-div $1,2
-mul $1,2
 div $1,112

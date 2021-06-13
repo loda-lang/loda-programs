@@ -7,8 +7,7 @@ lpb $4
   mov $0,$5
   sub $4,1
   add $0,$4
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,104859 ; Partial sums of A001764.
   mov $2,$4
   mov $3,$0

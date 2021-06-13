@@ -8,8 +8,7 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
   mov $4,$0
   sub $4,1

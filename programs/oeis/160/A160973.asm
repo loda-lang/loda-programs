@@ -6,6 +6,4 @@ mul $0,2
 add $0,8
 cal $0,321014 ; Number of divisors of n which are greater than 3.
 mov $1,$0
-mul $1,1073741824
-sub $1,1073741824
-div $1,1073741824
+sub $1,1

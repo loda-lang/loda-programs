@@ -15,8 +15,7 @@ lpb $10
     mov $0,$4
     sub $6,1
     add $0,$6
-    sub $0,1
-    max $0,0
+    trn $0,1
     cal $0,135711 ; Minimal perimeter of a polyhex with n cells.
     mov $1,$0
     mov $7,$6

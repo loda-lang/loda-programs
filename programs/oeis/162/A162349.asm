@@ -4,6 +4,5 @@
 cal $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
 cal $0,199114 ; 11*3^n+1.
 mov $1,$0
-div $1,22
-mul $1,6
-add $1,3
+div $1,11
+mul $1,3

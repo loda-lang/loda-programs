@@ -15,8 +15,7 @@ lpb $8
     mov $0,$2
     sub $4,1
     add $0,$4
-    sub $0,1
-    max $0,0
+    trn $0,1
     cal $0,188070 ; Positions of 1 in A188068; complement of A188069.
     mov $1,$0
     mov $5,$4

@@ -8,8 +8,7 @@ lpb $5
   sub $5,1
   sub $0,$5
   pow $0,2
-  sub $0,1
-  max $0,0
+  trn $0,1
   add $2,10197
   cal $0,89013 ; a(n) = (A088567(8n) mod 2).
   add $0,$2

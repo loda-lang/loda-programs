@@ -14,8 +14,7 @@ lpb $33
     mov $0,$27
     sub $29,1
     add $0,$29
-    sub $0,1
-    max $0,0
+    trn $0,1
     cal $0,1968 ; Wythoff game.
     mov $1,$0
     mov $30,$29

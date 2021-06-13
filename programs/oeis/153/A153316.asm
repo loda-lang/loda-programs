@@ -5,7 +5,3 @@ add $0,1
 cal $0,1077 ; Numerators of continued fraction convergents to sqrt(5).
 dif $0,2
 mov $1,$0
-mul $1,2
-div $1,4
-mul $1,2
-add $1,1
