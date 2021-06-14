@@ -4,6 +4,6 @@
 mov $1,$0
 lpb $0
   mov $1,$0
-  cal $1,46022 ; Primes together with 1 and 4.
   mov $0,2
+  cal $1,46022 ; Primes together with 1 and 4.
 lpe

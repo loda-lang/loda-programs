@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,52150 ; Partial sums of A000340, second partial sums of A003462.
   sub $0,1
+  cal $2,52150 ; Partial sums of A000340, second partial sums of A003462.
   add $1,$2
 lpe
 add $1,2

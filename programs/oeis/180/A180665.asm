@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
   trn $0,2
+  cal $2,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
   add $1,$2
 lpe

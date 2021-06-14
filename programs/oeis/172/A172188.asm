@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,45410 ; Primes congruent to {3, 5} mod 6.
   sub $0,1
+  cal $1,45410 ; Primes congruent to {3, 5} mod 6.
   add $2,$1
 lpe
 mul $1,$2

@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  sub $0,1
   div $2,2
   cal $2,5585 ; 5-dimensional pyramidal numbers: n(n+1)(n+2)(n+3)(2n+3)/5!.
-  sub $0,1
   mul $2,2
   add $1,$2
 lpe

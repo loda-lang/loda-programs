@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,74816 ; a(n) = 3^A001221(n) = 3^omega(n).
   sub $0,1
+  cal $2,74816 ; a(n) = 3^A001221(n) = 3^omega(n).
   add $1,$2
 lpe
 div $1,3

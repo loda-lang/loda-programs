@@ -5,10 +5,10 @@ mov $1,$0
 mov $2,$0
 mov $3,$0
 trn $0,1
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 sub $3,1
 mul $3,$1
 add $1,1
 mul $1,$3
-cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mul $1,$0
 add $1,$2

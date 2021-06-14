@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
   sub $0,1
+  cal $2,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
   add $1,$2
 lpe
 add $1,1

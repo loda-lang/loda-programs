@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,244992 ; Characteristic function for A244991: a(n) = A000035(A061395(n)).
   sub $0,1
+  cal $2,244992 ; Characteristic function for A244991: a(n) = A000035(A061395(n)).
   add $1,$2
 lpe

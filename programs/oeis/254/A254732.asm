@@ -3,8 +3,8 @@
 
 mov $2,$0
 add $0,1
-cal $2,19554 ; Smallest number whose square is divisible by n.
 mov $1,1
+cal $2,19554 ; Smallest number whose square is divisible by n.
 add $2,1
 add $0,$2
 add $1,$0

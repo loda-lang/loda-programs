@@ -5,11 +5,11 @@ mul $0,2
 mov $3,$0
 lpb $0
   mov $1,$0
+  dif $0,2
   cmp $2,0
   add $3,$2
   mod $1,$3
   cal $1,92535 ; G.f.: (1+x^2)*(1+x^3)/((1-x)*(1-x^2)).
-  dif $0,2
   mul $1,2
   min $3,1
 lpe

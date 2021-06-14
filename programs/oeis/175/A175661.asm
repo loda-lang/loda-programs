@@ -7,10 +7,10 @@ lpb $4
   mov $0,$5
   sub $4,1
   add $0,$4
+  mov $2,$4
   mov $3,$0
   max $3,0
   cal $3,175660 ; Eight bishops and one elephant on a 3 X 3 chessboard. a(n) = 2^(n+2) - 3*F(n+2).
-  mov $2,$4
   sub $3,1
   mul $2,$3
   add $1,$2

@@ -7,8 +7,7 @@ lpb $4
   mov $0,$2
   sub $4,1
   add $0,$4
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,294015 ; Sum of the even divisors of 2n, minus the (n-1)st odd number.
   div $0,2
   mov $3,$0

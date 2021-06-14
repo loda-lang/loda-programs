@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,87172 ; Greatest Fibonacci number that does not exceed n.
   sub $0,1
+  cal $2,87172 ; Greatest Fibonacci number that does not exceed n.
   add $1,$2
 lpe
 add $1,1

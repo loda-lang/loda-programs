@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
   trn $0,2
+  cal $2,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
   add $1,$2
 lpe

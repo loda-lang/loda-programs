@@ -4,9 +4,9 @@
 add $0,1
 lpb $0
   mov $2,$0
+  mod $0,2
   trn $2,2
   cal $2,191007 ; Another renewal type of sequence: Let X, X(1),X(2),... denote independent random variables with pdf P(X=1) = P(X=2) = P(X=4) = 1/3. Let N(x) denote the first value of k such that X(1)*X(2)...*X(k) > x, and let H(x) = E(N(x)). The sequence a(n) is given by a(n) = 2^(n+1)*H(2^n).
-  mod $0,2
   add $1,$2
 lpe
 div $1,3

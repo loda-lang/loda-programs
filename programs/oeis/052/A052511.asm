@@ -3,8 +3,8 @@
 
 mov $2,$0
 cal $0,40 ; The prime numbers.
+sub $0,1
 add $2,1
 cal $2,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
-sub $0,1
 sub $0,$2
 mov $1,$0

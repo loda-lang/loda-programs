@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,143731 ; Characteristic function of numbers n with at least two distinct prime factors.
   sub $0,1
+  cal $2,143731 ; Characteristic function of numbers n with at least two distinct prime factors.
   add $1,$2
 lpe

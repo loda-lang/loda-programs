@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,156707 ; For all numbers k(n) congruent to +1 or -1 (mod 4) starting with k(n) = {3,5,7,9,11,...}, a(k(n)) is the congruence (mod 4) if k(n) is prime and 0 if k(n) is composite.
   sub $0,1
+  cal $2,156707 ; For all numbers k(n) congruent to +1 or -1 (mod 4) starting with k(n) = {3,5,7,9,11,...}, a(k(n)) is the congruence (mod 4) if k(n) is prime and 0 if k(n) is composite.
   add $1,$2
 lpe
 sub $1,1

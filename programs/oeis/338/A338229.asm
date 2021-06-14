@@ -4,7 +4,7 @@
 lpb $0
   sub $1,$0
   mov $2,$0
-  cal $2,190050 ; Expansion of ((1-x)*(3*x^2-3*x+1))/(1-2*x)^3
   sub $0,1
+  cal $2,190050 ; Expansion of ((1-x)*(3*x^2-3*x+1))/(1-2*x)^3
   add $1,$2
 lpe

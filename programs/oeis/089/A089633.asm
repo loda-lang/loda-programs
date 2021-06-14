@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,57728 ; A triangular table of decreasing powers of two (with first column all ones).
   sub $0,1
+  cal $2,57728 ; A triangular table of decreasing powers of two (with first column all ones).
   add $1,$2
 lpe

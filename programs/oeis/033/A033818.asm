@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $1,14739 ; Expansion of (1+x^2)/(1-2*x+x^3).
-add $0,$1
-mov $1,$0
+add $1,$0
 add $1,2

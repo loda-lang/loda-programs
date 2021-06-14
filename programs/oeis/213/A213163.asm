@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,1871 ; Expansion of 1/(1 - 3*x + x^2)^2.
   sub $0,1
+  cal $1,1871 ; Expansion of 1/(1 - 3*x + x^2)^2.
   add $2,$1
   mov $1,$2
 lpe

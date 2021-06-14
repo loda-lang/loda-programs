@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,51924 ; a(n) = binomial(2*n,n) - binomial(2*n-2,n-1); or (3n-2)*C(n-1), where C = Catalan numbers (A000108).
   sub $0,1
+  cal $2,51924 ; a(n) = binomial(2*n,n) - binomial(2*n-2,n-1); or (3n-2)*C(n-1), where C = Catalan numbers (A000108).
   add $1,$2
   mov $3,$0
   cmp $3,0

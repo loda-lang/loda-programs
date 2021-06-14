@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  add $3,1
   cal $2,103609 ; Fibonacci numbers repeated (cf. A000045).
+  add $3,1
   sub $0,$3
   add $1,$2
   min $3,1

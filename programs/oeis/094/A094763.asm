@@ -3,6 +3,6 @@
 
 mov $1,2
 lpb $0
-  cal $1,94761 ; a(n) = n + (square excess of n).
   sub $0,1
+  cal $1,94761 ; a(n) = n + (square excess of n).
 lpe

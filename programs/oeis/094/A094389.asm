@@ -7,11 +7,11 @@ lpb $0
   mov $2,$0
   add $5,240400
   lpb $5
-    max $4,0
-    mov $5,1
-    cal $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
     add $0,1
+    max $4,0
+    cal $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
     cmp $0,$4
+    mov $5,1
     lpb $2
       mov $0,2
       mod $2,9

@@ -22,8 +22,8 @@ lpb $32
     add $1,$4
     mul $0,$1
     div $0,2
-    div $5,$1
     cal $0,10013 ; a(0) = 1, a(n) = 23*n^2 + 2 for n>0.
+    div $5,$1
     sub $1,$5
     sub $0,$1
     mov $4,$0

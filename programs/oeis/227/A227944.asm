@@ -4,8 +4,8 @@
 mov $2,$0
 mov $3,$0
 lpb $3
-  cal $2,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
   add $1,1
+  cal $2,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
   sub $2,1
   mov $3,$2
 lpe

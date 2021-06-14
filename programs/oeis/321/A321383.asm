@@ -3,10 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $2,1
-  max $2,0
-  cal $2,156619 ; Numbers congruent to {7, 18} mod 25.
   trn $0,2
+  trn $2,1
+  cal $2,156619 ; Numbers congruent to {7, 18} mod 25.
   add $1,$2
 lpe
 mul $1,2

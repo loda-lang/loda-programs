@@ -5,9 +5,9 @@ mov $1,$0
 lpb $0
   sub $0,1
   mov $2,$0
+  mul $0,$3
   max $2,0
   cal $2,257055 ; a(n) = n*(n + 1)*(n^2 - n + 3)/6.
-  mul $0,$3
   add $1,$2
 lpe
 mul $1,4

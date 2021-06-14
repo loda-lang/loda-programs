@@ -4,8 +4,8 @@
 cal $0,40 ; The prime numbers.
 lpb $0
   sub $0,1
-  add $1,2
   cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $1,2
 lpe
 sub $1,2
 div $1,2

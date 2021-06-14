@@ -4,8 +4,8 @@
 mov $1,7
 lpb $0
   mov $2,$0
-  cal $2,307395 ; Expansion of 1/((1 - x) * ((1 - x)^3 + x^3)).
   sub $0,1
+  cal $2,307395 ; Expansion of 1/((1 - x) * ((1 - x)^3 + x^3)).
   add $1,$2
 lpe
 sub $1,6

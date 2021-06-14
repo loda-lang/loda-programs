@@ -4,11 +4,11 @@
 sub $0,1
 mov $3,$0
 max $0,0
+cal $0,5171 ; 0 if n is prime else 1.
 mod $3,2
 mov $1,$3
-mov $2,$3
-cal $0,5171 ; 0 if n is prime else 1.
 bin $1,$0
+mov $2,$3
 mul $2,$3
 sub $4,$2
 sub $1,$4

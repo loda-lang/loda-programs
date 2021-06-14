@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,167020 ; a(n) = 1 iff 6n-1 is prime.
   sub $0,1
+  cal $2,167020 ; a(n) = 1 iff 6n-1 is prime.
   add $1,$2
 lpe
 add $1,1

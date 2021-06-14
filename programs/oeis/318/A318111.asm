@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,4006 ; a(n) = C(n,1) + C(n,2) + C(n,3), or n*(n^2 + 5)/6.
   mod $0,3
+  cal $1,4006 ; a(n) = C(n,1) + C(n,2) + C(n,3), or n*(n^2 + 5)/6.
 lpe
 add $1,1

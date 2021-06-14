@@ -5,8 +5,8 @@ add $0,1
 mov $3,3
 mov $4,$0
 lpb $3,2
-  cal $4,6370 ; The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
   mod $3,2
+  cal $4,6370 ; The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
 lpe
 mov $1,$4
 mul $1,2

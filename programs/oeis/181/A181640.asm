@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,118015 ; a(n) = floor(n^2/5).
   sub $0,1
+  cal $2,118015 ; a(n) = floor(n^2/5).
   add $1,$2
 lpe

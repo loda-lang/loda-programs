@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,42968 ; a(n) = 1 + n + floor(n/3).
   trn $0,4
+  cal $2,42968 ; a(n) = 1 + n + floor(n/3).
   add $1,$2
 lpe

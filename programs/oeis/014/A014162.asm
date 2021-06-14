@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,192748 ; Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
   trn $0,3
+  cal $2,192748 ; Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
   add $1,$2
 lpe

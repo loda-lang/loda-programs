@@ -42,9 +42,9 @@ lpb $23
           add $0,$8
           lpb $0
             mov $2,$0
+            trn $0,2
             max $2,0
             cal $2,100320 ; A Catalan transform of (1 + 2*x)/(1 - 2*x).
-            trn $0,2
             add $3,$2
           lpe
           mov $1,$3

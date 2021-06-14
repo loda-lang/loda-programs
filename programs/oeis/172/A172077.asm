@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,51868 ; 16-gonal (or hexadecagonal) numbers: a(n) = n*(7*n-6).
   sub $0,1
+  cal $2,51868 ; 16-gonal (or hexadecagonal) numbers: a(n) = n*(7*n-6).
   add $3,$2
   add $1,$3
 lpe

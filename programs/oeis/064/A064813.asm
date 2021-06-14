@@ -5,6 +5,6 @@ cal $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y >
 mov $1,$0
 add $1,$0
 sub $0,2
-div $1,2
 cal $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
+div $1,2
 bin $1,$0

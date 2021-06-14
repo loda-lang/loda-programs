@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,56829 ; Nearest integer to n^2/6.
   sub $0,1
+  cal $2,56829 ; Nearest integer to n^2/6.
   add $1,$2
 lpe

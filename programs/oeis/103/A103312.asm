@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $1,$0
   div $0,50405
+  trn $0,9
   max $1,0
   cal $1,57681 ; a(n) = Sum_{j=0..floor(n/3)} (-1)^j*binomial(n,3*j).
-  trn $0,9
 lpe

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,248333 ; Number of unit squares enclosed by n lattice points in and along the first quadrant of the coordinate plane starting from (0,0) and moving along each square gnomon starting on the y-axis and ending on the x-axis.
   mov $0,0
+  cal $2,248333 ; Number of unit squares enclosed by n lattice points in and along the first quadrant of the coordinate plane starting from (0,0) and moving along each square gnomon starting on the y-axis and ending on the x-axis.
   add $1,$2
   add $1,1
 lpe

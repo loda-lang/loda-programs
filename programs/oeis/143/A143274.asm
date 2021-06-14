@@ -3,9 +3,9 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
-  cal $2,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
   mov $1,$0
+  mov $2,$0
   mov $0,0
+  cal $2,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
   mul $1,$2
 lpe

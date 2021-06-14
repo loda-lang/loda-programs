@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,254142 ; a(n) = (9*n+10)*binomial(n+9,9)/10.
   sub $0,1
+  cal $2,254142 ; a(n) = (9*n+10)*binomial(n+9,9)/10.
   add $1,$2
 lpe
 add $1,1

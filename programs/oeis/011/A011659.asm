@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,3
-  max $0,0
+  trn $0,3
   cal $0,98578 ; a(n) = Sum_{k=0..floor(n/4)} C(n-3*k,k+1).
   mov $2,$3
   mul $2,$0

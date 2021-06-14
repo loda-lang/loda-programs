@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,25810 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^10)) in powers of x.
   sub $0,1
+  cal $2,25810 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^10)) in powers of x.
   add $1,$2
 lpe
 add $1,1

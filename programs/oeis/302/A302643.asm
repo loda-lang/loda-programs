@@ -4,8 +4,8 @@
 sub $0,2
 lpb $0
   mov $2,$0
+  sub $0,2
   max $2,0
   cal $2,280710 ; Characteristic function of squarefree semiprimes.
-  sub $0,2
   add $1,$2
 lpe

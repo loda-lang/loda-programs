@@ -14,10 +14,10 @@ lpb $7
   add $3,$0
   sub $3,1
   mov $4,$0
-  add $4,$3
   cal $0,286751 ; Positions of 1 in A286749; complement of A286750.
   sub $2,1
   add $0,$2
+  add $4,$3
   mov $2,$4
   sub $2,$0
   add $6,$2

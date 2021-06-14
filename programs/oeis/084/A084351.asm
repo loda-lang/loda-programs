@@ -6,9 +6,9 @@ mov $1,$0
 mul $0,2
 sub $0,$1
 lpb $0
-  cal $1,109045 ; a(n) = lcm(n,4).
   div $0,2
   sub $0,1
   add $0,$2
+  cal $1,109045 ; a(n) = lcm(n,4).
   mov $2,$1
 lpe

@@ -7,8 +7,7 @@ lpb $4
   mov $0,$2
   sub $4,1
   add $0,$4
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,187393 ; a(n) = floor(r*n), where r = 4 + sqrt(8); complement of A187394.
   mov $3,$0
   mov $5,$4

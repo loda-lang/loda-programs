@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  cmp $3,0
-  add $4,$3
   cal $2,60681 ; Largest difference between consecutive divisors of n (ordered by size).
   mov $0,$2
+  cmp $3,0
+  add $4,$3
   min $4,1
   add $1,$4
 lpe

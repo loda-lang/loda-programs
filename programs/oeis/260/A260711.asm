@@ -10,9 +10,9 @@ lpb $0
   add $3,$4
   div $0,$3
   mov $2,$0
+  mov $0,0
   max $2,0
   cal $2,82662 ; Numbers k such that the odd part of k is less than sqrt(2k).
-  mov $0,0
   add $1,$2
 lpe
 mul $1,8

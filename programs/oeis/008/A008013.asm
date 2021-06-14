@@ -5,9 +5,9 @@ mov $1,1
 mov $4,$0
 lpb $0
   mov $1,$0
-  add $3,2
-  cal $1,8363 ; a(n) = floor(n/5)*ceiling(n/5).
   mov $0,0
+  cal $1,8363 ; a(n) = floor(n/5)*ceiling(n/5).
+  add $3,2
   mul $1,$3
   add $1,2
 lpe

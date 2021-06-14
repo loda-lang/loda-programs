@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,100047 ; A Chebyshev transform of the Fibonacci numbers.
   trn $0,4
+  cal $2,100047 ; A Chebyshev transform of the Fibonacci numbers.
   add $1,$2
 lpe

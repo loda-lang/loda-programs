@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1400 ; Number of partitions of n into at most 4 parts.
   sub $0,2
+  cal $2,1400 ; Number of partitions of n into at most 4 parts.
   add $1,$2
 lpe
 add $1,1

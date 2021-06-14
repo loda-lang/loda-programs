@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,65363 ; Sum of balanced ternary digits in n. Replace 3^k with 1 in balanced ternary expansion of n.
   sub $0,1
+  cal $2,65363 ; Sum of balanced ternary digits in n. Replace 3^k with 1 in balanced ternary expansion of n.
   add $1,$2
 lpe

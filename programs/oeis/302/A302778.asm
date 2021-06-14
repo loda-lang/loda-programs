@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,302777 ; a(n) = 1 if n is of the form p^(2^k) where p is prime and k >= 0, otherwise 0.
   sub $0,1
+  cal $2,302777 ; a(n) = 1 if n is of the form p^(2^k) where p is prime and k >= 0, otherwise 0.
   add $1,$2
 lpe

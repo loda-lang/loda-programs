@@ -3,9 +3,9 @@
 
 lpb $0
   mov $1,$0
+  cmp $0,$2
   trn $1,1
   cal $1,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-  cmp $0,$2
 lpe
 add $1,1
 mod $1,2

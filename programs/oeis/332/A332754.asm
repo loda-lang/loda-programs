@@ -11,9 +11,9 @@ lpb $8
   sub $0,1
   lpb $0
     mov $2,$0
+    trn $0,2
     max $2,0
     cal $2,14495 ; Central binomial coefficient - 1.
-    trn $0,2
     add $3,$2
     add $3,1
   lpe

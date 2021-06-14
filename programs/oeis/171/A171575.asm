@@ -11,8 +11,8 @@ add $4,$2
 mod $4,$4
 lpb $0
   mov $1,$0
-  cal $1,109763 ; Primes repeated.
   mov $0,$4
+  cal $1,109763 ; Primes repeated.
   mov $4,$1
   add $4,1
 lpe

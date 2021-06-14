@@ -3,11 +3,11 @@
 
 mov $2,$0
 mov $3,$0
-lpb $2
-  mov $0,$3
-  sub $2,1
-  sub $0,$2
-  cal $0,320226 ; Number of integer partitions of n whose non-1 parts are all equal.
+lpb $3
+  mov $0,$2
+  sub $3,1
+  sub $0,$3
   sub $0,1
+  cal $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
   add $1,$0
 lpe

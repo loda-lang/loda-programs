@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,8724 ; a(n) = floor(n^2/12).
   sub $0,1
+  cal $2,8724 ; a(n) = floor(n^2/12).
   add $1,$2
 lpe

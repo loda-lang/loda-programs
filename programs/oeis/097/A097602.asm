@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,4274 ; 0, 2 and the odd numbers.
   trn $0,9
+  cal $2,4274 ; 0, 2 and the odd numbers.
   add $1,$2
 lpe
 add $1,1

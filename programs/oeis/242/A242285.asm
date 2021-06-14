@@ -4,8 +4,8 @@
 lpb $0
   add $0,2
   mov $2,$0
-  cal $2,256911 ; Number of terms in the enhanced triangular-number representation of n.
   mov $0,1
+  cal $2,256911 ; Number of terms in the enhanced triangular-number representation of n.
   add $3,$2
   mul $0,$3
 lpe

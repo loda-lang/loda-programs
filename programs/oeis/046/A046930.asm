@@ -7,10 +7,10 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
+  mov $2,$3
   mov $4,$0
   max $4,0
   cal $4,1043 ; Numbers that are the sum of 2 successive primes.
-  mov $2,$3
   sub $4,2
   mul $4,12
   mul $2,$4

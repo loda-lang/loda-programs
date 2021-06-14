@@ -19,9 +19,9 @@ lpb $3
       mul $0,2
       div $0,4
       max $0,0
-      sub $8,1
       cal $0,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
       mov $4,$0
+      sub $8,1
     lpe
     min $7,1
     mul $7,$4

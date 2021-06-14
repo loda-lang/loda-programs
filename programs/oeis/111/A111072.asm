@@ -4,8 +4,8 @@
 mov $1,3
 lpb $0
   mov $2,$0
-  cal $2,8954 ; Final digit of triangular number n*(n+1)/2.
   sub $0,1
+  cal $2,8954 ; Final digit of triangular number n*(n+1)/2.
   add $1,$2
 lpe
 sub $1,3

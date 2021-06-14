@@ -11,9 +11,9 @@ lpb $8
   sub $0,1
   lpb $0
     mov $2,$0
+    trn $0,2
     max $2,0
     cal $2,115102 ; a(0)=2, a(1)=8, a(n)=a(n-1)+2*a(n-2).
-    trn $0,2
     add $3,$2
   lpe
   mov $1,$3

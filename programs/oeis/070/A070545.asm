@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,325964 ; a(n) = 1 if n and sigma(n) are relatively prime, 0 otherwise, where sigma(n) = sum of divisors of n, A000203; Characteristic function of A014567.
   sub $0,1
+  cal $2,325964 ; a(n) = 1 if n and sigma(n) are relatively prime, 0 otherwise, where sigma(n) = sum of divisors of n, A000203; Characteristic function of A014567.
   add $1,$2
 lpe
 add $1,1

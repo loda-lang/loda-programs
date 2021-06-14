@@ -12,8 +12,8 @@ lpb $3
   lpb $6
     add $0,1
     max $0,0
-    sub $6,1
     cal $0,49473 ; Nearest integer to n/sqrt(2).
+    sub $6,1
   lpe
   mov $2,$3
   mul $2,$0

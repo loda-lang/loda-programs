@@ -4,8 +4,8 @@
 lpb $0
   add $1,1
   mov $2,$0
-  cal $2,170687 ; Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^50 = I.
   trn $0,2
+  cal $2,170687 ; Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^50 = I.
   mov $3,$2
   min $3,1
   add $3,$2

@@ -3,10 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,70490 ; a(n) = n^3 mod 28.
   mod $0,13
-  mov $3,$2
-  min $3,1
-  add $1,$3
+  cal $2,70490 ; a(n) = n^3 mod 28.
+  mov $1,$2
+  min $1,1
 lpe
 add $1,1

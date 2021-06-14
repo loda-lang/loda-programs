@@ -4,7 +4,6 @@
 mov $2,2
 mul $2,$0
 mov $0,$2
-sub $0,1
-max $0,0
+trn $0,1
 cal $0,88722 ; Number of divisors d>1 of n such that also d+1 divides n.
 mov $1,$0

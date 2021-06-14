@@ -5,8 +5,8 @@ mod $0,6
 sub $0,2
 pow $0,2
 mov $1,$0
-add $1,2
 cal $0,64324 ; a(n) = a(n-1) + floor(a(n-2)/2) with a(0)=1, a(1)=2.
+add $1,2
 mod $0,$1
 mov $1,$0
 sub $1,1

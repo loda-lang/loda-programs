@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,51065 ; a(n) = A004128(n) mod 2.
   sub $0,1
+  cal $2,51065 ; a(n) = A004128(n) mod 2.
   add $1,$2
 lpe

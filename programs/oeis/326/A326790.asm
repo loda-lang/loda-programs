@@ -4,9 +4,9 @@
 mov $4,5
 lpb $0
   mov $3,$0
-  cal $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $0,4
   mov $1,2
+  cal $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $2,$3
   sub $4,1
   sub $0,$4

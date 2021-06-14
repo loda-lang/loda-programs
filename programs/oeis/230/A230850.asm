@@ -11,9 +11,9 @@ lpb $8
   sub $0,1
   div $0,2
   max $0,0
-  add $3,2
   cal $0,239636 ; Distance between the two occurrences of n-th prime in A082500.
   mul $0,2
+  add $3,2
   add $2,$3
   add $2,$0
   mov $1,$2

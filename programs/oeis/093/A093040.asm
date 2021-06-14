@@ -8,8 +8,7 @@ lpb $9
   mov $0,$7
   sub $9,1
   add $0,$9
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,204644 ; Number of (n+1) X 2 0..1 arrays with column and row pair sums b(i,j)=a(i,j)+a(i,j-1) and c(i,j)=a(i,j)+a(i-1,j) nondecreasing in column and row directions, respectively.
   add $6,$0
   div $6,8

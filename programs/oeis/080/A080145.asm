@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,64831 ; Partial sums of A001654, or sum of the areas of the first n Fibonacci rectangles.
   sub $0,1
+  cal $2,64831 ; Partial sums of A001654, or sum of the areas of the first n Fibonacci rectangles.
   add $1,$2
 lpe

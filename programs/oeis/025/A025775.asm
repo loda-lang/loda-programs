@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  sub $0,4
   div $2,11
   cal $2,14181 ; Numbers > 9 with all digits the same.
-  sub $0,4
   add $1,$2
 lpe
 div $1,11

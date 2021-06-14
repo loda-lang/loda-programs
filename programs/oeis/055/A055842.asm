@@ -7,8 +7,7 @@ lpb $5
   mov $0,$3
   sub $5,1
   add $0,$5
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,110595 ; a(1)=5. For n > 1, a(n) = 4*5^(n-1) = A005054(n).
   div $0,5
   mov $2,$5

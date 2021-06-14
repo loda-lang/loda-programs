@@ -7,8 +7,7 @@ lpb $4
   mov $0,$2
   sub $4,1
   add $0,$4
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,132090 ; a(n) = pi(pi(n)), where pi = A000720.
   mul $0,2
   mov $3,$4
