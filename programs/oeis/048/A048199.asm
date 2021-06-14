@@ -1,10 +1,9 @@
 ; A048199: Distance of primes to next odd multiple of 5 (where n mod 10 = 5),
 ; 3,2,0,8,4,2,8,6,2,6,4,8,4,2,8,2,6,4,8,4,2,6,2,6,8,4,2,8,6,2,8,4,8,6,6,4,8,2,8,2,6,4,4,2,8,6,4,2,8,6,2,6,4,4,8,2,6,4,8,4,2,2,8,4,2,8,4,8,8,6,2,6,8,2,6,2,6,8,4,6,6,4,4,2,6,2,6,8,4,2,8,6,8,4,6,2,6,4,2,4,8,8,2,6,4
 
-mul $0,2
-max $0,1
-cal $0,173919 ; Numbers that are prime or one less than a prime.
-mov $1,$0
+cal $0,6005 ; The odd prime numbers together with 1.
+sub $0,2
+max $1,$0
 mul $1,9
-add $1,15
+add $1,13
 mod $1,10

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   sub $0,1
+  cal $2,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   add $1,$2
 lpe
 mul $1,2

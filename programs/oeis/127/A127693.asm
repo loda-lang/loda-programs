@@ -3,13 +3,8 @@
 
 mul $0,4
 cal $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-lpb $0
-  mov $1,$0
-  mov $2,$0
-  lpb $2
-    sub $0,1
-    mod $2,11
-  lpe
-lpe
+mov $1,$0
+trn $1,7
+div $1,2
 add $1,1
 mod $1,2

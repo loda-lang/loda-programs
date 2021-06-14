@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  pow $4,0
   cal $2,25225 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1) for n >= 2. Also a(n) = (2^n)*C(n-1), where C = A000108 (Catalan numbers).
+  pow $4,0
   sub $0,$4
   add $1,$2
   mov $3,$0

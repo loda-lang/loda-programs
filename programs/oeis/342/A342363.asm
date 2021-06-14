@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,182768 ; Beatty sequence for 1+e^(-2).
   mul $0,$3
+  cal $2,182768 ; Beatty sequence for 1+e^(-2).
   add $0,$2
   add $0,1
   dif $0,5

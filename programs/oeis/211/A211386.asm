@@ -8,6 +8,5 @@ lpb $0
   add $1,$2
   mul $1,2
 lpe
-div $1,162
-mul $1,2
+div $1,81
 add $1,1

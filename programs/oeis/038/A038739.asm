@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,38737 ; T(n,n-2), array T as in A038792.
   sub $0,1
+  cal $2,38737 ; T(n,n-2), array T as in A038792.
   add $1,$2
 lpe
 add $1,1

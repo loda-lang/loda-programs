@@ -4,8 +4,6 @@
 add $0,1
 cal $0,25169 ; a(n) = 2*Fibonacci(2*n+2).
 pow $0,2
-div $0,2
 mov $1,$0
-mul $1,3
-div $1,6
+div $1,4
 add $1,1

@@ -9,12 +9,11 @@ lpb $2
   mov $4,2
   lpb $4
     mov $0,$1
-    sub $0,1
-    max $0,0
-    sub $4,1
+    trn $0,1
     cal $0,143730 ; a(n) = A141616(n) - A100181(n).
     sub $0,1
     pow $0,2
+    sub $4,1
     mov $5,$0
     sub $5,16
     div $5,8

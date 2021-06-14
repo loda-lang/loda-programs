@@ -1,0 +1,8 @@
+; A071873: Decimal expansion of the sixth (of 10) decimal selvage number; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
+; 5,0,5,0,5,0,5,0,5,0,5,0,5,0,5,0,5,0,5,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,2,7,2,7,2,7,2,7,2,7,2,7,2,7,2,7,2,7,2,7,3,8,3,8,3,8,3,8,3,8,3,8,3,8,3,8,3,8,3,8,4,9,4,9,4,9,4,9,4,9,4,9,4,9,4,9,4,9,4,0,5
+
+add $0,1
+mov $1,$0
+mul $1,5
+mod $1,99
+mod $1,10

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,80584 ; A run of 3*2^n 0's followed by a run of 3*2^n 1's, for n=0, 1, 2, ...
   sub $0,1
+  cal $2,80584 ; A run of 3*2^n 0's followed by a run of 3*2^n 1's, for n=0, 1, 2, ...
   add $1,$2
 lpe

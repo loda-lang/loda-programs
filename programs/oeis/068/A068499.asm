@@ -5,6 +5,5 @@ mov $1,$0
 trn $0,1
 cal $0,6005 ; The odd prime numbers together with 1.
 sub $0,2
-max $0,$1
-mov $1,$0
+max $1,$0
 add $1,1

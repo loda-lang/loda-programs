@@ -9,8 +9,8 @@ lpb $8
   sub $8,1
   sub $0,$8
   trn $0,3
-  trn $2,4
   cal $0,166515 ; Partial sum of A166514.
+  trn $2,4
   add $2,$0
   add $7,$2
 lpe

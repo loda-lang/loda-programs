@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,83346 ; Denominator of r(n) = Sum(e/p: n=Product(p^e)).
   sub $0,1
+  cal $2,83346 ; Denominator of r(n) = Sum(e/p: n=Product(p^e)).
   add $1,$2
 lpe
 add $1,1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,70302 ; Number of 3 X 3 X 3 magic cubes with sum 3n.
   sub $0,1
+  cal $2,70302 ; Number of 3 X 3 X 3 magic cubes with sum 3n.
   add $1,$2
 lpe
 add $1,1

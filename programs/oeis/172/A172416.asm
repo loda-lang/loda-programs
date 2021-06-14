@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,84214 ; Inverse binomial transform of a math magic problem.
   sub $0,2
+  cal $2,84214 ; Inverse binomial transform of a math magic problem.
   add $1,$2
 lpe
 div $1,2

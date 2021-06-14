@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,93660 ; Row sums of lower triangular matrix A093658.
   sub $0,1
+  cal $2,93660 ; Row sums of lower triangular matrix A093658.
   add $1,$2
 lpe
 add $1,1

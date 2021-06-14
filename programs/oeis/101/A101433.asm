@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,101402 ; a(0)=0, a(1)=1; for n>=2, let k = smallest power of 2 that is >= n, then a(n) = a(k/2) + a(n-1-k/2).
   sub $0,1
+  cal $2,101402 ; a(0)=0, a(1)=1; for n>=2, let k = smallest power of 2 that is >= n, then a(n) = a(k/2) + a(n-1-k/2).
   add $1,$2
 lpe

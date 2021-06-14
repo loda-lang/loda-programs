@@ -4,8 +4,8 @@
 lpb $0
   add $1,1
   mov $2,$0
-  cal $2,333813 ; a(n) = 2^(1 + floor(n*log_2(3))) - (3^n + 1).
   mov $0,0
+  cal $2,333813 ; a(n) = 2^(1 + floor(n*log_2(3))) - (3^n + 1).
   mul $1,$2
   add $1,1
 lpe

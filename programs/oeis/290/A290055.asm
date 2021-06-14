@@ -10,8 +10,8 @@ lpb $8
   sub $0,$8
   lpb $0
     mov $2,$0
-    cal $2,139598 ; A035008(n) followed by A139098(n+1).
     trn $0,2
+    cal $2,139598 ; A035008(n) followed by A139098(n+1).
     add $3,$2
     mul $2,$3
   lpe

@@ -4,9 +4,11 @@
 lpb $0
   cal $0,258644 ; Fourth arithmetic derivative of n.
 lpe
-lpb $0
+mov $2,$0
+mov $0,1
+lpb $2
   add $0,1
-  cal $0,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
-  add $0,1
+  mov $1,$0
+  mov $2,$0
 lpe
-mov $1,$0
+div $1,2

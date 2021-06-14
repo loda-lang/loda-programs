@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1998 ; Bending a piece of wire of length n+1; walks of length n+1 on a tetrahedron; also non-branched catafusenes with n+2 condensed hexagons.
   sub $0,1
+  cal $2,1998 ; Bending a piece of wire of length n+1; walks of length n+1 on a tetrahedron; also non-branched catafusenes with n+2 condensed hexagons.
   add $3,$2
   mov $1,$3
 lpe

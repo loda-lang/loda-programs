@@ -4,6 +4,5 @@
 cal $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
 cal $0,304517 ; a(n) = 16*2^n - 11 (n>=1).
 mov $1,$0
-mul $1,4479999995520
-div $1,143359999856640
+div $1,32
 add $1,1

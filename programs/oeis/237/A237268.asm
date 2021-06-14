@@ -4,7 +4,7 @@
 mov $1,$0
 lpb $0
   mov $1,$0
-  cal $1,35508 ; a(n) = Fibonacci(2*n+2) - 1.
   mod $0,2
+  cal $1,35508 ; a(n) = Fibonacci(2*n+2) - 1.
 lpe
 add $1,1

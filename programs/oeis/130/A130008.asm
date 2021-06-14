@@ -7,8 +7,7 @@ lpb $0
   max $0,1
   add $1,7
 lpe
-sub $0,3
-max $0,0
+trn $0,3
 cal $0,173919 ; Numbers that are prime or one less than a prime.
 mul $1,$0
 div $1,7

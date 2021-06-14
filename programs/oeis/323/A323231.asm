@@ -19,8 +19,8 @@ lpb $12
     trn $0,1
     lpb $0
       mov $2,$0
-      cal $2,308663 ; Partial sums of A097805.
       trn $0,2
+      cal $2,308663 ; Partial sums of A097805.
       add $3,$2
     lpe
     mov $1,$3

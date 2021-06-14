@@ -5,8 +5,8 @@ mov $3,1
 lpb $0
   mov $1,$3
   mov $2,$0
-  cal $2,307989 ; a(n) = n - pi(2*n) + pi(n-1), where pi is the prime counting function.
   mod $0,40
   trn $0,45
+  cal $2,307989 ; a(n) = n - pi(2*n) + pi(n-1), where pi is the prime counting function.
   add $1,$2
 lpe

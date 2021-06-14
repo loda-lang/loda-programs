@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,165211 ; Period 8: repeat [0,1,0,1,1,0,1,0].
   div $0,2
+  cal $2,165211 ; Period 8: repeat [0,1,0,1,1,0,1,0].
   add $1,$2
 lpe
 add $1,1

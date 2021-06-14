@@ -8,8 +8,7 @@ lpb $8
   mov $0,$6
   sub $8,1
   add $0,$8
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,213040 ; Partial sums of A004738, leftmost column of the sequence of triangles defined in A206492.
   add $2,$0
   add $5,$2

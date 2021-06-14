@@ -8,5 +8,4 @@ lpb $0
   cal $1,268622 ; Number of n X 2 0..2 arrays with some element plus some horizontally or vertically adjacent neighbor totalling two no more than once.
   div $0,$1
 lpe
-div $1,3
-mul $1,12
+mul $1,4

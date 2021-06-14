@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,171970 ; Integer part of the height of an equilateral triangle with side length n.
   sub $0,1
+  cal $2,171970 ; Integer part of the height of an equilateral triangle with side length n.
   add $1,$2
 lpe

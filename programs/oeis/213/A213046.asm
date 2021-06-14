@@ -3,8 +3,8 @@
 
 add $0,3
 mov $2,$0
-div $2,2
 cal $0,14217 ; a(n) = floor(phi^n), where phi = (1+sqrt(5))/2 is the golden ratio.
 mov $1,$0
+div $2,2
 sub $1,$2
 sub $1,1

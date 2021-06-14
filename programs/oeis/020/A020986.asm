@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,20985 ; The Rudin-Shapiro or Golay-Rudin-Shapiro sequence (coefficients of the Shapiro polynomials).
   sub $0,1
+  cal $2,20985 ; The Rudin-Shapiro or Golay-Rudin-Shapiro sequence (coefficients of the Shapiro polynomials).
   add $1,$2
 lpe
 add $1,1

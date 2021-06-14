@@ -4,8 +4,8 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,116699 ; Number of permutations of length n which avoid the patterns 123 and 4312.
   add $1,$0
+  cal $2,116699 ; Number of permutations of length n which avoid the patterns 123 and 4312.
   add $1,$2
 lpe
 add $1,1

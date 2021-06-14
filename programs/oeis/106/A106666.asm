@@ -4,8 +4,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  cal $2,52987 ; Expansion of (1-2x^2)/(1-2x-2x^2+2x^3).
   add $0,2
   trn $0,4
+  cal $2,52987 ; Expansion of (1-2x^2)/(1-2x-2x^2+2x^3).
   add $1,$2
 lpe

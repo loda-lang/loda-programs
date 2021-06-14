@@ -4,9 +4,9 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  sub $0,1
   max $2,0
   cal $2,15528 ; a(n) = 3*a(n-1) + 10*a(n-2).
-  sub $0,1
   add $1,$2
 lpe
 mul $1,12

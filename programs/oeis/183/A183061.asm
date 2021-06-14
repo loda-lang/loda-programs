@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,183060 ; Number of "ON" cells at n-th stage in a simple 2-dimensional cellular automaton (see Comments for precise definition).
   mov $2,$3
   mul $2,$0

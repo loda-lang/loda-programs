@@ -42,9 +42,9 @@ lpb $23
           add $0,$8
           lpb $0
             mov $2,$0
+            trn $0,2
             max $2,0
             cal $2,52991 ; Expansion of (1-x-x^2)/(1-3x-x^2).
-            trn $0,2
             add $3,$2
           lpe
           mov $1,$3

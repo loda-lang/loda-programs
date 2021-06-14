@@ -1,15 +1,10 @@
 ; A316342: Fibonacci word A003849 with first two terms replaced by 2's.
 ; 2,2,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1
 
-mov $3,$0
-mul $3,$0
-mov $2,$3
-cmp $2,0
-add $3,$2
-mod $0,$3
-cal $0,316825 ; Fibonacci word A003849 with its initial term changed to 2.
-add $0,8
-mul $0,2
-mov $1,$0
-sub $1,16
-div $1,2
+mov $1,2
+lpb $0
+  mov $2,$0
+  mov $0,1
+  cal $2,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
+  mov $1,$2
+lpe

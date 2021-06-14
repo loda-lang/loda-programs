@@ -11,9 +11,9 @@ lpb $8
   sub $0,1
   lpb $0
     mov $2,$0
+    trn $0,2
     max $2,0
     cal $2,135034 ; Positive integers n repeated 2n-1 times, with a leading a(0) = 0. Also: ceiling of square root of n.
-    trn $0,2
     add $3,$2
   lpe
   mov $1,$3

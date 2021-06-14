@@ -7,8 +7,7 @@ lpb $4
   mov $0,$3
   sub $4,1
   add $0,$4
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,292046 ; The list of distinct values of A072464.
   mov $2,$4
   mul $2,$0

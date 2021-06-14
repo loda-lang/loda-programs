@@ -29,8 +29,8 @@ There is a test suite in [test.cpp](/src/test.cpp) which can be executed using `
 If you would like to implement an existing integer sequence in LODA, please go ahead! You should first check if there exists already a program for it.
 Please included a comment in the second line "Coded manually" to mark it as hand-written. You can also include your name there is you like. You can
 take a look at the programs for [A000010](/programs/oeis/000/A000010.asm) or
-[A030103](/programs/oeis/030/A030103.asm) for examples. To check the validity of your program, please generate a b-file using 
-`loda eval -t <terms> -b <offset>` and compare it to the corresponding b-file on [oeis.org](https://oeis.org). 
+[A030103](/programs/oeis/030/A030103.asm) for examples. To check if an existing program is correct, you can run the command
+`loda check -b 1 <seq-ID>`. To add your own program to the database, use `loda match -i update <your-program.asm>`.
 When you think it is ready to be included, please open a pull request!
 
 **Note:** if the LODA Miner _should_ eventually find a faster program for your sequence, your program would get overwritten (but you are still in the Git history). 

@@ -4,8 +4,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  cal $2,168361 ; Period 2: repeat 2, -1.
   div $0,2
+  cal $2,168361 ; Period 2: repeat 2, -1.
   mov $3,$2
   min $3,1
   add $1,$3

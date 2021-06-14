@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,213830 ; Antidiagonal sums of the convolution array A213828.
   sub $0,1
+  cal $2,213830 ; Antidiagonal sums of the convolution array A213828.
   add $1,$2
 lpe
 div $1,2

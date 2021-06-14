@@ -2,8 +2,13 @@
 ; 232,610,1600,4192,10978,28744,75256,197026,515824,1350448,3535522,9256120,24232840,63442402,166094368,434840704,1138427746,2980442536,7802899864,20428257058,53481871312,140017356880,366570199330,959693241112,2512509524008,6577835330914,17220996468736,45085154075296,118034465757154,309018243196168,809020263831352,2118042548297890,5545107381062320
 
 add $0,3
-cal $0,122367 ; Dimension of 3-variable non-commutative harmonics (twisted derivative). The dimension of the space of non-commutative polynomials in 3 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( xi w ) = w and d_{xi} ( xj w ) = 0 for i != j).
-mov $1,$0
+mov $1,1
+mov $2,1
+lpb $0
+  sub $0,1
+  add $1,$2
+  add $2,$1
+lpe
 sub $1,13
 mul $1,18
 add $1,232

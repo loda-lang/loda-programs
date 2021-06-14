@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,34265 ; a(n) = binomial(n+6,6)*(6*n+7)/7.
   sub $0,1
+  cal $2,34265 ; a(n) = binomial(n+6,6)*(6*n+7)/7.
   add $1,$2
 lpe
 add $1,1

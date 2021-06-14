@@ -125,9 +125,12 @@ LODA is single-threaded and therefore uses one CPU during mining. It supports mu
 
 You need an Internet connection to access the OEIS database to run this command. Downloaded files are cached in the `$HOME/.loda` folder. You can also configure a Twitter client to get notified when a match was found!
 
+If you found new or better programs for OEIS sequences, please open a pull request to include it!
+
 #### match
 
-Match a program against the OEIS database. To overwrite existing programs, choose a corresponding miner configuration using the `-i` option.
+Match a program against the OEIS database and add it to LODA. If you manually wrote a LODA program, you can use `loda match -i update <your-program.asm>`
+to find matches in tge OEIS and to add it to the LODA programs folders. If you wrote new programs for OEIS sequences, please open a pull request to include it!
 
 #### check
 

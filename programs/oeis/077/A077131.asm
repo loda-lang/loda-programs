@@ -4,8 +4,8 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  cal $2,6005 ; The odd prime numbers together with 1.
   sub $0,2
+  cal $2,6005 ; The odd prime numbers together with 1.
   add $1,$2
 lpe
 add $1,2

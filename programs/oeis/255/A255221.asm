@@ -6,8 +6,8 @@ mov $3,$0
 cmp $3,0
 add $0,$3
 mov $1,$0
-sub $2,2
 cal $0,255225 ; Number of (n+2)X(5+2) 0..1 arrays with no 3x3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2
+sub $2,2
 sub $0,$2
 add $1,$0
 sub $1,47

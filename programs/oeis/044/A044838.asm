@@ -15,11 +15,10 @@ lpb $33
     mov $0,$27
     sub $29,1
     add $0,$29
-    mov $5,$0
-    div $5,12
-    mov $1,$5
+    div $0,12
+    mov $1,$0
     mov $30,$29
-    mul $30,$5
+    mul $30,$0
     add $28,$30
   lpe
   min $27,1

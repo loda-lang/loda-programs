@@ -3,9 +3,9 @@
 
 mov $1,$0
 sub $0,1
+cal $1,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 mov $2,$0
 mov $3,$0
-cal $1,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 div $3,$1
 sub $2,$3
 add $1,$2

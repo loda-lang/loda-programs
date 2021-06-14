@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,299283 ; Coordination sequence for "svh" 3D uniform tiling.
   sub $0,1
+  cal $2,299283 ; Coordination sequence for "svh" 3D uniform tiling.
   add $1,$2
 lpe
 add $1,1
