@@ -7,8 +7,7 @@ lpb $5
   mov $0,$3
   sub $5,1
   add $0,$5
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,342871 ; a(n) = Sum_{k=1..n} floor(n^(1/k)), n >= 1.
   add $0,2
   mov $2,$5

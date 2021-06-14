@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,97448 ; If n is square, replace with sqrt(n).
   sub $0,1
+  cal $2,97448 ; If n is square, replace with sqrt(n).
   add $1,$2
 lpe

@@ -11,11 +11,10 @@ lpb $12
   sub $0,$12
   mov $8,2
   lpb $8
-    sub $0,1
-    max $0,0
-    sub $8,1
+    trn $0,1
     cal $0,22839 ; Beatty sequence for sqrt(5).
     div $0,5
+    sub $8,1
     cmp $9,0
     mul $9,$0
     add $7,$9

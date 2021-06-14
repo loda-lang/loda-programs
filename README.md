@@ -4,7 +4,7 @@ LODA is an assembly language, a computational model and a tool for mining intege
 
 The [programs/oeis](programs/oeis) folder contains programs that generate integer sequences from the OEIS. The vast majority of these programs has been automatically generated using the `loda mine` command. Disclaimer: these programs have been validated only for the first terms of the sequences as found in the downloaded version of the OEIS database (currently up to 2000 terms). There is no guarantee that any particular program is correct, i.e., generates the correct (infinite) sequence.
 
-We warmly welcome [contributions to this project](CONTRIBUTING.md). We use [Slack](https://lodachat.slack.com/home) for our communication. Please [open a GitHub issue](https://github.com/ckrause/loda/issues) is you want to get in touch with us, or contact one of the developers directly.
+[Contributions](CONTRIBUTING.md) are warmly welcome! You can get in touch by sending a mail to "me" at ckrause dot org.
 
 ## Language
 

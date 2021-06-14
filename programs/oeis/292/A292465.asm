@@ -3,5 +3,4 @@
 
 mov $1,$0
 cal $0,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
-mul $0,$1
-mov $1,$0
+mul $1,$0

@@ -4,8 +4,5 @@
 cal $0,6093 ; a(n) = prime(n) - 1.
 mul $0,2
 cal $0,73093 ; Number of prime power divisors of n.
-mul $0,2
 mov $1,$0
-sub $1,4
-div $1,2
-add $1,1
+sub $1,1

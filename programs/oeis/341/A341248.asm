@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,275138 ; Number of n X 4 0..2 arrays with no element equal to any value at offset (-2,-2) (-1,-2) or (0,-1) and new values introduced in order 0..2.
   sub $0,1
+  cal $2,275138 ; Number of n X 4 0..2 arrays with no element equal to any value at offset (-2,-2) (-1,-2) or (0,-1) and new values introduced in order 0..2.
   add $1,$2
 lpe
 div $1,16

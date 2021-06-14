@@ -4,9 +4,9 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  mov $0,1
   max $2,0
   cal $2,75101 ; Numerator of 2^n/n.
-  mov $0,1
   add $1,$2
   sub $1,1
 lpe

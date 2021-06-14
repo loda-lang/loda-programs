@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,62123 ; a(n) = 2 + 9*n*(1 + n)/2.
   mov $2,$3
   mov $4,$0

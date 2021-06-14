@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,165677 ; Fifth right hand column of triangle A165674
   sub $0,1
+  cal $2,165677 ; Fifth right hand column of triangle A165674
   add $1,$2
 lpe
 mul $1,6

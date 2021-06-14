@@ -6,8 +6,8 @@ mov $1,$0
 sub $1,$0
 sub $1,$0
 max $0,0
-mov $2,$1
 cal $0,266883 ; Numbers of the form m*(4*m+1)+1, where m = 0,-1,1,-2,2,-3,3,...
+mov $2,$1
 sub $1,2
 mul $2,$1
 add $0,$2

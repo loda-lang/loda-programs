@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,299255 ; Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 3.3.4.3.4 2D tiling (cf. A219529).
   sub $0,1
+  cal $2,299255 ; Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 3.3.4.3.4 2D tiling (cf. A219529).
   add $1,$2
 lpe
 add $1,1

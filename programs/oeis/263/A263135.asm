@@ -4,8 +4,8 @@
 mov $1,$0
 mul $1,2
 add $1,$0
-add $1,18
 cal $0,67628 ; Minimal perimeter of polyiamond with n triangles.
+add $1,18
 sub $1,$0
 sub $1,18
 div $1,2

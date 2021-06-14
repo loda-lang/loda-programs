@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $2,2
-  max $2,0
-  cal $2,22100 ; Fibonacci sequence beginning 1, 10.
   trn $0,2
+  trn $2,2
+  cal $2,22100 ; Fibonacci sequence beginning 1, 10.
   add $1,$2
 lpe

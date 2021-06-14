@@ -4,8 +4,8 @@
 lpb $0
   sub $0,1
   mov $1,$0
+  mov $0,0
   max $1,0
   cal $1,83375 ; n appears prime(n) times.
-  mov $0,0
 lpe
 add $1,1

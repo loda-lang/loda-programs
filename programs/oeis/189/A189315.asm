@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,93129 ; Binomial transform of Fibonacci(2n-1) (A001519).
   mul $0,2
   sub $0,1

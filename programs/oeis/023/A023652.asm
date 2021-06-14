@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,157728 ; a(n) = Fibonacci(n) - 4.
   sub $0,1
+  cal $2,157728 ; a(n) = Fibonacci(n) - 4.
   add $1,$2
 lpe
 add $1,1

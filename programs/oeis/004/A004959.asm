@@ -20,10 +20,10 @@ lpb $33
     mov $1,1
     lpb $0
       mov $2,$0
-      max $2,0
-      cal $2,26356 ; a(n) = floor((n-1)*phi) + n + 1, n > 0, where phi = (1+sqrt(5))/2.
       div $0,$1
       sub $0,2
+      max $2,0
+      cal $2,26356 ; a(n) = floor((n-1)*phi) + n + 1, n > 0, where phi = (1+sqrt(5))/2.
       add $3,$2
       mov $1,$3
     lpe

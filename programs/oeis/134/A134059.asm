@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,131060 ; 3*A007318 - 2*A000012 as infinite lower triangular matrices.
   mov $0,0
+  cal $2,131060 ; 3*A007318 - 2*A000012 as infinite lower triangular matrices.
   add $1,$2
   add $1,1
 lpe

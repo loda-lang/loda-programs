@@ -3,6 +3,5 @@
 
 mul $0,6
 cal $0,96382 ; Consider a Pythagorean triangle with sides a=u^2-v^2, b=2uv, c=u^2+v^2. The sequence is the area of the triangle when v=2, u=3,4,5,...
+div $0,2
 mov $1,$0
-div $1,6
-mul $1,3

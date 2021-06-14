@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,297351 ; Smallest number k such that, for any set S of k distinct nonzero residues mod p = prime(n), any residue mod p can be represented as a sum of zero or more distinct elements of S.
   bin $0,118827
+  cal $2,297351 ; Smallest number k such that, for any set S of k distinct nonzero residues mod p = prime(n), any residue mod p can be represented as a sum of zero or more distinct elements of S.
   add $1,$2
 lpe

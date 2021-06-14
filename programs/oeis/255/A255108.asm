@@ -4,8 +4,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  cal $2,252814 ; Number of n X 2 nonnegative integer arrays with upper left 0 and every value within 2 of its city block distance from the upper left and every value increasing by 0 or 1 with every step right or down.
   sub $0,1
+  cal $2,252814 ; Number of n X 2 nonnegative integer arrays with upper left 0 and every value within 2 of its city block distance from the upper left and every value increasing by 0 or 1 with every step right or down.
   add $1,$2
 lpe
 add $1,3

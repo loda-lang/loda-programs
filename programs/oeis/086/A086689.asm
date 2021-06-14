@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,179824 ; Chromatic polynomial of the star graph on 4 vertices (claw graph) and the path graph on 4 vertices.
   sub $0,1
+  cal $2,179824 ; Chromatic polynomial of the star graph on 4 vertices (claw graph) and the path graph on 4 vertices.
   add $1,$2
 lpe
 div $1,2

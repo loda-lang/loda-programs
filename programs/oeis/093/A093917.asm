@@ -6,9 +6,9 @@ mul $0,2
 add $0,3
 div $0,2
 sub $4,$0
-pow $4,2
 cal $0,158416 ; Expansion of (1+x-x^3)/(1-x^2)^2.
 add $2,$0
+pow $4,2
 add $4,1
 mul $2,$4
 mov $1,$2

@@ -30,8 +30,7 @@ lpb $20
         mov $0,$7
         sub $9,1
         add $0,$9
-        sub $0,1
-        max $0,0
+        trn $0,1
         cal $0,56309 ; Number of reversible strings with n beads using exactly two different colors.
         mov $1,$0
         mov $10,$9

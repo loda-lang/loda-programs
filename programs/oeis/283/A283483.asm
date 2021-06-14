@@ -4,6 +4,5 @@
 cal $0,5836 ; Numbers n whose base 3 representation contains no 2.
 lpb $0
   add $1,$0
-  mul $0,2
-  div $0,6
+  div $0,3
 lpe

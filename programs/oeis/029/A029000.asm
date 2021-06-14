@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,86159 ; Number of partitions of n into the first three triangular numbers, 1, 3 and 6.
   sub $0,2
+  cal $2,86159 ; Number of partitions of n into the first three triangular numbers, 1, 3 and 6.
   add $1,$2
 lpe
 add $1,1

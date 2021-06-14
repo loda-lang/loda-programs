@@ -7,10 +7,10 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
+  mov $2,$3
   mov $4,$0
   max $4,0
   cal $4,214142 ; Number of 0..4 colorings of a 1 X (n+1) array circular in the n+1 direction with new values 0..4 introduced in row major order.
-  mov $2,$3
   mul $2,$4
   add $1,$2
   mov $6,$4

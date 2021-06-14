@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,14437 ; Odd Fibonacci numbers.
   sub $0,1
+  cal $2,14437 ; Odd Fibonacci numbers.
   add $1,$2
 lpe
 add $1,1

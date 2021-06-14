@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,268411 ; Parity of number of runs of 1's in binary representation of n.
   sub $0,1
+  cal $2,268411 ; Parity of number of runs of 1's in binary representation of n.
   add $1,$2
 lpe

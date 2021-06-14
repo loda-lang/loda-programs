@@ -3,10 +3,11 @@
 
 lpb $0
   mov $2,$0
-  cal $2,93356 ; Number of occurrences of pattern 1-2 after n iterations of morphism A007413.
   trn $0,2
+  cal $2,103204 ; a(1) = 2, a(2) = 4; a(n) = 2*a(n-1) - 1.
+  bin $2,2
   add $1,$2
 lpe
-div $1,4
+div $1,3
 mul $1,2
 add $1,1

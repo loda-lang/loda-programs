@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,52923 ; Expansion of (1-x)/(1 - x - 4*x^2).
   sub $0,2
+  cal $2,52923 ; Expansion of (1-x)/(1 - x - 4*x^2).
   add $1,$2
 lpe
 div $1,4

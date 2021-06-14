@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,322980 ; a(n) = 1 if n and d(n) are coprime, 0 otherwise. Here d(n) is the number of divisors of n, A000005.
   sub $0,1
+  cal $2,322980 ; a(n) = 1 if n and d(n) are coprime, 0 otherwise. Here d(n) is the number of divisors of n, A000005.
   add $1,$2
 lpe
 add $1,1

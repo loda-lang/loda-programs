@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,2618 ; a(n) = n*phi(n).
   sub $0,1
+  cal $2,2618 ; a(n) = n*phi(n).
   add $1,$2
 lpe
 div $1,2

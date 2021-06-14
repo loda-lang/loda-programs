@@ -3,10 +3,9 @@
 
 add $0,1
 lpb $0
-  add $1,7
   cal $0,102391 ; Evil numbers in evil places.
   div $0,2
-  sub $1,1
+  add $1,6
 lpe
 sub $1,6
 div $1,6

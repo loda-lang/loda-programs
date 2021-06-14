@@ -6,7 +6,7 @@ lpb $0
   mul $2,$0
   mul $0,2
   mov $1,$0
+  mov $0,0
   add $1,$2
   cal $1,296819 ; Maximum detour index of any bipartite graph on n nodes.
-  mov $0,0
 lpe

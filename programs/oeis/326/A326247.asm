@@ -3,8 +3,7 @@
 
 lpb $0
   mov $1,$0
-  sub $1,2
-  max $1,0
+  trn $1,2
   cal $1,207064 ; Number of n X 4 0..1 arrays avoiding 0 0 1 and 0 1 0 horizontally and 0 0 1 and 1 0 1 vertically.
   mov $2,$1
   min $2,1

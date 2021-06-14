@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,49486 ; Maximum length of non-crossing path on n X n square lattice.
   sub $0,1
+  cal $2,49486 ; Maximum length of non-crossing path on n X n square lattice.
   add $1,$2
 lpe
 add $1,1

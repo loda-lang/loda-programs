@@ -2,7 +2,9 @@
 ; 4,14,20,30,40,46,56,62,72,82,88,98,108,114,124,130,140,150,156,166,172,182,192,198,208,218,224,234,240,250,260,266,276,286,292,302,308,318,328,334,344,350,360,370,376,386,396,402,412,418,428,438,444,454,460
 
 add $0,1
-cal $0,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
+mov $2,$0
+cal $0,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
+add $0,$2
 mov $1,$0
 sub $1,2
 mul $1,2

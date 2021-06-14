@@ -16,10 +16,9 @@ lpb $12
     mov $0,$6
     sub $8,1
     add $0,$8
-    sub $0,1
-    max $0,0
-    add $3,1
+    trn $0,1
     cal $0,184524 ; Lower s-Wythoff sequence, where s=5n-1.  Complement of A184525.
+    add $3,1
     sub $0,$3
     mov $1,$0
     mov $9,$8

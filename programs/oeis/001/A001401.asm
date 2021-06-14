@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,29032 ; Expansion of 1/((1-x)(1-x^3)(1-x^4)(1-x^5)).
   sub $0,2
+  cal $2,29032 ; Expansion of 1/((1-x)(1-x^3)(1-x^4)(1-x^5)).
   add $1,$2
 lpe
 add $1,1

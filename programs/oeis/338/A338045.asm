@@ -10,9 +10,9 @@ lpb $8
   add $0,$8
   lpb $0
     mov $2,$0
+    div $0,2
     max $2,0
     cal $2,27480 ; a(n) = n*(n+1)*(n+2)/2.
-    div $0,2
     add $3,$2
   lpe
   mov $1,$3

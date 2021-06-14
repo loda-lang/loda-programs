@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,69241 ; Number of Hamiltonian paths in the graph on n vertices {1,...,n}, with i adjacent to j iff |i-j|<=2.
   mov $0,1
+  cal $1,69241 ; Number of Hamiltonian paths in the graph on n vertices {1,...,n}, with i adjacent to j iff |i-j|<=2.
   mul $1,2
   sub $1,1
 lpe

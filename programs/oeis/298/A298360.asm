@@ -4,6 +4,5 @@
 cal $0,112652 ; a(n) squared is congruent to a(n) (mod 12).
 cal $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
 mov $1,$0
-div $1,4
-mul $1,2
+div $1,2
 add $1,3

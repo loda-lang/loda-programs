@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,25790 ; Expansion of 1/((1-x)(1-x^8)(1-x^11)).
   sub $0,5
+  cal $2,25790 ; Expansion of 1/((1-x)(1-x^8)(1-x^11)).
   add $1,$2
   add $1,$2
 lpe

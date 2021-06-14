@@ -11,6 +11,4 @@ mod $2,2
 add $0,$2
 bin $0,2
 mov $1,$0
-div $1,8
-mul $1,8
-add $1,7
+add $1,1

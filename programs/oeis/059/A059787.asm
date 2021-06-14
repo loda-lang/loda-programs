@@ -5,6 +5,5 @@ cal $0,40 ; The prime numbers.
 mul $0,2
 cal $0,308046 ; a(n) = 2*nextprime(n - 1) - 2*n, where nextprime(n) is the smallest prime > n.
 mov $1,$0
-div $1,4
-mul $1,2
+div $1,2
 add $1,1

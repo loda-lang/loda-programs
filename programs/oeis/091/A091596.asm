@@ -19,9 +19,9 @@ lpb $12
     sub $0,1
     lpb $0
       mov $2,$0
+      trn $0,2
       max $2,0
       cal $2,127985 ; a(n) = floor(2^n*(n/3 + 4/9)).
-      trn $0,2
       add $3,$2
     lpe
     mov $1,$3

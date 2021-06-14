@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,169985 ; Round phi^n to the nearest integer.
   sub $0,2
+  cal $2,169985 ; Round phi^n to the nearest integer.
   add $3,$2
 lpe
 mul $0,$3

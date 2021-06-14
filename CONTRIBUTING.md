@@ -2,8 +2,6 @@
 
 :sweat_drops: **We warmly welcome contributions to this project!** :eyes:
 
-:woman: **[Please open a GitHub issue if you want to get in touch with us on Slack!](https://github.com/ckrause/loda/issues)** :man:
-
 You can contribute to this project in several ways:
 
 1. Contribute to the C++ code of the LODA tool.
@@ -20,7 +18,7 @@ Apart from that, we follow the usual GitHub workflow using pull requests.
 
 The best starting point for reading the code is probably [program.hpp](/src/include/program.hpp). It contains the model classes for LODA programs including operands, operations and programs. You can find the implementation of all arithmetics operations in [semantics.cpp](/src/semantics.cpp). Apart from container classes for sequences and memory, the rest of the operational semantics of programs is implemented in [interpreter.cpp](/src/interpreter.cpp).
 
-For mining, there are multiple generator implementations, which are used to create random programs. They are configured via [loda.json](/loda.json) and use statistics from the existing programs stored in [stats](/stats). To index the target sequences, we use [Matcher](/src/include/matcher.hpp) classes. They allow matching of sequences modulo additional operations such as linear transformations.
+For mining, there are multiple generator implementations, which are used to create random programs. They are configured via [loda.json](/loda.json) and use statistics from the existing programs stored in `$HOME/.loda/stats`. To reduce and index the target sequences, we use [Matcher](/src/include/matcher.hpp) classes. They allow matching of sequences modulo additional operations such as linear transformations.
 
 To reduce and normalize the programs we use the [Optimizer](/src/include/optimizer.hpp) and the [Minimizer](/src/include/minimizer.hpp) class.
 

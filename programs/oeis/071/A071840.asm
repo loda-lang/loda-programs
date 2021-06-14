@@ -10,9 +10,9 @@ lpb $3
   mov $4,$0
   div $4,2
   add $4,$0
+  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $4,1
   gcd $4,4
-  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $4,2
   div $4,6
   add $4,$0

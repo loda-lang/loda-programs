@@ -3,6 +3,6 @@
 
 mov $1,$0
 add $1,$0
-add $1,1
 cal $0,63209 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 41 ).
+add $1,1
 add $1,$0

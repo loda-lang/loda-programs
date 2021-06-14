@@ -11,9 +11,9 @@ lpb $29
   lpb $0
     mov $1,$0
     sub $0,1
+    cal $1,212570 ; Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|=|x-y|+|y-z|.
     add $4,$0
     mov $2,$4
-    cal $1,212570 ; Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|=|x-y|+|y-z|.
     add $2,$1
     mov $0,$2
     mov $26,$1

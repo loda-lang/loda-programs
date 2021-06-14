@@ -3,7 +3,7 @@
 
 cal $0,72668 ; Numbers one less than composite numbers.
 lpb $0
-  bin $0,3
+  bin $0,4
 lpe
 mov $1,$0
 add $1,1
