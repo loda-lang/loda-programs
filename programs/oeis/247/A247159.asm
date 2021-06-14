@@ -3,9 +3,7 @@
 
 cal $0,40 ; The prime numbers.
 mul $0,3
-lpb $0
-  pow $0,2
-  dif $0,9
-lpe
+dif $0,-2
+max $0,4
 mov $1,$0
 add $1,3

@@ -4,5 +4,4 @@
 cal $0,284920 ; Numbers with digits 2 and 4 only.
 cal $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 mov $1,$0
-mul $1,512
-div $1,1024
+div $1,2

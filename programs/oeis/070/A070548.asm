@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,10555 ; a(n) = 1 if n is the product of an even number of distinct primes, otherwise a(n) = -1.
   sub $0,1
+  cal $2,10555 ; a(n) = 1 if n is the product of an even number of distinct primes, otherwise a(n) = -1.
   add $1,$2
   add $1,1
 lpe

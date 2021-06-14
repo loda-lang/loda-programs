@@ -4,8 +4,4 @@
 mul $0,2
 add $0,2
 cal $0,303383 ; Total volume of all cubes with side length q such that n = p + q and p <= q.
-mul $0,2
 mov $1,$0
-sub $1,16
-div $1,2
-add $1,8

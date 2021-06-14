@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,164938 ; a(n) = (n^5-n)/10, which is always an integer.
   sub $0,1
+  cal $2,164938 ; a(n) = (n^5-n)/10, which is always an integer.
   add $1,$2
 lpe
 div $1,3

@@ -7,8 +7,8 @@ mov $3,1
 mov $4,$0
 add $0,$2
 mov $1,$0
-div $3,$0
 cal $1,55417 ; Number of points in N^n of norm <= 2.
+div $3,$0
 add $3,$1
 sub $3,1
 mov $1,$3

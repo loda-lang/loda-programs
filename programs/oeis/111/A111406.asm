@@ -9,13 +9,11 @@ lpb $4
   add $0,$4
   trn $0,1
   cal $0,132090 ; a(n) = pi(pi(n)), where pi = A000720.
-  mul $0,2
-  mov $3,$4
-  mul $3,$0
-  add $1,$3
-  mov $5,$0
+  mov $3,$0
+  mov $5,$4
+  mul $5,$0
+  add $1,$5
 lpe
 min $2,1
-mul $2,$5
+mul $2,$3
 sub $1,$2
-div $1,2

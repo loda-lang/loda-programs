@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,32086 ; Number of reversible strings with n beads of 3 colors. If more than 1 bead, not palindromic.
   sub $0,1
+  cal $2,32086 ; Number of reversible strings with n beads of 3 colors. If more than 1 bead, not palindromic.
   add $1,$2
 lpe
 div $1,3

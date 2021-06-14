@@ -3,6 +3,6 @@
 
 lpb $0
   mov $1,$0
-  cal $1,135537 ; Period 4: repeat [7, 5, 2, 4].
   mod $0,2
+  cal $1,135537 ; Period 4: repeat [7, 5, 2, 4].
 lpe

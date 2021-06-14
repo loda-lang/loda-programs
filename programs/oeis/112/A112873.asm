@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,32378 ; Noncubes such that n is divisible by floor(n^(1/3)).
   sub $0,1
+  cal $1,32378 ; Noncubes such that n is divisible by floor(n^(1/3)).
   add $2,$1
   mov $1,$2
 lpe

@@ -4,8 +4,8 @@
 mov $1,$0
 lpb $0
   mov $2,$0
-  cal $2,290255 ; Number of 0's following directly the first 1 in the binary representation of n.
   sub $0,1
+  cal $2,290255 ; Number of 0's following directly the first 1 in the binary representation of n.
   add $1,$2
 lpe
 add $1,1

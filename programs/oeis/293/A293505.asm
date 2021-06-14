@@ -3,6 +3,5 @@
 
 cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 cal $0,201629 ; a(n) = n if n is even and otherwise its nearest multiple of 4.
-add $$5,$0
 mov $1,$0
-div $1,4
+div $1,2

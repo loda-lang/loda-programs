@@ -11,8 +11,8 @@ lpb $7
   sub $0,$7
   lpb $0
     mov $1,$0
-    cal $1,260220 ; Number of symmetry-allowed, linearly-independent terms at n-th order in the expansion of T1 x t1 rovibrational perturbation matrix H(Jx,Jy,Jz).
     sub $0,2
+    cal $1,260220 ; Number of symmetry-allowed, linearly-independent terms at n-th order in the expansion of T1 x t1 rovibrational perturbation matrix H(Jx,Jy,Jz).
     add $2,$1
   lpe
   mov $1,$2

@@ -9,8 +9,8 @@ lpb $0
     div $3,2
     add $4,1
   lpe
-  mov $3,$4
   cal $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $3,$4
   add $3,$2
   clr $0,1
 lpe

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,125180 ; a(n) = 2*a(n-1) + prime(n) - prime(n-1), a(1)=2, where prime(n) denotes the n-th prime.
   sub $0,1
+  cal $2,125180 ; a(n) = 2*a(n-1) + prime(n) - prime(n-1), a(1)=2, where prime(n) denotes the n-th prime.
   add $1,$2
 lpe
 add $1,2

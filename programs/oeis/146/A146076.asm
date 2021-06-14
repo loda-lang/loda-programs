@@ -7,10 +7,10 @@ lpb $4
   sub $4,1
   add $0,$4
   sub $0,1
+  mov $2,$4
   mov $3,$0
   max $3,0
   cal $3,271342 ; Sum of all even divisors of all positive integers <= n.
-  mov $2,$4
   mul $2,$3
   add $1,$2
 lpe

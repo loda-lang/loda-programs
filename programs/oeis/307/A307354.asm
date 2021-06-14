@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,26641 ; Number of nodes of even outdegree (including leaves) in all ordered trees with n edges.
   sub $0,1
+  cal $1,26641 ; Number of nodes of even outdegree (including leaves) in all ordered trees with n edges.
   add $2,$1
   mov $1,$2
 lpe

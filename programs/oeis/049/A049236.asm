@@ -4,6 +4,3 @@
 cal $0,175216 ; The first nonprimes after the primes.
 cal $0,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
 mov $1,$0
-sub $1,16328452430
-mod $1,10
-add $1,10

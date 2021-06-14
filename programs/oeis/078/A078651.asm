@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,169594 ; Number of divisors of n, counting divisor multiplicity in n.
   sub $0,1
+  cal $1,169594 ; Number of divisors of n, counting divisor multiplicity in n.
   add $2,$1
   add $2,$1
   mov $1,$2

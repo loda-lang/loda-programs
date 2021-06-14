@@ -4,9 +4,9 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  sub $0,1
   max $2,0
   cal $2,277091 ; a(n) = ((1 + sqrt(15))^n - (1 - sqrt(15))^n)/sqrt(15).
-  sub $0,1
   add $1,$2
 lpe
 div $1,2

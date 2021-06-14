@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,294934 ; Characteristic function for deficient numbers (A005100): a(n) = 1 if A001065(n) < n, 0 otherwise.
   sub $0,1
+  cal $2,294934 ; Characteristic function for deficient numbers (A005100): a(n) = 1 if A001065(n) < n, 0 otherwise.
   add $1,$2
 lpe
 add $1,1

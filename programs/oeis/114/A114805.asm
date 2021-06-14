@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,85157 ; Quintuple factorials, 5-factorials, n!!!!!, n!5.
   sub $0,1
+  cal $2,85157 ; Quintuple factorials, 5-factorials, n!!!!!, n!5.
   add $1,$2
 lpe
 add $1,1

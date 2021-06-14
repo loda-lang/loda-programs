@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,68346 ; a(n) = n'' = second arithmetic derivative of n.
   mov $0,1
+  cal $1,68346 ; a(n) = n'' = second arithmetic derivative of n.
   sub $0,$1
   mul $0,$1
 lpe

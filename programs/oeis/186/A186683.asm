@@ -7,10 +7,10 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
+  mov $2,$3
   mov $4,$0
   max $4,0
   cal $4,186682 ; Total number of positive integers below 10^n requiring 18 positive biquadrates in their representation as sum of biquadrates.
-  mov $2,$3
   mul $2,$4
   add $1,$2
   mov $5,$4

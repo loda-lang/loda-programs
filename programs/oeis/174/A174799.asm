@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,24935 ; a(n) = minimal length of any partition of n into distinct primes.
   sub $0,1
+  cal $2,24935 ; a(n) = minimal length of any partition of n into distinct primes.
   add $1,$2
 lpe
 add $1,1

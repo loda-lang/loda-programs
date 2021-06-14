@@ -3,7 +3,5 @@
 
 add $0,2
 cal $0,285073 ; 0-limiting word of the morphism 0->10, 1-> 010.
-mov $1,$0
-add $1,1
-mod $1,2
-add $1,1
+sub $1,$0
+add $1,2

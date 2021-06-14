@@ -4,8 +4,8 @@
 add $0,1
 lpb $0
   sub $0,1
-  add $1,3
   cal $0,5361 ; Product of exponents of prime factorization of n.
+  add $1,3
 lpe
 div $1,3
 add $1,1

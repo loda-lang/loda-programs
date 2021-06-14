@@ -4,8 +4,8 @@
 lpb $0
   mov $2,$0
   mov $0,0
-  cal $2,89559 ; Nonnegative numbers n such that 2*n + 15 is prime.
   add $1,1
+  cal $2,89559 ; Nonnegative numbers n such that 2*n + 15 is prime.
   mov $4,$2
   min $4,1
   add $1,$4

@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  trn $0,2
   max $2,2
   cal $2,296965 ; Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
-  trn $0,2
   add $1,$2
 lpe
 div $1,2

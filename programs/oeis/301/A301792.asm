@@ -11,8 +11,8 @@ lpb $7
   add $0,1
   lpb $0
     mov $1,$0
-    cal $1,166863 ; a(1)= 1; a(2)= 5; thereafter a(n)= a(n-1) + a(n-2) + 5.
     mov $0,2
+    cal $1,166863 ; a(1)= 1; a(2)= 5; thereafter a(n)= a(n-1) + a(n-2) + 5.
     sub $1,3
   lpe
   mov $8,$7

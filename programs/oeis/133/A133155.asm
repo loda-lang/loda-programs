@@ -4,8 +4,8 @@
 mov $1,22
 lpb $0
   mov $2,$0
-  cal $2,61285 ; a(n) = 2^((prime(n) - 1)/2).
   sub $0,1
+  cal $2,61285 ; a(n) = 2^((prime(n) - 1)/2).
   add $1,$2
 lpe
 sub $1,20

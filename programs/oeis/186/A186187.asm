@@ -3,16 +3,12 @@
 
 lpb $0
   gcd $0,8
-  mov $3,4
-  add $3,$0
+  mov $2,4
+  add $2,$0
   mov $0,0
-  add $3,2
-  mov $4,16
-  mod $4,$3
+  mov $1,16
+  add $2,2
+  mod $1,$2
 lpe
-mov $2,$4
-add $2,2
-add $1,$2
-sub $1,2
 div $1,2
 add $1,1

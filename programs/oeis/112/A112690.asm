@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,117569 ; Expansion of (1+x+x^2)/(1+x^2).
   trn $0,3
+  cal $2,117569 ; Expansion of (1+x+x^2)/(1+x^2).
   add $1,$2
 lpe

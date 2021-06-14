@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,317318 ; Multiples of 18 and odd numbers interleaved.
   sub $0,1
+  cal $2,317318 ; Multiples of 18 and odd numbers interleaved.
   add $1,$2
 lpe
