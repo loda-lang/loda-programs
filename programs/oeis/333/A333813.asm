@@ -5,5 +5,4 @@ mul $0,2
 cal $0,117855 ; Number of nonzero palindromes of length n (in base 3).
 cal $0,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
 mov $1,$0
-div $1,4
-mul $1,2
+div $1,2

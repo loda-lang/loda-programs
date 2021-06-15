@@ -6,5 +6,4 @@ mul $0,2
 cal $0,47527 ; Numbers that are congruent to {0, 1, 2, 7} mod 8.
 mov $1,$0
 sub $1,64
-div $1,2
-mul $1,4
+mul $1,2

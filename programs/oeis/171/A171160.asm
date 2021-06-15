@@ -10,6 +10,5 @@ add $2,4
 add $1,$2
 mul $1,7
 div $1,3
-sub $1,16
+sub $1,10
 div $1,2
-add $1,3

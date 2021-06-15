@@ -5,6 +5,4 @@ add $0,2
 cal $0,40 ; The prime numbers.
 cal $0,308048 ; a(n) = n - nextprime(ceiling(n/2) - 1), where nextprime(n) is the smallest prime > n.
 mov $1,$0
-sub $1,3
 div $1,2
-add $1,1

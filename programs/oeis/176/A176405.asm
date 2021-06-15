@@ -3,6 +3,6 @@
 
 mul $0,3
 cal $0,277545 ; a(n) = n/7^m mod 7, where 7^m is the greatest power of 7 that divides n.
-cal $0,43647 ; Numbers whose base-11 representation has exactly 4 runs.
-mod $0,2
+sub $0,1
 mov $1,$0
+mod $1,2
