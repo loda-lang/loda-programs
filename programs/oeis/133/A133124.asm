@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  mov $2,$0
   cal $1,154117 ; Expansion of (1 - x + 3*x^2)/((1-x)*(1-2*x)).
+  mov $2,$0
   mov $0,0
   sub $2,1
   sub $1,$2

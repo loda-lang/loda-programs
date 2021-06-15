@@ -7,8 +7,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   add $0,$2
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,45621 ; a(n) = 2^n - binomial(n, floor(n/2)).
   mov $3,$2
   mul $3,$0

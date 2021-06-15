@@ -5,6 +5,5 @@ add $0,2
 cal $0,78020 ; Expansion of (1-x)/(1-x+2*x^2).
 gcd $0,$0
 mov $1,$0
-mul $1,7
-div $1,28
+div $1,4
 add $1,1

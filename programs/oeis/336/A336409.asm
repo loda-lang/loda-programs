@@ -2,9 +2,8 @@
 ; 2,4,2,4,2,2,4,2,2,4,2,2,2,4,2,2,4,2,2,2,2,2,4,2,4,2,2,2,2,4,2,4,2,2,2,2,2,4,2,4,2,4,2,2,2,4,2,2,4,2,2,2,2,4,2,2,4,2,2,2,4,2,2,2,2,4,2,2,2,2,2,2,2,2,2,2,2,4,2,4,2,2,2,2,2,4
 
 add $0,3
-cal $0,100821 ; a(n) = 1 if prime(n) + 2 = prime(n+1), otherwise 0.
-mul $0,2
-pow $0,3
+cal $0,175216 ; The first nonprimes after the primes.
+cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
 mov $1,$0
-div $1,4
-add $1,2
+add $1,1
+mul $1,2

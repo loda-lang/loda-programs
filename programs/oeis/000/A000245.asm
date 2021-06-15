@@ -4,20 +4,19 @@
 mov $4,$0
 mov $6,2
 lpb $6
-  clr $0,4
   mov $0,$4
+  mov $2,0
   sub $6,1
   add $0,$6
   max $0,0
   cal $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
   sub $0,1
   add $2,$0
-  mov $1,$2
-  mov $7,$6
-  mul $7,$2
-  add $5,$7
+  mov $3,$6
+  mul $3,$2
+  add $1,$3
+  mov $5,$2
 lpe
 min $4,1
-mul $4,$1
-mov $1,$5
+mul $4,$5
 sub $1,$4

@@ -3,10 +3,4 @@
 
 cal $0,90988 ; a(n) = 2^A004736(n).
 cal $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-mul $0,2
-add $0,1
-mul $0,4
 mov $1,$0
-sub $1,12
-div $1,8
-add $1,1

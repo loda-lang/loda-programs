@@ -3,12 +3,8 @@
 
 add $0,1
 cal $0,317189 ; A morphic sequence related to the ternary Thue-Morse sequence.
-mul $0,2
-mov $1,95
+mov $1,-1
 sub $1,$0
-mod $1,6
-add $1,5
+mod $1,3
+add $1,10
 mod $1,7
-sub $1,1
-div $1,2
-add $1,1

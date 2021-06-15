@@ -3,7 +3,7 @@
 
 mov $2,4
 lpb $2
-  div $2,4
   cal $0,53186 ; Square excess of n: difference between n and largest square <= n.
+  div $2,4
 lpe
 mov $1,$0

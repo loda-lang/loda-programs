@@ -10,8 +10,8 @@ lpb $3
   sub $0,$3
   lpb $0
     mov $2,$0
-    cal $2,254374 ; Digital roots of centered pentagonal numbers (A005891).
     trn $0,8
+    cal $2,254374 ; Digital roots of centered pentagonal numbers (A005891).
     sub $2,1
   lpe
   mov $4,$2

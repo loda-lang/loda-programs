@@ -4,5 +4,4 @@
 cal $0,6093 ; a(n) = prime(n) - 1.
 cal $0,145011 ; First differences of A007775.
 mov $1,$0
-sub $1,2
-div $1,2
+div $1,3

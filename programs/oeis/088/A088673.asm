@@ -5,7 +5,4 @@ mov $2,$0
 add $0,1
 cal $2,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
 mod $0,$2
-lpb $0
-  sub $0,1
-  add $1,1
-lpe
+mov $1,$0

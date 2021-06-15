@@ -3,10 +3,6 @@
 
 cal $0,321100 ; Sequence {a(n), n>=0} satisfying the continued fraction relation: if z = [a(0) + 1; a(1) + 1, a(2) + 1, a(3) + 1, ..., a(n) + 1, ...], then 7*z = [a(0) + 9; a(1) + 11, a(2) + 11, a(3) + 11, ..., a(n) + 11, ...].
 add $0,2
-mov $2,$0
 dif $0,2
-lpb $2
-  mul $0,$3
-  dif $2,3
-lpe
+mod $0,3
 mov $1,$0

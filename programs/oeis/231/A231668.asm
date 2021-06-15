@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,53824 ; Sum of digits of (n written in base 5).
   sub $0,1
+  cal $2,53824 ; Sum of digits of (n written in base 5).
   add $1,$2
 lpe

@@ -3,9 +3,8 @@
 
 lpb $0
   mul $0,3
-  mov $2,$0
-  cal $2,27961 ; a(n) = Lucas(n+2) - 3.
+  mov $1,$0
   mod $0,3
-  add $1,$2
+  cal $1,27961 ; a(n) = Lucas(n+2) - 3.
 lpe
 add $1,3

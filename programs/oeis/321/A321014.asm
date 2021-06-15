@@ -4,28 +4,28 @@
 mov $4,$0
 mov $6,2
 lpb $6
-  clr $0,4
   mov $0,$4
+  mov $2,0
+  mov $3,0
   sub $6,1
   add $0,$6
   sub $0,1
   lpb $0
-    mov $1,$0
+    mov $5,$0
     sub $0,3
-    sub $1,2
     add $2,1
-    div $1,$2
-    add $3,$1
+    sub $5,2
+    div $5,$2
+    add $3,$5
   lpe
-  mov $1,$3
+  mov $5,$3
   mov $7,$6
   lpb $7
-    mov $5,$1
+    mov $1,$5
     sub $7,1
   lpe
 lpe
 lpb $4
+  sub $1,$5
   mov $4,0
-  sub $5,$1
 lpe
-mov $1,$5

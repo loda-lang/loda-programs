@@ -4,8 +4,8 @@
 lpb $0
   add $1,$0
   mov $2,$0
-  cal $2,76694 ; a(n) = n - sum of the distinct prime factors of n.
   sub $0,1
+  cal $2,76694 ; a(n) = n - sum of the distinct prime factors of n.
   add $1,$2
 lpe
 add $1,1

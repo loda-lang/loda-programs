@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,65357 ; a(n) = (-1)^pi(n) where pi(n) is the number of primes <= n.
   sub $0,1
+  cal $2,65357 ; a(n) = (-1)^pi(n) where pi(n) is the number of primes <= n.
   add $1,$2
 lpe
