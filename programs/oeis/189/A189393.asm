@@ -6,12 +6,11 @@ mul $2,$0
 sub $2,$0
 add $2,1
 sub $2,$0
-mov $3,$2
-mul $2,2
 cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+mov $1,$2
+mul $2,2
 mul $0,$2
-mul $2,$3
+mul $2,$1
 mul $0,$2
 mov $1,$0
-mul $1,3
-div $1,12
+div $1,4

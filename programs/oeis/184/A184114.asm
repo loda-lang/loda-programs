@@ -20,9 +20,9 @@ lpb $12
     lpb $0
       mul $0,5
       mov $2,$0
+      mov $0,0
       max $2,0
       cal $2,202305 ; Floor(sqrt(5*n)).
-      mov $0,0
     lpe
     mov $1,$2
     mov $9,$8

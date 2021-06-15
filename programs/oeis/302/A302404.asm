@@ -4,7 +4,7 @@
 add $0,1065
 lpb $0
   mov $1,$0
-  cal $1,302405 ; Total domination number of the n-prism graph.
   mod $0,8
+  cal $1,302405 ; Total domination number of the n-prism graph.
 lpe
 sub $1,710

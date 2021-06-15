@@ -10,9 +10,9 @@ lpb $29
   sub $0,$29
   add $2,3
   mov $3,$0
-  sub $3,1
   cal $0,45966 ; a(1)=3; if n = Product p_i^e_i, n > 1, then a(n) = Product p_{i+2}^e_i.
   add $1,1
+  sub $3,1
   add $3,$1
   sub $1,$0
   add $1,3

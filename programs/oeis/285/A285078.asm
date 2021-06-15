@@ -4,8 +4,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  cal $2,285075 ; Positions of 1 in A285073; complement of A285074.
   div $0,2730
   sub $1,1
+  cal $2,285075 ; Positions of 1 in A285073; complement of A285074.
   add $1,$2
 lpe

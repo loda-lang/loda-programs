@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,341642 ; Number of strictly superior prime divisors of n.
   sub $0,1
+  cal $2,341642 ; Number of strictly superior prime divisors of n.
   add $1,$2
 lpe

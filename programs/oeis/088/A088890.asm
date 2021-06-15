@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,255178 ; Second differences of eighth powers (A001016).
   sub $0,1
+  cal $2,255178 ; Second differences of eighth powers (A001016).
   add $1,$2
   sub $1,2
 lpe

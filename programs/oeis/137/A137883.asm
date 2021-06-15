@@ -3,6 +3,5 @@
 
 add $0,3
 cal $0,20875 ; Number of (undirected) Hamiltonian paths in n-Moebius ladder.
+mul $0,2
 mov $1,$0
-div $1,4
-mul $1,8

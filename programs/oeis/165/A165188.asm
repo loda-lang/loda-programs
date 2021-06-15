@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  cal $2,114209 ; Number of permutations of [n] having exactly two fixed points and avoiding the patterns 123 and 231.
   trn $0,2
+  cal $2,114209 ; Number of permutations of [n] having exactly two fixed points and avoiding the patterns 123 and 231.
   add $1,$2
 lpe

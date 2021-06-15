@@ -9,7 +9,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300076](http://oeis.org/A300076) ([L09 program](300/A300076.asm)): A sequence based on the period 6 sequence A300075.
 * [A300222](http://oeis.org/A300222) ([L03 program](300/A300222.asm)): In ternary (base-3) representation of n, replace 1's with 0's.
 * [A300254](http://oeis.org/A300254) ([L12 program](300/A300254.asm)): a(n) = 25*(n + 1)*(4*n + 3)*(5*n + 4)/3.
-* [A300270](http://oeis.org/A300270) ([L03 program](300/A300270.asm)): a(n) = Sum_{1 <= i <= j <= n} mu(i*j)*floor((n/i)/j)).
+* [A300270](http://oeis.org/A300270) ([L11 program](300/A300270.asm)): a(n) = Sum_{1 <= i <= j <= n} mu(i*j)*floor((n/i)/j)).
 * [A300287](http://oeis.org/A300287) ([L18 program](300/A300287.asm)): a(n) = floor((1/n) * Sum_{k=1..n} sqrt(k)).
 * [A300290](http://oeis.org/A300290) ([L08 program](300/A300290.asm)): Period 6: repeat [0, 1, 2, 2, 3, 3].
 * [A300293](http://oeis.org/A300293) ([L07 program](300/A300293.asm)): A sequence based on the period 6 sequence A151899.
@@ -80,7 +80,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A301717](http://oeis.org/A301717) ([L10 program](301/A301717.asm)): Partial sums of A301716.
 * [A301718](http://oeis.org/A301718) ([L16 program](301/A301718.asm)): Coordination sequence for node of type V2 in "kre" 2-D tiling (or net).
 * [A301719](http://oeis.org/A301719) ([L15 program](301/A301719.asm)): Partial sums of A301718.
-* [A301720](http://oeis.org/A301720) ([L17 program](301/A301720.asm)): Coordination sequence for node of type V1 in "krb" 2-D tiling (or net).
+* [A301720](http://oeis.org/A301720) ([L16 program](301/A301720.asm)): Coordination sequence for node of type V1 in "krb" 2-D tiling (or net).
 * [A301721](http://oeis.org/A301721) ([L05 program](301/A301721.asm)): Partial sums of A301720.
 * [A301722](http://oeis.org/A301722) ([L15 program](301/A301722.asm)): Coordination sequence for node of type V2 in "krb" 2-D tiling (or net).
 * [A301723](http://oeis.org/A301723) ([L15 program](301/A301723.asm)): Partial sums of A301722.
@@ -266,7 +266,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304834](http://oeis.org/A304834) ([L06 program](304/A304834.asm)): a(n) = 36*n^2 - 8*n - 2 (n >=1).
 * [A304835](http://oeis.org/A304835) ([L08 program](304/A304835.asm)): a(n) = 108*n^2 - 104*n + 20 (n>=1).
 * [A304836](http://oeis.org/A304836) ([L05 program](304/A304836.asm)): a(n) = 27*n^2 - 51*n + 24, n>=1.
-* [A304837](http://oeis.org/A304837) ([L10 program](304/A304837.asm)): a(n) = 6*(n - 1)*(81*n - 104) for n >= 1.
+* [A304837](http://oeis.org/A304837) ([L09 program](304/A304837.asm)): a(n) = 6*(n - 1)*(81*n - 104) for n >= 1.
 * [A304838](http://oeis.org/A304838) ([L07 program](304/A304838.asm)): a(n) = 1944*n^2 - 5016*n + 3138 (n >= 1).
 * [A304839](http://oeis.org/A304839) ([L03 program](304/A304839.asm)): a(n) = 61*n - 38 (n>=1).
 * [A304840](http://oeis.org/A304840) ([L03 program](304/A304840.asm)): a(n) = 52*n - 2 (n>=1).
@@ -623,7 +623,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A313115](http://oeis.org/A313115) ([L18 program](313/A313115.asm)): Coordination sequence Gal.4.43.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313116](http://oeis.org/A313116) ([L17 program](313/A313116.asm)): Coordination sequence Gal.5.116.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313117](http://oeis.org/A313117) ([L24 program](313/A313117.asm)): Coordination sequence Gal.6.134.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-* [A313147](http://oeis.org/A313147) ([L37 program](313/A313147.asm)): Coordination sequence Gal.4.63.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+* [A313147](http://oeis.org/A313147) ([L36 program](313/A313147.asm)): Coordination sequence Gal.4.63.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313152](http://oeis.org/A313152) ([L16 program](313/A313152.asm)): Coordination sequence Gal.5.112.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313232](http://oeis.org/A313232) ([L09 program](313/A313232.asm)): Coordination sequence Gal.3.14.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 * [A313280](http://oeis.org/A313280) ([L11 program](313/A313280.asm)): Coordination sequence Gal.3.15.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
@@ -1051,7 +1051,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319956](http://oeis.org/A319956) ([L17 program](319/A319956.asm)): Image of 3 under repeated application of the morphism 1 -> 1, 2 -> 22, 3 -> 312.
 * [A319988](http://oeis.org/A319988) ([L05 program](319/A319988.asm)): a(n) = 1 if n is divisible by the square of its largest prime factor, 0 otherwise.
 * [A319995](http://oeis.org/A319995) ([L20 program](319/A319995.asm)): Number of divisors of n of the form 6*k + 5.
-* [A319998](http://oeis.org/A319998) ([L08 program](319/A319998.asm)): a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
+* [A319998](http://oeis.org/A319998) ([L07 program](319/A319998.asm)): a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
 * [A320007](http://oeis.org/A320007) ([L11 program](320/A320007.asm)): If there is k >= 0 such that floor(n/4^k) is odd and A320006(k) is 1, then a(n) = 1, otherwise a(n) = 0.
 * [A320016](http://oeis.org/A320016) ([L06 program](320/A320016.asm)): a(1) = a(2) = 1; for n > 2, a(n) = A000005(n) * a(A000005(n)), where A000005(n) gives the number of divisors of n.
 * [A320065](http://oeis.org/A320065) ([L10 program](320/A320065.asm)): a(n) is the smallest integer i such that binomial(2i,i) > n.
@@ -1770,7 +1770,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336845](http://oeis.org/A336845) ([L03 program](336/A336845.asm)): a(n) = A000005(n) * A003961(n), where A003961 is the prime shift towards larger primes, and A000005 gives the number of divisors of n, and also of A003961(n).
 * [A336850](http://oeis.org/A336850) ([L03 program](336/A336850.asm)): a(n) = gcd(A003961(n), sigma(A003961(n))), where A003961 is the prime shift towards larger primes.
 * [A336851](http://oeis.org/A336851) ([L03 program](336/A336851.asm)): a(n) = sigma(A003961(n)) - A003961(n), where A003961 is a prime shift towards larger primes, sigma is the sum of divisors.
-* [A336853](http://oeis.org/A336853) ([L05 program](336/A336853.asm)): a(n) = A003961(n) - n, where A003961 is the prime shift towards larger primes.
+* [A336853](http://oeis.org/A336853) ([L04 program](336/A336853.asm)): a(n) = A003961(n) - n, where A003961 is the prime shift towards larger primes.
 * [A336856](http://oeis.org/A336856) ([L03 program](336/A336856.asm)): Prime-shifted analog of gcd(d(n), sigma(n)): a(n) = gcd(A000005(n), A003973(n)).
 * [A336861](http://oeis.org/A336861) ([L06 program](336/A336861.asm)): a(n) = ceiling((n-1-sqrt(n+1))/2).
 * [A336867](http://oeis.org/A336867) ([L06 program](336/A336867.asm)): Numbers n such that n! does not have distinct prime multiplicities.
@@ -1791,7 +1791,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337194](http://oeis.org/A337194) ([L06 program](337/A337194.asm)): a(n) = 1 + A000265(sigma(n)), where A000265 gives the odd part.
 * [A337195](http://oeis.org/A337195) ([L03 program](337/A337195.asm)): The 2-adic valuation of 1+A000265(sigma(n)), where A000265 gives the odd part.
 * [A337252](http://oeis.org/A337252) ([L10 program](337/A337252.asm)): Digits of 2^n can be rearranged with no leading zeros to form t^2, for t not a power of 2.
-* [A337273](http://oeis.org/A337273) ([L05 program](337/A337273.asm)): Number of distinct positive integer pairs, (s,t), such that s < t < n where neither s nor t divides n.
+* [A337273](http://oeis.org/A337273) ([L04 program](337/A337273.asm)): Number of distinct positive integer pairs, (s,t), such that s < t < n where neither s nor t divides n.
 * [A337281](http://oeis.org/A337281) ([L03 program](337/A337281.asm)): a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
 * [A337282](http://oeis.org/A337282) ([L06 program](337/A337282.asm)): Partial sums of A337281.
 * [A337283](http://oeis.org/A337283) ([L11 program](337/A337283.asm)): a(n) = Sum_{i=0..n} i*T(i)^2, where T(i) = A000073(i) is the i-th tribonacci number.
@@ -2102,7 +2102,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344864](http://oeis.org/A344864) ([L04 program](344/A344864.asm)): a(n) = mu(d(n)).
 * [A344866](http://oeis.org/A344866) ([L09 program](344/A344866.asm)): Number of polygons formed when every pair of vertices of a regular (2n-1)-gon are joined by an infinite line.
 * [A344907](http://oeis.org/A344907) ([L08 program](344/A344907.asm)): Number of polygon edges formed when every pair of vertices of a regular (2n-1)-gon are joined by an infinite line.
-* [A345019](http://oeis.org/A345019) ([L06 program](345/A345019.asm)): Numbers whose last digit is refactorable.
+* [A345019](http://oeis.org/A345019) ([L13 program](345/A345019.asm)): Numbers whose last digit is refactorable.
 * [A345021](http://oeis.org/A345021) ([L06 program](345/A345021.asm)): a(n) is the result of replacing 2's by 0's in the hereditary base-2 expansion of n.
 * [A345028](http://oeis.org/A345028) ([L09 program](345/A345028.asm)): a(n) = Sum_{k=1..n} 2^(floor(n/k) - 1).
 * [A345071](http://oeis.org/A345071) ([L04 program](345/A345071.asm)): Sums of two consecutive odd-indexed primes.

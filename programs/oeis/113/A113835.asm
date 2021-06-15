@@ -2,8 +2,9 @@
 ; 1,5,13,45,109,365,877,2925,7021,23405,56173,187245,449389,1497965,3595117,11983725,28760941,95869805,230087533,766958445,1840700269,6135667565,14725602157,49085340525,117804817261,392682724205
 
 add $0,1
-cal $0,164737 ; a(n) = 8*a(n-2) for n > 2; a(1) = 5, a(2) = 12.
+mul $0,3
+cal $0,238549 ; a(n) is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).
 mov $1,$0
-div $1,28
-mul $1,4
+sub $1,8
+div $1,7
 add $1,1

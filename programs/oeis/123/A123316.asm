@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,130493 ; Triangle read by rows in which row n contains n! repeated n times.
   sub $0,1
+  cal $2,130493 ; Triangle read by rows in which row n contains n! repeated n times.
   add $1,$2
 lpe
 div $1,2

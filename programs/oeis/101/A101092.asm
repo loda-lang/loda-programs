@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  cal $2,539 ; Sum of 5th powers: 0^5 + 1^5 + 2^5 + ... + n^5.
   sub $0,1
+  cal $2,539 ; Sum of 5th powers: 0^5 + 1^5 + 2^5 + ... + n^5.
   add $1,$2
 lpe

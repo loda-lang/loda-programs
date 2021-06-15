@@ -7,13 +7,12 @@ lpb $0
   mov $2,1
   sub $4,1
   add $2,$4
-  clr $4,1
   sub $2,1
   mov $0,$2
   gcd $0,2
   sub $2,1
   mul $2,4
-  add $4,4
+  mov $4,4
 lpe
 pow $2,$0
 mov $1,$2

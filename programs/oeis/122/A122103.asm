@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,50997 ; Fifth powers of primes.
   sub $0,1
+  cal $2,50997 ; Fifth powers of primes.
   add $1,$2
 lpe
 add $1,32

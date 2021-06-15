@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,280710 ; Characteristic function of squarefree semiprimes.
   sub $0,1
+  cal $2,280710 ; Characteristic function of squarefree semiprimes.
   add $1,$2
 lpe

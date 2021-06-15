@@ -3,7 +3,7 @@
 
 lpb $0
   trn $0,1
-  add $1,17
   cal $0,212598 ; a(n) = n - m!, where m is the largest number such that m! <= n.
+  add $1,17
 lpe
 div $1,17

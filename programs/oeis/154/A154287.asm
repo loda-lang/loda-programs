@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,274089 ; Numbers repeated except that powers of 2 only appear once.
   sub $0,1
+  cal $2,274089 ; Numbers repeated except that powers of 2 only appear once.
   add $1,$2
 lpe
 add $1,1

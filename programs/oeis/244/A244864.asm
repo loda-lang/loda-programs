@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  sub $0,1
   add $2,1
   cal $2,139594 ; Number of different n X n symmetric matrices with nonnegative entries summing to 4. Also number of symmetric oriented graphs with 4 arcs on n points.
-  sub $0,1
   add $1,$2
 lpe
 add $1,1
