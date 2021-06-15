@@ -4,7 +4,6 @@
 cal $0,115420 ; Numbers having a 1 in position 4 of their binary expansion.
 mul $0,2
 cal $0,47527 ; Numbers that are congruent to {0, 1, 2, 7} mod 8.
-mul $0,3
 mov $1,$0
-sub $1,192
-div $1,6
+sub $1,64
+div $1,2

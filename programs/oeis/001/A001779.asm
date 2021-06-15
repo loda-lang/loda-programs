@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1769 ; Expansion of 1/((1+x)*(1-x)^7).
   sub $0,1
+  cal $2,1769 ; Expansion of 1/((1+x)*(1-x)^7).
   add $1,$2
 lpe
 add $1,1

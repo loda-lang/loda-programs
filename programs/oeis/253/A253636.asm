@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  cal $2,542 ; Sum of 8th powers: 1^8 + 2^8 + ... + n^8.
   sub $0,1
+  cal $2,542 ; Sum of 8th powers: 1^8 + 2^8 + ... + n^8.
   add $1,$2
 lpe

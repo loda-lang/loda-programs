@@ -3,7 +3,6 @@
 
 cal $0,71051 ; Number of 1's in n-th row of triangle in A071035.
 lpb $0
-  sub $0,1
-  pow $0,2
+  bin $0,2
 lpe
 mov $1,$0

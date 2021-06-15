@@ -3,10 +3,10 @@
 
 add $0,1
 mov $1,$0
+cal $0,18921 ; Define the generalized Pisot sequence T(a(0),a(1)) by: a(n+2) is the greatest integer such that a(n+2)/a(n+1) < a(n+1)/a(n). This is T(4,8).
 mul $1,2
 mov $2,2
 add $2,$1
-cal $0,18921 ; Define the generalized Pisot sequence T(a(0),a(1)) by: a(n+2) is the greatest integer such that a(n+2)/a(n+1) < a(n+1)/a(n). This is T(4,8).
 mov $1,$0
 sub $1,$2
 sub $1,4

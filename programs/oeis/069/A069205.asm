@@ -3,10 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,61142 ; Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
   sub $0,1
+  cal $2,61142 ; Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
   add $1,$2
 lpe
-div $1,2
-mul $1,2
 add $1,1

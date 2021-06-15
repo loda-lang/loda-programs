@@ -4,8 +4,8 @@
 cal $0,73093 ; Number of prime power divisors of n.
 mov $1,$0
 sub $0,1
-add $1,1
 cal $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+add $1,1
 lpb $1
   add $0,1
   mod $1,3

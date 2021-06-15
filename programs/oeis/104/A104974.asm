@@ -1,7 +1,13 @@
 ; A104974: A Fredholm-Rueppel triangle.
 ; 1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1
 
-cal $0,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
-cal $0,129760 ; Bitwise AND of binary representation of n-1 and n.
+cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
+add $0,2
+lpb $0
+  dif $0,2
+lpe
+add $0,54
+div $0,56
 mov $1,$0
-cmp $1,0
+add $1,1
+mod $1,2

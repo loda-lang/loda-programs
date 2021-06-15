@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,7844 ; Least positive integer k for which 3^n divides k!.
   sub $0,1
+  cal $2,7844 ; Least positive integer k for which 3^n divides k!.
   add $1,$2
 lpe
 add $1,1

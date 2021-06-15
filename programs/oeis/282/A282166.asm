@@ -6,8 +6,8 @@ mov $0,2
 add $0,$3
 lpb $0
   mov $2,$0
-  cal $2,193832 ; Irregular triangle read by rows in which row n lists 2n-1 copies of 2n-1 and n copies of 2n, for n >= 1.
   trn $0,2
+  cal $2,193832 ; Irregular triangle read by rows in which row n lists 2n-1 copies of 2n-1 and n copies of 2n, for n >= 1.
   add $1,$2
 lpe
 sub $1,2

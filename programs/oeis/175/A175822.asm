@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,36405 ; a(n) = ceiling(n^2/7).
   sub $0,1
+  cal $2,36405 ; a(n) = ceiling(n^2/7).
   add $1,$2
 lpe

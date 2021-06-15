@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
   trn $0,2
+  cal $2,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
   add $1,$2
 lpe

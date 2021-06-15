@@ -3,8 +3,8 @@
 
 mov $2,1
 sub $2,$0
-gcd $2,2
 cal $0,10125 ; Continued fraction for sqrt(21).
+gcd $2,2
 mov $1,$2
 add $1,5
 add $3,$0
