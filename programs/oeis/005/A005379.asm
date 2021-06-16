@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,293408 ; The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2 (golden ratio).
   sub $0,1
+  cal $2,293408 ; The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2 (golden ratio).
   mov $1,$2
   sub $1,2
   mov $3,$0

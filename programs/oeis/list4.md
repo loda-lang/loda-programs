@@ -23,7 +23,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A200439](http://oeis.org/A200439) ([L09 program](200/A200439.asm)): Decimal expansion of constant arising in clubbed binomial approximation for the lightbulb process.
 * [A200455](http://oeis.org/A200455) ([L10 program](200/A200455.asm)): Number of -n..n arrays x(0..2) of 3 elements with zero sum and nonzero first and second differences
 * [A200535](http://oeis.org/A200535) ([L16 program](200/A200535.asm)): G.f. satisfies: A(x) = exp( Sum_{n>=1} [Sum_{k=0..2*n} C(2*n,k)^2 * x^k] / A(x)^n * x^n/n ).
-* [A200648](http://oeis.org/A200648) ([L05 program](200/A200648.asm)): Length of Stolarsky representation of n.
+* [A200648](http://oeis.org/A200648) ([L04 program](200/A200648.asm)): Length of Stolarsky representation of n.
 * [A200672](http://oeis.org/A200672) ([L09 program](200/A200672.asm)): Partial sums of A173862.
 * [A200675](http://oeis.org/A200675) ([L03 program](200/A200675.asm)): Powers of 2 repeated 4 times.
 * [A200676](http://oeis.org/A200676) ([L18 program](200/A200676.asm)): Expansion of -(3*x^2-5*x+1)/(x^3-3*x^2+5*x-1).
@@ -396,6 +396,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A209188](http://oeis.org/A209188) ([L06 program](209/A209188.asm)): Smallest prime factor of n^2 + n - 1.
 * [A209189](http://oeis.org/A209189) ([L08 program](209/A209189.asm)): Smallest prime factor of n^2 + n + 1.
 * [A209229](http://oeis.org/A209229) ([L03 program](209/A209229.asm)): Characteristic function of powers of 2, cf. A000079.
+* [A209231](http://oeis.org/A209231) ([L08 program](209/A209231.asm)): Number of binary words of length n such that there is at least one 0  and every run of consecutive 0's is of length >= 4.
 * [A209262](http://oeis.org/A209262) ([L06 program](209/A209262.asm)): a(n) = 1 + 2*n^2 + 3*n^3 + 4*n^4.
 * [A209263](http://oeis.org/A209263) ([L56 program](209/A209263.asm)): a(n) = 1 + 2*n^2 + 3*n^3 + 4*n^4 + 5*n^5.
 * [A209264](http://oeis.org/A209264) ([L67 program](209/A209264.asm)): a(n) = 1 + 2*n^2 + 3*n^3 + 4*n^4 +5*n^5 + 6*n^6.
@@ -963,7 +964,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214946](http://oeis.org/A214946) ([L17 program](214/A214946.asm)): Number of squarefree words of length 7 in an (n+1)-ary alphabet.
 * [A214955](http://oeis.org/A214955) ([L07 program](214/A214955.asm)): Number of solid standard Young tableaux of shape [[n,n-1],[1]].
 * [A214962](http://oeis.org/A214962) ([L10 program](214/A214962.asm)): a(n) is the least m > 0 such that Fibonacci(n-m) divides Fibonacci(2n+2m).
-* [A214971](http://oeis.org/A214971) ([L04 program](214/A214971.asm)): Integers k for which the base-phi representation of k includes 1.
+* [A214971](http://oeis.org/A214971) ([L07 program](214/A214971.asm)): Integers k for which the base-phi representation of k includes 1.
 * [A214972](http://oeis.org/A214972) ([L06 program](214/A214972.asm)): a(n) = a(floor(2*(n-1)/3)) + 1, where a(0) = 0.
 * [A214982](http://oeis.org/A214982) ([L04 program](214/A214982.asm)): a(n) = (Fibonacci(5n)/Fibonacci(n) - 5)/50.
 * [A215004](http://oeis.org/A215004) ([L06 program](215/A215004.asm)): a(0) = a(1) = 1; for n>1, a(n) = a(n-1) + a(n-2) + floor(n/2).
@@ -2501,7 +2502,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245402](http://oeis.org/A245402) ([L11 program](245/A245402.asm)): Number of nonnegative integers with property that their base 7/6 expansion (see A024643) has n digits.
 * [A245403](http://oeis.org/A245403) ([L03 program](245/A245403.asm)): Number of nonnegative integers with property that their base 10/9 expansion (see A024664) has n digits.
 * [A245404](http://oeis.org/A245404) ([L32 program](245/A245404.asm)): Number of nonnegative integers with property that their base 7/2 expansion (see A024639) has n digits.
-* [A245415](http://oeis.org/A245415) ([L84 program](245/A245415.asm)): Number of nonnegative integers with property that their base 5/2 expansion (see A024632) has n digits.
+* [A245415](http://oeis.org/A245415) ([L83 program](245/A245415.asm)): Number of nonnegative integers with property that their base 5/2 expansion (see A024632) has n digits.
 * [A245416](http://oeis.org/A245416) ([L26 program](245/A245416.asm)): Number of nonnegative integers with property that their base 9/2 expansion (see A024650) has n digits.
 * [A245418](http://oeis.org/A245418) ([L55 program](245/A245418.asm)): Number of nonnegative integers with property that their base 5/3 expansion (see A024633) has n digits.
 * [A245420](http://oeis.org/A245420) ([L60 program](245/A245420.asm)): Number of nonnegative integers with property that their base 8/5 expansion (see A024647) has n digits.

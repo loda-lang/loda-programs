@@ -4,6 +4,6 @@
 mov $1,$0
 lpb $0
   mov $1,$0
-  cal $1,61205 ; a(n) = n times R(n) where R(n) (A004086) is the digit reversal of n.
   mod $0,10
+  cal $1,61205 ; a(n) = n times R(n) where R(n) (A004086) is the digit reversal of n.
 lpe

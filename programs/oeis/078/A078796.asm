@@ -5,8 +5,8 @@ lpb $0
   mov $2,$0
   add $4,$0
   mul $0,$3
-  cal $2,89809 ; Complement of A078588.
   mov $1,$4
+  cal $2,89809 ; Complement of A078588.
   add $1,$2
 lpe
 add $1,1

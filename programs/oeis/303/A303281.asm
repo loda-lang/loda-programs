@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,66959 ; Bigomega(n^n) where bigomega(x) is the number of prime factors in x (counted with multiplicity).
   sub $0,1
+  cal $2,66959 ; Bigomega(n^n) where bigomega(x) is the number of prime factors in x (counted with multiplicity).
   add $1,$2
 lpe

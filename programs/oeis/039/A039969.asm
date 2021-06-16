@@ -4,7 +4,4 @@
 add $0,1
 cal $0,132328 ; a(n) = Product_{k>0} (1+floor(n/3^k)).
 mod $0,3
-add $2,$0
-mul $2,2
-add $1,$2
-div $1,2
+mov $1,$0

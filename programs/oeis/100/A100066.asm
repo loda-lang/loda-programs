@@ -4,8 +4,8 @@
 mov $5,$0
 mov $7,$0
 lpb $7
-  clr $0,5
   mov $0,$5
+  mov $2,0
   sub $7,1
   sub $0,$7
   lpb $0,3

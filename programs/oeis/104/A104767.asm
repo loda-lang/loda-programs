@@ -4,8 +4,8 @@
 add $0,3
 lpb $0
   mov $2,$0
-  cal $2,77943 ; Expansion of 1/(1-2*x+2*x^2-2*x^3).
   mov $0,3
+  cal $2,77943 ; Expansion of 1/(1-2*x+2*x^2-2*x^3).
   add $1,$2
   mul $1,2
 lpe

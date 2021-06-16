@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,25781 ; Expansion of 1/((1-x)(1-x^5)(1-x^12)).
   sub $0,3
+  cal $2,25781 ; Expansion of 1/((1-x)(1-x^5)(1-x^12)).
   add $1,$2
 lpe
 add $1,1

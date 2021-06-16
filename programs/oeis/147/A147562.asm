@@ -3,5 +3,4 @@
 
 cal $0,160410 ; Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
 mov $1,$0
-mul $1,2
-div $1,6
+div $1,3

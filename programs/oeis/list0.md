@@ -885,6 +885,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005248](http://oeis.org/A005248) ([L07 program](005/A005248.asm)): Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
 * [A005251](http://oeis.org/A005251) ([L14 program](005/A005251.asm)): a(0) = 0, a(1) = a(2) = a(3) = 1; thereafter, a(n) = a(n-1) + a(n-2) + a(n-4).
 * [A005252](http://oeis.org/A005252) ([L08 program](005/A005252.asm)): a(n) = Sum_{k=0..floor(n/4)} binomial(n-2k,2k).
+* [A005253](http://oeis.org/A005253) ([L09 program](005/A005253.asm)): Number of binary words not containing ..01110...
 * [A005262](http://oeis.org/A005262) ([L17 program](005/A005262.asm)): a(n) = floor((7*2^(n+1)-9*n-10)/3).
 * [A005286](http://oeis.org/A005286) ([L05 program](005/A005286.asm)): a(n) = (n + 3)*(n^2 + 6*n + 2)/6.
 * [A005287](http://oeis.org/A005287) ([L10 program](005/A005287.asm)): Number of permutations of [n] with four inversions.
@@ -3437,7 +3438,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025734](http://oeis.org/A025734) ([L12 program](025/A025734.asm)): Index of 9^n within sequence of numbers of form 2^i*9^j.
 * [A025735](http://oeis.org/A025735) ([L24 program](025/A025735.asm)): Index of 9^n within sequence of numbers of form 5^i*9^j.
 * [A025736](http://oeis.org/A025736) ([L26 program](025/A025736.asm)): Index of 9^n within sequence of numbers of form 6^i*9^j.
-* [A025737](http://oeis.org/A025737) ([L47 program](025/A025737.asm)): Index of 9^n within sequence of numbers of form 7^i*9^j.
+* [A025737](http://oeis.org/A025737) ([L46 program](025/A025737.asm)): Index of 9^n within sequence of numbers of form 7^i*9^j.
 * [A025738](http://oeis.org/A025738) ([L46 program](025/A025738.asm)): Index of 9^n within sequence of numbers of form 8^i*9^j.
 * [A025740](http://oeis.org/A025740) ([L07 program](025/A025740.asm)): Index of 10^n within sequence of numbers of form 2^i*10^j.
 * [A025743](http://oeis.org/A025743) ([L14 program](025/A025743.asm)): Index of 10^n within sequence of numbers of form 5^i*10^j.
@@ -4848,7 +4849,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038165](http://oeis.org/A038165) ([L44 program](038/A038165.asm)): G.f.: 1/((1-x)*(1-x^2))^5.
 * [A038167](http://oeis.org/A038167) ([L08 program](038/A038167.asm)): G.f.: x*(1+3*x+x^2)/((1-x^2)^2*(1-x^5)).
 * [A038179](http://oeis.org/A038179) ([L08 program](038/A038179.asm)): Result of second stage of sieve of Eratosthenes (after eliminating multiples of 2 and 3).
-* [A038183](http://oeis.org/A038183) ([L07 program](038/A038183.asm)): One-dimensional cellular automaton 'sigma-minus' (Rule 90): 000,001,010,011,100,101,110,111 -> 0,1,0,1,1,0,1,0.
+* [A038183](http://oeis.org/A038183) ([L06 program](038/A038183.asm)): One-dimensional cellular automaton 'sigma-minus' (Rule 90): 000,001,010,011,100,101,110,111 -> 0,1,0,1,1,0,1,0.
 * [A038189](http://oeis.org/A038189) ([L06 program](038/A038189.asm)): Bit to left of least significant 1-bit in binary expansion of n.
 * [A038192](http://oeis.org/A038192) ([L06 program](038/A038192.asm)): Bisection of A001317.
 * [A038194](http://oeis.org/A038194) ([L05 program](038/A038194.asm)): Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
@@ -4960,7 +4961,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A039717](http://oeis.org/A039717) ([L09 program](039/A039717.asm)): Row sums of convolution triangle A030523.
 * [A039720](http://oeis.org/A039720) ([L06 program](039/A039720.asm)): Period of n-countdown club-passing juggling pattern.
 * [A039731](http://oeis.org/A039731) ([L05 program](039/A039731.asm)): a(n)=MAX{p(n) mod q, where prime q < p(n)=n-th prime}.
-* [A039732](http://oeis.org/A039732) ([L07 program](039/A039732.asm)): a(n)=(1/2)*s(n+1), s=A039731.
+* [A039732](http://oeis.org/A039732) ([L05 program](039/A039732.asm)): a(n)=(1/2)*s(n+1), s=A039731.
 * [A039733](http://oeis.org/A039733) ([L04 program](039/A039733.asm)): a(n)=k such that prime(k) is the prime q<prime(n) for which (prime(n) mod q) is maximal.
 * [A039734](http://oeis.org/A039734) ([L05 program](039/A039734.asm)): a(n)=the prime q<prime(n) for which (prime(n) mod q) is maximal.
 * [A039736](http://oeis.org/A039736) ([L04 program](039/A039736.asm)): a(n) = number of primes q<p having (p mod q) = 2, where p = n-th prime.
@@ -6046,7 +6047,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048250](http://oeis.org/A048250) ([L03 program](048/A048250.asm)): Sum of the squarefree divisors of n.
 * [A048260](http://oeis.org/A048260) ([L19 program](048/A048260.asm)): The sum of 2 (not necessarily distinct) abundant numbers.
 * [A048271](http://oeis.org/A048271) ([L07 program](048/A048271.asm)): a(0) = 1, a(n+1) = -3*a(n) mod 11.
-* [A048272](http://oeis.org/A048272) ([L04 program](048/A048272.asm)): Number of odd divisors of n minus number of even divisors of n.
+* [A048272](http://oeis.org/A048272) ([L03 program](048/A048272.asm)): Number of odd divisors of n minus number of even divisors of n.
 * [A048298](http://oeis.org/A048298) ([L09 program](048/A048298.asm)): a(n) = n if n=2^i with i=0,1,2,3,...; else a(n) = 0.
 * [A048328](http://oeis.org/A048328) ([L07 program](048/A048328.asm)): Numbers that are repdigits in base 3.
 * [A048329](http://oeis.org/A048329) ([L08 program](048/A048329.asm)): a(n) in base 4 is a repdigit.
@@ -6207,7 +6208,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049598](http://oeis.org/A049598) ([L03 program](049/A049598.asm)): 12 times triangular numbers.
 * [A049606](http://oeis.org/A049606) ([L06 program](049/A049606.asm)): Largest odd divisor of n!.
 * [A049610](http://oeis.org/A049610) ([L04 program](049/A049610.asm)): a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3)).
-* [A049611](http://oeis.org/A049611) ([L03 program](049/A049611.asm)): a(n) = T(n,2), array T as in A049600.
+* [A049611](http://oeis.org/A049611) ([L12 program](049/A049611.asm)): a(n) = T(n,2), array T as in A049600.
 * [A049613](http://oeis.org/A049613) ([L08 program](049/A049613.asm)): a(n) = 2n - (largest prime < 2n-2).
 * [A049616](http://oeis.org/A049616) ([L12 program](049/A049616.asm)): a(n)=Sum{T(i,n-i): i=0,1,...,n}, array T as in A049615.
 * [A049617](http://oeis.org/A049617) ([L04 program](049/A049617.asm)): a(n)=Sum{((-1)^i)*T(i,2n-i): i=0,1,...,2n}, array T as in A049615.

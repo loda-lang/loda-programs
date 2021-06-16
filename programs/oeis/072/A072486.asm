@@ -4,8 +4,8 @@
 mov $1,32
 mov $2,$0
 lpb $2
-  cal $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   sub $0,1
+  cal $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   mul $1,$2
   mov $2,$0
 lpe
