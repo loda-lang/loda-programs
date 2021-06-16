@@ -3,7 +3,7 @@
 
 cal $0,127948 ; Triangle, A004736 * A127899.
 add $0,1
-lpb $0
-  mov $0,0
-  add $1,1
-lpe
+mul $0,32
+trn $0,1
+mov $1,$0
+mod $1,2

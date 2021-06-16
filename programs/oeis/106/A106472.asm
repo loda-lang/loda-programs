@@ -7,8 +7,7 @@ lpb $4
   mov $0,$2
   sub $4,1
   add $0,$4
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,339252 ; a(0) = 1, a(1) = 4, a(2) = 11, and a(n) = 4*a(n-1) - 4*a(n-2) for n >= 3.
   mov $3,$0
   mov $5,$4

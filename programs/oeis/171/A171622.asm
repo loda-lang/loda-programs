@@ -1,0 +1,17 @@
+; A171622: Floor(n-th noncomposite / n).
+; 1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+
+mov $5,$0
+trn $0,1
+cal $0,6005 ; The odd prime numbers together with 1.
+mov $2,$5
+mov $3,$5
+lpb $2
+  cmp $2,1
+  add $3,1
+lpe
+mov $1,$0
+mov $4,$3
+cmp $4,0
+add $3,$4
+div $1,$3
