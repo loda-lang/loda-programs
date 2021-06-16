@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,62731 ; Sum of divisors of 2*n.
   sub $0,1
+  cal $2,62731 ; Sum of divisors of 2*n.
   add $1,$2
 lpe
 add $1,3

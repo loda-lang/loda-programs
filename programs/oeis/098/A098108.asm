@@ -4,9 +4,10 @@
 mov $1,$0
 cal $0,53186 ; Square excess of n: difference between n and largest square <= n.
 lpb $0
-  clr $0,12
-  cmp $26,0
-  add $0,$26
+  mov $0,0
+  mov $1,0
+  cmp $2,0
+  add $0,$2
   sub $0,1
 lpe
 mod $1,2

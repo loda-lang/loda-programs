@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,74324 ; a(2n+1) = 3^n, a(2n) = 4*3^(n-1) except for a(0) = 1.
   sub $0,1
+  cal $2,74324 ; a(2n+1) = 3^n, a(2n) = 4*3^(n-1) except for a(0) = 1.
   add $1,$2
 lpe
 mul $1,3

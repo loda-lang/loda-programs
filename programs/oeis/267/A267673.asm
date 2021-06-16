@@ -5,8 +5,6 @@ mov $2,$0
 cmp $2,0
 add $0,$2
 cal $0,75438 ; Triangle read by rows giving successive iterations of the Rule 60 elementary cellular automaton starting with a single ON cell where row n is of length 2n+1.
-sub $0,9
 mov $1,$0
-mod $1,2
-add $1,2
+add $1,1
 mod $1,2

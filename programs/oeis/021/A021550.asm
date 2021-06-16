@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,139716 ; If k is the largest divisor of n that is <= sqrt(n) then a(n) = n - k^2.
   trn $0,6
+  cal $2,139716 ; If k is the largest divisor of n that is <= sqrt(n) then a(n) = n - k^2.
   mov $1,$2
   sub $1,2
   mov $3,$2

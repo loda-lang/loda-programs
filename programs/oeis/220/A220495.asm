@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,220494 ; Number of toothpicks and D-toothpicks after n-th stage in the structure of the D-toothpick "wide" triangle of the first kind.
   mov $2,$3
   mul $2,$0

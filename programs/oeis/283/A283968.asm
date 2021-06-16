@@ -4,8 +4,8 @@
 mov $1,$0
 lpb $0
   mov $2,$0
-  cal $2,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
   sub $0,1
+  cal $2,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
   add $1,$2
 lpe
 add $1,1

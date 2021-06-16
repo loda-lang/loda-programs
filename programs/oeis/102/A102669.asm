@@ -4,8 +4,8 @@
 mul $0,5
 lpb $0
   mov $2,$0
-  cal $2,70690 ; a(n) = n^7 mod 5.
   div $0,10
+  cal $2,70690 ; a(n) = n^7 mod 5.
   mov $3,$2
   min $3,1
   add $1,$3
