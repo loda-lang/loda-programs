@@ -3,5 +3,9 @@
 
 add $0,1
 cal $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-cal $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
-mov $1,$0
+mov $1,5
+lpb $0
+  add $1,$0
+  sub $0,2
+lpe
+sub $1,4

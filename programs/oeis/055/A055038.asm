@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,66829 ; 1 if product of odd number of primes; 0 if product of even number of primes.
   sub $0,1
+  cal $2,66829 ; 1 if product of odd number of primes; 0 if product of even number of primes.
   add $1,$2
 lpe

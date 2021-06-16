@@ -6,8 +6,8 @@ lpb $3
   mod $0,6
   sub $3,$0
   mov $4,$0
-  cal $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   add $0,1
+  cal $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   mul $0,$4
   add $2,9
   mov $1,$2

@@ -3,5 +3,4 @@
 
 mov $1,$0
 cal $0,6093 ; a(n) = prime(n) - 1.
-gcd $0,$1
-mov $1,$0
+gcd $1,$0

@@ -6,9 +6,6 @@ cal $0,152113 ; A001333 with terms repeated.
 add $0,1
 mul $0,2
 mov $1,$0
-add $1,2
+sub $1,4
 div $1,2
-sub $1,3
-div $1,2
-mul $1,2
 add $1,1

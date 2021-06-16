@@ -5,6 +5,4 @@ cal $0,293632 ; Least integer k such that k/Fibonacci(n) >= 3/4.
 mul $0,2
 cal $0,285872 ; a(n) is the number of zeros of the Chebyshev S(n, x) polynomial (A049310) in the open interval (-sqrt(3), +sqrt(3)).
 mov $1,$0
-sub $1,1
 div $1,2
-add $1,1

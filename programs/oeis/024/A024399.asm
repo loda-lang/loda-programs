@@ -5,19 +5,19 @@ mov $8,$0
 mov $10,$0
 add $10,1
 lpb $10
-  clr $0,8
   mov $0,$8
+  mov $6,0
   sub $10,1
   sub $0,$10
   mov $5,$0
   mov $7,$0
   add $7,1
   lpb $7
-    clr $0,5
     mov $0,$5
+    mov $3,0
     sub $7,1
     sub $0,$7
-    add $2,6
+    mov $2,6
     sub $2,$0
     sub $2,8
     add $3,$2
@@ -28,16 +28,15 @@ lpb $10
     add $4,$0
     mul $0,$3
     mod $0,9
-    mov $1,1
     add $4,$2
     bin $4,2
+    mov $9,1
     lpb $0
       mov $0,1
       sub $4,2
-      add $4,$1
+      add $4,$9
     lpe
     add $6,$4
   lpe
-  add $9,$6
+  add $1,$6
 lpe
-mov $1,$9

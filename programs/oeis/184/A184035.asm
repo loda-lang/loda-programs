@@ -3,15 +3,18 @@
 
 mov $1,4
 mov $2,$0
-lpb $2
-  lpb $0
-    mul $1,2
-    add $1,$2
-    sub $1,$0
-    sub $0,1
-    trn $2,2
-  lpe
+lpb $0
+  mul $1,2
+  add $1,$2
+  sub $1,$0
+  sub $0,1
+  trn $2,2
 lpe
-sub $1,4
+add $1,1
+mul $1,2
+sub $1,14
+mul $1,4
+add $1,16
+div $1,8
 mul $1,3
 add $1,169

@@ -3,5 +3,6 @@
 
 mul $0,2
 add $0,1
-cal $0,193641 ; Number of arrays of -1..1 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero.
+cal $0,232059 ; Number of n X 2 0..2 arrays with every 0 next to a 1 and every 1 next to a 2 horizontally or vertically, with no adjacent values equal.
 mov $1,$0
+div $1,2

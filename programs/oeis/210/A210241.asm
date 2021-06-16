@@ -6,6 +6,4 @@ add $1,$0
 cal $0,123567 ; Recursive sum of 2*Omega(n), where Omega(n) is the sequence A001222.
 add $0,$1
 mov $1,$0
-sub $1,3
 div $1,2
-add $1,1

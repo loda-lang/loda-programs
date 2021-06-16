@@ -4,7 +4,5 @@
 cal $0,122197 ; Fractal sequence: count up to successive integers twice.
 mul $0,2
 pow $0,2
-add $1,$0
-sub $1,4
+mov $1,$0
 div $1,4
-add $1,1

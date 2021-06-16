@@ -3,6 +3,7 @@
 
 mul $0,4
 add $0,2
-cal $0,193773 ; Number of ways to write n as 2*x*y - x - y with 1 <= x <= y.
+mul $0,2
+cal $0,38548 ; Number of divisors of n that are at most sqrt(n).
+mul $0,2
 mov $1,$0
-mul $1,2

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,60557 ; Row sums of triangle A060556.
   sub $0,1
+  cal $2,60557 ; Row sums of triangle A060556.
   add $1,$2
 lpe
 add $1,1

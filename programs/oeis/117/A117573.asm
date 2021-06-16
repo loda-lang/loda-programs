@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,117571 ; Expansion of (1+2*x^2)/((1-x)*(1-x^3)).
   sub $0,2
+  cal $2,117571 ; Expansion of (1+2*x^2)/((1-x)*(1-x^3)).
   add $1,$2
 lpe
 add $1,1

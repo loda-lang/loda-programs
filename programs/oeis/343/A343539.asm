@@ -3,8 +3,8 @@
 
 mul $0,2
 mov $3,$0
-add $3,1
 cal $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
 mov $1,$0
+add $3,1
 add $2,$3
 mul $1,$2
