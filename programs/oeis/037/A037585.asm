@@ -3,9 +3,4 @@
 
 cal $0,33116 ; Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,0.
 cal $0,63204 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 25 ).
-mov $1,1
-add $1,$0
-sub $1,4
-div $1,2
-mul $1,2
-add $1,3
+mov $1,$0

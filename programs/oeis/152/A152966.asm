@@ -4,9 +4,9 @@
 lpb $0
   sub $0,1
   mov $2,$0
+  trn $0,8
   max $2,0
   cal $2,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
-  trn $0,8
   add $1,$2
 lpe
 mul $1,2

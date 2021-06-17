@@ -3,6 +3,4 @@
 
 cal $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
 mov $1,$0
-lpb $1
-  mov $1,2
-lpe
+min $1,2
