@@ -4,8 +4,5 @@
 mov $2,$0
 div $0,2
 add $2,$0
-mov $3,$2
-cal $3,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
-mul $3,2
-add $1,$3
-div $1,2
+mov $1,$2
+cal $1,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.

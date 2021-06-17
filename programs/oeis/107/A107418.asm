@@ -3,10 +3,9 @@
 
 mov $1,$0
 cal $0,105946 ; C(n+5,n)*C(n+3,3).
-add $1,5
 mov $2,$1
 mov $1,$0
-add $2,1
+add $2,6
 mul $1,$2
 sub $1,6
 div $1,6

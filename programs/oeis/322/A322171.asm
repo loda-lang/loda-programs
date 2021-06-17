@@ -3,7 +3,6 @@
 
 add $0,2
 cal $0,235700 ; a(n+1) = a(n) + (a(n) mod 5), a(1)=1.
+mul $0,2
 mov $1,$0
-sub $1,4
-mul $1,2
-add $1,3
+sub $1,5

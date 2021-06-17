@@ -3,7 +3,11 @@
 
 mov $1,$0
 add $1,$0
-cal $0,123567 ; Recursive sum of 2*Omega(n), where Omega(n) is the sequence A001222.
-add $0,$1
-mov $1,$0
 div $1,2
+lpb $0
+  mov $2,$0
+  sub $0,1
+  cal $2,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  add $1,$2
+lpe
+add $1,1

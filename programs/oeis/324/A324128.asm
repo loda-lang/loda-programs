@@ -6,6 +6,5 @@ cal $0,45925 ; a(n) = n*Fibonacci(n).
 mov $1,$0
 gcd $2,2
 add $1,$2
-sub $1,2
+sub $1,1
 mul $1,2
-add $1,2

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,59929 ; a(n) = Fibonacci(n)*Fibonacci(n+2).
   sub $0,1
+  cal $2,59929 ; a(n) = Fibonacci(n)*Fibonacci(n+2).
   add $1,$2
   mul $1,2
 lpe

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,94789 ; Number of (s(0), s(1), ..., s(2n+1)) such that 0 < s(i) < 7 and |s(i) - s(i-1)| = 1 for i = 1,2,...,2n+1, s(0) = 1, s(2n+1) = 4.
   sub $0,1
+  cal $2,94789 ; Number of (s(0), s(1), ..., s(2n+1)) such that 0 < s(i) < 7 and |s(i) - s(i-1)| = 1 for i = 1,2,...,2n+1, s(0) = 1, s(2n+1) = 4.
   add $1,$2
 lpe
 add $1,1

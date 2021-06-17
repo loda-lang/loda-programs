@@ -3,8 +3,5 @@
 
 cal $0,38760 ; a(n) = n - floor(sqrt(n)) * ceiling(sqrt(n)).
 sub $0,1
-mov $1,$0
-mod $1,2
-add $1,2
-mod $1,3
+trn $1,$0
 mod $1,2

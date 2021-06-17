@@ -7,10 +7,10 @@ lpb $4
   sub $4,1
   add $0,$4
   sub $0,1
+  mov $3,$4
   mov $5,$0
   max $5,0
   cal $5,137821 ; Numbers k such that Sum_{j=1..2k} Catalan(j) == 0 (mod 3).
-  mov $3,$4
   mul $3,$5
   add $1,$3
   mov $2,$5

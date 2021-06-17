@@ -8,11 +8,9 @@ lpb $26
   sub $26,1
   add $0,$26
   sub $0,1
-  mov $20,$0
   mov $22,2
   lpb $22
-    clr $0,20
-    mov $0,$20
+    mov $18,0
     sub $22,1
     add $0,$22
     sub $0,1
@@ -20,14 +18,14 @@ lpb $26
     mov $19,$0
     add $19,1
     lpb $19
-      clr $0,17
       mov $0,$17
+      mov $4,0
       sub $19,1
       sub $0,$19
       mov $1,30
       lpb $0,6
-        mov $1,$2
         cal $0,336551 ; a(n) = A003557(n) - 1.
+        mov $1,$2
         add $4,3
       lpe
       mov $1,$4

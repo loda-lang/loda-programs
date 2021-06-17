@@ -8,6 +8,5 @@ lpb $0
   cal $2,228661 ; Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
   add $1,$2
 lpe
-div $1,2
-mul $1,6
+mul $1,3
 add $1,1
