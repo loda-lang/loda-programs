@@ -3,5 +3,7 @@
 
 add $0,1
 mov $1,$0
-cal $1,285075 ; Positions of 1 in A285073; complement of A285074.
-sub $1,3
+pow $0,2
+cal $0,101776 ; Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
+add $1,$0
+sub $1,2

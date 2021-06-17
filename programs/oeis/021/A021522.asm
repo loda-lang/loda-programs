@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
   trn $0,6
+  cal $1,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
   sub $1,1
 lpe
 add $1,10

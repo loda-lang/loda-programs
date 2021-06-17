@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,56924 ; Number of divisors of n that are smaller than sqrt(n).
   sub $0,1
+  cal $2,56924 ; Number of divisors of n that are smaller than sqrt(n).
   add $1,$2
 lpe

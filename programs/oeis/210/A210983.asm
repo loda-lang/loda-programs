@@ -4,8 +4,8 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  cal $2,4737 ; Concatenation of sequences (1,2,..,n-1,n,n-1,..,1) for n >= 1.
   sub $0,2
+  cal $2,4737 ; Concatenation of sequences (1,2,..,n-1,n,n-1,..,1) for n >= 1.
   add $1,$2
   add $1,$2
 lpe

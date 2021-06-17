@@ -1422,7 +1422,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225007](http://oeis.org/A225007) ([L04 program](225/A225007.asm)): Number of n X 5 0..1 arrays with rows unimodal and columns nondecreasing.
 * [A225008](http://oeis.org/A225008) ([L12 program](225/A225008.asm)): Number of n X 6 0..1 arrays with rows unimodal and columns nondecreasing.
 * [A225009](http://oeis.org/A225009) ([L10 program](225/A225009.asm)): Number of n X 7 0..1 arrays with rows unimodal and columns nondecreasing.
-* [A225015](http://oeis.org/A225015) ([L35 program](225/A225015.asm)): Number of sawtooth patterns of length 1 in all Dyck paths of semilength n.
+* [A225015](http://oeis.org/A225015) ([L34 program](225/A225015.asm)): Number of sawtooth patterns of length 1 in all Dyck paths of semilength n.
 * [A225018](http://oeis.org/A225018) ([L28 program](225/A225018.asm)): Number of cusps in a class of degree-3n complex algebraic surfaces.
 * [A225051](http://oeis.org/A225051) ([L13 program](225/A225051.asm)): Numbers of the form x^3 + SumOfCubedDigits(x).
 * [A225055](http://oeis.org/A225055) ([L15 program](225/A225055.asm)): Irregular triangle which lists the three positions of 2*n-1 in A060819 in row n.
@@ -1772,7 +1772,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230628](http://oeis.org/A230628) ([L08 program](230/A230628.asm)): Maximum number of colors needed to color a planar map of several empires, each empire consisting of n countries.
 * [A230629](http://oeis.org/A230629) ([L05 program](230/A230629.asm)): a(0) = 0; thereafter a(n) = (1 + a(floor(n/2))) mod 3.
 * [A230630](http://oeis.org/A230630) ([L09 program](230/A230630.asm)): a(1)=0; thereafter a(n) = (1 + a(floor(n/2))) mod 3.
-* [A230631](http://oeis.org/A230631) ([L12 program](230/A230631.asm)): a(n) = n + (sum of digits in base-4 representation of n).
+* [A230631](http://oeis.org/A230631) ([L09 program](230/A230631.asm)): a(n) = n + (sum of digits in base-4 representation of n).
 * [A230641](http://oeis.org/A230641) ([L06 program](230/A230641.asm)): a(n) = n + (sum of digits in base-3 representation of n).
 * [A230664](http://oeis.org/A230664) ([L05 program](230/A230664.asm)): Floor(3^n / n^2).
 * [A230774](http://oeis.org/A230774) ([L07 program](230/A230774.asm)): Number of primes less than first prime above square root of n.
@@ -2087,6 +2087,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A238473](http://oeis.org/A238473) ([L05 program](238/A238473.asm)): C(5*n+8, 4)/5 for n>= 0.
 * [A238477](http://oeis.org/A238477) ([L03 program](238/A238477.asm)): a(n) = 32*n - 27 for n >= 1. Second column of triangle A238475.
 * [A238497](http://oeis.org/A238497) ([L05 program](238/A238497.asm)): Cubefree Fibonacci numbers.
+* [A238526](http://oeis.org/A238526) ([L16 program](238/A238526.asm)): Record values of A238525.
 * [A238531](http://oeis.org/A238531) ([L06 program](238/A238531.asm)): Expansion of (1 - x + x^2)^2 / (1 - x)^3 in powers of x.
 * [A238533](http://oeis.org/A238533) ([L12 program](238/A238533.asm)): Number of solutions to gcd(x^2 + y^2 + z^2 + t^2 + h^2, n) = 1 with x,y,z,t,h in [0,n-1].
 * [A238549](http://oeis.org/A238549) ([L08 program](238/A238549.asm)): a(n) is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).
@@ -2511,7 +2512,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245425](http://oeis.org/A245425) ([L84 program](245/A245425.asm)): Number of nonnegative integers with the property that their base 9/4 expansion (see A024652) has n digits.
 * [A245426](http://oeis.org/A245426) ([L57 program](245/A245426.asm)): Number of nonnegative integers with property that their base 7/4 expansion (see A024641) has n digits.
 * [A245429](http://oeis.org/A245429) ([L15 program](245/A245429.asm)): Number of nonnegative integers with property that their base 9/7 expansion (see A024655) has n digits.
-* [A245430](http://oeis.org/A245430) ([L84 program](245/A245430.asm)): Number of nonnegative integers with property that their base 9/5 expansion (see A024653) has n digits.
+* [A245430](http://oeis.org/A245430) ([L83 program](245/A245430.asm)): Number of nonnegative integers with property that their base 9/5 expansion (see A024653) has n digits.
 * [A245447](http://oeis.org/A245447) ([L05 program](245/A245447.asm)): Permutation of natural numbers: a(n) = A048673(A048673(n)).
 * [A245467](http://oeis.org/A245467) ([L26 program](245/A245467.asm)): a(n) = ( 4*n^2 - 2*n + 1 - (2*n^2 - 6*n + 1) * (-1)^n )/16.
 * [A245473](http://oeis.org/A245473) ([L08 program](245/A245473.asm)): Nearest integer to 2^log(n).

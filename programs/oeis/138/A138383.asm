@@ -7,15 +7,15 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
+  mov $2,$5
   add $4,$0
   mov $3,$4
   max $3,0
-  sub $4,2
-  bin $4,$0
   cal $3,34953 ; Triangular numbers (A000217) with prime indices.
-  mov $2,$5
   mul $2,$3
   add $1,$2
+  sub $4,2
+  bin $4,$0
   mov $6,$3
 lpe
 min $7,1

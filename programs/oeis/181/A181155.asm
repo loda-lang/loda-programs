@@ -3,7 +3,6 @@
 
 mul $0,2
 mov $1,$0
-add $1,585
-cal $0,95190 ; Doubled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0 and 1 with 1,1.
+cal $0,10060 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
 sub $1,$0
-sub $1,583
+add $1,2
