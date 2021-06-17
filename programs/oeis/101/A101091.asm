@@ -4,7 +4,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  cal $2,101090 ; Third partial sums of fourth powers (A000583).
   sub $0,1
+  cal $2,101090 ; Third partial sums of fourth powers (A000583).
   add $1,$2
 lpe

@@ -3,6 +3,4 @@
 
 cal $0,48673 ; Permutation of natural numbers: a(n) = (A003961(n)+1) / 2 [where A003961(n) shifts the prime factorization of n one step towards larger primes].
 cal $0,53735 ; Sum of digits of (n written in base 3).
-mov $1,1
-add $2,$0
-mul $1,$2
+mov $1,$0

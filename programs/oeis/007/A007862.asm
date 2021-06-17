@@ -3,6 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,88722 ; Number of divisors d>1 of n such that also d+1 divides n.
+cal $0,129308 ; a(n) is the number of positive integers k such that k*(k+1) divides n.
 mov $1,$0
-add $1,1

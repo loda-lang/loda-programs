@@ -3,7 +3,6 @@
 
 mov $1,3
 lpb $0
-  add $0,1
+  sub $0,1
   cal $1,48724 ; Write n and 2n in binary and add them mod 2.
-  sub $0,2
 lpe

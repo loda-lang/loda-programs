@@ -6,10 +6,10 @@ add $2,2
 mov $5,$0
 mul $5,$0
 lpb $2
+  add $1,1
   sub $2,1
   mov $3,$5
   cal $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,1
   add $5,2
   lpb $3
     mul $2,$4
