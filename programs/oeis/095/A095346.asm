@@ -7,10 +7,10 @@ lpb $4
   sub $4,1
   add $0,$4
   sub $0,1
+  mov $2,$4
   mov $5,$0
   max $5,0
   cal $5,307295 ; If n is even, a(n) = A001950(n/2+1), otherwise a(n) = A001950((n-1)/2+1) + 1.
-  mov $2,$4
   mul $2,$5
   add $1,$2
 lpe

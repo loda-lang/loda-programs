@@ -880,6 +880,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213846](http://oeis.org/A213846) ([L28 program](213/A213846.asm)): Antidiagonal sums of the convolution array A213844.
 * [A213848](http://oeis.org/A213848) ([L15 program](213/A213848.asm)): Principal diagonal of the convolution array A213847.
 * [A213850](http://oeis.org/A213850) ([L07 program](213/A213850.asm)): Antidiagonal sums of the convolution array A213849.
+* [A213852](http://oeis.org/A213852) ([L05 program](213/A213852.asm)): Least m>0 such that n+1+m and n-m are relatively prime.
 * [A213859](http://oeis.org/A213859) ([L09 program](213/A213859.asm)): a(n) = 2^n mod (n+2).
 * [A213902](http://oeis.org/A213902) ([L04 program](213/A213902.asm)): Number of integers of the form 6*k+1 and 6*k-1 between prime(n) and prime(n+1).
 * [A213911](http://oeis.org/A213911) ([L08 program](213/A213911.asm)): Number of runs of consecutive zeros in the Zeckendorf (binary) representation of n.
@@ -1714,7 +1715,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229522](http://oeis.org/A229522) ([L06 program](229/A229522.asm)): Final digit (in decimal system) of (n^n)^n, i.e., (n^n)^n mod 10.
 * [A229525](http://oeis.org/A229525) ([L12 program](229/A229525.asm)): Sum of coefficients of the transform ax^2 + (4a/k - b)x + 4a/k^2 + 2b/k + c = 0 for a,b,c = 1,-1,-1, k = 1,2,3...
 * [A229526](http://oeis.org/A229526) ([L04 program](229/A229526.asm)): The c coefficients of the transform ax^2 + (4a/k - b)x + 4a/k^2 + 2b/k + c= 0 for a,b,c = 1,-1,-1, k = 1,2,3...
-* [A229535](http://oeis.org/A229535) ([L31 program](229/A229535.asm)): Number of defective 3-colorings of a 2 X n 0..2 array connected horizontally, diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.
+* [A229535](http://oeis.org/A229535) ([L30 program](229/A229535.asm)): Number of defective 3-colorings of a 2 X n 0..2 array connected horizontally, diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.
 * [A229572](http://oeis.org/A229572) ([L12 program](229/A229572.asm)): Number of defective 4-colorings of an n X 2 0..3 array connected horizontally, vertically, diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..3 order.
 * [A229573](http://oeis.org/A229573) ([L19 program](229/A229573.asm)): Number of defective 4-colorings of an n X 3 0..3 array connected horizontally, vertically, diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..3 order.
 * [A229580](http://oeis.org/A229580) ([L06 program](229/A229580.asm)): Number of defective 3-colorings of an n X 2 0..2 array connected horizontally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.

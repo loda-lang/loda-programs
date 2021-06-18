@@ -3,7 +3,7 @@
 
 trn $0,1
 mov $1,$0
-add $1,1
 cal $0,94820 ; Partial sums of A038548.
+add $1,1
 cal $1,94820 ; Partial sums of A038548.
 sub $1,$0

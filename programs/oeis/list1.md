@@ -2837,7 +2837,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073850](http://oeis.org/A073850) ([L13 program](073/A073850.asm)): Cumulative sum of initial digits of (n base 4).
 * [A073851](http://oeis.org/A073851) ([L13 program](073/A073851.asm)): Cumulative sum of initial digits of (n base 5).
 * [A073855](http://oeis.org/A073855) ([L05 program](073/A073855.asm)): Number of steps to reach 0 starting with n and applying the process x ->bigomega(x), where bigomega = A001222.
-* [A073869](http://oeis.org/A073869) ([L07 program](073/A073869.asm)): a(n) = Sum_{i=0..n} A002251(i)/(n+1).
+* [A073869](http://oeis.org/A073869) ([L06 program](073/A073869.asm)): a(n) = Sum_{i=0..n} A002251(i)/(n+1).
 * [A073933](http://oeis.org/A073933) ([L07 program](073/A073933.asm)): Number of terms in n-th row of triangle in A073932.
 * [A073941](http://oeis.org/A073941) ([L03 program](073/A073941.asm)): a(n) = ceiling((Sum_{k=1..n-1} a(k)) / 2) for n >= 2 starting with a(1) = 1.
 * [A074039](http://oeis.org/A074039) ([L23 program](074/A074039.asm)): If (n, n+2) is the k-th twin prime pair then k else 0.
@@ -3343,6 +3343,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A079044](http://oeis.org/A079044) ([L14 program](079/A079044.asm)): Numbers k such that Sum_{j=0..k} sin(j/Pi) < 0.
 * [A079057](http://oeis.org/A079057) ([L06 program](079/A079057.asm)): a(n)=sum(k=1,n,bigomega(tau(k))).
 * [A079065](http://oeis.org/A079065) ([L07 program](079/A079065.asm)): In prime factorization of n replace odd primes with 3.
+* [A079079](http://oeis.org/A079079) ([L06 program](079/A079079.asm)): a(n) = (prime(n)+1)*(prime(n+1)+1)/4.
 * [A079097](http://oeis.org/A079097) ([L09 program](079/A079097.asm)): Mix odd numbers and squares.
 * [A079102](http://oeis.org/A079102) ([L05 program](079/A079102.asm)): a(2n) = 2^n, a(2n+1) = 2^(2n).
 * [A079247](http://oeis.org/A079247) ([L18 program](079/A079247.asm)): Number of pairs (p,q), 0 <= p < q, such that p+q divides n.

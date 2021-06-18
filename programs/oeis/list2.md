@@ -576,6 +576,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105126](http://oeis.org/A105126) ([L19 program](105/A105126.asm)): Primes of the form 16n+9.
 * [A105127](http://oeis.org/A105127) ([L19 program](105/A105127.asm)): Primes of the form 32n+17.
 * [A105133](http://oeis.org/A105133) ([L22 program](105/A105133.asm)): Numbers n such that 8n + 5 is prime.
+* [A105134](http://oeis.org/A105134) ([L05 program](105/A105134.asm)): Numbers n such that 16n+9 is prime.
 * [A105135](http://oeis.org/A105135) ([L20 program](105/A105135.asm)): Numbers n such that 32n+17 is prime.
 * [A105150](http://oeis.org/A105150) ([L12 program](105/A105150.asm)): Approximation to leading digit of n-th Fibonacci number.
 * [A105161](http://oeis.org/A105161) ([L03 program](105/A105161.asm)): Difference between n and the second-smallest prime larger than n.
@@ -1473,7 +1474,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A114244](http://oeis.org/A114244) ([L07 program](114/A114244.asm)): a(n) = (n+1)(n+2)^2*(n+3)(7n^2 + 28n + 30)/360.
 * [A114254](http://oeis.org/A114254) ([L10 program](114/A114254.asm)): Sum of all terms on the two principal diagonals of a 2n+1 X 2n+1 square spiral.
 * [A114283](http://oeis.org/A114283) ([L07 program](114/A114283.asm)): Sequence array for binomial transform of Jacobsthal numbers A001045(n+1).
-* [A114284](http://oeis.org/A114284) ([L12 program](114/A114284.asm)): Riordan array ((1-3*x)/(1-x), x).
+* [A114284](http://oeis.org/A114284) ([L11 program](114/A114284.asm)): Riordan array ((1-3*x)/(1-x), x).
 * [A114285](http://oeis.org/A114285) ([L03 program](114/A114285.asm)): Expansion of (1-3*x)/((1-x)*(1-x^2)).
 * [A114327](http://oeis.org/A114327) ([L07 program](114/A114327.asm)): Table T(n,m) = n - m read by upwards antidiagonals.
 * [A114347](http://oeis.org/A114347) ([L07 program](114/A114347.asm)): Cumulative sum of triple factorial numbers a(n) = n!!! (A007661).
@@ -4466,6 +4467,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A141877](http://oeis.org/A141877) ([L21 program](141/A141877.asm)): Primes congruent to 12 mod 19.
 * [A141878](http://oeis.org/A141878) ([L19 program](141/A141878.asm)): Primes congruent to 13 mod 19.
 * [A141879](http://oeis.org/A141879) ([L19 program](141/A141879.asm)): Primes congruent to 14 mod 19.
+* [A141881](http://oeis.org/A141881) ([L05 program](141/A141881.asm)): Primes congruent to 1 mod 20.
 * [A141882](http://oeis.org/A141882) ([L19 program](141/A141882.asm)): Primes congruent to 7 mod 20.
 * [A141883](http://oeis.org/A141883) ([L19 program](141/A141883.asm)): Primes congruent to 9 mod 20.
 * [A141884](http://oeis.org/A141884) ([L19 program](141/A141884.asm)): Primes congruent to 11 mod 20.
@@ -4539,6 +4541,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A142039](http://oeis.org/A142039) ([L19 program](142/A142039.asm)): Primes congruent to 11 mod 32.
 * [A142040](http://oeis.org/A142040) ([L19 program](142/A142040.asm)): Primes congruent to 13 mod 32.
 * [A142044](http://oeis.org/A142044) ([L19 program](142/A142044.asm)): Primes congruent to 23 mod 32.
+* [A142049](http://oeis.org/A142049) ([L06 program](142/A142049.asm)): Primes congruent to 1 mod 33.
 * [A142056](http://oeis.org/A142056) ([L19 program](142/A142056.asm)): Primes congruent to 13 mod 33.
 * [A142057](http://oeis.org/A142057) ([L19 program](142/A142057.asm)): Primes congruent to 14 mod 33.
 * [A142059](http://oeis.org/A142059) ([L19 program](142/A142059.asm)): Primes congruent to 17 mod 33.
@@ -4649,7 +4652,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A143698](http://oeis.org/A143698) ([L04 program](143/A143698.asm)): 12 times hexagonal numbers: 12*n*(2*n-1).
 * [A143712](http://oeis.org/A143712) ([L06 program](143/A143712.asm)): Numbers with at least two digits in which all digits except the rightmost are even and the rightmost is odd.
 * [A143730](http://oeis.org/A143730) ([L10 program](143/A143730.asm)): a(n) = A141616(n) - A100181(n).
-* [A143731](http://oeis.org/A143731) ([L03 program](143/A143731.asm)): Characteristic function of numbers n with at least two distinct prime factors.
+* [A143731](http://oeis.org/A143731) ([L02 program](143/A143731.asm)): Characteristic function of numbers n with at least two distinct prime factors.
 * [A143785](http://oeis.org/A143785) ([L09 program](143/A143785.asm)): Antidiagonal sums of the triangle A120070.
 * [A143795](http://oeis.org/A143795) ([L05 program](143/A143795.asm)): a(1) = 1, then for n > 1, a(n) = a(n - 1) + 1 for n even, or a(n) = a(n - 1) + 10 for n odd.
 * [A143803](http://oeis.org/A143803) ([L10 program](143/A143803.asm)): a(n) = 2*A001614(n) - 1 where A001614 lists the Connell numbers.

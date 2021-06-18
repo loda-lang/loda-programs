@@ -936,7 +936,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317298](http://oeis.org/A317298) ([L06 program](317/A317298.asm)): a(n) = (1/2)*(1 + (-1)^n + 2*n + 4*n^2).
 * [A317300](http://oeis.org/A317300) ([L09 program](317/A317300.asm)): Sequence obtained by taking the general formula for generalized k-gonal numbers: m*((k - 2)*m - k + 4)/2, where m = 0, +1, -1, +2, -2, +3, -3, ... and k >= 5. Here k = 0.
 * [A317301](http://oeis.org/A317301) ([L09 program](317/A317301.asm)): Sequence obtained by taking the general formula for generalized k-gonal numbers: m*((k - 2)*m - k + 4)/2, where m = 0, +1, -1, +2, -2, +3, -3, ... and k >= 5. Here k = 1.
-* [A317303](http://oeis.org/A317303) ([L09 program](317/A317303.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
+* [A317303](http://oeis.org/A317303) ([L09 program](317/A317303.asm)): Numbers k such that both Dyck paths of the symmetric representation of sigma(k) have a central peak.
 * [A317304](http://oeis.org/A317304) ([L09 program](317/A317304.asm)): Numbers k with the property that both Dyck paths of the symmetric representation of sigma(k) have a central valley.
 * [A317311](http://oeis.org/A317311) ([L09 program](317/A317311.asm)): Multiples of 11 and odd numbers interleaved.
 * [A317312](http://oeis.org/A317312) ([L04 program](317/A317312.asm)): Multiples of 12 and odd numbers interleaved.

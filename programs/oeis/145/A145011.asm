@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,70884 ; 7 + x where x is congruent to {0, 4, 6, 10, 12, 16, 22, 24} mod 30.
   sub $0,1
   mov $2,$3

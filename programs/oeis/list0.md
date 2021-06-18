@@ -359,7 +359,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001962](http://oeis.org/A001962) ([L06 program](001/A001962.asm)): A Beatty sequence: floor(n * (sqrt(5) + 3)).
 * [A001963](http://oeis.org/A001963) ([L04 program](001/A001963.asm)): Wythoff game.
 * [A001964](http://oeis.org/A001964) ([L04 program](001/A001964.asm)): Wythoff game.
-* [A001965](http://oeis.org/A001965) ([L08 program](001/A001965.asm)): Wythoff game.
+* [A001965](http://oeis.org/A001965) ([L07 program](001/A001965.asm)): Wythoff game.
 * [A001966](http://oeis.org/A001966) ([L15 program](001/A001966.asm)): Wythoff game.
 * [A001967](http://oeis.org/A001967) ([L27 program](001/A001967.asm)): Wythoff game.
 * [A001968](http://oeis.org/A001968) ([L08 program](001/A001968.asm)): Wythoff game.
@@ -881,7 +881,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005173](http://oeis.org/A005173) ([L13 program](005/A005173.asm)): Number of trees of subsets of an n-set.
 * [A005183](http://oeis.org/A005183) ([L05 program](005/A005183.asm)): a(n) = n*2^(n-1) + 1.
 * [A005187](http://oeis.org/A005187) ([L06 program](005/A005187.asm)): a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
-* [A005206](http://oeis.org/A005206) ([L07 program](005/A005206.asm)): Hofstadter G-sequence: a(n) = n - a(a(n-1)).
+* [A005206](http://oeis.org/A005206) ([L06 program](005/A005206.asm)): Hofstadter G-sequence: a(n) = n - a(a(n-1)).
 * [A005232](http://oeis.org/A005232) ([L07 program](005/A005232.asm)): Expansion of (1-x+x^2)/((1-x)^2*(1-x^2)*(1-x^4)).
 * [A005246](http://oeis.org/A005246) ([L10 program](005/A005246.asm)): a(n) = (1 + a(n-1)*a(n-2))/a(n-3), a(0) = a(1) = a(2) = 1.
 * [A005248](http://oeis.org/A005248) ([L07 program](005/A005248.asm)): Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
@@ -939,6 +939,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005586](http://oeis.org/A005586) ([L04 program](005/A005586.asm)): a(n) = n(n+4)(n+5)/6.
 * [A005587](http://oeis.org/A005587) ([L05 program](005/A005587.asm)): a(n) = n*(n+5)*(n+6)*(n+7)/24.
 * [A005592](http://oeis.org/A005592) ([L07 program](005/A005592.asm)): a(n) = F(2n+1) + F(2n-1) - 1.
+* [A005598](http://oeis.org/A005598) ([L03 program](005/A005598.asm)): a(n) = 1 + Sum_{i=1..n} (n-i+1)*phi(i).
 * [A005610](http://oeis.org/A005610) ([L04 program](005/A005610.asm)): Number of Boolean functions realized by cascades of n gates.
 * [A005614](http://oeis.org/A005614) ([L11 program](005/A005614.asm)): The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
 * [A005618](http://oeis.org/A005618) ([L05 program](005/A005618.asm)): a(n) = 6*a(n-1) - 8.
@@ -2581,7 +2582,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A019442](http://oeis.org/A019442) ([L06 program](019/A019442.asm)): Numbers n such that a Hadamard matrix of order n exists.
 * [A019444](http://oeis.org/A019444) ([L17 program](019/A019444.asm)): a_1, a_2, ..., is a permutation of the positive integers such that the average of each initial segment is an integer, using the greedy algorithm to define a_n.
 * [A019445](http://oeis.org/A019445) ([L07 program](019/A019445.asm)): Form a permutation of the positive integers, p_1, p_2, ..., such that the average of each initial segment is an integer, using the greedy algorithm to define p_n; sequence gives p_1+..+p_n.
-* [A019446](http://oeis.org/A019446) ([L07 program](019/A019446.asm)): a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
+* [A019446](http://oeis.org/A019446) ([L05 program](019/A019446.asm)): a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
 * [A019479](http://oeis.org/A019479) ([L05 program](019/A019479.asm)): Define the sequence S(a_0,a_1) by a_{n+2} is the least integer such that a_{n+2}/a_{n+1}>a_{n+1}/a_n for n >= 0. This is S(4,8).
 * [A019485](http://oeis.org/A019485) ([L04 program](019/A019485.asm)): a(n) = 2*a(n-1) + 2*a(n-2) - 3*a(n-3).
 * [A019489](http://oeis.org/A019489) ([L04 program](019/A019489.asm)): Define the sequence T(a(0),a(1)) by a(n+2) is the greatest integer such that a(n+2)/a(n+1) < a(n+1)/a(n) for n >= 0. This is T(3,7).
@@ -3414,7 +3415,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025696](http://oeis.org/A025696) ([L14 program](025/A025696.asm)): Index of 3^n within sequence of numbers of form 3^i*4^j.
 * [A025697](http://oeis.org/A025697) ([L24 program](025/A025697.asm)): Index of 3^n within sequence of numbers of form 3^i*6^j.
 * [A025698](http://oeis.org/A025698) ([L18 program](025/A025698.asm)): Index of 3^n within sequence of numbers of form 3^i*7^j.
-* [A025699](http://oeis.org/A025699) ([L43 program](025/A025699.asm)): Index of 3^n within sequence of numbers of form 3^i*8^j.
+* [A025699](http://oeis.org/A025699) ([L42 program](025/A025699.asm)): Index of 3^n within sequence of numbers of form 3^i*8^j.
 * [A025700](http://oeis.org/A025700) ([L14 program](025/A025700.asm)): Index of 3^n within sequence of numbers of form 3^i*10^j.
 * [A025701](http://oeis.org/A025701) ([L41 program](025/A025701.asm)): Index of 4^n within sequence of numbers of form 3^i*4^j.
 * [A025702](http://oeis.org/A025702) ([L46 program](025/A025702.asm)): Index of 4^n within sequence of numbers of form 4^i*5^j.
@@ -4460,7 +4461,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033662](http://oeis.org/A033662) ([L15 program](033/A033662.asm)): Possible digital sums of Smith numbers (conjectural).
 * [A033676](http://oeis.org/A033676) ([L04 program](033/A033676.asm)): Largest divisor of n <= sqrt(n).
 * [A033677](http://oeis.org/A033677) ([L32 program](033/A033677.asm)): Smallest divisor of n >= sqrt(n).
-* [A033684](http://oeis.org/A033684) ([L36 program](033/A033684.asm)): 1 iff n is a square not divisible by 3.
+* [A033684](http://oeis.org/A033684) ([L11 program](033/A033684.asm)): 1 iff n is a square not divisible by 3.
 * [A033686](http://oeis.org/A033686) ([L05 program](033/A033686.asm)): One-ninth of theta series of A2[hole]^2.
 * [A033687](http://oeis.org/A033687) ([L05 program](033/A033687.asm)): Theta series of hexagonal lattice A_2 with respect to deep hole divided by 3.
 * [A033691](http://oeis.org/A033691) ([L07 program](033/A033691.asm)): Minimal number of vertices in 1-1 deficient regular graph where minimal degree is 1 and maximal degree is n.

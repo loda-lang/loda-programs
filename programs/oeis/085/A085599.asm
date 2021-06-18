@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
   mod $0,2
+  cal $1,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
 lpe
 trn $1,$0

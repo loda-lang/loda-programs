@@ -4,16 +4,16 @@
 mov $10,$0
 mov $12,2
 lpb $12
-  clr $0,10
   mov $0,$10
+  mov $7,0
   sub $12,1
   add $0,$12
   sub $0,1
   mov $6,$0
   mov $8,2
   lpb $8
-    clr $0,6
     mov $0,$6
+    mov $3,0
     sub $8,1
     add $0,$8
     sub $0,1
@@ -27,21 +27,20 @@ lpb $12
       add $0,$4
       sub $0,2
     lpe
-    mov $1,$3
     mov $9,$8
     mul $9,$3
     add $7,$9
+    mov $11,$3
   lpe
+  mov $5,$12
   min $6,1
-  mul $6,$1
-  mov $1,$7
-  sub $1,$6
-  mov $13,$12
-  mul $13,$1
-  add $11,$13
+  mul $6,$11
+  mov $11,$7
+  sub $11,$6
+  mul $5,$11
+  add $1,$5
 lpe
 min $10,1
-mul $10,$1
-mov $1,$11
+mul $10,$11
 sub $1,$10
 add $1,1

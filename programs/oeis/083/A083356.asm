@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $2,1
-  max $2,0
-  cal $2,60872 ; Sum of d*d' over all unordered pairs (d,d') with d*d' = n.
   sub $0,1
+  trn $2,1
+  cal $2,60872 ; Sum of d*d' over all unordered pairs (d,d') with d*d' = n.
   add $1,$2
 lpe

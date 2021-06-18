@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,58061 ; Number of prime factors (counted with multiplicity) of d(n), the number of divisors of n.
   sub $0,1
+  cal $2,58061 ; Number of prime factors (counted with multiplicity) of d(n), the number of divisors of n.
   add $1,$2
 lpe

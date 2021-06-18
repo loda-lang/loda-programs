@@ -10,11 +10,9 @@ lpb $0
   sub $0,1
   trn $2,2
 lpe
-add $1,1
+sub $1,7
 mul $1,2
-sub $1,14
-mul $1,4
-add $1,16
-div $1,8
+add $1,6
+div $1,2
 mul $1,3
 add $1,91

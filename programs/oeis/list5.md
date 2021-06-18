@@ -872,7 +872,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A266223](http://oeis.org/A266223) ([L09 program](266/A266223.asm)): Total number of OFF (white) cells after n iterations of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
 * [A266224](http://oeis.org/A266224) ([L03 program](266/A266224.asm)): Least x such that prime(n)*x+x+1 is a prime, or -1 if no such x exists.
 * [A266246](http://oeis.org/A266246) ([L05 program](266/A266246.asm)): Middle column of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
-* [A266249](http://oeis.org/A266249) ([L17 program](266/A266249.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
+* [A266249](http://oeis.org/A266249) ([L16 program](266/A266249.asm)): Number of ON (black) cells in the n-th iteration of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
 * [A266250](http://oeis.org/A266250) ([L16 program](266/A266250.asm)): Total number of ON (black) cells after n iterations of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
 * [A266251](http://oeis.org/A266251) ([L16 program](266/A266251.asm)): Number of OFF (white) cells in the n-th iteration of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
 * [A266252](http://oeis.org/A266252) ([L22 program](266/A266252.asm)): Total number of OFF (white) cells after n iterations of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
@@ -1524,6 +1524,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A273481](http://oeis.org/A273481) ([L17 program](273/A273481.asm)): First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 737", based on the 5-celled von Neumann neighborhood.
 * [A273514](http://oeis.org/A273514) ([L04 program](273/A273514.asm)): a(n) is the number of arithmetic progressions m < n < p (three numbers in arithmetic progression) such that m and p contain no 2's in their ternary representation.
 * [A273526](http://oeis.org/A273526) ([L10 program](273/A273526.asm)): Number of 123-avoiding indecomposable permutations.
+* [A273618](http://oeis.org/A273618) ([L02 program](273/A273618.asm)): Numbers n = 2*k+1 where k is odd with the property that 3^k mod n == 1 and k^k mod n == 1.
 * [A273652](http://oeis.org/A273652) ([L07 program](273/A273652.asm)): Number of forests of labeled rooted trees of height at most 1, with n labels, two of which are used for root nodes and any root may contain >= 1 labels.
 * [A273663](http://oeis.org/A273663) ([L04 program](273/A273663.asm)): Least monotonic left inverse for A273670: a(1) = 0; for n > 1, a(n) = A257680(A225901(n)) + a(n-1).
 * [A273669](http://oeis.org/A273669) ([L06 program](273/A273669.asm)): Decimal representation ends with either 2 or 9.
@@ -1564,7 +1565,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A274073](http://oeis.org/A274073) ([L05 program](274/A274073.asm)): a(n) = 6^n-(-1)^n.
 * [A274074](http://oeis.org/A274074) ([L07 program](274/A274074.asm)): a(n) = 6^n+(-1)^n.
 * [A274077](http://oeis.org/A274077) ([L03 program](274/A274077.asm)): a(n) = n^3 + 4.
-* [A274089](http://oeis.org/A274089) ([L11 program](274/A274089.asm)): Numbers repeated except that powers of 2 only appear once.
+* [A274089](http://oeis.org/A274089) ([L09 program](274/A274089.asm)): Numbers repeated except that powers of 2 only appear once.
 * [A274099](http://oeis.org/A274099) ([L04 program](274/A274099.asm)): Number of partitions of n*(n-1)/2 into at most four parts.
 * [A274104](http://oeis.org/A274104) ([L04 program](274/A274104.asm)): a(n) = Sum_{k=0..n} (3*k+2)*Catalan(k).
 * [A274110](http://oeis.org/A274110) ([L08 program](274/A274110.asm)): Number of equivalence classes of ballot paths of length n for the string uu.
@@ -2503,7 +2504,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A289999](http://oeis.org/A289999) ([L08 program](289/A289999.asm)): Sierpinski cuboctahedral numbers: a(n) = 16*4^n - 12*2^n + 9.
 * [A290026](http://oeis.org/A290026) ([L06 program](290/A290026.asm)): Number of 3-cycles in the n-halved cube graph.
 * [A290031](http://oeis.org/A290031) ([L06 program](290/A290031.asm)): Number of 6-cycles in the n-hypercube graph.
-* [A290055](http://oeis.org/A290055) ([L19 program](290/A290055.asm)): Expansion of x*(1 + 4*x + x^2)/((1 - x)^5*(1 + x)^4).
+* [A290055](http://oeis.org/A290055) ([L18 program](290/A290055.asm)): Expansion of x*(1 + 4*x + x^2)/((1 - x)^5*(1 + x)^4).
 * [A290056](http://oeis.org/A290056) ([L25 program](290/A290056.asm)): Number of cliques in the n-triangular graph.
 * [A290061](http://oeis.org/A290061) ([L09 program](290/A290061.asm)): a(n) = (1/24)*(n + 3)*(3*n^3 + 5*n^2 - 6*n + 16).
 * [A290073](http://oeis.org/A290073) ([L18 program](290/A290073.asm)): Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
@@ -2571,7 +2572,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291016](http://oeis.org/A291016) ([L09 program](291/A291016.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 4 S + S^2.
 * [A291017](http://oeis.org/A291017) ([L11 program](291/A291017.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 5 S + S^2.
 * [A291018](http://oeis.org/A291018) ([L11 program](291/A291018.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 6 S + S^2.
-* [A291023](http://oeis.org/A291023) ([L51 program](291/A291023.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 3 S^2 + 2 S^3.
+* [A291023](http://oeis.org/A291023) ([L50 program](291/A291023.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 3 S^2 + 2 S^3.
 * [A291024](http://oeis.org/A291024) ([L09 program](291/A291024.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - 2 S^2)^2.
 * [A291040](http://oeis.org/A291040) ([L28 program](291/A291040.asm)): The arithmetic function u(n,3,2).
 * [A291064](http://oeis.org/A291064) ([L09 program](291/A291064.asm)): a(n) = 2^n*(n + 1) - 3*(n - 1).
