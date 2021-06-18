@@ -4,7 +4,7 @@
 lpb $0
   mov $1,$0
   mov $2,$0
-  cal $2,307912 ; a(n) = n - 1 - pi(2*n-1) + pi(n), where pi is the prime counting function.
   mov $0,$3
+  cal $2,307912 ; a(n) = n - 1 - pi(2*n-1) + pi(n), where pi is the prime counting function.
   sub $1,$2
 lpe

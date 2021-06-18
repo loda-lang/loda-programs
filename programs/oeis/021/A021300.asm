@@ -6,11 +6,10 @@ mov $1,1
 mov $2,2
 lpb $0
   mov $2,$0
-  sub $2,3
-  max $2,0
-  cal $2,21226 ; Decimal expansion of 1/222.
   mov $0,2
   mov $1,6
+  trn $2,3
+  cal $2,21226 ; Decimal expansion of 1/222.
 lpe
 add $1,$2
 sub $1,3

@@ -4,16 +4,16 @@
 mov $10,$0
 mov $12,2
 lpb $12
-  clr $0,10
   mov $0,$10
+  mov $7,0
   sub $12,1
   add $0,$12
   sub $0,1
   mov $6,$0
   mov $8,2
   lpb $8
-    clr $0,6
     mov $0,$6
+    mov $3,0
     sub $8,1
     add $0,$8
     sub $0,1
@@ -26,28 +26,27 @@ lpb $12
       max $0,0
       cal $0,48575 ; Pisot sequences L(2,5), E(2,5).
       div $0,3
-      mov $1,$0
       mov $5,$4
       mul $5,$0
       add $3,$5
+      mov $11,$0
     lpe
     min $2,1
-    mul $2,$1
-    mov $1,$3
-    sub $1,$2
+    mul $2,$11
     mov $9,$8
-    mul $9,$1
+    mov $11,$3
+    sub $11,$2
+    mul $9,$11
     add $7,$9
   lpe
   min $6,1
-  mul $6,$1
-  mov $1,$7
-  sub $1,$6
+  mul $6,$11
+  mov $11,$7
+  sub $11,$6
   mov $13,$12
-  mul $13,$1
-  add $11,$13
+  mul $13,$11
+  add $1,$13
 lpe
 min $10,1
-mul $10,$1
-mov $1,$11
+mul $10,$11
 sub $1,$10

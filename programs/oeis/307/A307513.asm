@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,22934 ; Number of 2^m between e^n and e^(n+1).
   sub $0,1
+  cal $2,22934 ; Number of 2^m between e^n and e^(n+1).
   add $1,$2
 lpe
 add $1,1

@@ -3,17 +3,17 @@
 
 mov $2,$0
 add $2,1
-mov $3,$0
+mov $5,$0
 lpb $2
-  mov $0,$3
+  mov $0,$5
   sub $2,1
   sub $0,$2
   cal $0,245222 ; Continued fraction of the constant c in A245221; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A022838, else f(n,x) = 1/x.
-  div $0,2
-  add $0,4
-  mul $0,2
-  lpb $0
-    mod $0,3
-  lpe
-  add $1,$0
+  mod $0,2
+  mov $3,1
+  add $3,$0
+  mov $4,$3
+  div $4,2
+  add $4,1
+  add $1,$4
 lpe

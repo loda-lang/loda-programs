@@ -8,5 +8,4 @@ lpb $0
   trn $0,2
   add $1,$2
 lpe
-div $1,4
-mul $1,2
+div $1,2

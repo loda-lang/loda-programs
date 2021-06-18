@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,275855 ; Platinum mean sequence: fixed point of the morphism 0 -> 0001, 1 -> 001.
   mov $0,126
+  cal $2,275855 ; Platinum mean sequence: fixed point of the morphism 0 -> 0001, 1 -> 001.
   mul $0,$2
   sub $0,$2
   mov $1,126
