@@ -7,10 +7,10 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
+  mov $3,$5
   mov $4,$0
   max $4,0
   cal $4,8673 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)*(1-x^7)).
-  mov $3,$5
   mul $3,$4
   add $1,$3
   mov $6,$4

@@ -8,9 +8,9 @@ lpb $5
   add $0,$5
   mov $3,$0
   sub $0,1
+  mov $2,$5
   max $3,0
   cal $3,141101 ; a(n) = prime(2*n) - n*2.
-  mov $2,$5
   mul $2,$3
   add $1,$2
   mov $6,$3

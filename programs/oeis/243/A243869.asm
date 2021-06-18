@@ -3,9 +3,9 @@
 
 add $0,2
 lpb $0
-  add $2,8
   cal $0,5173 ; Number of trees of subsets of an n-set.
   mov $1,$0
+  add $2,8
   lpb $1
     sub $0,$1
     mul $0,$2

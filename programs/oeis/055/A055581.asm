@@ -5,8 +5,8 @@ add $0,1
 mov $1,2
 lpb $0
   mov $2,$0
-  cal $2,196514 ; Partial sums of A100381.
   sub $0,1
+  cal $2,196514 ; Partial sums of A100381.
   add $1,$2
 lpe
 sub $1,6

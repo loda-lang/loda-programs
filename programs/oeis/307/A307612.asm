@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,307485 ; A permutation of the nonnegative integers: one odd, two even, four odd, eight even, etc.; extended to nonnegative integer with a(0) = 0.
   sub $0,1
+  cal $2,307485 ; A permutation of the nonnegative integers: one odd, two even, four odd, eight even, etc.; extended to nonnegative integer with a(0) = 0.
   add $1,$2
 lpe

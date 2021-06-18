@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,154992 ; A048473 prefixed by two zeros.
   trn $0,4
+  cal $2,154992 ; A048473 prefixed by two zeros.
   add $1,$2
 lpe

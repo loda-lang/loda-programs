@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,232089 ; Table read by rows, which consist of 1 followed by 2^k, 0 <= k < n ; n = 0,1,2,3,...
   sub $0,1
+  cal $2,232089 ; Table read by rows, which consist of 1 followed by 2^k, 0 <= k < n ; n = 0,1,2,3,...
   add $1,$2
 lpe
 mul $1,2

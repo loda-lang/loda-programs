@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,24001 ; a(n) = 1-n^3.
   trn $0,6
+  cal $1,24001 ; a(n) = 1-n^3.
   dif $1,3
 lpe
 mod $1,10
