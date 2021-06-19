@@ -3028,7 +3028,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130885](http://oeis.org/A130885) ([L10 program](130/A130885.asm)): 3n^3 - 2n^2 + n - 1.
 * [A130886](http://oeis.org/A130886) ([L09 program](130/A130886.asm)): 4n^4 + 3n^3 + 2n^2 + n + 1.
 * [A130887](http://oeis.org/A130887) ([L16 program](130/A130887.asm)): Inverse Moebius transform of the Mersenne numbers: a(n) = Sum_(d|n} (2^n - 1).
-* [A130893](http://oeis.org/A130893) ([L04 program](130/A130893.asm)): Lucas numbers (beginning with 1) mod 10.
+* [A130893](http://oeis.org/A130893) ([L05 program](130/A130893.asm)): Lucas numbers (beginning with 1) mod 10.
 * [A130909](http://oeis.org/A130909) ([L02 program](130/A130909.asm)): Simple periodic sequence (n mod 16).
 * [A130910](http://oeis.org/A130910) ([L06 program](130/A130910.asm)): Sum {0<=k<=n, k mod 16} (Partial sums of A130909).
 * [A130917](http://oeis.org/A130917) ([L10 program](130/A130917.asm)): a(n) is the sum of the digital roots of all of the previous terms.
@@ -3286,7 +3286,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132231](http://oeis.org/A132231) ([L19 program](132/A132231.asm)): Primes congruent to 7 (mod 30).
 * [A132232](http://oeis.org/A132232) ([L19 program](132/A132232.asm)): Primes congruent to 11 (mod 30).
 * [A132233](http://oeis.org/A132233) ([L19 program](132/A132233.asm)): Primes congruent to 13 (mod 30).
-* [A132234](http://oeis.org/A132234) ([L19 program](132/A132234.asm)): Primes congruent to 19 (mod 30).
+* [A132234](http://oeis.org/A132234) ([L10 program](132/A132234.asm)): Primes congruent to 19 (mod 30).
 * [A132235](http://oeis.org/A132235) ([L19 program](132/A132235.asm)): Primes congruent to 23 (mod 30).
 * [A132236](http://oeis.org/A132236) ([L19 program](132/A132236.asm)): Primes congruent to 29 (mod 30).
 * [A132269](http://oeis.org/A132269) ([L09 program](132/A132269.asm)): Product_{k>=0} (1 + floor(n/2^k)).
@@ -3787,7 +3787,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135711](http://oeis.org/A135711) ([L05 program](135/A135711.asm)): Minimal perimeter of a polyhex with n cells.
 * [A135712](http://oeis.org/A135712) ([L09 program](135/A135712.asm)): a(n) = (4*n^3 + 11*n^2 + 9*n + 2)/2.
 * [A135713](http://oeis.org/A135713) ([L06 program](135/A135713.asm)): a(n) = n*(n+1)*(4*n+1)/2.
-* [A135731](http://oeis.org/A135731) ([L07 program](135/A135731.asm)): a(1) = 3; thereafter a(n+1) = a(n) + nextprime(a(n)) - prevprime(a(n)).
+* [A135731](http://oeis.org/A135731) ([L08 program](135/A135731.asm)): a(1) = 3; thereafter a(n+1) = a(n) + nextprime(a(n)) - prevprime(a(n)).
 * [A135732](http://oeis.org/A135732) ([L20 program](135/A135732.asm)): Distances to next prime associated with A135731.
 * [A135839](http://oeis.org/A135839) ([L03 program](135/A135839.asm)): Triangle read by rows: starting with A138174, replace left border with (1, 1, 1, ...).
 * [A135840](http://oeis.org/A135840) ([L05 program](135/A135840.asm)): A135839 * A000012 as infinite lower triangular matrices.
@@ -4786,7 +4786,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144945](http://oeis.org/A144945) ([L07 program](144/A144945.asm)): Number of ways to place 2 queens on an n X n chessboard so that they attack each other.
 * [A144965](http://oeis.org/A144965) ([L05 program](144/A144965.asm)): a(n) = 4*n*(4*n^2+1).
 * [A144968](http://oeis.org/A144968) ([L27 program](144/A144968.asm)): Number of squares between consecutive cubes.
-* [A145011](http://oeis.org/A145011) ([L18 program](145/A145011.asm)): First differences of A007775.
+* [A145011](http://oeis.org/A145011) ([L17 program](145/A145011.asm)): First differences of A007775.
 * [A145018](http://oeis.org/A145018) ([L03 program](145/A145018.asm)): a(1) = 4; then add 1 to the first number, then 2, then 3 and so on.
 * [A145027](http://oeis.org/A145027) ([L07 program](145/A145027.asm)): a(n) = a(n-1) + a(n-2) + a(n-3) with a(1) = 2, a(2) = 3, a(3) = 4.
 * [A145037](http://oeis.org/A145037) ([L08 program](145/A145037.asm)): Unreduced binary digital mean numerators, dm_num(2, n).

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,110349 ; a(n) = n + (n+1) + (n-1) + (n+2) + (n-2) ... n terms.
   sub $0,1
+  cal $2,110349 ; a(n) = n + (n+1) + (n-1) + (n+2) + (n-2) ... n terms.
   add $1,$2
 lpe
 add $1,1

@@ -7,8 +7,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,38589 ; Sizes of successive clusters in hexagonal lattice A_2 centered at lattice point.
   mov $2,$3
   mul $2,$0

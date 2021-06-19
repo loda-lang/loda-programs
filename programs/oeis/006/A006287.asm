@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  div $0,3
   mul $2,2
   cal $2,21081 ; Decimal expansion of 1/77.
-  div $0,3
   add $1,$2
 lpe
 div $1,2

@@ -3,7 +3,10 @@
 
 mul $0,6
 add $0,5
-cal $0,6005 ; The odd prime numbers together with 1.
-sub $0,2
-max $1,$0
-add $1,2
+div $0,2
+mul $0,2
+cal $0,98090 ; Numbers k such that 2k-3 is prime.
+mov $1,$0
+sub $1,8
+mul $1,2
+add $1,13

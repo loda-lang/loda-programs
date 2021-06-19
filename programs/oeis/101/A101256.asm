@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,191558 ; a(n) = 0 if n prime, otherwise n.
   sub $0,1
+  cal $2,191558 ; a(n) = 0 if n prime, otherwise n.
   add $1,$2
 lpe
