@@ -712,7 +712,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212892](http://oeis.org/A212892) ([L05 program](212/A212892.asm)): a(n) = n^4/8 if n is even, a(n) = (n^2-1)^2/8 if n is odd.
 * [A212893](http://oeis.org/A212893) ([L06 program](212/A212893.asm)): Number of quadruples (w,x,y,z) with all terms in {0,...,n} such that w-x, x-y, and y-z all have the same parity.
 * [A212896](http://oeis.org/A212896) ([L30 program](212/A212896.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)<2.
-* [A212901](http://oeis.org/A212901) ([L49 program](212/A212901.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and equal consecutive gap sizes.
+* [A212901](http://oeis.org/A212901) ([L48 program](212/A212901.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and equal consecutive gap sizes.
 * [A212905](http://oeis.org/A212905) ([L25 program](212/A212905.asm)): Number of (w,x,y,z) with all terms in {0,...,n} and |w-x|+|x-y+|y-z|=2n.
 * [A212959](http://oeis.org/A212959) ([L06 program](212/A212959.asm)): Number of (w,x,y) such that w,x,y are all in {0,...,n} and |w-x| = |x-y|.
 * [A212960](http://oeis.org/A212960) ([L09 program](212/A212960.asm)): Number of (w,x,y) with all terms in {0,...,n} and |w-x| != |x-y|.
@@ -1457,6 +1457,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225585](http://oeis.org/A225585) ([L05 program](225/A225585.asm)): Floor((3^n-1)/n).
 * [A225586](http://oeis.org/A225586) ([L05 program](225/A225586.asm)): Floor((5^n-1)/n).
 * [A225593](http://oeis.org/A225593) ([L06 program](225/A225593.asm)): The integer closest to n/e.
+* [A225595](http://oeis.org/A225595) ([L14 program](225/A225595.asm)): Conjectured square array T(n,k) read by antidiagonals related to the existence of rectangles of size n*k in the toothpick structure of A139250.
 * [A225605](http://oeis.org/A225605) ([L04 program](225/A225605.asm)): (1) = least k such that 1/3 < H(k) - 1/3; a(2) = least k such that H(a(1)) - H(3) < H(k) -H(a(1)), and for n > 2, a(n) = least k such that H(a(n-1)) - H(a(n-2) > H(k) - H(a(n-1)), where H = harmonic number.
 * [A225668](http://oeis.org/A225668) ([L07 program](225/A225668.asm)): a(n) = floor(4*log_2(n)).
 * [A225690](http://oeis.org/A225690) ([L18 program](225/A225690.asm)): Number of Dyck paths of semilength n avoiding the pattern U^3 D^3 U D.

@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  div $0,4
   mod $2,4
   cal $2,61226 ; a(n) = n^2 + (n^2 with digits reversed).
-  div $0,4
   add $1,$2
 lpe
 div $1,2

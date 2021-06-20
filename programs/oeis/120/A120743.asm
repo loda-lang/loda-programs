@@ -11,7 +11,4 @@ lpb $0
   sub $2,$1
   add $1,$2
 lpe
-sub $1,2
-div $1,18
-mul $1,9
-add $1,1
+div $1,2

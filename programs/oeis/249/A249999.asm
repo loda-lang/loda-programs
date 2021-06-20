@@ -8,6 +8,4 @@ cal $0,5173 ; Number of trees of subsets of an n-set.
 mul $0,2
 add $2,$0
 add $1,$2
-sub $1,3
 div $1,4
-add $1,1

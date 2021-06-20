@@ -4,6 +4,5 @@
 cal $0,326990 ; Sum of odd divisors of n that are greater than 1.
 cal $0,100892 ; a(n) = (2*n-1) XOR (2*n+1), bitwise.
 mov $1,$0
-mul $1,2
-div $1,8
+div $1,4
 add $1,1

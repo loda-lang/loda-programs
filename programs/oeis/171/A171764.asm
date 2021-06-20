@@ -3,9 +3,8 @@
 
 cal $0,4754 ; Numbers n whose binary expansion starts 10.
 cal $0,204093 ; Numbers whose set of base-10 digits is {0,6}.
-mul $0,13
 mov $1,$0
-sub $1,780
-div $1,78
+sub $1,60
+div $1,6
 mul $1,10
 add $1,101

@@ -1,18 +1,18 @@
 ; A192245: 1-sequence of reduction of triangular number sequence by x^2 -> x+1.
 ; 0,3,9,29,74,179,403,871,1816,3686,7316,14258,27362,51827,97067,180027,331038,604125,1095085,1973095,3535810,6305148,11193384,19790484,34860084,61193859,107080413,186826121,325073906,564190391
 
+mov $5,$0
 mov $21,$0
-mov $23,$0
-lpb $23
-  clr $0,21
+lpb $5
   mov $0,$21
-  sub $23,1
-  sub $0,$23
+  sub $5,1
+  sub $0,$5
   mov $18,$0
+  mov $19,0
   mov $20,$0
   lpb $20
-    clr $0,18
     mov $0,$18
+    mov $16,0
     sub $20,1
     sub $0,$20
     mov $15,$0
@@ -47,36 +47,35 @@ lpb $23
             mov $6,$3
             mov $3,$2
           lpe
-          mov $1,3
           div $3,2
-          mul $1,$3
           mov $10,$9
+          mov $22,3
+          mul $22,$3
           lpb $10
-            mov $8,$1
+            mov $8,$22
             sub $10,1
           lpe
         lpe
         lpb $7
           mov $7,0
-          sub $8,$1
+          sub $8,$22
         lpe
-        mov $1,$8
         mov $14,$13
+        mov $22,$8
         lpb $14
-          mov $12,$1
+          mov $12,$22
           sub $14,1
         lpe
       lpe
       lpb $11
         mov $11,0
-        sub $12,$1
+        sub $12,$22
       lpe
-      mov $1,$12
-      div $1,3
-      add $16,$1
+      mov $22,$12
+      div $22,3
+      add $16,$22
     lpe
     add $19,$16
   lpe
-  add $22,$19
+  add $1,$19
 lpe
-mov $1,$22

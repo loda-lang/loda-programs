@@ -5,17 +5,13 @@ mov $2,$0
 mov $4,$0
 add $4,1
 lpb $4
-  clr $0,2
   mov $0,$2
   sub $4,1
   sub $0,$4
   cal $0,40 ; The prime numbers.
   mod $0,10
-  add $1,1
-  mul $1,24009999
-  add $1,20
-  sub $1,$0
-  sub $1,24010014
-  add $3,$1
+  mov $3,24010019
+  sub $3,$0
+  sub $3,24010014
+  add $1,$3
 lpe
-mov $1,$3

@@ -1,29 +1,18 @@
 ; A080354: First differences of A080353.
 ; 2,2,2,1,2,1,2,1,2,1,1,2,1,1,2,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,1,2,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1
 
-mov $4,2
-mov $6,$0
-lpb $4
-  mov $0,$6
-  sub $4,1
-  add $0,$4
-  sub $0,1
-  mul $0,3
-  add $3,1
-  lpb $0
-    sub $0,$3
-    sub $0,2
-    trn $0,1
-    add $3,1
-  lpe
-  mov $2,$3
-  mov $7,$3
-  mov $3,0
-  mov $5,$4
-  mul $5,$2
-  add $1,$5
+mul $0,3
+add $0,3
+lpb $0
+  cal $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  pow $0,2
+  mov $1,$0
 lpe
-min $6,1
-mul $6,$7
-sub $1,$6
+add $1,1
+mov $0,$1
+add $0,$1
+cal $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+mov $1,$0
+sub $1,5
+div $1,2
 add $1,1

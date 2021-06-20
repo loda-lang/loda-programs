@@ -7,6 +7,4 @@ lpb $0
   cal $1,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
   add $1,1
 lpe
-div $1,2
-mul $1,2
 add $1,1

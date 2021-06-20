@@ -9,6 +9,5 @@ lpb $0
   add $1,1
   mul $1,2
 lpe
-sub $1,4
 div $1,2
-add $1,1
+sub $1,1
