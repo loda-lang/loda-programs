@@ -74,16 +74,14 @@ The `loda` command-line tool provides the following commands and options:
 ```
 Usage:             loda <command> <options>
 Core commands:
-  evaluate <file>  Evaluate a program to a sequence
-  optimize <file>  Optimize a program and print it
+  evaluate <file>  Evaluate a program to a sequence (use -t to set the number of terms)
   minimize <file>  Minimize a program and print it (use -t to set the number of terms)
-  dot      <file>  Export a program as dot (Graphviz) format
+  optimize <file>  Optimize a program and print it
   generate         Generate a random program and print it
-  test             Run test suite
 OEIS commands:
   mine             Mine programs for OEIS sequences (use -i to use a non-default matcher)
   match    <file>  Match a program to OEIS sequences (use -i to use a non-default matcher)
-  check   <seqID>  Check a program for an OEIS sequence
+  check  <seq-id>  Check a program for an OEIS sequence
   maintain         Maintain all programs for OEIS sequences
 Options:
   -l <string>      Log level (values:debug,info,warn,error,alert)
@@ -111,10 +109,6 @@ Optimize a LODA program and print the optimized version. The optimization is bas
 #### minimize (min)
 
 Minimize a LODA program and print the minimized version. The minimization includes an optimization and additionally a brute-force removal of operations based on trial and error. It guarantees that the generated integer sequence is preserved, but only up to the number of terms specified using `-t`. In contrast to optimization, minimization is not guaranteed to be semantics preserving for the entire sequences. In practice, it yields much shorter programs than optimization and we usually apply it with a larger number of terms to increase the probability of correctness.
-
-#### dot
-
-Export a program to the [dot (Graphviz) format](https://graphviz.org/). You can find some examples in the [images/dot](images/dot) folder. 
 
 #### generate (gen)
 
@@ -144,10 +138,6 @@ Check if a program for an OEIS sequence is correct. For interactive output, use 
 #### maintain
 
 Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder. This checks the correctness of all programs in a random order. The programs must generate the first 250 terms of the sequence. In addition, up to the first 2000 terms are taken into account if the program is correct. Incorrect programs are removed and correct programs are minimized (see the `minimize` command). In addition, the description of the sequence in the comment of the program is updated to the latest version of the OEIS database. The program statistics and program lists are regenerated. 
-
-#### test
-
-Run the test suite of LODA.
 
 ## Related Projects
 
