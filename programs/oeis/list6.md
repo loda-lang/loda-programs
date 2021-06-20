@@ -1953,6 +1953,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A340369](http://oeis.org/A340369) ([L03 program](340/A340369.asm)): a(n) = 1 if n has at most 3 prime factors when counted with multiplicity, 0 otherwise.
 * [A340371](http://oeis.org/A340371) ([L13 program](340/A340371.asm)): a(n) = 1 if the odd part of n is noncomposite, 0 otherwise.
 * [A340373](http://oeis.org/A340373) ([L12 program](340/A340373.asm)): a(n) = 1 if n is of the form of 2^i * p^j, with p an odd prime, and i>=0, j>=1, otherwise 0.
+* [A340374](http://oeis.org/A340374) ([L18 program](340/A340374.asm)): a(n) = 1 if the odd part of n satisfies Korselt's criterion (is in A324050), 0 otherwise.
 * [A340375](http://oeis.org/A340375) ([L09 program](340/A340375.asm)): a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
 * [A340378](http://oeis.org/A340378) ([L03 program](340/A340378.asm)): Number of 1-digits in the ternary representation of A048673(n).
 * [A340395](http://oeis.org/A340395) ([L03 program](340/A340395.asm)): a(n) = A340131(A001006(n)).
@@ -2066,7 +2067,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A343177](http://oeis.org/A343177) ([L09 program](343/A343177.asm)): a(0)=4; if n >0 is even then a(n) = 2^(n/2+1)+3, otherwise a(n) = 3*(2^((n-1)/2)+1).
 * [A343180](http://oeis.org/A343180) ([L03 program](343/A343180.asm)): Trajectory of 1 under the morphism 1 -> 12, 2 -> 32, 3 -> 14, 4 -> 34.
 * [A343265](http://oeis.org/A343265) ([L08 program](343/A343265.asm)): a(n) is the number of ways n can be reached starting from 0 and using only two operations: adding one or, once n > 1, squaring.
-* [A343291](http://oeis.org/A343291) ([L10 program](343/A343291.asm)): a(n) = (n-2)*2^(n-1) + n + 2.
+* [A343291](http://oeis.org/A343291) ([L07 program](343/A343291.asm)): a(n) = (n-2)*2^(n-1) + n + 2.
 * [A343442](http://oeis.org/A343442) ([L28 program](343/A343442.asm)): If n = Product (p_j^k_j) then a(n) = Product (p_j + 2), with a(1) = 1.
 * [A343461](http://oeis.org/A343461) ([L04 program](343/A343461.asm)): a(n) is the maximal number of congruent n-gons that can be arranged around a vertex without overlapping.
 * [A343539](http://oeis.org/A343539) ([L07 program](343/A343539.asm)): a(n) = (2*n+1)*Lucas(2*n+1).
@@ -2106,7 +2107,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344543](http://oeis.org/A344543) ([L07 program](344/A344543.asm)): Lexicographically earliest sequence S of distinct positive terms such that the product of the last k digits of S is even, k being the rightmost digit of a(n).
 * [A344564](http://oeis.org/A344564) ([L03 program](344/A344564.asm)): a(n) = [x^n] -3/(2*x - 1)^5.
 * [A344587](http://oeis.org/A344587) ([L04 program](344/A344587.asm)): a(n) = 2*A003961(n) - sigma(A003961(n)).
-* [A344598](http://oeis.org/A344598) ([L16 program](344/A344598.asm)): a(n) = Sum_{k=1..n} phi(k) * (floor(n/k)^2 - floor((n-1)/k)^2).
+* [A344598](http://oeis.org/A344598) ([L06 program](344/A344598.asm)): a(n) = Sum_{k=1..n} phi(k) * (floor(n/k)^2 - floor((n-1)/k)^2).
 * [A344622](http://oeis.org/A344622) ([L14 program](344/A344622.asm)): a(n) = n*(n+1)/2 - sigma(n) + d(n).
 * [A344695](http://oeis.org/A344695) ([L04 program](344/A344695.asm)): a(n) = gcd(sigma(n), psi(n)), where sigma is the sum of divisors function, A000203, and psi is the Dedekind psi function, A001615.
 * [A344814](http://oeis.org/A344814) ([L07 program](344/A344814.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 3^(k-1).

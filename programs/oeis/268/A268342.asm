@@ -3,9 +3,9 @@
 
 mov $1,2
 add $1,$0
+cal $0,62570 ; a(n) = phi(2*n).
 sub $1,1
 div $1,2
-cal $0,62570 ; a(n) = phi(2*n).
 mul $1,$0
 mul $1,2
 div $1,4

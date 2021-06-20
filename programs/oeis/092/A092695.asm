@@ -4,7 +4,9 @@
 mov $13,$0
 add $13,1
 lpb $13
-  clr $0,11
+  mov $0,0
+  mov $1,0
+  mov $10,0
   sub $13,1
   sub $0,$13
   mov $2,261241

@@ -2345,6 +2345,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A242992](http://oeis.org/A242992) ([L07 program](242/A242992.asm)): Least k>n/2, k<n, such that 2^(n-k)-1 divides 2^k-2, or 0 if no such k exists.
 * [A242998](http://oeis.org/A242998) ([L19 program](242/A242998.asm)): Number of integers k such that R = (2^k*Q - Q - 1)/(Q + 1 - 2^k) is a prime number, when Q = A000668(n) is the n-th Mersenne prime.
 * [A243036](http://oeis.org/A243036) ([L20 program](243/A243036.asm)): Number of entries of length n in A240602.
+* [A243099](http://oeis.org/A243099) ([L22 program](243/A243099.asm)): A002061 and A000217 interleaved.
 * [A243103](http://oeis.org/A243103) ([L31 program](243/A243103.asm)): Product of numbers m with 2 <= m <= n whose prime divisors all divide n.
 * [A243111](http://oeis.org/A243111) ([L03 program](243/A243111.asm)): Difference between the smallest triangular number >= n-th prime and the n-th prime.
 * [A243129](http://oeis.org/A243129) ([L08 program](243/A243129.asm)): a(n) = sigma(d(d(d(n)))), where d(n) is the number of divisors of n.
@@ -2469,7 +2470,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245092](http://oeis.org/A245092) ([L07 program](245/A245092.asm)): The even numbers (A005843) and the values of sigma function (A000203) interleaved.
 * [A245093](http://oeis.org/A245093) ([L03 program](245/A245093.asm)): Triangle read by rows in which row n lists the first n terms of A000203.
 * [A245135](http://oeis.org/A245135) ([L07 program](245/A245135.asm)): Number of length 5 0..n arrays least squares fitting to a zero slope straight line, with a single point taken as having zero slope
-* [A245176](http://oeis.org/A245176) ([L03 program](245/A245176.asm)): a(n) = 2*a(n-1)+(n-2)*a(n-2)-(n-1)*a(n-3) with initial terms (1,2,4).
+* [A245176](http://oeis.org/A245176) ([L09 program](245/A245176.asm)): a(n) = 2*a(n-1)+(n-2)*a(n-2)-(n-1)*a(n-3) with initial terms (1,2,4).
 * [A245179](http://oeis.org/A245179) ([L11 program](245/A245179.asm)): Numbers of the form 2^k+3 or 3*2^k+1, k >= 2.
 * [A245187](http://oeis.org/A245187) ([L06 program](245/A245187.asm)): Trajectory of 1 under repeated applications of the morphism 0->12, 1->12, 2->00.
 * [A245195](http://oeis.org/A245195) ([L03 program](245/A245195.asm)): a(n) = 2^A014081(n).
@@ -2791,4 +2792,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A249992](http://oeis.org/A249992) ([L22 program](249/A249992.asm)): Expansion of 1/((1+x)*(1+2*x)*(1-3*x)).
 * [A249993](http://oeis.org/A249993) ([L07 program](249/A249993.asm)): Expansion of 1/((1+x)*(1+2*x)*(1-4*x)).
 * [A249997](http://oeis.org/A249997) ([L06 program](249/A249997.asm)): Expansion of 1/((1-x)*(1+3*x)*(1-4*x)).
-* [A249999](http://oeis.org/A249999) ([L10 program](249/A249999.asm)): Expansion of 1/((1-x)^2*(1-2*x)*(1-3*x)).
+* [A249999](http://oeis.org/A249999) ([L08 program](249/A249999.asm)): Expansion of 1/((1-x)^2*(1-2*x)*(1-3*x)).

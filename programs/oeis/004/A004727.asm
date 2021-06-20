@@ -8,8 +8,7 @@ trn $3,7
 min $3,1
 add $2,$3
 add $1,$2
-sub $3,1
-max $3,0
+trn $3,1
 cal $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 lpb $1
   add $1,$3
