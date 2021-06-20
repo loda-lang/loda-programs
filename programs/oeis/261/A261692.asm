@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
+  sub $0,1
   mul $2,2
   cal $2,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
-  sub $0,1
   add $1,$2
 lpe

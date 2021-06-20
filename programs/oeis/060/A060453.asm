@@ -3,9 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,210379 ; Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
   sub $0,1
+  cal $2,210379 ; Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
   add $1,$2
 lpe
-div $1,4
-mul $1,2
+div $1,2

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,209229 ; Characteristic function of powers of 2, cf. A000079.
   div $0,2
+  cal $2,209229 ; Characteristic function of powers of 2, cf. A000079.
   add $1,$2
 lpe

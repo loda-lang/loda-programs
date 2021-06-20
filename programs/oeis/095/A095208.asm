@@ -5,8 +5,8 @@ mov $2,$0
 cmp $2,0
 mov $3,$0
 add $0,$2
-add $3,1
 cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+add $3,1
 mul $0,$3
 mul $0,9
 add $0,$3

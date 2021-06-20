@@ -4,10 +4,10 @@
 mov $1,2
 mov $2,$0
 add $0,1
-cal $2,135708 ; Minimal total number of edges in a polyhex consisting of n hexagonal cells.
-cal $1,198694 ; 7*4^n-1.
 mul $0,6
+cal $1,198694 ; 7*4^n-1.
 add $0,$1
+cal $2,135708 ; Minimal total number of edges in a polyhex consisting of n hexagonal cells.
 add $2,4
 sub $0,$2
 mov $1,$0

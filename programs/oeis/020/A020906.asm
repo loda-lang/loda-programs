@@ -2,8 +2,9 @@
 ; 1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,1,2,1,1,2,1,1,1,2,1,1,2,1,1,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,1,2,1,1,1,2,1,1,2,1,2,1,2,1,1,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1
 
 lpb $0
-  cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
-  mod $0,9
+  cal $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
+  div $0,2
+  sub $0,1
 lpe
 mov $1,$0
 add $1,1
