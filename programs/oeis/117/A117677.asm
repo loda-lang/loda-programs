@@ -3,10 +3,7 @@
 
 add $0,1
 pow $0,2
-sub $0,1
-mov $2,$0
-cmp $2,0
-add $0,$2
-cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+max $0,3
+cal $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
 mov $1,$0
-sub $1,2
+sub $1,1

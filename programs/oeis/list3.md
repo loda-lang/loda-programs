@@ -364,6 +364,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A154595](http://oeis.org/A154595) ([program](154/A154595.asm)): Period 6: repeat [1, 3, 3, -1, -3, -3].
 * [A154599](http://oeis.org/A154599) ([program](154/A154599.asm)): a(n) = 2*n^2 + 20*n + 8.
 * [A154600](http://oeis.org/A154600) ([program](154/A154600.asm)): a(n) = 2*n^2 + 22*n + 9.
+* [A154607](http://oeis.org/A154607) ([program](154/A154607.asm)): Numbers n such that 11*n + 4 is prime.
 * [A154609](http://oeis.org/A154609) ([program](154/A154609.asm)): a(n) = 13*n + 5.
 * [A154610](http://oeis.org/A154610) ([program](154/A154610.asm)): Numbers n such that 13n + 5 is prime.
 * [A154612](http://oeis.org/A154612) ([program](154/A154612.asm)): 17n + 7.
@@ -552,8 +553,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A156752](http://oeis.org/A156752) ([program](156/A156752.asm)): a(n) = floor(Catalan(n+1)/Catalan(n)).
 * [A156755](http://oeis.org/A156755) ([program](156/A156755.asm)): Period 9: repeat 1,1,2,1,1,2,2,2,3.
 * [A156760](http://oeis.org/A156760) ([program](156/A156760.asm)): 5*4^n-1.
-* [A156771](http://oeis.org/A156771) ([program](156/A156771.asm)): 729n - 531.
-* [A156772](http://oeis.org/A156772) ([program](156/A156772.asm)): 729n - 198.
+* [A156771](http://oeis.org/A156771) ([program](156/A156771.asm)): a(n) = 729*n - 531.
+* [A156772](http://oeis.org/A156772) ([program](156/A156772.asm)): a(n) = 729*n - 198.
 * [A156773](http://oeis.org/A156773) ([program](156/A156773.asm)): a(n) = 6561*n^2 - 9558*n + 3482.
 * [A156774](http://oeis.org/A156774) ([program](156/A156774.asm)): 6561n^2 - 3564n + 485.
 * [A156778](http://oeis.org/A156778) ([program](156/A156778.asm)): n*A007504(n)/2 = n*(sum of first n primes)/2
@@ -4471,6 +4472,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190582](http://oeis.org/A190582) ([program](190/A190582.asm)): Generalized McCarthy function: a(n) = n - s if n > c; otherwise, a(n) = a(a(n+t)) with d = t - s > 0, with parameters t=15, s=9, c=21.
 * [A190592](http://oeis.org/A190592) ([program](190/A190592.asm)): Maximal digit in base-3 expansion of n.
 * [A190593](http://oeis.org/A190593) ([program](190/A190593.asm)): Maximal digit in base-4 expansion of n.
+* [A190594](http://oeis.org/A190594) ([program](190/A190594.asm)): Maximal digit in base-5 expansion of n.
 * [A190599](http://oeis.org/A190599) ([program](190/A190599.asm)): Maximal digit in base-11 expansion of n.
 * [A190621](http://oeis.org/A190621) ([program](190/A190621.asm)): a(n) = n if n is not divisible by 4, otherwise 0.
 * [A190636](http://oeis.org/A190636) ([program](190/A190636.asm)): a(n)=(n^3+3*n^7)/4.
@@ -4730,6 +4732,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193295](http://oeis.org/A193295) ([program](193/A193295.asm)): Number of prime divisors (with multiplicity) of n^2 - 1.
 * [A193330](http://oeis.org/A193330) ([program](193/A193330.asm)): Number of prime factors of n^2 + 1, counted with multiplicity.
 * [A193335](http://oeis.org/A193335) ([program](193/A193335.asm)): Number of odd divisors of sigma(n).
+* [A193337](http://oeis.org/A193337) ([program](193/A193337.asm)): Sum of odd divisors of sigma(n).
 * [A193348](http://oeis.org/A193348) ([program](193/A193348.asm)): Number of odd divisors of tau(n).
 * [A193349](http://oeis.org/A193349) ([program](193/A193349.asm)): Sum of odd divisors of tau(n).
 * [A193356](http://oeis.org/A193356) ([program](193/A193356.asm)): If n is even then 0, otherwise n.

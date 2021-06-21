@@ -4,8 +4,4 @@
 mul $0,2
 div $0,3
 cal $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
-mov $1,17
-mov $2,1
-sub $2,$0
-sub $1,$2
-sub $1,16
+mov $1,$0

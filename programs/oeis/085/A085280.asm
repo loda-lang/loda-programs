@@ -8,9 +8,7 @@ pow $2,$1
 mov $1,3
 pow $1,$0
 add $2,9
-mov $3,23
-add $3,$2
-add $1,$3
-sub $1,36
+add $1,$2
+sub $1,13
 div $1,3
 add $1,1

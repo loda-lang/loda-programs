@@ -12,6 +12,5 @@ sub $1,5
 div $1,2
 mul $1,18
 sub $1,54
-div $1,18
-mul $1,6
+div $1,3
 add $1,45

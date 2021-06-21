@@ -4,6 +4,4 @@
 cal $0,74828 ; a(1) = 1; for n>1, a(n) = smallest composite multiple of n if n is a prime else the smallest prime divisor of n if n is composite.
 mod $0,2
 mov $1,$0
-add $1,1
-div $1,2
 add $1,2

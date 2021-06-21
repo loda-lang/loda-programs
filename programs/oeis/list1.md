@@ -449,7 +449,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054008](http://oeis.org/A054008) ([program](054/A054008.asm)): n read modulo (number of divisors of n).
 * [A054013](http://oeis.org/A054013) ([program](054/A054013.asm)): Chowla function of n read modulo n.
 * [A054024](http://oeis.org/A054024) ([program](054/A054024.asm)): Sum of the divisors of n reduced modulo n.
-* [A054027](http://oeis.org/A054027) ([program](054/A054027.asm)): Numbers n such that sum of divisors of n is not divisible by n.
+* [A054027](http://oeis.org/A054027) ([program](054/A054027.asm)): Numbers that do not divide their sum of divisors.
 * [A054055](http://oeis.org/A054055) ([program](054/A054055.asm)): Largest digit of n.
 * [A054066](http://oeis.org/A054066) ([program](054/A054066.asm)): Position of n-th 1 in A054065.
 * [A054071](http://oeis.org/A054071) ([program](054/A054071.asm)): Position of 1 in the permutation of 1,2,...,n obtained by ordering the fractional parts {h*sqrt(2)} for h=1,2,...,n.
@@ -774,6 +774,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056488](http://oeis.org/A056488) ([program](056/A056488.asm)): Number of periodic palindromes using a maximum of six different symbols.
 * [A056489](http://oeis.org/A056489) ([program](056/A056489.asm)): Number of periodic palindromes using exactly three different symbols.
 * [A056520](http://oeis.org/A056520) ([program](056/A056520.asm)): a(n) = (n + 2)*(2*n^2 - n + 3)/6.
+* [A056524](http://oeis.org/A056524) ([program](056/A056524.asm)): Palindromes with even number of digits.
 * [A056526](http://oeis.org/A056526) ([program](056/A056526.asm)): First differences of Flavius Josephus's sieve.
 * [A056527](http://oeis.org/A056527) ([program](056/A056527.asm)): Numbers where iterated sum of digits of square settles down to a cyclic pattern (in fact 13, 16, 13, 16, ...).
 * [A056530](http://oeis.org/A056530) ([program](056/A056530.asm)): Sequence remaining after third round of Flavius Josephus sieve; remove every fourth term of A047241.
@@ -3264,6 +3265,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A078113](http://oeis.org/A078113) ([program](078/A078113.asm)): Let u(1)=u(2)=1, u(3)=n, u(k) = (1/2)*abs(2*u(k-1) -u(k-2)-u(k-3)); sequence gives values of n such that sum(k>=1, u(k)) is an integer.
 * [A078126](http://oeis.org/A078126) ([program](078/A078126.asm)): Negative determinant of n X n matrix M_{i,j}=1 if i=j or i+j=1 (mod 2).
 * [A078137](http://oeis.org/A078137) ([program](078/A078137.asm)): Numbers which can be written as sum of squares>1.
+* [A078163](http://oeis.org/A078163) ([program](078/A078163.asm)): a(n)=A051201[n^2].
 * [A078171](http://oeis.org/A078171) ([program](078/A078171.asm)): a(n)=A055086[A000040(n)].
 * [A078181](http://oeis.org/A078181) ([program](078/A078181.asm)): Sum_{d|n, d=1 mod 3} d.
 * [A078182](http://oeis.org/A078182) ([program](078/A078182.asm)): a(n) = Sum_{d|n, d=2 mod 3} d.
@@ -3793,6 +3795,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081690](http://oeis.org/A081690) ([program](081/A081690.asm)): From P-positions in a certain game.
 * [A081704](http://oeis.org/A081704) ([program](081/A081704.asm)): Let f(0)=1, f(1)=t, f(n+1) = (f(n)^2+t^n)/f(n-1). f(t) is a polynomial with integer coefficients. Then a(n) = f(n) when t=3.
 * [A081714](http://oeis.org/A081714) ([program](081/A081714.asm)): a(n) = F(n)*L(n+1) where F=Fibonacci and L=Lucas numbers.
+* [A081728](http://oeis.org/A081728) ([program](081/A081728.asm)): Length of periods of Euler numbers modulo prime(n).
 * [A081738](http://oeis.org/A081738) ([program](081/A081738.asm)): Sum_{ 2 <= p <= n, p prime } p^2.
 * [A081743](http://oeis.org/A081743) ([program](081/A081743.asm)): a(1)=1 then a(n)=a(n/2^k)+1 if n is even and 2^k is the largest power of 2 dividing n, a(n)=a(n-1) otherwise.
 * [A081753](http://oeis.org/A081753) ([program](081/A081753.asm)): a(n) = floor(n/12) if n==2 (mod 12); a(n)=floor(n/12)+1 otherwise.
@@ -4017,6 +4020,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083375](http://oeis.org/A083375) ([program](083/A083375.asm)): n appears prime(n) times.
 * [A083392](http://oeis.org/A083392) ([program](083/A083392.asm)): Alternating partial sums of A000217.
 * [A083399](http://oeis.org/A083399) ([program](083/A083399.asm)): Number of divisors of n that are not divisors of other divisors of n.
+* [A083413](http://oeis.org/A083413) ([program](083/A083413.asm)): a(n) = Sum_{d|n} d*2^(d-1) for n > 0.
 * [A083416](http://oeis.org/A083416) ([program](083/A083416.asm)): Add 1, double, add 1, double, etc.
 * [A083420](http://oeis.org/A083420) ([program](083/A083420.asm)): a(n) = 2*4^n - 1.
 * [A083421](http://oeis.org/A083421) ([program](083/A083421.asm)): a(n)=2*5^n-2^n.
@@ -4502,6 +4506,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087451](http://oeis.org/A087451) ([program](087/A087451.asm)): G.f.: (2-x)/((1+2x)(1-3x)); e.g.f.: exp(3x)+exp(-2x); a(n)=3^n+(-2)^n.
 * [A087452](http://oeis.org/A087452) ([program](087/A087452.asm)): G.f.: (2-x)/((1+3x)(1-4x)); e.g.f.: exp(4x) + exp(-3x); a(n) = 4^n + (-3)^n.
 * [A087455](http://oeis.org/A087455) ([program](087/A087455.asm)): Expansion of (1 - x)/(1 - 2*x + 3*x^2) in powers of x.
+* [A087461](http://oeis.org/A087461) ([program](087/A087461.asm)): Arithmetic mean of n-th and 2n-th primes.
 * [A087475](http://oeis.org/A087475) ([program](087/A087475.asm)): a(n) = n^2 + 4.
 * [A087483](http://oeis.org/A087483) ([program](087/A087483.asm)): Row 0 of the order array of 3/2, i.e., row 0 of the transposable dispersion in A087465.
 * [A087503](http://oeis.org/A087503) ([program](087/A087503.asm)): a(n) = 3(a(n-2) + 1), with a(0) = 1, a(1) = 3.

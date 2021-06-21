@@ -1568,6 +1568,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330492](http://oeis.org/A330492) ([program](330/A330492.asm)): a(n) = sum of second differences of the sorted divisors of n.
 * [A330503](http://oeis.org/A330503) ([program](330/A330503.asm)): Number of Sós permutations of {0,1,...,n}.
 * [A330520](http://oeis.org/A330520) ([program](330/A330520.asm)): Sum of even integers <= n times the sum of odd integers <= n.
+* [A330560](http://oeis.org/A330560) ([program](330/A330560.asm)): a(n) = number of primes p <= prime(n) with Delta(p) == 2 mod 4, where Delta(p) = nextprime(p) - p.
 * [A330569](http://oeis.org/A330569) ([program](330/A330569.asm)): a(n) = 1 if n is odd, otherwise a(n) = 2^(v-1)+1 where v is the 2-adic valuation of n (A007814(n)).
 * [A330571](http://oeis.org/A330571) ([program](330/A330571.asm)): Square of number of unordered factorizations of n as n = i*j.
 * [A330602](http://oeis.org/A330602) ([program](330/A330602.asm)): a(n) = a(n-1) XOR (n+1), with a(0) = 0.

@@ -349,6 +349,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001903](http://oeis.org/A001903) ([program](001/A001903.asm)): Final digit of 7^n.
 * [A001906](http://oeis.org/A001906) ([program](001/A001906.asm)): F(2n) = bisection of Fibonacci sequence: a(n) = 3*a(n-1) - a(n-2).
 * [A001911](http://oeis.org/A001911) ([program](001/A001911.asm)): a(n) = Fibonacci(n+3) - 2.
+* [A001912](http://oeis.org/A001912) ([program](001/A001912.asm)): Numbers n such that 4*n^2 + 1 is prime.
 * [A001924](http://oeis.org/A001924) ([program](001/A001924.asm)): Apply partial sum operator twice to Fibonacci numbers.
 * [A001950](http://oeis.org/A001950) ([program](001/A001950.asm)): Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 * [A001951](http://oeis.org/A001951) ([program](001/A001951.asm)): A Beatty sequence: a(n) = floor(n*sqrt(2)).
@@ -420,6 +421,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002324](http://oeis.org/A002324) ([program](002/A002324.asm)): Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
 * [A002328](http://oeis.org/A002328) ([program](002/A002328.asm)): Numbers n such that n^2 - n - 1 is prime.
 * [A002378](http://oeis.org/A002378) ([program](002/A002378.asm)): Oblong (or promic, pronic, or heteromecic) numbers: a(n) = n*(n+1).
+* [A002407](http://oeis.org/A002407) ([program](002/A002407.asm)): Cuban primes: primes which are the difference of two consecutive cubes.
 * [A002409](http://oeis.org/A002409) ([program](002/A002409.asm)): a(n) = 2^n*C(n+6,6). Number of 6D hypercubes in an (n+6)-dimensional hypercube.
 * [A002411](http://oeis.org/A002411) ([program](002/A002411.asm)): Pentagonal pyramidal numbers: a(n) = n^2*(n+1)/2.
 * [A002412](http://oeis.org/A002412) ([program](002/A002412.asm)): Hexagonal pyramidal numbers, or greengrocer's numbers.
@@ -456,6 +458,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002618](http://oeis.org/A002618) ([program](002/A002618.asm)): a(n) = n*phi(n).
 * [A002620](http://oeis.org/A002620) ([program](002/A002620.asm)): Quarter-squares: floor(n/2)*ceiling(n/2). Equivalently, floor(n^2/4).
 * [A002621](http://oeis.org/A002621) ([program](002/A002621.asm)): Expansion of 1 / ((1-x)^2*(1-x^2)*(1-x^3)*(1-x^4)).
+* [A002622](http://oeis.org/A002622) ([program](002/A002622.asm)): Number of partitions of at most n into at most 5 parts.
 * [A002623](http://oeis.org/A002623) ([program](002/A002623.asm)): Expansion of 1/((1-x)^4*(1+x)).
 * [A002624](http://oeis.org/A002624) ([program](002/A002624.asm)): Expansion of (1-x)^(-3) * (1-x^2)^(-2).
 * [A002640](http://oeis.org/A002640) ([program](002/A002640.asm)): Numbers n such that (n^2 + n + 1)/3 is prime.
@@ -3398,6 +3401,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024920](http://oeis.org/A024920) ([program](024/A024920.asm)): a(n) = Sum_{k=1..n} (n-k) * floor(n/k).
 * [A024924](http://oeis.org/A024924) ([program](024/A024924.asm)): a(n) = Sum_{k=1..n} prime(k)*floor(n/prime(k)).
 * [A024925](http://oeis.org/A024925) ([program](024/A024925.asm)): Sum of remainders of n mod prime(k), for k = 1,2,3,...,n.
+* [A024926](http://oeis.org/A024926) ([program](024/A024926.asm)): a(n) = Sum_{k=1..n} floor(p(k)/k).
+* [A024927](http://oeis.org/A024927) ([program](024/A024927.asm)): a(n) = Sum_{k=1..n} k*floor( prime(k)/k ).
 * [A024930](http://oeis.org/A024930) ([program](024/A024930.asm)): a(n) = sum of remainders of n mod 1,3,5,...,2k-1, where k = [ (n+1)/2 ].
 * [A024935](http://oeis.org/A024935) ([program](024/A024935.asm)): a(n) = minimal length of any partition of n into distinct primes.
 * [A024966](http://oeis.org/A024966) ([program](024/A024966.asm)): 7 times triangular numbers: 7*n*(n+1)/2.
@@ -3911,7 +3916,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A028815](http://oeis.org/A028815) ([program](028/A028815.asm)): a(n) = n-th prime + 1 (starting with 1).
 * [A028828](http://oeis.org/A028828) ([program](028/A028828.asm)): Distinct orders of elements of Conway simple group Co_3.
 * [A028830](http://oeis.org/A028830) ([program](028/A028830.asm)): Distinct orders of elements of Conway simple group Co_2.
-* [A028835](http://oeis.org/A028835) ([program](028/A028835.asm)): Numbers n such that iterated sum of digits of n is a prime.
+* [A028835](http://oeis.org/A028835) ([program](028/A028835.asm)): Numbers whose iterated sum of digits is a prime.
 * [A028836](http://oeis.org/A028836) ([program](028/A028836.asm)): Iterated sum of digits of n is a power of 2.
 * [A028837](http://oeis.org/A028837) ([program](028/A028837.asm)): Iterated sum of digits of n is a square.
 * [A028841](http://oeis.org/A028841) ([program](028/A028841.asm)): Iterated sum of digits of n is a Fibonacci number.
@@ -4130,7 +4135,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031131](http://oeis.org/A031131) ([program](031/A031131.asm)): Difference between n-th prime and (n+2)-nd prime.
 * [A031164](http://oeis.org/A031164) ([program](031/A031164.asm)): Irreducible Euler sums of weight 8 and depth 10+2n.
 * [A031193](http://oeis.org/A031193) ([program](031/A031193.asm)): Numbers having period-22 5-digitized sequences.
-* [A031215](http://oeis.org/A031215) ([program](031/A031215.asm)): a(n) = prime(2n).
+* [A031215](http://oeis.org/A031215) ([program](031/A031215.asm)): Even-indexed primes: a(n) = prime(2n).
 * [A031218](http://oeis.org/A031218) ([program](031/A031218.asm)): Largest prime power <= n.
 * [A031286](http://oeis.org/A031286) ([program](031/A031286.asm)): Additive persistence: number of summations of digits needed to obtain a single digit (the additive digital root).
 * [A031313](http://oeis.org/A031313) ([program](031/A031313.asm)): Position of n-th 0 in A031312.
@@ -4804,7 +4809,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037251](http://oeis.org/A037251) ([program](037/A037251.asm)): a(n) = n^3*(n^3 + 1)*(n-1).
 * [A037255](http://oeis.org/A037255) ([program](037/A037255.asm)): For n weights, number of combinations when limited to two weights per pan.
 * [A037270](http://oeis.org/A037270) ([program](037/A037270.asm)): a(n) = n^2*(n^2 + 1)/2.
-* [A037314](http://oeis.org/A037314) ([program](037/A037314.asm)): Numbers n such that (sum of base-3 digits of n) = (sum of base-9 digits of n).
+* [A037314](http://oeis.org/A037314) ([program](037/A037314.asm)): Numbers whose base-3 and base-9 expansions have the same digit sum.
 * [A037453](http://oeis.org/A037453) ([program](037/A037453.asm)): Positive numbers whose base-5 representation contains no 3 or 4.
 * [A037458](http://oeis.org/A037458) ([program](037/A037458.asm)): a(1)=1; for n > 1, a(n) = n - a(n-floor(sqrt(n))).
 * [A037459](http://oeis.org/A037459) ([program](037/A037459.asm)): Sum{d(i)*5^i: i=0,1,...,m}, where Sum{d(i)*4^i: i=0,1,...,m} is the base 4 representation of n.

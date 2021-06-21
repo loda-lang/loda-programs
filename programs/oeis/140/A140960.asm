@@ -2,11 +2,10 @@
 ; 0,0,2,6,18,46,114,270,626,1422,3186,7054,15474,33678,72818,156558,334962,713614,1514610,3203982,6757490,14214030,29826162,62448526,130489458,272163726,566697074,1178133390,2445745266,5070447502,10498808946,21713445774,44858547314,92580406158,190887435378,393228116878,809362726002,1664538436494,3420702841970,7024657621902,14415819119730,29564645991310,60595307486322,124122645980046,254109353974898,519946831979406,1063349912018034,2173612320154510,4441049632545906,9069749249565582
 
 lpb $0
-  mov $2,$0
+  mov $1,$0
   mod $0,2
-  trn $2,2
-  cal $2,191007 ; Another renewal type of sequence: Let X, X(1),X(2),... denote independent random variables with pdf P(X=1) = P(X=2) = P(X=4) = 1/3. Let N(x) denote the first value of k such that X(1)*X(2)...*X(k) > x, and let H(x) = E(N(x)). The sequence a(n) is given by a(n) = 2^(n+1)*H(2^n).
-  add $1,$2
+  trn $1,2
+  cal $1,191007 ; Another renewal type of sequence: Let X, X(1),X(2),... denote independent random variables with pdf P(X=1) = P(X=2) = P(X=4) = 1/3. Let N(x) denote the first value of k such that X(1)*X(2)...*X(k) > x, and let H(x) = E(N(x)). The sequence a(n) is given by a(n) = 2^(n+1)*H(2^n).
 lpe
 div $1,3
 mul $1,2

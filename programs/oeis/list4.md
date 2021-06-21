@@ -293,6 +293,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206776](http://oeis.org/A206776) ([program](206/A206776.asm)): a(n) = 3*a(n-1) + 2*a(n-2) for n>1, a(0)=2, a(1)=3.
 * [A206787](http://oeis.org/A206787) ([program](206/A206787.asm)): Sum of the odd squarefree divisors of n.
 * [A206802](http://oeis.org/A206802) ([program](206/A206802.asm)): a(n) = (1/2)*A185382(n).
+* [A206803](http://oeis.org/A206803) ([program](206/A206803.asm)): Sum_{0<j<k<=n} P(k)-P(j), where P(j)=A065091(j) is the j-th odd prime.
 * [A206804](http://oeis.org/A206804) ([program](206/A206804.asm)): (1/2)*A206803.
 * [A206806](http://oeis.org/A206806) ([program](206/A206806.asm)): Sum_{0<j<k<=n} s(k)-s(j), where s(j)=A002620(j) is the j-th quarter-square.
 * [A206807](http://oeis.org/A206807) ([program](206/A206807.asm)): Position of 3^n when {2^j} and {3^k} are jointly ranked; complement of A206805.
@@ -1745,6 +1746,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229912](http://oeis.org/A229912) ([program](229/A229912.asm)): a(n) = Fibonacci(n) * (2*Fibonacci(n) + 1).
 * [A229949](http://oeis.org/A229949) ([program](229/A229949.asm)): Number of divisors of the n-th positive quarter-square.
 * [A230018](http://oeis.org/A230018) ([program](230/A230018.asm)): a(n) = (9*n^3 + 5*n)/2.
+* [A230024](http://oeis.org/A230024) ([program](230/A230024.asm)): Final nonzero digit of n^n in base 16.
 * [A230038](http://oeis.org/A230038) ([program](230/A230038.asm)): Distance between n^2 and the smallest triangular number >= n^2.
 * [A230059](http://oeis.org/A230059) ([program](230/A230059.asm)): Conjectural number of irreducible zeta values of weight 2*n+1 and depth three.
 * [A230074](http://oeis.org/A230074) ([program](230/A230074.asm)): Period 4: repeat [1, -2, 1, 0].
@@ -2623,6 +2625,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246817](http://oeis.org/A246817) ([program](246/A246817.asm)): Possible number of trailing zeros in hyperfactorials (A002109).
 * [A246831](http://oeis.org/A246831) ([program](246/A246831.asm)): a(n) is the concatenation of n and 3n in binary.
 * [A246839](http://oeis.org/A246839) ([program](246/A246839.asm)): Number of trailing zeros in A002109(n).
+* [A246929](http://oeis.org/A246929) ([program](246/A246929.asm)): Prime(11*n).
+* [A246930](http://oeis.org/A246930) ([program](246/A246930.asm)): Prime(12*n).
+* [A246931](http://oeis.org/A246931) ([program](246/A246931.asm)): Prime(14*n).
+* [A246932](http://oeis.org/A246932) ([program](246/A246932.asm)): Prime(15*n).
+* [A246933](http://oeis.org/A246933) ([program](246/A246933.asm)): Prime(16*n).
 * [A246934](http://oeis.org/A246934) ([program](246/A246934.asm)): The closest square to n-th prime.
 * [A246943](http://oeis.org/A246943) ([program](246/A246943.asm)): a(4n) = 4*n , a(2n+1) = 8*n+4 , a(4n+2) = 2*n+1.
 * [A246960](http://oeis.org/A246960) ([program](246/A246960.asm)): Directions of the lines in the (Heighway) Dragon Curve.
