@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,152966 ; Twice repdigit numbers.
   sub $0,1
+  cal $2,152966 ; Twice repdigit numbers.
   add $1,$2
 lpe
 div $1,2

@@ -358,6 +358,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102670](http://oeis.org/A102670) ([program](102/A102670.asm)): Number of digits >= 2 in the decimal representations of all integers from 0 to n.
 * [A102671](http://oeis.org/A102671) ([program](102/A102671.asm)): Number of digits >= 3 in decimal representation of n.
 * [A102672](http://oeis.org/A102672) ([program](102/A102672.asm)): Number of digits >= 3 in the decimal representations of all integers from 0 to n.
+* [A102673](http://oeis.org/A102673) ([program](102/A102673.asm)): Number of digits >= 4 in decimal representation of n.
 * [A102675](http://oeis.org/A102675) ([program](102/A102675.asm)): Number of digits >= 5 in decimal representation of n.
 * [A102676](http://oeis.org/A102676) ([program](102/A102676.asm)): Number of digits >= 5 in the decimal representations of all integers from 0 to n.
 * [A102677](http://oeis.org/A102677) ([program](102/A102677.asm)): Number of digits >= 6 in decimal representation of n.
@@ -2172,6 +2173,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A121262](http://oeis.org/A121262) ([program](121/A121262.asm)): The characteristic function of the multiples of four.
 * [A121273](http://oeis.org/A121273) ([program](121/A121273.asm)): Number of different n-dimensional convex regular polytopes that can tile n-dimensional space.
 * [A121318](http://oeis.org/A121318) ([program](121/A121318.asm)): Molecular topological indices of the path graphs P_n
+* [A121326](http://oeis.org/A121326) ([program](121/A121326.asm)): Primes of the form 4*k^2 + 1.
 * [A121358](http://oeis.org/A121358) ([program](121/A121358.asm)): Least prime factor of pyramidal number A000292(n), a(1) = 1.
 * [A121361](http://oeis.org/A121361) ([program](121/A121361.asm)): Expansion of f(x^1, x^5) * psi(x^2) in powers of x where psi(), f() are Ramanujan theta functions.
 * [A121365](http://oeis.org/A121365) ([program](121/A121365.asm)): a(n) = 6*a(n-1) - 9*a(n-2) + n + 1.
@@ -2524,6 +2526,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126332](http://oeis.org/A126332) ([program](126/A126332.asm)): Numbers n such that 10n + 13 is prime.
 * [A126335](http://oeis.org/A126335) ([program](126/A126335.asm)): a(n) = n*(4*n^2+5*n-3)/2.
 * [A126358](http://oeis.org/A126358) ([program](126/A126358.asm)): Number of base 4 n-digit numbers with adjacent digits differing by one or less.
+* [A126387](http://oeis.org/A126387) ([program](126/A126387.asm)): Read binary expansion of n from the left; keep track of the excess of 1's over 0's that have been seen so far; sequence gives maximum(excess of 1's over 0's).
 * [A126420](http://oeis.org/A126420) ([program](126/A126420.asm)): a(n) = n^3 - n - 1.
 * [A126423](http://oeis.org/A126423) ([program](126/A126423.asm)): a(n) = n^4 - n - 1.
 * [A126426](http://oeis.org/A126426) ([program](126/A126426.asm)): a(n) = n^5 - n - 1.

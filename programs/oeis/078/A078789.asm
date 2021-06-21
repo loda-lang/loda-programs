@@ -4,8 +4,8 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  cal $2,88859 ; a(n) = L(n) + 2^n where L(n) = A000032(n) (the Lucas numbers).
   sub $0,1
+  cal $2,88859 ; a(n) = L(n) + 2^n where L(n) = A000032(n) (the Lucas numbers).
   add $1,$2
 lpe
 div $1,5

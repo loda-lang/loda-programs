@@ -4,8 +4,8 @@
 mov $4,$0
 mov $6,2
 lpb $6
-  clr $0,4
   mov $0,$4
+  mov $2,0
   sub $6,1
   add $0,$6
   trn $0,1
@@ -14,13 +14,12 @@ lpb $6
   mul $3,$0
   add $0,$3
   add $2,$0
-  mov $1,$2
+  mov $5,$2
   mov $7,$6
   mul $7,$2
-  add $5,$7
+  add $1,$7
 lpe
 min $4,1
-mul $4,$1
-mov $1,$5
+mul $4,$5
 sub $1,$4
 div $1,2

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,45721 ; a(n) = binomial(3*n+1,n).
   sub $0,1
+  cal $2,45721 ; a(n) = binomial(3*n+1,n).
   add $1,$2
 lpe
 add $1,1

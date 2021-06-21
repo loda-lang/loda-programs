@@ -2,6 +2,8 @@
 ; 0,1,0,0,1,0,1,1,0,0,0,1,1,0,0,1,0,0,1,0,1,1,1,0,1,1,0,1,0,0,1,0,0,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,0,0,1,0,1,1,0,1,1,0,1,1,0,0
 
 cal $0,72668 ; Numbers one less than composite numbers.
-cal $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-pow $0,2
+cal $0,71325 ; Number of squares > 1 dividing n.
+add $0,1
+cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mov $1,$0
+mod $1,2

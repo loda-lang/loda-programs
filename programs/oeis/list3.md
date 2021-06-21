@@ -2031,6 +2031,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167993](http://oeis.org/A167993) ([program](167/A167993.asm)): Expansion of x^2/((3*x-1)*(3*x^2-1)).
 * [A167998](http://oeis.org/A167998) ([program](167/A167998.asm)): Numbers n with property that first digit of 5*n = last digit of n.
 * [A168014](http://oeis.org/A168014) ([program](168/A168014.asm)): Sum of all parts of all partitions of n into equal parts that do not contain 1 as a part.
+* [A168024](http://oeis.org/A168024) ([program](168/A168024.asm)): Noncomposite numbers in the northwestern ray of the Ulam spiral as oriented on the March 1964 cover of Scientific American.
 * [A168029](http://oeis.org/A168029) ([program](168/A168029.asm)): n*(n^6+1)/2.
 * [A168036](http://oeis.org/A168036) ([program](168/A168036.asm)): Difference between n' and n, where n' is the arithmetic derivative of n (A003415).
 * [A168037](http://oeis.org/A168037) ([program](168/A168037.asm)): Period length 18: repeat 0,1,2,0,8,7,0,4,5,0,5,4,0,7,8,0,2,1.

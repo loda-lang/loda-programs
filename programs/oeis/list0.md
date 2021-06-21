@@ -1093,6 +1093,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006414](http://oeis.org/A006414) ([program](006/A006414.asm)): Number of nonseparable toroidal tree-rooted maps with n + 2 edges and n + 1 vertices.
 * [A006416](http://oeis.org/A006416) ([program](006/A006416.asm)): Number of loopless rooted planar maps with 3 faces and n vertices and no isthmuses. Also a(n)=T(4,n-3), array T as in A049600.
 * [A006446](http://oeis.org/A006446) ([program](006/A006446.asm)): Numbers k such that floor(sqrt(k)) divides k.
+* [A006450](http://oeis.org/A006450) ([program](006/A006450.asm)): Prime-indexed primes: primes with prime subscripts.
 * [A006451](http://oeis.org/A006451) ([program](006/A006451.asm)): Numbers n such that n*(n+1)/2+1 is a square.
 * [A006452](http://oeis.org/A006452) ([program](006/A006452.asm)): a(n) = 6*a(n-2) - a(n-4).
 * [A006454](http://oeis.org/A006454) ([program](006/A006454.asm)): Solution to a Diophantine equation: each term is a triangular number and each term + 1 is a square.
@@ -3329,6 +3330,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024399](http://oeis.org/A024399) ([program](024/A024399.asm)): a(n) = [ (3rd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+2 positive integers congruent to 2 mod 3}.
 * [A024401](http://oeis.org/A024401) ([program](024/A024401.asm)): a(n) = [ (3rd elementary symmetric function of S(n))/(2nd elementary symmetric function of S(n)) ], where S(n) = {first n+2 positive integers congruent to 2 mod 3}.
 * [A024403](http://oeis.org/A024403) ([program](024/A024403.asm)): [ (4th elementary symmetric function of S(n))/(3rd elementary symmetric function of S(n)) ], where S(n) = {first n+3 positive integers congruent to 2 mod 3}.
+* [A024450](http://oeis.org/A024450) ([program](024/A024450.asm)): Sum of squares of the first n primes.
 * [A024482](http://oeis.org/A024482) ([program](024/A024482.asm)): a(n) = (1/2)*(binomial(2n, n) - binomial(2n-2, n-1)).
 * [A024483](http://oeis.org/A024483) ([program](024/A024483.asm)): a(n) = binomial(2*n, n) mod binomial(2*n-2, n-1).
 * [A024490](http://oeis.org/A024490) ([program](024/A024490.asm)): a(n) = C(n-1,1) + C(n-3,3) + ... + C(n-2*m-1,2*m+1), where m = floor((n-2)/4).

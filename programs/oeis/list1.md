@@ -594,6 +594,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A055247](http://oeis.org/A055247) ([program](055/A055247.asm)): Related to A055246 and A005836. Used for boundaries of open intervals which have to be erased in the Cantor middle third set construction.
 * [A055250](http://oeis.org/A055250) ([program](055/A055250.asm)): Seventh column of triangle A055249.
 * [A055251](http://oeis.org/A055251) ([program](055/A055251.asm)): Eighth column of triangle A055249.
+* [A055259](http://oeis.org/A055259) ([program](055/A055259.asm)): Sums of two powers of 8.
 * [A055264](http://oeis.org/A055264) ([program](055/A055264.asm)): Possible values of A055263; numbers equal to 0, 1, 3 or 6 modulo 9.
 * [A055267](http://oeis.org/A055267) ([program](055/A055267.asm)): a(n) = 3*a(n-1) - a(n-2) with a(0)=1, a(1)=7.
 * [A055268](http://oeis.org/A055268) ([program](055/A055268.asm)): a(n) = (11*n + 4)*C(n+3, 3)/4.
@@ -4084,6 +4085,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083920](http://oeis.org/A083920) ([program](083/A083920.asm)): Number of nontriangular numbers <= n.
 * [A083943](http://oeis.org/A083943) ([program](083/A083943.asm)): A generalized Jacobsthal sequence.
 * [A083944](http://oeis.org/A083944) ([program](083/A083944.asm)): A generalized Jacobsthal sequence.
+* [A084009](http://oeis.org/A084009) ([program](084/A084009.asm)): a(n) = n^2 concatenated with reverse(n^2) divided by 11.
 * [A084011](http://oeis.org/A084011) ([program](084/A084011.asm)): Digit reversal of 11*n, divided by 11.
 * [A084052](http://oeis.org/A084052) ([program](084/A084052.asm)): 2*n digit-reversed mod 2.
 * [A084054](http://oeis.org/A084054) ([program](084/A084054.asm)): 5*n digit-reversed mod 5.
