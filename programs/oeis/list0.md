@@ -2709,6 +2709,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021019](http://oeis.org/A021019) ([program](021/A021019.asm)): Decimal expansion of 1/15.
 * [A021020](http://oeis.org/A021020) ([program](021/A021020.asm)): Decimal expansion of 1/16.
 * [A021022](http://oeis.org/A021022) ([program](021/A021022.asm)): Decimal expansion of 1/18.
+* [A021023](http://oeis.org/A021023) ([program](021/A021023.asm)): Decimal expansion of 1/19.
 * [A021026](http://oeis.org/A021026) ([program](021/A021026.asm)): Decimal expansion of 1/22.
 * [A021028](http://oeis.org/A021028) ([program](021/A021028.asm)): Decimal expansion of 1/24.
 * [A021031](http://oeis.org/A021031) ([program](021/A021031.asm)): Decimal expansion of 1/27.
@@ -2716,6 +2717,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021039](http://oeis.org/A021039) ([program](021/A021039.asm)): Decimal expansion of 1/35.
 * [A021040](http://oeis.org/A021040) ([program](021/A021040.asm)): Decimal expansion of 1/36.
 * [A021041](http://oeis.org/A021041) ([program](021/A021041.asm)): Decimal expansion of 1/37.
+* [A021042](http://oeis.org/A021042) ([program](021/A021042.asm)): Decimal expansion of 1/38.
 * [A021043](http://oeis.org/A021043) ([program](021/A021043.asm)): Decimal expansion of 1/39.
 * [A021045](http://oeis.org/A021045) ([program](021/A021045.asm)): Decimal expansion of 1/41.
 * [A021052](http://oeis.org/A021052) ([program](021/A021052.asm)): Decimal expansion of 1/48.
@@ -2729,6 +2731,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021085](http://oeis.org/A021085) ([program](021/A021085.asm)): Decimal expansion of 1/81.
 * [A021086](http://oeis.org/A021086) ([program](021/A021086.asm)): Decimal expansion of 1/82.
 * [A021095](http://oeis.org/A021095) ([program](021/A021095.asm)): Decimal expansion of 1/91.
+* [A021099](http://oeis.org/A021099) ([program](021/A021099.asm)): Decimal expansion of 1/95.
 * [A021100](http://oeis.org/A021100) ([program](021/A021100.asm)): Decimal expansion of 1/96.
 * [A021105](http://oeis.org/A021105) ([program](021/A021105.asm)): Decimal expansion of 1/101.
 * [A021112](http://oeis.org/A021112) ([program](021/A021112.asm)): Decimal expansion of 1/108.
@@ -6288,6 +6291,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049563](http://oeis.org/A049563) ([program](049/A049563.asm)): a(n) = ((prime(n)-1)! + 1) mod (prime(n) + 2).
 * [A049581](http://oeis.org/A049581) ([program](049/A049581.asm)): Table T(n,k) = |n-k| read by antidiagonals (n >= 0, k >= 0).
 * [A049598](http://oeis.org/A049598) ([program](049/A049598.asm)): 12 times triangular numbers.
+* [A049605](http://oeis.org/A049605) ([program](049/A049605.asm)): Smallest k>1 such that k divides sigma(k*n).
 * [A049606](http://oeis.org/A049606) ([program](049/A049606.asm)): Largest odd divisor of n!.
 * [A049610](http://oeis.org/A049610) ([program](049/A049610.asm)): a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3)).
 * [A049611](http://oeis.org/A049611) ([program](049/A049611.asm)): a(n) = T(n,2), array T as in A049600.

@@ -6,7 +6,4 @@ lpb $0
   cal $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $0,$2
   add $1,$2
-  mov $3,2
 lpe
-mul $1,$3
-div $1,2

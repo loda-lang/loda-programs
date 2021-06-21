@@ -410,6 +410,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257531](http://oeis.org/A257531) ([program](257/A257531.asm)): If 2^(n-1) mod n = 1, then 1 else 0.
 * [A257542](http://oeis.org/A257542) ([program](257/A257542.asm)): Square-sum pairs: Numbers n such that 0,1, ..., 2n-1 can be partitioned into n pairs, where each pair adds up to a perfect square.
 * [A257564](http://oeis.org/A257564) ([program](257/A257564.asm)): Irregular triangle read by rows: T(n,k) = r(n+k)+r(n-k) with r(n) = (n-(n mod 2))/2 for n>=0 and -n<=k<=n.
+* [A257587](http://oeis.org/A257587) ([program](257/A257587.asm)): If n = abcd... in decimal, a(n) = a^2-b^2+c^2-d^2+...
 * [A257589](http://oeis.org/A257589) ([program](257/A257589.asm)): a(n) = (2n+1)^2*Catalan(n).
 * [A257601](http://oeis.org/A257601) ([program](257/A257601.asm)): a(n) = n^4/12+5*n^3/3+125*n^2/12+125*n/6+2.
 * [A257602](http://oeis.org/A257602) ([program](257/A257602.asm)): Expansion of (1+x+21*x^2+x^3+x^4)/(1-x)^5.

@@ -3365,6 +3365,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179904](http://oeis.org/A179904) ([program](179/A179904.asm)): a(n) = A056520(n)+1 for n>0, a(0)=1.
 * [A179905](http://oeis.org/A179905) ([program](179/A179905.asm)): (1, 4, 7, 10, 13,...) convolved with (1, 0, 4, 7, 10, 13...); given A016777 = (1, 4, 7, 10, 13,...).
 * [A179935](http://oeis.org/A179935) ([program](179/A179935.asm)): Squares where the number of decimal digits is also a square.
+* [A179942](http://oeis.org/A179942) ([program](179/A179942.asm)): Number of times n appears in a 1000 x 1000 multiplication table.
 * [A179976](http://oeis.org/A179976) ([program](179/A179976.asm)): 2^(2n+1) mod (2n+1).
 * [A179986](http://oeis.org/A179986) ([program](179/A179986.asm)): Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.
 * [A179991](http://oeis.org/A179991) ([program](179/A179991.asm)): Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.
@@ -3399,6 +3400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180250](http://oeis.org/A180250) ([program](180/A180250.asm)): a(n) = 5*a(n-1) + 10*a(n-2), with a(1)=0 and a(2)=1.
 * [A180272](http://oeis.org/A180272) ([program](180/A180272.asm)): a(n) = binomial(n, A002024(n+1)-1) where A002024 is "n appears n times".
 * [A180291](http://oeis.org/A180291) ([program](180/A180291.asm)): Number of arrangements of n indistinguishable balls in n boxes with the maximum number of balls in any box equal to n-1.
+* [A180302](http://oeis.org/A180302) ([program](180/A180302.asm)): Sequence of primes separated by [sequence of prime] elements. 2, [find 2nd prime after 2 = ] 5, find 3rd prime after 5 =] 13, [find 5th prime after 13 =] 61, ..., etc.
 * [A180316](http://oeis.org/A180316) ([program](180/A180316.asm)): Concatenation of n and A008954(n).
 * [A180319](http://oeis.org/A180319) ([program](180/A180319.asm)): Total number of possible standard knight moves on an n X 2n chessboard, if the knight is placed anywhere
 * [A180324](http://oeis.org/A180324) ([program](180/A180324.asm)): Vassiliev invariant of fourth order for the torus knots

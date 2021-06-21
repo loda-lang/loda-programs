@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,194145 ; Beatty sequence for -1+sqrt(6), a(n)=floor(n*(-1+sqrt(6))); complement of A194146.
   sub $0,1
+  cal $2,194145 ; Beatty sequence for -1+sqrt(6), a(n)=floor(n*(-1+sqrt(6))); complement of A194146.
   add $1,$2
 lpe
 add $1,1

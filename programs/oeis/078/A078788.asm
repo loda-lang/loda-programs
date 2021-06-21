@@ -7,5 +7,4 @@ lpb $0
   div $0,$1
   mul $1,7
 lpe
-mul $1,2
-div $1,14
+div $1,7

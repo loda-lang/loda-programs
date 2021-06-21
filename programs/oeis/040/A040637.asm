@@ -6,7 +6,3 @@ cal $0,40620 ; Continued fraction for sqrt(646).
 mod $2,2
 sub $0,$2
 mov $1,$0
-mul $1,2
-sub $1,2
-div $1,2
-add $1,1

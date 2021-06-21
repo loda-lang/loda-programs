@@ -9,6 +9,4 @@ lpb $0
   cmp $2,1
   trn $0,$2
 lpe
-div $1,2
-mul $1,2
 add $1,1

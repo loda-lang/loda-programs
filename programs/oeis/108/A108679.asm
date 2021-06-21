@@ -8,8 +8,5 @@ mov $2,$0
 mul $0,4
 sub $0,$2
 mov $1,$0
-mul $1,2
 mul $1,$3
-sub $1,180
-div $1,180
-add $1,1
+div $1,90

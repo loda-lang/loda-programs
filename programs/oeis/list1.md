@@ -4925,6 +4925,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092092](http://oeis.org/A092092) ([program](092/A092092.asm)): Back and Forth Summant S(n, _3): a(n) = Sum_{i=0..floor(2n/3)} (n-3i).
 * [A092093](http://oeis.org/A092093) ([program](092/A092093.asm)): Back and Forth Summant S(n, _5): a(n) = sum_{i = 0..floor(2n/5)} n-5i.
 * [A092094](http://oeis.org/A092094) ([program](092/A092094.asm)): a(n) = Sum_{i=0,1,2,..; n-k*i >= -n} |n-k*i| for k=3.
+* [A092137](http://oeis.org/A092137) ([program](092/A092137.asm)): Lower bound for A005842(n).
 * [A092163](http://oeis.org/A092163) ([program](092/A092163.asm)): a(n) = Prime(2n) + prime(2n+1).
 * [A092164](http://oeis.org/A092164) ([program](092/A092164.asm)): Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (1,1) entry of M^n.
 * [A092165](http://oeis.org/A092165) ([program](092/A092165.asm)): Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (1,2) entry of M^n.
@@ -5011,6 +5012,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092755](http://oeis.org/A092755) ([program](092/A092755.asm)): Partial sums of A000195 (floor(log(n))).
 * [A092757](http://oeis.org/A092757) ([program](092/A092757.asm)): Partial sums of round(log_2(n)).
 * [A092763](http://oeis.org/A092763) ([program](092/A092763.asm)): a(n) = floor(3^n / n).
+* [A092769](http://oeis.org/A092769) ([program](092/A092769.asm)): Squares of A006450: a(n) = prime(prime(n))^2.
 * [A092771](http://oeis.org/A092771) ([program](092/A092771.asm)): Prime(prime(n))^2-1.
 * [A092772](http://oeis.org/A092772) ([program](092/A092772.asm)): (Prime(prime(n))^2-1)/24.
 * [A092773](http://oeis.org/A092773) ([program](092/A092773.asm)): Prime(prime(n))^2+1)/2.

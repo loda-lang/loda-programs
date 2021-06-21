@@ -8,6 +8,5 @@ lpb $0
   add $1,$2
   sub $1,2
 lpe
-div $1,60
-add $1,1
-mul $1,10
+div $1,6
+add $1,10

@@ -4,6 +4,5 @@
 add $0,1
 mul $0,2
 cal $0,271342 ; Sum of all even divisors of all positive integers <= n.
+mul $0,2
 mov $1,$0
-div $1,2
-mul $1,4

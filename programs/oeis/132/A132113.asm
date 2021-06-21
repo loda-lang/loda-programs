@@ -8,7 +8,4 @@ lpb $0
   cal $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mul $1,8
 lpe
-div $1,2
-sub $1,3
-div $1,4
-add $1,1
+div $1,8
