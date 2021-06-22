@@ -1950,6 +1950,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118966](http://oeis.org/A118966) ([program](118/A118966.asm)): a(n) = (n+1)/2 if n occurs among the first n-1 terms of the sequence, otherwise a(n) = 2*n - 1.
 * [A118979](http://oeis.org/A118979) ([program](118/A118979.asm)): O.g.f: -12*x^3/(-1+x)/(-1+2*x)/(-1+3*x) = -2-2/(-1+3*x)-6/(-1+x)+6/(-1+2*x) .
 * [A119031](http://oeis.org/A119031) ([program](119/A119031.asm)): Add and Reverse: a(n) = the reversal of (a(n-1)+d), case a(1)=1 and d=4.
+* [A119281](http://oeis.org/A119281) ([program](119/A119281.asm)): Number of counting rods to represent n in the ancient Chinese rod numeral system.
 * [A119282](http://oeis.org/A119282) ([program](119/A119282.asm)): Alternating sum of the first n Fibonacci numbers.
 * [A119327](http://oeis.org/A119327) ([program](119/A119327.asm)): Expansion of (1-4x+12x^2-16x^3+8x^4)/(1-x)^5.
 * [A119332](http://oeis.org/A119332) ([program](119/A119332.asm)): Expansion of (1+x)/(1-2x^4).
@@ -2480,6 +2481,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125575](http://oeis.org/A125575) ([program](125/A125575.asm)): Initial digit of squares of primes.
 * [A125577](http://oeis.org/A125577) ([program](125/A125577.asm)): a(0) = 1; for n >= 1, a(n) = n^2 - a(n-1).
 * [A125592](http://oeis.org/A125592) ([program](125/A125592.asm)): Evil numbers (A001969) multiplied by 2.
+* [A125602](http://oeis.org/A125602) ([program](125/A125602.asm)): Centered triangular numbers that are prime.
 * [A125603](http://oeis.org/A125603) ([program](125/A125603.asm)): Numbers n such that 3n(n-1)/2 + 1 is prime.
 * [A125641](http://oeis.org/A125641) ([program](125/A125641.asm)): Square of the (3,1)-entry of the 3 X 3 matrix M^n, where M = [1,0,0; 1,1,0, 1,i,1].
 * [A125650](http://oeis.org/A125650) ([program](125/A125650.asm)): Numerator of n(n+3)/(4(n+1)(n+2)) = sum(k=1..n, 1/(k(k+1)(k+2)) ).
@@ -2734,6 +2736,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A128470](http://oeis.org/A128470) ([program](128/A128470.asm)): a(n) = 30*n + 1.
 * [A128471](http://oeis.org/A128471) ([program](128/A128471.asm)): 30*n+7.
 * [A128473](http://oeis.org/A128473) ([program](128/A128473.asm)): Numbers of the form 30*k+23 or numbers that cannot be part of a twin prime pair.
+* [A128496](http://oeis.org/A128496) ([program](128/A128496.asm)): Row sums of unsigned triangle |A128495|=|S(2;n,m)| (sums of squares of Chebyshev's S-polynomials).
 * [A128514](http://oeis.org/A128514) ([program](128/A128514.asm)): Triangle, Pell sequence in every column.
 * [A128533](http://oeis.org/A128533) ([program](128/A128533.asm)): a(n) = F(n)*L(n+2) where F=Fibonacci and L=Lucas numbers.
 * [A128534](http://oeis.org/A128534) ([program](128/A128534.asm)): a(n) = Fibonacci(n)*Lucas(n-1).
@@ -3713,6 +3716,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135181](http://oeis.org/A135181) ([program](135/A135181.asm)): p^5 + p^3 - p^2. Exponents are the prime numbers in decreasing order and p is the n-th prime.
 * [A135182](http://oeis.org/A135182) ([program](135/A135182.asm)): p^5 + p^3 + p^2. Exponents are prime numbers and p = prime(n).
 * [A135214](http://oeis.org/A135214) ([program](135/A135214.asm)): a(1)=1, a(n) = a(n-1) + n^5 if n odd, a(n) = a(n-1) + n^4 if n is even.
+* [A135223](http://oeis.org/A135223) ([program](135/A135223.asm)): Triangle A000012 * A127648 * A103451, read by rows.
 * [A135225](http://oeis.org/A135225) ([program](135/A135225.asm)): Pascal's triangle A007318 augmented with a leftmost border column of 1's.
 * [A135231](http://oeis.org/A135231) ([program](135/A135231.asm)): Row sums of triangle A135230.
 * [A135246](http://oeis.org/A135246) ([program](135/A135246.asm)): Shifted Pell recurrence: a(n) = 2*a(n-2) + a(n-4).
@@ -4638,6 +4642,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A143214](http://oeis.org/A143214) ([program](143/A143214.asm)): Gray code applied to Pascal's triangle: T(n,m)=GrayCode(binomial(n,m)).
 * [A143250](http://oeis.org/A143250) ([program](143/A143250.asm)): Reverse binary expansion of the Fibonacci numbers.
 * [A143259](http://oeis.org/A143259) ([program](143/A143259.asm)): a(n) = 1 if n is a nonzero square, -1 if n is twice a nonzero square, 0 otherwise.
+* [A143261](http://oeis.org/A143261) ([program](143/A143261.asm)): Triangle read by rows: binary reversed Gray code of binomial(n,m).
 * [A143268](http://oeis.org/A143268) ([program](143/A143268.asm)): a(n) = phi(n)*T(n), where phi(n) is Euler's totient function (A000010) and T(n) = n*(n+1)/2 is the n-th triangular number (A000217).
 * [A143270](http://oeis.org/A143270) ([program](143/A143270.asm)): a(n) = n*A002088(n).
 * [A143272](http://oeis.org/A143272) ([program](143/A143272.asm)): a(n) = d(n)*T(n), where d(n) is the number of divisors of n (A000005) and T(n)=n(n+1)/2 are the triangular numbers (A000217).

@@ -322,6 +322,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256432](http://oeis.org/A256432) ([program](256/A256432.asm)): Characteristic function of octahedral numbers.
 * [A256436](http://oeis.org/A256436) ([program](256/A256436.asm)): Characteristic function of pentatope numbers.
 * [A256455](http://oeis.org/A256455) ([program](256/A256455.asm)): Numbers that appear at least once in a Pythagorean triple (a, b, b+1).
+* [A256491](http://oeis.org/A256491) ([program](256/A256491.asm)): a(n) = prime(prime(n) + n - 2).
 * [A256494](http://oeis.org/A256494) ([program](256/A256494.asm)): Expansion of -x^2*(x^3+x-1) / ((x-1)*(x+1)*(2*x-1)*(x^2+1)).
 * [A256524](http://oeis.org/A256524) ([program](256/A256524.asm)): Number of partitions of 3n into at most 4 parts.
 * [A256525](http://oeis.org/A256525) ([program](256/A256525.asm)): Number of partitions of 3n into at most 5 parts.
@@ -391,6 +392,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257199](http://oeis.org/A257199) ([program](257/A257199.asm)): a(n) =  n*(n+1)*(n+2)*(n^2+2*n+17)/120.
 * [A257200](http://oeis.org/A257200) ([program](257/A257200.asm)): a(n) = n*(n+1)*(n+2)*(n+3)*(n^2+3*n+26)/720.
 * [A257201](http://oeis.org/A257201) ([program](257/A257201.asm)): a(n) =  n*(n+1)*(n+2)*(n+3)*(n+4)*(n^2+4*n+37)/5040.
+* [A257212](http://oeis.org/A257212) ([program](257/A257212.asm)): Least d>0 such that floor(n/d) - floor(n/(d+1)) <= 1.
 * [A257213](http://oeis.org/A257213) ([program](257/A257213.asm)): Least d>0 such that floor(n/d) = floor(n/(d+1)).
 * [A257272](http://oeis.org/A257272) ([program](257/A257272.asm)): a(n) = 2^(n-1)*(2^n+7).
 * [A257273](http://oeis.org/A257273) ([program](257/A257273.asm)): a(n) = 2^(n-1)*(2^n+3).
@@ -601,6 +603,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A260711](http://oeis.org/A260711) ([program](260/A260711.asm)): Numbers of the form x^2 - y^2 with x >= y; x and y are odd, x + y is a power of 2.
 * [A260714](http://oeis.org/A260714) ([program](260/A260714.asm)): Row 4 of A260717.
 * [A260810](http://oeis.org/A260810) ([program](260/A260810.asm)): a(n) = n^2*(3*n^2 - 1)/2.
+* [A260812](http://oeis.org/A260812) ([program](260/A260812.asm)): a(n) is the number of edges in a rooted 2-ary tree built from the binary representation of n: each vertex at level i (i=0,...,floor(log_2(n))) has two children if the i-th most significant bit is 1 and one child if the i-th bit is 0.
 * [A260878](http://oeis.org/A260878) ([program](260/A260878.asm)): Number of set partitions of {1, 2, ..., 2*n} with sizes in {[n, n], [2n]}.
 * [A260918](http://oeis.org/A260918) ([program](260/A260918.asm)): Number of squares of all sizes in polyominoes obtained by union of two pyramidal figures (A092498) with intersection equals A002623.
 * [A260940](http://oeis.org/A260940) ([program](260/A260940.asm)): a(n) is the smallest index j>n such that g(j)=0 for the sequence g defined (for indices > n) by g(n+1)=n and g(i) = g(i-1) - gcd(i,g(i-1)).
@@ -1708,6 +1711,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276283](http://oeis.org/A276283) ([program](276/A276283.asm)): Expansion of (1 + x + 3*x^2 + x^3)/((1 - x)^2*(1 + x^2)).
 * [A276289](http://oeis.org/A276289) ([program](276/A276289.asm)): Expansion of x*(1 + x)/(1 - 2*x)^3.
 * [A276293](http://oeis.org/A276293) ([program](276/A276293.asm)): Number of n X 2 0..2 arrays with no element equal to any value at offset (-2,-1) (-1,1) or (0,-1) and new values introduced in order 0..2.
+* [A276333](http://oeis.org/A276333) ([program](276/A276333.asm)): The most significant digit in greedy A001563-base (A276326): a(n) = floor(n/A258199(n)), a(0) = 0.
 * [A276349](http://oeis.org/A276349) ([program](276/A276349.asm)): Numbers consisting of a nonempty string of 1's followed by a nonempty string of 0's.
 * [A276351](http://oeis.org/A276351) ([program](276/A276351.asm)): a(n) = 2*(3 + 2 n + 3 n^2 + 3 n^3 + 3 n^4 + n^5 + n^6).
 * [A276376](http://oeis.org/A276376) ([program](276/A276376.asm)): Exponent of highest power of 3 dividing product of composite numbers between n-th prime and (n+1)-st prime.
@@ -1919,6 +1923,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A279321](http://oeis.org/A279321) ([program](279/A279321.asm)): Period 7: repeat [1, 3, 5, 7, 5, 3, 1].
 * [A279322](http://oeis.org/A279322) ([program](279/A279322.asm)): Number of n X 1 0..2 arrays with no element equal to a strict majority of its king-move neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
 * [A279340](http://oeis.org/A279340) ([program](279/A279340.asm)): First differences of A055938.
+* [A279415](http://oeis.org/A279415) ([program](279/A279415.asm)): Triangle read by rows: T(n,k), n>=k>=1, is the number of right isosceles  triangles with integral coordinates that have a bounding box of size n X k.
 * [A279437](http://oeis.org/A279437) ([program](279/A279437.asm)): Number of ways to place 3 points on an n X n square grid so that no more than 2 points are on a vertical or horizontal straight line.
 * [A279482](http://oeis.org/A279482) ([program](279/A279482.asm)): Sum of the first n Lucas numbers whose indices are prime.
 * [A279511](http://oeis.org/A279511) ([program](279/A279511.asm)): Sierpinski square-based pyramid numbers: a(n) = 5*a(n-1) - (2^(n+1)+7).
@@ -2208,6 +2213,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285201](http://oeis.org/A285201) ([program](285/A285201.asm)): Stage at which Ken Knowlton's elevator (version 1) reaches floor n for the first time.
 * [A285203](http://oeis.org/A285203) ([program](285/A285203.asm)): Local high points in A285200.
 * [A285204](http://oeis.org/A285204) ([program](285/A285204.asm)): Row lengths of triangle A285202.
+* [A285269](http://oeis.org/A285269) ([program](285/A285269.asm)): Number of (odd) primes between 2*n^2 and 2*(n+1)^2.
 * [A285305](http://oeis.org/A285305) ([program](285/A285305.asm)): Fixed point of the morphism 0 -> 10, 1 -> 1001.
 * [A285306](http://oeis.org/A285306) ([program](285/A285306.asm)): Positions of 0 in A285305; complement of A285307.
 * [A285307](http://oeis.org/A285307) ([program](285/A285307.asm)): Positions of 1 in A285305; complement of A285306.

@@ -3,7 +3,8 @@
 
 add $0,1
 pow $0,3
-sub $0,1
-cal $0,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
+cal $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+mov $2,$0
+cmp $2,0
+add $0,$2
 mov $1,$0
-add $1,1

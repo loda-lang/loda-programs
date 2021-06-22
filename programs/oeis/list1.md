@@ -2820,6 +2820,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073718](http://oeis.org/A073718) ([program](073/A073718.asm)): Powers of 2 with composite exponents.
 * [A073720](http://oeis.org/A073720) ([program](073/A073720.asm)): Let b(1) = 1, b(k+1) = b(k) - k*trunc(k/b(k)+1), where trunc(x) = floor(x) if x>= 0, trunc(x) = ceiling(x) otherwise. Sequence a(n) gives the successive absolute values taken by b(k).
 * [A073724](http://oeis.org/A073724) ([program](073/A073724.asm)): a(n) = (4^(n+1) + 6n + 5)/9.
+* [A073729](http://oeis.org/A073729) ([program](073/A073729.asm)): Concatenation of initial and final digits of n in decimal representation.
 * [A073731](http://oeis.org/A073731) ([program](073/A073731.asm)): Least k such that A073729(k) = n.
 * [A073750](http://oeis.org/A073750) ([program](073/A073750.asm)): Factors of 2 in the denominators of the fractional coefficients of the square-root of the prime power series: sum_{n=0..inf} p_n x^n, where p_n is the n-th prime and p_0 is defined to be 1.
 * [A073759](http://oeis.org/A073759) ([program](073/A073759.asm)): Largest number that is neither a divisor of nor relatively prime to n, or 0 if no such number exists.
@@ -4541,6 +4542,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087745](http://oeis.org/A087745) ([program](087/A087745.asm)): Numbers A001317 repeated.
 * [A087755](http://oeis.org/A087755) ([program](087/A087755.asm)): Triangle read by rows: Stirling numbers of the first kind (A008275) mod 2.
 * [A087756](http://oeis.org/A087756) ([program](087/A087756.asm)): a(n) = A087745(n+1).
+* [A087775](http://oeis.org/A087775) ([program](087/A087775.asm)): a[1] = 1, a[2] = 2, a[3] = 2; a[n] = 3*a[abs[a[n-2]]] - 3*a[n-abs[a[n-2]]] + a[n-3].
 * [A087802](http://oeis.org/A087802) ([program](087/A087802.asm)): Sum(mu(d): d nonprime divisor of n), mu=A008683.
 * [A087805](http://oeis.org/A087805) ([program](087/A087805.asm)): Partial sums of b(k) where {b(k)}_{k>=0} = limit n ->infty {A080578(k)-2k : k=2^n,2^n+1,2^n+2,......}.
 * [A087808](http://oeis.org/A087808) ([program](087/A087808.asm)): a(0) = 0; a(2n) = 2a(n), a(2n+1) = a(n) + 1.

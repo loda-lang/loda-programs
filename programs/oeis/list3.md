@@ -3828,7 +3828,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184582](http://oeis.org/A184582) ([program](184/A184582.asm)): floor[(n+1/5)r] where r=(1+sqrt(5))/2; complement of A184583.
 * [A184583](http://oeis.org/A184583) ([program](184/A184583.asm)): floor[(n-1/5)(1+r)], where r=(1+sqrt(5))/2; complement of A184582.
 * [A184584](http://oeis.org/A184584) ([program](184/A184584.asm)): floor[(n-1/3)r], where r=sqrt(5); complement of A184585.
-* [A184585](http://oeis.org/A184585) ([program](184/A184585.asm)): floor[(n+1/3)(1+r)], where r=sqrt(5); complement of A184584.
 * [A184586](http://oeis.org/A184586) ([program](184/A184586.asm)): a(n) = floor((n-1/2)*r), where r=sqrt(5); complement of A184587.
 * [A184591](http://oeis.org/A184591) ([program](184/A184591.asm)): a(n) = floor(n*(Pi-1)-1); complement of A184592.
 * [A184592](http://oeis.org/A184592) ([program](184/A184592.asm)): a(n) = floor((n*(Pi-1) + 1)/(Pi-2)); complement of A184591.
@@ -3934,6 +3933,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185549](http://oeis.org/A185549) ([program](185/A185549.asm)): a(n) = ceiling(n^(3/2)); complement of A185550.
 * [A185593](http://oeis.org/A185593) ([program](185/A185593.asm)): a(n) = floor(n^(3/2))*floor(3+n^(3/2))/2.
 * [A185594](http://oeis.org/A185594) ([program](185/A185594.asm)): a(n) = floor((n^2+n)^(3/2)-n^3).
+* [A185597](http://oeis.org/A185597) ([program](185/A185597.asm)): a(n) = floor(n^(3/2) - n^(1/2)); complement of A185598.
 * [A185603](http://oeis.org/A185603) ([program](185/A185603.asm)): a(n) = floor(floor(n^(5/2))^(1/2)); complement of A185604.
 * [A185647](http://oeis.org/A185647) ([program](185/A185647.asm)): Expansion of (1+2x)*(1+2*x^2)/((1-x)*(1+x)*(1-2*x^2)).
 * [A185669](http://oeis.org/A185669) ([program](185/A185669.asm)): a(n) = 4*n^2 + 3*n + 2.

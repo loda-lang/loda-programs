@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,71960 ; Largest k >= 0 such that Product_{i=0..k} (n+i) divides n!.
-sub $1,2
 add $1,$0
-add $1,3
+add $1,1

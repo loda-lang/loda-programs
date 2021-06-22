@@ -5,18 +5,7 @@ lpb $0
   mul $0,11
   mod $0,12
 lpe
-mul $0,2
-mov $1,$0
-cal $0,248877 ; a(1) = 23, a(2) = 71, a(n) = 3*a(n-1) - 2*a(n-2) for n>2.
-add $1,1
-div $0,$1
 lpb $0
-  lpb $0
-    mod $0,8
-  lpe
-  pow $0,5
-  mov $1,$0
-  mul $0,6
-  pow $0,2
+  mod $0,6
 lpe
-div $1,2
+mov $1,$0

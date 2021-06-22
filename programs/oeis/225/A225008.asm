@@ -5,8 +5,8 @@ add $0,1
 lpb $0
   mov $2,$0
   add $2,$0
-  cal $2,331434 ; Column 2 of triangle in A331431.
   sub $0,1
+  cal $2,331434 ; Column 2 of triangle in A331431.
   add $1,$2
 lpe
 mul $1,$2

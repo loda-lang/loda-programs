@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   sub $0,1
+  cal $2,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   add $1,$2
   mul $1,3
 lpe

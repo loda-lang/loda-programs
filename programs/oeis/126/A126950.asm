@@ -7,6 +7,5 @@ lpb $0
   cal $2,164016 ; 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
   add $1,$2
 lpe
-div $1,6
-mul $1,2
+div $1,3
 add $1,1

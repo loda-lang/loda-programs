@@ -3189,6 +3189,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A023554](http://oeis.org/A023554) ([program](023/A023554.asm)): Convolution of natural numbers >= 3 and (Fib(2), Fib(3), Fib(4), ...).
 * [A023562](http://oeis.org/A023562) ([program](023/A023562.asm)): Convolution of A023531 and odd numbers.
 * [A023568](http://oeis.org/A023568) ([program](023/A023568.asm)): Number of distinct prime divisors of prime(n)-3.
+* [A023572](http://oeis.org/A023572) ([program](023/A023572.asm)): Exponent of 2 in prime factorization of prime(n) - 3.
 * [A023573](http://oeis.org/A023573) ([program](023/A023573.asm)): Sum of distinct prime divisors of p(n)-3.
 * [A023574](http://oeis.org/A023574) ([program](023/A023574.asm)): Sum of exponents in prime-power factorization of p(n)-3.
 * [A023575](http://oeis.org/A023575) ([program](023/A023575.asm)): Number of distinct prime divisors of prime(n)+3.
@@ -6317,6 +6318,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049652](http://oeis.org/A049652) ([program](049/A049652.asm)): a(n) = (F(3*n+2) - 1)/4, where F=A000045 (the Fibonacci sequence).
 * [A049653](http://oeis.org/A049653) ([program](049/A049653.asm)): a(n) = 2*n - prevprime(2*n).
 * [A049684](http://oeis.org/A049684) ([program](049/A049684.asm)): a(n) = Fibonacci(2n)^2.
+* [A049688](http://oeis.org/A049688) ([program](049/A049688.asm)): a(n) = Sum_{i=0..n} T(i,n-i), array T as in A049687.
 * [A049690](http://oeis.org/A049690) ([program](049/A049690.asm)): a(n) = Sum_{k=1..n} phi(2*k), where phi = Euler totient function, cf. A000010.
 * [A049691](http://oeis.org/A049691) ([program](049/A049691.asm)): a(n)=T(n,n), array T as in A049687. Also a(n)=T(2n,2n), array T given by A049639.
 * [A049696](http://oeis.org/A049696) ([program](049/A049696.asm)): a(n)=T(n,n), array T as in A049695.
