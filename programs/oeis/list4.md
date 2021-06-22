@@ -1465,6 +1465,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225605](http://oeis.org/A225605) ([program](225/A225605.asm)): (1) = least k such that 1/3 < H(k) - 1/3; a(2) = least k such that H(a(1)) - H(3) < H(k) -H(a(1)), and for n > 2, a(n) = least k such that H(a(n-1)) - H(a(n-2) > H(k) - H(a(n-1)), where H = harmonic number.
 * [A225668](http://oeis.org/A225668) ([program](225/A225668.asm)): a(n) = floor(4*log_2(n)).
 * [A225690](http://oeis.org/A225690) ([program](225/A225690.asm)): Number of Dyck paths of semilength n avoiding the pattern U^3 D^3 U D.
+* [A225693](http://oeis.org/A225693) ([program](225/A225693.asm)): Alternating sum of digits of n.
 * [A225700](http://oeis.org/A225700) ([program](225/A225700.asm)): Denominators of coefficients arising from q-expansion of Integrate[eta[q^4]^8/eta[q^2]^4, q]/q where eta is the Dedekind eta function.
 * [A225743](http://oeis.org/A225743) ([program](225/A225743.asm)): Triangular array:  row n is least squarefree word of length n using positive integers.
 * [A225773](http://oeis.org/A225773) ([program](225/A225773.asm)): The squares on a chessboard that are black, counting from top left corner and down.
@@ -1699,7 +1700,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229154](http://oeis.org/A229154) ([program](229/A229154.asm)): The clubs patterns appearing in n X n coins, with rotation allowed.
 * [A229183](http://oeis.org/A229183) ([program](229/A229183.asm)): a(n) = n*(n^2 + 3)/2.
 * [A229253](http://oeis.org/A229253) ([program](229/A229253.asm)): Total number of elements of nonempty subsets of divisors of n.
-* [A229274](http://oeis.org/A229274) ([program](229/A229274.asm)): Composite squarefree numbers n such that p+tau(n) divides n-sigma(n), where p are the prime factors of n, tau(n) = A000005(n) and sigma(n) = A000203(n).
 * [A229277](http://oeis.org/A229277) ([program](229/A229277.asm)): Number of ascending runs in {1,...,3}^n.
 * [A229278](http://oeis.org/A229278) ([program](229/A229278.asm)): Number of ascending runs in {1,...,4}^n.
 * [A229279](http://oeis.org/A229279) ([program](229/A229279.asm)): Number of ascending runs in {1,...,5}^n.

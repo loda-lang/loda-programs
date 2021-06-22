@@ -1621,6 +1621,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063376](http://oeis.org/A063376) ([program](063/A063376.asm)): a(-1) = 1; for n >= 0, a(n) = 2^n + 4^n = 2^n*(1 + 2^n).
 * [A063377](http://oeis.org/A063377) ([program](063/A063377.asm)): Sophie Germain degree of n: number of iterations of n under f(k) = 2k+1 before we reach a number that is not a prime.
 * [A063396](http://oeis.org/A063396) ([program](063/A063396.asm)): T(3,n) with T(n,m) as in A063394.
+* [A063417](http://oeis.org/A063417) ([program](063/A063417.asm)): Ninth column (k=8) of septinomial array A063265.
 * [A063436](http://oeis.org/A063436) ([program](063/A063436.asm)): Write 1,2,3,4,... counterclockwise in a hexagonal spiral around 0 starting left down, then a(n) is the sequence found by reading from 0 in the vertical upward direction.
 * [A063440](http://oeis.org/A063440) ([program](063/A063440.asm)): Number of divisors of n-th triangular number.
 * [A063462](http://oeis.org/A063462) ([program](063/A063462.asm)): n * last digit of n.
@@ -3584,6 +3585,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080861](http://oeis.org/A080861) ([program](080/A080861.asm)): 15*n^2 + 6*n + 1.
 * [A080880](http://oeis.org/A080880) ([program](080/A080880.asm)): a(n)*a(n+3) - a(n+1)*a(n+2) = 2^n, given a(0)=1, a(1)=2, a(2)=2.
 * [A080883](http://oeis.org/A080883) ([program](080/A080883.asm)): Distance of n to next square.
+* [A080885](http://oeis.org/A080885) ([program](080/A080885.asm)): Boolean AND of (0,1) versions of Thue-Morse word (A010060) and Fibonacci word (A003849).
+* [A080886](http://oeis.org/A080886) ([program](080/A080886.asm)): Boolean OR of (0,1) versions of Thue-Morse word (A010060) and Fibonacci word (A003849).
 * [A080887](http://oeis.org/A080887) ([program](080/A080887.asm)): Boolean XOR of (0,1) versions of Thue-Morse word (A010060) and Fibonacci word (A003849).
 * [A080891](http://oeis.org/A080891) ([program](080/A080891.asm)): Period 5: repeat [0, 1, -1, -1, 1].
 * [A080921](http://oeis.org/A080921) ([program](080/A080921.asm)): a(n) = 2*a(n-1) + 48*a(n-2), a(0)=0, a(1)=1.
@@ -4335,6 +4338,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A085975](http://oeis.org/A085975) ([program](085/A085975.asm)): Number of 1's in decimal expansion of prime(n).
 * [A085981](http://oeis.org/A085981) ([program](085/A085981.asm)): Number of 7's in decimal expansion of prime(n).
 * [A086009](http://oeis.org/A086009) ([program](086/A086009.asm)): Number of 1's in decimal expansion of n^2.
+* [A086010](http://oeis.org/A086010) ([program](086/A086010.asm)): Number of 2's in decimal expansion of n^2.
+* [A086011](http://oeis.org/A086011) ([program](086/A086011.asm)): Number of 3's in decimal expansion of n^2.
+* [A086012](http://oeis.org/A086012) ([program](086/A086012.asm)): Number of 4's in decimal expansion of n^2.
+* [A086013](http://oeis.org/A086013) ([program](086/A086013.asm)): Number of 5's in decimal expansion of n^2.
+* [A086014](http://oeis.org/A086014) ([program](086/A086014.asm)): Number of 6's in decimal expansion of n^2.
+* [A086017](http://oeis.org/A086017) ([program](086/A086017.asm)): Number of 9's in decimal expansion of n^2.
 * [A086020](http://oeis.org/A086020) ([program](086/A086020.asm)): a(n) = Sum_(i=1..n) C(i+2,3)^2 [ Sequential sums of the tetragonal numbers or "tetras" (pyramidal, square) raised to power 2 (drawn from the 4th diagonal - left or right - of Pascal's Triangle) ].
 * [A086021](http://oeis.org/A086021) ([program](086/A086021.asm)): a(n) = Sum_{i=1..n} C(i+2,3)^3.
 * [A086023](http://oeis.org/A086023) ([program](086/A086023.asm)): a(n) = Sum_{i=1..n} C(i+3,4)^2.
@@ -4542,6 +4551,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087863](http://oeis.org/A087863) ([program](087/A087863.asm)): (n^3+24*n^2+65*n+36)/6.
 * [A087887](http://oeis.org/A087887) ([program](087/A087887.asm)): a(n) = 18n^3 + 6n^2.
 * [A087893](http://oeis.org/A087893) ([program](087/A087893.asm)): Number of numbers m satisfying 1 < m < n such that m^2 == m (mod n).
+* [A087895](http://oeis.org/A087895) ([program](087/A087895.asm)): Primes p such that 10^p - 9^p is composite.
 * [A087908](http://oeis.org/A087908) ([program](087/A087908.asm)): Largest integer not expressible as a nonnegative linear combination of n and n^2 + 1.
 * [A087915](http://oeis.org/A087915) ([program](087/A087915.asm)): Even numbers n such that 2*n+3 is a prime.
 * [A087940](http://oeis.org/A087940) ([program](087/A087940.asm)): a(n) = Sum_{k=0..n} binomial(n+(-1)^k, k).

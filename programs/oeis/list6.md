@@ -1419,6 +1419,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328987](http://oeis.org/A328987) ([program](328/A328987.asm)): The sequence C(n) defined in the comments (A and B smallest missing numbers, offset 0).
 * [A328990](http://oeis.org/A328990) ([program](328/A328990.asm)): a(n) = (3*b(n) + b(n-1) + 1)/2, where b = A005409.
 * [A328994](http://oeis.org/A328994) ([program](328/A328994.asm)): a(n) = n^2*(1+n)*(1+n^2)/4.
+* [A328995](http://oeis.org/A328995) ([program](328/A328995.asm)): Dirichlet g.f. = Product_{primes p == 1 mod 3} (1+p^(-s))/(1-p^(-s)).
 * [A329014](http://oeis.org/A329014) ([program](329/A329014.asm)): a(n) = p(0,n), where p(x,n) is the strong divisibility sequence of polynomials based on sqrt(6) as in A327323.
 * [A329018](http://oeis.org/A329018) ([program](329/A329018.asm)): a(n) = p(1,n), where p(x,n) is the strong divisibility sequence of polynomials based on sqrt(3/2) as in A328644.
 * [A329114](http://oeis.org/A329114) ([program](329/A329114.asm)): a(n) = floor(A026532(n)/5).
@@ -2114,6 +2115,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344598](http://oeis.org/A344598) ([program](344/A344598.asm)): a(n) = Sum_{k=1..n} phi(k) * (floor(n/k)^2 - floor((n-1)/k)^2).
 * [A344622](http://oeis.org/A344622) ([program](344/A344622.asm)): a(n) = n*(n+1)/2 - sigma(n) + d(n).
 * [A344695](http://oeis.org/A344695) ([program](344/A344695.asm)): a(n) = gcd(sigma(n), psi(n)), where sigma is the sum of divisors function, A000203, and psi is the Dedekind psi function, A001615.
+* [A344747](http://oeis.org/A344747) ([program](344/A344747.asm)): a(n) = (1/6)*(3^n + (-2)^n - 1).
 * [A344814](http://oeis.org/A344814) ([program](344/A344814.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 3^(k-1).
 * [A344815](http://oeis.org/A344815) ([program](344/A344815.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 4^(k-1).
 * [A344816](http://oeis.org/A344816) ([program](344/A344816.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 5^(k-1).

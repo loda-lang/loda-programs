@@ -2632,6 +2632,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127698](http://oeis.org/A127698) ([program](127/A127698.asm)): Sum of n-th triangular number and its reversal.
 * [A127701](http://oeis.org/A127701) ([program](127/A127701.asm)): Infinite lower triangular matrix with (1, 2, 3, ...) in the main diagonal, (1, 1, 1, ...) in the subdiagonal and the rest zeros.
 * [A127705](http://oeis.org/A127705) ([program](127/A127705.asm)): Row sums of A127704.
+* [A127708](http://oeis.org/A127708) ([program](127/A127708.asm)): Number of non-commutative rings with 1 containing n elements.
 * [A127712](http://oeis.org/A127712) ([program](127/A127712.asm)): Row sums of the inverse of the triangle A(n,k) = 1/F(n+1) if k <= n <= 2k, 0 otherwise.
 * [A127713](http://oeis.org/A127713) ([program](127/A127713.asm)): A bisection of the row sums of the inverse of the triangle A(n,k) = 1/F(n+1) if k <= n <= 2k, 0 otherwise.
 * [A127721](http://oeis.org/A127721) ([program](127/A127721.asm)): Floor of square root of sum of squares of n consecutive numbers.
@@ -4912,6 +4913,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A146523](http://oeis.org/A146523) ([program](146/A146523.asm)): Binomial transform of A010685.
 * [A146528](http://oeis.org/A146528) ([program](146/A146528.asm)): a(0) = 4; for n >= 1, a(n) = 2^n + 4.
 * [A146529](http://oeis.org/A146529) ([program](146/A146529.asm)): A two level sequence: v(n)=2*(If[n == 0, 0, 2^(n - 1)] + 2); a(n)=If[n == 0, 6, (v[n] + v[n - 1] - 2)].
+* [A146533](http://oeis.org/A146533) ([program](146/A146533.asm)): Catalan transform of A135092.
 * [A146534](http://oeis.org/A146534) ([program](146/A146534.asm)): 4*C(2n,n)-3*0^n.
 * [A146535](http://oeis.org/A146535) ([program](146/A146535.asm)): Numerator of (2*n-1)/3.
 * [A146541](http://oeis.org/A146541) ([program](146/A146541.asm)): Binomial transform of A010688.

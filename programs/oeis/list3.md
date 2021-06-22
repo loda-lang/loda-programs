@@ -97,6 +97,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152174](http://oeis.org/A152174) ([program](152/A152174.asm)): a(n) = -2*a(n-1)+4*a(n-2), n>1 ; a(0) = 1, a(1) = -4.
 * [A152179](http://oeis.org/A152179) ([program](152/A152179.asm)): (n^2-2=A008865) mod 9. Period 9:repeat 8,2,7,5,5,7,2,8,7.
 * [A152198](http://oeis.org/A152198) ([program](152/A152198.asm)): Triangle read by rows, A007318 rows repeated
+* [A152211](http://oeis.org/A152211) ([program](152/A152211.asm)): a(n) = n * sigma_0(n) + sigma_1(n).
 * [A152223](http://oeis.org/A152223) ([program](152/A152223.asm)): a(n) = -4*a(n-1) + 6*a(n-2) for n > 1 with a(0) = 1 and a(1) = -6.
 * [A152224](http://oeis.org/A152224) ([program](152/A152224.asm)): a(n)=4*a(n-1)+6*a(n-2), n>1 ; a(0)=1, a(1)=6 .
 * [A152235](http://oeis.org/A152235) ([program](152/A152235.asm)): Largest squarefree number dividing the number of divisors n.
@@ -3933,6 +3934,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185549](http://oeis.org/A185549) ([program](185/A185549.asm)): a(n) = ceiling(n^(3/2)); complement of A185550.
 * [A185593](http://oeis.org/A185593) ([program](185/A185593.asm)): a(n) = floor(n^(3/2))*floor(3+n^(3/2))/2.
 * [A185594](http://oeis.org/A185594) ([program](185/A185594.asm)): a(n) = floor((n^2+n)^(3/2)-n^3).
+* [A185603](http://oeis.org/A185603) ([program](185/A185603.asm)): a(n) = floor(floor(n^(5/2))^(1/2)); complement of A185604.
 * [A185647](http://oeis.org/A185647) ([program](185/A185647.asm)): Expansion of (1+2x)*(1+2*x^2)/((1-x)*(1+x)*(1-2*x^2)).
 * [A185669](http://oeis.org/A185669) ([program](185/A185669.asm)): a(n) = 4*n^2 + 3*n + 2.
 * [A185670](http://oeis.org/A185670) ([program](185/A185670.asm)): Number of pairs (x,y) with 1 <= x < y <= n with at least one common factor.

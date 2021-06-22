@@ -5,7 +5,6 @@ add $0,1
 lpb $0
   cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,1
-  add $1,5
+  add $1,1
 lpe
-div $1,5
 add $1,1

@@ -3,8 +3,7 @@
 
 cal $0,6005 ; The odd prime numbers together with 1.
 pow $0,2
-max $0,5
+max $0,4
 mov $1,$0
-sub $1,5
+add $1,2
 div $1,2
-add $1,3

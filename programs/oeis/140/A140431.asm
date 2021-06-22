@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,15441 ; Generalized Fibonacci numbers.
   mov $0,0
+  cal $1,15441 ; Generalized Fibonacci numbers.
   mov $2,$1
   mul $1,5
   min $2,1
