@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,52952 ; a(n) = Fibonacci(n+2) - (1-(-1)^n)/2.
   sub $0,1
+  cal $2,52952 ; a(n) = Fibonacci(n+2) - (1-(-1)^n)/2.
   add $1,$2
   add $1,$2
 lpe

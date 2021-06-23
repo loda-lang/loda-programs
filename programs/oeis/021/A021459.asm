@@ -5,8 +5,6 @@ trn $0,1
 cal $0,70374 ; a(n) = 5^n mod 21.
 add $0,5
 mov $1,$0
-div $1,2
-mov $2,2
-cal $2,178778 ; Partial sums of walks of length n+1 on a tetrahedron A001998.
-add $1,$2
-sub $1,10
+add $1,$0
+div $1,4
+sub $1,3

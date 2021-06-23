@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,31215 ; a(n) = prime(2n).
+  cal $2,31215 ; Even-indexed primes: a(n) = prime(2n).
   add $1,$2
 lpe
 add $1,3

@@ -3,15 +3,6 @@
 
 mul $0,3
 div $0,2
-pow $0,2
-add $0,9
-mov $1,12
-mov $2,12
-lpb $0
-  add $1,6
-  add $1,$0
-  mov $0,6
-  div $1,$2
-  add $1,2
-lpe
-sub $1,4
+cal $0,14591 ; a(n) = floor(n^2/12 + 5/4).
+mov $1,$0
+sub $1,1

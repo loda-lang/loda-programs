@@ -983,7 +983,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A058344](http://oeis.org/A058344) ([program](058/A058344.asm)): Difference between the sum of the odd aliquot divisors of n and the sum of the even aliquot divisors of n.
 * [A058372](http://oeis.org/A058372) ([program](058/A058372.asm)): a(n) = -(n + 1)*(2*n^2 + n - 12)/6.
 * [A058373](http://oeis.org/A058373) ([program](058/A058373.asm)): a(n) = (1/6)*(2*n - 3)*(n + 2)*(n + 1).
-* [A058384](http://oeis.org/A058384) ([program](058/A058384.asm)): Largest power of 2 which is a divisor of p(n)-1, where p(n) = n-th prime.
 * [A058396](http://oeis.org/A058396) ([program](058/A058396.asm)): Expansion of ((1-x)/(1-2*x))^3.
 * [A058481](http://oeis.org/A058481) ([program](058/A058481.asm)): a(n) = 3^n - 2.
 * [A058482](http://oeis.org/A058482) ([program](058/A058482.asm)): Number of 3 X n binary matrices with no zero rows or columns.
@@ -1464,6 +1463,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062756](http://oeis.org/A062756) ([program](062/A062756.asm)): Number of 1's in ternary (base-3) expansion of n.
 * [A062758](http://oeis.org/A062758) ([program](062/A062758.asm)): Product of squares of divisors of n.
 * [A062765](http://oeis.org/A062765) ([program](062/A062765.asm)): n*(n-1)*(n-3)*(n-5).
+* [A062777](http://oeis.org/A062777) ([program](062/A062777.asm)): 2^n - mu(n).
 * [A062781](http://oeis.org/A062781) ([program](062/A062781.asm)): Number of arithmetic progressions of four terms and any mean which can be extracted from the set of the first n positive integers.
 * [A062783](http://oeis.org/A062783) ([program](062/A062783.asm)): a(n) = 3*n*(4*n-1).
 * [A062785](http://oeis.org/A062785) ([program](062/A062785.asm)): Chowla's function * sigma(n).
@@ -3309,6 +3309,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A078642](http://oeis.org/A078642) ([program](078/A078642.asm)): Numbers with two representations as the sum of two Fibonacci numbers.
 * [A078644](http://oeis.org/A078644) ([program](078/A078644.asm)): a(n) = tau(2*n^2)/2.
 * [A078651](http://oeis.org/A078651) ([program](078/A078651.asm)): Number of geometric subsequences of [1,...,n] with integral successive-term ratio and length >= 1.
+* [A078653](http://oeis.org/A078653) ([program](078/A078653.asm)): a(n) = prime(k) where k = n-th prime congruent to 1 mod 4.
+* [A078654](http://oeis.org/A078654) ([program](078/A078654.asm)): a(n) = prime(k) where k = n-th prime congruent to 3 mod 4.
 * [A078677](http://oeis.org/A078677) ([program](078/A078677.asm)): Write n in binary; repeatedly sum the "digits" until reaching 1; a(n) = sum of these sums (including '1' and n itself).
 * [A078683](http://oeis.org/A078683) ([program](078/A078683.asm)): Least prime of the form n*2^m+1 for m>0, or 0 if there is no such prime.
 * [A078685](http://oeis.org/A078685) ([program](078/A078685.asm)): Minimum value of |prime(n) - 2^x|.
@@ -4003,7 +4005,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083223](http://oeis.org/A083223) ([program](083/A083223.asm)): (5*6^n+(-6)^n)/6.
 * [A083224](http://oeis.org/A083224) ([program](083/A083224.asm)): a(n) = (6*7^n + (-7)^n)/7.
 * [A083232](http://oeis.org/A083232) ([program](083/A083232.asm)): a(n) = (3*7^n+(-1)^n)/4.
-* [A083236](http://oeis.org/A083236) ([program](083/A083236.asm)): First order recursion: a(0)=2; a(n) = prime(n) - a(n-1).
 * [A083254](http://oeis.org/A083254) ([program](083/A083254.asm)): a(n) = 2*phi(n) - n.
 * [A083271](http://oeis.org/A083271) ([program](083/A083271.asm)): a(n) = n*tau(n) + 1.
 * [A083277](http://oeis.org/A083277) ([program](083/A083277.asm)): k appears 3k-2 times.
@@ -5311,6 +5312,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A095808](http://oeis.org/A095808) ([program](095/A095808.asm)): Number of ways to write n in the form m + (m+1) + ... + (m+k-1) + (m+k) + (m+k-1) + ... + (m+1) + m with integers m>= 1, k>=1. Or, number of divisors a of 4n-1 with 0 < (a-1)^2 < 4n.
 * [A095815](http://oeis.org/A095815) ([program](095/A095815.asm)): n + largest digit of n.
 * [A095819](http://oeis.org/A095819) ([program](095/A095819.asm)): Tenth column (m=9) of (1,4)-Pascal triangle A095666.
+* [A095827](http://oeis.org/A095827) ([program](095/A095827.asm)): a(n) is the smallest k such that ((A007953)^k)(9n)=9.
 * [A095831](http://oeis.org/A095831) ([program](095/A095831.asm)): Triangle read by rows: T(n,k) = (n-k)^2, n>=1, 1<=k<=n.
 * [A095832](http://oeis.org/A095832) ([program](095/A095832.asm)): Triangle read by rows: T(n,k) = (n-k+1)*(n-k), n>=1, 1<=k<=n.
 * [A095861](http://oeis.org/A095861) ([program](095/A095861.asm)): Number of primitive Pythagorean triangles of form (X,Y,Y+1) with hypotenuse Y+1 less than or equal to n.

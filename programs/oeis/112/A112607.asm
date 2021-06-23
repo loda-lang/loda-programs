@@ -3,6 +3,8 @@
 
 mul $0,4
 add $0,6
-cal $0,33762 ; Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
+mul $0,2
+cal $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
+mod $0,9
 mov $1,$0
 div $1,2

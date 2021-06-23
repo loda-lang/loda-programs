@@ -3664,6 +3664,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A026741](http://oeis.org/A026741) ([program](026/A026741.asm)): a(n) = n if n odd, n/2 if n even.
 * [A026806](http://oeis.org/A026806) ([program](026/A026806.asm)): a(n) = number of numbers k such that only one partition of n has least part k.
 * [A026810](http://oeis.org/A026810) ([program](026/A026810.asm)): Number of partitions of n in which the greatest part is 4.
+* [A026811](http://oeis.org/A026811) ([program](026/A026811.asm)): Number of partitions of n in which the greatest part is 5.
 * [A026817](http://oeis.org/A026817) ([program](026/A026817.asm)): Number of sets which can be obtained by selecting unique elements from two sets with 2n and 3n elements respectively and n common elements.
 * [A026834](http://oeis.org/A026834) ([program](026/A026834.asm)): a(n) = number of numbers k such that only one partition of n into distinct parts has least part k.
 * [A026898](http://oeis.org/A026898) ([program](026/A026898.asm)): a(n) = Sum_{k=0..n} (n-k+1)^k.
@@ -4973,6 +4974,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038731](http://oeis.org/A038731) ([program](038/A038731.asm)): Number of columns in all directed column-convex polyominoes of area n+1.
 * [A038732](http://oeis.org/A038732) ([program](038/A038732.asm)): T(n,n-3), array T as in A038730.
 * [A038733](http://oeis.org/A038733) ([program](038/A038733.asm)): T(n,n-4), array T as in A038730.
+* [A038734](http://oeis.org/A038734) ([program](038/A038734.asm)): T(n,n-5), array T as in A038730.
 * [A038737](http://oeis.org/A038737) ([program](038/A038737.asm)): T(n,n-2), array T as in A038792.
 * [A038739](http://oeis.org/A038739) ([program](038/A038739.asm)): T(n,n-2), array T as in A038738.
 * [A038740](http://oeis.org/A038740) ([program](038/A038740.asm)): T(n,n-3), array T as in A038738.

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,33885 ; a(n) = 3*n - sum of divisors of n.
   sub $0,1
+  cal $2,33885 ; a(n) = 3*n - sum of divisors of n.
   add $1,$2
 lpe
 add $1,2

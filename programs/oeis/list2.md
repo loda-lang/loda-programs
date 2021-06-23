@@ -365,6 +365,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102678](http://oeis.org/A102678) ([program](102/A102678.asm)): Number of digits >= 6 in the decimal representations of all integers from 0 to n.
 * [A102679](http://oeis.org/A102679) ([program](102/A102679.asm)): Number of digits >= 7 in decimal representation of n.
 * [A102680](http://oeis.org/A102680) ([program](102/A102680.asm)): Number of digits >= 7 in the decimal representations of all integers from 0 to n.
+* [A102683](http://oeis.org/A102683) ([program](102/A102683.asm)): Number of digits 9 in decimal representation of n.
 * [A102685](http://oeis.org/A102685) ([program](102/A102685.asm)): Partial sums of A055640.
 * [A102686](http://oeis.org/A102686) ([program](102/A102686.asm)): Numbers k such that 11*k + 3 is prime.
 * [A102689](http://oeis.org/A102689) ([program](102/A102689.asm)): a(n) = 10000*n + 2468.
@@ -944,6 +945,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108719](http://oeis.org/A108719) ([program](108/A108719.asm)): Primes which can be partitioned into a sum of distinct primes in more than one way.
 * [A108724](http://oeis.org/A108724) ([program](108/A108724.asm)): Numbers n such that 11*n + 17 is prime.
 * [A108725](http://oeis.org/A108725) ([program](108/A108725.asm)): Numbers n such that 11*n + 19 is prime.
+* [A108726](http://oeis.org/A108726) ([program](108/A108726.asm)): Numbers n such that 11*n + 29 is prime.
 * [A108727](http://oeis.org/A108727) ([program](108/A108727.asm)): Numbers n such that 11*n + 31 is prime.
 * [A108732](http://oeis.org/A108732) ([program](108/A108732.asm)): a(0)=22; if n odd, a(n) = a(n-1)/2, otherwise a(n) = 4*a(n-1).
 * [A108738](http://oeis.org/A108738) ([program](108/A108738.asm)): a(n) = n/(smallest odd prime divisor of n), if any.
@@ -1370,6 +1372,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A112983](http://oeis.org/A112983) ([program](112/A112983.asm)): 2^(n+1) mod n.
 * [A112986](http://oeis.org/A112986) ([program](112/A112986.asm)): Crossing number of K_{4,n} on the real projective plane.
 * [A112988](http://oeis.org/A112988) ([program](112/A112988.asm)): Position of n-th prime in A089088.
+* [A112997](http://oeis.org/A112997) ([program](112/A112997.asm)): Sum of first n primes minus sum of their indices.
 * [A113009](http://oeis.org/A113009) ([program](113/A113009.asm)): {Sum of the digits of n} raised to the power {number of digits of n}.
 * [A113010](http://oeis.org/A113010) ([program](113/A113010.asm)): {Number of digits of n} raised to the power of {the sum of the digits of n}.
 * [A113022](http://oeis.org/A113022) ([program](113/A113022.asm)): a(n) = size of union of 2^k (mod 10^n), 0 < k <= 5^n.
@@ -1713,6 +1716,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117295](http://oeis.org/A117295) ([program](117/A117295.asm)): a(n) = phi(n)*(n-phi(n))
 * [A117302](http://oeis.org/A117302) ([program](117/A117302.asm)): Number of cases in which the first player gets killed in a Russian roulette game when 7 players use a gun with n chambers and the number of the bullets can be from 1 to n. In the game they do not rotate the cylinder after the game starts.
 * [A117304](http://oeis.org/A117304) ([program](117/A117304.asm)): Numbers with an even number of digits such that the second half is twice the first half.
+* [A117364](http://oeis.org/A117364) ([program](117/A117364.asm)): a(n) = largest prime less than the largest prime dividing n (or 1 if there is no such prime).
 * [A117365](http://oeis.org/A117365) ([program](117/A117365.asm)): a(n) = largest prime less than the smallest prime dividing n (or 1 if there is no such prime).
 * [A117366](http://oeis.org/A117366) ([program](117/A117366.asm)): a(n) = smallest prime greater than the largest prime dividing n.
 * [A117367](http://oeis.org/A117367) ([program](117/A117367.asm)): a(n) = smallest prime greater than the smallest prime dividing n.
@@ -1722,6 +1726,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117401](http://oeis.org/A117401) ([program](117/A117401.asm)): Triangle, read by rows, defined by: T(n,k) = 2^((n-k)*k) for n>=k>=0.
 * [A117403](http://oeis.org/A117403) ([program](117/A117403.asm)): a(n) = Sum_{k=0..[n/2]} 2^((n-2*k)*k) for n>=0.
 * [A117412](http://oeis.org/A117412) ([program](117/A117412.asm)): Sum of the interior angles of an n-sided polygon, in gradians.
+* [A117441](http://oeis.org/A117441) ([program](117/A117441.asm)): Periodic with repeating part {1,1,0,1,-1,0,-1,-1,0,-1,1,0}.
 * [A117444](http://oeis.org/A117444) ([program](117/A117444.asm)): Period 5: Repeat [0, 1, 2, -2, -1].
 * [A117447](http://oeis.org/A117447) ([program](117/A117447.asm)): Expansion of (1 + 2*x + 3*x^2 + x^3)/(1 + x - x^3 - x^4).
 * [A117450](http://oeis.org/A117450) ([program](117/A117450.asm)): Expansion of (1-x+x^2+x^5)/((1-x)^2*(1-x^5)).
@@ -2443,6 +2448,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A124671](http://oeis.org/A124671) ([program](124/A124671.asm)): Row sums of A126277 = binomial transform of (1, 2, 2, 3, 4, 4, 4,...)
 * [A124678](http://oeis.org/A124678) ([program](124/A124678.asm)): Number of conjugacy classes in PSL_2(p), p = prime(n).
 * [A124696](http://oeis.org/A124696) ([program](124/A124696.asm)): Number of base-3 circular n-digit numbers with adjacent digits differing by 1 or less.
+* [A124698](http://oeis.org/A124698) ([program](124/A124698.asm)): Number of base 5 circular n-digit numbers with adjacent digits differing by 1 or less.
 * [A124741](http://oeis.org/A124741) ([program](124/A124741.asm)): a(n) = largest of those positive integers which are coprime to both n and n+1 and which are <= n.
 * [A124754](http://oeis.org/A124754) ([program](124/A124754.asm)): Alternating sum of compositions in standard order.
 * [A124757](http://oeis.org/A124757) ([program](124/A124757.asm)): Zero-based weighted sum of compositions in standard order.
@@ -2721,6 +2727,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A128223](http://oeis.org/A128223) ([program](128/A128223.asm)): a(n) = if n mod 2 = 0 then n*(n+1)/2 otherwise (n+1)^2/2-1.
 * [A128227](http://oeis.org/A128227) ([program](128/A128227.asm)): Right border (1,1,1,...) added to A002260.
 * [A128229](http://oeis.org/A128229) ([program](128/A128229.asm)): A natural number transform, inverse of signed A094587.
+* [A128251](http://oeis.org/A128251) ([program](128/A128251.asm)): n^4 - 1 divided by its largest fourth power divisor.
 * [A128309](http://oeis.org/A128309) ([program](128/A128309.asm)): 2*A000069(n).
 * [A128311](http://oeis.org/A128311) ([program](128/A128311.asm)): Remainder upon division of 2^(n-1)-1 by n.
 * [A128415](http://oeis.org/A128415) ([program](128/A128415.asm)): Expansion of (1-4x^2)/(1+3x+4x^2).

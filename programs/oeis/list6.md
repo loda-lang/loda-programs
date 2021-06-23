@@ -922,7 +922,13 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A316829](http://oeis.org/A316829) ([program](316/A316829.asm)): Image of 0 under repeated application of the morphism 0 -> 0,1,0, 1 -> 1,1,1.
 * [A316832](http://oeis.org/A316832) ([program](316/A316832.asm)): In A316831, replace 2's and 3's with 0's.
 * [A316843](http://oeis.org/A316843) ([program](316/A316843.asm)): Column 1 of table A316841.
+* [A316863](http://oeis.org/A316863) ([program](316/A316863.asm)): Number of times 2 appears in the decimal expansion of n.
+* [A316864](http://oeis.org/A316864) ([program](316/A316864.asm)): Number of times 3 appears in decimal expansion of n.
+* [A316865](http://oeis.org/A316865) ([program](316/A316865.asm)): Number of times 4 appears in decimal expansion of n.
+* [A316866](http://oeis.org/A316866) ([program](316/A316866.asm)): Number of times 5 appears in decimal expansion of n.
+* [A316867](http://oeis.org/A316867) ([program](316/A316867.asm)): Number of times 6 appears in decimal expansion of n.
 * [A316868](http://oeis.org/A316868) ([program](316/A316868.asm)): Number of times 7 appears in decimal expansion of n.
+* [A316869](http://oeis.org/A316869) ([program](316/A316869.asm)): Number of times 8 appears in decimal expansion of n.
 * [A316936](http://oeis.org/A316936) ([program](316/A316936.asm)): a(n) is the maximum state complexity of the language C(w) of conjugates of w, over all length-n binary strings w.
 * [A316964](http://oeis.org/A316964) ([program](316/A316964.asm)): Same as A316669, except numbering of the squares starts at 0 rather than 1..
 * [A316966](http://oeis.org/A316966) ([program](316/A316966.asm)): Same as A316671, except numbering of the squares starts at 0 rather than 1.
@@ -1256,7 +1262,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324903](http://oeis.org/A324903) ([program](324/A324903.asm)): a(n) = 1 if A007814(sigma(n)) > A007814(n), 0 otherwise. Here A007814(n) gives the 2-adic valuation of n.
 * [A324904](http://oeis.org/A324904) ([program](324/A324904.asm)): The 2-adic valuation of A318466(n), where A318466(n) = 2*n OR sigma(n).
 * [A324908](http://oeis.org/A324908) ([program](324/A324908.asm)): a(n) = 1 if n is an odd number which is not a square, 0 otherwise.
-* [A324912](http://oeis.org/A324912) ([program](324/A324912.asm)): Binary weight of A324911(n).
 * [A324913](http://oeis.org/A324913) ([program](324/A324913.asm)): a(n) = Sum_{k=1..n} 2^k * phi(k), where phi is the Euler totient function A000010.
 * [A324914](http://oeis.org/A324914) ([program](324/A324914.asm)): a(n) = Sum_{k=1..n} 2^k * tau(k), where tau(k) = A000005(k).
 * [A324915](http://oeis.org/A324915) ([program](324/A324915.asm)): a(n) = Sum_{k=1..n} 2^k * sigma(k), where sigma(k) = A000203(k).
@@ -1963,6 +1968,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A340378](http://oeis.org/A340378) ([program](340/A340378.asm)): Number of 1-digits in the ternary representation of A048673(n).
 * [A340395](http://oeis.org/A340395) ([program](340/A340395.asm)): a(n) = A340131(A001006(n)).
 * [A340445](http://oeis.org/A340445) ([program](340/A340445.asm)): Number of partitions of n into 3 parts that are not all the same.
+* [A340448](http://oeis.org/A340448) ([program](340/A340448.asm)): Radio number of the cycle graph C_n.
 * [A340461](http://oeis.org/A340461) ([program](340/A340461.asm)): a(n) = 2*sigma(phi(n)) - n.
 * [A340479](http://oeis.org/A340479) ([program](340/A340479.asm)): a(n) = R(n) + digsum(n).
 * [A340497](http://oeis.org/A340497) ([program](340/A340497.asm)): Index where 2*n first appears in A340488.
@@ -2133,3 +2139,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345111](http://oeis.org/A345111) ([program](345/A345111.asm)): a(n) = n + A345110(n).
 * [A345211](http://oeis.org/A345211) ([program](345/A345211.asm)): Numbers with the same number of odd / even, refactorable divisors.
 * [A345280](http://oeis.org/A345280) ([program](345/A345280.asm)): a(n) = Sum_{p|n} nextprime(p), where nextprime(n) is the smallest prime > n.
+* [A345502](http://oeis.org/A345502) ([program](345/A345502.asm)): Numbers that are the sum of nine squares in five or more ways.
