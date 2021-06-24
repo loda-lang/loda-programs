@@ -1252,6 +1252,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A111701](http://oeis.org/A111701) ([program](111/A111701.asm)): Least integer obtained when n is divided by prime(1), then by prime(2), then by prime(3), ..., stopping as soon as one of the primes does not divide it. In particular, a(2n-1) = 2n-1.
 * [A111706](http://oeis.org/A111706) ([program](111/A111706.asm)): a(n) = concatenation of k times the k-th digit of n.
 * [A111707](http://oeis.org/A111707) ([program](111/A111707.asm)): a(n) = Sum_{k = 1..ceiling(w/2)} d(k) * d(w+1-k), where (d(1), ..., d(w)) is the decimal expansion of n.
+* [A111708](http://oeis.org/A111708) ([program](111/A111708.asm)): a(n) = n concatenated with 9's complement of n.
 * [A111710](http://oeis.org/A111710) ([program](111/A111710.asm)): Consider the triangle shown below in which the n-th row contains the n smallest numbers greater than those in the previous row such that the arithmetic mean is an integer. Sequence contains the leading diagonal.
 * [A111711](http://oeis.org/A111711) ([program](111/A111711.asm)): Leading column of triangle mentioned in A111710.
 * [A111712](http://oeis.org/A111712) ([program](111/A111712.asm)): Arithmetic mean of the n-th row of triangle mentioned in A111710.
@@ -1587,6 +1588,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115420](http://oeis.org/A115420) ([program](115/A115420.asm)): Numbers having a 1 in position 4 of their binary expansion.
 * [A115451](http://oeis.org/A115451) ([program](115/A115451.asm)): Expansion of 1/((1+x)*(1-2*x)*(1+x^2)).
 * [A115454](http://oeis.org/A115454) ([program](115/A115454.asm)): Composite positive integers written in base 2.
+* [A115512](http://oeis.org/A115512) ([program](115/A115512.asm)): Number triangle (1,x)+(x,x^3) expressed in terms of Riordan arrays.
 * [A115514](http://oeis.org/A115514) ([program](115/A115514.asm)): Triangle read by rows: row n >= 1 lists first n positive members of A004526 (integers repeated) in decreasing order.
 * [A115516](http://oeis.org/A115516) ([program](115/A115516.asm)): The mode of the bits of n (using 0 if bimodal).
 * [A115517](http://oeis.org/A115517) ([program](115/A115517.asm)): The mode of the bits of n (using 1 if bimodal).
@@ -3687,6 +3689,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134934](http://oeis.org/A134934) ([program](134/A134934.asm)): a(n) = (14*n+1)^2.
 * [A134960](http://oeis.org/A134960) ([program](134/A134960.asm)): a(n) = n*453060.
 * [A134965](http://oeis.org/A134965) ([program](134/A134965.asm)): a(1)=3, a(n) = a(n-1) + 7 + 2*mod(n-1, 2) for n>=2.
+* [A134967](http://oeis.org/A134967) ([program](134/A134967.asm)): List of quadruples: [-2n-1, 2n+2, -2n-1, 2n+2].
 * [A134977](http://oeis.org/A134977) ([program](134/A134977.asm)): Period 6: repeat [1, 4, 2, 3, 0, 2].
 * [A134986](http://oeis.org/A134986) ([program](134/A134986.asm)): a(n) = smallest integer m not equal to n such that n = (floor(n^2/m) + m)/2.
 * [A134990](http://oeis.org/A134990) ([program](134/A134990.asm)): Interleave two arithmetic progressions 8,10,12,14,... and 15,13,11,9,... of differences +2 and -2 respectively.

@@ -4,6 +4,5 @@
 cal $0,6094 ; Products of 2 successive primes.
 cal $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
 mov $1,$0
-sub $1,11
+add $1,1
 div $1,4
-add $1,3

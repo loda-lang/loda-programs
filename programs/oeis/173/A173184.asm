@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,260216 ; Number of permutations p of [n] with no fixed points and cyclic displacement of elements restricted by ten: p(i)<>i and (i-p(i) mod n <= 10 or p(i)-i mod n <= 10).
   sub $0,1
+  cal $2,260216 ; Number of permutations p of [n] with no fixed points and cyclic displacement of elements restricted by ten: p(i)<>i and (i-p(i) mod n <= 10 or p(i)-i mod n <= 10).
   add $1,$2
 lpe
 add $1,1

@@ -66,6 +66,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A201920](http://oeis.org/A201920) ([program](201/A201920.asm)): a(n) = 2^n mod 125.
 * [A201975](http://oeis.org/A201975) ([program](201/A201975.asm)): Number of n X 2 0..3 arrays with rows and columns lexicographically nondecreasing read forwards and nonincreasing read backwards.
 * [A202018](http://oeis.org/A202018) ([program](202/A202018.asm)): a(n) = n^2 + n + 41.
+* [A202022](http://oeis.org/A202022) ([program](202/A202022.asm)): Characteristic functions of repdigit numbers in decimal representation.
 * [A202023](http://oeis.org/A202023) ([program](202/A202023.asm)): Triangle T(n,k), read by rows, given by (1, 0, 1, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (0, 1, -1, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
 * [A202048](http://oeis.org/A202048) ([program](202/A202048.asm)): Number of (n+2) X 6 binary arrays avoiding patterns 001 and 110 in rows and columns.
 * [A202049](http://oeis.org/A202049) ([program](202/A202049.asm)): Number of (n+2) X 7 binary arrays avoiding patterns 001 and 110 in rows and columns.
@@ -1880,6 +1881,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A232599](http://oeis.org/A232599) ([program](232/A232599.asm)): Alternating sum of cubes, i.e., Sum_{k=0..n} k^p*q^k for p=3, q=-1.
 * [A232600](http://oeis.org/A232600) ([program](232/A232600.asm)): a(n) = Sum_{k=0..n} k^p*q^k, where p=1, q=-2.
 * [A232601](http://oeis.org/A232601) ([program](232/A232601.asm)): a(n) = Sum_{k=0..n} k^p*q^k for p = 2 and q = -2.
+* [A232615](http://oeis.org/A232615) ([program](232/A232615.asm)): Variant of the Chandra-sutra (A014701) using 3 instead of 2, and a mod argument using residues 1 and 2.
 * [A232625](http://oeis.org/A232625) ([program](232/A232625.asm)): Denominators of abs(n-8)/(2*n), n >= 1
 * [A232713](http://oeis.org/A232713) ([program](232/A232713.asm)): Doubly pentagonal numbers: a(n) = n*(3*n-2)*(3*n-1)*(3*n+1)/8.
 * [A232746](http://oeis.org/A232746) ([program](232/A232746.asm)): n occurs A030124(n) times; a(n) = one less than the least k such that A005228(k) > n.

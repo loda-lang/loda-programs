@@ -3,9 +3,9 @@
 
 mov $2,$0
 trn $0,1
+cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 add $2,1
 mov $1,$2
-cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 div $2,2
 mul $2,$0
 mov $3,$2

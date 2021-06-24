@@ -557,7 +557,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A156771](http://oeis.org/A156771) ([program](156/A156771.asm)): a(n) = 729*n - 531.
 * [A156772](http://oeis.org/A156772) ([program](156/A156772.asm)): a(n) = 729*n - 198.
 * [A156773](http://oeis.org/A156773) ([program](156/A156773.asm)): a(n) = 6561*n^2 - 9558*n + 3482.
-* [A156774](http://oeis.org/A156774) ([program](156/A156774.asm)): 6561n^2 - 3564n + 485.
+* [A156774](http://oeis.org/A156774) ([program](156/A156774.asm)): a(n) = 6561*n^2 - 3564*n + 485.
 * [A156778](http://oeis.org/A156778) ([program](156/A156778.asm)): n*A007504(n)/2 = n*(sum of first n primes)/2
 * [A156795](http://oeis.org/A156795) ([program](156/A156795.asm)): 81*n - 59.
 * [A156796](http://oeis.org/A156796) ([program](156/A156796.asm)): a(n) = 81*n - 22.
@@ -1315,6 +1315,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A161718](http://oeis.org/A161718) ([program](161/A161718.asm)): Expansion of (1+3*x^2)/(1+x)^2.
 * [A161720](http://oeis.org/A161720) ([program](161/A161720.asm)): a(n) = (prime(n) - 7)/2.
 * [A161726](http://oeis.org/A161726) ([program](161/A161726.asm)): a(n) = n^2 - 917*n + 9479.
+* [A161738](http://oeis.org/A161738) ([program](161/A161738.asm)): Sequence related to the column sums of the BG2 matrix
 * [A161753](http://oeis.org/A161753) ([program](161/A161753.asm)): Squares of nonprime numbers A141468.
 * [A161758](http://oeis.org/A161758) ([program](161/A161758.asm)): a(n)=n-p+1 where p is the maximal prime less than n-2.
 * [A161764](http://oeis.org/A161764) ([program](161/A161764.asm)): a(n) is the largest multiple of {the number of 1's in the binary representation of n} that is <= n.
@@ -3518,6 +3519,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181586](http://oeis.org/A181586) ([program](181/A181586.asm)): a(0)=0; a(n+1) = 2*a(n) + period 4:repeat 0,1,-2,1.
 * [A181617](http://oeis.org/A181617) ([program](181/A181617.asm)): Molecular topological indices of the complete graph K_n.
 * [A181640](http://oeis.org/A181640) ([program](181/A181640.asm)): Partial sums of floor(n^2/5) (A118015).
+* [A181655](http://oeis.org/A181655) ([program](181/A181655.asm)): Expansion of (1+2x-x^3+x^4)/(1-4x^2+3x^4).
 * [A181658](http://oeis.org/A181658) ([program](181/A181658.asm)): Row sums of A181657.
 * [A181668](http://oeis.org/A181668) ([program](181/A181668.asm)): Period 12: repeat [5,5,5,2,2,2,8,8,8,2,2,2].
 * [A181679](http://oeis.org/A181679) ([program](181/A181679.asm)): a(n) = 121*n^2 + 2*n.
@@ -4056,6 +4058,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186389](http://oeis.org/A186389) ([program](186/A186389.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=6i and g(j)=j(j+1)/2 (triangular number).  Complement of A186390.
 * [A186390](http://oeis.org/A186390) ([program](186/A186390.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=6i and g(j)=j(j+1)/2 (triangular number).  Complement of A186389.
 * [A186421](http://oeis.org/A186421) ([program](186/A186421.asm)): Even numbers interleaved with repeated odd numbers.
+* [A186422](http://oeis.org/A186422) ([program](186/A186422.asm)): First differences of A186421.
 * [A186423](http://oeis.org/A186423) ([program](186/A186423.asm)): Partial sums of A186421.
 * [A186424](http://oeis.org/A186424) ([program](186/A186424.asm)): Odd terms in A186423.
 * [A186446](http://oeis.org/A186446) ([program](186/A186446.asm)): Expansion of 1/(1 - 7*x + 2*x^2).
@@ -5182,6 +5185,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199334](http://oeis.org/A199334) ([program](199/A199334.asm)): Triangle T(n,k) = Fibonacci(n+k), related to A000045 (Fibonacci numbers).
 * [A199344](http://oeis.org/A199344) ([program](199/A199344.asm)): Least integer > n having a digital sum larger than that of n.
 * [A199394](http://oeis.org/A199394) ([program](199/A199394.asm)): The number of ways to color the vertices of all (11) simple unlabeled graphs on 4 nodes using at most n colors.
+* [A199398](http://oeis.org/A199398) ([program](199/A199398.asm)): XOR of the first n odd numbers.
 * [A199411](http://oeis.org/A199411) ([program](199/A199411.asm)): 8*6^n+1.
 * [A199412](http://oeis.org/A199412) ([program](199/A199412.asm)): a(n) = (9*6^n+1)/5.
 * [A199413](http://oeis.org/A199413) ([program](199/A199413.asm)): 9*6^n+1.

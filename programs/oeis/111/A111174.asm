@@ -3,6 +3,4 @@
 
 cal $0,141375 ; Primes of the form x^2+8*x*y-8*y^2 (as well as of the form x^2+10*x*y+y^2).
 mov $1,$0
-sub $1,73
 div $1,24
-add $1,3

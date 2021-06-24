@@ -2,6 +2,6 @@
 ; 1,1,1,0,1,1,1,0,0,1,1,1,1,0,0,1,1,1,0,0,1,0,1,0,1,1,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,0,0,1,1,1,0,0,0,1,1,0,0,1,1,0,1,0,0,1,1,1,0,0,1,0,1,0,1,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,1,0,1
 
 add $0,1
-mul $0,6
-cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
 mov $1,$0
+mul $1,6
+cal $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

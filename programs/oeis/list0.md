@@ -1102,7 +1102,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006454](http://oeis.org/A006454) ([program](006/A006454.asm)): Solution to a Diophantine equation: each term is a triangular number and each term + 1 is a square.
 * [A006463](http://oeis.org/A006463) ([program](006/A006463.asm)): Convolve natural numbers with characteristic function of triangular numbers.
 * [A006470](http://oeis.org/A006470) ([program](006/A006470.asm)): Number of tree-rooted planar maps with 3 faces and n vertices and no isthmuses.
-* [A006478](http://oeis.org/A006478) ([program](006/A006478.asm)): a(n) = a(n-1) + a(n-2) + F(n) - 1, a(0) = a(1) = 0, where F() = Fibonacci numbers A000045.
 * [A006481](http://oeis.org/A006481) ([program](006/A006481.asm)): Euler characteristics of polytopes.
 * [A006483](http://oeis.org/A006483) ([program](006/A006483.asm)): a(n) = Fibonacci(n)*2^n + 1.
 * [A006484](http://oeis.org/A006484) ([program](006/A006484.asm)): a(n) = n*(n + 1)*(n^2 - 3*n + 5)/6.
@@ -4846,6 +4845,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A037536](http://oeis.org/A037536) ([program](037/A037536.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
 * [A037537](http://oeis.org/A037537) ([program](037/A037537.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
 * [A037538](http://oeis.org/A037538) ([program](037/A037538.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
+* [A037539](http://oeis.org/A037539) ([program](037/A037539.asm)): Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
 * [A037544](http://oeis.org/A037544) ([program](037/A037544.asm)): Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,2.
 * [A037545](http://oeis.org/A037545) ([program](037/A037545.asm)): Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,2.
 * [A037546](http://oeis.org/A037546) ([program](037/A037546.asm)): Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,2.

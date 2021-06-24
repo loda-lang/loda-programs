@@ -1298,6 +1298,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325656](http://oeis.org/A325656) ([program](325/A325656.asm)): a(n) = (1/24)*n*((4*n + 3)*(2*n^2 + 1) - 3*(-1)^n).
 * [A325657](http://oeis.org/A325657) ([program](325/A325657.asm)): a(n) = (1/2)*(-1 + (-1)^n)*(n-1) + n^2.
 * [A325689](http://oeis.org/A325689) ([program](325/A325689.asm)): Number of length-3 compositions of n such that no part is the sum of the other two.
+* [A325690](http://oeis.org/A325690) ([program](325/A325690.asm)): Number of length-3 integer partitions of n whose largest part is not the sum of the other two.
 * [A325691](http://oeis.org/A325691) ([program](325/A325691.asm)): Number of length-3 integer partitions of n whose largest part is not greater than the sum of the other two.
 * [A325765](http://oeis.org/A325765) ([program](325/A325765.asm)): Number of integer partitions of n with a unique consecutive subsequence summing to every positive integer from 1 to n.
 * [A325909](http://oeis.org/A325909) ([program](325/A325909.asm)): Lexicographically earliest sequence of distinct positive terms such that for any n > 0, n divides Sum_{k = 1..n} (-1)^k * a(k).
@@ -1643,6 +1644,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332490](http://oeis.org/A332490) ([program](332/A332490.asm)): a(n) = Sum_{k=1..n} k * ceiling(n/k).
 * [A332495](http://oeis.org/A332495) ([program](332/A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
 * [A332519](http://oeis.org/A332519) ([program](332/A332519.asm)): a(n) = 4*(n^2+n-2).
+* [A332552](http://oeis.org/A332552) ([program](332/A332552.asm)): a(n) = A082184(n) - A082183(n).
 * [A332569](http://oeis.org/A332569) ([program](332/A332569.asm)): a(n) = Sum_{k=1..n} floor(n/k) * ceiling(n/k).
 * [A332602](http://oeis.org/A332602) ([program](332/A332602.asm)): Tridiagonal matrix M read by antidiagonals: main diagonal is 1,2,2,2,2,..., two adjacent diagonals are 1,1,1,1,1,...
 * [A332663](http://oeis.org/A332663) ([program](332/A332663.asm)): Even bisection of A332662: the x-coordinates of an enumeration of N X N.

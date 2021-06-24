@@ -9,6 +9,5 @@ lpb $0
   bin $2,3
   add $1,$2
 lpe
-div $1,4
-mul $1,8
+mul $1,2
 add $1,1

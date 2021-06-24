@@ -4,6 +4,5 @@
 lpb $0
   cal $0,9194 ; a(n) = gcd(n, sigma(n)).
   sub $0,1
-  add $1,4
+  add $1,1
 lpe
-div $1,4
