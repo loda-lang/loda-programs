@@ -585,6 +585,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A003699](http://oeis.org/A003699) ([program](003/A003699.asm)): Number of Hamiltonian cycles in C_4 X P_n.
 * [A003769](http://oeis.org/A003769) ([program](003/A003769.asm)): Number of perfect matchings (or domino tilings) in K_4 X P_n.
 * [A003777](http://oeis.org/A003777) ([program](003/A003777.asm)): a(n) = n^3 + n^2 - 1.
+* [A003815](http://oeis.org/A003815) ([program](003/A003815.asm)): a(0) = 0, a(n) = a(n-1) XOR n.
 * [A003817](http://oeis.org/A003817) ([program](003/A003817.asm)): a(0) = 0, a(n) = a(n-1) OR n.
 * [A003842](http://oeis.org/A003842) ([program](003/A003842.asm)): The infinite Fibonacci word: start with 1, repeatedly apply the morphism 1->12, 2->1, take limit; or, start with S(0)=2, S(1)=1, and for n>1 define S(n)=S(n-1)S(n-2), then the sequence is S(oo).
 * [A003849](http://oeis.org/A003849) ([program](003/A003849.asm)): The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
@@ -4079,6 +4080,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A030054](http://oeis.org/A030054) ([program](030/A030054.asm)): a(n) = binomial(2n+1,n-4).
 * [A030055](http://oeis.org/A030055) ([program](030/A030055.asm)): a(n) = binomial(2*n+1, n-5).
 * [A030056](http://oeis.org/A030056) ([program](030/A030056.asm)): C(2n+1,n-6).
+* [A030065](http://oeis.org/A030065) ([program](030/A030065.asm)): a(4n)=n, a(4n+2)=a(4n)+a(4n+4), a(2n+1)=a(2n)+a(2n+2).
 * [A030076](http://oeis.org/A030076) ([program](030/A030076.asm)): a(n) = 10 - m, where m = maximal digit of n.
 * [A030078](http://oeis.org/A030078) ([program](030/A030078.asm)): Cubes of primes.
 * [A030101](http://oeis.org/A030101) ([program](030/A030101.asm)): a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
@@ -4375,7 +4377,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033350](http://oeis.org/A033350) ([program](033/A033350.asm)): [ 30/n ].
 * [A033351](http://oeis.org/A033351) ([program](033/A033351.asm)): [ 31/n ].
 * [A033352](http://oeis.org/A033352) ([program](033/A033352.asm)): [ 32/n ].
-* [A033353](http://oeis.org/A033353) ([program](033/A033353.asm)): [ 33/n ].
+* [A033353](http://oeis.org/A033353) ([program](033/A033353.asm)): a(n) = floor(33/n).
 * [A033354](http://oeis.org/A033354) ([program](033/A033354.asm)): [ 34/n ].
 * [A033355](http://oeis.org/A033355) ([program](033/A033355.asm)): [ 35/n ].
 * [A033356](http://oeis.org/A033356) ([program](033/A033356.asm)): [ 36/n ].

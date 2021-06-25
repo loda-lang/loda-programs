@@ -2220,6 +2220,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240506](http://oeis.org/A240506) ([program](240/A240506.asm)): Number of length-n gap-free words on {1,2,3}.
 * [A240525](http://oeis.org/A240525) ([program](240/A240525.asm)): 2^(n-2)*(2^(n+4)-(-1)^n+5).
 * [A240530](http://oeis.org/A240530) ([program](240/A240530.asm)): a(n) = 4*(2*n)! / (n!)^2.
+* [A240533](http://oeis.org/A240533) ([program](240/A240533.asm)): a(n) = numerators of n!/10^n.
 * [A240567](http://oeis.org/A240567) ([program](240/A240567.asm)): a(n) = optimal number of tricks to throw in the game of One Round War (with n cards) in order to maximize the expected number of tricks won.
 * [A240676](http://oeis.org/A240676) ([program](240/A240676.asm)): Number of digits in the decimal expansion of n^7.
 * [A240707](http://oeis.org/A240707) ([program](240/A240707.asm)): Sum of the middle parts in the partitions of 4n-1 into 3 parts.

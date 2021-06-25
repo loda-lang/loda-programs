@@ -1666,6 +1666,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A333173](http://oeis.org/A333173) ([program](333/A333173.asm)): a(n) = r_4(n^2 + 1), where r_4(k) is the number of ways of writing k as a sum of 4 squares (A000118).
 * [A333175](http://oeis.org/A333175) ([program](333/A333175.asm)): If n = Product (p_j^k_j) then a(n) = Sum (a(n/p_j^k_j)), with a(1) = 1.
 * [A333183](http://oeis.org/A333183) ([program](333/A333183.asm)): Number of digits in concatenation of first n positive even integers.
+* [A333206](http://oeis.org/A333206) ([program](333/A333206.asm)): a(n) is the least decimal digit of n^3.
 * [A333251](http://oeis.org/A333251) ([program](333/A333251.asm)): Tropical version of Somos-5 sequence A006721.
 * [A333297](http://oeis.org/A333297) ([program](333/A333297.asm)): a(n) = Sum_{i=1..n, j=1..n, gcd(i,j)=1} i.
 * [A333319](http://oeis.org/A333319) ([program](333/A333319.asm)): a(n) is the number of subsets of {1..n} that contain exactly 3 odd and 1 even numbers.
@@ -2067,6 +2068,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A342851](http://oeis.org/A342851) ([program](342/A342851.asm)): Remove duplicates in the decimal digit-reversal of n.
 * [A342871](http://oeis.org/A342871) ([program](342/A342871.asm)): a(n) = Sum_{k=1..n} floor(n^(1/k)), n >= 1.
 * [A342892](http://oeis.org/A342892) ([program](342/A342892.asm)): a(n) is the complement of the bit two places to the left of the least significant "1" in the binary expansion of n.
+* [A342905](http://oeis.org/A342905) ([program](342/A342905.asm)): Array read by antidiagonals: T(n,k) = product of all distinct primes dividing n*k (n>=1, k>=1).
 * [A342914](http://oeis.org/A342914) ([program](342/A342914.asm)): Number of grid points covered by a truncated triangle drawn on the hexagonal lattice with the short sides having length n and the long sides length 2*n.
 * [A342925](http://oeis.org/A342925) ([program](342/A342925.asm)): a(n) = A003415(sigma(n)), where A003415 is the arithmetic derivative, and sigma is the sum of divisors of n.
 * [A342939](http://oeis.org/A342939) ([program](342/A342939.asm)): a(n) is the Skolem number of the triangular grid graph T_n.
@@ -2130,6 +2132,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344864](http://oeis.org/A344864) ([program](344/A344864.asm)): a(n) = mu(d(n)).
 * [A344866](http://oeis.org/A344866) ([program](344/A344866.asm)): Number of polygons formed when every pair of vertices of a regular (2n-1)-gon are joined by an infinite line.
 * [A344907](http://oeis.org/A344907) ([program](344/A344907.asm)): Number of polygon edges formed when every pair of vertices of a regular (2n-1)-gon are joined by an infinite line.
+* [A345018](http://oeis.org/A345018) ([program](345/A345018.asm)): For each n, append to the sequence n^2 consecutive integers, starting from n.
 * [A345019](http://oeis.org/A345019) ([program](345/A345019.asm)): Numbers whose last digit is refactorable.
 * [A345021](http://oeis.org/A345021) ([program](345/A345021.asm)): a(n) is the result of replacing 2's by 0's in the hereditary base-2 expansion of n.
 * [A345028](http://oeis.org/A345028) ([program](345/A345028.asm)): a(n) = Sum_{k=1..n} 2^(floor(n/k) - 1).

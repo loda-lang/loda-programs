@@ -4323,6 +4323,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188947](http://oeis.org/A188947) ([program](188/A188947.asm)): a(n) = n^3 - 2*n^2 + 2*n + 1.
 * [A188967](http://oeis.org/A188967) ([program](188/A188967.asm)): Zero-one sequence based on (3n-2): a(A016777(k))=a(k); a(A007494(k))=1-a(k); a(1)=0.
 * [A189007](http://oeis.org/A189007) ([program](189/A189007.asm)): Number of ON cells after n generations of the 2D cellular automaton described in the comments.
+* [A189011](http://oeis.org/A189011) ([program](189/A189011.asm)): Zero-one sequence based on triangular numbers:  a(A000217(k))=a(k); a(A014132(k))=1-a(k); a(1)=0.
 * [A189021](http://oeis.org/A189021) ([program](189/A189021.asm)): Apostol's second order Möbius (or Moebius) function mu_2(n).
 * [A189028](http://oeis.org/A189028) ([program](189/A189028.asm)): Zero-one sequence based on the sequence (5n-4):  a(A016861(k))=a(k); a(A047203(k))=1-a(k); a(1)=0.
 * [A189031](http://oeis.org/A189031) ([program](189/A189031.asm)): Zero-one sequence based on the sequence (6n-5):  a(A016921(k))=a(k); a(A114024(k))=1-a(k); a(1)=0.

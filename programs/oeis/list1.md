@@ -1927,6 +1927,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A066628](http://oeis.org/A066628) ([program](066/A066628.asm)): a(n) = n - the largest Fibonacci number <= n.
 * [A066629](http://oeis.org/A066629) ([program](066/A066629.asm)): a(n) = 2*Fibonacci(n+2) + ((-1)^n - 3)/2.
 * [A066660](http://oeis.org/A066660) ([program](066/A066660.asm)): Number of divisors of 2n excluding 1.
+* [A066665](http://oeis.org/A066665) ([program](066/A066665.asm)): a(n) = #{(x,y) | 0<=y<=x<=n and x+y is prime}.
 * [A066674](http://oeis.org/A066674) ([program](066/A066674.asm)): Least number m such that phi(m) = A000010(m) is divisible by the n-th prime.
 * [A066675](http://oeis.org/A066675) ([program](066/A066675.asm)): a(n) = A066674(n)-1 divided by the n-th prime.
 * [A066714](http://oeis.org/A066714) ([program](066/A066714.asm)): Coordination sequence for ReO_3 net with respect to Re atom.
@@ -4631,6 +4632,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088673](http://oeis.org/A088673) ([program](088/A088673.asm)): n mod A002024(n), where A002024 is "n appears n times": 1, 2, 2, 3, 3, 3, ...
 * [A088680](http://oeis.org/A088680) ([program](088/A088680.asm)): a(n) = prime(2n+1) - prime(2n).
 * [A088682](http://oeis.org/A088682) ([program](088/A088682.asm)): a(n) = prime(3*n+1) - prime(3*n-1).
+* [A088683](http://oeis.org/A088683) ([program](088/A088683.asm)): a(n) = prime(3*n+2) - prime(3*n).
+* [A088684](http://oeis.org/A088684) ([program](088/A088684.asm)): Prime(3n+3)-prime(3n+1).
 * [A088689](http://oeis.org/A088689) ([program](088/A088689.asm)): Jacobsthal numbers modulo 3.
 * [A088696](http://oeis.org/A088696) ([program](088/A088696.asm)): Triangle read by rows, giving number of partial quotients in continued fraction representation of terms in the left branch of the infinite Stern-Brocot tree.
 * [A088705](http://oeis.org/A088705) ([program](088/A088705.asm)): First differences of A000120. One minus exponent of 2 in n.
@@ -5675,7 +5678,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099392](http://oeis.org/A099392) ([program](099/A099392.asm)): a(n) = floor((n^2 - 2*n + 3)/2).
 * [A099393](http://oeis.org/A099393) ([program](099/A099393.asm)): a(n) = 4^n + 2^n - 1.
 * [A099395](http://oeis.org/A099395) ([program](099/A099395.asm)): One if odd part of n is 3, zero otherwise.
-* [A099396](http://oeis.org/A099396) ([program](099/A099396.asm)): [ log2 (2/3 * (n-1)) ].
+* [A099396](http://oeis.org/A099396) ([program](099/A099396.asm)): a(n) = floor(log_2((2/3)*(n-1))).
 * [A099425](http://oeis.org/A099425) ([program](099/A099425.asm)): Expansion of (1+x^2)/(1-2*x-x^2).
 * [A099427](http://oeis.org/A099427) ([program](099/A099427.asm)): a(1) = 1; for n > 1, a(n) = 1 + greatest common divisor of n and a(n-1).
 * [A099429](http://oeis.org/A099429) ([program](099/A099429.asm)): A Jacobsthal-Lucas convolution.

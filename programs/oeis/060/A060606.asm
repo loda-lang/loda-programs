@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,3434 ; Number of iterations of phi(x) at n needed to reach 1.
   sub $0,1
+  cal $2,3434 ; Number of iterations of phi(x) at n needed to reach 1.
   add $1,$2
 lpe

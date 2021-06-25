@@ -670,6 +670,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105853](http://oeis.org/A105853) ([program](105/A105853.asm)): a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
 * [A105870](http://oeis.org/A105870) ([program](105/A105870.asm)): Fibonacci sequence (mod 7).
 * [A105899](http://oeis.org/A105899) ([program](105/A105899.asm)): Period 6: repeat [1, 1, 2, 2, 3, 3].
+* [A105931](http://oeis.org/A105931) ([program](105/A105931.asm)): a(1) = 1 then a(n) = a(n-1) - (-1)^ceiling(n/2)*a(floor(n/2)).
 * [A105938](http://oeis.org/A105938) ([program](105/A105938.asm)): a(n) = binomial(n+2,2)*binomial(n+5,2).
 * [A105939](http://oeis.org/A105939) ([program](105/A105939.asm)): a(n) = binomial(n+3,3)*binomial(n+6,3).
 * [A105946](http://oeis.org/A105946) ([program](105/A105946.asm)): C(n+5,n)*C(n+3,3).
@@ -1084,6 +1085,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109804](http://oeis.org/A109804) ([program](109/A109804.asm)): Cumulative sum of initial digits of (n base 6).
 * [A109808](http://oeis.org/A109808) ([program](109/A109808.asm)): a(n) = 2*7^(n-1).
 * [A109857](http://oeis.org/A109857) ([program](109/A109857.asm)): Next 2n-1 odd numbers in decreasing order followed by next 2n even numbers in decreasing order.
+* [A109883](http://oeis.org/A109883) ([program](109/A109883.asm)): Start subtracting from n its divisors beginning from 1 until one reaches a number smaller than the last divisor subtracted or reaches the last nontrivial divisor < n. Define this to be the perfect deficiency of n. Then a(n) = perfect deficiency of n.
 * [A109900](http://oeis.org/A109900) ([program](109/A109900.asm)): The (n,r)-th term of the following triangle is T(n)-T(r) for r = 0 to n. The n-th row contains n+1 terms. T(n) = the n-th triangular number = n(n+1)/2. Sequence contains the sum of terms at a 45-degree angle.
 * [A109921](http://oeis.org/A109921) ([program](109/A109921.asm)): a(2n) = prime(n). a(2n+1) = sum of composite numbers between prime(n) and prime(n+1). We define a(1) = 1.
 * [A109952](http://oeis.org/A109952) ([program](109/A109952.asm)): Degrees Centigrade for which Fahrenheit is a prime.
@@ -1532,6 +1534,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115014](http://oeis.org/A115014) ([program](115/A115014.asm)): Sum_{i=1..n, gcd(6,i)=1} i.
 * [A115015](http://oeis.org/A115015) ([program](115/A115015.asm)): Sum_{i=1..n} (gcd(7,i)=1) i.
 * [A115056](http://oeis.org/A115056) ([program](115/A115056.asm)): a(n) = n*(n^2-1)*(3*n+2).
+* [A115061](http://oeis.org/A115061) ([program](115/A115061.asm)): a(n) is the number of occurrences of the n-th prime number in A051697.
 * [A115065](http://oeis.org/A115065) ([program](115/A115065.asm)): Number of points with integer coordinates inside the equilateral triangle with base [0,n].
 * [A115067](http://oeis.org/A115067) ([program](115/A115067.asm)): a(n) = (3*n^2 - n - 2)/2.
 * [A115098](http://oeis.org/A115098) ([program](115/A115098.asm)): a(0)=2, a(n)=3*a(n-1)-3.
@@ -1987,6 +1990,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A119653](http://oeis.org/A119653) ([program](119/A119653.asm)): Denominator of BernoulliB[2p] divided by 6, where p=Prime[n].
 * [A119674](http://oeis.org/A119674) ([program](119/A119674.asm)): Number of states of the minimal deterministic finite automaton that accepts binary strings that represent numbers that are divisible by n.
 * [A119681](http://oeis.org/A119681) ([program](119/A119681.asm)): Odd numbers n such that 2n-1 is prime.
+* [A119688](http://oeis.org/A119688) ([program](119/A119688.asm)): a(n) = n!! mod (n+1).
 * [A119690](http://oeis.org/A119690) ([program](119/A119690.asm)): n! mod n*(n+1)/2.
 * [A119692](http://oeis.org/A119692) ([program](119/A119692.asm)): Binomial(2*n,n)*fib(n).
 * [A119693](http://oeis.org/A119693) ([program](119/A119693.asm)): Binomial(2*n,n)*fib(n)/2.
@@ -3799,7 +3803,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A135674](http://oeis.org/A135674) ([program](135/A135674.asm)): Floor(n+n^(2/3)).
 * [A135675](http://oeis.org/A135675) ([program](135/A135675.asm)): a(n) = ceiling(n^(4/3) - n)].
 * [A135676](http://oeis.org/A135676) ([program](135/A135676.asm)): a(n) = floor(n^(4/3) - n).
-* [A135677](http://oeis.org/A135677) ([program](135/A135677.asm)): Ceiling(n^(4/3)+n).
+* [A135677](http://oeis.org/A135677) ([program](135/A135677.asm)): a(n) = ceiling(n^(4/3)+n).
 * [A135678](http://oeis.org/A135678) ([program](135/A135678.asm)): Floor(n^(4/3)+n).
 * [A135679](http://oeis.org/A135679) ([program](135/A135679.asm)): a(n) = n if n = 1 or if n is prime. Otherwise, a(n) = 2 if n is even and a(n) = 3 if n is odd.
 * [A135680](http://oeis.org/A135680) ([program](135/A135680.asm)): a(n) = n if n = 1 or if n is prime. Otherwise, n = 4 if n is even and n = 5 if n is odd.
@@ -4246,6 +4250,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139782](http://oeis.org/A139782) ([program](139/A139782.asm)): Binomial transform of A077947.
 * [A139786](http://oeis.org/A139786) ([program](139/A139786.asm)): a(n) = 7^n mod 6^n.
 * [A139788](http://oeis.org/A139788) ([program](139/A139788.asm)): Period 5: repeat 1, 7, 3, 9, 5.
+* [A139790](http://oeis.org/A139790) ([program](139/A139790.asm)): a(n) = (5*2^(n+2) - 3*n*2^n - 2*(-1)^n) / 18.
 * [A139797](http://oeis.org/A139797) ([program](139/A139797.asm)): Inverse binomial transform of [0, A133474].
 * [A139798](http://oeis.org/A139798) ([program](139/A139798.asm)): Coefficient of x^5 in (1-x-x^2)^(-n).
 * [A139800](http://oeis.org/A139800) ([program](139/A139800.asm)): a(n)=a(n-1)+a(n-2)+a(n-3)+2a(n-4).

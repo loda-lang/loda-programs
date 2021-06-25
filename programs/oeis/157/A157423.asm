@@ -3,8 +3,8 @@
 
 cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
 cal $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-lpb $0
-  sub $0,1
-lpe
-mov $1,$0
-add $1,1
+mov $1,4
+pow $1,$0
+mul $1,32
+div $1,17
+mod $1,2

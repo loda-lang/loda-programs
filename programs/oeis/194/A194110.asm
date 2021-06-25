@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,22839 ; Beatty sequence for sqrt(5).
   sub $0,1
+  cal $2,22839 ; Beatty sequence for sqrt(5).
   add $1,$2
 lpe
 add $1,2

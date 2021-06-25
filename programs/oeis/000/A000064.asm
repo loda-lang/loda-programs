@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,8 ; Number of ways of making change for n cents using coins of 1, 2, 5, 10 cents.
   sub $0,1
+  cal $2,8 ; Number of ways of making change for n cents using coins of 1, 2, 5, 10 cents.
   add $1,$2
 lpe
 add $1,1
