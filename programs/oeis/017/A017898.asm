@@ -4,8 +4,8 @@
 mov $6,$0
 mov $8,2
 lpb $8
-  clr $0,6
   mov $0,$6
+  mov $3,0
   sub $8,1
   add $0,$8
   sub $0,1
@@ -17,20 +17,19 @@ lpb $8
     add $0,$4
     max $0,0
     cal $0,98578 ; a(n) = Sum_{k=0..floor(n/4)} C(n-3*k,k+1).
-    mov $1,$0
     mov $5,$4
     mul $5,$0
     add $3,$5
+    mov $7,$0
   lpe
   min $2,1
-  mul $2,$1
-  mov $1,$3
-  sub $1,$2
+  mul $2,$7
+  mov $7,$3
+  sub $7,$2
   mov $9,$8
-  mul $9,$1
-  add $7,$9
+  mul $9,$7
+  add $1,$9
 lpe
 min $6,1
-mul $6,$1
-mov $1,$7
+mul $6,$7
 sub $1,$6

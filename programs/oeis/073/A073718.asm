@@ -1,6 +1,13 @@
 ; A073718: Powers of 2 with composite exponents.
 ; 16,64,256,512,1024,4096,16384,32768,65536,262144,1048576,2097152,4194304,16777216,33554432,67108864,134217728,268435456,1073741824,4294967296,8589934592,17179869184,34359738368,68719476736
 
-cal $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
-mov $1,$0
-cal $1,79 ; Powers of 2: a(n) = 2^n.
+add $0,2
+cal $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+mov $1,2
+lpb $0
+  sub $0,1
+  pow $1,$0
+  trn $0,6530
+lpe
+div $1,8
+mul $1,16

@@ -5,8 +5,8 @@ mov $6,$0
 mov $8,$0
 add $8,1
 lpb $8
-  clr $0,6
   mov $0,$6
+  mov $3,0
   sub $8,1
   sub $0,$8
   mov $2,$0
@@ -17,16 +17,15 @@ lpb $8
     add $0,$4
     max $0,0
     cal $0,26353 ; a(n) = sum of the numbers between the two n's in A026350.
-    mov $1,$0
     mov $5,$4
     mul $5,$0
     add $3,$5
+    mov $7,$0
   lpe
   min $2,1
-  mul $2,$1
-  mov $1,$3
-  sub $1,$2
-  sub $1,2
-  add $7,$1
+  mul $2,$7
+  mov $7,$3
+  sub $7,$2
+  sub $7,2
+  add $1,$7
 lpe
-mov $1,$7

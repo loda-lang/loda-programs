@@ -1757,6 +1757,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230088](http://oeis.org/A230088) ([program](230/A230088.asm)): Partial sums of A010062.
 * [A230089](http://oeis.org/A230089) ([program](230/A230089.asm)): If n is divisible by 4 then 4, if n is divisible by 2 then 2, otherwise n.
 * [A230096](http://oeis.org/A230096) ([program](230/A230096.asm)): Number of tilings of an n X 1 rectangle (using tiles of dimension 1 X 1 and 2 X 1) that share no tile at the same position with their mirrored image.
+* [A230101](http://oeis.org/A230101) ([program](230/A230101.asm)): a(n) = product of n and all its nonzero digits.
 * [A230128](http://oeis.org/A230128) ([program](230/A230128.asm)): The number of multinomial coefficients over partitions with value equal to 4.
 * [A230135](http://oeis.org/A230135) ([program](230/A230135.asm)): Triangle read by rows: T(n, k) = 1 if ((k mod 4 = 2) and (n mod 2 = 1)) or ((k mod 4 = 0) and (n mod 2 = 0)) else T(n, k) = 0.
 * [A230137](http://oeis.org/A230137) ([program](230/A230137.asm)): a(n)/2^n is the expected value of the maximum of the number of heads and the number of tails when n fair coins are tossed.
@@ -2629,10 +2630,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246817](http://oeis.org/A246817) ([program](246/A246817.asm)): Possible number of trailing zeros in hyperfactorials (A002109).
 * [A246831](http://oeis.org/A246831) ([program](246/A246831.asm)): a(n) is the concatenation of n and 3n in binary.
 * [A246839](http://oeis.org/A246839) ([program](246/A246839.asm)): Number of trailing zeros in A002109(n).
-* [A246929](http://oeis.org/A246929) ([program](246/A246929.asm)): Prime(11*n).
 * [A246930](http://oeis.org/A246930) ([program](246/A246930.asm)): Prime(12*n).
 * [A246931](http://oeis.org/A246931) ([program](246/A246931.asm)): Prime(14*n).
-* [A246932](http://oeis.org/A246932) ([program](246/A246932.asm)): Prime(15*n).
 * [A246933](http://oeis.org/A246933) ([program](246/A246933.asm)): Prime(16*n).
 * [A246934](http://oeis.org/A246934) ([program](246/A246934.asm)): The closest square to n-th prime.
 * [A246943](http://oeis.org/A246943) ([program](246/A246943.asm)): a(4n) = 4*n , a(2n+1) = 8*n+4 , a(4n+2) = 2*n+1.

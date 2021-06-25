@@ -6,6 +6,4 @@ cal $0,6093 ; a(n) = prime(n) - 1.
 cal $0,40 ; The prime numbers.
 pow $0,2
 mov $1,$0
-sub $1,25
 div $1,24
-add $1,1

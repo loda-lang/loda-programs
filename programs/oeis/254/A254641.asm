@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,250212 ; Second partial sums of seventh powers (A001015).
   sub $0,1
+  cal $2,250212 ; Second partial sums of seventh powers (A001015).
   add $1,$2
 lpe
 add $1,1

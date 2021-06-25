@@ -982,7 +982,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158588](http://oeis.org/A158588) ([program](158/A158588.asm)): a(n) = 34*n^2 - 1.
 * [A158589](http://oeis.org/A158589) ([program](158/A158589.asm)): a(n) = 324*n^2 - 18.
 * [A158590](http://oeis.org/A158590) ([program](158/A158590.asm)): a(n) = 324*n^2 + 18.
-* [A158591](http://oeis.org/A158591) ([program](158/A158591.asm)): 36n^2 + 1.
+* [A158591](http://oeis.org/A158591) ([program](158/A158591.asm)): a(n) = 36*n^2 + 1.
 * [A158592](http://oeis.org/A158592) ([program](158/A158592.asm)): a(n) = 361*n^2 + 19.
 * [A158593](http://oeis.org/A158593) ([program](158/A158593.asm)): a(n) = 38*n^2 + 1.
 * [A158595](http://oeis.org/A158595) ([program](158/A158595.asm)): a(n) = 361*n^2 - 19.
@@ -2033,8 +2033,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167991](http://oeis.org/A167991) ([program](167/A167991.asm)): Blocks of size 2n, each with 2n-1 replicas of 2n followed by 2n+1; n=1, 2, 3, ...
 * [A167993](http://oeis.org/A167993) ([program](167/A167993.asm)): Expansion of x^2/((3*x-1)*(3*x^2-1)).
 * [A167998](http://oeis.org/A167998) ([program](167/A167998.asm)): Numbers n with property that first digit of 5*n = last digit of n.
+* [A168011](http://oeis.org/A168011) ([program](168/A168011.asm)): a(n) = Sum of all numbers of divisors of all numbers < (n+1)^2.
 * [A168014](http://oeis.org/A168014) ([program](168/A168014.asm)): Sum of all parts of all partitions of n into equal parts that do not contain 1 as a part.
-* [A168024](http://oeis.org/A168024) ([program](168/A168024.asm)): Noncomposite numbers in the northwestern ray of the Ulam spiral as oriented on the March 1964 cover of Scientific American.
 * [A168029](http://oeis.org/A168029) ([program](168/A168029.asm)): n*(n^6+1)/2.
 * [A168036](http://oeis.org/A168036) ([program](168/A168036.asm)): Difference between n' and n, where n' is the arithmetic derivative of n (A003415).
 * [A168037](http://oeis.org/A168037) ([program](168/A168037.asm)): Period length 18: repeat 0,1,2,0,8,7,0,4,5,0,5,4,0,7,8,0,2,1.
@@ -2763,6 +2763,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173601](http://oeis.org/A173601) ([program](173/A173601.asm)): Greatest inverse of A071542, i.e., a(n) = maximal i such that A071542(i) = n.
 * [A173633](http://oeis.org/A173633) ([program](173/A173633.asm)): a(n) = a(n-2) + a(n-3) - [a(n-3)/4] - [a(n-4)/2] - [a(n-5)/4].
 * [A173635](http://oeis.org/A173635) ([program](173/A173635.asm)): Period 5 sequence: 1, 1, 4, 4, 2, ...
+* [A173636](http://oeis.org/A173636) ([program](173/A173636.asm)): Number of positive solutions of equation x(x+n)=y*y.
 * [A173645](http://oeis.org/A173645) ([program](173/A173645.asm)): Partial sums of floor(n^2/11).
 * [A173653](http://oeis.org/A173653) ([program](173/A173653.asm)): Partial sums of floor(n^2/10) (A056865)
 * [A173657](http://oeis.org/A173657) ([program](173/A173657.asm)): 2+2^n+3^n.
@@ -3367,7 +3368,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179904](http://oeis.org/A179904) ([program](179/A179904.asm)): a(n) = A056520(n)+1 for n>0, a(0)=1.
 * [A179905](http://oeis.org/A179905) ([program](179/A179905.asm)): (1, 4, 7, 10, 13,...) convolved with (1, 0, 4, 7, 10, 13...); given A016777 = (1, 4, 7, 10, 13,...).
 * [A179935](http://oeis.org/A179935) ([program](179/A179935.asm)): Squares where the number of decimal digits is also a square.
-* [A179942](http://oeis.org/A179942) ([program](179/A179942.asm)): Number of times n appears in a 1000 x 1000 multiplication table.
 * [A179976](http://oeis.org/A179976) ([program](179/A179976.asm)): 2^(2n+1) mod (2n+1).
 * [A179986](http://oeis.org/A179986) ([program](179/A179986.asm)): Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.
 * [A179991](http://oeis.org/A179991) ([program](179/A179991.asm)): Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.
@@ -3402,7 +3402,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180250](http://oeis.org/A180250) ([program](180/A180250.asm)): a(n) = 5*a(n-1) + 10*a(n-2), with a(1)=0 and a(2)=1.
 * [A180272](http://oeis.org/A180272) ([program](180/A180272.asm)): a(n) = binomial(n, A002024(n+1)-1) where A002024 is "n appears n times".
 * [A180291](http://oeis.org/A180291) ([program](180/A180291.asm)): Number of arrangements of n indistinguishable balls in n boxes with the maximum number of balls in any box equal to n-1.
-* [A180302](http://oeis.org/A180302) ([program](180/A180302.asm)): Sequence of primes separated by [sequence of prime] elements. 2, [find 2nd prime after 2 = ] 5, find 3rd prime after 5 =] 13, [find 5th prime after 13 =] 61, ..., etc.
 * [A180316](http://oeis.org/A180316) ([program](180/A180316.asm)): Concatenation of n and A008954(n).
 * [A180319](http://oeis.org/A180319) ([program](180/A180319.asm)): Total number of possible standard knight moves on an n X 2n chessboard, if the knight is placed anywhere
 * [A180324](http://oeis.org/A180324) ([program](180/A180324.asm)): Vassiliev invariant of fourth order for the torus knots
@@ -4809,6 +4808,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A194074](http://oeis.org/A194074) ([program](194/A194074.asm)): Natural fractal sequence of A194073.
 * [A194082](http://oeis.org/A194082) ([program](194/A194082.asm)): Sum{floor(sqrt(3)*k/2) : 1<=k<=n}
 * [A194102](http://oeis.org/A194102) ([program](194/A194102.asm)): a(n) = Sum_{j=1..n} floor(j*sqrt(2)); n-th partial sum of Beatty sequence for sqrt(2).
+* [A194103](http://oeis.org/A194103) ([program](194/A194103.asm)): Natural fractal sequence of A194102.
 * [A194106](http://oeis.org/A194106) ([program](194/A194106.asm)): Sum{floor(j*sqrt(3) : 1<=j<=n}; n-th partial sum of Beatty sequence for sqrt(3).
 * [A194110](http://oeis.org/A194110) ([program](194/A194110.asm)): Sum{floor(j*sqrt(5) : 1<=j<=n}; n-th partial sum of Beatty sequence for sqrt(5).
 * [A194111](http://oeis.org/A194111) ([program](194/A194111.asm)): Sum{floor(j*sqrt(7) : 1<=j<=n}; n-th partial sum of Beatty sequence for sqrt(7).

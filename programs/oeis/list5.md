@@ -313,6 +313,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256257](http://oeis.org/A256257) ([program](256/A256257.asm)): 6 times numbers of Gould's sequence A001316.
 * [A256266](http://oeis.org/A256266) ([program](256/A256266.asm)): Total number of ON states after n generations of cellular automaton based on triangles (see Comments lines for definition).
 * [A256302](http://oeis.org/A256302) ([program](256/A256302.asm)): Least prime p such that p+3*k*(k+1) is prime for all k=0,...,n.
+* [A256309](http://oeis.org/A256309) ([program](256/A256309.asm)): Number of partitions of 2n into exactly 5 parts.
 * [A256313](http://oeis.org/A256313) ([program](256/A256313.asm)): Number of partitions of 3n into exactly 4 parts.
 * [A256316](http://oeis.org/A256316) ([program](256/A256316.asm)): Number of partitions of 4n into exactly 5 parts.
 * [A256320](http://oeis.org/A256320) ([program](256/A256320.asm)): Number of partitions of 4n into exactly 3 parts.
@@ -591,7 +592,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A260444](http://oeis.org/A260444) ([program](260/A260444.asm)): Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0,0) and midword sequence (a(n)); see A260390.
 * [A260446](http://oeis.org/A260446) ([program](260/A260446.asm)): Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1,0) and midword sequence (a(n)); see Comments.
 * [A260479](http://oeis.org/A260479) ([program](260/A260479.asm)): Positions of 0 in the infinite palindromic word at A260455.
-* [A260483](http://oeis.org/A260483) ([program](260/A260483.asm)): Beatty sequence for e^(1/Pi) = A179706.
 * [A260624](http://oeis.org/A260624) ([program](260/A260624.asm)): a(n) = arithmetic derivative of the n-th composite number.
 * [A260637](http://oeis.org/A260637) ([program](260/A260637.asm)): Sums of seven consecutive squares: a(n) = n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2 + (n+4)^2 + (n+5)^2 + (n+6)^2.
 * [A260644](http://oeis.org/A260644) ([program](260/A260644.asm)): Four steps forward, three steps back.
@@ -1841,6 +1841,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277823](http://oeis.org/A277823) ([program](277/A277823.asm)): a(n) = A048724(A065621(n)).
 * [A277866](http://oeis.org/A277866) ([program](277/A277866.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 * [A277867](http://oeis.org/A277867) ([program](277/A277867.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
+* [A277885](http://oeis.org/A277885) ([program](277/A277885.asm)): a(n) = index of the least non-unitary prime divisor of n or 0 if no such prime-divisor exists.
 * [A277928](http://oeis.org/A277928) ([program](277/A277928.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
 * [A277929](http://oeis.org/A277929) ([program](277/A277929.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
 * [A277935](http://oeis.org/A277935) ([program](277/A277935.asm)): Number of ways 2*n-1 people can vote on three candidates so that the Condorcet paradox arises.
@@ -2026,6 +2027,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A281482](http://oeis.org/A281482) ([program](281/A281482.asm)): a(n) = 2^(n + 1) * (2^n + 1) - 1.
 * [A281500](http://oeis.org/A281500) ([program](281/A281500.asm)): Reduced denominators of f(n) = (n+1)/(2^(2+n)-2) with A026741(n+1) as numerators.
 * [A281546](http://oeis.org/A281546) ([program](281/A281546.asm)): a(n) = 27*n + 2.
+* [A281553](http://oeis.org/A281553) ([program](281/A281553.asm)): Write n in binary reflected Gray code, rotate one binary place to the right and convert the code back to decimal.
 * [A281582](http://oeis.org/A281582) ([program](281/A281582.asm)): Number of rolls of a die with n sides that maximizes the average ratio of highest number of occurrences of a face value to lowest number.
 * [A281593](http://oeis.org/A281593) ([program](281/A281593.asm)): a(n) = b(n) - Sum_{j=0..n-1} b(n) with b(n) = binomial(2*n, n).
 * [A281626](http://oeis.org/A281626) ([program](281/A281626.asm)): a(n) = (sum of trivial divisors of n) - (sum of nontrivial divisors of n).
@@ -2884,7 +2886,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A295822](http://oeis.org/A295822) ([program](295/A295822.asm)): Number of coprime pairs (a,b) with -n <= a <= n, -3 <= b <= 3.
 * [A295866](http://oeis.org/A295866) ([program](295/A295866.asm)): Number of decimal digits in the number of partitions of n.
 * [A295869](http://oeis.org/A295869) ([program](295/A295869.asm)): Numbers not divisible by 2, 3 or 5 (A007775) with digital root 8.
-* [A295884](http://oeis.org/A295884) ([program](295/A295884.asm)): Number of exponents larger than 3 in the prime factorization of n.
 * [A295889](http://oeis.org/A295889) ([program](295/A295889.asm)): a(n) = 1 if binary weights of n and 3n have the same parity, 0 otherwise.
 * [A295890](http://oeis.org/A295890) ([program](295/A295890.asm)): a(n) = 1 if binary weights of n and 3n have different parity, 0 otherwise; a(n) = A010060(n) XOR A010060(3n).
 * [A295896](http://oeis.org/A295896) ([program](295/A295896.asm)): a(n) = 1 if there are no odd runs of 1's in the binary expansion of n followed by a 0 to their right, 0 otherwise.

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,143608 ; A005319 and A002315 interleaved.
   sub $0,1
+  cal $2,143608 ; A005319 and A002315 interleaved.
   add $1,$2
 lpe
 mul $1,2

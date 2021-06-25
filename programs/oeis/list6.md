@@ -937,6 +937,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317108](http://oeis.org/A317108) ([program](317/A317108.asm)): Numbers missing from A317106.
 * [A317137](http://oeis.org/A317137) ([program](317/A317137.asm)): a(n) is the number of nonzero triangular numbers <= n-th prime.
 * [A317186](http://oeis.org/A317186) ([program](317/A317186.asm)): One of many square spiral sequences: a(n) = n^2 + n - floor((n-1)/2).
+* [A317187](http://oeis.org/A317187) ([program](317/A317187.asm)): Arrange primes along the square spiral; sequence lists primes on the X-axis.
 * [A317189](http://oeis.org/A317189) ([program](317/A317189.asm)): A morphic sequence related to the ternary Thue-Morse sequence.
 * [A317200](http://oeis.org/A317200) ([program](317/A317200.asm)): G.f.: -x*(2*x^3+2*x^2+x-2)/(x^4-2*x+1).
 * [A317297](http://oeis.org/A317297) ([program](317/A317297.asm)): a(n) = (n - 1)*(4*n^2 - 8*n + 5).
@@ -1575,7 +1576,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330492](http://oeis.org/A330492) ([program](330/A330492.asm)): a(n) = sum of second differences of the sorted divisors of n.
 * [A330503](http://oeis.org/A330503) ([program](330/A330503.asm)): Number of Sós permutations of {0,1,...,n}.
 * [A330520](http://oeis.org/A330520) ([program](330/A330520.asm)): Sum of even integers <= n times the sum of odd integers <= n.
-* [A330560](http://oeis.org/A330560) ([program](330/A330560.asm)): a(n) = number of primes p <= prime(n) with Delta(p) == 2 mod 4, where Delta(p) = nextprime(p) - p.
+* [A330561](http://oeis.org/A330561) ([program](330/A330561.asm)): a(n) = number of primes p <= prime(n) with Delta(p) == 0 mod 4, where Delta(p) = nextprime(p) - p.
 * [A330569](http://oeis.org/A330569) ([program](330/A330569.asm)): a(n) = 1 if n is odd, otherwise a(n) = 2^(v-1)+1 where v is the 2-adic valuation of n (A007814(n)).
 * [A330571](http://oeis.org/A330571) ([program](330/A330571.asm)): Square of number of unordered factorizations of n as n = i*j.
 * [A330602](http://oeis.org/A330602) ([program](330/A330602.asm)): a(n) = a(n-1) XOR (n+1), with a(0) = 0.
@@ -1583,6 +1584,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330651](http://oeis.org/A330651) ([program](330/A330651.asm)): a(n) = n^4 + 3*n^3 + 2*n^2 - 2*n.
 * [A330700](http://oeis.org/A330700) ([program](330/A330700.asm)): a(n) = (n - 1)*n*(2*n^2 + 4*n - 1)/6.
 * [A330707](http://oeis.org/A330707) ([program](330/A330707.asm)): a(n) = ( 3*n^2 + n - 1 + (-1)^floor(n/2) )/4.
+* [A330709](http://oeis.org/A330709) ([program](330/A330709.asm)): Two-column table read by rows: pairs (i,j) in order sorted from the left.
 * [A330761](http://oeis.org/A330761) ([program](330/A330761.asm)): Array read by antidiagonals: T(n,k) is the number of faces on a ring formed by connecting the ends of a prismatic rod whose cross-section is an n-sided regular polygon after applying a twist of k/n turns.
 * [A330795](http://oeis.org/A330795) ([program](330/A330795.asm)): Evaluation of the polynomials given by the Riordan square of the Fibonacci sequence with a(0) = 1 (A193737) at 1/2 and normalized with 2^n.
 * [A330805](http://oeis.org/A330805) ([program](330/A330805.asm)): Number of squares and rectangles in the interior of the square with vertices (n,0), (0,n), (-n,0) and (0,-n) in a square (x,y)-grid.
@@ -1663,7 +1665,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332994](http://oeis.org/A332994) ([program](332/A332994.asm)): a(1) = 1, for n > 1, a(n) = n + a(A052126(n)).
 * [A333167](http://oeis.org/A333167) ([program](333/A333167.asm)): a(n) = r_2(n^2 + 1), where r_2(k) is the number of ways of writing k as a sum of 2 squares (A004018).
 * [A333169](http://oeis.org/A333169) ([program](333/A333169.asm)): a(n) = phi(n^2 + 1), where phi is the Euler totient function (A000010).
+* [A333172](http://oeis.org/A333172) ([program](333/A333172.asm)): a(n) = Sum_{k=0..n} sigma(k^2 + 1), where sigma(k) is the sum of divisors of k (A000203).
 * [A333173](http://oeis.org/A333173) ([program](333/A333173.asm)): a(n) = r_4(n^2 + 1), where r_4(k) is the number of ways of writing k as a sum of 4 squares (A000118).
+* [A333174](http://oeis.org/A333174) ([program](333/A333174.asm)): a(n) = Sum_{k=0..n} r_4(k^2 + 1), where r_4(k) is the number of ways of writing k as a sum of 4 squares (A000118).
 * [A333175](http://oeis.org/A333175) ([program](333/A333175.asm)): If n = Product (p_j^k_j) then a(n) = Sum (a(n/p_j^k_j)), with a(1) = 1.
 * [A333183](http://oeis.org/A333183) ([program](333/A333183.asm)): Number of digits in concatenation of first n positive even integers.
 * [A333206](http://oeis.org/A333206) ([program](333/A333206.asm)): a(n) is the least decimal digit of n^3.
@@ -2095,7 +2099,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A343720](http://oeis.org/A343720) ([program](343/A343720.asm)): Triangle read by rows: T(n,k) = k^2 mod n for k = 0..n-1, n >= 1.
 * [A343754](http://oeis.org/A343754) ([program](343/A343754.asm)): a(n) = 0, and for any n > 0, a(n+1) = a(n) - A065363(n) + 1.
 * [A343785](http://oeis.org/A343785) ([program](343/A343785.asm)): a(n) is completely multiplicative with a(p^e) = (-1)^e if p == 2 (mod 3) and a(p^e) = 1 otherwise.
-* [A343794](http://oeis.org/A343794) ([program](343/A343794.asm)): Numbers k such that 630*k + 315 is not an abundant number (A005101).
 * [A343808](http://oeis.org/A343808) ([program](343/A343808.asm)): Partial sums of A062074.
 * [A343810](http://oeis.org/A343810) ([program](343/A343810.asm)): Numbers that contain only the digits 0,4,8. Permutable multiples of 4: numbers k such that every permutation of the digits of k is a multiple of 4.
 * [A343842](http://oeis.org/A343842) ([program](343/A343842.asm)): Series expansion of 1/sqrt(8*x^2 + 1), even powers only.
