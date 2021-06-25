@@ -5,8 +5,8 @@ mov $1,9
 lpb $0
   mov $1,7
   mov $2,$0
-  cal $2,33271 ; Number of odd nonprimes <= n.
   mov $0,0
+  cal $2,33271 ; Number of odd nonprimes <= n.
   add $1,$2
 lpe
 sub $1,8
