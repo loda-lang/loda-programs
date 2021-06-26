@@ -1102,6 +1102,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006454](http://oeis.org/A006454) ([program](006/A006454.asm)): Solution to a Diophantine equation: each term is a triangular number and each term + 1 is a square.
 * [A006463](http://oeis.org/A006463) ([program](006/A006463.asm)): Convolve natural numbers with characteristic function of triangular numbers.
 * [A006470](http://oeis.org/A006470) ([program](006/A006470.asm)): Number of tree-rooted planar maps with 3 faces and n vertices and no isthmuses.
+* [A006478](http://oeis.org/A006478) ([program](006/A006478.asm)): a(n) = a(n-1) + a(n-2) + F(n) - 1, a(0) = a(1) = 0, where F() = Fibonacci numbers A000045.
 * [A006481](http://oeis.org/A006481) ([program](006/A006481.asm)): Euler characteristics of polytopes.
 * [A006483](http://oeis.org/A006483) ([program](006/A006483.asm)): a(n) = Fibonacci(n)*2^n + 1.
 * [A006484](http://oeis.org/A006484) ([program](006/A006484.asm)): a(n) = n*(n + 1)*(n^2 - 3*n + 5)/6.
@@ -4746,7 +4747,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A036487](http://oeis.org/A036487) ([program](036/A036487.asm)): a(n) = floor((n^3)/2).
 * [A036488](http://oeis.org/A036488) ([program](036/A036488.asm)): Nearest integer to n^(5/2).
 * [A036489](http://oeis.org/A036489) ([program](036/A036489.asm)): Nearest integer to n^(7/2).
-* [A036494](http://oeis.org/A036494) ([program](036/A036494.asm)): Nearest integer to n^(9/2).
 * [A036496](http://oeis.org/A036496) ([program](036/A036496.asm)): Number of lines that intersect the first n points on a spiral on a triangular lattice. The spiral starts at (0,0), goes to (1,0) and (1/2, sqrt(3)/2) and continues counterclockwise.
 * [A036498](http://oeis.org/A036498) ([program](036/A036498.asm)): Numbers of the form m*(6*m-1) and m*(6*m+1), where m is an integer.
 * [A036499](http://oeis.org/A036499) ([program](036/A036499.asm)): Numbers of the form n*(n+1)/6 for n = 2 or 3 modulo 6.

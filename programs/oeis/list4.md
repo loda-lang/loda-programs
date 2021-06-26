@@ -12,7 +12,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A200193](http://oeis.org/A200193) ([program](200/A200193.asm)): Number of -n..n arrays x(0..3) of 4 elements with zero sum, adjacent elements differing by more than one, and elements alternately increasing and decreasing.
 * [A200213](http://oeis.org/A200213) ([program](200/A200213.asm)): Ordered factorizations of n with 2 distinct parts, both > 1.
 * [A200244](http://oeis.org/A200244) ([program](200/A200244.asm)): a(n)=1 iff binary weight of n-th prime is even.
-* [A200245](http://oeis.org/A200245) ([program](200/A200245.asm)): Partial sums of A200244.
 * [A200246](http://oeis.org/A200246) ([program](200/A200246.asm)): a(n)=1 iff binary weight of n-th prime is odd.
 * [A200247](http://oeis.org/A200247) ([program](200/A200247.asm)): Partial sums of A200246.
 * [A200249](http://oeis.org/A200249) ([program](200/A200249.asm)): Number of 0..5 arrays x(0..n-1) of n elements with each no smaller than the sum of its previous elements modulo 6.

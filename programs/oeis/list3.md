@@ -3468,6 +3468,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181120](http://oeis.org/A181120) ([program](181/A181120.asm)): Partial sums of round(n^2/12) (A069905).
 * [A181132](http://oeis.org/A181132) ([program](181/A181132.asm)): a(0)=0; thereafter a(n) = total number of 0's in binary expansions of 1, ..., n.
 * [A181133](http://oeis.org/A181133) ([program](181/A181133.asm)): a(n) = n + A003056(n).
+* [A181138](http://oeis.org/A181138) ([program](181/A181138.asm)): Least positive integer k such that n^2 + k is a cube.
 * [A181149](http://oeis.org/A181149) ([program](181/A181149.asm)): a(n) = prime(n)^3 + prime(n)^2 + prime(n).
 * [A181150](http://oeis.org/A181150) ([program](181/A181150.asm)): a(n) = prime(n)^3 + prime(n) + 1.
 * [A181151](http://oeis.org/A181151) ([program](181/A181151.asm)): a(n) = prime(n)^3 + prime(n)^2 + 1.

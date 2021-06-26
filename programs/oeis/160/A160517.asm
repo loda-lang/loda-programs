@@ -4,6 +4,5 @@
 add $0,3
 cal $0,6584 ; If n mod 2 = 0 then n*(n^2-4)/12 else n*(n^2-1)/12.
 mov $1,$0
-sub $1,2
-mul $1,5
-add $1,10
+div $1,2
+mul $1,10

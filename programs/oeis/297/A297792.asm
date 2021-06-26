@@ -5,20 +5,14 @@ add $0,1
 mov $2,$0
 lpb $0
   mov $3,$2
-  mov $6,1
-  lpb $6
-    mov $26,$0
-    cmp $26,0
-    add $0,$26
-    dif $3,$0
-    lpb $2,6
-      sub $6,1
-      lpb $3
-        cmp $3,$2
-        cmp $3,0
-        mul $3,$0
-      lpe
-    lpe
+  mov $4,$0
+  cmp $4,0
+  add $0,$4
+  dif $3,$0
+  lpb $3
+    cmp $3,$2
+    cmp $3,0
+    mul $3,$0
   lpe
   sub $0,1
   pow $3,2

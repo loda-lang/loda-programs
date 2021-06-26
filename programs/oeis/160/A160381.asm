@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  div $0,4
   add $2,2
   cal $2,4524 ; Three even followed by one odd.
-  div $0,4
   mod $2,2
   add $1,$2
   add $1,$2

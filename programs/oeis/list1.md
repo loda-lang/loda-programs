@@ -4352,6 +4352,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A086012](http://oeis.org/A086012) ([program](086/A086012.asm)): Number of 4's in decimal expansion of n^2.
 * [A086013](http://oeis.org/A086013) ([program](086/A086013.asm)): Number of 5's in decimal expansion of n^2.
 * [A086014](http://oeis.org/A086014) ([program](086/A086014.asm)): Number of 6's in decimal expansion of n^2.
+* [A086016](http://oeis.org/A086016) ([program](086/A086016.asm)): Number of 8's in decimal expansion of n^2.
 * [A086017](http://oeis.org/A086017) ([program](086/A086017.asm)): Number of 9's in decimal expansion of n^2.
 * [A086020](http://oeis.org/A086020) ([program](086/A086020.asm)): a(n) = Sum_(i=1..n) C(i+2,3)^2 [ Sequential sums of the tetragonal numbers or "tetras" (pyramidal, square) raised to power 2 (drawn from the 4th diagonal - left or right - of Pascal's Triangle) ].
 * [A086021](http://oeis.org/A086021) ([program](086/A086021.asm)): a(n) = Sum_{i=1..n} C(i+2,3)^3.

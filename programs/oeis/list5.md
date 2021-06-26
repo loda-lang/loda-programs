@@ -1343,6 +1343,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A270704](http://oeis.org/A270704) ([program](270/A270704.asm)): Even 14-gonal (or tetradecagonal) numbers.
 * [A270710](http://oeis.org/A270710) ([program](270/A270710.asm)): a(n) = 3*n^2 + 2*n - 1.
 * [A270740](http://oeis.org/A270740) ([program](270/A270740.asm)): Period 9: repeat 0,1,2,2,0,1,1,2,0.
+* [A270742](http://oeis.org/A270742) ([program](270/A270742.asm)): Binary expansion of C = (1/2)*(3/4)*(7/8)*(15/16)... .
 * [A270743](http://oeis.org/A270743) ([program](270/A270743.asm)): Runlength sequence of the zero-one sequence A270742.
 * [A270775](http://oeis.org/A270775) ([program](270/A270775.asm)): a(n) is the number of invertible 2 X 2 upper triangular matrices over Z_p where p = prime(n).
 * [A270788](http://oeis.org/A270788) ([program](270/A270788.asm)): Unique fixed point of the 3-symbol Fibonacci morphism phi-hat_2.
@@ -2960,6 +2961,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297662](http://oeis.org/A297662) ([program](297/A297662.asm)): Number of chordless cycles in the complete tripartite graph K_n,n,n.
 * [A297663](http://oeis.org/A297663) ([program](297/A297663.asm)): a(n) = 5*n + 2^n.
 * [A297675](http://oeis.org/A297675) ([program](297/A297675.asm)): a(n) = 3*(n^2+n-4)/2.
+* [A297792](http://oeis.org/A297792) ([program](297/A297792.asm)): a(n) = Sum_{d|n} min(d, n/d)^2.
 * [A297928](http://oeis.org/A297928) ([program](297/A297928.asm)): a(n) = 2*4^n + 3*2^n - 1.
 * [A297996](http://oeis.org/A297996) ([program](297/A297996.asm)): a(1)=2, a(2)=3, a(3)=5 and a(n) = (a(1) + a(2) + a(3) + ... + a(n-1))/a(n-1).
 * [A298011](http://oeis.org/A298011) ([program](298/A298011.asm)): If n = Sum_{i=1..h} 2^b_i with 0 <= b_1 < ... < b_h, then a(n) = Sum_{i=1..h} i * 2^b_i.

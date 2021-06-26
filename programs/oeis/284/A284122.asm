@@ -3,7 +3,6 @@
 
 mov $1,$0
 trn $0,1
-cal $0,187107 ; Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
+cal $0,71 ; a(n) = Fibonacci(n) - 1.
 add $1,$0
-sub $1,8
 mul $1,2
