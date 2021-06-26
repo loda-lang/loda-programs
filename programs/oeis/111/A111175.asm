@@ -3,6 +3,4 @@
 
 cal $0,132230 ; Primes congruent to 1 (mod 30).
 mov $1,$0
-sub $1,31
 div $1,30
-add $1,1

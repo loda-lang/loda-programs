@@ -938,7 +938,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005565](http://oeis.org/A005565) ([program](005/A005565.asm)): Number of walks on square lattice.
 * [A005570](http://oeis.org/A005570) ([program](005/A005570.asm)): Number of walks on cubic lattice.
 * [A005571](http://oeis.org/A005571) ([program](005/A005571.asm)): Number of walks on cubic lattice.
-* [A005574](http://oeis.org/A005574) ([program](005/A005574.asm)): Numbers k such that k^2 + 1 is prime.
 * [A005578](http://oeis.org/A005578) ([program](005/A005578.asm)): a(2*n) = 2*a(2*n-1), a(2*n+1) = 2*a(2*n)-1.
 * [A005581](http://oeis.org/A005581) ([program](005/A005581.asm)): a(n) = (n-1)*n*(n+4)/6.
 * [A005582](http://oeis.org/A005582) ([program](005/A005582.asm)): a(n) = n*(n+1)*(n+2)*(n+7)/24.
@@ -3407,7 +3406,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024924](http://oeis.org/A024924) ([program](024/A024924.asm)): a(n) = Sum_{k=1..n} prime(k)*floor(n/prime(k)).
 * [A024925](http://oeis.org/A024925) ([program](024/A024925.asm)): Sum of remainders of n mod prime(k), for k = 1,2,3,...,n.
 * [A024926](http://oeis.org/A024926) ([program](024/A024926.asm)): a(n) = Sum_{k=1..n} floor(p(k)/k).
-* [A024927](http://oeis.org/A024927) ([program](024/A024927.asm)): a(n) = Sum_{k=1..n} k*floor( prime(k)/k ).
 * [A024930](http://oeis.org/A024930) ([program](024/A024930.asm)): a(n) = sum of remainders of n mod 1,3,5,...,2k-1, where k = [ (n+1)/2 ].
 * [A024935](http://oeis.org/A024935) ([program](024/A024935.asm)): a(n) = minimal length of any partition of n into distinct primes.
 * [A024966](http://oeis.org/A024966) ([program](024/A024966.asm)): 7 times triangular numbers: 7*n*(n+1)/2.
@@ -4293,7 +4291,15 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033040](http://oeis.org/A033040) ([program](033/A033040.asm)): Numbers all of whose base 15 digits are odd.
 * [A033041](http://oeis.org/A033041) ([program](033/A033041.asm)): Numbers all of whose base 16 digits are odd.
 * [A033042](http://oeis.org/A033042) ([program](033/A033042.asm)): Sums of distinct powers of 5.
+* [A033043](http://oeis.org/A033043) ([program](033/A033043.asm)): Sums of distinct powers of 6.
+* [A033044](http://oeis.org/A033044) ([program](033/A033044.asm)): Sums of distinct powers of 7.
 * [A033045](http://oeis.org/A033045) ([program](033/A033045.asm)): Sums of distinct powers of 8.
+* [A033046](http://oeis.org/A033046) ([program](033/A033046.asm)): Sums of distinct powers of 9.
+* [A033047](http://oeis.org/A033047) ([program](033/A033047.asm)): Sums of distinct powers of 11.
+* [A033048](http://oeis.org/A033048) ([program](033/A033048.asm)): Sums of distinct powers of 12.
+* [A033050](http://oeis.org/A033050) ([program](033/A033050.asm)): Numbers whose set of base 14 digits is {0,1}.
+* [A033051](http://oeis.org/A033051) ([program](033/A033051.asm)): Numbers whose set of base 15 digits is {0,1}.
+* [A033052](http://oeis.org/A033052) ([program](033/A033052.asm)): a(1) = 1, a(2n) = 16a(n), a(2n+1) = a(2n)+1.
 * [A033061](http://oeis.org/A033061) ([program](033/A033061.asm)): Numbers whose base-10 representation Sum_{i=0..m} d(i)*10^i has odd d(i) for all odd i.
 * [A033062](http://oeis.org/A033062) ([program](033/A033062.asm)): Numbers whose base-11 representation Sum_{i=0..m} d(i)*11^i has odd d(i) for all odd i.
 * [A033063](http://oeis.org/A033063) ([program](033/A033063.asm)): Numbers whose base-12 representation Sum_{i=0..m} d(i)*12^i has odd d(i) for all odd i.
@@ -4645,6 +4651,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A035178](http://oeis.org/A035178) ([program](035/A035178.asm)): a(n) = Sum_{d|n} Kronecker(-12, d) (= A134667(d)).
 * [A035187](http://oeis.org/A035187) ([program](035/A035187.asm)): Sum over divisors d of n of Kronecker symbol (5|d).
 * [A035191](http://oeis.org/A035191) ([program](035/A035191.asm)): Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 9.
+* [A035202](http://oeis.org/A035202) ([program](035/A035202.asm)): Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 20.
 * [A035207](http://oeis.org/A035207) ([program](035/A035207.asm)): Coefficients in expansion of Dirichlet series Product_p (1 - (Kronecker(m,p) + 1)*p^(-s) + Kronecker(m,p)*p^(-2s))^(-1) for m = 25.
 * [A035214](http://oeis.org/A035214) ([program](035/A035214.asm)): 2 followed by a run of n 1's.
 * [A035218](http://oeis.org/A035218) ([program](035/A035218.asm)): Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 36.
@@ -4657,6 +4664,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A035289](http://oeis.org/A035289) ([program](035/A035289.asm)): Number of ways to place a non-attacking white and black knight on n X n chessboard.
 * [A035290](http://oeis.org/A035290) ([program](035/A035290.asm)): Number of ways to place a non-attacking white and black pawn on n X n chessboard.
 * [A035291](http://oeis.org/A035291) ([program](035/A035291.asm)): Number of ways to place a non-attacking white and black queen on n X n chessboard.
+* [A035316](http://oeis.org/A035316) ([program](035/A035316.asm)): Sum of the square divisors of n.
 * [A035327](http://oeis.org/A035327) ([program](035/A035327.asm)): Write n in binary, interchange 0's and 1's, convert back to decimal.
 * [A035328](http://oeis.org/A035328) ([program](035/A035328.asm)): a(n) = n*(2*n-1)*(2*n+1).
 * [A035329](http://oeis.org/A035329) ([program](035/A035329.asm)): a(n) = n*(2*n+5)*(2*n+7).

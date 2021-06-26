@@ -3,5 +3,4 @@
 
 cal $0,141852 ; Primes congruent to 5 mod 11.
 mov $1,$0
-mul $1,2
-div $1,22
+div $1,11

@@ -1257,6 +1257,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A220101](http://oeis.org/A220101) ([program](220/A220101.asm)): Number of ordered set partitions of {1,...,n} into n-1 blocks avoiding the pattern 123.
 * [A220104](http://oeis.org/A220104) ([program](220/A220104.asm)): n appears n*(n+1) times.
 * [A220105](http://oeis.org/A220105) ([program](220/A220105.asm)): 2^(n-1) mod n^2.
+* [A220114](http://oeis.org/A220114) ([program](220/A220114.asm)): Largest k >= 0 such that k = n - x - y where n = x*y, x > 0, y > 0, or -1 if no such k exists.
 * [A220128](http://oeis.org/A220128) ([program](220/A220128.asm)): 1 followed by period 6: (1, 3, 2, 3, 1, 4) repeated; offset 0.
 * [A220129](http://oeis.org/A220129) ([program](220/A220129.asm)): 1 followed by period 12: (1, 5, 3, 9, 1, 7, 1, 9, 3, 5, 1, 11) repeated; offset 0.
 * [A220147](http://oeis.org/A220147) ([program](220/A220147.asm)): Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 n X 2 array.
@@ -2101,7 +2102,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A238473](http://oeis.org/A238473) ([program](238/A238473.asm)): C(5*n+8, 4)/5 for n>= 0.
 * [A238477](http://oeis.org/A238477) ([program](238/A238477.asm)): a(n) = 32*n - 27 for n >= 1. Second column of triangle A238475.
 * [A238497](http://oeis.org/A238497) ([program](238/A238497.asm)): Cubefree Fibonacci numbers.
-* [A238526](http://oeis.org/A238526) ([program](238/A238526.asm)): Record values of A238525.
 * [A238531](http://oeis.org/A238531) ([program](238/A238531.asm)): Expansion of (1 - x + x^2)^2 / (1 - x)^3 in powers of x.
 * [A238533](http://oeis.org/A238533) ([program](238/A238533.asm)): Number of solutions to gcd(x^2 + y^2 + z^2 + t^2 + h^2, n) = 1 with x,y,z,t,h in [0,n-1].
 * [A238549](http://oeis.org/A238549) ([program](238/A238549.asm)): a(n) is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).
@@ -2632,7 +2632,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246839](http://oeis.org/A246839) ([program](246/A246839.asm)): Number of trailing zeros in A002109(n).
 * [A246930](http://oeis.org/A246930) ([program](246/A246930.asm)): Prime(12*n).
 * [A246931](http://oeis.org/A246931) ([program](246/A246931.asm)): Prime(14*n).
-* [A246933](http://oeis.org/A246933) ([program](246/A246933.asm)): Prime(16*n).
 * [A246934](http://oeis.org/A246934) ([program](246/A246934.asm)): The closest square to n-th prime.
 * [A246943](http://oeis.org/A246943) ([program](246/A246943.asm)): a(4n) = 4*n , a(2n+1) = 8*n+4 , a(4n+2) = 2*n+1.
 * [A246960](http://oeis.org/A246960) ([program](246/A246960.asm)): Directions of the lines in the (Heighway) Dragon Curve.

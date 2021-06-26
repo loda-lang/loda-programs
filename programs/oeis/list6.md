@@ -1665,7 +1665,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332994](http://oeis.org/A332994) ([program](332/A332994.asm)): a(1) = 1, for n > 1, a(n) = n + a(A052126(n)).
 * [A333167](http://oeis.org/A333167) ([program](333/A333167.asm)): a(n) = r_2(n^2 + 1), where r_2(k) is the number of ways of writing k as a sum of 2 squares (A004018).
 * [A333169](http://oeis.org/A333169) ([program](333/A333169.asm)): a(n) = phi(n^2 + 1), where phi is the Euler totient function (A000010).
-* [A333172](http://oeis.org/A333172) ([program](333/A333172.asm)): a(n) = Sum_{k=0..n} sigma(k^2 + 1), where sigma(k) is the sum of divisors of k (A000203).
 * [A333173](http://oeis.org/A333173) ([program](333/A333173.asm)): a(n) = r_4(n^2 + 1), where r_4(k) is the number of ways of writing k as a sum of 4 squares (A000118).
 * [A333174](http://oeis.org/A333174) ([program](333/A333174.asm)): a(n) = Sum_{k=0..n} r_4(k^2 + 1), where r_4(k) is the number of ways of writing k as a sum of 4 squares (A000118).
 * [A333175](http://oeis.org/A333175) ([program](333/A333175.asm)): If n = Product (p_j^k_j) then a(n) = Sum (a(n/p_j^k_j)), with a(1) = 1.
@@ -2147,4 +2146,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345111](http://oeis.org/A345111) ([program](345/A345111.asm)): a(n) = n + A345110(n).
 * [A345211](http://oeis.org/A345211) ([program](345/A345211.asm)): Numbers with the same number of odd / even, refactorable divisors.
 * [A345280](http://oeis.org/A345280) ([program](345/A345280.asm)): a(n) = Sum_{p|n} nextprime(p), where nextprime(n) is the smallest prime > n.
+* [A345493](http://oeis.org/A345493) ([program](345/A345493.asm)): Numbers that are the sum of eight squares in six or more ways.
 * [A345502](http://oeis.org/A345502) ([program](345/A345502.asm)): Numbers that are the sum of nine squares in five or more ways.
+* [A345701](http://oeis.org/A345701) ([program](345/A345701.asm)): a(n) = 3*n^3 - 1.

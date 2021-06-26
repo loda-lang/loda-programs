@@ -2603,6 +2603,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071289](http://oeis.org/A071289) ([program](071/A071289.asm)): a(n) = n*(n^2 + 1) if n is even, otherwise (n - 1/2)*(n^2 + 1).
 * [A071317](http://oeis.org/A071317) ([program](071/A071317.asm)): a(n) = a(n-1) + sum of digits of n^2.
 * [A071325](http://oeis.org/A071325) ([program](071/A071325.asm)): Number of squares > 1 dividing n.
+* [A071326](http://oeis.org/A071326) ([program](071/A071326.asm)): Sum of squares > 1 dividing n.
 * [A071328](http://oeis.org/A071328) ([program](071/A071328.asm)): Smallest prime q such that q - prime(n) >= n.
 * [A071355](http://oeis.org/A071355) ([program](071/A071355.asm)): a(n) = 2*n^2 + 11*n + 12.
 * [A071374](http://oeis.org/A071374) ([program](071/A071374.asm)): 0 iff n is of the form 4^a*(8k+7), otherwise 1.
@@ -5453,8 +5454,16 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A097164](http://oeis.org/A097164) ([program](097/A097164.asm)): Expansion of (1+3x)/((1-x)(1-4x^2)).
 * [A097165](http://oeis.org/A097165) ([program](097/A097165.asm)): Expansion of (1-3x)/((1-x)(1-4x)(1-5x)).
 * [A097251](http://oeis.org/A097251) ([program](097/A097251.asm)): Numbers whose set of base 5 digits is {0,4}.
+* [A097252](http://oeis.org/A097252) ([program](097/A097252.asm)): Numbers whose set of base 6 digits is {0,5}.
+* [A097253](http://oeis.org/A097253) ([program](097/A097253.asm)): Numbers whose set of base 7 digits is {0,6}.
 * [A097254](http://oeis.org/A097254) ([program](097/A097254.asm)): Numbers whose set of base 8 digits is {0,7}.
+* [A097255](http://oeis.org/A097255) ([program](097/A097255.asm)): Numbers whose set of base 9 digits is {0,8}.
 * [A097256](http://oeis.org/A097256) ([program](097/A097256.asm)): Numbers whose set of base 10 digits is {0,9}.
+* [A097257](http://oeis.org/A097257) ([program](097/A097257.asm)): Numbers whose set of base 11 digits is {0,A}, where A base 11 = 10 base 10.
+* [A097258](http://oeis.org/A097258) ([program](097/A097258.asm)): Numbers whose set of base 12 digits is {0,B}, where B base 12 = 11 base 10.
+* [A097260](http://oeis.org/A097260) ([program](097/A097260.asm)): Numbers whose set of base 14 digits is {0,D}, where D base 14 = 13 base 10.
+* [A097261](http://oeis.org/A097261) ([program](097/A097261.asm)): Numbers whose set of base 15 digits is {0,E}, where E base 15 = 14 base 10.
+* [A097262](http://oeis.org/A097262) ([program](097/A097262.asm)): Numbers whose set of base 16 digits is {0,F}, where F base 16 = 15 base 10.
 * [A097280](http://oeis.org/A097280) ([program](097/A097280.asm)): Perimeter of integer triangle (A001611(n), A001611(n+1), A001611(n+2)).
 * [A097297](http://oeis.org/A097297) ([program](097/A097297.asm)): Seventh column (m=6) of (1,6)-Pascal triangle A096956.
 * [A097298](http://oeis.org/A097298) ([program](097/A097298.asm)): Eighth column (m=7) of (1,6)-Pascal triangle A096956.

@@ -3160,6 +3160,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A177756](http://oeis.org/A177756) ([program](177/A177756.asm)): Number of ways to place 3 nonattacking bishops on an n X n toroidal board.
 * [A177769](http://oeis.org/A177769) ([program](177/A177769.asm)): a(n) = 111*n.
 * [A177787](http://oeis.org/A177787) ([program](177/A177787.asm)): Number of paths from (0,0) to (n+2,n) using only up and right steps and avoiding two or more consecutive moves up or three or more consecutive moves right.
+* [A177853](http://oeis.org/A177853) ([program](177/A177853.asm)): Partial sums of A018805.
 * [A177863](http://oeis.org/A177863) ([program](177/A177863.asm)): Product modulo p of the quadratic nonresidues of p, where p = prime(n).
 * [A177881](http://oeis.org/A177881) ([program](177/A177881.asm)): Partial sums of round(3^n/10).
 * [A177883](http://oeis.org/A177883) ([program](177/A177883.asm)): Period 6: repeat [4, 5, 7, 2, 1, 8].
@@ -4229,6 +4230,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188087](http://oeis.org/A188087) ([program](188/A188087.asm)): Positions of 0 in A188086; complement of A188088.
 * [A188088](http://oeis.org/A188088) ([program](188/A188088.asm)): Positions of 1 in A188086; complement of A188087.
 * [A188089](http://oeis.org/A188089) ([program](188/A188089.asm)): Positions of 0 in the zero-one sequence [nr+4r]-[nr]-[4r], where r=sqrt(3), n>=1.
+* [A188090](http://oeis.org/A188090) ([program](188/A188090.asm)): [nr+kr]-[nr]-[kr], where r=sqrt(3), k=5, [ ]=floor.
 * [A188123](http://oeis.org/A188123) ([program](188/A188123.asm)): Number of strictly increasing arrangements of 4 nonzero numbers in -(n+2)..(n+2) with sum zero.
 * [A188129](http://oeis.org/A188129) ([program](188/A188129.asm)): a(n) = (2^n+3)^2-8.
 * [A188134](http://oeis.org/A188134) ([program](188/A188134.asm)): a(4*n) = n, a(1+2*n) = 4+8*n, a(2+4*n) = 2+4*n.

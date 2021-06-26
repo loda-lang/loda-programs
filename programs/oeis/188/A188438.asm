@@ -1,12 +1,11 @@
 ; A188438: Positions of 1 in A188436; complement of A188437.
 ; 8,16,21,29,37,42,50,55,63,71,76,84,92,97,105,110,118,126,131,139,144,152,160,165,173,181,186,194,199,207,215,220,228,236,241,249,254,262,270,275,283,288,296,304,309,317,325,330,338,343,351,359,364,372,377,385,393,398
 
-mov $1,$0
 add $0,1
-cal $0,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
 mov $2,$0
-add $2,2
-add $1,$2
-div $1,2
-add $1,$0
-add $1,1
+cal $0,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
+add $0,$2
+mul $0,55
+div $0,34
+mov $1,$0
+add $1,2

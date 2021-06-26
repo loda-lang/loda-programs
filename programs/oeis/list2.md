@@ -131,6 +131,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100542](http://oeis.org/A100542) ([program](100/A100542.asm)): Two-color Rado numbers R(0,n).
 * [A100545](http://oeis.org/A100545) ([program](100/A100545.asm)): Expansion of (7-2*x) / (1-3*x+x^2).
 * [A100555](http://oeis.org/A100555) ([program](100/A100555.asm)): Smallest square that is equal to the sum of n not-necessarily-distinct primes plus 1.
+* [A100567](http://oeis.org/A100567) ([program](100/A100567.asm)): Prime-indexed primes as n runs through the integers congruent to 0 or 1 mod 3.
 * [A100571](http://oeis.org/A100571) ([program](100/A100571.asm)): Cubes m^3 such that m^3 is the sum of m-1 consecutive primes plus a larger prime.
 * [A100575](http://oeis.org/A100575) ([program](100/A100575.asm)): Half the number of permutations of 0..n with exactly two maxima.
 * [A100577](http://oeis.org/A100577) ([program](100/A100577.asm)): Number of sets of divisors of n with an odd sum.
@@ -901,6 +902,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A108228](http://oeis.org/A108228) ([program](108/A108228.asm)): (A003961(n) - 1)/2, a permutation of the nonnegative integers.
 * [A108229](http://oeis.org/A108229) ([program](108/A108229.asm)): n occurs Lucas number L(n) times (A000204).
 * [A108232](http://oeis.org/A108232) ([program](108/A108232.asm)): Numbers n such that 11*n - 7 is prime.
+* [A108233](http://oeis.org/A108233) ([program](108/A108233.asm)): Numbers n such that 11*n + 5 is prime.
 * [A108245](http://oeis.org/A108245) ([program](108/A108245.asm)): If n-th prime is 4m - 1, then a(n) = 4m + 1. If n-th prime is 4m + 1, then a(n) = 4m - 1.
 * [A108261](http://oeis.org/A108261) ([program](108/A108261.asm)): 2nd order recursive series having the property that the product of any two adjacent terms is a triangular number, T(b) = b(b+1)/2 where b equals term a(n) of related series A108262.
 * [A108262](http://oeis.org/A108262) ([program](108/A108262.asm)): Second order recursive series having the property that the product of any two adjacent terms equals 4 times a triangular number. That is a(n)*a(n+1)= 4*T(c) = 2c(c+1), where c = the term a(n+1) of related series A108261.
@@ -1376,7 +1378,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A112983](http://oeis.org/A112983) ([program](112/A112983.asm)): 2^(n+1) mod n.
 * [A112986](http://oeis.org/A112986) ([program](112/A112986.asm)): Crossing number of K_{4,n} on the real projective plane.
 * [A112988](http://oeis.org/A112988) ([program](112/A112988.asm)): Position of n-th prime in A089088.
-* [A112997](http://oeis.org/A112997) ([program](112/A112997.asm)): Sum of first n primes minus sum of their indices.
 * [A113009](http://oeis.org/A113009) ([program](113/A113009.asm)): {Sum of the digits of n} raised to the power {number of digits of n}.
 * [A113010](http://oeis.org/A113010) ([program](113/A113010.asm)): {Number of digits of n} raised to the power of {the sum of the digits of n}.
 * [A113022](http://oeis.org/A113022) ([program](113/A113022.asm)): a(n) = size of union of 2^k (mod 10^n), 0 < k <= 5^n.
@@ -2551,7 +2552,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A126560](http://oeis.org/A126560) ([program](126/A126560.asm)): a(n) = gcd(4(n+1)(n+2), n(n+3)), periodic with 8-cycle 4,2,2,4,8,2,2,8.
 * [A126562](http://oeis.org/A126562) ([program](126/A126562.asm)): Number of intersections of at least four edges in a cube of n X n X n smaller cubes.
 * [A126587](http://oeis.org/A126587) ([program](126/A126587.asm)): a(n) is the number of integer lattice points inside the right triangle with legs 3n and 4n (and hypotenuse 5n).
-* [A126588](http://oeis.org/A126588) ([program](126/A126588.asm)): a(n) = prime(13*n).
 * [A126592](http://oeis.org/A126592) ([program](126/A126592.asm)): Sum of numbers less than or equal to n which are multiples of 3 or 5.
 * [A126605](http://oeis.org/A126605) ([program](126/A126605.asm)): Final three digits of 2^n.
 * [A126644](http://oeis.org/A126644) ([program](126/A126644.asm)): a(n) is the number of integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4,5,6 and at least one of digits 7,8,9.
