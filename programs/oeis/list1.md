@@ -3316,7 +3316,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A078642](http://oeis.org/A078642) ([program](078/A078642.asm)): Numbers with two representations as the sum of two Fibonacci numbers.
 * [A078644](http://oeis.org/A078644) ([program](078/A078644.asm)): a(n) = tau(2*n^2)/2.
 * [A078651](http://oeis.org/A078651) ([program](078/A078651.asm)): Number of geometric subsequences of [1,...,n] with integral successive-term ratio and length >= 1.
-* [A078653](http://oeis.org/A078653) ([program](078/A078653.asm)): a(n) = prime(k) where k = n-th prime congruent to 1 mod 4.
 * [A078677](http://oeis.org/A078677) ([program](078/A078677.asm)): Write n in binary; repeatedly sum the "digits" until reaching 1; a(n) = sum of these sums (including '1' and n itself).
 * [A078683](http://oeis.org/A078683) ([program](078/A078683.asm)): Least prime of the form n*2^m+1 for m>0, or 0 if there is no such prime.
 * [A078685](http://oeis.org/A078685) ([program](078/A078685.asm)): Minimum value of |prime(n) - 2^x|.
@@ -4838,7 +4837,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A090670](http://oeis.org/A090670) ([program](090/A090670.asm)): Odd numbers k such that 2*k-3 is a prime of the form 4*j+3.
 * [A090671](http://oeis.org/A090671) ([program](090/A090671.asm)): Decreases from 10^k - 1 down to 1, restarting at 10^(k+1) - 1, for k >= 1.
 * [A090678](http://oeis.org/A090678) ([program](090/A090678.asm)): a(n) = A088567(n) mod 2.
-* [A090693](http://oeis.org/A090693) ([program](090/A090693.asm)): Positive numbers n such that n^2 - 2n + 2 is a prime.
 * [A090702](http://oeis.org/A090702) ([program](090/A090702.asm)): a(n) is the minimal number k such that every binary word of length n can be transformed into a palindrome or an antipalindrome by deleting at most k letters.
 * [A090739](http://oeis.org/A090739) ([program](090/A090739.asm)): Exponent of 2 in 9^n - 1.
 * [A090740](http://oeis.org/A090740) ([program](090/A090740.asm)): Exponent of 2 in 3^n - 1.

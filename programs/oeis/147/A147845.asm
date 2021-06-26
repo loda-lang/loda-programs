@@ -4,6 +4,5 @@
 add $0,8190
 cal $0,32929 ; Numbers whose set of base 8 digits is {1,2}.
 mov $1,$0
-sub $1,78536544841
-mul $1,2
-add $1,1
+add $1,$0
+sub $1,157073089681

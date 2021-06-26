@@ -9,8 +9,4 @@ add $1,$0
 mod $0,4
 add $1,2
 sub $1,$0
-sub $1,2
-mul $1,2
-sub $1,6
-div $1,2
-add $1,1
+sub $1,4

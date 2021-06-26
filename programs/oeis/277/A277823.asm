@@ -5,6 +5,5 @@ cal $0,4767 ; a(n) = 4*n + 3.
 mul $0,2
 cal $0,64706 ; Square of permutation defined by A003188.
 mov $1,$0
-sub $1,7
-div $1,2
-add $1,3
+mul $1,4
+div $1,8

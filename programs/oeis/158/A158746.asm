@@ -3,6 +3,4 @@
 
 cal $0,132233 ; Primes congruent to 13 (mod 30).
 mov $1,$0
-div $1,3
-mul $1,2
-div $1,20
+div $1,30

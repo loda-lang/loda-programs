@@ -323,7 +323,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256432](http://oeis.org/A256432) ([program](256/A256432.asm)): Characteristic function of octahedral numbers.
 * [A256436](http://oeis.org/A256436) ([program](256/A256436.asm)): Characteristic function of pentatope numbers.
 * [A256455](http://oeis.org/A256455) ([program](256/A256455.asm)): Numbers that appear at least once in a Pythagorean triple (a, b, b+1).
-* [A256491](http://oeis.org/A256491) ([program](256/A256491.asm)): a(n) = prime(prime(n) + n - 2).
 * [A256494](http://oeis.org/A256494) ([program](256/A256494.asm)): Expansion of -x^2*(x^3+x-1) / ((x-1)*(x+1)*(2*x-1)*(x^2+1)).
 * [A256524](http://oeis.org/A256524) ([program](256/A256524.asm)): Number of partitions of 3n into at most 4 parts.
 * [A256525](http://oeis.org/A256525) ([program](256/A256525.asm)): Number of partitions of 3n into at most 5 parts.
@@ -392,7 +391,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257198](http://oeis.org/A257198) ([program](257/A257198.asm)): Number of permutations of length n having exactly one descent such that the first element of the permutation is an odd number.
 * [A257199](http://oeis.org/A257199) ([program](257/A257199.asm)): a(n) =  n*(n+1)*(n+2)*(n^2+2*n+17)/120.
 * [A257200](http://oeis.org/A257200) ([program](257/A257200.asm)): a(n) = n*(n+1)*(n+2)*(n+3)*(n^2+3*n+26)/720.
-* [A257201](http://oeis.org/A257201) ([program](257/A257201.asm)): a(n) =  n*(n+1)*(n+2)*(n+3)*(n+4)*(n^2+4*n+37)/5040.
 * [A257212](http://oeis.org/A257212) ([program](257/A257212.asm)): Least d>0 such that floor(n/d) - floor(n/(d+1)) <= 1.
 * [A257213](http://oeis.org/A257213) ([program](257/A257213.asm)): Least d>0 such that floor(n/d) = floor(n/(d+1)).
 * [A257272](http://oeis.org/A257272) ([program](257/A257272.asm)): a(n) = 2^(n-1)*(2^n+7).
@@ -2214,7 +2212,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285201](http://oeis.org/A285201) ([program](285/A285201.asm)): Stage at which Ken Knowlton's elevator (version 1) reaches floor n for the first time.
 * [A285203](http://oeis.org/A285203) ([program](285/A285203.asm)): Local high points in A285200.
 * [A285204](http://oeis.org/A285204) ([program](285/A285204.asm)): Row lengths of triangle A285202.
-* [A285269](http://oeis.org/A285269) ([program](285/A285269.asm)): Number of (odd) primes between 2*n^2 and 2*(n+1)^2.
 * [A285305](http://oeis.org/A285305) ([program](285/A285305.asm)): Fixed point of the morphism 0 -> 10, 1 -> 1001.
 * [A285306](http://oeis.org/A285306) ([program](285/A285306.asm)): Positions of 0 in A285305; complement of A285307.
 * [A285307](http://oeis.org/A285307) ([program](285/A285307.asm)): Positions of 1 in A285305; complement of A285306.

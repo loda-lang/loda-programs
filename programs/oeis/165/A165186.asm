@@ -4,7 +4,6 @@
 add $0,1
 mov $2,$0
 lpb $0
-  mov $3,$2
   pow $3,5
   cmp $3,$2
   cmp $3,0

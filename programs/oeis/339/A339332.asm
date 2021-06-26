@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,283683 ; Unique sequence with a(1)=0, a(2)=1, representing an array T(i,j) read by antidiagonals in which every row is this sequence itself.
   sub $0,1
+  cal $2,283683 ; Unique sequence with a(1)=0, a(2)=1, representing an array T(i,j) read by antidiagonals in which every row is this sequence itself.
   add $1,$2
 lpe

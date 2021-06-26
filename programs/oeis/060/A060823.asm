@@ -5,9 +5,8 @@ mov $3,1
 lpb $0
   mov $2,$0
   add $0,$3
-  sub $0,2
+  sub $0,3
   cal $2,123941 ; The (1,2)-entry in the 3 X 3 matrix M^n, where M = {{2, 1, 1}, {1, 1, 0}, {1, 0, 0}}.
-  sub $0,1
   add $1,$2
 lpe
 mul $1,2
