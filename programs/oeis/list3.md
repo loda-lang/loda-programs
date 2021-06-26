@@ -1577,6 +1577,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164136](http://oeis.org/A164136) ([program](164/A164136.asm)): a(n) = 11*n*(n+1).
 * [A164143](http://oeis.org/A164143) ([program](164/A164143.asm)): Number of binary strings of length n with equal numbers of 001 and 100 substrings
 * [A164265](http://oeis.org/A164265) ([program](164/A164265.asm)): Partial sums of A162766.
+* [A164281](http://oeis.org/A164281) ([program](164/A164281.asm)): Triangle read by rows, a Petoukhov sequence (cf. A164279) generated from (1,2).
 * [A164284](http://oeis.org/A164284) ([program](164/A164284.asm)): a(n) = 15*n-7.
 * [A164285](http://oeis.org/A164285) ([program](164/A164285.asm)): a(n) = 7*2^n + 3.
 * [A164298](http://oeis.org/A164298) ([program](164/A164298.asm)): a(n) = ((1+4*sqrt(2))*(2+sqrt(2))^n + (1-4*sqrt(2))*(2-sqrt(2))^n)/2.
@@ -2973,6 +2974,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175676](http://oeis.org/A175676) ([program](175/A175676.asm)): a(n) = binomial(n,3) mod n.
 * [A175677](http://oeis.org/A175677) ([program](175/A175677.asm)): Binomial(n,4) mod n.
 * [A175724](http://oeis.org/A175724) ([program](175/A175724.asm)): Partial sums of floor(n^2/12).
+* [A175747](http://oeis.org/A175747) ([program](175/A175747.asm)): Numbers with 38 divisors.
 * [A175753](http://oeis.org/A175753) ([program](175/A175753.asm)): Numbers with 46 divisors.
 * [A175776](http://oeis.org/A175776) ([program](175/A175776.asm)): Partial sums of floor(n^2/15).
 * [A175777](http://oeis.org/A175777) ([program](175/A175777.asm)): Partial sums of floor(n^2/16).
@@ -3091,6 +3093,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176808](http://oeis.org/A176808) ([program](176/A176808.asm)): Triangle read by rows: T(n,m)=Floor[(n - 1)/m], 1<=m<=n.
 * [A176814](http://oeis.org/A176814) ([program](176/A176814.asm)): The number of iterations needed to reach 1 under the map n-> n-bigomega(n)).
 * [A176816](http://oeis.org/A176816) ([program](176/A176816.asm)): The number of steps to reach 0 under the map x -> x-tau(sigma(x)), starting at n.
+* [A176835](http://oeis.org/A176835) ([program](176/A176835.asm)): Number of positive integers k for which k^2 - n*k is a square.
 * [A176839](http://oeis.org/A176839) ([program](176/A176839.asm)): The number of iterations to reach 1 under the map x -> x-tau(phi(x)), starting at n.
 * [A176841](http://oeis.org/A176841) ([program](176/A176841.asm)): a(n) is the number of iterations of f(n) = n-phi(tau(n)) needed to reach 1.
 * [A176844](http://oeis.org/A176844) ([program](176/A176844.asm)): The number of iterations of the map n -> n - bigomega(sigma(n)) until reaching 1.

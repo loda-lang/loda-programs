@@ -3,7 +3,7 @@
 
 add $0,1
 pow $0,2
-cal $0,101776 ; Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
+mul $0,2
+cal $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+mod $0,2
 mov $1,$0
-sub $1,1
-mod $1,2

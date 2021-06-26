@@ -8,7 +8,4 @@ pow $0,2
 sub $0,5
 pow $0,2
 mov $1,$0
-sub $1,121
-div $1,96
-mul $1,96
-add $1,105
+sub $1,16

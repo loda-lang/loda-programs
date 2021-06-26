@@ -114,6 +114,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A253210](http://oeis.org/A253210) ([program](253/A253210.asm)): a(n) = 7^n + 6.
 * [A253262](http://oeis.org/A253262) ([program](253/A253262.asm)): Expansion of (x + x^2 + x^3) / (1 - x + x^2 - x^3 + x^4) in powers of x.
 * [A253285](http://oeis.org/A253285) ([program](253/A253285.asm)): a(n) = RF(n+1,3)*C(n+2,n-1), where RF(a,n) is the rising factorial.
+* [A253298](http://oeis.org/A253298) ([program](253/A253298.asm)): Digital root for the following sequences, F(4*n)/F(4); F(12*n)/F(12); F(20*n)/F(20), where the pattern increases by 8, ad infinitum, with the Fibonacci numbers F = A000045.
 * [A253430](http://oeis.org/A253430) ([program](253/A253430.asm)): Number of (n+1) X (3+1) 0..1 arrays with every 2 X 2 subblock diagonal minus antidiagonal sum nondecreasing horizontally, vertically and ne-to-sw antidiagonally.
 * [A253431](http://oeis.org/A253431) ([program](253/A253431.asm)): Number of (n+1) X (4+1) 0..1 arrays with every 2 X 2 subblock diagonal minus antidiagonal sum nondecreasing horizontally, vertically and ne-to-sw antidiagonally.
 * [A253432](http://oeis.org/A253432) ([program](253/A253432.asm)): Number of (n+1) X (5+1) 0..1 arrays with every 2 X 2 subblock diagonal minus antidiagonal sum nondecreasing horizontally, vertically and ne-to-sw antidiagonally.
@@ -315,6 +316,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256302](http://oeis.org/A256302) ([program](256/A256302.asm)): Least prime p such that p+3*k*(k+1) is prime for all k=0,...,n.
 * [A256309](http://oeis.org/A256309) ([program](256/A256309.asm)): Number of partitions of 2n into exactly 5 parts.
 * [A256313](http://oeis.org/A256313) ([program](256/A256313.asm)): Number of partitions of 3n into exactly 4 parts.
+* [A256314](http://oeis.org/A256314) ([program](256/A256314.asm)): Number of partitions of 3n into exactly 5 parts.
 * [A256316](http://oeis.org/A256316) ([program](256/A256316.asm)): Number of partitions of 4n into exactly 5 parts.
 * [A256320](http://oeis.org/A256320) ([program](256/A256320.asm)): Number of partitions of 4n into exactly 3 parts.
 * [A256321](http://oeis.org/A256321) ([program](256/A256321.asm)): Number of partitions of 5n into exactly 3 parts.

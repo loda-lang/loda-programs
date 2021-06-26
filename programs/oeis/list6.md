@@ -2096,6 +2096,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A343720](http://oeis.org/A343720) ([program](343/A343720.asm)): Triangle read by rows: T(n,k) = k^2 mod n for k = 0..n-1, n >= 1.
 * [A343754](http://oeis.org/A343754) ([program](343/A343754.asm)): a(n) = 0, and for any n > 0, a(n+1) = a(n) - A065363(n) + 1.
 * [A343785](http://oeis.org/A343785) ([program](343/A343785.asm)): a(n) is completely multiplicative with a(p^e) = (-1)^e if p == 2 (mod 3) and a(p^e) = 1 otherwise.
+* [A343794](http://oeis.org/A343794) ([program](343/A343794.asm)): Numbers k such that 630*k + 315 is not an abundant number (A005101).
 * [A343808](http://oeis.org/A343808) ([program](343/A343808.asm)): Partial sums of A062074.
 * [A343810](http://oeis.org/A343810) ([program](343/A343810.asm)): Numbers that contain only the digits 0,4,8. Permutable multiples of 4: numbers k such that every permutation of the digits of k is a multiple of 4.
 * [A343842](http://oeis.org/A343842) ([program](343/A343842.asm)): Series expansion of 1/sqrt(8*x^2 + 1), even powers only.

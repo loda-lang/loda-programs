@@ -4,9 +4,9 @@
 mul $0,2
 mov $2,$0
 max $0,1
-add $2,2
 cal $0,173919 ; Numbers that are prime or one less than a prime.
 mov $1,$0
+add $2,2
 lpb $2
   sub $1,1
   div $2,2

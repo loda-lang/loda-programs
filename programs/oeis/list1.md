@@ -3551,6 +3551,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080674](http://oeis.org/A080674) ([program](080/A080674.asm)): a(n) = (4/3)*(4^n - 1).
 * [A080675](http://oeis.org/A080675) ([program](080/A080675.asm)): a(n) = (5*4^n - 8)/6.
 * [A080676](http://oeis.org/A080676) ([program](080/A080676.asm)): a(1) = 1; for n>1, a(n) is the smallest number > a(n-1) such that the first n terms of the sequence contain a total of a(n) digits.
+* [A080679](http://oeis.org/A080679) ([program](080/A080679.asm)): Lexicographically earliest de Bruijn cycle of length 16 (repeated indefinitely)
 * [A080680](http://oeis.org/A080680) ([program](080/A080680.asm)): Integer part of the square root of the n-th prime of the form 4k+1.
 * [A080684](http://oeis.org/A080684) ([program](080/A080684.asm)): Number of 13-smooth numbers <= n.
 * [A080685](http://oeis.org/A080685) ([program](080/A080685.asm)): Number of 17-smooth numbers <= n.
@@ -3677,7 +3678,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081189](http://oeis.org/A081189) ([program](081/A081189.asm)): 7th binomial transform of (1,0,1,0,1,...), A059841.
 * [A081193](http://oeis.org/A081193) ([program](081/A081193.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n>1, a(0)=1, a(1)=9.
 * [A081199](http://oeis.org/A081199) ([program](081/A081199.asm)): 5th binomial transform of (0,1,0,1,...), A000035.
-* [A081200](http://oeis.org/A081200) ([program](081/A081200.asm)): 6th binomial transform of (0,1,0,1,0,1,....), A000035.
+* [A081200](http://oeis.org/A081200) ([program](081/A081200.asm)): 6th binomial transform of (0,1,0,1,0,1,...), A000035.
 * [A081201](http://oeis.org/A081201) ([program](081/A081201.asm)): 7th binomial transform of (0,1,0,1,0,1,....), A000035.
 * [A081204](http://oeis.org/A081204) ([program](081/A081204.asm)): Staircase on Pascal's triangle.
 * [A081205](http://oeis.org/A081205) ([program](081/A081205.asm)): Staircase on Pascal's triangle.

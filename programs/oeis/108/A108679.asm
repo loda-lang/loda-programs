@@ -7,5 +7,4 @@ add $1,$0
 cal $0,134287 ; Fifth column of triangle A103371 (without leading zeros).
 mul $0,$1
 mov $1,$0
-mul $1,11
-div $1,660
+div $1,60

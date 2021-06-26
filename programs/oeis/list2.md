@@ -1096,6 +1096,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109964](http://oeis.org/A109964) ([program](109/A109964.asm)): a(n) = floor(sqrt(sum_{i<n} a(i))), with a(0)=1.
 * [A109965](http://oeis.org/A109965) ([program](109/A109965.asm)): Sum_i {i<n} floor(sqrt(a(i))) with a(0) = 1.
 * [A109975](http://oeis.org/A109975) ([program](109/A109975.asm)): Second differences of A045623, prefixed by an initial 1.
+* [A110013](http://oeis.org/A110013) ([program](110/A110013.asm)): Squares of the form 4p + 5, where p is a prime.
 * [A110035](http://oeis.org/A110035) ([program](110/A110035.asm)): Row sums of an unsigned characteristic triangle for the Fibonacci numbers.
 * [A110090](http://oeis.org/A110090) ([program](110/A110090.asm)): Numerators of sequence of rationals defined by r(n) = n for n<=1 and for n>1: r(n) = (sum of denominators of r(n-1) and r(n-2))/(sum of numerators of r(n-1) and r(n-2)).
 * [A110091](http://oeis.org/A110091) ([program](110/A110091.asm)): Denominators of sequence of rationals defined by r(n) = n for n<=1 and for n>1: r(n) = (sum of denominators of r(n-1) and r(n-2))/(sum of numerators of r(n-1) and r(n-2)).
@@ -1617,6 +1618,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115836](http://oeis.org/A115836) ([program](115/A115836.asm)): Self-describing sequence. The n-th integer of the sequence indicates how many integers of the sequence are strictly < 2n.
 * [A115851](http://oeis.org/A115851) ([program](115/A115851.asm)): G.f. x^2*(-1+x+x^2)/((1-x)*(2*x-1)*(x+1)*(x^2+1)).
 * [A115852](http://oeis.org/A115852) ([program](115/A115852.asm)): Dihedral D3 elliptical invariant transform on A000045: a[n+1]/a[n]= Phi^4=((1+Sqrt[5])/2)^4.
+* [A115878](http://oeis.org/A115878) ([program](115/A115878.asm)): a(n) is the number of positive solutions of the Diophantine equation x^2 = y(y+n).
 * [A115880](http://oeis.org/A115880) ([program](115/A115880.asm)): Largest positive x satisfying the Diophantine equation x^2 = y*(y+n), a(n)=0 if there are no solutions.
 * [A115881](http://oeis.org/A115881) ([program](115/A115881.asm)): a(n) is the largest positive y satisfying the Diophantine equation x^2=y(y+n). a(n)=0 if there are no solutions.
 * [A115953](http://oeis.org/A115953) ([program](115/A115953.asm)): Periodic {1,-1,0,0,1,-2,1,0,0,-1,1,-1}.

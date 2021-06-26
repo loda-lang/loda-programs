@@ -1766,6 +1766,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230198](http://oeis.org/A230198) ([program](230/A230198.asm)): The number of multinomial coefficients over partitions with value equal to 8.
 * [A230269](http://oeis.org/A230269) ([program](230/A230269.asm)): Number of n X 2 0..2 arrays x(i,j) with each element horizontally or vertically next to at least one element with value (x(i,j)+1) mod 3, and upper left element zero.
 * [A230276](http://oeis.org/A230276) ([program](230/A230276.asm)): Voids left after packing 5-curves coins patterns into fountain of coins with base n.
+* [A230297](http://oeis.org/A230297) ([program](230/A230297.asm)): a(n) = A010062(n) written in binary: a(n+1) = a(n) + hammingweight(a(n)) in binary.
 * [A230298](http://oeis.org/A230298) ([program](230/A230298.asm)): a(n) = A010062(n) mod 2.
 * [A230300](http://oeis.org/A230300) ([program](230/A230300.asm)): a(n) = n + wt(n-1), where wt() = A000120() is the binary weight.
 * [A230312](http://oeis.org/A230312) ([program](230/A230312.asm)): Squares which cannot be written as the sum of a smaller nonzero square and twice a triangular number.

@@ -419,6 +419,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002320](http://oeis.org/A002320) ([program](002/A002320.asm)): a(n) = 5*a(n-1) - a(n-2).
 * [A002321](http://oeis.org/A002321) ([program](002/A002321.asm)): Mertens's function: Sum_{k=1..n} mu(k), where mu is the Moebius function A008683.
 * [A002324](http://oeis.org/A002324) ([program](002/A002324.asm)): Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
+* [A002327](http://oeis.org/A002327) ([program](002/A002327.asm)): Primes of form n^2 - n - 1.
 * [A002328](http://oeis.org/A002328) ([program](002/A002328.asm)): Numbers n such that n^2 - n - 1 is prime.
 * [A002378](http://oeis.org/A002378) ([program](002/A002378.asm)): Oblong (or promic, pronic, or heteromecic) numbers: a(n) = n*(n+1).
 * [A002407](http://oeis.org/A002407) ([program](002/A002407.asm)): Cuban primes: primes which are the difference of two consecutive cubes.

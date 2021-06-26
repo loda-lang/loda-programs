@@ -3,6 +3,4 @@
 
 cal $0,56524 ; Palindromes with even number of digits.
 mov $1,$0
-sub $1,11
 div $1,10
-add $1,1
