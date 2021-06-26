@@ -2962,6 +2962,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A297663](http://oeis.org/A297663) ([program](297/A297663.asm)): a(n) = 5*n + 2^n.
 * [A297675](http://oeis.org/A297675) ([program](297/A297675.asm)): a(n) = 3*(n^2+n-4)/2.
 * [A297792](http://oeis.org/A297792) ([program](297/A297792.asm)): a(n) = Sum_{d|n} min(d, n/d)^2.
+* [A297793](http://oeis.org/A297793) ([program](297/A297793.asm)): a(n) = Sum_{d|n} min(d, n/d)^3.
+* [A297794](http://oeis.org/A297794) ([program](297/A297794.asm)): a(n) = Sum_{d|n} min(d, n/d)^4.
+* [A297795](http://oeis.org/A297795) ([program](297/A297795.asm)): a(n) = Sum_{d|n} min(d, n/d)^5.
 * [A297928](http://oeis.org/A297928) ([program](297/A297928.asm)): a(n) = 2*4^n + 3*2^n - 1.
 * [A297996](http://oeis.org/A297996) ([program](297/A297996.asm)): a(1)=2, a(2)=3, a(3)=5 and a(n) = (a(1) + a(2) + a(3) + ... + a(n-1))/a(n-1).
 * [A298011](http://oeis.org/A298011) ([program](298/A298011.asm)): If n = Sum_{i=1..h} 2^b_i with 0 <= b_1 < ... < b_h, then a(n) = Sum_{i=1..h} i * 2^b_i.

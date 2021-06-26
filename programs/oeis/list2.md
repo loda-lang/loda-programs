@@ -1588,7 +1588,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115378](http://oeis.org/A115378) ([program](115/A115378.asm)): a(n) = number of positive integers k < n such that n XOR k = (n+k).
 * [A115384](http://oeis.org/A115384) ([program](115/A115384.asm)): Partial sums of Thue-Morse numbers A010060.
 * [A115390](http://oeis.org/A115390) ([program](115/A115390.asm)): Binomial transform of tribonacci sequence A000073.
-* [A115391](http://oeis.org/A115391) ([program](115/A115391.asm)): a(0)=0; then a(4*k+1)=a(4*k)+(4*k+1)^2, a(4*k+2)=a(4*k+1)+(4*k+3)^2, a(4*k+3)=a(4*k+2)+(4*k+2)^2, a(4*k+4)=a(4*k+3)+(4*k+4)^2.
 * [A115419](http://oeis.org/A115419) ([program](115/A115419.asm)): Numbers having a 1 in position 3 of their binary expansion.
 * [A115420](http://oeis.org/A115420) ([program](115/A115420.asm)): Numbers having a 1 in position 4 of their binary expansion.
 * [A115451](http://oeis.org/A115451) ([program](115/A115451.asm)): Expansion of 1/((1+x)*(1-2*x)*(1+x^2)).

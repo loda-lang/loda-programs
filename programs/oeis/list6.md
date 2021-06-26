@@ -1220,7 +1220,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323397](http://oeis.org/A323397) ([program](323/A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323466](http://oeis.org/A323466) ([program](323/A323466.asm)): Number of terms in row n of A323465.
 * [A323467](http://oeis.org/A323467) ([program](323/A323467.asm)): Smallest number in row n of A323465.
-* [A323526](http://oeis.org/A323526) ([program](323/A323526.asm)): One and prime numbers whose prime index is a perfect square.
 * [A323608](http://oeis.org/A323608) ([program](323/A323608.asm)): The position function the fractalization of which yields A323607.
 * [A323610](http://oeis.org/A323610) ([program](323/A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).
 * [A323614](http://oeis.org/A323614) ([program](323/A323614.asm)): List of 7-powerful numbers (for the definition of k-powerful see A323395).
@@ -1288,7 +1287,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325401](http://oeis.org/A325401) ([program](325/A325401.asm)): minflip(n) = min(n, r(n)) where r(n) is the binary reverse of n.
 * [A325402](http://oeis.org/A325402) ([program](325/A325402.asm)): maxflip(n) = max(n, r(n)) where r(n) is the binary reverse of n.
 * [A325413](http://oeis.org/A325413) ([program](325/A325413.asm)): Largest sum of the omega-sequence of an integer partition of n.
-* [A325437](http://oeis.org/A325437) ([program](325/A325437.asm)): Final digit of primes of the form k^2 + 1.
 * [A325459](http://oeis.org/A325459) ([program](325/A325459.asm)): Sum of numbers of nontrivial divisors (greater than 1 and less than k) of k for k = 1..n.
 * [A325473](http://oeis.org/A325473) ([program](325/A325473.asm)): Number of compositions of n with no part divisible by 3 and an even number of parts congruent to 4 or 5 modulo 6.
 * [A325475](http://oeis.org/A325475) ([program](325/A325475.asm)): a(n) = (24*n)^2.
@@ -2119,6 +2117,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344399](http://oeis.org/A344399) ([program](344/A344399.asm)): a(n) = 4^n*binomial(n - 1/2, -1/2)*(n^2 + 1).
 * [A344483](http://oeis.org/A344483) ([program](344/A344483.asm)): a(n) = n^2 + sigma(n) - n*d(n).
 * [A344510](http://oeis.org/A344510) ([program](344/A344510.asm)): a(n) = Sum_{k=1..n} k * gcd(k,n).
+* [A344511](http://oeis.org/A344511) ([program](344/A344511.asm)): a(n) = Sum_{k >= 0} sign(d_k) * 2^k for any number n with decimal expansion Sum_{k >= 0} d_k * 10^k.
 * [A344517](http://oeis.org/A344517) ([program](344/A344517.asm)): Minimum diameter of 4-regular circulant graphs of order n.
 * [A344526](http://oeis.org/A344526) ([program](344/A344526.asm)): a(n) = Sum_{k=1..n} k^3 * phi(k).
 * [A344543](http://oeis.org/A344543) ([program](344/A344543.asm)): Lexicographically earliest sequence S of distinct positive terms such that the product of the last k digits of S is even, k being the rightmost digit of a(n).

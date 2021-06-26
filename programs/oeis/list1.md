@@ -2023,6 +2023,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A068018](http://oeis.org/A068018) ([program](068/A068018.asm)): Number of fixed points in all 132- and 213-avoiding permutations of {1,2,...,n} (these are permutations with runs consisting of consecutive integers).
 * [A068028](http://oeis.org/A068028) ([program](068/A068028.asm)): Decimal expansion of 22/7.
 * [A068037](http://oeis.org/A068037) ([program](068/A068037.asm)): Number of subsets of {1,2,3,...,n} that sum to 0 mod 16.
+* [A068061](http://oeis.org/A068061) ([program](068/A068061.asm)): Palindromic numbers j that are not of the form k + reverse(k) for any k.
 * [A068068](http://oeis.org/A068068) ([program](068/A068068.asm)): Number of odd unitary divisors of n. d is a unitary divisor of n if d divides n and gcd(d,n/d)=1.
 * [A068073](http://oeis.org/A068073) ([program](068/A068073.asm)): Period 4 sequence [ 1, 2, 3, 2, ...].
 * [A068156](http://oeis.org/A068156) ([program](068/A068156.asm)): G.f.: (x+2)*(x+1)/((x-1)*(x-2)) = Sum_{n>=0} a(n)*(x/2)^n.
@@ -2750,6 +2751,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A072677](http://oeis.org/A072677) ([program](072/A072677.asm)): a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
 * [A072682](http://oeis.org/A072682) ([program](072/A072682.asm)): Numbers congruent to {3, 36, 54, 57} mod 60.
 * [A072689](http://oeis.org/A072689) ([program](072/A072689.asm)): Difference between (least square >= n) and (largest square <= n).
+* [A072690](http://oeis.org/A072690) ([program](072/A072690.asm)): (n - A048760(n)) * (A048761(n) - n).
 * [A072702](http://oeis.org/A072702) ([program](072/A072702.asm)): Last digit of F(n) is 4 where F(n) is the n-th Fibonacci number.
 * [A072703](http://oeis.org/A072703) ([program](072/A072703.asm)): Indices of Fibonacci numbers whose last digit is 5.
 * [A072708](http://oeis.org/A072708) ([program](072/A072708.asm)): Last digit of F(n) is 6 where F(n) is the n-th Fibonacci number.
@@ -3361,7 +3363,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A079044](http://oeis.org/A079044) ([program](079/A079044.asm)): Numbers k such that Sum_{j=0..k} sin(j/Pi) < 0.
 * [A079057](http://oeis.org/A079057) ([program](079/A079057.asm)): a(n)=sum(k=1,n,bigomega(tau(k))).
 * [A079065](http://oeis.org/A079065) ([program](079/A079065.asm)): In prime factorization of n replace odd primes with 3.
-* [A079079](http://oeis.org/A079079) ([program](079/A079079.asm)): a(n) = (prime(n)+1)*(prime(n+1)+1)/4.
 * [A079097](http://oeis.org/A079097) ([program](079/A079097.asm)): Mix odd numbers and squares.
 * [A079102](http://oeis.org/A079102) ([program](079/A079102.asm)): a(2n) = 2^n, a(2n+1) = 2^(2n).
 * [A079247](http://oeis.org/A079247) ([program](079/A079247.asm)): Number of pairs (p,q), 0 <= p < q, such that p+q divides n.

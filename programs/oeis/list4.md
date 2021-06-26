@@ -13,7 +13,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A200213](http://oeis.org/A200213) ([program](200/A200213.asm)): Ordered factorizations of n with 2 distinct parts, both > 1.
 * [A200244](http://oeis.org/A200244) ([program](200/A200244.asm)): a(n)=1 iff binary weight of n-th prime is even.
 * [A200246](http://oeis.org/A200246) ([program](200/A200246.asm)): a(n)=1 iff binary weight of n-th prime is odd.
-* [A200247](http://oeis.org/A200247) ([program](200/A200247.asm)): Partial sums of A200246.
 * [A200249](http://oeis.org/A200249) ([program](200/A200249.asm)): Number of 0..5 arrays x(0..n-1) of n elements with each no smaller than the sum of its previous elements modulo 6.
 * [A200252](http://oeis.org/A200252) ([program](200/A200252.asm)): Number of 0..n arrays x(0..2) of 3 elements with each no smaller than the sum of its previous elements modulo (n+1).
 * [A200261](http://oeis.org/A200261) ([program](200/A200261.asm)): a(n) = 1 iff n-th prime has an even digit sum.
@@ -294,7 +293,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A206776](http://oeis.org/A206776) ([program](206/A206776.asm)): a(n) = 3*a(n-1) + 2*a(n-2) for n>1, a(0)=2, a(1)=3.
 * [A206787](http://oeis.org/A206787) ([program](206/A206787.asm)): Sum of the odd squarefree divisors of n.
 * [A206802](http://oeis.org/A206802) ([program](206/A206802.asm)): a(n) = (1/2)*A185382(n).
-* [A206803](http://oeis.org/A206803) ([program](206/A206803.asm)): Sum_{0<j<k<=n} P(k)-P(j), where P(j)=A065091(j) is the j-th odd prime.
 * [A206804](http://oeis.org/A206804) ([program](206/A206804.asm)): (1/2)*A206803.
 * [A206806](http://oeis.org/A206806) ([program](206/A206806.asm)): Sum_{0<j<k<=n} s(k)-s(j), where s(j)=A002620(j) is the j-th quarter-square.
 * [A206807](http://oeis.org/A206807) ([program](206/A206807.asm)): Position of 3^n when {2^j} and {3^k} are jointly ranked; complement of A206805.
@@ -1687,6 +1685,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229004](http://oeis.org/A229004) ([program](229/A229004.asm)): Indices of Bell numbers divisible by 3.
 * [A229013](http://oeis.org/A229013) ([program](229/A229013.asm)): Number of arrays of median of three adjacent elements of some length-5 0..n array, with no adjacent equal elements in the latter.
 * [A229014](http://oeis.org/A229014) ([program](229/A229014.asm)): Number of arrays of median of three adjacent elements of some length 6 0..n array, with no adjacent equal elements in the latter.
+* [A229067](http://oeis.org/A229067) ([program](229/A229067.asm)): Sum of n-th prime and next perfect square.
 * [A229093](http://oeis.org/A229093) ([program](229/A229093.asm)): The clubs patterns appearing in n X n coins.
 * [A229109](http://oeis.org/A229109) ([program](229/A229109.asm)): a(n) = n plus the number of its distinct prime factors.
 * [A229118](http://oeis.org/A229118) ([program](229/A229118.asm)): Distance from the n-th triangular number to the nearest square.

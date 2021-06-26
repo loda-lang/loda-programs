@@ -2687,9 +2687,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A020913](http://oeis.org/A020913) ([program](020/A020913.asm)): Number of terms in base 5 representation of Fibonacci(n).
 * [A020934](http://oeis.org/A020934) ([program](020/A020934.asm)): Greatest k such that (k-th prime) < (4 times n-th prime).
 * [A020935](http://oeis.org/A020935) ([program](020/A020935.asm)): Greatest k such that (k-th prime) < (5 times n-th prime).
-* [A020936](http://oeis.org/A020936) ([program](020/A020936.asm)): Greatest k such that (k-th prime) < (6 times n-th prime).
 * [A020937](http://oeis.org/A020937) ([program](020/A020937.asm)): Greatest k such that (k-th prime) < (7 times n-th prime).
-* [A020938](http://oeis.org/A020938) ([program](020/A020938.asm)): Greatest k such that (k-th prime) < (8 times n-th prime).
 * [A020940](http://oeis.org/A020940) ([program](020/A020940.asm)): Greatest k such that (k-th prime) < (10 times n-th prime).
 * [A020956](http://oeis.org/A020956) ([program](020/A020956.asm)): Sum of [tau^(n-k)] for k from 1 to infinity.
 * [A020962](http://oeis.org/A020962) ([program](020/A020962.asm)): a(n) = Sum_{k >= 1} floor((1+sqrt(2))^(n-k)).
@@ -4194,7 +4192,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031911](http://oeis.org/A031911) ([program](031/A031911.asm)): a(n) = prime(7*n - 6).
 * [A031912](http://oeis.org/A031912) ([program](031/A031912.asm)): a(n) = prime(8*n-6).
 * [A031913](http://oeis.org/A031913) ([program](031/A031913.asm)): a(n) = prime(9*n - 6).
-* [A031914](http://oeis.org/A031914) ([program](031/A031914.asm)): a(n) = prime(10*n - 6).
 * [A031915](http://oeis.org/A031915) ([program](031/A031915.asm)): a(n) = prime(8*n-7).
 * [A031916](http://oeis.org/A031916) ([program](031/A031916.asm)): a(n) = prime(9*n-7).
 * [A031917](http://oeis.org/A031917) ([program](031/A031917.asm)): a(n) = prime(10*n-7).
@@ -6148,6 +6145,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048328](http://oeis.org/A048328) ([program](048/A048328.asm)): Numbers that are repdigits in base 3.
 * [A048329](http://oeis.org/A048329) ([program](048/A048329.asm)): a(n) in base 4 is a repdigit.
 * [A048331](http://oeis.org/A048331) ([program](048/A048331.asm)): a(n) in base 6 is a repdigit.
+* [A048332](http://oeis.org/A048332) ([program](048/A048332.asm)): a(n) in base 7 is a repdigit.
 * [A048334](http://oeis.org/A048334) ([program](048/A048334.asm)): a(n) in base 9 is a repdigit.
 * [A048395](http://oeis.org/A048395) ([program](048/A048395.asm)): Sum of consecutive nonsquares.
 * [A048396](http://oeis.org/A048396) ([program](048/A048396.asm)): Sums of consecutive noncubes.
