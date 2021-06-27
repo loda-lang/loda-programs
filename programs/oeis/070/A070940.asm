@@ -6,11 +6,10 @@ lpb $0
   mul $0,2
   dif $0,4
 lpe
-cmp $2,0
-add $0,$2
-mov $1,-1
+add $0,1
+mov $1,3
 lpb $0
   div $0,2
   add $1,1
 lpe
-add $1,1
+sub $1,3

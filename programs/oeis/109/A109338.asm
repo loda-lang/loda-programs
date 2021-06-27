@@ -4,8 +4,7 @@
 cal $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 div $0,3
 lpb $0
-  pow $0,2
-  sub $0,3
+  dif $0,2
 lpe
 mov $1,$0
 add $1,1

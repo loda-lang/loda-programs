@@ -4,6 +4,4 @@
 cal $0,114389 ; Bisection of A065621.
 cal $0,113778 ; Invert blocks of four in the sequence of natural numbers.
 mov $1,$0
-sub $1,3
 div $1,2
-add $1,1

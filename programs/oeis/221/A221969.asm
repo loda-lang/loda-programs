@@ -5,9 +5,8 @@ mul $0,2
 add $0,3
 pow $0,2
 cal $0,83364 ; Antidiagonal sums of table A083362.
-mul $0,2
+mul $0,4
 mov $1,$0
-sub $1,970
-div $1,960
-mul $1,128
+sub $1,1940
+div $1,15
 add $1,129

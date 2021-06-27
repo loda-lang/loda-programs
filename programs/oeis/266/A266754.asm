@@ -3,8 +3,6 @@
 
 lpb $0
   cal $0,34870 ; Even-numbered rows of Pascal's triangle.
-  mov $1,$0
-  mov $0,0
+  mod $0,2
 lpe
-add $1,1
-mod $1,2
+bin $1,$0

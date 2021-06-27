@@ -1,7 +1,13 @@
 ; A137883: Number of (directed) Hamiltonian paths in the n-Möbius ladder graph.
 ; 72,144,280,456,728,1056,1512,2040,2728,3504,4472,5544,6840,8256,9928,11736,13832,16080,18648,21384,24472,27744,31400,35256,39528,44016,48952,54120,59768,65664,72072,78744,85960,93456,101528,109896,118872,128160,138088
 
-add $0,3
-cal $0,20875 ; Number of (undirected) Hamiltonian paths in n-Moebius ladder.
-mul $0,2
+add $0,2
 mov $1,$0
+add $0,2
+pow $1,2
+div $1,2
+add $1,$0
+sub $0,1
+mul $1,$0
+div $1,2
+mul $1,8

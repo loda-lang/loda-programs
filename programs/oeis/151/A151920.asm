@@ -4,6 +4,4 @@
 add $0,1
 cal $0,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
 mov $1,$0
-sub $1,4
 div $1,3
-add $1,1

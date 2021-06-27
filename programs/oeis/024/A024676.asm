@@ -3,8 +3,7 @@
 
 add $0,1
 cal $0,1043 ; Numbers that are the sum of 2 successive primes.
-mul $0,2
 sub $0,1
 cal $0,73093 ; Number of prime power divisors of n.
 mov $1,$0
-sub $1,3
+sub $1,2

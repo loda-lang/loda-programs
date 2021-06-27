@@ -8,6 +8,4 @@ lpb $0
   cal $2,97135 ; a(0) = 1; for n>0, a(n) = 3*Fibonacci(n).
   add $1,$2
 lpe
-sub $1,3
 div $1,3
-add $1,1

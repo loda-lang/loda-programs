@@ -1,0 +1,12 @@
+; A342568: 1/a(n) is the current through the resistor at the central rung of an electrical ladder network made of 6*n+1 one-ohm resistors, fed by 1 volt at diametrically opposite ends of the ladder.
+; 1,7,45,239,1157,5307,23497,101467,430089,1796975,7422437,30373191,123327373,497484067,1995542913,7965875891,31663779857,125391332055,494914083229,1947613051807,7643917792917,29928228744587,116921300015417,455866012012299,1774126607984665
+
+mov $1,$0
+add $1,1
+mov $2,$0
+lpb $0
+  sub $0,1
+  add $1,$2
+  add $2,$1
+  add $1,$2
+lpe
