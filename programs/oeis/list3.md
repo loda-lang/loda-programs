@@ -22,7 +22,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A151783](http://oeis.org/A151783) ([program](151/A151783.asm)): a(n) = 4^{wt(n)-1}.
 * [A151784](http://oeis.org/A151784) ([program](151/A151784.asm)): 6^{wt(n)-1} where wt(n) is the binary weight of n (A000120).
 * [A151785](http://oeis.org/A151785) ([program](151/A151785.asm)): 7^{wt(n)-1} where wt(n) is the binary weight of n (A000120).
-* [A151786](http://oeis.org/A151786) ([program](151/A151786.asm)): 8^{wt(n)-1} where wt(n) is the binary weight of n (A000120).
+* [A151786](http://oeis.org/A151786) ([program](151/A151786.asm)): a(n) = 8^(wt(n)-1) where wt(n) is the binary weight of n (A000120).
 * [A151787](http://oeis.org/A151787) ([program](151/A151787.asm)): a(1)=1; for n > 1, a(n)=3*2^{wt(n-1)-1}.
 * [A151788](http://oeis.org/A151788) ([program](151/A151788.asm)): Partial sums of A151787.
 * [A151789](http://oeis.org/A151789) ([program](151/A151789.asm)): a(1)=1; for n > 1, a(n)=5*4^{wt(n-1)-1}.
@@ -559,7 +559,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A156773](http://oeis.org/A156773) ([program](156/A156773.asm)): a(n) = 6561*n^2 - 9558*n + 3482.
 * [A156774](http://oeis.org/A156774) ([program](156/A156774.asm)): a(n) = 6561*n^2 - 3564*n + 485.
 * [A156778](http://oeis.org/A156778) ([program](156/A156778.asm)): n*A007504(n)/2 = n*(sum of first n primes)/2
-* [A156795](http://oeis.org/A156795) ([program](156/A156795.asm)): 81*n - 59.
+* [A156795](http://oeis.org/A156795) ([program](156/A156795.asm)): a(n) = 81*n - 59.
 * [A156796](http://oeis.org/A156796) ([program](156/A156796.asm)): a(n) = 81*n - 22.
 * [A156797](http://oeis.org/A156797) ([program](156/A156797.asm)): Numbers k such that k^2 + 2 == 0 (mod (9^2)).
 * [A156798](http://oeis.org/A156798) ([program](156/A156798.asm)): a(n) = n^4 + 5*n^2 + 4.
@@ -809,6 +809,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158010](http://oeis.org/A158010) ([program](158/A158010.asm)): a(n) = 256*n^2 - n.
 * [A158011](http://oeis.org/A158011) ([program](158/A158011.asm)): a(n) = 512n - 1.
 * [A158037](http://oeis.org/A158037) ([program](158/A158037.asm)): A106044 sorted and duplicates removed.
+* [A158038](http://oeis.org/A158038) ([program](158/A158038.asm)): Difference between n-th prime and next cube.
 * [A158056](http://oeis.org/A158056) ([program](158/A158056.asm)): a(n) = 16*n^2 + 2*n.
 * [A158057](http://oeis.org/A158057) ([program](158/A158057.asm)): First differences of A051870: 16*n + 1.
 * [A158058](http://oeis.org/A158058) ([program](158/A158058.asm)): a(n) = 16*n^2 - 2*n.
@@ -5233,5 +5234,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A199923](http://oeis.org/A199923) ([program](199/A199923.asm)): Sum_{0<=k<=3^(n-1)} gcd(k,3^(n-1)) for n > 0 and a(0) = 1.
 * [A199944](http://oeis.org/A199944) ([program](199/A199944.asm)): Number of -n..n arrays x(0..2) of 3 elements with zeroth through 2nd differences all nonzero.
 * [A199968](http://oeis.org/A199968) ([program](199/A199968.asm)): a(n) = the smallest non-divisor h of n (1<h<n), or 0 if no such h exists.
-* [A199969](http://oeis.org/A199969) ([program](199/A199969.asm)): a(n) = the greatest non-divisor h of n (1<h<n), or 0 if no such h exists.
+* [A199969](http://oeis.org/A199969) ([program](199/A199969.asm)): a(n) = the greatest non-divisor h of n (1 < h < n), or 0 if no such h exists.
 * [A199972](http://oeis.org/A199972) ([program](199/A199972.asm)):  a(n) = the sum of GCQ_B(n, k) for 1 <= k <= n (see definition in comments).

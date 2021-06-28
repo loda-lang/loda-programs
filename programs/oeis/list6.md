@@ -1781,6 +1781,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336692](http://oeis.org/A336692) ([program](336/A336692.asm)): Binary weight of 1+sigma(n).
 * [A336696](http://oeis.org/A336696) ([program](336/A336696.asm)): Sum of odd divisors of 1+sigma(n).
 * [A336698](http://oeis.org/A336698) ([program](336/A336698.asm)): a(n) = A000265(1+A000265(sigma(n))), where A000265(k) gives the odd part of k.
+* [A336699](http://oeis.org/A336699) ([program](336/A336699.asm)): a(n) = A000265(1+A000265(sigma(A000265(n)))), where A000265(k) gives the odd part of k.
 * [A336705](http://oeis.org/A336705) ([program](336/A336705.asm)): Coordination sequence for the half-Manhattan lattice.
 * [A336751](http://oeis.org/A336751) ([program](336/A336751.asm)): Smallest side of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 * [A336754](http://oeis.org/A336754) ([program](336/A336754.asm)): Perimeters in increasing order of integer-sided triangles whose sides a < b < c are in arithmetic progression.
@@ -2152,3 +2153,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345493](http://oeis.org/A345493) ([program](345/A345493.asm)): Numbers that are the sum of eight squares in six or more ways.
 * [A345502](http://oeis.org/A345502) ([program](345/A345502.asm)): Numbers that are the sum of nine squares in five or more ways.
 * [A345701](http://oeis.org/A345701) ([program](345/A345701.asm)): a(n) = 3*n^3 - 1.
+* [A345702](http://oeis.org/A345702) ([program](345/A345702.asm)): Numbers that can be written as 2*a^2 - 1 and 3*b^3 - 1.

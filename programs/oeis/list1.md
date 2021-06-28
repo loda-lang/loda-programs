@@ -3018,6 +3018,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A075438](http://oeis.org/A075438) ([program](075/A075438.asm)): Triangle read by rows giving successive iterations of the Rule 60 elementary cellular automaton starting with a single ON cell where row n is of length 2n+1.
 * [A075439](http://oeis.org/A075439) ([program](075/A075439.asm)): Triangle read by rows giving successive iterations of the Rule 102 elementary cellular automaton starting with a single ON cell where row n is of length 2n+1.
 * [A075518](http://oeis.org/A075518) ([program](075/A075518.asm)): a(n) = floor(prime(n)/4).
+* [A075520](http://oeis.org/A075520) ([program](075/A075520.asm)): 4*prime(n) + (prime(n) mod 4).
 * [A075526](http://oeis.org/A075526) ([program](075/A075526.asm)): A008578(n+2) - A008578(n+1).
 * [A075527](http://oeis.org/A075527) ([program](075/A075527.asm)): A008578(n+3) - A008578(n+1).
 * [A075543](http://oeis.org/A075543) ([program](075/A075543.asm)): a[n] = a[n-1] + digit sum(n) - 1.
@@ -3466,6 +3467,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A080086](http://oeis.org/A080086) ([program](080/A080086.asm)): Number of factors of 3 in the factorial of the n-th prime, counted with multiplicity.
 * [A080087](http://oeis.org/A080087) ([program](080/A080087.asm)): Number of factors of 5 in the factorial of the n-th prime, counted with multiplicity.
 * [A080095](http://oeis.org/A080095) ([program](080/A080095.asm)): Let sum(k>=0, k^n/(2*k+1)!) = (x(n)*e + y(n)/e)/z(n), where x(n) and z(n) are >0, then a(n)=z(n).
+* [A080096](http://oeis.org/A080096) ([program](080/A080096.asm)): a(1)=a(2)=1; a(3)=2; a(n)=abs(a(n-1)-a(n-2)-a(n-3)).
 * [A080097](http://oeis.org/A080097) ([program](080/A080097.asm)): a(n) = Fibonacci(n+2)^2 - 1.
 * [A080100](http://oeis.org/A080100) ([program](080/A080100.asm)): a(n) = 2^(number of 0's in binary representation of n).
 * [A080109](http://oeis.org/A080109) ([program](080/A080109.asm)): Square of primes of the form 4k+1 (A002144).
@@ -4090,7 +4092,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083726](http://oeis.org/A083726) ([program](083/A083726.asm)): a(n) = (prime(n)+1)*n.
 * [A083727](http://oeis.org/A083727) ([program](083/A083727.asm)): a(n) = n * (2^n - 8).
 * [A083730](http://oeis.org/A083730) ([program](083/A083730.asm)): Greatest prime^2 factor of n, or a(n)=1 for squarefree n.
-* [A083741](http://oeis.org/A083741) ([program](083/A083741.asm)): a(n) = l(n) + a(l(n)), where l(n) = n - 2^floor(log2(n)) (A053645).
+* [A083741](http://oeis.org/A083741) ([program](083/A083741.asm)): a(n) = L(n) + a(L(n)), where L(n) = n - 2^floor(log_2(n)) (A053645).
 * [A083786](http://oeis.org/A083786) ([program](083/A083786.asm)): Composite numbers mod 10.
 * [A083822](http://oeis.org/A083822) ([program](083/A083822.asm)): a(n) = digit reversal of 3*n, divided by 3.
 * [A083824](http://oeis.org/A083824) ([program](083/A083824.asm)): a(n) = digit reversal of 9*n, divided by 9.
@@ -4104,6 +4106,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083920](http://oeis.org/A083920) ([program](083/A083920.asm)): Number of nontriangular numbers <= n.
 * [A083943](http://oeis.org/A083943) ([program](083/A083943.asm)): A generalized Jacobsthal sequence.
 * [A083944](http://oeis.org/A083944) ([program](083/A083944.asm)): A generalized Jacobsthal sequence.
+* [A084008](http://oeis.org/A084008) ([program](084/A084008.asm)): a(n) = T(n) concatenated with reverse(T(n)) divided by 11, where T(n) is the n-th triangular number.
 * [A084009](http://oeis.org/A084009) ([program](084/A084009.asm)): a(n) = n^2 concatenated with reverse(n^2) divided by 11.
 * [A084011](http://oeis.org/A084011) ([program](084/A084011.asm)): Digit reversal of 11*n, divided by 11.
 * [A084052](http://oeis.org/A084052) ([program](084/A084052.asm)): 2*n digit-reversed mod 2.
@@ -4573,6 +4576,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087940](http://oeis.org/A087940) ([program](087/A087940.asm)): a(n) = Sum_{k=0..n} binomial(n+(-1)^k, k).
 * [A087953](http://oeis.org/A087953) ([program](087/A087953.asm)): a(n) = floor((Fibonacci(2*n+1)+1)/2).
 * [A087960](http://oeis.org/A087960) ([program](087/A087960.asm)): a(n) = (-1)^binomial(n+1,2).
+* [A087963](http://oeis.org/A087963) ([program](087/A087963.asm)): Exponent of highest power of 2 dividing 3*prime(n)+1.
 * [A088003](http://oeis.org/A088003) ([program](088/A088003.asm)): Take the list t(n,0) = {1,...,n}; denote by t(n,j) this list after rotating to left (or right) by j positions. Calculate inner product of t(n,0) and t(n,j) and denote the value by s(n,j). Compute this inner product for all j = 1..n and choose the smallest. This is a(n).
 * [A088023](http://oeis.org/A088023) ([program](088/A088023.asm)): Set a(1) = 1. Then take the list of defined initial terms, reverse their order, add 1, 2, 3...to the reversed list in succession and append this new list to the right of the previously defined terms. Repeat this process indefinitely.
 * [A088037](http://oeis.org/A088037) ([program](088/A088037.asm)): Smallest square k == 1 (mod some n-th power), k > 1.
@@ -4724,7 +4728,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A089253](http://oeis.org/A089253) ([program](089/A089253.asm)): Numbers n such that 2n - 5 is a prime.
 * [A089255](http://oeis.org/A089255) ([program](089/A089255.asm)): Odd numbers n such that 2*n-5 is a prime.
 * [A089257](http://oeis.org/A089257) ([program](089/A089257.asm)): Even numbers n such that 2n-5 is a prime of the form 4k+3.
-* [A089262](http://oeis.org/A089262) ([program](089/A089262.asm)): 2^[log2(n)] - 2^[log2(n*2/3)].
+* [A089262](http://oeis.org/A089262) ([program](089/A089262.asm)): a(n) = 2^floor(log_2(n)) - 2^floor(log_2(n*2/3)).
 * [A089263](http://oeis.org/A089263) ([program](089/A089263.asm)): First differences of A080791.
 * [A089265](http://oeis.org/A089265) ([program](089/A089265.asm)): a(1) = 0; thereafter a(2*n) = a(n) + 1, a(2*n+1) = 2*n.
 * [A089279](http://oeis.org/A089279) ([program](089/A089279.asm)): a(n) = 2 + sum(k=1 to n) [(-1)^k A001511(k)].

@@ -1093,7 +1093,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109921](http://oeis.org/A109921) ([program](109/A109921.asm)): a(2n) = prime(n). a(2n+1) = sum of composite numbers between prime(n) and prime(n+1). We define a(1) = 1.
 * [A109952](http://oeis.org/A109952) ([program](109/A109952.asm)): Degrees Centigrade for which Fahrenheit is a prime.
 * [A109961](http://oeis.org/A109961) ([program](109/A109961.asm)): Expansion of (1-x)^3/(1-4x+5x^2-4x^3+x^4).
-* [A109964](http://oeis.org/A109964) ([program](109/A109964.asm)): a(n) = floor(sqrt(sum_{i<n} a(i))), with a(0)=1.
+* [A109964](http://oeis.org/A109964) ([program](109/A109964.asm)): a(n) = floor(sqrt(Sum_{i<n} a(i))), with a(0)=1.
 * [A109965](http://oeis.org/A109965) ([program](109/A109965.asm)): Sum_i {i<n} floor(sqrt(a(i))) with a(0) = 1.
 * [A109975](http://oeis.org/A109975) ([program](109/A109975.asm)): Second differences of A045623, prefixed by an initial 1.
 * [A110013](http://oeis.org/A110013) ([program](110/A110013.asm)): Squares of the form 4p + 5, where p is a prime.
@@ -1464,6 +1464,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A113975](http://oeis.org/A113975) ([program](113/A113975.asm)): Devil's Farey: coefficient expansion of a quadratic over quadratic that has 123 roots and a Farey p[1/2]=1 ( correction).
 * [A113979](http://oeis.org/A113979) ([program](113/A113979.asm)): Number of compositions of n with an even number of 1's.
 * [A113980](http://oeis.org/A113980) ([program](113/A113980.asm)): Number of compositions of n with an odd number of 1's.
+* [A113998](http://oeis.org/A113998) ([program](113/A113998.asm)): Reverse of triangle A051731.
 * [A114003](http://oeis.org/A114003) ([program](114/A114003.asm)): Rows sums of triangle A114002.
 * [A114040](http://oeis.org/A114040) ([program](114/A114040.asm)): a(0) = 1, a(1) = 9, a(n) = 6*a(n-1) - a(n-2) - 4.
 * [A114054](http://oeis.org/A114054) ([program](114/A114054.asm)): Decimal expansion of 998998998998998998998998998/9.
@@ -1638,7 +1639,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A116386](http://oeis.org/A116386) ([program](116/A116386.asm)): Number of calendar weeks in the year n (starting at n=0 for the year 2000).
 * [A116400](http://oeis.org/A116400) ([program](116/A116400.asm)): E.g.f. Bessel_I(2,2x)+Bessel_I(3,2x)+Bessel_I(4,2x).
 * [A116404](http://oeis.org/A116404) ([program](116/A116404.asm)): Expansion of (1-x)/((1-x)^2 - x^2(1+x)^2).
-* [A116406](http://oeis.org/A116406) ([program](116/A116406.asm)): Expansion of ((1+x-2x^2)+(1+x)sqrt(1-4x^2))/(2(1-4x^2)).
+* [A116406](http://oeis.org/A116406) ([program](116/A116406.asm)): Expansion of ((1+x-2x^2)+(1+x)*sqrt(1-4x^2))/(2(1-4x^2)).
 * [A116415](http://oeis.org/A116415) ([program](116/A116415.asm)): a(n) = 5*a(n-1) - 3*a(n-2).
 * [A116453](http://oeis.org/A116453) ([program](116/A116453.asm)): Third smallest number with exactly n prime factors.
 * [A116454](http://oeis.org/A116454) ([program](116/A116454.asm)): Smallest m such that A116452(m) = n.
@@ -1757,7 +1758,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117589](http://oeis.org/A117589) ([program](117/A117589.asm)): See Comments line.
 * [A117590](http://oeis.org/A117590) ([program](117/A117590.asm)): a(n) = ceiling(x(n)), where x(n) = 3*x(n-1)/2 and x(1) = 1.
 * [A117591](http://oeis.org/A117591) ([program](117/A117591.asm)): 2^n + Fibonacci(n).
-* [A117592](http://oeis.org/A117592) ([program](117/A117592.asm)): a(n)=a(3n)=a(3n+1)=a(3n+2)/2 with a(0)=1.
+* [A117592](http://oeis.org/A117592) ([program](117/A117592.asm)): a(n) = a(3n) = a(3n+1) = a(3n+2)/2 with a(0)=1.
 * [A117614](http://oeis.org/A117614) ([program](117/A117614.asm)): a(0)=1, a(n)=4a(n-1)+2 for n odd, a(n)=4a(n-1) for n even.
 * [A117615](http://oeis.org/A117615) ([program](117/A117615.asm)): a(0)=0, a(1)=1, a(n)=4a(n-1)+2 for n =3,5,7,..., a(n)=4a(n-1) for n =2,4,6,....
 * [A117616](http://oeis.org/A117616) ([program](117/A117616.asm)): a(0)=0, a(n)=4a(n-1)+2 for n odd, a(n)=4a(n-1) for n even.

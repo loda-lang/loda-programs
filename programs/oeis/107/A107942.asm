@@ -5,8 +5,8 @@ add $0,2
 mov $1,215879
 lpb $0
   mov $2,$0
-  cal $2,218131 ; Number of length 8 primitive (=aperiodic or period 8) n-ary words.
   sub $0,1
+  cal $2,218131 ; Number of length 8 primitive (=aperiodic or period 8) n-ary words.
   add $1,$2
 lpe
 sub $1,216119

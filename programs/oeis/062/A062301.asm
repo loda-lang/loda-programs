@@ -5,10 +5,10 @@ trn $0,1
 cal $0,40 ; The prime numbers.
 cal $0,34693 ; Smallest k such that k*n+1 is prime.
 mul $0,2
-mov $1,11
-lpb $0
-  add $0,4
-  div $0,3
-  mul $1,4
+sub $0,1
+mov $1,$0
+mul $1,843
+lpb $1
+  mov $1,$0
+  cmp $0,1
 lpe
-mod $1,2

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,48745 ; Partial sums of A048654.
   sub $0,1
+  cal $2,48745 ; Partial sums of A048654.
   add $1,$2
 lpe
 add $1,1

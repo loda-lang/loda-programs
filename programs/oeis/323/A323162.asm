@@ -3,6 +3,10 @@
 
 div $0,2
 mul $0,2
-cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
-mov $1,$0
-cmp $1,0
+lpb $0
+  mov $2,$0
+  cal $2,135679 ; a(n) = n if n = 1 or if n is prime. Otherwise, a(n) = 2 if n is even and a(n) = 3 if n is odd.
+  add $1,$2
+  mov $0,$1
+lpe
+mod $1,2

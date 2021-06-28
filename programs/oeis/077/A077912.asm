@@ -5,8 +5,8 @@ add $0,1
 mov $2,-1
 lpb $0
   mov $1,$0
-  cal $1,1607 ; a(n) = -a(n-1) - 2*a(n-2).
   sub $0,1
+  cal $1,1607 ; a(n) = -a(n-1) - 2*a(n-2).
   add $2,$1
   add $1,$2
 lpe

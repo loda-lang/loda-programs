@@ -2046,6 +2046,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014236](http://oeis.org/A014236) ([program](014/A014236.asm)): Expansion of g.f.: 2*x*(1-x)/((1-2*x)*(1-2*x^2)).
 * [A014245](http://oeis.org/A014245) ([program](014/A014245.asm)): a(n) = (n-th term of Beatty sequence for (3+sqrt(3))/2) - (n-th term of Beatty sequence for sqrt(3)).
 * [A014255](http://oeis.org/A014255) ([program](014/A014255.asm)): Expansion of (1+2*x+3*x^2)/((1-x)*(1-x^2)^2).
+* [A014257](http://oeis.org/A014257) ([program](014/A014257.asm)): Product of digits of 2^n.
 * [A014263](http://oeis.org/A014263) ([program](014/A014263.asm)): Numbers that contain even digits only.
 * [A014283](http://oeis.org/A014283) ([program](014/A014283.asm)): a(n) = Fibonacci(n) - n^2.
 * [A014284](http://oeis.org/A014284) ([program](014/A014284.asm)): Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
@@ -3407,7 +3408,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024920](http://oeis.org/A024920) ([program](024/A024920.asm)): a(n) = Sum_{k=1..n} (n-k) * floor(n/k).
 * [A024924](http://oeis.org/A024924) ([program](024/A024924.asm)): a(n) = Sum_{k=1..n} prime(k)*floor(n/prime(k)).
 * [A024925](http://oeis.org/A024925) ([program](024/A024925.asm)): Sum of remainders of n mod prime(k), for k = 1,2,3,...,n.
-* [A024926](http://oeis.org/A024926) ([program](024/A024926.asm)): a(n) = Sum_{k=1..n} floor(p(k)/k).
 * [A024930](http://oeis.org/A024930) ([program](024/A024930.asm)): a(n) = sum of remainders of n mod 1,3,5,...,2k-1, where k = [ (n+1)/2 ].
 * [A024935](http://oeis.org/A024935) ([program](024/A024935.asm)): a(n) = minimal length of any partition of n into distinct primes.
 * [A024966](http://oeis.org/A024966) ([program](024/A024966.asm)): 7 times triangular numbers: 7*n*(n+1)/2.
@@ -5009,20 +5009,20 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038866](http://oeis.org/A038866) ([program](038/A038866.asm)): (n+4)^3 - n^3.
 * [A038867](http://oeis.org/A038867) ([program](038/A038867.asm)): (n+5)^3 - n^3.
 * [A038990](http://oeis.org/A038990) ([program](038/A038990.asm)): Expansion of (1-x-x^2+2*x^3) / ((1-x)*(1+x)*(1-3*x+x^2)).
-* [A039112](http://oeis.org/A039112) ([program](039/A039112.asm)): Numbers n such that representation in base 10 has same number of 0's and 1's.
-* [A039156](http://oeis.org/A039156) ([program](039/A039156.asm)): Numbers n such that representation in base 11 has same number of 0's and 1's.
-* [A039163](http://oeis.org/A039163) ([program](039/A039163.asm)): Numbers n such that representation in base 11 has same number of 0's and 8's.
-* [A039164](http://oeis.org/A039164) ([program](039/A039164.asm)): Numbers n such that representation in base 11 has same number of 0's and 9's.
-* [A039207](http://oeis.org/A039207) ([program](039/A039207.asm)): Numbers n such that representation in base 11 has same number of 8's and 9's.
-* [A039208](http://oeis.org/A039208) ([program](039/A039208.asm)): Numbers n such that representation in base 11 has same number of 8's and 10's.
-* [A039209](http://oeis.org/A039209) ([program](039/A039209.asm)): Numbers n such that representation in base 11 has same number of 9's and 10's.
-* [A039218](http://oeis.org/A039218) ([program](039/A039218.asm)): Numbers n such that representation in base 12 has same number of 0's and 9's.
-* [A039265](http://oeis.org/A039265) ([program](039/A039265.asm)): Numbers n such that representation in base 12 has same number of 7's and 8's.
-* [A039267](http://oeis.org/A039267) ([program](039/A039267.asm)): Numbers n such that representation in base 12 has same number of 7's and 10's.
-* [A039269](http://oeis.org/A039269) ([program](039/A039269.asm)): Numbers n such that representation in base 12 has same number of 8's and 9's.
-* [A039271](http://oeis.org/A039271) ([program](039/A039271.asm)): Numbers n such that representation in base 12 has same number of 8's and 11's.
-* [A039272](http://oeis.org/A039272) ([program](039/A039272.asm)): Numbers n such that representation in base 12 has same number of 9's and 10's.
-* [A039274](http://oeis.org/A039274) ([program](039/A039274.asm)): Numbers n such that representation in base 12 has same number of 10's and 11's.
+* [A039112](http://oeis.org/A039112) ([program](039/A039112.asm)): Numbers whose base-10 representation has the same number of 0's and 1's.
+* [A039156](http://oeis.org/A039156) ([program](039/A039156.asm)): Numbers whose base-11 representation has the same number of 0's and 1's.
+* [A039163](http://oeis.org/A039163) ([program](039/A039163.asm)): Numbers whose base-11 representation has the same number of 0's and 8's.
+* [A039164](http://oeis.org/A039164) ([program](039/A039164.asm)): Numbers whose base-11 representation has the same number of 0's and 9's.
+* [A039207](http://oeis.org/A039207) ([program](039/A039207.asm)): Numbers whose base-11 representation has the same number of 8's and 9's.
+* [A039208](http://oeis.org/A039208) ([program](039/A039208.asm)): Numbers whose base-11 representation has the same number of 8's and 10's.
+* [A039209](http://oeis.org/A039209) ([program](039/A039209.asm)): Numbers whose base-11 representation has the same number of 9's and 10's.
+* [A039218](http://oeis.org/A039218) ([program](039/A039218.asm)): Numbers whose base-12 representation has the same number of 0's and 9's.
+* [A039265](http://oeis.org/A039265) ([program](039/A039265.asm)): Numbers whose base-12 representation has the same number of 7's and 8's.
+* [A039267](http://oeis.org/A039267) ([program](039/A039267.asm)): Numbers whose base-12 representation has the same number of 7's and 10's.
+* [A039269](http://oeis.org/A039269) ([program](039/A039269.asm)): Numbers whose base-12 representation has the same number of 8's and 9's.
+* [A039271](http://oeis.org/A039271) ([program](039/A039271.asm)): Numbers whose base-12 representation has the same number of 8's and 11's.
+* [A039272](http://oeis.org/A039272) ([program](039/A039272.asm)): Numbers whose base-12 representation has the same number of 9's and 10's.
+* [A039274](http://oeis.org/A039274) ([program](039/A039274.asm)): Numbers whose base-12 representation has the same number of 10's and 11's.
 * [A039300](http://oeis.org/A039300) ([program](039/A039300.asm)): Number of distinct quadratic residues mod 3^n.
 * [A039301](http://oeis.org/A039301) ([program](039/A039301.asm)): Number of distinct quadratic residues mod 4^n.
 * [A039302](http://oeis.org/A039302) ([program](039/A039302.asm)): Number of distinct quadratic residues mod 5^n.
@@ -6148,6 +6148,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048271](http://oeis.org/A048271) ([program](048/A048271.asm)): a(0) = 1, a(n+1) = -3*a(n) mod 11.
 * [A048272](http://oeis.org/A048272) ([program](048/A048272.asm)): Number of odd divisors of n minus number of even divisors of n.
 * [A048298](http://oeis.org/A048298) ([program](048/A048298.asm)): a(n) = n if n=2^i with i=0,1,2,3,...; else a(n) = 0.
+* [A048307](http://oeis.org/A048307) ([program](048/A048307.asm)): Numbers whose decimal expansions, read from left to right, have run lengths that strictly increase.
 * [A048328](http://oeis.org/A048328) ([program](048/A048328.asm)): Numbers that are repdigits in base 3.
 * [A048329](http://oeis.org/A048329) ([program](048/A048329.asm)): a(n) in base 4 is a repdigit.
 * [A048331](http://oeis.org/A048331) ([program](048/A048331.asm)): a(n) in base 6 is a repdigit.
