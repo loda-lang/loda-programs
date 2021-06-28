@@ -3,8 +3,8 @@
 
 mov $1,$0
 add $0,1
-add $1,1
 cal $0,226044 ; Period of length 8: 1, 64, 16, 64, 4, 64, 16, 64.
+add $1,1
 mul $1,$0
 sub $1,8
 div $1,8

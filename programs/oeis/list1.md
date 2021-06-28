@@ -1829,6 +1829,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065339](http://oeis.org/A065339) ([program](065/A065339.asm)): Number of primes congruent to 3 modulo 4 dividing n (with multiplicity).
 * [A065357](http://oeis.org/A065357) ([program](065/A065357.asm)): a(n) = (-1)^pi(n) where pi(n) is the number of primes <= n.
 * [A065358](http://oeis.org/A065358) ([program](065/A065358.asm)): The Jacob's Ladder sequence: a(n) = Sum_{k=1..n} (-1)^pi(k), where pi = A000720.
+* [A065359](http://oeis.org/A065359) ([program](065/A065359.asm)): Alternating bit sum for n: replace 2^k with (-1)^k in binary expansion of n.
 * [A065363](http://oeis.org/A065363) ([program](065/A065363.asm)): Sum of balanced ternary digits in n. Replace 3^k with 1 in balanced ternary expansion of n.
 * [A065364](http://oeis.org/A065364) ([program](065/A065364.asm)): Alternating sum of balanced ternary digits in n. Replace 3^k with (-1)^k in balanced ternary expansion of n.
 * [A065383](http://oeis.org/A065383) ([program](065/A065383.asm)): a(n) = smallest prime >= n*(n + 1)/2.
@@ -2868,6 +2869,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A074149](http://oeis.org/A074149) ([program](074/A074149.asm)): Sum of terms in each group in A074147.
 * [A074155](http://oeis.org/A074155) ([program](074/A074155.asm)): Group the natural numbers so that the product of members of a group is a multiple of the sum: (1),(2,3,4,5,6),(7,8,9),(10,11,12),(13,14,15),(16,17,18),(19,20,21),(22,23,24),.... This is the sequence of the ratio of product /sum.
 * [A074171](http://oeis.org/A074171) ([program](074/A074171.asm)): a(1) = 1. For n >= 2, a(n) is either a(n-1)+n or a(n-1)-n; we only use the minus sign if a(n-1) is prime. E.g. since a(2)=3 is prime, a(3)=a(2)-3=0.
+* [A074225](http://oeis.org/A074225) ([program](074/A074225.asm)): a(n) = n * Sum_{d|n} d*2^(d-1).
 * [A074229](http://oeis.org/A074229) ([program](074/A074229.asm)): Numbers n such that Kronecker(6,n)==mu(gcd(6,n)).
 * [A074231](http://oeis.org/A074231) ([program](074/A074231.asm)): Numbers n such that Kronecker(8,n) = mu(gcd(8,n)).
 * [A074232](http://oeis.org/A074232) ([program](074/A074232.asm)): Positive numbers that are not 3 or 6 (mod 9).

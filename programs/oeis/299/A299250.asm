@@ -3,8 +3,6 @@
 
 mul $0,3
 div $0,2
-cal $0,146510 ; Numbers congruent to {1, 4} mod 15.
+add $0,1
+cal $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
 mov $1,$0
-div $1,3
-mul $1,2
-add $1,9

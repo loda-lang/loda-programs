@@ -10,6 +10,5 @@ lpb $0
   pow $2,2
   add $1,$2
 lpe
-mul $1,2
-div $1,4
+div $1,2
 add $1,1

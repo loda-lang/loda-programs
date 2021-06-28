@@ -3534,6 +3534,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181763](http://oeis.org/A181763) ([program](181/A181763.asm)): a(n) = A061037(n)^2.
 * [A181773](http://oeis.org/A181773) ([program](181/A181773.asm)): Molecular topological indices of the cocktail party graphs.
 * [A181797](http://oeis.org/A181797) ([program](181/A181797.asm)): a(n) = n multiplied by the sum of its squarefree divisors (A048250(n)).
+* [A181829](http://oeis.org/A181829) ([program](181/A181829.asm)): a(n) = 4*A060819(n-2)*A060819(n+2).
 * [A181889](http://oeis.org/A181889) ([program](181/A181889.asm)): Bisection of A181888.
 * [A181890](http://oeis.org/A181890) ([program](181/A181890.asm)): a(n) = 8*n^2 + 14*n + 5.
 * [A181900](http://oeis.org/A181900) ([program](181/A181900.asm)): a(n) = A022998(n) * n.
@@ -4523,6 +4524,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190973](http://oeis.org/A190973) ([program](190/A190973.asm)): a(n) = 7*a(n-1) - 4*a(n-2), with a(0) = 0, a(1) = 1.
 * [A190974](http://oeis.org/A190974) ([program](190/A190974.asm)): a(n) = 7*a(n-1) - 5*a(n-2), with a(0)=0, a(1)=1.
 * [A190975](http://oeis.org/A190975) ([program](190/A190975.asm)): a(n) = 8*a(n-1) - 2*a(n-2), with a(0)=0, a(1)=1.
+* [A190976](http://oeis.org/A190976) ([program](190/A190976.asm)): a(n) = 8*a(n-1) - 3*a(n-2), with a(0)=0, a(1)=1.
 * [A190978](http://oeis.org/A190978) ([program](190/A190978.asm)): a(n) = 8*a(n-1) - 6*a(n-2), with a(0)=0, a(1)=1.
 * [A190981](http://oeis.org/A190981) ([program](190/A190981.asm)): a(n) = 9*a(n-1) - 4*a(n-2), with a(0)=0, a(1)=1.
 * [A190983](http://oeis.org/A190983) ([program](190/A190983.asm)): a(n) = 9*a(n-1) - 6*a(n-2), with a(0)=0, a(1)=1.

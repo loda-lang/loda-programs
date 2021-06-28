@@ -3266,6 +3266,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131941](http://oeis.org/A131941) ([program](131/A131941.asm)): Partial sums of ceiling(n^2/2) (A000982).
 * [A131949](http://oeis.org/A131949) ([program](131/A131949.asm)): Row sums of triangle A131948.
 * [A131951](http://oeis.org/A131951) ([program](131/A131951.asm)): 2^n+n*(n+3).
+* [A131962](http://oeis.org/A131962) ([program](131/A131962.asm)): Expansion of psi(x) * phi(-x^12) / chi(-x^4) in powers of x where phi(), psi(), chi() are Ramanujan theta functions.
+* [A131963](http://oeis.org/A131963) ([program](131/A131963.asm)): Expansion of f(x, x^2) * f(x^4, x^12) in powers of x where f(, ) is Ramanujan's general theta function.
+* [A131964](http://oeis.org/A131964) ([program](131/A131964.asm)): Expansion of f(x^2, x^10) / f(x, x^3) in powers of x where f(, ) is Ramanujan's general theta function.
 * [A131973](http://oeis.org/A131973) ([program](131/A131973.asm)): Period 8: repeat 121, 242, 363, 484, 605, 726, 847, 968.
 * [A131991](http://oeis.org/A131991) ([program](131/A131991.asm)): a(n) = 1 + prime(n) + prime(n)^2 + prime(n)^3.
 * [A131992](http://oeis.org/A131992) ([program](131/A131992.asm)): a(n) = 1 + prime(n) + prime(n)^2 + prime(n)^3 + prime(n)^4.
@@ -4821,6 +4824,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144750](http://oeis.org/A144750) ([program](144/A144750.asm)): A098777 mod 9.
 * [A144769](http://oeis.org/A144769) ([program](144/A144769.asm)): a(n) = floor(prime(n)/3).
 * [A144786](http://oeis.org/A144786) ([program](144/A144786.asm)): If n is an oblong number A002378, then a(n)=a(j) where j is the number of oblong numbers in (0,n], otherwise a(n)=n.
+* [A144831](http://oeis.org/A144831) ([program](144/A144831.asm)): (n+1)^2 - (smallest prime > n^2).
 * [A144898](http://oeis.org/A144898) ([program](144/A144898.asm)): Expansion of x/((1-x-x^3)*(1-x)^4).
 * [A144916](http://oeis.org/A144916) ([program](144/A144916.asm)): Integers k for which |A144912| attains a new maximal odd value.
 * [A144917](http://oeis.org/A144917) ([program](144/A144917.asm)): a(n) is the maximal odd value attained by A144916(n).

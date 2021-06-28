@@ -641,6 +641,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004157](http://oeis.org/A004157) ([program](004/A004157.asm)): Sum of digits of n-th triangular number.
 * [A004158](http://oeis.org/A004158) ([program](004/A004158.asm)): Triangular numbers written backwards.
 * [A004159](http://oeis.org/A004159) ([program](004/A004159.asm)): Sum of digits of n^2.
+* [A004160](http://oeis.org/A004160) ([program](004/A004160.asm)): Sum of digits of tetrahedral numbers.
 * [A004161](http://oeis.org/A004161) ([program](004/A004161.asm)): Tetrahedral numbers written backwards.
 * [A004163](http://oeis.org/A004163) ([program](004/A004163.asm)): Pentagonal numbers written backwards.
 * [A004164](http://oeis.org/A004164) ([program](004/A004164.asm)): Sum of digits of n^3.
@@ -1706,6 +1707,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A010785](http://oeis.org/A010785) ([program](010/A010785.asm)): Repdigit numbers, or numbers with repeated digits.
 * [A010786](http://oeis.org/A010786) ([program](010/A010786.asm)): Floor-factorial numbers: a(n) = Product_{k=1..n} floor(n/k).
 * [A010843](http://oeis.org/A010843) ([program](010/A010843.asm)): Incomplete Gamma Function at -3.
+* [A010847](http://oeis.org/A010847) ([program](010/A010847.asm)): Number of numbers <= n with a prime factor that does not divide n.
 * [A010848](http://oeis.org/A010848) ([program](010/A010848.asm)): Number of numbers k <= n such that at least one prime factor of n is not a prime factor of k.
 * [A010850](http://oeis.org/A010850) ([program](010/A010850.asm)): Constant sequence: a(n) = 11.
 * [A010851](http://oeis.org/A010851) ([program](010/A010851.asm)): Constant sequence: a(n) = 12.
@@ -5207,6 +5209,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040350](http://oeis.org/A040350) ([program](040/A040350.asm)): Continued fraction for sqrt(370).
 * [A040357](http://oeis.org/A040357) ([program](040/A040357.asm)): Continued fraction for sqrt(377).
 * [A040360](http://oeis.org/A040360) ([program](040/A040360.asm)): Continued fraction for sqrt(380).
+* [A040367](http://oeis.org/A040367) ([program](040/A040367.asm)): Continued fraction for sqrt(387).
 * [A040370](http://oeis.org/A040370) ([program](040/A040370.asm)): Continued fraction for sqrt(390).
 * [A040372](http://oeis.org/A040372) ([program](040/A040372.asm)): Continued fraction for sqrt(392).
 * [A040375](http://oeis.org/A040375) ([program](040/A040375.asm)): Continued fraction for sqrt(395).
@@ -5253,6 +5256,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040505](http://oeis.org/A040505) ([program](040/A040505.asm)): Continued fraction for sqrt(528).
 * [A040506](http://oeis.org/A040506) ([program](040/A040506.asm)): Continued fraction for sqrt(530).
 * [A040507](http://oeis.org/A040507) ([program](040/A040507.asm)): Continued fraction for sqrt(531).
+* [A040509](http://oeis.org/A040509) ([program](040/A040509.asm)): Continued fraction for sqrt(533).
 * [A040520](http://oeis.org/A040520) ([program](040/A040520.asm)): Continued fraction for sqrt(544).
 * [A040528](http://oeis.org/A040528) ([program](040/A040528.asm)): Continued fraction for sqrt(552).
 * [A040533](http://oeis.org/A040533) ([program](040/A040533.asm)): Continued fraction for sqrt(557).
@@ -6092,6 +6096,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A047780](http://oeis.org/A047780) ([program](047/A047780.asm)): Number of inequivalent ways to color faces of a cube using at most n colors.
 * [A047786](http://oeis.org/A047786) ([program](047/A047786.asm)): a(n) = (9*n^4 + 4*n^3 - n)/2.
 * [A047790](http://oeis.org/A047790) ([program](047/A047790.asm)): a(n) = Fibonacci(2*n)-2^n+1.
+* [A047809](http://oeis.org/A047809) ([program](047/A047809.asm)): a(n) counts different values of i^2+j^2+k^2 <= n^2 or number of distances from the origin to all integer points inside a sphere of radius n.
 * [A047819](http://oeis.org/A047819) ([program](047/A047819.asm)): a(n) = Product_{i=1..n} ((i+3)*(i+4)*(i+5))/(i*(i+1)*(i+2)).
 * [A047838](http://oeis.org/A047838) ([program](047/A047838.asm)): a(n) = floor(n^2/2) - 1.
 * [A047839](http://oeis.org/A047839) ([program](047/A047839.asm)): a(n) = n + floor( sqrt(2*n) ).

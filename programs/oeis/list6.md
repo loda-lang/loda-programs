@@ -1776,6 +1776,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336642](http://oeis.org/A336642) ([program](336/A336642.asm)): One less than the largest square dividing n: a(n) = A008833(n)-1.
 * [A336643](http://oeis.org/A336643) ([program](336/A336643.asm)): Squarefree kernel of n divided by the squarefree part of n: a(n) = rad(n) / core(n).
 * [A336649](http://oeis.org/A336649) ([program](336/A336649.asm)): Sum of divisors of A336651(n) (odd part of n divided by its largest squarefree divisor).
+* [A336650](http://oeis.org/A336650) ([program](336/A336650.asm)): a(n) = p^e, where p is the smallest odd prime factor of n, and e is its exponent, with a(n) = 1 when n is a power of two.
 * [A336691](http://oeis.org/A336691) ([program](336/A336691.asm)): Number of distinct prime factors of 1+sigma(n).
 * [A336692](http://oeis.org/A336692) ([program](336/A336692.asm)): Binary weight of 1+sigma(n).
 * [A336696](http://oeis.org/A336696) ([program](336/A336696.asm)): Sum of odd divisors of 1+sigma(n).
@@ -1941,6 +1942,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339771](http://oeis.org/A339771) ([program](339/A339771.asm)): a(n) = Sum_{i=0..n} Sum_{j=0..n} 2^max(i,j).
 * [A339824](http://oeis.org/A339824) ([program](339/A339824.asm)): Even bisection of the infinite Fibonacci word A003849.
 * [A339825](http://oeis.org/A339825) ([program](339/A339825.asm)): Odd bisection of the infinite Fibonacci word A003849.
+* [A339903](http://oeis.org/A339903) ([program](339/A339903.asm)): Fully multiplicative with a(p) = A000265(q-1), where q = A151800(p), the next prime > p.
 * [A339904](http://oeis.org/A339904) ([program](339/A339904.asm)): The odd part of {Euler totient function phi applied to the prime shifted n}: a(n) = A000265(A000010(A003961(n))).
 * [A339905](http://oeis.org/A339905) ([program](339/A339905.asm)): Fully multiplicative with a(prime(k)) = prime(k+1) - 1.
 * [A339918](http://oeis.org/A339918) ([program](339/A339918.asm)): a(n) = Sum_{k=1..n} floor(3*n/k).
@@ -2055,6 +2057,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A342397](http://oeis.org/A342397) ([program](342/A342397.asm)): Expansion of the o.g.f. (2*x^2 + 3*x + 2)*x/((x + 1)^2*(x - 1)^4).
 * [A342410](http://oeis.org/A342410) ([program](342/A342410.asm)): The binary expansion of a(n) corresponds to that of n where all the 1's have been replaced by 0's except in the last run of 1's.
 * [A342482](http://oeis.org/A342482) ([program](342/A342482.asm)): a(n) = n*(2^(n-1) - n - 1).
+* [A342568](http://oeis.org/A342568) ([program](342/A342568.asm)): 1/a(n) is the current through the resistor at the central rung of an electrical ladder network made of 6*n+1 one-ohm resistors, fed by 1 volt at diametrically opposite ends of the ladder.
 * [A342673](http://oeis.org/A342673) ([program](342/A342673.asm)): a(n) = gcd(n, sigma(A003961(n))), where A003961 is fully multiplicative with a(prime(k)) = prime(k+1), and sigma is the sum of divisors of n.
 * [A342675](http://oeis.org/A342675) ([program](342/A342675.asm)): a(n) = Sum_{d|n} d^(n-d+1).
 * [A342676](http://oeis.org/A342676) ([program](342/A342676.asm)): a(n) is the number of lunar primes less than or equal to n.

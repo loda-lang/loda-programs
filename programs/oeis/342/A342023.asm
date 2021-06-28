@@ -5,7 +5,7 @@ lpb $0
   cal $0,85731 ; Greatest common divisor of n and its arithmetic derivative.
   sub $0,1
 lpe
-lpb $0
-  mov $0,1
+mov $1,$0
+lpb $1
   mov $1,1
 lpe

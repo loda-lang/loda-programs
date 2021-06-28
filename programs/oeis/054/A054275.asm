@@ -3,9 +3,8 @@
 
 pow $0,2
 lpb $0
-  mov $2,$0
-  cal $2,131912 ; Row sums of triangle A131911.
-  clr $0,2
+  mov $1,$0
+  mov $0,0
+  cal $1,131912 ; Row sums of triangle A131911.
 lpe
-mov $1,$2
 add $1,1

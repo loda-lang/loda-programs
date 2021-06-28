@@ -1032,6 +1032,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215885](http://oeis.org/A215885) ([program](215/A215885.asm)): a(n) = 3*a(n-1) - a(n-3), with a(0) = 3, a(1) = 3, and a(2) = 9.
 * [A215887](http://oeis.org/A215887) ([program](215/A215887.asm)): Written in decimal, n ends in a(n) consecutive nonzero digits.
 * [A215928](http://oeis.org/A215928) ([program](215/A215928.asm)): a(n) = 2*a(n-1) + a(n-2) for n > 2, a(0) = a(1) = 1, a(2) = 2.
+* [A215942](http://oeis.org/A215942) ([program](215/A215942.asm)): a(n) = sigma(6*n) - 12*n.
 * [A215947](http://oeis.org/A215947) ([program](215/A215947.asm)): Difference between the sum of the even divisors and the sum of the odd divisors of 2n.
 * [A215960](http://oeis.org/A215960) ([program](215/A215960.asm)): First differences of A016759.
 * [A216038](http://oeis.org/A216038) ([program](216/A216038.asm)): Number of isomorphism classes of unstretchable simplicial arrangements of n pseudolines in the real projective plane that satisfy Pappus's theorem.
@@ -2465,6 +2466,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244895](http://oeis.org/A244895) ([program](244/A244895.asm)): Period 5 sequence [0, 1, 1, -1, -1, ...].
 * [A244919](http://oeis.org/A244919) ([program](244/A244919.asm)): For odd prime p, largest k such that binomial(2p-1, p-1) is congruent to 1 modulo p^k.
 * [A244953](http://oeis.org/A244953) ([program](244/A244953.asm)): a(n) = Sum_{i=0..n} (-i mod 4).
+* [A244974](http://oeis.org/A244974) ([program](244/A244974.asm)): Sum of numbers m <= n whose set of prime divisors is a subset of the set of prime divisors of n.
 * [A244975](http://oeis.org/A244975) ([program](244/A244975.asm)): (7^n - 2*n - 1)/4.
 * [A244988](http://oeis.org/A244988) ([program](244/A244988.asm)): a(n) = n - A244989(n).
 * [A244989](http://oeis.org/A244989) ([program](244/A244989.asm)): Partial sums of A244992: a(1) = 0, and for n >= 1, a(n) = A244992(n) + a(n-1); Inverse function for A244991.
@@ -2787,6 +2789,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A249736](http://oeis.org/A249736) ([program](249/A249736.asm)): Triangular numbers modulo 30.
 * [A249739](http://oeis.org/A249739) ([program](249/A249739.asm)): The smallest prime whose square divides n, 1 if n is squarefree.
 * [A249740](http://oeis.org/A249740) ([program](249/A249740.asm)): The largest prime whose square divides n, 1 if n is squarefree.
+* [A249745](http://oeis.org/A249745) ([program](249/A249745.asm)): Permutation of natural numbers: a(n) = (1 + A064989(A007310(n))) / 2.
 * [A249746](http://oeis.org/A249746) ([program](249/A249746.asm)): Permutation of natural numbers: a(n) = A126760(A249735(n)) = A249824(A064216(n)).
 * [A249769](http://oeis.org/A249769) ([program](249/A249769.asm)): Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
 * [A249824](http://oeis.org/A249824) ([program](249/A249824.asm)): Permutation of natural numbers: a(n) = A078898(A003961(A003961(2*n))).

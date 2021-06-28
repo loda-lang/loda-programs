@@ -166,6 +166,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254044](http://oeis.org/A254044) ([program](254/A254044.asm)): a(1) = 1, for n>1: a(n) = a(A253889(n)) + (1 if n is of the form 3n or 3n+1, otherwise 0).
 * [A254046](http://oeis.org/A254046) ([program](254/A254046.asm)): Column index of n in A191450: a(3n) = 1, a(3n+1) = 1, a(3n+2) = 1 + a(n+1).
 * [A254049](http://oeis.org/A254049) ([program](254/A254049.asm)): Odd bisection of A048673: a(n) = A048673((2*n)-1).
+* [A254050](http://oeis.org/A254050) ([program](254/A254050.asm)): Permutation of odd numbers: a(n) = (2*(A249745(n))) - 1 = A064989(A007310(n)).
 * [A254065](http://oeis.org/A254065) ([program](254/A254065.asm)): Vulgar fractions whose denominators are numbers ending with nine, the case 1/19.
 * [A254142](http://oeis.org/A254142) ([program](254/A254142.asm)): a(n) = (9*n+10)*binomial(n+9,9)/10.
 * [A254340](http://oeis.org/A254340) ([program](254/A254340.asm)): Sum of the distinct prime factors of n plus n+1: a(n) = A008472(n) + n + 1.
@@ -574,12 +575,15 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A260113](http://oeis.org/A260113) ([program](260/A260113.asm)): Maximum number of queens on an n X n chessboard such that no queen attacks more than one other queen.
 * [A260160](http://oeis.org/A260160) ([program](260/A260160.asm)): a(n) = a(n-2) + a(n-6) - a(n-8) with n>8, the first eight terms are 0 except that for a(5) = a(7) = 1.
 * [A260181](http://oeis.org/A260181) ([program](260/A260181.asm)): Numbers whose last digit is prime.
+* [A260190](http://oeis.org/A260190) ([program](260/A260190.asm)): Kronecker symbol(-6 / 2*n + 1).
+* [A260192](http://oeis.org/A260192) ([program](260/A260192.asm)): Kronecker symbol(-6 / 2*n + 7).
 * [A260196](http://oeis.org/A260196) ([program](260/A260196.asm)): 1, -3, followed by -1's.
 * [A260216](http://oeis.org/A260216) ([program](260/A260216.asm)): Number of permutations p of [n] with no fixed points and cyclic displacement of elements restricted by ten: p(i)<>i and (i-p(i) mod n <= 10 or p(i)-i mod n <= 10).
 * [A260217](http://oeis.org/A260217) ([program](260/A260217.asm)): Number of base-3 n-digit pandigital numbers.
 * [A260220](http://oeis.org/A260220) ([program](260/A260220.asm)): Number of symmetry-allowed, linearly-independent terms at n-th order in the expansion of T1 x t1 rovibrational perturbation matrix H(Jx,Jy,Jz).
 * [A260233](http://oeis.org/A260233) ([program](260/A260233.asm)): Smallest prime factor of the n-th hexagonal number (A000384).
 * [A260234](http://oeis.org/A260234) ([program](260/A260234.asm)): Largest prime factor of the n-th hexagonal number (A000384).
+* [A260235](http://oeis.org/A260235) ([program](260/A260235.asm)): Number of distinct prime factors of the n-th hexagonal number (A000384).
 * [A260236](http://oeis.org/A260236) ([program](260/A260236.asm)): Number of prime factors, with multiplicity, of the n-th hexagonal number (A000384).
 * [A260260](http://oeis.org/A260260) ([program](260/A260260.asm)): a(n) = n*(16*n^2 - 21*n + 7)/2.
 * [A260300](http://oeis.org/A260300) ([program](260/A260300.asm)): Bisection of A258409: a(n) = A258409(2n+1).
@@ -1963,6 +1967,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A280186](http://oeis.org/A280186) ([program](280/A280186.asm)): Number of 3-element subsets of S = {1..n} whose sum is odd.
 * [A280193](http://oeis.org/A280193) ([program](280/A280193.asm)): a(2*n) = 2, a(2*n + 1) = -1, a(0) = 1.
 * [A280237](http://oeis.org/A280237) ([program](280/A280237.asm)): Period length 8 sequence [0, 1, 0, 1, -1, 1, 0, 1, ...].
+* [A280261](http://oeis.org/A280261) ([program](280/A280261.asm)): Period length 12 sequence [0, 1, -1, 0, -1, -1, 0, -1, 1, 0, 1, 1, ...].
 * [A280292](http://oeis.org/A280292) ([program](280/A280292.asm)): a(n) = sopfr(n) - sopf(n).
 * [A280293](http://oeis.org/A280293) ([program](280/A280293.asm)): a(0) = 3, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [-5, 4].
 * [A280304](http://oeis.org/A280304) ([program](280/A280304.asm)): a(n) = 3*n*(n^2 + 3*n + 4).
