@@ -3,6 +3,5 @@
 
 cal $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
 cal $0,209229 ; Characteristic function of powers of 2, cf. A000079.
-mov $1,$0
+sub $1,$0
 add $1,1
-mod $1,2

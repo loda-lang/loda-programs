@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,83040 ; Number of divisors of n that are <= 4
   sub $0,1
+  cal $2,83040 ; Number of divisors of n that are <= 4
   add $1,$2
 lpe
 add $1,1

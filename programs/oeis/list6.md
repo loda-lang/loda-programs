@@ -219,6 +219,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304389](http://oeis.org/A304389) ([program](304/A304389.asm)): a(n) = 126*2^n - 22 (n>=1).
 * [A304404](http://oeis.org/A304404) ([program](304/A304404.asm)): If n = Product (p_j^k_j) then a(n) = Product (n/p_j^k_j).
 * [A304487](http://oeis.org/A304487) ([program](304/A304487.asm)): a(n) = (3 + 2*n - 3*n^2 + 4*n^3 - 3*((-1 + n) mod 2))/6.
+* [A304491](http://oeis.org/A304491) ([program](304/A304491.asm)): Last or deepest exponent in the power-tower for n.
 * [A304498](http://oeis.org/A304498) ([program](304/A304498.asm)): Solution (b(n)) of the system of complementary equations defined in Comments.
 * [A304503](http://oeis.org/A304503) ([program](304/A304503.asm)): a(n) = 3*(n+1)*(9*n+4).
 * [A304504](http://oeis.org/A304504) ([program](304/A304504.asm)): a(n) = 3*(3*n+1)*(9*n+8)/2.
@@ -2015,6 +2016,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A341389](http://oeis.org/A341389) ([program](341/A341389.asm)): Characteristic function of A158705, nonnegative integers with an odd number of even powers of 2 in their base-2 representation.
 * [A341414](http://oeis.org/A341414) ([program](341/A341414.asm)): a(n) = (Fibonacci(n)*Lucas(n)) mod 10.
 * [A341463](http://oeis.org/A341463) ([program](341/A341463.asm)): a(n) = (-1)^(n+1) * (3^n+1)/2.
+* [A341514](http://oeis.org/A341514) ([program](341/A341514.asm)): Number of trailing zeros in A097801-base.
 * [A341522](http://oeis.org/A341522) ([program](341/A341522.asm)): a(n) = A156552(3*A005940(1+n)).
 * [A341523](http://oeis.org/A341523) ([program](341/A341523.asm)): Number of prime factors (with multiplicity) shared by n and sigma(n): a(n) = bigomega(gcd(n, sigma(n))).
 * [A341543](http://oeis.org/A341543) ([program](341/A341543.asm)): a(n) = sqrt( Product_{j=1..n} Product_{k=1..2} (4*sin((2*j-1)*Pi/(2*n))^2 + 4*sin((2*k-1)*Pi/2)^2) ).
@@ -2135,6 +2137,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344814](http://oeis.org/A344814) ([program](344/A344814.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 3^(k-1).
 * [A344815](http://oeis.org/A344815) ([program](344/A344815.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 4^(k-1).
 * [A344816](http://oeis.org/A344816) ([program](344/A344816.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 5^(k-1).
+* [A344863](http://oeis.org/A344863) ([program](344/A344863.asm)): a(n) = mu(sigma(n)).
 * [A344864](http://oeis.org/A344864) ([program](344/A344864.asm)): a(n) = mu(d(n)).
 * [A344866](http://oeis.org/A344866) ([program](344/A344866.asm)): Number of polygons formed when every pair of vertices of a regular (2n-1)-gon are joined by an infinite line.
 * [A344907](http://oeis.org/A344907) ([program](344/A344907.asm)): Number of polygon edges formed when every pair of vertices of a regular (2n-1)-gon are joined by an infinite line.

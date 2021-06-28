@@ -757,6 +757,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157839](http://oeis.org/A157839) ([program](157/A157839.asm)): 1728000n - 1451760.
 * [A157842](http://oeis.org/A157842) ([program](157/A157842.asm)): a(n) = 3600*n^2 - 5599*n + 2177.
 * [A157843](http://oeis.org/A157843) ([program](157/A157843.asm)): 1728000n - 1343760.
+* [A157845](http://oeis.org/A157845) ([program](157/A157845.asm)): a(0) = 1, a(n) = sum of binary digits of all prior terms, expressed in binary.
 * [A157853](http://oeis.org/A157853) ([program](157/A157853.asm)): 3600n^2 - 1601n + 178.
 * [A157854](http://oeis.org/A157854) ([program](157/A157854.asm)): 1728000n - 384240.
 * [A157857](http://oeis.org/A157857) ([program](157/A157857.asm)): a(n) = 3600*n^2 - n.
@@ -3373,6 +3374,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179904](http://oeis.org/A179904) ([program](179/A179904.asm)): a(n) = A056520(n)+1 for n>0, a(0)=1.
 * [A179905](http://oeis.org/A179905) ([program](179/A179905.asm)): (1, 4, 7, 10, 13,...) convolved with (1, 0, 4, 7, 10, 13...); given A016777 = (1, 4, 7, 10, 13,...).
 * [A179935](http://oeis.org/A179935) ([program](179/A179935.asm)): Squares where the number of decimal digits is also a square.
+* [A179942](http://oeis.org/A179942) ([program](179/A179942.asm)): Number of times n appears in a 1000 x 1000 multiplication table.
 * [A179976](http://oeis.org/A179976) ([program](179/A179976.asm)): 2^(2n+1) mod (2n+1).
 * [A179986](http://oeis.org/A179986) ([program](179/A179986.asm)): Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.
 * [A179991](http://oeis.org/A179991) ([program](179/A179991.asm)): Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.
@@ -3486,6 +3488,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181286](http://oeis.org/A181286) ([program](181/A181286.asm)): Partial sums of floor(n^2/3) (A000212).
 * [A181287](http://oeis.org/A181287) ([program](181/A181287.asm)): Numbers of the form i*5^j-1 (i=1..4, j >= 0).
 * [A181288](http://oeis.org/A181288) ([program](181/A181288.asm)): Numbers of the form i*6^j-1 (i=1..5, j >= 0).
+* [A181290](http://oeis.org/A181290) ([program](181/A181290.asm)): The sum of the lengths of the 2-compositions of n. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n. The length of the 2-composition is the number of columns.
 * [A181292](http://oeis.org/A181292) ([program](181/A181292.asm)): The sum of the entries in the top rows of all 2-compositions of n. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
 * [A181294](http://oeis.org/A181294) ([program](181/A181294.asm)): Number of 0's in all 2-compositions of n. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
 * [A181296](http://oeis.org/A181296) ([program](181/A181296.asm)): The number of odd entries in all the 2-compositions of n.
@@ -4576,6 +4579,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191531](http://oeis.org/A191531) ([program](191/A191531.asm)): Sum of lengths of initial and final horizontal segments over all dispersed Dyck paths of semilength n (i.e., over all Motzkin paths of length n with no (1,0)-steps at positive heights).
 * [A191558](http://oeis.org/A191558) ([program](191/A191558.asm)): a(n) = 0 if n prime, otherwise n.
 * [A191562](http://oeis.org/A191562) ([program](191/A191562.asm)): a(n) = 7^n mod 3*n.
+* [A191590](http://oeis.org/A191590) ([program](191/A191590.asm)): a(n) is the genus of the modular curve associated to the principal congruence subgroup of level p(n), where p(n) is the n-th prime number.
 * [A191593](http://oeis.org/A191593) ([program](191/A191593.asm)): Number of partitions of 12*n into parts < 5.
 * [A191596](http://oeis.org/A191596) ([program](191/A191596.asm)): Expansion of (1+x)^4/(1-x)^7.
 * [A191597](http://oeis.org/A191597) ([program](191/A191597.asm)): Expansion of x*(1+3*x)/ ( (1-4*x)*(1+x+x^2)).

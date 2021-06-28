@@ -5205,6 +5205,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040341](http://oeis.org/A040341) ([program](040/A040341.asm)): Continued fraction for sqrt(360).
 * [A040342](http://oeis.org/A040342) ([program](040/A040342.asm)): Continued fraction for sqrt(362).
 * [A040343](http://oeis.org/A040343) ([program](040/A040343.asm)): Continued fraction for sqrt(363).
+* [A040345](http://oeis.org/A040345) ([program](040/A040345.asm)): Continued fraction for sqrt(365).
 * [A040348](http://oeis.org/A040348) ([program](040/A040348.asm)): Continued fraction for sqrt(368).
 * [A040350](http://oeis.org/A040350) ([program](040/A040350.asm)): Continued fraction for sqrt(370).
 * [A040357](http://oeis.org/A040357) ([program](040/A040357.asm)): Continued fraction for sqrt(377).

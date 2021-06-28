@@ -450,6 +450,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A054013](http://oeis.org/A054013) ([program](054/A054013.asm)): Chowla function of n read modulo n.
 * [A054024](http://oeis.org/A054024) ([program](054/A054024.asm)): Sum of the divisors of n reduced modulo n.
 * [A054027](http://oeis.org/A054027) ([program](054/A054027.asm)): Numbers that do not divide their sum of divisors.
+* [A054054](http://oeis.org/A054054) ([program](054/A054054.asm)): Smallest digit of n.
 * [A054055](http://oeis.org/A054055) ([program](054/A054055.asm)): Largest digit of n.
 * [A054066](http://oeis.org/A054066) ([program](054/A054066.asm)): Position of n-th 1 in A054065.
 * [A054071](http://oeis.org/A054071) ([program](054/A054071.asm)): Position of 1 in the permutation of 1,2,...,n obtained by ordering the fractional parts {h*sqrt(2)} for h=1,2,...,n.
@@ -1908,6 +1909,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A066449](http://oeis.org/A066449) ([program](066/A066449.asm)): Binomial(n, phi(n)), where phi(n) is the Euler totient function.
 * [A066455](http://oeis.org/A066455) ([program](066/A066455.asm)): 6*binomial(n,4)+5*binomial(n,2)-4*n+5.
 * [A066456](http://oeis.org/A066456) ([program](066/A066456.asm)): Upper bound on number of regular triangulations of cyclic polytope C(n, n-4).
+* [A066459](http://oeis.org/A066459) ([program](066/A066459.asm)): Product of factorials of the digits of n.
 * [A066481](http://oeis.org/A066481) ([program](066/A066481.asm)): Largest anti-divisor of n.
 * [A066490](http://oeis.org/A066490) ([program](066/A066490.asm)): Number of primes of the form 4m+3 <= n.
 * [A066492](http://oeis.org/A066492) ([program](066/A066492.asm)): a(n) = A056524(n)/11.

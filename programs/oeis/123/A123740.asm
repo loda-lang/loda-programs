@@ -1,6 +1,14 @@
 ; A123740: Characteristic sequence for Wythoff AB-numbers A003623.
 ; 0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1
 
-cal $0,159917 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 01, starting from a(0) = 0.
-div $0,2
-mov $1,$0
+mov $1,3
+lpb $1
+  lpb $0
+    mov $1,$0
+    mov $2,$0
+    cal $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
+    mov $0,$2
+  lpe
+lpe
+sub $1,1
+mod $1,2

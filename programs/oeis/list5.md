@@ -2687,6 +2687,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A292061](http://oeis.org/A292061) ([program](292/A292061.asm)): a(n) = (n-3)*(n-2)^2*(n-1)^2*n/24.
 * [A292077](http://oeis.org/A292077) ([program](292/A292077.asm)): a(n) = 0 if n=1; a(n) = 1-a(n-2) if n is odd; a(n) = 1-a(n/2) if n is even.
 * [A292117](http://oeis.org/A292117) ([program](292/A292117.asm)): Coefficients of a power series f(q) with coefficients +1 or -1 such that Product_{m >= 1} f(q^(2m-1)) = Sum_{m = -oo..oo} q^(m(3m-1)/2).
+* [A292246](http://oeis.org/A292246) ([program](292/A292246.asm)): Base-2 expansion of a(n) encodes the steps where numbers of the form 3k+2 are encountered when map x -> A253889(x) is iterated down to 1, starting from x=n.
 * [A292251](http://oeis.org/A292251) ([program](292/A292251.asm)): The 3-adic valuation of A048673(n).
 * [A292269](http://oeis.org/A292269) ([program](292/A292269.asm)): If n is 1 or a prime, then a(n) = 1, otherwise a(n) = the third smallest divisor of n.
 * [A292272](http://oeis.org/A292272) ([program](292/A292272.asm)): a(n) = n - A048735(n) = n - (n AND floor(n/2)).
@@ -2950,6 +2951,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296965](http://oeis.org/A296965) ([program](296/A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
 * [A296966](http://oeis.org/A296966) ([program](296/A296966.asm)): Sum of all the parts in the partitions of n into two distinct parts such that the smaller part divides the larger.
 * [A297024](http://oeis.org/A297024) ([program](297/A297024.asm)): Sum of the smaller parts of the partitions of n into two parts such that the smaller part does not divide the larger.
+* [A297043](http://oeis.org/A297043) ([program](297/A297043.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-15 digits of n; see Comments.
 * [A297044](http://oeis.org/A297044) ([program](297/A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
 * [A297045](http://oeis.org/A297045) ([program](297/A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
 * [A297086](http://oeis.org/A297086) ([program](297/A297086.asm)): a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.

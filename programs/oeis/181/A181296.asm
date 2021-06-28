@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,181331 ; Number of 0's in the top rows of all 2-compositions of n.
   trn $0,2
+  cal $2,181331 ; Number of 0's in the top rows of all 2-compositions of n.
   add $1,$2
 lpe
 mul $1,2

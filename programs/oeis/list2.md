@@ -366,6 +366,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102678](http://oeis.org/A102678) ([program](102/A102678.asm)): Number of digits >= 6 in the decimal representations of all integers from 0 to n.
 * [A102679](http://oeis.org/A102679) ([program](102/A102679.asm)): Number of digits >= 7 in decimal representation of n.
 * [A102680](http://oeis.org/A102680) ([program](102/A102680.asm)): Number of digits >= 7 in the decimal representations of all integers from 0 to n.
+* [A102681](http://oeis.org/A102681) ([program](102/A102681.asm)): Number of digits >= 8 in decimal representation of n.
 * [A102683](http://oeis.org/A102683) ([program](102/A102683.asm)): Number of digits 9 in decimal representation of n.
 * [A102685](http://oeis.org/A102685) ([program](102/A102685.asm)): Partial sums of A055640.
 * [A102686](http://oeis.org/A102686) ([program](102/A102686.asm)): Numbers k such that 11*k + 3 is prime.
@@ -2323,6 +2324,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122876](http://oeis.org/A122876) ([program](122/A122876.asm)): a(0)=1, a(1)=1, a(2)=2, a(n) = a(n-1) - a(n-2) for n>2.
 * [A122878](http://oeis.org/A122878) ([program](122/A122878.asm)): Periodic sequence of period 21 related to a simple scheduling problem.
 * [A122879](http://oeis.org/A122879) ([program](122/A122879.asm)): Periodic sequence of period 21.
+* [A122895](http://oeis.org/A122895) ([program](122/A122895.asm)): Characteristic function of natural numbers with number of divisors equal to a Fibonacci number.
 * [A122918](http://oeis.org/A122918) ([program](122/A122918.asm)): Expansion of (1+x)^2/(1+x+x^2)^2.
 * [A122931](http://oeis.org/A122931) ([program](122/A122931.asm)): Row sums of triangular array A122930.
 * [A122958](http://oeis.org/A122958) ([program](122/A122958.asm)): a(0)=1, a(n) = 2 - 2^(n-1) for n>0.
@@ -3637,6 +3639,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134401](http://oeis.org/A134401) ([program](134/A134401.asm)): Row sums of triangle A134400.
 * [A134402](http://oeis.org/A134402) ([program](134/A134402.asm)): Triangle read by rows, for n > 0, n zeros followed by n.
 * [A134403](http://oeis.org/A134403) ([program](134/A134403.asm)): Triangle read by rows: row n consists of (n, n, (n+1), (n+2), (n+3),...).
+* [A134404](http://oeis.org/A134404) ([program](134/A134404.asm)): Triangle read by rows in which row n contains Fib(0), ..., Fib(n-1), Fib(n), Fib(n-1), ..., Fib(0).
 * [A134421](http://oeis.org/A134421) ([program](134/A134421.asm)): Partial sums of A134021.
 * [A134429](http://oeis.org/A134429) ([program](134/A134429.asm)): Array read by rows: row n lists 4 terms: k, m, k, m where k = 8n+3 and m = -8n -5.
 * [A134430](http://oeis.org/A134430) ([program](134/A134430.asm)): Period 4: repeat [1, -2, -2, 1].
@@ -4250,6 +4253,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139701](http://oeis.org/A139701) ([program](139/A139701.asm)): Binomial transform of [1, 100, 100, 100, ...].
 * [A139704](http://oeis.org/A139704) ([program](139/A139704.asm)): Nearly palindromic numbers: non-palindromes that can be made palindromic by inserting an extra digit.
 * [A139716](http://oeis.org/A139716) ([program](139/A139716.asm)): If k is the largest divisor of n that is <= sqrt(n) then a(n) = n - k^2.
+* [A139717](http://oeis.org/A139717) ([program](139/A139717.asm)): If k is the smallest divisor of n that is >= sqrt(n) then a(n) = k^2 - n.
 * [A139733](http://oeis.org/A139733) ([program](139/A139733.asm)): 9^n mod 8^n.
 * [A139756](http://oeis.org/A139756) ([program](139/A139756.asm)): Binomial transform of A004526.
 * [A139757](http://oeis.org/A139757) ([program](139/A139757.asm)): a(n) = (n+1)*(2n+1)^2.
