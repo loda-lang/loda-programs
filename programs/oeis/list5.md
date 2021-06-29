@@ -659,6 +659,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261969](http://oeis.org/A261969) ([program](261/A261969.asm)): Product of primes dividing n with maximum multiplicity.
 * [A261971](http://oeis.org/A261971) ([program](261/A261971.asm)): Number of unit cubes that have a side on the surface of a p X p X p cube composed of p^3 unit cubes, where p is the n-th prime.
 * [A262000](http://oeis.org/A262000) ([program](262/A262000.asm)): a(n) = n^2*(7*n - 5)/2.
+* [A262021](http://oeis.org/A262021) ([program](262/A262021.asm)): a(n) = prime(prime(n)) - n.
 * [A262033](http://oeis.org/A262033) ([program](262/A262033.asm)): Number of permutations of [n] beginning with at least floor(n/2) ascents.
 * [A262037](http://oeis.org/A262037) ([program](262/A262037.asm)): Replace the second half of digits of n with the first half in reverse order.
 * [A262070](http://oeis.org/A262070) ([program](262/A262070.asm)): a(n) = ceiling( log_3( binomial(n,2) ) ).
@@ -1421,6 +1422,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271675](http://oeis.org/A271675) ([program](271/A271675.asm)): Numbers m such that 3*m + 4 is a square.
 * [A271713](http://oeis.org/A271713) ([program](271/A271713.asm)): Numbers n such that 3*n - 5 is a square.
 * [A271723](http://oeis.org/A271723) ([program](271/A271723.asm)): Numbers k such that 3*k - 8 is a square.
+* [A271740](http://oeis.org/A271740) ([program](271/A271740.asm)): a(n) = 3*n^2 - 2*n + 2.
 * [A271743](http://oeis.org/A271743) ([program](271/A271743.asm)): Number of set partitions of [n] such that 4 is the largest element of the last block.
 * [A271751](http://oeis.org/A271751) ([program](271/A271751.asm)): Period 10 zigzag sequence; repeat: [0, 1, 2, 3, 4, 5, 4, 3, 2, 1].
 * [A271771](http://oeis.org/A271771) ([program](271/A271771.asm)): Maximum total Hamming distance between pairs of consecutive elements in any permutation of all 2^n binary words of length n.

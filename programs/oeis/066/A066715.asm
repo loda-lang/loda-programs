@@ -3,4 +3,7 @@
 
 mul $0,2
 mov $1,$0
-cal $1,9194 ; a(n) = gcd(n, sigma(n)).
+add $0,1
+cal $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+gcd $0,$1
+mov $1,$0

@@ -11,7 +11,6 @@ cal $1,276869 ; First differences of the Beatty sequence A182769 for 2 + sqrt(1/
 mul $1,2
 mov $0,$1
 add $0,$2
+div $0,2
 mov $1,$0
-mul $1,4
-div $1,8
 sub $1,2

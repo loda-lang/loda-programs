@@ -5545,6 +5545,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A045344](http://oeis.org/A045344) ([program](045/A045344.asm)): Primes congruent to {1, 2} mod 3.
 * [A045375](http://oeis.org/A045375) ([program](045/A045375.asm)): Primes congruent to {1, 2} mod 6.
 * [A045380](http://oeis.org/A045380) ([program](045/A045380.asm)): Primes congruent to 2 mod 5.
+* [A045382](http://oeis.org/A045382) ([program](045/A045382.asm)): Primes congruent to {2, 7} mod 8.
 * [A045392](http://oeis.org/A045392) ([program](045/A045392.asm)): Primes congruent to 2 mod 7.
 * [A045410](http://oeis.org/A045410) ([program](045/A045410.asm)): Primes congruent to {3, 5} mod 6.
 * [A045412](http://oeis.org/A045412) ([program](045/A045412.asm)): a(1)=3; for n > 1, a(n) = a(n-1) + 1 if n is already in the sequence, a(n) = a(n-1) + 3 otherwise.

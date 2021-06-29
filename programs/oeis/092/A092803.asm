@@ -5,9 +5,7 @@ mov $1,$0
 cal $1,181565 ; a(n) = 3*2^n + 1.
 mov $2,6
 pow $2,$0
-mov $3,4
-add $3,$2
-add $1,$3
-sub $1,9
+add $1,$2
+sub $1,5
 div $1,4
 add $1,1

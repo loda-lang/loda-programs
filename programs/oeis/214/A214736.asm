@@ -6,6 +6,4 @@ add $2,$0
 add $0,$2
 cal $0,75861 ; Least k such that (n-k) divides (n+k).
 mov $1,$0
-sub $1,3
 div $1,2
-add $1,1

@@ -4754,7 +4754,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A089559](http://oeis.org/A089559) ([program](089/A089559.asm)): Nonnegative numbers n such that 2*n + 15 is prime.
 * [A089574](http://oeis.org/A089574) ([program](089/A089574.asm)): Column 4 of an array closely related to A083480. (Both arrays have shape sequence A083479).
 * [A089581](http://oeis.org/A089581) ([program](089/A089581.asm)): a(n) = prime(2*n-1)*prime(2*n).
-* [A089593](http://oeis.org/A089593) ([program](089/A089593.asm)): Numbers n such that n^2 + 2n + 2 is prime.
 * [A089594](http://oeis.org/A089594) ([program](089/A089594.asm)): Alternating sum of squares to n.
 * [A089598](http://oeis.org/A089598) ([program](089/A089598.asm)): G.f.: (1+x^2+x^3)/(1-x^3)^2.
 * [A089607](http://oeis.org/A089607) ([program](089/A089607.asm)): a(n)=((-1)^(n+1)*A002425(n)) modulo 4.

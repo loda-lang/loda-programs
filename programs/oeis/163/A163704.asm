@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  cal $1,23548 ; Convolution of natural numbers >= 2 and Fibonacci numbers.
   cmp $0,0
+  cal $1,23548 ; Convolution of natural numbers >= 2 and Fibonacci numbers.
   sub $1,1
 lpe
 add $1,1

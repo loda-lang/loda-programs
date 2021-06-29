@@ -1561,6 +1561,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A227252](http://oeis.org/A227252) ([program](227/A227252.asm)): Number of n X 2 binary arrays indicating whether each 2 X 2 subblock of a larger binary array has lexicographically nondecreasing rows and columns, for some larger (n+1) X 3 binary array with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227259](http://oeis.org/A227259) ([program](227/A227259.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of two or less, with rows and columns of the latter in lexicographically nondecreasing order.
 * [A227265](http://oeis.org/A227265) ([program](227/A227265.asm)): Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of three or less, with rows and columns of the latter in lexicographically nondecreasing order.
+* [A227291](http://oeis.org/A227291) ([program](227/A227291.asm)): Characteristic function of squarefree numbers squared (A062503).
 * [A227316](http://oeis.org/A227316) ([program](227/A227316.asm)): a(n) = n(n+1) if n == 0 or 1 (mod 4), otherwise a(n) = n(n+1)/2.
 * [A227327](http://oeis.org/A227327) ([program](227/A227327.asm)): Number of non-equivalent ways to choose two points in an equilateral triangle grid of side n.
 * [A227347](http://oeis.org/A227347) ([program](227/A227347.asm)): Number of lattice points in the closed region bounded by the graphs of y = (5/6)*x^2, x = n, and y = 0, excluding points on the x-axis.
@@ -2618,6 +2619,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246508](http://oeis.org/A246508) ([program](246/A246508.asm)): Digital root of numbers congruent to {1,7,11,13,17,19,23,29} modulo 30.
 * [A246514](http://oeis.org/A246514) ([program](246/A246514.asm)): Number of composite numbers between prime(n) and 2*prime(n) exclusive.
 * [A246552](http://oeis.org/A246552) ([program](246/A246552.asm)): 2-adic valuation of the number of involutions of n (A000085).
+* [A246554](http://oeis.org/A246554) ([program](246/A246554.asm)): Concatenation of the n-th Fibonacci number with itself.
 * [A246574](http://oeis.org/A246574) ([program](246/A246574.asm)): a(n) = 2*(n-1)*Catalan(n).
 * [A246591](http://oeis.org/A246591) ([program](246/A246591.asm)): Smallest number that can be obtained by swapping 2 bits in the binary expansion of n.
 * [A246604](http://oeis.org/A246604) ([program](246/A246604.asm)): a(n) = Catalan(n) - n.

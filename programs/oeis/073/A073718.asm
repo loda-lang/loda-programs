@@ -4,10 +4,9 @@
 add $0,2
 cal $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
 mov $1,2
-lpb $0
-  sub $0,1
-  pow $1,$0
-  trn $0,6530
-lpe
-div $1,8
+pow $1,$0
+mul $1,9
+sub $1,15
+div $1,144
 mul $1,16
+add $1,16

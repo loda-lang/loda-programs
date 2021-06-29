@@ -1,8 +1,8 @@
 ; A115378: a(n) = number of positive integers k < n such that n XOR k = (n+k).
 ; 0,1,0,3,1,1,0,7,3,3,1,3,1,1,0,15,7,7,3,7,3,3,1,7,3,3,1,3,1,1,0,31,15,15,7,15,7,7,3,15,7,7,3,7,3,3,1,15,7,7,3,7,3,3,1,7,3,3,1,3,1,1,0,63,31,31,15,31,15,15,7,31,15,15,7,15,7,7,3,31,15,15,7,15,7,7,3,15,7,7,3,7,3
 
-mul $0,2
-cal $0,80801 ; Similar to A080799 but count only addition steps.
-cal $0,304517 ; a(n) = 16*2^n - 11 (n>=1).
-mov $1,$0
-div $1,128
+add $0,1
+cal $0,80791 ; Number of nonleading 0's in binary expansion of n.
+mov $1,2
+pow $1,$0
+sub $1,1

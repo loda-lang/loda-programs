@@ -1277,6 +1277,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A111775](http://oeis.org/A111775) ([program](111/A111775.asm)): Number of ways n can be written as a sum of at least three consecutive integers.
 * [A111802](http://oeis.org/A111802) ([program](111/A111802.asm)): n^2-n-1 for n>3; a(1)=1; a(2)=2; a(3)=3.
 * [A111859](http://oeis.org/A111859) ([program](111/A111859.asm)): Number of numbers m <= n such that 9 equals the first digit after decimal point of square root of n in decimal representation.
+* [A111863](http://oeis.org/A111863) ([program](111/A111863.asm)): Smallest prime factor of 6*n-1 that is congruent to 5 modulo 6.
 * [A111889](http://oeis.org/A111889) ([program](111/A111889.asm)): A repeated permutation of {0,...,8}.
 * [A111926](http://oeis.org/A111926) ([program](111/A111926.asm)): Expansion of x^4/((1-2*x)*(x^2-x+1)*(x-1)^2).
 * [A111927](http://oeis.org/A111927) ([program](111/A111927.asm)): Expansion of x^3 / ((x-1)*(2*x-1)*(x^2-x+1)).
@@ -2492,6 +2493,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125200](http://oeis.org/A125200) ([program](125/A125200.asm)): n*(4*n^2 + n -1)/2.
 * [A125201](http://oeis.org/A125201) ([program](125/A125201.asm)): a(n) = 8*n^2 - 7*n + 1.
 * [A125202](http://oeis.org/A125202) ([program](125/A125202.asm)): a(n) = 4*n^2 - 6*n + 1.
+* [A125254](http://oeis.org/A125254) ([program](125/A125254.asm)): Smallest prime divisor of 4n-1 that is of the form 4k-1.
 * [A125255](http://oeis.org/A125255) ([program](125/A125255.asm)): Smallest prime divisor of 4n-1.
 * [A125256](http://oeis.org/A125256) ([program](125/A125256.asm)): Smallest odd prime divisor of n^2 + 1.
 * [A125266](http://oeis.org/A125266) ([program](125/A125266.asm)): Number of repetitions in A007918.
