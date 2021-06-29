@@ -1726,6 +1726,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334841](http://oeis.org/A334841) ([program](334/A334841.asm)): a(0) = 0; for n > 0, a(n) = (number of 1's and 3's in base 4 representation of n) - (number of 0's and 2's in base 4 representation of n).
 * [A334913](http://oeis.org/A334913) ([program](334/A334913.asm)): a(n) is the sum of digits of n in signed binary nonadjacent form.
 * [A334954](http://oeis.org/A334954) ([program](334/A334954.asm)): a(n) is 1 plus the number of divisors of n.
+* [A334988](http://oeis.org/A334988) ([program](334/A334988.asm)): Sum of tetrahedral numbers dividing n.
 * [A335021](http://oeis.org/A335021) ([program](335/A335021.asm)): a(n) = Sum_{d|n, 1 < d < n} (-1)^(d + 1).
 * [A335022](http://oeis.org/A335022) ([program](335/A335022.asm)): a(n) = Sum_{d|n, 1 < d < n} (-1)^(d + 1) * d.
 * [A335025](http://oeis.org/A335025) ([program](335/A335025.asm)): Largest side lengths of almost-equilateral Heronian triangles.
@@ -1733,6 +1734,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A335063](http://oeis.org/A335063) ([program](335/A335063.asm)): a(n) = Sum_{k=0..n} (binomial(n,k) mod 2) * k.
 * [A335073](http://oeis.org/A335073) ([program](335/A335073.asm)): a(n) = Sum_{k=1..n} 2^(bigomega(k) - omega(k)).
 * [A335087](http://oeis.org/A335087) ([program](335/A335087.asm)): Row sums of A335436.
+* [A335115](http://oeis.org/A335115) ([program](335/A335115.asm)): a(2*n) = 2*n - a(n), a(2*n+1) = 2*n + 1.
 * [A335129](http://oeis.org/A335129) ([program](335/A335129.asm)): a(n) is the number of distinct lines created inside an n-gon when connecting vertex k to vertex 2k mod n.
 * [A335262](http://oeis.org/A335262) ([program](335/A335262.asm)): Triangle of triangular numbers, read by rows, constructed like this: Given a sequence t, start row 0 with t(0). Compute row n for n > 0 by reversing row n-1 and prepending t(n). The sequence t is here chosen as the triangular numbers.
 * [A335298](http://oeis.org/A335298) ([program](335/A335298.asm)): a(n) is the squared distance between the points P(n) and P(0) on a plane, n>=0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90-degree-left-turn is taken in P(n+1).
@@ -2019,6 +2021,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A341514](http://oeis.org/A341514) ([program](341/A341514.asm)): Number of trailing zeros in A097801-base.
 * [A341522](http://oeis.org/A341522) ([program](341/A341522.asm)): a(n) = A156552(3*A005940(1+n)).
 * [A341523](http://oeis.org/A341523) ([program](341/A341523.asm)): Number of prime factors (with multiplicity) shared by n and sigma(n): a(n) = bigomega(gcd(n, sigma(n))).
+* [A341528](http://oeis.org/A341528) ([program](341/A341528.asm)): a(n) = n * sigma(A003961(n)), where A003961 shifts the prime factorization of n one step towards larger primes, and sigma is the sum of the divisors of n.
 * [A341543](http://oeis.org/A341543) ([program](341/A341543.asm)): a(n) = sqrt( Product_{j=1..n} Product_{k=1..2} (4*sin((2*j-1)*Pi/(2*n))^2 + 4*sin((2*k-1)*Pi/2)^2) ).
 * [A341590](http://oeis.org/A341590) ([program](341/A341590.asm)): a(n) = (Sum_{j=1..3} StirlingS1(3,j)*(2^j-1)^n)/3!.
 * [A341591](http://oeis.org/A341591) ([program](341/A341591.asm)): Number of superior prime divisors of n.

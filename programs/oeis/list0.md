@@ -709,6 +709,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004467](http://oeis.org/A004467) ([program](004/A004467.asm)): a(n) = n*(11*n^2 - 5)/6.
 * [A004482](http://oeis.org/A004482) ([program](004/A004482.asm)): Tersum n + 1 (answer recorded in base 10).
 * [A004483](http://oeis.org/A004483) ([program](004/A004483.asm)): Tersum n + 2.
+* [A004488](http://oeis.org/A004488) ([program](004/A004488.asm)): Tersum n + n.
 * [A004495](http://oeis.org/A004495) ([program](004/A004495.asm)): Tersum n + 6.
 * [A004522](http://oeis.org/A004522) ([program](004/A004522.asm)): Generalized nim sum n + n in base 12.
 * [A004523](http://oeis.org/A004523) ([program](004/A004523.asm)): Two even followed by one odd; or floor(2n/3).
@@ -887,7 +888,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005131](http://oeis.org/A005131) ([program](005/A005131.asm)): A generalized continued fraction for Euler's number e.
 * [A005145](http://oeis.org/A005145) ([program](005/A005145.asm)): n copies of n-th prime.
 * [A005152](http://oeis.org/A005152) ([program](005/A005152.asm)): Rotation distance between binary trees on n nodes.
-* [A005171](http://oeis.org/A005171) ([program](005/A005171.asm)): 0 if n is prime else 1.
+* [A005171](http://oeis.org/A005171) ([program](005/A005171.asm)): Characteristic function of nonprimes: 0 if n is prime, else 1.
 * [A005173](http://oeis.org/A005173) ([program](005/A005173.asm)): Number of trees of subsets of an n-set.
 * [A005183](http://oeis.org/A005183) ([program](005/A005183.asm)): a(n) = n*2^(n-1) + 1.
 * [A005187](http://oeis.org/A005187) ([program](005/A005187.asm)): a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
@@ -4191,7 +4192,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031907](http://oeis.org/A031907) ([program](031/A031907.asm)): a(n) = prime(7*n - 5).
 * [A031908](http://oeis.org/A031908) ([program](031/A031908.asm)): a(n) = prime(8*n - 5).
 * [A031909](http://oeis.org/A031909) ([program](031/A031909.asm)): a(n) = prime(9*n - 5).
-* [A031910](http://oeis.org/A031910) ([program](031/A031910.asm)): a(n) = prime(10*n - 5).
 * [A031911](http://oeis.org/A031911) ([program](031/A031911.asm)): a(n) = prime(7*n - 6).
 * [A031912](http://oeis.org/A031912) ([program](031/A031912.asm)): a(n) = prime(8*n-6).
 * [A031913](http://oeis.org/A031913) ([program](031/A031913.asm)): a(n) = prime(9*n - 6).
@@ -4462,6 +4462,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033429](http://oeis.org/A033429) ([program](033/A033429.asm)): a(n) = 5*n^2.
 * [A033430](http://oeis.org/A033430) ([program](033/A033430.asm)): a(n) = 4*n^3.
 * [A033431](http://oeis.org/A033431) ([program](033/A033431.asm)): a(n) = 2*n^3.
+* [A033432](http://oeis.org/A033432) ([program](033/A033432.asm)): a(n) = floor(1000/sqrt(n)).
+* [A033433](http://oeis.org/A033433) ([program](033/A033433.asm)): [ 10000/sqrt(n) ].
 * [A033436](http://oeis.org/A033436) ([program](033/A033436.asm)): a(n) = ceiling( (3*n^2 - 4)/8 ).
 * [A033437](http://oeis.org/A033437) ([program](033/A033437.asm)): Number of edges in 5-partite Turán graph of order n.
 * [A033438](http://oeis.org/A033438) ([program](033/A033438.asm)): Number of edges in 6-partite Turán graph of order n.
@@ -4983,7 +4985,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A038731](http://oeis.org/A038731) ([program](038/A038731.asm)): Number of columns in all directed column-convex polyominoes of area n+1.
 * [A038732](http://oeis.org/A038732) ([program](038/A038732.asm)): T(n,n-3), array T as in A038730.
 * [A038733](http://oeis.org/A038733) ([program](038/A038733.asm)): T(n,n-4), array T as in A038730.
-* [A038734](http://oeis.org/A038734) ([program](038/A038734.asm)): T(n,n-5), array T as in A038730.
 * [A038737](http://oeis.org/A038737) ([program](038/A038737.asm)): T(n,n-2), array T as in A038792.
 * [A038739](http://oeis.org/A038739) ([program](038/A038739.asm)): T(n,n-2), array T as in A038738.
 * [A038740](http://oeis.org/A038740) ([program](038/A038740.asm)): T(n,n-3), array T as in A038738.
@@ -5172,6 +5173,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040252](http://oeis.org/A040252) ([program](040/A040252.asm)): Continued fraction for sqrt(269).
 * [A040255](http://oeis.org/A040255) ([program](040/A040255.asm)): Continued fraction for sqrt(272).
 * [A040256](http://oeis.org/A040256) ([program](040/A040256.asm)): Continued fraction for sqrt(273).
+* [A040258](http://oeis.org/A040258) ([program](040/A040258.asm)): Continued fraction for sqrt(275).
 * [A040261](http://oeis.org/A040261) ([program](040/A040261.asm)): Continued fraction for sqrt(278).
 * [A040270](http://oeis.org/A040270) ([program](040/A040270.asm)): Continued fraction for sqrt(287).
 * [A040271](http://oeis.org/A040271) ([program](040/A040271.asm)): Continued fraction for sqrt(288).

@@ -6,9 +6,9 @@ mov $2,2
 lpb $2
   mov $0,$1
   add $0,3
-  sub $2,1
   cal $0,134816 ; Padovan's spiral numbers.
   sub $0,1
+  sub $2,1
   mov $3,$0
 lpe
 min $1,1

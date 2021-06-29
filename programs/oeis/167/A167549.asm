@@ -8,6 +8,5 @@ lpb $0
   cal $2,167562 ; The fifth row of the ED2 array A167560.
   add $1,$2
 lpe
-div $1,24
-mul $1,264
+mul $1,11
 add $1,120

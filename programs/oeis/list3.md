@@ -3633,7 +3633,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A182778](http://oeis.org/A182778) ([program](182/A182778.asm)): Beatty sequence for 3 + sqrt(3).
 * [A182780](http://oeis.org/A182780) ([program](182/A182780.asm)): Twice A024537.
 * [A182788](http://oeis.org/A182788) ([program](182/A182788.asm)): Number of n-colorings of the Triangle Graph of order 3.
-* [A182799](http://oeis.org/A182799) ([program](182/A182799.asm)): Positions of primes in A167171.
 * [A182814](http://oeis.org/A182814) ([program](182/A182814.asm)): Main diagonal of table A182630.
 * [A182815](http://oeis.org/A182815) ([program](182/A182815.asm)): The third row of table A182630.
 * [A182834](http://oeis.org/A182834) ([program](182/A182834.asm)): Complement of A007590, except for initial zeros.
@@ -3904,6 +3903,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A185017](http://oeis.org/A185017) ([program](185/A185017.asm)): Characteristic function of 7.
 * [A185018](http://oeis.org/A185018) ([program](185/A185018.asm)): Inverse to sequence matrix for natural numbers.
 * [A185019](http://oeis.org/A185019) ([program](185/A185019.asm)): a(n) = n*(14*n-3).
+* [A185027](http://oeis.org/A185027) ([program](185/A185027.asm)): Sum of the triangular divisors of n.
 * [A185039](http://oeis.org/A185039) ([program](185/A185039.asm)): Numbers of the form 9*m^2 + 4*m, m an integer.
 * [A185048](http://oeis.org/A185048) ([program](185/A185048.asm)): Length of the continued fraction for floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n).
 * [A185049](http://oeis.org/A185049) ([program](185/A185049.asm)): Last term in the continued fraction for floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n).
@@ -4175,6 +4175,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187466](http://oeis.org/A187466) ([program](187/A187466.asm)): a(n) = 9^n mod 11.
 * [A187468](http://oeis.org/A187468) ([program](187/A187468.asm)): Sum of the squares modulo 2^n of the odd numbers less than 2^n.
 * [A187485](http://oeis.org/A187485) ([program](187/A187485.asm)): Positions of 0's in A123740; complement of A003623.
+* [A187486](http://oeis.org/A187486) ([program](187/A187486.asm)): Distance between first and second positions of  A181762(n).
 * [A187508](http://oeis.org/A187508) ([program](187/A187508.asm)): Number of 3-step S, E, and NW-moving king's tours on an n X n board summed over all starting positions
 * [A187509](http://oeis.org/A187509) ([program](187/A187509.asm)): Number of 4-step S, E, and NW-moving king's tours on an n X n board summed over all starting positions
 * [A187532](http://oeis.org/A187532) ([program](187/A187532.asm)): a(n) = 4^n mod 19.

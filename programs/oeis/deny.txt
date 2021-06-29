@@ -1507,6 +1507,7 @@ A176471: Duplicate of A136404,
 A177898: Duplicate of A168198.
 A178060: A poorly defined sequence, beyond repair.
 A178673: Duplicate of A028452.
+A179942: Number of times n appears in a 1000 x 1000 multiplication table.
 A180090: Sigma-powerful numbers: powerful numbers n such that sigma(n) is also powerful. An incomplete version of A337045.
 A181030: Duplicate of A006506.
 A181051: Incorrect duplicate of A073821.

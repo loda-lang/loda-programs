@@ -4,8 +4,7 @@
 add $0,1
 pow $0,2
 cal $0,101776 ; Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
+pow $0,2
+add $0,1
+div $0,2
 mov $1,$0
-pow $1,2
-add $1,5
-div $1,2
-sub $1,2

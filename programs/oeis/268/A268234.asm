@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,47999 ; Sierpiński's [Sierpinski's] triangle (or gasket): triangle, read by rows, formed by reading Pascal's triangle mod 2.
   sub $0,1
+  cal $2,47999 ; Sierpiński's [Sierpinski's] triangle (or gasket): triangle, read by rows, formed by reading Pascal's triangle mod 2.
   add $1,$2
 lpe
 add $1,1

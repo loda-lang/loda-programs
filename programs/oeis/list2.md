@@ -217,6 +217,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101322](http://oeis.org/A101322) ([program](101/A101322.asm)): a(n) = n - (least divisor of n greater than the square root of n) + (greatest divisor of n less than the square root of n) = n + A033676(n) - A033677(n).
 * [A101328](http://oeis.org/A101328) ([program](101/A101328.asm)): Recurring numbers in the count of consecutive composite numbers between balanced primes and their lower or upper prime neighbors.
 * [A101338](http://oeis.org/A101338) ([program](101/A101338.asm)): Antidiagonal sums in A101321.
+* [A101344](http://oeis.org/A101344) ([program](101/A101344.asm)): Number of primes between prime(n) and 3prime(n).
 * [A101345](http://oeis.org/A101345) ([program](101/A101345.asm)): a(n) = Knuth's Fibonacci (or circle) product "2 o n".
 * [A101349](http://oeis.org/A101349) ([program](101/A101349.asm)): Numbers of cubes between prime(n) and prime(n+1).
 * [A101351](http://oeis.org/A101351) ([program](101/A101351.asm)): a(n) = 2^n-1 + Fibonacci(n).
@@ -1972,7 +1973,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A119336](http://oeis.org/A119336) ([program](119/A119336.asm)): Expansion of (1-x)^4/((1-x)^6 - x^6).
 * [A119346](http://oeis.org/A119346) ([program](119/A119346.asm)): Sequence of nim-values for the game in which two players alternately cut off one inch or root two inches from a piece of string of length n. Player who runs out of string loses.
 * [A119360](http://oeis.org/A119360) ([program](119/A119360.asm)): a(n) = Sum_{i=1..n, j=1..n} i! mod j.
-* [A119387](http://oeis.org/A119387) ([program](119/A119387.asm)): a(n) = number of binary digits (1's and nonleading 0's) which remain unchanged in their positions when n and (n+1) are written in binary.
+* [A119387](http://oeis.org/A119387) ([program](119/A119387.asm)): a(n) is the number of binary digits (1's and nonleading 0's) which remain unchanged in their positions when n and (n+1) are written in binary.
 * [A119412](http://oeis.org/A119412) ([program](119/A119412.asm)): a(n) = n*(n+11).
 * [A119413](http://oeis.org/A119413) ([program](119/A119413.asm)): 16*n-12.
 * [A119416](http://oeis.org/A119416) ([program](119/A119416.asm)): n * (smallest prime greater than largest prime factor of n).
@@ -2062,6 +2063,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120177](http://oeis.org/A120177) ([program](120/A120177.asm)): a(1)=9; a(n)=floor((47+sum(a(1) to a(n-1)))/5).
 * [A120178](http://oeis.org/A120178) ([program](120/A120178.asm)): a(n)=ceiling( sum_{i=1..n-1} a(i)/6), a(1)=1.
 * [A120179](http://oeis.org/A120179) ([program](120/A120179.asm)): a(1)=2; a(n)=floor((13+sum(a(1) to a(n-1)))/6).
+* [A120180](http://oeis.org/A120180) ([program](120/A120180.asm)): a(1)=3; a(n)=floor((20+sum(a(1) to a(n-1)))/6).
 * [A120181](http://oeis.org/A120181) ([program](120/A120181.asm)): a(1)=4; a(n)=floor((27+sum(a(1) to a(n-1)))/6).
 * [A120182](http://oeis.org/A120182) ([program](120/A120182.asm)): a(1)=5; a(n)=floor((34+sum(a(1) to a(n-1)))/6).
 * [A120183](http://oeis.org/A120183) ([program](120/A120183.asm)): a(1)=6; a(n)=floor((41+sum(a(1) to a(n-1)))/6).
@@ -2501,7 +2503,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125577](http://oeis.org/A125577) ([program](125/A125577.asm)): a(0) = 1; for n >= 1, a(n) = n^2 - a(n-1).
 * [A125592](http://oeis.org/A125592) ([program](125/A125592.asm)): Evil numbers (A001969) multiplied by 2.
 * [A125602](http://oeis.org/A125602) ([program](125/A125602.asm)): Centered triangular numbers that are prime.
-* [A125603](http://oeis.org/A125603) ([program](125/A125603.asm)): Numbers n such that 3n(n-1)/2 + 1 is prime.
 * [A125641](http://oeis.org/A125641) ([program](125/A125641.asm)): Square of the (3,1)-entry of the 3 X 3 matrix M^n, where M = [1,0,0; 1,1,0, 1,i,1].
 * [A125650](http://oeis.org/A125650) ([program](125/A125650.asm)): Numerator of n(n+3)/(4(n+1)(n+2)) = sum(k=1..n, 1/(k(k+1)(k+2)) ).
 * [A125651](http://oeis.org/A125651) ([program](125/A125651.asm)): Numbers k such that A125650(k) is a perfect square.
@@ -3270,8 +3271,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131949](http://oeis.org/A131949) ([program](131/A131949.asm)): Row sums of triangle A131948.
 * [A131951](http://oeis.org/A131951) ([program](131/A131951.asm)): 2^n+n*(n+3).
 * [A131962](http://oeis.org/A131962) ([program](131/A131962.asm)): Expansion of psi(x) * phi(-x^12) / chi(-x^4) in powers of x where phi(), psi(), chi() are Ramanujan theta functions.
-* [A131963](http://oeis.org/A131963) ([program](131/A131963.asm)): Expansion of f(x, x^2) * f(x^4, x^12) in powers of x where f(, ) is Ramanujan's general theta function.
-* [A131964](http://oeis.org/A131964) ([program](131/A131964.asm)): Expansion of f(x^2, x^10) / f(x, x^3) in powers of x where f(, ) is Ramanujan's general theta function.
 * [A131973](http://oeis.org/A131973) ([program](131/A131973.asm)): Period 8: repeat 121, 242, 363, 484, 605, 726, 847, 968.
 * [A131991](http://oeis.org/A131991) ([program](131/A131991.asm)): a(n) = 1 + prime(n) + prime(n)^2 + prime(n)^3.
 * [A131992](http://oeis.org/A131992) ([program](131/A131992.asm)): a(n) = 1 + prime(n) + prime(n)^2 + prime(n)^3 + prime(n)^4.
@@ -4026,6 +4025,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A138187](http://oeis.org/A138187) ([program](138/A138187.asm)): Hankel transform of binomial(2*n+3, n).
 * [A138190](http://oeis.org/A138190) ([program](138/A138190.asm)): Numerator of (n-1)*n*(n+1)/12.
 * [A138191](http://oeis.org/A138191) ([program](138/A138191.asm)): Denominator of (n-1)n(n+1)/12.
+* [A138219](http://oeis.org/A138219) ([program](138/A138219.asm)): Integers related to the volume k(n) of a unit hypersphere in n dimensions.
 * [A138229](http://oeis.org/A138229) ([program](138/A138229.asm)): Expansion of (1-x)/(1-2x+6x^2).
 * [A138230](http://oeis.org/A138230) ([program](138/A138230.asm)): Expansion of (1-x)/(1 - 2*x + 4*x^2).
 * [A138251](http://oeis.org/A138251) ([program](138/A138251.asm)): Beatty sequence of the positive root of x^3 - x^2 - 1.

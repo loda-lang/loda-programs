@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  cal $2,123094 ; Sum of first n 12th powers.
   sub $0,1
+  cal $2,123094 ; Sum of first n 12th powers.
   add $1,$2
 lpe

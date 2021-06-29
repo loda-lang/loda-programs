@@ -1,21 +1,15 @@
 ; A125266: Number of repetitions in A007918.
 ; 3,1,2,2,4,2,4,2,4,6,2,6,4,2,4,6,6,2,6,4,2,6,4,6,8,4,2,4,2,4,14,4,6,2,10,2,6,6,4,6,6,2,10,2,4,2,12,12,4,2,4,6,2,10,6,6,6,2,6,4,2,10,14,4,2,4,14,6,10,2,4,6,8,6,6,4,6,8,4,8,10,2,10,2,6,4,6,8,4,2,4,12,8,4,8
 
-mov $3,2
-mov $5,$0
-lpb $3
-  mov $0,$5
-  sub $3,1
-  add $0,$3
-  sub $0,1
-  mul $0,2
-  max $0,1
-  cal $0,93515 ; Numbers k such that either k or k-1 is a prime.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
-lpe
-min $5,1
-mul $5,$4
-sub $1,$5
+mov $1,$0
+mov $2,$0
+sub $0,1
+cmp $2,0
+add $1,$2
+sub $1,$0
+max $0,0
+cal $0,1223 ; Prime gaps: differences between consecutive primes.
+add $1,$0
+add $1,1
+add $1,$2
+sub $1,2

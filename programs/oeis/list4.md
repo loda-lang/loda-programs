@@ -1006,6 +1006,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215480](http://oeis.org/A215480) ([program](215/A215480.asm)): Characteristic function of numbers n with exactly two distinct prime factors
 * [A215486](http://oeis.org/A215486) ([program](215/A215486.asm)): n - 1 mod phi(n), where phi(n) is Euler's totient function.
 * [A215495](http://oeis.org/A215495) ([program](215/A215495.asm)): a(4*n) = a(4*n+2) = a(2*n+1) = 2*n + 1.
+* [A215530](http://oeis.org/A215530) ([program](215/A215530.asm)): The limit of the string "0, 1" under the operation 'repeat string twice and append 0'.
 * [A215531](http://oeis.org/A215531) ([program](215/A215531.asm)): The limit of the string "0, 1" under the operation 'append first k terms, k=k+2' with k=1 initially.
 * [A215532](http://oeis.org/A215532) ([program](215/A215532.asm)): The limit of the string "0, 1" under the operation 'append first k terms, increment k' with k=2 initially.
 * [A215537](http://oeis.org/A215537) ([program](215/A215537.asm)): Lowest k such that k is representable as both the sum of n and of n+1 nonzero squares.
