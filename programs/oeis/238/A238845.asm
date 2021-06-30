@@ -9,8 +9,7 @@ lpb $0
   add $0,$2
   dif $0,4
 lpe
-lpb $0
-  sub $0,1
-  div $0,2
-  add $1,1
-lpe
+mov $1,$0
+add $1,1
+cal $1,70939 ; Length of binary representation of n.
+sub $1,1

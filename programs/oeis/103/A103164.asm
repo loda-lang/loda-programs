@@ -4,9 +4,4 @@
 mov $1,$0
 trn $0,1
 cal $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
-lpb $0
-  mul $1,$0
-  mov $0,$2
-  mul $1,2
-lpe
-div $1,2
+mul $1,$0

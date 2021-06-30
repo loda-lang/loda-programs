@@ -3,7 +3,6 @@
 
 mul $0,5
 cal $0,201629 ; a(n) = n if n is even and otherwise its nearest multiple of 4.
-mov $2,$0
-cmp $2,0
-add $0,$2
+trn $0,1
 mov $1,$0
+add $1,1

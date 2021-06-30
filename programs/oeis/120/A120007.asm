@@ -3,7 +3,6 @@
 
 cal $0,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
 lpb $0
-  pow $0,2
-  sub $0,1
+  mov $1,$0
+  mod $0,2
 lpe
-mov $1,$0

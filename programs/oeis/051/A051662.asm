@@ -3,6 +3,11 @@
 
 mul $0,2
 add $0,1
-cal $0,213045 ; Number of (w,x,y) with all terms in {0,...,n} and 2|w-x|>max(w,x,y)-min(w,x,y).
+mul $0,4
+add $0,4
 mov $1,$0
-div $1,4
+bin $1,3
+add $1,$0
+div $1,8
+mul $1,6
+div $1,48

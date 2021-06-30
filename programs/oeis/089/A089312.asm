@@ -4,7 +4,7 @@
 lpb $0
   dif $0,2
 lpe
-cal $0,59159 ; A hierarchical sequence (W'2{2}*c) - see A059126).
+add $0,1
+gcd $0,64
 mov $1,$0
-div $1,4
 sub $1,1

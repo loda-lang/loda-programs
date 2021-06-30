@@ -10,9 +10,4 @@ lpb $0
   add $1,$0
   sub $0,2
 lpe
-add $1,1
-lpb $0
-  add $1,$0
-  trn $0,2
-lpe
-sub $1,1
+add $1,$0

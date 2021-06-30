@@ -3,6 +3,10 @@
 
 mul $0,3
 div $0,2
-cal $0,146510 ; Numbers congruent to {1, 4} mod 15.
 mov $1,$0
-div $1,3
+div $0,2
+mov $2,3
+mul $2,$0
+add $2,25
+add $1,$2
+sub $1,25

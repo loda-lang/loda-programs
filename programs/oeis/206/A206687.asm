@@ -3,6 +3,5 @@
 
 cal $0,162770 ; a(n) = ((2+sqrt(5))*(1+sqrt(5))^n + (2-sqrt(5))*(1-sqrt(5))^n)/2.
 mov $1,$0
-sub $1,1
-div $1,2
-add $1,1
+div $0,2
+sub $1,$0

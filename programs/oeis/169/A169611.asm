@@ -1,29 +1,10 @@
 ; A169611: Number of prime divisors of n that are not greater than 3, counted with multiplicity.
 ; 0,1,1,2,0,2,0,3,2,1,0,3,0,1,1,4,0,3,0,2,1,1,0,4,0,1,3,2,0,2,0,5,1,1,0,4,0,1,1,3,0,2,0,2,2,1,0,5,0,1,1,2,0,4,0,3,1,1,0,3,0,1,2,6,0,2,0,2,1,1,0,5,0,1,1,2,0,2,0,4,4,1,0,3,0,1,1,3,0,3,0,2,1,1,0,6,0,1,2,2,0,2,0,3,1,1,0,5,0,1,1,4,0,2,0,2,2,1,0,4,0,1,1,2,0,3,0,7,1,1,0,3,0,1,3,3,0,2,0,2,1,1,0,6,0,1,1,2,0,2,0,3,2,1,0,3,0,1,1,5,0,5,0,2,1,1,0,4,0,1,2,2,0,2,0,4,1,1,0,4,0,1,1,3,0,2,0,2,3,1,0,7,0,1,1,2,0,3,0,3
 
-mov $3,$0
-mov $5,2
-lpb $5
-  mov $0,$3
-  mov $2,0
-  sub $5,1
-  add $0,$5
-  mov $4,$0
-  lpb $0
-    div $4,3
-    add $2,$4
-    add $2,$0
-    div $0,2
-  lpe
-  mov $4,$2
-  mov $6,$5
-  lpb $6
-    mov $1,$4
-    sub $6,1
-  lpe
+lpb $0
+  mul $0,2
+  sub $0,1
+  dif $0,3
 lpe
-lpb $3
-  sub $1,$4
-  mov $3,0
-lpe
-sub $1,1
+cal $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+mov $1,$0

@@ -4,6 +4,5 @@
 cal $0,40304 ; Continued fraction for sqrt(322).
 cal $0,199423 ; Greatest prime factor of n and 2*n+1
 mov $1,$0
-sub $1,5
 div $1,2
-add $1,1
+sub $1,1

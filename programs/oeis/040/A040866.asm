@@ -3,7 +3,5 @@
 
 cal $0,40752 ; Continued fraction for sqrt(780).
 mov $1,$0
-lpb $0
-  sub $0,12
-  add $1,1
-lpe
+div $0,11
+add $1,$0

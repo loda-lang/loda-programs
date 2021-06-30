@@ -3,6 +3,5 @@
 
 cal $0,226177 ; a(n) = mu(n)*d(n), where mu(n) = A008683 and d(n) = A000005.
 trn $1,$0
-add $2,$0
-bin $1,$2
-gcd $1,$2
+bin $1,$0
+gcd $1,$0
