@@ -3,7 +3,5 @@
 
 mul $0,260
 cal $0,131136 ; Denominator of (exponential) expansion of log((x/2-1)/(x-1)).
-add $1,$0
-div $1,2
-mul $1,2
+mov $1,$0
 div $1,16

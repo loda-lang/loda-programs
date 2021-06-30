@@ -4,10 +4,6 @@
 add $0,1
 cal $0,84059 ; a(n) = 4*a(n-1) + 2*a(n-2) for n>1, a(0)=1, a(1)=2.
 lpb $0
-  lpb $0
-    dif $0,2
-  lpe
-  mov $1,$0
-  mul $1,6
+  dif $0,2
 lpe
-div $1,6
+mov $1,$0

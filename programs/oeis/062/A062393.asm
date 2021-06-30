@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
+  trn $0,2
   trn $2,1
   cal $2,22521 ; a(n) = (n+1)^5 - n^5.
-  trn $0,2
   add $1,$2
 lpe

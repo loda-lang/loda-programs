@@ -1,7 +1,11 @@
 ; A167993: Expansion of x^2/((3*x-1)*(3*x^2-1)).
 ; 0,0,1,3,12,36,117,351,1080,3240,9801,29403,88452,265356,796797,2390391,7173360,21520080,64566801,193700403,581120892,1743362676,5230147077,15690441231,47071500840,141214502520,423644039001,1270932117003,3812797945332,11438393835996,34315186290957,102945558872871,308836690967520,926510072902560,2779530261754401,8338590785263203
 
-trn $0,1
-cal $0,262414 ; Number of (n+1) X (2+1) 0..1 arrays with each row divisible by 3 and column not divisible by 3, read as a binary number with top and left being the most significant bits.
+cal $0,297619 ; a(n) = 2*a(n-1) + 2*a(n-2) - 4*a(n-3), a(1) = 0, a(2) = 0, a(3) = 8.
+div $0,4
+mov $2,$0
+div $0,2
+cal $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+add $0,$2
 mov $1,$0
-div $1,4
+div $1,3

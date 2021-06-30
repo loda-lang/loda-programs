@@ -1,10 +1,13 @@
 ; A262414: Number of (n+1) X (2+1) 0..1 arrays with each row divisible by 3 and column not divisible by 3, read as a binary number with top and left being the most significant bits.
 ; 0,4,12,48,144,468,1404,4320,12960,39204,117612,353808,1061424,3187188,9561564,28693440,86080320,258267204,774801612,2324483568,6973450704,20920588308,62761764924,188286003360,564858010080,1694576156004,5083728468012,15251191781328,45753575343984,137260745163828,411782235491484,1235346763870080,3706040291610240
 
-lpb $0
-  mov $1,$0
-  cal $1,32086 ; Number of reversible strings with n beads of 3 colors. If more than 1 bead, not palindromic.
-  trn $0,$1
-lpe
+add $0,1
+cal $0,297619 ; a(n) = 2*a(n-1) + 2*a(n-2) - 4*a(n-3), a(1) = 0, a(2) = 0, a(3) = 8.
+div $0,4
+mov $2,$0
+div $0,2
+cal $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+add $0,$2
+mov $1,$0
 div $1,3
 mul $1,4

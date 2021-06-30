@@ -1,12 +1,12 @@
 ; A242278: Number of non-palindromic n-tuples of 3 distinct elements.
 ; 0,6,18,72,216,702,2106,6480,19440,58806,176418,530712,1592136,4780782,14342346,43040160,129120480,387400806,1162202418,3486725352,10460176056,31380882462,94142647386,282429005040,847287015120,2541864234006,7625592702018,22876787671992
 
+add $0,1
+cal $0,297619 ; a(n) = 2*a(n-1) + 2*a(n-2) - 4*a(n-3), a(1) = 0, a(2) = 0, a(3) = 8.
+div $0,4
 mov $2,$0
-cal $2,32086 ; Number of reversible strings with n beads of 3 colors. If more than 1 bead, not palindromic.
-lpb $0
-  div $0,7
-  mov $1,61087
-  mul $1,$2
-lpe
-div $1,183261
-mul $1,6
+div $0,2
+cal $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+add $0,$2
+mov $1,$0
+mul $1,2

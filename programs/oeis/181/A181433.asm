@@ -3,7 +3,5 @@
 
 cal $0,281445 ; Nonnegative k for which (2*k^2 + 1)/11 is an integer.
 pow $0,2
-sub $0,8
 mov $1,$0
 div $1,11
-add $1,1

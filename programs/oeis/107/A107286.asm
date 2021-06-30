@@ -7,8 +7,7 @@ cal $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(
 mov $3,$0
 cmp $3,0
 add $0,$3
-mov $4,$2
 lpb $0
-  mul $0,$4
+  mov $0,$2
 lpe
 mov $1,$0

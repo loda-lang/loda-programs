@@ -5,10 +5,7 @@ sub $0,4
 mul $0,4
 trn $0,19
 add $0,67
-mov $1,26
-sub $1,$0
-mov $2,2
-lpb $0
-  mov $0,6
-  add $1,$2
-lpe
+mov $1,2
+mov $2,26
+sub $2,$0
+add $1,$2

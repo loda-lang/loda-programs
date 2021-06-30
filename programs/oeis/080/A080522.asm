@@ -3,7 +3,8 @@
 
 cal $0,84634 ; Binomial transform of 1,1,1,2,2,2,2,...
 lpb $0
-  mov $1,$0
-  mod $0,2
+  sub $0,1
+  mul $0,2
 lpe
+mov $1,$0
 add $1,1

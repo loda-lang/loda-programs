@@ -3,6 +3,7 @@
 
 mul $0,2
 add $0,1
-cal $0,48250 ; Sum of the squarefree divisors of n.
+cal $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $1,$0
 div $1,3

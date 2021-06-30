@@ -3,5 +3,10 @@
 
 mul $0,2
 mov $1,$0
-cal $1,4956 ; a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
+cal $0,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
+add $1,$0
 div $1,2
+add $1,3
+mul $1,2
+div $1,4
+sub $1,1
