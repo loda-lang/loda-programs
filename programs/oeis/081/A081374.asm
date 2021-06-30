@@ -3,9 +3,14 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
+  sub $0,2
   trn $2,1
   cal $2,281166 ; a(n) = 3*a(n-1) - 3*a(n-2) + 2*a(n-3) for n>2, a(0)=a(1)=1, a(2)=3.
+  add $1,$2
+lpe
+lpb $0
+  mov $2,$0
+  div $0,2
   add $1,$2
 lpe
 add $1,1

@@ -996,6 +996,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318454](http://oeis.org/A318454) ([program](318/A318454.asm)): Denominators of the sequence whose Dirichlet convolution with itself yields A001227, number of odd divisors of n.
 * [A318455](http://oeis.org/A318455) ([program](318/A318455.asm)): The 2-adic valuation of A318454(n).
 * [A318505](http://oeis.org/A318505) ([program](318/A318505.asm)): Sum of divisors of n, up to, but not including the second largest of them A032742(n); a(1) = 0 by convention.
+* [A318608](http://oeis.org/A318608) ([program](318/A318608.asm)): Moebius function mu(n) defined for the Gaussian integers.
 * [A318624](http://oeis.org/A318624) ([program](318/A318624.asm)): Number of 3-member subsets of [3*n] whose elements sum to a multiple of n.
 * [A318666](http://oeis.org/A318666) ([program](318/A318666.asm)): a(n) = 2^{the 3-adic valuation of n}.
 * [A318742](http://oeis.org/A318742) ([program](318/A318742.asm)): a(n) = Sum_{k=1..n} floor(n/k)^3.
@@ -1407,6 +1408,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A328478](http://oeis.org/A328478) ([program](328/A328478.asm)): Divide n by the largest primorial that divides it and repeat until a fixed point is reached; a(n) is the fixed point.
 * [A328479](http://oeis.org/A328479) ([program](328/A328479.asm)): a(n) = n/A328478(n), where A328478(n) is obtained by repeatedly dividing n by the largest primorial that divides it until a fixed point is reached.
 * [A328572](http://oeis.org/A328572) ([program](328/A328572.asm)): Primorial base expansion of n converted into its prime product form, but with 1 subtracted from all nonzero digits: a(n) = A003557(A276086(n)).
+* [A328615](http://oeis.org/A328615) ([program](328/A328615.asm)): Number of digits larger than 1 in primorial base expansion of n.
 * [A328778](http://oeis.org/A328778) ([program](328/A328778.asm)): Number of indecomposable closed walks of length 2n along the edges of a cube based at a vertex.
 * [A328823](http://oeis.org/A328823) ([program](328/A328823.asm)): a(n) is the least prime factor of A000096(n) = n*(n+3)/2.
 * [A328824](http://oeis.org/A328824) ([program](328/A328824.asm)): Numerators of A113405(-n) (see the comment for details).
@@ -1769,6 +1771,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336409](http://oeis.org/A336409) ([program](336/A336409.asm)): Distance from prime(n) to the nearest odd composite that is < prime(n).
 * [A336457](http://oeis.org/A336457) ([program](336/A336457.asm)): a(n) = A065330(sigma(n)), where A065330 is fully multiplicative with a(2) = a(3) = 1, and a(p) = p for primes p > 3.
 * [A336466](http://oeis.org/A336466) ([program](336/A336466.asm)): Fully multiplicative with a(p) = A000265(p-1) for any prime p, where A000265(k) gives the odd part of k.
+* [A336475](http://oeis.org/A336475) ([program](336/A336475.asm)): Multiplicative with a(2^e) = 1, and for odd primes p, a(p^e) = (e+1)*p^e.
 * [A336477](http://oeis.org/A336477) ([program](336/A336477.asm)): a(n) = 1 if a regular n-gon is constructible with ruler (or, more precisely, an unmarked straightedge) and compass, 0 otherwise.
 * [A336483](http://oeis.org/A336483) ([program](336/A336483.asm)): Floor(n/10) + (5 times last digit of n).
 * [A336529](http://oeis.org/A336529) ([program](336/A336529.asm)): a(n) = (n^3+5*n+3)/3 + 2*floor(n/2) + a(n-2), with a(0)=1 and a(1)=3.
@@ -1986,6 +1989,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A340520](http://oeis.org/A340520) ([program](340/A340520.asm)): a(n) = 2*A006463(n) + 1.
 * [A340528](http://oeis.org/A340528) ([program](340/A340528.asm)): Radio number of the path graph P_n.
 * [A340536](http://oeis.org/A340536) ([program](340/A340536.asm)): Digital root of 2*n^2.
+* [A340627](http://oeis.org/A340627) ([program](340/A340627.asm)): a(n) = (11*2^n - 2*(-1)^n)/3 for n >= 0.
 * [A340631](http://oeis.org/A340631) ([program](340/A340631.asm)): a(n) is the minimum number of pebbles such that any assignment of those pebbles on a complete graph with n vertices is a next-player winning game in the two-player impartial pebbling game.
 * [A340648](http://oeis.org/A340648) ([program](340/A340648.asm)): a(n) is the maximum number of nonzero entries in an n X n sign-restricted matrix.
 * [A340679](http://oeis.org/A340679) ([program](340/A340679.asm)): If n is a power of prime then a(n) = 1, otherwise a(n) = product of the distinct prime factors of n.
@@ -2156,4 +2160,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345502](http://oeis.org/A345502) ([program](345/A345502.asm)): Numbers that are the sum of nine squares in five or more ways.
 * [A345701](http://oeis.org/A345701) ([program](345/A345701.asm)): a(n) = 3*n^3 - 1.
 * [A345702](http://oeis.org/A345702) ([program](345/A345702.asm)): Numbers that can be written as 2*a^2 - 1 and 3*b^3 - 1.
+* [A345741](http://oeis.org/A345741) ([program](345/A345741.asm)): a(n) = n + (n - 1) * d(n).
 * [A345888](http://oeis.org/A345888) ([program](345/A345888.asm)): a(n) = n + (n - 1) * pi(n).
+* [A345891](http://oeis.org/A345891) ([program](345/A345891.asm)): a(n) = n + (n - 1) * phi(n).

@@ -8,9 +8,10 @@ bin $0,2
 sub $0,8
 mov $1,2
 lpb $0
-  sub $0,1
-  mul $1,7
-  mod $1,17
+  lpb $0
+    mov $0,2
+  lpe
+  mul $1,2
+  sub $1,4
 lpe
-sub $1,7
-div $1,6
+div $1,2

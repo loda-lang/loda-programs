@@ -299,6 +299,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001750](http://oeis.org/A001750) ([program](001/A001750.asm)): Primes multiplied by 5.
 * [A001752](http://oeis.org/A001752) ([program](001/A001752.asm)): Expansion of 1/((1+x)*(1-x)^5).
 * [A001753](http://oeis.org/A001753) ([program](001/A001753.asm)): Expansion of 1/((1+x)*(1-x)^6).
+* [A001764](http://oeis.org/A001764) ([program](001/A001764.asm)): a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
 * [A001768](http://oeis.org/A001768) ([program](001/A001768.asm)): Sorting numbers: number of comparisons for merge insertion sort of n elements.
 * [A001769](http://oeis.org/A001769) ([program](001/A001769.asm)): Expansion of 1/((1+x)*(1-x)^7).
 * [A001779](http://oeis.org/A001779) ([program](001/A001779.asm)): Expansion of 1/((1+x)(1-x)^8).
@@ -339,7 +340,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001903](http://oeis.org/A001903) ([program](001/A001903.asm)): Final digit of 7^n.
 * [A001906](http://oeis.org/A001906) ([program](001/A001906.asm)): F(2n) = bisection of Fibonacci sequence: a(n) = 3*a(n-1) - a(n-2).
 * [A001911](http://oeis.org/A001911) ([program](001/A001911.asm)): a(n) = Fibonacci(n+3) - 2.
-* [A001912](http://oeis.org/A001912) ([program](001/A001912.asm)): Numbers n such that 4*n^2 + 1 is prime.
 * [A001924](http://oeis.org/A001924) ([program](001/A001924.asm)): Apply partial sum operator twice to Fibonacci numbers.
 * [A001950](http://oeis.org/A001950) ([program](001/A001950.asm)): Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 * [A001951](http://oeis.org/A001951) ([program](001/A001951.asm)): A Beatty sequence: a(n) = floor(n*sqrt(2)).
@@ -400,6 +400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002264](http://oeis.org/A002264) ([program](002/A002264.asm)): Nonnegative integers repeated 3 times.
 * [A002265](http://oeis.org/A002265) ([program](002/A002265.asm)): Nonnegative integers repeated 4 times.
 * [A002266](http://oeis.org/A002266) ([program](002/A002266.asm)): Integers repeated 5 times.
+* [A002293](http://oeis.org/A002293) ([program](002/A002293.asm)): Number of dissections of a polygon: binomial(4*n, n)/(3*n + 1).
 * [A002299](http://oeis.org/A002299) ([program](002/A002299.asm)): Binomial coefficients C(2*n+5,5).
 * [A002309](http://oeis.org/A002309) ([program](002/A002309.asm)): Sum of first n fourth powers of odd numbers.
 * [A002310](http://oeis.org/A002310) ([program](002/A002310.asm)): a(n) = 5*a(n-1) - a(n-2).
@@ -879,6 +880,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A005183](http://oeis.org/A005183) ([program](005/A005183.asm)): a(n) = n*2^(n-1) + 1.
 * [A005187](http://oeis.org/A005187) ([program](005/A005187.asm)): a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
 * [A005206](http://oeis.org/A005206) ([program](005/A005206.asm)): Hofstadter G-sequence: a(n) = n - a(a(n-1)).
+* [A005209](http://oeis.org/A005209) ([program](005/A005209.asm)): Multilevel sieve: at k-th step, accept k numbers, reject k, accept k, ...
 * [A005232](http://oeis.org/A005232) ([program](005/A005232.asm)): Expansion of (1-x+x^2)/((1-x)^2*(1-x^2)*(1-x^4)).
 * [A005246](http://oeis.org/A005246) ([program](005/A005246.asm)): a(n) = (1 + a(n-1)*a(n-2))/a(n-3), a(0) = a(1) = a(2) = 1.
 * [A005248](http://oeis.org/A005248) ([program](005/A005248.asm)): Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
@@ -1236,6 +1238,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007821](http://oeis.org/A007821) ([program](007/A007821.asm)): Primes p such that pi(p) is not prime.
 * [A007843](http://oeis.org/A007843) ([program](007/A007843.asm)): Least positive integer k for which 2^n divides k!.
 * [A007844](http://oeis.org/A007844) ([program](007/A007844.asm)): Least positive integer k for which 3^n divides k!.
+* [A007851](http://oeis.org/A007851) ([program](007/A007851.asm)): Number of elements w of the Weyl group D(n) such that the roots sent negative by w span an Abelian subalgebra of the Lie algebra.
 * [A007862](http://oeis.org/A007862) ([program](007/A007862.asm)): Number of triangular numbers that divide n.
 * [A007875](http://oeis.org/A007875) ([program](007/A007875.asm)): Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
 * [A007877](http://oeis.org/A007877) ([program](007/A007877.asm)): Period 4 zigzag sequence: repeat [0,1,2,1].
@@ -3133,6 +3136,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A023515](http://oeis.org/A023515) ([program](023/A023515.asm)): a(n) = prime(n)*prime(n-1) - 1.
 * [A023522](http://oeis.org/A023522) ([program](023/A023522.asm)): Sum of exponents in prime-power factorization of p(n)*p(n-1) - 1.
 * [A023523](http://oeis.org/A023523) ([program](023/A023523.asm)): a(n) = prime(n)*prime(n-1) + 1.
+* [A023524](http://oeis.org/A023524) ([program](023/A023524.asm)): Number of distinct prime divisors of prime(n)*prime(n-1) + 1.
+* [A023530](http://oeis.org/A023530) ([program](023/A023530.asm)): Sum of exponents in prime-power factorization of p(n)*p(n-1) + 1.
 * [A023531](http://oeis.org/A023531) ([program](023/A023531.asm)): a(n) = 1 if n is of the form m(m+3)/2, otherwise 0.
 * [A023532](http://oeis.org/A023532) ([program](023/A023532.asm)): a(n) = 0 if n of form m(m+3)/2, otherwise 1.
 * [A023533](http://oeis.org/A023533) ([program](023/A023533.asm)): a(n) = 1 if n is of the form m(m+1)(m+2)/6, and 0 otherwise.
@@ -4301,6 +4306,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A033292](http://oeis.org/A033292) ([program](033/A033292.asm)): A Connell-like sequence: take 1 number = 1 (mod Q), 2 numbers = 2 (mod Q), 3 numbers = 3 (mod Q), etc., where Q = 3.
 * [A033293](http://oeis.org/A033293) ([program](033/A033293.asm)): A Connell-like sequence: take 1 number = 1 (mod Q), 2 numbers = 2 (mod Q), 3 numbers = 3 (mod Q), etc., where Q = 8.
 * [A033297](http://oeis.org/A033297) ([program](033/A033297.asm)): Number of ordered rooted trees with n edges such that the rightmost leaf of each subtree is at even level. Equivalently, number of Dyck paths of semilength n with no return descents of odd length.
+* [A033302](http://oeis.org/A033302) ([program](033/A033302.asm)): Largest prime < largest prime < n.
 * [A033303](http://oeis.org/A033303) ([program](033/A033303.asm)): Expansion of (1 + x)/(1 - 2*x - x^2 + x^3).
 * [A033322](http://oeis.org/A033322) ([program](033/A033322.asm)): [ 2/n ].
 * [A033324](http://oeis.org/A033324) ([program](033/A033324.asm)): [ 4/n ].
@@ -5199,6 +5205,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040481](http://oeis.org/A040481) ([program](040/A040481.asm)): Continued fraction for sqrt(504).
 * [A040482](http://oeis.org/A040482) ([program](040/A040482.asm)): Continued fraction for sqrt(505).
 * [A040483](http://oeis.org/A040483) ([program](040/A040483.asm)): Continued fraction for sqrt(506).
+* [A040487](http://oeis.org/A040487) ([program](040/A040487.asm)): Continued fraction for sqrt(510).
+* [A040491](http://oeis.org/A040491) ([program](040/A040491.asm)): Continued fraction for sqrt(514).
 * [A040504](http://oeis.org/A040504) ([program](040/A040504.asm)): Continued fraction for sqrt(527).
 * [A040505](http://oeis.org/A040505) ([program](040/A040505.asm)): Continued fraction for sqrt(528).
 * [A040506](http://oeis.org/A040506) ([program](040/A040506.asm)): Continued fraction for sqrt(530).
@@ -5271,6 +5279,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040759](http://oeis.org/A040759) ([program](040/A040759.asm)): Continued fraction for sqrt(788).
 * [A040762](http://oeis.org/A040762) ([program](040/A040762.asm)): Continued fraction for sqrt(791).
 * [A040763](http://oeis.org/A040763) ([program](040/A040763.asm)): Continued fraction for sqrt(792).
+* [A040764](http://oeis.org/A040764) ([program](040/A040764.asm)): Continued fraction for sqrt(793).
 * [A040769](http://oeis.org/A040769) ([program](040/A040769.asm)): Continued fraction for sqrt(798).
 * [A040783](http://oeis.org/A040783) ([program](040/A040783.asm)): Continued fraction for sqrt(812).
 * [A040789](http://oeis.org/A040789) ([program](040/A040789.asm)): Continued fraction for sqrt(818).

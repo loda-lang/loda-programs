@@ -1,20 +1,15 @@
 ; A081147: Differences of Beatty sequence for square root of 5.
 ; 2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2
 
-mov $4,2
-mov $6,$0
-lpb $4
-  sub $4,1
-  add $0,$4
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  cal $2,22839 ; Beatty sequence for sqrt(5).
-  mov $3,$4
-  mul $3,$2
-  add $1,$3
-  mov $5,$2
+add $0,1
+trn $0,2
+mul $0,2
+add $0,1
+cal $0,159917 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 01, starting from a(0) = 0.
+div $0,2
+mov $1,$0
+mov $2,2
+lpb $2
+  add $1,1
+  sub $2,1
 lpe
-min $6,1
-mul $6,$5
-sub $1,$6

@@ -3,15 +3,15 @@
 
 mov $2,$0
 add $2,1
-mov $3,$0
+mov $4,$0
 lpb $2
-  mov $0,$3
+  mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-  mov $4,$0
-  sub $4,3
-  mul $4,5
-  add $4,12
-  add $1,$4
+  trn $0,1
+  cal $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
+  mov $3,$0
+  mul $3,5
+  add $3,12
+  add $1,$3
 lpe

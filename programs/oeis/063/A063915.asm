@@ -4,6 +4,4 @@
 add $0,1
 cal $0,73121 ; a(n) = r*a(ceiling(n/2)) + s*a(floor(n/2)) with a(1)=1 and (r,s)=(2,2).
 mov $1,$0
-div $1,6
-mul $1,2
-add $1,1
+div $1,3

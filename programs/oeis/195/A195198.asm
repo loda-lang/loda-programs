@@ -4,6 +4,12 @@
 lpb $0
   dif $0,3
 lpe
-trn $0,1
-cal $0,145377 ; a(n) = A002324(n) mod 2.
-mov $1,$0
+mov $1,1
+lpb $0
+  sub $0,$1
+  add $1,2
+lpe
+pow $0,2
+mov $1,3
+trn $1,$0
+mod $1,2

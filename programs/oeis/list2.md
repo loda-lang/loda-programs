@@ -255,6 +255,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101637](http://oeis.org/A101637) ([program](101/A101637.asm)): a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
 * [A101642](http://oeis.org/A101642) ([program](101/A101642.asm)): a(n) = Knuth's Fibonacci (or circle) product "3 o n".
 * [A101651](http://oeis.org/A101651) ([program](101/A101651.asm)): a(n)=Product{k=0..n, 1+0^A010060(k)}/2.
+* [A101653](http://oeis.org/A101653) ([program](101/A101653.asm)): a(n)=Product{k=0..n, 1+3^A010060(k)}/2.
 * [A101660](http://oeis.org/A101660) ([program](101/A101660.asm)): Fixed point of morphism 0 -> 01, 1 -> 02, 2 -> 12.
 * [A101671](http://oeis.org/A101671) ([program](101/A101671.asm)): Fixed point of morphism 0 -> 01, 1 -> 20, 2 -> 10.
 * [A101673](http://oeis.org/A101673) ([program](101/A101673.asm)): Fixed point of morphism 0 -> 01, 1 -> 20, 2 -> 20.
@@ -1718,8 +1719,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117368](http://oeis.org/A117368) ([program](117/A117368.asm)): a(n) = largest prime less than the smallest prime dividing (2n-1).
 * [A117373](http://oeis.org/A117373) ([program](117/A117373.asm)): Expansion of (1 - 3x)/(1 - x + x^2).
 * [A117378](http://oeis.org/A117378) ([program](117/A117378.asm)): Expansion of (1-4*x)/(1-x+x^2).
-* [A117401](http://oeis.org/A117401) ([program](117/A117401.asm)): Triangle, read by rows, defined by: T(n,k) = 2^((n-k)*k) for n>=k>=0.
-* [A117403](http://oeis.org/A117403) ([program](117/A117403.asm)): a(n) = Sum_{k=0..[n/2]} 2^((n-2*k)*k) for n>=0.
+* [A117401](http://oeis.org/A117401) ([program](117/A117401.asm)): Triangle T(n,k) = 2^(k*(n-k)), read by rows.
+* [A117403](http://oeis.org/A117403) ([program](117/A117403.asm)): a(n) = Sum_{k=0..floor(n/2)} 2^((n-2*k)*k) for n>=0.
 * [A117412](http://oeis.org/A117412) ([program](117/A117412.asm)): Sum of the interior angles of an n-sided polygon, in gradians.
 * [A117441](http://oeis.org/A117441) ([program](117/A117441.asm)): Periodic with repeating part {1,1,0,1,-1,0,-1,-1,0,-1,1,0}.
 * [A117444](http://oeis.org/A117444) ([program](117/A117444.asm)): Period 5: Repeat [0, 1, 2, -2, -1].
@@ -1847,8 +1848,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118162](http://oeis.org/A118162) ([program](118/A118162.asm)): Start with 1 and repeatedly reverse the digits and add 60 to get the next term.
 * [A118163](http://oeis.org/A118163) ([program](118/A118163.asm)): Start with 1 and repeatedly reverse the digits and add 65 to get the next term.
 * [A118175](http://oeis.org/A118175) ([program](118/A118175.asm)): Binary representation of n-th iteration of the Rule 220 elementary cellular automaton starting with a single black cell.
-* [A118180](http://oeis.org/A118180) ([program](118/A118180.asm)): Triangle T, read by rows, defined by: T(n,k) = (3^k)^(n-k) for n>=k>=0.
-* [A118185](http://oeis.org/A118185) ([program](118/A118185.asm)): Triangle T, read by rows, defined by: T(n,k) = (4^k)^(n-k) for n>=k>=0.
+* [A118180](http://oeis.org/A118180) ([program](118/A118180.asm)): Triangle T(n, k) = 3^(k*(n-k)), read by rows.
+* [A118185](http://oeis.org/A118185) ([program](118/A118185.asm)): Triangle T(n,k) = 4^(k*(n-k)) for n>=k>=0, read by rows.
 * [A118190](http://oeis.org/A118190) ([program](118/A118190.asm)): Triangle T, read by rows, defined by: T(n,k) = (5^k)^(n-k) for n>=k>=0.
 * [A118200](http://oeis.org/A118200) ([program](118/A118200.asm)): Start with 1 and repeatedly reverse the digits and add 66 to get the next term.
 * [A118214](http://oeis.org/A118214) ([program](118/A118214.asm)): Start with 1 and repeatedly reverse the digits and add 67 to get the next term.
@@ -1946,6 +1947,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118831](http://oeis.org/A118831) ([program](118/A118831.asm)): Numerators of the convergents of the 2-adic continued fraction of zero given by A118830.
 * [A118880](http://oeis.org/A118880) ([program](118/A118880.asm)): Cube numbers equal to sum of decimal digits of n.
 * [A118881](http://oeis.org/A118881) ([program](118/A118881.asm)): Square of sum of decimal digits of n.
+* [A118952](http://oeis.org/A118952) ([program](118/A118952.asm)): Characteristic function of numbers that can be written as p+2^k, where p is prime and p less than 2^k (A118957).
 * [A118966](http://oeis.org/A118966) ([program](118/A118966.asm)): a(n) = (n+1)/2 if n occurs among the first n-1 terms of the sequence, otherwise a(n) = 2*n - 1.
 * [A118979](http://oeis.org/A118979) ([program](118/A118979.asm)): O.g.f: -12*x^3/(-1+x)/(-1+2*x)/(-1+3*x) = -2-2/(-1+3*x)-6/(-1+x)+6/(-1+2*x) .
 * [A119031](http://oeis.org/A119031) ([program](119/A119031.asm)): Add and Reverse: a(n) = the reversal of (a(n-1)+d), case a(1)=1 and d=4.
@@ -2167,7 +2169,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A121262](http://oeis.org/A121262) ([program](121/A121262.asm)): The characteristic function of the multiples of four.
 * [A121273](http://oeis.org/A121273) ([program](121/A121273.asm)): Number of different n-dimensional convex regular polytopes that can tile n-dimensional space.
 * [A121318](http://oeis.org/A121318) ([program](121/A121318.asm)): Molecular topological indices of the path graphs P_n
-* [A121326](http://oeis.org/A121326) ([program](121/A121326.asm)): Primes of the form 4*k^2 + 1.
 * [A121358](http://oeis.org/A121358) ([program](121/A121358.asm)): Least prime factor of pyramidal number A000292(n), a(1) = 1.
 * [A121361](http://oeis.org/A121361) ([program](121/A121361.asm)): Expansion of f(x^1, x^5) * psi(x^2) in powers of x where psi(), f() are Ramanujan theta functions.
 * [A121365](http://oeis.org/A121365) ([program](121/A121365.asm)): a(n) = 6*a(n-1) - 9*a(n-2) + n + 1.
@@ -3225,6 +3226,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131835](http://oeis.org/A131835) ([program](131/A131835.asm)): Numbers starting with 1.
 * [A131843](http://oeis.org/A131843) ([program](131/A131843.asm)): Triangle read by rows: 2*A131821 - A000012.
 * [A131844](http://oeis.org/A131844) ([program](131/A131844.asm)): 3*A131821 - 2*A000012.
+* [A131849](http://oeis.org/A131849) ([program](131/A131849.asm)): Cardinality of largest subset of {1,...,n} such that the difference between any two elements of the subset is never one less than a prime.
 * [A131870](http://oeis.org/A131870) ([program](131/A131870.asm)): Period 8: repeat [1, 2, 3, 4, 6, 7, 8, 9].
 * [A131874](http://oeis.org/A131874) ([program](131/A131874.asm)): (7n^2 + 15n + 2) / 2.
 * [A131877](http://oeis.org/A131877) ([program](131/A131877.asm)): a(n) = 14n + 1.

@@ -5,8 +5,8 @@ mov $6,$0
 mov $8,$0
 add $8,1
 lpb $8
-  clr $0,6
   mov $0,$6
+  mov $3,0
   sub $8,1
   sub $0,$8
   mov $2,$0
@@ -17,18 +17,17 @@ lpb $8
     add $0,$4
     trn $0,1
     cal $0,285526 ; Terms of A285524 that mark the beginning of four consecutive equal values.
-    mov $1,$0
     mov $5,$4
     mul $5,$0
     add $3,$5
+    mov $7,$0
   lpe
   min $2,1
-  mul $2,$1
-  mov $1,$3
-  sub $1,$2
-  sub $1,4
-  mul $1,3
-  add $1,13
-  add $7,$1
+  mul $2,$7
+  mov $7,$3
+  sub $7,$2
+  sub $7,4
+  mul $7,3
+  add $7,13
+  add $1,$7
 lpe
-mov $1,$7

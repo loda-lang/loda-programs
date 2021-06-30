@@ -10,7 +10,6 @@ pow $2,$0
 add $1,$2
 sub $1,5
 div $1,2
-mul $1,18
-sub $1,54
-div $1,3
-add $1,45
+mul $1,2
+add $1,9
+mul $1,3

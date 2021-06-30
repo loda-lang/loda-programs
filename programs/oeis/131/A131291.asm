@@ -7,11 +7,9 @@ mul $0,7
 add $0,1
 mod $0,9
 add $0,1
-mov $2,30
-gcd $2,$0
-lpb $2
-  sub $2,$0
-  mul $0,$2
+lpb $0
+  mul $0,2
+  trn $0,8
 lpe
 mov $1,$0
 add $1,5

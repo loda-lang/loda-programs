@@ -4,12 +4,11 @@
 mov $2,$0
 mov $3,$0
 trn $0,1
-add $3,1
 cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 sub $0,1
 pow $0,2
 mov $1,6
-add $3,2
+add $3,3
 mul $3,$0
 add $1,$3
 sub $1,6

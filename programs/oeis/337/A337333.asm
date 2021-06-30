@@ -1,7 +1,15 @@
 ; A337333: Number of pairs of odd divisors of n, (d1,d2), such that d1 <= d2.
 ; 1,1,3,1,3,3,3,1,6,3,3,3,3,3,10,1,3,6,3,3,10,3,3,3,6,3,10,3,3,10,3,1,10,3,10,6,3,3,10,3,3,10,3,3,21,3,3,3,6,6,10,3,3,10,10,3,10,3,3,10,3,3,21,1,10,10,3,3,10,10,3,6,3,3,21,3,10,10,3,3,15,3,3,10,10
 
-cal $0,1227 ; Number of odd divisors of n.
-add $0,1
+lpb $0
+  mul $0,2
+  sub $0,2
+  dif $0,4
+lpe
+cal $0,23645 ; a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
 mov $1,$0
-bin $1,2
+add $1,1
+lpb $0
+  add $1,$0
+  sub $0,1
+lpe

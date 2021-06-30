@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,188044 ; a(n) = [n*r] - [k*r] - [n*r-k*r], where r=sqrt(2), k=4, [ ]=floor.
   trn $0,2
+  cal $2,188044 ; a(n) = [n*r] - [k*r] - [n*r-k*r], where r=sqrt(2), k=4, [ ]=floor.
   add $1,$2
   add $1,1
 lpe

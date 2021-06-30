@@ -3,7 +3,6 @@
 
 add $0,1
 cal $0,107464 ; Number of fuzzy subgroups of rank 3 cyclic group of order (p^n)*q*r where p, q and r are three distinct prime.
+add $0,1
 mov $1,$0
-sub $1,51
 div $1,4
-add $1,13

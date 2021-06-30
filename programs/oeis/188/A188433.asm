@@ -3,11 +3,8 @@
 
 mov $1,$0
 lpb $0
-  mov $2,$0
-  mov $0,2
-  cal $2,188009 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
-  add $3,$2
-  mov $1,$3
+  mov $0,1
+  cal $1,188009 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
 lpe
 add $1,1
 mod $1,2

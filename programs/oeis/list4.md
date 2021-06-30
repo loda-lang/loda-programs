@@ -128,6 +128,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A203574](http://oeis.org/A203574) ([program](203/A203574.asm)): Bisection of A099924 (Lucas convolution); one half of the terms with odd arguments.
 * [A203579](http://oeis.org/A203579) ([program](203/A203579.asm)): Exponential (or binomial) convolution of A000032 (Lucas) with itself, divided by 2.
 * [A203623](http://oeis.org/A203623) ([program](203/A203623.asm)): Partial sums of A061395.
+* [A203639](http://oeis.org/A203639) ([program](203/A203639.asm)): Multiplicative with a(p^e) = e*p^(e-1).
 * [A203648](http://oeis.org/A203648) ([program](203/A203648.asm)): a(n) = (1/4) * period of repeating sequence {S(j) mod 2n}, where S(j) is the sum of the first j squares.
 * [A203777](http://oeis.org/A203777) ([program](203/A203777.asm)): Aliquot sequence starting at 220.
 * [A203967](http://oeis.org/A203967) ([program](203/A203967.asm)): The number of positive integers <= n that have a prime number of divisors.
@@ -826,6 +827,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A213575](http://oeis.org/A213575) ([program](213/A213575.asm)): Antidiagonal sums of the convolution array A213573.
 * [A213578](http://oeis.org/A213578) ([program](213/A213578.asm)): Antidiagonal sums of the convolution array A213576.
 * [A213580](http://oeis.org/A213580) ([program](213/A213580.asm)): Principal diagonal of the convolution array A213579.
+* [A213581](http://oeis.org/A213581) ([program](213/A213581.asm)): Antidiagonal sums of the convolution array A213571.
 * [A213583](http://oeis.org/A213583) ([program](213/A213583.asm)): Principal diagonal of the convolution array A213582.
 * [A213585](http://oeis.org/A213585) ([program](213/A213585.asm)): Principal diagonal of the convolution array A213584.
 * [A213586](http://oeis.org/A213586) ([program](213/A213586.asm)): Antidiagonal sums of the convolution array A213584.
@@ -1015,6 +1017,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215604](http://oeis.org/A215604) ([program](215/A215604.asm)): a(0)=0, a(n) = (n + a(floor(n/2))) mod 3.
 * [A215630](http://oeis.org/A215630) ([program](215/A215630.asm)): Triangle read by rows: T(n,k) = n^2 - n*k + k^2, 1 <= k <= n.
 * [A215646](http://oeis.org/A215646) ([program](215/A215646.asm)): n * (11*n^2 + 6*n + 1) / 6.
+* [A215655](http://oeis.org/A215655) ([program](215/A215655.asm)): Irregular triangle read by rows: reading the n-th row describes all the numbers seen in the triangle up to the end of the n-th row.
 * [A215667](http://oeis.org/A215667) ([program](215/A215667.asm)): 22n+1 is prime.
 * [A215687](http://oeis.org/A215687) ([program](215/A215687.asm)): Number of solid standard Young tableaux of shape [[2*n,2],[2]].
 * [A215712](http://oeis.org/A215712) ([program](215/A215712.asm)): Numerator of sum(i=1..n, 3*i/4^i )
@@ -1619,6 +1622,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228293](http://oeis.org/A228293) ([program](228/A228293.asm)): a(n) = Sum_{k=1..9} n^k.
 * [A228294](http://oeis.org/A228294) ([program](228/A228294.asm)): a(n) = Sum_{k=1..10} n^k.
 * [A228295](http://oeis.org/A228295) ([program](228/A228295.asm)): The 'Honeycomb' or 'Beehive' sequence: a(n) = ceiling(12^(1/4)*n).
+* [A228297](http://oeis.org/A228297) ([program](228/A228297.asm)): Generalized meta-Fibonacci sequence a(n) with parameters s=0 and k=5.
+* [A228298](http://oeis.org/A228298) ([program](228/A228298.asm)): Generalized meta-Fibonacci sequence a(n) with parameters s=0 and k=7.
 * [A228305](http://oeis.org/A228305) ([program](228/A228305.asm)): a(1) = 3; for n >= 1, a(2*n) = 2^(n+1), a(2*n+1) = 5*2^(n-1).
 * [A228306](http://oeis.org/A228306) ([program](228/A228306.asm)): The Wiener index of the Kneser graph K(n,2) (n>=5).
 * [A228307](http://oeis.org/A228307) ([program](228/A228307.asm)): The hyper-Wiener index of the Kneser graph K(n,2) (n>=5).
@@ -1681,6 +1686,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229067](http://oeis.org/A229067) ([program](229/A229067.asm)): Sum of n-th prime and next perfect square.
 * [A229093](http://oeis.org/A229093) ([program](229/A229093.asm)): The clubs patterns appearing in n X n coins.
 * [A229109](http://oeis.org/A229109) ([program](229/A229109.asm)): a(n) = n plus the number of its distinct prime factors.
+* [A229110](http://oeis.org/A229110) ([program](229/A229110.asm)): Sum of non-divisors of n reduced modulo n.
 * [A229118](http://oeis.org/A229118) ([program](229/A229118.asm)): Distance from the n-th triangular number to the nearest square.
 * [A229135](http://oeis.org/A229135) ([program](229/A229135.asm)): n * (2 + 2^(2*n - 1)).
 * [A229144](http://oeis.org/A229144) ([program](229/A229144.asm)): Partial sums of (Fibonacci numbers mod 3).
@@ -2089,6 +2095,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A238473](http://oeis.org/A238473) ([program](238/A238473.asm)): C(5*n+8, 4)/5 for n>= 0.
 * [A238477](http://oeis.org/A238477) ([program](238/A238477.asm)): a(n) = 32*n - 27 for n >= 1. Second column of triangle A238475.
 * [A238497](http://oeis.org/A238497) ([program](238/A238497.asm)): Cubefree Fibonacci numbers.
+* [A238526](http://oeis.org/A238526) ([program](238/A238526.asm)): Record values of A238525.
 * [A238531](http://oeis.org/A238531) ([program](238/A238531.asm)): Expansion of (1 - x + x^2)^2 / (1 - x)^3 in powers of x.
 * [A238533](http://oeis.org/A238533) ([program](238/A238533.asm)): Number of solutions to gcd(x^2 + y^2 + z^2 + t^2 + h^2, n) = 1 with x,y,z,t,h in [0,n-1].
 * [A238535](http://oeis.org/A238535) ([program](238/A238535.asm)): Sum of divisors d of n where d > sqrt(n).

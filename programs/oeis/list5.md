@@ -584,6 +584,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A260316](http://oeis.org/A260316) ([program](260/A260316.asm)): n/3 if 3 divides n, else n-1.
 * [A260390](http://oeis.org/A260390) ([program](260/A260390.asm)): Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0) and midword sequence (a(n)); see Comments.
 * [A260393](http://oeis.org/A260393) ([program](260/A260393.asm)): Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1) and midword sequence (a(n)); see Comments.
+* [A260397](http://oeis.org/A260397) ([program](260/A260397.asm)): Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,1,0) and midword sequence (a(n)); see Comments.
 * [A260440](http://oeis.org/A260440) ([program](260/A260440.asm)): Unlucky numbers removed at the stage four of Lucky sieve.
 * [A260444](http://oeis.org/A260444) ([program](260/A260444.asm)): Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0,0) and midword sequence (a(n)); see A260390.
 * [A260446](http://oeis.org/A260446) ([program](260/A260446.asm)): Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1,0) and midword sequence (a(n)); see Comments.
@@ -1352,6 +1353,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A270809](http://oeis.org/A270809) ([program](270/A270809.asm)): a(n) = n^3/3 - 7*n/3 + 4.
 * [A270810](http://oeis.org/A270810) ([program](270/A270810.asm)): Expansion of (x - x^2 + 2*x^3 + 2*x^4)/(1 - 3*x + 2*x^2).
 * [A270819](http://oeis.org/A270819) ([program](270/A270819.asm)): a(n) is the number of arithmetic progressions of length 3 among the quadratic residues modulo prime(n).
+* [A270826](http://oeis.org/A270826) ([program](270/A270826.asm)): Maximum number of iterations needed in the Euclid algorithm for gcd(x,y) in [1..n].
 * [A270841](http://oeis.org/A270841) ([program](270/A270841.asm)): a(1) = 5; a(n) is the sum of |a(m) - m| for m < n.
 * [A270851](http://oeis.org/A270851) ([program](270/A270851.asm)): Number of 2X2X2 triangular 0..n arrays with some element plus some adjacent element totalling n+1, n or n-1 exactly once.
 * [A270867](http://oeis.org/A270867) ([program](270/A270867.asm)): a(n) = n^3 + 2*n^2 + 4*n + 1.
@@ -1673,6 +1675,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A275799](http://oeis.org/A275799) ([program](275/A275799.asm)): Number of inequivalent (modulo C_4 rotations) square n X n grids with squares coming in two colors and three squares have one of the colors.
 * [A275812](http://oeis.org/A275812) ([program](275/A275812.asm)): Sum of exponents larger than one in the prime factorization of n: A001222(n) - A056169(n).
 * [A275855](http://oeis.org/A275855) ([program](275/A275855.asm)): Platinum mean sequence: fixed point of the morphism 0 -> 0001, 1 -> 001.
+* [A275868](http://oeis.org/A275868) ([program](275/A275868.asm)): Numbers n tracing out a spiral path in a pentagonal Z module thereby creating a ten-fold twin pattern with relations to quasicrystals.
 * [A275874](http://oeis.org/A275874) ([program](275/A275874.asm)): a(n) = (n-4)*(n+1)*(n+3)/6.
 * [A275876](http://oeis.org/A275876) ([program](275/A275876.asm)): a(n) = 4*n*(n^2 - 3*n - 1)/3.
 * [A275906](http://oeis.org/A275906) ([program](275/A275906.asm)): Expansion of (1+x+x^2) / (1-4*x-4*x^2-x^3).
