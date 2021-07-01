@@ -791,6 +791,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A056594](http://oeis.org/A056594) ([program](056/A056594.asm)): Periodic sequence 1,0,-1,0,...; expansion of 1/(1 + x^2).
 * [A056608](http://oeis.org/A056608) ([program](056/A056608.asm)): Least prime factor of the n-th composite number.
 * [A056616](http://oeis.org/A056616) ([program](056/A056616.asm)): Numerator of binomial(2n,n)/(2n+1).
+* [A056624](http://oeis.org/A056624) ([program](056/A056624.asm)): Number of unitary square divisors of n.
 * [A056640](http://oeis.org/A056640) ([program](056/A056640.asm)): At stage 1, start with a unit square. At each successive stage add 4*(n-1) new squares around outside with edge-to-edge contacts. Sequence gives number of squares (regardless of size) at n-th stage.
 * [A056653](http://oeis.org/A056653) ([program](056/A056653.asm)): Composite numbers together with 1 but excluding 4.
 * [A056671](http://oeis.org/A056671) ([program](056/A056671.asm)): 1 + the number of unitary and squarefree divisors of n = number of divisors of reduced squarefree part of n.
@@ -1601,6 +1602,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063249](http://oeis.org/A063249) ([program](063/A063249.asm)): Doubly hexagonal numbers.
 * [A063250](http://oeis.org/A063250) ([program](063/A063250.asm)): Number of binary right-rotations (iterations of A038572) to reach fixed point.
 * [A063258](http://oeis.org/A063258) ([program](063/A063258.asm)): a(n) = binomial(n+5,4) - 1.
+* [A063262](http://oeis.org/A063262) ([program](063/A063262.asm)): Eighth column (k=7) of sextinomial array A063260.
 * [A063267](http://oeis.org/A063267) ([program](063/A063267.asm)): Eighth column (k=7) of septinomial array A063265.
 * [A063281](http://oeis.org/A063281) ([program](063/A063281.asm)): Dimension of the space of weight n cuspidal newforms for Gamma_1( 8 ).
 * [A063289](http://oeis.org/A063289) ([program](063/A063289.asm)): Dimension of the space of weight n cuspidal newforms for Gamma_1( 16 ).
@@ -1808,6 +1810,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065262](http://oeis.org/A065262) ([program](065/A065262.asm)): The nonpositive side (-1, -2, -3, ...) of the site swap sequence A065261. The bisection of odd terms of A065261.
 * [A065308](http://oeis.org/A065308) ([program](065/A065308.asm)): Prime(n - PrimePi(n)).
 * [A065310](http://oeis.org/A065310) ([program](065/A065310.asm)): Number of occurrences of n-th prime in A065308, where A065308(j) = prime(j - pi(j)).
+* [A065311](http://oeis.org/A065311) ([program](065/A065311.asm)): Primes which occur exactly twice in the sequence of a(n) = prime(n) - prime(n - pi(n)) = A065308(n).
 * [A065328](http://oeis.org/A065328) ([program](065/A065328.asm)): a(n) is the number of primes less than or equal to prime(n) - n.
 * [A065330](http://oeis.org/A065330) ([program](065/A065330.asm)): a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
 * [A065331](http://oeis.org/A065331) ([program](065/A065331.asm)): Largest 3-smooth divisor of n.
@@ -2636,6 +2639,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071789](http://oeis.org/A071789) ([program](071/A071789.asm)): Decimal expansion of the first (of 10) decimal selvage numbers; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
 * [A071791](http://oeis.org/A071791) ([program](071/A071791.asm)): Decimal expansion of the third (of 10) decimal selvage numbers; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
 * [A071792](http://oeis.org/A071792) ([program](071/A071792.asm)): Decimal expansion of the fourth (of 10) decimal selvage number; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
+* [A071793](http://oeis.org/A071793) ([program](071/A071793.asm)): Decimal expansion of the fifth (of 10) decimal selvage number; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
 * [A071797](http://oeis.org/A071797) ([program](071/A071797.asm)): Restart counting after each new odd integer (a fractal sequence).
 * [A071816](http://oeis.org/A071816) ([program](071/A071816.asm)): Number of ordered solutions to x+y+z = u+v+w, 0 <= x, y, z, u, v, w < n.
 * [A071823](http://oeis.org/A071823) ([program](071/A071823.asm)): Number of numbers x <= n with largest prime factor of the form 4k+3.
@@ -3035,6 +3039,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A076118](http://oeis.org/A076118) ([program](076/A076118.asm)): a(n) = sum_k {n/2<=k<=n} k * (-1)^(n-k) * C(k,n-k).
 * [A076121](http://oeis.org/A076121) ([program](076/A076121.asm)): Complete list of possible cribbage hands.
 * [A076178](http://oeis.org/A076178) ([program](076/A076178.asm)): a(n) = 2*n^2 - A077071(n).
+* [A076182](http://oeis.org/A076182) ([program](076/A076182.asm)): a(n) = A006666(n) mod 2.
 * [A076237](http://oeis.org/A076237) ([program](076/A076237.asm)): Remainder when 2nd order composite cc[n]=A050435[n] is divided by n.
 * [A076264](http://oeis.org/A076264) ([program](076/A076264.asm)): Number of ternary (0,1,2) sequences without a consecutive '012'.
 * [A076273](http://oeis.org/A076273) ([program](076/A076273.asm)): a(0) = 1, a(1) = 2; for n>1, a(n) = prime(n)+prime(n-1)-1.
@@ -4593,7 +4598,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088673](http://oeis.org/A088673) ([program](088/A088673.asm)): n mod A002024(n), where A002024 is "n appears n times": 1, 2, 2, 3, 3, 3, ...
 * [A088680](http://oeis.org/A088680) ([program](088/A088680.asm)): a(n) = prime(2n+1) - prime(2n).
 * [A088682](http://oeis.org/A088682) ([program](088/A088682.asm)): a(n) = prime(3*n+1) - prime(3*n-1).
-* [A088683](http://oeis.org/A088683) ([program](088/A088683.asm)): a(n) = prime(3*n+2) - prime(3*n).
 * [A088689](http://oeis.org/A088689) ([program](088/A088689.asm)): Jacobsthal numbers modulo 3.
 * [A088696](http://oeis.org/A088696) ([program](088/A088696.asm)): Triangle read by rows, giving number of partial quotients in continued fraction representation of terms in the left branch of the infinite Stern-Brocot tree.
 * [A088705](http://oeis.org/A088705) ([program](088/A088705.asm)): First differences of A000120. One minus exponent of 2 in n.

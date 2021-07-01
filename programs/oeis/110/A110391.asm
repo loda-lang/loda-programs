@@ -3,9 +3,8 @@
 
 mov $2,$0
 cal $0,240926 ; a(n) = 2 + L(2*n) = 2 + A005248(n), n >= 0, with the Lucas numbers (A000032).
-mov $1,$0
-add $2,1
 gcd $2,2
 mul $2,2
-add $1,$2
-sub $1,5
+sub $2,1
+sub $0,$2
+mov $1,$0

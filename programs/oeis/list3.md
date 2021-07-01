@@ -1266,6 +1266,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A161343](http://oeis.org/A161343) ([program](161/A161343.asm)): a(n) = 7^A000120(n).
 * [A161344](http://oeis.org/A161344) ([program](161/A161344.asm)): Numbers k with A033676(k)=2, where A033676 is the largest divisor <= sqrt(k).
 * [A161345](http://oeis.org/A161345) ([program](161/A161345.asm)): Numbers k whose largest divisor <= sqrt(k) is 3.
+* [A161346](http://oeis.org/A161346) ([program](161/A161346.asm)): a(n) = A161345(n)/3.
 * [A161365](http://oeis.org/A161365) ([program](161/A161365.asm)): a(n) = 3/2 + 5*n - 5*(-1)^n/2.
 * [A161382](http://oeis.org/A161382) ([program](161/A161382.asm)): (0,1)-sequence where n-th run has length n^2.
 * [A161385](http://oeis.org/A161385) ([program](161/A161385.asm)): (1,2)-sequence where n-th run has length n^2.

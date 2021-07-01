@@ -4,13 +4,8 @@
 add $0,2
 mul $0,6
 lpb $0
-  mul $1,2
-  add $2,$0
+  mov $1,$0
   div $0,10
-  add $2,1
-  sub $1,$2
-  gcd $1,2
-  mov $2,2
+  mod $1,2
 lpe
-sub $1,1
 mul $1,3

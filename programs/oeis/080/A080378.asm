@@ -7,7 +7,6 @@ div $0,2
 mul $0,2
 sub $0,1
 cal $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-add $0,2
-mod $0,4
+add $0,5
 mov $1,$0
-sub $1,1
+mod $1,4

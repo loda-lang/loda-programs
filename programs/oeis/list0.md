@@ -1104,6 +1104,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A006501](http://oeis.org/A006501) ([program](006/A006501.asm)): Expansion of (1+x^2) / ( (1-x)^2 * (1-x^3)^2 ).
 * [A006503](http://oeis.org/A006503) ([program](006/A006503.asm)): a(n) = n*(n+1)*(n+8)/6.
 * [A006504](http://oeis.org/A006504) ([program](006/A006504.asm)): Coefficient of x^4 in (1-x-x^2)^(-n).
+* [A006513](http://oeis.org/A006513) ([program](006/A006513.asm)): Limit of the image of n after 2k iterates of `(3x+1)/2' map as k grows.
 * [A006516](http://oeis.org/A006516) ([program](006/A006516.asm)): a(n) = 2^(n-1)*(2^n - 1), n >= 0.
 * [A006519](http://oeis.org/A006519) ([program](006/A006519.asm)): Highest power of 2 dividing n.
 * [A006520](http://oeis.org/A006520) ([program](006/A006520.asm)): Partial sums of A006519.
@@ -5162,6 +5163,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040350](http://oeis.org/A040350) ([program](040/A040350.asm)): Continued fraction for sqrt(370).
 * [A040357](http://oeis.org/A040357) ([program](040/A040357.asm)): Continued fraction for sqrt(377).
 * [A040360](http://oeis.org/A040360) ([program](040/A040360.asm)): Continued fraction for sqrt(380).
+* [A040361](http://oeis.org/A040361) ([program](040/A040361.asm)): Continued fraction for sqrt(381).
 * [A040367](http://oeis.org/A040367) ([program](040/A040367.asm)): Continued fraction for sqrt(387).
 * [A040370](http://oeis.org/A040370) ([program](040/A040370.asm)): Continued fraction for sqrt(390).
 * [A040372](http://oeis.org/A040372) ([program](040/A040372.asm)): Continued fraction for sqrt(392).
@@ -5289,6 +5291,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040811](http://oeis.org/A040811) ([program](040/A040811.asm)): Continued fraction for sqrt(840).
 * [A040812](http://oeis.org/A040812) ([program](040/A040812.asm)): Continued fraction for sqrt(842).
 * [A040813](http://oeis.org/A040813) ([program](040/A040813.asm)): Continued fraction for sqrt(843).
+* [A040825](http://oeis.org/A040825) ([program](040/A040825.asm)): Continued fraction for sqrt(855).
 * [A040830](http://oeis.org/A040830) ([program](040/A040830.asm)): Continued fraction for sqrt(860).
 * [A040837](http://oeis.org/A040837) ([program](040/A040837.asm)): Continued fraction for sqrt(867).
 * [A040840](http://oeis.org/A040840) ([program](040/A040840.asm)): Continued fraction for sqrt(870).

@@ -2819,8 +2819,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A129393](http://oeis.org/A129393) ([program](129/A129393.asm)): Row sums of A129392.
 * [A129401](http://oeis.org/A129401) ([program](129/A129401.asm)): a(n) is the result of replacing with its successor prime each prime in the factorization of the n-th composite number.
 * [A129428](http://oeis.org/A129428) ([program](129/A129428.asm)): Centered 47-gonal numbers.
-* [A129480](http://oeis.org/A129480) ([program](129/A129480.asm)): Prime(17n).
 * [A129502](http://oeis.org/A129502) ([program](129/A129502.asm)): For n=2^k, a(n) = binomial(k + 2, 2), else 0.
+* [A129514](http://oeis.org/A129514) ([program](129/A129514.asm)): a(n) = gcd(Sum_{k|n} k, Sum_{1<k<n, k does not divide n} k) = gcd(sigma(n), n(n+1)/2 - sigma(n)) = gcd(sigma(n), n(n+1)/2), where sigma(n) = A000203(n).
 * [A129527](http://oeis.org/A129527) ([program](129/A129527.asm)): a(2n) = a(n) + 2n, a(2n+1) = 2n + 1.
 * [A129530](http://oeis.org/A129530) ([program](129/A129530.asm)): a(n) = (1/2)*n*(n-1)*3^(n-1).
 * [A129532](http://oeis.org/A129532) ([program](129/A129532.asm)): 3n(n-1)4^(n-2).
@@ -4828,6 +4828,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145127](http://oeis.org/A145127) ([program](145/A145127.asm)): a(n) = 1 + (144 + (50 + (35 + (10 + n)*n)*n)*n)*n/120.
 * [A145128](http://oeis.org/A145128) ([program](145/A145128.asm)): 1 + (1200 + (634 + (225 + (85 + (15 + n)*n)*n)*n)*n)*n/720.
 * [A145129](http://oeis.org/A145129) ([program](145/A145129.asm)): 1 + (9960 + (6804 + (2464 + (735 + (175 + (21 + n)*n)*n)*n)*n)*n)*n/5040.
+* [A145130](http://oeis.org/A145130) ([program](145/A145130.asm)): 2 + (89040 + (71868 + (29932 + (8449 + (1960 + (322 + (28 + n)*n)*n)*n)*n)*n)*n)*n/40320.
 * [A145131](http://oeis.org/A145131) ([program](145/A145131.asm)): Expansion of x/((1 - x - x^4)*(1 - x)^2).
 * [A145132](http://oeis.org/A145132) ([program](145/A145132.asm)): Expansion of x/((1 - x - x^4)*(1 - x)^3).
 * [A145154](http://oeis.org/A145154) ([program](145/A145154.asm)): Coefficients in expansion of Eisenstein series E_1.

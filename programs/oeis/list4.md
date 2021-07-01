@@ -642,6 +642,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212506](http://oeis.org/A212506) ([program](212/A212506.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w<=2x and y<=2z.
 * [A212518](http://oeis.org/A212518) ([program](212/A212518.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w>2x and y>3z.
 * [A212519](http://oeis.org/A212519) ([program](212/A212519.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w>2x and y>=3z.
+* [A212522](http://oeis.org/A212522) ([program](212/A212522.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w>=2x and y>3z.
 * [A212523](http://oeis.org/A212523) ([program](212/A212523.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<y+z.
 * [A212530](http://oeis.org/A212530) ([program](212/A212530.asm)): Difference between the sum of the first n primes s(n) and the nearest square <  s(n).
 * [A212560](http://oeis.org/A212560) ([program](212/A212560.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<=y+z.
@@ -2070,6 +2071,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A237622](http://oeis.org/A237622) ([program](237/A237622.asm)): Interpolation polynomial through n points (0,1), (1,1), ..., (n-2,1) and (n-1,n) evaluated at 2n, a(0)=1.
 * [A237664](http://oeis.org/A237664) ([program](237/A237664.asm)): Interpolation polynomial through n+1 points (0,1), (1,1), ..., (n-1,1) and (n,n) evaluated at 2n.
 * [A237684](http://oeis.org/A237684) ([program](237/A237684.asm)): a(n) = floor(n*prime(n) / Sum_{i<=n} prime(i).
+* [A237881](http://oeis.org/A237881) ([program](237/A237881.asm)): a(n) = 2-adic valuation of prime(n)+prime(n+1).
 * [A237930](http://oeis.org/A237930) ([program](237/A237930.asm)): a(n) = 3^(n+1) + (3^n-1)/2.
 * [A237991](http://oeis.org/A237991) ([program](237/A237991.asm)): a(n) = 991*n^2 + 1.
 * [A238015](http://oeis.org/A238015) ([program](238/A238015.asm)): Denominator of (2*n+1)!*8*Bernoulli(2*n,1/2).
