@@ -359,6 +359,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102671](http://oeis.org/A102671) ([program](102/A102671.asm)): Number of digits >= 3 in decimal representation of n.
 * [A102672](http://oeis.org/A102672) ([program](102/A102672.asm)): Number of digits >= 3 in the decimal representations of all integers from 0 to n.
 * [A102673](http://oeis.org/A102673) ([program](102/A102673.asm)): Number of digits >= 4 in decimal representation of n.
+* [A102674](http://oeis.org/A102674) ([program](102/A102674.asm)): Number of digits >= 4 in the decimal representations of all integers from 0 to n.
 * [A102675](http://oeis.org/A102675) ([program](102/A102675.asm)): Number of digits >= 5 in decimal representation of n.
 * [A102676](http://oeis.org/A102676) ([program](102/A102676.asm)): Number of digits >= 5 in the decimal representations of all integers from 0 to n.
 * [A102677](http://oeis.org/A102677) ([program](102/A102677.asm)): Number of digits >= 6 in decimal representation of n.
@@ -1166,6 +1167,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110749](http://oeis.org/A110749) ([program](110/A110749.asm)): Triangle read by rows with the n-th row containing the first n multiples of n with digits reversed.
 * [A110801](http://oeis.org/A110801) ([program](110/A110801.asm)): Numbers n such that 12n + 1 is prime.
 * [A110803](http://oeis.org/A110803) ([program](110/A110803.asm)): n times the number of digits in the decimal expansion of n.
+* [A110805](http://oeis.org/A110805) ([program](110/A110805.asm)): Sum of digits of n times number of digits of n.
 * [A110831](http://oeis.org/A110831) ([program](110/A110831.asm)): a(n) = 3*n^2 + 27*n + 1.
 * [A110833](http://oeis.org/A110833) ([program](110/A110833.asm)): Squares of the form (p+1)^2, where p is prime.
 * [A110882](http://oeis.org/A110882) ([program](110/A110882.asm)): a(n) is the least integer x such that x^n < 2 * (x-1)^n.
@@ -2023,9 +2025,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120150](http://oeis.org/A120150) ([program](120/A120150.asm)): a(1)=3; a(n)=floor((11+sum(a(1) to a(n-1)))/3).
 * [A120151](http://oeis.org/A120151) ([program](120/A120151.asm)): a(1)=5; a(n)=floor((15+sum(a(1) to a(n-1)))/3).
 * [A120152](http://oeis.org/A120152) ([program](120/A120152.asm)): a(1)=6; a(n)=floor((19+sum(a(1) to a(n-1)))/3).
+* [A120153](http://oeis.org/A120153) ([program](120/A120153.asm)): a(1)=7; a(n)=floor((23+sum(a(1) to a(n-1)))/3).
 * [A120154](http://oeis.org/A120154) ([program](120/A120154.asm)): a(1)=9; a(n)=floor((27+sum(a(1) to a(n-1)))/3).
+* [A120155](http://oeis.org/A120155) ([program](120/A120155.asm)): a(1)=10; a(n)=floor((31+sum(a(1) to a(n-1)))/3).
 * [A120156](http://oeis.org/A120156) ([program](120/A120156.asm)): a(1)=11; a(n)=floor((35+sum(a(1) to a(n-1)))/3).
 * [A120157](http://oeis.org/A120157) ([program](120/A120157.asm)): a(1)=13; a(n)=floor((39+sum(a(1) to a(n-1)))/3).
+* [A120158](http://oeis.org/A120158) ([program](120/A120158.asm)): a(1)=14; a(n)=floor((43+sum(a(1) to a(n-1)))/3).
 * [A120159](http://oeis.org/A120159) ([program](120/A120159.asm)): a(1)=15; a(n)=floor((47+sum(a(1) to a(n-1)))/3).
 * [A120160](http://oeis.org/A120160) ([program](120/A120160.asm)): a(n) = ceiling(Sum_{i=1..n-1} a(i)/4) for n >= 2 starting with a(1) = 1.
 * [A120161](http://oeis.org/A120161) ([program](120/A120161.asm)): a(1)=2; a(n)=floor((9+sum(a(1) to a(n-1)))/4).
@@ -4377,6 +4382,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140724](http://oeis.org/A140724) ([program](140/A140724.asm)): Period 10: 1, 5, 9, 7, 7, 9, 5, 1, 3, 3 repeated.
 * [A140725](http://oeis.org/A140725) ([program](140/A140725.asm)): Inverse binomial transform of (0 followed by A037481).
 * [A140730](http://oeis.org/A140730) ([program](140/A140730.asm)): a(4*n)=5^n, a(4*n+1)=2*5^n, a(4*n+2)=3*5^n, a(4*n+3)=4*5^n.
+* [A140751](http://oeis.org/A140751) ([program](140/A140751.asm)): Triangle read by rows, X^n * [1,0,0,0,...] where X = an infinite tridiagonal matrix with (1,0,1,0,1,...) in the main and subdiagonals and (1,1,1,...) in the subsubdiagonal.
 * [A140766](http://oeis.org/A140766) ([program](140/A140766.asm)): a(n) = 6*a(n-1) - 6*a(n-2).
 * [A140777](http://oeis.org/A140777) ([program](140/A140777.asm)): a(n) = 2*prime(n) - 4.
 * [A140788](http://oeis.org/A140788) ([program](140/A140788.asm)): a(n) = 6*4^n + 2.

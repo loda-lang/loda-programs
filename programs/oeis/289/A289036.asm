@@ -8,8 +8,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  sub $0,1
-  max $0,0
+  trn $0,1
   cal $0,285073 ; 0-limiting word of the morphism 0->10, 1-> 010.
   mov $3,$0
   add $3,1

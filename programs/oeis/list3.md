@@ -1086,6 +1086,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158919](http://oeis.org/A158919) ([program](158/A158919.asm)): Beatty sequence for the tribonacci constant tau (A058265): a(n) = floor(n*tau).
 * [A158920](http://oeis.org/A158920) ([program](158/A158920.asm)): Binomial transform of A008805 (triangular numbers with repeats).
 * [A158943](http://oeis.org/A158943) ([program](158/A158943.asm)): INVERT transform of A027656: (1, 0, 2, 0, 3, 0, 4, 0, 5, ...).
+* [A158944](http://oeis.org/A158944) ([program](158/A158944.asm)): Triangle by columns: the natural numbers interleaved with zeros in every column: (1, 0, 2, 0, 3, 0, 4,...)
 * [A158948](http://oeis.org/A158948) ([program](158/A158948.asm)): Triangle read by rows, left border = natural numbers repeated (1, 1, 2, 2, 3, 3,...); all other columns = (1, 0, 1, 0, 1, 0,...).
 * [A158953](http://oeis.org/A158953) ([program](158/A158953.asm)): Trajectory of 12 under repeated application of the map n --> A102370(n) .
 * [A159007](http://oeis.org/A159007) ([program](159/A159007.asm)): Numbers k such that k == 32 or 41 (mod 73).
@@ -4401,6 +4402,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190176](http://oeis.org/A190176) ([program](190/A190176.asm)): a(n) = n^4 + 2^4 + (n+2)^4.
 * [A190224](http://oeis.org/A190224) ([program](190/A190224.asm)): a(n) = [n*u + n*v] - [n*u] - [n*v], where u=sin(Pi/3), v=cos(Pi/3), and []=floor.
 * [A190236](http://oeis.org/A190236) ([program](190/A190236.asm)): a(n) = [n*u + n*v] -[n*u] -[n*v], where u=1/2, v=(1+sqrt(5))/2, and []=floor.
+* [A190248](http://oeis.org/A190248) ([program](190/A190248.asm)): a(n) = [nu+nv+nw]-[nu]-[nv]-[nw], where u=(1+sqrt(5))/2, v=u^2, w=u^3, []=floor.
 * [A190311](http://oeis.org/A190311) ([program](190/A190311.asm)): Number of nonzero digits when writing n in base where place values are positive cubes, cf. A000433.
 * [A190321](http://oeis.org/A190321) ([program](190/A190321.asm)): Number of nonzero digits when writing n in base where place values are squares, cf. A007961.
 * [A190322](http://oeis.org/A190322) ([program](190/A190322.asm)): a(1) = 1, a(2) = 9, a(3) = 17; for n>3, a(n) = a(n-3) + 2.

@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,232779 ; Sum of iterated logs; a(n) = 0 if n = 0; otherwise n + a(floor(log2(n)) where log2 is the base-2 logarithm.
+  cal $0,232779 ; Sum of iterated logs; a(n) = 0 if n = 0; otherwise n + a(floor(log_2(n)).
   mov $2,$3
   mov $4,$0
   add $4,1

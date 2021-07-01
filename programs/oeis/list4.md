@@ -941,6 +941,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214675](http://oeis.org/A214675) ([program](214/A214675.asm)): 9*n^2 - 13*n + 5.
 * [A214682](http://oeis.org/A214682) ([program](214/A214682.asm)): Remove 2s that do not contribute to a factor of 4 from the prime factorization of n.
 * [A214684](http://oeis.org/A214684) ([program](214/A214684.asm)): a(1)=1, a(2)=1, and, for n>2, a(n)=(a(n-1)+a(n-2))/5^k, where 5^k is the highest power of 5 dividing a(n-1)+a(n-2).
+* [A214720](http://oeis.org/A214720) ([program](214/A214720.asm)): Least m>0 such that n^2-m and n-m are relatively prime.
 * [A214721](http://oeis.org/A214721) ([program](214/A214721.asm)): Least m>0 such that 2*n+1+m and n-m are not relatively prime.
 * [A214731](http://oeis.org/A214731) ([program](214/A214731.asm)): a(n) = n^3 - 2*n^2 - 1.
 * [A214732](http://oeis.org/A214732) ([program](214/A214732.asm)): a(n) = 25*n^2 + 15*n + 1021.
@@ -2185,6 +2186,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239796](http://oeis.org/A239796) ([program](239/A239796.asm)): 7n^2 + 2n - 15.
 * [A239844](http://oeis.org/A239844) ([program](239/A239844.asm)): Number of n X 2 0..3 arrays with no element equal to one plus the sum of elements to its left or one plus the sum of elements above it or two plus the sum of the elements diagonally to its northwest, modulo 4.
 * [A239868](http://oeis.org/A239868) ([program](239/A239868.asm)): Sum of sigma(i) mod i for i from 1 to n.
+* [A239876](http://oeis.org/A239876) ([program](239/A239876.asm)): Partial sums of A229110, where A229110(n) = antisigma(n) mod n = A024816(n) mod n.
 * [A239885](http://oeis.org/A239885) ([program](239/A239885.asm)): a(n) = prime(n)*2^(n-2).
 * [A239904](http://oeis.org/A239904) ([program](239/A239904.asm)): a(n) = n - wt(n) + (number of times 11 appears in binary expansion of n).
 * [A239907](http://oeis.org/A239907) ([program](239/A239907.asm)): Let cn(n,k) denote the number of times 11..1 (k 1's) appears in the binary representation of n; a(n) = n - cn(n,1) + cn(n,2) - cn(n,3) + cn(n,4) - ... .
@@ -2627,7 +2629,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246831](http://oeis.org/A246831) ([program](246/A246831.asm)): a(n) is the concatenation of n and 3n in binary.
 * [A246839](http://oeis.org/A246839) ([program](246/A246839.asm)): Number of trailing zeros in A002109(n).
 * [A246930](http://oeis.org/A246930) ([program](246/A246930.asm)): Prime(12*n).
-* [A246931](http://oeis.org/A246931) ([program](246/A246931.asm)): Prime(14*n).
 * [A246934](http://oeis.org/A246934) ([program](246/A246934.asm)): The closest square to n-th prime.
 * [A246943](http://oeis.org/A246943) ([program](246/A246943.asm)): a(4n) = 4*n , a(2n+1) = 8*n+4 , a(4n+2) = 2*n+1.
 * [A246960](http://oeis.org/A246960) ([program](246/A246960.asm)): Directions of the lines in the (Heighway) Dragon Curve.

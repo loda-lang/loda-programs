@@ -3161,6 +3161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A023554](http://oeis.org/A023554) ([program](023/A023554.asm)): Convolution of natural numbers >= 3 and (Fib(2), Fib(3), Fib(4), ...).
 * [A023562](http://oeis.org/A023562) ([program](023/A023562.asm)): Convolution of A023531 and odd numbers.
 * [A023568](http://oeis.org/A023568) ([program](023/A023568.asm)): Number of distinct prime divisors of prime(n)-3.
+* [A023569](http://oeis.org/A023569) ([program](023/A023569.asm)): Greatest prime divisor of prime(n) - 3.
 * [A023572](http://oeis.org/A023572) ([program](023/A023572.asm)): Exponent of 2 in prime factorization of prime(n) - 3.
 * [A023573](http://oeis.org/A023573) ([program](023/A023573.asm)): Sum of distinct prime divisors of p(n)-3.
 * [A023574](http://oeis.org/A023574) ([program](023/A023574.asm)): Sum of exponents in prime-power factorization of p(n)-3.
@@ -4135,7 +4136,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031388](http://oeis.org/A031388) ([program](031/A031388.asm)): Primes p(7n-3).
 * [A031389](http://oeis.org/A031389) ([program](031/A031389.asm)): Primes p(8n-3).
 * [A031390](http://oeis.org/A031390) ([program](031/A031390.asm)): a(n) = prime(9*n - 3).
-* [A031391](http://oeis.org/A031391) ([program](031/A031391.asm)): a(n) = prime(10*n-3).
 * [A031392](http://oeis.org/A031392) ([program](031/A031392.asm)): Prime(5n-4).
 * [A031393](http://oeis.org/A031393) ([program](031/A031393.asm)): a(n) = prime(6*n - 4).
 * [A031394](http://oeis.org/A031394) ([program](031/A031394.asm)): Primes p(7*n-4).
