@@ -4,6 +4,5 @@
 mov $1,$0
 cal $0,6450 ; Prime-indexed primes: primes with prime subscripts.
 sub $0,$1
-mov $1,1
-add $1,$0
-sub $1,2
+mov $1,$0
+sub $1,1

@@ -1,0 +1,15 @@
+; A225826: Number of binary pattern classes in the (2,n)-rectangular grid: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
+; 1,3,7,24,76,288,1072,4224,16576,66048,262912,1050624,4197376,16785408,67121152,268468224,1073790976,4295098368,17180065792,68720001024,274878693376,1099513724928,4398049656832,17592194433024,70368756760576,281475010265088,1125899957174272,4503599761588224
+
+mov $1,2
+pow $1,$0
+mod $0,2
+mov $2,$1
+add $1,1
+add $1,$0
+mul $1,$2
+div $1,6
+mul $1,3
+add $1,1
+add $1,$2
+div $1,2

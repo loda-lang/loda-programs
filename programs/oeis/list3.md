@@ -589,6 +589,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157110](http://oeis.org/A157110) ([program](157/A157110.asm)): a(n) = 1681*n^2 - 2606*n + 1010.
 * [A157111](http://oeis.org/A157111) ([program](157/A157111.asm)): a(n) = 137842*n - 106846.
 * [A157112](http://oeis.org/A157112) ([program](157/A157112.asm)): a(n) = 5651522*n^2 - 8761372*n + 3395619.
+* [A157129](http://oeis.org/A157129) ([program](157/A157129.asm)): a(n)=(length of n-th run divided by 2) using 1 and 2 and starting with 1,1.
 * [A157130](http://oeis.org/A157130) ([program](157/A157130.asm)): Partial sums of A128201.
 * [A157142](http://oeis.org/A157142) ([program](157/A157142.asm)): Signed denominators of Leibniz series for Pi/4.
 * [A157195](http://oeis.org/A157195) ([program](157/A157195.asm)): a(n) = 0 if n is 1 or a prime, otherwise a(n) = product of the proper divisors of n.
@@ -1325,6 +1326,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A161920](http://oeis.org/A161920) ([program](161/A161920.asm)): a(n) = A161511(A004760(n)).
 * [A161935](http://oeis.org/A161935) ([program](161/A161935.asm)): 28-gonal numbers: a(n) = n*(13*n - 12).
 * [A161938](http://oeis.org/A161938) ([program](161/A161938.asm)): a(n) = ((3+sqrt(2))*(2+sqrt(2))^n + (3-sqrt(2))*(2-sqrt(2))^n)/2.
+* [A161939](http://oeis.org/A161939) ([program](161/A161939.asm)): a(n) = ((3+sqrt(2))*(4+sqrt(2))^n + (3-sqrt(2))*(4-sqrt(2))^n)/2.
 * [A161941](http://oeis.org/A161941) ([program](161/A161941.asm)): a(n) = ((4+sqrt(2))*(2+sqrt(2))^n + (4-sqrt(2))*(2-sqrt(2))^n)/4.
 * [A161942](http://oeis.org/A161942) ([program](161/A161942.asm)): Odd part of sum of divisors of n.
 * [A161983](http://oeis.org/A161983) ([program](161/A161983.asm)): Irregular triangle read by rows: the group of 2n + 1 integers starting at A014105(n).
@@ -1360,6 +1362,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A162330](http://oeis.org/A162330) ([program](162/A162330.asm)): Blocks of 4 numbers of the form 2k, 2k-1, 2k, 2k+1, k=1,2,3,4,...
 * [A162345](http://oeis.org/A162345) ([program](162/A162345.asm)): Length of n-th edge in the graph of the zig-zag function for prime numbers.
 * [A162349](http://oeis.org/A162349) ([program](162/A162349.asm)): First differences of A160412.
+* [A162356](http://oeis.org/A162356) ([program](162/A162356.asm)): a(n) = 8*a(n-1)-14*a(n-2) for n>1; a(0) = 2; a(1) = 9.
 * [A162395](http://oeis.org/A162395) ([program](162/A162395.asm)): a(n) = -(-1)^n * n^2.
 * [A162396](http://oeis.org/A162396) ([program](162/A162396.asm)): a(n) = 2*a(n-2) for n > 2; a(1) = 5, a(2) = 2.
 * [A162397](http://oeis.org/A162397) ([program](162/A162397.asm)): a(n) = n * Kronecker(-3, n).
@@ -1457,6 +1460,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A163305](http://oeis.org/A163305) ([program](163/A163305.asm)): Numerators of fractions in the approximation of the square root of 5 satisfying: a(n)= (a(n-1)+ c)/(a(n-1)+1); with c=5 and a(1)=0. Also product of the powers of two and five times the Fibonacci numbers.
 * [A163322](http://oeis.org/A163322) ([program](163/A163322.asm)): The 3rd Hermite Polynomial evaluated at n: H_3(n) = 8*n^3 - 12*n.
 * [A163323](http://oeis.org/A163323) ([program](163/A163323.asm)): The 4th Hermite Polynomial evaluated at n: H_4(n) = 16n^4 - 48n^2 + 12.
+* [A163350](http://oeis.org/A163350) ([program](163/A163350.asm)): a(n) = 8*a(n-1) - 14*a(n-2) for n > 1; a(0) = 1, a(1) = 6.
 * [A163366](http://oeis.org/A163366) ([program](163/A163366.asm)): a(n) = (-1)^floor((prime(n)+2)/2) mod prime(n).
 * [A163367](http://oeis.org/A163367) ([program](163/A163367.asm)): a(n) = phi(tau(sigma(n))).
 * [A163368](http://oeis.org/A163368) ([program](163/A163368.asm)): a(n) = phi(sigma(tau(n))).
@@ -1493,6 +1497,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A163607](http://oeis.org/A163607) ([program](163/A163607.asm)): a(n) = ((5 + 2*sqrt(2))*(1 + sqrt(2))^n + (5 - 2*sqrt(2))*(1 - sqrt(2))^n)/2.
 * [A163608](http://oeis.org/A163608) ([program](163/A163608.asm)): a(n) = ((5 + 2*sqrt(2))*(2 + sqrt(2))^n + (5 - 2*sqrt(2))*(2 - sqrt(2))^n)/2.
 * [A163613](http://oeis.org/A163613) ([program](163/A163613.asm)): a(n) = ((1 + 3*sqrt(2))*(2 + sqrt(2))^n + (1 - 3*sqrt(2))*(2 - sqrt(2))^n)/2.
+* [A163615](http://oeis.org/A163615) ([program](163/A163615.asm)): a(n) = ((1 + 3*sqrt(2))*(4 + sqrt(2))^n + (1 - 3*sqrt(2))*(4 - sqrt(2))^n)/2.
 * [A163617](http://oeis.org/A163617) ([program](163/A163617.asm)): a(2*n) = 2*a(n), a(2*n + 1) = 2*a(n) + 2 + (-1)^n, for all n in Z.
 * [A163627](http://oeis.org/A163627) ([program](163/A163627.asm)): Numbers n such that 42n + 5 is prime.
 * [A163637](http://oeis.org/A163637) ([program](163/A163637.asm)): The sum of all odd numbers from 2n-1 to prime(n).
@@ -1550,6 +1555,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164053](http://oeis.org/A164053) ([program](164/A164053.asm)): Partial sums of A162255.
 * [A164056](http://oeis.org/A164056) ([program](164/A164056.asm)): Triangle of 2^n terms by rows, derived from A088696 as to length of continued fractions, lengths increase = 1, decrease = 0. A088696 can be generated using the following algorithm: Rows 0 and 1 begin 1; 1,2; then for all further rows, bring down current row then append to the right: (1 added to each term in current row). Row 2 (1, 2, 3, 2) then becomes: (1, 2, 3, 2, 3, 4, 3, 2).
 * [A164057](http://oeis.org/A164057) ([program](164/A164057.asm)): Complement to A164056, change A164056 bits (0->1; 1->0). Provides a coding template for Petoukhov matrices, relating to DNA codons.
+* [A164072](http://oeis.org/A164072) ([program](164/A164072.asm)): a(n) = 8*a(n-1) - 14*a(n-2) for n > 1; a(0) = 1, a(1) = 7.
 * [A164073](http://oeis.org/A164073) ([program](164/A164073.asm)): a(n) = 2*a(n-2) for n > 2; a(1) = 1, a(2) = 3.
 * [A164086](http://oeis.org/A164086) ([program](164/A164086.asm)): Beatty sequence for 4*Pi/3 = 4.1887902... .
 * [A164087](http://oeis.org/A164087) ([program](164/A164087.asm)): Beatty sequence for 4*Pi/(4*Pi-3) = 1.3135986... .
@@ -1575,6 +1581,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A164284](http://oeis.org/A164284) ([program](164/A164284.asm)): a(n) = 15*n-7.
 * [A164285](http://oeis.org/A164285) ([program](164/A164285.asm)): a(n) = 7*2^n + 3.
 * [A164298](http://oeis.org/A164298) ([program](164/A164298.asm)): a(n) = ((1+4*sqrt(2))*(2+sqrt(2))^n + (1-4*sqrt(2))*(2-sqrt(2))^n)/2.
+* [A164300](http://oeis.org/A164300) ([program](164/A164300.asm)): a(n) = ((1+4*sqrt(2))*(4+sqrt(2))^n + (1-4*sqrt(2))*(4-sqrt(2))^n)/2.
 * [A164303](http://oeis.org/A164303) ([program](164/A164303.asm)): a(n) = 2*a(n-1) + a(n-2) for n > 1; a(0) = 3, a(1) = 11.
 * [A164304](http://oeis.org/A164304) ([program](164/A164304.asm)): a(n) = 4*a(n-1) - 2*a(n-2) for n > 1; a(0) = 3, a(1) = 14.
 * [A164308](http://oeis.org/A164308) ([program](164/A164308.asm)): Triangle read by rows, binomial distribution of the terms (1, 3, 9, 27,...)
@@ -3022,7 +3029,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176639](http://oeis.org/A176639) ([program](176/A176639.asm)): A q-form method for the symmetrical triangle sequence was found based on A000384 hexagonal numbers: q=3;c(n,q)=Product[(q*(2*q - 1))^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q)- c(n,q)/(c(0,q)*c(n-0,q)+1
 * [A176640](http://oeis.org/A176640) ([program](176/A176640.asm)): Partial sums of A005985.
 * [A176641](http://oeis.org/A176641) ([program](176/A176641.asm)): A q-form method for the symmetrical triangle sequence was found based on A000384 hexagonal numbers: q=4;c(n,q)=Product[(q*(2*q - 1))^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q)- c(n,q)/(c(0,q)*c(n-0,q)+1
-* [A176642](http://oeis.org/A176642) ([program](176/A176642.asm)): A q-form method for the symmetrical triangle sequence was found based on A000567 Octagonal numbers: q=2;c(n,q)=Product[(q*(3*q - 2))^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q)- c(n,q)/(c(0,q)*c(n-0,q)+1
+* [A176642](http://oeis.org/A176642) ([program](176/A176642.asm)): A q-form method for the symmetrical triangle sequence was found based on A000567 Octagonal numbers: q=2;c(n,q)=Product[(q*(3*q - 2))^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q))- c(n,q)/(c(0,q)*c(n-0,q))+1
 * [A176643](http://oeis.org/A176643) ([program](176/A176643.asm)): A q-form method for the symmetrical triangle sequence was found based on A000567 Octagonal numbers: q=3;c(n,q)=Product[(q*(3*q - 2))^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q)- c(n,q)/(c(0,q)*c(n-0,q)+1
 * [A176646](http://oeis.org/A176646) ([program](176/A176646.asm)): a(n) = 12*n^5 + 25*n^4 + 5*n^3 - 10*n^2 - 2*n.
 * [A176662](http://oeis.org/A176662) ([program](176/A176662.asm)): a(0)=2, a(1)=7, and a(n) = (3*n+1)*2^(n-1) if n > 1.

@@ -3,8 +3,7 @@
 
 cal $0,88502 ; Numbers n such that (n^2 - 5)/4 is prime.
 pow $0,2
-add $1,$0
-div $1,2
-sub $1,12
-div $1,2
+mov $1,$0
+sub $1,25
+div $1,4
 add $1,5

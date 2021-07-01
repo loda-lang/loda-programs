@@ -316,7 +316,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A256320](http://oeis.org/A256320) ([program](256/A256320.asm)): Number of partitions of 4n into exactly 3 parts.
 * [A256321](http://oeis.org/A256321) ([program](256/A256321.asm)): Number of partitions of 5n into exactly 3 parts.
 * [A256322](http://oeis.org/A256322) ([program](256/A256322.asm)): Number of partitions of 7n into exactly 3 parts.
+* [A256327](http://oeis.org/A256327) ([program](256/A256327.asm)): Number of partitions of 5n into exactly 4 parts.
 * [A256328](http://oeis.org/A256328) ([program](256/A256328.asm)): Number of partitions of 6n into exactly 4 parts.
+* [A256329](http://oeis.org/A256329) ([program](256/A256329.asm)): Number of partitions of 7n into exactly 4 parts.
 * [A256432](http://oeis.org/A256432) ([program](256/A256432.asm)): Characteristic function of octahedral numbers.
 * [A256436](http://oeis.org/A256436) ([program](256/A256436.asm)): Characteristic function of pentatope numbers.
 * [A256455](http://oeis.org/A256455) ([program](256/A256455.asm)): Numbers that appear at least once in a Pythagorean triple (a, b, b+1).
@@ -1700,6 +1702,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276134](http://oeis.org/A276134) ([program](276/A276134.asm)): a(5n) = a(n), a(5n+1) = a(5n+2) = a(5n+3) = a(5n+4) = a(n) + 1, a(0) = 0.
 * [A276150](http://oeis.org/A276150) ([program](276/A276150.asm)): Sum of digits when n is written in primorial base (A049345); minimal number of primorials (A002110) that add to n.
 * [A276151](http://oeis.org/A276151) ([program](276/A276151.asm)): n minus the greatest primorial number (A002110) which divides n: a(n) = n - A053589(n).
+* [A276152](http://oeis.org/A276152) ([program](276/A276152.asm)): a(n) = {smallest prime not dividing n} times {greatest primorial number which divides n} = A053669(n) * A053589(n).
 * [A276190](http://oeis.org/A276190) ([program](276/A276190.asm)): Sum of the squares of the digits of the base-4 representation of n.
 * [A276191](http://oeis.org/A276191) ([program](276/A276191.asm)): Sum of the squares of the digits of the base-5 representation of n.
 * [A276233](http://oeis.org/A276233) ([program](276/A276233.asm)): a(n) = (n+256)/gcd(n,256).
@@ -1756,7 +1759,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276859](http://oeis.org/A276859) ([program](276/A276859.asm)): First differences of the Beatty sequence A022843 for e.
 * [A276860](http://oeis.org/A276860) ([program](276/A276860.asm)): First differences of the Beatty sequence A276853 for 2*e.
 * [A276862](http://oeis.org/A276862) ([program](276/A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
-* [A276863](http://oeis.org/A276863) ([program](276/A276863.asm)): First differences of the Beatty sequence A276854 for 1 + sqrt(5).
 * [A276864](http://oeis.org/A276864) ([program](276/A276864.asm)): First differences of the Beatty sequence A001952 for 2 + sqrt(2).
 * [A276865](http://oeis.org/A276865) ([program](276/A276865.asm)): First differences of the Beatty sequence A003512 for 2 + sqrt(3).
 * [A276866](http://oeis.org/A276866) ([program](276/A276866.asm)): First differences of the Beatty sequence A004976 for 2 + sqrt(5).

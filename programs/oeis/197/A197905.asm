@@ -9,8 +9,8 @@ cmp $3,0
 add $2,$3
 div $1,$2
 add $1,$0
+sub $1,2
 mov $4,1
 cal $4,215862 ; Number of simple labeled graphs on n+2 nodes with exactly n connected components that are trees or cycles.
-sub $1,2
 add $1,$4
 sub $1,2

@@ -2656,6 +2656,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071910](http://oeis.org/A071910) ([program](071/A071910.asm)): a(n) = t(n)*t(n+1)*t(n+2), where t() are the triangular numbers.
 * [A071917](http://oeis.org/A071917) ([program](071/A071917.asm)): Number of pairs (x,y) where x is even, y is odd, 1<=x<=n, 1<=y<=n and x+y is prime.
 * [A071919](http://oeis.org/A071919) ([program](071/A071919.asm)): Number of monotone nondecreasing functions [n]->[m] for n>=0, m>=0, read by antidiagonals.
+* [A071928](http://oeis.org/A071928) ([program](071/A071928.asm)): Kolakoski-(2,4) sequence: a(n) is length of n-th run.
 * [A071930](http://oeis.org/A071930) ([program](071/A071930.asm)): Number of words of length 2n in the two letters s and t that reduce to the identity 1 by using the relations ssTT=1, ststSS=1 and ststTT=1, where S and T are the inverses of s and t, respectively (i.e., sS=1 and tT=1). The generators s and t and the three stated relations generate the quaternion group Q4.
 * [A071934](http://oeis.org/A071934) ([program](071/A071934.asm)): a(n) = Sum_{i=1..n} K(i+1,i), where K(x,y) is the Kronecker symbol (x/y).
 * [A071935](http://oeis.org/A071935) ([program](071/A071935.asm)): K(n,n+1) where K(x,y) is the Kronecker symbol (x/y).
@@ -2779,7 +2780,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073094](http://oeis.org/A073094) ([program](073/A073094.asm)): Final digit of C(2k,k) when not equal to zero.
 * [A073121](http://oeis.org/A073121) ([program](073/A073121.asm)): a(n) = r*a(ceiling(n/2)) + s*a(floor(n/2)) with a(1)=1 and (r,s)=(2,2).
 * [A073122](http://oeis.org/A073122) ([program](073/A073122.asm)): Minimal reversing binary representation of n. Converting sum of powers of 2 in binary representation of a(n) to alternating sum gives n. See A072339.
-* [A073123](http://oeis.org/A073123) ([program](073/A073123.asm)): a(n) is the largest number such that pi(a(n))=prime(n).
+* [A073123](http://oeis.org/A073123) ([program](073/A073123.asm)): a(n) is the largest number such that pi(a(n)) = prime(n).
 * [A073124](http://oeis.org/A073124) ([program](073/A073124.asm)): a(n) = prime(1+prime(n)) - prime(prime(n)).
 * [A073169](http://oeis.org/A073169) ([program](073/A073169.asm)): a(n)=A002808(n)-n, difference between n-th composite and n.
 * [A073170](http://oeis.org/A073170) ([program](073/A073170.asm)): a(1) = a(2) = 0; for n>2, a(n) = prime(n-1)-n+1.
@@ -4053,6 +4054,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083824](http://oeis.org/A083824) ([program](083/A083824.asm)): a(n) = digit reversal of 9*n, divided by 9.
 * [A083877](http://oeis.org/A083877) ([program](083/A083877.asm)): Absolute value of determinant of n X n matrix where the element a(i,j) = if i + j > n then 2*(i + j -n) - 1, else 2*(n + 1 - i - j).
 * [A083878](http://oeis.org/A083878) ([program](083/A083878.asm)): a(0)=1, a(1)=3, a(n)=6a(n-1)-7a(n-2), n>=2.
+* [A083879](http://oeis.org/A083879) ([program](083/A083879.asm)): a(0)=1, a(1)=4, a(n) = 8*a(n-1) - 14*a(n-2), n >= 2.
 * [A083881](http://oeis.org/A083881) ([program](083/A083881.asm)): a(n) = 6*a(n-1) - 6*a(n-2), with a(0)=1, a(1)=3.
 * [A083885](http://oeis.org/A083885) ([program](083/A083885.asm)): (4^n+2^n+0^n+(-2)^n)/4
 * [A083911](http://oeis.org/A083911) ([program](083/A083911.asm)): Number of divisors of n that are congruent to 1 modulo 10.
@@ -4530,6 +4532,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A087908](http://oeis.org/A087908) ([program](087/A087908.asm)): Largest integer not expressible as a nonnegative linear combination of n and n^2 + 1.
 * [A087915](http://oeis.org/A087915) ([program](087/A087915.asm)): Even numbers n such that 2*n+3 is a prime.
 * [A087940](http://oeis.org/A087940) ([program](087/A087940.asm)): a(n) = Sum_{k=0..n} binomial(n+(-1)^k, k).
+* [A087946](http://oeis.org/A087946) ([program](087/A087946.asm)): Expansion of (1-3x+x^2)/((1-2x)(1-4x+x^2)).
 * [A087953](http://oeis.org/A087953) ([program](087/A087953.asm)): a(n) = floor((Fibonacci(2*n+1)+1)/2).
 * [A087960](http://oeis.org/A087960) ([program](087/A087960.asm)): a(n) = (-1)^binomial(n+1,2).
 * [A087963](http://oeis.org/A087963) ([program](087/A087963.asm)): Exponent of highest power of 2 dividing 3*prime(n)+1.

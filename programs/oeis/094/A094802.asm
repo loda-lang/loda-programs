@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   max $2,4
-  cal $2,5171 ; 0 if n is prime else 1.
+  cal $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
   sub $0,$2
 lpe
 mov $1,$0

@@ -3,6 +3,5 @@
 
 mov $1,$0
 cal $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
-mul $0,$1
-mov $1,$0
+mul $1,$0
 add $1,1

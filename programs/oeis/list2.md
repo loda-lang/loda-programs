@@ -714,6 +714,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106388](http://oeis.org/A106388) ([program](106/A106388.asm)): Numbers k such that 11k = 6j^2 + 6j + 1.
 * [A106389](http://oeis.org/A106389) ([program](106/A106389.asm)): Numbers j such that 6j^2 + 6j + 1 = 13k.
 * [A106390](http://oeis.org/A106390) ([program](106/A106390.asm)): Numbers k such that 13k = 6j^2 + 6j + 1.
+* [A106392](http://oeis.org/A106392) ([program](106/A106392.asm)): Expansion of 1/(1 - 6*x + 10*x^2).
 * [A106400](http://oeis.org/A106400) ([program](106/A106400.asm)): Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 1's and -1's.
 * [A106404](http://oeis.org/A106404) ([program](106/A106404.asm)): Number of even semiprimes dividing n.
 * [A106434](http://oeis.org/A106434) ([program](106/A106434.asm)): The (1,1)-entry of the matrix A^n, where A = [0,1;2,3].
@@ -1852,7 +1853,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118175](http://oeis.org/A118175) ([program](118/A118175.asm)): Binary representation of n-th iteration of the Rule 220 elementary cellular automaton starting with a single black cell.
 * [A118180](http://oeis.org/A118180) ([program](118/A118180.asm)): Triangle T(n, k) = 3^(k*(n-k)), read by rows.
 * [A118185](http://oeis.org/A118185) ([program](118/A118185.asm)): Triangle T(n,k) = 4^(k*(n-k)) for n>=k>=0, read by rows.
-* [A118190](http://oeis.org/A118190) ([program](118/A118190.asm)): Triangle T, read by rows, defined by: T(n,k) = (5^k)^(n-k) for n>=k>=0.
+* [A118190](http://oeis.org/A118190) ([program](118/A118190.asm)): Triangle T(n,k) = 5^(k*(n-k)) for n >= k >= 0, read by rows.
 * [A118200](http://oeis.org/A118200) ([program](118/A118200.asm)): Start with 1 and repeatedly reverse the digits and add 66 to get the next term.
 * [A118214](http://oeis.org/A118214) ([program](118/A118214.asm)): Start with 1 and repeatedly reverse the digits and add 67 to get the next term.
 * [A118215](http://oeis.org/A118215) ([program](118/A118215.asm)): Start with 1 and repeatedly reverse the digits and add 68 to get the next term.
@@ -2267,7 +2268,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122554](http://oeis.org/A122554) ([program](122/A122554.asm)): Let S(1)={1} and, for n>1 let S(n) be the smallest set containing x, 2x and x+2 for each element x in S(n-1). a(n) is the number of elements in S(n).
 * [A122558](http://oeis.org/A122558) ([program](122/A122558.asm)): a(0)=1, a(1)=3, a(n)=4*a(n-1)+3*a(n-2) for n>1.
 * [A122562](http://oeis.org/A122562) ([program](122/A122562.asm)): a(n) = n^3 + 114 * n.
-* [A122566](http://oeis.org/A122566) ([program](122/A122566.asm)): Primes with index k^2+k+1.
 * [A122573](http://oeis.org/A122573) ([program](122/A122573.asm)): Expansion of -x*(1+x)*(3*x^2-1) / ( 1-4*x^2+x^4 ).
 * [A122586](http://oeis.org/A122586) ([program](122/A122586.asm)): Leading digit of n expressed in base 3.
 * [A122587](http://oeis.org/A122587) ([program](122/A122587.asm)): Leading digit of n in base 4.
@@ -3270,7 +3270,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A132079](http://oeis.org/A132079) ([program](132/A132079.asm)): a(n) = (5^n + 3)/2
 * [A132086](http://oeis.org/A132086) ([program](132/A132086.asm)): Record values in A132085.
 * [A132090](http://oeis.org/A132090) ([program](132/A132090.asm)): a(n) = pi(pi(n)), where pi = A000720.
-* [A132106](http://oeis.org/A132106) ([program](132/A132106.asm)): 1 + floor(sqrt(n)) + Sum_{i=1..n} floor(n/i).
+* [A132106](http://oeis.org/A132106) ([program](132/A132106.asm)): a(n) = 1 + floor(sqrt(n)) + Sum_{i=1..n} floor(n/i).
 * [A132109](http://oeis.org/A132109) ([program](132/A132109.asm)): a(n) = (2^(n+1) + n^2 + n)/2.
 * [A132112](http://oeis.org/A132112) ([program](132/A132112.asm)): a(n) = n*(n+1)*(11*n+1)/6.
 * [A132113](http://oeis.org/A132113) ([program](132/A132113.asm)): Multiply previous term by 8 and reverse.
@@ -4730,7 +4730,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144225](http://oeis.org/A144225) ([program](144/A144225.asm)): Bordered Pascal's triangle in rectangular format.
 * [A144257](http://oeis.org/A144257) ([program](144/A144257.asm)): Weight array of A086270.
 * [A144312](http://oeis.org/A144312) ([program](144/A144312.asm)): a(n) = 5*n*(5*n + 1)/2.
-* [A144314](http://oeis.org/A144314) ([program](144/A144314.asm)): a(n) = 3*n*(6*n+1).
+* [A144314](http://oeis.org/A144314) ([program](144/A144314.asm)): a(n) = 3*n*(6*n + 1).
 * [A144328](http://oeis.org/A144328) ([program](144/A144328.asm)): A002260 preceded by a column of 1's: a (1, 1, 2, 3, 4, 5,...) crescendo triangle by rows.
 * [A144335](http://oeis.org/A144335) ([program](144/A144335.asm)): Row sums of triangle A144334, binomial transform of [1, 2, 6, 7, 3, 0, 0, 0,...]
 * [A144390](http://oeis.org/A144390) ([program](144/A144390.asm)): a(n) = 3*n^2 - n - 1.
@@ -4810,7 +4810,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A145011](http://oeis.org/A145011) ([program](145/A145011.asm)): First differences of A007775.
 * [A145018](http://oeis.org/A145018) ([program](145/A145018.asm)): a(1) = 4; then add 1 to the first number, then 2, then 3 and so on.
 * [A145027](http://oeis.org/A145027) ([program](145/A145027.asm)): a(n) = a(n-1) + a(n-2) + a(n-3) with a(1) = 2, a(2) = 3, a(3) = 4.
-* [A145037](http://oeis.org/A145037) ([program](145/A145037.asm)): Unreduced binary digital mean numerators, dm_num(2, n).
+* [A145037](http://oeis.org/A145037) ([program](145/A145037.asm)): Number of 1's minus number of 0's in the binary representation of n.
 * [A145051](http://oeis.org/A145051) ([program](145/A145051.asm)): Numerator of the first convergent to sqrt(n) using the recursion x = (n/x + x)/2.
 * [A145052](http://oeis.org/A145052) ([program](145/A145052.asm)): One-third of the number of n X n nonnegative integer arrays with every 3 X 3 subblock summing to 1.
 * [A145064](http://oeis.org/A145064) ([program](145/A145064.asm)): Reduced numerators of the first convergent to the cube root of n using the recursion x = (2*x+n/x^2)/3.

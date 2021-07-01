@@ -8,8 +8,4 @@ add $0,1
 cal $0,159917 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 01, starting from a(0) = 0.
 div $0,2
 mov $1,$0
-mov $2,2
-lpb $2
-  add $1,1
-  sub $2,1
-lpe
+add $1,2
