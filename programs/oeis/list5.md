@@ -570,6 +570,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A260113](http://oeis.org/A260113) ([program](260/A260113.asm)): Maximum number of queens on an n X n chessboard such that no queen attacks more than one other queen.
 * [A260160](http://oeis.org/A260160) ([program](260/A260160.asm)): a(n) = a(n-2) + a(n-6) - a(n-8) with n>8, the first eight terms are 0 except that for a(5) = a(7) = 1.
 * [A260181](http://oeis.org/A260181) ([program](260/A260181.asm)): Numbers whose last digit is prime.
+* [A260188](http://oeis.org/A260188) ([program](260/A260188.asm)): Greatest primorial less than or equal to n.
 * [A260190](http://oeis.org/A260190) ([program](260/A260190.asm)): Kronecker symbol(-6 / 2*n + 1).
 * [A260192](http://oeis.org/A260192) ([program](260/A260192.asm)): Kronecker symbol(-6 / 2*n + 7).
 * [A260196](http://oeis.org/A260196) ([program](260/A260196.asm)): 1, -3, followed by -1's.
@@ -1761,7 +1762,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276862](http://oeis.org/A276862) ([program](276/A276862.asm)): First differences of the Beatty sequence A003151 for 1 + sqrt(2).
 * [A276864](http://oeis.org/A276864) ([program](276/A276864.asm)): First differences of the Beatty sequence A001952 for 2 + sqrt(2).
 * [A276865](http://oeis.org/A276865) ([program](276/A276865.asm)): First differences of the Beatty sequence A003512 for 2 + sqrt(3).
-* [A276866](http://oeis.org/A276866) ([program](276/A276866.asm)): First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 * [A276867](http://oeis.org/A276867) ([program](276/A276867.asm)): First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
 * [A276868](http://oeis.org/A276868) ([program](276/A276868.asm)): First differences of the Beatty sequence A276855 for 3 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
 * [A276869](http://oeis.org/A276869) ([program](276/A276869.asm)): First differences of the Beatty sequence A182769 for 2 + sqrt(1/2).

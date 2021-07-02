@@ -107,6 +107,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A051515](http://oeis.org/A051515) ([program](051/A051515.asm)): (Terms in A014738)/4.
 * [A051543](http://oeis.org/A051543) ([program](051/A051543.asm)): Quotients of consecutive values of lcm of first n triangular numbers (A000217).
 * [A051596](http://oeis.org/A051596) ([program](051/A051596.asm)): Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
+* [A051612](http://oeis.org/A051612) ([program](051/A051612.asm)): a(n) = sigma(n) - phi(n).
 * [A051624](http://oeis.org/A051624) ([program](051/A051624.asm)): 12-gonal (or dodecagonal) numbers: a(n) = n*(5*n-4).
 * [A051628](http://oeis.org/A051628) ([program](051/A051628.asm)): Number of digits in decimal expansion of 1/n before the periodic part begins.
 * [A051633](http://oeis.org/A051633) ([program](051/A051633.asm)): a(n) = 5*2^n - 2.
@@ -1616,6 +1617,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063377](http://oeis.org/A063377) ([program](063/A063377.asm)): Sophie Germain degree of n: number of iterations of n under f(k) = 2k+1 before we reach a number that is not a prime.
 * [A063396](http://oeis.org/A063396) ([program](063/A063396.asm)): T(3,n) with T(n,m) as in A063394.
 * [A063417](http://oeis.org/A063417) ([program](063/A063417.asm)): Ninth column (k=8) of septinomial array A063265.
+* [A063428](http://oeis.org/A063428) ([program](063/A063428.asm)): a(n) is the smallest positive integer of the form n*k/(n+k).
 * [A063436](http://oeis.org/A063436) ([program](063/A063436.asm)): Write 1,2,3,4,... counterclockwise in a hexagonal spiral around 0 starting left down, then a(n) is the sequence found by reading from 0 in the vertical upward direction.
 * [A063440](http://oeis.org/A063440) ([program](063/A063440.asm)): Number of divisors of n-th triangular number.
 * [A063462](http://oeis.org/A063462) ([program](063/A063462.asm)): n * last digit of n.
@@ -3637,6 +3639,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081144](http://oeis.org/A081144) ([program](081/A081144.asm)): Starting at 1, four-fold convolution of A000400 (powers of 6).
 * [A081147](http://oeis.org/A081147) ([program](081/A081147.asm)): Differences of Beatty sequence for square root of 5.
 * [A081168](http://oeis.org/A081168) ([program](081/A081168.asm)): Differences of Beatty sequence for square root of 10.
+* [A081180](http://oeis.org/A081180) ([program](081/A081180.asm)): 4th binomial transform of (0,1,0,2,0,4,0,8,0,16,...).
 * [A081181](http://oeis.org/A081181) ([program](081/A081181.asm)): Staircase on Pascal's triangle.
 * [A081186](http://oeis.org/A081186) ([program](081/A081186.asm)): 4th binomial transform of (1,0,1,0,1,...), A059841.
 * [A081187](http://oeis.org/A081187) ([program](081/A081187.asm)): 5th binomial transform of (1,0,1,0,1,...), A059841.

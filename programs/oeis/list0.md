@@ -3136,6 +3136,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A023513](http://oeis.org/A023513) ([program](023/A023513.asm)): a(n) = sum of distinct prime divisors of prime(n) + 1.
 * [A023514](http://oeis.org/A023514) ([program](023/A023514.asm)): a(n) = sum of exponents in prime-power factorization of prime(n) + 1.
 * [A023515](http://oeis.org/A023515) ([program](023/A023515.asm)): a(n) = prime(n)*prime(n-1) - 1.
+* [A023517](http://oeis.org/A023517) ([program](023/A023517.asm)): Greatest prime divisor of p(n)*p(n-1) - 1.
 * [A023522](http://oeis.org/A023522) ([program](023/A023522.asm)): Sum of exponents in prime-power factorization of p(n)*p(n-1) - 1.
 * [A023523](http://oeis.org/A023523) ([program](023/A023523.asm)): a(n) = prime(n)*prime(n-1) + 1.
 * [A023524](http://oeis.org/A023524) ([program](023/A023524.asm)): Number of distinct prime divisors of prime(n)*prime(n-1) + 1.
@@ -4115,7 +4116,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031340](http://oeis.org/A031340) ([program](031/A031340.asm)): Prime(7n).
 * [A031341](http://oeis.org/A031341) ([program](031/A031341.asm)): a(n) = prime(8n).
 * [A031342](http://oeis.org/A031342) ([program](031/A031342.asm)): Prime(9n).
-* [A031343](http://oeis.org/A031343) ([program](031/A031343.asm)): a(n) = prime(10*n).
 * [A031368](http://oeis.org/A031368) ([program](031/A031368.asm)): Odd indexed primes: a(n) = prime(2n-1).
 * [A031369](http://oeis.org/A031369) ([program](031/A031369.asm)): a(n) = prime(3n-1).
 * [A031370](http://oeis.org/A031370) ([program](031/A031370.asm)): a(n) = prime(4n-1).
@@ -6228,6 +6228,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048879](http://oeis.org/A048879) ([program](048/A048879.asm)): Generalized Pellian with second term of 10.
 * [A048881](http://oeis.org/A048881) ([program](048/A048881.asm)): a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
 * [A048883](http://oeis.org/A048883) ([program](048/A048883.asm)): a(n) = 3^wt(n), where wt(n) = A000120(n).
+* [A048893](http://oeis.org/A048893) ([program](048/A048893.asm)): Threshold function for orthogonal arrays of strength 2.
 * [A048894](http://oeis.org/A048894) ([program](048/A048894.asm)): n - 1 - A048893(n).
 * [A048896](http://oeis.org/A048896) ([program](048/A048896.asm)): a(n) = 2^(A000120(n+1) - 1), n >= 0.
 * [A048967](http://oeis.org/A048967) ([program](048/A048967.asm)): Number of even entries in row n of Pascal's triangle (A007318).

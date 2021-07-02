@@ -1265,7 +1265,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324903](http://oeis.org/A324903) ([program](324/A324903.asm)): a(n) = 1 if A007814(sigma(n)) > A007814(n), 0 otherwise. Here A007814(n) gives the 2-adic valuation of n.
 * [A324904](http://oeis.org/A324904) ([program](324/A324904.asm)): The 2-adic valuation of A318466(n), where A318466(n) = 2*n OR sigma(n).
 * [A324908](http://oeis.org/A324908) ([program](324/A324908.asm)): a(n) = 1 if n is an odd number which is not a square, 0 otherwise.
-* [A324912](http://oeis.org/A324912) ([program](324/A324912.asm)): Binary weight of A324911(n).
 * [A324913](http://oeis.org/A324913) ([program](324/A324913.asm)): a(n) = Sum_{k=1..n} 2^k * phi(k), where phi is the Euler totient function A000010.
 * [A324914](http://oeis.org/A324914) ([program](324/A324914.asm)): a(n) = Sum_{k=1..n} 2^k * tau(k), where tau(k) = A000005(k).
 * [A324915](http://oeis.org/A324915) ([program](324/A324915.asm)): a(n) = Sum_{k=1..n} 2^k * sigma(k), where sigma(k) = A000203(k).
@@ -1911,6 +1910,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339048](http://oeis.org/A339048) ([program](339/A339048.asm)): a(n) = 2*n^2 + 9.
 * [A339051](http://oeis.org/A339051) ([program](339/A339051.asm)): Even bisection of the infinite Fibonacci word A096270.
 * [A339052](http://oeis.org/A339052) ([program](339/A339052.asm)): Odd bisection of the infinite Fibonacci word A096270.
+* [A339053](http://oeis.org/A339053) ([program](339/A339053.asm)): a(n) = least k such that the first n-block in A339051 occurs in A339052 beginning at the k-th term.
 * [A339136](http://oeis.org/A339136) ([program](339/A339136.asm)): Number of (undirected) cycles in the graph C_3 X P_n.
 * [A339183](http://oeis.org/A339183) ([program](339/A339183.asm)): Number of partitions of n into two parts such that the smaller part is a nonzero square.
 * [A339194](http://oeis.org/A339194) ([program](339/A339194.asm)): Sum of all squarefree semiprimes with greater prime factor prime(n).
@@ -2162,6 +2162,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345280](http://oeis.org/A345280) ([program](345/A345280.asm)): a(n) = Sum_{p|n} nextprime(p), where nextprime(n) is the smallest prime > n.
 * [A345493](http://oeis.org/A345493) ([program](345/A345493.asm)): Numbers that are the sum of eight squares in six or more ways.
 * [A345502](http://oeis.org/A345502) ([program](345/A345502.asm)): Numbers that are the sum of nine squares in five or more ways.
+* [A345668](http://oeis.org/A345668) ([program](345/A345668.asm)): Last prime minus distance to last prime.
 * [A345701](http://oeis.org/A345701) ([program](345/A345701.asm)): a(n) = 3*n^3 - 1.
 * [A345702](http://oeis.org/A345702) ([program](345/A345702.asm)): Numbers that can be written as 2*a^2 - 1 and 3*b^3 - 1.
 * [A345741](http://oeis.org/A345741) ([program](345/A345741.asm)): a(n) = n + (n - 1) * d(n).

@@ -1161,6 +1161,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218443](http://oeis.org/A218443) ([program](218/A218443.asm)): a(n) = Sum_{k=0..n} floor(n/(3k+2)).
 * [A218444](http://oeis.org/A218444) ([program](218/A218444.asm)): a(n) = Sum_{k>=0} floor(n/(5*k + 1)).
 * [A218445](http://oeis.org/A218445) ([program](218/A218445.asm)): a(n) = Sum_{k>=0} floor(n/(5*k + 2)).
+* [A218447](http://oeis.org/A218447) ([program](218/A218447.asm)): a(n) = Sum_{k>=0} floor(n/(5*k + 4)).
 * [A218460](http://oeis.org/A218460) ([program](218/A218460.asm)): a(n) = prime(n)^(prime(n + 1) - prime(n)).
 * [A218470](http://oeis.org/A218470) ([program](218/A218470.asm)): Partial sums of floor(n/9).
 * [A218471](http://oeis.org/A218471) ([program](218/A218471.asm)): a(n) = n*(7*n-3)/2.
@@ -1467,6 +1468,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225700](http://oeis.org/A225700) ([program](225/A225700.asm)): Denominators of coefficients arising from q-expansion of Integrate[eta[q^4]^8/eta[q^2]^4, q]/q where eta is the Dedekind eta function.
 * [A225743](http://oeis.org/A225743) ([program](225/A225743.asm)): Triangular array:  row n is least squarefree word of length n using positive integers.
 * [A225773](http://oeis.org/A225773) ([program](225/A225773.asm)): The squares on a chessboard that are black, counting from top left corner and down.
+* [A225826](http://oeis.org/A225826) ([program](225/A225826.asm)): Number of binary pattern classes in the (2,n)-rectangular grid: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
 * [A225875](http://oeis.org/A225875) ([program](225/A225875.asm)): We write the 1 + 4*k numbers once and twice the others.
 * [A225883](http://oeis.org/A225883) ([program](225/A225883.asm)): a(n) = (-1)^n * (1 - 2^n).
 * [A225894](http://oeis.org/A225894) ([program](225/A225894.asm)): Number of n X 2 binary arrays whose sum with another n X 2 binary array containing no more than a single 1 has rows and columns in lexicographically nondecreasing order.

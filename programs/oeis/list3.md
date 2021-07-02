@@ -157,6 +157,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152767](http://oeis.org/A152767) ([program](152/A152767.asm)): 3 times 10-gonal (or decagonal) numbers: 3n(4n-3).
 * [A152770](http://oeis.org/A152770) ([program](152/A152770.asm)): Sum of proper divisors minus the number of proper divisors of n: a(n) = sigma(n) - n - d(n) + 1.
 * [A152771](http://oeis.org/A152771) ([program](152/A152771.asm)): a(n) = sigma(n) - 2*d(n) + 1.
+* [A152772](http://oeis.org/A152772) ([program](152/A152772.asm)): a(n) = sigma(n) - 3*d(n) + 3.
 * [A152773](http://oeis.org/A152773) ([program](152/A152773.asm)): 3 times heptagonal numbers: a(n) = 3n(5n-3)/2.
 * [A152777](http://oeis.org/A152777) ([program](152/A152777.asm)): 7 times heptagonal numbers: 7*n*(5*n-3)/2.
 * [A152785](http://oeis.org/A152785) ([program](152/A152785.asm)): a(n)=Floor[(n^2)/Catalan].
@@ -2559,6 +2560,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A171782](http://oeis.org/A171782) ([program](171/A171782.asm)): Binary expansion of numbers in A171781.
 * [A171783](http://oeis.org/A171783) ([program](171/A171783.asm)): Third smallest divisor of smallest number having exactly n divisors.
 * [A171784](http://oeis.org/A171784) ([program](171/A171784.asm)): Fourth smallest divisor of smallest number having exactly n divisors.
+* [A171790](http://oeis.org/A171790) ([program](171/A171790.asm)): G.f. A(x) satisfies: A(x*(1+x)^3) = 1 + x.
 * [A171834](http://oeis.org/A171834) ([program](171/A171834.asm)): Partial sums of numbers congruent to {0, 1, 2, 7} mod 8 (A047527).
 * [A171835](http://oeis.org/A171835) ([program](171/A171835.asm)): Partial sums of numbers congruent to {3, 4, 5, 6} mod 8 (A047425).
 * [A171842](http://oeis.org/A171842) ([program](171/A171842.asm)): Binomial transform of 1,0,1,0,2,0,4,0,8,0,16,...
@@ -4021,6 +4023,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186422](http://oeis.org/A186422) ([program](186/A186422.asm)): First differences of A186421.
 * [A186423](http://oeis.org/A186423) ([program](186/A186423.asm)): Partial sums of A186421.
 * [A186424](http://oeis.org/A186424) ([program](186/A186424.asm)): Odd terms in A186423.
+* [A186444](http://oeis.org/A186444) ([program](186/A186444.asm)): The count of numbers <= n for which 3 is an infinitary divisor.
 * [A186446](http://oeis.org/A186446) ([program](186/A186446.asm)): Expansion of 1/(1 - 7*x + 2*x^2).
 * [A186493](http://oeis.org/A186493) ([program](186/A186493.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j-th pentagonal number.  Complement of A186494.
 * [A186494](http://oeis.org/A186494) ([program](186/A186494.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=5i and g(j)=j-th pentagonal number.  Complement of A186493.
@@ -4432,7 +4435,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190511](http://oeis.org/A190511) ([program](190/A190511.asm)): n+[nr/u]+[ns/u]+[nt/u];  r=golden ratio, s=r^2, t=r^3, u=r^4.
 * [A190512](http://oeis.org/A190512) ([program](190/A190512.asm)): Number of one-sided n-step prudent walks, avoiding single west step only, i.e., two or more consecutive west steps are permitted.
 * [A190525](http://oeis.org/A190525) ([program](190/A190525.asm)): Number of n-step one-sided prudent walks, avoiding exactly two consecutive west steps (can have three or more west steps).
-* [A190569](http://oeis.org/A190569) ([program](190/A190569.asm)): Number of n-step one-sided prudent walks, avoiding single west steps and single east steps.
 * [A190576](http://oeis.org/A190576) ([program](190/A190576.asm)): a(n) = n^2 + 5*n - 5.
 * [A190577](http://oeis.org/A190577) ([program](190/A190577.asm)): a(n) = n*(n+2)*(n+4)*(n+6).
 * [A190578](http://oeis.org/A190578) ([program](190/A190578.asm)): a(n) = n^7 + n.
