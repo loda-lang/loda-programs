@@ -3,9 +3,6 @@
 
 add $0,1
 mul $0,2
-add $0,2
-bin $0,2
-sub $0,1
-cal $0,73093 ; Number of prime power divisors of n.
-sub $0,1
+cal $0,96 ; a(n) = n*(n+3)/2.
+cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
 mov $1,$0

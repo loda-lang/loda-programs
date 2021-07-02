@@ -4,7 +4,5 @@
 mul $0,2
 add $0,1
 cal $0,44672 ; Numbers n such that string 4,4 occurs in the base 9 representation of n but not of n+1.
+div $0,2
 mov $1,$0
-sub $1,121
-div $1,2
-add $1,60

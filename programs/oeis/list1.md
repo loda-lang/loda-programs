@@ -1824,6 +1824,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065357](http://oeis.org/A065357) ([program](065/A065357.asm)): a(n) = (-1)^pi(n) where pi(n) is the number of primes <= n.
 * [A065358](http://oeis.org/A065358) ([program](065/A065358.asm)): The Jacob's Ladder sequence: a(n) = Sum_{k=1..n} (-1)^pi(k), where pi = A000720.
 * [A065359](http://oeis.org/A065359) ([program](065/A065359.asm)): Alternating bit sum for n: replace 2^k with (-1)^k in binary expansion of n.
+* [A065361](http://oeis.org/A065361) ([program](065/A065361.asm)): Rebase n from 3 to 2. Replace 3^k with 2^k in ternary expansion of n.
 * [A065363](http://oeis.org/A065363) ([program](065/A065363.asm)): Sum of balanced ternary digits in n. Replace 3^k with 1 in balanced ternary expansion of n.
 * [A065364](http://oeis.org/A065364) ([program](065/A065364.asm)): Alternating sum of balanced ternary digits in n. Replace 3^k with (-1)^k in balanced ternary expansion of n.
 * [A065383](http://oeis.org/A065383) ([program](065/A065383.asm)): a(n) = smallest prime >= n*(n + 1)/2.
@@ -2168,6 +2169,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A069921](http://oeis.org/A069921) ([program](069/A069921.asm)): Define C(n) by the recursion C(0) = 1 + I where I^2 = -1, C(n+1) = 1/(1+C(n)); then a(n) = (-1)^n/Im(C(n)) where Im(z) is the imaginary part of the complex number z.
 * [A069924](http://oeis.org/A069924) ([program](069/A069924.asm)): Number of k, 1<=k<=n, such that phi(k) divides k.
 * [A069930](http://oeis.org/A069930) ([program](069/A069930.asm)): Number of integers of the form (n+k)/(n-k) with 1<=k<=n-1.
+* [A069940](http://oeis.org/A069940) ([program](069/A069940.asm)): (1/2)*((Sum of digits of n)^2 + (Sum of digits^2 of n)).
 * [A069958](http://oeis.org/A069958) ([program](069/A069958.asm)): (Sum of digits of n)^3 - (sum of digits^3 of n).
 * [A069975](http://oeis.org/A069975) ([program](069/A069975.asm)): a(n) = n*(16n^2-1).
 * [A069981](http://oeis.org/A069981) ([program](069/A069981.asm)): Hermite's problem: number of positive integral solutions to x + y + z = n subject to x <= y + z, y <= z + x and z <= x + y.
@@ -4787,6 +4789,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A090461](http://oeis.org/A090461) ([program](090/A090461.asm)): Numbers n such that there is a permutation of the numbers 1 to n such that the sum of adjacent numbers is a square.
 * [A090529](http://oeis.org/A090529) ([program](090/A090529.asm)): a(n) is the smallest m such that n <= m!.
 * [A090532](http://oeis.org/A090532) ([program](090/A090532.asm)): Let f(n) = n - pi(n). Then a(n) = least number of steps such that f(f(...(n)))=1.
+* [A090568](http://oeis.org/A090568) ([program](090/A090568.asm)): Least m such that m^n begins with k^(n-1) for some k > 1.
 * [A090570](http://oeis.org/A090570) ([program](090/A090570.asm)): Numbers that are congruent to {0, 1} mod 9.
 * [A090585](http://oeis.org/A090585) ([program](090/A090585.asm)): Numerator of (Sum_{k=1..n} k) / (Product_{k=1..n} k).
 * [A090590](http://oeis.org/A090590) ([program](090/A090590.asm)): (1,1) entry of powers of the orthogonal design shown below.

@@ -127,6 +127,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A203572](http://oeis.org/A203572) ([program](203/A203572.asm)): Period length 12: 0, 1, 2, 3, 4, 5, 0, 5, 4, 3, 2, 1 repeated.
 * [A203574](http://oeis.org/A203574) ([program](203/A203574.asm)): Bisection of A099924 (Lucas convolution); one half of the terms with odd arguments.
 * [A203579](http://oeis.org/A203579) ([program](203/A203579.asm)): Exponential (or binomial) convolution of A000032 (Lucas) with itself, divided by 2.
+* [A203580](http://oeis.org/A203580) ([program](203/A203580.asm)): a(n) = Sum{d(i)*2^i: i=0,1,...,m}, where Sum{d(i)*7^i: i=0,1,...,m}=n, d(i)∈{0,1,...,6}
 * [A203623](http://oeis.org/A203623) ([program](203/A203623.asm)): Partial sums of A061395.
 * [A203639](http://oeis.org/A203639) ([program](203/A203639.asm)): Multiplicative with a(p^e) = e*p^(e-1).
 * [A203648](http://oeis.org/A203648) ([program](203/A203648.asm)): a(n) = (1/4) * period of repeating sequence {S(j) mod 2n}, where S(j) is the sum of the first j squares.
@@ -981,6 +982,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A215052](http://oeis.org/A215052) ([program](215/A215052.asm)): a(n) = (binomial(n,5) - floor(n/5)) / 5.
 * [A215053](http://oeis.org/A215053) ([program](215/A215053.asm)): a(n) = 1/7*( binomial(n,7) - floor(n/7) ).
 * [A215054](http://oeis.org/A215054) ([program](215/A215054.asm)): a(n) = 1/11*(binomial(n,11) - floor(n/11)).
+* [A215088](http://oeis.org/A215088) ([program](215/A215088.asm)): a(n)=Sum{d(i)*2^i: i=0,1,...,m}, where Sum{d(i)*5^i: i=0,1,...,m} is the base 5 representation of n.
+* [A215089](http://oeis.org/A215089) ([program](215/A215089.asm)): a(n)=Sum{d(i)*6^i: i=0,1,...,m}, where Sum{d(i)*2^i: i=0,1,...,m} is the base 2 representation of n.
 * [A215095](http://oeis.org/A215095) ([program](215/A215095.asm)): a(0)=0, a(1)=1, a(n) = least k>a(n-1) such that k+a(n-2) is a Jacobsthal number.
 * [A215097](http://oeis.org/A215097) ([program](215/A215097.asm)): a(n) = n^3 - a(n-2) for n >= 2 and a(0)=0, a(1)=1.
 * [A215098](http://oeis.org/A215098) ([program](215/A215098.asm)): a(0)=0, a(1)=1, a(n) = n*(n-1) - a(n-2).

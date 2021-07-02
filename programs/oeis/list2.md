@@ -2482,7 +2482,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125575](http://oeis.org/A125575) ([program](125/A125575.asm)): Initial digit of squares of primes.
 * [A125577](http://oeis.org/A125577) ([program](125/A125577.asm)): a(0) = 1; for n >= 1, a(n) = n^2 - a(n-1).
 * [A125592](http://oeis.org/A125592) ([program](125/A125592.asm)): Evil numbers (A001969) multiplied by 2.
-* [A125602](http://oeis.org/A125602) ([program](125/A125602.asm)): Centered triangular numbers that are prime.
 * [A125641](http://oeis.org/A125641) ([program](125/A125641.asm)): Square of the (3,1)-entry of the 3 X 3 matrix M^n, where M = [1,0,0; 1,1,0, 1,i,1].
 * [A125650](http://oeis.org/A125650) ([program](125/A125650.asm)): Numerator of n(n+3)/(4(n+1)(n+2)) = sum(k=1..n, 1/(k(k+1)(k+2)) ).
 * [A125651](http://oeis.org/A125651) ([program](125/A125651.asm)): Numbers k such that A125650(k) is a perfect square.
@@ -2716,6 +2715,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A128223](http://oeis.org/A128223) ([program](128/A128223.asm)): a(n) = if n mod 2 = 0 then n*(n+1)/2 otherwise (n+1)^2/2-1.
 * [A128227](http://oeis.org/A128227) ([program](128/A128227.asm)): Right border (1,1,1,...) added to A002260.
 * [A128229](http://oeis.org/A128229) ([program](128/A128229.asm)): A natural number transform, inverse of signed A094587.
+* [A128233](http://oeis.org/A128233) ([program](128/A128233.asm)): Average of p(n) and p(p(n)), where p(k) is the k-th prime.
 * [A128251](http://oeis.org/A128251) ([program](128/A128251.asm)): n^4 - 1 divided by its largest fourth power divisor.
 * [A128309](http://oeis.org/A128309) ([program](128/A128309.asm)): 2*A000069(n).
 * [A128311](http://oeis.org/A128311) ([program](128/A128311.asm)): Remainder upon division of 2^(n-1)-1 by n.

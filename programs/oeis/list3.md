@@ -816,8 +816,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158071](http://oeis.org/A158071) ([program](158/A158071.asm)): a(n) = 64*n + 1.
 * [A158083](http://oeis.org/A158083) ([program](158/A158083.asm)): a(n) = Fibonacci(n+3) for n < 5 and 9*n - 15 otherwise.
 * [A158090](http://oeis.org/A158090) ([program](158/A158090.asm)): Period 9: repeat [0, 6, 0, 6, 0, 0, 3, 3, 0].
-* [A158116](http://oeis.org/A158116) ([program](158/A158116.asm)): Triangle read by rows: T(n,k) = 6^(k*(n-k)).
-* [A158117](http://oeis.org/A158117) ([program](158/A158117.asm)): Triangle sequence of general q-combinations: m=3; t(n,m)=t[n_, m_] = If[m == 0, n!, Product[((m + 1)*((m + 1) + 1)/2)^k, {k, 1, n}]]; b(n,k,m)=If[n == 0, 1, t[n, m]/(t[k, m]*t[n - k, m])].
+* [A158116](http://oeis.org/A158116) ([program](158/A158116.asm)): Triangle T(n,k) = 6^(k*(n-k)), read by rows.
+* [A158117](http://oeis.org/A158117) ([program](158/A158117.asm)): Triangle T(n, k) = 10^(k*(n-k)), read by rows.
 * [A158121](http://oeis.org/A158121) ([program](158/A158121.asm)): Given n points in the complex plane, let M(n) the number of distinct Moebius transformations that take 3 distinct points to 3 distinct points. Note that the triples may have some or all of the points in common.
 * [A158123](http://oeis.org/A158123) ([program](158/A158123.asm)): a(n) = 81*n + 1.
 * [A158127](http://oeis.org/A158127) ([program](158/A158127.asm)): a(n) = 100*n^2 + 2*n.
@@ -3023,16 +3023,16 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176597](http://oeis.org/A176597) ([program](176/A176597.asm)): Double primes: concatenation of the n-th prime with itself.
 * [A176624](http://oeis.org/A176624) ([program](176/A176624.asm)): a(n) = prime(n) + n*(-1)^n.
 * [A176625](http://oeis.org/A176625) ([program](176/A176625.asm)): T(n,k) = 1 + 3*k*(k - n), triangle read by rows (n >= 0, 0 <= k <= n).
-* [A176627](http://oeis.org/A176627) ([program](176/A176627.asm)): A q-form method for the symmetrical triangle sequence was found based on A000326 pentagonal numbers: q=3;c(n,q)=Product[(q*(3*q - 1)/2)^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q)- c(n,q)/(c(0,q)*c(n-0,q)+1
+* [A176627](http://oeis.org/A176627) ([program](176/A176627.asm)): Triangle T(n, k) = 12^(k*(n-k)), read by rows.
 * [A176628](http://oeis.org/A176628) ([program](176/A176628.asm)): a(n) = prime(n) - n*(-1)^prime(n).
-* [A176631](http://oeis.org/A176631) ([program](176/A176631.asm)): A q-form method for the symmetrical triangle sequence was found based on A000326 pentagonal numbers: q=4;c(n,q)=Product[(q*(3*q - 1)/2)^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q)- c(n,q)/(c(0,q)*c(n-0,q)+1
+* [A176631](http://oeis.org/A176631) ([program](176/A176631.asm)): Triangle T(n, k) = 22^(k*(n-k)), read by rows.
 * [A176635](http://oeis.org/A176635) ([program](176/A176635.asm)): a(n) = 6*a(n-1)-8*a(n-2) for n > 1; a(0) = 57, a(1) = 242.
 * [A176636](http://oeis.org/A176636) ([program](176/A176636.asm)): Periodic sequence: Repeat 57, 71.
-* [A176639](http://oeis.org/A176639) ([program](176/A176639.asm)): A q-form method for the symmetrical triangle sequence was found based on A000384 hexagonal numbers: q=3;c(n,q)=Product[(q*(2*q - 1))^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q)- c(n,q)/(c(0,q)*c(n-0,q)+1
+* [A176639](http://oeis.org/A176639) ([program](176/A176639.asm)): Triangle T(n, k) = 15^(k*(n-k)), read by rows.
 * [A176640](http://oeis.org/A176640) ([program](176/A176640.asm)): Partial sums of A005985.
-* [A176641](http://oeis.org/A176641) ([program](176/A176641.asm)): A q-form method for the symmetrical triangle sequence was found based on A000384 hexagonal numbers: q=4;c(n,q)=Product[(q*(2*q - 1))^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q)- c(n,q)/(c(0,q)*c(n-0,q)+1
-* [A176642](http://oeis.org/A176642) ([program](176/A176642.asm)): A q-form method for the symmetrical triangle sequence was found based on A000567 Octagonal numbers: q=2;c(n,q)=Product[(q*(3*q - 2))^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q))- c(n,q)/(c(0,q)*c(n-0,q))+1
-* [A176643](http://oeis.org/A176643) ([program](176/A176643.asm)): A q-form method for the symmetrical triangle sequence was found based on A000567 Octagonal numbers: q=3;c(n,q)=Product[(q*(3*q - 2))^i, {i, 1, n}];t(n,m,q)=c(n,q)/(c(m,q)*c(n-m,q)- c(n,q)/(c(0,q)*c(n-0,q)+1
+* [A176641](http://oeis.org/A176641) ([program](176/A176641.asm)): Triangle T(n, k) = 28^(k*(n-k)), read by rows.
+* [A176642](http://oeis.org/A176642) ([program](176/A176642.asm)): Triangle T(n, k) = 8^(k*(n-k)), read by rows.
+* [A176643](http://oeis.org/A176643) ([program](176/A176643.asm)): Triangle T(n, k) = 21^(k*(n-k)), read by rows.
 * [A176646](http://oeis.org/A176646) ([program](176/A176646.asm)): a(n) = 12*n^5 + 25*n^4 + 5*n^3 - 10*n^2 - 2*n.
 * [A176662](http://oeis.org/A176662) ([program](176/A176662.asm)): a(0)=2, a(1)=7, and a(n) = (3*n+1)*2^(n-1) if n > 1.
 * [A176672](http://oeis.org/A176672) ([program](176/A176672.asm)): a(2*n) = 1 + 6*n, a(2*n+1) = A165367(n).
@@ -4435,6 +4435,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A190511](http://oeis.org/A190511) ([program](190/A190511.asm)): n+[nr/u]+[ns/u]+[nt/u];  r=golden ratio, s=r^2, t=r^3, u=r^4.
 * [A190512](http://oeis.org/A190512) ([program](190/A190512.asm)): Number of one-sided n-step prudent walks, avoiding single west step only, i.e., two or more consecutive west steps are permitted.
 * [A190525](http://oeis.org/A190525) ([program](190/A190525.asm)): Number of n-step one-sided prudent walks, avoiding exactly two consecutive west steps (can have three or more west steps).
+* [A190569](http://oeis.org/A190569) ([program](190/A190569.asm)): Number of n-step one-sided prudent walks, avoiding single west steps and single east steps.
 * [A190576](http://oeis.org/A190576) ([program](190/A190576.asm)): a(n) = n^2 + 5*n - 5.
 * [A190577](http://oeis.org/A190577) ([program](190/A190577.asm)): a(n) = n*(n+2)*(n+4)*(n+6).
 * [A190578](http://oeis.org/A190578) ([program](190/A190578.asm)): a(n) = n^7 + n.
@@ -4965,6 +4966,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195531](http://oeis.org/A195531) ([program](195/A195531.asm)): Hypotenuses of Pythagorean triples in A195499 and A195503.
 * [A195540](http://oeis.org/A195540) ([program](195/A195540.asm)): Hypotenuses of primitive Pythagorean triples in A195538 and A195539.
 * [A195549](http://oeis.org/A195549) ([program](195/A195549.asm)): Hypotenuses of primitive Pythagorean triples in A195547 and A195548.
+* [A195585](http://oeis.org/A195585) ([program](195/A195585.asm)): sigma(2*n^2) - sigma(n^2).
 * [A195590](http://oeis.org/A195590) ([program](195/A195590.asm)): Number of ways to place 2n nonattacking kings on a vertical cylinder 4 X 2n.
 * [A195605](http://oeis.org/A195605) ([program](195/A195605.asm)): a(n) = (4*n*(n+2)+(-1)^n+1)/2 + 1.
 * [A195679](http://oeis.org/A195679) ([program](195/A195679.asm)): Order of n-th homotopy group of the topological group O(oo), with -1 if the homotopy group is Z.

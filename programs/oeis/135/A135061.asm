@@ -3,6 +3,7 @@
 
 add $0,1
 pow $0,3
-cal $0,307136 ; a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
+mul $0,2
+cal $0,101776 ; Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
 mov $1,$0
-sub $1,2
+sub $1,1

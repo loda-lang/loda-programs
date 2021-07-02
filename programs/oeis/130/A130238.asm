@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,130237 ; The 'lower' Fibonacci Inverse A130233(n) multiplied by n.
   sub $0,1
+  cal $2,130237 ; The 'lower' Fibonacci Inverse A130233(n) multiplied by n.
   add $1,$2
 lpe

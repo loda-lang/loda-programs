@@ -3,7 +3,9 @@
 
 lpb $0
   mov $1,$0
-  cal $1,61006 ; a(n) = (n-1)! mod n.
-  sub $0,$1
+  cal $0,61007 ; a(n) = -(n-1)! mod n.
+  sub $0,1
+  mul $1,4
 lpe
+div $1,4
 add $1,1

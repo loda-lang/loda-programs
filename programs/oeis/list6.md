@@ -1802,8 +1802,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A336853](http://oeis.org/A336853) ([program](336/A336853.asm)): a(n) = A003961(n) - n, where A003961 is the prime shift towards larger primes.
 * [A336856](http://oeis.org/A336856) ([program](336/A336856.asm)): Prime-shifted analog of gcd(d(n), sigma(n)): a(n) = gcd(A000005(n), A003973(n)).
 * [A336861](http://oeis.org/A336861) ([program](336/A336861.asm)): a(n) = ceiling((n-1-sqrt(n+1))/2).
-* [A336867](http://oeis.org/A336867) ([program](336/A336867.asm)): Numbers n such that n! does not have distinct prime multiplicities.
-* [A336868](http://oeis.org/A336868) ([program](336/A336868.asm)): Indicator function for numbers n such that n! has distinct prime multiplicities.
+* [A336867](http://oeis.org/A336867) ([program](336/A336867.asm)): Numbers k such that k! does not have distinct prime multiplicities.
+* [A336868](http://oeis.org/A336868) ([program](336/A336868.asm)): Indicator function for numbers k such that k! has distinct prime multiplicities.
 * [A336923](http://oeis.org/A336923) ([program](336/A336923.asm)): a(n) = 1 if sigma(2n) - sigma(n) is a power of 2, otherwise 0.
 * [A336924](http://oeis.org/A336924) ([program](336/A336924.asm)): a(n) = spf(1+sigma(n)), where spf is the smallest prime factor and sigma is the sum of divisors function.
 * [A336937](http://oeis.org/A336937) ([program](336/A336937.asm)): The 2-adic valuation of sigma(n), the sum of divisors of n.
@@ -1977,7 +1977,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A340369](http://oeis.org/A340369) ([program](340/A340369.asm)): a(n) = 1 if n has at most 3 prime factors when counted with multiplicity, 0 otherwise.
 * [A340371](http://oeis.org/A340371) ([program](340/A340371.asm)): a(n) = 1 if the odd part of n is noncomposite, 0 otherwise.
 * [A340373](http://oeis.org/A340373) ([program](340/A340373.asm)): a(n) = 1 if n is of the form of 2^i * p^j, with p an odd prime, and i>=0, j>=1, otherwise 0.
-* [A340374](http://oeis.org/A340374) ([program](340/A340374.asm)): a(n) = 1 if the odd part of n satisfies Korselt's criterion (is in A324050), 0 otherwise.
 * [A340375](http://oeis.org/A340375) ([program](340/A340375.asm)): a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
 * [A340378](http://oeis.org/A340378) ([program](340/A340378.asm)): Number of 1-digits in the ternary representation of A048673(n).
 * [A340395](http://oeis.org/A340395) ([program](340/A340395.asm)): a(n) = A340131(A001006(n)).
@@ -2141,6 +2140,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344622](http://oeis.org/A344622) ([program](344/A344622.asm)): a(n) = n*(n+1)/2 - sigma(n) + d(n).
 * [A344695](http://oeis.org/A344695) ([program](344/A344695.asm)): a(n) = gcd(sigma(n), psi(n)), where sigma is the sum of divisors function, A000203, and psi is the Dedekind psi function, A001615.
 * [A344747](http://oeis.org/A344747) ([program](344/A344747.asm)): a(n) = (1/6)*(3^n + (-2)^n - 1).
+* [A344791](http://oeis.org/A344791) ([program](344/A344791.asm)): a(n) is the number of 2-point antichains in the poset D_{2n+1} of type D, whose elements are compositions of 2n+1.
 * [A344814](http://oeis.org/A344814) ([program](344/A344814.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 3^(k-1).
 * [A344815](http://oeis.org/A344815) ([program](344/A344815.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 4^(k-1).
 * [A344816](http://oeis.org/A344816) ([program](344/A344816.asm)): a(n) = Sum_{k=1..n} floor(n/k) * 5^(k-1).

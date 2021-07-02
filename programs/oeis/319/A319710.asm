@@ -10,7 +10,6 @@ cmp $0,$1
 sub $1,1
 mul $0,$1
 lpb $0
-  cal $0,336551 ; a(n) = A003557(n) - 1.
-  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
 lpe
 mov $1,$0

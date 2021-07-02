@@ -1,8 +1,6 @@
 ; A087058: Smallest square number greater than 2*n^2.
 ; 4,9,25,36,64,81,100,144,169,225,256,289,361,400,484,529,625,676,729,841,900,1024,1089,1156,1296,1369,1521,1600,1764,1849,1936,2116,2209,2401,2500,2601,2809,2916,3136,3249,3364,3600,3721,3969,4096,4356,4489
 
-add $0,1
-pow $0,2
-cal $0,101776 ; Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
+cal $0,87057 ; Smallest number whose square is larger than 2*n^2.
 pow $0,2
 mov $1,$0

@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,145037 ; Unreduced binary digital mean numerators, dm_num(2, n).
+  cal $2,145037 ; Number of 1's minus number of 0's in the binary representation of n.
   add $1,$2
 lpe
