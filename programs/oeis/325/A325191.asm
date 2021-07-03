@@ -3,8 +3,7 @@
 
 cal $0,74909 ; Running sum of Pascal's triangle (A007318), or beheaded Pascal's triangle read by beheaded rows.
 lpb $0
-  mul $0,4
-  div $0,5
-  mul $0,36
+  pow $0,3
+  div $0,2
 lpe
 mov $1,$0

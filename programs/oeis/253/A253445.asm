@@ -9,6 +9,5 @@ mov $1,$0
 add $0,7
 add $0,$1
 mov $1,$0
-sub $1,29
 div $1,2
-add $1,11
+sub $1,3

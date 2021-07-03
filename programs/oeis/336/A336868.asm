@@ -1,4 +1,4 @@
-; A336868: Indicator function for numbers n such that n! has distinct prime multiplicities.
+; A336868: Indicator function for numbers k such that k! has distinct prime multiplicities.
 ; 1,1,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 trn $0,2

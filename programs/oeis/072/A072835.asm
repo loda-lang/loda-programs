@@ -3,9 +3,8 @@
 
 add $0,1
 cal $0,242660 ; Nonnegative numbers of the form x^2+xy-2y^2.
-lpb $0
-  sub $0,1
-  mul $0,2
-lpe
-mov $1,$0
+mov $1,1
+cmp $1,$0
+cmp $1,0
+mul $1,$0
 mul $1,2

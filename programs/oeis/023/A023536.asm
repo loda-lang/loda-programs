@@ -3,5 +3,6 @@
 
 add $0,3
 mov $1,$0
-cal $1,125811 ; Number of coefficients in the n-th q-Bell number as a polynomial in q.
-sub $1,1
+cal $0,6463 ; Convolve natural numbers with characteristic function of triangular numbers.
+bin $1,2
+sub $1,$0

@@ -1,6 +1,21 @@
 ; A099463: Bisection of tribonacci numbers.
 ; 0,1,2,7,24,81,274,927,3136,10609,35890,121415,410744,1389537,4700770,15902591,53798080,181997601,615693474,2082876103,7046319384,23837527729,80641778674,272809183135,922906855808,3122171529233
 
-mul $0,2
-cal $0,73 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.
-mov $1,$0
+mov $2,$0
+mov $4,2
+lpb $4
+  mov $0,$2
+  sub $4,1
+  add $0,$4
+  sub $0,1
+  mul $0,2
+  max $0,0
+  cal $0,75111 ; a(n)=Sum((-1)^(i+Floor(n/2))T(2i+e),(i=0,..,Floor(n/2))), where T(n) are tribonacci numbers (A000073) and e=(1/2)(1-(-1)^n).
+  mov $3,$0
+  mov $5,$4
+  mul $5,$0
+  add $1,$5
+lpe
+min $2,1
+mul $2,$3
+sub $1,$2

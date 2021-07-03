@@ -4,12 +4,6 @@
 cal $0,40 ; The prime numbers.
 add $0,1
 gcd $0,8
-add $0,2
-mov $2,2
-add $2,$0
-lpb $2
-  mov $2,5
-lpe
-div $0,$2
+div $0,4
 mov $1,$0
 add $1,2

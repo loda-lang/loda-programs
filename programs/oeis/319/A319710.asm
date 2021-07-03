@@ -8,8 +8,6 @@ div $0,$1
 gcd $0,$1
 cmp $0,$1
 sub $1,1
-mul $0,$1
-lpb $0
-  cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+lpb $1
+  mov $1,$0
 lpe
-mov $1,$0

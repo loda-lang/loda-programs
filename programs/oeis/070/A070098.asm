@@ -6,10 +6,6 @@ cal $0,188376 ; Positions of 1 in A188374; complement of A188375.
 sub $0,$2
 sub $0,$2
 add $0,5
-mov $3,2
-lpb $3
-  mov $1,$0
-  div $3,3
-lpe
-div $1,2
+div $0,2
+mov $1,$0
 sub $1,3

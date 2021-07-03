@@ -1,15 +1,14 @@
 ; A284721: Smallest odd prime that is relatively prime to 2n+1.
 ; 3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,11,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5
 
-sub $0,202
-pow $0,2
-lpb $0
-  lpb $0
-    dif $0,3
-    mov $2,1
-  lpe
-  dif $0,5
-  add $1,$2
-lpe
+mul $0,2
+cal $0,284723 ; Smallest odd prime that is relatively prime to n.
+bin $0,2
+mov $1,$0
+sub $0,1
+div $0,5
+add $0,1
+div $1,3
+sub $1,$0
 mul $1,2
 add $1,3

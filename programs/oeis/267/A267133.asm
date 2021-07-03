@@ -4,6 +4,10 @@
 mov $1,1
 lpb $0
   mov $1,$0
-  mov $0,1
-  cal $1,151763 ; If n is a prime == 1 mod 4 then a(n) = 1, if n is a prime == 3 mod 4 then a(n) = -1, otherwise a(n) = 0.
+  div $1,4
+  mul $1,4
+  add $1,1
+  sub $1,$0
+  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,$0
 lpe

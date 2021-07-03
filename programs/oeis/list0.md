@@ -5184,6 +5184,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040406](http://oeis.org/A040406) ([program](040/A040406.asm)): Continued fraction for sqrt(427).
 * [A040413](http://oeis.org/A040413) ([program](040/A040413.asm)): Continued fraction for sqrt(434).
 * [A040414](http://oeis.org/A040414) ([program](040/A040414.asm)): Continued fraction for sqrt(435).
+* [A040417](http://oeis.org/A040417) ([program](040/A040417.asm)): Continued fraction for sqrt(438).
 * [A040418](http://oeis.org/A040418) ([program](040/A040418.asm)): Continued fraction for sqrt(439).
 * [A040419](http://oeis.org/A040419) ([program](040/A040419.asm)): Continued fraction for sqrt(440).
 * [A040420](http://oeis.org/A040420) ([program](040/A040420.asm)): Continued fraction for sqrt(442).
