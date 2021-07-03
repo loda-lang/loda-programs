@@ -1,10 +1,7 @@
 ; A226982: a(n) = ceiling(n/2) - primepi(n).
 ; 1,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,5,5,5,5,5,5,6,6,7,7,7,7,8,8,8,8,8,8,9,9,9,9,10,10,11,11,11,11,12,12,13,13,13,13,13,13,14,14,15,15,15
 
-mov $1,2
-lpb $0
-  mov $1,$0
-  mov $0,0
-  cal $1,33271 ; Number of odd nonprimes <= n.
-lpe
-sub $1,1
+cal $0,72731 ; Difference of numbers of composite and prime numbers <= n.
+add $0,2
+div $0,2
+mov $1,$0

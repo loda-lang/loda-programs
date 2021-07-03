@@ -774,6 +774,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106731](http://oeis.org/A106731) ([program](106/A106731.asm)): Expansion of -2*x/(1 - 4*x + 2*x^2).
 * [A106732](http://oeis.org/A106732) ([program](106/A106732.asm)): First entry of the vector (M^n)v, where M is the 2 X 2 matrix [[0,-3],[1,5]] and v is the column vector [0,1].
 * [A106734](http://oeis.org/A106734) ([program](106/A106734.asm)): a(n) = n^3 - 7*n + 7.
+* [A106742](http://oeis.org/A106742) ([program](106/A106742.asm)): a[n] =a[a[a[a[a[n - a[n-1]]]]]] + a[n - a[n-2]].
 * [A106743](http://oeis.org/A106743) ([program](106/A106743.asm)): a(n) = -1 iff n is prime, a(n) = 1 iff n is not squarefree, otherwise (n is nonprime and squarefree) a(n) = 0.
 * [A106744](http://oeis.org/A106744) ([program](106/A106744.asm)): Given n shoelaces, each with two aglets; sequence gives number of aglet pairs that must be picked up to guarantee that the probability that no shoelace is left behind is > 1/2.
 * [A106753](http://oeis.org/A106753) ([program](106/A106753.asm)): Discriminants, negated, of definite binary quadratic forms.

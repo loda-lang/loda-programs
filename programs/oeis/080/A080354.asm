@@ -3,14 +3,7 @@
 
 add $0,1
 mul $0,3
-mov $1,6
-lpb $0
-  add $1,$0
-  lpb $1
-    cal $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-    cmp $0,1
-    mov $1,8
-  lpe
-lpe
+cal $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+cmp $0,1
 mov $1,$0
 add $1,1

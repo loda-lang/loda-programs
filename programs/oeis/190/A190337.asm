@@ -5,6 +5,5 @@ add $0,1
 mul $0,4
 cal $0,188319 ; Positions of 0 in A188318; complement of A188320.
 mov $1,$0
-sub $1,23
 div $1,4
-add $1,5
+sub $1,1

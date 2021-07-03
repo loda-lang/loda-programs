@@ -7,6 +7,6 @@ lpb $0
   sub $2,$0
   bin $0,$2
   cal $2,5728 ; Number of fractions in Farey series of order n.
-  mul $2,$0
   add $1,$2
 lpe
+sub $1,$2

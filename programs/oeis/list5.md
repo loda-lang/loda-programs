@@ -623,6 +623,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261243](http://oeis.org/A261243) ([program](261/A261243.asm)): Row lengths of the irregular triangles A258643 and A261242: maximal number of 0-islands (holes) of certain bisymmetric n X n matrices with 0 or 1 entries only.
 * [A261276](http://oeis.org/A261276) ([program](261/A261276.asm)): 100-gonal numbers: a(n) = 98*n*(n-1)/2 + n.
 * [A261327](http://oeis.org/A261327) ([program](261/A261327.asm)): Numerators of 1 + n^2/4.
+* [A261337](http://oeis.org/A261337) ([program](261/A261337.asm)): Digit-sums in an incremental base that adjusts itself as the digits of n are generated from right to left.
 * [A261343](http://oeis.org/A261343) ([program](261/A261343.asm)): 50-gonal numbers: a(n) = 48*n*(n-1)/2 + n.
 * [A261348](http://oeis.org/A261348) ([program](261/A261348.asm)): a(1)=0; a(2)=0; for n>2: a(n) = A237591(n,2) = A237593(n,2).
 * [A261366](http://oeis.org/A261366) ([program](261/A261366.asm)): a(n) = number of even terms in row n of triangle A261363.
