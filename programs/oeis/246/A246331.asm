@@ -3,7 +3,6 @@
 
 mul $0,2
 cal $0,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
-mov $1,$0
+mul $0,8
+add $1,$0
 div $1,6
-mul $1,8
-add $1,1

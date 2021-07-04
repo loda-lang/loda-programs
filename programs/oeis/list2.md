@@ -1286,6 +1286,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A112039](http://oeis.org/A112039) ([program](112/A112039.asm)): Let b(0)=1/2, b(n) = b(n-1) + Prime[n]/2; a(n)=b(2*n).
 * [A112044](http://oeis.org/A112044) ([program](112/A112044.asm)): Let b(0)=1/2, b(n) = (b(n-1)+Prime[n])/2; sequence gives 2^(n+1)*b(n).
 * [A112045](http://oeis.org/A112045) ([program](112/A112045.asm)): Positions of primes (A000040) among nonsquares A000037.
+* [A112051](http://oeis.org/A112051) ([program](112/A112051.asm)): a(1)=1, a(n) = first index i (> a(n-1)), where A112046(i) gets a value distinct from any values A112046(1)..A112046(a(n-1)).
+* [A112052](http://oeis.org/A112052) ([program](112/A112052.asm)): a(n) = 2*A112051(n)+1.
 * [A112062](http://oeis.org/A112062) ([program](112/A112062.asm)): Positive integers i for which A112049(i) == 2.
 * [A112063](http://oeis.org/A112063) ([program](112/A112063.asm)): Positive integers i for which A112049(i) == 3.
 * [A112072](http://oeis.org/A112072) ([program](112/A112072.asm)): Odd numbers n for which 3 is the smallest i (>= 1) with Jacobi symbol J(i,n) getting either a value 0 or -1.
@@ -2502,6 +2504,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A125833](http://oeis.org/A125833) ([program](125/A125833.asm)): Numbers whose base 5 representation is 333333.......3.
 * [A125911](http://oeis.org/A125911) ([program](125/A125911.asm)): Product of the even divisors of n.
 * [A125916](http://oeis.org/A125916) ([program](125/A125916.asm)): Sprague-Grundy values for octal game .15 (Guiles).
+* [A125925](http://oeis.org/A125925) ([program](125/A125925.asm)): Sprague-Grundy values for octal game .351.
 * [A125993](http://oeis.org/A125993) ([program](125/A125993.asm)): A106486-encodings of combinatorial games with value -1.
 * [A126001](http://oeis.org/A126001) ([program](126/A126001.asm)): A106486-encodings of nonnegative combinatorial games, i.e., games whose value is >= 0.
 * [A126019](http://oeis.org/A126019) ([program](126/A126019.asm)): a(0)=1, a(1)=2; for n>1, a(n)=3*a(n-1)+4*a(n-2)+5.

@@ -472,6 +472,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308733](http://oeis.org/A308733) ([program](308/A308733.asm)): Sum of the smallest parts of the partitions of n into 4 parts.
 * [A308754](http://oeis.org/A308754) ([program](308/A308754.asm)): a(0) = 0, a(n) = a(n-1) + 1 if 2*n + 3 is prime, otherwise a(n) = a(n-1).
 * [A308807](http://oeis.org/A308807) ([program](308/A308807.asm)): a(n) = 4*5^(n-1) + n.
+* [A308822](http://oeis.org/A308822) ([program](308/A308822.asm)): Sum of all the parts in the partitions of n into 5 parts.
 * [A308901](http://oeis.org/A308901) ([program](308/A308901.asm)): Lexicographically earliest overlap-free binary sequence.
 * [A309057](http://oeis.org/A309057) ([program](309/A309057.asm)): a(0) = 1; a(2*n) = 3*a(n), a(2*n+1) = a(n).
 * [A309074](http://oeis.org/A309074) ([program](309/A309074.asm)): a(0) = 1; a(2*n) = 4*a(n), a(2*n+1) = a(n).
@@ -2162,6 +2163,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345280](http://oeis.org/A345280) ([program](345/A345280.asm)): a(n) = Sum_{p|n} nextprime(p), where nextprime(n) is the smallest prime > n.
 * [A345493](http://oeis.org/A345493) ([program](345/A345493.asm)): Numbers that are the sum of eight squares in six or more ways.
 * [A345502](http://oeis.org/A345502) ([program](345/A345502.asm)): Numbers that are the sum of nine squares in five or more ways.
+* [A345504](http://oeis.org/A345504) ([program](345/A345504.asm)): Numbers that are the sum of nine squares in seven or more ways.
 * [A345668](http://oeis.org/A345668) ([program](345/A345668.asm)): Last prime minus distance to last prime.
 * [A345701](http://oeis.org/A345701) ([program](345/A345701.asm)): a(n) = 3*n^3 - 1.
 * [A345702](http://oeis.org/A345702) ([program](345/A345702.asm)): Numbers that can be written as 2*a^2 - 1 and 3*b^3 - 1.

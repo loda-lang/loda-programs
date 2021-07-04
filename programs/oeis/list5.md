@@ -237,6 +237,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A255226](http://oeis.org/A255226) ([program](255/A255226.asm)): Number of (n+2)X(6+2) 0..1 arrays with no 3x3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2
 * [A255227](http://oeis.org/A255227) ([program](255/A255227.asm)): Number of (n+2)X(7+2) 0..1 arrays with no 3x3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2
 * [A255236](http://oeis.org/A255236) ([program](255/A255236.asm)): All positive solutions x of the second class of the Pell equation x^2 - 2*y^2 = -7.
+* [A255264](http://oeis.org/A255264) ([program](255/A255264.asm)): Total number of ON cells in the "Ulam-Warburton" two-dimensional cellular automaton of A147562 after A048645(n) generations.
 * [A255270](http://oeis.org/A255270) ([program](255/A255270.asm)): Integer part of fourth root of n.
 * [A255308](http://oeis.org/A255308) ([program](255/A255308.asm)): Number of times log_2 can be applied to n until the result is not a power of 2. Here log_2 means the base-2 logarithm.
 * [A255309](http://oeis.org/A255309) ([program](255/A255309.asm)): Number of times log_2 can be applied to n until the result is either 1 or not a power of 2. Here log_2 means the base-2 logarithm.
@@ -2185,6 +2186,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A284776](http://oeis.org/A284776) ([program](284/A284776.asm)): Positions of 0 in A284775; complement of A284777.
 * [A284777](http://oeis.org/A284777) ([program](284/A284777.asm)): Positions of 1 in A284775; complement of A284776.
 * [A284794](http://oeis.org/A284794) ([program](284/A284794.asm)): Positions of -1 in A284793.
+* [A284811](http://oeis.org/A284811) ([program](284/A284811.asm)): Fixed points of the transform A267193.
 * [A284817](http://oeis.org/A284817) ([program](284/A284817.asm)): a(n) = 2n - 1 - A284776(n).
 * [A284818](http://oeis.org/A284818) ([program](284/A284818.asm)): Positions of 0 in A284817.
 * [A284819](http://oeis.org/A284819) ([program](284/A284819.asm)): Positions of 1 in A284817.
