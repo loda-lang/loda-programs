@@ -50,6 +50,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A050605](http://oeis.org/A050605) ([program](050/A050605.asm)): Column/row 2 of A050602: a(n) = add3c(n,2).
 * [A050683](http://oeis.org/A050683) ([program](050/A050683.asm)): Number of nonzero palindromes of length n.
 * [A050735](http://oeis.org/A050735) ([program](050/A050735.asm)): Numbers of form 5^k (values of k see A050726) containing no pair of consecutive equal digits (probably finite).
+* [A050815](http://oeis.org/A050815) ([program](050/A050815.asm)): Number of positive Fibonacci numbers with n decimal digits.
 * [A050873](http://oeis.org/A050873) ([program](050/A050873.asm)): Triangular array T read by rows: T(n,k) = gcd(n,k).
 * [A050914](http://oeis.org/A050914) ([program](050/A050914.asm)): a(n) = n*3^n + 1.
 * [A050915](http://oeis.org/A050915) ([program](050/A050915.asm)): a(n) = n*4^n + 1.
@@ -1934,6 +1935,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A066715](http://oeis.org/A066715) ([program](066/A066715.asm)): a(n) = gcd(2n+1, sigma(2n+1)).
 * [A066728](http://oeis.org/A066728) ([program](066/A066728.asm)): a(n) is the number of integers of the form (n+k+n*k)/(n-k) for k = 1,2,...,n-1.
 * [A066729](http://oeis.org/A066729) ([program](066/A066729.asm)): a(n) = Product_{d|n, d<n} d if n is composite, n otherwise.
+* [A066750](http://oeis.org/A066750) ([program](066/A066750.asm)): Greatest common divisor of n and its digit sum.
 * [A066761](http://oeis.org/A066761) ([program](066/A066761.asm)): Number of positive integers of the form (n^2+k^2)/(n-k) for k=1,2,3,4,....,n-1.
 * [A066770](http://oeis.org/A066770) ([program](066/A066770.asm)): a(n) = 5^n*sin(2n*arctan(1/2)) or numerator of tan(2n*arctan(1/2)).
 * [A066781](http://oeis.org/A066781) ([program](066/A066781.asm)): a(n) = 2^phi(n).
@@ -3046,6 +3048,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A076178](http://oeis.org/A076178) ([program](076/A076178.asm)): a(n) = 2*n^2 - A077071(n).
 * [A076182](http://oeis.org/A076182) ([program](076/A076182.asm)): a(n) = A006666(n) mod 2.
 * [A076237](http://oeis.org/A076237) ([program](076/A076237.asm)): Remainder when 2nd order composite cc[n]=A050435[n] is divided by n.
+* [A076240](http://oeis.org/A076240) ([program](076/A076240.asm)): Remainder when 2nd order prime pp(n) = A006450(n) is divided by n-th prime = A000040(n).
 * [A076264](http://oeis.org/A076264) ([program](076/A076264.asm)): Number of ternary (0,1,2) sequences without a consecutive '012'.
 * [A076273](http://oeis.org/A076273) ([program](076/A076273.asm)): a(0) = 1, a(1) = 2; for n>1, a(n) = prime(n)+prime(n-1)-1.
 * [A076274](http://oeis.org/A076274) ([program](076/A076274.asm)): 2p-1 where p is 1 or a prime.

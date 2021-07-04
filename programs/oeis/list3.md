@@ -3331,6 +3331,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179976](http://oeis.org/A179976) ([program](179/A179976.asm)): 2^(2n+1) mod (2n+1).
 * [A179986](http://oeis.org/A179986) ([program](179/A179986.asm)): Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.
 * [A179991](http://oeis.org/A179991) ([program](179/A179991.asm)): Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.
+* [A179992](http://oeis.org/A179992) ([program](179/A179992.asm)): Extended three term Fibonacci sequence a(n)=a(n-1)+a(n-2)+n^2. a(1)=2; a(2)=5
 * [A179995](http://oeis.org/A179995) ([program](179/A179995.asm)): Generating function A(5,t)(1+t+t^2)/(1-t)^6, where A(5,t) is an Eulerian polynomial.
 * [A179999](http://oeis.org/A179999) ([program](179/A179999.asm)): Length of the n-th term in the modified Look and Say sequence A110393.
 * [A180004](http://oeis.org/A180004) ([program](180/A180004.asm)): Nearest integer to n*(27/26)
@@ -4170,6 +4171,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188012](http://oeis.org/A188012) ([program](188/A188012.asm)): Positions of 0 in A188011; complement of A188013.
 * [A188016](http://oeis.org/A188016) ([program](188/A188016.asm)): Positions of 1 in A188014; complement of A188015.
 * [A188026](http://oeis.org/A188026) ([program](188/A188026.asm)): Positions of 0 in the zero-one sequence given by z(n)=[nr]-[nr-8r]-[8r], where r=(1+sqrt(5))/2, [ ]=floor, n>=1.
+* [A188030](http://oeis.org/A188030) ([program](188/A188030.asm)): Positions of 1 in the zero-one sequence given by [nr]-[nr-10r]-[10r], where r=(1+sqrt(5))/2, [ ]=floor, n>=1.
 * [A188037](http://oeis.org/A188037) ([program](188/A188037.asm)): a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
 * [A188038](http://oeis.org/A188038) ([program](188/A188038.asm)): a(n) = [nr]-[kr]-[nr-kr], where r=sqrt(2), k=2, [ ]=floor.
 * [A188039](http://oeis.org/A188039) ([program](188/A188039.asm)): Positions of 0 in A188038; complement of A188040.
@@ -4268,6 +4270,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A188653](http://oeis.org/A188653) ([program](188/A188653.asm)): Second differences of A000463; first differences of A188652.
 * [A188666](http://oeis.org/A188666) ([program](188/A188666.asm)): Largest m <= n such that lcm(m, m+1, ..., n) = lcm(1, 2, ..., n).
 * [A188667](http://oeis.org/A188667) ([program](188/A188667.asm)): Ordered (2,2)-selections from the multiset {1,1,2,2,3,3,...,n,n}.
+* [A188669](http://oeis.org/A188669) ([program](188/A188669.asm)): a(n) = ceiling(binomial(2*n-1,n-1)/n).
 * [A188675](http://oeis.org/A188675) ([program](188/A188675.asm)): Partial sums of the binomial coefficients binomial(3*n,n) (A005809).
 * [A188707](http://oeis.org/A188707) ([program](188/A188707.asm)): Number of 3 X n binary arrays without the pattern 0 0 diagonally or vertically.
 * [A188716](http://oeis.org/A188716) ([program](188/A188716.asm)): a(n) = n + (n-1)*(2^n-2).

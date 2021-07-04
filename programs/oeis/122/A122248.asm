@@ -6,6 +6,5 @@ lpb $0
   mov $2,$0
   sub $0,1
   cal $2,11371 ; a(n) = n minus (number of 1's in binary expansion of n). Also highest power of 2 dividing n!.
-  add $3,$2
+  add $1,$2
 lpe
-add $1,$3
