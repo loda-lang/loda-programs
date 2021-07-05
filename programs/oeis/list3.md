@@ -1935,6 +1935,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167136](http://oeis.org/A167136) ([program](167/A167136.asm)): a(n) = b(n)-th highest positive integer not equal to any a(k), 1 <= k <= n-1, where b(n) = noncomposite numbers = A008578(n).
 * [A167149](http://oeis.org/A167149) ([program](167/A167149.asm)): 10000-gonal numbers: a(n) = n + 4999 * n * (n-1).
 * [A167153](http://oeis.org/A167153) ([program](167/A167153.asm)): Numbers not appearing in A167152.
+* [A167155](http://oeis.org/A167155) ([program](167/A167155.asm)): Exponential primorial constant sum( 1/A140319(k), k>=0 )
 * [A167166](http://oeis.org/A167166) ([program](167/A167166.asm)): a(n) = n^7 mod 16.
 * [A167167](http://oeis.org/A167167) ([program](167/A167167.asm)): A001045 with a(0) replaced by -1.
 * [A167176](http://oeis.org/A167176) ([program](167/A167176.asm)): n^3 mod 9.

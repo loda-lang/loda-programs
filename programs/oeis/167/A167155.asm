@@ -6,7 +6,7 @@ sub $2,$0
 add $0,1
 lpb $0
   mod $0,6
-  trn $0,2
+  div $0,3
   add $2,$1
   add $1,1
   bin $1,$2

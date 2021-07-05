@@ -471,6 +471,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A308720](http://oeis.org/A308720) ([program](308/A308720.asm)): The maximum value in the continued fraction of sqrt(n), or 0 if there is no fractional part.
 * [A308733](http://oeis.org/A308733) ([program](308/A308733.asm)): Sum of the smallest parts of the partitions of n into 4 parts.
 * [A308754](http://oeis.org/A308754) ([program](308/A308754.asm)): a(0) = 0, a(n) = a(n-1) + 1 if 2*n + 3 is prime, otherwise a(n) = a(n-1).
+* [A308775](http://oeis.org/A308775) ([program](308/A308775.asm)): Sum of all the parts in the partitions of n into 4 parts.
 * [A308807](http://oeis.org/A308807) ([program](308/A308807.asm)): a(n) = 4*5^(n-1) + n.
 * [A308822](http://oeis.org/A308822) ([program](308/A308822.asm)): Sum of all the parts in the partitions of n into 5 parts.
 * [A308901](http://oeis.org/A308901) ([program](308/A308901.asm)): Lexicographically earliest overlap-free binary sequence.
@@ -1309,6 +1310,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325939](http://oeis.org/A325939) ([program](325/A325939.asm)): Expansion of Sum_{k>=1} x^(2*k) / (1 + x^k).
 * [A325958](http://oeis.org/A325958) ([program](325/A325958.asm)): Sum of corners of a 2n+1 X 2n+1 square spiral.
 * [A325964](http://oeis.org/A325964) ([program](325/A325964.asm)): a(n) = 1 if n and sigma(n) are relatively prime, 0 otherwise, where sigma(n) = sum of divisors of n, A000203; Characteristic function of A014567.
+* [A326041](http://oeis.org/A326041) ([program](326/A326041.asm)): a(n) = sigma(A064989(n)).
 * [A326055](http://oeis.org/A326055) ([program](326/A326055.asm)): a(n) = n - {the largest square that divides n}.
 * [A326065](http://oeis.org/A326065) ([program](326/A326065.asm)): Sum of divisors of the largest proper divisor of n: a(n) = sigma(A032742(n)).
 * [A326122](http://oeis.org/A326122) ([program](326/A326122.asm)): a(n) = 10 * sigma(n).
@@ -1579,7 +1581,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330492](http://oeis.org/A330492) ([program](330/A330492.asm)): a(n) = sum of second differences of the sorted divisors of n.
 * [A330503](http://oeis.org/A330503) ([program](330/A330503.asm)): Number of Sós permutations of {0,1,...,n}.
 * [A330520](http://oeis.org/A330520) ([program](330/A330520.asm)): Sum of even integers <= n times the sum of odd integers <= n.
-* [A330561](http://oeis.org/A330561) ([program](330/A330561.asm)): a(n) = number of primes p <= prime(n) with Delta(p) == 0 mod 4, where Delta(p) = nextprime(p) - p.
 * [A330569](http://oeis.org/A330569) ([program](330/A330569.asm)): a(n) = 1 if n is odd, otherwise a(n) = 2^(v-1)+1 where v is the 2-adic valuation of n (A007814(n)).
 * [A330571](http://oeis.org/A330571) ([program](330/A330571.asm)): Square of number of unordered factorizations of n as n = i*j.
 * [A330602](http://oeis.org/A330602) ([program](330/A330602.asm)): a(n) = a(n-1) XOR (n+1), with a(0) = 0.
@@ -2031,7 +2032,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A341590](http://oeis.org/A341590) ([program](341/A341590.asm)): a(n) = (Sum_{j=1..3} StirlingS1(3,j)*(2^j-1)^n)/3!.
 * [A341591](http://oeis.org/A341591) ([program](341/A341591.asm)): Number of superior prime divisors of n.
 * [A341625](http://oeis.org/A341625) ([program](341/A341625.asm)): a(n) = 1 if the arithmetic derivative of n is less than n, otherwise 0.
-* [A341629](http://oeis.org/A341629) ([program](341/A341629.asm)): Characteristic function of A055932: a(n) = 1 if n is a number all of whose prime divisors are consecutive primes starting at 2, otherwise 0.
 * [A341642](http://oeis.org/A341642) ([program](341/A341642.asm)): Number of strictly superior prime divisors of n.
 * [A341655](http://oeis.org/A341655) ([program](341/A341655.asm)): a(n) is the number of divisors of prime(n)^2 - 1.
 * [A341703](http://oeis.org/A341703) ([program](341/A341703.asm)): a(n) = 6*binomial(n,4) + 2*binomial(n,2) + 1.

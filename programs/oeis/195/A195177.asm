@@ -6,6 +6,10 @@ lpb $0
   cal $2,327310 ; a(n) = floor(3*n*r) - 3*floor(n*r), where r = sqrt(8).
   trn $2,1
   sub $0,$2
-  trn $0,1
+  sub $0,1
   add $1,$2
+lpe
+lpb $0
+  add $1,$0
+  div $0,5
 lpe

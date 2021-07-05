@@ -2106,6 +2106,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120471](http://oeis.org/A120471) ([program](120/A120471.asm)): 6 *A015518(n).
 * [A120478](http://oeis.org/A120478) ([program](120/A120478.asm)): Binomial(n+6,5)-binomial(n,5).
 * [A120486](http://oeis.org/A120486) ([program](120/A120486.asm)): Partial sums of A000188.
+* [A120501](http://oeis.org/A120501) ([program](120/A120501.asm)): Meta-Fibonacci sequence a(n) with parameters s=2.
 * [A120503](http://oeis.org/A120503) ([program](120/A120503.asm)): Generalized meta-Fibonacci sequence a(n) with parameters s=0 and k=3.
 * [A120507](http://oeis.org/A120507) ([program](120/A120507.asm)): Generalized meta-Fibonacci sequence a(n) with parameters s=0 and k=4.
 * [A120511](http://oeis.org/A120511) ([program](120/A120511.asm)): a(n) = min{j>0 : A006949(j) = n}.
@@ -2823,7 +2824,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A129393](http://oeis.org/A129393) ([program](129/A129393.asm)): Row sums of A129392.
 * [A129401](http://oeis.org/A129401) ([program](129/A129401.asm)): a(n) is the result of replacing with its successor prime each prime in the factorization of the n-th composite number.
 * [A129428](http://oeis.org/A129428) ([program](129/A129428.asm)): Centered 47-gonal numbers.
-* [A129502](http://oeis.org/A129502) ([program](129/A129502.asm)): For n=2^k, a(n) = binomial(k + 2, 2), else 0.
 * [A129514](http://oeis.org/A129514) ([program](129/A129514.asm)): a(n) = gcd(Sum_{k|n} k, Sum_{1<k<n, k does not divide n} k) = gcd(sigma(n), n(n+1)/2 - sigma(n)) = gcd(sigma(n), n(n+1)/2), where sigma(n) = A000203(n).
 * [A129527](http://oeis.org/A129527) ([program](129/A129527.asm)): a(2n) = a(n) + 2n, a(2n+1) = 2n + 1.
 * [A129530](http://oeis.org/A129530) ([program](129/A129530.asm)): a(n) = (1/2)*n*(n-1)*3^(n-1).
@@ -2955,6 +2955,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130496](http://oeis.org/A130496) ([program](130/A130496.asm)): Repetition of even numbers, with initial zeros, five times.
 * [A130497](http://oeis.org/A130497) ([program](130/A130497.asm)): Repetition of odd numbers five times.
 * [A130505](http://oeis.org/A130505) ([program](130/A130505.asm)): a(n) = 3*a(n-1) if n is odd, otherwise 6*a(n-1).
+* [A130507](http://oeis.org/A130507) ([program](130/A130507.asm)): First differences of A130845.
 * [A130508](http://oeis.org/A130508) ([program](130/A130508.asm)): a(1)=2. a(2)=3. a(3)=1. a(n+3) = 3 + a(n), for all positive integers n.
 * [A130509](http://oeis.org/A130509) ([program](130/A130509.asm)): a(1)=3. a(2)=1. a(3)=2. a(n+3) = 3 + a(n), for all positive integers n.
 * [A130517](http://oeis.org/A130517) ([program](130/A130517.asm)): Triangle read by rows: row n counts down from n in steps of 2, then counts up the remaining elements in the set {1,2,...n}, again in steps of 2.

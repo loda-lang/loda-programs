@@ -3,9 +3,4 @@
 
 cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 cal $0,66628 ; a(n) = n - the largest Fibonacci number <= n.
-mov $1,2
-lpb $0
-  trn $1,$0
-  div $0,4
-lpe
-div $1,2
+bin $1,$0

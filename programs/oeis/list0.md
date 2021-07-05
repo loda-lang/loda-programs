@@ -2762,6 +2762,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021459](http://oeis.org/A021459) ([program](021/A021459.asm)): Decimal expansion of 1/455.
 * [A021466](http://oeis.org/A021466) ([program](021/A021466.asm)): Decimal expansion of 1/462.
 * [A021472](http://oeis.org/A021472) ([program](021/A021472.asm)): Decimal expansion of 1/468.
+* [A021496](http://oeis.org/A021496) ([program](021/A021496.asm)): Decimal expansion of 1/492.
 * [A021499](http://oeis.org/A021499) ([program](021/A021499.asm)): Decimal expansion of 1/495.
 * [A021509](http://oeis.org/A021509) ([program](021/A021509.asm)): Decimal expansion of 1/505.
 * [A021522](http://oeis.org/A021522) ([program](021/A021522.asm)): Decimal expansion of 1/518.
@@ -6120,6 +6121,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048307](http://oeis.org/A048307) ([program](048/A048307.asm)): Numbers whose decimal expansions, read from left to right, have run lengths that strictly increase.
 * [A048328](http://oeis.org/A048328) ([program](048/A048328.asm)): Numbers that are repdigits in base 3.
 * [A048329](http://oeis.org/A048329) ([program](048/A048329.asm)): a(n) in base 4 is a repdigit.
+* [A048330](http://oeis.org/A048330) ([program](048/A048330.asm)): a(n) in base 5 is a repdigit.
 * [A048331](http://oeis.org/A048331) ([program](048/A048331.asm)): a(n) in base 6 is a repdigit.
 * [A048332](http://oeis.org/A048332) ([program](048/A048332.asm)): a(n) in base 7 is a repdigit.
 * [A048334](http://oeis.org/A048334) ([program](048/A048334.asm)): a(n) in base 9 is a repdigit.

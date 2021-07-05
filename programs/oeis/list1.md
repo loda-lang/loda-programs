@@ -30,6 +30,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A050440](http://oeis.org/A050440) ([program](050/A050440.asm)): Sixth-order composites.
 * [A050441](http://oeis.org/A050441) ([program](050/A050441.asm)): Partial sums of A051865.
 * [A050442](http://oeis.org/A050442) ([program](050/A050442.asm)): Octahedral torus number: a(n) = n^2+2*sum(k^2,k=1..n-1)-2*(floor((n+1)/2)^2+2*sum(k^2,k=1..floor((n+1)/2)-1))+(1-(-1)^n)/2.
+* [A050449](http://oeis.org/A050449) ([program](050/A050449.asm)): a(n) = Sum_{d|n, d=1 mod 4} d.
 * [A050452](http://oeis.org/A050452) ([program](050/A050452.asm)): a(n) = Sum_{d|n, d=3 mod 4} d.
 * [A050482](http://oeis.org/A050482) ([program](050/A050482.asm)): Sum of remainders when n-th prime is divided by all preceding integers.
 * [A050483](http://oeis.org/A050483) ([program](050/A050483.asm)): Partial sums of A051947.
@@ -1360,6 +1361,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061801](http://oeis.org/A061801) ([program](061/A061801.asm)): (7*6^n - 2)/5.
 * [A061803](http://oeis.org/A061803) ([program](061/A061803.asm)): Sum of n-th row of triangle of 4th powers: 1; 1 16 1; 1 16 81 16 1; 1 16 81 256 81 16 1; ...
 * [A061804](http://oeis.org/A061804) ([program](061/A061804.asm)): a(n) = 2*n*(2*n^2 + 1).
+* [A061818](http://oeis.org/A061818) ([program](061/A061818.asm)): Multiples of 2 containing only digits 0,1,2.
 * [A061819](http://oeis.org/A061819) ([program](061/A061819.asm)): Multiples of 3 containing only digits 0,1,2,3.
 * [A061821](http://oeis.org/A061821) ([program](061/A061821.asm)): Multiples of 5 containing only digits 0,...,5.
 * [A061824](http://oeis.org/A061824) ([program](061/A061824.asm)): Multiples of 8 containing only the digits 0, ..., 8.
@@ -1882,6 +1884,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A066169](http://oeis.org/A066169) ([program](066/A066169.asm)): Least k such that phi(k) >= n.
 * [A066181](http://oeis.org/A066181) ([program](066/A066181.asm)): Permutation of the integers with cycle form {1}, {2, 3}, {4, 5, 6}, {7, 8, 9, 10}, ...
 * [A066182](http://oeis.org/A066182) ([program](066/A066182.asm)): Permutation of the integers with cycle form {1}, {3, 2}, {6, 5, 4}, {10, 9, 8, 7}, ...
+* [A066209](http://oeis.org/A066209) ([program](066/A066209.asm)): A053041(n)-10^(n-1).
 * [A066246](http://oeis.org/A066246) ([program](066/A066246.asm)): 0 unless n is a composite number A002808(k) when a(n) = k.
 * [A066247](http://oeis.org/A066247) ([program](066/A066247.asm)): Characteristic function of composite numbers: 1 if n is composite else 0.
 * [A066280](http://oeis.org/A066280) ([program](066/A066280.asm)): a(n) = 1^n + 2^(n+1) + 3^(n+2).
@@ -2725,6 +2728,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A072400](http://oeis.org/A072400) ([program](072/A072400.asm)): (Factors of 4 removed from n) modulo 8.
 * [A072401](http://oeis.org/A072401) ([program](072/A072401.asm)): 1 iff n is of the form 4^m*(8k+7).
 * [A072436](http://oeis.org/A072436) ([program](072/A072436.asm)): Remove prime factors of form 4*k+3.
+* [A072438](http://oeis.org/A072438) ([program](072/A072438.asm)): Remove prime factors of form 4*k+1.
 * [A072442](http://oeis.org/A072442) ([program](072/A072442.asm)): Least k such that Sum( Cos(1/Sqrt(i)) i=1..k) > n.
 * [A072451](http://oeis.org/A072451) ([program](072/A072451.asm)): Number of odd terms in the reduced residue system of 2*n-1.
 * [A072464](http://oeis.org/A072464) ([program](072/A072464.asm)): Code word lengths for non-redundant MML code for positive integers.
@@ -2834,6 +2838,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073724](http://oeis.org/A073724) ([program](073/A073724.asm)): a(n) = (4^(n+1) + 6n + 5)/9.
 * [A073729](http://oeis.org/A073729) ([program](073/A073729.asm)): Concatenation of initial and final digits of n in decimal representation.
 * [A073731](http://oeis.org/A073731) ([program](073/A073731.asm)): Least k such that A073729(k) = n.
+* [A073738](http://oeis.org/A073738) ([program](073/A073738.asm)): Sum of every other prime <= n-th prime down to 2 or 1; equals the partial sums of A036467 (in which sums of two consecutive terms form the primes).
 * [A073750](http://oeis.org/A073750) ([program](073/A073750.asm)): Factors of 2 in the denominators of the fractional coefficients of the square-root of the prime power series: sum_{n=0..inf} p_n x^n, where p_n is the n-th prime and p_0 is defined to be 1.
 * [A073759](http://oeis.org/A073759) ([program](073/A073759.asm)): Largest number that is neither a divisor of nor relatively prime to n, or 0 if no such number exists.
 * [A073760](http://oeis.org/A073760) ([program](073/A073760.asm)): Integers m such that A073758(m) = 4.
