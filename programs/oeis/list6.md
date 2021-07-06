@@ -1670,7 +1670,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A333167](http://oeis.org/A333167) ([program](333/A333167.asm)): a(n) = r_2(n^2 + 1), where r_2(k) is the number of ways of writing k as a sum of 2 squares (A004018).
 * [A333169](http://oeis.org/A333169) ([program](333/A333169.asm)): a(n) = phi(n^2 + 1), where phi is the Euler totient function (A000010).
 * [A333173](http://oeis.org/A333173) ([program](333/A333173.asm)): a(n) = r_4(n^2 + 1), where r_4(k) is the number of ways of writing k as a sum of 4 squares (A000118).
-* [A333174](http://oeis.org/A333174) ([program](333/A333174.asm)): a(n) = Sum_{k=0..n} r_4(k^2 + 1), where r_4(k) is the number of ways of writing k as a sum of 4 squares (A000118).
 * [A333175](http://oeis.org/A333175) ([program](333/A333175.asm)): If n = Product (p_j^k_j) then a(n) = Sum (a(n/p_j^k_j)), with a(1) = 1.
 * [A333183](http://oeis.org/A333183) ([program](333/A333183.asm)): Number of digits in concatenation of first n positive even integers.
 * [A333206](http://oeis.org/A333206) ([program](333/A333206.asm)): a(n) is the least decimal digit of n^3.

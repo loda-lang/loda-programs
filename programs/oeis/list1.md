@@ -3090,6 +3090,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A076539](http://oeis.org/A076539) ([program](076/A076539.asm)): Numerators a(n) of fractions slowly converging to Pi: let a(1) = 0, b(n) = n - a(n); if (a(n) + 1) / b(n) < Pi, then a(n+1) = a(n) + 1, otherwise a(n+1) = a(n).
 * [A076540](http://oeis.org/A076540) ([program](076/A076540.asm)): Number of branches in all ordered trees with n edges.
 * [A076544](http://oeis.org/A076544) ([program](076/A076544.asm)): mu(n)+sqf(n): mu(n) is Moebius function; sqf(n)=1 if n is squarefree, sqf(n)=-1 otherwise.
+* [A076545](http://oeis.org/A076545) ([program](076/A076545.asm)): sum[k=1 to n] mu(k)+sqf(k): mu(k) is Moebius function; sqf(k)=1 if k is squarefree, sqf(k)=-1 otherwise.
 * [A076555](http://oeis.org/A076555) ([program](076/A076555.asm)): Greatest prime divisor of n-th prime + 2.
 * [A076556](http://oeis.org/A076556) ([program](076/A076556.asm)): Greatest prime divisor of n-th prime + n.
 * [A076563](http://oeis.org/A076563) ([program](076/A076563.asm)): a(n>1) = n - greatest prime divisor of n.

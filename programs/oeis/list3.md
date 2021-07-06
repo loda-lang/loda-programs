@@ -3112,6 +3112,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A177339](http://oeis.org/A177339) ([program](177/A177339.asm)): Partial sums of round(n^2/44).
 * [A177342](http://oeis.org/A177342) ([program](177/A177342.asm)): a(n) = (4*n^3-3*n^2+5*n-3)/3.
 * [A177357](http://oeis.org/A177357) ([program](177/A177357.asm)): Number of positive squares <= prime(n) - 3.
+* [A177444](http://oeis.org/A177444) ([program](177/A177444.asm)): Triangle by columns, (1, 1, 0, 1, 0, 0, 0,...); shifted down twice for columns >0.
 * [A177452](http://oeis.org/A177452) ([program](177/A177452.asm)): Partial sums of A002055.
 * [A177499](http://oeis.org/A177499) ([program](177/A177499.asm)): Period 4: repeat [1, 16, 4, 16].
 * [A177702](http://oeis.org/A177702) ([program](177/A177702.asm)): Period 3: repeat [1, 1, 2].

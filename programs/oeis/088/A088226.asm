@@ -8,11 +8,12 @@ lpb $5
   mov $3,0
   sub $5,1
   add $0,$5
-  trn $0,1
+  sub $0,1
   lpb $0
-    mov $2,$0
     sub $0,2
-    cal $2,86520 ; Number of integers strictly greater than (n-sqrt(n))/2 and strictly less than (n+sqrt(n))/2.
+    mov $2,$0
+    max $2,0
+    cal $2,267654 ; Irregular triangle of palindromic subsequences. Every row has 2*n+1 terms. From the second row, there are only two alternated numbers: 2*n+4 and 2*n+2.
     add $3,$2
   lpe
   mov $4,$5
@@ -23,3 +24,4 @@ lpe
 min $6,1
 mul $6,$7
 sub $1,$6
+div $1,2

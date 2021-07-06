@@ -2735,6 +2735,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021209](http://oeis.org/A021209) ([program](021/A021209.asm)): Decimal expansion of 1/205.
 * [A021220](http://oeis.org/A021220) ([program](021/A021220.asm)): Decimal expansion of 1/216.
 * [A021226](http://oeis.org/A021226) ([program](021/A021226.asm)): Decimal expansion of 1/222.
+* [A021235](http://oeis.org/A021235) ([program](021/A021235.asm)): Decimal expansion of 1/231.
 * [A021243](http://oeis.org/A021243) ([program](021/A021243.asm)): Decimal expansion of 1/239.
 * [A021250](http://oeis.org/A021250) ([program](021/A021250.asm)): Decimal expansion of 1/246.
 * [A021256](http://oeis.org/A021256) ([program](021/A021256.asm)): Decimal expansion of 1/252.
@@ -4128,7 +4129,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031373](http://oeis.org/A031373) ([program](031/A031373.asm)): Primes p(7n-1).
 * [A031374](http://oeis.org/A031374) ([program](031/A031374.asm)): a(n) = prime(8*n - 1).
 * [A031375](http://oeis.org/A031375) ([program](031/A031375.asm)): Primes p(9n-1).
-* [A031376](http://oeis.org/A031376) ([program](031/A031376.asm)): a(n) = prime(10*n - 1).
 * [A031377](http://oeis.org/A031377) ([program](031/A031377.asm)): a(n) = prime(3n-2).
 * [A031378](http://oeis.org/A031378) ([program](031/A031378.asm)): a(n) = prime(4*n - 2).
 * [A031379](http://oeis.org/A031379) ([program](031/A031379.asm)): a(n) = prime(5*n - 2).
@@ -5335,6 +5335,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040955](http://oeis.org/A040955) ([program](040/A040955.asm)): Continued fraction for sqrt(987).
 * [A040958](http://oeis.org/A040958) ([program](040/A040958.asm)): Continued fraction for sqrt(990).
 * [A040960](http://oeis.org/A040960) ([program](040/A040960.asm)): Continued fraction for sqrt(992).
+* [A040962](http://oeis.org/A040962) ([program](040/A040962.asm)): Continued fraction for sqrt(994).
 * [A040976](http://oeis.org/A040976) ([program](040/A040976.asm)): a(n) = prime(n) - 2.
 * [A040977](http://oeis.org/A040977) ([program](040/A040977.asm)): a(n) = binomial(n+5,5)*(n+3)/3.
 * [A041010](http://oeis.org/A041010) ([program](041/A041010.asm)): Numerators of continued fraction convergents to sqrt(8).

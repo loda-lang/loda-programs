@@ -1,8 +1,7 @@
 ; A187949: Positions of 0 in A187948; complement of A187953.
 ; 2,5,10,13,15,18,23,26,31,34,36,39,44,47,49,52,57,60,65,68,70,73,78,81,86,89,91,94,99,102,104,107,112,115,120,123,125,128,133,136,138,141,146,149,154,157,159,162,167,170,175,178,180,183,188,191,193,196,201,204,209,212,214,217
 
-add $0,1
-cal $0,188435 ; Positions of 1 in A188433; complement of A188434.
-cal $0,4957 ; a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
+cal $0,307295 ; If n is even, a(n) = A001950(n/2+1), otherwise a(n) = A001950((n-1)/2+1) + 1.
+cal $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 mov $1,$0
-sub $1,6
+sub $1,5

@@ -4126,6 +4126,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A138888](http://oeis.org/A138888) ([program](138/A138888.asm)): Non-Fermat numbers.
 * [A138890](http://oeis.org/A138890) ([program](138/A138890.asm)): Non-Padovan numbers.
 * [A138891](http://oeis.org/A138891) ([program](138/A138891.asm)): Non-Motzkin numbers.
+* [A138902](http://oeis.org/A138902) ([program](138/A138902.asm)): a(n) = d!, where d is the number of digits in n.
 * [A138908](http://oeis.org/A138908) ([program](138/A138908.asm)): a(n) = d^d, where d is the number of digits in n.
 * [A138918](http://oeis.org/A138918) ([program](138/A138918.asm)): Numbers n such that 18n-1 is prime.
 * [A138966](http://oeis.org/A138966) ([program](138/A138966.asm)): a(n) = n + (smallest composite > n).
