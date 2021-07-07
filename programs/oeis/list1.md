@@ -1321,6 +1321,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061419](http://oeis.org/A061419) ([program](061/A061419.asm)): a(n) = ceiling(a(n-1)*3/2) with a(1) = 1.
 * [A061420](http://oeis.org/A061420) ([program](061/A061420.asm)): a(n) = a(ceiling((n-1)*2/3)) + 1 with a(0) = 0.
 * [A061462](http://oeis.org/A061462) ([program](061/A061462.asm)): The exact power of 2 that divides the n-th Bell number (A000110). Has period 12.
+* [A061468](http://oeis.org/A061468) ([program](061/A061468.asm)): a(n) = d(n) + phi(n), where d(n) is the number of divisors (A000005) and phi(n) is Euler's totient function (A000010).
 * [A061479](http://oeis.org/A061479) ([program](061/A061479.asm)): Smallest number m such that first digit - second digit + third digit - fourth digit ... (of m) = n.
 * [A061486](http://oeis.org/A061486) ([program](061/A061486.asm)): Let the number of digits in n be k; a(n) = sum of the products of the digits of n taken r at a time where r ranges from 1 to k.
 * [A061495](http://oeis.org/A061495) ([program](061/A061495.asm)): a(n) = lcm(3n+1, 3n+2, 3n+3).
@@ -1440,7 +1441,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062557](http://oeis.org/A062557) ([program](062/A062557.asm)): 2n-1 1's followed by a 2.
 * [A062558](http://oeis.org/A062558) ([program](062/A062558.asm)): Number of nonisomorphic cyclic subgroups of dihedral group with 2n elements.
 * [A062561](http://oeis.org/A062561) ([program](062/A062561.asm)): a(n) = 3*binomial(2*n, n-1).
-* [A062563](http://oeis.org/A062563) ([program](062/A062563.asm)): Sum_{k=1...n} d(k)* mu(k), where d(k) is the number of divisors function.
+* [A062563](http://oeis.org/A062563) ([program](062/A062563.asm)): a(n) = Sum_{k=1..n} d(k)* mu(k), where d(k) is the number of divisors function.
 * [A062570](http://oeis.org/A062570) ([program](062/A062570.asm)): a(n) = phi(2*n).
 * [A062708](http://oeis.org/A062708) ([program](062/A062708.asm)): Write 0,1,2,3,4,... in a triangular spiral; then a(n) is the sequence found by reading the terms along the line from 0 in the direction 0,2,...
 * [A062709](http://oeis.org/A062709) ([program](062/A062709.asm)): a(n) = 2^n + 3.
@@ -2540,6 +2541,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070851](http://oeis.org/A070851) ([program](070/A070851.asm)): Smallest prime == 1 mod (7n).
 * [A070852](http://oeis.org/A070852) ([program](070/A070852.asm)): Smallest prime == 1 mod (8n).
 * [A070853](http://oeis.org/A070853) ([program](070/A070853.asm)): Smallest prime == 1 mod (9n).
+* [A070864](http://oeis.org/A070864) ([program](070/A070864.asm)): a(1) = a(2) = 1; a(n) = 2 + a(n - a(n-1)).
 * [A070875](http://oeis.org/A070875) ([program](070/A070875.asm)): Binary expansion is 1x100...0 where x = 0 or 1.
 * [A070876](http://oeis.org/A070876) ([program](070/A070876.asm)): Binary expansion is 1xx100...0 where xx = 00 or 11.
 * [A070883](http://oeis.org/A070883) ([program](070/A070883.asm)): Bitwise XOR of n and n-th prime.
@@ -2840,6 +2842,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073731](http://oeis.org/A073731) ([program](073/A073731.asm)): Least k such that A073729(k) = n.
 * [A073738](http://oeis.org/A073738) ([program](073/A073738.asm)): Sum of every other prime <= n-th prime down to 2 or 1; equals the partial sums of A036467 (in which sums of two consecutive terms form the primes).
 * [A073750](http://oeis.org/A073750) ([program](073/A073750.asm)): Factors of 2 in the denominators of the fractional coefficients of the square-root of the prime power series: sum_{n=0..inf} p_n x^n, where p_n is the n-th prime and p_0 is defined to be 1.
+* [A073757](http://oeis.org/A073757) ([program](073/A073757.asm)): Number of numbers "related" to n: either divisors or terms in RRS of n.
 * [A073759](http://oeis.org/A073759) ([program](073/A073759.asm)): Largest number that is neither a divisor of nor relatively prime to n, or 0 if no such number exists.
 * [A073760](http://oeis.org/A073760) ([program](073/A073760.asm)): Integers m such that A073758(m) = 4.
 * [A073762](http://oeis.org/A073762) ([program](073/A073762.asm)): a(n) = 24*n - 12.
@@ -4576,7 +4579,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088305](http://oeis.org/A088305) ([program](088/A088305.asm)): a(0) = 1, a(n) = Fibonacci(2*n). It has the property: a(n) = 1*a(n-1) + 2*a(n-2) + 3*a(n-3) + 4*a(n-4) + ...
 * [A088308](http://oeis.org/A088308) ([program](088/A088308.asm)): 2 followed by list of composite numbers mod 10.
 * [A088333](http://oeis.org/A088333) ([program](088/A088333.asm)): A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 3 places clockwise from i. Repeat, counting 3 places from the next undeleted integer, until only one integer remains.
-* [A088347](http://oeis.org/A088347) ([program](088/A088347.asm)): A product cancellation type function that is what I call a wild weird sequence.
+* [A088347](http://oeis.org/A088347) ([program](088/A088347.asm)): This sequence needs a definition.
 * [A088371](http://oeis.org/A088371) ([program](088/A088371.asm)): Position where n is inserted into the n-th row of triangle A088370, where the n-th row differs from the prior row only by the presence of n.
 * [A088377](http://oeis.org/A088377) ([program](088/A088377.asm)): (Smallest prime-factor of n)^2.
 * [A088378](http://oeis.org/A088378) ([program](088/A088378.asm)): (Smallest prime-factor of n)^3.
@@ -5686,6 +5689,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099551](http://oeis.org/A099551) ([program](099/A099551.asm)): Odd part of n modulo 10. Final digit of A000265(n).
 * [A099559](http://oeis.org/A099559) ([program](099/A099559.asm)): a(n) = Sum_{k=0..floor(n/5)} C(n-4k,k+1).
 * [A099560](http://oeis.org/A099560) ([program](099/A099560.asm)): a(n) = Sum_{k=0..floor(n/3)} C(n-2k,k-1).
+* [A099561](http://oeis.org/A099561) ([program](099/A099561.asm)): Sum C(n-3k,k-1), k=0..floor(n/4).
 * [A099562](http://oeis.org/A099562) ([program](099/A099562.asm)): Sum C(n-4k,k-1), k=0..floor(n/5).
 * [A099563](http://oeis.org/A099563) ([program](099/A099563.asm)): a(0) = 0; for n > 0, a(n) = final nonzero number in the sequence n, f(n,2), f(f(n,2),3), f(f(f(n,2),3),4),..., where f(n,d) = floor(n/d); the most significant digit in the factorial base representation of n.
 * [A099564](http://oeis.org/A099564) ([program](099/A099564.asm)): a(0) = 0; for n > 0, a(n) = final nonzero number in the sequence n, f(n,2), f(f(n,2),3), f(f(f(n,2),3),4),..., where f(n,d)=Floor(n/F(d+1)), with F denoting the Fibonacci numbers (A000045).

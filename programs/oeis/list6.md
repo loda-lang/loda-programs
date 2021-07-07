@@ -1968,6 +1968,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A340084](http://oeis.org/A340084) ([program](340/A340084.asm)): a(n) = gcd(n-1, A336466(n)); Odd part of A340081(n).
 * [A340085](http://oeis.org/A340085) ([program](340/A340085.asm)): a(n) = A336466(n) / gcd(n-1, A336466(n)); Odd part of A340082(n).
 * [A340086](http://oeis.org/A340086) ([program](340/A340086.asm)): a(1) = 0, for n > 1, a(n) = A000265(n-1) / gcd(n-1, A336466(n)).
+* [A340134](http://oeis.org/A340134) ([program](340/A340134.asm)): a(n+1) = a(n-2*a(n)) + 1, starting with a(1) = a(2) = 0.
 * [A340184](http://oeis.org/A340184) ([program](340/A340184.asm)): n with the rightmost occurrence of the smallest digit of n deleted.
 * [A340227](http://oeis.org/A340227) ([program](340/A340227.asm)): Number of pairs of divisors of n, (d1,d2), such that d1 < d2 and d1*d2 is squarefree.
 * [A340228](http://oeis.org/A340228) ([program](340/A340228.asm)): a(n) is the sum of the lengths of all the segments used to draw a rectangle of height 2^(n-1) and width n divided into 2^(n-1) rectangles of unit height, in turn, divided into rectangles of unit height and lengths corresponding to the parts of the compositions of n.

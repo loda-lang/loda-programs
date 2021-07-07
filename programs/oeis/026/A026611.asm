@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,26602 ; n-th number k such that s(k) = 2, where s = A026600.
+  cal $0,26602 ; Numbers k such that A026600(k) = 2.
   div $0,3
   mov $2,$3
   mov $5,$0

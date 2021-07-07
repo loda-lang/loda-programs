@@ -3871,7 +3871,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136391](http://oeis.org/A136391) ([program](136/A136391.asm)): a(n) = n*F(n) - (n-1)*F(n-1), where the F(j)'s are the Fibonacci numbers (F(0)=0, F(1)=1).
 * [A136392](http://oeis.org/A136392) ([program](136/A136392.asm)): a(n) = 6*n^2 - 10*n + 5.
 * [A136395](http://oeis.org/A136395) ([program](136/A136395.asm)): Binomial transform of [1, 3, 4, 3, 2, 0, 0, 0,...].
-* [A136396](http://oeis.org/A136396) ([program](136/A136396.asm)): 1+n*(n+1)*(n^2-n+12)/12.
+* [A136396](http://oeis.org/A136396) ([program](136/A136396.asm)): a(n) = 1+n*(n+1)*(n^2-n+12)/12.
 * [A136412](http://oeis.org/A136412) ([program](136/A136412.asm)): a(n) = (5*4^n+1)/3.
 * [A136437](http://oeis.org/A136437) ([program](136/A136437.asm)): a(n) = prime(n) - k! where k is the greatest number such that k! <= prime(n).
 * [A136442](http://oeis.org/A136442) ([program](136/A136442.asm)): a(3n) = 1, a(3n-1) = 0 and a(3n+1) = a(n).
@@ -3894,7 +3894,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136771](http://oeis.org/A136771) ([program](136/A136771.asm)): n! never ends in this many 0's in base 11.
 * [A136775](http://oeis.org/A136775) ([program](136/A136775.asm)): Number of multiplex juggling sequences of length n, base state <1,1> and hand capacity 2.
 * [A136799](http://oeis.org/A136799) ([program](136/A136799.asm)): Last term in a sequence of at least 3 consecutive composite integers.
-* [A136853](http://oeis.org/A136853) ([program](136/A136853.asm)): Numbers n such that n and the square of n use only the digits 0, 1, 3 and 9.
+* [A136853](http://oeis.org/A136853) ([program](136/A136853.asm)): Numbers k such that k and k^2 use only the digits 0, 1, 3 and 9.
 * [A137148](http://oeis.org/A137148) ([program](137/A137148.asm)): a(n) = n*phi(n) for nonprime n.
 * [A137173](http://oeis.org/A137173) ([program](137/A137173.asm)): A006516 at positions with even indices, A007582 at positions with odd indices.
 * [A137180](http://oeis.org/A137180) ([program](137/A137180.asm)): Number of palindromes in the range [1,n] inclusive.
@@ -4796,7 +4796,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144657](http://oeis.org/A144657) ([program](144/A144657.asm)): a(n) = Sum[Sum[(i+j)!/(i!*j!),{i,1,n}],{j,1,n}].
 * [A144677](http://oeis.org/A144677) ([program](144/A144677.asm)): Related to enumeration of quantum states (see reference for precise definition).
 * [A144678](http://oeis.org/A144678) ([program](144/A144678.asm)): Related to enumeration of quantum states (see reference for precise definition).
-* [A144679](http://oeis.org/A144679) ([program](144/A144679.asm)): Related to enumeration of quantum states (see reference for precise definition).
+* [A144679](http://oeis.org/A144679) ([program](144/A144679.asm)): a(n) = [n/5 + 1]*[n/5 + 2]*(3*n - 10*[n/5] + 3)/6, where [.] = floor.
 * [A144704](http://oeis.org/A144704) ([program](144/A144704.asm)): a(n) = 4^n*(1-2*n).
 * [A144706](http://oeis.org/A144706) ([program](144/A144706.asm)): Central coefficients of Pascal-like triangle A132047.
 * [A144707](http://oeis.org/A144707) ([program](144/A144707.asm)): Diagonal sums of Pascal-like triangle A132047.

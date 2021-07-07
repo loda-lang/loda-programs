@@ -36,7 +36,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A200860](http://oeis.org/A200860) ([program](200/A200860.asm)): Multiples of 682.
 * [A200872](http://oeis.org/A200872) ([program](200/A200872.asm)): Number of 0..n arrays x(0..3) of 4 elements without any interior element greater than both neighbors or less than both neighbors.
 * [A200887](http://oeis.org/A200887) ([program](200/A200887.asm)): Number of 0..n arrays x(0..3) of 4 elements without any interior element greater than both neighbors.
-* [A200905](http://oeis.org/A200905) ([program](200/A200905.asm)): 3*phi(n), where phi (A000010) is the Euler totient function.
+* [A200905](http://oeis.org/A200905) ([program](200/A200905.asm)): a(n) = 3*phi(n), where phi (A000010) is the Euler totient function.
 * [A200975](http://oeis.org/A200975) ([program](200/A200975.asm)): Numbers on the diagonals in Ulam's spiral.
 * [A201058](http://oeis.org/A201058) ([program](201/A201058.asm)): Numerator of binomial(2n,n)/(2n).
 * [A201106](http://oeis.org/A201106) ([program](201/A201106.asm)): Binomial(n^2,3)/(2*n).
@@ -1112,6 +1112,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A217477](http://oeis.org/A217477) ([program](217/A217477.asm)): Z-sequence for the Riordan triangle A111125;
 * [A217482](http://oeis.org/A217482) ([program](217/A217482.asm)): Quarter-square tetrahedrals: a(n) = k*(k - 1)*(k - 2)/6, k = A002620(n).
 * [A217515](http://oeis.org/A217515) ([program](217/A217515.asm)): Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (123)*.
+* [A217516](http://oeis.org/A217516) ([program](217/A217516.asm)): Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (1234)*.
 * [A217517](http://oeis.org/A217517) ([program](217/A217517.asm)): Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (12345)*.
 * [A217527](http://oeis.org/A217527) ([program](217/A217527.asm)): a(n) = 2^(n-2)*(n-2)^2+2^(n-1).
 * [A217528](http://oeis.org/A217528) ([program](217/A217528.asm)): a(n) = (n-2)*(n-3)*2^(n-2)+2^n-2.
@@ -2635,7 +2636,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246817](http://oeis.org/A246817) ([program](246/A246817.asm)): Possible number of trailing zeros in hyperfactorials (A002109).
 * [A246831](http://oeis.org/A246831) ([program](246/A246831.asm)): a(n) is the concatenation of n and 3n in binary.
 * [A246839](http://oeis.org/A246839) ([program](246/A246839.asm)): Number of trailing zeros in A002109(n).
-* [A246930](http://oeis.org/A246930) ([program](246/A246930.asm)): Prime(12*n).
 * [A246934](http://oeis.org/A246934) ([program](246/A246934.asm)): The closest square to n-th prime.
 * [A246943](http://oeis.org/A246943) ([program](246/A246943.asm)): a(4n) = 4*n , a(2n+1) = 8*n+4 , a(4n+2) = 2*n+1.
 * [A246960](http://oeis.org/A246960) ([program](246/A246960.asm)): Directions of the lines in the (Heighway) Dragon Curve.

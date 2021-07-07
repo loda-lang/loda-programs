@@ -3,26 +3,25 @@
 
 mov $2,$0
 add $2,1
-mov $5,$0
+mov $3,$0
 lpb $2
-  mov $0,$5
+  mov $0,$3
   sub $2,1
   sub $0,$2
+  mov $4,$0
+  add $4,1
+  mov $5,0
   mov $6,$0
-  add $6,1
-  mov $7,0
-  mov $8,$0
-  lpb $6
-    mov $0,$8
-    sub $6,1
-    sub $0,$6
-    mov $3,$0
-    mul $3,7
-    div $3,2
-    mov $4,$3
-    cmp $4,0
-    add $3,$4
-    add $7,$3
+  lpb $4
+    mov $0,$6
+    sub $4,1
+    sub $0,$4
+    mul $0,7
+    div $0,2
+    mov $7,$0
+    cmp $7,0
+    add $0,$7
+    add $5,$0
   lpe
-  add $1,$7
+  add $1,$5
 lpe

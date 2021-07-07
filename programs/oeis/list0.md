@@ -692,6 +692,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004456](http://oeis.org/A004456) ([program](004/A004456.asm)): Nimsum n + 15.
 * [A004457](http://oeis.org/A004457) ([program](004/A004457.asm)): Nimsum n + 16.
 * [A004458](http://oeis.org/A004458) ([program](004/A004458.asm)): Nimsum n + 17.
+* [A004463](http://oeis.org/A004463) ([program](004/A004463.asm)): Nimsum n + 22.
+* [A004464](http://oeis.org/A004464) ([program](004/A004464.asm)): Nimsum n + 23.
 * [A004466](http://oeis.org/A004466) ([program](004/A004466.asm)): a(n) = n*(5*n^2 - 2)/3.
 * [A004467](http://oeis.org/A004467) ([program](004/A004467.asm)): a(n) = n*(11*n^2 - 5)/6.
 * [A004482](http://oeis.org/A004482) ([program](004/A004482.asm)): Tersum n + 1 (answer recorded in base 10).
@@ -3492,8 +3494,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A025812](http://oeis.org/A025812) ([program](025/A025812.asm)): Expansion of 1/((1-x^2)*(1-x^5)*(1-x^12)).
 * [A025813](http://oeis.org/A025813) ([program](025/A025813.asm)): Expansion of 1/((1-x^2)(1-x^6)(1-x^7)).
 * [A025818](http://oeis.org/A025818) ([program](025/A025818.asm)): Expansion of 1/((1-x^2)(1-x^7)(1-x^10)).
+* [A025820](http://oeis.org/A025820) ([program](025/A025820.asm)): Expansion of 1/((1-x^2)(1-x^7)(1-x^12)).
 * [A025821](http://oeis.org/A025821) ([program](025/A025821.asm)): Expansion of 1/((1-x^2)(1-x^8)(1-x^9)).
+* [A025822](http://oeis.org/A025822) ([program](025/A025822.asm)): Expansion of 1/((1-x^2)(1-x^8)(1-x^11)).
 * [A025823](http://oeis.org/A025823) ([program](025/A025823.asm)): Expansion of 1/((1-x^2)(1-x^9)(1-x^10)).
+* [A025824](http://oeis.org/A025824) ([program](025/A025824.asm)): Expansion of 1/((1-x^2)(1-x^9)(1-x^11)).
 * [A025827](http://oeis.org/A025827) ([program](025/A025827.asm)): Expansion of 1/((1-x^2)(1-x^11)(1-x^12)).
 * [A025828](http://oeis.org/A025828) ([program](025/A025828.asm)): Expansion of 1/((1-x^3)(1-x^4)(1-x^6)).
 * [A025829](http://oeis.org/A025829) ([program](025/A025829.asm)): Expansion of 1/((1-x^3)(1-x^4)(1-x^7)).
@@ -3616,8 +3621,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A026597](http://oeis.org/A026597) ([program](026/A026597.asm)): Expansion of (1+x)/(1-x-4*x^2).
 * [A026599](http://oeis.org/A026599) ([program](026/A026599.asm)): a(n) = Sum_{0<=j<=2*i, 0<=i<=n} A026584(i,j).
 * [A026600](http://oeis.org/A026600) ([program](026/A026600.asm)): a(n) is the n-th letter of the infinite word generated from w(1)=1 inductively by w(n)=JUXTAPOSITION{w(n-1),w'(n-1),w"(n-1)}, where w(k) becomes w'(k) by the cyclic permutation 1->2->3->1 and w"(k) = (w')'(k).
-* [A026601](http://oeis.org/A026601) ([program](026/A026601.asm)): a(n) is the n-th number k such that s(k) = 1, where s = A026600.
-* [A026602](http://oeis.org/A026602) ([program](026/A026602.asm)): n-th number k such that s(k) = 2, where s = A026600.
+* [A026601](http://oeis.org/A026601) ([program](026/A026601.asm)): Numbers k such that A026600(k) = 1.
+* [A026602](http://oeis.org/A026602) ([program](026/A026602.asm)): Numbers k such that A026600(k) = 2.
 * [A026603](http://oeis.org/A026603) ([program](026/A026603.asm)): Numbers k such that A026600(k) = 3.
 * [A026604](http://oeis.org/A026604) ([program](026/A026604.asm)): a(n) = s(1) + s(2) + ... + s(n), where s = A026600.
 * [A026611](http://oeis.org/A026611) ([program](026/A026611.asm)): Number of 3's between n-th 2 and (n+1)st 2 in A026600.

@@ -501,7 +501,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A156260](http://oeis.org/A156260) ([program](156/A156260.asm)): Row sums of A156254.
 * [A156277](http://oeis.org/A156277) ([program](156/A156277.asm)): Numbers appearing at every third row in the third column of A156241.
 * [A156279](http://oeis.org/A156279) ([program](156/A156279.asm)): 4 times the Lucas number A000032(n).
-* [A156287](http://oeis.org/A156287) ([program](156/A156287.asm)): Numbers n such that 4*n-5 is a prime number.
+* [A156287](http://oeis.org/A156287) ([program](156/A156287.asm)): Numbers k such that 4*k-5 is a prime number.
 * [A156319](http://oeis.org/A156319) ([program](156/A156319.asm)): Triangle by columns: (1, 2, 0, 0, 0, ...) in every column.
 * [A156331](http://oeis.org/A156331) ([program](156/A156331.asm)): a(n)=8*A154811(n).
 * [A156376](http://oeis.org/A156376) ([program](156/A156376.asm)): a(n) = 30*n + 19.
@@ -518,7 +518,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A156623](http://oeis.org/A156623) ([program](156/A156623.asm)): Values of register b when register a becomes 0 for the two register machine {i[1], i[1], i[1], d[2,1], d[1,6], i[2], d[1,5], d[2,3]}
 * [A156627](http://oeis.org/A156627) ([program](156/A156627.asm)): a(n) = 4394*n - 1820.
 * [A156635](http://oeis.org/A156635) ([program](156/A156635.asm)): 144*n^2 - n.
-* [A156636](http://oeis.org/A156636) ([program](156/A156636.asm)): 4394n + 1820.
+* [A156636](http://oeis.org/A156636) ([program](156/A156636.asm)): a(n) = 4394*n + 1820.
 * [A156638](http://oeis.org/A156638) ([program](156/A156638.asm)): Numbers n such that n^2 + 2 == 0 (mod 9).
 * [A156639](http://oeis.org/A156639) ([program](156/A156639.asm)): a(n) = 169*n^2 - 140*n + 29.
 * [A156640](http://oeis.org/A156640) ([program](156/A156640.asm)): a(n) = 169*n^2 + 140*n + 29.
@@ -3142,6 +3142,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178129](http://oeis.org/A178129) ([program](178/A178129.asm)): Partial sums of A050508.
 * [A178142](http://oeis.org/A178142) ([program](178/A178142.asm)): Sum over the divisors d = 2 and/or 3 of n.
 * [A178143](http://oeis.org/A178143) ([program](178/A178143.asm)): Sum of squares d^2 over the divisors d=2 and/or d=3 of n.
+* [A178144](http://oeis.org/A178144) ([program](178/A178144.asm)): Sum of divisors d of n which are d=2, 3 or 5.
 * [A178146](http://oeis.org/A178146) ([program](178/A178146.asm)): a(n) is the number of distinct divisors d of n of the form d=2,3 or 5
 * [A178166](http://oeis.org/A178166) ([program](178/A178166.asm)): 10^a(n) Pascal triangle, where a(n) = A007318(n).
 * [A178182](http://oeis.org/A178182) ([program](178/A178182.asm)): Minimal polynomials of sin(2Pi/n) are mapped to those of cos(2Pi/a(n)).
