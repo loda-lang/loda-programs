@@ -3,5 +3,6 @@
 
 mul $0,2
 add $0,1
-cal $0,140397 ; a(n) = floor(3*phi*n) - 3*floor(phi*n) where phi = (1+sqrt(5))/2.
+cal $0,292639 ; Rank of (3+r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
 mov $1,$0
+mod $1,3

@@ -3,13 +3,11 @@
 
 cal $0,40282 ; Continued fraction for sqrt(300).
 dif $0,4
-add $0,40
-cal $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
-mov $1,$0
 mov $2,$0
-cal $0,49472 ; a(n) = floor(n/sqrt(2)).
-add $2,51884
-add $1,$2
-sub $1,$0
-sub $1,51916
+lpb $2
+  add $1,4
+  sub $2,1
+lpe
+div $1,5
 mul $1,2
+add $1,2

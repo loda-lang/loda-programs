@@ -3,7 +3,12 @@
 
 mul $0,2
 add $0,1
-cal $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
-mov $1,$0
-mul $1,2
-add $1,1
+lpb $0
+  mov $2,$0
+  trn $0,3
+  cal $2,232508 ; Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally, diagonally or antidiagonally, with no adjacent elements equal.
+  add $1,$2
+lpe
+sub $1,4
+div $1,2
+add $1,3

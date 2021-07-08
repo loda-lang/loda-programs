@@ -3,8 +3,6 @@
 
 trn $0,1
 cal $0,193641 ; Number of arrays of -1..1 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero.
+trn $0,2
 mov $1,$0
-sub $1,1
-mov $2,$1
-cmp $2,0
-add $1,$2
+add $1,1

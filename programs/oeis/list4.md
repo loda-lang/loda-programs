@@ -1825,6 +1825,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231308](http://oeis.org/A231308) ([program](231/A231308.asm)): Recurrence a(n) = a(n-2) + n^M for M=9, starting with a(0)=0, a(1)=1.
 * [A231309](http://oeis.org/A231309) ([program](231/A231309.asm)): Recurrence a(n) = a(n-2) + n^M for M=10, starting with a(0)=0, a(1)=1.
 * [A231390](http://oeis.org/A231390) ([program](231/A231390.asm)): Number of (n+1) X (2+1) 0..2 arrays with no element unequal to a strict majority of its horizontal, diagonal and antidiagonal neighbors, with values 0..2 introduced in row major order.
+* [A231470](http://oeis.org/A231470) ([program](231/A231470.asm)): Largest integer less than 10, coprime to n.
+* [A231471](http://oeis.org/A231471) ([program](231/A231471.asm)): Largest integer less than 11 and coprime to n.
+* [A231472](http://oeis.org/A231472) ([program](231/A231472.asm)): Largest integer less than 12 and coprime to n.
 * [A231475](http://oeis.org/A231475) ([program](231/A231475.asm)): Largest integer less than 5 and coprime to n.
 * [A231500](http://oeis.org/A231500) ([program](231/A231500.asm)): a(n) = Sum_{i=0..n} wt(i)^2, where wt(i) = A000120(i).
 * [A231501](http://oeis.org/A231501) ([program](231/A231501.asm)): a(n) = Sum_{i=0..n} wt(i)^3, where wt() = A000120().

@@ -9,7 +9,5 @@ lpb $0
   cal $2,331434 ; Column 2 of triangle in A331431.
   add $1,$2
 lpe
-mul $1,$2
-sub $1,396900
-div $1,18900
-add $1,22
+div $1,30
+add $1,1

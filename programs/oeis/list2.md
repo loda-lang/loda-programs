@@ -2394,6 +2394,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123866](http://oeis.org/A123866) ([program](123/A123866.asm)): a(n) = n^6 - 1.
 * [A123867](http://oeis.org/A123867) ([program](123/A123867.asm)): a(n) = n^10 - 1.
 * [A123871](http://oeis.org/A123871) ([program](123/A123871.asm)): Expansion of g.f.: (1+x+x^2)/(1-4*x-4*x^2).
+* [A123884](http://oeis.org/A123884) ([program](123/A123884.asm)): Expansion of phi(x) * phi(-x^6) / chi(-x^2) in powers of x where phi(), chi() are Ramanujan theta functions.
 * [A123919](http://oeis.org/A123919) ([program](123/A123919.asm)): Number of numbers congruent to 2 or 4 mod 6 and <= n.
 * [A123920](http://oeis.org/A123920) ([program](123/A123920.asm)): Number of numbers congruent to 2 or 4 mod 6 between n and 2n inclusive.
 * [A123932](http://oeis.org/A123932) ([program](123/A123932.asm)): a(0) = 1, a(n) = 4 for n > 0.
@@ -2992,7 +2993,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130692](http://oeis.org/A130692) ([program](130/A130692.asm)): a(n) is the smallest number m such that the sum of the digits of n+m is n.
 * [A130706](http://oeis.org/A130706) ([program](130/A130706.asm)): a(0) = 1, a(1) = 2, a(n) = 0 for n > 1.
 * [A130707](http://oeis.org/A130707) ([program](130/A130707.asm)): a(n+3) = 3*(a(n+2) - a(n+1)) + 2*a(n).
-* [A130713](http://oeis.org/A130713) ([program](130/A130713.asm)): a(0)=a(2)=1, a(1)=2, a(n)=0 for n>2.
+* [A130713](http://oeis.org/A130713) ([program](130/A130713.asm)): a(0)=a(2)=1, a(1)=2, a(n)=0 for n > 2.
 * [A130716](http://oeis.org/A130716) ([program](130/A130716.asm)): a(0)=a(1)=a(2)=1, a(n)=0 for n>2.
 * [A130722](http://oeis.org/A130722) ([program](130/A130722.asm)): The twice repeated nonnegative integers at even indices, the non-repeated nonnegative integers at odd indices.
 * [A130723](http://oeis.org/A130723) ([program](130/A130723.asm)): Least common multiple of 3 and n^2+n+1.
@@ -3623,6 +3624,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134402](http://oeis.org/A134402) ([program](134/A134402.asm)): Triangle read by rows, for n > 0, n zeros followed by n.
 * [A134403](http://oeis.org/A134403) ([program](134/A134403.asm)): Triangle read by rows: row n consists of (n, n, (n+1), (n+2), (n+3),...).
 * [A134404](http://oeis.org/A134404) ([program](134/A134404.asm)): Triangle read by rows in which row n contains Fib(0), ..., Fib(n-1), Fib(n), Fib(n-1), ..., Fib(0).
+* [A134405](http://oeis.org/A134405) ([program](134/A134405.asm)): -1 before list of quadruples -2n-1, 2n+2, -2n, 2n+1.
 * [A134421](http://oeis.org/A134421) ([program](134/A134421.asm)): Partial sums of A134021.
 * [A134429](http://oeis.org/A134429) ([program](134/A134429.asm)): Array read by rows: row n lists 4 terms: k, m, k, m where k = 8n+3 and m = -8n -5.
 * [A134430](http://oeis.org/A134430) ([program](134/A134430.asm)): Period 4: repeat [1, -2, -2, 1].

@@ -395,6 +395,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A307295](http://oeis.org/A307295) ([program](307/A307295.asm)): If n is even, a(n) = A001950(n/2+1), otherwise a(n) = A001950((n-1)/2+1) + 1.
 * [A307304](http://oeis.org/A307304) ([program](307/A307304.asm)): Number of inequivalent ways of placing 2 nonattacking rooks on n X n board up to rotations and reflections of the board.
 * [A307313](http://oeis.org/A307313) ([program](307/A307313.asm)): a(n) is the denominator of n/2^(length of the binary representation of n).
+* [A307349](http://oeis.org/A307349) ([program](307/A307349.asm)): a(n) = Sum_{i=1..n} Sum_{j=1..n} (-1)^(i+j) * (i+j)!/(2!*i!*j!).
 * [A307354](http://oeis.org/A307354) ([program](307/A307354.asm)): a(n) = Sum_{0<=i<=j<=n} (-1)^(i+j) * (i+j)!/(i!*j!).
 * [A307395](http://oeis.org/A307395) ([program](307/A307395.asm)): Expansion of 1/((1 - x) * ((1 - x)^3 + x^3)).
 * [A307421](http://oeis.org/A307421) ([program](307/A307421.asm)): Dirichlet g.f.: zeta(s) * zeta(3*s) / zeta(2*s).
@@ -2037,6 +2038,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A341625](http://oeis.org/A341625) ([program](341/A341625.asm)): a(n) = 1 if the arithmetic derivative of n is less than n, otherwise 0.
 * [A341642](http://oeis.org/A341642) ([program](341/A341642.asm)): Number of strictly superior prime divisors of n.
 * [A341655](http://oeis.org/A341655) ([program](341/A341655.asm)): a(n) is the number of divisors of prime(n)^2 - 1.
+* [A341663](http://oeis.org/A341663) ([program](341/A341663.asm)): a(n) is the number of divisors of prime(n)^3 - 1.
 * [A341703](http://oeis.org/A341703) ([program](341/A341703.asm)): a(n) = 6*binomial(n,4) + 2*binomial(n,2) + 1.
 * [A341706](http://oeis.org/A341706) ([program](341/A341706.asm)): Row 2 of semigroup multiplication table shown in A341317 and A341318.
 * [A341718](http://oeis.org/A341718) ([program](341/A341718.asm)): Subtract 1 from each term of A004094 (the powers of 2 written backwards).

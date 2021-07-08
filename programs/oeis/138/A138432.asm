@@ -7,5 +7,4 @@ pow $0,2
 mul $1,$0
 sub $0,1
 mul $1,$0
-div $1,24
-mul $1,12
+div $1,2
