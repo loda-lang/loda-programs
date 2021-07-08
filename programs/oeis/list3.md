@@ -1199,6 +1199,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160547](http://oeis.org/A160547) ([program](160/A160547.asm)): Not divisible by 31.
 * [A160551](http://oeis.org/A160551) ([program](160/A160551.asm)): Number of (unordered) ways of making change for n dollars using coins of denominations 1, 5, 10, and 25.
 * [A160588](http://oeis.org/A160588) ([program](160/A160588.asm)): Interleaving of A053645 and A000027.
+* [A160590](http://oeis.org/A160590) ([program](160/A160590.asm)): Next-to-least significant digit of 2^n.
 * [A160595](http://oeis.org/A160595) ([program](160/A160595.asm)): Numerator of resilience R(n) = phi(n)/(n-1), with a(1) = 1 by convention.
 * [A160638](http://oeis.org/A160638) ([program](160/A160638.asm)): Bit-reversed 8-bit binary numbers.
 * [A160651](http://oeis.org/A160651) ([program](160/A160651.asm)): a(n) is the number of triangular nonnegative integers that are each equal to n(n+1)/2 - m(m+1)/2, for some m's where 0 <= m <= n.
@@ -1815,7 +1816,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A166136](http://oeis.org/A166136) ([program](166/A166136.asm)): a(n) = n*(n+3)/2 + 7.
 * [A166137](http://oeis.org/A166137) ([program](166/A166137.asm)): a(n) = 5*n*(n+1)/2 - 4.
 * [A166138](http://oeis.org/A166138) ([program](166/A166138.asm)): Trisection A022998(3n+1).
-* [A166143](http://oeis.org/A166143) ([program](166/A166143.asm)): a(n) = 3n^2 + 3n - 5.
+* [A166143](http://oeis.org/A166143) ([program](166/A166143.asm)): a(n) = 3*n^2 + 3*n - 5.
 * [A166144](http://oeis.org/A166144) ([program](166/A166144.asm)): a(n) = (11*n^2 + 11*n - 20)/2.
 * [A166146](http://oeis.org/A166146) ([program](166/A166146.asm)): a(n) = (7*n^2 + 7*n - 12)/2.
 * [A166147](http://oeis.org/A166147) ([program](166/A166147.asm)): a(n) = 4n^2 + 4n - 7.
@@ -3034,7 +3035,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176641](http://oeis.org/A176641) ([program](176/A176641.asm)): Triangle T(n, k) = 28^(k*(n-k)), read by rows.
 * [A176642](http://oeis.org/A176642) ([program](176/A176642.asm)): Triangle T(n, k) = 8^(k*(n-k)), read by rows.
 * [A176643](http://oeis.org/A176643) ([program](176/A176643.asm)): Triangle T(n, k) = 21^(k*(n-k)), read by rows.
-* [A176646](http://oeis.org/A176646) ([program](176/A176646.asm)): a(n) = 12*n^5 + 25*n^4 + 5*n^3 - 10*n^2 - 2*n.
+* [A176646](http://oeis.org/A176646) ([program](176/A176646.asm)): a(n) is the number of convex pentagons in an n-triangular net.
 * [A176662](http://oeis.org/A176662) ([program](176/A176662.asm)): a(0)=2, a(1)=7, and a(n) = (3*n+1)*2^(n-1) if n > 1.
 * [A176672](http://oeis.org/A176672) ([program](176/A176672.asm)): a(2*n) = 1 + 6*n, a(2*n+1) = A165367(n).
 * [A176691](http://oeis.org/A176691) ([program](176/A176691.asm)): a(n) = 2^n + 2*n + 1.

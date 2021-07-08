@@ -4,15 +4,11 @@
 mul $0,5
 div $0,4
 mul $0,2
-mov $2,1
-mov $3,$0
 pow $0,2
-lpb $2
-  mov $0,9
-  sub $1,4086
-  sub $0,$1
-  mov $2,$3
-lpe
+sub $0,1
+mul $0,133126
+sub $0,4
+trn $0,5
 mov $1,$0
-sub $1,4
+add $1,1
 mod $1,10

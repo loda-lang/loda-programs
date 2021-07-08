@@ -3009,6 +3009,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A298397](http://oeis.org/A298397) ([program](298/A298397.asm)): Pentagonal numbers divisible by 4.
 * [A298468](http://oeis.org/A298468) ([program](298/A298468.asm)): Solution (aa(n)) of the system of 3 complementary equations in Comments.
 * [A298474](http://oeis.org/A298474) ([program](298/A298474.asm)): a(n) is the least k such that A090701(k) = n.
+* [A298564](http://oeis.org/A298564) ([program](298/A298564.asm)): a(n) = (3^(n+2)+11)/2 - 5*2^(n+1) + 2*n.
 * [A298720](http://oeis.org/A298720) ([program](298/A298720.asm)): EBCDIC codes for lower case letters.
 * [A298728](http://oeis.org/A298728) ([program](298/A298728.asm)): EBCDIC codes for upper case letters.
 * [A298784](http://oeis.org/A298784) ([program](298/A298784.asm)): Expansion of (1 + x^2)*(1 + 3*x + x^2) / ((1 - x)*(1 - x^3)).

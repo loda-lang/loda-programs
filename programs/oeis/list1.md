@@ -1124,6 +1124,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060106](http://oeis.org/A060106) ([program](060/A060106.asm)): Numbers that are congruent to {1, 4, 6, 9, 11} mod 12. The Ebony keys on a piano, start with A0 = the 0th key.
 * [A060107](http://oeis.org/A060107) ([program](060/A060107.asm)): Numbers that are congruent to {0, 2, 3, 5, 7, 8, 10} mod 12. The ivory keys on a piano, start with A0 = the 0th key.
 * [A060108](http://oeis.org/A060108) ([program](060/A060108.asm)): Sequence of sums based on primes = 7 mod 8.
+* [A060130](http://oeis.org/A060130) ([program](060/A060130.asm)): Number of nonzero digits in factorial base representation (A007623) of n; minimum number of transpositions needed to compose each permutation in the lists A060117 & A060118.
 * [A060143](http://oeis.org/A060143) ([program](060/A060143.asm)): a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
 * [A060144](http://oeis.org/A060144) ([program](060/A060144.asm)): a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
 * [A060145](http://oeis.org/A060145) ([program](060/A060145.asm)): a(n) = floor(n/tau) - floor(n/(1 + tau)).
@@ -1786,6 +1787,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A065040](http://oeis.org/A065040) ([program](065/A065040.asm)): Triangle T(m,k): exponent of the highest power of 2 dividing binomial coefficient binomial(m,k).
 * [A065043](http://oeis.org/A065043) ([program](065/A065043.asm)): Characteristic function of the numbers with an even number of prime factors (counted with multiplicity): a(n) = 1 if n = A028260(k) for some k then 1 else 0.
 * [A065073](http://oeis.org/A065073) ([program](065/A065073.asm)): n-th prime + sum of digits of n-th prime.
+* [A065081](http://oeis.org/A065081) ([program](065/A065081.asm)): Alternating bit sum (A065359) for n-th prime p: replace 2^k with (-1)^k in binary expansion of p.
 * [A065090](http://oeis.org/A065090) ([program](065/A065090.asm)): Natural numbers which are not odd primes: composites plus 1 and 2.
 * [A065091](http://oeis.org/A065091) ([program](065/A065091.asm)): Odd primes.
 * [A065113](http://oeis.org/A065113) ([program](065/A065113.asm)): Sum of the squares of the n-th and the (n+1)st triangular numbers (A000217) is a perfect square.
@@ -5355,7 +5357,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A096400](http://oeis.org/A096400) ([program](096/A096400.asm)): Number of equivalence classes of triangles having equal angles of integral degrees and smallest angle = n.
 * [A096431](http://oeis.org/A096431) ([program](096/A096431.asm)): Denominator of (9*(n^4 - 2*n^3 + 2*n^2 - n) + 2)/(2*(2*n - 1)).
 * [A096457](http://oeis.org/A096457) ([program](096/A096457.asm)): If n is prime replace n with the next prime.
-* [A096472](http://oeis.org/A096472) ([program](096/A096472.asm)): Numbers containing Pythagorean triples in their divisor set.
+* [A096472](http://oeis.org/A096472) ([program](096/A096472.asm)): Numbers containing squares of Pythagorean triples in their divisor set.
 * [A096489](http://oeis.org/A096489) ([program](096/A096489.asm)): Noncomposite numbers n such that number of decimal digits of n = number of divisors of n.
 * [A096491](http://oeis.org/A096491) ([program](096/A096491.asm)): a(n) = sqrt(n) of n if n is a perfect square, otherwise a(n) = largest term in period of continued fraction expansion of square root of n.
 * [A096494](http://oeis.org/A096494) ([program](096/A096494.asm)): Largest value in repeating part of continued fraction of square root of n-th prime.

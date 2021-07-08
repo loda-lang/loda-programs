@@ -1,19 +1,8 @@
 ; A262037: Replace the second half of digits of n with the first half in reverse order.
 ; 0,1,2,3,4,5,6,7,8,9,11,11,11,11,11,11,11,11,11,11,22,22,22,22,22,22,22,22,22,22,33,33,33,33,33,33,33,33,33,33,44,44,44,44,44,44,44,44,44,44,55,55,55,55,55,55,55,55,55,55,66,66,66,66,66,66,66,66,66,66,77,77,77,77,77,77,77
 
-lpb $0
-  sub $0,10
-  mov $1,5
-  add $2,11
-  mov $3,$2
-lpe
-add $2,2
-lpb $1
-  mod $1,4
-  mov $2,1
-lpe
-mov $1,$3
-lpb $2
-  mov $2,$1
-  mov $1,$0
-lpe
+mul $0,10
+max $1,$0
+cal $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+sub $1,$0
+div $1,9

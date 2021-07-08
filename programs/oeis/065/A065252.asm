@@ -4,7 +4,5 @@
 cal $0,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
 mul $0,5
 add $0,8
-lpb $0
-  mod $0,3
-lpe
+mod $0,3
 mov $1,$0

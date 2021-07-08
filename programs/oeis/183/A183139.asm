@@ -8,6 +8,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,49472 ; a(n) = floor(n/sqrt(2)).
+  pow $0,2
+  cal $0,339183 ; Number of partitions of n into two parts such that the smaller part is a nonzero square.
   add $1,$0
 lpe

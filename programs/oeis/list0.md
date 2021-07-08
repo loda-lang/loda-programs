@@ -303,6 +303,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001768](http://oeis.org/A001768) ([program](001/A001768.asm)): Sorting numbers: number of comparisons for merge insertion sort of n elements.
 * [A001769](http://oeis.org/A001769) ([program](001/A001769.asm)): Expansion of 1/((1+x)*(1-x)^7).
 * [A001779](http://oeis.org/A001779) ([program](001/A001779.asm)): Expansion of 1/((1+x)(1-x)^8).
+* [A001780](http://oeis.org/A001780) ([program](001/A001780.asm)): Expansion of 1/((1+x)(1-x)^9).
 * [A001787](http://oeis.org/A001787) ([program](001/A001787.asm)): a(n) = n*2^(n-1).
 * [A001788](http://oeis.org/A001788) ([program](001/A001788.asm)): a(n) = n*(n+1)*2^(n-2).
 * [A001789](http://oeis.org/A001789) ([program](001/A001789.asm)): a(n) = binomial(n,3)*2^(n-3).
@@ -358,6 +359,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001971](http://oeis.org/A001971) ([program](001/A001971.asm)): Nearest integer to n^2/8.
 * [A001972](http://oeis.org/A001972) ([program](001/A001972.asm)): Expansion of 1/((1-x)^2*(1-x^4)) = 1/( (1+x)*(1+x^2)*(1-x)^3 ).
 * [A001973](http://oeis.org/A001973) ([program](001/A001973.asm)): Expansion of (1+x^3)/((1-x)*(1-x^2)^2*(1-x^3)).
+* [A001994](http://oeis.org/A001994) ([program](001/A001994.asm)): Expansion of 1/((1-x^2)*(1-x^4)^2*(1-x^6)*(1-x^8)*(1-x^10)) (even powers only).
 * [A001998](http://oeis.org/A001998) ([program](001/A001998.asm)): Bending a piece of wire of length n+1; walks of length n+1 on a tetrahedron; also non-branched catafusenes with n+2 condensed hexagons.
 * [A002001](http://oeis.org/A002001) ([program](002/A002001.asm)): a(n) = 3*4^(n-1), n>0; a(0)=1.
 * [A002004](http://oeis.org/A002004) ([program](002/A002004.asm)): Davenport-Schinzel numbers of degree 4 on n symbols.
@@ -3955,6 +3957,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A029039](http://oeis.org/A029039) ([program](029/A029039.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^6)).
 * [A029040](http://oeis.org/A029040) ([program](029/A029040.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^8)).
 * [A029041](http://oeis.org/A029041) ([program](029/A029041.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^9)).
+* [A029042](http://oeis.org/A029042) ([program](029/A029042.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^10)).
 * [A029043](http://oeis.org/A029043) ([program](029/A029043.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^11)).
 * [A029044](http://oeis.org/A029044) ([program](029/A029044.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^12)).
 * [A029045](http://oeis.org/A029045) ([program](029/A029045.asm)): Expansion of 1/((1-x)(1-x^3)(1-x^6)(1-x^7)).
@@ -3967,6 +3970,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A029064](http://oeis.org/A029064) ([program](029/A029064.asm)): Expansion of 1/((1-x)*(1-x^4)*(1-x^5)*(1-x^7)).
 * [A029065](http://oeis.org/A029065) ([program](029/A029065.asm)): Expansion of 1/((1-x)*(1-x^4)*(1-x^5)*(1-x^8)).
 * [A029066](http://oeis.org/A029066) ([program](029/A029066.asm)): Expansion of 1/((1-x)*(1-x^4)*(1-x^5)*(1-x^9)).
+* [A029067](http://oeis.org/A029067) ([program](029/A029067.asm)): Expansion of 1/((1-x)*(1-x^4)*(1-x^5)*(1-x^10)).
 * [A029068](http://oeis.org/A029068) ([program](029/A029068.asm)): Expansion of 1/((1-x)*(1-x^4)*(1-x^5)*(1-x^11)).
 * [A029069](http://oeis.org/A029069) ([program](029/A029069.asm)): Expansion of 1/((1-x)*(1-x^4)*(1-x^5)*(1-x^12)).
 * [A029070](http://oeis.org/A029070) ([program](029/A029070.asm)): Expansion of 1/((1-x)*(1-x^4)*(1-x^6)*(1-x^7)).

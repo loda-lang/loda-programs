@@ -1311,6 +1311,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A325958](http://oeis.org/A325958) ([program](325/A325958.asm)): Sum of corners of a 2n+1 X 2n+1 square spiral.
 * [A325964](http://oeis.org/A325964) ([program](325/A325964.asm)): a(n) = 1 if n and sigma(n) are relatively prime, 0 otherwise, where sigma(n) = sum of divisors of n, A000203; Characteristic function of A014567.
 * [A326041](http://oeis.org/A326041) ([program](326/A326041.asm)): a(n) = sigma(A064989(n)).
+* [A326050](http://oeis.org/A326050) ([program](326/A326050.asm)): a(n) = A082052(n) - n, where A082052 is the sum of divisors of n that are not of the form 4k+1.
 * [A326055](http://oeis.org/A326055) ([program](326/A326055.asm)): a(n) = n - {the largest square that divides n}.
 * [A326065](http://oeis.org/A326065) ([program](326/A326065.asm)): Sum of divisors of the largest proper divisor of n: a(n) = sigma(A032742(n)).
 * [A326122](http://oeis.org/A326122) ([program](326/A326122.asm)): a(n) = 10 * sigma(n).
@@ -1602,6 +1603,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330983](http://oeis.org/A330983) ([program](330/A330983.asm)): Alternatively add and multiply pairs of the nonnegative integers.
 * [A330987](http://oeis.org/A330987) ([program](330/A330987.asm)): Alternatively add and half-multiply pairs of the nonnegative integers.
 * [A331044](http://oeis.org/A331044) ([program](331/A331044.asm)): a(n) is the greatest prime number of the form floor(n/10^k) for some k >= 0, or 0 if no such prime number exists.
+* [A331112](http://oeis.org/A331112) ([program](331/A331112.asm)): Sum of the digits of the n-th prime number in balanced ternary.
 * [A331134](http://oeis.org/A331134) ([program](331/A331134.asm)): a(n) = Sum_{primes p <= n} r_2(p)/4, where r_2(n) = A004018(n).
 * [A331162](http://oeis.org/A331162) ([program](331/A331162.asm)): a(n) is the number of digits in the concatenation of a(0) to a(n-1) that are equal to the corresponding digit in the concatenation of all integers >= 0, with a(0) = 0.
 * [A331176](http://oeis.org/A331176) ([program](331/A331176.asm)): a(n) = n - n/gcd(n, phi(n)), where phi is Euler totient function.
@@ -1675,6 +1677,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A333206](http://oeis.org/A333206) ([program](333/A333206.asm)): a(n) is the least decimal digit of n^3.
 * [A333251](http://oeis.org/A333251) ([program](333/A333251.asm)): Tropical version of Somos-5 sequence A006721.
 * [A333297](http://oeis.org/A333297) ([program](333/A333297.asm)): a(n) = Sum_{i=1..n, j=1..n, gcd(i,j)=1} i.
+* [A333317](http://oeis.org/A333317) ([program](333/A333317.asm)): Partial sums of A248577.
 * [A333319](http://oeis.org/A333319) ([program](333/A333319.asm)): a(n) is the number of subsets of {1..n} that contain exactly 3 odd and 1 even numbers.
 * [A333320](http://oeis.org/A333320) ([program](333/A333320.asm)): a(n) is the number of subsets of {1..n} that contain exactly 4 odd and 1 even numbers.
 * [A333321](http://oeis.org/A333321) ([program](333/A333321.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 4 even numbers.
@@ -2102,6 +2105,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A343539](http://oeis.org/A343539) ([program](343/A343539.asm)): a(n) = (2*n+1)*Lucas(2*n+1).
 * [A343543](http://oeis.org/A343543) ([program](343/A343543.asm)): a(n) = n*Lucas(2*n).
 * [A343578](http://oeis.org/A343578) ([program](343/A343578.asm)): a(n) = 32*n^2 - 40*n + 10.
+* [A343608](http://oeis.org/A343608) ([program](343/A343608.asm)): a(n) = [n/5]*[n/5 - 1]*(3n - 10[n/5 + 1])/6, where [.] = floor: upper bound for minimum number of monochromatic triangles in a 3-edge-colored complete graph K_n.
 * [A343609](http://oeis.org/A343609) ([program](343/A343609.asm)): a(n) = floor(n/9).
 * [A343638](http://oeis.org/A343638) ([program](343/A343638.asm)): a(n) = (Sum of decimal digits of 3*n) / 3.
 * [A343639](http://oeis.org/A343639) ([program](343/A343639.asm)): a(n) = (Sum of digits of 9*n) / 9.
@@ -2128,6 +2132,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344372](http://oeis.org/A344372) ([program](344/A344372.asm)): a(n) = Sum_{k=1..2n} (-1)^k gcd(k,2n).
 * [A344389](http://oeis.org/A344389) ([program](344/A344389.asm)): a(n) is the number of nonnegative numbers < 10^n with all digits distinct.
 * [A344399](http://oeis.org/A344399) ([program](344/A344399.asm)): a(n) = 4^n*binomial(n - 1/2, -1/2)*(n^2 + 1).
+* [A344404](http://oeis.org/A344404) ([program](344/A344404.asm)): a(n) = Sum_{d|n} floor(n/d^2).
 * [A344478](http://oeis.org/A344478) ([program](344/A344478.asm)): Number of unitary prime divisors p of n such that n/p is squarefree.
 * [A344483](http://oeis.org/A344483) ([program](344/A344483.asm)): a(n) = n^2 + sigma(n) - n*d(n).
 * [A344510](http://oeis.org/A344510) ([program](344/A344510.asm)): a(n) = Sum_{k=1..n} k * gcd(k,n).
@@ -2170,3 +2175,4 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345741](http://oeis.org/A345741) ([program](345/A345741.asm)): a(n) = n + (n - 1) * d(n).
 * [A345888](http://oeis.org/A345888) ([program](345/A345888.asm)): a(n) = n + (n - 1) * pi(n).
 * [A345891](http://oeis.org/A345891) ([program](345/A345891.asm)): a(n) = n + (n - 1) * phi(n).
+* [A345892](http://oeis.org/A345892) ([program](345/A345892.asm)): a(n) = n + (n - 1) * (n - phi(n)).

@@ -3,7 +3,5 @@
 
 cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
 cal $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
-mov $1,3619864
-add $1,$0
+mov $1,$0
 div $1,2
-sub $1,1809932

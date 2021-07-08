@@ -3,15 +3,11 @@
 
 lpb $0
   sub $0,1
-  add $2,1
-  trn $0,$2
-  trn $1,1
-  add $3,3
-  mov $4,$1
-  mov $1,$3
-  sub $1,1
-  add $1,$4
-  mov $3,$4
+  add $1,1
+  trn $0,$1
 lpe
-trn $1,1
-add $1,1
+add $0,$1
+add $0,1
+cal $0,187107 ; Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
+mov $1,$0
+sub $1,7

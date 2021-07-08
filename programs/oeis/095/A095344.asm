@@ -7,6 +7,5 @@ lpb $0
   cal $2,52923 ; Expansion of (1-x)/(1 - x - 4*x^2).
   add $1,$2
 lpe
-div $1,4
-mul $1,8
+mul $1,2
 add $1,1

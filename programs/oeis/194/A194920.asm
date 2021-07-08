@@ -4,8 +4,6 @@
 add $0,1
 mov $1,$0
 cal $0,49472 ; a(n) = floor(n/sqrt(2)).
-mov $2,1
-lpb $2
-  sub $1,$0
-  sub $2,1
-lpe
+add $1,51884
+sub $1,$0
+sub $1,51884

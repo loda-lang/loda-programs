@@ -1739,6 +1739,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229762](http://oeis.org/A229762) ([program](229/A229762.asm)): a(n) = (n XOR floor(n/2)) AND floor(n/2), where AND and XOR are bitwise logical operators.
 * [A229763](http://oeis.org/A229763) ([program](229/A229763.asm)): a(n) = (2*n) XOR n AND n, where AND and XOR are bitwise logical operators.
 * [A229764](http://oeis.org/A229764) ([program](229/A229764.asm)): Nim sequence of MARK: the game on n counters in which the legal moves are to remove 1 counter or to halve the number of counters and round down.
+* [A229785](http://oeis.org/A229785) ([program](229/A229785.asm)): Partial sums of A157129.
 * [A229786](http://oeis.org/A229786) ([program](229/A229786.asm)): Primes modulo 23.
 * [A229787](http://oeis.org/A229787) ([program](229/A229787.asm)): Primes modulo 24.
 * [A229788](http://oeis.org/A229788) ([program](229/A229788.asm)): 6*2^n - n^2 - 5*n - 6.

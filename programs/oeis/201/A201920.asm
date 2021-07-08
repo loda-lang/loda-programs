@@ -3,6 +3,5 @@
 
 add $0,3
 cal $0,126605 ; Final three digits of 2^n.
-mul $0,-3
-sub $1,$0
-div $1,24
+mov $1,$0
+div $1,8
