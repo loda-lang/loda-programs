@@ -3,8 +3,7 @@
 
 add $0,1
 cal $0,6005 ; The odd prime numbers together with 1.
-mov $1,$0
-pow $1,2
-add $0,$1
-mov $1,$0
+add $1,$0
+pow $0,2
+add $1,$0
 div $1,2

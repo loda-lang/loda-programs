@@ -331,6 +331,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A102392](http://oeis.org/A102392) ([program](102/A102392.asm)): Odious numbers in odious places.
 * [A102393](http://oeis.org/A102393) ([program](102/A102393.asm)): A wicked evil sequence.
 * [A102394](http://oeis.org/A102394) ([program](102/A102394.asm)): A wicked odious sequence.
+* [A102395](http://oeis.org/A102395) ([program](102/A102395.asm)): A mod 2 related Jacobsthal sequence.
 * [A102396](http://oeis.org/A102396) ([program](102/A102396.asm)): A mod 2 related Jacobsthal sequence.
 * [A102428](http://oeis.org/A102428) ([program](102/A102428.asm)): Central column of triangle A102427.
 * [A102438](http://oeis.org/A102438) ([program](102/A102438.asm)): a(n) = 100*n + 44.
@@ -2394,7 +2395,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A123866](http://oeis.org/A123866) ([program](123/A123866.asm)): a(n) = n^6 - 1.
 * [A123867](http://oeis.org/A123867) ([program](123/A123867.asm)): a(n) = n^10 - 1.
 * [A123871](http://oeis.org/A123871) ([program](123/A123871.asm)): Expansion of g.f.: (1+x+x^2)/(1-4*x-4*x^2).
-* [A123884](http://oeis.org/A123884) ([program](123/A123884.asm)): Expansion of phi(x) * phi(-x^6) / chi(-x^2) in powers of x where phi(), chi() are Ramanujan theta functions.
 * [A123919](http://oeis.org/A123919) ([program](123/A123919.asm)): Number of numbers congruent to 2 or 4 mod 6 and <= n.
 * [A123920](http://oeis.org/A123920) ([program](123/A123920.asm)): Number of numbers congruent to 2 or 4 mod 6 between n and 2n inclusive.
 * [A123932](http://oeis.org/A123932) ([program](123/A123932.asm)): a(0) = 1, a(n) = 4 for n > 0.

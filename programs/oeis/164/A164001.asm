@@ -5,9 +5,8 @@ mov $1,$0
 add $0,3
 cal $0,134816 ; Padovan's spiral numbers.
 sub $0,1
-mov $2,$0
-lpb $2
+lpb $0
   mov $1,$0
-  mov $2,5
+  mov $0,5
 lpe
 add $1,1

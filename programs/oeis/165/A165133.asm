@@ -3,9 +3,8 @@
 
 mov $2,$0
 mov $0,2
-mov $3,$2
-add $3,4
-pow $0,$3
+add $2,4
+pow $0,$2
 add $0,8
 bin $0,2
 mov $1,$0

@@ -4,6 +4,5 @@
 add $0,1
 cal $0,298360 ; Numbers congruent to {3, 7, 13, 27} mod 30.
 mov $1,$0
-sub $1,7
 div $1,2
-add $1,1
+sub $1,2

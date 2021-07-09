@@ -1,4 +1,4 @@
-; A158117: Triangle sequence of general q-combinations: m=3; t(n,m)=t[n_, m_] = If[m == 0, n!, Product[((m + 1)*((m + 1) + 1)/2)^k, {k, 1, n}]]; b(n,k,m)=If[n == 0, 1, t[n, m]/(t[k, m]*t[n - k, m])].
+; A158117: Triangle T(n, k) = 10^(k*(n-k)), read by rows.
 ; 1,1,1,1,10,1,1,100,100,1,1,1000,10000,1000,1,1,10000,1000000,1000000,10000,1,1,100000,100000000,1000000000,100000000,100000,1,1,1000000,10000000000,1000000000000,1000000000000,10000000000,1000000,1,1
 
 cal $0,4247 ; Multiplication table read by antidiagonals: T(i,j) = ij (i>=0, j>=0).

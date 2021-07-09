@@ -3,9 +3,8 @@
 
 cal $0,40 ; The prime numbers.
 add $1,$0
+add $1,2
 mul $1,$0
-add $0,3
+add $1,$0
 mul $1,$0
-sub $1,20
 div $1,2
-add $1,10

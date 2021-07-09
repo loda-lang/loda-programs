@@ -4,6 +4,5 @@
 add $0,1
 cal $0,52945 ; Number of compositions of n when each odd part can be of two kinds.
 mov $1,$0
-div $1,3
 mul $1,2
-add $1,1
+div $1,3

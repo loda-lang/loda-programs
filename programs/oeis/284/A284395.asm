@@ -3,8 +3,7 @@
 
 mov $1,$0
 cal $0,26351 ; Floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
-add $1,1
 add $1,$0
-sub $1,2
+sub $1,1
 mul $1,3
 add $1,2

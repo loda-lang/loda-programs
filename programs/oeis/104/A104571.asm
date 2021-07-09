@@ -5,6 +5,5 @@ cal $0,212012 ; Triangle read by rows in which row n lists the number of states 
 mul $0,3
 div $0,4
 mov $1,$0
-div $0,3
-add $0,$1
-mov $1,$0
+mul $1,4
+div $1,3

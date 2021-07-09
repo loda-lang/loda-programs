@@ -1164,6 +1164,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A322171](http://oeis.org/A322171) ([program](322/A322171.asm)): Expansion of x*(3 + 5*x + x^2 + x^3)/((1 - x)^2*(1 + x^2)).
 * [A322250](http://oeis.org/A322250) ([program](322/A322250.asm)): Take binary expansion of 2n-1 and delete the trailing block of 1's, except if the number is 11...1, leave a single 1.
 * [A322307](http://oeis.org/A322307) ([program](322/A322307.asm)): Number of multisets in the swell of the n-th multiset multisystem.
+* [A322327](http://oeis.org/A322327) ([program](322/A322327.asm)): a(n) = A005361(n) * A034444(n) for n > 0.
 * [A322361](http://oeis.org/A322361) ([program](322/A322361.asm)): a(n) = gcd(n, A003961(n)), where A003961 is completely multiplicative with a(prime(k)) = prime(k+1).
 * [A322382](http://oeis.org/A322382) ([program](322/A322382.asm)): a(n) = p*a(n/p) + 1, where p is the smallest prime divisor of n; a(1)=0.
 * [A322417](http://oeis.org/A322417) ([program](322/A322417.asm)): a(n) - 2*a(n-1) = period 2: repeat [3, 0] for n > 0, a(0)=5, a(1)=13.
@@ -1250,6 +1251,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324198](http://oeis.org/A324198) ([program](324/A324198.asm)): a(n) = gcd(n, A276086(n)).
 * [A324275](http://oeis.org/A324275) ([program](324/A324275.asm)): Numbers k for which A324274(k) is 0, i.e., starting squares in A324274 that yield a path of infinite length.
 * [A324377](http://oeis.org/A324377) ([program](324/A324377.asm)): a(0) = 0; for n > 0, a(n) = A000265(A005187(n)).
+* [A324378](http://oeis.org/A324378) ([program](324/A324378.asm)): a(n) = A000265(1+A005187(n)).
 * [A324379](http://oeis.org/A324379) ([program](324/A324379.asm)): a(n) = A007814(A005187(n)).
 * [A324400](http://oeis.org/A324400) ([program](324/A324400.asm)): Lexicographically earliest sequence such that a(i) = a(j) => f(i) = f(j) for all i, j >= 1, where f(n) = -1 if n = 2^k and k > 0, and f(n) = n for all other numbers.
 * [A324466](http://oeis.org/A324466) ([program](324/A324466.asm)): Exponent of highest power of 2 that divides multinomial(3*n;n,n,n).
@@ -1268,6 +1270,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324903](http://oeis.org/A324903) ([program](324/A324903.asm)): a(n) = 1 if A007814(sigma(n)) > A007814(n), 0 otherwise. Here A007814(n) gives the 2-adic valuation of n.
 * [A324904](http://oeis.org/A324904) ([program](324/A324904.asm)): The 2-adic valuation of A318466(n), where A318466(n) = 2*n OR sigma(n).
 * [A324908](http://oeis.org/A324908) ([program](324/A324908.asm)): a(n) = 1 if n is an odd number which is not a square, 0 otherwise.
+* [A324912](http://oeis.org/A324912) ([program](324/A324912.asm)): Binary weight of A324911(n).
 * [A324913](http://oeis.org/A324913) ([program](324/A324913.asm)): a(n) = Sum_{k=1..n} 2^k * phi(k), where phi is the Euler totient function A000010.
 * [A324914](http://oeis.org/A324914) ([program](324/A324914.asm)): a(n) = Sum_{k=1..n} 2^k * tau(k), where tau(k) = A000005(k).
 * [A324915](http://oeis.org/A324915) ([program](324/A324915.asm)): a(n) = Sum_{k=1..n} 2^k * sigma(k), where sigma(k) = A000203(k).
@@ -2167,6 +2170,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345110](http://oeis.org/A345110) ([program](345/A345110.asm)): a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
 * [A345111](http://oeis.org/A345111) ([program](345/A345111.asm)): a(n) = n + A345110(n).
 * [A345211](http://oeis.org/A345211) ([program](345/A345211.asm)): Numbers with the same number of odd / even, refactorable divisors.
+* [A345222](http://oeis.org/A345222) ([program](345/A345222.asm)): Number of divisors of n with a prime number of divisors.
 * [A345280](http://oeis.org/A345280) ([program](345/A345280.asm)): a(n) = Sum_{p|n} nextprime(p), where nextprime(n) is the smallest prime > n.
 * [A345493](http://oeis.org/A345493) ([program](345/A345493.asm)): Numbers that are the sum of eight squares in six or more ways.
 * [A345502](http://oeis.org/A345502) ([program](345/A345502.asm)): Numbers that are the sum of nine squares in five or more ways.

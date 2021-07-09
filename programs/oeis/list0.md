@@ -1490,6 +1490,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A008824](http://oeis.org/A008824) ([program](008/A008824.asm)): Expansion of (1+2*x^4+x^7)/((1-x)^2*(1-x^7)).
 * [A008825](http://oeis.org/A008825) ([program](008/A008825.asm)): Expansion of (1+2*x^5+x^9)/((1-x)^2*(1-x^9)).
 * [A008833](http://oeis.org/A008833) ([program](008/A008833.asm)): Largest square dividing n.
+* [A008835](http://oeis.org/A008835) ([program](008/A008835.asm)): Largest 4th power dividing n.
 * [A008836](http://oeis.org/A008836) ([program](008/A008836.asm)): Liouville's function lambda(n) = (-1)^k, where k is number of primes dividing n (counted with multiplicity).
 * [A008837](http://oeis.org/A008837) ([program](008/A008837.asm)): a(n) = p*(p-1)/2 for p = prime(n).
 * [A008838](http://oeis.org/A008838) ([program](008/A008838.asm)): a(n) = floor(n/8)*ceiling(n/8).
@@ -2572,6 +2573,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A019427](http://oeis.org/A019427) ([program](019/A019427.asm)): Continued fraction for tan(1/4).
 * [A019428](http://oeis.org/A019428) ([program](019/A019428.asm)): Continued fraction for tan(1/5).
 * [A019429](http://oeis.org/A019429) ([program](019/A019429.asm)): Continued fraction for tan(1/6).
+* [A019430](http://oeis.org/A019430) ([program](019/A019430.asm)): Continued fraction for tan(1/7).
 * [A019432](http://oeis.org/A019432) ([program](019/A019432.asm)): Continued fraction for tan(1/9).
 * [A019442](http://oeis.org/A019442) ([program](019/A019442.asm)): Numbers n such that a Hadamard matrix of order n exists.
 * [A019444](http://oeis.org/A019444) ([program](019/A019444.asm)): a_1, a_2, ..., is a permutation of the positive integers such that the average of each initial segment is an integer, using the greedy algorithm to define a_n.
@@ -2784,6 +2786,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021679](http://oeis.org/A021679) ([program](021/A021679.asm)): Decimal expansion of 1/675.
 * [A021697](http://oeis.org/A021697) ([program](021/A021697.asm)): Decimal expansion of 1/693.
 * [A021706](http://oeis.org/A021706) ([program](021/A021706.asm)): Decimal expansion of 1/702.
+* [A021719](http://oeis.org/A021719) ([program](021/A021719.asm)): Decimal expansion of 1/715.
 * [A021721](http://oeis.org/A021721) ([program](021/A021721.asm)): Decimal expansion of 1/717.
 * [A021742](http://oeis.org/A021742) ([program](021/A021742.asm)): Decimal expansion of 1/738.
 * [A021796](http://oeis.org/A021796) ([program](021/A021796.asm)): Decimal expansion of 1/792.
@@ -5287,6 +5290,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040702](http://oeis.org/A040702) ([program](040/A040702.asm)): Continued fraction for sqrt(730).
 * [A040703](http://oeis.org/A040703) ([program](040/A040703.asm)): Continued fraction for sqrt(731).
 * [A040704](http://oeis.org/A040704) ([program](040/A040704.asm)): Continued fraction for sqrt(732).
+* [A040705](http://oeis.org/A040705) ([program](040/A040705.asm)): Continued fraction for sqrt(733).
 * [A040707](http://oeis.org/A040707) ([program](040/A040707.asm)): Continued fraction for sqrt(735).
 * [A040710](http://oeis.org/A040710) ([program](040/A040710.asm)): Continued fraction for sqrt(738).
 * [A040719](http://oeis.org/A040719) ([program](040/A040719.asm)): Continued fraction for sqrt(747).
@@ -5344,6 +5348,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A040929](http://oeis.org/A040929) ([program](040/A040929.asm)): Continued fraction for sqrt(960).
 * [A040930](http://oeis.org/A040930) ([program](040/A040930.asm)): Continued fraction for sqrt(962).
 * [A040931](http://oeis.org/A040931) ([program](040/A040931.asm)): Continued fraction for sqrt(963).
+* [A040933](http://oeis.org/A040933) ([program](040/A040933.asm)): Continued fraction for sqrt(965).
 * [A040954](http://oeis.org/A040954) ([program](040/A040954.asm)): Continued fraction for sqrt(986).
 * [A040955](http://oeis.org/A040955) ([program](040/A040955.asm)): Continued fraction for sqrt(987).
 * [A040958](http://oeis.org/A040958) ([program](040/A040958.asm)): Continued fraction for sqrt(990).

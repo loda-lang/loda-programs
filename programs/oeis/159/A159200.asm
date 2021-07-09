@@ -1,8 +1,8 @@
 ; A159200: Decimal expansion of Sum_{k >= 1} (1/(10^(4*k + 2) - 1)) - (1/(10^(2*k + 1) - 1)), negated.
 ; 0,0,1,0,1,0,1,0,2,0,1,0,1,0,3,0,1,0,1,0,3,0,1,0,2,0,3,0,1,0,1,0,3,0,3,0,1,0,3,0,1,0,1,0,5,0,1,0,2,0,3,0,1,0,3,0,3,0,1,0,1,0,5,0,3,0,1,0,3,0,1,0,1,0,5,0,3,0,1,0,4,0,1,0,3,0,3,0,1,0,3,0,3,0,3,0,1,0,5,0
 
-cal $0,38608 ; a(n) = n*(-1)^n.
+add $0,1
+dif $0,-2
 max $0,0
-cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+cal $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
 mov $1,$0
-sub $1,1

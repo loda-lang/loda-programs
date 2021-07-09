@@ -4,7 +4,6 @@
 add $0,2
 cal $0,47608 ; Numbers that are congruent to {4, 5} mod 8.
 bin $0,2
+sub $0,10
 mov $1,$0
-sub $1,66
 div $1,4
-add $1,14
