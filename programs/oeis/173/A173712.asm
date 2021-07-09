@@ -5,7 +5,7 @@ add $0,1
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,136853 ; Numbers n such that n and the square of n use only the digits 0, 1, 3 and 9.
+  cal $2,136853 ; Numbers k such that k and k^2 use only the digits 0, 1, 3 and 9.
   add $1,$2
 lpe
 div $1,2

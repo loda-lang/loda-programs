@@ -3499,6 +3499,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A181773](http://oeis.org/A181773) ([program](181/A181773.asm)): Molecular topological indices of the cocktail party graphs.
 * [A181797](http://oeis.org/A181797) ([program](181/A181797.asm)): a(n) = n multiplied by the sum of its squarefree divisors (A048250(n)).
 * [A181829](http://oeis.org/A181829) ([program](181/A181829.asm)): a(n) = 4*A060819(n-2)*A060819(n+2).
+* [A181888](http://oeis.org/A181888) ([program](181/A181888.asm)): Second column of triangle in A182971.
 * [A181889](http://oeis.org/A181889) ([program](181/A181889.asm)): Bisection of A181888.
 * [A181890](http://oeis.org/A181890) ([program](181/A181890.asm)): a(n) = 8*n^2 + 14*n + 5.
 * [A181900](http://oeis.org/A181900) ([program](181/A181900.asm)): a(n) = A022998(n) * n.

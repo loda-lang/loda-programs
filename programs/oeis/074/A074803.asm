@@ -3,7 +3,8 @@
 
 div $0,2
 add $0,1
+dif $0,9
 cal $0,284905 ; Fixed point of the morphism 0 -> 01, 1 -> 1001.
+mul $0,2
 mov $1,$0
-mul $1,2
 add $1,2

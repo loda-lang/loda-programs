@@ -4,7 +4,5 @@
 cal $0,40304 ; Continued fraction for sqrt(322).
 dif $0,4
 mov $1,$0
-add $1,4
+mul $1,6
 div $1,5
-add $1,$0
-sub $1,1

@@ -4,7 +4,4 @@
 add $0,2
 cal $0,3501 ; a(n) = 5*a(n-1) - a(n-2), with a(0) = 2, a(1) = 5.
 add $1,$0
-div $1,7
-sub $1,3
-div $1,3
-add $1,1
+div $1,21

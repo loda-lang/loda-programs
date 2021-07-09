@@ -1,11 +1,12 @@
 ; A101865: Third row of A101858.
 ; 7,18,25,36,47,54,65,72,83,94,101,112,123,130,141,148,159,170,177,188,195,206,217,224,235,246,253,264,271,282,293,300,311,322,329,340,347,358,369,376,387,394,405,416,423,434,445,452,463,470,481,492,499,510,517,528,539
 
-mov $1,$0
 add $0,1
-cal $0,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
+mov $1,$0
+cal $0,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
+add $0,$1
 mov $2,$0
-add $2,2
+add $3,$0
+add $2,$3
 add $1,$2
-add $1,$0
-sub $1,3
+sub $1,2

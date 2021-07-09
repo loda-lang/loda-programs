@@ -5,6 +5,5 @@ mov $1,$0
 cal $0,20701 ; Pisot sequences E(3,5), P(3,5).
 sub $0,$1
 mov $1,$0
-sub $1,3
-mul $1,2
-add $1,1
+add $1,$0
+sub $1,5

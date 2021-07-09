@@ -5,6 +5,5 @@ mov $1,$0
 cal $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
 lpb $0
   add $1,2
-  sub $0,$1
-  trn $0,1
+  trn $0,$1
 lpe

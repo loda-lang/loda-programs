@@ -5,6 +5,5 @@ add $0,6
 cal $0,307182 ; Crossing number of the n-crown graph (conjectured).
 mov $1,$0
 pow $1,2
-sub $1,5184
-div $1,16
-add $1,324
+mul $1,26
+div $1,416

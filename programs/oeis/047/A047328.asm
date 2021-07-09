@@ -3,8 +3,7 @@
 
 add $0,6
 cal $0,47269 ; Numbers that are congruent to {0, 1, 2, 5} mod 6.
-mov $1,$0
-add $2,$0
-div $2,6
-add $1,$2
+add $1,$0
+div $1,6
+add $1,$0
 sub $1,9
