@@ -3,9 +3,8 @@
 
 cal $0,336551 ; a(n) = A003557(n) - 1.
 cal $0,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
-add $0,2
-mul $0,4
-sub $0,9
-mov $1,9
-bin $1,$0
-div $1,48
+mov $4,$0
+mov $6,$0
+pow $6,2
+clr $2,$6
+mov $1,$4

@@ -5,7 +5,6 @@ cal $0,165754 ; a(n) = nimsum(n+(n+1)+(n+2)).
 cal $0,152113 ; A001333 with terms repeated.
 add $0,1
 mul $0,2
+sub $0,1
 mov $1,$0
-sub $1,4
 div $1,2
-add $1,1

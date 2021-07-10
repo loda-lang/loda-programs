@@ -1,7 +1,10 @@
 ; A091311: Partial sums of 3^A007814(n).
 ; 0,1,4,5,14,15,18,19,46,47,50,51,60,61,64,65,146,147,150,151,160,161,164,165,192,193,196,197,206,207,210,211,454,455,458,459,468,469,472,473,500,501,504,505,514,515,518,519,600,601,604,605,614,615,618,619
 
+mov $2,$0
+div $0,2
+cal $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+add $0,$2
 mov $1,$0
-cal $0,5823 ; Numbers whose ternary expansion contains no 1's.
-sub $0,$1
-mov $1,$0
+mul $1,2
+sub $1,$2

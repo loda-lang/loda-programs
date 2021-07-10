@@ -1,7 +1,8 @@
 ; A040297: Continued fraction for sqrt(315).
 ; 17,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1
 
-cal $0,10197 ; Continued fraction for sqrt(138).
-cal $0,47423 ; Numbers that are congruent to {2, 3, 4, 5, 6} mod 8.
+cal $0,40304 ; Continued fraction for sqrt(322).
+lpb $0
+  dif $0,8
+lpe
 mov $1,$0
-sub $1,2
