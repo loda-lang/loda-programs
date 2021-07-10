@@ -1400,6 +1400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327998](http://oeis.org/A327998) ([program](327/A327998.asm)): a(n) = (n!/floor(n/2)!^2)^2.
 * [A327999](http://oeis.org/A327999) ([program](327/A327999.asm)): a(n) = Sum_{k=0..2n}(k!*(2n - k)!)/(floor(k/2)!*floor((2n - k)/2)!)^2.
 * [A328005](http://oeis.org/A328005) ([program](328/A328005.asm)): Number of distinct coefficients in functional composition of 1 + x + ... + x^(n-1) with itself.
+* [A328012](http://oeis.org/A328012) ([program](328/A328012.asm)): Numbers whose binary representations start and end with 1 and contain an even number of zeros between.
 * [A328034](http://oeis.org/A328034) ([program](328/A328034.asm)): a(n) = 3n minus the largest power of 2 not exceeding 3n.
 * [A328082](http://oeis.org/A328082) ([program](328/A328082.asm)): Triangle read by rows: columns are Fibonacci numbers F_{2i+1} shifted downwards.
 * [A328152](http://oeis.org/A328152) ([program](328/A328152.asm)): a(n) is the number of squares of side length greater than 1 having vertices at the points of an n X n grid of dots.
@@ -1520,7 +1521,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329923](http://oeis.org/A329923) ([program](329/A329923.asm)): Beatty sequence for (2+sqrt(34))/5.
 * [A329924](http://oeis.org/A329924) ([program](329/A329924.asm)): Beatty sequence for (8+sqrt(34))/5.
 * [A329925](http://oeis.org/A329925) ([program](329/A329925.asm)): Beatty sequence for (1+sqrt(41))/5.
-* [A329926](http://oeis.org/A329926) ([program](329/A329926.asm)): Beatty sequence for (8+sqrt(41))/5.
+* [A329926](http://oeis.org/A329926) ([program](329/A329926.asm)): Beatty sequence for (9+sqrt(41))/5.
 * [A329938](http://oeis.org/A329938) ([program](329/A329938.asm)): Beatty sequence for sinh x, where csch x + sech x = 1 .
 * [A329939](http://oeis.org/A329939) ([program](329/A329939.asm)): Beatty sequence for cosh x,  where csch x + sech x = 1 .
 * [A329952](http://oeis.org/A329952) ([program](329/A329952.asm)): Numbers k such that binomial(k,3) is divisible by 8.
@@ -2151,6 +2152,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344564](http://oeis.org/A344564) ([program](344/A344564.asm)): a(n) = [x^n] -3/(2*x - 1)^5.
 * [A344587](http://oeis.org/A344587) ([program](344/A344587.asm)): a(n) = 2*A003961(n) - sigma(A003961(n)).
 * [A344598](http://oeis.org/A344598) ([program](344/A344598.asm)): a(n) = Sum_{k=1..n} phi(k) * (floor(n/k)^2 - floor((n-1)/k)^2).
+* [A344617](http://oeis.org/A344617) ([program](344/A344617.asm)): Sign of the alternating sum of the prime indices of n.
 * [A344622](http://oeis.org/A344622) ([program](344/A344622.asm)): a(n) = n*(n+1)/2 - sigma(n) + d(n).
 * [A344695](http://oeis.org/A344695) ([program](344/A344695.asm)): a(n) = gcd(sigma(n), psi(n)), where sigma is the sum of divisors function, A000203, and psi is the Dedekind psi function, A001615.
 * [A344747](http://oeis.org/A344747) ([program](344/A344747.asm)): a(n) = (1/6)*(3^n + (-2)^n - 1).

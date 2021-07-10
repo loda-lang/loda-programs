@@ -3,6 +3,10 @@
 
 cal $0,10217 ; Continued fraction for sqrt(173).
 cal $0,60464 ; Numbers that are not congruent to 4 or 5 mod 9.
-cal $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 mov $1,$0
-sub $1,5
+lpb $0
+  mov $2,$0
+  sub $0,1
+  cal $2,107078 ; Whether n has non-unitary prime divisors.
+  add $1,$2
+lpe

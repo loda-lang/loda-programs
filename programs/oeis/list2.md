@@ -1874,14 +1874,24 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118221](http://oeis.org/A118221) ([program](118/A118221.asm)): Start with 1 and repeatedly reverse the digits and add 73 to get the next term.
 * [A118225](http://oeis.org/A118225) ([program](118/A118225.asm)): Start with 1 and repeatedly reverse the digits and add 74 to get the next term.
 * [A118226](http://oeis.org/A118226) ([program](118/A118226.asm)): Start with 1 and repeatedly reverse the digits and add 76 to get the next term.
+* [A118237](http://oeis.org/A118237) ([program](118/A118237.asm)): Start with 14 and repeatedly reverse the digits and add 1 to get the next term.
+* [A118238](http://oeis.org/A118238) ([program](118/A118238.asm)): Start with 15 and repeatedly reverse the digits and add 1 to get the next term.
 * [A118239](http://oeis.org/A118239) ([program](118/A118239.asm)): Engel expansion of cosh(1).
+* [A118254](http://oeis.org/A118254) ([program](118/A118254.asm)): Start with 16 and repeatedly reverse the digits and add 1 to get the next term.
 * [A118263](http://oeis.org/A118263) ([program](118/A118263.asm)): a(3n) = 2^n, a(3n+1) = 3^n, a(3n+2) = 4^n.
 * [A118264](http://oeis.org/A118264) ([program](118/A118264.asm)): Coefficient of q^n in (1-q)^3/(1-3q); dimensions of the enveloping algebra of the derived free Lie algebra on 3 letters.
 * [A118265](http://oeis.org/A118265) ([program](118/A118265.asm)): Coefficient of q^n in (1-q)^4/(1-4q); dimensions of the enveloping algebra of the derived free Lie algebra on 4 letters.
 * [A118266](http://oeis.org/A118266) ([program](118/A118266.asm)): Coefficient of q^n in (1-q)^5/(1-5q); dimensions of the enveloping algebra of the derived free Lie algebra on 5 letters.
 * [A118277](http://oeis.org/A118277) ([program](118/A118277.asm)): Generalized 9-gonal (or enneagonal) numbers: m*(7*m - 5)/2 with m = 0, 1, -1, 2, -2, 3, -3, ...
 * [A118286](http://oeis.org/A118286) ([program](118/A118286.asm)): Numbers n such that n == 0 (mod 4) or n == 2 (mod 12).
+* [A118293](http://oeis.org/A118293) ([program](118/A118293.asm)): Start with 18 and repeatedly reverse the digits and add 1 to get the next term.
+* [A118294](http://oeis.org/A118294) ([program](118/A118294.asm)): Start with 19 and repeatedly reverse the digits and add 1 to get the next term.
 * [A118295](http://oeis.org/A118295) ([program](118/A118295.asm)): Start with 20 and repeatedly reverse the digits and add 1 to get the next term.
+* [A118296](http://oeis.org/A118296) ([program](118/A118296.asm)): Start with 21 and repeatedly reverse the digits and add 1 to get the next term.
+* [A118297](http://oeis.org/A118297) ([program](118/A118297.asm)): Start with 22 and repeatedly reverse the digits and add 1 to get the next term.
+* [A118298](http://oeis.org/A118298) ([program](118/A118298.asm)): Start with 23 and repeatedly reverse the digits and add 1 to get the next term.
+* [A118299](http://oeis.org/A118299) ([program](118/A118299.asm)): Start with 24 and repeatedly reverse the digits and add 1 to get the next term.
+* [A118304](http://oeis.org/A118304) ([program](118/A118304.asm)): Start with 25 and repeatedly reverse the digits and add 1 to get the next term.
 * [A118310](http://oeis.org/A118310) ([program](118/A118310.asm)): a(n) = gcd(n,m(n)), where m(n) is the n-th nonprime positive integer (1 or composite).
 * [A118312](http://oeis.org/A118312) ([program](118/A118312.asm)): Number of squares on infinite chessboard that a knight can reach in n moves from a fixed square.
 * [A118360](http://oeis.org/A118360) ([program](118/A118360.asm)): Start with 1; repeatedly reverse the digits when the number is written in binary and add 2 to get the next term.
@@ -1895,6 +1905,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118425](http://oeis.org/A118425) ([program](118/A118425.asm)): Number of binary sequences of length n containing exactly one subsequence 001.
 * [A118442](http://oeis.org/A118442) ([program](118/A118442.asm)): Column 0 of triangle A118441, which is the matrix log of triangle A118435.
 * [A118465](http://oeis.org/A118465) ([program](118/A118465.asm)): a(n) = 8*n^3 + n.
+* [A118512](http://oeis.org/A118512) ([program](118/A118512.asm)): Define sequence S_m by: initial term = m, reverse digits and add 1 to get next term. Entry shows S_11. This reaches a cycle of length 9 in 18 steps.
+* [A118513](http://oeis.org/A118513) ([program](118/A118513.asm)): Define sequence S_m by: initial term = m, reverse digits and add 1 to get next term. Entry shows S_13. This reaches a cycle of length 9 in 15 steps.
 * [A118517](http://oeis.org/A118517) ([program](118/A118517.asm)): Define sequence S_m by: initial term = m, reverse digits and add 3 to get next term. Entry shows S_1. This reaches a cycle of length 3 in 1 step.
 * [A118518](http://oeis.org/A118518) ([program](118/A118518.asm)): Define sequence S_m by: initial term = m, reverse digits and add 3 to get next term. Entry shows S_2. This reaches a cycle of length 6 in 3 steps.
 * [A118519](http://oeis.org/A118519) ([program](118/A118519.asm)): Define sequence S_m by: initial term = m, reverse digits and add 3 to get next term. Entry shows S_3. This reaches a cycle of length 6 in 3 steps.
@@ -1988,6 +2000,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A119587](http://oeis.org/A119587) ([program](119/A119587.asm)): 2^n + 1 - 2*Fibonacci(n+1).
 * [A119610](http://oeis.org/A119610) ([program](119/A119610.asm)): Number of cases in which the first player is killed in a Russian roulette game where 5 players use a gun with n chambers and the number of bullets can be from 1 to n. Players do not rotate the cylinder after the game starts.
 * [A119617](http://oeis.org/A119617) ([program](119/A119617.asm)): Integers of the form c(n)/b(n) where c(n+1)=c(n)+(n+1)^4 with c(0)=1 and b(n+1)=b(n)+(n+1)^2 with b(0)=1.
+* [A119625](http://oeis.org/A119625) ([program](119/A119625.asm)): Start with 17 and repeatedly reverse the digits and add 1 to get the next term.
 * [A119635](http://oeis.org/A119635) ([program](119/A119635.asm)): a(n) = n*(1 + n^2)*2^n.
 * [A119651](http://oeis.org/A119651) ([program](119/A119651.asm)): Number of different values of exactly n standard American coins (pennies, nickels, dimes and quarters).
 * [A119652](http://oeis.org/A119652) ([program](119/A119652.asm)): Number of different values of <= n standard American coins (pennies, nickels, dimes and quarters).
@@ -2127,6 +2140,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A120519](http://oeis.org/A120519) ([program](120/A120519.asm)): a(n) = min{j : A120508(j) = n}.
 * [A120520](http://oeis.org/A120520) ([program](120/A120520.asm)): a(n) = min{j : A120509(j) = n}.
 * [A120521](http://oeis.org/A120521) ([program](120/A120521.asm)): a(n) = min{j : A120510(j) = n}.
+* [A120523](http://oeis.org/A120523) ([program](120/A120523.asm)): First differences of successive meta-Fibonacci numbers A120501.
 * [A120525](http://oeis.org/A120525) ([program](120/A120525.asm)): First differences of successive generalized meta-Fibonacci numbers A120503.
 * [A120533](http://oeis.org/A120533) ([program](120/A120533.asm)): Primes having a prime number of digits.
 * [A120571](http://oeis.org/A120571) ([program](120/A120571.asm)): 2n^4+6n^2+4 = 2(n^2+1)(n^2+2).
@@ -4425,7 +4439,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A140805](http://oeis.org/A140805) ([program](140/A140805.asm)): Positive triangular sequence of coefficients inspired by the Belyi transform: x'->(m + n)^(n + m)*x^m*(1 - x)^n/(m^m*n^n): t(n,m)=Binomial[n, m]^Binomial[n, m].
 * [A140807](http://oeis.org/A140807) ([program](140/A140807.asm)): a(n) is the largest integer such that n^k is palindromic in binary for all nonnegative integers k that are <= a(n).
 * [A140811](http://oeis.org/A140811) ([program](140/A140811.asm)): a(n) = 6*n^2 - 1.
-* [A140822](http://oeis.org/A140822) ([program](140/A140822.asm)): Triangle t(n,m) = binomial(n,gcd(n,m)) read by rows, 0<=m<=n.
+* [A140822](http://oeis.org/A140822) ([program](140/A140822.asm)): Triangle T(n,m) = binomial(n,gcd(n,m)) read by rows, 0<=m<=n.
 * [A140823](http://oeis.org/A140823) ([program](140/A140823.asm)): Natural numbers which are not perfect fourth powers.
 * [A140833](http://oeis.org/A140833) ([program](140/A140833.asm)): Sum of Fibonacci numbers between F(-n)....F(n), inclusive.
 * [A140853](http://oeis.org/A140853) ([program](140/A140853.asm)): a(n) = prime(prime(n) - 1) - 1, where prime(n) is the n-th prime.

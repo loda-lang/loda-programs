@@ -8,7 +8,6 @@ cal $0,22086 ; Fibonacci sequence beginning 0, 3.
 mov $1,$0
 div $1,3
 lpb $1
-  div $1,15
-  add $1,4
+  mov $1,4
 lpe
 mod $1,2

@@ -2199,6 +2199,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A016061](http://oeis.org/A016061) ([program](016/A016061.asm)): a(n) = n*(n+1)*(4*n+5)/6.
 * [A016064](http://oeis.org/A016064) ([program](016/A016064.asm)): Smallest side lengths of almost-equilateral Heronian triangles (sides are consecutive positive integers, area is a nonnegative integer).
 * [A016081](http://oeis.org/A016081) ([program](016/A016081.asm)): Add 4, then reverse digits!.
+* [A016082](http://oeis.org/A016082) ([program](016/A016082.asm)): Add 4, then reverse the decimal digits.
 * [A016084](http://oeis.org/A016084) ([program](016/A016084.asm)): a(n+1) = a(n) + its digital root.
 * [A016116](http://oeis.org/A016116) ([program](016/A016116.asm)): a(n) = 2^floor(n/2).
 * [A016127](http://oeis.org/A016127) ([program](016/A016127.asm)): Expansion of 1/((1-2*x)*(1-5*x)).
@@ -4196,6 +4197,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032169](http://oeis.org/A032169) ([program](032/A032169.asm)): Number of aperiodic necklaces of n beads of 2 colors, 11 of them black.
 * [A032192](http://oeis.org/A032192) ([program](032/A032192.asm)): Number of necklaces with 7 black beads and n-7 white beads.
 * [A032196](http://oeis.org/A032196) ([program](032/A032196.asm)): Number of necklaces with 11 black beads and n-11 white beads.
+* [A032246](http://oeis.org/A032246) ([program](032/A032246.asm)): "DHK[ 5 ]" (bracelet, identity, unlabeled, 5 parts) transform of 1,1,1,1,...
 * [A032260](http://oeis.org/A032260) ([program](032/A032260.asm)): Number of n X n (0,1) matrices such that each row and each column is nondecreasing or nonincreasing.
 * [A032263](http://oeis.org/A032263) ([program](032/A032263.asm)): Number of ways to partition n labeled elements into 4 pie slices allowing the pie to be turned over; number of 2-element proper antichains of an n-element set.
 * [A032358](http://oeis.org/A032358) ([program](032/A032358.asm)): Number of iterations of phi(n) needed to reach 2.

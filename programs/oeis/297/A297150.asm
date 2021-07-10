@@ -3,11 +3,5 @@
 
 add $0,1
 cal $0,105399 ; Largest prime <= numbers of the form 6k+3 (duplicates removed).
-sub $0,5
-add $2,$0
-add $0,$2
-mov $1,$0
-sub $1,4
-div $1,4
-mul $1,10
-add $1,35
+add $1,$0
+mul $1,5

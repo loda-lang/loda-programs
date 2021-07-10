@@ -3,7 +3,5 @@
 
 cal $0,120533 ; Primes having a prime number of digits.
 pow $0,6
-add $1,$0
-sub $1,1771549
+mov $1,$0
 div $1,504
-add $1,3515

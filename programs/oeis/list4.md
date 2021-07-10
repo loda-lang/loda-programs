@@ -462,6 +462,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210379](http://oeis.org/A210379) ([program](210/A210379.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
 * [A210433](http://oeis.org/A210433) ([program](210/A210433.asm)): Natural numbers k such that floor(v) * ceiling(v)^2 = k, where v = k^(1/3).
 * [A210435](http://oeis.org/A210435) ([program](210/A210435.asm)): Number of digits in 5^n.
+* [A210437](http://oeis.org/A210437) ([program](210/A210437.asm)): Greatest prime factor of reversal of digits of n.
 * [A210440](http://oeis.org/A210440) ([program](210/A210440.asm)): a(n) = 2*n*(n+1)*(n+2)/3.
 * [A210448](http://oeis.org/A210448) ([program](210/A210448.asm)): Total number of different letters summed over all ternary words of length n.
 * [A210464](http://oeis.org/A210464) ([program](210/A210464.asm)): Number of bracelets with 2 blue, 2 red, and n black beads.
@@ -1167,6 +1168,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A218445](http://oeis.org/A218445) ([program](218/A218445.asm)): a(n) = Sum_{k>=0} floor(n/(5*k + 2)).
 * [A218447](http://oeis.org/A218447) ([program](218/A218447.asm)): a(n) = Sum_{k>=0} floor(n/(5*k + 4)).
 * [A218460](http://oeis.org/A218460) ([program](218/A218460.asm)): a(n) = prime(n)^(prime(n + 1) - prime(n)).
+* [A218461](http://oeis.org/A218461) ([program](218/A218461.asm)): Floor( prime(prime(n))/ prime(n) ).
 * [A218470](http://oeis.org/A218470) ([program](218/A218470.asm)): Partial sums of floor(n/9).
 * [A218471](http://oeis.org/A218471) ([program](218/A218471.asm)): a(n) = n*(7*n-3)/2.
 * [A218507](http://oeis.org/A218507) ([program](218/A218507.asm)): Number of partitions of n in which any two parts differ by at most 5.

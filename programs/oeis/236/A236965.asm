@@ -5,8 +5,4 @@ trn $0,1
 cal $0,98090 ; Numbers k such that 2k-3 is prime.
 sub $0,2
 dif $0,2
-mul $0,11
 mov $1,$0
-sub $1,10
-div $1,11
-add $1,1

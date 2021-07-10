@@ -6,12 +6,7 @@ cal $0,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root o
 add $0,4
 bin $0,2
 sub $0,8
-mov $1,2
-lpb $0
-  lpb $0
-    mov $0,2
-  lpe
-  mul $1,2
-  sub $1,4
-lpe
-div $1,2
+mov $1,56
+div $1,$0
+sub $1,7
+div $1,11

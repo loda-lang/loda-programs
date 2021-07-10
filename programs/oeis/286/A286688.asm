@@ -5,7 +5,6 @@ lpb $0
   mod $0,2
   sub $0,1
 lpe
-cal $0,286726 ; {0->10, 1->01}-transform of the Pell word, A171588.
+div $0,2
+cal $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
 mov $1,$0
-add $1,1
-mod $1,2

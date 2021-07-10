@@ -5,8 +5,4 @@ cal $0,56040 ; Swinging factorial, a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-
 mov $2,$0
 gcd $2,32
 div $0,$2
-mul $0,2
 mov $1,$0
-sub $1,1
-div $1,2
-add $1,1

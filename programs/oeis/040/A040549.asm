@@ -3,7 +3,5 @@
 
 cal $0,40699 ; Continued fraction for sqrt(726).
 cal $0,47543 ; Numbers that are congruent to {3, 4, 7} mod 8.
+div $0,3
 mov $1,$0
-sub $1,5
-div $1,3
-add $1,1

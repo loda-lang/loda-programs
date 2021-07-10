@@ -3,7 +3,6 @@
 
 cal $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
 lpb $0
-  pow $0,3
-  sub $0,1
+  mov $1,$0
+  mod $0,2
 lpe
-mov $1,$0
