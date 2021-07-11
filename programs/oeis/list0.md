@@ -2604,6 +2604,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A019590](http://oeis.org/A019590) ([program](019/A019590.asm)): Fermat's Last Theorem: a(n) = 1 if x^n + y^n = z^n has a nontrivial solution in integers, otherwise a(n) = 0.
 * [A020330](http://oeis.org/A020330) ([program](020/A020330.asm)): Numbers whose base-2 representation is the juxtaposition of two identical strings.
 * [A020331](http://oeis.org/A020331) ([program](020/A020331.asm)): Numbers whose base-3 representation is the juxtaposition of two identical strings.
+* [A020332](http://oeis.org/A020332) ([program](020/A020332.asm)): Numbers whose base-4 representation is the juxtaposition of two identical strings.
 * [A020333](http://oeis.org/A020333) ([program](020/A020333.asm)): Numbers whose base-5 representation is the juxtaposition of two identical strings.
 * [A020334](http://oeis.org/A020334) ([program](020/A020334.asm)): Numbers whose base-6 representation is the juxtaposition of two identical strings.
 * [A020338](http://oeis.org/A020338) ([program](020/A020338.asm)): Doublets: base-10 representation is the juxtaposition of two identical strings.
@@ -3891,7 +3892,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A028495](http://oeis.org/A028495) ([program](028/A028495.asm)): Expansion of (1-x^2)/(1-x-2*x^2+x^3).
 * [A028552](http://oeis.org/A028552) ([program](028/A028552.asm)): a(n) = n*(n+3).
 * [A028557](http://oeis.org/A028557) ([program](028/A028557.asm)): a(n) = n*(n+5).
-* [A028560](http://oeis.org/A028560) ([program](028/A028560.asm)): a(n) = n*(n + 6), also numbers a(n) such that 9*(9 + a(n)) is a perfect square.
+* [A028560](http://oeis.org/A028560) ([program](028/A028560.asm)): a(n) = n*(n + 6), also numbers j such that 9*(9 + j) is a perfect square.
 * [A028563](http://oeis.org/A028563) ([program](028/A028563.asm)): a(n) = n*(n+7).
 * [A028566](http://oeis.org/A028566) ([program](028/A028566.asm)): a(n) = n*(n+8).
 * [A028569](http://oeis.org/A028569) ([program](028/A028569.asm)): a(n) = n*(n + 9).

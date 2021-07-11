@@ -3,5 +3,7 @@
 
 add $0,1
 pow $0,2
-cal $0,278617 ; Number of distinct odd primes less than or equal to 2n-3 that appear as a part in the partitions of 2n into two parts.
+sub $0,1
+cal $0,99802 ; Bisection of A000720.
 mov $1,$0
+sub $1,1

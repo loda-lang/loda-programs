@@ -1154,6 +1154,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A060354](http://oeis.org/A060354) ([program](060/A060354.asm)): The n-th n-gonal number: a(n) = n*(n^2-3*n+4)/2.
 * [A060378](http://oeis.org/A060378) ([program](060/A060378.asm)): Even-odd sieve.
 * [A060416](http://oeis.org/A060416) ([program](060/A060416.asm)): a(n) = n*4^n - 1.
+* [A060418](http://oeis.org/A060418) ([program](060/A060418.asm)): Largest decimal digit in n-th prime.
+* [A060420](http://oeis.org/A060420) ([program](060/A060420.asm)): Least decimal digit in n-th prime.
 * [A060422](http://oeis.org/A060422) ([program](060/A060422.asm)): Number of acute triangles made from vertices of a regular n-gon.
 * [A060423](http://oeis.org/A060423) ([program](060/A060423.asm)): Number of obtuse triangles made from vertices of a regular n-gon.
 * [A060429](http://oeis.org/A060429) ([program](060/A060429.asm)): a(n) = 4*prime(n)^2+1.
@@ -4309,6 +4311,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A085601](http://oeis.org/A085601) ([program](085/A085601.asm)): a(n) = 2 * (4^n + 2^n) + 1.
 * [A085622](http://oeis.org/A085622) ([program](085/A085622.asm)): Maximal number of segments (equivalently, corners) in a rook circuit of a 2n X 2n board.
 * [A085624](http://oeis.org/A085624) ([program](085/A085624.asm)): Sum of the entries in the character table of the dihedral group D_{2n} of order 2n.
+* [A085641](http://oeis.org/A085641) ([program](085/A085641.asm)): Smallest prime == 1 mod(p*q*...k) where p, q, ...k are all the distinct prime divisors of n. Or, smallest prime == 1 (mod the largest squarefree divisor of n).
 * [A085680](http://oeis.org/A085680) ([program](085/A085680.asm)): Size of largest code of length n and constant weight 2 that can correct a single adjacent transposition.
 * [A085683](http://oeis.org/A085683) ([program](085/A085683.asm)): a(n) = Sum_{k = 1..N-1} floor(N/k) where N is the n-th prime.
 * [A085689](http://oeis.org/A085689) ([program](085/A085689.asm)): a(1) = 4; a(n) = if n == 2 mod 3 then a(n-1)/2, if n == 0 mod 3 then a(n-1)*2, if n == 1 mod 3 then a(n-1)*3.
@@ -4629,6 +4632,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088673](http://oeis.org/A088673) ([program](088/A088673.asm)): n mod A002024(n), where A002024 is "n appears n times": 1, 2, 2, 3, 3, 3, ...
 * [A088680](http://oeis.org/A088680) ([program](088/A088680.asm)): a(n) = prime(2n+1) - prime(2n).
 * [A088682](http://oeis.org/A088682) ([program](088/A088682.asm)): a(n) = prime(3*n+1) - prime(3*n-1).
+* [A088683](http://oeis.org/A088683) ([program](088/A088683.asm)): a(n) = prime(3*n+2) - prime(3*n).
 * [A088689](http://oeis.org/A088689) ([program](088/A088689.asm)): Jacobsthal numbers modulo 3.
 * [A088696](http://oeis.org/A088696) ([program](088/A088696.asm)): Triangle read by rows, giving number of partial quotients in continued fraction representation of terms in the left branch of the infinite Stern-Brocot tree.
 * [A088705](http://oeis.org/A088705) ([program](088/A088705.asm)): First differences of A000120. One minus exponent of 2 in n.

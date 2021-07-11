@@ -698,6 +698,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212766](http://oeis.org/A212766) ([program](212/A212766.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w even and x odd.
 * [A212767](http://oeis.org/A212767) ([program](212/A212767.asm)): Number of (w,x,y,z) with all terms in {0,...,n}, w even, x even, and w+x=y+z.
 * [A212772](http://oeis.org/A212772) ([program](212/A212772.asm)): Floor((n+1)*(n-3)*(n-4)/12).
+* [A212790](http://oeis.org/A212790) ([program](212/A212790.asm)): (prime(n) + n) mod (prime(n) - n).
 * [A212793](http://oeis.org/A212793) ([program](212/A212793.asm)): Characteristic function of cubefree numbers, A004709.
 * [A212804](http://oeis.org/A212804) ([program](212/A212804.asm)): Expansion of (1 - x)/(1 - x - x^2).
 * [A212823](http://oeis.org/A212823) ([program](212/A212823.asm)): Number of 0..2 arrays of length n with no adjacent pair equal to its immediately preceding adjacent pair, and new values introduced in 0..2 order.
@@ -1645,6 +1646,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228321](http://oeis.org/A228321) ([program](228/A228321.asm)): The Wiener index of the graph obtained by applying Mycielski's construction to the path graph on n vertices (n>=2).
 * [A228344](http://oeis.org/A228344) ([program](228/A228344.asm)): Floor(3*n^2/4) - 1.
 * [A228361](http://oeis.org/A228361) ([program](228/A228361.asm)): The number of all possible covers of L-length line segment by 2-length line segments with allowed gaps < 2.
+* [A228366](http://oeis.org/A228366) ([program](228/A228366.asm)): Toothpick sequence from a diagram of compositions of the positive integers (see Comments lines for definition).
 * [A228367](http://oeis.org/A228367) ([program](228/A228367.asm)): n-th element of the ruler function plus the highest power of 2 dividing n.
 * [A228368](http://oeis.org/A228368) ([program](228/A228368.asm)): Difference between the n-th element of the ruler function and the highest power of 2 dividing n.
 * [A228394](http://oeis.org/A228394) ([program](228/A228394.asm)): The number of permutations of length n sortable by 2 prefix block transpositions.
@@ -2649,7 +2651,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A246985](http://oeis.org/A246985) ([program](246/A246985.asm)): Expansion of (1-8*x+14*x^2)/((1-2*x)*(1-3*x)*(1-6*x)).
 * [A247000](http://oeis.org/A247000) ([program](247/A247000.asm)): Maximal number of palindromes in a circular binary word of length n.
 * [A247004](http://oeis.org/A247004) ([program](247/A247004.asm)): Denominator of (n+4)/gcd(n, 4)^2, a 16-periodic sequence that associates A061037 with A106617.
-* [A247018](http://oeis.org/A247018) ([program](247/A247018.asm)): a(n) = 3*n^2 + n + 3.
+* [A247018](http://oeis.org/A247018) ([program](247/A247018.asm)): Numbers of the form 3*z^2 + z + 3 for some integer z.
 * [A247035](http://oeis.org/A247035) ([program](247/A247035.asm)): Expansion of 2*(x+1)*(x^4+6*x^3+5*x^2+6*x+1)/(x^6-18*x^3+1).
 * [A247049](http://oeis.org/A247049) ([program](247/A247049.asm)): Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,0) to (n,k), where 0 >= k <= 2, consisting of segments given by the vectors (1,1), (1,2), (1,-1).
 * [A247060](http://oeis.org/A247060) ([program](247/A247060.asm)): Dynamic Betting Game D(n,4,1).

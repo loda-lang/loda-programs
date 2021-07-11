@@ -627,6 +627,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A261241](http://oeis.org/A261241) ([program](261/A261241.asm)): One half of numbers representable in at least two different ways as sums of four nonvanishing cubes. See A259060 for these numbers and their representations.
 * [A261243](http://oeis.org/A261243) ([program](261/A261243.asm)): Row lengths of the irregular triangles A258643 and A261242: maximal number of 0-islands (holes) of certain bisymmetric n X n matrices with 0 or 1 entries only.
 * [A261276](http://oeis.org/A261276) ([program](261/A261276.asm)): 100-gonal numbers: a(n) = 98*n*(n-1)/2 + n.
+* [A261300](http://oeis.org/A261300) ([program](261/A261300.asm)): Concatenate successive run lengths of 0's in the binary expansion of n, each increased by 1.
 * [A261327](http://oeis.org/A261327) ([program](261/A261327.asm)): Numerators of 1 + n^2/4.
 * [A261337](http://oeis.org/A261337) ([program](261/A261337.asm)): Digit-sums in an incremental base that adjusts itself as the digits of n are generated from right to left.
 * [A261343](http://oeis.org/A261343) ([program](261/A261343.asm)): 50-gonal numbers: a(n) = 48*n*(n-1)/2 + n.
@@ -753,6 +754,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A263537](http://oeis.org/A263537) ([program](263/A263537.asm)): Integers k such that A098531(k) is divisible by A000071(k+2).
 * [A263622](http://oeis.org/A263622) ([program](263/A263622.asm)): a(n) = (3^(n+1)-2^(n+2)+2*n+1)/4.
 * [A263689](http://oeis.org/A263689) ([program](263/A263689.asm)): a(n) = (2*n^6 - 6*n^5 + 5*n^4 - n^2 + 12)/12.
+* [A263727](http://oeis.org/A263727) ([program](263/A263727.asm)): Largest square number less than or equal to the n-th Fibonacci number.
 * [A263770](http://oeis.org/A263770) ([program](263/A263770.asm)): Smallest prime q such that ((prime(n)^2 + q*prime(n))/(prime(n) + 1) is an integer.
 * [A263772](http://oeis.org/A263772) ([program](263/A263772.asm)): Perimeters of integer-sided scalene triangles.
 * [A263794](http://oeis.org/A263794) ([program](263/A263794.asm)): Number of (n+1) X (3+1) 0..1 arrays with each row and column divisible by 3, read as a binary number with top and left being the most significant bits, and rows and columns lexicographically nonincreasing.
@@ -1819,6 +1821,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A277236](http://oeis.org/A277236) ([program](277/A277236.asm)): Number of strings of length n composed of symbols from the circular list [1,2,3,4] such that adjacent symbols in the string must be adjacent in the list. No runs of length 2 or more are allowed for symbols 1 and 3.
 * [A277237](http://oeis.org/A277237) ([program](277/A277237.asm)): Number of strings of length n composed of symbols from the circular list [1,2,3,4,5,6] such that adjacent symbols in the string must be adjacent in the list. No runs of length 2 or more are allowed for symbols 1, 3 and 5.
 * [A277267](http://oeis.org/A277267) ([program](277/A277267.asm)): Minimum number of single-direction edges in leveled binary trees with n nodes.
+* [A277314](http://oeis.org/A277314) ([program](277/A277314.asm)): Number of nonzero coefficients in Stern polynomial B(n,t).
 * [A277329](http://oeis.org/A277329) ([program](277/A277329.asm)): a(0)=0, for n >= 1, a(2n) = a(n)+1, a(4n-1) = a(n)+1, a(4n+1) = a(n)+1.
 * [A277342](http://oeis.org/A277342) ([program](277/A277342.asm)): Base-100 digital root of n (equivalent to repeatedly adding pairs of decimal digits starting from the least significant pair).
 * [A277351](http://oeis.org/A277351) ([program](277/A277351.asm)): Value of (n+1,n) concatenated in binary representation.
@@ -1941,7 +1944,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A279437](http://oeis.org/A279437) ([program](279/A279437.asm)): Number of ways to place 3 points on an n X n square grid so that no more than 2 points are on a vertical or horizontal straight line.
 * [A279482](http://oeis.org/A279482) ([program](279/A279482.asm)): Sum of the first n Lucas numbers whose indices are prime.
 * [A279511](http://oeis.org/A279511) ([program](279/A279511.asm)): Sierpinski square-based pyramid numbers: a(n) = 5*a(n-1) - (2^(n+1)+7).
-* [A279521](http://oeis.org/A279521) ([program](279/A279521.asm)): Maximum numbers of single-direction edges in leveled binary trees with n nodes.
+* [A279521](http://oeis.org/A279521) ([program](279/A279521.asm)): Maximum number of single-direction edges in leveled binary trees with n nodes.
 * [A279539](http://oeis.org/A279539) ([program](279/A279539.asm)): Sum of ceilings of natural logs of first n integers.
 * [A279561](http://oeis.org/A279561) ([program](279/A279561.asm)): Number of length n inversion sequences avoiding the patterns 101, 102, 201, and 210.
 * [A279620](http://oeis.org/A279620) ([program](279/A279620.asm)): Limit of the sequence of words defined by w(1) = 1, w(2) = 1221, and w(n) = w(n-1) 2 w(n-2) 2 w(n-1) for n >= 2. Also the fixed point of the map 1 -> 122, 2 -> 12.

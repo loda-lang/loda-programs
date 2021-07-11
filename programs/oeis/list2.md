@@ -1165,7 +1165,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110657](http://oeis.org/A110657) ([program](110/A110657.asm)): a(n) = A028242(A028242(n)).
 * [A110658](http://oeis.org/A110658) ([program](110/A110658.asm)): a(n) = A028242(A028242(A028242(n))).
 * [A110659](http://oeis.org/A110659) ([program](110/A110659.asm)): a(n) = A028242(A110654(n)).
-* [A110660](http://oeis.org/A110660) ([program](110/A110660.asm)): Promic numbers repeated.
+* [A110660](http://oeis.org/A110660) ([program](110/A110660.asm)): Pronic numbers repeated.
 * [A110665](http://oeis.org/A110665) ([program](110/A110665.asm)): Sequence is {a(0,n)}, where a(m,0)=0, a(m,n) = a(m-1,n)+a(m,n-1) and a(0,n) is such that a(n,n) = n for all n.
 * [A110666](http://oeis.org/A110666) ([program](110/A110666.asm)): Sequence is {a(1,n)}, where a(m,n) is defined at sequence A110665.
 * [A110667](http://oeis.org/A110667) ([program](110/A110667.asm)): Sequence is {a(2,n)}, where a(m,n) is defined at sequence A110665.
@@ -1306,6 +1306,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A112231](http://oeis.org/A112231) ([program](112/A112231.asm)): Repeat each prime in the sequence of natural numbers.
 * [A112232](http://oeis.org/A112232) ([program](112/A112232.asm)): Repeat each composite number in the sequence of natural numbers.
 * [A112248](http://oeis.org/A112248) ([program](112/A112248.asm)): a(n) = n mod floor(log_2(n)).
+* [A112282](http://oeis.org/A112282) ([program](112/A112282.asm)): a(n) = (-1)^n*(2*n+1) (mod 9).
 * [A112300](http://oeis.org/A112300) ([program](112/A112300.asm)): Expansion of x * (1 - x)^2 * (1 - x^2) / (1 - x^6) in powers of x.
 * [A112310](http://oeis.org/A112310) ([program](112/A112310.asm)): Number of terms in lazy Fibonacci representation of n.
 * [A112335](http://oeis.org/A112335) ([program](112/A112335.asm)): Row sums of number triangle A112334.
@@ -2636,7 +2637,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A127423](http://oeis.org/A127423) ([program](127/A127423.asm)): a(1) = 1; for n > 1, a(n) = n concatenated with n - 1.
 * [A127427](http://oeis.org/A127427) ([program](127/A127427.asm)): a(n) = v_3( (6n)! ) - v_3( (3n)! ), where v_3(N) is the 3-adic valuation A007949(N).
 * [A127428](http://oeis.org/A127428) ([program](127/A127428.asm)): v_5( (10n)! ) - v_5( (5n)! ), where v_p(N) is the p-adic valuation defined in A112765.
-* [A127451](http://oeis.org/A127451) ([program](127/A127451.asm)): Beatty sequence for n/(1 - e^Pi + Pi^e), complement of A127450.
+* [A127451](http://oeis.org/A127451) ([program](127/A127451.asm)): Beatty sequence for 1/(1 - e^Pi + Pi^e), complement of A127450.
 * [A127473](http://oeis.org/A127473) ([program](127/A127473.asm)): a(n) = phi(n)^2.
 * [A127507](http://oeis.org/A127507) ([program](127/A127507.asm)): Triangle read by rows: T(n,k) = mu(n) where 1<=k<=n and mu=A008683.
 * [A127509](http://oeis.org/A127509) ([program](127/A127509.asm)): Number of n-tuples where each entry is chosen from the subsets of {1,2,3} such that the intersection of all n entries contains exactly one element.
@@ -3665,6 +3666,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A134522](http://oeis.org/A134522) ([program](134/A134522.asm)): a(n) = 2^n + ceiling(n/2).
 * [A134538](http://oeis.org/A134538) ([program](134/A134538.asm)): a(n) = 5*n^2 - 1.
 * [A134547](http://oeis.org/A134547) ([program](134/A134547.asm)): a(n)=5n^2+20n+4.
+* [A134567](http://oeis.org/A134567) ([program](134/A134567.asm)): a(n) = least m such that {-m*tau} < {n*tau}, where { } denotes fractional part and tau = (1 + sqrt(5))/2.
 * [A134582](http://oeis.org/A134582) ([program](134/A134582.asm)): a(n) = (2*n)^2 - 4.
 * [A134591](http://oeis.org/A134591) ([program](134/A134591.asm)): a(n) is n reflected in n-th prime: distance between a(n) and p(n) equals distance between p(n) and n.
 * [A134593](http://oeis.org/A134593) ([program](134/A134593.asm)): a(n) = 5*n^2 + 10*n + 1. Coefficients of the rational part of (1 + sqrt(n))^5.
@@ -5004,6 +5006,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A147648](http://oeis.org/A147648) ([program](147/A147648.asm)): Number of distinct even superperfect numbers dividing n.
 * [A147651](http://oeis.org/A147651) ([program](147/A147651.asm)): First trisection of A028560.
 * [A147656](http://oeis.org/A147656) ([program](147/A147656.asm)): The arithmetic mean of the n-th and (n+1)-st cubes, rounded down.
+* [A147661](http://oeis.org/A147661) ([program](147/A147661.asm)): a(n) = squarefree part of n^n.
 * [A147666](http://oeis.org/A147666) ([program](147/A147666.asm)): List of triples (0, 6n+1, 6n+5) for n = 0, 1, 2, ...
 * [A147674](http://oeis.org/A147674) ([program](147/A147674.asm)): Period 9:repeat 81,27,9,27,27,9,27,81,9.
 * [A147675](http://oeis.org/A147675) ([program](147/A147675.asm)): Divide by 2, multiply by 4, repeat.

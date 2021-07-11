@@ -3,6 +3,6 @@
 
 cal $0,114327 ; Table T(n,m) = n - m read by upwards antidiagonals.
 pow $0,2
-cal $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+cal $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
 mov $1,$0
 add $1,1

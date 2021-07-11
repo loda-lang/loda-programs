@@ -3,6 +3,5 @@
 
 cal $0,6005 ; The odd prime numbers together with 1.
 pow $0,2
-max $0,4
+trn $0,4
 mov $1,$0
-sub $1,4

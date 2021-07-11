@@ -590,7 +590,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A157110](http://oeis.org/A157110) ([program](157/A157110.asm)): a(n) = 1681*n^2 - 2606*n + 1010.
 * [A157111](http://oeis.org/A157111) ([program](157/A157111.asm)): a(n) = 137842*n - 106846.
 * [A157112](http://oeis.org/A157112) ([program](157/A157112.asm)): a(n) = 5651522*n^2 - 8761372*n + 3395619.
-* [A157129](http://oeis.org/A157129) ([program](157/A157129.asm)): a(n)=(length of n-th run divided by 2) using 1 and 2 and starting with 1,1.
+* [A157129](http://oeis.org/A157129) ([program](157/A157129.asm)): An analog of the Kolakoski sequence  A000002, only now a(n) = (length of n-th run divided by 2) using 1 and 2 and starting with 1,1.
 * [A157130](http://oeis.org/A157130) ([program](157/A157130.asm)): Partial sums of A128201.
 * [A157142](http://oeis.org/A157142) ([program](157/A157142.asm)): Signed denominators of Leibniz series for Pi/4.
 * [A157195](http://oeis.org/A157195) ([program](157/A157195.asm)): a(n) = 0 if n is 1 or a prime, otherwise a(n) = product of the proper divisors of n.
@@ -836,7 +836,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158219](http://oeis.org/A158219) ([program](158/A158219.asm)): 169n - 1.
 * [A158220](http://oeis.org/A158220) ([program](158/A158220.asm)): a(n) = 169*n^2 + 2*n.
 * [A158221](http://oeis.org/A158221) ([program](158/A158221.asm)): a(n) = 169n + 1.
-* [A158222](http://oeis.org/A158222) ([program](158/A158222.asm)): 196n^2+2n.
+* [A158222](http://oeis.org/A158222) ([program](158/A158222.asm)): a(n) = 196*n^2 + 2*n.
 * [A158223](http://oeis.org/A158223) ([program](158/A158223.asm)): a(n) = 196*n + 1.
 * [A158224](http://oeis.org/A158224) ([program](158/A158224.asm)): a(n) = 196*n^2 - 2*n.
 * [A158225](http://oeis.org/A158225) ([program](158/A158225.asm)): 196n - 1.
@@ -2033,6 +2033,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A167991](http://oeis.org/A167991) ([program](167/A167991.asm)): Blocks of size 2n, each with 2n-1 replicas of 2n followed by 2n+1; n=1, 2, 3, ...
 * [A167993](http://oeis.org/A167993) ([program](167/A167993.asm)): Expansion of x^2/((3*x-1)*(3*x^2-1)).
 * [A167998](http://oeis.org/A167998) ([program](167/A167998.asm)): Numbers n with property that first digit of 5*n = last digit of n.
+* [A168010](http://oeis.org/A168010) ([program](168/A168010.asm)): a(n) = Sum of all numbers of divisors of all numbers k such that n^2 <= k < (n+1)^2.
 * [A168011](http://oeis.org/A168011) ([program](168/A168011.asm)): a(n) = Sum of all numbers of divisors of all numbers < (n+1)^2.
 * [A168014](http://oeis.org/A168014) ([program](168/A168014.asm)): Sum of all parts of all partitions of n into equal parts that do not contain 1 as a part.
 * [A168029](http://oeis.org/A168029) ([program](168/A168029.asm)): n*(n^6+1)/2.
@@ -3017,7 +3018,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A176514](http://oeis.org/A176514) ([program](176/A176514.asm)): Period 6: repeat [3, 1, 1, 3, 2, 1].
 * [A176542](http://oeis.org/A176542) ([program](176/A176542.asm)): Numbers n such that there are only a finite nonzero number of sets of n consecutive triangular numbers that sum to a square.
 * [A176563](http://oeis.org/A176563) ([program](176/A176563.asm)): Period 4: repeat [1, -3, 1, 1].
-* [A176566](http://oeis.org/A176566) ([program](176/A176566.asm)): Triangle T(n,m) = binomial( n*(n+1)/2+m, m ) read by rows.
+* [A176566](http://oeis.org/A176566) ([program](176/A176566.asm)): Triangle T(n, k) = binomial(n*(n+1)/2 + k, k), read by rows.
 * [A176569](http://oeis.org/A176569) ([program](176/A176569.asm)): a(n) = (-1)^n + (n-th prime of the form 3k-+1).
 * [A176580](http://oeis.org/A176580) ([program](176/A176580.asm)): n^3+Largest square, (Largest square <= n^3).
 * [A176581](http://oeis.org/A176581) ([program](176/A176581.asm)): n^3+Smallest square, (Smallest square >= n^3).
@@ -3622,7 +3623,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A183138](http://oeis.org/A183138) ([program](183/A183138.asm)): a(n) = floor(n/(2+sqrt(2))).
 * [A183139](http://oeis.org/A183139) ([program](183/A183139.asm)): a(n) = [1/r]+[2/r]+...+[n/r], where r=sqrt(2) and []=floor.
 * [A183140](http://oeis.org/A183140) ([program](183/A183140.asm)): a(n) = [1/s]+[2/s]+...+[n/s], where s=2+sqrt(2) and []=floor.
-* [A183142](http://oeis.org/A183142) ([program](183/A183142.asm)): Floor(n/s), where s=(3+sqrt(3))/2.
+* [A183142](http://oeis.org/A183142) ([program](183/A183142.asm)): Beatty sequence for 2/(3+sqrt(3)).
 * [A183143](http://oeis.org/A183143) ([program](183/A183143.asm)): [1/r]+[2/r]+...+[n/r], where r=sqrt(3) and []=floor.
 * [A183144](http://oeis.org/A183144) ([program](183/A183144.asm)): [1/s]+[2/s]+...+[n/s], where s=(3+sqrt(3))/2, []=floor.
 * [A183155](http://oeis.org/A183155) ([program](183/A183155.asm)): The number of order-preserving partial isometries (of an n-chain) of fix zero (fix of alpha = 0). Equivalently, the number of order-preserving partial derangement isometries (of an n-chain).
@@ -4538,6 +4539,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191529](http://oeis.org/A191529) ([program](191/A191529.asm)): Number of dispersed Dyck paths of length n (i.e., Motzkin paths of length n with no (1,0) steps at positive heights) with no initial and no final (1,0)-steps.
 * [A191531](http://oeis.org/A191531) ([program](191/A191531.asm)): Sum of lengths of initial and final horizontal segments over all dispersed Dyck paths of semilength n (i.e., over all Motzkin paths of length n with no (1,0)-steps at positive heights).
 * [A191558](http://oeis.org/A191558) ([program](191/A191558.asm)): a(n) = 0 if n prime, otherwise n.
+* [A191561](http://oeis.org/A191561) ([program](191/A191561.asm)): a(n) = 2^n mod 3*n
 * [A191562](http://oeis.org/A191562) ([program](191/A191562.asm)): a(n) = 7^n mod 3*n.
 * [A191590](http://oeis.org/A191590) ([program](191/A191590.asm)): a(n) is the genus of the modular curve associated to the principal congruence subgroup of level p(n), where p(n) is the n-th prime number.
 * [A191593](http://oeis.org/A191593) ([program](191/A191593.asm)): Number of partitions of 12*n into parts < 5.
