@@ -3,5 +3,11 @@
 
 pow $0,2
 add $0,1
-cal $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-mov $1,$0
+mov $1,22
+lpb $0
+  mov $2,$0
+  div $0,10
+  mod $2,10
+  add $1,$2
+lpe
+sub $1,22

@@ -3,10 +3,7 @@
 
 cal $0,133790 ; A014963*A100994.
 lpb $0
-  dif $0,3
+  pow $0,2
+  mod $0,3
+  add $1,$0
 lpe
-lpb $0
-  mov $0,4
-lpe
-mov $1,$0
-div $1,3

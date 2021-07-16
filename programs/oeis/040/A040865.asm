@@ -1,10 +1,12 @@
 ; A040865: Continued fraction for sqrt(895).
 ; 29,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10,1,58,1,10
 
-cal $0,40270 ; Continued fraction for sqrt(287).
-cal $0,3188 ; Decimal equivalent of Gray code for n.
+cal $0,40548 ; Continued fraction for sqrt(572).
+mul $0,2
+sub $0,4
+div $0,3
 add $0,1
-mov $1,22
-mul $1,$0
-div $1,18
-sub $1,1
+mov $1,$0
+gcd $0,2
+mul $1,2
+sub $1,$0

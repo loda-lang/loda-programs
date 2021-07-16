@@ -3,8 +3,6 @@
 
 add $0,2
 cal $0,298468 ; Solution (aa(n)) of the system of 3 complementary equations in Comments.
+div $0,2
 mov $1,$0
-cal $1,168458 ; a(n) = 7 + 10*floor((n-1)/2).
-sub $1,37
-div $1,10
-add $1,1
+sub $1,2

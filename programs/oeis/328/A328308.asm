@@ -5,7 +5,5 @@ lpb $0
   cal $0,258644 ; Fourth arithmetic derivative of n.
 lpe
 mov $1,$0
-add $1,$0
-trn $1,1
-add $1,1
-mod $1,2
+mod $0,2
+cmp $1,$0

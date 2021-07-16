@@ -4,7 +4,6 @@
 trn $0,1
 cal $0,45621 ; a(n) = 2^n - binomial(n, floor(n/2)).
 lpb $0
-  mul $0,2
-  dif $0,4
+  dif $0,2
 lpe
 mov $1,$0

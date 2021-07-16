@@ -51,6 +51,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A201455](http://oeis.org/A201455) ([program](201/A201455.asm)): a(n) = 3*a(n-1) + 4*a(n-2) for n>1, a(0)=2, a(1)=3.
 * [A201471](http://oeis.org/A201471) ([program](201/A201471.asm)): Maximal diameter of a connected n-gamma_t-vertex-critical graph.
 * [A201472](http://oeis.org/A201472) ([program](201/A201472.asm)): The Griesmer lower bound q_4(5,n) on the length of a linear code over GF(4) of dimension 5 and minimal distance n.
+* [A201498](http://oeis.org/A201498) ([program](201/A201498.asm)): a(n) = (prime(n) - 1)*(prime(n+1) - 1)/2 + 3.
 * [A201500](http://oeis.org/A201500) ([program](201/A201500.asm)): Number of n X 3 0..1 arrays with every row and column running average nondecreasing rightwards and downwards, and the number of instances of each value within one of each other.
 * [A201553](http://oeis.org/A201553) ([program](201/A201553.asm)): Number of arrays of 6 integers in -n..n with sum zero.
 * [A201629](http://oeis.org/A201629) ([program](201/A201629.asm)): a(n) = n if n is even and otherwise its nearest multiple of 4.
@@ -1068,7 +1069,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A216225](http://oeis.org/A216225) ([program](216/A216225.asm)): Distance between n^2 and next higher Fibonacci number.
 * [A216230](http://oeis.org/A216230) ([program](216/A216230.asm)): Square array T, read by antidiagonals: T(n,k) = 0 if n-k>=1 or if k-n>=2, T(0,0) = T(0,1) = 1, T(n,k) = T(n-1,k) + T(n,k-1).
 * [A216243](http://oeis.org/A216243) ([program](216/A216243.asm)): Partial sums of the squares of Lucas numbers (A000032).
-* [A216244](http://oeis.org/A216244) ([program](216/A216244.asm)): Numbers a(n) such that a(n)^2 + prime(n)^2 = m^2  for some integer m.
+* [A216244](http://oeis.org/A216244) ([program](216/A216244.asm)): a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 * [A216256](http://oeis.org/A216256) ([program](216/A216256.asm)): Minimum length of a longest unimodal subsequence of a permutation of n elements.
 * [A216257](http://oeis.org/A216257) ([program](216/A216257.asm)): a(n) = 840*n^2-23100*n+86861.
 * [A216326](http://oeis.org/A216326) ([program](216/A216326.asm)): Number of divisors of the degree of the minimal polynomial of 2*cos(Pi/prime(n)), with prime = A000040, n >= 1.
@@ -1962,6 +1963,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A234319](http://oeis.org/A234319) ([program](234/A234319.asm)): Smallest sum of n-th powers of k+1 consecutive positive integers that equals the sum of n-th powers of the next k consecutive integers, or -n if none.
 * [A234349](http://oeis.org/A234349) ([program](234/A234349.asm)): Maximal number of points that can be placed on a triangular grid of side n so that no three points are collinear.
 * [A234429](http://oeis.org/A234429) ([program](234/A234429.asm)): Numbers which are the digital sum of the square of some prime.
+* [A234431](http://oeis.org/A234431) ([program](234/A234431.asm)): Numbers that are the sum of 2 successive evil numbers (A001969).
 * [A234538](http://oeis.org/A234538) ([program](234/A234538.asm)): (Number of positive digits of n written in base 3) modulo 3.
 * [A234587](http://oeis.org/A234587) ([program](234/A234587.asm)): Odd-indexed terms of A234586.
 * [A234646](http://oeis.org/A234646) ([program](234/A234646.asm)): Sum of the distinct prime divisors of n^3 + 1.

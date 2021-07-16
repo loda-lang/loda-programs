@@ -2757,7 +2757,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173777](http://oeis.org/A173777) ([program](173/A173777.asm)): Infinite sequence gradually builds a triangle plus another more widely spaced triangle on top of it, or overlapping, if you will.
 * [A173785](http://oeis.org/A173785) ([program](173/A173785.asm)): Expansion of 2*(1 -4*x +14*x^2 +4*x^3 +9*x^4)/(1-x)^5.
 * [A173786](http://oeis.org/A173786) ([program](173/A173786.asm)): Triangle read by rows: T(n,k) = 2^n + 2^k, 0 <= k <= n.
-* [A173787](http://oeis.org/A173787) ([program](173/A173787.asm)): Triangle read by rows: T(n,k) = 2^n - 2^k, 0<=k<=n.
+* [A173787](http://oeis.org/A173787) ([program](173/A173787.asm)): Triangle read by rows: T(n,k) = 2^n - 2^k, 0 <= k <= n.
 * [A173809](http://oeis.org/A173809) ([program](173/A173809.asm)): a(2n+1) = 1+A131941(2n+1). a(2n) = A131941(2n).
 * [A173855](http://oeis.org/A173855) ([program](173/A173855.asm)): a(n) = A173039(n+4) - A173039(n+1).
 * [A173856](http://oeis.org/A173856) ([program](173/A173856.asm)): Expansion of 10/9 in base phi.
@@ -3163,6 +3163,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A178300](http://oeis.org/A178300) ([program](178/A178300.asm)): Triangle T(n,k) = binomial(n+k-1,n) read by rows, 1 <= k <= n.
 * [A178305](http://oeis.org/A178305) ([program](178/A178305.asm)): a(0)=1, a(1)=a(2)=1 and a(3k)=a(k), a(3k+1) = a(3k+2) = 2a(k) for k >= 1.
 * [A178312](http://oeis.org/A178312) ([program](178/A178312.asm)): a(n) = n * T(ceiling(n/2)), where T are the triangular numbers, A000217.
+* [A178359](http://oeis.org/A178359) ([program](178/A178359.asm)): Rounded up arithmetic mean of digits of n appended to n, cf. A004427.
 * [A178370](http://oeis.org/A178370) ([program](178/A178370.asm)): The trisection A178242(3n+2).
 * [A178389](http://oeis.org/A178389) ([program](178/A178389.asm)): Multiples of 3 in A175461.
 * [A178390](http://oeis.org/A178390) ([program](178/A178390.asm)): a(n) = (n^2+1)^2+1.
@@ -3359,7 +3360,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A180142](http://oeis.org/A180142) ([program](180/A180142.asm)): Eight rooks and one berserker on a 3 X 3 chessboard. G.f.: (1 + x - x^2)/(1 - 3*x - 3*x^2).
 * [A180143](http://oeis.org/A180143) ([program](180/A180143.asm)): Eight rooks and one berserker on a 3 X 3 chessboard. G.f.: (1 + x^2)/(1 - 4*x + x^2 + 2*x^3).
 * [A180144](http://oeis.org/A180144) ([program](180/A180144.asm)): Eight rooks and one berserker on a 3 X 3 chessboard. G.f.: (1 - 2*x^2)/(1 - 4*x + x^2 + 2*x^3).
-* [A180148](http://oeis.org/A180148) ([program](180/A180148.asm)): a(n) = 3*a(n-1)+a(n-2) with a(0)=2 and a(1)=5.
+* [A180148](http://oeis.org/A180148) ([program](180/A180148.asm)): a(n) = 3*a(n-1) + a(n-2) with a(0)=2 and a(1)=5.
 * [A180167](http://oeis.org/A180167) ([program](180/A180167.asm)): a(0) = 1, a(1) = 7; a(n)= 6*a(n-1) + 6*a(n-2) for n>1.
 * [A180172](http://oeis.org/A180172) ([program](180/A180172.asm)): a(n) = gcd(prime(n)+2, n).
 * [A180173](http://oeis.org/A180173) ([program](180/A180173.asm)): a(n) = gcd(prime(n)-2, n).
@@ -3810,6 +3811,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184619](http://oeis.org/A184619) ([program](184/A184619.asm)): a(n) = floor((n-h)*s+h), where s=2+sqrt(2) and h=1/3; complement of A184618.
 * [A184620](http://oeis.org/A184620) ([program](184/A184620.asm)): a(n) = floor(nr+h), where r=sqrt(2), h=1/4; complement of A184621.
 * [A184621](http://oeis.org/A184621) ([program](184/A184621.asm)): a(n) = floor((n-h)*s+h), where s=2+sqrt(2) and h=1/4; complement of A184620.
+* [A184622](http://oeis.org/A184622) ([program](184/A184622.asm)): a(n) = floor(n*r+h), where r=sqrt(2), h=-1/3; complement of A184623.
 * [A184624](http://oeis.org/A184624) ([program](184/A184624.asm)): a(n) = floor(n*r +h), where r=sqrt(2), h=-1/4; complement of A184619.
 * [A184626](http://oeis.org/A184626) ([program](184/A184626.asm)): floor(nr+h), where r=sqrt(3), h=1/4; complement of A184627.
 * [A184627](http://oeis.org/A184627) ([program](184/A184627.asm)): floor((n-h)*s+h), where s=(3+sqrt(3))/2 and h=1/4; complement of A184626.
@@ -4726,6 +4728,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193395](http://oeis.org/A193395) ([program](193/A193395.asm)): Wiener index of a benzenoid consisting of a double-step zig-zag chain of n hexagons (n >= 2, s = 2123; see the Gutman et al. reference).
 * [A193397](http://oeis.org/A193397) ([program](193/A193397.asm)): Wiener index of a benzenoid consisting of a double-step spiral chain of n hexagons (n>=2, s=21; see the Gutman et al. reference).
 * [A193399](http://oeis.org/A193399) ([program](193/A193399.asm)): Wiener index of a benzenoid consisting of a chain of n hexagons characterized by the encoding s = 1133 (see the Gutman et al. reference, Sec. 5).
+* [A193410](http://oeis.org/A193410) ([program](193/A193410.asm)): Expansion of (1-3*x)/(1-6*x+18*x^2).
 * [A193418](http://oeis.org/A193418) ([program](193/A193418.asm)): Expansion of x*(x^2+x-1)/(3*x^6-4*x^5+x^4-3*x^2+4*x-1).
 * [A193422](http://oeis.org/A193422) ([program](193/A193422.asm)): Smallest number m such that A193358(m) = n.
 * [A193432](http://oeis.org/A193432) ([program](193/A193432.asm)): Number of divisors of n^2 + 1.

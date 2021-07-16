@@ -4,6 +4,4 @@
 mul $0,2
 trn $0,2
 cal $0,286063 ; Fixed point of the mapping 00->001, 1->100, starting with 00.
-mov $1,$0
-add $1,1
-mod $1,2
+pow $1,$0

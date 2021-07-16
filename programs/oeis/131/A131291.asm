@@ -3,14 +3,11 @@
 
 add $0,1
 bin $0,2
-mul $0,7
+mul $0,5
 add $0,1
 mod $0,9
-add $0,1
-lpb $0
-  mul $0,2
-  trn $0,8
-lpe
+dif $0,-2
+mod $0,3
+dif $0,2
 mov $1,$0
-add $1,5
-mod $1,10
+add $1,4

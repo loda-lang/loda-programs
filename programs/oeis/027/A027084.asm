@@ -8,6 +8,5 @@ lpb $0
   cal $2,232508 ; Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally, diagonally or antidiagonally, with no adjacent elements equal.
   add $1,$2
 lpe
-sub $1,5
 div $1,4
-add $1,1
+sub $1,1

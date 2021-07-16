@@ -2197,6 +2197,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A284776](http://oeis.org/A284776) ([program](284/A284776.asm)): Positions of 0 in A284775; complement of A284777.
 * [A284777](http://oeis.org/A284777) ([program](284/A284777.asm)): Positions of 1 in A284775; complement of A284776.
 * [A284794](http://oeis.org/A284794) ([program](284/A284794.asm)): Positions of -1 in A284793.
+* [A284796](http://oeis.org/A284796) ([program](284/A284796.asm)): Positions of 1's in A284793.
 * [A284811](http://oeis.org/A284811) ([program](284/A284811.asm)): Fixed points of the transform A267193.
 * [A284817](http://oeis.org/A284817) ([program](284/A284817.asm)): a(n) = 2n - 1 - A284776(n).
 * [A284818](http://oeis.org/A284818) ([program](284/A284818.asm)): Positions of 0 in A284817.
@@ -2260,6 +2261,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A285685](http://oeis.org/A285685) ([program](285/A285685.asm)): Characteristic sequence of the Beatty sequence, A022839, of sqrt(5).
 * [A285700](http://oeis.org/A285700) ([program](285/A285700.asm)): a(n) = Number of iterations x -> 2x-1 needed to get a nonprime number, when starting with x = n.
 * [A285703](http://oeis.org/A285703) ([program](285/A285703.asm)): a(n) = A000203(A064216(n)).
+* [A285704](http://oeis.org/A285704) ([program](285/A285704.asm)): a(n) = A285703(n) - n = A000203(A064216(n)) - n.
 * [A285715](http://oeis.org/A285715) ([program](285/A285715.asm)): a(n) = A000120(A245611(n)).
 * [A285716](http://oeis.org/A285716) ([program](285/A285716.asm)): a(n) = A080791(A245611(n)).
 * [A285726](http://oeis.org/A285726) ([program](285/A285726.asm)): a(1) = a(2) = 0; for n > 2, a(n) = A252736(n) - (1-A000035(n)).

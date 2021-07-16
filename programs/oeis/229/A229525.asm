@@ -3,13 +3,8 @@
 
 add $0,4
 pow $0,2
+sub $0,5
 lpb $0
-  sub $0,1
   dif $0,2
-  add $0,3
 lpe
 mov $1,$0
-sub $1,10
-div $1,2
-mul $1,2
-add $1,5

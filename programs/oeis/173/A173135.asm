@@ -4,7 +4,7 @@
 cal $0,215848 ; Primes > 3.
 sub $0,2
 lpb $0
-  mov $1,$0
-  mod $0,4
+  bin $0,4
 lpe
+mov $1,$0
 add $1,2

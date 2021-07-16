@@ -21,12 +21,7 @@ In total, there are :star: **more than 30k programs available!** :star: You can 
 * [A000001-A050000](programs/oeis/list0.md), [A050001-A100000](programs/oeis/list1.md), [A100001-A150000](programs/oeis/list2.md), [A150001-A200000](programs/oeis/list3.md), 
 * [A200001-A250000](programs/oeis/list4.md), [A250001-A300000](programs/oeis/list5.md), [A300001-A350000](programs/oeis/list6.md), [A350001-A400000](programs/oeis/list7.md)
 
-We try to continuously run the LODA miners to find new or faster programs for integer sequences. If you would like to receive updates on the miner findings, there are multiple options:
-
-* Check the [changes on the master branch](https://github.com/ckrause/loda/commits/master) for new and updated programs.
-* Get real-time updates from [@lodaminer](https://twitter.com/lodaminer) on Twitter.
-* See detailed updates in real-time on Slack and take part of discussions.
-* See our [live monitoring](http://loda.ckrause.org/grafana) of the miners.
+If you would like to receive updates on the miner findings, you can check the [changes on the master branch](https://github.com/ckrause/loda/commits/master) for new and updated programs or get real-time updates from [@lodaminer](https://twitter.com/lodaminer) on Twitter.
 
 [Contributions are warmly welcome!](CONTRIBUTING.md) You can get in touch by sending a mail to "me" at ckrause dot org.
 

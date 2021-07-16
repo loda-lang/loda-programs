@@ -4,8 +4,10 @@
 mul $0,2
 add $0,2
 pow $0,2
-sub $0,2
-cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+sub $0,3
 mov $1,$0
-sub $1,2
-div $1,2
+cal $0,94820 ; Partial sums of A038548.
+add $1,1
+cal $1,94820 ; Partial sums of A038548.
+sub $1,$0
+sub $1,1

@@ -13,6 +13,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300287](http://oeis.org/A300287) ([program](300/A300287.asm)): a(n) = floor((1/n) * Sum_{k=1..n} sqrt(k)).
 * [A300290](http://oeis.org/A300290) ([program](300/A300290.asm)): Period 6: repeat [0, 1, 2, 2, 3, 3].
 * [A300293](http://oeis.org/A300293) ([program](300/A300293.asm)): A sequence based on the period 6 sequence A151899.
+* [A300294](http://oeis.org/A300294) ([program](300/A300294.asm)): Irregular triangle giving the GCD characteristic: t(n, m) = 1 if gcd(n, m) = 1 and zero otherwise, with t(1, 1) = 1 and t(n, m) for n >= 2 and m = 1..(n-1).
 * [A300402](http://oeis.org/A300402) ([program](300/A300402.asm)): Smallest integer i such that TREE(i) >= n.
 * [A300403](http://oeis.org/A300403) ([program](300/A300403.asm)): Smallest integer i such that SSCG(i) >= n.
 * [A300404](http://oeis.org/A300404) ([program](300/A300404.asm)): Smallest integer k such that the largest term in the Goodstein sequence starting at k is > n.
@@ -1277,7 +1278,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A324903](http://oeis.org/A324903) ([program](324/A324903.asm)): a(n) = 1 if A007814(sigma(n)) > A007814(n), 0 otherwise. Here A007814(n) gives the 2-adic valuation of n.
 * [A324904](http://oeis.org/A324904) ([program](324/A324904.asm)): The 2-adic valuation of A318466(n), where A318466(n) = 2*n OR sigma(n).
 * [A324908](http://oeis.org/A324908) ([program](324/A324908.asm)): a(n) = 1 if n is an odd number which is not a square, 0 otherwise.
-* [A324912](http://oeis.org/A324912) ([program](324/A324912.asm)): Binary weight of A324911(n).
 * [A324913](http://oeis.org/A324913) ([program](324/A324913.asm)): a(n) = Sum_{k=1..n} 2^k * phi(k), where phi is the Euler totient function A000010.
 * [A324914](http://oeis.org/A324914) ([program](324/A324914.asm)): a(n) = Sum_{k=1..n} 2^k * tau(k), where tau(k) = A000005(k).
 * [A324915](http://oeis.org/A324915) ([program](324/A324915.asm)): a(n) = Sum_{k=1..n} 2^k * sigma(k), where sigma(k) = A000203(k).
@@ -1398,6 +1398,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A327859](http://oeis.org/A327859) ([program](327/A327859.asm)): a(n) = A276086(A003415(n)), where A003415 is the arithmetic derivative and A276086 converts digits of primorial base representation to exponents in prime factorization.
 * [A327860](http://oeis.org/A327860) ([program](327/A327860.asm)): a(n) = A003415(A276086(n)).
 * [A327866](http://oeis.org/A327866) ([program](327/A327866.asm)): a(n) = 1 if arithmetic derivative of n is square, 0 otherwise. Cf. A003415.
+* [A327896](http://oeis.org/A327896) ([program](327/A327896.asm)): a(n) is the minimum number of tiles needed for constructing a polyiamond with n holes.
 * [A327917](http://oeis.org/A327917) ([program](327/A327917.asm)): Triangle T read by rows: T(k, n) = A(k-n, k) with the array A(k, n) = F(2*k+n) = A000045(2*k+n), for k >= 0 and n >= 0.
 * [A327936](http://oeis.org/A327936) ([program](327/A327936.asm)): Multiplicative with a(p^e) = p if e >= p, otherwise 1.
 * [A327938](http://oeis.org/A327938) ([program](327/A327938.asm)): Multiplicative with a(p^e) = p^(e mod p).
@@ -2191,6 +2192,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345668](http://oeis.org/A345668) ([program](345/A345668.asm)): Last prime minus distance to last prime.
 * [A345701](http://oeis.org/A345701) ([program](345/A345701.asm)): a(n) = 3*n^3 - 1.
 * [A345702](http://oeis.org/A345702) ([program](345/A345702.asm)): Numbers that can be written as 2*a^2 - 1 and 3*b^3 - 1.
+* [A345735](http://oeis.org/A345735) ([program](345/A345735.asm)): A prime-generating quasipolynomial: a(n) = 6*floor(n^2/4) + 17.
 * [A345741](http://oeis.org/A345741) ([program](345/A345741.asm)): a(n) = n + (n - 1) * d(n).
 * [A345888](http://oeis.org/A345888) ([program](345/A345888.asm)): a(n) = n + (n - 1) * pi(n).
 * [A345891](http://oeis.org/A345891) ([program](345/A345891.asm)): a(n) = n + (n - 1) * phi(n).

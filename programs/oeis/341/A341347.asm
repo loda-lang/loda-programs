@@ -4,6 +4,5 @@
 cal $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
 cal $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 mov $1,$0
-div $1,3
-add $1,1
+mod $1,3
 mod $1,2
