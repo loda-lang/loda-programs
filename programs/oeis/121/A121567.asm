@@ -3,8 +3,7 @@
 
 cal $0,40 ; The prime numbers.
 sub $0,2
-mov $2,$0
-cal $2,1595 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
-add $1,$2
+mov $1,$0
+cal $1,1595 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
 div $1,2
 add $1,1

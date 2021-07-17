@@ -3,9 +3,15 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
+  sub $0,2
   cal $2,214260 ; First differences of A052980.
   add $1,$2
 lpe
+add $1,1
+lpb $0
+  mov $0,0
+  add $1,1
+lpe
+sub $1,1
 mul $1,2
 add $1,1

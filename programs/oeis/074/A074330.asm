@@ -3,7 +3,9 @@
 
 add $0,1
 mov $1,$0
-cal $0,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
-add $1,$0
-div $1,2
-mul $1,2
+lpb $0
+  mov $2,$0
+  sub $0,1
+  cal $2,38573 ; a(n) = 2^A000120(n) - 1.
+  add $1,$2
+lpe
