@@ -3,12 +3,6 @@
 
 mul $0,2
 add $0,1
-lpb $0
-  mov $2,$0
-  trn $0,2
-  cal $2,214260 ; First differences of A052980.
-  add $1,$2
-lpe
-sub $1,1
-mul $1,2
-add $1,3
+cal $0,232059 ; Number of n X 2 0..2 arrays with every 0 next to a 1 and every 1 next to a 2 horizontally or vertically, with no adjacent values equal.
+mov $1,$0
+div $1,2

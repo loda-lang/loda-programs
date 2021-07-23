@@ -4,10 +4,10 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $0,2
+  sub $0,2
   cal $2,982 ; a(n) = ceiling(n^2/2).
   add $1,$2
 lpe
-sub $1,1
+add $1,$0
 mul $1,2
-add $1,1
+sub $1,1

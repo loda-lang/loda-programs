@@ -6,9 +6,8 @@ sub $0,1
 cal $2,196410 ; a(n) = n*2^(n-5).
 mul $0,$2
 sub $0,$2
-mov $2,5
 lpb $0
   mov $1,$0
-  mov $0,$2
+  mod $0,4
 lpe
 div $1,32

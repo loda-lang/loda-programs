@@ -10,6 +10,4 @@ lpb $0
   add $1,$2
 lpe
 bin $1,2
-mul $1,3
-add $1,3
-div $1,3
+add $1,1

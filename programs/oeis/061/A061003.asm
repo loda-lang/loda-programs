@@ -3,15 +3,9 @@
 
 add $0,1
 pow $0,5
-mov $2,4
-mov $3,$0
-div $3,5
-lpb $0
-  mov $0,$3
-  mov $1,9
-  add $2,$3
-  add $2,4
-  add $1,$2
-lpe
+mov $1,8
+mov $2,$0
+div $2,5
+add $1,$2
 div $1,5
-sub $1,3
+sub $1,1

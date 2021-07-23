@@ -1,12 +1,16 @@
 ; A105058: G.f. (1+8x-x^2)/((x+1)(x^2-6x+1)).
 ; 1,13,69,409,2377,13861,80781,470833,2744209,15994429,93222357,543339721,3166815961,18457556053,107578520349,627013566049,3654502875937,21300003689581,124145519261541,723573111879673
 
-mov $1,$0
-pow $0,0
-cal $1,76708 ; Numbers n such that triangular numbers T(n) and T(n+1) sum to another triangular number (that is also a perfect square).
-add $1,201
+mov $1,1
+mov $2,2
+lpb $0
+  sub $0,1
+  add $2,$1
+  sub $1,1
+  add $1,$2
+  add $1,$2
+  add $2,$1
+lpe
 div $1,2
-add $1,$0
-sub $1,101
 mul $1,4
 add $1,1

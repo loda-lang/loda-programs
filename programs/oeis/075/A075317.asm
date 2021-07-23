@@ -5,6 +5,5 @@ mov $1,$0
 add $0,1
 cal $0,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
 mov $2,$0
-add $2,2
+sub $2,1
 add $1,$2
-sub $1,3

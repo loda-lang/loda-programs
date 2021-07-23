@@ -4,7 +4,7 @@
 mov $2,$0
 cal $0,8472 ; Sum of the distinct primes dividing n.
 lpb $0
-  mov $0,$2
-  mov $2,0
+  add $2,1
+  sub $0,$2
 lpe
 mov $1,$0

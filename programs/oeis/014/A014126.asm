@@ -4,7 +4,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $0,3
+  sub $0,3
   cal $2,982 ; a(n) = ceiling(n^2/2).
   add $1,$2
 lpe
+add $1,$0

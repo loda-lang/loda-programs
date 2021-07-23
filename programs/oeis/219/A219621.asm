@@ -9,8 +9,5 @@ add $0,9
 mul $1,2
 mul $1,$0
 div $1,6
-add $1,1
-mov $2,2
-add $2,$0
-add $1,$2
-sub $1,12
+add $1,$0
+sub $1,9

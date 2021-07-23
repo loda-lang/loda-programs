@@ -3,8 +3,7 @@
 
 cal $0,266220 ; Number of ON (black) cells in the n-th iteration of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
 mov $1,2
-mov $2,$0
-add $2,1
-pow $1,$2
-sub $1,2
-div $1,2
+pow $1,$0
+mul $1,11
+sub $1,11
+div $1,11

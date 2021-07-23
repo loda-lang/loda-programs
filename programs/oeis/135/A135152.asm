@@ -6,8 +6,9 @@ sub $0,1
 mov $1,$0
 div $1,4
 mul $1,2
+add $1,1
 lpb $0
-  sub $0,$1
-  trn $0,1
+  div $0,26
+  add $0,2
   add $1,1
 lpe

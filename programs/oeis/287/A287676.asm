@@ -3,7 +3,7 @@
 
 add $0,2
 mov $1,$0
-cal $0,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
+cal $0,189663 ; Partial sums of A189661.
+mul $0,2
 add $1,$0
-add $1,$0
-sub $1,1
+sub $1,3

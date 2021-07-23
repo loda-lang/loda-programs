@@ -1,19 +1,7 @@
 ; A255745: a(1) = 1; for n > 1, a(n) = 11*10^{A000120(n-1)-1}.
 ; 1,11,11,110,11,110,110,1100,11,110,110,1100,110,1100,1100,11000,11,110,110,1100,110,1100,1100,11000,110,1100,1100,11000,1100,11000,11000,110000,11,110,110,1100,110,1100,1100,11000,110,1100,1100,11000,1100,11000,11000
 
-mov $3,2
-mov $5,$0
-lpb $3
-  mov $0,$5
-  sub $3,1
-  add $0,$3
-  trn $0,1
-  cal $0,255766 ; Partial sums of A255745.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
-lpe
-min $5,1
-mul $5,$4
-sub $1,$5
+cal $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+cal $0,170637 ; Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^49 = I.
+cal $0,7089 ; Numbers in base 3.
+mov $1,$0

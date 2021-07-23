@@ -1,8 +1,14 @@
 ; A037823: Number of i such that d(i)>d(i-1), where Sum{d(i)*8^i: i=0,1,....,m} is base 8 representation of n.
 ; 0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1
 
-add $0,1
-cal $0,217009 ; Multiples of 7 in base 8.
-cal $0,298787 ; Partial sums of A298786.
+add $0,2
+mul $0,7
+cal $0,7094 ; Numbers in base 8.
+lpb $0
+  mod $0,9
+lpe
+mul $0,13
+sub $0,1
+mod $0,5
 mov $1,$0
-mod $1,2
+div $1,3

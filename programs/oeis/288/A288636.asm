@@ -4,6 +4,5 @@
 lpb $0
   cal $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
   sub $0,1
-  add $1,530
+  add $1,1
 lpe
-div $1,530

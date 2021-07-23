@@ -7,7 +7,5 @@ lpb $0
   trn $2,1
   cal $2,291008 ; p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 7*S^2.
   add $1,$2
-  add $1,$2
 lpe
-div $1,2
 add $1,1

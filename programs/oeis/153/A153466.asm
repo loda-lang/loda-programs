@@ -9,8 +9,6 @@ lpb $0
   add $2,$1
   add $1,$2
 lpe
-mul $1,16
-sub $1,208
-div $1,16
+sub $1,13
 mul $1,18
 add $1,232

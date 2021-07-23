@@ -3,6 +3,5 @@
 
 trn $0,1
 cal $0,71986 ; Parity of the prime-counting function pi(n).
-mul $0,2
-mov $1,1
-sub $1,$0
+mov $1,-1
+pow $1,$0
