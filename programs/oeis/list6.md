@@ -1749,6 +1749,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A334572](http://oeis.org/A334572) ([program](334/A334572.asm)): Let x(n, k) be the exponent of prime(k) in the factorization of n, then a(n) = Max_{k} abs(x(n,k)- x(n-1,k)).
 * [A334573](http://oeis.org/A334573) ([program](334/A334573.asm)): Partial sums of A334572.
 * [A334576](http://oeis.org/A334576) ([program](334/A334576.asm)): a(n) is the X-coordinate of the n-th point of the space filling curve P defined in Comments section; sequence A334577 gives Y-coordinates.
+* [A334603](http://oeis.org/A334603) ([program](334/A334603.asm)): Period length of the fraction 1/11^n for n >= 1.
 * [A334614](http://oeis.org/A334614) ([program](334/A334614.asm)): a(n) = pi(prime(n) - n) + n, where pi is the prime counting function.
 * [A334625](http://oeis.org/A334625) ([program](334/A334625.asm)): Maximal size of a subset T of S = {1,2,...,n} with a cyclic arrangement of T such that any three neighbors can be reordered in an arithmetic progression.
 * [A334657](http://oeis.org/A334657) ([program](334/A334657.asm)): Dirichlet g.f.: 1 / zeta(s-2).
@@ -2205,6 +2206,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345211](http://oeis.org/A345211) ([program](345/A345211.asm)): Numbers with the same number of odd / even, refactorable divisors.
 * [A345222](http://oeis.org/A345222) ([program](345/A345222.asm)): Number of divisors of n with a prime number of divisors.
 * [A345280](http://oeis.org/A345280) ([program](345/A345280.asm)): a(n) = Sum_{p|n} nextprime(p), where nextprime(n) is the smallest prime > n.
+* [A345360](http://oeis.org/A345360) ([program](345/A345360.asm)): a(n) = n^n*n - n.
 * [A345493](http://oeis.org/A345493) ([program](345/A345493.asm)): Numbers that are the sum of eight squares in six or more ways.
 * [A345502](http://oeis.org/A345502) ([program](345/A345502.asm)): Numbers that are the sum of nine squares in five or more ways.
 * [A345504](http://oeis.org/A345504) ([program](345/A345504.asm)): Numbers that are the sum of nine squares in seven or more ways.
@@ -2216,5 +2218,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345888](http://oeis.org/A345888) ([program](345/A345888.asm)): a(n) = n + (n - 1) * pi(n).
 * [A345891](http://oeis.org/A345891) ([program](345/A345891.asm)): a(n) = n + (n - 1) * phi(n).
 * [A345892](http://oeis.org/A345892) ([program](345/A345892.asm)): a(n) = n + (n - 1) * (n - phi(n)).
+* [A345963](http://oeis.org/A345963) ([program](345/A345963.asm)): a(n) = (q^2-q+1)/3 where q = 2^(2*n+1) = A004171(n).
 * [A346070](http://oeis.org/A346070) ([program](346/A346070.asm)): Symbolic code for the corner turns in the Lévy dragon curve.
 * [A346376](http://oeis.org/A346376) ([program](346/A346376.asm)): a(n) = n^4 + 14*n^3 + 63*n^2 + 98*n + 28.

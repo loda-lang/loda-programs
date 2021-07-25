@@ -125,6 +125,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A152623](http://oeis.org/A152623) ([program](152/A152623.asm)): Decimal expansion of 3/2.
 * [A152624](http://oeis.org/A152624) ([program](152/A152624.asm)): Decimal expansion of 7/2.
 * [A152627](http://oeis.org/A152627) ([program](152/A152627.asm)): Decimal expansion of 3/4.
+* [A152669](http://oeis.org/A152669) ([program](152/A152669.asm)): Last digit of Catalan number A000108(n).
 * [A152674](http://oeis.org/A152674) ([program](152/A152674.asm)): Number of divisors of the numbers that are not squares.
 * [A152680](http://oeis.org/A152680) ([program](152/A152680.asm)): a(n) = 4*A005098(n) = A002144(n) - 1.
 * [A152689](http://oeis.org/A152689) ([program](152/A152689.asm)): Apply partial sum operator thrice to factorials.
@@ -524,6 +525,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A156287](http://oeis.org/A156287) ([program](156/A156287.asm)): Numbers k such that 4*k-5 is a prime number.
 * [A156319](http://oeis.org/A156319) ([program](156/A156319.asm)): Triangle by columns: (1, 2, 0, 0, 0, ...) in every column.
 * [A156331](http://oeis.org/A156331) ([program](156/A156331.asm)): a(n)=8*A154811(n).
+* [A156341](http://oeis.org/A156341) ([program](156/A156341.asm)): Expansion of (2-6*x)/(1-12*x+11*x^2).
 * [A156376](http://oeis.org/A156376) ([program](156/A156376.asm)): a(n) = 30*n + 19.
 * [A156536](http://oeis.org/A156536) ([program](156/A156536.asm)): Period length 12: repeat 7,5,-1,1,-5,-7,-7,-5,1,-1,5,7.
 * [A156550](http://oeis.org/A156550) ([program](156/A156550.asm)): a(n) = 5*(-1)^n*A078008(n).
@@ -1177,6 +1179,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A159964](http://oeis.org/A159964) ([program](159/A159964.asm)): a(n) = 2^n*(1-n).
 * [A159966](http://oeis.org/A159966) ([program](159/A159966.asm)): Lodumo_4 of A102370 (sloping binary numbers).
 * [A159981](http://oeis.org/A159981) ([program](159/A159981.asm)): Catalan numbers read modulo 4.
+* [A159984](http://oeis.org/A159984) ([program](159/A159984.asm)): Catalan numbers read modulo 5 .
+* [A159986](http://oeis.org/A159986) ([program](159/A159986.asm)): Catalan numbers read modulo 7.
+* [A159987](http://oeis.org/A159987) ([program](159/A159987.asm)): Catalan numbers read modulo 8.
 * [A160017](http://oeis.org/A160017) ([program](160/A160017.asm)): Lodumo_2 of Thue-Morse sequence A010060.
 * [A160050](http://oeis.org/A160050) ([program](160/A160050.asm)): Numerator of the Harary number for the star graph s_n.
 * [A160093](http://oeis.org/A160093) ([program](160/A160093.asm)): Number of digits in n, excluding any trailing zeros.
@@ -1257,6 +1262,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A160842](http://oeis.org/A160842) ([program](160/A160842.asm)): Number of lines through at least 2 points of a 2 X n grid of points.
 * [A160843](http://oeis.org/A160843) ([program](160/A160843.asm)): Number of lines through at least 2 points of a 3 X n grid of points.
 * [A160869](http://oeis.org/A160869) ([program](160/A160869.asm)): a(n) = sigma(6^(n-1)).
+* [A160873](http://oeis.org/A160873) ([program](160/A160873.asm)): Number of isomorphism classes of connected (D_4)-fold coverings of a connected graph with circuit rank n.
 * [A160902](http://oeis.org/A160902) ([program](160/A160902.asm)): Square array read by antidiagonals: a(m,n) = the smallest prime >= m*n.
 * [A160903](http://oeis.org/A160903) ([program](160/A160903.asm)): Square array read by antidiagonals: a(m,n) = the largest noncomposite <= m*n.
 * [A160909](http://oeis.org/A160909) ([program](160/A160909.asm)): Row sums of triangle defined in A096539.
@@ -2409,6 +2415,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A169823](http://oeis.org/A169823) ([program](169/A169823.asm)): Multiples of 60.
 * [A169825](http://oeis.org/A169825) ([program](169/A169825.asm)): Multiples of 420.
 * [A169827](http://oeis.org/A169827) ([program](169/A169827.asm)): Multiples of 840.
+* [A169830](http://oeis.org/A169830) ([program](169/A169830.asm)): Numbers n such that 2*reverse(n) - n = 1.
 * [A169831](http://oeis.org/A169831) ([program](169/A169831.asm)): a(n) = 5*2^(n+1) - 3*(n+3).
 * [A169832](http://oeis.org/A169832) ([program](169/A169832.asm)): a(n) = 15*2^(n+1) - (5*n^2+22*n+30).
 * [A169860](http://oeis.org/A169860) ([program](169/A169860.asm)): Floor of n inches converted to millimeters.
@@ -3671,6 +3678,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A182435](http://oeis.org/A182435) ([program](182/A182435.asm)): a(n) = 6*a(n-1) - a(n-2) - 2 with n>1, a(0)=0, a(1)=1.
 * [A182453](http://oeis.org/A182453) ([program](182/A182453.asm)): a(n) = 3^n - n*(n-1)/2.
 * [A182455](http://oeis.org/A182455) ([program](182/A182455.asm)): a(0)=1, a(n) = (a(n-1) mod (n+2))*(n+2).
+* [A182460](http://oeis.org/A182460) ([program](182/A182460.asm)): a(n) = (3/5)*2^(4n+1) - (1/5).
 * [A182461](http://oeis.org/A182461) ([program](182/A182461.asm)): a(n) = 3*a(n-1) - 2*a(n-2) with a(0)=16 and a(1)=40.
 * [A182462](http://oeis.org/A182462) ([program](182/A182462.asm)): a(n) = 3a(n-1) - 2a(n-2) with a(0)=20 and a(1)=50.
 * [A182464](http://oeis.org/A182464) ([program](182/A182464.asm)): a(n) = 3a(n-1) - 2a(n-2) with a(0)=24 and a(1)=60.
@@ -4876,6 +4884,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A193532](http://oeis.org/A193532) ([program](193/A193532.asm)): G.f.: x = Sum_{n>=1} x^n * ((1+x)^(n+1) - x^(n+1)) / (1+x)^a(n).
 * [A193553](http://oeis.org/A193553) ([program](193/A193553.asm)): Sum of divisors of 4*n.
 * [A193577](http://oeis.org/A193577) ([program](193/A193577.asm)): 5*7^n
+* [A193578](http://oeis.org/A193578) ([program](193/A193578.asm)): (13^n+1)/2.
 * [A193579](http://oeis.org/A193579) ([program](193/A193579.asm)): a(n) = 2*4^n + 7.
 * [A193583](http://oeis.org/A193583) ([program](193/A193583.asm)): Number of fixed points under iteration of sum of squares of digits in base b.
 * [A193588](http://oeis.org/A193588) ([program](193/A193588.asm)): A Fibonacci triangle: T(n,k) = Fib(k+2) for 0 <= k <= n.

@@ -572,6 +572,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A259652](http://oeis.org/A259652) ([program](259/A259652.asm)): Number of prime factors, with multiplicity, of the n-th pentagonal number (A000326).
 * [A259653](http://oeis.org/A259653) ([program](259/A259653.asm)): a(0)=0, a(1)=1, a(n) = min{3 a(k) + (3^(n-k)-1)/2, k=0..(n-1)} for n>=2.
 * [A259665](http://oeis.org/A259665) ([program](259/A259665.asm)): a(0)=0, a(1)=1, a(n) = min{4 a(k) + (4^(n-k)-1)/3, k=0..(n-1)} for n>=2.
+* [A259667](http://oeis.org/A259667) ([program](259/A259667.asm)): Catalan numbers mod 6.
 * [A259713](http://oeis.org/A259713) ([program](259/A259713.asm)): a(n) = 3*2^n - 2*(-1)^n.
 * [A259748](http://oeis.org/A259748) ([program](259/A259748.asm)): a(n) = (Sum_{0<x<y<n} x*y) mod n.
 * [A259750](http://oeis.org/A259750) ([program](259/A259750.asm)): Numbers that are congruent to {14,22} mod 24.
@@ -1768,6 +1769,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276391](http://oeis.org/A276391) ([program](276/A276391.asm)): G.f. satisfies A(x) - 4*A(x^2) = x/(1+x).
 * [A276394](http://oeis.org/A276394) ([program](276/A276394.asm)): Characteristic word associated with the fraction 36/25.
 * [A276395](http://oeis.org/A276395) ([program](276/A276395.asm)): Characteristic function of floor(36*n/25).
+* [A276509](http://oeis.org/A276509) ([program](276/A276509.asm)): Numbers n in base 10 such that the digits of 2 + n are the digits of 2n written in reverse order.
 * [A276555](http://oeis.org/A276555) ([program](276/A276555.asm)): Number of steps to reach 1 when starting from n and iterating the map x -> x - A061395(x).
 * [A276561](http://oeis.org/A276561) ([program](276/A276561.asm)): For n-th odd prime prime(n) in binary form, a(n) is the decimal value of the bits in between the most significant and least significant bits which are both 1. Since there are no middle bits for odd_prime(1) = 3 = (11)_2, a(1) = 0.
 * [A276598](http://oeis.org/A276598) ([program](276/A276598.asm)): Values of n such that n^2 + 3 is a triangular number (A000217).
@@ -1829,6 +1831,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A276918](http://oeis.org/A276918) ([program](276/A276918.asm)): a(2n) = A060867(n+1), a(2n+1) = A092440(n+1).
 * [A276950](http://oeis.org/A276950) ([program](276/A276950.asm)): Characteristic function for A273670: 1 if there is at least one maximal digit present in the factorial representation of n (A007623), otherwise 0.
 * [A276952](http://oeis.org/A276952) ([program](276/A276952.asm)): Partial sums of A276950.
+* [A276978](http://oeis.org/A276978) ([program](276/A276978.asm)): a(n) = (ceiling(n/2))^n.
+* [A276979](http://oeis.org/A276979) ([program](276/A276979.asm)): a(n) = (floor(n/2)+1)^n.
 * [A276984](http://oeis.org/A276984) ([program](276/A276984.asm)): Sum of squares of numbers less than n that do not divide n.
 * [A277050](http://oeis.org/A277050) ([program](277/A277050.asm)): a(n) = floor(2*n/sqrt(Pi)).
 * [A277070](http://oeis.org/A277070) ([program](277/A277070.asm)): Row length of A276380(n).
@@ -2202,6 +2206,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A284248](http://oeis.org/A284248) ([program](284/A284248.asm)): Every binary string w of length n has a subword of length a(n) that appears at least twice in w.
 * [A284280](http://oeis.org/A284280) ([program](284/A284280.asm)): Sum_{d|n, d = 2 mod 5} d.
 * [A284307](http://oeis.org/A284307) ([program](284/A284307.asm)): Permutation of the natural numbers partitioned into quadruples [4k-3, 4k, 4k-2, 4k-1], k > 0.
+* [A284351](http://oeis.org/A284351) ([program](284/A284351.asm)): Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 * [A284353](http://oeis.org/A284353) ([program](284/A284353.asm)): Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 * [A284354](http://oeis.org/A284354) ([program](284/A284354.asm)): Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 * [A284359](http://oeis.org/A284359) ([program](284/A284359.asm)): Double triangle (2*n+2 terms by row). Every row is 2*n + 1 followed by 2*n + 1 times 2*n + 2.
