@@ -4,8 +4,7 @@
 mul $0,2
 trn $0,1
 cal $0,99894 ; XOR BINOMIAL transform of A038712.
-div $0,2
-mul $0,4
-mov $1,3
-mul $1,$0
-div $1,8
+mov $1,$0
+div $1,2
+mul $1,3
+div $1,2

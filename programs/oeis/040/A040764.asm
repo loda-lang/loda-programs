@@ -3,11 +3,14 @@
 
 cal $0,40282 ; Continued fraction for sqrt(300).
 dif $0,4
+mov $1,$0
+mul $1,5
 mov $2,$0
-lpb $2
-  add $1,4
-  sub $2,1
-lpe
-div $1,5
-mul $1,2
-add $1,2
+div $2,7
+sub $1,$2
+div $1,3
+add $1,7
+mul $1,4
+sub $1,28
+div $1,4
+add $1,1

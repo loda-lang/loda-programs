@@ -4,7 +4,6 @@
 cal $0,27383 ; Number of balanced strings of length n: let d(S) = #(1's) - #(0's), # == count in S, then S is balanced if every substring T of S has -2 <= d(T) <= 2.
 add $0,1
 bin $0,2
+mul $0,2
 mov $1,$0
 sub $1,1
-mul $1,2
-add $1,1

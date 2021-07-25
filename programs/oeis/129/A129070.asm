@@ -4,6 +4,5 @@
 cal $0,6005 ; The odd prime numbers together with 1.
 sub $0,2
 max $1,$0
-mul $1,12
-add $1,39
-div $1,3
+mul $1,4
+add $1,13
