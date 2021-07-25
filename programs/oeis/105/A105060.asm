@@ -3,6 +3,6 @@
 
 cal $0,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
 add $0,2
-cal $0,142
+cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mov $1,$0
 sub $1,1

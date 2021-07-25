@@ -7,7 +7,7 @@ mov $2,7
 mov $3,4
 lpb $0
   sub $0,1
-  cal $3,142
+  cal $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
   sub $0,$3
   add $2,8
   sub $0,$2

@@ -13,11 +13,8 @@ lpb $2
   mov $3,1
   mov $4,2
   lpb $0
-    lpb $0
-      sub $0,$4
-      mul $3,$4
-    lpe
-    trn $4,$3
+    sub $0,$4
+    mul $3,$4
   lpe
   add $1,$3
 lpe
