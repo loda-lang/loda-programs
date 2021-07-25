@@ -3,4 +3,4 @@
 
 mov $1,$0
 cal $1,53735 ; Sum of digits of (n written in base 3).
-cal $1,142
+cal $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
