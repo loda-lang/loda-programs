@@ -1684,6 +1684,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A063417](http://oeis.org/A063417) ([program](063/A063417.asm)): Ninth column (k=8) of septinomial array A063265.
 * [A063428](http://oeis.org/A063428) ([program](063/A063428.asm)): a(n) is the smallest positive integer of the form n*k/(n+k).
 * [A063436](http://oeis.org/A063436) ([program](063/A063436.asm)): Write 1,2,3,4,... counterclockwise in a hexagonal spiral around 0 starting left down, then a(n) is the sequence found by reading from 0 in the vertical upward direction.
+* [A063439](http://oeis.org/A063439) ([program](063/A063439.asm)): a(n) = phi(n)^phi(n).
 * [A063440](http://oeis.org/A063440) ([program](063/A063440.asm)): Number of divisors of n-th triangular number.
 * [A063462](http://oeis.org/A063462) ([program](063/A063462.asm)): n * last digit of n.
 * [A063473](http://oeis.org/A063473) ([program](063/A063473.asm)): M(2*n-1), where M(n) is Mertens's function (A002321): Sum_{k=1..n} mu(k), where mu = Moebius function (A008683).
@@ -2278,6 +2279,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A070290](http://oeis.org/A070290) ([program](070/A070290.asm)): a(n) = lcm(8,n)/gcd(8,n).
 * [A070302](http://oeis.org/A070302) ([program](070/A070302.asm)): Number of 3 X 3 X 3 magic cubes with sum 3n.
 * [A070313](http://oeis.org/A070313) ([program](070/A070313.asm)): a(n) = 2^n - (2*n+1).
+* [A070320](http://oeis.org/A070320) ([program](070/A070320.asm)): Max( phi(k) : k=1,2,3,...,n ).
 * [A070321](http://oeis.org/A070321) ([program](070/A070321.asm)): Greatest squarefree number <= n.
 * [A070333](http://oeis.org/A070333) ([program](070/A070333.asm)): Expansion of (1+x)*(1-x+x^2)/( (1-x)^4*(1+x+x^2) ).
 * [A070335](http://oeis.org/A070335) ([program](070/A070335.asm)): a(n) = 2^n mod 23.
@@ -2906,6 +2908,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A073504](http://oeis.org/A073504) ([program](073/A073504.asm)): A possible basis for finite fractal sequences: let u(1) = 1, u(2) = n, u(k) = floor(u(k-1)/2) + floor(u(k-2)/2); then a(n) = lim_{k->infinity} u(k).
 * [A073522](http://oeis.org/A073522) ([program](073/A073522.asm)): A set of 25 consecutive primes that form a 5 X 5 magic square with the (non-minimal) magic constant 1703.
 * [A073523](http://oeis.org/A073523) ([program](073/A073523.asm)): The set of 36 consecutive primes that form a 6 X 6 pandiagonal magic square with the smallest magic constant (930).
+* [A073548](http://oeis.org/A073548) ([program](073/A073548.asm)): Number of Fibonacci numbers F(k), k <= 10^n, which end in 2.
 * [A073549](http://oeis.org/A073549) ([program](073/A073549.asm)): Number of Fibonacci numbers F(k), k <= 10^n, which end in 6.
 * [A073551](http://oeis.org/A073551) ([program](073/A073551.asm)): Number of Fibonacci numbers F(k), k <= 10^n, which end in 3.
 * [A073553](http://oeis.org/A073553) ([program](073/A073553.asm)): Number of Fibonacci numbers F(k), k <= 10^n, which end in 5.
@@ -3175,6 +3178,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A076112](http://oeis.org/A076112) ([program](076/A076112.asm)): Triangle (read by rows) in which the n-th row contains first n terms of n geometric progression with first term 1 and common ratio (n-1).
 * [A076118](http://oeis.org/A076118) ([program](076/A076118.asm)): a(n) = sum_k {n/2<=k<=n} k * (-1)^(n-k) * C(k,n-k).
 * [A076121](http://oeis.org/A076121) ([program](076/A076121.asm)): Complete list of possible cribbage hands.
+* [A076140](http://oeis.org/A076140) ([program](076/A076140.asm)): Triangular numbers T(k) that are three times another triangular number: T(k) such that T(k) = 3*T(m) for some m.
 * [A076178](http://oeis.org/A076178) ([program](076/A076178.asm)): a(n) = 2*n^2 - A077071(n).
 * [A076182](http://oeis.org/A076182) ([program](076/A076182.asm)): a(n) = A006666(n) mod 2.
 * [A076237](http://oeis.org/A076237) ([program](076/A076237.asm)): Remainder when 2nd order composite cc[n]=A050435[n] is divided by n.
@@ -3869,6 +3873,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081406](http://oeis.org/A081406) ([program](081/A081406.asm)): a(n) = (n+1)*a(n-3), a(0)=a(1)=a(2)=1 for n>1.
 * [A081407](http://oeis.org/A081407) ([program](081/A081407.asm)): 4th-order non-linear ("factorial") recursion: a(0)=a(1)=a(2)=a(3)=1, a(n) = (n+1)*a(n-4).
 * [A081408](http://oeis.org/A081408) ([program](081/A081408.asm)): a(n) = (n+1)*a(n-5), with a(0)=a(1)=a(2)=a(3)=a(4)=1.
+* [A081417](http://oeis.org/A081417) ([program](081/A081417.asm)): A000720 applied to Pascal-triangle: Pi[C(n,j)], j,0..n and n=0,1,2,...
 * [A081423](http://oeis.org/A081423) ([program](081/A081423.asm)): Subdiagonal of array of n-gonal numbers A081422.
 * [A081431](http://oeis.org/A081431) ([program](081/A081431.asm)): RevBinary(RevDecimal(n)), where RevBinary(m) is the binary reversal of m (A030101) and RevDecimal(m) is the decimal reversal of m (A004086).
 * [A081432](http://oeis.org/A081432) ([program](081/A081432.asm)): RevDecimal(RevBinary(n)), where RevDecimal(m) is the decimal reversal of m (A004086) and RevBinary(m) is the binary reversal of m (A030101).
@@ -5436,6 +5441,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A094968](http://oeis.org/A094968) ([program](094/A094968.asm)): Indices of Fibonacci numbers in Stern's diatomic series A049456 regarded as a single linear sequence.
 * [A095002](http://oeis.org/A095002) ([program](095/A095002.asm)): a(n) = 9*a(n-1) - 9*a(n-2) + a(n-3); given a(1) = 1, a(2) = 3, a(3) = 19.
 * [A095003](http://oeis.org/A095003) ([program](095/A095003.asm)): a(n) = 9*a(n-1) - 9*a(n-2) + a(n-3).
+* [A095004](http://oeis.org/A095004) ([program](095/A095004.asm)): a(n) = 9*a(n-1) - 9*a(n-2) + a(n-3); given a(1) = 1, a(2) = 10, a(3) = 81.
 * [A095076](http://oeis.org/A095076) ([program](095/A095076.asm)): Parity of 1-fibits in Zeckendorf expansion A014417(n).
 * [A095097](http://oeis.org/A095097) ([program](095/A095097.asm)): Fib000 numbers: those n for which the Zeckendorf expansion A014417(n) ends with three zeros.
 * [A095098](http://oeis.org/A095098) ([program](095/A095098.asm)): Fib001 numbers: those n for which the Zeckendorf expansion A014417(n) ends with two zeros and a final one.

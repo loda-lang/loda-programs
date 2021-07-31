@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,1
-cal $0,14445 ; Even Fibonacci numbers; or, Fibonacci(3*n).
+cal $0,1076 ; Denominators of continued fraction convergents to sqrt(5).
 mov $1,$0
-div $1,4
+div $1,2
 add $1,1

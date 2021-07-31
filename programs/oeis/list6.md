@@ -1600,6 +1600,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A330285](http://oeis.org/A330285) ([program](330/A330285.asm)): The maximum number of arithmetic progressions for a sequence of length n.
 * [A330298](http://oeis.org/A330298) ([program](330/A330298.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 2 even numbers.
 * [A330299](http://oeis.org/A330299) ([program](330/A330299.asm)): a(n) is the number of subsets of {1..n} that contain exactly 1 odd and 3 even numbers.
+* [A330319](http://oeis.org/A330319) ([program](330/A330319.asm)): a(n) = Sum_{i=1..n} phi(i)*phi(i+1), where phi(n) = A000010(n) is Euler's totient function.
+* [A330322](http://oeis.org/A330322) ([program](330/A330322.asm)): a(n) = Sum_{i=1..n} sigma(i)*sigma(i+1), where sigma(n) = A000203(n) is the sum of the divisors of n.
 * [A330323](http://oeis.org/A330323) ([program](330/A330323.asm)): a(n) = Moebius(n)*Moebius(n+1).
 * [A330324](http://oeis.org/A330324) ([program](330/A330324.asm)): a(n) = Sum_{i=1..n} Moebius(i)*Moebius(i+1), where Moebius(n) = A008683(n).
 * [A330357](http://oeis.org/A330357) ([program](330/A330357.asm)): a(n) = (2*n^2 + 9 - (-1)^n)/4.
@@ -2080,6 +2082,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A341642](http://oeis.org/A341642) ([program](341/A341642.asm)): Number of strictly superior prime divisors of n.
 * [A341655](http://oeis.org/A341655) ([program](341/A341655.asm)): a(n) is the number of divisors of prime(n)^2 - 1.
 * [A341663](http://oeis.org/A341663) ([program](341/A341663.asm)): a(n) is the number of divisors of prime(n)^3 - 1.
+* [A341671](http://oeis.org/A341671) ([program](341/A341671.asm)): Solutions y of the Diophantine equation 3*(x^2+x+1) = y^2.
 * [A341703](http://oeis.org/A341703) ([program](341/A341703.asm)): a(n) = 6*binomial(n,4) + 2*binomial(n,2) + 1.
 * [A341706](http://oeis.org/A341706) ([program](341/A341706.asm)): Row 2 of semigroup multiplication table shown in A341317 and A341318.
 * [A341718](http://oeis.org/A341718) ([program](341/A341718.asm)): Subtract 1 from each term of A004094 (the powers of 2 written backwards).
@@ -2231,6 +2234,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345891](http://oeis.org/A345891) ([program](345/A345891.asm)): a(n) = n + (n - 1) * phi(n).
 * [A345892](http://oeis.org/A345892) ([program](345/A345892.asm)): a(n) = n + (n - 1) * (n - phi(n)).
 * [A345963](http://oeis.org/A345963) ([program](345/A345963.asm)): a(n) = (q^2-q+1)/3 where q = 2^(2*n+1) = A004171(n).
+* [A346004](http://oeis.org/A346004) ([program](346/A346004.asm)): If n even then n otherwise ((n+1)/2)^2.
 * [A346070](http://oeis.org/A346070) ([program](346/A346070.asm)): Symbolic code for the corner turns in the Lévy dragon curve.
 * [A346376](http://oeis.org/A346376) ([program](346/A346376.asm)): a(n) = n^4 + 14*n^3 + 63*n^2 + 98*n + 28.
 * [A346403](http://oeis.org/A346403) ([program](346/A346403.asm)): a(1)=1; for n>1, a(n) gives the sum of the exponents in the different ways to write n as n = x^y, 2 <= x, 1 <= y.
+* [A346502](http://oeis.org/A346502) ([program](346/A346502.asm)): a(n) = 3n - (sum of digits of 3n in base 3).

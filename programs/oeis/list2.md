@@ -1854,6 +1854,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A117950](http://oeis.org/A117950) ([program](117/A117950.asm)): a(n) = n^2 + 3.
 * [A117951](http://oeis.org/A117951) ([program](117/A117951.asm)): a(n) = n^2 + 5.
 * [A117961](http://oeis.org/A117961) ([program](117/A117961.asm)): Hexagonal numbers with prime indices.
+* [A117962](http://oeis.org/A117962) ([program](117/A117962.asm)): Partial sums of hexagonal numbers with prime indices.
 * [A117964](http://oeis.org/A117964) ([program](117/A117964.asm)): A117963 mod 2.
 * [A117966](http://oeis.org/A117966) ([program](117/A117966.asm)): Balanced ternary enumeration (based on balanced ternary representation) of integers; write n in ternary and then replace 2's with (-1)'s.
 * [A117973](http://oeis.org/A117973) ([program](117/A117973.asm)): a(n) = 2^(wt(n)+1), where wt() = A000120().
@@ -2807,6 +2808,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A128223](http://oeis.org/A128223) ([program](128/A128223.asm)): a(n) = if n mod 2 = 0 then n*(n+1)/2 otherwise (n+1)^2/2-1.
 * [A128227](http://oeis.org/A128227) ([program](128/A128227.asm)): Right border (1,1,1,...) added to A002260.
 * [A128229](http://oeis.org/A128229) ([program](128/A128229.asm)): A natural number transform, inverse of signed A094587.
+* [A128233](http://oeis.org/A128233) ([program](128/A128233.asm)): Average of p(n) and p(p(n)), where p(k) is the k-th prime.
 * [A128251](http://oeis.org/A128251) ([program](128/A128251.asm)): n^4 - 1 divided by its largest fourth power divisor.
 * [A128309](http://oeis.org/A128309) ([program](128/A128309.asm)): 2*A000069(n).
 * [A128311](http://oeis.org/A128311) ([program](128/A128311.asm)): Remainder upon division of 2^(n-1)-1 by n.

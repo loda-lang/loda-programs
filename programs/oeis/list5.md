@@ -1971,7 +1971,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A279316](http://oeis.org/A279316) ([program](279/A279316.asm)): Period 7: repeat [0, 1, 2, 3, 3, 2, 1].
 * [A279319](http://oeis.org/A279319) ([program](279/A279319.asm)): Period 16 zigzag sequence: repeat [0,1,2,3,4,5,6,7,8,7,6,5,4,3,2,1].
 * [A279321](http://oeis.org/A279321) ([program](279/A279321.asm)): Period 7: repeat [1, 3, 5, 7, 5, 3, 1].
-* [A279322](http://oeis.org/A279322) ([program](279/A279322.asm)): Number of n X 1 0..2 arrays with no element equal to a strict majority of its king-move neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
 * [A279340](http://oeis.org/A279340) ([program](279/A279340.asm)): First differences of A055938.
 * [A279415](http://oeis.org/A279415) ([program](279/A279415.asm)): Triangle read by rows: T(n,k), n>=k>=1, is the number of right isosceles  triangles with integral coordinates that have a bounding box of size n X k.
 * [A279437](http://oeis.org/A279437) ([program](279/A279437.asm)): Number of ways to place 3 points on an n X n square grid so that no more than 2 points are on a vertical or horizontal straight line.
@@ -2662,6 +2661,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291018](http://oeis.org/A291018) ([program](291/A291018.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 6 S + S^2.
 * [A291023](http://oeis.org/A291023) ([program](291/A291023.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 3 S^2 + 2 S^3.
 * [A291024](http://oeis.org/A291024) ([program](291/A291024.asm)): p-INVERT of (1,1,1,1,1,...), where p(S) = (1 - 2 S^2)^2.
+* [A291033](http://oeis.org/A291033) ([program](291/A291033.asm)): p-INVERT of the positive integers, where p(S) = 1 - 6*S.
 * [A291040](http://oeis.org/A291040) ([program](291/A291040.asm)): The arithmetic function u(n,3,2).
 * [A291064](http://oeis.org/A291064) ([program](291/A291064.asm)): a(n) = 2^n*(n + 1) - 3*(n - 1).
 * [A291092](http://oeis.org/A291092) ([program](291/A291092.asm)): 1 followed by infinitely many 9's.
@@ -3006,7 +3006,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296965](http://oeis.org/A296965) ([program](296/A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
 * [A296966](http://oeis.org/A296966) ([program](296/A296966.asm)): Sum of all the parts in the partitions of n into two distinct parts such that the smaller part divides the larger.
 * [A297024](http://oeis.org/A297024) ([program](297/A297024.asm)): Sum of the smaller parts of the partitions of n into two parts such that the smaller part does not divide the larger.
-* [A297043](http://oeis.org/A297043) ([program](297/A297043.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-15 digits of n; see Comments.
+* [A297044](http://oeis.org/A297044) ([program](297/A297044.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-16 digits of n; see Comments
+* [A297045](http://oeis.org/A297045) ([program](297/A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
 * [A297086](http://oeis.org/A297086) ([program](297/A297086.asm)): a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
 * [A297109](http://oeis.org/A297109) ([program](297/A297109.asm)): If n is prime(k)^e, e >= 1, then a(n) = k, otherwise 0.
 * [A297155](http://oeis.org/A297155) ([program](297/A297155.asm)): a(1) = a(2) = 0, after which, a(n) = 1+a(n/2) if n is of the form 4k+2, otherwise a(n) = a(A252463(n)).
@@ -3126,6 +3127,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A299692](http://oeis.org/A299692) ([program](299/A299692.asm)): a(n) is the total area that is visible in the perspective view of the stepped pyramid with n levels described in A245092.
 * [A299763](http://oeis.org/A299763) ([program](299/A299763.asm)): a(n) = 1 + A182986(n).
 * [A299766](http://oeis.org/A299766) ([program](299/A299766.asm)): Greatest odd noncomposite divisor of n.
+* [A299795](http://oeis.org/A299795) ([program](299/A299795.asm)): Numbers of the form p*2^(p-1) where p is prime.
 * [A299822](http://oeis.org/A299822) ([program](299/A299822.asm)): Product of Euler's totient and the squarefree kernel, a(n) = phi(n)*rad(n).
 * [A299913](http://oeis.org/A299913) ([program](299/A299913.asm)): a(n) = a(n-1) + 2*a(n-2) if n even, or 3*a(n-1) + 4*a(n-2) if n odd, starting with 0, 1.
 * [A299965](http://oeis.org/A299965) ([program](299/A299965.asm)): Number of triangles in a Star of David of size n.

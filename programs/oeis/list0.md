@@ -3400,6 +3400,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024080](http://oeis.org/A024080) ([program](024/A024080.asm)): a(n) = 7^n - n^5.
 * [A024081](http://oeis.org/A024081) ([program](024/A024081.asm)): a(n) = 7^n - n^6.
 * [A024082](http://oeis.org/A024082) ([program](024/A024082.asm)): 7^n-n^7.
+* [A024096](http://oeis.org/A024096) ([program](024/A024096.asm)): a(n) = 8^n - n^8.
 * [A024163](http://oeis.org/A024163) ([program](024/A024163.asm)): Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such that c - b < b - a.
 * [A024164](http://oeis.org/A024164) ([program](024/A024164.asm)): Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such that c - b = b - a.
 * [A024165](http://oeis.org/A024165) ([program](024/A024165.asm)): Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such that c - b > b - a.
@@ -5208,6 +5209,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A039966](http://oeis.org/A039966) ([program](039/A039966.asm)): a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
 * [A039968](http://oeis.org/A039968) ([program](039/A039968.asm)): An example of a d-perfect sequence.
 * [A039969](http://oeis.org/A039969) ([program](039/A039969.asm)): An example of a d-perfect sequence: a(n) = Catalan(n) mod 3.
+* [A039971](http://oeis.org/A039971) ([program](039/A039971.asm)): An example of a d-perfect sequence.
 * [A039982](http://oeis.org/A039982) ([program](039/A039982.asm)): Let phi denote the morphism 0 -> 11, 1 -> 10. This sequence is the limit S(oo) where S(0) = 1; S(n+1) = 1.phi(S(n)).
 * [A039983](http://oeis.org/A039983) ([program](039/A039983.asm)): An example of a d-perfect sequence.
 * [A039984](http://oeis.org/A039984) ([program](039/A039984.asm)): An example of a d-perfect sequence.
