@@ -19,7 +19,7 @@ lpb $0
 lpe
 mov $1,$2
 add $4,1
-cal $5,142
+cal $5,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mul $5,$4
 div $1,$5
 add $1,$5

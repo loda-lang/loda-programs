@@ -6,6 +6,5 @@ lpb $0
   cal $0,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
   add $1,1
   add $1,$0
-  dif $0,6
 lpe
 add $1,1

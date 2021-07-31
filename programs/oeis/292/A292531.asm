@@ -5,7 +5,11 @@ add $0,1
 mov $1,$0
 pow $1,2
 mov $2,$1
-gcd $2,4096
-sub $1,$2
+mov $3,1
+lpb $2
+  dif $2,2
+  mul $3,2
+lpe
+sub $1,$3
 div $1,8
 mul $1,8

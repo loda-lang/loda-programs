@@ -11,7 +11,6 @@ lpb $2
   mov $3,$2
   sub $5,14
   sub $3,$5
-  max $3,0
   cal $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

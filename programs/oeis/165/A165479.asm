@@ -19,7 +19,7 @@ lpb $9
     pow $5,$5
     add $7,1
     gcd $7,3
-    cal $8,142
+    cal $8,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
   lpe
   mov $3,$8
   add $3,$7

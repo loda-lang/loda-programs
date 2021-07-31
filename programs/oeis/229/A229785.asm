@@ -3,15 +3,11 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,71928 ; Kolakoski-(2,4) sequence: a(n) is length of n-th run.
-  pow $0,6
-  mov $3,$0
-  div $3,4032
-  add $3,1
-  add $1,$3
+  cal $0,157129 ; An analog of the Kolakoski sequence  A000002, only now a(n) = (length of n-th run divided by 2) using 1 and 2 and starting with 1,1.
+  add $1,$0
 lpe

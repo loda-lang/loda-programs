@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,85697 ; a(n) = T(n+2)^2, where T(n) = tribonacci numbers (A000073).
+  cal $2,85697 ; a(n) = T(n)^2, where T(n) = A000073(n) is the n-th tribonacci number.
   add $1,$2
 lpe

@@ -4,4 +4,4 @@
 add $0,1
 cal $0,230980 ; Number of primes <= n, starting at n=0.
 mov $1,$0
-cal $1,142
+cal $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).

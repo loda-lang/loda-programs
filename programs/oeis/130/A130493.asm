@@ -7,4 +7,4 @@ lpb $0
   trn $0,1
   add $1,1
 lpe
-cal $1,142
+cal $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).

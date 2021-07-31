@@ -3,4 +3,4 @@
 
 cal $0,25581 ; Triangle T(n, k) = n-k, 0 <= k <= n.
 mov $1,$0
-cal $1,142
+cal $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
