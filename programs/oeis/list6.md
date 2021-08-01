@@ -1167,6 +1167,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321483](http://oeis.org/A321483) ([program](321/A321483.asm)): a(n) = 7*2^n + (-1)^n.
 * [A321499](http://oeis.org/A321499) ([program](321/A321499.asm)): Numbers of the form (x - y)(x^2 - y^2) with x > y > 0.
 * [A321501](http://oeis.org/A321501) ([program](321/A321501.asm)): Numbers not of the form (x - y)(x^2 - y^2) with x > y > 0; complement of A321499.
+* [A321531](http://oeis.org/A321531) ([program](321/A321531.asm)): a(n) is the maximum number of distinct directions between n non-attacking rooks on an n X n chessboard.
 * [A321573](http://oeis.org/A321573) ([program](321/A321573.asm)): Row sums of A321624.
 * [A321579](http://oeis.org/A321579) ([program](321/A321579.asm)): Number of n-tuples of 4 elements excluding reverse duplicates and those consisting of repetitions of the same element only.
 * [A321643](http://oeis.org/A321643) ([program](321/A321643.asm)): a(n) = 5*2^n - (-1)^n.
@@ -1502,6 +1503,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329379](http://oeis.org/A329379) ([program](329/A329379.asm)): a(n) = n/A093411(n), where A093411(n) is obtained by repeatedly dividing n by the largest factorial that divides it until an odd number is reached.
 * [A329402](http://oeis.org/A329402) ([program](329/A329402.asm)): Number of rectangles (w X h, w <= h) with integer side lengths w and h having area = n * perimeter.
 * [A329404](http://oeis.org/A329404) ([program](329/A329404.asm)): Interleave 2*n*(3*n-1), (2*n+1)*(6*n+1) for n >= 0.
+* [A329422](http://oeis.org/A329422) ([program](329/A329422.asm)): Maximum length of a binary n-similar word.
 * [A329480](http://oeis.org/A329480) ([program](329/A329480.asm)): a(n) = (1 - A075677(n))/6 if 6|(A075677(n)-1) or a(n) = (A075677(n) + 1)/6 if 6|(A075677(n)+1).
 * [A329482](http://oeis.org/A329482) ([program](329/A329482.asm)): Interleave 1 - n + 3*n^2, 1 + 3*n*(1+n) for n >= 0.
 * [A329486](http://oeis.org/A329486) ([program](329/A329486.asm)): a(n) = 3*A006519(n)/2 + n/2 where A006519(n) is the highest power of 2 dividing n.
@@ -1922,6 +1924,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337895](http://oeis.org/A337895) ([program](337/A337895.asm)): Number of oriented colorings of the tetrahedral facets (or vertices) of a regular 4-dimensional simplex using n or fewer colors.
 * [A337896](http://oeis.org/A337896) ([program](337/A337896.asm)): Number of chiral pairs of colorings of the 8 triangular faces of a regular octahedron or the 8 vertices of a cube using n or fewer colors.
 * [A337899](http://oeis.org/A337899) ([program](337/A337899.asm)): Number of chiral pairs of colorings of the edges of a regular tetrahedron using n or fewer colors.
+* [A337900](http://oeis.org/A337900) ([program](337/A337900.asm)): The number of walks of length 2n on the square lattice that start from the origin (0,0) and end at the vertex (2,0).
 * [A337909](http://oeis.org/A337909) ([program](337/A337909.asm)): Distinct terms of A080079 in the order in which they appear.
 * [A337923](http://oeis.org/A337923) ([program](337/A337923.asm)): a(n) is the exponent of the highest power of 2 dividing the n-th Fibonacci number.
 * [A337928](http://oeis.org/A337928) ([program](337/A337928.asm)): Numbers w such that (F(2n+1)^2, -F(2n)^2, -w) are primitive solutions of the Diophantine equation 2*x^3 + 2*y^3 + z^3 = 1, where F(n) is the n-th Fibonacci number (A000045).

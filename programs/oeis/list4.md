@@ -149,6 +149,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A203789](http://oeis.org/A203789) ([program](203/A203789.asm)): Number of (n+1)X2 0..3 arrays with every 2X2 subblock having equal diagonal elements or equal antidiagonal elements
 * [A203819](http://oeis.org/A203819) ([program](203/A203819.asm)): Number of (n+1)X2 0..3 arrays with no 2X2 subblock having equal diagonal elements or equal antidiagonal elements
 * [A203820](http://oeis.org/A203820) ([program](203/A203820.asm)): Number of (n+1)X3 0..3 arrays with no 2X2 subblock having equal diagonal elements or equal antidiagonal elements
+* [A203821](http://oeis.org/A203821) ([program](203/A203821.asm)): Number of (n+1)X4 0..3 arrays with no 2X2 subblock having equal diagonal elements or equal antidiagonal elements
 * [A203872](http://oeis.org/A203872) ([program](203/A203872.asm)): Number of (n+1)X3 0..3 arrays with no 2X2 subblock having equal diagonal elements or equal antidiagonal elements, and new values 0..3 introduced in row major order
 * [A203873](http://oeis.org/A203873) ([program](203/A203873.asm)): Number of (n+1)X4 0..3 arrays with no 2X2 subblock having equal diagonal elements or equal antidiagonal elements, and new values 0..3 introduced in row major order
 * [A203880](http://oeis.org/A203880) ([program](203/A203880.asm)): Number of (n+1)X2 0..6 arrays with every 2X2 subblock having equal diagonal elements or equal antidiagonal elements
@@ -1558,6 +1559,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225126](http://oeis.org/A225126) ([program](225/A225126.asm)): Central terms of the triangle in A048152.
 * [A225144](http://oeis.org/A225144) ([program](225/A225144.asm)): a(n) = Sum_{i=n..2*n} i^2*(-1)^i.
 * [A225152](http://oeis.org/A225152) ([program](225/A225152.asm)): Let b(k) be A036378, then a(n) is the number of b(k) terms such that 2^n < b(k) <= 2^(n+1).
+* [A225190](http://oeis.org/A225190) ([program](225/A225190.asm)): (n+2)^(n+2) mod n^n.
 * [A225215](http://oeis.org/A225215) ([program](225/A225215.asm)): Floor of the Euclidean distance of a point on the (1, 1, 1; 1, 1, 1) 3D walk.
 * [A225232](http://oeis.org/A225232) ([program](225/A225232.asm)): The number of FO3C2 moves required to restore a packet of n playing cards to its original state (order and orientation).
 * [A225240](http://oeis.org/A225240) ([program](225/A225240.asm)): The squares on a chessboard that are white, counting from top left corner and down.
@@ -1796,7 +1798,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228706](http://oeis.org/A228706) ([program](228/A228706.asm)): Expansion of (1 - 3*x + 5*x^2 - 3*x^3 + x^4)/((1-x)^4*(1+x^2)^2).
 * [A228728](http://oeis.org/A228728) ([program](228/A228728.asm)): a(1)=1, a(2)=2 and for n > 2, a(n) is the least integer > a(n-1) such that there is a permutation b(1), ..., b(n) of a(1), ..., a(n) with b(1) = a(1) and b(n) = a(n), and with the n numbers |b(1)-b(2)|, |b(2)-b(3)|, ..., |b(n-1)-b(n)|, |b(n)-b(1)| pairwise distinct.
 * [A228729](http://oeis.org/A228729) ([program](228/A228729.asm)): Product of the positive squares less than or equal to n.
+* [A228763](http://oeis.org/A228763) ([program](228/A228763.asm)): a(n) = 2^L(n) - 1, where L(n) is the n-th Lucas number (A000032).
 * [A228767](http://oeis.org/A228767) ([program](228/A228767.asm)): Second bisection of the inverse binomial transform of the rational sequence with e.g.f. (x/2)*(exp(-x)+1)/(exp(x)-1).
+* [A228789](http://oeis.org/A228789) ([program](228/A228789.asm)): a(n) = 2^L(n) + 1, where L(n) is A000032(n).
 * [A228791](http://oeis.org/A228791) ([program](228/A228791.asm)): Number of n X 3 binary arrays with top left element equal to 1 and no two ones adjacent horizontally or nw-se.
 * [A228797](http://oeis.org/A228797) ([program](228/A228797.asm)): Number of 2 X n binary arrays with top left element equal to 1 and no two ones adjacent horizontally or nw-se.
 * [A228826](http://oeis.org/A228826) ([program](228/A228826.asm)): Delayed continued fraction of sqrt(2).
@@ -1937,6 +1941,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A230864](http://oeis.org/A230864) ([program](230/A230864.asm)): log2*(n) (version 3): number of iterations log_2(log_2(log_2(...(n)...))) required for the result to be <= 1.
 * [A230865](http://oeis.org/A230865) ([program](230/A230865.asm)): a(n) = n + (sum of digits in base-5 representation of n).
 * [A230877](http://oeis.org/A230877) ([program](230/A230877.asm)): If n = Sum_{i=0..m} c(i)*2^i, c(i) = 0 or 1, then a(n) = Sum_{i=0..m} (m+1-i)*c(i).
+* [A230900](http://oeis.org/A230900) ([program](230/A230900.asm)): a(n) = 2^Lucas(n).
 * [A230928](http://oeis.org/A230928) ([program](230/A230928.asm)): Number of black-square subarrays of (n+2) X (1+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
 * [A230929](http://oeis.org/A230929) ([program](230/A230929.asm)): Number of black-square subarrays of (n+2) X (2+2) 0..3 arrays x(i,j) with each element diagonally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
 * [A230980](http://oeis.org/A230980) ([program](230/A230980.asm)): Number of primes <= n, starting at n=0.

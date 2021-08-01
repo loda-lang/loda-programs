@@ -1,7 +1,11 @@
 ; A006672: Ramsey numbers.
 ; 4,4,6,7,8,9,11,12,13,14
 
-max $0,1
-cal $0,37 ; Numbers that are not squares (or, the nonsquares).
+add $0,2
 mov $1,$0
-add $1,1
+pow $0,2
+sub $0,2
+mul $1,2
+bin $1,3
+div $1,$0
+add $1,2
