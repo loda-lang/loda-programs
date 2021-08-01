@@ -514,6 +514,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210982](http://oeis.org/A210982) ([program](210/A210982.asm)): Zero together with A126264 and positive terms of A051624 interleaved.
 * [A210983](http://oeis.org/A210983) ([program](210/A210983.asm)): Total number of pairs of states of the first n subshells of the nuclear shell model in which the subshells are ordered by energy level in increasing order.
 * [A210984](http://oeis.org/A210984) ([program](210/A210984.asm)): Total number of states of the first n subshells of the nuclear shell model in which the subshells are ordered by energy level in increasing order.
+* [A211004](http://oeis.org/A211004) ([program](211/A211004.asm)): Number of distinct regions in the set of partitions of n.
 * [A211006](http://oeis.org/A211006) ([program](211/A211006.asm)): Pair (n,p) where n is the sum of adjacent nonprimes and p is the sum of adjacent primes.
 * [A211007](http://oeis.org/A211007) ([program](211/A211007.asm)): Surface area of the first n faces of the structure mentioned in A211006.
 * [A211010](http://oeis.org/A211010) ([program](211/A211010.asm)): Value on the axis "x" of the endpoint of the structure of A211000 at n-th stage.
@@ -667,6 +668,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A212522](http://oeis.org/A212522) ([program](212/A212522.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w>=2x and y>3z.
 * [A212523](http://oeis.org/A212523) ([program](212/A212523.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<y+z.
 * [A212530](http://oeis.org/A212530) ([program](212/A212530.asm)): Difference between the sum of the first n primes s(n) and the nearest square <  s(n).
+* [A212555](http://oeis.org/A212555) ([program](212/A212555.asm)): Values of ||G*(n)|| related to construction of graphs which contain all small trees.
 * [A212560](http://oeis.org/A212560) ([program](212/A212560.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x<=y+z.
 * [A212561](http://oeis.org/A212561) ([program](212/A212561.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w + x = 2y + 2z.
 * [A212565](http://oeis.org/A212565) ([program](212/A212565.asm)): Number of (w,x,y,z) with all terms in {1,...,n} and w+x>=2y+2z.
@@ -2104,6 +2106,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A236652](http://oeis.org/A236652) ([program](236/A236652.asm)): Positive integers n such that n^2 divided by the digital root of n is a square.
 * [A236653](http://oeis.org/A236653) ([program](236/A236653.asm)): Positive integers n such that n^3 divided by the digital root of n is a cube.
 * [A236680](http://oeis.org/A236680) ([program](236/A236680.asm)): Dimension of the space of spinors in n-dimensional real space.
+* [A236682](http://oeis.org/A236682) ([program](236/A236682.asm)): Values of a for triples (a,b,c) of positive integers such that 1/a + 1/b + 1/c = 1/2 and a <= b <= c, listed with multiplicity.
 * [A236770](http://oeis.org/A236770) ([program](236/A236770.asm)): a(n) = n*(n + 1)*(3*n^2 + 3*n - 2)/8.
 * [A236771](http://oeis.org/A236771) ([program](236/A236771.asm)): a(n) = n + floor(n/2 + n^2/3).
 * [A236773](http://oeis.org/A236773) ([program](236/A236773.asm)): a(n) = n + floor( n^2/2 + n^3/3 ).
@@ -2250,6 +2253,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A239693](http://oeis.org/A239693) ([program](239/A239693.asm)): Base 7 sum of digits of prime(n).
 * [A239694](http://oeis.org/A239694) ([program](239/A239694.asm)): Base 8 sum of digits of prime(n).
 * [A239695](http://oeis.org/A239695) ([program](239/A239695.asm)): Base 9 sum of digits of prime(n).
+* [A239739](http://oeis.org/A239739) ([program](239/A239739.asm)): a(n) = n*4^(2*n+1).
 * [A239745](http://oeis.org/A239745) ([program](239/A239745.asm)): a(n) = (3*2^(n+2) + n*(n+5))/2 - 6.
 * [A239767](http://oeis.org/A239767) ([program](239/A239767.asm)): Degrees of polynomial on the fermionic side of the finite generalization of identity 46 from Slater's List.
 * [A239794](http://oeis.org/A239794) ([program](239/A239794.asm)): 5*n^2 + 4*n - 15.
@@ -2323,6 +2327,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A241407](http://oeis.org/A241407) ([program](241/A241407.asm)): Numbers n such that n^2 == -1 (mod 73).
 * [A241422](http://oeis.org/A241422) ([program](241/A241422.asm)): Limit-reverse of the infinite Fibonacci word A003849 with first term as initial block.
 * [A241452](http://oeis.org/A241452) ([program](241/A241452.asm)): a(n) = pg(3, n) + pg(4, n) + ... + pg(n, n) where pg(m, n) is the n-th m-th-order polygonal number.
+* [A241460](http://oeis.org/A241460) ([program](241/A241460.asm)): Number of simple connected graphs g on n nodes with |Aut(g)| = 14
 * [A241496](http://oeis.org/A241496) ([program](241/A241496.asm)): Expansion of (1 + 4*x + x^2) / (1 - x^2)^3.
 * [A241520](http://oeis.org/A241520) ([program](241/A241520.asm)): Numbers n such that n^2 == -1 (mod 89).
 * [A241521](http://oeis.org/A241521) ([program](241/A241521.asm)): Numbers n such that n^2 == -1 (mod 97).
@@ -2626,6 +2631,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245685](http://oeis.org/A245685) ([program](245/A245685.asm)): Sigma(2p)/2, for odd primes p.
 * [A245710](http://oeis.org/A245710) ([program](245/A245710.asm)): Number of nonzero evil numbers <= n, see A001969.
 * [A245738](http://oeis.org/A245738) ([program](245/A245738.asm)): Number of compositions of n into parts 1 and 2 with both parts present.
+* [A245761](http://oeis.org/A245761) ([program](245/A245761.asm)): Numbers with a maximal multiplicative persistence of 1 in any base.
 * [A245764](http://oeis.org/A245764) ([program](245/A245764.asm)): a(n) = 2*(n^2 + 1) + n*(1 + (-1)^n).
 * [A245766](http://oeis.org/A245766) ([program](245/A245766.asm)): a(n) = 2*(n^2 + 1) - n*(1 + (-1)^n).
 * [A245788](http://oeis.org/A245788) ([program](245/A245788.asm)): n times the number of 1's in the binary expansion of n.

@@ -1250,6 +1250,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A323397](http://oeis.org/A323397) ([program](323/A323397.asm)): a(n) = (4^n + 15*n - 1)/9
 * [A323466](http://oeis.org/A323466) ([program](323/A323466.asm)): Number of terms in row n of A323465.
 * [A323467](http://oeis.org/A323467) ([program](323/A323467.asm)): Smallest number in row n of A323465.
+* [A323535](http://oeis.org/A323535) ([program](323/A323535.asm)): a(n) = Product_{k=1..n} (binomial(k-1,7) + binomial(n-k,7)).
 * [A323547](http://oeis.org/A323547) ([program](323/A323547.asm)): n-th digit in the base-2 expansion of 1/n.
 * [A323608](http://oeis.org/A323608) ([program](323/A323608.asm)): The position function the fractalization of which yields A323607.
 * [A323610](http://oeis.org/A323610) ([program](323/A323610.asm)): List of 5-powerful numbers (for the definition of k-powerful see A323395).

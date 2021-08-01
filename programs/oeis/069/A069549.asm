@@ -3,6 +3,9 @@
 
 trn $0,1
 cal $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
-cal $0,40 ; The prime numbers.
+cal $0,6005 ; The odd prime numbers together with 1.
+mul $0,2
+max $0,4
 pow $0,2
 mov $1,$0
+div $1,4

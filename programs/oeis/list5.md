@@ -424,6 +424,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257567](http://oeis.org/A257567) ([program](257/A257567.asm)): a(n) = the highest power of 3 that divides (prime(n)^2+2).
 * [A257587](http://oeis.org/A257587) ([program](257/A257587.asm)): If n = abcd... in decimal, a(n) = a^2-b^2+c^2-d^2+...
 * [A257589](http://oeis.org/A257589) ([program](257/A257589.asm)): a(n) = (2n+1)^2*Catalan(n).
+* [A257594](http://oeis.org/A257594) ([program](257/A257594.asm)): Consider the hexagonal lattice packing of circles; a(n) is the maximal number of circles that can be enclosed by a closed chain of n circles.
 * [A257601](http://oeis.org/A257601) ([program](257/A257601.asm)): a(n) = n^4/12+5*n^3/3+125*n^2/12+125*n/6+2.
 * [A257602](http://oeis.org/A257602) ([program](257/A257602.asm)): Expansion of (1+x+21*x^2+x^3+x^4)/(1-x)^5.
 * [A257637](http://oeis.org/A257637) ([program](257/A257637.asm)): Maximal number of edges in an n-vertex triangle-free graph with maximal degree at most 4.
@@ -1166,6 +1167,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268044](http://oeis.org/A268044) ([program](268/A268044.asm)): The odd numbers congruent to {3, 4} mod 5.
 * [A268099](http://oeis.org/A268099) ([program](268/A268099.asm)): a(n) = 2^(n mod 2)*5*10^floor(n/2) - 1.
 * [A268100](http://oeis.org/A268100) ([program](268/A268100.asm)): a(n) = 2^((n-1) mod 2)*5*10^floor((n-1)/2).
+* [A268147](http://oeis.org/A268147) ([program](268/A268147.asm)): A double binomial sum involving absolute values.
 * [A268185](http://oeis.org/A268185) ([program](268/A268185.asm)): a(n) = prime(n) + last digit of prime(n).
 * [A268201](http://oeis.org/A268201) ([program](268/A268201.asm)): a(n) = 4*n^3 - 6*n^2 + 3*n - 1.
 * [A268226](http://oeis.org/A268226) ([program](268/A268226.asm)): Complement of A056991.
@@ -1462,6 +1464,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A271832](http://oeis.org/A271832) ([program](271/A271832.asm)): Period 12 zigzag sequence: repeat [0,1,2,3,4,5,6,5,4,3,2,1].
 * [A271860](http://oeis.org/A271860) ([program](271/A271860.asm)): a(n) = -Sum_{i=1..n} (-1)^floor(n/i).
 * [A271870](http://oeis.org/A271870) ([program](271/A271870.asm)): Convolution of nonzero hexagonal numbers (A000384) with themselves.
+* [A271907](http://oeis.org/A271907) ([program](271/A271907.asm)): Size of the largest subset S of the points of an n X n square grid such that no three of the points of S form an isosceles triangle.
 * [A271911](http://oeis.org/A271911) ([program](271/A271911.asm)): Number of ways to choose three distinct points from a 2 X n grid so that they form an isosceles triangle.
 * [A271937](http://oeis.org/A271937) ([program](271/A271937.asm)): a(n) = (7/4)*n^2 + (5/2)*n + (7 + (-1)^n)/8.
 * [A271939](http://oeis.org/A271939) ([program](271/A271939.asm)): Number of edges in the n-th order Sierpinski carpet graph.
@@ -2190,6 +2193,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A283733](http://oeis.org/A283733) ([program](283/A283733.asm)): a(n) = a(n-1) + 1 + floor(n*golden ratio), with a(0) = 1.
 * [A283750](http://oeis.org/A283750) ([program](283/A283750.asm)): a(n) = n^2 XOR (n + 1)^2.
 * [A283794](http://oeis.org/A283794) ([program](283/A283794.asm)): Positions of 1 in A288375; complement of A288625.
+* [A283810](http://oeis.org/A283810) ([program](283/A283810.asm)): Numbers of variables for which the Shapiro inequality holds.
 * [A283833](http://oeis.org/A283833) ([program](283/A283833.asm)): For t >= 0, if 2^t + t - 3 <= n <= 2^t + t - 1 then a(n) = 2^t - 1, while if 2^t + t - 1 < n < 2^(t+1) + t - 3 then a(n) = 2^(t+1) + t - 2 - n.
 * [A283834](http://oeis.org/A283834) ([program](283/A283834.asm)): Number of length-n binary vectors beginning with 0, ending with 1, and avoiding 4 consecutive 0's and 4 consecutive 1's.
 * [A283845](http://oeis.org/A283845) ([program](283/A283845.asm)): Square array read by antidiagonals: T(1,1) = T(1,2) = T(2,1) = T(2,2) = 1; thereafter T(m,n) = min {T(m,n-2) + T(m,n-1), T(m-2,n) + T(m-1,n), T(m-2,n-2) + T(m-1,n-1)}.

@@ -2825,6 +2825,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A072490](http://oeis.org/A072490) ([program](072/A072490.asm)): Number of squarefree numbers (excluding 1) less than n.
 * [A072491](http://oeis.org/A072491) ([program](072/A072491.asm)): Define f(1) = 0. For n>=2, let f(n) = n - p where p is the largest prime <= n. a(n) = number of iterations of f to reach 0, starting from n.
 * [A072493](http://oeis.org/A072493) ([program](072/A072493.asm)): a(1) = 1 and a(n) = ceiling((Sum_{k=1..n-1} a(k))/3) for n >= 2.
+* [A072507](http://oeis.org/A072507) ([program](072/A072507.asm)): Smallest start of n consecutive integers with n divisors, or 0 if no such number exists.
 * [A072527](http://oeis.org/A072527) ([program](072/A072527.asm)): Number of values of k such that n divided by k leaves a remainder 3.
 * [A072547](http://oeis.org/A072547) ([program](072/A072547.asm)): Main diagonal of the array in which first column and row are filled alternatively with 1's or 0's and then T(i,j) = T(i-1,j) + T(i,j-1).
 * [A072557](http://oeis.org/A072557) ([program](072/A072557.asm)): Let w(n) be defined by the following recurrence: w(1)=w(2)=w(3)=1, w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3); sequence gives values of n such that w(n) is an integer.
@@ -3522,6 +3523,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A079503](http://oeis.org/A079503) ([program](079/A079503.asm)): a(n) = (n-1)^3*((n-2)^2 - 2*(n-3)).
 * [A079504](http://oeis.org/A079504) ([program](079/A079504.asm)): a(n) = 8*n^3*((2*n-1)^2 - 4*n + 4).
 * [A079505](http://oeis.org/A079505) ([program](079/A079505.asm)): The last number for which a determinant of base-n numbers is nonzero.
+* [A079509](http://oeis.org/A079509) ([program](079/A079509.asm)): Duplicate of A000096.
 * [A079524](http://oeis.org/A079524) ([program](079/A079524.asm)): Expansion of (x + b*x^2 - b*x^3)/((1 - x^2)*(1 - x)^2) with b=2.
 * [A079535](http://oeis.org/A079535) ([program](079/A079535.asm)): a(n) = phi(n)*d(n) - n.
 * [A079547](http://oeis.org/A079547) ([program](079/A079547.asm)): a(n) = ((n^6 - (n-1)^6) - (n^2 - (n-1)^2))/60.
@@ -5201,6 +5203,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A092535](http://oeis.org/A092535) ([program](092/A092535.asm)): G.f.: (1+x^2)*(1+x^3)/((1-x)*(1-x^2)).
 * [A092542](http://oeis.org/A092542) ([program](092/A092542.asm)): Table below read by antidiagonals alternately upwards and downwards.
 * [A092543](http://oeis.org/A092543) ([program](092/A092543.asm)): Table below read by antidiagonals alternately upwards and downwards.
+* [A092596](http://oeis.org/A092596) ([program](092/A092596.asm)): Natural numbers n for which sum of decimal digits is greater than n/2.
 * [A092598](http://oeis.org/A092598) ([program](092/A092598.asm)): Natural numbers n for which sum of decimal digits is greater than n/4.
 * [A092693](http://oeis.org/A092693) ([program](092/A092693.asm)): Sum of iterated phi(n).
 * [A092694](http://oeis.org/A092694) ([program](092/A092694.asm)): Product of iterated phi(n).
@@ -5880,6 +5883,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099407](http://oeis.org/A099407) ([program](099/A099407.asm)): Number of points of self-intersection of the path of a billiard ball traveling at a 45-degree angle on a prime(n) X prime(n+1) billiard table. Also equal to 1/2 the number of the lattice points lying within a prime(n) X prime(n+1) rectangle.
 * [A099425](http://oeis.org/A099425) ([program](099/A099425.asm)): Expansion of (1+x^2)/(1-2*x-x^2).
 * [A099427](http://oeis.org/A099427) ([program](099/A099427.asm)): a(1) = 1; for n > 1, a(n) = 1 + greatest common divisor of n and a(n-1).
+* [A099428](http://oeis.org/A099428) ([program](099/A099428.asm)): Duplicate of A099920.
 * [A099429](http://oeis.org/A099429) ([program](099/A099429.asm)): A Jacobsthal-Lucas convolution.
 * [A099430](http://oeis.org/A099430) ([program](099/A099430.asm)): 2^n+(-1)^n-1.
 * [A099431](http://oeis.org/A099431) ([program](099/A099431.asm)): Expansion of x(1-2x+3x^2)/(1-x-2x)^2;.
