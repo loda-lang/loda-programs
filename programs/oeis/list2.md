@@ -2311,6 +2311,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A122069](http://oeis.org/A122069) ([program](122/A122069.asm)): a(n) = 3*a(n-1) + 9*a(n-2) for n > 1, with a(0)=1, a(1)=3.
 * [A122074](http://oeis.org/A122074) ([program](122/A122074.asm)): a(0)=1, a(1)=6, a(n) = 7*a(n-1) - 2*a(n-2).
 * [A122088](http://oeis.org/A122088) ([program](122/A122088.asm)): Add 10, subtract 5, add 10, subtract 5, ad infinitum.
+* [A122102](http://oeis.org/A122102) ([program](122/A122102.asm)): a(n) = Sum_{k=1..n} prime(k)^4.
 * [A122103](http://oeis.org/A122103) ([program](122/A122103.asm)): Sum of the fifth powers of the first n primes.
 * [A122117](http://oeis.org/A122117) ([program](122/A122117.asm)): a(n) = 3*a(n-1) + 4*a(n-2), with a(0)=1, a(1)=2.
 * [A122124](http://oeis.org/A122124) ([program](122/A122124.asm)): Numbers n such that 25 divides Sum[ Prime[k]^n, {k,1,n}].
@@ -4298,6 +4299,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A139329](http://oeis.org/A139329) ([program](139/A139329.asm)): a(n) = (factorial of the number of 0's in the binary expansion of n).
 * [A139351](http://oeis.org/A139351) ([program](139/A139351.asm)): Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k's that are even, o(n) the number that are odd; sequence gives e(n).
 * [A139352](http://oeis.org/A139352) ([program](139/A139352.asm)): Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k's that are even, o(n) the number that are odd; sequence gives o(n).
+* [A139374](http://oeis.org/A139374) ([program](139/A139374.asm)): Digit sum of Lucas numbers.
 * [A139391](http://oeis.org/A139391) ([program](139/A139391.asm)): Next odd term in Collatz trajectory with starting value n.
 * [A139398](http://oeis.org/A139398) ([program](139/A139398.asm)): a(n) = Sum_{k >= 0} binomial(n,5*k).
 * [A139413](http://oeis.org/A139413) ([program](139/A139413.asm)): Triangle read by rows: row n gives the numbers A010888(n*k) for k = 1..n.

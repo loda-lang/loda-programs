@@ -475,6 +475,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155645](http://oeis.org/A155645) ([program](155/A155645.asm)): 7^n+6^n-1.
 * [A155646](http://oeis.org/A155646) ([program](155/A155646.asm)): 8^n + 6^n - 1.
 * [A155650](http://oeis.org/A155650) ([program](155/A155650.asm)): 7^n - 6^n + 1.
+* [A155651](http://oeis.org/A155651) ([program](155/A155651.asm)): 8^n-6^n+1^n
 * [A155655](http://oeis.org/A155655) ([program](155/A155655.asm)): 8^n+7^n-1^n.
 * [A155701](http://oeis.org/A155701) ([program](155/A155701.asm)): a(n) = (4^n + 8)/3.
 * [A155721](http://oeis.org/A155721) ([program](155/A155721.asm)): Positions of parity change in A033035.
@@ -3016,7 +3017,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175677](http://oeis.org/A175677) ([program](175/A175677.asm)): Binomial(n,4) mod n.
 * [A175724](http://oeis.org/A175724) ([program](175/A175724.asm)): Partial sums of floor(n^2/12).
 * [A175744](http://oeis.org/A175744) ([program](175/A175744.asm)): Numbers with 34 divisors.
-* [A175747](http://oeis.org/A175747) ([program](175/A175747.asm)): Numbers with 38 divisors.
 * [A175753](http://oeis.org/A175753) ([program](175/A175753.asm)): Numbers with 46 divisors.
 * [A175776](http://oeis.org/A175776) ([program](175/A175776.asm)): Partial sums of floor(n^2/15).
 * [A175777](http://oeis.org/A175777) ([program](175/A175777.asm)): Partial sums of floor(n^2/16).
@@ -3353,6 +3353,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A179062](http://oeis.org/A179062) ([program](179/A179062.asm)): Number of non-attacking placements of 7 rooks on an n X n board.
 * [A179063](http://oeis.org/A179063) ([program](179/A179063.asm)): Number of non-attacking placements of 8 rooks on an n X n board.
 * [A179064](http://oeis.org/A179064) ([program](179/A179064.asm)): Number of non-attacking placements of 9 rooks on an n X n board.
+* [A179065](http://oeis.org/A179065) ([program](179/A179065.asm)): Number of non-attacking placements of 10 rooks on an n X n board.
 * [A179070](http://oeis.org/A179070) ([program](179/A179070.asm)): a(1)=a(2)=a(3)=1, a(4)=3; thereafter a(n) = a(n-1) + a(n-3).
 * [A179081](http://oeis.org/A179081) ([program](179/A179081.asm)): Parity of sum of digits of n.
 * [A179088](http://oeis.org/A179088) ([program](179/A179088.asm)): Positive integers of the form (2*m^2+1)/11.

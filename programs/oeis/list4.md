@@ -2788,6 +2788,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A248233](http://oeis.org/A248233) ([program](248/A248233.asm)): Numbers k such that A248231(k+1) = A248231(k) + 1.
 * [A248333](http://oeis.org/A248333) ([program](248/A248333.asm)): Number of unit squares enclosed by n lattice points in and along the first quadrant of the coordinate plane starting from (0,0) and moving along each square gnomon starting on the y-axis and ending on the x-axis.
 * [A248337](http://oeis.org/A248337) ([program](248/A248337.asm)): 6^n - 4^n.
+* [A248338](http://oeis.org/A248338) ([program](248/A248338.asm)): 10^n - 4^n.
 * [A248339](http://oeis.org/A248339) ([program](248/A248339.asm)): a(n) = 22*n+19.
 * [A248365](http://oeis.org/A248365) ([program](248/A248365.asm)): 4n concatenated with itself.
 * [A248375](http://oeis.org/A248375) ([program](248/A248375.asm)): a(n) = floor(9*n/8).

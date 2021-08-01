@@ -243,6 +243,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A052551](http://oeis.org/A052551) ([program](052/A052551.asm)): Expansion of 1/((1 - x)*(1 - 2*x^2)).
 * [A052552](http://oeis.org/A052552) ([program](052/A052552.asm)): a(2*n+1) = 1, a(2*n) = 2*a(2*n-2) - 1.
 * [A052553](http://oeis.org/A052553) ([program](052/A052553.asm)): Square array of binomial coefficients T(n,k) = binomial(n,k), n >= 0, k >= 0, read by antidiagonals.
+* [A052558](http://oeis.org/A052558) ([program](052/A052558.asm)): a(n) = n! *((-1)^n + 2*n + 3)/4.
 * [A052560](http://oeis.org/A052560) ([program](052/A052560.asm)): a(n) = 3*n!.
 * [A052566](http://oeis.org/A052566) ([program](052/A052566.asm)): E.g.f.: (2 + x)/(1 - x^2).
 * [A052569](http://oeis.org/A052569) ([program](052/A052569.asm)): E.g.f. 1/((1-x)(1-x^3)).
@@ -2745,6 +2746,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A071875](http://oeis.org/A071875) ([program](071/A071875.asm)): Decimal expansion of the eighth (of 10) decimal selvage number; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
 * [A071877](http://oeis.org/A071877) ([program](071/A071877.asm)): Decimal expansion of the tenth (of 10) decimal selvage number; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
 * [A071903](http://oeis.org/A071903) ([program](071/A071903.asm)): Number of x less than or equal to n and divisible only by primes congruent to 3 mod 4 (i.e., in A004614).
+* [A071906](http://oeis.org/A071906) ([program](071/A071906.asm)): Sum of digits of 2^n (mod 2).
 * [A071910](http://oeis.org/A071910) ([program](071/A071910.asm)): a(n) = t(n)*t(n+1)*t(n+2), where t() are the triangular numbers.
 * [A071917](http://oeis.org/A071917) ([program](071/A071917.asm)): Number of pairs (x,y) where x is even, y is odd, 1<=x<=n, 1<=y<=n and x+y is prime.
 * [A071919](http://oeis.org/A071919) ([program](071/A071919.asm)): Number of monotone nondecreasing functions [n]->[m] for n>=0, m>=0, read by antidiagonals.
@@ -2829,7 +2831,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A072561](http://oeis.org/A072561) ([program](072/A072561.asm)): Denominators of w(n) equals 3 where w(1)=w(2)=w(3)=1, w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3).
 * [A072586](http://oeis.org/A072586) ([program](072/A072586.asm)): Number of numbers <= n having prime factors with odd exponents only.
 * [A072608](http://oeis.org/A072608) ([program](072/A072608.asm)): Parity of remainder Mod[p(n),n]=A004648(n).
-* [A072613](http://oeis.org/A072613) ([program](072/A072613.asm)): Number of numbers of the form p*q (p, q distinct primes) less than or equal to n.
 * [A072633](http://oeis.org/A072633) ([program](072/A072633.asm)): Smallest positive integer m where 1^n+2^n+3^n+...+m^n is greater than or equal to (m+1)^n.
 * [A072643](http://oeis.org/A072643) ([program](072/A072643.asm)): Half of the binary width of the terms of A014486, the number of digits in A063171(n)/2.
 * [A072648](http://oeis.org/A072648) ([program](072/A072648.asm)): a(n) = [log_{Phi}(n*sqrt(5))], where log_{Phi} is logarithm in the base Phi ( = (sqrt(5)+1)/2) and [] stands for the floor function.
@@ -5833,6 +5834,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A098996](http://oeis.org/A098996) ([program](098/A098996.asm)): p(p+1)(2p+1) where p is prime.
 * [A098997](http://oeis.org/A098997) ([program](098/A098997.asm)): (1/30)*(p(p+1)(2p+1)(3p^2+3p-1)) where p is prime.
 * [A098998](http://oeis.org/A098998) ([program](098/A098998.asm)): p(11p-7) where p is prime.
+* [A098999](http://oeis.org/A098999) ([program](098/A098999.asm)): Sum of cubes of the first n primes.
 * [A099003](http://oeis.org/A099003) ([program](099/A099003.asm)): Number of 4 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (10;0) and (11;0).
 * [A099012](http://oeis.org/A099012) ([program](099/A099012.asm)): a(n) = 3^(n-1)*Fibonacci(n).
 * [A099013](http://oeis.org/A099013) ([program](099/A099013.asm)): a(n) = Sum_{k=0..n} 3^(k-1)*Fibonacci(k).

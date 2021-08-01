@@ -2,11 +2,14 @@
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
 lpb $0
-  sub $0,13
+  sub $0,1
+  max $0,1
+  cal $0,173919 ; Numbers that are prime or one less than a prime.
   mov $1,$0
-  sub $0,2
-  max $1,0
-  cal $1,169069 ; Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^25 = I.
-  sub $1,11
+  gcd $0,2
+  add $0,13
+  cmp $1,0
+  add $1,$0
+  mul $1,$0
+  sub $1,195
 lpe
-mod $1,2

@@ -246,6 +246,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001360](http://oeis.org/A001360) ([program](001/A001360.asm)): Crystal ball sequence for hyperbolic tessellation 3^7 (from triangle group (2,3,7)).
 * [A001362](http://oeis.org/A001362) ([program](001/A001362.asm)): Number of ways of making change for n cents using coins of 1, 2, 4, 10 cents.
 * [A001363](http://oeis.org/A001363) ([program](001/A001363.asm)): Primes in ternary.
+* [A001370](http://oeis.org/A001370) ([program](001/A001370.asm)): Sum of digits of 2^n.
 * [A001386](http://oeis.org/A001386) ([program](001/A001386.asm)): Coordination sequence for 4-dimensional I-centered tetragonal orthogonal lattice.
 * [A001399](http://oeis.org/A001399) ([program](001/A001399.asm)): a(n) is the number of partitions of n into at most 3 parts; also partitions of n+3 in which the greatest part is 3; also number of unlabeled multigraphs with 3 nodes and n edges.
 * [A001400](http://oeis.org/A001400) ([program](001/A001400.asm)): Number of partitions of n into at most 4 parts.
@@ -658,6 +659,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004085](http://oeis.org/A004085) ([program](004/A004085.asm)): Sum of digits of Euler totient function of n.
 * [A004086](http://oeis.org/A004086) ([program](004/A004086.asm)): Read n backwards (referred to as R(n) in many sequences).
 * [A004087](http://oeis.org/A004087) ([program](004/A004087.asm)): Primes written backwards.
+* [A004090](http://oeis.org/A004090) ([program](004/A004090.asm)): Sum of digits of Fibonacci numbers.
 * [A004091](http://oeis.org/A004091) ([program](004/A004091.asm)): Fibonacci numbers written backwards.
 * [A004092](http://oeis.org/A004092) ([program](004/A004092.asm)): Sum of digits of even numbers.
 * [A004093](http://oeis.org/A004093) ([program](004/A004093.asm)): Even numbers written backwards.
@@ -2222,6 +2224,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A014800](http://oeis.org/A014800) ([program](014/A014800.asm)): Squares of even pentagonal pyramidal numbers.
 * [A014817](http://oeis.org/A014817) ([program](014/A014817.asm)): a(n) = Sum_{k=1..n} floor(k^2/n).
 * [A014820](http://oeis.org/A014820) ([program](014/A014820.asm)): a(n) = (1/3)*(n^2 + 2*n + 3)*(n+1)^2.
+* [A014824](http://oeis.org/A014824) ([program](014/A014824.asm)): a(0) = 0; for n>0, a(n) = 10*a(n-1) + n.
 * [A014825](http://oeis.org/A014825) ([program](014/A014825.asm)): a(n) = 4*a(n-1) + n with n > 1, a(1)=1.
 * [A014827](http://oeis.org/A014827) ([program](014/A014827.asm)): a(1)=1, a(n) = 5*a(n-1) + n.
 * [A014829](http://oeis.org/A014829) ([program](014/A014829.asm)): a(1)=1, a(n) = 6*a(n-1) + n.
@@ -2280,6 +2283,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A015559](http://oeis.org/A015559) ([program](015/A015559.asm)): Expansion of x/(1 - 7*x - 3*x^2).
 * [A015562](http://oeis.org/A015562) ([program](015/A015562.asm)): Expansion of x/(1 - 7*x - 5*x^2).
 * [A015565](http://oeis.org/A015565) ([program](015/A015565.asm)): a(n) = 7*a(n-1) + 8*a(n-2), a(0) = 0, a(1) = 1.
+* [A015577](http://oeis.org/A015577) ([program](015/A015577.asm)): a(n+1) = 8*a(n) + 9*a(n-1), a(0) = 0, a(1) = 1.
 * [A015588](http://oeis.org/A015588) ([program](015/A015588.asm)): Expansion of x/(1 - 10*x - 3*x^2).
 * [A015613](http://oeis.org/A015613) ([program](015/A015613.asm)): a(n) = Sum_{i=1..n} phi(i) * (ceiling(n/i) - floor(n/i)).
 * [A015614](http://oeis.org/A015614) ([program](015/A015614.asm)): a(n) = -1 + Sum_{i=1..n} phi(i).
@@ -3442,6 +3446,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A024399](http://oeis.org/A024399) ([program](024/A024399.asm)): a(n) = [ (3rd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+2 positive integers congruent to 2 mod 3}.
 * [A024401](http://oeis.org/A024401) ([program](024/A024401.asm)): a(n) = [ (3rd elementary symmetric function of S(n))/(2nd elementary symmetric function of S(n)) ], where S(n) = {first n+2 positive integers congruent to 2 mod 3}.
 * [A024403](http://oeis.org/A024403) ([program](024/A024403.asm)): [ (4th elementary symmetric function of S(n))/(3rd elementary symmetric function of S(n)) ], where S(n) = {first n+3 positive integers congruent to 2 mod 3}.
+* [A024450](http://oeis.org/A024450) ([program](024/A024450.asm)): Sum of squares of the first n primes.
 * [A024482](http://oeis.org/A024482) ([program](024/A024482.asm)): a(n) = (1/2)*(binomial(2n, n) - binomial(2n-2, n-1)).
 * [A024483](http://oeis.org/A024483) ([program](024/A024483.asm)): a(n) = binomial(2*n, n) mod binomial(2*n-2, n-1).
 * [A024490](http://oeis.org/A024490) ([program](024/A024490.asm)): a(n) = C(n-1,1) + C(n-3,3) + ... + C(n-2*m-1,2*m+1), where m = floor((n-2)/4).

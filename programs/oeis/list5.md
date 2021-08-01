@@ -2569,6 +2569,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A289357](http://oeis.org/A289357) ([program](289/A289357.asm)): Least number k such that n^2 + n - k is prime.
 * [A289399](http://oeis.org/A289399) ([program](289/A289399.asm)): Total path length of the complete ternary tree of height n.
 * [A289404](http://oeis.org/A289404) ([program](289/A289404.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 566", based on the 5-celled von Neumann neighborhood.
+* [A289437](http://oeis.org/A289437) ([program](289/A289437.asm)): The arithmetic function v_2(n,4).
 * [A289443](http://oeis.org/A289443) ([program](289/A289443.asm)): a(0)=2, a(1)=6; thereafter a(n) = 3*n^2.
 * [A289521](http://oeis.org/A289521) ([program](289/A289521.asm)): Number of vertices in a planar Apollonian graph at iteration n.
 * [A289615](http://oeis.org/A289615) ([program](289/A289615.asm)): A246604 (Catalan(n)-n) with initial terms 1,0,0,2 changed to 1,1,1,3.
@@ -2670,6 +2671,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A291108](http://oeis.org/A291108) ([program](291/A291108.asm)): Expansion of Sum_{k>=2} k^2*x^(2*k)/(1 - x^k).
 * [A291142](http://oeis.org/A291142) ([program](291/A291142.asm)): a(n) = (1/4)*A291024(n).
 * [A291264](http://oeis.org/A291264) ([program](291/A291264.asm)): p-INVERT of (0,1,0,1,0,1,...), where p(S) = (1 - 2 S)^2.
+* [A291267](http://oeis.org/A291267) ([program](291/A291267.asm)): The arithmetic function v_2(n,3).
 * [A291268](http://oeis.org/A291268) ([program](291/A291268.asm)): The arithmetic function v_3(n,2).
 * [A291271](http://oeis.org/A291271) ([program](291/A291271.asm)): The arithmetic function v_4(n,2).
 * [A291289](http://oeis.org/A291289) ([program](291/A291289.asm)): The Padovan sequence A000931 doubled.

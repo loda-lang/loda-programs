@@ -341,6 +341,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A305559](http://oeis.org/A305559) ([program](305/A305559.asm)): [0, -1, -1] together with A000290.
 * [A305716](http://oeis.org/A305716) ([program](305/A305716.asm)): Order of rowmotion on the divisor lattice for n.
 * [A305728](http://oeis.org/A305728) ([program](305/A305728.asm)): Numbers of the form 216*p^3, where p is a Pythagorean prime (A002144).
+* [A305739](http://oeis.org/A305739) ([program](305/A305739.asm)): a(n) = n!*T(n) - 1, where T(n) is the n-th triangular number.
 * [A305747](http://oeis.org/A305747) ([program](305/A305747.asm)): Let c be the n-th composite number; then a(n) is the smallest divisor of c such that a(n) >= sqrt(c).
 * [A305750](http://oeis.org/A305750) ([program](305/A305750.asm)): Number of achiral color patterns (set partitions) in a row or cycle of length n with 4 or fewer colors (subsets).
 * [A305753](http://oeis.org/A305753) ([program](305/A305753.asm)): A base-3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
@@ -1090,6 +1091,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319988](http://oeis.org/A319988) ([program](319/A319988.asm)): a(n) = 1 if n is divisible by the square of its largest prime factor, 0 otherwise.
 * [A319995](http://oeis.org/A319995) ([program](319/A319995.asm)): Number of divisors of n of the form 6*k + 5.
 * [A319998](http://oeis.org/A319998) ([program](319/A319998.asm)): a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
+* [A320006](http://oeis.org/A320006) ([program](320/A320006.asm)): a(n) = 1 if n encodes a nonnegative combinatorial game (in a style of A106486), otherwise 0; Characteristic function of A126001.
 * [A320007](http://oeis.org/A320007) ([program](320/A320007.asm)): If there is k >= 0 such that floor(n/4^k) is odd and A320006(k) is 1, then a(n) = 1, otherwise a(n) = 0.
 * [A320016](http://oeis.org/A320016) ([program](320/A320016.asm)): a(1) = a(2) = 1; for n > 2, a(n) = A000005(n) * a(A000005(n)), where A000005(n) gives the number of divisors of n.
 * [A320065](http://oeis.org/A320065) ([program](320/A320065.asm)): a(n) is the smallest integer i such that binomial(2i,i) > n.
@@ -2155,6 +2157,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A343539](http://oeis.org/A343539) ([program](343/A343539.asm)): a(n) = (2*n+1)*Lucas(2*n+1).
 * [A343543](http://oeis.org/A343543) ([program](343/A343543.asm)): a(n) = n*Lucas(2*n).
 * [A343578](http://oeis.org/A343578) ([program](343/A343578.asm)): a(n) = 32*n^2 - 40*n + 10.
+* [A343607](http://oeis.org/A343607) ([program](343/A343607.asm)): Minimal number of colors required for an edge-coloring of the complete graph K_n with no monochromatic triangle.
 * [A343608](http://oeis.org/A343608) ([program](343/A343608.asm)): a(n) = [n/5]*[n/5 - 1]*(3n - 10[n/5 + 1])/6, where [.] = floor: upper bound for minimum number of monochromatic triangles in a 3-edge-colored complete graph K_n.
 * [A343609](http://oeis.org/A343609) ([program](343/A343609.asm)): a(n) = floor(n/9).
 * [A343638](http://oeis.org/A343638) ([program](343/A343638.asm)): a(n) = (Sum of decimal digits of 3*n) / 3.
