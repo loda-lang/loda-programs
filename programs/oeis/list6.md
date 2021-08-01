@@ -151,6 +151,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302906](http://oeis.org/A302906) ([program](302/A302906.asm)): a(0) = 0; for n > 0, a(n) = a(n-1) + 5*n + 4.
 * [A302930](http://oeis.org/A302930) ([program](302/A302930.asm)): Maximum number of 6's possible in an infinite Minesweeper grid with n mines.
 * [A302946](http://oeis.org/A302946) ([program](302/A302946.asm)): Number of minimal (and minimum) total dominating sets in the 2n-crossed prism graph.
+* [A302989](http://oeis.org/A302989) ([program](302/A302989.asm)): a(n) = n^n + n*n + n.
 * [A303120](http://oeis.org/A303120) ([program](303/A303120.asm)): Total area of all rectangles of size p X q such that p + q = n^2 and p <= q.
 * [A303212](http://oeis.org/A303212) ([program](303/A303212.asm)): Number of minimum total dominating sets in the n X n rook complement graph.
 * [A303223](http://oeis.org/A303223) ([program](303/A303223.asm)): Sum of the perimeters of the family of rectangles with dimensions p and q such that |q - p| is prime, n = p + q and p < q.

@@ -1837,7 +1837,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A064917](http://oeis.org/A064917) ([program](064/A064917.asm)): a(n) is the result of beginning with n and iterating k -> A064916(k) until a prime is reached.
 * [A064918](http://oeis.org/A064918) ([program](064/A064918.asm)): a(n) is the number of iterations of k -> A064916(k) to reach a prime, starting at n.
 * [A064919](http://oeis.org/A064919) ([program](064/A064919.asm)): a(n) = Min { k | A064916(k) = n }.
-* [A064924](http://oeis.org/A064924) ([program](064/A064924.asm)): If n is prime then a(n) = n; for the subsequent nonprime positions a(n + k) = (k+1)*n; then at the next prime position a new subsequence begins.
 * [A064946](http://oeis.org/A064946) ([program](064/A064946.asm)): a(n) = Sum_{i|n, j|n, j>i} j.
 * [A064987](http://oeis.org/A064987) ([program](064/A064987.asm)): a(n) = n*sigma(n).
 * [A064989](http://oeis.org/A064989) ([program](064/A064989.asm)): Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.

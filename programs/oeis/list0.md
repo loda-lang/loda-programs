@@ -1332,6 +1332,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007910](http://oeis.org/A007910) ([program](007/A007910.asm)): Expansion of 1/((1-2*x)*(1+x^2)).
 * [A007911](http://oeis.org/A007911) ([program](007/A007911.asm)): a(n) = (n-1)!! - (n-2)!!.
 * [A007913](http://oeis.org/A007913) ([program](007/A007913.asm)): Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+* [A007917](http://oeis.org/A007917) ([program](007/A007917.asm)): Version 1 of the "previous prime" function: largest prime <= n.
 * [A007918](http://oeis.org/A007918) ([program](007/A007918.asm)): Least prime >= n (version 1 of the "next prime" function).
 * [A007920](http://oeis.org/A007920) ([program](007/A007920.asm)): Smallest number k such that n + k is prime.
 * [A007929](http://oeis.org/A007929) ([program](007/A007929.asm)): Odd numbers containing an even digit.

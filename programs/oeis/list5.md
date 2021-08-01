@@ -1213,6 +1213,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A268586](http://oeis.org/A268586) ([program](268/A268586.asm)): Expansion of (x^3*(3*x - 2))/(2*x - 1)^3.
 * [A268598](http://oeis.org/A268598) ([program](268/A268598.asm)): Expansion of x^5*(4 - 5*x)/(1 - 2*x)^4.
 * [A268613](http://oeis.org/A268613) ([program](268/A268613.asm)): Lucas numbers mod 20.
+* [A268615](http://oeis.org/A268615) ([program](268/A268615.asm)): Lucas numbers mod 40.
 * [A268622](http://oeis.org/A268622) ([program](268/A268622.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or vertically adjacent neighbor totalling two no more than once.
 * [A268631](http://oeis.org/A268631) ([program](268/A268631.asm)): Number of ordered pairs (a,b) of positive integers less than n with the property that n divides ab.
 * [A268633](http://oeis.org/A268633) ([program](268/A268633.asm)): Number of n X 2 0..2 arrays with some element plus some horizontally or vertically adjacent neighbor totalling two exactly once.
