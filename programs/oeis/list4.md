@@ -1462,6 +1462,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A222465](http://oeis.org/A222465) ([program](222/A222465.asm)): a(n) = 4*n^2 + 3.
 * [A222548](http://oeis.org/A222548) ([program](222/A222548.asm)): a(n) = Sum_{k=1..n} floor(n/k)^2.
 * [A222591](http://oeis.org/A222591) ([program](222/A222591.asm)): Numerators of (n*(n - 3)/6) + 1, arising as the maximum possible number of triple lines for an n element set.
+* [A222621](http://oeis.org/A222621) ([program](222/A222621.asm)): a(n) = (2n-1)^(2n).
 * [A222655](http://oeis.org/A222655) ([program](222/A222655.asm)): a(n) = 16n^4 + 4.
 * [A222657](http://oeis.org/A222657) ([program](222/A222657.asm)): a(n) = 2 * floor( (2*n + 1) / 3) + 1.
 * [A222716](http://oeis.org/A222716) ([program](222/A222716.asm)): Numbers which are both the sum of n+1 consecutive triangular numbers and the sum of the n-1 immediately following triangular numbers.
@@ -2538,6 +2539,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A243283](http://oeis.org/A243283) ([program](243/A243283.asm)): One more than the partial sums of the characteristic function of A070003.
 * [A243285](http://oeis.org/A243285) ([program](243/A243285.asm)): Number of integers 1 <= k <= n which are not divisible by the square of their largest noncomposite divisor.
 * [A243291](http://oeis.org/A243291) ([program](243/A243291.asm)): Difference between n and the index of its largest prime factor: a(n) = n - A061395(n).
+* [A243302](http://oeis.org/A243302) ([program](243/A243302.asm)): Consider a triangular Go board graph with side length n; remove i nodes and let j be the number of nodes in the largest connected subgraph remaining; then a(n) = minimum (i + j).
 * [A243305](http://oeis.org/A243305) ([program](243/A243305.asm)): a(n) = 2^phi(n)+1 = A066781(n)+1.
 * [A243306](http://oeis.org/A243306) ([program](243/A243306.asm)): 2^phi(n) - phi(n).
 * [A243307](http://oeis.org/A243307) ([program](243/A243307.asm)): a(n) = 2^phi(n) + phi(n).
@@ -2725,7 +2727,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245685](http://oeis.org/A245685) ([program](245/A245685.asm)): Sigma(2p)/2, for odd primes p.
 * [A245710](http://oeis.org/A245710) ([program](245/A245710.asm)): Number of nonzero evil numbers <= n, see A001969.
 * [A245738](http://oeis.org/A245738) ([program](245/A245738.asm)): Number of compositions of n into parts 1 and 2 with both parts present.
-* [A245761](http://oeis.org/A245761) ([program](245/A245761.asm)): Numbers with a maximal multiplicative persistence of 1 in any base.
 * [A245764](http://oeis.org/A245764) ([program](245/A245764.asm)): a(n) = 2*(n^2 + 1) + n*(1 + (-1)^n).
 * [A245766](http://oeis.org/A245766) ([program](245/A245766.asm)): a(n) = 2*(n^2 + 1) - n*(1 + (-1)^n).
 * [A245788](http://oeis.org/A245788) ([program](245/A245788.asm)): n times the number of 1's in the binary expansion of n.
@@ -2752,6 +2753,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A245989](http://oeis.org/A245989) ([program](245/A245989.asm)): Number of length n+2 0..2 arrays with no pair in any consecutive three terms totalling exactly 2.
 * [A245990](http://oeis.org/A245990) ([program](245/A245990.asm)): Number of length n+2 0..3 arrays with no pair in any consecutive three terms totalling exactly 3.
 * [A245992](http://oeis.org/A245992) ([program](245/A245992.asm)): Number of length n+2 0..5 arrays with no pair in any consecutive three terms totalling exactly 5
+* [A245994](http://oeis.org/A245994) ([program](245/A245994.asm)): Number of length n+2 0..7 arrays with no pair in any consecutive three terms totalling exactly 7
 * [A245996](http://oeis.org/A245996) ([program](245/A245996.asm)): Number of length 1+2 0..n arrays with no pair in any consecutive three terms totalling exactly n
 * [A245997](http://oeis.org/A245997) ([program](245/A245997.asm)): Number of length 2+2 0..n arrays with no pair in any consecutive three terms totalling exactly n
 * [A246010](http://oeis.org/A246010) ([program](246/A246010.asm)): a(n) = floor(5*prime(n)^2 / 4).

@@ -1371,6 +1371,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A061076](http://oeis.org/A061076) ([program](061/A061076.asm)): a(n) is the sum of the products of the digits of all the numbers from 1 to n.
 * [A061077](http://oeis.org/A061077) ([program](061/A061077.asm)): a(n) = sum of the products of the digits of the first n odd numbers.
 * [A061078](http://oeis.org/A061078) ([program](061/A061078.asm)): Sum of the products of the digits of the first n even numbers.
+* [A061079](http://oeis.org/A061079) ([program](061/A061079.asm)): Denominators in the series for sin integral Si(x).
 * [A061082](http://oeis.org/A061082) ([program](061/A061082.asm)): a(n) = A053061(n)/n.
 * [A061084](http://oeis.org/A061084) ([program](061/A061084.asm)): Fibonacci-type sequence based on subtraction: a(0) = 1, a(1) = 2 and a(n) = a(n-2)-a(n-1).
 * [A061085](http://oeis.org/A061085) ([program](061/A061085.asm)): a(n) = A019550(n) / 3.
@@ -2183,6 +2184,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A067869](http://oeis.org/A067869) ([program](067/A067869.asm)): Numbers n such that n and 2^n end with the same 5 digits.
 * [A067870](http://oeis.org/A067870) ([program](067/A067870.asm)): Numbers k such that k and 3^k end with the same digit.
 * [A067894](http://oeis.org/A067894) ([program](067/A067894.asm)): Write 0, 1, ..., n in binary and add as if they were decimal numbers.
+* [A067900](http://oeis.org/A067900) ([program](067/A067900.asm)): a(n) = 14*a(n-1) - a(n-2); a(0) = 0, a(1) = 8.
 * [A067902](http://oeis.org/A067902) ([program](067/A067902.asm)): a(n) = 14*a(n-1) - a(n-2); a(0) = 2, a(1) = 14.
 * [A067911](http://oeis.org/A067911) ([program](067/A067911.asm)): Product of gcd(k,n) for 1 <= k <= n.
 * [A067980](http://oeis.org/A067980) ([program](067/A067980.asm)): Convolution of L(n+1) := A000204(n+1) (Lucas), n>=0, with L(n+2), n>=0.
@@ -2209,6 +2211,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A068231](http://oeis.org/A068231) ([program](068/A068231.asm)): Primes congruent to 11 mod 12.
 * [A068236](http://oeis.org/A068236) ([program](068/A068236.asm)): First differences of (n+1)^5-n^5.
 * [A068293](http://oeis.org/A068293) ([program](068/A068293.asm)): a(1) = 1; thereafter a(n) = 6*(2^(n-1) - 1).
+* [A068311](http://oeis.org/A068311) ([program](068/A068311.asm)): Arithmetic derivative of n!.
 * [A068312](http://oeis.org/A068312) ([program](068/A068312.asm)): Arithmetic derivative of triangular numbers.
 * [A068346](http://oeis.org/A068346) ([program](068/A068346.asm)): a(n) = n'' = second arithmetic derivative of n.
 * [A068377](http://oeis.org/A068377) ([program](068/A068377.asm)): Engel expansion of sinh(1).
@@ -4247,6 +4250,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A083066](http://oeis.org/A083066) ([program](083/A083066.asm)): 5th row of number array A083064.
 * [A083067](http://oeis.org/A083067) ([program](083/A083067.asm)): 6th row of number array A083064.
 * [A083068](http://oeis.org/A083068) ([program](083/A083068.asm)): 7th row of number array A083064.
+* [A083070](http://oeis.org/A083070) ([program](083/A083070.asm)): First super-diagonal of number array A083064.
 * [A083074](http://oeis.org/A083074) ([program](083/A083074.asm)): n^3 - n^2 - n - 1.
 * [A083076](http://oeis.org/A083076) ([program](083/A083076.asm)): Third row of number array A083075.
 * [A083077](http://oeis.org/A083077) ([program](083/A083077.asm)): Fifth row of number array A083075.
@@ -4596,9 +4600,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A085528](http://oeis.org/A085528) ([program](085/A085528.asm)): a(n) = (2*n+1)^(n+1).
 * [A085529](http://oeis.org/A085529) ([program](085/A085529.asm)): a(n) = (2n+1)^(2n+1).
 * [A085530](http://oeis.org/A085530) ([program](085/A085530.asm)): a(n) = (2n+1)^(2n).
+* [A085531](http://oeis.org/A085531) ([program](085/A085531.asm)): a(n) = (2*n+1)^(2*n-1).
 * [A085532](http://oeis.org/A085532) ([program](085/A085532.asm)): (2n)^(n+1).
 * [A085533](http://oeis.org/A085533) ([program](085/A085533.asm)): (2n)^(2n+1).
 * [A085534](http://oeis.org/A085534) ([program](085/A085534.asm)): a(n) = (2n)^(2n).
+* [A085535](http://oeis.org/A085535) ([program](085/A085535.asm)): a(n) = (2n)^(2n-1).
 * [A085537](http://oeis.org/A085537) ([program](085/A085537.asm)): a(n) = n^4 - n^3.
 * [A085538](http://oeis.org/A085538) ([program](085/A085538.asm)): a(n) = n^5 - n^4.
 * [A085539](http://oeis.org/A085539) ([program](085/A085539.asm)): a(n) = n^6 - n^5.

@@ -191,6 +191,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A303916](http://oeis.org/A303916) ([program](303/A303916.asm)): Constant term in the expansion of (Sum_{k=0..n} k*(x^k + x^(-k)))^3.
 * [A304025](http://oeis.org/A304025) ([program](304/A304025.asm)): a(n) is the largest integer that can be written with n digits in base 3/2.
 * [A304035](http://oeis.org/A304035) ([program](304/A304035.asm)): a(n) is the number of lattice points inside a square bounded by the lines x=-n/sqrt(2), x=n/sqrt(2), y=-n/sqrt(2), y=n/sqrt(2).
+* [A304041](http://oeis.org/A304041) ([program](304/A304041.asm)): Number of inequivalent solutions to problem in A054961.
 * [A304157](http://oeis.org/A304157) ([program](304/A304157.asm)): a(n) is the first Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference.
 * [A304158](http://oeis.org/A304158) ([program](304/A304158.asm)): a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
 * [A304159](http://oeis.org/A304159) ([program](304/A304159.asm)): a(n) = 2*n^3 - 4*n^2 + 6*n - 2 (n>=1).

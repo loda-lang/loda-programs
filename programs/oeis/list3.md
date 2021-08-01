@@ -2505,7 +2505,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A170255](http://oeis.org/A170255) ([program](170/A170255.asm)): Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
 * [A170256](http://oeis.org/A170256) ([program](170/A170256.asm)): Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
 * [A170257](http://oeis.org/A170257) ([program](170/A170257.asm)): Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
-* [A170258](http://oeis.org/A170258) ([program](170/A170258.asm)): Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
 * [A170300](http://oeis.org/A170300) ([program](170/A170300.asm)): Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
 * [A170301](http://oeis.org/A170301) ([program](170/A170301.asm)): Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
 * [A170302](http://oeis.org/A170302) ([program](170/A170302.asm)): Number of reduced words of length n in Coxeter group on 5 generators S_i with relations (S_i)^2 = (S_i S_j)^42 = I.
@@ -3941,6 +3940,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A184036](http://oeis.org/A184036) ([program](184/A184036.asm)): 1/16 the number of (n+1) X 7 0..3 arrays with all 2 X 2 subblocks having the same four values.
 * [A184037](http://oeis.org/A184037) ([program](184/A184037.asm)): 1/16 the number of (n+1) X 8 0..3 arrays with all 2 X 2 subblocks having the same four values.
 * [A184038](http://oeis.org/A184038) ([program](184/A184038.asm)): 1/16 the number of (n+1) X 9 0..3 arrays with all 2 X 2 subblocks having the same four values.
+* [A184040](http://oeis.org/A184040) ([program](184/A184040.asm)): 1/9 the number of (n+1)X(n+1) 0..2 arrays with all 2X2 subblocks having the same four values
 * [A184041](http://oeis.org/A184041) ([program](184/A184041.asm)): 1/9 the number of (n+1) X 3 0..2 arrays with all 2 X 2 subblocks having the same four values.
 * [A184042](http://oeis.org/A184042) ([program](184/A184042.asm)): 1/9 the number of (n+1) X 4 0..2 arrays with all 2 X 2 subblocks having the same four values.
 * [A184043](http://oeis.org/A184043) ([program](184/A184043.asm)): 1/9 the number of (n+1) X 5 0..2 arrays with all 2 X 2 subblocks having the same four values.
@@ -4192,6 +4192,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186228](http://oeis.org/A186228) ([program](186/A186228.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the triangular numbers and heptagonal numbers.  Complement of A186227.
 * [A186231](http://oeis.org/A186231) ([program](186/A186231.asm)): Expansion of ( 2F1([-1/4, 1/4]; [-1/2], 16*x) - 1 ) / (2*x).
 * [A186237](http://oeis.org/A186237) ([program](186/A186237.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the triangular numbers and hexagonal numbers.  Complement of A186238.
+* [A186245](http://oeis.org/A186245) ([program](186/A186245.asm)): a(n) = binomial(n^2, 2*n).
 * [A186274](http://oeis.org/A186274) ([program](186/A186274.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the triangular numbers and octagonal numbers.  Complement of A186159.
 * [A186276](http://oeis.org/A186276) ([program](186/A186276.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the triangular numbers and octagonal numbers.  Complement of A186275.
 * [A186288](http://oeis.org/A186288) ([program](186/A186288.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and pentagonal numbers.  Complement of A186289.
@@ -4802,6 +4803,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A191680](http://oeis.org/A191680) ([program](191/A191680.asm)): Number of compositions of odd natural numbers into 9 parts <= n.
 * [A191681](http://oeis.org/A191681) ([program](191/A191681.asm)): a(n) = (9^n - 1)/2.
 * [A191682](http://oeis.org/A191682) ([program](191/A191682.asm)): Twice A113473.
+* [A191690](http://oeis.org/A191690) ([program](191/A191690.asm)): a(n) = n^n-n^(n-1)-n^(n-2)-...-n^2-n-1.
 * [A191698](http://oeis.org/A191698) ([program](191/A191698.asm)): a(n) = (122n^3 + 140n^2 + 45n + 3n(-1)^n)/8.
 * [A191745](http://oeis.org/A191745) ([program](191/A191745.asm)): a(n) = 12*n^3 + 9*n^2 + 2*n.
 * [A191748](http://oeis.org/A191748) ([program](191/A191748.asm)): Sequence of all m in {1,2,3,...} such that A191747(m) = 1.

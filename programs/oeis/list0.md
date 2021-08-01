@@ -752,11 +752,51 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004310](http://oeis.org/A004310) ([program](004/A004310.asm)): Binomial coefficient C(2n,n-4).
 * [A004311](http://oeis.org/A004311) ([program](004/A004311.asm)): Binomial coefficient C(2n,n-5).
 * [A004312](http://oeis.org/A004312) ([program](004/A004312.asm)): Binomial coefficient C(2n,n-6).
+* [A004315](http://oeis.org/A004315) ([program](004/A004315.asm)): a(n) = binomial coefficient C(2n, n-9).
+* [A004316](http://oeis.org/A004316) ([program](004/A004316.asm)): a(n) = binomial coefficient C(2n, n-10).
+* [A004317](http://oeis.org/A004317) ([program](004/A004317.asm)): Binomial coefficient C(2n,n-11).
+* [A004318](http://oeis.org/A004318) ([program](004/A004318.asm)): Binomial coefficient C(2n,n-12).
 * [A004319](http://oeis.org/A004319) ([program](004/A004319.asm)): Binomial coefficient C(3n,n-1).
 * [A004320](http://oeis.org/A004320) ([program](004/A004320.asm)): a(n) = n*(n+1)*(n+2)^2/6.
+* [A004321](http://oeis.org/A004321) ([program](004/A004321.asm)): Binomial coefficient C(3n, n-3).
+* [A004326](http://oeis.org/A004326) ([program](004/A004326.asm)): Binomial coefficient C(3n,n-8).
+* [A004327](http://oeis.org/A004327) ([program](004/A004327.asm)): Binomial coefficient C(3n,n-9).
+* [A004328](http://oeis.org/A004328) ([program](004/A004328.asm)): Binomial coefficient C(3n,n-10).
+* [A004329](http://oeis.org/A004329) ([program](004/A004329.asm)): Binomial coefficient C(3n,n-11).
+* [A004330](http://oeis.org/A004330) ([program](004/A004330.asm)): Binomial coefficient C(3n,n-12).
+* [A004333](http://oeis.org/A004333) ([program](004/A004333.asm)): Binomial coefficient C(4n,n-3).
+* [A004338](http://oeis.org/A004338) ([program](004/A004338.asm)): Binomial coefficient C(4n,n-8).
+* [A004339](http://oeis.org/A004339) ([program](004/A004339.asm)): Binomial coefficient C(4n,n-9).
+* [A004340](http://oeis.org/A004340) ([program](004/A004340.asm)): Binomial coefficient C(4n,n-10).
+* [A004341](http://oeis.org/A004341) ([program](004/A004341.asm)): Binomial coefficient C(4n,n-11).
+* [A004342](http://oeis.org/A004342) ([program](004/A004342.asm)): Binomial coefficient C(4n, n-12).
+* [A004345](http://oeis.org/A004345) ([program](004/A004345.asm)): Binomial coefficient C(5n,n-3).
+* [A004350](http://oeis.org/A004350) ([program](004/A004350.asm)): Binomial coefficient C(5n,n-8).
+* [A004351](http://oeis.org/A004351) ([program](004/A004351.asm)): Binomial coefficient C(5*n,n-9).
+* [A004352](http://oeis.org/A004352) ([program](004/A004352.asm)): Binomial coefficient C(5n,n-10).
+* [A004353](http://oeis.org/A004353) ([program](004/A004353.asm)): Binomial coefficient C(5n,n-11).
+* [A004354](http://oeis.org/A004354) ([program](004/A004354.asm)): Binomial coefficient C(5n, n-12).
 * [A004355](http://oeis.org/A004355) ([program](004/A004355.asm)): Binomial coefficient C(6n,n).
+* [A004358](http://oeis.org/A004358) ([program](004/A004358.asm)): Binomial coefficient C(6n,n-3).
+* [A004363](http://oeis.org/A004363) ([program](004/A004363.asm)): Binomial coefficient C(6n,n-8).
+* [A004364](http://oeis.org/A004364) ([program](004/A004364.asm)): Binomial coefficient C(6n,n-9).
+* [A004365](http://oeis.org/A004365) ([program](004/A004365.asm)): Binomial coefficient C(6n,n-10).
+* [A004366](http://oeis.org/A004366) ([program](004/A004366.asm)): Binomial coefficient C(6n,n-11).
+* [A004367](http://oeis.org/A004367) ([program](004/A004367.asm)): Binomial coefficient C(6n,n-12).
 * [A004368](http://oeis.org/A004368) ([program](004/A004368.asm)): Binomial coefficient C(7n,n).
+* [A004371](http://oeis.org/A004371) ([program](004/A004371.asm)): Binomial coefficient C(7n,n-3).
+* [A004376](http://oeis.org/A004376) ([program](004/A004376.asm)): Binomial coefficient C(7n,n-8).
+* [A004377](http://oeis.org/A004377) ([program](004/A004377.asm)): Binomial coefficient C(7n,n-9).
+* [A004378](http://oeis.org/A004378) ([program](004/A004378.asm)): Binomial coefficient C(7n,n-10).
+* [A004379](http://oeis.org/A004379) ([program](004/A004379.asm)): Binomial coefficient C(7n,n-11).
+* [A004380](http://oeis.org/A004380) ([program](004/A004380.asm)): Binomial coefficient C(7n,n-12).
 * [A004381](http://oeis.org/A004381) ([program](004/A004381.asm)): Binomial coefficient C(8n,n).
+* [A004384](http://oeis.org/A004384) ([program](004/A004384.asm)): Binomial coefficient C(8n,n-3).
+* [A004389](http://oeis.org/A004389) ([program](004/A004389.asm)): a(n) = binomial(8*n, n-8).
+* [A004390](http://oeis.org/A004390) ([program](004/A004390.asm)): Binomial coefficient C(8n,n-9).
+* [A004391](http://oeis.org/A004391) ([program](004/A004391.asm)): Binomial coefficient C(8n,n-10).
+* [A004392](http://oeis.org/A004392) ([program](004/A004392.asm)): Binomial coefficient C(8n,n-11).
+* [A004393](http://oeis.org/A004393) ([program](004/A004393.asm)): Binomial coefficient C(8n,n-12).
 * [A004396](http://oeis.org/A004396) ([program](004/A004396.asm)): One even number followed by two odd numbers.
 * [A004400](http://oeis.org/A004400) ([program](004/A004400.asm)): a(n) = 1 + Sum_{k=0..n} 2^k*k!.
 * [A004426](http://oeis.org/A004426) ([program](004/A004426.asm)): Arithmetic mean of digits of n (rounded down).
@@ -1645,6 +1685,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A009281](http://oeis.org/A009281) ([program](009/A009281.asm)): Expansion of exp(x)*cosh(log(1+x)).
 * [A009440](http://oeis.org/A009440) ([program](009/A009440.asm)): a(n) is the concatenation of n and 6n.
 * [A009441](http://oeis.org/A009441) ([program](009/A009441.asm)): a(n) is the concatenation of n and 7n.
+* [A009445](http://oeis.org/A009445) ([program](009/A009445.asm)): a(n) = (2*n+1)!.
 * [A009470](http://oeis.org/A009470) ([program](009/A009470.asm)): a(n) is the concatenation of n and 8n.
 * [A009474](http://oeis.org/A009474) ([program](009/A009474.asm)): a(n) is the concatenation of n and 9n.
 * [A009531](http://oeis.org/A009531) ([program](009/A009531.asm)): Expansion of the e.g.f. sin(x)*(1+x).
@@ -2139,6 +2180,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A011941](http://oeis.org/A011941) ([program](011/A011941.asm)): a(n) = floor(n*(n-1)*(n-2)*(n-3)/31).
 * [A011942](http://oeis.org/A011942) ([program](011/A011942.asm)): [ n(n-1)(n-2)(n-3)/32 ].
 * [A011943](http://oeis.org/A011943) ([program](011/A011943.asm)): Numbers n such that any group of n consecutive integers has integral standard deviation {viz. A011944(n)}.
+* [A011944](http://oeis.org/A011944) ([program](011/A011944.asm)): a(n) = 14*a(n-1) - a(n-2) with a(0) = 0, a(1) = 2.
 * [A011945](http://oeis.org/A011945) ([program](011/A011945.asm)): Areas of almost-equilateral Heronian triangles (integral side lengths m-1, m, m+1 and integral area).
 * [A011960](http://oeis.org/A011960) ([program](011/A011960.asm)): Number of ferrites M_2Y_n that repeat after 6n+10 layers.
 * [A011974](http://oeis.org/A011974) ([program](011/A011974.asm)): 2 followed by the numbers that are the sum of 2 successive primes.

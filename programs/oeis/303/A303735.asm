@@ -1,11 +1,12 @@
 ; A303735: a(n) is the metric dimension of the n-dimensional hypercube.
 ; 1,2,3,4,4,5,6,6,7,7
 
-add $0,1
-mul $0,4
-add $0,1
+mov $2,$0
 lpb $0
-  add $1,1
-  trn $0,$1
+  pow $0,2
+  div $0,10
+  mov $1,$2
+  add $2,25779
 lpe
-sub $1,2
+add $1,1
+mod $1,10

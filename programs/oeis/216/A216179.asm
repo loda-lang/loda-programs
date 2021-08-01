@@ -3,11 +3,7 @@
 
 mov $1,10
 pow $1,$0
-mul $1,9
-add $1,10
-div $1,9
 mul $1,5
-div $1,3
-mul $1,12
-sub $1,10
-div $1,2
+add $1,4
+mul $1,2
+sub $1,5

@@ -275,6 +275,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A255764](http://oeis.org/A255764) ([program](255/A255764.asm)): Partial sums of A255743.
 * [A255765](http://oeis.org/A255765) ([program](255/A255765.asm)): Partial sums of A255744.
 * [A255766](http://oeis.org/A255766) ([program](255/A255766.asm)): Partial sums of A255745.
+* [A255771](http://oeis.org/A255771) ([program](255/A255771.asm)): Number of distinct prime factors of A220294(n).
 * [A255817](http://oeis.org/A255817) ([program](255/A255817.asm)): Parity of A000788, which is the total number of ones in 0..n in binary.
 * [A255824](http://oeis.org/A255824) ([program](255/A255824.asm)): a(n) = n for n < 4; a(4n) = a(n); if every 4th term (a(4), a(8), a(12),...) is deleted, this gives back the original sequence.
 * [A255825](http://oeis.org/A255825) ([program](255/A255825.asm)): A self-generating sequence: a(n) = n for n < 5; a(5n) = a(n); if every 5th term (a(5), a(10), a(15),...) is deleted, this gives back the original sequence.
@@ -2120,6 +2121,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A281500](http://oeis.org/A281500) ([program](281/A281500.asm)): Reduced denominators of f(n) = (n+1)/(2^(2+n)-2) with A026741(n+1) as numerators.
 * [A281546](http://oeis.org/A281546) ([program](281/A281546.asm)): a(n) = 27*n + 2.
 * [A281553](http://oeis.org/A281553) ([program](281/A281553.asm)): Write n in binary reflected Gray code, rotate one binary place to the right and convert the code back to decimal.
+* [A281580](http://oeis.org/A281580) ([program](281/A281580.asm)): a(n) = binomial(9*n, n-9).
 * [A281582](http://oeis.org/A281582) ([program](281/A281582.asm)): Number of rolls of a die with n sides that maximizes the average ratio of highest number of occurrences of a face value to lowest number.
 * [A281593](http://oeis.org/A281593) ([program](281/A281593.asm)): a(n) = b(n) - Sum_{j=0..n-1} b(n) with b(n) = binomial(2*n, n).
 * [A281626](http://oeis.org/A281626) ([program](281/A281626.asm)): a(n) = (sum of trivial divisors of n) - (sum of nontrivial divisors of n).
