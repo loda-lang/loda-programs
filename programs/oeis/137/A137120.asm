@@ -1,6 +1,10 @@
 ; A137120: Numbers k such that k and k^2 use only the digits 3, 4, 5 and 6.
 ; 6,66,666,6666,66666,666666,6666666,66666666,666666666,6666666666,66666666666,666666666666,6666666666666,66666666666666,666666666666666
 
-cal $0,42 ; Unary representation of natural numbers.
-mov $1,$0
+add $0,1
+mov $1,10
+pow $1,$0
+sub $1,2
+div $1,9
+add $1,1
 mul $1,6
