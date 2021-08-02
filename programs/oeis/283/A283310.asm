@@ -3,15 +3,11 @@
 
 mov $1,$0
 mul $0,2
-mov $3,6
+sub $0,$1
 lpb $0
-  sub $0,1
   add $1,$0
-  mov $0,$3
+  sub $0,7
+  mul $1,2
+  sub $1,2
 lpe
-mov $2,2
-lpb $1
-  mul $1,$2
-  sub $1,1
-  mod $1,5
-lpe
+mod $1,3

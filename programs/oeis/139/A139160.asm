@@ -1,0 +1,8 @@
+; A139160: a(n)=(prime(n)!+2)/2.
+; 2,4,61,2521,19958401,3113510401,177843714048001,60822550204416001,12926008369442488320001,4420880996869850977271808000001,4111419327088961408862781440000001
+
+cal $0,40 ; The prime numbers.
+cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $1,$0
+div $1,2
+add $1,1

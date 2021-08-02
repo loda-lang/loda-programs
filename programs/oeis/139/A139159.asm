@@ -1,0 +1,7 @@
+; A139159: a(n) = prime(n)! + 1.
+; 3,7,121,5041,39916801,6227020801,355687428096001,121645100408832001,25852016738884976640001,8841761993739701954543616000001,8222838654177922817725562880000001
+
+cal $0,40 ; The prime numbers.
+cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $1,$0
+add $1,1

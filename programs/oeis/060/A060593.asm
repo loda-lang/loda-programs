@@ -1,0 +1,8 @@
+; A060593: a(n) is the number of ways that a cycle of length 2n+1 in the symmetric group S_(2n+1) can be decomposed as the product of two cycles of length 2n+1.
+; 1,1,8,180,8064,604800,68428800,10897286400,2324754432000,640237370572800,221172909834240000,93666727314800640000,47726800133326110720000,28806532937614688256000000,20325889640780924033433600000,16578303738261941164769280000000,15478284525511384127483412480000000
+
+mul $0,2
+cal $0,107991 ; Complexity (number of maximal spanning trees) in an unoriented simple graph with nodes {1,2,...,n} and edges {i,j} if i + j > n.
+mov $1,9
+mul $1,$0
+div $1,9
