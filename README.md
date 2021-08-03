@@ -78,7 +78,7 @@ Usage:                   loda <command> <options>
 === OEIS commands ===
   mine                   Mine programs for OEIS sequences (see also -i)
   match <file>           Match a program to OEIS sequences (see also -i)
-  check <seq-id>         Check a program for an OEIS sequence
+  check <seq-id>         Check a program for an OEIS sequence (see also -b)
   maintain               Maintain all programs for OEIS sequences
 
 === Command-line options ===
