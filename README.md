@@ -67,28 +67,42 @@ There are currently no binaries available. You need to build it by running `make
 The `loda` command-line tool provides the following commands and options:
 
 ```
-Usage:             loda <command> <options>
-Core commands:
-  evaluate <file>  Evaluate a program to a sequence (use -t to set the number of terms)
-  minimize <file>  Minimize a program and print it (use -t to set the number of terms)
-  optimize <file>  Optimize a program and print it
-  generate         Generate a random program and print it
-OEIS commands:
-  mine             Mine programs for OEIS sequences (use -i to use a non-default matcher)
-  match    <file>  Match a program to OEIS sequences (use -i to use a non-default matcher)
-  check  <seq-id>  Check a program for an OEIS sequence
-  maintain         Maintain all programs for OEIS sequences
-Options:
-  -l <string>      Log level (values:debug,info,warn,error,alert)
-  -k <string>      Configuration file (default:loda.json)
-  -i <string>      Miner to be used (default:default)
-  -t <number>      Number of sequence terms (default:20)
-  -p <number>      Maximum physical memory in MB (default:1024)
-  -c <number>      Maximum number of interpreter cycles (default:10000000; no limit:-1)
-  -m <number>      Maximum number of used memory cells (default:100000)
-  -b <number>      Print evaluation result in b-file format starting from a given offset
-  -s               Evaluate the number of execution steps
-  -r               Search for programs of linear sequences (slow)
+Usage:                   loda <command> <options>
+
+=== Core commands ===
+  evaluate <file>        Evaluate a program to a sequence (see also -t,-b,-s)
+  minimize <file>        Minimize a program and print it (see also -t)
+  optimize <file>        Optimize a program and print it
+  generate               Generate a random program and print it
+
+=== OEIS commands ===
+  mine                   Mine programs for OEIS sequences (see also -i)
+  match <file>           Match a program to OEIS sequences (see also -i)
+  check <seq-id>         Check a program for an OEIS sequence
+  maintain               Maintain all programs for OEIS sequences
+
+=== Command-line options ===
+  -l <string>            Log level (values:debug,info,warn,error,alert)
+  -k <string>            Configuration file (default:loda.json)
+  -i <string>            Miner configuration from loda.json
+  -t <number>            Number of sequence terms (default:10)
+  -c <number>            Maximum number of interpreter cycles (no limit:-1)
+  -m <number>            Maximum number of used memory cells (default:100)
+  -p <number>            Maximum physical memory in MB (default:1024)
+  -b <number>            Print result in b-file format from a given offset
+  -s                     Evaluate program to number of execution steps
+  -r                     Search for programs of linear sequences (slow)
+
+=== Environment variables ===
+LODA_OEIS_PROGRAMS_HOME  Directory for mined programs (default: programs/oeis)
+LODA_UPDATE_INTERVAL     Update interval for OEIS metadata in days (default:1)
+LODA_MAX_CYCLES          Maximum number of interpreter cycles (same as -c)
+LODA_MAX_MEMORY          Maximum number of used memory cells (same as -m)
+LODA_MAX_PHYSICAL_MEMORY Maximum physical memory in MB (same as -p)
+LODA_SLACK_ALERTS        Enable alerts on Slack (default: false)
+LODA_TWEET_ALERTS        Enable alerts on Twitter (default: false)
+LODA_INFLUXDB_HOST       InfluxDB host name (URL) for publishing metrics
+LODA_INFLUXDB_AUTH       InfluxDB authentication info ('user:password' format)
 ```
 
 ### Core Commands
