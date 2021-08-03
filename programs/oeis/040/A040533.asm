@@ -1,28 +1,11 @@
 ; A040533: Continued fraction for sqrt(557).
 ; 23,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1
 
-mov $4,2
-mov $6,$0
-lpb $4
-  sub $4,1
-  add $0,$4
-  sub $0,1
-  mov $2,$0
-  div $2,5
-  mov $3,$4
-  mov $5,9
-  mul $5,$2
-  add $5,5
-  mul $5,10
-  sub $5,6
-  lpb $3
-    mov $1,$5
-    sub $3,1
-  lpe
-lpe
-lpb $6
-  sub $1,$5
-  mov $6,0
-lpe
-div $1,2
-add $1,1
+cal $0,10152 ; Continued fraction for sqrt(74).
+cal $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
+mov $1,$0
+cal $0,189663 ; Partial sums of A189661.
+sub $0,1
+mul $0,2
+add $1,$0
+sub $1,1

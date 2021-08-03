@@ -4,6 +4,5 @@
 cal $0,1196 ; Double-bitters: only even length runs in binary expansion.
 cal $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
 mov $1,$0
-mul $1,8
-div $1,88
+div $1,11
 mul $1,10

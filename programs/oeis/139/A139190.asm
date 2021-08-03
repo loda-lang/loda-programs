@@ -1,8 +1,13 @@
 ; A139190: a(n) = (prime(n)!-2)/2.
 ; 0,2,59,2519,19958399,3113510399,177843714047999,60822550204415999,12926008369442488319999,4420880996869850977271807999999,4111419327088961408862781439999999
 
-cal $0,40 ; The prime numbers.
-cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+cal $0,6005 ; The odd prime numbers together with 1.
+mov $2,$0
+lpb $0
+  sub $0,2
+  add $1,$0
+  mul $2,$1
+lpe
+sub $2,1
+mul $0,$2
 mov $1,$0
-sub $1,1
-div $1,2

@@ -9,6 +9,5 @@ add $0,1
 lpb $1
   mul $0,4
   div $1,4
-  cmp $1,2
 lpe
 mov $1,$0

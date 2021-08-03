@@ -4,6 +4,5 @@
 cal $0,3500 ; a(n) = 4*a(n-1) - a(n-2) with a(0) = 2, a(1) = 4.
 pow $0,2
 mov $1,$0
-sub $1,4
+sub $1,2
 div $1,2
-add $1,1

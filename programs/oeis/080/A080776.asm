@@ -4,7 +4,7 @@
 sub $0,1
 mov $2,$0
 max $0,0
-cal $0,279521 ; Maximum numbers of single-direction edges in leveled binary trees with n nodes.
+cal $0,279521 ; Maximum number of single-direction edges in leveled binary trees with n nodes.
 trn $2,$0
 sub $0,$2
 mov $1,$0

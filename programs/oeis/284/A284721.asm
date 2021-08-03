@@ -3,12 +3,9 @@
 
 mul $0,2
 cal $0,284723 ; Smallest odd prime that is relatively prime to n.
-bin $0,2
+mul $0,2
+div $0,3
 mov $1,$0
-sub $0,1
-div $0,5
-add $0,1
-div $1,3
-sub $1,$0
+sub $1,2
 mul $1,2
 add $1,3

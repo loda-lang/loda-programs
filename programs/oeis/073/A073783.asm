@@ -3,9 +3,9 @@
 
 cal $0,72668 ; Numbers one less than composite numbers.
 cal $0,34693 ; Smallest k such that k*n+1 is prime.
-mov $1,$0
-lpb $1
-  mov $1,2
-lpe
-mod $1,2
+mov $2,$0
+mul $0,2
+sub $0,1
+sub $0,$2
+cmp $1,$0
 add $1,1

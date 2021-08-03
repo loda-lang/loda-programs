@@ -1,0 +1,8 @@
+; A220853: Denominators of the fraction (30*n+7) * binomial(2*n,n)^2 * 2F1([1/2 - n/2, -n/2], [1], 64)/(-256)^n, where 2F1 is the hypergeometric function.
+; 1,64,16384,1048576,1073741824,68719476736,17592186044416,1125899906842624,4611686018427387904,295147905179352825856,75557863725914323419136,4835703278458516698824704,4951760157141521099596496896,316912650057057350374175801344,81129638414606681695789005144064,5192296858534827628530496329220096
+
+mul $0,4
+cal $0,92054 ; Base-2 logarithm of the sum of numerator and denominator of the convergents of the continued fraction expansion [1; 1/2, 1/3, 1/4, ..., 1/n, ...].
+cal $0,198633 ; Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
+mov $1,$0
+div $1,4

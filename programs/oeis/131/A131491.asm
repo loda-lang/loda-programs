@@ -1,8 +1,15 @@
 ; A131491: 2*prime(n)!.
 ; 4,12,240,10080,79833600,12454041600,711374856192000,243290200817664000,51704033477769953280000,17683523987479403909087232000000,16445677308355845635451125760000000
 
-cal $0,40 ; The prime numbers.
-cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+cal $0,6005 ; The odd prime numbers together with 1.
+mov $2,$0
+lpb $0
+  sub $0,2
+  add $1,$0
+  mul $2,$1
+lpe
+sub $2,1
+mul $0,$2
 mov $1,$0
-div $1,2
 mul $1,4
+add $1,4

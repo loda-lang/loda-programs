@@ -5,7 +5,7 @@ lpb $0
   mov $1,$0
   mov $0,0
   cal $1,165563 ; a(n) = 1 + 2*n + n^2 + 2*n^3 + n^4.
-  add $1,1
 lpe
+add $1,1
 div $1,2
 add $1,2

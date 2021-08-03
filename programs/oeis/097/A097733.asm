@@ -13,6 +13,4 @@ lpb $0
   add $1,$2
   add $2,$1
 lpe
-sub $1,15
 div $1,15
-add $1,1

@@ -5,8 +5,6 @@ mov $1,10
 pow $1,$0
 mul $1,5
 bin $1,2
-div $1,27
-mul $1,24
-div $1,360
+div $1,405
 mul $1,324
 add $1,7

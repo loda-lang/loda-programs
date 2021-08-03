@@ -1,6 +1,11 @@
 ; A040789: Continued fraction for sqrt(818).
 ; 28,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1
 
-mul $0,2
-cal $0,40790 ; Continued fraction for sqrt(819).
+cal $0,10152 ; Continued fraction for sqrt(74).
+cal $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
 mov $1,$0
+cal $0,189663 ; Partial sums of A189661.
+sub $0,1
+mul $0,3
+add $1,$0
+sub $1,1

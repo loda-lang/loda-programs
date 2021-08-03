@@ -1,15 +1,11 @@
 ; A128922: Numbers simultaneously 10-gonal and centered 10-gonal.
 ; 1,451,145351,46802701,15070324501,4852597686751,1562521384809451,503127033310956601,162005342204743216201,52165217062894004660251,16797037888909664757384751
 
-mul $0,6
-add $0,3
-mov $1,2
-mov $2,1
-lpb $0
-  sub $0,1
-  add $1,$2
-  add $2,$1
-lpe
-div $1,5760
+mul $0,2
+add $0,1
+cal $0,1077 ; Numerators of continued fraction convergents to sqrt(5).
+pow $0,2
+mov $1,$0
+div $1,1440
 mul $1,450
 add $1,1

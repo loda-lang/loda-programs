@@ -4,6 +4,4 @@
 cal $0,40 ; The prime numbers.
 mov $1,2
 pow $1,$0
-sub $1,8
 div $1,4
-add $1,2

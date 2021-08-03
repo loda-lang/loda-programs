@@ -1,9 +1,13 @@
 ; A139156: Natural numbers of the form (n!+9)/9.
 ; 81,561,4481,40321,403201,4435201,53222401,691891201,9686476801,145297152001,2324754432001,39520825344001,711374856192001,13516122267648001,270322445352960001,5676771352412160001
 
-add $0,6
-cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mov $1,$0
+add $0,5
+add $1,6
+lpb $0
+  mul $1,$0
+  sub $0,1
+lpe
 sub $1,720
 div $1,9
 add $1,81
