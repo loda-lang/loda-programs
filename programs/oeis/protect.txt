@@ -1,4 +1,5 @@
 A006519: Highest power of 2 dividing n.
+A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
 A038500: Highest power of 3 dividing n.
 A038712: Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
