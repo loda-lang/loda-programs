@@ -70,32 +70,31 @@ The `loda` command-line tool provides the following commands and options:
 Usage:                   loda <command> <options>
 
 === Core commands ===
-  evaluate <file>        Evaluate a program to a sequence (see also -t,-b,-s)
-  minimize <file>        Minimize a program and print it (see also -t)
+  evaluate <file/seq-id> Evaluate a program to a sequence (cf. -t,-b,-s)
+  minimize <file>        Minimize a program and print it (cf. -t)
   optimize <file>        Optimize a program and print it
   generate               Generate a random program and print it
 
 === OEIS commands ===
-  mine                   Mine programs for OEIS sequences (see also -i)
-  match <file>           Match a program to OEIS sequences (see also -i)
-  check <seq-id>         Check a program for an OEIS sequence (see also -b)
+  mine                   Mine programs for OEIS sequences (cf. -i)
+  match <file>           Match a program to OEIS sequences (cf. -i)
+  check <seq-id>         Check a program for an OEIS sequence (cf. -b)
   maintain               Maintain all programs for OEIS sequences
 
 === Command-line options ===
-  -l <string>            Log level (values:debug,info,warn,error,alert)
-  -k <string>            Configuration file (default:loda.json)
-  -i <string>            Miner configuration from loda.json
-  -t <number>            Number of sequence terms (default:10)
-  -c <number>            Maximum number of interpreter cycles (no limit:-1)
-  -m <number>            Maximum number of used memory cells (default:100)
-  -p <number>            Maximum physical memory in MB (default:1024)
+  -t <number>            Number of sequence terms (default: 10)
   -b <number>            Print result in b-file format from a given offset
   -s                     Evaluate program to number of execution steps
-  -r                     Search for programs of linear sequences (slow)
+  -c <number>            Maximum number of interpreter cycles (no limit: -1)
+  -m <number>            Maximum number of used memory cells (no limit: -1)
+  -p <number>            Maximum physical memory in MB (default: 1024)
+  -l <string>            Log level (values: debug,info,warn,error,alert)
+  -k <string>            Configuration file (default: loda.json)
+  -i <string>            Name of miner configuration from loda.json
 
 === Environment variables ===
 LODA_OEIS_PROGRAMS_HOME  Directory for mined programs (default: programs/oeis)
-LODA_UPDATE_INTERVAL     Update interval for OEIS metadata in days (default:1)
+LODA_UPDATE_INTERVAL     Update interval for OEIS metadata in days (default: 1)
 LODA_MAX_CYCLES          Maximum number of interpreter cycles (same as -c)
 LODA_MAX_MEMORY          Maximum number of used memory cells (same as -m)
 LODA_MAX_PHYSICAL_MEMORY Maximum physical memory in MB (same as -p)
