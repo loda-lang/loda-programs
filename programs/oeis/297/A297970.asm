@@ -1,0 +1,6 @@
+; A297970: Numbers that are not the sum of 3 squares and a nonnegative 7th power.
+; 112,240,368,496,624,752,880,1008,1136,1264,1392,1520,1648,1776,1904,2032,2160
+
+mov $1,$0
+mul $1,128
+add $1,112
