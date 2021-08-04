@@ -3,6 +3,6 @@
 
 add $0,1
 mul $0,2
-cal $0,73273 ; a(n) = floor(sqrt(prime(n)*prime(n+2))).
+seq $0,73273 ; a(n) = floor(sqrt(prime(n)*prime(n+2))).
 mov $1,$0
 add $1,1

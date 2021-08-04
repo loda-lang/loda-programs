@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,97133 ; 3*Fibonacci(n)+(-1)^n.
+  seq $0,97133 ; 3*Fibonacci(n)+(-1)^n.
   div $0,6
   mov $3,$0
   mov $5,$4

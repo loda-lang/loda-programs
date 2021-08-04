@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,105234 ; Central column of a Moebius-binomial triangle.
+  seq $2,105234 ; Central column of a Moebius-binomial triangle.
   add $1,$2
 lpe
 add $1,1

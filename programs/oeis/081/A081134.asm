@@ -4,7 +4,7 @@
 mov $1,$0
 mul $1,2
 sub $1,$0
-cal $0,80727 ; a(0) = 1; for n>0, a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) == 2 mod 3".
+seq $0,80727 ; a(0) = 1; for n>0, a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) == 2 mod 3".
 mul $1,2
 sub $1,$0
 add $1,1

@@ -1,8 +1,8 @@
 ; A298360: Numbers congruent to {3, 7, 13, 27} mod 30.
 ; 3,7,13,27,33,37,43,57,63,67,73,87,93,97,103,117,123,127,133,147,153,157,163,177,183,187,193,207,213,217,223,237,243,247,253,267,273,277,283,297,303,307,313,327,333,337,343,357,363,367,373,387,393,397,403
 
-cal $0,112652 ; a(n) squared is congruent to a(n) (mod 12).
-cal $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
+seq $0,112652 ; a(n) squared is congruent to a(n) (mod 12).
+seq $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
 mov $1,$0
 div $1,2
 add $1,3

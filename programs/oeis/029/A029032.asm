@@ -5,6 +5,6 @@ add $0,4
 lpb $0
   mov $2,$0
   trn $0,8
-  cal $2,211543 ; Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w=3x+5y.
+  seq $2,211543 ; Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w=3x+5y.
   add $1,$2
 lpe

@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,29058 ; Expansion of 1/((1-x)(1-x^3)(1-x^9)(1-x^10)).
+  seq $0,29058 ; Expansion of 1/((1-x)(1-x^3)(1-x^9)(1-x^10)).
   mov $2,$4
   mul $2,$0
   add $1,$2

@@ -16,7 +16,7 @@ lpb $3
     mov $0,$5
     sub $7,2
     sub $0,$7
-    cal $0,48250 ; Sum of the squarefree divisors of n.
+    seq $0,48250 ; Sum of the squarefree divisors of n.
     add $6,$0
   lpe
   mov $2,$3

@@ -3,7 +3,7 @@
 
 add $0,1
 mov $2,$0
-cal $0,47171 ; Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-1)/2.
+seq $0,47171 ; Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-1)/2.
 mov $1,$0
 div $1,$2
 add $1,1

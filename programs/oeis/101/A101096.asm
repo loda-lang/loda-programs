@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,101098 ; a(1)=1; thereafter, a(n+1) = 20*n^3 + 10*n.
+  seq $0,101098 ; a(1)=1; thereafter, a(n+1) = 20*n^3 + 10*n.
   mov $2,$4
   mul $2,$0
   add $1,$2

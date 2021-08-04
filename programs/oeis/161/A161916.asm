@@ -5,7 +5,7 @@ mov $1,1
 mov $2,$0
 mod $0,2
 mul $0,2
-cal $2,39963 ; The period-doubling sequence A035263 repeated.
+seq $2,39963 ; The period-doubling sequence A035263 repeated.
 bin $0,$2
 sub $1,$0
 add $1,2

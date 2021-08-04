@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  seq $2,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   add $1,$2
 lpe

@@ -5,7 +5,7 @@ mov $3,$0
 lpb $0
   mov $1,$0
   sub $0,1
-  cal $1,39966 ; a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
+  seq $1,39966 ; a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
   add $2,$1
   add $0,$2
 lpe

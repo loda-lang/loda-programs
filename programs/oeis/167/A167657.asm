@@ -3,5 +3,5 @@
 
 mov $1,$0
 trn $0,1
-cal $0,1223 ; Prime gaps: differences between consecutive primes.
+seq $0,1223 ; Prime gaps: differences between consecutive primes.
 pow $1,$0

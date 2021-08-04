@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$0
   sub $0,1
   mul $3,2

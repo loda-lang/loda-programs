@@ -4,7 +4,7 @@
 add $0,1
 mov $1,4
 sub $1,$0
-cal $0,22086 ; Fibonacci sequence beginning 0, 3.
+seq $0,22086 ; Fibonacci sequence beginning 0, 3.
 add $1,$0
 sub $1,6
 mul $1,2

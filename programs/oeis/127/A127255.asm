@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,127252 ; Sequence composed of 1 and -1 with the -1's occurring at odious indexed positions given by A091855.
+  seq $2,127252 ; Sequence composed of 1 and -1 with the -1's occurring at odious indexed positions given by A091855.
   add $1,$2
 lpe
 add $1,1

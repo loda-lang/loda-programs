@@ -6,6 +6,6 @@ lpb $0
   add $0,2
   mov $1,$0
   mov $0,1
-  cal $1,256911 ; Number of terms in the enhanced triangular-number representation of n.
+  seq $1,256911 ; Number of terms in the enhanced triangular-number representation of n.
 lpe
 add $1,1

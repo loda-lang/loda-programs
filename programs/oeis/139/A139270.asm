@@ -1,6 +1,12 @@
 ; A139270: Twice nonprime numbers.
 ; 2,8,12,16,18,20,24,28,30,32,36,40,42,44,48,50,52,54,56,60,64,66,68,70,72,76,78,80,84,88,90,92,96,98,100,102,104,108,110,112,114,116,120,124,126,128,130,132,136,138,140,144,148,150
 
-cal $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+mov $3,$0
+mul $0,2
+mov $2,$0
+sub $2,1
+trn $2,$3
+sub $0,$2
+seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
 mov $1,$0
 mul $1,2

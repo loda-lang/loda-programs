@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,7956 ; Product of proper divisors of n.
+  seq $2,7956 ; Product of proper divisors of n.
   add $1,$2
 lpe
 add $1,1

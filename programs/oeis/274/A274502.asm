@@ -6,6 +6,6 @@ lpb $0
   mov $1,$0
   mov $0,1
   max $1,0
-  cal $1,52254 ; Partial sums of A050406.
+  seq $1,52254 ; Partial sums of A050406.
 lpe
 mul $1,9

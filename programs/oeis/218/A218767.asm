@@ -5,5 +5,5 @@ mov $2,$0
 mul $2,2
 mov $1,$2
 add $1,1
-cal $1,307118 ; a(1) = 0; for n>1, a(n) = dr(n-1) + dr(n) + dr(n+1), where dr(n) is the number of nontrivial divisors of n (A070824).
+seq $1,307118 ; a(1) = 0; for n>1, a(n) = dr(n-1) + dr(n) + dr(n+1), where dr(n) is the number of nontrivial divisors of n (A070824).
 add $1,1

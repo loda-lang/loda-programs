@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,301726 ; Coordination sequence for node of type V2 in "kra" 2-D tiling (or net).
+  seq $2,301726 ; Coordination sequence for node of type V2 in "kra" 2-D tiling (or net).
   add $1,$2
 lpe
 add $1,1

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,87056 ; Difference between 2 * n^2 and the next smaller square number.
+  seq $2,87056 ; Difference between 2 * n^2 and the next smaller square number.
   mov $0,$2
   mul $0,2
 lpe

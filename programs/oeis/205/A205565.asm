@@ -1,8 +1,8 @@
 ; A205565: Number of ways of writing n = u + v with u <= v, and u,v having in ternary representation no 3.
 ; 1,1,1,1,2,1,1,1,1,1,2,1,2,4,2,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,2,4,2,1,2,1,2,4,2,4,8,4,2,4,2,1,2,1,2,4,2,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,2,4,2,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,2,4,2,1,2,1,2,4,2,4,8,4,2,4,2,1
 
-cal $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
-cal $0,304517 ; a(n) = 16*2^n - 11 (n>=1).
+seq $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
+seq $0,304517 ; a(n) = 16*2^n - 11 (n>=1).
 mov $1,$0
 mul $1,4479999995520
 div $1,286719999713292

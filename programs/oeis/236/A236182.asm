@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,30516 ; Numbers with 7 divisors. 6th powers of primes.
+  seq $2,30516 ; Numbers with 7 divisors. 6th powers of primes.
   add $1,$2
 lpe
 add $1,64

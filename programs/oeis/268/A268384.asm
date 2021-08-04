@@ -4,7 +4,7 @@
 sub $0,1
 lpb $0
   max $0,0
-  cal $0,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
+  seq $0,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
   sub $0,2
   gcd $2,1
   lpb $0

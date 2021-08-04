@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $0,2
-cal $0,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
+seq $0,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
 mov $2,$0
 add $2,2
 add $1,$2

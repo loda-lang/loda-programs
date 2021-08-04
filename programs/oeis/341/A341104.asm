@@ -16,7 +16,7 @@ lpb $3
     sub $7,1
     add $0,$7
     trn $0,1
-    cal $0,61667 ; a(n) = Fibonacci(2*n+1) - 2^(n-1).
+    seq $0,61667 ; a(n) = Fibonacci(2*n+1) - 2^(n-1).
     mov $4,$0
     mov $8,$7
     mul $8,$0

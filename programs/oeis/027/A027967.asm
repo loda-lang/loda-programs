@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,27966 ; T(n, 2*n-4), T given by A027960.
+  seq $2,27966 ; T(n, 2*n-4), T given by A027960.
   add $1,$2
 lpe
 add $1,3

@@ -3,7 +3,7 @@
 
 mov $1,$0
 sub $0,5
-cal $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 gcd $0,$1
 mul $0,5
 div $1,$0

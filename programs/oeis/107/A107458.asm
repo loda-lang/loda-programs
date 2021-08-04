@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,306276 ; a(0) = a(1) = a(2) = a(3) = 1; thereafter a(n) = a(n-2) + a(n-3) + a(n-4).
+  seq $0,306276 ; a(0) = a(1) = a(2) = a(3) = 1; thereafter a(n) = a(n-2) + a(n-3) + a(n-4).
   mov $5,$0
   add $5,$0
   mov $0,$5

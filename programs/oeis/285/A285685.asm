@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,22839 ; Beatty sequence for sqrt(5).
+  seq $0,22839 ; Beatty sequence for sqrt(5).
   div $0,5
   mov $2,$3
   mul $2,$0

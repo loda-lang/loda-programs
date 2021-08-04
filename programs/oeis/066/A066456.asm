@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,28724 ; a(n) = (1/2)*floor(n/2)*floor((n-1)/2)*floor((n-2)/2).
+  seq $2,28724 ; a(n) = (1/2)*floor(n/2)*floor((n-1)/2)*floor((n-2)/2).
   add $1,$2
   add $1,$0
 lpe

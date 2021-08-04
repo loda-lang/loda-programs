@@ -6,6 +6,6 @@ lpb $0
   mov $1,$0
   mov $0,0
   max $1,0
-  cal $1,82662 ; Numbers k such that the odd part of k is less than sqrt(2k).
+  seq $1,82662 ; Numbers k such that the odd part of k is less than sqrt(2k).
 lpe
 mul $1,8

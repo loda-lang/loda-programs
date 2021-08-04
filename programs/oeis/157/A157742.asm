@@ -4,5 +4,5 @@
 mov $2,$0
 add $2,2
 mov $1,$2
-cal $1,6094 ; Products of 2 successive primes.
+seq $1,6094 ; Products of 2 successive primes.
 mod $1,9

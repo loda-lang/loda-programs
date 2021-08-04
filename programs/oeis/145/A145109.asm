@@ -4,5 +4,5 @@
 sub $0,1
 mul $0,2
 add $0,3
-cal $0,53143 ; Smallest square divisible by n.
+seq $0,53143 ; Smallest square divisible by n.
 mov $1,$0

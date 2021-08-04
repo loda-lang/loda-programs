@@ -15,7 +15,7 @@ lpb $2
     sub $4,1
     sub $0,$4
     sub $0,1
-    cal $0,99488 ; Expansion of (1-x)^2/((1+x^2)(1-4x+x^2)).
+    seq $0,99488 ; Expansion of (1-x)^2/((1+x^2)(1-4x+x^2)).
     add $5,$0
   lpe
   add $1,$5

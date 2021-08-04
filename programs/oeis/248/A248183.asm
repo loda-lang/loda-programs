@@ -7,5 +7,5 @@ trn $0,5
 add $0,6
 mov $1,$0
 div $1,4
-cal $1,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+seq $1,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
 sub $1,1

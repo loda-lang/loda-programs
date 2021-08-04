@@ -3,13 +3,13 @@
 
 mov $1,$0
 mov $2,$0
-cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 add $1,2
 mul $1,$0
 lpb $2
   add $1,$0
   mov $2,$3
-  cal $4,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  seq $4,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
   add $1,$4
 lpe
 sub $1,1

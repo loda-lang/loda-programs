@@ -3,7 +3,7 @@
 
 lpb $0
   trn $0,1
-  cal $0,1043 ; Numbers that are the sum of 2 successive primes.
+  seq $0,1043 ; Numbers that are the sum of 2 successive primes.
   div $0,2
   mov $1,$0
   lpb $0

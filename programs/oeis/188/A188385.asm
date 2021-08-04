@@ -3,5 +3,5 @@
 
 mov $1,1
 add $1,$0
-cal $0,51903 ; Maximal exponent in prime factorization of n.
+seq $0,51903 ; Maximal exponent in prime factorization of n.
 mul $1,$0

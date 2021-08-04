@@ -7,7 +7,7 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,74943 ; tau(n) (mod 3).
+  seq $0,74943 ; tau(n) (mod 3).
   div $0,2
   add $1,$0
 lpe

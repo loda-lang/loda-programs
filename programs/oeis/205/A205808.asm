@@ -7,4 +7,4 @@ mul $0,9
 mov $2,$0
 add $2,22
 mov $1,$2
-cal $1,93709 ; Characteristic function of squares or twice squares.
+seq $1,93709 ; Characteristic function of squares or twice squares.

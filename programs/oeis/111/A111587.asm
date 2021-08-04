@@ -10,7 +10,7 @@ lpb $3
   add $0,1
   mov $2,$3
   mov $4,$0
-  cal $4,116404 ; Expansion of (1-x)/((1-x)^2 - x^2(1+x)^2).
+  seq $4,116404 ; Expansion of (1-x)/((1-x)^2 - x^2(1+x)^2).
   sub $4,1
   mul $2,$4
   add $1,$2

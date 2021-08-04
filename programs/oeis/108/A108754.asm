@@ -6,6 +6,6 @@ lpb $0
   div $0,4
 lpe
 trn $0,1
-cal $0,134181 ; Difference between cumulative prime and odd sums.
+seq $0,134181 ; Difference between cumulative prime and odd sums.
 mov $1,$0
 add $1,1

@@ -3,5 +3,5 @@
 
 mov $1,3
 mul $1,$0
-cal $1,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
+seq $1,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
 div $1,3

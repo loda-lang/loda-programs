@@ -9,6 +9,6 @@ lpb $2
   sub $0,$2
   pow $0,2
   trn $0,1
-  cal $0,89013 ; a(n) = (A088567(8n) mod 2).
+  seq $0,89013 ; a(n) = (A088567(8n) mod 2).
   add $1,$0
 lpe

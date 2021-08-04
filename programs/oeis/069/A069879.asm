@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,60715 ; Number of primes between n and 2n exclusive.
+  seq $2,60715 ; Number of primes between n and 2n exclusive.
   add $1,$2
 lpe
 mul $1,2

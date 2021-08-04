@@ -3,7 +3,7 @@
 
 add $0,2
 mov $1,$0
-cal $0,189663 ; Partial sums of A189661.
+seq $0,189663 ; Partial sums of A189661.
 mul $0,2
 add $1,$0
 sub $1,3

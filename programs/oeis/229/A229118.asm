@@ -3,5 +3,5 @@
 
 add $0,2
 bin $0,2
-cal $0,53188 ; Distance from n to nearest square.
+seq $0,53188 ; Distance from n to nearest square.
 mov $1,$0

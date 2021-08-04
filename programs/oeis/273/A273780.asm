@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,273782 ; First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
+  seq $2,273782 ; First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
   add $1,$2
 lpe
 add $1,1

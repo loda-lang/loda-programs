@@ -8,7 +8,7 @@ lpb $5
   sub $5,1
   add $0,$5
   max $0,0
-  cal $0,51201 ; Sum of elements of the set { [ n/k ] : 1 <= k <= n }.
+  seq $0,51201 ; Sum of elements of the set { [ n/k ] : 1 <= k <= n }.
   sub $0,1
   mov $3,$5
   mul $3,$0

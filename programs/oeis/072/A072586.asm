@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,295316 ; a(n) = 1 if there are no even exponents in the prime factorization of n, 0 otherwise.
+  seq $2,295316 ; a(n) = 1 if there are no even exponents in the prime factorization of n, 0 otherwise.
   add $1,$2
 lpe

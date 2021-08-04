@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,52410 ; Write n = m^k with m, k integers, k >= 1, then a(n) is the smallest possible choice for m.
+  seq $2,52410 ; Write n = m^k with m, k integers, k >= 1, then a(n) is the smallest possible choice for m.
   div $0,$2
   mov $3,$2
   min $3,1

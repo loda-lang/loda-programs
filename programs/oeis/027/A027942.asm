@@ -4,7 +4,7 @@
 mul $0,2
 add $0,4
 mov $2,$0
-cal $0,192760 ; Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
+seq $0,192760 ; Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
 pow $2,2
 sub $0,$2
 mov $1,$0

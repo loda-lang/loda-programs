@@ -9,9 +9,9 @@ lpb $3
   sub $0,$3
   mov $4,0
   lpb $0
-    cal $2,17778 ; Binomial coefficients C(62,n).
+    seq $2,17778 ; Binomial coefficients C(62,n).
     mov $5,$0
-    cal $5,45965 ; a(1)=2; if n = Product p_i^e_i, n > 1, then a(n) = Product p_{i+1}^e_i.
+    seq $5,45965 ; a(1)=2; if n = Product p_i^e_i, n > 1, then a(n) = Product p_{i+1}^e_i.
     lpb $2
       mov $0,-5
       add $0,$5

@@ -5,7 +5,7 @@ mov $1,$0
 lpb $0
   mov $2,$0
   mov $0,0
-  cal $2,301291 ; Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
+  seq $2,301291 ; Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
   add $1,$2
   sub $1,1
 lpe

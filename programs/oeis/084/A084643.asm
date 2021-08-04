@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,84859 ; Binomial transform of Cullen numbers A002064.
+  seq $2,84859 ; Binomial transform of Cullen numbers A002064.
   add $1,$2
 lpe
 mul $1,2

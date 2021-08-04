@@ -8,7 +8,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
   mov $3,$0
   add $3,1
   add $1,$3

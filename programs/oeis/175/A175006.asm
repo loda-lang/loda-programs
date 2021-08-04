@@ -16,7 +16,7 @@ lpb $2
     mov $0,$6
     sub $4,1
     sub $0,$4
-    cal $0,144065 ; Values of n such that the expression sqrt(4!*(n+1) + 1) yields an integer.
+    seq $0,144065 ; Values of n such that the expression sqrt(4!*(n+1) + 1) yields an integer.
     mov $7,$0
     cmp $7,0
     add $0,$7

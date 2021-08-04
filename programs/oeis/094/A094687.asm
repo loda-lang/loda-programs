@@ -13,7 +13,7 @@ lpb $5
     mov $2,$0
     sub $0,2
     max $2,0
-    cal $2,8466 ; a(n) = 2^n - Fibonacci(n+2).
+    seq $2,8466 ; a(n) = 2^n - Fibonacci(n+2).
     add $3,$2
   lpe
   mov $4,$5

@@ -9,7 +9,7 @@ lpb $0
   mul $3,$2
   mov $2,$0
   mov $0,0
-  cal $2,178736 ; a(n) = n XOR 10n, where XOR is bitwise XOR.
+  seq $2,178736 ; a(n) = n XOR 10n, where XOR is bitwise XOR.
   add $3,$2
 lpe
 div $3,2

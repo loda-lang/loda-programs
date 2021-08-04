@@ -4,7 +4,7 @@
 mul $0,2
 add $0,3
 pow $0,2
-cal $0,83364 ; Antidiagonal sums of table A083362.
+seq $0,83364 ; Antidiagonal sums of table A083362.
 mul $0,2
 mov $1,$0
 sub $1,879

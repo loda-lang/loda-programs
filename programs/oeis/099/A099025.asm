@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,5386 ; Area of n-th triple of squares around a triangle.
+  seq $2,5386 ; Area of n-th triple of squares around a triangle.
   add $1,$2
 lpe
 add $1,1

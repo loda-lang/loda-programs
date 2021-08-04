@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,84219 ; Inverse binomial transform of A053088.
+  seq $2,84219 ; Inverse binomial transform of A053088.
   add $1,$2
 lpe

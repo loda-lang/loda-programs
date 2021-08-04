@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,226177 ; a(n) = mu(n)*d(n), where mu(n) = A008683 and d(n) = A000005.
+  seq $2,226177 ; a(n) = mu(n)*d(n), where mu(n) = A008683 and d(n) = A000005.
   cmp $4,0
   add $3,$4
   div $3,$3

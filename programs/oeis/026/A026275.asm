@@ -16,7 +16,7 @@ lpb $8
     sub $4,1
     add $0,$4
     max $0,0
-    cal $0,26353 ; a(n) = sum of the numbers between the two n's in A026350.
+    seq $0,26353 ; a(n) = sum of the numbers between the two n's in A026350.
     mov $5,$4
     mul $5,$0
     add $3,$5

@@ -11,7 +11,7 @@ lpb $3
   sub $0,1
   add $0,$4
   pow $0,2
-  cal $0,32509 ; a(n) = round(tan(Pi*(1-1/n)/2)).
+  seq $0,32509 ; a(n) = round(tan(Pi*(1-1/n)/2)).
   mov $2,$3
   mov $6,$0
   lpb $2

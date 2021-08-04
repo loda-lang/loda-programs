@@ -3,7 +3,7 @@
 
 mov $1,$0
 lpb $0
-  cal $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
+  seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
   add $1,$0
   sub $0,1
 lpe

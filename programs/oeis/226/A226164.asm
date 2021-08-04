@@ -3,6 +3,6 @@
 
 mov $1,$0
 div $0,2
-cal $0,123663 ; Number of shared edges in a spiral of n unit squares.
+seq $0,123663 ; Number of shared edges in a spiral of n unit squares.
 sub $1,$0
 add $1,1

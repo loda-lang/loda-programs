@@ -1,8 +1,8 @@
 ; A040850: Continued fraction for sqrt(880).
 ; 29,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1,58,1,1,1
 
-cal $0,10195 ; Continued fraction for sqrt(136).
-cal $0,47423 ; Numbers that are congruent to {2, 3, 4, 5, 6} mod 8.
+seq $0,10195 ; Continued fraction for sqrt(136).
+seq $0,47423 ; Numbers that are congruent to {2, 3, 4, 5, 6} mod 8.
 mov $1,10
 mul $1,$0
 div $0,2

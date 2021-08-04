@@ -4,7 +4,7 @@
 mov $2,$0
 mul $0,2
 add $0,4
-cal $2,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+seq $2,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
 lpb $0
   sub $0,1
   dif $0,$2

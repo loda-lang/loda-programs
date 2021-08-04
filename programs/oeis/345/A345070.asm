@@ -8,6 +8,6 @@ mul $1,2
 div $1,120
 sub $0,$1
 sub $0,1
-cal $0,73273 ; a(n) = floor(sqrt(prime(n)*prime(n+2))).
+seq $0,73273 ; a(n) = floor(sqrt(prime(n)*prime(n+2))).
 mov $1,$0
 add $1,1

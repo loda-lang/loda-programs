@@ -5,7 +5,7 @@ lpb $0
   mov $1,$0
   mov $2,$0
   mov $0,0
-  cal $2,14591 ; a(n) = floor(n^2/12 + 5/4).
+  seq $2,14591 ; a(n) = floor(n^2/12 + 5/4).
   add $1,$2
 lpe
 add $1,1

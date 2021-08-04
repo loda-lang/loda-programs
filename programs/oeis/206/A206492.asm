@@ -9,7 +9,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,213040 ; Partial sums of A004738, leftmost column of the sequence of triangles defined in A206492.
+  seq $0,213040 ; Partial sums of A004738, leftmost column of the sequence of triangles defined in A206492.
   add $2,$0
   mov $3,$4
   mov $5,$2

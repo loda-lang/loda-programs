@@ -8,6 +8,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,71986 ; Parity of the prime-counting function pi(n).
+  seq $0,71986 ; Parity of the prime-counting function pi(n).
   add $1,$0
 lpe

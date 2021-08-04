@@ -4,6 +4,6 @@
 mov $1,$0
 pow $1,5
 mov $2,$0
-cal $2,54623 ; Number of ways to color vertices of a 9-gon using <= n colors, allowing only rotations.
+seq $2,54623 ; Number of ways to color vertices of a 9-gon using <= n colors, allowing only rotations.
 add $1,$2
 div $1,2

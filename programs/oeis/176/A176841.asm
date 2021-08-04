@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,163109 ; a(n) = phi(tau(n)).
+  seq $2,163109 ; a(n) = phi(tau(n)).
   sub $0,$2
   add $1,2
 lpe

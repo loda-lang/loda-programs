@@ -5,5 +5,5 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mov $1,$0

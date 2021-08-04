@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,190718 ; Quadruplicated tetrahedral numbers A000292
+  seq $2,190718 ; Quadruplicated tetrahedral numbers A000292
   add $1,$2
 lpe
 add $1,1

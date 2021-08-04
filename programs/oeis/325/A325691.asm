@@ -4,6 +4,6 @@
 mov $1,$0
 mod $1,2
 mov $2,$0
-cal $2,266755 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^4)).
+seq $2,266755 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^4)).
 add $1,$2
 sub $1,1

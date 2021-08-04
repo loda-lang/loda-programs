@@ -6,7 +6,7 @@ lpb $0
   mul $2,$0
   sub $0,1
   add $2,1
-  cal $2,47519 ; Numbers that are congruent to {1, 2, 3, 4, 6, 7} mod 8.
+  seq $2,47519 ; Numbers that are congruent to {1, 2, 3, 4, 6, 7} mod 8.
   add $1,$2
 lpe
 add $1,1

@@ -5,5 +5,5 @@ lpb $0
   div $0,2
   mul $0,2
   mov $1,$0
-  cal $1,214211 ; Doubled Fibonacci word: the A003842 sequence replacing 1 with 1,1 and 2 with 2,2.
+  seq $1,214211 ; Doubled Fibonacci word: the A003842 sequence replacing 1 with 1,1 and 2 with 2,2.
 lpe

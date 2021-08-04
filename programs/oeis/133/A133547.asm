@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,143928 ; 2*p^2, for p an odd prime.
+  seq $2,143928 ; 2*p^2, for p an odd prime.
   add $1,$2
 lpe
 div $1,2

@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,1
-cal $1,177965 ; Indices m for which A177961(m) - m = 1.
+seq $1,177965 ; Indices m for which A177961(m) - m = 1.
 sub $1,2

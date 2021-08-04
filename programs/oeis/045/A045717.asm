@@ -6,7 +6,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  cal $2,54265 ; Sum of composite numbers between successive primes.
+  seq $2,54265 ; Sum of composite numbers between successive primes.
   add $1,$2
 lpe
 add $1,1

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,97298 ; Eighth column (m=7) of (1,6)-Pascal triangle A096956.
+  seq $2,97298 ; Eighth column (m=7) of (1,6)-Pascal triangle A096956.
   add $1,$2
 lpe
 add $1,6

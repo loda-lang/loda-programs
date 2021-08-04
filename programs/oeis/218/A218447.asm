@@ -7,6 +7,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,1899 ; Number of divisors of n of form 5k+4; a(0) = 0.
+  seq $0,1899 ; Number of divisors of n of form 5k+4; a(0) = 0.
   add $1,$0
 lpe

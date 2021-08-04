@@ -7,7 +7,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
   pow $0,2
   add $1,$0
 lpe

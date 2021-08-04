@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,14166 ; Apply partial sum operator 4 times to Fibonacci numbers.
+seq $0,14166 ; Apply partial sum operator 4 times to Fibonacci numbers.
 mov $1,$0

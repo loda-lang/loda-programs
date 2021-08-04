@@ -2,7 +2,7 @@
 ; 1,2,3,4,1,2,3,1,1,2,3,4,1,2,3,2,1,2,3,4,1,2,3,1,1,2,3,4,1,2,3,3,1,2,3,4,1,2,3,1,1,2,3,4,1,2,3,2,1,2,3,4,1,2,3,1,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,1,1,2,3,4,1,2,3,2,1,2,3,4,1,2,3,1,1,2,3,4,1,2,3,3,1,2,3,4
 
 lpb $0
-  cal $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+  seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
   sub $0,3
 lpe
 mod $0,4

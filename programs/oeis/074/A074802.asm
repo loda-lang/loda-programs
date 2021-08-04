@@ -7,7 +7,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
+  seq $0,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
   mov $3,$0
   cmp $3,0
   add $1,$3

@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   max $0,0
-  cal $0,127985 ; a(n) = floor(2^n*(n/3 + 4/9)).
+  seq $0,127985 ; a(n) = floor(2^n*(n/3 + 4/9)).
   mov $2,$4
   mul $2,$0
   add $1,$2

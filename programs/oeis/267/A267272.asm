@@ -9,7 +9,7 @@ mov $3,$4
 cmp $3,0
 add $0,$3
 max $4,0
-cal $4,165775 ; n + (least square >= n), i.e., n + A048761(n).
+seq $4,165775 ; n + (least square >= n), i.e., n + A048761(n).
 add $0,$4
 mov $2,3
 trn $2,$1

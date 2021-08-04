@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,79773 ; a(n) = 2*a(n-1)+15*a(n-2) with n>0, a(0)=0, a(1)=1.
+  seq $2,79773 ; a(n) = 2*a(n-1)+15*a(n-2) with n>0, a(0)=0, a(1)=1.
   add $1,$2
 lpe
 mul $1,16

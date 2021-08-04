@@ -4,5 +4,5 @@
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,73553 ; Number of Fibonacci numbers F(k), k <= 10^n, which end in 5.
+  seq $1,73553 ; Number of Fibonacci numbers F(k), k <= 10^n, which end in 5.
 lpe

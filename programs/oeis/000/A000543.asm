@@ -3,7 +3,7 @@
 
 pow $0,2
 sub $1,$0
-cal $0,136395 ; Binomial transform of [1, 3, 4, 3, 2, 0, 0, 0,...].
+seq $0,136395 ; Binomial transform of [1, 3, 4, 3, 2, 0, 0, 0,...].
 add $0,2
 add $1,$0
 sub $1,3

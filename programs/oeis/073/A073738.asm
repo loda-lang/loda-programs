@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,76074 ; Initial members of groups in A076077.
+  seq $2,76074 ; Initial members of groups in A076077.
   add $1,$2
 lpe
 add $1,1

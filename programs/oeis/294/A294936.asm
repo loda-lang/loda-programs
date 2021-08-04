@@ -4,7 +4,7 @@
 mov $2,$0
 add $2,1
 mov $3,$0
-cal $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 div $3,$2
 lpb $3
   mov $1,4

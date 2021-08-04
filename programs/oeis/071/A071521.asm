@@ -4,6 +4,6 @@
 mov $2,$0
 add $0,1
 add $0,$2
-cal $0,69924 ; Number of k, 1<=k<=n, such that phi(k) divides k.
+seq $0,69924 ; Number of k, 1<=k<=n, such that phi(k) divides k.
 mov $1,$0
 sub $1,1

@@ -18,7 +18,7 @@ lpb $2
     mov $4,$0
     mul $4,2
     max $4,0
-    cal $4,185546 ; a(n) = floor((1/2)*(n+1)^(3/2)); complement of A185547.
+    seq $4,185546 ; a(n) = floor((1/2)*(n+1)^(3/2)); complement of A185547.
     div $4,4
     mov $3,$4
     mov $8,$7

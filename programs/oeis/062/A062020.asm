@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,152535 ; a(n) = n*prime(n) - Sum_{i=1..n} prime(i).
+  seq $2,152535 ; a(n) = n*prime(n) - Sum_{i=1..n} prime(i).
   add $1,$2
 lpe

@@ -3,7 +3,7 @@
 
 mov $3,$0
 div $0,2
-cal $0,339765 ; a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
+seq $0,339765 ; a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 mov $1,$0
 add $1,2
 mov $2,$3

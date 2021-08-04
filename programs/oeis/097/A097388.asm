@@ -3,4 +3,4 @@
 
 mov $1,$0
 mul $1,2
-cal $1,67994 ; Hermite numbers.
+seq $1,67994 ; Hermite numbers.

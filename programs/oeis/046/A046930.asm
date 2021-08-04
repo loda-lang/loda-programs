@@ -10,7 +10,7 @@ lpb $3
   mov $2,$3
   mov $4,$0
   max $4,0
-  cal $4,1043 ; Numbers that are the sum of 2 successive primes.
+  seq $4,1043 ; Numbers that are the sum of 2 successive primes.
   sub $4,2
   mul $4,12
   mul $2,$4

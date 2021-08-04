@@ -6,7 +6,7 @@ mul $0,2
 add $0,3
 div $0,2
 sub $4,$0
-cal $0,158416 ; Expansion of (1+x-x^3)/(1-x^2)^2.
+seq $0,158416 ; Expansion of (1+x-x^3)/(1-x^2)^2.
 add $2,$0
 pow $4,2
 add $4,1

@@ -3,5 +3,5 @@
 
 add $0,1
 pow $0,2
-cal $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
 mov $1,$0

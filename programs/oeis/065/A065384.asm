@@ -6,7 +6,7 @@ bin $0,2
 sub $0,1
 lpb $0
   mov $2,$0
-  cal $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  seq $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
   sub $0,$2
 lpe
 mov $1,$0

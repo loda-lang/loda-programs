@@ -7,5 +7,5 @@ div $0,2
 add $0,8
 add $2,7
 sub $0,$2
-cal $0,220104 ; n appears n*(n+1) times.
+seq $0,220104 ; n appears n*(n+1) times.
 mov $1,$0

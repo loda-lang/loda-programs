@@ -3,7 +3,7 @@
 
 add $0,1
 mov $2,$0
-cal $0,198081 ; Ceiling(n*Sqrt(3)).
+seq $0,198081 ; Ceiling(n*Sqrt(3)).
 add $0,$2
 sub $0,3
 div $0,2

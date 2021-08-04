@@ -1,7 +1,7 @@
 ; A010229: Continued fraction for sqrt(187).
 ; 13,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13
 
-cal $0,10144 ; Continued fraction for sqrt(59).
-cal $0,188190 ; Positions of 0 in A188189; complement of A188191.
+seq $0,10144 ; Continued fraction for sqrt(59).
+seq $0,188190 ; Positions of 0 in A188189; complement of A188191.
 mov $1,$0
 sub $1,2

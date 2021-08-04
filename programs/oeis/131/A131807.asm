@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,131377 ; Starting with 1, the sequence a(n) changes from 1 to 0 or back when the next number n is a prime.
+  seq $2,131377 ; Starting with 1, the sequence a(n) changes from 1 to 0 or back when the next number n is a prime.
   add $1,$2
 lpe
 add $1,1

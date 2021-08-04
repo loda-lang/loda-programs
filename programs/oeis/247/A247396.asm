@@ -13,7 +13,7 @@ lpb $4
     mov $2,$0
     mov $0,1
     max $2,0
-    cal $2,280076 ; Numbers n such that Sum_{d|n} tau(d) = Product_{d|n} tau(d).
+    seq $2,280076 ; Numbers n such that Sum_{d|n} tau(d) = Product_{d|n} tau(d).
     div $2,2
   lpe
   mov $3,$4

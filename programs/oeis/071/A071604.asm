@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,86299 ; a(n) = if n is 7-smooth then 1 else 0: characteristic function of 7-smooth numbers.
+  seq $2,86299 ; a(n) = if n is 7-smooth then 1 else 0: characteristic function of 7-smooth numbers.
   add $1,$2
 lpe
 add $1,1

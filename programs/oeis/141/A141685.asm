@@ -3,6 +3,6 @@
 
 mul $0,2
 trn $0,2
-cal $0,196382 ; Number of sequences of n coin flips, that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,1).
+seq $0,196382 ; Number of sequences of n coin flips, that win on the last flip, if the sequence of flips ends with (1,1,0) or (1,0,1).
 mov $1,$0
 add $1,1

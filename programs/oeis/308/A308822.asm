@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,26811 ; Number of partitions of n in which the greatest part is 5.
+  seq $1,26811 ; Number of partitions of n in which the greatest part is 5.
   mul $1,$0
   mov $0,4
 lpe

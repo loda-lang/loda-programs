@@ -20,7 +20,7 @@ lpb $5
     lpb $0
       mov $2,$0
       trn $0,2
-      cal $2,308663 ; Partial sums of A097805.
+      seq $2,308663 ; Partial sums of A097805.
       add $3,$2
     lpe
     mov $9,$8

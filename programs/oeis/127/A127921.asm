@@ -3,7 +3,7 @@
 
 add $0,1
 mul $0,2
-cal $0,93515 ; Numbers k such that either k or k-1 is a prime.
+seq $0,93515 ; Numbers k such that either k or k-1 is a prime.
 bin $0,3
 mov $1,$0
 div $1,4

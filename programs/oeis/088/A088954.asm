@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,8644 ; Molien series of 5 X 5 upper triangular matrices over GF( 2 ).
+  seq $2,8644 ; Molien series of 5 X 5 upper triangular matrices over GF( 2 ).
   add $1,$2
 lpe
 add $1,1

@@ -5,6 +5,6 @@ lpb $0
   mov $1,$0
   mov $0,0
   trn $1,1
-  cal $1,80652 ; a(1)=2; for n>1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
+  seq $1,80652 ; a(1)=2; for n>1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
 lpe
 add $1,1

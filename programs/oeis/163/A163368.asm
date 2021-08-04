@@ -1,7 +1,7 @@
 ; A163368: a(n) = phi(sigma(tau(n))).
 ; 1,2,2,2,2,6,2,6,2,6,2,4,2,6,6,2,2,4,2,4,6,6,2,8,2,6,6,4,2,8,2,4,6,6,6,12,2,6,6,8,2,8,2,4,4,6,2,6,2,4,6,4,2,8,6,8,6,6,2,12,2,6,4,4,6,8,2,4,6,8,2,12,2,6,4,4,6,8,2,6,2,6,2,12,6,6,6,8,2,12,6,4,6,6,6,12,2,4,4,12
 
-cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,1
-cal $0,62401 ; a(n) = phi(sigma(n)).
+seq $0,62401 ; a(n) = phi(sigma(n)).
 mov $1,$0

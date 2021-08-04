@@ -8,8 +8,8 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,1
-  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $1,$0
 lpe

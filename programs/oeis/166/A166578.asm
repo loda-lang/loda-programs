@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,46630 ; Number of cubic residues mod 2^n.
+  seq $0,46630 ; Number of cubic residues mod 2^n.
   div $0,2
   mov $2,$3
   mul $2,$0

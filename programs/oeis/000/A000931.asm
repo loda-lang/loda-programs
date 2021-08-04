@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,134816 ; Padovan's spiral numbers.
+  seq $0,134816 ; Padovan's spiral numbers.
   mov $3,$0
   mov $5,$4
   mul $5,$0

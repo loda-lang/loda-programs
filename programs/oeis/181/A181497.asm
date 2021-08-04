@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,62383 ; a(0) = 1: for n>0, a(n) = 2^floor(log_2(n)+1) or a(n) = 2*a(floor(n/2)).
+  seq $2,62383 ; a(0) = 1: for n>0, a(n) = 2^floor(log_2(n)+1) or a(n) = 2*a(floor(n/2)).
   add $1,$2
 lpe

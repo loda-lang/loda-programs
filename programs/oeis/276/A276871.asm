@@ -5,7 +5,7 @@ mul $0,2
 sub $0,1
 mov $1,$0
 add $0,1
-cal $0,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
+seq $0,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
 add $1,$0
 add $1,$0
 div $1,2

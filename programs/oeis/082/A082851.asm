@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,82850 ; Let S(0) = {}, S(n) = {S(n-1), S(n-1), n}; sequence gives S(infinity).
+  seq $2,82850 ; Let S(0) = {}, S(n) = {S(n-1), S(n-1), n}; sequence gives S(infinity).
   add $1,$2
 lpe
 add $1,1

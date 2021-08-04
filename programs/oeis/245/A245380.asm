@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,8384 ; Crystal ball sequence for A_4 lattice.
+  seq $2,8384 ; Crystal ball sequence for A_4 lattice.
   add $1,$2
 lpe

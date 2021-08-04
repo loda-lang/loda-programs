@@ -1,6 +1,6 @@
 ; A305989: Numbers in binary reversed.
 ; 0,1,1,11,1,101,11,111,1,1001,101,1101,11,1011,111,1111,1,10001,1001,11001,101,10101,1101,11101,11,10011,1011,11011,111,10111,1111,11111,1,100001,10001,110001,1001,101001,11001,111001,101,100101,10101,110101,1101,101101,11101,111101,11,100011,10011,110011,1011,101011,11011,111011,111,100111,10111,110111,1111,101111,11111,111111,1,1000001,100001,1100001,10001,1010001,110001,1110001,1001,1001001,101001,1101001,11001,1011001,111001,1111001,101,1000101,100101,1100101,10101,1010101,110101,1110101,1101,1001101,101101,1101101,11101,1011101,111101,1111101,11,1000011,100011,1100011
 
-cal $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-cal $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
 mov $1,$0

@@ -4,7 +4,7 @@
 mov $3,$0
 add $0,1
 mul $0,2
-cal $0,271342 ; Sum of all even divisors of all positive integers <= n.
+seq $0,271342 ; Sum of all even divisors of all positive integers <= n.
 mov $1,$0
 mov $2,$3
 mul $2,$0

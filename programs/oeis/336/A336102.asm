@@ -5,5 +5,5 @@ mov $2,$0
 mov $0,1
 div $2,2
 add $0,$2
-cal $0,49610 ; a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3)).
+seq $0,49610 ; a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3)).
 mov $1,$0

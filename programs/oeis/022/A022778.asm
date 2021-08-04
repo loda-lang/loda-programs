@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,194979 ; 1 + floor(n/sqrt(3)).
+  seq $2,194979 ; 1 + floor(n/sqrt(3)).
   add $1,$2
 lpe
 add $1,1

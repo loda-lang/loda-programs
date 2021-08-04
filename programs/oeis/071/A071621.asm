@@ -5,5 +5,5 @@ mov $2,$0
 add $0,6
 cmp $2,0
 sub $0,$2
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 mov $1,$0

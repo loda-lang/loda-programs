@@ -3,6 +3,6 @@
 
 add $0,1
 mul $0,11
-cal $0,308358 ; Beatty sequence for sqrt(3)/4.
+seq $0,308358 ; Beatty sequence for sqrt(3)/4.
 mov $1,$0
 sub $1,1

@@ -4,6 +4,6 @@
 mov $1,2
 mul $1,$0
 mov $2,$0
-cal $2,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
+seq $2,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
 add $1,$2
 add $1,1

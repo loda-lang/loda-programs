@@ -8,7 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,87057 ; Smallest number whose square is larger than 2*n^2.
+  seq $0,87057 ; Smallest number whose square is larger than 2*n^2.
   mov $4,$0
   sub $4,1
   mod $4,2

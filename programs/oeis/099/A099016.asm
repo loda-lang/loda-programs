@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,14742 ; Expansion of (1+x^2)/(1 - 2*x - 2*x^2 + x^3).
+  seq $2,14742 ; Expansion of (1+x^2)/(1 - 2*x - 2*x^2 + x^3).
   add $1,$2
 lpe
 add $1,1

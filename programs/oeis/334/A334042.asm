@@ -3,4 +3,4 @@
 
 pow $0,2
 mov $1,$0
-cal $1,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+seq $1,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.

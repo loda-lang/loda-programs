@@ -8,6 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,28835 ; Numbers whose iterated sum of digits is a prime.
+  seq $0,28835 ; Numbers whose iterated sum of digits is a prime.
   add $1,$0
 lpe

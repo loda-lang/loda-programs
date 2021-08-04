@@ -7,6 +7,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,68639 ; a(0) = 0, a(n) = a(n-1) + (-1)^p(n) for n >= 1, where p(n) = highest power of 2 dividing n.
+  seq $0,68639 ; a(0) = 0, a(n) = a(n-1) + (-1)^p(n) for n >= 1, where p(n) = highest power of 2 dividing n.
   add $1,$0
 lpe

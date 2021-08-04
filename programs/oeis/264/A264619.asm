@@ -5,7 +5,7 @@ mov $1,2
 lpb $0
   mov $2,$0
   div $0,2
-  cal $2,47264 ; Numbers that are congruent to 0 or 5 mod 6.
+  seq $2,47264 ; Numbers that are congruent to 0 or 5 mod 6.
   add $1,$2
   mul $1,2
 lpe

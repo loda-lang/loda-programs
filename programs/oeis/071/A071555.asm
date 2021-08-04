@@ -2,7 +2,7 @@
 ; 6,36,386,5006,85086,1616616,37182146,1078282206,33426748356,1236789689136,50708377254536,2180460221945006,102481630431415236,5431526412865007456,320460058359035439846,19548063559901161830546
 
 add $0,3
-cal $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
 mov $1,$0
 sub $1,30
 div $1,6

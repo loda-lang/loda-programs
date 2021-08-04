@@ -7,7 +7,7 @@ mov $2,$0
 add $0,1
 mov $1,$0
 add $2,2
-cal $2,39163 ; Numbers whose base-11 representation has the same number of 0's and 8's.
+seq $2,39163 ; Numbers whose base-11 representation has the same number of 0's and 8's.
 add $1,$2
 sub $2,4
 trn $2,1

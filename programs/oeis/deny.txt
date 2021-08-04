@@ -1500,6 +1500,7 @@ A174112: After correction, duplicate of A111490.
 A174781: Duplicate of A028846.
 A174872: Erroneous version of A088708.
 A175586: Duplicate of A089995.
+A175747: Numbers with 38 divisors.
 A175927: Duplicate of A116990.
 A175951: Duplicate of A072207.
 A176251: Incorrect duplicate of A062341.

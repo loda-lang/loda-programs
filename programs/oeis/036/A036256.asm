@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,1405 ; a(n) = binomial(n, floor(n/2)).
+  seq $2,1405 ; a(n) = binomial(n, floor(n/2)).
   add $1,$2
 lpe
 add $1,1

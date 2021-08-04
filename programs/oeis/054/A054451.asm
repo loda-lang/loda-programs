@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,52952 ; a(n) = Fibonacci(n+2) - (1-(-1)^n)/2.
+  seq $2,52952 ; a(n) = Fibonacci(n+2) - (1-(-1)^n)/2.
   add $1,$2
 lpe
 add $1,1

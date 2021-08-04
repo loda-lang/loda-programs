@@ -8,8 +8,8 @@ lpb $4
   mov $0,$2
   sub $4,1
   sub $0,$4
-  cal $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
-  cal $0,5592 ; a(n) = F(2n+1) + F(2n-1) - 1.
+  seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+  seq $0,5592 ; a(n) = F(2n+1) + F(2n-1) - 1.
   mul $0,9
   mov $3,$0
   sub $3,9

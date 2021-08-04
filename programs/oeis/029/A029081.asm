@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,4
-  cal $2,25792 ; Expansion of 1/((1-x)(1-x^9)(1-x^11)).
+  seq $2,25792 ; Expansion of 1/((1-x)(1-x^9)(1-x^11)).
   add $1,$2
   add $1,$2
 lpe

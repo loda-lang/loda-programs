@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,186707 ; Partial sums of A007202 (crystal ball sequence for hexagonal close-packing).
+  seq $0,186707 ; Partial sums of A007202 (crystal ball sequence for hexagonal close-packing).
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -10,7 +10,7 @@ lpb $4
   mov $3,$0
   add $3,1
   mov $0,$3
-  cal $0,302048 ; a(n) = 1 if n = p^2 for some prime p, otherwise 0. Characteristic function of squares of primes (A001248).
+  seq $0,302048 ; a(n) = 1 if n = p^2 for some prime p, otherwise 0. Characteristic function of squares of primes (A001248).
   mov $2,2
   mul $2,$3
   mul $2,$0

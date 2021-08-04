@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,4648 ; a(n) = prime(n) mod n.
+  seq $2,4648 ; a(n) = prime(n) mod n.
   mov $0,$2
   add $1,2
 lpe

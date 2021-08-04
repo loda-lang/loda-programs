@@ -1,8 +1,8 @@
 ; A040837: Continued fraction for sqrt(867).
 ; 29,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4
 
-cal $0,10144 ; Continued fraction for sqrt(59).
-cal $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
+seq $0,10144 ; Continued fraction for sqrt(59).
+seq $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
 add $0,1
 mul $0,3
 add $1,$0

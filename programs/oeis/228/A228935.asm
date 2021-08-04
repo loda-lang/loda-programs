@@ -3,7 +3,7 @@
 
 mul $0,3
 trn $0,1
-cal $0,157142 ; Signed denominators of Leibniz series for Pi/4.
+seq $0,157142 ; Signed denominators of Leibniz series for Pi/4.
 div $0,3
 mov $1,$0
 mul $1,3

@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,131234 ; Starts with 1, then n appears Fibonacci(n-1) times.
+  seq $2,131234 ; Starts with 1, then n appears Fibonacci(n-1) times.
   add $1,$2
 lpe

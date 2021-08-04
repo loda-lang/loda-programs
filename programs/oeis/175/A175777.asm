@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,11861 ; a(n) = floor(n(n-1)/8).
+  seq $2,11861 ; a(n) = floor(n(n-1)/8).
   add $1,$2
 lpe

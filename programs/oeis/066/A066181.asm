@@ -3,7 +3,7 @@
 
 add $0,1
 mov $2,$0
-cal $2,130296 ; Triangle read by rows: T[i,1]=i, T[i,j]=1 for 1 < j <= i = 1,2,3,...
+seq $2,130296 ; Triangle read by rows: T[i,1]=i, T[i,j]=1 for 1 < j <= i = 1,2,3,...
 sub $0,$2
 mov $1,$0
 add $1,2

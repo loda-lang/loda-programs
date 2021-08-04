@@ -5,7 +5,7 @@ mov $1,$0
 add $0,2
 mov $2,2
 mul $2,$0
-cal $0,77017 ; a(1) = 2, a(n+1) = smallest positive integer divisible by the n-th prime that also has a nontrivial common divisor with a(n).
+seq $0,77017 ; a(1) = 2, a(n+1) = smallest positive integer divisible by the n-th prime that also has a nontrivial common divisor with a(n).
 sub $0,$2
 mul $0,2
 add $1,$0

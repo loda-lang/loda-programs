@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,62781 ; Number of arithmetic progressions of four terms and any mean which can be extracted from the set of the first n positive integers.
+  seq $2,62781 ; Number of arithmetic progressions of four terms and any mean which can be extracted from the set of the first n positive integers.
   add $1,$2
 lpe

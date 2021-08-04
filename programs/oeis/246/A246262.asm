@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,246260 ; Characteristic function of A246261: a(n) = A000035(A048673(n)).
+  seq $2,246260 ; Characteristic function of A246261: a(n) = A000035(A048673(n)).
   add $1,$2
 lpe

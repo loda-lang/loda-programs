@@ -4,5 +4,5 @@
 mov $1,$0
 mul $1,4
 mov $0,$1
-cal $0,56992 ; Digital roots of square numbers A000290.
+seq $0,56992 ; Digital roots of square numbers A000290.
 mov $1,$0

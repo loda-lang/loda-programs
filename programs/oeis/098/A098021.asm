@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-cal $0,286909 ; Positions of 1 in A286907; complement of A286908.
+seq $0,286909 ; Positions of 1 in A286907; complement of A286908.
 add $0,$2
 mov $2,$0
 add $2,1

@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,2
-cal $0,170060 ; Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
+seq $0,170060 ; Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^37 = I.
 add $0,4
 add $2,2
 mul $0,$2

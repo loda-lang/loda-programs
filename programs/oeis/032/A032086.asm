@@ -5,10 +5,10 @@ mov $3,$0
 cmp $3,0
 add $0,$3
 add $0,1
-cal $0,297619 ; a(n) = 2*a(n-1) + 2*a(n-2) - 4*a(n-3), a(1) = 0, a(2) = 0, a(3) = 8.
+seq $0,297619 ; a(n) = 2*a(n-1) + 2*a(n-2) - 4*a(n-3), a(1) = 0, a(2) = 0, a(3) = 8.
 div $0,4
 mov $2,$0
 div $0,2
-cal $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+seq $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
 add $0,$2
 mov $1,$0

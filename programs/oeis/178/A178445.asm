@@ -5,7 +5,7 @@ mov $2,$0
 mul $0,2
 mov $4,2
 lpb $4
-  cal $0,173919 ; Numbers that are prime or one less than a prime.
+  seq $0,173919 ; Numbers that are prime or one less than a prime.
   mov $1,$0
   pow $1,2
   add $2,1

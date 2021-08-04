@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,206981 ; Number of nX2 0..1 arrays avoiding the patterns 0 1 0 or 1 0 1 in any row, column, diagonal or antidiagonal
+  seq $2,206981 ; Number of nX2 0..1 arrays avoiding the patterns 0 1 0 or 1 0 1 in any row, column, diagonal or antidiagonal
   add $1,$2
 lpe
 div $1,4

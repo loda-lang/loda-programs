@@ -3,4 +3,4 @@
 
 pow $0,2
 mov $1,$0
-cal $1,4956 ; a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
+seq $1,4956 ; a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.

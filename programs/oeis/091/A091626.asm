@@ -3,6 +3,6 @@
 
 mov $2,$0
 trn $0,1
-cal $0,94820 ; Partial sums of A038548.
+seq $0,94820 ; Partial sums of A038548.
 add $0,$2
 mov $1,$0

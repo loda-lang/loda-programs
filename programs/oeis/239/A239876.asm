@@ -7,7 +7,7 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,229110 ; Sum of non-divisors of n reduced modulo n.
+  seq $0,229110 ; Sum of non-divisors of n reduced modulo n.
   mul $0,2
   mov $4,$0
   add $4,$0

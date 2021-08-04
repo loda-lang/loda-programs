@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,115716 ; A divide-and-conquer sequence.
+  seq $2,115716 ; A divide-and-conquer sequence.
   add $1,$2
 lpe
 add $1,1

@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  seq $2,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   add $1,$2
 lpe

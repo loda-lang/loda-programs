@@ -4,6 +4,6 @@
 add $0,1
 lpb $0
   mov $1,$0
-  cal $1,90368 ; a(1) = 1; for n>1, smallest divisor > 1 of 2n-1.
+  seq $1,90368 ; a(1) = 1; for n>1, smallest divisor > 1 of 2n-1.
   div $0,$1
 lpe

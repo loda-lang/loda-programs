@@ -1,8 +1,8 @@
 ; A145446: a(n) = the smallest cube > n-th prime
 ; 8,8,8,8,27,27,27,27,27,64,64,64,64,64,64,64,64,64,125,125,125,125,125,125,125,125,125,125,125,125,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,343,343,343,343,343,343,343,343,343,343,343,343,343,343,343,343,343,343,343,343,343,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,729,729,729
 
-cal $0,6005 ; The odd prime numbers together with 1.
-cal $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
+seq $0,6005 ; The odd prime numbers together with 1.
+seq $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
 add $0,1
 pow $0,3
 mov $1,$0

@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,126120 ; Catalan numbers (A000108) interpolated with 0's.
+  seq $2,126120 ; Catalan numbers (A000108) interpolated with 0's.
   add $1,$2
 lpe
 add $1,1

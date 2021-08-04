@@ -3,5 +3,5 @@
 
 dif $0,2
 trn $0,1
-cal $0,46079 ; Number of Pythagorean triangles with leg n.
+seq $0,46079 ; Number of Pythagorean triangles with leg n.
 mov $1,$0

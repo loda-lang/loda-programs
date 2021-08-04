@@ -28,7 +28,7 @@ lpb $4
         sub $0,1
         mov $2,$0
         max $2,0
-        cal $2,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
+        seq $2,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
         add $3,$2
       lpe
       mov $5,$3

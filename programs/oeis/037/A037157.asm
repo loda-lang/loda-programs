@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,180672 ; a(n) = Fibonacci(n+7) - Fibonacci(7).
+  seq $0,180672 ; a(n) = Fibonacci(n+7) - Fibonacci(7).
   add $1,$0
 lpe

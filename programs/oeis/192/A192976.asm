@@ -3,7 +3,7 @@
 
 lpb $0
   sub $0,1
-  cal $2,192975 ; Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
+  seq $2,192975 ; Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
   add $1,$2
   mov $2,$0
 lpe

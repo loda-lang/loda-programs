@@ -3,7 +3,7 @@
 
 mov $1,1
 mov $2,$0
-cal $0,337624 ; a(n) is the least positive integer in base n that when multiplied by 2n-1 will contain only the digits 0 and 1.
+seq $0,337624 ; a(n) is the least positive integer in base n that when multiplied by 2n-1 will contain only the digits 0 and 1.
 add $1,$2
 add $1,$2
 mul $1,$0

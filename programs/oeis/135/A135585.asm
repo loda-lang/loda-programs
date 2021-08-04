@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,135133 ; a(n) = floor(S2(n)/3) mod 2, where S2(n) denotes the binary weight of n.
+  seq $2,135133 ; a(n) = floor(S2(n)/3) mod 2, where S2(n) denotes the binary weight of n.
   add $1,$2
 lpe

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,2055 ; Number of diagonal dissections of a convex n-gon into n-4 regions.
+  seq $2,2055 ; Number of diagonal dissections of a convex n-gon into n-4 regions.
   add $1,$2
 lpe
 add $1,1

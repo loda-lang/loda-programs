@@ -8,7 +8,7 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,49472 ; a(n) = floor(n/sqrt(2)).
+  seq $0,49472 ; a(n) = floor(n/sqrt(2)).
   add $0,1
   add $1,$0
 lpe

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,319528 ; a(n) = 8 * sigma(n).
+  seq $2,319528 ; a(n) = 8 * sigma(n).
   add $1,$2
   mul $1,2
 lpe

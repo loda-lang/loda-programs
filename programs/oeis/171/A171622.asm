@@ -3,7 +3,7 @@
 
 mov $5,$0
 trn $0,1
-cal $0,6005 ; The odd prime numbers together with 1.
+seq $0,6005 ; The odd prime numbers together with 1.
 mov $2,$5
 mov $3,$5
 lpb $2

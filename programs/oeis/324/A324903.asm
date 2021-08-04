@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,1
-cal $0,17666 ; Denominator of sum of reciprocals of divisors of n.
+seq $0,17666 ; Denominator of sum of reciprocals of divisors of n.
 mov $1,$0
 mod $1,2

@@ -5,5 +5,5 @@ mov $1,$0
 lpb $0
   mov $1,$0
   mov $0,1
-  cal $1,122069 ; a(n) = 3*a(n-1) + 9*a(n-2) for n > 1, with a(0)=1, a(1)=3.
+  seq $1,122069 ; a(n) = 3*a(n-1) + 9*a(n-2) for n > 1, with a(0)=1, a(1)=3.
 lpe

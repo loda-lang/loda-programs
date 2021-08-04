@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,4676 ; Primes written in base 2.
+  seq $2,4676 ; Primes written in base 2.
   add $1,$2
 lpe
 add $1,10

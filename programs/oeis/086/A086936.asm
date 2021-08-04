@@ -3,6 +3,6 @@
 
 mov $1,$0
 trn $0,1
-cal $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 sub $1,$0
 add $1,1

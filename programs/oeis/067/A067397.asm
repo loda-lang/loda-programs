@@ -3,5 +3,5 @@
 
 add $0,1
 div $0,3
-cal $0,989 ; 3-adic valuation of binomial(2*n, n): largest k such that 3^k divides binomial(2*n, n).
+seq $0,989 ; 3-adic valuation of binomial(2*n, n): largest k such that 3^k divides binomial(2*n, n).
 mov $1,$0

@@ -9,7 +9,7 @@ lpb $5
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,34953 ; Triangular numbers (A000217) with prime indices.
+  seq $2,34953 ; Triangular numbers (A000217) with prime indices.
   mov $4,$2
   mov $6,$5
   mul $6,$2

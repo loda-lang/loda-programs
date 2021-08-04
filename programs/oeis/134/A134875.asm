@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,63655 ; Smallest semiperimeter of integral rectangle with area n.
+  seq $2,63655 ; Smallest semiperimeter of integral rectangle with area n.
   add $3,$2
   sub $3,1
   mov $0,$3

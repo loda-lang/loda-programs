@@ -2,7 +2,7 @@
 ; 2,3,4,7,12,15,18,23,26,29,34,37,40,45,48,51,54,59,62,65,70,73,76,81,84,87,92,95,98,103,106,109,114,117,120,125,128,131,136,139,142,147,150,153,158,161,164,169,172,175,180,183,186,191,194,197
 
 mov $2,$0
-cal $0,223577 ; Positive integers n for which there is exactly one negative integer m such that -n = floor(cot(Pi/(2*m))).
+seq $0,223577 ; Positive integers n for which there is exactly one negative integer m such that -n = floor(cot(Pi/(2*m))).
 mul $0,2
 sub $0,$2
 mov $1,$0

@@ -11,7 +11,7 @@ cmp $4,0
 add $1,$4
 div $2,$1
 add $0,$2
-cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mul $0,$3
 sub $1,$0
 add $1,4

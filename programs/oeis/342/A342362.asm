@@ -2,7 +2,7 @@
 ; 1,10,31,76,145,254,399,600,849,1170,1551,2020,2561,3206,3935,4784,5729,6810,7999,9340,10801,12430,14191,16136,18225,20514,22959,25620,28449,31510,34751,38240,41921,45866,50015,54444,59089,64030,69199,74680,80401,86450,92751,99396,106305,113574
 
 mov $3,$0
-cal $0,3451 ; Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals up to rotation.
+seq $0,3451 ; Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals up to rotation.
 mul $0,2
 mov $1,$0
 sub $1,1

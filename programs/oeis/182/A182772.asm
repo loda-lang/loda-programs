@@ -8,7 +8,7 @@ lpb $2
   mov $0,$5
   sub $2,1
   sub $0,$2
-  cal $0,245222 ; Continued fraction of the constant c in A245221; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A022838, else f(n,x) = 1/x.
+  seq $0,245222 ; Continued fraction of the constant c in A245221; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A022838, else f(n,x) = 1/x.
   mod $0,2
   mov $3,1
   add $3,$0

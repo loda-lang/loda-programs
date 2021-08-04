@@ -8,9 +8,9 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,28837 ; Iterated sum of digits of n is a square.
+  seq $0,28837 ; Iterated sum of digits of n is a square.
   mul $0,2
   sub $0,1
-  cal $0,26922 ; Number of partitions of n into an odd number of parts, the greatest being 2; also, a(n+3) = number of partitions of n+1 into an even number of parts, each <=2.
+  seq $0,26922 ; Number of partitions of n into an odd number of parts, the greatest being 2; also, a(n+3) = number of partitions of n+1 into an even number of parts, each <=2.
   add $1,$0
 lpe

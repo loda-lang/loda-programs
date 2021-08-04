@@ -9,7 +9,7 @@ lpb $4
   sub $4,1
   sub $0,$4
   mov $3,$0
-  cal $0,188070 ; Positions of 1 in A188068; complement of A188069.
+  seq $0,188070 ; Positions of 1 in A188068; complement of A188069.
   add $3,$0
   add $1,$3
 lpe

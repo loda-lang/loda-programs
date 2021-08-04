@@ -9,7 +9,7 @@ lpb $2
   sub $0,$2
   mov $3,$0
   mul $3,2
-  cal $3,92405 ; a(n) = tau(n) + tau(n+1), where tau(n) = A000005(n), the number of divisors of n.
+  seq $3,92405 ; a(n) = tau(n) + tau(n+1), where tau(n) = A000005(n), the number of divisors of n.
   div $3,2
   mov $4,$3
   sub $4,1

@@ -9,7 +9,7 @@ lpb $2
   lpb $4
     mov $0,$1
     trn $0,1
-    cal $0,187571 ; Complement of A187570.
+    seq $0,187571 ; Complement of A187570.
     mov $3,$0
     sub $4,1
   lpe

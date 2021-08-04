@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,55671 ; Number of prime Hurwitz quaternions of norm n.
+  seq $2,55671 ; Number of prime Hurwitz quaternions of norm n.
   add $0,$2
   div $0,10
 lpe

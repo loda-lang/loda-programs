@@ -4,7 +4,7 @@
 mov $1,2
 mov $2,$0
 add $0,3
-cal $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
 mov $3,$0
 add $3,$2
 lpb $3

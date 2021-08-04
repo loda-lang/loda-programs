@@ -2,7 +2,5 @@
 ; 1,1,3,10,34,116,396,1352,4616,15760
 
 trn $0,1
-cal $0,7052 ; Number of order-consecutive partitions of n.
+seq $0,7052 ; Number of order-consecutive partitions of n.
 mov $1,$0
-add $1,$0
-div $1,2

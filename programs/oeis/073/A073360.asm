@@ -3,5 +3,5 @@
 
 add $0,1
 mov $1,$0
-cal $1,112560 ; Sieve performed by successive iterations of steps where step m is: keep m terms, remove the next 2 and repeat; as m = 1,2,3,.. the remaining terms form this sequence.
+seq $1,112560 ; Sieve performed by successive iterations of steps where step m is: keep m terms, remove the next 2 and repeat; as m = 1,2,3,.. the remaining terms form this sequence.
 div $1,3

@@ -1,9 +1,9 @@
 ; A209661: a(n) = (-1)^A083025(n).
 ; 1,1,1,1,-1,1,1,1,1,-1,1,1,-1,1,-1,1,-1,1,1,-1,1,1,1,1,1,-1,1,1,-1,-1,1,1,1,-1,-1,1,-1,1,-1,-1,-1,1,1,1,-1,1,1,1,1,1,-1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,1,1,1,1,1,-1,1,-1,1,1,-1,-1,1,1,1,-1,1,-1,1,-1,1,1,1,1,-1,1,-1,-1,-1,1,1,1,-1,1,-1,1,1,1
 
-cal $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 sub $0,1
-cal $0,97022 ; a(n) = (sigma(2n^2)-3)/6.
+seq $0,97022 ; a(n) = (sigma(2n^2)-3)/6.
 gcd $0,2
 mul $0,2
 mov $1,$0

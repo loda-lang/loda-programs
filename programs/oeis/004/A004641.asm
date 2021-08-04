@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,184117 ; Lower s-Wythoff sequence, where s(n) = 2n + 1.
+  seq $0,184117 ; Lower s-Wythoff sequence, where s(n) = 2n + 1.
   add $0,2
   mov $2,$3
   mov $5,$0

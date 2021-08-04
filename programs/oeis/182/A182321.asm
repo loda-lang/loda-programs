@@ -3,6 +3,6 @@
 
 lpb $0
   trn $0,1
-  cal $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
+  seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
   add $1,1
 lpe

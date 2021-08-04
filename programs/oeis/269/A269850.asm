@@ -11,7 +11,7 @@ lpb $4
   lpb $0
     mov $2,$0
     mov $0,0
-    cal $2,137264 ; Prime number gaps read modulo 3.
+    seq $2,137264 ; Prime number gaps read modulo 3.
     add $3,$2
     mov $6,$3
     cmp $6,0

@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,1
-cal $1,188182 ; Number of strictly increasing arrangements of 4 numbers in -(n+2)..(n+2) with sum zero
+seq $1,188182 ; Number of strictly increasing arrangements of 4 numbers in -(n+2)..(n+2) with sum zero
 sub $1,1

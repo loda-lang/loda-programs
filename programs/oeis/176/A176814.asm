@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+  seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
   sub $0,$2
   mov $3,$2
   min $3,1

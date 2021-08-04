@@ -11,7 +11,7 @@ mov $2,2985984
 gcd $2,$0
 div $0,$2
 mov $1,$0
-cal $0,133882 ; a(n) = binomial(n+2,n) mod 2^2.
+seq $0,133882 ; a(n) = binomial(n+2,n) mod 2^2.
 mov $2,2
 bin $2,$0
 add $1,$2

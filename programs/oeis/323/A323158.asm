@@ -2,6 +2,6 @@
 ; 0,0,1,1,1,0,1,0,0,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1
 
 mov $1,$0
-cal $0,49240 ; Smallest nonnegative value taken on by x^2 - ny^2 for an infinite number of integer pairs (x, y).
+seq $0,49240 ; Smallest nonnegative value taken on by x^2 - ny^2 for an infinite number of integer pairs (x, y).
 add $1,$0
 mod $1,2

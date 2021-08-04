@@ -8,6 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,83037 ; a(n)=2*A083036(n)-n. Also -A123737(n).
+  seq $0,83037 ; a(n)=2*A083036(n)-n. Also -A123737(n).
   add $1,$0
 lpe

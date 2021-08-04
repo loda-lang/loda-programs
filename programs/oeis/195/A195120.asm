@@ -15,8 +15,8 @@ lpb $3
     mov $0,$5
     sub $7,1
     sub $0,$7
-    cal $0,276865 ; First differences of the Beatty sequence A003512 for 2 + sqrt(3).
-    cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+    seq $0,276865 ; First differences of the Beatty sequence A003512 for 2 + sqrt(3).
+    seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
     mov $2,$0
     add $2,1
     mov $0,$2

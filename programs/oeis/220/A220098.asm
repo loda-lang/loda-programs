@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,174028 ; Triangle T(n,k) = 2+4k read by rows.
+  seq $2,174028 ; Triangle T(n,k) = 2+4k read by rows.
   div $2,2
   sub $0,$2
   mov $3,$2

@@ -4,5 +4,5 @@
 mul $0,2
 add $0,1
 mov $1,$0
-cal $1,49473 ; Nearest integer to n/sqrt(2).
+seq $1,49473 ; Nearest integer to n/sqrt(2).
 add $1,$0

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,177102 ; Beatty sequence for sqrt(10).
+  seq $2,177102 ; Beatty sequence for sqrt(10).
   add $1,$2
 lpe
 add $1,3

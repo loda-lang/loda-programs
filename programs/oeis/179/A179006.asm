@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,4697 ; a(n) = floor(Fibonacci(n)/4).
+  seq $2,4697 ; a(n) = floor(Fibonacci(n)/4).
   add $1,$2
 lpe

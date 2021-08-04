@@ -5,6 +5,6 @@ add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,540 ; Sum of 6th powers: 0^6 + 1^6 + 2^6 + ... + n^6.
+  seq $2,540 ; Sum of 6th powers: 0^6 + 1^6 + 2^6 + ... + n^6.
   add $1,$2
 lpe

@@ -4,7 +4,7 @@
 mov $2,$0
 sub $0,1
 div $0,2
-cal $0,59020 ; Number of 2 X n checkerboards (with at least one red square) in which the set of red squares is edge connected.
+seq $0,59020 ; Number of 2 X n checkerboards (with at least one red square) in which the set of red squares is edge connected.
 mov $1,$0
 add $1,1
 add $1,$2

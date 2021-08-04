@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,6996 ; C(2n,n) mod 3.
+  seq $2,6996 ; C(2n,n) mod 3.
   add $1,$2
 lpe
 add $1,1

@@ -3,7 +3,7 @@
 
 add $0,1
 mov $1,$0
-cal $0,1764 ; a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
+seq $0,1764 ; a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
 add $1,2
 mul $0,$1
 mov $1,$0

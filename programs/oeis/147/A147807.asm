@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,147810 ; Half the number of divisors of n^2+1.
+  seq $2,147810 ; Half the number of divisors of n^2+1.
   add $1,$2
 lpe
 add $1,1

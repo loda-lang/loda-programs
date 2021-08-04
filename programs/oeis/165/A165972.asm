@@ -5,6 +5,6 @@ mov $1,1
 lpb $1
   mov $1,$0
 lpe
-cal $0,154115 ; Numbers n such that n + 3 is prime.
+seq $0,154115 ; Numbers n such that n + 3 is prime.
 add $1,$0
 add $1,1

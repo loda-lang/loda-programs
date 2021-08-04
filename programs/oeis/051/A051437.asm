@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   max $0,0
-  cal $0,56309 ; Number of reversible strings with n beads using exactly two different colors.
+  seq $0,56309 ; Number of reversible strings with n beads using exactly two different colors.
   mov $3,$0
   mov $5,$4
   mul $5,$0

@@ -7,7 +7,7 @@ mov $2,$0
 gcd $2,8
 div $0,$2
 mod $0,12
-cal $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 mod $0,8
 mov $1,$0
 div $1,2

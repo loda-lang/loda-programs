@@ -27,7 +27,7 @@ lpb $4
         mov $2,$0
         div $0,2
         max $2,0
-        cal $2,22091 ; Fibonacci sequence beginning 0, 8.
+        seq $2,22091 ; Fibonacci sequence beginning 0, 8.
         add $3,$2
       lpe
       mov $5,$3
