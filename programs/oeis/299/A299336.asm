@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,177747 ; Convolution of A008805 (triangular numbers repeated) with itself.
+  seq $2,177747 ; Convolution of A008805 (triangular numbers repeated) with itself.
   add $1,$2
 lpe
 add $1,1

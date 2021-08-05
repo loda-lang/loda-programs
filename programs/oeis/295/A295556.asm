@@ -4,6 +4,6 @@
 sub $0,1
 mov $1,$0
 max $1,0
-cal $1,130251 ; Partial sums of A130249.
+seq $1,130251 ; Partial sums of A130249.
 add $1,1
 div $1,2

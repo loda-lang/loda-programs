@@ -4,7 +4,7 @@
 lpb $0
   mov $1,$0
   mov $0,1
-  cal $1,267886 ; Decimal representation of the n-th iteration of the "Rule 235" elementary cellular automaton starting with a single ON (black) cell.
+  seq $1,267886 ; Decimal representation of the n-th iteration of the "Rule 235" elementary cellular automaton starting with a single ON (black) cell.
   sub $1,1
 lpe
 add $1,1

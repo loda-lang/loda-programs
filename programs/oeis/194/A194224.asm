@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,194223 ; a(n) = [sum{(k/6) : 1<=k<=n}], where [ ]=floor, ( )=fractional part.
+  seq $2,194223 ; a(n) = [sum{(k/6) : 1<=k<=n}], where [ ]=floor, ( )=fractional part.
   add $1,$2
 lpe

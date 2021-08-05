@@ -21,7 +21,7 @@ lpb $3
     lpb $0
       mov $4,$0
       sub $0,2
-      cal $4,1973 ; Expansion of (1+x^3)/((1-x)*(1-x^2)^2*(1-x^3)).
+      seq $4,1973 ; Expansion of (1+x^3)/((1-x)*(1-x^2)^2*(1-x^3)).
       add $2,$4
       mov $4,$2
     lpe

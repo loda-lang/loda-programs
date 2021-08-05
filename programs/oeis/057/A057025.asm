@@ -2,5 +2,5 @@
 ; 2,7,11,29,19,23,53,31,137,1217,43,47,101,109,59,7937,67,71,149,79,83,173,181
 
 mul $0,2
-cal $0,50921 ; Smallest prime of form n*2^m+1, m >= 0, or 0 if no prime exists.
+seq $0,50921 ; Smallest prime of form n*2^m+1, m >= 0, or 0 if no prime exists.
 mov $1,$0

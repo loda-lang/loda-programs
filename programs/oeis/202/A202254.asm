@@ -4,7 +4,7 @@
 mov $2,$0
 div $2,2
 mov $4,$0
-cal $0,212983 ; Number of (w,x,y) with all terms in {0,...,n} and w<=x+y and x<=y.
+seq $0,212983 ; Number of (w,x,y) with all terms in {0,...,n} and w<=x+y and x<=y.
 sub $2,24
 sub $0,$2
 add $0,1

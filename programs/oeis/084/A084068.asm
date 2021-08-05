@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   div $0,2
-  cal $0,1653 ; Numbers k such that 2*k^2 - 1 is a square.
+  seq $0,1653 ; Numbers k such that 2*k^2 - 1 is a square.
   add $1,$0
 lpe

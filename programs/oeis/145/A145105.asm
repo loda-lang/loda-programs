@@ -5,7 +5,7 @@ mov $3,$0
 lpb $0
   mov $1,$3
   mov $2,$0
-  cal $2,323152 ; a(n) = 1 if sigma(n) is divisible by all proper divisors of n, 0 otherwise.
+  seq $2,323152 ; a(n) = 1 if sigma(n) is divisible by all proper divisors of n, 0 otherwise.
   sub $0,$2
   add $1,$2
 lpe

@@ -1,7 +1,7 @@
 ; A110515: Sequence array for (1 - x + x^2 + x^3)/(1 - x^4).
 ; 1,-1,1,1,-1,1,1,1,-1,1,1,1,1,-1,1,-1,1,1,1,-1,1,1,-1,1,1,1,-1,1,1,1,-1,1,1,1,-1,1,1,1,1,-1,1,1,1,-1,1,-1,1,1,1,-1,1,1,1,-1,1,1,-1,1,1,1,-1,1,1,1,-1,1,1,1,-1,1,1,1,-1,1,1,1,-1,1,1,1,1,-1,1,1,1,-1,1,1,1,-1,1,-1,1,1,1,-1,1,1,1,-1
 
-cal $0,114283 ; Sequence array for binomial transform of Jacobsthal numbers A001045(n+1).
+seq $0,114283 ; Sequence array for binomial transform of Jacobsthal numbers A001045(n+1).
 sub $0,2
 gcd $0,5
 add $0,1

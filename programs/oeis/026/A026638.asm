@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   mov $0,0
-  cal $2,26641 ; Number of nodes of even outdegree (including leaves) in all ordered trees with n edges.
+  seq $2,26641 ; Number of nodes of even outdegree (including leaves) in all ordered trees with n edges.
   mov $1,$2
   add $1,$2
   sub $1,2

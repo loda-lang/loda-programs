@@ -2,6 +2,6 @@
 ; 1,4,9,16,36,49,64,81,100,121,144,196
 
 mul $0,2
-cal $0,225875 ; We write the 1 + 4*k numbers once and twice the others.
+seq $0,225875 ; We write the 1 + 4*k numbers once and twice the others.
 add $1,$0
 pow $1,2

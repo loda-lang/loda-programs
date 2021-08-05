@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,2
-  cal $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
+  seq $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
   mov $2,$3
   mul $2,$0
   add $1,$2

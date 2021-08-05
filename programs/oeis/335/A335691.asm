@@ -1,6 +1,6 @@
 ; A335691: A000166(n)^2.
 ; 1,0,1,4,81,1936,70225,3437316,220017889,17821182016,1782120871521,215636596084900,31051670188655281,5247732257301156624,1028555522495168900401,231424992560450869558756,59244798095490816735545025,17121746649596584336387952896
 
-cal $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
+seq $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
 add $1,$0
 mul $1,$0

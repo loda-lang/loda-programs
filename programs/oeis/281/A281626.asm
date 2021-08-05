@@ -3,7 +3,7 @@
 
 mov $1,-2
 mul $1,$0
-cal $0,235796 ; 2*n - 1 - sigma(n).
+seq $0,235796 ; 2*n - 1 - sigma(n).
 cmp $1,0
 sub $0,$1
 sub $0,$1

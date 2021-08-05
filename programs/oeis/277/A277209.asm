@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,152966 ; Twice repdigit numbers.
+  seq $2,152966 ; Twice repdigit numbers.
   add $1,$2
 lpe
 div $1,2

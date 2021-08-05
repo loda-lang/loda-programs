@@ -4,7 +4,7 @@
 pow $0,2
 lpb $0
   mov $1,$0
-  cal $1,47560 ; Numbers that are congruent to {0, 2, 3, 6, 7} mod 8.
+  seq $1,47560 ; Numbers that are congruent to {0, 2, 3, 6, 7} mod 8.
   mov $2,$1
   cmp $2,0
   add $1,$2

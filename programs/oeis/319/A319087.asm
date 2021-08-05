@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,53191 ; a(n) = n^2 * phi(n).
+  seq $2,53191 ; a(n) = n^2 * phi(n).
   add $1,$2
 lpe

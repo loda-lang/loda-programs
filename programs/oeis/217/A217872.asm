@@ -14,7 +14,6 @@ lpb $0
   mul $3,$0
   sub $0,1
   add $1,$3
-  mov $5,$2
 lpe
 add $1,1
-pow $1,$5
+pow $1,$2

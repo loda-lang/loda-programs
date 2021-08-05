@@ -3,6 +3,6 @@
 
 mov $1,$0
 add $0,1
-cal $0,63957 ; Numbers not of the form round(m*sqrt(2)) for any integer m, i.e., complement of A022846.
+seq $0,63957 ; Numbers not of the form round(m*sqrt(2)) for any integer m, i.e., complement of A022846.
 add $1,$0
 div $1,2

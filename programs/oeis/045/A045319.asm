@@ -7,5 +7,5 @@ lpb $0
   mov $1,$2
 lpe
 add $0,$1
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 mov $1,$0

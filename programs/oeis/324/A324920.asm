@@ -3,7 +3,7 @@
 
 lpb $0
   trn $0,1
-  cal $0,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
+  seq $0,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
   add $1,23
 lpe
 div $1,23

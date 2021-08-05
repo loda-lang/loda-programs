@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,226294 ; Period 2: repeat [6, 4].
+  seq $2,226294 ; Period 2: repeat [6, 4].
   mul $2,$0
   trn $0,5
   add $1,$2

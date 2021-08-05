@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,169630 ; a(n) = n times the square of Fibonacci(n).
+  seq $2,169630 ; a(n) = n times the square of Fibonacci(n).
   add $1,$2
 lpe

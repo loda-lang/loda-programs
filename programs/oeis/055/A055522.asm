@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,93039 ; Sequence resulting from a sum of three repeated binomial(n+3,4) sequences.
+  seq $0,93039 ; Sequence resulting from a sum of three repeated binomial(n+3,4) sequences.
   mov $2,$4
   mul $2,$0
   add $1,$2

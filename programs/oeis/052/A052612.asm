@@ -2,7 +2,7 @@
 ; 0,2,2,12,24,240,720,10080,40320,725760,3628800,79833600,479001600,12454041600,87178291200,2615348736000,20922789888000,711374856192000,6402373705728000,243290200817664000
 
 mov $1,$0
-cal $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mov $2,$0
 gcd $2,2
 div $1,$2

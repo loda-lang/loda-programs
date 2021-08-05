@@ -5,6 +5,6 @@ lpb $0
   mul $0,3
   mov $1,$0
   mod $0,3
-  cal $1,27961 ; a(n) = Lucas(n+2) - 3.
+  seq $1,27961 ; a(n) = Lucas(n+2) - 3.
 lpe
 add $1,3

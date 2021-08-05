@@ -3,6 +3,6 @@
 
 lpb $0
   mov $1,$0
-  cal $1,139764 ; Smallest term in Zeckendorf representation of n.
+  seq $1,139764 ; Smallest term in Zeckendorf representation of n.
   sub $0,$1
 lpe

@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-cal $0,20701 ; Pisot sequences E(3,5), P(3,5).
+seq $0,20701 ; Pisot sequences E(3,5), P(3,5).
 sub $0,$1
 mov $1,$0
 sub $0,$2

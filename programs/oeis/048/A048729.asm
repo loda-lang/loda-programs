@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-cal $0,178891 ; a(n) = n OR 4n, where OR is bitwise OR.
+seq $0,178891 ; a(n) = n OR 4n, where OR is bitwise OR.
 mul $2,4
 sub $0,$2
 sub $1,$0

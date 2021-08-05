@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,341642 ; Number of strictly superior prime divisors of n.
+  seq $2,341642 ; Number of strictly superior prime divisors of n.
   add $1,$2
 lpe

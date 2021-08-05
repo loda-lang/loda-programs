@@ -10,7 +10,7 @@ lpb $3
   mov $2,$3
   mov $6,$0
   max $6,0
-  cal $6,77847 ; Expansion of (1-x)^(-1)/(1-2*x-2*x^2+2*x^3).
+  seq $6,77847 ; Expansion of (1-x)^(-1)/(1-2*x-2*x^2+2*x^3).
   mul $2,$6
   add $1,$2
   mov $4,$6

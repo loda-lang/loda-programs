@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
+  seq $2,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
   add $1,$2
 lpe
 add $1,1

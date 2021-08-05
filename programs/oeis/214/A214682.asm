@@ -3,7 +3,7 @@
 
 mov $1,$0
 lpb $0
-  cal $1,56832 ; All a(n) = 1 or 2; a(1) = 1; get next 2^k terms by repeating first 2^k terms and changing last element so sum of first 2^(k+1) terms is odd.
+  seq $1,56832 ; All a(n) = 1 or 2; a(1) = 1; get next 2^k terms by repeating first 2^k terms and changing last element so sum of first 2^(k+1) terms is odd.
   div $0,$1
 lpe
 mov $1,$0

@@ -3,4 +3,4 @@
 
 mov $1,$0
 trn $1,2
-cal $1,181984 ; INVERT transform of A028310.
+seq $1,181984 ; INVERT transform of A028310.

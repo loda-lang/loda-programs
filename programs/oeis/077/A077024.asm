@@ -4,6 +4,6 @@
 mov $1,$0
 add $0,1
 mul $0,2
-cal $0,248517 ; Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
+seq $0,248517 ; Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
 add $1,$0
 add $1,1

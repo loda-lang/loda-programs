@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,106514 ; Expansion of (1-x)/((1-2x)(1-2x-x^2)).
+  seq $0,106514 ; Expansion of (1-x)/((1-2x)(1-2x-x^2)).
   mov $3,$0
   mov $5,$4
   mul $5,$0

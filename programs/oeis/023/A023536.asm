@@ -3,6 +3,6 @@
 
 add $0,3
 mov $1,$0
-cal $0,6463 ; Convolve natural numbers with characteristic function of triangular numbers.
+seq $0,6463 ; Convolve natural numbers with characteristic function of triangular numbers.
 bin $1,2
 sub $1,$0

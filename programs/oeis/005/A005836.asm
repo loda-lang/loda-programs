@@ -3,6 +3,6 @@
 
 mov $2,$0
 div $0,2
-cal $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+seq $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
 add $0,$2
 mov $1,$0

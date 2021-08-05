@@ -4,5 +4,5 @@
 mov $1,7
 lpb $0
   sub $0,1
-  cal $1,94761 ; a(n) = n + (square excess of n).
+  seq $1,94761 ; a(n) = n + (square excess of n).
 lpe

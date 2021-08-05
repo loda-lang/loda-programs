@@ -10,7 +10,7 @@ lpb $3
   mov $2,$3
   mov $4,$0
   max $4,0
-  cal $4,29041 ; Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^9)).
+  seq $4,29041 ; Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^9)).
   mul $2,$4
   add $1,$2
 lpe

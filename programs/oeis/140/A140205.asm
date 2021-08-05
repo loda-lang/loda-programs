@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,140085 ; Period 8: repeat [0,1,1,2,1,2,2,3].
+  seq $2,140085 ; Period 8: repeat [0,1,1,2,1,2,2,3].
   add $1,$2
 lpe

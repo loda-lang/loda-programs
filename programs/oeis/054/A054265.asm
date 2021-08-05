@@ -5,6 +5,6 @@ mul $0,2
 lpb $0
   mov $2,$0
   mod $0,2
-  cal $2,211006 ; Pair (n,p) where n is the sum of adjacent nonprimes and p is the sum of adjacent primes.
+  seq $2,211006 ; Pair (n,p) where n is the sum of adjacent nonprimes and p is the sum of adjacent primes.
   add $1,$2
 lpe

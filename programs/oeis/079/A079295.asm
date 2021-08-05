@@ -2,8 +2,8 @@
 ; 1,1,1,0,1,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0
 
 mov $2,$0
-cal $0,6093 ; a(n) = prime(n) - 1.
-cal $0,195508 ; Number of iterations in a Draim factorization of 2n+1.
+seq $0,6093 ; a(n) = prime(n) - 1.
+seq $0,195508 ; Number of iterations in a Draim factorization of 2n+1.
 sub $0,$2
 mov $1,$0
 max $1,0

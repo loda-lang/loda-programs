@@ -5,4 +5,4 @@ mov $1,$0
 mod $0,4
 div $0,2
 mul $1,$0
-cal $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

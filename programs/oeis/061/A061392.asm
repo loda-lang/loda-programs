@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,88917 ; Central Delannoy numbers (mod 3); Characteristic function for Cantor set.
+  seq $2,88917 ; Central Delannoy numbers (mod 3); Characteristic function for Cantor set.
   add $1,$2
 lpe

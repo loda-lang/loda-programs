@@ -3,5 +3,8 @@
 
 mul $0,2
 add $0,1
-cal $0,213859 ; a(n) = 2^n mod (n+2).
-mov $1,$0
+mov $1,2
+mov $2,$0
+add $0,2
+pow $1,$2
+mod $1,$0

@@ -3,7 +3,7 @@
 
 add $0,1
 pow $0,3
-cal $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 mov $2,$0
 cmp $2,0
 add $0,$2

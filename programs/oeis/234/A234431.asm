@@ -6,7 +6,7 @@ mul $0,2
 sub $0,1
 mov $1,$0
 mov $2,$0
-cal $0,29883 ; First differences of Thue-Morse sequence A001285.
+seq $0,29883 ; First differences of Thue-Morse sequence A001285.
 add $2,$0
 add $1,$2
 add $1,1

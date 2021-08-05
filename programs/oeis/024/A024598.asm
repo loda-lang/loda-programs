@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,295286 ; Sum of the products of the smaller and larger parts of the partitions of n into two parts with the smaller part odd.
+seq $0,295286 ; Sum of the products of the smaller and larger parts of the partitions of n into two parts with the smaller part odd.
 mov $1,$0

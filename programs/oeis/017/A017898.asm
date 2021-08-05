@@ -16,7 +16,7 @@ lpb $8
     sub $4,1
     add $0,$4
     max $0,0
-    cal $0,98578 ; a(n) = Sum_{k=0..floor(n/4)} C(n-3*k,k+1).
+    seq $0,98578 ; a(n) = Sum_{k=0..floor(n/4)} C(n-3*k,k+1).
     mov $5,$4
     mul $5,$0
     add $3,$5

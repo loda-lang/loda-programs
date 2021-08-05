@@ -5,6 +5,6 @@ add $0,1
 lpb $0
   mov $1,$0
   div $0,$0
-  cal $1,288932 ; Fixed point of the mapping 00->1000, 10->10101, starting with 00.
+  seq $1,288932 ; Fixed point of the mapping 00->1000, 10->10101, starting with 00.
 lpe
 add $1,1

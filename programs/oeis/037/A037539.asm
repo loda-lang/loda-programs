@@ -1,6 +1,6 @@
 ; A037539: Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,1.
 ; 1,8,49,295,1772,10633,63799,382796,2296777,13780663,82683980,496103881,2976623287,17859739724,107158438345,642950630071,3857703780428,23146222682569,138877336095415,833264016572492,4999584099434953
 
-cal $0,33133 ; Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
-cal $0,47318 ; Numbers that are congruent to {0, 1, 2, 4, 5, 6} mod 7.
+seq $0,33133 ; Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
+seq $0,47318 ; Numbers that are congruent to {0, 1, 2, 4, 5, 6} mod 7.
 mov $1,$0

@@ -3,7 +3,7 @@
 
 mul $0,2
 trn $0,2
-cal $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
+seq $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
 mov $1,$0
 mul $1,2
 add $1,1

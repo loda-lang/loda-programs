@@ -8,7 +8,7 @@ lpb $0
   mov $2,$0
   mov $0,0
   max $2,0
-  cal $2,261681 ; a(n) = 2^n + binomial(n, floor(n/2)) - 1.
+  seq $2,261681 ; a(n) = 2^n + binomial(n, floor(n/2)) - 1.
   mul $2,$3
   add $1,$2
 lpe

@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $0,1
-cal $1,46079 ; Number of Pythagorean triangles with leg n.
+seq $1,46079 ; Number of Pythagorean triangles with leg n.
 mov $2,1
 add $2,$1
 add $1,$2

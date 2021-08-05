@@ -5,7 +5,7 @@ mov $2,$0
 lpb $0
   mov $1,$0
   mul $0,2
-  cal $1,182986 ; Zero together with the prime numbers (A000040).
+  seq $1,182986 ; Zero together with the prime numbers (A000040).
   mov $4,$1
   trn $4,$0
   mov $0,2

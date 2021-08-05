@@ -8,7 +8,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,79644 ; n (mod sqrtint(n)).
+  seq $0,79644 ; n (mod sqrtint(n)).
   mov $3,$0
   cmp $3,0
   add $1,$3

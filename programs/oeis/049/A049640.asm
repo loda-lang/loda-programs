@@ -11,7 +11,7 @@ lpb $2
   lpb $0
     mov $4,$0
     mov $0,0
-    cal $4,49643 ; Number of fractions in Farey series of order n.
+    seq $4,49643 ; Number of fractions in Farey series of order n.
   lpe
   add $1,$4
 lpe

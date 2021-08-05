@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,34714 ; Dirichlet convolution of squares with themselves.
+  seq $2,34714 ; Dirichlet convolution of squares with themselves.
   add $1,$2
 lpe
 add $1,1

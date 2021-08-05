@@ -3,5 +3,5 @@
 
 pow $0,2
 mov $1,$0
-cal $0,48763 ; Smallest cube >= n.
+seq $0,48763 ; Smallest cube >= n.
 add $1,$0

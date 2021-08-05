@@ -8,7 +8,7 @@ lpb $2
   mov $0,$5
   sub $2,1
   sub $0,$2
-  cal $0,83539 ; a(n) = sigma(n) * sigma(n+1): product of sigma-values for consecutive integers.
+  seq $0,83539 ; a(n) = sigma(n) * sigma(n+1): product of sigma-values for consecutive integers.
   mov $4,$0
   mul $4,5069
   mov $3,$4

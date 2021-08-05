@@ -9,7 +9,7 @@ lpb $0
   lpb $5
     add $0,1
     max $4,0
-    cal $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+    seq $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
     cmp $0,$4
     mov $5,1
     lpb $2

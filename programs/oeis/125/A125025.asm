@@ -1,7 +1,7 @@
 ; A125025: Lengths of rows in A124570.
 ; 3,8,3,8,3,15,3,8,3,8,3
 
-cal $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
+seq $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
 lpb $0
   mov $0,3
 lpe

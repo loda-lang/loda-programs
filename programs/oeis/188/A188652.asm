@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,188653 ; Second differences of A000463; first differences of A188652.
+  seq $2,188653 ; Second differences of A000463; first differences of A188652.
   add $1,$2
 lpe

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,85731 ; Greatest common divisor of n and its arithmetic derivative.
+  seq $2,85731 ; Greatest common divisor of n and its arithmetic derivative.
   add $1,$2
 lpe
 add $1,1

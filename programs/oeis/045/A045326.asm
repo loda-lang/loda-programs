@@ -6,7 +6,7 @@ lpb $0
   sub $0,$2
   mov $1,$0
   max $1,0
-  cal $1,97538 ; Subtract 2 from primes == 3 (mod 4).
+  seq $1,97538 ; Subtract 2 from primes == 3 (mod 4).
   add $2,$1
 lpe
 add $1,2

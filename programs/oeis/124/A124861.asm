@@ -1,7 +1,7 @@
 ; A124861: Expansion of 1/(1-x-3x^2-4x^3-2x^4).
 ; 1,1,4,11,29,80,219,597,1632,4459,12181,33280,90923,248405,678656,1854123,5065557,13839360,37809835,103298389,282216448,771029675,2106492245,5755043840,15723072171,42956232021,117358608384
 
-cal $0,5665 ; Tower of Hanoi with 3 pegs and cyclic moves only (clockwise).
+seq $0,5665 ; Tower of Hanoi with 3 pegs and cyclic moves only (clockwise).
 add $2,$0
 add $0,$2
 add $1,$0

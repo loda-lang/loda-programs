@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,151784 ; 6^{wt(n)-1} where wt(n) is the binary weight of n (A000120).
+  seq $2,151784 ; 6^{wt(n)-1} where wt(n) is the binary weight of n (A000120).
   add $1,$2
 lpe
 mul $1,7

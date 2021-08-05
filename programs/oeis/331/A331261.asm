@@ -13,7 +13,7 @@ lpb $5
     mov $2,$0
     trn $0,2
     max $2,0
-    cal $2,7052 ; Number of order-consecutive partitions of n.
+    seq $2,7052 ; Number of order-consecutive partitions of n.
     add $3,$2
     div $3,2
   lpe

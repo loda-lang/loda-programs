@@ -8,7 +8,7 @@ add $1,$0
 mod $0,4
 add $1,2
 sub $1,$0
-cal $0,336551 ; a(n) = A003557(n) - 1.
-cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+seq $0,336551 ; a(n) = A003557(n) - 1.
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $1,1
 add $1,$0

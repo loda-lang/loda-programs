@@ -3,4 +3,4 @@
 
 mov $1,2
 pow $1,$0
-cal $1,7095 ; Numbers in base 9.
+seq $1,7095 ; Numbers in base 9.

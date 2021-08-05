@@ -3,7 +3,7 @@
 
 lpb $0
   dif $0,4
-  cal $0,38759 ; a(n) = ceiling(sqrt(n))*floor(sqrt(n)).
+  seq $0,38759 ; a(n) = ceiling(sqrt(n))*floor(sqrt(n)).
 lpe
 mov $1,$0
 add $1,1

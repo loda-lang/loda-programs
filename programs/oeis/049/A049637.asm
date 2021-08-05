@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   mov $1,$0
-  cal $1,90169 ; a(n) = floor( 3*n/2 ) + floor( 2*n/3 ).
+  seq $1,90169 ; a(n) = floor( 3*n/2 ) + floor( 2*n/3 ).
   cmp $0,$1
 lpe
 add $1,2

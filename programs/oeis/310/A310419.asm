@@ -6,7 +6,7 @@ cmp $2,0
 mov $4,$0
 add $0,$2
 mov $3,$0
-cal $0,188510 ; Expansion of x*(1 + x^2)/(1 + x^4) in powers of x.
+seq $0,188510 ; Expansion of x*(1 + x^2)/(1 + x^4) in powers of x.
 mul $3,2
 sub $3,$0
 mov $1,$3

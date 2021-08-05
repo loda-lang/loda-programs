@@ -20,7 +20,7 @@ lpb $12
     lpb $0
       mov $2,$0
       max $2,0
-      cal $2,179278 ; Largest nonprime integer not less than n.
+      seq $2,179278 ; Largest nonprime integer not less than n.
       add $3,$2
       mov $4,$2
       min $4,1

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,77998 ; Expansion of (1-x)/(1-2*x-x^2+x^3).
+  seq $2,77998 ; Expansion of (1-x)/(1-2*x-x^2+x^3).
   add $1,$2
 lpe
 add $1,1

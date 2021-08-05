@@ -3,6 +3,6 @@
 
 mov $1,$0
 mul $1,3
-cal $1,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+seq $1,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
 add $0,$1
 mov $1,$0

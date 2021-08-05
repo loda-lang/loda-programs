@@ -5,6 +5,6 @@ mul $0,2
 mov $1,1
 add $1,$0
 mul $0,2
-cal $1,7413 ; A squarefree (or Thue-Morse) ternary sequence: closed under 1->123, 2->13, 3->2. Start with 1.
+seq $1,7413 ; A squarefree (or Thue-Morse) ternary sequence: closed under 1->123, 2->13, 3->2. Start with 1.
 add $1,$0
 add $1,1

@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,4257 ; a(n) = round(log_2(n)).
+  seq $2,4257 ; a(n) = round(log_2(n)).
   add $1,$2
 lpe

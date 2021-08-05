@@ -6,6 +6,6 @@ add $0,1
 lpb $0
   mov $0,$2
   add $0,1
-  cal $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 lpe
 mov $1,$0

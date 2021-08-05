@@ -6,6 +6,6 @@ lpb $0
   mov $2,$0
   sub $0,2
   max $2,0
-  cal $2,280710 ; Characteristic function of squarefree semiprimes.
+  seq $2,280710 ; Characteristic function of squarefree semiprimes.
   add $1,$2
 lpe

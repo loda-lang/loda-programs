@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   max $0,0
-  cal $0,294015 ; Sum of the even divisors of 2n, minus the (n-1)st odd number.
+  seq $0,294015 ; Sum of the even divisors of 2n, minus the (n-1)st odd number.
   div $0,2
   mov $3,$0
   mov $5,$4

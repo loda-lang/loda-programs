@@ -7,6 +7,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,5069 ; Sum of odd primes dividing n.
+  seq $0,5069 ; Sum of odd primes dividing n.
   add $1,$0
 lpe

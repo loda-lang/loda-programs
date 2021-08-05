@@ -8,11 +8,11 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,72400 ; (Factors of 4 removed from n) modulo 8.
+  seq $0,72400 ; (Factors of 4 removed from n) modulo 8.
   sub $0,5
   trn $0,1
   add $0,2
-  cal $0,262684 ; Characteristic function for A080218.
+  seq $0,262684 ; Characteristic function for A080218.
   mov $5,0
   lpb $0
     sub $0,1

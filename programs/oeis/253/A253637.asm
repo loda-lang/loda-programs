@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   sub $0,1
   add $2,1
-  cal $2,7487 ; Sum of 9th powers.
+  seq $2,7487 ; Sum of 9th powers.
   add $1,$2
 lpe
 add $1,1

@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   max $0,0
-  cal $0,213708 ; a(n) is the least inverse of A071542, i.e., minimal i such that A071542(i) = n.
+  seq $0,213708 ; a(n) is the least inverse of A071542, i.e., minimal i such that A071542(i) = n.
   mov $3,$0
   mov $5,$4
   mul $5,$0

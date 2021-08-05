@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,152965 ; Twice 12-gonal numbers: a(n) = 2*n*(5*n-4).
+  seq $2,152965 ; Twice 12-gonal numbers: a(n) = 2*n*(5*n-4).
   mul $2,$0
   sub $0,1
   add $1,$2

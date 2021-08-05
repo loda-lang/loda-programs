@@ -3,7 +3,7 @@
 
 sub $0,19
 bin $0,2
-cal $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
 mov $1,$0
 add $1,1
 mod $1,2

@@ -4,6 +4,6 @@
 mul $0,4
 add $0,2
 mul $0,2
-cal $0,38548 ; Number of divisors of n that are at most sqrt(n).
+seq $0,38548 ; Number of divisors of n that are at most sqrt(n).
 mul $0,2
 mov $1,$0

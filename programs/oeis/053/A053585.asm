@@ -4,6 +4,6 @@
 mov $1,1
 lpb $0
   mov $1,$0
-  cal $1,28233 ; If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = p_1^e_1, with a(1) = 1.
+  seq $1,28233 ; If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = p_1^e_1, with a(1) = 1.
   div $0,$1
 lpe

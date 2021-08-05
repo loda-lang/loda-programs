@@ -5,6 +5,6 @@ lpb $0
   sub $0,10
   mov $2,$0
   max $2,0
-  cal $2,1400 ; Number of partitions of n into at most 4 parts.
+  seq $2,1400 ; Number of partitions of n into at most 4 parts.
   add $1,$2
 lpe

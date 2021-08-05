@@ -11,7 +11,7 @@ lpb $3
   mod $4,2
   mul $0,$4
   div $0,2
-  cal $0,1453 ; Catalan numbers - 1.
+  seq $0,1453 ; Catalan numbers - 1.
   mul $0,3
   mov $2,$0
   sub $2,3

@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,8645 ; Molien series of 6 X 6 upper triangular matrices over GF( 2 ).
+  seq $0,8645 ; Molien series of 6 X 6 upper triangular matrices over GF( 2 ).
   add $1,$0
 lpe
 div $1,2

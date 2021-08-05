@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,80085 ; Number of factors of 2 in the factorial of the n-th prime, counted with multiplicity.
+  seq $0,80085 ; Number of factors of 2 in the factorial of the n-th prime, counted with multiplicity.
   sub $0,1
   mov $2,$3
   mul $2,$0

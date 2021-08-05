@@ -3,6 +3,6 @@
 
 mul $0,2
 trn $0,1
-cal $0,22842 ; Beatty sequence for sqrt(8).
+seq $0,22842 ; Beatty sequence for sqrt(8).
 mov $1,$0
 mod $1,2

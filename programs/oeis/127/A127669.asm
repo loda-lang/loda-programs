@@ -3,8 +3,8 @@
 
 mul $0,2
 add $0,3
-cal $0,144494 ; a(n) = 0 if n is prime, otherwise A001222(n).
-cal $0,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
+seq $0,144494 ; a(n) = 0 if n is prime, otherwise A001222(n).
+seq $0,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
 mov $1,$0
 div $1,2
 sub $1,1

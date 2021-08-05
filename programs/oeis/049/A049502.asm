@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   mul $0,2
   div $0,4
-  cal $2,69010 ; Number of runs of 1's in binary representation of n.
+  seq $2,69010 ; Number of runs of 1's in binary representation of n.
   add $1,$2
   sub $1,1
 lpe

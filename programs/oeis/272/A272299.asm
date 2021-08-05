@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,178142 ; Sum over the divisors d = 2 and/or 3 of n.
+  seq $2,178142 ; Sum over the divisors d = 2 and/or 3 of n.
   add $1,$2
   add $1,1
 lpe

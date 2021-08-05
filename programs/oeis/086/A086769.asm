@@ -8,7 +8,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,1223 ; Prime gaps: differences between consecutive primes.
+  seq $0,1223 ; Prime gaps: differences between consecutive primes.
   mov $3,2
   pow $3,$0
   sub $3,2

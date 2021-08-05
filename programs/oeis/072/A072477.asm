@@ -6,7 +6,7 @@ add $1,1
 sub $0,$1
 sub $1,$0
 mul $1,2
-cal $1,67994 ; Hermite numbers.
+seq $1,67994 ; Hermite numbers.
 pow $1,2
 div $1,144
 mul $1,18

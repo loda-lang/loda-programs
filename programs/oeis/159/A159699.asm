@@ -5,7 +5,7 @@ mov $1,$0
 mov $2,$0
 mul $2,2
 mov $0,$2
-cal $0,6520 ; Partial sums of A006519.
+seq $0,6520 ; Partial sums of A006519.
 add $0,$1
 mov $1,$0
 div $1,2

@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,4663 ; Powers of 3 written in base 9.
+  seq $2,4663 ; Powers of 3 written in base 9.
   add $1,$2
 lpe
 mul $1,9

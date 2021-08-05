@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 mul $2,$0
 add $2,$0
 add $1,$2

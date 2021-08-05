@@ -2,5 +2,5 @@
 ; 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
 
 dif $0,2
-cal $0,14025 ; Expansion of the inverse of the 16th cyclotomic polynomial.
+seq $0,14025 ; Expansion of the inverse of the 16th cyclotomic polynomial.
 mov $1,$0

@@ -2,6 +2,6 @@
 ; 1,7,41,227,1221,6447,33601,173467,889181,4533287,23015961,116477907,587981941,2962279327,14900875121,74862289547,375743103501,1884442140567,9445117195081,47317211944387,236952563597861
 
 add $0,1
-cal $0,193656 ; Q-residue of the triangle p(n,k)=(2^(n - k))*5^k, 0<=k<=n, where Q is the triangular array (t(i,j)) given by t(i,j)=1.  (See Comments.)
+seq $0,193656 ; Q-residue of the triangle p(n,k)=(2^(n - k))*5^k, 0<=k<=n, where Q is the triangular array (t(i,j)) given by t(i,j)=1.  (See Comments.)
 mov $1,$0
 div $1,6

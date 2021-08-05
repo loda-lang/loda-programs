@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,164931 ; n times the n-th noncomposite.
+  seq $0,164931 ; n times the n-th noncomposite.
   mov $2,$4
   mul $2,$0
   add $1,$2

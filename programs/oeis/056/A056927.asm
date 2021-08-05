@@ -4,6 +4,6 @@
 add $0,2
 pow $0,2
 sub $0,2
-cal $0,49711 ; a(n) = n - prevprime(n).
+seq $0,49711 ; a(n) = n - prevprime(n).
 mov $1,$0
 sub $1,1

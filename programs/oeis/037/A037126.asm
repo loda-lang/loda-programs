@@ -5,5 +5,5 @@ lpb $0
   add $2,1
   sub $0,$2
 lpe
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 mov $1,$0

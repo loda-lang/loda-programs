@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,268340 ; Characteristic function of the prime powers p^k, k >= 2.
+  seq $2,268340 ; Characteristic function of the prime powers p^k, k >= 2.
   add $0,$2
   sub $0,1
 lpe

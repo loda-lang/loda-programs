@@ -3,5 +3,5 @@
 
 trn $0,1
 add $0,1061
-cal $0,87204 ; Period 6: repeat [2, 1, -1, -2, -1, 1].
+seq $0,87204 ; Period 6: repeat [2, 1, -1, -2, -1, 1].
 mov $1,$0

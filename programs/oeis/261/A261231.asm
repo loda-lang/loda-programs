@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,53735 ; Sum of digits of (n written in base 3).
+  seq $2,53735 ; Sum of digits of (n written in base 3).
   sub $0,$2
   add $1,2
 lpe

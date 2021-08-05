@@ -5,14 +5,14 @@ mov $2,$0
 mov $3,2
 lpb $0
   mov $0,0
-  cal $1,100285 ; Expansion of (1+5x^2)/(1-x+x^2-x^3).
+  seq $1,100285 ; Expansion of (1+5x^2)/(1-x+x^2-x^3).
 lpe
 lpb $3
   mov $0,$2
   sub $3,1
   add $0,$3
   add $0,1
-  cal $0,130855 ; 2n appears 2n+1 times, 2n+1 appears 2n times.
+  seq $0,130855 ; 2n appears 2n+1 times, 2n+1 appears 2n times.
   sub $1,$0
 lpe
 sub $1,1

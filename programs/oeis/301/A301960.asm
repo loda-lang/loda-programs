@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,119996 ; Numerator of Sum_{k=1..n} 1/(Fibonacci(k)*Fibonacci(k+2)).
+  seq $0,119996 ; Numerator of Sum_{k=1..n} 1/(Fibonacci(k)*Fibonacci(k+2)).
   mov $2,$3
   mul $2,$0
   add $1,$2

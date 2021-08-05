@@ -5,7 +5,7 @@ mov $2,24
 lpb $2
   mul $0,2
   add $0,1
-  cal $0,184516 ; Lower s-Wythoff sequence, where s=4n-2.  Complement of A184517.
+  seq $0,184516 ; Lower s-Wythoff sequence, where s=4n-2.  Complement of A184517.
   mov $1,$0
   div $1,2
   lpb $0

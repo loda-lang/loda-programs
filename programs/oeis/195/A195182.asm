@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,276860 ; First differences of the Beatty sequence A276853 for 2*e.
+  seq $2,276860 ; First differences of the Beatty sequence A276853 for 2*e.
   add $0,$2
   mov $3,$2
   min $3,1

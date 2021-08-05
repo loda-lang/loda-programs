@@ -1,6 +1,6 @@
 ; A079559: Number of partitions of n into distinct parts of the form 2^j-1, j=1,2,....
 ; 1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0
 
-cal $0,182105 ; Number of elements merged by bottom-up merge sort.
+seq $0,182105 ; Number of elements merged by bottom-up merge sort.
 mov $1,$0
 mod $1,2

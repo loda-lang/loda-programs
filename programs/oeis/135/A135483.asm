@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,100484 ; Even semiprimes.
+  seq $2,100484 ; Even semiprimes.
   add $1,$2
   mul $1,2
 lpe

@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   mov $4,$0
-  cal $0,8811 ; Expansion of x*(1+x^4)/((1-x)^2*(1-x^4)).
+  seq $0,8811 ; Expansion of x*(1+x^4)/((1-x)^2*(1-x^4)).
   mul $4,$0
   add $1,$4
 lpe

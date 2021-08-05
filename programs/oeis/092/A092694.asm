@@ -4,7 +4,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  cal $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $0,$2
   sub $0,1
   mul $1,$2

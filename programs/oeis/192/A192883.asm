@@ -12,7 +12,7 @@ lpb $8
     mov $2,$0
     trn $0,2
     max $2,0
-    cal $2,32908 ; One of four 3rd-order recurring sequences for which the first derived sequence and the Galois transformed sequence coincide.
+    seq $2,32908 ; One of four 3rd-order recurring sequences for which the first derived sequence and the Galois transformed sequence coincide.
     add $3,$2
     mov $4,$2
     min $4,1

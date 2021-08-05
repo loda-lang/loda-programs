@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,6
-  cal $2,309685 ; Number of even parts appearing among the smallest parts of the partitions of n into 3 parts.
+  seq $2,309685 ; Number of even parts appearing among the smallest parts of the partitions of n into 3 parts.
   add $1,$2
 lpe
 mul $1,2

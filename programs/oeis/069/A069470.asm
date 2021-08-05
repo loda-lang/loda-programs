@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,7862 ; Number of triangular numbers that divide n.
+  seq $2,7862 ; Number of triangular numbers that divide n.
   mov $1,$2
   add $3,$2
   add $3,$2

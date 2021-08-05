@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,111297 ; First differences of A109975.
+  seq $2,111297 ; First differences of A109975.
   add $1,$2
 lpe
 add $1,1

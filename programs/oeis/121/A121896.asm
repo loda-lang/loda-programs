@@ -6,7 +6,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,99738 ; a(n) = 2*Sum_{k=1..n} (n+1-k) (Sum_{j|k} 1/floor(n/j)).
+  seq $2,99738 ; a(n) = 2*Sum_{k=1..n} (n+1-k) (Sum_{j|k} 1/floor(n/j)).
   add $1,$2
   trn $0,$1
 lpe

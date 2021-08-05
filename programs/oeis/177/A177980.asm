@@ -6,7 +6,7 @@ lpb $0
 lpe
 lpb $0
   mov $2,$0
-  cal $2,46667 ; a(n) = A046666(n)/2.
+  seq $2,46667 ; a(n) = A046666(n)/2.
   sub $0,$2
 lpe
 add $0,2

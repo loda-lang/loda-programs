@@ -26,7 +26,7 @@ lpb $2
       sub $0,1
       div $0,2
       add $0,3
-      cal $0,6584 ; If n mod 2 = 0 then n*(n^2-4)/12 else n*(n^2-1)/12.
+      seq $0,6584 ; If n mod 2 = 0 then n*(n^2-4)/12 else n*(n^2-1)/12.
       mov $3,$0
       mov $8,$9
       mul $8,$0

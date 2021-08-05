@@ -14,7 +14,7 @@ lpb $5
     mov $2,$0
     trn $0,2
     max $2,0
-    cal $2,23619 ; Convolution of Lucas numbers and (F(2), F(3), F(4), ...).
+    seq $2,23619 ; Convolution of Lucas numbers and (F(2), F(3), F(4), ...).
     add $3,$2
   lpe
   mov $4,$5

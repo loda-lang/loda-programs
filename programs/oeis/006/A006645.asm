@@ -12,7 +12,7 @@ lpb $2
     mov $3,$0
     mov $0,1
     max $3,0
-    cal $3,26937 ; a(n) = Sum_{k=0..n} (k+1)*T(n,n-k), where T is given by A008288.
+    seq $3,26937 ; a(n) = Sum_{k=0..n} (k+1)*T(n,n-k), where T is given by A008288.
   lpe
   add $1,$3
 lpe

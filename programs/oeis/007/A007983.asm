@@ -13,7 +13,7 @@ lpb $3
     add $0,2
     add $4,$0
     sub $0,4
-    cal $4,81753 ; a(n) = floor(n/12) if n==2 (mod 12); a(n)=floor(n/12)+1 otherwise.
+    seq $4,81753 ; a(n) = floor(n/12) if n==2 (mod 12); a(n)=floor(n/12)+1 otherwise.
     add $2,$4
   lpe
   add $1,$2

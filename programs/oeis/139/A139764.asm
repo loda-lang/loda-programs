@@ -4,5 +4,5 @@
 add $0,1
 lpb $0
   mov $1,$0
-  cal $0,66628 ; a(n) = n - the largest Fibonacci number <= n.
+  seq $0,66628 ; a(n) = n - the largest Fibonacci number <= n.
 lpe

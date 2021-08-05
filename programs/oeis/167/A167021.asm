@@ -3,5 +3,5 @@
 
 add $0,1
 mul $0,6
-cal $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 mov $1,$0

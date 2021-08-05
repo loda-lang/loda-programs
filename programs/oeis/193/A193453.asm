@@ -6,7 +6,7 @@ lpb $0
   mul $0,2
   dif $0,4
 lpe
-cal $0,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
+seq $0,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
 sub $0,1
-cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$0

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,121206 ; a(n) = (2n)! mod n(2n+1).
+  seq $1,121206 ; a(n) = (2n)! mod n(2n+1).
   add $1,$0
   mov $0,$1
   sub $0,1

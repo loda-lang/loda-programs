@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,81223 ; Smallest k such that floor(k*gamma) begins with n (gamma=0.5772156649...).
+  seq $2,81223 ; Smallest k such that floor(k*gamma) begins with n (gamma=0.5772156649...).
   add $1,$2
 lpe
 add $1,1

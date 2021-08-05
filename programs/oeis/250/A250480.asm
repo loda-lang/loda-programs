@@ -13,7 +13,7 @@ lpb $5
     sub $0,1
     mov $2,$0
     max $2,0
-    cal $2,251758 ; Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
+    seq $2,251758 ; Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
     add $3,$2
   lpe
   mov $4,$5

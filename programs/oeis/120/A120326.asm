@@ -8,6 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,39701 ; a(n) = n-th prime modulo 3.
+  seq $0,39701 ; a(n) = n-th prime modulo 3.
   add $1,$0
 lpe

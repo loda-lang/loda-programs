@@ -3,6 +3,6 @@
 
 mul $0,2
 trn $0,3
-cal $0,52910 ; Expansion of 1 + 2/(1-2*x-x^3).
+seq $0,52910 ; Expansion of 1 + 2/(1-2*x-x^3).
 div $0,2
 mov $1,$0

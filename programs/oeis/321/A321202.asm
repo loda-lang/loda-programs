@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,117905 ; Expansion of (1+2x+2x^2)/((1-x^3)(1+x-x^3-x^4)).
+  seq $2,117905 ; Expansion of (1+2x+2x^2)/((1-x^3)(1+x-x^3-x^4)).
   add $1,$2
 lpe
 add $1,1

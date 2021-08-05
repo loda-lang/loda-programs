@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,82693 ; Pyramidal sequence built with powers of 2.
+  seq $2,82693 ; Pyramidal sequence built with powers of 2.
   add $1,$2
 lpe
 add $1,1

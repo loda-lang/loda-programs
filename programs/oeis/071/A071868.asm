@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,295405 ; a(n) = 1 if n^2+1 is prime, 0 otherwise.
+  seq $2,295405 ; a(n) = 1 if n^2+1 is prime, 0 otherwise.
   add $1,$2
 lpe
 add $1,1

@@ -3,5 +3,5 @@
 
 add $0,1
 mul $0,7
-cal $0,7094 ; Numbers in base 8.
+seq $0,7094 ; Numbers in base 8.
 mov $1,$0

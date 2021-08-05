@@ -10,7 +10,7 @@ lpb $2
   sub $0,$2
   mul $0,2
   div $0,5
-  cal $0,256257 ; 6 times numbers of Gould's sequence A001316.
+  seq $0,256257 ; 6 times numbers of Gould's sequence A001316.
   mov $3,$0
   sub $3,6
   div $3,6

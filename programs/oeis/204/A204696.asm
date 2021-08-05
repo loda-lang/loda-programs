@@ -26,7 +26,7 @@ lpb $3
         mov $2,$0
         mov $0,4
         trn $2,1
-        cal $2,233411 ; The number of length n binary words with some prefix which contains two more 1's than 0's or two more 0's than 1's.
+        seq $2,233411 ; The number of length n binary words with some prefix which contains two more 1's than 0's or two more 0's than 1's.
         sub $2,4
       lpe
       mov $4,$2

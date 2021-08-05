@@ -5,6 +5,6 @@ lpb $0
   mov $2,$0
   trn $0,2
   trn $2,1
-  cal $2,22523 ; Nexus numbers (n+1)^7-n^7.
+  seq $2,22523 ; Nexus numbers (n+1)^7-n^7.
   add $1,$2
 lpe

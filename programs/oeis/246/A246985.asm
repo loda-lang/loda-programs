@@ -6,6 +6,6 @@ lpb $0
   sub $0,$1
   mov $2,$0
   max $2,0
-  cal $2,74528 ; a(n) = 2^n + 3^n + 6^n.
+  seq $2,74528 ; a(n) = 2^n + 3^n + 6^n.
   mov $1,$2
 lpe

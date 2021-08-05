@@ -4,7 +4,7 @@
 mov $2,$0
 mul $2,3
 lpb $2
-  cal $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+  seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
   lpb $2
     mov $1,$0
     mov $2,$0

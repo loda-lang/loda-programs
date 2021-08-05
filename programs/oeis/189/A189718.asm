@@ -1,6 +1,6 @@
 ; A189718: Fixed point of the morphism 0->011, 1->100.
 ; 0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,0,1,1,1,0,0,0,1,1,0,1,1,1,0,0,0,1,1,0,1,1,0,1,1,1,0,0,1,0,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,0,1,1,0,1,1,1,0,0,1,0,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,0,1,1,0,1,1,1,0,0,1,0,0,0
 
-cal $0,160384 ; Number of nonzero digits in the base-3 representation of n.
+seq $0,160384 ; Number of nonzero digits in the base-3 representation of n.
 mov $1,$0
 mod $1,2

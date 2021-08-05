@@ -3,6 +3,6 @@
 
 mov $1,$0
 add $0,2
-cal $0,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
+seq $0,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
 sub $1,1
 add $1,$0

@@ -3,7 +3,7 @@
 
 mov $1,1
 sub $1,$0
-cal $0,10125 ; Continued fraction for sqrt(21).
+seq $0,10125 ; Continued fraction for sqrt(21).
 add $0,1
 gcd $1,2
 add $1,5

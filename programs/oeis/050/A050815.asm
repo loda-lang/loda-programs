@@ -8,6 +8,6 @@ lpb $0
   sub $1,1
   add $0,$1
   sub $0,1
-  cal $0,105564 ; Number of blocks of exactly 4 Fibonacci numbers having equal length <= n.
+  seq $0,105564 ; Number of blocks of exactly 4 Fibonacci numbers having equal length <= n.
 lpe
 add $1,4

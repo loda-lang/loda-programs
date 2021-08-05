@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,219428 ; a(n) = n - 1 - phi(n).
+  seq $1,219428 ; a(n) = n - 1 - phi(n).
   mov $2,$1
   mul $2,$0
   mod $0,2

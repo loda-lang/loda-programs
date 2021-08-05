@@ -17,7 +17,7 @@ lpb $2
     sub $5,1
     sub $0,$5
     add $0,1
-    cal $0,78688 ; Continued fraction expansion of e^(1/4).
+    seq $0,78688 ; Continued fraction expansion of e^(1/4).
     mov $3,$0
     mul $3,2
     div $3,4

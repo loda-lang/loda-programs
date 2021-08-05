@@ -13,7 +13,7 @@ lpb $5
     mov $2,$0
     trn $0,2
     max $2,0
-    cal $2,135034 ; Positive integers n repeated 2n-1 times, with a leading a(0) = 0. Also: ceiling of square root of n.
+    seq $2,135034 ; Positive integers n repeated 2n-1 times, with a leading a(0) = 0. Also: ceiling of square root of n.
     add $3,$2
   lpe
   mov $4,$5

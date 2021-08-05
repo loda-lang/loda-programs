@@ -3,7 +3,7 @@
 
 lpb $0
   mov $3,$0
-  cal $3,49581 ; Table T(n,k) = |n-k| read by antidiagonals (n >= 0, k >= 0).
+  seq $3,49581 ; Table T(n,k) = |n-k| read by antidiagonals (n >= 0, k >= 0).
   add $2,$3
   mov $4,$2
   cmp $4,0

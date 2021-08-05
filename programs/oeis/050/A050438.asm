@@ -4,7 +4,7 @@
 add $0,1
 mov $2,12
 lpb $2
-  cal $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   sub $2,3
 lpe
 mov $1,$0

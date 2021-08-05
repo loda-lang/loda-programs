@@ -3,7 +3,7 @@
 
 trn $3,$0
 add $3,$0
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 mov $1,$0
 add $2,$3
 add $2,2

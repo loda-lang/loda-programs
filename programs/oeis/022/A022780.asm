@@ -12,7 +12,7 @@ lpb $2
   mov $7,0
   lpb $6
     trn $0,1
-    cal $0,22839 ; Beatty sequence for sqrt(5).
+    seq $0,22839 ; Beatty sequence for sqrt(5).
     div $0,5
     cmp $5,0
     mul $5,$0

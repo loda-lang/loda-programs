@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,92780 ; Sum(prime(k),k=1..n)^2-1.
+  seq $0,92780 ; Sum(prime(k),k=1..n)^2-1.
   add $0,1
   mov $2,$3
   mul $2,$0

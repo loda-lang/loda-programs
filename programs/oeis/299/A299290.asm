@@ -5,7 +5,7 @@ mov $1,$0
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,227541 ; a(n) = floor(13*n^2/4).
+  seq $2,227541 ; a(n) = floor(13*n^2/4).
   add $1,$2
 lpe
 mul $1,2

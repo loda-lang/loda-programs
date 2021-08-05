@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
+  seq $2,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   div $0,$2
 lpe
 mov $1,$0

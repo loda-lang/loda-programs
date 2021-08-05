@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,79704 ; 2p^2 where p runs through the primes.
+  seq $2,79704 ; 2p^2 where p runs through the primes.
   add $1,$2
 lpe
 div $1,2

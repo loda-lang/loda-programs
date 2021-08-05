@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,71042 ; Number of 0's in n-th row of triangle in A070886.
+  seq $2,71042 ; Number of 0's in n-th row of triangle in A070886.
   add $1,$2
 lpe
 add $1,1

@@ -3,7 +3,7 @@
 
 mov $1,261241
 sub $1,$0
-cal $0,342871 ; a(n) = Sum_{k=1..n} floor(n^(1/k)), n >= 1.
+seq $0,342871 ; a(n) = Sum_{k=1..n} floor(n^(1/k)), n >= 1.
 mul $1,2
 mov $2,$0
 add $2,1

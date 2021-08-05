@@ -2,6 +2,6 @@
 ; 2,6,9,12,14,16,19,22,24,26,29,32,34,36,39,41,43,45,47,50,53,55,57,59,61,64,66,68,71,74,76,78,81,83,85,87,89,92,94,96,98,100,103,106,108,110,112,114,117,119
 
 mov $1,$0
-cal $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 add $1,$0
 add $1,1

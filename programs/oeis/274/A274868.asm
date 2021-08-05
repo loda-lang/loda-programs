@@ -5,7 +5,7 @@ add $0,2
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,208901 ; Number of bitstrings of length n (with at least two runs) where the last two runs have different lengths.
+  seq $2,208901 ; Number of bitstrings of length n (with at least two runs) where the last two runs have different lengths.
   add $1,$2
 lpe
 div $1,4

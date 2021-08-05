@@ -5,5 +5,5 @@ mul $0,3
 mov $1,$0
 add $1,5
 add $1,$0
-cal $1,1221 ; Number of distinct primes dividing n (also called omega(n)).
+seq $1,1221 ; Number of distinct primes dividing n (also called omega(n)).
 sub $1,2

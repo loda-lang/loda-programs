@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,98090 ; Numbers k such that 2k-3 is prime.
+  seq $0,98090 ; Numbers k such that 2k-3 is prime.
   mov $2,$3
   mov $4,$0
   sub $4,4

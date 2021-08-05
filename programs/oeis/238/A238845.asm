@@ -11,5 +11,5 @@ lpb $0
 lpe
 mov $1,$0
 add $1,1
-cal $1,70939 ; Length of binary representation of n.
+seq $1,70939 ; Length of binary representation of n.
 sub $1,1

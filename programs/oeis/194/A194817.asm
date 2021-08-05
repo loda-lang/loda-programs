@@ -11,7 +11,7 @@ lpb $2
   lpb $0
     sub $3,1
     add $0,$3
-    cal $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
+    seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
     add $3,$0
   lpe
   add $1,$0

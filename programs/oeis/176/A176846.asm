@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,290080 ; a(1) = 0; for n > 1, a(n) = sigma(bigomega(n)).
+  seq $2,290080 ; a(1) = 0; for n > 1, a(n) = sigma(bigomega(n)).
   sub $0,$2
   add $1,1
 lpe

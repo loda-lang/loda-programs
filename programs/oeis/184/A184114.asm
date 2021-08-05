@@ -18,7 +18,7 @@ lpb $2
     sub $0,1
     mul $0,5
     max $0,0
-    cal $0,202305 ; Floor(sqrt(5*n)).
+    seq $0,202305 ; Floor(sqrt(5*n)).
     mov $3,$0
     mov $7,$6
     mul $7,$0

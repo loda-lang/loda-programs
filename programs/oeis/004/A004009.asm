@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,46948 ; Sizes of successive balls in E_8 lattice.
+  seq $0,46948 ; Sizes of successive balls in E_8 lattice.
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -1,6 +1,6 @@
 ; A280799: a(n) = A049502(phi(n)).
 ; 0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,2,3,0,3,0,2,0,0,0,0,0,3,0,0,0,3,2,0,0,4,0,6,3,0,3,4,0,6,3,0,0,3,2,4,0,3,0,2,0,0,0,3,0,0,3,2,0,4,0,3,0,4,3,4,3,0,0,4,0,3,4,7,0,0,6,0,4,5,0,4,4,0,4,4,0,0,6,0,4
 
-cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-cal $0,49502 ; Major index of n, 2nd definition.
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,49502 ; Major index of n, 2nd definition.
 mov $1,$0

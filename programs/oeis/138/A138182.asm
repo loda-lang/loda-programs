@@ -3,10 +3,10 @@
 
 mul $0,2
 max $0,1
-cal $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 lpb $0
   mov $1,$0
   mov $2,$0
-  cal $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
+  seq $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
   mov $0,$2
 lpe

@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   sub $0,$3
   add $0,1
-  cal $0,247146 ; As a binary numeral, the bit 2^(m-1) of a(n) is 1 iff m is a proper divisor of n.
+  seq $0,247146 ; As a binary numeral, the bit 2^(m-1) of a(n) is 1 iff m is a proper divisor of n.
   add $1,$0
 lpe
 add $1,1

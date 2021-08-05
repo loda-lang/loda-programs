@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   sub $0,$3
   lpb $0
-    cal $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+    seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
     pow $0,2
     mov $4,2
   lpe

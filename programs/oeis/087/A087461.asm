@@ -7,7 +7,7 @@ add $0,2
 mov $2,2
 lpb $2
   add $0,$3
-  cal $0,6005 ; The odd prime numbers together with 1.
+  seq $0,6005 ; The odd prime numbers together with 1.
   add $1,$0
   mov $0,$2
   sub $0,2

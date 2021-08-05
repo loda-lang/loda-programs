@@ -9,7 +9,7 @@ sub $4,$0
 mov $0,1
 lpb $2
   sub $0,$4
-  cal $0,230980 ; Number of primes <= n, starting at n=0.
+  seq $0,230980 ; Number of primes <= n, starting at n=0.
   div $2,2
 lpe
 mov $1,$0

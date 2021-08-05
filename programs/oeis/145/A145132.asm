@@ -7,6 +7,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,145131 ; Expansion of x/((1 - x - x^4)*(1 - x)^2).
+  seq $0,145131 ; Expansion of x/((1 - x - x^4)*(1 - x)^2).
   add $1,$0
 lpe

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,214736 ; Least m>0 such that n-m divides n+1+m.
+  seq $2,214736 ; Least m>0 such that n-m divides n+1+m.
   add $4,$2
   mov $0,$4
 lpe

@@ -8,6 +8,6 @@ add $2,$0
 add $2,$1
 sub $2,11
 add $0,$2
-cal $0,8346 ; a(n) = Fibonacci(n) + (-1)^n.
+seq $0,8346 ; a(n) = Fibonacci(n) + (-1)^n.
 mov $1,$0
 div $1,2

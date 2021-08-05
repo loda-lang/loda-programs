@@ -5,6 +5,6 @@ lpb $0
   mov $2,$0
   trn $0,2
   trn $2,2
-  cal $2,22100 ; Fibonacci sequence beginning 1, 10.
+  seq $2,22100 ; Fibonacci sequence beginning 1, 10.
   add $1,$2
 lpe

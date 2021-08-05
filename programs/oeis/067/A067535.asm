@@ -5,7 +5,7 @@ mov $1,$0
 lpb $0
   div $0,5
   mov $2,$1
-  cal $2,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+  seq $2,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
   mov $3,$2
   min $3,1
   add $1,$3

@@ -3,7 +3,7 @@
 
 mov $1,2
 mov $2,$0
-cal $2,55965 ; n - reversal of hexadecimal (base 16) digits of n (written in base 10).
+seq $2,55965 ; n - reversal of hexadecimal (base 16) digits of n (written in base 10).
 mov $3,$0
 sub $0,$2
 sub $3,1

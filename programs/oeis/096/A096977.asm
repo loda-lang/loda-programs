@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,139818 ; Squares of Jacobsthal numbers.
+  seq $2,139818 ; Squares of Jacobsthal numbers.
   add $1,$2
 lpe

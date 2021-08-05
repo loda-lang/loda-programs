@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,121149 ; Minimal number of vertices in a planar connected n-polyhex.
+  seq $0,121149 ; Minimal number of vertices in a planar connected n-polyhex.
   mov $2,$3
   mul $2,$0
   add $1,$2

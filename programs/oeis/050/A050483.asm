@@ -4,7 +4,7 @@
 mov $1,$0
 add $1,1
 mov $0,$1
-cal $0,50404 ; Partial sums of A051878.
+seq $0,50404 ; Partial sums of A051878.
 mul $0,2
 mul $1,$0
 sub $1,28

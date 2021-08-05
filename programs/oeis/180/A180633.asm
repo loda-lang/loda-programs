@@ -3,7 +3,7 @@
 
 lpb $0
   trn $0,1
-  cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $0,1
   add $1,1
 lpe

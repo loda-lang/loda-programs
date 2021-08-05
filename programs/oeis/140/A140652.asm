@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,62968 ; n + 1 - d(n), where d(n) is the number of divisors function.
+  seq $2,62968 ; n + 1 - d(n), where d(n) is the number of divisors function.
   add $1,$2
 lpe
 add $1,1

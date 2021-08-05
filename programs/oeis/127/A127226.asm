@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   sub $0,1
   trn $2,1
-  cal $2,291008 ; p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 7*S^2.
+  seq $2,291008 ; p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 7*S^2.
   add $1,$2
 lpe
 mul $1,2

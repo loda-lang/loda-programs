@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   trn $0,3
-  cal $2,213389 ; Number of (w,x,y) with all terms in {0,...,n} and max(w,x,y) < 2*min(w,x,y).
+  seq $2,213389 ; Number of (w,x,y) with all terms in {0,...,n} and max(w,x,y) < 2*min(w,x,y).
   add $1,$2
 lpe

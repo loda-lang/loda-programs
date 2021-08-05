@@ -5,6 +5,6 @@ lpb $0
   div $0,2
   mov $1,$0
   mul $0,2
-  cal $1,81078 ; a(n) = Lucas(4n) - 3, or Lucas(2n-1)*Lucas(2n+1).
+  seq $1,81078 ; a(n) = Lucas(4n) - 3, or Lucas(2n-1)*Lucas(2n+1).
 lpe
 add $1,1

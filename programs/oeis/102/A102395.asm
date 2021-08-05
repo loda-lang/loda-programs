@@ -1,8 +1,8 @@
 ; A102395: A mod 2 related Jacobsthal sequence.
 ; 1,0,0,2,0,2,2,2,0,2,2,2,2,2,2,6,0,2,2,2,2,2,2,6,2,2,2,6,2,6,6,10,0,2,2,2,2,2,2,6,2,2,2,6,2,6,6,10,2,2,2,6,2,6,6,10,2,6,6,10,6,10,10,22,0,2,2,2,2,2,2,6,2,2,2,6,2,6,6,10,2,2,2,6,2,6,6,10,2,6,6,10,6,10,10,22,2,2,2
 
-cal $0,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
-cal $0,154890 ; Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
+seq $0,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+seq $0,154890 ; Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
 mov $1,$0
 sub $1,4
 div $1,2

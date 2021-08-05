@@ -4,7 +4,7 @@
 mov $1,1
 lpb $0
   mov $1,$0
-  cal $1,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
+  seq $1,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
   mul $1,2
   cmp $0,$1
 lpe

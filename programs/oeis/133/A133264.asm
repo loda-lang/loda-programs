@@ -3,5 +3,5 @@
 
 mul $0,3
 add $0,1
-cal $0,51885 ; Smallest number whose sum of digits is n.
+seq $0,51885 ; Smallest number whose sum of digits is n.
 mov $1,$0

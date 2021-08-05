@@ -7,6 +7,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,71542 ; Number of steps to reach 0 starting with n and using the iterated process : x -> x - (number of 1's in binary representation of x).
+  seq $0,71542 ; Number of steps to reach 0 starting with n and using the iterated process : x -> x - (number of 1's in binary representation of x).
   add $1,$0
 lpe

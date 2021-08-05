@@ -10,7 +10,7 @@ lpb $2
   add $1,$0
   sub $2,1
   mov $3,$5
-  cal $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -3,6 +3,6 @@
 
 mov $1,$0
 mov $2,$0
-cal $2,242493 ; a(n) is the number of not-sqrt-smooth numbers ("jagged" numbers) not exceeding n. This is the counting function of A064052.
+seq $2,242493 ; a(n) is the number of not-sqrt-smooth numbers ("jagged" numbers) not exceeding n. This is the counting function of A064052.
 sub $2,1
 sub $1,$2

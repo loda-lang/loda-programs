@@ -6,4 +6,4 @@ trn $2,$0
 add $0,$2
 add $0,$2
 mov $1,$0
-cal $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

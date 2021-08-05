@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,218445 ; a(n) = Sum_{k>=0} floor(n/(5*k + 2)).
+  seq $0,218445 ; a(n) = Sum_{k>=0} floor(n/(5*k + 2)).
   mov $2,$4
   mul $2,$0
   add $1,$2

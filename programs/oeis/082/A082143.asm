@@ -4,7 +4,7 @@
 mov $1,$0
 add $1,1
 add $1,$0
-cal $1,98660 ; E.g.f. BesselI(0,2*sqrt(2)*x) + BesselI(1,2*sqrt(2)*x)/sqrt(2).
+seq $1,98660 ; E.g.f. BesselI(0,2*sqrt(2)*x) + BesselI(1,2*sqrt(2)*x)/sqrt(2).
 mov $2,$1
 mod $1,2
 add $1,$2

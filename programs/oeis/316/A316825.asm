@@ -5,5 +5,5 @@ mov $1,2
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
+  seq $1,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 lpe

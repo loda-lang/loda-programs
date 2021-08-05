@@ -3,5 +3,5 @@
 
 mul $0,3
 div $0,2
-cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $1,$0

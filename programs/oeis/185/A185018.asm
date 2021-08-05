@@ -1,7 +1,7 @@
 ; A185018: Inverse to sequence matrix for natural numbers.
 ; 1,-2,1,1,-2,1,0,1,-2,1,0,0,1,-2,1,0,0,0,1,-2,1,0,0,0,0,1,-2,1,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,0,0,0,1,-2,1
 
-cal $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
+seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 add $1,$0
 sub $1,3
 bin $1,$0

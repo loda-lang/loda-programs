@@ -2,10 +2,10 @@
 ; 0,0,-1,-1,2,-1,2,-1,2,1,2,-1,2,-1,2,1,2,-1,2,-1,2,1,2,-1,2,1,2,1,2,-1,2,-1,2,1,2,1,2,-1,2,1,2,-1,2,-1,2,1,2,-1,2,1,2,1,2,-1,2,1,2,1,2,-1,2,-1,2,1,2,1,2,-1,2,1,2,-1,2,-1,2,1,2,1,2,-1,2,1,2,-1,2,1,2,1,2,-1,2,1,2,1,2,1,2,-1,2,1
 
 mov $1,$0
-cal $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
 mov $2,1
 sub $2,$0
-cal $0,289195 ; a(n) is the number of odd integers divisible by 5 in ]4*(n-1)^2, 4*n^2[.
+seq $0,289195 ; a(n) is the number of odd integers divisible by 5 in ]4*(n-1)^2, 4*n^2[.
 sub $0,$2
 gcd $1,2
 add $1,1

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
+  seq $2,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
   add $1,$2
   add $1,$2
   mul $2,$1

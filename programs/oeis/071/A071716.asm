@@ -5,5 +5,5 @@ lpb $0
   pow $0,2
   sub $0,1
 lpe
-cal $0,167422 ; Expansion of (1+x)*c(x), c(x) the g.f. of A000108.
+seq $0,167422 ; Expansion of (1+x)*c(x), c(x) the g.f. of A000108.
 mov $1,$0

@@ -3,5 +3,5 @@
 
 mul $0,2
 trn $0,1
-cal $0,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
+seq $0,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
 mov $1,$0

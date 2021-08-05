@@ -6,7 +6,7 @@ lpb $0
   add $2,$0
   sub $0,1
   add $2,4
-  cal $2,240440 ; Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
+  seq $2,240440 ; Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
   add $1,$2
 lpe
 div $1,15

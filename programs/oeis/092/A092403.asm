@@ -10,7 +10,7 @@ lpb $4
   sub $0,1
   mov $3,$4
   max $5,0
-  cal $5,332569 ; a(n) = Sum_{k=1..n} floor(n/k) * ceiling(n/k).
+  seq $5,332569 ; a(n) = Sum_{k=1..n} floor(n/k) * ceiling(n/k).
   sub $5,1
   mul $3,$5
   add $1,$3

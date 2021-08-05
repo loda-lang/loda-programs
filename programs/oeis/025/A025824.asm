@@ -13,7 +13,7 @@ lpb $4
     mov $2,$0
     mod $0,2
     max $2,0
-    cal $2,29028 ; Expansion of 1/((1-x)(1-x^2)(1-x^9)(1-x^11)).
+    seq $2,29028 ; Expansion of 1/((1-x)(1-x^2)(1-x^9)(1-x^11)).
   lpe
   mov $3,$4
   mul $3,$2

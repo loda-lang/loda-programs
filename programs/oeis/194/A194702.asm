@@ -3,7 +3,7 @@
 
 mov $1,1
 mov $2,$0
-cal $0,167194 ; Triangle read by rows. A130713 in the columns.
+seq $0,167194 ; Triangle read by rows. A130713 in the columns.
 mod $0,2
 div $2,3
 trn $1,$2

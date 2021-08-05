@@ -16,7 +16,7 @@ lpb $3
     mov $0,$5
     sub $2,1
     sub $0,$2
-    cal $0,212986 ; Number of (w,x,y) with all terms in {0,...,n} and 2w = 3x+y.
+    seq $0,212986 ; Number of (w,x,y) with all terms in {0,...,n} and 2w = 3x+y.
     add $6,$0
   lpe
   add $1,$6

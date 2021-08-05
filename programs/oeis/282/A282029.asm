@@ -3,5 +3,5 @@
 
 mov $1,$0
 div $0,2
-cal $0,230980 ; Number of primes <= n, starting at n=0.
+seq $0,230980 ; Number of primes <= n, starting at n=0.
 sub $1,$0

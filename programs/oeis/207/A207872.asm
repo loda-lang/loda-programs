@@ -5,7 +5,7 @@ mov $1,1
 lpb $0
   mov $2,$0
   mul $0,5
-  cal $2,249038 ; Number of odd terms in first n terms of A249036.
+  seq $2,249038 ; Number of odd terms in first n terms of A249036.
   add $0,$2
   div $0,9
   mul $1,2

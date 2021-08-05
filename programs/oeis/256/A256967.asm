@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,72649 ; n occurs Fibonacci(n) times (cf. A000045).
+  seq $2,72649 ; n occurs Fibonacci(n) times (cf. A000045).
   add $1,$2
 lpe
 add $1,1

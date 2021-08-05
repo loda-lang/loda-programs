@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,27306 ; a(n) = 2^(n-1) + ((1 + (-1)^n)/4)*binomial(n, n/2).
+  seq $1,27306 ; a(n) = 2^(n-1) + ((1 + (-1)^n)/4)*binomial(n, n/2).
   mul $1,2
 lpe

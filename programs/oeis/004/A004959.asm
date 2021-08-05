@@ -23,7 +23,7 @@ lpb $4
       div $0,$5
       sub $0,2
       max $2,0
-      cal $2,26356 ; a(n) = floor((n-1)*phi) + n + 1, n > 0, where phi = (1+sqrt(5))/2.
+      seq $2,26356 ; a(n) = floor((n-1)*phi) + n + 1, n > 0, where phi = (1+sqrt(5))/2.
       add $3,$2
       mov $5,$3
     lpe

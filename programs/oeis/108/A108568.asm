@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,46930 ; Size of sea of composite numbers surrounding n-th prime.
+  seq $2,46930 ; Size of sea of composite numbers surrounding n-th prime.
   add $1,$2
 lpe
 add $1,2

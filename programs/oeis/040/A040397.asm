@@ -1,8 +1,8 @@
 ; A040397: Continued fraction for sqrt(418).
 ; 20,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4
 
-cal $0,10144 ; Continued fraction for sqrt(59).
-cal $0,47423 ; Numbers that are congruent to {2, 3, 4, 5, 6} mod 8.
+seq $0,10144 ; Continued fraction for sqrt(59).
+seq $0,47423 ; Numbers that are congruent to {2, 3, 4, 5, 6} mod 8.
 mov $1,$0
 sub $1,2
 mul $1,2

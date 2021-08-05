@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,20875 ; Number of (undirected) Hamiltonian paths in n-Moebius ladder.
+  seq $2,20875 ; Number of (undirected) Hamiltonian paths in n-Moebius ladder.
   add $1,$2
 lpe
 div $1,4

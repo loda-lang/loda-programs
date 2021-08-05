@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,122007 ; Expansion of 2*x^2*(1-2*x) / ((3*x-1)*(3*x^2-1)).
+  seq $0,122007 ; Expansion of 2*x^2*(1-2*x) / ((3*x-1)*(3*x^2-1)).
   mov $2,$3
   mul $2,$0
   add $1,$2

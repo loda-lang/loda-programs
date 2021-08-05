@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
+  seq $2,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
   sub $0,$2
   add $1,1
 lpe

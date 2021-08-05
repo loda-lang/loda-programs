@@ -4,4 +4,4 @@
 mov $1,2
 add $1,$0
 mul $1,$0
-cal $1,34694 ; Smallest prime == 1 (mod n).
+seq $1,34694 ; Smallest prime == 1 (mod n).

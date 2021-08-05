@@ -3,7 +3,7 @@
 
 mov $1,2
 add $1,$0
-cal $0,137243 ; Number of coprime pairs (a,b) with -n <= a,b <= n.
+seq $0,137243 ; Number of coprime pairs (a,b) with -n <= a,b <= n.
 mul $1,$0
 sub $1,15
 div $1,16

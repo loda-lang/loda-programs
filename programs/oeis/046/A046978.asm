@@ -6,6 +6,6 @@ lpb $0
   pow $2,2
   sub $2,$0
   sub $0,1
-  cal $2,14017 ; Inverse of 8th cyclotomic polynomial.
+  seq $2,14017 ; Inverse of 8th cyclotomic polynomial.
   add $1,$2
 lpe

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,210435 ; Number of digits in 5^n.
+  seq $2,210435 ; Number of digits in 5^n.
   add $1,$2
 lpe
 add $1,1

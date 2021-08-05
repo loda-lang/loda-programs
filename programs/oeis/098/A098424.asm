@@ -9,7 +9,7 @@ lpb $4
   sub $0,$4
   mov $2,3
   mov $3,$0
-  cal $0,45966 ; a(1)=3; if n = Product p_i^e_i, n > 1, then a(n) = Product p_{i+2}^e_i.
+  seq $0,45966 ; a(1)=3; if n = Product p_i^e_i, n > 1, then a(n) = Product p_{i+2}^e_i.
   add $2,$3
   mov $5,1
   sub $5,$0

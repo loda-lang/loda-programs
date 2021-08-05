@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   mov $4,$0
-  cal $0,266251 ; Number of OFF (white) cells in the n-th iteration of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
+  seq $0,266251 ; Number of OFF (white) cells in the n-th iteration of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
   mul $4,2
   add $4,22
   sub $4,$0

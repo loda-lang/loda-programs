@@ -1,6 +1,6 @@
 ; A134375: a(n) = (n!)^4.
 ; 1,1,16,1296,331776,207360000,268738560000,645241282560000,2642908293365760000,17340121312772751360000,173401213127727513600000000,2538767161403058526617600000000,52643875858853821607942553600000000
 
-cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 pow $0,4
 mov $1,$0

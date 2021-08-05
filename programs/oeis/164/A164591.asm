@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,1
-cal $1,57084 ; Scaled Chebyshev U-polynomials evaluated at sqrt(2).
+seq $1,57084 ; Scaled Chebyshev U-polynomials evaluated at sqrt(2).
 div $1,8

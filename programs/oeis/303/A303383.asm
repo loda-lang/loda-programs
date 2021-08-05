@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,309335 ; a(n) = n^3 if n odd, 7*n^3/8 if n even.
+  seq $2,309335 ; a(n) = n^3 if n odd, 7*n^3/8 if n even.
   add $1,$2
 lpe

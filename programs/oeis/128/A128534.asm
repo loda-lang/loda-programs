@@ -22,7 +22,7 @@ lpb $5
       mov $2,$0
       trn $0,4
       max $2,0
-      cal $2,181716 ; a(n) = a(n-1) + a(n-2) + (-1)^n, with a(0)=0 and a(1)=1.
+      seq $2,181716 ; a(n) = a(n-1) + a(n-2) + (-1)^n, with a(0)=0 and a(1)=1.
       add $3,$2
     lpe
     mov $9,$8

@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,117495 ; Product of a prime number p and the number of primes smaller than p.
+  seq $0,117495 ; Product of a prime number p and the number of primes smaller than p.
   mov $2,$3
   mul $2,$0
   add $1,$2

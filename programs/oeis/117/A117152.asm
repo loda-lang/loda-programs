@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,86926 ; Product of Fibonacci and (shifted) triangular numbers.
+  seq $2,86926 ; Product of Fibonacci and (shifted) triangular numbers.
   add $1,$2
 lpe

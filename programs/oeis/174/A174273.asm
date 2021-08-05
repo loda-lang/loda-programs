@@ -3,12 +3,12 @@
 
 mov $1,$0
 lpb $0
-  cal $1,56832 ; All a(n) = 1 or 2; a(1) = 1; get next 2^k terms by repeating first 2^k terms and changing last element so sum of first 2^(k+1) terms is odd.
+  seq $1,56832 ; All a(n) = 1 or 2; a(1) = 1; get next 2^k terms by repeating first 2^k terms and changing last element so sum of first 2^(k+1) terms is odd.
   div $0,$1
 lpe
 mul $0,2
 add $0,1
-cal $0,23645 ; a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
+seq $0,23645 ; a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
 mov $1,$0
 div $1,2
 add $1,1

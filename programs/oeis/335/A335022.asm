@@ -4,6 +4,6 @@
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,58344 ; Difference between the sum of the odd aliquot divisors of n and the sum of the even aliquot divisors of n.
+  seq $1,58344 ; Difference between the sum of the odd aliquot divisors of n and the sum of the even aliquot divisors of n.
   sub $1,1
 lpe

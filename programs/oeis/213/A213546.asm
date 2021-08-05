@@ -4,4 +4,4 @@
 mul $0,2
 add $0,1
 mov $1,$0
-cal $1,337173 ; a(n) = Sum_{k=1..floor(n/2)} k^2 * (n-k)^2.
+seq $1,337173 ; a(n) = Sum_{k=1..floor(n/2)} k^2 * (n-k)^2.

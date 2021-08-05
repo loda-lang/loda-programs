@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   mov $3,$0
-  cal $0,55086 ; n appears 1+[n/2] times.
+  seq $0,55086 ; n appears 1+[n/2] times.
   sub $3,$0
   add $1,$3
 lpe

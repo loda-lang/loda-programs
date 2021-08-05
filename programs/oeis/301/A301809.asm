@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   add $0,1
-  cal $0,33192 ; a(n) = binomial(Fibonacci(n) + 1, 2).
+  seq $0,33192 ; a(n) = binomial(Fibonacci(n) + 1, 2).
   mov $2,$3
   mul $2,$0
   add $1,$2

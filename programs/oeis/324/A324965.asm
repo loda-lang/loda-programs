@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,324964 ; a(n) = A000139(n) mod 2; Characteristic function of odd fibbinary numbers (A022341).
+  seq $2,324964 ; a(n) = A000139(n) mod 2; Characteristic function of odd fibbinary numbers (A022341).
   add $1,$2
 lpe

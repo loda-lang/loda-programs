@@ -3,7 +3,7 @@
 
 mov $1,$0
 lpb $0
-  cal $0,70939 ; Length of binary representation of n.
+  seq $0,70939 ; Length of binary representation of n.
   add $1,$0
   sub $0,1
 lpe

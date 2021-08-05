@@ -6,6 +6,6 @@ lpb $0
   mov $1,$0
   mov $0,$2
   max $1,0
-  cal $1,120305 ; a(n) = Sum_{i=0..n} Sum_{j=0..n} (-1)^(i+j) * (i+j)!/(i!j!).
+  seq $1,120305 ; a(n) = Sum_{i=0..n} Sum_{j=0..n} (-1)^(i+j) * (i+j)!/(i!j!).
 lpe
 add $1,1

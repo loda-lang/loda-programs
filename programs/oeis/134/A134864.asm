@@ -4,7 +4,7 @@
 mov $1,18
 mov $2,3
 lpb $1
-  cal $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
+  seq $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
   add $0,$2
   add $1,$2
   add $1,79201

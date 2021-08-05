@@ -3,5 +3,5 @@
 
 add $0,1
 mul $0,2
-cal $0,5752 ; a(n) = n^2 + n*floor(n*tau) - floor(n*tau)^2.
+seq $0,5752 ; a(n) = n^2 + n*floor(n*tau) - floor(n*tau)^2.
 mov $1,$0

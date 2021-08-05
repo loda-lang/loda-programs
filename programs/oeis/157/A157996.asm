@@ -4,7 +4,7 @@
 mov $1,$0
 min $0,1
 add $1,4
-cal $1,98090 ; Numbers k such that 2k-3 is prime.
+seq $1,98090 ; Numbers k such that 2k-3 is prime.
 add $1,$0
 mul $1,3458
 sub $1,13832

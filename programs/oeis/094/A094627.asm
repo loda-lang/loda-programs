@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,70199 ; Number of palindromes of length <= n.
+  seq $2,70199 ; Number of palindromes of length <= n.
   add $1,$2
   add $1,1
 lpe

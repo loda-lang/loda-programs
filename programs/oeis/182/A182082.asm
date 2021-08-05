@@ -8,7 +8,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
   mov $3,$0
   div $3,3
   add $3,1

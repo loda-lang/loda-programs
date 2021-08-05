@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $0,1
-cal $0,109592 ; Sequence and first differences include all even numbers exactly once and no odd numbers.
+seq $0,109592 ; Sequence and first differences include all even numbers exactly once and no odd numbers.
 mul $1,2
 sub $0,$1
 mov $1,$0

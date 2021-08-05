@@ -4,7 +4,7 @@
 mov $3,$0
 mul $0,2
 trn $3,2
-cal $3,139179 ; Number of non-fourth-powers <= n.
+seq $3,139179 ; Number of non-fourth-powers <= n.
 sub $0,$3
 mov $2,$0
 cmp $2,0

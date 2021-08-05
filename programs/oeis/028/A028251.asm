@@ -6,7 +6,7 @@ mul $0,3
 mov $2,1
 add $2,$0
 max $0,0
-cal $0,204454 ; Odd numbers not divisible by 11.
+seq $0,204454 ; Odd numbers not divisible by 11.
 div $0,28
 mov $1,5
 add $1,$2

@@ -5,6 +5,6 @@ add $0,1
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,70659 ; n^6 mod 36.
+  seq $1,70659 ; n^6 mod 36.
 lpe
 mod $1,10

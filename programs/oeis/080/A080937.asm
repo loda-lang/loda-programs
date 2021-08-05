@@ -4,5 +4,5 @@
 sub $0,1
 mul $0,2
 max $0,0
-cal $0,52547 ; Expansion of (1-x)/(1-x-2*x^2+x^3).
+seq $0,52547 ; Expansion of (1-x)/(1-x-2*x^2+x^3).
 mov $1,$0

@@ -6,7 +6,7 @@ lpb $0
   sub $2,2
   add $0,$2
 lpe
-cal $0,6005 ; The odd prime numbers together with 1.
+seq $0,6005 ; The odd prime numbers together with 1.
 trn $0,2
 mov $1,$0
 add $1,2

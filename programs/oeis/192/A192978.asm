@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,27181 ; a(n) = Lucas(n+4) - 2*(n+3).
+  seq $2,27181 ; a(n) = Lucas(n+4) - 2*(n+3).
   add $1,$2
 lpe

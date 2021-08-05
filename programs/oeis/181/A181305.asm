@@ -5,7 +5,7 @@ mov $2,1
 lpb $0
   mov $1,$0
   sub $0,2
-  cal $1,181331 ; Number of 0's in the top rows of all 2-compositions of n.
+  seq $1,181331 ; Number of 0's in the top rows of all 2-compositions of n.
   add $2,$1
 lpe
 mov $3,$0

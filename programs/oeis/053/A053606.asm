@@ -4,5 +4,5 @@
 mul $0,3
 mov $1,1
 add $1,$0
-cal $1,155110 ; a(n) = 8*Fibonacci(2n+1).
+seq $1,155110 ; a(n) = 8*Fibonacci(2n+1).
 div $1,32

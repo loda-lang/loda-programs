@@ -5,6 +5,6 @@ pow $0,2
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,131912 ; Row sums of triangle A131911.
+  seq $1,131912 ; Row sums of triangle A131911.
 lpe
 add $1,1

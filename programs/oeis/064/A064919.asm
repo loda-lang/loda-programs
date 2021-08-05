@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $0,1
-cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
+seq $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
 gcd $0,2
 mul $1,$0
 add $1,2

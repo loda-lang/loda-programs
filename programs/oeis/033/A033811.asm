@@ -3,7 +3,7 @@
 
 add $0,1
 mov $1,$0
-cal $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
+seq $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
 sub $0,$1
 mov $1,$0
 sub $1,1

@@ -10,7 +10,7 @@ lpb $0
   sub $0,1
   mov $1,1
   max $2,0
-  cal $2,160651 ; a(n) is the number of triangular nonnegative integers that are each equal to n(n+1)/2 - m(m+1)/2, for some m's where 0 <= m <= n.
+  seq $2,160651 ; a(n) is the number of triangular nonnegative integers that are each equal to n(n+1)/2 - m(m+1)/2, for some m's where 0 <= m <= n.
   add $1,$2
 lpe
 add $1,1

@@ -4,6 +4,6 @@
 mov $1,1
 lpb $0
   sub $0,1
-  cal $1,7843 ; Least positive integer k for which 2^n divides k!.
+  seq $1,7843 ; Least positive integer k for which 2^n divides k!.
 lpe
 sub $1,1

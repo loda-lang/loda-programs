@@ -1,9 +1,9 @@
 ; A126001: A106486-encodings of nonnegative combinatorial games, i.e., games whose value is >= 0.
 ; 0,1,4,5,8,9,12,13,16,17,20,21,24,25,28,29,64,65,68,69,72,73,76,77,80,81,84,85,88,89,92,93,128,129,132,133,136,137,140,141,144,145,148,149,152,153,156,157,192,193,196,197,200,201,204,205,208,209,212,213,216,217,220,221,256,257,260,261,264,265,268,269,272,273,276,277,280,281,284,285,320,321,324,325,328,329,332,333,336,337,340,341,344,345,348,349,384,385,388,389
 
-cal $0,115420 ; Numbers having a 1 in position 4 of their binary expansion.
+seq $0,115420 ; Numbers having a 1 in position 4 of their binary expansion.
 mul $0,2
-cal $0,47527 ; Numbers that are congruent to {0, 1, 2, 7} mod 8.
+seq $0,47527 ; Numbers that are congruent to {0, 1, 2, 7} mod 8.
 mov $1,$0
 sub $1,64
 div $1,2

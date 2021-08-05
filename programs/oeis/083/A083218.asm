@@ -5,7 +5,7 @@ mov $1,1
 add $1,$0
 mov $2,$0
 add $2,1
-cal $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 add $2,1
 lpb $1
   sub $1,$2

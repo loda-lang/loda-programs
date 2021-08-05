@@ -9,7 +9,7 @@ lpb $3
   sub $0,$3
   mov $4,$0
   mov $0,3
-  cal $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   mov $2,$4
   trn $2,2
   sub $2,2
@@ -17,7 +17,7 @@ lpb $3
   pow $2,2
   mov $4,$0
   mov $0,$2
-  cal $0,266073 ; Number of OFF (white) cells in the n-th iteration of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
+  seq $0,266073 ; Number of OFF (white) cells in the n-th iteration of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
   add $0,$4
   mul $4,5
   add $4,5

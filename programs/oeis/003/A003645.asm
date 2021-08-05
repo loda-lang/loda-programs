@@ -3,7 +3,7 @@
 
 add $0,1
 mov $3,$0
-cal $0,69722 ; Number of rooted unicursal planar maps with n edges and exactly one vertex of valency 1 (unicursal means that exactly two vertices are of odd valency; there is an Eulerian path).
+seq $0,69722 ; Number of rooted unicursal planar maps with n edges and exactly one vertex of valency 1 (unicursal means that exactly two vertices are of odd valency; there is an Eulerian path).
 add $2,$0
 add $1,$2
 div $1,2

@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   sub $0,$4
   mov $2,$0
-  cal $0,85697 ; a(n) = T(n)^2, where T(n) = A000073(n) is the n-th tribonacci number.
+  seq $0,85697 ; a(n) = T(n)^2, where T(n) = A000073(n) is the n-th tribonacci number.
   mul $2,$0
   add $1,$2
 lpe

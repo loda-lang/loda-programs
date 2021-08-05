@@ -3,6 +3,6 @@
 
 mov $1,$0
 mov $2,$0
-cal $2,133936 ; Number of times prime powers occur in the columns of tables A133232 and A133233.
+seq $2,133936 ; Number of times prime powers occur in the columns of tables A133232 and A133233.
 add $1,$2
 add $1,1

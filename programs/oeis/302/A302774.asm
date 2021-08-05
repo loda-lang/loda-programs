@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,303749 ; First differences of A302774; Number of terms in A303762 that have prime(n) as their largest prime factor (A006530).
+  seq $2,303749 ; First differences of A302774; Number of terms in A303762 that have prime(n) as their largest prime factor (A006530).
   add $1,$2
 lpe
 add $1,1

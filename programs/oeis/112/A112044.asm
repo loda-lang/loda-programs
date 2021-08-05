@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,182986 ; Zero together with the prime numbers (A000040).
+  seq $2,182986 ; Zero together with the prime numbers (A000040).
   add $3,$2
   mov $1,$3
   mul $3,2

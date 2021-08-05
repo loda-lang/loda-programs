@@ -8,7 +8,7 @@ mov $3,2
 lpb $2
   mul $0,$3
   mul $0,$2
-  cal $0,173919 ; Numbers that are prime or one less than a prime.
+  seq $0,173919 ; Numbers that are prime or one less than a prime.
   div $2,9
 lpe
 add $1,$0

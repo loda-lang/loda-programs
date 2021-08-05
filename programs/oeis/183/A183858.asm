@@ -3,5 +3,5 @@
 
 add $0,1
 mov $1,$0
-cal $0,202304 ; a(n) = floor(sqrt(3*n)).
+seq $0,202304 ; a(n) = floor(sqrt(3*n)).
 add $1,$0

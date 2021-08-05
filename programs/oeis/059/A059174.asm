@@ -9,7 +9,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,8859 ; a(n) = Sum_{k=0..6} C(n,k).
+  seq $0,8859 ; a(n) = Sum_{k=0..6} C(n,k).
   add $2,$0
   sub $2,2
   add $2,$0

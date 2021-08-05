@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,330492 ; a(n) = sum of second differences of the sorted divisors of n.
+  seq $2,330492 ; a(n) = sum of second differences of the sorted divisors of n.
   sub $0,$2
   mov $3,$2
   min $3,1

@@ -10,7 +10,7 @@ lpb $3
   mov $2,$3
   mov $5,$0
   max $5,0
-  cal $5,308663 ; Partial sums of A097805.
+  seq $5,308663 ; Partial sums of A097805.
   mul $2,$5
   add $1,$2
 lpe

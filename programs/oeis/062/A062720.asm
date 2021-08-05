@@ -10,7 +10,7 @@ lpb $5
   mod $6,2
   lpb $6
     mul $0,$6
-    cal $0,173919 ; Numbers that are prime or one less than a prime.
+    seq $0,173919 ; Numbers that are prime or one less than a prime.
     add $2,$4
     sub $5,$6
     div $6,6

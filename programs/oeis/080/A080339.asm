@@ -1,6 +1,6 @@
 ; A080339: Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 ; 1,1,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
-cal $0,38548 ; Number of divisors of n that are at most sqrt(n).
+seq $0,38548 ; Number of divisors of n that are at most sqrt(n).
 cmp $0,1
 mov $1,$0

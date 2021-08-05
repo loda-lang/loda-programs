@@ -10,7 +10,7 @@ lpb $4
   sub $0,$4
   lpb $0
     mov $2,$0
-    cal $2,255309 ; Number of times log_2 can be applied to n until the result is either 1 or not a power of 2. Here log_2 means the base-2 logarithm.
+    seq $2,255309 ; Number of times log_2 can be applied to n until the result is either 1 or not a power of 2. Here log_2 means the base-2 logarithm.
     sub $0,$2
     add $3,$2
   lpe

@@ -3,4 +3,4 @@
 
 mul $0,2
 mov $1,$0
-cal $1,37453 ; Positive numbers whose base-5 representation contains no 3 or 4.
+seq $1,37453 ; Positive numbers whose base-5 representation contains no 3 or 4.

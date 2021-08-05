@@ -15,7 +15,7 @@ lpb $3
     cmp $6,0
     add $2,$6
     mod $0,$2
-    cal $2,188068 ; [nr]-[kr]-[nr-kr], where r=sqrt(3), k=1, [ ]=floor.
+    seq $2,188068 ; [nr]-[kr]-[nr-kr], where r=sqrt(3), k=1, [ ]=floor.
     sub $0,$2
     mov $2,1
   lpe

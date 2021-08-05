@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,189718 ; Fixed point of the morphism 0->011, 1->100.
+  seq $2,189718 ; Fixed point of the morphism 0->011, 1->100.
   add $1,$2
 lpe

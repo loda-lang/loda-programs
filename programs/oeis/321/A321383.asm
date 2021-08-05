@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   trn $0,2
   trn $2,1
-  cal $2,156619 ; Numbers congruent to {7, 18} mod 25.
+  seq $2,156619 ; Numbers congruent to {7, 18} mod 25.
   add $1,$2
 lpe
 mul $1,2

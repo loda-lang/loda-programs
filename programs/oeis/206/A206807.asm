@@ -16,7 +16,7 @@ lpb $2
     sub $6,1
     add $0,$6
     trn $0,1
-    cal $0,98295 ; ((3/2)^n)/2^a(n) lies in the half-open interval [1,2).
+    seq $0,98295 ; ((3/2)^n)/2^a(n) lies in the half-open interval [1,2).
     mov $3,$0
     mov $5,$6
     mul $5,$0

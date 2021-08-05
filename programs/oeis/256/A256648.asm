@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,161935 ; 28-gonal numbers: a(n) = n*(13*n - 12).
+  seq $2,161935 ; 28-gonal numbers: a(n) = n*(13*n - 12).
   add $1,$2
 lpe

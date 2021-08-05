@@ -2,6 +2,6 @@
 ; 2,2,26,362,5042,70226,978122,13623482,189750626,2642885282,36810643322,512706121226,7141075053842,99462344632562,1385331749802026,19295182152595802,268747218386539202,3743165875258953026
 
 trn $0,1
-cal $0,157089 ; Consider all Consecutive Integer Pythagorean septuples (X, X+1, X+2, X+3, Z-2, Z-1, Z) ordered by increasing Z; sequence gives Z values.
+seq $0,157089 ; Consider all Consecutive Integer Pythagorean septuples (X, X+1, X+2, X+3, Z-2, Z-1, Z) ordered by increasing Z; sequence gives Z values.
 mov $1,$0
 sub $1,1

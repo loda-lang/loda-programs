@@ -3,7 +3,7 @@
 
 sub $3,$0
 sub $3,$0
-cal $0,71050 ; Number of 0's in n-th row of triangle in A071035.
+seq $0,71050 ; Number of 0's in n-th row of triangle in A071035.
 mov $1,5
 add $3,$0
 add $2,$3

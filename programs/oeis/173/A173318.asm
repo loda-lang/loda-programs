@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+  seq $2,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
   add $1,$2
 lpe

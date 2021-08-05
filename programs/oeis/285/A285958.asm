@@ -3,7 +3,7 @@
 
 mul $0,4
 add $0,1
-cal $0,50292 ; a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n >= 0).
+seq $0,50292 ; a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n >= 0).
 div $0,2
 mov $1,$0
 add $1,1

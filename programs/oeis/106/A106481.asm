@@ -14,7 +14,7 @@ lpb $8
     trn $0,1
     mov $2,$0
     trn $0,1
-    cal $2,92249 ; Positions of the integers in the standard diagonal enumeration of the rationals (with the integers in the first column and diagonals moving up to the right).
+    seq $2,92249 ; Positions of the integers in the standard diagonal enumeration of the rationals (with the integers in the first column and diagonals moving up to the right).
     mov $3,1
     add $3,$2
     mov $4,$2
