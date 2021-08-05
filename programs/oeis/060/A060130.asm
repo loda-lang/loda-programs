@@ -5,6 +5,6 @@ lpb $0
   mov $2,$0
   mov $0,1
   add $1,1
-  cal $2,257687 ; Discard the most significant digit from factorial base representation of n, then convert back to decimal: a(n) = n - A257686(n).
+  seq $2,257687 ; Discard the most significant digit from factorial base representation of n, then convert back to decimal: a(n) = n - A257686(n).
   mul $0,$2
 lpe

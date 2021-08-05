@@ -8,7 +8,7 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
+  seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
   add $0,1
   pow $0,2
   add $1,$0

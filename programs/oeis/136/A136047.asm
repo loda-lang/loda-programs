@@ -5,6 +5,6 @@ add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,65599 ; If n odd, a(n) = n^2 else a(n) = n.
+  seq $2,65599 ; If n odd, a(n) = n^2 else a(n) = n.
   add $1,$2
 lpe

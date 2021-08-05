@@ -5,7 +5,7 @@ mul $0,2
 lpb $0
   mov $2,$0
   sub $0,6
-  cal $2,25781 ; Expansion of 1/((1-x)(1-x^5)(1-x^12)).
+  seq $2,25781 ; Expansion of 1/((1-x)(1-x^5)(1-x^12)).
   add $1,$2
 lpe
 add $1,1

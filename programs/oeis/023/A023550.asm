@@ -3,6 +3,6 @@
 
 add $0,1
 sub $1,$0
-cal $0,23548 ; Convolution of natural numbers >= 2 and Fibonacci numbers.
+seq $0,23548 ; Convolution of natural numbers >= 2 and Fibonacci numbers.
 add $1,$0
 sub $1,2

@@ -4,6 +4,6 @@
 mov $1,$0
 mul $1,3
 mov $2,$0
-cal $2,5206 ; Hofstadter G-sequence: a(n) = n - a(a(n-1)).
+seq $2,5206 ; Hofstadter G-sequence: a(n) = n - a(a(n-1)).
 sub $1,$2
 add $1,2

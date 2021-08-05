@@ -19,7 +19,7 @@ lpb $2
     mov $3,$0
     mul $3,7
     add $0,$3
-    cal $0,25770 ; Expansion of 1/((1-x)(1-x^3)(1-x^10)).
+    seq $0,25770 ; Expansion of 1/((1-x)(1-x^3)(1-x^10)).
     add $6,$0
   lpe
   add $1,$6

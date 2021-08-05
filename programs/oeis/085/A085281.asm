@@ -5,6 +5,6 @@ lpb $0
   mov $1,$0
   mov $0,0
   trn $1,1
-  cal $1,5056 ; a(n) = 3^n + 2^n - 1.
+  seq $1,5056 ; a(n) = 3^n + 2^n - 1.
 lpe
 add $1,1

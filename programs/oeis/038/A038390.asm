@@ -6,6 +6,6 @@ mul $0,2
 lpb $0
   mov $2,$0
   trn $0,6
-  cal $2,7997 ; a(n) = ceiling((n-3)(n-4)/6).
+  seq $2,7997 ; a(n) = ceiling((n-3)(n-4)/6).
   add $1,$2
 lpe

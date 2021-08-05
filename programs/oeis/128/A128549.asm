@@ -3,5 +3,5 @@
 
 add $0,2
 bin $0,2
-cal $0,80883 ; Distance of n to next square.
+seq $0,80883 ; Distance of n to next square.
 mov $1,$0

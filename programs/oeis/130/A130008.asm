@@ -8,7 +8,7 @@ lpb $0
   add $1,7
 lpe
 trn $0,3
-cal $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 mul $1,$0
 div $1,7
 add $1,1

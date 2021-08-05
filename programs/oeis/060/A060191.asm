@@ -5,7 +5,7 @@ mov $1,$0
 mul $0,2
 mod $1,2
 add $1,$0
-cal $1,1749 ; Primes multiplied by 4.
+seq $1,1749 ; Primes multiplied by 4.
 sub $1,8
 div $1,4
 add $1,2

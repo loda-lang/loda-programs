@@ -6,7 +6,7 @@ lpb $0
   sub $2,2
   mov $0,$2
   max $2,0
-  cal $2,7904 ; Crystal ball sequence for diamond.
+  seq $2,7904 ; Crystal ball sequence for diamond.
   add $1,$2
 lpe
 mul $1,2

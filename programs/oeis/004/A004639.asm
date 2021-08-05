@@ -3,5 +3,5 @@
 
 add $0,1
 pow $0,3
-cal $0,7095 ; Numbers in base 9.
+seq $0,7095 ; Numbers in base 9.
 mov $1,$0

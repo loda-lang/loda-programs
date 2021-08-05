@@ -8,7 +8,7 @@ lpb $0
   add $1,$0
   mov $2,$0
   max $2,0
-  cal $2,87278 ; Distance to nearest square is not greater than 1.
+  seq $2,87278 ; Distance to nearest square is not greater than 1.
   add $1,$2
 lpe
 add $1,$3

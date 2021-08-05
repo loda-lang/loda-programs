@@ -4,10 +4,10 @@
 mov $2,$0
 mul $2,2
 mov $3,$0
-cal $0,231304 ; Recurrence a(n) = a(n-2) + n^M for M=5, starting with a(0)=0, a(1)=1.
+seq $0,231304 ; Recurrence a(n) = a(n-2) + n^M for M=5, starting with a(0)=0, a(1)=1.
 trn $2,$0
 mov $0,3
-cal $3,105470 ; a(n)=1 if there is number of the form 6k+3 with prime(n) <= 6k+3 <= prime(n+1), otherwise 0.
+seq $3,105470 ; a(n)=1 if there is number of the form 6k+3 with prime(n) <= 6k+3 <= prime(n+1), otherwise 0.
 sub $3,$2
 mov $4,9
 sub $4,$2

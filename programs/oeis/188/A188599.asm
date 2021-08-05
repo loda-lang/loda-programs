@@ -5,6 +5,6 @@ lpb $0
   trn $0,1
   mov $1,$0
   mov $0,0
-  cal $1,66770 ; a(n) = 5^n*sin(2n*arctan(1/2)) or numerator of tan(2n*arctan(1/2)).
+  seq $1,66770 ; a(n) = 5^n*sin(2n*arctan(1/2)) or numerator of tan(2n*arctan(1/2)).
 lpe
 div $1,4

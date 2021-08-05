@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,297086 ; a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
+  seq $2,297086 ; a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
   add $1,$2
 lpe
 add $1,1

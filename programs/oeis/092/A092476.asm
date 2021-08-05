@@ -3,7 +3,7 @@
 
 mov $1,$0
 sub $0,1
-cal $1,47531 ; Numbers that are congruent to {2, 3, 7} mod 8.
+seq $1,47531 ; Numbers that are congruent to {2, 3, 7} mod 8.
 add $2,$1
 add $0,$2
 div $2,4

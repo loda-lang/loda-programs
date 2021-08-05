@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,295 ; Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1 of A173018).
+  seq $2,295 ; Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1 of A173018).
   add $1,$2
 lpe

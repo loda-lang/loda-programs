@@ -7,13 +7,13 @@ lpb $4
   mov $0,$6
   sub $4,1
   sub $0,$4
-  cal $0,299766 ; Greatest odd noncomposite divisor of n.
+  seq $0,299766 ; Greatest odd noncomposite divisor of n.
   bin $0,2
   sub $0,1
   mov $3,$0
   gcd $3,2
   mov $5,$3
-  cal $5,97401 ; Largest achievable determinant of a 3 X 3 matrix whose elements are 9 distinct nonnegative integers chosen from the range 0..n.
+  seq $5,97401 ; Largest achievable determinant of a 3 X 3 matrix whose elements are 9 distinct nonnegative integers chosen from the range 0..n.
   mov $2,$5
   sub $2,528
   div $2,268

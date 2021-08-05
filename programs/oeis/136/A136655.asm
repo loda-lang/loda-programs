@@ -7,6 +7,6 @@ lpb $0
   dif $0,4
 lpe
 mov $1,$0
-cal $0,7956 ; Product of proper divisors of n.
+seq $0,7956 ; Product of proper divisors of n.
 add $1,1
 mul $1,$0

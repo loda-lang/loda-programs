@@ -3,7 +3,7 @@
 
 add $0,2
 mov $1,$0
-cal $0,246104 ; Least m > 0 for which (s(m), ..., s(n+m-1) = (s(0), ..., s(n)), the first n+1 terms of the infinite Fibonacci word A003849.
+seq $0,246104 ; Least m > 0 for which (s(m), ..., s(n+m-1) = (s(0), ..., s(n)), the first n+1 terms of the infinite Fibonacci word A003849.
 sub $0,$1
 mov $1,$0
 sub $1,1

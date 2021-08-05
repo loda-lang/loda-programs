@@ -16,7 +16,7 @@ lpb $2
     sub $7,1
     add $0,$7
     trn $0,1
-    cal $0,22840 ; Beatty sequence for sqrt(6).
+    seq $0,22840 ; Beatty sequence for sqrt(6).
     mov $5,$0
     div $0,2
     add $5,$0

@@ -4,7 +4,7 @@
 mov $2,$0
 add $0,2
 mul $0,$2
-cal $0,20338 ; Doublets: base-10 representation is the juxtaposition of two identical strings.
+seq $0,20338 ; Doublets: base-10 representation is the juxtaposition of two identical strings.
 mov $1,$0
 add $0,7
 add $0,$1

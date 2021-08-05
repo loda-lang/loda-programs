@@ -8,7 +8,7 @@ lpb $4
   mov $2,0
   sub $4,1
   sub $0,$4
-  cal $0,137824 ; Index at which A137823(n) occurs first in A137822 (gaps in numbers m such that 3 | sum( Catalan(k), k=1..2m)).
+  seq $0,137824 ; Index at which A137823(n) occurs first in A137822 (gaps in numbers m such that 3 | sum( Catalan(k), k=1..2m)).
   add $2,$0
   mov $3,2
   mov $5,$2

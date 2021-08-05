@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,3
-  cal $0,132194 ; a(n) = 1 if n-th prime is 0 or 2 mod 3, otherwise 0.
+  seq $0,132194 ; a(n) = 1 if n-th prime is 0 or 2 mod 3, otherwise 0.
   mov $3,$0
   add $3,1
   div $3,2

@@ -4,6 +4,6 @@
 sub $0,2
 mov $2,$0
 max $0,0
-cal $0,14692 ; a(n) = prime(n) - (n-1).
+seq $0,14692 ; a(n) = prime(n) - (n-1).
 add $0,$2
 mov $1,$0

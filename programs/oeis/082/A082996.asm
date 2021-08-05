@@ -7,8 +7,8 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,101637 ; a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
-  cal $0,120518 ; a(n) = min{j : A120507(j) = n}.
+  seq $0,101637 ; a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
+  seq $0,120518 ; a(n) = min{j : A120507(j) = n}.
   mov $3,$0
   sub $3,1
   add $1,$3

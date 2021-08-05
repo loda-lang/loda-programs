@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,4
-  cal $2,164394 ; Number of binary strings of length n with no substrings equal to 0001 or 0100.
+  seq $2,164394 ; Number of binary strings of length n with no substrings equal to 0001 or 0100.
   add $1,$2
 lpe
 div $1,2

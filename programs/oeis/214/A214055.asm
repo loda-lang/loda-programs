@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,3
-cal $0,90370 ; Least m > 3 such that gcd(n-1, m*n - 1) = m-1.
+seq $0,90370 ; Least m > 3 such that gcd(n-1, m*n - 1) = m-1.
 mov $1,$0
 sub $1,3

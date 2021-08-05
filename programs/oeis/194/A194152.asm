@@ -4,7 +4,7 @@
 mov $2,$0
 add $0,1
 mul $0,2
-cal $0,198082 ; Ceiling(n*Sqrt(5)).
+seq $0,198082 ; Ceiling(n*Sqrt(5)).
 mov $1,$0
 add $1,4
 mov $3,$2

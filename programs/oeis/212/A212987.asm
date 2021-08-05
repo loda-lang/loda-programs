@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,8612 ; Molien series of 2-dimensional representation of SL(2,3).
+  seq $2,8612 ; Molien series of 2-dimensional representation of SL(2,3).
   add $2,$0
   sub $0,2
   add $1,$2

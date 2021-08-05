@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,5430 ; Apéry numbers: n*C(2*n,n).
+  seq $2,5430 ; Apéry numbers: n*C(2*n,n).
   add $1,$2
 lpe
 div $1,2

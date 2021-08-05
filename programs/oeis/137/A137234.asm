@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,137229 ; Expansion of g.f. x/((1-x)*(1-3*x+2*x^2-x^3)).
+  seq $2,137229 ; Expansion of g.f. x/((1-x)*(1-3*x+2*x^2-x^3)).
   add $1,$2
 lpe
 add $1,1

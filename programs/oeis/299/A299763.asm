@@ -3,7 +3,7 @@
 
 mov $2,$0
 trn $0,1
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 lpb $0
   mul $0,$2
 lpe

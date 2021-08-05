@@ -8,6 +8,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,75682 ; First differences of A075681.
+  seq $0,75682 ; First differences of A075681.
   add $1,$0
 lpe

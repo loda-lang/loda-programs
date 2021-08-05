@@ -4,5 +4,5 @@
 mov $2,$0
 add $0,1
 mov $1,$0
-cal $2,92249 ; Positions of the integers in the standard diagonal enumeration of the rationals (with the integers in the first column and diagonals moving up to the right).
+seq $2,92249 ; Positions of the integers in the standard diagonal enumeration of the rationals (with the integers in the first column and diagonals moving up to the right).
 mul $1,$2

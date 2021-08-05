@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,213764 ; Antidiagonal sums of the convolution array A213762.
+  seq $2,213764 ; Antidiagonal sums of the convolution array A213762.
   add $1,$2
 lpe
 add $1,1

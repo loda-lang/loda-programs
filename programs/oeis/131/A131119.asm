@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,130472 ; A permutation of the integers: a(n) = (-1)^n * floor( (n+1)/2 ).
+  seq $2,130472 ; A permutation of the integers: a(n) = (-1)^n * floor( (n+1)/2 ).
   add $1,$2
   add $1,1
 lpe

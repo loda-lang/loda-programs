@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   add $0,2
-  cal $0,134816 ; Padovan's spiral numbers.
+  seq $0,134816 ; Padovan's spiral numbers.
   sub $0,1
   mov $2,$3
   mul $2,$0

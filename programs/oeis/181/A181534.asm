@@ -4,5 +4,5 @@
 mov $1,$0
 add $1,2
 bin $1,2
-cal $1,259361 ; n occurs 2n+2 times.
+seq $1,259361 ; n occurs 2n+2 times.
 add $1,1

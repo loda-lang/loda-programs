@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $3,$0
-cal $0,192968 ; Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
+seq $0,192968 ; Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 mul $1,2
 sub $1,1
 sub $3,$1

@@ -5,5 +5,5 @@ pow $0,2
 sub $0,2
 div $0,8
 trn $0,1
-cal $0,123919 ; Number of numbers congruent to 2 or 4 mod 6 and <= n.
+seq $0,123919 ; Number of numbers congruent to 2 or 4 mod 6 and <= n.
 mov $1,$0

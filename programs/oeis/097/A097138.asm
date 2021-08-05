@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   mul $2,2
   max $2,0
-  cal $2,90860 ; Number of ways of 4-coloring a map in which there is a central circle surrounded by an annulus divided into n-1 regions. There are n regions in all.
+  seq $2,90860 ; Number of ways of 4-coloring a map in which there is a central circle surrounded by an annulus divided into n-1 regions. There are n regions in all.
   add $1,$2
 lpe
 div $1,24

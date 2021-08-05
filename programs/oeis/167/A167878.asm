@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,81603 ; Number of 2's in ternary representation of n.
+  seq $2,81603 ; Number of 2's in ternary representation of n.
   sub $0,$2
 lpe
 mov $1,$0

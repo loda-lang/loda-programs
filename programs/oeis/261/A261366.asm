@@ -4,7 +4,7 @@
 sub $3,$0
 lpb $0
   mov $2,$0
-  cal $2,267582 ; Number of ON (black) cells in the n-th iteration of the "Rule 167" elementary cellular automaton starting with a single ON (black) cell.
+  seq $2,267582 ; Number of ON (black) cells in the n-th iteration of the "Rule 167" elementary cellular automaton starting with a single ON (black) cell.
   add $3,$2
   mov $0,$3
 lpe

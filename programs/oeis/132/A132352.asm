@@ -20,7 +20,7 @@ lpb $2
     mov $9,0
     lpb $0
       mov $3,$0
-      cal $3,326186 ; a(n) = n - A057521(n), where A057521 gives the powerful part of n.
+      seq $3,326186 ; a(n) = n - A057521(n), where A057521 gives the powerful part of n.
       mov $0,$3
       add $0,$3
       mov $4,$3

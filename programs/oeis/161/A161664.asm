@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,49820 ; a(n) = n - d(n), where d(n) is the number of divisors of n (A000005).
+  seq $2,49820 ; a(n) = n - d(n), where d(n) is the number of divisors of n (A000005).
   add $1,$2
 lpe

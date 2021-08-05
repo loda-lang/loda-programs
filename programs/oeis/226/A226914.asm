@@ -1,10 +1,10 @@
 ; A226914: Third column of A226518.
 ; 1,0,0,2,0,0,2,0,2,0,2,0,2,0,2,0,0,0,0,2,2,2,0,2,2,0,2,0,0,2,2,0,2,0,0,2,0,0,2,0,0,0,2,2,0,2,0,2,0,0,2,2,2,0,2,2,0,2,0,2,0,0,0,2,2,0,0,2,0,0,2,2,2,0,0,2,0,0,2,2,0,0,2,2,2,0,2,2,0,2,0,2,2,0,0,2,0,2,0,0
 
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 pow $0,2
 sub $0,1
 dif $0,2
-cal $0,14017 ; Inverse of 8th cyclotomic polynomial.
+seq $0,14017 ; Inverse of 8th cyclotomic polynomial.
 mov $1,$0
 add $1,1

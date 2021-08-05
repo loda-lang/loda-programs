@@ -4,6 +4,6 @@
 add $0,1
 lpb $0
   trn $0,1
-  cal $0,8472 ; Sum of the distinct primes dividing n.
+  seq $0,8472 ; Sum of the distinct primes dividing n.
 lpe
 mov $1,$0

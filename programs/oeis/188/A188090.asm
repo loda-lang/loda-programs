@@ -6,7 +6,7 @@ mov $0,5
 lpb $0
   sub $2,1
   add $0,$2
-  cal $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
+  seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
   add $2,$0
 lpe
 mov $1,$0

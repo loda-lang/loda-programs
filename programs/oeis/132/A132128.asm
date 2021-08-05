@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,134402 ; Triangle read by rows, for n > 0, n zeros followed by n.
+  seq $1,134402 ; Triangle read by rows, for n > 0, n zeros followed by n.
   add $1,$0
   mul $0,$1
   mod $0,$1

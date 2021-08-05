@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,1
-cal $0,66096 ; Duplicate values in A060143.
+seq $0,66096 ; Duplicate values in A060143.
 lpb $2
   sub $2,1
   add $0,$2

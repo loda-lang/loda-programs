@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,74816 ; a(n) = 3^A001221(n) = 3^omega(n).
+  seq $2,74816 ; a(n) = 3^A001221(n) = 3^omega(n).
   add $1,$2
 lpe
 add $1,1

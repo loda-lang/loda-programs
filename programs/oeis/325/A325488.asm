@@ -10,7 +10,7 @@ lpb $3
   sub $0,1
   div $0,2
   max $0,0
-  cal $0,8672 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)).
+  seq $0,8672 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)).
   mov $2,$3
   mul $2,$0
   add $1,$2

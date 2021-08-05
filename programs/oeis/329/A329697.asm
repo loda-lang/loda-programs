@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,108738 ; a(n) = n/(smallest odd prime divisor of n), if any.
+  seq $2,108738 ; a(n) = n/(smallest odd prime divisor of n), if any.
   sub $0,$2
   mov $3,$2
   min $3,1

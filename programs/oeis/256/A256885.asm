@@ -8,6 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,14684 ; In the sequence of positive integers subtract 1 from each prime number.
+  seq $0,14684 ; In the sequence of positive integers subtract 1 from each prime number.
   add $1,$0
 lpe

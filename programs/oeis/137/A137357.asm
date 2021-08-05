@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,137356 ; a(n) = Sum_{k <= n/2 } binomial(n-2k, 3k).
+  seq $2,137356 ; a(n) = Sum_{k <= n/2 } binomial(n-2k, 3k).
   add $1,$2
 lpe

@@ -5,10 +5,6 @@ add $0,1
 seq $0,3501 ; a(n) = 5*a(n-1) - a(n-2), with a(0) = 2, a(1) = 5.
 pow $0,2
 mov $1,$0
-lpb $0
-  sub $0,$1
-  sub $0,1
-lpe
 sub $1,25
 div $1,7
 add $1,3

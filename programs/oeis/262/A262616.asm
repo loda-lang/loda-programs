@@ -1,7 +1,7 @@
 ; A262616: Triangle read by rows: T(n,k) = 4^(n-k), n>=0, 0<=k<=n.
 ; 1,4,1,16,4,1,64,16,4,1,256,64,16,4,1,1024,256,64,16,4,1,4096,1024,256,64,16,4,1,16384,4096,1024,256,64,16,4,1,65536,16384,4096,1024,256,64,16,4,1,262144,65536,16384,4096,1024,256,64,16,4,1,1048576,262144,65536,16384,4096,1024,256,64,16,4,1,4194304,1048576,262144,65536,16384,4096,1024,256,64,16,4,1,16777216,4194304,1048576,262144,65536,16384,4096,1024,256,64,16,4,1,67108864,16777216,4194304,1048576,262144,65536,16384,4096,1024
 
-cal $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
+seq $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
 mov $1,2
 pow $1,$0
 div $1,4

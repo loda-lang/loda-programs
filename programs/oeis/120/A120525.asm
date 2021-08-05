@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,96346 ; Complement of A004128.
+  seq $0,96346 ; Complement of A004128.
   mov $3,$0
   mov $5,$4
   mul $5,$0

@@ -26,7 +26,7 @@ lpb $2
       sub $0,$7
       mul $0,2
       trn $0,2
-      cal $0,97163 ; Expansion of (1+x-x^2)/((1-x)*(1-4*x^2)).
+      seq $0,97163 ; Expansion of (1+x-x^2)/((1-x)*(1-4*x^2)).
       add $8,$0
     lpe
     add $5,$8

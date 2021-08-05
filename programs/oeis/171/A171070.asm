@@ -6,7 +6,7 @@ lpb $0
   sub $0,$2
   mov $1,$0
   max $1,0
-  cal $1,171071 ; A bisection of A178482.
+  seq $1,171071 ; A bisection of A178482.
   add $3,$1
   trn $0,$3
 lpe

@@ -6,7 +6,7 @@ mov $1,$0
 gcd $1,2
 mov $2,1
 sub $2,$0
-cal $0,166523 ; a(n) = 8*n - a(n-1), with n>1, a(1)=1.
+seq $0,166523 ; a(n) = 8*n - a(n-1), with n>1, a(1)=1.
 add $2,10
 div $2,2
 sub $2,1

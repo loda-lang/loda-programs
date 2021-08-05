@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,230405 ; a(n) = A000217(A230404(n+1)); the first differences of A219650.
+  seq $2,230405 ; a(n) = A000217(A230404(n+1)); the first differences of A219650.
   add $1,$2
 lpe

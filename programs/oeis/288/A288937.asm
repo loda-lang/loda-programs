@@ -21,7 +21,7 @@ lpb $5
       sub $0,3
       mov $2,$0
       max $2,0
-      cal $2,133263 ; Binomial transform of (1, 2, 0, 1, -1, 1, -1, 1, ...).
+      seq $2,133263 ; Binomial transform of (1, 2, 0, 1, -1, 1, -1, 1, ...).
       add $3,$2
       mov $4,$2
       min $4,1

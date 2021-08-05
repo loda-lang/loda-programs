@@ -1,7 +1,7 @@
 ; A099820: Even nonnegative integers in base 2 (bisection of A007088).
 ; 0,10,100,110,1000,1010,1100,1110,10000,10010,10100,10110,11000,11010,11100,11110,100000,100010,100100,100110,101000,101010,101100,101110,110000,110010,110100,110110,111000,111010,111100,111110,1000000
 
-cal $0,5836 ; Numbers n whose base 3 representation contains no 2.
-cal $0,7089 ; Numbers in base 3.
+seq $0,5836 ; Numbers n whose base 3 representation contains no 2.
+seq $0,7089 ; Numbers in base 3.
 mov $1,$0
 mul $1,10

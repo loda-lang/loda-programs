@@ -3,4 +3,4 @@
 
 mov $1,$0
 mul $1,2
-cal $1,147596 ; a(n) is the number whose binary representation is A138145(n).
+seq $1,147596 ; a(n) is the number whose binary representation is A138145(n).

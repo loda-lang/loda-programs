@@ -4,5 +4,5 @@
 mov $2,$0
 add $2,3
 mul $0,$2
-cal $0,76567 ; Greatest prime divisor of 4n+6 (sum of four successive integers).
+seq $0,76567 ; Greatest prime divisor of 4n+6 (sum of four successive integers).
 mov $1,$0

@@ -3,4 +3,4 @@
 
 add $0,1
 mov $1,$0
-cal $1,81200 ; 6th binomial transform of (0,1,0,1,0,1,...), A000035.
+seq $1,81200 ; 6th binomial transform of (0,1,0,1,0,1,...), A000035.

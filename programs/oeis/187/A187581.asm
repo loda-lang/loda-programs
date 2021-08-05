@@ -11,7 +11,7 @@ lpb $3
   lpb $0
     mov $2,$0
     mov $0,0
-    cal $2,284620 ; {00->2}-transform of the infinite Fibonacci word A003849.
+    seq $2,284620 ; {00->2}-transform of the infinite Fibonacci word A003849.
     mov $4,$2
     min $4,1
   lpe

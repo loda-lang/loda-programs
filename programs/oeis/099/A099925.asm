@@ -4,7 +4,7 @@
 mov $1,$0
 mov $2,$0
 gcd $0,2
-cal $1,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
+seq $1,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
 mod $2,2
 sub $2,8
 sub $2,$0

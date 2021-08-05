@@ -1,7 +1,7 @@
 ; A163371: a(n) = tau(phi(sigma(n)))
 ; 1,2,2,4,2,3,3,4,6,4,3,6,4,4,4,8,4,8,4,6,5,6,4,5,8,6,5,8,4,8,5,9,5,6,5,12,6,5,8,8,6,6,6,8,8,8,5,12,9,12,8,8,6,6,8,6,6,8,5,10,8,6,10,12,8,10,6,9,6,10,8,12,9,9,12,10,6,10,6,12,8,9,8,12,9,8,6,10,8,12,10,10,7,10,6,12,8,12,10,18
 
-cal $0,62401 ; a(n) = phi(sigma(n)).
-cal $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+seq $0,62401 ; a(n) = phi(sigma(n)).
+seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
 mov $1,$0
 add $1,1

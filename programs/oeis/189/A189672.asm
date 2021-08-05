@@ -3,6 +3,6 @@
 
 add $0,1
 mov $1,$0
-cal $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
+seq $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
 sub $1,$0
 div $1,2

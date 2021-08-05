@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   sub $0,8
   div $2,11
-  cal $2,14181 ; Numbers > 9 with all digits the same.
+  seq $2,14181 ; Numbers > 9 with all digits the same.
   add $1,$2
 lpe
 div $1,11

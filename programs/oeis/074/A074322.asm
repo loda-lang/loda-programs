@@ -3,7 +3,7 @@
 
 mov $1,6
 lpb $1
-  cal $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
   add $0,27
   sub $1,1
 lpe

@@ -2,6 +2,6 @@
 ; 0,3,8,14,20,27,35,41,50,58,66,74,84,91,101,111,119,127,140,146,158,168,176,186,198,207,217,227,239,247,261,267,280,292,300,312,326,332,344,356,368,377,391,399,411,425,435,443,459,467,482,492,502,514,528,538,552,562,572,582,602,609,619,635,645,657,671,679,695,705,719,727,746,754,766,780,790,804,820,826,842,856,864,876,894,905,917,927,943,951,971,981,993,1005,1015,1031,1047,1053,1070,1084
 
 mul $0,2
-cal $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
+seq $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
 mov $1,$0
 sub $1,1

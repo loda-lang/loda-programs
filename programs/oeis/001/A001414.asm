@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $0,$2
   add $1,$2
 lpe

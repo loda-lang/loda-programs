@@ -7,7 +7,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,53830 ; Sum of digits of (n written in base 9).
+  seq $0,53830 ; Sum of digits of (n written in base 9).
   pow $0,2
   add $1,$0
 lpe

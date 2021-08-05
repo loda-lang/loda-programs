@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  cal $2,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
+  seq $2,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
   mov $0,$2
   mov $3,$2
   min $3,1

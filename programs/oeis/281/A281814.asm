@@ -3,5 +3,5 @@
 
 mul $0,6
 add $0,4
-cal $0,89806 ; Expansion of Jacobi theta function (theta_3(q^(1/3))-theta_2(q^3))/2/q^(1/12).
+seq $0,89806 ; Expansion of Jacobi theta function (theta_3(q^(1/3))-theta_2(q^3))/2/q^(1/12).
 mov $1,$0

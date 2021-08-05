@@ -7,7 +7,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,76566 ; Greatest prime divisor of 3n+3 (sum of three successive integers).
+  seq $0,76566 ; Greatest prime divisor of 3n+3 (sum of three successive integers).
   add $0,1
   mod $0,4
   add $0,32360

@@ -9,7 +9,7 @@ lpb $4
   sub $4,1
   sub $0,$4
   mov $3,$0
-  cal $0,336040 ; Characteristic function of refactorable numbers (A033950).
+  seq $0,336040 ; Characteristic function of refactorable numbers (A033950).
   mul $3,$0
   add $0,$3
   add $1,$0

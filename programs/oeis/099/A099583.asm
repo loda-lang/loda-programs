@@ -13,7 +13,7 @@ lpb $5
     mov $2,$0
     sub $0,2
     max $2,0
-    cal $2,167993 ; Expansion of x^2/((3*x-1)*(3*x^2-1)).
+    seq $2,167993 ; Expansion of x^2/((3*x-1)*(3*x^2-1)).
     add $3,$2
   lpe
   mov $4,$5

@@ -3,7 +3,7 @@
 
 add $0,1
 mov $1,$0
-cal $0,57147 ; a(n) = n times sum of digits of n.
+seq $0,57147 ; a(n) = n times sum of digits of n.
 pow $1,2
 add $1,$0
 div $1,$0

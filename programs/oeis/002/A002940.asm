@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,23610 ; Convolution of Fibonacci numbers and {F(2), F(3), F(4), ...}.
+  seq $2,23610 ; Convolution of Fibonacci numbers and {F(2), F(3), F(4), ...}.
   add $1,$2
 lpe
 add $1,1

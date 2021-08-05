@@ -3,7 +3,7 @@
 
 mul $0,3
 trn $0,1
-cal $0,235382 ; a(n) = smallest number of unit squares required to enclose n units of area.
+seq $0,235382 ; a(n) = smallest number of unit squares required to enclose n units of area.
 div $0,2
 mov $1,$0
 sub $1,2

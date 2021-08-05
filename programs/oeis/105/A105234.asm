@@ -6,7 +6,7 @@ mov $1,$0
 mov $2,-4900
 mul $2,$0
 max $0,0
-cal $0,8966 ; 1 if n is squarefree, else 0.
+seq $0,8966 ; 1 if n is squarefree, else 0.
 mul $1,$0
 add $0,$2
 lpb $0

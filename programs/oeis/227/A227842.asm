@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,166375 ; a(n) = sum (floor (j^2/n)) taken over 1 <= j <= n-1.
+  seq $0,166375 ; a(n) = sum (floor (j^2/n)) taken over 1 <= j <= n-1.
   mov $2,$3
   mul $2,$0
   add $1,$2

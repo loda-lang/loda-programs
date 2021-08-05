@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,36406 ; a(n) = ceiling(n^2/8).
+  seq $2,36406 ; a(n) = ceiling(n^2/8).
   add $1,$2
 lpe

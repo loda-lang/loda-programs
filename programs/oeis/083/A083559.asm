@@ -4,7 +4,7 @@
 mov $4,$0
 mul $0,2
 add $0,1
-cal $0,24195 ; Integer part of (4th elementary symmetric function of S(n))/(3rd elementary symmetric of S(n)), where S(n) = {3,4, ..., n+5}.
+seq $0,24195 ; Integer part of (4th elementary symmetric function of S(n))/(3rd elementary symmetric of S(n)), where S(n) = {3,4, ..., n+5}.
 sub $0,1
 mov $1,$0
 add $1,$4

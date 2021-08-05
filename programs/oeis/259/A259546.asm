@@ -3,6 +3,6 @@
 
 mov $1,$0
 mov $2,$0
-cal $0,45925 ; a(n) = n*Fibonacci(n).
+seq $0,45925 ; a(n) = n*Fibonacci(n).
 mul $1,$2
 mul $1,$0

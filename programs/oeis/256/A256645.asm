@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,255184 ; 25-gonal numbers: a(n) = n*(23*n-21)/2.
+  seq $2,255184 ; 25-gonal numbers: a(n) = n*(23*n-21)/2.
   add $1,$2
 lpe

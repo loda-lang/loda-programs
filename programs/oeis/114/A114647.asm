@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   add $0,1
-  cal $0,97075 ; Expansion of (1-x-x^2)/(1-x-3*x^2-x^3).
+  seq $0,97075 ; Expansion of (1-x-x^2)/(1-x-3*x^2-x^3).
   mov $2,$3
   mul $2,$0
   add $1,$2

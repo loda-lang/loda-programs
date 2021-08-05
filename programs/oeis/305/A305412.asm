@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,33192 ; a(n) = binomial(Fibonacci(n) + 1, 2).
+  seq $2,33192 ; a(n) = binomial(Fibonacci(n) + 1, 2).
   add $1,$2
 lpe
 mul $1,2

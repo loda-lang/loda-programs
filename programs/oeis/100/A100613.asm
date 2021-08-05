@@ -4,7 +4,7 @@
 mov $2,$0
 mov $3,$0
 mul $0,2
-cal $2,185670 ; Number of pairs (x,y) with 1 <= x < y <= n with at least one common factor.
+seq $2,185670 ; Number of pairs (x,y) with 1 <= x < y <= n with at least one common factor.
 add $1,$2
 mul $1,8
 mul $3,2

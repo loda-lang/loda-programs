@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,30179 ; Quarter-squares squared: A002620^2.
+  seq $2,30179 ; Quarter-squares squared: A002620^2.
   add $1,$2
 lpe

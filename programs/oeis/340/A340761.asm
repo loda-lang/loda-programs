@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   trn $0,6
-  cal $2,8217 ; a(n) = floor(n/4)*floor((n+1)/4).
+  seq $2,8217 ; a(n) = floor(n/4)*floor((n+1)/4).
   add $1,$2
 lpe

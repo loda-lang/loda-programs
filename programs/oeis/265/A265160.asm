@@ -3,6 +3,6 @@
 
 mov $1,2
 pow $1,$0
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 add $0,$1
 add $1,$0

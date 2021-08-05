@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,1
-cal $1,267314 ; Expansion of 2*x*(1 + 2*x - x^2)/((1 - x)*(1 + x^2)^2).
+seq $1,267314 ; Expansion of 2*x*(1 + 2*x - x^2)/((1 - x)*(1 + x^2)^2).
 div $1,2

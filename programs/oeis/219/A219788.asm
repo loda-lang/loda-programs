@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   add $0,1
-  cal $0,52949 ; Expansion of (2-4*x+x^3)/((1-x)*(1-2*x-x^2+x^3)).
+  seq $0,52949 ; Expansion of (2-4*x+x^3)/((1-x)*(1-2*x-x^2+x^3)).
   sub $0,2
   mov $2,$3
   mov $4,$0

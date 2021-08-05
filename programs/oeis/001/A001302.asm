@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,1300 ; Number of ways of making change for n cents using coins of 1, 5, 10, 25, 50 cents.
+  seq $2,1300 ; Number of ways of making change for n cents using coins of 1, 5, 10, 25, 50 cents.
   add $1,$2
 lpe
 add $1,1

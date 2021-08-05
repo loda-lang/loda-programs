@@ -3,5 +3,5 @@
 
 add $0,1
 pow $0,2
-cal $0,3132 ; Sum of squares of digits of n.
+seq $0,3132 ; Sum of squares of digits of n.
 mov $1,$0

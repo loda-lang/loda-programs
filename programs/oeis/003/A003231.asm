@@ -3,6 +3,6 @@
 
 add $0,1
 mov $1,$0
-cal $0,66096 ; Duplicate values in A060143.
+seq $0,66096 ; Duplicate values in A060143.
 mul $1,2
 add $1,$0

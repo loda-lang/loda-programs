@@ -12,7 +12,7 @@ lpb $4
   lpb $0
     mov $5,$0
     mov $0,2
-    cal $5,206915 ; The index (in A006995) of the greatest binary palindrome <= n; also the 'lower inverse' of A006995.
+    seq $5,206915 ; The index (in A006995) of the greatest binary palindrome <= n; also the 'lower inverse' of A006995.
     add $2,$5
     mul $2,2
   lpe

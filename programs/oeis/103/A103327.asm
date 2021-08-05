@@ -6,4 +6,4 @@ sub $0,4
 add $1,11
 add $1,$0
 sub $1,6
-cal $1,34871 ; Odd-numbered rows of Pascal's triangle.
+seq $1,34871 ; Odd-numbered rows of Pascal's triangle.

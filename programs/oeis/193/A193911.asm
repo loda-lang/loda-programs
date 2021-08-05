@@ -17,7 +17,7 @@ lpb $2
     sub $4,1
     sub $0,$4
     trn $0,1
-    cal $0,97110 ; Expansion of (1 + 2x - 2x^3) / (1 - 3x^2 + 2x^4).
+    seq $0,97110 ; Expansion of (1 + 2x - 2x^3) / (1 - 3x^2 + 2x^4).
     add $5,$0
   lpe
   add $1,$5

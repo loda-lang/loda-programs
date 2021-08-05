@@ -5,7 +5,7 @@ mov $1,2
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,14236 ; Expansion of g.f.: 2*x*(1-x)/((1-2*x)*(1-2*x^2)).
+  seq $2,14236 ; Expansion of g.f.: 2*x*(1-x)/((1-2*x)*(1-2*x^2)).
   add $1,$2
 lpe
 lpb $0

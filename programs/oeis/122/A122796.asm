@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,45930 ; The generalized Connell sequence C_{3,5}.
+  seq $2,45930 ; The generalized Connell sequence C_{3,5}.
   add $1,$2
 lpe
 add $1,1

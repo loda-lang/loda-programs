@@ -13,7 +13,7 @@ lpb $5
     sub $0,2
     mov $2,$0
     max $2,0
-    cal $2,267654 ; Irregular triangle of palindromic subsequences. Every row has 2*n+1 terms. From the second row, there are only two alternated numbers: 2*n+4 and 2*n+2.
+    seq $2,267654 ; Irregular triangle of palindromic subsequences. Every row has 2*n+1 terms. From the second row, there are only two alternated numbers: 2*n+4 and 2*n+2.
     add $3,$2
   lpe
   mov $4,$5

@@ -5,6 +5,6 @@ add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,541 ; Sum of 7th powers: 1^7 + 2^7 + ... + n^7.
+  seq $2,541 ; Sum of 7th powers: 1^7 + 2^7 + ... + n^7.
   add $1,$2
 lpe

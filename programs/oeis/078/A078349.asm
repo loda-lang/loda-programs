@@ -9,7 +9,7 @@ lpb $2
     mov $2,$0
     sub $0,1
     div $0,2
-    cal $2,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
+    seq $2,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
     add $1,$2
   lpe
 lpe

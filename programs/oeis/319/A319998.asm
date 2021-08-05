@@ -5,6 +5,6 @@ lpb $0
   div $0,2
   mov $1,$0
   mul $0,2
-  cal $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 lpe
 mul $1,2

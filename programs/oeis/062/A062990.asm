@@ -5,6 +5,6 @@ add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,62989 ; a(n) = C(n+6, 6) - n - 1.
+  seq $2,62989 ; a(n) = C(n+6, 6) - n - 1.
   add $1,$2
 lpe

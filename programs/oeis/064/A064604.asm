@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,1159 ; sigma_4(n): sum of 4th powers of divisors of n.
+  seq $2,1159 ; sigma_4(n): sum of 4th powers of divisors of n.
   add $1,$2
 lpe
 add $1,1

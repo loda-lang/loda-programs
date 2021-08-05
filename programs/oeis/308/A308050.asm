@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,46666 ; a(n) = n - (smallest prime dividing n).
+  seq $2,46666 ; a(n) = n - (smallest prime dividing n).
   mov $3,$2
   min $3,1
   sub $0,$3

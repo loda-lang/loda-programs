@@ -5,6 +5,6 @@ lpb $0
   add $1,$0
   mov $2,$0
   sub $0,1
-  cal $2,244049 ; Sum of all proper divisors of all positive integers <= n.
+  seq $2,244049 ; Sum of all proper divisors of all positive integers <= n.
   add $1,$2
 lpe

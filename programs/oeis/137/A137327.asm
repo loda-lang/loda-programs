@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,155836 ; 2^(2^n) mod n.
+  seq $2,155836 ; 2^(2^n) mod n.
   add $3,$2
   mov $4,$0
   min $4,1

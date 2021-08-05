@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,56125 ; a(n) = (5*n + 4)*binomial(n+7,7)/4.
+  seq $2,56125 ; a(n) = (5*n + 4)*binomial(n+7,7)/4.
   add $1,$2
   mov $3,$2
   min $3,1

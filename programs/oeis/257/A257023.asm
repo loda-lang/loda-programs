@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,55087 ; Integers 0..n then 0..n then 0..n+1 then 0..n+1 etc.
+  seq $2,55087 ; Integers 0..n then 0..n then 0..n+1 then 0..n+1 etc.
   mov $0,$2
   mov $3,$2
   min $3,1

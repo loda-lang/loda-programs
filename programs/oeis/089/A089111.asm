@@ -3,6 +3,6 @@
 
 mov $2,1
 add $2,$0
-cal $0,139798 ; Coefficient of x^5 in (1-x-x^2)^(-n).
+seq $0,139798 ; Coefficient of x^5 in (1-x-x^2)^(-n).
 div $0,$2
 mov $1,$0

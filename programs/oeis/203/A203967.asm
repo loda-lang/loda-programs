@@ -7,8 +7,8 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,1
-  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $1,$0
 lpe

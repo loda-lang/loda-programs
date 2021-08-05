@@ -4,6 +4,6 @@
 mul $0,4
 add $0,1
 div $0,3
-cal $0,22087 ; Fibonacci sequence beginning 0, 4.
+seq $0,22087 ; Fibonacci sequence beginning 0, 4.
 mov $1,$0
 div $1,4

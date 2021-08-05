@@ -5,6 +5,6 @@ lpb $0
   add $1,1
   mov $2,$0
   sub $0,1
-  cal $2,10873 ; a(n) = n mod 4.
+  seq $2,10873 ; a(n) = n mod 4.
   add $1,$2
 lpe

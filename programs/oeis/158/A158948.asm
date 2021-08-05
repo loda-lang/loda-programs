@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,4202 ; Skip 1, take 1, skip 2, take 2, skip 3, take 3, etc.
+  seq $0,4202 ; Skip 1, take 1, skip 2, take 2, skip 3, take 3, etc.
   div $0,2
   mov $2,$3
   mul $2,$0

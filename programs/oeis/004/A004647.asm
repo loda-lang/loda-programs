@@ -3,4 +3,4 @@
 
 mov $1,2
 pow $1,$0
-cal $1,7094 ; Numbers in base 8.
+seq $1,7094 ; Numbers in base 8.

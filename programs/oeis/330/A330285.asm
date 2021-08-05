@@ -8,6 +8,6 @@ lpb $3
   sub $3,1
   sub $0,$3
   sub $0,1
-  cal $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
+  seq $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
   add $1,$0
 lpe

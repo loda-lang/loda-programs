@@ -15,5 +15,5 @@ mul $2,5
 pow $2,2
 div $2,12
 add $1,$2
-cal $1,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+seq $1,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
 sub $1,3

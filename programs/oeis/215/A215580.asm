@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,1
-cal $0,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
+seq $0,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
 mod $2,2
 sub $0,$2
 mov $1,$0

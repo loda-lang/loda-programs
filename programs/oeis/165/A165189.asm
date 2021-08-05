@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   div $0,2
-  cal $0,14125 ; Bisection of A001400.
+  seq $0,14125 ; Bisection of A001400.
   add $1,$0
 lpe

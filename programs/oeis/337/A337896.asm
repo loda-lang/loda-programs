@@ -4,6 +4,6 @@
 add $0,1
 pow $0,2
 sub $0,1
-cal $0,117665 ; n times the n-th n-gonal number.
+seq $0,117665 ; n times the n-th n-gonal number.
 mov $1,$0
 div $1,24

@@ -3,7 +3,7 @@
 
 mov $2,126
 lpb $2
-  cal $0,72668 ; Numbers one less than composite numbers.
+  seq $0,72668 ; Numbers one less than composite numbers.
   div $2,10
 lpe
 mov $1,$0

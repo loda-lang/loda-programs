@@ -3,7 +3,7 @@
 
 mul $0,2
 mov $2,$0
-cal $0,188434 ; Positions of 0 in A188433; complement of A188435.
+seq $0,188434 ; Positions of 0 in A188433; complement of A188435.
 mul $0,2
 add $0,2
 mov $1,$0
