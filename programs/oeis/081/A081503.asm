@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,81502 ; Let n = 10x + y where 0 <= y <= 9, x >= 0. Then a(n) = 3x+y.
+  seq $2,81502 ; Let n = 10x + y where 0 <= y <= 9, x >= 0. Then a(n) = 3x+y.
   mov $0,$2
   mov $3,$2
   min $3,1

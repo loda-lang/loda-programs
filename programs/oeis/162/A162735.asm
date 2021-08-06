@@ -1,7 +1,7 @@
 ; A162735: An alternating sum of all numbers from prime(n) to prime(n+1).
 ; 1,4,6,9,12,15,18,21,26,30,34,39,42,45,50,56,60,64,69,72,76,81,86,93,99,102,105,108,111,120,129,134,138,144,150,154,160,165,170,176,180,186,192,195,198,205,217,225,228,231,236,240,246,254,260,266,270,274,279
 
-cal $0,1043 ; Numbers that are the sum of 2 successive primes.
+seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 lpb $0
   add $0,1
   dif $0,2

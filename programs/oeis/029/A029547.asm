@@ -4,15 +4,13 @@
 add $0,1
 mul $0,2
 sub $0,1
-mov $1,2
+mov $1,4
 mov $2,3
 lpb $0
   sub $0,1
-  add $2,$1
-  add $1,$2
   add $1,$2
   add $2,$1
+  add $2,$1
+  add $1,$2
 lpe
-sub $1,12
-div $1,12
-add $1,1
+div $1,24

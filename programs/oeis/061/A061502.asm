@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,35116 ; a(n) = tau(n)^2, where tau(n) = A000005(n).
+  seq $2,35116 ; a(n) = tau(n)^2, where tau(n) = A000005(n).
   add $1,$2
 lpe
 add $1,1

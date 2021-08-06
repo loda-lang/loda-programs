@@ -7,7 +7,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,337281 ; a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
+  seq $0,337281 ; a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
   mov $4,$0
   mul $4,$0
   add $1,$4

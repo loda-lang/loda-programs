@@ -6,5 +6,5 @@ sub $0,1
 mul $2,2
 sub $0,$2
 bin $0,2
-cal $0,53186 ; Square excess of n: difference between n and largest square <= n.
+seq $0,53186 ; Square excess of n: difference between n and largest square <= n.
 mov $1,$0

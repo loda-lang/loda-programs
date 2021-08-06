@@ -1,7 +1,7 @@
 ; A193454: Sum of odd divisors of phi(n).
 ; 1,1,1,1,1,1,4,1,4,1,6,1,4,4,1,1,1,4,13,1,4,6,12,1,6,4,13,4,8,1,24,1,6,1,4,4,13,13,4,1,6,4,32,6,4,12,24,1,32,6,1,4,14,13,6,4,13,8,30,1,24,24,13,1,4,6,48,1,12,4,48,4,13,13,6,13,24,4,56,1,40,6,42,4,1,32,8,6,12,4,13,12,24,24,13,1,4,32,24,6
 
-cal $0,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
+seq $0,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
 sub $0,1
-cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $1,$0

@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   sub $2,$1
   max $2,0
-  cal $2,188259 ; Positions of 1 in A188257; complement of A188258.
+  seq $2,188259 ; Positions of 1 in A188257; complement of A188258.
   sub $0,$2
   trn $0,2
   add $1,$2

@@ -5,7 +5,7 @@ mul $0,2
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,72339 ; Any number n can be written (in two ways, one with m even and one with m odd) in the form n = 2^k_1 - 2^k_2 + 2^k_3 - ... + 2^k_m where the signs alternate and k_1 > k_2 > k_3 > ... >k_m >= 0; sequence gives minimal value of m.
+  seq $2,72339 ; Any number n can be written (in two ways, one with m even and one with m odd) in the form n = 2^k_1 - 2^k_2 + 2^k_3 - ... + 2^k_m where the signs alternate and k_1 > k_2 > k_3 > ... >k_m >= 0; sequence gives minimal value of m.
   add $3,$2
   mov $1,$3
 lpe

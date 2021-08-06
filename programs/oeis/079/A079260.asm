@@ -6,4 +6,4 @@ lpb $0
   dif $0,4
   mov $1,$2
 lpe
-cal $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

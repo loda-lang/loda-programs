@@ -24,7 +24,7 @@ lpb $2
       add $0,$7
       sub $0,1
       trn $0,1
-      cal $0,223764 ; Number of n X 2 0..1 arrays with rows, columns and antidiagonals unimodal and diagonals nondecreasing.
+      seq $0,223764 ; Number of n X 2 0..1 arrays with rows, columns and antidiagonals unimodal and diagonals nondecreasing.
       mul $0,2
       add $0,8
       mov $3,$0

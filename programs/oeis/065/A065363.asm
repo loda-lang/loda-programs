@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,102283 ; Period 3: repeat [0, 1, -1].
+  seq $2,102283 ; Period 3: repeat [0, 1, -1].
   sub $0,$2
   div $0,3
   add $1,$2

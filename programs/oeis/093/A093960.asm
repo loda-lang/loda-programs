@@ -3,6 +3,6 @@
 
 mul $0,2
 trn $0,1
-cal $0,324015 ; Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
+seq $0,324015 ; Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
 mov $1,$0
 add $1,1

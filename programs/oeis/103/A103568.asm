@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   sub $0,$3
   add $0,3
-  cal $0,40 ; The prime numbers.
+  seq $0,40 ; The prime numbers.
   mod $0,7
   add $1,$0
 lpe

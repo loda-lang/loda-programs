@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,3
-cal $0,1077 ; Numerators of continued fraction convergents to sqrt(5).
+seq $0,1077 ; Numerators of continued fraction convergents to sqrt(5).
 mov $1,$0
 div $1,2
 mul $1,4

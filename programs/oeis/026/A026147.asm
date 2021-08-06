@@ -3,6 +3,6 @@
 
 mul $0,2
 mov $1,$0
-cal $0,95190 ; Doubled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0 and 1 with 1,1.
+seq $0,95190 ; Doubled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0 and 1 with 1,1.
 add $0,1
 add $1,$0

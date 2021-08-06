@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
+  seq $2,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
   add $1,$2
 lpe

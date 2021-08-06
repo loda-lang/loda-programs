@@ -3,5 +3,5 @@
 
 mov $1,2
 gcd $1,$0
-cal $0,78057 ; Expansion of (1+x)/(1-2*x-x^2).
+seq $0,78057 ; Expansion of (1+x)/(1-2*x-x^2).
 mul $1,$0

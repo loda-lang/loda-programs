@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,27379 ; Expansion of (1+x^2-x^3)/(1-x)^3.
+  seq $2,27379 ; Expansion of (1+x^2-x^3)/(1-x)^3.
   add $1,$2
   mod $2,2
   add $1,$2

@@ -4,6 +4,6 @@
 mov $2,$0
 cmp $2,0
 add $0,$2
-cal $0,143182 ; Triangle T(n,m) = 1 + abs(n-2*m), read by rows, 0<=m<=n.
+seq $0,143182 ; Triangle T(n,m) = 1 + abs(n-2*m), read by rows, 0<=m<=n.
 mov $1,2
 div $1,$0

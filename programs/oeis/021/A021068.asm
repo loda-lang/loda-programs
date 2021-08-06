@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   pow $0,2
   div $0,6
-  cal $2,228564 ; Largest odd divisor of n^2 + 1.
+  seq $2,228564 ; Largest odd divisor of n^2 + 1.
   add $1,$2
 lpe
 mod $1,10

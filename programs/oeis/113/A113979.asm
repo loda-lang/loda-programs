@@ -30,7 +30,7 @@ lpb $3
         sub $9,1
         add $0,$9
         trn $0,1
-        cal $0,56309 ; Number of reversible strings with n beads using exactly two different colors.
+        seq $0,56309 ; Number of reversible strings with n beads using exactly two different colors.
         mov $4,$0
         mov $10,$9
         mul $10,$0

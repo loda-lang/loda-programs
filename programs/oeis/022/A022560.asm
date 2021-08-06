@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,6520 ; Partial sums of A006519.
+  seq $2,6520 ; Partial sums of A006519.
   add $1,$2
 lpe

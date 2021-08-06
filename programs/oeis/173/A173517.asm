@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,122800 ; A P_4-stuttered arithmetic progression with a(n+1)=a(n) if n is square, a(n+1)=a(n)+2 otherwise.
+  seq $0,122800 ; A P_4-stuttered arithmetic progression with a(n+1)=a(n) if n is square, a(n+1)=a(n)+2 otherwise.
   pow $0,2
   mov $3,$4
   mul $3,$0

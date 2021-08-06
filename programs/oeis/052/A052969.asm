@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,158943 ; INVERT transform of A027656: (1, 0, 2, 0, 3, 0, 4, 0, 5, ...).
+  seq $0,158943 ; INVERT transform of A027656: (1, 0, 2, 0, 3, 0, 4, 0, 5, ...).
   mov $3,$0
   mov $5,$4
   mul $5,$0

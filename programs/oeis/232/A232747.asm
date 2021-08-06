@@ -10,7 +10,7 @@ lpb $3
   sub $0,1
   add $5,$0
   max $0,0
-  cal $0,232746 ; n occurs A030124(n) times; a(n) = one less than the least k such that A005228(k) > n.
+  seq $0,232746 ; n occurs A030124(n) times; a(n) = one less than the least k such that A005228(k) > n.
   min $5,$0
   bin $5,2
   add $0,$5

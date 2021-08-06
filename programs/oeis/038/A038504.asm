@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,38503 ; Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose 0".
+  seq $2,38503 ; Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose 0".
   add $1,$2
 lpe

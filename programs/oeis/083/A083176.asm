@@ -4,7 +4,7 @@
 mov $1,$0
 mul $0,2
 max $0,1
-cal $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 mov $2,$0
 mov $3,$1
 add $3,$1

@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,6
-cal $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 mov $1,$0
 bin $1,7

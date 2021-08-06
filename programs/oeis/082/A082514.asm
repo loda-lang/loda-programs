@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,1
-cal $0,230980 ; Number of primes <= n, starting at n=0.
-cal $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+seq $0,230980 ; Number of primes <= n, starting at n=0.
+seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 add $0,$2
 mov $1,$0

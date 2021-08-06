@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,32092 ; Number of reversible strings with n-1 beads of 2 colors. 5 beads are black. String is not palindromic.
+  seq $2,32092 ; Number of reversible strings with n-1 beads of 2 colors. 5 beads are black. String is not palindromic.
   add $1,$2
 lpe
 add $1,3

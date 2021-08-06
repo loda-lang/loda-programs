@@ -6,6 +6,6 @@ lpb $0
   mov $1,$0
   mov $0,0
   max $1,0
-  cal $1,83375 ; n appears prime(n) times.
+  seq $1,83375 ; n appears prime(n) times.
 lpe
 add $1,1

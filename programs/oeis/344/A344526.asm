@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,308474 ; a(n) = Sum_{k=1..n^2, gcd(n,k) = 1} k.
+  seq $2,308474 ; a(n) = Sum_{k=1..n^2, gcd(n,k) = 1} k.
   add $1,$2
 lpe
 mul $1,2

@@ -5,7 +5,7 @@ mov $2,2
 lpb $0
   mov $2,$0
   mod $0,2
-  cal $2,62547 ; a(n) is least odd integer not a partial sum of 1, 3, ..., a(n-1).
+  seq $2,62547 ; a(n) is least odd integer not a partial sum of 1, 3, ..., a(n-1).
 lpe
 add $0,$2
 mov $1,$0

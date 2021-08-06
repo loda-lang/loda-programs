@@ -5,6 +5,6 @@ lpb $0
   mov $2,$0
   sub $0,1
   mul $2,2
-  cal $2,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
+  seq $2,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   add $1,$2
 lpe

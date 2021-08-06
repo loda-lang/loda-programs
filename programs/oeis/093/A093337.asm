@@ -5,7 +5,7 @@ lpb $0
   div $0,2
   pow $0,6
 lpe
-cal $0,120533 ; Primes having a prime number of digits.
+seq $0,120533 ; Primes having a prime number of digits.
 div $0,10
 mov $1,$0
 mod $1,10

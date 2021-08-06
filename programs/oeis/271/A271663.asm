@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,132117 ; Binomial transform of [1, 7, 17, 17, 6, 0, 0, 0,...].
+  seq $2,132117 ; Binomial transform of [1, 7, 17, 17, 6, 0, 0, 0,...].
   add $1,$2
 lpe
 add $1,1

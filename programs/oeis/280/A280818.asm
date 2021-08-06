@@ -2,5 +2,5 @@
 ; 1,5,3,13,17,7,5,29,11,37,41,15,7,53,19,61,13,23,73,11,27,17,89,31,97,101,35,109,113,39,11,25,43,19,137,47,29,149,51,157,23,55,13,173,59,181,37,63,193,197,67,41,19,71,31,17,75,229,233,79,241,49,83,23,257
 
 mul $0,4
-cal $0,117818 ; a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
+seq $0,117818 ; a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
 mov $1,$0

@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   mul $0,2
-  cal $0,17898 ; Expansion of (1-x)/(1-x-x^4).
+  seq $0,17898 ; Expansion of (1-x)/(1-x-x^4).
   add $0,1
   mul $0,3
   mov $3,$0

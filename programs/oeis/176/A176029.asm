@@ -3,7 +3,7 @@
 
 mov $1,1
 add $1,$0
-cal $0,144494 ; a(n) = 0 if n is prime, otherwise A001222(n).
+seq $0,144494 ; a(n) = 0 if n is prime, otherwise A001222(n).
 mov $2,$0
 cmp $2,0
 add $0,$2

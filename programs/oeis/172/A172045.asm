@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,153794 ; 4 times octagonal numbers: a(n) = 4*n*(3*n-2).
+  seq $2,153794 ; 4 times octagonal numbers: a(n) = 4*n*(3*n-2).
   mul $2,$0
   sub $0,1
   add $1,$2

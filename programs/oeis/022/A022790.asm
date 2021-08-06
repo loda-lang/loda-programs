@@ -9,7 +9,7 @@ lpb $3
   mov $2,0
   sub $3,1
   sub $0,$3
-  cal $0,172476 ; a(n) = floor(n/sqrt(6)).
+  seq $0,172476 ; a(n) = floor(n/sqrt(6)).
   add $2,$0
   add $2,1
   add $1,$2

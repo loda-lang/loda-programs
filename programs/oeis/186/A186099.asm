@@ -1,7 +1,7 @@
 ; A186099: Sum of divisors of n congruent to 1 or 5 mod 6.
 ; 1,1,1,1,6,1,8,1,1,6,12,1,14,8,6,1,18,1,20,6,8,12,24,1,31,14,1,8,30,6,32,1,12,18,48,1,38,20,14,6,42,8,44,12,6,24,48,1,57,31,18,14,54,1,72,8,20,30,60,6,62,32,8,1,84,12,68,18,24,48,72,1,74,38,31,20,96,14,80,6,1,42,84,8,108,44,30,12,90,6,112,24,32,48,120,1,98,57,12,31
 
-cal $0,65330 ; a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
-cal $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
+seq $0,65330 ; a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
+seq $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
 mov $1,$0
 div $1,24

@@ -3,7 +3,7 @@
 
 lpb $0
   trn $0,1
-  cal $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
+  seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
   sub $0,1
   mov $1,1
 lpe

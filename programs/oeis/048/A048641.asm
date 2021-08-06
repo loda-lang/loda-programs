@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,3188 ; Decimal equivalent of Gray code for n.
+  seq $2,3188 ; Decimal equivalent of Gray code for n.
   add $1,$2
 lpe

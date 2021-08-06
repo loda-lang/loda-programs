@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,306957 ; a(n) = n!*binomial(10,n).
+  seq $2,306957 ; a(n) = n!*binomial(10,n).
   add $1,$2
 lpe
 div $1,10

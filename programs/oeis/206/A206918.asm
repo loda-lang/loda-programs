@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,206917 ; Sum of binary palindromes in the half-open interval [2^(n-1), 2^n).
+  seq $2,206917 ; Sum of binary palindromes in the half-open interval [2^(n-1), 2^n).
   add $1,$2
 lpe

@@ -3,5 +3,5 @@
 
 mov $1,$0
 trn $0,1
-cal $0,215848 ; Primes > 3.
+seq $0,215848 ; Primes > 3.
 mul $1,$0

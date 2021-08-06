@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,29040 ; Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^8)).
+  seq $2,29040 ; Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^8)).
   mov $3,$0
   sub $3,2
   mov $0,$3

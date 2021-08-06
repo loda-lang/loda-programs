@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   trn $0,1
-  cal $0,1444 ; Bending a piece of wire of length n+1 (configurations that can only be brought into coincidence by turning the figure over are counted as different).
+  seq $0,1444 ; Bending a piece of wire of length n+1 (configurations that can only be brought into coincidence by turning the figure over are counted as different).
   add $1,$0
 lpe

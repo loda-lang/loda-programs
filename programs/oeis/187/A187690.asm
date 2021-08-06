@@ -3,7 +3,7 @@
 
 trn $2,$0
 add $2,$0
-cal $2,85060 ; Integer reached in A085058.
+seq $2,85060 ; Integer reached in A085058.
 gcd $2,2
 mov $1,$2
 add $1,1

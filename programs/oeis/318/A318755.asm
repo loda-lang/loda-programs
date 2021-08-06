@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,319089 ; a(n) = tau(n)^3, where tau is A000005.
+  seq $2,319089 ; a(n) = tau(n)^3, where tau is A000005.
   add $1,$2
 lpe
 add $1,1

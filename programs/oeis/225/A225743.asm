@@ -5,6 +5,6 @@ lpb $0
   add $2,1
   sub $0,$2
 lpe
-cal $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
 add $0,1
 mov $1,$0

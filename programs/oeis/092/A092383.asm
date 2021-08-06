@@ -5,7 +5,7 @@ mov $2,-2
 gcd $2,$0
 mul $0,$2
 lpb $2
-  cal $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   div $2,7
 lpe
 mov $1,$0

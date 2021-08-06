@@ -3,9 +3,9 @@
 
 mul $0,2
 add $0,1
-seq $0,1077 ; Numerators of continued fraction convergents to sqrt(5).
+seq $0,1076 ; Denominators of continued fraction convergents to sqrt(5).
 pow $0,2
 mov $1,$0
-div $1,1440
+div $1,288
 mul $1,450
 add $1,1

@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,8954 ; Final digit of triangular number n*(n+1)/2.
+  seq $2,8954 ; Final digit of triangular number n*(n+1)/2.
   add $1,$2
 lpe

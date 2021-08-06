@@ -3,7 +3,7 @@
 
 add $0,1
 lpb $0
-  cal $0,102391 ; Evil numbers in evil places.
+  seq $0,102391 ; Evil numbers in evil places.
   div $0,2
   add $1,6
 lpe

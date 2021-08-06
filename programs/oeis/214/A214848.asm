@@ -13,7 +13,7 @@ lpb $4
   mov $2,$4
   mul $3,$0
   max $3,0
-  cal $3,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+  seq $3,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
   mul $2,$3
   add $1,$2
   mov $5,$3

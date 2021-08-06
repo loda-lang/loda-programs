@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,69720 ; a(n) = 2^(n-1)*binomial(2n-1, n).
+  seq $2,69720 ; a(n) = 2^(n-1)*binomial(2n-1, n).
   add $1,$2
 lpe

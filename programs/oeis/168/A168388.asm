@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,982 ; a(n) = ceiling(n^2/2).
+  seq $2,982 ; a(n) = ceiling(n^2/2).
   add $1,$2
 lpe
 mul $1,2

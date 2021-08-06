@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,61705 ; Number of matchings in the wheel graph with n spokes.
+  seq $0,61705 ; Number of matchings in the wheel graph with n spokes.
   sub $0,4
   add $1,$0
 lpe

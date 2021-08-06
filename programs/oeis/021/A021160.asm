@@ -7,6 +7,6 @@ lpb $0
   mov $2,$1
   mov $1,$0
   mov $0,$2
-  cal $1,70369 ; a(n) = 5^n mod 14.
+  seq $1,70369 ; a(n) = 5^n mod 14.
 lpe
 div $1,2

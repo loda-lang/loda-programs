@@ -5,7 +5,7 @@ mov $1,$0
 mul $0,2
 min $0,3
 bin $0,2
-cal $1,284237 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
+seq $1,284237 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
 sub $1,1
 mul $1,$0
 add $1,1

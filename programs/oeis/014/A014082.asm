@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   div $0,2
-  cal $2,244413 ; Exponent of highest power of 8 dividing n.
+  seq $2,244413 ; Exponent of highest power of 8 dividing n.
   mov $3,$2
   min $3,1
   add $1,$3

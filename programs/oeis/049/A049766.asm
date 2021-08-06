@@ -3,5 +3,5 @@
 
 mov $1,$0
 mul $1,$0
-cal $0,244049 ; Sum of all proper divisors of all positive integers <= n.
+seq $0,244049 ; Sum of all proper divisors of all positive integers <= n.
 sub $1,$0

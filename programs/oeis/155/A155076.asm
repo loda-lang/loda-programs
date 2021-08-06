@@ -1,7 +1,7 @@
 ; A155076: Triangle read by rows. The main diagonal is positive. If rowindex >= 2*columnindex then -1 else 0.
 ; 1,-1,1,-1,0,1,-1,-1,0,1,-1,-1,0,0,1,-1,-1,-1,0,0,1,-1,-1,-1,0,0,0,1,-1,-1,-1,-1,0,0,0,1,-1,-1,-1,-1,0,0,0,0,1,-1,-1,-1,-1,-1,0,0,0,0,1,-1,-1,-1,-1,-1,0,0,0,0,0,1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,1,-1,-1,-1,-1,-1,-1,0
 
-cal $0,168313 ; Triangle read by rows, retain 1's as rightmost diagonal of A101688 and replace all other 1's with 2's.
+seq $0,168313 ; Triangle read by rows, retain 1's as rightmost diagonal of A101688 and replace all other 1's with 2's.
 pow $0,2
 mov $1,2
 add $3,$0

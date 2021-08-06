@@ -3,6 +3,6 @@
 
 add $0,1
 mul $0,2
-cal $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
 mov $1,$0
 sub $1,1

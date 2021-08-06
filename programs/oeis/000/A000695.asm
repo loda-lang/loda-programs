@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,276391 ; G.f. satisfies A(x) - 4*A(x^2) = x/(1+x).
+  seq $2,276391 ; G.f. satisfies A(x) - 4*A(x^2) = x/(1+x).
   add $1,$2
 lpe

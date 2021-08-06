@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   div $0,2
-  cal $2,176040 ; Periodic sequence: Repeat 3, 1.
+  seq $2,176040 ; Periodic sequence: Repeat 3, 1.
   add $1,$2
 lpe

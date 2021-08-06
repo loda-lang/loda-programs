@@ -10,25 +10,25 @@ lpb $2
   sub $0,$2
   mov $5,$0
   add $5,1
-  mov $7,0
-  mov $9,$0
+  mov $6,0
+  mov $7,$0
   lpb $5
-    mov $0,$9
+    mov $0,$7
     sub $5,1
     sub $0,$5
-    mov $6,$0
-    mov $8,2
-    lpb $8
-      mov $0,1
-      seq $0,86117 ; Denominator of mean deviation of a symmetrical binomial distribution on n elements.
+    mov $9,2
+    mov $10,$0
+    lpb $9
+      cmp $8,0
+      add $0,$8
+      div $0,$0
       mov $3,$0
-      sub $8,1
+      sub $9,1
     lpe
-    min $6,1
-    mul $6,$3
-    sub $3,$6
-    mul $3,2
-    add $7,$3
+    min $10,1
+    sub $3,$10
+    mul $3,4
+    add $6,$3
   lpe
-  add $1,$7
+  add $1,$6
 lpe

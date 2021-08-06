@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,214260 ; First differences of A052980.
+  seq $2,214260 ; First differences of A052980.
   add $1,$2
 lpe
 lpb $0

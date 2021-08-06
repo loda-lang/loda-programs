@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,48771 ; Partial sums of A048695.
+  seq $2,48771 ; Partial sums of A048695.
   add $1,$2
 lpe
 add $1,1

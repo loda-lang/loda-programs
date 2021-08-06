@@ -5,7 +5,7 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
-  cal $2,6564 ; Icosahedral numbers: a(n) = n*(5*n^2 - 5*n + 2)/2.
+  seq $2,6564 ; Icosahedral numbers: a(n) = n*(5*n^2 - 5*n + 2)/2.
   add $1,$2
 lpe
 mul $1,2

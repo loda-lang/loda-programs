@@ -10,7 +10,7 @@ lpb $4
   sub $0,1
   mul $0,2
   max $0,0
-  cal $0,75111 ; a(n)=Sum((-1)^(i+Floor(n/2))T(2i+e),(i=0,..,Floor(n/2))), where T(n) are tribonacci numbers (A000073) and e=(1/2)(1-(-1)^n).
+  seq $0,75111 ; a(n)=Sum((-1)^(i+Floor(n/2))T(2i+e),(i=0,..,Floor(n/2))), where T(n) are tribonacci numbers (A000073) and e=(1/2)(1-(-1)^n).
   mov $3,$0
   mov $5,$4
   mul $5,$0

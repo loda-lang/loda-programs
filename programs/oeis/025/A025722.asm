@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,32796 ; Numbers that are congruent to {1, 2, 3, 5, 6} mod 7.
+  seq $2,32796 ; Numbers that are congruent to {1, 2, 3, 5, 6} mod 7.
   add $1,$2
 lpe
 add $1,1

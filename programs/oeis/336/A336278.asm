@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,334660 ; Dirichlet g.f.: 1 / zeta(s-4).
+  seq $2,334660 ; Dirichlet g.f.: 1 / zeta(s-4).
   add $1,$2
 lpe
 add $1,1

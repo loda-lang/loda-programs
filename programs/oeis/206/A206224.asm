@@ -4,6 +4,6 @@
 mov $1,$0
 add $1,3
 mov $2,$0
-cal $2,336751 ; Smallest side of integer-sided triangles whose sides a < b < c are in arithmetic progression.
+seq $2,336751 ; Smallest side of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 sub $1,$2
 sub $1,1

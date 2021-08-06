@@ -11,7 +11,7 @@ lpb $4
   sub $0,2
   div $0,2
   max $0,0
-  cal $0,64608 ; Partial sums of A034444: sum of number of unitary divisors from 1 to n.
+  seq $0,64608 ; Partial sums of A034444: sum of number of unitary divisors from 1 to n.
   add $2,$0
   mov $3,$4
   mul $3,$2

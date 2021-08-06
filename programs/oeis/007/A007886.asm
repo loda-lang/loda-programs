@@ -10,7 +10,7 @@ lpb $3
   sub $3,1
   sub $0,$3
   trn $0,1
-  cal $0,54243 ; Number of partitions of n into distinct positive parts <= n, where parts are combined by XOR.
+  seq $0,54243 ; Number of partitions of n into distinct positive parts <= n, where parts are combined by XOR.
   add $2,$0
   add $1,$2
 lpe

@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   mod $0,2
   div $2,2
-  cal $2,93505 ; a(n) = floor(A001969(n)/2 + 1/2).
+  seq $2,93505 ; a(n) = floor(A001969(n)/2 + 1/2).
   add $1,$2
 lpe
 add $1,1

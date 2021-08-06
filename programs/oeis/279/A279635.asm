@@ -7,5 +7,5 @@ lpb $0
   mov $1,$0
   mov $0,1
   max $1,0
-  cal $1,75101 ; Numerator of 2^n/n.
+  seq $1,75101 ; Numerator of 2^n/n.
 lpe

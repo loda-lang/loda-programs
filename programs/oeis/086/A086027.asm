@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,253943 ; a(n) = 3*binomial(n+1,6).
+  seq $2,253943 ; a(n) = 3*binomial(n+1,6).
   pow $2,2
   add $1,$2
 lpe

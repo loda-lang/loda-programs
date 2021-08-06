@@ -3,5 +3,5 @@
 
 mul $0,5
 trn $0,1
-cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
+seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 mov $1,$0

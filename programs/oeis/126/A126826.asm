@@ -2,6 +2,6 @@
 ; 1,3,0,4,6,0,5,6,0,0,3,0,8,6,0,7,0,0,2,6,0,0,6,0,7,6,0,2,3,0,8,0,0,0,3,0,2,6,0,0,6,0,5,3,0,0,3,0,3,3,0,5,0,0,0,3,0,0,6,0,5,6,0,1,3,0,8,0,0,0,0,0,2,6,0,8,6,0,5,6,0,0,3,0,0,6,0,0,0,0,4,6,0,0,3,0,5,0,0,1
 
 add $0,1
-cal $0,282097 ; Coefficients in q-expansion of (3*E_2*E_4 - 2*E_6 - E_2^3)/1728, where E_2, E_4, E_6 are the Eisenstein series shown in A006352, A004009, A013973, respectively.
+seq $0,282097 ; Coefficients in q-expansion of (3*E_2*E_4 - 2*E_6 - E_2^3)/1728, where E_2, E_4, E_6 are the Eisenstein series shown in A006352, A004009, A013973, respectively.
 mod $0,9
 mov $1,$0

@@ -3,7 +3,7 @@
 
 mov $3,$0
 mod $0,2
-cal $0,6005 ; The odd prime numbers together with 1.
+seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,2
 trn $2,$3
 add $2,$3

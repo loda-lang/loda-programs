@@ -11,7 +11,7 @@ lpb $3
   mov $4,0
   lpb $0
     mov $2,$0
-    cal $2,286665 ; {0->01}-transform of the Pell word, A171588.
+    seq $2,286665 ; {0->01}-transform of the Pell word, A171588.
     sub $0,$2
     add $4,$2
   lpe

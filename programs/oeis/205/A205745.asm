@@ -6,5 +6,5 @@ lpb $0
   gcd $0,8
   sub $0,2
 lpe
-cal $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 mov $1,$0

@@ -8,6 +8,6 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,6 ; Integer part of square root of n-th prime.
+  seq $0,6 ; Integer part of square root of n-th prime.
   add $1,$0
 lpe

@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,84177 ; Binomial transform of Jacobsthal oblongs.
+  seq $2,84177 ; Binomial transform of Jacobsthal oblongs.
   add $1,$2
 lpe

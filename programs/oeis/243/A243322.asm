@@ -2,16 +2,9 @@
 ; 1,0,1,1,2,2,2,3,4,4
 
 mov $1,$0
+mul $0,2
+mul $0,$1
+sub $0,2
+mod $0,3
+sub $1,$0
 div $1,2
-lpb $0
-  add $2,1
-  mul $2,2
-  gcd $0,$2
-  sub $1,1
-  lpb $0
-    sub $0,1
-    mul $0,$1
-  lpe
-lpe
-add $1,1
-mod $1,10

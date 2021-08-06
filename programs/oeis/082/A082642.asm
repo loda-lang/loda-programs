@@ -7,4 +7,4 @@ mul $0,2
 mov $3,$2
 add $3,$0
 mov $1,$3
-cal $1,8616 ; Expansion of 1/((1-x^2)(1-x^5)).
+seq $1,8616 ; Expansion of 1/((1-x^2)(1-x^5)).

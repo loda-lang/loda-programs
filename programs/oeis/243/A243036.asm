@@ -8,7 +8,7 @@ lpb $5
   sub $5,1
   add $0,$5
   trn $0,1
-  cal $0,74330 ; a(n) = Sum_{k=1..n} 2^b(k) where b(k) denotes the number of 1's in the binary representation of k.
+  seq $0,74330 ; a(n) = Sum_{k=1..n} 2^b(k) where b(k) denotes the number of 1's in the binary representation of k.
   add $0,1
   mov $2,$5
   mul $2,$0

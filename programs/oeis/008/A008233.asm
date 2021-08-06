@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,8218 ; Floor(n/4)*floor((n+1)/4)*floor((n+2)/4).
+  seq $2,8218 ; Floor(n/4)*floor((n+1)/4)*floor((n+2)/4).
   add $1,$2
 lpe

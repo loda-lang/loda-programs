@@ -2,7 +2,7 @@
 ; 2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,2,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,1,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,2,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,1,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,0,2,0,1
 
 add $0,1
-cal $0,317189 ; A morphic sequence related to the ternary Thue-Morse sequence.
+seq $0,317189 ; A morphic sequence related to the ternary Thue-Morse sequence.
 mov $1,-1
 sub $1,$0
 mod $1,3

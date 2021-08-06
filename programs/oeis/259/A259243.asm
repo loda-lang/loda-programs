@@ -3,7 +3,7 @@
 
 mov $1,1
 add $1,$0
-cal $1,162740 ; Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^3 = I.
+seq $1,162740 ; Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^3 = I.
 div $1,2
 add $1,1
 mul $1,3

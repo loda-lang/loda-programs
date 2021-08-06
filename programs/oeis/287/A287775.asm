@@ -5,6 +5,6 @@ mov $2,$0
 add $0,2
 mov $1,$0
 div $1,2
-cal $1,189662 ; Positions of 0 in A189661; complement of A026356.
+seq $1,189662 ; Positions of 0 in A189661; complement of A026356.
 sub $1,1
 add $1,$2

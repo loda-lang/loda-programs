@@ -14,7 +14,7 @@ lpb $5
     mov $2,$0
     trn $0,4
     max $2,0
-    cal $2,80023 ; log_phi(n) is closer to an integer than is log_phi(m) for any m with 2<=m<n, where phi=(1+sqrt(5))/2 is the golden ratio.
+    seq $2,80023 ; log_phi(n) is closer to an integer than is log_phi(m) for any m with 2<=m<n, where phi=(1+sqrt(5))/2 is the golden ratio.
     add $3,$2
   lpe
   mov $4,$5

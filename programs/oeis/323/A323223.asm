@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,51133 ; a(n) = binomial(2n,n)*n*(2n+1)/2.
+  seq $2,51133 ; a(n) = binomial(2n,n)*n*(2n+1)/2.
   add $1,$2
 lpe
 div $1,3

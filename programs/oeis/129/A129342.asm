@@ -5,6 +5,6 @@ mul $0,2
 lpb $0
   mov $2,$0
   dif $0,2
-  cal $2,16116 ; a(n) = 2^floor(n/2).
+  seq $2,16116 ; a(n) = 2^floor(n/2).
   add $1,$2
 lpe

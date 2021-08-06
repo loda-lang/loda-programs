@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,98894 ; Values of n such that {s(1),...,s(n)} is a palindrome, where {s(1),s(2),...} is the fixed-point of the substitutions 0->1 and 1->110.
+  seq $2,98894 ; Values of n such that {s(1),...,s(n)} is a palindrome, where {s(1),s(2),...} is the fixed-point of the substitutions 0->1 and 1->110.
   add $1,$2
   mul $0,$1
   cmp $0,1

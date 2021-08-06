@@ -3,6 +3,6 @@
 
 add $0,1
 mov $2,$0
-cal $0,134488 ; a(0)=1. a(n) = n + d(a(n-1)), where d(m) is the number of positive divisors of m.
+seq $0,134488 ; a(0)=1. a(n) = n + d(a(n-1)), where d(m) is the number of positive divisors of m.
 sub $0,$2
 mov $1,$0

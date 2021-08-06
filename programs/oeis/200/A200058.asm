@@ -17,7 +17,7 @@ lpb $2
     sub $7,1
     sub $0,$7
     mul $0,2
-    cal $0,63087 ; Dimension of the space of weight 2n cusp forms for Gamma_0( 19 ).
+    seq $0,63087 ; Dimension of the space of weight 2n cusp forms for Gamma_0( 19 ).
     mov $4,4
     add $4,$0
     add $4,$0

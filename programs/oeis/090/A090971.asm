@@ -2,6 +2,6 @@
 ; 1,0,1,1,1,1,0,0,0,1,1,0,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,0,1,0,1,0,1,0
 
 add $0,1
-cal $0,74909 ; Running sum of Pascal's triangle (A007318), or beheaded Pascal's triangle read by beheaded rows.
+seq $0,74909 ; Running sum of Pascal's triangle (A007318), or beheaded Pascal's triangle read by beheaded rows.
 mod $0,2
 mov $1,$0

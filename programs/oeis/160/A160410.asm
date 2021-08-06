@@ -8,7 +8,7 @@ lpb $2
   sub $2,2
   add $0,$2
   trn $0,1
-  cal $0,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
+  seq $0,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
   mov $3,$0
 lpe
 min $1,1

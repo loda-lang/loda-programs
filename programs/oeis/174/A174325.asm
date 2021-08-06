@@ -8,5 +8,5 @@ cmp $2,1
 sub $0,$2
 sub $0,$2
 trn $1,2
-cal $1,142600 ; Third trisection of A061037.
+seq $1,142600 ; Third trisection of A061037.
 mul $1,$0

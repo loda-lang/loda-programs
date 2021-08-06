@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,4068 ; Number of atoms in a decahedron with n shells.
+  seq $2,4068 ; Number of atoms in a decahedron with n shells.
   add $1,$2
 lpe
 mul $1,4

@@ -4,6 +4,6 @@
 add $0,1
 pow $0,2
 sub $0,1
-cal $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
+seq $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
 mov $1,$0
 add $1,1

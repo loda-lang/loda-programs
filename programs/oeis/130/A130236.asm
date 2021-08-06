@@ -3,6 +3,6 @@
 
 mov $2,$0
 trn $0,1
-cal $0,130235 ; Partial sums of the 'lower' Fibonacci Inverse A130233.
+seq $0,130235 ; Partial sums of the 'lower' Fibonacci Inverse A130233.
 add $0,$2
 mov $1,$0

@@ -3,6 +3,6 @@
 
 mov $1,$0
 lpb $0
-  cal $1,4488 ; Tersum n + n.
+  seq $1,4488 ; Tersum n + n.
   mov $0,$1
 lpe

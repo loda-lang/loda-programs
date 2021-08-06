@@ -1,9 +1,9 @@
 ; A023587: a(n) = sum of distinct prime divisors of 2*prime(n)-1.
 ; 3,5,3,13,10,5,14,37,8,22,61,73,3,22,34,15,16,11,26,50,34,157,19,62,193,70,46,74,38,8,34,32,23,277,14,50,313,18,40,31,27,19,130,23,134,397,421,94,154,457,39,56,50,170,22,15,182,541,86,31,118,21,613,26
 
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 mov $2,$0
 sub $0,2
 add $0,$2
-cal $0,8472 ; Sum of the distinct primes dividing n.
+seq $0,8472 ; Sum of the distinct primes dividing n.
 mov $1,$0

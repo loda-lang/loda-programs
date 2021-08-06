@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,69039 ; Expansion of x(1+x)^5/(1-x)^7.
+seq $0,69039 ; Expansion of x(1+x)^5/(1-x)^7.
 mov $1,$0

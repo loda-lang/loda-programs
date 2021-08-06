@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,101093 ; Second partial sums of sixth powers (A001014).
+  seq $2,101093 ; Second partial sums of sixth powers (A001014).
   add $1,$2
 lpe

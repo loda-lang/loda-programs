@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,212763 ; Number of (w,x,y,z) with all terms in {0,...,n}, and w, x and y odd.
+  seq $0,212763 ; Number of (w,x,y,z) with all terms in {0,...,n}, and w, x and y odd.
   mov $2,$3
   mul $2,$0
   add $1,$2

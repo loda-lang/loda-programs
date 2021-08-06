@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,76508 ; Expansion of 2*x*(1+4*x+8*x^2)/(1-24*x^3).
+  seq $0,76508 ; Expansion of 2*x*(1+4*x+8*x^2)/(1-24*x^3).
   mov $2,$3
   mul $2,$0
   add $1,$2

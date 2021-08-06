@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,238340 ; Number of partitions of 4n into 4 parts.
+  seq $2,238340 ; Number of partitions of 4n into 4 parts.
   add $1,$2
 lpe
 add $1,1

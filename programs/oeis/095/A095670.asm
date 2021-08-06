@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,95669 ; Seventh column (m=6) of (1,4)-Pascal triangle A095666.
+  seq $2,95669 ; Seventh column (m=6) of (1,4)-Pascal triangle A095666.
   add $1,$2
 lpe
 add $1,4

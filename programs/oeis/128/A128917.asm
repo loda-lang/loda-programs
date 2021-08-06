@@ -4,9 +4,7 @@
 mul $0,2
 add $0,1
 seq $0,1091 ; a(n) = 8*a(n-1) - a(n-2); a(0) = 1, a(1) = 4.
-mov $2,$0
-div $0,4
-add $0,$2
-seq $0,284907 ; Positions of 1 in A284905; complement of A284906.
 mov $1,$0
-div $1,12
+div $1,240
+mul $1,50
+add $1,1

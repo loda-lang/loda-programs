@@ -3,6 +3,6 @@
 
 mov $1,$0
 mov $2,$0
-cal $2,22839 ; Beatty sequence for sqrt(5).
+seq $2,22839 ; Beatty sequence for sqrt(5).
 add $1,$2
 div $1,2

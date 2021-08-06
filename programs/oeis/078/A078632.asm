@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,309891 ; a(n) is the total number of trailing zeros in the representations of n over all bases b >= 2.
+  seq $2,309891 ; a(n) is the total number of trailing zeros in the representations of n over all bases b >= 2.
   add $1,$2
 lpe

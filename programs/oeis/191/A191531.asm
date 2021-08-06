@@ -6,6 +6,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,218008 ; Sum of successive absolute differences of the binomial coefficients = 2*A014495(n)
+  seq $2,218008 ; Sum of successive absolute differences of the binomial coefficients = 2*A014495(n)
   add $1,$2
 lpe

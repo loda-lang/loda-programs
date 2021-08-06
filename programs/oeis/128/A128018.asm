@@ -3,4 +3,4 @@
 
 add $0,1
 mov $1,$0
-cal $1,138230 ; Expansion of (1-x)/(1 - 2*x + 4*x^2).
+seq $1,138230 ; Expansion of (1-x)/(1 - 2*x + 4*x^2).

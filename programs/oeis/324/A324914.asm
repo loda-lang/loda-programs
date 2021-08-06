@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,131089 ; a(n) = Sum_{d|n} (2 - mu(d)).
+  seq $2,131089 ; a(n) = Sum_{d|n} (2 - mu(d)).
   add $1,$2
   mul $1,2
 lpe

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,162511 ; Multiplicative function with a(p^e)=(-1)^(e-1)
+  seq $2,162511 ; Multiplicative function with a(p^e)=(-1)^(e-1)
   add $1,$2
 lpe
 add $1,1

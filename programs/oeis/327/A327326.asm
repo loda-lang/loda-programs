@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   div $0,2
-  cal $2,248517 ; Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
+  seq $2,248517 ; Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
   add $1,$2
 lpe

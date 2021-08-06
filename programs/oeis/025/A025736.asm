@@ -17,7 +17,7 @@ lpb $2
     sub $5,1
     sub $0,$5
     trn $0,2
-    cal $0,342363 ; First differences of A341282.
+    seq $0,342363 ; First differences of A341282.
     mov $3,$0
     mul $3,72
     div $3,1152

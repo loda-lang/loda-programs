@@ -3,7 +3,7 @@
 
 max $1,$0
 min $0,1
-cal $1,75439 ; Triangle read by rows giving successive iterations of the Rule 102 elementary cellular automaton starting with a single ON cell where row n is of length 2n+1.
+seq $1,75439 ; Triangle read by rows giving successive iterations of the Rule 102 elementary cellular automaton starting with a single ON cell where row n is of length 2n+1.
 sub $1,$0
 add $1,2
 mod $1,2

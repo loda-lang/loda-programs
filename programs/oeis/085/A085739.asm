@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,34953 ; Triangular numbers (A000217) with prime indices.
+  seq $2,34953 ; Triangular numbers (A000217) with prime indices.
   add $1,$2
 lpe
 add $1,3

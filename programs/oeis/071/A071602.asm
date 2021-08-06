@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,4087 ; Primes written backwards.
+  seq $2,4087 ; Primes written backwards.
   add $3,$2
   mov $4,$2
   min $4,1

@@ -10,7 +10,7 @@ lpb $4
   sub $0,$4
   add $2,$0
   mov $6,$0
-  cal $0,101803 ; Nearest integer to n*(phi-1), where phi is golden ratio 1.618033988749895... (A001622).
+  seq $0,101803 ; Nearest integer to n*(phi-1), where phi is golden ratio 1.618033988749895... (A001622).
   mov $3,$0
   mul $3,$2
   mov $5,$3

@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   mov $1,$0
-  cal $1,175251 ; Composites (A002808) with nonprime (A018252) subscripts.
+  seq $1,175251 ; Composites (A002808) with nonprime (A018252) subscripts.
   mov $2,$0
   cmp $2,0
   add $0,$2

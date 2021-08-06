@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   mov $0,0
-  cal $2,326395 ; Expansion of Sum_{k>=1} x^(2*k) * (1 + x^k) / (1 - x^(3*k)).
+  seq $2,326395 ; Expansion of Sum_{k>=1} x^(2*k) * (1 + x^k) / (1 - x^(3*k)).
   mov $1,$2
   min $1,1
 lpe

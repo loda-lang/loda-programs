@@ -3,6 +3,6 @@
 
 mov $2,$0
 trn $0,1
-cal $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
+seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
 add $0,$2
 mov $1,$0

@@ -5,6 +5,6 @@ mov $1,$0
 mul $1,2
 add $1,$0
 mov $2,$0
-cal $2,48724 ; Write n and 2n in binary and add them mod 2.
+seq $2,48724 ; Write n and 2n in binary and add them mod 2.
 add $1,$2
 div $1,4

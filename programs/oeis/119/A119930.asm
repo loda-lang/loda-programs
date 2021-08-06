@@ -8,7 +8,7 @@ lpb $4
   mov $0,$2
   sub $4,1
   sub $0,$4
-  cal $0,48158 ; Triangular array T read by rows: T(n,k) = n mod k, for k=1,2,...,n, n=1,2,...
+  seq $0,48158 ; Triangular array T read by rows: T(n,k) = n mod k, for k=1,2,...,n, n=1,2,...
   mov $3,$0
   add $3,1
   add $1,$3

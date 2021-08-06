@@ -5,6 +5,6 @@ lpb $0
   mov $2,$0
   trn $0,5
   add $2,1
-  cal $2,71 ; a(n) = Fibonacci(n) - 1.
+  seq $2,71 ; a(n) = Fibonacci(n) - 1.
   add $1,$2
 lpe

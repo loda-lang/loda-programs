@@ -23,7 +23,7 @@ lpb $2
       sub $0,1
       mov $7,$0
       max $7,0
-      cal $7,183864 ; n+floor(sqrt(5*n/3)); complement of A183865.
+      seq $7,183864 ; n+floor(sqrt(5*n/3)); complement of A183865.
       mov $3,$7
       mov $11,$10
       mul $11,$7

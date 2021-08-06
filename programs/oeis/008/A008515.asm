@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,8512 ; Number of points on the surface of 5-dimensional cube.
+  seq $2,8512 ; Number of points on the surface of 5-dimensional cube.
   add $1,$2
 lpe
 add $1,1

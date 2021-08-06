@@ -4,6 +4,6 @@
 add $0,1
 pow $0,2
 sub $0,1
-cal $0,99777 ; Number of divisors of 2n.
+seq $0,99777 ; Number of divisors of 2n.
 mov $1,$0
 div $1,2

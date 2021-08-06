@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,226023 ; A142705 (numerators of 1/4-1/(4n^2)) sorted to natural order.
+  seq $0,226023 ; A142705 (numerators of 1/4-1/(4n^2)) sorted to natural order.
   add $0,1
   mov $2,$3
   mul $2,$0

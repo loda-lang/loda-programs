@@ -4,5 +4,5 @@
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,84159 ; Pell oblongs.
+  seq $1,84159 ; Pell oblongs.
 lpe

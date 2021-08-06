@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,37955 ; a(n) = binomial(n, floor(n/2)-1).
+  seq $2,37955 ; a(n) = binomial(n, floor(n/2)-1).
   add $1,$2
 lpe

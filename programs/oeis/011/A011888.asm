@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,2817 ; Doubly triangular numbers: a(n) = n*(n+1)*(n^2+n+2)/8.
+  seq $2,2817 ; Doubly triangular numbers: a(n) = n*(n+1)*(n^2+n+2)/8.
   add $1,$2
 lpe

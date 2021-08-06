@@ -3,5 +3,5 @@
 
 mov $1,$0
 mul $1,2
-cal $1,80883 ; Distance of n to next square.
+seq $1,80883 ; Distance of n to next square.
 add $1,$0

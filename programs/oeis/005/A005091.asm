@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  cal $2,72436 ; Remove prime factors of form 4*k+3.
+  seq $2,72436 ; Remove prime factors of form 4*k+3.
   div $0,$2
 lpe
-cal $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 mov $1,$0

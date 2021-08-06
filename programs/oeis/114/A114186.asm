@@ -10,7 +10,7 @@ lpb $3
   sub $0,$3
   lpb $0
     mov $4,$0
-    cal $4,131516 ; a(n)=1 if n is an odd prime number, otherwise, a(n)=n.
+    seq $4,131516 ; a(n)=1 if n is an odd prime number, otherwise, a(n)=n.
     mov $0,$4
     mov $2,$4
   lpe

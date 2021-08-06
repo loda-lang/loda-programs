@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+  seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
   add $1,$0
 lpe
 sub $1,1

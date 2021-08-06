@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,339265 ; Expansion of Product_{n >= 1} (1 - x^(2*n))*(1 - x^(2*n-1))*(1 - x^(2*n+1)).
+  seq $2,339265 ; Expansion of Product_{n >= 1} (1 - x^(2*n))*(1 - x^(2*n-1))*(1 - x^(2*n+1)).
   add $1,$2
 lpe

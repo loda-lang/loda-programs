@@ -4,7 +4,7 @@
 mul $0,2
 lpb $0
   trn $0,1
-  cal $0,62968 ; n + 1 - d(n), where d(n) is the number of divisors function.
+  seq $0,62968 ; n + 1 - d(n), where d(n) is the number of divisors function.
   sub $0,1
   add $1,9
 lpe

@@ -4,7 +4,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  cal $2,27963 ; T(n,n+3), T given by A027960.
+  seq $2,27963 ; T(n,n+3), T given by A027960.
   add $1,$2
   mov $3,$2
   min $3,1

@@ -4,9 +4,8 @@
 add $0,2
 seq $0,40 ; The prime numbers.
 mov $1,$0
-add $1,5
-mod $1,3
+mod $0,3
 add $1,$0
-sub $1,6
+sub $1,7
 mul $1,2
 add $1,11

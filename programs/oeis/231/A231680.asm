@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,53829 ; Sum of digits of (n written in base 8).
+  seq $2,53829 ; Sum of digits of (n written in base 8).
   add $1,$2
 lpe

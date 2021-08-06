@@ -6,7 +6,7 @@ lpb $0
   mov $1,$0
   div $0,90860
   max $1,0
-  cal $1,120486 ; Partial sums of A000188.
+  seq $1,120486 ; Partial sums of A000188.
 lpe
 mul $1,8
 add $1,1

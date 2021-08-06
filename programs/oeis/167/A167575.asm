@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,167586 ; The fourth row of the ED4 array A167584.
+  seq $2,167586 ; The fourth row of the ED4 array A167584.
   add $1,$2
 lpe
 mul $1,18

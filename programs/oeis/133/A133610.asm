@@ -7,7 +7,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,274773 ; a(n) = floor(sqrt(2*n-1) + 1/2) - abs(2*(n-1) - (floor(sqrt(2*n-1) + 1/2))^2) + 1.
+  seq $0,274773 ; a(n) = floor(sqrt(2*n-1) + 1/2) - abs(2*(n-1) - (floor(sqrt(2*n-1) + 1/2))^2) + 1.
   mov $3,$0
   div $3,2
   add $1,$3

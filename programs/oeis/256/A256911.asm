@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
+  seq $2,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
   sub $0,$2
   mov $3,$0
   cmp $3,0

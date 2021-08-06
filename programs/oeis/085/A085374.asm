@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,1
-cal $0,119581 ; (2*n+n^2)*(binomial(2*n,n))/2.
+seq $0,119581 ; (2*n+n^2)*(binomial(2*n,n))/2.
 mov $1,$0
 mul $1,2
 add $0,$1

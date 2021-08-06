@@ -3,5 +3,5 @@
 
 add $0,1
 mov $1,$0
-cal $1,3688 ; a(n) = 3*a(n-1) + a(n-2), with a(1)=1 and a(2)=4.
+seq $1,3688 ; a(n) = 3*a(n-1) + a(n-2), with a(1)=1 and a(2)=4.
 div $1,3

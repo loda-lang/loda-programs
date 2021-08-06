@@ -6,6 +6,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,160138 ; a(n) = number of solutions to the system: x + y + z + w = n, -2x - y + z + 2w = 5 with nonnegative x, y, z, w.
+  seq $2,160138 ; a(n) = number of solutions to the system: x + y + z + w = n, -2x - y + z + 2w = 5 with nonnegative x, y, z, w.
   add $1,$2
 lpe

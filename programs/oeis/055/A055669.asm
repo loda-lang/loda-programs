@@ -4,7 +4,7 @@
 mov $1,$0
 mul $0,34694
 add $0,1
-cal $1,6005 ; The odd prime numbers together with 1.
+seq $1,6005 ; The odd prime numbers together with 1.
 mod $1,$0
 mul $1,24
 add $1,24
