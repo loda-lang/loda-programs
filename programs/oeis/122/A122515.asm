@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,111181 ; Prime(n) - Pi(n).
+  seq $2,111181 ; Prime(n) - Pi(n).
   add $1,$2
 lpe
 add $1,2

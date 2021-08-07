@@ -6,7 +6,7 @@ mov $2,1
 add $2,$0
 mov $3,$0
 max $0,0
-cal $0,6005 ; The odd prime numbers together with 1.
+seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,2
 mov $1,$2
 max $3,2

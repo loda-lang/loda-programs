@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,24816 ; Antisigma(n): Sum of the numbers less than n that do not divide n.
+  seq $2,24816 ; Antisigma(n): Sum of the numbers less than n that do not divide n.
   add $1,$2
 lpe

@@ -8,7 +8,7 @@ lpb $5
   sub $5,1
   add $0,$5
   trn $0,1
-  cal $0,29070 ; Expansion of 1/((1-x)*(1-x^4)*(1-x^6)*(1-x^7)).
+  seq $0,29070 ; Expansion of 1/((1-x)*(1-x^4)*(1-x^6)*(1-x^7)).
   mov $4,$5
   mul $4,$0
   add $1,$4

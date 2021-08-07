@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,275973 ; A binary sequence due to Harold Jeffreys.
+  seq $2,275973 ; A binary sequence due to Harold Jeffreys.
   add $1,$2
 lpe
 add $1,1

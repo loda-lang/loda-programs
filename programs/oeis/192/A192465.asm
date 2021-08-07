@@ -2,7 +2,7 @@
 ; 3,9,25,93,353,1389,5505,21933,87553,349869,1398785,5593773,22372353,89483949,357924865,1431677613,5726666753,22906579629,91626143745,366504225453,1466016202753,5864063412909,23456250855425,93824997829293
 
 mov $1,$0
-cal $1,92431 ; Numbers having in binary representation a leading 1 followed by n zeros and n-1 ones.
+seq $1,92431 ; Numbers having in binary representation a leading 1 followed by n zeros and n-1 ones.
 div $1,3
 mul $1,2
 add $1,3

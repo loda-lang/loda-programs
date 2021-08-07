@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,173173 ; a(n) = ceiling(Fibonacci(n)/2).
+  seq $2,173173 ; a(n) = ceiling(Fibonacci(n)/2).
   add $1,$2
 lpe

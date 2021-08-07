@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,137803 ; a(n) = floor(n*(sqrt(2) + 1/2)).
+  seq $2,137803 ; a(n) = floor(n*(sqrt(2) + 1/2)).
   add $1,$2
 lpe

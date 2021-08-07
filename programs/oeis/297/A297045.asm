@@ -6,7 +6,7 @@ lpb $0
   mov $1,$0
   sub $0,6
   max $1,0
-  cal $1,169069 ; Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^25 = I.
+  seq $1,169069 ; Number of reduced words of length n in Coxeter group on 8 generators S_i with relations (S_i)^2 = (S_i S_j)^25 = I.
   sub $1,11
 lpe
 mod $1,2

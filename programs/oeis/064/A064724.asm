@@ -11,7 +11,7 @@ lpb $3
   lpb $0
     mov $2,$0
     trn $0,5
-    cal $2,105824 ; a(n) = sigma(n) mod 4.
+    seq $2,105824 ; a(n) = sigma(n) mod 4.
     mov $4,$2
     min $4,1
   lpe

@@ -531,6 +531,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A210379](http://oeis.org/A210379) ([program](210/A210379.asm)): Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
 * [A210433](http://oeis.org/A210433) ([program](210/A210433.asm)): Natural numbers k such that floor(v) * ceiling(v)^2 = k, where v = k^(1/3).
 * [A210435](http://oeis.org/A210435) ([program](210/A210435.asm)): Number of digits in 5^n.
+* [A210436](http://oeis.org/A210436) ([program](210/A210436.asm)): Number of digits in 6^n.
 * [A210437](http://oeis.org/A210437) ([program](210/A210437.asm)): Greatest prime factor of reversal of digits of n.
 * [A210440](http://oeis.org/A210440) ([program](210/A210440.asm)): a(n) = 2*n*(n+1)*(n+2)/3.
 * [A210448](http://oeis.org/A210448) ([program](210/A210448.asm)): Total number of different letters summed over all ternary words of length n.
@@ -1709,6 +1710,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A226492](http://oeis.org/A226492) ([program](226/A226492.asm)): a(n) = n*(11*n-5)/2.
 * [A226493](http://oeis.org/A226493) ([program](226/A226493.asm)): Closed walks of length n in K_4 graph.
 * [A226500](http://oeis.org/A226500) ([program](226/A226500.asm)): Triangular numbers representable as 3 * x^2.
+* [A226508](http://oeis.org/A226508) ([program](226/A226508.asm)): a(n) = Sum_{i=3^n..3^(n+1)-1} i.
 * [A226511](http://oeis.org/A226511) ([program](226/A226511.asm)): 3*(5^n-3^n)/2.
 * [A226514](http://oeis.org/A226514) ([program](226/A226514.asm)): Column 3 of array in A226513.
 * [A226523](http://oeis.org/A226523) ([program](226/A226523.asm)): a(n) = 0 if p=2, 1 if 2 is a square mod p, -1 otherwise, where p = prime(n).
@@ -2106,6 +2108,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A232098](http://oeis.org/A232098) ([program](232/A232098.asm)): a(n) = largest m such that m! divides n^2; a(n) = A055881(n^2).
 * [A232172](http://oeis.org/A232172) ([program](232/A232172.asm)): Partial sums of second arithmetic derivative of natural numbers.
 * [A232228](http://oeis.org/A232228) ([program](232/A232228.asm)): a(1)=1; thereafter a(n) = 2^(number of bits in binary expansion of a(n-1)) + 1 + a(n-1).
+* [A232229](http://oeis.org/A232229) ([program](232/A232229.asm)): a(1)=9; thereafter a(n) = 8*10^(n-1) + 8 + a(n-1).
 * [A232230](http://oeis.org/A232230) ([program](232/A232230.asm)): Expansion of (1 - 2*x + x^2 + x^3 + x^5) / ((1 - x)*(1 - 2*x - x^3)).
 * [A232289](http://oeis.org/A232289) ([program](232/A232289.asm)): Number of nX2 0..2 arrays with every 0 next to a 1 and every 1 next to a 2 horizontally or antidiagonally
 * [A232423](http://oeis.org/A232423) ([program](232/A232423.asm)): a(n) = ceiling(sqrt(n^4 - n^3 - n^2 + n + 1))^2 - (n^4 - n^3 - n^2 + n + 1).

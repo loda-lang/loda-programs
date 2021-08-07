@@ -3,5 +3,5 @@
 
 mul $0,2
 trn $0,2
-cal $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
+seq $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
 mov $1,$0

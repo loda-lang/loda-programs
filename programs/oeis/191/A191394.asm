@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,307768 ; Number of n-step random walks on a line starting from the origin and returning to it at least once.
+  seq $2,307768 ; Number of n-step random walks on a line starting from the origin and returning to it at least once.
   add $1,$2
 lpe
 div $1,2

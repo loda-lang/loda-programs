@@ -3,6 +3,6 @@
 
 mov $2,$0
 add $0,1
-cal $0,77121 ; Number of integer squares <= n^3.
+seq $0,77121 ; Number of integer squares <= n^3.
 add $0,$2
 mov $1,$0

@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,56833 ; Nearest integer to n^2/7.
+  seq $2,56833 ; Nearest integer to n^2/7.
   add $1,$2
 lpe

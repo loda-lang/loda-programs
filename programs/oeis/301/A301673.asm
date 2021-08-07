@@ -3,5 +3,5 @@
 
 mul $0,5
 add $0,1
-cal $0,253012 ; a(n) = ceiling( (n+1) * (n+2) / 12).
+seq $0,253012 ; a(n) = ceiling( (n+1) * (n+2) / 12).
 mov $1,$0

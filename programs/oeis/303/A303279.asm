@@ -8,6 +8,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,22559 ; Sum of exponents in prime-power factorization of n!.
+  seq $0,22559 ; Sum of exponents in prime-power factorization of n!.
   add $1,$0
 lpe

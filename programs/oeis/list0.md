@@ -6269,10 +6269,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A034856](http://oeis.org/A034856) ([program](034/A034856.asm)): a(n) = binomial(n+1, 2) + n - 1 = n*(n + 3)/2 - 1.
 * [A034857](http://oeis.org/A034857) ([program](034/A034857.asm)): a(n) = C(n+2,3) + 2*C(n,2) + 2*(n-2).
 * [A034858](http://oeis.org/A034858) ([program](034/A034858.asm)): a(n) = C(n+3,4) + 3*C(n+1,3) + 5*C(n-1,2) + 7*n - 15.
+* [A034860](http://oeis.org/A034860) ([program](034/A034860.asm)): a(n) = n!*(2*n-5)/2.
 * [A034865](http://oeis.org/A034865) ([program](034/A034865.asm)): a(n) = n!*(n-4)/2.
 * [A034870](http://oeis.org/A034870) ([program](034/A034870.asm)): Even-numbered rows of Pascal's triangle.
 * [A034871](http://oeis.org/A034871) ([program](034/A034871.asm)): Odd-numbered rows of Pascal's triangle.
 * [A034886](http://oeis.org/A034886) ([program](034/A034886.asm)): Number of digits in n!.
+* [A034888](http://oeis.org/A034888) ([program](034/A034888.asm)): Number of digits in 3^n.
 * [A034908](http://oeis.org/A034908) ([program](034/A034908.asm)): One half of octo-factorial numbers.
 * [A034909](http://oeis.org/A034909) ([program](034/A034909.asm)): One third of octo-factorial numbers.
 * [A034910](http://oeis.org/A034910) ([program](034/A034910.asm)): One quarter of octo-factorial numbers.
@@ -7391,6 +7393,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A046162](http://oeis.org/A046162) ([program](046/A046162.asm)): Reduced numerators of (n-1)^2/(n^2+n+1). Arises in Routh's theorem.
 * [A046163](http://oeis.org/A046163) ([program](046/A046163.asm)): Reduced denominators of (n-1)^2/(n^2+n+1). Arises in Routh's theorem.
 * [A046173](http://oeis.org/A046173) ([program](046/A046173.asm)): Indices of square numbers that are also pentagonal.
+* [A046174](http://oeis.org/A046174) ([program](046/A046174.asm)): Indices of pentagonal numbers which are also triangular.
 * [A046175](http://oeis.org/A046175) ([program](046/A046175.asm)): Indices of triangular numbers which are also pentagonal.
 * [A046176](http://oeis.org/A046176) ([program](046/A046176.asm)): Indices of square numbers that are also hexagonal.
 * [A046177](http://oeis.org/A046177) ([program](046/A046177.asm)): Squares (A000290) which are also hexagonal numbers (A000384).
@@ -7448,6 +7451,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A046992](http://oeis.org/A046992) ([program](046/A046992.asm)): a(n) = Sum_{k=1..n} pi(k) (cf. A000720).
 * [A046998](http://oeis.org/A046998) ([program](046/A046998.asm)): a(n) = 1 - (7/6)*n + (2/3)*n^3 + (1/2)*n^4.
 * [A047053](http://oeis.org/A047053) ([program](047/A047053.asm)): a(n) = 4^n * n!.
+* [A047055](http://oeis.org/A047055) ([program](047/A047055.asm)): Quintuple factorial numbers: a(n) = Product_{k=0..n-1} (5*k + 2).
 * [A047058](http://oeis.org/A047058) ([program](047/A047058.asm)): a(n) = 6^n * n!.
 * [A047081](http://oeis.org/A047081) ([program](047/A047081.asm)): Sum{T(n,i): i=0,1,...,n}, array T as in A047080.
 * [A047171](http://oeis.org/A047171) ([program](047/A047171.asm)): Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= (n-1)/2.

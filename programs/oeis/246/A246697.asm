@@ -21,7 +21,7 @@ lpb $2
     mul $0,4
     add $0,1
     max $0,0
-    cal $0,168410 ; a(n) = 3 + 9*floor(n/2).
+    seq $0,168410 ; a(n) = 3 + 9*floor(n/2).
     mov $3,$0
     div $3,9
     mul $3,2

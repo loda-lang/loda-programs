@@ -8,7 +8,7 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,47401 ; Numbers that are congruent to {0, 1, 3, 6} mod 8.
-  cal $0,8734 ; Molien series for 3-dimensional group [2+,n ] = 2*(n/2).
+  seq $0,47401 ; Numbers that are congruent to {0, 1, 3, 6} mod 8.
+  seq $0,8734 ; Molien series for 3-dimensional group [2+,n ] = 2*(n/2).
   add $1,$0
 lpe

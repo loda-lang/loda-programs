@@ -6,7 +6,7 @@ lpb $0
   mov $1,$0
   mov $0,1
   trn $1,1
-  cal $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $1,1
 lpe
 add $1,1

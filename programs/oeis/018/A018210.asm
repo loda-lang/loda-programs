@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,5995 ; Alkane (or paraffin) numbers l(8,n).
+  seq $2,5995 ; Alkane (or paraffin) numbers l(8,n).
   add $1,$2
 lpe
 add $1,1

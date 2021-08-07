@@ -6,7 +6,7 @@ lpb $1
   lpb $0
     mov $1,$0
     mov $2,$0
-    cal $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
+    seq $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
     mov $0,$2
   lpe
 lpe

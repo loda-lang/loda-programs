@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $0,1
-cal $1,37966 ; a(n) = n^2*binomial(2*n-2, n-1).
+seq $1,37966 ; a(n) = n^2*binomial(2*n-2, n-1).
 mul $0,$1
 mov $1,$0
 div $1,2

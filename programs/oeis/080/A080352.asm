@@ -8,8 +8,8 @@ lpb $2
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,145362 ; Lower triangular array, called S1hat(-1), related to partition number array A145361.
-  cal $0,40598 ; Continued fraction for sqrt(623).
+  seq $0,145362 ; Lower triangular array, called S1hat(-1), related to partition number array A145361.
+  seq $0,40598 ; Continued fraction for sqrt(623).
   mov $4,$0
   div $4,23
   add $1,$4

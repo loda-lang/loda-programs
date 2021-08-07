@@ -4,6 +4,6 @@
 mul $0,2
 add $0,1
 max $1,$0
-cal $1,3259 ; Complement of A003258.
+seq $1,3259 ; Complement of A003258.
 sub $1,$0
 sub $1,1

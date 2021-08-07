@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   mov $0,0
-  cal $2,135087 ; Triangle T(n, k) = 2*A134058(n, k) - 1, read by rows.
+  seq $2,135087 ; Triangle T(n, k) = 2*A134058(n, k) - 1, read by rows.
   add $1,$2
   mul $1,5
   add $1,1

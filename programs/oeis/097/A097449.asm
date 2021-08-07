@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,70589 ; n^4 mod 46.
+  seq $2,70589 ; n^4 mod 46.
   pow $2,2
   add $4,$2
   add $5,$4

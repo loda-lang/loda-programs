@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
   add $1,$0
 lpe

@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   sub $0,2
   trn $2,3
-  cal $2,106729 ; Sum of two consecutive squares of Lucas numbers (A001254).
+  seq $2,106729 ; Sum of two consecutive squares of Lucas numbers (A001254).
   add $1,$2
 lpe
 lpb $0

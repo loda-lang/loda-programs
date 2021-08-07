@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,253012 ; a(n) = ceiling( (n+1) * (n+2) / 12).
+  seq $0,253012 ; a(n) = ceiling( (n+1) * (n+2) / 12).
   mov $3,$0
   mov $5,$4
   mul $5,$0

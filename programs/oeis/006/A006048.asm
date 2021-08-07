@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,6047 ; Number of entries in n-th row of Pascal's triangle not divisible by 3.
+  seq $2,6047 ; Number of entries in n-th row of Pascal's triangle not divisible by 3.
   add $1,$2
 lpe
 add $1,1

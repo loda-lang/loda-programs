@@ -3,6 +3,6 @@
 
 add $0,1
 mov $1,$0
-cal $0,67535 ; Smallest squarefree number >= n.
+seq $0,67535 ; Smallest squarefree number >= n.
 sub $0,$1
 mov $1,$0

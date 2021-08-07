@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   trn $0,4
-  cal $2,42968 ; Numbers not divisible by 4.
+  seq $2,42968 ; Numbers not divisible by 4.
   add $1,$2
 lpe

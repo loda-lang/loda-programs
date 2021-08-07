@@ -3,5 +3,5 @@
 
 mul $0,2
 trn $0,1
-cal $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
+seq $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
 mov $1,$0

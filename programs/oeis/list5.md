@@ -448,6 +448,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A257583](http://oeis.org/A257583) ([program](257/A257583.asm)): a(0)=4; thereafter a(n)=8*n*(2*n-1)*a(n-1).
 * [A257587](http://oeis.org/A257587) ([program](257/A257587.asm)): If n = abcd... in decimal, a(n) = a^2-b^2+c^2-d^2+...
 * [A257589](http://oeis.org/A257589) ([program](257/A257589.asm)): a(n) = (2n+1)^2*Catalan(n).
+* [A257594](http://oeis.org/A257594) ([program](257/A257594.asm)): Consider the hexagonal lattice packing of circles; a(n) is the maximal number of circles that can be enclosed by a closed chain of n circles.
 * [A257601](http://oeis.org/A257601) ([program](257/A257601.asm)): a(n) = n^4/12+5*n^3/3+125*n^2/12+125*n/6+2.
 * [A257602](http://oeis.org/A257602) ([program](257/A257602.asm)): Expansion of (1+x+21*x^2+x^3+x^4)/(1-x)^5.
 * [A257633](http://oeis.org/A257633) ([program](257/A257633.asm)): a(n) = binomial(4*n + 2,n).

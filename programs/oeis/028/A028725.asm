@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,331574 ; a(n) is the number of subsets of {1..n} that contain 3 even and 3 odd numbers.
+  seq $0,331574 ; a(n) is the number of subsets of {1..n} that contain 3 even and 3 odd numbers.
   mov $2,$3
   mul $2,$0
   add $1,$2

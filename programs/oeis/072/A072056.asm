@@ -1,7 +1,7 @@
 ; A072056: Number of divisors of 2*prime(n)+1.
 ; 2,2,2,4,2,4,4,4,2,2,6,6,2,4,4,2,4,4,8,4,6,4,2,2,8,4,6,4,4,2,8,2,6,6,4,4,12,4,4,2,2,6,2,6,4,8,6,4,8,8,2,2,8,2,4,4,6,4,8,2,10,2,8,4,8,4,8,12,4,4,4,2,12,6,8,4,4,8,4,12,2,4,2,6,4,2,4,8,4,6,8,4,12
 
-cal $0,40 ; The prime numbers.
-cal $0,193773 ; Number of ways to write n as 2*x*y - x - y with 1 <= x <= y.
+seq $0,40 ; The prime numbers.
+seq $0,193773 ; Number of ways to write n as 2*x*y - x - y with 1 <= x <= y.
 mov $1,$0
 mul $1,2

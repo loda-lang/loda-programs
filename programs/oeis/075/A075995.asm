@@ -17,7 +17,7 @@ lpb $2
   mod $5,$0
   add $3,$5
   mov $5,$0
-  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $4,$3
   add $4,$5
   gcd $4,2

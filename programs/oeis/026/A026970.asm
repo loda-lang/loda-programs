@@ -7,7 +7,7 @@ mov $3,$0
 cmp $3,0
 add $2,$3
 mov $0,$2
-cal $0,14131 ; a(n) = 2*a(n-1) if n odd else 2*a(n-1) + 6.
+seq $0,14131 ; a(n) = 2*a(n-1) if n odd else 2*a(n-1) + 6.
 div $1,$2
 mul $1,2
 add $1,$2

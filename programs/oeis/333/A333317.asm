@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,248577 ; Product of the number of divisors of n and the number of distinct prime divisors of n; i.e., tau(n) * omega(n).
+  seq $2,248577 ; Product of the number of divisors of n and the number of distinct prime divisors of n; i.e., tau(n) * omega(n).
   add $1,$2
 lpe

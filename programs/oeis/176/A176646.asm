@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,228317 ; The hyper-Wiener index of the triangular graph T(n) (n >= 1).
+  seq $2,228317 ; The hyper-Wiener index of the triangular graph T(n) (n >= 1).
   add $1,$2
 lpe

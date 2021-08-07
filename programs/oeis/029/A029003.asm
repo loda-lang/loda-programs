@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,8649 ; Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
+  seq $2,8649 ; Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
   add $1,$2
 lpe
 add $1,1

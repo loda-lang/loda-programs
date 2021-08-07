@@ -4,7 +4,7 @@
 add $0,1
 mov $1,1
 add $1,$0
-cal $0,323735 ; a(n) is the largest minimal distance of a binary LCD [n,2] code.
+seq $0,323735 ; a(n) is the largest minimal distance of a binary LCD [n,2] code.
 add $1,$0
 sub $1,4
 mul $1,2

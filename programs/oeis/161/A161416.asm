@@ -7,6 +7,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
+  seq $0,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
   add $1,$0
 lpe

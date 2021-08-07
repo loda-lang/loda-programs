@@ -28,6 +28,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A100066](http://oeis.org/A100066) ([program](100/A100066.asm)): Expansion of x/((1-x)sqrt(1-4x^2)).
 * [A100071](http://oeis.org/A100071) ([program](100/A100071.asm)): a(n) = n * binomial(n-1, floor((n-1)/2)) = n * max_{i=0..n} binomial(n-1, i).
 * [A100088](http://oeis.org/A100088) ([program](100/A100088.asm)): Expansion of (1-x^2)/((1-2x)(1+x^2)).
+* [A100089](http://oeis.org/A100089) ([program](100/A100089.asm)): a(n) = (3*n+1)!.
 * [A100102](http://oeis.org/A100102) ([program](100/A100102.asm)): 2^(2*n)-(2*n-1).
 * [A100103](http://oeis.org/A100103) ([program](100/A100103.asm)): a(n) = 2^(2*n) - 2*n.
 * [A100104](http://oeis.org/A100104) ([program](100/A100104.asm)): a(n) = n^3 - n^2 + 1.
@@ -291,6 +292,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A101776](http://oeis.org/A101776) ([program](101/A101776.asm)): Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
 * [A101803](http://oeis.org/A101803) ([program](101/A101803.asm)): Nearest integer to n*(phi-1), where phi is golden ratio 1.618033988749895... (A001622).
 * [A101808](http://oeis.org/A101808) ([program](101/A101808.asm)): Number of primes between two consecutive even numbers.
+* [A101810](http://oeis.org/A101810) ([program](101/A101810.asm)): Number of compositions (ordered partitions) of the n-th prime into n nonnegative integers.
 * [A101825](http://oeis.org/A101825) ([program](101/A101825.asm)): G.f.: x*(1+x)^2/(1-x^3).
 * [A101853](http://oeis.org/A101853) ([program](101/A101853.asm)): a(n) = n*(20+15*n+n^2)/6.
 * [A101854](http://oeis.org/A101854) ([program](101/A101854.asm)): a(n) = n*(n+1)*(n^2+21*n+50)/24.
@@ -1232,6 +1234,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A110344](http://oeis.org/A110344) ([program](110/A110344.asm)): a(n) = sum( n+k, k=0..n-1 ) = n(3n-1)/2 if n is even; a(n) = sum( n-k, k=0..n-1 ) = n(n+1)/2 if n is odd.
 * [A110345](http://oeis.org/A110345) ([program](110/A110345.asm)): a(n) = n +(n+1) +(n+2)... n terms if n is odd, else a(n) = n + (n-1) + (n-2) ... n terms = n(n+1)/2 = n-th triangular number if n is even.
 * [A110349](http://oeis.org/A110349) ([program](110/A110349.asm)): a(n) = n + (n+1) + (n-1) + (n+2) + (n-2) ... n terms.
+* [A110369](http://oeis.org/A110369) ([program](110/A110369.asm)): (Digit 1 repeated n times) + n.
 * [A110391](http://oeis.org/A110391) ([program](110/A110391.asm)): a(n) = L(3*n)/L(n), where L(n) = Lucas number.
 * [A110426](http://oeis.org/A110426) ([program](110/A110426.asm)): The r-th term of the n-th row of the following array contains the sum of r successively decreasing integers beginning from n. 0<r<=n. e.g. the row corresponding to 4 contains 4, (3+2),{(1) +(0)+(-1)}, {(-2)+(-3)+(-4)+(-5)} ----> 4,5,0,-14 1 2 1 3 3 -3 4 5 0 -14 5 7 3 -10 -35 6 9 6 -6 -30 -69 ... Sequence contains the row sums.
 * [A110427](http://oeis.org/A110427) ([program](110/A110427.asm)): The r-th term of the n-th row of the following array contains the sum of r successively decreasing integers beginning from n. 0 < r <= n. E.g., the row corresponding to 4 contains 4, (3+2),{(1) +(0)+(-1)}, {(-2)+(-3)+(-4)+(-5)} ----> 4,5,0,-14 1 2 1 3 3 -3 4 5 0 -14 5 7 3 -10 -35 6 9 6 -6 -30 -69 ... Sequence contains the leading diagonal.
@@ -2067,6 +2070,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A118425](http://oeis.org/A118425) ([program](118/A118425.asm)): Number of binary sequences of length n containing exactly one subsequence 001.
 * [A118442](http://oeis.org/A118442) ([program](118/A118442.asm)): Column 0 of triangle A118441, which is the matrix log of triangle A118435.
 * [A118465](http://oeis.org/A118465) ([program](118/A118465.asm)): a(n) = 8*n^3 + n.
+* [A118498](http://oeis.org/A118498) ([program](118/A118498.asm)): a(n) = 11*n^20 + 11*n^2 + 152821.
 * [A118512](http://oeis.org/A118512) ([program](118/A118512.asm)): Define sequence S_m by: initial term = m, reverse digits and add 1 to get next term. Entry shows S_11. This reaches a cycle of length 9 in 18 steps.
 * [A118513](http://oeis.org/A118513) ([program](118/A118513.asm)): Define sequence S_m by: initial term = m, reverse digits and add 1 to get next term. Entry shows S_13. This reaches a cycle of length 9 in 15 steps.
 * [A118517](http://oeis.org/A118517) ([program](118/A118517.asm)): Define sequence S_m by: initial term = m, reverse digits and add 3 to get next term. Entry shows S_1. This reaches a cycle of length 3 in 1 step.

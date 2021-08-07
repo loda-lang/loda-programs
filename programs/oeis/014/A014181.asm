@@ -3,5 +3,5 @@
 
 add $0,10
 mov $1,$0
-cal $1,152966 ; Twice repdigit numbers.
+seq $1,152966 ; Twice repdigit numbers.
 div $1,2

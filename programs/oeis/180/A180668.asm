@@ -5,6 +5,6 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
-  cal $2,27024 ; a(n) = T(n,n+2), T given by A027023.
+  seq $2,27024 ; a(n) = T(n,n+2), T given by A027023.
   add $1,$2
 lpe

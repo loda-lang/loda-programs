@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,102741 ; a(n) = 3^4 * binomial(n+3, 4).
+  seq $2,102741 ; a(n) = 3^4 * binomial(n+3, 4).
   add $1,$2
   mul $1,2
 lpe

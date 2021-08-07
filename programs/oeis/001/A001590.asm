@@ -17,7 +17,7 @@ lpb $3
     sub $0,1
     mov $10,$0
     max $10,0
-    cal $10,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
+    seq $10,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
     mov $4,$10
     mov $6,$7
     mul $6,$10

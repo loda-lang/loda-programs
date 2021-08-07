@@ -4,7 +4,7 @@
 add $0,1
 mov $1,$0
 add $1,$0
-cal $0,134287 ; Fifth column of triangle A103371 (without leading zeros).
+seq $0,134287 ; Fifth column of triangle A103371 (without leading zeros).
 mul $0,$1
 mov $1,$0
 div $1,60

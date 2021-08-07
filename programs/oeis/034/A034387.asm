@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   mov $3,$0
-  cal $3,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+  seq $3,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
   div $0,$3
   trn $3,$0
   add $1,$3

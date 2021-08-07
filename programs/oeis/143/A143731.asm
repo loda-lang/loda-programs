@@ -1,4 +1,4 @@
-; A143731: Characteristic function of numbers n with at least two distinct prime factors.
+; A143731: Characteristic function of numbers with at least two distinct prime factors (A024619).
 ; 0,0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1
 
 seq $0,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.

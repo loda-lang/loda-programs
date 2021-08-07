@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,183142 ; Beatty sequence for 2/(3+sqrt(3)).
+  seq $2,183142 ; Beatty sequence for 2/(3+sqrt(3)).
   add $1,$2
 lpe

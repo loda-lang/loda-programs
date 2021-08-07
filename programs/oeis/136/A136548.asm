@@ -5,7 +5,7 @@ mov $3,1
 lpb $0
   mov $2,$0
   sub $0,$3
-  cal $2,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+  seq $2,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
   sub $2,1
   mov $3,$2
   min $3,1

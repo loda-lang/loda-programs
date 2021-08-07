@@ -7,6 +7,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,99559 ; a(n) = Sum_{k=0..floor(n/5)} C(n-4k,k+1).
+  seq $0,99559 ; a(n) = Sum_{k=0..floor(n/5)} C(n-4k,k+1).
   add $1,$0
 lpe

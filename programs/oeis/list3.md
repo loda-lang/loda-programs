@@ -1295,6 +1295,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A159917](http://oeis.org/A159917) ([program](159/A159917.asm)): Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 01, starting from a(0) = 0.
 * [A159918](http://oeis.org/A159918) ([program](159/A159918.asm)): Number of ones in binary representation of n^2.
 * [A159920](http://oeis.org/A159920) ([program](159/A159920.asm)): Sums of the antidiagonals of Sundaram's sieve (A159919).
+* [A159928](http://oeis.org/A159928) ([program](159/A159928.asm)): a(n) is the sum of the terms of row n of triangle A159927.
 * [A159938](http://oeis.org/A159938) ([program](159/A159938.asm)): The number of homogeneous trisubstituted linear alkanes.
 * [A159940](http://oeis.org/A159940) ([program](159/A159940.asm)): The number of trisubstitution products with composition C_n H_(2n-1) X_2 Y.
 * [A159941](http://oeis.org/A159941) ([program](159/A159941.asm)): Number of trisubstituted linear alkanes of composition C_n H_(2n-1) XYZ.
@@ -4745,6 +4746,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A187361](http://oeis.org/A187361) ([program](187/A187361.asm)): Pell trisection: Pell(3*n+1), n >= 0.
 * [A187364](http://oeis.org/A187364) ([program](187/A187364.asm)): Trisection of A000984 (central binomial coefficients): binomial(2(3n+1),3n+1)/2, n>=0.
 * [A187365](http://oeis.org/A187365) ([program](187/A187365.asm)): Trisection of A000984 (central binomial coefficients): binomial(2(3n+2),3n+2)/3!, n>=0.
+* [A187366](http://oeis.org/A187366) ([program](187/A187366.asm)): One half of a trisection of A001700: binomial(6n+5,3(n+1))/2, n>=0.
 * [A187378](http://oeis.org/A187378) ([program](187/A187378.asm)): Number of 4-step S, NW and NE-moving king's tours on an n X n board summed over all starting positions
 * [A187387](http://oeis.org/A187387) ([program](187/A187387.asm)): Floor(r*n), where r=1+sqrt(6)+sqrt(5); complement of A187388.
 * [A187388](http://oeis.org/A187388) ([program](187/A187388.asm)): Floor(s*n), where s=1+sqrt(6)-sqrt(5); complement of A187387.

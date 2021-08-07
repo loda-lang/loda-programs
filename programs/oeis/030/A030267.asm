@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,2
-cal $0,29907 ; a(n+1) = a(n) + a(n-1) + Fibonacci(n).
+seq $0,29907 ; a(n+1) = a(n) + a(n-1) + Fibonacci(n).
 mov $1,$0
 div $1,2

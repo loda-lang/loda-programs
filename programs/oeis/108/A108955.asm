@@ -3,6 +3,6 @@
 
 mul $0,3
 add $0,203
-cal $0,202305 ; Floor(sqrt(5*n)).
+seq $0,202305 ; Floor(sqrt(5*n)).
 mov $1,$0
 sub $1,30

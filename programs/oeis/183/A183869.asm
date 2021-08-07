@@ -4,6 +4,6 @@
 add $0,1
 mov $1,$0
 mul $0,2
-cal $0,103128 ; a(n) = floor(sqrt(2n-1)).
+seq $0,103128 ; a(n) = floor(sqrt(2n-1)).
 add $1,$0
 sub $1,1

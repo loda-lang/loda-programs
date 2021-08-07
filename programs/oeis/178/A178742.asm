@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,153234 ; a(n) = floor(2^n/9).
+  seq $2,153234 ; a(n) = floor(2^n/9).
   add $1,$2
 lpe

@@ -16,7 +16,7 @@ lpb $2
     mov $0,$6
     sub $5,1
     sub $0,$5
-    cal $0,8720 ; Molien series for 3-dimensional group [2,5] = *225.
+    seq $0,8720 ; Molien series for 3-dimensional group [2,5] = *225.
     mov $3,$0
     mul $3,2
     add $7,$3

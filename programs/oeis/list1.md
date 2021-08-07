@@ -3124,6 +3124,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A072561](http://oeis.org/A072561) ([program](072/A072561.asm)): Denominators of w(n) equals 3 where w(1)=w(2)=w(3)=1, w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3).
 * [A072586](http://oeis.org/A072586) ([program](072/A072586.asm)): Number of numbers <= n having prime factors with odd exponents only.
 * [A072608](http://oeis.org/A072608) ([program](072/A072608.asm)): Parity of remainder Mod[p(n),n]=A004648(n).
+* [A072630](http://oeis.org/A072630) ([program](072/A072630.asm)): Values of n where A072629 switches from 01010.. into 0000.. or back.
 * [A072632](http://oeis.org/A072632) ([program](072/A072632.asm)): Solutions to A072631[n]=0.
 * [A072633](http://oeis.org/A072633) ([program](072/A072633.asm)): Smallest positive integer m where 1^n+2^n+3^n+...+m^n is greater than or equal to (m+1)^n.
 * [A072643](http://oeis.org/A072643) ([program](072/A072643.asm)): Half of the binary width of the terms of A014486, the number of digits in A063171(n)/2.
@@ -4330,6 +4331,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A081672](http://oeis.org/A081672) ([program](081/A081672.asm)): Expansion of exp(2x) - exp(0) + BesselI_0(2x).
 * [A081674](http://oeis.org/A081674) ([program](081/A081674.asm)): Generalized Poly-Bernoulli numbers.
 * [A081676](http://oeis.org/A081676) ([program](081/A081676.asm)): Largest perfect power <= n.
+* [A081688](http://oeis.org/A081688) ([program](081/A081688.asm)): 0 followed by A030124 - 1.
 * [A081689](http://oeis.org/A081689) ([program](081/A081689.asm)): A005228 - 1.
 * [A081690](http://oeis.org/A081690) ([program](081/A081690.asm)): From P-positions in a certain game.
 * [A081704](http://oeis.org/A081704) ([program](081/A081704.asm)): Let f(0)=1, f(1)=t, f(n+1) = (f(n)^2+t^n)/f(n-1). f(t) is a polynomial with integer coefficients. Then a(n) = f(n) when t=3.
@@ -5820,6 +5822,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A093916](http://oeis.org/A093916) ([program](093/A093916.asm)): a(2*k-1)=(2*k-1)^2+2-k, a(2*k)=6*k^2+2-k: First column of the triangle A093915.
 * [A093917](http://oeis.org/A093917) ([program](093/A093917.asm)): a(n) = n^3+n for odd n, (n^3+n)*3/2 for even n: Row sums of A093915.
 * [A093918](http://oeis.org/A093918) ([program](093/A093918.asm)): a(2k-1)=(2k-1)^2+k, a(2k)=6k^2+k+1: Last term in rows of triangle A093915.
+* [A093935](http://oeis.org/A093935) ([program](093/A093935.asm)): a(1) = 1, a(n+1) = a(n) + n*(a(1) + a(2) + ... + a(n)).
 * [A093960](http://oeis.org/A093960) ([program](093/A093960.asm)): a(1) = 1, a(2) = 2, a(n + 1) = n*a(1) + (n-1)*a(2) + ...(n-r)*a(r + 1) + ... + a(n).
 * [A093964](http://oeis.org/A093964) ([program](093/A093964.asm)): a(n) = Sum_{k=1..n} k*k!*C(n,k).
 * [A093965](http://oeis.org/A093965) ([program](093/A093965.asm)): Number of functions of [n] to [n] that simultaneously avoid the patterns 112 and 221.

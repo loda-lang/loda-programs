@@ -1,7 +1,7 @@
 ; A067792: a(n) is the least prime >= sigma(n).
 ; 2,3,5,7,7,13,11,17,13,19,13,29,17,29,29,31,19,41,23,43,37,37,29,61,31,43,41,59,31,73,37,67,53,59,53,97,41,61,59,97,43,97,47,89,79,73,53,127,59,97,73,101,59,127,73,127,83,97,61,173,67,97,107,127,89,149,71,127,97,149,73,197,79,127,127,149,97,173,83,191,127,127,89,227,109,137,127,181,97,239,113,173,131,149,127,257,101,173,157,223
 
-cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,1
-cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
+seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 mov $1,$0

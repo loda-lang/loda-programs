@@ -9,7 +9,7 @@ lpb $3
   add $0,$3
   sub $0,1
   div $0,3
-  cal $0,272100 ; Integers n that are the sum of three nonzero squares while n*(n+1) is not.
+  seq $0,272100 ; Integers n that are the sum of three nonzero squares while n*(n+1) is not.
   mov $2,$3
   mov $4,$0
   lpb $2

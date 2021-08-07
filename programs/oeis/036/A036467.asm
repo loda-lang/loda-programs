@@ -2,6 +2,6 @@
 ; 1,1,2,3,4,7,6,11,8,15,14,17,20,21,22,25,28,31,30,37,34,39,40,43,46,51,50,53,54,55,58,69,62,75,64,85,66,91,72,95,78,101,80,111,82,115,84,127,96,131,98,135,104,137,114,143,120,149,122,155,126,157,136,171,140,173,144,187,150,197,152,201,158,209,164,215,168,221,176,225,184,235,186,245,188,251,192,257,200,261,202,265,214,273,218,281,222,287,234,289
 
 trn $0,1
-cal $0,86529 ; Beginning with 2, distinct even numbers such that the arithmetic mean of successive pairs of terms gives odd primes in their natural order. {a(n) + a(n+1)}/2 = prime(n+1).
+seq $0,86529 ; Beginning with 2, distinct even numbers such that the arithmetic mean of successive pairs of terms gives odd primes in their natural order. {a(n) + a(n+1)}/2 = prime(n+1).
 mov $1,$0
 div $1,2
