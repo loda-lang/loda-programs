@@ -5,7 +5,7 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
-  cal $2,126473 ; Number of strings over a 5 symbol alphabet with adjacent symbols differing by three or less.
+  seq $2,126473 ; Number of strings over a 5 symbol alphabet with adjacent symbols differing by three or less.
   add $1,$2
 lpe
 mul $1,6

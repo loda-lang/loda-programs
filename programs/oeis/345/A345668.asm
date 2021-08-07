@@ -4,7 +4,7 @@
 add $0,1
 mov $1,2
 sub $1,$0
-cal $0,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
+seq $0,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
 add $1,$0
 add $0,$1
 mov $1,138100

@@ -1460,6 +1460,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007531](http://oeis.org/A007531) ([program](007/A007531.asm)): a(n) = n*(n-1)*(n-2) (or n!/(n-3)!).
 * [A007533](http://oeis.org/A007533) ([program](007/A007533.asm)): (5n+1)^2 + 4n+1.
 * [A007538](http://oeis.org/A007538) ([program](007/A007538.asm)): A self-generating sequence: there are a(n) 3's between successive 2's.
+* [A007559](http://oeis.org/A007559) ([program](007/A007559.asm)): Triple factorial numbers (3*n-2)!!! with leading 1 added.
 * [A007566](http://oeis.org/A007566) ([program](007/A007566.asm)): a(n+1) = (2n+3)*a(n) - 2n*a(n-1) + 8n, a(0) = 1, a(1) = 3.
 * [A007572](http://oeis.org/A007572) ([program](007/A007572.asm)): Generalization of the golden ratio (expansion of (5-13x)/((1+x)(1-4x))).
 * [A007574](http://oeis.org/A007574) ([program](007/A007574.asm)): Patterns in a dual ring.
@@ -1491,6 +1492,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A007664](http://oeis.org/A007664) ([program](007/A007664.asm)): Reve's puzzle: number of moves needed to solve the Towers of Hanoi puzzle with 4 pegs and n disks, according to the Frame-Stewart algorithm.
 * [A007680](http://oeis.org/A007680) ([program](007/A007680.asm)): a(n) = (2n+1)*n!.
 * [A007689](http://oeis.org/A007689) ([program](007/A007689.asm)): a(n) = 2^n + 3^n.
+* [A007696](http://oeis.org/A007696) ([program](007/A007696.asm)): Quartic (or 4-fold) factorial numbers: a(n) = Product_{k = 0..n-1} (4*k + 1).
 * [A007715](http://oeis.org/A007715) ([program](007/A007715.asm)): Number of 5-leaf rooted trees with n levels.
 * [A007742](http://oeis.org/A007742) ([program](007/A007742.asm)): a(n) = n*(4*n+1).
 * [A007744](http://oeis.org/A007744) ([program](007/A007744.asm)): Expansion of (1+6*x)/(1-4*x)^(7/2).
@@ -5753,7 +5755,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A031338](http://oeis.org/A031338) ([program](031/A031338.asm)): Prime(5n).
 * [A031339](http://oeis.org/A031339) ([program](031/A031339.asm)): Prime(6n).
 * [A031340](http://oeis.org/A031340) ([program](031/A031340.asm)): Prime(7n).
-* [A031341](http://oeis.org/A031341) ([program](031/A031341.asm)): a(n) = prime(8n).
+* [A031341](http://oeis.org/A031341) ([program](031/A031341.asm)): a(n) = prime(8*n).
 * [A031342](http://oeis.org/A031342) ([program](031/A031342.asm)): Prime(9n).
 * [A031343](http://oeis.org/A031343) ([program](031/A031343.asm)): a(n) = prime(10*n).
 * [A031368](http://oeis.org/A031368) ([program](031/A031368.asm)): Odd-indexed primes: a(n) = prime(2n-1).
@@ -7339,6 +7341,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A045747](http://oeis.org/A045747) ([program](045/A045747.asm)): Number of prime factors of n!!!! (A007662), with multiplicity.
 * [A045749](http://oeis.org/A045749) ([program](045/A045749.asm)): Extension of Beatty sequence; complement of A045750.
 * [A045750](http://oeis.org/A045750) ([program](045/A045750.asm)): Extension of Beatty sequence, complement of A045749.
+* [A045754](http://oeis.org/A045754) ([program](045/A045754.asm)): 7-fold factorials: a(n) = Product_{k=0..n-1} (7*k+1).
+* [A045755](http://oeis.org/A045755) ([program](045/A045755.asm)): 8-fold factorials: a(n) = Product_{k=0..n-1} (8*k+1).
+* [A045756](http://oeis.org/A045756) ([program](045/A045756.asm)): Expansion of e.g.f. (1-9*x)^(-1/9), 9-factorial numbers.
 * [A045757](http://oeis.org/A045757) ([program](045/A045757.asm)): 10-factorial numbers.
 * [A045766](http://oeis.org/A045766) ([program](045/A045766.asm)): Number of prime factors of double factorials n!! (A006882), with multiplicity.
 * [A045767](http://oeis.org/A045767) ([program](045/A045767.asm)): Number of prime factors of triple factorials n!!! (A007661), with multiplicity.
@@ -8132,18 +8137,18 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A049620](http://oeis.org/A049620) ([program](049/A049620.asm)): a(n) = T(n,n), array T as in A049615.
 * [A049625](http://oeis.org/A049625) ([program](049/A049625.asm)): Congruent to 1, 2, 4, 6, 8 or 9 mod 11, but with 2 instead of 1.
 * [A049626](http://oeis.org/A049626) ([program](049/A049626.asm)): a(n) = T(n,4), array T as in A049615.
-* [A049628](http://oeis.org/A049628) ([program](049/A049628.asm)): a(n)=Sum{T(i,n-i): i=0,1,...,n}, array T as in A049627.
+* [A049628](http://oeis.org/A049628) ([program](049/A049628.asm)): a(n) = Sum_{i=0..n} T(i,n-i) where T is A049627.
 * [A049629](http://oeis.org/A049629) ([program](049/A049629.asm)): a(n) = (F(6*n+5) - F(6*n+1))/4 = (F(6*n+4) + F(6*n+2))/4, where F = A000045.
-* [A049632](http://oeis.org/A049632) ([program](049/A049632.asm)): a(n)=T(n,n), array T as in A049627.
-* [A049633](http://oeis.org/A049633) ([program](049/A049633.asm)): a(n)=T(n,n+1), array T as in A049627.
+* [A049632](http://oeis.org/A049632) ([program](049/A049632.asm)): a(n) = T(n,n), array T as in A049627.
+* [A049633](http://oeis.org/A049633) ([program](049/A049633.asm)): a(n) = T(n,n+1), array T as in A049627.
 * [A049636](http://oeis.org/A049636) ([program](049/A049636.asm)): Congruent to 0 or 2 mod 3, but not equal to 0 or 3.
 * [A049637](http://oeis.org/A049637) ([program](049/A049637.asm)): Congruent to 2, 3, 6, 8, 10 or 12 mod 13, but not equal to 3.
-* [A049638](http://oeis.org/A049638) ([program](049/A049638.asm)): a(n)=T(n,4), array T as in A049627.
+* [A049638](http://oeis.org/A049638) ([program](049/A049638.asm)): a(n) = T(n,4), array T as in A049627.
 * [A049640](http://oeis.org/A049640) ([program](049/A049640.asm)): a(n) = Sum_{i=0..n} T(i,n-i), array T as in A049639.
 * [A049641](http://oeis.org/A049641) ([program](049/A049641.asm)): a(n) = Sum_{i=0..n} ((-1)^i)*T(i,n-i), array T as in A049639.
 * [A049643](http://oeis.org/A049643) ([program](049/A049643.asm)): Number of fractions in Farey series of order n.
 * [A049644](http://oeis.org/A049644) ([program](049/A049644.asm)): T(n,n), array T given by A049639.
-* [A049647](http://oeis.org/A049647) ([program](049/A049647.asm)): T(n,n+2), array T given by A049639.
+* [A049647](http://oeis.org/A049647) ([program](049/A049647.asm)): a(n) = T(n,n+2), array T given by A049639.
 * [A049648](http://oeis.org/A049648) ([program](049/A049648.asm)): T(n,n+1), array T as in A049687 and T(2n,2n+2), array T given by A049639.
 * [A049651](http://oeis.org/A049651) ([program](049/A049651.asm)): a(n) = (F(3*n+1) - 1)/2, where F=A000045 (the Fibonacci sequence).
 * [A049652](http://oeis.org/A049652) ([program](049/A049652.asm)): a(n) = (F(3*n+2) - 1)/4, where F=A000045 (the Fibonacci sequence).

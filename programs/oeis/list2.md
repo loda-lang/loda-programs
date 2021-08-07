@@ -798,7 +798,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A106487](http://oeis.org/A106487) ([program](106/A106487.asm)): Number of leaves in combinatorial game trees.
 * [A106505](http://oeis.org/A106505) ([program](106/A106505.asm)): Ordered and uniqued length of side common to the two angles, one being the double of the other, of a primitive integer-sided triangle.
 * [A106510](http://oeis.org/A106510) ([program](106/A106510.asm)): Expansion of (1+x)^2/(1+x+x^2).
-* [A106514](http://oeis.org/A106514) ([program](106/A106514.asm)): Expansion of (1-x)/((1-2x)(1-2x-x^2)).
+* [A106514](http://oeis.org/A106514) ([program](106/A106514.asm)): Expansion of (1-x)/((1-2*x)*(1-2*x-x^2)).
 * [A106540](http://oeis.org/A106540) ([program](106/A106540.asm)): a(n)= a(n-1)-2*a(n-2)-3*a(n-3)-...-(n-1)*a(1), beginning with 1.
 * [A106541](http://oeis.org/A106541) ([program](106/A106541.asm)): a(n) = a(n-1)-2*a(n-2)-3*a(n-3)-...-(n-1)*a(1), beginning with 2.
 * [A106542](http://oeis.org/A106542) ([program](106/A106542.asm)): a(n) = a(n-1) - 2*a(n-2) - 3*a(n-3) - ... - (n-1)*a(1), beginning with 3.
@@ -2708,7 +2708,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A124925](http://oeis.org/A124925) ([program](124/A124925.asm)): Interlaced triples: a(3n+1)=1, a(3n+2) = 2n+3, a(3n+3)= A028387(n).
 * [A124927](http://oeis.org/A124927) ([program](124/A124927.asm)): Triangle read by rows: T(n,0)=1, T(n,k)=2*binomial(n,k) if k>0 (0<=k<=n).
 * [A124928](http://oeis.org/A124928) ([program](124/A124928.asm)): Triangle read by rows: T(n,0) = 1, T(n,k) = 3*binomial(n,k) if k>=0 (0<=k<=n).
-* [A125025](http://oeis.org/A125025) ([program](125/A125025.asm)): Lengths of rows in A124570.
 * [A125082](http://oeis.org/A125082) ([program](125/A125082.asm)): a(n) = n^4 - n^3 - n^2 - n - 1.
 * [A125083](http://oeis.org/A125083) ([program](125/A125083.asm)): a(n) = n^5-n^4-n^3-n^2-n-1.
 * [A125089](http://oeis.org/A125089) ([program](125/A125089.asm)): First nonzero digit of solution to log_n(z) = -z, where log_n stands for the base-n logarithm.
@@ -5337,6 +5336,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144721](http://oeis.org/A144721) ([program](144/A144721.asm)): a(0) = 2, a(1) = 5, a(n) = 4 * a(n-1) - a(n-2).
 * [A144750](http://oeis.org/A144750) ([program](144/A144750.asm)): A098777 mod 9.
 * [A144769](http://oeis.org/A144769) ([program](144/A144769.asm)): a(n) = floor(prime(n)/3).
+* [A144773](http://oeis.org/A144773) ([program](144/A144773.asm)): 10-fold factorials: Product_{k=0..n-1} (10*k+1).
 * [A144786](http://oeis.org/A144786) ([program](144/A144786.asm)): If n is an oblong number A002378, then a(n)=a(j) where j is the number of oblong numbers in (0,n], otherwise a(n)=n.
 * [A144831](http://oeis.org/A144831) ([program](144/A144831.asm)): (n+1)^2 - (smallest prime > n^2).
 * [A144844](http://oeis.org/A144844) ([program](144/A144844.asm)): a(n) = ((2 + sqrt(2))^n - (2 - sqrt(2))^n)^2/8.

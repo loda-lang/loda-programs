@@ -5,7 +5,7 @@ lpb $0
   trn $0,1
   mov $1,$0
   mov $0,0
-  cal $1,46898 ; Partial sums of A046897.
+  seq $1,46898 ; Partial sums of A046897.
 lpe
 mul $1,8
 add $1,1

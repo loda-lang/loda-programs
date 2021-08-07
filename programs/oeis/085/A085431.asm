@@ -3,7 +3,7 @@
 
 mov $1,2
 pow $1,$0
-cal $0,46933 ; Number of composites between successive primes.
+seq $0,46933 ; Number of composites between successive primes.
 add $1,$0
 div $1,2
 add $1,1

@@ -4,7 +4,7 @@
 pow $0,2
 lpb $0
   mov $2,$0
-  cal $2,292272 ; a(n) = n - A048735(n) = n - (n AND floor(n/2)).
+  seq $2,292272 ; a(n) = n - A048735(n) = n - (n AND floor(n/2)).
   mov $3,$2
   cmp $3,0
   add $2,$3

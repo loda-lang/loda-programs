@@ -5,7 +5,7 @@ add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,8413 ; Coordination sequence for 5-dimensional cubic lattice.
+  seq $2,8413 ; Coordination sequence for 5-dimensional cubic lattice.
   add $1,$2
 lpe
 div $1,2

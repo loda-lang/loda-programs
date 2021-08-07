@@ -1414,6 +1414,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A161003](http://oeis.org/A161003) ([program](161/A161003.asm)): A list of the composite numbers divided by their largest prime factors.
 * [A161007](http://oeis.org/A161007) ([program](161/A161007.asm)): a(n+1) = 2*a(n) + 16*a(n-1), a(0)=0, a(1)=1.
 * [A161116](http://oeis.org/A161116) ([program](161/A161116.asm)): a(n) is the number of nontrivial positive divisors of 2n+3.
+* [A161122](http://oeis.org/A161122) ([program](161/A161122.asm)): Number of cycles with entries of the same parity in all fixed-point-free involutions of {1,2,...,2n}.
 * [A161124](http://oeis.org/A161124) ([program](161/A161124.asm)): Number of inversions in all fixed-point-free involutions of {1,2,...,2n}.
 * [A161168](http://oeis.org/A161168) ([program](161/A161168.asm)): a(n) = 2^n + 4^n.
 * [A161175](http://oeis.org/A161175) ([program](161/A161175.asm)): Triangle read by rows, modified Thue-Morse sequence (A010060 with offset 1): change 0 to 2, else 1.
@@ -3136,6 +3137,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A173197](http://oeis.org/A173197) ([program](173/A173197.asm)): a(0)=1, a(n)= 2+2^n/6+4*(-1)^n/3, n>0.
 * [A173200](http://oeis.org/A173200) ([program](173/A173200.asm)): Solutions y of the Mordell equation y^2 = x^3 - 3a^2 - 1 for a = 0,1,2, ... (solutions x are given by A053755).
 * [A173202](http://oeis.org/A173202) ([program](173/A173202.asm)): Solutions y of the Mordell equation y^2 = x^3 - 3a^2 + 1 for a = 0,1,2, ... (solutions x are given by the sequence A000466)
+* [A173205](http://oeis.org/A173205) ([program](173/A173205.asm)): a(n) = 98*a(n-1)-a(n-2) for n>2, a(1)=1, a(2)=98.
 * [A173209](http://oeis.org/A173209) ([program](173/A173209.asm)): Partial sums of A000069.
 * [A173234](http://oeis.org/A173234) ([program](173/A173234.asm)): Expansion of x*(1+3*x^2-2*x^3+2*x^4-x^5)/((1+x)*(x-1)^2*(x^2+1)^2).
 * [A173235](http://oeis.org/A173235) ([program](173/A173235.asm)): a(n) = n^(n-1) + n - 1.
@@ -4613,6 +4615,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A186329](http://oeis.org/A186329) ([program](186/A186329.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the pentagonal numbers and the hexagonal numbers.  Complement of A186328.
 * [A186330](http://oeis.org/A186330) ([program](186/A186330.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the pentagonal numbers and the hexagonal numbers.  Complement of A186331.
 * [A186331](http://oeis.org/A186331) ([program](186/A186331.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the pentagonal numbers and the hexagonal numbers.  Complement of A186330.
+* [A186339](http://oeis.org/A186339) ([program](186/A186339.asm)): a(n)=A006125(n+1)*2^A001840(n).
 * [A186340](http://oeis.org/A186340) ([program](186/A186340.asm)): a(n) = 2^A001840(n).
 * [A186342](http://oeis.org/A186342) ([program](186/A186342.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the pentagonal numbers and the octagonal numbers.  Complement of A186343.
 * [A186343](http://oeis.org/A186343) ([program](186/A186343.asm)): Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the pentagonal numbers and the octagonal numbers.  Complement of A186342.

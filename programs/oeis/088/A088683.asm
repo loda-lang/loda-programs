@@ -3,6 +3,6 @@
 
 add $0,1
 mul $0,3
-cal $0,46930 ; Size of sea of composite numbers surrounding n-th prime.
+seq $0,46930 ; Size of sea of composite numbers surrounding n-th prime.
 mov $1,$0
 add $1,2

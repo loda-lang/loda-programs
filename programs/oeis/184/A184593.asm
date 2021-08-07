@@ -8,7 +8,7 @@ lpb $4
   mov $0,$2
   sub $4,1
   sub $0,$4
-  cal $0,40 ; The prime numbers.
+  seq $0,40 ; The prime numbers.
   mod $0,10
   mov $3,24010019
   sub $3,$0

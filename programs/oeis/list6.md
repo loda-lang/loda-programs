@@ -2318,6 +2318,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344372](http://oeis.org/A344372) ([program](344/A344372.asm)): a(n) = Sum_{k=1..2n} (-1)^k gcd(k,2n).
 * [A344389](http://oeis.org/A344389) ([program](344/A344389.asm)): a(n) is the number of nonnegative numbers < 10^n with all digits distinct.
 * [A344399](http://oeis.org/A344399) ([program](344/A344399.asm)): a(n) = 4^n*binomial(n - 1/2, -1/2)*(n^2 + 1).
+* [A344402](http://oeis.org/A344402) ([program](344/A344402.asm)): a(n) = denominator(R(n,3)), where R(n,d) = (Product_{j prime to d)} Pochhammer(j/d, n)) / n!.
 * [A344404](http://oeis.org/A344404) ([program](344/A344404.asm)): a(n) = Sum_{d|n} floor(n/d^2).
 * [A344478](http://oeis.org/A344478) ([program](344/A344478.asm)): Number of unitary prime divisors p of n such that n/p is squarefree.
 * [A344483](http://oeis.org/A344483) ([program](344/A344483.asm)): a(n) = n^2 + sigma(n) - n*d(n).

@@ -3,5 +3,5 @@
 
 pow $0,4
 mul $0,2
-cal $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
 add $1,$0

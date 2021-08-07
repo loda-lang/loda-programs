@@ -5,6 +5,6 @@ lpb $0
   mov $1,$0
   mul $0,$2
   trn $1,1
-  cal $1,43569 ; Numbers whose base-2 representation has exactly 2 runs.
+  seq $1,43569 ; Numbers whose base-2 representation has exactly 2 runs.
 lpe
 div $1,2

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,328308 ; a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
+  seq $2,328308 ; a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
   add $1,$2
 lpe
 add $1,1

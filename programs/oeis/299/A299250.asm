@@ -4,5 +4,5 @@
 mul $0,3
 div $0,2
 add $0,1
-cal $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
+seq $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
 mov $1,$0

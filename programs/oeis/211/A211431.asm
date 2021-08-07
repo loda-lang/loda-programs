@@ -3,7 +3,7 @@
 
 mov $3,$0
 mul $0,2
-cal $0,31876 ; a(n) = Sum_{k=0..n} floor(k^(1/3)).
+seq $0,31876 ; a(n) = Sum_{k=0..n} floor(k^(1/3)).
 mul $0,2
 mov $1,$0
 add $1,1

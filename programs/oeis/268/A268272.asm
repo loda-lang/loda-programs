@@ -4,8 +4,8 @@
 mov $1,$0
 add $1,$0
 mov $0,$1
-cal $0,5678 ; A squarefree ternary sequence.
-cal $0,266286 ; Number of OFF (white) cells in the n-th iteration of the "Rule 13" elementary cellular automaton starting with a single ON (black) cell.
+seq $0,5678 ; A squarefree ternary sequence.
+seq $0,266286 ; Number of OFF (white) cells in the n-th iteration of the "Rule 13" elementary cellular automaton starting with a single ON (black) cell.
 add $1,144
 add $1,$0
 sub $1,146

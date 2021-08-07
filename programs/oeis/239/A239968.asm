@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,62298 ; Number of nonprimes <= n.
+  seq $0,62298 ; Number of nonprimes <= n.
   mov $2,$3
   mov $4,$0
   mul $4,$0

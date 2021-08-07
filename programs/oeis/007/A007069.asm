@@ -3,7 +3,7 @@
 
 mul $0,2
 mov $2,$0
-cal $0,80764 ; First differences of A049472, floor(n/sqrt(2)).
+seq $0,80764 ; First differences of A049472, floor(n/sqrt(2)).
 mov $1,$0
 add $0,$2
 cmp $1,0

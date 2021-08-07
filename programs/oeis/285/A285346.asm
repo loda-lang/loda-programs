@@ -3,8 +3,8 @@
 
 add $0,1
 mov $1,$0
-cal $0,189668 ; Fixed point of the morphism 0->010, 1->100.
-cal $0,99425 ; Expansion of (1+x^2)/(1-2*x-x^2).
+seq $0,189668 ; Fixed point of the morphism 0->010, 1->100.
+seq $0,99425 ; Expansion of (1+x^2)/(1-2*x-x^2).
 add $1,1
 mul $1,4
 add $1,1

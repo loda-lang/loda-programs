@@ -1,7 +1,7 @@
 ; A053575: Odd part of phi(n): a(n) = A000265(A000010(n)).
 ; 1,1,1,1,1,1,3,1,3,1,5,1,3,3,1,1,1,3,9,1,3,5,11,1,5,3,9,3,7,1,15,1,5,1,3,3,9,9,3,1,5,3,21,5,3,11,23,1,21,5,1,3,13,9,5,3,9,7,29,1,15,15,9,1,3,5,33,1,11,3,35,3,9,9,5,9,15,3,39,1,27,5,41,3,1,21,7,5,11,3,9,11,15,23,9,1,3,21,15,5
 
-cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 lpb $0
   dif $0,2
 lpe

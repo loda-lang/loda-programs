@@ -988,6 +988,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A214066](http://oeis.org/A214066) ([program](214/A214066.asm)): a(n) = floor( (3/2)*floor(5*n/2) ).
 * [A214067](http://oeis.org/A214067) ([program](214/A214067.asm)): [(5/2)*[(5/2)*n]], where [ ] = floor.
 * [A214068](http://oeis.org/A214068) ([program](214/A214068.asm)): a(n) = floor((3/2)*floor((3/2)*n)).
+* [A214076](http://oeis.org/A214076) ([program](214/A214076.asm)): a(n) = ceiling(e^(n/3)).
+* [A214077](http://oeis.org/A214077) ([program](214/A214077.asm)): a(n) = floor(e^(n/3)).
 * [A214078](http://oeis.org/A214078) ([program](214/A214078.asm)): a(n) = (ceiling (sqrt(n)))!.
 * [A214080](http://oeis.org/A214080) ([program](214/A214080.asm)): a(n) = (floor(sqrt(n)))!
 * [A214085](http://oeis.org/A214085) ([program](214/A214085.asm)): n^2 * (n^4 - n^2 + n + 1) / 2.
@@ -3121,6 +3123,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A249916](http://oeis.org/A249916) ([program](249/A249916.asm)): a(n) = 4*(n - 1) - a(n-3), n >= 3, a(0) = a(1) = 1, a(2) = 5.
 * [A249919](http://oeis.org/A249919) ([program](249/A249919.asm)): Number of LCD (liquid-crystal display) segments needed to display n in binary.
 * [A249945](http://oeis.org/A249945) ([program](249/A249945.asm)): n! + 3^n.
+* [A249947](http://oeis.org/A249947) ([program](249/A249947.asm)): Number of available orbitals at increasing subshells in multi-electron atoms.
 * [A249961](http://oeis.org/A249961) ([program](249/A249961.asm)): Number of length 1+5 0..n arrays with no six consecutive terms having the maximum of any two terms equal to the minimum of the remaining four terms.
 * [A249983](http://oeis.org/A249983) ([program](249/A249983.asm)): Number of length 3+1 0..2*n arrays with the sum of the absolute values of adjacent differences equal to 3*n.
 * [A249992](http://oeis.org/A249992) ([program](249/A249992.asm)): Expansion of 1/((1+x)*(1+2*x)*(1-3*x)).

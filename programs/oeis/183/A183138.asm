@@ -3,7 +3,7 @@
 
 add $0,1
 mov $1,$0
-cal $0,49472 ; a(n) = floor(n/sqrt(2)).
+seq $0,49472 ; a(n) = floor(n/sqrt(2)).
 add $1,51884
 sub $1,$0
 sub $1,51885

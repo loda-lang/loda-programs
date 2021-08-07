@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+  seq $2,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
   add $3,$2
   mov $0,$3
 lpe

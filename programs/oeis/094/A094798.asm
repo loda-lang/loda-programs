@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,268643 ; Number of 1's in decimal representation of n.
+  seq $0,268643 ; Number of 1's in decimal representation of n.
   add $1,$0
 lpe

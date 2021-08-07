@@ -1592,6 +1592,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272162](http://oeis.org/A272162) ([program](272/A272162.asm)): a(n) = n^5-n+1.
 * [A272171](http://oeis.org/A272171) ([program](272/A272171.asm)): Triangle read by rows: T(n,k) in which row n lists the first n terms of A000005 in reverse order.
 * [A272172](http://oeis.org/A272172) ([program](272/A272172.asm)): Triangle read by rows: T(n,k) in which row n lists the first n terms of A000203 in reverse order.
+* [A272179](http://oeis.org/A272179) ([program](272/A272179.asm)): a(n) = Product_{k=0..n} (n^2 - k).
 * [A272188](http://oeis.org/A272188) ([program](272/A272188.asm)): Triangle with 2*n+1 terms per row, read by rows: the first row is 1 (by decree), following rows contain 0 to 2n+1 but omitting 2n.
 * [A272211](http://oeis.org/A272211) ([program](272/A272211.asm)): Product of n-th prime and the sum of the divisors of n.
 * [A272263](http://oeis.org/A272263) ([program](272/A272263.asm)): a(n) = numerator of A000032(n) - 1/2^n.

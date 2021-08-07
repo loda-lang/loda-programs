@@ -6,7 +6,7 @@ sub $1,$0
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,116717 ; Number of permutations of length n which avoid the patterns 231, 1423, 3214.
+  seq $2,116717 ; Number of permutations of length n which avoid the patterns 231, 1423, 3214.
   add $1,$2
 lpe
 sub $1,27

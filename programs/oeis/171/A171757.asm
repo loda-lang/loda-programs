@@ -3,5 +3,5 @@
 
 mul $0,2
 trn $0,1
-cal $0,4754 ; Numbers n whose binary expansion starts 10.
+seq $0,4754 ; Numbers n whose binary expansion starts 10.
 mov $1,$0
