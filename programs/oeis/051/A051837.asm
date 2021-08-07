@@ -6,6 +6,6 @@ add $1,$0
 add $0,2
 cmp $1,14
 sub $0,$1
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 mov $1,$0
 div $1,2

@@ -12,7 +12,7 @@ lpb $3
   lpb $6
     add $0,1
     max $0,0
-    cal $0,49473 ; Nearest integer to n/sqrt(2).
+    seq $0,49473 ; Nearest integer to n/sqrt(2).
     sub $6,1
   lpe
   mov $2,$3

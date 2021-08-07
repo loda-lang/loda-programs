@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,82115 ; Fibonacci sequence (mod 3).
+  seq $2,82115 ; Fibonacci sequence (mod 3).
   mul $2,5
   add $1,$2
 lpe

@@ -1,6 +1,6 @@
 ; A182582: a(n) = (A096268(n) + A182581(n)) mod 2.
 ; 0,1,1,0,0,0,0,1,0,1,0,1,0,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0,1,1,1,0,1,0,1,0,0,0,0,0,0,1,1,0,1,0,1,1,0,0,0,0,0,0,1,0,1,0,1,1,1,0,1,0,0,1,1,0,0,0,1,0,0
 
-cal $0,169611 ; Number of prime divisors of n that are not greater than 3, counted with multiplicity.
+seq $0,169611 ; Number of prime divisors of n that are not greater than 3, counted with multiplicity.
 mov $1,$0
 mod $1,2

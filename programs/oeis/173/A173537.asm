@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,3
-cal $0,151566 ; Leftist toothpicks (see Comments for definition).
+seq $0,151566 ; Leftist toothpicks (see Comments for definition).
 mov $1,$0
 div $1,2

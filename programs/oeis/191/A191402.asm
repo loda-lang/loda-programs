@@ -11,7 +11,7 @@ lpb $2
     sub $0,1
     mul $0,2
     max $0,0
-    cal $0,187576 ; Rank transform of the sequence 2*floor((n-1)/2)); complement of A187577.
+    seq $0,187576 ; Rank transform of the sequence 2*floor((n-1)/2)); complement of A187577.
     add $0,2
     sub $3,1
     mov $4,$0

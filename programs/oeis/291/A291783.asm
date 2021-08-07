@@ -9,7 +9,7 @@ lpb $2
   sub $0,$2
   add $4,2
   mul $0,$4
-  cal $0,32358 ; Number of iterations of phi(n) needed to reach 2.
+  seq $0,32358 ; Number of iterations of phi(n) needed to reach 2.
   pow $0,2
   add $1,$0
   mov $4,0

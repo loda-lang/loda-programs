@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,53581 ; First differences of the Poly-Bernoulli numbers B_n^(k) with k=-2 (A027649).
+  seq $0,53581 ; First differences of the Poly-Bernoulli numbers B_n^(k) with k=-2 (A027649).
   sub $0,1
   mov $2,$3
   mul $2,$0

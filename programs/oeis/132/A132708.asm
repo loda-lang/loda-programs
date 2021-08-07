@@ -4,7 +4,7 @@
 lpb $0
   sub $0,6
 lpe
-cal $0,70372 ; a(n) = 5^n mod 18.
+seq $0,70372 ; a(n) = 5^n mod 18.
 sub $0,9
 mov $1,$0
 mul $1,-9

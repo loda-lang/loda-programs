@@ -3,7 +3,7 @@
 
 mov $1,$0
 trn $0,2
-cal $0,250212 ; Second partial sums of seventh powers (A001015).
+seq $0,250212 ; Second partial sums of seventh powers (A001015).
 min $1,2
 cmp $1,2
 mul $1,$0

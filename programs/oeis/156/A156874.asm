@@ -4,4 +4,4 @@
 add $0,1
 mov $1,$0
 mul $1,2
-cal $1,156875 ; Number of safe primes <= n.
+seq $1,156875 ; Number of safe primes <= n.

@@ -3,6 +3,6 @@
 
 lpb $0
   trn $0,1
-  cal $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
+  seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   add $1,1
 lpe

@@ -3,7 +3,7 @@
 
 mov $2,$0
 div $0,5
-cal $2,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+seq $2,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
 mov $1,$2
 lpb $0
   mov $0,2

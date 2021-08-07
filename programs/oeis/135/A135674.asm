@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,1
-cal $1,77113 ; Number of integer cubes <= n^2.
+seq $1,77113 ; Number of integer cubes <= n^2.
 add $1,$0

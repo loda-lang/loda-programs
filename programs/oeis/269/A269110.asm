@@ -4,6 +4,6 @@
 lpb $0
   mov $1,$0
   bin $0,10051
-  cal $1,101881 ; Write two numbers, skip one, write two, skip two, write two, skip three ... and so on.
+  seq $1,101881 ; Write two numbers, skip one, write two, skip two, write two, skip three ... and so on.
 lpe
 add $1,1

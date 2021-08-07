@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,8514 ; 4-dimensional centered cube numbers.
+  seq $2,8514 ; 4-dimensional centered cube numbers.
   add $1,$2
 lpe
 add $1,1

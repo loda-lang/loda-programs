@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,152896 ; a=b=c=0;c(n)=c+n+a;b(n)=b+n+c;a(n)=a+n+b.
+  seq $2,152896 ; a=b=c=0;c(n)=c+n+a;b(n)=b+n+c;a(n)=a+n+b.
   add $1,$2
 lpe

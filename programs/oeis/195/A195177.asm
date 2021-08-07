@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,327310 ; a(n) = floor(3*n*r) - 3*floor(n*r), where r = sqrt(8).
+  seq $2,327310 ; a(n) = floor(3*n*r) - 3*floor(n*r), where r = sqrt(8).
   trn $2,1
   sub $0,$2
   sub $0,1

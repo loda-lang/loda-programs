@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,322585 ; a(n) = 1 if n is a product of primorial numbers (A002110), 0 otherwise.
+  seq $2,322585 ; a(n) = 1 if n is a product of primorial numbers (A002110), 0 otherwise.
   add $1,$2
 lpe
 add $1,1

@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
-  cal $1,214214 ; Partial sums of A214212.
+  seq $1,214214 ; Partial sums of A214212.
   add $2,$1
   bin $0,$2
 lpe

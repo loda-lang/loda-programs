@@ -11,7 +11,7 @@ lpb $2
   mov $4,$0
   mul $0,2
   add $0,$4
-  cal $0,84301 ; a(n) = sigma(n) mod 6.
+  seq $0,84301 ; a(n) = sigma(n) mod 6.
   mov $3,$0
   mul $3,3
   add $1,$3

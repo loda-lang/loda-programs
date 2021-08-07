@@ -15,7 +15,7 @@ lpb $3
     mov $2,$0
     sub $0,1
     pow $2,2
-    cal $2,77113 ; Number of integer cubes <= n^2.
+    seq $2,77113 ; Number of integer cubes <= n^2.
     add $2,$0
     mov $5,$6
     lpb $5

@@ -10,7 +10,7 @@ lpb $3
   mov $2,$3
   mov $5,$0
   max $5,0
-  cal $5,29116 ; Expansion of 1/((1-x)(1-x^6)(1-x^11)(1-x^12)).
+  seq $5,29116 ; Expansion of 1/((1-x)(1-x^6)(1-x^11)(1-x^12)).
   mul $2,$5
   add $1,$2
   mov $6,$5

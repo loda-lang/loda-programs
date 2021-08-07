@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,14695 ; Poincaré series [or Poincare series] (or Molien series) for mod 2 cohomology of Q_8.
+  seq $2,14695 ; Poincaré series [or Poincare series] (or Molien series) for mod 2 cohomology of Q_8.
   add $1,$2
   mov $3,$0
   div $0,2

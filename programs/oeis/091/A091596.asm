@@ -21,7 +21,7 @@ lpb $5
       mov $2,$0
       trn $0,2
       max $2,0
-      cal $2,127985 ; a(n) = floor(2^n*(n/3 + 4/9)).
+      seq $2,127985 ; a(n) = floor(2^n*(n/3 + 4/9)).
       add $3,$2
     lpe
     mov $9,$8

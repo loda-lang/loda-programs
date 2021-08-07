@@ -3,7 +3,7 @@
 
 mov $2,56
 lpb $2
-  cal $0,210 ; A Beatty sequence: floor(n*(e-1)).
+  seq $0,210 ; A Beatty sequence: floor(n*(e-1)).
   sub $0,1
   div $2,9
 lpe

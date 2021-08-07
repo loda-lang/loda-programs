@@ -3,5 +3,5 @@
 
 mov $1,14
 add $1,$0
-cal $1,184621 ; a(n) = floor((n-h)*s+h), where s=2+sqrt(2) and h=1/4; complement of A184620.
+seq $1,184621 ; a(n) = floor((n-h)*s+h), where s=2+sqrt(2) and h=1/4; complement of A184620.
 sub $1,48

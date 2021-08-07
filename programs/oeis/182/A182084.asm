@@ -3,7 +3,7 @@
 
 mov $3,$0
 mov $4,$0
-cal $0,89196 ; Floor(n / (smallest prime factor of n+1)).
+seq $0,89196 ; Floor(n / (smallest prime factor of n+1)).
 sub $3,$0
 mov $1,$3
 add $1,5

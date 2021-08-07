@@ -3,6 +3,6 @@
 
 trn $1,$0
 add $1,$0
-cal $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
+seq $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
 mul $1,$0
 div $1,2

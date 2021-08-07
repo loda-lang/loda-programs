@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,261225 ; n minus the number of positive cubes needed to sum to n using the greedy algorithm: a(n) = n - A055401(n).
+  seq $2,261225 ; n minus the number of positive cubes needed to sum to n using the greedy algorithm: a(n) = n - A055401(n).
   mov $0,$2
   add $3,5
   min $3,1

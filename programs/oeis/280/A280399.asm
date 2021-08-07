@@ -3,5 +3,5 @@
 
 add $0,2
 mov $1,$0
-cal $1,219754 ; Expansion of x^4*(1-x-x^2)/((1+x)*(1-2*x)*(1-x-2*x^2)).
+seq $1,219754 ; Expansion of x^4*(1-x-x^2)/((1+x)*(1-2*x)*(1-x-2*x^2)).
 mul $1,2

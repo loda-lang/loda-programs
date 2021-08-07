@@ -6,6 +6,6 @@ lpb $0
   sub $0,2
   dif $0,4
 lpe
-cal $0,8472 ; Sum of the distinct primes dividing n.
+seq $0,8472 ; Sum of the distinct primes dividing n.
 mov $1,$0
 add $1,2

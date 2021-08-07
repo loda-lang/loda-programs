@@ -1,9 +1,8 @@
 ; A103975: Smaller side in (a,a+1,a+1)-integer triangle with integer area.
 ; 16,240,3360,46816,652080,9082320,126500416,1761923520,24540428880,341804080816,4760716702560,66308229755040,923554499868016,12863454768397200,179164812257692800,2495443916839302016,34757050023492535440,484103256412056194160
 
-mul $0,2
-add $0,3
-cal $0,1075 ; a(0) = 1, a(1) = 2, a(n) = 4*a(n-1) - a(n-2).
+add $0,1
+seq $0,157089 ; Consider all Consecutive Integer Pythagorean septuples (X, X+1, X+2, X+3, Z-2, Z-1, Z) ordered by increasing Z; sequence gives Z values.
 mov $1,$0
 div $1,24
 mul $1,16

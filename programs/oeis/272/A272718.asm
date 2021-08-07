@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,18804 ; Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
+  seq $2,18804 ; Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
   add $1,$2
 lpe
 add $1,1

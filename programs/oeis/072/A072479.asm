@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,72346 ; Volume of n-dimensional sphere of radius r is V_n*r^n = Pi^(n/2)*r^n/(n/2)! = C_n*Pi^floor(n/2)*r^n; sequence gives denominator of C_n.
+  seq $1,72346 ; Volume of n-dimensional sphere of radius r is V_n*r^n = Pi^(n/2)*r^n/(n/2)! = C_n*Pi^floor(n/2)*r^n; sequence gives denominator of C_n.
   mov $3,$0
   mov $0,4
   sub $1,1

@@ -3,7 +3,7 @@
 
 mov $1,32
 mov $2,$0
-cal $0,53589 ; Greatest primorial number (A002110) which divides n.
+seq $0,53589 ; Greatest primorial number (A002110) which divides n.
 add $1,$2
 sub $1,$0
 sub $1,31

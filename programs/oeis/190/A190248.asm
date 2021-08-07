@@ -6,7 +6,6 @@ add $0,2
 mul $0,2
 seq $0,60143 ; a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
 mod $0,4
-gcd $0,262149
-mov $1,5
-bin $1,$0
-div $1,5
+add $0,1
+div $0,2
+mov $1,$0

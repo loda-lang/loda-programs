@@ -18,7 +18,7 @@ lpb $3
     sub $0,1
     mul $0,2
     max $0,0
-    cal $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
+    seq $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
     div $0,2
     mul $0,2
     mov $4,$0

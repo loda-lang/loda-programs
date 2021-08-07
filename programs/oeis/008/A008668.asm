@@ -8,7 +8,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   sub $0,$3
-  cal $0,8651 ; Molien series of binary icosahedral group.
+  seq $0,8651 ; Molien series of binary icosahedral group.
   mov $2,8
   mov $4,$0
   pow $0,2

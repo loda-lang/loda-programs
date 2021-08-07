@@ -9,7 +9,7 @@ lpb $3
   add $0,$3
   mul $0,3
   max $0,0
-  cal $0,7504 ; Sum of the first n primes.
+  seq $0,7504 ; Sum of the first n primes.
   mov $2,$3
   mul $2,$0
   add $1,$2

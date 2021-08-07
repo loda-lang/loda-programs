@@ -4,7 +4,7 @@
 mov $2,$0
 lpb $0
   mov $1,$0
-  cal $1,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
+  seq $1,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
   div $2,$1
   mul $2,2
   mov $0,$2

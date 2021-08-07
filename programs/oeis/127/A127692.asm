@@ -6,7 +6,7 @@ lpb $0
   mul $0,2
   dif $0,6
 lpe
-cal $0,204016 ; Symmetric matrix based on f(i,j) = max{j mod i, i mod j), by antidiagonals.
+seq $0,204016 ; Symmetric matrix based on f(i,j) = max{j mod i, i mod j), by antidiagonals.
 sub $0,1
 lpb $0
   div $0,2

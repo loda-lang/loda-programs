@@ -10,7 +10,7 @@ lpb $3
   mov $2,$3
   mov $6,$0
   max $6,0
-  cal $6,54451 ; Third column of triangle A054450 (partial row sums of unsigned Chebyshev triangle A049310).
+  seq $6,54451 ; Third column of triangle A054450 (partial row sums of unsigned Chebyshev triangle A049310).
   mul $2,$6
   add $1,$2
   mov $4,$6

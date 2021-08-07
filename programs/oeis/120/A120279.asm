@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   sub $0,1
   add $2,1
-  cal $2,115112 ; Number of different ways to select n elements from two sets of n elements under the precondition of choosing at least one element from each set.
+  seq $2,115112 ; Number of different ways to select n elements from two sets of n elements under the precondition of choosing at least one element from each set.
   add $1,$2
 lpe
 div $1,2

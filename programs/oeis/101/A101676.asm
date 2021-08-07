@@ -4,7 +4,7 @@
 add $0,2
 lpb $0
   mov $2,$0
-  cal $2,132798 ; Period 6: repeat [0, 2, 1, 0, -2, -1].
+  seq $2,132798 ; Period 6: repeat [0, 2, 1, 0, -2, -1].
   bin $0,$2
   mov $1,$2
   div $2,2

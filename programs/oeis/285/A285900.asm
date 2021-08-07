@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,245579 ; Number of odd divisors of n multiplied by n.
+  seq $2,245579 ; Number of odd divisors of n multiplied by n.
   add $1,$2
 lpe
 add $1,1

@@ -7,7 +7,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,173523 ; 1+A053735(n-1), where A053735 is the sum-of-digits function in base 3.
+  seq $0,173523 ; 1+A053735(n-1), where A053735 is the sum-of-digits function in base 3.
   sub $0,1
   pow $0,3
   add $1,$0

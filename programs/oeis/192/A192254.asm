@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   mov $3,$0
-  cal $3,6490 ; a(1) = 1, a(2) = 0; for n > 2, a(n) = n*Fibonacci(n-2) (with the convention Fibonacci(0)=0, Fibonacci(1)=1).
+  seq $3,6490 ; a(1) = 1, a(2) = 0; for n > 2, a(n) = n*Fibonacci(n-2) (with the convention Fibonacci(0)=0, Fibonacci(1)=1).
   mov $4,144
   mul $4,$3
   mov $6,$0

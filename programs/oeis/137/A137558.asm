@@ -3,8 +3,7 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 max $0,2
-mul $0,10
-add $0,4
-mul $0,2
 mov $1,$0
-add $1,1
+sub $1,2
+mul $1,20
+add $1,49

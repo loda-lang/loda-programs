@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,1043 ; Numbers that are the sum of 2 successive primes.
+  seq $2,1043 ; Numbers that are the sum of 2 successive primes.
   add $1,$2
 lpe
 div $1,2

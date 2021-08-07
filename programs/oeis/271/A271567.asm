@@ -5,6 +5,6 @@ add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,220212 ; Convolution of natural numbers (A000027) with tetradecagonal numbers (A051866).
+  seq $2,220212 ; Convolution of natural numbers (A000027) with tetradecagonal numbers (A051866).
   add $1,$2
 lpe

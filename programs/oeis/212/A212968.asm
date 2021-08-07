@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,212965 ; Number of (w,x,y) with all terms in {0,...,n} and w=range{w,x,y}.
+  seq $2,212965 ; Number of (w,x,y) with all terms in {0,...,n} and w=range{w,x,y}.
   add $1,$2
 lpe
 add $1,1

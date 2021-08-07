@@ -6,7 +6,7 @@ lpb $0
   sub $2,1
   mov $0,$2
   max $2,0
-  cal $2,115716 ; A divide-and-conquer sequence.
+  seq $2,115716 ; A divide-and-conquer sequence.
   add $1,$2
 lpe
 mul $1,2

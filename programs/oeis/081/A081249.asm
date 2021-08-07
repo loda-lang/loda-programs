@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,81134 ; Distance to nearest power of 3.
+  seq $2,81134 ; Distance to nearest power of 3.
   add $1,$2
 lpe

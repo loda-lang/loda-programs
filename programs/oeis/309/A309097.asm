@@ -11,7 +11,7 @@ lpb $5
   sub $0,$5
   add $4,$0
   trn $0,2
-  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $0,2
   add $4,1
   mul $4,$0

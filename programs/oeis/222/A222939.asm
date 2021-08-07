@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   trn $0,2
-  cal $0,87440 ; Expansion of (1-2x-3x^2)/((1-2x)(1-4x)).
+  seq $0,87440 ; Expansion of (1-2x-3x^2)/((1-2x)(1-4x)).
   add $1,$0
 lpe

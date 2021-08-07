@@ -3,4 +3,4 @@
 
 add $0,1
 mov $1,$0
-cal $1,214848 ; First difference of A022846.
+seq $1,214848 ; First difference of A022846.

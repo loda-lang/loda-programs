@@ -3,5 +3,5 @@
 
 add $0,2
 bin $0,2
-cal $0,7504 ; Sum of the first n primes.
+seq $0,7504 ; Sum of the first n primes.
 mov $1,$0

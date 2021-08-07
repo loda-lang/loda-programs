@@ -6,7 +6,7 @@ mul $2,$0
 sub $2,$0
 add $2,1
 sub $2,$0
-cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mov $3,$2
 mul $2,2
 mul $0,$2

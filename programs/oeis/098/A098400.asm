@@ -3,6 +3,6 @@
 
 add $0,1
 mul $0,2
-cal $0,98664 ; E.g.f. BesselI(0,4x)+BesselI(1,4x)/2.
+seq $0,98664 ; E.g.f. BesselI(0,4x)+BesselI(1,4x)/2.
 mov $1,$0
 div $1,8
