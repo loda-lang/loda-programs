@@ -4,7 +4,7 @@
 mov $4,$0
 trn $0,1
 mov $2,$0
-cal $0,27928 ; a(n) = T(n, 2*n-5), T given by A027926.
+seq $0,27928 ; a(n) = T(n, 2*n-5), T given by A027926.
 mul $0,2
 mov $1,$0
 sub $1,$2

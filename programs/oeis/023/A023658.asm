@@ -28,7 +28,7 @@ lpb $4
       lpb $0
         mov $2,$0
         mov $0,0
-        cal $2,188009 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
+        seq $2,188009 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
         mov $3,2
         add $3,$2
       lpe

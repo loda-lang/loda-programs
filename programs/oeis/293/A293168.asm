@@ -8,6 +8,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   dif $0,9
-  cal $0,54868 ; Sum of bits of sum of bits of n: a(n) = wt(wt(n)).
+  seq $0,54868 ; Sum of bits of sum of bits of n: a(n) = wt(wt(n)).
   add $1,$0
 lpe

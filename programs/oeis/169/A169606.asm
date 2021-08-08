@@ -4,7 +4,7 @@
 mov $2,$0
 add $0,2
 div $0,2
-cal $0,8507 ; Number of odd composite numbers less than n-th odd prime.
+seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
 mov $1,$0
 mul $1,2
 add $1,3

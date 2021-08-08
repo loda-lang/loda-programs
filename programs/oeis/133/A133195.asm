@@ -2,6 +2,6 @@
 ; 0,3,6,9,39,69,99,399,699,999,3999,6999,9999,39999,69999,99999,399999,699999,999999,3999999,6999999,9999999,39999999,69999999,99999999,399999999,699999999,999999999,3999999999,6999999999,9999999999
 
 mul $0,3
-cal $0,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
+seq $0,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
 mov $1,$0
 sub $1,1

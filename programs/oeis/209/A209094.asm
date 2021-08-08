@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,1
-cal $0,5666 ; Tower of Hanoi with 3 pegs and cyclic moves only (counterclockwise).
+seq $0,5666 ; Tower of Hanoi with 3 pegs and cyclic moves only (counterclockwise).
 mov $1,$0
 div $1,2
 add $1,1

@@ -2,7 +2,7 @@
 ; 1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,0,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,0,1
 
 mov $1,$0
-cal $1,219206 ; Triangle, read by rows, where T(n,k) = binomial(n,k)^k for n>=0, k=0..n.
+seq $1,219206 ; Triangle, read by rows, where T(n,k) = binomial(n,k)^k for n>=0, k=0..n.
 add $1,3
 trn $1,18
 add $1,1

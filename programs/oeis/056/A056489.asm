@@ -10,6 +10,6 @@ lpb $2
   sub $0,1
   div $0,2
   mov $3,$0
-  cal $3,210448 ; Total number of different letters summed over all ternary words of length n.
+  seq $3,210448 ; Total number of different letters summed over all ternary words of length n.
   add $1,$3
 lpe

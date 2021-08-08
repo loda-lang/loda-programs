@@ -5,5 +5,5 @@ lpb $0
   bin $0,2
   mul $0,13
 lpe
-cal $0,36577 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+seq $0,36577 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 mov $1,$0

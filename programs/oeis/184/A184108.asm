@@ -18,7 +18,7 @@ lpb $8
     sub $0,1
     mul $0,9
     max $0,0
-    cal $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+    seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
     mov $5,$4
     mul $5,$0
     add $3,$5

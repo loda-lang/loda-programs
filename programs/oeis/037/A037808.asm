@@ -1,6 +1,6 @@
 ; A037808: Number of i such that d(i)<d(i-1), where Sum{d(i)*10^i: i=0,1,...,m} is base 10 representation of n.
 ; 0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0
 
-cal $0,68159 ; a(n) = floor[ n/R(n) ], where R(n) (A004086) = Digit reversal of n.
+seq $0,68159 ; a(n) = floor[ n/R(n) ], where R(n) (A004086) = Digit reversal of n.
 mov $1,$0
 cmp $1,0

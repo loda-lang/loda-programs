@@ -3,6 +3,6 @@
 
 pow $0,2
 mov $2,$0
-cal $0,7067 ; Nearest integer to n*tau.
+seq $0,7067 ; Nearest integer to n*tau.
 sub $0,$2
 mov $1,$0

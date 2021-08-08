@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   mov $3,$0
-  cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $0,$3
   add $1,$0
 lpe

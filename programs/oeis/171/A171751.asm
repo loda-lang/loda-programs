@@ -11,7 +11,7 @@ lpb $2
   sub $2,1
   mov $3,$2
   sub $2,$0
-  cal $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $3,73424
   add $2,$3
 lpe

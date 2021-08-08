@@ -3,4 +3,4 @@
 
 mov $1,$0
 add $1,1
-cal $1,93709 ; Characteristic function of squares or twice squares.
+seq $1,93709 ; Characteristic function of squares or twice squares.

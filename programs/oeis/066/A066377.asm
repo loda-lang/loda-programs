@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,6446 ; Numbers k such that floor(sqrt(k)) divides k.
+  seq $2,6446 ; Numbers k such that floor(sqrt(k)) divides k.
   add $1,$2
 lpe
 add $1,1

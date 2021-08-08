@@ -6,5 +6,5 @@ lpb $0
   mov $1,$0
   mov $0,4
   max $1,0
-  cal $1,1401 ; Number of partitions of n into at most 5 parts.
+  seq $1,1401 ; Number of partitions of n into at most 5 parts.
 lpe

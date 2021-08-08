@@ -4,7 +4,7 @@
 mul $0,2
 add $0,1
 mov $2,$0
-cal $0,34947 ; Jacobi (or Kronecker) symbol (-1/n).
+seq $0,34947 ; Jacobi (or Kronecker) symbol (-1/n).
 mov $1,10
 lpb $0
   add $1,1

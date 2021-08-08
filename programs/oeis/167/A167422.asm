@@ -10,7 +10,7 @@ lpb $5
   sub $0,1
   mul $0,2
   max $0,0
-  cal $0,155051 ; Expansion of c(x^2)*(1+x)/(1-x), c(x) the g.f. of A000108.
+  seq $0,155051 ; Expansion of c(x^2)*(1+x)/(1-x), c(x) the g.f. of A000108.
   mov $3,$5
   mul $3,$0
   add $1,$3

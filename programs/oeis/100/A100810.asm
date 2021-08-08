@@ -4,5 +4,5 @@
 mov $1,1
 bin $1,$0
 add $0,$1
-cal $0,105470 ; a(n)=1 if there is number of the form 6k+3 with prime(n) <= 6k+3 <= prime(n+1), otherwise 0.
+seq $0,105470 ; a(n)=1 if there is number of the form 6k+3 with prime(n) <= 6k+3 <= prime(n+1), otherwise 0.
 mov $1,$0

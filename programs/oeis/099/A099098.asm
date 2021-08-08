@@ -3,5 +3,5 @@
 
 mul $0,4
 trn $0,2
-cal $0,134816 ; Padovan's spiral numbers.
+seq $0,134816 ; Padovan's spiral numbers.
 mov $1,$0

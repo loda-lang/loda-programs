@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,1
-cal $1,160217 ; Minimal increasing sequence with a(1)=3 and the property that a(n) and n are both in or both not in A003159.
+seq $1,160217 ; Minimal increasing sequence with a(1)=3 and the property that a(n) and n are both in or both not in A003159.
 sub $1,1
