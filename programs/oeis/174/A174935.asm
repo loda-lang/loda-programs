@@ -7,7 +7,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,338576 ; a(n) = n * pod(n) where pod(n) = the product of divisors of n (A007955).
+  seq $0,338576 ; a(n) = n * pod(n) where pod(n) = the product of divisors of n (A007955).
   add $1,$0
 lpe
 add $1,1

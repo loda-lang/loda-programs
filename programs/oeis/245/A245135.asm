@@ -4,7 +4,7 @@
 add $0,2
 mov $2,$0
 add $2,$0
-cal $0,212578 ; Number of (w,x,y,z) with all terms in {1,...,n} and |w-x| = 2*|x-y| - |y-z|.
+seq $0,212578 ; Number of (w,x,y,z) with all terms in {1,...,n} and |w-x| = 2*|x-y| - |y-z|.
 mul $0,$2
 mov $1,$0
 div $1,2

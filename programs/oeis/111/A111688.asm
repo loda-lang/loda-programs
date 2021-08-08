@@ -8,5 +8,5 @@ lpb $0
   mul $0,2
   sub $1,1
 lpe
-cal $1,173919 ; Numbers that are prime or one less than a prime.
+seq $1,173919 ; Numbers that are prime or one less than a prime.
 add $1,1

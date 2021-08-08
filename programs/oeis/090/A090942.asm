@@ -10,7 +10,7 @@ lpb $4
   sub $0,1
   mov $3,$0
   max $0,0
-  cal $0,40 ; The prime numbers.
+  seq $0,40 ; The prime numbers.
   mul $3,$0
   add $3,$0
   mov $5,$4

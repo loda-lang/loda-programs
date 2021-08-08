@@ -3,7 +3,7 @@
 
 mov $2,$0
 div $0,2
-cal $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
 add $0,3
 sub $2,2
 add $0,$2

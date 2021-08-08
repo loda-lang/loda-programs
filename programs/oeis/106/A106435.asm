@@ -15,7 +15,7 @@ lpb $7
     sub $4,1
     add $0,$4
     trn $0,1
-    cal $0,103820 ; Whitney transform of 3^n.
+    seq $0,103820 ; Whitney transform of 3^n.
     mov $5,$4
     mul $5,$0
     add $3,$5

@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,3
-  cal $2,78012 ; Expansion of (1 - x) / (1 - x - x^3) in powers of x.
+  seq $2,78012 ; Expansion of (1 - x) / (1 - x - x^3) in powers of x.
   add $1,$2
 lpe

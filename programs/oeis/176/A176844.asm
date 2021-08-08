@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,58063 ; Number of prime factors (when counted with multiplicity) of sigma(n), the sum of divisors of n.
+  seq $2,58063 ; Number of prime factors (when counted with multiplicity) of sigma(n), the sum of divisors of n.
   sub $0,$2
   mov $3,$2
   min $3,1

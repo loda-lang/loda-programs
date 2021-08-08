@@ -16,7 +16,7 @@ lpb $2
     mov $0,$4
     sub $6,1
     sub $0,$6
-    cal $0,140434 ; Number of new visible points created at each step in an n X n grid.
+    seq $0,140434 ; Number of new visible points created at each step in an n X n grid.
     add $5,$0
   lpe
   add $1,$5

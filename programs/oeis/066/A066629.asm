@@ -3,7 +3,7 @@
 
 add $0,1
 max $1,$0
-cal $0,71 ; a(n) = Fibonacci(n) - 1.
+seq $0,71 ; a(n) = Fibonacci(n) - 1.
 mod $1,2
 add $1,$0
 add $0,$1

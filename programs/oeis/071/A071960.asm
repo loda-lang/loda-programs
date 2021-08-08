@@ -6,5 +6,5 @@ lpb $0
 lpe
 add $0,1
 mov $1,$0
-cal $1,13632 ; Difference between n and the next prime greater than n.
+seq $1,13632 ; Difference between n and the next prime greater than n.
 sub $1,1

@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,2730
-cal $1,36581 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+seq $1,36581 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 add $1,1

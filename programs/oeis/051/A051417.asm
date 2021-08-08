@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,265574 ; LCM-transform of triangular numbers.
+seq $0,265574 ; LCM-transform of triangular numbers.
 mov $1,$0

@@ -1,7 +1,7 @@
 ; A145377: a(n) = A002324(n) mod 2.
 ; 1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
 
-cal $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 mov $1,3
 mod $1,$0
 cmp $1,0

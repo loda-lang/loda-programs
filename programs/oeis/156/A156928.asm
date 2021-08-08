@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,247620 ; Start with a single hexagon; at n-th generation add a hexagon at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
+  seq $2,247620 ; Start with a single hexagon; at n-th generation add a hexagon at each expandable vertex; a(n) is the sum of all label values at n-th generation. (See comment for construction rules.)
   add $1,$2
   add $3,$0
   sub $0,1

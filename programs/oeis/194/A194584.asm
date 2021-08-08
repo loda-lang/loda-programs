@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
+  seq $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
   add $0,1
   mov $2,$3
   mul $2,$0

@@ -6,7 +6,7 @@ pow $1,2
 add $1,1
 lpb $0
   mov $2,$0
-  cal $2,227161 ; Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of one or less, with rows and columns of the latter in lexicographically nondecreasing order.
+  seq $2,227161 ; Number of n X 2 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 3 binary array having a sum of one or less, with rows and columns of the latter in lexicographically nondecreasing order.
   sub $2,$0
   sub $0,1
   mul $2,2

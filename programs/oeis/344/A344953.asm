@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $0,1
-cal $0,256654 ; Least Fibonacci number not less than n.
+seq $0,256654 ; Least Fibonacci number not less than n.
 add $1,$0

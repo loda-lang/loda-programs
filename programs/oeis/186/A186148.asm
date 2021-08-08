@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$0
-cal $0,186147 ; Rank of n^3 when {i^2: i>=1} and {j^3: j>=1} are jointly ranked with i^2 after j^3 when i^2=j^3.  Complement of A135674.
+seq $0,186147 ; Rank of n^3 when {i^2: i>=1} and {j^3: j>=1} are jointly ranked with i^2 after j^3 when i^2=j^3.  Complement of A135674.
 mov $1,2
 sub $3,$0
 add $3,3

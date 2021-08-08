@@ -10,7 +10,7 @@ lpb $4
   sub $0,1
   div $0,2
   max $0,0
-  cal $0,65890 ; Number of composites less than the n-th prime.
+  seq $0,65890 ; Number of composites less than the n-th prime.
   mov $2,$4
   mul $2,$0
   add $1,$2

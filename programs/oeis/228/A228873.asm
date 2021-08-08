@@ -4,6 +4,5 @@
 add $0,1
 seq $0,166536 ; A product of consecutive doubled Fibonacci numbers.
 bin $0,2
+mul $0,2
 mov $1,$0
-div $1,3
-mul $1,6

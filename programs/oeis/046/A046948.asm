@@ -8,7 +8,7 @@ lpb $0
   mov $1,$0
   mov $0,1
   max $1,0
-  cal $1,64603 ; Partial sums of A001158: Sum_{j=1..n} sigma_3(j).
+  seq $1,64603 ; Partial sums of A001158: Sum_{j=1..n} sigma_3(j).
 lpe
 mul $1,240
 add $1,1

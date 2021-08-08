@@ -8,6 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,88828 ; Nonsquare positive odd numbers.
+  seq $0,88828 ; Nonsquare positive odd numbers.
   add $1,$0
 lpe

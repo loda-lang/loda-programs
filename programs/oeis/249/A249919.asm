@@ -6,7 +6,7 @@ mov $2,$0
 cmp $2,0
 add $0,$2
 add $0,1
-cal $0,271479 ; Number of steps for the trajectory of n under the map k -> A271478(k) to reach 1.
+seq $0,271479 ; Number of steps for the trajectory of n under the map k -> A271478(k) to reach 1.
 mov $1,$0
 sub $1,1
 mul $1,2

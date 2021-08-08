@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,124087 ; 9th column of Catalan triangle A009766.
+  seq $0,124087 ; 9th column of Catalan triangle A009766.
   add $1,$0
 lpe

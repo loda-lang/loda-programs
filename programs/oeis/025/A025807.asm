@@ -10,7 +10,7 @@ lpb $5
   mov $2,$5
   mov $4,$0
   max $4,0
-  cal $4,29012 ; Expansion of 1/((1-x)*(1-x^2)*(1-x^5)*(1-x^7)).
+  seq $4,29012 ; Expansion of 1/((1-x)*(1-x^2)*(1-x^5)*(1-x^7)).
   mul $2,$4
   add $1,$2
 lpe

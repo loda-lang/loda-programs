@@ -4,7 +4,7 @@
 mov $2,$0
 mov $3,$0
 mov $4,$0
-cal $0,184387 ; a(n) = sum of numbers from 1 to sigma(n), where sigma(n) = A000203(n).
+seq $0,184387 ; a(n) = sum of numbers from 1 to sigma(n), where sigma(n) = A000203(n).
 bin $3,2
 sub $0,$3
 mul $4,2

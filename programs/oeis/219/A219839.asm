@@ -1,6 +1,6 @@
 ; A219839: a(n) is the number of odd integers in 2..(n-1) that have a common factor (other than 1) with n.
 ; 0,0,0,0,0,1,0,0,1,1,0,2,0,1,3,0,0,3,0,2,4,1,0,4,2,1,4,2,0,7,0,0,6,1,5,6,0,1,7,4,0,9,0,2,10,1,0,8,3,5,9,2,0,9,7,4,10,1,0,14,0,1,13,0,8,13,0,2,12,11,0,12,0,1,17,2,8,15,0,8,13,1,0,18,10,1,15,4,0,21,9,2,16,1,11,16,0,7,19,10
 
-cal $0,176095 ; a(n) = n - phi(2*n), where phi() is the Euler totient A000010().
+seq $0,176095 ; a(n) = n - phi(2*n), where phi() is the Euler totient A000010().
 div $0,2
 mov $1,$0

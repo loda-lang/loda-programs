@@ -5,6 +5,6 @@ add $0,1
 lpb $0
   mov $2,$0
   div $0,2
-  cal $2,253513 ; The characteristic function of the multiples of eight.
+  seq $2,253513 ; The characteristic function of the multiples of eight.
   add $1,$2
 lpe

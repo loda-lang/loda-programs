@@ -5,7 +5,7 @@ add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,4647 ; Powers of 2 written in base 8.
+  seq $2,4647 ; Powers of 2 written in base 8.
   add $1,$2
 lpe
 div $1,2

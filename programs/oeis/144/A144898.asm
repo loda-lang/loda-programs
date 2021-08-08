@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,226405 ; Expansion of x/((1-x-x^3)*(1-x)^3).
+  seq $2,226405 ; Expansion of x/((1-x-x^3)*(1-x)^3).
   add $1,$2
 lpe

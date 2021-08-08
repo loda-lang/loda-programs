@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,48762 ; Largest cube <= n.
+  seq $2,48762 ; Largest cube <= n.
   mov $3,$2
   cmp $3,0
   mov $4,$2

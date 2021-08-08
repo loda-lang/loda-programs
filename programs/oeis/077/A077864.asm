@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,23435 ; Dying rabbits: a(n) = a(n-1) + a(n-2) - a(n-5).
+seq $0,23435 ; Dying rabbits: a(n) = a(n-1) + a(n-2) - a(n-5).
 mov $1,$0

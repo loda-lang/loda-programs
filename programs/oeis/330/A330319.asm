@@ -8,7 +8,7 @@ lpb $2
   mov $0,$5
   sub $2,1
   sub $0,$2
-  cal $0,83542 ; a(n) = phi(n+1)*phi(n), product of totients of two consecutive integers.
+  seq $0,83542 ; a(n) = phi(n+1)*phi(n), product of totients of two consecutive integers.
   mov $4,$0
   mul $4,5069
   mov $3,$4

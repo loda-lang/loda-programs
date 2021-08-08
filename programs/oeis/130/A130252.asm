@@ -9,6 +9,6 @@ lpb $3
   sub $0,$3
   mul $0,3
   sub $0,2
-  cal $0,29837 ; Binary order of n: log_2(n) rounded up to next integer.
+  seq $0,29837 ; Binary order of n: log_2(n) rounded up to next integer.
   add $1,$0
 lpe

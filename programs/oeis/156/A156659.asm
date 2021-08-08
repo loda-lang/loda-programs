@@ -5,5 +5,5 @@ mov $2,$0
 mod $2,-2
 mul $0,$2
 div $0,2
-cal $0,156660 ; Characteristic function of Sophie Germain primes.
+seq $0,156660 ; Characteristic function of Sophie Germain primes.
 mov $1,$0

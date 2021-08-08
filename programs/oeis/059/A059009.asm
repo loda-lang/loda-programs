@@ -2,6 +2,6 @@
 ; 0,2,5,6,8,11,13,14,17,18,20,23,24,27,29,30,32,35,37,38,41,42,44,47,49,50,52,55,56,59,61,62,65,66,68,71,72,75,77,78,80,83,85,86,89,90,92,95,96,99,101,102,105,106,108,111,113,114,116,119,120,123,125,126,128,131,133,134,137,138,140,143,145,146,148,151,152,155,157,158,161,162,164,167,168,171,173,174,176,179,181,182,185,186,188,191,193,194,196,199
 
 mul $0,2
-cal $0,137901 ; Limiting sequence when we start with positive integers (A000027) and at step n >= 1 add to the term at position n + a(n) the value 1.
+seq $0,137901 ; Limiting sequence when we start with positive integers (A000027) and at step n >= 1 add to the term at position n + a(n) the value 1.
 mov $1,$0
 sub $1,1

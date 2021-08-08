@@ -1,7 +1,7 @@
 ; A081242: Left-to-right binary enumeration.
 ; 1,2,11,21,12,22,111,211,121,221,112,212,122,222,1111,2111,1211,2211,1121,2121,1221,2221,1112,2112,1212,2212,1122,2122,1222,2222,11111,21111,12111,22111,11211,21211,12211,22211,11121,21121,12121,22121
 
-cal $0,284920 ; Numbers with digits 2 and 4 only.
-cal $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+seq $0,284920 ; Numbers with digits 2 and 4 only.
+seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 mov $1,$0
 div $1,2

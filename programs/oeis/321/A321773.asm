@@ -12,7 +12,7 @@ lpb $0
   mov $2,$0
   mov $0,0
 lpe
-cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mul $0,$2
 mov $1,2
 add $1,$0

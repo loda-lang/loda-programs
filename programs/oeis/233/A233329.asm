@@ -16,7 +16,7 @@ lpb $2
     mov $0,$6
     sub $4,1
     sub $0,$4
-    cal $0,271675 ; Numbers m such that 3*m + 4 is a square.
+    seq $0,271675 ; Numbers m such that 3*m + 4 is a square.
     mov $5,1
     add $5,$0
     add $7,$5

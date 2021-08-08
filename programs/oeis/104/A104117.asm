@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   trn $0,1
-  cal $0,99894 ; XOR BINOMIAL transform of A038712.
+  seq $0,99894 ; XOR BINOMIAL transform of A038712.
 lpe
 lpb $0
   div $0,2

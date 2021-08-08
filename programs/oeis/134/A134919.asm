@@ -3,6 +3,6 @@
 
 add $0,1
 pow $0,5
-cal $0,134914 ; Ceiling(n^(1/3)).
+seq $0,134914 ; Ceiling(n^(1/3)).
 mov $1,$0
 sub $1,1

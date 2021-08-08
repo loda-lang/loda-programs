@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,$0
-cal $0,86799 ; Replace all trailing 0's with 1's in binary representation of n.
+seq $0,86799 ; Replace all trailing 0's with 1's in binary representation of n.
 add $1,$0
 mul $1,2
 div $1,4

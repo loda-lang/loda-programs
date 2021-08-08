@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $0,1
-cal $0,5173 ; Number of trees of subsets of an n-set.
+seq $0,5173 ; Number of trees of subsets of an n-set.
 add $1,$0
 div $1,2
 add $1,1

@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   div $0,2
-  cal $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+  seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
   add $1,$0
 lpe

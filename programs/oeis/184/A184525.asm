@@ -16,7 +16,7 @@ lpb $2
     sub $8,1
     add $0,$8
     trn $0,1
-    cal $0,184524 ; Lower s-Wythoff sequence, where s=5n-1.  Complement of A184525.
+    seq $0,184524 ; Lower s-Wythoff sequence, where s=5n-1.  Complement of A184525.
     sub $0,1
     mov $3,$0
     mov $5,$8

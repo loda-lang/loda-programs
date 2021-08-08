@@ -3,5 +3,5 @@
 
 mul $0,2
 trn $0,1
-cal $0,151566 ; Leftist toothpicks (see Comments for definition).
+seq $0,151566 ; Leftist toothpicks (see Comments for definition).
 mov $1,$0

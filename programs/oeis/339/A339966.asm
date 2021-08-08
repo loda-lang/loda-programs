@@ -3,6 +3,6 @@
 
 mov $2,$0
 add $0,2
-cal $2,339964 ; a(n) = gcd(sigma(n), n+1).
+seq $2,339964 ; a(n) = gcd(sigma(n), n+1).
 div $0,$2
 mov $1,$0

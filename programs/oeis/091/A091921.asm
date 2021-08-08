@@ -3,7 +3,7 @@
 
 mov $2,$0
 lpb $0
-  cal $2,5069 ; Sum of odd primes dividing n.
+  seq $2,5069 ; Sum of odd primes dividing n.
   add $1,$2
   mov $0,$1
 lpe

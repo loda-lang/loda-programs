@@ -3,7 +3,7 @@
 
 mov $2,$0
 mul $0,4
-cal $0,178729 ; a(n) = n XOR 3n, where XOR is bitwise XOR.
+seq $0,178729 ; a(n) = n XOR 3n, where XOR is bitwise XOR.
 add $0,4
 mul $0,2
 mov $1,$0

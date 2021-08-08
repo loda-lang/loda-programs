@@ -4,7 +4,7 @@
 mov $1,$0
 pow $0,2
 mov $2,$1
-cal $2,163723 ; Number of nX2 binary arrays with all 1s connected, a path of 1s from left column to right column, and no 1 having more than two 1s adjacent
+seq $2,163723 ; Number of nX2 binary arrays with all 1s connected, a path of 1s from left column to right column, and no 1 having more than two 1s adjacent
 add $2,$0
 add $1,$2
 div $1,2

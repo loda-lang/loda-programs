@@ -4,5 +4,5 @@
 mov $1,1
 max $1,$0
 mov $2,$1
-cal $2,33270 ; Number of odd primes <= n.
+seq $2,33270 ; Number of odd primes <= n.
 sub $1,$2

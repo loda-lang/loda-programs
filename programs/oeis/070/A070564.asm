@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,126825 ; Ramanujan numbers (A000594) read mod 3.
+  seq $2,126825 ; Ramanujan numbers (A000594) read mod 3.
   mov $3,$2
   min $3,1
   add $1,$3

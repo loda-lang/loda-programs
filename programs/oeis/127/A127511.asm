@@ -2,7 +2,7 @@
 ; 1,-2,-4,0,-16,32,-64,0,0,512,-1024,0,-4096,8192,16384,0,-65536,0,-262144,0,1048576,2097152,-4194304,0,0,33554432,0,0,-268435456,-536870912,-1073741824,0,4294967296,8589934592,17179869184,0,-68719476736,137438953472,274877906944,0,-1099511627776
 
 mov $1,$0
-cal $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
 lpb $1
   mul $0,2
   sub $1,1

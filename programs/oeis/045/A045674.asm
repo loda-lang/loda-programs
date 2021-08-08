@@ -28,7 +28,7 @@ lpb $4
         mov $2,$0
         div $0,2
         max $2,0
-        cal $2,61776 ; Start with a single triangle; at n-th generation add a triangle at each vertex, allowing triangles to overlap; sequence gives number of triangles in n-th generation.
+        seq $2,61776 ; Start with a single triangle; at n-th generation add a triangle at each vertex, allowing triangles to overlap; sequence gives number of triangles in n-th generation.
         add $3,$2
       lpe
       mov $0,$3

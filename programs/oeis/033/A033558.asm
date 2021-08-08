@@ -4,7 +4,7 @@
 mov $1,$0
 add $0,1
 mov $2,$0
-cal $0,151800 ; Least prime > n (version 2 of the "next prime" function).
+seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 add $2,$0
 sub $0,1
 sub $2,$0

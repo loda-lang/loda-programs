@@ -5,7 +5,7 @@ mul $0,8
 lpb $0
   mov $1,$0
   div $0,6
-  cal $0,53186 ; Square excess of n: difference between n and largest square <= n.
+  seq $0,53186 ; Square excess of n: difference between n and largest square <= n.
   bin $0,2
   add $0,1
 lpe

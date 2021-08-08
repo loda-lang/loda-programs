@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,212356 ; Number of terms of the cycle index polynomial Z(D_n) for the dihedral group D_n.
+  seq $2,212356 ; Number of terms of the cycle index polynomial Z(D_n) for the dihedral group D_n.
   add $1,$2
   mov $3,$2
   min $3,1

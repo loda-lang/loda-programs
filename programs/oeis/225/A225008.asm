@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   add $2,$0
   sub $0,1
-  cal $2,331434 ; Column 2 of triangle in A331431.
+  seq $2,331434 ; Column 2 of triangle in A331431.
   add $1,$2
 lpe
 div $1,30

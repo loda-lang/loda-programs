@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,250121 ; Crystal ball sequence for planar net 3.3.3.3.6.
+  seq $0,250121 ; Crystal ball sequence for planar net 3.3.3.3.6.
   mov $2,$3
   mul $2,$0
   add $1,$2

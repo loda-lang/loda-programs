@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,86351 ; T(n,3) of A086350.
+  seq $2,86351 ; T(n,3) of A086350.
   add $1,$2
 lpe
 mul $1,2

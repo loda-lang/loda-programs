@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,3511 ; A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
+  seq $2,3511 ; A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
   add $1,$2
 lpe
 add $1,1

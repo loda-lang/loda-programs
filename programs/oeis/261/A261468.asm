@@ -7,7 +7,7 @@ lpb $0
   cmp $3,0
   add $2,$3
   div $0,$2
-  cal $2,31131 ; Difference between n-th prime and (n+2)-nd prime.
+  seq $2,31131 ; Difference between n-th prime and (n+2)-nd prime.
   add $1,$2
   sub $1,1
   mov $4,$2

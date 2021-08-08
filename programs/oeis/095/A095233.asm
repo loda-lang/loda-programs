@@ -5,7 +5,7 @@ sub $1,$0
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,82186 ; 1 + sum of first n terms of A001221.
+  seq $2,82186 ; 1 + sum of first n terms of A001221.
   add $1,$2
 lpe
 add $1,1

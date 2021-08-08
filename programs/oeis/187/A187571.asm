@@ -16,7 +16,7 @@ lpb $2
     sub $5,1
     add $0,$5
     trn $0,1
-    cal $0,187570 ; Rank transform of the sequence ceiling(n/3); complement of A187571.
+    seq $0,187570 ; Rank transform of the sequence ceiling(n/3); complement of A187571.
     mov $6,$5
     mul $6,$0
     add $4,$6

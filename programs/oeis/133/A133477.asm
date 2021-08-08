@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  cal $2,62378 ; n divided by largest cubefree factor of n.
+  seq $2,62378 ; n divided by largest cubefree factor of n.
   div $0,$2
 lpe
-cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $1,$0
 sub $1,1

@@ -5,7 +5,7 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $0,5
-  cal $2,22354 ; Fibonacci sequence beginning 0, 20.
+  seq $2,22354 ; Fibonacci sequence beginning 0, 20.
   add $1,$2
 lpe
 div $1,20

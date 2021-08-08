@@ -13,6 +13,6 @@ lpb $2
   add $0,$3
   sub $0,1
   mul $0,2
-  cal $0,52533 ; Expansion of (1-x)/(1-x-3*x^2).
+  seq $0,52533 ; Expansion of (1-x)/(1-x-3*x^2).
   add $1,$0
 lpe

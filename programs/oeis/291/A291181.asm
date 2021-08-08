@@ -3,8 +3,7 @@
 
 add $0,1
 seq $0,122653 ; a(n) = 10*a(n-1) - a(n-2) with a(0)=0, a(1)=6.
-mov $1,8
-mul $1,$0
-sub $1,47
-div $1,6
-add $1,8
+mov $1,$0
+mul $1,2
+div $1,12
+mul $1,8

@@ -2,7 +2,7 @@
 ; 1,3,1,4,1,3,2,4,1,3,1,4,2,3,2,4,1,3,1,4,1,3,2,4,2,3,1,4,2,3,2,4,1,3,1,4,1,3,2,4,1,3,1,4,2,3,2,4,2,3,1,4,1,3,2,4,2,3,1,4,2,3,2,4,1,3,1,4,1,3,2,4,1,3,1,4,2,3,2,4,1,3,1,4,1,3,2,4,2,3,1,4,2,3,2,4,2,3,1,4
 
 mov $2,$0
-cal $0,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
+seq $0,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
 mov $1,$0
 add $1,5
 div $1,2

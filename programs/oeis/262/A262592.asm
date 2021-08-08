@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,244 ; Powers of 3.
+  seq $2,244 ; Powers of 3.
   div $2,2
   sub $2,$0
   add $0,1

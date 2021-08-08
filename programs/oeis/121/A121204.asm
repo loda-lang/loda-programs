@@ -3,7 +3,7 @@
 
 sub $1,$0
 mov $2,$0
-cal $2,81200 ; 6th binomial transform of (0,1,0,1,0,1,...), A000035.
+seq $2,81200 ; 6th binomial transform of (0,1,0,1,0,1,...), A000035.
 add $1,$2
 div $1,2
 mul $1,4

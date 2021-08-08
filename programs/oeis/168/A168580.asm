@@ -4,7 +4,7 @@
 mov $1,$0
 add $1,2
 mov $0,$1
-cal $0,131733 ; Primes (A000040) - odds (A005408).
+seq $0,131733 ; Primes (A000040) - odds (A005408).
 add $0,20
 sub $0,$1
 mov $1,$0

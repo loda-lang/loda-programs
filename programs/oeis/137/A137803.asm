@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,1
-cal $0,189380 ; a(n) = n + floor(n*s/r) + floor(n*t/r); r=1, s=-1+sqrt(2), t=1+sqrt(2).
+seq $0,189380 ; a(n) = n + floor(n*s/r) + floor(n*t/r); r=1, s=-1+sqrt(2), t=1+sqrt(2).
 div $0,4
 mov $1,$0

@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   trn $0,1
-  cal $0,27928 ; a(n) = T(n, 2*n-5), T given by A027926.
+  seq $0,27928 ; a(n) = T(n, 2*n-5), T given by A027926.
   add $1,$0
 lpe

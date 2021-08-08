@@ -3,5 +3,5 @@
 
 add $0,1
 pow $0,3
-cal $0,80883 ; Distance of n to next square.
+seq $0,80883 ; Distance of n to next square.
 mov $1,$0

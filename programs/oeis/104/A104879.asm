@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   trn $0,1
-  cal $0,26898 ; a(n) = Sum_{k=0..n} (n-k+1)^k.
+  seq $0,26898 ; a(n) = Sum_{k=0..n} (n-k+1)^k.
   add $1,$0
 lpe

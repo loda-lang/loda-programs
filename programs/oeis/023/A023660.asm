@@ -21,7 +21,7 @@ lpb $3
     mov $5,$4
     add $5,1
     mov $0,$5
-    cal $0,124171 ; Sequence obtained by reading the triangles shown below by rows.
+    seq $0,124171 ; Sequence obtained by reading the triangles shown below by rows.
     mov $2,2
     mov $5,$0
     trn $5,2

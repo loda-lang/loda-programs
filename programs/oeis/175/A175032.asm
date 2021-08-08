@@ -3,5 +3,5 @@
 
 add $0,1
 bin $0,2
-cal $0,68527 ; Difference between smallest square >= n and n.
+seq $0,68527 ; Difference between smallest square >= n and n.
 mov $1,$0

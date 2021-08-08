@@ -3,6 +3,6 @@
 
 mov $1,$0
 add $1,$0
-cal $1,181303 ; Numbers of the form i*7^j-1 (i=1..6, j >= 0).
+seq $1,181303 ; Numbers of the form i*7^j-1 (i=1..6, j >= 0).
 div $1,2
 add $1,1

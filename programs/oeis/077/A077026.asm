@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,4
-cal $2,75989 ; Number of k satisfying 1<=k<=n and {n/k} >= 1/2, where {n/k} is the fractional part of n/k, i.e., {n/k} = n/k - floor(n/k).
+seq $2,75989 ; Number of k satisfying 1<=k<=n and {n/k} >= 1/2, where {n/k} is the fractional part of n/k, i.e., {n/k} = n/k - floor(n/k).
 sub $0,$2
 mov $1,$0
 sub $1,3

@@ -8,5 +8,5 @@ add $1,3
 add $0,$1
 sub $0,1
 div $0,2
-cal $0,7089 ; Numbers in base 3.
+seq $0,7089 ; Numbers in base 3.
 mov $1,$0

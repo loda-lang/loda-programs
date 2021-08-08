@@ -8,6 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,34693 ; Smallest k such that k*n+1 is prime.
+  seq $0,34693 ; Smallest k such that k*n+1 is prime.
   add $1,$0
 lpe

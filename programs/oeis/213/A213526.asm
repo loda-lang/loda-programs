@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   add $3,$0
   mul $0,2
-  cal $2,184616 ; Negated negative parts of the nonadjacent forms
+  seq $2,184616 ; Negated negative parts of the nonadjacent forms
   mul $2,2
   add $3,$2
   sub $0,$3

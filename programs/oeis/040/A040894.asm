@@ -1,8 +1,8 @@
 ; A040894: Continued fraction for sqrt(925).
 ; 30,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2
 
-cal $0,10152 ; Continued fraction for sqrt(74).
-cal $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
+seq $0,10152 ; Continued fraction for sqrt(74).
+seq $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
 mov $1,$0
 mul $1,8
 add $1,3

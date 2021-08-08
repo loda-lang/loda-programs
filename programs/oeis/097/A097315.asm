@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,5668 ; Denominators of continued fraction convergents to sqrt(10).
+seq $0,5668 ; Denominators of continued fraction convergents to sqrt(10).
 mov $1,$0

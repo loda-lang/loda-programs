@@ -3,7 +3,7 @@
 
 mov $1,$0
 trn $0,1
-cal $0,14162 ; Apply partial sum operator thrice to Fibonacci numbers.
+seq $0,14162 ; Apply partial sum operator thrice to Fibonacci numbers.
 add $0,8
 add $1,$0
 sub $1,7

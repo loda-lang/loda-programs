@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,317315 ; Multiples of 15 and odd numbers interleaved.
+  seq $2,317315 ; Multiples of 15 and odd numbers interleaved.
   add $1,$2
 lpe

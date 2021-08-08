@@ -3,6 +3,6 @@
 
 mov $1,$0
 mov $2,$0
-cal $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
 add $0,$2
 add $1,$0

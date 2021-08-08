@@ -3,7 +3,7 @@
 
 mov $2,$0
 trn $2,1
-cal $2,61536 ; a(1) = 1 and a(n) = a(n-1) + (the number of primes <= n) for n > 1.
+seq $2,61536 ; a(1) = 1 and a(n) = a(n-1) + (the number of primes <= n) for n > 1.
 add $0,$2
 sub $0,1
 mov $1,$0

@@ -4,6 +4,6 @@
 mov $1,$0
 mov $0,5
 mul $0,$1
-cal $0,50999 ; Sum of squares of odd divisors of n.
+seq $0,50999 ; Sum of squares of odd divisors of n.
 mov $1,$0
 mod $1,10

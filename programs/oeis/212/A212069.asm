@@ -4,7 +4,7 @@
 pow $0,3
 mul $0,2
 mov $1,$0
-cal $0,154958 ; Antidiagonal sums of number triangle A154957 regarded as a lower triangular infinite matrix.
+seq $0,154958 ; Antidiagonal sums of number triangle A154957 regarded as a lower triangular infinite matrix.
 mul $1,$0
 mul $0,2
 div $1,$0

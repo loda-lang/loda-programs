@@ -8,7 +8,7 @@ lpb $5
   sub $5,1
   add $0,$5
   trn $0,1
-  cal $0,237589 ; Sum of first n odd noncomposite numbers.
+  seq $0,237589 ; Sum of first n odd noncomposite numbers.
   mov $8,$2
   cmp $8,0
   add $2,$8

@@ -4,7 +4,7 @@
 mov $2,$0
 lpb $0
   mov $1,$0
-  cal $1,62830 ; a(n) = n - phi(n) + 1.
+  seq $1,62830 ; a(n) = n - phi(n) + 1.
   mul $1,$2
   bin $0,$1
 lpe

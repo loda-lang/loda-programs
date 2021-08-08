@@ -11,7 +11,7 @@ lpb $2
   mov $2,1
 lpe
 trn $0,2
-cal $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
+seq $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
 mov $3,$0
 add $3,1
 add $1,$3

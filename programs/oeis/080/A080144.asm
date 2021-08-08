@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   trn $0,2
   add $2,1
-  cal $2,25169 ; a(n) = 2*Fibonacci(2*n+2).
+  seq $2,25169 ; a(n) = 2*Fibonacci(2*n+2).
   add $1,$2
 lpe
 div $1,2

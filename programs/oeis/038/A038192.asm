@@ -4,6 +4,6 @@
 mov $1,1
 lpb $0
   sub $0,1
-  cal $1,48725 ; a(n) = Xmult(n,5) or rule90(n,1).
+  seq $1,48725 ; a(n) = Xmult(n,5) or rule90(n,1).
 lpe
 mul $1,3

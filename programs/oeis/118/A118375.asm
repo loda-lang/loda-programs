@@ -19,7 +19,7 @@ lpb $4
     sub $0,$7
     lpb $0
       mov $2,$0
-      cal $2,256008 ; Self-inverse permutation of positive integers: 4k+1 is swapped with 4k+3, and 4k+2 with 4k+4.
+      seq $2,256008 ; Self-inverse permutation of positive integers: 4k+1 is swapped with 4k+3, and 4k+2 with 4k+4.
       add $3,$0
       add $3,$2
       cmp $0,$3

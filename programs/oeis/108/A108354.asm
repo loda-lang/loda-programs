@@ -5,6 +5,6 @@ add $0,2
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,242601 ; Integers repeated twice in a canonical order.
+  seq $2,242601 ; Integers repeated twice in a canonical order.
   add $1,$2
 lpe

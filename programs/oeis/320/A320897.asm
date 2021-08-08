@@ -8,7 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,38040 ; a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
+  seq $0,38040 ; a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
   pow $0,2
   add $1,$0
 lpe

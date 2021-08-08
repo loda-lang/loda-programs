@@ -8,7 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,87088 ; Positive ruler-type fractal sequence with 1's in every third position.
+  seq $0,87088 ; Positive ruler-type fractal sequence with 1's in every third position.
   mov $4,$0
   dif $0,2
   bin $0,$4

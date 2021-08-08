@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,128201 ; Union of positive squares and the odd numbers.
+  seq $2,128201 ; Union of positive squares and the odd numbers.
   add $1,$2
 lpe
 add $1,1

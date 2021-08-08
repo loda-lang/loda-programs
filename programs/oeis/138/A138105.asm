@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,1690 ; Non-Fibonacci numbers.
+  seq $2,1690 ; Non-Fibonacci numbers.
   add $1,$2
 lpe
 add $1,4

@@ -5,7 +5,7 @@ mul $0,3
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,22112 ; Fibonacci sequence beginning 2, 6.
+  seq $2,22112 ; Fibonacci sequence beginning 2, 6.
   add $1,$2
 lpe
 div $1,4

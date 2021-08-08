@@ -3,5 +3,5 @@
 
 add $0,1
 pow $0,2
-cal $0,13634 ; a(n) = nextprime(n) + n.
+seq $0,13634 ; a(n) = nextprime(n) + n.
 mov $1,$0

@@ -3,5 +3,5 @@
 
 sub $0,1
 div $0,2
-cal $0,34387 ; Sum of primes <= n.
+seq $0,34387 ; Sum of primes <= n.
 mov $1,$0

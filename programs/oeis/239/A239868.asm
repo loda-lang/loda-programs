@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,54024 ; Sum of the divisors of n reduced modulo n.
+  seq $2,54024 ; Sum of the divisors of n reduced modulo n.
   add $1,$2
 lpe

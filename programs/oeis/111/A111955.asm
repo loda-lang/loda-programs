@@ -21,7 +21,7 @@ lpb $5
       mov $2,$0
       trn $0,2
       max $2,0
-      cal $2,174192 ; Expansion of (1-x+2x^2)/ ((1-x)*(1-2x-x^2)).
+      seq $2,174192 ; Expansion of (1-x+2x^2)/ ((1-x)*(1-2x-x^2)).
       add $3,$2
       sub $3,1
     lpe

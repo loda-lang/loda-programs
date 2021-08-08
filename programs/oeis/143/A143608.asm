@@ -26,7 +26,7 @@ lpb $3
         div $0,2
         mov $4,$0
         mov $0,$2
-        cal $4,281237 ; Solutions x to the negative Pell equation y^2 = 72*x^2 - 73728 with x,y >= 0.
+        seq $4,281237 ; Solutions x to the negative Pell equation y^2 = 72*x^2 - 73728 with x,y >= 0.
         mul $4,2
       lpe
       mov $9,$10

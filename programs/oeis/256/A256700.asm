@@ -4,7 +4,7 @@
 mov $1,$0
 add $1,1
 lpb $0
-  cal $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
+  seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
   add $1,$0
   sub $0,1
 lpe

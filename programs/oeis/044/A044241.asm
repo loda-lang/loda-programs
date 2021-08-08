@@ -8,7 +8,7 @@ mul $0,8
 lpb $0
   pow $0,$4
   add $1,3
-  cal $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 lpe
 add $1,48
 mov $3,$2

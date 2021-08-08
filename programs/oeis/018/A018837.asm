@@ -15,7 +15,7 @@ lpb $2
   lpe
   sub $2,1
   mul $2,9
-  cal $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
   mul $0,$3
 lpe
 add $1,$0

@@ -5,6 +5,6 @@ mov $2,$0
 sub $2,3
 mov $1,$2
 max $2,0
-cal $2,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
+seq $2,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
 add $1,$2
 add $1,1

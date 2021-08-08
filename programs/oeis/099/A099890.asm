@@ -3,5 +3,5 @@
 
 mul $0,2
 trn $0,1
-cal $0,99894 ; XOR BINOMIAL transform of A038712.
+seq $0,99894 ; XOR BINOMIAL transform of A038712.
 mov $1,$0

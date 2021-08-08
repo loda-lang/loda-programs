@@ -6,6 +6,6 @@ bin $0,2
 add $0,6
 mul $2,2
 add $0,$2
-cal $0,87057 ; Smallest number whose square is larger than 2*n^2.
+seq $0,87057 ; Smallest number whose square is larger than 2*n^2.
 mov $1,$0
 sub $1,9

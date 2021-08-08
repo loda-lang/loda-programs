@@ -3,5 +3,5 @@
 
 add $0,1
 mul $0,2
-cal $0,293544 ; a(n) is the integer k that minimizes | k/Fibonacci(n) - 1/3 |.
+seq $0,293544 ; a(n) is the integer k that minimizes | k/Fibonacci(n) - 1/3 |.
 mov $1,$0

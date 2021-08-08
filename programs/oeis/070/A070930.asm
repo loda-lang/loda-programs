@@ -5,7 +5,7 @@ add $0,1
 pow $0,4
 lpb $0
   mov $1,$0
-  cal $1,48763 ; Smallest cube >= n.
+  seq $1,48763 ; Smallest cube >= n.
   sub $1,$0
   mov $0,0
 lpe

@@ -4,4 +4,4 @@
 mov $1,$0
 mul $1,2
 add $1,2
-cal $1,107458 ; Expansion of g.f.: (1-x^2-x^3)/( (1+x)*(1-x-x^3) ).
+seq $1,107458 ; Expansion of g.f.: (1-x^2-x^3)/( (1+x)*(1-x-x^3) ).

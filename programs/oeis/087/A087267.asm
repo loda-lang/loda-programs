@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $0,1
-cal $1,62298 ; Number of nonprimes <= n.
+seq $1,62298 ; Number of nonprimes <= n.
 gcd $1,$0

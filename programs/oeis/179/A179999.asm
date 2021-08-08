@@ -11,7 +11,7 @@ lpb $3
   lpb $0
     mov $2,$0
     mov $0,1
-    cal $2,214927 ; Number of n-digit numbers N that do not end with 0 and are such that the reversal of N divides N but is different from N.
+    seq $2,214927 ; Number of n-digit numbers N that do not end with 0 and are such that the reversal of N divides N but is different from N.
     sub $2,1
   lpe
   mov $4,$2

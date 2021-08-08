@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,139716 ; If k is the largest divisor of n that is <= sqrt(n) then a(n) = n - k^2.
+  seq $2,139716 ; If k is the largest divisor of n that is <= sqrt(n) then a(n) = n - k^2.
   pow $2,2
   sub $0,$2
 lpe

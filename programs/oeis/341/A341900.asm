@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,295473 ; a(0) = 0; for n>0, a(n) = 9*n!.
+  seq $2,295473 ; a(0) = 0; for n>0, a(n) = 9*n!.
   add $1,$2
 lpe
 div $1,9

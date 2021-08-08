@@ -6,6 +6,6 @@ lpb $0
   sub $0,1
   mul $0,2
 lpe
-cal $0,165754 ; a(n) = nimsum(n+(n+1)+(n+2)).
+seq $0,165754 ; a(n) = nimsum(n+(n+1)+(n+2)).
 mov $1,$0
 sub $1,1

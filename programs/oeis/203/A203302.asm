@@ -8,5 +8,5 @@ add $0,$2
 sub $0,1
 mov $1,$0
 mul $1,2
-cal $1,185546 ; a(n) = floor((1/2)*(n+1)^(3/2)); complement of A185547.
+seq $1,185546 ; a(n) = floor((1/2)*(n+1)^(3/2)); complement of A185547.
 div $1,4

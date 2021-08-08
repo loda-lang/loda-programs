@@ -6,7 +6,7 @@ lpb $0
   sub $0,$2
   mov $1,$0
   max $1,0
-  cal $1,59010 ; Natural numbers having an even number of nonleading zeros in their binary expansion.
+  seq $1,59010 ; Natural numbers having an even number of nonleading zeros in their binary expansion.
   add $2,$1
 lpe
 mul $1,2

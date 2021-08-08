@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,210379 ; Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
+  seq $2,210379 ; Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
   add $1,$2
 lpe
 div $1,2

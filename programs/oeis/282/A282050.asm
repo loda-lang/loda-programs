@@ -3,5 +3,5 @@
 
 mov $1,$0
 trn $0,1
-cal $0,1160 ; sigma_5(n), the sum of the 5th powers of the divisors of n.
+seq $0,1160 ; sigma_5(n), the sum of the 5th powers of the divisors of n.
 mul $1,$0

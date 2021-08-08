@@ -7,5 +7,5 @@ div $0,$0
 add $2,$0
 mul $2,2
 add $0,$2
-cal $0,208354 ; Number of compositions of n with at most one even part.
+seq $0,208354 ; Number of compositions of n with at most one even part.
 mov $1,$0

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,3893 ; a(n) = Fibonacci(n) mod 10.
+  seq $2,3893 ; a(n) = Fibonacci(n) mod 10.
   add $1,$2
 lpe
 add $1,1

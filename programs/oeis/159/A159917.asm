@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,296135 ; {0->01}-transform of the Fibonacci word A003849.
+  seq $2,296135 ; {0->01}-transform of the Fibonacci word A003849.
   sub $0,$2
   add $1,$2
 lpe

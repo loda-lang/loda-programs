@@ -120,6 +120,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A202452](http://oeis.org/A202452) ([program](202/A202452.asm)): Lower triangular Fibonacci matrix, by SW antidiagonals.
 * [A202455](http://oeis.org/A202455) ([program](202/A202455.asm)): Number of (n+2) X 4 binary arrays with consecutive windows of three bits considered as a binary number nondecreasing in every row and column.
 * [A202462](http://oeis.org/A202462) ([program](202/A202462.asm)): a(n) = Sum_{j=1..n} Sum_{i=1..n} F(i,j), where F is the Fibonacci fusion array of A202453.
+* [A202564](http://oeis.org/A202564) ([program](202/A202564.asm)): Indices of pentagonal numbers which are also decagonal.
 * [A202565](http://oeis.org/A202565) ([program](202/A202565.asm)): Indices of decagonal numbers which are also pentagonal.
 * [A202606](http://oeis.org/A202606) ([program](202/A202606.asm)): Ceiling(((10^n - 1)^2/9 + 10^n)/18).
 * [A202654](http://oeis.org/A202654) ([program](202/A202654.asm)): Number of ways to place 3 nonattacking semi-queens on an n X n board.

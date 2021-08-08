@@ -3,5 +3,5 @@
 
 add $0,1
 mov $1,$0
-cal $1,198270 ; Ceiling(n*sqrt(13)).
+seq $1,198270 ; Ceiling(n*sqrt(13)).
 sub $1,1

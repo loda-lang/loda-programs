@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,1043 ; Numbers that are the sum of 2 successive primes.
+seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 mov $1,$0

@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,65608 ; Sum of divisors of n minus the number of divisors of n.
+  seq $2,65608 ; Sum of divisors of n minus the number of divisors of n.
   add $1,$2
 lpe

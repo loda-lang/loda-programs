@@ -5,7 +5,7 @@ lpb $0
   add $0,1
   mov $2,$0
   div $0,3
-  cal $2,21115 ; Decimal expansion of 1/111.
+  seq $2,21115 ; Decimal expansion of 1/111.
   mov $3,$2
   min $3,1
   add $1,$3

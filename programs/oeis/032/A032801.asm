@@ -8,6 +8,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   trn $0,3
-  cal $0,166515 ; Partial sum of A166514.
+  seq $0,166515 ; Partial sum of A166514.
   add $1,$0
 lpe

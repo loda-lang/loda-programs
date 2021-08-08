@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,263846 ; Floor of cube root of n-th prime.
+  seq $0,263846 ; Floor of cube root of n-th prime.
   sub $0,1
   mov $2,$3
   mul $2,$0

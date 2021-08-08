@@ -9,7 +9,7 @@ lpb $3
   mov $2,0
   sub $3,1
   sub $0,$3
-  cal $0,172474 ; a(n) = floor(n*sqrt(2)/4).
+  seq $0,172474 ; a(n) = floor(n*sqrt(2)/4).
   add $2,$0
   add $2,1
   add $1,$2

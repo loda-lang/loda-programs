@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,67392 ; Sum of numbers <= n which have common prime factors with n.
+  seq $2,67392 ; Sum of numbers <= n which have common prime factors with n.
   add $1,$2
 lpe

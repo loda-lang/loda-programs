@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,130312 ; Each Fibonacci number F(n) appears F(n) times.
+  seq $2,130312 ; Each Fibonacci number F(n) appears F(n) times.
   sub $0,$2
   mov $3,$2
   min $3,1

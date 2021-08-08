@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,55797 ; T(2n+4,n), array T as in A055794.
+  seq $2,55797 ; T(2n+4,n), array T as in A055794.
   add $1,$2
 lpe
 add $1,1

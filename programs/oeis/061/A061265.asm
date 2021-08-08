@@ -11,7 +11,7 @@ lpb $3
   mov $5,$0
   add $5,1
   max $5,0
-  cal $5,6 ; Integer part of square root of n-th prime.
+  seq $5,6 ; Integer part of square root of n-th prime.
   sub $5,1
   mul $2,$5
   add $1,$2

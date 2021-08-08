@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,53475 ; 1 + the number of iterations of A051953 (Euler-cototient) function needed to reach 0, starting at n.
+seq $0,53475 ; 1 + the number of iterations of A051953 (Euler-cototient) function needed to reach 0, starting at n.
 mov $1,$0

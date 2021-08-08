@@ -13,7 +13,7 @@ lpb $5
     mov $2,$0
     div $0,2
     max $2,0
-    cal $2,27556 ; Unbalanced strings of length n.
+    seq $2,27556 ; Unbalanced strings of length n.
     add $3,$2
   lpe
   mov $4,$5

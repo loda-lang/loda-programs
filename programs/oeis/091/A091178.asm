@@ -3,7 +3,7 @@
 
 add $0,1
 mov $2,$0
-cal $2,177965 ; Indices m for which A177961(m) - m = 1.
+seq $2,177965 ; Indices m for which A177961(m) - m = 1.
 mov $0,$2
-cal $0,99802 ; Bisection of A000720.
+seq $0,99802 ; Bisection of A000720.
 mov $1,$0

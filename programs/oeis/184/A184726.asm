@@ -7,5 +7,5 @@ lpb $0
   mov $1,$0
   mov $0,1
   max $1,0
-  cal $1,108738 ; a(n) = n/(smallest odd prime divisor of n), if any.
+  seq $1,108738 ; a(n) = n/(smallest odd prime divisor of n), if any.
 lpe

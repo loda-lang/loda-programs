@@ -11,6 +11,6 @@ lpb $2
   add $3,1
   add $0,$3
   mul $0,2
-  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $1,$0
 lpe

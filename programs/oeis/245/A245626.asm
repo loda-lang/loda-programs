@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   add $2,$0
   max $0,0
-  cal $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
+  seq $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
   mul $0,3
   mov $1,3
 lpe

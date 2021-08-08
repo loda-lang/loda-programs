@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,5
-  cal $2,17899 ; Expansion of 1/(1 -x^5 -x^6 -x^7 - ...).
+  seq $2,17899 ; Expansion of 1/(1 -x^5 -x^6 -x^7 - ...).
   add $1,$2
 lpe

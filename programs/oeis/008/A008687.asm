@@ -3,5 +3,5 @@
 
 mul $0,4
 trn $0,2
-cal $0,80791 ; Number of nonleading 0's in binary expansion of n.
+seq $0,80791 ; Number of nonleading 0's in binary expansion of n.
 mov $1,$0

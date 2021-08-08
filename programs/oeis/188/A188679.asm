@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,277584 ; a(n) = binomial(3n-1, n-1)^2.
+  seq $2,277584 ; a(n) = binomial(3n-1, n-1)^2.
   add $1,$2
 lpe
 mul $1,9

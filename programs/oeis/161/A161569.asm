@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,73425 ; a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
+  seq $2,73425 ; a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
   add $1,$2
 lpe

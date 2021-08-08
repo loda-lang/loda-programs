@@ -1,6 +1,6 @@
 ; A083730: Greatest prime^2 factor of n, or a(n)=1 for squarefree n.
 ; 1,1,1,4,1,1,1,4,9,1,1,4,1,1,1,4,1,9,1,4,1,1,1,4,25,1,9,4,1,1,1,4,1,1,1,9,1,1,1,4,1,1,1,4,9,1,1,4,49,25,1,4,1,9,1,4,1,1,1,4,1,1,9,4,1,1,1,4,1,1,1,9,1,1,25,4,1,1,1,4,9,1,1,4,1,1,1,4,1,9,1,4,1,1,1,4,1,49,9,25
 
-cal $0,249740 ; The largest prime whose square divides n, 1 if n is squarefree.
+seq $0,249740 ; The largest prime whose square divides n, 1 if n is squarefree.
 pow $0,2
 mov $1,$0

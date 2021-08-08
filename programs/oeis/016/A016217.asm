@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,155721 ; Positions of parity change in A033035.
+  seq $2,155721 ; Positions of parity change in A033035.
   add $1,$2
   mul $1,3
 lpe

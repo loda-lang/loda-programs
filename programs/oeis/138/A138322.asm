@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,180250 ; a(n) = 5*a(n-1) + 10*a(n-2), with a(1)=0 and a(2)=1.
+  seq $2,180250 ; a(n) = 5*a(n-1) + 10*a(n-2), with a(1)=0 and a(2)=1.
   mul $2,2
   add $1,$2
 lpe

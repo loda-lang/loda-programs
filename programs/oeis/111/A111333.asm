@@ -3,6 +3,6 @@
 
 mov $1,$0
 trn $0,1
-cal $0,8507 ; Number of odd composite numbers less than n-th odd prime.
+seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
 add $1,$0
 add $1,1

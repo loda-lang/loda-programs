@@ -5,4 +5,4 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-cal $1,40 ; The prime numbers.
+seq $1,40 ; The prime numbers.

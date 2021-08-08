@@ -4,6 +4,6 @@
 mul $0,3
 bin $0,2
 div $0,3
-cal $0,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+seq $0,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
 mov $1,$0
 sub $1,1

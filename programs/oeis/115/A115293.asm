@@ -16,7 +16,7 @@ lpb $2
     mov $0,$6
     sub $4,1
     sub $0,$4
-    cal $0,171440 ; Expansion of (1+x)^5/(1-x).
+    seq $0,171440 ; Expansion of (1+x)^5/(1-x).
     add $5,$0
   lpe
   add $1,$5

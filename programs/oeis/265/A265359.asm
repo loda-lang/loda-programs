@@ -10,7 +10,7 @@ lpb $3
   mov $4,0
   lpb $0
     mov $2,$0
-    cal $2,126114 ; Ultimate fixed-point under the mapping n->f(n), where f(n)=n if n is square else f(n)=n-Floor(Sqrt(n)).
+    seq $2,126114 ; Ultimate fixed-point under the mapping n->f(n), where f(n)=n if n is square else f(n)=n-Floor(Sqrt(n)).
     add $0,$2
     trn $0,6
     add $4,2

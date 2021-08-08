@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,255764 ; Partial sums of A255743.
+  seq $0,255764 ; Partial sums of A255743.
   mov $2,$3
   mul $2,$0
   add $1,$2

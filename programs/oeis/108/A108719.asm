@@ -7,7 +7,7 @@ lpb $2
   mov $2,1
 lpe
 add $0,1
-cal $0,98090 ; Numbers k such that 2k-3 is prime.
+seq $0,98090 ; Numbers k such that 2k-3 is prime.
 mov $1,$0
 sub $1,4
 mul $1,2

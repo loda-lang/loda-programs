@@ -4,5 +4,5 @@
 dif $0,-2
 div $0,2
 max $0,0
-cal $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 mov $1,$0

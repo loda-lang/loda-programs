@@ -10,7 +10,7 @@ lpb $4
   sub $0,$4
   lpb $0
     mov $2,$0
-    cal $2,345018 ; For each n, append to the sequence n^2 consecutive integers, starting from n.
+    seq $2,345018 ; For each n, append to the sequence n^2 consecutive integers, starting from n.
     add $0,$2
     mod $0,3
   lpe

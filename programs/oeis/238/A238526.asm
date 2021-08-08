@@ -7,7 +7,7 @@ sub $0,2
 sub $2,1
 lpb $2
   max $0,0
-  cal $0,6005 ; The odd prime numbers together with 1.
+  seq $0,6005 ; The odd prime numbers together with 1.
   sub $0,2
   add $1,$2
   sub $1,2

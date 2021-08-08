@@ -6,6 +6,6 @@ lpb $0
   mov $1,$0
   mov $0,0
   max $1,0
-  cal $1,228797 ; Number of 2 X n binary arrays with top left element equal to 1 and no two ones adjacent horizontally or nw-se.
+  seq $1,228797 ; Number of 2 X n binary arrays with top left element equal to 1 and no two ones adjacent horizontally or nw-se.
 lpe
 div $1,2

@@ -4,6 +4,6 @@
 mov $2,$0
 mul $0,2
 div $0,3
-cal $0,115384 ; Partial sums of Thue-Morse numbers A010060.
+seq $0,115384 ; Partial sums of Thue-Morse numbers A010060.
 mov $1,$0
 add $1,$2
