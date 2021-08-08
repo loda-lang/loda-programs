@@ -7,7 +7,7 @@ add $1,20
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,96000 ; Cupolar numbers: a(n) = (n+1)*(5*n^2+7*n+3)/3.
+  seq $2,96000 ; Cupolar numbers: a(n) = (n+1)*(5*n^2+7*n+3)/3.
   add $1,$2
 lpe
 sub $1,39

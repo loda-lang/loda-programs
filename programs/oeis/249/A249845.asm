@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,69473 ; First differences of (n+1)^6-n^6 (A022522).
+  seq $2,69473 ; First differences of (n+1)^6-n^6 (A022522).
   add $1,$2
   sub $1,2
 lpe

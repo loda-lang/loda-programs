@@ -13,7 +13,7 @@ lpb $5
   mov $3,$5
   mov $4,$2
   max $4,0
-  cal $4,219282 ; Number of superdiagonal bargraphs with area n.
+  seq $4,219282 ; Number of superdiagonal bargraphs with area n.
   mul $3,$4
   add $1,$3
   mov $6,$4

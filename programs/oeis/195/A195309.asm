@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   add $0,1
-  cal $0,1318 ; Generalized pentagonal numbers: m*(3*m - 1)/2, m = 0, +-1, +-2, +-3, ....
+  seq $0,1318 ; Generalized pentagonal numbers: m*(3*m - 1)/2, m = 0, +-1, +-2, +-3, ....
   mov $2,$3
   mov $4,$0
   sub $4,1

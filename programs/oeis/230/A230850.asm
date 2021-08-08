@@ -10,7 +10,7 @@ lpb $3
   sub $0,1
   div $0,2
   max $0,0
-  cal $0,14689 ; a(n) = prime(n)-n, the number of nonprimes less than prime(n).
+  seq $0,14689 ; a(n) = prime(n)-n, the number of nonprimes less than prime(n).
   mov $2,$3
   mul $2,$0
   add $1,$2
