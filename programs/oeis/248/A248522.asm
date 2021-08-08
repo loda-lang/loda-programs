@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,2
-cal $0,187330 ; Floor((4-sqrt(5))n); complement of A187339.
+seq $0,187330 ; Floor((4-sqrt(5))n); complement of A187339.
 mov $1,$0

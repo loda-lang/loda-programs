@@ -13,7 +13,7 @@ lpb $3
     sub $0,1
     add $4,$0
     mov $2,$4
-    cal $5,212570 ; Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|=|x-y|+|y-z|.
+    seq $5,212570 ; Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|=|x-y|+|y-z|.
     add $2,$5
     mov $0,$2
     mov $7,$5

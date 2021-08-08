@@ -5,5 +5,5 @@ lpb $0
   mov $1,$0
   trn $0,3
   add $0,3
-  cal $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
+  seq $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
 lpe

@@ -3,7 +3,7 @@
 
 pow $0,2
 mov $1,$0
-cal $0,38130 ; Beatty sequence for 2*Pi.
+seq $0,38130 ; Beatty sequence for 2*Pi.
 pow $1,2
 mul $1,2
 mov $2,$0

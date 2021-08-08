@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   mov $0,13
-  cal $2,167463 ; a(n) = n mod 15.
+  seq $2,167463 ; a(n) = n mod 15.
   mov $1,$2
   min $1,1
 lpe

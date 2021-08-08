@@ -6,7 +6,7 @@ mul $1,2
 add $1,2
 mov $2,1
 mov $3,$1
-cal $3,178493 ; Numbers of powers of phi in base-phi expansion of phi-antipalindromic numbers (A178482).
+seq $3,178493 ; Numbers of powers of phi in base-phi expansion of phi-antipalindromic numbers (A178482).
 sub $2,$3
 mod $1,$2
 div $1,2

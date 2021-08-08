@@ -10,7 +10,7 @@ lpb $3
   sub $0,$3
   lpb $0
     mov $2,$0
-    cal $2,131234 ; Starts with 1, then n appears Fibonacci(n-1) times.
+    seq $2,131234 ; Starts with 1, then n appears Fibonacci(n-1) times.
     div $0,$2
     sub $2,$0
     div $0,5

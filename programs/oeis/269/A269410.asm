@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   sub $0,1
   add $1,1
-  cal $2,199531 ; Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two consecutive zero elements.
+  seq $2,199531 ; Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two consecutive zero elements.
   add $1,$2
   sub $1,1
 lpe

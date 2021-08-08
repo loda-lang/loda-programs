@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,14817 ; a(n) = Sum_{k=1..n} floor(k^2/n).
+  seq $2,14817 ; a(n) = Sum_{k=1..n} floor(k^2/n).
   add $1,$2
   pow $3,0
   sub $0,$3

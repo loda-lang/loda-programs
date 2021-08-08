@@ -16,7 +16,7 @@ lpb $3
     sub $6,1
     add $0,$6
     max $0,0
-    cal $0,49611 ; a(n) = T(n,2), array T as in A049600.
+    seq $0,49611 ; a(n) = T(n,2), array T as in A049600.
     mov $7,$6
     mul $7,$0
     add $5,$7

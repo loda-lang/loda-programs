@@ -5,7 +5,7 @@ mov $1,$0
 mul $1,$0
 mov $2,$0
 mov $3,$0
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 sub $0,1
 add $1,$2
 sub $1,$0

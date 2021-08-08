@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,48967 ; Number of even entries in row n of Pascal's triangle (A007318).
+  seq $2,48967 ; Number of even entries in row n of Pascal's triangle (A007318).
   add $1,$2
 lpe
