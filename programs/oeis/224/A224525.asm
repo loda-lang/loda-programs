@@ -4,7 +4,7 @@
 lpb $0
   add $1,2
   mov $2,$0
-  cal $2,62249 ; a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
+  seq $2,62249 ; a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
   add $1,$2
   add $1,$0
   sub $0,1

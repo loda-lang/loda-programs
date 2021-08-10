@@ -4,7 +4,7 @@
 mov $3,$0
 sub $0,1
 mov $1,8
-cal $3,6 ; Integer part of square root of n-th prime.
+seq $3,6 ; Integer part of square root of n-th prime.
 add $3,5
 mov $4,2
 lpb $0,3

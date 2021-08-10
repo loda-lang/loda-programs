@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,264618 ; Working in binary, write n followed by 0 then n-reversed (including leading zeros); show result in base 10.
+  seq $0,264618 ; Working in binary, write n followed by 0 then n-reversed (including leading zeros); show result in base 10.
   mov $2,$3
   mul $2,$0
   add $1,$2

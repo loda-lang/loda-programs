@@ -14,7 +14,7 @@ lpb $5
     mov $2,$0
     mov $0,0
     max $2,0
-    cal $2,112696 ; Partial sum of Catalan numbers A000108 multiplied by powers of 2.
+    seq $2,112696 ; Partial sum of Catalan numbers A000108 multiplied by powers of 2.
     add $3,$2
   lpe
   mov $4,$5

@@ -17,7 +17,7 @@ lpb $3
     add $0,$8
     add $0,1
     max $0,0
-    cal $0,8466 ; a(n) = 2^n - Fibonacci(n+2).
+    seq $0,8466 ; a(n) = 2^n - Fibonacci(n+2).
     mov $4,$0
     mov $9,$8
     mul $9,$0

@@ -5,6 +5,6 @@ mul $0,2
 add $0,2
 mul $0,2
 mov $1,$0
-cal $0,60143 ; a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
+seq $0,60143 ; a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
 sub $1,$0
 sub $1,1

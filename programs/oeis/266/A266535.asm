@@ -4,7 +4,7 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  cal $2,60973 ; a(2*n+1) = a(n+1)+a(n), a(2*n) = 2*a(n), with a(1)=0 and a(2)=1.
+  seq $2,60973 ; a(2*n+1) = a(n+1)+a(n), a(2*n) = 2*a(n), with a(1)=0 and a(2)=1.
   sub $0,$2
   pow $2,2
   add $1,$2

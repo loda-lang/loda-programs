@@ -3,7 +3,7 @@
 
 mov $2,$0
 trn $0,1
-cal $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
+seq $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
 mov $3,$0
 cmp $3,0
 add $0,$3

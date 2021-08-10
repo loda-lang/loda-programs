@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $2,$0
-cal $0,63247 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 100 ).
+seq $0,63247 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 100 ).
 add $2,$0
 mov $1,$2
 trn $2,2

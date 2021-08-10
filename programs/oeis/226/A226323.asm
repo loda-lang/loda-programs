@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,7875 ; Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
+  seq $2,7875 ; Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
   add $1,$2
 lpe
 mul $1,8

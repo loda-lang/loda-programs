@@ -19,7 +19,7 @@ lpb $3
       add $0,$8
       trn $0,1
       div $0,2
-      cal $0,27790 ; a(n) = 10*(n+1)*binomial(n+3,5)/3.
+      seq $0,27790 ; a(n) = 10*(n+1)*binomial(n+3,5)/3.
       add $5,$0
       mul $0,$2
       mov $7,$8

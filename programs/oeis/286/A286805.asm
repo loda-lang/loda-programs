@@ -3,6 +3,6 @@
 
 mov $1,$0
 div $0,2
-cal $0,285077 ; Positions of 0 in A285076; complement of A285078.
+seq $0,285077 ; Positions of 0 in A285076; complement of A285078.
 add $1,$0
 sub $1,1

@@ -24,7 +24,7 @@ lpb $12
       sub $4,1
       add $0,$4
       max $0,0
-      cal $0,48575 ; Pisot sequences L(2,5), E(2,5).
+      seq $0,48575 ; Pisot sequences L(2,5), E(2,5).
       div $0,3
       mov $5,$4
       mul $5,$0

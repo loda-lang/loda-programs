@@ -1,7 +1,7 @@
 ; A020547: 2nd Euler polynomial evaluated at x=n!.
 ; 0,0,2,30,552,14280,517680,25396560,1625662080,131681531520,13168185811200,1593350882323200,229442532323558400,38775788037405619200,7600054456464819148800,1710012252722891749632000,437763136697374129754112000
 
-cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mov $1,$0
 bin $1,2
 mul $1,2

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,27815 ; a(n) = 42*(n+1) * binomial(n+5,10).
+  seq $2,27815 ; a(n) = 42*(n+1) * binomial(n+5,10).
   add $1,$2
 lpe
 div $1,42

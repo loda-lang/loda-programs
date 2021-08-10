@@ -28,7 +28,7 @@ lpb $2
       cmp $12,0
       add $0,$12
       add $0,3
-      cal $0,131941 ; Partial sums of ceiling(n^2/2) (A000982).
+      seq $0,131941 ; Partial sums of ceiling(n^2/2) (A000982).
       add $0,4
       mov $3,$0
       mov $8,$9

@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,34009 ; Convolution of A000295(n+2) (n>=0) with itself.
+  seq $2,34009 ; Convolution of A000295(n+2) (n>=0) with itself.
   add $1,$2
 lpe
 add $1,1

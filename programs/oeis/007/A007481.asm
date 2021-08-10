@@ -10,6 +10,6 @@ lpb $2
   sub $0,$2
   sub $0,1
   div $0,2
-  cal $0,55099 ; Expansion of g.f.: (1 + x)/(1 - 3*x - 2*x^2).
+  seq $0,55099 ; Expansion of g.f.: (1 + x)/(1 - 3*x - 2*x^2).
   add $1,$0
 lpe

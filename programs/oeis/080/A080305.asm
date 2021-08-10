@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $0,252233 ; Characteristic function for the integers that are the product of an odd number of primes each with multiplicity one.
+  seq $0,252233 ; Characteristic function for the integers that are the product of an odd number of primes each with multiplicity one.
   sub $0,1
 lpe
 add $1,1

@@ -11,6 +11,6 @@ lpb $2
   mov $3,$0
   cmp $3,0
   add $0,$3
-  cal $0,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
+  seq $0,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
   add $1,$0
 lpe

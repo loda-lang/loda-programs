@@ -3,6 +3,6 @@
 
 sub $1,$0
 add $0,1
-cal $0,96457 ; If n is prime replace n with the next prime.
+seq $0,96457 ; If n is prime replace n with the next prime.
 add $1,$0
 sub $1,2

@@ -3,7 +3,7 @@
 
 add $0,1
 mov $2,$0
-cal $0,195119 ; a(n) = 2*n - floor(n*sqrt(2)).
+seq $0,195119 ; a(n) = 2*n - floor(n*sqrt(2)).
 add $0,$2
 sub $0,1
 mov $1,$0

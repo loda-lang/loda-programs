@@ -9,6 +9,6 @@ lpb $3
   sub $3,1
   sub $0,$3
   add $0,1
-  cal $0,91703 ; Count, setting 5n to zero.
+  seq $0,91703 ; Count, setting 5n to zero.
   add $1,$0
 lpe

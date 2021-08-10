@@ -3,7 +3,7 @@
 
 mov $1,-1
 pow $1,$0
-cal $0,4449 ; Nimsum n + 8.
+seq $0,4449 ; Nimsum n + 8.
 add $1,2
 add $1,$0
 sub $1,2

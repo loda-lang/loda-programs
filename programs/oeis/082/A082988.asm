@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,103435 ; a(n) = 2^n * Fibonacci(n).
+  seq $2,103435 ; a(n) = 2^n * Fibonacci(n).
   add $1,$2
   mul $1,2
 lpe

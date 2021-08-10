@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,61007 ; a(n) = -(n-1)! mod n.
+  seq $2,61007 ; a(n) = -(n-1)! mod n.
   add $1,$2
 lpe

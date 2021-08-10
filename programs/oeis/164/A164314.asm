@@ -4,5 +4,5 @@
 add $0,2
 pow $0,2
 sub $0,3
-cal $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 mov $1,$0

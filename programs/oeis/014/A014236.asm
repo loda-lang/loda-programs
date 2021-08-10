@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,233411 ; The number of length n binary words with some prefix which contains two more 1's than 0's or two more 0's than 1's.
+  seq $0,233411 ; The number of length n binary words with some prefix which contains two more 1's than 0's or two more 0's than 1's.
   mov $2,$3
   mul $2,$0
   add $1,$2

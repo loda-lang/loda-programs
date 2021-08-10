@@ -5,7 +5,7 @@ pow $0,3
 lpb $0
   mov $7,1
   lpb $7
-    cal $0,72670 ; Number of ways to write n as i*j + i + j, 0 < i <= j.
+    seq $0,72670 ; Number of ways to write n as i*j + i + j, 0 < i <= j.
     add $6,163271
     clr $1,$0
     add $0,$6

@@ -16,7 +16,7 @@ lpb $2
     sub $6,1
     add $0,$6
     trn $0,1
-    cal $0,160544 ; Not divisible by 19.
+    seq $0,160544 ; Not divisible by 19.
     div $0,4
     mul $0,2
     mov $3,$0

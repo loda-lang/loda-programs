@@ -3,7 +3,7 @@
 
 mov $1,$0
 trn $0,1
-cal $0,6005 ; The odd prime numbers together with 1.
+seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,4
 max $1,$0
 mul $1,2

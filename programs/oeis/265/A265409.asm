@@ -11,7 +11,7 @@ lpb $3
     mov $2,$0
     add $5,1
     sub $0,$5
-    cal $2,152198 ; Triangle read by rows, A007318 rows repeated
+    seq $2,152198 ; Triangle read by rows, A007318 rows repeated
     div $2,2
     mov $4,$2
     min $4,1

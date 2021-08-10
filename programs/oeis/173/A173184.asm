@@ -8,6 +8,6 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
+  seq $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
   add $1,$0
 lpe

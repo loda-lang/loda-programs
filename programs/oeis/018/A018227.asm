@@ -5,7 +5,7 @@ add $0,2
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,982 ; a(n) = ceiling(n^2/2).
+  seq $2,982 ; a(n) = ceiling(n^2/2).
   add $1,$2
 lpe
 sub $0,1

@@ -5,7 +5,7 @@ mul $0,2
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,161770 ; n 1's followed by three 0's.
+  seq $2,161770 ; n 1's followed by three 0's.
   add $1,$2
 lpe
 div $1,1000

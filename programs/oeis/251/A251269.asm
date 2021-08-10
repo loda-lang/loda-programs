@@ -5,7 +5,7 @@ mov $1,$0
 add $1,2
 mov $3,$0
 add $3,1
-cal $3,288516 ; Number of (undirected) paths in the ladder graph P_2 X P_n.
+seq $3,288516 ; Number of (undirected) paths in the ladder graph P_2 X P_n.
 add $1,$3
 mov $4,5
 add $4,$1

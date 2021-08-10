@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,4
-cal $1,295282 ; a(n) > n is chosen to minimize the difference between ratios a(n):n and n:(a(n) - n), so that they are matching approximations to the golden ratio.
+seq $1,295282 ; a(n) > n is chosen to minimize the difference between ratios a(n):n and n:(a(n) - n), so that they are matching approximations to the golden ratio.
 sub $1,7

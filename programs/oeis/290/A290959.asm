@@ -13,7 +13,7 @@ lpb $2
   trn $4,$0
   add $4,$3
   div $0,$4
-  cal $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $0,6
   mov $5,1
   sub $5,$0

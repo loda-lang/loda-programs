@@ -1,7 +1,7 @@
 ; A204425: Infinite matrix: f(i,j)=(2i+j+1 mod 3), by antidiagonals.
 ; 1,2,0,0,1,2,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,0,1,2,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0
 
-cal $0,204427 ; Infinite matrix: f(i,j)=(2i+j+2 mod 3), read by antidiagonals.
+seq $0,204427 ; Infinite matrix: f(i,j)=(2i+j+2 mod 3), read by antidiagonals.
 sub $0,2
 mov $1,2
 pow $1,$0

@@ -5,4 +5,4 @@ mov $1,$0
 add $0,1
 mul $0,2
 add $1,$0
-cal $1,178242 ; Numerator of n*(5+n)/((n+1)*(n+4)).
+seq $1,178242 ; Numerator of n*(5+n)/((n+1)*(n+4)).

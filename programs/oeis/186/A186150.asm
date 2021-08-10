@@ -16,7 +16,7 @@ lpb $2
     sub $6,1
     add $0,$6
     max $0,0
-    cal $0,93 ; a(n) = floor(n^(3/2)).
+    seq $0,93 ; a(n) = floor(n^(3/2)).
     div $0,2
     mov $3,$0
     mov $7,$6

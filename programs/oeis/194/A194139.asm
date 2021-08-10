@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,286927 ; Positions of 1 in A286925; complement of A286926.
+  seq $2,286927 ; Positions of 1 in A286925; complement of A286926.
   add $1,$2
 lpe
 div $1,2

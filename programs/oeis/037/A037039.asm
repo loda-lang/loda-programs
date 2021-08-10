@@ -3,5 +3,5 @@
 
 mul $0,4
 add $0,3
-cal $0,34693 ; Smallest k such that k*n+1 is prime.
+seq $0,34693 ; Smallest k such that k*n+1 is prime.
 mov $1,$0

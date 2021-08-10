@@ -8,5 +8,5 @@ lpe
 sub $2,1
 add $0,$2
 add $0,2
-cal $0,134816 ; Padovan's spiral numbers.
+seq $0,134816 ; Padovan's spiral numbers.
 mov $1,$0

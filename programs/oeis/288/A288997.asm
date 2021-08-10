@@ -4,7 +4,7 @@
 add $0,4
 lpb $0
   mov $1,$0
-  cal $1,82532 ; a(n) = n^2 - 2*floor(n/sqrt(2))^2.
+  seq $1,82532 ; a(n) = n^2 - 2*floor(n/sqrt(2))^2.
   sub $1,$0
   mod $0,$1
 lpe

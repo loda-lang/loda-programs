@@ -7,6 +7,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,67558 ; Sum of squares of proper divisors of n.
+  seq $0,67558 ; Sum of squares of proper divisors of n.
   add $1,$0
 lpe

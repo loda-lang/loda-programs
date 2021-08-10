@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,82446 ; a(0)=0, a(1)=1, a(2)=0; thereafter, if k>=0 and a block of the first 3*2^k terms is known, then a(3*2^k+i)=1-a(i) for 0<=i<3*2^k.
+  seq $2,82446 ; a(0)=0, a(1)=1, a(2)=0; thereafter, if k>=0 and a block of the first 3*2^k terms is known, then a(3*2^k+i)=1-a(i) for 0<=i<3*2^k.
   sub $0,$2
   mod $0,3
 lpe

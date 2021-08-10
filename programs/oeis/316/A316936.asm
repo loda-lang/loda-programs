@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,182220 ; Largest number k such that there exists an extensional acyclic digraph on n labeled nodes with k sources.
+  seq $2,182220 ; Largest number k such that there exists an extensional acyclic digraph on n labeled nodes with k sources.
   add $1,$2
 lpe
 mul $1,2

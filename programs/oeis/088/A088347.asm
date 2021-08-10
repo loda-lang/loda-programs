@@ -3,7 +3,7 @@
 
 add $0,1
 mov $2,$0
-cal $2,64784 ; Difference between n-th triangular number t(n) and the largest square <= t(n).
+seq $2,64784 ; Difference between n-th triangular number t(n) and the largest square <= t(n).
 lpb $2
   mov $1,$0
   mov $2,$0

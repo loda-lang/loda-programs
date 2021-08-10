@@ -11,7 +11,7 @@ lpb $3
   mov $4,0
   lpb $0
     mov $4,$0
-    cal $4,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
+    seq $4,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
     add $2,$4
     mul $2,$0
     sub $2,$0

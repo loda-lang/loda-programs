@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,62074 ; a(n) = n^3 * 3^n.
+  seq $2,62074 ; a(n) = n^3 * 3^n.
   add $1,$2
 lpe

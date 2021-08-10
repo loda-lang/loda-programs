@@ -6,6 +6,6 @@ lpb $0
   mov $2,$0
   trn $0,8
   max $2,0
-  cal $2,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
+  seq $2,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
   add $1,$2
 lpe

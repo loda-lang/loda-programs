@@ -4,7 +4,7 @@
 mov $2,3
 mul $2,$0
 add $2,$0
-cal $0,338896 ; Inradii of Pythagorean triples of A338895.
+seq $0,338896 ; Inradii of Pythagorean triples of A338895.
 add $0,2
 div $2,2
 add $0,$2

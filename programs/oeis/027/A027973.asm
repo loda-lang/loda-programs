@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,27983 ; T(n,n+1) + T(n,n+2) + ... + T(n,2n), T given by A027960.
+  seq $0,27983 ; T(n,n+1) + T(n,n+2) + ... + T(n,2n), T given by A027960.
   mov $2,$3
   mul $2,$0
   add $1,$2

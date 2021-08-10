@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,164016 ; 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
+  seq $2,164016 ; 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
   add $1,$2
 lpe
 div $1,3

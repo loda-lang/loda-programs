@@ -9,7 +9,7 @@ lpb $2
   sub $2,2
   sub $0,$2
   mov $3,$0
-  cal $0,178225 ; Characteristic function of A006995 (binary palindromes).
+  seq $0,178225 ; Characteristic function of A006995 (binary palindromes).
   mul $3,$0
   add $1,$3
 lpe

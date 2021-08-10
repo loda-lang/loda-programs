@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,93129 ; Binomial transform of Fibonacci(2n-1) (A001519).
+  seq $0,93129 ; Binomial transform of Fibonacci(2n-1) (A001519).
   mul $0,2
   sub $0,1
   mov $2,$3

@@ -11,7 +11,7 @@ lpb $7
   mul $2,2
   mov $6,$0
   max $6,0
-  cal $6,157681 ; Fibonacci sequence beginning 29, 31.
+  seq $6,157681 ; Fibonacci sequence beginning 29, 31.
   mov $3,$6
   add $3,$2
   mov $4,$7

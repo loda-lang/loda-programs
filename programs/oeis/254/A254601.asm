@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,3688 ; a(n) = 3*a(n-1) + a(n-2), with a(1)=1 and a(2)=4.
+  seq $2,3688 ; a(n) = 3*a(n-1) + a(n-2), with a(1)=1 and a(2)=4.
   add $1,$2
   mul $1,2
 lpe

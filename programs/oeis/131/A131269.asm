@@ -3,6 +3,6 @@
 
 mov $2,$0
 trn $0,2
-cal $0,192960 ; Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
+seq $0,192960 ; Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 add $0,$2
 mov $1,$0

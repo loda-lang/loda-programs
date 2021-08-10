@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   max $0,0
-  cal $0,23435 ; Dying rabbits: a(n) = a(n-1) + a(n-2) - a(n-5).
+  seq $0,23435 ; Dying rabbits: a(n) = a(n-1) + a(n-2) - a(n-5).
   mov $3,$0
   mov $5,$4
   mul $5,$0

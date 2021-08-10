@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,94588 ; a(n) = n*F(n-1) + F(n), where F = A000045.
+  seq $2,94588 ; a(n) = n*F(n-1) + F(n), where F = A000045.
   add $1,$2
 lpe

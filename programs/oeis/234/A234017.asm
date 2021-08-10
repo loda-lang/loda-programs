@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,234016 ; Partial sums of the characteristic function of A055938.
+  seq $0,234016 ; Partial sums of the characteristic function of A055938.
   mov $7,$2
   cmp $7,0
   add $2,$7

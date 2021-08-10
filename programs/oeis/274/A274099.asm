@@ -3,5 +3,5 @@
 
 add $0,1
 bin $0,2
-cal $0,1400 ; Number of partitions of n into at most 4 parts.
+seq $0,1400 ; Number of partitions of n into at most 4 parts.
 mov $1,$0

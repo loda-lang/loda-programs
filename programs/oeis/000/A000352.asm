@@ -3,6 +3,6 @@
 
 add $0,1
 sub $1,$0
-cal $0,249999 ; Expansion of 1/((1-x)^2*(1-2*x)*(1-3*x)).
+seq $0,249999 ; Expansion of 1/((1-x)^2*(1-2*x)*(1-3*x)).
 add $1,$0
 sub $1,1

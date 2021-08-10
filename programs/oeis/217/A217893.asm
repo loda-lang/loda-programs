@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,$0
-cal $0,216876 ; 20k^2-20k-5 interleaved with 20k^2+5 for k=>0.
+seq $0,216876 ; 20k^2-20k-5 interleaved with 20k^2+5 for k=>0.
 add $1,$0
 sub $1,7
 div $1,4

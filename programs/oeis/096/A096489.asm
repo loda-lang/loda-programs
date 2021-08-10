@@ -5,5 +5,5 @@ add $0,3
 lpb $0
   bin $0,3
 lpe
-cal $0,6005 ; The odd prime numbers together with 1.
+seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,$0

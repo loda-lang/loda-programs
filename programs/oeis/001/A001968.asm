@@ -4,7 +4,7 @@
 sub $0,1
 mul $0,2
 add $0,3
-cal $0,184517 ; Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
+seq $0,184517 ; Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
 sub $0,3
 div $0,2
 mov $1,$0

@@ -3,6 +3,6 @@
 
 mov $1,$0
 sub $0,1
-cal $1,256702 ; Nonpositive part of the minimal alternating binary representation of n (defined at A256696).
+seq $1,256702 ; Nonpositive part of the minimal alternating binary representation of n (defined at A256696).
 add $1,$0
 add $1,2

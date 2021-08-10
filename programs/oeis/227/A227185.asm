@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   div $0,2
-  cal $2,133223 ; Sum of digits of primes (A007605), sorted and with duplicates removed.
+  seq $2,133223 ; Sum of digits of primes (A007605), sorted and with duplicates removed.
   mod $2,2
   add $1,$2
 lpe

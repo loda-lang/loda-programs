@@ -5,7 +5,7 @@ mov $2,$0
 div $2,2
 mul $2,2
 add $0,$2
-cal $0,1196 ; Double-bitters: only even length runs in binary expansion.
+seq $0,1196 ; Double-bitters: only even length runs in binary expansion.
 mov $1,$0
 div $1,3
 mul $1,8

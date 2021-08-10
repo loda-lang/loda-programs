@@ -11,7 +11,7 @@ lpb $3
   mul $0,2
   add $0,3
   div $0,4
-  cal $0,218444 ; a(n) = Sum_{k>=0} floor(n/(5*k + 1)).
+  seq $0,218444 ; a(n) = Sum_{k>=0} floor(n/(5*k + 1)).
   mov $2,$3
   mov $4,$0
   lpb $2

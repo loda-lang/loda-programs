@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,115 ; Denumerants: Expansion of 1/((1-x)*(1-x^2)*(1-x^5)).
+  seq $2,115 ; Denumerants: Expansion of 1/((1-x)*(1-x^2)*(1-x^5)).
   add $1,$2
 lpe
 add $1,1

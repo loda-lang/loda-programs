@@ -7,7 +7,7 @@ mov $4,$0
 mov $0,1
 add $4,1
 add $0,$4
-cal $0,14445 ; Even Fibonacci numbers; or, Fibonacci(3*n).
+seq $0,14445 ; Even Fibonacci numbers; or, Fibonacci(3*n).
 mul $0,2
 mov $1,$0
 sub $1,4

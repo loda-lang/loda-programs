@@ -5,7 +5,7 @@ mov $2,$0
 mov $4,$0
 mov $5,$0
 mul $0,2
-cal $0,178733 ; a(n) = n XOR 7n, where XOR is bitwise XOR.
+seq $0,178733 ; a(n) = n XOR 7n, where XOR is bitwise XOR.
 add $0,4
 mul $0,2
 mov $1,$0

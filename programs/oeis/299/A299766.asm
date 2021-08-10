@@ -6,5 +6,5 @@ lpb $0
   dif $0,2
 lpe
 sub $0,1
-cal $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 mov $1,$0

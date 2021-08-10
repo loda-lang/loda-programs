@@ -3,6 +3,6 @@
 
 sub $0,1
 div $0,2
-cal $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
+seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
 mov $1,$0
 sub $1,1

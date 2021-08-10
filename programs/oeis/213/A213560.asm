@@ -3,7 +3,7 @@
 
 mov $1,2
 add $1,$0
-cal $0,145216 ; Self-convolution of (1^3, 2^3, 3^3, 4^3, ... ).
+seq $0,145216 ; Self-convolution of (1^3, 2^3, 3^3, 4^3, ... ).
 mul $1,$0
 sub $1,2
 div $1,2

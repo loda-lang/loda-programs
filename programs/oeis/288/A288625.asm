@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-cal $0,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
+seq $0,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
 sub $1,$0
 add $1,$2
 add $1,2

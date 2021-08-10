@@ -3,7 +3,7 @@
 
 add $0,2
 mul $0,9
-cal $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
 mov $1,$0
 sub $1,9
 div $1,9

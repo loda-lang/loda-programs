@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   trn $0,1
-  cal $0,158943 ; INVERT transform of A027656: (1, 0, 2, 0, 3, 0, 4, 0, 5, ...).
+  seq $0,158943 ; INVERT transform of A027656: (1, 0, 2, 0, 3, 0, 4, 0, 5, ...).
   add $1,$0
 lpe

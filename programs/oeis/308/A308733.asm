@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,2
-  cal $2,340761 ; Number of partitions of n into 4 parts whose 'middle' two parts have the same parity.
+  seq $2,340761 ; Number of partitions of n into 4 parts whose 'middle' two parts have the same parity.
   add $1,$2
 lpe

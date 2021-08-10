@@ -8,7 +8,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,117943 ; a(1) = 0, a(2) = 1; a(3n) = a(n); if every third term (a(3), a(6), a(9), ...) is deleted, this gives back the original sequence.
+  seq $0,117943 ; a(1) = 0, a(2) = 1; a(3n) = a(n); if every third term (a(3), a(6), a(9), ...) is deleted, this gives back the original sequence.
   mov $3,$0
   cmp $3,0
   add $1,$3

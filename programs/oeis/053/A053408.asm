@@ -3,9 +3,8 @@
 
 mov $1,$0
 lpb $0
-  mov $2,$0
-  mod $0,8
-  seq $2,219282 ; Number of superdiagonal bargraphs with area n.
-  add $1,$2
+  sub $0,8
+  pow $1,2
+  div $1,3
 lpe
 add $1,1

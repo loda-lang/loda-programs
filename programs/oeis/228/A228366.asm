@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,228367 ; n-th element of the ruler function plus the highest power of 2 dividing n.
+  seq $2,228367 ; n-th element of the ruler function plus the highest power of 2 dividing n.
   add $1,$2
 lpe

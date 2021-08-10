@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   div $0,3
-  cal $2,131294 ; a(n)=ds_3(a(n-1))+ds_3(a(n-2)), a(0)=0, a(1)=1; where ds_3=digital sum base 3.
+  seq $2,131294 ; a(n)=ds_3(a(n-1))+ds_3(a(n-2)), a(0)=0, a(1)=1; where ds_3=digital sum base 3.
   add $1,$2
 lpe

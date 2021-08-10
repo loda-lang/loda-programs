@@ -10,7 +10,7 @@ lpb $3
   sub $0,1
   div $0,2
   add $0,1
-  cal $0,127427 ; a(n) = v_3( (6n)! ) - v_3( (3n)! ), where v_3(N) is the 3-adic valuation A007949(N).
+  seq $0,127427 ; a(n) = v_3( (6n)! ) - v_3( (3n)! ), where v_3(N) is the 3-adic valuation A007949(N).
   mov $2,$3
   mul $2,$0
   add $1,$2

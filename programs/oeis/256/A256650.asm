@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,254474 ; 30-gonal numbers: a(n) = n*(14*n-13).
+  seq $2,254474 ; 30-gonal numbers: a(n) = n*(14*n-13).
   add $1,$2
 lpe

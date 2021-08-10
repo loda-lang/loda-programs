@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,34730 ; Dirichlet convolution of b_n=1 with c_n=3^(n-1).
+  seq $2,34730 ; Dirichlet convolution of b_n=1 with c_n=3^(n-1).
   add $1,$2
 lpe
 add $1,1

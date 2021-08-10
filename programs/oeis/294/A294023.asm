@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,56172 ; Number of non-unitary prime divisors of n!.
+  seq $2,56172 ; Number of non-unitary prime divisors of n!.
   add $1,$2
 lpe

@@ -16,8 +16,8 @@ lpb $2
     sub $7,1
     add $0,$7
     trn $0,1
-    cal $0,181133 ; a(n) = n + A003056(n).
-    cal $0,28895 ; 5 times triangular numbers: a(n) = 5*n*(n+1)/2.
+    seq $0,181133 ; a(n) = n + A003056(n).
+    seq $0,28895 ; 5 times triangular numbers: a(n) = 5*n*(n+1)/2.
     mov $3,$0
     mov $8,$7
     mul $8,$0

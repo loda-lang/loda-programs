@@ -5,7 +5,7 @@ mov $1,$0
 trn $0,1
 pow $1,2
 mov $2,$0
-cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 add $2,1
 mul $2,$0
 mov $3,$2

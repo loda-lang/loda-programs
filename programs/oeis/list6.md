@@ -118,6 +118,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A302298](http://oeis.org/A302298) ([program](302/A302298.asm)): Wiener index of the graph of nodes (i,j) of the square lattice such that abs(i) + abs(j) <= n.
 * [A302302](http://oeis.org/A302302) ([program](302/A302302.asm)): Number of triples (i,j,k) such that i+j+k > 0 with -n <= i,j,k <= n.
 * [A302329](http://oeis.org/A302329) ([program](302/A302329.asm)): a(0)=1, a(1)=61; for n>1, a(n) = 62*a(n-1) - a(n-2).
+* [A302330](http://oeis.org/A302330) ([program](302/A302330.asm)): a(0)=1, a(1)=97; for n>1, a(n) = 98*a(n-1) - a(n-2).
 * [A302332](http://oeis.org/A302332) ([program](302/A302332.asm)): a(0)=1, a(1)=193; for n>1, a(n) = 194*a(n-1) - a(n-2).
 * [A302338](http://oeis.org/A302338) ([program](302/A302338.asm)): a(n) = 3*n + 2^v(n) where v(n) denotes the 2-adic valuation of n.
 * [A302390](http://oeis.org/A302390) ([program](302/A302390.asm)): Triameter of the n-cube-connected cycle graph.
@@ -1036,6 +1037,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A317439](http://oeis.org/A317439) ([program](317/A317439.asm)): Numbers missing from A317437.
 * [A317440](http://oeis.org/A317440) ([program](317/A317440.asm)): Numbers missing from A317438.
 * [A317451](http://oeis.org/A317451) ([program](317/A317451.asm)): a(n) = (n*A003500(n) - A231896(n))/2.
+* [A317483](http://oeis.org/A317483) ([program](317/A317483.asm)): Circuit rank of the n-Bruhat graph.
 * [A317527](http://oeis.org/A317527) ([program](317/A317527.asm)): Number of edges in the n-alternating group graph.
 * [A317542](http://oeis.org/A317542) ([program](317/A317542.asm)): Formal inverse of the period-doubling sequence A096268.
 * [A317551](http://oeis.org/A317551) ([program](317/A317551.asm)): Fertility numbers.
@@ -1071,6 +1073,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A318744](http://oeis.org/A318744) ([program](318/A318744.asm)): a(n) = Sum_{k=1..n} floor(n/k)^5.
 * [A318755](http://oeis.org/A318755) ([program](318/A318755.asm)): a(n) = Sum_{k=1..n} tau(k)^3, where tau is A000005.
 * [A318765](http://oeis.org/A318765) ([program](318/A318765.asm)): a(n) = (n + 2)*(n^2 + n - 1).
+* [A318778](http://oeis.org/A318778) ([program](318/A318778.asm)): Number of different positions that a elementary sphinx can occupy in a sphinx of order n.
 * [A318791](http://oeis.org/A318791) ([program](318/A318791.asm)): Prime generating polynomial: a(n) = 9*n^2 - 249*n + 1763.
 * [A318827](http://oeis.org/A318827) ([program](318/A318827.asm)): a(n) = n - gcd(n - 1, phi(n)).
 * [A318830](http://oeis.org/A318830) ([program](318/A318830.asm)): a(n) = phi(n) - gcd(phi(n), n-1).
@@ -1191,6 +1194,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A321202](http://oeis.org/A321202) ([program](321/A321202.asm)): Row sums of the irregular triangle A321201.
 * [A321207](http://oeis.org/A321207) ([program](321/A321207.asm)): a(n) = (n*n!)^3.
 * [A321212](http://oeis.org/A321212) ([program](321/A321212.asm)): Numbers that are congruent to {2, 3} mod 16.
+* [A321213](http://oeis.org/A321213) ([program](321/A321213.asm)): a(n) is the number of divisors of n-th Fermat number (A000215).
 * [A321220](http://oeis.org/A321220) ([program](321/A321220.asm)): a(n) = n+2 if n is even, otherwise a(n) = 2*n+1 if n is odd.
 * [A321232](http://oeis.org/A321232) ([program](321/A321232.asm)): Length of n-th term of A321225.
 * [A321237](http://oeis.org/A321237) ([program](321/A321237.asm)): Start with a square of dimension 1 X 1, and repeatedly append along the squares of the previous step squares with half their side length that do not overlap with any prior square; a(n) gives the number of squares appended at n-th step.
@@ -2047,6 +2051,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338100](http://oeis.org/A338100) ([program](338/A338100.asm)): Number of spanning trees in the n X 2 king graph.
 * [A338101](http://oeis.org/A338101) ([program](338/A338101.asm)): Smallest odd prime dividing n is a(n)-th prime, or 0 if no such prime exists.
 * [A338109](http://oeis.org/A338109) ([program](338/A338109.asm)): a(n)/A002939(n+1) is the Kirchhoff index of the join of the disjoint union of two complete graphs on n vertices with the empty graph on n+1 vertices.
+* [A338112](http://oeis.org/A338112) ([program](338/A338112.asm)): Least number that is both the sum and product of n distinct positive integers.
 * [A338117](http://oeis.org/A338117) ([program](338/A338117.asm)): Number of partitions of n into two parts (s,t) such that (t-s) | n, where s < t.
 * [A338186](http://oeis.org/A338186) ([program](338/A338186.asm)): Expansion of (2-6*x-12*x^2)/((1-x)^2*(1-9*x)).
 * [A338199](http://oeis.org/A338199) ([program](338/A338199.asm)): a(n) = v(1 + F(4*n - 3)), where F(x) = (3*x + 1)/2^v(3*x + 1), x is any odd natural number, and v(y) is the 2-adic valuation of y.
@@ -2072,6 +2077,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338651](http://oeis.org/A338651) ([program](338/A338651.asm)): Number of divisors of n which are greater than 7.
 * [A338652](http://oeis.org/A338652) ([program](338/A338652.asm)): Number of divisors of n which are greater than 8.
 * [A338653](http://oeis.org/A338653) ([program](338/A338653.asm)): Number of divisors of n which are greater than 9.
+* [A338727](http://oeis.org/A338727) ([program](338/A338727.asm)): a(n) = C(n+1)^2 - 2*C(n+1)*C(n) + C(n)^2, where C() is a Catalan number.
 * [A338733](http://oeis.org/A338733) ([program](338/A338733.asm)): Partial sums of A054843.
 * [A338760](http://oeis.org/A338760) ([program](338/A338760.asm)): Subword complexity of a certain infinite word.
 * [A338795](http://oeis.org/A338795) ([program](338/A338795.asm)): Each term of A003215 (centered hexagonal numbers) is multiplied by the corresponding term of A003154 (centered dodecagonal numbers).
@@ -2208,6 +2214,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A341523](http://oeis.org/A341523) ([program](341/A341523.asm)): Number of prime factors (with multiplicity) shared by n and sigma(n): a(n) = bigomega(gcd(n, sigma(n))).
 * [A341528](http://oeis.org/A341528) ([program](341/A341528.asm)): a(n) = n * sigma(A003961(n)), where A003961 shifts the prime factorization of n one step towards larger primes, and sigma is the sum of the divisors of n.
 * [A341543](http://oeis.org/A341543) ([program](341/A341543.asm)): a(n) = sqrt( Product_{j=1..n} Product_{k=1..2} (4*sin((2*j-1)*Pi/(2*n))^2 + 4*sin((2*k-1)*Pi/2)^2) ).
+* [A341544](http://oeis.org/A341544) ([program](341/A341544.asm)): a(n) = sqrt( Product_{j=1..n} Product_{k=1..4} (4*sin((2*j-1)*Pi/(2*n))^2 + 4*sin((2*k-1)*Pi/4)^2) ).
 * [A341590](http://oeis.org/A341590) ([program](341/A341590.asm)): a(n) = (Sum_{j=1..3} StirlingS1(3,j)*(2^j-1)^n)/3!.
 * [A341591](http://oeis.org/A341591) ([program](341/A341591.asm)): Number of superior prime divisors of n.
 * [A341625](http://oeis.org/A341625) ([program](341/A341625.asm)): a(n) = 1 if the arithmetic derivative of n is less than n, otherwise 0.
@@ -2263,7 +2270,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A342761](http://oeis.org/A342761) ([program](342/A342761.asm)): Fold a square sheet of paper alternately vertically to the left and horizontally downwards; after each fold, draw a line along each inward crease; after n folds, the resulting graph has a(n) edges.
 * [A342768](http://oeis.org/A342768) ([program](342/A342768.asm)): a(n) = A342767(n, n).
 * [A342774](http://oeis.org/A342774) ([program](342/A342774.asm)): Length of n-th word in the ordering A342753 of all binary words.
-* [A342831](http://oeis.org/A342831) ([program](342/A342831.asm)): a(n) is the smallest positive integer k such that the n-dimensional cube [0,k]^n contains at least as many internal lattice points as external lattice points.
 * [A342851](http://oeis.org/A342851) ([program](342/A342851.asm)): Remove duplicates in the decimal digit-reversal of n.
 * [A342856](http://oeis.org/A342856) ([program](342/A342856.asm)): Factorial numbers n that are sqrt(n)-smooth.
 * [A342871](http://oeis.org/A342871) ([program](342/A342871.asm)): a(n) = Sum_{k=1..n} floor(n^(1/k)), n >= 1.
@@ -2332,6 +2338,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A344598](http://oeis.org/A344598) ([program](344/A344598.asm)): a(n) = Sum_{k=1..n} phi(k) * (floor(n/k)^2 - floor((n-1)/k)^2).
 * [A344617](http://oeis.org/A344617) ([program](344/A344617.asm)): Sign of the alternating sum of the prime indices of n.
 * [A344622](http://oeis.org/A344622) ([program](344/A344622.asm)): a(n) = n*(n+1)/2 - sigma(n) + d(n).
+* [A344624](http://oeis.org/A344624) ([program](344/A344624.asm)): a(n) = Sum_{k=1..n} k^c(k), where c(n) is the characteristic function of squares.
 * [A344674](http://oeis.org/A344674) ([program](344/A344674.asm)): a(n) is the maximum value such that there is an n X n binary orthogonal matrix with every row having at least a(n) ones.
 * [A344747](http://oeis.org/A344747) ([program](344/A344747.asm)): a(n) = (1/6)*(3^n + (-2)^n - 1).
 * [A344791](http://oeis.org/A344791) ([program](344/A344791.asm)): a(n) is the number of 2-point antichains in the poset D_{2n+1} of type D, whose elements are compositions of 2n+1.
@@ -2382,4 +2389,5 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A346403](http://oeis.org/A346403) ([program](346/A346403.asm)): a(1)=1; for n>1, a(n) gives the sum of the exponents in the different ways to write n as n = x^y, 2 <= x, 1 <= y.
 * [A346425](http://oeis.org/A346425) ([program](346/A346425.asm)): a(n) is the greatest number k such that k! <= prime(n).
 * [A346502](http://oeis.org/A346502) ([program](346/A346502.asm)): a(n) = 3n - (sum of digits of 3n in base 3).
+* [A346597](http://oeis.org/A346597) ([program](346/A346597.asm)): Partial sums of A019554.
 * [A346633](http://oeis.org/A346633) ([program](346/A346633.asm)): Sum of even-indexed parts (even bisection) of the n-th composition in standard order.

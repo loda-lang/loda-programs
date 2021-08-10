@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,112772 ; Semiprimes of the form 6n+2.
+  seq $2,112772 ; Semiprimes of the form 6n+2.
   add $1,$2
 lpe
 div $1,2

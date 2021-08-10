@@ -7,5 +7,5 @@ sub $0,4
 dif $0,4
 dif $0,4
 sub $0,1
-cal $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 mov $1,$0

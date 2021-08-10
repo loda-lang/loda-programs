@@ -3,6 +3,6 @@
 
 mul $0,2
 trn $0,1
-cal $0,32125 ; "BIK" (reversible, indistinct, unlabeled) transform of 3,3,3,3...
+seq $0,32125 ; "BIK" (reversible, indistinct, unlabeled) transform of 3,3,3,3...
 mov $1,$0
 div $1,3

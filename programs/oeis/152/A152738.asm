@@ -3,7 +3,7 @@
 
 pow $0,2
 mov $1,$0
-cal $0,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
+seq $0,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
 mov $3,$1
 sub $3,2
 sub $3,$0

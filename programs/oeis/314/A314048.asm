@@ -13,8 +13,8 @@ lpb $5
   mov $3,$4
   add $3,1
   mul $0,$3
-  cal $0,169600 ; Numbers that are congruent to {4, 25} mod 31.
-  cal $0,97992 ; G.f.: 1/((1-x)*(1-x^6)) = 1/ ( (1+x)*(x^2-x+1)*(1+x+x^2)*(x-1)^2 ).
+  seq $0,169600 ; Numbers that are congruent to {4, 25} mod 31.
+  seq $0,97992 ; G.f.: 1/((1-x)*(1-x^6)) = 1/ ( (1+x)*(x^2-x+1)*(1+x+x^2)*(x-1)^2 ).
   mov $2,$5
   mov $6,$0
   lpb $2

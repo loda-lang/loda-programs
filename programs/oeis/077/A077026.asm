@@ -1,9 +1,7 @@
 ; A077026: a(n) = Sum_{k=1..n} floor(n/k + 1)-floor(n/k + 1/2).
 ; 1,2,2,4,3,5,5,6,6,8,6,10,9,9,9,13,11,12,12,14,14,16,12,18,17,17,17,19,17,21,21,22,20,22,20,26,26,24,22,28,25,29,27,29,29,29,27,33,33,32,32,36,30,34,34,38,38,38,34,40,39,39,37,43,41,45,43,41,41,45,43,50,48
 
-mov $2,$0
-add $0,4
-seq $2,75989 ; Number of k satisfying 1<=k<=n and {n/k} >= 1/2, where {n/k} is the fractional part of n/k, i.e., {n/k} = n/k - floor(n/k).
-sub $0,$2
 mov $1,$0
-sub $1,3
+seq $0,75989 ; Number of k satisfying 1<=k<=n and {n/k} >= 1/2, where {n/k} is the fractional part of n/k, i.e., {n/k} = n/k - floor(n/k).
+sub $1,$0
+add $1,1

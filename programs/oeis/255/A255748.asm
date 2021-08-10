@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
+  seq $2,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
   add $1,$2
 lpe
 add $1,1

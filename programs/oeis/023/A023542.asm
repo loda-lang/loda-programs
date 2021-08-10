@@ -9,6 +9,6 @@ lpb $3
   sub $3,1
   sub $0,$3
   add $0,1
-  cal $0,88207 ; a(n) = Sum_{k=0..n} floor(k*phi^2)) where phi=(1+sqrt(5))/2.
+  seq $0,88207 ; a(n) = Sum_{k=0..n} floor(k*phi^2)) where phi=(1+sqrt(5))/2.
   add $1,$0
 lpe

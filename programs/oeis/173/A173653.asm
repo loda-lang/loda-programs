@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,56865 ; a(n) = floor(n^2/10).
+  seq $2,56865 ; a(n) = floor(n^2/10).
   add $1,$2
 lpe

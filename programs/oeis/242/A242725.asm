@@ -5,7 +5,7 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
-  cal $2,77234 ; Bisection (odd part) of Chebyshev sequence with Diophantine property.
+  seq $2,77234 ; Bisection (odd part) of Chebyshev sequence with Diophantine property.
   add $1,$2
 lpe
 add $1,1

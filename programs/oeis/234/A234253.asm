@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,581 ; a(n) = binomial coefficient C(n,8).
+  seq $2,581 ; a(n) = binomial coefficient C(n,8).
   pow $2,2
   add $1,$2
 lpe

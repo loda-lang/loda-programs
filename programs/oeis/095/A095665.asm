@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,95664 ; Ninth column (m=8) of (1,3)-Pascal triangle A095660.
+  seq $2,95664 ; Ninth column (m=8) of (1,3)-Pascal triangle A095660.
   add $1,$2
 lpe
 add $1,3

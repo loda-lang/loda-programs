@@ -3,5 +3,5 @@
 
 mov $1,$0
 trn $0,1
-cal $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
+seq $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
 mul $1,$0

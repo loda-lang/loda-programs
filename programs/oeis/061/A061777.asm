@@ -6,7 +6,7 @@ lpb $0
   sub $0,$2
   mov $1,$0
   max $1,0
-  cal $1,53599 ; Number of nonempty subsequences {s(k)} of 1..n such that the difference sequence is palindromic.
+  seq $1,53599 ; Number of nonempty subsequences {s(k)} of 1..n such that the difference sequence is palindromic.
   add $2,$1
 lpe
 mul $1,3

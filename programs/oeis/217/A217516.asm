@@ -6,7 +6,7 @@ mov $2,$0
 cmp $2,0
 add $0,$2
 div $1,$0
-cal $0,131800 ; Period 4: repeat [1, 2, 5, 6].
+seq $0,131800 ; Period 4: repeat [1, 2, 5, 6].
 max $3,$0
 sub $1,$3
 add $1,9

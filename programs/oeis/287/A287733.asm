@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,154293 ; Integers of the form t/6, where t is a triangular number (A000217).
+  seq $0,154293 ; Integers of the form t/6, where t is a triangular number (A000217).
   mov $2,$3
   mul $2,$0
   add $1,$2

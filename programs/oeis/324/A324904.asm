@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,324902 ; The 2-adic valuation of A318456(n), where A318456(n) = n OR (sigma(n)-n).
+seq $0,324902 ; The 2-adic valuation of A318456(n), where A318456(n) = n OR (sigma(n)-n).
 mov $1,$0

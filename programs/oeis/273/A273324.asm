@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,278536 ; First differences of A273324.
+  seq $2,278536 ; First differences of A273324.
   add $1,$2
 lpe
 add $1,2
