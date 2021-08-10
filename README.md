@@ -9,7 +9,7 @@ The [programs/oeis](programs/oeis) folder contains programs that generate intege
 
 If you would like to receive updates on the miner findings, you can check the [changes on the master branch](https://github.com/ckrause/loda/commits/master) for new and updated programs or get real-time updates from [@lodaminer](https://twitter.com/lodaminer) on Twitter.
 
-:woman_teacher: You can try out the LODA language using the [interactive web interface](https://neoneye.github.io/lodalab/?id=45) of [LODA Lab](https://github.com/neoneye/loda-lab) written by Simon Strandgaard, or use one of the command-line tools (see below).
+:woman_teacher: You can try out the LODA language using the [interactive web interface](https://neoneye.github.io/lodalab/?id=6) of [LODA Lab](https://github.com/neoneye/loda-lab) written by Simon Strandgaard, or use one of the command-line tools (see below).
 
 [Contributions](CONTRIBUTING.md) are warmly welcome! You can get in touch with us by sending a mail to "me" at ckrause dot org or via GitHub issues. If you would like to chat with us, we use Slack.
 
@@ -136,7 +136,7 @@ Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder.
 
 ## Related Projects
 
-* [LODA Lab](https://github.com/neoneye/loda-lab) by Simon Strandgaard is an implementation of the LODA language in Rust with a web interface!
+* [LODA Lab](https://github.com/neoneye/loda-lab) by Simon Strandgaard is an implementation of the LODA language in Rust with an [interactive web interface](https://neoneye.github.io/lodalab/?id=6)!
 * [jOEIS](https://github.com/archmageirvine/joeis) by Sean A. Irvine and Georg Fischer is a collection of pure Java programs implementing sequences from the OEIS.
 * [Sequence Database](http://sequencedb.net) by [Jon Maiga](http://www.jonkagstrom.com/) is a database with machine generated integer and decimal sequences.
 * [The Ramanujan Machine](https://github.com/ShaharGottlieb/MasseyRamanujan) by Shahar Gottlieb is an algorithmic approach to discover new mathematical conjectures.
