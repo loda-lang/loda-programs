@@ -3,5 +3,5 @@
 
 mov $1,1
 add $1,$0
-cal $0,6 ; Integer part of square root of n-th prime.
+seq $0,6 ; Integer part of square root of n-th prime.
 sub $1,$0

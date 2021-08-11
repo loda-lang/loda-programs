@@ -5,6 +5,6 @@ mul $0,3
 add $0,1
 max $2,$0
 mov $1,$2
-cal $1,33270 ; Number of odd primes <= n.
+seq $1,33270 ; Number of odd primes <= n.
 trn $1,1
 add $1,2

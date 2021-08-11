@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,155803 ; A023001 interleaved with 2*A023001 and 4*A023001.
+  seq $2,155803 ; A023001 interleaved with 2*A023001 and 4*A023001.
   add $1,$2
 lpe

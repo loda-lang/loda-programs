@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,88512 ; Number of partitions of n into two parts whose xor-sum is n.
+  seq $2,88512 ; Number of partitions of n into two parts whose xor-sum is n.
   add $1,$2
   mov $3,$2
   mul $3,$1

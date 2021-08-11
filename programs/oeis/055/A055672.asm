@@ -7,7 +7,7 @@ bin $3,$0
 sub $0,1
 mov $1,$0
 trn $0,1
-cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $2,$3
 cmp $2,0
 add $3,$2

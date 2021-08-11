@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,179276 ; Largest 3-smooth number not less than n.
+  seq $2,179276 ; Largest 3-smooth number <= n.
   mod $0,$2
   mov $3,$2
   min $3,1

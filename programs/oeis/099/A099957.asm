@@ -3,4 +3,4 @@
 
 mov $1,$0
 mul $1,2
-cal $1,106477 ; Diagonal sums of Euler phi function sequence array.
+seq $1,106477 ; Diagonal sums of Euler phi function sequence array.

@@ -9,7 +9,7 @@ lpb $4
   sub $0,1
   mov $3,$0
   max $3,0
-  cal $3,1953 ; a(n) = floor((n + 1/2) * sqrt(2)).
+  seq $3,1953 ; a(n) = floor((n + 1/2) * sqrt(2)).
   mov $5,$4
   mul $5,$3
   add $1,$5

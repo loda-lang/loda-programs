@@ -7,7 +7,7 @@ add $3,3
 sub $2,$3
 mov $4,$0
 mul $0,$3
-cal $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
 add $1,$0
 add $2,1
 add $1,$2

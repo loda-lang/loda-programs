@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   sub $0,1
-  cal $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   mod $0,4
   mov $3,$0
   mul $3,46

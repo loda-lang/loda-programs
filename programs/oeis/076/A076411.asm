@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,259362 ; a(1) = 1, for n > 1: a(n) is the number of ways to write n as a nontrivial perfect power.
+  seq $2,259362 ; a(1) = 1, for n > 1: a(n) is the number of ways to write n as a nontrivial perfect power.
   mov $3,$2
   min $3,1
   add $1,$3

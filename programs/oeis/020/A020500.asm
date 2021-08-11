@@ -4,5 +4,5 @@
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
+  seq $1,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
 lpe

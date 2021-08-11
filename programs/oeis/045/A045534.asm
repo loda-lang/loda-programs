@@ -15,7 +15,7 @@ lpb $0
   lpb $0
     sub $0,$3
     max $0,0
-    cal $0,173919 ; Numbers that are prime or one less than a prime.
+    seq $0,173919 ; Numbers that are prime or one less than a prime.
     trn $1,8
   lpe
   lpb $0

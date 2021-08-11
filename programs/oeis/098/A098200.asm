@@ -3,5 +3,11 @@
 
 mul $0,2
 add $0,1
-seq $0,53475 ; 1 + the number of iterations of A051953 (Euler-cototient) function needed to reach 0, starting at n.
-mov $1,$0
+mov $1,1
+lpb $0
+  mov $2,$0
+  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $0,$2
+  add $1,1
+lpe
+add $1,1

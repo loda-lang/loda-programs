@@ -4,7 +4,7 @@
 mov $2,$0
 add $2,1
 mov $0,$2
-cal $0,55997 ; Numbers n such that n(n - 1)/2 is a square.
+seq $0,55997 ; Numbers n such that n(n - 1)/2 is a square.
 mov $1,$0
 sub $1,$2
 div $1,2

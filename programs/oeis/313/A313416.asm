@@ -2,7 +2,7 @@
 ; 1,5,10,13,18,25,28,31,38,43,46,51,56,61,66,69,74,81,84,87,94,99,102,107,112,117,122,125,130,137,140,143,150,155,158,163,168,173,178,181,186,193,196,199,206,211,214,219,224,229
 
 mov $3,$0
-cal $0,316316 ; Coordination sequence for tetravalent node in chamfered version of square grid.
+seq $0,316316 ; Coordination sequence for tetravalent node in chamfered version of square grid.
 sub $0,1
 mov $4,$0
 div $4,2

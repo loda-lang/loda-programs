@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,3
-  cal $2,267461 ; Total number of OFF (white) cells after n iterations of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
+  seq $2,267461 ; Total number of OFF (white) cells after n iterations of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
   add $1,$2
 lpe
 div $1,2

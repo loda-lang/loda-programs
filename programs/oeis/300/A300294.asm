@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,330761 ; Array read by antidiagonals: T(n,k) is the number of faces on a ring formed by connecting the ends of a prismatic rod whose cross-section is an n-sided regular polygon after applying a twist of k/n turns.
+  seq $2,330761 ; Array read by antidiagonals: T(n,k) is the number of faces on a ring formed by connecting the ends of a prismatic rod whose cross-section is an n-sided regular polygon after applying a twist of k/n turns.
   add $3,$2
   div $3,2
   mul $2,$3

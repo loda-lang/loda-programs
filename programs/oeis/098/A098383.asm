@@ -4,7 +4,7 @@
 lpb $0
   add $1,$0
   mov $2,$0
-  cal $2,49084 ; a(n) = pi(n) if n is prime, otherwise 0.
+  seq $2,49084 ; a(n) = pi(n) if n is prime, otherwise 0.
   mov $3,$2
   mov $4,$2
   min $4,1

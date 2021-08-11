@@ -10,9 +10,9 @@ mul $3,5 ; magic number to ensure convergence
 lpb $3
   mul $2,$3 ; denominator *= loop counter
   add $1,$2 ; "+1" in Horner's method
-  mov $5,$4 ; reduce the size of the numerator and denominator (heuristic)
 
-  div $5,3 ; reduce the size of the numerator and denominator (heuristic)
+  mov $5,$4 ; reduce the size of the numerator and denominator (heuristic)
+  div $5,3
   max $5,1
   div $1,$5
   div $2,$5

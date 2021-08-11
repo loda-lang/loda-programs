@@ -8,6 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,35316 ; Sum of the square divisors of n.
+  seq $0,35316 ; Sum of the square divisors of n.
   add $1,$0
 lpe

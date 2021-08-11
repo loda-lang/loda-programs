@@ -3,5 +3,5 @@
 
 div $0,2
 trn $0,1
-cal $0,57627 ; Number of nonsquarefree numbers not exceeding n.
+seq $0,57627 ; Number of nonsquarefree numbers not exceeding n.
 mov $1,$0

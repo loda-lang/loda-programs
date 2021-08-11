@@ -6,6 +6,6 @@ sub $0,2
 mul $0,2
 add $0,1
 max $0,0
-cal $0,98578 ; a(n) = Sum_{k=0..floor(n/4)} C(n-3*k,k+1).
+seq $0,98578 ; a(n) = Sum_{k=0..floor(n/4)} C(n-3*k,k+1).
 mov $1,$0
 add $1,1

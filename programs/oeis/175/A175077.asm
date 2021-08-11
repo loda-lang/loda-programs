@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   max $2,2
-  cal $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
+  seq $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   sub $0,$2
 lpe
 mov $1,$0

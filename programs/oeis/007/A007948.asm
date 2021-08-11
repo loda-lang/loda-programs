@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,62378 ; n divided by largest cubefree factor of n.
+  seq $2,62378 ; n divided by largest cubefree factor of n.
   div $0,$2
 lpe
 mov $1,$0

@@ -9,7 +9,7 @@ lpb $4
   sub $4,1
   sub $0,$4
   add $3,$0 ; ; add it to the result register (to update the count of coprime k <= n)
-  cal $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
+  seq $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
   sub $3,$0
   add $1,$3
 lpe

@@ -6,5 +6,5 @@ mov $1,2
 bin $1,$0
 mul $0,2
 max $0,1
-cal $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 add $1,$0

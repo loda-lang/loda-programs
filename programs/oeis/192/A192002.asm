@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,123740 ; Characteristic sequence for Wythoff AB-numbers A003623.
+  seq $2,123740 ; Characteristic sequence for Wythoff AB-numbers A003623.
   add $1,$2
 lpe

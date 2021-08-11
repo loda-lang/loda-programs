@@ -6,7 +6,7 @@ mov $2,$0
 mul $0,2
 sub $2,1
 sub $0,$2
-cal $0,274010 ; Boris Stechkin function: a(n) is the number of m with 2 <= m <= n and floor(n(m-1)/m) divisible by m-1.
+seq $0,274010 ; Boris Stechkin function: a(n) is the number of m with 2 <= m <= n and floor(n(m-1)/m) divisible by m-1.
 sub $0,$2
 mul $0,3
 mov $1,19604

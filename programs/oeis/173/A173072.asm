@@ -3,5 +3,5 @@
 
 mov $1,$0
 mul $0,2
-cal $1,40 ; The prime numbers.
+seq $1,40 ; The prime numbers.
 sub $1,$0

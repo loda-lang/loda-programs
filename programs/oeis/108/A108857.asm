@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,6
-cal $1,126785 ; Numbers k such that 10*k + 11 is prime.
+seq $1,126785 ; Numbers k such that 10*k + 11 is prime.
 sub $1,12

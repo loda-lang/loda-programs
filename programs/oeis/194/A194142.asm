@@ -16,7 +16,7 @@ lpb $2
     mov $0,$5
     sub $7,1
     sub $0,$7
-    cal $0,144602 ; Christoffel word of slope 4/11.
+    seq $0,144602 ; Christoffel word of slope 4/11.
     mov $3,$0
     add $3,1
     add $6,$3

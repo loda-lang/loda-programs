@@ -16,7 +16,7 @@ lpb $2
     mov $0,$5
     sub $4,1
     sub $0,$4
-    cal $0,136157 ; Triangle by columns, (3, 1, 0, 0, 0,...) in every column.
+    seq $0,136157 ; Triangle by columns, (3, 1, 0, 0, 0,...) in every column.
     gcd $0,2
     add $6,$0
   lpe

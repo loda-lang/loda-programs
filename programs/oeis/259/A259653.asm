@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,98355 ; Multiplication table of the powers of three read by antidiagonals.
+  seq $2,98355 ; Multiplication table of the powers of three read by antidiagonals.
   add $1,$2
 lpe

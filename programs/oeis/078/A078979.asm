@@ -1,7 +1,7 @@
 ; A078979: a(n) = A078711(n) - 1.
 ; 0,1,2,0,1,0,0,1,2,0,1,1,0,1,2,0,1,0,0,1,2,0,1,2,0,1,2,0,1,0,0,1,2,0,1,1,0,1,2,0,1,0,0,1,2,0,1,0,0,1,2,0,1,0,0,1,2,0,1,1,0,1,2,0,1,0,0,1,2,0,1,2,0,1,2,0,1,0,0,1,2,0,1,1,0,1,2,0,1,0,0,1,2,0,1,1,0,1,2,0
 
-cal $0,100833 ; Smallest positive palindrome-free and squarefree sequence.
+seq $0,100833 ; Smallest positive palindrome-free and squarefree sequence.
 sub $0,1
 mov $1,$0
 mod $1,3

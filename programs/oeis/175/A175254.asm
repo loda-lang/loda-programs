@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,327329 ; Twice the sum of all divisors of all positive integers <= n.
+  seq $2,327329 ; Twice the sum of all divisors of all positive integers <= n.
   add $1,$2
 lpe
 div $1,2

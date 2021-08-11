@@ -1,7 +1,7 @@
 ; A132046: Triangle read by rows: T(n,0) = T(n,n) = 1, and T(n,k) = 2*binomial(n,k) for 1 <= k <= n - 1.
 ; 1,1,1,1,4,1,1,6,6,1,1,8,12,8,1,1,10,20,20,10,1,1,12,30,40,30,12,1,1,14,42,70,70,42,14,1,1,16,56,112,140,112,56,16,1,1,18,72,168,252,252,168,72,18,1,1,20,90,240,420,504,420,240,90,20,1
 
-cal $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 mov $1,$0
 cmp $0,1
 mul $1,2

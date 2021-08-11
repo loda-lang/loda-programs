@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   div $0,2
-  cal $2,102394 ; A wicked odious sequence.
+  seq $2,102394 ; A wicked odious sequence.
   sub $2,1
   mov $3,$2
   min $3,1

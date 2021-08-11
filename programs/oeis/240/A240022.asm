@@ -4,6 +4,6 @@
 add $0,1
 mov $1,$0
 sub $0,1
-cal $0,70252 ; Number of n-digit palindromes.
+seq $0,70252 ; Number of n-digit palindromes.
 mul $0,$1
 mov $1,$0

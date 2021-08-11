@@ -3,9 +3,9 @@
 
 mov $2,$0
 add $0,2
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 add $0,6
-cal $2,40 ; The prime numbers.
+seq $2,40 ; The prime numbers.
 add $0,$2
 sub $0,1
 mov $1,$0

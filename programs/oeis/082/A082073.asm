@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,111215 ; Numbers k such that 4k + 5 is prime.
+  seq $0,111215 ; Numbers k such that 4k + 5 is prime.
   mul $0,2
   mov $2,$3
   mul $2,$0

@@ -3,6 +3,6 @@
 
 lpb $0
   trn $0,1
-  cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
   add $1,1
 lpe

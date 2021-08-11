@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,337281 ; a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
+  seq $2,337281 ; a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
   add $1,$2
 lpe

@@ -8,7 +8,7 @@ lpb $3
   mov $0,$5
   sub $3,1
   sub $0,$3
-  cal $0,72436 ; Remove prime factors of form 4*k+3.
+  seq $0,72436 ; Remove prime factors of form 4*k+3.
   mov $2,$0
   mov $4,262146
   lpb $4

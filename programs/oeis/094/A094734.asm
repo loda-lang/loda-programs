@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   mul $0,0
-  cal $2,94033 ; Number of connected 2-element antichains on a labeled n-set.
+  seq $2,94033 ; Number of connected 2-element antichains on a labeled n-set.
   add $1,$2
   add $1,1
 lpe

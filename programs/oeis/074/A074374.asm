@@ -5,6 +5,6 @@ pow $0,2
 sub $0,1
 mov $1,$0
 max $1,0
-cal $1,36288 ; a(n) = 1 + integer log of n: if the prime factorization of n is n = Product (p_j^k_j) then a(n) = 1 + Sum (p_j * k_j) (cf. A001414).
+seq $1,36288 ; a(n) = 1 + integer log of n: if the prime factorization of n is n = Product (p_j^k_j) then a(n) = 1 + Sum (p_j * k_j) (cf. A001414).
 pow $1,2
 div $1,8

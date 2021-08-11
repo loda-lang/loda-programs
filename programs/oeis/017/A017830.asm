@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,233522 ; Expansion of 1 / (1 - x - x^4 + x^9) in powers of x.
+  seq $0,233522 ; Expansion of 1 / (1 - x - x^4 + x^9) in powers of x.
   mov $3,$0
   mov $5,$4
   mul $5,$0

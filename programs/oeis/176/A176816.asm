@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,62068 ; a(n) = d(sigma(n)), where d(k) is the number of divisors function (A000005) and sigma(k) is the sum of divisor function (A000203).
+  seq $2,62068 ; a(n) = d(sigma(n)), where d(k) is the number of divisors function (A000005) and sigma(k) is the sum of divisor function (A000203).
   sub $0,$2
   mov $3,$2
   min $3,1

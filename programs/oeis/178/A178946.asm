@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,14493 ; Odd triangular numbers.
+  seq $2,14493 ; Odd triangular numbers.
   add $1,$2
   add $1,1
 lpe

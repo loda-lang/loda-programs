@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,87624 ; a(n)=0 if n is prime, A001221(n) otherwise.
+  seq $2,87624 ; a(n)=0 if n is prime, A001221(n) otherwise.
   add $1,$2
 lpe

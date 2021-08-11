@@ -2,7 +2,7 @@
 ; 0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
 
 mov $2,$0
-cal $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 lpb $0
   add $1,1
   mul $2,2

@@ -3,5 +3,5 @@
 
 div $0,2
 mov $1,$0
-cal $1,99802 ; Bisection of A000720.
+seq $1,99802 ; Bisection of A000720.
 sub $1,1

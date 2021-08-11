@@ -4,7 +4,7 @@
 mov $1,1
 lpb $0
   mov $1,$0
-  cal $1,120632 ; Number of numbers >1 up to 2*p(n) which are divisible by primes up to p(n).
+  seq $1,120632 ; Number of numbers >1 up to 2*p(n) which are divisible by primes up to p(n).
   div $0,$1
 lpe
 add $1,1

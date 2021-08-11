@@ -3,6 +3,6 @@
 
 mov $1,2
 mov $2,$0
-cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 add $1,$2
 gcd $1,$0

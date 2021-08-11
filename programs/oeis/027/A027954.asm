@@ -3,7 +3,7 @@
 
 mov $1,$0
 mul $1,2
-cal $1,14166 ; Apply partial sum operator 4 times to Fibonacci numbers.
+seq $1,14166 ; Apply partial sum operator 4 times to Fibonacci numbers.
 mov $2,$1
 cmp $2,0
 add $1,$2

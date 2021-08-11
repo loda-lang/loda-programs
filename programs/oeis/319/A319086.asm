@@ -10,7 +10,7 @@ lpb $2
   sub $0,$2
   mov $3,1
   add $3,$0
-  cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $0,$3
   mul $0,$3
   add $1,$0

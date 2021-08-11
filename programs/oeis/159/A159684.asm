@@ -8,7 +8,7 @@ lpb $5
   sub $5,1
   add $0,$5
   max $0,0
-  cal $0,87057 ; Smallest number whose square is larger than 2*n^2.
+  seq $0,87057 ; Smallest number whose square is larger than 2*n^2.
   mov $2,$5
   mul $2,$0
   add $1,$2

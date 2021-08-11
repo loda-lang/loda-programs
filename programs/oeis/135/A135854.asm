@@ -3,5 +3,5 @@
 
 add $0,1
 mov $1,$0
-cal $0,127904 ; Smallest m such that A008687(m) = n.
+seq $0,127904 ; Smallest m such that A008687(m) = n.
 mul $1,$0

@@ -11,7 +11,7 @@ lpb $3
   mul $0,2
   add $0,1
   max $0,0
-  cal $0,151566 ; Leftist toothpicks (see Comments for definition).
+  seq $0,151566 ; Leftist toothpicks (see Comments for definition).
   mov $2,$3
   mul $2,$0
   add $1,$2

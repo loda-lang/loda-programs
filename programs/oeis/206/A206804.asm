@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   sub $0,1
   add $2,1
-  cal $2,185382 ; Sum_{j=1..n-1} P(n)-P(j), where P(j) = A065091(j) is the j-th odd prime.
+  seq $2,185382 ; Sum_{j=1..n-1} P(n)-P(j), where P(j) = A065091(j) is the j-th odd prime.
   add $1,$2
 lpe
 div $1,2

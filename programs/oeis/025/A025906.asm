@@ -8,7 +8,7 @@ lpb $5
   sub $5,1
   add $0,$5
   trn $0,1
-  cal $0,29115 ; Expansion of 1/((1-x)(1-x^6)(1-x^10)(1-x^11)).
+  seq $0,29115 ; Expansion of 1/((1-x)(1-x^6)(1-x^10)(1-x^11)).
   mov $2,$5
   mul $2,$0
   add $1,$2

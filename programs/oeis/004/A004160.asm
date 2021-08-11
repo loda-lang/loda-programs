@@ -3,5 +3,5 @@
 
 add $0,3
 bin $0,3
-cal $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
 mov $1,$0

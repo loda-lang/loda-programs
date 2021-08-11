@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,28495 ; Expansion of (1-x^2)/(1-x-2*x^2+x^3).
+seq $0,28495 ; Expansion of (1-x^2)/(1-x-2*x^2+x^3).
 mov $1,$0

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,340528 ; Radio number of the path graph P_n.
+  seq $2,340528 ; Radio number of the path graph P_n.
   sub $2,$0
   mod $0,2
   add $1,$2

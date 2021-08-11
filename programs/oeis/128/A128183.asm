@@ -16,7 +16,7 @@ lpb $4
     sub $8,1
     add $0,$8
     trn $0,1
-    cal $0,7466 ; Exponential-convolution of natural numbers with themselves.
+    seq $0,7466 ; Exponential-convolution of natural numbers with themselves.
     mov $5,$0
     mov $9,$8
     mul $9,$0

@@ -9,7 +9,7 @@ lpb $3
   sub $3,1
   sub $0,$3
   mov $2,$0
-  cal $0,6355 ; Number of binary vectors of length n containing no singletons.
+  seq $0,6355 ; Number of binary vectors of length n containing no singletons.
   gcd $2,2
   mul $0,$2
   mov $4,$0

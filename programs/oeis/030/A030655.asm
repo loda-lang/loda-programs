@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,1
-cal $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
+seq $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
 mov $1,$0

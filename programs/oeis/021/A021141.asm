@@ -3,7 +3,7 @@
 
 bin $0,2
 add $0,37
-cal $0,21408 ; Decimal expansion of 1/404.
+seq $0,21408 ; Decimal expansion of 1/404.
 mov $1,$0
 add $1,5
 mod $1,10

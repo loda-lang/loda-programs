@@ -4,7 +4,7 @@
 mul $0,2
 mov $1,$0
 add $0,1
-cal $0,1609 ; a(1) = a(2) = 1, a(3) = 4; thereafter a(n) = a(n-1) + a(n-3).
+seq $0,1609 ; a(1) = a(2) = 1, a(3) = 4; thereafter a(n) = a(n-1) + a(n-3).
 sub $1,3
 add $1,$0
 add $1,5

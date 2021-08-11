@@ -1,0 +1,15 @@
+; A103904: Number of perfect matchings of an n X (n+1) Aztec rectangle with the third vertex in the topmost row removed.
+; 1,2,24,384,10240,491520,44040192,7516192768,2473901162496,1583296743997440,1981583836043018240,4869940435459321626624,23574053482485268906770432,225305087149939210031640608768
+
+add $0,1
+bin $0,2
+mov $1,17
+mov $2,$0
+lpb $0
+  mul $1,$2
+  lpb $0
+    sub $0,1
+    mul $1,2
+  lpe
+lpe
+div $1,17

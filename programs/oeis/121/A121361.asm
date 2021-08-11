@@ -4,7 +4,7 @@
 mul $0,6
 add $0,3
 mul $0,2
-cal $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
+seq $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
 mod $0,9
 mov $1,$0
 div $1,2

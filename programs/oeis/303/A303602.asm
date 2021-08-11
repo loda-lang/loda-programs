@@ -4,7 +4,7 @@
 mov $1,$0
 mul $1,2
 mov $0,$1
-cal $0,307768 ; Number of n-step random walks on a line starting from the origin and returning to it at least once.
+seq $0,307768 ; Number of n-step random walks on a line starting from the origin and returning to it at least once.
 add $1,1
 mul $1,$0
 div $1,2

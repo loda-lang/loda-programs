@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $5,$0
-cal $0,117366 ; a(n) = smallest prime greater than the largest prime dividing n.
+seq $0,117366 ; a(n) = smallest prime greater than the largest prime dividing n.
 sub $0,2
 mul $1,$0
 mov $3,3

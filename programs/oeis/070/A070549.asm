@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,252233 ; Characteristic function for the integers that are the product of an odd number of primes each with multiplicity one.
+  seq $2,252233 ; Characteristic function for the integers that are the product of an odd number of primes each with multiplicity one.
   add $1,$2
 lpe

@@ -1,7 +1,7 @@
 ; A104200: Upper bound on a straddle prime pair.
 ; 5,7,11,11,11,13,17,17,17,19,23,23,23,29,29,29,29,29,31,37,37,37,37,37,41,41,41,43,47,47,47,53,53,53,53,53,59,59,59,59,59,61,67,67,67,67,67,71,71,71,73,79,79,79,79,79,83,83,83,89,89,89,89,89,97,97,97,97,97,97
 
-cal $0,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
+seq $0,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
 sub $0,1
-cal $0,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 mov $1,$0

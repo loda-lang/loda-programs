@@ -12,7 +12,7 @@ lpb $3
   lpb $0
     mov $2,$0
     trn $0,2
-    cal $2,132442 ; Triangle, n-th row = first n terms of n-th row of an array formed by A051731 * A127093(transform).
+    seq $2,132442 ; Triangle, n-th row = first n terms of n-th row of an array formed by A051731 * A127093(transform).
   lpe
   add $1,$2
 lpe

@@ -9,7 +9,7 @@ lpb $0
   add $4,$3
   div $4,$4
   sub $0,$4
-  cal $2,55067 ; Product of numbers < n which do not divide n (or 1 if no such numbers exist).
+  seq $2,55067 ; Product of numbers < n which do not divide n (or 1 if no such numbers exist).
   add $1,$2
 lpe
 add $1,1

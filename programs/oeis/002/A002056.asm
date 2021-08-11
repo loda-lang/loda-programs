@@ -5,7 +5,7 @@ mov $2,$0
 add $2,2
 mov $1,$2
 add $2,1
-cal $2,74922 ; Number of ways of arranging n chords on a circle (handshakes between 2n people across a table) with exactly 2 simple intersections.
+seq $2,74922 ; Number of ways of arranging n chords on a circle (handshakes between 2n people across a table) with exactly 2 simple intersections.
 mul $1,$2
 sub $1,6
 div $1,6

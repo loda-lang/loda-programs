@@ -2,5 +2,5 @@
 ; 0,0,1,0,1,0,1,0,1,0,1,2,3,4,5,0,1,0,1,2,3,0,1,2,3,4,5,0,1,2,3,0,1,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,0,1,2,3,4,5,6,7,8,9,10,11,0,1,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,0,1,2,3,4,5,0
 
 mov $1,$0
-cal $0,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
+seq $0,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
 sub $1,$0

@@ -4,6 +4,6 @@
 trn $0,3
 mul $0,2
 add $0,8
-cal $0,321014 ; Number of divisors of n which are greater than 3.
+seq $0,321014 ; Number of divisors of n which are greater than 3.
 mov $1,$0
 sub $1,1

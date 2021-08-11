@@ -8,7 +8,6 @@ lpb $3
   mul $1,$0
   mul $2,$3
   add $1,$2
-  mov $5,$0
   cmp $6,0
   add $5,$6
   div $1,$5

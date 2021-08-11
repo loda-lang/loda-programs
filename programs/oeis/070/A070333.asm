@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,183859 ; a(n) = n - 1 + ceiling((n^2)/3); complement of A183858.
+  seq $2,183859 ; a(n) = n - 1 + ceiling((n^2)/3); complement of A183858.
   sub $2,$0
   sub $0,1
   add $1,$2

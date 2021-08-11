@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,67342 ; Sum of decimal digits of sum of divisors of n.
+  seq $2,67342 ; Sum of decimal digits of sum of divisors of n.
   add $1,$2
 lpe
 add $1,1

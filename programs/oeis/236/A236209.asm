@@ -8,7 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,40 ; The prime numbers.
+  seq $0,40 ; The prime numbers.
   pow $0,7
   add $1,$0
 lpe

@@ -3,5 +3,5 @@
 
 add $0,1
 bin $0,2
-cal $0,268643 ; Number of 1's in decimal representation of n.
+seq $0,268643 ; Number of 1's in decimal representation of n.
 mov $1,$0

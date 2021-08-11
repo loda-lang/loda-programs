@@ -6,6 +6,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,1891 ; Hit polynomials; convolution of natural numbers with Fibonacci numbers F(2), F(3), F(4),....
+  seq $2,1891 ; Hit polynomials; convolution of natural numbers with Fibonacci numbers F(2), F(3), F(4),....
   add $1,$2
 lpe
