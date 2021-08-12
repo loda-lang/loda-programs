@@ -6,6 +6,6 @@ mov $3,$0
 lpb $3
   add $2,3
   mov $1,$2
-  cal $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 lpe
 add $1,1

@@ -5,7 +5,7 @@ mov $1,$0
 mov $0,11
 mul $0,$1
 mov $2,$0
-cal $2,263449 ; Permutation of the natural numbers: [4k+1, 4k+4, 4k+3, 4k+2, ...].
+seq $2,263449 ; Permutation of the natural numbers: [4k+1, 4k+4, 4k+3, 4k+2, ...].
 add $0,$2
 mov $1,$0
 sub $1,4

@@ -8,6 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,35250 ; Number of primes between n and 2n (inclusive).
+  seq $0,35250 ; Number of primes between n and 2n (inclusive).
   add $1,$0
 lpe

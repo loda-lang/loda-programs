@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,37754 ; Base 7 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1,0.
+  seq $2,37754 ; Base 7 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1,0.
   add $1,$2
 lpe

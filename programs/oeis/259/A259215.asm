@@ -6,7 +6,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,52956 ; a(n) = 2^n + Fibonacci(n+1).
+  seq $2,52956 ; a(n) = 2^n + Fibonacci(n+1).
   add $1,$2
 lpe
 add $1,2

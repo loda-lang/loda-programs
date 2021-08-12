@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,1
-cal $0,49711 ; a(n) = n - prevprime(n).
+seq $0,49711 ; a(n) = n - prevprime(n).
 mov $1,$0
 div $1,2
 add $1,1

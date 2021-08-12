@@ -5,7 +5,7 @@ lpb $0
   mul $0,2
   mov $3,$0
   mod $0,2
-  cal $3,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+  seq $3,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
 lpe
 mov $1,-1
 mov $2,$3

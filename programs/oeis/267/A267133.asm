@@ -8,6 +8,6 @@ lpb $0
   mul $1,4
   add $1,1
   sub $1,$0
-  cal $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $1,$0
 lpe

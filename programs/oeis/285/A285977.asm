@@ -8,7 +8,7 @@ lpb $4
   mov $0,$2
   sub $4,1
   sub $0,$4
-  cal $0,127245 ; Row sums of a signed Thue-Morse related triangle.
+  seq $0,127245 ; Row sums of a signed Thue-Morse related triangle.
   mov $3,$0
   add $3,1
   add $1,$3

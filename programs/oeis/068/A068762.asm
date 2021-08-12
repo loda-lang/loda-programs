@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,143348 ; a(n) = -(-1)^n times sum of divisors of n.
+  seq $2,143348 ; a(n) = -(-1)^n times sum of divisors of n.
   add $1,$2
 lpe

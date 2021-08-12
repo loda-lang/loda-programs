@@ -3,7 +3,7 @@
 
 add $0,1
 mov $1,$0
-cal $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 lpb $0
   sub $0,1
   mod $0,2

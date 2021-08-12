@@ -3,5 +3,5 @@
 
 mul $0,2
 trn $0,1
-cal $0,70098 ; Number of integer triangles with perimeter n which are acute and isosceles.
+seq $0,70098 ; Number of integer triangles with perimeter n which are acute and isosceles.
 mov $1,$0

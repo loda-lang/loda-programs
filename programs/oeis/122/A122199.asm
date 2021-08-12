@@ -10,7 +10,7 @@ lpb $3
   sub $0,1
   mul $0,2
   max $0,0
-  cal $0,48641 ; Partial sums of A003188 (Gray code).
+  seq $0,48641 ; Partial sums of A003188 (Gray code).
   mov $2,$3
   mul $2,$0
   add $1,$2

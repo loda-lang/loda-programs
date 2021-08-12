@@ -4,6 +4,6 @@
 mov $2,$0
 add $0,1
 mov $1,$0
-cal $1,158919 ; Beatty sequence for the tribonacci constant tau (A058265): a(n) = floor(n*tau).
+seq $1,158919 ; Beatty sequence for the tribonacci constant tau (A058265): a(n) = floor(n*tau).
 add $1,1
 add $1,$2

@@ -8,6 +8,6 @@ mul $0,2
 mov $1,$2
 sub $1,2
 sub $0,$1
-cal $0,118658 ; a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
+seq $0,118658 ; a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
 mov $1,$0
 div $1,2

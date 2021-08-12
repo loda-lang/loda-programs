@@ -2,7 +2,7 @@
 ; 2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,3,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,5,1,1,1,1,1,1,1,1,1,1,3,1,1,1,5,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1
 
 mov $1,$0
-cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 add $0,1
 add $1,2
 gcd $1,$0

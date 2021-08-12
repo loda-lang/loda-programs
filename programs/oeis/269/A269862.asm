@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   sub $0,$3
   mov $2,$0
-  cal $0,108228 ; (A003961(n) - 1)/2, a permutation of the nonnegative integers.
+  seq $0,108228 ; (A003961(n) - 1)/2, a permutation of the nonnegative integers.
   mov $4,$2
   sub $4,1
   add $4,$0

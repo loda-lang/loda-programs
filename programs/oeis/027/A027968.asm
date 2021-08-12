@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,27967 ; T(n, 2*n-5), T given by A027960.
+  seq $2,27967 ; T(n, 2*n-5), T given by A027960.
   add $1,$2
 lpe
 add $1,1

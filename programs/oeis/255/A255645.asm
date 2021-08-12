@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,134660 ; Number of odd coefficients in (1 + x + x^2 + x^3)^n.
+  seq $2,134660 ; Number of odd coefficients in (1 + x + x^2 + x^3)^n.
   add $1,$2
 lpe
 add $1,1

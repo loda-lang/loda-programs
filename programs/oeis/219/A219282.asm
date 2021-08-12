@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,63978 ; Sum_{i for which n - i*(i-1)/2 >= 0} binomial (n - i*(i-1)/2, i).
+  seq $0,63978 ; Sum_{i for which n - i*(i-1)/2 >= 0} binomial (n - i*(i-1)/2, i).
   mov $2,$3
   mul $2,$0
   add $1,$2

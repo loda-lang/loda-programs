@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,55581 ; Fifth column of triangle A055252.
+  seq $2,55581 ; Fifth column of triangle A055252.
   mul $2,2
   add $1,$2
 lpe

@@ -9,7 +9,7 @@ lpb $3
   sub $0,$3
   mov $2,$0
   sub $2,$0
-  cal $0,212793 ; Characteristic function of cubefree numbers, A004709.
+  seq $0,212793 ; Characteristic function of cubefree numbers, A004709.
   sub $2,$0
   mov $4,$2
   add $4,1

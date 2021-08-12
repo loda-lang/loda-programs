@@ -8,7 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,80100 ; a(n) = 2^(number of 0's in binary representation of n).
+  seq $0,80100 ; a(n) = 2^(number of 0's in binary representation of n).
   add $1,$0
 lpe
 mul $1,2

@@ -11,7 +11,7 @@ lpb $4
   lpb $0
     mov $2,$0
     trn $0,2
-    cal $2,139598 ; A035008(n) followed by A139098(n+1).
+    seq $2,139598 ; A035008(n) followed by A139098(n+1).
     add $3,$2
     mul $2,$3
   lpe

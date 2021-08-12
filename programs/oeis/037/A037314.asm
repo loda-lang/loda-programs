@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,120437 ; Differences of A037314 (sum of base-3 digits of n = sum of base-9 digits of n).
+  seq $2,120437 ; Differences of A037314 (sum of base-3 digits of n = sum of base-9 digits of n).
   add $1,$2
 lpe

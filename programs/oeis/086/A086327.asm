@@ -3,5 +3,5 @@
 
 mul $0,2
 add $0,3
-cal $0,23645 ; a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
+seq $0,23645 ; a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
 mov $1,$0

@@ -4,7 +4,7 @@
 mov $1,1
 add $1,$0
 add $0,1
-cal $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
 mov $2,$0
 gcd $2,$1
 div $1,$2

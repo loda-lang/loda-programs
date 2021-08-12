@@ -10,5 +10,5 @@ lpb $0
   cmp $3,0
   add $1,$3
   sub $1,1
-  cal $1,4663 ; Powers of 3 written in base 9.
+  seq $1,4663 ; Powers of 3 written in base 9.
 lpe

@@ -1,6 +1,6 @@
 ; A139374: Digit sum of Lucas numbers.
 ; 2,1,3,4,7,2,9,11,11,13,6,19,7,8,15,14,11,16,27,25,16,23,21,26,20,28,21,22,25,29,36,20,38,40,24,28,34,26,33,23,38,34,54,43,52,41,30,62,47,46,39,49,43,47,45,47,47,58,33,73,43,53,33,68,56,70,45,43,61,68,48,89,56,64,48,67,88,83,63,65,74,76,87,91,79,98,96,77,83,88,72,79,79,95,75,89,92,100,66,94
 
-cal $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
-cal $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
+seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
 mov $1,$0

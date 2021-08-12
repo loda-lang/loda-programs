@@ -3,5 +3,5 @@
 
 mul $0,4
 mov $1,$0
-cal $0,49472 ; a(n) = floor(n/sqrt(2)).
+seq $0,49472 ; a(n) = floor(n/sqrt(2)).
 sub $1,$0

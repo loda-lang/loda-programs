@@ -3,7 +3,7 @@
 
 mul $0,2
 trn $0,1
-cal $0,268342 ; Number of edges in the unitary addition Cayley graph Gn.
+seq $0,268342 ; Number of edges in the unitary addition Cayley graph Gn.
 mov $1,$0
 div $1,2
 add $1,1

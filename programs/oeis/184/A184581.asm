@@ -4,7 +4,7 @@
 mov $4,$0
 add $0,1
 mul $0,2
-cal $0,257175 ; The smallest m such that the m-th triangular number is greater than or equal to half the n-th triangular number.
+seq $0,257175 ; The smallest m such that the m-th triangular number is greater than or equal to half the n-th triangular number.
 mov $3,1
 add $3,$0
 mov $1,$3

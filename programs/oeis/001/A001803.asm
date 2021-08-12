@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,1
-cal $0,56040 ; Swinging factorial, a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-1)^(k+1)).
+seq $0,56040 ; Swinging factorial, a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-1)^(k+1)).
 mov $2,$0
 gcd $2,32
 div $0,$2

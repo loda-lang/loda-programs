@@ -4,6 +4,6 @@
 add $0,1
 div $0,2
 mul $0,2
-cal $0,73642 ; Replace 2^k in the binary representation of n with k (i.e., if n = 2^a + 2^b + 2^c + ... then a(n) = a + b + c + ...).
+seq $0,73642 ; Replace 2^k in the binary representation of n with k (i.e., if n = 2^a + 2^b + 2^c + ... then a(n) = a + b + c + ...).
 mov $1,2
 pow $1,$0

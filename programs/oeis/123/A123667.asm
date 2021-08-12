@@ -3,6 +3,6 @@
 
 mov $1,1
 mov $2,$0
-cal $0,61142 ; Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
+seq $0,61142 ; Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 add $1,$2
 mul $1,$0

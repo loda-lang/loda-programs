@@ -9,6 +9,6 @@ lpb $2
   sub $0,$2
   add $0,1
   pow $0,2
-  cal $0,339183 ; Number of partitions of n into two parts such that the smaller part is a nonzero square.
+  seq $0,339183 ; Number of partitions of n into two parts such that the smaller part is a nonzero square.
   add $1,$0
 lpe

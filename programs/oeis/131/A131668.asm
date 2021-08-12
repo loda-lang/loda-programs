@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,1
-cal $0,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
+seq $0,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
 mov $1,$0
 sub $1,1

@@ -1,7 +1,7 @@
 ; A020544: Second Bernoulli polynomial evaluated at x=n! (multiplied by 6).
 ; 1,1,13,181,3313,85681,3106081,152379361,9753972481,790089189121,79009114867201,9560105293939201,1376655193941350401,232654728224433715201,45600326738788914892801,10260073516337350497792001,2626578820184244778524672001
 
-cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mov $1,$0
 bin $1,2
 mul $1,12

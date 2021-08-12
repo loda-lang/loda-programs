@@ -3,5 +3,5 @@
 
 mov $1,1
 add $1,$0
-cal $1,5098 ; Numbers n such that 4n + 1 is prime.
+seq $1,5098 ; Numbers n such that 4n + 1 is prime.
 sub $1,2

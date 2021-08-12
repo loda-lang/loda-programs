@@ -3,5 +3,5 @@
 
 add $0,1
 pow $0,3
-cal $0,7092 ; Numbers in base 6.
+seq $0,7092 ; Numbers in base 6.
 mov $1,$0

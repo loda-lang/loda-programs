@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+  seq $2,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
   add $1,$2
 lpe

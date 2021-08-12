@@ -5,7 +5,7 @@ mov $3,$0
 cmp $3,0
 add $0,$3
 sub $0,1
-cal $0,98597 ; Numerator of Catalan(n)/2^(2n+1). Also, numerators of (2n-1)!!/(n+1)!. Odd part of the n-th Catalan number.
+seq $0,98597 ; Numerator of Catalan(n)/2^(2n+1). Also, numerators of (2n-1)!!/(n+1)!. Odd part of the n-th Catalan number.
 add $0,1
 mul $0,2
 sub $0,2

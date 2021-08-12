@@ -3,7 +3,7 @@
 
 mov $3,$0
 add $0,1
-cal $0,198083 ; Ceiling(n*Sqrt(6)).
+seq $0,198083 ; Ceiling(n*Sqrt(6)).
 add $0,2
 mul $0,2
 mov $1,$0

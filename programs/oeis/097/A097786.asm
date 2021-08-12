@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,52150 ; Partial sums of A000340, second partial sums of A003462.
+  seq $2,52150 ; Partial sums of A000340, second partial sums of A003462.
   add $1,$2
 lpe

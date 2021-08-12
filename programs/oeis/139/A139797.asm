@@ -5,6 +5,6 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
-  cal $2,131666 ; First differences of (A113405 prefixed with a 0).
+  seq $2,131666 ; First differences of (A113405 prefixed with a 0).
   add $1,$2
 lpe

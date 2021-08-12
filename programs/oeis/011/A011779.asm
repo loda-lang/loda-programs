@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,144677 ; Related to enumeration of quantum states (see reference for precise definition).
+  seq $2,144677 ; Related to enumeration of quantum states (see reference for precise definition).
   add $1,$2
 lpe
 add $1,1

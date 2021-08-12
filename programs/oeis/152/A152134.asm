@@ -5,7 +5,7 @@ mov $4,$0
 mul $0,2
 add $0,6
 mov $2,$0
-cal $0,6522 ; 4-dimensional analog of centered polygonal numbers. Also number of regions created by sides and diagonals of a convex n-gon in general position.
+seq $0,6522 ; 4-dimensional analog of centered polygonal numbers. Also number of regions created by sides and diagonals of a convex n-gon in general position.
 div $0,$2
 mul $0,2
 mov $1,$0

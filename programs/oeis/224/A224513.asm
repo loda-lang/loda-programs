@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,224512 ; Gray code variant of A147582.
+  seq $2,224512 ; Gray code variant of A147582.
   add $1,$2
 lpe

@@ -4,7 +4,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  cal $2,135679 ; a(n) = n if n = 1 or if n is prime. Otherwise, a(n) = 2 if n is even and a(n) = 3 if n is odd.
+  seq $2,135679 ; a(n) = n if n = 1 or if n is prime. Otherwise, a(n) = 2 if n is even and a(n) = 3 if n is odd.
   add $1,$2
   mov $0,$1
 lpe

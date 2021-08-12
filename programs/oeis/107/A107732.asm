@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,40057 ; Continued fraction for sqrt(66).
+  seq $2,40057 ; Continued fraction for sqrt(66).
   add $1,$2
   div $2,4
   mul $1,$2

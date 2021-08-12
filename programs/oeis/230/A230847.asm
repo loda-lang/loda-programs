@@ -4,6 +4,6 @@
 sub $0,1
 trn $1,$0
 max $0,0
-cal $0,1223 ; Prime gaps: differences between consecutive primes.
+seq $0,1223 ; Prime gaps: differences between consecutive primes.
 add $1,$0
 add $1,1

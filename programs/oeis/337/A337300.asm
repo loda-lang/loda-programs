@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,49039 ; Geometric Connell sequence: 1 odd, 2 even, 4 odd, 8 even, ...
+  seq $2,49039 ; Geometric Connell sequence: 1 odd, 2 even, 4 odd, 8 even, ...
   add $1,$2
 lpe
 add $1,1

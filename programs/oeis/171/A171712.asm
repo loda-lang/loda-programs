@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,177990 ; Triangle read by rows, variant of A070909, a cellular automaton
+  seq $2,177990 ; Triangle read by rows, variant of A070909, a cellular automaton
   sub $0,$2
   add $1,$2
 lpe

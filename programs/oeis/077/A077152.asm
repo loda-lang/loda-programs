@@ -4,11 +4,11 @@
 add $0,1
 mov $2,$0
 sub $0,1
-cal $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
+seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
 add $0,$2
 sub $0,2
 mov $2,$0
-cal $0,14692 ; a(n) = prime(n) - (n-1).
+seq $0,14692 ; a(n) = prime(n) - (n-1).
 add $0,$2
 mov $1,$0
 add $1,1

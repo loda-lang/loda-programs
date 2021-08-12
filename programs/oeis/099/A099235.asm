@@ -3,6 +3,6 @@
 
 mul $0,4
 trn $0,4
-cal $0,99559 ; a(n) = Sum_{k=0..floor(n/5)} C(n-4k,k+1).
+seq $0,99559 ; a(n) = Sum_{k=0..floor(n/5)} C(n-4k,k+1).
 mov $1,$0
 add $1,1

@@ -3,6 +3,6 @@
 
 mul $0,2
 add $0,2
-cal $0,193643 ; Number of arrays of -3..3 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero
+seq $0,193643 ; Number of arrays of -3..3 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero
 mov $1,$0
 div $1,18

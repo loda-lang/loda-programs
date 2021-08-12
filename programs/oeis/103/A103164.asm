@@ -3,5 +3,5 @@
 
 mov $1,$0
 trn $0,1
-cal $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
 mul $1,$0

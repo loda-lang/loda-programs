@@ -4,7 +4,7 @@
 mov $2,$0
 mul $2,$0
 add $2,$0
-cal $0,6411 ; Number of nonseparable tree-rooted planar maps with n + 2 edges and 3 vertices.
+seq $0,6411 ; Number of nonseparable tree-rooted planar maps with n + 2 edges and 3 vertices.
 mul $0,$2
 mov $1,$0
 mul $1,24

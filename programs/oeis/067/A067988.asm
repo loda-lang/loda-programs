@@ -3,6 +3,6 @@
 
 add $0,2
 mov $1,$0
-cal $0,1629 ; Self-convolution of Fibonacci numbers.
+seq $0,1629 ; Self-convolution of Fibonacci numbers.
 mul $1,$0
 div $1,2

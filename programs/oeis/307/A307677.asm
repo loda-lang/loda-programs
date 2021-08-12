@@ -3,7 +3,7 @@
 
 mov $1,$0
 trn $1,3
-cal $1,274110 ; Number of equivalence classes of ballot paths of length n for the string uu.
+seq $1,274110 ; Number of equivalence classes of ballot paths of length n for the string uu.
 sub $1,1
 mul $1,2
 add $1,1

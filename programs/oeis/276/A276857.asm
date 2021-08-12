@@ -9,7 +9,7 @@ lpb $4
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,22841 ; Beatty sequence for sqrt(7).
+  seq $2,22841 ; Beatty sequence for sqrt(7).
   mov $3,$4
   mul $3,$2
   add $1,$3

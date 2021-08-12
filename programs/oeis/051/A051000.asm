@@ -6,5 +6,5 @@ lpb $0
   mul $0,2
   dif $0,4
 lpe
-cal $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
+seq $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
 mov $1,$0

@@ -15,7 +15,7 @@ lpb $2
     sub $4,1
     sub $0,$4
     trn $0,2
-    cal $0,3422 ; Left factorials: !n = Sum_{k=0..n-1} k!.
+    seq $0,3422 ; Left factorials: !n = Sum_{k=0..n-1} k!.
     add $6,$0
   lpe
   add $1,$6

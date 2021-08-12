@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,198083 ; Ceiling(n*Sqrt(6)).
+  seq $2,198083 ; Ceiling(n*Sqrt(6)).
   add $1,$2
 lpe
 add $1,1

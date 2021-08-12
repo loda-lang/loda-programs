@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $5,$0
-cal $0,56927 ; Difference between n^2 and largest prime less than n^2.
+seq $0,56927 ; Difference between n^2 and largest prime less than n^2.
 add $5,6
 sub $5,$0
 mov $0,-6

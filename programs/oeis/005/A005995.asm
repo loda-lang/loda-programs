@@ -18,7 +18,7 @@ lpb $2
     sub $0,$4
     div $0,2
     mul $0,2
-    cal $0,23855 ; a(n) = 1*(n) + 2*(n-1) + 3*(n-2) + ... + (n+1-k)*k, where k = floor((n+1)/2).
+    seq $0,23855 ; a(n) = 1*(n) + 2*(n-1) + 3*(n-2) + ... + (n+1-k)*k, where k = floor((n+1)/2).
     add $5,$0
   lpe
   add $1,$5

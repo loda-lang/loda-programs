@@ -3,7 +3,7 @@
 
 mov $2,$0
 add $0,1
-cal $0,71 ; a(n) = Fibonacci(n) - 1.
+seq $0,71 ; a(n) = Fibonacci(n) - 1.
 add $1,$0
 add $0,$1
 mov $1,$0

@@ -4,7 +4,7 @@
 mov $2,$0
 mul $2,$0
 trn $0,1
-cal $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mul $0,$2
 mov $1,$0
 mul $1,24

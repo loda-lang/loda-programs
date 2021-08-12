@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,127630 ; Expansion of (1+x-x^2-x^3)/(1+x^2)^2.
+  seq $2,127630 ; Expansion of (1+x-x^2-x^3)/(1+x^2)^2.
   add $1,$2
 lpe

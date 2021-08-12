@@ -3,6 +3,6 @@
 
 mov $2,2
 add $2,$0
-cal $2,56003 ; A second-order recursive sequence.
+seq $2,56003 ; A second-order recursive sequence.
 add $1,$2
 mul $1,18

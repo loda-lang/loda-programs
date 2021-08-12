@@ -4,6 +4,6 @@
 add $0,1
 pow $0,4
 sub $0,1
-cal $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
+seq $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
 mov $1,$0
 add $1,1

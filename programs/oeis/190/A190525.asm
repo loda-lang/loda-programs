@@ -5,5 +5,5 @@ mul $0,3
 sub $0,1
 mov $1,$0
 max $1,0
-cal $1,99559 ; a(n) = Sum_{k=0..floor(n/5)} C(n-4k,k+1).
+seq $1,99559 ; a(n) = Sum_{k=0..floor(n/5)} C(n-4k,k+1).
 add $1,1

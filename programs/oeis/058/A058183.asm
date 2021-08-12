@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $1,1
-cal $1,117804 ; Natural position of n in the string 12345678910111213....
+seq $1,117804 ; Natural position of n in the string 12345678910111213....
 sub $1,1

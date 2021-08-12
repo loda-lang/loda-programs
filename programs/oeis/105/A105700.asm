@@ -2,7 +2,7 @@
 ; 0,0,1,1,2,1,2,1,0,2,2,1,0,1,2,2,0,1,0,1,0,2,2,1,0,2,2,0,0,1,0,1,0,2,2,2,0,1,2,2,0,1,0,1,0,0,2,1,0,2,0,2,0,1,0,2,0,2,2,1,0,1,2,0,0,2,0,1,0,2,0,1,0,1,2,0,0,2,0,1,0,0,2,1,0,2,2,2,0,1,0,2,0,2,2,2,0,1,0,0
 
 trn $0,1
-cal $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
 lpb $0
   bin $0,2
   add $1,5

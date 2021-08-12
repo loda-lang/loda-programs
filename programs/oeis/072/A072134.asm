@@ -3,7 +3,7 @@
 
 mov $2,$0
 mov $3,$0
-cal $0,62547 ; a(n) is least odd integer not a partial sum of 1, 3, ..., a(n-1).
+seq $0,62547 ; a(n) is least odd integer not a partial sum of 1, 3, ..., a(n-1).
 cmp $3,0
 add $2,$3
 mov $4,2

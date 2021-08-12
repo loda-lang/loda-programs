@@ -3,7 +3,7 @@
 
 mov $1,2
 mov $2,$0
-cal $0,241404 ; Sum of n and the sum of the factorials of its digits.
+seq $0,241404 ; Sum of n and the sum of the factorials of its digits.
 sub $1,$0
 add $2,1
 mul $2,2

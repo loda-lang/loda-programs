@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,1088 ; Product of totient function: a(n) = Product_{k=1..n} phi(k) (cf. A000010).
+  seq $2,1088 ; Product of totient function: a(n) = Product_{k=1..n} phi(k) (cf. A000010).
   add $1,$2
 lpe

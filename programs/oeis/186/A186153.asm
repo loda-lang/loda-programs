@@ -20,7 +20,7 @@ lpb $2
     mul $4,2
     add $4,1
     max $4,0
-    cal $4,186157 ; Rank of 2n^2 when {i^3: i>=1} and {2j^2: j>=1} are jointly ranked with i^3 before 2j^2 when i^3=2j^2.  Complement of A186156.
+    seq $4,186157 ; Rank of 2n^2 when {i^3: i>=1} and {2j^2: j>=1} are jointly ranked with i^3 before 2j^2 when i^3=2j^2.  Complement of A186156.
     mov $3,$4
     mov $9,$8
     mul $9,$4

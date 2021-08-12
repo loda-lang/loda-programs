@@ -5,7 +5,7 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,92297 ; Number of ways of 3-coloring an annulus consisting of n zones joined like a pearl necklace.
+  seq $2,92297 ; Number of ways of 3-coloring an annulus consisting of n zones joined like a pearl necklace.
   add $1,$2
 lpe
 div $1,6

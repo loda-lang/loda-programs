@@ -3,6 +3,6 @@
 
 mov $1,$0
 trn $0,1
-cal $0,166375 ; a(n) = sum (floor (j^2/n)) taken over 1 <= j <= n-1.
+seq $0,166375 ; a(n) = sum (floor (j^2/n)) taken over 1 <= j <= n-1.
 add $1,$0
 add $1,1

@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $2,$0
-cal $0,198082 ; Ceiling(n*Sqrt(5)).
+seq $0,198082 ; Ceiling(n*Sqrt(5)).
 add $0,$1
 trn $0,1
 mov $1,$0

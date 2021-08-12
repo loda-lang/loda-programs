@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,291268 ; The arithmetic function v_3(n,2).
+  seq $2,291268 ; The arithmetic function v_3(n,2).
   sub $0,$2
   add $3,1
   min $3,1

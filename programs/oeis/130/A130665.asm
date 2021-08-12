@@ -8,6 +8,6 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,48883 ; a(n) = 3^wt(n), where wt(n) = A000120(n).
+  seq $0,48883 ; a(n) = 3^wt(n), where wt(n) = A000120(n).
   add $1,$0
 lpe
