@@ -10,7 +10,7 @@ lpb $3
   sub $0,1
   mov $5,$0
   max $0,0
-  cal $0,71148 ; Partial sums of sequence of odd primes (A065091); a(n) = sum of the first n odd primes.
+  seq $0,71148 ; Partial sums of sequence of odd primes (A065091); a(n) = sum of the first n odd primes.
   add $5,2
   mul $0,$5
   mov $2,$3

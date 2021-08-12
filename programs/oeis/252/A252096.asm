@@ -3,5 +3,5 @@
 
 add $0,1
 pow $0,2
-cal $0,46665 ; Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
+seq $0,46665 ; Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
 mov $1,$0

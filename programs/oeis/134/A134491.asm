@@ -2,6 +2,7 @@
 ; 3,34,377,4181,46368,514229,5702887,63245986,701408733,7778742049,86267571272,956722026041,10610209857723,117669030460994,1304969544928657,14472334024676221,160500643816367088
 
 mul $0,5
-add $0,4
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $0,204644 ; Number of (n+1) X 2 0..1 arrays with column and row pair sums b(i,j)=a(i,j)+a(i,j-1) and c(i,j)=a(i,j)+a(i-1,j) nondecreasing in column and row directions, respectively.
 mov $1,$0
+div $1,4
+add $1,1

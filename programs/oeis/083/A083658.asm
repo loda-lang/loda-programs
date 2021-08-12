@@ -9,7 +9,7 @@ mov $1,$0
 mul $1,2
 add $1,$0
 div $1,2
-cal $1,145052 ; One-third of the number of n X n nonnegative integer arrays with every 3 X 3 subblock summing to 1.
+seq $1,145052 ; One-third of the number of n X n nonnegative integer arrays with every 3 X 3 subblock summing to 1.
 sub $1,87
 div $1,36
 add $1,1

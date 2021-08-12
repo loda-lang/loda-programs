@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,2965 ; Interleave denominators (A000129) and numerators (A001333) of convergents to sqrt(2).
+  seq $2,2965 ; Interleave denominators (A000129) and numerators (A001333) of convergents to sqrt(2).
   add $1,$2
 lpe
 mul $1,2

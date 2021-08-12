@@ -14,7 +14,7 @@ lpb $2
     mov $0,$6
     trn $0,4
     add $0,4
-    cal $0,134816 ; Padovan's spiral numbers.
+    seq $0,134816 ; Padovan's spiral numbers.
     sub $0,1
     mov $3,$0
     sub $5,1

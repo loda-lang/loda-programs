@@ -7,7 +7,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,224915 ; a(n) = Sum_{k=0..n} n XOR k where XOR is the bitwise logical exclusive-or operator.
+  seq $0,224915 ; a(n) = Sum_{k=0..n} n XOR k where XOR is the bitwise logical exclusive-or operator.
   mul $0,2
   add $1,$0
 lpe

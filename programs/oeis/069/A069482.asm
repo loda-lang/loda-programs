@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   max $0,0
-  cal $0,153480 ; a(n) = 2*prime(n)^2 - 4.
+  seq $0,153480 ; a(n) = 2*prime(n)^2 - 4.
   mov $2,$3
   mov $4,$0
   div $4,16

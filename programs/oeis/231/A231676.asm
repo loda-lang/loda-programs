@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,53828 ; Sum of digits of (n written in base 7).
+  seq $2,53828 ; Sum of digits of (n written in base 7).
   add $1,$2
 lpe

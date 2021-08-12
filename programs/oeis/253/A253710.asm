@@ -5,7 +5,7 @@ lpb $0
   add $0,1
   mov $2,$0
   sub $0,2
-  cal $2,23002 ; Sum of 10th powers.
+  seq $2,23002 ; Sum of 10th powers.
   add $1,$2
 lpe
 add $1,1

@@ -6,7 +6,7 @@ mov $2,$0
 mov $3,$0
 lpb $0
   mov $1,$0
-  cal $1,230980 ; Number of primes <= n, starting at n=0.
+  seq $1,230980 ; Number of primes <= n, starting at n=0.
   lpb $3
     mov $3,2
     lpb $2

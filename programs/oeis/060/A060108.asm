@@ -1,7 +1,7 @@
 ; A060108: Sequence of sums based on primes = 7 mod 8.
 ; 2,22,40,92,210,260,442,672,950,1162,1520,1650,2072,2380,2882,3060,4030,5370,5612,6112,7740,8030,8932,9560,9882,10542,14950,15352,16590,17442,21540,22022,23002,23500,28222,29330,31032,32782,34580,35190
 
-cal $0,7522 ; Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
+seq $0,7522 ; Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
 mov $1,$0
 pow $1,2
 div $1,48

@@ -8,7 +8,7 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,65599 ; If n odd, a(n) = n^2 else a(n) = n.
+  seq $0,65599 ; If n odd, a(n) = n^2 else a(n) = n.
   div $0,2
   mov $4,$0
   mul $4,2

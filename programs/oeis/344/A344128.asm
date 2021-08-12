@@ -8,7 +8,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,69290 ; Sum of square roots of square divisors of n.
+  seq $0,69290 ; Sum of square roots of square divisors of n.
   mul $0,2
   mov $3,$0
   sub $3,2

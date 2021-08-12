@@ -5,5 +5,5 @@ lpb $0
   add $1,$0
   div $0,2
 lpe
-cal $1,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+seq $1,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
 sub $1,1

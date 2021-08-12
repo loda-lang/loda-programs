@@ -3,7 +3,7 @@
 
 mov $2,1
 clr $2,$0
-cal $0,166118 ; Fixed points of the mapping f(x) = (x + 2^x) mod (17 + x).
+seq $0,166118 ; Fixed points of the mapping f(x) = (x + 2^x) mod (17 + x).
 add $1,$0
 add $1,$2
 sub $1,3

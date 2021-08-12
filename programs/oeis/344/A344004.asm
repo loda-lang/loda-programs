@@ -14,7 +14,7 @@ lpb $6
     mov $0,$2
     sub $4,1
     sub $0,$4
-    cal $0,97133 ; 3*Fibonacci(n)+(-1)^n.
+    seq $0,97133 ; 3*Fibonacci(n)+(-1)^n.
     div $0,3
     add $3,$0
   lpe

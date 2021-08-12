@@ -5,6 +5,6 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,262869 ; Number of squarefree numbers appearing among the smaller parts of the partitions of n into two parts.
+  seq $2,262869 ; Number of squarefree numbers appearing among the smaller parts of the partitions of n into two parts.
   add $1,$2
 lpe

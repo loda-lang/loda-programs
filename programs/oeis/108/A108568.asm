@@ -1,10 +1,10 @@
 ; A108568: a(n) = prime(n) + prime(n+1) - 2n - 1.
 ; 2,3,5,9,13,17,21,25,33,39,45,53,57,61,69,79,85,91,99,103,109,117,125,137,147,151,155,159,163,179,195,203,209,219,229,235,245,253,261,271,277,287,297,301,305,317,339,353,357,361,369,375,385,399,409,419,425
 
-lpb $0
-  mov $2,$0
-  sub $0,1
-  seq $2,46930 ; Size of sea of composite numbers surrounding n-th prime.
-  add $1,$2
-lpe
-add $1,2
+mov $1,2
+sub $1,$0
+seq $0,1043 ; Numbers that are the sum of 2 successive primes.
+sub $0,$1
+mul $1,3
+add $1,$0
+sub $1,7

@@ -3,5 +3,5 @@
 
 add $0,1
 bin $0,2
-cal $0,124171 ; Sequence obtained by reading the triangles shown below by rows.
+seq $0,124171 ; Sequence obtained by reading the triangles shown below by rows.
 mov $1,$0

@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,273374 ; Squares ending in digit 9.
+  seq $2,273374 ; Squares ending in digit 9.
   add $1,$2
   mov $3,$2
   min $3,1

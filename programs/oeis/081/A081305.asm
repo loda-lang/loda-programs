@@ -12,7 +12,7 @@ lpb $6
   mov $5,$0
   lpb $0
     mov $2,$0
-    cal $2,130065 ; a(n) = (n / GreatestPrimeFactor(n)) * SmallestPrimeFactor(n).
+    seq $2,130065 ; a(n) = (n / GreatestPrimeFactor(n)) * SmallestPrimeFactor(n).
     add $3,$2
     mov $4,$2
     min $4,1

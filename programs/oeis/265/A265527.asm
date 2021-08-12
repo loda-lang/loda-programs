@@ -3,5 +3,5 @@
 
 mul $0,2
 trn $0,1
-cal $0,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
+seq $0,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
 mov $1,$0

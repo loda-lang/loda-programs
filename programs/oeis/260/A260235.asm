@@ -3,6 +3,6 @@
 
 add $0,1
 mul $0,2
-cal $0,96 ; a(n) = n*(n+3)/2.
-cal $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+seq $0,96 ; a(n) = n*(n+3)/2.
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 mov $1,$0

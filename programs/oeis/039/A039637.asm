@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  seq $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
   mul $0,$2
   div $0,2
   add $1,$2

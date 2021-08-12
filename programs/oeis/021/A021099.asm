@@ -8,6 +8,6 @@ div $0,2
 sub $0,1
 div $0,2
 max $0,0
-cal $0,70342 ; a(n) = 3^n mod 19.
+seq $0,70342 ; a(n) = 3^n mod 19.
 div $0,2
 mov $1,$0

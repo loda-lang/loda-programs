@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   mul $0,2
-  cal $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
+  seq $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
   add $1,$0
 lpe

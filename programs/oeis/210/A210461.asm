@@ -3,13 +3,10 @@
 
 add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
-mov $1,3
-add $3,$0
-add $3,2
-add $0,$3
-sub $0,2
-max $2,$0
-pow $1,$2
-sub $1,729
-div $1,8
+add $0,1
+mov $1,9
+pow $1,$0
+mul $1,2
+sub $1,13120
+div $1,144
 add $1,91

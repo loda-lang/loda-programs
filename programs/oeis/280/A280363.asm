@@ -2,7 +2,7 @@
 ; 0,1,1,2,1,2,1,3,2,3,1,3,1,3,2,4,1,4,1,4,2,4,1,4,2,4,3,4,1,4,1,5,3,5,2,5,1,5,3,5,1,5,1,5,3,5,1,5,2,5,3,5,1,5,2,5,3,5,1,5,1,5,3,6,2,6,1,6,3,6,1,6,1,6,3,6,2,6,1,6,4,6,1,6,2,6,4,6,1,6,2,6,4,6,2,6,1,6,4,6
 
 mov $1,$0
-cal $1,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+seq $1,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 mov $2,$0
 add $0,1
 add $2,1

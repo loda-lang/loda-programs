@@ -1,6 +1,6 @@
 ; A204257: Matrix given by f(i,j)=1+[(i+2j) mod 3], by antidiagonals.
 ; 1,3,2,2,1,3,1,3,2,1,3,2,1,3,2,2,1,3,2,1,3,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,2,1,3,2,1,3,2,1,3,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,2,1,3,2,1,3,2,1,3,2,1,3,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2
 
-cal $0,204427 ; Infinite matrix: f(i,j)=(2i+j+2 mod 3), read by antidiagonals.
+seq $0,204427 ; Infinite matrix: f(i,j)=(2i+j+2 mod 3), read by antidiagonals.
 sub $0,3
 sub $1,$0

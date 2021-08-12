@@ -5,7 +5,7 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $0,3
-  cal $2,170016 ; Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
+  seq $2,170016 ; Number of reduced words of length n in Coxeter group on 7 generators S_i with relations (S_i)^2 = (S_i S_j)^36 = I.
   add $1,$2
 lpe
 div $1,7

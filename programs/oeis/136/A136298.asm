@@ -37,7 +37,7 @@ lpb $2
           add $0,$8
           add $0,1
           max $0,0
-          cal $0,175656 ; Eight bishops and one elephant on a 3 X 3 chessboard. G.f.: (1-3*x^2)/(1-3*x+4*x^3).
+          seq $0,175656 ; Eight bishops and one elephant on a 3 X 3 chessboard. G.f.: (1-3*x^2)/(1-3*x+4*x^3).
           sub $0,2
           mov $5,$0
           mov $9,$8

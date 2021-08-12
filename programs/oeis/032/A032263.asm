@@ -3,6 +3,6 @@
 
 mov $1,4
 pow $1,$0
-cal $0,210448 ; Total number of different letters summed over all ternary words of length n.
+seq $0,210448 ; Total number of different letters summed over all ternary words of length n.
 sub $1,$0
 div $1,2

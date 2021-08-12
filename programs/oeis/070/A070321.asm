@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,336642 ; One less than the largest square dividing n: a(n) = A008833(n)-1.
+  seq $2,336642 ; One less than the largest square dividing n: a(n) = A008833(n)-1.
   mov $3,$2
   min $3,1
   sub $0,$3

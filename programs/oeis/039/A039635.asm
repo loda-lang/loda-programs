@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,66247 ; Characteristic function of composite numbers: 1 if n is composite else 0.
+  seq $2,66247 ; Characteristic function of composite numbers: 1 if n is composite else 0.
   mov $3,$2
   add $3,$2
   mov $4,$3

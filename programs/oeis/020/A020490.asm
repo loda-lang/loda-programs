@@ -1,4 +1,4 @@
-; A020490: Numbers n such that phi(n) <= sigma_0(n).
+; A020490: Numbers k such that phi(k) <= sigma_0(k).
 ; 1,2,3,4,6,8,10,12,18,24,30
 
 mov $4,$0

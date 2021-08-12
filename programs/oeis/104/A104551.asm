@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   sub $0,2
   trn $2,1
-  cal $2,128057 ; Expansion of (1+x)/sqrt(1+4x^2).
+  seq $2,128057 ; Expansion of (1+x)/sqrt(1+4x^2).
   add $1,$2
 lpe
 lpb $0

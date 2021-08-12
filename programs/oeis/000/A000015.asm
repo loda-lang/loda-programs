@@ -4,7 +4,7 @@
 mov $1,$0
 lpb $0
   mov $2,$1
-  cal $2,69513 ; Characteristic function of the prime powers p^k, k >= 1.
+  seq $2,69513 ; Characteristic function of the prime powers p^k, k >= 1.
   add $0,$2
   sub $0,1
   add $1,1

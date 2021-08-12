@@ -7,6 +7,6 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,97337 ; Integer part of the edge of a cube that has space-diagonal n.
+  seq $0,97337 ; Integer part of the edge of a cube that has space-diagonal n.
   add $1,$0
 lpe

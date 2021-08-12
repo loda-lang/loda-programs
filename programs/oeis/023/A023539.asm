@@ -9,6 +9,6 @@ lpb $2
   sub $2,1
   sub $0,$2
   add $0,1
-  cal $0,53767 ; Sum of first n composite numbers.
+  seq $0,53767 ; Sum of first n composite numbers.
   add $1,$0
 lpe

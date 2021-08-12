@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,80791 ; Number of nonleading 0's in binary expansion of n.
+  seq $2,80791 ; Number of nonleading 0's in binary expansion of n.
   add $1,$2
 lpe

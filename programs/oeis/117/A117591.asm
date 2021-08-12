@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,101353 ; a(n) = Sum_{k=0..n} (2^k + Fibonacci(k)).
+  seq $0,101353 ; a(n) = Sum_{k=0..n} (2^k + Fibonacci(k)).
   mov $2,$3
   mul $2,$0
   add $1,$2

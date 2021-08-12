@@ -2,6 +2,6 @@
 ; 0,0,2,0,0,2,2,2,2,0,0,2,0,0,2,2,2,2,2,2,8,2,2,2,2,2,2,0,0,2,0,0,2,2,2,2,0,0,2,0,0,2,2,2,2,2,2,8,2,2,2,2,2,2,2,2,8,2,2,8,8,8,8,2,2,8,2,2,2,2,2,2,2,2,8,2,2,2,2,2,2,0,0,2,0,0,2,2,2,2,0,0,2,0,0,2,2,2,2,2
 
 mul $0,2
-cal $0,120880 ; G.f. satisfies: A(x) = A(x^3)*(1 + 2*x + x^2); thus a(n) = 2^A062756(n), where A062756(n) is the number of 1's in the ternary expansion of n.
+seq $0,120880 ; G.f. satisfies: A(x) = A(x^3)*(1 + 2*x + x^2); thus a(n) = 2^A062756(n), where A062756(n) is the number of 1's in the ternary expansion of n.
 div $0,2
 mov $1,$0

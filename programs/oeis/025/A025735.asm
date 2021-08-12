@@ -17,7 +17,7 @@ lpb $2
     sub $5,1
     sub $0,$5
     trn $0,1
-    cal $0,144595 ; Christoffel word of slope 4/7.
+    seq $0,144595 ; Christoffel word of slope 4/7.
     mov $3,$0
     add $3,1
     add $6,$3

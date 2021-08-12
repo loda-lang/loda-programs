@@ -6,7 +6,7 @@ mov $2,$0
 lpb $0
   mov $1,$0
   mov $0,1
-  cal $1,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
+  seq $1,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
 lpe
 add $1,1
 add $1,$2

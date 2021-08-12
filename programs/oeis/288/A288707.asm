@@ -10,7 +10,7 @@ lpb $4
   sub $0,1
   div $0,2
   max $0,0
-  cal $0,189663 ; Partial sums of A189661.
+  seq $0,189663 ; Partial sums of A189661.
   mov $3,$0
   mov $5,$4
   mul $5,$0

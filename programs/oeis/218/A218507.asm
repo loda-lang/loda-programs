@@ -7,6 +7,6 @@ add $0,$3
 lpb $0
   mov $2,$0
   trn $0,5
-  cal $2,1401 ; Number of partitions of n into at most 5 parts.
+  seq $2,1401 ; Number of partitions of n into at most 5 parts.
   add $1,$2
 lpe

@@ -7,7 +7,7 @@ lpb $0
   sub $0,$2
   mov $1,$0
   max $1,0
-  cal $1,147807 ; Partial sums of A147810(n) = tau(n^2 + 1)/2.
+  seq $1,147807 ; Partial sums of A147810(n) = tau(n^2 + 1)/2.
   sub $2,$0
   add $0,$2
 lpe

@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,1595 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
+  seq $2,1595 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
   add $1,$2
   mov $3,$2
   min $3,1

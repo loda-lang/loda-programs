@@ -7,8 +7,8 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,200263 ; a(n) = 1 iff n-th prime has an odd digit sum.
-  cal $0,329993 ; Beatty sequence for x^2, where 1/x^2 + 1/2^x = 1.
+  seq $0,200263 ; a(n) = 1 iff n-th prime has an odd digit sum.
+  seq $0,329993 ; Beatty sequence for x^2, where 1/x^2 + 1/2^x = 1.
   mov $3,$0
   mul $3,2
   div $3,4

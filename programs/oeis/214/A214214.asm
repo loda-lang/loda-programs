@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,214212 ; Number of right special factors of length n in the Thue-Morse sequence A010060.
+  seq $2,214212 ; Number of right special factors of length n in the Thue-Morse sequence A010060.
   add $1,$2
 lpe
 add $1,1

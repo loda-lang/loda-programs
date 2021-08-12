@@ -8,7 +8,7 @@ lpb $3
   mov $0,$2
   sub $3,1
   sub $0,$3
-  cal $0,284905 ; Fixed point of the morphism 0 -> 01, 1 -> 1001.
+  seq $0,284905 ; Fixed point of the morphism 0 -> 01, 1 -> 1001.
   mov $4,$0
   add $4,1
   add $1,$4

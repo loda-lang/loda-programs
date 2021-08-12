@@ -7,5 +7,5 @@ lpb $0
 lpe
 add $1,$0
 add $1,2
-cal $1,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+seq $1,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
 div $1,2

@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $0,1
-cal $0,5379 ; The male of a pair of recurrences.
+seq $0,5379 ; The male of a pair of recurrences.
 sub $0,$1
 sub $0,10051
 sub $1,$0

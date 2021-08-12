@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   sub $0,1
   max $2,0
-  cal $2,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
+  seq $2,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
   add $1,$2
 lpe
 div $1,2

@@ -7,7 +7,7 @@ lpb $0
   mov $1,$0
   mov $0,2
   trn $1,3
-  cal $1,21226 ; Decimal expansion of 1/222.
+  seq $1,21226 ; Decimal expansion of 1/222.
 lpe
 add $1,3
 mod $1,10

@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,211007 ; Surface area of the first n faces of the structure mentioned in A211006.
+  seq $0,211007 ; Surface area of the first n faces of the structure mentioned in A211006.
   mov $2,$3
   mul $2,$0
   add $1,$2

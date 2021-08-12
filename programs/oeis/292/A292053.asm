@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,54410 ; Susceptibility series H_3 for 2-dimensional Ising model (divided by 2).
+  seq $2,54410 ; Susceptibility series H_3 for 2-dimensional Ising model (divided by 2).
   mul $2,$0
   trn $0,2
   add $1,$2

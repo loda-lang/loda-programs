@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,15910 ; a(n) = 2^n mod n.
+  seq $1,15910 ; a(n) = 2^n mod n.
   add $2,$1
   mov $0,$2
   add $1,1

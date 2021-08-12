@@ -7,7 +7,7 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  cal $0,13928 ; Number of (positive) squarefree numbers < n.
+  seq $0,13928 ; Number of (positive) squarefree numbers < n.
   mul $0,2
   add $1,$0
 lpe

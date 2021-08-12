@@ -2,5 +2,5 @@
 ; 1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4,4,2,3,1,1,3,2,4
 
 mov $1,$0
-cal $1,341740 ; a(n) is the maximum value of the magic constant in a normal magic triangle of order n.
-cal $1,70402 ; a(n) = 2^n mod 5.
+seq $1,341740 ; a(n) is the maximum value of the magic constant in a normal magic triangle of order n.
+seq $1,70402 ; a(n) = 2^n mod 5.

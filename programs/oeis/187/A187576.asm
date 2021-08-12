@@ -5,6 +5,6 @@ mov $2,$0
 div $0,2
 mul $0,2
 add $0,1
-cal $0,163801 ; a(n)=n-a(a(n-2)) with a(0)=0,a(1)=1
+seq $0,163801 ; a(n)=n-a(a(n-2)) with a(0)=0,a(1)=1
 mov $1,$0
 add $1,$2

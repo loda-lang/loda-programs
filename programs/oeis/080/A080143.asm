@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   trn $0,2
-  cal $2,48575 ; Pisot sequences L(2,5), E(2,5).
+  seq $2,48575 ; Pisot sequences L(2,5), E(2,5).
   add $1,$2
 lpe

@@ -8,6 +8,6 @@ lpb $3
   sub $3,1
   sub $0,$3
   pow $0,2
-  cal $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   add $1,$0
 lpe

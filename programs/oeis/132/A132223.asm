@@ -1,7 +1,7 @@
 ; A132223: A dense infinitive sequence.
 ; 1,2,1,4,2,3,1,8,4,7,2,6,3,5,1,16,8,15,4,14,7,13,2,12,6,11,3,10,5,9,1,32,16,31,8,30,15,29,4,28,14,27,7,26,13,25,2,24,12,23,6,22,11,21,3,20,10,19,5,18,9,17,1,64,32,63,16,62,31,61,8,60,30,59,15,58,29,57,4,56,28,55,14,54,27,53,7,52,26,51,13,50,25,49,2,48,24,47,12,46
 
-cal $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
+seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
 lpb $0
   dif $0,2
 lpe

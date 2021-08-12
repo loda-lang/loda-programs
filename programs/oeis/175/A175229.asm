@@ -3,5 +3,5 @@
 
 mul $0,3
 add $0,2
-cal $0,99861 ; Bisection of A002808.
+seq $0,99861 ; Bisection of A002808.
 mov $1,$0

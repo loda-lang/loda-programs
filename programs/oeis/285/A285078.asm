@@ -5,5 +5,5 @@ mov $1,1
 lpb $0
   mov $1,$0
   div $0,2730
-  cal $1,285075 ; Positions of 1 in A285073; complement of A285074.
+  seq $1,285075 ; Positions of 1 in A285073; complement of A285074.
 lpe

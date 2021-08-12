@@ -3,6 +3,6 @@
 
 add $0,1
 pow $0,2
-cal $0,320226 ; Number of integer partitions of n whose non-1 parts are all equal.
+seq $0,320226 ; Number of integer partitions of n whose non-1 parts are all equal.
 mov $1,$0
 div $1,2

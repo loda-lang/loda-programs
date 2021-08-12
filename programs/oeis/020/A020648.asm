@@ -3,4 +3,4 @@
 
 mov $1,$0
 add $1,$0
-cal $1,7844 ; Least positive integer k for which 3^n divides k!.
+seq $1,7844 ; Least positive integer k for which 3^n divides k!.

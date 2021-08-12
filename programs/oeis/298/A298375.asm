@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,230584 ; Either two less than a square or two more than a square.
+  seq $2,230584 ; Either two less than a square or two more than a square.
   add $1,$2
 lpe
 add $1,2

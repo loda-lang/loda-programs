@@ -3,5 +3,4 @@
 
 seq $0,4641 ; Fixed under 0 -> 10, 1 -> 100.
 mov $1,$0
-add $1,1
-mod $1,2
+cmp $1,0

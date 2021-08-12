@@ -8,7 +8,7 @@ lpb $4
   sub $4,1
   add $0,$4
   trn $0,1
-  cal $0,287659 ; Positions of 1 in A287657; complement of A287658.
+  seq $0,287659 ; Positions of 1 in A287657; complement of A287658.
   mov $3,$4
   mul $3,$0
   add $1,$3

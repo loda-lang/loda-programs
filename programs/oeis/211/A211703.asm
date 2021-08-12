@@ -6,6 +6,6 @@ mov $1,$0
 lpb $0
   mov $2,$0
   mov $0,1
-  cal $2,187323 ; Floor(n/2)+floor(n/3)+floor(n/4).
+  seq $2,187323 ; Floor(n/2)+floor(n/3)+floor(n/4).
 lpe
 add $1,$2

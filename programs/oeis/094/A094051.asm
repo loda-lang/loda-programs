@@ -2,8 +2,8 @@
 ; 1,1,2,2,4,3,5,6,4,6,8,6,11,12,14,8,10,12,12,12,20,20,16,20,16,26,18,24,18,24,32,22,36,20,24,27,41,42,44,24,36,32,42,30,24,36,56,36,56,48,32,50,64,65,66,36,44,48,46,72,48,60,48,78,40,48,86,56,80,89,60,60,54,95,96,60
 
 add $0,2
-cal $0,6005 ; The odd prime numbers together with 1.
+seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,2
-cal $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 dif $0,2
 mov $1,$0

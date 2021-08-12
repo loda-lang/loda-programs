@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,53589 ; Greatest primorial number (A002110) which divides n.
+  seq $1,53589 ; Greatest primorial number (A002110) which divides n.
   div $0,$1
 lpe
 mov $1,$0

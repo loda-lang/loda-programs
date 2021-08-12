@@ -7,17 +7,13 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  pow $0,2
-  div $0,4
-  cal $0,230980 ; Number of primes <= n, starting at n=0.
+  trn $0,1
+  seq $0,220506 ; Number of primes <= n-th quarter-square.
   mov $2,$3
+  mul $2,$0
+  add $1,$2
   mov $4,$0
-  lpb $2
-    mov $1,$4
-    sub $2,1
-  lpe
 lpe
-lpb $5
-  sub $1,$4
-  mov $5,0
-lpe
+min $5,1
+mul $5,$4
+sub $1,$5

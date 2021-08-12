@@ -3,7 +3,7 @@
 
 mov $1,$0
 trn $0,1
-cal $0,100810 ; a(n) = 0 if prime(n) + 2 = prime(n+1), otherwise 1.
+seq $0,100810 ; a(n) = 0 if prime(n) + 2 = prime(n+1), otherwise 1.
 mul $0,2
 add $1,$0
 sub $1,2

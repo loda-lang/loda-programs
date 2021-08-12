@@ -5,7 +5,7 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
-  cal $2,228661 ; Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
+  seq $2,228661 ; Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
   add $1,$2
 lpe
 mul $1,3

@@ -16,7 +16,7 @@ lpb $2
     sub $8,1
     add $0,$8
     trn $0,1
-    cal $0,248365 ; 4n concatenated with itself.
+    seq $0,248365 ; 4n concatenated with itself.
     mov $3,$0
     mov $5,$8
     mul $5,$0

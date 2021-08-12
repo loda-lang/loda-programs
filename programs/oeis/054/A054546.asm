@@ -9,7 +9,7 @@ lpb $4
   sub $0,1
   mov $3,$0
   max $3,0
-  cal $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  seq $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mov $5,$4
   mul $5,$3
   add $1,$5

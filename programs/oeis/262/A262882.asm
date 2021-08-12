@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   mov $1,$0
-  cal $1,342410 ; The binary expansion of a(n) corresponds to that of n where all the 1's have been replaced by 0's except in the last run of 1's.
+  seq $1,342410 ; The binary expansion of a(n) corresponds to that of n where all the 1's have been replaced by 0's except in the last run of 1's.
   sub $0,$1
 lpe
 sub $1,1

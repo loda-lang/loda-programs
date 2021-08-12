@@ -24,7 +24,7 @@ lpb $2
       mov $0,$6
       sub $8,1
       sub $0,$8
-      cal $0,106252 ; Number of positive integer triples (x,y,z), with x<=y<=z<=n, such that each of x,y and z divides the sum of the other two.
+      seq $0,106252 ; Number of positive integer triples (x,y,z), with x<=y<=z<=n, such that each of x,y and z divides the sum of the other two.
       add $7,$0
     lpe
     add $5,$7

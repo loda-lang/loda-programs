@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,262683 ; Characteristic function for A182859.
+  seq $2,262683 ; Characteristic function for A182859.
   add $1,$2
 lpe
 add $1,1

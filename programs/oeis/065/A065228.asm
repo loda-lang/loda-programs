@@ -8,4 +8,4 @@ lpb $0
   sub $2,1
 lpe
 mov $1,$2
-cal $1,64866 ; Write numbers 1, then 1 up to 2^2, then 1 up to 3^2, then 1 up to 4^2 and so on.
+seq $1,64866 ; Write numbers 1, then 1 up to 2^2, then 1 up to 3^2, then 1 up to 4^2 and so on.

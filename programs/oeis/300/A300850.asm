@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  cal $1,51133 ; a(n) = binomial(2n,n)*n*(2n+1)/2.
+  seq $1,51133 ; a(n) = binomial(2n,n)*n*(2n+1)/2.
   mul $1,$0
   mod $0,2
 lpe

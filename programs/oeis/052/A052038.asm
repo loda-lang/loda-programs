@@ -2,6 +2,6 @@
 ; 1,5,3,2,2,1,1,1,1,1,9,8,7,7,6,6,5,5,5,5,4,4,4,4,4,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
 mul $0,2
-cal $0,168458 ; a(n) = 7 + 10*floor((n-1)/2).
-cal $0,97326 ; Largest integer m such that m*n has the same decimal digit length as n.
+seq $0,168458 ; a(n) = 7 + 10*floor((n-1)/2).
+seq $0,97326 ; Largest integer m such that m*n has the same decimal digit length as n.
 mov $1,$0

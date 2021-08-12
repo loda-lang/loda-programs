@@ -10,7 +10,7 @@ lpb $3
   mov $2,$3
   mov $4,$0
   max $4,0
-  cal $4,228797 ; Number of 2 X n binary arrays with top left element equal to 1 and no two ones adjacent horizontally or nw-se.
+  seq $4,228797 ; Number of 2 X n binary arrays with top left element equal to 1 and no two ones adjacent horizontally or nw-se.
   mul $2,$4
   add $1,$2
   mov $6,$4

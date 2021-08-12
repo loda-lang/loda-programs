@@ -1,6 +1,6 @@
 ; A000442: a(n) = (n!)^3.
 ; 1,1,8,216,13824,1728000,373248000,128024064000,65548320768000,47784725839872000,47784725839872000000,63601470092869632000000,109903340320478724096000000,241457638684091756838912000000,662559760549147780765974528000000
 
-cal $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 pow $0,3
 mov $1,$0

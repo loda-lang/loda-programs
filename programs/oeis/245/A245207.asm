@@ -6,7 +6,7 @@ mul $1,$0
 pow $0,2
 mul $0,2
 mov $2,$0
-cal $0,80037 ; a(0)=2; for n > 0, a(n) = n + floor(sqrt(4n-3)) + 2.
+seq $0,80037 ; a(0)=2; for n > 0, a(n) = n + floor(sqrt(4n-3)) + 2.
 add $1,$0
 sub $2,6
 sub $1,$2

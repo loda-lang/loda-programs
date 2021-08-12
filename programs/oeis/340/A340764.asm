@@ -7,7 +7,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,175029 ; a(n)=2*n if n is prime, otherwise a(n)=3*n.
+  seq $0,175029 ; a(n)=2*n if n is prime, otherwise a(n)=3*n.
   mul $0,2
   mod $0,3
   max $0,1

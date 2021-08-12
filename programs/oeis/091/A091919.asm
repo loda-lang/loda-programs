@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,34299 ; Alternating sum transform (PSumSIGN) of A000975.
+  seq $2,34299 ; Alternating sum transform (PSumSIGN) of A000975.
   add $1,$2
 lpe
 add $1,1

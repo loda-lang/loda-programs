@@ -3,6 +3,6 @@
 
 mov $1,$0
 add $0,1
-cal $1,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+seq $1,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
 gcd $0,$1
 div $1,$0

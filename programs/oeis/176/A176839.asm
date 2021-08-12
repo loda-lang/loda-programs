@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cal $2,62821 ; Number of divisors of totient of n.
+  seq $2,62821 ; Number of divisors of totient of n.
   sub $0,$2
   mov $3,$2
   min $3,1

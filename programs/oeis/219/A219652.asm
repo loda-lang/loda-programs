@@ -3,7 +3,7 @@
 
 mov $2,$0
 lpb $0
-  cal $2,219651 ; a(n) = n minus (sum of digits in factorial base expansion of n).
+  seq $2,219651 ; a(n) = n minus (sum of digits in factorial base expansion of n).
   mov $0,$2
   add $1,1
 lpe

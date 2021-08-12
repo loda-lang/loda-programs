@@ -6,7 +6,7 @@ lpb $0
   div $0,2
   sub $2,$0
   bin $0,$2
-  cal $2,5728 ; Number of fractions in Farey series of order n.
+  seq $2,5728 ; Number of fractions in Farey series of order n.
   add $1,$2
 lpe
 sub $1,$2

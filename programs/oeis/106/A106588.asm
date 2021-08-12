@@ -18,7 +18,7 @@ lpb $2
     mov $4,$0
     mul $4,$0
     max $0,0
-    cal $0,66872 ; p^2 + 1 as p runs through the primes.
+    seq $0,66872 ; p^2 + 1 as p runs through the primes.
     sub $0,$4
     mov $3,$0
     mov $9,$8

@@ -3,4 +3,4 @@
 
 mov $1,2
 pow $1,$0
-cal $1,7089 ; Numbers in base 3.
+seq $1,7089 ; Numbers in base 3.

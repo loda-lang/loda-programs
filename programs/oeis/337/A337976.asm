@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,6
-  cal $0,187324 ; a(n) = floor(n/2) + floor(n/3) - floor(n/4).
+  seq $0,187324 ; a(n) = floor(n/2) + floor(n/3) - floor(n/4).
   mov $2,$3
   mul $2,$0
   add $1,$2

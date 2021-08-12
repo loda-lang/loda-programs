@@ -4,7 +4,7 @@
 add $0,1
 mov $2,$0
 add $0,2
-cal $0,209721 ; 1/4 the number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
+seq $0,209721 ; 1/4 the number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
 sub $0,$2
 mov $1,$0
 sub $1,5
