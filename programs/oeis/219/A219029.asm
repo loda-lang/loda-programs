@@ -8,7 +8,7 @@ lpb $0
   add $0,$4
   mov $4,$0
   div $4,2
-  cal $4,10554 ; a(n) = phi(phi(n)), where phi is the Euler totient function.
+  seq $4,10554 ; a(n) = phi(phi(n)), where phi is the Euler totient function.
   add $1,$4
   sub $0,$1
   sub $0,1

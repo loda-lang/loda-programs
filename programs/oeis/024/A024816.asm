@@ -4,7 +4,7 @@
 mov $1,$0
 pow $1,2
 mov $2,$0
-cal $0,91818 ; Sum of even proper divisors of 2n. Sum of the even divisors of 2n that are less than 2n.
+seq $0,91818 ; Sum of even proper divisors of 2n. Sum of the even divisors of 2n that are less than 2n.
 sub $2,$0
 add $1,$2
 div $1,2

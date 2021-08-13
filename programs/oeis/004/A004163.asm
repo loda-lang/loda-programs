@@ -6,5 +6,5 @@ bin $0,2
 add $1,$0
 add $1,$0
 add $0,$1
-cal $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 mov $1,$0

@@ -4,6 +4,6 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
+  seq $2,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
   add $1,$2
 lpe

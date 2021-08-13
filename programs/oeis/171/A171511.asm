@@ -4,6 +4,6 @@
 sub $0,1
 mov $1,$0
 max $0,0
-cal $0,62298 ; Number of nonprimes <= n.
+seq $0,62298 ; Number of nonprimes <= n.
 add $1,$0
 add $1,1

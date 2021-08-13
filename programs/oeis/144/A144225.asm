@@ -5,6 +5,6 @@ mov $1,2
 lpb $0
   mov $1,$0
   mov $0,0
-  cal $1,323211 ; Level 1 of Pascal's pyramid. T(n, k) triangle read by rows for n >= 0 and 0 <= k <= n.
+  seq $1,323211 ; Level 1 of Pascal's pyramid. T(n, k) triangle read by rows for n >= 0 and 0 <= k <= n.
 lpe
 sub $1,1

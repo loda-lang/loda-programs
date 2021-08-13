@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,92860 ; "3 times the prime sequence".
+  seq $0,92860 ; "3 times the prime sequence".
   sub $0,1
   mov $2,$3
   mul $2,$0

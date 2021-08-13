@@ -4,6 +4,6 @@
 mov $1,$0
 mul $0,3
 sub $1,$0
-cal $0,284621 ; Positions of 0 in A284620.
+seq $0,284621 ; Positions of 0 in A284620.
 add $1,$0
 div $1,2

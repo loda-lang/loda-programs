@@ -6,7 +6,7 @@ add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
-  cal $2,14137 ; Partial sums of Catalan numbers (A000108).
+  seq $2,14137 ; Partial sums of Catalan numbers (A000108).
   add $1,$2
 lpe
 sub $1,1

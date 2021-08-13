@@ -3,8 +3,7 @@
 
 seq $0,40 ; The prime numbers.
 sub $0,1
-add $1,$0
-pow $0,2
-sub $1,1
+mov $1,$0
+bin $0,2
 mul $1,$0
-div $1,4
+div $1,2

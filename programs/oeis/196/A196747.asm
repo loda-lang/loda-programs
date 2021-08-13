@@ -16,7 +16,7 @@ lpb $2
     add $0,$8
     sub $0,1
     div $0,3
-    cal $0,91311 ; Partial sums of 3^A007814(n).
+    seq $0,91311 ; Partial sums of 3^A007814(n).
     mov $3,$0
     mov $5,$8
     lpb $5

@@ -5,6 +5,6 @@ mov $1,1
 lpb $0
   sub $0,1
   mov $2,$1
-  cal $2,14682 ; The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
+  seq $2,14682 ; The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
   add $1,$2
 lpe
